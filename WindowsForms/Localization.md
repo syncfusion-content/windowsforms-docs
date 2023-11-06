@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Localization in Windows Forms | Syncfusion
-description: Learn about Localization support in Syncfusion WF UI Contorls using .RESX files and also explains editing default strings of WF controls.
+title: Localization in Windows Forms Controls | Syncfusion
+description: Learn about localization support in Syncfusion Windows Forms UI contorls using .RESX files, editing default strings, it's elements and more details.
 platform: WindowsForms
 control: Localization
 documentation: ug
 ---
 
 
-# Localization of Syncfusion WF Controls
+# Localization of Syncfusion Windows Forms Controls
 
 Localization is the process of making application multilingual by formatting the content according to the cultures. This involves configuring the application for a specific language. Culture is the combination of language and location. For example, `en-US` is the culture for English spoken in United States; `en-GB` is the culture for English spoken in Great Britain.
 
@@ -185,7 +185,7 @@ End Function
 {% endcapture %}
 {{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-![Windows Form Localization assign the string](Localization_images/WindowsForm-Localization-GettingStarted.png)
+![Windows Form Localization assign the string](Localization_images/windowsform-localization-getting-started.png)
 
 ## Using Satellite Assemblies
 
@@ -221,19 +221,19 @@ N> In above section, Latest Essential Studio version details has been provided. 
 
 4. Compile the source code by using the build.bat command in the Microsoft Visual Studio 2008 Command prompt. The following figure shows how the Resource Editor looks when it first opens.
 
-![Windows Form Localization Resource Editor window](Localization_images/WindowsForm-Localization-EditorWindow.png)
+![Windows Form Localization Resource Editor window](Localization_images/windowsform-localization-editor-window.png)
 
 5. By using the Resource Editor, open the resource file, Syncfusion.Windows.Forms.Tools.SR.resources present in the NeutralResources folder. The previous figure shows all string resources displayed in the tool.
 
 6. Now, the actual process for localization begins. After opening the resource file in the Resource Editor, start entering the equivalent strings for the required culture. In this example, the German language is used. In the following figure, all the English strings are replaced by their German equivalent. For instance, the German equivalent of Close is “Ended”.
 
-![Windows Form Localization string values changing by German culture](Localization_images/WindowsForm-Localization-GermanCulture.png)
+![Windows Form Localization string values changing by German culture](Localization_images/windowsform-localization-german-culture.png)
 
 7. Open the Visual Studio.NET command prompt and enter WinRes to open the Windows Resource Localization Editor. WinRes is used to work with Windows Forms resources. The Resource Editor tool cannot be used to edit Windows Forms resources. It can only be used to work with images and string-based resources.
 
 8. Open the other resources by using the WinRes utility and replace the English strings with the German equivalent. The following figure shows the file Syncfusion.Windows.Forms.Tools.XPMenus.CustomizationPanel.resources open in the WinRes tool and with German text. The German text has been added to the form by using the Properties window.
 
-![Windows Form Localization Resource Editor with German text](Localization_images/WindowsForm-Localization-ResourceEditor-GermanText.png)
+![Windows Form Localization Resource Editor with German text](Localization_images/windowsform-localization-resource-editor-german-text.png)
 
 9. Click File -> Save As and select the culture to be localized. In this case, German-Germany. Now, a new resource file with the name `Syncfusion.Windows.Forms.Tools.XPMenus.CustomizationPanel.de-DE.resources` is added to the source path.
 
@@ -311,7 +311,7 @@ Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("de
 
 15. Now, Run the application that contains the Syncfusion Toolbar and Menu controls and open the Customization dialog. The dialog appears in German as shown in the following figure:
 
-![Windows Form Localization Customization dialog German culture](Localization_images/WindowsForm-Localization-CustomizationDialog.png)
+![Windows Form Localization Customization dialog German culture](Localization_images/windowsform-localization-customization-dialog.png)
 
 ## Localize Syncfusion Windows Forms control using .resx file
 
@@ -364,19 +364,19 @@ N> You can get the default resource files of all Syncfusion Windows Forms librar
 
 N> Consider you are using `SfDataGrid` control in your application. Then you need to copy and include `Syncfusion.SfDataGrid.WinForms.resx` (SfDataGrid present in `Syncfusion.SfDataGrid.WinForms` library) file in your application under `Resources` folder. So, now you can know the key names and values of default strings used in `Syncfusion.SfDataGrid.WinForms.dll` library.
 
-![Windows Forms Localization datagrid Localization](Localization_images/WindowsForm-Localization-DefaultResxFile.png)
+![Windows Forms Localization datagrid Localization](Localization_images/windowsform-localization-default-resx-file.png)
 
 3. Now, right click on `Resources` folder and select `Add` and then `New Item`. In the `Add New Item` wizard, select `Resources File` option and name the file name as `Syncfusion.SfDataGrid.WinForms.<culture name>.resx` for `German` culture. For example, you have to give name as `Syncfusion.SfDataGrid.WinForms.de-DE.resx` for `German` culture. In the same way, add new resource files for other libraries used in your application.
 
-![Windows Forms Localization adding resource file](Localization_images/WindowsForm-Localization-adding-resource-file.png)
+![Windows Forms Localization adding resource file](Localization_images/windowsform-localization-adding-resource-file.png)
 
 4. Now, select `Add` and add resource file for German culture in `Resources` folder.
 
-![Windows Forms Localization using .resx file](Localization_images/WindowsForm-Localization-ResxFile-To-Localize.png)
+![Windows Forms Localization using .resx file](Localization_images/windowsform-localization-resxfile-to-localize.png)
 
 5. Now, you can copy the key names from default resource files and change its corresponding value based on the culture.
 
-![Windows Forms Localization datagrid localized .resx file](Localization_images/WindowsForm-Localization-DataGrid-LocalizedResxFile.png)
+![Windows Forms Localization datagrid localized .resx file](Localization_images/windowsform-localization-datagrid-localized-resxfile.png)
 
 N> Download demo from [View sample in GitHub](https://github.com/SyncfusionExamples/winforms-datagrid-localization).
 
@@ -618,7 +618,7 @@ End Namespace
 
 6. Then click the button Appeared in Form. Now, you can see that the text in SfDatagrid gets localized.
 
-![Windows Form Localization different assemblies](Localization_images/WindowsForm-Localization-DataGrid.png)
+![Windows Form Localization different assemblies](Localization_images/windowsform-localization-datagrid.png)
 
 ### Editing default culture settings
 
