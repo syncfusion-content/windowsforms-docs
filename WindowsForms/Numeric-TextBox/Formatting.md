@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Formatting in Windows Forms Numeric TextBox control | Syncfusion
-description: Learn about Formatting support in Syncfusion Windows Forms Numeric TextBox (SfNumericTextBox) control and more details.
+title: Formatting in Windows Forms Numeric TextBox Control | Syncfusion
+description: Learn here all about formatting support in Syncfusion Windows Forms Numeric TextBox control, it's elements and more details.
 platform: WindowsForms
 control: SfNumericTextBox
 documentation: ug
@@ -76,7 +76,7 @@ Me.numericTextBox.FormatMode = Syncfusion.WinForms.Input.Enums.FormatMode.Curren
 
 {% endtabs %}
 
-![Format types](Formatting_images/FormatMode.png)
+![Format types in WindowsForms Numeric TextBox](Formatting_images/windowsform-numeric-textbox-Format-mode.png)
 
 ## Format using NumberFormatInfo
 
@@ -116,7 +116,7 @@ NumberFormatInfo numberFormat = new NumberFormatInfo();
 
 {% endtabs %}
 
-![Format using number format info](Formatting_images/NumberFormatInfo.png)
+![Format using number format info in WindowsForms Numeric TextBox](Formatting_images/windowsforms-numeric-textbox-number-format-info.png)
 
 N> The Value in the SfNumericTextBox can be parsed by using the [NumberFormatInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html#Syncfusion_WinForms_Input_SfNumericTextBox_NumberFormatInfo) property. If the NumberFormatInfo is not initialized, then the Value will be parsed based on the CurrentUICulture.
 
@@ -142,7 +142,7 @@ Me.numericTextBox.HideTrailingZeros = True
 
 {% endtabs %}
 
-![Hiding decimal value](Formatting_images/HideZeros.png)
+![Hiding decimal value in WindowsForm Numeric TextBox](Formatting_images/windowsforms-numeric-textbox-hide-zeros.png)
 
 ## Prefix and Suffix
 
@@ -164,7 +164,7 @@ Me.numericTextBox.Prefix = "Pass percent :"
 
 {% endtabs %}
 
-![Prefix format](Formatting_images/Prefix.png)
+![Prefix formatin WindowsForms Numeric TextBox](Formatting_images/windowsforms-numeric-textbox-prefix.png)
 
 {% tabs %}
 
@@ -182,7 +182,7 @@ Me.numericTextBox.Suffix = "inches"
 
 {% endtabs %}
 
-![Suffix format](Formatting_images/Suffix.png)
+![Suffix format in WindowsForms Numeric TextBox](Formatting_images/windowsforms-numeric-textbox-suffix.png)
 
 ## WatermarkText
 
@@ -204,6 +204,6 @@ Me.numericTextBox.WatermarkText = "Enter your age"
 
 {% endtabs %}
 
-![WatermarkText support](Formatting_images/Watermark.png)
+![WatermarkText support in WindowsForms Numeric TextBox](Formatting_images/windowsforms-numeric-textbox-watermark.png)
 
 N> The [WatermarkText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html#Syncfusion_WinForms_Input_SfNumericTextBox_WatermarkText) will be visible when value is null and the control doesn’t have the focus.

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Windows Forms TrackBar control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms TrackBar (TrackBarEx) control, its elements and more details.
+title: Getting Started with Windows Forms TrackBar Control | Syncfusion
+description: Learn here all about getting started with Syncfusion Windows Forms TrackBar (TrackBarEx) control, its elements and more details.
 platform: WindowsForms
 control: TrackBarEx
 documentation: ug
@@ -30,7 +30,7 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/ins
     * Syncfusion.Tools.Base
     * Syncfusion.Tools.Windows
 
-![TrackBarEx control added via designer](TrackBarEx-Getting-Started_images/trackbar-control-added-by-designer.png)
+![WindowsForms TrackBarEx control added via designer](TrackBarEx-Getting-Started_images/windowsforms-getting-started-trackbar-designer.png)
 
 ## Add control manually in code
 
@@ -89,7 +89,7 @@ Me.Controls.Add(tabSplitterContainer1)
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![TrackBarEx control added via code](TrackBarEx-Getting-Started_images/trackbar-control-added-by-code.png)
+![WindowsForms TrackBarEx control added via code](TrackBarEx-Getting-Started_images/windowsforms-trackbar-code.png)
 
 ## Change value
 
@@ -110,7 +110,7 @@ Me.trackBarEx1.Maximum = 30
 {% endhighlight %}
 {% endtabs %}
 
-![Windows Forms TrackBarEx showing minimum and maximum value](TrackBarEx-Getting-Started_images/TrackBarEx_minmax.png)
+![Windows Forms TrackBarEx showing minimum and maximum value](TrackBarEx-Getting-Started_images/windowsforms-trackbar-minmax.png)
 
 ## Horizontal or vertical track bar
 
@@ -137,5 +137,5 @@ Me.trackBarEx1.Orientation = Orientation.Horizontal
 {% endhighlight %}
 {% endtabs %}
 
-![TrackBarEx control orientation](TrackBarEx-Getting-Started_images/trackbar-orientation.png)
+![WindowsForms TrackBarEx control orientation](TrackBarEx-Getting-Started_images/windowsforms-trackbar-orientation.png)
 
