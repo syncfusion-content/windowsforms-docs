@@ -65,7 +65,7 @@ Me.radioButtonAdv1.HotBorderColor = System.Drawing.Color.DarkOrange
 {% endhighlight %}
 {% endtabs %}
 
- ![Windows forms RadioButtonAdv changing the border color](Overview_images/RadioButtonAdv_border.jpeg) 
+ ![Windows forms RadioButtonAdv changing the border color](Overview_images/windowsforms-radiobuttonadv-border.jpeg) 
 
 
- ![Windows forms RadioButtonAdv changing the border color during mouse hover on control](Overview_images/RadioButtonAdv_changeborder.jpeg) 
+ ![Windows forms RadioButtonAdv changing the border color during mouse hover on control](Overview_images/windowsforms-radiobuttonadv-changeborder.jpeg) 

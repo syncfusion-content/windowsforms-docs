@@ -29,7 +29,7 @@ The following steps describe how to create an **SfDateTimeEdit** control via des
     * Syncfusion.SfInput.WinForms
     * Syncfusion.Shared.Base
 
-![Drag and drop the SfDateTimeEdit control to form](getting-started-images/toolbox.png)
+![Drag and drop the SfDateTimeEdit control to form](getting-started-images/windowsforms-datetimepicker-toolbox.png)
 
 ## Adding SfDateTimeEdit control via code
 
@@ -125,7 +125,7 @@ dateTimeEdit.MaxDateTime = New DateTime(2018, 2, 27)
 
 {% endtabs %}
 
-![SfDateTimeEdit control](getting-started-images/minmax.png)
+![SfDateTimeEdit control](getting-started-images/windowsforms-datetimepicker-minmax.png)
 
 ## Editing mode
 
@@ -152,7 +152,7 @@ dateTimeEdit.DateTimeEditingMode = DateTimeEditingMode.Mask
 
 {% endtabs %} 
 
-![Editing mode](editing-support-images/mask.png)
+![Editing mode](editing-support-images/windowsforms-datetimepicker-mask.png)
 
 ## Allow null value
 
@@ -182,7 +182,7 @@ dateTimeEdit.Watermark = "Choose a date"
 
 {% endtabs %}
 
-![SfDateTimEdit allows null value](watermark-images/watermark.png)
+![SfDateTimEdit allows null value](watermark-images/windowsforms-datetimepicker-watermark.png)
 
 ## Custom format
 
@@ -216,7 +216,7 @@ dateTimeEdit.Format = "MM/dd/yy hh:mm:ss"
 
 {% endtabs %}
 
-![Custom format](getting-started-images/customformat.png)
+![Custom format](getting-started-images/windowsforms-datetimepicker-customformat.png)
 
 ## Configure up-down
 
@@ -242,7 +242,7 @@ Me.dateTimeEdit.ShowUpDown = true
 
 {% endtabs %} 
 
-![Up down DateTimeEdit](getting-started-images/daterange.png)
+![Up down DateTimeEdit](getting-started-images/windowsforms-datetimepicker-daterange.png)
 
 ## Configure the calculation of week number based on culture
 
