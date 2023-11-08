@@ -9,7 +9,7 @@ documentation: ug
 
 # Context Menu in Windows Forms Tabbed Form (SfTabbedForm)
 
-The context menu for the tabbed form can be set using the [TabbedFormControl.TabContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SfTabbedFormControl.html#Syncfusion_Windows_Forms_Tools_SfTabbedFormControl_TabContextMenu) property.
+The context menu for the tabbed form can be set using the [TabbedFormControl.TabContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SfTabbedFormControl.html#Syncfusion_Windows_Forms_Tools_SfTabbedFormControl_TabContextMenu ) property.
 
 {% tabs %}
 {% highlight c# %}

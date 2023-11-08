@@ -46,7 +46,7 @@ This event is handled to notify that the locked MDI client area is being unlocke
 
 ## BeforeMDIChildAdded event
 
-This [BeforeMDIChildAdded event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html) occurs before an MDIChild is added to the TabbedMDIManager.
+This [BeforeMDIChildAdded event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_OnBeforeMDIChildAdded_System_Windows_Forms_Control_) occurs before an MDIChild is added to the TabbedMDIManager.
 
 {% tabs %}
 

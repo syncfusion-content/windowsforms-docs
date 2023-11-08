@@ -1369,7 +1369,7 @@ The parent form of the EditControl can be closed while pressing Esc key when set
 
 ### Performing user-defined action for default command
 
-By using the [RegisteringDefaultKeyBindings](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) and [ProcessCommand](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Utils.KeyBinding.IKeyCommand.html) events, you can perform user-defined action for the default command. The following table contains the default command and respective string to use while adding it to commands in the EditControl.
+By using the [RegisteringDefaultKeyBindings](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_RegisteringDefaultKeyBindings) and [ProcessCommand](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Utils.KeyBinding.IKeyCommand.html#Syncfusion_Shared_Utils_KeyBinding_IKeyCommand_ProcessCommand) events, you can perform user-defined action for the default command. The following table contains the default command and respective string to use while adding it to commands in the EditControl.
 
 <table>
 <tr>
@@ -1585,7 +1585,7 @@ End Sub
 
 ### Custom command binding
 
-By using the [RegisteringKeyCommands](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) event, you can bind the desired custom keystroke combinations to the desired command.
+By using the [RegisteringKeyCommands](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_RegisteringKeyCommands) event, you can bind the desired custom keystroke combinations to the desired command.
 
 This following code example registers the "File.Open" command and binds a <kbd>Ctrl+Q</kbd> keystroke combination to it.
 
@@ -1820,7 +1820,7 @@ Me.editControl1.ContextMenuManager.ContextMenuProvider = New Syncfusion.Windows.
 
 ### Remove default context menu
 
-By using the [MenuFill](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) event in EditControl, you can remove the default context menu items. 
+By using the [MenuFill](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_MenuFill) event in EditControl, you can remove the default context menu items. 
 
 {% tabs %}
 
@@ -1902,7 +1902,7 @@ Context menu item can be disabled by using the `SetContextMenuItemEnabled` funct
 
 ### Change shortcut key for context menu options
 
-By using the [RegisteringKeyCommands](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) event, you can change the shortcut key for context menu options.
+By using the [RegisteringKeyCommands](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_RegisteringKeyCommands) event, you can change the shortcut key for context menu options.
 
 This following code example registers the "Clipboard.Cut" command and binds a <kbd>Ctrl+L</kbd> keystroke combination to it.
 
@@ -1944,7 +1944,7 @@ N> Refer to the respective command string in the [Commands](https://help.syncfus
 
 ### Add custom context menu item
 
-EditControl also provides an extensive support to add the custom context menu items. You can handle the [MenuFill](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) event to add Menu Items to the context menu. This is illustrated in the below code snippet. 
+EditControl also provides an extensive support to add the custom context menu items. You can handle the [MenuFill](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_MenuFill) event to add Menu Items to the context menu. This is illustrated in the below code snippet. 
 
 {% tabs %}
 
