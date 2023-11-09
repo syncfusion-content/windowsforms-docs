@@ -11,8 +11,8 @@ documentation: ug
 SfDataGrid provides support to export data to excel. It also provides support for grouping, filtering, sorting, paging, unbound rows and stacked headers while exporting.
 The following assemblies needs to be added for exporting to excel.
 
-* [Syncfusion.SfDataGridConverter.WinForms](https://help.syncfusion.com/cr/windowsforms)
-* [Syncfusion.XlsIO.Base](https://help.syncfusion.com/cr/windowsforms)
+* [Syncfusion.SfDataGridConverter.WinForms](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.html)
+* [Syncfusion.XlsIO.Base](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.ExcelBaseFormat.html)
 
 For NuGet package, have to install [Syncfusion.DataGridExport.WinForms](https://www.nuget.org/packages/Syncfusion.DataGridExport.WinForms/) package.For more details refer this [UG link](https://help.syncfusion.com/windowsforms/control-dependencies#exporting-sfdatagrid-to-excel-pdf-and-csv)
 
