@@ -12,7 +12,7 @@ The selection is the process of highlighting. This section will explain about th
 
 ## Range Selection
 
-The particular range of cells/rows/columns/table in the grid can be selected by setting the [AllowSelection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_AllowSelection) property to the appropriate [GridSelectionFlags](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridSelectionFlags.html#) enumeration. 
+The particular range of cells/rows/columns/table in the grid can be selected by setting the [AllowSelection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_AllowSelection) property to the appropriate [GridSelectionFlags](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridSelectionFlags.html) enumeration. 
 
 {% tabs %}
 {% highlight c# %}
@@ -83,7 +83,7 @@ Me.gridControl1.Selections.Add(GridRangeInfo.Cells(2, 2, 5, 4))
 
 ### Adding Multiple Selected Ranges
 
-To have the multiple selected ranges in the GirdControl, add the list of ranges into the [GridRangeInfoList](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridRangeInfoList.html#) collection. 
+To have the multiple selected ranges in the GirdControl, add the list of ranges into the [GridRangeInfoList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridRangeInfoList.html) collection. 
 
 {% tabs %}
 {% highlight c# %}
@@ -154,7 +154,7 @@ Me.gridControl1.Selections.Ranges.Remove(range1)
 
 ### Preventing Selection using event
 
-When the selection is added to the grid, it will be notified by using the [SelectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html) event. This event can be used to prevent the selection for the particular range of cells as of follows,
+When the selection is added to the grid, it will be notified by using the [SelectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_SelectionChanged) event. This event can be used to prevent the selection for the particular range of cells as of follows,
 
 {% tabs %}
 {% highlight c# %}
@@ -233,7 +233,7 @@ gridControl.ResetAlphaBlendSelectionColor()
 
 ### Setting the CurrentCell Back Color Similar to the Back Color of the Remaining Selected Cells
 
-When the cell is entered into the edit mode, it will not display the selection color. To display the selection color for the editing cell, set the selection color as the back color for the current cell in the [CellDrawn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridCardView.html) event.
+When the cell is entered into the edit mode, it will not display the selection color. To display the selection color for the editing cell, set the selection color as the back color for the current cell in the [CellDrawn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridCardView.html#Syncfusion_GridHelperClasses_GridCardView_CellDrawn) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -327,7 +327,7 @@ The selected values are printed in the output screen as of follows,
 
 ## Cell Text Selection
 
-The current cell activation behavior is controlled by the grid’s [ActivateCurrentCellBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_ActivateCurrentCellBehavior) property. When the property is set to [SelectAll](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCellActivateAction.html#)**,** it will selects all the text in the cell when the cell is activated.
+The current cell activation behavior is controlled by the grid’s [ActivateCurrentCellBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_ActivateCurrentCellBehavior) property. When the property is set to [SelectAll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCellActivateAction.html)**,** it will selects all the text in the cell when the cell is activated.
 
 {% tabs %}
 {% highlight c# %}

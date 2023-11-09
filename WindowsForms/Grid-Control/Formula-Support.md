@@ -5133,7 +5133,7 @@ In the dialog box all the named range members will be displayed in the left pane
 
 ![Formula-Support_img77](Formula-Support_images/Formula-Support_img77.jpg)
 
-It is possible to edit the title of this editor by handling [ShowingNamedRangesDialog](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFormulaNamedRangesEditHelper.html) event.
+It is possible to edit the title of this editor by handling [ShowingNamedRangesDialog](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFormulaNamedRangesEditHelper.html#Syncfusion_Windows_Forms_Grid_GridFormulaNamedRangesEditHelper_ShowingNamedRangesDialog) event.
 {% tabs %}
 {% highlight c# %}
 

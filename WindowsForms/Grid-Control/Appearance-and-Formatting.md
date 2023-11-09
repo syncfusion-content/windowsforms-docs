@@ -111,7 +111,7 @@ Me.gridControl.DefaultGridBorderStyle = GridBorderStyle.DashDotDot
 ![Appearance-and-Formatting_img6](Appearance-and-Formatting_images/Appearance-and-Formatting_img6.jpeg)
 
 #### Setting background image
-The background of the GridControl can be filled with an image by using [BackgroundImage](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backgroundimage?view=net-5.0) property.
+The background of the GridControl can be filled with an image by using [BackgroundImage](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backgroundimage?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) property.
 
 {% tabs %}
 {% highlight c# %}
