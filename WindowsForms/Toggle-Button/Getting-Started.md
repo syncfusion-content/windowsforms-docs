@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Toggle Button | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms Toggle Button control, its elements and more details.
+title: Getting Started with Windows Forms Toggle Button Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Windows Forms Toggle Button control, its elements and more.
 platform: WindowsForms
 control: ToggleButton 
 documentation: ug
@@ -29,17 +29,17 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
         * Syncfusion.Tools.Base
         * Syncfusion.Tools.Windows
 
-![Drag and drop ToggleButton from toolbox](Getting-Started_images/Getting-Started_dragdropimage.png)
+![Drag and drop ToggleButton from toolbox in Windows Forms](getting-started_images/windows-forms-toggle-button-drag-and-drop.png)
 
-![Windows Form ToggleButton dependency Assembly reference](Getting-Started_images/Getting-Started_reference.png)
+![Windows Form ToggleButton dependency Assembly reference](getting-started_images/windows-forms-toggle-button-dependency-assembly-reference.png)
 
 **Step 2**: You can customize the properties of ToggleButton using the properties panel. Here we have illustrated an example on how to edit the ToggleState property of the ToggleButton as shown as follows.
 
-![Windows Form ToggleButton dependency Assembly reference](Getting-Started_images/ToggleButton_designercustomization.png)
+![Windows Form ToggleButton dependency Assembly reference](getting-started_images/windows-forms-toggle-button-designer-customization.png)
 
 **Step 3**:Run the application and the following output will be shown.
 
-![Windows Form ToggleButton through designer](Getting-Started_images/ToggleButton_throughdesigner1.png)
+![Windows Form ToggleButton through designer](getting-started_images/windows-forms-toggle-button-through-designer.png)
 
 
 ## Adding a WinForms ToggleButton control through code
@@ -72,9 +72,9 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-![Windows Form ToggleButton through designer](Getting-Started_images/ToggleButtonimagereference.png)
-   
-**Step 2**:  In Form1.cs, create an instance of **"ToggleButton"** control and add in to the form. Also you can customize the ToggleButton properties using the following code.
+![Windows Form ToggleButton through designer](getting-started_images/windows-forms-toggle-button-image-reference.png)
+ 
+**Step 2**: In Form1.cs, create an instance of **"ToggleButton"** control and add in to the form. Also you can customize the ToggleButton properties using the following code.
 {% capture codesnippet2 %}
 {% tabs %}
 
@@ -116,4 +116,4 @@ End Sub
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 **Step 3**: Run the application and the following output will be shown.
 
-![Windows form ToggleButton through code](Getting-Started_images/ToggleButton_throughdesigner1.png)
+![Windows form ToggleButton through code](getting-started_images/windows-forms-toggle-button-through-code.png)

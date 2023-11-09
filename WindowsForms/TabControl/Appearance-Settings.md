@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance Settings in Windows Forms TabControl control | Syncfusion
-description: Learn about Appearance Settings support in Syncfusion Windows Forms TabControl (TabControlAdv) control and more details.
+title: Appearance settings in Windows Forms TabControl Control | Syncfusion
+description: Learn all about appearance settings support in Syncfusion Essential Windows Forms TabControl (TabControlAdv) control, it's elements and more.
 platform: WindowsForms
 control: TabControlAdv 
 documentation: ug
 ---
 
-# Appearance Settings in Windows Forms TabControl (TabControlAdv)
+# Appearance settings in Windows Forms TabControl (TabControlAdv)
 
 The various appearance settings for [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) are discussed in this section. 
 
@@ -27,7 +27,7 @@ The Essential [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfu
 
 To set images to the TabItems, add an [ImageListControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_ImageList) and populate it with the required images. Then, set the [ImageIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabPageAdv.html#Syncfusion_Windows_Forms_Tools_TabPageAdv_ImageIndex) property of the TabPage to one of the indices, to display the corresponding image to the left of the text, by default.
 
-![Images in ab items](Appearance-Settings_images/Appearance-Settings_img1.jpeg)
+![Windows Forms Tab control images in Tab items](appearance-settings_images/windows-forms-tab-control-tab-items.jpeg)
 
 
 The [ImageAlignmentR](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_ImageAlignmentR) property allows you to set the Tab's text and image relation. By default, the image appears to the left and the text appears to the right. This setting can be changed using one of the below given options.
@@ -59,7 +59,7 @@ Me.tabPageAdv1.ImageIndex = 0
 
 [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) has images that are set outside the TabBounds.
 
-![Images outside the TabBounds](Appearance-Settings_images/Appearance-Settings_img2.jpeg)
+![Images outside the TabBounds in Windows Forms Tab control](appearance-settings_images/windows-forms-tab-control-images-outside-the-tab-bounds.jpeg)
 
 To move the image outside the TabBounds, set the [ImageOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html), [AdjustTopGap](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_AdjustTopGap), [LevelTextAndImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_LevelTextAndImage), [ItemSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_ItemSize) properties of TabControlAdv.
 
@@ -154,7 +154,7 @@ Private Me.tabPageAdv1.TabBackColor = System.Drawing.Color.Pink
 {% endtabs %}
 
 
- ![Tab color customization](Appearance-Settings_images/Appearance-Settings_img3.jpeg)
+ ![Tab color customization in Windows Forms](appearance-settings_images/windows-forms-tab-control-color-customization.jpeg)
 
 
  
@@ -218,7 +218,7 @@ Me.tabPageAdv1.TabFont = New System.Drawing.Font("Trebuchet MS", 8.25F, System.D
 {% endtabs %}
 
 
-![Tab font customization](Appearance-Settings_images/Appearance-Settings_img5.jpeg)
+![Tab font customization in Windows Forms](appearance-settings_images/windows-forms-tab-control-font-customization.jpeg)
 
 
 
@@ -244,7 +244,7 @@ Private Me.tabPageAdv1.TabForeColor = System.Drawing.Color.Sienna
 
 {% endtabs %}
 
-![Tab fore color customization](Appearance-Settings_images/Appearance-Settings_img6.jpeg)
+![Tab fore color customization in Windows Forms](appearance-settings_images/windows-forms-tab-control-fore-color-customization.jpeg)
 
 
 ## Border settings
@@ -267,7 +267,7 @@ Me.tabControlAdv1.BorderVisible = True
 
 {% endtabs %}
 
-![Tab border customization](Appearance-Settings_images/Appearance-Settings_img7.jpeg)
+![Tab border customization in Windows Forms](appearance-settings_images/windows-forms-tab-control-border-customization.jpeg)
 
 
 
@@ -294,7 +294,7 @@ Me.tabControlAdv1.BorderWidth = 10
 
 {% endtabs %}
 
- ![Border width customization](Appearance-Settings_images/Appearance-Settings_img8.jpeg)
+ ![Border width customization in Windows Forms](appearance-settings_images/windows-forms-tab-control-border-width-customization.jpeg)
 
 
 
