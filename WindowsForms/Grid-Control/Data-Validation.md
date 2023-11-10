@@ -149,7 +149,7 @@ The user can validate the data based on their required conditions using some cus
 
 ### Validating the current cell data using event
 
-The error provider can be customized by calling the [SetError](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCurrentCell.html#Syncfusion_Windows_Forms_Grid_GridCurrentCell_SetError_System_String_ "") method of the current cell in the [CurrentCellValidating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html "") event. 
+The error provider can be customized by calling the [SetError](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCurrentCell.html#Syncfusion_Windows_Forms_Grid_GridCurrentCell_SetError_System_String_%20%22%22) method of the current cell in the [CurrentCellValidating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html%20%22%22) event. 
 
 {% tabs %}
 {% highlight c# %}
