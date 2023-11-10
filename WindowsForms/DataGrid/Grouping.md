@@ -50,7 +50,7 @@ Each `CaptionSummaryRow` carries information about a particular group like group
 
 ### Adding Groups
 
-SfDataGrid allows to group the data programmatically by adding or removing [GroupColumnDescription](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GroupColumnDescription.html# "") to [SfDataGrid.GroupColumnDescriptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_GroupColumnDescriptions) collection.
+SfDataGrid allows to group the data programmatically by adding or removing [GroupColumnDescription](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GroupColumnDescription.html#%20%22%22) to [SfDataGrid.GroupColumnDescriptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_GroupColumnDescriptions) collection.
 If OrderID column need to be grouped programmatically, define its [MappingName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_MappingName) to [ColumnName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GroupColumnDescription.html#Syncfusion_WinForms_DataGrid_GroupColumnDescription_ColumnName) property of `GroupColumnDescription`. Then add the `GroupColumnDescription` to the `SfDataGrid.GroupColumnDescriptions` collection.
 {% tabs %}
 {% highlight c# %}
@@ -65,7 +65,7 @@ Me.sfDataGrid1.GroupColumnDescriptions.Add(New GroupColumnDescription() With {.C
 
 ### Removing Groups
 
-The groups can be removed by removing [GroupColumnDescription](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GroupColumnDescription.html# "") from [SfDataGrid.GroupColumnDescriptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_GroupColumnDescriptions) collection or by specifying the index using the `RemoveAt` method.
+The groups can be removed by removing [GroupColumnDescription](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GroupColumnDescription.html#%20%22%22) from [SfDataGrid.GroupColumnDescriptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_GroupColumnDescriptions) collection or by specifying the index using the `RemoveAt` method.
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.GroupColumnDescriptions.Remove(new GroupColumnDescription() { ColumnName = "OrderID" });
@@ -251,7 +251,7 @@ Me.sfDataGrid1.GroupPanel.Height = 100
 ![Group drop area height customization in windows form datagrid](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img11.png)
 
 ### Customizing GroupDropArea Appearance
-The appearance of the GroupDropArea can be customized using the [GroupDropAreaStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_GroupDropAreaStyle) property.  The[GroupDropAreaStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.GroupDropAreaStyleInfo.html# "") contains all the settings that are needed for the GroupDropArea appearance customization.
+The appearance of the GroupDropArea can be customized using the [GroupDropAreaStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_GroupDropAreaStyle) property.  The[GroupDropAreaStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.GroupDropAreaStyleInfo.html#%20%22%22) contains all the settings that are needed for the GroupDropArea appearance customization.
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.Style.GroupDropAreaStyle.BackColor = Color.LightSkyBlue;
@@ -265,7 +265,7 @@ Me.sfDataGrid1.Style.GroupDropAreaStyle.TextColor = Color.Red
 ![Group drop area appearance customziation in windows forms datagrid](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img12.png)
 
 ### Customizing GroupDropAreaItem Appearance
-The appearance of the grouped items in the GroupDropArea can be customized using the [GroupDropAreaItemStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_GroupDropAreaItemStyle) property. The[GroupDropAreaItemStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.GroupDropAreaItemStyleInfo.html# "") contains all the settings that are needed for the grouped items appearance customization.
+The appearance of the grouped items in the GroupDropArea can be customized using the [GroupDropAreaItemStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_GroupDropAreaItemStyle) property. The[GroupDropAreaItemStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.GroupDropAreaItemStyleInfo.html#%20%22%22) contains all the settings that are needed for the grouped items appearance customization.
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.Style.GroupDropAreaItemStyle.TextColor = Color.DarkBlue;
