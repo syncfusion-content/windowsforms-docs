@@ -591,7 +591,7 @@ Me.gridControl1(2, 2).CellType = "Control"
 ![Cell-Types_img14](Cell-Types_images/Cell-Types_img14.png)
 
 ### Inserting an animated image in cell
-It is possible to animate an image in grid cell by setting the cell type as `Control` and assigning it to a picture box control. To display the image as an animated one it is necessary to refresh the picture cell for a given time interval. For more details and sample please check the KB link over [here](https://www.syncfusion.com/kb/4502/how-to-insert-animated-image-to-a-grid-cell).
+It is possible to animate an image in grid cell by setting the cell type as `Control` and assigning it to a picture box control. To display the image as an animated one it is necessary to refresh the picture cell for a given time interval. For more details and sample please check the KB link over [here](https://support.syncfusion.com/kb/article/4336/how-to-insert-animated-image-to-a-grid-cell-in-winforms-gridcontrol).
 
 ## Currency cell type
 This cell type can be used to represent monetary values to achieve accuracy in the calculations. It will add the currency sign in the cell and attempt to parse only the number from the input. To customize the currency cells make use of the [GridStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html) properties.
