@@ -7,6 +7,7 @@ control: Calculate
 documentation: ug
 ---
 
+
 # Working with XlsIO in Windows Forms Calculation Engine
 
 Essential XIsIO provides an Excel-like Automation-type support without having Microsoft Excel installed on the host system.This means that you can use this library 
@@ -16,7 +17,7 @@ is integrated with Essential XlsIO, to calculate formulas entered at runtime wit
 ## Open a Workbook using XlsIO
 
 To open a workbook using XIsIO, instantiate the [ExcelEngine](https://help.syncfusion.com/cr/file-formats/Syncfusion.XlsIO.ExcelEngine.html) to initialize the application object for creating or manipulating Excel documents. To open an existing workbook,
-use the [Open](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.IWorkbooks.html#Syncfusion_XlsIO_IWorkbooks_Open_System_IO_Stream_) methods of [IWorkbook](http://help.syncfusion.com/cr/file-formats/Syncfusion.XlsIO.IWorkbook.html) interface.
+use the [Open](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.IWorkbooks.html#Syncfusion_XlsIO_IWorkbooks_Open_System_IO_Stream_) methods of [IWorkbook](https://help.syncfusion.com/cr/file-formats/Syncfusion.XlsIO.IWorkbook.html) interface.
 
 {% tabs %}
 {% highlight c# %}
