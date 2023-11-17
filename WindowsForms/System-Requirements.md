@@ -34,5 +34,5 @@ This section describes the system requirements to use Syncfusion Windows Forms C
 * Microsoft Visual Studio 2010/2012/2013/2015/2017/2019/2022
 * .NET Framework 4.0/4.5/4.5.1/4.6
 * Lower Syncfusion .NET frameworks can be used in applications because they are compatible with .NET 4.7, .NET 4.7.1, .NET 4.7.2, and .NET 4.8. For example, in the application, the Syncfusion 4.6 .NET framework assembly can be referred to as 4.7 or higher target versions.
-* .NET 6.0, .NET 7.0
+* .NET 6.0, .NET 7.0, .NET 8.0
 
