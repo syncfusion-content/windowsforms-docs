@@ -48,6 +48,8 @@ Use the following steps to create the Syncfusion Windows Forms project through t
 
    > .NET 7.0 version is available from v20.4.0.38 and support from Visual Studio 2022.
 
+   > .NET 8.0 version is available from v23.2.4 and support from Visual Studio 2022.
+
    In Visual Studio 2017 or lower, Syncfusion Windows Forms Application project configuration wizard.
 
    ![Syncfusion Windows Forms project configuration wizard](Project-Template-images\Syncfusion-Project-Template-Gallery-2.png)
@@ -56,13 +58,13 @@ Use the following steps to create the Syncfusion Windows Forms project through t
 
    **Project Type:** Select the project type, either .NET Framework or .NET Core.
 
-   N> Project type selection option will be available only from Visual Studio 2019 and later in Syncfusion Windows Forms Project template configuration. The .NET 6.0 and .NET 7.0 option will be listed in project type only when the .NET 6.0 and .NET 7.0 setup has been installed.
+   N> Project type selection option will be available only from Visual Studio 2019 and later in Syncfusion Windows Forms Project template configuration. The .NET 6.0, .NET 7.0, and .NET 8.0 option will be listed in project type only when the .NET 6.0, .NET 7.0, and .NET 8.0 setup has been installed.
 
    **Language:** Select the language, either CSharp or VB.
 
    **Reference From:** Choose the assembly location such as NuGet, GAC Location, or Essential Studio installed location, from where the assembly is added to the project.
 
-   N> Installed location and GAC option will be available only when the Syncfusion Essential Windows Forms setup has been installed. You can use NuGet option without installing the Syncfusion Essential Windows Forms setup. Also, the GAC option will not be available when you choose .NET 6.0 and .NET 7.0 from project type option in Visual Studio 2022.
+   N> Installed location and GAC option will be available only when the Syncfusion Essential Windows Forms setup has been installed. You can use NuGet option without installing the Syncfusion Essential Windows Forms setup. Also, the GAC option will not be available when you choose .NET 6.0, .NET 7.0, and .NET 8.0 from project type option in Visual Studio 2022.
 
    **Installed ES Build Version:** Choose the build version to add the corresponding version assemblies to the project.
 
