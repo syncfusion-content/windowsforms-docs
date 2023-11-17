@@ -126,7 +126,7 @@ No</td></tr>
 
 <tr>
 <td>
-From 23.2 (2023 Vol3)</td><td>
+From 23.2 (2023 Vol3 SP)</td><td>
 No</td><td>
 No</td><td>
 Yes</td><td>
