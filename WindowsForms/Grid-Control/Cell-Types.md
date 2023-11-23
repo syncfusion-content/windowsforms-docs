@@ -525,7 +525,7 @@ Me.gridControl1(2, 2).CellValue = "Aqua"
 ![Cell-Types_img13](Cell-Types_images/Cell-Types_img13.png)
 
 ### Customizing the Tab Name of the ColorUIControl
-As mentioned in the beginning of this topic, each cell type has been created by its own cell model and cell renderer. To customize the tab name custom classes has to be created which derived from the [GridDropDownCellModel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridDropDownCellModel.html) and [GridDropDownCellRenderer](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridDropDownCellRenderer.html) built-in classes. In this derived class override the InitializeDropDownContainer method and customize the tab name.
+As mentioned in the beginning of this topic, each cell type has been created by its own cell model and cell renderer. To customize the tab name custom classes has to be created which derived from the [GridDropDownCellModel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridDropDownCellModel.html) and [GridDropDownCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridDropDownCellRenderer.html) built-in classes. In this derived class override the InitializeDropDownContainer method and customize the tab name.
 
 {% tabs %}
 {% highlight c# %}
