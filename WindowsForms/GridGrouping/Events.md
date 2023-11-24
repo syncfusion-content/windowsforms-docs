@@ -41,10 +41,10 @@ AddHandler gridGroupingControl1.TableControl.CellButtonClicked, AddressOf TableC
 {% endhighlight %}
 {% endtabs %}
 
-The event handler receives an argument of type [GridCellButtonClickedEventArgs](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCellButtonClickedEventArgs.html) containing data related to this event.
+The event handler receives an argument of type [GridCellButtonClickedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCellButtonClickedEventArgs.html) containing data related to this event.
 
 ### CellDoubleClick 
-Occurs when the user double-clicks inside a cell. The event handler receives an argument of type ‘[GridCellClickEventArgs’](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCellClickEventArgs.html) containing data related to this event.
+Occurs when the user double-clicks inside a cell. The event handler receives an argument of type ‘[GridCellClickEventArgs’](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCellClickEventArgs.html) containing data related to this event.
 {% tabs %}
 {% highlight c# %}
 // Notify the double click performed on the cell
@@ -64,7 +64,7 @@ End Sub
 {% endtabs %}
 
 ### CellDrawn
-It will occur for every cell after the grid has drawn the specified cell. The event handler receives an argument of type [GridDrawCellEventArgs](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridDrawCellEventArgs.html) containing data related to this event.
+It will occur for every cell after the grid has drawn the specified cell. The event handler receives an argument of type [GridDrawCellEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridDrawCellEventArgs.html) containing data related to this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -78,7 +78,7 @@ AddHandler gridGroupingControl1.TableControl.CellDrawn, AddressOf TableControl_C
 {% endtabs %}
 
 ### TableControlCellClick 
-This occurs when the user clicks inside a cell. The event handler receives an argument of type [GridCellClickEventArgs](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCellClickEventArgs.html) containing data related to this event. This event can be invoked as follows.
+This occurs when the user clicks inside a cell. The event handler receives an argument of type [GridCellClickEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCellClickEventArgs.html) containing data related to this event. This event can be invoked as follows.
 
 {% tabs %}
 {% highlight c# %}
@@ -92,7 +92,7 @@ AddHandler Me.gridGroupingControl1.TableControlCellClick, AddressOf TableControl
 {% endtabs %}
 
 ### TableControlCellButtonClicked 
-This occurs when a user clicks on a child button element inside the cell renderer. The event handler receives an argument of type [GridCellButtonClickedEventArgs](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCellButtonClickedEventArgs.html) containing data related to this event. This event can be invoked as follows,
+This occurs when a user clicks on a child button element inside the cell renderer. The event handler receives an argument of type [GridCellButtonClickedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCellButtonClickedEventArgs.html) containing data related to this event. This event can be invoked as follows,
 
 {% tabs %}
 {% highlight c# %}
@@ -113,7 +113,7 @@ End Sub
 {% endtabs %}
 
 ### TableControlCellDoubleClick 
-This occurs when the user double-clicks inside a cell. The event handler receives an argument of type [GridCellClickEventArgs](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCellClickEventArgs.html) containing data related to this event. This event can be invoked as follows.
+This occurs when the user double-clicks inside a cell. The event handler receives an argument of type [GridCellClickEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCellClickEventArgs.html) containing data related to this event. This event can be invoked as follows.
 
 {% tabs %}
 {% highlight c# %}
@@ -138,7 +138,7 @@ End Sub
 {% endtabs %}
 
 ### TableControlCellDrawn
-This occurs for every cell after the grid has drawn the specified cell. The event handler receives an argument of type [GridDrawCellEventArgs](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridDrawCellEventArgs.html) containing data related to this event. This event can be invoked as follows.
+This occurs for every cell after the grid has drawn the specified cell. The event handler receives an argument of type [GridDrawCellEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridDrawCellEventArgs.html) containing data related to this event. This event can be invoked as follows.
 
 {% tabs %}
 {% highlight c# %}
@@ -159,10 +159,10 @@ End Sub
 {% endtabs %}
 
 ## Current Cell Events
-This section explains all the events that are related to the [CurrentCell](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCurrentCell.html) in GridGroupingControl.
+This section explains all the events that are related to the [CurrentCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCurrentCell.html) in GridGroupingControl.
 
 ### CurrentCellActivating 
-It will occur before the grid activates the specified cell as current cell. The event handler receives an argument of type [GridCurrentCellActivatingEventArgs](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCurrentCellActivatingEventArgs.html) containing data related to this event.
+It will occur before the grid activates the specified cell as current cell. The event handler receives an argument of type [GridCurrentCellActivatingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCurrentCellActivatingEventArgs.html) containing data related to this event.
 {% tabs %}
 {% highlight c# %}
 // Notifies before activating the current cell
@@ -266,7 +266,7 @@ AddHandler gridGroupingControl1.TableControl.CurrentCellControlLostFocus, Addres
 {% endtabs %}
 
 ### CurrentCellDeactivated 
-It will occur after the grid deactivates current cell. The event handler receives an argument of type [GridCurrentCellDeactivatedEventArgs](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCurrentCellDeactivatedEventArgs.html) containing data related to this event.
+It will occur after the grid deactivates current cell. The event handler receives an argument of type [GridCurrentCellDeactivatedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCurrentCellDeactivatedEventArgs.html) containing data related to this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -329,7 +329,7 @@ End Sub
 This section will explain all the important mouse controller events offered by GridGroupingControl.
 
 ### Click
-This event will occur when the grid [TableControl](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTable.html) is clicked.
+This event will occur when the grid [TableControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTable.html) is clicked.
 
 {% tabs %}
 {% highlight c# %}
@@ -350,7 +350,7 @@ End Sub
 {% endtabs %}
 
 ### DoubleClick
-This event will be occur when grid [TableControl](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTable.html) is double clicked.
+This event will be occur when grid [TableControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTable.html) is double clicked.
 
 {% tabs %}
 {% highlight c# %}
@@ -478,7 +478,7 @@ End Sub
 {% endtabs %}
 
 ### GridControlMouseDown 
-This event will occur before a MouseDown is raised and allows you to cancel the mouse event. The event handler receives an argument of type [CancelMouseEventArgs](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.CancelMouseEventArgs.html) containing data related to this event.
+This event will occur before a MouseDown is raised and allows you to cancel the mouse event. The event handler receives an argument of type [CancelMouseEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.CancelMouseEventArgs.html) containing data related to this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -502,7 +502,7 @@ AddHandler gridGroupingControl1.TableControl.GridControlMouseUp, AddressOf Table
 {% endtabs %}
 
 ### TableControlMouseDown
-It occurs when the mouse pointer is over the control and mouse button is pressed. It receives an argument of type [GridTableControlMouseEventArgs](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableControlMouseEventArgs.html) that provides data related to this event. This event can be invoked as follows.
+It occurs when the mouse pointer is over the control and mouse button is pressed. It receives an argument of type [GridTableControlMouseEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableControlMouseEventArgs.html) that provides data related to this event. This event can be invoked as follows.
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.TableControl.MouseUp += new MouseEventHandler(TableControl_MouseUp);
@@ -592,7 +592,7 @@ End Sub
 There are two events for filter bar selection, namely [FilterBarSelectedItemChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html) and [FilterBarSelectedItemChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html) are implemented for Essential Grid. These events enable the user to cancel or customize filter value.
 
 ### FilterBarSelectedItemChanging
-This event will be triggered while filtering a column. Using this event, user can cancel the filtering and the selected index or selected text of the filter bar cell can be modified as required. The event handler receives an argument type of [FilterBarSelectedItemChangingEventArgs](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.FilterBarSelectedItemChangingEventArgs.html) contains data related to this event.
+This event will be triggered while filtering a column. Using this event, user can cancel the filtering and the selected index or selected text of the filter bar cell can be modified as required. The event handler receives an argument type of [FilterBarSelectedItemChangingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.FilterBarSelectedItemChangingEventArgs.html) contains data related to this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -614,7 +614,7 @@ End Sub
 {% endtabs %}
 
 ### FilterBarSelectedItemChanged
-This event will be triggered after a column is filtered. Selected column, selected index, and selected text can be retrieved with this event. The event handler receives an argument type of [FilterBarSelectedItemChangedEventArgs](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.FilterBarSelectedItemChangedEventArgs.html) contains data related to this event.
+This event will be triggered after a column is filtered. Selected column, selected index, and selected text can be retrieved with this event. The event handler receives an argument type of [FilterBarSelectedItemChangedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.FilterBarSelectedItemChangedEventArgs.html) contains data related to this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -637,7 +637,7 @@ End Sub
 {% endtabs %}
 
 ## Table Events
-This section will explain the important [Table](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTable.html) events of the GridGroupingControl.
+This section will explain the important [Table](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTable.html) events of the GridGroupingControl.
 
 ### BackColorChanged
 It will trigger when the value of Control’s [BackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_BackColor) property changes.
@@ -678,7 +678,7 @@ AddHandler gridGroupingControl1.TableControl.BindingContextChanged, AddressOf Ta
 {% endtabs %}
 
 ### QueryAllowDragColumn    
-It will trigger when the user hovers the mouse over a column header or clicks on it. Using this event handler, user can determine the selected column can be dragged or not. The event handler receives an argument of type [GridQueryAllowDragColumnEventArgs](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridQueryAllowDragColumnEventArgs.html) containing data related to this event.
+It will trigger when the user hovers the mouse over a column header or clicks on it. Using this event handler, user can determine the selected column can be dragged or not. The event handler receives an argument of type [GridQueryAllowDragColumnEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridQueryAllowDragColumnEventArgs.html) containing data related to this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -690,7 +690,7 @@ AddHandler gridGroupingControl1.TableControl.QueryAllowDragColumn, AddressOf Tab
 {% endtabs %}
 
 ### QueryAllowGroupByColumn 
-It will trigger when the user drags a column header over the [GridGroupDropArea](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupDropArea.html). Using this event handler, user can determine if the grid can be grouped by the selected column. The event handler receives an argument of type [GridQueryAllowGroupByColumnEventArgs](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridQueryAllowGroupByColumnEventArgs.html) containing data related to this event.
+It will trigger when the user drags a column header over the [GridGroupDropArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupDropArea.html). Using this event handler, user can determine if the grid can be grouped by the selected column. The event handler receives an argument of type [GridQueryAllowGroupByColumnEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridQueryAllowGroupByColumnEventArgs.html) containing data related to this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -702,7 +702,7 @@ AddHandler gridGroupingControl1.TableControl.QueryAllowGroupByColumn, AddressOf 
 {% endtabs %}
 
 ### QueryAllowSortColumn 
-It will occur when the user hovers the mouse over a column header or clicks on it. In the event handler, user can determine the selected column can be sorted or not. The event handler receives an argument of type [GridQueryAllowSortColumnEventArgs](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridQueryAllowSortColumnEventArgs.html) containing data related to this event.
+It will occur when the user hovers the mouse over a column header or clicks on it. In the event handler, user can determine the selected column can be sorted or not. The event handler receives an argument of type [GridQueryAllowSortColumnEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridQueryAllowSortColumnEventArgs.html) containing data related to this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -726,7 +726,7 @@ AddHandler gridGroupingControl1.TableControl.Resize, AddressOf TableControl_Resi
 {% endtabs %}
 
 ### ResizingColumns 
-It will occur when the user resizes a selected range of columns. The event handler receives an argument of type [GridResizingColumnsEventArgs](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridResizingColumnsEventArgs.html) containing data related to this event.
+It will occur when the user resizes a selected range of columns. The event handler receives an argument of type [GridResizingColumnsEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridResizingColumnsEventArgs.html) containing data related to this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -749,7 +749,7 @@ AddHandler gridGroupingControl1.TableControl.TextChanged, AddressOf TableControl
 {% endtabs %}
 
 ### TopRowChanged
-It will trigger when top row index is changed while scrolling the grid. The event handler receives an argument of type [GridRowColIndexChangedEventArgs](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridRowColIndexChangedEventArgs.html) containing data related to this event.
+It will trigger when top row index is changed while scrolling the grid. The event handler receives an argument of type [GridRowColIndexChangedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridRowColIndexChangedEventArgs.html) containing data related to this event.
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.TableControl.TopRowChanged += new Syncfusion.Windows.Forms.Grid.GridRowColIndexChangedEventHandler(TableControl_TopRowChanged);
@@ -783,7 +783,7 @@ End Sub
 {% endtabs %}
 
 ### GroupAdded 
-This event occurs when a new group is added to the table after the table was categorized and when a record is changed. It does not occur during the categorization of the table. The event handler receives an argument of type [GroupEventArgs](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.GroupEventArgs.html) containing data related to this event.
+This event occurs when a new group is added to the table after the table was categorized and when a record is changed. It does not occur during the categorization of the table. The event handler receives an argument of type [GroupEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.GroupEventArgs.html) containing data related to this event.
 
 User can handle this event to make the child groups that were not initially expanded.
 
@@ -806,7 +806,7 @@ End Sub
 {% endtabs %}
 
 ### GroupCollapsing 
-This occurs before a group is collapsed. The event handler receives an argument of type [GroupEventArgs](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.GroupEventArgs.html) containing data related to this event.
+This occurs before a group is collapsed. The event handler receives an argument of type [GroupEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.GroupEventArgs.html) containing data related to this event.
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.GroupCollapsing += new GroupEventHandler(gridGroupingControl1_GroupCollapsing);
@@ -829,7 +829,7 @@ End Sub
 {% endtabs %}
 
 ### GroupCollapsed
-This occurs when a group is collapsed. The event handler receives an argument of type [GroupEventArgs](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.GroupEventArgs.html) containing data related to this event.
+This occurs when a group is collapsed. The event handler receives an argument of type [GroupEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.GroupEventArgs.html) containing data related to this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -853,7 +853,7 @@ End Sub
 {% endtabs %}
 
 ### GroupExpanding
-This will triggers before a group is expanded. The event handler receives an argument of type [GroupEventArgs](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.GroupEventArgs.html) containing the data related to this event.
+This will triggers before a group is expanded. The event handler receives an argument of type [GroupEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.GroupEventArgs.html) containing the data related to this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -883,7 +883,7 @@ End Sub
 {% endtabs %}
 
 ### GroupExpanded 
-This occurs when a group is expanded. The event handler receives an argument of type [GroupEventArgs](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.GroupEventArgs.html) containing data related to this event.
+This occurs when a group is expanded. The event handler receives an argument of type [GroupEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.GroupEventArgs.html) containing data related to this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -907,7 +907,7 @@ End Sub
 {% endtabs %}
 
 ### GroupRemoving 
-This event occurs before a group is removed after the table was categorized and when a record is changed. It does not occur during the categorization of the table. The event handler receives an argument of type [GroupEventArgs](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.GroupEventArgs.html) containing data related to this event.
+This event occurs before a group is removed after the table was categorized and when a record is changed. It does not occur during the categorization of the table. The event handler receives an argument of type [GroupEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.GroupEventArgs.html) containing data related to this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -928,7 +928,7 @@ End Sub
 {% endtabs %}
 
 ### GroupSummaryInvalidated
-This occurs when a summary has been marked dirty. The event handler receives an argument of type [GroupEventArgs](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.GroupEventArgs.html) containing data related to this event.
+This occurs when a summary has been marked dirty. The event handler receives an argument of type [GroupEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.GroupEventArgs.html) containing data related to this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -958,7 +958,7 @@ End Sub
 {% endtabs %}
 
 ### RecordExpanding
-This occurs before a record with nested table is expanded. The event handler receives an argument of type [RecordEventArgs](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.RecordEventArgs.html) containing data related to this event.
+This occurs before a record with nested table is expanded. The event handler receives an argument of type [RecordEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.RecordEventArgs.html) containing data related to this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -982,7 +982,7 @@ End Sub
 {% endtabs %}
 
 ### RecordValueChanging 
-This occurs when [RecordFieldCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellAppearance.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableCellAppearance_RecordFieldCell) cell’s value is changed and before [Record.SetValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridRecord.html) is returned. The event handler receives an argument of type [RecordValueChangingEventArgs](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.RecordValueChangingEventArgs.html) containing data related to this event.
+This occurs when [RecordFieldCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellAppearance.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableCellAppearance_RecordFieldCell) cell’s value is changed and before [Record.SetValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridRecord.html) is returned. The event handler receives an argument of type [RecordValueChangingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.RecordValueChangingEventArgs.html) containing data related to this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -1005,7 +1005,7 @@ End Sub
 {% endtabs %}
 
 ### RecordValueChanged 
-This occurs when `RecordFieldCell` cell’s value is changed and after `Record.SetValue` is returned. The event handler receives an argument of type [RecordValueChangedEventArgs](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.RecordValueChangedEventArgs.html) containing data related to this event.
+This occurs when `RecordFieldCell` cell’s value is changed and after `Record.SetValue` is returned. The event handler receives an argument of type [RecordValueChangedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.RecordValueChangedEventArgs.html) containing data related to this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -1031,7 +1031,7 @@ End Sub
 {% endtabs %}
 
 ### SortingItemsInGroup 
-This occurs before the records for a group is sorted. The event handler receives an argument of type [GroupEventArgs](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.GroupEventArgs.html) containing data related to this event.
+This occurs before the records for a group is sorted. The event handler receives an argument of type [GroupEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.GroupEventArgs.html) containing data related to this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -1052,7 +1052,7 @@ End Sub
 {% endtabs %}
 
 ### SortedItemsInGroup 
-This occurs after the records for a group is sorted. The event handler receives an argument of type [GroupEventArgs](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.GroupEventArgs.html) containing data related to this event.
+This occurs after the records for a group is sorted. The event handler receives an argument of type [GroupEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.GroupEventArgs.html) containing data related to this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -1073,7 +1073,7 @@ End Sub
 {% endtabs %}
 
 ### SourceListListChanged 
-This occurs before the table processes [System.ComponentModel.IBindingList.ListChanged](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ibindinglist.listchanged?view=net-5.0) event of attached source list. The event handler receives an argument of type [TableListChangedEventArgs](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.TableListChangedEventArgs.html) containing data related to this event.
+This occurs before the table processes [System.ComponentModel.IBindingList.ListChanged](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ibindinglist.listchanged?view=net-5.0) event of attached source list. The event handler receives an argument of type [TableListChangedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.TableListChangedEventArgs.html) containing data related to this event.
 
 {% tabs %}
 {% highlight c# %}
