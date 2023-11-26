@@ -158,7 +158,7 @@ End Sub
 
 ## BorderStyleChanged
 
-This event occurs when the [BorderStyle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.borderstyle?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_BorderStyle) property is changed. The `BorderStyle` property indicates whether the edit control should have a border.
+This event occurs when the [BorderStyle](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.borderstyle?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1&redirectedfrom=MSDN#System_Windows_Forms_TextBoxBase_BorderStyle) property is changed. The `BorderStyle` property indicates whether the edit control should have a border.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
@@ -213,7 +213,7 @@ End Sub
 
 ## HideSelectionChanged
 
-This event occurs when the [HideSelection](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.hideselection?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_HideSelection) property is changed. The `HideSelection` property indicates that the selection should be hidden when the edit control loses focus.
+This event occurs when the [HideSelection](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.hideselection?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1&redirectedfrom=MSDN#System_Windows_Forms_TextBoxBase_HideSelection) property is changed. The `HideSelection` property indicates that the selection should be hidden when the edit control loses focus.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
@@ -434,7 +434,7 @@ End Sub
 
 ## TextAlignChanged
 
-This event occurs when the [TextAlign](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.textalign?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBox_TextAlign) property is changed. The TextAlign property indicates how the text should be aligned for edit controls.
+This event occurs when the [TextAlign](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.textalign?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1&redirectedfrom=MSDN#System_Windows_Forms_TextBox_TextAlign) property is changed. The TextAlign property indicates how the text should be aligned for edit controls.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
