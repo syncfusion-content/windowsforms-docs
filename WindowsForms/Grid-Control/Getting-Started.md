@@ -192,7 +192,7 @@ Next row
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-2. Populate data by using [PopulateValues](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_PopulateValues_Syncfusion_Windows_Forms_Grid_GridRangeInfo_System_Object_) method. This method will allow you to pass in a range of cells of type [GridRangeInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridRangeInfo.html#) and data source of type **object**. 
+2. Populate data by using [PopulateValues](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_PopulateValues_Syncfusion_Windows_Forms_Grid_GridRangeInfo_System_Object_) method. This method will allow you to pass in a range of cells of type [GridRangeInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridRangeInfo.html) and data source of type **object**. 
 
 {% capture codesnippet4 %}​
 {% tabs %}
@@ -366,7 +366,7 @@ Me.gridControl1.ListBoxSelectionMode = SelectionMode.None
 {% endhighlight %}
 {% endtabs %}
 
-For selecting the range of cells in GridControl, set the [AllowSelection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableOptionsStyleInfo_AllowSelection) property to the appropriate value from the [GridSelectionFlags](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridSelectionFlags.html#) enumeration. 
+For selecting the range of cells in GridControl, set the [AllowSelection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableOptionsStyleInfo_AllowSelection) property to the appropriate value from the [GridSelectionFlags](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridSelectionFlags.html) enumeration. 
 
 {% tabs %}
 {% highlight c# %}
