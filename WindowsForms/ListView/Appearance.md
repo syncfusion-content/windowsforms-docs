@@ -51,7 +51,7 @@ sfListView1.Style.GroupItemStyle.Font = New Font("Segoe UI", 12)
 ![](Appearance_images/Appearance_img2.png)
 
 ## Conditional styling
-The SfListView allows the items customization by using [SfListView.DrawItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html) event.
+The SfListView allows the items customization by using [SfListView.DrawItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_DrawItem) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -79,7 +79,7 @@ End Sub
 ![](Appearance_images/Appearance_img3.png)
 
 ## Adding image to an item
-The SfListView allows adding image to each item by using the [SfListView.DrawItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html) event. An image can be set to an item by using the `Image` property.
+The SfListView allows adding image to each item by using the [SfListView.DrawItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_DrawItem) event. An image can be set to an item by using the `Image` property.
 
 {% tabs %}
 {% highlight c# %}

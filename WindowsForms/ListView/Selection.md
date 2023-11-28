@@ -164,7 +164,7 @@ sfListView1.Style.SelectionStyle.HoverForeColor = Color.GreenYellow
 
 ### SelectionChanging event
 
-The [SelectionChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html) event is raised while selecting an item at the execution time. [ItemSelectionChangingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.Events.ItemSelectionChangingEventArgs.html) has the following members that provides information for the SelectionChanging event:
+The [SelectionChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectionChanging) event is raised while selecting an item at the execution time. [ItemSelectionChangingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.Events.ItemSelectionChangingEventArgs.html) has the following members that provides information for the SelectionChanging event:
 
 * `AddedItems`: Gets collection of the underlying data objects where the selection is going to process.
 * `RemovedItems`: Gets collection of the underlying data objects where the selection is going to remove.
@@ -197,7 +197,7 @@ End Sub
 
 ### SelectionChanged event
 
-The [SelectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html) event will occur once the selection process has been completed for the selected item in the SfListView. [ItemSelectionChangedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.Events.ItemSelectionChangedEventArgs.html) has the following members that provides information for the SelectionChanged event:
+The [SelectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectionChanged) event will occur once the selection process has been completed for the selected item in the SfListView. [ItemSelectionChangedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.Events.ItemSelectionChangedEventArgs.html) has the following members that provides information for the SelectionChanged event:
 
 * `AddedItems`: Gets collection of the underlying data objects where the selection has been processed.
 * `RemovedItems`: Gets collection of the underlying data objects where the selection has been removed.
