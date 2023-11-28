@@ -33,7 +33,7 @@ sfListView1.ValueMember = "Continent"
 
 ### SourcePropertyChanged
 
-The [SourcePropertyChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html) event is raised when the CountryInfo property value is changed if the CountryInfo Implements the `INotifyPropertyChanged` interface. The event receives with two arguments namely, sender that handles the CountryInfo and `PropertyChangedEventArgs` as object.
+The [SourcePropertyChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_SourcePropertyChanged) event is raised when the CountryInfo property value is changed if the CountryInfo Implements the `INotifyPropertyChanged` interface. The event receives with two arguments namely, sender that handles the CountryInfo and `PropertyChangedEventArgs` as object.
 [PropertyChangedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.PropertyChangingEventArgs.html) has below property,
 
 `PropertyName` – Denotes the property name of the changed value.
@@ -56,7 +56,7 @@ End Sub
 
 ### SourceCollectionChanged
 
-The [SourceCollectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html) event is raised when the source collection is changed, for example, add or remove the collection. The event receives two arguments namely, sender that handles `SfListView.View` object and `NotifyCollectionChangedEventArgs` as object.
+The [SourceCollectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_SourceCollectionChanged) event is raised when the source collection is changed, for example, add or remove the collection. The event receives two arguments namely, sender that handles `SfListView.View` object and `NotifyCollectionChangedEventArgs` as object.
 
 NotifyCollectionChangedEventArgs has the following properties,
 

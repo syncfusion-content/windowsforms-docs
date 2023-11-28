@@ -27,7 +27,7 @@ sfListView1.GroupHeaderHeight = 50
 ![WinForms ListView Item Sizing](Item Sizing_images/ItemSizing_img1.png)
 
 ## Customize item size of an item on-demand
-The SfListView allows customizing the height of an item on-demand by the [SfListView.QueryItemHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html) event using the item index. This event is raised whenever items come to view and triggered with [QueryItemHeightEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.Events.QueryItemHeightEventArgs.html).
+The SfListView allows customizing the height of an item on-demand by the [SfListView.QueryItemHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_QueryItemHeight) event using the item index. This event is raised whenever items come to view and triggered with [QueryItemHeightEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.Events.QueryItemHeightEventArgs.html).
 
 The SfListView.QueryItemHeight event provides the following properties in their arguments:
 
