@@ -9,7 +9,7 @@ documentation: ug
 
 # Disable menu items in WinForms ContextMenuStrip (ContextMenuStripEx)
 
-We can disable the unused or unsupported menu items by using this feature. ToolStripItems are enabled by default when they are created, but this can be changed based on user requirement through the [`Enabled`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripmenuitem.enabled?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripMenuItem_Enabled) property.
+We can disable the unused or unsupported menu items by using this feature. ToolStripItems are enabled by default when they are created, but this can be changed based on user requirement through the [`Enabled`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripmenuitem.enabled?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripMenuItem_Enabled) property.
 
 The below code snippet will explain how to disable the ToolStripItems.
 
