@@ -9,12 +9,12 @@ documentation: ug
 
 # Keyboard Shortcuts in WinForms ContextMenuStrip (ContextMenuStripEx)
 
-The menu items can be selected through keyboard operation by specifying the shortcuts via the [`ShortcutKeys`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripmenuitem.shortcutkeys?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripMenuItem_ShortcutKeys) property of the ContextMenu. The [`ShowShortcutKeys`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripmenuitem.showshortcutkeys?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripMenuItem_ShowShortcutKeys) property is used for display the shortcut key text in the menu item.
+The menu items can be selected through keyboard operation by specifying the shortcuts via the [`ShortcutKeys`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripmenuitem.shortcutkeys?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripMenuItem_ShortcutKeys) property of the ContextMenu. The [`ShowShortcutKeys`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripmenuitem.showshortcutkeys?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripMenuItem_ShowShortcutKeys) property is used for display the shortcut key text in the menu item.
 
 >**NOTE**:        
 > 1. This feature is not applicable for combobox and textbox.           
-> 2. By using this keyboard shortcuts we can access the menu items through [`Click`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripitem.click?view=netframework-4.7.2) event.
-> 3. To learn more about the list of Keys Enum, go to ['link'](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.keys?view=net-5.0).
+> 2. By using this keyboard shortcuts we can access the menu items through [`Click`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripitem.click?view=netframework-4.7.2) event.
+> 3. To learn more about the list of Keys Enum, go to ['link'](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.keys?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0).
 
 
 The below code snippet shows how shortcut is assigned to the menu item.
@@ -37,7 +37,7 @@ Me.toolStripMenuItem1.ShortcutKeys = (CType((System.Windows.Forms.Keys.Control O
 
 ![ShortcutKeys](Shortcut_Images/Shortcut.png)
 
-**ShortcutKeyDisplayString**: User can also specify custom text in place of keyboard shortcuts region using the [`ShortcutKeyDisplayString`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripmenuitem.shortcutkeydisplaystring?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripMenuItem_ShortcutKeyDisplayString) property.
+**ShortcutKeyDisplayString**: User can also specify custom text in place of keyboard shortcuts region using the [`ShortcutKeyDisplayString`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripmenuitem.shortcutkeydisplaystring?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripMenuItem_ShortcutKeyDisplayString) property.
 
 {% tabs %}
 {% highlight c# %}

@@ -26,7 +26,7 @@ Syncfusion Version </th>
 .NET 4.6 & above</th><th>
 .NET 6.0</th><th>
 .NET 7.0</th><th>
-.NET 8.0</th><</tr>
+.NET 8.0</th></tr>
 
 <tr>
 <td>

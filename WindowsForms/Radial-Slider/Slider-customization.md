@@ -79,7 +79,7 @@ radialSlider1.SliderNeedleColor = System.Drawing.Color.DarkViolet
 
 ## Fore color
 
-The foreground color of the **RadialSlider** can be customized using the [ForeColor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.forecolor?view=netframework-4.7.2) property.
+The foreground color of the **RadialSlider** can be customized using the [ForeColor](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.forecolor?view=netframework-4.7.2) property.
 
 {% tabs %}
 

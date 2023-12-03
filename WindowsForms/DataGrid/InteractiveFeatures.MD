@@ -10,7 +10,7 @@ documentation: ug
 
 ## Context Menu
 
-SfDataGrid provides an entirely customizable menu to expose the functionality on user interface by using [ContextMenuStrip](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.contextmenustrip?view=net-5.0). It allows to create context menus for different rows in an efficient manner.
+SfDataGrid provides an entirely customizable menu to expose the functionality on user interface by using [ContextMenuStrip](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.contextmenustrip?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0). It allows to create context menus for different rows in an efficient manner.
 
 ### ContextMenu for Records
 
@@ -190,7 +190,7 @@ Me.sfDataGrid1.RecordContextMenu.ForeColor = Color.DarkBlue
 
 ### Cancel ContextMenu Opening
 
-The context menu opening can be canceled for any particular cell/row or column through [ContextMenuOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+The context menu opening can be canceled for any particular cell/row or column through [ContextMenuOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ContextMenuOpening) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -213,13 +213,13 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-[ContextMenuOpened](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event occurs when any context menu is opened in SfDataGrid. This will not occur if `ContextMenuOpening` event is canceled.
+[ContextMenuOpened](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ContextMenuOpened) event occurs when any context menu is opened in SfDataGrid. This will not occur if `ContextMenuOpening` event is canceled.
 
 ### Customization of Context Menu
 
 #### Change the Menu Items when Opening the Context Menu.
 
-The menu items for  the context menu can be change when opening the context menu by handling the [ContextMenuOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+The menu items for  the context menu can be change when opening the context menu by handling the [ContextMenuOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ContextMenuOpening) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -715,7 +715,7 @@ Me.sfDataGrid1.ToolTipOption.InitialDelay = 1000
 
 #### Auto Pop Delay
 
-The [SfDataGrid.ToolTipOption.AutoPopDelay](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Interactivity.ToolTipOptions.html#Syncfusion_WinForms_DataGrid_Interactivity_ToolTipOptions_ToolTipMode) property provides support to shorten or lengthen the time duration that the tooltip is displayed when the mouse pointer is on a cell.
+The [SfDataGrid.ToolTipOption.AutoPopDelay](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Interactivity.ToolTipOptions.html#Syncfusion_WinForms_DataGrid_Interactivity_ToolTipOptions_AutoPopDelay) property provides support to shorten or lengthen the time duration that the tooltip is displayed when the mouse pointer is on a cell.
 
 {% tabs %}
 {% highlight c# %}
