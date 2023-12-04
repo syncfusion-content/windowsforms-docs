@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Cell Merging in Windows Forms GridGrouping Control
-Merging is the process of combining two or more adjacent cells with the same data into a single cell. The merge cells can be enabled in the GridGroupingControl by setting the [MergeCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_MergeCell), [MergeCellsMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelOptions.html#Syncfusion_Windows_Forms_Grid_GridModelOptions_MergeCellsMode) and [MergeCellsLayout](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridMergeCellsLayout.html) properties.
+Merging is the process of combining two or more adjacent cells with the same data into a single cell. The merge cells can be enabled in the GridGroupingControl by setting the [MergeCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_MergeCell), [MergeCellsMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelOptions.html#Syncfusion_Windows_Forms_Grid_GridModelOptions_MergeCellsMode) and [MergeCellsLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridMergeCellsLayout.html) properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -33,7 +33,7 @@ Me.gridGroupingControl1.TableModel.Options.MergeCellsMode = GridMergeCellsMode.O
 ![Cell-Merging_img1](Cell-Merging_images/Cell-Merging_img1.png)
 
 ## Setting Merge Cells Behavior 
-The calculating behavior of the merge cells can be set by using the `MergeCellsMode` property. It is used to set whether the merge cells need to be calculated at the time of loading grid or calculate on demand basis. It can also be used to set the behavior of the merging such as rows in columns, columns in rows and hidden range of cells using the [GridMergeCellsMode](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridMergeCellsMode.html) enumeration.
+The calculating behavior of the merge cells can be set by using the `MergeCellsMode` property. It is used to set whether the merge cells need to be calculated at the time of loading grid or calculate on demand basis. It can also be used to set the behavior of the merging such as rows in columns, columns in rows and hidden range of cells using the [GridMergeCellsMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridMergeCellsMode.html) enumeration.
 
 ### Merging Rows in Columns
 The adjacent rows with the same data can be merged into the single column by using the `MergeRowsInColumns` option.
@@ -97,7 +97,7 @@ Me.gridGroupingControl1.TableModel.MergeCells.EvaluateMergeCells(GridRangeInfo.R
 {% endtabs %}
 
 ## Finding the Merged Range
-The [MergeCells](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelMergeCells.html) collection maintains all the merged ranges of a GridGroupingControl. To find a merged range of a cell, [FindRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelMergeCells.html#Syncfusion_Windows_Forms_Grid_GridModelMergeCells_FindRange_System_Int32_System_Int32_) method can be used. If the specified cell with row index and column index is inside a ` MergedRange `, a range will be returned. Otherwise it will return the empty range.
+The [MergeCells](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelMergeCells.html) collection maintains all the merged ranges of a GridGroupingControl. To find a merged range of a cell, [FindRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelMergeCells.html#Syncfusion_Windows_Forms_Grid_GridModelMergeCells_FindRange_System_Int32_System_Int32_) method can be used. If the specified cell with row index and column index is inside a ` MergedRange `, a range will be returned. Otherwise it will return the empty range.
 
 {% tabs %}
 {% highlight c# %}
@@ -117,7 +117,7 @@ MessageBox.Show("MergedRange for cell(5,2) is " & range1.Info.ToString() & Const
 {% endhighlight %}
 {% endtabs %}
 
-N> The merged range of a cell can also be get by using [GetSpannedRangeInfo](http://help.syncfusion.com/windowsforms/grid/managing-the-rows-and-columns#finding-covered-range-floating-range-or-merged-range-of-a-cell) method.
+N> The merged range of a cell can also be get by using [GetSpannedRangeInfo](https://help.syncfusion.com/windowsforms/grid/managing-the-rows-and-columns#finding-covered-range-floating-range-or-merged-range-of-a-cell) method.
 
 ![Cell-Merging_img4](Cell-Merging_images/Cell-Merging_img4.png)
 
