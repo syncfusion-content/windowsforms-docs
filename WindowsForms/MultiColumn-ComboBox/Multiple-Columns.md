@@ -39,7 +39,7 @@ Me.multiColumnComboBox1.AlphaBlendSelectionColor = Color.LightBlue
 
 ## DropDownWidth
 
-The [DropDownWidth]((https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html#Syncfusion_Windows_Forms_Tools_MultiColumnComboBox_ShowColumnHeader)) property is used to set the width for the DropDown Popup of MultiColumnComboBox. Please find the code for the same:
+The [DropDownWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ComboDropDown.html#Syncfusion_Windows_Forms_Tools_ComboDropDown_DropDownWidth) property is used to set the width for the DropDown Popup of MultiColumnComboBox. Please find the code for the same:
 
 {% tabs %}
 
