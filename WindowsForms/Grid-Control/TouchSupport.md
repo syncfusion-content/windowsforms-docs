@@ -27,8 +27,8 @@ GridControl provides the swipe scrolling support in both horizontal and vertical
 N> To have the proper horizontal and vertical pixel touch scrolling, the [HScrollPixel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_HScrollPixel) and [VScrollPixel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_VScrollPixel) properties should be set to `true`.
 
 ## Touch Zooming
-GridControl allows to perform the touch zoom in or out to the entire grid by initializing [ZoomGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.ZoomGrid.html#) class where the constructor takes a parameter as a `GridControl` object.
-To have this touch zooming support in grid, the [GridHelperClasses.Windows](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.html#) assembly needs to be added into the assembly reference. 
+GridControl allows to perform the touch zoom in or out to the entire grid by initializing [ZoomGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.ZoomGrid.html) class where the constructor takes a parameter as a `GridControl` object.
+To have this touch zooming support in grid, the [GridHelperClasses.Windows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.html) assembly needs to be added into the assembly reference. 
 {% tabs %}
 {% highlight c# %}
 //Initialize the Zooming to GridControl
@@ -45,7 +45,7 @@ N> The GridControl does not allow to perform the touch zoom in or out operations
 
 ## Touch Selection
 The touch selection support as like Excel can be enabled by setting the `EnableTouchMode` property to `true` and also the Excel-like selection frame and Excel-like current cell options needs to be enabled to enable the touch selection support.
-To enable Excel-like selection frame in the grid, the [ExcelLikeSelectionFrame](https://help.syncfusion.com/windowsforms/grid/ms-excel-like-features#excel-like-selection-frame) property can be used and to have the Excel-like current cell in the grid, set the [ExcelLikeCurrentCell](https://help.syncfusion.com/windowsforms/grid/ms-excel-like-features#excel-like-current-cell) property to `true`.
+To enable Excel-like selection frame in the grid, the [ExcelLikeSelectionFrame](https://help.syncfusion.com/windowsforms/grid-control/ms-excel-like-features#excel-like-selection-frame) property can be used and to have the Excel-like current cell in the grid, set the [ExcelLikeCurrentCell](https://help.syncfusion.com/windowsforms/grid-control/ms-excel-like-features#excel-like-current-cell) property to `true`.
 {% tabs %}
 {% highlight c# %}
 //Enable the Excel like selection frame to the GridControl
