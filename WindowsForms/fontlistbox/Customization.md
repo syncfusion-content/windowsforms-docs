@@ -9,7 +9,7 @@ documentation: ug
 
 ## Selection Mode
 
-At run time, the items in the FontListBox can be selected based on the selection mode specified in the [SelectionMode](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.listbox.selectionmode?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Forms_ListBox_SelectionMode) property. Selection can be made using mouse and keyboard.
+At run time, the items in the FontListBox can be selected based on the selection mode specified in the [SelectionMode](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.listbox.selectionmode?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Forms_ListBox_SelectionMode) property. Selection can be made using mouse and keyboard.
 
 The FontListBox contains the following options:
 
@@ -39,7 +39,7 @@ By default, the [FontListBox](https://help.syncfusion.com/cr/windowsforms/Syncfu
 
 ### Horizontal scrollbar
 
-The [HorizontalScrollbar](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.listbox.horizontalscrollbar?view=netframework-4.8) can be displayed if the items are beyond the right edge of the FontListBox.
+The [HorizontalScrollbar](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.listbox.horizontalscrollbar?view=netframework-4.8) can be displayed if the items are beyond the right edge of the FontListBox.
 
 <table>
 <tr>
@@ -84,7 +84,7 @@ Me.fontListBox1.HorizontalScrollbar = True
 
 ### Height
 
-We can set the height of the item inside the listbox through [ItemHeight](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.listbox.itemheight?view=netframework-4.8) property. Default value is 15. 
+We can set the height of the item inside the listbox through [ItemHeight](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.listbox.itemheight?view=netframework-4.8) property. Default value is 15. 
 
 {% tabs %}
 {% highlight c# %}
@@ -104,7 +104,7 @@ Me.fontListBox1.ItemHeight = 20
 
 ### Sorting
 
-Sorting of the items can be enabled using the [Sorted](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.listbox.sorted?view=netframework-4.8) property. By default, the value of this property is false.
+Sorting of the items can be enabled using the [Sorted](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.listbox.sorted?view=netframework-4.8) property. By default, the value of this property is false.
 
 {% tabs %}
 {% highlight c# %}
@@ -142,7 +142,7 @@ Me.fontListBox1.UseAutoComplete = True
 
 The SelectedIndexChanged event occurs when the ListBox.SelectedIndex property is changed.
 
-The following code snippet allows you to set a selected font style for a label on selecting through a FontListBox using the [SelectedIndexChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.listbox.selectedindexchanged?redirectedfrom=MSDN&view=netframework-4.8) event.
+The following code snippet allows you to set a selected font style for a label on selecting through a FontListBox using the [SelectedIndexChanged](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.listbox.selectedindexchanged?redirectedfrom=MSDN&view=netframework-4.8) event.
 
 {% tabs %}
 {% highlight c# %}

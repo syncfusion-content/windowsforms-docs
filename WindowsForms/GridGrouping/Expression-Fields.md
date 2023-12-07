@@ -10,7 +10,7 @@ documentation: ug
 # Expression Fields in Windows Forms GridGrouping control
 The GridGroupingControl lets column to display the calculation results based on other fields in the same record. The calculation result can be displayed in a separate column i.e. unbound column. These expression columns can be visible or invisible, used in grouping and sorting, and may be employed as summary fields for summary rows.
 
-The [ExpressionFields](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html) are maintained in the [ExpressionFieldsDescriptorCollection](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldDescriptorCollection.html) in which each entry termed as [ExpressionFieldDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldDescriptor.html) defines one expression field. 
+The [ExpressionFields](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html) are maintained in the [ExpressionFieldsDescriptorCollection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldDescriptorCollection.html) in which each entry termed as [ExpressionFieldDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldDescriptor.html) defines one expression field. 
 
 The below example shows the behavior of the ExpressionFields in the GridGroupingControl,
 
@@ -22,7 +22,7 @@ The ExpressionFields can be added to GridGroupingControl at design time by using
 
 ![Expression-Fields_img3](Expression-Fields_images/Expression-Fields_img3.png)
 
-The [ExpressionFieldDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldDescriptor.html) class has the following properties. 
+The [ExpressionFieldDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldDescriptor.html) class has the following properties. 
 
 * [Name](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.FieldDescriptor.html#Syncfusion_Grouping_FieldDescriptor_Name) – Specifies the name of the Expression field.
 * [Expression](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldDescriptor.html#Syncfusion_Grouping_ExpressionFieldDescriptor_Expression) – Specifies the formula expression.
@@ -384,7 +384,7 @@ Me.gridGroupingControl1.TableDescriptor.Columns("Losing %
 ![Expression-Fields_img5](Expression-Fields_images/Expression-Fields_img5.png)
 
 ## Adding Custom Function
-The custom functions which can be any mathematical formulas or calculation method can be used in the ExpressionFields. The can be done by using the [ExpressionFieldEvaluator](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldDescriptor.html) class.
+The custom functions which can be any mathematical formulas or calculation method can be used in the ExpressionFields. The can be done by using the [ExpressionFieldEvaluator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldDescriptor.html) class.
 
 The following steps are used to add the custom function in ExpressionFields,
 
@@ -492,9 +492,9 @@ Me.gridGroupingControl1.TableDescriptor.ExpressionFields.AddRange(New Expression
 ![Expression-Fields_img6](Expression-Fields_images/Expression-Fields_img6.png)
 
 ## Adding Calculate Engine Formulas
-The [Essential Calculate formula](http://help.syncfusion.com/windowsforms/calculate/calculate-functions) functions can also be used as custom function for the calculation of Expression Fields. The **Syncfusion.Calculate.Base.dll**provides the accessible to use the calculate engine. 
+The [Essential Calculate formula](https://help.syncfusion.com/windowsforms/calculation-engine/supported-formulas/supported-formulas) functions can also be used as custom function for the calculation of Expression Fields. The **Syncfusion.Calculate.Base.dll**provides the accessible to use the calculate engine. 
 
-Please refer the below dashboard sample to create the [CalcEngine](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html) with the [ICalcData](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.ICalcData.html),
+Please refer the below dashboard sample to create the [CalcEngine](https://help.syncfusion.com/windowsforms/calculation-engine/supported-formulas/supported-formulas) with the [ICalcData](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.ICalcData.html),
 
 **&lt;Installation Location&gt;\Syncfusion\EssentialStudio\&lt;Product Version&gt;\Windows\Calculate.Windows\Samples\Array ICalcData Demo**
 

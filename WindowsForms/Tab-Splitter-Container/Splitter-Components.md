@@ -26,14 +26,14 @@ The splitter in the TabSplitterContainer control has in-built options for changi
 
 The properties which customizes the Splitter page are as follows.
 
-* [BorderStyle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.panel.borderstyle?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Panel_BorderStyle)
-* [BackgroundImage](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backgroundimage?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_BackgroundImage)
-* [BackgroundImageLayout](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backgroundimagelayout?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_BackgroundImageLayout)
+* [BorderStyle](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.panel.borderstyle?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Panel_BorderStyle)
+* [BackgroundImage](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backgroundimage?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_BackgroundImage)
+* [BackgroundImageLayout](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backgroundimagelayout?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_BackgroundImageLayout)
 * [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterPage.html#Syncfusion_Windows_Forms_Tools_TabSplitterPage_Image)
 * [ImageTransparencyColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterPage.html#Syncfusion_Windows_Forms_Tools_TabSplitterPage_ImageTransparentColor)
 * [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterPage.html#Syncfusion_Windows_Forms_Tools_TabSplitterPage_Text)
 * [Tooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterPage.html#Syncfusion_Windows_Forms_Tools_TabSplitterPage_ToolTip)
-* [Visible](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.visible?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_Visible)
+* [Visible](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.visible?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_Visible)
 
 {% tabs %}
 

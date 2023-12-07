@@ -489,6 +489,6 @@ End Sub
 
 [How to create the single group for null and empty value in Windows Forms DataGrid(SfDataGrid)](https://support.syncfusion.com/kb/article/9810/how-to-create-the-single-group-for-null-and-empty-value-in-windows-forms-datagridsfdatagrid)
 
-[How to collapse the details view datagrid inside the Groups in DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/9772/how-to-collapse-the-details-view-datagrid-inside-the-groups-in-datagrid-sfdatagrid)
+[How to collapse the details view datagrid inside the Groups in DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/9772/how-to-collapse-the-details-view-datagrid-inside-the-groups-in-datagrid)
 
 [How to customize the group caption text in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/8205/how-to-customize-the-group-caption-text-in-winforms-datagrid-sfdatagrid)
