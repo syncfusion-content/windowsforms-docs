@@ -13,7 +13,7 @@ There are two type of selection architectures in a Grid Grouping control. One is
 
 ## Model Based Selection:
 
-When you set the [ListBoxSelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableOptionsStyleInfo_ListBoxSelectionMode) property to **None** and the [AllowSelection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableOptionsStyleInfo_AllowSelection) property to a value other than **None** in the GridGroupingControl, the model-based selection is used. The [TableModel.SelectionChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_SelectionChanging) and [TableModel.SelectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_SelectionChanged) events will only trigger when using the model-based selection.
+When you set the [ListBoxSelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableOptionsStyleInfo_ListBoxSelectionMode) property to **None** and the [AllowSelection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableOptionsStyleInfo_AllowSelection) property to a value other than **None** in the GridGroupingControl, the model-based selection is used. The [TableModel.SelectionChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_SelectionChanging) and [TableModel.SelectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_SelectionChanged) events will trigger when using the model-based selection.
 
 {% tabs %}
 {% highlight c# %}
@@ -62,7 +62,7 @@ End Sub
 
 ## Record Based Selection:
 
-When you set the `ListBoxSelectionMode` property to a value other than `None` and the `AllowSelection` property to `None` in the GridGroupingControl, a record-based selection is used. The [SelectedRecordsChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_SelectedRecordsChanging) and [SelectedRecordsChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_SelectedRecordsChanged) events are only triggered when using the record-based selection.
+When you set the `ListBoxSelectionMode` property to a value other than `None` and the `AllowSelection` property to `None` in the GridGroupingControl, a record-based selection is used. The [SelectedRecordsChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_SelectedRecordsChanging) and [SelectedRecordsChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_SelectedRecordsChanged) events are triggered when using the record-based selection.
 
 
 {% tabs %}
@@ -108,5 +108,3 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
-
-[View Sample in GitHub](https://github.com/SyncfusionExamples/What-are-the-Events-Fired-when-the-Records-are-Selected)
