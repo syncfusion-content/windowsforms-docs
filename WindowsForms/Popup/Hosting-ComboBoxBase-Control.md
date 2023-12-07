@@ -52,7 +52,7 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-It is also necessary to specify the parent-child relationship between the ComboBoxBase’s pop-up and the PopupControlContainer. This can be done by handling the ComboBoxBase’s [`DropDown`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ComboDropDown.html) event as shown in the code sample below.
+It is also necessary to specify the parent-child relationship between the ComboBoxBase’s pop-up and the PopupControlContainer. This can be done by handling the ComboBoxBase’s [`DropDown`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ComboDropDown.html#Syncfusion_Windows_Forms_Tools_ComboDropDown_DropDown) event as shown in the code sample below.
 
 {% tabs %}
 {% highlight C# %}
