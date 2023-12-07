@@ -2862,7 +2862,7 @@ Me.chartControl1.Series(0).ConfigItems.PieItem.DoughnutCoefficient=0.5f
 {% endhighlight %}
 {% endtabs %}
 
-![Doughnut coefficient in WindowsForms Chart](chart-types_images/windowsforms-chart-doughnut-coefficient.jpeg)
+![Doughnut coefficient in WindowsForms Chart](chart-types_images/windowsforms-chart-height-coefficient.jpeg)
 
 #### HeightCoefficient
 

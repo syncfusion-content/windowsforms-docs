@@ -534,7 +534,7 @@ calendar.ThemeName = "Office2016White"
 
 {% endtabs %}
 
-![WindowsForms Calendar office2016 white theme](appearance-images/windowsforms-calendar-0ffice2016-white-theme.png)
+![WindowsForms Calendar office2016 white theme](appearance-images/windowsforms-calendar-office2016-white-theme.png)
 
 #### Office2016DarkGray
 
