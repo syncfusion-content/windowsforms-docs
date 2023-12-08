@@ -11,7 +11,7 @@ documentation: ug
 The GridGroupingControl provides the built in support for exporting the data to the Excel, Word, PDF and CSV format. This section will explain about these exporting methods with various converter options.
 
 ## Excel Export
-The GridGroupingControl can be exported to the Excel by using the [GroupingGridExcelConverter](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GroupingGridExcelConverter.GroupingGridExcelConverterControl.html) class which provides the [GroupingGridToExcel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GroupingGridExcelConverter.GroupingGridExcelConverterControl.html#Syncfusion_GroupingGridExcelConverter_GroupingGridExcelConverterControl_GroupingGridToExcel_Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_Syncfusion_XlsIO_IWorksheet_Syncfusion_GridExcelConverter_ConverterOptions_) method for exporting the grid to Excel. 
+The GridGroupingControl can be exported to the Excel by using the [GroupingGridExcelConverter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GroupingGridExcelConverter.GroupingGridExcelConverterControl.html) class which provides the [GroupingGridToExcel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GroupingGridExcelConverter.GroupingGridExcelConverterControl.html#Syncfusion_GroupingGridExcelConverter_GroupingGridExcelConverterControl_GroupingGridToExcel_Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_Syncfusion_XlsIO_IWorksheet_Syncfusion_GridExcelConverter_ConverterOptions_) method for exporting the grid to Excel. 
 
 {% tabs %}
 {% highlight c# %}
@@ -37,7 +37,7 @@ Exported grid in the excel sheet is given below,
 ![Exporting_img2](Exporting_images/Exporting_img2.png)
 
 ### Exporting options 
-The [ConverterOptions](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.ConverterOptions.html) is used to set the exporting options for the grid. It has the following options to export the grid, 
+The [ConverterOptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.ConverterOptions.html) is used to set the exporting options for the grid. It has the following options to export the grid, 
 
 * **ColumnHeaders** – Export the grid with the column headers
 * **RowHeaders** – Export the grid with the Row Header
@@ -93,7 +93,7 @@ converter.GroupingGridToExcel(Me.gridGroupingControl1, "FileName.xls", Converter
 {% endtabs %}
 
 ### AutoFit Rows and Columns
-By default, the rows and columns are exported with its corresponding row height and column width in the [GroupingGridExcelConverterControl](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GroupingGridExcelConverter.GroupingGridExcelConverterControl.html).  This can be changed to export the default row height and column width by using the [CanExportColumnWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridExcelConverterControl.html#Syncfusion_GridExcelConverter_GridExcelConverterControl_CanExportColumnWidth) and [CanExportRowHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridExcelConverterControl.html#Syncfusion_GridExcelConverter_GridExcelConverterControl_CanExportRowHeight) properties of the [GridGroupingExcelConverterControl](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl.html) which is newly implemented converter control for exporting the grid to excel. 
+By default, the rows and columns are exported with its corresponding row height and column width in the [GroupingGridExcelConverterControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GroupingGridExcelConverter.GroupingGridExcelConverterControl.html).  This can be changed to export the default row height and column width by using the [CanExportColumnWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridExcelConverterControl.html#Syncfusion_GridExcelConverter_GridExcelConverterControl_CanExportColumnWidth) and [CanExportRowHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridExcelConverterControl.html#Syncfusion_GridExcelConverter_GridExcelConverterControl_CanExportRowHeight) properties of the [GridGroupingExcelConverterControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl.html) which is newly implemented converter control for exporting the grid to excel. 
 
 {% tabs %}
 {% highlight c# %}
@@ -341,9 +341,9 @@ Exported preview row in excel,
 ![Exporting_img8](Exporting_images/Exporting_img8.png)
 
 ### Exporting Sparkline Column
-The Sparkline column or cells in the GridGroupingControl can be exported to Excel by defining the spark line groups in the excel sheet. It can be achieved by using the [ISparklineGroups](https://docs.microsoft.com/en-us/dotnet/api/microsoft.office.interop.excel.isparklinegroups?view=excel-pia) interface.
+The Sparkline column or cells in the GridGroupingControl can be exported to Excel by defining the spark line groups in the excel sheet. It can be achieved by using the [ISparklineGroups](https://learn.microsoft.com/en-us/dotnet/api/microsoft.office.interop.excel.isparklinegroups?view=excel-pia) interface.
 
-It caches the `SparklineGroup` that needs to be added to the Excel sheet. The spark lines will be appear once the user select the data range and the location range. Data range and reference range for the Sparkline in Excel can be determined and assigned in [QueryImportExportCellInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridExcelConverterBase.html) event.
+It caches the `SparklineGroup` that needs to be added to the Excel sheet. The spark lines will be appear once the user select the data range and the location range. Data range and reference range for the Sparkline in Excel can be determined and assigned in [QueryImportExportCellInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridExcelConverterBase.html#Syncfusion_GridExcelConverter_GridExcelConverterBase_QueryImportExportCellInfo) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -535,7 +535,7 @@ ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exporting
 ### Exporting Options
 
 #### Exclude columns while exporting
-By default, all the columns of the grid will be exported to Excel. In order to exclude some columns while exporting, the [ExcludeColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GroupingGridExcelConverter.ExcelExportingOptions.html#Syncfusion_GroupingGridExcelConverter_ExcelExportingOptions_ExcludeColumns) property of [ExcelExportingOptions](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GroupingGridExcelConverter.ExcelExportingOptions.html) can be used.
+By default, all the columns of the grid will be exported to Excel. In order to exclude some columns while exporting, the [ExcludeColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GroupingGridExcelConverter.ExcelExportingOptions.html#Syncfusion_GroupingGridExcelConverter_ExcelExportingOptions_ExcludeColumns) property of [ExcelExportingOptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GroupingGridExcelConverter.ExcelExportingOptions.html) can be used.
 
 {% tabs %}
 {% highlight c# %}
@@ -783,7 +783,7 @@ ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exporting
 ![Advanced_Excel_Exporting_img13](Exporting_images/Advanced_Excel_Exporting_img13.jpeg)
 
 ### Export groups with outline
-In order to export groups with outline, the [AllowGroupOutlining](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl.html#Syncfusion_GroupingGridExcelConverter_GridGroupingExcelConverterControl_AllowGroupOutlining) property of the [GridGroupingExcelConverterControl](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl.html) can be set to `true`. Default value of this property is `true`.
+In order to export groups with outline, the [AllowGroupOutlining](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl.html#Syncfusion_GroupingGridExcelConverter_GridGroupingExcelConverterControl_AllowGroupOutlining) property of the [GridGroupingExcelConverterControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl.html) can be set to `true`. Default value of this property is `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -1171,7 +1171,7 @@ End Sub
 
 #### QueryExportNestedTable
 This event will be triggered before exporting a nested table. By this event, you can get the `ExportingOptions`, `NestedTable` and `ParentRecord`.
-If you want to hide the empty child table, you can use the [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) property the [QueryExportNestedTable](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl.html) event of `GridGroupingExcelConverterControl` by checking the **Records** count.
+If you want to hide the empty child table, you can use the [Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) property the [QueryExportNestedTable](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl.html) event of `GridGroupingExcelConverterControl` by checking the **Records** count.
 
 {% tabs %}
 {% highlight c# %}
@@ -1207,7 +1207,7 @@ End Sub
 {% endtabs %}
 
 ### Efficient Exporting
-By default, the grid will be exported with all the elements when the [ExportStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridGroupingExcelConverterBase.html#Syncfusion_GridExcelConverter_GridGroupingExcelConverterBase_ExportStyle) is enabled. Since the style has to be taken from [GridStyleInfo](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo_events.html) store for each and every cell, it leads to some amount of memory consumption while exporting large amount of records with styling.
+By default, the grid will be exported with all the elements when the [ExportStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridGroupingExcelConverterBase.html#Syncfusion_GridExcelConverter_GridGroupingExcelConverterBase_ExportStyle) is enabled. Since the style has to be taken from [GridStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo_events.html) store for each and every cell, it leads to some amount of memory consumption while exporting large amount of records with styling.
 To resolve this kind of issue, use the [EnableOptimization](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl.html#Syncfusion_GroupingGridExcelConverter_GridGroupingExcelConverterControl_EnableOptimization) property. The basic idea behind in this is, the cell value will be taken from[Table.Records](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridChildTable.html) instead of taking it from the `GridStyleInfo`. Therefore, the performance of exporting has improved much more than exporting with styling.
 The column formats which are all set using the `Column.Appearance.AnyRecordFieldCell.Format` property will be applied to columns.
 
@@ -1232,7 +1232,7 @@ N> For more information refer to the below dashboard sample,
 &lt;Installation_Location&gt;\Syncfusion\EssentialStudio\&lt;Product_Version&gt;\Windows\Grid.Grouping.Windows\Samples\Exporting\Excel Exporting Demo\
 
 ## PDF Export
-The GridGroupingControl can export to the PDF document by using the [ExportToPdf](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridPDFConverter.html#Syncfusion_GridHelperClasses_GridPDFConverter_ExportToPdf_Syncfusion_Pdf_PdfDocument_Syncfusion_Windows_Forms_Grid_GridControlBase_) method of the [GridPDFConverter](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridPDFConverter.html) class. To ensure the conversion of grid data to PDF document, the following assemblies should be added to the reference folder,
+The GridGroupingControl can export to the PDF document by using the [ExportToPdf](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridPDFConverter.html#Syncfusion_GridHelperClasses_GridPDFConverter_ExportToPdf_Syncfusion_Pdf_PdfDocument_Syncfusion_Windows_Forms_Grid_GridControlBase_) method of the [GridPDFConverter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridPDFConverter.html) class. To ensure the conversion of grid data to PDF document, the following assemblies should be added to the reference folder,
 
 * Syncfusion.Pdf.Base
 * Syncfusion.GridHelperClasses.Windows
@@ -1341,7 +1341,7 @@ End Sub
 N> The header/footer height of the exported PDF document can be set by using the `HeaderHeight` and `FooterHeight` properties of the PDF converter.
 
 ### Merging with PDF document 
-The GridGroupingControl can be exported to the PDF document using [ExportToPdfWithMerge](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridPDFConverter.html#Syncfusion_GridHelperClasses_GridPDFConverter_ExportToPdfWithMerge_Syncfusion_Pdf_PdfDocument__Syncfusion_Windows_Forms_Grid_GridControlBase_) method. The[GridPDFConverter](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridPDFConverter.html) does not have support to export the grid which has more than 60000 records. It will throw the `OutOfMemoryException` when exporting.  To resolve this exception, the grid can be exported as two or more documents and merging them to single document using this technique. The number of records to be exported can be determined by using [ExportRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridPDFConverter.html#Syncfusion_GridHelperClasses_GridPDFConverter_ExportRange) property.
+The GridGroupingControl can be exported to the PDF document using [ExportToPdfWithMerge](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridPDFConverter.html#Syncfusion_GridHelperClasses_GridPDFConverter_ExportToPdfWithMerge_Syncfusion_Pdf_PdfDocument__Syncfusion_Windows_Forms_Grid_GridControlBase_) method. The[GridPDFConverter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridPDFConverter.html) does not have support to export the grid which has more than 60000 records. It will throw the `OutOfMemoryException` when exporting.  To resolve this exception, the grid can be exported as two or more documents and merging them to single document using this technique. The number of records to be exported can be determined by using [ExportRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridPDFConverter.html#Syncfusion_GridHelperClasses_GridPDFConverter_ExportRange) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -1426,7 +1426,7 @@ End Sub
 {% endtabs %}
 
 ## Word Converter
-The GridGroupingControl data can be exported to the word by using the [GroupingGridToWord](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GroupingGridWordConverter.html#Syncfusion_GridHelperClasses_GroupingGridWordConverter_GroupingGridToWord_Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_Syncfusion_DocIO_DLS_WordDocument_) method of the [GroupingGridWordConverter](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GroupingGridWordConverter.html). 
+The GridGroupingControl data can be exported to the word by using the [GroupingGridToWord](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GroupingGridWordConverter.html#Syncfusion_GridHelperClasses_GroupingGridWordConverter_GroupingGridToWord_Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_Syncfusion_DocIO_DLS_WordDocument_) method of the [GroupingGridWordConverter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GroupingGridWordConverter.html). 
 
 {% tabs %}
 {% highlight c# %}
@@ -1570,7 +1570,7 @@ End Class
 {% endtabs %}
 
 ## CSV Export
-The GridGroupingControl can be exported to the CSV format by using the [GridCSVConverter](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridCSVConverter.html). It will export only the data without the styles. 
+The GridGroupingControl can be exported to the CSV format by using the [GridCSVConverter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridCSVConverter.html). It will export only the data without the styles. 
 
 {% tabs %}
 {% highlight c# %}
@@ -1589,7 +1589,7 @@ csvConverter.GridToCSV(Me.gridGroupingControl1.TableModel, "Sample.csv")
 {% endtabs %}
 
 ### Exporting the Range of Cells
-The range of cells can be exported from the grid to excel as the [CSV](https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/convert-to-csv) format by using the [ExportRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridCSVConverter.html#Syncfusion_GridHelperClasses_GridCSVConverter_ExportRange_Syncfusion_Windows_Forms_Grid_GridRangeInfo_Syncfusion_Windows_Forms_Grid_GridModel_System_String_) method.
+The range of cells can be exported from the grid to excel as the [CSV](https://learn.microsoft.com/en-us/previous-versions/azure/machine-learning/studio-module-reference/convert-to-csv) format by using the [ExportRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridCSVConverter.html#Syncfusion_GridHelperClasses_GridCSVConverter_ExportRange_Syncfusion_Windows_Forms_Grid_GridRangeInfo_Syncfusion_Windows_Forms_Grid_GridModel_System_String_) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -1611,7 +1611,7 @@ csvConverter.ExportRange(GridRangeInfo.Rows(rowIndex, rowIndex + 3), Me.gridGrou
 ![Exporting_img19](Exporting_images/Exporting_img19.png)
 
 ### Exporting Selected Range of Cells
-The selected range of cells can be exported to the CSV format by using the [SelectedExport](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridCSVConverter.html#Syncfusion_GridHelperClasses_GridCSVConverter_SelectedExport_Syncfusion_Windows_Forms_Grid_GridModel_System_String_) method. This can only export the model based selection. Therefore enable the[range selection](http://help.syncfusion.com/windowsforms/gridgrouping/selections#model-based-selection) for the grid.
+The selected range of cells can be exported to the CSV format by using the [SelectedExport](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridCSVConverter.html#Syncfusion_GridHelperClasses_GridCSVConverter_SelectedExport_Syncfusion_Windows_Forms_Grid_GridModel_System_String_) method. This can only export the model based selection. Therefore enable the[range selection](https://help.syncfusion.com/windowsforms/gridgrouping/selections#model-based-selection) for the grid.
 
 {% tabs %}
 {% highlight c# %}

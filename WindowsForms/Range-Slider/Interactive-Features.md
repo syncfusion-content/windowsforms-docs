@@ -297,7 +297,7 @@ Ticks are indicators placed at regular intervals on the slider for a range defin
 
 
 
-2. When the [ShowTicks]([ShowTicks](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html#Syncfusion_Windows_Forms_Tools_RangeSlider_ShowTicks)) property is set to `false`.
+2. When the [ShowTicks](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html#Syncfusion_Windows_Forms_Tools_RangeSlider_ShowTicks) property is set to `false`.
 
    {% capture codesnippet8 %}
    {% tabs %}

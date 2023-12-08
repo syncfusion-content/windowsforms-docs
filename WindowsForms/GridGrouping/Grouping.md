@@ -10,7 +10,7 @@ documentation: ug
 # Grouping in Windows Forms GridGrouping control
 GridGroupingControl lets you group the data by one or more columns. Data will be organized into a hierarchical structure based on the matching field values. This section will explain about the architecture and what are the possible ways to achieve the Grouping.
 
-If Grouping is enabled in GridGroupingControl, then there will be a specific area at the top of the Grid which shows the grouping options. This area is known as the [GroupDropArea](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupDropArea.html). `GroupDropArea` is made up of a collection of GridControls packed in a panel named [GroupDropPanel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_GroupDropPanel). The functions and properties of `GroupDropArea`, `GroupDropPanel` and other options related to it will be explained in the upcoming sections.
+If Grouping is enabled in GridGroupingControl, then there will be a specific area at the top of the Grid which shows the grouping options. This area is known as the [GroupDropArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupDropArea.html). `GroupDropArea` is made up of a collection of GridControls packed in a panel named [GroupDropPanel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_GroupDropPanel). The functions and properties of `GroupDropArea`, `GroupDropPanel` and other options related to it will be explained in the upcoming sections.
 
 ![Grouping_img1](Grouping_images/Grouping_img1.jpeg)
 
@@ -43,7 +43,7 @@ Me.gridGroupingControl1.ShowGroupDropArea = True
 ## Adding Data Groups
 
 ### Adding Groups Through Designer
-Grouping can also be done at design time. After binding dataset to the grouping grid, open [TableDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html) section in property grid of GridGroupingControl. In that, accessing `GroupedColumns` property will open [SortColumnDescriptorCollection](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SortColumnDescriptorCollection.html) Editor.
+Grouping can also be done at design time. After binding dataset to the grouping grid, open [TableDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html) section in property grid of GridGroupingControl. In that, accessing `GroupedColumns` property will open [SortColumnDescriptorCollection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SortColumnDescriptorCollection.html) Editor.
 
 ![Grouping_img2](Grouping_images/Grouping_img2.jpeg)
 
@@ -536,7 +536,7 @@ Me.gridGroupingControl1.TableDescriptor.GroupedColumns.AddRange(New Syncfusion.G
 ![Grouping_img16](Grouping_images/Grouping_img16.jpeg)
 
 ## Custom Grouping
-Custom Grouping can be done in GridGroupingControl by using an own custom categorizer object to compare the records and then group them according to the condition given by the user. Create a custom comparer and categorizer using the [IComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.icomparer?view=net-5.0) and [IGroupByColumnCategorizer](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.IGroupByColumnCategorizer.html) interfaces and then assign them to the `SortColumnDescriptor`.
+Custom Grouping can be done in GridGroupingControl by using an own custom categorizer object to compare the records and then group them according to the condition given by the user. Create a custom comparer and categorizer using the [IComparer](https://learn.microsoft.com/en-us/dotnet/api/system.collections.icomparer?view=net-5.0) and [IGroupByColumnCategorizer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.IGroupByColumnCategorizer.html) interfaces and then assign them to the `SortColumnDescriptor`.
 
 When a column is grouped, it is sorted first hence the comparer will compare the objects and allow the control to sort for one of the columns. After values been sorted, the custom categorizer will determine the adjacent records in the sorted column to the same group. 
 
@@ -780,7 +780,7 @@ End Sub
 ## GroupBy-Options
 GridGroupingControl provides a number of options that allows you to control the look and behavior of the groups. AddNewRow, Captions, Headers, Footers and Group Preview rows can be managed. This section will list out the options that allows you to change the behavior of the groups.
 
-**`GridGroupOptionsStyleInfo`** is a class which defines all the properties to control the look and feel of the groups. This class is derived from the [StyleInfoBase](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Styles.StyleInfoBase.html) class.
+**`GridGroupOptionsStyleInfo`** is a class which defines all the properties to control the look and feel of the groups. This class is derived from the [StyleInfoBase](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Styles.StyleInfoBase.html) class.
 
 GridGroupingControl distinguishes between three different kinds of Group options namely `TopLevelGroupOptions`, **`ChildGroupOptions`** and [NestedTableGroupOptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridEngine.html#Syncfusion_Windows_Forms_Grid_Grouping_GridEngine_NestedTableGroupOptions). All three will let you control the look and behavior of the top level group, child groups and groups in nested child relations respectively. 
 
@@ -815,12 +815,12 @@ Me.gridGroupingControl1.TableOptions.GroupFooterSectionHeight = 20
 {% endhighlight %}
 {% endtabs %}
 
-Group headers and footers can be populated by handling `QueryCellStyleInfo` event wherein you can check Header and Footer cell types and provide the data. For changing the header and footer text using the `QueryCellStyleInfo`, make use of the KB [link](https://www.syncfusion.com/kb/5697/how-to-change-the-text-in-groupheader-and-groupfooter) over here for reference. 
+Group headers and footers can be populated by handling `QueryCellStyleInfo` event wherein you can check Header and Footer cell types and provide the data. For changing the header and footer text using the `QueryCellStyleInfo`, make use of the KB [link](https://support.syncfusion.com/kb/article/5368/how-to-change-the-winforms-gridgroupingcontrol-text-in-groupheader-and-groupfooter) over here for reference. 
 
 ![Grouping_img18](Grouping_images/Grouping_img18.jpeg)
 
 ### GroupPreviewRows
-[GroupPreviewSection](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.GroupPreviewSection.html) is an appropriate place for displaying the memo fields or add custom notes for a given group. It can be enabled by using the **`ShowGroupPreview`** property. The size of the preview row can also be adjusted by using the [GroupPreviewSectionHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableOptionsStyleInfo_GroupPreviewSectionHeight) property. For populating the preview rows `QueryCellStyleInfo` event can be used.
+[GroupPreviewSection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.GroupPreviewSection.html) is an appropriate place for displaying the memo fields or add custom notes for a given group. It can be enabled by using the **`ShowGroupPreview`** property. The size of the preview row can also be adjusted by using the [GroupPreviewSectionHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableOptionsStyleInfo_GroupPreviewSectionHeight) property. For populating the preview rows `QueryCellStyleInfo` event can be used.
 
 {% tabs %}
 {% highlight c# %}
@@ -841,7 +841,7 @@ Me.gridGroupingControl1.TableOptions.GroupPreviewSectionHeight = 50
 ![Grouping_img19](Grouping_images/Grouping_img19.jpeg)
 
 ### AddNew Records in Groups
-Each group can optionally have an AddNew row where you can provide the values for a new record. Once a new record is entered, the record will be sorted into the existing record set and will be assigned a group's category automatically. The visibility of the [AddNewRecord](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridAddNewRecord.html) can be controlled by using the [AllowNew](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.TableDescriptor.html#Syncfusion_Grouping_TableDescriptor_AllowNew) property.
+Each group can optionally have an AddNew row where you can provide the values for a new record. Once a new record is entered, the record will be sorted into the existing record set and will be assigned a group's category automatically. The visibility of the [AddNewRecord](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridAddNewRecord.html) can be controlled by using the [AllowNew](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.TableDescriptor.html#Syncfusion_Grouping_TableDescriptor_AllowNew) property.
 
 The [ChildGroupOptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableDescriptor_ChildGroupOptions) property provides the grouping options for all groups. `AddNewRecord` can be viewed at the top of a group by setting the [ShowAddNewRecordBeforeDetails](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfoStore.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupOptionsStyleInfoStore_ShowAddNewRecordBeforeDetailsProperty) to true. It can also be viewed at the bottom of a group by using the [ShowAddNewRecordAfterDetails](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupOptionsStyleInfo_ShowAddNewRecordAfterDetails). 
 
@@ -1039,7 +1039,7 @@ Me.gridGroupingControl1.Table.TopLevelGroup.Groups(4).IsExpanded = False
 {% endtabs %}
 
 ### Accessing all groups
-The [Groups](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.GroupsInDetailsCollection.html) collection maintains details of individual groups in this collection that can be used to retrieve the details of any group. It forms the root node of the group hierarchy where its categorized records and nested groups form the child nodes. 
+The [Groups](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.GroupsInDetailsCollection.html) collection maintains details of individual groups in this collection that can be used to retrieve the details of any group. It forms the root node of the group hierarchy where its categorized records and nested groups form the child nodes. 
 
 To access all the groups, you can make use of the same `IterateThrough` method by passing `TopLevelGroup` as the method parameter. Then this method will loop through categorized records and nested groups of the top level group and will print details of all the groups.
 
@@ -1097,7 +1097,7 @@ End Sub
 {% endtabs %}
 
 ### Accessing the group for a given record
-It is the [Table](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTable.html) object that provides access to the records and the grouped elements. The [Table.Records](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTable.html) collection returns a read only collection of the data records. 
+It is the [Table](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTable.html) object that provides access to the records and the grouped elements. The [Table.Records](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTable.html) collection returns a read only collection of the data records. 
 
 The following code can be used to get access to the group for a particular record. [Record.ParentGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.Element.html#Syncfusion_Grouping_Element_ParentGroup) property is used to obtain the group that a record belongs to.
 
@@ -1115,7 +1115,7 @@ When grouping is applied, the grid will sort the records based on the values of 
 
 ![Grouping_img23](Grouping_images/Grouping_img23.jpeg)
 
-The sorting behavior of the columns when columns are grouped in `GridGroupDropArea` can be changed programmatically by adding the column in the `GroupedColumns` collection with [ListSortDirection](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.listsortdirection?view=net-5.0).
+The sorting behavior of the columns when columns are grouped in `GridGroupDropArea` can be changed programmatically by adding the column in the `GroupedColumns` collection with [ListSortDirection](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.listsortdirection?view=net-5.0).
 
 {% tabs %}
 {% highlight c# %}
@@ -1131,14 +1131,14 @@ Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add("Title", ListSortDire
 ## Grouping Events
 The following events are used to customize the grouping in GridGroupingControl. 
 
-* [GroupedColumns.Changing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SortColumnDescriptorCollection.html) - Occurs before a property in the collection is changed.
-* [GroupedColumns.Changed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SortColumnDescriptorCollection.html) - Occurs after a property in the collection is changed.
-* [GroupExpanding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html) - Occurs before a group is expanded.
-* [GroupExpanded](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html) - Occurs after a group is expanded.
-* [GroupCollapsing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html) - Occurs before a group is collapsed.
-* [GroupCollapsed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html) - Occurs after a group is collapsed.
+* [GroupedColumns.Changing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SortColumnDescriptorCollection.html#Syncfusion_Grouping_SortColumnDescriptorCollection_Changing) - Occurs before a property in the collection is changed.
+* [GroupedColumns.Changed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SortColumnDescriptorCollection.html#Syncfusion_Grouping_SortColumnDescriptorCollection_Changed) - Occurs after a property in the collection is changed.
+* [GroupExpanding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_GroupExpanding) - Occurs before a group is expanded.
+* [GroupExpanded](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_GroupExpanded) - Occurs after a group is expanded.
+* [GroupCollapsing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_GroupCollapsing) - Occurs before a group is collapsed.
+* [GroupCollapsed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_GroupCollapsed) - Occurs after a group is collapsed.
 
-N> The detailed information about the `Events` of the GridGroupingControl has been discussed in [Events](http://help.syncfusion.com/windowsforms/gridgrouping/events) section.
+N> The detailed information about the `Events` of the GridGroupingControl has been discussed in [Events](https://help.syncfusion.com/windowsforms/gridgrouping/events) section.
 
 {% tabs %}
 {% highlight c# %}

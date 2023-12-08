@@ -302,4 +302,4 @@ End Class
 
 ## See also
 
-[How to search and select record in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9638)
+[How to search and select record in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/8552/how-to-search-and-select-record-in-winforms-datagrid-sfdatagrid)

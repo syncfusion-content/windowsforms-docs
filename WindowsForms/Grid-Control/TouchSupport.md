@@ -28,7 +28,7 @@ N> To have the proper horizontal and vertical pixel touch scrolling, the [HScrol
 
 ## Touch Zooming
 GridControl allows to perform the touch zoom in or out to the entire grid by initializing [ZoomGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.ZoomGrid.html#) class where the constructor takes a parameter as a `GridControl` object.
-To have this touch zooming support in grid, the [GridHelperClasses.Windows](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.html#) assembly needs to be added into the assembly reference. 
+To have this touch zooming support in grid, the [GridHelperClasses.Windows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.html#) assembly needs to be added into the assembly reference. 
 {% tabs %}
 {% highlight c# %}
 //Initialize the Zooming to GridControl

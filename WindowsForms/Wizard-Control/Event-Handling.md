@@ -56,7 +56,7 @@ The events available for the Wizard Page and the methods which raises these even
 
 **ValidatePage event**
 
-WizardControl Pages can be validated using [ValidatePage event]([ValidatePage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html)). In this event, data validation can be performed and traversing to the next page can be canceled, if the validation fails.
+WizardControl Pages can be validated using [ValidatePage event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html#Syncfusion_Windows_Forms_Tools_WizardControlPage_ValidatePage). In this event, data validation can be performed and traversing to the next page can be canceled, if the validation fails.
 
 If the user does not want to validate a page while moving back (pressing BackButton), then it can be done by setting [BackButtonCausesValidation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_BackButtonCausesValidation) property to `false`.
 

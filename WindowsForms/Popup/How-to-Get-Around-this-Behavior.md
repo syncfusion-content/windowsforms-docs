@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Get Around this Behavior in Windows Forms PopupControlContainer
 
-In order to work around this behavior, you can set a Boolean flag and cancel the [`BeforeCloseUp`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html) event as shown below.
+In order to work around this behavior, you can set a Boolean flag and cancel the [`BeforeCloseUp`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html#Syncfusion_Windows_Forms_PopupControlContainer_BeforeCloseUp) event as shown below.
 
 {% tabs %}
 {% highlight c# %}
@@ -59,4 +59,4 @@ End Sub
 {% endtabs %}
 
 
-You can set the Boolean value to be `false` under the Form’s [`Click`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.click?view=netframework-4.7.2) event and Control’s [`LostFocus`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.lostfocus?view=netframework-4.7.2) event so that the DropDown closes for rest of the cases.
+You can set the Boolean value to be `false` under the Form’s [`Click`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.click?view=netframework-4.7.2) event and Control’s [`LostFocus`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.lostfocus?view=netframework-4.7.2) event so that the DropDown closes for rest of the cases.
