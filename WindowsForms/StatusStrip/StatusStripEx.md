@@ -207,7 +207,7 @@ Me.statusStripEx1.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx
 {% endhighlight %}
 {% endtabs %}
 
-![Silver color scheme for WindowsForms Status Strip](statustripex_images/windowsforms-status-strip-silver-color-scheme.jpeg)
+![Silver color scheme for WindowsForms Status Strip](statusstripex_images/windowsforms-status-strip-silver-color-scheme.jpeg)
 
 ![Blue color scheme for WindowsForms Status Strip](statusstripex_images/windowsforms-status-strip-blue-color-scheme.jpeg)
 
