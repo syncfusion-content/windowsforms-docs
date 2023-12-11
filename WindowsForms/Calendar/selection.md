@@ -52,7 +52,7 @@ End If
 
 ### CellClick event
 
-The [CellClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html) event occurs when clicking a calendar cell.
+The [CellClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_CellClick) event occurs when clicking a calendar cell.
 
 #### Event data
 
@@ -294,12 +294,12 @@ calendar.MaxDate = new DateTime(2018, 1, 25)
  
  Restricts setting the selected date to handle on-demand. While changing the selection, user can restrict the selection change based on the new selected date by handling the `SelectionChanging` event.
  
- The [SelectionChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html) event is invoked before the selected date is changed in the calendar. The `SelectionChangingEventArgs` provides the following properties for the `SelectionChanging` event:
+ The [SelectionChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_SelectionChanging) event is invoked before the selected date is changed in the calendar. The `SelectionChangingEventArgs` provides the following properties for the `SelectionChanging` event:
 
 * OldValue: Old selected date of the SfCalendar.
 * NewValue: New selected date of the SfCalendar.
 
-The [SelectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html) event is invoked after the selected date is changed in the calendar. The `SelectionChangedEventArgs` provides the following properties for the `SelectionChanged` event:
+The [SelectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_SelectionChanged) event is invoked after the selected date is changed in the calendar. The `SelectionChangedEventArgs` provides the following properties for the `SelectionChanged` event:
 
 * OldValue: Old selected date of the SfCalendar.
 * NewValue: New selected date of the SfCalendar.

@@ -666,7 +666,7 @@ AddHandler gridGroupingControl1.TableControl.BackgroundImageChanged, AddressOf T
 {% endtabs %}
 
 ### BindingContextChanged 
-It will trigger when the value of Control's [BindingContextChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableBase.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableBase_BindingContext) property.
+It will trigger when the value of Control's [BindingContextChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableBase.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableBase_BindingContextChanged) property.
 
 {% tabs %}
 {% highlight c# %}

@@ -46,7 +46,7 @@ The tabs can be added to [TabControlAdv](https://help.syncfusion.com/cr/windowsf
 
 ![tabs added using add tab option](GettingStarted_images/AddingTabs.png)
 
-**2.** Add tabs using [TabPagesCollection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_TabPages) in smart tags of [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
+**2.** Add tabs using [TabPagesCollection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabPageAdvCollection.html) in smart tags of [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
 
 ![tabs added using tab pages collection](GettingStarted_images/wf-tab-page-added-by-designer.png)
 
