@@ -110,10 +110,10 @@ SpellCheckerAdv allows to customize the Cancel button based on users requirement
 
 {% highlight C# %}
 
-    private void SpellCheckerAdv1_CancelClicked(object sender, EventArgs e)
-    {
-        MessageBox.Show("Cancel Clicked");
-    }
+private void SpellCheckerAdv1_CancelClicked(object sender, EventArgs e)
+{
+    MessageBox.Show("Cancel Clicked");
+}
 
 {% endhighlight %}
 
@@ -121,6 +121,7 @@ SpellCheckerAdv allows to customize the Cancel button based on users requirement
 
 Private Sub SpellCheckerAdv1_CancelClicked(sender As Object, e As EventArgs) Handles SpellCheckerAdv1.CancelClicked
     MessageBox.Show("Cancel Clicked")
+
 End Sub
 
 {% endhighlight %}
