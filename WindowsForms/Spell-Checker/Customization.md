@@ -128,4 +128,4 @@ End Sub
 
 {% endtabs %}
 
-![Spell Checker customize Cancel button](Customization_images/Customize%20Cancel%20button.gif)
+![Spell Checker customize Cancel button](Customization_Images/Customize%20Cancel%20button.png)
