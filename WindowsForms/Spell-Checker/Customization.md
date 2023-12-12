@@ -101,3 +101,30 @@ Me.spellCheckerAdv1.GetAnagrams("Textbox")
 
 {% endtabs %}
 
+## Customize Cancel button
+
+SpellCheckerAdv allows to customize the Cancel button based on users requirement.
+
+
+{% tabs %}
+
+{% highlight C# %}
+
+    private void SpellCheckerAdv1_CancelClicked(object sender, EventArgs e)
+    {
+        MessageBox.Show("Cancel Clicked");
+    }
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Private Sub SpellCheckerAdv1_CancelClicked(sender As Object, e As EventArgs) Handles SpellCheckerAdv1.CancelClicked
+    MessageBox.Show("Cancel Clicked")
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Spell Checker customize Cancel button](Customization_images/Customize%20Cancel%20button.gif)
