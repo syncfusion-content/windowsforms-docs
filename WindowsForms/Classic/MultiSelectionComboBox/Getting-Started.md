@@ -9,7 +9,6 @@ documentation: ug
 
 # Getting Started with Windows Forms MultiSelectionComboBox
 
-
 This section briefly describes you on how to design a MultiSelectionComboBox control in a Windows Forms Application.
 
 * Assembly deployment
@@ -32,14 +31,37 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 ## Configuring the MultiSelectionComboBox control
 
-The commonly used settings of the MultiSelectionComboBox control can be configured either through Designer using the Smart tag or through the Properties window or through code. 
+The commonly used settings of the MultiSelectionComboBox control can be configured either through Designer using the Smart tag or through the Properties window or through code.
+
+## Add control via designer
+
+The MultiSelectionComboBox control provides full support for the Windows Forms designer. To use a MultiSelectionComboBox control in your application, all you need to do is drag-and-drop the MultiSelectionComboBox control from the toolbox onto your form. You can then set any of its properties through the property grid. The following required assembly references are added automatically to the project:
+
+  * Syncfusion.Grid.Base.dll
+  * Syncfusion.Grid.Windows.dll
+  * Syncfusion.Shared.Base.dll
+  * Syncfusion.Shared.Windows.dll
+  * Syncfusion.Tools.Base.dll
+  * Syncfusion.Tools.Windows.dll
 
 ![Overview_img336](Overview_images/Overview_img336.png)
 
+## Add control manually using code
 
 To add MultiSelectionComboBox control to a Windows Forms application through code behind,
 
-* Include the namespaces “Syncfusion.Windows.Forms” and “Syncfusion.Windows.Forms.Tools”.
+1. Create C# or VB application through Visual Studio.
+
+2. Add the following required assembly references to the project:
+
+Syncfusion.Grid.Base.dll
+Syncfusion.Grid.Windows.dll
+Syncfusion.Shared.Base.dll
+Syncfusion.Shared.Windows.dll
+Syncfusion.Tools.Base.dll
+Syncfusion.Tools.Windows.dll
+
+3. Include the namespaces “Syncfusion.Windows.Forms” and “Syncfusion.Windows.Forms.Tools”.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -62,7 +84,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-* Create an instance of the MultiSelectionComboBox control and add it to the Form.
+4. Create an instance of the MultiSelectionComboBox control and add it to the Form.
 
 {% capture codesnippet2 %}
 {% tabs %}
