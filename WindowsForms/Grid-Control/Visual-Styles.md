@@ -53,7 +53,7 @@ Me.gridControl1.ThemesEnabled = True
 {% endtabs %}
 
 ## Applying Skin for ComboBox Cell
-There will be no themes applied to the ComboBox cell by default. If you want to enable the theme, set [EnableGridListControlInComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_EnableGridListControlInComboBox)  property to false. It will add the [GridListControl](https://help.syncfusion.com/windowsforms/multicolumn-listbox/getting-started#creating-application-with-gridlistcontrol) to the ComboBox drop down and the visual style of the grid will be applied. 
+There will be no themes applied to the ComboBox cell by default. If you want to enable the theme, set [EnableGridListControlInComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_EnableGridListControlInComboBox)  property to false. It will add the [GridListControl](https://help.syncfusion.com/windowsforms/multicolumn-listbox/getting-started) to the ComboBox drop down and the visual style of the grid will be applied. 
 {% tabs %}
 {% highlight c# %}
 // To Use GridComboBoxCellModel in Grid
