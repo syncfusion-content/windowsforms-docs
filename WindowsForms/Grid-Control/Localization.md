@@ -100,7 +100,7 @@ Rather than using hard coding strings in main application, it is easier to desig
 
 ### Requirements
 
-A resource file is needed to create a satellite assembly. It can be created by using a tool provided by Microsoft Visual Studio.NET namely [Resource Editor](https://docs.microsoft.com/en-us/cpp/windows/resource-editors?view=msvc-160) (ResEditor) that can be used to localize the string resources.
+A resource file is needed to create a satellite assembly. It can be created by using a tool provided by Microsoft Visual Studio.NET namely [Resource Editor](https://learn.microsoft.com/en-us/cpp/windows/resource-editors?view=msvc-160) (ResEditor) that can be used to localize the string resources.
 A resource file can also be created by using the `Text` file. The resource file has the `.Resources` extension.
 
 ### Creating a Satellite Assembly
@@ -115,7 +115,7 @@ Resgen Text_file.txt Resource_File.resources
 
 ![Localization_img2](Localization_images/Localization_img2.png)
 
-2.By using the [Resource Editor](https://docs.microsoft.com/en-us/cpp/windows/resource-editors?view=msvc-160), open the resource file that is been created. It provides a graphic interface that allows to construct resource files containing bitmaps, icons, and strings. 
+2.By using the [Resource Editor](https://learn.microsoft.com/en-us/cpp/windows/resource-editors?view=msvc-160), open the resource file that is been created. It provides a graphic interface that allows to construct resource files containing bitmaps, icons, and strings. 
 
 ![Localization_img3](Localization_images/Localization_img3.png)
 
