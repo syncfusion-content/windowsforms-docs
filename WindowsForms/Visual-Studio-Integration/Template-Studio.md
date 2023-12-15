@@ -36,7 +36,7 @@ Create the Syncfusion WinForms project using the Visual Studio Project Template 
 
 	![Choose Syncfusion WinForms Application from Visual Studio new project dialog](Template-Studio-Images/WF-2.png)
 
-3.	Select the Syncfusion WinForms Template Studio and click Next.
+3.	Select the **Syncfusion WinForms Template Studio** and click Next.
 
 	![Choose Syncfusion WinForms Application from Visual Studio new project dialog](Template-Studio-Images/WF-3.png)
 
@@ -46,7 +46,7 @@ Create the Syncfusion WinForms project using the Visual Studio Project Template 
 
 	N> The installed location and GAC options will be available only after the Syncfusion Essential WinForms setup has been installed. Use the NuGet option instead of installing the Syncfusion Essential WinForms setup. Also, the GAC option will not be available when you choose .NET 6.0, .NET 7.0, and .NET 8.0 from the project type option in Visual Studio.
 
-5.	Click **Next** or navigate to the **Project type** tab, then select the desired Syncfusion WinForms application type.
+5.  Navigate to the **Project type** tab and choose the Syncfusion WinForms application type you want—there are three types: Blank, MenuBar, and Tabbed Form. Click **Next** to proceed.
 
 	![Syncfusion WinForms project type selection wizard](Template-Studio-Images/WF-4.png)
 
@@ -56,15 +56,17 @@ Create the Syncfusion WinForms project using the Visual Studio Project Template 
 
 	To unselect the added control(s), Click ‘x’ for the corresponding control in the control list from the Project Details.
 
-	N> The Control Features option is not accessible for Blank, Settings, and Master Detail Pages.
+	N> The Control Features option is not accessible for Blank Pages.
 
 7.	Click **Next** or navigate to the **Control Features** tab to view the listed features for the selected controls. From here, choose the features needed.
 
-	![Syncfusion WinForms control features selection wizard](Template-Studio-Images/WF-2.gif)
+	![Syncfusion WinForms control features selection wizard](Template-Studio-Images/WF-15.png)
 
 8.	Click **Next** or navigate the **App Features** tab to select the desired application features.
 
 	![Syncfusion WinForms app features selection wizard](Template-Studio-Images/WF-7.png)
+
+    N> The App Features option is not accessible for .NET Framework.	
 
 	**Project Details Section**
 
