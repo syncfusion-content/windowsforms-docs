@@ -23,7 +23,7 @@ Use the following steps to create the Syncfusion Windows Forms project through t
 1. To create a Syncfusion Windows Forms project, follow either one of the options below:  
     
    **Option 1:**  
-   Click **Extensions >Syncfusion Menu** and choose **Essential Studio for WinForms > Create New Syncfusion Project…**  in **Visual Studio**.
+   Click **Syncfusion Menu** and choose **Essential Studio for WinForms > Create New Syncfusion Project…**  in **Visual Studio**.
 
    ![Choose Syncfusion Windows Forms Application via Syncfusion menu](Project-Template-images\Syncfusion-menu.png)
 
