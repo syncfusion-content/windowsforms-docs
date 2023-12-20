@@ -11,11 +11,11 @@ documentation: ug
 
 PopupControlContainer handles events before and after the Popup is shown.
 
-* [`Popup`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html) : It occurs after the Popup has been dropped down and visible. The event handler receives an argument of type EventArgs. This event can be handled to get focus on the PopupControlContainer.
+* [`Popup`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html#Syncfusion_Windows_Forms_PopupControlContainer_Popup) : It occurs after the Popup has been dropped down and visible. The event handler receives an argument of type EventArgs. This event can be handled to get focus on the PopupControlContainer.
 
-* [`BeforePopup`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html) : It occurs when the Popup is about to be shown. The event handler receives an argument of type CancelEventArgs. The event property associated with the CancelEventArgs is as follows. Cancel - Gets/Sets a value indicating whether the event should be canceled. This event can be handled to resize the PopupControlContainer.
+* [`BeforePopup`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html#Syncfusion_Windows_Forms_PopupControlContainer_BeforePopup) : It occurs when the Popup is about to be shown. The event handler receives an argument of type CancelEventArgs. The event property associated with the CancelEventArgs is as follows. Cancel - Gets/Sets a value indicating whether the event should be canceled. This event can be handled to resize the PopupControlContainer.
 
-* [`CloseUp`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html) : It occurs when a Popup is closed. The event handler receives an argument of type PopupClosedEventArgs. The event property associated with the PopupClosedEventArgs is as follows. PopupCloseType - Returns the PopupCloseType value indicating the way in which the popup can be closed. This event can be handled to transfer data from the Popup to the controls in the Form.
+* [`CloseUp`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html#Syncfusion_Windows_Forms_PopupControlContainer_CloseUp) : It occurs when a Popup is closed. The event handler receives an argument of type PopupClosedEventArgs. The event property associated with the PopupClosedEventArgs is as follows. PopupCloseType - Returns the PopupCloseType value indicating the way in which the popup can be closed. This event can be handled to transfer data from the Popup to the controls in the Form.
 
 ## Popup
 
@@ -49,13 +49,13 @@ End Sub
 
 ## BeforePopup 
 
-This [BeforePopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html) event occurs before the popup is shown.
+This [BeforePopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html#Syncfusion_Windows_Forms_PopupControlContainer_BeforePopup) event occurs before the popup is shown.
 
 ### Example Scenario: Resizing the pop-up
 
-Drag and drop the ParentControl say RichTextBox and PopupControlContainer onto the form. In the [MouseUp](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.mouseup?redirectedfrom=MSDN&view=netframework-4.7.2) event of RichTextBox, show the Popup using [ShowPopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html#Syncfusion_Windows_Forms_PopupControlContainer_ShowPopup_System_Drawing_Point_) method.
+Drag and drop the ParentControl say RichTextBox and PopupControlContainer onto the form. In the [MouseUp](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.mouseup?redirectedfrom=MSDN&view=netframework-4.7.2) event of RichTextBox, show the Popup using [ShowPopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html#Syncfusion_Windows_Forms_PopupControlContainer_ShowPopup_System_Drawing_Point_) method.
 
-To make the Popup resizable, handle [BeforePopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html) event of PopupControlContainer and give the following code snippet.
+To make the Popup resizable, handle [BeforePopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html#Syncfusion_Windows_Forms_PopupControlContainer_BeforePopup) event of PopupControlContainer and give the following code snippet.
 
 {% tabs %}
 {% highlight c# %}
@@ -100,7 +100,7 @@ End Sub
 
 ## CloseUp 
 
-This [CloseUp](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html) event will occur while closing the popup. We can assign data from the Popup to the control in the Form. 
+This [CloseUp](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html#Syncfusion_Windows_Forms_PopupControlContainer_CloseUp) event will occur while closing the popup. We can assign data from the Popup to the control in the Form. 
 
 The below code snippet will explain how to use CloseUp event.
 

@@ -120,7 +120,7 @@ Me.pivotGridControl1.GridVisualStyles = GridVisualStyles.Office2007Silver
 
 ## Events
 
-The **[ThemeChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html)** event occurs when the default theme of pivot grid control gets changed.
+The **[ThemeChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_ThemeChanged)** event occurs when the default theme of pivot grid control gets changed.
 
 A demo sample is available in the following location.
 
