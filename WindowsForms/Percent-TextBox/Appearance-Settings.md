@@ -37,7 +37,7 @@ Me.percentTextBox1.ReadOnlyBackColor = System.Drawing.Color.Pink
 
 ![PercentTextBox read only back color](PercentTextBox-Images/Overview_img481.png)
 
-N> The [ReadOnly](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.readonly?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBoxBase_ReadOnly) property must be set to 'True' for the above setting to take effect.
+N> The [ReadOnly](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.readonly?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBoxBase_ReadOnly) property must be set to 'True' for the above setting to take effect.
 
 The methods associated with the above properties are given below.
 
