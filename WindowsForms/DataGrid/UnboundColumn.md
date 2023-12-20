@@ -25,7 +25,7 @@ Me.sfDataGrid.Columns.Add(New GridUnboundColumn() With {.HeaderText = "Total Pri
 N> It is mandatory to specify the `GridColumn.MappingName` for `GridUnboundColumn` with some name to identify the column. It is not necessary to define name of field in the data object.
 
 ## Populating Data for Unbound Column
-The data for unbound column can populate by setting [Expression](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridUnboundColumn.html#Syncfusion_WinForms_DataGrid_GridUnboundColumn_Expression) or [Format](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_Format) property or through [QueryUnboundColumnInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+The data for unbound column can populate by setting [Expression](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridUnboundColumn.html#Syncfusion_WinForms_DataGrid_GridUnboundColumn_Expression) or [Format](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_Format) property or through [QueryUnboundColumnInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_QueryUnboundColumnInfo) event.
 
 ### Using Expression
 The arithmetic or logic expression can specify using `Expression` property to compute the display value. By default `GridUnboundColumn` evaluates the expression with casing. The casing can disable while evaluate the expression by setting [CaseSensitive](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridUnboundColumn.html#Syncfusion_WinForms_DataGrid_GridUnboundColumn_CaseSensitive) property to false.
@@ -203,7 +203,7 @@ unboundColumn.Format = "{UnitPrice}% for {OrderID}"
 ![Using Format in Unbound Column WinForms DataGrid](UnboundColumn_images/UnboundColumn_img3.png)
 
 ### Using QueryUnboundColumnInfo Event
-The data for unbound column can populated by handling the [QueryUnboundColumnInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.[QueryUnboundColumnInfoArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.QueryUnboundColumnInfoArgs.html) of the `QueryUnboundColumnInfo` event provides the information about the cell triggered this event. 
+The data for unbound column can populated by handling the [QueryUnboundColumnInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_QueryUnboundColumnInfo) event.[QueryUnboundColumnInfoArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.QueryUnboundColumnInfoArgs.html) of the `QueryUnboundColumnInfo` event provides the information about the cell triggered this event. 
 The [QueryUnboundColumnInfoArgs.Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.QueryUnboundColumnInfoArgs.html#Syncfusion_WinForms_DataGrid_Events_QueryUnboundColumnInfoArgs_Value) property can get or set based on the `UnboundAction`.
 
 UnboundAction - `QueryData` denotes the event triggered to query value and cell information.  
@@ -242,7 +242,7 @@ End Sub
 ## Editing Unbound Column
 
 ### Cancel the Editing for Unbound Column Cell
-The editing of unbound column cell can canceled by handling the [SfDataGrid.CurrentCellBeginEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+The editing of unbound column cell can canceled by handling the [SfDataGrid.CurrentCellBeginEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_CurrentCellBeginEdit) event.
 {% tabs %}
 {% highlight c# %}
 sfDataGrid.CurrentCellBeginEdit += dataGrid_CurrentCellBeginEdit;
