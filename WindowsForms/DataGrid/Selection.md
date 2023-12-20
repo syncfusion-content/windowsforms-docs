@@ -96,7 +96,7 @@ Me.sfDataGrid1.SelectionMode = GridSelectionMode.None
 {% endhighlight %}
 {% endtabs %}
 
-Selection on a particular row can be disabled by handling the [CurrentCellActivating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event. FilterRow and AddNewRow cells can be edited and selected even though the `AllowFocus` property is set to `false`.
+Selection on a particular row can be disabled by handling the [CurrentCellActivating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_CurrentCellActivating) event. FilterRow and AddNewRow cells can be edited and selected even though the `AllowFocus` property is set to `false`.
 
 The column selection and navigation can be disabled by setting the [AllowFocus](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_AllowFocus) property to `false`.
 
@@ -423,7 +423,7 @@ MessageBox.Show(cellValue, "Value in cell (" & rowIndex & ", " & columnIndex & "
 
 ### Getting the cell value by using cell click event
 
-The cell value can also be retrieved by using the [SfDataGrid.CellClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event when clicking the cell.
+The cell value can also be retrieved by using the [SfDataGrid.CellClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_CellClick) event when clicking the cell.
 
 {% tabs %}
 {% highlight c# %}
@@ -741,7 +741,7 @@ When a row is clicked along with Shift key, all the rows between the pressed cel
 
 ### Cancel CurrentCell Moving 
 
-The current cell moving process can be canceled within [CurrentCellActivating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event by setting [CurrentCellActivatingEventArgs.Cancel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.CurrentCellActivatingEventArgs.html) as true. 
+The current cell moving process can be canceled within [CurrentCellActivating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_CurrentCellActivating) event by setting [CurrentCellActivatingEventArgs.Cancel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.CurrentCellActivatingEventArgs.html) as true. 
 {% tabs %}
 {% highlight c# %}
 void SfDataGrid1_CurrentCellActivating(object sender, CurrentCellActivatingEventArgs e)
@@ -884,7 +884,7 @@ Me.sfDataGrid1.AllowStandardTab = True
 
 ### Displaying Message Box on Current Cell Activated
 
-The [CurrentCellActivated](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event provides notification when the current cell is moved from one cell to another.
+The [CurrentCellActivated](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_CurrentCellActivated) event provides notification when the current cell is moved from one cell to another.
 
 {% tabs %}
 {% highlight c# %}
@@ -906,7 +906,7 @@ End Sub
 
 ### Cancel Selection 
 
-The selection process can be canceled within [SelectionChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event by setting the [SelectionChangingEventArgs.Cancel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.SelectionChangingEventArgs.html) property as true.
+The selection process can be canceled within [SelectionChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SelectionChanging) event by setting the [SelectionChangingEventArgs.Cancel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.SelectionChangingEventArgs.html) property as true.
 
 {% tabs %}
 {% highlight c# %}
@@ -927,7 +927,7 @@ End Sub
 
 ### Displaying Message Box on Selection Changed
 
-The [SelectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event provides notification when the selection is changed from one row to another.
+The [SelectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SelectionChanged) event provides notification when the selection is changed from one row to another.
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.SelectionChanged += SfDataGrid1_SelectionChanged;
@@ -946,7 +946,7 @@ End Sub
 
 ### Retrieving the Current Item and Display in Message Box
 
-The current item can be displayed in a message box by using the [CurrentItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_CurrentItem) property in the [SfDataGrid.SelectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+The current item can be displayed in a message box by using the [CurrentItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_CurrentItem) property in the [SfDataGrid.SelectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SelectionChanged) event.
 
 {% tabs %}
 {% highlight c# %}
