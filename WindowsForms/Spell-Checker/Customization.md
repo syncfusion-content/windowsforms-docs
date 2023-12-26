@@ -101,10 +101,13 @@ Me.spellCheckerAdv1.GetAnagrams("Textbox")
 
 {% endtabs %}
 
-## Customize Cancel button
+## CancelButton event
 
-SpellCheckerAdv allows to customize the Cancel button based on users requirement.
+This CancelButton event is triggered whenever the cancel button is clicked.
 
+### Event data
+
+This Event Handler receives an argument of type EventArgs containing data related to this event. The EventArgs properties provide information specific to this event.
 
 {% tabs %}
 
