@@ -9,7 +9,7 @@ documentation: ug
 ---
 # Formula Bar in Windows Forms Grid Control
 
-The formula bar is derived from the [TextBox](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox?view=net-5.0) control which is used to bind to the [CurrentCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridNestedTableControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridNestedTableControl_CurrentCell) of GridControl. This is similar to the formula bar in Excel. It will allow to view and edit the formula and values of the current cell.  
+The formula bar is derived from the [TextBox](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox?view=windowsdesktop-8.0&viewFallbackFrom=net-5.0) control which is used to bind to the [CurrentCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridNestedTableControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridNestedTableControl_CurrentCell) of GridControl. This is similar to the formula bar in Excel. It will allow to view and edit the formula and values of the current cell.  
 
 To have the formula bar in the form, open the designer and drag and drop the [GridAwareTextBox](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridAwareTextBox.html#) from the toolbox along with the GridControl.
 
@@ -79,7 +79,7 @@ Me.gridAwareTextBox1.AutoSuggestFormula = True
 {% endhighlight %}
 {% endtabs %}
 
-The custom collections can also use for the auto suggestion in the formula bar. To add the custom suggestion list to the `GridAwareTextBox`, set the [AutoCompleteSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.autocompletesource?view=net-5.0) value as `AutoCompleteSource.CustomSource` and then add the custom collection to [AutoSuggestCustomSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.autocompletecustomsource?view=net-5.0) collection.
+The custom collections can also use for the auto suggestion in the formula bar. To add the custom suggestion list to the `GridAwareTextBox`, set the [AutoCompleteSource](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.autocompletesource?view=windowsdesktop-8.0&viewFallbackFrom=net-5.0) value as `AutoCompleteSource.CustomSource` and then add the custom collection to [AutoSuggestCustomSource](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.autocompletecustomsource?view=windowsdesktop-8.0&viewFallbackFrom=net-5.0) collection.
 
 {% tabs %}
 {% highlight c# %}
