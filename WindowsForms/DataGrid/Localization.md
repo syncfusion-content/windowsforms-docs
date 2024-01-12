@@ -59,7 +59,7 @@ End Sub
 
 To localize the `Select All` string in the CheckListBox of the FilterControl, include the resource file of SfListView to the sample using the previously specified steps, like in SfDataGrid.
 
-The default resource file of SfListView can be download from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ResourceFile1283641291). Refer to the [localization](https://help.syncfusion.com/windowsforms/listview/localization) section in SfListView.
+The default resource file of SfListView can be download from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ResourceFile1283641291). Refer to the [localization](https://help.syncfusion.com/windowsforms/listview/localization) section in SfListView.
 
 ![Filter control of winforms datagrid localized with modified resources](Localization_images/Localization_img9.png)
 
