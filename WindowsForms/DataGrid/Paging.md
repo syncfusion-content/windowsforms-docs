@@ -399,10 +399,10 @@ Follow the below steps to load the DataSource for page in on-demand,
 
 1.	 Set [SfDataPager.AllowOnDemandPaging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataPager.SfDataPager.html#Syncfusion_WinForms_DataPager_SfDataPager_AllowOnDemandPaging) as `true`.
 2.	 Set [SfDataPager.PageCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataPager.SfDataPager.html#Syncfusion_WinForms_DataPager_SfDataPager_PageCount) based on total number of records and [SfDataPager.PageSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.PagedCollectionView.html#Syncfusion_Data_PagedCollectionView_PageSize) property.
-3. Use [OnDemandLoading](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataPager.SfDataPager.html) event to load the DataSource for current page using [LoadDynamicData](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataPager.SfDataPager.html#Syncfusion_WinForms_DataPager_SfDataPager_LoadDynamicData_System_Int32_System_Collections_IEnumerable_) method.
-4.	 [OnDemandLoading](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataPager.SfDataPager.html)  event is raised when SfDataPager moves to another page and you can load the DataSource for corresponding page through OnDemandLoading event.
+3. Use [OnDemandLoading](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataPager.SfDataPager.html#Syncfusion_WinForms_DataPager_SfDataPager_OnDemandLoading) event to load the DataSource for current page using [LoadDynamicData](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataPager.SfDataPager.html#Syncfusion_WinForms_DataPager_SfDataPager_LoadDynamicData_System_Int32_System_Collections_IEnumerable_) method.
+4.	 [OnDemandLoading](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataPager.SfDataPager.html#Syncfusion_WinForms_DataPager_SfDataPager_OnDemandLoading)  event is raised when SfDataPager moves to another page and you can load the DataSource for corresponding page through OnDemandLoading event.
 
-[OnDemandLoadingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataPager.Events.OnDemandLoadingEventArgs.html#Syncfusion_WinForms_DataPager_Events_OnDemandLoadingEventArgs_StartRowIndex) has the following members,
+[OnDemandLoadingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataPager.Events.OnDemandLoadingEventArgs.html) has the following members,
 
 1.	 [StartRowIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataPager.Events.OnDemandLoadingEventArgs.html#Syncfusion_WinForms_DataPager_Events_OnDemandLoadingEventArgs_StartRowIndex) - returns the start index based on PageIndex (Number of previous pages * PageSize).
 2.  [PageSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.PagedCollectionView.html#Syncfusion_Data_PagedCollectionView_PageSize) - denotes the number of records to be displayed in the page.
@@ -518,7 +518,7 @@ TryCast(sfDataPager1.PagedSource, PagedCollectionView).ResetCacheForPage(Me.sfDa
 {% endtabs %}
 
 ### Loading data from database in on-demand
-You can read the data from database in on-demand (here, records are retrieved from Northwind data provider) in [OnDemandLoading](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataPager.SfDataPager.html) event handler.
+You can read the data from database in on-demand (here, records are retrieved from Northwind data provider) in [OnDemandLoading](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataPager.SfDataPager.html#Syncfusion_WinForms_DataPager_SfDataPager_OnDemandLoading) event handler.
 
 {% tabs %}
 {% highlight c# %}
@@ -681,7 +681,7 @@ Here, records are filtered based on the textbox text in clicking event of Filter
 You can refer the [sample](https://github.com/SyncfusionExamples/how-to-change-the-PageCount-at-runtime-when-data-loaded-on-demand-is-filtered-in-winforms-datapager) from here.
 
 ### Sorting complete collection
-You can sort the complete collection with on-demand paging by using [SfDataGrid.SortColumnsChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+You can sort the complete collection with on-demand paging by using [SfDataGrid.SortColumnsChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SortColumnsChanging) event.
 In this event, you can sort the complete underlying collection instead of sorting current page alone by resetting the caches.
 
 {% tabs %}

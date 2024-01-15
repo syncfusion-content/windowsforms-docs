@@ -94,7 +94,7 @@ End Sub
 {% endtabs %}
             
 ## Clear filtering
-The SfListView allows clearing the filters by setting the [View.Filter](//help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~Filter.html) to null and call the [View.RefreshFilter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_RefreshFilter) method.
+The SfListView allows clearing the filters by setting the [View.Filter](//help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_Filter) to null and call the [View.RefreshFilter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_RefreshFilter) method.
 
 {% tabs %}
 {% highlight c# %}
