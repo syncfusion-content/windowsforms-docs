@@ -566,7 +566,7 @@ End Sub
 {% endtabs %}
 
 ### Changing PageCount at run time while filtering
-You can change the [SfDataPager.PageCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataPager.SfDataPager.html#Syncfusion_WinForms_DataPager_SfDataPager_PageCount)  at runtime based on the records count in on-demand paging. Here, PageCount are modified by filtering the records in run time.
+You can change the [SfDataPager.PageCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataPager.SfDataPager.html#Syncfusion_WinForms_DataPager_SfDataPager_PageCount) at runtime based on the records count in on-demand paging. Here, PageCount are modified by filtering the records in run time.
 
 
 {% tabs %}
