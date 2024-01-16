@@ -16,8 +16,8 @@ SfDataGrid provides support to manipulate the data using [SfDataPager](https://h
 Follow the below steps to bind SfDataGrid with SfDataPager.
 
 1. Create IEnumerable collection that you want to bind and set it to SfDataPager.Source property.
-2. Set [SfDataPager.PageSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.PagedCollectionView.html#Syncfusion_Data_PagedCollectionView_PageSize)  property to specify the number of records to be displayed per page.
-3.	 Bind [SfDataPager.PagedSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataPager.SfDataPager.html#Syncfusion_WinForms_DataPager_SfDataPager_PagedSource) to [SfDataGrid.DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_DataSource) property. So whenever the page is changed, PagedSource will be update based on current page.
+2. Set [SfDataPager.PageSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.PagedCollectionView.html#Syncfusion_Data_PagedCollectionView_PageSize) property to specify the number of records to be displayed per page.
+3. Bind [SfDataPager.PagedSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataPager.SfDataPager.html#Syncfusion_WinForms_DataPager_SfDataPager_PagedSource) to [SfDataGrid.DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_DataSource) property. So whenever the page is changed, PagedSource will be update based on current page.
 
 {% tabs %}
 {% highlight c# %}
@@ -400,7 +400,7 @@ Follow the below steps to load the DataSource for page in on-demand,
 1. Set [SfDataPager.AllowOnDemandPaging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataPager.SfDataPager.html#Syncfusion_WinForms_DataPager_SfDataPager_AllowOnDemandPaging) as `true`.
 2. Set [SfDataPager.PageCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataPager.SfDataPager.html#Syncfusion_WinForms_DataPager_SfDataPager_PageCount) based on total number of records and [SfDataPager.PageSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.PagedCollectionView.html#Syncfusion_Data_PagedCollectionView_PageSize) property.
 3. Use [OnDemandLoading](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataPager.SfDataPager.html#Syncfusion_WinForms_DataPager_SfDataPager_OnDemandLoading) event to load the DataSource for current page using [LoadDynamicData](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataPager.SfDataPager.html#Syncfusion_WinForms_DataPager_SfDataPager_LoadDynamicData_System_Int32_System_Collections_IEnumerable_) method.
-4. [OnDemandLoading](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataPager.SfDataPager.html#Syncfusion_WinForms_DataPager_SfDataPager_OnDemandLoading)  event is raised when SfDataPager moves to another page and you can load the DataSource for corresponding page through OnDemandLoading event.
+4. [OnDemandLoading](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataPager.SfDataPager.html#Syncfusion_WinForms_DataPager_SfDataPager_OnDemandLoading) event is raised when SfDataPager moves to another page and you can load the DataSource for corresponding page through OnDemandLoading event.
 
 [OnDemandLoadingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataPager.Events.OnDemandLoadingEventArgs.html) has the following members,
 
