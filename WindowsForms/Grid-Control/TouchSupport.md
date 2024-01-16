@@ -27,8 +27,8 @@ GridControl provides the swipe scrolling support in both horizontal and vertical
 N> To have the proper horizontal and vertical pixel touch scrolling, the [HScrollPixel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_HScrollPixel) and [VScrollPixel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_VScrollPixel) properties should be set to `true`.
 
 ## Touch Zooming
-GridControl allows to perform the touch zoom in or out to the entire grid by initializing [ZoomGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.ZoomGrid.html#) class where the constructor takes a parameter as a `GridControl` object.
-To have this touch zooming support in grid, the [GridHelperClasses.Windows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.html#) assembly needs to be added into the assembly reference. 
+GridControl allows to perform the touch zoom in or out to the entire grid by initializing [ZoomGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.ZoomGrid.html) class where the constructor takes a parameter as a `GridControl` object.
+To have this touch zooming support in grid, the [GridHelperClasses.Windows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.html) assembly needs to be added into the assembly reference. 
 {% tabs %}
 {% highlight c# %}
 //Initialize the Zooming to GridControl

@@ -481,7 +481,7 @@ Me.editControl1.UserMarginTextColor = Color.Green
 
 #### How to add custom text in user margin
 
-It is possible to set custom text in the user margin in line-by-line basis by handling the [DrawUserMarginText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) event of the EditControl. Moreover, it is also possible to customize the font settings for the text of the user margin.
+It is possible to set custom text in the user margin in line-by-line basis by handling the [DrawUserMarginText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_DrawUserMarginText) event of the EditControl. Moreover, it is also possible to customize the font settings for the text of the user margin.
 
 {% tabs %}
 
