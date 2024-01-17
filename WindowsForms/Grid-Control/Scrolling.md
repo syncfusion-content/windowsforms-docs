@@ -278,7 +278,7 @@ Me.gridControl1.ScrollFrozen = True
 {% endtabs %}
 
 ### Scroll Current Cell into View when its Activated
-The current cell can be scrolled to the view when it is activated by setting the [AllowScrollCurrentCellInView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_AllowScrollCurrentCellInView) property to desired [GridScrollCurrentCellReason](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridScrollCurrentCellReason.html) enumeration.
+The current cell can be scrolled to the view when it is activated by setting the [AllowScrollCurrentCellInView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_AllowScrollCurrentCellInView) property to desired [GridScrollCurrentCellReason](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridScrollCurrentCellReason.html) enumeration.
 {% tabs %}
 {% highlight c# %}
 //Get the current cell scroll into the view when its activated
@@ -492,7 +492,7 @@ End Sub
 This section will explain about the events used for the scrolling in GridControl.
 
 ### Disable the Pixel Scrolling using Events
-The pixel scrolling of the GridControl can be restricted by handling the [HScrollPixelPosChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html) and [VScrollPixelPosChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html) events. This events will be raised while scrolling the grid through the scrollbar when[pixel scrolling](#_Pixel_scrolling "") is enabled. 
+The pixel scrolling of the GridControl can be restricted by handling the [HScrollPixelPosChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_HScrollPixelPosChanging) and [VScrollPixelPosChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_VScrollPixelPosChanging) events. This events will be raised while scrolling the grid through the scrollbar when[pixel scrolling](#_Pixel_scrolling "") is enabled. 
 {% tabs %}
 {% highlight c# %}
 this.gridControl1.HScrollPixelPosChanging += new GridScrollPositionChangingEventHandler(gridControl1_HScrollPixelPosChanging);
@@ -529,7 +529,7 @@ Private Sub gridControl1_VScrollPixelPosChanging(ByVal sender As Object, ByVal e
 End Sub
 {% endhighlight %}
 {% endtabs %}
-Once the pixel scrolling is done on the grid, it can be notified by invoking the [HScrollPixelPosChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html) and [VScrollPixelPosChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html) events.
+Once the pixel scrolling is done on the grid, it can be notified by invoking the [HScrollPixelPosChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_HScrollPixelPosChanged) and [VScrollPixelPosChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_VScrollPixelPosChanged) events.
 
 {% tabs %}
 {% highlight c# %}
@@ -559,7 +559,7 @@ End Sub
 {% endtabs %}
 
 ### Setting the Maximum Scrolling Position through Events 
-The [HorizontalScroll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ScrollControl.html) and [VerticalScroll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ScrollControl.html) events will be raised when the scrollbar position is changed. By using this event, user can restrict the maximum scrolling position of the scrollbar.
+The [HorizontalScroll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ScrollControl.html#Syncfusion_Windows_Forms_ScrollControl_HorizontalScroll) and [VerticalScroll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ScrollControl.html#Syncfusion_Windows_Forms_ScrollControl_VerticalScroll) events will be raised when the scrollbar position is changed. By using this event, user can restrict the maximum scrolling position of the scrollbar.
 {% tabs %}
 {% highlight c# %}
 this.gridControl1.HorizontalScroll += new ScrollEventHandler(gridControl1_HorizontalScroll);
@@ -586,7 +586,7 @@ End Sub
 {% endtabs %}
 
 ## Custom Scrollbar
-For customizing the appearance of the Scrollbars, need to add the [ScrollersFrame](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ScrollersFrame.html) control into the grid. It can be drag and drop to the application from the Toolbox window.
+For customizing the appearance of the Scrollbars, need to add the [ScrollersFrame](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ScrollersFrame.html) control into the grid. It can be drag and drop to the application from the Toolbox window.
 {% tabs %}
 {% highlight c# %}
 //Attach the scroll Frame to the Grid control
@@ -599,7 +599,7 @@ Me.scrollersFrame1.AttachedTo = Me.gridControl1
 {% endtabs %}
 ![Windows forms grid displays applied custom appearance to scrollbar](Scrolling_images/Scrolling_img10.jpeg)
 
-The [ScrollersFrame](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ScrollersFrame.html) can be applied with the different visual styles as of follows,
+The [ScrollersFrame](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ScrollersFrame.html) can be applied with the different visual styles as of follows,
 
 * Office2007
 * Office2010
