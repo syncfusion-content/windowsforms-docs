@@ -187,7 +187,7 @@ Me.dateTimeEdit.Style.UpDownHoverBackColor = Color.Yellow
 
 ### Change visibility of up-down
 
-The up-down allows you to change the value by increment or decrement of values of the date, month, and year based on the selected field. The value change by up and down buttons are only applicable when the [DateTimeEditingMode]([DateTimeEditingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_DateTimeEditingMode)) is mask. The visibility of up-down buttons can be changed by the [ShowUpDown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_ShowUpDown) property.
+The up-down allows you to change the value by increment or decrement of values of the date, month, and year based on the selected field. The value change by up and down buttons are only applicable when the [DateTimeEditingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_DateTimeEditingMode) is mask. The visibility of up-down buttons can be changed by the [ShowUpDown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_ShowUpDown) property.
 
 {% tabs %}
 

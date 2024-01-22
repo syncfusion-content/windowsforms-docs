@@ -70,7 +70,7 @@ Me.gridControl1.RowStyles(2).CellTipText = "Hello"
 
 ### Adding ToolTip using QueryCellInfo Event
 
-The ToolTip can be added conditionally to the specific cell or row or column by using the [QueryCellInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html) event.
+The ToolTip can be added conditionally to the specific cell or row or column by using the [QueryCellInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_QueryCellInfo) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -245,7 +245,7 @@ Me.gridControl1.CellToolTip.AutomaticDelay = 1000
 
 ### ActivateToolTip
 
-[ActivateToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableControl.html) event will be triggered when the mouse hovers on a cell which has the valid [CellTipText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_CellTipText) (`CellTipText` should not be empty).
+[ActivateToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableControl_ActivateToolTip) event will be triggered when the mouse hovers on a cell which has the valid [CellTipText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_CellTipText) (`CellTipText` should not be empty).
 
 {% tabs %}
 {% highlight c# %}
