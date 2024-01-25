@@ -79,7 +79,7 @@ list.Add(GridRangeInfo.Cell(2, 2))
 Me.gridControl1.Model.CutPaste.CopyCellsToClipboard(list, True)
 {% endhighlight %}
 {% endtabs %}
-The copy operation can be restricted by handling the [ClipboardCopy](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html) event. This event will raise when the `Copy` method is called.
+The copy operation can be restricted by handling the [ClipboardCopy](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_ClipboardCopy) event. This event will raise when the `Copy` method is called.
 {% tabs %}
 {% highlight c# %}
 this.gridControl1.ClipboardCopy += gridControl1_ClipboardCopy;
@@ -111,7 +111,7 @@ this.gridControl1.CutPaste.Paste();
 Me.gridControl1.CutPaste.Paste()
 {% endhighlight %}
 {% endtabs %}
-The pasting operation can be notified by the [ClipboardPaste](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html) event. It will be triggered while pasting the clipboard contents. This event can be used to restrict the clipboard paste operation.
+The pasting operation can be notified by the [ClipboardPaste](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_ClipboardPaste) event. It will be triggered while pasting the clipboard contents. This event can be used to restrict the clipboard paste operation.
 {% tabs %}
 {% highlight c# %}
 this.gridControl1.ClipboardPaste += gridControl1_ClipboardPaste;
@@ -159,7 +159,7 @@ Me.gridControl1.CutPaste.ClipboardFlags = Me.gridControl1.CutPaste.ClipboardFlag
 {% endtabs %}
 
 ### Fill Paste
-This technique is used to fill the clipboard content to the selected range of cells. It can be done by using the [ClipboardPaste](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html) event.
+This technique is used to fill the clipboard content to the selected range of cells. It can be done by using the [ClipboardPaste](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_ClipboardPaste) event.
 {% tabs %}
 {% highlight c# %}
 this.gridControl1.ClipboardPaste += gridControl1_ClipboardPaste;
@@ -271,7 +271,7 @@ Me.gridControl1.CutPaste.CutRange(range, False)
 ![CopyPaste_img2](CopyPaste_images/CopyPaste_img2.jpeg)
 
 N> If the cell have integer data type, it will became null during the cut operation. The integer data type does not accept the null values therefore it will throws the “InvalidOperationException was unhandled, Rollback without BeginTrans” exception. This exception can be avoided by setting the nullable data type to the cells. For example, The `int` data type is need to be changed to `int?`.
-N> [https://www.syncfusion.com/kb/5198/why-does-cut-operation-throw-an-exception-on-the-number-datatype-such-as-integer-cells](https://www.syncfusion.com/kb/5198/why-does-cut-operation-throw-an-exception-on-the-number-datatype-such-as-integer-cells) 
+N> [https://support.syncfusion.com/kb/article/4811/how-to-resolve-an-exception-in-cut-operation-on-the-number-datatype-such-as-integer-cells](https://support.syncfusion.com/kb/article/4811/how-to-resolve-an-exception-in-cut-operation-on-the-number-datatype-such-as-integer-cells) 
 
 ## Disabling Cut, Copy, and Paste
 The Clipboard Cut, Copy and Paste operations of the grid can be disabled by setting the [ClipboardFlags](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCutPasteEventArgs.html#Syncfusion_Windows_Forms_Grid_GridCutPasteEventArgs_ClipboardFlags) value as `GridDragDropFlags.Disabled`.
@@ -310,7 +310,7 @@ Dim allowCut As Boolean = Me.gridControl1.Model.CutPaste.CanCut()
 Dim allowPaste As Boolean = Me.gridControl1.Model.CutPaste.CanPaste()
 {% endhighlight %}
 {% endtabs %}
-To cancel the cut, copy and paste operation of the grid, handle the [ClipboardCanPaste](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html), [ClipboardCanCopy](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html) and [ClipboardCanCut](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html) events and set the `e.Result` as `false`. 
+To cancel the cut, copy and paste operation of the grid, handle the [ClipboardCanPaste](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_ClipboardCanPaste), [ClipboardCanCopy](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_ClipboardCanCopy) and [ClipboardCanCut](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_ClipboardCanCut) events and set the `e.Result` as `false`. 
 {% tabs %}
 {% highlight c# %}
 //Clipboard Events
@@ -370,7 +370,7 @@ End Sub
 GridControl has provide various events to manage the clipboard content while performing cut, paste and copy operations. This section explains on how to customize the clipboard operations using events.
 
 ### Validating the cell value while Pasting
-The cell value can be validated at the time of pasting by using the [PasteCellText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html) event. When the content is invalid, set `e.Cancel` to `true`.
+The cell value can be validated at the time of pasting by using the [PasteCellText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_PasteCellText) event. When the content is invalid, set `e.Cancel` to `true`.
 {% tabs %}
 {% highlight c# %}
 this.gridControl1.Model.PasteCellText += new GridPasteCellTextEventHandler(Model_PasteCellText);
@@ -416,7 +416,7 @@ End Sub
 {% endtabs %}
 
 ### Preventing Paste for a particular Cell
-The pasting operation can be prevented for particular cells by handling the [PasteCellText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html) event. This event will fire when the cell is not in edit mode at the time of pasting. This can be achieved by setting the [ActivateCurrentCellBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_ActivateCurrentCellBehavior) property to `DoubleClickOnCell`.
+The pasting operation can be prevented for particular cells by handling the [PasteCellText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_PasteCellText) event. This event will fire when the cell is not in edit mode at the time of pasting. This can be achieved by setting the [ActivateCurrentCellBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_ActivateCurrentCellBehavior) property to `DoubleClickOnCell`.
 {% tabs %}
 {% highlight c# %}
 this.gridControl1.PasteCellText += new GridPasteCellTextEventHandler(gridControl1_PasteCellText);
@@ -445,7 +445,7 @@ End Sub
 {% endtabs %}
 
 ### Handling the clipboard Paste using Keyboard shortcut
-The pasting using keys <kbd>Ctrl</kbd>+<kbd>V</kbd> can be handled by [CurrentCellControlKeyMessage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html) event. Using this event, the pasting can be restricted even though the cell is in edit mode.
+The pasting using keys <kbd>Ctrl</kbd>+<kbd>V</kbd> can be handled by [CurrentCellControlKeyMessage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_CurrentCellControlKeyMessage) event. Using this event, the pasting can be restricted even though the cell is in edit mode.
 {% tabs %}
 {% highlight c# %}
 this.gridControl1.CurrentCellControlKeyMessage += new GridCurrentCellControlKeyMessageEventHandler(gridControl1_CurrentCellControlKeyMessage);

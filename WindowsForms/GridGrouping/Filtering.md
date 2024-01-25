@@ -373,7 +373,7 @@ Me.gridGroupingControl1.TableDescriptor.RecordFilters.Clear()
 N> The filters that are applied using [GridDynamicFilter](#dynamic-filter), [Normal Filter](#filtering) and  [Office2007Filter](#office2007-filter) When `RecordFilters` are cleared from GridGroupingControl.
 
 ### Events
-The changes made in the `RecordFilters` collection can be notified by using the [RecordFilters.Changing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.RecordFilterDescriptorCollection.html) and [RecordFilters.Changed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.RecordFilterDescriptorCollection.html) events.
+The changes made in the `RecordFilters` collection can be notified by using the [RecordFilters.Changing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.RecordFilterDescriptorCollection.html#Syncfusion_Grouping_RecordFilterDescriptorCollection_Changing) and [RecordFilters.Changed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.RecordFilterDescriptorCollection.html#Syncfusion_Grouping_RecordFilterDescriptorCollection_Changed) events.
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.TableDescriptor.RecordFilters.Changing += new ListPropertyChangedEventHandler(RecordFilters_Changing);

@@ -48,7 +48,7 @@ Me.gridControl1.SelectCellsMouseButtonsMask = System.Windows.Forms.MouseButtons.
 {% endtabs %}
 
 ### Restrict cell navigation using event
-The current cell navigation can be restricted by canceling the [CurrentCellActivating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html) event.
+The current cell navigation can be restricted by canceling the [CurrentCellActivating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_CurrentCellActivating) event.
 
 {% tabs %}
 {% highlight c# %}
