@@ -71,7 +71,7 @@ Me.gridGroupingControl1.TableModel.CutPaste.CopyTextToClipboard(rangeList)
 {% endtabs %}
 
 ### Copy the Records of a Given Group
-The records of the given group can be copied to the clipboard by using the [Clipboard.SetText](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.clipboard.settext?view=net-5.0) method. It will paste the given text to the clipboard data. The following code snippet is used to copy the current group of the GridGroupingControl to the clipboard.
+The records of the given group can be copied to the clipboard by using the [Clipboard.SetText](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.clipboard.settext?view=windowsdesktop-8.0&viewFallbackFrom=net-5.0) method. It will paste the given text to the clipboard data. The following code snippet is used to copy the current group of the GridGroupingControl to the clipboard.
 
 {% tabs %}
 {% highlight c# %}
@@ -230,16 +230,16 @@ Me.gridGroupingControl1.TableModel.CutPaste.CutRange(GridRangeInfo.Cells(3, 3, 4
 ## Events
 The clipboard operations can be handled by using the following events,
 
-* [ClipboardCanCopy](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html) - This event is to be handled when the `CanCopy` method of grid is called.
-* [ClipboardCanPaste](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html) - This event is to be handled when the `CanPaste` method of grid is called.
-* [ClipboardCanCut](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html) - This event is to be handled when the `CanCut` method of grid is called.
-* [ClipboardCopy](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html) - This event is to be handled when the `Copy` method of grid is called.
-* [ClipboardCut](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html) - This event is to be handled when the `Cut` method of grid is called.
-* [ClipboardPaste](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html) - This event is to be handled when the `Paste` method of grid is called.
-* [ClipboardPasted](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html) - This event is to be handled after a paste operation.
+* [ClipboardCanCopy](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_ClipboardCanCopy) - This event is to be handled when the `CanCopy` method of grid is called.
+* [ClipboardCanPaste](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_ClipboardCanPaste) - This event is to be handled when the `CanPaste` method of grid is called.
+* [ClipboardCanCut](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_ClipboardCanCut) - This event is to be handled when the `CanCut` method of grid is called.
+* [ClipboardCopy](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_ClipboardCopy) - This event is to be handled when the `Copy` method of grid is called.
+* [ClipboardCut](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_ClipboardCut) - This event is to be handled when the `Cut` method of grid is called.
+* [ClipboardPaste](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_ClipboardPaste) - This event is to be handled when the `Paste` method of grid is called.
+* [ClipboardPasted](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_ClipboardPasted) - This event is to be handled after a paste operation.
 
 ### Restrict the Copy of Current Cell 
-The cell value of the current cell can be restricted from the copying to the clipboard by handling the [ClipboardCanCopy](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html)  event.
+The cell value of the current cell can be restricted from the copying to the clipboard by handling the [ClipboardCanCopy](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_ClipboardCanCopy)  event.
 
 {% tabs %}
 {% highlight c# %}
