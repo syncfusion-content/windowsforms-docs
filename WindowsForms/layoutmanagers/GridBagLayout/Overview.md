@@ -20,8 +20,8 @@ documentation: ug
 
 ## Key features
 
-**Anchor**: Provides an option to set anchor direction for child controls.
+* **Anchor**: Provides an option to set anchor direction for child controls.
 
-**Cell span**: Provides an option to customize row and column span of the child controls.
+* **Cell span**: Provides an option to customize row and column span of the child controls.
 
-**Fill type**: Provides an option to set the position of child control such as horizontal, vertical, both, or none.
+* **Fill type**: Provides an option to set the position of child control such as horizontal, vertical, both, or none.

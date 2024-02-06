@@ -9,10 +9,10 @@ documentation: ug
 
 # Trigger Bar Item in Windows Forms PopupMenu
 
-On selection, the bar items functionality is handled through the [`Click`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html) event for further operations/manipulations.
+On selection, the bar items functionality is handled through the [`Click`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_Click) event for further operations/manipulations.
 
 > **NOTE**          
-> Bar items can also be operated through keyboard shortcuts which will be discussed in the upcoming section. Doing so, the [`Click`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html) event will be invoked when pressing the shortcut keys.   
+> Bar items can also be operated through keyboard shortcuts which will be discussed in the upcoming section. Doing so, the [`Click`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_Click) event will be invoked when pressing the shortcut keys.   
 
 
 The below code snippet shows how to append click event for bar items through code behind.

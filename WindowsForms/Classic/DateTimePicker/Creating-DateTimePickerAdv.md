@@ -42,7 +42,7 @@ The [DateTimePickerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.W
 
 To add the control manually in C#, follow the given steps:
 
-**1.** Add the following required assembly references to the project: 
+1. Add the following required assembly references to the project: 
 
 * Syncfusion.Tools.Base
 * Syncfusion.Tools.Windows
@@ -51,8 +51,9 @@ To add the control manually in C#, follow the given steps:
 * Syncfusion.Shared.Base
 * Syncfusion.Shared.Windows
 
-**2.** Include the **Syncfusion.Windows.Forms.Tools** namespace.
+2. Include the **Syncfusion.Windows.Forms.Tools** namespace.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight C# %}
 using Syncfusion.Windows.Forms.Tools;
@@ -61,9 +62,12 @@ using Syncfusion.Windows.Forms.Tools;
 Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-**3.** Create a [DateTimePickerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html) instance, and add it to the window.
+3. Create a [DateTimePickerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html) instance, and add it to the window.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 CurrencyEdit currencyEdit1 = new CurrencyEdit();
@@ -74,6 +78,8 @@ Dim currencyEdit1 As New CurrencyEdit()
 Me.Controls.Add(currencyEdit1)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Change DateTime format
 
@@ -118,7 +124,7 @@ Me.dateTimePickerAdv1.CustomFormat = "MMMM/yyyy"
 
 ![DateTimePickerAdv date format](DateTimePicker_images/CustomFormat.png) 
 
-N> The DateTimePickerAdv control supports all custom date-time formats string of .NetFramework. Refer to this [documentation](https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings) for more information.
+N> The DateTimePickerAdv control supports all custom date-time formats string of .NetFramework. Refer to this [documentation](https://learn.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings) for more information.
 
 ## Editing modes
 

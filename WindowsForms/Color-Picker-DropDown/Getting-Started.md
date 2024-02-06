@@ -19,11 +19,11 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 ## Adding the ColorPickerButton control via designer
 
-1) Create a new Windows Forms application in Visual Studio.
+1. Create a new Windows Forms application in Visual Studio.
 
-2) The **ColorPickerButton** control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically.
+2. The **ColorPickerButton** control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically.
 
-* Syncfusion.Shared.Base
+   * Syncfusion.Shared.Base
 
 ![Drag and drop ColorPickerButton from toolbox](ColorPickerButton_images/Overview_img247.jpeg) 
 
@@ -31,14 +31,15 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 The following steps illustrate how to create an **ColorPickerButton** control programmatically:
 
-1) Create a C# or VB application via Visual Studio.
+1. Create a C# or VB application via Visual Studio.
 
-2) Add the following assembly reference to the project.
+2. Add the following assembly reference to the project.
 
-* Syncfusion.Shared.Base
+   * Syncfusion.Shared.Base
 
-3) Include the required namespace.
+3. Include the required namespace.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -52,9 +53,13 @@ Imports Syncfusion.Windows.Forms
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4) Create an instance of the **ColorPickerButton** control and add it to the form.
 
+4. Create an instance of the **ColorPickerButton** control and add it to the form.
+
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -74,8 +79,11 @@ Me.Controls.Add(Me.colorPickerButton1)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-5) Clicking this button at runtime will display the ColorUIControl.
+
+5. Clicking this button at runtime will display the ColorUIControl.
 
    ![Windows Forms ColorPickerButton showing with ColorUI](ColorPickerButton_images/Overview_img248.jpeg) 
 

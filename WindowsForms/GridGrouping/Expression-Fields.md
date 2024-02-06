@@ -10,7 +10,7 @@ documentation: ug
 # Expression Fields in Windows Forms GridGrouping control
 The GridGroupingControl lets column to display the calculation results based on other fields in the same record. The calculation result can be displayed in a separate column i.e. unbound column. These expression columns can be visible or invisible, used in grouping and sorting, and may be employed as summary fields for summary rows.
 
-The [ExpressionFields](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html) are maintained in the [ExpressionFieldsDescriptorCollection](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldDescriptorCollection.html) in which each entry termed as [ExpressionFieldDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldDescriptor.html) defines one expression field. 
+The [ExpressionFields](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html) are maintained in the [ExpressionFieldsDescriptorCollection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldDescriptorCollection.html) in which each entry termed as [ExpressionFieldDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldDescriptor.html) defines one expression field. 
 
 The below example shows the behavior of the ExpressionFields in the GridGroupingControl,
 
@@ -22,7 +22,7 @@ The ExpressionFields can be added to GridGroupingControl at design time by using
 
 ![Expression-Fields_img3](Expression-Fields_images/Expression-Fields_img3.png)
 
-The [ExpressionFieldDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldDescriptor.html) class has the following properties. 
+The [ExpressionFieldDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldDescriptor.html) class has the following properties. 
 
 * [Name](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.FieldDescriptor.html#Syncfusion_Grouping_FieldDescriptor_Name) – Specifies the name of the Expression field.
 * [Expression](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldDescriptor.html#Syncfusion_Grouping_ExpressionFieldDescriptor_Expression) – Specifies the formula expression.
@@ -384,11 +384,13 @@ Me.gridGroupingControl1.TableDescriptor.Columns("Losing %
 ![Expression-Fields_img5](Expression-Fields_images/Expression-Fields_img5.png)
 
 ## Adding Custom Function
-The custom functions which can be any mathematical formulas or calculation method can be used in the ExpressionFields. The can be done by using the [ExpressionFieldEvaluator](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldDescriptor.html) class.
+The custom functions which can be any mathematical formulas or calculation method can be used in the ExpressionFields. The can be done by using the [ExpressionFieldEvaluator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldDescriptor.html) class.
 
 The following steps are used to add the custom function in ExpressionFields,
 
-1.Create the custom function with return type string,
+1. Create the custom function with return type string,
+
+{% capture codesnippet1 %}​
 {% tabs %}
 {% highlight c# %}
 // Define ComputeAbsoluteValue that returns the absolute value of the 1st argument minus 2 * the 2nd argument.
@@ -448,9 +450,12 @@ End Function
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2.Add the custom function in the ` ExpressionFieldEvaluator ` using [AddFunction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldEvaluator.html#Syncfusion_Grouping_ExpressionFieldEvaluator_AddFunction_System_String_Syncfusion_Grouping_ExpressionFieldEvaluator_LibraryFunction_) method and use that custom function in the Expressions
+2. Add the custom function in the ` ExpressionFieldEvaluator ` using [AddFunction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldEvaluator.html#Syncfusion_Grouping_ExpressionFieldEvaluator_AddFunction_System_String_Syncfusion_Grouping_ExpressionFieldEvaluator_LibraryFunction_) method and use that custom function in the Expressions
 
+{% capture codesnippet2 %}​
 {% tabs %}
 {% highlight c# %}
 // Add function named ComputeAbsoluteValue that uses a delegate named ABSOLUTEVALUE to define a custom calculation.
@@ -461,9 +466,12 @@ this.gridGroupingControl1.TableDescriptor.ExpressionFieldEvaluator.AddFunction("
 Me.gridGroupingControl1.TableDescriptor.ExpressionFieldEvaluator.AddFunction("ABSOLUTEVALUE", New ExpressionFieldEvaluator.LibraryFunction(ComputeAbsoluteValue))
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-3.Use the custom function named `ABSOLUTEVALUE` in the Expression,
+3. Use the custom function named `ABSOLUTEVALUE` in the Expression,
 
+{% capture codesnippet3 %}​
 {% tabs %}
 {% highlight c# %}
 // Adding the Expressions using ComputeAbsoluteValue function.
@@ -478,20 +486,23 @@ Dim expField2 As New ExpressionFieldDescriptor("Losing %", "ABSOLUTEVALUE([wins]
 Me.gridGroupingControl1.TableDescriptor.ExpressionFields.AddRange(New ExpressionFieldDescriptor() { expField1,expField2})
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 ![Expression-Fields_img6](Expression-Fields_images/Expression-Fields_img6.png)
 
 ## Adding Calculate Engine Formulas
-The [Essential Calculate formula](http://help.syncfusion.com/windowsforms/calculate/calculate-functions) functions can also be used as custom function for the calculation of Expression Fields. The **Syncfusion.Calculate.Base.dll**provides the accessible to use the calculate engine. 
+The [Essential Calculate formula](https://help.syncfusion.com/windowsforms/calculation-engine/supported-formulas/supported-formulas) functions can also be used as custom function for the calculation of Expression Fields. The **Syncfusion.Calculate.Base.dll**provides the accessible to use the calculate engine. 
 
-Please refer the below dashboard sample to create the [CalcEngine](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html) with the [ICalcData](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.ICalcData.html),
+Please refer the below dashboard sample to create the [CalcEngine](https://help.syncfusion.com/windowsforms/calculation-engine/supported-formulas/supported-formulas) with the [ICalcData](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.ICalcData.html),
 
 **&lt;Installation Location&gt;\Syncfusion\EssentialStudio\&lt;Product Version&gt;\Windows\Calculate.Windows\Samples\Array ICalcData Demo**
 
 The following steps are used to add the calculate function in the Expression Fields,
 
-1.Initialize the `CalcEngine` with `ICalcData`,
+1. Initialize the `CalcEngine` with `ICalcData`,
 
+{% capture codesnippet4 %}​
 {% tabs %}
 {% highlight c# %}
 // Initializing CalcEngine.
@@ -502,9 +513,12 @@ CalcEngine engine = new CalcEngine(data);
 Dim engine As CalcEngine = New CalcEngine(data)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-2.Add the calculate function to the ` ExpressionFieldEvaluator using [AddFunction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldEvaluator.html#Syncfusion_Grouping_ExpressionFieldEvaluator_AddFunction_System_String_Syncfusion_Grouping_ExpressionFieldEvaluator_LibraryFunction_) method,
+2. Add the calculate function to the ` ExpressionFieldEvaluator using [AddFunction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldEvaluator.html#Syncfusion_Grouping_ExpressionFieldEvaluator_AddFunction_System_String_Syncfusion_Grouping_ExpressionFieldEvaluator_LibraryFunction_) method,
 
+{% capture codesnippet5 %}​
 {% tabs %}
 {% highlight c# %}
 // Add CalcEngine function named ComputeIf that uses a delegate named IF to define a custom calculation.
@@ -515,9 +529,12 @@ this.gridGroupingControl1.TableDescriptor.ExpressionFieldEvaluator.AddFunction("
 Me.gridGroupingControl1.TableDescriptor.ExpressionFieldEvaluator.AddFunction("IF", New ExpressionFieldEvaluator.LibraryFunction(engine.ComputeIf))
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-3.Use that calculate function named `IF` in the Expression,
+3. Use that calculate function named `IF` in the Expression,
 
+{% capture codesnippet6 %}​
 {% tabs %}
 {% highlight c# %}
 // Adding the Expressions using ComputeIfFunction.
@@ -532,6 +549,8 @@ Dim expField2 As New ExpressionFieldDescriptor("Losing %", "IF([losses]<100,[win
 Me.gridGroupingControl1.TableDescriptor.ExpressionFields.AddRange(New ExpressionFieldDescriptor() { expField1,expField2})
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
 
 ![Expression-Fields_img7](Expression-Fields_images/Expression-Fields_img7.png)
 
@@ -546,8 +565,9 @@ The [calculate functions](#adding-calculate-engine-formulas) can be added as nes
 
 The following steps are used to add the nested functions,
 
-1.Initialize the `CalcEngine` with `ICalcData`,
+1. Initialize the `CalcEngine` with `ICalcData`,
 
+{% capture codesnippet7 %}​
 {% tabs %}
 {% highlight c# %}
 // Initializing CalcEngine.
@@ -558,9 +578,12 @@ CalcEngine engine = new CalcEngine(data);
 Dim engine As New CalcEngine(data)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet7 | OrderList_Indent_Level_1 }}
 
-2.Add the calculate function to the ` ExpressionFieldEvaluator ` using [AddFunction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldEvaluator.html#Syncfusion_Grouping_ExpressionFieldEvaluator_AddFunction_System_String_Syncfusion_Grouping_ExpressionFieldEvaluator_LibraryFunction_) method,
+2. Add the calculate function to the ` ExpressionFieldEvaluator ` using [AddFunction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldEvaluator.html#Syncfusion_Grouping_ExpressionFieldEvaluator_AddFunction_System_String_Syncfusion_Grouping_ExpressionFieldEvaluator_LibraryFunction_) method,
 
+{% capture codesnippet8 %}​
 {% tabs %}
 {% highlight c# %}
 // Add CalcEngine function named ComputeIf and ComputeMax that uses a delegate named IF to define a custom calculation.
@@ -574,9 +597,12 @@ evaluator.AddFunction("IF", New ExpressionFieldEvaluator.LibraryFunction(engine.
 evaluator.AddFunction("MAX", New ExpressionFieldEvaluator.LibraryFunction(engine.ComputeMax))
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet8 | OrderList_Indent_Level_1 }}
 
-3.Use that nested functions named `IF` and `MAX` in the Expressions,
+3. Use that nested functions named `IF` and `MAX` in the Expressions,
 
+{% capture codesnippet9 %}​
 {% tabs %}
 {% highlight c# %}
 // Adding the Nested Expressions.
@@ -591,6 +617,8 @@ Dim expField2 As New ExpressionFieldDescriptor("Losing %", "IF([losses]<100,MAX(
 Me.gridGroupingControl1.TableDescriptor.ExpressionFields.AddRange(New ExpressionFieldDescriptor() { expField1
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet9 | OrderList_Indent_Level_1 }}
 
 ![Expression-Fields_img8](Expression-Fields_images/Expression-Fields_img8.png)
 

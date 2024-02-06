@@ -35,10 +35,11 @@ The [CurrencyTextBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Win
 
 To add the control manually in C#, follow the given steps:
 
-**1.** Add the **Syncfusion.Shared.Base** assembly reference to the project.
+1. Add the **Syncfusion.Shared.Base** assembly reference to the project.
 
-**2.**	Include the **Syncfusion.Windows.Forms.Tools** namespace.
+2. Include the **Syncfusion.Windows.Forms.Tools** namespace.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight C# %}
 using Syncfusion.Windows.Forms.Tools;
@@ -47,9 +48,13 @@ using Syncfusion.Windows.Forms.Tools;
 Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-**3.**	Create a [CurrencyTextBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyTextBox.html) instance, and add it to the window.
 
+3. Create a [CurrencyTextBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyTextBox.html) instance, and add it to the window.
+
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 CurrencyEdit currencyEdit1 = new CurrencyEdit();
@@ -60,6 +65,9 @@ Dim currencyEdit1 As New CurrencyEdit()
 Me.Controls.Add(currencyEdit1)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
+
 
 ![CurrencyTextBox control](Overview_images/wf-currency-text-box-control.png) 
 
@@ -77,6 +85,7 @@ Me.currencyTextBox1.MaxValue=10
 Me.currencyTextBox1.MinValue=5
 {% endhighlight %}
 {% endtabs %}
+
 
 ## Set currency symbol
 

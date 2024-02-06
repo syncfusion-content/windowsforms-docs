@@ -178,6 +178,7 @@ For example, create a ‘User Info entry’ panel with auto labels, text boxes, 
 
 1. Place five text boxes and one combobox to represent different data input controls in the panel.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -246,9 +247,12 @@ Me.panel1.Controls.Add(Me.comboBox1)
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. Add one auto label for each control, and set the auto label’s LabeledControl property to the corresponding control. Then, change the Text property of the auto label control, and then set the AutoSize property to `true`.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -342,11 +346,14 @@ Me.autoLabel6.Text = "Zip"
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 3. Now, add the FlowLayout component, and set the panel to its container control. The FlowLayout will layout the controls in an order, in which they were added to the panel. Use the Bring To Front and Send To Back design time options to move the controls to the front or back to the layout order.
 
 N> The FlowLayout treats each control and its auto label pair as a single unit during layout.
 
+{% capture codesnippet3 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -378,6 +385,8 @@ Me.flowLayout1.ContainerControl = Me.panel1
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 4. Now, set some appropriate constraints on the input controls as follows.
 
@@ -391,6 +400,7 @@ Me.flowLayout1.ContainerControl = Me.panel1
 
 * The State combobox and Zip text box controls can also be left with the default constraints.
 
+{% capture codesnippet4 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -430,9 +440,12 @@ Me.flowLayout1.SetPreferredSize(Me.textBox4, New System.Drawing.Size(100, 20))
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 5. The panel itself should be increased or decreased in width when the number of rows in the layout increases or decreases. To get this behavior, set the FlowLayout’s AutoHeight property to `true`.
 
+{% capture codesnippet5 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -452,6 +465,8 @@ Me.flowLayout1.AutoHeight = True
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 N> During run time, the input controls are resized and repositioned appropriately based on the constraints provided.
 

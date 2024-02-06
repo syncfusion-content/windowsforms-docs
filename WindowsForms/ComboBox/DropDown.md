@@ -378,4 +378,4 @@ End Class
 
 ## See Also
 
-[How to add separator line in WinForms SfComboBox dropdown items?](https://www.syncfusion.com/kb/11498/how-to-add-separator-line-in-winforms-sfcombobox-dropdown-iems)
+[How to add separator line in WinForms SfComboBox dropdown items?](https://support.syncfusion.com/kb/article/9947/how-to-add-separator-line-in-winforms-sfcombobox-dropdown-iems)

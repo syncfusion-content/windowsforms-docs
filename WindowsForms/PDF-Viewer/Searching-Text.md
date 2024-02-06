@@ -21,14 +21,13 @@ PDF Viewer allows you to search and highlight next instances of a text in the PD
 {%highlight c#%}
 
 PdfViewerControl pdfViewerControl = new PdfViewerControl();
-
 pdfViewerControl.Load("Sample.pdf");
 
 private void Next_Click(object sender, EventArgs e)
 {
-// search next instance of a term "time"
-if (!string.IsNullOrEmpty("time"))
-pdfViewerControl.SearchNextText("time");
+    // search next instance of a term "time"
+    if (!string.IsNullOrEmpty("time"))
+        pdfViewerControl.SearchNextText("time");
 }
 
 {%endhighlight%}
@@ -40,14 +39,13 @@ The following code snippet illustrates how to achieve the same using `PdfDocumen
 {%highlight c#%}
 
 PdfDocumentView pdfDocumentView = new PdfDocumentView();
-
 pdfDocumentView.Load("Sample.pdf");
 
 private void Next_Click(object sender, EventArgs e)
 {
-// search next instance of a term "time"
-if (!string.IsNullOrEmpty("time"))
-pdfDocumentView.SearchNextText ("time");
+    // search next instance of a term "time"
+    if (!string.IsNullOrEmpty("time"))
+        pdfDocumentView.SearchNextText ("time");
 }
 
 {%endhighlight%}
@@ -61,14 +59,13 @@ PDF Viewer allows you to search and highlight previous instances of a text in th
 {%highlight c#%}
 
 PdfViewerControl pdfViewerControl = new PdfViewerControl();
-
 pdfViewerControl.Load("Sample.pdf");
 
 private void Previous_Click(object sender, EventArgs e)
 {
-// search previous instance of a term "time"
-if (!string.IsNullOrEmpty("time"))
-pdfViewerControl.SearchPreviousText("time");
+    // search previous instance of a term "time"
+    if (!string.IsNullOrEmpty("time"))
+        pdfViewerControl.SearchPreviousText("time");
 }
 
 {%endhighlight%}
@@ -80,14 +77,13 @@ The following code snippet illustrates how to achieve the same using `PdfDocumen
 {%highlight c#%}
 
 PdfDocumentView pdfDocumentView = new PdfDocumentView();
-
 pdfDocumentView.Load("Sample.pdf");
 
 private void Previous_Click(object sender, EventArgs e)
 {
-// search previous instance of a term "time"
-if (!string.IsNullOrEmpty("time"))
-pdfDocumentView.SearchPreviousText("time");
+    // search previous instance of a term "time"
+    if (!string.IsNullOrEmpty("time"))
+        pdfDocumentView.SearchPreviousText("time");
 }
 
 {%endhighlight%}
@@ -127,7 +123,6 @@ PDF Viewer allows you to customize the color of the current searched text instan
 
 //Sets color to highlight current occurrence of the searched text
 pdfViewer.TextSearchSettings.CurrentInstanceColor = Color.Red;
-
 //Sets color to highlight all the occurrences of the searched text
 pdfViewer.TextSearchSettings.OtherInstanceColor = Color.Yellow;
 
@@ -138,7 +133,6 @@ pdfViewer.TextSearchSettings.OtherInstanceColor = Color.Yellow;
 
 'Sets color to highlight current occurrence of the searched text
 pdfViewer.TextSearchSettings.CurrentInstanceColor = Color.Red
-
 'Sets color to highlight all the occurrences of the searched text
 pdfViewer.TextSearchSettings.OtherInstanceColor = Color.Yellow
 
@@ -155,13 +149,9 @@ The `PdfViewerControl` also supports searching text in the PDF document using th
 bool IsMatchFound;
 
 pdfViewerControl1.Load("Sample.pdf");
-
 //Get the occurrences of the target text and location.
-
 Dictionary<int, List<RectangleF>> 
-
 textSearch = new Dictionary<int, List<RectangleF>>();
-
 IsMatchFound = pdfViewerControl1.FindText("targetText", out textSearch);
 
 {%endhighlight%}
@@ -171,11 +161,8 @@ IsMatchFound = pdfViewerControl1.FindText("targetText", out textSearch);
 Dim IsMatchFound As Boolean
 
 pdfViewerControl1.Load("Sample.pdf")
-
 'Get the occurrences of the target text and location.
-
 Dim textSearch As New Dictionary(Of Integer, List(Of RectangleF))()
-
 IsMatchFound = pdfViewerControl1.FindText("targetText", textSearch)
 
 {%endhighlight%}
@@ -191,19 +178,15 @@ The following code snippet illustrates how to find the total number of instances
 {%highlight c#%}
 
 PdfViewerControl pdfViewerControl = new PdfViewerControl();
-
 pdfViewerControl.Load("Sample.pdf");
 
 Dictionary<int, List<RectangleF>> matchedTextDetails = new Dictionary<int, List<RectangleF>>();
-
 // total instances of a text
 int totalInstances = 0;
-
 pdfViewerControl.FindText("time", out matchedTextDetails);
-
 foreach (KeyValuePair<int, List<RectangleF>> matchedText in matchedTextDetails)
 {
-totalInstances += matchedText.Value.Count;
+    totalInstances += matchedText.Value.Count;
 }
 
 {%endhighlight%}
@@ -215,19 +198,15 @@ The following code snippet illustrates how to achieve the same using `PdfDocumen
 {%highlight c#%}
 
 PdfDocumentView pdfDocumentView = new PdfDocumentView();
-
 pdfDocumentView.Load("Sample.pdf");
 
 Dictionary<int, List<RectangleF>> matchedTextDetails = new Dictionary<int, List<RectangleF>>();
-
 // total occurrences of a text
 int totalInstances = 0;
-
 pdfDocumentView.FindText("time", out matchedTextDetails);
-
 foreach (KeyValuePair<int, List<RectangleF>> matchedText in matchedTextDetails)
 {
-totalInstances += matchedText.Value.Count;
+    totalInstances += matchedText.Value.Count;
 }
 
 {%endhighlight%}

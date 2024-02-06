@@ -43,7 +43,7 @@ The `SfCalendar` control allows you to localize the static text used in the cale
 
 * **Step 1**: Add the Resources folder to the application.    
 
-* **Step 2**: Add the default resource file of SfCalender into Resources folder. You can download the `Syncfusion.SfInput.WinForms.resx` [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfInput.WinForms-110589688.zip).     
+* **Step 2**: Add the default resource file of SfCalender into Resources folder. You can download the `Syncfusion.SfInput.WinForms.resx` [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfInput.WinForms-110589688.zip).     
 
 ![Add resx file in application](globalization-images/Defaultrex.png)  
                                      
@@ -97,4 +97,4 @@ InputLocalizationResource.SetResources(GetType(Form1).Assembly, "GettingStarted_
 
 ![Globalization](globalization-images/localization.png)
 
-N> Refer to the following sample [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization1520034310.zip) that demonstrates the localization support in SfCalender.
+N> Refer to the following sample [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization1520034310.zip) that demonstrates the localization support in SfCalender.

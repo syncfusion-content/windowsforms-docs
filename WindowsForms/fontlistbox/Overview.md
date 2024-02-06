@@ -11,10 +11,10 @@ documentation: ug
 
 The **FontListBox** is a list box derived control that can be populated automatically with the fonts installed on the user's system. It provides an easy way to fill a list box with system fonts.
 
-![Overview of FontListBox](Overview_images/overview.png)
+![Overview of FontListBox in WindowsForms](overview_images/windowsforms-font-list-box-overview.png)
 
 ## Key features
 
-**Selection mode** - Provides different modes of selection. They are One, MultiSimple, and MultiExtended.
+* **Selection mode** - Provides different modes of selection. They are One, MultiSimple, and MultiExtended.
 
-**Themes** - Supports a set of visual styles to customize the look and feel of the FontListBox control.
+* **Themes** - Supports a set of visual styles to customize the look and feel of the FontListBox control.

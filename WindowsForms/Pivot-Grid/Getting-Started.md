@@ -10,7 +10,7 @@ documentation: ug
 # Getting Started with Windows Forms Pivot Grid
 
 >**Important**
-Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your Windows Forms application to use our components.
+Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion license key in your Windows Forms application to use our components.
 
 This section provides a quick overview for working with the pivot grid for WinForms. Walk through the entire process of creating a simple pivot grid.
 
@@ -26,13 +26,13 @@ This section explains how to add the pivot grid control in Windows Forms applica
 
 The [WinForms Pivot Grid](https://www.syncfusion.com/winforms-ui-controls/pivot-grid) control can be added through designer by following the below steps.
 
-1.Create a new **Windows Forms Application** in Visual Studio.
+1. Create a new **Windows Forms Application** in Visual Studio.
 
-2.Drag and drop the pivot grid control from the toolbox into the designer page.
+2. Drag and drop the pivot grid control from the toolbox into the designer page.
 
 ![GettingStarted_img1](Getting-Started_images/GettingStarted_img1.png)
 
-3.Then, the pivot grid control will be successfully added into the application along with the required libraries.
+3. Then, the pivot grid control will be successfully added into the application along with the required libraries.
 
 ![GettingStarted_img2](Getting-Started_images/GettingStarted_img2.png)
 
@@ -40,17 +40,18 @@ The [WinForms Pivot Grid](https://www.syncfusion.com/winforms-ui-controls/pivot-
 
 The pivot grid control can be added through code-behind by following the below steps.
 
-1.Create a new **Windows Forms Application** in Visual Studio.
+1. Create a new **Windows Forms Application** in Visual Studio.
 
-2.Add the following assembly references to the project.
+2. Add the following assembly references to the project.
 
-* Syncfusion.Grid.Windows.dll
-* Syncfusion.PivotAnalysis.Base.dll
-* Syncfusion.PivotAnalysis.Windows.dll
-* Syncfusion.Shared.Base.dll
+    * Syncfusion.Grid.Windows.dll
+    * Syncfusion.PivotAnalysis.Base.dll
+    * Syncfusion.PivotAnalysis.Windows.dll
+    * Syncfusion.Shared.Base.dll
 
-3.Then initialize the pivot grid control by creating an instance and add it to the form using the code specified below.
+3. Then initialize the pivot grid control by creating an instance and add it to the form using the code specified below.
 
+{% capture codesnippet1 %}​
 {% tabs %}
 
 {% highlight c# %}
@@ -80,30 +81,32 @@ Me.Controls.Add(pivotGridControl1)
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ### Adding control via Syncfusion reference manager
 
 [Syncfusion reference manager](https://help.syncfusion.com/extension/syncfusion-reference-manager/overview) is a Visual Studio Add-In that helps to add Syncfusion controls. The pivot grid control can be added through Syncfusion reference manager by following the below steps.
 
-1.Create a new **Windows Forms Application** in Visual Studio.
+1. Create a new **Windows Forms Application** in Visual Studio.
 
-2.Then right-click on the project and select Syncfusion Reference Manager.
+2. Then right-click on the project and select Syncfusion Reference Manager.
 
 ![GettingStarted_img7](Getting-Started_images/GettingStarted_img7.png)
 
-3.The Syncfusion Reference Manager wizard will be opened as shown below.
+3. The Syncfusion Reference Manager wizard will be opened as shown below.
 
 ![GettingStarted_img8](Getting-Started_images/GettingStarted_img8.png)
 
-4.Select the pivot grid control by searching it using search box. Then click on done button to add the selected pivot grid control.
+4. Select the pivot grid control by searching it using search box. Then click on done button to add the selected pivot grid control.
 
 ![GettingStarted_img9](Getting-Started_images/GettingStarted_img9.png)
 
-5.The required assemblies will be automatically added to the project by clicking ok button.
+5. The required assemblies will be automatically added to the project by clicking ok button.
 
 ![GettingStarted_img10](Getting-Started_images/GettingStarted_img10.png)
 
-6.Add the following code sample in code behind to create a simple pivot grid control.
+6. Add the following code sample in code behind to create a simple pivot grid control.
 
 {% tabs %}
 
@@ -140,7 +143,7 @@ Syncfusion reference manager supports for specific framework which is shipped (a
 
 ## Binding data
 
-This section guides you on how to bind data source and its appropriate fields to a pivot grid control. The data source assigned to the pivot grid control should either be an [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?redirectedfrom=MSDN&view=net-5.0) list or a [DataView](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataview?redirectedfrom=MSDN&view=net-5.0).
+This section guides you on how to bind data source and its appropriate fields to a pivot grid control. The data source assigned to the pivot grid control should either be an [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?redirectedfrom=MSDN&view=net-5.0) list or a [DataView](https://learn.microsoft.com/en-us/dotnet/api/system.data.dataview?redirectedfrom=MSDN&view=net-5.0).
 
 In this example, `IEnumerable` list is used as data source for the pivot grid control and the sample data source contains properties like Product, Date, Country, State, Quantity, Amount, UnitPrice and TotalPrice for demonstration purpose.
 
@@ -337,7 +340,7 @@ N>
 
 The pivot grid control requires the following information in order to populate the data from the data source.
 
-* [ItemSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_ItemSource) - The data source for the pivot table. This object should be either an    [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?redirectedfrom=MSDN&view=net-5.0) list or a [DataTable](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataview?redirectedfrom=MSDN&view=net-5.0).
+* [ItemSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_ItemSource) - The data source for the pivot table. This object should be either an    [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?redirectedfrom=MSDN&view=net-5.0) list or a [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.dataview?redirectedfrom=MSDN&view=net-5.0).
 * [PivotRows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_PivotRows) - Elements that need to be added in rows of pivot grid control.
 * [PivotColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_PivotColumns) - Elements that need to be added in columns of pivot grid control.
 * [PivotCalculations](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_PivotCalculations) - Calculation values that need to be added as value cells in pivot grid control.

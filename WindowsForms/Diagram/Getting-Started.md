@@ -36,7 +36,7 @@ The model contains the data (node/connector) portion of a diagram. The view is r
 
 
 
-![Diagram](Getting-Started_images/Getting-Started_img1.png)
+![Diagram control in WindowsForms](getting-started_images/windowsforms-diagram-control.png)
 
 
 
@@ -46,7 +46,7 @@ The Overview control provides a perspective view of a diagram model and allows u
 
 
 
-![Overview](Getting-Started_images/Getting-Started_img2.png)
+![Overview of WindowsForms Diagram](getting-started_images/windowsforms-diagram-overview.png)
 
 
 
@@ -56,7 +56,7 @@ The PaletteGroupBar control provides a way for users to drag symbols onto a diag
 
 
 
-![PaletteGroupBar](Getting-Started_images/Getting-Started_img3.png)
+![Palette group bar in WindowsForms Diagram](getting-started_images/windowsforms-diagram-palette-group-bar.png)
 
 
 
@@ -72,7 +72,7 @@ The PropertyEditor control displays and edits the properties of diagram models, 
 
 
 
-![PropertyEditor](Getting-Started_images/Getting-Started_img4.png)
+![Property editor in WindowsForms Diagram](getting-started_images/windowsforms-diagram-property-editor.png)
 
 
 
@@ -82,7 +82,7 @@ The DocumentExplorer control allows you to visualize the details of the various 
 
 
 
-![DocumentExplorer](Getting-Started_images/Getting-Started_img5.png)
+![Document explorer in WindowsForms Diagram](getting-started_images/windowsforms-diagram-document-explorer.png)
 
 
 
@@ -104,7 +104,7 @@ To create a Diagram control using the designer:
 
 
 
-![Diagram](Getting-Started_images/Getting-Started_img6.png)
+![Create Diagram control through designer in WindowsForms](getting-started_images/windowsforms-diagram-control-through-designer.png)
 
 
 
@@ -112,7 +112,7 @@ The Diagram control will be added to the designer and its dependent assemblies w
 
 
 
-![Diagram](Getting-Started_images/Getting-Started_img7.jpg)
+![Add Diagram control through project in WindowsForms](getting-started_images/windowsforms-diagram-control-through-project.jpg)
 
 
 
@@ -130,6 +130,7 @@ To create a Diagram control using code:
    * Syncfusion.Shared.Base.dll
 3. Create a Diagram control using the following code.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -173,11 +174,12 @@ diagram.Location = New Point(20, 5)
 
 {% endhighlight %}
 {% endtabs %}
-
-
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 4. Add a model to the Diagram control.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -198,12 +200,12 @@ diagram.Model = model
 
 {% endhighlight %}
 {% endtabs %}
-
-
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 5. Add the Diagram control to the Diagram Form window.
 
-
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -218,8 +220,10 @@ Me.Controls.Add(diagram)
             
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-![Diagram](Getting-Started_images/Getting-Started_img8.png)
+![Add Diagram control to the Diagram Form window in WindowsForms](getting-started_images/windowsforms-diagram-form-window.png)
 
 
 
@@ -297,7 +301,7 @@ diagram.Model.AppendChild(rectangle)
 {% endtabs %}
 
 
-![Adding Nodes](Getting-Started_images/Getting-Started_img9.png)
+![Adding nodes in WindowsForms Diagram](getting-started_images/windowsforms-diagram-adding-nodes.png)
 
 
 
@@ -470,7 +474,7 @@ diagram.Model.AppendChild(link)
 {% endtabs %}
 
 
-![Connecting Nodes](Getting-Started_images/Getting-Started_img10.png)
+![Connecting nodes in WindowsForms Diagram](getting-started_images/windowsforms-diagram-connecting-nodes.png)
 
 
 
@@ -488,7 +492,7 @@ To create a [PaletteGroupBar](https://help.syncfusion.com/cr/windowsforms/Syncfu
 
 
 
-![PaletteGroupBar](Getting-Started_images/Getting-Started_img11.png)
+![Create Palette group bar in WindowsForms Diagram](getting-started_images/windowsforms-diagram-create-palette-group-bar.png)
 
 
 
@@ -498,7 +502,7 @@ The PaletteGroupBar control will be added to the designer and its dependent asse
 
 
 
-![PaletteGroupBar](Getting-Started_images/Getting-Started_img12.jpg)
+![Palette group bar added to designer in WindowsForms Diagram](getting-started_images/windowsforms-diagram-palette-group-bar-added-to-designer.jpg)
 
 
 
@@ -516,8 +520,7 @@ To create a PaletteGroupBar control using code:
    * Syncfusion.Shared.Base.dll
 3. Create a PaletteGroupBar control using the following code.
 
-
-
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -566,10 +569,11 @@ Me.Controls.Add(paletteBar)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 
-
-![PaletteGroupBar through code](Getting-Started_images/Getting-Started_img13.png)
+![Palette group bar through code in WindowsForms Diagram](getting-started_images/windowsforms-diagram-palette-group-bar-through-code.png)
 
 
 
@@ -587,7 +591,7 @@ To create a [PaletteGroupView](https://help.syncfusion.com/cr/windowsforms/Syncf
 
 
 
-![PaletteGroupView](Getting-Started_images/Getting-Started_img14.png)
+![Palette group view in WindowsForms Diagram](getting-started_images/windowsforms-diagram-palette-group-view.png)
 
 
 
@@ -597,7 +601,7 @@ The PaletteGroupView control will be added to the designer and its dependent ass
 
 
 
-![PaletteGroupView](Getting-Started_images/Getting-Started_img15.jpg)
+![Palette group view added to designer in WindowsForms Diagram](getting-started_images/windowsforms-diagram-palette-group-view-added-to-designer.jpg)
 
 
 
@@ -615,7 +619,7 @@ To create a PaletteGroupView control using code:
    * Syncfusion.Shared.Base.dll
 3. Create a PaletteGroupView control using the following code.
 
-
+{% capture codesnippet5 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -660,8 +664,10 @@ Me.Controls.Add(paletteView)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-![PaletteGroupView Control through Code](Getting-Started_images/Getting-Started_img16.png)
+![Palette group view control through Code in WindowsForms](getting-started_images/windowsforms-diagram-palette-group-view-control-through-code.png)
 
 
 
@@ -679,7 +685,7 @@ To create an Overview control using the designer:
 
 
 
-![Creating an Overview Control through Designer](Getting-Started_images/Getting-Started_img17.png)
+![Creating an Overview Control through designer in WindowsForms Diagram](getting-started_images/windowsforms-diagram-creating-overview-through-designer.png)
 
 
 
@@ -689,7 +695,7 @@ The Overview control will be added to the designer and its dependent assemblies 
 
 
 
-![Overview control](Getting-Started_images/Getting-Started_img18.jpg)
+![Overview control through project in WindowsForms Diagram](getting-started_images/windowsforms-diagram-overview-through-project.jpg)
 
 
 
@@ -707,7 +713,7 @@ To create an Overview control using code:
    * Syncfusion.Shared.Base.dll
 3. Create an Overview control using the following code.
 
-
+{% capture codesnippet6 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -742,8 +748,10 @@ Me.Controls.Add(overviewControl)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
 
-![Creating an Overview Control through Code](Getting-Started_images/Getting-Started_img19.png)
+![Creating an Overview Control through code in WindowsForms Diagram](getting-started_images/windowsforms-diagram-overview-through-code.png)
 
 
 
@@ -761,7 +769,7 @@ To create a [PropertyEditor](https://help.syncfusion.com/cr/windowsforms/Syncfus
 
 
 
-![PropertyEditor Control through Designer](Getting-Started_images/Getting-Started_img20.png)
+![Property editor control through designer in WindowsForms Diagram](getting-started_images/windowsforms-diagram-property-editor-through-designer.png)
 
 
 
@@ -771,7 +779,7 @@ The PropertyEditor control will be added to the designer and its dependent assem
 
 
 
-![PropertyEditor Control](Getting-Started_images/Getting-Started_img21.jpg)
+![Property editor control added through designer in WindowsForms Diagram](getting-started_images/windowsforms-diagram-property-editor-added-through-designer.jpg)
 
 
 
@@ -789,7 +797,7 @@ To create a PropertyEditor control using code:
    * Syncfusion.Shared.Base.dll
 3. Create a PropertyEditor control using the following code.
 
-
+{% capture codesnippet7 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -826,8 +834,10 @@ Me.Controls.Add(propertyEditor)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet7 | OrderList_Indent_Level_1 }}
 
-![PropertyEditor Control through Code](Getting-Started_images/Getting-Started_img22.png)
+![Property editor control through code in WindowsForms](getting-started_images/windowsforms-diagram-property-editor-added-through-code.png)
 
 
 
@@ -845,7 +855,7 @@ To create a [DocumentExplorer](https://help.syncfusion.com/cr/windowsforms/Syncf
 
 
 
-![DocumentExplorer Control through Designer](Getting-Started_images/Getting-Started_img23.png)
+![Document explorer control through designer in WindowsForms Diagram](getting-started_images/windowsforms-diagram-document-explorer-through-designer.png)
 
 
 
@@ -855,7 +865,7 @@ The DocumentExplorer control will be added to the designer and its dependent ass
 
 
 
-![DocumentExplorer Control](Getting-Started_images/Getting-Started_img24.jpg)
+![Document explorer control through project in WindowsForms Diagram](getting-started_images/windowsforms-diagram-document-explorer-through-project.jpg)
 
 
 
@@ -873,7 +883,7 @@ To create a DocumentExplorer control using code:
    * Syncfusion.Shared.Base.dll
 3. Create a DocumentExplorer control using the following code.
 
-
+{% capture codesnippet8 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -908,8 +918,10 @@ Me.Controls.Add(documentExplorer)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet8 | OrderList_Indent_Level_1 }}
 
-![DocumentExplorer Control through Code](Getting-Started_images/Getting-Started_img25.png)
+![Document explorer control through code in WindowsForms Diagram](getting-started_images/windowsforms-diagram-document-explorer-through-code.png)
 
 
 
@@ -957,11 +969,11 @@ Diagram Builder Functionalities
 
 Follow the below steps in order to open an existing diagram document
 
-1.  Add OpenFileDialog control to the Form. 
-2.  Set the Filter property of OpenFileDialog as Essential Diagram Palettes|*.edp|Visio Stencils|*.vss; *.vsx|Visio    Drawings(Shapes only)|*.vsd; *.vdx|All files|*.*. 
-3.  Add the below code snippet in your button click event.
+1. Add OpenFileDialog control to the Form. 
+2. Set the Filter property of OpenFileDialog as Essential Diagram Palettes|*.edp|Visio Stencils|*.vss; *.vsx|Visio    Drawings(Shapes only)|*.vsd; *.vdx|All files|*.*. 
+3. Add the below code snippet in your button click event.
 
-
+{% capture codesnippet9 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -975,12 +987,14 @@ this.diagram1.Refresh();
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet9 | OrderList_Indent_Level_1 }}
 
 The diagram1.LoadBinary() method loads the selected diagram file into diagram document.
 
 
 
-![Diagram Document](Getting-Started_images/Getting-Started_img26.jpeg)
+![Diagram document in WindowsForms](getting-started_images/windowsforms-diagram-document.jpeg)
 
 
 
@@ -994,8 +1008,7 @@ The diagram1.LoadBinary() method loads the selected diagram file into diagram do
    2.  Set the Filter property of SaveFileDialog as  Essential Diagram Files|*.edd|All files|*.*.
    3.  Add the following code snippet in your button click event.
 
-
-
+{% capture codesnippet10 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -1008,12 +1021,14 @@ this.diagram1.SaveBinary(this.FileName);
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet10 | OrderList_Indent_Level_1 }}
 
    The diagram1.SaveBinary() method saves the diagram file in the given filename.
 
 
 
-   ![Save a Diagram Document](Getting-Started_images/Getting-Started_img27.jpeg)
+   ![Save a Diagram document in WindowsForms](getting-started_images/windowsforms-diagram-save-document.jpeg)
 
 
 
@@ -1049,7 +1064,7 @@ if (dlgPageSetup.ShowDialog() == DialogResult.OK)
 {% endhighlight %}
 {% endtabs %}
 
-   ![print a Diagram Document](Getting-Started_images/Getting-Started_img28.jpeg)
+   ![Print a Diagram document in WindowsForms Diagram](getting-started_images/windowsforms-diagram-print-document.jpeg)
 
 
 2. Page Borders
@@ -1078,7 +1093,7 @@ if (diagram1 != null && diagram1.Model != null)
 {% endhighlight %}
 {% endtabs %}
 
-   ![Page Borders](Getting-Started_images/Getting-Started_img29.jpeg)
+   ![Page borders in WindowsForms Diagram](getting-started_images/windowsforms-diagram-page-borders.jpeg)
 
 
 
@@ -1110,7 +1125,7 @@ if (diagram1 != null && diagram1.Model != null)
 {% endtabs %}
 
 
-   ![Header and Footer](Getting-Started_images/Getting-Started_img30.jpeg)
+   ![Header and footer in WindowsForms Diagram](getting-started_images/windowsforms-diagram-header-and-footer.jpeg)
 
 
 4. Print Preview
@@ -1143,7 +1158,7 @@ if (diagram1 != null)
 {% endhighlight %}
 {% endtabs %}
 
-   ![Print Preview](Getting-Started_images/Getting-Started_img31.jpeg)
+   ![Print preview in WindowsForms Diagram](getting-started_images/windowsforms-diagram-print-preview.jpeg)
 
 
 
@@ -1226,7 +1241,7 @@ The following screenshot illustrates the pan and zoom tools.
 
 
 
-![Print](Getting-Started_images/Getting-Started_img32.jpeg)
+![Pan and zoom tool in WindowsForms Diagram](getting-started_images/windowsforms-diagram-pan-and-zoom-tool.jpeg)
 
 Pan & Zoom Tool
 
@@ -1277,7 +1292,7 @@ The following screen shot illustrates the Alignment tools.
 
 
 
-![Pan and Zoom Tool](Getting-Started_images/Getting-Started_img33.jpeg)
+![Alignment tool in WindowsForms Diagram](getting-started_images/windowsforms-diagram-alignment-tool.jpeg)
 
 
 
@@ -1329,7 +1344,7 @@ The following screen shot illustrates the Rotate tools.
 
 
 
-![Rotate Tools](Getting-Started_images/Getting-Started_img34.jpeg)
+![Rotate tools in WindowsForms Diagram](getting-started_images/windowsforms-diagram-rotate-tools.jpeg)
 
 Rotate Tools
 
@@ -1368,7 +1383,7 @@ The following screen shot illustrates the Resize tools.
 
 
 
-![Resize Tool](Getting-Started_images/Getting-Started_img35.jpeg)
+![Resize tool in WindowsForms Diagram](getting-started_images/windowsforms-diagram-resize-tool.jpeg)
 
 
 Resize Tools
@@ -1413,7 +1428,7 @@ The following screen shot illustrates the Nudge tools.
 
 
 
-![Nudge Tool](Getting-Started_images/Getting-Started_img36.jpeg)
+![Nudge tool in WindowsForms Diagram](getting-started_images/windowsforms-diagram-nudge-tool.jpeg)
 
 Nudge Tools
 
@@ -1452,7 +1467,7 @@ The following screen shot illustrates the Text Formatting tools.
 
 
 
-![Text Formatting](Getting-Started_images/Getting-Started_img37.jpeg)
+![Text formatting in WindowsForms Diagram](getting-started_images/windowsforms-diagram-text-formatting.jpeg)
 
  Text Formatting Tools
 
@@ -1541,7 +1556,7 @@ The following screen shot illustrates the Group and Order tools.
 
 
 
-![Group and Order Tool](Getting-Started_images/Getting-Started_img38.jpeg)
+![Group and order tool in WindowsForms Diagram](getting-started_images/windowsforms-diagram-group-and-order-tool.jpeg)
 
 
 
@@ -1592,7 +1607,7 @@ The following screen shot illustrates the drawing tools.
 
 
 
-![Drawing Tools](Getting-Started_images/Getting-Started_img39.png)
+![Drawing tools in WindowsForms Diagram](getting-started_images/windowsforms-diagram-drawing-tools.png)
 
 
 <table>
@@ -1690,7 +1705,7 @@ The following screen shot illustrates the Diagram Connector tools.
 
 
 
-![Diagram Connector Tools](Getting-Started_images/Getting-Started_img40.jpeg)
+![Diagram connector tools in WindowsForms Diagram](getting-started_images/windowsforms-diagram-connector-tools.jpeg)
 
 #### LineConnectorTool  
 
@@ -1899,7 +1914,7 @@ To create your own diagram in the diagram builder, follow the below given proced
 
 
 
-   ![PolyLineConnector Tool](Getting-Started_images/Getting-Started_img41.jpeg)
+   ![Poly line connector tool in WindowsForms Diagram](getting-started_images/windowsforms-diagram-poly-line-connector-tool.jpeg)
 
 
 
@@ -1911,7 +1926,7 @@ To create your own diagram in the diagram builder, follow the below given proced
 
 
 
-   ![Symbol palette](Getting-Started_images/Getting-Started_img42.jpeg)
+   ![Symbol palette in WindowsForms Diagram](getting-started_images/windowsforms-diagram-symbol-palette.jpeg)
 
 
 
@@ -1924,7 +1939,7 @@ A diagram is created using the Diagram Builder. You can use this diagram (.edd) 
 
 
 
-![Symbol Palette](Getting-Started_images/Getting-Started_img43.jpeg)
+![Adding symbol palette into associated palettes in WindowsForms Diagram](getting-started_images/windowsforms-diagram-adding-symbol-palette-into-associated-palettes.jpeg)
 
 
 
@@ -1950,7 +1965,7 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
 
 
-![Add new palette](Getting-Started_images/Getting-Started_img44.jpeg)
+![Add new palette in WindowsForms Diagram](getting-started_images/windowsforms-diagram-add-new-palette.jpeg)
 
 
 
@@ -1960,7 +1975,7 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
 
 
-![palette](Getting-Started_images/Getting-Started_img45.jpeg)
+![Palette in WindowsForms Diagram](getting-started_images/windwsforms-diagram-palette.jpeg)
 
 
 
@@ -1970,7 +1985,7 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
 
 
-![Add Symbol option](Getting-Started_images/Getting-Started_img46.png)
+![Add symbol option in WindowsForms Diagram](getting-started_images/windowsforms-diagram-add-symbol-option.png)
 
 
 
@@ -1980,13 +1995,13 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
 
 
-![property window](Getting-Started_images/Getting-Started_img47.jpeg)
+![Shapes using property window in WindowsForms Diagram](getting-started_images/windowsforms-diagram-property-window-shapes.jpeg)
 
 
 
 
 
-![property window](Getting-Started_images/Getting-Started_img48.jpeg)
+![Property window in WindowsForms Diagram](getting-started_images/windowsforms-diagram-property-window.jpeg)
 
 
 
@@ -1996,7 +2011,7 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
 
 
-![SymbolPalette dialog](Getting-Started_images/Getting-Started_img49.jpeg)
+![Symbol palette dialog in WindowsForms Diagram](getting-started_images/windowsforms-diagram-symbol-palette-dialog.jpeg)
 
 
 
@@ -2007,7 +2022,7 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
 
 
-![Custom Symbols](Getting-Started_images/Getting-Started_img50.jpeg)
+![Custom symbols in WindowsForms Diagram](getting-started_images/windowsforms-diagram-custom-symbols.jpeg)
 
 
 
@@ -2016,7 +2031,7 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 * Repeat the steps 3 to 7 for creating more symbols.
 * If you create symbols using more than one shapes, you need to group all the shapes into single symbol using the Group option in symbol designer.
 
- ![Group in Symbol Designer](Getting-Started_images/Getting-Started_img51.png)
+ ![Group in symbol designer in WindowsForms Diagram](getting-started_images/windowsforms-diagram-group-in-symbol-designer.png)
 
  
 
@@ -2024,7 +2039,7 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
 
 
-![Group in Symbol Designer](Getting-Started_images/Getting-Started_img52.jpeg)
+![Symbols in symbol palette in WindowsForms Diagram](getting-started_images/windowsforms-diagram-symbols-in-symbol-palette.jpeg)
 
 
 
@@ -2042,7 +2057,7 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
    Drag and Drop the Diagram control from the toolbox into the designer form to create a diagram using Designer.  
 
-   ![Initial Diagram](Getting-Started_images/Getting-Started_img53.png)
+   ![Initial Diagram in WindowsForms](getting-started_images/windowsforms-diagram-initial.png)
 
 
 
@@ -2091,6 +2106,7 @@ diagram.Location = new Point(20, 5);
 
 2. You can populate Nodes and Connectors in diagram automatically based on content from database by using binding APIs. To achieve this, you need a table in a database that have 2 columns, one representing ‘Id’ to uniquely identify objects, and one ‘ParentId’ representing relationship with the parent object. The following code example explains how to bind diagram with data from database by initializing the binding properties.
 
+{% capture codesnippet11 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -2129,11 +2145,12 @@ diagram1.EndUpdate();
 
 {% endhighlight %}
 {% endtabs %}
-
+{% endcapture %}
+{{ codesnippet11 | OrderList_Indent_Level_1 }}
 
 3. Use the following code example to establish the connection with the Database and retrieve the data in the form of DataTable.
 
-
+{% capture codesnippet12 %}
 {% tabs %}
 {% highlight vb %}
 
@@ -2151,7 +2168,8 @@ return dataTable;
 
 {% endhighlight %}
 {% endtabs %}
-
+{% endcapture %}
+{{ codesnippet12 | OrderList_Indent_Level_1 }}
 
 The following code example explains how to apply the layout for the data retrieved from the Database.
 
@@ -2175,6 +2193,6 @@ The following screenshot displays the organizational flow of diagram.
 
 
 
-![organizational flow](Getting-Started_images/Getting-Started_img54.png)
+![Organizational flow in WindowsForms Diagram](getting-started_images/windowsforms-diagram-organizational-flow.png)
 
 N> You can also explore our [WinForms Diagram example](https://github.com/syncfusion/winforms-demos/tree/master/diagram) that shows you how to render and configure the Diagram.

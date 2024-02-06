@@ -19,6 +19,6 @@ The ColorPickerButton allows .NET developers to provide a standard user interfac
 
 ## Key Features
 
-**Color Groups** - ColorUI has predefined set of colors named Standard, System, Custom and User.
+* **Color Groups** - ColorUI has predefined set of colors named Standard, System, Custom and User.
 
-**Selected Color** - You can choose or get selected color both interactively and programmatically.
+* **Selected Color** - You can choose or get selected color both interactively and programmatically.

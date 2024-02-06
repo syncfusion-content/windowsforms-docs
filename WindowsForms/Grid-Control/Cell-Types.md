@@ -410,7 +410,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-N> For more reference regarding this, refer the KB link over [here](https://www.syncfusion.com/kb/5949/how-to-control-the-number-of-visible-items-in-a-combobox-cell).
+N> For more reference regarding this, refer the KB link over [here](https://support.syncfusion.com/kb/article/5629/how-to-control-the-number-of-visible-items-in-a-combobox-cell-in-winforms-gridcontrol).
 
 ### Setting ComboBox in header cells
 It is also possible to place a ComboBox cell in header cells by just setting the `CellType` of the header to ComboBox and assign a valid data source. 
@@ -456,7 +456,7 @@ Me.gridControl1(0, 4).ChoiceList = items
 
 {% endhighlight %}
 {% endtabs %}
-N> To know more details and sample, refer the KB link over [here](https://www.syncfusion.com/kb/580/how-to-insert-a-combobox-in-a-header-cell-of-a-grid).
+N> To know more details and sample, refer the KB link over [here](https://support.syncfusion.com/kb/article/1738/how-to-insert-a-combobox-in-a-header-cell-of-a-grid-in-winforms-gridcontrol).
 
 ### RadioButton cell type
 `RadioButton` cell type displays a radio button in a grid cell. The choices of radio button are mutually exclusive. Like combobox, radio button values can be populated by using the `ChoiceList` or `DataSource` property.
@@ -560,7 +560,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-N> For sample and more information check the KB link over [here](https://www.syncfusion.com/kb/5708/how-to-customize-the-tab-name-of-the-coloruicontrol-cell-dropdown).
+N> For sample and more information check the KB link over [here](https://support.syncfusion.com/kb/article/5348/how-to-customize-the-tab-name-of-the-coloruicontrol-cell-dropdown-in-winforms-gridcontrol).
 
 ## Control cell type
 It is possible to add an arbitrary control in a grid cell through `Control` cell type. Each cells using this cell type requires to instantiate a control object and that object has to be assigned to the [style.Control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_Control) property. The following code illustrates how to set a cell type as `Control`.
@@ -591,7 +591,7 @@ Me.gridControl1(2, 2).CellType = "Control"
 ![Cell-Types_img14](Cell-Types_images/Cell-Types_img14.png)
 
 ### Inserting an animated image in cell
-It is possible to animate an image in grid cell by setting the cell type as `Control` and assigning it to a picture box control. To display the image as an animated one it is necessary to refresh the picture cell for a given time interval. For more details and sample please check the KB link over [here](https://www.syncfusion.com/kb/4502/how-to-insert-animated-image-to-a-grid-cell).
+It is possible to animate an image in grid cell by setting the cell type as `Control` and assigning it to a picture box control. To display the image as an animated one it is necessary to refresh the picture cell for a given time interval. For more details and sample please check the KB link over [here](https://support.syncfusion.com/kb/article/4336/how-to-insert-animated-image-to-a-grid-cell-in-winforms-gridcontrol).
 
 ## Currency cell type
 This cell type can be used to represent monetary values to achieve accuracy in the calculations. It will add the currency sign in the cell and attempt to parse only the number from the input. To customize the currency cells make use of the [GridStyleInfo](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html) properties.

@@ -14,11 +14,11 @@ This section will explain about creating simple GridGroupingControl and the over
 
 Essential Grid includes a trio of grid controls as well as many other controls that are used in conjunction with these three grids. Essential Grid works similar to Microsoft Excel and allows extremely detailed customization down to the cell level. Multi-level Undo / Redo, Shared Scrollbar support, Data / View separation, floating cells, more than 15 cell types, and unmatched extensibility are the unique features of the Essential Grid.
 
-[GridGroupingControl](https://help.syncfusion.com/windowsforms/gridgrouping/getting-started): A high performance grouping grid that offers very flexible support for grouping flat data sources as well as hierarchical data sources. This grid supports expressions fields, filters, multi-column sorting, grouping, nested tables/hierarchies, and custom summaries. It can use any [IList](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ilist?view=net-5.0) data source including [ADO.NET](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/) [DataSet](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-5.0)/[DataTables](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-5.0) and [IBindingList](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ibindinglist?view=net-5.0) objects.
+[GridGroupingControl](https://help.syncfusion.com/windowsforms/gridgrouping/getting-started): A high performance grouping grid that offers very flexible support for grouping flat data sources as well as hierarchical data sources. This grid supports expressions fields, filters, multi-column sorting, grouping, nested tables/hierarchies, and custom summaries. It can use any [IList](https://learn.microsoft.com/en-us/dotnet/api/system.collections.ilist?view=net-5.0) data source including [ADO.NET](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/) [DataSet](https://learn.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-5.0)/[DataTables](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-5.0) and [IBindingList](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ilistsource?view=net-5.0) objects.
 
-[GridDataBoundGrid](https://help.syncfusion.com/windowsforms/classic/databoundgrid/getting-started): A column oriented grid best suited for use with ADO.NET [DataSet](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-5.0)/[DataTables](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-5.0) data sources. If you are looking to bind with the `ADO.NET` data source without the grouping and hierarchical support then you can use GridDataBoundGrid. GridDataBoundGrid is marked as classic because all the features mentioned in this are available in `GridGroupingControl` with more efficiency and features.
+[GridDataBoundGrid](https://help.syncfusion.com/windowsforms/classic/databoundgrid/getting-started): A column oriented grid best suited for use with ADO.NET [DataSet](https://learn.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-5.0)/[DataTables](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-5.0) data sources. If you are looking to bind with the `ADO.NET` data source without the grouping and hierarchical support then you can use GridDataBoundGrid. GridDataBoundGrid is marked as classic because all the features mentioned in this are available in `GridGroupingControl` with more efficiency and features.
 
-[GridControl](https://help.syncfusion.com/windowsforms/grid-control/getting-started): A cell oriented grid that contain its own data. Does not need to be bound to a data source. Easily customize down to the cell level. Used in a [virtual manner](https://help.syncfusion.com/windowsforms/grid-control/virtual-grid#) such that, it can bind to any type of data source.
+[GridControl](https://help.syncfusion.com/windowsforms/grid-control/getting-started): A cell oriented grid that contain its own data. Does not need to be bound to a data source. Easily customize down to the cell level. Used in a [virtual manner](https://help.syncfusion.com/windowsforms/grid-control/virtual-grid) such that, it can bind to any type of data source.
 
 [SfDataGrid](https://help.syncfusion.com/windowsforms/datagrid/overview): Designed based on column-oriented architecture that provides support to customize the grid easily. Display collection of data in rows and columns.
 
@@ -65,7 +65,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td></tr>
 </table>
 
-N> The `*` denotes that by default, support is not provided to the Control. It will be added by having some customizations. The [Sorting](https://www.syncfusion.com/kb/454) and [Filtering](https://www.syncfusion.com/kb/4409/how-to-add-filter-in-grid-control) functionalities can be added to the `GridControl` by doing some customizations. 
+N> The `*` denotes that by default, support is not provided to the Control. It will be added by having some customizations. The [Sorting](https://support.syncfusion.com/kb/article/1515/how-to-implement-the-custom-icomparer-to-sort-a-column-in-the-gridcontrol) and [Filtering](https://support.syncfusion.com/kb/article/4292/how-to-add-filter-in-winforms-gridcontrol) functionalities can be added to the `GridControl` by doing some customizations. 
 
 For binding the different kind of data sources and support for filtering, sorting, grouping for flat and hierarchical data sources make use of the `GridGroupingControl`.
 
@@ -82,38 +82,39 @@ This section will explain how to create a simple GridGroupingControl in Windows 
 ### Adding GridGroupingControl through Designer
 GridGroupingControl can be added through designer by following the below steps.
 
-1.Create a new Windows Form Application.
+1. Create a new Windows Form Application.
 
-2.Drag and Drop GridGroupingControl from the toolbox into the designer page. 
+2. Drag and Drop GridGroupingControl from the toolbox into the designer page. 
 
 ![windows forms gridgroupingcontrol is dragged from toolbox](Getting-Started_images/Getting-Started_img1.png)
 
-3.Once drag drop the GridGroupingControl into the designer page, the GridGroupingControl will be added successfully into the application with the required libraries. The below mentioned assemblies will be added automatically into the application.
+3. Once drag drop the GridGroupingControl into the designer page, the GridGroupingControl will be added successfully into the application with the required libraries. The below mentioned assemblies will be added automatically into the application.
 
-* Syncfusion.Grid.Base.dll
-* Syncfusion.Grid.Grouping.Base.dll
-* Syncfusion.Grid.Grouping.Windows.dll
-* Syncfusion.Grid.Windows.dll
-* Syncfusion.Grouping.Base.dll
-* Syncfusion.Shared.Base.dll
-* Syncfusion.Shared.Windows.dll
+    * Syncfusion.Grid.Base.dll
+    * Syncfusion.Grid.Grouping.Base.dll
+    * Syncfusion.Grid.Grouping.Windows.dll
+    * Syncfusion.Grid.Windows.dll
+    * Syncfusion.Grouping.Base.dll
+    * Syncfusion.Shared.Base.dll
+    * Syncfusion.Shared.Windows.dll
 
 ![windows forms gridgroupingcontrol is dragged to designer page](Getting-Started_images/Getting-Started_img2.png)
 
 ### Adding GridGroupingControl through Code
 GridGroupingControl can be added through code-behind by following the below steps.
 
-1.Create a new Windows Form Application.
+1. Create a new Windows Form Application.
 
-2.Add the below assemblies into the project file
+2. Add the below assemblies into the project file
 
-* Syncfusion.Grid.Windows.dll
-* Syncfusion.Grid.Grouping.Windows.dll
-* Syncfusion.Grouping.Base.dll
-* Syncfusion.Shared.Base.dll
+    * Syncfusion.Grid.Windows.dll
+    * Syncfusion.Grid.Grouping.Windows.dll
+    * Syncfusion.Grouping.Base.dll
+    * Syncfusion.Shared.Base.dll
 
-3.Initialize a GridGroupingControl by using the below code in code behind.
+3. Initialize a GridGroupingControl by using the below code in code behind.
 
+{% capture codesnippet1 %}​
 {% tabs %}
 {% highlight c# %}
 //Initializing a new GridGroupingControl.
@@ -124,9 +125,12 @@ private Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl gridGroupingC
 Private gridGroupingControl1 As New Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl()
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4.Use the below code for adding the initialized GridGroupingControl to the application.
+4. Use the below code for adding the initialized GridGroupingControl to the application.
 
+{% capture codesnippet2 %}​
 {% tabs %}
 {% highlight c# %}
 //Add required size for the Grid.
@@ -139,6 +143,8 @@ Me.gridGroupingControl1.Size = New System.Drawing.Size(130, 80)
 Me.Controls.Add(Me. gridGroupingControl1)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Populating Data
 GridGroupingControl supports variety of data sources such as DataTables, DataSets, or any component that implement interfaces like IList, IBindingList, ITypedList, or IListSource. The data source can have multiple nested tables, which will be displayed hierarchically by GridGroupingControl. For assigning the data source to GridGroupingControl, [DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_DataSource) property needs to be used.

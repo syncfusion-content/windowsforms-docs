@@ -17,13 +17,13 @@ To create a StatusBarAdv control through designer,
 
 1. Drag and drop a StatusBarAdv control from the toolbox onto the form.
 
-   ![Create Status Bar Through designer](Overview_images/Overview_img60.jpeg) 
+   ![Create Status Bar through designer in WindowsForms application](overview_images/windowsforms-status-bar-designer.jpeg) 
 
 2. Set the desired background for the StatusBarAdv control by setting the desired values for properties that control the background in the properties window.
 3. Drag and drop controls onto the StatusBarAdv control. Add the StatusBarAdvPanel control to it. Set the PanelType property to the desired value, for all the StatusBarAdvPanel controls.
 4. Build and run the application.
 
-   ![Run the Application](Overview_images/Overview_img61.jpeg) 
+   ![Run the application in WindowsForms-Status Bar](overview_images/windowsforms-status-bar-run-application.jpeg) 
    
    
 ## Through code
@@ -34,6 +34,7 @@ To create a StatusBarAdv control programmatically,
 2. Add the Syncfusion.Shared.Base and Syncfusion.Tools.Windows assemblies to your application.
 3. Declare the StatusBarAdv and StatusBarAdvPanel controls.
 
+{% capture codesnippet1 %}​
 {% tabs %}
 {% highlight c# %}
 
@@ -53,9 +54,12 @@ Private statusBarAdvPanel3 As Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 4. Initialize the controls.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -75,9 +79,12 @@ Me.statusBarAdvPanel3 = New Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel()
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 5. Set the properties to customize the control's appearance, and add the control to the form.
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -123,7 +130,8 @@ Me.Controls.Add(Me.statusBarAdv1)
 
 {% endhighlight %}
 {% endtabs %}
-   
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}  
 6. Run the application. You will see the StatusBarAdv control docked to the bottom of the form. By default it will be docked to 'Bottom'.
 
    ![Create Status Bar Through Code](Overview_images/Overview_img62.jpeg) 

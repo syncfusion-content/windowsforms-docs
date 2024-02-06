@@ -19,7 +19,7 @@ EssentialChart for Windows Forms is a perfect solution for developers looking to
 
 Chart is used as a means to show the graphical representation of two values. For Example, a Line Chart can be used in health Statistic reports, in which it can show the rates over time or for a series of values, such as age-specific death rates. Logarithmic charts can be used in Share price charts where we plot between price and time. In logarithmic chart, we can identify the 'Proportional change in price' with respect to the 'Change in time'. We use 'Proportional change in price' to observe market sentiment. Market participants move share prices either up or down proportionally depending on how bullish or bearish they feel.
 
-![Chart Overview](Overview_images/Overview_img1.jpeg)
+![Overview in WindowsForms Chart](overview_images/windowsforms-chart-overview.jpeg)
 
 ### Key Features
 
@@ -98,7 +98,7 @@ Operating Systems</th></tr>
 
 This section gives you an idea of the different sections of a Chart control. Below is the image that illustrates various sections of the control and their description in detail below.
 
-![Chart Overview](Getting-Started_images/Getting-Started_img1.jpeg)
+![Control structure in WindowsForms Chart](getting-started_images/windowsforms-chart-control-structure.jpeg)
 
 ### Chart Control
 
@@ -144,7 +144,7 @@ Chart Area Shadow indicates the shadow of the chart area.
 
 {% seealso %}
 
-[Text](http://help.syncfusion.com/windowsforms/chart/chart-appearance#foreground-settings), [Chart Legend](http://help.syncfusion.com/windowsforms/chart/chart-legend-and-legend-items), [Chart Series](http://help.syncfusion.com/windowsforms/chart/chart-series), [Chart Area](http://help.syncfusion.com/windowsforms/chart/chart-area), [Axis Label Text Formatting](http://help.syncfusion.com/windowsforms/chart/chart-axes#axis-label-text-formatting), [Appearance and Positioning](https://help.syncfusion.com/windowsforms/chart/chart-appearance), [Customizing Label Text](http://help.syncfusion.com/windowsforms/chart/chart-axes#customizing-label-text), [Intersecting Labels](http://help.syncfusion.com/windowsforms/chart/chart-axes#intersecting-labels), [Grouping Labels](http://help.syncfusion.com/windowsforms/chart/chart-axes#grouping-labels)
+[Text](https://help.syncfusion.com/windowsforms/chart/chart-appearance#foreground-settings), [Chart Legend](https://help.syncfusion.com/windowsforms/chart/chart-legend-and-legend-items), [Chart Series](https://help.syncfusion.com/windowsforms/chart/chart-series), [Chart Area](https://help.syncfusion.com/windowsforms/chart/chart-area), [Axis Label Text Formatting](https://help.syncfusion.com/windowsforms/chart/chart-axes#axis-label-text-formatting-appearance-and-positioning), [Appearance and Positioning](https://help.syncfusion.com/windowsforms/chart/chart-appearance), [Customizing Label Text](https://help.syncfusion.com/windowsforms/chart/chart-axes#customizing-label-text), [Intersecting Labels](https://help.syncfusion.com/windowsforms/chart/chart-axes#intersecting-labels), [Grouping Labels](https://help.syncfusion.com/windowsforms/chart/chart-axes#grouping-labels)
 
 {% endseealso %}
 
@@ -173,7 +173,7 @@ Release Notes
 <td>Class Reference
 </td>
 <td>
-Click on this {{ '<http://help.syncfusion.com/cr/windowsforms>' | markdownify }} link.
+Click on this {{ '<https://help.syncfusion.com/cr/windowsforms/Syncfusion.html>' | markdownify }} link.
 
 Select Chart from the second text box. Namespaces will be listed out at the left side of the page.
 </td>

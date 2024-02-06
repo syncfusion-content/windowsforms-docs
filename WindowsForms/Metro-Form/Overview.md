@@ -27,4 +27,4 @@ documentation: ug
  
 ## Choose between different form controls
 
-You can refer to the different button controls [here](https://help.syncfusion.com/windowsforms/sfform/overview#choose-between-different-form-controls).
+You can refer to the different button controls [here](https://help.syncfusion.com/windowsforms/form/overview#choose-between-different-form-controls).

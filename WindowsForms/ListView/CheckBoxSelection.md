@@ -28,6 +28,7 @@ SfListView has the following modes for selection based on the check box state.
 
 * Default: don’t want to affect the selection while checking/unchecking the item CheckBox, you need to set `SfListView.CheckBoxSelectionMode` as Default.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 sfListView1.CheckBoxSelectionMode = CheckBoxSelectionMode.Default;
@@ -35,13 +36,16 @@ sfListView1.CheckBoxSelectionMode = CheckBoxSelectionMode.Default;
 {% highlight vb %}
 sfListView1.CheckBoxSelectionMode = CheckBoxSelectionMode.Default
 {% endhighlight %}
-{% endtabs %}         
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}         
 
 ![CheckBoxSelectionMode_images1](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img1.png)
 
 * SelectOnCheck: To select/deselect the items by using the CheckBox alone, set the [SfListView.CheckBoxSelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_CheckBoxSelectionMode) as SelectOnCheck. 
 Navigation, editing, and programmatic selection are not supported in this mode.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 sfListView1.CheckBoxSelectionMode = CheckBoxSelectionMode.SelectOnCheck;
@@ -50,11 +54,14 @@ sfListView1.CheckBoxSelectionMode = CheckBoxSelectionMode.SelectOnCheck;
 sfListView1.CheckBoxSelectionMode = CheckBoxSelectionMode.SelectOnCheck
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![CheckBoxSelectionMode_images2](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img2.png)
 
 * SynchronizeSelection: To synchronize the selection with IsChecked state, set the [SfListView.CheckBoxSelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_CheckBoxSelectionMode) as SynchronizeSelection. In this mode, you can select an item by checking the check box or select/deselect the item will check/uncheck the corresponding item checkbox.
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 sfListView1.CheckBoxSelectionMode = CheckBoxSelectionMode.SynchronizeSelection;
@@ -63,12 +70,15 @@ sfListView1.CheckBoxSelectionMode = CheckBoxSelectionMode.SynchronizeSelection;
 sfListView1.CheckBoxSelectionMode = CheckBoxSelectionMode.SynchronizeSelection
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 ![CheckBoxSelectionMode_images3](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img3.png)
 
 * CheckOnItemClick: To check or uncheck the item check box state by clicking the item, set the [SfListView.CheckBoxSelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_CheckBoxSelectionMode) as CheckOnItemClick.
 `MultiSimple` and `MultiExtended` selection mode were not supported in this mode.
 
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight c# %}
 sfListView1.CheckBoxSelectionMode = CheckBoxSelectionMode.CheckOnItemClick;
@@ -77,6 +87,8 @@ sfListView1.CheckBoxSelectionMode = CheckBoxSelectionMode.CheckOnItemClick;
 sfListView1.CheckBoxSelectionMode = CheckBoxSelectionMode.CheckOnItemClick
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 ![CheckBoxSelectionMode_images4](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img4.png)
 
@@ -225,7 +237,7 @@ sfListView1.Style.CheckBoxStyle.CheckedTickColor = Color.White
 ![CheckBoxSelectionMode_images8](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img8.png) 
  
 ## Conditional styling
-The SfListView allows the item check box customization by using [SfListView.DrawCheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html) event.
+The SfListView allows the item check box customization by using [SfListView.DrawCheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_DrawCheckBox) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -258,7 +270,7 @@ End Sub
 
 ### ItemChecking event
 
-The [ItemChecking](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html) event is raised while checking an item at the execution time by using ItemChecking event as follows:
+The [ItemChecking](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_ItemChecking) event is raised while checking an item at the execution time by using ItemChecking event as follows:
 
 *	`ItemData`: Gets the checked item data object.
 *	`ItemIndex`: Gets an index of checked item.
@@ -290,7 +302,7 @@ End Sub
 {% endtabs %}
 
 ### ItemChecked event
-The [ItemChecked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html) event will occur once checking process is completed for the checked item in the SfListView by using ItemChecked event.
+The [ItemChecked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_ItemChecked) event will occur once checking process is completed for the checked item in the SfListView by using ItemChecked event.
 
 The ItemChecked event used for the following use cases:
 

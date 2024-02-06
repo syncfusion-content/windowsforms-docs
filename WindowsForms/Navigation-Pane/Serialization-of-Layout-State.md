@@ -12,9 +12,10 @@ The Layout state of GroupBar can be saved and loaded using the [AppStateSerializ
 
 1. Include the required namespaces.
 
-   {% tabs %}
+{% capture codesnippet1 %}
+{% tabs %}
 
-   {% highlight C# %}
+{% highlight C# %}
 
 		using Syncfusion.Windows.Forms;
 
@@ -32,20 +33,23 @@ The Layout state of GroupBar can be saved and loaded using the [AppStateSerializ
 
 		Imports Syncfusion.Runtime.Serialization
 
-    {% endhighlight %}
+{% endhighlight %}
 
-	{% endtabs %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. Drag and drop a GroupBar control from the toolbox onto the form, add GroupBar Items using the GroupBar Item CollectionEditor and add two buttons to the form for 'Load' and 'Save' as shown below.
 
    ![Serialization](Overview_images/Overview_img43.jpeg)
 
-
 3. Store the layout information of the selected GroupBar Item in an XML file using the [AppStateSerializer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Runtime.Serialization.AppStateSerializer.html) class. In the Form_Closing and Save_Button click, call the following method,
 
-   {% tabs %}
+{% capture codesnippet2 %}
 
-   {% highlight C# %}
+{% tabs %}
+
+{% highlight C# %}
 
 		private void SaveState ()
 
@@ -117,15 +121,17 @@ The Layout state of GroupBar can be saved and loaded using the [AppStateSerializ
 
 		End Sub
 
-    {% endhighlight %}
+{% endhighlight %}
 
-	{% endtabs %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 4. Retrieve the persisted layout information from the XML file using the [AppStateSerializer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Runtime.Serialization.AppStateSerializer.html) class. In the Form_Load event and Load_Button click, call the following method,
 
-   {% tabs %}
-
-   {% highlight C# %}
+{% capture codesnippet3 %}
+{% tabs %}
+{% highlight C# %}
 
 		private void LoadState ()
 
@@ -210,9 +216,12 @@ The Layout state of GroupBar can be saved and loaded using the [AppStateSerializ
 
 		End Sub
 
-    {% endhighlight %}
+{% endhighlight %}
 
-	{% endtabs %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
+
 
 
 #### Output

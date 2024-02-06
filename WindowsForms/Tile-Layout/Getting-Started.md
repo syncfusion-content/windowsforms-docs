@@ -43,19 +43,19 @@ The [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.
 * Syncfusion.Tools.Base.dll
 * Syncfusion.Tools.Windows.dll
 
-![Search TileLayout control in tool box](Getting-Started_images/TileLayout-img1.png)
+![Search WindowsForms Tile Layout control in toolbox](getting-started_images/windowsforms-tile-layout-toolbox.png)
 
 **Adding LayoutGroup into TileLayout**
 
 [LayoutGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.LayoutGroup.html) can be added through `Groups Collection` in Smart Tags of [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html).
 
-![TileLayout control added by designer](Getting-Started_images/TileLayout-img2.png)
+![WindowsForms Tile Layout control added by designer](getting-started_images/windowsforms-tile-layout-added-by-designer.png)
 
 **Adding ImageStreamer into LayoutGroup**
 
 [ImageStreamer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ImageStreamer.html) can be added into LayoutGroup through the [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.LayoutGroup.html#Syncfusion_Windows_Forms_Tools_LayoutGroup_Items) collection in PropertyGrid. 
 
-![Adding tile images](Getting-Started_images/TileLayout-img3.png)
+![Adding images streamer in WindowsForms Tile Layout](getting-started_images/windowsforms-tile-layout-adding-image-streamer.png)
 
 ## Adding control manually using code
 
@@ -63,15 +63,16 @@ To add control manually in C#, follow the given steps:
 
 **Step 1** - Add the following required assembly references to the project:
 
-* Syncfusion.Grid.Base.dll
-* Syncfusion.Grid.Windows.dll
-* Syncfusion.Shared.Base.dll
-* Syncfusion.Shared.Windows.dll
-* Syncfusion.Tools.Base.dll
-* Syncfusion.Tools.Windows.dll
+        * Syncfusion.Grid.Base.dll
+        * Syncfusion.Grid.Windows.dll
+        * Syncfusion.Shared.Base.dll
+        * Syncfusion.Shared.Windows.dll
+        * Syncfusion.Tools.Base.dll
+        * Syncfusion.Tools.Windows.dll
 
 **Step 2** - Include the namespaces **Syncfusion.Windows.Forms.Tools**.
 
+{% capture codesnippet1 %}​
 {% tabs %}
 
 {% highlight C# %}
@@ -87,9 +88,12 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight  %}
 
 {% endtabs %} 
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 **Step 3** - Create [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html) control instance and add it to the form.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -109,6 +113,8 @@ Me.Controls.Add(tileLayout1)
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 **Adding LayoutGroup into TileLayout**
 
@@ -148,7 +154,7 @@ Me.tileLayout1.Controls.Add(Me.layoutGroup2)
 
 {% endtabs %}
 
-![Adding layout group by code](Getting-Started_images/TileLayout-img4.png)   
+![Adding group by code in WindowsForms Tile Layout](getting-started_images/windowsforms-tile-layout-group-by-code.png)   
 
 
 **Adding ImageStreamer into LayoutGroup**
@@ -231,4 +237,4 @@ Me.layoutGroup2.Controls.Add(Me.imageStreamer8)
 
 {% endtabs %}
        
-![Adding images to layout group](Getting-Started_images/TileLayout-img5.png)       
+![Adding images to Tile Layout Group in WindowsForms](getting-started_images/windowsforms-tile-layout-adding-images-to-group.png)       

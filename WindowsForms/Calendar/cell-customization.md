@@ -259,7 +259,7 @@ To customize the dates, use the following code example:
 
 ## ToolTip
 
-This support is used to display additional information such as text or image about a cell in calendar in form of tooltip.The `ToolTipOpeningEventArgs` provides the following data for the [ToolTipOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html) event of the calendar. All the [customization with tooltip](/windowsforms/sftooltip/appearance) will be reflected in tooltip of cell in SfCalendar.
+This support is used to display additional information such as text or image about a cell in calendar in form of tooltip.The `ToolTipOpeningEventArgs` provides the following data for the [ToolTipOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html) event of the calendar. All the [customization with tooltip](/windowsforms/tooltip/appearance) will be reflected in tooltip of cell in SfCalendar.
 
 
 * ToolTipInfo: This option helps to set more information such as text or image about cell in calendar.
@@ -349,7 +349,7 @@ This support is used to display additional information such as text or image abo
 
 * **Note**: This event fires only when [ShowToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_ShowToolTip) property value is true.
 
-![Tooltip option](cell-customization-images/ToolTip.png)
+![Tooltip option in WindowsForms Calendar](cell-customization-images/windowsforms-calendar-tooltip-option.png)
 
 ## Render cell on-demand
 
@@ -482,4 +482,4 @@ Me.SfCalendar1.DrawCell = (Me.SfCalendar1.DrawCell + SfCalendar1_DrawCell)
 
 {% endtabs %} 
 
-![Cell customization](cell-customization-images/CellCustomization.png)
+![Cell customization in WindowsForms Calendar](cell-customization-images/windowsforms-calendar-cell-customization.png)

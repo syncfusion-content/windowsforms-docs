@@ -19,15 +19,15 @@ Refer to this [documentation](https://help.syncfusion.com/windowsforms/installat
 
 ## Adding the CardLayout control via designer
 
-1) Create a new Windows Forms application in Visual Studio.
+1. Create a new Windows Forms application in Visual Studio.
 
-2) Add the `CardLayout` control to an application by dragging it from the toolbox to design view. The following required dependent assembly will be added automatically:
+2. Add the `CardLayout` control to an application by dragging it from the toolbox to design view. The following required dependent assembly will be added automatically:
 
-* Syncfusion.Shared.Base
+    * Syncfusion.Shared.Base
 
 ![Drag and drop CardLayout from toolbox](GettingStarted_images/GettingStarted_img1.jpeg)
 
-3) To add the form as a container control of `CardLayout`, click `Yes` in popup, from which it appears automatically before the CardLayout is added.
+3. To add the form as a container control of `CardLayout`, click `Yes` in popup, from which it appears automatically before the CardLayout is added.
 
 ![Alert to add CardLayout to form](GettingStarted_images/GettingStarted_img2.jpeg)
 
@@ -41,14 +41,15 @@ The child controls can be added to layout by dragging it from the toolbox to des
 
 The `CardLayout` control can be created programmatically using the following steps:
 
-1) Create a C# or VB application via Visual Studio.
+1. Create a C# or VB application via Visual Studio.
 
-2) Add the following assembly reference to the project:
+2. Add the following assembly reference to the project:
 
-* Syncfusion.Shared.Base.dll.
+    * Syncfusion.Shared.Base.dll.
 
-3) Include the required namespace.
+3. Include the required namespace.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -64,9 +65,12 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4) Create an instance of the `CardLayout` control, and then set `ContainerControl` as form.
+4. Create an instance of the `CardLayout` control, and then set `ContainerControl` as form.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -88,13 +92,16 @@ Me.cardLayout1.ContainerControl = Me
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ### Adding layout components
 
 The child controls can be added to layout by simply adding it to the form since the form is its container control.
 
-1) Add the main panel to layout by simply adding it to the form since the form is its container control.
+1. Add the main panel to layout by simply adding it to the form since the form is its container control.
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -127,9 +134,12 @@ Me.cardLayout1.ContainerControl = cardLayoutPanel
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-2) Add the child panel to layout by simply adding it to the main panel.
+2. Add the child panel to layout by simply adding it to the main panel.
 
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -190,9 +200,12 @@ Me.cardLayoutPanel.Controls.Add(Me.panel3)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-3) Navigate to the next or previous card using the Next and Previous methods. At run time, a particular card can be selected using the `SelectedCard` property.
+3. Navigate to the next or previous card using the Next and Previous methods. At run time, a particular card can be selected using the `SelectedCard` property.
 
+{% capture codesnippet5 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -219,6 +232,8 @@ Me.cardLayout1.SelectedCard = "image1"
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 ![Shows the selected card in Windows Forms CardLayout](GettingStarted_images/card.png)
 

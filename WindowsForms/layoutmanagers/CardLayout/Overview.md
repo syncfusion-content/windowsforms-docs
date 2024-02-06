@@ -23,12 +23,12 @@ N> `CardLayout` does not arrange the child components automatically like other l
 
 ## Key features
 
-**Card name**: Provides an option to set a unique card name to the child controls.
+* **Card name**: Provides an option to set a unique card name to the child controls.
 
-**Card index**: Provides an option to get the index of the previous or next card.
+* **Card index**: Provides an option to get the index of the previous or next card.
 
-**Image**: Provides an option to set images to the child controls.
+* **Image**: Provides an option to set images to the child controls.
 
-**Layout mode**: Provides an option to set layout modes such as default or fill.
+* **Layout mode**: Provides an option to set layout modes such as default or fill.
 
 

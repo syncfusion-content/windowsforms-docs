@@ -21,11 +21,11 @@ Me.sfDataGrid1.DataSource = collection.OrdersListDetails
 {% endhighlight %}
 {% endtabs %}
 
-If the data source implements [INotifyCollectionChanged](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged?view=net-5.0) interface, then SfDataGrid control will automatically refresh the UI when item is added, removed or while list cleared.
-When an item is added/removed in [ObservableCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?view=net-5.0), SfDataGrid automatically refresh the UI as `ObservableCollection` implements `INotifyCollectionChanged`. But when an item is added/removed in [List](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-5.0), SfDataGrid will not refresh the UI automatically.
+If the data source implements [INotifyCollectionChanged](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged?view=net-5.0) interface, then SfDataGrid control will automatically refresh the UI when item is added, removed or while list cleared.
+When an item is added/removed in [ObservableCollection](https://learn.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?view=net-5.0), SfDataGrid automatically refresh the UI as `ObservableCollection` implements `INotifyCollectionChanged`. But when an item is added/removed in [List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-5.0), SfDataGrid will not refresh the UI automatically.
 
 ## Binding to IEnumerable
-SfDataGrid control supports to bind any collection that implements the [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerable?view=net-5.0) interface. All the data operations such as sorting, grouping, filtering, summaries are supported when binding collection derived from `IEnumerable`.
+SfDataGrid control supports to bind any collection that implements the [IEnumerable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.ienumerable?view=net-5.0) interface. All the data operations such as sorting, grouping, filtering, summaries are supported when binding collection derived from `IEnumerable`.
 
 ## Binding with DataTable
 SfDataGrid control supports to bind the DataTable. SfDataGrid control automatically refresh the UI when binding DataTable as `DataSource` when rows are added, removed or cleared.
@@ -47,13 +47,13 @@ Below are the limitations when binding DataTable as `DataSource` to SfDataGrid.
 * [SfDataGrid.View.Filter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Data.DataTableCollectionViewWrapper.html) is not supported.
 * Advanced Filtering does not support Case Sensitive filtering.
 * [AddNewRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AddNewRowPosition) is not support when filtering is enabled.
-* [GridUnboundColumn.Expression](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridUnboundColumn.html#Syncfusion_WinForms_DataGrid_GridUnboundColumn_Expression) is not supported. This can be achieved by using the [DataColumn](https://docs.microsoft.com/en-us/dotnet/api/system.data.datacolumn?view=net-5.0) of DataTable by setting [DataColumn.Expression](https://docs.microsoft.com/en-us/dotnet/api/system.data.datacolumn.expression?view=net-5.0) property.
+* [GridUnboundColumn.Expression](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridUnboundColumn.html#Syncfusion_WinForms_DataGrid_GridUnboundColumn_Expression) is not supported. This can be achieved by using the [DataColumn](https://learn.microsoft.com/en-us/dotnet/api/system.data.datacolumn?view=net-5.0) of DataTable by setting [DataColumn.Expression](https://learn.microsoft.com/en-us/dotnet/api/system.data.datacolumn.expression?view=net-5.0) property.
 * [SfDataGrid.LiveDataUpdateMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_LiveDataUpdateMode) is not supported.
 
 ![SfDatagrid bounded with data table itemsSource in windowsforms](DataBinding_images/DataBinding_img1.jpeg)
 
 ## Binding to XML Data
-SfDataGrid can be bound to data from XML files. This can be achieved by using the [DataSet](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-5.0) object which provides the necessary methods that is used to read XML data into dataset. After loading the data, the SfDataGrid can be bind to this dataset by setting data binding properties such as `DataSource` and `DataMember` to the dataset and table name respectively. It is also possible to save the changes back to XML file.
+SfDataGrid can be bound to data from XML files. This can be achieved by using the [DataSet](https://learn.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-5.0) object which provides the necessary methods that is used to read XML data into dataset. After loading the data, the SfDataGrid can be bind to this dataset by setting data binding properties such as `DataSource` and `DataMember` to the dataset and table name respectively. It is also possible to save the changes back to XML file.
 
 {% tabs %}
 {% highlight c# %}
@@ -263,35 +263,35 @@ The following events are associated with `View`.
 * SourceCollectionChanged
 
 #### RecordPropertyChanged
-[RecordPropertyChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.ICollectionViewAdv.html) event is raised when the DataModel property value is changed, if the DataModel implements the [INotifyPropertyChanged](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?view=net-5.0) interface. The event receives with two arguments namely sender that handles the DataModel and [PropertyChangedEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.propertychangedeventargs?view=net-5.0) as object.
+[RecordPropertyChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.ICollectionViewAdv.html) event is raised when the DataModel property value is changed, if the DataModel implements the [INotifyPropertyChanged](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?view=net-5.0) interface. The event receives with two arguments namely sender that handles the DataModel and [PropertyChangedEventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.propertychangedeventargs?view=net-5.0) as object.
 `PropertyChangedEventArgs` has below property,
-* [PropertyName](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.propertychangedeventargs.propertyname?view=net-5.0) – It denotes the PropertyName of the changed value.
+* [PropertyName](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.propertychangedeventargs.propertyname?view=net-5.0) – It denotes the PropertyName of the changed value.
 
 #### CollectionChanged 
-[CollectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.CollectionViewAdv.html) event is raised whenever that is some change in Records / DisplayElements collection. The event receives two arguments namely sender that handles View object and [NotifyCollectionChangedEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.propertychangedeventargs?redirectedfrom=MSDN&view=netframework-4.8) as object.
+[CollectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.CollectionViewAdv.html) event is raised whenever that is some change in Records / DisplayElements collection. The event receives two arguments namely sender that handles View object and [NotifyCollectionChangedEventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.propertychangedeventargs?redirectedfrom=MSDN&view=netframework-4.8) as object.
 `NotifyCollectionChangedEventArgs` has below properties,
-* [Action](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.action?redirectedfrom=MSDN&view=netframework-4.8#System_Collections_Specialized_NotifyCollectionChangedEventArgs_Action) - It contains the current action. (i.e.) Add, Remove, Move, Replace, Reset.
+* [Action](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.action?redirectedfrom=MSDN&view=netframework-4.8#System_Collections_Specialized_NotifyCollectionChangedEventArgs_Action) - It contains the current action. (i.e.) Add, Remove, Move, Replace, Reset.
 
-* [NewItems](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newitems?redirectedfrom=MSDN&view=netframework-4.8#System_Collections_Specialized_NotifyCollectionChangedEventArgs_NewItems) - It contains the list of new items involved in the change.
+* [NewItems](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newitems?redirectedfrom=MSDN&view=netframework-4.8#System_Collections_Specialized_NotifyCollectionChangedEventArgs_NewItems) - It contains the list of new items involved in the change.
 
-* [OldItems](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.olditems?redirectedfrom=MSDN&view=netframework-4.8#System_Collections_Specialized_NotifyCollectionChangedEventArgs_OldItems) - It contains the list of old items affected by the Action.
+* [OldItems](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.olditems?redirectedfrom=MSDN&view=netframework-4.8#System_Collections_Specialized_NotifyCollectionChangedEventArgs_OldItems) - It contains the list of old items affected by the Action.
 
-* [NewStartingIndex](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newstartingindex?redirectedfrom=MSDN&view=netframework-4.8#System_Collections_Specialized_NotifyCollectionChangedEventArgs_NewStartingIndex) - It contains the index at which the change occurred.
+* [NewStartingIndex](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newstartingindex?redirectedfrom=MSDN&view=netframework-4.8#System_Collections_Specialized_NotifyCollectionChangedEventArgs_NewStartingIndex) - It contains the index at which the change occurred.
 
-* [OldStartingIndex](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.oldstartingindex?redirectedfrom=MSDN&view=netframework-4.8#System_Collections_Specialized_NotifyCollectionChangedEventArgs_OldStartingIndex) - It contains the index at which the Action occurred.
+* [OldStartingIndex](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.oldstartingindex?redirectedfrom=MSDN&view=netframework-4.8#System_Collections_Specialized_NotifyCollectionChangedEventArgs_OldStartingIndex) - It contains the index at which the Action occurred.
 
 #### SourceCollectionChanged
-[SourceCollectionChanged ](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.ICollectionViewAdv.html)event is raised when source collection is changed for example add or remove the collection. The event receives two arguments namely sender that handles [QueryableCollectionViewWrapper](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Data.QueryableCollectionViewWrapper.html) object and [NotifyCollectionChangedEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs?view=net-5.0) as object.
+[SourceCollectionChanged ](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.ICollectionViewAdv.html)event is raised when source collection is changed for example add or remove the collection. The event receives two arguments namely sender that handles [QueryableCollectionViewWrapper](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Data.QueryableCollectionViewWrapper.html) object and [NotifyCollectionChangedEventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs?view=net-5.0) as object.
 `NotifyCollectionChangedEventArgs` has below properties,
-* [Action](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.action?view=net-5.0) - It contains the current action. (i.e.) Add, Remove, Move, Replace and Reset.
+* [Action](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.action?view=net-5.0) - It contains the current action. (i.e.) Add, Remove, Move, Replace and Reset.
 
-* [NewItems](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newitems?view=net-5.0) - It contains the list of new items involved in the change.
+* [NewItems](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newitems?view=net-5.0) - It contains the list of new items involved in the change.
 
-* [OldItems](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.olditems?view=net-5.0) - It contains the list of old items affected by the Action.
+* [OldItems](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.olditems?view=net-5.0) - It contains the list of old items affected by the Action.
 
-* [NewStartingIndex](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newstartingindex?view=net-5.0) - It contains the index at which the change occurred.
+* [NewStartingIndex](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newstartingindex?view=net-5.0) - It contains the index at which the change occurred.
 
-* [OldStartingIndex](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.oldstartingindex?view=net-5.0) - It contains the index at which the Action occurred.
+* [OldStartingIndex](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.oldstartingindex?view=net-5.0) - It contains the index at which the Action occurred.
 
 The following is the methods that are associated with `View` which can be used to defer refresh the view.
 <table>
@@ -326,32 +326,32 @@ N>`View` has properties that already defined in SfDataGrid. It recommended setti
 ## Binding Data from ADO .NET Entity Framework
 SfDataGrid control supports to bind data from ADO.NET Entity Framework. This walk-through describe about binding data from ADO.NET Entity Framework and save back the changes to the database.
 **References:**
-[https://docs.microsoft.com/en-us/ef/ef6/fundamentals/databinding/winforms](https://docs.microsoft.com/en-us/ef/ef6/fundamentals/databinding/winforms) 
+[https://learn.microsoft.com/en-us/ef/ef6/fundamentals/databinding/winforms](https://learn.microsoft.com/en-us/ef/ef6/fundamentals/databinding/winforms) 
 
 ### Defining Data Model using Entity Framework 4.0
 To create Data Model using Entity Framework in Windows Forms application, follow the below steps.
 
-1) Right click the project, select **Add** option and then click **New Item**. 
+1. Right click the project, select **Add** option and then click **New Item**. 
 
-2) The **Add New Item** wizard appears, select “**ADO.NET Entity Data Mode**” from the Data node. 
+2. The **Add New Item** wizard appears, select “**ADO.NET Entity Data Mode**” from the Data node. 
 
-3) Name the file as **Model1.edmx** and then select **Add** button.  
+3. Name the file as **Model1.edmx** and then select **Add** button.  
 ![Choose the the ADO.Net entity model application from visual studio](DataBinding_images/DataBinding_img3.jpeg)
 
-4) The Entity Data Model Wizard appears. In the **Choose Model Contents**, select **EF Designer from database** option and then click **Next**.
+4. The Entity Data Model Wizard appears. In the **Choose Model Contents**, select **EF Designer from database** option and then click **Next**.
 
 ![Choose the model contents from visual studio](DataBinding_images/DataBinding_img4.jpeg)
 
-5) In the **Choose Your Data Connection**, select **Northwind** database from the drop-down list for data connection. To configure/modify connection, refer: [How to: Create Connections to SQL Server Databases](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)).
+5. In the **Choose Your Data Connection**, select **Northwind** database from the drop-down list for data connection. To configure/modify connection, refer: [How to: Create Connections to SQL Server Databases](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)).
 
 ![Choose the Northwind database from visual studio](DataBinding_images/DataBinding_img5.jpeg)
 
-6) Enable the **Save entity connection settings in App.config** as check box and then click **Next**.
-7) In the **Choose Your Database** Objects and Settings, expand the Tables node and select the **Order Details** table.
+6. Enable the **Save entity connection settings in App.config** as check box and then click **Next**.
+7. In the **Choose Your Database** Objects and Settings, expand the Tables node and select the **Order Details** table.
 
 ![Choose the database objects and setting from Northwind database through the visual studio](DataBinding_images/DataBinding_img6.jpeg)
 
-8) Click **Finish** button to add the **Model1.edmx** file to the application. The Entity diagram for the **Order Detail** table is opened.
+8. Click **Finish** button to add the **Model1.edmx** file to the application. The Entity diagram for the **Order Detail** table is opened.
 
 ![To show the entity diagram of database](DataBinding_images/DataBinding_img7.jpeg)
 
@@ -379,35 +379,35 @@ SfDataGrid control supports to bind data from LINQ to SQL. This walkthrough, des
 
 ### Adding Data Model using LINQ to SQL
 To create data model using LINQ to SQL in WF project follow the below steps.
-1) Right click on the project, Select **Add** option and then click **New Item**.
-2) The Add New Item wizard appears, Select **LINQ to SQL Classes** from the **Visual C#**.
-3) Name the file as **Northwind** and then select **Add** option to add the **Northwind.dbml** in the project.
+1. Right click on the project, Select **Add** option and then click **New Item**.
+2. The Add New Item wizard appears, Select **LINQ to SQL Classes** from the **Visual C#**.
+3. Name the file as **Northwind** and then select **Add** option to add the **Northwind.dbml** in the project.
 
 ![Choose the data  model from LINQ to SQL from the visual studio](DataBinding_images/DataBinding_img9.jpeg)
 
-4) Once the **Northwind.dbml** is added in the project, then the design view is opened.
+4. Once the **Northwind.dbml** is added in the project, then the design view is opened.
 
 ![Connect the database through the visual studio](DataBinding_images/DataBinding_img10.jpeg)
 
-5) New Database connection can be added by clicking add icon button in Server Explorer. 
+5. New Database connection can be added by clicking add icon button in Server Explorer. 
 
-6) The **Add Connection** wizard appeared with the default data source as **Microsoft SQL Server Database File (SqlClient**).
+6. The **Add Connection** wizard appeared with the default data source as **Microsoft SQL Server Database File (SqlClient**).
 
 ![Connect the database through the visual studio](DataBinding_images/DataBinding_img11.jpeg)
 
-7) Click **Change** to open the **Change Data Source** dialog box and select the type of data source as **Microsoft SQL Server Database File (SqlClient).**
+7. Click **Change** to open the **Change Data Source** dialog box and select the type of data source as **Microsoft SQL Server Database File (SqlClient).**
 
 ![Change the database through the visual studio](DataBinding_images/DataBinding_img12.jpeg)
 
-8) Select the Database file name and click on **Test Connection** to check the connection with the database.
+8. Select the Database file name and click on **Test Connection** to check the connection with the database.
 
 ![Choose the database through the visual studio](DataBinding_images/DataBinding_img13.jpeg)
 
-9) Once the connection is succeeded, click **OK** button to add database in the server explorer.
+9. Once the connection is succeeded, click **OK** button to add database in the server explorer.
 
 ![Connected databases in the projects](DataBinding_images/DataBinding_img14.jpeg)
 
-10) Drag **Shippers** table in to design view of **Northwind.dbml**. The Entity model diagram for **Shippers** table is generated once it is dropped in to design view.
+10. Drag **Shippers** table in to design view of **Northwind.dbml**. The Entity model diagram for **Shippers** table is generated once it is dropped in to design view.
 
 ### Loading Data from LINQ to SQL Classes
 
@@ -430,37 +430,38 @@ SfDataGrid control supports to load the data using ADO.NET. This walk-through, d
 
 ### Connecting Application to Databases
 To connect SQL database to WinForms application, refer the below MSDN link or follow the below steps,
-[https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)) 
+[https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)) 
 
-1) Select the **Connect to Database** option from the **Tools** menu.
+1. Select the **Connect to Database** option from the **Tools** menu.
 
-2) The Add Connection wizard appeared with the default data source as Microsoft SQL Server (SqlClient).
+2. The Add Connection wizard appeared with the default data source as Microsoft SQL Server (SqlClient).
 
 ![Choose the SqlClient to the prjoect through the visual studio](DataBinding_images/DataBinding_img16.jpeg)
 
-3) Click **Change** to open the **Change Data Source** dialog box and select the type of data source as **Microsoft SQL Server Database File (SqlClient).**
+3. Click **Change** to open the **Change Data Source** dialog box and select the type of data source as **Microsoft SQL Server Database File (SqlClient).**
 
 ![Change the SqlClient for the prjoect through the visual studio](DataBinding_images/DataBinding_img17.jpeg)
 
-4) Select the Database file name and click on **Test Connection** to check the connection with the database.
+4. Select the Database file name and click on **Test Connection** to check the connection with the database.
 
 ![Test the database connection through the visual studio](DataBinding_images/DataBinding_img18.jpeg)
 
-5) Once the connection is succeeded, click **OK** button to add database in the server explorer.
+5. Once the connection is succeeded, click **OK** button to add database in the server explorer.
 
 ![Connected databases in the projects](DataBinding_images/DataBinding_img19.jpeg)
 
-6) To get connection string for the database, right-click on the database and then click **Properties** option.
+6. To get connection string for the database, right-click on the database and then click **Properties** option.
 
 ### Loading Data from ADO.NET
 To access the data from data source using `ADO.NET`, follow the below steps.
 
-1) Create a connection through any of the [.NET Framework data provider](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/data-providers) based on the type of data source.
+1. Create a connection through any of the [.NET Framework data provider](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/data-providers) based on the type of data source.
 
-2) Fill the data from the database to a data set using the data adapter.
+2. Fill the data from the database to a data set using the data adapter.
 
-3) Set the `DataSource` as **Suppliers** table from the data set.
+3. Set the `DataSource` as **Suppliers** table from the data set.
 
+{% capture codesnippet1 %}​
 {% tabs %}
 {% highlight c# %}
 DataSet dataSet = new DataSet();
@@ -479,6 +480,8 @@ sqlAdapter.Fill(dataSet, "Suppliers")
 Me.sfDataGrid1.DataSource = dataSet.Tables("Suppliers")
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![SfDataGrid bounded with SQL Client in windowsforms](DataBinding_images/DataBinding_img20.jpeg)
 
@@ -488,43 +491,44 @@ SfDataGrid control supports to bind data from Microsoft Access database. This se
 ### Importing Microsoft Access Database
 To load the data from Microsoft Access database, follow the below steps.
 
-1) On the **View** menu, select **Other Windows > Data Sources**.
+1. On the **View** menu, select **Other Windows > Data Sources**.
 
-2) In the **Data Sources** window, click **Add New Data Source**, the DataSource configuration wizard will be opened.
+2. In the **Data Sources** window, click **Add New Data Source**, the DataSource configuration wizard will be opened.
 
 ![Choose the datasource type through the visual studio](DataBinding_images/DataBinding_img21.jpeg)
 
-3) Select **Database** on the **Choose a Data Source Type** page, and then select **Next**.
+3. Select **Database** on the **Choose a Data Source Type** page, and then select **Next**.
 
 ![Choose the datasource model through the visual studio](DataBinding_images/DataBinding_img22.jpeg)
 
-4) On the **Choose your Data Connection** page, select **New Connection** to configure a new data connection and Change the **Data source** to **.NET Framework Data Provider for OLE DB**.
+4. On the **Choose your Data Connection** page, select **New Connection** to configure a new data connection and Change the **Data source** to **.NET Framework Data Provider for OLE DB**.
 
 ![Choose the data connetion through the visual studio](DataBinding_images/DataBinding_img23.jpeg)
 
-5) In **OLE DB Provider**, select **Microsoft Office 12.0 Access Database Engine OLE DB Provider**. In **Server or file name**, specify the path and name of the .accdb file to which want to connect, and then select **OK**.
+5. In **OLE DB Provider**, select **Microsoft Office 12.0 Access Database Engine OLE DB Provider**. In **Server or file name**, specify the path and name of the .accdb file to which want to connect, and then select **OK**.
 
 ![Choose the data provider through the visual studio](DataBinding_images/DataBinding_img24.jpeg)
 
-6) Select **Next** on the **Choose your Data Connection** page.
+6. Select **Next** on the **Choose your Data Connection** page.
 
-7) Select **Next** on the **Save connection string to the Application Configuration file** page.
+7. Select **Next** on the **Save connection string to the Application Configuration file** page.
 
-8) Expand the **Tables** node on the **Choose your Database Objects** page.
+8. Expand the **Tables** node on the **Choose your Database Objects** page.
 
 ![Choose the data base objects through the visual studio](DataBinding_images/DataBinding_img25.jpeg)
 
-9) Select whatever tables or views in the dataset, and then select **Finish**.
+9. Select whatever tables or views in the dataset, and then select **Finish**.
 
 ### Loading Data from Microsoft Access Database
 To access the Microsoft Access database, follow the below steps.
 
-1) Create a **OleDbConnection** with the Microsoft Access database.
+1. Create a **OleDbConnection** with the Microsoft Access database.
 
-2) Fill the data from the database to a data set using the **OleDbDataAdapter**.
+2. Fill the data from the database to a data set using the **OleDbDataAdapter**.
 
-3) Set the `DataSource` as **Employees** table from the data set.
+3. Set the `DataSource` as **Employees** table from the data set.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 OleDbConnection oleConnection = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:\SfWinforms\SfDataGrid_UserGuide\Sample\DataBinding\Data\Employees.accdb;Persist Security Info=True");
@@ -545,6 +549,8 @@ oleConnection.Close()
 Me.sfDataGrid1.DataSource = employeeDataSet.Tables(“Employees”)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![SfDataGrid bounded with MS Access in windowsforms](DataBinding_images/DataBinding_img26.jpeg)
 N> You can also explore our [WinForms DataGrid example](https://github.com/syncfusion/winforms-demos/tree/master/datagrid) that shows how to render the DataGrid in Windows Forms.

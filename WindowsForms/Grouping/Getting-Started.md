@@ -21,7 +21,7 @@ This section illustrates the step-by-step procedure to create the following plat
 
 1. Open Microsoft Visual Studio. Go to File menu and click New Project. In the New Project dialog, select Windows Forms Application template, name the project and click OK. 
 
-   ![Getting-Started_images1](Getting-Started_images/Getting-Started_img1.jpeg)
+   ![WindowsForms Grouping Creating a Windows Application](Getting-Started_images/Getting-Started_img1.jpeg)
 
 
 
@@ -41,7 +41,7 @@ To know how to deploy a web application, refer the _ASP.NET Behind the scenes_ s
 
 
 
-   ![Getting-Started_images2](Getting-Started_images/Getting-Started_img2.jpeg)
+   ![WindowsForms Grouping Creating an ASP.NET Application](Getting-Started_images/Getting-Started_img2.jpeg)
 
 
 
@@ -132,7 +132,7 @@ Data Files-If you have .xml, .MDB, or other data files, ensure that they have su
 
 Refer to the document in the following path, for step by step process of Syncfusion assemblies’ deployment in ASP.NET.
 
-[http://www.syncfusion.com/support/user/uploads/webdeployment_c883f681.pdf](http://www.syncfusion.com/support/user/uploads/webdeployment_c883f681.pdf)
+[http://www.syncfusion.com/support/user/uploads/webdeployment_c883f681.pdf](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/support/user/uploads/webdeployment_c883f681.pdf)
 
 N> Application with Essential Grouping needs the following dependent assemblies for deployment.
 

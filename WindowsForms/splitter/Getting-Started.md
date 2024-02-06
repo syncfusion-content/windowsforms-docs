@@ -19,7 +19,7 @@ This section briefly describes how to design the SplitterControl in the Windows 
 1. Create a new Windows Forms Application Project in VS IDE through the New Project Wizard.
 2. Drag and drop the SplitterControl in the Form from the Toolbox.
 
-![Getting-Started_img1](Getting-Started_images/Getting-Started_img1.png)
+![Getting Started with WindowsForms Splitter](getting-started_images/windowsforms-splitter-getting-started.png)
 
 
 
@@ -29,6 +29,7 @@ To add SplitterControl to the Windows Forms Application through the following co
 
 1. Include the namespaces Syncfusion.Windows.Forms and Syncfusion.Windows.Forms.Tools.
 
+   {% capture codesnippet1 %}
    {% tabs %}
 
    {% highlight C# %}
@@ -53,10 +54,13 @@ To add SplitterControl to the Windows Forms Application through the following co
    {% endhighlight %}
 
    {% endtabs %}
+   {% endcapture %}
+   {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 
 2. Create an instance of the SplitterControl and add it to the Form.
 
+   {% capture codesnippet2 %}
    {% tabs %}
 
    {% highlight C# %}
@@ -82,6 +86,8 @@ To add SplitterControl to the Windows Forms Application through the following co
    {% endhighlight %}
 
    {% endtabs %}
+   {% endcapture %}
+   {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 
 

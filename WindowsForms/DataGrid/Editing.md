@@ -37,7 +37,7 @@ Me.sfDataGrid.Columns(0).AllowEditing = True
 **Note:**The `GridColumn.AllowEditing` has the high priority than the `SfDataGrid.AllowEditing`.
 ![Windows forms datagrid Editing](Editing_images/Editing_Image1.png)
 
-### Entering into Edit Mode
+## Entering into Edit Mode
 The current cell can be enter into edit mode by pressing &lt;kbd&gt;F2&lt;/kbd&gt; key or clicking (touch also supported) the cell. The edit mode of the cell can be changed to the single click or double click by setting the [EditMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_EditMode) property.
 
 {%tabs%}
@@ -51,7 +51,7 @@ Me.sfDataGrid.EditMode = EditMode.DoubleClick
 {% endhighlight %}
 {%endtabs%}
 
-### Cursor Placement
+## Cursor Placement
 When the cell enters into edit mode, cursor is placed based on [EditorSelectionBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_EditorSelectionBehavior) property.
 The following types of [EditorSelectionBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Enums.EditorSelectionBehavior.html) is available,
 
@@ -89,14 +89,15 @@ void sfDataGrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEventArg
 }
 {% endhighlight %}
 {% highlight vb %}
-Private Me.sfDataGrid.CurrentCellBeginEdit += AddressOf sfDataGrid_CurrentCellBeginEdit
+AddHandler Me.sfDataGrid1.CurrentCellBeginEdit, AddressOf sfDataGrid_CurrentCellBeginEdit
 
 Private Sub sfDataGrid_CurrentCellBeginEdit(ByVal sender As Object, ByVal e As CurrentCellBeginEditEventArgs)
-	'Cancel the editing of the particular column.
-	If e.DataColumn.GridColumn.MappingName = "ProductName" Then
-		e.Cancel = True
-	End If
+    'Cancel the editing of the particular column.
+    If e.DataColumn.GridColumn.MappingName = "ProductName" Then
+        e.Cancel = True
+    End If
 End Sub
+
 {% endhighlight %}
 {% endtabs %}
 

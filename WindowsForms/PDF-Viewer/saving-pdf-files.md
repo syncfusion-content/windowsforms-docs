@@ -51,10 +51,8 @@ namespace SaveEventsDemo
         public Form1()
         {
             InitializeComponent();
-
             //Wire the `BeginSave` event.
             pdfViewerControl1.BeginSave += PdfViewerControl1_BeginSave;
-
             //Load the PDF file.
             pdfViewerControl1.Load("../../Data/HTTP Succinctly.pdf");
         }
@@ -88,10 +86,8 @@ namespace SaveEventsDemo
         public Form1()
         {
             InitializeComponent();
-
             //Wire the `EndSave` event.
             pdfViewerControl1.EndSave += PdfViewerControl1_EndSave;
-
             //Load the PDF file.
             pdfViewerControl1.Load("../../Data/HTTP Succinctly.pdf");
         }

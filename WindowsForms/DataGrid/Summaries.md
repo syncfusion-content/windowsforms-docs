@@ -1108,7 +1108,7 @@ Me.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow1)
 ### Formatting Summary Value
 
 The summary value can be formatted by setting the appropriate format after the aggregate function followed by colon(:) in [GridSummaryColumn.Format](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryColumn.html#Syncfusion_WinForms_DataGrid_GridSummaryColumn_Format) property.
-In the below code snippet `UnitPrice` column summary is formatted using `c` format specifier. Refer [here](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings) to know about how to set different format.
+In the below code snippet `UnitPrice` column summary is formatted using `c` format specifier. Refer [here](https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings) to know about how to set different format.
 
 {% tabs %}
 {% highlight c# %}
@@ -1461,10 +1461,10 @@ Me.sfDataGrid.TableSummaryRows.Add(tableSummaryRow1)
 
 ![Windows forms datagrid showing custom summary](SfDataGrid_Summaries_UG_images/summaries21.png)
 
-You can download the custom summaries demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Custom_Summaries-1592567908.zip).
+You can download the custom summaries demo [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Custom_Summaries-1592567908.zip).
 
 ## See also
 
-[How to show the total summary value in DateTime format using custom aggregate in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9604)
+[How to show the total summary value in DateTime format using custom aggregate in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/8530/how-to-show-the-total-summary-value-in-datetime-format-using-custom-aggregate-in-winforms)
 
-[How to calculate the summary value based on other column summary value in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/8810)
+[How to calculate the summary value based on other column summary value in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/7893/how-to-calculate-the-summary-value-based-on-other-column-summary-value-in-winforms-datagrid)

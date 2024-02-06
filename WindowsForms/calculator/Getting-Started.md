@@ -42,40 +42,46 @@ The [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.
 
 To add the control manually in C#, follow the given steps:
 
-**1.** Add the following required assembly references to the project:
+1. Add the following required assembly references to the project:
  
-  * Syncfusion.Grid.Base
-  * Syncfusion.Grid.Windows
-  * Syncfusion.Shared.Base
-  * Syncfusion.Shared.Windows
-  * Syncfusion.Tools.Base 
-  * Syncfusion.Tools.Windows
+    * Syncfusion.Grid.Base
+    * Syncfusion.Grid.Windows
+    * Syncfusion.Shared.Base
+    * Syncfusion.Shared.Windows
+    * Syncfusion.Tools.Base 
+    * Syncfusion.Tools.Windows
 
-**2.** Include the [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) namespace **Syncfusion.Windows.Forms.Tools;**.
+2. Include the [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) namespace **Syncfusion.Windows.Forms.Tools;**.
 
-  {% tabs %}
-  {% highlight C# %}
-  using Syncfusion.Windows.Forms.Tools;
-  {% endhighlight %}
-  {% highlight VB %}
-  Imports Syncfusion.Windows.Forms.Tools
-  {% endhighlight %}
-  {% endtabs %} 
+{% capture codesnippet1 %}
+{% tabs %}
+{% highlight C# %}
+using Syncfusion.Windows.Forms.Tools;
+{% endhighlight %}
+{% highlight VB %}
+Imports Syncfusion.Windows.Forms.Tools
+{% endhighlight %}
+{% endtabs %} 
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-**3.** Create a [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) instance, and add it to the form.
+3. Create a [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) instance, and add it to the form.
 
-  {% tabs %}
-  {% highlight C# %}
-  CalculatorControl calculatorControl = new CalculatorControl();
-  calculatorControl1.Size = new Size(300, 250);
-  this.Controls.Add(calculatorControl);
-  {% endhighlight %}
-  {% highlight VB %}
-  Dim calculatorControl As CalculatorControl = New CalculatorControl
-  calculatorControl1.Size = New Size(300, 250)
-  Me.Controls.Add(calculatorControl)
-  {% endhighlight %}
-  {% endtabs %}
+{% capture codesnippet2 %}
+{% tabs %}
+{% highlight C# %}
+CalculatorControl calculatorControl = new CalculatorControl();
+calculatorControl1.Size = new Size(300, 250);
+this.Controls.Add(calculatorControl);
+{% endhighlight %}
+{% highlight VB %}
+Dim calculatorControl As CalculatorControl = New CalculatorControl
+calculatorControl1.Size = New Size(300, 250)
+Me.Controls.Add(calculatorControl)
+{% endhighlight %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![wf calculator control](Overview_images/Overview_img112.jpeg) 
 

@@ -13,22 +13,22 @@ The GridList control provides a very rich way to display a list of items in mult
 
 ## Key features
 
-**Data populating** - Supports populating data from any kind of the data source.
+* **Data populating** - Supports populating data from any kind of the data source.
 
-**Styling** - Extensive support for customizing the cell style of grid.
+* **Styling** - Extensive support for customizing the cell style of grid.
 
-**Selection** - Provides support for single and multiple row selections.
+* **Selection** - Provides support for single and multiple row selections.
 
-**Tooltip** - Supports displaying the comment text on mouse hovering of cells.
+* **Tooltip** - Supports displaying the comment text on mouse hovering of cells.
 
-**Resizing** - Supports resize the column width and row height based on the cell content.
+* **Resizing** - Supports resize the column width and row height based on the cell content.
 
-**Visual styles** - Provides support varies types of visual styles to provide the look and feel for the grid.
+* **Visual styles** - Provides support varies types of visual styles to provide the look and feel for the grid.
 
-**Virtual mode** - Provides support to loading the data on-demand with high performance in grid. 
+* **Virtual mode** - Provides support to loading the data on-demand with high performance in grid. 
 
-**Formulas support** - Provides support entering the algebraic, arithmetic expression using formulas.
+* **Formulas support** - Provides support entering the algebraic, arithmetic expression using formulas.
 
-**Drop-down** - Provides support to combined with the ComboBoxBase control and displays the control as drop down.
+* **Drop-down** - Provides support to combined with the ComboBoxBase control and displays the control as drop down.
 
-**Touch support** - Provides supports to selection, swiping in touch devices.
+* **Touch support** - Provides supports to selection, swiping in touch devices.

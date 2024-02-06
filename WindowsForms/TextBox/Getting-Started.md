@@ -29,18 +29,19 @@ Create new Windows Forms Project in Visual Studio to display TextBoxExt with dif
 
 The [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control can be added to the application by dragging it from the toolbox and dropping it in designer. The required assembly references will be added automatically.
 
-![Drag and drop TextBoxExt from toolbox](Creating-TextBoxExt_images/Creating-TextBoxExt_img1.png)
+![Drag and drop TextBoxExt from toolbox in WindowsForms application](creating-textboxext_images/windowsforms-textbox-drag-and-drop.png)
 
 ## Adding the TextBoxExt control via code
 
 In order to add control manually, do the below steps,
 
-1) Add the following assembly reference to the project.
+1. Add the following assembly reference to the project.
 
-* Syncfusion.Shared.Base
+    * Syncfusion.Shared.Base
 
-2) Include the required namespace.
+2. Include the required namespace.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -56,9 +57,12 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4) Create the [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control instance, and add it to the form.
+3. Create the [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control instance, and add it to the form.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -78,8 +82,10 @@ Me.Controls.Add(textBoxExt1)
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![Show the text in WPF TextBoxExt](Creating-TextBoxExt_images/TextBoxExt_control.png)
+![Show the text in WindowsForms TextBox](creating-textboxext_images/windowsforms-textbox-show-the-text.png)
 
 ## Size
 

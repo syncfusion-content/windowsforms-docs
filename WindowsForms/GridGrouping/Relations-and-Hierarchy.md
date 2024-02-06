@@ -10,12 +10,12 @@ documentation: ug
 # Relations and Hierarchy in Windows Forms GridGrouping
 GridGroupingControl can display nested tables in a hierarchy using master-detail configuration. In a hierarchical view, all the tables in the data source are inter-connected via relations. Generally a relation between any two tables can take any of the following forms: `1:1`, `1:n`, `n:1` or `n:n`.
 
-A GridGroupingControl can automatically detect [DataRelations](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/dataset-datatable-dataview/adding-datarelations) in a [dataset](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-5.0) for display. By default, `Relation` is created for each relation found in dataset. Hence, the data relations defined in a dataset are sufficient enough for the grid to form relations. No additional code is required in this case.
+A GridGroupingControl can automatically detect [DataRelations](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/dataset-datatable-dataview/adding-datarelations) in a [dataset](https://learn.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-5.0) for display. By default, `Relation` is created for each relation found in dataset. Hence, the data relations defined in a dataset are sufficient enough for the grid to form relations. No additional code is required in this case.
 
 With nested tables, each record in the parent table will have an associated set of records in the child table. Every record in the relation is provided with a `+/-` button called `RecordPlusMinus` that can be expanded (as well as collapsed) to bring the underlying records in the child table into view. The number of tables that can be nested with relations using a grid is `unlimited`.
 
 ## Adding Relations
-The relations of the table can be defined by adding it to the [TableDescriptor.Relations](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableDescriptor_Relations) collection. By default the GridGroupingControl will create a relation (RelatedMasterDetails) for each `DataRelation` found in a `DataSet`. Relations can either be related foreign key tables or nested child tables that can be expanded and collapsed. Each entry in this collection is owned by[RelationDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridRelationDescriptor.html) that stores details of a relation. All the `RelationDescriptors` for a given table is managed by RelationDescriptor Collection which is returned by `TableDescriptor.Relations` property.
+The relations of the table can be defined by adding it to the [TableDescriptor.Relations](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableDescriptor_Relations) collection. By default the GridGroupingControl will create a relation (RelatedMasterDetails) for each `DataRelation` found in a `DataSet`. Relations can either be related foreign key tables or nested child tables that can be expanded and collapsed. Each entry in this collection is owned by[RelationDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridRelationDescriptor.html) that stores details of a relation. All the `RelationDescriptors` for a given table is managed by RelationDescriptor Collection which is returned by `TableDescriptor.Relations` property.
 
 [TableDescriptor.RelationChildColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html) collection is internally initialized and contains child key fields of the [RelationDescriptor.RelationKeys](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridRelationDescriptor.html) collection of a [RelationKind.RelatedMasterDetails](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridRelationDescriptor.html) relation. You should not modify this collection.
 [TableDescriptor.PrimaryKeyColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html) collection defines fields that form a unique primary key for the table. By default, `PrimaryKeyColumns` collection is initialized from the child key fields of the `RelationDescriptor.RelationKeys` collection of a `RelationKind.ForeignKeyReference` relation. If the table is not a foreign table and `UniqueConstraint` for a data table is present, the collection is initialized with fields from that `UniqueConstraint`. Users can also manually modify the collection. If the table is the foreign table of a `RelationKind.ForeignKeyReference` relation, the parent table uses the fields that are defined in the `PrimaryKeyColumns` collection to look-up and identify records in the foreign table.
@@ -25,7 +25,7 @@ After binding the hierarchical dataset to the grid, user could find that [TableD
 
 ![Relations-and-Hierarchy_img1](Relations-and-Hierarchy_images/Relations-and-Hierarchy_img1.png)
 
-The following [GridRelationDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridRelationDescriptor.html) properties are used to set up the relations in GridGroupingControl.
+The following [GridRelationDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridRelationDescriptor.html) properties are used to set up the relations in GridGroupingControl.
 
 **Name**                 - Specifies the relation name.<br/>
 **ChildTableName**       - Specifies the name of the ChildTable.<br/>
@@ -50,8 +50,8 @@ It is a Master-Details relation where matching keys in a columns of the parent a
 
 This section demonstrates how to manually specify master-detail relations between three independent tables that have primary key and foreign key column in common.
 
-1.Setup three data tables that have primary and foreign key columns in common.
-
+1. Setup three data tables that have primary and foreign key columns in common.
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 private int numberParentRows = 5;
@@ -179,9 +179,11 @@ Private Function GetGrandChildTable() As DataTable
 End Function
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2.Manually set up relationships between tables and add relation to the parent and child tables.
-
+2. Manually set up relationships between tables and add relation to the parent and child tables.
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 DataTable parentTable = GetParentTable();
@@ -231,9 +233,11 @@ childToGrandChildRelationDescriptor.RelationKeys.Add("childID", "ChildID")
 parentToChildRelationDescriptor.ChildTableDescriptor.Relations.Add(childToGrandChildRelationDescriptor)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-3.Register the data tables with[Engine.SourceListSet](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridEngine.html) so that [RelationDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridRelationDescriptor.html) can resolve the name. 
-
+3. Register the data tables with[Engine.SourceListSet](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridEngine.html) so that [RelationDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridRelationDescriptor.html) can resolve the name. 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 // Register any DataTable/IList with SourceListSet, so that RelationDescriptor can resolve the name
@@ -248,9 +252,11 @@ Me.gridGroupingControl1.Engine.SourceListSet.Add("MyChildTable", childTable)
 Me.gridGroupingControl1.Engine.SourceListSet.Add("MyGrandChildTable", grandChildTable)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-4.Finally, bind hierarchical data source, which has been created through the above steps to a grid by assigning parent table to the data source.
-
+4. Finally, bind hierarchical data source, which has been created through the above steps to a grid by assigning parent table to the data source.
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.DataSource = parentTable;
@@ -259,6 +265,8 @@ this.gridGroupingControl1.DataSource = parentTable;
 Me.gridGroupingControl1.DataSource = parentTable
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 While running the sample the tables are connected with Master-Details relation as of follows,
 
@@ -278,8 +286,8 @@ A foreign key reference relation can be set up between the lists by defining a r
 
 The following steps demonstrate this process.
 
-1.Create a collection named `USStates` in which each entry stores `USState` object.
-
+1. Create a collection named `USStates` in which each entry stores `USState` object.
+{% capture codesnippet5 %}
 {% tabs %}
 {% highlight c# %}
 //US States Collection.
@@ -475,9 +483,11 @@ Public Class USState
 End Class
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-2.Create an object of `USStates` and add this object into the[SourceListSet](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridEngine.html) with a lookup name.
-
+2. Create an object of `USStates` and add this object into the[SourceListSet](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridEngine.html) with a lookup name.
+{% capture codesnippet6 %}
 {% tabs %}
 {% highlight c# %}
 USStatesCollection usStates = USStatesCollection.CreateDefaultCollection();
@@ -488,9 +498,11 @@ Dim usStates As USStatesCollection = USStatesCollection.CreateDefaultCollection(
 Me.gridGroupingControl1.Engine.SourceListSet.Add("USStates", usStates)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
 
-3.Creates a DataTable with the Key from USState as one of the columns.
-
+3. Creates a DataTable with the Key from USState as one of the columns.
+{% capture codesnippet7 %}
 {% tabs %}
 {% highlight c# %}
 DataTable table = new DataTable();
@@ -520,9 +532,11 @@ For i As Integer = 0 To 24
 Next i
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet7 | OrderList_Indent_Level_1 }}
 
-4.Establish Foreign key Reference relationship.
-
+4. Establish Foreign key Reference relationship.
+{% capture codesnippet8 %}
 {% tabs %}
 {% highlight c# %}
 GridTableDescriptor mainTd = this.gridGroupingControl1.TableDescriptor;
@@ -578,6 +592,8 @@ Me.gridGroupingControl1.DataSource = table
 mainTd.Name = "ForeignKeyReference"
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet8 | OrderList_Indent_Level_1 }}
 
 ![Relations-and-Hierarchy_img3](Relations-and-Hierarchy_images/Relations-and-Hierarchy_img3.png)
 
@@ -585,7 +601,7 @@ mainTd.Name = "ForeignKeyReference"
 &lt;Install_Location&gt;\Syncfusion\EssentialStudio[Version_Number]\Windows\Grid.Grouping.Windows\Samples\Relation And Hierarchy\Foreign-Key Reference Demo
 
 #### ForeignKey Helper 
-The foreign key relations can be easily added to the grid by using the [GridForeignKeyHelper](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridForeignKeyHelper.html). It is used to create the foreign key look up with a single method call instead of going through all the steps described above.
+The foreign key relations can be easily added to the grid by using the [GridForeignKeyHelper](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridForeignKeyHelper.html). It is used to create the foreign key look up with a single method call instead of going through all the steps described above.
 
 The GridForeignKeyHelper class exposes a static method called [SetupForeignTableLookUp](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridForeignKeyHelper.html#Syncfusion_GridHelperClasses_GridForeignKeyHelper_SetupForeignTableLookUp_Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_System_String_System_Data_DataTable_System_String_System_String_) that accepts GridGroupingControl, main table, foreign table, main table column, foreign table value column and foreign table display column and sets up the Foreign Key relation using these parameter values.
 
@@ -605,7 +621,8 @@ It is a unique relation kind offered by the grouping engine. It is a foreign key
 
 The following steps illustrates the creation of `ForeignKeyKeyWords` relation.
 
-1.Create two data tables, Customers and Items, and add a list of records into them.
+1. Create two data tables, Customers and Items, and add a list of records into them.
+{% capture codesnippet9 %}
 {% tabs %}
 {% highlight c# %}
 private int numberParentRow = 6;
@@ -691,9 +708,11 @@ Private Function GetChildTable() As DataTable
 End Function
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet9 | OrderList_Indent_Level_1 }}
 
-2.Register the child table (Items) into the `SourceListSet` of the grouping engine.
-
+2. Register the child table (Items) into the `SourceListSet` of the grouping engine.
+{% capture codesnippet10 %}
 {% tabs %}
 {% highlight c# %}
 DataTable parentTable = GetParentTable();
@@ -706,9 +725,11 @@ Dim childTable As DataTable = GetChildTable()
 Me.gridGroupingControl1.Engine.SourceListSet.Add("Items", childTable)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet10 | OrderList_Indent_Level_1 }}
 
-3.Assign the data source for the GridGroupingControl.
-
+3. Assign the data source for the GridGroupingControl.
+{% capture codesnippet11 %}
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.DataSource = parentTable;
@@ -717,9 +738,11 @@ this.gridGroupingControl1.DataSource = parentTable;
 Me.gridGroupingControl1.DataSource = parentTable
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet11 | OrderList_Indent_Level_1 }}
 
-4.Establish `ForeignKeyKeyWords` relationship between the tables.
-
+4. Establish `ForeignKeyKeyWords` relationship between the tables.
+{% capture codesnippet12 %}
 {% tabs %}
 {% highlight c# %}
 GridRelationDescriptor childRelation = new GridRelationDescriptor();
@@ -744,6 +767,8 @@ childRelation.ChildTableDescriptor.AllowNew = True
 Me.gridGroupingControl1.TableDescriptor.Relations.Add(childRelation)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet12 | OrderList_Indent_Level_1 }}
 ![Relations-and-Hierarchy_img4](Relations-and-Hierarchy_images/Relations-and-Hierarchy_img4.png)
 
 **Sample Location:**
@@ -754,8 +779,8 @@ It is an object reference relation for looking up values from a strong typed col
 
 The following steps demonstrate creating process of List item reference relation.
 
-1.Create a collection named Countries in which each entry stores a Country object.
-
+1. Create a collection named Countries in which each entry stores a Country object.
+{% capture codesnippet13 %}
 {% tabs %}
 {% highlight c# %}
 //Countries Collection.
@@ -949,9 +974,11 @@ Public Class Country
 End Class
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet13 | OrderList_Indent_Level_1 }}
 
-2.Create an object of `USStates` and add this object into the `SourceListSet` with a lookup name.
-
+2. Create an object of `USStates` and add this object into the `SourceListSet` with a lookup name.
+{% capture codesnippet14 %}
 {% tabs %}
 {% highlight c# %}
 CountriesCollection countries = CountriesCollection.CreateDefaultCollection();
@@ -962,9 +989,11 @@ Dim countries As CountriesCollection = CountriesCollection.CreateDefaultCollecti
 Me.gridGroupingControl1.Engine.SourceListSet.Add("Countries", countries)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet14 | OrderList_Indent_Level_1 }}
 
-3.Create a data table with one of the columns type as Country.
-
+3. Create a data table with one of the columns type as Country.
+{% capture codesnippet15 %}
 {% tabs %}
 {% highlight c# %}
 DataTable table = new DataTable();
@@ -992,9 +1021,11 @@ For i As Integer = 0 To 24
 Next i
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet15 | OrderList_Indent_Level_1 }}
 
-4.Establish the `ForeignKeyReference` relationship.
-
+4. Establish the `ForeignKeyReference` relationship.
+{% capture codesnippet16 %}
 {% tabs %}
 {% highlight c# %}
 GridTableDescriptor mainTd = this.gridGroupingControl1.TableDescriptor;
@@ -1049,6 +1080,8 @@ Me.gridGroupingControl1.DataSource = table
 mainTd.Name = "ListItemReference"
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet16 | OrderList_Indent_Level_1 }}
 
 ![Relations-and-Hierarchy_img5](Relations-and-Hierarchy_images/Relations-and-Hierarchy_img5.png)
 
@@ -1060,8 +1093,8 @@ This relation can be used to map nested strong typed collection inside a parent 
 
 The following steps are used to create the `UniformChildList` Relation,
 
-1.Create a class (ChildObj) whose instances form the child table records.
-
+1. Create a class (ChildObj) whose instances form the child table records.
+{% capture codesnippet17 %}
 {% tabs %}
 {% highlight c# %}
 public class ChildObj : INotifyPropertyChanged
@@ -1183,9 +1216,11 @@ Public Class ChildObj
 End Class
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet17 | OrderList_Indent_Level_1 }}
 
-2.Create another class (ParentObj) that contains a reference to the above class (ChildObj). The instances of this class make the parent records. Both the classes implement `INotifyPropertyChanged` interface in order to get notified of any property changes.
-
+2. Create another class (ParentObj) that contains a reference to the above class (ChildObj). The instances of this class make the parent records. Both the classes implement `INotifyPropertyChanged` interface in order to get notified of any property changes.
+{% capture codesnippet18 %}
 {% tabs %}
 {% highlight c# %}
 public class ParentObj : INotifyPropertyChanged
@@ -1332,9 +1367,11 @@ Public Class ParentObj
 End Class
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet18 | OrderList_Indent_Level_1 }}
 
-3.Generate the collection using `BindingList` class, which implements [ListChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Collections.DataTableWrapperList.html) events in itself so that the grid can listen to those events when the list is changed. Add few items into the collection.
-
+3. Generate the collection using `BindingList` class, which implements [ListChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Collections.DataTableWrapperList.html) events in itself so that the grid can listen to those events when the list is changed. Add few items into the collection.
+{% capture codesnippet19 %}
 {% tabs %}
 {% highlight c# %}
 BindingList<ParentObj> topList = new BindingList<ParentObj>();
@@ -1371,9 +1408,11 @@ For i As Integer = 0 To 4
 Next i
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet19 | OrderList_Indent_Level_1 }}
 
-4.Assign the above collection to the data source of GridGroupingControl.
-
+4. Assign the above collection to the data source of GridGroupingControl.
+{% capture codesnippet20 %}
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.DataSource = topList;
@@ -1382,9 +1421,11 @@ this.gridGroupingControl1.DataSource = topList;
 Me.gridGroupingControl1.DataSource = topList
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet20 | OrderList_Indent_Level_1 }}
 
-5.Establish UniformChildList relation kind.
-
+5. Establish UniformChildList relation kind.
+{% capture codesnippet21 %}
 {% tabs %}
 {% highlight c# %}
 GridRelationDescriptor relation = new GridRelationDescriptor();
@@ -1411,6 +1452,8 @@ Me.gridGroupingControl1.AddGroupDropArea(childTable)
 childTable.TableDescriptor.GroupedColumns.Add("Field1")
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet21 | OrderList_Indent_Level_1 }}
 
 The following screenshot will be the outcome of the above steps,
 
@@ -1512,7 +1555,7 @@ End Sub
 {% endtabs %}
 
 ## Notify Adding Relation 
-The [QueryAddRelation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridEngine.html) event is invoked for every relation that is being added to the [RelationDescriptorCollection](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridRelationDescriptorCollection.html). By setting `e.Cancel` to `true`, user can avoid specific relations being added.
+The [QueryAddRelation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridEngine.html) event is invoked for every relation that is being added to the [RelationDescriptorCollection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridRelationDescriptorCollection.html). By setting `e.Cancel` to `true`, user can avoid specific relations being added.
 
 {% tabs %}
 {% highlight c# %}

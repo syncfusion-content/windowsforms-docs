@@ -16,8 +16,8 @@ The [GradientPanelExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Wi
 
 ## Key Features
 
-**Styles** - Provides different set of styles to the background. The styles are Pattern, Solid, Gradient, and None.
+* **Styles** - Provides different set of styles to the background. The styles are Pattern, Solid, Gradient, and None.
 
-**Gradient Style** - Provides different sets of styles to the Gradient. The styles are None, ForwardDiagonal, BackwardDiagonal, Horizontal, Vertical, PathRectangle, and PathEllipse.
+* **Gradient Style** - Provides different sets of styles to the Gradient. The styles are None, ForwardDiagonal, BackwardDiagonal, Horizontal, Vertical, PathRectangle, and PathEllipse.
 
-**Primitives** - Provides option to add different types of primitives in the borders. The types are Collapse, Image, Text, and Host.
+* **Primitives** - Provides option to add different types of primitives in the borders. The types are Collapse, Image, Text, and Host.

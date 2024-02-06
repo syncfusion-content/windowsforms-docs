@@ -30,8 +30,8 @@ Smith chart control can be added through designer by following the below steps.
 
 * Once you drop the control into the designer page, smith chart control will be added successfully along with the required assemblies. The below mentioned assemblies will be added automatically into the application.
 
-1. Syncfusion.SfSmithChart.WinForms
-2. Syncfusion.Core.WinForms.
+    1. Syncfusion.SfSmithChart.WinForms
+    2. Syncfusion.Core.WinForms.
 
 ![Assmblies added image](GettingStarted_images/GettingStarted_img2.jpeg)
 
@@ -54,6 +54,7 @@ Smith chart control can be added through code behind by following the below step
 
 * Also include the below name space.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -69,6 +70,8 @@ Imports Syncfusion.WinForms.SmithChart
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![Add the assemblies for render the smith chart control](GettingStarted_images/GettingStarted_img4.jpeg)
 

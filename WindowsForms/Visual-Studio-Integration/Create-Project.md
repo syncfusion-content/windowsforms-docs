@@ -14,25 +14,27 @@ Syncfusion provides the Visual Studio Project Template for the Syncfusion WinFor
 
 I> The Syncfusion Windows Forms templates are available from v14.3.0.49. 
 
+>WinForms Project Template works seamlessly with Visual Studio 2015 or lower. For the Visual Studio 2017 or later versions, it is recommended to use a [WinForms Template Studio](https://help.syncfusion.com/windowsforms/visual-studio-integration/template-studio).
+
 Use the following steps to create the Syncfusion Windows Forms project through the Visual Studio Project Template. 
 
-> Before use the Syncfusion WinForms Project Template, check whether the **WinForms Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2017 or lower and for Visual Studio 2019 by clicking on the Extensions -> Manage Extensions -> Installed.If this extension not installed, please install the extension by follow the steps from the [download and installation](https://help.syncfusion.com/windowsforms/visual-studio-integration/vs2019-extensions/download-and-installation/) help topic.
+> Check whether the **WinForms Extensions - Syncfusion** are installed or not in Visual Studio 2015 or lower by going to **Tools -> Extensions and Updates -> Installed**. If this extension not installed, please install the extension by follow the steps from the [download and installation](https://help.syncfusion.com/windowsforms/visual-studio-integration/download-and-installation) help topic.
 
 1. To create a Syncfusion Windows Forms project, follow either one of the options below:  
     
    **Option 1:**  
-   Click **Extensions >Syncfusion Menu** and choose **Essential Studio for WinForms > Create New Syncfusion Project…**  in **Visual Studio**.
+   Click **Syncfusion Menu** and choose **Essential Studio for WinForms > Create New Syncfusion Project…**  in **Visual Studio**.
 
-   ![Choose Syncfusion Windows Forms Application via Syncfusion menu](Project-Template-images\Syncfusion_Menu_ProjectTemplate.png)
+   ![Choose Syncfusion Windows Forms Application via Syncfusion menu](Project-Template-images\Syncfusion-menu.png)
 
-   N> In Visual Studio 2017 or lower, you can see the Syncfusion menu directly in the Visual Studio menu.
+   N> In Visual Studio 2015 or lower, you can see the Syncfusion menu directly in the Visual Studio menu.
 
    **Option 2:**  
     Choose **File -> New -> Project**. Opens a new dialog to create a new project. You can obtain the templates provided by Syncfusion for WinForms by filtering the project type with Syncfusion or by using the Syncfusion keyword in the search option
 
    ![Choose Syncfusion Windows Forms Application from Visual Studio new project dialog](Project-Template-images\Syncfusion-Project-Template-Gallery2019-1.png)
 
-   In Visual Studio 2017 or lower, Select File > New > Project and navigate to Syncfusion > Windows > Syncfusion Windows Forms Application in Visual Studio.
+   In Visual Studio 2015 or lower, Select File > New > Project and navigate to Syncfusion > Windows > Syncfusion Windows Forms Application in Visual Studio.
 
    ![Choose Syncfusion Windows Forms Application from Visual Studio new project dialog](Project-Template-images\Syncfusion-Project-Template-Gallery-1.png)
 
@@ -44,9 +46,7 @@ Use the following steps to create the Syncfusion Windows Forms project through t
   
    ![Syncfusion Windows Forms project configuration wizard](Project-Template-images\Syncfusion-Project-Template-Gallery2019-2.png)
 
-   N> .NET 6.0 version is available from v19.4.0.38 and support from Visual Studio 2022. 
-
-   In Visual Studio 2017 or lower, Syncfusion Windows Forms Application project configuration wizard.
+   In Visual Studio 2015 or lower, Syncfusion Windows Forms Application project configuration wizard.
 
    ![Syncfusion Windows Forms project configuration wizard](Project-Template-images\Syncfusion-Project-Template-Gallery-2.png)
                                                      
@@ -54,13 +54,11 @@ Use the following steps to create the Syncfusion Windows Forms project through t
 
    **Project Type:** Select the project type, either .NET Framework or .NET Core.
 
-   N> Project type selection option will be available only from Visual Studio 2019 and later in Syncfusion Windows Forms Project template configuration. The .NET Core 3.1 and .NET 5.0 option will be listed in project type only when the .NET Core 3.1 and .NET 5.0 setup has been installed.
-
    **Language:** Select the language, either CSharp or VB.
 
    **Reference From:** Choose the assembly location such as NuGet, GAC Location, or Essential Studio installed location, from where the assembly is added to the project.
 
-   N> Installed location and GAC option will be available only when the Syncfusion Essential Windows Forms setup has been installed. You can use NuGet option without installing the Syncfusion Essential Windows Forms setup. Also, the GAC option will not be available when you choose .NET 5.0 and .NET Core 3.1 from project type option in Visual Studio 2019.
+   N> Installed location and GAC option will be available only when the Syncfusion Essential Windows Forms setup has been installed. You can use NuGet option without installing the Syncfusion Essential Windows Forms setup.
 
    **Installed ES Build Version:** Choose the build version to add the corresponding version assemblies to the project.
 

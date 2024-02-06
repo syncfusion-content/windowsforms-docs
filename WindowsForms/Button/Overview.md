@@ -32,14 +32,14 @@ Following are the key features of the SfButton:
 Syncfusion WinForms suite comes up with the following different buttons:
 
 * [SfButton](https://www.syncfusion.com/winforms-ui-controls/button)
-* [ButtonAdv](https://help.syncfusion.com/wpf/buttonadv/overview)
+* [ButtonAdv](https://help.syncfusion.com/wpf/button/overview)
 * [ButtonEdit](https://www.syncfusion.com/winforms-ui-controls/buttonedit)
 * [ToggleButton](https://www.syncfusion.com/winforms-ui-controls/toggle-button)
 * [SplitButton](https://www.syncfusion.com/winforms-ui-controls/split-button)
 
 ### SfButton
 
-[SfButton](https://help.syncfusion.com/windowsforms/sfbutton/overview) is an advanced button control capable of displaying text and image with various customizations. This provides options to customize the text, image, border, and appearance in all states of the button.
+[SfButton](https://help.syncfusion.com/windowsforms/button/overview) is an advanced button control capable of displaying text and image with various customizations. This provides options to customize the text, image, border, and appearance in all states of the button.
 
 ### ButtonAdv
 
@@ -51,11 +51,11 @@ The [Button Edit](https://help.syncfusion.com/windowsforms/buttonedit/overview) 
 
 ### ToggleButton
 
-The [ToggleButton](https://help.syncfusion.com/windowsforms/togglebutton/overview) control allows you to toggle between two states (active and inactive) opposite to each other in terms of behavior.
+The [ToggleButton](https://help.syncfusion.com/windowsforms/toggle-button/overview) control allows you to toggle between two states (active and inactive) opposite to each other in terms of behavior.
 
 ### SplitButton
 
-The [SplitButton](https://help.syncfusion.com/windowsforms/splitbutton/overview) control allows you to create drop-down button-like interface that is a combination of regular button and drop-down list. You can use this control when you need a single control with multiple options. For example, you can use this control to create a button to set font and list available in the font family of drop-down list.
+The [SplitButton](https://help.syncfusion.com/windowsforms/split-button/overview) control allows you to create drop-down button-like interface that is a combination of regular button and drop-down list. You can use this control when you need a single control with multiple options. For example, you can use this control to create a button to set font and list available in the font family of drop-down list.
 
 ### SfButton vs ButtonAdv
 
@@ -193,7 +193,7 @@ The following list of features are in SfButton over ButtonAdv.
 Appearance customization
 </td>
 <td>
-Changes the {{'[appearance](https://help.syncfusion.com/windowsforms/sfbutton/appearance#customizing-appearance-based-on-button-state)'| markdownify }} such as back color, fore color, border, and image in all button states (hover, pressed, focus and disable states).
+Changes the {{'[appearance](https://help.syncfusion.com/windowsforms/button/appearance#customizing-appearance-based-on-button-state)'| markdownify }} such as back color, fore color, border, and image in all button states (hover, pressed, focus and disable states).
 
 </td>
 </tr>
@@ -202,7 +202,7 @@ Changes the {{'[appearance](https://help.syncfusion.com/windowsforms/sfbutton/ap
 Animation image
 </td>
 <td>
-Loads the {{'[GIF](https://help.syncfusion.com/windowsforms/sfbutton/appearance#animating-the-image)'| markdownify }} image.
+Loads the {{'[GIF](https://help.syncfusion.com/windowsforms/button/appearance#animating-the-image)'| markdownify }} image.
 
 </td>
 </tr>
@@ -221,7 +221,7 @@ Spacing between image and text
 
 </td>
 <td>
-Adjusts space between image and text. Refer to {{'[here](https://help.syncfusion.com/windowsforms/sfbutton/button-types#spacing-between-text-and-image)'| markdownify }} for details. 
+Adjusts space between image and text. Refer to {{'[here](https://help.syncfusion.com/windowsforms/button/button-types#spacing-between-text-and-image)'| markdownify }} for details. 
 </td>
 </tr>
 <tr>
@@ -229,7 +229,7 @@ Adjusts space between image and text. Refer to {{'[here](https://help.syncfusion
 Wrap Text
 </td>
 <td>
-Wraps the text by using the {{'[WrapText](https://help.syncfusion.com/windowsforms/sfbutton/button-content#wrapping-the-text)'| markdownify }} property in SfButton.
+Wraps the text by using the {{'[WrapText](https://help.syncfusion.com/windowsforms/button/button-content#wrapping-the-text)'| markdownify }} property in SfButton.
 
 </td>
 </tr>
@@ -238,7 +238,7 @@ Wraps the text by using the {{'[WrapText](https://help.syncfusion.com/windowsfor
 Text Trimming
 </td>
 <td>
-Trims the text by using the {{'[AllowEllipse](https://help.syncfusion.com/windowsforms/sfbutton/button-content#trimming-and-showing-ellipsis-character)'| markdownify }} property.
+Trims the text by using the {{'[AllowEllipse](https://help.syncfusion.com/windowsforms/button/button-content#trimming-and-showing-ellipsis-character)'| markdownify }} property.
 
 </td>
 </tr>

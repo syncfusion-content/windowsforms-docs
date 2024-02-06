@@ -10,7 +10,7 @@ documentation: ug
 # Getting Started with Windows Forms xp toolbar (XPToolbar)
 
 >**Important**
-Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your Windows Forms application to use our components.
+Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion license key in your Windows Forms application to use our components.
 
 This section provides a quick overview for working with the **XPToolbar** control in a WinForms application.
 
@@ -79,7 +79,7 @@ The XPToolbar control can be added through code by following the below steps.
    {System Drive}: \Program Files (x86) \ Syncfusion\Essential Studio\ {Platform} \ {Build Version Number} \ precompiledassemblies \ {Framework Version Number}
 
 2. The below code snippets adds a XPToolbar control to the application.
-
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -133,7 +133,8 @@ Me.Controls.Add(Me.panel1)
 
 {% endhighlight %}
 {% endtabs %}
-
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![Add the Toolbar](GettingStarted_Images/XPToolbar6.png)
 

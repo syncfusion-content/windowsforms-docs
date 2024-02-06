@@ -12,8 +12,16 @@ documentation: ug
 
 This section briefly describes you on how to design a MultiSelectionComboBox control in a Windows Forms Application.
 
+* Assembly deployment
 * Adding a MultiSelectionComboBox Control
 * Configuring the MultiSelectionComboBox Control
+
+## Assembly deployment
+
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#multiselectioncombobox) section to get the list of assemblies or NuGet package details which needs to be added as reference to use the control in any application.
+
+[Check here](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to find more details about on how to install nuget packages in Windows Forms application.
+
 
 ## Adding a MultiSelectionComboBox control
 
@@ -33,6 +41,7 @@ To add MultiSelectionComboBox control to a Windows Forms application through cod
 
 * Include the namespaces “Syncfusion.Windows.Forms” and “Syncfusion.Windows.Forms.Tools”.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -50,9 +59,12 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 * Create an instance of the MultiSelectionComboBox control and add it to the Form.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -73,3 +85,5 @@ Me.Controls.Add(Me.MultiSelectionComboBox1)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}

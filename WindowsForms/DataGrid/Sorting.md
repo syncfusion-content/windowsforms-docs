@@ -37,7 +37,7 @@ End users can sort the column by clicking column header cell. Once the columns g
 
 ![UI Sorting in SfDataGrid windowsforms](Sorting_images/Sorting_Image1.png)
 
-### Adding Sort Columns
+## Adding Sort Columns
 
 The sorting can be applied programmatically by adding or removing the `SortColumnDescription` in [SfDataGrid.SortColumnDescriptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SortColumnDescriptions) collection.
 {% tabs %}
@@ -59,7 +59,7 @@ Me.sfDataGrid1.SortColumnDescriptions.Add(sortColumnDescription)
 
 ![Programmatic sorting in SfDataGrid WinForms](Sorting_images/Sorting_Image5.png)
 
-### Removing Sort Columns
+## Removing Sort Columns
 The sorted column data can be unsorted by removing the corresponding `SortColumnDescription` from the `SfDataGrid.SortColumnDescriptions` collection.
 
 {% tabs %}
@@ -78,7 +78,7 @@ End If
 {% endhighlight %}
 {% endtabs %}
 
-### Clear Sorting
+## Clear Sorting
 The sorting can be cleared by clearing the `SfDataGrid.SortColumnDescriptions`.
 
 {% tabs %}
@@ -90,7 +90,7 @@ Me.sfDataGrid1.SortColumnDescriptions.Clear()
 {% endhighlight %}
 {% endtabs %}
 
-### Disable Sorting
+## Disable Sorting
 The sorting functionality of the SfDataGrid can be disabled by setting the `AllowSorting` property to false.
 
 {% tabs %}
@@ -303,7 +303,7 @@ While performing the Sorting, the ProductName column sorts the data using custom
 ![SfDataGrid sorting with custom compararer in windowsforms](Sorting_images/Sorting_Image9.png)
 
 ### Canceling Sorting for a Specific Column
-The sorting for a particular column can be canceled by using the [SortColumnsChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event through `Cancel` property.
+The sorting for a particular column can be canceled by using the [SortColumnsChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SortColumnsChanging) event through `Cancel` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -353,16 +353,16 @@ End Sub
 ### Sorting the Underlying Collection
 `SfDataGrid` sorts the records in UI and maintains in its internal CollectionView and it will not change the order of data in underlying collection.
 You can get sorted data from `SfDataGrid.View.Records` when groups is not in place and [SfDataGrid.View.TopLevelGroup.DisplayElements](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.TopLevelGroup.html#Syncfusion_Data_TopLevelGroup_DisplayElements) when grouping in place.
-If you want to sort the underlying collection when sorting takes place, this can be achieved by handling [SfDataGrid.SortColumnsChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+If you want to sort the underlying collection when sorting takes place, this can be achieved by handling [SfDataGrid.SortColumnsChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SortColumnsChanged) event.
 
 {% tabs %}
 {% highlight c# %}
+
+ViewModel viewModel = new ViewModel();
 this.dataGrid.SortColumnsChanged += dataGrid_SortColumnsChanged;
 
-void dataGrid_SortColumnsChanged(object sender, SortColumnsChangedEventArgs e)
+private void dataGrid_SortColumnsChanged(object sender, SortColumnsChangedEventArgs e)
 {
-    var viewModel = this.DataContext as ViewModel;
-    
     IEnumerable<OrderInfo> OrderedSource = viewModel.Orders;
     
     foreach (var sortColumn in this.dataGrid.View.SortDescriptions)
@@ -389,35 +389,35 @@ private object GetOrderSource(OrderInfo source, string name)
 }
 {% endhighlight %}
 {% highlight vb %}
-Private Me.dataGrid.SortColumnsChanged += AddressOf dataGrid_SortColumnsChanged
+Dim viewModel As ViewModel = New ViewModel()
+AddHandler Me.dataGrid.SortColumnsChanged, AddressOf dataGrid_SortColumnsChanged
 
 Private Sub dataGrid_SortColumnsChanged(ByVal sender As Object, ByVal e As SortColumnsChangedEventArgs)
-	Dim viewModel = TryCast(Me.DataContext, ViewModel)
+    Dim OrderedSource As IEnumerable(Of OrderInfo) = viewModel.Orders
 
-	Dim OrderedSource As IEnumerable(Of OrderInfo) = viewModel.Orders
+    For Each sortColumn In Me.dataGrid.View.SortDescriptions
+        Dim columnName = sortColumn.PropertyName
 
-	For Each sortColumn In Me.dataGrid.View.SortDescriptions
-		Dim columnName = sortColumn.PropertyName
+        If sortColumn.Direction = ListSortDirection.Ascending Then
+            OrderedSource = OrderedSource.OrderBy(Function(source) GetOrderSource(source, columnName))
 
-		If sortColumn.Direction = ListSortDirection.Ascending Then
-			OrderedSource = OrderedSource.OrderBy(Function(source) GetOrderSource(source, columnName))
-
-		Else
-			OrderedSource = OrderedSource.OrderByDescending(Function(source) GetOrderSource(source, columnName))
-		End If
-	Next sortColumn
+        Else
+            OrderedSource = OrderedSource.OrderByDescending(Function(source) GetOrderSource(source, columnName))
+        End If
+    Next sortColumn
 End Sub
 
 Private Function GetOrderSource(ByVal source As OrderInfo, ByVal name As String) As Object
-	Dim propInfo = source.GetType().GetRuntimeProperty(name)
+    Dim propInfo = source.GetType().GetRuntimeProperty(name)
 
-	If propInfo IsNot Nothing Then
+    If propInfo IsNot Nothing Then
 
-		' get the current sort column value
-		Return propInfo.GetValue(source)
-	End If
+        ' get the current sort column value
+        Return propInfo.GetValue(source)
+    End If
 
-	Return Nothing
+    Return Nothing
 End Function
+
 {% endhighlight %}
 {% endtabs %}

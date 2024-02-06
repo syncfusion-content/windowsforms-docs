@@ -10,7 +10,7 @@ documentation: ug
 # Getting Started with Windows Forms Pivot Chart
 
 >**Important**
-Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your Windows Forms application to use our components.
+Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion license key in your Windows Forms application to use our components.
 
 This section provides an overview for working with the pivot chart for WinForms. Go through the entire process of creating a simple pivot chart.
 
@@ -44,15 +44,16 @@ The pivot chart control can be added through code-behind by following the given 
 
 2. Add the following assembly references to the project.
 
-* Syncfusion.Chart.Windows.dll
-* Syncfusion.Grid.Windows.dll
-* Syncfusion.PivotAnalysis.Base.dll
-* Syncfusion.PivotAnalysis.Windows.dll
-* Syncfusion.PivotChart.Windows.dll
-* Syncfusion.Shared.Base.dll
+    * Syncfusion.Chart.Windows.dll
+    * Syncfusion.Grid.Windows.dll
+    * Syncfusion.PivotAnalysis.Base.dll
+    * Syncfusion.PivotAnalysis.Windows.dll
+    * Syncfusion.PivotChart.Windows.dll
+    * Syncfusion.Shared.Base.dll
 
 3. Then, initialize the pivot chart control by creating an instance and adding it to the form using the following specified code.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -76,6 +77,8 @@ Me.Controls.Add(pivotChart1)
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ### Adding control via Syncfusion reference manager
 
@@ -85,19 +88,19 @@ Me.Controls.Add(pivotChart1)
 
 2. Then, right-click the project and select Syncfusion Reference Manager.
 
-![GettingStarted_img3](Getting-Started_images/GettingStarted_img3.png)
+    ![GettingStarted_img3](Getting-Started_images/GettingStarted_img3.png)
 
 3. The Syncfusion Reference Manager wizard will be opened as follows.
 
-![GettingStarted_img4](Getting-Started_images/GettingStarted_img4.png)
+    ![GettingStarted_img4](Getting-Started_images/GettingStarted_img4.png)
 
 4. Select the pivot chart control by searching it through the search box. Then, click the done button to add the selected pivot chart control.
 
-![GettingStarted_img5](Getting-Started_images/GettingStarted_img5.png)
+    ![GettingStarted_img5](Getting-Started_images/GettingStarted_img5.png)
 
-5. The required assemblies will be automatically added to the project by clicking OK.
+5.  The required assemblies will be automatically added to the project by clicking OK.
 
-![GettingStarted_img6](Getting-Started_images/GettingStarted_img6.png)
+    ![GettingStarted_img6](Getting-Started_images/GettingStarted_img6.png)
 
 6. Add the following code snippet in code behind to create a simple pivot chart control.
 
@@ -130,7 +133,7 @@ Syncfusion reference manager supports for specific framework that is shipped (as
 
 ## Binding data
 
-This section guides you how to bind the data source and its appropriate fields to a pivot chart control. The data source assigned to pivot chart control should be an [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?redirectedfrom=MSDN&view=net-6.0) list or a [DataView](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataview?redirectedfrom=MSDN&view=net-6.0).
+This section guides you how to bind the data source and its appropriate fields to a pivot chart control. The data source assigned to pivot chart control should be an [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?redirectedfrom=MSDN&view=net-6.0) list or a [DataView](https://learn.microsoft.com/en-us/dotnet/api/system.data.dataview?redirectedfrom=MSDN&view=net-6.0).
 
 In this example, the `IEnumerable` list is used as data source for the pivot chart control and the sample data source contains properties such as Product, Date, Country, State, Quantity, Amount, UnitPrice, and TotalPrice for demonstration purpose.
 
@@ -309,7 +312,7 @@ N>
 
 The pivot chart control requires the following information to populate the data from the data source.
 
-* [ItemSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_ItemSource): The data source for the pivot table. This object should be either an    [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?redirectedfrom=MSDN&view=net-6.0) list or a [DataTable](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable?redirectedfrom=MSDN&view=net-6.0).
+* [ItemSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_ItemSource): The data source for the pivot table. This object should be either an    [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?redirectedfrom=MSDN&view=net-6.0) list or a [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable?redirectedfrom=MSDN&view=net-6.0).
 * [PivotAxis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_PivotAxis): Elements that should be added to the axis of pivot chart control.
 * [PivotLegend](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_PivotLegend): Elements that should be added to legend of pivot chart control.
 * [PivotCalculations](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_PivotCalculations): Calculation values that should be added as data points to the pivot chart control.

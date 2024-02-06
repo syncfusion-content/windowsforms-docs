@@ -33,12 +33,13 @@ SfBarcode control can be added to the application by dragging it from Toolbox an
 ### Adding control in Code
 In order to add control manually, do the below steps,
 
-1) 	Add the below required assembly references to the project,
+1. Add the below required assembly references to the project,
 
-* 	Syncfusion.SfBarcode.Windows
+    *  Syncfusion.SfBarcode.Windows
 
-2)	Create the SfBarcode control instance and add it to the Form
+2. Create the SfBarcode control instance and add it to the Form
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.Windows.Forms.Barcode;
@@ -73,3 +74,5 @@ Namespace WindowsFormsApplication1
 End Namespace
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}

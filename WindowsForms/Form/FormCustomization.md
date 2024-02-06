@@ -15,7 +15,7 @@ A form icon designates the picture that represents the form in the taskbar as we
 
 ### Changing form icon
 
-The form icon displayed on the title bar and task bar can be changed by using the [Icon](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.form.icon?view=net-5.0) property.
+The form icon displayed on the title bar and task bar can be changed by using the [Icon](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.form.icon?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -26,7 +26,7 @@ Me.Icon = New Icon("sfIcon.ico")
 {% endhighlight %}
 {% endtabs %}
 
-![SfForm shows icon](FormCustomization_images/Form_Image1.png)
+![WindowsForms Form shows icon](formcustomization_images/windowsforms-form-shows-icon.png)
 
 ### Form icon alignment
 
@@ -43,7 +43,7 @@ Me.Style.TitleBar.IconHorizontalAlignment = HorizontalAlignment.Right
 {% endhighlight %}
 {% endtabs %}
 
-![Form icon is aligned in sfform](FormCustomization_images/Form_Image2.png)
+![WindowsForms Form icon is alignment](formcustomization_images/windowsforms-form-icon-alignment.png)
 
 ## Form border
 
@@ -66,7 +66,7 @@ Me.Style.InactiveBorder = New Pen(Color.LightGray, 2)
 {% endhighlight %}
 {% endtabs %}
 
-![SfForm with customized border color](FormCustomization_images/Form_Image3.png)
+![WindowsForms Form with customized border color](formcustomization_images/windowsforms-form-border.png)
 
 ## Shadow effect
 
@@ -89,6 +89,32 @@ Me.Style.InactiveShadowOpacity = 100
 {% endhighlight %}
 {% endtabs %}
 
-![SfForm with shadow effect](FormCustomization_images/Form_Image4.png)
+![WindowsForms Form with shadow effect](formcustomization_images/windowsforms-form-shadow-effect.png)
 
 N> Shadow can be disabled by setting the `ShadowOpacity` property as zero.
+
+## Rounded corner
+
+Rounded corners for `SfForm` can be enabled by using the [AllowRoundedCorners](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfForm.html#Syncfusion_WinForms_Controls_SfForm_AllowRoundedCorners) property. Rounded corners are not supported in OS versions lower than Windows 11. Enabling `AllowRoundedCorners` property will have no effect on those operating systems. 
+
+N> When the rounded corners are enabled, the border and shadow of the Form are drawn by the operating system.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.AllowRoundedCorners = true;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.AllowRoundedCorners = true
+ 
+{% endhighlight %}
+
+{% endtabs %}
+
+
+![WindowsForms Form with rounded corners](formcustomization_Images/windowsforms-form-rounded-corner.png)
+

@@ -23,7 +23,7 @@ This section briefly describes how to design a ComboBoxAdv Control in a Windows 
 
 
 
-![Windows Forms ComboBoxAdv Overview Image296](Overview_images/Overview_img296.png) 
+![Overview of WindowsForms ComboBox](overview_images/windowsforms-combobox-overview.png) 
 
 
 
@@ -33,7 +33,7 @@ The most commonly used settings of the ComboBoxAdv control can be configured eit
 
 
 
-![Windows Forms ComboBoxAdv Overview Image297](Overview_images/Overview_img297.png) 
+![Configuring ComboBox in WindowsForms](overview_images/windowsforms-combobox-configuring.png) 
 
 
 
@@ -41,6 +41,7 @@ To add ComboBoxAdv Control to a Windows Forms Application through code behind, f
 
 1. Include the namespaces “Syncfusion.Windows.Forms” and “Syncfusion.Windows.Forms.Tools”.
 
+{% capture codesnippet1 %}​
 {% tabs %}
 
 {% highlight c# %}
@@ -60,9 +61,12 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. Create an instance of the ComboBoxAdv control and add it to the Form.
 
+{% capture codesnippet2 %}​
 {% tabs %}
 
 {% highlight c# %}
@@ -82,9 +86,12 @@ Me.comboBoxAdv1 = New ComboBoxAdv()
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 3. Items can be added to ComboBoxAdv through String Collection Editor as it was done in Windows ComboBox control.
 
+{% capture codesnippet3 %}​
 {% tabs %}
 
 {% highlight c# %}
@@ -106,9 +113,12 @@ Me.comboBoxAdv1.Items.Add(300)
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 4. Finally add ComboBoxAdv to the form.
 
+{% capture codesnippet4 %}​
 {% tabs %}
 
 {% highlight c# %}
@@ -128,7 +138,9 @@ Me.Controls.Add(Me.comboBoxAdv1)
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 
-![Windows Forms ComboBoxAdv Overview Image298](Overview_images/Overview_img298.png)
+![Adding ComboBox to form in WindowsForms](overview_images/windowsforms-combobox-add-form.png)
 

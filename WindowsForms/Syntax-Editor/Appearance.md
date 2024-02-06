@@ -1376,8 +1376,8 @@ Code Snippets can also be inserted into the EditControl by using the static `Ext
 1. Path of the folder containing the code snippets.
 2. Instance of the EditControl into which the extracted code snippet should be inserted.
 
+{% capture codesnippet1 %}
 {% tabs %}
-
 {% highlight C# %}
 
 CodeSnippetsExtractor.Extract(Path, editControl1);
@@ -1389,8 +1389,9 @@ CodeSnippetsExtractor.Extract(Path, editControl1);
 CodeSnippetsExtractor.Extract(Path, editControl1)
 
 {% endhighlight %}
-
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }} 
 
 Code Snippets are added to the current language of the EditControl by using the following function.
 

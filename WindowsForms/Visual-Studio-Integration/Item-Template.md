@@ -7,81 +7,51 @@ control: Syncfusion Extensions
 documentation: ug
 ---
 
-# Item Template Extension
+# Add Syncfusion Components to the WinForms Application
 
-The Syncfusion Item Templates extensions provides support to add a predefined form for the Windows Forms applications. 
+Syncfusion supports Visual Studio Item Templates to add Syncfusion WinForms Components to a WinForms application with Syncfusion WinForms references. 
 
 I> The Syncfusion Windows Forms item templates are available from v13.1.0.21.
 
-## Using Syncfusion Item Template Gallery
+The following steps will guide you in adding the Syncfusion WinForms components to your Visual Studio WinForms application.
 
-Follow the given steps to add the Syncfusion item in Visual Studio.
+> Check whether the **WinForms Extensions - Syncfusion** are installed or not in Visual Studio Extension Manager by going to **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later and Visual Studio 2017 or lower by going to **Tools -> Extensions and Updates -> Installed**. If this extension is not installed, please install the extension by following the steps from the [download and installation](https://help.syncfusion.com/windowsforms/visual-studio-integration/download-and-installation) help topic.
 
-> Before use the Syncfusion WinForms Item Template, check whether the **WinForms Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later, and for Visual Studio 2017 or lower by going to **Tools -> Extensions and Updates -> Installed**.If this extension not installed, please install the extension by follow the steps from the [download and installation](https://help.syncfusion.com/windowsforms/visual-studio-integration/visual-studio-extensions/download-and-installation/) help topic.
+## Add Components using Syncfusion Item Template
 
-1. Open a new or existing **WinForms** application.
-2. Right-click the WinForms Project from the Solution Explorer. Select the Add Syncfusion Item New Item… option.
+1.	Open a new or existing WinForms application.
 
-   ![Syncfusion Item Template add-in](Item-Template-images\Syncfusion-Item-Template-Gallery-1.png)
+	**Option 1:**
 
-3. Now, the Syncfusion Item Template Gallery window will be open.
+2.	From the **Solution Explorer, right-click** on the WinForms application. Choose **Add Syncfusion Item...**.
 
-   ![Syncfusion Item Template wizard](Item-Template-images\Syncfusion-Item-Template-Gallery-2.png)
-   
-4. Select the required assembly location, version, and Form from the Syncfusion Item Template Gallery. 
+	![Choose Add Syncfusion Item option from right click project](Item-Template-images/Add-syncfusion-item.png)
 
-   ![Select the Form from the Syncfusion Item Template Wizard](Item-Template-images\Syncfusion-Item-Template-Gallery-3.png)
+	**Option 2:**
 
-   **Assembly From:**  Choose an assembly reference option such as GAC location, Essential Studio installed location, or NuGet packages, to specify where from the required Syncfusion assemblies are added to the project.
+3.	Click **Extensions > Essential Studio for WinForms > Add Syncfusion Item…** in Visual Studio.
 
-   ![Select the required assembly location from the Syncfusion Item Template Wizard](Item-Template-images\Syncfusion-Item-Template-Gallery-5.png)
+	![Choose Add Syncfusion Item option from menu](Item-Template-images/Add-item.png)
 
-   N> Installed location and GAC option will be available only when the Syncfusion Essential WinForms setup has been installed. You can use NuGet option without installing the Syncfusion Essential Windows Forms setup. If you add the Syncfusion item files in .NET Core Windows Forms application, GAC option will not be listed in the Assembly From option.
 
-   **Version:** Choose the Essential Studio version to add the corresponding version assemblies to the project.
+4.	The Syncfusion WinForms Item Template wizard will be launched as follows.
 
-   ![Select the required ES version from the Syncfusion Item Template Wizard](Item-Template-images\Syncfusion-Item-Template-Gallery-4.png)
+	![Syncfusion WinForms Item template Components](Item-Template-images/Add-syncfusion-ui.png)
 
-   N> Version option will be available only when you install the Syncfusion Essential Windows Forms setup and choose the assembly location as Installed Location or GAC.
+5.	Select the WinForms Components from the Component list within your WinForms Item Template. The features associated with the selected Component will be presented. From here, 		choose the specific features that are essential for your project.
 
-   **Template Gallery:** This part contains a set of Syncfusion Item Templates, and you can choose the Item Templates as required. When the Add button is clicked, the selected item template is added to the project.
+6.	Choose an assembly reference option such as GAC location, Essential Studio installed location, or NuGet packages to specify where the required Syncfusion assemblies 	are added to the project.
 
-   ![Selected Item Template](Item-Template-images\Syncfusion-Item-Template-Gallery-6.png)
+	N> If the Syncfusion Essential WindowsForm build is installed, the Installed location and GAC options will be enabled. Without installing the Syncfusion Essential WindowsForm setup, use the NuGet option. The GAC option will not be available when using the Syncfusion WinForms Components in a .NET Core application. The Version drop-down lists the installed WinForms versions.
 
-5. Then, Syncfusion licensing registration required message box will be shown, if you installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the  [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post for understanding the licensing changes introduced in Essential Studio.
+7.  Click **Add**, and a pop-up will appear providing information about adding Component **files** and **NuGet/Assemblies** details.
 
-   ![Syncfusion license registration required information dialog in Syncfusion Item Template](Item-Template-images\Syncfusion-Item-Template-Gallery-7.png)
+	![Syncfusion WinForms Item template details](Item-Template-images/Add-syncfusion-item-3.png)	
 
-## Using Visual Studio Add new Item
+8.	Click **OK** to incorporate the chosen Components into the WinForms application, along with the necessary Syncfusion assemblies.
 
-Syncfusion Project Template can also be added from the Visual Studio Item Template.
+	![Syncfusion WinForms Item template Gallery](Item-Template-images/Add-syncfusion-item-details.png)
 
-1. To create a Syncfusion WinForms item template, follow either one of the options below:
-   
-   **Option 1**  
-   Click **Extensions-> Syncfusion Menu** and choose **Essential Studio for WinForms > Add Office2010Form...** or any other Form in **Visual Studio**.
+9.	Then, Syncfusion licensing registration required message box will be shown if you installed the trial setup or NuGet packages since Syncfusion introduced the 			licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/			licensing/license-key#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to 		your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post 	 for understanding the licensing changes introduced in Essential Studio.
 
-   ![Syncfusion Project Template can be also add from the Visual Studio Item Template via Syncfusion Menu](Item-Template-images\Syncfusion_Menu_ItemTemplate-latest.png)
-
-   N> In Visual Studio 2017 or lower, click Syncfusion Menu and choose Essential Studio for WinForms > Add Office2010Form… or any other Form.
-
-    ![Syncfusion Project Template can be also add from the Visual Studio Item Template via Syncfusion Menu](Item-Template-images\Syncfusion_Menu_ItemTemplate.png)
-
-   **Option 2**
-   Right-click the Windows Forms Project, select **Add > New Item**, and then navigate to **Visual C# Items or VB Items > Syncfusion > Windows**. Refer to the following screenshot for more information.
-   
-   ![Syncfusion Project Template can be also add from the Visual Studio Item Template](Item-Template-images\Syncfusion-Add-New-Item-1.png)
-
-2. The Syncfusion Item Templates are available under the Syncfusion tab. It is available for both C# Items and VB Items. 
-
-   ![Select required Item Template from Visual Studio Item Template Wizard](Item-Template-images\Syncfusion-Add-New-Item-2.png)
-
-3. Now the selected template is added to the project along with Syncfusion references.
-
-   ![Selected Syncfusion Item Template added to the project with Forms](Item-Template-images\Syncfusion-Add-New-Item-3.png)
-
-   ![Selected Syncfusion Item Template required reference assemblies](Item-Template-images\Syncfusion-Add-New-Item-4.png)
-
-4. Then, Syncfusion licensing registration required message box will be shown, if you installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the  [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post for understanding the licensing changes introduced in Essential Studio.
-
-   ![Syncfusion license registration required information dialog in Windows Forms project](Item-Template-images\Syncfusion-Item-Template-Gallery-7.png)
+    ![Syncfusion WinForms Item template Gallery](Item-Template-images/Syncfusion-Item-Template-Gallery-7.png)

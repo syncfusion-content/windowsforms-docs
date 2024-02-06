@@ -20,4 +20,4 @@ The PercentTextBox is derived from Windows Forms Framework textbox control. The 
 
 ## Choose between different textbox controls
 
-You can refer to the different textbox controls [here](https://help.syncfusion.com/windowsforms/sfnumerictextbox/overview#choose-between-different-textbox-controls).
+You can refer to the different textbox controls [here](https://help.syncfusion.com/windowsforms/numeric-textbox/overview#choose-between-different-textbox-controls).

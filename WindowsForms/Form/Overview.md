@@ -24,17 +24,17 @@ Following are the key features of the SfForm:
 
 Syncfusion WinForms suite comes up with the following different forms:
 
-* [SfForm](https://www.syncfusion.com/products/windows-forms/form)
-* [MetroForm](https://www.syncfusion.com/products/windows-forms/metroform)
-* [Office2007Form](https://www.syncfusion.com/products/windows-forms/office2007form)
+* [SfForm](https://www.syncfusion.com/winforms-ui-controls/form)
+* [MetroForm](https://www.syncfusion.com/winforms-ui-controls/metroform)
+* [Office2007Form](https://www.syncfusion.com/winforms-ui-controls/office2007form)
 
 ### SfForm
 
-The [SfForm](https://help.syncfusion.com/windowsforms/sfform/overview) window control allows you to completely customize its appearance. Support to load an user interface in the title bar: add an MDI child form and allows the appearance of child forms to be customized.
+The [SfForm](https://help.syncfusion.com/windowsforms/form/overview) window control allows you to completely customize its appearance. Support to load an user interface in the title bar: add an MDI child form and allows the appearance of child forms to be customized.
 
 ### MetroForm
 
-[MetroForm](https://help.syncfusion.com/windowsforms/metroform/overview) is used to create customizable window for the end user's application. It supports various built-in skins and let the user to control its behavior and appearance.
+[MetroForm](https://help.syncfusion.com/windowsforms/metro-form/overview) is used to create customizable window for the end user's application. It supports various built-in skins and let the user to control its behavior and appearance.
 
 ### Office2007Form
 
@@ -132,7 +132,7 @@ The list of features in SfForm over MetroForm are as follows.
 Loading UserControl to TitleBar
 </td>
 <td>
-Loads any user control in the title bar instead of text by using the {{'[TitleBarTextControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfForm.html#Syncfusion_WinForms_Controls_SfForm_TitleBarTextControl)'| markdownify }} property. Size of the user control should be set properly to fit the control within the title bar. To learn more about loading user control to TitleBar in SfForm, refer to {{'[here](https://help.syncfusion.com/windowsforms/sfform/titlebar#loading-user-control-to-the-title-bar)'| markdownify }}.
+Loads any user control in the title bar instead of text by using the {{'[TitleBarTextControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfForm.html#Syncfusion_WinForms_Controls_SfForm_TitleBarTextControl)'| markdownify }} property. Size of the user control should be set properly to fit the control within the title bar. To learn more about loading user control to TitleBar in SfForm, refer to {{'[here](https://help.syncfusion.com/windowsforms/form/titlebar#loading-user-control-to-the-title-bar)'| markdownify }}.
 
 </td>
 </tr>
@@ -141,7 +141,7 @@ Loads any user control in the title bar instead of text by using the {{'[TitleBa
 Border customization
 </td>
 <td>
-Sets the active and inactive border colors by using the {{'[Style.Border](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.FormVisualStyle.html#Syncfusion_WinForms_Controls_Styles_FormVisualStyle_Border)'| markdownify}} and {{'[Style.InActiveBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.FormVisualStyle.html#Syncfusion_WinForms_Controls_Styles_FormVisualStyle_InactiveBorder)'| markdownify }} properties. To learn more about border customization in SfForm, refer to {{'[here](https://help.syncfusion.com/windowsforms/sfform/formcustomization#form-border)'| markdownify }}.
+Sets the active and inactive border colors by using the {{'[Style.Border](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.FormVisualStyle.html#Syncfusion_WinForms_Controls_Styles_FormVisualStyle_Border)'| markdownify}} and {{'[Style.InActiveBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.FormVisualStyle.html#Syncfusion_WinForms_Controls_Styles_FormVisualStyle_InactiveBorder)'| markdownify }} properties. To learn more about border customization in SfForm, refer to {{'[here](https://help.syncfusion.com/windowsforms/form/formcustomization#form-border)'| markdownify }}.
 
 </td>
 </tr>
@@ -150,7 +150,7 @@ Sets the active and inactive border colors by using the {{'[Style.Border](https:
 Rich text formatting
 </td>
 <td>
-Displays the rich text inside the title bar by enabling the {{'[AllowRichText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo.html#Syncfusion_WinForms_Controls_Styles_TitleBarStyleInfo_AllowRichText)'| markdownify }} property. To learn more about rich text formatting in SfForm, refer to {{'[here](https://help.syncfusion.com/windowsforms/sfform/titlebar#rich-text-formatting)'| markdownify}}.
+Displays the rich text inside the title bar by enabling the {{'[AllowRichText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo.html#Syncfusion_WinForms_Controls_Styles_TitleBarStyleInfo_AllowRichText)'| markdownify }} property. To learn more about rich text formatting in SfForm, refer to {{'[here](https://help.syncfusion.com/windowsforms/form/titlebar#rich-text-formatting)'| markdownify}}.
 
 </td>
 </tr>

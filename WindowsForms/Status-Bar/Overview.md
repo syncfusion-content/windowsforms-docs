@@ -13,7 +13,7 @@ The StatusBarAdv is an advanced StatusBar control that can display StatusBarPane
 
 Below image shows a StatusBarAdv with controls added to it.
 
-![Overview of Syncfusion StatusBarAdv](Overview_images/Overview_img59.jpeg) 
+![WindowsForms Status Bar overview](overview_images/windowsforms-status-bar-overview.jpeg) 
 
 
 

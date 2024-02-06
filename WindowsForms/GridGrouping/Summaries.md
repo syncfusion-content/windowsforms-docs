@@ -27,8 +27,9 @@ The summaries can be added to the GridGroupingControl by defining the [GridSumma
 
 The summary can be added to a particular column using the steps given below,
 
-1.Setup a summary column by instantiating `GridSummaryColumnDescriptor` and specify the [SummaryType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridSummaryColumnDescriptor.html#Syncfusion_Windows_Forms_Grid_Grouping_GridSummaryColumnDescriptor__ctor_System_String_Syncfusion_Grouping_SummaryType_System_String_System_String_) and format.
+1. Setup a summary column by instantiating `GridSummaryColumnDescriptor` and specify the [SummaryType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridSummaryColumnDescriptor.html#Syncfusion_Windows_Forms_Grid_Grouping_GridSummaryColumnDescriptor__ctor_System_String_Syncfusion_Grouping_SummaryType_System_String_System_String_) and format.
 
+{% capture codesnippet1 %}​
 {% tabs %}
 {% highlight c# %}
 GridSummaryColumnDescriptor summaryColumnDescriptor = new GridSummaryColumnDescriptor(); 
@@ -47,8 +48,12 @@ summaryColumnDescriptor.Name = "TotalWins"
 summaryColumnDescriptor.SummaryType = SummaryType.Int32Aggregate
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2.Define a summary row and add the summary column into it.
+2. Define a summary row and add the summary column into it.
+
+{% capture codesnippet2 %}​
 {% tabs %}
 {% highlight c# %}
 GridSummaryRowDescriptor summaryRowDescriptor = new GridSummaryRowDescriptor(); 
@@ -61,8 +66,12 @@ summaryRowDescriptor.SummaryColumns.Add(summaryColumnDescriptor)
 summaryRowDescriptor.Appearance.AnySummaryCell.Interior = New BrushInfo(Color.FromArgb(255, 231, 162))
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-3.Finally add summary row to the grid.
+3. Finally add summary row to the grid.
+
+{% capture codesnippet3 %}​
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRowDescriptor);
@@ -71,8 +80,10 @@ this.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRowDescriptor);
 Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRowDescriptor)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-4.Run the sample. The grid will shows the summaries at the end of the records as follows,
+4. Run the sample. The grid will shows the summaries at the end of the records as follows,
 
 ![Summaries_img2](Summaries_images/Summaries_img2.png)
 
@@ -191,8 +202,9 @@ Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRowDescriptor)
 ## Summary in Caption
 GridGroupingControl provides built-in options to display group summaries for the columns in group captions instead of creating distinct rows for summaries. The following steps are used to create summaries in group caption,
 
-1.First, define a summary for the grid table. Then group the table against a data column.
+1. First, define a summary for the grid table. Then group the table against a data column.
 
+{% capture codesnippet4 %}​
 {% tabs %}
 {% highlight c# %}
 //Adds Summaries.
@@ -215,8 +227,12 @@ Me.gridGroupingControl1.ShowGroupDropArea = True
 Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add("Sport")
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-2.Enable Caption Summaries by setting[ShowCaptionSummaryCells](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupOptionsStyleInfo_ShowCaptionSummaryCells) to true and by turning off [ShowSummaries](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupOptionsStyleInfo_ShowSummaries) property that will disable creation of additional summary rows.
+2. Enable Caption Summaries by setting[ShowCaptionSummaryCells](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupOptionsStyleInfo_ShowCaptionSummaryCells) to true and by turning off [ShowSummaries](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupOptionsStyleInfo_ShowSummaries) property that will disable creation of additional summary rows.
+
+{% capture codesnippet5 %}​
 {% tabs %}
 {% highlight c# %}
 //Creates summaries in caption.
@@ -229,8 +245,12 @@ Me.gridGroupingControl1.ChildGroupOptions.ShowCaptionSummaryCells = True
 Me.gridGroupingControl1.ChildGroupOptions.ShowSummaries = False
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-3.Once caption summaries are enabled, the next step is to specify a summary to be displayed in the Caption Rows. This is done by assigning summary name to[CaptionSummaryRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupOptionsStyleInfo_CaptionSummaryRow) property. Optionally the caption text can customized as per need.
+3. Once caption summaries are enabled, the next step is to specify a summary to be displayed in the Caption Rows. This is done by assigning summary name to[CaptionSummaryRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupOptionsStyleInfo_CaptionSummaryRow) property. Optionally the caption text can customized as per need.
+
+{% capture codesnippet6 %}​
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.ChildGroupOptions.CaptionSummaryRow = "Sum";
@@ -241,8 +261,12 @@ Me.gridGroupingControl1.ChildGroupOptions.CaptionSummaryRow = "Sum"
 Me.gridGroupingControl1.ChildGroupOptions.CaptionText = "{RecordCount} Items"
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
 
-4.Finally, format the caption rows to improve the look and feel.
+4. Finally, format the caption rows to improve the look and feel.
+
+{% capture codesnippet7 %}​
 {% tabs %}
 {% highlight c# %}
 //Provides a good look and enables Caption Summary Cells as Record Field Cells.
@@ -257,6 +281,8 @@ Me.gridGroupingControl1.Appearance.GroupCaptionCell.Borders.Top = New GridBorder
 Me.gridGroupingControl1.Appearance.GroupCaptionCell.CellType = "Static"
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet7 | OrderList_Indent_Level_1 }}
 
 The following screenshot shows the grid with caption summaries,
 
@@ -268,8 +294,9 @@ The following screenshot shows the grid with caption summaries,
 ## Sort by Summary in Caption
 By default, when grouping is applied, the grid will sorts the records based on the values of grouped column. This can be changed to sort the records based on the values of the group summaries by creating the own custom comparer to define the sort order or to make use of built-in method that is specially designed to use in this scenario, named [SetGroupSummaryOrder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SortColumnDescriptor.html#Syncfusion_Grouping_SortColumnDescriptor_SetGroupSummarySortOrder_System_String_System_String_). This method will set up a custom comparer for sorting groups to enable groups to be sorted in a different order. The following steps are used to sort groups by summary values,
 
-1.Define `GridSummaryColumnDescriptor` for column Freight and add it to `SummaryRow` of Orders table.
+1. Define `GridSummaryColumnDescriptor` for column Freight and add it to `SummaryRow` of Orders table.
 
+{% capture codesnippet8 %}​
 {% tabs %}
 {% highlight c# %}
 GridSummaryColumnDescriptor summaryColumn1 = new GridSummaryColumnDescriptor("FreightAverage", SummaryType.DoubleAggregate, "Freight", "{Average:###.00}");
@@ -286,9 +313,12 @@ summaryRow1.SummaryColumns.Add(summaryColumn1)
 Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRow1)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet8 | OrderList_Indent_Level_1 }}
 
-2.Trigger caption summaries by setting appropriate properties.
+2. Trigger caption summaries by setting appropriate properties.
 
+{% capture codesnippet9 %}​
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.TableDescriptor.ChildGroupOptions.ShowCaptionSummaryCells = true;
@@ -302,9 +332,12 @@ Me.gridGroupingControl1.TableDescriptor.ChildGroupOptions.ShowSummaries = False
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet9 | OrderList_Indent_Level_1 }}
 
-3.Create[SortColumnDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SortColumnDescriptor.html) for the field `ShipCountry`. Change default group order by using [SetGroupSummarySortOrder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SortColumnDescriptor.html#Syncfusion_Grouping_SortColumnDescriptor_SetGroupSummarySortOrder_System_String_System_String_) method with its parameters conveying summary name and property in the summary. Then group the grid against this column.
+3. Create[SortColumnDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SortColumnDescriptor.html) for the field `ShipCountry`. Change default group order by using [SetGroupSummarySortOrder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SortColumnDescriptor.html#Syncfusion_Grouping_SortColumnDescriptor_SetGroupSummarySortOrder_System_String_System_String_) method with its parameters conveying summary name and property in the summary. Then group the grid against this column.
 
+{% capture codesnippet10 %}​
 {% tabs %}
 {% highlight c# %}
 //Specifies group sort order behavior when adding SortColumnDescriptor to GroupedColumns.
@@ -325,8 +358,10 @@ sortColumnDescriptor.SetGroupSummarySortOrder(summaryColumn1.GetSummaryDescripto
 Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(sortColumnDescriptor)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet10 | OrderList_Indent_Level_1 }}
 
-4.While running the sample, the groups are sorted against summary values of Freight. Here is a sample screen shot.
+4. While running the sample, the groups are sorted against summary values of Freight. Here is a sample screen shot.
 
 ![Summaries_img7](Summaries_images/Summaries_img7.png)
 

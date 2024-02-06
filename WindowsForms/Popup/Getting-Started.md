@@ -29,37 +29,38 @@ Create a new Windows Forms project in Visual Studio to display the [PopupControl
 
 The PopupControlContainer control can be added through designer by following the below steps:
 
-**1.** Drag the PopupControlContainer control from the toolbox to designer page. The following assembly references are added automatically:
+1. Drag the PopupControlContainer control from the toolbox to designer page. The following assembly references are added automatically:
 
-* Syncfusion.Shared.Base.dll
-* Syncfusion.Licensing.dll
+    * Syncfusion.Shared.Base.dll
+    * Syncfusion.Licensing.dll
 
 ![PopupControlContainer added via designer](GettingStarted_Images/PopupControl.png)
 
-**2.** Add the child controls like button, label, TextBox, ColorPicker, etc., to the PopupControlContainer. The following screenshot illustrates adding button as child control.
+2. Add the child controls like button, label, TextBox, ColorPicker, etc., to the PopupControlContainer. The following screenshot illustrates adding button as child control.
 
 ![Adding button to PopupControlContainer](GettingStarted_Images/PopupControl3.png)
 
-**3.** After the child control has been added, associate it as a pop-up for other controls like RichTextBox, label, button, etc. The following screenshot illustrates adding RichTextBox as parent control for mapping the pop-up container.
+3. After the child control has been added, associate it as a pop-up for other controls like RichTextBox, label, button, etc. The following screenshot illustrates adding RichTextBox as parent control for mapping the pop-up container.
 
 ![Adding rich text box control to the PopupControlContainer](GettingStarted_Images/PopupControl4.png)
 
-**4.** Associate the [RichTextBox](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.richtextbox?view=netframework-4.7.2) instance in the Properties panel of PopupControlContainer under the [ParentControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html#Syncfusion_Windows_Forms_PopupControlContainer_ParentControl).
+4. Associate the [RichTextBox](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.richtextbox?view=netframework-4.7.2) instance in the Properties panel of PopupControlContainer under the [ParentControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html#Syncfusion_Windows_Forms_PopupControlContainer_ParentControl).
 
 ![Selecting properties of PopupControlContainer](GettingStarted_Images/PopupControl5.png)
 
 ![Setting rich text box control as parent of PopupControlContainer](GettingStarted_Images/PopupControl6.png)
 
-**5.** Handle the [Click event](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.click?view=netframework-4.7.2) of RichTextBox and call [ShowPopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html#Syncfusion_Windows_Forms_PopupControlContainer_ShowPopup_System_Drawing_Point_) method of PopupControlContainer to display the pop-up at a desired location. The appropriate code to do this is given in the following section.
+5. Handle the [Click event](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.click?view=netframework-4.7.2) of RichTextBox and call [ShowPopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html#Syncfusion_Windows_Forms_PopupControlContainer_ShowPopup_System_Drawing_Point_) method of PopupControlContainer to display the pop-up at a desired location. The appropriate code to do this is given in the following section.
 
 ## Add control manually in code
 
 To add the control manually in C#, follow the given steps:
 
-**1.** Add the **Syncfusion.Shared.Base** assembly reference to the project: 
+1. Add the **Syncfusion.Shared.Base** assembly reference to the project: 
 
-**2.** Include the **Syncfusion.Windows.Forms** namespace.
+2. Include the **Syncfusion.Windows.Forms** namespace.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight C# %}
 using Syncfusion.Windows.Forms;
@@ -68,9 +69,12 @@ using Syncfusion.Windows.Forms;
 Imports Syncfusion.Windows.Forms
 {% endhighlight  %}
 {% endtabs %} 
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-**3.** Create a [PopupControlContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html) instance, and add it to the window.
+3. Create a [PopupControlContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html) instance, and add it to the window.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 //Create instance of PopupControlContainer
@@ -83,11 +87,14 @@ Dim popupControlContainer1 As PopupControlContainer = New PopupControlContainer
 Me.Controls.Add(popupControlContainer1)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![Adding PopupControlContainer and element via code](GettingStarted_Images/PopupControl7.png)
 
-**4.** Add child controls like button, label, TextBox, ColorPicker, etc., to the PopupControlContainer. 
+4. Add child controls like button, label, TextBox, ColorPicker, etc., to the PopupControlContainer. 
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight C# %}
 // Declaration 
@@ -172,6 +179,8 @@ Private Sub RichTextBox1_Click1(ByVal sender As Object, ByVal e As EventArgs)
 End Sub
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 ## Show or hide pop-up
 

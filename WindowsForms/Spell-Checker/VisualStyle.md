@@ -13,17 +13,17 @@ The SpellCheckerAdv control has rich set of themes for professional representati
 
 It has the below themes.
 
-•	Default
+    •	Default
 
-•	Metro
+    •	Metro
 
-•	Office2016Colorful
+    •	Office2016Colorful
 
-•	Office2016White
+    •	Office2016White
 
-•	Office2016DarkGray
+    •	Office2016DarkGray
 
-•	Office2016Black
+    •	Office2016Black
 
 The following code example allows you to set the [VisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SpellCheckerAdv.html#Syncfusion_Windows_Forms_Tools_SpellCheckerAdv_VisualStyle) for the SpellCheckerAdv.
 
@@ -166,4 +166,4 @@ Me.spellCheckerAdv1.VisualStyle = Syncfusion.Windows.Forms.Tools.SpellCheckerAdv
 ![Office2016 Black Theme appearance in SpellCheckerAdv](VisualStyle_images/VisualStyle_img6.png)
 
 
-N> Refer to the following sample [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SpellCheckerAdv_Demo-2092294700.zip) that demonstrates the Visual Style support in SpellCheckerAdv.
+N> Refer to the following sample [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SpellCheckerAdv_Demo-2092294700.zip) that demonstrates the Visual Style support in SpellCheckerAdv.

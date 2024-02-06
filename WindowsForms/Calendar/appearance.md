@@ -508,7 +508,7 @@ calendar.ThemeName = "Office2016Colorful"
 
 {% endtabs %}
 
-![SfCalendar Office2016Colorful theme](appearance-images/Office2016Colorful.png)
+![WindowsForms Calendar office2016 colorful theme](appearance-images/windowsforms-calendar-office2016-colorful-theme.png)
 
 #### Office2016White
 
@@ -534,7 +534,7 @@ calendar.ThemeName = "Office2016White"
 
 {% endtabs %}
 
-![SfCalendar Office2016White theme](appearance-images/Office2016White.png)
+![WindowsForms Calendar office2016 white theme](appearance-images/windowsforms-calendar-office2016-white-theme.png)
 
 #### Office2016DarkGray
 
@@ -560,7 +560,7 @@ calendar.ThemeName = "Office2016DarkGray"
 
 {% endtabs %}
 
-![SfCalendar Office2016DarkGray theme](appearance-images/Office2016DarkGray.png)
+![WindowsForms Calendar office2016 dark gray theme](appearance-images/windowsforms-calendar-office2016-dark-gray-theme.png)
 
 #### Office2016Black
 
@@ -586,7 +586,7 @@ calendar.ThemeName = "Office2016Black"
 
 {% endtabs %}
 
-![SfCalendar Office2016Black theme](appearance-images/Office2016Black.png)
+![WindowsForms Calendar office2016 black theme](appearance-images/windowsforms-calendar-office2016-black-theme.png)
 
 ## Hide trailing dates   
 

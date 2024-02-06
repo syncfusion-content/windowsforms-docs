@@ -21,6 +21,7 @@ To add ColorUIControl to a PopupMenu, we need to use PopupMenu, PopupControlCont
 
 4. In the MouseUp event of the Panel control call the PopupMenu.Show method.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -39,6 +40,8 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
    ![](FAQ_images/Overview_img242.jpeg) 
 

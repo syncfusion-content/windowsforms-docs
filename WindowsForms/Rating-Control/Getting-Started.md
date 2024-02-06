@@ -17,9 +17,9 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/ins
 
 ## Adding Rating control via designer
 
-1) Create a new Windows Forms project in Visual Studio to display the Rating Control with different shapes.
+1. Create a new Windows Forms project in Visual Studio to display the Rating Control with different shapes.
 
-2) The [Rating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html) control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
+2. The [Rating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html) control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -34,9 +34,9 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/ins
 
 To add the control manually in C#, follow the given steps:
 
-1) Create a C# or VB application using Visual Studio.
+1. Create a C# or VB application using Visual Studio.
 
-2) Add the following assembly references to the project:
+2. Add the following assembly references to the project:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -45,8 +45,9 @@ To add the control manually in C#, follow the given steps:
 * Syncfusion.Tools.Base
 * Syncfusion.Tools.Windows
 
-3) Include the required namespaces.
+3. Include the required namespaces.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -59,9 +60,12 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight  %}
 {% endtabs %} 
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4) Create an instance of the [Rating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html) control, and add it to the form.
+4. Create an instance of the [Rating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html) control, and add it to the form.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -76,11 +80,14 @@ Me.Controls.Add(ratingControl1)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![Windows Forms showing rating control](Getting-Started_images/Rating_default.png)
 
-5) Set the rating value using the [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html#Syncfusion_Windows_Forms_Tools_RatingControl_Value) property.
+5. Set the rating value using the [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html#Syncfusion_Windows_Forms_Tools_RatingControl_Value) property.
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -93,6 +100,8 @@ ratingControl2.Value = 3
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 ![Windows Forms Rating control shows rating value](Getting-Started_images/Rating_value.png)
 

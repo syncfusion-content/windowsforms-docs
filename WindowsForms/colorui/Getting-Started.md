@@ -20,11 +20,11 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/ins
 
 ## Adding the ColorUI control via designer
 
-1) Create a new Windows Forms application in Visual Studio.
+1. Create a new Windows Forms application in Visual Studio.
 
-2) The [ColorUI](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ColorUIControl.html) control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
+2. The [ColorUI](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ColorUIControl.html) control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
 
-* Syncfusion.Shared.Base
+   * Syncfusion.Shared.Base
 
 ![Drag and drop ColorUI from toolbox](ColorUI_images/ColorUI_toolbox.png)
 
@@ -36,10 +36,11 @@ The following steps describe how to create a **ColorUI** control programmaticall
 
 2. Add the following assembly reference to the project:
 
-* Syncfusion.Shared.Base
+   * Syncfusion.Shared.Base
 
 3. Include the required namespace.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -53,9 +54,12 @@ Imports Syncfusion.Windows.Forms
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 4. Create an instance of the **ColorUI** control, specify its size, and add it to the form.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -84,6 +88,8 @@ Me.Controls.Add(Me.colorUIControl1)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
    ![ColorUIControl](ColorUI_images/ColorUI_design.png)
 

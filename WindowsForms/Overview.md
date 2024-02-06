@@ -7,6 +7,8 @@ control: Introduction
 documentation: ug
 ---
 
+> With the 2024 Volume 1 release, we will discontinue support for .NET Framework 4.5, 4.5.1, and 4.6 in WinForms, WPF, and the File-Format Frameworks. Instead, we will provide support for .NET 4.6.2.
+
 # Welcome to Syncfusion Essential Windows Forms
 
 Syncfusion Essential Studio for Windows Forms is a comprehensive collection of over 100+ essential Windows Forms controls like Grids, Charts, Diagram, Scheduler and Tools for building powerful line-of-business applications faster. Syncfusion Windows Forms controls provides unparalleled performance, stunning built-in themes, touch-friendly UI, localization and seamless integration with Visual Studio.
@@ -65,10 +67,10 @@ background-color:transparent!important;
 <table id="table">
 <tbody>
 <colgroup>
-<col style="width: 200px">
-<col style="width: 260px">
-<col style="width: 220px">
-<col style="width: 220px">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
 </colgroup>
   <tr>
     <th id="title">GRIDS</th>
@@ -337,16 +339,16 @@ background-color:transparent!important;
 
 ## Licensing
 
-Refer [licensing](https://help.syncfusion.com/common/essential-studio/licensing/license-key) documentation to learn about registering syncfusion license key in your Windows Forms application to use syncfusion controls without license message dialog at runtime.
+Refer [licensing](https://help.syncfusion.com/common/essential-studio/licensing/overview) documentation to learn about registering syncfusion license key in your Windows Forms application to use syncfusion controls without license message dialog at runtime.
 
 ## Additional help resources
 
-The [Knowledge Base](https://www.syncfusion.com/kb/windowsforms) section contains responses to most of the common questions that other customers have asked in the past, so this would be a good place to search for topics that are not covered in the User Guide.
+The [Knowledge Base](https://support.syncfusion.com/kb/desktop/category/82) section contains responses to most of the common questions that other customers have asked in the past, so this would be a good place to search for topics that are not covered in the User Guide.
 
-Similar to the [Knowledge Base](https://www.syncfusion.com/kb/windowsforms), the [Forum](https://www.syncfusion.com/forums/windowsforms) section also contains responses to questions that other customers has asked us in the past.
+Similar to the [Knowledge Base](https://support.syncfusion.com/kb/desktop/category/82), the [Forum](https://www.syncfusion.com/forums/windowsforms) section also contains responses to questions that other customers has asked us in the past.
 
 ## Support and feedback
 
-If you are unable to find the information that you are looking for in the self-help resources mentioned above then you contact us by creating a [support ticket](https://www.syncfusion.com/support/directtrac/incidents).
+If you are unable to find the information that you are looking for in the self-help resources mentioned above then you contact us by creating a [support ticket](https://internalsupport.bolddesk.com/agent/tickets/create).
 
 Don’t see what you need? Please request it in our [feedback portal](https://www.syncfusion.com/feedback/winforms).

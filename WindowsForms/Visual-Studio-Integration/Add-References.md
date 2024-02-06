@@ -47,14 +47,14 @@ Follow the given steps to add the Syncfusion references in Visual Studio:
 
    ![Assembly location option in Syncfusion Reference Manger](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img4.png)
 
-   N> The GAC option will not be available, if you have selected WinForms (.NET 6.0, .NET 5.0 and .NET Core 3.1) application in Visual Studio 2019 or later.
+   N> The GAC option will not be available, if you have selected WinForms (.NET 8.0, .NET 7.0, .NET 6.0, .NET 5.0, and .NET Core 3.1) application in Visual Studio 2019 or later.
 
    **Version:** Choose the build version to add the corresponding version assemblies to the project.
 
    ![Assembly location option in Syncfusion Reference Manger](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger1-img4.png)
 
    
-   N> Window Forms (.NET Core 3.1 and .NET 5.0) application in Visual Studio 2019 is supported from 18.2.0.44 version and .NET 6.0 application in Visual Studio 2022 is supported from 19.4.0.38. Version combobox is not visible for nuget option.
+   N> Window Forms (.NET Core 3.1 and .NET 5.0) application in Visual Studio 2019 is supported from 18.2.0.44 version and .NET 6.0 application in Visual Studio 2022 is supported from 19.4.0.38 and .NET 7.0 application in Visual Studio 2022 is supported from 20.4.0.38 and .NET 8.0 application in Visual Studio 2022 is supported from 23.2.4. Version combobox is not visible for nuget option.
   
 
 4. Choose the required controls that you want to include in the project. Then, click Done to add the required assemblies for the selected controls into the project. The following screenshot shows the list of required assemblies for the selected controls to be added.

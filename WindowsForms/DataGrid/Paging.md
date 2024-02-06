@@ -405,7 +405,7 @@ Follow the below steps to load the DataSource for page in on-demand,
 [OnDemandLoadingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataPager.Events.OnDemandLoadingEventArgs.html#Syncfusion_WinForms_DataPager_Events_OnDemandLoadingEventArgs_StartRowIndex) has the following members,
 
 1.	 [StartRowIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataPager.Events.OnDemandLoadingEventArgs.html#Syncfusion_WinForms_DataPager_Events_OnDemandLoadingEventArgs_StartRowIndex) - returns the start index based on PageIndex (Number of previous pages * PageSize).
-2.  [PageSize]((https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.PagedCollectionView.html#Syncfusion_Data_PagedCollectionView_PageSize) ) - denotes the number of records to be displayed in the page.
+2.  [PageSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.PagedCollectionView.html#Syncfusion_Data_PagedCollectionView_PageSize) - denotes the number of records to be displayed in the page.
 
 N> Do not assign SfDataPager.Source property while using on-demand paging.
 
@@ -426,11 +426,12 @@ sfDataPager1.LoadDynamicData(e.StartRowIndex, employeeCollection.Skip(e.StartRow
 {% highlight vb %}
 Private employeeCollection As List(Of Employees)
 
-AddHandler Me.sfDataPager1.OnDemandLoading += AddressOf OnDemandLoading
+AddHandler Me.sfDataPager1.OnDemandLoading, AddressOf OnDemandLoading
 
 Private Sub OnDemandLoading(ByVal sender As Object, ByVal e As OnDemandLoadingEventArgs)
-sfDataPager1.LoadDynamicData(e.StartRowIndex, employeeCollection.Skip(e.StartRowIndex).Take(e.PageSize))
+    sfDataPager1.LoadDynamicData(e.StartRowIndex, employeeCollection.Skip(e.StartRowIndex).Take(e.PageSize))
 End Sub
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -492,15 +493,16 @@ private void OnDemandLoading(object sender, OnDemandLoadingEventArgs e)
 }
 {% endhighlight %}
 {% highlight vb %}
-AddHandler Me.sfDataPager1.OnDemandLoading += AddressOf OnDemandLoading
+AddHandler Me.sfDataPager1.OnDemandLoading, AddressOf OnDemandLoading
 
 Private Sub OnDemandLoading(ByVal sender As Object, ByVal e As OnDemandLoadingEventArgs)
-	sfDataPager1.LoadDynamicData(e.StartRowIndex, employeeCollection.Skip(e.StartRowIndex).Take(e.PageSize))
+    sfDataPager1.LoadDynamicData(e.StartRowIndex, employeeCollection.Skip(e.StartRowIndex).Take(e.PageSize))
 
-      'resetting cache for all pages.
+    'resetting cache for all pages.
 
-	TryCast(sfDataPager1.PagedSource, PagedCollectionView).ResetCache()
+    TryCast(sfDataPager1.PagedSource, PagedCollectionView).ResetCache()
 End Sub
+
 {% endhighlight %}
 {% endtabs %}
 

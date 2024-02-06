@@ -11,8 +11,8 @@ documentation: ug
 SfDataGrid provides support to export data to excel. It also provides support for grouping, filtering, sorting, paging, unbound rows and stacked headers while exporting.
 The following assemblies needs to be added for exporting to excel.
 
-* [Syncfusion.SfDataGridConverter.WinForms](https://help.syncfusion.com/cr/windowsforms)
-* [Syncfusion.XlsIO.Base](https://help.syncfusion.com/cr/windowsforms)
+* [Syncfusion.SfDataGridConverter.WinForms](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.html)
+* [Syncfusion.XlsIO.Base](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.ExcelBaseFormat.html)
 
 For NuGet package, have to install [Syncfusion.DataGridExport.WinForms](https://www.nuget.org/packages/Syncfusion.DataGridExport.WinForms/) package.For more details refer this [UG link](https://help.syncfusion.com/windowsforms/control-dependencies#exporting-sfdatagrid-to-excel-pdf-and-csv)
 
@@ -236,7 +236,7 @@ workBook.SaveAs(fileStream)
 Refer to the [XlsIO documentation](https://help.syncfusion.com/file-formats/xlsio/faq) for further reference. 
 
 ### Save Using File Dialog
-After exporting the SfDataGrid to excel, the exported workbook can be saved by opening the [FileDialog](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.filedialog?view=net-5.0). 
+After exporting the SfDataGrid to excel, the exported workbook can be saved by opening the [FileDialog](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.filedialog?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0). 
 
 {% tabs %}
 {% highlight c# %}
@@ -611,25 +611,27 @@ void options_Exporting(object sender, Syncfusion.WinForms.DataGridConverter.Even
 }        
 {% endhighlight %}
 {% highlight vb %}
-Dim options = New ExcelExportingOptions()
-options.Exporting += options_Exporting
+Dim options As New ExcelExportingOptions()
+AddHandler options.Exporting, AddressOf options_Exporting
 options.AllowOutlining = True
-Dim excelEngine = sfDataGrid.ExportToExcel(sfDataGrid.View, options)
+Dim excelEngine = sfDataGrid1.ExportToExcel(sfDataGrid1.View, options)
 Dim workBook = excelEngine.Excel.Workbooks(0)
 workBook.SaveAs("Sample.xlsx")
+
 Private Sub options_Exporting(ByVal sender As Object, ByVal e As Syncfusion.WinForms.DataGridConverter.Events.DataGridExcelExportingEventArgs)
-If e.CellType Is ExportCellType.HeaderCell Then
-e.CellStyle.BackGroundColor = Color.LightPink
-e.CellStyle.ForeGroundColor = Color.White
-e.Handled = True
-ElseIf e.CellType Is ExportCellType.RecordCell Then
-e.CellStyle.BackGroundColor = Color.LightSkyBlue
-e.Handled = True
-ElseIf e.CellType Is ExportCellType.GroupCaptionCell Then
-e.CellStyle.BackGroundColor =Color.Wheat
-e.Handled = True
-End If
+    If e.CellType = ExportCellType.HeaderCell Then
+        e.CellStyle.BackGroundColor = Color.LightPink
+        e.CellStyle.ForeGroundColor = Color.White
+        e.Handled = True
+    ElseIf e.CellType = ExportCellType.RecordCell Then
+        e.CellStyle.BackGroundColor = Color.LightSkyBlue
+        e.Handled = True
+    ElseIf e.CellType = ExportCellType.GroupCaptionCell Then
+        e.CellStyle.BackGroundColor = Color.Wheat
+        e.Handled = True
+    End If
 End Sub
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -663,24 +665,25 @@ void CellExporting(object sender, Syncfusion.WinForms.DataGridConverter.Events.D
 }        
 {% endhighlight %}
 {% highlight vb %}
-Dim options = New ExcelExportingOptions()
-options.CellExporting += CellExporting
-Dim excelEngine = sfDataGrid.ExportToExcel(sfDataGrid.View, options)
+Dim options As New ExcelExportingOptions()
+AddHandler options.CellExporting, AddressOf OnCellExporting
+Dim excelEngine = sfDataGrid1.ExportToExcel(sfDataGrid1.View, options)
 Dim workBook = excelEngine.Excel.Workbooks(0)
 workBook.SaveAs("Sample.xlsx")
 
-Private Sub CellExporting(ByVal sender As Object, ByVal e As Syncfusion.WinForms.DataGridConverter.Events.DataGridCellExcelExportingEventArgs)
-	'Based on the column mapping name and the cell type, we can change the cell values while exporting to excel.
-	If e.CellType Is ExportCellType.RecordCell AndAlso e.ColumnName = "OrderID" Then
-		'if the cell value is Odd, "Y" will be displayed else "N" will be displayed.
-		If CInt(Fix(e.CellValue)) Mod 2 = 0 Then
-			e.Range.Cells(0).Value = "Y"
-		Else
-			e.Range.Cells(0).Value = "N"
-		End If
-		e.Handled = True
-	End If
+Private Sub OnCellExporting(ByVal sender As Object, ByVal e As Syncfusion.WinForms.DataGridConverter.Events.DataGridCellExcelExportingEventArgs)
+    'Based on the column mapping name and the cell type, we can change the cell values while exporting to excel.
+    If e.CellType = ExportCellType.RecordCell AndAlso e.ColumnName = "OrderID" Then
+        'if the cell value is Odd, "Y" will be displayed else "N" will be displayed.
+        If CInt(Fix(e.CellValue)) Mod 2 = 0 Then
+            e.Range.Cells(0).Value = "Y"
+        Else
+            e.Range.Cells(0).Value = "N"
+        End If
+        e.Handled = True
+    End If
 End Sub
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -709,23 +712,24 @@ private void options_CellExporting(object sender, Syncfusion.WinForms.DataGridCo
 }        
 {% endhighlight %}
 {% highlight vb %}
-Private options = New ExcelExportingOptions()
-Private options.CellExporting += AddressOf options_CellExporting
-Private excelEngine = sfDataGrid.ExportToExcel(sfDataGrid.View, options)
-Private workBook = excelEngine.Excel.Workbooks(0)
+Dim options As New ExcelExportingOptions()
+AddHandler options.CellExporting, AddressOf options_CellExporting
+Dim excelEngine = sfDataGrid1.ExportToExcel(sfDataGrid1.View, options)
+Dim workBook = excelEngine.Excel.Workbooks(0)
 workBook.SaveAs("Sample.xlsx")
 
 Private Sub options_CellExporting(ByVal sender As Object, ByVal e As Syncfusion.WinForms.DataGridConverter.Events.DataGridCellExcelExportingEventArgs)
-	If Not(TypeOf e.NodeEntry Is OrderInfo) Then
-		Return
-	End If
-	Dim record = TryCast(e.NodeEntry, OrderInfo)
+    If Not (TypeOf e.NodeEntry Is OrderInfo) Then
+        Return
+    End If
+    Dim record = TryCast(e.NodeEntry, OrderInfo)
 
-	If record.CustomerID = "FRANS" Then
-		e.Range.CellStyle.ColorIndex = ExcelKnownColors.Green
-		e.Range.CellStyle.Font.Color = ExcelKnownColors.White
-	End If
+    If record.CustomerID = "FRANS" Then
+        e.Range.CellStyle.ColorIndex = ExcelKnownColors.Green
+        e.Range.CellStyle.Font.Color = ExcelKnownColors.White
+    End If
 End Sub
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -751,21 +755,22 @@ private void Options_CellExporting(object sender, Syncfusion.WinForms.DataGridCo
 }
 {% endhighlight %}
 {% highlight vb %}
-Private options = New ExcelExportingOptions()
-Private options.CellExporting += AddressOf Options_CellExporting
-Private excelEngine = sfDataGrid.ExportToExcel(sfDataGrid.View, options)
-Private workBook = excelEngine.Excel.Workbooks(0)
+Dim options As New ExcelExportingOptions()
+AddHandler options.CellExporting, AddressOf options_CellExporting
+Dim excelEngine = sfDataGrid1.ExportToExcel(sfDataGrid1.View, options)
+Dim workBook = excelEngine.Excel.Workbooks(0)
 workBook.SaveAs("Sample.xlsx")
 
 Private Sub Options_CellExporting(ByVal sender As Object, ByVal e As Syncfusion.WinForms.DataGridConverter.Events.DataGridCellExcelExportingEventArgs)
-	If e.ColumnName <> "OrderID" Then
-		Return
-	End If
+    If e.ColumnName <> "OrderID" Then
+        Return
+    End If
 
-	e.Range.CellStyle.Font.Size = 12
-	e.Range.CellStyle.Font.Color = ExcelKnownColors.Pink
-	e.Range.CellStyle.Font.FontName = "Segoe UI"
+    e.Range.CellStyle.Font.Size = 12
+    e.Range.CellStyle.Font.Color = ExcelKnownColors.Pink
+    e.Range.CellStyle.Font.FontName = "Segoe UI"
 End Sub
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -787,13 +792,14 @@ private void OnCellExporting(object sender, Syncfusion.WinForms.DataGridConverte
 }  
 {% endhighlight %}
 {% highlight vb %}
-Private GridExcelExportingOptions As New ExcelExportingOptions()
-AddHandler CellExporting, AddressOf OnCellExporting
+Dim GridExcelExportingOptions As New ExcelExportingOptions()
+AddHandler GridExcelExportingOptions.CellExporting, AddressOf OnCellExporting
 
 Private Sub OnCellExporting(ByVal sender As Object, ByVal e As Syncfusion.WinForms.DataGridConverter.Events.DataGridCellExcelExportingEventArgs)
-	'Set the border color for the excel cell 
-	e.Range.BorderAround(ExcelLineStyle.Medium, ExcelKnownColors.Yellow)
+    'Set the border color for the excel cell 
+    e.Range.BorderAround(ExcelLineStyle.Medium, ExcelKnownColors.Yellow)
 End Sub
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -814,7 +820,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% highlight vb %}
 Dim options = New ExcelExportingOptions()
-Dim excelEngine = sfDataGrid.ExportToExcel(sfDataGrid.View, options)
+Dim excelEngine = sfDataGrid1.ExportToExcel(sfDataGrid1.View, options)
 Dim workBook = excelEngine.Excel.Workbooks(0)
 workBook.SaveAs("Sample.xlsx")
 {% endhighlight %}
@@ -836,7 +842,7 @@ workBook.SaveAs("Sample.xlsx");
 Dim options = New ExcelExportingOptions()
 Dim excelEngine As New ExcelEngine()
 Dim workBook As IWorkbook = excelEngine.Excel.Workbooks.Create()
-sfDataGrid.ExportToExcel(sfDataGrid.View, options, workBook.Worksheets(0))
+sfDataGrid1.ExportToExcel(sfDataGrid1.View, options, workBook.Worksheets(0))
 workBook.Version = ExcelVersion.Excel2013
 workBook.SaveAs("Sample.xlsx")
 {% endhighlight %}
@@ -857,13 +863,13 @@ workBook.Worksheets[0].UsedRange.BorderAround(ExcelLineStyle.Dash_dot, ExcelKnow
 workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% highlight vb %}
-var options = new ExcelExportingOptions();
-options.ExcelVersion = ExcelVersion.Excel2013;
-var excelEngine = sfDataGrid.ExportToExcel(sfDataGrid.View, options);
-var workBook = excelEngine.Excel.Workbooks[0];
-workBook.Worksheets[0].UsedRange.BorderInside(ExcelLineStyle.Dash_dot, ExcelKnownColors.Black);
-workBook.Worksheets[0].UsedRange.BorderAround(ExcelLineStyle.Dash_dot, ExcelKnownColors.Black);
-workBook.SaveAs("Sample.xlsx");
+Dim options As New ExcelExportingOptions()
+options.ExcelVersion = ExcelVersion.Excel2013
+Dim excelEngine = sfDataGrid1.ExportToExcel(sfDataGrid1.View, options)
+Dim workBook = excelEngine.Excel.Workbooks(0)
+workBook.Worksheets(0).UsedRange.BorderInside(ExcelLineStyle.Dash_dot, ExcelKnownColors.Black)
+workBook.Worksheets(0).UsedRange.BorderAround(ExcelLineStyle.Dash_dot, ExcelKnownColors.Black)
+workBook.SaveAs("Sample.xlsx")
 {% endhighlight %}
 {% endtabs %}
 
@@ -879,9 +885,9 @@ workBook.Worksheets[0].AutoFilters.FilterRange = workBook.Worksheets[0].UsedRang
 workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% highlight vb %}
-Dim options = New ExcelExportingOptions()
+Dim options As New ExcelExportingOptions()
 options.ExcelVersion = ExcelVersion.Excel2013
-Dim excelEngine = sfDataGrid.ExportToExcel(sfDataGrid.View, options)
+Dim excelEngine = sfDataGrid1.ExportToExcel(sfDataGrid1.View, options)
 Dim workBook = excelEngine.Excel.Workbooks(0)
 workBook.Worksheets(0).AutoFilters.FilterRange = workBook.Worksheets(0).UsedRange
 workBook.SaveAs("Sample.xlsx")
@@ -903,12 +909,12 @@ excelEngine.Excel.Workbooks[0].Worksheets[0].AutoFilters.FilterRange = workBook.
 workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% highlight vb %}
-Dim options = New ExcelExportingOptions()
+Dim options As New ExcelExportingOptions()
 options.ExcelVersion = ExcelVersion.Excel2013
 options.ExportStackedHeaders = True
-Dim excelEngine = sfDataGrid.ExportToExcel(sfDataGrid.View, options)
+Dim excelEngine = sfDataGrid1.ExportToExcel(sfDataGrid1.View, options)
 Dim workBook = excelEngine.Excel.Workbooks(0)
-Dim range = "A" & (sfDataGrid.StackedHeaderRows.Count + 1).ToString() & ":" & workBook.Worksheets(0).UsedRange.End.AddressLocal
+Dim range = "A" & (sfDataGrid1.StackedHeaderRows.Count + 1).ToString() & ":" & workBook.Worksheets(0).UsedRange.End.AddressLocal
 excelEngine.Excel.Workbooks(0).Worksheets(0).AutoFilters.FilterRange = workBook.Worksheets(0).Range(range)
 workBook.SaveAs("Sample.xlsx")
 {% endhighlight %}
@@ -929,13 +935,14 @@ workBook.Worksheets[0].Range["A2:A6"].CellStyle.Font.Color = ExcelKnownColors.Wh
 workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% highlight vb %}
-Dim options = New ExcelExportingOptions()
+Dim options As New ExcelExportingOptions()
 options.ExcelVersion = ExcelVersion.Excel2013
-Dim excelEngine = sfDataGrid.ExportToExcel(sfDataGrid.View, options)
+Dim excelEngine = sfDataGrid1.ExportToExcel(sfDataGrid1.View, options)
 Dim workBook = excelEngine.Excel.Workbooks(0)
 workBook.Worksheets(0).Range("A2:A6").CellStyle.Color = System.Drawing.Color.LightSlateGray
 workBook.Worksheets(0).Range("A2:A6").CellStyle.Font.Color = ExcelKnownColors.White
 workBook.SaveAs("Sample.xlsx")
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -961,24 +968,25 @@ worksheet2.UsedRange.CopyTo(worksheet1[1, columnCount + 1]);
 workBook1.SaveAs("sample.xlsx");
 {% endhighlight %}
 {% highlight vb %}
-Dim options = New ExcelExportingOptions()
-options.ExcelVersion = ExcelVersion.Excel2010
+ Dim options As New ExcelExportingOptions()
+ options.ExcelVersion = ExcelVersion.Excel2010
 
-Dim sfDataGrid1 As New SfDataGrid()
-sfDataGrid1.DataSource = New OrderInfoCollection().OrdersListDetails
+ Dim sfDataGrid1 As New SfDataGrid()
+ sfDataGrid1.DataSource = New OrderInfoCollection().OrdersListDetails
 
-Dim excelEngine = sfDataGrid.ExportToExcel(sfDataGrid.View, options)
-Dim workBook1 = excelEngine.Excel.Workbooks(0)
-Dim worksheet1 = workBook1.Worksheets(0)
+ Dim excelEngine = sfDataGrid1.ExportToExcel(sfDataGrid1.View, options)
+ Dim workBook1 = excelEngine.Excel.Workbooks(0)
+ Dim worksheet1 = workBook1.Worksheets(0)
 
-excelEngine = sfDataGrid1.ExportToExcel(sfDataGrid1.View, options)
-Dim workBook2 = excelEngine.Excel.Workbooks(0)
-Dim worksheet2 = workBook2.Worksheets(0)
+ excelEngine = sfDataGrid1.ExportToExcel(sfDataGrid1.View, options)
+ Dim workBook2 = excelEngine.Excel.Workbooks(0)
+ Dim worksheet2 = workBook2.Worksheets(0)
 
-Dim columnCount = sfDataGrid.Columns.Count
-'Merge the One SfDataGrid WorkSheet into the other SfDataGrid WorkSheet
-worksheet2.UsedRange.CopyTo(worksheet1(1, columnCount + 1))
-workBook1.SaveAs("sample.xlsx")
+ Dim columnCount = sfDataGrid1.Columns.Count
+ 'Merge the One SfDataGrid WorkSheet into the other SfDataGrid WorkSheet
+ worksheet2.UsedRange.CopyTo(worksheet1(1, columnCount + 1))
+ workBook1.SaveAs("sample.xlsx")
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -999,13 +1007,14 @@ workBook.ActiveSheet.Columns[5].NumberFormat = "0.0";
 workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% highlight vb %}
-Dim options = New ExcelExportingOptions()
+Dim options As New ExcelExportingOptions()
 options.ExportMode = ExportMode.Value
 options.ExcelVersion = ExcelVersion.Excel2013
-Dim excelEngine = sfDataGrid.ExportToExcel(sfDataGrid.View, options)
+Dim excelEngine = sfDataGrid1.ExportToExcel(sfDataGrid1.View, options)
 Dim workBook As IWorkbook = excelEngine.Excel.Workbooks(0)
 workBook.ActiveSheet.Columns(5).NumberFormat = "0.0"
 workBook.SaveAs("Sample.xlsx")
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -1034,13 +1043,13 @@ condition2.BackColorRGB = System.Drawing.Color.LightGray;
 workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% highlight vb %}
-Dim options = New ExcelExportingOptions()
+Dim options As New ExcelExportingOptions()
 options.ExportMode = ExportMode.Value
 options.ExcelVersion = ExcelVersion.Excel2013
-Dim excelEngine = sfDataGrid.ExportToExcel(sfDataGrid.View, options)
+Dim excelEngine = sfDataGrid1.ExportToExcel(sfDataGrid1.View, options)
 Dim workBook As IWorkbook = excelEngine.Excel.Workbooks(0)
 
-Dim condition As IConditionalFormats = workBook.ActiveSheet.Range(2, 1, Me.sfDataGrid.View.Records.Count + 1, Me.sfDataGrid.Columns.Count).ConditionalFormats
+Dim condition As IConditionalFormats = workBook.ActiveSheet.Range(2, 1, Me.sfDataGrid1.View.Records.Count + 1, Me.sfDataGrid1.Columns.Count).ConditionalFormats
 Dim condition1 As IConditionalFormat = condition.AddCondition()
 condition1.FormatType = ExcelCFType.Formula
 condition1.FirstFormula = "MOD(ROW(),2)=0"
@@ -1050,6 +1059,7 @@ condition2.FormatType = ExcelCFType.Formula
 condition2.FirstFormula = "MOD(ROW(),2)=1"
 condition2.BackColorRGB = System.Drawing.Color.LightGray
 workBook.SaveAs("Sample.xlsx")
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -1059,4 +1069,4 @@ Refer the [XlsIO document](https://help.syncfusion.com/file-formats/xlsio/workin
 
 ## See also
 
-[How to change the row height for the exported excel sheet in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9603)
+[How to change the row height for the exported excel sheet in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/8529/how-to-change-the-row-height-for-the-exported-excel-sheet-in-winforms-datagrid-sfdatagrid)

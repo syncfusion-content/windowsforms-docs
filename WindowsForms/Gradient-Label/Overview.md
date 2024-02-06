@@ -21,8 +21,8 @@ The .NET Framework provides a label control typically used to provide descriptiv
 
 ## Key features
 
-**Styles** - Provides different set of styles to the control. The styles are Pattern, Solid, Gradient, and None.
+* **Styles** - Provides different set of styles to the control. The styles are Pattern, Solid, Gradient, and None.
 
-**Gradient Style** - Provides different sets of styles to the Gradient. The styles are None, ForwardDiagonal, BackwardDiagonal, Horizontal, Vertical, PathRectangle, and PathEllipse.
+* **Gradient Style** - Provides different sets of styles to the Gradient. The styles are None, ForwardDiagonal, BackwardDiagonal, Horizontal, Vertical, PathRectangle, and PathEllipse.
 
 N> All the other functions of the GradientLabel is the same as the System.Windows.Forms.Label control in the Windows Forms library.

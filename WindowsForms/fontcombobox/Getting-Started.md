@@ -37,12 +37,12 @@ The FontComboBox control can be added to the application by dragging it from Too
 
 In order to add FontComboBox control manually, do the below steps,
 
-1) Add the required [assembly references](https://help.syncfusion.com/windowsforms/control-dependencies#fontcombobox) to the project.
+1. Add the required [assembly references](https://help.syncfusion.com/windowsforms/control-dependencies#fontcombobox) to the project.
 
-2) Create the FontComboBox control instance and add it to the form.
+2. Create the FontComboBox control instance and add it to the form.
 
+{% capture codesnippet1 %}
 {% tabs %}
-
 {% highlight C# %}
 
 FontComboBox fontComboBox = new FontComboBox();
@@ -60,8 +60,9 @@ fontComboBox.Location = New Point(100, 100)
 Me.Controls.Add(fontComboBox)
 
 {% endhighlight %}
-
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }} 
 
 ![Default initialization of WF FontComboBox control](GettingStarted_images/wf-fontcombobox-control.png)
 
@@ -89,7 +90,7 @@ fontComboBox.UseAutoComplete = True
 
 ## Selection
 
-You can programmatically select the item or index by using the [SelectedItem](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.combobox.selecteditem?view=netcore-3.1) or [SelectedIndex](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.combobox.selectedindex?view=netcore-3.1) properties in FontComboBox control.
+You can programmatically select the item or index by using the [SelectedItem](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.combobox.selecteditem?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1) or [SelectedIndex](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.combobox.selectedindex?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1) properties in FontComboBox control.
 
 {% tabs %}
 
@@ -121,7 +122,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/GettingStarted-
 
 ## RTL support
 
-RTL is used to display the content from right to left by setting the [RightToLeft](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.righttoleft?view=netcore-3.1) property to `Yes`.
+RTL is used to display the content from right to left by setting the [RightToLeft](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.righttoleft?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1) property to `Yes`.
 
 {% tabs %}
 

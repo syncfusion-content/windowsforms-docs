@@ -19,13 +19,13 @@ Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/
 
 ## Adding EditControl via designer
 
-1) Create a new Windows Forms project in Visual Studio.
+1. Create a new Windows Forms project in Visual Studio.
 
-2) Add the [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
+2. Add the [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
-* Syncfusion.Shared.Base
-* Syncfusion.Tools.Windows
-* Syncfusion.Edit.Windows
+	* Syncfusion.Shared.Base
+	* Syncfusion.Tools.Windows
+	* Syncfusion.Edit.Windows
 
 ![Windows Forms EditControl drag and drop from toolbox](Getting-Started_images/Getting-Started_img2.png)
 
@@ -33,18 +33,18 @@ Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/
 
 To add the control manually in C#, follow the given steps:
 
-1) Create a C# or VB application via Visual Studio.
+1. Create a C# or VB application via Visual Studio.
 
-2) Add the following assembly references to the project:
+2. Add the following assembly references to the project:
 
-* Syncfusion.Shared.Base
-* Syncfusion.Tools.Windows
-* Syncfusion.Edit.Windows
+	* Syncfusion.Shared.Base
+	* Syncfusion.Tools.Windows
+	* Syncfusion.Edit.Windows
 
-3) Create an instance of the [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html), and then add it to the form.
+3. Create an instance of the [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html), and then add it to the form.
 
+{% capture codesnippet1 %}
 {% tabs %}
-
 {% highlight C# %}
 
 // Create the EditControl instance.
@@ -97,8 +97,9 @@ editControl1.BorderStyle = BorderStyle.Fixed3D
 Me.Controls.Add(editControl1)
 
 {% endhighlight %}
-
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }} 
 
 ![Windows Forms showing EditControl](Getting-Started_images/Getting-Started_img3.png)
 
@@ -172,62 +173,46 @@ Me.editControl1.ApplyConfiguration(KnownLanguages.CSharp)
 
 The EditControl provides supports custom language configuration. You can plug-in an external configuration file that defines a custom language to the EditControl using the [Configurator.Open](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_Configurator) and [ApplyConfiguration](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ApplyConfiguration_Syncfusion_Windows_Forms_Edit_Enums_KnownLanguages_) functions.
 
-1) Create a configuration file.
+1. Create a configuration file.
 
+{% capture codesnippet2 %}
 {% highlight xaml %}
 
-<ConfigLanguage name="LISP">
-
-        <formats>
-
-                <format name="Text" Font="Courier New, 10pt" FontColor="Salmon" />
-
-                <format name="KeyWord" Font="Courier New, 10pt" FontColor="Blue" />
-
-                <format name="String" Font="Courier New, 10pt, style=Bold" FontColor="Red" />
-
-                <format name="Operator" Font="Courier New, 10pt" FontColor="DarkCyan" />
-
-        </formats>
-
-        <extensions>
-
-                <extension>lsp</extension>
-
-        </extensions>
-
-        <lexems>
-
-                <lexem BeginBlock="(" Type="Operator" />
-
-                <lexem BeginBlock=")" Type="Operator" />
-
-                <lexem BeginBlock="'" Type="Operator" />
-
-                <lexem BeginBlock="car" Type="KeyWord" />
-
-                <lexem BeginBlock="cdr" Type="KeyWord" />
-
-                <lexem BeginBlock="cons" Type="KeyWord" />
-
-        </lexems>
-
-        <splits>
-
-                <split>#Region</split>
-
-                <split>#End Region</split>
-
-        </splits>
-
-</ConfigLanguage>
+<?xml version="1.0" encoding="utf-8" ?>
+<ArrayOfConfigLanguage>
+	<ConfigLanguage name="LISP">
+		<formats>
+			<format name="Text" Font="Courier New, 10pt" FontColor="Salmon" />
+			<format name="KeyWord" Font="Courier New, 10pt" FontColor="Blue" />
+			<format name="String" Font="Courier New, 10pt, style=Bold" FontColor="Red" />
+			<format name="Operator" Font="Courier New, 10pt" FontColor="DarkCyan" />
+		</formats>
+		<extensions>
+			<extension>lsp</extension>
+		</extensions>
+		<lexems>
+			<lexem BeginBlock="(" Type="Operator" />
+			<lexem BeginBlock=")" Type="Operator" />
+			<lexem BeginBlock="'" Type="Operator" />
+			<lexem BeginBlock="car" Type="KeyWord" />
+			<lexem BeginBlock="cdr" Type="KeyWord" />
+			<lexem BeginBlock="cons" Type="KeyWord" />
+		</lexems>
+		<splits>
+			<split>#Region</split>
+			<split>#End Region</split>
+		</splits>
+	</ConfigLanguage>
+</ArrayOfConfigLanguage>
 
 {% endhighlight %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }} 
 
-2) Apply the configuration file into the EditControl.
+2. Apply the configuration file into the EditControl.
 
+{% capture codesnippet3 %}
 {% tabs %}
-
 {% highlight C# %}
 
 private string configFile = Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\config.xml";
@@ -256,8 +241,9 @@ Me.editControl1.Configurator.Open(configFile)
 Me.editControl1.ApplyConfiguration("LISP")
 
 {% endhighlight %}
-
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }} 
 
 ![Windows Forms EditControl configured for custom language](Getting-Started_images/Getting-Started_img5.png)
 

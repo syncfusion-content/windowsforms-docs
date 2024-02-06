@@ -28,7 +28,7 @@ To add sparkline to your form, follow the given steps:
 
 2.Drag the sparkline control from toolbox and drop into the form. The default appearance of sparkline will be rendered.
 
-![Form](GettingStarted_images/Form.jpg)
+![Drag toolbox in WindowsForms Sparkline](gettingstarted_images/windowsforms-sparkline-drag-toolbox.jpg)
 
 ## Customizing sparkline appearance
 
@@ -50,7 +50,7 @@ Me.sparkLine1.LineStyle.LineColor = System.Drawing.Color.Maroon
 
 {% endtabs %}
 
-![Customization](GettingStarted_images/Customization.jpg)
+![Customize Sparkline appearance in WindowsForms application](gettingstarted_images/windowsforms-sparkline-customization.jpg)
 
 ## Adding marker to sparkline
 
@@ -72,7 +72,7 @@ Me.sparkLine1.Markers.ShowMarker = true
 
 {% endtabs %}
 
-![Marker](GettingStarted_images/Marker.jpg)
+![Adding marker in WindowsForms Sparkline](gettingstarted_images/windowsforms-sparkline-adding-marker.jpg)
 
 ## Highlighting high/low values
 
@@ -130,8 +130,8 @@ Me.sparkLine1.Markers.NegativePointColor = New BrushInfo(Color.Red)
 
 {% endtabs %}
 
-![MarkerCustomization](GettingStarted_images/MarkerCustomization.jpg)
+![Marker customization in WindowsForms Sparkline](gettingstarted_images/windowsforms-sparkline-marker-customization.jpg)
 
-You can find the complete getting started sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SparklineGettingStarted-1907776967).
+You can find the complete getting started sample from this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SparklineGettingStarted-1907776967).
 
 

@@ -15,7 +15,7 @@ The GradientPanel is a panel-derived control that acts as a container for other 
 
 ## Key features
 
-**Styles** - Provide a different set of styles to the control. The styles are Pattern, Solid, Gradient, and None.
+* **Styles** - Provide a different set of styles to the control. The styles are Pattern, Solid, Gradient, and None.
 
-**Gradient styles** - Provide a different set of styles to the gradient. The styles are None, ForwardDiagonal, BackwardDiagonal, Horizontal, Vertical, PathRectangle, and PathEllipse.
+* **Gradient styles** - Provide a different set of styles to the gradient. The styles are None, ForwardDiagonal, BackwardDiagonal, Horizontal, Vertical, PathRectangle, and PathEllipse.
 

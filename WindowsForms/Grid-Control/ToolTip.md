@@ -70,7 +70,7 @@ Me.gridControl1.RowStyles(2).CellTipText = "Hello"
 
 ### Adding ToolTip using QueryCellInfo Event
 
-The ToolTip can be added conditionally to the specific cell or row or column by using the [QueryCellInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html) event.
+The ToolTip can be added conditionally to the specific cell or row or column by using the [QueryCellInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_QueryCellInfo) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -152,10 +152,10 @@ Me.gridControl1.CellToolTip.Active = False
 
 The below properties are used to set the ToolTip delay time.
 
-* [AutoPopDelay](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.tooltip.autopopdelay?view=net-5.0)
-* [InitialDelay](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.tooltip.initialdelay?view=net-5.0)
-* [ReshowDelay](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.tooltip.reshowdelay?view=net-5.0)
-* [AutomaticDelay](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.tooltip.automaticdelay?view=net-5.0)
+* [AutoPopDelay](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.tooltip.autopopdelay?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0)
+* [InitialDelay](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.tooltip.initialdelay?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0)
+* [ReshowDelay](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.tooltip.reshowdelay?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0)
+* [AutomaticDelay](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.tooltip.automaticdelay?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0)
 
 ### AutoPopDelay
 
@@ -245,7 +245,7 @@ Me.gridControl1.CellToolTip.AutomaticDelay = 1000
 
 ### ActivateToolTip
 
-[ActivateToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableControl.html) event will be triggered when the mouse hovers on a cell which has the valid [CellTipText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_CellTipText) (`CellTipText` should not be empty).
+[ActivateToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableControl_ActivateToolTip) event will be triggered when the mouse hovers on a cell which has the valid [CellTipText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_CellTipText) (`CellTipText` should not be empty).
 
 {% tabs %}
 {% highlight c# %}

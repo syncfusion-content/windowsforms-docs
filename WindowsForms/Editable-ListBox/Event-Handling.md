@@ -9,30 +9,31 @@ documentation: ug
 
 # Event Handling in Windows Forms Editable ListBox (EditableList)
 
-EditableList controls contains events present in the Windows Button, TextBox and ListBox.
+* EditableList controls contains events present in the Windows Button, TextBox and ListBox.
 
- EditableList.ListBox.SelectedValueChanged
+* EditableList.ListBox.SelectedValueChanged
 
-This event is triggered when the value of the SelectedValue property is changed on list control.
+* This event is triggered when the value of the SelectedValue property is changed on list control.
 
- EditableList.TextBox.TextChanged
+* EditableList.TextBox.TextChanged
 
-This event is triggered when the value of the Text property is changed on list control.
+* This event is triggered when the value of the Text property is changed on list control.
 
- EditableList.DragDrop
+* EditableList.DragDrop
 
-This event is triggered when the drag-and-drop operation is completed.
+* This event is triggered when the drag-and-drop operation is completed.
 
- EditableList.DragEnter
+* EditableList.DragEnter
 
-This event is triggered when a object is dragged into control's bounds.
+* This event is triggered when a object is dragged into control's bounds.
 
 [Handling Drag drop events](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DragAllowEventArgs.html)
 
 DragDrop and DragEnter events can be handled to drag and drop the external objects into the EditableList control.
 
-DragEnter event can be handled to drag the file into the text area of EditableList control. The following code illustrates this.
+1. DragEnter event can be handled to drag the file into the text area of EditableList control. The following code illustrates this.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -58,9 +59,12 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }} 
 
-DragDrop event can be handled to drop the files at any location into the EditableList control. The following code illustrates this.
+2. DragDrop event can be handled to drop the files at any location into the EditableList control. The following code illustrates this.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -86,3 +90,5 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }} 

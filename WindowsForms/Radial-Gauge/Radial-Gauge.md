@@ -541,7 +541,7 @@ Me.radialGauge1.MinorDifference = 2F
 
 ### FrameThickness
 
-The `FrameThickness` property of RadialGauge is used to specify the thickness of the frame. By default, the value of this property is 12. For [Fill frame type](https://help.syncfusion.com/windowsforms/gauge/radial-gauge#fillcircle), the default value of the `FrameThickness` is 20.
+The `FrameThickness` property of RadialGauge is used to specify the thickness of the frame. By default, the value of this property is 12. For [Fill frame type](https://help.syncfusion.com/windowsforms/radial-gauge/radial-gauge#fillcircle), the default value of the `FrameThickness` is 20.
 
 The following code and screenshot illustrates the RadialGauge with different FrameThickness,
 
@@ -569,7 +569,7 @@ this.radialGauge1.Value = 60
 
 Appearance and text of Scale labels in `FullCircle`, `HalfCircle` and `QuarterCircle` frame types and Value label of `Fill` frame type can customized using `DrawLabelEventArgs` event.
 
-The `DrawLabelEventArgs` provides the following data for the [DrawLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html) event of the RadialGauge.
+The `DrawLabelEventArgs` provides the following data for the [DrawLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_DrawLabel) event of the RadialGauge.
 
 <table>
 <tr>

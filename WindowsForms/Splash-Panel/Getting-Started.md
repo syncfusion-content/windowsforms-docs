@@ -27,7 +27,7 @@ The `SplashPanel` control provides full support for the Windows Forms designer.
 
 **Step 1**: Drag-and-drop the SplashPanel control from the toolbox onto the form.
 
-   ![Drag and drop the Splash panel from toolbox](Overview_images/splash_img5.jpeg) 
+   ![Drag and drop the Splash Panel from toolbox in WindowsForms application](overview_images/windowsforms-splash-panel-drag-and-drop.jpeg) 
 
 **Step 2**: Set the properties for the SplashPanel control and also drag and drop any child controls you want to add to the panel. Set the TimerInterval property to specify the period of time, the SplashPanel needs to be visible.
 
@@ -37,7 +37,7 @@ The `SplashPanel` control provides full support for the Windows Forms designer.
 
 **Step 5** You can cancel the SplashPanel by calling the HideSplash() method.
 
-   ![Windows forms splashpanel showing in designer page](Overview_images/splash_img2.jpeg) 
+   ![WindowsForms Splash Panel showing in designer page](overview_images/windowsforms-splash-panel-showing-in-designer-page.jpeg) 
 
 ## Through code
 
@@ -47,12 +47,13 @@ To create a SplashPanel programmatically, with a user control in it, follow the 
 
 **Step 2**: Add the required assembly reference.
 	
-	1. Syncfusion.Shared.Base.dll
+		1. Syncfusion.Shared.Base.dll
 
-	2. Syncfusion.Tools.Windows.dll
+		2. Syncfusion.Tools.Windows.dll
 
 **Step 3**: Add the namespaces given below to your form.
 
+{% capture codesnippet1 %}​
 {% tabs %}
 {% highlight c# %}
 
@@ -74,9 +75,12 @@ Imports System.Reflection
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 **Step 4**: Declare the SplashPanel and Button control.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -92,9 +96,12 @@ Friend WithEvents button1 As System.Windows.Forms.Button
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 **Step 5**: Initialize the controls and make it visible.
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -112,9 +119,12 @@ Me.splashPanel1.SuspendLayout()
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 **Step 6**: Set the properties for the SplashPanel and Button control.
 
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -176,9 +186,12 @@ Me.Controls.Add(Me.splashPanel1)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 **Step 7**: Call and define the ShowSplash() method as follows.
 
+{% capture codesnippet5 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -219,7 +232,9 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 **Step 8**: Run the application.
 
-   ![Windows forms splashpanel showing at run time](Overview_images/splash_img3.jpeg) 
+   ![WindowsForms Splash Panel showing at run time](overview_images/windowsforms-splash-panel-showing-at-run-time.jpeg) 

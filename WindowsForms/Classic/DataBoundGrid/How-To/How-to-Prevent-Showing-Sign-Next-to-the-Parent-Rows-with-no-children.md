@@ -19,6 +19,7 @@ Follow the steps given below.
 
 1. In the CellDrawn Event Handler, to assign the number of children in the parent row, to count, and to paint the current cell with BackgroundColor if count equals zero.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -116,9 +117,12 @@ End If
 End Sub
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. In CellButtonClick EventHandler to set the flag to control the Current Cell Drawing.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -136,3 +140,5 @@ flag = False
 End Sub
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}

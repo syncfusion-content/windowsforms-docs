@@ -12,8 +12,9 @@ documentation: ug
 We can associate an AutoComplete with the editing TextBox of the EditableList. The following steps help to achieve this.
 
 1. Create an instance of the AutoComplete.
-2.  In the Form load event, place this code.
+2. In the Form load event, place this code.
 
+{% capture codesnippet1 %}
 {% tabs %} 
 {% highlight c# %}
 
@@ -37,6 +38,8 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }} 
 
 The data source may vary according to your choice.
 

@@ -12,7 +12,7 @@ documentation: ug
 To suppress the TableControlCurrentCellKeyDown event, enable the SuppressKeyPress property in this event.  To get the Keys data, override the ProcessCmdKey() method. 
 
 1. Suppress the KeyDown event as given in the following code:
-
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -29,9 +29,11 @@ e.Inner.SuppressKeyPress = True
 End Sub
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. Handle the ProcessCmdKey() method to get the keys data as given in the following code: 
-
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -95,3 +97,5 @@ Return MyBase.ProcessCmdKey(msg, keyData)
 End Function
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}

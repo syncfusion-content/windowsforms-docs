@@ -213,7 +213,7 @@ sfListView1.CollapseGroup(group)
 {% endtabs %}
 
 ### Expand or collapse all the groups
-Expand or collapse all the groups programmatically at runtime by using the [SfListView.ExpandAll](//help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~ExpandAllGroups.html) method and [SfListView.CollapseAll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_CollapseAllGroups) method.
+Expand or collapse all the groups programmatically at runtime by using the [SfListView.ExpandAll](//help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_ExpandAllGroups) method and [SfListView.CollapseAll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_CollapseAllGroups) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -227,7 +227,7 @@ sfListView1.CollapseAllGroups()
 {% endtabs %}
 
 ## Disable expanding of specific group
-The [SfListView.GroupExpanding](//help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~GroupExpanding_EV.html) event occurs when the group is being expanded.
+The [SfListView.GroupExpanding](//help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_GroupExpanding) event occurs when the group is being expanded.
 The [GroupExpandCollapseChangingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.Events.GroupExpandCollapseChangingEventArgs.html) of the GroupExpanding event provides information about the expanding group and it has the following members:
 
 * `Group`: Gets a list of group being expanded.
@@ -259,7 +259,7 @@ End Sub
 {% endtabs %}
 
 ## Disable collapsing of specific group
-The [SfListView.GroupCollapsing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html) event occurs when the group is being collapsed.
+The [SfListView.GroupCollapsing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_GroupCollapsing) event occurs when the group is being collapsed.
 The [GroupExpandCollapseChangingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.Events.GroupExpandCollapseChangingEventArgs.html) of the GroupCollapsing event provides information about the collapsing group and it contains the following members:
 
 * `Group`: Get a group being collapsed.

@@ -523,7 +523,7 @@ Follow the steps given below for adding symbol palette into PaletteGroupBar:
 4. Add the following lines of code to your button click event.
 
 
-
+{% capture codesnippet1 %}
 {% highlight c# %}
 
 
@@ -567,6 +567,8 @@ if (openPaletteDialog.ShowDialog(this) == DialogResult.OK)
 }
 
 {% endhighlight %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ### Saving the active Palette
 
@@ -582,7 +584,7 @@ Follow the steps given below for saving current symbol palette.
 3. Add the following lines of code to your button click event. 
 
 
-
+{% capture codesnippet2 %}
 {% highlight c# %}
 
 
@@ -601,6 +603,8 @@ if (savePaletteDialog.ShowDialog(this) == DialogResult.OK)
 }
 
 {% endhighlight %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![Palette Groupbar And GroupView](Supported-Controls_images/Supported-Controls_img3.jpeg)
 

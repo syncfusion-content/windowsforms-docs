@@ -15,9 +15,9 @@ This section will explain about creating simple [Windows Forms GridControl](http
 
 Essential Grid includes a trio of grid controls as well as many other controls that are used in conjunction with these three grids. Essential Grid works similar to Microsoft Excel and allows extremely detailed customization down to the cell level. Multi-level Undo / Redo, Shared Scrollbar support, Data / View separation, floating cells, more than 15 cell types, and unmatched extensibility are the unique features of the Essential Grid.
 
-[GridGroupingControl](https://help.syncfusion.com/windowsforms/gridgrouping/getting-started): A high performance grouping grid that offers very flexible support for grouping flat data sources as well as hierarchical data sources. This grid supports expressions fields, filters, multi-column sorting, grouping, nested tables/hierarchies, and custom summaries. It can use any [IList](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ilist?view=net-5.0) data source including [ADO.NET](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/) [DataSet](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-5.0)/[DataTables](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-5.0) and [IBindingList](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ibindinglist?view=net-5.0) objects.
+[GridGroupingControl](https://help.syncfusion.com/windowsforms/gridgrouping/getting-started): A high performance grouping grid that offers very flexible support for grouping flat data sources as well as hierarchical data sources. This grid supports expressions fields, filters, multi-column sorting, grouping, nested tables/hierarchies, and custom summaries. It can use any [IList](https://learn.microsoft.com/en-us/dotnet/api/system.collections.ilist?view=net-5.0) data source including [ADO.NET](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/) [DataSet](https://learn.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-5.0)/[DataTables](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-5.0) and [IBindingList](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ibindinglist?view=net-5.0) objects.
 
-[GridDataBoundGrid](https://help.syncfusion.com/windowsforms/classic/databoundgrid/getting-started): A column oriented grid best suited for use with ADO.NET [DataSet](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-5.0)/[DataTables](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-5.0) data sources. If you are looking to bind with the `ADO.NET` data source without the grouping and hierarchical support then you can use GridDataBoundGrid. GridDataBoundGrid is marked as classic because all the features mentioned in this are available in `GridGroupingControl` with more efficiency and features.
+[GridDataBoundGrid](https://help.syncfusion.com/windowsforms/classic/databoundgrid/getting-started): A column oriented grid best suited for use with ADO.NET [DataSet](https://learn.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-5.0)/[DataTables](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-5.0) data sources. If you are looking to bind with the `ADO.NET` data source without the grouping and hierarchical support then you can use GridDataBoundGrid. GridDataBoundGrid is marked as classic because all the features mentioned in this are available in `GridGroupingControl` with more efficiency and features.
 
 [GridControl](https://help.syncfusion.com/windowsforms/grid-control/getting-started): A cell oriented grid that contain its own data. Does not need to be bound to a data source. Easily customize down to the cell level. Used in a [virtual manner](https://help.syncfusion.com/windowsforms/grid-control/virtual-grid) such that, it can bind to any type of data source.
 
@@ -65,7 +65,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td></tr>
 </table>
-N> The ‘*’ is denotes that by default the support is not provided to the Control. It will be added by having some customizations. The [Sorting](https://www.syncfusion.com/kb/454# "") and [Filtering](https://www.syncfusion.com/kb/4409/how-to-add-filter-in-grid-control# "") supports can be added to the `GridControl` using the customizations. 
+N> The ‘*’ is denotes that by default the support is not provided to the Control. It will be added by having some customizations. The [Sorting](https://support.syncfusion.com/kb/article/1515/how-to-implement-the-custom-icomparer-to-sort-a-column-in-the-gridcontrol) and [Filtering](https://support.syncfusion.com/kb/article/4292/how-to-add-filter-in-winforms-gridcontrol) supports can be added to the `GridControl` using the customizations. 
 
 For binding the different kind of data sources and support for filtering, sorting, grouping for flat and hierarchical data sources make use of the `GridGroupingControl`.
 
@@ -93,10 +93,10 @@ Windows Forms Grid Control can be added through designer by following the below 
 
 3. Once you drag drop the GridControl into the designer page, the GridControl will be added successfully into the application with the required libraries. The below mentioned assemblies will be added automatically into the application.
 
-* Syncfusion.Grid.Base.dll
-* [Syncfusion.Grid.Windows.dll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.html)
-* Syncfusion.Shared.Base.dll
-* Syncfusion.Shared.Windows.dll
+    * Syncfusion.Grid.Base.dll
+    * [Syncfusion.Grid.Windows.dll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.html)
+    * Syncfusion.Shared.Base.dll
+    * Syncfusion.Shared.Windows.dll
 
   ![windows forms grid control showing collection of rows and columns](CellGrid_GettingStarted_images/CellGrid_GettingStarted_img2.jpeg)
 
@@ -105,19 +105,20 @@ Windows Forms Grid Control can be added through designer by following the below 
 
 Windows Forms GridControl can be added through code-behind by following the below steps.
 
-1.Create a new Windows Form Application.
+1. Create a new Windows Form Application.
 
-2.Add the below assemblies into the project file
+2. Add the below assemblies into the project file
 
-* Syncfusion.Grid.Windows.dll
+    * Syncfusion.Grid.Windows.dll
 
-* Syncfusion.Shared.Base.dll
+    * Syncfusion.Shared.Base.dll
 
    ![windows forms grid control showing assemblies](CellGrid_GettingStarted_images/CellGrid_GettingStarted_img3.jpeg)
 
 
-3.Initialize a `GridControl` by using the below code in code behind.
-   
+3. Initialize a `GridControl` by using the below code in code behind.
+
+{% capture codesnippet1 %}​  
 {% tabs %}
 {% highlight c# %}
 //Initializing a new Grid.
@@ -128,9 +129,12 @@ Windows Forms GridControl can be added through code-behind by following the belo
 Private gridControl1 As New Syncfusion.Windows.Forms.Grid.GridControl()
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4.Use the below code for adding the initialized GridControl to the application.
+4. Use the below code for adding the initialized GridControl to the application.
 
+{% capture codesnippet2 %}​
 {% tabs %}
 {% highlight c# %}
 //Add required size for the Grid.
@@ -145,13 +149,16 @@ Me.gridControl1.Size = New System.Drawing.Size(344, 250)
 Me.Controls.Add(Me.gridControl1)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Populating Data
 
 Windows Forms GridControl is a cell based control and hence to populate the GridControl, [RowCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.IGridVolatileData.html#Syncfusion_Windows_Forms_Grid_IGridVolatileData_RowCount) and [ColCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.IGridVolatileData.html#Syncfusion_Windows_Forms_Grid_IGridVolatileData_ColCount) are necessary. By default the `RowCount` and `ColCount` values are 10. Data can be populated by any one of the following methods.
 
-1.Populate data by looping through cells in GridControl. 
+1. Populate data by looping through cells in GridControl. 
 
+{% capture codesnippet3 %}​
 {% tabs %}
 {% highlight c# %}
 //Specifying row and column count
@@ -182,9 +189,12 @@ Next col
 Next row
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-2.Populate data by using [PopulateValues](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_PopulateValues_Syncfusion_Windows_Forms_Grid_GridRangeInfo_System_Object_) method. This method will allow you to pass in a range of cells of type [GridRangeInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridRangeInfo.html#) and data source of type **object**. 
+2. Populate data by using [PopulateValues](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_PopulateValues_Syncfusion_Windows_Forms_Grid_GridRangeInfo_System_Object_) method. This method will allow you to pass in a range of cells of type [GridRangeInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridRangeInfo.html) and data source of type **object**. 
 
+{% capture codesnippet4 %}​
 {% tabs %}
 {% highlight c# %}
 //Specifying row and column count
@@ -224,9 +234,12 @@ gridControl1.ColCount = 4
 Me.gridControl1.PopulateValues(GridRangeInfo.Cells(1, 1, Me.gridControl1.RowCount, Me.gridControl1.ColCount), table)
 {% endhighlight %}	
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-3.Populate Data using [QueryCellInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html) event of the GridControl. This will load the data virtually ensuring the optimized performance. The data will be loaded in an on-demand basis. This will be discussed briefly in the [Virtual Grid](https://help.syncfusion.com/windowsforms/grid-control/virtual-grid) section.
-    
+3. Populate Data using [QueryCellInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_QueryCellInfo) event of the GridControl. This will load the data virtually ensuring the optimized performance. The data will be loaded in an on-demand basis. This will be discussed briefly in the [Virtual Grid](https://help.syncfusion.com/windowsforms/grid-control/virtual-grid) section.
+
+{% capture codesnippet5 %}​   
 {% tabs %}
 {% highlight c# %}
 //Specifying row and column count
@@ -259,6 +272,8 @@ e.Style.CellValue = String.Format("{0}/{1}", e.RowIndex, e.ColIndex)
 End If
 {% endhighlight %}	   
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 Final Look of the Grid:
 
@@ -351,7 +366,7 @@ Me.gridControl1.ListBoxSelectionMode = SelectionMode.None
 {% endhighlight %}
 {% endtabs %}
 
-For selecting the range of cells in GridControl, set the [AllowSelection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableOptionsStyleInfo_AllowSelection) property to the appropriate value from the [GridSelectionFlags](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridSelectionFlags.html#) enumeration. 
+For selecting the range of cells in GridControl, set the [AllowSelection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableOptionsStyleInfo_AllowSelection) property to the appropriate value from the [GridSelectionFlags](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridSelectionFlags.html) enumeration. 
 
 {% tabs %}
 {% highlight c# %}
@@ -363,7 +378,7 @@ Me.gridControl1.AllowSelection = Syncfusion.Windows.Forms.Grid.GridSelectionFlag
 {% endhighlight %}
 {% endtabs %}
 
-Selection operation can be handled by using [SelectionChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html) and [SelectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html) events.
+Selection operation can be handled by using [SelectionChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_SelectionChanging) and [SelectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_SelectionChanged) events.
 
 ## Editing
 
@@ -391,6 +406,6 @@ style.ReadOnly = False
 {% endhighlight %}
 {% endtabs %}
 
-Editing operation can be customized by using [CurrentCellStartEditing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridCardView.html) and [CurrentCellEditingComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html) events. 
+Editing operation can be customized by using [CurrentCellStartEditing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridCardView.html#Syncfusion_GridHelperClasses_GridCardView_CurrentCellStartEditing) and [CurrentCellEditingComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_CurrentCellEditingComplete) events. 
 
 N> You can also explore our [WinForms Grid control example](https://github.com/syncfusion/winforms-demos/tree/master/gridcontrol) that shows how to render the Grid control in Windows Forms.

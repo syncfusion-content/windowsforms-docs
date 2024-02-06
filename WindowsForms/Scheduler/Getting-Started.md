@@ -37,17 +37,18 @@ Create a new Windows Forms project in Visual Studio to display the Windows Forms
 
 To add the control manually, follow the steps:
 
-1.Add the following required assembly references to the project:
+1. Add the following required assembly references to the project:
 
-* Syncfusion.Grid.Base.
-* Syncfusion.Grid.Windows.
-* Syncfusion.Schedule.Base.
-* Syncfusion.Schedule.Windows.
-* Syncfusion.Shared.Base.
-* Syncfusion.Tools.Windows.
+    * Syncfusion.Grid.Base.
+    * Syncfusion.Grid.Windows.
+    * Syncfusion.Schedule.Base.
+    * Syncfusion.Schedule.Windows.
+    * Syncfusion.Shared.Base.
+    * Syncfusion.Tools.Windows.
 
-2.Create the ScheduleControl instance in the application form constructor.
+2. Create the ScheduleControl instance in the application form constructor.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight  c# %}
 using Syncfusion.Windows.Forms.Schedule;
@@ -83,6 +84,8 @@ Namespace WindowsFormsApplication1
 End Namespace
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ### Binding data to the ScheduleControl
 
@@ -464,8 +467,8 @@ Public Overridable Function NewScheduleAppointment() As IScheduleAppointment
 
 The ScheduleDataProvider has two functional roles:
 
-1.Implements IScheduleDataProvider in a virtual manner so that, the derived classes can provide concrete implementations through virtual overrides. The IScheduleDataProvider virtual methods exposed in ScheduleDataProvider that have empty implementations. So, you are required to derive this class to use it. 
-2.Provides the DropList data. For this second role, the ScheduleDataProvider does provide concrete implementations for the virtual methods it exposes. So, in your derived class, you would have populated drop lists without doing further work, though you can choose to customize these drop lists through virtual overrides. Here is a list of the stub methods exposed by ScheduleDataProvider in its first role.
+1. Implements IScheduleDataProvider in a virtual manner so that, the derived classes can provide concrete implementations through virtual overrides. The IScheduleDataProvider virtual methods exposed in ScheduleDataProvider that have empty implementations. So, you are required to derive this class to use it. 
+2. Provides the DropList data. For this second role, the ScheduleDataProvider does provide concrete implementations for the virtual methods it exposes. So, in your derived class, you would have populated drop lists without doing further work, though you can choose to customize these drop lists through virtual overrides. Here is a list of the stub methods exposed by ScheduleDataProvider in its first role.
 
 {% tabs %}
 {% highlight c# %}

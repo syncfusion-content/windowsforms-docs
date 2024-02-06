@@ -54,12 +54,12 @@ To add the control manually in C#, follow the given steps:
 
 **Step 1** - Add the following required assembly references to the project:
 
-* Syncfusion.Grid.Base.dll
-* Syncfusion.Grid.Windows.dll
-* Syncfusion.Shared.Base.dll
-* Syncfusion.Shared.Windows.dll
-* Syncfusion.Tools.Base.dll
-* Syncfusion.Tools.Windows.dll
+        * Syncfusion.Grid.Base.dll
+        * Syncfusion.Grid.Windows.dll
+        * Syncfusion.Shared.Base.dll
+        * Syncfusion.Shared.Windows.dll
+        * Syncfusion.Tools.Base.dll
+        * Syncfusion.Tools.Windows.dll
 
 **Step 2** - Include the namespaces **Syncfusion.Windows.Forms.Tools**.
 

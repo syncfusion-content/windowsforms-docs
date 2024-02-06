@@ -13,10 +13,10 @@ Localization is the process of translating the application resources into differ
 
 Follow the steps to localize the dialog boxes in the EditControl:
 
-1. Include the required namespaces at the beginning of the file.
+1. Include the required namespaces at the beginning of the file.
 
+{% capture codesnippet1 %}
 {% tabs %}
-
 {% highlight c# %}
 
 using Syncfusion.Windows.Forms;
@@ -30,17 +30,18 @@ Imports Syncfusion.Windows.Forms
 Imports Syncfusion.Windows.Forms.Edit
 
 {% endhighlight %}
-
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }} 
 
-2. Create a class that implements the [ILocalizationProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ILocalizationProvider.html) interface defined in the Syncfusion.Windows.Forms namespace.
+2. Create a class that implements the [ILocalizationProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ILocalizationProvider.html) interface defined in the Syncfusion.Windows.Forms namespace.
 
-3. Return the localized versions of the string corresponding to the string identifiers.
+3. Return the localized versions of the string corresponding to the string identifiers.
 
-4. String identifiers are defined in the [ResourceIdentifiers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ResourceIdentifiers.html) and the [EditResourceIdentifiers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Localization.Localizer.EditResourceIdentifiers.html) classes in Syncfusion.Shared.Base and Syncfusion.Edit.Windows assemblies respectively.
+4. String identifiers are defined in the [ResourceIdentifiers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ResourceIdentifiers.html) and the [EditResourceIdentifiers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Localization.Localizer.EditResourceIdentifiers.html) classes in Syncfusion.Shared.Base and Syncfusion.Edit.Windows assemblies respectively.
 
+{% capture codesnippet2 %}
 {% tabs %}
-
 {% highlight c# %}
 
 using Syncfusion.Windows.Forms.Localization.Localizer.EditResourceIdentifiers;
@@ -54,13 +55,14 @@ Imports Syncfusion.Windows.Forms.Localization.Localizer.EditResourceIdentifiers
 Imports Syncfusion.Windows.Forms.ResourceIdentifiers
 
 {% endhighlight %}
-
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }} 
 
-5. Assign this instance to the [Provider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.LocalizationProvider.html#Syncfusion_Windows_Forms_LocalizationProvider_Provider) property of the [LocalizationProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.LocalizationProvider.html) class before the InitializeComponent call in the constructor of the application. 
+5. Assign this instance to the [Provider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.LocalizationProvider.html#Syncfusion_Windows_Forms_LocalizationProvider_Provider) property of the [LocalizationProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.LocalizationProvider.html) class before the InitializeComponent call in the constructor of the application. 
 
+{% capture codesnippet3 %}
 {% tabs %}
-
 {% highlight c# %}
 
 LocalizationProvider.Provider = new Localizer();
@@ -72,10 +74,11 @@ LocalizationProvider.Provider = new Localizer();
 LocalizationProvider.Provider = New Localizer()
 
 {% endhighlight %}
+{% endtabs %} 
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}  
 
-{% endtabs %}  
-
-6. The following code example demonstrates localizing various dialog boxes in the EditControl.
+6. The following code example demonstrates localizing various dialog boxes in the EditControl.
 
 **Find Dialog Box**
 
@@ -83,8 +86,8 @@ Provides Microsoft Visual Studio text editor like `FindDialog` window with simil
 
 For example: Here, `FindDialog` is localized in German language.
 
+{% capture codesnippet4 %}
 {% tabs %}
-
 {% highlight c# %}
 
 public string GetLocalizedString(System.Globalization.CultureInfo culture, string name,object obj)
@@ -232,8 +235,9 @@ End Select
 End Function
 
 {% endhighlight %}
-
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }} 
 
 ![Localized find dialog box in syntax editor](Localization-and-Globalization_images\FindDialogLocalization.png)
 

@@ -27,19 +27,20 @@ The SfListView control can be added to the application by dragging it from the t
 ### Adding Control in Code
 To add control manually, follow the steps:
 
-1.Add the following required assembly references to the project:
+1. Add the following required assembly references to the project:
 
-* 	Syncfusion.Core.WinForms
+    * 	Syncfusion.Core.WinForms
 
-*	Syncfusion.DataSource.WinForms
+    *	Syncfusion.DataSource.WinForms
 
-* 	Syncfusion.GridCommon.WinForms
+    * 	Syncfusion.GridCommon.WinForms
 
-*   Syncfusion.SfListView.WinForms
+    *   Syncfusion.SfListView.WinForms
 
 
-2.Create the SfListView control instance and add it to the form.   
+2.  Create the SfListView control instance and add it to the form.   
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.WinForms.ListView;
@@ -76,13 +77,16 @@ Namespace WindowsFormsApplication1
 End Namespace
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ### Creating data for sample application
 
 To create the data for sample application, follow the steps:
 
-1.Create a data object class, name it as “CountryInfo” and declare the properties.
+1. Create a data object class, name it as “CountryInfo” and declare the properties.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -100,10 +104,12 @@ Public Class CountryInfo
  End Class
  {% endhighlight %}
  {% endtabs %}
+ {% endcapture %}
+ {{ codesnippet2 | OrderList_Indent_Level_1 }}
  
- 
-2.Create a List<CountryInfo> collection initialized in GetDataSource method to add several data objects.
-     
+2. Create a List<CountryInfo> collection initialized in GetDataSource method to add several data objects.
+
+ {% capture codesnippet3 %}    
 {% tabs %}
 {% highlight c# %}
 
@@ -175,6 +181,8 @@ Public Function GetDataSource() As List(Of CountryInfo)
 End Function
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
  
 ### Binding to data
 
@@ -202,12 +210,13 @@ The Windows Forms ListView (SfListView) allows displaying the items in a group b
 
 GroupDescriptor object holds the following properties:
 
-•	`PropertyName`: Describes name of the property to be grouped.
+    •	`PropertyName`: Describes name of the property to be grouped.
 
-•	`KeySelector`: Describes selector to return the group key.
+    •	`KeySelector`: Describes selector to return the group key.
 
-•	`Comparer`: Describes comparer to be applied when sorting takes place.
+    •	`Comparer`: Describes comparer to be applied when sorting takes place.
 
+{% capture codesnippet4 %} 
 {% tabs %}
 {% highlight c# %}
 listView.View.GroupDescriptors.Add(new GroupDescriptor()
@@ -220,6 +229,8 @@ listView.View.GroupDescriptors.Add(new GroupDescriptor()
 listView.View.GroupDescriptors.Add(New GroupDescriptor() With {.PropertyName = “  Continent ”})
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 ![Grouping in WF SfListView Control](GettingStarted_images/GettingStarted_img3.png)
 
@@ -228,11 +239,12 @@ The SfListView allows sorting on its data by using the [SfListView.View.SortDesc
 
 SortDescriptor object holds the following three properties:
 
-•	`PropertyName`: Describes name of the sorted property.
+    •	`PropertyName`: Describes name of the sorted property.
 
-•	`Direction`: Describes an object of type `ListSortDirection` defines the sorting direction.
+    •	`Direction`: Describes an object of type `ListSortDirection` defines the sorting direction.
 
-•	`Comparer`: Describes a comparer to be applied when sorting takes place.
+    •	`Comparer`: Describes a comparer to be applied when sorting takes place.
+
 
 {% tabs %}
 {% highlight c# %}
@@ -246,6 +258,7 @@ listView.View.SortDescriptors.Add(new SortDescriptor()
 listView.View.SortDescriptors.Add(New SortDescriptor() With {.PropertyName = “Continent”, .Direction = ListSortDirection.Descending})
 {% endhighlight %}
 {% endtabs %}
+
 
 ![Sorting in WF SfListView Control](GettingStarted_images/GettingStarted_img4.png)
 
@@ -278,9 +291,9 @@ public Boolean CustomFilter(Object obj)
 ![Filtering in WF SfListView Control](GettingStarted_images/GettingStarted_img5.png)
 
 ## Selection
-SfListView selects an item by setting the [SfListView.SelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedItem) property to One, MultiSimple, MultiExtended, and None based on the requirements. Selected item information can be tracked by using the [SfListView.SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedItem), [SfListView.SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedIndex), and [SfListView.SelectedItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedItems) properties. 
+SfListView selects an item by setting the [SfListView.SelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectionMode) property to One, MultiSimple, MultiExtended, and None based on the requirements. Selected item information can be tracked by using the [SfListView.SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedItem), [SfListView.SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedIndex), and [SfListView.SelectedItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedItems) properties. 
 
-The selection operations can be handled with the help of [SelectionChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html) and [SelectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html) events of the SfListView.
+The selection operations can be handled with the help of [SelectionChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectionChanging) and [SelectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectionChanged) events of the SfListView.
 
 {% tabs %}
 {% highlight c# %}

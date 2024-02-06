@@ -6,7 +6,7 @@ platform: WindowsForms
 control: ComboBoxAdv
 documentation: ug
 ---
-# How to change the BackColor for a disabled ComboBo
+# How to change the BackColor for a disabled ComboBoxAdv
 
 This page explains How to Change the BackColor for a Disabled ComboBoxAdv Control and more details.
 

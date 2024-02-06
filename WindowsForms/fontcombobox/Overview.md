@@ -12,7 +12,7 @@ documentation: ug
 
 The FontComboBox is a combo box-derived controls that are automatically populated with the fonts installed on the user's system. It provide an easy way to fill a combo box with system fonts.
 
-![Overview of FontComboBox](Overview_images/Overview_img582.jpeg) 
+![Overview of FontComboBox in WindowsForms](overview_images/windowsforms-font-combo-box-overview.jpeg) 
 
 
 

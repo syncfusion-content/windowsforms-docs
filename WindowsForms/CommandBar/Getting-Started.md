@@ -12,7 +12,7 @@ documentation: ug
 This section provides a quick overview to work with the command bar control in WinForms.
 
 >**Important**
-Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your Windows Forms application to use our components.
+Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion license key in your Windows Forms application to use our components.
 
 This section describes how to add [CommandBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBar.html) control in a Windows Forms application and overview of its basic functionalities.
 
@@ -56,19 +56,18 @@ To add command bar in C#, follow the given steps:
 
 **Step 1** - Add the following required assembly references to the project:
 
-* Syncfusion.Grid.Base.dll
-* Syncfusion.Grid.Windows.dll
-* Syncfusion.Shared.Base.dll
-* Syncfusion.Shared.Windows.dll
-* Syncfusion.Tools.Base.dll
-* Syncfusion.Tools.Windows.dll
-* Syncfusion.Licensing.dll
-* Syncfusion.SpellChecked.Base.dll
+        * Syncfusion.Grid.Base.dll
+        * Syncfusion.Grid.Windows.dll
+        * Syncfusion.Shared.Base.dll
+        * Syncfusion.Shared.Windows.dll
+        * Syncfusion.Tools.Base.dll
+        * Syncfusion.Tools.Windows.dll
+        * Syncfusion.Licensing.dll
+        * Syncfusion.SpellChecked.Base.dll
 
 **Step 2** - Include the namespace **Syncfusion.Windows.Forms.Tools**
 
 {% tabs %}
-
 {% highlight C# %}
 
 using Syncfusion.Windows.Forms.Tools;
@@ -80,13 +79,11 @@ using Syncfusion.Windows.Forms.Tools;
 Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight %}
-
 {% endtabs %}
 
 **Step 3** - Create a [CommandBarController](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBarController.html) instance and set the [HostForm](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBarController.html#Syncfusion_Windows_Forms_Tools_CommandBarController_HostForm) property to be the current form.
 
 {% tabs %}
-
 {% highlight C# %}
 
 CommandBarController commandBarController1 = new CommandBarController();
@@ -106,7 +103,6 @@ Me.commandBarController1.Style = VisualStyle.Office2016Colorful
 Me.commandBarController1.HostForm = Me;
 
 {% endhighlight %}
-
 {% endtabs %}
 
 #### **Adding command bar**

@@ -21,41 +21,42 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 **Step 1**: Create a new Windows Forms application in Visual Studio. Drag and drop the SplitButton from toolbox into form design view. The following dependent assemblies will be added automatically.
 
-* Syncfusion.Grid.Base
-* Syncfusion.Grid.Windows
-* Syncfusion.Shared.Base
-* Syncfusion.Shared.Windows
-* Syncfusion.Tools.Base
-* Syncfusion.Tools.Windows
+        * Syncfusion.Grid.Base
+        * Syncfusion.Grid.Windows
+        * Syncfusion.Shared.Base
+        * Syncfusion.Shared.Windows
+        * Syncfusion.Tools.Base
+        * Syncfusion.Tools.Windows
 
-![Windows forms SplitButton drag and drop from toolbox](Getting-Started_images/SplitButton_Images.png)
+![WindowsForms Split Button drag and drop from toolbox](getting-Started_images/windowsforms-split-button-drag-and-drop-from-toolbox.png)
 
-![Windows forms SplitButton dependency assembly reference](Getting-Started_images/SplitButton_reference.png)
+![WindowsForms Split Button dependency assembly reference](getting-started_images/windowsforms-split-button-dependecy-assembly-reference.png)
 
 **Step 2**: Set the desired properties for **"SplitButton"** control using the **"Properties"** dialog window. Similarly you can add the items for the SplitButton dropdown using **"DropDownItem"** property. Here, we have illustrated a simple example, in which we are adding countries names as dropdown items to the control.
 
-![Windows forms SplitButton properties pane](Getting-Started_images/SplitButtonItem_collection2.png)
+![WindowsForms Split Button properties pane](getting-started_images/windowsforms-split-button-properties-pane.png)
 
 
-![Windows forms SplitButton toolbox customization](Getting-Started_images/SplitButton_itemeditor.png)
+![WindowsForms Split Button toolbox customization](getting-started_images/windowsforms-split-button-toolbox-customization.png)
 
 
 **Step 3**: Run the application and the following output will be shown.
 
-![Windows forms SplitButton through designer](Getting-Started_images/SplitButtonitems_throughdesigner.png)
+![WindowsForms Split Button through designer](getting-started_images/windowsforms-split-button-through-designer.png)
 
 
 ## Adding a SplitButton control through code
 
 **Step 1**: Create a new Windows Forms application in Visual Studio. Add the following required assembly references and namespace to the project.  
 
-* Syncfusion.Grid.Base
-* Syncfusion.Grid.Windows
-* Syncfusion.Shared.Base
-* Syncfusion.Shared.Windows
-* Syncfusion.Tools.Base
-* Syncfusion.Tools.Windows
+        * Syncfusion.Grid.Base
+        * Syncfusion.Grid.Windows
+        * Syncfusion.Shared.Base
+        * Syncfusion.Shared.Windows
+        * Syncfusion.Tools.Base
+        * Syncfusion.Tools.Windows
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight C#%}
@@ -71,12 +72,15 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-![Windows forms SplitButton](Getting-Started_images/SplitButton_imagereference.png)
+![WindowsForms Split Button adding through code](getting-started_images/windowsforms-split-button-adding-through-code.png)
 
 
 **Step 2**: In Form1.cs, create an instance of **"SplitButton"** control and add in to the form. Also you can customize the SplitButton properties using the following code.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -114,10 +118,12 @@ End Sub
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 **Step 3**: Run the application and the following output will be shown.
 
-![Windows forms SplitButton through code](Getting-Started_images/SplitButton_Imagethroughcode.png)
+![WindowsForms Split Button through code](getting-started_images/windowsforms-split-button-through-code.png)
 
 
 ### Adding and removing item to dropdown list
@@ -290,6 +296,6 @@ End Class
 
 {% endtabs %}
 
-![Windows forms SplitButton Adding items](Getting-Started_images/SplitButtonitems_throughdesigner.png)
+![WindowsForms Split Button Adding items](getting-started_images/windowsforms-split-button-adding-items.png)
 
-![Windows forms SplitButton removing items](Getting-Started_images/SplitButton_removeitemthroughcode.png)
+![WindowsForms Split Button removing items](getting-started_images/windowsforms-split-button-removing-items.png)

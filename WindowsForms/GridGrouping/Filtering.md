@@ -86,12 +86,12 @@ Me.gridGroupingControl1.TableDescriptor.Columns(1).FilterRowOptions.AllowEmptyFi
 N> The removing of `Custom` and `Empty` text from the filter dropdown is also applicable for the [dynamic filter](#dynamic-filter).
 
 ## Record filters
-The [RecordFilters](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.RecordFilterDescriptorCollection.html#) otherwise known as `RowFilters` will allow users to restrict displayed records to those that satisfy logical condition that user specify with `FilterRowDescriptor`.
+The [RecordFilters](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.TableDescriptor.html#Syncfusion_Grouping_TableDescriptor_RecordFilters) otherwise known as `RowFilters` will allow users to restrict displayed records to those that satisfy logical condition that user specify with `FilterRowDescriptor`.
 
-`RecordFilters` can be added to GridGroupingControl at design time. The[RecordFilterDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.RecordFilterDescriptor.html#) is available in the [TableDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html#) section of the property window. The `RecordFilters` can be added by using the `RecordFilterDescriptor` collection editor. 
+`RecordFilters` can be added to GridGroupingControl at design time. The[RecordFilterDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.RecordFilterDescriptor.html) is available in the [TableDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.TableDescriptor.html) section of the property window. The `RecordFilters` can be added by using the `RecordFilterDescriptor` collection editor. 
 ![Filtering using Record filters](Filtering_images/Filtering_img4.png)
 
-The record filter can be applied with the different compare operators by using the [FilterCompareOperator](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.FilterCompareOperator.html#) enumeration in the `FilterCondition` and also it can be applied with multiple filter conditions, by specifying the [LogicalOperator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.RecordFilterDescriptor.html#Syncfusion_Grouping_RecordFilterDescriptor_LogicalOperator) value as `And/Or` from [FilterLogicalOperator](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.FilterLogicalOperator.html#) enum.
+The record filter can be applied with the different compare operators by using the [FilterCompareOperator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.FilterCompareOperator.html) enumeration in the `FilterCondition` and also it can be applied with multiple filter conditions, by specifying the [LogicalOperator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.RecordFilterDescriptor.html#Syncfusion_Grouping_RecordFilterDescriptor_LogicalOperator) value as `And/Or` from [FilterLogicalOperator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.FilterLogicalOperator.html) enum.
 The following table shows the list of compare operators,
 <table>
 <tr>
@@ -107,7 +107,7 @@ The following table shows the list of compare operators,
 {{'**Custom**'| markdownify }}
 </td>
 <td>
-A custom filter. A implementation object of {{'[ICustomFilter](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ICustomFilter.html#"")'| markdownify }} should be applied to the {{'[FilterCondition.CustomFilter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.FilterCondition.html#Syncfusion_Grouping_FilterCondition_CustomFilter)'| markdownify }} property of the {{'[FilterCondition](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.FilterCondition.html#"")'| markdownify }} object.
+A custom filter. A implementation object of {{'[ICustomFilter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ICustomFilter.html#"")'| markdownify }} should be applied to the {{'[FilterCondition.CustomFilter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.FilterCondition.html#Syncfusion_Grouping_FilterCondition_CustomFilter)'| markdownify }} property of the {{'[FilterCondition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.FilterCondition.html#"")'| markdownify }} object.
 </td>
 </tr>
 <tr>
@@ -204,7 +204,7 @@ Dim recordFilterDescriptor As RecordFilterDescriptor = New RecordFilterDes
 ![Programmatic filtering](Filtering_images/Filtering_img5.png)
 
 ### Filter by expression
-The GridGroupingControl can be filtered based on the expression that same format as in Expression Fields. List of expressions that can be used in the filter expression are provided in [this](http://help.syncfusion.com/windowsforms/gridgrouping/expression-fields#list-of-expressions) link.
+The GridGroupingControl can be filtered based on the expression that same format as in Expression Fields. List of expressions that can be used in the filter expression are provided in [this](https://help.syncfusion.com/windowsforms/gridgrouping/expression-fields#list-of-expressions) link.
 The below example shows the grid is filtered with `SupplierID <= 10`,
 {% tabs %}
 {% highlight c# %}
@@ -339,7 +339,7 @@ End Function
 {% endhighlight %}
 {% endtabs %}
 
-N> The 'Like' operator here is implemented similar to the ‘Like’ operator in VB.NET, where “#” character is considered as a character in patterns. Refer [https://docs.microsoft.com/en-us/dotnet/visual-basic/language-reference/operators/like-operator](https://docs.microsoft.com/en-us/dotnet/visual-basic/language-reference/operators/like-operator) for detailed information.
+N> The 'Like' operator here is implemented similar to the ‘Like’ operator in VB.NET, where “#” character is considered as a character in patterns. Refer [https://learn.microsoft.com/en-us/dotnet/visual-basic/language-reference/operators/like-operator](https://learn.microsoft.com/en-us/dotnet/visual-basic/language-reference/operators/like-operator) for detailed information.
 
 ### Removing record filters
 Record filter can be removed for a particular or range of columns by specifying the desired column name in the [RecordFilters.Remove](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.RecordFilterDescriptorCollection.html#Syncfusion_Grouping_RecordFilterDescriptorCollection_Remove_Syncfusion_Grouping_RecordFilterDescriptor_) method or by specifying the particular column index in the [RecordFilters.RemoveAt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.RecordFilterDescriptorCollection.html#Syncfusion_Grouping_RecordFilterDescriptorCollection_RemoveAt_System_Int32_) method.
@@ -373,7 +373,7 @@ Me.gridGroupingControl1.TableDescriptor.RecordFilters.Clear()
 N> The filters that are applied using [GridDynamicFilter](#dynamic-filter), [Normal Filter](#filtering) and  [Office2007Filter](#office2007-filter) When `RecordFilters` are cleared from GridGroupingControl.
 
 ### Events
-The changes made in the `RecordFilters` collection can be notified by using the [RecordFilters.Changing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.RecordFilterDescriptorCollection.html) and [RecordFilters.Changed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.RecordFilterDescriptorCollection.html) events.
+The changes made in the `RecordFilters` collection can be notified by using the [RecordFilters.Changing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.RecordFilterDescriptorCollection.html#Syncfusion_Grouping_RecordFilterDescriptorCollection_Changing) and [RecordFilters.Changed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.RecordFilterDescriptorCollection.html#Syncfusion_Grouping_RecordFilterDescriptorCollection_Changed) events.
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.TableDescriptor.RecordFilters.Changing += new ListPropertyChangedEventHandler(RecordFilters_Changing);
@@ -419,7 +419,7 @@ End Sub
 {% endtabs %}
 
 ## Dynamic filter
-The [GridDynamicFilter](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridDynamicFilter.html#) provides the advanced filtering capabilities. The dynamic filter can be used with Nested Tables and Nested Groups too. To make it more interactive, it adds a Filter Button at the right-most corner of every Filter Bar Cell, on clicking, which drops down into a list showing the available comparative operators.
+The [GridDynamicFilter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridDynamicFilter.html) provides the advanced filtering capabilities. The dynamic filter can be used with Nested Tables and Nested Groups too. To make it more interactive, it adds a Filter Button at the right-most corner of every Filter Bar Cell, on clicking, which drops down into a list showing the available comparative operators.
 The key feature of the dynamic filtering mechanism is that it allows user to view the filter results as user type each and every character. It supports user-defined filter criteria as well.
 The dynamic filter is defined in the `GridDynamicFilter` class which is available in the `Syncfusion.GridHelperClasses.Windows.dll` assembly. The Dynamic filter can be wired to GridGroupingControl by using[WireGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridDynamicFilter.html#Syncfusion_GridHelperClasses_GridDynamicFilter_WireGrid_Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_) method.
 {% tabs %}
@@ -535,7 +535,7 @@ filter.WireGrid(Me.gridGroupingControl1)
 {% endtabs %}
 
 ### Events
-The custom dialog of the dynamic filter can be customized by using the [ShowingCustomFilterDialog](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableFilterBarCellModel.html) event. This event will be raised before the custom dialog is displayed. 
+The custom dialog of the dynamic filter can be customized by using the [ShowingCustomFilterDialog](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableFilterBarCellModel.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableFilterBarCellModel_ShowingCustomFilterDialog) event. This event will be raised before the custom dialog is displayed. 
 {% tabs %}
 {% highlight c# %}
 //Triggering an event
@@ -558,7 +558,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-N> For more information about all the events in the GridGroupingControl, refer the [Events](http://help.syncfusion.com/windowsforms/gridgrouping/events#) section.
+N> For more information about all the events in the GridGroupingControl, refer the [Events](https://help.syncfusion.com/windowsforms/gridgrouping/events) section.
 
 ## Excel-like filter
 The GridGroupingControl has the support for filtering the records as like the Excel. It is another way of filtering the data with the help of dialog like standard Excel filtering functionality by an end user.
@@ -573,7 +573,7 @@ The following example shows the appearance of the Excel-like filter dialog,
 
 ### Optimized excel filter
 The optimized Excel filter is specially designed for filtering the large number of records with optimized manner. This filter has many filtering options like Filter by Color, Number filter, Text filter, Date filter and Filter by null values.
-The **optimized Excel** filter can be added to GridGroupingControl by using the [GridExcelFilter](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridExcelFilter.html#) class. 
+The **optimized Excel** filter can be added to GridGroupingControl by using the [GridExcelFilter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridExcelFilter.html) class. 
 {% tabs %}
 {% highlight c# %}
 GridExcelFilter gridExcelFilter = new GridExcelFilter();
@@ -759,8 +759,8 @@ To customize the filter icon for column headers, the cell model and cell rendere
 
 The following is the process of creating cell model and cell renderer for customizing the column headers filter icon,
 
-*	Creating cell model.
-
+* Creating cell model.
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c#%}
 
@@ -798,10 +798,12 @@ Public Class GridExcelFilterCellModelAdv
 End Class
 {% endhighlight%}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 
 * Creating cell renderer.
-
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c#%}
 class GridExcelFilterCellRendererAdv : GridExcelFilterCellRenderer
@@ -829,10 +831,11 @@ Friend Class GridExcelFilterCellRendererAdv
 End Class
 {% endhighlight%}
 {% endtabs %}
-
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 * Replacing the cell renderer for default `ColumnHeaderCell`.
-
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c#%}
 //To enable the custom ColumnHeaderCell cell type.
@@ -843,6 +846,8 @@ gridGroupingControl1.TableControl.CellRenderers["ColumnHeaderCell"] = new GridEx
 gridGroupingControl1.TableControl.CellRenderers("ColumnHeaderCell") = New GridExcelFilterCellRendererAdv(gridGroupingControl1.TableControl, New GridExcelFilterCellModelAdv(gridGroupingControl1.TableModel, excelFilter), excelFilter)
 {% endhighlight%}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
  
 ![Customizing Filter Icon for Column Headers](Filtering_images/Filtering_img27.png)
  
@@ -855,8 +860,8 @@ To customize the filter icon for stacked headers, the cell model and cell render
  
 The following is the process of creating custom cell model and cell renderer for customizing the stacked headers filter icon,
 
-*	Creating cell model.
-
+* Creating cell model.
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight c#%}
 public class StackedHeaderCellModelAdv : StackedHeaderCellModel
@@ -893,9 +898,11 @@ Public Class StackedHeaderCellModelAdv
 End Class
 {% endhighlight%}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 * Creating cell renderer.
-
+{% capture codesnippet5 %}
 {% tabs %}
 {% highlight c#%}
 public class StackedHeaderCellRendererAdv : StackedHeaderCellRenderer
@@ -929,9 +936,11 @@ Public Class StackedHeaderCellRendererAdv
 End Class
 {% endhighlight%}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 * Replacing the cell renderer for `CustomStackedHeaderCell`.
-
+{% capture codesnippet6 %}
 {% tabs %}
 {% highlight c#%}
 //To enable the custom StackedHeaderCell cell type.
@@ -942,6 +951,8 @@ gridGroupingControl1.TableControl.CellRenderers["CustomStackedHeaderCell"] = new
 gridGroupingControl1.TableControl.CellRenderers("CustomStackedHeaderCell") = New StackedHeaderCellRendererAdv(Me.gridGroupingControl1.TableControl, New StackedHeaderCellModelAdv(gridGroupingControl1.TableModel, excelFilter), excelFilter)
 {% endhighlight%}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
 
 ![Customizing Filter Icon for StackedHeaders](Filtering_images/Filtering_img28.png)
 
@@ -949,7 +960,7 @@ gridGroupingControl1.TableControl.CellRenderers("CustomStackedHeaderCell") = New
 The process of serializing and deserializing the `GridExcelFilter` settings and its filter collection is explained in detail in this [link.](https://help.syncfusion.com/windowsforms/gridgrouping/serialization#gridexcelfilter-serialization)
 
 ### Office2007 filter
-Office2007Filter is built-in filter similar to `Microsoft Excel 2007` filter. The **Office2007** filter can be added to GridGroupingControl by using the [GridOffice2007Filter](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridOffice2007Filter.html#) class. 
+Office2007Filter is built-in filter similar to `Microsoft Excel 2007` filter. The **Office2007** filter can be added to GridGroupingControl by using the [GridOffice2007Filter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridOffice2007Filter.html) class. 
 
 N> Office2007Filter is the classic filtering support for GridGroupingControl and it has been marked as the `Obsolete`. Make use of [Optimized Excel Filter](#optimized-excel-filter) instead of using `Office2007Filter` to avail more features. 
 {% tabs %}
@@ -1005,8 +1016,8 @@ Dim officeFilter As GridOffice2007Filter = New GridOffice2007Filter
 ![Enable filtered column icon](Filtering_images/Filtering_img23.png)
 
 ### Stacked header filtering
-To filter the stacked header column, [EnableStackedColumnFilterIcon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridExcelFilter.html#Syncfusion_GridHelperClasses_GridExcelFilter_EnableStackedColumnFilterIcon) property can be used. To know about the Stacked Headers, refer [this](http://help.syncfusion.com/windowsforms/gridgrouping/grid-layout#stacked-headers) section.
-The stacked header column will show the filter dialog box for specified column in the [GridStackedHeaderDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridStackedHeaderDescriptor.html#). 
+To filter the stacked header column, [EnableStackedColumnFilterIcon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridExcelFilter.html#Syncfusion_GridHelperClasses_GridExcelFilter_EnableStackedColumnFilterIcon) property can be used. To know about the Stacked Headers, refer [this](https://help.syncfusion.com/windowsforms/gridgrouping/grid-layout#stacked-headers) section.
+The stacked header column will show the filter dialog box for specified column in the [GridStackedHeaderDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridStackedHeaderDescriptor.html). 
 The following example shows the filter is enabled for stacked header in which filter dialog box will be shown for `ID` column. 
 {% tabs %}
 {% highlight c# %}
@@ -1047,8 +1058,8 @@ The below shows the filter dialog box is shown for `ID` column,
 ### Events
 The `GridExcelFilter` has two events that are raised when a column is filtered.
  
-* [RecordFiltersItemChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridExcelFilter.html) – This event will be raised before the filter is applied to the GridGroupingControl.
-* [RecordFiltersItemChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridExcelFilter.html) – This event will be raised after the filter is applied to the GridGroupingControl.
+* [RecordFiltersItemChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridExcelFilter.html#Syncfusion_GridHelperClasses_GridExcelFilter_RecordFiltersItemChanging) – This event will be raised before the filter is applied to the GridGroupingControl.
+* [RecordFiltersItemChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridExcelFilter.html#Syncfusion_GridHelperClasses_GridExcelFilter_RecordFiltersItemChanged) – This event will be raised after the filter is applied to the GridGroupingControl.
 
 {% tabs %}
 {% highlight c# %}
@@ -1065,11 +1076,11 @@ void gridExcelFilter_RecordFiltersItemChanging(object sender, Syncfusion.Collect
 {% endhighlight %}
 {% endtabs %}
 
-N> For more information about all the events in the GridGroupingControl, refer the [Events](http://help.syncfusion.com/windowsforms/gridgrouping/events#) section.
+N> For more information about all the events in the GridGroupingControl, refer the [Events](https://help.syncfusion.com/windowsforms/gridgrouping/events) section.
 
 ## Filter by display member
 GridGroupingControl filters data records by the value member of the columns by default. This behavior can be customized to get filters work with display member of the columns.
-The `Filter By DisplayMember` can be enabled for individual column by using the [GroupingGridFilterBarExt](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GroupingGridFilterBarExt.html#) class.
+The `Filter By DisplayMember` can be enabled for individual column by using the [GroupingGridFilterBarExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GroupingGridFilterBarExt.html) class.
 To enable the `FilterByDisplayMember`	functionality for column, the `FilterBarCell` of the column should be set as `FilterByDisplayMemberCell` and [AllowIndividualColumnWiring](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GroupingGridFilterBarExt.html#Syncfusion_GridHelperClasses_GroupingGridFilterBarExt_AllowIndividualColumnWiring) property has to be enabled. This property is used to enable the “FilterBarByDisplayMember” cell for specific column.
 The following example shows the second column is enabled with the `FilterByDisplayMemberCell`
 {% tabs %}
@@ -1106,7 +1117,7 @@ The following sample shows the filter by display member functionality,
 &lt;Installation Location&gt;\Syncfusion\EssentialStudio\[Version_ Number]\ Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Filter By DisplayMember Demo
 
 ## Getting filtered records
-The filtered records are maintained in the [FilteredRecordCollection](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.FilteredRecordsInTableCollection.html#). This is a read-only collection that manages the subset of records that has been filtered against filter criteria. 
+The filtered records are maintained in the [FilteredRecordCollection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.FilteredRecordsInTableCollection.html). This is a read-only collection that manages the subset of records that has been filtered against filter criteria. 
 The filtered records can be accessed by using the [Table.FilteredRecords](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.Table.html#Syncfusion_Grouping_Table_FilteredRecords) property.
 {% tabs %}
 {% highlight c# %}

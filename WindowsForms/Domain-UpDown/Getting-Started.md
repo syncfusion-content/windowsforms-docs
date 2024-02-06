@@ -36,44 +36,50 @@ The DomainUpDownExt control can be added to an application by dragging it from t
 * Syncfusion.Tools.Base 
 * Syncfusion.Tools.Windows
 
-![wf domain up down control added by designer](Getting-Started_images/wf-domain-up-down-ext-control.png) 
+![WindowsForms Domain Up Down control added by designer](getting-started_images/windowsforms-domain-up-down-added-by-designer.png) 
 
 ## Add control manually in code
 
 To add the control manually in C#, follow the given steps:
 
-**1.** Add the following required assembly references to the project:
+1. Add the following required assembly references to the project:
 
-  * Syncfusion.Grid.Base
-  * Syncfusion.Grid.Windows
-  * Syncfusion.Shared.Base
-  * Syncfusion.Shared.Windows
-  * Syncfusion.Tools.Base 
-  * Syncfusion.Tools.Windows
+    * Syncfusion.Grid.Base
+    * Syncfusion.Grid.Windows
+    * Syncfusion.Shared.Base
+    * Syncfusion.Shared.Windows
+    * Syncfusion.Tools.Base 
+    * Syncfusion.Tools.Windows
 
-**2.** Include the DomainUpDownExt control namespace **Syncfusion.Windows.Forms.Tools;**.
+2. Include the DomainUpDownExt control namespace **Syncfusion.Windows.Forms.Tools;**.
 
-  {% tabs %}
-  {% highlight C# %}
-  using Syncfusion.Windows.Forms.Tools;
-  {% endhighlight %}
-  {% highlight VB %}
-  Imports Syncfusion.Windows.Forms.Tools
-  {% endhighlight %}
-  {% endtabs %} 
+{% capture codesnippet1 %}
+{% tabs %}
+{% highlight C# %}
+using Syncfusion.Windows.Forms.Tools;
+{% endhighlight %}
+{% highlight VB %}
+Imports Syncfusion.Windows.Forms.Tools
+{% endhighlight %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }} 
 
-**3.** Create a DomainUpDownExt control instance, and add it to the form.
+3. Create a DomainUpDownExt control instance, and add it to the form.
 
- {% tabs %}
- {% highlight C# %}
- DomainUpDownExt domainUpDownExt1=new DomainUpDownExt();
- this.Controls.Add(domainUpDownExt1);
- {% endhighlight %}
- {% highlight VB %}
- Dim domainUpDownExt1 As New DomainUpDownExt()
- Me.Controls.Add(domainUpDownExt1)
- {% endhighlight %}
- {% endtabs %}
+{% capture codesnippet2 %}
+{% tabs %}
+{% highlight C# %}
+DomainUpDownExt domainUpDownExt1=new DomainUpDownExt();
+this.Controls.Add(domainUpDownExt1);
+{% endhighlight %}
+{% highlight VB %}
+Dim domainUpDownExt1 As New DomainUpDownExt()
+Me.Controls.Add(domainUpDownExt1)
+{% endhighlight %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Adding items
 
@@ -98,4 +104,4 @@ Me.domainUpDownExt1.Items.Add("Five")
 {% endhighlight %}
 {% endtabs %}
 
-![wf domain up down control](Getting-Started_images/wf-domain-up-down-control.png) 
+![Adding items in WindowsForms Domain Up Down](getting-started_images/windowsforms-domain-up-down-adding-items.png) 

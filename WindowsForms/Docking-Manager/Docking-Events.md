@@ -529,9 +529,9 @@ End Sub
 
 This section discusses the following events that are related to the ContextMenu:
 
-* [AutoHideTabContextMenu event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#autohidetabcontextmenu-event)
-* [DockContextMenu event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#dockcontextmenu-event)
-* [DocMenuClick event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#docmenuclick-event)
+* [AutoHideTabContextMenu event](https://help.syncfusion.com/windowsforms/docking-manager/docking-events#autohidetabcontextmenu-event)
+* [DockContextMenu event](https://help.syncfusion.com/windowsforms/docking-manager/docking-events#dockcontextmenu-event)
+* [DocMenuClick event](https://help.syncfusion.com/windowsforms/docking-manager/docking-events#docmenuclick-event)
 
 ### AutoHideTabContextMenu event
 
@@ -974,12 +974,12 @@ End Sub
 
 This section covers the following events:
 
-* [DockStateChanged event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#dockstatechanged-event)
-* [DockStateChanging event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#dockstatechanging-event)
-* [DockStateUnavailable event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#dockstateunavailable-event)
-* [NewDockStateBeginLoad event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#newdockstatebeginload-event)
-* [NewDockStateEndLoad event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#newdockstateendload-event)
-* [PreviewDockHints event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#previewdockhints-event)
+* [DockStateChanged event](https://help.syncfusion.com/windowsforms/docking-manager/docking-events#dockstatechanged-event)
+* [DockStateChanging event](https://help.syncfusion.com/windowsforms/docking-manager/docking-events#dockstatechanging-event)
+* [DockStateUnavailable event](https://help.syncfusion.com/windowsforms/docking-manager/docking-events#dockstateunavailable-event)
+* [NewDockStateBeginLoad event](https://help.syncfusion.com/windowsforms/docking-manager/docking-events#newdockstatebeginload-event)
+* [NewDockStateEndLoad event](https://help.syncfusion.com/windowsforms/docking-manager/docking-events#newdockstateendload-event)
+* [PreviewDockHints event](https://help.syncfusion.com/windowsforms/docking-manager/docking-events#previewdockhints-event)
 
 ### DockStateChanged event
 
@@ -1500,8 +1500,8 @@ Private Sub DockingManager1_TabGroupCreated(ByVal sender As Object, ByVal arg As
 
 This section covers the following events:
 
-* [DockVisibilityChanged event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#dockvisibilitychanged-event)
-* [DockVisibilityChanging event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#dockvisibilitychanging-event)
+* [DockVisibilityChanged event](https://help.syncfusion.com/windowsforms/docking-manager/docking-events#dockvisibilitychanged-event)
+* [DockVisibilityChanging event](https://help.syncfusion.com/windowsforms/docking-manager/docking-events#dockvisibilitychanging-event)
 
 ### DockVisibilityChanged event
 
@@ -1604,9 +1604,9 @@ End Sub
 
 This section covers the events which occurs while performing the dragging operation:
 
-* [DragAllow event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#dragallow-event)
-* [DragFeedbackStart event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#dragfeedbackstart-event)
-* [DragFeedbackStop event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#dragfeedbackstop-event)
+* [DragAllow event](https://help.syncfusion.com/windowsforms/docking-manager/docking-events#dragallow-event)
+* [DragFeedbackStart event](https://help.syncfusion.com/windowsforms/docking-manager/docking-events#dragfeedbackstart-event)
+* [DragFeedbackStop event](https://help.syncfusion.com/windowsforms/docking-manager/docking-events#dragfeedbackstop-event)
 
 ### DragAllow event
 
@@ -1623,7 +1623,7 @@ Members</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0)' | markdownify }}</td><td>
+{{ '[Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0)' | markdownify }}</td><td>
 This property gets/sets the value indicating whether the event should be canceled.</td></tr>
 <tr>
 <td>
@@ -1794,8 +1794,8 @@ End Sub
 
 This section discusses the following LinkedManager events:
 
-* [TransferredToManager event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#transferredtomanager-event)
-* [TransferringFromManager event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#transferringfrommanager-event)
+* [TransferredToManager event](https://help.syncfusion.com/windowsforms/docking-manager/docking-events#transferredtomanager-event)
+* [TransferringFromManager event](https://help.syncfusion.com/windowsforms/docking-manager/docking-events#transferringfrommanager-event)
 
 ### TransferredToManager event
 

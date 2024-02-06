@@ -17,9 +17,9 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/ins
 
 ## Add RangeSlider control via designer
 
-1) Create a new Windows Forms project in Visual Studio to display the RangeSlider control with dual thumb and highlight the selected range.
+1. Create a new Windows Forms project in Visual Studio to display the RangeSlider control with dual thumb and highlight the selected range.
 
-2) The [RangeSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html) control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
+2. The [RangeSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html) control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -34,9 +34,9 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/ins
 
 To add the control manually in C#, follow the given steps:
 
-1) Create a C# or VB application via Visual Studio.
+1. Create a C# or VB application via Visual Studio.
 
-2) Add the following references to the project: 
+2. Add the following references to the project: 
 
  * Syncfusion.Grid.Base
  * Syncfusion.Grid.Windows
@@ -45,8 +45,9 @@ To add the control manually in C#, follow the given steps:
  * Syncfusion.Tools.Base
  * Syncfusion.Tools.Windows
 
-3)	Include the required namespace. 
+3. Include the required namespace. 
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -62,9 +63,12 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4) Create an instance of [RangeSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html), and add it to the form.
+4. Create an instance of [RangeSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html), and add it to the form.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -84,6 +88,8 @@ Me.Controls.Add(rangeSlider1)
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![wf range slider control value range](Getting-Started_images/wf-range-slider-control.png)
 

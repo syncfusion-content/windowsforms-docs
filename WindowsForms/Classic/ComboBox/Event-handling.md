@@ -124,6 +124,7 @@ To populate the ComboBoxAdv containing the predefined percent values with othe
 
 * Derive a new class from the existing Syncfusion ComboBoxAdv. Override as shown here and give a new definition for TextBox.
 
+{% capture codesnippet1 %}​
 {% tabs %}
 {% highlight c# %}
 
@@ -172,9 +173,12 @@ End Class
 		
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 * Create an instance for the derived class and initialize.
 
+{% capture codesnippet2 %}​
 {% tabs %}
 {% highlight c# %}
 
@@ -198,9 +202,12 @@ Me.PercentComboBoxAdv1.SelectedValueChanged+= NewSystem.EventHandler(Me.Percent
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 * You can populate the derived control with values using Items property.
 
+{% capture codesnippet3 %}​
 {% tabs %}
 {% highlight c# %}
 
@@ -232,9 +239,12 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 * In the SelectedValueChanged event, you can display the corresponding selected value in Percent Format.
 
+{% capture codesnippet4 %}​
 {% tabs %}
 {% highlight c# %}
 
@@ -256,6 +266,8 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 ![Overview_img313](Overview_images/Overview_img313.jpeg) 
 

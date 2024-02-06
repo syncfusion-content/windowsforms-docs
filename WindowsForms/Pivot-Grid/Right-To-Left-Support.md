@@ -13,7 +13,7 @@ The elements of pivot grid control can be aligned in right-to-left (RTL) layout.
 
 ## Enabling RTL mode
 
-Th elements of pivot grid control can be laid out from right to left by setting the [RightToLeft](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.righttoleft?view=net-5.0) property to `Yes`. Refer to the below code sample to align the pivot grid control in right to left order.
+Th elements of pivot grid control can be laid out from right to left by setting the [RightToLeft](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.righttoleft?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) property to `Yes`. Refer to the below code sample to align the pivot grid control in right to left order.
 
 {% tabs %}
 

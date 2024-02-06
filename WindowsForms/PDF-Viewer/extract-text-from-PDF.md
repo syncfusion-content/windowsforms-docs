@@ -31,7 +31,6 @@ namespace TextExtractionDemo
         {
             //Initialize the `PdfDocumentView` control.
             PdfDocumentView pdfDocumentView = new PdfDocumentView();
-
             //Load the PDF file.
             pdfDocumentView.Load(@"Sample.pdf");
 
@@ -64,7 +63,6 @@ namespace TextExtractionDemo
         {
             //Initialize the `PdfDocumentView` control.
             PdfDocumentView pdfDocumentView = new PdfDocumentView();
-
             //Load the PDF file.
             pdfDocumentView.Load(@"Sample.pdf");
 
@@ -102,22 +100,17 @@ namespace TextExtractionDemo
         {
             //Initialize the `PdfDocumentView` control.
             PdfDocumentView pdfDocumentView = new PdfDocumentView();
-
             //Load the PDF file.
             pdfDocumentView.Load(@"Sample.pdf");
 
             //Initialize the `TextLines`
             TextLines textLines = new TextLines();
-
             //Pass the `TextLines` as a parameter to the `ExtractText` method.
             pdfDocumentView.ExtractText(0, out textLines);
-
             //Gets specific line from the collection through the index.
             TextLine line = textLines[0];
-
             //Get text in the line.
             string text = line.Text;
-
             //Get bounds of the line.
             RectangleF lineBounds = line.Bounds;
         }
@@ -146,28 +139,21 @@ namespace TextExtractionDemo
         {
             //Initialize the `PdfDocumentView` control.
             PdfDocumentView pdfDocumentView = new PdfDocumentView();
-
             //Load the PDF file.
             pdfDocumentView.Load(@"Sample.pdf");
 
             //Initialize the `TextLines`
             TextLines textLines = new TextLines();
-
             //Pass the `TextLines` as a parameter to the `ExtractText` method.
             pdfDocumentView.ExtractText(0, out textLines);
-
             //Gets specific line from the collection through the index.
             TextLine line = textLines[0];
-
             //Get the word collection in a line.
             List<TextWord> wordCollection = line.WordCollection;
-
             //Get the word
             TextWord word = wordCollection[0];
-
             //Get the text
             string text = word.Text;
-
             //Get the bounds of the word
             RectangleF bounds = word.Bounds;
         }

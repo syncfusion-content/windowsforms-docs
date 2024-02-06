@@ -52,8 +52,9 @@ Open the Items Collection Editor of the MiniToolBar and add the required items i
 
 This section guides you with the steps to add a MiniToolbar and associating with a RichTextBox control programmatically.
 
-*	Add the given namespaces.
+* Add the given namespaces.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -73,9 +74,12 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-*	Declare and initialize the MiniToolBar control. Also declare the controls to be added to the MiniToolBar, and the control, in this case RichTextBow, to which MiniToolBar is to be associated.
+* Declare and initialize the MiniToolBar control. Also declare the controls to be added to the MiniToolBar, and the control, in this case RichTextBow, to which MiniToolBar is to be associated.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -152,9 +156,12 @@ this.numbersSplitButton = new System.Windows.Forms.ToolStripSplitButton();
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-*	Add the required items into the MiniToolBar
+* Add the required items into the MiniToolBar
 
+{% capture codesnippet3 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -193,9 +200,12 @@ Me.miniToolBar1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mini
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-*	Set the MiniToolBar’s AssociatedControl property to the RichTextBox to which this is to be associated.
+* Set the MiniToolBar’s AssociatedControl property to the RichTextBox to which this is to be associated.
 
+{% capture codesnippet4 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -212,6 +222,8 @@ Me.miniToolBar1.AssociatedControl = Me.richTextBox1
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 ## Visual Style
 

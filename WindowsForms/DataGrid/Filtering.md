@@ -81,7 +81,7 @@ The [FilterBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data
 * **StringTyped** - Records are filtered without considering the type and it takes FilterValue type as string.
 * **StronglyTyped** - Records are filtered by considering the FilterValue underlying type.
 
-N>When the[DataTable](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-5.0) is used as a datasource, [IsCaseSensitive](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.FilterPredicate.html#Syncfusion_Data_FilterPredicate_IsCaseSensitive) property in FilterPredicate is not applicable, since `DataTable` does not support case sensitive filtering.
+N>When the[DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-5.0) is used as a datasource, [IsCaseSensitive](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.FilterPredicate.html#Syncfusion_Data_FilterPredicate_IsCaseSensitive) property in FilterPredicate is not applicable, since `DataTable` does not support case sensitive filtering.
 
 ### Clear Filtering
 The Filters applied to the SfDataGrid can be removed by clearing the `FilterPredicates` added for the columns. This can be achieved by using the following methods, 
@@ -89,6 +89,7 @@ The Filters applied to the SfDataGrid can be removed by clearing the `FilterPred
 * [SfDataGrid.ClearFilters](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ClearFilters) - Clears filters for all the columns programmatically.
 * [SfDataGrid.ClearFilter(String columnName)](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ClearFilter_System_String_) - Clears the filter for particular column that has the columnName as MappingName.
 * [SfDataGrid.ClearFilter(GridColumn column)](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ClearFilter_Syncfusion_WinForms_DataGrid_GridColumn_) - Clears the filter for particular column alone.
+
 
 {% tabs %}
 {% highlight c# %}
@@ -103,6 +104,7 @@ sfDataGrid1.ClearFilter(sfDataGrid1.Columns(0))
 {% endhighlight %}
 {% endtabs %}
 
+
 ### Adding multiple FilterPredicates for a column
 
 The [PredicateType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.PredicateType.html) property is used to apply multiple FilterPredicates for a column.
@@ -111,6 +113,7 @@ The [PredicateType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.
 * AndAlso: Performs AndAlso operation in filters.
 * Or: Performs Or operation in filters.
 * OrElse: Performs OrElse operation in filters.
+
 
 {% tabs %}
 {% highlight c# %}
@@ -124,6 +127,7 @@ sfDataGrid.Columns("CustomerID").FilterPredicates.Add(New FilterPredicate() With
 sfDataGrid.Columns("CustomerID").FilterPredicates.Add(New FilterPredicate() With {.FilterType = FilterType.Equals, .FilterValue = "MEREP", .PredicateType = PredicateType.Or})
 {% endhighlight %}
 {% endtabs %}
+
 
 ![Adding multiple FilterPredicates for a column](Filtering_images/Filtering_img20.png)
 

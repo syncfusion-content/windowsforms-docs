@@ -9,7 +9,7 @@ documentation: ug
 
 # UI Automation in Windows Forms ListView (SfListView)
 
-Microsoft UI automation is a new accessibility Framework for Microsoft Windows available on all the operating systems that support Windows Forms. UI automation provides accessibility to most of the UI elements and provides information about the UI element to the end user. You can interact with UI by using automated test scripts. To learn more about UI Automation, refer to the [MSDN page](https://docs.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-overview).
+Microsoft UI automation is a new accessibility Framework for Microsoft Windows available on all the operating systems that support Windows Forms. UI automation provides accessibility to most of the UI elements and provides information about the UI element to the end user. You can interact with UI by using automated test scripts. To learn more about UI Automation, refer to the [MSDN page](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-overview).
 
 SfListView supports the following types of UI automations:
 
@@ -46,7 +46,7 @@ Property validation: A set of default properties are defined based on the MSAA c
 
 ### Requirements and configuration
 
-Coded UI provides support only in Visual Studio Ultimate and Premium. For more information about the platforms and configurations supported by Coded UI tests, refer to this [page](https://docs.microsoft.com/en-us/visualstudio/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings?view=vs-2015).
+Coded UI provides support only in Visual Studio Ultimate and Premium. For more information about the platforms and configurations supported by Coded UI tests, refer to this [page](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2015/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings?view=vs-2015).
 
 ### Enable assertion
 
@@ -70,37 +70,37 @@ Follow the steps to create a `CodedUITest project` and test the `SfListView` app
 1. Create a new application or open an existing application with `SfListView`.
 2. Create a Coded UI Test Project. A CUIT file will be added automatically.
 
-![Create Coded UI Project](CodedUI-Automation-Images/CodedUI_Create.jpg)
+    ![Create Coded UI Project](CodedUI-Automation-Images/CodedUI_Create.jpg)
 
 3. Then, the Generate Code dialog box appears, choose `Record actions, edit UI map or add assertions`.
 
-![choose Record actions](CodedUI-Automation-Images/CodedUI_GenerateCode.jpg)
+    ![choose Record actions](CodedUI-Automation-Images/CodedUI_GenerateCode.jpg)
 
 4. Now, the Coded UI project Visual Studio gets minimized and `CodedUITestBuilder` appears in the bottom right corner of the window. Record the actions by clicking Start Recording icon in `CodedUITestBuilder`.
 
-![CodedUITestBuilder in bottom right corner](CodedUI-Automation-Images/UITestBuilder.jpg)
+    ![CodedUITestBuilder in bottom right corner](CodedUI-Automation-Images/UITestBuilder.jpg)
 
 5. You can also open the `CodedUITestBuilder` from the existing Coded UI project by right clicking the `CodedUITestMethod1` in CUIT file and clicking the Generate Code for Coded UI Test. The same `CodedUITestBuilder` appears in the bottom right corner of the window.
 
-![open the CodedUITestBuilder from existing project](CodedUI-Automation-Images/CodedUI_GenerateMethod.jpg)
+    ![open the CodedUITestBuilder from existing project](CodedUI-Automation-Images/CodedUI_GenerateMethod.jpg)
 
 6. Drag the Crosshairs on to the UI elements in the `SfListView` application. It shows the available properties of the inner UI elements. 
 
-![Available UI elements](CodedUI-Automation-Images/Assert-SfListViewItem.jpg)
+    ![Available UI elements](CodedUI-Automation-Images/Assert-SfListViewItem.jpg)
 
 7. Record the actions made on the UI elements by clicking the `Record` button on `CodedUITest builder`.
 
 8. Then, click the `GenerateCode` icon in `CodedUITestBuilder` to generate a test method. Close the `CodedUITestBuilder` and see the generated code for the collapse and expand actions.
 
-![Click GenerateCode](CodedUI-Automation-Images/SfListView-RecordActions.jpg)
+    [Click GenerateCode](CodedUI-Automation-Images/SfListView-RecordActions.jpg)
 
 9. Create an assertion to check the modified cell value. Drag the crosshair to the modified cell, the `Assertion` window appears. The properties for the control is now listed in the Assertion dialog box. Add the assertion by clicking the Generate Code button in `CodedUITestBuilder`.
 
-![Properties listed in Assertion dialog box](CodedUI-Automation-Images/SfListView-properties.jpg)
+    ![Properties listed in Assertion dialog box](CodedUI-Automation-Images/SfListView-properties.jpg)
 
 10. After creating all the tests and assertions, right click the Test method. Click `Run Tests` to run the test.
 
-![Click Run Tests](CodedUI-Automation-Images/Run test cases.jpg)
+    ![Click Run Tests](CodedUI-Automation-Images/Run test cases.jpg)
 
 ## QTP
 

@@ -43,7 +43,6 @@ Actual size is the default value of print size option in printer settings. This 
 {% highlight c# %}
 
 // Prints the document in actual size.
-
 pdfViewerControl1.PrinterSettings.PageSize = PdfViewerPrintSize.ActualSize;
 
 {% endhighlight %}
@@ -51,7 +50,6 @@ pdfViewerControl1.PrinterSettings.PageSize = PdfViewerPrintSize.ActualSize;
 {% highlight vb %}
 
 ' Prints the document in actual size.
-
 pdfViewerControl1.PrinterSettings.PageSize = PdfViewerPrintSize.ActualSize
 
 {% endhighlight %}
@@ -65,7 +63,6 @@ Fit option enlarges or reduces each page to fit the printable area of the select
 {% highlight c# %}
 
 // Prints the document in fit size.
-
 pdfViewerControl1.PrinterSettings.PageSize = PdfViewerPrintSize.Fit;
 
 {% endhighlight %}
@@ -73,7 +70,6 @@ pdfViewerControl1.PrinterSettings.PageSize = PdfViewerPrintSize.Fit;
 {% highlight vb %}
 
 ' Prints the document in fit size.
-
 pdfViewerControl1.PrinterSettings.PageSize = PdfViewerPrintSize.Fit
 
 {% endhighlight %}
@@ -87,11 +83,8 @@ Custom Scale option resizes the page with the specified scale percentage. The fo
 {% highlight c# %}
 
 // Prints the document with custom scaling.
-
 pdfViewerControl1.PrinterSettings.PageSize = PdfViewerPrintSize.CustomScale;
-
 // Scale percentage with the page to be resized and it is applicable only for Custom Scale. The default value is 100.
-
 pdfViewerControl1.PrinterSettings.ScalePercentage = 120;
 
 {% endhighlight %}
@@ -99,11 +92,8 @@ pdfViewerControl1.PrinterSettings.ScalePercentage = 120;
 {% highlight vb %}
 
 ' Prints the document with custom scaling.
-
 pdfViewerControl1.PrinterSettings.PageSize = PdfViewerPrintSize.CustomScale
-
 ' Scale percentage with the page to be resized and it is applicable only for Custom Scale. The default value is 100.
-
 pdfViewerControl1.PrinterSettings.ScalePercentage = 120
 
 {% endhighlight %}
@@ -121,7 +111,6 @@ Auto Portrait/Landscape is the default option and it automatically selects the b
 {% highlight c# %}
 
 // Prints the document in auto orientation.
-
 pdfViewerControl1.PrinterSettings.PageOrientation = PdfViewerPrintOrientation.Auto;
 
 {% endhighlight %}
@@ -129,7 +118,6 @@ pdfViewerControl1.PrinterSettings.PageOrientation = PdfViewerPrintOrientation.Au
 {% highlight vb %}
 
 ' Prints the document in auto orientation.
-
 pdfViewerControl1.PrinterSettings.PageOrientation = PdfViewerPrintOrientation.Auto
 
 {% endhighlight %}
@@ -143,7 +131,6 @@ Portrait option prints the PDF document in portrait orientation and it overrides
 {% highlight c# %}
 
 // Prints the document in portrait orientation.
-
 pdfViewerControl1.PrinterSettings.PageOrientation = PdfViewerPrintOrientation.Portrait;
 
 {% endhighlight %}
@@ -151,7 +138,6 @@ pdfViewerControl1.PrinterSettings.PageOrientation = PdfViewerPrintOrientation.Po
 {% highlight vb %}
 
 ' Prints the document in portrait orientation.
-
 pdfViewerControl1.PrinterSettings.PageOrientation = PdfViewerPrintOrientation.Portrait
 
 {% endhighlight %}
@@ -165,7 +151,6 @@ Landscape option prints the PDF document in landscape orientation and it overrid
 {% highlight c# %}
 
 // Prints the document in landscape orientation.
-
 pdfViewerControl1.PrinterSettings.PageOrientation = PdfViewerPrintOrientation.Landscape;
 
 {% endhighlight %}
@@ -173,7 +158,6 @@ pdfViewerControl1.PrinterSettings.PageOrientation = PdfViewerPrintOrientation.La
 {% highlight vb %}
 
 ' Prints the document in landscape orientation.
-
 pdfViewerControl1.PrinterSettings.PageOrientation = PdfViewerPrintOrientation.Landscape
 
 {% endhighlight %}
@@ -201,13 +185,10 @@ namespace PrintEventsDemo
         public Form1()
         {
             InitializeComponent();
-
             //Wire the `BeginPrint` event,
             pdfViewerControl1.BeginPrint += PdfViewerControl1_BeginPrint;
-
             //Load the PDF file.
             pdfViewerControl1.Load("../../Data/HTTP Succinctly.pdf");
-
             //Print the file silently to the default printer. 
             pdfViewerControl1.Print(true);
         }
@@ -243,13 +224,10 @@ namespace PrintEventsDemo
         public Form1()
         {
             InitializeComponent();
-
             //Wire the `PrintProgress` event,
             pdfViewerControl1.PrintProgress += PdfViewerControl1_PrintProgress;
-
             //Load the PDF file.
             pdfViewerControl1.Load("../../Data/HTTP Succinctly.pdf");
-
             //Print the file silently to the default printer. 
             pdfViewerControl1.Print(true);
         }
@@ -260,10 +238,9 @@ namespace PrintEventsDemo
         {
             //Find the page number which is currently printing.
             int currentPage = e.PageIndex;
-
             //Find the total number of pages present in the file.
             int pageCount = e.PageCount;
-           
+			
             //Insert your code here
         }
         # endregion
@@ -291,13 +268,10 @@ namespace PrintEventsDemo
         public Form1()
         {
             InitializeComponent();
-
             //Wire the `EndPrint` event,
             pdfViewerControl1.EndPrint += PdfViewerControl1_EndPrint;
-
             //Load the PDF file.
             pdfViewerControl1.Load("../../Data/HTTP Succinctly.pdf");
-
             //Print the file silently to the default printer. 
             pdfViewerControl1.Print(true);
         }

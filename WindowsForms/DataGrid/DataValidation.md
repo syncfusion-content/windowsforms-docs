@@ -11,7 +11,7 @@ documentation: ug
 SfDataGrid allows to validate the data and display hints in case of validation is not passed. In case of invalid data, error icon is displayed at the left corner of cell. When mouse hover the error icon, error information will be displayed in tooltip.
 
 ## Built-in Validations
-Built-in validations through[IDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo?view=net-5.0), [INotifyDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?view=net-5.0) and Data annotation attributes, can be enabled by setting [SfDataGrid.GridValidationMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ValidationMode) or [GridColumn.GridValidationMod](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_ValidationMode)e properties.
+Built-in validations through[IDataErrorInfo](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo?view=net-5.0), [INotifyDataErrorInfo](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?view=net-5.0) and Data annotation attributes, can be enabled by setting [SfDataGrid.GridValidationMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ValidationMode) or [GridColumn.GridValidationMod](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_ValidationMode)e properties.
 `GridColumn.GridValidationMode` takes priority than `SfDataGrid.GridValidationMode`.
 
 * `GridValidation.InEdit` - display error icon & tips and also doesn’t allows the users to commit the invalid data without allowing users to edit other cells.
@@ -21,7 +21,7 @@ Built-in validations through[IDataErrorInfo](https://docs.microsoft.com/en-us/do
 ### Using IDataErrorInfo
 
 #### Cell Validation
-SfDataGrid provides support to validate the data based on [IDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo?view=net-5.0). This can be enabled by setting the [SfDataGrid.ValidationMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) or [GridColumn.ValidationMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html) property to `InEdit` or `InView`.
+SfDataGrid provides support to validate the data based on [IDataErrorInfo](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo?view=net-5.0). This can be enabled by setting the [SfDataGrid.ValidationMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ValidationMode) or [GridColumn.ValidationMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_ValidationMode) property to `InEdit` or `InView`.
 
 {% tabs %}
 {% highlight c# %}
@@ -116,7 +116,7 @@ Me.sfDataGrid.Columns("Quantity").ValidationMode = GridValidationMode.InEdit
 ![Windows forms datagrid displays validate the cell in grid](DataValidation_images/DataValidation_img1.png)
 
 #### Row Validation
-The error icon can be displayed in the row header by using the [IDataErrorInfo.Error](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo.error?view=net-5.0) property. The `IDataErrorInfo.Error` text will be displayed in the error tool tip of the row header,
+The error icon can be displayed in the row header by using the [IDataErrorInfo.Error](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo.error?view=net-5.0) property. The `IDataErrorInfo.Error` text will be displayed in the error tool tip of the row header,
 
 {% tabs %}
 {% highlight c# %}
@@ -179,7 +179,7 @@ End Class
 ### Using INotifyDataErrorInfo
 
 #### Cell Validation
-The data can be validated by inheriting the [INotifyDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?view=net-5.0) interface in model class.
+The data can be validated by inheriting the [INotifyDataErrorInfo](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?view=net-5.0) interface in model class.
 
 {% tabs %}
 {% highlight c# %}
@@ -263,7 +263,7 @@ End Class
 ![Windows forms datagrid displays error message while validating the data in cell](DataValidation_images/DataValidation_img3.png)
 
 #### Row Validation
-The error message can be shown in a row header by setting [INotifyDataErrorInfo.HasErrors](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo.haserrors?view=net-5.0). By default error message “Row Containing Error” will be displayed as an error message. This can be modified by changing the `RowErrorMessage` in the resx file.
+The error message can be shown in a row header by setting [INotifyDataErrorInfo.HasErrors](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo.haserrors?view=net-5.0). By default error message “Row Containing Error” will be displayed as an error message. This can be modified by changing the `RowErrorMessage` in the resx file.
 
 {% tabs %}
 {% highlight c# %}
@@ -333,7 +333,7 @@ N> The `INotifyDataErrorInfo` is available from the .NET framework 4.5.
 The SfDataGrid allows to validate the data using data annotation attributes by setting `SfDataGrid.ValidationMode` or `GridColumn.ValidationMode` property to `InEdit` or `InView`.
 
 #### Numeric Validation
-The numeric type like int, double, decimal properties can be validated using [Range attributes](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.rangeattribute?view=net-5.0).
+The numeric type like int, double, decimal properties can be validated using [Range attributes](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.rangeattribute?view=net-5.0).
 
 {% tabs %}
 {% highlight c# %}
@@ -381,7 +381,7 @@ End Property
 ![Windows forms datagrid displays validate the numeric value](DataValidation_images/DataValidation_img5.png)
 
 #### String Validation
-The string type property can be validated using [Required](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.requiredattribute?view=net-5.0), [String Length attributes](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.stringlengthattribute?view=net-5.0)
+The string type property can be validated using [Required](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.requiredattribute?view=net-5.0), [String Length attributes](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.stringlengthattribute?view=net-5.0)
 
 {% tabs %}
 {% highlight c# %}
@@ -462,7 +462,7 @@ End Property
 ![Windows forms datagrid displays validate the regular expression in grid](DataValidation_images/DataValidation_img7.png)
 
 ## Custom Validations
-The current cell and row validations can be customized by using the [CurrentCellValidating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) and [RowValidating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) events. SfDataGrid will not allow to edit other cell / row if validation failed.
+The current cell and row validations can be customized by using the [CurrentCellValidating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_CurrentCellValidating) and [RowValidating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_RowValidating) events. SfDataGrid will not allow to edit other cell / row if validation failed.
 
 ### Cell Validation
 The cell validation can be customized by using the `CurrentCellValidating` event. This event will be raised when the edited cells tries to commit the data or lose the focus.
@@ -493,7 +493,7 @@ End Sub
 ![Windows forms datagrid displays validate the cell in grid](DataValidation_images/DataValidation_img8.png)
 
 The current cell will not end the editing until the CurrentCell validation is passed. To get pass the cell validation need to enter the valid input to the cell. 
-The [SfDataGrid.CurrentCellValidated](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event triggered when the cell has finished validating with valid data.
+The [SfDataGrid.CurrentCellValidated](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_CurrentCellValidated) event triggered when the cell has finished validating with valid data.
 
 {% tabs %}
 {% highlight c# %}
@@ -505,16 +505,17 @@ void sfDataGrid_CurrentCellValidated(object sender, CurrentCellValidatedEventArg
 }
 {% endhighlight %}
 {% highlight vb %}
-Private Me.sfDataGrid.CurrentCellValidated += AddressOf sfDataGrid_CurrentCellValidated
+AddHandler Me.sfDataGrid1.CurrentCellValidated, AddressOf sfDataGrid_CurrentCellValidated
 
 Private Sub sfDataGrid_CurrentCellValidated(ByVal sender As Object, ByVal e As CurrentCellValidatedEventArgs)
-	MessageBox.Show("Cell validation is passed.")
+    MessageBox.Show("Cell validation is passed.")
 End Sub
+
 {% endhighlight %}
 {% endtabs %}
 
 ### Row Validation
-The row can be validated by using the [RowValidating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event when the cell is edited. This event occurs when the edited cells tries to commit the row data or lose the focus.
+The row can be validated by using the [RowValidating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_RowValidating) event when the cell is edited. This event occurs when the edited cells tries to commit the row data or lose the focus.
 
 {% tabs %}
 {% highlight c# %}
@@ -545,7 +546,7 @@ End Sub
 
 ![Windows forms datagrid displays error message while validate the row in grid](DataValidation_images/DataValidation_img9.png)
 
-[SfDataGrid.RowValidated](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event triggered when the row has finished validating with valid row data.
+[SfDataGrid.RowValidated](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_RowValidated) event triggered when the row has finished validating with valid row data.
 
 {% tabs %}
 {% highlight c# %}
@@ -562,6 +563,52 @@ Private Sub sfDataGrid1_RowValidated(ByVal sender As Object, ByVal e As RowValid
 End Sub
 {% endhighlight %}
 {% endtabs %}
+
+### Validation for GridCheckboxColumn
+Since the [GridCheckBoxColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridCheckBoxColumn.html) is a non-editable column, the validation can be achieved by using the [SetCurrentCellValidated](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SetCurrentCellValidated_System_Boolean_) and [SetCurrentRowValidated](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SetCurrentRowValidated_System_Boolean_) methods.
+
+Cell validation can be achieved by calling the [SetCurrentCellValidated](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SetCurrentCellValidated_System_Boolean_) method with a `false` value as a parameter inside the corresponding [SfDataGrid.CellCheckBoxClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_CellCheckBoxClick) event. The [CurrentCellValidating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_CurrentCellValidating) event will be triggered when attempting to navigate the current cell.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.CellCheckBoxClick += SfDataGrid_CellCheckBoxClick;
+private void SfDataGrid_CellCheckBoxClick(object sender, CellCheckBoxClickEventArgs e)
+{
+    if(e.Column.CellType == "CheckBox")
+        this.sfDataGrid.SetCurrentCellValidated(false);
+}
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid.CellCheckBoxClick, AddressOf sfDataGrid_CellCheckBoxClick
+Private Sub sfDataGrid_CellCheckBoxClick(sender As Object, e As CellCheckBoxClickEventArgs)
+    If e.Column.CellType = "CheckBox" Then
+        sfDataGrid.SetCurrentCellValidated(False)
+    End If
+End Sub
+{% endhighlight %}
+{% endtabs %}
+
+![Windows forms datagrid displays error icon while validating the cell in grid](DataValidation_images/DataValidation_img12.png)
+
+Row validation can be achieved by calling the [SetCurrentRowValidated](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SetCurrentRowValidated_System_Boolean_) method with a `false` value as a parameter inside the corresponding [SfDataGrid.CellCheckBoxClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_CellCheckBoxClick) event. The [RowValidating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_RowValidating) event will be triggered when attempting to navigate the current cell to another row.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.CellCheckBoxClick += SfDataGrid_CellCheckBoxClick;
+private void SfDataGrid_CellCheckBoxClick(object sender, CellCheckBoxClickEventArgs e)
+{
+    this.sfDataGrid.SetCurrentRowValidated(false);
+}
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid.CellCheckBoxClick, AddressOf sfDataGrid_CellCheckBoxClick
+Private Sub sfDataGrid_CellCheckBoxClick(sender As Object, e As CellCheckBoxClickEventArgs)
+    sfDataGrid.SetCurrentRowValidated(False)
+End Sub
+{% endhighlight %}
+{% endtabs %}
+
+![Windows forms datagrid displays error icon while validating the row in grid](DataValidation_images/DataValidation_img13.png)
 
 ## Customizing Error Icon and ToolTip
 
@@ -601,7 +648,7 @@ Me.sfDataGrid.ShowRowHeaderErrorIcon = False
 {% endtabs %}
 
 ### Customizing the Error Tip 
-The tool tip of the data validation can be customized by using the [ValidationErrorToolTipOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event. This event will be raised when the mouse is hovered on the error icon.
+The tool tip of the data validation can be customized by using the [ValidationErrorToolTipOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ValidationErrorToolTipOpening) event. This event will be raised when the mouse is hovered on the error icon.
 
 {% tabs %}
 {% highlight c# %}
@@ -652,4 +699,4 @@ N> SfToolTip has used for the validation error  tool tip support in the SfDataGr
 
 ## See also
 
-[How to change the ValidationMode of the GridNumericColumn in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9323)
+[How to change the ValidationMode of the GridNumericColumn in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/8276/how-to-change-the-validationmode-of-the-gridnumericcolumn-in-winforms-datagrid-sfdatagrid)

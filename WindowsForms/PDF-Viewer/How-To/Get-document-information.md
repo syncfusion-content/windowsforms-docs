@@ -17,15 +17,11 @@ Refer to the following code example to access the filename.
 {%highlight c#%}
 
 //Initialize the PDF Viewer
-
 PdfViewerControl pdfViewer = new PdfViewerControl();
-
 //Loads the PDF document in PDF Viewer
-
 pdfViewer.Load(@"input.pdf");
 
 //Gets the filename of loaded PDF document
-
 string fileName = pdfViewer.DocumentInformation.FileName;
 
 {%endhighlight%}
@@ -33,15 +29,11 @@ string fileName = pdfViewer.DocumentInformation.FileName;
 {%highlight vb%}
 
 'Initialize the PDF Viewer 
-
 pdfViewer As New PdfViewerControl() 
-
 'Loads the PDF document in PDF Viewer 
-
 pdfViewer.Load("../../Data/Barcode.pdf")
 
 'Gets the filename of loaded PDF document
-
 Dim fileName As String = pdfViewer.DocumentInformation.FileName
 
 {%endhighlight%}
@@ -54,15 +46,11 @@ Refer to the following code example to access the file path.
 {%highlight c#%}
 
 //Initialize the PDF Viewer
-
 PdfViewerControl pdfViewer = new PdfViewerControl();
-
 //Loads the PDF document in PDF Viewer
-
 pdfViewer.Load(@"input.pdf");
 
 //Gets the file path of loaded PDF document
-
 string filePath = pdfViewer.DocumentInformation.FilePath;
 
 
@@ -70,15 +58,11 @@ string filePath = pdfViewer.DocumentInformation.FilePath;
 
 {%highlight vb%}
 'Initialize the PDF Viewer 
-
 pdfViewer As New PdfViewerControl() 
-
 'Loads the PDF document in PDF Viewer 
-
 pdfViewer.Load("../../Data/Barcode.pdf")
 
 'Gets the file path of loaded PDF document
-
 Dim filePath As String = pdfViewer.DocumentInformation.FilePath
 
 {%endhighlight%}

@@ -266,8 +266,9 @@ Provides splitter related properties.</td></tr>
 
 In this example, grouping grid is built with hierarchical dataset created at runtime. The formatting of Group Drop Area can be controlled by handling PrepareViewStyleInfo event for each of the grids in Group Drop Panel.
 
-1.Formatting Splitter and GroupDropPanel.
+1. Formatting Splitter and GroupDropPanel.
 
+{% capture codesnippet1 %}​
 {% tabs %}
 {% highlight C# %}  
 
@@ -288,9 +289,12 @@ Private Me.gridGroupingControl1.Splitter.BackColor = Color.Red
 Private Me.gridGroupingControl1.GroupDropPanel.BackColor = Color.YellowGreen
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2.PrepareViewStyleInfo event for each of the grids can be hooked by looping through controls in the panel.
+2. PrepareViewStyleInfo event for each of the grids can be hooked by looping through controls in the panel.
 
+{% capture codesnippet2 %}​
 {% tabs %}
 {% highlight C# %}  
 
@@ -333,9 +337,12 @@ End Select
 Next ctrl
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-3.Setting the style properties in PrepareViewStyleInfo event.
+3. Setting the style properties in PrepareViewStyleInfo event.
 
+{% capture codesnippet3 %}​
 {% tabs %}
 {% highlight C# %} 
 
@@ -488,8 +495,10 @@ End If
 End Sub
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-4.Here is a sample output.
+4. Here is a sample output.
 
  ![Customizing GroupDropArea in Data Representation for GridGrouping Control](Data-Representation_images/Data-Representation_img13.jpeg) 
 
@@ -884,9 +893,10 @@ Any summary item you add can be included in the CaptionText and you have the opt
 
 Here is a sample implementation that illustrates usage of the above properties.
 
-1.Set up a Grid Grouping control and bind a data source into it.
-2.Setup the necessary Group Options as required.
+1. Set up a Grid Grouping control and bind a data source into it.
+2. Setup the necessary Group Options as required.
 
+{% capture codesnippet4 %}​
 {% tabs %}
 {% highlight C# %}  
 
@@ -921,9 +931,12 @@ Me.gridGroupingControl1.TopLevelGroupOptions.ShowAddNewRecordAfterDetails = True
 Me.gridGroupingControl1.ChildGroupOptions.CaptionText = "There are {RecordCount} items under {CategoryName} : {Category}"
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-3.Handle the QueryCellStyleInfo event to manipulate the group elements.
+3. Handle the QueryCellStyleInfo event to manipulate the group elements.
 
+{% capture codesnippet5 %}​
 {% tabs %}
 {% highlight C# %}  
 this.gridGroupingControl1.QueryCellStyleInfo += new GridTableCellStyleInfoEventHandler(gridGroupingControl1_QueryCellStyleInfo);
@@ -971,9 +984,12 @@ End If
 End Sub
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-4.You can control the appearance of different group elements by using Appearance property.
+4. You can control the appearance of different group elements by using Appearance property.
 
+{% capture codesnippet6 %}​
 {% tabs %}
 {% highlight C# %}  
 this.gridGroupingControl1.Appearance.AddNewRecordFieldCell.Interior = new BrushInfo(Color.FromArgb(255, 255, 192));
@@ -994,8 +1010,10 @@ Me.gridGroupingControl1.Appearance.GroupIndentCell.Interior = New BrushInfo(Colo
 Me.gridGroupingControl1.Appearance.GroupPreviewCell.Interior = New BrushInfo(Color.FromArgb(192, 255, 192))
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
 
-5.Run the sample and group the table against any data column. Here is a sample screen shot that shows the grouped grid against 'Sport' column.
+5. Run the sample and group the table against any data column. Here is a sample screen shot that shows the grouped grid against 'Sport' column.
 
 
 
@@ -1417,8 +1435,9 @@ N> A foreign-key reference relation allows the user to look up values in a relat
 
 The following code example illustrates the usage of foreign-key relation:
 
-1.Save the location of the mainTable.Customer column, so that it can be swapped after foreign table reference has been set.
+1. Save the location of the mainTable.Customer column, so that it can be swapped after foreign table reference has been set.
 
+{% capture codesnippet7 %}​
 {% tabs %}
 {% highlight C# %}  
 GridTableDescriptor td = this.gridGroupingControl1.TableDescriptor; td.VisibleColumns.LoadDefault();
@@ -1430,9 +1449,12 @@ td.VisibleColumns.LoadDefault()
 Dim lookUpIndex As Integer = td.VisibleColumns.IndexOf("Customer")
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet7 | OrderList_Indent_Level_1 }}
 
-2.Add foreign table to the Engine's source list.
+2. Add foreign table to the Engine's source list.
 
+{% capture codesnippet8 %}​
 {% tabs %}
 {% highlight C# %} 
 this.gridGroupingControl1.Engine.SourceListSet.Add(ForeignTableName, ForeignTable.DefaultView);
@@ -1441,9 +1463,12 @@ this.gridGroupingControl1.Engine.SourceListSet.Add(ForeignTableName, ForeignTabl
 Me.gridGroupingControl1.Engine.SourceListSet.Add(ForeignTableName, ForeignTable.DefaultView)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet8 | OrderList_Indent_Level_1 }}
 
-3.Create and setup RelationKind.ForeignKeyReference relation. 
+3. Create and setup RelationKind.ForeignKeyReference relation. 
 
+{% capture codesnippet9 %}​
 {% tabs %}
 {% highlight C# %}  
 GridRelationDescriptor rd = new GridRelationDescriptor();
@@ -1458,9 +1483,12 @@ rd.RelationKind = RelationKind.ForeignKeyReference
 rd.ChildTableName = ForeignTableName
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet9 | OrderList_Indent_Level_1 }}
 
-4.Set any optional properties on the relation. 
+4. Set any optional properties on the relation. 
 
+{% capture codesnippet10 %}​
 {% tabs %}
 {% highlight C# %}  
 //Displays column.     
@@ -1478,9 +1506,12 @@ rd.ChildTableDescriptor.VisibleColumns.Add("CustomerName")
 rd.ChildTableDescriptor.SortedColumns.Add("CustomerName")
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet10 | OrderList_Indent_Level_1 }}
 
-5.Add relation descriptor to MainTableDescriptor. 
+5. Add relation descriptor to MainTableDescriptor. 
 
+{% capture codesnippet11 %}​
 {% tabs %}
 {% highlight C# %}  
 td.Relations.Add(rd); 
@@ -1489,9 +1520,12 @@ td.Relations.Add(rd);
 td.Relations.Add(rd)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet11 | OrderList_Indent_Level_1 }}
 
-6.Replace mainTable.Customer with foreignTable.CustomerName.    
+6. Replace mainTable.Customer with foreignTable.CustomerName.    
 
+{% capture codesnippet12 %}​
 {% tabs %}
 {% highlight C# %} 
 string foreignCustomerColInMainTable = rd.Name + "_" + "CustomerName"; 
@@ -1502,8 +1536,10 @@ Dim foreignCustomerColInMainTable As String = rd.Name & "_" & "CustomerName"
 td.VisibleColumns.Insert(CustomerColIndex, foreignCustomerColInMainTable)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet12 | OrderList_Indent_Level_1 }}
 
-7.Run the application. The following output is generated.
+7. Run the application. The following output is generated.
 
  ![Sorting By Display Member in Data Representation for Grid Grouping Control](Data-Representation_images/Data-Representation_img32.jpeg) 
 
@@ -1596,8 +1632,9 @@ Summaries can be set at design time itself through property window of the grid g
 
 This example shows a grouping grid bound with Statistics table whose columns are ID, School, Sport, wins, losses, ties and year. Follow the steps below to create a summary for wins column that displays the sum of wins's values.
 
-1.Setup a SummaryColumn by instantiating GridSummaryColumnDescriptor specifying the SummaryType and format.
+1. Setup a SummaryColumn by instantiating GridSummaryColumnDescriptor specifying the SummaryType and format.
 
+{% capture codesnippet13 %}​
 {% tabs %}
 {% highlight C# %}  
 GridSummaryColumnDescriptor sortColumnDescriptor = new GridSummaryColumnDescriptor();
@@ -1616,9 +1653,12 @@ sortColumnDescriptor.Name = "TotalWins"
 sortColumnDescriptor.SummaryType = SummaryType.Int32Aggregate
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet13 | OrderList_Indent_Level_1 }}
 
-2.Define a SummaryRow and add SummaryColumn into it.
+2. Define a SummaryRow and add SummaryColumn into it.
 
+{% capture codesnippet14 %}​
 {% tabs %}
 {% highlight C# %}  
 GridSummaryRowDescriptor summaryRowDescriptor = new GridSummaryRowDescriptor();
@@ -1631,9 +1671,12 @@ summaryRowDescriptor.SummaryColumns.Add(sortColumnDescriptor)
 summaryRowDescriptor.Appearance.AnySummaryCell.Interior = new BrushInfo(Color.FromArgb(255, 231, 162))
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet14 | OrderList_Indent_Level_1 }}
 
-3.Finally add Summary Row into the grouping grid.
+3. Finally add Summary Row into the grouping grid.
 
+{% capture codesnippet15 %}​
 {% tabs %}
 {% highlight C# %}  
 this.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRowDescriptor);
@@ -1642,8 +1685,10 @@ this.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRowDescriptor);
 Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRowDescriptor)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet15 | OrderList_Indent_Level_1 }}
 
-4.Run the sample. The grid will look like this.
+4. Run the sample. The grid will look like this.
 
  ![Summaries features through code in Data Representation for Grid Grouping Control](Data-Representation_images/Data-Representation_img37.jpeg) 
 
@@ -1823,8 +1868,9 @@ Lets you control the caption text to be displayed.</td></tr>
 
 
 
-1.First, define a summary for the grid table. Then group the table against a data column.
+1. First, define a summary for the grid table. Then group the table against a data column.
 
+{% capture codesnippet16 %}​
 {% tabs %}
 {% highlight C# %}  
 
@@ -1849,9 +1895,12 @@ Me.gridGroupingControl1.ShowGroupDropArea = True
 Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add("RequiredDate")
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet16 | OrderList_Indent_Level_1 }}
 
-2.Enable Caption Summaries by setting ShowCaptionSummaryCells to True and by turning off ShowSummaries property that will disable creation of additional summary rows.
+2. Enable Caption Summaries by setting ShowCaptionSummaryCells to True and by turning off ShowSummaries property that will disable creation of additional summary rows.
 
+{% capture codesnippet17 %}​
 {% tabs %}
 {% highlight C# %}  
 
@@ -1866,9 +1915,12 @@ Me.gridGroupingControl1.ChildGroupOptions.ShowCaptionSummaryCells = True
 Me.gridGroupingControl1.ChildGroupOptions.ShowSummaries = False
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet17 | OrderList_Indent_Level_1 }}
 
-3.Once caption summaries are enabled, your next step is to specify a summary to be displayed in the Caption Rows. This is done by assigning summary name to CaptionSummaryRow property. Optionally you can customize caption text in the way you need.
+3. Once caption summaries are enabled, your next step is to specify a summary to be displayed in the Caption Rows. This is done by assigning summary name to CaptionSummaryRow property. Optionally you can customize caption text in the way you need.
 
+{% capture codesnippet18 %}​
 {% tabs %}
 {% highlight C# %}  
 this.gridGroupingControl1.ChildGroupOptions.CaptionSummaryRow = "Sum";
@@ -1879,9 +1931,12 @@ Me.gridGroupingControl1.ChildGroupOptions.CaptionSummaryRow = "Sum"
 Me.gridGroupingControl1.ChildGroupOptions.CaptionText = "{RecordCount} Items"
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet18 | OrderList_Indent_Level_1 }}
 
-4.Finally, format the caption rows to improve the look and feel.
+4. Finally, format the caption rows to improve the look and feel.
 
+{% capture codesnippet19 %}​
 {% tabs %}
 {% highlight C# %}  
 
@@ -1898,8 +1953,10 @@ Me.gridGroupingControl1.Appearance.GroupCaptionCell.Borders.Top = New GridBorder
 Me.gridGroupingControl1.Appearance.GroupCaptionCell.CellType = "Static"
  {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet19 | OrderList_Indent_Level_1 }}
 
-5.When you run the sample, your grid will look similar to this.
+5. When you run the sample, your grid will look similar to this.
 
  ![create Caption Summaries in Data Presentation for Grid Grouping Control](Data-Representation_images/Data-Representation_img43.jpeg) 
 
@@ -1931,8 +1988,9 @@ This example uses an Orders Table bound to a grouping grid. Summaries are create
 
 Follow these steps to sort groups by summary values.
 
-6.Define Summary Column Descriptor for column Freight and add it to SummaryRow of Orders table.
+6. Define Summary Column Descriptor for column Freight and add it to SummaryRow of Orders table.
 
+{% capture codesnippet20 %}​
 {% tabs %}
 {% highlight C# %}  
 GridSummaryColumnDescriptor summaryColumn1 = new GridSummaryColumnDescriptor("FreightAverage", SummaryType.DoubleAggregate, "Freight", "{Average:###.00}");
@@ -1949,9 +2007,12 @@ summaryRow1.SummaryColumns.Add(summaryColumn1)
 Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRow1)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet20 | OrderList_Indent_Level_1 }}
 
-7.Trigger caption summaries by setting appropriate properties.
+7. Trigger caption summaries by setting appropriate properties.
 
+{% capture codesnippet21 %}​
 {% tabs %}
 {% highlight C# %} 
 this.gridGroupingControl1.TableDescriptor.ChildGroupOptions.ShowCaptionSummaryCells = true;
@@ -1964,9 +2025,12 @@ Me.gridGroupingControl1.TableDescriptor.ChildGroupOptions.CaptionSummaryRow = "C
 Me.gridGroupingControl1.TableDescriptor.ChildGroupOptions.ShowSummaries = False
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet21 | OrderList_Indent_Level_1 }}
 
-8.Create SortColumnDescriptor for the field ShipCountry. Change default group order by using SetGroupSummaryOrder method with its parameters conveying summary name and property in the summary. Then group the grid against this column.
+8. Create SortColumnDescriptor for the field ShipCountry. Change default group order by using SetGroupSummaryOrder method with its parameters conveying summary name and property in the summary. Then group the grid against this column.
 
+{% capture codesnippet22 %}​
 {% tabs %}
 {% highlight C# %}  
 
@@ -1989,8 +2053,10 @@ sortColumnDescriptor1.SetGroupSummarySortOrder(summaryColumn1.GetSummaryDescript
 Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(sortColumnDescriptor1)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet22 | OrderList_Indent_Level_1 }}
 
-9.When you run the sample, you will see the groups sorted against summary values of Freight. Here is a sample screen shot.
+9. When you run the sample, you will see the groups sorted against summary values of Freight. Here is a sample screen shot.
 
  ![Sort By Summary In Caption in Data Presentation for Grid Grouping Control](Data-Representation_images/Data-Representation_img46.jpeg) 
 
@@ -3174,8 +3240,9 @@ This section demonstrates how to manually specify master-detail relations betwee
 
 #### Steps to setup RelatedMasterDetails relation
 
-1.Setup three data tables that have primary and foreign key columns in common.
+1. Setup three data tables that have primary and foreign key columns in common.
 
+{% capture codesnippet23 %}​
 {% tabs %}
 {% highlight C# %}  
 private int numberParentRows = 5;
@@ -3304,9 +3371,12 @@ Return dataTable
 End Function
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet23 | OrderList_Indent_Level_1 }}
 
 2. Manually set up relationships between tables and add relation to the parent and child tables.
 
+{% capture codesnippet24 %}​
 {% tabs %}
 {% highlight C# %} 
 GridRelationDescriptor parentToChildRelationDescriptor = new GridRelationDescriptor();
@@ -3351,13 +3421,14 @@ childToGrandChildRelationDescriptor.RelationKeys.Add("childID", "ChildID")
 parentToChildRelationDescriptor.ChildTableDescriptor.Relations.Add(childToGrandChildRelationDescriptor)
  {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet24 | OrderList_Indent_Level_1 }}
 
-3.Register the data tables with Engine.SourceListSet so that RelationDescriptor can resolve the name.
+3. Register the data tables with Engine.SourceListSet so that RelationDescriptor can resolve the name.
 
+4. Finally, bind hierarchical data source, which has been created through the above steps to a grouping grid by assigning parent table to the datasource.
 
-
-4.Finally, bind hierarchical data source, which has been created through the above steps to a grouping grid by assigning parent table to the datasource.
-
+{% capture codesnippet25 %}​
 {% tabs %}
 {% highlight C# %}  
 this.gridGroupingControl1.DataSource = parentTable;
@@ -3366,8 +3437,10 @@ this.gridGroupingControl1.DataSource = parentTable;
 Me.gridGroupingControl1.DataSource = parentTable
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet25 | OrderList_Indent_Level_1 }}
 
-5.When you run the sample, you could find the tables connected with Master-Details relation.
+5. When you run the sample, you could find the tables connected with Master-Details relation.
 
  ![RelatedMasterDetails relation](Data-Representation_images/Data-Representation_img70.jpeg) 
 
@@ -3389,8 +3462,9 @@ A foreign key reference relation can be set up between the lists by defining a r
 
 The following steps demonstrate this process.
 
-1.Create a collection named USStates in which each entry stores USState object.
+1. Create a collection named USStates in which each entry stores USState object.
 
+{% capture codesnippet26 %}​
 {% tabs %}
 {% highlight C# %}  
 
@@ -3591,9 +3665,12 @@ End Function
 End Class
  {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet26 | OrderList_Indent_Level_1 }}
 
-2.Create an object of USStates and add this object into the SourceListSet with a lookup name.
+2. Create an object of USStates and add this object into the SourceListSet with a lookup name.
 
+{% capture codesnippet27 %}​
 {% tabs %}
 {% highlight C# %}  
 USStatesCollection usStates = USStatesCollection.CreateDefaultCollection();
@@ -3604,9 +3681,12 @@ Dim usStates As USStatesCollection = USStatesCollection.CreateDefaultCollection(
 Me.gridGroupingControl1.Engine.SourceListSet.Add("USStates", usStates)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet27 | OrderList_Indent_Level_1 }}
 
-3.Creates a DataTable with the Key from USState as one of the columns.
+3. Creates a DataTable with the Key from USState as one of the columns.
 
+{% capture codesnippet28 %}​
 {% tabs %}
 {% highlight C# %}  
 DataTable table = new DataTable();
@@ -3638,9 +3718,12 @@ table.Rows(i)(1) = usStates((i Mod 8)).Key
 Next i
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet28 | OrderList_Indent_Level_1 }}
 
-4.Establish ForeignKeyReference relationship.
+4. Establish ForeignKeyReference relationship.
 
+{% capture codesnippet29 %}​
 {% tabs %}
 {% highlight C# %}  
 GridTableDescriptor mainTd = this.gridGroupingControl1.TableDescriptor;
@@ -3695,8 +3778,10 @@ Me.gridGroupingControl1.DataSource = table
 mainTd.Name = "ForeignKeyReference"
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet29 | OrderList_Indent_Level_1 }}
 
-5.Here is a sample output that displays a look up child list for data column State with value Georgia.
+5. Here is a sample output that displays a look up child list for data column State with value Georgia.
 
 ![Setup ForeignKeyReference Relation](Data-Representation_images/Data-Representation_img72.jpeg) 
 
@@ -3734,8 +3819,9 @@ Say you have a Customers table where each customer can have a list of purchased 
 
 The following example illustrates creation of ForeignKeyKeyWords relation.
 
-1.Create two data tables, Customers and Items, and add a list of records into them.
+1. Create two data tables, Customers and Items, and add a list of records into them.
 
+{% capture codesnippet30 %}​
 {% tabs %}
 {% highlight C# %}  
 private int numberParentRows = 6;
@@ -3825,9 +3911,12 @@ Return dataTable
 End Function
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet30 | OrderList_Indent_Level_1 }}
 
-2.Register the child table (Items) into the SourceListSet of the grouping engine.
+2. Register the child table (Items) into the SourceListSet of the grouping engine.
 
+{% capture codesnippet31 %}​
 {% tabs %}
 {% highlight C# %}  
 DataTable parentTable = GetParentTable();
@@ -3840,9 +3929,12 @@ Dim childTable As DataTable = GetChildTable()
 Me.gridGroupingControl1.Engine.SourceListSet.Add("Items", childTable)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet31 | OrderList_Indent_Level_1 }}
 
-3.Assign the datasource to the grid.
+3. Assign the datasource to the grid.
 
+{% capture codesnippet32 %}​
 {% tabs %}
 {% highlight C# %}  
 this.gridGroupingControl1.DataSource = parentTable;
@@ -3851,9 +3943,12 @@ this.gridGroupingControl1.DataSource = parentTable;
 Me.gridGroupingControl1.DataSource = parentTable
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet32 | OrderList_Indent_Level_1 }}
 
-4.Establish ForeignKeyKeyWords relationship between the tables.
+4. Establish ForeignKeyKeyWords relationship between the tables.
 
+{% capture codesnippet33 %}​
 {% tabs %}
 {% highlight C# %}  
 GridRelationDescriptor childRelation = new GridRelationDescriptor();
@@ -3878,8 +3973,10 @@ childRelation.ChildTableDescriptor.AllowNew = True;
 Me.gridGroupingControl1.TableDescriptor.Relations.Add(childRelation)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet33 | OrderList_Indent_Level_1 }}
 
-5.Here is a sample output.
+5. Here is a sample output.
 
 ![Foreign Key KeyWords Relation](Data-Representation_images/Data-Representation_img74.jpeg) 
 
@@ -3901,8 +3998,9 @@ This relation kind can be set up by defining a relation descriptor with its attr
 
 The following steps demonstrate this process.
 
-1.Create a collection named Countries in which each entry stores a Country object.
+1. Create a collection named Countries in which each entry stores a Country object.
 
+{% capture codesnippet34 %}​
 {% tabs %}
 {% highlight C# %}  
 
@@ -4107,9 +4205,12 @@ End Function
 End Class
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet34 | OrderList_Indent_Level_1 }}
 
-2.Create an object of USStates and add this object into the SourceListSet with a lookup name.
+2. Create an object of USStates and add this object into the SourceListSet with a lookup name.
 
+{% capture codesnippet35 %}​
 {% tabs %}
 {% highlight C# %}  
 CountriesCollection countries = CountriesCollection.CreateDefaultCollection();
@@ -4120,9 +4221,12 @@ Dim countries As CountriesCollection = CountriesCollection.CreateDefaultCollecti
 Me.gridGroupingControl1.Engine.SourceListSet.Add("Countries", countries)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet35 | OrderList_Indent_Level_1 }}
 
-3.Create a DataTable with one of the columns type as Country.
+3. Create a DataTable with one of the columns type as Country.
 
+{% capture codesnippet36 %}​
 {% tabs %}
 {% highlight C# %}  
 DataTable table = new DataTable();
@@ -4153,9 +4257,12 @@ table.Rows(i)(1) = countries((i Mod 8))
 Next i
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet36 | OrderList_Indent_Level_1 }}
 
-4.Establish the ForeignKeyReference relationship.
+4. Establish the ForeignKeyReference relationship.
 
+{% capture codesnippet37 %}​
 {% tabs %}
 {% highlight C# %}  
 GridTableDescriptor mainTd = this.gridGroupingControl1.TableDescriptor;
@@ -4209,8 +4316,10 @@ Me.gridGroupingControl1.DataSource = Table
 mainTd.Name = “ListItemReference”
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet37 | OrderList_Indent_Level_1 }}
 
-5.Here is a sample output that displays a look up child list for the data column Country with value Brazil.
+5. Here is a sample output that displays a look up child list for the data column Country with value Brazil.
 
 
 
@@ -4230,7 +4339,7 @@ UniformChildList relation can be used to map nested strong typed collection insi
 
 1. Create a class(ChildObj) whose instances form the child table records.
 
-
+{% capture codesnippet38 %}​
 {% tabs %}
 {% highlight C# %}  
 
@@ -4353,9 +4462,12 @@ Public Class ChildObj : Implements INotifyPropertyChanged
 End Class
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet38 | OrderList_Indent_Level_1 }}
 
-2.Create another class(ParentObj) that contains a reference to the above class (ChildObj). The instances of this class make the parent records. Both the classes implement INotifyPropertyChanged interface in order to get notified of any property changes.
+2. Create another class(ParentObj) that contains a reference to the above class (ChildObj). The instances of this class make the parent records. Both the classes implement INotifyPropertyChanged interface in order to get notified of any property changes.
 
+{% capture codesnippet39 %}​
 {% tabs %}
 {% highlight C# %}  
 
@@ -4497,9 +4609,12 @@ Public Class ParentObj : Implements INotifyPropertyChanged
 End Class
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet39 | OrderList_Indent_Level_1 }}
 
-3.Generate the collection using BindingList class, which implements ListChanged events in itself so that the grid can listen to those events when the list is changed. Add few items into the collection.
+3. Generate the collection using BindingList class, which implements ListChanged events in itself so that the grid can listen to those events when the list is changed. Add few items into the collection.
 
+{% capture codesnippet40 %}​
 {% tabs %}
 {% highlight C# %}  
 BindingList<ParentObj> topList = new BindingList<ParentObj>();
@@ -4539,9 +4654,12 @@ Loop
 Next i
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet40 | OrderList_Indent_Level_1 }}
 
-4.Assign the above collection to the datasource of grouping grid.
+4. Assign the above collection to the datasource of grouping grid.
 
+{% capture codesnippet41 %}​
 {% tabs %}
 {% highlight C# %}  
 gridGroupingControl1.DataSource = topList;
@@ -4550,9 +4668,12 @@ gridGroupingControl1.DataSource = topList;
 GridGroupingControl1.DataSource = topList
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet41 | OrderList_Indent_Level_1 }}
 
-5.Establish UniformChildList relation kind.
+5. Establish UniformChildList relation kind.
 
+{% capture codesnippet42 %}​
 {% tabs %}
 {% highlight C# %} 
 GridRelationDescriptor relation = new GridRelationDescriptor();
@@ -4579,8 +4700,10 @@ Me.gridGroupingControl1.AddGroupDropArea(childTable)
 childTable.TableDescriptor.GroupedColumns.Add("Field1")
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet42 | OrderList_Indent_Level_1 }}
 
-6.Here is a sample output.
+6. Here is a sample output.
 
 ![Uniform Child List Relation](Data-Representation_images/Data-Representation_img78.jpeg) 
 

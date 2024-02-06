@@ -23,7 +23,7 @@ The primary function of the GroupBar is to serve as a container for a group of f
 
 ## Features
 
-* Custom Colors can be applied for GroupBar control. See [Visual Styles](/windowsforms/groupbar/visual-styles) topic.
+* Custom Colors can be applied for GroupBar control. See [Visual Styles](/windowsforms/navigation-pane/visual-styles) topic.
 
 ![Custom colors in Windows Forms GroupBar Control](Overview_images/Overview_img3.jpeg)
 

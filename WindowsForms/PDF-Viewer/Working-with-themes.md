@@ -92,17 +92,17 @@ It provides support for applying Office 2019 theme to `PdfViewerControl` and its
 
 static class Program 
 { 
-/// <summary> 
-/// The main entry point for the application. 
-/// </summary> 
-[STAThread] 
-static void Main() 
-{ 
-SkinManager.LoadAssembly(typeof(Syncfusion.WinForms.Themes.Office2019Theme).Assembly); 
-Application.EnableVisualStyles(); 
-Application.SetCompatibleTextRenderingDefault(false); 
-Application.Run(new Form1()); 
-} 
+    /// <summary> 
+    /// The main entry point for the application. 
+    /// </summary> 
+    [STAThread] 
+    static void Main() 
+    { 
+        SkinManager.LoadAssembly(typeof(Syncfusion.WinForms.Themes.Office2019Theme).Assembly); 
+        Application.EnableVisualStyles(); 
+        Application.SetCompatibleTextRenderingDefault(false); 
+        Application.Run(new Form1()); 
+    } 
 }
 
 {% endhighlight %}
@@ -110,16 +110,16 @@ Application.Run(new Form1());
 {% highlight vb %}
 
 Module Program
-''' <summary> 
-''' The main entry point for the application. 
-''' </summary> 
-<STAThread> 
-Private Sub Main()
-SkinManager.LoadAssembly(GetType(Syncfusion.WinForms.Themes.Office2019Theme).Assembly) 
-Application.EnableVisualStyles()
-Application.SetCompatibleTextRenderingDefault(False) 
-Application.Run(New Form1()) 
-End Sub 
+    ''' <summary> 
+    ''' The main entry point for the application. 
+    ''' </summary> 
+    <STAThread> 
+    Private Sub Main()
+        SkinManager.LoadAssembly(GetType(Syncfusion.WinForms.Themes.Office2019Theme).Assembly) 
+        Application.EnableVisualStyles()
+        Application.SetCompatibleTextRenderingDefault(False) 
+        Application.Run(New Form1()) 
+    End Sub 
 End Class
 
 {% endhighlight %}
@@ -154,17 +154,17 @@ It provides support for applying high contrast theme to `PdfViewerControl` and i
 
 static class Program 
 { 
-/// <summary> 
-/// The main entry point for the application. 
-/// </summary> 
-[STAThread] 
-static void Main() 
-{ 
-SkinManager.LoadAssembly(typeof(Syncfusion.WinForms.Themes.HighContrastTheme).Assembly); 
-Application.EnableVisualStyles(); 
-Application.SetCompatibleTextRenderingDefault(false); 
-Application.Run(new Form1()); 
-} 
+    /// <summary> 
+    /// The main entry point for the application. 
+    /// </summary> 
+    [STAThread] 
+    static void Main() 
+    { 
+        SkinManager.LoadAssembly(typeof(Syncfusion.WinForms.Themes.HighContrastTheme).Assembly); 
+        Application.EnableVisualStyles(); 
+        Application.SetCompatibleTextRenderingDefault(false); 
+        Application.Run(new Form1()); 
+    } 
 }
 
 {% endhighlight %}
@@ -172,16 +172,16 @@ Application.Run(new Form1());
 {% highlight vb %}
 
 Module Program
-''' <summary> 
-''' The main entry point for the application. 
-''' </summary> 
-<STAThread> 
-Private Sub Main()
-SkinManager.LoadAssembly(GetType(Syncfusion.WinForms.Themes.HighContrastTheme).Assembly) 
-Application.EnableVisualStyles()
-Application.SetCompatibleTextRenderingDefault(False) 
-Application.Run(New Form1()) 
-End Sub 
+    ''' <summary> 
+    ''' The main entry point for the application. 
+    ''' </summary> 
+    <STAThread> 
+    Private Sub Main()
+        SkinManager.LoadAssembly(GetType(Syncfusion.WinForms.Themes.HighContrastTheme).Assembly) 
+        Application.EnableVisualStyles()
+        Application.SetCompatibleTextRenderingDefault(False) 
+        Application.Run(New Form1()) 
+    End Sub 
 End Class
 
 {% endhighlight %}

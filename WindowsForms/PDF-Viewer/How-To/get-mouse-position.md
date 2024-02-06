@@ -30,7 +30,6 @@ namespace PageMouseEventsDemo
 
             //Load the PDF file.
             pdfViewerControl1.Load("../../Data/HTTP Succinctly.pdf");
-
             //Wire the `PageClicked` event.
             pdfViewerControl1.PageClicked += PdfViewer_PageClicked;
         }
@@ -41,7 +40,6 @@ namespace PageMouseEventsDemo
         {
             //Find the page number in which the mouse clicks occurred.
             int currentPage = args.PageIndex;
-
             //Find the mouse position on above the document page
             System.Drawing.PointF mousePosition = args.Position;
         }
@@ -67,10 +65,8 @@ namespace PageMouseEventsDemo
         public Form1()
         {
             InitializeComponent();
-
             //Load the PDF file.
             pdfViewerControl1.Load("../../Data/HTTP Succinctly.pdf");
-
             //Wire the `PageMouseMove` event.
             pdfViewerControl1.PageMouseMove += Pdfviewer_PageMouseMove;
         }
@@ -81,7 +77,6 @@ namespace PageMouseEventsDemo
         {
             //Find the page number in which the mouse clicks occurred.
             int currentPage = args.PageIndex;
-
             //Find the mouse position on above the document page
             System.Drawing.PointF mousePosition = args.Position;
         }

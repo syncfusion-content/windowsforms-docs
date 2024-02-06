@@ -21,4 +21,4 @@ This combo box automatically shows all the fields in the datasource. You can dat
 
 ## Choose between different combobox controls
 
-You can refer to the different combobox controls [here](https://help.syncfusion.com/windowsforms/sfcombobox/overview#choose-between-different-combobox-controls).
+You can refer to the different combobox controls [here](https://help.syncfusion.com/windowsforms/combobox/overview#choose-between-different-combobox-controls).

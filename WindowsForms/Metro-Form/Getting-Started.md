@@ -38,7 +38,7 @@ Create a new Windows Forms project in the Visual Studio to change the default fo
 
 **Step 1** - Add the following required assembly references to the project:
 
-	* Syncfusion.Shared.Base.dll	
+* Syncfusion.Shared.Base.dll	
 
 **Step 2** - Include the namespaces **Syncfusion.Windows.Forms**.
 

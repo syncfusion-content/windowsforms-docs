@@ -10,7 +10,7 @@ documentation: ug
 # Getting Started in Windows Forms ContextMenuStrip (ContextMenuStripEx)
 
 >**Important**
-Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your Windows Forms application to use our components.
+Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion license key in your Windows Forms application to use our components.
 
 This section provides a quick overview for working with the **ContextMenuStripEx** control in a WinForms application.
 
@@ -93,6 +93,7 @@ The ContextMenuStripEx control can be added through code by following the below 
 
 2. The below code snippets adds a ContextMenuStripEx control to the application.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -154,6 +155,8 @@ Me.Controls.Add(Me.richTextBox1)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 
 ![Add a Context Menu](GettingStarted_Images/Associate.png)

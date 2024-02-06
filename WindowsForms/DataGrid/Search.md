@@ -23,7 +23,7 @@ Me.sfDataGrid.SearchController.Search("a")
 
 ![Windows forms datagrid displays search the specific string](Search_images/Search_img1.png)
 
-### Filtering
+## Filtering
 The filtering based on the search text can be enabled by setting the [AllowFiltering](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SearchController.html#Syncfusion_WinForms_DataGrid_SearchController_AllowFiltering) property to `true`.
 
 {% tabs %}
@@ -45,7 +45,7 @@ Me.sfDataGrid.SearchController.Search("Alice")
 
 ![Windows forms datagrid displays the filtering based on the search text](Search_images/Search_img2.png)
 
-### Filtering with DataTable
+## Filtering with DataTable
 
 By default, when binding the DataTable collection to SfDataGrid, filtering will not work in searching operation. So, convert the DataTable to Dynamic collection.
 
@@ -91,12 +91,12 @@ sfDataGrid1.DataSource = DynamicOrders
 {% endhighlight %}
 {% endtabs %}
 
-### Case Sensitive Search
+## Case Sensitive Search
 The data can be searched with the case-sensitivity by setting the [SearchController.AllowCaseSensitiveSearch](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SearchController.html#Syncfusion_WinForms_DataGrid_SearchController_AllowCaseSensitiveSearch) property to `true`.
 
 ![Windows forms datagrid displays search case sensitive with the data](Search_images/Search_img3.png)
 
-### Searching wrap text
+## Searching wrap text
 
 The wrap text can be searched by using the [SearchController.Search](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SearchController.html#Syncfusion_WinForms_DataGrid_SearchController_Search_System_String_) method.
 
@@ -119,7 +119,7 @@ Me.sfDataGrid1.SearchController.Search("cr")
 
 ![Windows forms datagrid displays search applied wrap text in the specific column](Search_images/Search_img12.jpg)
 
-### Changing Search Highlight Color
+## Changing Search Highlight Color
 The highlighting color of the search text can be changed by using the [SearchColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SearchController.html#Syncfusion_WinForms_DataGrid_SearchController_SearchColor) property.
 {% tabs %}
 {% highlight c# %}
@@ -134,7 +134,7 @@ Me.sfDataGrid.SearchController.SearchColor = Color.LightGreen
 
 ![Windows forms datagrid displays changed the highlight color of search text](Search_images/Search_img4.png)
 
-### Disable Highlighting Search Text
+## Disable Highlighting Search Text
 The highlighting of the search text can be disabled by setting the [AllowHighlightSearchText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SearchController.html#Syncfusion_WinForms_DataGrid_SearchController_AllowHighlightSearchText) property to `false`.
 
 {% tabs %}
@@ -302,4 +302,4 @@ End Class
 
 ## See also
 
-[How to search and select record in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9638)
+[How to search and select record in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/8552/how-to-search-and-select-record-in-winforms-datagrid-sfdatagrid)

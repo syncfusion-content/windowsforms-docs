@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Localization in DataGrid (SfDataGrid)
-Localization is the process of translating the application resources into different language for the specific cultures. The SfDataGrid can be localized by adding [resource](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/aa992030(v=vs.100)) file. Application culture can be changed by setting [CurrentUICulture ](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentuiculture?view=net-5.0)before `InitializeComponent` method.
+Localization is the process of translating the application resources into different language for the specific cultures. The SfDataGrid can be localized by adding [resource](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/aa992030(v=vs.100)) file. Application culture can be changed by setting [CurrentUICulture ](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentuiculture?view=net-5.0)before `InitializeComponent` method.
 
 ## Localize at Sample Level
 To localize the SfDataGrid based on `CurrentUICulture` using resource files, follow the below steps.
@@ -59,7 +59,7 @@ End Sub
 
 To localize the `Select All` string in the CheckListBox of the FilterControl, include the resource file of SfListView to the sample using the previously specified steps, like in SfDataGrid.
 
-The default resource file of SfListView can be download from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ResourceFile1283641291). Refer to the [localization](https://help.syncfusion.com/windowsforms/listview/localization) section in SfListView.
+The default resource file of SfListView can be download from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ResourceFile1283641291). Refer to the [localization](https://help.syncfusion.com/windowsforms/listview/localization) section in SfListView.
 
 ![Filter control of winforms datagrid localized with modified resources](Localization_images/Localization_img9.png)
 
@@ -77,7 +77,7 @@ Now run the sample,
 ![Winforms datagrid shown with modified resources](Localization_images/Localization_img8.png)
 
 ## Localize Resource File with Different Assembly or Namespace
-By default, SfDataGrid try to read the resource file from executing assembly and its default namespace by using [Assembly.GetExecuteAssembly](https://docs.microsoft.com/en-us/dotnet/api/system.reflection.assembly.getexecutingassembly?view=net-5.0) method. When the resource file is located at different assembly or namespace, then it can be set to the SfDataGrid by using SR.SetResources method.
+By default, SfDataGrid try to read the resource file from executing assembly and its default namespace by using [Assembly.GetExecuteAssembly](https://learn.microsoft.com/en-us/dotnet/api/system.reflection.assembly.getexecutingassembly?view=net-5.0) method. When the resource file is located at different assembly or namespace, then it can be set to the SfDataGrid by using SR.SetResources method.
 
 {% tabs %}
 {% highlight c# %}
