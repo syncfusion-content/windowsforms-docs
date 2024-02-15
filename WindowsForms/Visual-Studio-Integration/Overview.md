@@ -25,7 +25,7 @@ The Syncfusion provides the following supports in Visual Studio:
 2.	[Item Template](https://help.syncfusion.com/windowsforms/Visual-Studio-Integration/Item-Template): Add predefined Syncfusion items (Forms) and the required Syncfusion assemblies in WinForms Application.
 3.	[Add References](https://help.syncfusion.com/windowsforms/Visual-Studio-Integration/Add-References): Add the required Syncfusion assembly to Windows project reference based on the selected control(s).
 4.	[Toolbox](https://help.syncfusion.com/windowsforms/visual-studio-integration/toolbox-configuration): Configure the Syncfusion controls into the Visual Studio .NET toolbox.
-5.	[Troubleshooting](https://help.syncfusion.com/windowsforms/Visual-Studio-Integration/Troubleshooting): Troubleshoots the project with the Syncfusion configuration and apply the fix like, wrong Framework Syncfusion assembly added to the project or missing any Syncfusion dependent assembly of a referred assembly.
+5.	[Troubleshooting](https://help.syncfusion.com/windowsforms/visual-studio-integration/troubleshooting): Troubleshoots the project with the Syncfusion configuration and apply the fix like, wrong Framework Syncfusion assembly added to the project or missing any Syncfusion dependent assembly of a referred assembly.
 
 **No project selected in Visual Studio**
 
