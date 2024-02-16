@@ -33,3 +33,5 @@ Me.splitterControl1.SplitBars = DynamicSplitBars.SplitColumns
 {% endhighlight %}
 
 {% endtabs %}
+
+![Splitter Control shows splitting option for columns](getting-started_images/SplitterControl_SplitColumns.png)

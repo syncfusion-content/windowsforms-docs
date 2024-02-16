@@ -36,4 +36,4 @@ Me.splitterControl1.GridOfficeScrollBars= OfficeScrollBars.Office2007
 {% endhighlight %}
 
 {% endtabs %}
-
+![Scrollbar with customization](getting-started_images/SplitterControl_ScrollbBarCustomization.png)
