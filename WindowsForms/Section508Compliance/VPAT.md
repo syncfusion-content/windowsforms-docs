@@ -189,6 +189,6 @@ Essential Studio Windows Forms controls are accessible.<br/><br/></td></tr>
 <td>
 1194.41 (c) Support Services for products can accommodate the communication needs of end-users with disabilities.<br/><br/><br/><br/></td><td>
 Supported.<br/><br/></td><td>
-Online support <a href="https://www.syncfusion.com/support/directtrac/incidents">Incidents</a> and <a href="https://www.syncfusion.com/support/directtrac/forums">Forums</a> are available.<br/><br/></td></tr>
+Online support <a href="https://support.syncfusion.com/create">Incidents</a> and <a href="https://www.syncfusion.com/support/directtrac/forums">Forums</a> are available.<br/><br/></td></tr>
 </table>
 Syncfusion does not promise that the information provided in this document is error-free, or that any error is corrected, or that your use of the information provides specific results. The document and its contents are delivered on an “as-is” basis. All information provided is subject to change without prior notice. Syncfusion disclaims all warranties, express, or implied, including any warranty of accuracy, non-infringement, merchantability, and fitness for a particular purpose.
