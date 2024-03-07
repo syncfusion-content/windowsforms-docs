@@ -46,7 +46,7 @@ Create the Syncfusion WinForms project using the Visual Studio Project Template 
 
 	N> The installed location and GAC options will be available only after the Syncfusion Essential WinForms setup has been installed. Use the NuGet option instead of installing the Syncfusion Essential WinForms setup. Also, the GAC option will not be available when you choose .NET 6.0, .NET 7.0, and .NET 8.0 from the project type option in Visual Studio.
 
-I> Visual Basic Language support is available in WinForms Template Studio starting from version 25.*.*.
+	I> Visual Basic Language support is available in WinForms Template Studio starting from version 25.*.*.
 
 5.  Navigate to the **Project type** tab and choose the Syncfusion WinForms application type you want—there are three types: Blank, MenuBar, and Tabbed Form. Click **Next** to proceed.
 
