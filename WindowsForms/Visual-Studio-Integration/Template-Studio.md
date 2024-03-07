@@ -48,7 +48,7 @@ Create the Syncfusion WinForms project using the Visual Studio Project Template 
 
 	I> Visual Basic Language support is available in WinForms Template Studio starting from version 25.*.*.
 
-5.  Navigate to the **Project type** tab and choose the Syncfusion WinForms application type you want—there are three types: Blank, MenuBar, and Tabbed Form. Click **Next** to proceed.
+5.  Navigate to the **Project type** tab and choose the Syncfusion WinForms application type you want—there are four types: Blank, MenuBar, Ribbon and Tabbed Form. Click **Next** to proceed.
 
 	![Syncfusion WinForms project type selection wizard](Template-Studio-Images/WF-4.png)
 
