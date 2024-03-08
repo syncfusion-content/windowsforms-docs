@@ -16,6 +16,7 @@ The splitter in the SplitterControl can be supported with Row splitter and Colum
 * SplitRows
 * Both
 
+The provided code is used to enable SplitBars exclusively for columns in a user interface.
 
 {% tabs %}
 
