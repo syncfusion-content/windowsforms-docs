@@ -2,7 +2,7 @@
 layout: post
 title: RTL in Windows Forms xptoolbar control | Syncfusion
 description: Learn about RTL support in Syncfusion Windows Forms xptoolbar (XPToolbar) control, its elements and more details.
-platform: WindowsForms
+platform: windowsforms
 control: XPToolBar
 documentation: ug
 ---
