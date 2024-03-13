@@ -40,13 +40,13 @@ Create the Syncfusion WinForms project using the Visual Studio Project Template 
 
 	![Choose Syncfusion WinForms Application from Visual Studio new project dialog](Template-Studio-Images/WF-3.png)
 
-4.	When you launch the **Syncfusion WinForms Template Studio**, you will encounter a configuration wizard that allows you to set up your Syncfusion WinForms application. Within this wizard, you'll have the option to specify your preferred .NET Core Version or .NET Framework Version, select the desired language, and choose the reference type according to your requirements.
+4.	When you launch the **Syncfusion WinForms Template Studio**, you will encounter a configuration wizard that allows you to set up your Syncfusion WinForms application. Within this wizard, you will have the option to specify your preferred .NET Core Version or .NET Framework Version, select the desired language(CSharp or Visual Basic), and choose the reference type according to your requirements.
 
 	![Syncfusion WinForms project configuration wizard](Template-Studio-Images/WF-5.png)
 
 	N> The installed location and GAC options will be available only after the Syncfusion Essential WinForms setup has been installed. Use the NuGet option instead of installing the Syncfusion Essential WinForms setup. Also, the GAC option will not be available when you choose .NET 6.0, .NET 7.0, and .NET 8.0 from the project type option in Visual Studio.
 
-	I> Visual Basic Language support is available in WinForms Template Studio starting from version 25.*.*.
+	I> Visual Basic Language support is available in WinForms Template Studio starting from version 25.1.35.
 
 5.  Navigate to the **Project type** tab and choose the Syncfusion WinForms application type you want—there are four types: Blank, MenuBar, Ribbon and Tabbed Form. Click **Next** to proceed.
 
