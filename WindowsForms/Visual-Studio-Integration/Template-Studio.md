@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Template Studio | WinForms | Syncfusion
-description: Syncfusion provides the Visual Studio Project Templates for the Syncfusion WinForms platform to create Syncfusion WinForms Application by addiing the required assemblies
+description: Visual Studio Project Templates for the Syncfusion WinForms platform to create Syncfusion WinForms Application by addiing the required assemblies
 platform: windowsforms
 control: Syncfusion Extensions
 documentation: ug
