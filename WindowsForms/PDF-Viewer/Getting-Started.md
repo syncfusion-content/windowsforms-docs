@@ -89,10 +89,13 @@ Imports Syncfusion.Windows.Forms.PdfViewer
 //Initializing the PdfViewerControl
 PdfViewerControl pdfViewerControl1 = new PdfViewerControl();
 
-//Loading the document in the PdfViewerControl
-pdfViewerControl1.Load("Sample.pdf");
 //Add PdfViewerControl to the Form
 Controls.Add(pdfViewerControl1);
+//Docking the control to all edges of its containing control and sizing appropriately.
+pdfViewerControl1.Dock = DockStyle.Fill;
+
+//Loading the document in the PdfViewerControl
+pdfViewerControl1.Load("Sample.pdf");
 
 {% endhighlight %}
 {% highlight vb %}
