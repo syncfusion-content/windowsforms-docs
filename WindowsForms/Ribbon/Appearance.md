@@ -2,7 +2,7 @@
 layout: post
 title: Appearance in Windows Forms Ribbon control | Syncfusion
 description: Learn about Appearance support in Syncfusion Windows Forms Ribbon (RibbonControlAdv) control and more details.
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
