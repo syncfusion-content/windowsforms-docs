@@ -75,6 +75,24 @@ Me.EnableAeroTheme = True
 
 N>[View sample in GitHub](https://github.com/SyncfusionExamples/How-to-customize-the-appearance-of-the-RibbonForm)
 
+## IconSize
+
+You can customize the icon size between 16 to 32 using the `IconSize` property. By default the icon rendered with a size of 16x16 pixels.
+
+{% highlight c# %}
+
+this.IconSize = new Size(32,32);
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+Me.IconSize = New Size(32, 32)
+
+{% endhighlight %}
+
+![RibbonForm with IconSize 32](Ribbon_Form_Images/IconSize.png)
+
 ## Customization
 
 The property which lets you set borders for the Office2007Style form is as follows.
