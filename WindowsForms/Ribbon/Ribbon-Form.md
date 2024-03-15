@@ -2,7 +2,7 @@
 layout: post
 title: Ribbon Form in Windows Forms Ribbon control | Syncfusion
 description: Learn about Ribbon Form support in Syncfusion Windows Forms Ribbon (RibbonControlAdv) control and more details.
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
@@ -74,6 +74,28 @@ Me.EnableAeroTheme = True
 ![Appearance Office2007](Ribbon_Form_Images/RibbonForm-Appearance-Office2007.png)
 
 N>[View sample in GitHub](https://github.com/SyncfusionExamples/How-to-customize-the-appearance-of-the-RibbonForm)
+
+## IconSize
+
+The icon size can be customized between 16 to 32 pixels using the `IconSize` property. By default, the icon rendered with a size of 16x16 pixels.
+
+{% tabs %}
+
+{% highlight c# %}
+
+this.IconSize = new Size(32,32);
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+Me.IconSize = New Size(32, 32)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![RibbonForm with IconSize 32](Ribbon_Form_Images/IconSize.png)
 
 ## Customization
 
