@@ -2,7 +2,7 @@
 layout: post
 title: Appearance in Windows Forms Ribbon control | Syncfusion
 description: Learn about Appearance support in Syncfusion Windows Forms Ribbon (RibbonControlAdv) control and more details.
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
@@ -336,6 +336,9 @@ color.ButtonBackgroundPressed = ColorTranslator.FromHtml("#969696");
 // To set the ToolstripButton selected back color
 color.ButtonBackgroundSelected = ColorTranslator.FromHtml("#c5c5c5");
 
+// To set the ToolstripButton hovered back color
+color.ButtonBackgroundHovered = ColorTranslator.FromHtml("#c5c5c5");
+
 // To set the selected SplitButton Background color
 color.SplitButtonBackgroundSelected = ColorTranslator.FromHtml("#c5c5c5");
 
@@ -467,6 +470,8 @@ this.ribbonControlAdv1.Office2016ColorTable.Add(color);
     color.ButtonBackgroundPressed = ColorTranslator.FromHtml("#969696")
 
     color.ButtonBackgroundSelected = ColorTranslator.FromHtml("#c5c5c5")
+
+    color.ButtonBackgroundHovered = ColorTranslator.FromHtml("#c5c5c5")
 
     color.SplitButtonBackgroundSelected = ColorTranslator.FromHtml("#c5c5c5")
 
