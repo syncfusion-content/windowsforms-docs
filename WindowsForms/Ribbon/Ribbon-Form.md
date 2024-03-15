@@ -79,6 +79,8 @@ N>[View sample in GitHub](https://github.com/SyncfusionExamples/How-to-customize
 
 You can customize the icon size between 16 to 32 using the `IconSize` property. By default the icon rendered with a size of 16x16 pixels.
 
+{% tabs %}
+
 {% highlight c# %}
 
 this.IconSize = new Size(32,32);
@@ -90,6 +92,8 @@ this.IconSize = new Size(32,32);
 Me.IconSize = New Size(32, 32)
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![RibbonForm with IconSize 32](Ribbon_Form_Images/IconSize.png)
 
