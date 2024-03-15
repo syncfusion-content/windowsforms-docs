@@ -77,7 +77,7 @@ N>[View sample in GitHub](https://github.com/SyncfusionExamples/How-to-customize
 
 ## IconSize
 
-You can customize the icon size between 16 to 32 using the `IconSize` property. By default the icon rendered with a size of 16x16 pixels.
+The icon size can be customized between 16 to 32 pixels using the `IconSize` property. By default, the icon is rendered with a size of 16x16 pixels.
 
 {% tabs %}
 
