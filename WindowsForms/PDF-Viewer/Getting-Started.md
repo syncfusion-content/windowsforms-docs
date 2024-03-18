@@ -103,10 +103,13 @@ pdfViewerControl1.Load("Sample.pdf");
 'Initializing the PdfViewerControl
 Dim pdfViewerControl1 As PdfViewerControl = New PdfViewerControl()
 
-'Loading the document in the PdfViewerControl
-pdfViewerControl1.Load("Sample.pdf")
 'Add PdfViewerControl to the Form
 Controls.Add(pdfViewerControl1)
+'Docking the control to all edges of its containing control and sizing appropriately.
+pdfViewerControl1.Dock = DockStyle.Fill
+
+'Loading the document in the PdfViewerControl
+pdfViewerControl1.Load("Sample.pdf")
 
 {% endhighlight %}
 {% endtabs %}
