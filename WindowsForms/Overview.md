@@ -7,8 +7,6 @@ control: Introduction
 documentation: ug
 ---
 
-> With the 2024 Volume 1 release, we will discontinue support for .NET Framework 4.5, 4.5.1, and 4.6 in WinForms, WPF, and the File-Format Frameworks. Instead, we will provide support for .NET 4.6.2.
-
 # Welcome to Syncfusion Essential Windows Forms
 
 Syncfusion Essential Studio for Windows Forms is a comprehensive collection of over 100+ essential Windows Forms controls like Grids, Charts, Diagram, Scheduler and Tools for building powerful line-of-business applications faster. Syncfusion Windows Forms controls provides unparalleled performance, stunning built-in themes, touch-friendly UI, localization and seamless integration with Visual Studio.
