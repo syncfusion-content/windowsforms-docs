@@ -2,12 +2,10 @@
 layout: post
 title: Overview of Syncfusion Essential Studio Windows Forms products
 description: Over 100 WinForms (Windows Forms) controls like DataGrid, Charts, Docking, PDF Viewer and much more to build desktop applications.
-platform: WindowsForms
+platform: windowsforms
 control: Introduction
 documentation: ug
 ---
-
-> With the 2024 Volume 1 release, we will discontinue support for .NET Framework 4.5, 4.5.1, and 4.6 in WinForms, WPF, and the File-Format Frameworks. Instead, we will provide support for .NET 4.6.2.
 
 # Welcome to Syncfusion Essential Windows Forms
 
