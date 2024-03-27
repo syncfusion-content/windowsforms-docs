@@ -30,3 +30,9 @@ Me.splitterControl1.ShowVerticalScrollBar = False
 {% endhighlight %}
 
 {% endtabs %}
+
+1. **Hiding Horizontal Scrollbar**
+![Splitter Control hide horizontal scrollbar](getting-started_images/SplitterControl_HideHorizontalScrollBar.png)
+
+2. **Hiding Vertical Scrollbar**
+![Splitter Control hide vertical scrollbar](getting-started_images/SplitterControl_HideVerticalScrollBar.png)

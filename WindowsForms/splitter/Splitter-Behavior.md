@@ -16,6 +16,7 @@ The splitter in the SplitterControl can be supported with Row splitter and Colum
 * SplitRows
 * Both
 
+The provided code is used to enable SplitBars exclusively for columns in a user interface.
 
 {% tabs %}
 
@@ -33,3 +34,5 @@ Me.splitterControl1.SplitBars = DynamicSplitBars.SplitColumns
 {% endhighlight %}
 
 {% endtabs %}
+
+![Splitter Control shows splitting option for columns](getting-started_images/SplitterControl_SplitColumns.png)

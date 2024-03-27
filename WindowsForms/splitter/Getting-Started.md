@@ -88,6 +88,7 @@ To add SplitterControl to the Windows Forms Application through the following co
    {% endtabs %}
    {% endcapture %}
    {{ codesnippet2 | OrderList_Indent_Level_1 }}
+   ![Splitter Control](getting-started_images/SplitterControl_GettingStarted.png)
 
 
 
