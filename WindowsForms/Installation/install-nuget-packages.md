@@ -2,7 +2,7 @@
 layout: post
 title: Install Syncfusion Windows Forms NuGet packages - Syncfusion
 description: Learn here about the how to install Syncfusion Windows Forms NuGet packages from Package manager and NuGet manager.
-platform: WindowsForms
+platform: windowsforms
 control: Extension
 documentation: ug
 
@@ -42,7 +42,7 @@ The NuGet **Package Manager UI** allows you to search, install, uninstall, and u
 
 ## Installation using Dotnet (.NET) CLI
 
-The [dotnet Command Line Interface (CLI)](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-dotnet-cli), allows you to add, restore, pack, publish, and manage packages without making any changes to your application files. [Dotnet add package](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package?tabs=netcore2x) adds a package reference to the application file, then runs [dotnet restore](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-restore?tabs=netcore2x) to install the package.
+The [dotnet Command Line Interface (CLI)](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-dotnet-cli), allows you to add, restore, pack, publish, and manage packages without making any changes to your application files. [Dotnet add package](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package?tabs=netcore2x) adds a package reference to the application file, then runs [dotnet restore](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-restore?tabs=netcore2x) to install the package.
 
 Follow the below instructions to use the dotnet CLI command to install the Syncfusion WinForms NuGet packages.
 
@@ -60,7 +60,7 @@ Follow the below instructions to use the dotnet CLI command to install the Syncf
 
     ![Winforms Package Entry ](Platform_images/packageentry.png)
 
-4. Then run  [dotnet restore](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-restore?tabs=netcore2x) command to restores all the packages listed in the application file.
+4. Then run  [dotnet restore](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-restore?tabs=netcore2x) command to restores all the packages listed in the application file.
 
     > Restoring is done automatically with **dotnet build** and **dotnet run** in .NET Core 2.0 and later.
 
