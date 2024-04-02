@@ -2,7 +2,7 @@
 layout: post
 title: Hiding the Scrollbars in Windows Forms Splitter control | Syncfusion
 description: Learn about Hiding the Scrollbars support in Syncfusion Windows Forms Splitter control and more details.
-platform: WindowsForms
+platform: Windows Forms
 control: Splitter  
 documentation: ug
 ---

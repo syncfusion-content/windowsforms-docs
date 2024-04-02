@@ -2,7 +2,7 @@
 layout: post
 title: Splitter Behavior in Windows Forms Splitter control | Syncfusion
 description: Learn about Splitter Behavior support in Syncfusion Windows Forms Splitter control and more details.
-platform: WindowsForms
+platform: Windows Forms
 control: Splitter
 documentation: ug
 ---
