@@ -2,7 +2,7 @@
 layout: post
 title: About Windows Forms Splitter control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms Splitter control, its elements and more details.
-platform: Windows Forms
+platform: windowsforms
 control: Splitter  
 documentation: ug
 ---
