@@ -2,7 +2,7 @@
 layout: post
 title: Scrollbar Customization in Windows Forms Splitter control | Syncfusion
 description: Learn about Scrollbar Customization support in Syncfusion Windows Forms Splitter control and more details.
-platform: WindowsForms
+platform: windowsforms
 control: Splitter  
 documentation: ug
 ---
@@ -36,4 +36,4 @@ Me.splitterControl1.GridOfficeScrollBars= OfficeScrollBars.Office2007
 {% endhighlight %}
 
 {% endtabs %}
-
+![Scrollbar with customization](getting-started_images/SplitterControl_ScrollbBarCustomization.png)
