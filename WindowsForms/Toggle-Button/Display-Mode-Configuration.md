@@ -2,7 +2,7 @@
 layout: post
 title: Display mode configuration in Windows Forms Toggle Button | Syncfusion
 description: Learn here all about display mode configuration support in Syncfusion Windows Forms Toggle Button control, it's elements and more.
-platform: WindowsForms
+platform: windowsforms
 control: ToggleButton 
 documentation: ug
 ---
