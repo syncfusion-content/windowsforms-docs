@@ -9,7 +9,7 @@ documentation: ug
 ---
 # Zooming in Windows Forms Grid Control
 
-The GridControl allows the user to zoom in or out to the entire grid as well as the individual cells. To have this zooming support in grid, the [Syncfusion.GridHelperClasses.Windows.dll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.html) assembly needs to be added into the assembly reference.
+The GridControl allows the user to zoom in or out to the entire grid as well as the individual cells. To have this zooming support in grid, the [Syncfusion.GridHelperClasses.Windows.dll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClassesWindowsAssembly.html) assembly needs to be added into the assembly reference.
 
 ## Grid Level Zooming
 
