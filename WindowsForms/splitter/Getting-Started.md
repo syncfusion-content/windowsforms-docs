@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Windows Forms Splitter control | Syncfusion
 description: Learn here about getting started with Syncfusion Windows Forms Splitter control, its elements and more details.
-platform: WindowsForms
+platform: windowsforms
 control: Splitter
 documentation: ug
 ---
@@ -88,6 +88,7 @@ To add SplitterControl to the Windows Forms Application through the following co
    {% endtabs %}
    {% endcapture %}
    {{ codesnippet2 | OrderList_Indent_Level_1 }}
+   ![Splitter Control](getting-started_images/SplitterControl_GettingStarted.png)
 
 
 

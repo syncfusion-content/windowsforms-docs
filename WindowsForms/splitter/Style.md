@@ -2,7 +2,7 @@
 layout: post
 title: Style in Windows Forms Splitter control | Syncfusion
 description: Learn about Style support in Syncfusion Windows Forms Splitter control, its elements and more details.
-platform: WindowsForms
+platform: windowsforms
 control: Splitter  
 documentation: ug
 ---
