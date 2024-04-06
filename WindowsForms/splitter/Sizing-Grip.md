@@ -2,7 +2,7 @@
 layout: post
 title: Sizing Grip in Windows Forms Splitter control | Syncfusion
 description: Learn about Sizing Grip support in Syncfusion Windows Forms Splitter control, its elements and more details.
-platform: WindowsForms
+platform: windowsforms
 control: Splitter  
 documentation: ug
 ---
