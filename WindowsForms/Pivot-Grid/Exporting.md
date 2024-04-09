@@ -48,11 +48,11 @@ excelExport.Export("D:\PivotGrid.xlsx")
 
 {% endtabs %}
 
-### Exporting mode
+## Exporting mode
 
 Pivot grid consists of two exporting modes that are explained below. It is possible to switch the exporting modes using the [ExportMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotConverter.ExcelExport.html#Syncfusion_PivotConverter_ExcelExport_ExportMode) property of excel export class.
 
-#### Cell by cell export
+### Cell by cell export
 
 In the cell-by-cell export mode, the contents of pivot grid control are exported cell by cell with all the formats applied on it.
 
@@ -80,7 +80,7 @@ excelExport.Export("D:\PivotGrid.xlsx")
 
 ![Exporting pivot cells to excel](Exporting_images/Exporting_img1.png)
 
-#### Pivot table export
+### Pivot table export
 
 In the pivot table export mode, the contents of pivot grid control are exported along with its functionalities such as sorting and filtering. The pivot grid provides support to pivot the data via drag and drop in the pivot table.
 
@@ -108,7 +108,7 @@ excelExport.Export("D:\PivotGrid.xlsx")
 
 ![Exporting pivot table to excel](Exporting_images/Exporting_img2.png)
 
-### Exporting to Word
+## Exporting to Word
 
 Pivot grid provides support to export its contents to Word. Users can export the data from the pivot grid control to the Word document for offline verification and/or computation.
 
@@ -142,7 +142,7 @@ wordExport.pivotGridToWord("D:\PivotGrid.doc")
 
 ![Exporting pivot grid to word](Exporting_images/Exporting_img3.png)
 
-### Exporting to PDF
+## Exporting to PDF
 
 Pivot grid provides support to export its content to a PDF file. The data in the pivot grid control can be converted to a PDF document for offline verification and/or computation.
 
