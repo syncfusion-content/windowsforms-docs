@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Performance in Windows Forms Grid Control | Syncfusion
-description: Learn about Performance support in Syncfusion Windows Forms Grid Control, its elements and more details.
+description: Learn here all about performance support in Syncfusion Windows Forms Grid control, its elements and more details.
 platform: WindowsForms
 control: GridControl
 documentation: ug
@@ -14,7 +14,7 @@ documentation: ug
 GridControl supports frequent updates that occur in random cells across the grid while keeping CPU usage to a minimum level.
 
 Let’s consider an example, in which a timer, changes the value of cells in short intervals. This example draws cell changes directly to the graphics context instead of performing an Invalidate. It shows user text using GDI instead of GDI+ and also shows how to optimize updates for inserting and removing rows. User can start multiple instances without slowing down the machine and can confirm the same by viewing Task Manager CPU usage while the sample runs. 
-![Performance_img1](Performance_images/Performance_img1.png)
+![Performance in WinForms Grid.](performance_images/winforms-grid-performance.png)
 
 A sample demonstrating this feature is available under the following sample installation path. <br/>
 **&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Performance\Trader Grid Test Demo**
@@ -127,7 +127,7 @@ End Sub
 
 N> To know about the Virtual mode in GridControl, refer the link over [here](https://help.syncfusion.com/windowsforms/grid-control/virtual-grid).
 
-![Performance_img2](Performance_images/Performance_img2.png)
+![Implementing virtual mode in WinForms Grid.](performance_images/winforms-grid-implementing-virtual-mode.png)
 
 A sample demonstrating this feature is available under the following sample installation path.<br/>
 ***&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Virtual Grid\Grid Population Demo\\***
