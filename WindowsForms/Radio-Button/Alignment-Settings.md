@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Alignment Settings in Windows Forms Radio Button control | Syncfusion
-description: Learn about Alignment Settings support in Syncfusion Windows Forms Radio Button (RadioButtonAdv) control and more details.
+title: Alignment Settings in Windows Forms Radio Button Control | Syncfusion
+description: Learn here all about alignment settings support in Syncfusion Windows Forms Radio Button (RadioButtonAdv) control, it's elements and more.
 platform: WindowsForms
 control: RadioButtonAdv
 documentation: ug
@@ -41,7 +41,7 @@ Me.radioButtonAdv1.TextContentAlignment = System.Drawing.ContentAlignment.Middle
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms RadioButtonAdv changed text alignment](Overview_images/RadioButtonAdv_textalign.jpeg) 
+![Windows Forms RadioButtonAdv changed text alignment](overview_images/windows-forms-radio-button-text-align.jpeg) 
 
 
 ## RadioButton alignment
@@ -73,4 +73,4 @@ Me.radioButtonAdv1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms RadioButtonAdv changed check aligned](Overview_images/RadioButtonAdv_checkalign.jpeg)
+![Windows Forms RadioButtonAdv changed check aligned](overview_images/windows-forms-radio-button-check-align.jpeg)
