@@ -2,7 +2,7 @@
 layout: post
 title: Loading HTML in Windows Forms Html Viewer control | Syncfusion
 description: Learn about Loading HTML support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
-platform: WindowsForms
+platform: windowsforms
 control: HTMLUIControl
 documentation: ug
 ---
@@ -34,7 +34,7 @@ There may be situations where the HTML document is to be loaded initially at sta
 
 Using the Properties window involves specifying the location of the Startup HTML file in the [StartupDocument](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html#Syncfusion_Windows_Forms_HTMLUI_HTMLUIControl_StartupDocument) property available within the properties window for the HTMLUI control or by clicking the link Load from file shown at the bottom of the properties window.
 
-![Set the location of startup html file](Loading-HTML_images/Loading-HTML_img1.png)
+![Windows Forms Html Viewer set the location of startup html file](loading-html_images/windows-forms-html-viewer-startup-html-file.png)
 
 
 
@@ -75,7 +75,7 @@ End Sub
 {% endtabs %}
 
 
-![Startup document loaded in HTMLUIControl](Loading-HTML_images/Loading-HTML_img2.png)
+![Windows Forms Html Viewer startup document loaded in HTMLUIControl](loading-html_images/windows-forms-html-viewer-startup-document.png)
 
 
 
@@ -83,7 +83,7 @@ End Sub
 
 This sample demonstrates the implementation of Startup Document by using HTML file in HTMLUI.
 
-![Startup file loaded in HTMLUIControl](Loading-HTML_images/Loading-HTML_img3.jpeg)
+![Windows Forms Html Viewer startup file loaded in HTMLUIControl](loading-html_images/windows-forms-html-viewer-startup-file-loaded.jpeg)
 
 
 
@@ -139,7 +139,7 @@ Me.HtmluiControl1.LoadHTML(path)
 
 {% endtabs %}
 
-![Disk file loaded in HTMLUIContrl](Loading-HTML_images/Loading-HTML_img4.png)
+![Windows Forms Html Viewer disk file loaded in HTMLUIContrl](loading-html_images/windows-forms-html-viewer-disk-file-loaded.png)
 
 
 
@@ -147,7 +147,7 @@ Me.HtmluiControl1.LoadHTML(path)
 
 This sample demonstrates the implementation of Loading a file from Disk by using HTMLUI.
 
-![Disk document loaded in HTMLUIContrl](Loading-HTML_images/Loading-HTML_img5.jpeg)
+![Windows Forms Html Viewer disk document loaded in HTMLUIContrl](loading-html_images/windows-forms-html-viewer-disk-document-loaded.jpeg)
 
 
 
@@ -238,7 +238,7 @@ An HTML document containing file links is illustrated by the code given below:
 
 The following image shows file links that link to another HTML Document.
 
-![Link files are loaded in HTMLUIcontrol](Loading-HTML_images/Loading-HTML_img6.png)
+![Windows Forms Html Viewer link files are loaded in HTMLUIcontrol](loading-html_images/windows-forms-html-viewer-link-files.png)
 
 
 
@@ -250,7 +250,7 @@ This sample demonstrates how HTML files can be linked from one document to anoth
 
 
 
-![Link files are loaded in HTMLUIControl](Loading-HTML_images/Loading-HTML_img7.jpeg)
+![Windows Forms Html Viewer link files are loaded in HTMLUIControl](loading-html_images/windows-forms-html-viewer-link-files-loaded.jpeg)
 
 
 
@@ -370,7 +370,7 @@ The HTML file can be loaded as an Embedded Resource in the HTMLUI control. The p
 
 3. Click the Add tab; a sub-menu is displayed.
 
-   ![Load the file from resource](Loading-HTML_images/Loading-HTML_img8.png)
+   ![Windows Forms Html Viewer load the file from resource](loading-html_images/windows-forms-html-viewer-load-file.png)
 
 
 
@@ -386,7 +386,7 @@ The HTML file can be loaded as an Embedded Resource in the HTMLUI control. The p
 
 6. You can change the name by using the Name tab given at the bottom of the wizard.
 
-   ![Resource file](Loading-HTML_images/Loading-HTML_img9.png)
+   ![Windows Forms Html Viewer resource file](loading-html_images/windows-forms-html-viewer-resource-file.png)
 
 
 
@@ -398,7 +398,7 @@ The HTML file can be loaded as an Embedded Resource in the HTMLUI control. The p
 
 8. In the properties grid of the resource HTML file, specify its BuildAction as the Embedded Resource.
 
-   ![Embedded resource](Loading-HTML_images/Loading-HTML_img10.png)
+   ![Windows Forms Html Viewer embedded resource](loading-html_images/windows-forms-html-viewer-embedded-resource.png)
 
 
 
@@ -453,14 +453,14 @@ N> The string entered inside the [GetManifestResourceStream](https://learn.micro
 The following image shows file loaded from an embedded resource.
 
 
-![File loaded from embedded resource](Loading-HTML_images/Loading-HTML_img12.png)
+![Windows Forms Html Viewer file loaded from embedded resource](loading-html_images/windows-forms-html-viewer-embedded-resource-file-loaded.png)
 
 
 #### Load resource file sample
 
 This sample demonstrates the implementation of Loading Embedded Resource Files by using HTMLUI.
 
-![File loaded from embedded resource](Loading-HTML_images/Loading-HTML_img13.jpeg)
+![Windows Forms Html Viewer file loaded from embedded resource](loading-html_images/windows-forms-html-viewer-resource-file-sample-loaded.jpeg)
 
 
 
