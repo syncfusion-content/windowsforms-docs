@@ -11,7 +11,7 @@ documentation: ug
 
 The various sections of StatusBarAdv and their descriptions are given below.
 
-![Overview_img63](Overview_images/Overview_img63.jpeg) 
+![Windows Form Status Bar overview.](Overview_images/windowsform-status-bar-overview.jpeg) 
 
 
 
