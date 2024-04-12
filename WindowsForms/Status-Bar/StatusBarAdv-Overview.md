@@ -7,11 +7,12 @@ control: StatusBarAdv
 documentation: ug
 ---
 
+
 # Windows Forms Status Bar (StatusBarAdv) Overview
 
 The various sections of StatusBarAdv and their descriptions are given below.
 
-![WindowsForm Status Bar overview.](Overview_images/windowsform-status-bar-overview.jpeg) 
+![Windows Forms Status Bar overview.](overview_images/windows-forms-status-bar-overview.jpeg) 
 
 
 
