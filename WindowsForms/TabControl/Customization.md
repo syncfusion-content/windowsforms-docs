@@ -2,7 +2,7 @@
 layout: post
 title: Customization in Windows Forms TabControl | Syncfusion
 description: Learn here all about customization support in Syncfusion Windows Forms TabControl (TabControlAdv), it's eleents and more.
-platform: WindowsForms
+platform: windowsforms
 control: TabControlAdv
 documentation: ug
 ---
