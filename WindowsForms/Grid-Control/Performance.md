@@ -2,7 +2,7 @@
 layout: post
 title: Performance in Windows Forms Grid Control | Syncfusion
 description: Learn here all about performance support in Syncfusion Windows Forms Grid control, its elements and more details.
-platform: WindowsForms
+platform: windowsforms
 control: GridControl
 documentation: ug
 ---
