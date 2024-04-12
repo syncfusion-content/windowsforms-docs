@@ -47,7 +47,7 @@ Me.comboDropDown1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorfu
 {% endhighlight %}
 {% endtabs %}
 
-![Themes and styles in Windows Forms ComboBox DropDown](0verview_images/windows-forms-combobox-dropdown-theme-and-styles.jpeg) 
+![Themes and styles in Windows Forms ComboBox DropDown](overview_images/windows-forms-combobox-dropdown-theme-and-styles.jpeg) 
 
 
 
