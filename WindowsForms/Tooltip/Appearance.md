@@ -113,7 +113,7 @@ private void SfToolTip1_ToolTipShowing(object sender, ToolTipShowingEventsArgs e
 {% endhighlight %}
 {% endtabs %}
 
-![Show customization appearance based on control in Windows forms Tooltip](sftooltip_images/windows-forms-tooltip-show-customization-appearance.jpeg)
+![Show customization appearance based on control in Windows Forms Tooltip](sftooltip_images/windows-forms-tooltip-show-customization-appearance.jpeg)
 
 
 ## Enabling the Shadow
