@@ -48,27 +48,33 @@ Create the Syncfusion WinForms project using the Visual Studio Project Template 
 
 	I> Visual Basic Language support is available in WinForms Template Studio starting from version 25.1.35.
 
-5.  Navigate to the **Project type** tab and choose the Syncfusion WinForms application type you want—there are four types: Blank, MenuBar, Ribbon and Tabbed Form. Click **Next** to proceed.
+5.  Navigate to the **Type** tab and choose the Syncfusion WinForms application type you want. When selecting the type of template for your application, you have two options:
 
 	![Syncfusion WinForms project type selection wizard](Template-Studio-Images/WF-4.png)
 
-6.	Click **Next** or navigate to the **Pages** tab to access a list of available Syncfusion WinForms components you can add to the application.
+	**Predefined template:** Choose this option to select from 5 predefined templates, including Calendar, Contact, Outlook, Docking Manager, and Spreadsheet. By choosing one of these templates, you can create your application without needing to follow any further steps.
 
-	![Syncfusion WinForms pages selection wizard](Template-Studio-Images/WF-6.png)
+	![Syncfusion WinForms Predefined template wizard](Template-Studio-Images/WF-10.png)
 
-	To unselect the added control(s), Click ‘x’ for the corresponding control in the control list from the Project Details.
+	**Project type:** Choose this option to select from 4 project types, including Blank, Menu Bar, Ribbon, and Tabbed Form.
 
-	N> The Control Features option is not accessible for Blank Pages.
+	1. Click **Next** or navigate to the **Pages** tab to access a list of available Syncfusion WinForms components you can add to the application.
 
-7.	Click **Next** or navigate to the **Control Features** tab to view the listed features for the selected controls. From here, choose the features needed.
+		![Syncfusion WinForms pages selection wizard](Template-Studio-Images/WF-6.png)
 
-	![Syncfusion WinForms control features selection wizard](Template-Studio-Images/WF-15.png)
+		To unselect the added control(s), Click ‘x’ for the corresponding control in the control list from the Project Details.
 
-8.	Click **Next** or navigate the **App Features** tab to select the desired application features.
+		N> The Control Features option is not accessible for Blank Pages.
 
-	![Syncfusion WinForms app features selection wizard](Template-Studio-Images/WF-7.png)
+	2. Click **Next** or navigate to the **Control Features** tab to view the listed features for the selected controls. From here, choose the features needed.
 
-    N> The App Features option is not accessible for .NET Framework.	
+		![Syncfusion WinForms control features selection wizard](Template-Studio-Images/WF-15.png)
+
+	3. Click **Next** or navigate the **App Features** tab to select the desired application features.
+
+		![Syncfusion WinForms app features selection wizard](Template-Studio-Images/WF-7.png)
+
+    	N> The App Features option is not accessible for .NET Framework.	
 
 	**Project Details Section**
 
@@ -76,11 +82,11 @@ Create the Syncfusion WinForms project using the Visual Studio Project Template 
 
 	![Syncfusion WinForms project details selection and unselection wizard](Template-Studio-Images/WF-8.png)
 
-9.	Click **Create** to initiate the process. This action generates the Syncfusion WinForms application. The resulting Syncfusion WinForms app has the necessary Syncfusion NuGet 	packages, styles, and rendering code specific to the chosen Syncfusion component.
+6.	Click **Create** to initiate the process. This action generates the Syncfusion WinForms application. The resulting Syncfusion WinForms app has the necessary Syncfusion NuGet 	packages, styles, and rendering code specific to the chosen Syncfusion component.
 
 	![Syncfusion WinForms project created with readme](Template-Studio-Images/WF-9.png)
 
-10.	10.	The Syncfusion WinForms app is set up with the latest Syncfusion WinForms NuGet packages, including the right namespaces and rendering code. This ensures smooth integration of Syncfusion components.
+7. The Syncfusion WinForms app is set up with the latest Syncfusion WinForms NuGet packages, including the right namespaces and rendering code. This ensures smooth integration of Syncfusion components.
 
 	N> The .Net 6.0, .Net 7.0, and .Net 8.0 option will be listed in  Select a framework version	 when only the .Net 6.0, .Net 7.0, and .Net 8.0 SDK setup has been installed.
 
@@ -90,6 +96,6 @@ Create the Syncfusion WinForms project using the Visual Studio Project Template 
 
 	> .NET 8.0 version is available from v23.2.4 and it support from Visual Studio 2022.
 
-11.	11.	If you install the trial setup or NuGet packages from nuget.org, you must register the Syncfusion license key to your application since Syncfusion introduced the licensing system from the 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key)to generate and register the Syncfusion license key to your application. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in 		Essential Studio.
+8.	If you install the trial setup or NuGet packages from nuget.org, you must register the Syncfusion license key to your application since Syncfusion introduced the licensing system from the 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key)to generate and register the Syncfusion license key to your application. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in 	Essential Studio.
 
 	![Syncfusion license registration required information dialog in Syncfusion WinForms project](Template-Studio-Images/Syncfusion-Project-Template-Gallery-8.png)   
