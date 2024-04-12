@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Windows Forms ComboBox control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms ComboBox (SfComboBox) control and more details.
+title: Overview of Windows Forms ComboBox Control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms ComboBox (SfComboBox) control, it's elements and more.
 platform: windowsforms
 control: SfComboBox
 documentation: ug
 ---
 
-# Windows Forms ComboBox (SfComboBox) Overview
+# Overview of Windows Forms ComboBox (SfComboBox)
 
 [WinForms Combo box](https://www.syncfusion.com/winforms-ui-controls/combobox) is a text box component that allows user to type a value or choose an option from a list of predefined options. It has several out of the box features such as data binding, filtering, UI customization, accessibility, and more.
 
