@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Appearance in Windows Forms Button control | Syncfusion
-description: Learn about Appearance support in Syncfusion Windows Forms Button (SfButton) control and more details.
-platform: WindowsForms
+description: Learn about appearance support in Syncfusion Windows Forms Button (SfButton) control and more details.
+platform: windowsforms
 control: SfButton
 documentation: ug
 ---
@@ -39,7 +39,7 @@ sfButton1.Style.GradientBrush = new BrushInfo(GradientStyle.ForwardDiagonal, Col
 {% endhighlight %}
 {% endtabs %}
 
-![SfButton_img9](SfButton_images/SfButton_img9.jpeg)
+![Windows Forms Button gradient backcolor](sfbutton_images/windows-forms-button-gradient-backcolor.jpeg)
 
 ### Background Image
 
@@ -57,7 +57,7 @@ this.sfButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
 {% endhighlight %}
 {% endtabs %}
 
-![SfButton_img10](SfButton_images/SfButton_img10.jpeg)
+![Windows Forms Button background image](sfbutton_images/windows-forms-button-gradient-background-image.jpeg)
 
 ## Customizing Appearance based on Button State
 
@@ -90,7 +90,7 @@ sfButton1.Style.FocusedForeColor = Color.Black;
 {% endhighlight %}
 {% endtabs %}
 
-![SfButton_img11](SfButton_images/SfButton_img11.jpeg)
+![Windows Forms Button backcolor and fore color](sfbutton_images/windows-forms-button-gradient-backcolor-fore-color.jpeg)
 
 ### Image
 
@@ -116,9 +116,9 @@ sfButton1.Style.DisabledImage = Image.FromFile(@"..\..\Data\DisabledImage.png");
 {% endhighlight %}
 {% endtabs %}
 
-![SfButton_img12](SfButton_images/SfButton_img12.jpeg)
+![Image in Windows Forms Button](sfbutton_images/windows-forms-button-image.jpeg)
 
-![SfButton_img13](SfButton_images/SfButton_img13.jpeg)
+![Windows Forms Button change image in hover](sfbutton_images/windows-forms-button-change-image-in-hover.jpeg)
 
 ### Border
 
@@ -131,7 +131,7 @@ sfButton6.Style.HoverBorder = new Pen(Color.DarkGray, 2);
 {% endhighlight %}
 {% endtabs %}
 
-![SfButton_img14](SfButton_images/SfButton_img14.jpeg)
+![Windows Forms Button border](sfbutton_images/windows-forms-button-border.jpeg)
 
 ## Animating the Image
 
@@ -149,7 +149,7 @@ sfButton1.Style.Image = Image.FromFile(@"..\..\Data\animationImage.gif");
 {% endtabs %}
 
 
-![SfButton_img15](SfButton_images/SfButton_img15.jpeg)
+![Windows Forms Button animating the image](sfbutton_images/windows-forms-button-animating-image.jpeg)
 
 **Note**: The SfButton does not allow you to animate the image, if the animated image set as FocusedImage, HoverImage, or PressedImage so, to show the animation image inside the button, initialize the animation image (gif image) using the Image property.
 
@@ -166,7 +166,7 @@ sfButton1.FocusRectangleVisible = true;
 {% endtabs %}
 
 
-![SfButton_img16](SfButton_images/SfButton_img16.jpeg)
+![Windows Forms Button show or focus rectangle](sfbutton_images/windows-forms-button-show-focus-rectangle.jpeg)
 
 ## Rounded Rectangle Button
 
@@ -209,7 +209,7 @@ private void sfButton1_Paint(object sender, PaintEventArgs e)
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![SfButton_img17](SfButton_images/SfButton_img17.jpeg)
+![Windows Forms Button rounded rectangle](sfbutton_images/windows-forms-button-rounded-rectangle.jpeg)
 
 Refer to the following sample shows how to implement the rounded rectangle in the SfButton control.
 
@@ -308,7 +308,7 @@ Me.sfButton.ThemeName = "Office2016Colorful"
 
 {% endtabs %}
 
-![SfButton_o16_colorful](SfButton_images/SfButton_o16_colorful.jpg)
+![Windows Forms Button office16 colorful](sfbutton_images/windows-forms-button-office16-colorful.jpg)
 
 #### Office2016White
 
@@ -334,7 +334,7 @@ Me.sfButton.ThemeName = "Office2016White"
 
 {% endtabs %}
 
-![SfButton_o16_white](SfButton_images/SfButton_o16_white.jpg)
+![Windows Forms Button office16 white](sfbutton_images/windows-forms-button-office16-white.jpg)
 
 #### Office2016DarkGray
 
@@ -360,7 +360,7 @@ Me.sfButton.ThemeName = "Office2016DarkGray"
 
 {% endtabs %}
 
-![SfButton_o16_darkGray](SfButton_images/SfButton_o16_darkGray.jpg)
+![Windows Forms Button office16 darkgray](sfbutton_images/windows-forms-button-office16-darkgray.jpg)
 
 #### Office2016Black
 
@@ -386,4 +386,4 @@ Me.sfButton.ThemeName = "Office2016Black"
 
 {% endtabs %}
 
-![SfButton_o16_black](SfButton_images/SfButton_o16_black.jpg)
+![Windows Forms Button office16 black](sfbutton_images/windows-forms-button-office16-black.jpg)
