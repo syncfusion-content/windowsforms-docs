@@ -26,7 +26,7 @@ sfToolTip1.SetToolTipInfo(this.button1, toolTipInfo1);
 {% endhighlight %}
 {% endtabs %}
 
-![Border color and thickness in WinForms Tooltip.](sftooltip_images/winforms-tooltip-border-color-and-thickness.jpeg)
+![Show border color and thickness in Windows Forms Tooltip](sftooltip_images/windows-forms-tooltip-show-border-color-and-thickness.jpeg)
 
 
 ## ToolTip Item
@@ -48,7 +48,7 @@ sfToolTip1.SetToolTipInfo(this.button1, toolTipInfo1);
 {% endhighlight %}
 {% endtabs %}
 
-![Items in WinForms Tooltip.](sftooltip_images/winforms-tooltip-items.jpeg)
+![Show items in Windows Forms Tooltip](sftooltip_images/windows-forms-show-tooltip-items.jpeg)
 
 
 ### Gradient Color
@@ -67,7 +67,7 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 {% endhighlight %}
 {% endtabs %}
 
-![Gradient color in WinForms Tooltip.](sftooltip_images/winform-tooltip-gradient-color.jpeg)
+![Show gradient color in Windows Forms Tooltip](sftooltip_images/windows-form-tooltip-show-gradient-color.jpeg)
 
 
 N> The [GradientBrush](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.ToolTipVisualStyle.html#Syncfusion_WinForms_Controls_Styles_ToolTipVisualStyle_GradientBrush) property will be considered only when the [EnableGradientBackground](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipItem.html#Syncfusion_WinForms_Controls_ToolTipItem_EnableGradientBackground) property is set to true.
@@ -91,7 +91,7 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 {% endhighlight %}
 {% endtabs %}
 
-![Item separator in WinForms Tooltip.](sftooltip_images/winforms-tooltip-item-separator.jpeg)
+![Show item separator in Windows Forms Tooltip](sftooltip_images/windows-forms-tooltip-show-item-separator.jpeg)
 
 
 ## Customizing Appearance based on Control
@@ -113,7 +113,7 @@ private void SfToolTip1_ToolTipShowing(object sender, ToolTipShowingEventsArgs e
 {% endhighlight %}
 {% endtabs %}
 
-![Customization appearance based on control in Winforms Tooltip.](sftooltip_images/winforms-tooltip-customization-appearance.jpeg)
+![Show customization appearance based on control in Windows forms Tooltip](sftooltip_images/windows-forms-tooltip-show-customization-appearance.jpeg)
 
 
 ## Enabling the Shadow
@@ -128,7 +128,7 @@ sfToolTip1.ShadowVisible = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Enabling the shadow in WinForms Tooltip.](sftooltip_images/winforms-tooltip-enabling-the-shadow.jpeg)
+![Show the shadow in Windows Forms Tooltip](sftooltip_images/windows-forms-tooltip-show-the-shadow.jpeg)
 
 
 ## ToolTipItem Separator
@@ -148,7 +148,7 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 {% endhighlight %}
 {% endtabs %}
 
-![Enabling separator in WinForms Tooltip.](sftooltip_images/winforms-tooltip-enabling-separator.jpeg)
+![Show the separator in Windows-Forms Tooltip](sftooltip_images/windows-forms-tooltip-show-the-separator.jpeg)
 
 
 N> The separator line cannot be drawn for the last `ToolTipItem` in the collection, even the separator is enabled.
@@ -172,7 +172,7 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 {% endhighlight %}
 {% endtabs %}
 
-![RTL in WinForms Tooltip.](sftooltip_images/winforms-tooltip-rtl.jpeg)
+![Show RTL alignment in Windows Forms Tooltip](sftooltip_images/windows-forms-tooltip-show-rtl-alignment.jpeg)
 
 ## Themes
 
@@ -265,7 +265,7 @@ Me.SfToolTip.ThemeName = "Office2016Colorful"
 
 {% endtabs %}
 
-![Office2016colorful theme applied in WinForms Tooltip.](sftooltip_images/winforms-tooltip-office2016colorful.jpg)
+![Office2016colorful theme applied in Windows Forms Tooltip](sftooltip_images/windows-forms-tooltip-office2016colorful.jpg)
 
 #### Office2016White
 
@@ -291,7 +291,7 @@ Me.SfToolTip.ThemeName = "Office2016White"
 
 {% endtabs %}
 
-![Office2016white theme applied in WinForms Tooltip.](sftooltip_images/winforms-tooltip-white.jpg)
+![Office2016white theme applied in Windows Forms Tooltip](sftooltip_images/windows-forms-tooltip-office2016white.jpg)
 
 #### Office2016DarkGray
 
@@ -317,7 +317,7 @@ Me.SfToolTip.ThemeName = "Office2016DarkGray"
 
 {% endtabs %}
 
-![Office2016darkgray theme applied in WinForms Tooltip.](SfToolTip_images/winforms-tooltip-darkgray.jpg)
+![Office2016darkgray theme applied in Windows Forms Tooltip](SfToolTip_images/windows-forms-tooltip-office2016darkgray.jpg)
 
 #### Office2016Black
 
@@ -343,5 +343,5 @@ Me.SfToolTip.ThemeName = "Office2016Black"
 
 {% endtabs %}
 
-![Office2016black theme applied in WinForms Tooltip.](sftooltip_images/winforms-tooltip-black.jpeg)
+![Office2016black theme applied in Windows Forms Tooltip](sftooltip_images/windows-forms-tooltip-office2016black.jpeg)
 
