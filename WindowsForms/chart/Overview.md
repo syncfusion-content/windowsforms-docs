@@ -19,7 +19,7 @@ EssentialChart for Windows Forms is a perfect solution for developers looking to
 
 Chart is used as a means to show the graphical representation of two values. For Example, a Line Chart can be used in health Statistic reports, in which it can show the rates over time or for a series of values, such as age-specific death rates. Logarithmic charts can be used in Share price charts where we plot between price and time. In logarithmic chart, we can identify the 'Proportional change in price' with respect to the 'Change in time'. We use 'Proportional change in price' to observe market sentiment. Market participants move share prices either up or down proportionally depending on how bullish or bearish they feel.
 
-![Overview in WindowsForms Chart](overview_images/windowsforms-chart-overview.jpeg)
+![Overview in WindowsForms Chart image.](overview-images/windowsforms-chart-overview.jpeg)
 
 ### Key Features
 
@@ -98,7 +98,7 @@ Operating Systems</th></tr>
 
 This section gives you an idea of the different sections of a Chart control. Below is the image that illustrates various sections of the control and their description in detail below.
 
-![Control structure in WindowsForms Chart](getting-started_images/windowsforms-chart-control-structure.jpeg)
+![Control structure in WindowsForms Chart image.](getting-started-images/windowsforms-chart-control-structure.jpeg)
 
 ### Chart Control
 
