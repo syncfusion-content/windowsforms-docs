@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Themes-And-Styles | WindowsForms | Syncfusion
-description: Learn here all about Themes and Styles support in Syncfusion Windows Forms ComboBox DropDown (ComboDropDown) control and more.
-platform: WindowsForms
+title: Themes and Styles in Windows Forms ComboBox DropDown | Syncfusion
+description: Learn here all about themes and styles support in Syncfusion Windows Forms ComboBox DropDown (ComboDropDown) control, it's elements and more.
+platform: windowsforms
 control: ComboDropDown
 documentation: ug
 ---
@@ -47,7 +47,7 @@ Me.comboDropDown1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorfu
 {% endhighlight %}
 {% endtabs %}
 
-![Themes and Styles in Windows Forms ComboBox DropDown](Overview_images/Overview_img288.jpeg) 
+![Themes and styles in Windows Forms ComboBox DropDown](overview_images/windows-forms-combobox-dropdown-theme-and-styles.jpeg) 
 
 
 
@@ -83,7 +83,7 @@ Me.comboDropDown1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Them
 {% endhighlight %}
 {% endtabs %}
 
-![Office Themes in Windows Forms ComboBox DropDown](Overview_images/Overview_img289.jpeg) 
+![Office themes in Windows Forms ComboBox DropDown](overview_images/windows-forms-combobox-dropdown-office-theme.jpeg) 
 
 
 
@@ -107,4 +107,4 @@ Office2007Colors.ApplyManagedColors(Me, Color.Orchid)
 {% endhighlight %}
 {% endtabs %}
 
-![Custom Colors in Windows Forms ComboBox DropDown](Overview_images/Overview_img290.jpeg) 
+![Custom colors in Windows Forms ComboBox DropDown](overview_images/windows-forms-combobox-dropdown-custom-colors.jpeg) 
