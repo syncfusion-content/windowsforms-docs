@@ -88,7 +88,7 @@ Create the Syncfusion WinForms project using the Visual Studio Project Template 
 
 7. The Syncfusion WinForms app is set up with the latest Syncfusion WinForms NuGet packages, including the right namespaces and rendering code. This ensures smooth integration of Syncfusion components.
 
-	N> The .Net 6.0, .Net 7.0, and .Net 8.0 option will be listed in  Select a framework version	 when only the .Net 6.0, .Net 7.0, and .Net 8.0 SDK setup has been installed.
+	N> The .NET 6.0, .NET 7.0, and .NET 8.0 option will be listed in  Select a framework version	 when only the .NET 6.0, .NET 7.0, and .NET 8.0 SDK setup has been installed.
 
 	> .NET 6.0 version is available from v19.4.0.38 and it support from Visual Studio 2022.
 
