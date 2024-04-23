@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding | DataGrid | WinForms | Syncfusion
-description: Learn about data binding (IEnumerable, DataTable and so on) support in Syncfusion WinForms DataGrid (SfDataGrid) control and more details.
+title: Data binding in WinForms DataGrid Control | Syncfusion
+description: Learn here all about data binding support in Syncfusion WinForms DataGrid control,its elements and more details.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
