@@ -37,7 +37,7 @@ Spreadsheet provides support to export the Excel workbook to PDF using ExcelToPd
 
 For converting the Excel sheet to PDF, “Syncfusion.ExcelToPDFConverter.Base.dll” and “Syncfusion.Pdf.Base.dll” references should be added.
 
-Export the Excel workbook as PDF document using [Convert](https://help.syncfusion.com/cr/windowsforms/Syncfusion.ExcelToPdfConverter.ExcelToPdfConverter.html#Syncfusion_ExcelToPdfConverter_ExcelToPdfConverter_Convert) method of [ExcelToPdfConverter](http://help.syncfusion.com/cr/windowsforms/Syncfusion.ExcelToPdfConverter.ExcelToPdfConverter.html) class which is available under the name space “Syncfusion.ExcelToPdfConverter”
+Export the Excel workbook as PDF document using [Convert](https://help.syncfusion.com/cr/windowsforms/Syncfusion.ExcelToPdfConverter.ExcelToPdfConverter.html#Syncfusion_ExcelToPdfConverter_ExcelToPdfConverter_Convert) method of [ExcelToPdfConverter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.ExcelToPdfConverter.ExcelToPdfConverter.html) class which is available under the name space “Syncfusion.ExcelToPdfConverter”
 
 {% tabs %}
 {% highlight c# %}

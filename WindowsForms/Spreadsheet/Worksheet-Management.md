@@ -63,7 +63,7 @@ spreadsheet.RenameSheet("ExistingSheetName", "NewSheetName");
 
 ### Protecting a worksheet
 
-Spreadsheet provides support to protect the worksheet with or without password. This helps to prevent a user from modifying the contents of the worksheet. The protection of worksheet can be done with [ExcelSheetProtection](http://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.ExcelSheetProtection.html) options also.
+Spreadsheet provides support to protect the worksheet with or without password. This helps to prevent a user from modifying the contents of the worksheet. The protection of worksheet can be done with [ExcelSheetProtection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.ExcelSheetProtection.html) options also.
 
 The Protect sheet options are
 
