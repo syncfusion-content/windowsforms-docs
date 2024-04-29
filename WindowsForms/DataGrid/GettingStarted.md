@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | DataGrid Control for Windows Forms | Syncfusion
+title: Getting Started with Windows Forms DataGrid | Syncfusion
 description: This section explains about the getting started with the important key features of datagrid control for windows forms.
 platform: windowsforms
 control: SfDataGrid
