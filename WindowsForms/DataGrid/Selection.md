@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection | DataGrid Control for Windows Forms | Syncfusion
-description: This section explains about the selection feature and it's customization in datagrid control for windows forms
+title: Selection in Windows Forms DataGrid Control | Syncfusion
+description: Learn here all about selection support in Syncfusion Essential Windows Forms DataGrid control, its elements and more.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug

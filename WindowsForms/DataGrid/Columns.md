@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Columns | DataGrid Control for Windows Forms | Syncfusion
-description: This section explains about the columns manipulation and customization in datagrid control for windows forms
+title: Columns in Windows Forms DataGrid Control | Syncfusion
+description: Learn here all about columns support in Syncfusion Windows Forms DataGrid control, its elements and more details.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
