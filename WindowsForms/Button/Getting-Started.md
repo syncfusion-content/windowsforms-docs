@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with WinForms Button control | Syncfusion
 description: Learn here about getting started with Syncfusion Windows Forms Button (SfButton) control and more details.
-platform: WindowsForms
+platform: windowsforms
 control: SfButton
 documentation: ug
 ---
