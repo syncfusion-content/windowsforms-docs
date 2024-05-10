@@ -45,7 +45,7 @@ Me.chartControl1.PrimaryXAxis.ValueType = ChartValueType.Category
 
 **Chart displaying categorical values in x-axis**
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img39.png)
+![Chart Axes.](Chart-Axes_images/Chart-Axes_img39.png)
 
 ## Indexed X Values
 
@@ -53,9 +53,9 @@ By default points in a series are plotted against their x and y values. However 
 
 In the figure below, the first chart shows a line chart that is not-indexed while the second chart shows a line chart whose x-axis is indexed.
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img1.jpeg)
+![Chart Axes.](Chart-Axes_images/Chart-Axes_img1.jpeg)
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img2.jpeg)
+![Chart Axes.](Chart-Axes_images/Chart-Axes_img2.jpeg)
 
 N> Indexing is supported only on the x-axis in Essential Chart.
 
