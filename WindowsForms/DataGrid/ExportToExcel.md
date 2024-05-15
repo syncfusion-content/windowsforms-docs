@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Export To Excel in DataGrid | Syncfusion
+title: Export To Excel in DataGrid WinForms | Syncfusion
 description: Learn about exporting datagrid to excel support in Syncfusion WinForms DataGrid (SfDataGrid) control and more details.
 platform: windowsforms
 control: SfDataGrid
