@@ -2,7 +2,7 @@
 layout: post
 title: Overview of Syncfusion licensing errors - Syncfusion 
 description: Learn here about Syncfusion common licensing errors which appears on license validation in Syncfusion Windows Forms applications.
-platform: Windows Forms
+platform: windowsforms
 control: Essential Studio
 documentation: ug
 ---
