@@ -2,7 +2,7 @@
 layout: post
 title: Digital clock in Windows Forms Clock Control | Syncfusion
 description: Learn about digital clock support in Syncfusion Essential Studio Windows Forms Clock control, its elements, and more.
-platform: WindowsForms
+platform: windowsforms
 control: Clock-Control-for-Windows-Forms
 documentation: ug
 ---

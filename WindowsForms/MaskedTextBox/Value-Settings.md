@@ -2,7 +2,7 @@
 layout: post
 title: Value settings in Windows Forms MaskedEditBox Control | Syncfusion
 description: Learn here all about value settings in Syncfusion Windows Forms MaskedEditBox control, its elements, and more.
-platform: WindowsForms
+platform: windowsforms
 control: MaskedEditBox
 documentation: ug
 --- 

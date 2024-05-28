@@ -2,7 +2,7 @@
 layout: post
 title: Overview of Windows Forms ButtonEdit Control | Syncfusion
 description: Learn here all overview of Syncfusion Essential Studio Windows Forms ButtonEdit control, its elements, and more details.
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---
