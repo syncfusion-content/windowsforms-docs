@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Value Settings | WindowsForms | Syncfusion
-description: Learn here about how to set the minimum and maximum value of the Syncfusion Windows Forms MaskedEditBox control.
-platform: WindowsForms
+title: Value settings in Windows Forms MaskedEditBox Control | Syncfusion
+description: Learn here all about value settings in Syncfusion Windows Forms MaskedEditBox control, its elements, and more.
+platform: windowsforms
 control: MaskedEditBox
 documentation: ug
 --- 
-# Value Settings in MaskedEditBox
+# Value settings in Windows Forms MaskedEditBox
 
 The value settings of the MaskedEditBox control are discussed below.
 

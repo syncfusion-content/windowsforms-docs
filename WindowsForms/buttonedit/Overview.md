@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Windows Forms ButtonEdit control | Syncfusion
-description: Learn about introduction of Syncfusion Essential Studio Windows Forms ButtonEdit control and more details.
-platform: WindowsForms
+title: Overview of Windows Forms ButtonEdit Control | Syncfusion
+description: Learn here all overview of Syncfusion Essential Studio Windows Forms ButtonEdit control, its elements, and more details.
+platform: windowsforms
 control: Tools
 documentation: ug
 ---
 
-# Windows Forms ButtonEdit Overview
+# Overview of Windows Forms ButtonEdit
 
 The [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control embeds a text box control with a collection of button controls that can be customized to create many commonly used interfaces such as a file / folder browser or a drop-down text control.
 
