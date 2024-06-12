@@ -101,3 +101,34 @@ Me.spellCheckerAdv1.GetAnagrams("Textbox")
 
 {% endtabs %}
 
+## CancelButton event
+
+This CancelButton event is triggered whenever the cancel button is clicked.
+
+### Event data
+
+This Event Handler receives an argument of type EventArgs containing data related to this event. The EventArgs properties provide information specific to this event.
+
+{% tabs %}
+
+{% highlight C# %}
+
+private void SpellCheckerAdv1_CancelClicked(object sender, EventArgs e)
+{
+    MessageBox.Show("Cancel Clicked");
+}
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Private Sub SpellCheckerAdv1_CancelClicked(sender As Object, e As EventArgs) Handles SpellCheckerAdv1.CancelClicked
+    MessageBox.Show("Cancel Clicked")
+
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Spell Checker customize Cancel button](Customization_Images/CustomizeCancelbutton.png)
