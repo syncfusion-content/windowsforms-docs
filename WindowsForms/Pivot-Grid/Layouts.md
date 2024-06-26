@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Layouts in Windows Forms Pivot Grid control | Syncfusion
-description: Learn about Layouts support in Syncfusion Windows Forms Pivot Grid control, its elements and more details.
+title: Layouts in Windows Forms Pivot Grid Control | Syncfusion
+description: Learn here all about layouts support in Syncfusion Windows Forms Pivot Grid control, its elements, and more.
 platform: windowsforms
 control: PivotGrid
 documentation: ug
