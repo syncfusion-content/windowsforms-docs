@@ -2,7 +2,7 @@
 layout: post
 title: Coded UI Automation in Windows Forms GridGrouping control | Syncfusion
 description: Learn about Coded UI Automation support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
-platform: WindowsForms
+platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---

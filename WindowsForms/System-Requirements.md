@@ -2,7 +2,7 @@
 layout: post
 title: System Requirements in Windows Forms - Syncfusion
 description: Checkout and learn here all about the system requirements needed to use Syncfusion Windows Forms Components.
-platform: WindowsForms
+platform: windowsforms
 control: General
 documentation: ug
 ---
