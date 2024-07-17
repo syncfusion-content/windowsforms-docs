@@ -117,10 +117,7 @@ The following IDEs and .NET frameworks are supported for automating the GridCont
 </td>
 <td>
 Premium, Ultimate, Enterprise editions of
-<li>VS2010,</li>
-<li>VS2012,</li>
-<li>VS2013,</li>
-<li>VS2015</li>
+<li>VS2015 or higher</li>
 </td>
 </tr>
 <tr>
@@ -129,7 +126,7 @@ Premium, Ultimate, Enterprise editions of
 
 </td>
 <td>
-<li>3.5,</li> <li>4.0,</li><li> 4.5,</li><li> 4.5.1,</li><li>4.6</li>
+<li>4.0,</li><li>4.6.2</li>
 </td>
 </tr>
 </table>
@@ -336,9 +333,7 @@ The following IDEs and .NET frameworks are supported for automating the GridCont
 </td>
 <td>
 Premium, Ultimate, Enterprise editions of
-<li>VS2010,</li>
-<li>VS2012,</li>
-<li>VS2013</li> 
+<li>VS2015 or higher</li>
 </td>
 </tr>
 <tr>
@@ -347,7 +342,7 @@ Premium, Ultimate, Enterprise editions of
 
 </td>
 <td>
-<li>3.5,</li><li>4.0,</li><li>4.5,</li><li>4.5.1</li>
+<li>4.0,</li><li>4.6.2</li>
 </td>
 </tr>
 </table>
@@ -381,7 +376,7 @@ The above extension assemblies should be deployed to the following locations,
 **C:\Program Files (x86)\Microsoft Visual Studio &lt;Visual Studio Version&gt;\Common7\IDE\PublicAssemblies**<br/>
 **C:\Program Files (x86)\Microsoft Visual Studio &lt;Visual Studio Version&gt;\Common7\IDE\PrivateAssemblies**
 
-For example, these assemblies can be deployed for `Visual Studio 2013` in the following locations,<br/>
+For example, these assemblies can be deployed for `Visual Studio 2015` in the following locations,<br/>
 C:\Program Files (x86)\Common Files\Microsoft shared\VSTT\12.0\UITestExtensionPackages<br/>
 C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\PublicAssemblies<br/>
 C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\PrivateAssemblies
