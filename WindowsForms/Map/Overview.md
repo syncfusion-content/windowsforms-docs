@@ -43,10 +43,7 @@ The prerequisites details are listed in the following table:
 <tr>
 <td>
 Development Environments</td><td>
-<li>Visual Studio 2013</li>
-<li>Visual Studio 2012</li>
-<li>Visual Studio 2010 (Ultimate and Express)</li>
-<li>Visual Studio 2008 (Team, Professional, Standard, and Express)</li>
+<li>Visual Studio 2015 or higher</li>
 <li>Borland Delphi for .NET</li>
 <li>SharpCode</li>
 </td>
@@ -54,10 +51,8 @@ Development Environments</td><td>
 <tr>
 <td>
 <br>.NET Framework versions</td><td>
-<li>.NET 4.5.1</li>
-<li>.NET 4.5</li>
+<li>.NET 4.6.2</li>
 <li>.NET 4.0</li>
-<li>.NET 3.5</li>
 <br>
 </td></tr>
 </ul>
