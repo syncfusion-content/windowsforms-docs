@@ -37,16 +37,11 @@ Use the following steps to add the Syncfusion WinForms controls through the Sync
 
    The following options are available in Toolbox Configuration:
 
-   * Install VS2005 – Configures Framework 2.0 Syncfusion controls in VS 2005 toolbox.
-   * Install VS2008 – Configures Framework 3.5 Syncfusion controls in VS 2008 toolbox.
-   * Install VS2010 – Configures Framework 4.0 Syncfusion controls in VS 2010 toolbox.
-   * Install VS2012 – Configures Framework 4.5 Syncfusion controls in VS 2012 toolbox.
-   * Install VS2013 – Configures Framework 4.5.1 Syncfusion controls in VS 2013 toolbox.
-   * Install VS2015 – Configures Framework 4.6 Syncfusion controls in VS 2015 toolbox.
-   * Install VS2017 – Configures Framework 4.6 Syncfusion controls in VS 2017 toolbox.
-   * Install VS2019 – Configures Framework 4.6 Syncfusion controls in VS 2019 toolbox
-   * Install VS2022 – Configures Framework 4.6 Syncfusion controls in VS 2019 toolbox
-   
+   * Install VS2015 – Configures Framework 4.6.2 Syncfusion controls in VS 2015 toolbox.
+   * Install VS2017 – Configures Framework 4.6.2 Syncfusion controls in VS 2017 toolbox.
+   * Install VS2019 – Configures Framework 4.6.2 Syncfusion controls in VS 2019 toolbox.
+   * Install VS2022 – Configures Framework 4.6.2 Syncfusion controls in VS 2022 toolbox.
+
     N> You can also configure Syncfusion controls from a lower version Framework assembly to higher version of Visual Studio.
    
 3. The successful configuration of Toolbox is indicated by an Information message. Click **OK**.
