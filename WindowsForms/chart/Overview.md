@@ -54,21 +54,14 @@ Development Environments</th><th>
 <ul>
 <li>Visual Studio 2017</li>
 <li>Visual Studio 2015</li>
-<li>Visual Studio 2013</li>
-<li>Visual Studio 2012</li>
-<li>Visual Studio 2010 (Ultimate and Express)</li>
-<li>Visual Studio 2008 (Team, Professional, Standard, and Express)</li>
-<li>Visual Studio 2005 (Team, Professional, Standard, and Express)</li>
 <li>Borland Delphi for .NET</li>
 <li>SharpCode</li></ul></td>
 <td>
 <ul>
 <li>.NET 4.6</li>
 <li>.NET 4.5.1</li>
-<li>.NET 4.5 RTM</li>
+<li>.NET 4.5</li>
 <li>.NET 4.0</li>
-<li>.NET 3.5</li>
-<li>.NET 2.0</li>
 </ul></td></tr>
 </table>
 

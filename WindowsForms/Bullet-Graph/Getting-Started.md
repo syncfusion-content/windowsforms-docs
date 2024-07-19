@@ -158,4 +158,4 @@ Namespace: Syncfusion.Windows.Forms.BulletGraph
 
    N> 1.   The Syncfusion Reference Manager is available in versions 11.3.0.30 and later. It supports referencing assemblies from version 10.4.0.71 version to the current version.
    N>
-   N> 2.   The Syncfusion Reference Manager is used only in Visual Studio 2010, 2012, and 2013.
+   N> 2.   The Syncfusion Reference Manager is used only in Visual Studio 2015 or higher.
