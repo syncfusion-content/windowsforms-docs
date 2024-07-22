@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Context Menu in GridControl
-description: how to show contextmenu in the center of currentcell or selected cells irrespective of the mouse click
+title: Context Menu in WinForms GridControl | Syncfusion
+description: How to show contextmenu in the center of currentcell or selected cells irrespective of the mouse click in WinForms GridControl.
 platform: windowsforms
 control: Grid
 documentation: ug

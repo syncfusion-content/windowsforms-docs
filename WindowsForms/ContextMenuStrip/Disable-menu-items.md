@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Disable menu items in WinForms ContextMenuStrip control | Syncfusion
-description: Learn here all about disable menu items feature of Syncfusion Windows Forms ContextMenuStrip (ContextMenuStripEx) control and more.
+title: Disable menu items in WinForms ContextMenuStrip Control | Syncfusion
+description: Learn here all about disable menu items feature of Windows Forms ContextMenuStrip (ContextMenuStripEx) control and more.
 platform: WindowsForms
 control: ContextMenuStripEx
 documentation: ug
