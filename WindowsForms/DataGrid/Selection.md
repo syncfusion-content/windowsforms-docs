@@ -978,7 +978,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![[Retrieving current row information by clicking in windows forms datagrid](Selection_images/selection8.png)
+![Retrieving current row information by clicking in windows forms datagrid](Selection_images/selection8.png)
 
 ## Appearance
 
