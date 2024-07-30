@@ -2,7 +2,7 @@
 layout: post
 title: Overview of Syncfusion license registration - Syncfusion
 description: Learn here about how to register Syncfusion Windows Forms license key for Windows Forms application for license validation.
-platform: WindowsForms
+platform: windowsforms
 control: Essential Studio
 documentation: ug
 ---
