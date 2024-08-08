@@ -58,44 +58,79 @@ Create the Syncfusion WinForms project using the Visual Studio Project Template 
 
 	**Project type:** Choose this option to select from 4 project types, including Blank, Menu Bar, Ribbon, and Tabbed Form.
 
-	1. Click **Next** or navigate to the **Pages** tab to access a list of available Syncfusion WinForms components you can add to the application.
+6. Click **Next** or navigate to the **Pages** tab to access a list of available Syncfusion WinForms components you can add to the application.
 
-		![Syncfusion WinForms pages selection wizard](Template-Studio-Images/WF-6.png)
+	![Syncfusion WinForms pages selection wizard](Template-Studio-Images/WF-6.png)
 
-		To unselect the added control(s), Click ‘x’ for the corresponding control in the control list from the Project Details.
+	To unselect the added control(s), Click ‘x’ for the corresponding control in the control list from the Project Details.
 
 		N> The Control Features option is not accessible for Blank Pages.
 
-	2. Click **Next** or navigate to the **Control Features** tab to view the listed features for the selected controls. From here, choose the features needed.
+7. Click **Next** or navigate to the **Control Features** tab to view the listed features for the selected controls. From here, choose the features needed.
 
-		![Syncfusion WinForms control features selection wizard](Template-Studio-Images/WF-15.png)
+	![Syncfusion WinForms control features selection wizard](Template-Studio-Images/WF-15.png)
 
-	3. Click **Next** or navigate the **App Features** tab to select the desired application features.
+8. Click **Next** or navigate the **App Features** tab to select the desired application features.
 
-		![Syncfusion WinForms app features selection wizard](Template-Studio-Images/WF-7.png)
+	![Syncfusion WinForms app features selection wizard](Template-Studio-Images/WF-7.png)
 
-    	N> The App Features option is not accessible for .NET Framework.	
+    N> The App Features option is not accessible for .NET Framework.	
 
 	**Project Details Section**
 
 	In the **Project Details** section, modify configurations and project types. Additionally, you can remove one or more controls from the selected list and remove the chosen application feature.
 
-	![Syncfusion WinForms project details selection and unselection wizard](Template-Studio-Images/WF-8.png)
+     ![Syncfusion WinForms project details selection and unselection wizard](Template-Studio-Images/WF-8.png)
 
-6.	Click **Create** to initiate the process. This action generates the Syncfusion WinForms application. The resulting Syncfusion WinForms app has the necessary Syncfusion NuGet 	packages, styles, and rendering code specific to the chosen Syncfusion component.
+9.	Click **Create** to generate the Syncfusion WinForms application, which includes the necessary Syncfusion NuGet packages, styles, and rendering code specific to the chosen components. The application is set up with the latest Syncfusion WinForms NuGet packages and appropriate namespaces for seamless integration.
 
 	![Syncfusion WinForms project created with readme](Template-Studio-Images/WF-9.png)
 
-7. The Syncfusion WinForms app is set up with the latest Syncfusion WinForms NuGet packages, including the right namespaces and rendering code. This ensures smooth integration of Syncfusion components.
+10. After creating the project and selecting the desired components, the necessary Syncfusion NuGet packages will be installed automatically. For example, if you add an **DataGrid** control, the corresponding Syncfusion NuGet packages required for that control will be installed. 
+
+    ![NuGetEntry](Template-Studio-Images/NuGetEntry.png)
+
+	To find out which NuGet packages are needed for other WinForms controls, please refer to this [documentation link](https://help.syncfusion.com/windowsforms/control-dependencies) for detailed information on the required packages for each control.
+
+11. When you create a WinForms project, the following Dependency Injection (DI) setup is added to the **Program.cs** file. This setup registers services, view models, and views with the DI container, ensuring proper functionality and service management within your application. Below **ConfigureServices** method in program.cs file establishes the DI setup in a WinForms project. It manages the application's services, view models, and views. Here's a detailed breakdown:
+
+      ![DI-Setup](Template-Studio-Images/DI-Setup.png)
+
+     I. Application Host:
+     - Registers **ApplicationHostService** to manage the app's lifecycle.
+
+     II. Specific Services:
+     - Registers **PageService** and **NavigationService** for handling page navigation.
+
+    III. Views and ViewModels:
+    - **ShellWindow:** Registers the main application window.
+    - **DataGridPage:** Registers the added component DataGrid on UI.
+    - **MainPage:** Registers the main page of the application.
+
+    IV. Configuration:
+    - Binds the app's configuration settings to the **AppConfig** class using the settings from the configuration file.
+
+12. In a WinForms MVVM application, the **PageService.cs** class is responsible for managing navigation and page creation. It registers view models with their corresponding pages, allowing for seamless navigation within the application.
+Here's a simple explanation:
+
+     I. Initialization:
+     - The constructor of PageService takes an IServiceProvider to access the registered services. This allows the service to resolve and instantiate the required view models and views.
+
+     II. Registering Pages:
+     - **Configure<DataGridPage>():** Registers DataGridPage with the service provider.
+     - **Configure<MainPage>():** Registers MainPage with the service provider.
+
+       ![Resources](Template-Studio-Images/Resources.png)
+ 
 
 	N> The .NET 6.0, .NET 7.0, and .NET 8.0 option will be listed in  Select a framework version	 when only the .NET 6.0, .NET 7.0, and .NET 8.0 SDK setup has been installed.
 
-	> .NET 6.0 version is available from v19.4.0.38 and it support from Visual Studio 2022.
+	> | .NET Version | Available From Version | Supported from Visual Studio |
+    > |--------------|------------------------|-----------------------------|
+    > | .NET 6.0     | v19.4.0.38             | Visual Studio 2022          |
+    > | .NET 7.0     | v20.4.0.38             | Visual Studio 2022          |
+    > | .NET 8.0     | v23.2.4                | Visual Studio 2022          |
 
-	> .NET 7.0 version is available from v20.4.0.38 and it support from Visual Studio 2022.
-
-	> .NET 8.0 version is available from v23.2.4 and it support from Visual Studio 2022.
-
-8.	If you install the trial setup or NuGet packages from nuget.org, you must register the Syncfusion license key to your application since Syncfusion introduced the licensing system from the 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key) to generate and register the Syncfusion license key to your application. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in 	Essential Studio.
+13.	If you install the trial setup or NuGet packages from nuget.org, you must register the Syncfusion license key to your application since Syncfusion introduced the licensing system from the 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key) to generate and register the Syncfusion license key to your application. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in 	Essential Studio.
 
 	![Syncfusion license registration required information dialog in Syncfusion WinForms project](Template-Studio-Images/Syncfusion-Project-Template-Gallery-8.png)   
