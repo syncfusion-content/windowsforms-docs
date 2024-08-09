@@ -82,17 +82,15 @@ Create the Syncfusion WinForms project using the Visual Studio Project Template 
 
      ![Syncfusion WinForms project details selection and unselection wizard](Template-Studio-Images/WF-8.png)
 
-9.	Click **Create** to generate the Syncfusion WinForms application, which includes the necessary Syncfusion NuGet packages, styles, and rendering code specific to the chosen components. The application is set up with the latest Syncfusion WinForms NuGet packages and appropriate namespaces for seamless integration.
+9.	Click **Create** to generate the Syncfusion WinForms application. Once you've created the project, the relevant Syncfusion NuGet packages will be automatically added to your project for the chosen components. For example, if you add an **DataGrid** control, the corresponding Syncfusion NuGet packages required for that control will be installed.
 
 	![Syncfusion WinForms project created with readme](Template-Studio-Images/WF-9.png)
-
-10. After creating the project and selecting the desired components, the necessary Syncfusion NuGet packages will be installed automatically. For example, if you add an **DataGrid** control, the corresponding Syncfusion NuGet packages required for that control will be installed. 
 
     ![NuGetEntry](Template-Studio-Images/NuGetEntry.png)
 
 	To find out which NuGet packages are needed for other WinForms controls, please refer to this [documentation link](https://help.syncfusion.com/windowsforms/control-dependencies) for detailed information on the required packages for each control.
 
-11. When you create a WinForms project, the following Dependency Injection (DI) setup is added to the **Program.cs** file. This setup registers services, view models, and views with the DI container, ensuring proper functionality and service management within your application. Below **ConfigureServices** method in program.cs file establishes the DI setup in a WinForms project. It manages the application's services, view models, and views. Here's a detailed breakdown:
+10. When you create a WinForms project, the following Dependency Injection (DI) setup is added to the **Program.cs** file. This setup registers services, view models, and views with the DI container, ensuring proper functionality and service management within your application. Below **ConfigureServices** method in program.cs file establishes the DI setup in a WinForms project. It manages the application's services, view models, and views. Here's a detailed breakdown:
 
       ![DI-Setup](Template-Studio-Images/DI-Setup.png)
 
@@ -110,7 +108,7 @@ Create the Syncfusion WinForms project using the Visual Studio Project Template 
     IV. Configuration:
     - Binds the app's configuration settings to the **AppConfig** class using the settings from the configuration file.
 
-12. In a WinForms MVVM application, the **PageService.cs** class is responsible for managing navigation and page creation. It registers view models with their corresponding pages, allowing for seamless navigation within the application.
+11. In a WinForms MVVM application, the **PageService.cs** class is responsible for managing navigation and page creation. It registers view models with their corresponding pages, allowing for seamless navigation within the application.
 Here's a simple explanation:
 
     ![PageService](Template-Studio-Images/PageService.png)
@@ -122,7 +120,7 @@ Here's a simple explanation:
      - **Configure<DataGridPage>():** Registers DataGridPage with the service provider.
      - **Configure<MainPage>():** Registers MainPage with the service provider.
 
-13. Some components require additional resource files, such as pdf and other necessary files, to function correctly. For example, if you add the **PDFViewer** and **Diagram** components to your WinForms project, the respective PDF and ico files will be added to the Resources folder in your project.
+12. Some components require additional resource files, such as pdf and other necessary files, to function correctly. For example, if you add the **PDFViewer** and **Diagram** components to your WinForms project, the respective PDF and ico files will be added to the Resources folder in your project.
 
        ![Resources](Template-Studio-Images/Resources.png)
  
@@ -135,6 +133,6 @@ Here's a simple explanation:
     > | .NET 7.0     | v20.4.0.38             | Visual Studio 2022          |
     > | .NET 8.0     | v23.2.4                | Visual Studio 2022          |
 
-14.	If you install the trial setup or NuGet packages from nuget.org, you must register the Syncfusion license key to your application since Syncfusion introduced the licensing system from the 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key) to generate and register the Syncfusion license key to your application. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in 	Essential Studio.
+13.	If you install the trial setup or NuGet packages from nuget.org, you must register the Syncfusion license key to your application since Syncfusion introduced the licensing system from the 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key) to generate and register the Syncfusion license key to your application. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in 	Essential Studio.
 
 	![Syncfusion license registration required information dialog in Syncfusion WinForms project](Template-Studio-Images/Syncfusion-Project-Template-Gallery-8.png)   
