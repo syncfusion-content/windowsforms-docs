@@ -113,12 +113,16 @@ Create the Syncfusion WinForms project using the Visual Studio Project Template 
 12. In a WinForms MVVM application, the **PageService.cs** class is responsible for managing navigation and page creation. It registers view models with their corresponding pages, allowing for seamless navigation within the application.
 Here's a simple explanation:
 
+    ![PageService](Template-Studio-Images/PageService.png)
+
      I. Initialization:
      - The constructor of PageService takes an IServiceProvider to access the registered services. This allows the service to resolve and instantiate the required view models and views.
 
      II. Registering Pages:
      - **Configure<DataGridPage>():** Registers DataGridPage with the service provider.
      - **Configure<MainPage>():** Registers MainPage with the service provider.
+
+13. Some components require additional resource files, such as pdf and other necessary files, to function correctly. For example, if you add the **PDFViewer** and **Diagram** components to your WinForms project, the respective PDF and ico files will be added to the Resources folder in your project.
 
        ![Resources](Template-Studio-Images/Resources.png)
  
@@ -131,6 +135,6 @@ Here's a simple explanation:
     > | .NET 7.0     | v20.4.0.38             | Visual Studio 2022          |
     > | .NET 8.0     | v23.2.4                | Visual Studio 2022          |
 
-13.	If you install the trial setup or NuGet packages from nuget.org, you must register the Syncfusion license key to your application since Syncfusion introduced the licensing system from the 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key) to generate and register the Syncfusion license key to your application. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in 	Essential Studio.
+14.	If you install the trial setup or NuGet packages from nuget.org, you must register the Syncfusion license key to your application since Syncfusion introduced the licensing system from the 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key) to generate and register the Syncfusion license key to your application. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in 	Essential Studio.
 
 	![Syncfusion license registration required information dialog in Syncfusion WinForms project](Template-Studio-Images/Syncfusion-Project-Template-Gallery-8.png)   
