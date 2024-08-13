@@ -117,8 +117,8 @@ Here's a simple explanation:
      - The constructor of PageService takes an IServiceProvider to access the registered services. This allows the service to resolve and instantiate the required view models and views.
 
      II. Registering Pages:
-     - **Configure<DataGridPage>():** Registers DataGridPage with the service provider.
-     - **Configure<MainPage>():** Registers MainPage with the service provider.
+     - **Configure `<DataGridPage>()`:** Registers DataGridPage with the service provider.
+     - **Configure `<MainPage>()`:** Registers MainPage with the service provider.
 
 12. Some components require additional resource files, such as pdf and other necessary files, to function correctly. For example, if you add the **PDFViewer** and **Diagram** components to your WinForms project, the respective PDF and ico files will be added to the Resources folder in your project.
 
