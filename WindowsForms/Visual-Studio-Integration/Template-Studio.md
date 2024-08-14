@@ -91,47 +91,46 @@ Create the Syncfusion WinForms project using the Visual Studio Project Template 
 	To find out which NuGet packages are needed for other WinForms controls, please refer to this [documentation link](https://help.syncfusion.com/windowsforms/control-dependencies) for detailed information on the required packages for each control.
 
 10. When you create a WinForms project, the following Dependency Injection (DI) setup is added to the **Program.cs** file. This setup registers services, view models, and views with the DI container, ensuring proper functionality and service management within your application. Below **ConfigureServices** method in program.cs file establishes the DI setup in a WinForms project. It manages the application's services, view models, and views. Here's a detailed breakdown:
-
-      ![DI-Setup](Template-Studio-Images/DI-Setup.png)
-
-     I. Application Host:
+      
+     *I. Application Host:*
      - Registers **ApplicationHostService** to manage the app's lifecycle.
 
-     II. Specific Services:
+     *II. Specific Services:*
      - Registers **PageService** and **NavigationService** for handling page navigation.
 
-    III. Views and ViewModels:
+    *III. Views and ViewModels:*
     - **ShellWindow:** Registers the main application window.
     - **DataGridPage:** Registers the added component DataGrid on UI.
     - **MainPage:** Registers the main page of the application.
 
-    IV. Configuration:
+    *IV. Configuration:*
     - Binds the app's configuration settings to the **AppConfig** class using the settings from the configuration file.
+
+	![DI-Setup](Template-Studio-Images/DI-Setup.png)
 
 11. In a WinForms MVVM application, the **PageService.cs** class is responsible for managing navigation and page creation. It registers view models with their corresponding pages, allowing for seamless navigation within the application.
 Here's a simple explanation:
-
-    ![PageService](Template-Studio-Images/PageService.png)
-
-     I. Initialization:
+    
+     *I. Initialization:*
      - The constructor of PageService takes an IServiceProvider to access the registered services. This allows the service to resolve and instantiate the required view models and views.
 
-     II. Registering Pages:
+     *II. Registering Pages:*
      - **Configure `<DataGridPage>()`:** Registers DataGridPage with the service provider.
      - **Configure `<MainPage>()`:** Registers MainPage with the service provider.
+
+	![PageService](Template-Studio-Images/PageService.png)
 
 12. Some components require additional resource files, such as pdf and other necessary files, to function correctly. For example, if you add the **PDFViewer** and **Diagram** components to your WinForms project, the respective PDF and ico files will be added to the Resources folder in your project.
 
        ![Resources](Template-Studio-Images/Resources.png)
  
 
-	N> The .NET 6.0, .NET 7.0, and .NET 8.0 option will be listed in  Select a framework version	 when only the .NET 6.0, .NET 7.0, and .NET 8.0 SDK setup has been installed.
-
+	> The .NET 6.0, .NET 7.0, and .NET 8.0 options will be available in the Select a framework version dropdown only if the respective .NET SDKs are installed on your system. The table below outlines the .NET versions, the specific product versions from which they are available, and the Visual Studio versions that support them:
 	> | .NET Version | Available From Version | Supported from Visual Studio |
     > |--------------|------------------------|-----------------------------|
     > | .NET 6.0     | v19.4.0.38             | Visual Studio 2022          |
     > | .NET 7.0     | v20.4.0.38             | Visual Studio 2022          |
-    > | .NET 8.0     | v23.2.4                | Visual Studio 2022          |
+    > | .NET 8.0     | v23.2.4                | Visual Studio 2022          | 
 
 13.	If you install the trial setup or NuGet packages from nuget.org, you must register the Syncfusion license key to your application since Syncfusion introduced the licensing system from the 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key) to generate and register the Syncfusion license key to your application. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in 	Essential Studio.
 
