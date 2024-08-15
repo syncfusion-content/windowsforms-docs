@@ -2,7 +2,7 @@
 layout: post
 title: Overview of SfDateTimeEdit control | Windows Forms | Syncfusion
 description: SfDateTimeEdit allows user to edit the DateTime in the text with the support of minimum and maximum value validation, watermark, etc.,
-platform: WindowsForms
+platform: windowsforms
 control: SfDateTimeEdit
 documentation: ug
 ---
@@ -39,7 +39,7 @@ Syncfusion WinForms suite comes up with the following different DateTime control
 
 ### SfDateTimeEdit
 
-The [SfDateTimeEdit](https://help.syncfusion.com/windowsforms/datetimepicker/overview) control allows you to edit date-time in the text or mask format with minimum and maximum values validation, watermark, and globalization support. Provides flexible options to display date-time according to the required format.
+The [SfDateTimeEdit](https://help.syncfusion.com/windowsforms/datetimepicker/editing-support) control allows you to edit date-time in the text or mask format with minimum and maximum values validation, watermark, and globalization support. Provides flexible options to display date-time according to the required format.
 
 ### DateTimePickerAdv
 
