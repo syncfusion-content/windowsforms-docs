@@ -1100,3 +1100,4 @@ _COUPNUM(settlement, maturity, frequency, [basis])_
 * If basis is outside the range 0-4, `COUPNUM` returns `#NUM!`.
 
 * If settlement is greater than or equal to maturity, `COUPNUM` returns `#NUM!`.
+
