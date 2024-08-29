@@ -93,7 +93,7 @@ Create the Syncfusion WinForms project using the Visual Studio Project Template 
 10. When you create a WinForms project, the following Dependency Injection (DI) setup is added to the **Program.cs** file. This setup registers services, view models, and views with the DI container, ensuring proper functionality and service management within your application. Below **ConfigureServices** method in program.cs file establishes the DI setup in a WinForms project. It manages the application's services, view models, and views. Here's a detailed breakdown:
       
      *I. Application Host:*
-     - Registers **ApplicationHostService** to manage the app's lifecycle.
+     - Registers **ApplicationHostService** to manage the app's life cycle.
 
      *II. Specific Services:*
      - Registers **PageService** and **NavigationService** for handling page navigation.
