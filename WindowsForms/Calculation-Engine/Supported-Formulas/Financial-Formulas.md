@@ -765,7 +765,7 @@ _NOMINAL(effect_rate, npery)_
 
 * Npery is truncated to an integer.
 
-* If either argument is nonnumeric, `NOMINAL` returns the `#VALUE!` error value.
+* If either argument is non numeric, `NOMINAL` returns the `#VALUE!` error value.
 
 * If effect_rate ≤ 0 or if npery < 1, `NOMINAL` returns the `#NUM!` error value.
 
@@ -777,7 +777,7 @@ _NOMINAL(effect_rate, npery)_
 
 ## MDURATION
 
-The function `MDURATION` returns the modified Macauley duration for a security with an assumed par value of $100.
+The function `MDURATION` returns the modified Macaulay duration for a security with an assumed par value of $100.
 
 **Syntax:**  
 
@@ -819,7 +819,7 @@ _MDURATION(settlement, maturity, coupon, yld, frequency, [basis])_
 
 * If settlement is greater than or equal to maturity, it returns `#NUM!`.
 
-* Equation to calculate `MDURATION` is `Modified Duration = Macauley Duration / (1 + (yld / frequency))`.
+* Equation to calculate `MDURATION` is `Modified Duration = Macaulay Duration / (1 + (yld / frequency))`.
 
 
 
@@ -843,7 +843,7 @@ _PDURATION(rate, pv, fv)_
 
 * If rate is less than or equal to 0, or if pv or fv is less than or equal to 0, `PDURATION` returns the `#NUM!` error value.
 
-* If any argument is nonnumeric, `PDURATION` returns the `#VALUE!` error value.
+* If any argument is non numeric, `PDURATION` returns the `#VALUE!` error value.
 
 * The `PDURATION` function calculates the number of periods required using the following equation:
 
@@ -1100,12 +1100,5 @@ _COUPNUM(settlement, maturity, frequency, [basis])_
 * If basis is outside the range 0-4, `COUPNUM` returns `#NUM!`.
 
 * If settlement is greater than or equal to maturity, `COUPNUM` returns `#NUM!`.
-
-  471 changes: 471 additions & 0 deletions471  
-WindowsForms/Calculation-Engine/Supported-Formulas/Math-Trigonometry.md
-Viewed
-Original file line number	Diff line number	Diff line change
-@@ -2533,3 +2533,474 @@ _SERIESSUM(x, n, m, coefficients)_
-
 
 * The argument is non-numeric, it returns the `#VALUE!` error message.

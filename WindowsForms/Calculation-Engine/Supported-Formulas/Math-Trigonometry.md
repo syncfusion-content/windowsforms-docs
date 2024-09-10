@@ -3003,4 +3003,4 @@ _PHIL(x)_
 
 
 
-* If x is using a data type that is not valid, such as a nonnumeric value, `PHI` returns the `#VALUE!` error value.
+* If x is using a data type that is not valid, such as a non numeric value, `PHI` returns the `#VALUE!` error value. 
