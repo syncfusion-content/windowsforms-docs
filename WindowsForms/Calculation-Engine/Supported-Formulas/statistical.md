@@ -2663,12 +2663,4 @@ _FREQUENCY(data_array, bins_array)_
 * If bins_array contains no values, `FREQUENCY` returns the total number of elements in data_array.
 
 * `FREQUENCY` ignores blank cells and text in data_array.
-Footer
-© 2024 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact
+
