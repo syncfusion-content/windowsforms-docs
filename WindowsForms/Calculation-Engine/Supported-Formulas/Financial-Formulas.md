@@ -749,7 +749,7 @@ _INTRATE(settlement, maturity, investment, redemption, [basis])_
 
 ## NOMINAL
 
-The function `NOMINAL` returns the nominal annual interest rate, given the effective rate and the number of compounding periods per year.
+The `NOMINAL` function returns the nominal annual interest rate, given the effective rate and the number of compounding periods per year.
 
 **Syntax:**
 
@@ -763,21 +763,19 @@ _NOMINAL(effect_rate, npery)_
 
 **Remarks:**
 
-* Npery is truncated to an integer.
+* npery is truncated to an integer.
 
-* If either argument is non numeric, `NOMINAL` returns the `#VALUE!` error value.
+* If either argument is non-numeric, `NOMINAL` returns the `#VALUE!` error.
 
-* If effect_rate ≤ 0 or if npery < 1, `NOMINAL` returns the `#NUM!` error value.
+* If effect_rate is less than or equal to 0 or if npery is less than 1, `NOMINAL` returns the `#NUM!` error value.
 
-* `NOMINAL` is related to `EFFECT` function. The relationship between `NOMINAL` and `EFFECT` is shown in the following equation:
-
-    `effective_rate = (1 + (nominal_rate / npery))^npery - 1`
+* The `NOMINAL` function is related to the `EFFECT` function, which calculates the effective annual interest rate based on the nominal rate and the number of compounding periods.
 
 
 
 ## MDURATION
 
-The function `MDURATION` returns the modified Macaulay duration for a security with an assumed par value of $100.
+The `MDURATION` function returns the modified Macaulay duration for a security with an assumed par value of $100.
 
 **Syntax:**  
 
@@ -795,7 +793,7 @@ _MDURATION(settlement, maturity, coupon, yld, frequency, [basis])_
 
 * frequency: The number of coupon payments per year (1 for annual, 2 for semiannual, 4 for quarterly).
 
-* basis (Optional): The day count basis to use (default is 0: US (NASD) 30/360):
+* basis (Optional): The day-count convention to use (default is 0: US (NASD) 30/360):
 
   * 0 or omitted: US (NASD) 30/360
 
@@ -809,23 +807,23 @@ _MDURATION(settlement, maturity, coupon, yld, frequency, [basis])_
 
 **Remarks:**
 
-* Dates are stored as serial numbers. For example, January 1, 1900 is 1, and January 1, 2008 is 39448. 
+* Dates are stored as serial numbers. (e.g., January 1, 1900, is represented as 1).
 
-* If settlement or maturity is not valid, `MDURATION` returns `#VALUE!`. 
+* If settlement or maturity is a not valid date, `MDURATION` returns the `#VALUE!` error. 
 
-* If yld < 0 or coupon < 0, it returns `#NUM!`. If frequency is not 1, 2, or 4, it returns `#NUM!`. 
+* If yld or coupon less than 0, or if frequency is not 1, 2, or 4, `MDURATION` returns the `#NUM!` error. 
 
-* If basis is outside the range 0-4, it returns `#NUM!`.
+* If basis is outside the range 0-4, it returns the `#NUM!` error.
 
-* If settlement is greater than or equal to maturity, it returns `#NUM!`.
+* If settlement is greater than or equal to maturity, `MDURATION` returns the `#NUM!` error. 
 
-* Equation to calculate `MDURATION` is `Modified Duration = Macaulay Duration / (1 + (yld / frequency))`.
+* `MDURATION` adjusts the Macaulay duration to account for changes in interest rates.
 
 
 
 ## PDURATION
 
-The function `PDURATION` returns the number of periods required by an investment to reach a specified value.
+The `PDURATION` function returns the number of periods required by an investment to reach a specified value.
 
 **Syntax:**
 
@@ -841,19 +839,17 @@ _PDURATION(rate, pv, fv)_
 
 **Remarks:**
 
-* If rate is less than or equal to 0, or if pv or fv is less than or equal to 0, `PDURATION` returns the `#NUM!` error value.
+* If rate is less than or equal to 0, or if pv or fv is less than or equal to 0, `PDURATION` returns the `#NUM!` error.
 
-* If any argument is non numeric, `PDURATION` returns the `#VALUE!` error value.
+* If any argument is non-numeric, `PDURATION` returns the `#VALUE!` error.
 
-* The `PDURATION` function calculates the number of periods required using the following equation:
-
-   `PDURATION = LOG(fv / pv) / LOG(1 + rate)`
+* `PDURATION` calculates how many periods are needed for an investment to grow from its present value to the desired future value, based on the specified interest rate.
 
 
 
 ## COUPDAYS
 
-The function `COUPDAYS` returns the number of days in the coupon period that contains the settlement date.
+The `COUPDAYS` function returns the number of days in the coupon period that contains the settlement date.
 
 **Syntax:**
 
@@ -867,7 +863,7 @@ _COUPDAYS(settlement, maturity, frequency, [basis])_
 
 * frequency: The number of coupon payments per year (1 for annual, 2 for semiannual, 4 for quarterly).
 
-* basis (Optional): The type of day count basis to use:
+* basis (Optional): The day count basis to use:
 
   * 0 or omitted: US (NASD) 30/360
 
@@ -881,7 +877,7 @@ _COUPDAYS(settlement, maturity, frequency, [basis])_
 
 **Remarks:**
 
-* Dates are stored as serial numbers. For example, January 1, 1900 is 1, and January 1, 2008 is 39448.
+* Dates are stored as serial numbers. (e.g., January 1, 1900, is represented as 1).
 
 * If settlement or maturity is not a valid date, `COUPDAYS` returns `#VALUE!`.
 
@@ -895,7 +891,7 @@ _COUPDAYS(settlement, maturity, frequency, [basis])_
 
 ## COUPDAYBS
 
-The function `COUPDAYBS` returns the number of days from the beginning of a coupon period until its settlement date.
+The `COUPDAYBS` function returns the number of days from the beginning of a coupon period until its settlement date.
 
 **Syntax:**
 
@@ -923,9 +919,9 @@ _COUPDAYBS(settlement, maturity, frequency, [basis])_
 
 **Remarks:**
 
-* Dates are stored as serial numbers. For example, January 1, 1900 is 1, and January 1, 2008 is 39448.
+* Dates are stored as serial numbers. (e.g., January 1, 1900, is represented as 1).
 
-* If settlement or maturity is not valid, `COUPDAYBS` returns `#VALUE!`.
+* If settlement or maturity is not a valid date, `COUPDAYBS` returns `#VALUE!`.
 
 * If frequency is any number other than 1, 2, or 4, `COUPDAYBS` returns `#NUM!`.
 
@@ -965,9 +961,9 @@ _COUPDAYSNC(settlement, maturity, frequency, [basis])_
 
 **Remarks:**
 
-* Dates are stored as serial numbers. For example, January 1, 1900 is 1, and January 1, 2008 is 39448.
+* Dates are stored as serial numbers. (e.g., January 1, 1900, is represented as 1).
 
-* If settlement or maturity is not valid, `COUPDAYSNC` returns `#VALUE!`.
+* If settlement or maturity is not a valid date, `COUPDAYSNC` returns `#VALUE!`.
 
 * If frequency is any number other than 1, 2, or 4, `COUPDAYSNC` returns `#NUM!`.
 
@@ -1007,9 +1003,9 @@ _COUPPCD(settlement, maturity, frequency, [basis])_
 
 **Remarks:**
 
-* Dates are stored as serial numbers. For example, January 1, 1900 is 1, and January 1, 2008 is 39448.
+* Dates are stored as serial numbers. (e.g., January 1, 1900, is represented as 1).
 
-* If settlement or maturity is not valid, `COUPPCD` returns `#VALUE!`.
+* If settlement or maturity is not a valid date, `COUPPCD` returns `#VALUE!`.
 
 * If frequency is any number other than 1, 2, or 4, `COUPPCD` returns `#NUM!`.
 
@@ -1049,9 +1045,9 @@ _COUPNCD(settlement, maturity, frequency, [basis])_
 
 **Remarks:**
 
-* Dates are stored as serial numbers. For example, January 1, 1900 is 1, and January 1, 2008 is 39448.
+* Dates are stored as serial numbers. (e.g., January 1, 1900, is represented as 1).
 
-* If settlement or maturity is not valid, `COUPNCD` returns `#VALUE!`.
+* If settlement or maturity is not a valid date, `COUPNCD` returns `#VALUE!`.
 
 * If frequency is any number other than 1, 2, or 4, `COUPNCD` returns `#NUM!`.
 
@@ -1091,9 +1087,9 @@ _COUPNUM(settlement, maturity, frequency, [basis])_
 
 **Remarks:**
 
-* Dates are stored as serial numbers. For example, January 1, 1900 is 1, and January 1, 2008 is 39448.
+* Dates are stored as serial numbers. (e.g., January 1, 1900, is represented as 1).
 
-* If settlement or maturity is not valid, `COUPNUM` returns `#VALUE!`.
+* If settlement or maturity is not a valid date, `COUPNUM` returns `#VALUE!`.
 
 * If frequency is any number other than 1, 2, or 4, `COUPNUM` returns `#NUM!`.
 
