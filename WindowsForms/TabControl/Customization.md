@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Customization in Windows Forms TabControl control | Syncfusion
-description: Learn about Customization support in Syncfusion Windows Forms TabControl (TabControlAdv) control and more details.
-platform: WindowsForms
+title: Customization in Windows Forms TabControl | Syncfusion
+description: Learn here all about customization support in Syncfusion Windows Forms TabControl (TabControlAdv), it's eleents and more.
+platform: windowsforms
 control: TabControlAdv
 documentation: ug
 ---
@@ -20,7 +20,7 @@ To bring the text of the TabItem to the edit mode, the following can be done.
 1. Select the text of the TabItem to be edited and right-click on the tab to bring the text to edit mode. The text can now be edited and it can be saved by pressing the Enter key.
 2. Also, double-clicking on a tab makes the text change to edit mode.
 
-   ![Renaming tab item](TabControlAdv_images/TabControlAdv_img1.png)
+   ![Renaming tab item in Windows Forms TabControl](tabcontroladv_images/windows-forms-tabcontrol-renaming-tab-item.png)
 
 
 
@@ -97,7 +97,7 @@ Me.tabControlAdv1.Padding = New Point(12, 12)
 
 {% endtabs %}
 
-![Padding support](TabControlAdv_images/TabControlAdv_img3.jpeg)
+![Padding support in Windows Forms TabControl](tabcontroladv_images/windows-forms-tabcontrol-padding-support.jpeg)
 
 ## UseMnemonic
 
@@ -115,13 +115,13 @@ The three types of border styles are given below.
 * Fixed 3D
 * None
 
-![Tab border style](TabControlAdv_images/TabControlAdv_img6.jpeg)
+![Tab border style in Windows Forms TabControl](tabcontroladv_images/windows-forms-tabcontrol-tab-border-style.jpeg)
 
 #### FixedSingleBorderColor
 
 The [FixedSingleBorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_FixedSingleBorderColor) property is used to set the border color of the TabPage in the TabControlAdv when the BorderStyle is set to FixedSingle.
 
-![Border color customization](TabControlAdv_images/TabControlAdv_img7.jpeg)
+![Border color customization in Windows Forms TabControl](tabcontroladv_images/windows-forms-tabcontrol-border-color-customization.jpeg)
 
 N> The [TabControlAdv.ResetFixedSingleBorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_ResetFixedSingleBorderColor) method resets the border color of the TabPage to the default value.
 
@@ -137,7 +137,7 @@ There are two major properties which come into picture:
 * [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabPageAdv.html#Syncfusion_Windows_Forms_Tools_TabPageAdv_ImageSize)
 * [ImageSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabPageAdv.html#Syncfusion_Windows_Forms_Tools_TabPageAdv_ImageSize)
 
-![Image support](TabControlAdv_images/TabControlAdv_img8.jpeg)
+![Image support in Windows Forms TabControl](TabControlAdv_images/windows-forms-tabcontrol-image-support.jpeg)
 
 
 #### Inserting GIF image
