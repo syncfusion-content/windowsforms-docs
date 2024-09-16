@@ -152,10 +152,10 @@ Me.gridControl1.CellToolTip.Active = False
 
 The below properties are used to set the ToolTip delay time.
 
-* [AutoPopDelay](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.tooltip.autopopdelay?view=net-5.0)
-* [InitialDelay](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.tooltip.initialdelay?view=net-5.0)
-* [ReshowDelay](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.tooltip.reshowdelay?view=net-5.0)
-* [AutomaticDelay](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.tooltip.automaticdelay?view=net-5.0)
+* [AutoPopDelay](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.tooltip.autopopdelay?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0)
+* [InitialDelay](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.tooltip.initialdelay?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0)
+* [ReshowDelay](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.tooltip.reshowdelay?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0)
+* [AutomaticDelay](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.tooltip.automaticdelay?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0)
 
 ### AutoPopDelay
 
