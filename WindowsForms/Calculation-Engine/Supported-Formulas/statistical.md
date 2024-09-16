@@ -2574,3 +2574,92 @@ _LINEST(known_y's, [known_x's], [const], [stats]))_
 *  If const is `FALSE`, b is set equal to 0 
 
 * stats (Optional). This is a logical value specifying whether to return additional regression statistics.
+
+## GAUSS     
+
+The `GAUSS` function calculates the probability that a value from a standard normal distribution will fall between the mean and a specified number of standard deviations (z) from the mean.
+
+**Syntax:**
+
+_GAUSS(z)_ 
+
+**where:**
+
+* z : The number of standard deviations away from the mean. A positive value indicates a point is above the mean, while a negative value indicates a point below the mean.
+
+**Remarks:**
+
+* If z is not a valid number, GAUSS returns the `#NUM!` error.
+
+* If z is not a valid data type, GAUSS returns the `#VALUE!` error.
+
+* Since NORM.S.DIST(0,TRUE) always returns 0.5, GAUSS(z) will always be 0.5 less than NORM.S.DIST(z,TRUE).
+
+## GAMMA
+
+The `GAMMA` function returns the value of the gamma function for a specified number.
+
+**Syntax:**
+
+_GAMMA(number)_
+
+**where:**
+
+* Number: The value for which the gamma function is to be calculated.
+
+**Remarks:**
+
+* The `GAMMA` function uses the following relationship: Γ(N+1)=N×Γ(N).
+
+* If Number is a negative integer or 0, `GAMMA` returns the `#NUM!` error.
+
+* If Number contains characters or non-numeric data, `GAMMA` returns the `#VALUE!` error.
+
+## VAR.S
+
+The `VAR.S` function estimates the variance for a sample of a population, ignoring logical values and text within the sample.
+
+**Syntax:**
+
+_VAR.S(number1, [number2], ... )_
+
+**where:**
+
+* Number1: Required. The first number or sample from the population.
+
+* Number2, ...: Optional. Additional numbers, up to 254, representing the sample data.
+
+**Remarks:**
+
+* `VAR.S` assumes the arguments represent a sample of the population. If your data represents the entire population, use `VAR.P`.
+
+* Arguments can include numbers, arrays, or references containing numbers. Logical values and text representations of numbers entered directly are included.
+
+* Only numbers within arrays or references are counted; empty cells, logical values, text, or errors are ignored.
+
+* Arguments that are error values or non-numeric text will cause errors.
+To include logical values and text numbers in references, use the `VARA` function.
+
+## FREQUENCY
+
+The `FREQUENCY` function calculates how often values occur  within specified ranges and returns an array representing the frequency distribution.
+
+**Syntax:**
+
+_FREQUENCY(data_array, bins_array)_
+
+**where:**
+
+* data_array: An array or reference to the set of values for which you want to count frequencies.
+
+* bins_array: An array or reference to intervals that define the frequency ranges.
+
+**Remarks:**
+
+* The `FREQUENCY` function returns an array with one more element than the number of elements in bins_array. The extra element represents the count of values in data_array that are greater than the highest value in bins_array.
+
+* If data_array contains no values, `FREQUENCY `returns an array of zeros.
+
+* If bins_array contains no values, `FREQUENCY` returns the total number of elements in data_array.
+
+* `FREQUENCY` ignores blank cells and text in data_array.
