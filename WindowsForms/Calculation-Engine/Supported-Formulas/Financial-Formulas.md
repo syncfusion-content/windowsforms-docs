@@ -744,3 +744,357 @@ _INTRATE(settlement, maturity, investment, redemption, [basis])_
 * Redemption    :The amount to be received at maturity.
 
 * Basis    :    The type of specifies the day count basis to used in the calculation.
+
+
+
+## NOMINAL
+
+The `NOMINAL` function returns the nominal annual interest rate, given the effective rate and the number of compounding periods per year.
+
+**Syntax:**
+
+_NOMINAL(effect_rate, npery)_
+
+**Where:**
+
+* effect_rate: The effective interest rate.
+
+* npery: The number of compounding periods per year.
+
+**Remarks:**
+
+* npery is truncated to an integer.
+
+* If either argument is non-numeric, `NOMINAL` returns the `#VALUE!` error.
+
+* If effect_rate is less than or equal to 0 or if npery is less than 1, `NOMINAL` returns the `#NUM!` error value.
+
+* The `NOMINAL` function is related to the `EFFECT` function, which calculates the effective annual interest rate based on the nominal rate and the number of compounding periods.
+
+
+
+## MDURATION
+
+The `MDURATION` function returns the modified Macaulay duration for a security with an assumed par value of $100.
+
+**Syntax:**  
+
+_MDURATION(settlement, maturity, coupon, yld, frequency, [basis])_
+
+**Where:**
+
+* settlement: The security's settlement date.
+
+* maturity: The security's maturity date.
+
+* coupon: The security's annual coupon rate.
+
+* yld: The security's annual yield.
+
+* frequency: The number of coupon payments per year (1 for annual, 2 for semiannual, 4 for quarterly).
+
+* basis (Optional): The day-count convention to use (default is 0: US (NASD) 30/360):
+
+  * 0 or omitted: US (NASD) 30/360
+
+  * 1: Actual/actual
+
+  * 2: Actual/360
+
+  * 3: Actual/365
+
+  * 4: European 30/360
+
+**Remarks:**
+
+* Dates are stored as serial numbers. (e.g., January 1, 1900, is represented as 1).
+
+* If settlement or maturity is a not valid date, `MDURATION` returns the `#VALUE!` error. 
+
+* If yld or coupon less than 0, or if frequency is not 1, 2, or 4, `MDURATION` returns the `#NUM!` error. 
+
+* If basis is outside the range 0-4, it returns the `#NUM!` error.
+
+* If settlement is greater than or equal to maturity, `MDURATION` returns the `#NUM!` error. 
+
+* `MDURATION` adjusts the Macaulay duration to account for changes in interest rates.
+
+
+
+## PDURATION
+
+The `PDURATION` function returns the number of periods required by an investment to reach a specified value.
+
+**Syntax:**
+
+_PDURATION(rate, pv, fv)_
+
+**Where:**
+
+* rate: The interest rate per period.
+
+* pv: The present value of the investment.
+
+* fv: The desired future value of the investment.
+
+**Remarks:**
+
+* If rate is less than or equal to 0, or if pv or fv is less than or equal to 0, `PDURATION` returns the `#NUM!` error.
+
+* If any argument is non-numeric, `PDURATION` returns the `#VALUE!` error.
+
+* `PDURATION` calculates how many periods are needed for an investment to grow from its present value to the desired future value, based on the specified interest rate.
+
+
+
+## COUPDAYS
+
+The `COUPDAYS` function returns the number of days in the coupon period that contains the settlement date.
+
+**Syntax:**
+
+_COUPDAYS(settlement, maturity, frequency, [basis])_
+
+**Where:**
+
+* settlement: The security's settlement date.
+
+* maturity: The security's maturity date.
+
+* frequency: The number of coupon payments per year (1 for annual, 2 for semiannual, 4 for quarterly).
+
+* basis (Optional): The day count basis to use:
+
+  * 0 or omitted: US (NASD) 30/360
+
+  * 1: Actual/actual
+
+  * 2: Actual/360
+
+  * 3: Actual/365
+
+  * 4: European 30/360
+
+**Remarks:**
+
+* Dates are stored as serial numbers. (e.g., January 1, 1900, is represented as 1).
+
+* If settlement or maturity is not a valid date, `COUPDAYS` returns `#VALUE!`.
+
+* If frequency is any number other than 1, 2, or 4, `COUPDAYS` returns `#NUM!`.
+
+* If basis is outside the range 0-4, `COUPDAYS` returns `#NUM!`.
+
+* If settlement is greater than or equal to maturity, `COUPDAYS` returns `#NUM!`.
+
+
+
+## COUPDAYBS
+
+The `COUPDAYBS` function returns the number of days from the beginning of a coupon period until its settlement date.
+
+**Syntax:**
+
+_COUPDAYBS(settlement, maturity, frequency, [basis])_
+
+**Where:**
+
+* settlement: The security's settlement date.
+
+* maturity: The security's maturity date.
+
+* frequency: The number of coupon payments per year (1 for annual, 2 for semiannual, 4 for quarterly).
+
+* basis (Optional): The day count basis to use (default is 0: US (NASD) 30/360):
+
+  * 0 or omitted: US (NASD) 30/360
+
+  * 1: Actual/actual
+
+  * 2: Actual/360
+
+  * 3: Actual/365
+
+  * 4: European 30/360
+
+**Remarks:**
+
+* Dates are stored as serial numbers. (e.g., January 1, 1900, is represented as 1).
+
+* If settlement or maturity is not a valid date, `COUPDAYBS` returns `#VALUE!`.
+
+* If frequency is any number other than 1, 2, or 4, `COUPDAYBS` returns `#NUM!`.
+
+* If basis is outside the range 0-4, it returns `#NUM!`.
+
+* If settlement is greater than or equal to maturity, it returns `#NUM!`.
+
+
+
+## COUPDAYSNC
+
+The function `COUPDAYSNC` returns the number of days from the settlement date to the next coupon date.
+
+**Syntax:**
+
+_COUPDAYSNC(settlement, maturity, frequency, [basis])_
+
+**Where:**
+
+* settlement: The security's settlement date.
+
+* maturity: The security's maturity date.
+
+* frequency: The number of coupon payments per year (1 for annual, 2 for semiannual, 4 for quarterly).
+
+* basis (Optional): The day count basis to use (default is 0: US (NASD) 30/360):
+
+  * 0 or omitted: US (NASD) 30/360
+
+  * 1: Actual/actual
+
+  * 2: Actual/360
+
+  * 3: Actual/365
+
+  * 4: European 30/360
+
+**Remarks:**
+
+* Dates are stored as serial numbers. (e.g., January 1, 1900, is represented as 1).
+
+* If settlement or maturity is not a valid date, `COUPDAYSNC` returns `#VALUE!`.
+
+* If frequency is any number other than 1, 2, or 4, `COUPDAYSNC` returns `#NUM!`.
+
+* If basis is outside the range 0-4, it returns `#NUM!`.
+
+* If settlement is greater than or equal to maturity, it returns `#NUM!`.
+
+
+
+## COUPPCD
+
+The function `COUPPCD` returns a number that represents the previous coupon date before the settlement date.
+
+**Syntax:**
+
+_COUPPCD(settlement, maturity, frequency, [basis])_
+
+**Where:**
+
+* settlement: The security's settlement date.
+
+* maturity: The security's maturity date.
+
+* frequency: The number of coupon payments per year (1 for annual, 2 for semiannual, 4 for quarterly).
+
+* basis (Optional): The day count basis to use (default is 0: US (NASD) 30/360):
+
+  * 0 or omitted: US (NASD) 30/360
+
+  * 1: Actual/actual
+
+  * 2: Actual/360
+
+  * 3: Actual/365
+
+  * 4: European 30/360
+
+**Remarks:**
+
+* Dates are stored as serial numbers. (e.g., January 1, 1900, is represented as 1).
+
+* If settlement or maturity is not a valid date, `COUPPCD` returns `#VALUE!`.
+
+* If frequency is any number other than 1, 2, or 4, `COUPPCD` returns `#NUM!`.
+
+* If basis is outside the range 0-4, it returns `#NUM!`.
+
+* If settlement is greater than or equal to maturity, it returns `#NUM!`.
+
+
+
+## COUPNCD
+
+The function `COUPNCD` returns a number that represents the next coupon date after the settlement date.
+
+**Syntax:**
+
+_COUPNCD(settlement, maturity, frequency, [basis])_
+
+**Where:**
+
+* settlement: The security's settlement date.
+
+* maturity: The security's maturity date.
+
+* frequency: The number of coupon payments per year (1 for annual, 2 for semiannual, 4 for quarterly).
+
+* basis (Optional): The day count basis to use (default is 0: US (NASD) 30/360):
+
+  * 0 or omitted: US (NASD) 30/360
+
+  * 1: Actual/actual
+
+  * 2: Actual/360
+
+  * 3: Actual/365
+
+  * 4: European 30/360
+
+**Remarks:**
+
+* Dates are stored as serial numbers. (e.g., January 1, 1900, is represented as 1).
+
+* If settlement or maturity is not a valid date, `COUPNCD` returns `#VALUE!`.
+
+* If frequency is any number other than 1, 2, or 4, `COUPNCD` returns `#NUM!`.
+
+* If basis is outside the range 0-4, it returns `#NUM!`.
+
+* If settlement is greater than or equal to maturity, it returns `#NUM!`.
+
+
+
+## COUPNUM
+
+The function `COUPNUM` returns the number of coupons payable between the settlement date and maturity date, rounded up to the nearest whole coupon.
+
+**Syntax:**
+
+_COUPNUM(settlement, maturity, frequency, [basis])_
+
+**Where:**
+
+* settlement: The security's settlement date.
+
+* maturity: The security's maturity date.
+
+* frequency: The number of coupon payments per year (1 for annual, 2 for semiannual, 4 for quarterly).
+
+* basis (Optional): The day count basis to use (default is 0: US (NASD) 30/360):
+
+  * 0 or omitted: US (NASD) 30/360
+
+  * 1: Actual/actual
+
+  * 2: Actual/360
+
+  * 3: Actual/365
+
+  * 4: European 30/360
+
+**Remarks:**
+
+* Dates are stored as serial numbers. (e.g., January 1, 1900, is represented as 1).
+
+* If settlement or maturity is not a valid date, `COUPNUM` returns `#VALUE!`.
+
+* If frequency is any number other than 1, 2, or 4, `COUPNUM` returns `#NUM!`.
+
+* If basis is outside the range 0-4, `COUPNUM` returns `#NUM!`.
+
+* If settlement is greater than or equal to maturity, `COUPNUM` returns `#NUM!`.
+
+* The argument is non-numeric, it returns the `#VALUE!` error message.
