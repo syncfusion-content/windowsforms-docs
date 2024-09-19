@@ -2592,7 +2592,7 @@ _XLOOKUP(lookup_value, lookup_array, return_array, [if_not_found], [match_mode],
 
 
 
-  * 2 - Wildcard usinh `*`, `?`, and `~`.  
+  * 2 - Wildcard using `*`, `?`, and `~`.  
 
 
 
