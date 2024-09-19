@@ -2,7 +2,7 @@
 layout: post
 title: Customization of SfDateTimeEdit | Windows Forms | Syncfusion
 description: Customize the visibility of UpDown Button, Key Navigation Support and DropDown Popup alignment support
-platform: winforms
+platform: WindowsForms
 control: SfDateTimeEdit
 documentation: ug
 ---
@@ -478,7 +478,6 @@ Me.dateTimeEdit.DateTimeIcon = Image.FromFile(@"C:\Tasks\Feature-sfDateTimeEdit\
 {% endhighlight  %}
 
 {% endtabs %}
-
 
 ![Customize drop-down calendar appearance](appearance-images/CalendarIconCustomization.png)
 
