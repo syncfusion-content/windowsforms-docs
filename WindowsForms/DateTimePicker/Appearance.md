@@ -479,6 +479,7 @@ Me.dateTimeEdit.DateTimeIcon = Image.FromFile(@"C:\Tasks\Feature-sfDateTimeEdit\
 
 {% endtabs %}
 
+
 ![Customize drop-down calendar appearance](appearance-images/CalendarIconCustomization.png)
 
 
