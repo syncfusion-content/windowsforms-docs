@@ -458,3 +458,27 @@ Me.dateTimeEdit.ThemeName = "Office2016Black"
 {% endtabs %}
 
 ![SfDateTimeEdit Office2016Black appearance](appearance-images/Office2016Black.png)
+
+## Customize default DropDown Calendar Icon 
+
+The DropDown calendar icon can be customized in the SfDateTimeEdit control to improve UI design and theme consistency. 
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.dateTimeEdit.DateTimeIcon = Image.FromFile(@"C:\Tasks\Feature-sfDateTimeEdit\calendar.png");
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+Me.dateTimeEdit.DateTimeIcon = Image.FromFile(@"C:\Tasks\Feature-sfDateTimeEdit\calendar.png");
+
+{% endhighlight  %}
+
+{% endtabs %}
+
+![Customize drop-down calendar appearance](appearance-images/CalendarIconCustomization.png)
+
+
