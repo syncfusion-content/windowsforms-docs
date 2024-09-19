@@ -2564,11 +2564,11 @@ _XLOOKUP(lookup_value, lookup_array, return_array, [if_not_found], [match_mode],
 
 
 
-* lookup_array: The array or range to search.   
+* lookup_array: The range or array to search for lookup_value.
 
 
 
-* return_array: The array or range to return.   
+* return_array: The range or array from which to return a corresponding value.
 
 
 
@@ -2580,7 +2580,7 @@ _XLOOKUP(lookup_value, lookup_array, return_array, [if_not_found], [match_mode],
 
 
 
-  * 0 - Exact match. If none found, return `#N/A`. This is the default.   
+  * 0 - Exact match (default).
 
 
 
@@ -2592,12 +2592,11 @@ _XLOOKUP(lookup_value, lookup_array, return_array, [if_not_found], [match_mode],
 
 
 
-  * 2 - A wildcard match where `*`, `?`, and `~` have special meaning.   
+  * 2 - Wildcard usinh `*`, `?`, and `~`.  
 
 
 
-* [search_mode] (Optional): Specify the search mode to use:   
-
+* [search_mode] (Optional): Specifies the search order:
 
 
   * 1 - Search from the first item (default).  
@@ -2684,19 +2683,19 @@ _XMATCH(lookup_value, lookup_array, [match_mode], [search_mode])_
 
 
 
-  * 2 - A wildcard match where `*`, `?`, and `~` have special meaning.   
+  * 2 - Wildcard match using `*`, `?`, and `~`.
 
 
 
-* [search_mode] (Optional): Specifies the search type:   
+* [search_mode] (Optional): Specifies the search order:   
 
 
 
-  * 1 - Search first-to-last (default).   
+  * 1 - Search from first to last (default).   
 
 
 
-  * -1 - Search last-to-first (reverse search).   
+  * -1 - Search from last to first.   
 
 
 
@@ -2790,7 +2789,7 @@ _FLOOR.PRECISE(number, [significance])_
 
 
 
-* number: The value to be rounded.
+* number: The number to be rounded down.
 
 
 
@@ -2837,7 +2836,7 @@ _ISO.CEILING(number, [significance])_
 
 
 
-* significance (Optional): The multiple to which number is to be rounded. If omitted, the default value is 1.
+* significance (Optional): The multiple to which number is to be rounded. If omitted, it defaults to 1.
 
 
 
@@ -2845,7 +2844,7 @@ _ISO.CEILING(number, [significance])_
 
 
 
-* The absolute value of the multiple is used, so that the `ISO.CEILING` function returns the mathematical ceiling irrespective of the signs of number and significance.
+* The absolute value of the multiple is used, meaning `ISO.CEILING` always rounds up, regardless of the sign of the number or significance.
 
 
 
@@ -2883,7 +2882,7 @@ _CEILING.PRECISE(number, [significance])_
 **Remarks:**
 
 
-* The absolute value of the multiple is used, so that the `CEILING.PRECISE` function returns the mathematical ceiling irrespective of the signs of number and significance.
+* `CEILING.PRECISE` uses the absolute value of the multiple, ensuring that the function rounds up regardless of the signs of the number or significance.
 
 
 
@@ -2918,19 +2917,19 @@ _HSTACK(array1, [array2], ...)_
 **Remarks:**
 
 
-* `HSTACK` returns the array formed by appending each of the array arguments in a column-wise fashion. The resulting array will have the following dimensions:
+* `HSTACK` returns an array where each input array is appended in a column-wise fashion.
 
 
 
-  * Rows: The maximum of the row count from each of the array arguments.
+  * Rows: The number of rows in the result will be the maximum number of rows across all input arrays.
 
 
 
-  * Columns: The combined count of all the columns from each of the array arguments.
+  * Columns: The number of columns will be the sum of the columns from all input arrays.
 
 
 
-* If an array has fewer rows than the maximum width of the selected arrays.
+* If an array has fewer rows than the maximum row count, `#N/A` will fill the missing rows. You can use the `IFERROR` function to handle these errors.
 
 
 
@@ -2958,7 +2957,7 @@ _VSTACK(array1, [array2], ...)_
 
 
 
-* array: The arrays to  be appended vertically.
+* array: The arrays to be appended vertically.
 
 
 
@@ -2966,15 +2965,15 @@ _VSTACK(array1, [array2], ...)_
 
 
 
-* `VSTACK` returns the array formed by appending each of the array arguments in a row-wise fashion. The resulting array will have the following dimensions:
+* `VSTACK` returns an array where each input array is appended in a row-wise fashion.
 
 
 
-  * Rows: The combined count of all the rows from each of the array arguments.
+  * Rows: The result will have the combined number of rows from all input arrays.
 
 
 
-  * Columns: The maximum of the column count from each of the array arguments.
+  * Columns: The result will have the maximum column count of the input arrays.
 
 
 
@@ -2990,7 +2989,7 @@ _VSTACK(array1, [array2], ...)_
 
 
 
-The function `PHi` returns the value of the density function for a standard normal distribution for a given number.
+The `PHi` function returns the value of the probability density function for the standard normal distribution for a given number.
 
 
 
@@ -3006,7 +3005,7 @@ _PHIL(x)_
 
 
 
-* x: The number for which the density of the standard normal distribution is calculated.
+* x: The number for which the  probability density is calculated.
 
 
 
@@ -3014,8 +3013,8 @@ _PHIL(x)_
 
 
 
-* If x is not a valid numeric value, `PHI` returns the `#NUM!` error.
+* If x is not a valid numeric value, `PHI` will return the `#NUM!` error.
 
 
 
-* If x of an invalid data type, `PHI` returns the `#VALUE!` error. 
+* If x of an invalid data type, `PHI` will return the `#VALUE!` error. 
