@@ -2,7 +2,7 @@
 layout: post
 title: Customization of SfDateTimeEdit | Windows Forms | Syncfusion
 description: Customize the visibility of UpDown Button, Key Navigation Support and DropDown Popup alignment support
-platform: WindowsForms
+platform: windowsforms
 control: SfDateTimeEdit
 documentation: ug
 ---
