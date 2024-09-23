@@ -2535,9 +2535,6 @@ _SERIESSUM(x, n, m, coefficients)_
 * The argument is non-numeric, it returns the `#VALUE!` error message.
 
 
-* The argument is non-numeric, it returns the `#VALUE!` error message.
-
-
 
 ## XLOOKUP
 
@@ -2602,6 +2599,7 @@ _XLOOKUP(lookup_value, lookup_array, return_array, [if_not_found], [match_mode],
 * [search_mode] (Optional): Specifies the search order:
 
 
+
   * 1 - Search from the first item (default).  
 
 
@@ -2643,7 +2641,6 @@ _XLOOKUP(lookup_value, lookup_array, return_array, [if_not_found], [match_mode],
 
 
 ## XMATCH
-Manivannan-E marked this conversation as resolved.
 
 
 
@@ -2801,6 +2798,7 @@ _FLOOR.PRECISE(number, [significance])_
 * significance (Optional): The multiple to which the number should be rounded. Defaults to 1.
 
 
+
 **Remarks:**
 
 
@@ -2860,6 +2858,7 @@ _ISO.CEILING(number, [significance])_
 ## CEILING.PRECISE
 
 
+
 The `CEILING.PRECISE` function rounds a number up to the nearest integer or a specified multiple of significance. Like ISO.CEILING, it always rounds up regardless of whether the number is positive or negative. If the number or significance is zero, it returns zero.
 
 
@@ -2885,6 +2884,7 @@ _CEILING.PRECISE(number, [significance])_
 
 
 **Remarks:**
+
 
 
 * `CEILING.PRECISE` uses the absolute value of the multiple, ensuring that the function rounds up regardless of the signs of the number or significance.
@@ -2920,6 +2920,7 @@ _HSTACK(array1, [array2], ...)_
 
 
 **Remarks:**
+
 
 
 * `HSTACK` returns an array where each input array is appended in a column-wise fashion.

@@ -1235,7 +1235,6 @@ _TEXTAFTER(text, delimiter, [instance_num], [match_mode], [match_end], [if_not_f
 
 
 
-
 ## TEXTBEFORE
 
 
@@ -1335,6 +1334,7 @@ _VALUETOTEXT(value, [format])_
   * 1: Strict format with escape characters for formulas.
 
 
+
 **Remarks:**
 
 
@@ -1352,6 +1352,7 @@ _VALUETOTEXT(value, [format])_
 
 
 The `ARRAYTOTEXT` function function converts an array into text.
+
 
 
 **Syntax:**
@@ -1556,6 +1557,7 @@ _CHOOSECOLS(array, col_num1, [col_num2], …)_
 **Remarks:**
 
 
+
 * If any [col_num] is zero or exceeds the total number of columns, a `#VALUE!` error is returned.
 
 
@@ -1563,31 +1565,41 @@ _CHOOSECOLS(array, col_num1, [col_num2], …)_
 * The function is useful for extracting only certain columns from a large dataset.
 
 
+
 ## CHOOSEROWS
+
 
 
 The `CHOOSEROWS` function returns specified rows from an array.
 
 
+
 **Syntax:**
+
 
 
 _CHOOSEROWS(array, row_num1, [row_num2], …)_
 
 
+
 **where:**
+
 
 
 * array: The array containing the rows to be selected.
 
 
+
 * row_num1: The index of the first row to return.
+
 
 
 * [row_num2] (Optional): Additional rows to return.
 
 
+
 **Remarks:**
+
 
 
 * A `#VALUE!` error occurs if any [row_num] exceeds the number of rows or is zero.
@@ -1776,7 +1788,6 @@ _DROP(array, rows, [columns])_
 
 **where:**
 
-Manivannan-E marked this conversation as resolved.
 
 
 * array: The array from which to drop rows or columns.
@@ -1804,6 +1815,7 @@ Manivannan-E marked this conversation as resolved.
 
 
 * The function helps to clean up datasets, such as removing unnecessary columns or rows before analysis.
+
 
 
 ## EXPAND
@@ -1908,6 +1920,7 @@ _WRAPROWS(vector, wrap_count, [pad_with])_
 * Cells that cannot be filled are assigned `#N/A`, unless otherwise specified with [pad_with].
 
 
+
 ## WRAPCOLS
 
 
@@ -1947,7 +1960,9 @@ _WRAPCOLS(vector, wrap_count, [pad_with])_
 * If [wrap_count] exceeds the length of the vector, the vector is returned in a single column.
 
 
+
 * If the vector is not a one-dimensional array, a `#VALUE!` error is returned.
+
 
 
 * A `#NUM!` error occurs if [wrap_count] is less than 1.
@@ -1963,6 +1978,7 @@ _WRAPCOLS(vector, wrap_count, [pad_with])_
 
 
 The `SORT` function sorts the contents of an array in either ascending or descending order.
+
 
 
 **Syntax:**
