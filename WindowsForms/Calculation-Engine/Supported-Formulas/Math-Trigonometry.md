@@ -2535,19 +2535,19 @@ _SERIESSUM(x, n, m, coefficients)_
 * The argument is non-numeric, it returns the `#VALUE!` error message.
 
 
+* The argument is non-numeric, it returns the `#VALUE!` error message.
+
+
 
 ## XLOOKUP
 
 
-The `XLOOKUP` function allows you to find and return a corresponding value from a table or range based on a search term.   
+
+The `XLOOKUP` function allows you to search for a value in a range and return a corresponding value from another range, based on a specified search term.   
 
 
 
-For example, you can look up the price of an automotive part by its part number, or find an employee's name based on their employee ID.   
-
-
-
-With `XLOOKUP`, you can search for a value in one column and return a value from another column in the same row, regardless of which side the return column is on.   
+For example, you can look up the price of an item by its ID or find an employee's name by their employee ID.   
 
 
 
@@ -2563,59 +2563,58 @@ _XLOOKUP(lookup_value, lookup_array, return_array, [if_not_found], [match_mode],
 
 
 
-* lookup_value: The value to search for. If omitted, `XLOOKUP` returns blank cells it finds in lookup_array.  
+* lookup_value: The value to search for. If omitted, `XLOOKUP` returns blank cells in lookup_array.  
 
 
 
-* lookup_array: The array or range to search.   
+* lookup_array: The range or array to search for lookup_value.
 
 
 
-* return_array: The array or range to return.   
+* return_array: The range or array from which to return a corresponding value.
 
 
 
-* [if_not_found] (Optional): Where a valid match is not found, return the [if_not_found] text you supply. If a valid match is not found, and [if_not_found] is missing, `#N/A` is returned.   
+* [if_not_found] (Optional):  The value to return if no match is found. If omitted, `#N/A` is returned.   
 
 
 
-* [match_mode] (Optional): Specify the match type:   
+* [match_mode] (Optional): Specifies the match type:   
 
 
 
-  * 0 - Exact match. If none found, return `#N/A`. This is the default.   
+  * 0 - Exact match (default).
 
 
 
-  * -1 - Exact match. If none found, return the next smaller item.   
+  * -1 - Exact match or next smaller item.   
 
 
 
-  * 1 - Exact match. If none found, return the next larger item.   
+  * 1 - Exact match or next larger item.
 
 
 
-  * 2 - A wildcard match where `*`, `?`, and `~` have special meaning.   
+  * 2 - Wildcard using `*`, `?`, and `~`.  
 
 
 
-* [search_mode] (Optional): Specify the search mode to use:   
+* [search_mode] (Optional): Specifies the search order:
+
+
+  * 1 - Search from the first item (default).  
 
 
 
-  * 1 - Perform a search starting at the first item. This is the default.   
+  * -1 - Search from the last item.
 
 
 
-  * -1 - Perform a reverse search starting at the last item.   
+  * 2 -  Binary search in ascending order (requires sorted data).   
 
 
 
-  * 2 - Perform a binary search that relies on lookup_array being sorted in ascending order. If not sorted, invalid results will be returned.   
-
-
-
-  * -2 - Perform a binary search that relies on lookup_array being sorted in descending order. If not sorted, invalid results will be returned.   
+  * -2 - Binary search in descending order (requires sorted data). 
 
 
 
@@ -2635,19 +2634,20 @@ _XLOOKUP(lookup_value, lookup_array, return_array, [if_not_found], [match_mode],
 
 
 
-* Using [match_mode] allows you to control whether the function looks for exact matches, approximate matches, or supports wildcard characters.   
+* The [match_mode] argument allows for control over exact, approximate, and wildcard matches.   
 
 
 
-* The [search_mode] argument lets you control the order in which the search is performed, which can be useful for optimizing performance on large datasets.   
+* The [search_mode]  controls the search order, optimizing performance on larger datasets.   
 
 
 
 ## XMATCH
+Manivannan-E marked this conversation as resolved.
 
 
 
-The `XMATCH` function returns the relative position of an item in an array or range of cells.    
+The `XMATCH` function returns the relative position of an item in a range, similar to `MATCH`, but with additional capabilities for exact and approximate matches.   
 
 
 
@@ -2663,7 +2663,7 @@ _XMATCH(lookup_value, lookup_array, [match_mode], [search_mode])_
 
 
 
-* lookup_value: The lookup value.   
+* lookup_value: The value to search for.  
 
 
 
@@ -2671,7 +2671,7 @@ _XMATCH(lookup_value, lookup_array, [match_mode], [search_mode])_
 
 
 
-* [match_mode] (Optional): Specify the match type:   
+* [match_mode] (Optional): Specifies the match type:   
 
 
 
@@ -2687,31 +2687,38 @@ _XMATCH(lookup_value, lookup_array, [match_mode], [search_mode])_
 
 
 
-  * 2 - A wildcard match where `*`, `?`, and `~` have special meaning.   
+  * 2 - Wildcard match using `*`, `?`, and `~`.
 
 
 
-* [search_mode] (Optional): Specify the search type:   
+* [search_mode] (Optional): Specifies the search order:   
 
 
 
-  * 1 - Search first-to-last (default).   
+  * 1 - Search from first to last (default).   
 
 
 
-  * -1 - Search last-to-first (reverse search).   
+  * -1 - Search from last to first.   
 
 
 
-  * 2 - Perform a binary search that relies on lookup_array being sorted in ascending order.   
+  * 2 - Binary search in ascending order (data must be sorted).  
 
 
 
-    If not sorted, invalid results will be returned.   
+  * -2 - Binary search in descending order (data must be sorted).
 
 
 
-  * -2 - Perform a binary search that relies on lookup_array being sorted in descending order. If not sorted, invalid results will be returned.   
+**Remarks:**
+
+
+* `XMATCH` is useful for retrieving the position of a value within a range, with more flexibility than `MATCH`.
+
+
+
+* It supports both normal and reverse search directions, as well as wildcard matching.
 
 
 
@@ -2719,7 +2726,7 @@ _XMATCH(lookup_value, lookup_array, [match_mode], [search_mode])_
 
 
 
-The `FLOOR.MATH` function rounds a number down to the nearest integer or to the nearest multiple of significance.
+The `FLOOR.MATH` function rounds a number down to the nearest integer or a specified multiple of significance.
 
 
 
@@ -2739,11 +2746,11 @@ _FLOOR.MATH(number, significance, mode)_
 
 
 
-* significance (Optional): The multiple to which you want to round.
+* significance (Optional):  The multiple to which to round down. Defaults to 1.
 
 
 
-* mode (Optional): The direction (toward or away from 0) to round negative numbers.
+* mode (Optional): Controls rounding of negative numbers. If omitted, negative numbers are rounded away from zero.
 
 
 
@@ -2751,30 +2758,27 @@ _FLOOR.MATH(number, significance, mode)_
 
 
 
-* By default, positive numbers with decimal portions are rounded down to the nearest integer. For example, 6.3 is rounded down to 6, using the default significance (1).
+* By default, positive numbers are rounded down to the nearest integer (e.g., 6.3 becomes 6).
 
 
 
-* By default, negative numbers with decimal portions are rounded away from 0 to the nearest integer. For example, -6.7 is rounded to -7.
+* Negative numbers are rounded away from zero unless the mode argument is used (e.g., -6.7 becomes -7, but with mode set to -1, -6.3 becomes -6).
 
 
 
-* By using 0 or a negative number as the mode argument, you can change the direction of the rounding for negative numbers. For example, rounding -6.3 with a significance of 1 and a mode of -1 rounds toward 0, to -6.
+* The significance argument defines the multiple to which the number is rounded down. For example, rounding 7.5 with a significance of 3 results in 6.
 
 
 
-* The significance argument rounds the number down to the nearest integer that is a multiple of the significance specified. The exception is where the number to be rounded is an integer. For example, for a significance of 3, the number is rounded down to the next integer that is a multiple of 3.
-
-
-
-* If number divided by a significance of 2 or greater results in a remainder, the result is rounded down.
+* If number divided by significance has a remainder, the result is rounded down.
 
 
 
 ## FLOOR.PRECISE
 
 
-The `FLOOR.PRECISE` function returns a number that is rounded down to the nearest integer or to the nearest multiple of significance. Regardless of the sign of the number, the number is rounded down. However, if the number or the significance is zero, zero is returned.
+
+The `FLOOR.PRECISE` function rounds a number down to the nearest integer or a specified multiple of significance, regardless of the sign.
 
 
 
@@ -2790,19 +2794,26 @@ _FLOOR.PRECISE(number, [significance])_
 
 
 
-* number: The value to be rounded.
+* number: The number to be rounded down.
 
 
 
-* significance (Optional): The multiple to which number is to be rounded. If omitted, the default value is 1.
-
+* significance (Optional): The multiple to which the number should be rounded. Defaults to 1.
 
 
 **Remarks:**
 
 
 
-* The absolute value of the multiple is used, so that the `FLOOR.PRECISE` function returns the mathematical floor irrespective of the signs of number and significance.
+* The absolute value of significance is used, meaning `FLOOR.PRECISE` always rounds down, regardless of whether the number is positive or negative.
+
+
+
+* If either the number or significance is zero, the function returns zero.
+
+
+
+* The rounding behavior remains consistent regardless of the signs of the number or significance.
 
 
 
@@ -2810,7 +2821,7 @@ _FLOOR.PRECISE(number, [significance])_
 
 
 
-The `ISO.CEILING` function returns a number that is rounded up to the nearest integer or to the nearest multiple of significance. Regardless of the sign of the number, the number is rounded up. However, if the number or the significance is zero, zero is returned.
+The `ISO.CEILING` function rounds a number up to the nearest integer or a specified multiple of significance. It always rounds up, regardless of whether the number is positive or negative. If the number or significance is zero, it returns zero.
 
 
 
@@ -2826,11 +2837,11 @@ _ISO.CEILING(number, [significance])_
 
 
 
-* number: The value to be rounded.
+* number: The value to be rounded up.
 
 
 
-* significance (Optional): The optional multiple to which number is to be rounded. If omitted, the default value is 1.
+* significance (Optional): The multiple to which number is to be rounded. If omitted, it defaults to 1.
 
 
 
@@ -2838,14 +2849,18 @@ _ISO.CEILING(number, [significance])_
 
 
 
-* The absolute value of the multiple is used, so that the `ISO.CEILING` function returns the mathematical ceiling irrespective of the signs of number and significance.
+* The absolute value of the multiple is used, meaning `ISO.CEILING` always rounds up, regardless of the sign of the number or significance.
+
+
+
+* If either number or significance is zero, the function returns zero.
 
 
 
 ## CEILING.PRECISE
 
 
-The function `CEILING.PRECISE` returns a number that is rounded up to the nearest integer or to the nearest multiple of significance. Regardless of the sign of the number, the number is rounded up. However, if the number or the significance is zero, zero is returned.
+The `CEILING.PRECISE` function rounds a number up to the nearest integer or a specified multiple of significance. Like ISO.CEILING, it always rounds up regardless of whether the number is positive or negative. If the number or significance is zero, it returns zero.
 
 
 
@@ -2861,18 +2876,22 @@ _CEILING.PRECISE(number, [significance])_
 
 
 
-* number: The value to be rounded.
+* number: The value to be rounded up.
 
 
 
-* significance (Optional): The multiple to which number is to be rounded. If omitted, the default value is 1.
+* significance (Optional): The multiple to which the number is rounded. If omitted, it defaults to 1.
 
 
 
 **Remarks:**
 
 
-* The absolute value of the multiple is used, so that the `CEILING.PRECISE` function returns the mathematical ceiling irrespective of the signs of number and significance.
+* `CEILING.PRECISE` uses the absolute value of the multiple, ensuring that the function rounds up regardless of the signs of the number or significance.
+
+
+
+* If the number or significance is zero, the result is zero.
 
 
 
@@ -2880,7 +2899,7 @@ _CEILING.PRECISE(number, [significance])_
 
 
 
-The `HSTACK` function appends arrays horizontally and in sequence to return a larger array.
+The `HSTACK` function combines arrays horizontally (side by side) to form a larger array.
 
 
 
@@ -2896,26 +2915,26 @@ _HSTACK(array1, [array2], ...)_
 
 
 
-* array: The arrays to append.
+* array: The arrays to be appended horizontally.
 
 
 
 **Remarks:**
 
 
-* `HSTACK` returns the array formed by appending each of the array arguments in a column-wise fashion. The resulting array will have the following dimensions:
+* `HSTACK` returns an array where each input array is appended in a column-wise fashion.
 
 
 
-  * Rows: The maximum of the row count from each of the array arguments.
+  * Rows: The number of rows in the result will be the maximum number of rows across all input arrays.
 
 
 
-  * Columns: The combined count of all the columns from each of the array arguments.
+  * Columns: The number of columns will be the sum of the columns from all input arrays.
 
 
-  
-* If an array has fewer rows than the maximum width of the selected arrays.
+
+* If an array has fewer rows than the maximum row count, `#N/A` will fill the missing rows. You can use the `IFERROR` function to handle these errors.
 
 
 
@@ -2927,7 +2946,7 @@ _HSTACK(array1, [array2], ...)_
 
 
 
-The function `VSTACK` Appends arrays vertically and in sequence to return a larger array.
+The function `VSTACK` appends arrays vertically (one below the other) to return a larger array.
 
 
 
@@ -2943,7 +2962,7 @@ _VSTACK(array1, [array2], ...)_
 
 
 
-* array: The arrays to append.
+* array: The arrays to be appended vertically.
 
 
 
@@ -2951,15 +2970,15 @@ _VSTACK(array1, [array2], ...)_
 
 
 
-* `VSTACK` returns the array formed by appending each of the array arguments in a row-wise fashion. The resulting array will have the following dimensions:
+* `VSTACK` returns an array where each input array is appended in a row-wise fashion.
 
 
 
-  * Rows: The combined count of all the rows from each of the array arguments.
+  * Rows: The result will have the combined number of rows from all input arrays.
 
 
 
-  * Columns: The maximum of the column count from each of the array arguments.
+  * Columns: The result will have the maximum column count of the input arrays.
 
 
 
@@ -2975,7 +2994,7 @@ _VSTACK(array1, [array2], ...)_
 
 
 
-The function `PHi` returns the value of the density function for a standard normal distribution.
+The `PHi` function returns the value of the probability density function for the standard normal distribution for a given number.
 
 
 
@@ -2991,7 +3010,7 @@ _PHIL(x)_
 
 
 
-* x: The number for which you want the density of the standard normal distribution.
+* x: The number for which the  probability density is calculated.
 
 
 
@@ -2999,8 +3018,8 @@ _PHIL(x)_
 
 
 
-* If x is a numeric value that is not valid, `PHI` returns the `#NUM!` error value.
+* If x is not a valid numeric value, `PHI` will return the `#NUM!` error.
 
 
 
-* If x is using a data type that is not valid, such as a nonnumeric value, `PHI` returns the `#VALUE!` error value.
+* If x of an invalid data type, `PHI` will return the `#VALUE!` error. 

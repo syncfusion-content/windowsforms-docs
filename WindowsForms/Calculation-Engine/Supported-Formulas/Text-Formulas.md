@@ -1127,7 +1127,7 @@ Remark:
 
 
 
-The `UNIQUE` function returns a list of unique values from a list or range.
+The `UNIQUE` function returns a list of unique values from a specified range or array.
 
 
 
@@ -1143,15 +1143,15 @@ _UNIQUE(array, [by_col], [exactly_once])_
 
 
 
-* array: The range or array from which to return unique rows or columns.
+* array: The range or array from which to return unique values.
 
 
 
-* [by_col] (Optional): A logical value indicating how to compare. If `TRUE` compares columns against each other and returns unique columns.If `FALSE` (or omitted) compares rows against each other and returns unique rows.
+* [by_col] (Optional): If `TRUE`, compares columns for uniqueness; if `FALSE` or omitted, compares rows.
 
 
 
-* [exactly_once] (Optional): A logical value that will return rows or columns that occur exactly once in the range or array.If `TRUE` returns all distinct rows or columns that occur exactly once.If `FALSE` (or omitted) returns all distinct rows or columns.
+* [exactly_once] (Optional): If `TRUE`, returns only values that appear exactly once; if `FALSE` or omitted, returns all distinct values.
 
 
 
@@ -1159,11 +1159,15 @@ _UNIQUE(array, [by_col], [exactly_once])_
 
 
 
-* An array can be thought of as a row or column of values, or a combination of rows and columns of values.
+* The result will spill into adjacent cells if it’s the final result of a formula.
 
 
 
-* The `UNIQUE` function returns an array that will spill into the appropriate number of cells if it's the final result of a formula.
+* If [exactly_once] is set to `TRUE`, values that appear more than once are excluded from the result.
+
+
+
+* If [by_col] is `TRUE`, the function evaluates unique columns instead of rows.
 
 
 
@@ -1171,7 +1175,7 @@ _UNIQUE(array, [by_col], [exactly_once])_
 
 
 
-The `TEXTAFTER` function returns text that occurs after a given character or string. It is the opposite of the `TEXTBEFORE` function.
+The `TEXTAFTER` function extracts the text that appears after a specified delimiter in a string.
 
 
 
@@ -1187,27 +1191,27 @@ _TEXTAFTER(text, delimiter, [instance_num], [match_mode], [match_end], [if_not_f
 
 
 
-* text: The text you are searching within. Wildcard characters are not allowed.
+* text: The input text to search within.
 
 
 
-* delimiter: The text that marks the point after which you want to extract.
+* delimiter: The text or character after which you want to extract.
 
 
 
-* [instance_num] (Optional): The instance of the delimiter after which you want to extract the text. By default, instance_num = 1. A negative number starts searching text from the end.
+* [instance_num] (Optional): The instance of the delimiter to search for. Defaults to 1 (first instance).
 
 
 
-* [match_mode] (Optional): Determines whether the text search is case-sensitive. The default is case-sensitive. If 0 - Case-sensitive, if 1 - Case-insensitive.
+* [match_mode] (Optional): Determines if the search is case-sensitive (0 for case-sensitive, 1 for case-insensitive).
 
 
 
-* [match_end]: Optional. Treats the end of the text as a delimiter. By default, the text is an exact match. If 0 - Don't match the delimiter against the end of the text, if 1 - Match the delimiter against the end of the text.
+* [match_end] (Optional): If `TRUE`, treats the end of the text as a delimiter.
 
 
 
-* [if_not_found] (Optional): The value returned if no match is found. By default, `#N/A` is returned.
+* [if_not_found] (Optional): Value to return if the delimiter is not found. Defaults to `#N/A`.
 
 
 
@@ -1215,19 +1219,19 @@ _TEXTAFTER(text, delimiter, [instance_num], [match_mode], [match_end], [if_not_f
 
 
 
-* When searching with an empty delimiter value, `TEXTAFTER` matches immediately. It returns the entire text when searching from the front (if instance_num is positive) and empty text when searching from the end (if instance_num is negative).
+* If the delimiter is not found, a `#N/A` error is returned, unless [if_not_found] is specified.
 
 
 
-* `TEXTAFTER` returns a `#N/A` error if the delimiter isn't contained in text.
+* If [instance_num] equal to 0 or greater than the length of text, a `#VALUE!` error returned.
 
 
 
-* `TEXTAFTER` returns a `#VALUE!` error if instance_num = 0 or if instance_num is greater than the length of text.
+* The [instance_num] argument allows for both positive and negative numbers. Positive values search from the start, and negative values search from the end.
 
 
 
-* `TEXTAFTER` returns a `#N/A` error if instance_num is greater than the number of occurrences of the delimiter.
+* The function supports case-sensitive and case-insensitive search modes using the [match_mode] argument.
 
 
 
@@ -1236,7 +1240,7 @@ _TEXTAFTER(text, delimiter, [instance_num], [match_mode], [match_end], [if_not_f
 
 
 
-The `TEXTBEFORE` function returns text that occurs before a given character or string. It is the opposite of the `TEXTAFTER` function.
+The `TEXTBEFORE` function extracts the text that appears before a specified delimiter in a string.
 
 
 
@@ -1252,27 +1256,27 @@ _TEXTBEFORE(text, delimiter, [instance_num], [match_mode], [match_end], [if_not_
 
 
 
-* text: The text you are searching within. Wildcard characters are not allowed. If text is an empty string, `TEXTBEFORE` returns empty text.
+* text: The input text to search within.
 
 
 
-* delimiter: The text that marks the point before which you want to extract.
+* delimiter: The text or character before which you want to extract.
 
 
 
-* [instance_num] (Optional): The instance of the delimiter after which you want to extract the text. By default, instance_num = 1. A negative number starts searching text from the end.
+* [instance_num] (Optional): The instance of the delimiter to search for. Defaults to 1 (first instance).
 
 
 
-* [match_mode] (Optional): Determines whether the text search is case-sensitive. The default is case-sensitive. If 0 - Case-sensitive, if 1 - Case-insensitive.
+* [match_mode] (Optional): Case-sensitivity control (0 for case-sensitive, 1 for case-insensitive).
 
 
 
-* [match_end] (Optional): Treats the end of the text as a delimiter. By default, the text is an exact match. If 0 - Don't match the delimiter against the end of the text, if 1 - Match the delimiter against the end of the text.
+* [match_end] (Optional):  If TRUE, treats the end of the text as a delimiter.
 
 
 
-* [if_not_found] (Optional): The value returned if no match is found. By default, #N/A is returned.
+* [if_not_found] (Optional): Value to return if the delimiter is not found. Defaults to #N/A.
 
 
 
@@ -1280,19 +1284,19 @@ _TEXTBEFORE(text, delimiter, [instance_num], [match_mode], [match_end], [if_not_
 
 
 
-* When searching with an empty delimiter value, `TEXTBEFORE` matches immediately. It returns empty text when searching from the front (if instance_num is positive) and the entire text when searching from the end (if instance_num is negative).
+* If the delimiter is not found, a #N/A error is returned, unless if_not_found is specified.
 
 
 
-* `TEXTBEFORE` returns a `#VALUE!` error if instance_num = 0 or if instance_num is greater than the length of text.
+* if [instance_num] is equal to 0 or greater than the length of text, a `#VALUE!` error returned.
 
 
 
-* `TEXTBEFORE` returns a `#N/A` error if the delimiter isn’t contained in text.
+* Similar to `TEXTAFTER`, negative [instance_num] values search from the end of the string.
 
 
 
-* `TEXTBEFORE` returns a `#N/A` error if instance_num is greater than the number of occurrences of the delimiter in text.
+* The function supports both case-sensitive and case-insensitive search modes using the [match_mode] argument.
 
 
 
@@ -1300,7 +1304,7 @@ _TEXTBEFORE(text, delimiter, [instance_num], [match_mode], [match_end], [if_not_
 
 
 
-The `VALUETOTEXT` function returns text from any specified value. It passes text values unchanged and converts non-text values to text.
+The `VALUETOTEXT` function converts a value into a text format.
 
 
 
@@ -1316,28 +1320,30 @@ _VALUETOTEXT(value, [format])_
 
 
 
-* value: The value to return as text.
+* value: The value to return to text.
 
 
 
-* [format] (Optional): The format of the returned data. It can be one of two values:
+* [format] (Optional): Determines the format:
 
 
 
-  * 0: Default. Concise format that is easy to read. The text returned will be the same as the text rendered in a cell that has general formatting applied.
+  * 0: Concise format (default).
 
 
 
-  * 1: Strict format that includes escape characters and row delimiters. Generates a string that can be parsed when entered into the formula bar. Encapsulates returned strings in quotes except for Booleans, Numbers, and Errors.
-
+  * 1: Strict format with escape characters for formulas.
 
 
 **Remarks:**
 
 
 
-* If `format` is anything other than 0 or 1, `VALUETOTEXT` returns the `#VALUE!` error value.
+* If an invalid format is provided, `#VALUE!` error is returned.
 
+
+
+* The concise format is human-readable, while the strict format preserves data structure.
 
 
 
@@ -1345,8 +1351,7 @@ _VALUETOTEXT(value, [format])_
 
 
 
-The `ARRAYTOTEXT` function returns an array of text values from any specified range. It passes text values unchanged and converts non-text values to text.
-
+The `ARRAYTOTEXT` function function converts an array into text.
 
 
 **Syntax:**
@@ -1361,19 +1366,19 @@ _ARRAYTOTEXT(array, [format])_
 
 
 
-* array: The array to return as text.
+* array: The array to convert to text.
 
 
 
-* [format] (Optional): The format of the returned data. It can be one of two values:
+* [format] (Optional): Determines the output format:
 
 
 
-  * 0: Default. Concise format that is easy to read. The text returned will be the same as the text rendered in a cell that has general formatting applied.
+  * 0: Concise format (default).
 
 
 
-  * 1: Strict format that includes escape characters and row delimiters. Generates a string that can be parsed when entered into the formula bar. Encapsulates returned strings in quotes except for Booleans, Numbers, and Errors.
+  * 1: Strict format with escape characters and row delimiters.
 
 
 
@@ -1381,11 +1386,11 @@ _ARRAYTOTEXT(array, [format])_
 
 
 
-* The concise format returns a list of values inside one cell, whereas the strict format returns an array of the same size and shape as the input.
+* The concise format displays the output within a single cell, while the strict format presents a more detailed array layout with escape characters.
 
 
 
-* If `format` is anything other than `0` or `1`, `ARRAYTOTEXT` returns the `#VALUE!` error value.
+* If the `format` argument is not 0 or 1, a `#VALUE!` error is returned.
 
 
 
@@ -1393,7 +1398,7 @@ _ARRAYTOTEXT(array, [format])_
 
 
 
-The `TOCOL` function returns the array in a single column.
+The `TOCOL` function transforms an array into a single column.
 
 
 
@@ -1409,47 +1414,46 @@ _TOCOL(array, [ignore], [scan_by_column])_
 
 
 
-* array: The array or reference to return as a column.
+* array: The array to convert into a column.
 
 
 
-* [ignore] (Optional): Whether to ignore certain types of values. By default, no values are ignored. Specify one of the following:
+* [ignore] (Optional): Specifies which values to ignore:
 
 
 
-  * 0: Keep all values (default)
+  * 0: Keep all values (default).
 
 
 
-  * 1: Ignore blanks
+  * 1: Ignore blanks.
 
 
 
-  * 2: Ignore errors
+  * 2: Ignore errors.
 
 
 
-  * 3: Ignore blanks and errors
+  * 3: Ignore blanks and errors.
 
 
 
-* [scan_by_column] (Optional): Scan the array by column. By default, the array is scanned by row. Scanning determines whether the values are ordered by row or by column.
-
+* [scan_by_column] (Optional): If `TRUE`, scans by column instead of by row.
 
 
 **Remarks:**
 
 
 
-* If scan_by_column is omitted or `FALSE`, the array is scanned by row; If `TRUE`, the array is scanned by column.
+* The function will return all values in a single column, even if the original array was multidimensional.
 
 
 
-* `TOCOL` returns a `#VALUE!` error when an array constant contains one or more numbers that are not a whole number.
+* If [scan_by_column] is set to `TRUE`, the function will scan the array by column; otherwise, it defaults to scanning by row.
 
 
 
-* `TOCOL` returns a `#NUM!` error when the array is too large.
+* If an array contains non-integer values, the function returns a `#VALUE!` error.
 
 
 
@@ -1457,7 +1461,7 @@ _TOCOL(array, [ignore], [scan_by_column])_
 
 
 
-The `TOROW` function returns the array in a single row.
+The `TOROW` function transforms an array into a single row.
 
 
 
@@ -1473,11 +1477,11 @@ _TOROW(array, [ignore], [scan_by_column])_
 
 
 
-* array: The array or reference to return as a row.
+* array: The array to convert into a row.
 
 
 
-* [ignore] (Optional): Whether to ignore certain types of values. By default, no values are ignored. Specify one of the following:
+* [ignore] (Optional): Specifies which values to ignore:
 
 
 
@@ -1485,19 +1489,19 @@ _TOROW(array, [ignore], [scan_by_column])_
 
 
 
-  * 1: Ignore blanks
+  * 1: Ignore blanks.
 
 
 
-  * 2: Ignore errors
+  * 2: Ignore errors.
 
 
 
-  * 3: Ignore blanks and errors
+  * 3: Ignore blanks and errors.
 
 
 
-* [scan_by_column] (Optional): Scan the array by column. By default, the array is scanned by row. Scanning determines whether the values are ordered by row or by column.
+* [scan_by_column] (Optional): If `TRUE`, scans by column.
 
 
 
@@ -1505,15 +1509,15 @@ _TOROW(array, [ignore], [scan_by_column])_
 
 
 
-* If scan_by_column is omitted or `FALSE`, the array is scanned by row; If `TRUE`, the array is scanned by column.
+* The function will return all values in a single row, even if the original array was multidimensional.
 
 
 
-* `TOROW` returns a `#VALUE!` error when an array constant contains one or more numbers that are not a whole number.
+* If [scan_by_column] is set to `TRUE`, the function will scan the array by column; otherwise, it defaults to scanning by row.
 
 
 
-* `TOROW` returns a `#NUM!` error when the array is too large.
+* If an array contains non-integer values, the function returns a `#VALUE!` error.
 
 
 
@@ -1521,7 +1525,7 @@ _TOROW(array, [ignore], [scan_by_column])_
 
 
 
-The `CHOOSECOLS` function returns the specified columns from an array.
+The `CHOOSECOLS` function returns specified columns from an array.
 
 
 
@@ -1537,29 +1541,32 @@ _CHOOSECOLS(array, col_num1, [col_num2], …)_
 
 
 
-* array: The array containing the columns to be returned in the new array.
+* array: The array containing columns to be selected.
 
 
 
-* col_num1: The first column to be returned.
+* col_num1: The index of the first column to return.
 
 
 
-* [col_num2] (Optional): Additional columns to be returned.
+* [col_num2] (Optional): Additional columns to return.
 
 
 
 **Remarks:**
 
 
-* `CHOOSECOLS` returns a `#VALUE!` error if the absolute value of any of the col_num arguments is zero or exceeds the number of columns in the array.
+* If any [col_num] is zero or exceeds the total number of columns, a `#VALUE!` error is returned.
 
+
+
+* The function is useful for extracting only certain columns from a large dataset.
 
 
 ## CHOOSEROWS
 
 
-The `CHOOSEROWS` function returns the specified rows from an array.
+The `CHOOSEROWS` function returns specified rows from an array.
 
 
 **Syntax:**
@@ -1571,19 +1578,23 @@ _CHOOSEROWS(array, row_num1, [row_num2], …)_
 **where:**
 
 
-* array: The array containing the rows to be returned in the new array.
+* array: The array containing the rows to be selected.
 
 
-* row_num1: The first row number to be returned.
+* row_num1: The index of the first row to return.
 
 
-* [row_num2] (Optional): Additional row numbers to be returned.
+* [row_num2] (Optional): Additional rows to return.
 
 
 **Remarks:**
 
 
-`CHOOSEROWS` returns a `#VALUE!` error if the absolute value of any of the row_num arguments is zero or exceeds the number of rows in the array.
+* A `#VALUE!` error occurs if any [row_num] exceeds the number of rows or is zero.
+
+
+
+* The function is useful for extracting specific rows from a dataset.
 
 
 
@@ -1591,7 +1602,7 @@ _CHOOSEROWS(array, row_num1, [row_num2], …)_
 
 
 
-The `SEQUENCE` function allows you to generate a list of sequential numbers in an array, such as 1, 2, 3, 4.
+The `SEQUENCE` function generates a sequence of numbers in an array.
 
 
 
@@ -1607,34 +1618,35 @@ _SEQUENCE(rows, [columns], [start], [step])_
 
 
 
-* rows: The number of rows to return. Required.
+* rows: The number of rows for the sequence.
 
 
 
-* [columns] (Optional): The number of columns to return.
+* [columns] (Optional): The number of columns.
 
 
 
-* [start] (Optional): The first number in the sequence.
+* [start] (Optional): The starting number.
 
 
 
-* [step] (Optional): The amount to increment each subsequent value in the array.
+* [step] (Optional): The increment for each number.
+
 
 
 **Remarks:**
 
 
 
-* Any missing optional arguments will default to 1. If you omit the rows argument, you must provide at least one other argument.
+* Defaults to 1 for all omitted optional arguments. If no start or step values are specified, the sequence starts at 1 and increments by 1.
 
 
 
-* An array can be thought of as a row of values, a column of values, or a combination of rows and columns of values. In the example above, the array for our SEQUENCE formula is range C1:G4.
+* The function spills the result into adjacent cells when it generates the array.
 
 
 
-* The `SEQUENCE` function will return an array, which will spill if it's the final result of a formula.
+* `SEQUENCE` can create multi-dimensional arrays by specifying both rows and columns.
 
 
 
@@ -1642,7 +1654,7 @@ _SEQUENCE(rows, [columns], [start], [step])_
 
 
 
-The `TEXTSPLIT` function splits text strings by using column and row delimiters.
+The `TEXTSPLIT` function splits text into arrays based on delimiters.
 
 
 
@@ -1658,27 +1670,27 @@ _TEXTSPLIT(text, col_delimiter, [row_delimiter], [ignore_empty], [match_mode], [
 
 
 
-* text: The text you want to split.
+* text: The input text to split.
 
 
 
-* col_delimiter: The text that marks the point where to spill the text across columns.
+* col_delimiter: The delimiter to split the text into columns.
 
 
 
-* [row_delimiter] (Optional): The text that marks the point where to spill the text down rows.
+* [row_delimiter] (Optional): The delimiter to split the text into rows.
 
 
 
-* [ignore_empty] (Optional): Specify `TRUE` to ignore consecutive delimiters. Defaults to `FALSE`, which creates an empty cell.
+* [ignore_empty] (Optional):  If `TRUE`, ignores consecutive delimiters. Defaults to `FALSE`.
 
 
 
-* [match_mode] (Optional): Specify 1 to perform a case-insensitive match. Defaults to 0, which does a case-sensitive match.
+* [match_mode] (Optional): If 1, performs a case-insensitive match. Defaults to 0 (case-sensitive).
 
 
 
-* [pad_with] (Optional): The value with which to pad the result. The default is `#N/A`.
+* [pad_with] (Optional): The value to use for padding missing elements. Defaults to `#N/A`.
 
 
 
@@ -1686,7 +1698,15 @@ _TEXTSPLIT(text, col_delimiter, [row_delimiter], [ignore_empty], [match_mode], [
 
 
 
-* If there is more than one delimiter, then an array constant must be used. For example, to split by both a comma and a period, use _TEXTSPLIT(A1,{",","."})_.
+* If no [row_delimiter] is provided, the function will only split by columns. You can use multiple delimiters by specifying an array of delimiters.
+
+
+
+* The [ignore_empty] option allows consecutive delimiters to be ignored, which is useful when parsing text that contains multiple delimiters.
+
+
+
+* The [pad_with] argument is used to fill in empty cells when the result array is not rectangular.
 
 
 
@@ -1714,11 +1734,11 @@ _TAKE(array, rows, [columns])_
 
 
 
-* rows: The number of rows to take. A negative value takes from the end of the array.
+* rows: The number of rows to take. A negative value takes rows from the end of the array.
 
 
 
-* [columns] (Optional): The number of columns to take. A negative value takes from the end of the array.
+* [columns] (Optional): The number of columns to take. A negative value takes columns from the end of the array.
 
 
 
@@ -1726,11 +1746,15 @@ _TAKE(array, rows, [columns])_
 
 
 
-* `TAKE` returns a `#CALC!` error to indicate an empty array when either rows or columns is 0.
+* `TAKE` returns a `#CALC!` error if either rows or columns are set to 0, as this results in an empty array.
 
 
 
-* `TAKE` returns a `#NUM!` error when the array is too large.
+* If the specified array is too large, `TAKE` returns a `#NUM!` error.
+
+
+
+* The function allows easy extraction of portions of data, especially for summarizing or splitting tables.
 
 
 
@@ -1738,7 +1762,7 @@ _TAKE(array, rows, [columns])_
 
 
 
-The `DROP` function excludes a specified number of rows or columns from the start or end of an array. You might find this function useful to remove headers and footers in an Excel report to return only the data.
+The `DROP` function excludes a specified number of rows or columns from the start or end of an array. This function is useful for removing headers, footers, or sections of data in an array.
 
 
 
@@ -1752,6 +1776,7 @@ _DROP(array, rows, [columns])_
 
 **where:**
 
+Manivannan-E marked this conversation as resolved.
 
 
 * array: The array from which to drop rows or columns.
@@ -1762,7 +1787,7 @@ _DROP(array, rows, [columns])_
 
 
 
-* [columns] (Optional): The number of columns to exclude. A negative value drops from the end of the array.
+* [columns] (Optional): The number of columns to drop. A negative value drops columns from the end.
 
 
 
@@ -1770,19 +1795,22 @@ _DROP(array, rows, [columns])_
 
 
 
-* `DROP` returns a `#CALC!` error to indicate an empty array when rows or columns is 0.
+* A `#CALC!` error is returned if rows or columns are set to 0, creating an empty array.
 
 
 
-* `DROP` returns a `#NUM!` error when the array is too large.
+* If the array exceeds the allowed size limit, `DROP` returns a `#NUM!` error.
 
+
+
+* The function helps to clean up datasets, such as removing unnecessary columns or rows before analysis.
 
 
 ## EXPAND
 
 
 
-The `EXPAND` function expands or pads an array to specified row and column dimensions.
+The `EXPAND` function expands or pads an array to specified row and column.
 
 
 
@@ -1802,15 +1830,15 @@ _EXPAND(array, rows, [columns], [pad_with])_
 
 
 
-* rows: The number of rows in the expanded array. If missing, rows will not be expanded.
+* rows: The number of rows in the expanded array.
 
 
 
-* [columns] (Optional): The number of columns in the expanded array. If missing, columns will not be expanded.
+* [columns] (Optional): The number of columns in the expanded array.
 
 
 
-* [pad_with] (Optional): The value with which to pad. The default is `#N/A`.
+* [pad_with] (Optional): The value to pad with if the array is smaller than the target size. Defaults to `#N/A`.
 
 
 
@@ -1818,23 +1846,15 @@ _EXPAND(array, rows, [columns], [pad_with])_
 
 
 
-* If rows isn’t provided or is empty, the default value is the number of rows in the array argument.
+* If the rows or columns argument is less than the original array's dimensions, `EXPAND` will return a `#VALUE!` error.
 
 
 
-* If columns isn’t provided or is empty, the default value is the number of columns in the array argument.
+* Padded cells use the [pad_with] argument; if omitted, it defaults to `#N/A`.
 
 
 
-* `EXPAND` returns a `#VALUE!` error when the rows or columns argument is less than the rows or columns in the array argument.
-
-
-
-* `EXPAND` returns a `#N/A!` error in padded cells if pad_with is not provided.
-
-
-
-* `EXPAND` returns a `#NUM!` error when the array is too large.
+* Useful for filling or aligning datasets to match specific table structures.
 
 
 
@@ -1842,7 +1862,7 @@ _EXPAND(array, rows, [columns], [pad_with])_
 
 
 
-The `WRAPROWS` function wraps the provided row or column of values by rows after a specified number of elements to form a new array.
+The `WRAPROWS` function wraps a one-dimensional vector into rows after a specified number of elements to form a new array.
 
 
 **Syntax:**
@@ -1857,15 +1877,15 @@ _WRAPROWS(vector, wrap_count, [pad_with])_
 
 
 
-* vector: The vector or reference to wrap.
+* vector: The row or column of values to wrap.
 
 
 
-* wrap_count: The maximum number of values for each row.
+* wrap_count: The maximum number of elements in each row.
 
 
 
-* [pad_with] (Optional): The value with which to pad. The default is `#N/A`.
+* [pad_with] (Optional): The value used to fill in any remaining cells if the array cannot be evenly divided. Defaults to `#N/A`.
 
 
 
@@ -1873,29 +1893,26 @@ _WRAPROWS(vector, wrap_count, [pad_with])_
 
 
 
-* The elements of the vector are placed into a 2-dimensional array by row. Each row has wrap_count elements. The row is padded with pad_with if there are insufficient elements to fill it.
+* If the [wrap_count] is greater than the length of the vector, the vector is returned in a single row.
 
 
 
-* If wrap_count is greater than or equal to the number of elements in vector, then the vector is simply returned in a single row.
+* The function returns a `#VALUE!` error if the input is not a one-dimensional array.
 
 
 
-* `WRAPROWS` returns a `#VALUE!` error when vector is not a one-dimensional array.
+* If [wrap_count] is less than 1, a `#NUM!` error occurs.
 
 
-* `WRAPROWS` returns a `#NUM!` error when wrap_count is less than 1.
 
-
-* `WRAPROWS` returns a `#N/A!` error for each cell in the return array that has no results.
-
+* Cells that cannot be filled are assigned `#N/A`, unless otherwise specified with [pad_with].
 
 
 ## WRAPCOLS
 
 
 
-The `WRAPCOLS` function wraps the provided row or column of values by columns after a specified number of elements to form a new array.
+The `WRAPCOLS` function wraps a one-dimensional vector into columns after a specified number of elements to form a new array.
 
 
 
@@ -1911,15 +1928,15 @@ _WRAPCOLS(vector, wrap_count, [pad_with])_
 
 
 
-* vector: The vector or reference to wrap.
+* vector: The row or column of values to wrap.
 
 
 
-* wrap_count: The maximum number of values for each column.
+* wrap_count: The maximum number of elements in each column.
 
 
 
-* [pad_with] (Optional): The value with which to pad. The default is `#N/A`.
+* [pad_with] (Optional): The value used to fill in any remaining cells if the array cannot be evenly divided. Defaults to `#N/A`.
 
 
 
@@ -1927,23 +1944,17 @@ _WRAPCOLS(vector, wrap_count, [pad_with])_
 
 
 
-* The elements of the vector are placed into a 2-dimensional array by column. Each column has wrap_count elements. The column is padded with pad_with if there are insufficient elements to fill it.
+* If [wrap_count] exceeds the length of the vector, the vector is returned in a single column.
+
+
+* If the vector is not a one-dimensional array, a `#VALUE!` error is returned.
+
+
+* A `#NUM!` error occurs if [wrap_count] is less than 1.
 
 
 
-* If wrap_count is greater than or equal to the number of elements in vector, then the vector is simply returned in a single column.
-
-
-
-* `WRAPCOLS` returns a `#VALUE!` error when vector is not a one-dimensional array.
-
-
-
-* `WRAPCOLS` returns a `#NUM!` error when wrap_count is less than 1.
-
-
-
-* `WRAPCOLS` returns a `#N/A!` error for each cell in the return array that has no results.
+* Empty cells in the new array are filled with `#N/A` unless specified otherwise.
 
 
 
@@ -1951,8 +1962,7 @@ _WRAPCOLS(vector, wrap_count, [pad_with])_
 
 
 
-The `SORT` function sorts the contents of a range or array.
-
+The `SORT` function sorts the contents of an array in either ascending or descending order.
 
 
 **Syntax:**
@@ -1967,19 +1977,19 @@ _SORT(array, [sort_index], [sort_order], [by_col])_
 
 
 
-* array: The range or array to sort. Required.
+* array: The array or range to sort.
 
 
 
-* [sort_index] (Optional): A number indicating the row or column to sort by.
+* [sort_index] (Optional): The index (row or column number) to sort by. Defaults to the first row/column.
 
 
 
-* [sort_order] (Optional): A number indicating the desired sort order; 1 for ascending order (default), -1 for descending order.
+* [sort_order] (Optional):  1 for ascending (default), -1 for descending.
 
 
 
-* [by_col] (Optional): A logical value indicating the desired sort direction; `FALSE` to sort by row (default), `TRUE` to sort by column.
+* [by_col] (Optional): `FALSE` (default) to sort by rows, or `TRUE` to sort by columns.
 
 
 
@@ -1987,27 +1997,15 @@ _SORT(array, [sort_index], [sort_order], [by_col])_
 
 
 
-* When sort_index is not provided, row1/col1 will be presumed.
+* When [sort_index] or [sort_order] is omitted, Excel defaults to sorting the first row or column in ascending order.
 
 
 
-* When sort_order is not provided, ascending order will be presumed.
+* `SORT` automatically spills the result into adjacent cells, making it convenient for dynamic arrays.
 
 
 
-* By default, `SORT` will sort by row, and will only sort by column when by_col is `TRUE`. When by_col is `FALSE` or missing, `SORT will sort by row.
-
-
-
-* The `SORT` function is provided to sort data in an array. If you want to sort data in the grid, it's better to use the `SORTBY` function, as it is more flexible.
-
-
-
-* An array can be thought of as a row of values, a column of values, or a combination of rows and columns of values.
-
-
-
-* The `SORT` function will return an array, which will spill if it's the final result of a formula. 
+* Use the `SORTBY` function when you need more flexible sorting based on multiple criteria.
 
 
 
@@ -2015,7 +2013,7 @@ _SORT(array, [sort_index], [sort_order], [by_col])_
 
 
 
-The `SORTBY` function sorts the contents of a range or array based on the values in a corresponding range or array.
+The `SORTBY` function sorts an array based on values in a separate corresponding array or range.
 
 
 
@@ -2031,23 +2029,19 @@ _SORTBY(array, by_array1, [sort_order1], [by_array2, sort_order2], …)_
 
 
 
-* array: The array or range to sort.
+* array: The array to sort.
 
 
 
-* by_array1: The array or range to sort on.
+* by_array1: The array or range to sort by.
 
 
 
-* [sort_order1] (Optional): The order to use for sorting. 1 for ascending, -1 for descending. Default is ascending.
+* [sort_order1] (Optional): 1 for ascending (default), -1 for descending.
 
 
 
-* [by_array2] (Optional): The array or range to sort on.
-
-
-
-* [sort_order2] (Optional): The order to use for sorting. 1 for ascending, -1 for descending. Default is ascending.
+* [by_array2], [sort_order2] (Optional): Additional arrays and their sort orders, if needed.
 
 
 
@@ -2055,11 +2049,19 @@ _SORTBY(array, by_array1, [sort_order1], [by_array2, sort_order2], …)_
 
 
 
-* An array can be thought of as a row of values, a column of values, or a combination of rows and columns of values.
+* The function allows sorting on multiple criteria.
 
 
 
-* The `SORTBY` function will return an array, which will spill if it's the final result of a formula. 
+* Results are returned in a dynamic array that spills into adjacent cells.
+
+
+
+* If no sort order is specified, Excel defaults to ascending order.
+
+
+
+* Unlike `SORT`, `SORTBY` enables sorting based on multiple, unrelated criteria or arrays.
 
 
 
@@ -2067,7 +2069,7 @@ _SORTBY(array, by_array1, [sort_order1], [by_array2, sort_order2], …)_
 
 
 
-The `FILTER` function allows you to filter a range of data based on criteria you define.
+The `FILTER` function returns an array of values filtered based on criteria you define.
 
 
 
@@ -2087,11 +2089,11 @@ _FILTER(array, include, [if_empty])_
 
 
 
-* include: A Boolean array whose height or width is the same as the array.
+* include: A Boolean array (same size as array) that indicates which values to keep.
 
 
 
-* [if_empty] (Optional): The value to return if all values in the included array are empty (filter returns nothing).
+* [if_empty] (Optional): The value to return if no results match the criteria. Defaults to a `#CALC!` error.
 
 
 
@@ -2099,16 +2101,12 @@ _FILTER(array, include, [if_empty])_
 
 
 
-* An array can be thought of as a row of values, a column of values, or a combination of rows and columns of values.
+* The `FILTER` function automatically spills the results into adjacent cells.
 
 
 
-* The `FILTER` function will return an array, which will spill if it's the final result of a formula.
+* If no matches are found, and [if_empty] is not defined, Excel returns a `#CALC!` error.
 
 
 
-* If your dataset has the potential of returning an empty value, then use the 3rd argument (`[if_empty]`). Otherwise, a `#CALC!` error will result, as Excel does not currently support empty arrays.
-
-
-
-* If any value of the include argument is an error (`#N/A`, `#VALUE`, etc.) or cannot be converted to a Boolean, the `FILTER` function will return an error.
+* `FILTER` will return an error if the include array is not Boolean, or if it contains errors such as `#N/A` or `#VALUE!`.
