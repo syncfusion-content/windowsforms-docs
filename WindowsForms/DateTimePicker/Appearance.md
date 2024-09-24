@@ -99,9 +99,9 @@ The following code snippets illustrates the same.
 
 ## Customize default calendar Icon in drop-down button
 
-The DateTimeIcon property in the SfDateTimeEdit control allows you to customize the calendar icon displayed. By setting this property, you can replace the default icon with your own image to better match the design of your application.
+The [DateTimeIcon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_DateTimeIcon) property in the SfDateTimeEdit control allows you to customize the calendar icon displayed in the drop-down button. By setting this property, you can replace the default icon with your own image, helping to match the design of your application.
 
-NOTE : The image provided should ideally be 16x16 pixels. If the image exceeds this size, it will be automatically resized to 16x16 pixels.
+Note: The recommended size for the custom image is 16x16 pixels. If the image is larger than this size, it will be automatically resized to 16x16 pixels.
 
 {% tabs %}
 
@@ -320,9 +320,9 @@ Before apply theme to SfDateTimeEdit, required theme assembly should be loaded a
 
 {% highlight C# %}
 
-using Syncfusion.WinForms.Controls;
+    using Syncfusion.WinForms.Controls;
 
-         static class Program
+    static class Program
     {
         /// <summary>
         /// The main entry point for the application.
@@ -341,7 +341,7 @@ using Syncfusion.WinForms.Controls;
 
 {% highlight VB %}
 
-Imports Syncfusion.WinForms.Controls
+    Imports Syncfusion.WinForms.Controls
 
     Friend Module Program
         ''' <summary>
