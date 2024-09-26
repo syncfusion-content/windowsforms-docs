@@ -141,7 +141,7 @@ End Sub
 ![Merging range of cells in Windows Forms DataGrid](Merging_images/Merging3.png)
 
 ## Merging cells based on the content
-The redundant data of adjacent cells in a row or a column can be merged by using the [QueryCoveredRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+The redundant data of adjacent cells in a row or a column can be merged by using the [QueryCoveredRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_QueryCoveredRange) event.
 In the following code, the `GetRange` method returns the range of a cell based on the adjacent cells content. 
 
 {% tabs %}
