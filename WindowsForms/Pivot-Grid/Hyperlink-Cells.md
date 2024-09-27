@@ -117,7 +117,7 @@ End Sub
 
 ## Events
 
-The **[HyperlinkCellClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html)** event occurs when the hyperlink cell gets clicked in the pivot grid control. This event receives an argument namely [HyperlinkCellClickEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.HyperlinkCellClickEventArgs.html), that contains the information about the hyperlink cell which is clicked.
+The **[HyperlinkCellClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControlBase_HyperlinkCellClick)** event occurs when the hyperlink cell gets clicked in the pivot grid control. This event receives an argument namely [HyperlinkCellClickEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.HyperlinkCellClickEventArgs.html), that contains the information about the hyperlink cell which is clicked.
 
 A demo sample is available in the following location.
 

@@ -91,8 +91,8 @@ Me.pivotGridControl1.BusyAnimationIcon = Nothing
 
 Following are the events that are available to indicate the status of asynchronous loading operations in pivot grid control.
 
-* The **[AsyncLoadStarted](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html)** event will be fired whenever the asynchronous operation gets started.
-* The **[AsyncLoadCompleted](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html)** event will be fired whenever the asynchronous operation gets completed.
+* The **[AsyncLoadStarted](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_AsyncLoadStarted)** event will be fired whenever the asynchronous operation gets started.
+* The **[AsyncLoadCompleted](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_AsyncLoadCompleted)** event will be fired whenever the asynchronous operation gets completed.
 
 Refer to the following code sample for handling asynchronous events.
 
