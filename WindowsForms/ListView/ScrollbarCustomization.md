@@ -18,7 +18,7 @@ The `SfListView` allows you to automatically show or hide horizontal and vertica
 
 {% highlight c# %}
 
-using Syncfusion.WinForms.ListView;
+   using Syncfusion.WinForms.ListView;
    
    namespace WindowsFormsApplication1
    {
@@ -37,15 +37,15 @@ using Syncfusion.WinForms.ListView;
 
 {% highlight vb %}
 
-Imports Syncfusion.WinForms.ListView
+   Imports Syncfusion.WinForms.ListView
    
    Namespace WindowsFormsApplication1
    	Partial Public Class Form1
    		Inherits Form
    		Public Sub New()
    			InitializeComponent()
-   			Dim listView As New SfListView()
-               sfListView1.AutoHideScrollBars = True  
+   			Dim sfListView1 As New SfListView()
+                        sfListView1.AutoHideScrollBars = True  
    		End Sub
    	End Class
    End Namespace
@@ -70,9 +70,9 @@ The `VerticalScrollBarVisible` property is used to show or hide the horizontal s
 
 {% highlight c# %}
 
-sfListView1.AutoHideScrollBars = False;
-sfListView1.HorizontalScrollBarVisible = True;
-sfListview1.VerticalScrollBarVisible = True;
+sfListView1.AutoHideScrollBars = false;
+sfListView1.HorizontalScrollBarVisible = true;
+sfListview1.VerticalScrollBarVisible = true;
 
 {% endhighlight %}
 
@@ -102,15 +102,15 @@ The <a href="https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Lis
 
 {% highlight c# %}
 
-this.sfListView1.HorizontalScrollIncrement = 5;
-this.sfListView1.VerticalScrollIncrement = 5;
+sfListView1.HorizontalScrollIncrement = 5;
+sfListView1.VerticalScrollIncrement = 5;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Me.sfListView1.HorizontalScrollIncrement = 5
-Me.sfListView1.VerticalScrollIncrement = 5
+sfListView1.HorizontalScrollIncrement = 5
+sfListView1.VerticalScrollIncrement = 5
 
 {% endhighlight %}
 
