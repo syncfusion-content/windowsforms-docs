@@ -393,4 +393,4 @@ sfDataGrid1.Style.BusyIndicatorImage = Image.FromFile("../../BusyIndicator.gif")
 
 [How to apply alternate backcolor for the rows in both parent and child grid in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/10221)
 
-[How to change the outermost border color of the WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9227)
+[How to change the outermost border color of the WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9227/how-to-change-the-outermost-border-color-of-the-winforms-datagrid-sfdatagrid)

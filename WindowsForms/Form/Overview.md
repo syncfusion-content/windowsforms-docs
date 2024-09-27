@@ -24,9 +24,9 @@ Following are the key features of the SfForm:
 
 Syncfusion WinForms suite comes up with the following different forms:
 
-* [SfForm](https://www.syncfusion.com/products/windows-forms/form)
-* [MetroForm](https://www.syncfusion.com/products/windows-forms/metroform)
-* [Office2007Form](https://www.syncfusion.com/products/windows-forms/office2007form)
+* [SfForm](https://www.syncfusion.com/winforms-ui-controls/form)
+* [MetroForm](https://www.syncfusion.com/winforms-ui-controls/metroform)
+* [Office2007Form](https://www.syncfusion.com/winforms-ui-controls/office2007form)
 
 ### SfForm
 
@@ -34,7 +34,7 @@ The [SfForm](https://help.syncfusion.com/windowsforms/sfform/overview) window co
 
 ### MetroForm
 
-[MetroForm](https://help.syncfusion.com/windowsforms/metroform/overview) is used to create customizable window for the end user's application. It supports various built-in skins and let the user to control its behavior and appearance.
+[MetroForm](https://help.syncfusion.com/windowsforms/metro-form/overview) is used to create customizable window for the end user's application. It supports various built-in skins and let the user to control its behavior and appearance.
 
 ### Office2007Form
 
