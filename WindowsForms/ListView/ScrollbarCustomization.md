@@ -8,24 +8,47 @@ documentation: ug
 ---
 
 # Scrollbar customization in Windows Forms ListView Control
-
-This section explains how to customize the scrollbar visibility in the SfListView.
+This section explains how to customize the scrollbar visibility and behavior in the SfListView control.
 
 ## AutoHideScrollBars
 
-SfListView allows to automatically show or hide horizontal and vertical scrollbars using the `AutoHideScrollBars` property. By default, `AutoHideScrollBars` will be set to true. This property manages scrollbar visibility based on content overflow. 
+The `SfListView` allows you to automatically show or hide horizontal and vertical scrollbars using the <a href="https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_AutoHideScrollBars">AutoHideScrollBars</a> property. By default, <a href="https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_AutoHideScrollBars">AutoHideScrollBars</a> is set to true. This property manages scrollbar visibility based on content overflow.
 
 {% tabs %}
 
 {% highlight c# %}
 
-sfListView1.AutoHideScrollBars = True;
+using Syncfusion.WinForms.ListView;
+   
+   namespace WindowsFormsApplication1
+   {
+       public partial class Form1 : Form
+       {
+           public Form1()
+           {
+               InitializeComponent();
+               SfListView sfListView1 = new SfListView ();
+               sfListView1.AutoHideScrollBars = true;
+           }
+       }
+   }
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-sfListView1.AutoHideScrollBars = True
+Imports Syncfusion.WinForms.ListView
+   
+   Namespace WindowsFormsApplication1
+   	Partial Public Class Form1
+   		Inherits Form
+   		Public Sub New()
+   			InitializeComponent()
+   			Dim listView As New SfListView()
+               sfListView1.AutoHideScrollBars = True  
+   		End Sub
+   	End Class
+   End Namespace
 
 {% endhighlight %}
 
@@ -33,15 +56,15 @@ sfListView1.AutoHideScrollBars = True
          
  ![ScrollbarCustomization](ScrollbarCustomization_images/ScrollbarCustomization_img1.png)       
                              
-## Customizing the Visibility of ScrollBars
+## Customizing Scrollbar Visibility
 
 ### HorizontalScrollBarVisible 
 
-`HorizontalScrollBarVisible` property is used to show/hide the horizontal scrollbar. When `AutoHideScrollBars` is set to false, the horizontal scrollbar visibility will depends on the `HorizontalScrollBarVisible` property.
+The `HorizontalScrollBarVisible` property is used to show or hide the horizontal scrollbar. When <a href="https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_AutoHideScrollBars">AutoHideScrollBars</a> is set to false, the visibility of the horizontal scrollbar will depend on the value of HorizontalScrollBarVisible.
 
 ### VerticalScrollBarVisible
 
-`VerticalScrollBarVisible` property is used to show/hide the horizontal scrollbar. When `AutoHideScrollBars` is set to false, the vertical scrollbar visibility will depends on the `VerticalScrollBarVisible` property.
+The `VerticalScrollBarVisible` property is used to show or hide the horizontal scrollbar. When <a href="https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_AutoHideScrollBars">AutoHideScrollBars</a> is set to false, the visibility of the vertical scrollbar will depend on the value of VerticalScrollBarVisible.
 
 {% tabs %}
 
@@ -65,15 +88,15 @@ sfListview1.VerticalScrollBarVisible = True
 
 ![ScrollbarCustomization](ScrollbarCustomization_images/ScrollbarCustomization_img2.png)
 
-## ScrollIncrement
+## Scroll Increments
 			
 ### HorizontalScrollIncrement
 
-`HorizontalScrollIncrement` property used to set the multiplier of mouse wheel scrolling while doing horizontal scroll. User can customize the increment value per mouse wheel using this property
+The `HorizontalScrollIncrement` property allows you to set the multiplier for mouse wheel scrolling during horizontal scrolling. This property lets users customize the increment value for each scroll step of the mouse wheel.
 
 ### VerticalScrollIncrement
 
-`VerticalScrollIncrement` property used to set the multiplier of mouse wheel scrolling while doing vertical scroll. User can customize the increment value per mouse wheel using this property.
+The <a href="https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_VerticalScrollIncrement">VerticalScrollIncrement</a> property allows you to set the multiplier for mouse wheel scrolling during vertical scrolling. Users can customize the increment value for each scroll step of the mouse wheel.
 
 {% tabs %}
 
