@@ -8,6 +8,7 @@ documentation: ug
 ---
 
 # Scrollbar customization in Windows Forms ListView Control
+
 This section explains how to customize the scrollbar visibility in the SfListView.
 
 ## AutoHideScrollBars
