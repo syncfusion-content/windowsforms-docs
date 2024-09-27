@@ -11,7 +11,7 @@ documentation: ug
 
 The IntegerTextBox is derived from the Windows Forms Framework TextBox control and can display integer data type values. It exhibits properties similar to that of the CurrencyTextBox.
 
-![Overview of Syncfusion IntegerTextBox](Overview_images/Overview_img438.png) 
+![Overview of Syncfusion Integer Text Box in WindowsForms](overview_images/windowsforms-interger-text-box.png) 
 
 ## Choose between different textbox controls
 
