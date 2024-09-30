@@ -77,4 +77,4 @@ this.controls.add(button);
 
 ![NETcore showing control output](NETcore_images/NETcore_controloutput.jpeg)
 
-Refer [this](https://help.syncfusion.com/windowsforms/visual-studio-integration/toolbox-configuration#configuring-toolbox-for-windows-forms-net-5060-projects-from-nuget-packages) documention link to configuring toolbox for Windows Forms .NET 6.0\8.0 projects from NuGet packages.
+Refer [this](https://help.syncfusion.com/windowsforms/visual-studio-integration/toolbox-configuration#configuring-toolbox-for-windows-forms-net-5060-projects-from-nuget-packages) documentation link to configuring toolbox for Windows Forms .NET 6.0\8.0 projects from NuGet packages.
