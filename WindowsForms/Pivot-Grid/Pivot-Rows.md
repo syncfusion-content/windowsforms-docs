@@ -152,7 +152,7 @@ End Class
 
 The height of the rows can be changed by using the `QueryRowHeight` event.
 
-Refer the below code sample to change the height of the rows by using the row index.
+Refer the below code sample to change the height of the rows by using the row indexes.
 
 {% tabs %}
 

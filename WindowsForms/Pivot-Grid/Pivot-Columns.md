@@ -152,7 +152,7 @@ End Class
 
 The width of the columns can be changed by using the `QueryColWidth` event.
 
-Refer the below code sample to change the width of the columns by using the column index.
+Refer the below code sample to change the width of the columns by using the column indexes.
 
 {% tabs %}
 
