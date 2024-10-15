@@ -185,3 +185,5 @@ End Sub
 {% endhighlight %}
 
 {% endtabs %}
+
+![Changing Row height in Winforms PivotGrid Control](Pivot-Columns_images/column.png)
