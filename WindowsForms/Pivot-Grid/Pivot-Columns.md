@@ -150,9 +150,9 @@ End Class
 
 ## Set Width for the columns
 
-The width of the columns can be changed by using the `QueryColWidth` event.
+The width of the columns can be changed using the `QueryColWidth` event.
 
-Refer the below code sample to change the width of the columns by using the column index.
+Refer the below code snippet to change the width of the columns by using the column index.
 
 {% tabs %}
 
@@ -175,7 +175,7 @@ pivotGridControl1.TableModel.QueryColWidth += TableModel_QueryColWidth;
 
 AddHandler pivotGridControl1.TableModel.QueryColWidth, AddressOf TableModel_QueryColWidth
 
-Private Sub TableModel_QueryColWidth(sender As Object, e As Syncfusion.Windows.Forms.Grid.GridRowColSizeEventArgs)
+Private Sub TableModel_QueryColWidth(ByVal sender As Object,ByVal e As Syncfusion.Windows.Forms.Grid.GridRowColSizeEventArgs)
     If e.Index > 2 Then
         e.Size = 150
         e.Handled = True

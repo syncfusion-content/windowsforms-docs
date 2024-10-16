@@ -150,9 +150,9 @@ End Class
 
 ## Set Height for the rows 
 
-The height of the rows can be changed by using the `QueryRowHeight` event.
+The height of the rows can be changed using the `QueryRowHeight` event.
 
-Refer the below code sample to change the height of the rows by using the row index.
+Refer the below code snippet to change the height of the rows by using the row index.
 
 {% tabs %}
 
@@ -175,7 +175,7 @@ private void TableModel_QueryRowHeight(object sender, Syncfusion.Windows.Forms.G
 
 AddHandler pivotGridControl1.TableModel.QueryRowHeight, AddressOf TableModel_QueryRowHeight
 
-Private Sub TableModel_QueryRowHeight(sender As Object, e As GridRowColSizeEventArgs)
+Private Sub TableModel_QueryRowHeight(ByVal sender As Object,ByVal e As GridRowColSizeEventArgs)
     If e.Index > 2 Then
         e.Size = 16
         e.Handled = True
