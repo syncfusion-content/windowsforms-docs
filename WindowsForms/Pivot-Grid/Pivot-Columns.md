@@ -147,3 +147,43 @@ End Class
 {% endhighlight %}
 
 {% endtabs %}
+
+## Set Width for the columns
+
+The width of the columns can be changed using the `QueryColWidth` event.
+
+Refer the below code snippet to change the width of the columns by using the column index.
+
+{% tabs %}
+
+{% highlight c# %}
+
+pivotGridControl1.TableModel.QueryColWidth += TableModel_QueryColWidth;
+
+ private void TableModel_QueryColWidth(object sender, Syncfusion.Windows.Forms.Grid.GridRowColSizeEventArgs e)
+ {
+     if (e.Index > 2) 
+     {
+         e.Size = 150;
+         e.Handled = true;
+     }
+ }    
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+AddHandler pivotGridControl1.TableModel.QueryColWidth, AddressOf TableModel_QueryColWidth
+
+Private Sub TableModel_QueryColWidth(ByVal sender As Object,ByVal e As Syncfusion.Windows.Forms.Grid.GridRowColSizeEventArgs)
+    If e.Index > 2 Then
+        e.Size = 150
+        e.Handled = True
+    End If
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Changing Row height in Winforms PivotGrid Control](Pivot-Columns_images/column.png)
