@@ -148,7 +148,7 @@ End Class
 
 {% endtabs %}
 
-## Set Height for the rows 
+## Set the height for the pivot rows 
 
 The height of the rows can be changed using the `QueryRowHeight` event.
 

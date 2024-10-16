@@ -148,7 +148,7 @@ End Class
 
 {% endtabs %}
 
-## Set Width for the columns
+## Set the width for the pivot columns
 
 The width of the columns can be changed using the `QueryColWidth` event.
 
