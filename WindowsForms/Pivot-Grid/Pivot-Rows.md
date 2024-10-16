@@ -150,9 +150,9 @@ End Class
 
 ## Set the height for the pivot rows 
 
-The height of the rows can be changed using the `QueryRowHeight` event.
+The height of the pivot rows can be changed using the `QueryRowHeight` event.
 
-Refer the below code snippet to change the height of the rows by using the row index.
+Refer the below code snippet to change the height of the pivot rows by using the row index.
 
 {% tabs %}
 

@@ -150,9 +150,9 @@ End Class
 
 ## Set the width for the pivot columns
 
-The width of the columns can be changed using the `QueryColWidth` event.
+The width of the pivot columns can be changed using the `QueryColWidth` event.
 
-Refer the below code snippet to change the width of the columns by using the column index.
+Refer the below code snippet to change the width of the pivot columns by using the column index.
 
 {% tabs %}
 
