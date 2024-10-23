@@ -264,7 +264,7 @@ The Standard base style can be used to make changes to all the cells in GridCont
 
 {% tabs %}
 {% highlight c# %}
-gridControl1..Model.BaseStylesMap["Standard"].StyleInfo.BackColor = Color.Aqua;
+gridControl1.Model.BaseStylesMap["Standard"].StyleInfo.BackColor = Color.Aqua;
 {% endhighlight %}
 
 {% highlight vb %}
