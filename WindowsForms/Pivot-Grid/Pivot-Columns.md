@@ -176,7 +176,7 @@ pivotGridControl1.TableModel.QueryColWidth += TableModel_QueryColWidth;
 AddHandler pivotGridControl1.TableModel.QueryColWidth, AddressOf TableModel_QueryColWidth
 
 Private Sub TableModel_QueryColWidth(ByVal sender As Object,ByVal e As Syncfusion.Windows.Forms.Grid.GridRowColSizeEventArgs)
-    If e.Index == 2 Then
+    If e.Index == 4 Then
         e.Size = 150
         e.Handled = True
     End If
