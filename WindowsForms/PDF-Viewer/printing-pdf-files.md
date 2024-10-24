@@ -289,4 +289,28 @@ namespace PrintEventsDemo
 {% endhighlight %}
 {% endtabs %}
 
+## Hide Print Status dialog when printing the PDF files
+
+PDF Viewer allows you to hide the following print status dialog when printing the PDF files by setting the value `false` to the [ShowPrintStatusDialog](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.PdfViewer.PdfViewerPrinterSettings.html#Syncfusion_Windows_PdfViewer_PdfViewerPrinterSettings_ShowPrintStatusDialog) property that is available in the [PrinterSettings](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_Forms_PdfViewer_PdfViewerControl_PrinterSettings).
+
+![Windows Forms PDF Viewer Hide Print Status Dialog](Working-with-PDF-Viewer_images/Working-with-PDF-Viewer_img4.png)
+
+It will be helpful if no UI interactions are required when printing. The following code shows how to hide the print status dialog using the [ShowPrintStatusDialog](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.PdfViewer.PdfViewerPrinterSettings.html#Syncfusion_Windows_PdfViewer_PdfViewerPrinterSettings_ShowPrintStatusDialog) property.
+
+{% tabs %}
+{% highlight c# %}
+
+// Hide Print Status dialog .
+pdfViewerControl1.PrinterSettings.ShowPrintStatusDialog = False;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+' Hide Print Status dialog .
+pdfViewerControl1.PrinterSettings.ShowPrintStatusDialog = False
+
+{% endhighlight %}
+{% endtabs %}
+
 N> The complete sample project of the Print Events is available in the [GitHub](https://github.com/SyncfusionExamples/WinForms-PDFViewer-Examples/tree/master/Printing/PrintEventsDemo).
