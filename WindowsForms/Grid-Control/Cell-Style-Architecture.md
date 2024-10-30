@@ -264,11 +264,11 @@ The Standard base style can be used to make changes to all the cells in GridCont
 
 {% tabs %}
 {% highlight c# %}
-gridControl1.Model.BaseStylesMap["Standard"].StyleInfo.BackColor = Color.Aqua;
+gridControl1.BaseStylesMap["Standard"].StyleInfo.BackColor = Color.Aqua;
 {% endhighlight %}
 
 {% highlight vb %}
-gridControl1.Model.BaseStylesMap("Standard").StyleInfo.BackColor = Color.Aqua
+gridControl1.BaseStylesMap("Standard").StyleInfo.BackColor = Color.Aqua
 {% endhighlight %}
 
 {% endtabs %}
@@ -281,11 +281,11 @@ The Header base style can be used to make changes only for the header cells that
 
 {% tabs %}
 {% highlight c# %}
-gridControl1.Model.BaseStylesMap["Header"].StyleInfo.TextColor = Color.Red;
+gridControl1.BaseStylesMap["Header"].StyleInfo.TextColor = Color.Red;
 {% endhighlight %}
 
 {% highlight vb %}
-gridControl1.Model.BaseStylesMap("Header").StyleInfo.TextColor = Color.Red
+gridControl1.BaseStylesMap("Header").StyleInfo.TextColor = Color.Red
 {% endhighlight %}
 
 {% endtabs %}
@@ -297,11 +297,11 @@ gridControl1.Model.BaseStylesMap("Header").StyleInfo.TextColor = Color.Red
 The Column Header base style can be used to make changes only in the column header cells that are present in the GridControl.
 {% tabs %} 
 {% highlight c# %}
-gridControl1.Model.BaseStylesMap["Column Header"].StyleInfo.TextColor = Color.Red;
+gridControl1.BaseStylesMap["Column Header"].StyleInfo.TextColor = Color.Red;
 {% endhighlight %}
 
 {% highlight vb %}
-gridControl1.Model.BaseStylesMap("Column Header").StyleInfo.TextColor = Color.DarkGreen
+gridControl1.BaseStylesMap("Column Header").StyleInfo.TextColor = Color.DarkGreen
 {% endhighlight %}
 
 {% endtabs %}
@@ -313,11 +313,11 @@ gridControl1.Model.BaseStylesMap("Column Header").StyleInfo.TextColor = Color.Da
 The Row Header base style can be used to make changes only in the row header cells that are available in the GridControl.
 {% tabs %}
 {% highlight c# %}
-gridControl1.Model.BaseStylesMap["Row Header"].StyleInfo.TextColor = Color.Red;
+gridControl1.BaseStylesMap["Row Header"].StyleInfo.TextColor = Color.Red;
 {% endhighlight %}
 
 {% highlight vb %}
-gridControl1.Model.BaseStylesMap("Row Header").StyleInfo.TextColor = Color.Orange
+gridControl1.BaseStylesMap("Row Header").StyleInfo.TextColor = Color.Orange
 {% endhighlight %}
 
 {% endtabs %}
@@ -333,7 +333,7 @@ Custom BaseStyles can be defined in GridControl by using the [GridBaseStyle](htt
 GridBaseStyle gridBaseStyle1 = new GridBaseStyle("BaseStyleTest", false);
 gridBaseStyle1.StyleInfo.BackColor = Color.SkyBlue;
 gridBaseStyle1.StyleInfo.TextColor = Color.RosyBrown;
-gridControl1.Model.BaseStylesMap.Add(gridBaseStyle1);
+gridControl1.BaseStylesMap.Add(gridBaseStyle1);
 
 //Applies this base style to couple of cells.
 gridControl1[2, 2].BaseStyle = "BaseStyleTest";
@@ -345,7 +345,7 @@ gridControl1[3, 2].BaseStyle = "BaseStyleTest";
 Dim gridBaseStyle1 As New GridBaseStyle("BaseStyleTest", False)
 gridBaseStyle1.StyleInfo.BackColor = Color.SkyBlue
 gridBaseStyle1.StyleInfo.TextColor = Color.RosyBrown
-gridControl1.Model.BaseStylesMap.Add(gridBaseStyle1)
+gridControl1.BaseStylesMap.Add(gridBaseStyle1)
 
 'Applies this base style to couple of cells.
 gridControl1(2, 2).BaseStyle = "BaseStyleTest"
