@@ -1,18 +1,19 @@
 ---
 layout: post
-title: How to make Winforms PdfViewer have enriched features like WPF PdfViewer | WinForms | Syncfusion
-description: Know how to Host the WPF PdfViewer in Windows Formd applications
+title: Enhance WinForms PdfViewer with WPF Features | WinForms | Syncfusion
+description: Learn how to integrate the WPF PdfViewer in Windows Forms to access advanced features like annotations, form filling, and signatures.
 platform: windowsforms
 control: PDF Viewer
 documentation: ug
 ---
-# How to make Winforms PdfViewer have enriched features like WPF PdfViewer
+# How to Add WPF PdfViewer Features to WinForms PdfViewer
 
 Currently the Syncfusion Windows Forms PdfViewer lacks support for the features, such as adding annotations, form filling, signatures, stamps, sticky notes, etc., which are available in the WPF PdfViewer.But we can integrate the WPF PdfViewer into the Windows Forms(How to host PDF Viewer in windows forms application?) to utilize the features that are not in the Windows Forms PdfViewer but are available in the WPF PdfViewer. For that first create a simple Windows Forms application
 
 Add the below code in the Form1.cs class (code behind) So that the embedding of the WPF PdfViewer into the Windows Forms will become ease. Use the below code in the Form1.cs class
 
 {% tabs %}
+
 {%highlight c#%}
 
 Public partial class Form1 : Form 
@@ -43,6 +44,7 @@ InitializeComponent()
 }
 
 {%endhighlight%}
+
 {% endtabs %}
 
 N>
