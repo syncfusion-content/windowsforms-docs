@@ -13,7 +13,7 @@ Currently the Syncfusion Windows Forms PdfViewer lacks support for the features,
 Add the below code in the Form1.cs class (code behind) So that the embedding of the WPF PdfViewer into the Windows Forms will become ease. Use the below code in the Form1.cs class
 
 {% tabs %}
-{%highlight c#%}
+{% highlight c# %}
 
 using System.Windows.Forms;
 using System.Windows.Forms.Integration;
