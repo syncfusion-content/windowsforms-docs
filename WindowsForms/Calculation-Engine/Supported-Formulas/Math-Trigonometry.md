@@ -2546,7 +2546,11 @@ The `XLOOKUP` function allows you to search for a value in a range and return a 
 
 For example, you can look up the price of an item by its ID or find an employee's name by their employee ID.   
 
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 664175cf483e78a9bac155018dbdc92b8216b891
 
 **Syntax:**
 
@@ -2599,7 +2603,10 @@ _XLOOKUP(lookup_value, lookup_array, return_array, [if_not_found], [match_mode],
 * [search_mode] (Optional): Specifies the search order:
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 664175cf483e78a9bac155018dbdc92b8216b891
   * 1 - Search from the first item (default).  
 
 
@@ -2702,12 +2709,20 @@ _XMATCH(lookup_value, lookup_array, [match_mode], [search_mode])_
 
   * 2 - Binary search in ascending order (data must be sorted).  
 
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 664175cf483e78a9bac155018dbdc92b8216b891
 
   * -2 - Binary search in descending order (data must be sorted).
 
 
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 664175cf483e78a9bac155018dbdc92b8216b891
 **Remarks:**
 
 
@@ -2774,7 +2789,10 @@ _FLOOR.MATH(number, significance, mode)_
 ## FLOOR.PRECISE
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 664175cf483e78a9bac155018dbdc92b8216b891
 The `FLOOR.PRECISE` function rounds a number down to the nearest integer or a specified multiple of significance, regardless of the sign.
 
 
@@ -2798,7 +2816,10 @@ _FLOOR.PRECISE(number, [significance])_
 * significance (Optional): The multiple to which the number should be rounded. Defaults to 1.
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 664175cf483e78a9bac155018dbdc92b8216b891
 **Remarks:**
 
 
@@ -2858,7 +2879,10 @@ _ISO.CEILING(number, [significance])_
 ## CEILING.PRECISE
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 664175cf483e78a9bac155018dbdc92b8216b891
 The `CEILING.PRECISE` function rounds a number up to the nearest integer or a specified multiple of significance. Like ISO.CEILING, it always rounds up regardless of whether the number is positive or negative. If the number or significance is zero, it returns zero.
 
 
@@ -2886,7 +2910,10 @@ _CEILING.PRECISE(number, [significance])_
 **Remarks:**
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 664175cf483e78a9bac155018dbdc92b8216b891
 * `CEILING.PRECISE` uses the absolute value of the multiple, ensuring that the function rounds up regardless of the signs of the number or significance.
 
 
@@ -2922,7 +2949,10 @@ _HSTACK(array1, [array2], ...)_
 **Remarks:**
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 664175cf483e78a9bac155018dbdc92b8216b891
 * `HSTACK` returns an array where each input array is appended in a column-wise fashion.
 
 

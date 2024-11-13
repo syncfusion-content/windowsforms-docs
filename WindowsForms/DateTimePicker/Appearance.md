@@ -130,11 +130,19 @@ The drop-down button in the SfDateTimeEdit allows you to open the pop-up calenda
 {% highlight C# %}
 
     //Enable the DropDown Button
+<<<<<<< HEAD
 
     this.dateTimeEdit.ShowDropDown = true;
 
     //Disable the DropDown Button
 
+=======
+    
+    this.dateTimeEdit.ShowDropDown = true;
+
+    //Disable the DropDown Button
+
+>>>>>>> 664175cf483e78a9bac155018dbdc92b8216b891
     this.dateTimeEdit.ShowDropDown = false;
 
 {% endhighlight  %}
@@ -143,11 +151,19 @@ The drop-down button in the SfDateTimeEdit allows you to open the pop-up calenda
 
     'Enable the DropDown Button
 
+<<<<<<< HEAD
      Me.dateTimeEdit.ShowDropDown = true
 
     'Disable the DropDown Button
 
      Me.dateTimeEdit.ShowDropDown = false
+=======
+    Me.dateTimeEdit.ShowDropDown = true
+
+    'Disable the DropDown Button
+
+    Me.dateTimeEdit.ShowDropDown = false
+>>>>>>> 664175cf483e78a9bac155018dbdc92b8216b891
 
 {% endhighlight  %}
 
@@ -399,7 +415,11 @@ This option helps to set the Office2016White Theme.
 
     // Office2016White
 
+<<<<<<< HEAD
     this.dateTimeEdit.ThemeName = "Office2016White";
+=======
+     this.dateTimeEdit.ThemeName = "Office2016White";
+>>>>>>> 664175cf483e78a9bac155018dbdc92b8216b891
 
 {% endhighlight  %}
 
@@ -407,6 +427,11 @@ This option helps to set the Office2016White Theme.
  
     ' Office2016White 
 
+<<<<<<< HEAD
+=======
+    ' Office2016White 
+
+>>>>>>> 664175cf483e78a9bac155018dbdc92b8216b891
     Me.dateTimeEdit.ThemeName = "Office2016White"
 
 {% endhighlight  %}
@@ -425,7 +450,11 @@ This option helps to set the Office2016DarkGray Theme.
 
     // Office2016DarkGray
 
+<<<<<<< HEAD
     this.dateTimeEdit.ThemeName = "Office2016DarkGray";
+=======
+     this.dateTimeEdit.ThemeName = "Office2016DarkGray";
+>>>>>>> 664175cf483e78a9bac155018dbdc92b8216b891
 
 {% endhighlight  %}
 
@@ -451,7 +480,11 @@ This option helps to set the Office2016Black Theme.
 
     // Office2016Black
 
+<<<<<<< HEAD
     this.dateTimeEdit.ThemeName = "Office2016Black";
+=======
+     this.dateTimeEdit.ThemeName = "Office2016Black";
+>>>>>>> 664175cf483e78a9bac155018dbdc92b8216b891
 
 {% endhighlight  %}
 
@@ -466,3 +499,5 @@ This option helps to set the Office2016Black Theme.
 {% endtabs %}
 
 ![SfDateTimeEdit Office2016Black appearance](appearance-images/Office2016Black.png)
+
+
