@@ -8,24 +8,19 @@ documentation: ug
 ---
 # How to Add WPF PdfViewer Features to WinForms PdfViewer
 
-To leverage the advanced features offered by the WPF PdfViewer, such as adding annotations, form filling, signatures, stamps, sticky notes, and more, you can [integrate the WPF PdfViewer into the Windows]( https://support.syncfusion.com/kb/article/7882/how-to-host-pdf-viewer-in-windows-forms-application ) and take advantage of its extensive feature sets.
+To leverage the advanced features offered by the WPF PdfViewer, such as adding annotations, form filling, signatures, stamps, sticky notes, and more, you can [integrate the WPF PdfViewer into the Windows Forms]( https://support.syncfusion.com/kb/article/7882/how-to-host-pdf-viewer-in-windows-forms-application ) and take advantage of its extensive feature sets.
 
 we can  host a WPF PdfViewer control within a Windows Forms application using an ElementHost. By embedding the WPF PdfViewer, you can access advanced features available in the WPF control while maintaining a Windows Forms interface.
 Below is an overview of the key components and steps involved in the implementation: 
-1. **Adding the ElementHost Control:**
-    * An ElementHost is a special Windows Forms control that allows hosting WPF elements within a Windows Forms application
-    * The elementHost is created and configured to fill a panel (panel1) within the Windows Forms application using properties such as DockStyle.Fill and AutoSize
 
-2. **Embedding the PdfViewer**
-    * Create a separate XAML file to define the WPF PdfViewer control
-	* PdfViewer in this example refers to the custom XAML file. This file defines the WPF PdfViewer control within a UserControl .
-	* The elementHost.Child property is set to an instance of this custom PdfViewer UserControl, thereby embedding the WPF PdfViewer into the Windows Forms application.
-
-3. **Styling and Layout**
-    * Additional configurations, such as setting margins, the background color, and the size of the elementHost, ensure the control fits seamlessly within the Windows Forms panel.
-	
-4. **Maximizing the Window**
-    * In the Form Load method, the Windows Forms application is set to launch in a maximized state for an optimal viewing experience.
+* Create an ElementHost object in the form1.cs.
+* Set the size of the elementHost variable to the panel size.
+* Add the elementHost to the panel Controls.
+* Create an another UserControl and add the WPF PdfViewer in the UserControl and load the required Pdf in it.
+* Create an object for the added UserControl class.
+* Assign the Created object as child for the elementHost.
+* Add required Styling like margin so that control fits correctly in the panel.
+* If you wabt to load the Pdfviewr in maximum state you can adjut the windows state in the Form_loaded event.
 
 Let's see the code that demonstrates how to host the WPF PdfViewer control within a Windows Forms application
 
@@ -74,8 +69,4 @@ namespace SampleWF
 
 {%endhighlight%}
 {% endtabs %}
-
-N>
- * ElementHost is a type that can be used to host a WPF control in a WinForms control. It acts as a container for the WPF control that needs to be hosted.
- * To use the ElementHost class, you must import the System.Windows.Forms.Integration namespace.
 
