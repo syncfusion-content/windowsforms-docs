@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Digital Clock in Windows Forms Clock control | Syncfusion
-description: Learn about Digital Clock support in Syncfusion Essential Studio Windows Forms Clock control and more details.
-platform: WindowsForms
+title: Digital clock in Windows Forms Clock Control | Syncfusion
+description: Learn about digital clock support in Syncfusion Essential Studio Windows Forms Clock control, its elements, and more.
+platform: windowsforms
 control: Clock-Control-for-Windows-Forms
 documentation: ug
 ---
 
-# Digital Clock in Windows Forms Clock
+# Digital clock in Windows Forms Clock
 
 The DigitalClock is implemented as an extension to the existing [Windows Forms Clock](https://www.syncfusion.com/winforms-ui-controls/clock) control in the UI controls, but offers a richer UI experience than the existing clock and is capable of displaying the time as digital text.
 

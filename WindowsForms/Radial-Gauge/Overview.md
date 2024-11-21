@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Windows Forms Radial Gauge control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms Radial Gauge control, its elements and more details.
-platform: WindowsForms
+title: Overview of Windows Forms Radial Gauge Control | Syncfusion
+description: Learn here all about overview of Syncfusion Windows Forms Radial Gauge control, its elements, and more details.
+platform: windowsforms
 control: Gauge
 documentation: ug
 ---
 
-# Windows Forms Radial Gauge (Gauge) Overview
+# Overview of Windows Forms Radial Gauge (Gauge)
 
 The Gauge control for Windows Forms is a data visualization tool that can be used to display several data points or data ranges in a precise and compact area. The data displayed in the control can be quickly understood by the user. Syncfusion’s Windows Forms library enables users to configure the Gauge control through C# codes. The Gauge control comes with sophisticated customization support.
 
