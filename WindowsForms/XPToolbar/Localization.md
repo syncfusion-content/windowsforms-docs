@@ -19,7 +19,7 @@ The below code snippet will explain how to set the localize text in **German** c
 
 this.parentBarItem1.Text = "Datei";
 this.dropDownBarItem1.Text = "Bearbeiten";
-this.barItem4.Text = "Aussicht";
+this.barItem4.Text = "Ansicht";
 this.barItem5.Text = "Projekt";
 this.comboBoxBarItem1.TextBoxValue = "Debuggen";
 this.barItem6.Text = "Hilfe";
@@ -30,7 +30,7 @@ this.barItem6.Text = "Hilfe";
 
 Me.parentBarItem1.Text = "Datei"
 Me.dropDownBarItem1.Text = "Bearbeiten"
-Me.barItem4.Text = "Aussicht"
+Me.barItem4.Text = "Ansicht"
 Me.barItem5.Text = "Projekt"
 Me.comboBoxBarItem1.TextBoxValue = "Debuggen"
 Me.barItem6.Text = "Hilfe"
