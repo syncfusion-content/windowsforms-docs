@@ -258,10 +258,10 @@ switch (name)
 {
 
 case Localizer.EditResourceIdentifiers.FRTitle:
-return "查找";
+return "替换";
 
 case Localizer.EditResourceIdentifiers.FRrdbSelection:
-return "全部替换";
+return "当前选定";
                 
 case Localizer.EditResourceIdentifiers.FRbtnReplace:
 return "替换";
@@ -270,16 +270,16 @@ case Localizer.EditResourceIdentifiers.FRbtnReplaceAll:
 return "全部替换";
 
 case Localizer.EditResourceIdentifiers.FRGroupTitle:
-return "全部替换";
+return "搜索";
 
 case Localizer.EditResourceIdentifiers.FRbtnClose:
-return "全部替换";
+return "关闭";
 
 case Localizer.EditResourceIdentifiers.FRlblFind:
-return "全部替换";
+return "查找内容";
 
 case Localizer.EditResourceIdentifiers.FRlblReplace:
-return "全部替换";
+return "替换";
 
 }
 
@@ -294,28 +294,28 @@ Public Function GetLocalizedString(ByVal culture AsSystem.Globalization.CultureI
 Select Case name
 
 Case Localizer.EditResourceIdentifiers.FRTitle
-Return "更换"
+Return "替换"
 
 Case Localizer.EditResourceIdentifiers.FRrdbSelection
-Return "全部替换"
+Return "当前选定"
                 
 Case Localizer.EditResourceIdentifiers.FRbtnReplace
-Return "更换"
+Return "替换"
                 
 Case Localizer.EditResourceIdentifiers.FRbtnReplaceAll
 Return "全部替换"
 
 Case Localizer.EditResourceIdentifiers.FRGroupTitle
-Return "全部替换"
+Return "搜索"
 
 Case Localizer.EditResourceIdentifiers.FRbtnClose
-Return "全部替换
+Return "关闭
 
 Case Localizer.EditResourceIdentifiers.FRlblFind
-Return "全部替换"
+Return "查找内容"
 
 Case Localizer.EditResourceIdentifiers.FRlblReplace
-Return "全部替换"
+Return "替换"
 
 End Select
 
