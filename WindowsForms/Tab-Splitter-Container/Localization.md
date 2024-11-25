@@ -40,27 +40,27 @@ LocalizationProvider.Provider = new Localizer();
                 ///
                 ///</summary>
                 case ToolsResourceIdentifiers.TabSplitterSwapPanes:
-                    return "Swap-Fenster";
+                    return "Tab-Teiler-Bereiche tauschen";
                 ///<summary> 
                 ///
                 ///</summary>
                 case ToolsResourceIdentifiers.TabSplitterVerticalSplit:
-                    return "Vertikale Teilung";
+                    return "Registerteiler-Vertikalteilung";
                 ///<summary> 
                 ///
                 ///</summary>
                 case ToolsResourceIdentifiers.TabSplitterHorizontalSplit:
-                    return "Horizontale Teilung";
+                    return "Registerteiler-Horizontale Teilung";
                 ///<summary> 
                 ///
                 ///</summary>
                 case ToolsResourceIdentifiers.TabSplitterExpandPane:
-                    return "Erweitern Sie den Bereich";
+                    return "Registerteiler-Bereich erweitern";
                 ///<summary> 
                 ///
                 ///</summary>
                 case ToolsResourceIdentifiers.TabSplitterCollapsePane:
-                    return "Fenster ausblenden";
+                    return "Registerteiler-Bereich minimieren";
 
 
                 ///<summary>
@@ -93,27 +93,27 @@ Public Class Localizer
         #
         Dim TabSplitterControl As region
         ToolsResourceIdentifiers.TabSplitterSwapPanes
-        Return "Swap-Fenster"
+        Return "Tab-Teiler-Bereiche tauschen"
         '''<summary> 
         '''
         '''</summary>
         ToolsResourceIdentifiers.TabSplitterVerticalSplit
-        Return "Vertikale Teilung"
+        Return "Registerteiler-Vertikalteilung"
         '''<summary> 
         '''
         '''</summary>
         ToolsResourceIdentifiers.TabSplitterHorizontalSplit
-        Return "Horizontale Teilung"
+        Return "Registerteiler-Horizontale Teilung"
         '''<summary> 
         '''
         '''</summary>
         ToolsResourceIdentifiers.TabSplitterExpandPane
-        Return "Erweitern Sie den Bereich"
+        Return "Registerteiler-Bereich erweitern"
         '''<summary> 
         '''
         '''</summary>
         ToolsResourceIdentifiers.TabSplitterCollapsePane
-        Return "Fenster ausblenden"
+        Return "Registerteiler-Bereich minimieren"
         '''<summary>
         ''' default
         '''</summary>

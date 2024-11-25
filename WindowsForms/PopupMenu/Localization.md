@@ -18,22 +18,22 @@ The below code snippet will explain how to set the localize text in **German** c
 {% highlight c# %}
 
 this.barItem1.Text = "Datei";
-this.barItem2.Text = "Schnitt";
+this.barItem2.Text = "Ausschneiden";
 this.barItem3.Text = "Kopieren";
 this.barItem4.Text = "Einfügen";
-this.parentBarItem2.Text = "Wählen";
-this.parentBarItem3.Text = "Wählen Sie Alle";
+this.parentBarItem2.Text = "Auswählen";
+this.parentBarItem3.Text = "Alles auswählen";
 
 {% endhighlight %}
 
 {% highlight vb %}
 
 Me.barItem1.Text = "Datei"
-Me.barItem2.Text = "Schnitt"
+Me.barItem2.Text = "Ausschneiden"
 Me.barItem3.Text = "Kopieren"
 Me.barItem4.Text = "Einfügen"
-Me.parentBarItem2.Text = "Wählen"
-Me.parentBarItem3.Text = "Wählen Sie Alle"
+Me.parentBarItem2.Text = "Auswählen"
+Me.parentBarItem3.Text = "Alles auswählen"
 
 {% endhighlight %}
 {% endtabs %}

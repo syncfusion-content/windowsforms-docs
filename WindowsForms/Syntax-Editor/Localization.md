@@ -104,35 +104,35 @@ return "schließen";
 
 case Localizer.EditResourceIdentifiers.FDbtnFind:
 
-return "finden";
+return "Weitersuchen";
 
 case Localizer.EditResourceIdentifiers.FDbtnMarkAll:
 
-return "markieren Sie alle";              
+return "Alle markieren";
 
 case Localizer.EditResourceIdentifiers.FDchkCase:
 
-return "übereinstimmen Fall";               
+return "Groß-/Kleinschreibung beachten";
 
 case Localizer.EditResourceIdentifiers.FDchkHidden:
 
-return "Suche hidden";
+return "Verborgenen Text suchen";
 
 case Localizer.EditResourceIdentifiers.FDchkRegular:
 
-return "Suche regelmäßige";
+return "Reguläre Ausdrücke verwenden";
 
 case Localizer.EditResourceIdentifiers.FDchkUp:
 
-return "Suche Up";
+return "Nach oben suchen";
 
 case Localizer.EditResourceIdentifiers.FDchkWholeWord:
 
-return "Ganzes Wort";
+return "Ganzen Wort suchen";
 
 case Localizer.EditResourceIdentifiers.FDchkWrap:
 
-return "Zeilenumbruch";
+return "Umbruch";
 
 case Localizer.EditResourceIdentifiers.FDGroupTitle:
 
@@ -140,19 +140,19 @@ return "Suchen";
 
 case Localizer.EditResourceIdentifiers.FDMain:
 
-return "Startseite";
+return "Nach was suchen:";
 
 case Localizer.EditResourceIdentifiers.FDrdbDocument:
 
-return "Document";
+return "Aktuelles Dokument";
 
 case Localizer.EditResourceIdentifiers.FDrdbSelection:
 
-return "Auswahl";
+return "Aktuelle Auswahl";
 
 case Localizer.EditResourceIdentifiers.FDTitle:
 
-return "Kommentar";
+return "Finden";
              
 default:
 
@@ -176,35 +176,35 @@ Return "schließen"
 
 Case Localizer.EditResourceIdentifiers.FDbtnFind
 
-Return "finden"
+Return "Weitersuchen"
 
 Case Localizer.EditResourceIdentifiers.FDbtnMarkAll
 
-Return "markieren Sie alle"
+Return "Alle markieren"
 
 Case Localizer.EditResourceIdentifiers.FDchkCase
 
-Return "übereinstimmen Fall"
+Return "Groß-/Kleinschreibung beachten"
 
 Case Localizer.EditResourceIdentifiers.FDchkHidden
 
-Return "Suche hidden"
+Return "Verborgenen Text suchen"
 
 Case Localizer.EditResourceIdentifiers.FDchkRegular
 
-Return "Suche regelmäßige"
+Return "Reguläre Ausdrücke verwenden"
 
 Case Localizer.EditResourceIdentifiers.FDchkUp
 
-Return "Suche Up"
+Return "Nach oben suchen"
 
 Case Localizer.EditResourceIdentifiers.FDchkWholeWord
 
-Return "Ganzes Wort"
+Return "Ganzen Wort suchen"
 
 Case Localizer.EditResourceIdentifiers.FDchkWrap
 
-Return "Zeilenumbruch"
+Return "Umbruch"
 
 Case Localizer.EditResourceIdentifiers.FDGroupTitle
 
@@ -212,19 +212,19 @@ Return "Suchen"
 
 Case Localizer.EditResourceIdentifiers.FDMain
 
-Return "Startseite"
+Return "Nach was suchen:"
 
 Case Localizer.EditResourceIdentifiers.FDrdbDocument
 
-Return "Document"
+Return "Aktuelles Dokument"
 
 Case Localizer.EditResourceIdentifiers.FDrdbSelection
 
-Return "Auswahl"
+Return "Aktuelle Auswahl"
 
 Case Localizer.EditResourceIdentifiers.FDTitle
 
-Return "Kommentar"
+Return "Finden"
 
 Case Else
 
@@ -258,13 +258,13 @@ switch (name)
 {
 
 case Localizer.EditResourceIdentifiers.FRTitle:
-return "更换";
+return "查找";
 
 case Localizer.EditResourceIdentifiers.FRrdbSelection:
 return "全部替换";
                 
 case Localizer.EditResourceIdentifiers.FRbtnReplace:
-return "更换";
+return "替换";
                 
 case Localizer.EditResourceIdentifiers.FRbtnReplaceAll:
 return "全部替换";
@@ -344,13 +344,13 @@ switch (name)
 {
 
 case Localizer.EditResourceIdentifiers.FGoTitle:
-return "去线";
+return "转到行";
 
 case Localizer.EditResourceIdentifiers.FGoNumber:
-return "电话号码{0}-{1}";
+return "行号（{0} - {1}）：";
 
 case Localizer.EditResourceIdentifiers.FGobtnOK:
-return "好";
+return "确定";
 
 case Localizer.EditResourceIdentifiers.FGobtnCancel:
 return "取消";
@@ -368,13 +368,13 @@ Public Function GetLocalizedString(ByVal culture AsSystem.Globalization.CultureI
 Select Case name
 
 Case Localizer.EditResourceIdentifiers.FGoTitle
-Return "去线"
+Return "转到行"
 
 Case Localizer.EditResourceIdentifiers.FGoNumber
-Return "电话号码{0}-{1}"
+Return "行号（{0} - {1}）："
 
 Case Localizer.EditResourceIdentifiers.FGobtnOK
-Return "好"
+Return "确定"
 
 Case Localizer.EditResourceIdentifiers.FGobtnCancel
 Return "取消"
@@ -409,100 +409,100 @@ public string GetLocalizedString(System.Globalization.CultureInfo culture, strin
                return "上下文菜单书签";
 
                 case Localizer.EditResourceIdentifiers.DEF_MENU_CLEARBOOKMARKS:
-                    return "清除书签";
+                    return "上下文菜单清除书签";
 
                 case Localizer.EditResourceIdentifiers.DEF_MENU_CLOSE:
-                    return "上下文菜单关";
+                    return "上下文菜单关闭";
 
                 case Localizer.EditResourceIdentifiers.DEF_MENU_COLLAPSEALL:
-                    return "上下文菜单坍方";
+                    return "上下文菜单全部折叠";
 
                 case Localizer.EditResourceIdentifiers.DEF_MENU_COMMENTSELECTION:
-                    return "上下文菜单评论选择";
+                    return "上下文菜单注释选定内容";
 
                 case Localizer.EditResourceIdentifiers.DEF_MENU_COPY:
-                    return "上文菜单评论";
+                    return "上下文菜单复制";
 
                 case Localizer.EditResourceIdentifiers.DEF_MENU_CUT:
-                    return "切";
+                    return "上下文菜单剪切";
 
                 case Localizer.EditResourceIdentifiers.DEF_MENU_DELETE:
-                    return "删除";
+                    return "上下文菜单删除";
 
                 case Localizer.EditResourceIdentifiers.DEF_MENU_DELETEALL:
-                    return "删除所有";
+                    return "上下文菜单删除全部";
 
                 case Localizer.EditResourceIdentifiers.DEF_MENU_EDIT:
-                    return "编辑";
+                    return "上下文菜单编辑";
 
                 case Localizer.EditResourceIdentifiers.DEF_MENU_FILE:
-                    return "文件";
+                    return "上下文菜单文件";
                     
                 case Localizer.EditResourceIdentifiers.DEF_MENU_EXPANDALL:
-                    return "展开全部";
+                    return "上下文菜单全部展开";
 
                 case Localizer.EditResourceIdentifiers.DEF_MENU_FIND:
-                    return "找";
+                    return "上下文菜单查找";
 
                 case Localizer.EditResourceIdentifiers.DEF_MENU_GOTO:
-                    return "去";
+                    return "上下文菜单转到";
 
                 case Localizer.EditResourceIdentifiers.DEF_MENU_INDENTSELECTION:
-                    return "缩进选择";
+                    return "上下文菜单缩进选定内容";
 
                 case Localizer.EditResourceIdentifiers.DEF_MENU_NEW:
-                    return "新";
+                    return "上下文菜单新建";
 
                 case Localizer.EditResourceIdentifiers.DEF_MENU_OPEN:
-                    return "打开打开";
+                    return "上下文菜单打开";
 
                 case Localizer.EditResourceIdentifiers.DEF_MENU_OPTIONS:
-                    return "打开";
+                    return "上下文菜单选项";
 
                 case Localizer.EditResourceIdentifiers.DEF_MENU_PREVBOOKMARK:
-                    return "上一个书签";
+                    return "上下文菜单上一个书签";
 
                 case Localizer.EditResourceIdentifiers.DEF_MENU_PRINT:
-                    return "打印";
+                    return "上下文菜单打印";
 
                 case Localizer.EditResourceIdentifiers.DEF_MENU_PRINTPREVIEW:
-                    return "打印预览";
+                    return "上下文菜单打印预览";
 
                 case Localizer.EditResourceIdentifiers.DEF_MENU_REDO:
-                    return "重做";
+                    return "上下文菜单重做";
 
                 case Localizer.EditResourceIdentifiers.DEF_MENU_REPLACE:
-                    return "更换";
+                    return "上下文菜单替换";
 
                 case Localizer.EditResourceIdentifiers.DEF_MENU_SAVE:
-                    return "保存";
+                    return "上下文菜单保存";
 
                 case Localizer.EditResourceIdentifiers.DEF_MENU_SAVEAS:
-                    return "另存为";
+                    return "上下文菜单另存为";
 
                 case Localizer.EditResourceIdentifiers.DEF_MENU_SELECTALL:
-                    return "全选";
+                    return "上下文菜单全选";
 
                 case Localizer.EditResourceIdentifiers.DEF_MENU_TABIFYSELECTION:
-                    return "主题";
+                    return "上下文菜单制表符选定内容";
 
                 case Localizer.EditResourceIdentifiers.DEF_MENU_TOGGLEBOOKMARK:
-                    return "切换书签";
+                    return "上下文菜单切换书签";
 
                 case Localizer.EditResourceIdentifiers.DEF_MENU_UNCOMMENTSELECTION:
-                    return "取消注释选择";
+                    return "上下文菜单取消注释选定内容";
 
                 case Localizer.EditResourceIdentifiers.DEF_MENU_UNDO:
-                    return "解开";
+                    return "上下文菜单撤销";
 
                 case Localizer.EditResourceIdentifiers.DEF_MENU_UNTABIFYSELECTION:
-                    return "未选择";
+                    return "上下文菜单取消制表符选定内容";
 
                 case Localizer.EditResourceIdentifiers.DEF_MENU_UNINDENTSELECTION:
-                    return "取消缩进";
+                    return "上下文菜单取消缩进选定内容";
 
                 case Localizer.EditResourceIdentifiers.DEF_MENU_ADVANCED:
-                    return "高级";
+                    return "上下文菜单高级";
       }
 
 }
@@ -519,100 +519,100 @@ Public Function GetLocalizedString(ByVal culture AsSystem.Globalization.CultureI
                     Return "上下文菜单书签"
 
                 Case Localizer.EditResourceIdentifiers.DEF_MENU_CLEARBOOKMARKS
-                    Return "清除书签"
+                    Return "上下文菜单清除书签"
 
                 Case Localizer.EditResourceIdentifiers.DEF_MENU_CLOSE
-                    Return "上下文菜单关"
+                    Return "上下文菜单关闭"
 
                 Case Localizer.EditResourceIdentifiers.DEF_MENU_COLLAPSEALL
-                    Return "上下文菜单坍方"
+                    Return "上下文菜单全部折叠"
 
                 Case Localizer.EditResourceIdentifiers.DEF_MENU_COMMENTSELECTION
-                    Return "上下文菜单评论选择"
+                    Return "上下文菜单注释选定内容"
 
                 Case Localizer.EditResourceIdentifiers.DEF_MENU_COPY
-                    Return "上文菜单评论"
+                    Return "上下文菜单复制"
 
                 Case Localizer.EditResourceIdentifiers.DEF_MENU_CUT
-                    Return "切"
+                    Return "上下文菜单剪切"
 
                 Case Localizer.EditResourceIdentifiers.DEF_MENU_DELETE
-                    Return "删除"
+                    Return "上下文菜单删除"
 
                 Case Localizer.EditResourceIdentifiers.DEF_MENU_DELETEALL
-                    Return "删除所有"
+                    Return "上下文菜单删除全部"
 
                 Case Localizer.EditResourceIdentifiers.DEF_MENU_EDIT
-                    Return "编辑"
+                    Return "上下文菜单编辑"
 
                 Case Localizer.EditResourceIdentifiers.DEF_MENU_FILE
-                    Return "文件"
+                    Return "上下文菜单文件"
                     
                 Case Localizer.EditResourceIdentifiers.DEF_MENU_EXPANDALL
-                    Return "展开全部"
+                    Return "上下文菜单全部展开"
 
                 Case Localizer.EditResourceIdentifiers.DEF_MENU_FIND
-                    Return "找"
+                    Return "上下文菜单查找"
 
                 Case Localizer.EditResourceIdentifiers.DEF_MENU_GOTO
-                    Return "去"
+                    Return "上下文菜单转到"
 
                 Case Localizer.EditResourceIdentifiers.DEF_MENU_INDENTSELECTION
-                    Return "缩进选择"
+                    Return "上下文菜单缩进选定内容"
 
                 Case Localizer.EditResourceIdentifiers.DEF_MENU_NEW
-                    Return "新"
+                    Return "上下文菜单新建"
 
                 Case Localizer.EditResourceIdentifiers.DEF_MENU_OPEN
-                    Return "打开打开"
+                    Return "上下文菜单打开"
 
                 Case Localizer.EditResourceIdentifiers.DEF_MENU_OPTIONS
-                    Return "打开"
+                    Return "上下文菜单选项"
 
                 Case Localizer.EditResourceIdentifiers.DEF_MENU_PREVBOOKMARK
-                    Return "上一个书签"
+                    Return "上下文菜单上一个书签"
 
                 Case Localizer.EditResourceIdentifiers.DEF_MENU_PRINT
-                    Return "打印"
+                    Return "上下文菜单打印"
 
                 Case Localizer.EditResourceIdentifiers.DEF_MENU_PRINTPREVIEW
-                    Return "打印预览"
+                    Return "上下文菜单打印预览"
 
                 Case Localizer.EditResourceIdentifiers.DEF_MENU_REDO
-                    Return "重做"
+                    Return "上下文菜单重做"
 
                 case Localizer.EditResourceIdentifiers.DEF_MENU_REPLACE
-                    Return "更换"
+                    Return "上下文菜单替换"
 
                 Case Localizer.EditResourceIdentifiers.DEF_MENU_SAVE
-                    Return "保存"
+                    Return "上下文菜单保存"
 
                 Case Localizer.EditResourceIdentifiers.DEF_MENU_SAVEAS
-                    Return "另存为"
+                    Return "上下文菜单另存为"
 
                 Case Localizer.EditResourceIdentifiers.DEF_MENU_SELECTALL
-                    Return "全选"
+                    Return "上下文菜单全选"
 
                 Case Localizer.EditResourceIdentifiers.DEF_MENU_TABIFYSELECTION
-                    Return "主题"
+                    Return "上下文菜单制表符选定内容"
 
                 Case Localizer.EditResourceIdentifiers.DEF_MENU_TOGGLEBOOKMARK
-                    Return "切换书签"
+                    Return "上下文菜单切换书签"
 
                 Case Localizer.EditResourceIdentifiers.DEF_MENU_UNCOMMENTSELECTION
-                    Return "取消注释选择"
+                    Return "上下文菜单取消注释选定内容"
 
                 Case Localizer.EditResourceIdentifiers.DEF_MENU_UNDO
-                    Return "解开"
+                    Return "上下文菜单撤销"
 
                 Case Localizer.EditResourceIdentifiers.DEF_MENU_UNTABIFYSELECTION
-                    Return "未选择"
+                    Return "上下文菜单取消制表符选定内容"
 
                 Case Localizer.EditResourceIdentifiers.DEF_MENU_UNINDENTSELECTION
-                    Return "取消缩进"
+                    Return "上下文菜单取消缩进选定内容"
 
                 Case Localizer.EditResourceIdentifiers.DEF_MENU_ADVANCED
-                    Return "高级"
+                    Return "上下文菜单高级"
 
 
       End Select
