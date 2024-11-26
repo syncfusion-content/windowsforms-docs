@@ -348,7 +348,7 @@ private void SfDataGrid1_AutoGeneratingColumn(object sender, AutoGeneratingColum
 }
 {% endhighlight %}
 {% highlight vb %}
-AddHandler sfDataGrid1.AutoGeneratingColumn, SfDataGrid1_AutoGeneratingColumn;
+AddHandler sfDataGrid1.AutoGeneratingColumn, AddressOf SfDataGrid1_AutoGeneratingColumn
 
 Private Sub SfDataGrid1_AutoGeneratingColumn(ByVal sender As Object, ByVal e As AutoGeneratingColumnArgs)
 	 If e.Column.MappingName = "OrderID" Then
