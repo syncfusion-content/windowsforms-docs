@@ -2,7 +2,7 @@
 layout: post
 title: Localization in Windows Forms Syntax Editor control | Syncfusion
 description: Learn about Localization support in Syncfusion Windows Forms Syntax Editor control and more details.
-platform: WindowsForms
+platform: WinForms
 control: SyntaxEditor
 documentation: ug
 ---
