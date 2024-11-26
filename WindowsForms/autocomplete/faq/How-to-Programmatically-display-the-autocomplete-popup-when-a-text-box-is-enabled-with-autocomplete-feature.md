@@ -2,7 +2,7 @@
 layout: post
 title: Display AutoComplete Popup Programmatically | WinForms | Syncfusion
 description: How to display the AutoComplete popup programmatically, when a textbox is enabled with AutoComplete feature
-platform: WinForms
+platform: Windows Forms
 control: Tools
 documentation: ug
 ---
