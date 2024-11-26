@@ -2,7 +2,7 @@
 layout: post
 title: Localization in Windows Forms xptoolbar control | Syncfusion
 description: Learn about Localization support in Syncfusion Windows Forms xptoolbar (XPToolbar) control and more details.
-platform: WindowsForms
+platform: WinForms
 control: XPToolBar
 documentation: ug
 ---

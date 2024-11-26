@@ -2,7 +2,7 @@
 layout: post
 title: Localization in Windows Forms Tab Splitter Container | Syncfusion
 description: Learn about Localization support in Syncfusion Windows Forms Tab Splitter Container control and more details.
-platform: WindowsForms
+platform: WinForms
 control: TabSplitterContainer
 documentation: ug
 ---
