@@ -11,18 +11,70 @@ documentation: ug
 To leverage the advanced features offered by the WPF PdfViewer, such as adding annotations, form filling, signatures, stamps, sticky notes, and more, you can [integrate the WPF PdfViewer into the Windows Forms]( https://support.syncfusion.com/kb/article/7882/how-to-host-pdf-viewer-in-windows-forms-application ) and take advantage of its extensive feature sets.
 
 we can  host a WPF PdfViewer control within a Windows Forms application using an ElementHost. By embedding the WPF PdfViewer, you can access advanced features available in the WPF control while maintaining a Windows Forms interface.
-Below is an overview of the key components and steps involved in the implementation: 
+To host the WPF PdfViewer in the winforms application follow the below steps,
 
-* Create an ElementHost object in the form1.cs.
-* Set the size of the elementHost variable to the panel size.
-* Add the elementHost to the panel Controls.
-* Create an another UserControl and add the WPF PdfViewer in the UserControl and load the required Pdf in it.
-* Create an object for the added UserControl class.
-* Assign the Created object as child for the elementHost.
-* Add required Styling like margin so that control fits correctly in the panel.
-* If you wabt to load the Pdfviewr in maximum state you can adjut the windows state in the Form_loaded event.
+1. Create an UserControl and add the below XAML code to it.
 
-Let's see the code that demonstrates how to host the WPF PdfViewer control within a Windows Forms application
+* Add the following Syncfusion namespace in XAML to make use of the WPF [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html)
+
+   ~~~xaml 
+   <UserControl
+        xmlns:PdfViewerUserControl="clr-namespace:Syncfusion.Windows.PdfViewer;assembly=Syncfusion.PdfViewer.WPF">
+   </UserControl>
+   ~~~
+* Declare the WPF [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) in the XAML page.
+
+  ~~~xaml
+  <UserControl x:Class="SampleWF.PdfViewer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SampleWF"
+             xmlns:Syncfusion="http://schemas.syncfusion.com/wpf"
+             mc:Ignorable="d" 
+             xmlns:PdfViewerUserControl="clr-namespace:Syncfusion.Windows.PdfViewer;assembly=Syncfusion.PdfViewer.WPF" 
+             Loaded="UserControl_Loaded"
+             >
+
+    <Grid>
+        <PdfViewerUserControl:PdfViewerControl  x:Name="pdfViewer"/>
+    </Grid>
+</UserControl>
+  ~~~
+ * Add the below line of codes in the code behind file.
+
+{% tabs %}
+{% highlight c# %}
+
+using System.Windows;
+using System.Windows.Controls;
+
+namespace SampleWF
+{
+    /// <summary>
+    /// Interaction logic for PdfViewer.xaml
+    /// </summary>
+    public partial class PdfViewer : UserControl
+    {
+        public PdfViewer()
+        {
+            InitializeComponent();
+        }
+
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            pdfViewer.Load(@"../../Data/Windows Store Apps Succinctly.pdf");            
+        }
+    }
+}
+
+{%endhighlight%}
+{% endtabs %}
+
+2. Create an ElementHost object in the Form and add the created UserControl's object as child to the ElementHost object.
+
+To do the above step follow the below procedures
 
 {% tabs %}
 {% highlight c# %}
