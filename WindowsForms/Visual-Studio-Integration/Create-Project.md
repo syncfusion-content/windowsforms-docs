@@ -23,7 +23,7 @@ Use the following steps to create the Syncfusion Windows Forms project through t
 1. To create a Syncfusion Windows Forms project, follow either one of the options below:  
     
    **Option 1:**  
-   Click **Syncfusion Menu** and choose **Essential Studio for WinForms > Create New Syncfusion Project…**  in **Visual Studio**.
+   Click **Syncfusion Menu** and choose **Essential Studio® for WinForms > Create New Syncfusion Project…**  in **Visual Studio**.
 
    ![Choose Syncfusion Windows Forms Application via Syncfusion menu](Project-Template-images\Syncfusion-menu.png)
 
@@ -56,7 +56,7 @@ Use the following steps to create the Syncfusion Windows Forms project through t
 
    **Language:** Select the language, either CSharp or VB.
 
-   **Reference From:** Choose the assembly location such as NuGet, GAC Location, or Essential Studio installed location, from where the assembly is added to the project.
+   **Reference From:** Choose the assembly location such as NuGet, GAC Location, or Essential Studio® installed location, from where the assembly is added to the project.
 
    N> Installed location and GAC option will be available only when the Syncfusion Essential Windows Forms setup has been installed. You can use NuGet option without installing the Syncfusion Essential Windows Forms setup.
 
@@ -74,6 +74,6 @@ Use the following steps to create the Syncfusion Windows Forms project through t
 
    ![Syncfusion Windows Forms project created with readme](Project-Template-images\Syncfusion-Project-Template-Gallery-9.PNG)
 
-5. Then, the Syncfusion licensing registration required message box will be shown, if you installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post to learn more the licensing changes introduced in Essential Studio.
+5. Then, the Syncfusion licensing registration required message box will be shown, if you installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio® release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post to learn more the licensing changes introduced in Essential Studio®.
 
    ![Syncfusion license registration required information dialog in Syncfusion Windows Forms Project](Project-Template-images\Syncfusion-Project-Template-Gallery-8.png)   
