@@ -33,12 +33,12 @@ To host the WPF PdfViewer in the winforms application follow the below steps,
              xmlns:local="clr-namespace:SampleWF"
              xmlns:Syncfusion="http://schemas.syncfusion.com/wpf"
              mc:Ignorable="d" 
-             xmlns:PdfViewerUserControl="clr-namespace:Syncfusion.Windows.PdfViewer;assembly=Syncfusion.PdfViewer.WPF" 
+             xmlns:PdfView="clr-namespace:Syncfusion.Windows.PdfViewer;assembly=Syncfusion.PdfViewer.WPF" 
              Loaded="UserControl_Loaded"
              >
 
     <Grid>
-        <PdfViewerUserControl:PdfViewerControl  x:Name="pdfViewer"/>
+        <PdfView:PdfViewerControl  x:Name="pdfViewer"/>
     </Grid>
 </UserControl>
   ~~~
@@ -55,7 +55,7 @@ namespace SampleWF
     /// <summary>
     /// Interaction logic for PdfViewer.xaml
     /// </summary>
-    public partial class PdfViewer : UserControl
+    public partial class PdfViewerUserControl : UserControl
     {
         public PdfViewer()
         {
@@ -101,9 +101,9 @@ namespace SampleWF
             panel1.Controls.Add(elementHost);
 			
             // Create the WPF PdfViewer control and assign it as a child of ElementHost
-            PdfViewer pdfViewer = new PdfViewer();
+            PdfViewerUserControl pdfViewerUserControl = new PdfViewerUserControl();
 			// Embeds the PdfViewer into the ElementHost
-            elementHost.Child = pdfViewer;
+            elementHost.Child = pdfViewerUserControl;
           
 		    // Set additional visual properties for a seamless look and feel
             elementHost.Margin = new Padding(0, 0, 0, 0);
