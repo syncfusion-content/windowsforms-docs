@@ -9,13 +9,13 @@ documentation: ug
 
 # Windows Forms Diagram Overview
 
-This section covers information on Essential Diagram control, its key features, and prerequisites to use the control, its compatibility with various OS and browsers and finally the documentation details complimentary with the product. It comprises the following sub sections:
+This section covers information on Essential® Diagram control, its key features, and prerequisites to use the control, its compatibility with various OS and browsers and finally the documentation details complimentary with the product. It comprises the following sub sections:
 
-## Introduction To Essential Diagram
+## Introduction To Essential® Diagram
 
-Essential Diagram is an extensible and high-performance .NET Diagramming Framework for Windows Applications. It can be used for developing Microsoft Visio-like interactive graphics and diagramming applications. It stores graphical objects in a node graph and renders those objects onto the screen. Essential Diagram supports both vector and raster graphics on the drawing surface.
+Essential® Diagram is an extensible and high-performance .NET Diagramming Framework for Windows Applications. It can be used for developing Microsoft Visio-like interactive graphics and diagramming applications. It stores graphical objects in a node graph and renders those objects onto the screen. Essential® Diagram supports both vector and raster graphics on the drawing surface.
 
-Essential Diagram lets users create interactive diagrams easily using the Diagram Builder utility included with the Diagram. It explicitly lays out diagram objects, or allows our built-in layout managers to handle the job, making complex layout diagrams a snap. Using the Symbol Designer utility, you can create domain or business specific symbols by using custom shapes and images.
+Essential® Diagram lets users create interactive diagrams easily using the Diagram Builder utility included with the Diagram. It explicitly lays out diagram objects, or allows our built-in layout managers to handle the job, making complex layout diagrams a snap. Using the Symbol Designer utility, you can create domain or business specific symbols by using custom shapes and images.
 
 
 ![Overview of WindowsForms Diagram](overview_images/windowsforms-diagram-overview.png)
@@ -24,12 +24,12 @@ Essential Diagram lets users create interactive diagrams easily using the Diagra
 
 ### Key Features
 
-Some of the key features of Essential Diagram are listed below.
+Some of the key features of Essential® Diagram are listed below.
 
-* Essential Diagram supports Matrix Transformations likeTranslate (Move), Rotate and Scale.
+* Essential® Diagram supports Matrix Transformations likeTranslate (Move), Rotate and Scale.
 * Shape nodes are the graphical objects that can be drawn on the diagram area by activating one of several drawing tools such as the RectangleTool, RoundRectTool, EllipseTool, LineTool, PolylineTool, OrthogonalLineTool, BezierTool, CurveTool, ArcTool and PolygonTool.
 * DecoratorShape can be added at the head and tail of Connectors. The shapes include arrows, circles, diamonds, crosses, squares and custom decorators.
-* Essential Diagram supports rendering TextNodes and RichTextNodes, and offers full text formatting through sufficient properties. Text editing and text rotation are also supported.
+* Essential® Diagram supports rendering TextNodes and RichTextNodes, and offers full text formatting through sufficient properties. Text editing and text rotation are also supported.
 * Zooming, scrolling, and panning are supported and can be achieved using sufficient interactive diagram tools.
 * Automatic Line Routing and Line Bridging: while a link is drawn between two nodes and if any other node is found in between them, the line will be automatically re-routed around those nodes.
 * The PrintDialog class enables the user to set the printer to be used, and allows to define the pages and the number of copies to be printed. 
@@ -49,7 +49,7 @@ The product comes with numerous samples as well as an extensive documentation to
 * Installation and Deployment - This section elaborates on the install location of the samples, license etc.
 * What's New - This section lists the new features implemented for every release.
 * Getting Started - This section guides you on getting started with Windows application, controls etc.
-* Concepts and Features - The features of Essential Diagram are illustrated with use case scenarios, code examples and screen shots under this section.
+* Concepts and Features - The features of Essential® Diagram are illustrated with use case scenarios, code examples and screen shots under this section.
 
 #### Document Conventions
 
@@ -91,7 +91,7 @@ Represents additional information on the topic</td></tr>
 
 ## Prerequisites and Compatibility
 
-This section covers the requirements mandatory for using Essential Diagram control. It also lists operating systems and browsers compatible with the product.
+This section covers the requirements mandatory for using Essential® Diagram control. It also lists operating systems and browsers compatible with the product.
 
 ### Prerequisites
 
@@ -127,7 +127,7 @@ Operating Systems</th></tr>
 ## Documentation
 
 
-Syncfusion® provides the following documentation segments to provide all necessary information for using Essential Diagram control in Windows application in an efficient manner.
+Syncfusion® provides the following documentation segments to provide all necessary information for using Essential® Diagram control in Windows application in an efficient manner.
 
 <table>
 <tr>

@@ -346,7 +346,7 @@ In the above code snippets, the properties are set to the Rectangular node (rect
 
 ## Dragging, Resizing, and Rotation Styles for Nodes
 
-Essential Diagram for Windows Forms provides dragging, resizing, and rotation styles such as ghost copy, filled rectangle, solid outline, and dashed outline for nodes. These styles provide better visual effects for your diagram and increase the performance speed of the diagram while dragging, rotating, or resizing nodes.
+Essential® Diagram for Windows Forms provides dragging, resizing, and rotation styles such as ghost copy, filled rectangle, solid outline, and dashed outline for nodes. These styles provide better visual effects for your diagram and increase the performance speed of the diagram while dragging, rotating, or resizing nodes.
 
 Properties Table
 

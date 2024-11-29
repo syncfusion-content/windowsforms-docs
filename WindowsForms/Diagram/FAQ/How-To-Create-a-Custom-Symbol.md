@@ -9,7 +9,7 @@ documentation: ug
 
 # How To Create a Custom Symbol
 
-The following code sample demonstrates how you can create a custom symbol and use it in Essential Diagram.
+The following code sample demonstrates how you can create a custom symbol and use it in Essential® Diagram.
 
 1. Create the custom symbol.
 

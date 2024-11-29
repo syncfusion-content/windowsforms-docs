@@ -12,7 +12,7 @@ documentation: ug
 
 ## Zooming Support
 
-One of the interactive features of Essential Diagram is its zooming capabilities. This feature allows you to interactively zoom in and out of the diagram in the following ways:
+One of the interactive features of Essential® Diagram is its zooming capabilities. This feature allows you to interactively zoom in and out of the diagram in the following ways:
 
 * Zoom to the center of the diagram.
 * Zoom to the top left of the diagram.
@@ -182,7 +182,7 @@ Me.diagram1.View.ZoomType = ZoomType.TopLeft
 
 #### Zooming to the Pointer Position
 
-Essential Diagram supports zooming the diagram document to the pointer position using Ctrl and the mouse wheel. 
+Essential® Diagram supports zooming the diagram document to the pointer position using Ctrl and the mouse wheel. 
 
 
 
@@ -192,7 +192,7 @@ Essential Diagram supports zooming the diagram document to the pointer position 
 
 #### ZoomTool
 
-Essential Diagram supports a UI tool called ZoomTool which is used to zoom and select the diagram document interactively. Users can use the ZoomTool’s MaximumMagnification and MinimumMagnification properties to restrict the document’s maximum or minimum zoom levels and use the ZoomIncrement property to specify the amount to zoom each time the diagram is zoomed in or out.
+Essential® Diagram supports a UI tool called ZoomTool which is used to zoom and select the diagram document interactively. Users can use the ZoomTool’s MaximumMagnification and MinimumMagnification properties to restrict the document’s maximum or minimum zoom levels and use the ZoomIncrement property to specify the amount to zoom each time the diagram is zoomed in or out.
 
 Zoom Tool Properties
 

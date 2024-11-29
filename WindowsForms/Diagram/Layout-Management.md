@@ -608,7 +608,7 @@ Sample diagram is as follows.
 
 ### OrgChart Alignment
 
-As the OrgChartLayout follows a Waterfall model, whenever there is only one child node, the layout will be widened. To overcome this, Essential diagram enables you to align the single child node parallel to the parent node, which will reduce the layout structure.
+As the OrgChartLayout follows a Waterfall model, whenever there is only one child node, the layout will be widened. To overcome this, Essential® diagram enables you to align the single child node parallel to the parent node, which will reduce the layout structure.
 
 
 {% tabs %}
@@ -628,7 +628,7 @@ Dim manager as New OrgChartLayoutManager(Me.diagram.Model,RotateDirection.TopToB
 
 Margin Properties for Layout Managers
 
-For all the Layout Managers supported by Essential Diagram, except _Symmetric and Table Layout Manager_, it is now possible to set the left and right margins for the graph that can be laid out by the layout manager. The two new properties, i.e, TopMargin and LeftMargin of the Layout Manager will set the margin for the graph using the following code snippet.
+For all the Layout Managers supported by Essential® Diagram, except _Symmetric and Table Layout Manager_, it is now possible to set the left and right margins for the graph that can be laid out by the layout manager. The two new properties, i.e, TopMargin and LeftMargin of the Layout Manager will set the margin for the graph using the following code snippet.
 
 
 {% tabs %}
@@ -650,7 +650,7 @@ manager.TopMargin = 50
 
 ### Improving performance
 
-The performance of most of the Essential Diagram Layout Managers is now improved to a great extent. The time taken for laying out a diagram, using a Layout Manager can now be reduced by setting the ImprovePerformance property to _true_.
+The performance of most of the Essential® Diagram Layout Managers is now improved to a great extent. The time taken for laying out a diagram, using a Layout Manager can now be reduced by setting the ImprovePerformance property to _true_.
 
 
 
