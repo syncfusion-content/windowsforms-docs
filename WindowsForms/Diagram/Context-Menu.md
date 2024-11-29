@@ -11,7 +11,7 @@ documentation: ug
 
 ### Built-in context menu
 
-The Essential Diagram of Windows Forms provides built-in context menu support to the Diagram.
+The Essential® Diagram of Windows Forms provides built-in context menu support to the Diagram.
 
 All available tools for the Diagram control such as File options, Edit options, Action options, Layout, Connectors, and Shapes are listed in the built-in context menu. 
 
