@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Layout Management in Windows Forms Diagram control | Syncfusion
-description: Learn about Layout Management support in Syncfusion Windows Forms Diagram control, its elements and more details.
+title: Layout Management in Windows Forms Diagram control | Syncfusion®
+description: Learn about Layout Management support in Syncfusion® Windows Forms Diagram control, its elements and more details.
 platform: windowsforms
 control: Diagram
 documentation: ug

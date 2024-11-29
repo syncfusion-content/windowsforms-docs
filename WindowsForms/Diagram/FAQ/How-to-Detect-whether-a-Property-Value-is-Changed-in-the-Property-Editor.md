@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Detect whether a Property Value is Changed  | Diagram | Windows Forms | Syncfusion
+title: How to Detect whether a Property Value is Changed  | Diagram | Windows Forms | Syncfusion®
 description: how to detect whether a property value is changed in the property editor?
 platform: windowsforms
 control: Diagram

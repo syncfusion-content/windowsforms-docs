@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Nodes or Shapes in Windows Forms Diagram control | Syncfusion
-description: Learn about Nodes or Shapes support in Syncfusion Windows Forms Diagram control, its elements and more details.
+title: Nodes or Shapes in Windows Forms Diagram control | Syncfusion®
+description: Learn about Nodes or Shapes support in Syncfusion® Windows Forms Diagram control, its elements and more details.
 platform: windowsforms
 control: Diagram
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Windows Forms Diagram control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms Diagram control, its elements, and more details.
+title: About Windows Forms Diagram control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® Windows Forms Diagram control, its elements, and more details.
 platform: windowsforms
 control: Diagram
 documentation: ug
@@ -39,7 +39,7 @@ Some of the key features of Essential Diagram are listed below.
 * It allows user to drag symbols onto diagrams 
 * It supports multiple symbol palettes at a time 
 * It has a user interface similar to Microsoft Outlook bar 
-* It is implemented based on the Syncfusion GroupBar and GroupView controls
+* It is implemented based on the Syncfusion® GroupBar and GroupView controls
 
 #### User Guide Organization
 
@@ -127,7 +127,7 @@ Operating Systems</th></tr>
 ## Documentation
 
 
-Syncfusion provides the following documentation segments to provide all necessary information for using Essential Diagram control in Windows application in an efficient manner.
+Syncfusion® provides the following documentation segments to provide all necessary information for using Essential Diagram control in Windows application in an efficient manner.
 
 <table>
 <tr>
@@ -137,11 +137,11 @@ Location</th></tr>
 <tr>
 <td>
 Readme</td><td>
-[drive:]\Program Files\Syncfusion\Essential Studio\x.x.x.x\Infrastructure\Data\Release Notes\readme.htm</td></tr>
+[drive:]\Program Files\Syncfusion®\Essential Studio\x.x.x.x\Infrastructure\Data\Release Notes\readme.htm</td></tr>
 <tr>
 <td>
 Release Notes</td><td>
-[drive:]\Program Files\Syncfusion\Essential Studio\x.x.x.x\Infrastructure\Data\Release Notes\Release Notes.htm</td></tr>
+[drive:]\Program Files\Syncfusion®\Essential Studio\x.x.x.x\Infrastructure\Data\Release Notes\Release Notes.htm</td></tr>
 <tr>
 <td>
 User Guide (this document)</td><td>

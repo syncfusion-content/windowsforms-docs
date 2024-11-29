@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To Display ToolTips For the Symbols | Diagram | Windows Forms | Syncfusion
+title: How To Display ToolTips For the Symbols | Diagram | Windows Forms | Syncfusion®
 description: how to display tooltips for the symbols
 platform: windowsforms
 control: Diagram
