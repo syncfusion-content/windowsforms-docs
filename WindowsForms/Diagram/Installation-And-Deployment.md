@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation-And-Deployment in Windows Forms Diagram | Syncfusion
-description: Learn here all about installation and deployment of Syncfusion Windows Forms Diagram control and more.
+title: Installation-And-Deployment in Windows Forms Diagram | Syncfusion®
+description: Learn here all about installation and deployment of Syncfusion® Windows Forms Diagram control and more.
 platform: windowsforms
 control: Diagram
 documentation: ug

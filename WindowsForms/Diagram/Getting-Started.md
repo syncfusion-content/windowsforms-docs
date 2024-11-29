@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Diagram control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms Diagram control, its elements, and more details.
+title: Getting Started with Windows Forms Diagram control | Syncfusion®
+description: Learn here about getting started with Syncfusion® Windows Forms Diagram control, its elements, and more details.
 platform: windowsforms
 control: Diagram
 documentation: ug
@@ -123,7 +123,7 @@ This section shows the step-by-step procedure to create a Diagram control progra
 To create a Diagram control using code:
 
 1. Create a new Windows Forms application.
-2. Add the following basic dependent Syncfusion assemblies to the project:
+2. Add the following basic dependent Syncfusion® assemblies to the project:
    * Syncfusion.Core.dll
    * Syncfusion.Diagram.Base.dll
    * Syncfusion.Diagram.Windows.dll
@@ -513,7 +513,7 @@ This section shows the step-by-step procedure to create a PaletteGroupBar contro
 To create a PaletteGroupBar control using code:
 
 1. Create a new Windows Forms application.
-2. Add the following basic dependent Syncfusion assemblies to the project:
+2. Add the following basic dependent Syncfusion® assemblies to the project:
    * Syncfusion.Core.dll
    * Syncfusion.Diagram.Base.dll
    * Syncfusion.Diagram.Windows.dll
@@ -612,7 +612,7 @@ This section shows the step-by-step procedure to create a PaletteGroupView contr
 To create a PaletteGroupView control using code:
 
 1. Create a new Windows Form application.
-2. Add the following basic dependent Syncfusion assemblies to the project:
+2. Add the following basic dependent Syncfusion® assemblies to the project:
    * Syncfusion.Core.dll
    * Syncfusion.Diagram.Base.dll
    * Syncfusion.Diagram.Windows.dll
@@ -706,7 +706,7 @@ This section shows the step-by-step procedure to create an Overview control prog
 To create an Overview control using code:
 
 1. Create a new Windows Forms application.
-2. Add the following basic dependent Syncfusion assemblies to the project:
+2. Add the following basic dependent Syncfusion® assemblies to the project:
    * Syncfusion.Core.dll
    * Syncfusion.Diagram.Base.dll
    * Syncfusion.Diagram.Windows.dll
@@ -790,7 +790,7 @@ This section shows the step-by-step procedure to create a PropertyEditor control
 To create a PropertyEditor control using code:
 
 1. Create a new Windows Forms application.
-2. Add the following basic dependent Syncfusion assemblies to the project:
+2. Add the following basic dependent Syncfusion® assemblies to the project:
    * Syncfusion.Core.dll
    * Syncfusion.Diagram.Base.dll
    * Syncfusion.Diagram.Windows.dll
@@ -876,7 +876,7 @@ This section shows the step-by-step procedure to create a DocumentExplorer contr
 To create a DocumentExplorer control using code:
 
 1. Create a new Windows Forms application.
-2. Add the following basic dependent Syncfusion assemblies to the project:
+2. Add the following basic dependent Syncfusion® assemblies to the project:
    * Syncfusion.Core.dll
    * [Syncfusion.Diagram.Base.dll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Diagram.Base.Wizard.html)
    * [Syncfusion.Diagram.Windows.dll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DiagramWindowsAssembly.html)
@@ -944,7 +944,7 @@ Overview Control provides a perspective view of a diagram model, and allows user
 
 2. Palette GroupBar and GroupView
 
-The PaletteGroupBar control provides a way for users to drag and drop symbols onto a diagram. It is based on the Syncfusion Essential Tools GroupBar control. Each symbol palette loaded in thePaletteGroupBar occupies a panel that can be selected by a bar button. The bar button is labeled with the name of the symbol palette. The symbols in the palette are shown as icons that can be dragged and dropped onto the diagram. This control allows users to add symbols to a palette, and save or load the palette whenever necessary. It provides a way to classify and maintain symbols.
+The PaletteGroupBar control provides a way for users to drag and drop symbols onto a diagram. It is based on the Syncfusion® Essential Tools GroupBar control. Each symbol palette loaded in thePaletteGroupBar occupies a panel that can be selected by a bar button. The bar button is labeled with the name of the symbol palette. The symbols in the palette are shown as icons that can be dragged and dropped onto the diagram. This control allows users to add symbols to a palette, and save or load the palette whenever necessary. It provides a way to classify and maintain symbols.
 
 The PaletteGroupView control provides an easy way to serialize a symbol palette to and from the resource file of a form. At design-time, users can attach a symbol palette to a PaletteGroupView control in the form. Selecting the PaletteGroupView and clicking the Palette property in the Visual Studio .NET Properties window will open a standard Open File dialog, which allows the user to select a symbol palette file that has been created with the Symbol Designer.
 For more details about these diagram controls, refer to the Palette GroupBar and GroupView topic.
@@ -2065,7 +2065,7 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
    * Creating a diagram control by using code.
 
-   To create a Diagram control using code, create a new Windows Forms application and add the following basic dependent Syncfusion assemblies to the project:
+   To create a Diagram control using code, create a new Windows Forms application and add the following basic dependent Syncfusion® assemblies to the project:
 
    * Syncfusion.Core.dll
    * Syncfusion.Diagram.Base.dll
