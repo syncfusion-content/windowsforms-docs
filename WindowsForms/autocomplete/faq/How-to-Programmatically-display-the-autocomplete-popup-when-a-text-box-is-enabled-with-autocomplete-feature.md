@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Programmatically Display AutoComplete Popup for Textbox?
 
-AutoComplete popup can be displayed programmatically.
+[AutoComplete popup](https://help.syncfusion.com/windowsforms/autocomplete/working-with-autocomplete#opening-the-autocomplete-popup-programmatically) can be displayed programmatically.
 
 The following code demonstrates the same.
 
