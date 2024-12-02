@@ -24,9 +24,29 @@ Here, TabSplitterContainer control is localized in German Language.
 
 //Call the Localizer
 
+private TabSplitterContainer tabSplitterContainer1 = new Syncfusion.Windows.Forms.Tools.TabSplitterContainer();
+private TabSplitterPage tabSplitterPage1 = new TabSplitterPage();
+private TabSplitterPage tabSplitterPage2 = new TabSplitterPage();
+
+this.tabSplitterPage1.Text = "XAML";
+this.tabSplitterPage2.Text = "Design";
+
+this.tabSplitterPage1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+this.tabSplitterPage2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+  
+this.tabSplitterContainer1.Location = new System.Drawing.Point(92, 70);
+this.tabSplitterContainer1.Name = "tabSplitterContainer2";
+this.tabSplitterContainer1.Size = new System.Drawing.Size(1189, 35);
+this.tabSplitterContainer1.SplitterBackColor = System.Drawing.SystemColors.Control;
+this.tabSplitterContainer1.SplitterPosition = 10;
+this.tabSplitterContainer1.PrimaryPages.AddRange(new TabSplitterPage[] { tabSplitterPage1 });
+this.tabSplitterContainer1.SecondaryPages.AddRange(new TabSplitterPage[] { tabSplitterPage2 });
+
 LocalizationProvider.Provider = new Localizer();
 
- // localizer inherits the interface of ILocationProvider
+this.Controls.Add(tabSplitterContainer1);
+
+    // localizer inherits the interface of ILocationProvider
     public class Localizer : ILocalizationProvider
     {
         #region ILocalizationProvider Members
@@ -78,9 +98,28 @@ LocalizationProvider.Provider = new Localizer();
 
 {% highlight VB %}
 
-'Call the Localizer
+Private tabSplitterContainer1 As New Syncfusion.Windows.Forms.Tools.TabSplitterContainer()
+Private tabSplitterPage1 As New TabSplitterPage()
+Private tabSplitterPage2 As New TabSplitterPage()
 
-LocalizationProvider.Provider = New Localizer
+tabSplitterPage1.Text = "XAML"
+tabSplitterPage2.Text = "Design"
+
+tabSplitterPage1.BackColor = System.Drawing.SystemColors.ControlLightLight
+tabSplitterPage2.BackColor = System.Drawing.SystemColors.ControlLightLight
+
+tabSplitterContainer1.Location = New System.Drawing.Point(92, 70)
+tabSplitterContainer1.Name = "tabSplitterContainer2"
+tabSplitterContainer1.Size = New System.Drawing.Size(1189, 35)
+tabSplitterContainer1.SplitterBackColor = System.Drawing.SystemColors.Control
+tabSplitterContainer1.SplitterPosition = 10
+tabSplitterContainer1.PrimaryPages.AddRange(New TabSplitterPage() {tabSplitterPage1})
+tabSplitterContainer1.SecondaryPages.AddRange(New TabSplitterPage() {tabSplitterPage2})
+
+'Call the Localizer
+LocalizationProvider.Provider = New Localizer()
+
+Me.Controls.Add(tabSplitterContainer1)
 
 '' localizer inherits the interface of ILocationProvider
 Public Class Localizer
