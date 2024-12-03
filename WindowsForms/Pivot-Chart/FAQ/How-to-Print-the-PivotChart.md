@@ -9,14 +9,12 @@ documentation: ug
 
 # How to Print the PivotChart
 
-The PivotChart has in-built support to print the pivotal data. This can be achieved by using the Print method available in the PrintDocument extension of PivotChart component.
+The pivot chart control includes built-in functionality for printing pivotal data, making it easy to create hard copies of charts. This is achieved using the Print method provided by the PrintDocument extension of the pivot chart component.
+
+To print the pivot chart, you can follow these steps using a print dialog:
 
 {% highlight C# %}
 
-
-
-
- 
 
 PrintDialog printDialog1 = new System.Windows.Forms.PrintDialog();
 

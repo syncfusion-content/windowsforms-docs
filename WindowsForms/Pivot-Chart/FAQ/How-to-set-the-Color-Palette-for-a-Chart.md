@@ -9,8 +9,9 @@ documentation: ug
 
 # How to set the Color Palette for a Chart
 
-Custom color Palette can be specified in PivotChart by using the CustomPalette color collection.
+Setting a custom color palette for a PivotChart allows you to tailor its visual appearance to better match your application's design or to emphasize specific data points. You can achieve this by specifying colors in the `CustomPalette` property.
 
+Here’s how you can set a custom color palette using C#:
 {% highlight C# %}
 
 
@@ -20,7 +21,7 @@ Custom color Palette can be specified in PivotChart by using the CustomPalette c
 this.pivotChart1.CustomPalette = new System.Drawing.Color[] {System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(203)))), ((int)(((byte)(216))))),System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(209)))), ((int)(((byte)(248))))),System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))))};
 {% endhighlight %}
 
-
+Here’s how you can set a custom color palette using VB.NET:
 {% highlight vbnet %}
 
  

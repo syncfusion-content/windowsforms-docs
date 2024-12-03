@@ -9,7 +9,9 @@ documentation: ug
 
 # Drill Operations in Windows Forms Pivot Chart
 
-Through expanders, you can drill down to the next level of hierarchy and drill up to the previous level. The pivot chart has built-in support to drill up and down the PivotSeries population. This behavior can be achieved by enabling the `AllowDrillDown` property.
+Pivot charts utilize expanders for efficient navigation of hierarchical data, allowing users to drill down into detailed levels or drill up for aggregated overviews. These interactive elements enable users to transition from broad summaries to intricate details, such as moving from an annual sales overview to quarterly, monthly, or daily trends, thereby uncovering deeper insights within datasets. The complementary drill-up function allows users to return to higher summary levels for comprehensive context, enhancing data exploration.
+
+This navigation capability can be easily activated in the pivot chart control through the `AllowDrillDown` property. By toggling this property, developers can facilitate intuitive hierarchical navigation across the PivotSeries population, providing users with seamless transitions between various data levels. This functionality is crucial for enabling flexible data analysis, ensuring that users can access the appropriate level of detail or summary as needed.
 
 {% highlight c# %}
 
