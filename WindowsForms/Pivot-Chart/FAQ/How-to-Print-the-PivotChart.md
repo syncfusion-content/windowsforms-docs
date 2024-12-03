@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Print the PivotChart | Windows Forms | Syncfusion
-description: How to Print the PivotChart
+description: How to Print in the Syncfusion Windows Forms Pivot Chart control that allows users to generate a copy of the chart.
 platform: windowsforms
 control: PivotChart
 documentation: ug

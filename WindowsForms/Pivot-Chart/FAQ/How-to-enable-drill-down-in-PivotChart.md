@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to enable drill down in PivotChart | Windows Forms | Syncfusion
-description: How to enable drill down in PivotChart
+description: How to enable drill down operations in Syncfusion Windows Forms Pivot Chart control that allow users to explore hierarchical data interactively by expanding and collapsing specific levels.
 platform: windowsforms
 control: PivotChart
 documentation: ug
