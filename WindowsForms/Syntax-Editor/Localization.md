@@ -65,13 +65,35 @@ Imports Syncfusion.Windows.Forms.ResourceIdentifiers
 {% tabs %}
 {% highlight c# %}
 
+private Syncfusion.Windows.Forms.Edit.EditControl editControl1;
+
+this.editControl1 = new Syncfusion.Windows.Forms.Edit.EditControl();
+
+this.editControl1.Size = new System.Drawing.Size(892, 595);
+this.editControl1.CodeSnipptSize = new System.Drawing.Size(100, 100);
+this.editControl1.Configurator = config1;
+this.editControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+    
 LocalizationProvider.Provider = new Localizer();
+
+this.Controls.Add(this.editControl1);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
+Private editControl1 As EditControl
+
+editControl1 = New EditControl()
+
+editControl1.Size = New System.Drawing.Size(892, 595)
+editControl1.CodeSnipptSize = New System.Drawing.Size(100, 100)
+editControl1.Configurator = config1
+editControl1.Dock = System.Windows.Forms.DockStyle.Fill
+
 LocalizationProvider.Provider = New Localizer()
+
+Me.Controls.Add(editControl1)
 
 {% endhighlight %}
 {% endtabs %} 
