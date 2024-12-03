@@ -2663,3 +2663,131 @@ _FREQUENCY(data_array, bins_array)_
 * If bins_array contains no values, `FREQUENCY` returns the total number of elements in data_array.
 
 * `FREQUENCY` ignores blank cells and text in data_array.
+
+## F.TEST
+
+The function `F.TEST` returns the two-tailed probability that the variances in two data sets (array1 and array2) are not significantly different.
+
+**Syntax**
+
+*F.TEST(array1, array2)*
+
+**Where:**
+
+* array1: The first array or range of numerical data.
+
+* array2: The second array or range of numerical data.
+
+**Remarks**
+
+*  The arguments must be either numbers or names, arrays, or references that contain numbers.
+
+* If an array or reference argument contains text, logical values, or empty cells, those values are ignored; however, cells with the value zero are included.
+
+* If the number of elements in array1 or array2 is less than 2, or if the variance of array1 or array2 is zero, `F.TEST` returns the `#DIV/0!` error.
+
+* `F.TEST` is an updated version of `FTEST`.
+
+## FTEST
+
+The function `FTEST` returns the two-tailed probability that the variances in two data sets (array1 and array2) are not significantly different.
+
+**Syntax**
+
+*FTEST(array1, array2)*
+
+**Where:**
+
+* array1: The first array or range of numerical data.
+
+* array2: The second array or range of numerical data.
+
+**Remarks**
+
+* The arguments must be either numbers or names, arrays, or references that contain numbers.
+
+* If an array or reference argument contains text, logical values, or empty cells, those values are ignored; however, cells with the value zero are included.
+
+* If the number of elements in array1 or array2 is less than 2, or if the variance of array1 or array2 is zero, `FTEST` returns the `#DIV/0!` error.
+
+## F.INV
+
+The function `F.INV` returns the inverse of the F probability distribution. If `p = F.DIST(x, ...)`, then `F.INV(p, ...) = x`. The F distribution is often used in an F-test to compare the variability in two data sets.
+
+**Syntax**
+
+*F.INV(probability, deg_freedom1, deg_freedom2)*
+
+**Where:**
+
+* probability: A probability associated with the F cumulative distribution.
+
+* deg_freedom1: The numerator degrees of freedom.
+
+* deg_freedom2: The denominator degrees of freedom.
+
+**Remarks**
+
+* If any argument is non-numeric, `F.INV` returns the `#VALUE!` error value.
+
+* If probability is less than 0 or probability is greater than 1, `F.INV` returns the `#NUM!` error.
+
+* If deg_freedom1 or deg_freedom2 is not an integer, it is truncated.
+
+* If deg_freedom1 or deg_freedom2 is less than 1, `F.INV` returns the `#NUM!` error.
+
+## BINOM.DIST.RANGE
+
+The function `BINOM.DIST.RANGE` returns the probability of a trial result using a binomial distribution.
+
+**Syntax**
+
+*BINOM.DIST.RANGE(trials, probability_s, number_s, [number_s2])*
+
+**Where:**
+
+* trials: The number of independent trials. Must be greater than or equal to 0.
+
+* probability_s: The probability of success in each trial. Must be greater than or equal to 0 and less than or equal to 1.
+
+* number_s: The number of successes in trials. Must be greater than or equal to 0 and less than or equal to trials.
+
+* number_s2 (optional): If provided, returns the probability that the number of successful trials will fall between number_s and number_s2. Must be greater than or equal to number_s and less than or equal to trials.
+
+**Remarks**
+
+* If any arguments are outside their constraints, `BINOM.DIST.RANGE` returns the `#NUM!` error.
+
+* If any arguments are non-numeric, `BINOM.DIST.RANGE` returns the `#VALUE!` error.
+
+* Numeric arguments are truncated to integers.
+
+## BETADIST
+
+The function `BETADIST` returns the cumulative beta probability density function.
+
+**Syntax**
+
+*BETADIST(x, alpha, beta, [A], [B])*
+
+**Where:**
+
+* x: The value between A and B at which to evaluate the function.
+
+* alpha: A parameter of the distribution.
+
+* beta: A parameter of the distribution.
+
+* A: Optional. A lower bound to the interval of x.
+
+* B: Optional. An upper bound to the interval of x.
+
+**Remarks**
+
+* If any argument is nonnumeric, `BETADIST` returns the `#VALUE!` error.
+
+* If alpha or beta less than or equal to 0 , `BETADIST` returns the `#NUM!` error.
+
+* If x less than A, x greater than B, or A equalss B, `BETADIST` returns the `#NUM!` error.
+
+* If A and B are ommitted, `BETADIST` uses the standard cumulative beta distribution, so that A = 0 and B = 1.
