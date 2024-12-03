@@ -2,7 +2,7 @@
 layout: post
 title: Localization in Windows Forms Tab Splitter Container | Syncfusion
 description: Learn about Localization support in Syncfusion Windows Forms Tab Splitter Container control and more details.
-platform: WindowsForms
+platform: windowsforms
 control: TabSplitterContainer
 documentation: ug
 ---
@@ -24,9 +24,29 @@ Here, TabSplitterContainer control is localized in German Language.
 
 //Call the Localizer
 
+private TabSplitterContainer tabSplitterContainer1 = new Syncfusion.Windows.Forms.Tools.TabSplitterContainer();
+private TabSplitterPage tabSplitterPage1 = new TabSplitterPage();
+private TabSplitterPage tabSplitterPage2 = new TabSplitterPage();
+
+this.tabSplitterPage1.Text = "XAML";
+this.tabSplitterPage2.Text = "Design";
+
+this.tabSplitterPage1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+this.tabSplitterPage2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+  
+this.tabSplitterContainer1.Location = new System.Drawing.Point(92, 70);
+this.tabSplitterContainer1.Name = "tabSplitterContainer2";
+this.tabSplitterContainer1.Size = new System.Drawing.Size(1189, 35);
+this.tabSplitterContainer1.SplitterBackColor = System.Drawing.SystemColors.Control;
+this.tabSplitterContainer1.SplitterPosition = 10;
+this.tabSplitterContainer1.PrimaryPages.AddRange(new TabSplitterPage[] { tabSplitterPage1 });
+this.tabSplitterContainer1.SecondaryPages.AddRange(new TabSplitterPage[] { tabSplitterPage2 });
+
 LocalizationProvider.Provider = new Localizer();
 
- // localizer inherits the interface of ILocationProvider
+this.Controls.Add(tabSplitterContainer1);
+
+    // localizer inherits the interface of ILocationProvider
     public class Localizer : ILocalizationProvider
     {
         #region ILocalizationProvider Members
@@ -40,27 +60,27 @@ LocalizationProvider.Provider = new Localizer();
                 ///
                 ///</summary>
                 case ToolsResourceIdentifiers.TabSplitterSwapPanes:
-                    return "Swap-Fenster";
+                    return "Tab-Teiler-Bereiche tauschen";
                 ///<summary> 
                 ///
                 ///</summary>
                 case ToolsResourceIdentifiers.TabSplitterVerticalSplit:
-                    return "Vertikale Teilung";
+                    return "Registerteiler-Vertikalteilung";
                 ///<summary> 
                 ///
                 ///</summary>
                 case ToolsResourceIdentifiers.TabSplitterHorizontalSplit:
-                    return "Horizontale Teilung";
+                    return "Registerteiler-Horizontale Teilung";
                 ///<summary> 
                 ///
                 ///</summary>
                 case ToolsResourceIdentifiers.TabSplitterExpandPane:
-                    return "Erweitern Sie den Bereich";
+                    return "Registerteiler-Bereich erweitern";
                 ///<summary> 
                 ///
                 ///</summary>
                 case ToolsResourceIdentifiers.TabSplitterCollapsePane:
-                    return "Fenster ausblenden";
+                    return "Registerteiler-Bereich minimieren";
 
 
                 ///<summary>
@@ -78,9 +98,28 @@ LocalizationProvider.Provider = new Localizer();
 
 {% highlight VB %}
 
-'Call the Localizer
+Private tabSplitterContainer1 As New Syncfusion.Windows.Forms.Tools.TabSplitterContainer()
+Private tabSplitterPage1 As New TabSplitterPage()
+Private tabSplitterPage2 As New TabSplitterPage()
 
-LocalizationProvider.Provider = New Localizer
+tabSplitterPage1.Text = "XAML"
+tabSplitterPage2.Text = "Design"
+
+tabSplitterPage1.BackColor = System.Drawing.SystemColors.ControlLightLight
+tabSplitterPage2.BackColor = System.Drawing.SystemColors.ControlLightLight
+
+tabSplitterContainer1.Location = New System.Drawing.Point(92, 70)
+tabSplitterContainer1.Name = "tabSplitterContainer2"
+tabSplitterContainer1.Size = New System.Drawing.Size(1189, 35)
+tabSplitterContainer1.SplitterBackColor = System.Drawing.SystemColors.Control
+tabSplitterContainer1.SplitterPosition = 10
+tabSplitterContainer1.PrimaryPages.AddRange(New TabSplitterPage() {tabSplitterPage1})
+tabSplitterContainer1.SecondaryPages.AddRange(New TabSplitterPage() {tabSplitterPage2})
+
+'Call the Localizer
+LocalizationProvider.Provider = New Localizer()
+
+Me.Controls.Add(tabSplitterContainer1)
 
 '' localizer inherits the interface of ILocationProvider
 Public Class Localizer
@@ -93,27 +132,27 @@ Public Class Localizer
         #
         Dim TabSplitterControl As region
         ToolsResourceIdentifiers.TabSplitterSwapPanes
-        Return "Swap-Fenster"
+        Return "Tab-Teiler-Bereiche tauschen"
         '''<summary> 
         '''
         '''</summary>
         ToolsResourceIdentifiers.TabSplitterVerticalSplit
-        Return "Vertikale Teilung"
+        Return "Registerteiler-Vertikalteilung"
         '''<summary> 
         '''
         '''</summary>
         ToolsResourceIdentifiers.TabSplitterHorizontalSplit
-        Return "Horizontale Teilung"
+        Return "Registerteiler-Horizontale Teilung"
         '''<summary> 
         '''
         '''</summary>
         ToolsResourceIdentifiers.TabSplitterExpandPane
-        Return "Erweitern Sie den Bereich"
+        Return "Registerteiler-Bereich erweitern"
         '''<summary> 
         '''
         '''</summary>
         ToolsResourceIdentifiers.TabSplitterCollapsePane
-        Return "Fenster ausblenden"
+        Return "Registerteiler-Bereich minimieren"
         '''<summary>
         ''' default
         '''</summary>
