@@ -1099,6 +1099,8 @@ _COUPNUM(settlement, maturity, frequency, [basis])_
 
 * The argument is non-numeric, it returns the `#VALUE!` error message.
 
+
+
 ## AMORLINC
 
 The function `AMORLINC` returns the depreciation for each accounting period, specifically designed for the French accounting system. If an asset is purchased in the middle of the accounting period, the prorated depreciation is considered.
@@ -1473,9 +1475,7 @@ The function `AMORDEGRC` returns the depreciation for each accounting period und
 
 * The depreciation rate increases to 50% for the period preceding the last and to 100% for the final period.  
 
-* The function returns `#NUM!` if:  
-
-  * The life of the asset is less than 1 year or falls into invalid ranges (e.g., between 0 and 1, 1 and 2, etc.).  
+* The function returns `#NUM!` if the life of the asset is less than 1 year or falls into invalid ranges (e.g., between 0 and 1, 1 and 2, etc.).  
 
 * Depreciation is calculated until the last period of the asset's life or until the cumulative depreciation equals the cost minus the salvage value.  
 
@@ -1693,5 +1693,138 @@ ODDLYIELD(settlement, maturity, last_interest, rate, pr, redemption, frequency, 
 
 * If basis is less than 0 or basis is greater than 4, `ODDLYIELD` returns `#NUM!`.
 
-* If `maturity ≤ settlement` or `settlement ≤ last_interest`, `ODDLYIELD` returns `#NUM!`.
+* If maturity is less than or equal to settlement or settlement is less than or equal to last_interest, `ODDLYIELD` returns `#NUM!`.
 
+
+
+## PRICE  
+
+The `PRICE` function returns the price per $100 face value of a security that pays periodic interest.  
+
+**Syntax**  
+
+*PRICE(settlement, maturity, rate, yld, redemption, frequency, [basis])*
+
+**Where:**  
+
+* settlement: The settlement date of the security, when it is traded to the buyer.  
+
+* maturity: The maturity date of the security, when it expires.  
+
+* rate:  The annual coupon rate of the security.  
+
+* yld:   The annual yield of the security.  
+
+* redemption: The redemption value per $100 face value.  
+
+* frequency: The number of coupon payments per year (1 = annual, 2 = semiannual, 4 = quarterly).  
+
+* basis (Optional): The type of day count basis to use:  
+
+  * 0 or omitted: US (NASD) 30/360  
+
+  * 1: Actual/actual  
+
+  * 2: Actual/360  
+
+  * 3: Actual/365  
+
+  * 4: European 30/360  
+
+**Remarks**  
+
+* Dates are stored as sequential serial numbers (e.g., January 1, 1900, is serial number 1).  
+
+* If settlement or maturity is not a valid date, `PRICE` returns the `#VALUE!` error.  
+
+- If yld is less than 0, rate is less than 0, or redemption is less than or equal to 0, `PRICE` returns the `#NUM!` error. 
+
+- If frequency is not 1, 2, or 4, `PRICE` returns the `#NUM!` error.  
+
+- If basis is less than 0 or greater than 4, `PRICE` returns the `#NUM!` error.  
+
+- If settlement is greater than or equal to maturity, `PRICE` returns the `#NUM!` error.  
+
+
+
+## TBILLPRICE  
+
+The `TBILLPRICE` function returns the price per $100 face value for a Treasury bill.  
+
+**Syntax**  
+
+*TBILLPRICE(settlement, maturity, discount)*
+
+**Where:**  
+
+* settlement: The Treasury bill's settlement date, when it is traded to the buyer.  
+
+* maturity: The Treasury bill's maturity date, when it expires.  
+
+* discount: The Treasury bill's discount rate.  
+
+**Remarks**  
+
+* Dates are stored as sequential serial numbers (e.g., January 1, 1900, is serial number 1).   
+
+* If settlement or maturity is not a valid date, the function returns the `#VALUE!` error.  
+
+* If discount is less than or equal to  0, the function returns the `#NUM!` error.  
+
+* If settlement > maturity or if maturity is more than one year after settlement, the function returns the `#NUM!` error.  
+
+
+
+## TBILLYIELD  
+
+The `TBILLYIELD` function returns the yield for a Treasury bill.  
+
+**Syntax**  
+
+*TBILLYIELD(settlement, maturity, pr)*
+
+**Where:**  
+
+* settlement: The Treasury bill's settlement date, when it is traded to the buyer. 
+
+* maturity: The Treasury bill's maturity date, when it expires.  
+
+* pr: The Treasury bill's price per $100 face value.  
+
+**Remarks**  
+
+* If settlement or maturity is not a valid date, the function returns the `#VALUE!` error.  
+
+* If pr is less than or equal to 0, the function returns the `#NUM!` error.  
+
+* If settlement is greater than or equal to maturity or if maturity is more than one year after settlement, the function returns the `#NUM!` error.  
+
+
+
+## XNPV  
+
+The `XNPV` function returns the net present value for a schedule of cash flows that is not necessarily periodic.  
+
+**Syntax**  
+
+*XNPV(rate, values, dates)*
+
+**Where:**  
+
+* rate: The discount rate to apply to the cash flows.  
+
+* values: A series of cash flows that corresponds to a schedule of payments in `dates`. The first payment is optional and typically represents a cost (negative value). Subsequent payments are discounted using a 365-day year.  
+
+* dates: A schedule of payment dates corresponding to the cash flow payments. Dates must be in chronological order, with the first date representing the start of the schedule.  
+
+**Remarks**  
+
+* Dates are stored as sequential serial numbers (e.g., January 1, 1900, is serial number 1).  
+
+* If any argument is non-numeric, the function returns the `#VALUE!` error.  
+
+* If values and dates have a different number of entries, the function returns the `#NUM!` error. 
+
+* If any date in dates precedes the starting date, the function returns the `#NUM!` error. 
+
+* The series in values must include at least one positive and one negative value. 
