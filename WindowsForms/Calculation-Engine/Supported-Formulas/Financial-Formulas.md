@@ -1098,3 +1098,727 @@ _COUPNUM(settlement, maturity, frequency, [basis])_
 * If settlement is greater than or equal to maturity, `COUPNUM` returns `#NUM!`.
 
 * The argument is non-numeric, it returns the `#VALUE!` error message.
+
+
+
+## AMORLINC
+
+The `AMORLINC` function returns the depreciation for each accounting period, specifically designed for the French accounting system. If an asset is purchased in the middle of the accounting period, the prorated depreciation is considered.
+
+**Syntax**
+
+*AMORLINC(cost, date_purchased, first_period, salvage, period, rate, [basis])*
+
+**Where:**
+
+* cost: The cost of the asset.
+
+* date_purchased: The date when the asset was purchased.
+
+* first_period: The date marking the end of the first accounting period.
+
+* salvage: The salvage value of the asset at the end of its useful life.
+
+* period: The specific period for which the depreciation is to be calculated.
+
+* rate: The depreciation rate for the asset.
+
+* basis (Optional): The day count basis to use:
+
+  * 0 or omitted: US (NASD) 30/360 (default)
+
+  * 1: Actual/actual
+
+  * 2: Actual/360
+
+  * 3: Actual/365
+
+  * 4: European 30/360
+
+**Remarks:**
+
+* Dates are stored as serial numbers. (e.g., January 1, 1900, is represented as 1).
+
+* If any arguments are invalid, the function returns an error:
+
+  * `#VALUE!`: If the arguments are not valid numbers or dates.
+
+  * `#NUM!`: If the arguments are outside valid ranges or unsupported.
+
+
+
+## TBILLEQ
+
+The function `TBILLEQ` returns the bond-equivalent yield for a Treasury bill.
+
+**Syntax**
+
+_TBILLEQ(settlement, maturity, discount)_
+
+**Where:**
+
+* settlement: The Treasury bill's settlement date. The security settlement date is the date after the issue date when the Treasury bill is traded to the buyer.
+
+* maturity: The Treasury bill's maturity date. The maturity date is the date when the Treasury bill expires.
+
+* discount: The Treasury bill's discount rate.
+
+**Remarks:**
+
+* Dates are stored as serial numbers. (e.g., January 1, 1900, is represented as 1).
+
+* Settlement and maturity are truncated to integers.
+
+* If settlement or maturity is not a valid date, `TBILLEQ` returns the `#VALUE!` error value.
+
+* If discount is less than or equal to 0, `TBILLEQ` returns the `#NUM!` error value.
+
+* If settlement is greater than maturity, or if maturity is more than one year after settlement, `TBILLEQ` returns the `#NUM!` error value.
+
+
+
+## PRICEDISC
+
+The function `PRICEDISC` returns the price per $100 face value of a discounted security.
+
+**Syntax**
+
+_PRICEDISC(settlement, maturity, discount, redemption, [basis])_
+
+**Where:**
+
+* settlement: The security's settlement date. It is the date after the issue date when the security is traded to the buyer.
+
+* maturity: The security's maturity date. It is the date when the security expires.
+
+* discount: The security's discount rate.
+
+* redemption: The security's redemption value per $100 face value.
+
+* basis (Optional): The type of day count basis to use:
+
+  * 0 or omitted: US (NASD) 30/360
+
+  * 1: Actual/actual
+
+  * 2: Actual/360
+
+  * 3: Actual/365
+
+  * 4: European 30/360
+
+**Remarks:**
+
+* Dates are stored as serial numbers. (e.g., January 1, 1900, is represented as 1).
+
+* Settlement, maturity, and basis are truncated to integers.
+
+* If settlement or maturity is not a valid date, `PRICEDISC` returns the `#VALUE!` error value.
+
+* If discount or redemption is less than or equal to 0, `PRICEDISC` returns the `#NUM!` error value.
+
+* If basis is less than 0 or greater than 4, `PRICEDISC` returns the `#NUM!` error value.
+
+* If settlement is greater than or equal to maturity, `PRICEDISC` returns the `#NUM!` error value.
+
+
+
+## YIELD
+
+The `YIELD` function returns the yield on a security that pays periodic interest.
+
+**Syntax**
+
+_YIELD(settlement, maturity, rate, pr, redemption, frequency, [basis])_
+
+**Where:**
+
+* settlement: The security's settlement date. It is the date after the issue date when the security is traded to the buyer.
+
+* maturity: The security's maturity date. It is the date when the security expires.
+
+* rate: The security's annual coupon rate.
+
+* pr: The security's price per $100 face value.
+
+* redemption: The security's redemption value per $100 face value.
+
+* frequency: The number of coupon payments per year (1 for annual, 2 for semiannual, 4 for quarterly).
+
+* basis (Optional): The type of day count basis to use:  
+
+  * 0 or omitted: US (NASD) 30/360  
+
+  * 1: Actual/actual  
+
+  * 2: Actual/360  
+
+  * 3: Actual/365  
+
+  * 4: European 30/360  
+
+**Remarks:**
+
+* Dates are stored as serial numbers. (e.g., January 1, 1900, is represented as 1).
+
+* Settlement, maturity, frequency, and basis are truncated to integers.
+
+* If settlement or maturity is not a valid date, `YIELD` returns the `#VALUE!` error value.
+
+* If rate is less than 0, `YIELD` returns the `#NUM!` error value.
+
+* If pr or redemption is less than or equal to 0, `YIELD` returns the `#NUM!` error value.
+
+* If frequency is any number other than 1, 2, or 4, `YIELD` returns the `#NUM!` error value.
+
+* If basis is less than 0 or greater than 4, `YIELD` returns the `#NUM!` error value.
+
+* If settlement is less than or equal to maturity, `YIELD` returns the `#NUM!` error value.
+
+* If there is more than one coupon period until redemption, `YIELD` is calculated using the Newton method, based on the formula used for the function `PRICE`. The yield is changed until the estimated price given the yield is close to price.
+
+
+
+## YIELDMAT 
+
+The function `YIELDMAT` returns the annual yield of a security that pays interest at maturity.
+
+**Syntax**
+
+_YIELDMAT(settlement, maturity, issue, rate, pr, [basis])_
+
+**Where:**
+
+ * settlement: The security's settlement date. It is the date after the issue date when the security is traded to the buyer.
+
+ * maturity: The security's maturity date. It is the date when the security expires.
+
+ * issue: The security's issue date.
+
+ * rate: The security's interest rate at the date of issue.
+
+ * Pr:  The security's price per $100 face value.
+
+* basis (Optional): The type of day count basis to use:  
+
+  * 0 or omitted: US (NASD) 30/360  
+
+  * 1: Actual/actual  
+
+  * 2: Actual/360  
+
+  * 3: Actual/365  
+
+  * 4: European 30/360 
+
+**Remarks:**
+
+* Dates are stored as serial numbers. (e.g., January 1, 1900, is represented as 1).
+
+* Settlement, maturity, issue, and basis are truncated to integers.
+
+* If settlement, maturity, or issue is not a valid date, `YIELDMAT` returns the `#VALUE!` error value.
+
+* If rate is less than 0 or if pr is less than or equal to 0, `YIELDMAT` returns the `#NUM!` error value.
+
+* If basis is less than 0 or greater than  4, `YIELDMAT` returns the `#NUM!` error value.
+
+* If settlement is greater than or equal to maturity, `YIELDMAT` returns the `#NUM!` error value.
+
+
+
+## YIELDDISC  
+
+The function `YIELDDISC` returns the annual yield for a discounted security.
+
+**Syntax**  
+
+_YIELDDISC(settlement, maturity, pr, redemption, [basis])_  
+
+**Where:**  
+
+* settlement: The security's settlement date. It is the date after the issue date when the security is traded to the buyer.  
+
+* maturity: The security's maturity date. It is the date when the security expires.  
+
+* pr: The security's price per $100 face value.  
+
+* redemption: The security's redemption value per $100 face value.  
+
+* basis (Optional): The type of day count basis to use:  
+
+  * 0 or omitted: US (NASD) 30/360  
+
+  * 1: Actual/actual  
+
+  * 2: Actual/360  
+
+  * 3: Actual/365  
+
+  * 4: European 30/360  
+
+**Remarks:**  
+
+* Dates are stored as serial numbers. (e.g., January 1, 1900, is represented as 1).  
+
+* Settlement, maturity, and basis are truncated to integers.  
+
+* If settlement or maturity is not a valid date, `YIELDDISC` returns the `#VALUE!` error value.  
+
+* If pr or redemption is less than or equal to 0, `YIELDDISC` returns the `#NUM!` error value.  
+
+* If basis is less than 0 or greater than 4, `YIELDDISC` returns the `#NUM!` error value.  
+
+* If settlement is greater than equal to maturity, `YIELDDISC` returns the `#NUM!` error value.  
+
+
+
+## PRICEMAT  
+
+The function `PRICEMAT` returns the price per $100 face value of a security that pays interest at maturity.
+
+**Syntax**  
+
+_PRICEMAT(settlement, maturity, issue, rate, yld, [basis])_  
+
+**Where:**  
+
+* settlement: The security's settlement date. It is the date after the issue date when the security is traded to the buyer.  
+
+* maturity: The security's maturity date. It is the date when the security expires.  
+
+* issue: The security's issue date.  
+
+* rate: The security's interest rate at the date of issue.  
+
+* yld: The security's annual yield.  
+
+* basis (Optional): The type of day count basis to use:  
+
+  * 0 or omitted: US (NASD) 30/360  
+
+  * 1: Actual/actual  
+
+  * 2: Actual/360  
+
+  * 3: Actual/365  
+
+  * 4: European 30/360  
+
+**Remarks:**  
+
+* Dates are stored as serial numbers. (e.g., January 1, 1900, is represented as 1).  
+
+* Settlement, maturity, issue, and basis are truncated to integers.  
+
+* If settlement, maturity, or issue is not a valid date, `PRICEMAT` returns the `#VALUE!` error value.  
+
+* If rate or yld is less than 0, `PRICEMAT` returns the `#NUM!` error value.  
+
+* If basis is less than 0 or greater than 4, `PRICEMAT` returns the `#NUM!` error value.  
+
+* If settlement is greater than equal to maturity, `PRICEMAT` returns the `#NUM!` error value.  
+
+
+
+## AMORDEGRC  
+
+The `AMORDEGRC` function returns the depreciation for each accounting period under the French accounting system. If an asset is purchased in the middle of an accounting period, prorated depreciation is calculated. The function applies a depreciation coefficient based on the asset's lifespan.  
+
+**Syntax**  
+
+*AMORDEGRC(cost, date_purchased, first_period, salvage, period, rate, [basis])*
+
+**Where:**  
+
+* cost: The cost of the asset.  
+
+* date_purchased: The date the asset was purchased.  
+
+* first_period: The date of the end of the first accounting period.  
+
+* salvage: The salvage value of the asset at the end of its useful life.  
+
+* period: The period for which the depreciation is to be calculated.  
+
+* rate: The depreciation rate.  
+
+* basis (Optional): The type of day count basis to use:  
+
+  * 0 or omitted: US (NASD) 30/360  
+
+  * 1: Actual/actual  
+
+  * 2: Actual/360  
+
+  * 3: Actual/365  
+
+  * 4: European 30/360   
+
+**Remarks:**  
+
+* Dates are stored as serial numbers. For example, January 1, 1900, is represented as 1.  
+
+* Depreciation coefficients are applied based on the life of the asset:  
+
+  * Between 3 and 4 years: Coefficient = 1.5  
+
+  * Between 5 and 6 years: Coefficient = 2  
+
+  * More than 6 years: Coefficient = 2.5  
+
+* The depreciation rate increases to 50% for the period preceding the last and to 100% for the final period.  
+
+* `AMORDEGRC` returns `#NUM!` if the life of the asset is less than 1 year or falls into invalid ranges (e.g., between 0 and 1, 1 and 2, etc.).  
+
+* Depreciation is calculated until the last period of the asset's life or until the cumulative depreciation equals the cost minus the salvage value.  
+
+
+
+## ODDFPRICE  
+
+The function `ODDFPRICE` returns the price per $100 face value of a security having an odd (short or long) first period.  
+
+**Syntax**  
+
+*ODDFPRICE(settlement, maturity, issue, first_coupon, rate, yld, redemption, frequency, [basis])*
+
+**Where:**  
+
+* settlement: The security's settlement date (the date the buyer purchases the security).  
+
+* maturity: The security's maturity date (the date the security expires).  
+
+* issue: The security's issue date.  
+
+* first_coupon: The security's first coupon date.  
+
+* rate: The security's annual interest rate.  
+
+* yld: The security's annual yield.  
+
+* redemption: The redemption value per $100 face value.  
+
+* frequency: The number of coupon payments per year (1 = annual, 2 = semiannual, 4 = quarterly).  
+
+* basis (Optional): The type of day count basis to use:  
+
+  * 0 or omitted: US (NASD) 30/360  
+
+  * 1: Actual/actual  
+
+  * 2: Actual/360  
+
+  * 3: Actual/365  
+
+  * 4: European 30/360  
+
+**Remarks:**  
+
+* Dates are stored as sequential serial numbers (e.g., January 1, 1900, is serial number 1).  
+
+* Settlement, maturity, issue, first_coupon, and basis are truncated to integers.  
+
+* The function `ODDFPRICE` returns:  
+
+  * `#VALUE!` if any of the date arguments are invalid.  
+
+  * `#NUM!` if rate is less than 0, yld is less than 0, basis is less than 0, basis is greater than 4, or the condition `maturity > first_coupon > settlement > issue` is not satisfied.  
+
+* The function `ODDFPRICE` considers odd short first coupons and odd long first coupons separately.  
+
+
+
+## ODDFYIELD  
+
+The function `ODDFYIELD` returns the yield of a security that has an odd (short or long) first period.  
+
+**Syntax**  
+
+*ODDFYIELD(settlement, maturity, issue, first_coupon, rate, pr, redemption, frequency, [basis])*
+
+**Where:**  
+
+* settlement: The security's settlement date (the date the buyer purchases the security).  
+
+* maturity: The security's maturity date (the date the security expires).  
+
+* issue: The security's issue date.  
+
+* first_coupon: The security's first coupon date.  
+
+* rate: The security's annual interest rate.  
+
+* pr: The security's price.  
+
+* redemption: The redemption value per $100 face value.  
+
+* frequency: The number of coupon payments per year (1 = annual, 2 = semiannual, 4 = quarterly).  
+
+* basis (Optional): The type of day count basis to use:  
+
+  * 0 or omitted: US (NASD) 30/360  
+
+  * 1: Actual/actual  
+
+  * 2: Actual/360  
+
+  * 3: Actual/365  
+
+  * 4: European 30/360  
+
+**Remarks:**  
+
+* Dates are stored as sequential serial numbers (e.g., January 1, 1900, is serial number 1).  
+
+* Settlement, maturity, issue, first_coupon, and basis are truncated to integers.  
+
+* The function `ODDFYIELD` returns:  
+
+  * `#VALUE!` - if any of the date arguments are invalid.  
+
+  * `#NUM!` - if rate is less than  0, pr is less than or equal to 0, basis is less than 0, or basis greater than 4.  
+
+  * `#NUM!`-  if the condition `maturity > first_coupon > settlement > issue` is not satisfied.  
+
+* An iterative technique named Newton method is used for `ODDFPRICE`. The Newton method iterates through 100 times to adjust the yield until the calculated price matches the provided price. 
+
+
+
+## ODDLPRICE  
+
+The function `ODDLPRICE` returns the price per $100 face value of a security having an odd (short or long) last coupon period.  
+
+**Syntax**  
+
+*ODDLPRICE(settlement, maturity, last_interest, rate, yld, redemption, frequency, [basis])*
+
+**Where:**  
+
+* settlement: The security's settlement date (the date the buyer purchases the security).  
+
+* maturity: The security's maturity date (the date the security expires).  
+
+* last_interest: The security's last coupon date.  
+
+* rate: The security's annual interest rate.  
+
+* yld: The security's annual yield.  
+
+* redemption: The redemption value per $100 face value.  
+
+* frequency: The number of coupon payments per year (1 = annual, 2 = semiannual, 4 = quarterly).  
+
+* basis (Optional): The type of day count basis to use:  
+
+  * 0 or omitted: US (NASD) 30/360  
+
+  * 1: Actual/actual  
+
+  * 2: Actual/360  
+
+  * 3: Actual/365  
+
+  * 4: European 30/360  
+
+**Remarks:**  
+
+* Dates are stored as sequential serial numbers (e.g., January 1, 1900, is serial number 1).  
+
+* Settlement, maturity, last_interest, and basis are truncated to integers.  
+
+* The function `ODDLPRICE` returns:  
+
+  * `#VALUE!` if any of the date arguments are invalid.  
+
+  * `#NUM!` if rate is less than 0, yld is less than 0, basis is less than 0, or basis greater than 4.  
+
+  * `#NUM!` if the condition `maturity > settlement > last_interest` is not satisfied.  
+
+* The price of a security with an odd last coupon period depends on the calculation of accrued interest and present value of future cash flows.  
+
+
+
+## ODDLYIELD
+
+The function `ODDLYIELD` returns the yield of a security that has an odd (short or long) last period.
+
+**Syntax**
+
+ODDLYIELD(settlement, maturity, last_interest, rate, pr, redemption, frequency, [basis])
+
+**Where:**
+
+* settlement: The security's settlement date (the date the buyer purchases the security).  
+
+* maturity: The security's maturity date (the date the security expires).  
+
+* last_interest: The security's last coupon date.  
+
+* rate: The security's annual interest rate.  
+
+* pr: The security's price per $100 face value.  
+
+* redemption: The redemption value per $100 face value.  
+
+* frequency: The number of coupon payments per year (1 = annual, 2 = semiannual, 4 = quarterly).  
+
+* basis (Optional): The type of day count basis to use:  
+
+  * 0 or omitted: US (NASD) 30/360  
+
+  * 1: Actual/actual  
+
+  * 2: Actual/360  
+
+  * 3: Actual/365  
+
+  * 4: European 30/360  
+
+**Remarks**
+
+* Dates are stored as sequential serial numbers (e.g., January 1, 1900, is serial number 1).  
+
+* Settlement, maturity, last_interest, and basis are truncated to integers.  
+
+*  If settlement, maturity, or last_interest is not a valid date, `ODDLYIELD` returns `#VALUE!`.
+
+* If rate is less than 0 or pr is less than or equal to 0, `ODDLYIELD` returns `#NUM!`.
+
+* If basis is less than 0 or basis is greater than 4, `ODDLYIELD` returns `#NUM!`.
+
+* If maturity is less than or equal to settlement or settlement is less than or equal to last_interest, `ODDLYIELD` returns `#NUM!`.
+
+
+
+## PRICE  
+
+The `PRICE` function returns the price per $100 face value of a security that pays periodic interest.  
+
+**Syntax**  
+
+*PRICE(settlement, maturity, rate, yld, redemption, frequency, [basis])*
+
+**Where:**  
+
+* settlement: The settlement date of the security, when it is traded to the buyer.  
+
+* maturity: The maturity date of the security, when it expires.  
+
+* rate:  The annual coupon rate of the security.  
+
+* yld:   The annual yield of the security.  
+
+* redemption: The redemption value per $100 face value.  
+
+* frequency: The number of coupon payments per year (1 = annual, 2 = semiannual, 4 = quarterly).  
+
+* basis (Optional): The type of day count basis to use:  
+
+  * 0 or omitted: US (NASD) 30/360  
+
+  * 1: Actual/actual  
+
+  * 2: Actual/360  
+
+  * 3: Actual/365  
+
+  * 4: European 30/360  
+
+**Remarks**  
+
+* Dates are stored as sequential serial numbers (e.g., January 1, 1900, is serial number 1).  
+
+* If settlement or maturity is not a valid date, `PRICE` returns the `#VALUE!` error.  
+
+- If yld is less than 0, rate is less than 0, or redemption is less than or equal to 0, `PRICE` returns the `#NUM!` error. 
+
+- If frequency is not 1, 2, or 4, `PRICE` returns the `#NUM!` error.  
+
+- If basis is less than 0 or greater than 4, `PRICE` returns the `#NUM!` error.  
+
+- If settlement is greater than or equal to maturity, `PRICE` returns the `#NUM!` error.  
+
+
+
+## TBILLPRICE  
+
+The `TBILLPRICE` function returns the price per $100 face value for a Treasury bill.  
+
+**Syntax**  
+
+*TBILLPRICE(settlement, maturity, discount)*
+
+**Where:**  
+
+* settlement: The Treasury bill's settlement date, when it is traded to the buyer.  
+
+* maturity: The Treasury bill's maturity date, when it expires.  
+
+* discount: The Treasury bill's discount rate.  
+
+**Remarks**  
+
+* Dates are stored as sequential serial numbers (e.g., January 1, 1900, is serial number 1).   
+
+* If settlement or maturity is not a valid date, the function returns the `#VALUE!` error.  
+
+* If discount is less than or equal to  0, the function returns the `#NUM!` error.  
+
+* If settlement > maturity or if maturity is more than one year after settlement, the function returns the `#NUM!` error.  
+
+
+
+## TBILLYIELD  
+
+The `TBILLYIELD` function returns the yield for a Treasury bill.  
+
+**Syntax**  
+
+*TBILLYIELD(settlement, maturity, pr)*
+
+**Where:**  
+
+* settlement: The Treasury bill's settlement date, when it is traded to the buyer. 
+
+* maturity: The Treasury bill's maturity date, when it expires.  
+
+* pr: The Treasury bill's price per $100 face value.  
+
+**Remarks**  
+
+* If settlement or maturity is not a valid date, the function returns the `#VALUE!` error.  
+
+* If pr is less than or equal to 0, the function returns the `#NUM!` error.  
+
+* If settlement is greater than or equal to maturity or if maturity is more than one year after settlement, the function returns the `#NUM!` error.  
+
+
+
+## XNPV  
+
+The `XNPV` function returns the net present value for a schedule of cash flows that is not necessarily periodic.  
+
+**Syntax**  
+
+*XNPV(rate, values, dates)*
+
+**Where:**  
+
+* rate: The discount rate to apply to the cash flows.  
+
+* values: A series of cash flows that corresponds to a schedule of payments in `dates`. The first payment is optional and typically represents a cost (negative value). Subsequent payments are discounted using a 365-day year.  
+
+* dates: A schedule of payment dates corresponding to the cash flow payments. Dates must be in chronological order, with the first date representing the start of the schedule.  
+
+**Remarks**  
+
+* Dates are stored as sequential serial numbers (e.g., January 1, 1900, is serial number 1).  
+
+* If any argument is non-numeric, the function returns the `#VALUE!` error.  
+
+* If values and dates have a different number of entries, the function returns the `#NUM!` error. 
+
+* If any date in dates precedes the starting date, the function returns the `#NUM!` error. 
+
+* The series in values must include at least one positive and one negative value. 
