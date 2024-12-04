@@ -2874,11 +2874,11 @@ The `T.TEST` function returns the probability associated with a Student's t-Test
 
 * type: The kind of t-Test to perform.
 
-	* 1 - Paired  
+	* 1 - Paired.
 
-	* 2 - Two-sample equal variance (homoscedastic)  
+	* 2 - Two-sample equal variance.
 
-	* 3 - Two-sample unequal variance (heteroscedastic)  
+	* 3 - Two-sample unequal variance.
 
 **Remarks**  
 
@@ -2979,4 +2979,33 @@ The `FORECAST.LINEAR` function predicts a future value based on existing data by
 * If known_y's or known_x's is empty, or if one has more data points than the other, `FORECAST.LINEAR` returns the `#N/A` error.
 
 * If the variance of known_x's equals zero, `FORECAST.LINEAR` returns the `#DIV/0!` error.
+
+## TREND
+
+The `TREND` function returns values along a linear trend by fitting a straight line to the known y-values and x-values using the method of least squares. It predicts the y-values for a given array of new x-values, which is useful for forecasting data trends.
+
+**Syntax**
+
+*TREND(known_y's, [known_x's], [new_x's], [const])*
+
+**Where:**
+
+* known_y's: The set of y-values in the equation `y = mx + b`.
+
+* known_x's (Optional): The independent array or range of data (x-values) corresponding to the known_y's. If  omitted, it is assumed to be the array {1,2,3,...} that is the same size as known_y's.
+
+* new_x's (Optional): The array of new x-values for which you want to predict corresponding y-values. If  omitted, it is assumed to be the array {1,2,3,...} that is the same size as known_y's.
+
+* const (Optional) : A logical value that determines whether the intercept of the regression line is forced to zero.
+
+	* TRUE or Omitted: Calculates normally using - `y = mx + b`.
+
+	* FALSE: In `y = mx + b`, b is set equal to 0, and the m-values are adjusted so that y = mx.
+
+**Remarks:**
+
+* If known_y's or known_x's are empty, or if one has more data points than the other, `TREND` function will return the `#N/A` error.
+
+* If the variance of known_x's equals zero, `TREND` will return the `#DIV/0!` error.
+
 

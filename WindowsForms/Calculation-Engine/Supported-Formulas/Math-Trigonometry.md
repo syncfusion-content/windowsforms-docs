@@ -3061,7 +3061,7 @@ _PHIL(x)_
 
 
 
-The `EUROCONVERT` function converts a currency between the euro and member currencies or among member currencies using euro as the base currency, based on fixed EU (European Union) exchange rates.
+The `EUROCONVERT` function converts a currency between the Euro and member currencies or among member currencies using Euro as the base currency, based on fixed EU (European Union) exchange rates.
 
 
 
@@ -3101,7 +3101,7 @@ The `EUROCONVERT` function converts a currency between the euro and member curre
 
 
 
-* triangulation_precision: An integer (greater than or equal to 3) that specifies the number of significant digits for the intermediate euro value when converting between two euro member currencies.
+* triangulation_precision: An integer (greater than or equal to 3) that specifies the number of significant digits for the intermediate Euro value when converting between two Euro member currencies.
 
 
 
