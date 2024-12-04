@@ -3054,3 +3054,78 @@ _PHIL(x)_
 
 
 * If x of an invalid data type, `PHI` will return the `#VALUE!` error. 
+
+
+
+## EUROCONVERT
+
+
+
+The `EUROCONVERT` function converts a currency between the Euro and member currencies or among member currencies using Euro as the base currency, based on fixed EU (European Union) exchange rates.
+
+
+
+**Syntax**
+
+
+
+*EUROCONVERT(number, source, target, full_precision, triangulation_precision)*
+
+
+
+**Where:**
+
+
+
+* number: The currency value you want to convert, or a reference to a cell containing the value.
+
+
+
+* source: A three-letter string, or reference to a cell containing the string, corresponding to the ISO (International Organization for Standardization) code for the source currency. 
+
+
+
+* target: A three-letter string, or reference to a cell containing the string, corresponding to the ISO (International Organization for Standardization) code of the target currency.
+
+
+
+* full_precision: A logical value that specifies how to display the result:
+
+
+
+  * FALSE: Display with currency-specific rounding rules (default).
+
+
+
+  * TRUE: Display with all significant digits.
+
+
+
+* triangulation_precision: An integer (greater than or equal to 3) that specifies the number of significant digits for the intermediate Euro value when converting between two Euro member currencies.
+
+
+
+**Remarks:**
+
+
+* Any trailing zeros in the return value are truncated.
+
+
+
+* If the source and target ISO codes are the same, the original value is returned.
+
+
+
+* Invalid parameters return `#VALUE!`.
+
+
+
+* The function `EUROCONVERT` does not apply a number format.
+
+
+
+* The function `EUROCONVERT` cannot be used in array formulas.
+
+
+
+* To use the function `EUROCONVERT` , the Euro Currency Tools Add-in need to be activated.
