@@ -2791,3 +2791,162 @@ The function `BETADIST` returns the cumulative beta probability density function
 * If x less than A, x greater than B, or A equalss B, `BETADIST` returns the `#NUM!` error.
 
 * If A and B are ommitted, `BETADIST` uses the standard cumulative beta distribution, so that A = 0 and B = 1.
+
+## TDIST
+
+The `TDIST` function returns the percentage points (probability) for the Student's t-distribution, where a numeric value (x) is a calculated value of t for which the percentage points are to be computed. The t-distribution is commonly used in the hypothesis testing of small sample datasets.
+
+**Syntax**
+
+*TDIST(x, deg_freedom, tails)*
+
+**Where:**
+
+* x: The numeric value at which to evaluate the distribution.
+
+* deg_freedom: An integer indicating the number of degrees of freedom.
+
+* tails: Specifies the number of distribution tails to return. 
+
+	* 1 - one-tailed distribution.
+
+	* 2 - two-tailed distribution.
+
+**Remarks**
+
+* If any argument is non-numeric, `TDIST` returns the `#VALUE!` error.
+
+* If deg_freedom is less than 1, `TDIST` returns the `#NUM!` error.
+
+* The deg_freedom and tails arguments are truncated to integers.
+
+* If tails is any value other than 1 or 2, `TDIST` returns the `#NUM!` error.
+
+* If x is less than 0, `TDIST` returns the `#NUM!` error.
+
+## TINV
+
+The `TINV` function returns the two-tailed inverse of the Student's t-distribution.
+
+**Syntax** 
+
+*TINV(probability, deg_freedom)*
+
+**Where:**  
+
+* probability: The probability associated with the two-tailed Student's t-distribution.  
+
+* deg_freedom: The number of degrees of freedom to characterize the distribution.  
+
+**Remarks** 
+
+* If probability or deg_freedom is non-numeric, `TINV` returns the `#VALUE!` error.  
+
+* If probability is less than or equal to 0 or if probability is greater than 1, `TINV` returns the `#NUM!` error.  
+
+* If deg_freedom is not an integer, it is truncated.  
+
+* If deg_freedom is less than 1, `TINV` returns the `#NUM!` error.  
+
+## T.TEST
+
+The `T.TEST` function returns the probability associated with a Student's t-Test. Use `T.TEST` to determine whether two samples are likely to have come from the same two underlying populations that have the same mean.
+
+**Syntax**  
+
+*T.TEST(array1, array2, tails, type)*
+
+**Where:**  
+
+* array1: The first data set.  
+
+* array2: The second data set.  
+
+* tails: Specifies the number of distribution tails. If tails = 1, `T.TEST` uses the one-tailed distribution. If tails = 2, `T.TEST` uses the two-tailed distribution. 
+
+* type: The kind of t-Test to perform.
+
+	* 1 - Paired  
+
+	* 2 - Two-sample equal variance (homoscedastic)  
+
+	* 3 - Two-sample unequal variance (heteroscedastic)  
+
+**Remarks**  
+
+* If array1 and array2 have a different number of data points, and type = 1 (paired), `T.TEST` returns the #N/A error value.  
+
+* The tails and type arguments are truncated to integers.  
+
+* If tails or type is nonnumeric, `T.TEST` returns the `#VALUE!` error.  
+
+* If tails is any value other than 1 or 2, `T.TEST` returns the `#NUM!` error.  
+
+* `T.TEST` uses the data in array1 and array2 to compute a non-negative t-statistic.
+
+## T.INV.2T
+
+The `T.INV.2T` function returns the two-tailed inverse of the Student's t-distribution.
+
+**Syntax**  
+
+*T.INV.2T(probability, deg_freedom)*
+
+**Where:**  
+
+* probability: The probability associated with the Student's t-distribution.  
+
+* deg_freedom: The number of degrees of freedom with which to characterize the distribution.  
+
+**Remarks**  
+
+* If either argument is nonnumeric, `T.INV.2T` returns the `#VALUE!` error.  
+
+* If probability is less than or equal to 0 or if probability greater than 1, `T.INV.2T` returns the `#NUM! `error.  
+
+* If deg_freedom is not an integer, it is truncated.  
+
+* If deg_freedom is less than 1, `T.INV.2T` returns the `#NUM!` error.  
+
+## T.DIST.RT Function
+
+The `T.DIST.RT` function returns the right-tailed Student's t-distribution.  
+
+**Syntax**  
+
+*T.DIST.RT(x, deg_freedom)*  
+
+**Where:**  
+
+* x: The numeric value at which to evaluate the distribution.  
+
+* deg_freedom: An integer indicating the number of degrees of freedom.  
+
+**Remarks** 
+
+* If any argument is non-numeric, `T.DIST.RT` returns the `#VALUE!` error.  
+
+* If deg_freedom < 1, `T.DIST.RT` returns the `#NUM!` error.  
+
+## T.DIST.2T
+
+The `T.DIST.2T` function returns the two-tailed Student's t-distribution.
+
+**Syntax**  
+
+*T.DIST.2T(x, deg_freedom)*  
+
+**Where:**  
+
+* x: The numeric value at which to evaluate the distribution.
+
+* deg_freedom: An integer indicating the number of degrees of freedom.  
+
+**Remarks**  
+
+* If any argument is nonnumeric, `T.DIST.2T` returns the `#VALUE!` error. 
+
+* If deg_freedom is less than 1, `T.DIST.2T` returns the `#NUM!` error.  
+
+* If x is less than 0, `T.DIST.2T` returns the `#NUM!` error.  
+
