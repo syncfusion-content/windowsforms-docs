@@ -1103,11 +1103,11 @@ _COUPNUM(settlement, maturity, frequency, [basis])_
 
 ## AMORLINC
 
-The function `AMORLINC` returns the depreciation for each accounting period, specifically designed for the French accounting system. If an asset is purchased in the middle of the accounting period, the prorated depreciation is considered.
+The `AMORLINC` function returns the depreciation for each accounting period, specifically designed for the French accounting system. If an asset is purchased in the middle of the accounting period, the prorated depreciation is considered.
 
 **Syntax**
 
-_AMORLINC(cost, date_purchased, first_period, salvage, period, rate, [basis])_
+*AMORLINC(cost, date_purchased, first_period, salvage, period, rate, [basis])*
 
 **Where:**
 
@@ -1123,9 +1123,9 @@ _AMORLINC(cost, date_purchased, first_period, salvage, period, rate, [basis])_
 
 * rate: The depreciation rate for the asset.
 
-* basis (Optional): The day count basis to use (default is 0: US (NASD) 30/360):
+* basis (Optional): The day count basis to use:
 
-  * 0 or omitted: US (NASD) 30/360
+  * 0 or omitted: US (NASD) 30/360 (default)
 
   * 1: Actual/actual
 
@@ -1171,9 +1171,9 @@ _TBILLEQ(settlement, maturity, discount)_
 
 * If settlement or maturity is not a valid date, `TBILLEQ` returns the `#VALUE!` error value.
 
-* If discount ≤ 0, `TBILLEQ` returns the `#NUM!` error value.
+* If discount is less than or equal to 0, `TBILLEQ` returns the `#NUM!` error value.
 
-* If settlement > maturity, or if maturity is more than one year after settlement, `TBILLEQ` returns the `#NUM!` error value.
+* If settlement is greater than maturity, or if maturity is more than one year after settlement, `TBILLEQ` returns the `#NUM!` error value.
 
 
 
@@ -1187,9 +1187,9 @@ _PRICEDISC(settlement, maturity, discount, redemption, [basis])_
 
 **Where:**
 
-* settlement: The security's settlement date. The security settlement date is the date after the issue date when the security is traded to the buyer.
+* settlement: The security's settlement date. It is the date after the issue date when the security is traded to the buyer.
 
-* maturity: The security's maturity date. The maturity date is the date when the security expires.
+* maturity: The security's maturity date. It is the date when the security expires.
 
 * discount: The security's discount rate.
 
@@ -1215,17 +1215,17 @@ _PRICEDISC(settlement, maturity, discount, redemption, [basis])_
 
 * If settlement or maturity is not a valid date, `PRICEDISC` returns the `#VALUE!` error value.
 
-* If discount ≤ 0 or if redemption ≤ 0, `PRICEDISC` returns the `#NUM!` error value.
+* If discount or redemption is less than or equal to 0, `PRICEDISC` returns the `#NUM!` error value.
 
-* If basis < 0 or if basis > 4, `PRICEDISC` returns the `#NUM!` error value.
+* If basis is less than 0 or greater than 4, `PRICEDISC` returns the `#NUM!` error value.
 
-* If settlement ≥ maturity, `PRICEDISC` returns the `#NUM!` error value.
+* If settlement is greater than or equal to maturity, `PRICEDISC` returns the `#NUM!` error value.
 
 
 
 ## YIELD
 
-The function `YIELD` returns the yield on a security that pays periodic interest. Use `YIELD` to calculate bond yield.
+The `YIELD` function returns the yield on a security that pays periodic interest.
 
 **Syntax**
 
@@ -1233,9 +1233,9 @@ _YIELD(settlement, maturity, rate, pr, redemption, frequency, [basis])_
 
 **Where:**
 
-* settlement: The security's settlement date. The security settlement date is the date after the issue date when the security is traded to the buyer.
+* settlement: The security's settlement date. It is the date after the issue date when the security is traded to the buyer.
 
-* maturity: The security's maturity date. The maturity date is the date when the security expires.
+* maturity: The security's maturity date. It is the date when the security expires.
 
 * rate: The security's annual coupon rate.
 
@@ -1243,13 +1243,7 @@ _YIELD(settlement, maturity, rate, pr, redemption, frequency, [basis])_
 
 * redemption: The security's redemption value per $100 face value.
 
-* frequency: The number of coupon payments per year.  
-  
-  * For annual payments, frequency = 1.  
-  
-  * For semiannual payments, frequency = 2.  
-  
-  * For quarterly payments, frequency = 4.
+* frequency: The number of coupon payments per year (1 for annual, 2 for semiannual, 4 for quarterly).
 
 * basis (Optional): The type of day count basis to use:  
 
@@ -1271,17 +1265,17 @@ _YIELD(settlement, maturity, rate, pr, redemption, frequency, [basis])_
 
 * If settlement or maturity is not a valid date, `YIELD` returns the `#VALUE!` error value.
 
-* If rate < 0, `YIELD` returns the `#NUM!` error value.
+* If rate is less than 0, `YIELD` returns the `#NUM!` error value.
 
-* If pr ≤ 0 or if redemption ≤ 0, `YIELD` returns the `#NUM!` error value.
+* If pr or redemption is less than or equal to 0, `YIELD` returns the `#NUM!` error value.
 
 * If frequency is any number other than 1, 2, or 4, `YIELD` returns the `#NUM!` error value.
 
-* If basis < 0 or if basis > 4, `YIELD` returns the `#NUM!` error value.
+* If basis is less than 0 or greater than 4, `YIELD` returns the `#NUM!` error value.
 
-* If settlement ≥ maturity, `YIELD` returns the `#NUM!` error value.
+* If settlement is less than or equal to maturity, `YIELD` returns the `#NUM!` error value.
 
-* If there is more than one coupon period until redemption, `YIELD` is calculated through a hundred iterations. The resolution uses the Newton method, based on the formula used for the function `PRICE`. The yield is changed until the estimated price given the yield is close to price.
+* If there is more than one coupon period until redemption, `YIELD` is calculated using the Newton method, based on the formula used for the function `PRICE`. The yield is changed until the estimated price given the yield is close to price.
 
 
 
@@ -1295,9 +1289,9 @@ _YIELDMAT(settlement, maturity, issue, rate, pr, [basis])_
 
 **Where:**
 
- * settlement: The security's settlement date. The security settlement date is the date after the issue date when the security is traded to the buyer.
+ * settlement: The security's settlement date. It is the date after the issue date when the security is traded to the buyer.
 
- * maturity: The security's maturity date. The maturity date is the date when the security expires.
+ * maturity: The security's maturity date. It is the date when the security expires.
 
  * issue: The security's issue date.
 
@@ -1325,11 +1319,11 @@ _YIELDMAT(settlement, maturity, issue, rate, pr, [basis])_
 
 * If settlement, maturity, or issue is not a valid date, `YIELDMAT` returns the `#VALUE!` error value.
 
-* If rate < 0 or if pr ≤ 0, `YIELDMAT` returns the `#NUM!` error value.
+* If rate is less than 0 or if pr is less than or equal to 0, `YIELDMAT` returns the `#NUM!` error value.
 
-* If basis < 0 or if basis > 4, `YIELDMAT` returns the `#NUM!` error value.
+* If basis is less than 0 or greater than  4, `YIELDMAT` returns the `#NUM!` error value.
 
-* If settlement ≥ maturity, `YIELDMAT` returns the `#NUM!` error value.
+* If settlement is greater than or equal to maturity, `YIELDMAT` returns the `#NUM!` error value.
 
 
 
@@ -1343,9 +1337,9 @@ _YIELDDISC(settlement, maturity, pr, redemption, [basis])_
 
 **Where:**  
 
-* settlement: The security's settlement date. The security settlement date is the date after the issue date when the security is traded to the buyer.  
+* settlement: The security's settlement date. It is the date after the issue date when the security is traded to the buyer.  
 
-* maturity: The security's maturity date. The maturity date is the date when the security expires.  
+* maturity: The security's maturity date. It is the date when the security expires.  
 
 * pr: The security's price per $100 face value.  
 
@@ -1371,11 +1365,11 @@ _YIELDDISC(settlement, maturity, pr, redemption, [basis])_
 
 * If settlement or maturity is not a valid date, `YIELDDISC` returns the `#VALUE!` error value.  
 
-* If pr ≤ 0 or if redemption ≤ 0, `YIELDDISC` returns the `#NUM!` error value.  
+* If pr or redemption is less than or equal to 0, `YIELDDISC` returns the `#NUM!` error value.  
 
-* If basis < 0 or if basis > 4, `YIELDDISC` returns the `#NUM!` error value.  
+* If basis is less than 0 or greater than 4, `YIELDDISC` returns the `#NUM!` error value.  
 
-* If settlement ≥ maturity, `YIELDDISC` returns the `#NUM!` error value.  
+* If settlement is greater than equal to maturity, `YIELDDISC` returns the `#NUM!` error value.  
 
 
 
@@ -1389,9 +1383,9 @@ _PRICEMAT(settlement, maturity, issue, rate, yld, [basis])_
 
 **Where:**  
 
-* settlement: The security's settlement date. The security settlement date is the date after the issue date when the security is traded to the buyer.  
+* settlement: The security's settlement date. It is the date after the issue date when the security is traded to the buyer.  
 
-* maturity: The security's maturity date. The maturity date is the date when the security expires.  
+* maturity: The security's maturity date. It is the date when the security expires.  
 
 * issue: The security's issue date.  
 
@@ -1419,17 +1413,17 @@ _PRICEMAT(settlement, maturity, issue, rate, yld, [basis])_
 
 * If settlement, maturity, or issue is not a valid date, `PRICEMAT` returns the `#VALUE!` error value.  
 
-* If rate < 0 or if yld < 0, `PRICEMAT` returns the `#NUM!` error value.  
+* If rate or yld is less than 0, `PRICEMAT` returns the `#NUM!` error value.  
 
-* If basis < 0 or if basis > 4, `PRICEMAT` returns the `#NUM!` error value.  
+* If basis is less than 0 or greater than 4, `PRICEMAT` returns the `#NUM!` error value.  
 
-* If settlement ≥ maturity, `PRICEMAT` returns the `#NUM!` error value.  
+* If settlement is greater than equal to maturity, `PRICEMAT` returns the `#NUM!` error value.  
 
 
 
 ## AMORDEGRC  
 
-The function `AMORDEGRC` returns the depreciation for each accounting period under the French accounting system. If an asset is purchased in the middle of an accounting period, prorated depreciation is calculated. The function applies a depreciation coefficient based on the asset's lifespan.  
+The `AMORDEGRC` function returns the depreciation for each accounting period under the French accounting system. If an asset is purchased in the middle of an accounting period, prorated depreciation is calculated. The function applies a depreciation coefficient based on the asset's lifespan.  
 
 **Syntax**  
 
@@ -1475,7 +1469,7 @@ The function `AMORDEGRC` returns the depreciation for each accounting period und
 
 * The depreciation rate increases to 50% for the period preceding the last and to 100% for the final period.  
 
-* The function returns `#NUM!` if the life of the asset is less than 1 year or falls into invalid ranges (e.g., between 0 and 1, 1 and 2, etc.).  
+* `AMORDEGRC` returns `#NUM!` if the life of the asset is less than 1 year or falls into invalid ranges (e.g., between 0 and 1, 1 and 2, etc.).  
 
 * Depreciation is calculated until the last period of the asset's life or until the cumulative depreciation equals the cost minus the salvage value.  
 
@@ -1637,7 +1631,7 @@ The function `ODDLPRICE` returns the price per $100 face value of a security hav
 
   * `#VALUE!` if any of the date arguments are invalid.  
 
-  * `#NUM!` if `rate < 0`, `yld < 0`, `basis < 0`, or `basis > 4`.  
+  * `#NUM!` if rate is less than 0, yld is less than 0, basis is less than 0, or basis greater than 4.  
 
   * `#NUM!` if the condition `maturity > settlement > last_interest` is not satisfied.  
 
