@@ -3061,11 +3061,7 @@ _PHIL(x)_
 
 
 
-The `EUROCONVERT` function converts a number to euros, from euros to a euro member currency, or from one euro member currency to another using the euro as an intermediary (triangulation). 
-
-
-
-The function uses fixed conversion rates established by the EU. This function is available when the Euro Currency Tools Add-in is installed.
+The `EUROCONVERT` function converts a currency between the euro and member currencies or among member currencies using euro as the base currency, based on fixed EU (European Union) exchange rates.
 
 
 
@@ -3085,11 +3081,11 @@ The function uses fixed conversion rates established by the EU. This function is
 
 
 
-* source: A three-letter string, or reference to a cell containing the string, corresponding to the ISO code for the source currency. 
+* source: A three-letter string, or reference to a cell containing the string, corresponding to the ISO (International Organization for Standardization) code for the source currency. 
 
 
 
-* target: A three-letter string, or reference to a cell, corresponding to the ISO code of the target currency.
+* target: A three-letter string, or reference to a cell containing the string, corresponding to the ISO (International Organization for Standardization) code of the target currency.
 
 
 
@@ -3105,7 +3101,7 @@ The function uses fixed conversion rates established by the EU. This function is
 
 
 
-* triangulation_precision: An integer (≥ 3) that specifies the number of significant digits for the intermediate euro value when converting between two euro member currencies.
+* triangulation_precision: An integer (greater than or equal to 3) that specifies the number of significant digits for the intermediate euro value when converting between two euro member currencies.
 
 
 
@@ -3124,12 +3120,12 @@ The function uses fixed conversion rates established by the EU. This function is
 
 
 
-* `EUROCONVERT` does not apply a number format.
+* The function `EUROCONVERT` does not apply a number format.
 
 
 
-* `EUROCONVERT` cannot be used in array formulas.
+* The function `EUROCONVERT` cannot be used in array formulas.
 
 
 
-* To use the `EUROCONVERT` function, first activate the Euro Currency Tools Add-in.
+* To use the function `EUROCONVERT` , the Euro Currency Tools Add-in need to be activated.

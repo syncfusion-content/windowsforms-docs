@@ -2666,7 +2666,7 @@ _FREQUENCY(data_array, bins_array)_
 
 ## F.TEST
 
-The function `F.TEST` returns the two-tailed probability that the variances in two data sets (array1 and array2) are not significantly different.
+The `F.TEST` function returns the two-tailed probability that the variances in two data sets (array1 and array2) are not significantly different.
 
 **Syntax**
 
@@ -2680,17 +2680,17 @@ The function `F.TEST` returns the two-tailed probability that the variances in t
 
 **Remarks**
 
-*  The arguments must be either numbers or names, arrays, or references that contain numbers.
+* The arguments must be either numbers, arrays, range, or references that contain numbers.
 
 * If an array or reference argument contains text, logical values, or empty cells, those values are ignored; however, cells with the value zero are included.
 
 * If the number of elements in array1 or array2 is less than 2, or if the variance of array1 or array2 is zero, `F.TEST` returns the `#DIV/0!` error.
 
-* `F.TEST` is an updated version of `FTEST`.
+* `F.TEST` is an updated version of the function `FTEST`.
 
 ## FTEST
 
-The function `FTEST` returns the two-tailed probability that the variances in two data sets (array1 and array2) are not significantly different.
+The `FTEST` function returns the two-tailed probability that the variances in two data sets (array1 and array2) are not significantly different.
 
 **Syntax**
 
@@ -2704,15 +2704,17 @@ The function `FTEST` returns the two-tailed probability that the variances in tw
 
 **Remarks**
 
-* The arguments must be either numbers or names, arrays, or references that contain numbers.
+* The arguments must be either number, arrays, ranges, or references that contain numbers.
 
 * If an array or reference argument contains text, logical values, or empty cells, those values are ignored; however, cells with the value zero are included.
 
 * If the number of elements in array1 or array2 is less than 2, or if the variance of array1 or array2 is zero, `FTEST` returns the `#DIV/0!` error.
 
+* `FTEST` is an older version of the `F.TEST` function
+
 ## F.INV
 
-The function `F.INV` returns the inverse of the F probability distribution. If `p = F.DIST(x, ...)`, then `F.INV(p, ...) = x`. The F distribution is often used in an F-test to compare the variability in two data sets.
+The `F.INV` function returns the value at which a given probability corresponds to the F probability distribution, typically used to compare the variability between two data sets.
 
 **Syntax**
 
@@ -2722,15 +2724,15 @@ The function `F.INV` returns the inverse of the F probability distribution. If `
 
 * probability: A probability associated with the F cumulative distribution.
 
-* deg_freedom1: The numerator degrees of freedom.
+* deg_freedom1: The numerator degrees of freedom, representing the variability in the first data set or group.
 
-* deg_freedom2: The denominator degrees of freedom.
+* deg_freedom2: The denominator degrees of freedom, representing the variability in the second data set or group.
 
 **Remarks**
 
-* If any argument is non-numeric, `F.INV` returns the `#VALUE!` error value.
+* If any argument is non-numeric, `F.INV` returns the `#VALUE!` error.
 
-* If probability is less than 0 or probability is greater than 1, `F.INV` returns the `#NUM!` error.
+* If probability is less than 0 or greater than 1, `F.INV` returns the `#NUM!` error.
 
 * If deg_freedom1 or deg_freedom2 is not an integer, it is truncated.
 
@@ -2738,7 +2740,7 @@ The function `F.INV` returns the inverse of the F probability distribution. If `
 
 ## BINOM.DIST.RANGE
 
-The function `BINOM.DIST.RANGE` returns the probability of a trial result using a binomial distribution.
+The `BINOM.DIST.RANGE` function returns the probability of a trial result using a binomial distribution.
 
 **Syntax**
 
@@ -2746,25 +2748,29 @@ The function `BINOM.DIST.RANGE` returns the probability of a trial result using 
 
 **Where:**
 
-* trials: The number of independent trials. Must be greater than or equal to 0.
+* trials: The number of independent trials. This value must be greater than or equal to 0.
 
-* probability_s: The probability of success in each trial. Must be greater than or equal to 0 and less than or equal to 1.
+* probability_s: The probability of success in each trial. 
 
-* number_s: The number of successes in trials. Must be greater than or equal to 0 and less than or equal to trials.
+* number_s: The number of successes in trials. 
 
-* number_s2 (optional): If provided, returns the probability that the number of successful trials will fall between number_s and number_s2. Must be greater than or equal to number_s and less than or equal to trials.
+* number_s2 (optional): The probability that the number of successes will be between number_s and number_s2, where number_s is the minimum and number_s2 is the maximum, within the total number of trials.
 
 **Remarks**
 
-* If any arguments are outside their constraints, `BINOM.DIST.RANGE` returns the `#NUM!` error.
+* If probability is less than 0 or greater than 1, `BINOM.DIST.RANGE` will return the `#NUM!` error.
 
-* If any arguments are non-numeric, `BINOM.DIST.RANGE` returns the `#VALUE!` error.
+* If number_s2 is less than number_s or greater than trails, `BINOM.DIST.RANGE` will return the `#NUM!` error.
+
+* If number_s less than 0 or greater than trails, `BINOM.DIST.RANGE` will return the `#NUM!` error.
+
+* If any arguments are non-numeric, `BINOM.DIST.RANGE` will return the `#VALUE!` error.
 
 * Numeric arguments are truncated to integers.
 
 ## BETADIST
 
-The function `BETADIST` returns the cumulative beta probability density function.
+The `BETADIST` function returns the cumulative beta probability density function.
 
 **Syntax**
 
@@ -2778,23 +2784,21 @@ The function `BETADIST` returns the cumulative beta probability density function
 
 * beta: A parameter of the distribution.
 
-* A: Optional. A lower bound to the interval of x.
+* A (optional): A lower bound to the interval of x. The default value of A is 0.
 
-* B: Optional. An upper bound to the interval of x.
+* B (optional): An upper bound to the interval of x. The default value of B is 1.
 
 **Remarks**
 
-* If any argument is nonnumeric, `BETADIST` returns the `#VALUE!` error.
+* If any argument is non-numeric, `BETADIST` returns the `#VALUE!` error.
 
-* If alpha or beta less than or equal to 0 , `BETADIST` returns the `#NUM!` error.
+* If alpha or beta is less than or equal to 0, `BETADIST` returns the `#NUM!` error.
 
-* If x less than A, x greater than B, or A equalss B, `BETADIST` returns the `#NUM!` error.
-
-* If A and B are ommitted, `BETADIST` uses the standard cumulative beta distribution, so that A = 0 and B = 1.
+* If x is less than A or greater than B, or A equals B, `BETADIST` returns the `#NUM!` error.
 
 ## TDIST
 
-The `TDIST` function returns the percentage points (probability) for the Student's t-distribution, where a numeric value (x) is a calculated value of t for which the percentage points are to be computed. The t-distribution is commonly used in the hypothesis testing of small sample datasets.
+The `TDIST` function returns the percentage points (probability) for the Student's t-distribution, where a numeric value (x) is a calculated value of t for which the percentage points are to be computed.
 
 **Syntax**
 
@@ -2840,17 +2844,17 @@ The `TINV` function returns the two-tailed inverse of the Student's t-distributi
 
 **Remarks** 
 
-* If probability or deg_freedom is non-numeric, `TINV` returns the `#VALUE!` error.  
+* If the probability or deg_freedom is non-numeric, `TINV` returns the `#VALUE!` error.  
 
-* If probability is less than or equal to 0 or if probability is greater than 1, `TINV` returns the `#NUM!` error.  
+* If the probability is less than or equal to 0 or greater than 1, `TINV` returns the `#NUM!` error.  
 
-* If deg_freedom is not an integer, it is truncated.  
+* If deg_freedom is not an integer, it is truncated to the nearest integer.  
 
-* If deg_freedom is less than 1, `TINV` returns the `#NUM!` error.  
+* If deg_freedom is less than 1, the function `TINV` returns the `#NUM!` error.  
 
 ## T.TEST
 
-The `T.TEST` function returns the probability associated with a Student's t-Test. Use `T.TEST` to determine whether two samples are likely to have come from the same two underlying populations that have the same mean.
+The `T.TEST` function returns the probability associated with a Student's t-Test, used to determine if two samples likely come from the same population with an equal mean.
 
 **Syntax**  
 
@@ -2862,7 +2866,11 @@ The `T.TEST` function returns the probability associated with a Student's t-Test
 
 * array2: The second data set.  
 
-* tails: Specifies the number of distribution tails. If tails = 1, `T.TEST` uses the one-tailed distribution. If tails = 2, `T.TEST` uses the two-tailed distribution. 
+* tails: Specifies the number of distribution tails.
+
+	* 1 - One tailed distribution.
+
+	* 2 - Two tailed distribution.
 
 * type: The kind of t-Test to perform.
 
@@ -2874,15 +2882,13 @@ The `T.TEST` function returns the probability associated with a Student's t-Test
 
 **Remarks**  
 
-* If array1 and array2 have a different number of data points, and type = 1 (paired), `T.TEST` returns the #N/A error value.  
+* If array1 and array2 have a different number of data points, and type = 1 (paired), `T.TEST` returns the `#N/A` error value.  
 
 * The tails and type arguments are truncated to integers.  
 
-* If tails or type is nonnumeric, `T.TEST` returns the `#VALUE!` error.  
+* If tails or type is non-numeric, `T.TEST` returns the `#VALUE!` error.  
 
 * If tails is any value other than 1 or 2, `T.TEST` returns the `#NUM!` error.  
-
-* `T.TEST` uses the data in array1 and array2 to compute a non-negative t-statistic.
 
 ## T.INV.2T
 
@@ -2900,11 +2906,11 @@ The `T.INV.2T` function returns the two-tailed inverse of the Student's t-distri
 
 **Remarks**  
 
-* If either argument is nonnumeric, `T.INV.2T` returns the `#VALUE!` error.  
+* If probability or deg_freedom is non-numeric, `T.INV.2T` returns the `#VALUE!` error.  
 
-* If probability is less than or equal to 0 or if probability greater than 1, `T.INV.2T` returns the `#NUM! `error.  
+* If the probability is less than or equal to 0 or greater than 1, `T.INV.2T` returns the `#NUM! `error.  
 
-* If deg_freedom is not an integer, it is truncated.  
+* If deg_freedom is not an integer, it is truncated to the nearest integer.  
 
 * If deg_freedom is less than 1, `T.INV.2T` returns the `#NUM!` error.  
 
@@ -2924,9 +2930,9 @@ The `T.DIST.RT` function returns the right-tailed Student's t-distribution.
 
 **Remarks** 
 
-* If any argument is non-numeric, `T.DIST.RT` returns the `#VALUE!` error.  
+* If x or deg_freedom is non-numeric, `T.DIST.RT` returns the `#VALUE!` error.  
 
-* If deg_freedom < 1, `T.DIST.RT` returns the `#NUM!` error.  
+* If deg_freedom is less than 1, `T.DIST.RT` returns the `#NUM!` error.  
 
 ## T.DIST.2T
 
@@ -2944,9 +2950,33 @@ The `T.DIST.2T` function returns the two-tailed Student's t-distribution.
 
 **Remarks**  
 
-* If any argument is nonnumeric, `T.DIST.2T` returns the `#VALUE!` error. 
+* If x or deg_freedom is non-numeric, `T.DIST.2T` returns the `#VALUE!` error. 
 
 * If deg_freedom is less than 1, `T.DIST.2T` returns the `#NUM!` error.  
 
 * If x is less than 0, `T.DIST.2T` returns the `#NUM!` error.  
+
+## FORECAST.LINEAR
+
+The `FORECAST.LINEAR` function predicts a future value based on existing data by using linear regression. It calculates the dependent value (y) for a given independent value (x), which is useful for forecasting trends such as sales or inventory needs.
+
+**Syntax**
+
+*FORECAST.LINEAR(x, known_y's, known_x's)*
+
+**Where:**
+
+* x: The data point for which you want to predict a value.
+
+* known_y's: The dependent array or range of data.
+
+* known_x's: The independent array or range of data.
+
+**Remarks**
+
+* If x is non-numeric, `FORECAST.LINEAR` returns the `#VALUE!` error.
+
+* If known_y's or known_x's is empty, or if one has more data points than the other, `FORECAST.LINEAR` returns the `#N/A` error.
+
+* If the variance of known_x's equals zero, `FORECAST.LINEAR` returns the `#DIV/0!` error.
 
