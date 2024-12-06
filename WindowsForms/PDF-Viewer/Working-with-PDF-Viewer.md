@@ -9,7 +9,7 @@ documentation: ug
 
 # Working with PdfViewerControl in Windows Forms PDF Viewer
 
-Essential [WinForms PDF Viewer](https://www.syncfusion.com/winforms-ui-controls/pdf-viewer) can display and print PDF files and export the pages as raster images and meta files.
+Essential&reg; [WinForms PDF Viewer](https://www.syncfusion.com/winforms-ui-controls/pdf-viewer) can display and print PDF files and export the pages as raster images and meta files.
 
 ## Viewing PDF Files 
 
@@ -62,7 +62,7 @@ pdfViewerControl1.Load("Sample.pdf", "password")
 
 ### Exporting pages of PDF document as raster images
 
-Essential PdfViewerControl allows selected pages to be exported as raster images. Exporting can be done using the [ExportAsImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_Forms_PdfViewer_PdfViewerControl_ExportAsImage_System_Int32_) method. This option helps to convert a PDF into an image.
+Essential&reg; PdfViewerControl allows selected pages to be exported as raster images. Exporting can be done using the [ExportAsImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_Forms_PdfViewer_PdfViewerControl_ExportAsImage_System_Int32_) method. This option helps to convert a PDF into an image.
 
 {% tabs %}
 {%highlight c#%}

@@ -9,7 +9,7 @@ documentation: ug
 
 #  View the PDF Stream in PDF Viewer
 
-PDF files as stream can be viewed in Essential PdfViewerControl using the overload available in the Load method. Following are the code snippets.
+PDF files as stream can be viewed in Essential&reg; PdfViewerControl using the overload available in the Load method. Following are the code snippets.
 
 
 {% tabs %}

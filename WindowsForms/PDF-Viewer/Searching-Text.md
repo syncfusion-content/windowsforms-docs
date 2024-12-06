@@ -9,7 +9,7 @@ documentation: ug
 
 # Searching Text in Windows Forms PDF Viewer (PdfViewerControl)
 
-The Essential `PdfViewerControl` allows users to search a given text in the PDF document. The search box will appear when `Ctrl+F` is pressed and searches the text in the PDF document as shown in the following figure.
+The Essential&reg; `PdfViewerControl` allows users to search a given text in the PDF document. The search box will appear when `Ctrl+F` is pressed and searches the text in the PDF document as shown in the following figure.
 
 ![Text Search in PDF Viewer WinForms](Working-with-PDF-Viewer_images/Working-with-PDF-Viewer_img2.png)
 
