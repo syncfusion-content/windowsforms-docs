@@ -9,7 +9,7 @@ documentation: ug
 
 # Searching Text in Windows Forms PDF Viewer (PdfViewerControl)
 
-The Essential `PdfViewerControl` allows users to search a given text in the PDF document. The search box will appear when `Ctrl+F` is pressed and searches the text in the PDF document as shown in the following figure.
+The Essential&reg; `PdfViewerControl` allows users to search a given text in the PDF document. The search box will appear when `Ctrl+F` is pressed and searches the text in the PDF document as shown in the following figure.
 
 ![Text Search in PDF Viewer WinForms](Working-with-PDF-Viewer_images/Working-with-PDF-Viewer_img2.png)
 
@@ -18,7 +18,7 @@ The Essential `PdfViewerControl` allows users to search a given text in the PDF 
 PDF Viewer allows you to search and highlight next instances of a text in the PDF document. The following code snippet illustrates how to search the next instance of a term “time” in the PDF document using the `PdfViewerControl` with respect to the current highlighted instance.
 
 {% tabs %}
-{%highlight c#%}
+{% highlight c# %}
 
 PdfViewerControl pdfViewerControl = new PdfViewerControl();
 pdfViewerControl.Load("Sample.pdf");
@@ -30,13 +30,13 @@ private void Next_Click(object sender, EventArgs e)
         pdfViewerControl.SearchNextText("time");
 }
 
-{%endhighlight%}
+{% endhighlight %}
 {% endtabs %}
 
 The following code snippet illustrates how to achieve the same using `PdfDocumentView`.
 
 {% tabs %}
-{%highlight c#%}
+{% highlight c# %}
 
 PdfDocumentView pdfDocumentView = new PdfDocumentView();
 pdfDocumentView.Load("Sample.pdf");
@@ -48,7 +48,7 @@ private void Next_Click(object sender, EventArgs e)
         pdfDocumentView.SearchNextText ("time");
 }
 
-{%endhighlight%}
+{% endhighlight %}
 {% endtabs %}
 
 ## Search previous instance of a text
@@ -56,7 +56,7 @@ private void Next_Click(object sender, EventArgs e)
 PDF Viewer allows you to search and highlight previous instances of a text in the PDF document. The following code snippet illustrates how to search the previous instance of a term “time” in the PDF document using the `PdfViewerControl` with respect to the current highlighted instance.
 
 {% tabs %}
-{%highlight c#%}
+{% highlight c# %}
 
 PdfViewerControl pdfViewerControl = new PdfViewerControl();
 pdfViewerControl.Load("Sample.pdf");
@@ -68,13 +68,13 @@ private void Previous_Click(object sender, EventArgs e)
         pdfViewerControl.SearchPreviousText("time");
 }
 
-{%endhighlight%}
+{% endhighlight %}
 {% endtabs %}
 
 The following code snippet illustrates how to achieve the same using `PdfDocumentView`.
 
 {% tabs %}
-{%highlight c#%}
+{% highlight c# %}
 
 PdfDocumentView pdfDocumentView = new PdfDocumentView();
 pdfDocumentView.Load("Sample.pdf");
@@ -86,7 +86,7 @@ private void Previous_Click(object sender, EventArgs e)
         pdfDocumentView.SearchPreviousText("time");
 }
 
-{%endhighlight%}
+{% endhighlight %}
 {% endtabs %}
 
 ## Enable or disable highlighting all the searched text instances
@@ -96,19 +96,19 @@ PDF Viewer allows you to enable or disable highlighting all the occurrences of t
 The following code example illustrates how to disable highlighting all the searched text instance.
 
 {% tabs %}
-{%highlight c#%}
+{% highlight c# %}
 
 //Sets value to disable highlight all the occurrences of the searched text
 pdfViewer.TextSearchSettings.HighlightAllInstance = false;
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vb%}
+{% highlight vb %}
 
 'Sets value to disable highlight all the occurrences of the searched text
 pdfViewer.TextSearchSettings.HighlightAllInstance = false
 
-{%endhighlight%}
+{% endhighlight %}
 {% endtabs %}
 
 N>
@@ -119,7 +119,7 @@ N>
 PDF Viewer allows you to customize the color of the current searched text instance and all other occurrences. Refer to the following code example.
 
 {% tabs %}
-{%highlight c#%}
+{% highlight c# %}
 
 //Sets color to highlight current occurrence of the searched text
 pdfViewer.TextSearchSettings.CurrentInstanceColor = Color.Red;
@@ -127,16 +127,16 @@ pdfViewer.TextSearchSettings.CurrentInstanceColor = Color.Red;
 pdfViewer.TextSearchSettings.OtherInstanceColor = Color.Yellow;
 
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vb%}
+{% highlight vb %}
 
 'Sets color to highlight current occurrence of the searched text
 pdfViewer.TextSearchSettings.CurrentInstanceColor = Color.Red
 'Sets color to highlight all the occurrences of the searched text
 pdfViewer.TextSearchSettings.OtherInstanceColor = Color.Yellow
 
-{%endhighlight%}
+{% endhighlight %}
 {% endtabs %}
 
 ## Find all the instances of a text and its bounds
@@ -144,7 +144,7 @@ pdfViewer.TextSearchSettings.OtherInstanceColor = Color.Yellow
 The `PdfViewerControl` also supports searching text in the PDF document using the [FindText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_Forms_PdfViewer_PdfViewerControl_FindText_System_String_System_Collections_Generic_Dictionary_System_Int32_System_Collections_Generic_List_System_Drawing_RectangleF____) method which returns true when the text given is found in the document. The dictionary contains the page indices and the list of rectangular coordinates of the text found in that page. The following code snippet illustrates how text search can be achieved in the `PdfViewerControl`.
 
 {% tabs %}
-{%highlight c#%}
+{% highlight c# %}
 
 bool IsMatchFound;
 
@@ -154,9 +154,9 @@ Dictionary<int, List<RectangleF>>
 textSearch = new Dictionary<int, List<RectangleF>>();
 IsMatchFound = pdfViewerControl1.FindText("targetText", out textSearch);
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vb%}
+{% highlight vb %}
 
 Dim IsMatchFound As Boolean
 
@@ -165,7 +165,7 @@ pdfViewerControl1.Load("Sample.pdf")
 Dim textSearch As New Dictionary(Of Integer, List(Of RectangleF))()
 IsMatchFound = pdfViewerControl1.FindText("targetText", textSearch)
 
-{%endhighlight%}
+{% endhighlight %}
 {% endtabs %}
 
 ## Find the total number of instances of a text in the PDF document
@@ -175,7 +175,7 @@ PDF viewer allows you to find the total number of instances of a text in the PDF
 The following code snippet illustrates how to find the total number of instances of a term “time” present in the PDF document using `PdfViewerControl`.
 
 {% tabs %}
-{%highlight c#%}
+{% highlight c# %}
 
 PdfViewerControl pdfViewerControl = new PdfViewerControl();
 pdfViewerControl.Load("Sample.pdf");
@@ -189,13 +189,13 @@ foreach (KeyValuePair<int, List<RectangleF>> matchedText in matchedTextDetails)
     totalInstances += matchedText.Value.Count;
 }
 
-{%endhighlight%}
+{% endhighlight %}
 {% endtabs %}
 
 The following code snippet illustrates how to achieve the same using `PdfDocumentView`.
 
 {% tabs %}
-{%highlight c#%}
+{% highlight c# %}
 
 PdfDocumentView pdfDocumentView = new PdfDocumentView();
 pdfDocumentView.Load("Sample.pdf");
@@ -209,5 +209,5 @@ foreach (KeyValuePair<int, List<RectangleF>> matchedText in matchedTextDetails)
     totalInstances += matchedText.Value.Count;
 }
 
-{%endhighlight%}
+{% endhighlight %}
 {% endtabs %}
