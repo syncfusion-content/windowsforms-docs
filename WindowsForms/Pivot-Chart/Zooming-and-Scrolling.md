@@ -9,6 +9,6 @@ documentation: ug
 
 # Zooming and Scrolling in Windows Forms Pivot Chart
 
-You can zoom and scroll the pivot chart. Zooming can be enabled for single or both axes.
+The pivot chart control in Windows Forms offers functionality for zooming and scrolling, which enhances the interactivity and usability of visual data presentations. Users can focus on specific data points by zooming into the chart along a single axis or both axes, enabling detailed analysis without distractions from the broader dataset.
 
-Sample: <InstalledLocation>\ Syncfusion\EssentialStudio\<InstalledVersion>\Windows\PivotChart.Windows\Samples\Zooming and Scrolling\Zooming and Scrolling\CS
+This interactivity is achieved by configuring the chart to support zoom operations. Zooming can be selectively enabled for the x-axis, y-axis, or both, depending on the type of data visualization required. This flexibility allows users to examine trends, outliers, and patterns within their data with precision.
