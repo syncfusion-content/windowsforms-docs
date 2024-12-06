@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding in Windows Forms Diagram control | Syncfusion
-description: Learn about Data Binding support in Syncfusion Windows Forms Diagram control, its elements, and more details.
+title: Data Binding in Windows Forms Diagram control | Syncfusion®
+description: Learn about Data Binding support in Syncfusion® Windows Forms Diagram control, its elements, and more details.
 platform: windowsforms
 control: Diagram
 documentation: ug

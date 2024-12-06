@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Rulers in Windows Forms Diagram control | Syncfusion
-description: Learn about Rulers support in Syncfusion Windows Forms Diagram control, its elements and more details.
+title: Rulers in Windows Forms Diagram control | Syncfusion®
+description: Learn about Rulers support in Syncfusion® Windows Forms Diagram control, its elements and more details.
 platform: windowsforms
 control: Diagram
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Undo / Redo in Windows Forms Diagram control | Syncfusion
-description: Learn about Undo / Redo support in Syncfusion Windows Forms Diagram control, its elements and more details.
+title: Undo / Redo in Windows Forms Diagram control | Syncfusion®
+description: Learn about Undo / Redo support in Syncfusion® Windows Forms Diagram control, its elements and more details.
 platform: windowsforms
 control: Diagram
 documentation: ug

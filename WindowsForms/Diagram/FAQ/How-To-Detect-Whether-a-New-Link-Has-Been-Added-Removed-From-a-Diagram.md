@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To Detect Whether The Connection Changes Occurs R | Diagram | Windows Forms | Syncfusion
+title: How To Detect Whether The Connection Changes Occurs R | Diagram | Windows Forms | Syncfusion®
 description: how to detect whether the connection changes occurs in diagram
 platform: windowsforms
 control: Diagram

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Diagram Grid in Windows Forms Diagram control | Syncfusion
-description: Learn about Diagram Grid support in Syncfusion Windows Forms Diagram control, its elements and more details.
+title: Diagram Grid in Windows Forms Diagram control | Syncfusion®
+description: Learn about Diagram Grid support in Syncfusion® Windows Forms Diagram control, its elements and more details.
 platform: windowsforms
 control: Diagram
 documentation: ug

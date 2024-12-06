@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To Retrieve the Port Information Of a Particul | Diagram | Windows Forms | Syncfusion
+title: How To Retrieve the Port Information Of a Particul | Diagram | Windows Forms | Syncfusion®
 description: how to retrieve the port information of a particular symbol
 platform: windowsforms
 control: Diagram

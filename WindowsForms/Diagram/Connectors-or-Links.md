@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Connectors or Links in Windows Forms Diagram control | Syncfusion
-description: Learn about Connectors or Links support in Syncfusion Windows Forms Diagram control and more details.
+title: Connectors or Links in Windows Forms Diagram control | Syncfusion®
+description: Learn about Connectors or Links support in Syncfusion® Windows Forms Diagram control and more details.
 platform: windowsforms
 control: Diagram
 documentation: ug
