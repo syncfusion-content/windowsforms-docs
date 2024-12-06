@@ -9,7 +9,7 @@ documentation: ug
 
 # Exporting in Windows Forms Pivot Chart
 
-The Windows Forms Pivot Chart offers the capability to export pivot data to Microsoft Excel, facilitating an interactive data exploration experience within Excel. This feature is compatible with multiple versions of Excel and supports various chart types.
+The Windows Forms Pivot Chart offers the capability to export pivot data to Microsoft Excel, facilitating an interactive data exploration experience within Excel.
 
 To export the data, you can use the `ExcelExport` class, as demonstrated in the example below. By configuring export settings such as the Excel version and the desired chart type, the export operation can be executed seamlessly.
 
