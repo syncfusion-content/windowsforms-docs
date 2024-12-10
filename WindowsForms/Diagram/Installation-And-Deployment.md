@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation-And-Deployment in Windows Forms Diagram | Syncfusion
-description: Learn here all about installation and deployment of Syncfusion Windows Forms Diagram control and more.
+title: Installation-And-Deployment in Windows Forms Diagram | Syncfusion®
+description: Learn here all about installation and deployment of Syncfusion® Windows Forms Diagram control and more.
 platform: windowsforms
 control: Diagram
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 ## Installation And Deployment in Windows Forms Diagram
 
-This section covers information on the install location, samples, licensing, patches update and updation of the recent version of Essential Studio. It comprises the following sub-sections:
+This section covers information on the install location, samples, licensing, patches update and updation of the recent version of Essential Studio®. It comprises the following sub-sections:
 
 ### Installation
 
-For step-by-step installation procedure for the installation of Essential Studio, refer to the Installation topic under Installation and Deployment in the Common UG.
+For step-by-step installation procedure for the installation of Essential Studio®, refer to the Installation topic under Installation and Deployment in the Common UG.
 
 See Also
 
@@ -30,7 +30,7 @@ This section covers the location of the installed samples and describes the proc
 
 Sample Installation Location
 
-The Essential Diagram Windows Forms samples are installed in the following location.
+The Essential® Diagram Windows Forms samples are installed in the following location.
 
 {% highlight text %}
 
@@ -82,17 +82,17 @@ N> You can view the samples in any of the following three ways:
 
  Source Code Location
 
-The source code for Essential Diagram Windows is available at the following default location:
+The source code for Essential® Diagram Windows is available at the following default location:
 
 [System Drive]:\Program Files\Syncfusion\Essential Studio\[Version Number]\Windows\Diagram.Windows\Src
 
 ### Deployment Requirements
 
-This section provides deployment requirements for using Essential Diagram under the following topics:
+This section provides deployment requirements for using Essential® Diagram under the following topics:
 
 #### Toolbox Entries
 
-Essential Diagram places the following controls into your Visual Studio .NET toolbox from where you can drag each control onto a form and start working with it.
+Essential® Diagram places the following controls into your Visual Studio .NET toolbox from where you can drag each control onto a form and start working with it.
 
 * Diagram
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Supported Controls  in Windows Forms Diagram control | Syncfusion
-description: Learn about Supported Controls  support in Syncfusion Windows Forms Diagram control and more details.
+title: Supported Controls  in Windows Forms Diagram control | Syncfusion®
+description: Learn about Supported Controls  support in Syncfusion® Windows Forms Diagram control and more details.
 platform: windowsforms
 control: Diagram
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Supported Controls  in Windows Forms Diagram
 
-The controls supported by Essential Diagram are as follows.
+The controls supported by Essential® Diagram are as follows.
 
 The controls associated with the Diagram control are illustrated in the following image.
 
@@ -150,7 +150,7 @@ overviewControl1.TabIndex = 1
 
 ## Palette Groupbar And GroupView
 
-The Palette Groupbar control provides a way for users to drag-and-drop the symbols onto a diagram. It is based on the Syncfusion Essential Tools GroupBar control. Each symbol palette loaded in the PaletteGroupBar occupies a panel that can be selected by a bar button. The bar button is labeled with the name of the symbol palette. The symbols in the palette are shown as icons that can be dragged and dropped onto the diagram. This control allows users to add symbols to a palette, and save or load the palette whenever necessary. It provides a way to classify and maintain the symbols.
+The Palette Groupbar control provides a way for users to drag-and-drop the symbols onto a diagram. It is based on the Syncfusion® Essential® Tools GroupBar control. Each symbol palette loaded in the PaletteGroupBar occupies a panel that can be selected by a bar button. The bar button is labeled with the name of the symbol palette. The symbols in the palette are shown as icons that can be dragged and dropped onto the diagram. This control allows users to add symbols to a palette, and save or load the palette whenever necessary. It provides a way to classify and maintain the symbols.
 
 The PaletteGroupView control provides an easy way to serialize a symbol palette to and from the resource file of a form. At the design-time, users can attach a symbol palette to a PaletteGroupView control in a form. Selecting the PaletteGroupView, and clicking the Palette property in the Visual Studio .NET properties window, opens a standard Open File dialog, which allows the user to select a symbol palette file that has been created using the Symbol Designer.
 
@@ -519,7 +519,7 @@ Follow the steps given below for adding symbol palette into PaletteGroupBar:
 
 1. Add OpenFileDialog control into form.
 2. Set the Filter property of OpenFileDialog as,
-3. Essential Diagram Palettes|*.edp|Visio Stencils|*.vss; *.vsx|Visio Drawings(Shapes only)|*.vsd; *.vdx|All files|*.*
+3. Essential® Diagram Palettes|*.edp|Visio Stencils|*.vss; *.vsx|Visio Drawings(Shapes only)|*.vsd; *.vdx|All files|*.*
 4. Add the following lines of code to your button click event.
 
 
@@ -579,7 +579,7 @@ Follow the steps given below for saving current symbol palette.
 1. Add SaveFileDialog control into form.
 2. Set the Filter property of SaveFileDialog as
 
-   Essential Diagram Palettes|*.edp|All files|*.*
+   Essential® Diagram Palettes|*.edp|All files|*.*
 
 3. Add the following lines of code to your button click event. 
 
@@ -611,7 +611,7 @@ if (savePaletteDialog.ShowDialog(this) == DialogResult.OK)
 ### Adding Shapes by Clicking the Diagram Page
 
 
-Essential Diagram enables you to draw the selected node by clicking the Diagram page instead of dragging from the Symbol Palette. 
+Essential® Diagram enables you to draw the selected node by clicking the Diagram page instead of dragging from the Symbol Palette. 
 
 Property Table
 
@@ -666,13 +666,13 @@ Sample Link
 
 To view a sample:
 
-1. Open the Syncfusion Dashboard.
+1. Open the Syncfusion® Dashboard.
 2. Click the Windows Forms drop-down list and select Run Locally Installed Samples.
 3. Navigate to Diagram Samples > Product Showcase > Diagram Builder.
 
 ### Preview for Symbol Palette Item
 
-Essential Diagram for Windows Forms provides preview support for Symbol Palette. When you drag an item from Symbol Palette to Diagram View, Preview of the dragged item will be displayed. You can enable or disable the preview support. 
+Essential® Diagram for Windows Forms provides preview support for Symbol Palette. When you drag an item from Symbol Palette to Diagram View, Preview of the dragged item will be displayed. You can enable or disable the preview support. 
 
 ### Use Case Scenario
 
@@ -763,7 +763,7 @@ Sample Link
 
 To view a sample:
 
-1. Open the Syncfusion Dashboard.
+1. Open the Syncfusion® Dashboard.
 2. Click the Windows Forms drop-down list and select Run Locally Installed Samples.
 3. Navigate to Diagram Samples > Product Showcase > Diagram Builder.
 
@@ -1058,7 +1058,7 @@ private void documentExplorer1_AfterSelect(object sender,TreeViewEventArgs e)
 
 ## Property Editor
 
-The Property Editor in Essential Diagram displays properties of the currently selected object(s) in the diagram. It is a Windows Forms control that can be added to the Visual Studio .NET toolbox. It also allows the users to set or modify various properties of the objects or the model. The Property Editor provides an easy interface, to set and view various property settings. 
+The Property Editor in Essential® Diagram displays properties of the currently selected object(s) in the diagram. It is a Windows Forms control that can be added to the Visual Studio .NET toolbox. It also allows the users to set or modify various properties of the objects or the model. The Property Editor provides an easy interface, to set and view various property settings. 
 
 The following table lists the properties of the Property Editor. The important property of the Property Editor is the Diagram property.
 

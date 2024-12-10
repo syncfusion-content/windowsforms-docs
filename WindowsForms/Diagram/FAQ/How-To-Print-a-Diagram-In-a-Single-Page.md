@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To Print a Diagram In a Single Page | Diagram | Windows Forms | Syncfusion
+title: How To Print a Diagram In a Single Page | Diagram | Windows Forms | Syncfusion®
 description: how to print a diagram in a single page
 platform: windowsforms
 control: Diagram
@@ -9,7 +9,7 @@ documentation: ug
 
 # How To Print a Diagram In a Single Page
 
-Essential Diagram uses the size of your diagram model and the printer page settings for calculating the number of pages to be rendered while printing. Even though you might have only one page worth of nodes in your diagram model, if the model bounds are larger, the Diagram control will attempt to paginate and print the entire model.
+Essential® Diagram uses the size of your diagram model and the printer page settings for calculating the number of pages to be rendered while printing. Even though you might have only one page worth of nodes in your diagram model, if the model bounds are larger, the Diagram control will attempt to paginate and print the entire model.
 
 To print the diagram in a single page, you have to temporarily modify the size of the model.
 

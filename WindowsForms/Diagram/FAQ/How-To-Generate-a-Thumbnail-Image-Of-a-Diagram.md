@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To Generate a Thumbnail Image Of a Diagram | Diagram | Windows Forms | Syncfusion
+title: How To Generate a Thumbnail Image Of a Diagram | Diagram | Windows Forms | Syncfusion®
 description: how to generate a thumbnail image of a diagram
 platform: windowsforms
 control: Diagram
