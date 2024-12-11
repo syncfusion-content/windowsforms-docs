@@ -45,7 +45,7 @@ In **Solution Explorer**, right-click on **Dependencies** and select **Add Refer
 
 Now, **Reference Manager** dialog will be opened. Here click **Browse** and select the needed assemblies from the location mentioned in below note section. On selecting necessary assemblies, click **Add** and then click **Ok**. Now, required assemblies are added in to the project, like in the below screenshot.
 
-N> You can get Syncfusion Windows Forms (.NET Core) controls assemblies from `netcoreapp3.0` folder in the following location - C:\Program Files (x86)\Syncfusion\Essential Studio\Windows\x.x.x.x\precompiledassemblies
+N> You can get Syncfusion Windows Forms (.NET Core) controls assemblies from `net6.0` folder in the following location - C:\Program Files (x86)\Syncfusion\Essential Studio\Windows\x.x.x.x\precompiledassemblies
 
 ![NETcore showing assembly](NETcore_images/NETcore_assembly.jpeg)
 
