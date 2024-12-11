@@ -29,7 +29,7 @@ The following steps will guide you in adding the Syncfusion WinForms components 
 
 	**Option 2:**
 
-3.	Click **Extensions > Essential Studio for WinForms > Add Syncfusion Item…** in Visual Studio.
+3.	Click **Extensions > Essential Studio® for WinForms > Add Syncfusion Item…** in Visual Studio.
 
 	![Choose Add Syncfusion Item option from menu](Item-Template-images/Add-item.png)
 
@@ -51,7 +51,7 @@ The following steps will guide you in adding the Syncfusion WinForms components 
 
 	![Syncfusion Form without Syncfusion Components](Item-Template-images/Syncfusion-Form-without-Syncfusion-Components.png) 
 
-6.	Choose an assembly reference option such as GAC location, Essential Studio installed location, or NuGet packages to specify where the required Syncfusion assemblies 	are added to the project.
+6.	Choose an assembly reference option such as GAC location, Essential Studio® installed location, or NuGet packages to specify where the required Syncfusion assemblies 	are added to the project.
 
 	N> If the Syncfusion Essential WindowsForm build is installed, the Installed location and GAC options will be enabled. Without installing the Syncfusion Essential WindowsForm setup, use the NuGet option. The GAC option will not be available when using the Syncfusion WinForms components in a .NET Core application. The Version drop-down lists the installed WinForms versions.
 
@@ -63,7 +63,7 @@ The following steps will guide you in adding the Syncfusion WinForms components 
 
 	![Syncfusion WinForms Item template Gallery](Item-Template-images/Add-syncfusion-item-details.png)
 
-9.	Then, Syncfusion licensing registration required message box will be shown if you installed the trial setup or NuGet packages since Syncfusion introduced the 			licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to 		your project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post 	 for understanding the licensing changes introduced in Essential Studio.
+9.	Then, Syncfusion licensing registration required message box will be shown if you installed the trial setup or NuGet packages since Syncfusion introduced the 			licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio® release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to 		your project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post 	 for understanding the licensing changes introduced in Essential Studio®.
 
     ![Syncfusion WinForms Item template Gallery](Item-Template-images/Syncfusion-Item-Template-Gallery-7.png)
 

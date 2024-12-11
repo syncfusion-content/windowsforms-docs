@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Toolbox Configuration | WinForms | Syncfusion
-description: This section provides information regarding all the Syncfusion Essential Studio utilities and its usage
+description: This section provides information regarding all the Syncfusion Essential Studio® utilities and its usage
 platform: windowsforms
-control: Essential Studio
+control: Essential Studio®
 documentation: ug
 ---
 
@@ -25,7 +25,7 @@ Use the following steps to add the Syncfusion WinForms controls through the Sync
    ![Add On and Utilities](Toolbox-Configuration_images/Toolbox-Configuration_img1.png)
    
    **Option 2:**  
-   Click **Syncfusion menu** and choose **Essential Studio for WinForms > Toolbox Configuration...** in **Visual Studio**.
+   Click **Syncfusion menu** and choose **Essential Studio® for WinForms > Toolbox Configuration...** in **Visual Studio**.
 
    ![Toolbox Installer via Syncfusion menu](Toolbox-Configuration_images/Syncfusion_Menu_Toolbox.png)
 
