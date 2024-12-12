@@ -9,20 +9,20 @@ documentation: ug
 
 # Add Reference for WinForms
 
-Syncfusion Reference Manager is the Visual Studio Add-In for WinForms platform. It adds the Syncfusion assembly reference to the project, either from the GAC location or Essential Studio WinForms installed location. It can also migrate the projects that contain the old versions of the Syncfusion assembly reference to newer or specific versions of the Syncfusion assembly reference. It supports Microsoft Visual Studio 2015 or higher. This Visual Studio extension is included from Essential Studio 2013 Volume 3 release.
+Syncfusion Reference Manager is the Visual Studio Add-In for WinForms platform. It adds the Syncfusion® assembly reference to the project, either from the GAC location or Essential Studio® WinForms installed location. It can also migrate the projects that contain the old versions of the Syncfusion® assembly reference to newer or specific versions of the Syncfusion® assembly reference. It supports Microsoft Visual Studio 2015 or higher. This Visual Studio extension is included from Essential Studio® 2013 Volume 3 release.
 
-N> This Reference Manager can be applied to a project for Syncfusion assembly versions 10.4.0.71 and later.
+N> This Reference Manager can be applied to a project for Syncfusion® assembly versions 10.4.0.71 and later.
 
-Follow the given steps to add the Syncfusion references in Visual Studio:
+Follow the given steps to add the Syncfusion® references in Visual Studio:
 
-> Before use the Syncfusion WinForms Reference Manager, check whether the **WinForms Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by going to Extensions -> Manage Extensions -> Installed for Visual Studio 2019 or later and for Visual Studio 2017 or lower by going to Tools -> Extensions and Updates -> Installed. If this extension not installed, please install the extension by follow the steps from the [download and installation](https://help.syncfusion.com/windowsforms/visual-studio-integration/visual-studio-extensions/download-and-installation/) help topic.
+> Before use the Syncfusion® WinForms Reference Manager, check whether the **WinForms Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by going to Extensions -> Manage Extensions -> Installed for Visual Studio 2019 or later and for Visual Studio 2017 or lower by going to Tools -> Extensions and Updates -> Installed. If this extension not installed, please install the extension by follow the steps from the [download and installation](https://help.syncfusion.com/windowsforms/visual-studio-integration/visual-studio-extensions/download-and-installation/) help topic.
 
 1. Open a new or existing **WinForms** application.
 
 2. To open Syncfusion Reference Manager Wizard, follow either one of the options below:
 
    **Option 1:**  
-   Click **Extensions->Syncfusion Menu** and choose **Essential Studio for WinForms > Add References…** or any other Form in **Visual Studio**.
+   Click **Extensions->Syncfusion Menu** and choose **Essential Studio® for WinForms > Add References…** or any other Form in **Visual Studio**.
 
    ![Syncfusion Reference Manager via Syncfusion Menu](Syncfusion-Reference-Manger_images/Syncfusion_Menu_AddReference-latest.png)
 
@@ -35,7 +35,7 @@ Follow the given steps to add the Syncfusion references in Visual Studio:
 
    ![Syncfusion Reference Manager add-in](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img1.png)
 
-3. The Syncfusion Reference Manager Wizard that contains the list of Syncfusion WinForms controls that are loaded.
+3. The Syncfusion Reference Manager Wizard that contains the list of Syncfusion® WinForms controls that are loaded.
 
    ![Syncfusion Reference Manger Wizard](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img2.png)
 
@@ -65,11 +65,11 @@ Follow the given steps to add the Syncfusion references in Visual Studio:
 
    ![Syncfusion Reference Manager success status in Visual Studio status bar](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img6.png)
 
-6. Then, Syncfusion licensing registration required message box will be shown, if you installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the  [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post for understanding the licensing changes introduced in Essential Studio.
+6. Then, Syncfusion® licensing registration required message box will be shown, if you installed the trial setup or NuGet packages since Syncfusion® introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio® release. Navigate to the  [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post for understanding the licensing changes introduced in Essential Studio®.
 
    ![Syncfusion license registration required information dialog in Syncfusion Reference Manager](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img7.png)
 
-N>  Syncfusion provides Reference Manager support for specific .NET Framework, which is shipped (assemblies) in Syncfusion Essential Studio setup. So, if you try to add Syncfusion assemblies in the project and project framework is not supported with selected Syncfusion version assemblies, the dialog appears along with **“Current build v{version} is not supported this framework v{Framework Version}”** message.
+N>  Syncfusion® provides Reference Manager support for specific .NET Framework, which is shipped (assemblies) in Syncfusion® Essential Studio® setup. So, if you try to add Syncfusion assemblies in the project and project framework is not supported with selected Syncfusion® version assemblies, the dialog appears along with **“Current build v{version} is not supported this framework v{Framework Version}”** message.
 
 
 

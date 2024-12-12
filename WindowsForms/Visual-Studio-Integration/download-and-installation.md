@@ -9,7 +9,7 @@ documentation: ug
 
 # Download and Installation
 
-Syncfusion publishes the Visual Studio extension in the below Visual Studio marketplace link. You can either install it directly from Visual Studio or download and install it from the Visual Studio marketplace.
+Syncfusion® publishes the Visual Studio extension in the below Visual Studio marketplace link. You can either install it directly from Visual Studio or download and install it from the Visual Studio marketplace.
 
 [Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.WindowsVSExtensions)
 
@@ -17,7 +17,7 @@ Syncfusion publishes the Visual Studio extension in the below Visual Studio mark
 
 ## Prerequisites
 
-The following software prerequisites must be installed to install the Syncfusion WinForms extension, as well as to creating, adding snippet, converting, and upgrading Syncfusion WinForms applications.
+The following software prerequisites must be installed to install the Syncfusion® WinForms extension, as well as to creating, adding snippet, converting, and upgrading Syncfusion® WinForms applications.
 
 * [Visual Studio 2010 or later](https://visualstudio.microsoft.com/downloads).
 

@@ -10,29 +10,29 @@ documentation: ug
 
 # Syncfusion WinForms Template Studio
 
-The WinForms Template Studio by Syncfusion is a specialized tool for constructing applications with their WinForms components. This studio simplifies development by incorporating crucial Syncfusion components, handling required NuGet references, offering preset namespaces, and creating component render code. Acting as a wizard, it facilitates the creation of WinForms applications using Syncfusion components, streamlining the process for developers.
+The WinForms Template Studio by Syncfusion® is a specialized tool for constructing applications with their WinForms components. This studio simplifies development by incorporating crucial Syncfusion® components, handling required NuGet references, offering preset namespaces, and creating component render code. Acting as a wizard, it facilitates the creation of WinForms applications using Syncfusion® components, streamlining the process for developers.
 
-I> The Syncfusion WinForms Template Studio is available from v24.1.41.
+I> The Syncfusion® WinForms Template Studio is available from v24.1.41.
 
 N> WinForms Template Studio is compatible with Visual Studio 2022, Visual Studio 2019, and Visual Studio 2017. For the Visual Studio 2015 or lower versions, it is recommended to use a [WinForms project template](https://help.syncfusion.com/windowsforms/visual-studio-integration/create-project).
 
-Create the Syncfusion WinForms project using the Visual Studio Project Template by following the provided steps.
+Create the Syncfusion® WinForms project using the Visual Studio Project Template by following the provided steps.
 
 > Check whether the **WinForms Extensions - Syncfusion** are installed or not in Visual Studio Extension Manager by going to **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later, and for Visual Studio 2017 by going to **Tools -> Extensions and Updates -> Installed**. If this extension is not installed, please install the extension by following the steps from the [download and installation](https://help.syncfusion.com/windowsforms/visual-studio-integration/download-and-installation) help topic.
 
 1.	Open the Visual Studio 2022.
 
-2.	Select one of the following options to create the Syncfusion WinForms application
+2.	Select one of the following options to create the Syncfusion® WinForms application
 
 	**Option 1:**  
-	Choose **Extension -> Syncfusion -> Essential Studio for WinForms -> Create New Syncfusion Project…** from the Visual Studio menu.
+	Choose **Extension -> Syncfusion -> Essential Studio® for WinForms -> Create New Syncfusion Project…** from the Visual Studio menu.
     
 	![Choose Syncfusion WinForms Application from Visual Studio new project dialog via Syncfusion menu](Template-Studio-Images/WF-1.png)
 
 	N> In Visual Studio 2017, you can see the Syncfusion menu directly in the Visual Studio menu.
 
 	**Option 2:**   
-	Choose **File -> New -> Project** from the menu. This launches a new dialogue for creating a new application. Filtering the application type by Syncfusion or typing Syncfusion as a keyword in the search option can help you find the Syncfusion templates for WinForms.
+	Choose **File -> New -> Project** from the menu. This launches a new dialogue for creating a new application. Filtering the application type by Syncfusion or typing Syncfusion as a keyword in the search option can help you find the Syncfusion® templates for WinForms.
 
 	![Choose Syncfusion WinForms Application from Visual Studio new project dialog](Template-Studio-Images/WF-2.png)
 
@@ -40,15 +40,15 @@ Create the Syncfusion WinForms project using the Visual Studio Project Template 
 
 	![Choose Syncfusion WinForms Application from Visual Studio new project dialog](Template-Studio-Images/WF-3.png)
 
-4.	When you launch the **Syncfusion WinForms Template Studio**, you will encounter a configuration wizard that allows you to set up your Syncfusion WinForms application. Within this wizard, you will have the option to specify your preferred .NET Core Version or .NET Framework Version, select the desired language(CSharp or Visual Basic), and choose the reference type according to your requirements.
+4.	When you launch the **Syncfusion WinForms Template Studio**, you will encounter a configuration wizard that allows you to set up your Syncfusion® WinForms application. Within this wizard, you will have the option to specify your preferred .NET Core Version or .NET Framework Version, select the desired language(CSharp or Visual Basic), and choose the reference type according to your requirements.
 
 	![Syncfusion WinForms project configuration wizard](Template-Studio-Images/WF-5.png)
 
-	N> The installed location and GAC options will be available only after the Syncfusion Essential WinForms setup has been installed. Use the NuGet option instead of installing the Syncfusion Essential WinForms setup. Also, the GAC option will not be available when you choose .NET 6.0, .NET 7.0, .NET 8.0 and .NET 9.0 from the project type option in Visual Studio.
+	N> The installed location and GAC options will be available only after the Syncfusion® Essential WinForms setup has been installed. Use the NuGet option instead of installing the Syncfusion® Essential WinForms setup. Also, the GAC option will not be available when you choose .NET 6.0, .NET 7.0, .NET 8.0 and .NET 9.0 from the project type option in Visual Studio.
 
 	I> Visual Basic Language support is available in WinForms Template Studio starting from version 25.1.35.
 
-5.  Navigate to the **Type** tab and choose the Syncfusion WinForms application type you want. When selecting the type of template for your application, you have two options:
+5.  Navigate to the **Type** tab and choose the Syncfusion® WinForms application type you want. When selecting the type of template for your application, you have two options:
 
 	![Syncfusion WinForms project type selection wizard](Template-Studio-Images/WF-4.png)
 
@@ -58,7 +58,7 @@ Create the Syncfusion WinForms project using the Visual Studio Project Template 
 
 	**Project type:** Choose this option to select from 4 project types, including Blank, Menu Bar, Ribbon, and Tabbed Form.
 
-6. Click **Next** or navigate to the **Pages** tab to access a list of available Syncfusion WinForms components you can add to the application.
+6. Click **Next** or navigate to the **Pages** tab to access a list of available Syncfusion® WinForms components you can add to the application.
 
 	![Syncfusion WinForms pages selection wizard](Template-Studio-Images/WF-6.png)
 
@@ -82,7 +82,7 @@ Create the Syncfusion WinForms project using the Visual Studio Project Template 
 
      ![Syncfusion WinForms project details selection and unselection wizard](Template-Studio-Images/WF-8.png)
 
-9.	Click **Create** to generate the Syncfusion WinForms application. Once you've created the project, the relevant Syncfusion NuGet packages will be automatically added to your project for the chosen components. For example, if you add an **DataGrid** control, the corresponding Syncfusion NuGet packages required for that control will be installed.
+9.	Click **Create** to generate the Syncfusion® WinForms application. Once you've created the project, the relevant Syncfusion® NuGet packages will be automatically added to your project for the chosen components. For example, if you add an **DataGrid** control, the corresponding Syncfusion® NuGet packages required for that control will be installed.
 
 	![Syncfusion WinForms project created with readme](Template-Studio-Images/WF-9.png)
 
@@ -158,6 +158,6 @@ Here's a simple explanation:
 	>   </tbody>
 	> </table>
 
-13.	If you install the trial setup or NuGet packages from nuget.org, you must register the Syncfusion license key to your application since Syncfusion introduced the licensing system from the 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key) to generate and register the Syncfusion license key to your application. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in 	Essential Studio.
+13.	If you install the trial setup or NuGet packages from nuget.org, you must register the Syncfusion® license key to your application since Syncfusion® introduced the licensing system from the 2018 Volume 2 (v16.2.0.41) Essential Studio® release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key) to generate and register the Syncfusion® license key to your application. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in 	Essential Studio®.
 
 	![Syncfusion license registration required information dialog in Syncfusion WinForms project](Template-Studio-Images/Syncfusion-Project-Template-Gallery-8.png)   
