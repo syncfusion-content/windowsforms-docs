@@ -2663,3 +2663,349 @@ _FREQUENCY(data_array, bins_array)_
 * If bins_array contains no values, `FREQUENCY` returns the total number of elements in data_array.
 
 * `FREQUENCY` ignores blank cells and text in data_array.
+
+## F.TEST
+
+The `F.TEST` function returns the two-tailed probability that the variances in two data sets (array1 and array2) are not significantly different.
+
+**Syntax**
+
+*F.TEST(array1, array2)*
+
+**Where:**
+
+* array1: The first array or range of numerical data.
+
+* array2: The second array or range of numerical data.
+
+**Remarks**
+
+* The arguments must be either numbers, arrays, range, or references that contain numbers.
+
+* If an array or reference argument contains text, logical values, or empty cells, those values are ignored; however, cells with the value zero are included.
+
+* If the number of elements in array1 or array2 is less than 2, or if the variance of array1 or array2 is zero, `F.TEST` returns the `#DIV/0!` error.
+
+* `F.TEST` is an updated version of the function `FTEST`.
+
+## FTEST
+
+The `FTEST` function returns the two-tailed probability that the variances in two data sets (array1 and array2) are not significantly different.
+
+**Syntax**
+
+*FTEST(array1, array2)*
+
+**Where:**
+
+* array1: The first array or range of numerical data.
+
+* array2: The second array or range of numerical data.
+
+**Remarks**
+
+* The arguments must be either number, arrays, ranges, or references that contain numbers.
+
+* If an array or reference argument contains text, logical values, or empty cells, those values are ignored; however, cells with the value zero are included.
+
+* If the number of elements in array1 or array2 is less than 2, or if the variance of array1 or array2 is zero, `FTEST` returns the `#DIV/0!` error.
+
+* `FTEST` is an older version of the `F.TEST` function
+
+## F.INV
+
+The `F.INV` function returns the value at which a given probability corresponds to the F probability distribution, typically used to compare the variability between two data sets.
+
+**Syntax**
+
+*F.INV(probability, deg_freedom1, deg_freedom2)*
+
+**Where:**
+
+* probability: A probability associated with the F cumulative distribution.
+
+* deg_freedom1: The numerator degrees of freedom, representing the variability in the first data set or group.
+
+* deg_freedom2: The denominator degrees of freedom, representing the variability in the second data set or group.
+
+**Remarks**
+
+* If any argument is non-numeric, `F.INV` returns the `#VALUE!` error.
+
+* If probability is less than 0 or greater than 1, `F.INV` returns the `#NUM!` error.
+
+* If deg_freedom1 or deg_freedom2 is not an integer, it is truncated.
+
+* If deg_freedom1 or deg_freedom2 is less than 1, `F.INV` returns the `#NUM!` error.
+
+## BINOM.DIST.RANGE
+
+The `BINOM.DIST.RANGE` function returns the probability of a trial result using a binomial distribution.
+
+**Syntax**
+
+*BINOM.DIST.RANGE(trials, probability_s, number_s, [number_s2])*
+
+**Where:**
+
+* trials: The number of independent trials. This value must be greater than or equal to 0.
+
+* probability_s: The probability of success in each trial. 
+
+* number_s: The number of successes in trials. 
+
+* number_s2 (optional): The probability that the number of successes will be between number_s and number_s2, where number_s is the minimum and number_s2 is the maximum, within the total number of trials.
+
+**Remarks**
+
+* If probability is less than 0 or greater than 1, `BINOM.DIST.RANGE` will return the `#NUM!` error.
+
+* If number_s2 is less than number_s or greater than trails, `BINOM.DIST.RANGE` will return the `#NUM!` error.
+
+* If number_s less than 0 or greater than trails, `BINOM.DIST.RANGE` will return the `#NUM!` error.
+
+* If any arguments are non-numeric, `BINOM.DIST.RANGE` will return the `#VALUE!` error.
+
+* Numeric arguments are truncated to integers.
+
+## BETADIST
+
+The `BETADIST` function returns the cumulative beta probability density function.
+
+**Syntax**
+
+*BETADIST(x, alpha, beta, [A], [B])*
+
+**Where:**
+
+* x: The value between A and B at which to evaluate the function.
+
+* alpha: A parameter of the distribution.
+
+* beta: A parameter of the distribution.
+
+* A (optional): A lower bound to the interval of x. The default value of A is 0.
+
+* B (optional): An upper bound to the interval of x. The default value of B is 1.
+
+**Remarks**
+
+* If any argument is non-numeric, `BETADIST` returns the `#VALUE!` error.
+
+* If alpha or beta is less than or equal to 0, `BETADIST` returns the `#NUM!` error.
+
+* If x is less than A or greater than B, or A equals B, `BETADIST` returns the `#NUM!` error.
+
+## TDIST
+
+The `TDIST` function returns the percentage points (probability) for the Student's t-distribution, where a numeric value (x) is a calculated value of t for which the percentage points are to be computed.
+
+**Syntax**
+
+*TDIST(x, deg_freedom, tails)*
+
+**Where:**
+
+* x: The numeric value at which to evaluate the distribution.
+
+* deg_freedom: An integer indicating the number of degrees of freedom.
+
+* tails: Specifies the number of distribution tails to return. 
+
+	* 1 - one-tailed distribution.
+
+	* 2 - two-tailed distribution.
+
+**Remarks**
+
+* If any argument is non-numeric, `TDIST` returns the `#VALUE!` error.
+
+* If deg_freedom is less than 1, `TDIST` returns the `#NUM!` error.
+
+* The deg_freedom and tails arguments are truncated to integers.
+
+* If tails is any value other than 1 or 2, `TDIST` returns the `#NUM!` error.
+
+* If x is less than 0, `TDIST` returns the `#NUM!` error.
+
+## TINV
+
+The `TINV` function returns the two-tailed inverse of the Student's t-distribution.
+
+**Syntax** 
+
+*TINV(probability, deg_freedom)*
+
+**Where:**  
+
+* probability: The probability associated with the two-tailed Student's t-distribution.  
+
+* deg_freedom: The number of degrees of freedom to characterize the distribution.  
+
+**Remarks** 
+
+* If the probability or deg_freedom is non-numeric, `TINV` returns the `#VALUE!` error.  
+
+* If the probability is less than or equal to 0 or greater than 1, `TINV` returns the `#NUM!` error.  
+
+* If deg_freedom is not an integer, it is truncated to the nearest integer.  
+
+* If deg_freedom is less than 1, the function `TINV` returns the `#NUM!` error.  
+
+## T.TEST
+
+The `T.TEST` function returns the probability associated with a Student's t-Test, used to determine if two samples likely come from the same population with an equal mean.
+
+**Syntax**  
+
+*T.TEST(array1, array2, tails, type)*
+
+**Where:**  
+
+* array1: The first data set.  
+
+* array2: The second data set.  
+
+* tails: Specifies the number of distribution tails.
+
+	* 1 - One tailed distribution.
+
+	* 2 - Two tailed distribution.
+
+* type: The kind of t-Test to perform.
+
+	* 1 - Paired.
+
+	* 2 - Two-sample equal variance.
+
+	* 3 - Two-sample unequal variance.
+
+**Remarks**  
+
+* If array1 and array2 have a different number of data points, and type = 1 (paired), `T.TEST` returns the `#N/A` error value.  
+
+* The tails and type arguments are truncated to integers.  
+
+* If tails or type is non-numeric, `T.TEST` returns the `#VALUE!` error.  
+
+* If tails is any value other than 1 or 2, `T.TEST` returns the `#NUM!` error.  
+
+## T.INV.2T
+
+The `T.INV.2T` function returns the two-tailed inverse of the Student's t-distribution.
+
+**Syntax**  
+
+*T.INV.2T(probability, deg_freedom)*
+
+**Where:**  
+
+* probability: The probability associated with the Student's t-distribution.  
+
+* deg_freedom: The number of degrees of freedom with which to characterize the distribution.  
+
+**Remarks**  
+
+* If probability or deg_freedom is non-numeric, `T.INV.2T` returns the `#VALUE!` error.  
+
+* If the probability is less than or equal to 0 or greater than 1, `T.INV.2T` returns the `#NUM! `error.  
+
+* If deg_freedom is not an integer, it is truncated to the nearest integer.  
+
+* If deg_freedom is less than 1, `T.INV.2T` returns the `#NUM!` error.  
+
+## T.DIST.RT Function
+
+The `T.DIST.RT` function returns the right-tailed Student's t-distribution.  
+
+**Syntax**  
+
+*T.DIST.RT(x, deg_freedom)*  
+
+**Where:**  
+
+* x: The numeric value at which to evaluate the distribution.  
+
+* deg_freedom: An integer indicating the number of degrees of freedom.  
+
+**Remarks** 
+
+* If x or deg_freedom is non-numeric, `T.DIST.RT` returns the `#VALUE!` error.  
+
+* If deg_freedom is less than 1, `T.DIST.RT` returns the `#NUM!` error.  
+
+## T.DIST.2T
+
+The `T.DIST.2T` function returns the two-tailed Student's t-distribution.
+
+**Syntax**  
+
+*T.DIST.2T(x, deg_freedom)*  
+
+**Where:**  
+
+* x: The numeric value at which to evaluate the distribution.
+
+* deg_freedom: An integer indicating the number of degrees of freedom.  
+
+**Remarks**  
+
+* If x or deg_freedom is non-numeric, `T.DIST.2T` returns the `#VALUE!` error. 
+
+* If deg_freedom is less than 1, `T.DIST.2T` returns the `#NUM!` error.  
+
+* If x is less than 0, `T.DIST.2T` returns the `#NUM!` error.  
+
+## FORECAST.LINEAR
+
+The `FORECAST.LINEAR` function predicts a future value based on existing data by using linear regression. It calculates the dependent value (y) for a given independent value (x), which is useful for forecasting trends such as sales or inventory needs.
+
+**Syntax**
+
+*FORECAST.LINEAR(x, known_y's, known_x's)*
+
+**Where:**
+
+* x: The data point for which you want to predict a value.
+
+* known_y's: The dependent array or range of data.
+
+* known_x's: The independent array or range of data.
+
+**Remarks**
+
+* If x is non-numeric, `FORECAST.LINEAR` returns the `#VALUE!` error.
+
+* If known_y's or known_x's is empty, or if one has more data points than the other, `FORECAST.LINEAR` returns the `#N/A` error.
+
+* If the variance of known_x's equals zero, `FORECAST.LINEAR` returns the `#DIV/0!` error.
+
+## TREND
+
+The `TREND` function returns values along a linear trend by fitting a straight line to the known y-values and x-values using the method of least squares. It predicts the y-values for a given array of new x-values, which is useful for forecasting data trends.
+
+**Syntax**
+
+*TREND(known_y's, [known_x's], [new_x's], [const])*
+
+**Where:**
+
+* known_y's: The set of y-values in the equation `y = mx + b`.
+
+* known_x's (Optional): The independent array or range of data (x-values) corresponding to the known_y's. If  omitted, it is assumed to be the array {1,2,3,...} that is the same size as known_y's.
+
+* new_x's (Optional): The array of new x-values for which you want to predict corresponding y-values. If  omitted, it is assumed to be the array {1,2,3,...} that is the same size as known_y's.
+
+* const (Optional) : A logical value that determines whether the intercept of the regression line is forced to zero.
+
+	* TRUE or Omitted: Calculates normally using - `y = mx + b`.
+
+	* FALSE: In `y = mx + b`, b is set equal to 0, and the m-values are adjusted so that y = mx.
+
+**Remarks:**
+
+* If known_y's or known_x's are empty, or if one has more data points than the other, `TREND` function will return the `#N/A` error.
+
+* If the variance of known_x's equals zero, `TREND` will return the `#DIV/0!` error.
+
+
