@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How To Detect Whether a New Symbol Has Been Added | Syncfusion®
-description: how to detect whether a new symbol or shape has been added / removed from a diagram
+description: Detect changes in a diagram by using Diagram.Model.EventSink.NodeCollectionChanged, which tracks node additions or removals with CollectionExEventArgs.
 platform: windowsforms
 control: Diagram
 documentation: ug

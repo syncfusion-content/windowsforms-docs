@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How To Detect Connection Changes Occurs in Diagram | Syncfusion®
-description: how to detect whether the connection changes occurs in diagram
+description: Monitor connection changes between diagram nodes using Diagram.Model.EventSink's ConnectionChanging/ConnectionChanged events for real-time updates.
 platform: windowsforms
 control: Diagram
 documentation: ug

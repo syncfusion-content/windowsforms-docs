@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How To Retrieve the Port Information Of a Symbol | Syncfusion®
-description: how to retrieve the port information of a particular symbol
+description: Learn to use the HandlesHitTesting.GetConnectionPointAtPoint method to retrieve port details for a symbol by specifying the Node and Point parameters.
 platform: windowsforms
 control: Diagram
 documentation: ug

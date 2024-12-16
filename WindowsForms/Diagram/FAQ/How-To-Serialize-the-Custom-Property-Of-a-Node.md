@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How To Serialize the Custom Property Of a Node | Syncfusion®
-description: how to serialize the custom property of a node
+description: Learn how to serialize custom properties in Essential® Diagram by deriving a custom node class and overriding the GetObjectData() method.
 platform: windowsforms
 control: Diagram
 documentation: ug

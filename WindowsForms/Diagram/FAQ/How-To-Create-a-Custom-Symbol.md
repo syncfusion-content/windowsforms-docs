@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How To Create a Custom Symbol | Syncfusion®
-description: how to create a custom symbol
+description: Learn to design and integrate custom symbols into your projects, enhancing visual communication and brand identity with unique graphics tailored to your needs.
 platform: windowsforms
 control: Diagram
 documentation: ug

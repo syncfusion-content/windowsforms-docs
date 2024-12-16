@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Add Symbol Palette to PaletteGroupBar | Syncfusion®
-description: how to add dynamically created symbol palette to palettegroupbar
+description: Learn how to dynamically add a symbol palette to a PaletteGroupBar in your application, enabling flexible and customizable UI design options.
 platform: windowsforms
 control: Diagram
 documentation: ug

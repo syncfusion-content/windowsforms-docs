@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Detect whether a Property Value is Changed  | Syncfusion®
-description: how to detect whether a property value is changed in the property editor?
+description: Use the PropertyValueChanged event in a property grid to track changes in property values within the property editor efficiently.
 platform: windowsforms
 control: Diagram
 documentation: ug

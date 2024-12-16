@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How To Convert Diagram Node To Any Image | Syncfusion®
-description: how to convert diagram node to any image
+description: Learn how to convert a diagram node into an image format using various tools and techniques for seamless integration into documents and presentations.
 platform: windowsforms
 control: Diagram
 documentation: ug

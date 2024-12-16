@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Import Visio Stencil | Syncfusion®
-description: how to import visio stencil?
+description: Learn to import Visio stencils into symbol palettes using the Visio stencil converter and Syncfusion.Diagram.Utility.Windows.dll for easy integration.
 platform: windowsforms
 control: Diagram
 documentation: ug

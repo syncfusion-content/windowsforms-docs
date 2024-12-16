@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How To Print a Diagram In a Single Page | Syncfusion®
-description: how to print a diagram in a single page
+description: Learn how to adjust settings in Essential® Diagram to print your complete diagram on a single page, ensuring model bounds fit within printer parameters.
 platform: windowsforms
 control: Diagram
 documentation: ug

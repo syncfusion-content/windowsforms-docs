@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How To Set the Custom Position For a Label | Syncfusion®
-description: how to set the custom position for a label
+description: Learn to set a label's position using 'Custom' and adjust its X and Y coordinates using Offset values for precise placement.
 platform: windowsforms
 control: Diagram
 documentation: ug

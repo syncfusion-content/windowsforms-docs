@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customizing the appearances of the Selection handles | Syncfusion®
-description: How to Customizing the Appearances of the Selection handles
+description: Learn to customize selection handles in Syncfusion's Diagram control using the CustomHandleRenderer property to enhance your application's visuals.
 platform: WindowsForms
 control: Diagram
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to disable label editing | Syncfusion®
-description: how to disable label editing
+description: To disable label editing for a node, simply set the node’s label ReadOnly property to true, effectively preventing any modifications to the label.
 platform: windowsforms
 control: Diagram
 documentation: ug

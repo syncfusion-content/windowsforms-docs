@@ -1,7 +1,12 @@
 ---
 layout: post
 title: How To Protect Links From User Selection  Manipulation | Syncfusion®
-description: how to protect links from user selection / manipulation
+description: Learn how to prevent users from selecting or manipulating links by using the EditStyle class to set the Enabled property to false, ensuring protection.
+
+
+
+
+
 platform: windowsforms
 control: Diagram
 documentation: ug

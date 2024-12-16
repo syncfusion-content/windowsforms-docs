@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How To Smooth out the Edges Of the Shapes In a Diagram | Syncfusion®
-description: how to smooth-out the edges of the shapes in a diagram
+description: Use Diagram.Model.RenderingStyle.SmoothingMode to enhance shapes' visuals by smoothing edges, lines, and curves in your diagram.
 platform: windowsforms
 control: Diagram
 documentation: ug
