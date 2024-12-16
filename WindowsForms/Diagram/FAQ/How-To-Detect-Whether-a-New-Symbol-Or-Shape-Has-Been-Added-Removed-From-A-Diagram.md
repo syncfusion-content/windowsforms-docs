@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To Detect Whether a New Symbol Or Shape Has Be | Diagram | Windows Forms | Syncfusion®
+title: How To Detect Whether a New Symbol Has Been Added | Syncfusion®
 description: how to detect whether a new symbol or shape has been added / removed from a diagram
 platform: windowsforms
 control: Diagram

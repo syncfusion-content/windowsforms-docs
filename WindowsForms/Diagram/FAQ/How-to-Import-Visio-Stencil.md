@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Import Visio Stencil | Diagram | Windows Forms | Syncfusion®
+title: How to Import Visio Stencil | Syncfusion®
 description: how to import visio stencil?
 platform: windowsforms
 control: Diagram

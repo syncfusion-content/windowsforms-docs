@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To Protect Links From User Selection  Manipula | Diagram | Windows Forms | Syncfusion®
+title: How To Protect Links From User Selection  Manipulation | Syncfusion®
 description: how to protect links from user selection / manipulation
 platform: windowsforms
 control: Diagram

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Move Nodes on a Diagram Programmatically | Diagram | Windows Forms | Syncfusion®
+title: How to Move Nodes on a Diagram Programmatically | Syncfusion®
 description: how to move nodes on a diagram programmatically?
 platform: windowsforms
 control: Diagram

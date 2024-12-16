@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To Control the Number Of Connections That Can  | Diagram | Windows Forms | Syncfusion®
+title: How To Control the Number Of Connections From Port | Syncfusion®
 description: how to control the number of connections that can be drawn from / to the port
 platform: windowsforms
 control: Diagram

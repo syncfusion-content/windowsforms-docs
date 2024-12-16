@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To Set the Custom Position For a Label | Diagram | Windows Forms | Syncfusion®
+title: How To Set the Custom Position For a Label | Syncfusion®
 description: how to set the custom position for a label
 platform: windowsforms
 control: Diagram

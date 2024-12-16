@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Add Dynamically Created Symbol Palette to P | Diagram | Windows Forms | Syncfusion®
+title: How to Add Symbol Palette to PaletteGroupBar | Syncfusion®
 description: how to add dynamically created symbol palette to palettegroupbar
 platform: windowsforms
 control: Diagram

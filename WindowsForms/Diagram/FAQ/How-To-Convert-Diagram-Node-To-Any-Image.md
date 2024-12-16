@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To Convert Diagram Node To Any Image | Diagram | Windows Forms | Syncfusion®
+title: How To Convert Diagram Node To Any Image | Syncfusion®
 description: how to convert diagram node to any image
 platform: windowsforms
 control: Diagram

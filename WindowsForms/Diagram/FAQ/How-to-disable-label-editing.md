@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to disable label editing | Diagram | Windows Forms | Syncfusion®
+title: How to disable label editing | Syncfusion®
 description: how to disable label editing
 platform: windowsforms
 control: Diagram
