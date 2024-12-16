@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to Remove the Gray Area around a Diagram | Diagram | Windows Forms | Syncfusion
-description: how to remove the gray area around a diagram?
+title: How to Remove the Gray Area around a Diagram | Syncfusion®
+description: Set the ScrollVirtualBounds property to Empty to eliminate the extra gray area surrounding a diagram, ensuring a cleaner presentation.
 platform: windowsforms
 control: Diagram
 documentation: ug

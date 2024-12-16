@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Label in Windows Forms Diagram control | Syncfusion
-description: Learn about Label support in Syncfusion Windows Forms Diagram control, its elements and more details.
+title: Label in Windows Forms Diagram control | Syncfusion®
+description: Learn about Label support in Syncfusion® Windows Forms Diagram control, its elements and more details.
 platform: windowsforms
 control: Diagram
 documentation: ug
@@ -448,7 +448,7 @@ Syncfusion.Windows.Forms.Diagram.Rectangle rectangle = new Syncfusion.Windows.Fo
 Syncfusion.Windows.Forms.Diagram.Label label = new Syncfusion.Windows.Forms.Diagram.Label();
 //To set the label constraint as Interaction...
 label.Constraints = LabelConstraints.Interaction;
-label.Text = "Welcome to Syncfusion";
+label.Text = "Welcome to Syncfusion®";
 rectangle.Labels.Add(label);
 
 label = new Syncfusion.Windows.Forms.Diagram.Label();
@@ -475,7 +475,7 @@ Dim rectangle As New Syncfusion.Windows.Forms.Diagram.Rectangle(New RectangleF(1
 Dim label As New Syncfusion.Windows.Forms.Diagram.Label()
 'To set the label constraint as Interaction...
 label.Constraints = LabelConstraints.Interaction
-label.Text = "Welcome to Syncfusion"
+label.Text = "Welcome to Syncfusion®"
 rectangle.Labels.Add(label)
 
 label = New Syncfusion.Windows.Forms.Diagram.Label()

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How To Create a Custom Symbol | Diagram | Windows Forms | Syncfusion
-description: how to create a custom symbol
+title: How To Create a Custom Symbol | Syncfusion®
+description: Learn to design and integrate custom symbols into your projects, enhancing visual communication and brand identity with unique graphics tailored to your needs.
 platform: windowsforms
 control: Diagram
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # How To Create a Custom Symbol
 
-The following code sample demonstrates how you can create a custom symbol and use it in Essential Diagram.
+The following code sample demonstrates how you can create a custom symbol and use it in Essential® Diagram.
 
 1. Create the custom symbol.
 

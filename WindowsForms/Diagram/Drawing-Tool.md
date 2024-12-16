@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Drawing Tool in Windows Forms Diagram control | Syncfusion
-description: Learn about Drawing Tool support in Syncfusion Windows Forms Diagram control, its elements, and more details.
+title: Drawing Tool in Windows Forms Diagram control | Syncfusion®
+description: Learn about Drawing Tool support in Syncfusion® Windows Forms Diagram control, its elements, and more details.
 platform: windowsforms
 control: Diagram
 documentation: ug
