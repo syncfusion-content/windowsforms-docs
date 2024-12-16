@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How To Display ToolTips For the Symbols | Diagram | Windows Forms | Syncfusion
-description: how to display tooltips for the symbols
+title: How To Display ToolTips For the Symbols | Syncfusion®
+description: Learn how to use the MouseEnter and MouseLeave events to display tooltips specifically for 'MySymbol' nodes in your application model.
 platform: windowsforms
 control: Diagram
 documentation: ug
