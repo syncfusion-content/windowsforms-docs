@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with Interaction Modes in WinForms PDF Viewer | Syncfusion&reg;
+title: Working with Interaction Modes in WinForms PDFViewer | Syncfusion&reg;
 description: Learn about Working with Interaction Modes support in Syncfusion&reg; Windows Forms PDF Viewer (PdfViewerControl) control and more details.
 platform: windowsforms
 control: PDF Viewer
