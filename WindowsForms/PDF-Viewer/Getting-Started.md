@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Windows Forms PDF Viewer Control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms PDF Viewer control, its elements and more details.
+title: Getting Started with Windows Forms PDF Viewer Control | Syncfusion&reg;
+description: Learn here about getting started with Syncfusion&reg; Windows Forms PDF Viewer control, its elements and more details.
 platform: windowsforms
 control: PdfViewerControl
 documentation: ug

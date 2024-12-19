@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bookmark Navigation in Windows Forms PDF Viewer | Syncfusion
-description: Learn about Bookmark Navigation support in Syncfusion Windows Forms PDF Viewer (PdfViewerControl) control and more details.
+title: Bookmark Navigation in Windows Forms PDF Viewer | Syncfusion&reg;
+description: Learn about Bookmark Navigation support in Syncfusion&reg; Windows Forms PDF Viewer (PdfViewerControl) control and more details.
 platform: windowsforms
 control: PdfViewerControl
 documentation: ug

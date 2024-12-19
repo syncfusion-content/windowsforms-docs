@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Extract Text from PDF Files in Windows Forms PDF Viewer | Syncfusion
-description: Learn about Extract Text from PDF Files support in Syncfusion Windows Forms PDF Viewer (PdfViewerControl) control and more details.
+title: Extract Text from PDF Files in Windows Forms PDF Viewer | Syncfusion&reg;
+description: Learn about Extract Text from PDF Files support in Syncfusion&reg; Windows Forms PDF Viewer (PdfViewerControl) control and more details.
 platform: windowsforms
 control: PDF Viewer
 documentation: ug

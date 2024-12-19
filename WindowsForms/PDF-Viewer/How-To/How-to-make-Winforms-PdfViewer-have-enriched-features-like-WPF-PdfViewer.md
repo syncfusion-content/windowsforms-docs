@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Enhance WinForms PdfViewer with WPF Features | WinForms | Syncfusion
+title: Enhance WinForms PdfViewer with WPF Features | WinForms | Syncfusion&reg;
 description: Learn how to integrate the WPF PdfViewer in Windows Forms to access advanced features like annotations, form filling, and signatures.
 platform: windowsforms
 control: PDF Viewer
@@ -15,7 +15,7 @@ To host the WPF PdfViewer in the winforms application follow the below steps,
 
 1. Create an UserControl and add the below XAML code to it.
 
-* Add the following Syncfusion namespace in XAML to make use of the WPF [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html)
+* Add the following Syncfusion&reg; namespace in XAML to make use of the WPF [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html)
 
    ~~~xaml 
    <UserControl

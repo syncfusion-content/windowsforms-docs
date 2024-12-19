@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Get a mouse position to the page | PDF Viewer | WinForms | Syncfusion
+title: Get a mouse position to the page | PDF Viewer | WinForms | Syncfusion&reg;
 description: The PDF Viewer notifies, you when performing the mouse click and mouse move operations in the PDF pages.
 platform: windowsforms
 control: PDF Viewer
