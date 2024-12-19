@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PDF Rendering Engines in Windows Forms PDF Viewer control | Syncfusion&reg;
+title: PDF Rendering Engines in WinForms PDFViewer | Syncfusion&reg;
 description: Learn about PDF Rendering Engines support in Syncfusion&reg; Windows Forms PDF Viewer (PdfViewerControl) control and more details.
 platform: windowsforms
 control: PDF Viewer
