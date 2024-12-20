@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with Hyperlinks in Windows Forms PDF Viewer | Syncfusion
-description: Learn about Working with Hyperlinks support in Syncfusion Windows Forms PDF Viewer (PdfViewerControl) control and more details.
+title: Working with Hyperlinks in Windows Forms PDF Viewer | Syncfusion&reg;
+description: Learn about Working with Hyperlinks support in Syncfusion&reg; Windows Forms PDF Viewer (PdfViewerControl) control and more details.
 platform: windowsforms
 control: PdfViewerControl
 documentation: ug
