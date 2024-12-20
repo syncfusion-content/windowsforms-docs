@@ -72,7 +72,7 @@ sfComboBox1.Style.DropDownButtonStyle.FocusedBackColor = Color.Pink
 
 ![customization the DropDownButtonStyle](Appearance_images/Appearance_img3.png)
 
-Appearance of the drop-down button icon can be customized by setting the `DropDownButtonStyle` property and the ForeColor properties of the deafult icon as Transparent.
+Appearance of the drop-down button icon can be customized by setting the `DropDownButtonStyle` property and the ForeColor properties of the default icon as Transparent.
 
 {% tabs %}
 {% highlight c# %}
