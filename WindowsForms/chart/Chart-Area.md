@@ -19,7 +19,7 @@ By enabling this property, the following are possible.
 
 [GetSeriesBounds()](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_GetSeriesBounds_Syncfusion_Windows_Forms_Chart_ChartSeries_) method can be used to get the bounds of the DividedArea when [ChartArea.DivideArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_DivideArea) is set to true. 
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -36,7 +36,7 @@ Me.chartControl1.ChartArea.GetSeriesBounds(series)
 
 [ShowSeriesTitle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_ShowSeriesTitle) property is used to display the series name as title for each section of the pie, funnel, pyramid charts in the divided area. 
 
-{% tabs %}  
+{% tabs %}
 {% highlight c# %}
 
 ChartSeries.ConfigItems.PieItem.ShowSeriesTitle = true;
