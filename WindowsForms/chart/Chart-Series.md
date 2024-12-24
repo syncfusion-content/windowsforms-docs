@@ -3755,7 +3755,8 @@ series1.Style.HighlightInterior = New BrushInfo(GradientStyle.ForwardDiagonal, C
 
 To set interior color for individual highlighted datapoints,
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}
+{% highlight c# %}
 
 series1.Styles[0].HighlightInterior = new BrushInfo(GradientStyle.ForwardDiagonal, Color.Red, Color.White);
 
@@ -3784,7 +3785,7 @@ series1.Styles(3).HighlightInterior = New BrushInfo(GradientStyle.ForwardDiagona
 
  [BarCharts](/windowsforms/chart/chart-types#bar-charts), [PieChart](/windowsforms/chart/chart-types#pie-chart),  [Funnel Chart](/windowsforms/chart/chart-types#funnel-chart),  [Pyramid Chart](/windowsforms/chart/chart-types#pyramid-chart), [Bubble Charts](/windowsforms/chart/chart-types#bubble-chart),[Column Charts](/windowsforms/chart/chart-types#column-charts),[AreaChart](/windowsforms/chart/chart-types#area-chart), [Stacking Area Chart](/windowsforms/chart/chart-types#stacking-area-chart), [Stacked Area100 Chart](/windowsforms/chart/chart-types#stackedarea100-chart), [Line Charts](/windowsforms/chart/chart-types#line-charts), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Tornado Chart](/windowsforms/chart/chart-types#tornado-chart), [Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart), [HiLo Charts](/windowsforms/chart/chart-types#hilo-chart), [HiLo Open Close Chart](/windowsforms/chart/chart-types#hilo-open-close-chart)
 
- {% endseealso %}
+{% endseealso %}
 
 ### HitTestRadius
 
@@ -4490,7 +4491,7 @@ Me.chartControl1.Series(0).ConfigItems.FunnelItem.LabelStyle= ChartAccumulationL
 
  [Pyramid Chart](/windowsforms/chart/chart-types#pyramid-chart),  [Funnel Chart](/windowsforms/chart/chart-types#funnel-chart)
 
- {% endseealso %}
+{% endseealso %}
 
 ### LegendItem
 
@@ -8908,7 +8909,8 @@ trendline.Type = TrendlineType.Power
 
 Logarithmic Trendline can be rendered by setting the trendline.Type as **TrendlineType.Logarithmic**.
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}
+{% highlight c# %}
 
 trendline.Type = TrendlineType.Logarithmic;
 

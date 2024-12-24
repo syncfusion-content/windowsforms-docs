@@ -29,7 +29,7 @@ The following sample code illustrates how a custom DataSet can be bound to a [Ch
 
 ![Chart Data](Chart-Data_images/Chart-Data_img2.jpeg)
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -132,7 +132,7 @@ Note that the [ChartDataBindModel](https://help.syncfusion.com/cr/windowsforms/S
 
 Shown below is some sample code that implements [IChartSeriesModel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.IChartSeriesModel.html) interface for use with the chart.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -247,7 +247,7 @@ End Class
 
 ## Bind the above model to the ChartSeries
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -288,7 +288,8 @@ Note that if you have indexed data, which implies that the X values are simply c
 
 Syncfusion® chart provides an option of binding the Chart with IEnumerable, like ArrayList for Indexed or Non Indexed model data through [ChartDataBindModel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html) implementation.
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}
+{% highlight c# %}
 
 class PopulationData
 {
@@ -364,7 +365,7 @@ If you have a class like above, you will have a collection of this class instanc
 
 In this example, we are binding with a Non Indexed data, with YNames alone and the chart will not be rendered with x-axis values. We need to assign the x-axis values through [ChartDataBindAxisLabelModel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartDataBindAxisLabelModel.html) class. [ChartDataBindAxisLabelModel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartDataBindAxisLabelModel.html) class provides a facility to bind the axis label values through the data source like [ChartDataBindModel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html). 
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -569,7 +570,7 @@ Binding Chart with a BindingSource in code behind is similar to binding IEnumera
 
 Create a [ChartDataBindModel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html) object with BindingSource as data source.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -592,7 +593,7 @@ Create a [ChartDataBindModel](https://help.syncfusion.com/cr/windowsforms/Syncfu
 
 Provide a field name in binding source as value to the [XName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html#Syncfusion_Windows_Forms_Chart_ChartDataBindModel_XName) property of the [ChartDataBindModel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html) object. 
 
-{% tabs %} 
+{% tabs %}
 
 {% highlight c# %}
 
@@ -625,7 +626,7 @@ Similarly, provide a field name in binding source as value to the [YNames](https
 
 As pie chart is used in this example, it is enough to use one field name for the YNames property of the [ChartDataBindModel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html) object.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -664,7 +665,7 @@ model.YNames = new string[] { "Field2" };
 
 Set [ChartDataBindModel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html) object as value to the [ChartSeries](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html) object. This binds the Series with BindingSource.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 

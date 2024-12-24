@@ -2107,7 +2107,8 @@ All breaks work only with Cartesian axes.
 
 ![Chart Axes](Chart-Axes_images/Chart-Axes_img34.png)
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}
+{% highlight c# %}
 
 this.chartControl1.PrimaryYAxis.MakeBreaks = true;
 

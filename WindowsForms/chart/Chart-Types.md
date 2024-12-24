@@ -522,7 +522,8 @@ Cannot be combined with - Any chart type except Bar and Stacked Bar charts.
 
 Bar series can be added to the chart using the following code.
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -589,7 +590,8 @@ Cannot be Combined with - Any chart type except Bar and Stacked Bar charts.
 
 Stacking bar series can be added to the chart using the following code.
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}
+{% highlight c# %}
 
 // Create chart series and add data point into it.
 
@@ -809,7 +811,8 @@ Number of Series - One or more.
 
 Cannot be combined with - Pie, Bar, Polar, Radar.
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -891,7 +894,8 @@ Cannot be combined with - Pie, Bar, Polar, Radar.
 
 The Tornado series can be added to the chart using the following code.
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -1064,7 +1068,8 @@ Cannot be combined with - Pie, Bar, Stacked Bar, Polar, Radar.
 
 The following code snippet illustrates this.
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -1525,7 +1530,8 @@ SupportMarker – No.
 
 Cannot be Combined with - Any other chart types.
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}
+{% highlight c# %}
 
 ChartSeries series1=chartControl1.Model.NewSeries("Series1",ChartSeriesType.StackingArea100);
 
