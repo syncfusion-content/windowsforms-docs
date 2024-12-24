@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Exporting in Windows Forms Chart control | Syncfusion
-description: Learn about Exporting support in Syncfusion Essential Studio Windows Forms Chart control and more details.
+title: Exporting in Windows Forms Chart control | Syncfusion®
+description: Learn about Exporting support in Syncfusion® Essential Studio® Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug

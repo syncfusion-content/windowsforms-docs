@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in Windows Forms Chart control | Syncfusion
-description: Learn about Localization support in Syncfusion Essential Studio Windows Forms Chart control and more details.
+title: Localization in Windows Forms Chart control | Syncfusion®
+description: Learn about Localization support in Syncfusion® Essential Studio® Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug
@@ -80,7 +80,7 @@ Me.chartControl1.Localize=”de-DE”
 
 To view a sample,
 
-1. Open the Syncfusion Dashboard.
+1. Open the Syncfusion® Dashboard.
 2. Select User Interface -> Windows Forms.
 3. Click Run Samples.
 4. Navigate to Culture Localization > Localization sample.

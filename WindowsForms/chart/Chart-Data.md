@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Populating Data in Windows Forms Chart control | Syncfusion
-description: Learn about Populating Data support in Syncfusion Essential Studio Windows Forms Chart control and more details.
+title: Populating Data in Windows Forms Chart control | Syncfusion®
+description: Learn about Populating Data support in Syncfusion® Essential Studio® Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug
@@ -286,7 +286,7 @@ Note that if you have indexed data, which implies that the X values are simply c
 
 ## Chart Data Binding with IEnumerable
 
-Syncfusion chart provides an option of binding the Chart with IEnumerable, like ArrayList for Indexed or Non Indexed model data through [ChartDataBindModel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html) implementation.
+Syncfusion® chart provides an option of binding the Chart with IEnumerable, like ArrayList for Indexed or Non Indexed model data through [ChartDataBindModel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html) implementation.
 
 {% tabs %}  {% highlight c# %}
 

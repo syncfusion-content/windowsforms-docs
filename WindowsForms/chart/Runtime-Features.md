@@ -1,7 +1,7 @@
 ---
 layout: post
-title: User Interactions in Windows Forms Chart control | Syncfusion
-description: Learn about User Interactions support in Syncfusion Essential Studio Windows Forms Chart control and more details.
+title: User Interactions in Windows Forms Chart control | Syncfusion®
+description: Learn about User Interactions support in Syncfusion® Essential Studio® Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug
@@ -990,7 +990,7 @@ This feature is useful for moving the interactive cursor across the entire chart
 
 To view a sample,
 
-1. Open the Syncfusion Dashboard.
+1. Open the Syncfusion® Dashboard.
 2. Click the Windows Forms drop-down list and select Run Locally Installed Samples.
 3. Navigate to Chart samples > User Interaction > Chart Interactive Cursor.
 

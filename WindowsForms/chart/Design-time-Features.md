@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Design Time Features in Windows Forms Chart control | Syncfusion
-description: Learn about Design Time Features support in Syncfusion Windows Forms Chart control and more details.
+title: Design Time Features in Windows Forms Chart control | Syncfusion®
+description: Learn about Design Time Features support in Syncfusion® Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug
@@ -377,7 +377,7 @@ ct.Reset(Me.chartControl1)
 
 **To view a sample:**
 
-1. Open the Syncfusion Dashboard.
+1. Open the Syncfusion® Dashboard.
 2. Select User Interface -> Windows Forms.
 3. Click Run Samples.
 4. Navigate to Chart samples -> User Interaction -> ChartSerialization. 

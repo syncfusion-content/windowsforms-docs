@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Hit Testing in Windows Forms Chart control | Syncfusion
-description: Learn about Hit Testing support in Syncfusion Essential Studio Windows Forms Chart control and more details.
+title: Hit Testing in Windows Forms Chart control | Syncfusion®
+description: Learn about Hit Testing support in Syncfusion® Essential Studio® Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug

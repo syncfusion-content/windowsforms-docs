@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Chart Axes in Windows Forms Chart control | Syncfusion
-description: Learn about Chart Axes support in Syncfusion Essential Studio Windows Forms Chart control and more details.
+title: Chart Axes in Windows Forms Chart control | Syncfusion®
+description: Learn about Chart Axes support in Syncfusion® Essential Studio® Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug
@@ -2195,7 +2195,7 @@ NA </td></tr>
 
 To view a sample:
 
-1. Open the Syncfusion Dashboard.
+1. Open the Syncfusion® Dashboard.
 2. Click the Windows Forms drop-down list and select Run Locally Installed Samples.
 3. Navigate to Chart samples-> Chart Axes -> Axis Crossing.
 
@@ -2259,7 +2259,7 @@ Specifies the position of the label in a chart axes. It can be placed inside or 
 
 To view a sample:
 
-1. Open the Syncfusion Dashboard.
+1. Open the Syncfusion® Dashboard.
 2. Click the User Interface -> Windows Forms.
 3. Click Run Samples.
 4. Navigate to Chart samples -> Chart Axes -> ChartAxisCustomization.

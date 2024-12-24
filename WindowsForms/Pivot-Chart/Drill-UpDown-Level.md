@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Drill Operations in Windows Forms Pivot Chart | Syncfusion
-description: Learn about Drill Operations support in Syncfusion Windows Forms Pivot Chart control and more details.
+title: Drill Operations in Windows Forms Pivot Chart | Syncfusion®
+description: Learn about Drill Operations support in Syncfusion® Windows Forms Pivot Chart control and more details.
 platform: windowsforms
 control: PivotChart
 documentation: ug

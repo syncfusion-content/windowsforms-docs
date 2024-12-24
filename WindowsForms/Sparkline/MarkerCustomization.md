@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Marker Customization in Windows Forms Sparkline control | Syncfusion
-description: Learn about Marker Customization support in Syncfusion Windows Forms Sparkline control and more details.
+title: Marker Customization in Windows Forms Sparkline control | Syncfusion®
+description: Learn about Marker Customization support in Syncfusion® Windows Forms Sparkline control and more details.
 platform: windowsforms
 control: Sparkline
 documentation: ug
