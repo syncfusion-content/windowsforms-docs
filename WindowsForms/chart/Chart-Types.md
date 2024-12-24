@@ -1794,11 +1794,11 @@ The following images are some sample Funnel Charts.
 
 ![Trapezoid funnel chart in Windowsforms](chart-types_images/windowsforms-trapezoid-funnel-chart.jpeg)
 
-![3D circular funnel chart in Windowsforms](chart-types_images/windowsforms-3d-circular-funnel-chart.jpeg)
+![Circular funnel 3D chart in Windowsforms](chart-types_images/windowsforms-3d-circular-funnel-chart.jpeg)
 
-![3D square funnel chart in Windowsforms](chart-types_images/windowsforms-3d-square-funnel-chart.jpeg)
+![Square funnel 3D chart in Windowsforms](chart-types_images/windowsforms-3d-square-funnel-chart.jpeg)
 
-![3D segmented square funnel chart in Windowsforms](chart-types_images/windowsforms-3d-segmented-square-funnel-chart.jpeg)
+![Segmented square funnel 3D chart in Windowsforms](chart-types_images/windowsforms-3d-segmented-square-funnel-chart.jpeg)
 
 #### Chart Details
 
@@ -1863,11 +1863,11 @@ The following images are some sample Pyramid Charts.
 
 ![Pyramid chart in WindowsForms](chart-types_images/windowsforms-pyramid-chart.jpeg)
 
-![3D circular pyramid chart in WindowsForms](chart-types_images/windowsforms-3d-circular-pyramid-chart.jpeg)
+![Circular pyramid 3D chart in WindowsForms](chart-types_images/windowsforms-3d-circular-pyramid-chart.jpeg)
 
-![3D flat pyramid chart in WindowsForms](chart-types_images/windowsforms-3d-flat-pyramid-chart.jpeg)
+![Flat pyramid 3D chart in WindowsForms](chart-types_images/windowsforms-3d-flat-pyramid-chart.jpeg)
 
-![3D flat segmented pyramid chart in WindowsForms](chart-types_images/windowsforms-3d-flat-segmented-pyramid-chart.jpeg)
+![Flat segmented pyramid 3D chart in WindowsForms](chart-types_images/windowsforms-3d-flat-segmented-pyramid-chart.jpeg)
 
 #### Chart Details
 

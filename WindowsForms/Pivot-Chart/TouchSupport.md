@@ -2,7 +2,7 @@
 layout: post
 title: Touch Support in Windows Forms Pivot Chart control | Syncfusion®
 description: Learn about Touch Support support in Syncfusion® Windows Forms Pivot Chart control, its elements and more details.
-platform: WindowsForms
+platform: windowsforms
 control: PivotChart
 documentation: ug
 --- 
