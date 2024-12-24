@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Windows Forms Sparkline control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms Sparkline control, its elements and more details.
+title: About Windows Forms Sparkline control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® Windows Forms Sparkline control, its elements and more details.
 platform: windowsforms
 control: Sparkline
 documentation: ug
@@ -124,7 +124,7 @@ NA</td></tr>
 
 To access a Sparkline sample Demo:
 
-1. Open the Syncfusion Dashboard.
+1. Open the Syncfusion® Dashboard.
 
 2. Select User Interface.
 
