@@ -9,7 +9,7 @@ documentation: ug
 
 # Chart Legend in Windows Forms Chart
 
-Essential Chart by default displays a legend with information on each series that has been plotted on the chart.
+Essential® Chart by default displays a legend with information on each series that has been plotted on the chart.
 
 ![Chart Legend](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img1.jpeg)
 

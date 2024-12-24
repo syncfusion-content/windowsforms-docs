@@ -9,7 +9,7 @@ documentation: ug
 
 # Chart Axes in Windows Forms Chart
 
-An axis in EssentialChart is represented by the [ChartAxis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html) class. The axes are stored in the [WinForms Chart](https://www.syncfusion.com/winforms-ui-controls/chart) control's Axes collection.
+An axis in Essential® Chart is represented by the [ChartAxis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html) class. The axes are stored in the [WinForms Chart](https://www.syncfusion.com/winforms-ui-controls/chart) control's Axes collection.
 
 By default, this collection contains two primary axes. These two axes can also be accessed through the [PrimaryXAxis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_PrimaryXAxis) and [PrimaryYAxis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_PrimaryYAxis).
 
@@ -57,7 +57,7 @@ In the figure below, the first chart shows a line chart that is not-indexed whil
 
 ![Chart Axes](Chart-Axes_images/Chart-Axes_img2.jpeg)
 
-N> Indexing is supported only on the x-axis in Essential Chart.
+N> Indexing is supported only on the x-axis in Essential® Chart.
 
 You can enable x-axis indexing or categorizing through the [Indexed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Indexed) property of the [ChartControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html) as shown below. This property automatically affects all the x-axes in the chart.
 
@@ -79,7 +79,7 @@ You can also optionally customize the labels of the points in such an indexed se
 
 ## Inverted Axis
 
-EssentialChart provides support for inverting the values in an axis. Data on an inverted axis is plotted in the opposite direction - top to bottom for y-axis and right to left for x-axis. To enable this behavior, set the [ChartAxis.Inversed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_Inversed) to true.
+Essential® Chart provides support for inverting the values in an axis. Data on an inverted axis is plotted in the opposite direction - top to bottom for y-axis and right to left for x-axis. To enable this behavior, set the [ChartAxis.Inversed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_Inversed) to true.
 
 <table>
 <tr>
@@ -1188,7 +1188,7 @@ Me.chartControl1.PrimaryXAxis.DrawTickLabelGrid = True
 
 ### Tooltip Support for ChartAxisLabels
 
-Essential Chart provides tooltip support for [ChartAxisLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxisLabel.html). By default [ChartAxisLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxisLabel.html) will be displayed as tooltip. You can also customize the tooltip to show any content you want.
+Essential® Chart provides tooltip support for [ChartAxisLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxisLabel.html). By default [ChartAxisLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxisLabel.html) will be displayed as tooltip. You can also customize the tooltip to show any content you want.
 
 #### Use Case Scenarios
 
@@ -1359,7 +1359,7 @@ End Sub
 
 ## Axis Title
 
-EssentialChart provides properties to set custom titles for the axes. Set the title text for an axis using [Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_Title) property. Customize this text using [TitleColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_TitleColor) and [TitleFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_TitleFont) properties.
+Essential® Chart provides properties to set custom titles for the axes. Set the title text for an axis using [Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_Title) property. Customize this text using [TitleColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_TitleColor) and [TitleFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_TitleFont) properties.
 
 <table>
 <tr>
@@ -2164,7 +2164,7 @@ Me.chartControl1.PrimaryYAxis.BreakRanges.BreakAmount = 0.5
 
 ## Axis Crossing Support
 
-Essential Chart for Windows allows the X and Y axis to intersect at a desired point. The X and Y axis will intersect at a point based on the value specified in the X axis crossing property and the Y axis crossing property respectively.
+Essential® Chart for Windows allows the X and Y axis to intersect at a desired point. The X and Y axis will intersect at a point based on the value specified in the X axis crossing property and the Y axis crossing property respectively.
 
 ### Use Case Scenarios
 
@@ -2289,7 +2289,7 @@ Me.chartControl1.PrimaryXAxis.AxisLabelPlacement = ChartPlacement.Inside
 
 ### Positioning Individual Axis Labels
 
-Essential Chart supports customizing the individual axis label position to the right or left side of the axis for a horizontal axis and to the top or bottom for a vertical axis based on the user's needs.
+Essential® Chart supports customizing the individual axis label position to the right or left side of the axis for a horizontal axis and to the top or bottom for a vertical axis based on the user's needs.
 
 This feature can be achieved by using the [FormatLabel](/windowsforms/chart/chart-control-events#chartformataxislabel-event) event of the chart axis. The following code illustrates customizing the individual label position by using [AxisLabelPlacement](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_AxisLabelPlacement) in the [FormatLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_FormatLabel) event.
 

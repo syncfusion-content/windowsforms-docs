@@ -9,7 +9,7 @@ documentation: ug
 
 # Chart Types in Windows Forms Chart
 
-Essential Chart includes a comprehensive set of more than 35 Chart types for all your business needs. Each one is highly and easily configurable with built-in support for creating stunning visual effects.
+Essential® Chart includes a comprehensive set of more than 35 Chart types for all your business needs. Each one is highly and easily configurable with built-in support for creating stunning visual effects.
 
 Chart types are specified on each [ChartSeries](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html) through the [Type](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_Type) property. All the chart types are required to have at least one X and one Y value. Certain chart types need more than one Y value.
 
@@ -500,7 +500,7 @@ Bar Charts are the simplest and most versatile of statistical diagrams. Displaye
 
 A very similar, more common, chart type is the Column Charts where the bars are rendered vertically.
 
-EssentialChart supports these different types of Bar Charts:
+Essential® Chart supports these different types of Bar Charts:
 
 ### Bar Chart
 
@@ -978,7 +978,7 @@ Column Charts are among the most commonly used chart types. Displayed in vertica
 
 A very similar to the [Bar Charts](/windowsforms/chart/chart-types#bar-charts) type where the bars are rendered horizontal.
 
-EssentialChart supports these different Column Charts.
+Essential® Chart supports these different Column Charts.
 
 ### Column Chart
 
@@ -1274,7 +1274,7 @@ Area Charts emphasize the degree of change of the values over a period of time. 
 
 There is support for alpha-blending multiple series areas. The look and feel is also easily customizable by the user.
 
-EssentialChart supports these various types of Area Charts:
+Essential® Chart supports these various types of Area Charts:
 
 ### Area Chart
 
@@ -1782,7 +1782,7 @@ Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible.
 
 ## Accumulation Charts
 
-Accumulation charts are typically single series charts representing the data as portions of 100% and do not use any axes. Essential Chart offers the two types of Accumulation charts.
+Accumulation charts are typically single series charts representing the data as portions of 100% and do not use any axes. Essential® Chart offers the two types of Accumulation charts.
 
 ### Funnel Chart
 
@@ -2156,7 +2156,7 @@ The following charts are a staple of analytical reports in the financial world. 
 
 The following charts cater to the above requirements and provide an easy-to-decipher picture of price action.
 
-Financial Chart types are supported in EssentialChart.
+Financial Chart types are supported in Essential® Chart.
 
 ### Candle Chart
 
@@ -2901,7 +2901,7 @@ Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible, Show
 
 ## Polar And Radar Chart
 
-Essential chart supports the implementation of Polar and Radar charts in the chart control. These charts can be used to display different values and angles in the form of a graph.
+Essential® chart supports the implementation of Polar and Radar charts in the chart control. These charts can be used to display different values and angles in the form of a graph.
 
 ### Polar Chart
 
@@ -3050,7 +3050,7 @@ Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible.
 
 ## Combination Chart
 
-Combination Charts refers to the ability to display multiple data series in the same chart with each series visualized using different chart types. In Essential Chart, Chart types that are compatible with each other may be combined in the same Chart Area.
+Combination Charts refers to the ability to display multiple data series in the same chart with each series visualized using different chart types. In Essential® Chart, Chart types that are compatible with each other may be combined in the same Chart Area.
 
 Typically it is a combination of a Line chart and a Column chart, sharing a common x-axis but with separate y-axes, one on either side of the chart.
 
