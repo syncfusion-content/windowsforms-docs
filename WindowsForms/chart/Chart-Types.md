@@ -510,7 +510,7 @@ Another good reason to use bar charts is when you realize that the number of a d
 
 The following image shows a multi series Bar Chart.
 
-![Chart Types](Chart-Types_images/Chart-Types_img5.jpeg)
+![Chart Types](Chart-Types_images/windowsforms-bar-chart.jpeg)
 
 #### Chart Details
 
@@ -578,7 +578,7 @@ Stacking Bar Charts are similar to regular bar charts except that the Y values s
 
 The following image shows a sample Stacking Bar Chart.
 
-![Chart Types](Chart-Types_images/Chart-Types_img6.jpeg)
+![Chart Types](Chart-Types_images/windowsforms-stacking-bar-chart.jpeg)
 
 ### Chart Details
 
@@ -663,7 +663,7 @@ Me.chartControl1.Series.Add(series2)
 
 This chart type displays multiple series of data as stacked Bars ensuring that the cumulative proportion of each stacked element always totals 100%. The y-axis will hence always be rendered with the range 0 - 100.
 
-![Chart Types](Chart-Types_images/Chart-Types_img7.jpeg)
+![Chart Types](Chart-Types_images/windowsforms-stacked-bar-100-chart.jpeg)
 
 #### Chart Details
 
@@ -735,7 +735,7 @@ A Gantt chart is a graphical representation of the duration of tasks against the
 
 You could then use another series to represent the completed portion of the different tasks. This new series will then contain data points with their beginning values coinciding with the beginning values of the data points from the previous series and the ending value based on the fraction of the work that has been completed on the task. This way, one can get a quick reading of a project progress by drawing a vertical line through the chart at the current date.
 
-![Chart Types](Chart-Types_images/Chart-Types_img8.jpeg)
+![Chart Types](Chart-Types_images/windowsforms-gantt-chart.jpeg)
 
 #### Chart Details
 
@@ -801,7 +801,7 @@ Histograms are useful data summaries that convey the following information:
 
 The shape of the distribution conveys important information such as the probability distribution of the data.
 
-![Chart Types](Chart-Types_images/Chart-Types_img9.jpeg)
+![Chart Types](Chart-Types_images/windowsforms-histogram-chart.jpeg)
 
 #### Chart Details
 
