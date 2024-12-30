@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to set color pallette for chart | Windows Forms | Syncfusion®
-description: How to set the Color Palette for a Chart
+description: This section how to set the color palette for a WinForms chart using the Palette property. Select a predefined palette or create a custom color set for the chart.
 platform: windowsforms
 control: PivotChart
 documentation: ug
