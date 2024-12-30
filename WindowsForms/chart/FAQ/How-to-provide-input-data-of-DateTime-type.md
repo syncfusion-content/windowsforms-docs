@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-provide-input-data-of-DateTime-type | Windows Forms | Syncfusion
+title: How-to-provide-input-data-of-DateTime-type | Windows Forms | Syncfusion®
 description: how to provide input data of datetime type
 platform: windowsforms
 control: chart

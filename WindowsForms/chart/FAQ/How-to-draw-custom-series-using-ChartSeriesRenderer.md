@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-draw-custom-series | Windows Forms | Syncfusion
+title: How-to-draw-custom-series | Windows Forms | Syncfusion®
 description: How to draw custom series using ChartSeriesRenderer
 platform: windowsforms
 control: chart

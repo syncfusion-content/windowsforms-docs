@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-set-the-Color-Palette-for-a-Chart | Windows Forms | Syncfusion
+title: How-to-set-the-Color-Palette-for-a-Chart | Windows Forms | Syncfusion®
 description: how to set the color palette for a chart
 platform: windowsforms
 control: chart

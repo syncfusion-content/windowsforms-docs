@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Frequently-Asked-Questions | Windows Forms | Syncfusion
+title: Frequently-Asked-Questions | Windows Forms | Syncfusion®
 description: frequently asked questions
 platform: windowsforms
 control: Control Name undefined

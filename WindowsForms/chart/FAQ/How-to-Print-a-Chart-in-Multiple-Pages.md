@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Print-a-Chart-in-Multiple-Pages | Windows Forms | Syncfusion
+title: How-to-Print-a-Chart-in-Multiple-Pages | Windows Forms | Syncfusion®
 description: how to print a chart in multiple pages 
 platform: windowsforms
 control: chart
@@ -476,7 +476,7 @@ Sample Link
 
 #### To view a sample:
 
-1. Open the Syncfusion Dashboard.
+1. Open the Syncfusion® Dashboard.
 2. Click the Windows Forms drop-down list and select Run Locally Installed Samples.
 3. Navigate to Chart Samples -->Print -->Multiple Page Printing. 
 
