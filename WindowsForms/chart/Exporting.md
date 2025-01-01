@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exporting in Windows Forms Chart control | Syncfusion
-description: Learn about Exporting support in Syncfusion Essential Studio Windows Forms Chart control and more details.
+description: Learn about Exporting support in Syncfusion Essential Studio® Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Exporting in Windows Forms Chart
 
-EssentialChart has built-in support for exporting the chart control into various image formats. Also, using our complementary products like Essential **XlsIO, DocIO and PDF** you can also export the chart image into **Excel, Word Doc and PDF** documents.
+Essential® Chart has built-in support for exporting the chart control into various image formats. Also, using our complementary products like Essential® **XlsIO, DocIO and PDF** you can also export the chart image into **Excel, Word Doc and PDF** documents.
 
 ## Exporting as an Image
 
@@ -153,7 +153,7 @@ N> Chart wrapping and formatting will not be possible in the EPS image by enabli
 
 ## Exporting to Word Doc
 
-The chart control can be exported to a Word doc file as an image using EssentialDocIO. The chart control provides APIs to convert it to an image, while DocIO lets you insert this image into a Word Document file programmatically.
+The chart control can be exported to a Word doc file as an image using Essential® DocIO. The chart control provides APIs to convert it to an image, while DocIO lets you insert this image into a Word Document file programmatically.
 
 ![Chart Export](Exporting_images/Exporting_img3.jpeg)
 
@@ -293,7 +293,7 @@ A sample demonstrating the above is available in our installation at the followi
 
 ## Exporting to Grid
 
-The chart control can be exported into a grid cell (in Essential Grid) as an image using EssentialGrid. The chart control provides APIs to convert it to an image, while the Grid will let you insert this image into any specific cell.
+The chart control can be exported into a grid cell (in Essential® Grid) as an image using Essential® Grid. The chart control provides APIs to convert it to an image, while the Grid will let you insert this image into any specific cell.
 
 ![Chart Export](Exporting_images/Exporting_img4.jpeg)
 
@@ -467,7 +467,7 @@ A sample demonstrating the above is available in our installation at the followi
 
 ## Exporting to Excel
 
-EssentialChart data can be exported into an Excel document and an Excel chart can be created to use the above data using Essential XlsIO. Though there is no built-in support for this, this can be easily implemented with a very intuitive XlsIO API.
+Essential® Chart data can be exported into an Excel document and an Excel chart can be created to use the above data using Essential® XlsIO. Though there is no built-in support for this, this can be easily implemented with a very intuitive XlsIO API.
 
 ![Chart Export](Exporting_images/Exporting_img5.jpeg)
 
@@ -647,7 +647,7 @@ A sample demonstrating the above functionality is available in our installation 
 
 ## Exporting to PDF
 
-The chart control can be exported into a PDF file as an image using EssentialPDF. The chart control provides APIs to convert it to an image, while Essential PDF lets you insert this image into a Word Document file programmatically.
+The chart control can be exported into a PDF file as an image using Essential® PDF. The chart control provides APIs to convert it to an image, while Essential® PDF lets you insert this image into a Word Document file programmatically.
 
 ![Chart Export](Exporting_images/Exporting_img6.jpeg)
 

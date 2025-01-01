@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Windows Forms Chart control | Syncfusion
-description: Learn here all about introduction of Syncfusion Essential Studio Windows Forms Chart control and more details.
+description: Learn here all about introduction of Syncfusion Essential Studio® Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug
@@ -143,7 +143,7 @@ Chart Area Shadow indicates the shadow of the chart area.
 
 ## Documentation
 
-Syncfusion provides the following documentation segments to provide all necessary information for using EssentialChart control in Windows application in an efficient manner.
+Syncfusion® provides the following documentation segments to provide all necessary information for using EssentialChart control in Windows application in an efficient manner.
 
 <table>
 <tr>

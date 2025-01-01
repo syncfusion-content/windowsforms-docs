@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Improving Performance in Windows Forms Chart control | Syncfusion
-description: Learn about Improving Performance support in Syncfusion Windows Forms Chart control and more details.
+description: Learn about Improving Performance support in Syncfusion® Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug

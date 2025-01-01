@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Importing in Windows Forms Chart control | Syncfusion
-description: Learn about Importing support in Syncfusion Essential Studio Windows Forms Chart control and more details.
+description: Learn about Importing support in Syncfusion Essential Studio® Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug
