@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-implement-DrillDown-charts | Windows Forms | Syncfusion®
+title: How-to-implement-DrillDown-charts | Windows Forms | Syncfusion
 description: how to implement drilldown charts
 platform: windowsforms
 control: chart

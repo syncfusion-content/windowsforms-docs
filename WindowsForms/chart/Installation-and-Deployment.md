@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installation-and-Deployment | Windows Forms | Syncfusion®
+title: Installation-and-Deployment | Windows Forms | Syncfusion
 description: Learn here all about the installation and deployment of Syncfusion® Windows Forms Chart control and more.
 platform: windowsforms
 control: Chart

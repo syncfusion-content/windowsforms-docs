@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add a picture to the chart area | Windows Forms | Chart | Syncfusion®
+title: Add a picture to the chart area | Windows Forms | Chart | Syncfusion
 description: This section explains how to enhance a chart by adding a picture or image (such as a business logo) anywhere on the chart area.
 platform: windowsforms
 control: chart

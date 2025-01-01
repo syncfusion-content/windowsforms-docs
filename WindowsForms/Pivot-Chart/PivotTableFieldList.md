@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pivot Table Field List in Windows Forms Pivot Chart | Syncfusion®
+title: Pivot Table Field List in Windows Forms Pivot Chart | Syncfusion
 description: Learn about Pivot Table Field List support in Syncfusion® Windows Forms Pivot Chart control, its elements and more details.
 platform: windowsforms
 control: PivotChart

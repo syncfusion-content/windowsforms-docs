@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Statistical Formulas in Windows Forms Chart control | Syncfusion®
+title: Statistical Formulas in Windows Forms Chart control | Syncfusion
 description: Learn about Statistical Formulas support in Syncfusion® Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart

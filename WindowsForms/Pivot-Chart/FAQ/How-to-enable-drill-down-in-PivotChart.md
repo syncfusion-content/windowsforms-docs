@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to enable drill down in PivotChart | Windows Forms | Syncfusion®
+title: How to enable drill down in PivotChart | Windows Forms | Syncfusion
 description: This section how to enable drill-down in a WinForms PivotChart by setting up a data hierarchy. Use chart events to handle clicks and update the displayed data.
 platform: windowsforms
 control: PivotChart

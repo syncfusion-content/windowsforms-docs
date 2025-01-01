@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exporting in Windows Forms Pivot Chart control | Syncfusion®
+title: Exporting in Windows Forms Pivot Chart control | Syncfusion
 description: Learn about Exporting support in Syncfusion® Windows Forms Pivot Chart control, its elements and more details.
 platform: windowsforms
 control: PivotChart

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: User Interactions in Windows Forms Chart control | Syncfusion®
-description: Learn about User Interactions support in Syncfusion® Essential Studio® Windows Forms Chart control and more details.
+title: User Interactions in Windows Forms Chart control | Syncfusion
+description: Learn about User Interactions support in Syncfusion Essential Studio® Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug

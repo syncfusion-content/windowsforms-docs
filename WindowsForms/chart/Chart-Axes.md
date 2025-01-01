@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Chart Axes in Windows Forms Chart control | Syncfusion®
-description: Learn about Chart Axes support in Syncfusion® Essential Studio® Windows Forms Chart control and more details.
+title: Chart Axes in Windows Forms Chart control | Syncfusion
+description: Learn about Chart Axes support in Syncfusion Essential Studio® Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug

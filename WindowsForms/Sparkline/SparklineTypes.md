@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sparkline Types in Windows Forms Sparkline control | Syncfusion®
+title: Sparkline Types in Windows Forms Sparkline control | Syncfusion
 description: Learn about Sparkline Types support in Syncfusion® Windows Forms Sparkline control, its elements and more details.
 platform: windowsforms
 control: Sparkline

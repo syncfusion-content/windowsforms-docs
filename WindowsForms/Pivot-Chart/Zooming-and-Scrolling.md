@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Zooming and Scrolling in WinForms Pivot Chart | Syncfusion®
+title: Zooming and Scrolling in WinForms Pivot Chart | Syncfusion
 description: Learn about Zooming and Scrolling support in Syncfusion® Windows Forms Pivot Chart control and more details.
 platform: windowsforms
 control: PivotChart
