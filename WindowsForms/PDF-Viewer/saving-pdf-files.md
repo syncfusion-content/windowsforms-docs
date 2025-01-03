@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Saving PDF Files in Windows Forms PDF Viewer control | Syncfusion
-description: Learn about Saving PDF Files support in Syncfusion Windows Forms PDF Viewer (PdfViewerControl) control and more details.
+title: Saving PDF Files in Windows Forms PDF Viewer control | Syncfusion&reg;
+description: Learn about Saving PDF Files support in Syncfusion&reg; Windows Forms PDF Viewer (PdfViewerControl) control and more details.
 platform: windowsforms
 control: PDF Viewer
 documentation: ug
