@@ -65,128 +65,129 @@ sfComboBox1.Style.TokenStyle.Font = New Font(“Arial”, 10F, FontStyle.Bold)
 
 ## Events Fired When Selecting and Deselecting Tokens 
 
-The events [SelectedValueChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_SelectedValueChanged) and [SelectedIndexChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_SelectedIndexChanged) are triggered when tokens are selected or deselected in the SfComboBox control.
+The events [SelectedValueChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_SelectedValueChanged)event is triggered when tokens are selected or deselected in the SfComboBox control.
 
 {% tabs %}
 {% highlight c# %}
 
-private List<object> _previousSelectedTokens;
+private List<object> _previousSelectedTokens; 
+private Label label;  
+
 SfComboBox sfComboBox1 = new SfComboBox
 {
-    EnableToken = true, 
-    DisplayMember = "Name",  
-    ValueMember = "Id", 
-};
-// Set the DataSource
-sfComboBox1.DataSource = new List<dynamic>
-{
+    EnableToken = true,
+    DisplayMember = "Name",
+    ValueMember = "Id",
+    Size = new Size(300, 30),
+    DataSource = new List<dynamic>
+   {
     new { Id = 1, Name = "Item1" },
     new { Id = 2, Name = "Item2" },
     new { Id = 3, Name = "Item3" }
+   }
 };
+
+sfComboBox1.Style.TokenStyle.Font = new Font("Arial", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+
+// Initialize Label
+label = new Label
+{
+    Width = 200,
+    Location = new Point(10, 110)
+};
+
+// Initialize selected items and previous tokens
 sfComboBox1.SelectedItems.Add(sfComboBox1.DropDownListView.View.DisplayItems[0]);
-_previousSelectedTokens = sfComboBox1.SelectedItems.Cast<object>().ToList();   
+_previousSelectedTokens = sfComboBox1.SelectedItems.Cast<dynamic>().ToList();
+
 sfComboBox1.SelectedValueChanged += SfComboBox1_SelectedValueChanged;
-sfComboBox1.SelectedIndexChanged += SfComboBox1_SelectedIndexChanged;
+
 this.Controls.Add(sfComboBox1);
+this.Controls.Add(label);
 
 private void TokenComboBox_SelectedValueChanged(object sender, EventArgs e)
 {
     var comboBox = sender as SfComboBox;
 
-    // Get the current selected tokens
+    // Get current and previous tokens
     var currentSelectedTokens = comboBox.SelectedItems.Cast<dynamic>().ToList();
-
-    // Determine added tokens
     var addedTokens = currentSelectedTokens.Except(_previousSelectedTokens).ToList();
-
-    // Determine removed tokens
     var removedTokens = _previousSelectedTokens.Except(currentSelectedTokens).ToList();
 
-    // Update the previous token list
+    // Update previous tokens
     _previousSelectedTokens = currentSelectedTokens;
 
     // Handle added tokens
     foreach (var token in addedTokens)
     {
-       MessageBox.Show($"Token Added: {token.Name}", "Token Added");
-       // Additional logic for added tokens
+       label.Text = $"Token Added: {token.Name}";
     }
+
     // Handle removed tokens
     foreach (var token in removedTokens)
     {
-       MessageBox.Show($"Token Removed: {token.Name}", "Token Removed");    
-       // Additional logic for removed tokens
+       label.Text = $"Token Removed: {token.Name}";
     }
-}
-
-private void TokenComboBox_SelectedIndexChanged(object sender, EventArgs e)
-{
-    // Handle the event when the selection changes (tokens are selected or deselected)
 }
 
 {% endhighlight %}
 {% highlight vb %}
 
 Private _previousSelectedTokens As List(Of Object)
+Private label As Label
 
-' Initialize the SfComboBox
-Dim sfComboBox1 As New SfComboBox() With {
+' Initialize SfComboBox
+Dim sfComboBox1 As New SfComboBox With {
     .EnableToken = True,
     .DisplayMember = "Name",
-    .ValueMember = "Id"
+    .ValueMember = "Id",
+    .Size = New Size(300, 30),
+    .DataSource = New List(Of Object) From {
+        New With {.Id = 1, .Name = "Item1"},
+        New With {.Id = 2, .Name = "Item2"},
+        New With {.Id = 3, .Name = "Item3"}
+    }
 }
 
-' Set the DataSource
-sfComboBox1.DataSource = New List(Of Object) From {
-    New With {.Id = 1, .Name = "Item1"},
-    New With {.Id = 2, .Name = "Item2"},
-    New With {.Id = 3, .Name = "Item3"}
+sfComboBox1.Style.TokenStyle.Font = New Font("Arial", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+
+' Initialize Label
+label = New Label With {
+    .Width = 200,
+    .Location = New Point(10, 110)
 }
 
-' Add initial tokens
+' Initialize selected items and previous tokens
 sfComboBox1.SelectedItems.Add(sfComboBox1.DropDownListView.View.DisplayItems(0))
-_previousSelectedTokens = sfComboBox1.SelectedItems.Cast(Of Object).ToList()
+_previousSelectedTokens = sfComboBox1.SelectedItems.Cast(Of Object)().ToList()
 
-' Subscribe to events
 AddHandler sfComboBox1.SelectedValueChanged, AddressOf TokenComboBox_SelectedValueChanged
-AddHandler sfComboBox1.SelectedIndexChanged, AddressOf TokenComboBox_SelectedIndexChanged
 
-' Add SfComboBox to the form
 Me.Controls.Add(sfComboBox1)
+Me.Controls.Add(label)
+
 
 Private Sub TokenComboBox_SelectedValueChanged(sender As Object, e As EventArgs)
     Dim comboBox = TryCast(sender, SfComboBox)
 
-    ' Get the current selected tokens
-    Dim currentSelectedTokens = comboBox.SelectedItems.Cast(Of Object).ToList()
-
-    ' Determine added tokens
+    ' Get current and previous tokens
+    Dim currentSelectedTokens = comboBox.SelectedItems.Cast(Of Object)().ToList()
     Dim addedTokens = currentSelectedTokens.Except(_previousSelectedTokens).ToList()
-
-    ' Determine removed tokens
     Dim removedTokens = _previousSelectedTokens.Except(currentSelectedTokens).ToList()
 
-    ' Update the previous token list
+    ' Update previous tokens
     _previousSelectedTokens = currentSelectedTokens
 
     ' Handle added tokens
     For Each token In addedTokens
-        MessageBox.Show($"Token Added: {token.Name}", "Token Added")
-        ' Additional logic for added tokens
+        label.Text = $"Token Added: {token.Name}"
     Next
 
-    ' Handle removed tokens
+   ' Handle removed tokens
     For Each token In removedTokens
-        MessageBox.Show($"Token Removed: {token.Name}", "Token Removed")
-        ' Additional logic for removed tokens
+        label.Text = $"Token Removed: {token.Name}"
     Next
 End Sub
-
-Private Sub TokenComboBox_SelectedIndexChanged(sender As Object, e As EventArgs)
-    ' Handle the event when the selection changes (tokens are selected or deselected)
-End Sub
-
 
 {% endhighlight %}
 {% endtabs %}
