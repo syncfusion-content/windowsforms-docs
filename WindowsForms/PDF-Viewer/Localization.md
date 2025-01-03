@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in Windows Forms PDF Viewer control | Syncfusion
-description: Learn about Localization support in Syncfusion Windows Forms PDF Viewer (PdfViewerControl) control and more details.
+title: Localization in Windows Forms PDF Viewer control | Syncfusion&reg;
+description: Learn about Localization support in Syncfusion&reg; Windows Forms PDF Viewer (PdfViewerControl) control and more details.
 platform: windowsforms
 control: PdfViewerControl
 documentation: ug
