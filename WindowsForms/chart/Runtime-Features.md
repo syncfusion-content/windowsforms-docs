@@ -15,7 +15,7 @@ The following topics under this section elaborates on the runtime features of Ch
 
 ### Zooming via Mouse
 
-EssentialChart supports interactive zooming features along the x and y axis. During runtime, the user can simply select the range he wants to zoom with the mouse and the chart will accordingly zoom-in. Scrollbars will be activated to browse the areas that become hidden on zooming in.
+Essential® Chart supports interactive zooming features along the x and y axis. During runtime, the user can simply select the range he wants to zoom with the mouse and the chart will accordingly zoom-in. Scrollbars will be activated to browse the areas that become hidden on zooming in.
 
 Enable Zooming via the [EnableXZooming](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_EnableXZooming) and [EnableYZooming](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_EnableYZooming) properties.
 
@@ -41,7 +41,7 @@ To restrict the zoom-in factor to a certain level on the x and y axis use the [M
 
 ### Zooming via Keyboard
 
-EssentialChart also enables users to use keyboard shortcuts to enable zooming. Enable this feature through the [KeyZoom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_KeyZoom) property.
+Essential® Chart also enables users to use keyboard shortcuts to enable zooming. Enable this feature through the [KeyZoom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_KeyZoom) property.
 
 Using the following properties the zooming action can be mapped to specific keys.
 
@@ -132,7 +132,7 @@ N> Remember to enable zooming on both the axis using [EnableXZooming](https://he
 
 ### Zoom Types
 
-Essential Chart provides support to Zoom the chart in three different ways .The default zooming type is **Selection**. The [ZoomType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ZoomType) property is used for specifying the way in which the chart should be zoomed. The [ZoomType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ZoomType) property is a **flagged enum** and it can accept all 3 types of zooming.
+Essential® Chart provides support to Zoom the chart in three different ways .The default zooming type is **Selection**. The [ZoomType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ZoomType) property is used for specifying the way in which the chart should be zoomed. The [ZoomType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ZoomType) property is a **flagged enum** and it can accept all 3 types of zooming.
 
 <table>
 <tr>
@@ -250,7 +250,7 @@ Me.chartControl1.ResetOnDoubleClick= true
 
 ### Formatted Axes Labels
 
-It is possible to show formatted axes labels for a zoomed chart. EssentialChart's [SmartDateZoom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_SmartDateZoom) property when set to true enables this feature. You can set any one of the following custom label formats to the chart axis. 
+It is possible to show formatted axes labels for a zoomed chart. Essential® Chart's [SmartDateZoom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_SmartDateZoom) property when set to true enables this feature. You can set any one of the following custom label formats to the chart axis. 
 
 * SmartDateZoomDayLevelLabelFormat 
 * SmartDateZoomYearLevelLabelFormat
@@ -295,7 +295,7 @@ A sample which demonstrates the zooming and scrolling features are available in 
 
 ## Toolbars
 
-EssentialCharts comes with a built-in Toolbar that can be made visible to enable the user to do the following during runtime.
+Essential® Charts comes with a built-in Toolbar that can be made visible to enable the user to do the following during runtime.
 
 * Save the chart as an image.
 * Copy the image to clipboard.
@@ -980,7 +980,7 @@ cursor1.HorizontalCursorColor = Color.Red
 
 ### ChartInteractiveCursor Support for Chart Area
 
-EssentialChart now supports moving the interactive cursor fully over the chart area. It provides simple methods to display symbols at the intersection of series points and the interactive cursor.
+Essential® Chart now supports moving the interactive cursor fully over the chart area. It provides simple methods to display symbols at the intersection of series points and the interactive cursor.
 
 ### Use Case Scenarios
 
@@ -1083,7 +1083,7 @@ Me.chartControl1.ChartArea.InteractiveCursors(0).YInterval = 50
 
 ## ToolTips
 
-Essential Chart supports ToolTips in different areas of the chart which comes with multiple customization options.
+Essential® Chart supports ToolTips in different areas of the chart which comes with multiple customization options.
 
 The different tooltips in the chart can be turned off using the control's [ShowToolTips](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ShowToolTips) property.
 

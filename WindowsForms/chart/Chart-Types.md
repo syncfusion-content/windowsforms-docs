@@ -13,7 +13,7 @@ Essential® Chart includes a comprehensive set of more than 35 Chart types for a
 
 Chart types are specified on each [ChartSeries](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html) through the [Type](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_Type) property. All the chart types are required to have at least one X and one Y value. Certain chart types need more than one Y value.
 
-The following table narrates the minimum and maximum number of series and number of Y values required by each type of chart supported by Essential Chart.
+The following table narrates the minimum and maximum number of series and number of Y values required by each type of chart supported by Essential® Chart.
 
 <table>
 <tr>

@@ -9,7 +9,7 @@ documentation: ug
 
 # Statistical Formulas in Windows Forms Chart
 
-Essential Chart comes with support for several Statistical formulas that will let you apply formulas on data points in one or more series and will help you analyze and arrive at meaningful information from those data points.
+Essential® Chart comes with support for several Statistical formulas that will let you apply formulas on data points in one or more series and will help you analyze and arrive at meaningful information from those data points.
 
 These formulas are mainly exposed via static methods from the [BasicStatisticalFormulas](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.html) and UtilityFunctions types.
 
