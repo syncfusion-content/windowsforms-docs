@@ -9,7 +9,7 @@ documentation: ug
 
 # How to find value, maximum value and minimum value of the data points
 
-EssentialChart has FindValue, FindMaximumValue and FindMinimumValue methods that can return the corresponding chart data point values depending upon the parameter(s) passed to these methods.
+Essential® Chart has FindValue, FindMaximumValue and FindMinimumValue methods that can return the corresponding chart data point values depending upon the parameter(s) passed to these methods.
 
 All these methods are overloaded. 
 

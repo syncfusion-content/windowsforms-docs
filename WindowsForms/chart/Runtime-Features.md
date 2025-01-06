@@ -41,7 +41,7 @@ To restrict the zoom-in factor to a certain level on the x and y axis use the [M
 
 ### Zooming via Keyboard
 
-EssentialChart also enables users to use keyboard shortcuts to enable zooming. Enable this feature through the [KeyZoom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_KeyZoom) property.
+Essential® Chart also enables users to use keyboard shortcuts to enable zooming. Enable this feature through the [KeyZoom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_KeyZoom) property.
 
 Using the following properties the zooming action can be mapped to specific keys.
 
