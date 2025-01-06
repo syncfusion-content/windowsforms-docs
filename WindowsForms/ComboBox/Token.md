@@ -65,7 +65,7 @@ sfComboBox1.Style.TokenStyle.Font = New Font(“Arial”, 10F, FontStyle.Bold)
 
 ## Events Fired When Selecting and Deselecting Tokens 
 
-The events [SelectedValueChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_SelectedValueChanged) event is triggered when tokens are selected or deselected in the SfComboBox control.
+The [SelectedValueChanged]((https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_SelectedValueChanged)) event is triggered whenever tokens are selected or deselected in the SfComboBox control. This allows users to handle changes in token selections effectively.
 
 {% tabs %}
 {% highlight c# %}
@@ -192,4 +192,4 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Event fired when Selecting/Unselecting token item](Token_images/Token_Event.gif)
+![Event Triggered on Token Selection or Deselection](Token_images/Token_Event.gif)
