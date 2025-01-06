@@ -81,7 +81,7 @@ To view the samples, follow the steps below
 
    ### Assembly List
 
-   While deploying an application that references SyncfusionEssentialChart assembly, the following dependencies must be included in the distribution.
+   While deploying an application that references Syncfusion Essential® Chart assembly, the following dependencies must be included in the distribution.
 
    * Syncfusion.Chart.Windows
    * Syncfusion.Chart.Base

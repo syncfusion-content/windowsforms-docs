@@ -24,7 +24,7 @@ Please find more details regarding how to install the nuget packages in windows 
 
 To add chart to your form, follow the given steps:
 
-1.Open your form in designer. Add the Syncfusion controls to your VS.NET toolbox if you have not done it already (the install would have automatically done this unless you selected not to complete toolbox integration during installation). 
+1.Open your form in designer. Add the Syncfusion® controls to your VS.NET toolbox if you have not done it already (the install would have automatically done this unless you selected not to complete toolbox integration during installation). 
 
 ![Chart Started](Getting-Started_images/Toolbox.jpg)
 

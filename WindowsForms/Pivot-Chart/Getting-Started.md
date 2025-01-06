@@ -129,7 +129,7 @@ Me.Controls.Add(pivotChart1)
 {% endtabs %}
 
 N>
-Syncfusion® reference manager supports for specific framework that is shipped (assemblies) in our Syncfusion® Essential Studio® setup. So, if you try to add Syncfusion® assemblies in project and framework that is not supported with selected Syncfusion® version assemblies, then the dialog will be appeared by specifying that “Current build v{version} is not supported this framework v{Framework Version}”.
+Syncfusion® reference manager supports for specific framework that is shipped (assemblies) in our Syncfusion Essential Studio® setup. So, if you try to add Syncfusion® assemblies in project and framework that is not supported with selected Syncfusion® version assemblies, then the dialog will be appeared by specifying that “Current build v{version} is not supported this framework v{Framework Version}”.
 
 ## Binding data
 
