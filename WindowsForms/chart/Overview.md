@@ -13,7 +13,7 @@ This section covers information on Essential® Chart control, its key features, 
 
 ## Introduction to Essential® Chart
 
-Essential® Chart is an easily configurable, presentation quality business chart control. A unique point based Styles Architecture, easily extendable Data Model, easily extendable rendering model, native Date Handling and a unique Shared Data Model are the features that distinguish Essential chart. This control has been created using C#, which means that it is a fully-managed .NET component, and  has been specifically designed for use with Microsoft's Visual Studio .NET.
+Essential® Chart is an easily configurable, presentation quality business chart control. A unique point based Styles Architecture, easily extendable Data Model, easily extendable rendering model, native Date Handling and a unique Shared Data Model are the features that distinguish Essential® chart. This control has been created using C#, which means that it is a fully-managed .NET component, and  has been specifically designed for use with Microsoft's Visual Studio .NET.
 
 Essential® Chart for Windows Forms is a perfect solution for developers looking to add advanced, feature rich, visually appealing charts to their Windows Forms applications. The product comes with numerous samples as well as an extensive documentation to guide you every step of the way. 
 

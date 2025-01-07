@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Installation-and-Deployment | Windows Forms | Syncfusion
-description: Learn here all about the installation and deployment of Syncfusion® Windows Forms Chart control and more.
+description: Learn here all about the installation and deployment of Syncfusion Windows Forms Chart control and more.
 platform: windowsforms
 control: Chart
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Installation and Deployment
 
-This section covers information on the install location, samples, licensing, patches update and updation of the recent version of Essential Studio®. It comprises the following sub-sections:
+This section covers information on the install location, samples, licensing, patches update and updation of the recent version of Essential Studio. It comprises the following sub-sections:
 
 ## Installation
 
-For step-by-step installation procedure for the installation of Essential Studio®, refer to the Installation topic under Installation and Deployment in the Common UG.
+For step-by-step installation procedure for the installation of Essential Studio, refer to the Installation topic under Installation and Deployment in the Common UG.
 
 See Also
 
@@ -38,7 +38,7 @@ The Chart Windows Forms samples are installed in the following location:
 
 To view the samples, follow the steps below
 
-1. Click Start-->All Programs-->Syncfusion®-->Essential Studio® <version number> -->Dashboard.
+1. Click Start-->All Programs-->Syncfusion-->Essential Studio <version number> -->Dashboard.
 
 
 
@@ -81,7 +81,7 @@ To view the samples, follow the steps below
 
    ### Assembly List
 
-   While deploying an application that references Syncfusion Essential® Chart assembly, the following dependencies must be included in the distribution.
+   While deploying an application that references Syncfusion Essential Chart assembly, the following dependencies must be included in the distribution.
 
    * Syncfusion.Chart.Windows
    * Syncfusion.Chart.Base
