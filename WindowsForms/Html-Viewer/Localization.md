@@ -106,33 +106,33 @@ Public Class Localizer
         #
         Dim HTMLUI As region
         HTMLUIResourceIdentifiers.FindNext
-        Return "N�chstes finden"
+        Return "Weiter suchen"
         '''<summary>
         '''
         '''</summary>                    
         HTMLUIResourceIdentifiers.Title
-        Return "Finden"
+        Return "Suchen"
         HTMLUIResourceIdentifiers.Cancel
-        Return "Stornieren"
+        Return "Abbrechen"
         '''<summary>
         '''
         '''</summary>                    
         HTMLUIResourceIdentifiers.Direction
         Return "Richtung"
         HTMLUIResourceIdentifiers.Down
-        Return "Nieder"
+        Return "Abwärts"
         '''<summary>
         '''
         '''</summary>                    
         HTMLUIResourceIdentifiers.FindWhat
-        Return "Finde was"
+        Return "Suchen nach"
         HTMLUIResourceIdentifiers.Matchcase
-        Return "Match Fall"
+        Return "Groß-/Kleinschreibung beachten"
         '''<summary>
         '''
         '''</summary>                    
         HTMLUIResourceIdentifiers.Up
-        Return "Oben"
+        Return "Aufwärts"
         '''<summary>
         ''' default
         '''</summary>
