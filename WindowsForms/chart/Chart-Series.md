@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart Series in Windows Forms Chart control | Syncfusion
-description: Learn about Chart Series support in Syncfusion Essential Studio Windows Forms Chart control and more details.
+description: Learn about Chart Series support in Syncfusion Essential Studio® Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug
@@ -311,7 +311,7 @@ Data points sorted by Y-values in descending order
 
 ## Series Customization
 
-Essential Chart offers numerous appearance and behavior customization capabilities at the series level and on individual points.
+Essential® Chart offers numerous appearance and behavior customization capabilities at the series level and on individual points.
 
 Some of these options are applicable only for the whole series while the rest could be applied on the specific data points. Similarly some of these options are specific to certain chart types.
 
@@ -3755,7 +3755,8 @@ series1.Style.HighlightInterior = New BrushInfo(GradientStyle.ForwardDiagonal, C
 
 To set interior color for individual highlighted datapoints,
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}
+{% highlight c# %}
 
 series1.Styles[0].HighlightInterior = new BrushInfo(GradientStyle.ForwardDiagonal, Color.Red, Color.White);
 
@@ -3784,7 +3785,7 @@ series1.Styles(3).HighlightInterior = New BrushInfo(GradientStyle.ForwardDiagona
 
  [BarCharts](/windowsforms/chart/chart-types#bar-charts), [PieChart](/windowsforms/chart/chart-types#pie-chart),  [Funnel Chart](/windowsforms/chart/chart-types#funnel-chart),  [Pyramid Chart](/windowsforms/chart/chart-types#pyramid-chart), [Bubble Charts](/windowsforms/chart/chart-types#bubble-chart),[Column Charts](/windowsforms/chart/chart-types#column-charts),[AreaChart](/windowsforms/chart/chart-types#area-chart), [Stacking Area Chart](/windowsforms/chart/chart-types#stacking-area-chart), [Stacked Area100 Chart](/windowsforms/chart/chart-types#stackedarea100-chart), [Line Charts](/windowsforms/chart/chart-types#line-charts), [Box and Whisker Chart](/windowsforms/chart/chart-types#box-and-whisker-chart), [Gantt Chart](/windowsforms/chart/chart-types#gantt-chart), [Tornado Chart](/windowsforms/chart/chart-types#tornado-chart), [Polar And Radar Chart](/windowsforms/chart/chart-types#polar-and-radar-chart), [HiLo Charts](/windowsforms/chart/chart-types#hilo-chart), [HiLo Open Close Chart](/windowsforms/chart/chart-types#hilo-open-close-chart)
 
- {% endseealso %}
+{% endseealso %}
 
 ### HitTestRadius
 
@@ -4490,7 +4491,7 @@ Me.chartControl1.Series(0).ConfigItems.FunnelItem.LabelStyle= ChartAccumulationL
 
  [Pyramid Chart](/windowsforms/chart/chart-types#pyramid-chart),  [Funnel Chart](/windowsforms/chart/chart-types#funnel-chart)
 
- {% endseealso %}
+{% endseealso %}
 
 ### LegendItem
 
@@ -6632,7 +6633,7 @@ Me.chartControl1.Spacing = 50
 
 ### SpacingBetweenSeries
 
-EssentialChart provides support to control the spacing between series using SpacingBetweenSeries property.
+Essential® Chart provides support to control the spacing between series using SpacingBetweenSeries property.
 
 _Features_
 
@@ -6694,7 +6695,7 @@ Me.chartControl1.SpacingBetweenSeries = 20
 
 ### SpacingBetweenPoints
 
-EssentialChart provides support to control the spacing between points using SpacingBetweenPoints property.
+Essential® Chart provides support to control the spacing between points using SpacingBetweenPoints property.
 
 _Features_
 
@@ -8359,7 +8360,7 @@ The following screenshot illustrates a chart with color and border customization
 
 ## Custom Points
 
-EssentialChart supports plotting of points on the Chart Area even if they don't belong to a series. These are stored in the ChartControl.CustomPoints collection. They can be set at custom coordinates of the Chart Area or be made to follow a certain point or percentage coordinates. A custom point displays a text, background, border, symbol and marker, which is a line that connects the CustomPoint with the point on the chart area when it is offset from it.
+Essential® Chart supports plotting of points on the Chart Area even if they don't belong to a series. These are stored in the ChartControl.CustomPoints collection. They can be set at custom coordinates of the Chart Area or be made to follow a certain point or percentage coordinates. A custom point displays a text, background, border, symbol and marker, which is a line that connects the CustomPoint with the point on the chart area when it is offset from it.
 
 Through Designer the Custom Points can be set using the CustomPoints property. Clicking this property will popup ChartCustomPoint Collection Editor window where you can add your custom points.
 
@@ -8612,7 +8613,7 @@ Me.ChartWebControl1.CustomPoints.Add(cp)
 
 ## Empty Points
 
-EssentialChart lets you prevent certain points from getting plotted in the resultant chart. Such points are termed Empty Points.
+Essential® Chart lets you prevent certain points from getting plotted in the resultant chart. Such points are termed Empty Points.
 
 Empty Points can be implemented by setting the IsEmpty property of the ChartPoint class to true.
 
@@ -8908,7 +8909,8 @@ trendline.Type = TrendlineType.Power
 
 Logarithmic Trendline can be rendered by setting the trendline.Type as **TrendlineType.Logarithmic**.
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}
+{% highlight c# %}
 
 trendline.Type = TrendlineType.Logarithmic;
 
