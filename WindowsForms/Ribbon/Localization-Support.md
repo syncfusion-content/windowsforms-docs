@@ -79,84 +79,84 @@ class localization : ILocalizationProvider
             {
 
                 case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonAdd:
-                    return "啊錒别 ";
+                    return "添加";
                 case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonRemove:
-                    return "可用呢  ";
+                    return "移除";
                 case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonCancel:
-                    return "锕如如 ";
+                    return "取消";
                 case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonOk:
-                    return "别";
+                    return "确定";
                 case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonReset:
-                    return "地方把小";
+                    return "重置";
                 case ToolsResourceIdentifiers.CustomizeRibbonDialogLabel:
-                    return "都非";
+                    return "自定义功能区";
                 case ToolsResourceIdentifiers.CustomizeRibbonDialogChooseCommands:
-                    return "无后们 ";
+                    return "选择命令";
                 case ToolsResourceIdentifiers.CustomizeRibbonDialogMainTab:
-                    return "无拍  ";
+                    return "主选项卡";
                 case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonNewGroup:
-                    return "才了  ";
+                    return "新建组";
                 case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonNewTab:
-                    return "来把 ";
+                    return "新建选项卡";
                 case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonRename:
-                    return "人额女";
+                    return "重命名";
                 case ToolsResourceIdentifiers.CustomizeRibbonDialogCustomizationLabel:
-                    return "才上 来锕把";
+                    return "自定义选项";
                 case ToolsResourceIdentifiers.CustomizeRibbonDialogCaption:
-                    return "才上 人额女";
+                    return "自定义功能区";
                 case ToolsResourceIdentifiers.CustomizeQuickAccessLabel:
-                    return "才上 来锕把";
+                    return "快速访问工具栏";
                 case ToolsResourceIdentifiers.QuickAccessCustomizeMenu:
-                    return "啊錒别";
+                    return "自定义快速访问工具栏";
                 case ToolsResourceIdentifiers.QuickAccessAddItem:
-                    return "啊錒别";
+                    return "添加项目";
 
                 case ToolsResourceIdentifiers.QuickAccessDialogButtonAdd:
-                    return "啊錒别";
+                    return "添加";
                 case ToolsResourceIdentifiers.QuickAccessDialogButtonCancel:
-                    return "锕如如";
+                    return "取消";
                 case ToolsResourceIdentifiers.QuickAccessDialogButtonOk:
-                    return "别";
+                    return "确定";
                 case ToolsResourceIdentifiers.QuickAccessDialogButtonReset:
-                    return "地方把小";
+                    return "重置";
                 case ToolsResourceIdentifiers.QuickAccessDialogButtonRemove:
-                    return "可用呢";
+                    return "移除";
                 case ToolsResourceIdentifiers.QuickAccessMinimizeTheRibbon:
-                    return "啊錒别 如额呢";
+                    return "最小化功能区";
                 case ToolsResourceIdentifiers.QuickAccessPlaceAboveRibbon:
-                    return "錒为你 啊錒别 ";
+                    return "放置于功能区上方";
                 case ToolsResourceIdentifiers.QuickAccessPlaceBelowRibbon:
-                    return "地方把小 无不的 ";
+                    return "放置于功能区下方";
                 case ToolsResourceIdentifiers.QuickAccessToolBarLabel:
-                    return "地方把小 无不的 ";
+                    return "快速访问工具栏";
 
 
                 case ToolsResourceIdentifiers.CustomizeRibbonDialogRenameCancelButton:
-                    return "锕如如";
+                    return "取消";
                 case ToolsResourceIdentifiers.CustomizeRibbonDialogRenameCaption:
-                    return "如额你啊吗额";
+                    return "重命名";
                 case ToolsResourceIdentifiers.CustomizeRibbonDialogRenameOkButton:
-                    return "别";
+                    return "确定";
                 case ToolsResourceIdentifiers.CustomizeRibbonRenameDisplayLabel:
-                    return "都三片来啊 了阿不";
+                    return "显示名称";
 
                 case ToolsResourceIdentifiers.CustomizationLabel:
-                    return "都三片来啊 了阿不";
+                    return "自定义";
                 case ToolsResourceIdentifiers.CustomizeMenu:
-                    return "都三片来啊 了阿不";
+                    return "自定义";
                 case ToolsResourceIdentifiers.QuickAccessDialogDropDownName:
-                    return "都三片来啊 了阿不";
+                    return "快速访问下拉菜单";
                 case ToolsResourceIdentifiers.QuickAccessCustomizeCaption:
-                    return "都三片来啊 ";
+                    return "快速访问工具栏";
                 case ToolsResourceIdentifiers.QuickAccessDialogCommands:
-                    return "都三片来啊 ";
+                    return "命令";
                 case ToolsResourceIdentifiers.CustomizeRibbonDialogColumnHeader:
-                    return "都三片来啊 ";
+                    return "列标题";
 
                 case ToolsResourceIdentifiers.CustomMenu:
-                    return "都三片来啊 ";
+                    return "自定义菜单";
                 case ToolsResourceIdentifiers.QuickAccessDialogCustomizeRibbon:
-                    return "都三片来啊 ";    
+                    return "自定义功能区";
                 
                 default:
                     return string.Empty;
@@ -176,79 +176,79 @@ Class localization
     Public Function GetLocalizedString(ByVal culture As System.Globalization.CultureInfo, ByVal stringname As String, ByVal obj As Object) As String
         Select Case stringname
             Case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonAdd
-                Return "啊錒别 "
+                Return "添加"
             Case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonRemove
-                Return "可用呢  "
+                Return "移除"
             Case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonCancel
-                Return "锕如如 "
+                Return "取消"
             Case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonOk
-                Return "别"
+                Return "确定"
             Case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonReset
-                Return "地方把小"
+                Return "重置"
             Case ToolsResourceIdentifiers.CustomizeRibbonDialogLabel
-                Return "都非"
+                Return "自定义功能区"
             Case ToolsResourceIdentifiers.CustomizeRibbonDialogChooseCommands
-                Return "无后们 "
+                Return "选择命令"
             Case ToolsResourceIdentifiers.CustomizeRibbonDialogMainTab
-                Return "无拍  "
+                Return "主选项卡"
             Case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonNewGroup
-                Return "才了  "
+                Return "新建组"
             Case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonNewTab
-                Return "来把 "
+                Return "新建选项卡"
             Case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonRename
-                Return "人额女"
+                Return "重命名"
             Case ToolsResourceIdentifiers.CustomizeRibbonDialogCustomizationLabel
-                Return "才上 来锕把"
+                Return "自定义选项"
             Case ToolsResourceIdentifiers.CustomizeRibbonDialogCaption
-                Return "才上 人额女"
+                Return "自定义功能区"
             Case ToolsResourceIdentifiers.CustomizeQuickAccessLabel
-                Return "才上 来锕把"
+                Return "快速访问工具栏"
             Case ToolsResourceIdentifiers.QuickAccessCustomizeMenu
-                Return "啊錒别"
+                Return "自定义快速访问工具栏"
             Case ToolsResourceIdentifiers.QuickAccessAddItem
-                Return "啊錒别"
+                Return "添加项目"
             Case ToolsResourceIdentifiers.QuickAccessDialogButtonAdd
-                Return "啊錒别"
+                Return "添加"
             Case ToolsResourceIdentifiers.QuickAccessDialogButtonCancel
-                Return "锕如如"
+                Return "取消"
             Case ToolsResourceIdentifiers.QuickAccessDialogButtonOk
-                Return "别"
+                Return "确定"
             Case ToolsResourceIdentifiers.QuickAccessDialogButtonReset
-                Return "地方把小"
+                Return "重置"
             Case ToolsResourceIdentifiers.QuickAccessDialogButtonRemove
-                Return "可用呢"
+                Return "移除"
             Case ToolsResourceIdentifiers.QuickAccessMinimizeTheRibbon
-                Return "啊錒别 如额呢"
+                Return "最小化功能区"
             Case ToolsResourceIdentifiers.QuickAccessPlaceAboveRibbon
-                Return "錒为你 啊錒别 "
+                Return "放置于功能区上方"
             Case ToolsResourceIdentifiers.QuickAccessPlaceBelowRibbon
-                Return "地方把小 无不的 "
+                Return "放置于功能区下方"
             Case ToolsResourceIdentifiers.QuickAccessToolBarLabel
-                Return "地方把小 无不的 "
+                Return "快速访问工具栏"
             Case ToolsResourceIdentifiers.CustomizeRibbonDialogRenameCancelButton
-                Return "锕如如"
+                Return "取消"
             Case ToolsResourceIdentifiers.CustomizeRibbonDialogRenameCaption
-                Return "如额你啊吗额"
+                Return "重命名"
             Case ToolsResourceIdentifiers.CustomizeRibbonDialogRenameOkButton
-                Return "别"
+                Return "确定"
             Case ToolsResourceIdentifiers.CustomizeRibbonRenameDisplayLabel
-                Return "都三片来啊 了阿不"
+                Return "显示名称"
             Case ToolsResourceIdentifiers.CustomizationLabel
-                Return "都三片来啊 了阿不"
+                Return "自定义"
             Case ToolsResourceIdentifiers.CustomizeMenu
-                Return "都三片来啊 了阿不"
+                Return "自定义"
             Case ToolsResourceIdentifiers.QuickAccessDialogDropDownName
-                Return "都三片来啊 了阿不"
+                Return "快速访问下拉菜单"
             Case ToolsResourceIdentifiers.QuickAccessCustomizeCaption
-                Return "都三片来啊 "
+                Return "快速访问工具栏"
             Case ToolsResourceIdentifiers.QuickAccessDialogCommands
-                Return "都三片来啊 "
+                Return "命令"
             Case ToolsResourceIdentifiers.CustomizeRibbonDialogColumnHeader
-                Return "都三片来啊 "
+                Return "列标题"
             Case ToolsResourceIdentifiers.CustomMenu
-                Return "都三片来啊 "
+                Return "自定义菜单"
             Case ToolsResourceIdentifiers.QuickAccessDialogCustomizeRibbon
-                Return "都三片来啊 "
+                Return "自定义功能区"
             Case Else
                 Return String.Empty
         End Select
