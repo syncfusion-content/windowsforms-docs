@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Statistical Formulas in Windows Forms Chart control | Syncfusion
-description: Learn about Statistical Formulas support in Syncfusion Windows Forms Chart control and more details.
+description: Learn about Statistical Formulas support in Syncfusion® Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Statistical Formulas in Windows Forms Chart
 
-Essential Chart comes with support for several Statistical formulas that will let you apply formulas on data points in one or more series and will help you analyze and arrive at meaningful information from those data points.
+Essential® Chart comes with support for several Statistical formulas that will let you apply formulas on data points in one or more series and will help you analyze and arrive at meaningful information from those data points.
 
 These formulas are mainly exposed via static methods from the [BasicStatisticalFormulas](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.html) and UtilityFunctions types.
 
@@ -165,7 +165,7 @@ The following assumptions must be satisfied before performing the test.
 
 #### APIs Used
 
-EssentialChart provides support to perform **ANOVA Test** by implementing a method named Anova in the [BasicStatisticalFormulas](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.html) class. This method does the above described calculations and returns the test results as an instance of AnovaResult class. The [AnovaResult](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.Statistics.AnovaResult.html) is a class implemented to store the ANOVA test results such as sum of squares, degrees of freedom and mean squares for different variations and also stores the [FRatio](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.Statistics.AnovaResult.html#Syncfusion_Windows_Forms_Chart_Statistics_AnovaResult_FRatio) and [FCriticalValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.Statistics.AnovaResult.html#Syncfusion_Windows_Forms_Chart_Statistics_AnovaResult_FCriticalValue) of the test. Below is a detailed table for the ANOVA method.
+Essential® Chart provides support to perform **ANOVA Test** by implementing a method named Anova in the [BasicStatisticalFormulas](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.html) class. This method does the above described calculations and returns the test results as an instance of AnovaResult class. The [AnovaResult](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.Statistics.AnovaResult.html) is a class implemented to store the ANOVA test results such as sum of squares, degrees of freedom and mean squares for different variations and also stores the [FRatio](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.Statistics.AnovaResult.html#Syncfusion_Windows_Forms_Chart_Statistics_AnovaResult_FRatio) and [FCriticalValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.Statistics.AnovaResult.html#Syncfusion_Windows_Forms_Chart_Statistics_AnovaResult_FCriticalValue) of the test. Below is a detailed table for the ANOVA method.
 
 **Methods**
 

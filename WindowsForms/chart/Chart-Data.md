@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Populating Data in Windows Forms Chart control | Syncfusion
-description: Learn about Populating Data support in Syncfusion Essential Studio Windows Forms Chart control and more details.
+description: Learn about Populating Data support in Syncfusion Essential Studio® Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 ### Built-in Support for data-binding
 
-EssentialChart has built-in support for binding to DataTables, DataSets, DataViews or any implementation of IListSource, IBindingList or ITypedList.
+Essential® Chart has built-in support for binding to DataTables, DataSets, DataViews or any implementation of IListSource, IBindingList or ITypedList.
 
 The [ChartSeries](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html) data points and the axis labels are the ones that can be data bound.
 
@@ -29,7 +29,7 @@ The following sample code illustrates how a custom DataSet can be bound to a [Ch
 
 ![Chart Data](Chart-Data_images/Chart-Data_img2.jpeg)
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -132,7 +132,7 @@ Note that the [ChartDataBindModel](https://help.syncfusion.com/cr/windowsforms/S
 
 Shown below is some sample code that implements [IChartSeriesModel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.IChartSeriesModel.html) interface for use with the chart.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -247,7 +247,7 @@ End Class
 
 ## Bind the above model to the ChartSeries
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -286,9 +286,10 @@ Note that if you have indexed data, which implies that the X values are simply c
 
 ## Chart Data Binding with IEnumerable
 
-Syncfusion chart provides an option of binding the Chart with IEnumerable, like ArrayList for Indexed or Non Indexed model data through [ChartDataBindModel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html) implementation.
+Syncfusion® chart provides an option of binding the Chart with IEnumerable, like ArrayList for Indexed or Non Indexed model data through [ChartDataBindModel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html) implementation.
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}
+{% highlight c# %}
 
 class PopulationData
 {
@@ -364,7 +365,7 @@ If you have a class like above, you will have a collection of this class instanc
 
 In this example, we are binding with a Non Indexed data, with YNames alone and the chart will not be rendered with x-axis values. We need to assign the x-axis values through [ChartDataBindAxisLabelModel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartDataBindAxisLabelModel.html) class. [ChartDataBindAxisLabelModel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartDataBindAxisLabelModel.html) class provides a facility to bind the axis label values through the data source like [ChartDataBindModel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html). 
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -569,7 +570,7 @@ Binding Chart with a BindingSource in code behind is similar to binding IEnumera
 
 Create a [ChartDataBindModel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html) object with BindingSource as data source.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -592,7 +593,7 @@ Create a [ChartDataBindModel](https://help.syncfusion.com/cr/windowsforms/Syncfu
 
 Provide a field name in binding source as value to the [XName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html#Syncfusion_Windows_Forms_Chart_ChartDataBindModel_XName) property of the [ChartDataBindModel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html) object. 
 
-{% tabs %} 
+{% tabs %}
 
 {% highlight c# %}
 
@@ -625,7 +626,7 @@ Similarly, provide a field name in binding source as value to the [YNames](https
 
 As pie chart is used in this example, it is enough to use one field name for the YNames property of the [ChartDataBindModel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html) object.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -664,7 +665,7 @@ model.YNames = new string[] { "Field2" };
 
 Set [ChartDataBindModel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html) object as value to the [ChartSeries](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html) object. This binds the Series with BindingSource.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -709,11 +710,11 @@ The following screenshot displays a Chart bounded with binding source in code be
 
 ## Data Manipulation
 
-Essential Chart provides a series model implementation that works directly on top of grouped data. Filters, summaries and computed expressions are all supported in EssentialChart and users can easily add custom summaries and filters and have such data displayed in the chart.
+Essential® Chart provides a series model implementation that works directly on top of grouped data. Filters, summaries and computed expressions are all supported in Essential® Chart and users can easily add custom summaries and filters and have such data displayed in the chart.
 
 ### Grouping Support
 
-The enterprise version of Essential Chart includes Essential Grouping that allows EssentialChart to implement a series model that works directly on top of grouped data. All the key advantages of Essential Grouping carry over into the grouping support in Essential Chart. With EssentialChart, you are not restricted to predefined summaries or filters. You can easily add custom summaries and filters and have such data displayed in the chart.
+The enterprise version of Essential® Chart includes Essential® Grouping that allows Essential® Chart to implement a series model that works directly on top of grouped data. All the key advantages of Essential® Grouping carry over into the grouping support in Essential® Chart. With Essential® Chart, you are not restricted to predefined summaries or filters. You can easily add custom summaries and filters and have such data displayed in the chart.
 
 The following image displays stock data that is grouped by symbol to calculate the total volume. The data contains discrete transaction details with symbol information, volume, and price. 
 
@@ -721,21 +722,21 @@ The following image displays the same data with data from transactions that occu
 
 ![Chart Data](Data-Manipulation_images/Data-Manipulation_img1.png)
 
-### Essential Grid Interaction
+### Essential® Grid Interaction
 
-Essential Chart offers great interaction capabilities with Essential Grid. You can use a common data model for the grid and chart. The grid can also serve as a data model for the chart, as shown in the following image. Selected columns are automatically mapped into the chart. All it takes few lines of code to implement a model that adapts the data in question (in this case grid cells) for display in the chart.
+Essential® Chart offers great interaction capabilities with Essential® Grid. You can use a common data model for the grid and chart. The grid can also serve as a data model for the chart, as shown in the following image. Selected columns are automatically mapped into the chart. All it takes few lines of code to implement a model that adapts the data in question (in this case grid cells) for display in the chart.
 
 ![Chart Data](Data-Manipulation_images/Data-Manipulation_img2.png)
 
 ## Real time
 
-EssentialChart is optimized to deal with real time data. It can work with both huge and real time data and render a smooth and dynamic chart using any of the several available chart types.
+Essential® Chart is optimized to deal with real time data. It can work with both huge and real time data and render a smooth and dynamic chart using any of the several available chart types.
 
 Essentially, this involves updating the chart's data points list and optionally updating the chart axis ranges if the default ranges are not user-friendly.
 
 While you can use the [ChartSeries.Points](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_Points) to add new data points to the existing list, for best performance it's recommended to implement your own "model" to store the data points in real-time scenarios.
 
-A sample application that illustrates real time data usage which is distributed along with the EssentialChart installation and can be found at:
+A sample application that illustrates real time data usage which is distributed along with the Essential® Chart installation and can be found at:
 
 **Sample Location:** "&lt;sample installation location&gt;\Syncfusion\EssentialStudio\Version Number\Windows\Chart.Windows\Samples\Real Time\Chart Recorder"
 
