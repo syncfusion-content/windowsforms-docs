@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding in Windows Forms Pivot Chart control | Syncfusion
-description: Learn about Data Binding support in Syncfusion Windows Forms Pivot Chart control, its elements and more details.
+description: Learn about Data Binding support in Syncfusion® Windows Forms Pivot Chart control, its elements and more details.
 platform: windowsforms
 control: PivotChart
 documentation: ug

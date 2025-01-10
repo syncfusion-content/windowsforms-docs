@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization in Windows Forms Chart control | Syncfusion
-description: Learn about Localization support in Syncfusion Essential Studio Windows Forms Chart control and more details.
+description: Learn about Localization support in Syncfusion Essential Studio® Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 [Localization](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.LocalizationBase.html) allows chart to display data according to the language and culture specific to a particular country or region.
 
-EssentialChart now supports localization; built-in resource files for specific languages can be easily added.  Context menu items, exception messages, and some of the toolbar items can be localized.
+Essential® Chart now supports localization; built-in resource files for specific languages can be easily added.  Context menu items, exception messages, and some of the toolbar items can be localized.
 
 ### Use Case Scenario
 
@@ -80,7 +80,7 @@ Me.chartControl1.Localize=”de-DE”
 
 To view a sample,
 
-1. Open the Syncfusion Dashboard.
+1. Open the Syncfusion® Dashboard.
 2. Select User Interface -> Windows Forms.
 3. Click Run Samples.
 4. Navigate to Culture Localization > Localization sample.

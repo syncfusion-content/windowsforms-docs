@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart Types in Windows Forms Pivot Chart control | Syncfusion
-description: Learn about Chart Types support in Syncfusion Windows Forms Pivot Chart control, its elements and more details.
+description: Learn about Chart Types support in Syncfusion® Windows Forms Pivot Chart control, its elements and more details.
 platform: windowsforms
 control: PivotChart
 documentation: ug
