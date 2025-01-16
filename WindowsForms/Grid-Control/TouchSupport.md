@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Touch Support in Windows Forms Grid Control | Syncfusion
-description: Learn about Touch Support support in Syncfusion Windows Forms Grid Control, its elements and more details.
+description: Learn about Touch Support support in Syncfusion® Windows Forms Grid Control, its elements and more details.
 platform: WindowsForms
 control: GridControl
 documentation: ug

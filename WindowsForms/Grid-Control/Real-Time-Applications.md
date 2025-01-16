@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Real-Time Applications in Windows Forms Grid Control | Syncfusion
-description: Learn about Real-Time Applications support in Syncfusion Windows Forms Grid Control, its elements and more details.
+description: Learn about Real-Time Applications support in Syncfusion® Windows Forms Grid Control, its elements and more details.
 platform: WindowsForms
 control: GridControl
 documentation: ug
@@ -18,7 +18,7 @@ Tetris game application can be created by GridControl. In this game the boxes wi
 N> A sample demonstrating this feature can be downloaded over [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Essential_Blocks_Demo2062614268.zip). 
 
 ## Excel like UI
-Microsoft Excel-like User Interface can be implemented in GridControl with the help of other controls like [RibbonControl](https://help.syncfusion.com/windowsforms/ribbon/overview), [GridAwareTextBox](https://help.syncfusion.com/windowsforms/grid-control/formulabar) and [TabBarSplitter](https://help.syncfusion.com/windowsforms/tab-splitter-container/overview). It contains the **Name Box** that shows the current selection range and **Formula Bar** supports the formula cell. This **Formula Bar** is made up of the `GridAwareTextBox` control. In the top it has the **Quick Access Toolbar** which contains the necessary tools and other options which are available in the Syncfusion `RibbonControl`. Column header has the column letters and row header has the row numbers which was similar to Excel sheet. It contains the **Sheet Tab** which denotes the number of sheets. In the bottom it has the **Zoom Slider** and **Status Bar** which was similar to that of Excel sheet.
+Microsoft Excel-like User Interface can be implemented in GridControl with the help of other controls like [RibbonControl](https://help.syncfusion.com/windowsforms/ribbon/overview), [GridAwareTextBox](https://help.syncfusion.com/windowsforms/grid-control/formulabar) and [TabBarSplitter](https://help.syncfusion.com/windowsforms/tab-splitter-container/overview). It contains the **Name Box** that shows the current selection range and **Formula Bar** supports the formula cell. This **Formula Bar** is made up of the `GridAwareTextBox` control. In the top it has the **Quick Access Toolbar** which contains the necessary tools and other options which are available in the Syncfusion<sup>®</sup> `RibbonControl`. Column header has the column letters and row header has the row numbers which was similar to Excel sheet. It contains the **Sheet Tab** which denotes the number of sheets. In the bottom it has the **Zoom Slider** and **Status Bar** which was similar to that of Excel sheet.
 
 ![Real-Time-Applications_img2](Real-Time-Applications_images/Real-Time-Applications_img2.jpeg)
 

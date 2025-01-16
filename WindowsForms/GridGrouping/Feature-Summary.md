@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Feature Summary in Windows Forms GridGrouping control | Syncfusion
-description: Learn about Feature Summary support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
+description: Learn about Feature Summary support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
 platform: windowsforms
 control: GridGrouping
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Feature Summary in Windows Forms GridGrouping control
 
-Essential Grid Grouping control possesses advanced features such as Outlook style grouping and is highly optimized to handle large amount of data. This section lists various features of grid grouping control in brief.
+Essential<sup>®</sup> Grid Grouping control possesses advanced features such as Outlook style grouping and is highly optimized to handle large amount of data. This section lists various features of grid grouping control in brief.
 
 * Filter by Display Member: Filter by Display Member is a new addition to Grid Helper Utilities. It allows filtering of grid data by Display Member instead of Value Member. With this feature, filter bar's drop-down lists the display member strings of the filtering column instead of its value member strings. You can use this feature with both Grid Data Bound Grid and Grid Grouping control.
 
@@ -45,7 +45,7 @@ Essential Grid Grouping control possesses advanced features such as Outlook styl
 
 
 
-* Grouping: Grid data can be arranged based on matching field values to form groups. Essential Grid supports nested grouping by hierarchically combining the groups in different levels. The number of levels of grouping is unlimited.
+* Grouping: Grid data can be arranged based on matching field values to form groups. Essential<sup>®</sup> Grid supports nested grouping by hierarchically combining the groups in different levels. The number of levels of grouping is unlimited.
 
  ![Feature-Summary_images5](Feature-Summary_images/Feature-Summary_img5.jpeg) 
 

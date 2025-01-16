@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Find and Replace in Windows Forms GridGrouping control | Syncfusion
-description: Learn about Find and Replace support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
+description: Learn about Find and Replace support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug

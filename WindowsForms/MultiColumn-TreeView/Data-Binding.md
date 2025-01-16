@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding in Windows Forms MultiColumn TreeView | Syncfusion
-description: Learn about Data Binding support in Syncfusion Windows Forms MultiColumn TreeView control and more details.
+description: Learn about Data Binding support in Syncfusion® Windows Forms MultiColumn TreeView control and more details.
 platform: WindowsForms
 control: MultiColumnTreeView
 documentation: ug

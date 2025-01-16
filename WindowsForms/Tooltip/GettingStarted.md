@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Windows Forms Tooltip control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms Tooltip (SfToolTip) control and more details.
+description: Learn here about getting started with Syncfusion® Windows Forms Tooltip (SfToolTip) control and more details.
 platform: windowsforms
 control: SfToolTip
 documentation: ug
@@ -25,7 +25,7 @@ The following list of assemblies should be added as reference to use the SfToolT
 <tr>
 <td>
 <br/>Syncfusion.Core.WinForms<br/></td><td>
-<br/>Syncfusion.Core.WinForms assembly contains the theme related classes for the Syncfusion controls and basic components like SfScrollFrame, SfButton, SfForm and SfSkinManager.<br/></td></tr>
+<br/>Syncfusion.Core.WinForms assembly contains the theme related classes for the Syncfusion<sup>®</sup> controls and basic components like SfScrollFrame, SfButton, SfForm and SfSkinManager.<br/></td></tr>
 </table>
 
 Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sftooltip) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. 

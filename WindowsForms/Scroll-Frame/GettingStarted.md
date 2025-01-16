@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Windows Forms Scroll Frame | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms Scroll Frame (SfScrollFrame) control, its elements and more details.
+description: Learn here about getting started with Syncfusion® Windows Forms Scroll Frame (SfScrollFrame) control, its elements and more details.
 platform: WindowsForms
 control: SfScrollFrame
 documentation: ug
@@ -27,7 +27,7 @@ The following list of assembly should be added as reference to use [SfScrollFram
 Syncfusion.Core.WinForms
 </td>
 <td>
-Syncfusion.Core.WinForms assembly contains the theme related classes for the Syncfusion controls and basic components like SfToolTip, SfButton, SfForm, and SfSkinManager.
+Syncfusion.Core.WinForms assembly contains the theme related classes for the Syncfusion<sup>®</sup> controls and basic components like SfToolTip, SfButton, SfForm, and SfSkinManager.
 </td>
 </tr>
 </table>

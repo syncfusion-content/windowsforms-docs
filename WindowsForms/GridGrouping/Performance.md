@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Performance in Windows Forms GridGrouping control | Syncfusion
-description: Learn about Performance support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
+description: Learn about Performance support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug

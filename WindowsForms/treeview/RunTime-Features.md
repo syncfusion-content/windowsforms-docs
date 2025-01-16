@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RunTime-Features | WindowsForms | Syncfusion
-description: Learn here about RunTime features of Syncfusion Windows Forms TreeView control, its elements and more details.
+description: Learn here about RunTime features of Syncfusion® Windows Forms TreeView control, its elements and more details.
 platform: WindowsForms
 control: TreeView 
 documentation: ug

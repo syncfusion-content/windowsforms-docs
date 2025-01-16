@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Windows Forms Form control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms Form (SfForm) control, its elements, and more details.
+description: Learn here all about introduction of Syncfusion® Windows Forms Form (SfForm) control, its elements, and more details.
 platform: WindowsForms
 control: SfForm
 documentation: ug
@@ -22,7 +22,7 @@ Following are the key features of the SfForm:
 
 ## Choose between different form controls
 
-Syncfusion WinForms suite comes up with the following different forms:
+Syncfusion<sup>®</sup> WinForms suite comes up with the following different forms:
 
 * [SfForm](https://www.syncfusion.com/winforms-ui-controls/form)
 * [MetroForm](https://www.syncfusion.com/winforms-ui-controls/metroform)

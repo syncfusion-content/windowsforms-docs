@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Drag and Drop in Windows Forms Grid Control | Syncfusion
-description: Learn about Drag and Drop support in Syncfusion Windows Forms Grid Control, its elements and more details.
+description: Learn about Drag and Drop support in Syncfusion® Windows Forms Grid Control, its elements and more details.
 platform: windowsforms
 control: GridControl
 documentation: ug

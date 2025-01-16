@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Unbound Column in Windows Forms DataGrid control | Syncfusion
-description: Learn here all about unbound column feature of Syncfusion Windows Forms DataGrid (SfDataGrid) control and more.
+description: Learn here all about unbound column feature of Syncfusion® Windows Forms DataGrid (SfDataGrid) control and more.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug

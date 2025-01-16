@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization in Windows Forms Spreadsheet control | Syncfusion
-description: Learn about Localization support in Syncfusion Windows Forms Spreadsheet control, its elements and more details.
+description: Learn about Localization support in Syncfusion® Windows Forms Spreadsheet control, its elements and more details.
 platform: windowsforms
 control: Spreadsheet
 documentation: ug

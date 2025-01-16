@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events in Windows Forms GridGrouping control | Syncfusion
-description: Learn about Events support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
+description: Learn about Events support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
@@ -589,7 +589,7 @@ End Sub
 {% endtabs %}
 
 ## FilterBar Selection Events
-There are two events for filter bar selection, namely [FilterBarSelectedItemChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html) and [FilterBarSelectedItemChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html) are implemented for Essential Grid. These events enable the user to cancel or customize filter value.
+There are two events for filter bar selection, namely [FilterBarSelectedItemChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html) and [FilterBarSelectedItemChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html) are implemented for Essential<sup>®</sup> Grid. These events enable the user to cancel or customize filter value.
 
 ### FilterBarSelectedItemChanging
 This event will be triggered while filtering a column. Using this event, user can cancel the filtering and the selected index or selected text of the filter bar cell can be modified as required. The event handler receives an argument type of [FilterBarSelectedItemChangingEventArgs](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.FilterBarSelectedItemChangingEventArgs.html) contains data related to this event.

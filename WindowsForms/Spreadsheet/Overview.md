@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Windows Forms Spreadsheet control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms Spreadsheet control, its elements and more details.
+description: Learn here all about introduction of Syncfusion® Windows Forms Spreadsheet control, its elements and more details.
 platform: windowsforms
 control: Spreadsheet
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization | DataGrid | WinForms | Syncfusion
-description: Learn about localization support to customize the default strings in Syncfusion WinForms DataGrid (SfDataGrid) control and more details.
+description: Learn about localization support to customize the default strings in Syncfusion® WinForms DataGrid (SfDataGrid) control and more details.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug

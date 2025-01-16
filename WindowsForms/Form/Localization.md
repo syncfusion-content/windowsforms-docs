@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization in Windows Forms Form control | Syncfusion
-description: Learn about Localization support in Syncfusion Windows Forms Form (SfForm) control and more details.
+description: Learn about Localization support in Syncfusion® Windows Forms Form (SfForm) control and more details.
 platform: windowsforms
 control: SfForm
 documentation: ug

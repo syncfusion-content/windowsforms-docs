@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Clipboard Operations in Windows Forms GridGrouping | Syncfusion
-description: Learn about Clipboard Operations support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
+description: Learn about Clipboard Operations support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug

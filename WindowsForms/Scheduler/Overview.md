@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Windows Forms Scheduler control (Event Calendar) | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms Scheduler (Event Calendar) control, its elements and more details.
+description: Learn here all about introduction of Syncfusion® Windows Forms Scheduler (Event Calendar) control, its elements and more details.
 platform: windowsforms
 control: Schedule
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Windows Forms Scheduler (Event Calendar) Overview
 
-The Syncfusion Scheduler is a Windows Forms class library built around the functionalities found in the Windows Forms Grid control. The control allows you to add scheduling support to your applications. 
+The Syncfusion<sup>®</sup> Scheduler is a Windows Forms class library built around the functionalities found in the Windows Forms Grid control. The control allows you to add scheduling support to your applications. 
 
 The most popular WinForms Scheduler includes creating new appointments, displaying those appointments in a variety of views, including Monthly, Daily, Weekly, Work Week, and multiple days. In the daily formats, you can use the UI to drag appointments to another time slot and to extend appointments. A flexible navigation calendar lets you easily home on the dates you would like to see in the Schedule control. 
 

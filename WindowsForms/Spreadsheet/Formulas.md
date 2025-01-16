@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Formulas in Windows Forms Spreadsheet control | Syncfusion
-description: Learn about Formulas support in Syncfusion Windows Forms Spreadsheet control, its elements and more details.
+description: Learn about Formulas support in Syncfusion® Windows Forms Spreadsheet control, its elements and more details.
 platform: windowsforms
 control: Spreadsheet
 documentation: ug

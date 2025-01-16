@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in Windows Forms Grid Control | Syncfusion
-description: Learn about Selection support in Syncfusion Windows Forms Grid Control, its elements and more details.
+description: Learn about Selection support in Syncfusion® Windows Forms Grid Control, its elements and more details.
 platform: windowsforms
 control: GridControl
 documentation: ug

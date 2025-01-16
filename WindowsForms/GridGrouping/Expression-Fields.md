@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Expression Fields in Windows Forms GridGrouping control | Syncfusion
-description: Learn about Expression Fields support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
+description: Learn about Expression Fields support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
@@ -492,7 +492,7 @@ Me.gridGroupingControl1.TableDescriptor.ExpressionFields.AddRange(New Expression
 ![Expression-Fields_img6](Expression-Fields_images/Expression-Fields_img6.png)
 
 ## Adding Calculate Engine Formulas
-The [Essential Calculate formula](https://help.syncfusion.com/windowsforms/calculation-engine/supported-formulas/supported-formulas) functions can also be used as custom function for the calculation of Expression Fields. The **Syncfusion.Calculate.Base.dll**provides the accessible to use the calculate engine. 
+The [Essential<sup>®</sup> Calculate formula](https://help.syncfusion.com/windowsforms/calculation-engine/supported-formulas/supported-formulas) functions can also be used as custom function for the calculation of Expression Fields. The **Syncfusion.Calculate.Base.dll**provides the accessible to use the calculate engine. 
 
 Please refer the below dashboard sample to create the [CalcEngine](https://help.syncfusion.com/windowsforms/calculation-engine/supported-formulas/supported-formulas) with the [ICalcData](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.ICalcData.html),
 

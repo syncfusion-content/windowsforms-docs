@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Visual Styles in Windows Forms GridGrouping control | Syncfusion
-description: Learn about Visual Styles support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
+description: Learn about Visual Styles support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
@@ -234,7 +234,7 @@ SkinManager.SetVisualStyle(this.gridGroupingControl1, VisualTheme.Office2010Blue
 SkinManager.SetVisualStyle(Me.gridGroupingControl1, VisualTheme.Office2010Blue)
 {% endhighlight %}
 {% endtabs %}
-The [SkinManager](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.SkinManager.html) provides the supports for all the [VisualTheme](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.VisualTheme.html) available in GridGroupingControl. It is also used to apply the same visual style for all the Syncfusion controls in the form.
+The [SkinManager](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.SkinManager.html) provides the supports for all the [VisualTheme](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.VisualTheme.html) available in GridGroupingControl. It is also used to apply the same visual style for all the Syncfusion<sup>®</sup> controls in the form.
 {% tabs %}
 {% highlight c# %}
 // Code for applying visual theme for the whole form.

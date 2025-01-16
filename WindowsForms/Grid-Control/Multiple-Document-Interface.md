@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Multiple Document Interface of Windows Forms GridControl | Syncfusion
-description: This section explains on how to implement the multiple document interface (MDI) in Syncfusion Windows Forms GridControl and more.
+description: This section explains on how to implement the multiple document interface (MDI) in Syncfusion® Windows Forms GridControl and more.
 platform: WindowsForms
 control: GridControl
 documentation: ug

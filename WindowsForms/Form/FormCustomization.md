@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Form Customization in Windows Forms Form control | Syncfusion
-description: Learn about Form Customization support in Syncfusion Windows Forms Form (SfForm) control and more details.
+description: Learn about Form Customization support in Syncfusion® Windows Forms Form (SfForm) control and more details.
 platform: WindowsForms
 control: SfForm
 documentation: ug

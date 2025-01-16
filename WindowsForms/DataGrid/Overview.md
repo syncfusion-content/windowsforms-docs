@@ -31,7 +31,7 @@ Following are the key features of SfDataGrid control
 
 ## Choose between different grid controls
 
-Syncfusion WinForms suite comes up with following different grid namely,
+Syncfusion<sup>®</sup> WinForms suite comes up with following different grid namely,
 
 * [SfDataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid)
 * [GridGroupingControl](https://help.syncfusion.com/windowsforms/gridgrouping/overview)

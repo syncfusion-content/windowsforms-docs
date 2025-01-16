@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Windows Forms Pivot Grid | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms Pivot Grid control, its elements and more details.
+description: Learn here about getting started with Syncfusion® Windows Forms Pivot Grid control, its elements and more details.
 platform: windowsforms
 control: PivotGrid
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 # Getting Started with Windows Forms Pivot Grid
 
 >**Important**
-Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion license key in your Windows Forms application to use our components.
+Starting with v16.2.0.x, if you refer to Syncfusion<sup>®</sup> assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion<sup>®</sup> license key in your Windows Forms application to use our components.
 
 This section provides a quick overview for working with the pivot grid for WinForms. Walk through the entire process of creating a simple pivot grid.
 
@@ -84,17 +84,17 @@ Me.Controls.Add(pivotGridControl1)
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-### Adding control via Syncfusion reference manager
+### Adding control via Syncfusion<sup>®</sup> reference manager
 
-[Syncfusion reference manager](https://help.syncfusion.com/extension/syncfusion-reference-manager/overview) is a Visual Studio Add-In that helps to add Syncfusion controls. The pivot grid control can be added through Syncfusion reference manager by following the below steps.
+[Syncfusion<sup>®</sup> reference manager](https://help.syncfusion.com/extension/syncfusion-reference-manager/overview) is a Visual Studio Add-In that helps to add Syncfusion<sup>®</sup> controls. The pivot grid control can be added through Syncfusion<sup>®</sup> reference manager by following the below steps.
 
 1. Create a new **Windows Forms Application** in Visual Studio.
 
-2. Then right-click on the project and select Syncfusion Reference Manager.
+2. Then right-click on the project and select Syncfusion<sup>®</sup> Reference Manager.
 
 ![GettingStarted_img7](Getting-Started_images/GettingStarted_img7.png)
 
-3. The Syncfusion Reference Manager wizard will be opened as shown below.
+3. The Syncfusion<sup>®</sup> Reference Manager wizard will be opened as shown below.
 
 ![GettingStarted_img8](Getting-Started_images/GettingStarted_img8.png)
 
@@ -139,7 +139,7 @@ Me.Controls.Add(pivotGridControl1)
 {% endtabs %}
 
 N>
-Syncfusion reference manager supports for specific framework which is shipped (assemblies) in our Syncfusion Essential Studio setup. So, if you try to add Syncfusion assemblies in project and framework which is not supported with selected Syncfusion version assemblies, then the dialog will be appeared by specifying that “Current build v{version} is not supported this framework v{Framework Version}”.
+Syncfusion<sup>®</sup> reference manager supports for specific framework which is shipped (assemblies) in our Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> setup. So, if you try to add Syncfusion<sup>®</sup> assemblies in project and framework which is not supported with selected Syncfusion<sup>®</sup> version assemblies, then the dialog will be appeared by specifying that “Current build v{version} is not supported this framework v{Framework Version}”.
 
 ## Binding data
 

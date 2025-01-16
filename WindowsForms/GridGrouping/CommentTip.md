@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Comment Tip in Windows Forms GridGrouping control | Syncfusion
-description: Learn about Comment Tip support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
+description: Learn about Comment Tip support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug

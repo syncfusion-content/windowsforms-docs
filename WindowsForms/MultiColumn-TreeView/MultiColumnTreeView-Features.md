@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MultiColumnTreeView Features in MultiColumn TreeView | Syncfusion
-description: Learn about MultiColumnTreeView Features support in Syncfusion Windows Forms MultiColumn TreeView control and more details.
+description: Learn about MultiColumnTreeView Features support in Syncfusion® Windows Forms MultiColumn TreeView control and more details.
 platform: WindowsForms
 control: MultiColumnTreeView
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Exploration in Windows Forms Pivot Grid control | Syncfusion
-description: Learn about Data Exploration support in Syncfusion Windows Forms Pivot Grid control and more details.
+description: Learn about Data Exploration support in Syncfusion® Windows Forms Pivot Grid control and more details.
 platform: windowsforms
 control: Pivot Grid
 documentation: ug

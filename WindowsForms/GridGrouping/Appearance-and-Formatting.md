@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance and Formatting in Windows Forms GridGrouping | Syncfusion
-description: Learn about Appearance and Formatting support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
+description: Learn about Appearance and Formatting support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug

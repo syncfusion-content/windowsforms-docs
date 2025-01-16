@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Visual Styles in Windows Forms Grid Control | Syncfusion
-description: Learn about Visual Styles support in Syncfusion Windows Forms Grid Control, its elements and more details.
+description: Learn about Visual Styles support in Syncfusion® Windows Forms Grid Control, its elements and more details.
 platform: windowsforms
 control: GridControl
 documentation: ug
@@ -222,7 +222,7 @@ SkinManager.SetVisualStyle(Me.gridControl1, VisualTheme.Office2010Blue)
 {% endhighlight %}
 {% endtabs %}
 
-The [SkinManager](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.SkinManager.html) provides the supports for all the [VisualTheme](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.VisualTheme.html) available in GridControl. It is also used to apply the same visual style for all the Syncfusion controls in the form.
+The [SkinManager](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.SkinManager.html) provides the supports for all the [VisualTheme](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.VisualTheme.html) available in GridControl. It is also used to apply the same visual style for all the Syncfusion<sup>®</sup> controls in the form.
 
 {% tabs %}
 {% highlight c# %}

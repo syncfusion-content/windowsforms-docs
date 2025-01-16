@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization in Windows Forms Pivot Grid control | Syncfusion
-description: Learn about Localization support in Syncfusion Windows Forms Pivot Grid control, its elements and more details.
+description: Learn about Localization support in Syncfusion® Windows Forms Pivot Grid control, its elements and more details.
 platform: windowsforms
 control: PivotGrid
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 Localization is the process of making application multilingual by formatting the content according to the cultures. This involves configuring the application for a specific language. Culture is the combination of language and location. For example, "en-US" is the culture for English language spoken in United States; en-GB is the culture for English language spoken in Great Britain.
 
-Syncfusion components have their own neutral resources and these resources can be localized as per the customer requirement. Pivot grid control can be localized in any of the following ways.
+Syncfusion<sup>®</sup> components have their own neutral resources and these resources can be localized as per the customer requirement. Pivot grid control can be localized in any of the following ways.
 
 * Using ILocalizationProvider interface
 * Using satellite assemblies

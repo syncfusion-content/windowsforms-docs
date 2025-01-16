@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pivot Columns in Windows Forms Pivot Grid control | Syncfusion
-description: Learn about Pivot Columns support in Syncfusion Windows Forms Pivot Grid control, its elements and more details.
+description: Learn about Pivot Columns support in Syncfusion® Windows Forms Pivot Grid control, its elements and more details.
 platform: windowsforms
 control: PivotGrid
 documentation: ug

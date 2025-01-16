@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grid Helper Classes in Windows Forms GridGrouping control | Syncfusion
-description: Learn about Grid Helper Classes support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
+description: Learn about Grid Helper Classes support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
 platform: windowsforms
 control: GridGrouping
 documentation: ug
@@ -204,7 +204,7 @@ Office2007Filter and optimized GridExcelFilter are the two types of Excel-like f
 
 ### Office2007Filter
 
-Essential Grid now provides an in-built filter similar to Microsoft Excel 2007 from the class GridOffice2007Filter with which the grid has to be wired.
+Essential<sup>®</sup> Grid now provides an in-built filter similar to Microsoft Excel 2007 from the class GridOffice2007Filter with which the grid has to be wired.
 
 #### Enabling Excel like filter 
 
@@ -295,7 +295,7 @@ this.gridGroupingControl1 (control as argument)</td><td>
 
 To view a sample:
 
-* Open Syncfusion Dashboard. 
+* Open Syncfusion<sup>®</sup> Dashboard. 
 * Select UI > Windows Forms.
 * Click Run Samples.  
 * Navigate to GridGrouping Samples > Filters and Expressions > Optimized Excel Filter Demo

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grid Designer in Windows Forms GridGrouping control | Syncfusion
-description: Learn about Grid Designer support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
+description: Learn about Grid Designer support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug

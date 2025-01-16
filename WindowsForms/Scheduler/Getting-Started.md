@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Windows Forms Scheduler control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms Scheduler (Event Calendar) control, its elements and more details.
+description: Learn here about getting started with Syncfusion® Windows Forms Scheduler (Event Calendar) control, its elements and more details.
 platform: windowsforms
 control: Schedule
 documentation: ug

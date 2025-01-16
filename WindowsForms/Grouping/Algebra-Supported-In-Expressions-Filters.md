@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Algebra Supported In Expressions Filters in Grouping | Syncfusion
-description: Learn about Algebra Supported In Expressions  Filters support in Syncfusion Windows Forms Grouping control and more details.
+description: Learn about Algebra Supported In Expressions  Filters support in Syncfusion® Windows Forms Grouping control and more details.
 platform: WindowsForms
 control: Grouping
 documentation: ug
@@ -75,7 +75,7 @@ Given below is some more information on special logical operators:
 
 ## Custom Functions
 
-Essential Grouping lets you add custom functions to your code that can then be used in expressions. 
+Essential<sup>®</sup> Grouping lets you add custom functions to your code that can then be used in expressions. 
 
 Following are the limitations on the use of custom functions: 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ExportToPDF in SfDataGrid | Syncfusion
-description: Learn about exporting datagrid to PDF support in Syncfusion WinForms DataGrid (SfDataGrid) control and more details.
+description: Learn about exporting datagrid to PDF support in Syncfusion® WinForms DataGrid (SfDataGrid) control and more details.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
@@ -36,7 +36,7 @@ document.Save("Sample.pdf")
 {% endhighlight %}
 {% endtabs %}
 
-N> SfDataGrid exports data to PDF file by using[Essential PDF](https://help.syncfusion.com/file-formats/pdf/overview). You can refer [PDF documentation](https://help.syncfusion.com/file-formats/pdf/working-with-document) for manipulating.
+N> SfDataGrid exports data to PDF file by using[Essential<sup>®</sup> PDF](https://help.syncfusion.com/file-formats/pdf/overview). You can refer [PDF documentation](https://help.syncfusion.com/file-formats/pdf/working-with-document) for manipulating.
 
 ## Exporting Options
 Exporting operation can be customized by passing [PdfExportingOptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.PdfExportingOptions.html) instance as argument to `ExportToPdf` and `ExportToPdfGrid` method.

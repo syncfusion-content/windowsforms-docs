@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Windows Forms Tooltip control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms Tooltip (SfToolTip) control, its elements and more details.
+description: Learn here all about introduction of Syncfusion® Windows Forms Tooltip (SfToolTip) control, its elements and more details.
 platform: windowsforms
 control: SfToolTip
 documentation: ug
@@ -21,7 +21,7 @@ Following are the key features of the `SfToolTip` :
 
 ## Choose between different tooltip controls
 
-Syncfusion WinForms suite comes up with following different tooltips namely :
+Syncfusion<sup>®</sup> WinForms suite comes up with following different tooltips namely :
 
 * [SfToolTip](https://www.syncfusion.com/winforms-ui-controls/tooltip)
 * [SuperToolTip](https://help.syncfusion.com/windowsforms/classic/tooltip/supertooltip)
