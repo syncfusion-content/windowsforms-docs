@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Built in Navigation in WinForms GridRecordNavigation | Syncfusion
-description: Learn about Built in Navigation Support for RecordNavigationControl in Syncfusion® Essential® Studio Windows Forms and more details.
+description: Learn about Built in Navigation Support for RecordNavigationControl in Syncfusion® Essential Studio® Windows Forms and more details.
 platform: windowsforms
 control: GridRecordNavigation
 documentation: ug
