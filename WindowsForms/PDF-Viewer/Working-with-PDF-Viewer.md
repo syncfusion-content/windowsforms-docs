@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with PdfViewerControl in WinForms PDF Viewer | Syncfusion<sup>&reg;</sup>;
+title: Working with PdfViewerControl in WinForms PDF Viewer | Syncfusion;
 description: Learn about Working with PdfViewerControl support in Syncfusion<sup>&reg;</sup>; Windows Forms PDF Viewer (PdfViewerControl) control and more details.
 platform: windowsforms
 control: PdfViewerControl

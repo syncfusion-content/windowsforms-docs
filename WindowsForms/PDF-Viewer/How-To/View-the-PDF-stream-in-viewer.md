@@ -1,6 +1,6 @@
 ---
 layout: post
-title: View-the-PDF-stream-in-viewer | Windows Forms | Syncfusion<sup>&reg;</sup>;
+title: View-the-PDF-stream-in-viewer | Windows Forms | Syncfusion;
 description: Know how to view the pdf files as stream using the load method in the windows forms PdfViewerControl.
 platform: windowsforms
 control: PdfViewerControl
