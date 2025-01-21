@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cell Types in Windows Forms Grid Control | Syncfusion
+title: Cell Types in Windows Forms Grid Control | Syncfusion®
 description: Learn about Cell Types support in Syncfusion® Windows Forms Grid Control, its elements and more details.
 platform: WindowsForms
 control: Grid

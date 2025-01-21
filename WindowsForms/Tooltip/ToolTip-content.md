@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ToolTip Content in Windows Forms Tooltip control | Syncfusion
+title: ToolTip Content in Windows Forms Tooltip control | Syncfusion®
 description: Learn about ToolTip Content support in Syncfusion® Windows Forms Tooltip (SfToolTip) control and more details.
 platform: windowsforms
 control: SfToolTip

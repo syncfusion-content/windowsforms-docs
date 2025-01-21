@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Formula Support in Windows Forms Grid Control | Syncfusion
+title: Formula Support in Windows Forms Grid Control | Syncfusion®
 description: Learn about Formula Support support in Syncfusion® Windows Forms Grid Control, its elements and more details.
 platform: WindowsForms
 control: Grid

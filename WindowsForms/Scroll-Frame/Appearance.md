@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance in Windows Forms Scroll Frame control | Syncfusion
+title: Appearance in Windows Forms Scroll Frame control | Syncfusion®
 description: Learn about Appearance support in Syncfusion® Windows Forms Scroll Frame (SfScrollFrame) control and more details.
 platform: WindowsForms
 control: SfScrollFrame

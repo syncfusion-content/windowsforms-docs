@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Conversion in Windows Forms Spreadsheet control | Syncfusion
+title: Conversion in Windows Forms Spreadsheet control | Syncfusion®
 description: Learn about Conversion support in Syncfusion® Windows Forms Spreadsheet control, its elements and more details.
 platform: windowsforms
 control: Spreadsheet

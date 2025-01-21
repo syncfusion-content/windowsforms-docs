@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Expression Fields in Windows Forms GridGrouping control | Syncfusion
+title: Expression Fields in Windows Forms GridGrouping control | Syncfusion®
 description: Learn about Expression Fields support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping

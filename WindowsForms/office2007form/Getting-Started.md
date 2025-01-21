@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with WinForms Office2007Form | Syncfusion
+title: Getting Started with WinForms Office2007Form | Syncfusion®
 description: Learn here about getting started with Syncfusion® Windows Forms Office2007Form control, its elements and more details.
 platform: WindowsForms
 control: Office2007 Form

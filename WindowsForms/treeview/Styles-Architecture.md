@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styles Architecture in Windows Forms TreeView control | Syncfusion
+title: Styles Architecture in Windows Forms TreeView control | Syncfusion®
 description: Learn about Styles Architecture support in Syncfusion® Windows Forms TreeView control and more details.
 platform: WindowsForms
 control: TreeView 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Conditional Formatting in Windows Forms GridGrouping | Syncfusion
+title: Conditional Formatting in Windows Forms GridGrouping | Syncfusion®
 description: Learn about Conditional Formatting support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
 platform: windowsforms
 control: GridGrouping

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Touch Support in Windows Forms GridGrouping control | Syncfusion
+title: Touch Support in Windows Forms GridGrouping control | Syncfusion®
 description: Learn about Touch Support support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGroupingControl

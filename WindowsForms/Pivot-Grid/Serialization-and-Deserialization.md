@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Serialization and Deserialization in Pivot Grid | Syncfusion
+title: Serialization and Deserialization in Pivot Grid | Syncfusion®
 description: Learn about Serialization and Deserialization support in Syncfusion® Windows Forms Pivot Grid control and more details.
 platform: windowsforms
 control: PivotGrid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Enhanced Cell Types in Windows Forms Grid Control | Syncfusion
+title: Enhanced Cell Types in Windows Forms Grid Control | Syncfusion®
 description: Learn about Enhanced Cell Types support in Syncfusion® Windows Forms Grid Control, its elements and more details.
 platform: WindowsForms
 control: Grid

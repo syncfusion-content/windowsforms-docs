@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping in Windows Forms GridGrouping control | Syncfusion
+title: Grouping in Windows Forms GridGrouping control | Syncfusion®
 description: Learn about Grouping support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping

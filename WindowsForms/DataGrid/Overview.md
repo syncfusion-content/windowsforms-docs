@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Windows Forms DataGrid Control | Syncfusion
+title: Windows Forms DataGrid Control | Syncfusion®
 description: This section explains about the datagrid control for windows forms and it's important key features such as data binding, selection and etc
 platform: windowsforms
 control: SfDataGrid

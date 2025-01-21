@@ -1,6 +1,6 @@
 ---
 layout: post
-title: History Manager in Windows Forms TreeView control | Syncfusion
+title: History Manager in Windows Forms TreeView control | Syncfusion®
 description: Learn about History Manager support in Syncfusion® Windows Forms TreeView control, its elements and more details.
 platform: WindowsForms
 control: TreeView 

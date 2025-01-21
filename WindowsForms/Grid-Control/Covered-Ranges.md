@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Covered Ranges in Windows Forms Grid Control | Syncfusion
+title: Covered Ranges in Windows Forms Grid Control | Syncfusion®
 description: Learn about Covered Ranges support in Syncfusion® Windows Forms Grid Control, its elements and more details.
 platform: WindowsForms
 control: GridControl

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Item Dragging Context in the ItemChanging in Scheduler | Syncfusion
+title: Item Dragging Context in the ItemChanging in Scheduler | Syncfusion®
 description: Learn about Item Dragging Context in the ItemChanging event support in Syncfusion® Windows Forms Scheduler (Schedule) control and more details.
 platform: windowsforms
 control: Schedule

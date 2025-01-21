@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Touch Support in Windows Forms Scheduler control | Syncfusion
+title: Touch Support in Windows Forms Scheduler control | Syncfusion®
 description: Learn about Touch Support in Syncfusion® Windows Forms Scheduler (Schedule) control and more details.
 platform: WindowsForms
 control: Schedule

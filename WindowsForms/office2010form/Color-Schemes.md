@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Color Schemes in Windows Forms Office2010Form control | Syncfusion
+title: Color Schemes in Windows Forms Office2010Form control | Syncfusion®
 description: Learn about Color Schemes support in Syncfusion® Windows Forms Office2010Form control and more details.
 platform: WindowsForms
 control: Office2010 Form

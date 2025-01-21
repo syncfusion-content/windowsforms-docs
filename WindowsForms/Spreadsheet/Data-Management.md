@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Management in Windows Forms Spreadsheet control | Syncfusion
+title: Data Management in Windows Forms Spreadsheet control | Syncfusion®
 description: Learn about Data Management support in Syncfusion® Windows Forms Spreadsheet control and more details.
 platform: windowsforms
 control: Spreadsheet

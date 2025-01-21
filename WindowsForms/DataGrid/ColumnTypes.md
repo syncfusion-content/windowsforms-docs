@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Column types in WinForms DataGrid control | Syncfusion
+title: Column types in WinForms DataGrid control | Syncfusion®
 description: Learn about different column types support (Text, Numeric, DateTime, ComboBox and so on) in Syncfusion® WinForms DataGrid (SfDataGrid) control and more details.
 platform: windowsforms
 control: SfDataGrid

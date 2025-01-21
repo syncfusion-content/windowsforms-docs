@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Events in Windows Forms GridGrouping control | Syncfusion
+title: Events in Windows Forms GridGrouping control | Syncfusion®
 description: Learn about Events support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping

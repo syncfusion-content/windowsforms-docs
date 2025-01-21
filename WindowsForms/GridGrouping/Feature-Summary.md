@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Feature Summary in Windows Forms GridGrouping control | Syncfusion
+title: Feature Summary in Windows Forms GridGrouping control | Syncfusion®
 description: Learn about Feature Summary support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
 platform: windowsforms
 control: GridGrouping

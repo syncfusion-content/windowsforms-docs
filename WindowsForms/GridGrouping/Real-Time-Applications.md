@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Real Time Applications in Windows Forms GridGrouping | Syncfusion
+title: Real Time Applications in Windows Forms GridGrouping | Syncfusion®
 description: Learn about Real Time Applications support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping

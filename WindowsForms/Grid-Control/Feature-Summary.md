@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Feature-Summary in Windows Forms GridControl | Syncfusion
+title: Feature-Summary in Windows Forms GridControl | Syncfusion®
 description: Learn here all about feature summary support of Syncfusion® Windows Forms Grid Control (GridControl) and more.
 platform: windowsforms
 control: Grid

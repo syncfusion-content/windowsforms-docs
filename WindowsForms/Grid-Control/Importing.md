@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Importing in Windows Forms Grid Control | Syncfusion
+title: Importing in Windows Forms Grid Control | Syncfusion®
 description: Learn about Importing support in Syncfusion® Windows Forms Grid Control, its elements and more details.
 platform: windowsforms
 control: GridControl

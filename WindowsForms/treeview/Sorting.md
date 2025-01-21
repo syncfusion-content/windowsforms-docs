@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sorting in Windows Forms TreeView control | Syncfusion
+title: Sorting in Windows Forms TreeView control | Syncfusion®
 description: Learn about Sorting support in Syncfusion® Windows Forms TreeView control, its elements and more details.
 platform: WindowsForms
 control: TreeView 

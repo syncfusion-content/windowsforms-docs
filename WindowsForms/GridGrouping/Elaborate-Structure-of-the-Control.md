@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Elaborate Structure of the Control in GridGrouping | Syncfusion
+title: Elaborate Structure of the Control in GridGrouping | Syncfusion®
 description: Learn about Elaborate Structure of the Control support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
 platform: windowsforms
 control: GridGrouping

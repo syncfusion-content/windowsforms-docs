@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Record Navigation in Windows Forms Grid Control | Syncfusion
+title: Record Navigation in Windows Forms Grid Control | Syncfusion®
 description: Learn about Record Navigation Control support in Syncfusion® Windows Forms Grid Control, its elements and more details.
 platform: WindowsForms
 control: GridControl

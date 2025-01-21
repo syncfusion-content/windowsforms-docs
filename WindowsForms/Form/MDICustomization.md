@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MDI Customization in Windows Forms Form control | Syncfusion
+title: MDI Customization in Windows Forms Form control | Syncfusion®
 description: Learn about MDI Customization support in Syncfusion® Windows Forms Form (SfForm) control and more details.
 platform: WindowsForms
 control: SfForm

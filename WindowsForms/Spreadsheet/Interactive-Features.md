@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interactive Features in Windows Forms Spreadsheet | Syncfusion
+title: Interactive Features in Windows Forms Spreadsheet | Syncfusion®
 description: Learn about Interactive Features support in Syncfusion® Windows Forms Spreadsheet control and more details.
 platform: windowsforms
 control: Spreadsheet

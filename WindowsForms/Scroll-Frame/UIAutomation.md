@@ -1,6 +1,6 @@
 ---
 layout: post
-title: UI Automation in Windows Forms Scroll Frame control | Syncfusion
+title: UI Automation in Windows Forms Scroll Frame control | Syncfusion®
 description: Learn about UI Automation support in Syncfusion® Windows Forms Scroll Frame (SfScrollFrame) control and more details.
 platform: WindowsForms
 control: SfScrollFrame

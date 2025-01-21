@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Shapes in Windows Forms Spreadsheet control | Syncfusion
+title: Shapes in Windows Forms Spreadsheet control | Syncfusion®
 description: Learn about Shapes support in Syncfusion® Windows Forms Spreadsheet control, its elements and more details.
 platform: windowsforms
 control: Spreadsheet

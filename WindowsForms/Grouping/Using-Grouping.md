@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using Grouping in Windows Forms Grouping control | Syncfusion
+title: Using Grouping in Windows Forms Grouping control | Syncfusion®
 description: Learn about Using Grouping support in Syncfusion® Windows Forms Grouping control, its elements and more details.
 platform: WindowsForms
 control: Grouping

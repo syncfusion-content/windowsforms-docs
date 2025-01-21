@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding in Windows Forms Pivot Grid control | Syncfusion
+title: Data Binding in Windows Forms Pivot Grid control | Syncfusion®
 description: Learn about Data Binding support in Syncfusion® Windows Forms Pivot Grid control, its elements and more details.
 platform: windowsforms
 control: PivotGrid

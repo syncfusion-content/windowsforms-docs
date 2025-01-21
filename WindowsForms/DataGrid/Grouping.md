@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping | DataGrid Control for Windows Forms | Syncfusion
+title: Grouping | DataGrid Control for Windows Forms | Syncfusion®
 description: This section explains about the grouping feature and it's customization in datagrid control for windows forms
 platform: windowsforms
 control: SfDataGrid

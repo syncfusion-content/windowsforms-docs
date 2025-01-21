@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exporting in Windows Forms Grid Control | Syncfusion
+title: Exporting in Windows Forms Grid Control | Syncfusion®
 description: Learn about Exporting support in Syncfusion® Windows Forms Grid Control, its elements and more details.
 platform: windowsforms
 control: GridControl

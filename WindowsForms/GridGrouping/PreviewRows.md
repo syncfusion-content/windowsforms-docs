@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Preview Rows in Windows Forms GridGrouping control | Syncfusion
+title: Preview Rows in Windows Forms GridGrouping control | Syncfusion®
 description: Learn about Preview Rows support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping

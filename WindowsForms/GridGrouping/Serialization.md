@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Serialization in Windows Forms GridGrouping control | Syncfusion
+title: Serialization in Windows Forms GridGrouping control | Syncfusion®
 description: Learn about Serialization support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Grouping control | Syncfusion
+title: Getting Started with Windows Forms Grouping control | Syncfusion®
 description: Learn here about getting started with Syncfusion® Windows Forms Grouping control, its elements, and more details.
 platform: WindowsForms
 control: Grouping

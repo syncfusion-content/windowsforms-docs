@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Paging in WinForms DataGrid control | Syncfusion
+title: Paging in WinForms DataGrid control | Syncfusion®
 description: Learn about paging support (pagination) in Syncfusion® WinForms DataGrid (SfDataGrid) control and more details.
 platform: windowsforms
 control: SfDataGrid

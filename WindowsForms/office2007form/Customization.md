@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customization in Windows Forms Office2007Form control | Syncfusion
+title: Customization in Windows Forms Office2007Form control | Syncfusion®
 description: Learn about Customization support in Syncfusion® Windows Forms Office2007Form control and more details.
 platform: WindowsForms
 control: Office2007 Form

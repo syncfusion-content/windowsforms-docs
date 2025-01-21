@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization in Windows Forms Pivot Grid control | Syncfusion
+title: Localization in Windows Forms Pivot Grid control | Syncfusion®
 description: Learn about Localization support in Syncfusion® Windows Forms Pivot Grid control, its elements and more details.
 platform: windowsforms
 control: PivotGrid

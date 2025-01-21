@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MS Excel Like Features in Windows Forms Grid Control | Syncfusion
+title: MS Excel Like Features in Windows Forms Grid Control | Syncfusion®
 description: Learn about MS Excel Like Features support in Syncfusion® Windows Forms Grid Control, its elements and more details.
 platform: WindowsForms
 control: GridControl

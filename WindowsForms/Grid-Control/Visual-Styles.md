@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visual Styles in Windows Forms Grid Control | Syncfusion
+title: Visual Styles in Windows Forms Grid Control | Syncfusion®
 description: Learn about Visual Styles support in Syncfusion® Windows Forms Grid Control, its elements and more details.
 platform: windowsforms
 control: GridControl

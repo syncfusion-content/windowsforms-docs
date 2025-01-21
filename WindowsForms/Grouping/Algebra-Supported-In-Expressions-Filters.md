@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Algebra Supported In Expressions Filters in Grouping | Syncfusion
+title: Algebra Supported In Expressions Filters in Grouping | Syncfusion®
 description: Learn about Algebra Supported In Expressions  Filters support in Syncfusion® Windows Forms Grouping control and more details.
 platform: WindowsForms
 control: Grouping

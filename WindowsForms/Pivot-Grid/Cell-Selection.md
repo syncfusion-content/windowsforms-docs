@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cell Selection in Windows Forms Pivot Grid control | Syncfusion
+title: Cell Selection in Windows Forms Pivot Grid control | Syncfusion®
 description: Learn about Cell Selection support in Syncfusion® Windows Forms Pivot Grid control, its elements and more details.
 platform: windowsforms
 control: PivotGrid

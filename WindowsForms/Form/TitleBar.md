@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Title Bar in Windows Forms Form control | Syncfusion
+title: Title Bar in Windows Forms Form control | Syncfusion®
 description: Learn about Title Bar support in Syncfusion® Windows Forms Form (SfForm) control, its elements and more details.
 platform: WindowsForms
 control: SfForm

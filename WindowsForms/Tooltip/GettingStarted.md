@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Tooltip control | Syncfusion
+title: Getting Started with Windows Forms Tooltip control | Syncfusion®
 description: Learn here about getting started with Syncfusion® Windows Forms Tooltip (SfToolTip) control and more details.
 platform: windowsforms
 control: SfToolTip

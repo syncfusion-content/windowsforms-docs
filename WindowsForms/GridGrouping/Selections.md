@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selections in Windows Forms GridGrouping control | Syncfusion
+title: Selections in Windows Forms GridGrouping control | Syncfusion®
 description: Learn about Selections support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
 platform: windowsforms
 control: GridGrouping

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Validation in Windows Forms GridGrouping control | Syncfusion
+title: Data Validation in Windows Forms GridGrouping control | Syncfusion®
 description: Learn about Data Validation support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping

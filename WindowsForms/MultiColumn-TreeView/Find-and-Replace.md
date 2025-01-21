@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Find and Replace in Windows Forms MultiColumn TreeView | Syncfusion
+title: Find and Replace in Windows Forms MultiColumn TreeView | Syncfusion®
 description: Learn about Find and Replace support in Syncfusion® Windows Forms MultiColumn TreeView control and more details.
 platform: WindowsForms
 control: MultiColumnTreeView

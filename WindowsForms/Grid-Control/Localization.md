@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization in Windows Forms Grid Control | Syncfusion
+title: Localization in Windows Forms Grid Control | Syncfusion®
 description: Learn about Localization support in Syncfusion® Windows Forms Grid Control, its elements and more details.
 platform: windowsforms
 control: GridControl

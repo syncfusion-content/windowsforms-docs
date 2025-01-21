@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sorting in Windows Forms DataGrid control | Syncfusion
+title: Sorting in Windows Forms DataGrid control | Syncfusion®
 description: Learn here all about sorting feature of Syncfusion® Windows Forms DataGrid (SfDataGrid) control and more.
 platform: windowsforms
 control: SfDataGrid

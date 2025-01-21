@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customizing Appearance in Windows Forms Scheduler control | Syncfusion
+title: Customizing Appearance in Windows Forms Scheduler control | Syncfusion®
 description: Learn about Customizing Appearance support in Syncfusion® Windows Forms Scheduler (Event Calendar) control and more details.
 platform: windowsforms
 control: Schedule

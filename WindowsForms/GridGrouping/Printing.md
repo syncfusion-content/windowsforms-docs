@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Printing in Windows Forms GridGrouping control | Syncfusion
+title: Printing in Windows Forms GridGrouping control | Syncfusion®
 description: Learn about Printing support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping

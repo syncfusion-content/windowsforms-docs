@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance of the Metro Form | Syncfusion
+title: Appearance of the Metro Form | Syncfusion®
 description: This section explains about the UI Appearance and styles of MetroForm for Syncfusion® Essential® Windows Forms
 platform: WindowsForms
 control: MetroForm

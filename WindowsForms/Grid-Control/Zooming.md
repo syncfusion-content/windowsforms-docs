@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Zooming in Windows Forms Grid Control | Syncfusion
+title: Zooming in Windows Forms Grid Control | Syncfusion®
 description: Learn about Zooming support in Syncfusion® Essential Studio® Windows Forms Grid Control, its elements and more details.
 platform: windowsforms
 control: Grid

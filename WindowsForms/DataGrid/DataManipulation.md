@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DataManipulation | DataGrid | WinForms | Syncfusion
+title: DataManipulation | DataGrid | WinForms | Syncfusion®
 description: Learn about data operations to manipulate the data in Syncfusion® WinForms DataGrid (SfDataGrid) control and more details.
 platform: windowsforms
 control: SfDataGrid

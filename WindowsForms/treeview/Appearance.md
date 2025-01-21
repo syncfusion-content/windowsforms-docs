@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance in Windows Forms TreeView control | Syncfusion
+title: Appearance in Windows Forms TreeView control | Syncfusion®
 description: Learn about Appearance support in Syncfusion® Windows Forms TreeView control, its elements and more details.
 platform: WindowsForms
 control: TreeView 

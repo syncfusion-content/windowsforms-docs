@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Grid Control | Syncfusion
+title: Getting Started with Windows Forms Grid Control | Syncfusion®
 description: Learn here about getting started with Syncfusion® Essential Studio® Windows Forms Grid Control, its elements, and more.
 platform: windowsforms
 control: Grid

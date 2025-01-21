@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms Office2010Form control | Syncfusion
+title: About Windows Forms Office2010Form control | Syncfusion®
 description: Learn here all about introduction of Syncfusion® Windows Forms Office2010Form control, its elements and more details.
 platform: WindowsForms
 control: Office2010 Form

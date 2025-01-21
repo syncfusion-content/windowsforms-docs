@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Themes in Windows Forms Form control | Syncfusion
+title: Themes in Windows Forms Form control | Syncfusion®
 description: Learn about Themes support in Syncfusion® Windows Forms Form (SfForm) control, its elements and more details.
 platform: windowsforms
 control: SfForm

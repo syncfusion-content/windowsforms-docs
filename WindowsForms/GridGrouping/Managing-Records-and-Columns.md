@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Managing Records and Columns in WinForms GridGrouping | Syncfusion
+title: Managing Records and Columns in WinForms GridGrouping | Syncfusion®
 description: Learn about Managing Records and Columns support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping

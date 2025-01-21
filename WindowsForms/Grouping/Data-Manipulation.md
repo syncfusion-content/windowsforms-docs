@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Manipulation in Windows Forms Grouping control | Syncfusion
+title: Data Manipulation in Windows Forms Grouping control | Syncfusion®
 description: Learn about Data Manipulation support in Syncfusion® Windows Forms Grouping control and more details.
 platform: WindowsForms
 control: Grouping

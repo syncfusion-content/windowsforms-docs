@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Asynchronous Data Processing in WinForms Pivot Grid | Syncfusion
+title: Asynchronous Data Processing in WinForms Pivot Grid | Syncfusion®
 description: Learn about Asynchronous Data Processing support in Syncfusion® Windows Forms Pivot Grid control and more details.
 platform: windowsforms
 control: Pivot Grid

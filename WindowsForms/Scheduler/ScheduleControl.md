@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ScheduleControl in Windows Forms Scheduler control | Syncfusion
+title: ScheduleControl in Windows Forms Scheduler control | Syncfusion®
 description: Learn about ScheduleControl support in Syncfusion® Windows Forms Scheduler (Schedule) control and more details.
 platform: windowsforms
 control: Schedule

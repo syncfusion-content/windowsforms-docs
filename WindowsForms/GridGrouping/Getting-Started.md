@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Windows Forms GridGrouping | Syncfusion
+title: Getting Started with Windows Forms GridGrouping | Syncfusion®
 description: Learn here about getting started with Syncfusion® Windows Forms GridGrouping control, its elements, and more.
 platform: WindowsForms
 control: GridGrouping
