@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Summaries | DataGrid Control for Windows Forms | Syncfusion
+title: Summaries | DataGrid Control for Windows Forms | Syncfusion®
 description: This section explains about the summaries feature and it's customization in datagrid control for windows forms
 platform: windowsforms
 control: SfDataGrid

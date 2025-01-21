@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Formula Bar in Windows Forms Grid Control | Syncfusion
-description: Learn about Formula Bar support in Syncfusion Windows Forms Grid Control, its elements and more details.
+title: Formula Bar in Windows Forms Grid Control | Syncfusion®
+description: Learn about Formula Bar support in Syncfusion® Windows Forms Grid Control, its elements and more details.
 platform: windowsforms
 control: GridControl
 documentation: ug

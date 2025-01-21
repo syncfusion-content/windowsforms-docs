@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Conditional Formatting in Windows Forms Pivot Grid | Syncfusion
-description: Learn about Conditional Formatting support in Syncfusion Windows Forms Pivot Grid control and more details.
+title: Conditional Formatting in Windows Forms Pivot Grid | Syncfusion®
+description: Learn about Conditional Formatting support in Syncfusion® Windows Forms Pivot Grid control and more details.
 platform: windowsforms
 control: Pivot Grid
 documentation: ug

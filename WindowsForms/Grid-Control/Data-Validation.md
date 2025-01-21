@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Validation in Windows Forms Grid Control | Syncfusion
-description: Learn about Data Validation support in Syncfusion Windows Forms Grid Control, its elements and more details.
+title: Data Validation in Windows Forms Grid Control | Syncfusion®
+description: Learn about Data Validation support in Syncfusion® Windows Forms Grid Control, its elements and more details.
 platform: windowsforms
 control: GridControl
 documentation: ug

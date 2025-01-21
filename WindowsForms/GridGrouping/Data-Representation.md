@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Representation in Windows Forms GridGrouping | Syncfusion
-description: Learn about Data Representation support in Syncfusion Essential Studio Windows Forms GridGrouping control and more.
+title: Data Representation in Windows Forms GridGrouping | Syncfusion®
+description: Learn about Data Representation support in Syncfusion® Essential Studio® Windows Forms GridGrouping control and more.
 platform: windowsforms
 control: GridGrouping
 documentation: ug
@@ -2621,7 +2621,7 @@ N> For more details, refer to the following browser sample:
 
 #### Dynamic Filter
 
-Dynamic Filter serves as good replacement for the default Filter Bar, which provides advanced filtering capabilities. It is available as an add-on feature for Essential Grid, and is built on the foundation of the regular filter bar with added provisions to support dynamic filtering, user-friendliness, and so on.
+Dynamic Filter serves as good replacement for the default Filter Bar, which provides advanced filtering capabilities. It is available as an add-on feature for Essential<sup>®</sup> Grid, and is built on the foundation of the regular filter bar with added provisions to support dynamic filtering, user-friendliness, and so on.
 
 The dynamic filter can be used with Nested Tables and Nested Groups too. To make it more interactive, it adds a Filter Button at the right-most corner of every Filter Bar Cell, on clicking, which drops down into a list showing the available comparative operators. On hovering any filter bar cell, a filter icon is displayed, indicating whether a filter is applied to that particular column or not. The key feature of the dynamic filtering mechanism is that it allows you to view the filter results as you type each and every character. It supports user-defined filter criteria as well.
 
@@ -3200,7 +3200,7 @@ Specifies the table schema of Child Table.</td></tr>
 
 ### Different RelationKinds
 
-Apart from the default Master-Detail type, Essential Grouping Grid supports a number of relations that could be enabled by specifying the relations manually in the grouping engine. In case of manual relations, dataset does not need to have relations. This is the same approach that should be used if you want to setup relationships between independent IList collections.
+Apart from the default Master-Detail type, Essential<sup>®</sup> Grouping Grid supports a number of relations that could be enabled by specifying the relations manually in the grouping engine. In case of manual relations, dataset does not need to have relations. This is the same approach that should be used if you want to setup relationships between independent IList collections.
 
 ### Supported Relations
 
