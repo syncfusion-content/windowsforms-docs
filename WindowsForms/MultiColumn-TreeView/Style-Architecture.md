@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style Architecture in Windows Forms MultiColumn TreeView | Syncfusion
-description: Learn about Style Architecture support in Syncfusion Windows Forms MultiColumn TreeView control and more details.
+title: Style Architecture in Windows Forms MultiColumn TreeView | Syncfusion®
+description: Learn about Style Architecture support in Syncfusion® Windows Forms MultiColumn TreeView control and more details.
 platform: WindowsForms
 control: MultiColumnTreeView
 documentation: ug

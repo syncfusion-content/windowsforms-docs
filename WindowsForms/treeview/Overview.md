@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Windows Forms TreeView control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms TreeView control, its elements and more details.
+title: About Windows Forms TreeView control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® Windows Forms TreeView control, its elements and more details.
 platform: WindowsForms
 control: TreeView 
 documentation: ug

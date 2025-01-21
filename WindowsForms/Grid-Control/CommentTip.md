@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Comment Tip in Windows Forms Grid Control | Syncfusion
-description: Learn about Comment Tip support in Syncfusion Windows Forms Grid Control, its elements and more details.
+title: Comment Tip in Windows Forms Grid Control | Syncfusion®
+description: Learn about Comment Tip support in Syncfusion® Windows Forms Grid Control, its elements and more details.
 platform: WindowsForms
 control: GridControl
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Populating Data in Windows Forms Grid Control | Syncfusion
-description: Learn about Populating Data support in Syncfusion Windows Forms Grid Control, its elements and more details.
+title: Populating Data in Windows Forms Grid Control | Syncfusion®
+description: Learn about Populating Data support in Syncfusion® Windows Forms Grid Control, its elements and more details.
 platform: windowsforms
 control: Grid
 documentation: ug

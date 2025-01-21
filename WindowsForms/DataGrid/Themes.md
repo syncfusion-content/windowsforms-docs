@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Theme in winforms datagrid | Syncfusion
-description: Learn about the theme support and load theme assembly in Syncfusion WinForms SfDataGrid control and more details.
+title: Theme in winforms datagrid | Syncfusion®
+description: Learn about the theme support and load theme assembly in Syncfusion® WinForms SfDataGrid control and more details.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Preview rows in Windows Forms DataGrid control | Syncfusion
-description: Learn here all about preview rows feature of Syncfusion Windows Forms DataGrid (SfDataGrid) control and more.
+title: Preview rows in Windows Forms DataGrid control | Syncfusion®
+description: Learn here all about preview rows feature of Syncfusion® Windows Forms DataGrid (SfDataGrid) control and more.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug

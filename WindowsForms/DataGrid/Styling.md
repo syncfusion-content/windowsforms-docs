@@ -1,6 +1,6 @@
 ---
 layout: post
-title: styling | DataGrid Control for Windows Forms | Syncfusion
+title: styling | DataGrid Control for Windows Forms | Syncfusion®
 description: This section explains about the styling customization of elements in datagrid control for windows forms
 platform: windowsforms
 control: SfDataGrid
