@@ -1,6 +1,6 @@
 ---
 layout: post
-title: FilterRow | DataGrid Control for Windows Forms | Syncfusion
+title: FilterRow | DataGrid Control for Windows Forms | Syncfusion®
 description: This section explains about the filter row feature and it's customization in datagrid control for windows forms
 platform: windowsforms
 control: SfDataGrid

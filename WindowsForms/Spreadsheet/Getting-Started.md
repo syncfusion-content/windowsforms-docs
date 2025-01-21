@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WinForms Spreadsheet control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms Spreadsheet control, its elements and more details.
+title: Getting Started with WinForms Spreadsheet control | Syncfusion®
+description: Learn here about getting started with Syncfusion® Windows Forms Spreadsheet control, its elements and more details.
 platform: windowsforms
 control: Spreadsheet
 documentation: ug
@@ -78,7 +78,7 @@ WinForms Spreadsheet control can be added into the application either via design
 
 1.Create new Windows Forms application in Visual Studio.
 
-2.Open the Visual Studio **Tool** **box**. Navigate to Syncfusion Controls tab, and find the  Spreadsheet/SpreadsheetRibbon toolbox items 
+2.Open the Visual Studio **Tool** **box**. Navigate to Syncfusion<sup>®</sup> Controls tab, and find the  Spreadsheet/SpreadsheetRibbon toolbox items 
 
 ![Toolbox in WindowsForms Spreadsheet](getting-started_images/windowsforms-spreadsheet-toolbox.jpg)
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cell Style Architecture in Windows Forms Grid | Syncfusion
-description: Learn about Cell Style Architecture support in Syncfusion Windows Forms Grid Control, its elements and more details.
+title: Cell Style Architecture in Windows Forms Grid | Syncfusion®
+description: Learn about Cell Style Architecture support in Syncfusion® Windows Forms Grid Control, its elements and more details.
 platform: windowsforms
 control: GridControl
 documentation: ug

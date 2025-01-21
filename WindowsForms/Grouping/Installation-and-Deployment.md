@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installation-and-Deployment | WindowsForms | Syncfusion
+title: Installation-and-Deployment | WindowsForms | Syncfusion®
 description: installation and deployment
 platform: WindowsForms
 control: Grouping
@@ -9,11 +9,11 @@ documentation: ug
 
 # Installation and Deployment
 
-This section covers information on the install location, samples, licensing, patches update and updation of the recent version of Essential Studio. It comprises the following subsections:
+This section covers information on the install location, samples, licensing, patches update and updation of the recent version of Essential Studio<sup>®</sup>. It comprises the following subsections:
 
 ## Installation
 
-For step-by-step installation procedure for the installation of Essential Studio, refer to the Installation topic under Installation and Deployment in the Common UG.
+For step-by-step installation procedure for the installation of Essential Studio<sup>®</sup>, refer to the Installation topic under Installation and Deployment in the Common UG.
 
 
 
@@ -42,7 +42,7 @@ Windows Forms Samples – The Grouping Windows Forms samples are installed in th
 
 To view the samples: 
 
-1. Click Start All Programs  Syncfusion  Essential Studio <version number>  Dashboard. 
+1. Click Start All Programs  Syncfusion<sup>®</sup>  Essential Studio<sup>®</sup> <version number>  Dashboard. 
 
    The UI Edition samples are displayed by default.
 
@@ -126,7 +126,7 @@ The default location of the ASP.NET Grouping source code is:
 
 ### Assembly List
 
-While deploying an application that references Syncfusion Essential Grouping assembly, the following dependencies must be included in the distribution.
+While deploying an application that references Syncfusion<sup>®</sup> Essential<sup>®</sup> Grouping assembly, the following dependencies must be included in the distribution.
 
 
 

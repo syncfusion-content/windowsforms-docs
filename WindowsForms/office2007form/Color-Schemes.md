@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Color Schemes in Windows Forms Office2007Form control | Syncfusion
-description: Learn about Color Schemes support in Syncfusion Windows Forms Office2007Form control and more details.
+title: Color Schemes in Windows Forms Office2007Form control | Syncfusion®
+description: Learn about Color Schemes support in Syncfusion® Windows Forms Office2007Form control and more details.
 platform: WindowsForms
 control: Office2007 Form
 documentation: ug

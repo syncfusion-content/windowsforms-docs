@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding in Windows Forms GridGrouping control | Syncfusion
-description: Learn about Data Binding support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
+title: Data Binding in Windows Forms GridGrouping control | Syncfusion®
+description: Learn about Data Binding support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
 platform: windowsforms
 control: GridGrouping
 documentation: ug
@@ -2194,7 +2194,7 @@ This section will explain about the MDB file can be bounded to the GridGroupingC
 #### Binding MDB File by using Visual Studio 2015
 The following steps are used to binding the data source to the GridGroupingControl using the designer. User can make use of the Smart Tags that are available in the Designer to hook into the MDB file. 
 
-1. From the Syncfusion tab in the toolbox and drag and drop GridGroupingControl onto the form. In the GridGroupingControl smart tag, click `Choose DataSource` list, and then click `Add Project Data Source`. Data Source Configuration Wizard dialog box appears.
+1. From the Syncfusion<sup>®</sup> tab in the toolbox and drag and drop GridGroupingControl onto the form. In the GridGroupingControl smart tag, click `Choose DataSource` list, and then click `Add Project Data Source`. Data Source Configuration Wizard dialog box appears.
    
    ![Data-Binding_img69](Data-Binding_images/Data-Binding_img69.jpeg)
 
@@ -2239,7 +2239,7 @@ This section explains on bounding of GridGroupingControl to the SQL server datab
 #### Binding SQL server by using VS 2015
 The steps given below is used to bind the SQL server database with Visual Studio 2015 and .NET 4.6.2 The **Smart** Tags which are available in the **.NET 4.6.2 Designer**can be used to hook into the SQL server database.
 
-1. From the **Syncfusion** tab in the **Toolbox**, drag a **Grid Grouping** control onto your form. In the **Grid Grouping** control smart tag, click **Choose DataSource** list, and then click**Add Project Data Source**. The Data Source Configuration Wizard dialog box appears.
+1. From the **Syncfusion<sup>®</sup>** tab in the **Toolbox**, drag a **Grid Grouping** control onto your form. In the **Grid Grouping** control smart tag, click **Choose DataSource** list, and then click**Add Project Data Source**. The Data Source Configuration Wizard dialog box appears.
    
    ![Data-Binding_img136](Data-Binding_images/Data-Binding_img136.jpeg)
 

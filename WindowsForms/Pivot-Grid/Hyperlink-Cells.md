@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Hyperlink Cells in Windows Forms Pivot Grid control | Syncfusion
-description: Learn about Hyperlink Cells support in Syncfusion Windows Forms Pivot Grid control, its elements and more details.
+title: Hyperlink Cells in Windows Forms Pivot Grid control | Syncfusion®
+description: Learn about Hyperlink Cells support in Syncfusion® Windows Forms Pivot Grid control, its elements and more details.
 platform: windowsforms
 control: Pivot Grid
 documentation: ug

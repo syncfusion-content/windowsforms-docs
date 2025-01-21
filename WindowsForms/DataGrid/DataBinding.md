@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data binding in WinForms DataGrid Control | Syncfusion
-description: Learn here all about data binding support in Syncfusion WinForms DataGrid control,its elements and more details.
+title: Data binding in WinForms DataGrid Control | Syncfusion®
+description: Learn here all about data binding support in Syncfusion® WinForms DataGrid control,its elements and more details.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
