@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working with PdfViewerControl in WinForms PDF Viewer | Syncfusion&reg;
-description: Learn about Working with PdfViewerControl support in Syncfusion&reg; Windows Forms PDF Viewer (PdfViewerControl) control and more details.
+description: Learn about Working with PdfViewerControl support in Syncfusion<sup>&reg;</sup>; Windows Forms PDF Viewer (PdfViewerControl) control and more details.
 platform: windowsforms
 control: PdfViewerControl
 documentation: ug
@@ -62,7 +62,7 @@ pdfViewerControl1.Load("Sample.pdf", "password")
 
 ### Exporting pages of PDF document as raster images
 
-Essential&reg; PdfViewerControl allows selected pages to be exported as raster images. Exporting can be done using the [ExportAsImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_Forms_PdfViewer_PdfViewerControl_ExportAsImage_System_Int32_) method. This option helps to convert a PDF into an image.
+Essential<sup>&reg;</sup>; PdfViewerControl allows selected pages to be exported as raster images. Exporting can be done using the [ExportAsImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_Forms_PdfViewer_PdfViewerControl_ExportAsImage_System_Int32_) method. This option helps to convert a PDF into an image.
 
 {% tabs %}
 {% highlight c# %}
