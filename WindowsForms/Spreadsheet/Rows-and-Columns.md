@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Rows and Columns in Windows Forms Spreadsheet | Syncfusion
-description: Learn about Rows and Columns support in Syncfusion Windows Forms Spreadsheet control and more details.
+title: Rows and Columns in Windows Forms Spreadsheet | Syncfusion®
+description: Learn about Rows and Columns support in Syncfusion® Windows Forms Spreadsheet control and more details.
 platform: windowsforms
 control: Spreadsheet
 documentation: ug

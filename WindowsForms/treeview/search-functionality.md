@@ -1,7 +1,7 @@
 ---
 layout: post
-title: search-functionality | WindowsForms | Syncfusion
-description: Learn here about search functionality of Syncfusion Windows Forms TreeView control, its elements and more details.
+title: search-functionality | WindowsForms | Syncfusion®
+description: Learn here about search functionality of Syncfusion® Windows Forms TreeView control, its elements and more details.
 platform: WindowsForms
 control: TreeView 
 documentation: ug

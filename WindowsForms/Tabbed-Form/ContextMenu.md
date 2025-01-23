@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Context Menu in Windows Forms Tabbed Form control | Syncfusion
-description: Learn about Context Menu support in Syncfusion Windows Forms Tabbed Form (SfTabbedForm) control and more details.
+title: Context Menu in Windows Forms Tabbed Form control | Syncfusion®
+description: Learn about Context Menu support in Syncfusion® Windows Forms Tabbed Form (SfTabbedForm) control and more details.
 platform: WindowsForms
 control: SfTabbedForm
 documentation: ug

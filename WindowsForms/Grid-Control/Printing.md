@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Printing in Windows Forms Grid Control | Syncfusion
-description: Learn about Printing support in Syncfusion Windows Forms Grid Control, its elements and more details.
+title: Printing in Windows Forms Grid Control | Syncfusion®
+description: Learn about Printing support in Syncfusion® Windows Forms Grid Control, its elements and more details.
 platform: windowsforms
 control: GridControl
 documentation: ug
