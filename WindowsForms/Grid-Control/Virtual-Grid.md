@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Virtual Grid in Windows Forms Grid Control | Syncfusion
-description: Learn about Virtual Grid support in Syncfusion Windows Forms Grid Control, its elements and more details.
+title: Virtual Grid in Windows Forms Grid Control | Syncfusion®
+description: Learn about Virtual Grid support in Syncfusion® Windows Forms Grid Control, its elements and more details.
 platform: windowsforms
 control: Grid
 documentation: ug

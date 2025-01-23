@@ -1,7 +1,7 @@
 ---
 layout: post
-title: UI Automation in Windows Forms DataGrid control | Syncfusion
-description: Learn here all about UI Automation feature of Syncfusion Windows Forms DataGrid (SfDataGrid) control and more.
+title: UI Automation in Windows Forms DataGrid control | Syncfusion®
+description: Learn here all about UI Automation feature of Syncfusion® Windows Forms DataGrid (SfDataGrid) control and more.
 platform: WindowsForms
 control: SfDataGrid 
 documentation: ug

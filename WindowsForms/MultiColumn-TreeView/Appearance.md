@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in Windows Forms MultiColumn TreeView control | Syncfusion
-description: Learn about Appearance support in Syncfusion Windows Forms MultiColumn TreeView control and more details.
+title: Appearance in Windows Forms MultiColumn TreeView control | Syncfusion®
+description: Learn about Appearance support in Syncfusion® Windows Forms MultiColumn TreeView control and more details.
 platform: WindowsForms
 control: MultiColumnTreeView
 documentation: ug

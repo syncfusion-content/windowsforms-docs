@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom Formula in Windows Forms Spreadsheet control | Syncfusion
-description: Learn about Custom Formula support in Syncfusion Windows Forms Spreadsheet control and more details.
+title: Custom Formula in Windows Forms Spreadsheet control | Syncfusion®
+description: Learn about Custom Formula support in Syncfusion® Windows Forms Spreadsheet control and more details.
 platform: windowsforms
 control: Spreadsheet
 documentation: ug
