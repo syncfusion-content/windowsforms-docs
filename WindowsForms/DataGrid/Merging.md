@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Merge Cells in Windows Forms DataGrid control | Syncfusion
-description: Learn here all about merging feature of Syncfusion Windows Forms DataGrid (SfDataGrid) control and more.
+title: Merge Cells in Windows Forms DataGrid control | Syncfusion®
+description: Learn here all about merging feature of Syncfusion® Windows Forms DataGrid (SfDataGrid) control and more.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug

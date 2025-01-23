@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Relations and Hierarchy in Windows Forms GridGrouping | Syncfusion
-description: Learn about Relations and Hierarchy support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
+title: Relations and Hierarchy in Windows Forms GridGrouping | Syncfusion®
+description: Learn about Relations and Hierarchy support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug

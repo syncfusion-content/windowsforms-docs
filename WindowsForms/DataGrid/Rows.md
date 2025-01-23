@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rows in WinForms DataGrid Control | Syncfusion
+title: Rows in WinForms DataGrid Control | Syncfusion®
 description: This section explains about the rows related customization such as row header, header row, freeze panes in datagrid control for windows forms
 platform: windowsforms
 control: SfDataGrid
