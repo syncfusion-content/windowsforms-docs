@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Feature-Summary in Windows Forms GridControl | Syncfusion
-description: Learn here all about feature summary support of Syncfusion Windows Forms Grid Control (GridControl) and more.
+title: Feature-Summary in Windows Forms GridControl | Syncfusion®
+description: Learn here all about feature summary support of Syncfusion® Windows Forms Grid Control (GridControl) and more.
 platform: windowsforms
 control: Grid
 documentation: ug
@@ -253,7 +253,7 @@ Displays XHTML formatted text.</td></tr>
 
 ## Data Binding
 
-Essential Grid comes with control to meet user requirements such as a grid that is bound to an ADO.NET data source, a grid that is virtually bound to the arbitrary collections, or a grid that maintains its own data storage. Following table lists the Data Binding features supported by the Grid control.
+Essential<sup>®</sup> Grid comes with control to meet user requirements such as a grid that is bound to an ADO.NET data source, a grid that is virtually bound to the arbitrary collections, or a grid that maintains its own data storage. Following table lists the Data Binding features supported by the Grid control.
 
 
 
@@ -322,7 +322,7 @@ Displays a foreign key table in a drop-down.</td></tr>
 
 ## Microsoft Office Simulation
 
-Essential Grid supports Microsoft Office features like dynamic splitters and undo/redo. Following table lists the available features.
+Essential<sup>®</sup> Grid supports Microsoft Office features like dynamic splitters and undo/redo. Following table lists the available features.
 
 
 
@@ -367,7 +367,7 @@ Has a tabbed workbook format.</td></tr>
 
 ## Functionalities
 
-Essential Grid offers support for many functionalities such as OLE drag-and-drop, and resizing of rows and columns through property settings and special event handlers. Following table lists such features.
+Essential<sup>®</sup> Grid offers support for many functionalities such as OLE drag-and-drop, and resizing of rows and columns through property settings and special event handlers. Following table lists such features.
 
 
 

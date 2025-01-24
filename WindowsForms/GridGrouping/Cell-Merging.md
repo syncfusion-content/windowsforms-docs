@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cell Merging in Windows Forms GridGrouping control | Syncfusion
-description: Learn about Cell Merging support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
+title: Cell Merging in Windows Forms GridGrouping control | Syncfusion®
+description: Learn about Cell Merging support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug

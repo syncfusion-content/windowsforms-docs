@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing in Windows Forms Spreadsheet control | Syncfusion
-description: Learn about Editing support in Syncfusion Windows Forms Spreadsheet control, its elements and more details.
+title: Editing in Windows Forms Spreadsheet control | Syncfusion®
+description: Learn about Editing support in Syncfusion® Windows Forms Spreadsheet control, its elements and more details.
 platform: windowsforms
 control: Spreadsheet
 documentation: ug

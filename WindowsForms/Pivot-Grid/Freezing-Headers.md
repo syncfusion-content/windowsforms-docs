@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Freezing Headers in Windows Forms Pivot Grid control | Syncfusion
-description: Learn about Freezing Headers support in Syncfusion Windows Forms Pivot Grid control and more details.
+title: Freezing Headers in Windows Forms Pivot Grid control | Syncfusion®
+description: Learn about Freezing Headers support in Syncfusion® Windows Forms Pivot Grid control and more details.
 platform: windowsforms
 control: Pivot Grid
 documentation: ug

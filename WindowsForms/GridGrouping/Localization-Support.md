@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization Support in Windows Forms GridGrouping | Syncfusion
-description: Learn about Localization Support support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
+title: Localization Support in Windows Forms GridGrouping | Syncfusion®
+description: Learn about Localization Support support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
 platform: windowsforms
 control: GridGrouping
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization Support in Windows Forms GridGrouping
 
-Localization support allows you to set the content according to the language or culture of a specific country or region. Essential Grid provides localization support for all controls.
+Localization support allows you to set the content according to the language or culture of a specific country or region. Essential<sup>®</sup> Grid provides localization support for all controls.
 
 ## Use Case Scenarios
 
@@ -189,7 +189,7 @@ With this feature, you can localize the options in the ComboBox cell to display 
 
 To get DataGrid samples from the dashboard:
 
-1. Open Syncfusion Dashboard.
+1. Open Syncfusion<sup>®</sup> Dashboard.
 1. Select UI > Windows Forms.
 2. Click Run Samples.
 3. Select Data Grid.

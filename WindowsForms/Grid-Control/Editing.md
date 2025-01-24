@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing in Windows Forms Grid Control | Syncfusion
-description: Learn about Editing support in Syncfusion Windows Forms Grid Control, its elements and more details.
+title: Editing in Windows Forms Grid Control | Syncfusion®
+description: Learn about Editing support in Syncfusion® Windows Forms Grid Control, its elements and more details.
 platform: windowsforms
 control: GridControl
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Windows Forms Office2007Form control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms Office2007Form control, its elements and more details.
+title: About Windows Forms Office2007Form control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® Windows Forms Office2007Form control, its elements and more details.
 platform: WindowsForms
 control: Office2007 Form
 documentation: ug

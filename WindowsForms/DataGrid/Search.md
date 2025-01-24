@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Search in SfDataGrid | Syncfusion
+title: Search in SfDataGrid | Syncfusion®
 description: This section explains about the Search support in SfDataGrid. This can be achieved by using the SearchController.
 platform: windowsforms
 control: SfDataGrid
