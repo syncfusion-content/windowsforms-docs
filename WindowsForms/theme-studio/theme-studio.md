@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started With Windows Forms Theme Studio | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms Theme Studio, its elements, and more.
+title: Getting Started With Windows Forms Theme Studio | Syncfusion®
+description: Learn here about getting started with Syncfusion® Windows Forms Theme Studio, its elements, and more.
 platform: WindowsForms
 control: ThemeStudio
 documentation: ug
@@ -9,18 +9,18 @@ documentation: ug
 
 # Getting Started With Windows Forms Theme Studio
 
-Theme Studio for WinForms can be used to create and apply new theme for Syncfusion controls from an existing theme. The primary goal here is to deliver an appearance rich Syncfusion controls that suits bests for every user application, based on their needs. 
+Theme Studio for WinForms can be used to create and apply new theme for Syncfusion<sup>®</sup> controls from an existing theme. The primary goal here is to deliver an appearance rich Syncfusion<sup>®</sup> controls that suits bests for every user application, based on their needs. 
 
 ## Customizing theme color from theme studio
 
-In theme studio utility, each theme has a unique common variable list. When user change the common variable color code value, it will reflect in all the Syncfusion WinForms controls. All Syncfusion WinForms control styles are derived from these theme-based common variables. This common variable list is handled inside the theme studio application for customizing theme-based colors. 
+In theme studio utility, each theme has a unique common variable list. When user change the common variable color code value, it will reflect in all the Syncfusion<sup>®</sup> WinForms controls. All Syncfusion<sup>®</sup> WinForms control styles are derived from these theme-based common variables. This common variable list is handled inside the theme studio application for customizing theme-based colors. 
 
 Let us now see the step-by-step procedure to launch and work with the theme studio utility below.
 
 
 **Step 1:**
 
-On installing the "Syncfusion Windows Forms" suite, lunch and select "Theme Studio" from the start-up panel.
+On installing the "Syncfusion<sup>®</sup> Windows Forms" suite, launch and select "Theme Studio" from the start-up panel.
 
 ![Theme Studio for Windows Forms](ThemeStudio_images/Built-In-Themes.png)
 
@@ -41,7 +41,7 @@ Click the color pickers in the theme customization section to select the desired
 
 **Step 4:**
 
-The Syncfusion WinForms controls will be rendered with the newly selected colors in the preview section, after selecting the desired color. 
+The Syncfusion<sup>®</sup> WinForms controls will be rendered with the newly selected colors in the preview section, after selecting the desired color. 
 
 ![Color reflected in controls loaded inside Theme Studio for Windows Forms](ThemeStudio_images/color-reflected-theme-studio.png)
 
@@ -60,14 +60,14 @@ Click the Export button in the bottom left corner of the theme studio applicatio
 
 **Step 2:**
 
-Now the export dialog appears with an option to select either entire controls or just the desired control(s). This option is useful when you have integrated a selective list of Syncfusion WinForms controls in your application. The theme studio will filter only the selected controls and customize the final output for those controls alone thereby reducing the final output assembly size. 
+Now the export dialog appears with an option to select either entire controls or just the desired control(s). This option is useful when you have integrated a selective list of Syncfusion<sup>®</sup> WinForms controls in your application. The theme studio will filter only the selected controls and customize the final output for those controls alone thereby reducing the final output assembly size. 
 
 ![Export dialog in Theme Studio for Windows Forms](ThemeStudio_images/Export-dialog-theme-studio.png)
 
 
 **Step 3:**
 
-The download theme will come as an assembly (*.dll) file that contains color codes for the selected Syncfusion WinForms controls. 
+The download theme will come as an assembly (*.dll) file that contains color codes for the selected Syncfusion<sup>®</sup> WinForms controls. 
 
 ![Export Theme assembly from Theme Studio for Windows Forms](ThemeStudio_images/Theme-Assembly-Theme-studio.png)
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: .NET Framework & .NET Core Compatibility- Syncfusion WinForms controls
-description: Learn here about the history of .NET Framework and .NET Core support for the Syncfusion Essential Studio Windows Forms controls
+title: .NET Framework & .NET Core Compatibility- Syncfusion® WinForms controls
+description: Learn here about the history of .NET Framework and .NET Core support for the Syncfusion® Essential Studio® Windows Forms controls
 platform: windowsforms
 control: .NET Framework Compatibility
 documentation: ug
@@ -9,16 +9,16 @@ documentation: ug
 
 # .NET Framework and .NET Core Compatibility
 
-Syncfusion Windows Forms Controls are always compatible latest .NET Framework and .NET Core versions.
+Syncfusion<sup>®</sup> Windows Forms Controls are always compatible latest .NET Framework and .NET Core versions.
 
 ## Version Compatibility
 
-Below table represents the supported Syncfusion Essential Studio version for .NET Framework and .NET Core versions.
+Below table represents the supported Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> version for .NET Framework and .NET Core versions.
 
 <table>
 <tr>
 <th>
-Syncfusion Version </th>
+Syncfusion<sup>®</sup> Version </th>
 <th>.NET 2.0</th><th>
 .NET 3.5</th><th>
 .NET 4.0</th><th>

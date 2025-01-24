@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Touch support for Syncfusion Windows Forms controls
-description: Learn here about the touch supports for Syncfusion Essential Studio Windows Forms controls and touch Gestures.
+title: Touch support for Syncfusion® Windows Forms controls
+description: Learn here about the touch supports for Syncfusion® Essential Studio® Windows Forms controls and touch Gestures.
 platform: WindowsForms
 control: General
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Gesture
 
-Gestures determine whether a finger or stylus has moved over a control. Syncfusion WinForms controls support the following touch gestures: Tap, Swipe, Pinch, and Hold.<br/>
+Gestures determine whether a finger or stylus has moved over a control. Syncfusion<sup>®</sup> WinForms controls support the following touch gestures: Tap, Swipe, Pinch, and Hold.<br/>
 This table shows the gesture mappings for each control.
 
 <table>

@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Localization in Windows Forms | Syncfusion
-description: Learn about Localization support in Syncfusion WF UI Contorls using .RESX files and also explains editing default strings of WF controls.
+title: Localization in Windows Forms | Syncfusion®
+description: Learn about Localization support in Syncfusion® WF UI Contorls using .RESX files and also explains editing default strings of WF controls.
 platform: WindowsForms
 control: Localization
 documentation: ug
 ---
 
 
-# Localization of Syncfusion WF Controls
+# Localization of Syncfusion<sup>®</sup> WF Controls
 
 Localization is the process of making application multilingual by formatting the content according to the cultures. This involves configuring the application for a specific language. Culture is the combination of language and location. For example, `en-US` is the culture for English spoken in United States; `en-GB` is the culture for English spoken in Great Britain.
 
-Syncfusion components support localization and have their own neutral resources. These resources can be localized as per the customer requirement and they can be localized in three ways are, 
+Syncfusion<sup>®</sup> components support localization and have their own neutral resources. These resources can be localized as per the customer requirement and they can be localized in three ways are, 
 
 * Using [ILocalizationProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ILocalizationProvider.html)
 * Using Satellite Assemblies
@@ -189,7 +189,7 @@ End Function
 
 ## Using Satellite Assemblies
 
-Localization is a key feature for providing solutions to global customers. This is true for desktop applications as well as Syncfusion components. Resources are important for localizing an application as they contain the necessary settings for different languages and cultures. Here Internationalization and localization are different but related concepts.
+Localization is a key feature for providing solutions to global customers. This is true for desktop applications as well as Syncfusion<sup>®</sup> components. Resources are important for localizing an application as they contain the necessary settings for different languages and cultures. Here Internationalization and localization are different but related concepts.
 
 • **Internationalization**: Ensuring an application can handle resources (For example, strings) in a language-specific fashion. Internationalization is also known as i18n.
 
@@ -203,17 +203,17 @@ Localization is a key feature for providing solutions to global customers. This 
 
 • **Specific**: A specific culture is a culture that is associated with a language and a country or region like, `fr-CA` and `fr-FR`. For example, fr is a neutral culture and `fr-FR` is a specific culture. Note that `zh-CHS` (simplified Chinese) and `zh-CHT` (traditional Chinese) are neutral cultures.
 
-### Steps to Localize Syncfusion Components
+### Steps to Localize Syncfusion<sup>®</sup> Components
 
-Syncfusion components have their own neutral resources, and these resources can be localized as per the needs of the customer. The steps for localizing the Syncfusion Menu Package are as follows.
+Syncfusion<sup>®</sup> components have their own neutral resources, and these resources can be localized as per the needs of the customer. The steps for localizing the Syncfusion<sup>®</sup> Menu Package are as follows.
 
-1. The neutral resources of every Syncfusion component are present in the Localization folder of each component’s source code. For the Tools package, the resources are present in the following path assuming that “C:\Program Files\” is the installation path for the Syncfusion components.
+1. The neutral resources of every Syncfusion<sup>®</sup> component are present in the Localization folder of each component’s source code. For the Tools package, the resources are present in the following path assuming that “C:\Program Files\” is the installation path for the Syncfusion<sup>®</sup> components.
 
      • For Tools.Windows: C:\Program Files\Syncfusion\Essential Studio\{{ site.releaseversion }}\Windows\Tools.Windows\Localization\
 
      • For Shared.Base: C:\Program Files\Syncfusion\Essential Studio\{{ site.releaseversion }}\Base\Shared.Base\Localization
 
-N> In above section, Latest Essential Studio version details has been provided. User can refer installed Essential Studio version instead of mentioned version.
+N> In above section, Latest Essential Studio<sup>®</sup> version details has been provided. User can refer installed Essential Studio<sup>®</sup> version instead of mentioned version.
 
 2. Inside the NeutralResources folder, there are four resource files corresponding to the Tools package. These resources contain the string representations for the English culture, both default and neutral.
 
@@ -309,13 +309,13 @@ Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("de
 {% endcapture %}
 {{ codesnippet8 | OrderList_Indent_Level_1 }}
 
-15. Now, Run the application that contains the Syncfusion Toolbar and Menu controls and open the Customization dialog. The dialog appears in German as shown in the following figure:
+15. Now, Run the application that contains the Syncfusion<sup>®</sup> Toolbar and Menu controls and open the Customization dialog. The dialog appears in German as shown in the following figure:
 
 ![Windows Form Localization Customization dialog German culture](Localization_images/WindowsForm-Localization-CustomizationDialog.png)
 
-## Localize Syncfusion Windows Forms control using .resx file
+## Localize Syncfusion<sup>®</sup> Windows Forms control using .resx file
 
-You can localize the syncfusion Windows Forms Controls by adding resource file for each language.
+You can localize the Syncfusion<sup>®</sup> Windows Forms Controls by adding resource file for each language.
 
 ### Changing application culture
 
@@ -356,7 +356,7 @@ End Class
 
 You can create .resx files for any languages by following steps,
 
-N> You can get the default resource files of all Syncfusion Windows Forms libraries from [View resource files in GitHub](https://github.com/syncfusion/winforms-controls-localization-resx-files)
+N> You can get the default resource files of all Syncfusion<sup>®</sup> Windows Forms libraries from [View resource files in GitHub](https://github.com/syncfusion/winforms-controls-localization-resx-files)
 
 1. Right click your project and click `New Folder` and set name as `Resources`.
 
@@ -382,7 +382,7 @@ N> Download demo from [View sample in GitHub](https://github.com/SyncfusionExamp
 
 ### Localize when resource file is present in different namespaces or assemblies
 
-The below table represents that how the resource file need to set if we using our syncfusion controls from different assembly or namespace,
+The below table represents that how the resource file need to set if we using our Syncfusion<sup>®</sup> controls from different assembly or namespace,
 
 <table>
 <tr>
@@ -622,4 +622,4 @@ End Namespace
 
 ### Editing default culture settings
 
-You can change the default string of any control by adding the default .resx files ([from GitHub](https://github.com/syncfusion/winforms-controls-localization-resx-files)) to `Resources` folder of your application. Syncfusion Windows Forms controls reads the default string from the .resx files of application if its added.
+You can change the default string of any control by adding the default .resx files ([from GitHub](https://github.com/syncfusion/winforms-controls-localization-resx-files)) to `Resources` folder of your application. Syncfusion<sup>®</sup> Windows Forms controls reads the default string from the .resx files of application if its added.
