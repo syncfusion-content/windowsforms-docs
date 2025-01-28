@@ -2,7 +2,7 @@
 layout: post
 title: Control dependencies | Windows Forms | Syncfusion®
 description: Learn here about Control Dependencies with Syncfusion® Windows Forms control, its elements and more details.
-platform: WindowsForms
+platform: windowsforms
 control: Introduction
 documentation: ug
 ---

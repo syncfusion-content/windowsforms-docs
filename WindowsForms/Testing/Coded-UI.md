@@ -2,7 +2,7 @@
 layout: post
 title: Coded UI Testing | Windows Forms | Syncfusion®
 description: This section explains the basic steps to test the controls using CodedUI for Syncfusion® Essential Studio® windows forms
-platform: WindowsForms
+platform: windowsforms
 control: Coded UI
 documentation: ug
 ---

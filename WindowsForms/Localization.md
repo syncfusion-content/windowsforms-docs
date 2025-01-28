@@ -2,7 +2,7 @@
 layout: post
 title: Localization in Windows Forms | Syncfusion®
 description: Learn about Localization support in Syncfusion® WF UI Contorls using .RESX files and also explains editing default strings of WF controls.
-platform: WindowsForms
+platform: windowsforms
 control: Localization
 documentation: ug
 ---

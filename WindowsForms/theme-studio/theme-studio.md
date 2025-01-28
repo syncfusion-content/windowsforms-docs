@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started With Windows Forms Theme Studio | Syncfusion®
 description: Learn here about getting started with Syncfusion® Windows Forms Theme Studio, its elements, and more.
-platform: WindowsForms
+platform: windowsforms
 control: ThemeStudio
 documentation: ug
 ---
