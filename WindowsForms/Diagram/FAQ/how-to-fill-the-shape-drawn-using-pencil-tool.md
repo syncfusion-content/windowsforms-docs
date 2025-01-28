@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to fill the shape drawn using pencil tool | Diagram | Syncfusion
-description: This page explains about how to create shape with filled background appearance using pencil tool feature available in the Syncfusion WinForms Diagram control.
+title: How to fill the shape drawn using pencil tool | Diagram | Syncfusion®
+description: This page explains about how to create shape with filled background appearance using pencil tool feature available in the Syncfusion® WinForms Diagram control.
 platform: windowsforms
 control: Diagram
 documentation: ug

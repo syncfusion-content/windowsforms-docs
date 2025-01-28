@@ -2228,3 +2228,6 @@ _BAHTTEXT(number)_
 
 
 * The output of `BAHTTEXT` is in Thai text with "Baht" as the suffix.  
+
+
+

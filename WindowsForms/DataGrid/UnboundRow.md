@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Unbound Row in Windows Forms DataGrid control | Syncfusion
+title: Unbound Row in Windows Forms DataGrid control | Syncfusion®
 description: This section explains about the unbound row feature and it's customization in datagrid control for windows forms
 platform: windowsforms
 control: SfDataGrid

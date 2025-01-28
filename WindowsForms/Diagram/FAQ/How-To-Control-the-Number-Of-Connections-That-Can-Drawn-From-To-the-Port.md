@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How To Control the Number Of Connections That Can  | Diagram | Windows Forms | Syncfusion
-description: how to control the number of connections that can be drawn from / to the port
+title: How To Control the Number Of Connections From Port | Syncfusion®
+description: Guide on setting connection limits to a port. Learn to configure firewall and server settings to manage inbound and outbound connection capacity effectively.
 platform: windowsforms
 control: Diagram
 documentation: ug

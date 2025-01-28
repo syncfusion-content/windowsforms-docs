@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in Windows Forms Metro Form Control | Syncfusion
-description: Learn here all about the customization feature of Syncfusion Windows Forms Metro Form control and more.
+title: Customization in Windows Forms Metro Form Control | Syncfusion®
+description: Learn here all about the customization feature of Syncfusion® Windows Forms Metro Form control and more.
 platform: WindowsForms
 control: MetroForm
 documentation: ug

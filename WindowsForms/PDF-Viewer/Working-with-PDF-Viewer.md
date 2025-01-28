@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with PdfViewerControl in WinForms PDF Viewer | Syncfusion
-description: Learn about Working with PdfViewerControl support in Syncfusion Windows Forms PDF Viewer (PdfViewerControl) control and more details.
+title: Working with PdfViewerControl in WinForms PDF Viewer | Syncfusion&reg;
+description: Learn about Working with PdfViewerControl support in Syncfusion<sup>&reg;</sup>; Windows Forms PDF Viewer (PdfViewerControl) control and more details.
 platform: windowsforms
 control: PdfViewerControl
 documentation: ug
@@ -9,93 +9,93 @@ documentation: ug
 
 # Working with PdfViewerControl in Windows Forms PDF Viewer
 
-Essential [WinForms PDF Viewer](https://www.syncfusion.com/winforms-ui-controls/pdf-viewer) can display and print PDF files and export the pages as raster images and meta files.
+Essential&reg; [WinForms PDF Viewer](https://www.syncfusion.com/winforms-ui-controls/pdf-viewer) can display and print PDF files and export the pages as raster images and meta files.
 
 ## Viewing PDF Files 
 
 A PDF can be loaded into the WinForms PDF Viewer either through the open file button available in the toolbar or through the [Load](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_Forms_PdfViewer_PdfViewerControl_Load_System_String_) method. It also requests passwords to open encrypted documents.
 
 {% tabs %}
-{%highlight c#%}
+{% highlight c# %}
 
 //Initialize PdfViewerControl.
 PdfViewerControl pdfViewerControl1 = new PdfViewerControl();
 //Load the PDF.
 pdfViewerControl1.Load("Sample.pdf");
 
-{%endhighlight%}
+{% endhighlight %}
 
 
-{%highlight vb%}
+{% highlight vb %}
 
 'Initialize PdfViewerControl.
 Private pdfViewerControl1 As New PdfViewerControl()
 'Load the PDF.
 pdfViewerControl1.Load("Sample.pdf")
 
-{%endhighlight%}
+{% endhighlight %}
 {% endtabs %}
 
 You can load an encrypted document by using the overload in the [Load](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_Forms_PdfViewer_PdfViewerControl_Load_System_String_System_String_) method.
 
 {% tabs %}
-{%highlight c#%}
+{% highlight c# %}
 
 //Initialize PdfViewerControl.
 PdfViewerControl pdfViewerControl1 = new PdfViewerControl();
 //Load the PDF.
 pdfViewerControl1.Load("Sample.pdf", "password");
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vb%}
+{% highlight vb %}
 
 'Initialize PdfViewerControl.
 Private pdfViewerControl1 As New PdfViewerControl()
 'Load the PDF.
 pdfViewerControl1.Load("Sample.pdf", "password")
 
-{%endhighlight%}
+{% endhighlight %}
 {% endtabs %}
 
 ## Exporting PDF
 
 ### Exporting pages of PDF document as raster images
 
-Essential PdfViewerControl allows selected pages to be exported as raster images. Exporting can be done using the [ExportAsImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_Forms_PdfViewer_PdfViewerControl_ExportAsImage_System_Int32_) method. This option helps to convert a PDF into an image.
+Essential<sup>&reg;</sup>; PdfViewerControl allows selected pages to be exported as raster images. Exporting can be done using the [ExportAsImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_Forms_PdfViewer_PdfViewerControl_ExportAsImage_System_Int32_) method. This option helps to convert a PDF into an image.
 
 {% tabs %}
-{%highlight c#%}
+{% highlight c# %}
 
 Bitmap image = pdfViewerControl1.ExportAsImage(0);
 // Save the image.
 image.Save("Sample.png", ImageFormat.Png);
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vb%}
+{% highlight vb %}
 
 Dim image As Bitmap = pdfViewerControl1.ExportAsImage(0)
 'Save the image.
 image.Save("Sample.png", ImageFormat.Png)
 
-{%endhighlight%}
+{% endhighlight %}
 {% endtabs %}
 
 You can also specify the page range instead of converting each page.
 
 {% tabs %}
-{%highlight c#%}
+{% highlight c# %}
 
 Bitmap[] image = pdfViewerControl1.ExportAsImage(0, 3);
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vb%}
+{% highlight vb %}
 
 Dim image() As Bitmap = pdfViewerControl1.ExportAsImage(0, 3)
 
-{%endhighlight%}
+{% endhighlight %}
 {% endtabs %}
 
 ### Exporting pages of PDF document as Vector Images
@@ -103,37 +103,37 @@ Dim image() As Bitmap = pdfViewerControl1.ExportAsImage(0, 3)
 Exporting pages of PDF document as vector images can be done using the [ExportAsMetafile](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_Forms_PdfViewer_PdfViewerControl_ExportAsMetafile_System_Int32_) method. The following code sample demonstrates how a PDF document can be exported as a Metafile.
 
 {% tabs %}
-{%highlight c#%}
+{% highlight c# %}
 
 Metafile image = pdfViewerControl1.ExportAsMetafile(0);
 // Save the image
 image.Save("Sample.emf", ImageFormat.Emf);
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vb%}
+{% highlight vb %}
 
 Dim image As Metafile = pdfViewerControl1.ExportAsMetafile(0)
 ' Save the image
 image.Save("Sample.emf", ImageFormat.Emf)
 
-{%endhighlight%}
+{% endhighlight %}
 {% endtabs %}
 
 You can also specify the page range instead of converting each page individually.
 
 {% tabs %}
-{%highlight c#%}
+{% highlight c# %}
 
 Metafile[] image = pdfViewerControl1.ExportAsMetafile(0, 3);
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vb%}
+{% highlight vb %}
 
 Dim image() As Metafile = pdfViewerControl1.ExportAsMetafile(0, 3)
 
-{%endhighlight%}
+{% endhighlight %}
 {% endtabs %}
 
 ## Text selection
@@ -145,7 +145,7 @@ In PDF, text can be selected by clicking the mouse left button and dragging the 
 When the text selection is completed, the `TextSelectionCompleted` event will be raised. The selected text can be retrieved as string from the `args` parameter of the event handler. 
 
 {%tabs%}
-{%highlight c#%}
+{% highlight c# %}
 
 private void PdfViewer_TextSelectionCompleted(object sender, TextSelectionCompletedEventArgs args)
 {
@@ -156,7 +156,7 @@ private void PdfViewer_TextSelectionCompleted(object sender, TextSelectionComple
 }
 
 
-{%endhighlight%}
+{% endhighlight %}
 {%endtabs%}
 
 ### Copying the selected text

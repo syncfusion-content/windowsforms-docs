@@ -1,7 +1,7 @@
 ---
 layout: post
-title: TreeNodeAdv Customization in Windows Forms TreeView | Syncfusion
-description: Learn about TreeNodeAdv Customization support in Syncfusion Windows Forms TreeView control and more details.
+title: TreeNodeAdv Customization in Windows Forms TreeView | Syncfusion®
+description: Learn about TreeNodeAdv Customization support in Syncfusion® Windows Forms TreeView control and more details.
 platform: WindowsForms
 control: TreeView 
 documentation: ug

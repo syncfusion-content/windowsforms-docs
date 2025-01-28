@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Windows Forms DataGrid Control | Syncfusion
+title: Windows Forms DataGrid Control | Syncfusion®
 description: This section explains about the datagrid control for windows forms and it's important key features such as data binding, selection and etc
 platform: windowsforms
 control: SfDataGrid
@@ -31,7 +31,7 @@ Following are the key features of SfDataGrid control
 
 ## Choose between different grid controls
 
-Syncfusion WinForms suite comes up with following different grid namely,
+Syncfusion<sup>®</sup> WinForms suite comes up with following different grid namely,
 
 * [SfDataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid)
 * [GridGroupingControl](https://help.syncfusion.com/windowsforms/gridgrouping/overview)

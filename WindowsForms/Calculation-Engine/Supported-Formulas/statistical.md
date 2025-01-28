@@ -3007,3 +3007,5 @@ The `TREND` function returns values along a linear trend by fitting a straight l
 * If known_y's or known_x's are empty, or if one has more data points than the other, `TREND` function will return the `#N/A` error.
 
 * If the variance of known_x's equals zero, `TREND` will return the `#DIV/0!` error.
+
+

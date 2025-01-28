@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How To Highlight a Particular Node At Run time | Diagram | Windows Forms | Syncfusion
-description: how to highlight a particular node at run-time
+title: How To Highlight a Particular Node At Run time | Syncfusion®
+description: Learn how to dynamically highlight diagram nodes during mouse movements by adjusting their LineStyle and FillStyle with real-time user interaction.
 platform: windowsforms
 control: Diagram
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Scrollbar Customization in Windows Forms TreeView control | Syncfusion
-description: Learn about Scrollbar Customization support in Syncfusion Windows Forms TreeView control and more details.
+title: Scrollbar Customization in Windows Forms TreeView control | Syncfusion®
+description: Learn about Scrollbar Customization support in Syncfusion® Windows Forms TreeView control and more details.
 platform: WindowsForms
 control: TreeView 
 documentation: ug

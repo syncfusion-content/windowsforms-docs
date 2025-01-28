@@ -1,7 +1,7 @@
 ---
 layout: post
-title: PDF Rendering Engines in Windows Forms PDF Viewer control | Syncfusion
-description: Learn about PDF Rendering Engines support in Syncfusion Windows Forms PDF Viewer (PdfViewerControl) control and more details.
+title: PDF Rendering Engines in WinForms PDFViewer | Syncfusion&reg;
+description: Learn about PDF Rendering Engines support in Syncfusion<sup>&reg;</sup>; Windows Forms PDF Viewer (PdfViewerControl) control and more details.
 platform: windowsforms
 control: PDF Viewer
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # PDF Rendering Engines in Windows Forms PDF Viewer (PdfViewerControl)
 
-Syncfusion [WinForms PDF Viewer](https://www.syncfusion.com/winforms-ui-controls/pdf-viewer) renders the PDF pages through 2 different rendering engines.
+Syncfusion<sup>&reg;</sup>; [WinForms PDF Viewer](https://www.syncfusion.com/winforms-ui-controls/pdf-viewer) renders the PDF pages through 2 different rendering engines.
 
 * PDFium (Google Chrome’s PDF rendering engine)
 * SfPdf (Syncfusion’s Own PDF rendering engine)
@@ -18,14 +18,14 @@ Syncfusion [WinForms PDF Viewer](https://www.syncfusion.com/winforms-ui-controls
 
 PDFium is used in Google Chrome for rendering PDF files. It provides accurate and robust PDF rendering. It is the recommended PDF rendering engine. 
 
-N>* From v16.3.0.x onwards, this PDFium rendering engine is the default rendering engine of Syncfusion WinForms PDF Viewer.
-N>* From v20.4.0.x onwards, ARM64-based Pdfium assembly is generated for Syncfusion WinForms PDF Viewer control in applications that target ARM64 architecture.
+N>* From v16.3.0.x onwards, this PDFium rendering engine is the default rendering engine of Syncfusion<sup>&reg;</sup>; WinForms PDF Viewer.
+N>* From v20.4.0.x onwards, ARM64-based Pdfium assembly is generated for Syncfusion<sup>&reg;</sup>; WinForms PDF Viewer control in applications that target ARM64 architecture.
 N>* From v22.1.x onwards, Pdfium is upgraded to the new version which was built with the branch [chromium/5692](https://pdfium.googlesource.com/pdfium/+/refs/heads/chromium/5692).
 
 ### How PDFium works with Syncfusion’s PDF Viewer
 
-* On running your WinForms application, Syncfusion PDF Viewer control generates a folder named `PDFium` in the application output path folder (for example: bin/release or bin/debug) at runtime. 
-* Syncfusion PDF Viewer control detects the architecture of the running machine automatically.
+* On running your WinForms application, Syncfusion<sup>&reg;</sup>; PDF Viewer control generates a folder named `PDFium` in the application output path folder (for example: bin/release or bin/debug) at runtime. 
+* Syncfusion<sup>&reg;</sup>; PDF Viewer control detects the architecture of the running machine automatically.
 * Next, it creates another subfolder named “x64”, “x86” or “arm64” based on the machine architecture.
 * Extracts the PDFium binary (PDFium.dll) into the subfolder (x64, x86 or arm64) and consumes it to render PDF files.
 
@@ -35,7 +35,7 @@ N> PDFium rendering is not supported in Windows XP operating system.
 
 ### How to run PDFium in a restricted access environment
 
-If there is any access restriction applied to the application output folder, then the Syncfusion PDF Viewer  control cannot able to extract and consume the PDFium engine as mentioned above.
+If there is any access restriction applied to the application output folder, then the Syncfusion<sup>&reg;</sup>; PDF Viewer  control cannot able to extract and consume the PDFium engine as mentioned above.
 
 In that situation, you need to add the following steps to consume the PDFium rendering engine.
 

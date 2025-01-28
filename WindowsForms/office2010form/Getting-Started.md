@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WinForms Office2010Form | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms Office2010Form control, its elements and more details.
+title: Getting Started with WinForms Office2010Form | Syncfusion®
+description: Learn here about getting started with Syncfusion® Windows Forms Office2010Form control, its elements and more details.
 platform: WindowsForms
 control: Office2010 Form
 documentation: ug
