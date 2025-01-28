@@ -1,17 +1,17 @@
 ---
 layout: post
-title: .NET Core | Windows Forms | Syncfusion
-description: Learn here about how to creating the Windows Forms Applications using .NET Core and the Syncfusion Windows Forms controls
+title: .NET Core | Windows Forms | Syncfusion®
+description: Learn here about how to creating the Windows Forms Applications using .NET Core and the Syncfusion® Windows Forms controls
 platform: windowsforms
 control: .NET Core
 documentation: ug
 ---
 
-# WinForms Applications using .NET Core and Syncfusion WinForms Controls
+# WinForms Applications using .NET Core and Syncfusion<sup>®</sup> WinForms Controls
 
-Syncfusion Essential Studio for Windows Forms suits .NET core assemblies for building Windows Forms .NET Core applications using Syncfusion Controls. This section explains how to create the project in .NET Core application and using syncfusion Windows Forms controls.
+Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> for Windows Forms suits .NET core assemblies for building Windows Forms .NET Core applications using Syncfusion<sup>®</sup> Controls. This section explains how to create the project in .NET Core application and using Syncfusion<sup>®</sup> Windows Forms controls.
 
-N> All Syncfusion Windows Forms controls supports .NET Core Framework except the controls labeled as `classic`.
+N> All Syncfusion<sup>®</sup> Windows Forms controls supports .NET Core Framework except the controls labeled as `classic`.
 
 ## Create a .NET Core project
 
@@ -45,7 +45,7 @@ In **Solution Explorer**, right-click on **Dependencies** and select **Add Refer
 
 Now, **Reference Manager** dialog will be opened. Here click **Browse** and select the needed assemblies from the location mentioned in below note section. On selecting necessary assemblies, click **Add** and then click **Ok**. Now, required assemblies are added in to the project, like in the below screenshot.
 
-N> You can get Syncfusion Windows Forms (.NET Core) controls assemblies from `net6.0` folder in the following location - C:\Program Files (x86)\Syncfusion\Essential Studio\Windows\x.x.x.x\precompiledassemblies
+N> You can get Syncfusion<sup>®</sup> Windows Forms (.NET Core) controls assemblies from `net6.0` folder in the following location - C:\Program Files (x86)\Syncfusion\Essential Studio\Windows\x.x.x.x\precompiledassemblies
 
 ![NETcore showing assembly](NETcore_images/NETcore_assembly.jpeg)
 

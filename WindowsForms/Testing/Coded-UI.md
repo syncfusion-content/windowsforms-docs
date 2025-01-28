@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Coded UI Testing | Windows Forms | Syncfusion
-description: This section expalins the basic steps to test the controls using CodedUI for Syncfusion Essential Studio windows forms
-platform: WindowsForms
+title: Coded UI Testing | Windows Forms | Syncfusion®
+description: This section explains the basic steps to test the controls using CodedUI for Syncfusion® Essential Studio® windows forms
+platform: windowsforms
 control: Coded UI
 documentation: ug
 ---
@@ -10,7 +10,7 @@ documentation: ug
 
 # Coded UI Testing in Windows Forms Controls
 
-This section demonstrates how to create a simple test with TreeViewAdv. The Coded UI functionality can be tested from VS2010 or above with Ultimate or Premium version. TreeViewAdv supports Coded UI from Syncfusion Essential Studio version v9.1.0.20.
+This section demonstrates how to create a simple test with TreeViewAdv. The Coded UI functionality can be tested from VS2010 or above with Ultimate or Premium version. TreeViewAdv supports Coded UI from Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> version v9.1.0.20.
 
 
 ## Creating Coded UI Project
