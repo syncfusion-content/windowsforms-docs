@@ -2,7 +2,7 @@
 layout: post
 title: Localization in Windows Forms Docking Manager control | Syncfusion
 description: Learn about Localization support in Syncfusion Windows Forms Docking Manager control and more details.
-platform: WindowsForms
+platform: windowsforms
 control: DockingManager
 documentation: ug
 ---
@@ -116,28 +116,28 @@ switch (name)
  return "自动隐藏";
 
  case ToolsResourceIdentifiers.FloatingMenuItemText:
- return "漂浮的";
+ return "浮动";
 
  case ToolsResourceIdentifiers.MDIChildMenuItemText:
- return "MDI 子";
+ return "MDI 子窗体";
 
  case ToolsResourceIdentifiers.HideMenuItemText:
  return "隐藏";
 
  case ToolsResourceIdentifiers.MenuItemDockToLeft:
- return "剩下";
+ return "靠左停靠";
 
  case ToolsResourceIdentifiers.MenuItemDockToRight:
- return "对";
+ return "靠右停靠";
 
  case ToolsResourceIdentifiers.MenuItemDockToTop:
-  return "最佳";
+  return "靠上停靠";
 
   case ToolsResourceIdentifiers.MenuItemDockToBottom:
-  return "底部";
+  return "靠下停靠";
 
   case ToolsResourceIdentifiers.MenuItemDockTo:
-  return "码头";
+  return "停靠到";
 
   default:
   return string.Empty;
