@@ -72,6 +72,38 @@ sfComboBox1.Style.DropDownButtonStyle.FocusedBackColor = Color.Pink
 
 ![customization the DropDownButtonStyle](Appearance_images/Appearance_img3.png)
 
+## Customizing the drop-down button icon
+
+To customize the drop-down button icon:
+
+- Remove the default icon by setting the ForeColor properties to Transparent.
+- Set the Image property to add a custom icon.
+
+{% tabs %}
+{% highlight c# %}
+// Remove the default icon from the drop-down button
+sfComboBox1.Style.DropDownButtonStyle.ForeColor = Color.Transparent;
+sfComboBox1.Style.DropDownButtonStyle.FocusedForeColor = Color.Transparent;
+sfComboBox1.Style.DropDownButtonStyle.HoverForeColor = Color.Transparent;
+sfComboBox1.Style.DropDownButtonStyle.PressedForeColor = Color.Transparent;
+
+// Set a new icon for the drop-down button
+sfComboBox1.Style.DropDownButtonStyle.Image = Image.FromFile(@"....\Arrow.png");
+{% endhighlight %}
+{% highlight vb %}
+' Remove the default icon from the drop-down button
+sfComboBox1.Style.DropDownButtonStyle.ForeColor = Color.Transparent
+sfComboBox1.Style.DropDownButtonStyle.FocusedForeColor = Color.Transparent
+sfComboBox1.Style.DropDownButtonStyle.HoverForeColor = Color.Transparent
+sfComboBox1.Style.DropDownButtonStyle.PressedForeColor = Color.Transparent
+
+' Set a new icon for the drop-down button
+sfComboBox1.Style.DropDownButtonStyle.Image = Image.FromFile("....\Arrow.png")
+{% endhighlight %}
+{% endtabs %}
+
+![customization the DropDownButtonStyle](Appearance_images/Appearance_img11.png)
+
 ## Customizing drop-down appearance
 
 Appearance of the drop-down control can be customized by setting the [DropDownStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_DropDownStyle) property.
