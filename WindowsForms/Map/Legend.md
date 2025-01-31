@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Legend in Windows-Forms Map Control | Syncfusion
-description: Learn here all about the legend feature of the Syncfusion Windows Forms Map (Maps) control and more.
+title: Legend in Windows-Forms Map Control | Syncfusion<sup>®</sup>
+description: Learn here all about the legend feature of the Syncfusion<sup>®</sup> Windows Forms Map (Maps) control and more.
 platform: windowsforms
 control: Maps
 documentation: ug
