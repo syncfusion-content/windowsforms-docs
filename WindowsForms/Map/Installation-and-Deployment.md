@@ -41,7 +41,7 @@ Use the following steps to view the samples:
 
       The Essential Studio Enterprise Edition window will be displayed.
 
-      ![Displaying Essential Studio<sup>®</sup> Enterprise Edition window](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)       
+      ![Displaying Essential Studio Enterprise Edition window](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)       
 	  
 	  Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> Dashboard
       {:.caption}
