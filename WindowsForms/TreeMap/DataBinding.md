@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Features | Windows Forms | Syncfusion
-description: Learn here all about DataBinding of Syncfusion Essential Studio Windows Forms TreeMap control, its elements, and more.
+title: Features | Windows Forms | Syncfusion<sup>®</sup>
+description: Learn here all about DataBinding of Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> Windows Forms TreeMap control, its elements, and more.
 platform: windowsforms
 control: TreeMap
 documentation: ug
