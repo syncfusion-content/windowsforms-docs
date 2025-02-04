@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Events in Windows Forms Popup control | Syncfusion
-description: Learn about Events support in Syncfusion Windows Forms Popup (PopupControlContainer) control and more details.
-platform: WindowsForms
+title: Events in Windows Forms Popup control | Syncfusion®
+description: Learn about Events support in Syncfusion® Windows Forms Popup (PopupControlContainer) control and more details.
+platform: windowsforms
 control: PopupControlContainer
 documentation: ug
 ---

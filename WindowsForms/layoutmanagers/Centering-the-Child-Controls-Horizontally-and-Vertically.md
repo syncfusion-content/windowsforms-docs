@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Centering the Child Controls in LayoutManagers | Syncfusion
+title: Centering the Child Controls in LayoutManagers | Syncfusion®
 description: Learn about Centering the Child Controls Horizontally and Vertically support in Syncfusion Windows Forms LayoutManagers control and more details.
-platform: WindowsForms
+platform: windowsforms
 control: Layout Managers Package
 documentation: ug
 ---

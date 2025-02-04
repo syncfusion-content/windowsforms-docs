@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Appearance Settings in Windows Forms TabControl control | Syncfusion
-description: Learn about Appearance Settings support in Syncfusion Windows Forms TabControl (TabControlAdv) control and more details.
-platform: WindowsForms
+title: Appearance Settings in Windows Forms TabControl control | Syncfusion®
+description: Learn about Appearance Settings support in Syncfusion® Windows Forms TabControl (TabControlAdv) control and more details.
+platform: windowsforms
 control: TabControlAdv 
 documentation: ug
 ---
@@ -17,7 +17,7 @@ This section discusses the various Background Settings available in [TabControlA
 
 ### BackgroundImage settings
 
-The Essential [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) provides the following options to customize the images:
+The Essential<sup>®</sup> [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) provides the following options to customize the images:
 
 * Images inside the TabItems.
 * Images outside the TabBounds.

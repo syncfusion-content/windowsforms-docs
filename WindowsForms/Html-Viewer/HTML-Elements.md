@@ -1,8 +1,8 @@
 ---
 layout: post
-title: HTML Elements in Windows Forms Html Viewer control | Syncfusion
-description: Learn about HTML Elements support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
-platform: WindowsForms
+title: HTML Elements in Windows Forms Html Viewer control | Syncfusion®
+description: Learn about HTML Elements support in Syncfusion® Windows Forms Html Viewer (HTMLUI) control and more details.
+platform: windowsforms
 control: HTMLUIControl
 documentation: ug
 ---
@@ -111,7 +111,7 @@ MessageBox.Show("After Merging:" + Me.txt.SupportedEvents.Length.ToString())
 
 ## Element types
 
-The following are the various HTML elements supported by Essential HTMLUI.
+The following are the various HTML elements supported by Essential<sup>®</sup> HTMLUI.
 
 
 

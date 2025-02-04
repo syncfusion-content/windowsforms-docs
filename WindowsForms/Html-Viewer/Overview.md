@@ -1,8 +1,8 @@
 ---
 layout: post
-title: About Windows Forms Html Viewer control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms Html Viewer (HTMLUI) control, its elements and more details.
-platform: WindowsForms
+title: About Windows Forms Html Viewer control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® Windows Forms Html Viewer (HTMLUI) control, its elements and more details.
+platform: windowsforms
 control: HTML UI
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Contextual Tab Group in Windows Forms Ribbon control | Syncfusion
-description: Learn about Contextual Tab Group support in Syncfusion Windows Forms Ribbon (RibbonControlAdv) control and more details.
-platform: WindowsForms
+title: Contextual Tab Group in Windows Forms Ribbon control | Syncfusion®
+description: Learn about Contextual Tab Group support in Syncfusion® Windows Forms Ribbon (RibbonControlAdv) control and more details.
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---

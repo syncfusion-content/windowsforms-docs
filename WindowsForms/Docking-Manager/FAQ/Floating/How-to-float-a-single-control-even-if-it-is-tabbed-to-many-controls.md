@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to float a single control even if it is tabbed to many controls | WindowsForms | Syncfusion
+title: How to float a single control even if it is tabbed to many controls | WindowsForms | Syncfusion®
 description: How to float a single control even if it is tabbed to many controls
-platform: WindowsForms
+platform: windowsforms
 control: DockingManager
 documentation: ug
 ---

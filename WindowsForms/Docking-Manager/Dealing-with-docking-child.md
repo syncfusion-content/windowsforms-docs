@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Dealing with docking child | WinForms Docking Manager| Syncfusion
-description: Learn about Dealing with docking child support in Syncfusion Windows Forms Docking Manager control and more.
-platform: WindowsForms
+title: Dealing with docking child | WinForms Docking Manager| Syncfusion®
+description: Learn about Dealing with docking child support in Syncfusion® Windows Forms Docking Manager control and more.
+platform: windowsforms
 control: DockingManager 
 documentation: ug
 ---

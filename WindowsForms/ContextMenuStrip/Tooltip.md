@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Tooltip in Windows Forms ContextMenuStrip Control | Syncfusion
-description: Learn here all about tooltip feature of Syncfusion Windows Forms ContextMenuStrip (ContextMenuStripEx) control and more.
-platform: WindowsForms
+title: Tooltip in Windows Forms ContextMenuStrip Control | Syncfusion®
+description: Learn here all about tooltip feature of Syncfusion® Windows Forms ContextMenuStrip (ContextMenuStripEx) control and more.
+platform: windowsforms
 control: ContextMenuStripEx
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Display Settings | WindowsForms | Syncfusion
-description: Learn here about how to set the display settings of the Syncfusion Windows Forms MaskedEditBox control.
-platform: WindowsForms
+title: Display Settings | WindowsForms | Syncfusion®
+description: Learn here about how to set the display settings of the Syncfusion® Windows Forms MaskedEditBox control.
+platform: windowsforms
 control: MaskedEditBox
 documentation: ug
 ---

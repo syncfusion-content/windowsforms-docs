@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started | Windows Forms ContextMenuStrip control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms ContextMenuStrip (ContextMenuStripEx) control, its elements and more.
-platform: WindowsForms
+title: Getting Started | Windows Forms ContextMenuStrip control | Syncfusion®
+description: Learn here about getting started with Syncfusion® Windows Forms ContextMenuStrip (ContextMenuStripEx) control, its elements and more.
+platform: windowsforms
 control: ContextMenuStripEx
 documentation: ug
 ---
@@ -29,7 +29,7 @@ The following assemblies needs to be added as reference to use the control in an
 
 The [Windows Forms ContextMenuStrip](https://www.syncfusion.com/winforms-ui-controls/contextmenustrip) (ContextMenuStripEx) control can be added through designer by following the below steps.
 
-1. Drag and drop the ContextMenuStripEx control from the toolbox (under the section "Syncfusion Windows **Visual Studio Version** Toolbox **Essential Studio Version**") into the designer page.
+1. Drag and drop the ContextMenuStripEx control from the toolbox (under the section "Syncfusion<sup>®</sup> Windows **Visual Studio Version** Toolbox **Essential Studio<sup>®</sup> Version**") into the designer page.
 
    ![Adding a Context Menu](GettingStarted_Images/ContextMenuStripEx1.png)
 

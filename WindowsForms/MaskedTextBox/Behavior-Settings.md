@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Behavior Settings | WindowsForms | Syncfusion
-description: Learn here about the Syncfusion Windows Forms MaskedEditBox control behavior settings and its features.
-platform: WindowsForms
+title: Behavior Settings | WindowsForms | Syncfusion®
+description: Learn here about the Syncfusion® Windows Forms MaskedEditBox control behavior settings and its features.
+platform: windowsforms
 control: MaskedEditBox
 documentation: ug
 --- 

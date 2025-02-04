@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Individual Docked control's Properties | WindowsForms | Syncfusion
-description: Learn here about How to Get the Individual Docked control's Properties with Syncfusion Essential Studio Windows Forms DockingManager Control
-platform: WindowsForms
+title: Individual Docked control's Properties | WindowsForms | Syncfusion®
+description: Learn here about How to Get the Individual Docked control's Properties with Syncfusion® Essential Studio® Windows Forms DockingManager Control
+platform: windowsforms
 control: DockingManager
 documentation: ug
 ---

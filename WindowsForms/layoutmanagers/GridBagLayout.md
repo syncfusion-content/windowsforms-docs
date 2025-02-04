@@ -1,8 +1,8 @@
 ---
 layout: post
-title: GridBagLayout in Windows Forms Layout Managers | Syncfusion
+title: GridBagLayout in Windows Forms Layout Managers | Syncfusion®
 description: GridBagLayout allows user to arrange the child controls in row and columns like grid. Supports spanning of child controls to more than one cell.
-platform: WindowsForms
+platform: windowsforms
 control: Layout Managers Package
 documentation: ug
 ---

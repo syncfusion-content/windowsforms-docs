@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in Windows Forms Html Viewer control | Syncfusion
-description: Learn about Localization support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
+title: Localization in Windows Forms Html Viewer control | Syncfusion®
+description: Learn about Localization support in Syncfusion® Windows Forms Html Viewer (HTMLUI) control and more details.
 platform: windowsforms
 control: HTMLUIControl
 documentation: ug

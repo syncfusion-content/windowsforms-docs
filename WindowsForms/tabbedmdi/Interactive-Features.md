@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Interactive Features in Windows Forms TabbedMDI control | Syncfusion
-description: Learn about Interactive Features support in Syncfusion Windows Forms TabbedMDI control and more details.
-platform: WindowsForms
+title: Interactive Features in Windows Forms TabbedMDI control | Syncfusion®
+description: Learn about Interactive Features support in Syncfusion® Windows Forms TabbedMDI control and more details.
+platform: windowsforms
 control: TabbedMDIManager 
 documentation: ug
 ---

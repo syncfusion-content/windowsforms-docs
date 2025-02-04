@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to enable or disable AutoHide behavior | WindowsForms | Syncfusion
+title: How to enable or disable AutoHide behavior | WindowsForms | Syncfusion®
 description: How to enable or disable AutoHide behavior
 platform: WindowsForms
 control: DockingManager

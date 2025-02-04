@@ -1,8 +1,8 @@
 ---
 layout: post
-title: TextBoxSettingsForButtonEdit in Windows Forms ButtonEdit | Syncfusion
-description: Learn about TextBoxSettingsForButtonEdit support in Syncfusion Windows Forms ButtonEdit control and more details.
-platform: WindowsForms
+title: TextBoxSettingsForButtonEdit in Windows Forms ButtonEdit | Syncfusion®
+description: Learn about TextBoxSettingsForButtonEdit support in Syncfusion® Windows Forms ButtonEdit control and more details.
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

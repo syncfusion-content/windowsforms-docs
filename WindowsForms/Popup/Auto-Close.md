@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Auto Close  in Windows Forms Popup control | Syncfusion
-description: Learn about Auto Close  support in Syncfusion Windows Forms Popup (PopupControlContainer) control and more details.
-platform: WindowsForms
+title: Auto Close  in Windows Forms Popup control | Syncfusion®
+description: Learn about Auto Close  support in Syncfusion® Windows Forms Popup (PopupControlContainer) control and more details.
+platform: windowsforms
 control: PopupControlContainer
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Customize the calculator display text | WindowsForms | Syncfusion
+title: Customize the calculator display text | WindowsForms | Syncfusion®
 description: how to customize the calculator display text area to use numbergroupseparator
-platform: WindowsForms
+platform: windowsforms
 control: Calculator control
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: What are all the design time features available in DockingManager| WindowsForms | Syncfusion
+title: What are all the design time features available in DockingManager| WindowsForms | Syncfusion®
 description: What are all the design time features available in DockingManager
-platform: WindowsForms
+platform: windowsforms
 control: DockingManager
 documentation: ug
 ---

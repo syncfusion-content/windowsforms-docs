@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How To Enable User Interaction With the HTML Elements | Syncfusion
-description: how to enable user interaction with the html elements in Syncfusion Windows Forms HTML UI control and more details.
+title: How To Enable User Interaction With the HTML Elements | Syncfusion®
+description: how to enable user interaction with the html elements in Syncfusion® Windows Forms HTML UI control and more details.
 platform: WindowsForms
 control: HTML UI
 documentation: ug

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Location Settings in Windows Forms Folder Browser control | Syncfusion
-description: Learn about Location Settings support in Syncfusion Windows Forms Folder Browser control and more details.
-platform: WindowsForms
+title: Location Settings in Windows Forms Folder Browser control | Syncfusion®
+description: Learn about Location Settings support in Syncfusion® Windows Forms Folder Browser control and more details.
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: RunTime Features in Windows Forms Calculator control | Syncfusion
-description: Learn about RunTime Features support in Syncfusion Windows Forms Calculator control and more details.
-platform: WindowsForms
+title: RunTime Features in Windows Forms Calculator control | Syncfusion®
+description: Learn about RunTime Features support in Syncfusion® Windows Forms Calculator control and more details.
+platform: windowsforms
 control: Calculator
 documentation: ug
 ---
@@ -13,7 +13,7 @@ This section elaborated keyboard support for the control.
 
 ## Keyboard Support
 
-Essential Tools [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) does the functionality of a normal calculator, using the Mouse or Keyboard, at run time. The control provides Keyboard equivalents for the Calculator buttons. They are listed in the below table.
+Essential<sup>®</sup> Tools [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) does the functionality of a normal calculator, using the Mouse or Keyboard, at run time. The control provides Keyboard equivalents for the Calculator buttons. They are listed in the below table.
 
 
 <table>

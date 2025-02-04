@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Formatting in Windows Forms Numeric TextBox control | Syncfusion
-description: Learn about Formatting support in Syncfusion Windows Forms Numeric TextBox (SfNumericTextBox) control and more details.
-platform: WindowsForms
+title: Formatting in Windows Forms Numeric TextBox control | Syncfusion®
+description: Learn about Formatting support in Syncfusion® Windows Forms Numeric TextBox (SfNumericTextBox) control and more details.
+platform: windowsforms
 control: SfNumericTextBox
 documentation: ug
 ---

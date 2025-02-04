@@ -1,8 +1,8 @@
 ---
 layout: post
-title: XPTaskPane Appearance in Windows Forms xptaskpane control | Syncfusion
-description: Learn about XPTaskPane Appearance support in Syncfusion Windows Forms xptaskpane (XPTaskPane) control and more details.
-platform: WindowsForms
+title: XPTaskPane Appearance in Windows Forms xptaskpane control | Syncfusion®
+description: Learn about XPTaskPane Appearance support in Syncfusion® Windows Forms xptaskpane (XPTaskPane) control and more details.
+platform: windowsforms
 control: XPTaskPane
 documentation: ug
 ---

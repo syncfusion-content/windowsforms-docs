@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tabbed Style Dockable in WinForms TabbedMDI Manager|Syncfusion
-description: How to Enable the Tabbed Style Dockable Window using Syncfusion WinForms TabbedMDI Manager Control, its elements, and more.
+title: Tabbed Style Dockable in WinForms TabbedMDI Manager|Syncfusion®
+description: How to Enable the Tabbed Style Dockable Window using Syncfusion® WinForms TabbedMDI Manager Control, its elements, and more.
 platform: WindowsForms
 control: DockingManager
 documentation: ug

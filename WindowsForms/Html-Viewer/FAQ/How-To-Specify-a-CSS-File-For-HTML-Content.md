@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-To-Specify-a-CSS-File-For-HTML-Content | WindowsForms | Syncfusion
+title: How-To-Specify-a-CSS-File-For-HTML-Content | WindowsForms | Syncfusion®
 description: how to specify a css file for html content?
-platform: WindowsForms
+platform: windowsforms
 control: HTMLUIControl
 documentation: ug
 ---

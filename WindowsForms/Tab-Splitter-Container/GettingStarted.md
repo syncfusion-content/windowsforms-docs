@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started | WinForms Tab Splitter Container | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms Tab Splitter Container control, its elements and more details.
-platform: WindowsForms
+title: Getting Started | WinForms Tab Splitter Container | Syncfusion®
+description: Learn here about getting started with Syncfusion® Windows Forms Tab Splitter Container control, its elements and more details.
+platform: windowsforms
 control: TabSplitterContainer 
 documentation: ug
 ---

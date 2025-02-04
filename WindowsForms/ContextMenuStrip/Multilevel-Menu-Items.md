@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Multilevel Menu Items in Windows Forms ContextMenuStrip | Syncfusion
-description: Learn here all about multilevel menu items feature of Syncfusion Windows Forms ContextMenuStrip (ContextMenuStripEx) control and more.
-platform: WindowsForms
+title: Multilevel Menu Items in Windows Forms ContextMenuStrip | Syncfusion®
+description: Learn here all about multilevel menu items feature of Syncfusion® Windows Forms ContextMenuStrip (ContextMenuStripEx) control and more.
+platform: windowsforms
 control: ContextMenuStripEx
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: MultilineText in tab page tooltip| WindowsForms | Syncfusion
+title: MultilineText in tab page tooltip| WindowsForms | Syncfusion®
 description: how to create multilinetext in tabpages tooltiptext
-platform: WindowsForms
+platform: windowsforms
 control: TabsPackage
 documentation: ug
 ---

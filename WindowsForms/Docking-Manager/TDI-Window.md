@@ -1,8 +1,8 @@
 ---
 layout: post
-title: TDI Window in Windows Forms Docking Manager control | Syncfusion
-description: Learn about TDI Window support in Syncfusion Windows Forms Docking Manager control and more details.
-platform: WindowsForms
+title: TDI Window in Windows Forms Docking Manager control | Syncfusion®
+description: Learn about TDI Window support in Syncfusion® Windows Forms Docking Manager control and more details.
+platform: windowsforms
 control: DockingManager 
 documentation: ug
 ---

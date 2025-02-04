@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Styles Settings in Windows Forms TabbedMDI control | Syncfusion
-description: Learn about Styles Settings support in Syncfusion Windows Forms TabbedMDI control, its elements and more details.
-platform: WindowsForms
+title: Styles Settings in Windows Forms TabbedMDI control | Syncfusion®
+description: Learn about Styles Settings support in Syncfusion® Windows Forms TabbedMDI control, its elements and more details.
+platform: windowsforms
 control: TabbedMDIManager
 documentation: ug
 ---

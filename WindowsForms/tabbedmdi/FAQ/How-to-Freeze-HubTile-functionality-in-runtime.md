@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Freeze-HubTile-functionality-in-runtime | WindowsForms | Syncfusion
+title: How-to-Freeze-HubTile-functionality-in-runtime | WindowsForms | Syncfusion®
 description:  how to freeze hubtile functionality in runtime?
 platform: wpf
 control: TabbedMDIPackage

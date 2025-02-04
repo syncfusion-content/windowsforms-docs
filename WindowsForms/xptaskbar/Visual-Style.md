@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Visual Style in Windows Forms xptaskbar control | Syncfusion
-description: Learn about Visual Style support in Syncfusion Windows Forms xptaskbar (XPTaskBar) control and more details.
-platform: WindowsForms
+title: Visual Style in Windows Forms xptaskbar control | Syncfusion®
+description: Learn about Visual Style support in Syncfusion® Windows Forms xptaskbar (XPTaskBar) control and more details.
+platform: windowsforms
 control: XPTaskBar
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Touch and Keyboard in Windows Forms PopupMenu control | Syncfusion
-description: Learn about Touch and Keyboard support in Syncfusion Windows Forms PopupMenu control and more details.
-platform: WindowsForms
+title: Touch and Keyboard in Windows Forms PopupMenu control | Syncfusion®
+description: Learn about Touch and Keyboard support in Syncfusion® Windows Forms PopupMenu control and more details.
+platform: windowsforms
 control: PopupMenu
 documentation: ug
 ---
