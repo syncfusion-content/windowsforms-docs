@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Appearance Settings | WindowsForms | Syncfusion
-description: Learn here about how to set the different appearance of the Syncfusion Windows Forms MaskedEditBox control.
-platform: WindowsForms
+title: Appearance Settings | WindowsForms | Syncfusion®
+description: Learn here about how to set the different appearance of the Syncfusion® Windows Forms MaskedEditBox control.
+platform: windowsforms
 control: MaskedEditBox
 documentation: ug
 --- 

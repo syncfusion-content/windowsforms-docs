@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Interactive-Features | WindowsForms | Syncfusion
-description: Learn here all about Interactive Features support in Syncfusion Windows Forms CommandBar (CommandBars) control and more.
-platform: WindowsForms
+title: Interactive-Features | WindowsForms | Syncfusion®
+description: Learn here all about Interactive Features support in Syncfusion® Windows Forms CommandBar (CommandBars) control and more.
+platform: windowsforms
 control: CommandBars
 documentation: ug
 ---

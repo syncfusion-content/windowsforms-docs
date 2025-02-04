@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-To-Access-the-Inner-HTML-Text-Of-the-Current-H | WindowsForms | Syncfusion
+title: How-To-Access-the-Inner-HTML-Text-Of-the-Current-H | WindowsForms | Syncfusion®
 description: how to access the inner html text of the current html element in the htmlui control?
-platform: WindowsForms
+platform: windowsforms
 control: HTML UI
 documentation: ug
 ---
@@ -26,7 +26,7 @@ The following HTML document contains a div element. The code snippet shows how t
 
 <div id="div1">
 
-Have an issue you need to contact Syncfusion about? Use our state of the art incident management
+Have an issue you need to contact Syncfusion<sup>®</sup> about? Use our state of the art incident management
 
 system - Direct-Trac.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in Windows Forms Ribbon control | Syncfusion
-description: Learn about Appearance support in Syncfusion Windows Forms Ribbon (RibbonControlAdv) control and more details.
+title: Appearance in Windows Forms Ribbon control | Syncfusion®
+description: Learn about Appearance support in Syncfusion® Windows Forms Ribbon (RibbonControlAdv) control and more details.
 platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
@@ -56,7 +56,7 @@ Me.ribbonControlAdv1.RibbonStyle = RibbonStyle.Office2016
 
 ## Style through SkinManager
 
-Essential Tools for Windows Forms provides support to apply Office2007 Style for an application with its child controls. This feature enables you to easily apply uniform style for all the child controls in the application.
+Essential<sup>®</sup> Tools for Windows Forms provides support to apply Office2007 Style for an application with its child controls. This feature enables you to easily apply uniform style for all the child controls in the application.
 
 To apply Visual style through skin manager, follow the steps below
 

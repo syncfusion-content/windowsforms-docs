@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview of Command Bar | Windows Forms | Syncfusion
+title: Overview of Command Bar | Windows Forms | Syncfusion®
 description: The Windows Forms Command Bar is used to create and host the components such as toolbars, status bars, etc.,
-platform: WindowsForms
+platform: windowsforms
 control: CommandBar
 documentation: ug
 ---
@@ -27,4 +27,4 @@ documentation: ug
 
 * **Serialization** - Provides options to save and load the state of the CommandBar.
 
-N> The CommandBar Framework should be used directly in an application only when there is no requirement for XP style menus and toolbars. Refer to the Essential Tools Menus Package for implementing XP style menus and toolbars.
+N> The CommandBar Framework should be used directly in an application only when there is no requirement for XP style menus and toolbars. Refer to the Essential<sup>®</sup> Tools Menus Package for implementing XP style menus and toolbars.

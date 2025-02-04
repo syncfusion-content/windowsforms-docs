@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Layout Settings | WindowsForms | Syncfusion
-description: Learn here about how to set the minimum and maximum size of the Syncfusion Windows Forms  Layout Settings
-platform: WindowsForms
+title: Layout Settings | WindowsForms | Syncfusion®
+description: Learn here about how to set the minimum and maximum size of the Syncfusion® Windows Forms  Layout Settings
+platform: windowsforms
 control: MaskedEditBox
 documentation: ug
 --- 

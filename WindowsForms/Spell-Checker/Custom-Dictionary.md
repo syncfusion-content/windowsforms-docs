@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom Dictionary in Windows Forms Spell Checker control | Syncfusion
-description: Learn about Custom Dictionary support in Syncfusion Windows Forms Spell Checker (SpellCheckerAdv) control and more details.
+title: Custom Dictionary in Windows Forms Spell Checker control | Syncfusion®
+description: Learn about Custom Dictionary support in Syncfusion® Windows Forms Spell Checker (SpellCheckerAdv) control and more details.
 platform: WPF
 control: SpellCheckerAdv
 documentation: ug

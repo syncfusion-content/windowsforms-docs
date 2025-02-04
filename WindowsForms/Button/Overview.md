@@ -1,8 +1,8 @@
 ---
 layout: post
-title: About Windows Forms Button control | Syncfusion
-description: Learn here about introduction of Syncfusion Windows Forms Button (SfButton) control and more details.
-platform: WindowsForms
+title: About Windows Forms Button control | Syncfusion®
+description: Learn here about introduction of Syncfusion® Windows Forms Button (SfButton) control and more details.
+platform: windowsforms
 control: SfButton
 documentation: ug
 ---
@@ -29,7 +29,7 @@ Following are the key features of the SfButton:
 
 ## Choose between different button controls
 
-Syncfusion WinForms suite comes up with the following different buttons:
+Syncfusion<sup>®</sup> WinForms suite comes up with the following different buttons:
 
 * [SfButton](https://www.syncfusion.com/winforms-ui-controls/button)
 * [ButtonAdv](https://help.syncfusion.com/wpf/button/overview)

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: MaskedEditBox Events | WindowsForms | Syncfusion
-description: Learn here about how to applying the Syncfusion Windows Forms MaskedEditBox control events and usage of events.
-platform: WindowsForms
+title: MaskedEditBox Events | WindowsForms | Syncfusion®
+description: Learn here about how to applying the Syncfusion® Windows Forms MaskedEditBox control events and usage of events.
+platform: windowsforms
 control: MaskedEditBox
 documentation: ug
 ---

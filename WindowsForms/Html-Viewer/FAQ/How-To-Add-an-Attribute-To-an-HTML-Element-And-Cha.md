@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-To-Add-an-Attribute-To-an-HTML-Element-And-Cha | WindowsForms | Syncfusion
+title: How-To-Add-an-Attribute-To-an-HTML-Element-And-Cha | WindowsForms | Syncfusion®
 description: how to add an attribute to an html element and change its value at run-time?
 platform: WindowsForms
 control: HTML UI

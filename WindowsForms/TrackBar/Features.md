@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Features in Windows Forms TrackBar control | Syncfusion
-description: Learn about Features support in Syncfusion Windows Forms TrackBar (TrackBarEx) control and more details.
-platform: WindowsForms
+title: Features in Windows Forms TrackBar control | Syncfusion®
+description: Learn about Features support in Syncfusion® Windows Forms TrackBar (TrackBarEx) control and more details.
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---

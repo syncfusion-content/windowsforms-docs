@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ribbon Form in Windows Forms Ribbon control | Syncfusion
-description: Learn about Ribbon Form support in Syncfusion Windows Forms Ribbon (RibbonControlAdv) control and more details.
+title: Ribbon Form in Windows Forms Ribbon control | Syncfusion®
+description: Learn about Ribbon Form support in Syncfusion® Windows Forms Ribbon (RibbonControlAdv) control and more details.
 platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug

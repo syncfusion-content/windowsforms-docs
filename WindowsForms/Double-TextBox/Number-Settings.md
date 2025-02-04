@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Number Settings in Windows Forms Double TextBox control | Syncfusion
-description: Learn about Number Settings support in Syncfusion Windows Forms Double TextBox control and more details.
-platform: WindowsForms
+title: Number Settings in Windows Forms Double TextBox control | Syncfusion®
+description: Learn about Number Settings support in Syncfusion® Windows Forms Double TextBox control and more details.
+platform: windowsforms
 control: DoubleTextBox
 documentation: ug
 ---

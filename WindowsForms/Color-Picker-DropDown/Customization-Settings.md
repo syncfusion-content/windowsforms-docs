@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Customization Settings in WinForms ColorPickerDropDown | Syncfusion
-description: Learn about Customization Settings support in Syncfusion Windows Forms Color Picker DropDown (ColorPickerButton) control and more details.
-platform: WindowsForms
+title: Customization Settings in WinForms ColorPickerDropDown | Syncfusion®
+description: Learn about Customization Settings support in Syncfusion® Windows Forms Color Picker DropDown (ColorPickerButton) control and more details.
+platform: windowsforms
 control: ColorPickerButton 
 documentation: ug
 ---

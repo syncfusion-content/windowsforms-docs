@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Color Groups in Windows Forms ColorUI control | Syncfusion
-description: Learn about Color Groups support in Syncfusion Windows Forms ColorUI control, its elements and more details.
-platform: WindowsForms
+title: Color Groups in Windows Forms ColorUI control | Syncfusion®
+description: Learn about Color Groups support in Syncfusion® Windows Forms ColorUI control, its elements and more details.
+platform: windowsforms
 control: ColorUI
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to restore the original docking windows layout that was set within the Windows Forms designer | WindowsForms | Syncfusion
+title: How to restore the original docking windows layout that was set within the Windows Forms designer | WindowsForms | Syncfusion®
 description: How to restore the original docking windows layout that was set within the Windows Forms designer
-platform: WindowsForms
+platform: windowsforms
 control: DockingManager
 documentation: ug
 ---

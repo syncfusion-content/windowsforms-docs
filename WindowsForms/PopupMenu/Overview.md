@@ -1,8 +1,8 @@
 ---
 layout: post
-title: About Windows Forms PopupMenu control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms PopupMenu control, its elements and more details.
-platform: WindowsForms
+title: About Windows Forms PopupMenu control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® Windows Forms PopupMenu control, its elements and more details.
+platform: windowsforms
 control: PopupMenu
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with Windows Forms PopupMenu control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms PopupMenu control, its elements and more details.
-platform: WindowsForms
+title: Getting Started with Windows Forms PopupMenu control | Syncfusion®
+description: Learn here about getting started with Syncfusion® Windows Forms PopupMenu control, its elements and more details.
+platform: windowsforms
 control: PopupMenu
 documentation: ug
 ---
@@ -10,7 +10,7 @@ documentation: ug
 # Getting Started with Windows Forms PopupMenu
 
 >**Important**
-Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion license key in your Windows Forms application to use our components.
+Starting with v16.2.0.x, if you refer to Syncfusion<sup>®</sup> assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion<sup>®</sup> license key in your Windows Forms application to use our components.
 
 This section provides a quick overview for working with the **PopupMenu** control in a WinForms application.
 
@@ -30,7 +30,7 @@ The following assemblies needs to be added as reference to use the control in an
 
 The PopupMenu control can be added through designer by following the below steps.
 
-1. Drag and drop the PopupMenu control from the toolbox (under the section "Syncfusion Windows **Visual Studio Version** Toolbox **Essential Studio Version**") into the designer page.
+1. Drag and drop the PopupMenu control from the toolbox (under the section "Syncfusion<sup>®</sup> Windows **Visual Studio Version** Toolbox **Essential Studio<sup>®</sup> Version**") into the designer page.
 
    ![Adding the PopupMenu](GettingStarted_Images/PopupMenu.png)
 

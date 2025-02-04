@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-arrange-the-Tab-groups-equally | WindowsForms | Syncfusion
+title: How-to-arrange-the-Tab-groups-equally | WindowsForms | Syncfusion®
 description: how to arrange the tab groups equally using tabbedmdimanager
-platform: WindowsForms
+platform: windowsforms
 control: TabbedMDIManager
 documentation: ug
 ---

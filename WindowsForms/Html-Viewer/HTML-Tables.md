@@ -1,8 +1,8 @@
 ---
 layout: post
-title: HTML Tables in Windows Forms Html Viewer control | Syncfusion
-description: Learn about HTML Tables support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
-platform: WindowsForms
+title: HTML Tables in Windows Forms Html Viewer control | Syncfusion®
+description: Learn about HTML Tables support in Syncfusion® Windows Forms Html Viewer (HTMLUI) control and more details.
+platform: windowsforms
 control: HTML UI
 documentation: ug
 ---

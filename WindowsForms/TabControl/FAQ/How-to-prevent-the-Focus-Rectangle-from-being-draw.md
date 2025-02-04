@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Prevent the focus rectangle | WindowsForms | Syncfusion
+title: Prevent the focus rectangle | WindowsForms | Syncfusion®
 description: how to prevent the focus rectangle from being drawn in the tabs
-platform: WindowsForms
+platform: windowsforms
 control: TabsPackage
 documentation: ug
 ---

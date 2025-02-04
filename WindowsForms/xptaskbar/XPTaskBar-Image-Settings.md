@@ -1,8 +1,8 @@
 ---
 layout: post
-title: XPTaskBar Image Settings in Windows Forms xptaskbar | Syncfusion
-description: Learn about XPTaskBar Image Settings support in Syncfusion Windows Forms xptaskbar (XPTaskBar) control and more details.
-platform: WindowsForms
+title: XPTaskBar Image Settings in Windows Forms xptaskbar | Syncfusion®
+description: Learn about XPTaskBar Image Settings support in Syncfusion® Windows Forms xptaskbar (XPTaskBar) control and more details.
+platform: windowsforms
 control: XPTaskBar
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Quick Access Toolbar in Windows Forms Ribbon control | Syncfusion
-description: Learn about Quick Access Toolbar support in Syncfusion Windows Forms Ribbon (RibbonControlAdv) control and more details.
-platform: WindowsForms
+title: Quick Access Toolbar in Windows Forms Ribbon control | Syncfusion®
+description: Learn about Quick Access Toolbar support in Syncfusion® Windows Forms Ribbon (RibbonControlAdv) control and more details.
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---

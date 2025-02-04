@@ -1,8 +1,8 @@
 ---
 layout: post
-title: About Windows Forms Toggle Button control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms Toggle Button control, its elements and more details.
-platform: WindowsForms
+title: About Windows Forms Toggle Button control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® Windows Forms Toggle Button control, its elements and more details.
+platform: windowsforms
 control: ToggleButton 
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 Toggle Button control for Windows Forms allows you to toggle between two states (Active and Inactive) that are opposite to each other in terms of behavior.
 
-![Overview of Syncfusion Toggle Button](Overview_images/Overview_img1.jpeg)
+![Overview of Syncfusion® Toggle Button](Overview_images/Overview_img1.jpeg)
 
 
 ## Key features

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Set tooltip for ButtonEdit Child buttons | WindowsForms | Syncfusion
+title: Set tooltip for ButtonEdit Child buttons | WindowsForms | Syncfusion®
 description: This section gives detailed description on how to set tooltip for ButtonEditChildButton in ButtonEdit control.
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

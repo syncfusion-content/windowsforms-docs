@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Change-a-Characteristic-Of-an-HTML-Element | WindowsForms | Syncfusion
+title: Change-a-Characteristic-Of-an-HTML-Element | WindowsForms | Syncfusion®
 description: how to change a characteristic of an html element before it is displayed?
 platform: WindowsForms
 control: HTMLUIControl
@@ -33,7 +33,7 @@ The [PreRenderDocument](https://help.syncfusion.com/cr/windowsforms/Syncfusion.W
 
 <p>
 
-Essential Studio includes ten component libraries in one great package. Each of these products has a unique and useful feature set. Syncfusion aims to provide customers with the utmost satisfaction and value in using Syncfusion and Microsoft technologies through our technical consulting and training services.
+Essential Studio<sup>®</sup> includes ten component libraries in one great package. Each of these products has a unique and useful feature set. Syncfusion<sup>®</sup> aims to provide customers with the utmost satisfaction and value in using Syncfusion<sup>®</sup> and Microsoft technologies through our technical consulting and training services.
 
 </p>
 

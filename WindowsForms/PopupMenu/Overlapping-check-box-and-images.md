@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overlapping check box and images in WinForms PopupMenu | Syncfusion
-description: Learn about Overlapping check box and images support in Syncfusion Windows Forms PopupMenu control and more details.
-platform: WindowsForms
+title: Overlapping check box and images in WinForms PopupMenu | Syncfusion®
+description: Learn about Overlapping check box and images support in Syncfusion® Windows Forms PopupMenu control and more details.
+platform: windowsforms
 control: PopupMenu
 documentation: ug
 ---

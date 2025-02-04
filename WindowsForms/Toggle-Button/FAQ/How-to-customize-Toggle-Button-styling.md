@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to customize Toggle Button styling | WindowsForms | Syncfusion
-description: how to customize styling in Syncfusion Windows Forms Toggle Button control, its elements and more details.
-platform: WindowsForms
+title: How to customize Toggle Button styling | WindowsForms | Syncfusion®
+description: how to customize styling in Syncfusion® Windows Forms Toggle Button control, its elements and more details.
+platform: windowsforms
 control: Toggle Button
 documentation: ug
 ---

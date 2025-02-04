@@ -1,8 +1,8 @@
 ---
 layout: post
-title: HTML Forms in Windows Forms Html Viewer control | Syncfusion
-description: Learn about HTML Forms support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
-platform: WindowsForms
+title: HTML Forms in Windows Forms Html Viewer control | Syncfusion®
+description: Learn about HTML Forms support in Syncfusion® Windows Forms Html Viewer (HTMLUI) control and more details.
+platform: windowsforms
 control: HTML UI
 documentation: ug
 ---

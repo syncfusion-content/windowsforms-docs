@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Checked State in Windows Forms ContextMenuStrip Control | Syncfusion
-description: Learn here all about checked state feature of Syncfusion Windows Forms ContextMenuStrip (ContextMenuStripEx) control and more.
-platform: WindowsForms
+title: Checked State in Windows Forms ContextMenuStrip Control | Syncfusion®
+description: Learn here all about checked state feature of Syncfusion® Windows Forms ContextMenuStrip (ContextMenuStripEx) control and more.
+platform: windowsforms
 control: ContextMenuStripEx
 documentation: ug
 ---

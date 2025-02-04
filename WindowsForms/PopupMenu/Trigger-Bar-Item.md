@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Trigger Bar Item in Windows Forms PopupMenu control | Syncfusion
-description: Learn about Trigger Bar Item support in Syncfusion Windows Forms PopupMenu control and more details.
-platform: WindowsForms
+title: Trigger Bar Item in Windows Forms PopupMenu control | Syncfusion®
+description: Learn about Trigger Bar Item support in Syncfusion® Windows Forms PopupMenu control and more details.
+platform: windowsforms
 control: PopupMenu
 documentation: ug
 ---

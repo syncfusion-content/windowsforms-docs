@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Linked & Nested DockingManager in WinForms Docking Manager| Syncfusion
-description: Learn about Linked and Nested DockingManager support in Syncfusion Windows Forms Docking Manager control and more details.
-platform: WindowsForms
+title: Linked & Nested DockingManager in WinForms Docking Manager| Syncfusion®
+description: Learn about Linked and Nested DockingManager support in Syncfusion® Windows Forms Docking Manager control and more details.
+platform: windowsforms
 control: DockingManager
 documentation: ug
 ---

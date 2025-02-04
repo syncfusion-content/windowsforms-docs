@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Touch Support in Windows Forms Ribbon control | Syncfusion
-description: Learn about Touch Support in Syncfusion Windows Forms Ribbon (RibbonControlAdv) control and more details.
-platform: WindowsForms
+title: Touch Support in Windows Forms Ribbon control | Syncfusion®
+description: Learn about Touch Support in Syncfusion® Windows Forms Ribbon (RibbonControlAdv) control and more details.
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---

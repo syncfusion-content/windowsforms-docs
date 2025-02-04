@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Style Sheets CSS in Windows Forms Html Viewer control | Syncfusion
-description: Learn about Style Sheets CSS support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
-platform: WindowsForms
+title: Style Sheets CSS in Windows Forms Html Viewer control | Syncfusion®
+description: Learn about Style Sheets CSS support in Syncfusion® Windows Forms Html Viewer (HTMLUI) control and more details.
+platform: windowsforms
 control: HTML UI
 documentation: ug
 ---

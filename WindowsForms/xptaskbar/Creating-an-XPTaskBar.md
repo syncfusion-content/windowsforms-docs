@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started in Windows Forms xptaskbar control | Syncfusion
-description: Learn about Getting Started support in Syncfusion Windows Forms xptaskbar (XPTaskBar) control and more details.
-platform: WindowsForms
+title: Getting Started in Windows Forms xptaskbar control | Syncfusion®
+description: Learn about Getting Started support in Syncfusion® Windows Forms xptaskbar (XPTaskBar) control and more details.
+platform: windowsforms
 control: XPTaskBar
 documentation: ug
 ---

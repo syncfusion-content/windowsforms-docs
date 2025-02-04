@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Localization | Windows Forms | Syncfusion
-description: Learn here all about localization feature in Syncfusion Windows Forms ContextMenuStrip (ContextMenuStripEx) control and more.
-platform: WindowsForms
+title: Localization | Windows Forms | Syncfusion®
+description: Learn here all about localization feature in Syncfusion® Windows Forms ContextMenuStrip (ContextMenuStripEx) control and more.
+platform: windowsforms
 control: ContextMenuStripEx
 documentation: ug
 ---

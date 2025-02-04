@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Application Menu in Windows Forms Ribbon control | Syncfusion
-description: Learn about Application Menu support in Syncfusion Windows Forms Ribbon (RibbonControlAdv) control and more details.
-platform: WindowsForms
+title: Application Menu in Windows Forms Ribbon control | Syncfusion®
+description: Learn about Application Menu support in Syncfusion® Windows Forms Ribbon (RibbonControlAdv) control and more details.
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---

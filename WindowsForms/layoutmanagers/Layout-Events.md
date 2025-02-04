@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Layout Events in Windows Forms LayoutManagers control | Syncfusion
-description: Learn about Layout Events support in Syncfusion Windows Forms LayoutManagers control and more details.
+title: Layout Events in Windows Forms LayoutManagers control | Syncfusion®
+description: Learn about Layout Events support in Syncfusion® Windows Forms LayoutManagers control and more details.
 platform: windowsforms
 control: Layout Managers Package
 documentation: ug

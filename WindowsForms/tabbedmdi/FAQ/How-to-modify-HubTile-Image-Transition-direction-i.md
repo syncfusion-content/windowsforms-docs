@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-modify-HubTile-Image-Transition-direction-i | WindowsForms | Syncfusion
+title: How-to-modify-HubTile-Image-Transition-direction-i | WindowsForms | Syncfusion®
 description:  how to modify hubtile image transition direction in runtime?
 platform: wpf
 control: TabbedMDIPackage
