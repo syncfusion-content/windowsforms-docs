@@ -12,7 +12,7 @@ With the 2025 Volume 1 release, we will discontinue support for .NET 6.0 and 7.0
 
 # Welcome to Syncfusion<sup>®</sup> Essential<sup>®</sup> Windows Forms
 
-Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> for Windows Forms is a comprehensive collection of over 100+ essential Windows Forms controls like Grids, Charts, Diagram, Scheduler and Tools for building powerful line-of-business applications faster. Syncfusion<sup>®</sup> Windows Forms controls provides unparalleled performance, stunning built-in themes, touch-friendly UI, localization and seamless integration with Visual Studio.
+Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> for Windows Forms is a comprehensive collection of over 100+ Essential<sup>®</sup> Windows Forms controls like Grids, Charts, Diagram, Scheduler and Tools for building powerful line-of-business applications faster. Syncfusion<sup>®</sup> Windows Forms controls provides unparalleled performance, stunning built-in themes, touch-friendly UI, localization and seamless integration with Visual Studio.
 
 ## How to best read this user guide
 
