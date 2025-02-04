@@ -1,8 +1,8 @@
 ---
 layout: post
-title: TabStrip without tab page | WindowsForms | Syncfusion
+title: TabStrip without tab page | WindowsForms | Syncfusion®
 description: how to display tabstrip when there are no tabpages
-platform: WindowsForms
+platform: windowsforms
 control: TabsPackage
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Print-the-Contents-Of-the-HTMLUIControl | WindowsForms | Syncfusion
+title: Print-the-Contents-Of-the-HTMLUIControl | WindowsForms | Syncfusion®
 description: how to print the contents of the htmlui control?
-platform: WindowsForms
+platform: windowsforms
 control: HTMLUIControl
 documentation: ug
 ---

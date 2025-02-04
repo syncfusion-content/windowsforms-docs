@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-To-Load-Custom-Controls-As-Part-Of-the-HTML-La | WindowsForms | Syncfusion
+title: How-To-Load-Custom-Controls-As-Part-Of-the-HTML-La | WindowsForms | Syncfusion®
 description: how to load custom controls as part of the html layout?
 platform: WindowsForms
 control: HTML UI

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: VisualStyle in Windows Forms Spell Checker control | Syncfusion
-description: Learn about VisualStyle support in Syncfusion Windows Forms Spell Checker (SpellCheckerAdv) control and more details.
-platform: WindowsForms
+title: VisualStyle in Windows Forms Spell Checker control | Syncfusion®
+description: Learn about VisualStyle support in Syncfusion® Windows Forms Spell Checker (SpellCheckerAdv) control and more details.
+platform: windowsforms
 control: SpellCheckerAdv
 documentation: ug
 ---

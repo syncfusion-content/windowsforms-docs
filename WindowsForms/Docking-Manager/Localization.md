@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in Windows Forms Docking Manager control | Syncfusion
-description: Learn about Localization support in Syncfusion Windows Forms Docking Manager control and more details.
+title: Localization in Windows Forms Docking Manager control | Syncfusion®
+description: Learn about Localization support in Syncfusion® Windows Forms Docking Manager control and more details.
 platform: windowsforms
 control: DockingManager
 documentation: ug

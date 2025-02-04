@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Partial Menus in Windows Forms PopupMenu control | Syncfusion
-description: Learn about Partial Menus support in Syncfusion Windows Forms PopupMenu control, its elements and more details.
-platform: WindowsForms
+title: Partial Menus in Windows Forms PopupMenu control | Syncfusion®
+description: Learn about Partial Menus support in Syncfusion® Windows Forms PopupMenu control, its elements and more details.
+platform: windowsforms
 control: PopupMenu
 documentation: ug
 ---

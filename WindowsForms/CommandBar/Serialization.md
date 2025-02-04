@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Serialization | WindowsForms | Syncfusion
-description: Learn here all about Serialization support in Syncfusion Windows Forms CommandBar (CommandBars) control and more. 
-platform: WindowsForms
+title: Serialization | WindowsForms | Syncfusion®
+description: Learn here all about Serialization support in Syncfusion® Windows Forms CommandBar (CommandBars) control and more. 
+platform: windowsforms
 control: CommandBars
 documentation: ug
 ---

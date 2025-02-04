@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Enabling Autocomplete in Textboxarea in Editable ListBox | Syncfusion
-description: Learn about Enabling Autocomplete in Textboxarea support in Syncfusion Windows Forms Editable ListBox (EditableList) control and more details.
-platform: WindowsForms
+title: Enabling Autocomplete in Textboxarea in Editable ListBox | Syncfusion®
+description: Learn about Enabling Autocomplete in Textboxarea support in Syncfusion® Windows Forms Editable ListBox (EditableList) control and more details.
+platform: windowsforms
 control: EditorsPackage
 documentation: ug
 ---

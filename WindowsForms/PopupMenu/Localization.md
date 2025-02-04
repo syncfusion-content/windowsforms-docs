@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in Windows Forms PopupMenu control | Syncfusion
-description: Learn about Localization support in Syncfusion Windows Forms PopupMenu control, its elements and more details.
+title: Localization in Windows Forms PopupMenu control | Syncfusion®
+description: Learn about Localization support in Syncfusion® Windows Forms PopupMenu control, its elements and more details.
 platform: windowsforms
 control: PopupMenu
 documentation: ug

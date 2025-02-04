@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-create-custom-tab-renderer-class | WindowsForms | Syncfusion
+title: How-to-create-custom-tab-renderer-class | WindowsForms | Syncfusion®
 description: how to create custom tab renderer class
-platform: WindowsForms
+platform: windowsforms
 control: TabsPackage
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overriding the Behavior in WinForms Double TextBox | Syncfusion
-description: Learn about Overriding the Behavior of certain Keystrokes in a Doubletextbox support in Syncfusion Windows Forms Double TextBox control and more details.
-platform: WindowsForms
+title: Overriding the Behavior in WinForms Double TextBox | Syncfusion®
+description: Learn about Overriding the Behavior of certain Keystrokes in a Doubletextbox support in Syncfusion® Windows Forms Double TextBox control and more details.
+platform: windowsforms
 control: DoubleTextBox
 documentation: ug
 ---

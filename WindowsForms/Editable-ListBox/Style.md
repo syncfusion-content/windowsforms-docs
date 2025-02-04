@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Style in Windows Forms Editable ListBox control | Syncfusion
-description: Learn about Style support in Syncfusion Windows Forms Editable ListBox (EditableList) control and more details.
-platform: WindowsForms
+title: Style in Windows Forms Editable ListBox control | Syncfusion®
+description: Learn about Style support in Syncfusion® Windows Forms Editable ListBox (EditableList) control and more details.
+platform: windowsforms
 control: EditorsPackage
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to get the docking group details | WindowsForms | Syncfusion
-description: Learn here about How to get the docking group details with Syncfusion Essential Studio Windows Forms DockingManager Control
-platform: WindowsForms
+title: How to get the docking group details | WindowsForms | Syncfusion®
+description: Learn here about How to get the docking group details with Syncfusion® Essential Studio® Windows Forms DockingManager Control
+platform: windowsforms
 control: DockingManager
 documentation: ug
 ---

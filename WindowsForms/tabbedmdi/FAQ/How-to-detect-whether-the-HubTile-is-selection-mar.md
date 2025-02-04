@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-detect-whether-the-HubTile-is-selection-mar | WindowsForms | Syncfusion
+title: How-to-detect-whether-the-HubTile-is-selection-mar | WindowsForms | Syncfusion®
 description:  how to detect whether the hubtile is selection marked or not?
 platform: wpf
 control: TabbedMDIPackage

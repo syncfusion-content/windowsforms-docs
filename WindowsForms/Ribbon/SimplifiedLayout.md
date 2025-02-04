@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Simplified Layout in Windows Forms Ribbon control | Syncfusion
-description: Learn about Simplified Layout support in Syncfusion Windows Forms Ribbon (RibbonControlAdv) control and more details.
-platform: WindowsForms
+title: Simplified Layout in Windows Forms Ribbon control | Syncfusion®
+description: Learn about Simplified Layout support in Syncfusion® Windows Forms Ribbon (RibbonControlAdv) control and more details.
+platform: windowsforms
 control: RibbonControlAdv
 documentation: ug
 ---

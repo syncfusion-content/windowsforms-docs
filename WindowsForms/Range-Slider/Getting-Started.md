@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Range Slider | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms Range Slider control, its elements and more details.
-platform: WindowsForms
+title: Getting Started with Windows Forms Range Slider | Syncfusion®
+description: Learn here about getting started with Syncfusion® Windows Forms Range Slider control, its elements and more details.
+platform: windowsforms
 control: RangeSlider 
 documentation: ug
 ---

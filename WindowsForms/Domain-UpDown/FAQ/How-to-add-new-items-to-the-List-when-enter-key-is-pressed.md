@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Add new items to the list | WindowsForms | Syncfusion
+title: Add new items to the list | WindowsForms | Syncfusion®
 description: how to add new items to the list when enter key is pressed
-platform: WindowsForms
+platform: windowsforms
 control: DomainUpdownExt 
 documentation: ug
 ---

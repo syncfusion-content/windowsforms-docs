@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-customize-the-close-button | WindowsForms | Syncfusion
+title: How-to-customize-the-close-button | WindowsForms | Syncfusion®
 description: how to customize the close button in tabbedgroupmdimanager
-platform: WindowsForms
+platform: windowsforms
 control: TabbedMDIManager
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to associate popup menu with Bar manager |Windows Forms|Syncfusion
-description: Learn here all about how to associate popup menu with Bar manager of Syncfusion Windows Forms PopupMenu control and more.
-platform: WindowsForms
+title: How to associate popup menu with Bar manager |Windows Forms|Syncfusion®
+description: Learn here all about how to associate popup menu with Bar manager of Syncfusion® Windows Forms PopupMenu control and more.
+platform: windowsforms
 control: PopupMenu
 documentation: ug
 ---

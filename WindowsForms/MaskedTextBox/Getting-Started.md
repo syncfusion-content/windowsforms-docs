@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with Windows Forms MaskedTextBox | Syncfusion
-description: Learn here about how to add the Syncfusion Windows Forms MaskedEditBox control via designer and code and its features.
-platform: WindowsForms
+title: Getting Started with Windows Forms MaskedTextBox | Syncfusion®
+description: Learn here about how to add the Syncfusion® Windows Forms MaskedEditBox control via designer and code and its features.
+platform: windowsforms
 control: MaskedEditBox
 documentation: ug
 ---

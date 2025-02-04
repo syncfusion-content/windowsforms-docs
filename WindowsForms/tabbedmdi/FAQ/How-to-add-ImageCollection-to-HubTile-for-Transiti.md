@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-add-ImageCollection-to-HubTile-for-Transiti | WindowsForms | Syncfusion
+title: How-to-add-ImageCollection-to-HubTile-for-Transiti | WindowsForms | Syncfusion®
 description: how to add imagecollection to hubtile for transition effects?
 platform: wpf
 control: TabbedMDIPackage

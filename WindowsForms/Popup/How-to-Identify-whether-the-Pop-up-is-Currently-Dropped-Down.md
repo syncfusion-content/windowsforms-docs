@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Identify whether the Pop-up is Currently Dropped Down | Syncfusion
-description: Learn here all about how to Identify whether the Pop-up is Currently Dropped Down of Syncfusion Windows Forms PopupControlContainer control and more. 
-platform: WindowsForms
+title: Identify whether the Pop-up is Currently Dropped Down | Syncfusion®
+description: Learn here all about how to Identify whether the Pop-up is Currently Dropped Down of Syncfusion® Windows Forms PopupControlContainer control and more. 
+platform: windowsforms
 control: PopupControlContainer
 documentation: ug
 ---

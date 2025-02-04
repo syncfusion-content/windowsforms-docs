@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Auto Close in Windows Forms ContextMenuStrip Control | Syncfusion
-description: Learn here all about Auto Close feature of Syncfusion Windows Forms ContextMenuStrip (ContextMenuStripEx) control and more.
-platform: WindowsForms
+title: Auto Close in Windows Forms ContextMenuStrip Control | Syncfusion®
+description: Learn here all about Auto Close feature of Syncfusion® Windows Forms ContextMenuStrip (ContextMenuStripEx) control and more.
+platform: windowsforms
 control: ContextMenuStripEx
 documentation: ug
 ---

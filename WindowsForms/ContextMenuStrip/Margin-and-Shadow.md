@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Margin and Shadow in WinForms ContextMenuStrip Control | Syncfusion
-description: Learn here all about margins and shadow feature in Syncfusion Windows Forms ContextMenuStrip (ContextMenuStripEx) control and more.
-platform: WindowsForms
+title: Margin and Shadow in WinForms ContextMenuStrip Control | Syncfusion®
+description: Learn here all about margins and shadow feature in Syncfusion® Windows Forms ContextMenuStrip (ContextMenuStripEx) control and more.
+platform: windowsforms
 control: ContextMenuStripEx
 documentation: ug
 ---

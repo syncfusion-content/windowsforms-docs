@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Button Settings in Windows Forms TabbedMDI control | Syncfusion
-description: Learn about Button Settings support in Syncfusion Windows Forms TabbedMDI control, its elements and more details.
-platform: WindowsForms
+title: Button Settings in Windows Forms TabbedMDI control | Syncfusion®
+description: Learn about Button Settings support in Syncfusion® Windows Forms TabbedMDI control, its elements and more details.
+platform: windowsforms
 control: TabbedMDIManager 
 documentation: ug
 ---
@@ -196,7 +196,7 @@ Me.tabbedMDIManager.CloseOnMiddleButtonClick = True
 
 ## Support to show or hide close button for individual tabs
 
-Essential Tools for Windows Forms now provides support to show or hide close button of the individual tabs in TabbedMDI Manager.
+Essential<sup>®</sup> Tools for Windows Forms now provides support to show or hide close button of the individual tabs in TabbedMDI Manager.
 
 #### Use case scenarios
 
@@ -229,7 +229,7 @@ NA </td></tr>
 
 To view a sample:
 
-1. Open Syncfusion Dashboard.
+1. Open Syncfusion<sup>®</sup> Dashboard.
 2. Click Windows Forms.
 3. Click Run Samples. 
 4. Navigate to  Tools Sample > Tabbed MDI Package > Tabbed MDI.

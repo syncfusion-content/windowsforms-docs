@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Display Image in Menu Items | Windows Forms | Syncfusion
-description: Learn here all about Display image in menu items feature in Syncfusion Windows Forms ContextMenuStrip (ContextMenuStripEx) control and more.
-platform: WindowsForms
+title: Display Image in Menu Items | Windows Forms | Syncfusion®
+description: Learn here all about Display image in menu items feature in Syncfusion® Windows Forms ContextMenuStrip (ContextMenuStripEx) control and more.
+platform: windowsforms
 control: ContextMenuStripEx
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Applying Themes in Windows-Forms MaskedTextBox Control | Syncfusion
-description: Learn here all about Applying Themes feature of Syncfusion Windows Forms MaskedTextBox (MaskedEditBox) control and more.
-platform: WindowsForms
+title: Applying Themes in Windows-Forms MaskedTextBox Control | Syncfusion®
+description: Learn here all about Applying Themes feature of Syncfusion® Windows Forms MaskedTextBox (MaskedEditBox) control and more.
+platform: windowsforms
 control: MaskedEditBox
 documentation: ug
 --- 

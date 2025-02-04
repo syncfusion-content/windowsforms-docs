@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Customization Support in Windows Forms Ribbon control | Syncfusion
-description: Learn about Customization Support in Syncfusion Windows Forms Ribbon (RibbonControlAdv) control and more details.
-platform: WindowsForms
+title: Customization Support in Windows Forms Ribbon control | Syncfusion®
+description: Learn about Customization Support in Syncfusion® Windows Forms Ribbon (RibbonControlAdv) control and more details.
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---

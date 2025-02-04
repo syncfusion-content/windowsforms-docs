@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Floating Window in Windows Forms Docking Manager control | Syncfusion
-description: Learn about Floating Window support in Syncfusion Windows Forms Docking Manager control and more details.
-platform: WindowsForms
+title: Floating Window in Windows Forms Docking Manager control | Syncfusion®
+description: Learn about Floating Window support in Syncfusion® Windows Forms Docking Manager control and more details.
+platform: windowsforms
 control: DockingManager
 documentation: ug
 ---

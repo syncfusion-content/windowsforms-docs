@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Key Settings in Windows Forms Integer TextBox control | Syncfusion
-description: Learn about Key Settings support in Syncfusion Windows Forms Integer TextBox (Integertextbox) control and more details.
-platform: WindowsForms
+title: Key Settings in Windows Forms Integer TextBox control | Syncfusion®
+description: Learn about Key Settings support in Syncfusion® Windows Forms Integer TextBox (Integertextbox) control and more details.
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

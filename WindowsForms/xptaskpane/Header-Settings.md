@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Header Settings in Windows Forms xptaskpane control | Syncfusion
-description: Learn about Header Settings support in Syncfusion Windows Forms xptaskpane (XPTaskPane) control and more details.
-platform: WindowsForms
+title: Header Settings in Windows Forms xptaskpane control | Syncfusion®
+description: Learn about Header Settings support in Syncfusion® Windows Forms xptaskpane (XPTaskPane) control and more details.
+platform: windowsforms
 control: XPTaskPane
 documentation: ug
 ---

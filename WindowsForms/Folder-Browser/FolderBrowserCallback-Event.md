@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Folderbrowser Callback Event in WinForms Folder Browser | Syncfusion
-description: Learn about Folderbrowser Callback Event support in Syncfusion Windows Forms Folder Browser control and more details.
-platform: WindowsForms
+title: Folderbrowser Callback Event in WinForms Folder Browser | Syncfusion®
+description: Learn about Folderbrowser Callback Event support in Syncfusion® Windows Forms Folder Browser control and more details.
+platform: windowsforms
 control: Tools
 documentation: ug
 ---
