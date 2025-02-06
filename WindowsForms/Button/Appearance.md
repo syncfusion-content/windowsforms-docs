@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in Windows Forms Button control | Syncfusion
-description: Learn about Appearance support in Syncfusion Windows Forms Button (SfButton) control and more details.
+title: Appearance in Windows Forms Button control | Syncfusion®
+description: Learn about Appearance support in Syncfusion® Windows Forms Button (SfButton) control and more details.
 platform: windowsforms
 control: SfButton
 documentation: ug

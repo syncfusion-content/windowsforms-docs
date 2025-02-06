@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Change the order of the XPTaskBar Boxes in WindowsForms | Syncfusion
-description: How to change the order of the XPTaskBar Boxes in the designer of Syncfusion Essential Studio WindowsForms, its elements, and more.
-platform: WindowsForms
+title: Change the order of the XPTaskBar Boxes in WindowsForms | Syncfusion®
+description: How to change the order of the XPTaskBar Boxes in the designer of Syncfusion® Essential Studio WindowsForms, its elements, and more.
+platform: windowsforms
 control: XPTaskBar
 documentation: ug
 ---

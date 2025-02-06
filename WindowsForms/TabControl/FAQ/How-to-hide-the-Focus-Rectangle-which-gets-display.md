@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Hide the focus rectangle | WindowsForms | Syncfusion
+title: Hide the focus rectangle | WindowsForms | Syncfusion®
 description: how to hide the focus rectangle which gets displayed on the selected tab
-platform: WindowsForms
+platform: windowsforms
 control: TabsPackage
 documentation: ug
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Theming | WindowsForms | Syncfusion
-description: Learn here all about themes and visual styles feature of Syncfusion Windows Forms CommandBars control and more.
+title: Theming | WindowsForms | Syncfusion®
+description: Learn here all about themes and visual styles feature of Syncfusion® Windows Forms CommandBars control and more.
 platform: WindowsForms
 control: CommandBars
 documentation: ug

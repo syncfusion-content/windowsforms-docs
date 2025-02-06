@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Grouping Bar Items in Windows Forms PopupMenu control | Syncfusion
-description: Learn about Grouping Bar Items support in Syncfusion Windows Forms PopupMenu control and more details.
-platform: WindowsForms
+title: Grouping Bar Items in Windows Forms PopupMenu control | Syncfusion®
+description: Learn about Grouping Bar Items support in Syncfusion® Windows Forms PopupMenu control and more details.
+platform: windowsforms
 control: PopupMenu
 documentation: ug
 ---

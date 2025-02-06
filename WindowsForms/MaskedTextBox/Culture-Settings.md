@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Culture Settings in Windows-Forms MaskedTextBox Control | Syncfusion
-description: Learn here all about culture settings feature of Syncfusion Windows Forms MaskedTextBox (MaskedEditBox) control and more.
-platform: WindowsForms
+title: Culture Settings in Windows-Forms MaskedTextBox Control | Syncfusion®
+description: Learn here all about culture settings feature of Syncfusion® Windows Forms MaskedTextBox (MaskedEditBox) control and more.
+platform: windowsforms
 control: MaskedEditBox
 documentation: ug
 ---

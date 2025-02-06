@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Docking Client Panel in WinForms Docking Manager | Syncfusion
-description: Learn about Docking Client Panel support in Syncfusion Windows Forms Docking Manager control and more details.
-platform: WindowsForms
+title: Docking Client Panel in WinForms Docking Manager | Syncfusion®
+description: Learn about Docking Client Panel support in Syncfusion® Windows Forms Docking Manager control and more details.
+platform: windowsforms
 control: DockingManager 
 documentation: ug
 ---
@@ -15,7 +15,7 @@ Child controls located within the MDIClient window are always assured of a stati
 
 Non-MDI forms do not have any such client window and all non-dockable statically positioned controls risk being clipped by windows that are docked in their proximity.
 
-The Essential Tools of docking client panel control help to overcome this limitation by providing an auto-resized client surface on which a form's non-dockable controls can be located.
+The Essential<sup>®</sup> Tools of docking client panel control help to overcome this limitation by providing an auto-resized client surface on which a form's non-dockable controls can be located.
 
 N> The docking client panel control is intended only for use with forms that do not have the MDIContainer style set.
 
@@ -26,7 +26,7 @@ The following are the steps involved in setting up a docking layout on a non-MDI
 1. Add the docking manager to the form and apply the `EnableDocking` for those controls that need to be set as docking windows.
 2. Select the docking client panel control from the designer tool box and drop it to the form hosting the docking manager. Size the control, so that its bounds can accommodate any non-dockable child controls that may already be present on the form.
 3. If any non-dockable controls are present in the form, then drag-and-drop the controls to the docking client panel instance.
-4. Set the DockingClientPanel.SizeToFit property to `true`. Turning on the SizeToFit property forces the DockingClientPanel to start interacting with the Essential Tools docking architecture. The control will automatically be resized/repositioned to occupy the form's client bounds or left unoccupied by the docking windows.
+4. Set the DockingClientPanel.SizeToFit property to `true`. Turning on the SizeToFit property forces the DockingClientPanel to start interacting with the Essential<sup>®</sup> Tools docking architecture. The control will automatically be resized/repositioned to occupy the form's client bounds or left unoccupied by the docking windows.
 5. Set the `BorderStyle` property to get the 3D or fixed single effect to the docking client panel control.
 6. Now, the docking client panel will function as a proxy for the form's client surface and all controls originally intended to be placed on the form should henceforth be located on the DockingClientPanel. Any anchoring/layout features for child controls should be set relative to the docking client panel.
 7. To add controls directly to the form, the `SizeToFit` property can temporarily be turned off within the designer and the form resized to expose its surface. At run-time, the `SizeToFit` property is always enabled.

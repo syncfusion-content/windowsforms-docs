@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ToolTip Support in Windows Forms Ribbon control | Syncfusion
-description: Learn about ToolTip Support in Syncfusion Windows Forms Ribbon (RibbonControlAdv) control and more details.
-platform: WindowsForms
+title: ToolTip Support in Windows Forms Ribbon control | Syncfusion®
+description: Learn about ToolTip Support in Syncfusion® Windows Forms Ribbon (RibbonControlAdv) control and more details.
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
@@ -35,7 +35,7 @@ Me.pasteButton.ToolTipText = "Add content on your clipboard to your document"
 
 ## SuperToolTip
 
-Essential Tools has come up with a new control known as the SuperToolTip which, enables the user to give tooltip information.
+Essential<sup>®</sup> Tools has come up with a new control known as the SuperToolTip which, enables the user to give tooltip information.
 
 *	Header - The Header is used to display text which is used as a header for the tooltip.
 *	Body - This is the description part.

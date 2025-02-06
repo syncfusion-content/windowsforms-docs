@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Unsupported Formats in Windows Forms Html Viewer control | Syncfusion
-description: Learn about Unsupported Formats support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
-platform: WindowsForms
+title: Unsupported Formats in Windows Forms Html Viewer control | Syncfusion®
+description: Learn about Unsupported Formats support in Syncfusion® Windows Forms Html Viewer (HTMLUI) control and more details.
+platform: windowsforms
 control: HTML UI
 documentation: ug
 ---

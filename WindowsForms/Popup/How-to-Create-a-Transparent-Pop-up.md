@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Create a Transparent Pop-up | Windows Forms | Syncfusion
-description: Learn here all about how to Create a Transparent Pop-up of Syncfusion Windows Forms PopupControlContainer and more.
-platform: WindowsForms
+title: Create a Transparent Pop-up | Windows Forms | Syncfusion®
+description: Learn here all about how to Create a Transparent Pop-up of Syncfusion® Windows Forms PopupControlContainer and more.
+platform: windowsforms
 control: PopupControlContainer
 documentation: ug
 ---

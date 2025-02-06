@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Scroll Experience in Windows Forms Popup control | Syncfusion
-description: Learn about Scroll Experience support in Syncfusion Windows Forms Popup (PopupControlContainer) control and more details.
-platform: WindowsForms
+title: Scroll Experience in Windows Forms Popup control | Syncfusion®
+description: Learn about Scroll Experience support in Syncfusion® Windows Forms Popup (PopupControlContainer) control and more details.
+platform: windowsforms
 control: PopupControlContainer
 documentation: ug
 ---

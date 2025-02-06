@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to hide Caption lines in DockingManager | WindowsForms | Syncfusion
+title: How to hide Caption lines in DockingManager | WindowsForms | Syncfusion®
 description: How to hide Caption lines in DockingManager
 platform: WindowsForms
 control: DockingManager

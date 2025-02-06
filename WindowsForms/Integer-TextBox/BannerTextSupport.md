@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Banner Text Support in Windows Forms Integer TextBox | Syncfusion
-description: Learn about Banner Text Support support in Syncfusion Windows Forms Integer TextBox control, its elements and more details.
+title: Banner Text Support in Windows Forms Integer TextBox | Syncfusion®
+description: Learn about Banner Text Support support in Syncfusion® Windows Forms Integer TextBox control, its elements and more details.
 platform: WindowsForms
 control: Tools
 documentation: ug

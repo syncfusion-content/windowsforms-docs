@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Customization in Windows Forms SplitContainer control | Syncfusion
-description: Learn about Customization support in Syncfusion Windows Forms SplitContainer (SplitContainerAdv) control and more details.
-platform: WindowsForms
+title: Customization in Windows Forms SplitContainer control | Syncfusion®
+description: Learn about Customization support in Syncfusion® Windows Forms SplitContainer (SplitContainerAdv) control and more details.
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---

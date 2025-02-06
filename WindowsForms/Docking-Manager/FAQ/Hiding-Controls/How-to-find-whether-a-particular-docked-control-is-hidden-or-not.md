@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to find whether a particular docked control is hidden or not | WindowsForms | Syncfusion
+title: How to find whether a particular docked control is hidden or not | WindowsForms | Syncfusion®
 description: How to find whether a particular docked control is hidden or not
-platform: WindowsForms
+platform: windowsforms
 control: DockingManager
 documentation: ug
 ---

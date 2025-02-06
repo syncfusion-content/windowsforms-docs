@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Serialization in Windows Forms Docking Manager control | Syncfusion
-description: Learn about Serialization support in Syncfusion Windows Forms Docking Manager control and more details.
-platform: WindowsForms
+title: Serialization in Windows Forms Docking Manager control | Syncfusion®
+description: Learn about Serialization support in Syncfusion® Windows Forms Docking Manager control and more details.
+platform: windowsforms
 control: DockingManager 
 documentation: ug
 ---

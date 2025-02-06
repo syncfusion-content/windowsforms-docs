@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to get or set the size of the docked control | WindowsForms | Syncfusion
+title: How to get or set the size of the docked control | WindowsForms | Syncfusion®
 description: How to get or set the size of the docked control
-platform: WindowsForms
+platform: windowsforms
 control: DockingManager
 documentation: ug
 ---

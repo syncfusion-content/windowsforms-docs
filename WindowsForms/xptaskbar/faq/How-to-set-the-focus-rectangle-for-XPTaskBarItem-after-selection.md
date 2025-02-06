@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Set the focus rectangle for XPTaskBarItem | WindowsForms | Syncfusion
-description: How to set the focus rectangle for XPTaskBarItem after selection in Syncfusion WindowsForms XPTaskBar control, its elements, and more.
-platform: WindowsForms
+title: Set the focus rectangle for XPTaskBarItem | WindowsForms | Syncfusion®
+description: How to set the focus rectangle for XPTaskBarItem after selection in Syncfusion® WindowsForms XPTaskBar control, its elements, and more.
+platform: windowsforms
 control: XPTaskBar
 documentation: ug
 ---

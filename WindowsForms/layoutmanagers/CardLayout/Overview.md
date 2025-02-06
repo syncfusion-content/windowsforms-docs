@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Windows Forms LayoutManagers control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms LayoutManagers control, its elements and more details.
+title: About Windows Forms LayoutManagers control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® Windows Forms LayoutManagers control, its elements and more details.
 platform: windowsforms
 control: CardLayout
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Border Settings | WindowsForms | Syncfusion
-description: Learn here about how to set the different style of border and show the border style in Syncfusion Windows Forms MaskedEditBox control.
+title: Border Settings | WindowsForms | Syncfusion®
+description: Learn here about how to set the different style of border and show the border style in Syncfusion® Windows Forms MaskedEditBox control.
 platform: WindowsForms
 control: MaskedEditBox
 documentation: ug

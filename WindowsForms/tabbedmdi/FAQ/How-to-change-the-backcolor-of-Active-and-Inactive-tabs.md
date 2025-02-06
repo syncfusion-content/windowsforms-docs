@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Backcolor-of-Active-Inactive-tabs | WindowsForms | Syncfusion
+title: Backcolor-of-Active-Inactive-tabs | WindowsForms | Syncfusion®
 description: how to change the backcolor of active and inactive tabs
-platform: WindowsForms
+platform: windowsforms
 control: TabbedMDIManager
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Individual floating controls properties | WindowsForms | Syncfusion
-description: Learn here about How to get individual floating controls properties with Syncfusion Essential Studio Windows Forms DockingManager Control
-platform: WindowsForms
+title: Individual floating controls properties | WindowsForms | Syncfusion®
+description: Learn here about How to get individual floating controls properties with Syncfusion® Essential Studio® Windows Forms DockingManager Control
+platform: windowsforms
 control: DockingManager
 documentation: ug
 ---

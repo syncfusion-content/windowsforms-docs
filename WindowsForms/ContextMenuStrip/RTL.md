@@ -1,8 +1,8 @@
 ---
 layout: post
-title: RTL in Windows Forms ContextMenuStrip control | Syncfusion
-description: Learn here all about right to left (RTL) feature of Syncfusion Windows Forms ContextMenuStrip (ContextMenuStripEx) control and more.
-platform: WindowsForms
+title: RTL in Windows Forms ContextMenuStrip control | Syncfusion®
+description: Learn here all about right to left (RTL) feature of Syncfusion® Windows Forms ContextMenuStrip (ContextMenuStripEx) control and more.
+platform: windowsforms
 control: ContextMenuStripEx
 documentation: ug
 ---

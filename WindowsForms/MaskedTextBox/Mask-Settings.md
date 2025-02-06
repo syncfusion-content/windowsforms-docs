@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Mask Settings | WindowsForms | Syncfusion
-description: Learn here about how to set the different Mask settings to the Syncfusion Windows Forms MaskedEditControl.
+title: Mask Settings | WindowsForms | Syncfusion®
+description: Learn here about how to set the different Mask settings to the Syncfusion® Windows Forms MaskedEditControl.
 platform: WindowsForms
 control: MaskedEditBox
 documentation: ug

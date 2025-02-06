@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Customization in Windows Forms Spell Checker control | Syncfusion
-description: Learn about Customization support in Syncfusion Windows Forms Spell Checker (SpellCheckerAdv) control and more details.
-platform: WindowsForms
+title: Customization in Windows Forms Spell Checker control | Syncfusion®
+description: Learn about Customization support in Syncfusion® Windows Forms Spell Checker (SpellCheckerAdv) control and more details.
+platform: windowsforms
 control: SpellCheckerAdv
 documentation: ug
 ---
