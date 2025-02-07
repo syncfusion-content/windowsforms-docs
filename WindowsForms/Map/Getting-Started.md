@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with Windows Forms Map control | Syncfusion 
-description: Learn here all about getting started with Syncfusion Windows Forms Maps (SfMaps) control, its elements, and more.
+title: Getting started with Windows Forms Map control | Syncfusion<sup>®</sup> 
+description: Learn here all about getting started with Syncfusion<sup>®</sup> Windows Forms Maps (SfMaps) control, its elements, and more.
 platform: windowsforms
 control: Maps
 documentation: ug
