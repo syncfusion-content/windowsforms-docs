@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Markers in Windows Forms Smith Chart control | Syncfusion
-description: Learn about Data Markers support in Syncfusion Windows Forms Smith Chart (SfSmithChart) control and more details.
+title: Data Markers in Windows Forms Smith Chart control | Syncfusion<sup>®</sup>
+description: Learn about Data Markers support in Syncfusion<sup>®</sup> Windows Forms Smith Chart (SfSmithChart) control and more details.
 platform: windowsforms
 control: SfSmithChart
 documentation: ug
