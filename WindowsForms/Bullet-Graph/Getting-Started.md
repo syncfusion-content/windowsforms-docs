@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Bullet Graph | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms Bullet Graph control, its elements, and more.
+title: Getting Started with Windows Forms Bullet Graph | Syncfusion<sup>®</sup>
+description: Learn here about getting started with Syncfusion<sup>®</sup> Windows Forms Bullet Graph control, its elements, and more.
 platform: windowsforms
 control: Bullet Graph
 documentation: ug
@@ -85,9 +85,9 @@ Namespace: Syncfusion.Windows.Forms.BulletGraph
 
    ![Windows Forms BulletGraph Getting-Started Image2](Getting-Started_images/Getting-Started_img2.png)
 
-## Create the Bullet Graph using Syncfusion Reference Manager
+## Create the Bullet Graph using Syncfusion<sup>®</sup> Reference Manager
 
- Syncfusion Reference Manager is used to add Syncfusion Tools.
+ Syncfusion<sup>®</sup> Reference Manager is used to add Syncfusion<sup>®</sup> Tools.
 
  To add a Bullet Graph Control, refer the following steps:
 
@@ -99,7 +99,7 @@ Namespace: Syncfusion.Windows.Forms.BulletGraph
 
    ![Windows Forms BulletGraph Getting-Started Image4](Getting-Started_images/Getting-Started_img4.png)
 
-3. The Syncfusion Reference Manager Wizard is opened as shown in the following screenshot.
+3. The Syncfusion<sup>®</sup> Reference Manager Wizard is opened as shown in the following screenshot.
 
    ![Windows Forms BulletGraph Getting-Started Image5](Getting-Started_images/Getting-Started_img5.png)
 
@@ -156,6 +156,6 @@ Namespace: Syncfusion.Windows.Forms.BulletGraph
 
    ![Windows Forms BulletGraph Getting-Started Image8](Getting-Started_images/Getting-Started_img8.png)
 
-   N> 1.   The Syncfusion Reference Manager is available in versions 11.3.0.30 and later. It supports referencing assemblies from version 10.4.0.71 version to the current version.
+   N> 1.   The Syncfusion<sup>®</sup> Reference Manager is available in versions 11.3.0.30 and later. It supports referencing assemblies from version 10.4.0.71 version to the current version.
    N>
-   N> 2.   The Syncfusion Reference Manager is used only in Visual Studio 2015 or higher.
+   N> 2.   The Syncfusion<sup>®</sup> Reference Manager is used only in Visual Studio 2015 or higher.

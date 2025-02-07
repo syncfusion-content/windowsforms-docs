@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ColorValuePath in Windows Forms TreeMap control | Syncfusion
-description: Learn about ColorValuePath support in Syncfusion Windows Forms TreeMap control, its elements and more details.
+title: ColorValuePath in Windows Forms TreeMap control | Syncfusion<sup>®</sup>
+description: Learn about ColorValuePath support in Syncfusion<sup>®</sup> Windows Forms TreeMap control, its elements and more details.
 platform: windowsforms
 control: TreeMap 
 documentation: ug
