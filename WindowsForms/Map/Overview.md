@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Windows Forms Map control | Syncfusion 
-description: This section explains the key features and quick overview about Syncfusion Maps control for WindowsForms.
+title: About Windows Forms Map control | Syncfusion<sup>®</sup>
+description: This section explains the key features and quick overview about Syncfusion<sup>®</sup> Maps control for WindowsForms.
 platform: windowsforms
 control: Maps
 documentation: ug
@@ -84,7 +84,7 @@ Operating Systems</td><td>
 
 
 
-Syncfusion provides the following documentation segments to provide all necessary information for using maps control in Windows application in an efficient manner.
+Syncfusion<sup>®</sup> provides the following documentation segments to provide all necessary information for using maps control in Windows application in an efficient manner.
 
 
 
