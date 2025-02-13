@@ -174,21 +174,100 @@ The SfButton with rounded rectangle shape can be implemented programmatically by
 
 To draw the rounded rectangle shape for the SfButton follow the steps:
 
-1. Raise the Paint event of the SfButton.
+1.Initialize the SfButton with Customization.
 
-{% capture codesnippet1 %}​
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
-//Raises the paint event of the SfButton
-sfButton1.Paint += sfButton1_Paint;
+private void InitializeComponent()
+{
+    this.sfButton1 = new Syncfusion.WinForms.Controls.SfButton();
+    this.SuspendLayout();
+
+    // SfButton properties
+    this.sfButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
+    this.sfButton1.Location = new System.Drawing.Point(280, 152);
+    this.sfButton1.Name = "sfButton1";
+    this.sfButton1.Size = new System.Drawing.Size(96, 28);
+    this.sfButton1.TabIndex = 0;
+    this.sfButton1.Text = "SfButton";
+
+    // Border styles
+    this.sfButton1.Style.HoverBorder = new Pen(Color.Green, 2);
+    this.sfButton1.Style.PressedBorder = new Pen(Color.Blue, 2);
+    this.sfButton1.Style.DisabledBorder = new Pen(Color.Yellow, 2);
+    this.sfButton1.Style.FocusedBorder = new Pen(Color.Red, 2);
+
+    // Background and text colors
+    sfButton1.Style.BackColor = Color.Gray;
+    sfButton1.Style.ForeColor = Color.Black;
+    sfButton1.Style.HoverBackColor = Color.White;
+    sfButton1.Style.HoverForeColor = Color.Green;
+    sfButton1.Style.FocusedBackColor = Color.White;
+    sfButton1.Style.FocusedForeColor = Color.Blue;
+    sfButton1.Style.PressedBackColor = Color.White;
+    sfButton1.Style.PressedForeColor = Color.Blue;
+    sfButton1.Style.DisabledBackColor = Color.DarkGray;
+    sfButton1.Style.DisabledForeColor = Color.Black;
+
+    // Attach event handlers
+    this.sfButton1.Paint += SfButton1_Paint;
+    this.sfButton1.MouseDown += SfButton1_MouseDown;
+    this.sfButton1.MouseUp += SfButton1_MouseUp;
+    this.sfButton1.MouseHover += SfButton1_MouseHover;
+    this.sfButton1.MouseLeave += SfButton1_MouseLeave;
+
+    // Form settings
+    this.ClientSize = new System.Drawing.Size(800, 450);
+    this.Controls.Add(this.sfButton1);
+    this.Name = "Form1";
+    this.Text = "SfButton Customization";
+    this.ResumeLayout(false);
+}
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2. Calculate the rounded rectangle area for the client area of the button, and set to the region of the SfButton. Draw the border with calculated rounded rectangle area. The Paint event method is as follows.
+2. Handle Mouse Events to Track Button State
 
 {% capture codesnippet2 %}​
+{% tabs %}
+{% highlight c# %}
+private bool isPressed = false;
+private bool isHovered = false;
+
+private void SfButton1_MouseDown(object sender, MouseEventArgs e)
+{
+    isPressed = true;
+    sfButton1.Invalidate();
+}
+
+private void SfButton1_MouseUp(object sender, MouseEventArgs e)
+{
+    isPressed = false;
+    sfButton1.Invalidate();
+}
+
+private void SfButton1_MouseHover(object sender, EventArgs e)
+{
+    isHovered = true;
+    sfButton1.Invalidate();
+}
+
+private void SfButton1_MouseLeave(object sender, EventArgs e)
+{
+    isHovered = false;
+    sfButton1.Invalidate();
+}
+{% endhighlight %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
+
+3. Calculate the rounded rectangle area for the client area of the button, and set to the region of the SfButton. Draw the border with calculated rounded rectangle area and applies the appropriate border style based on the button’s state. The Paint event method is as follows.
+
+{% capture codesnippe3 %}​
 {% tabs %}
 {% highlight c# %}
 private void sfButton1_Paint(object sender, PaintEventArgs e)
@@ -207,7 +286,39 @@ private void sfButton1_Paint(object sender, PaintEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
+
+4. GetRoundedRect() This method calculates a rounded rectangle shape to ensure smooth rendering.
+
+{% capture codesnippet4 %}​
+{% tabs %}
+{% highlight c# %}
+private GraphicsPath GetRoundedRect(Rectangle rect, int radius)
+{
+    GraphicsPath graphicsPath = new GraphicsPath();
+    int x = rect.X;
+    int y = rect.Y;
+    int right = rect.Right;
+    int bottom = rect.Bottom;
+    Point[] points = new Point[8]
+    {
+    new Point(x, y + radius),
+    new Point(x + radius, y),
+    new Point(right - radius, y),
+    new Point(right, y + radius),
+    new Point(right, bottom - radius),
+    new Point(right - radius, bottom),
+    new Point(x + radius, bottom),
+    new Point(x, bottom - radius)
+    };
+    graphicsPath.AddLines(points);
+    graphicsPath.CloseFigure();
+    return graphicsPath;
+}
+{% endhighlight %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 ![Windows Forms Button rounded rectangle](SfButton_images/windows-forms-button-rounded-rectangle.jpeg)
 
@@ -215,7 +326,7 @@ Refer to the following sample shows how to implement the rounded rectangle in th
 
 [Sample](https://www.syncfusion.com/downloads/support/directtrac/general/SFBUTT~1449710690.ZIP)
 
-**Note**: When using the previous implementation to draw the rounded rectangle, the border customization properties like Border, HoverBorder, PressedBorder, FocusedBorder, and DisabledBorder does not work.
+**Note**: The above implementation allows drawing a rounded rectangle while ensuring that border customization properties like the border customization properties like Border, HoverBorder, PressedBorder, FocusedBorder, and DisabledBorder work as expected.
 
 ## Themes
 
