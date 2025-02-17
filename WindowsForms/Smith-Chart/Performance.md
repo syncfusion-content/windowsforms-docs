@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Performance in Windows Forms Smith Chart control | Syncfusion
-description: Learn about Performance support in Syncfusion Windows Forms Smith Chart (SfSmithChart) control and more details.
-platform: WindowsForms
+title: Performance in Windows Forms Smith Chart control | Syncfusion®
+description: Learn about Performance support in Syncfusion® Windows Forms Smith Chart (SfSmithChart) control and more details.
+platform: windowsforms
 control: SfSmithChart
 documentation: ug
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Caption Settings in Windows Forms Bullet Graph control | Syncfusion
-description: Learn about Caption Settings support in Syncfusion Windows Forms Bullet Graph control and more details.
+title: Caption Settings in Windows Forms Bullet Graph control | Syncfusion®
+description: Learn about Caption Settings support in Syncfusion® Windows Forms Bullet Graph control and more details.
 platform: windowsforms
 control: Bullet Graph
 documentation: ug

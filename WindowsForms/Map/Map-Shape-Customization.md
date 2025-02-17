@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Map-Shape-Customization in Windows-Forms Map Control | Syncfusion
-description: Learn here all about map shape customization feature of Syncfusion Windows Forms Map (Maps) control and more.
+title: Map-Shape-Customization in Windows-Forms Map Control | Syncfusion®
+description: Learn here all about map shape customization feature of Syncfusion® Windows Forms Map (Maps) control and more.
 platform: windowsforms
 control: Maps
 documentation: ug
