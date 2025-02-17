@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Windows Forms TreeMap control | Syncfusion<sup>®</sup>
-description: Learn here about getting started with Syncfusion<sup>®</sup> Windows Forms TreeMap control, its elements and more details.
+title: Getting Started with Windows Forms TreeMap control | Syncfusion®
+description: Learn here about getting started with Syncfusion® Windows Forms TreeMap control, its elements and more details.
 platform: windowsforms
 control: TreeMap 
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customizing Leaf Nodes in Windows Forms TreeMap control | Syncfusion<sup>®</sup>
-description: Learn about Customizing Leaf Nodes support in Syncfusion<sup>®</sup> Windows Forms TreeMap control and more details.
+title: Customizing Leaf Nodes in Windows Forms TreeMap control | Syncfusion®
+description: Learn about Customizing Leaf Nodes support in Syncfusion® Windows Forms TreeMap control and more details.
 platform: windowsforms
 control: TreeMap 
 documentation: ug

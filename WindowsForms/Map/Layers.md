@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Layers in Windows-Forms Map Control | Syncfusion<sup>®</sup>
-description: Learn here all about the layers feature of the Syncfusion<sup>®</sup> Windows Forms Map (Maps) control and more.
+title: Layers in Windows-Forms Map Control | Syncfusion®
+description: Learn here all about the layers feature of the Syncfusion® Windows Forms Map (Maps) control and more.
 platform: windowsforms
 control: Maps
 documentation: ug

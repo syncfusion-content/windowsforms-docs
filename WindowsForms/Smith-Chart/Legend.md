@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Legend in Windows Forms Smith Chart control | Syncfusion<sup>®</sup>
-description: Learn about Legend support in Syncfusion<sup>®</sup> Windows Forms Smith Chart (SfSmithChart) control and more details.
+title: Legend in Windows Forms Smith Chart control | Syncfusion®
+description: Learn about Legend support in Syncfusion® Windows Forms Smith Chart (SfSmithChart) control and more details.
 platform: windowsforms
 control: SfSmithChart
 documentation: ug

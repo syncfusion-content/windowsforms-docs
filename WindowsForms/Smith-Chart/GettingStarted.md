@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Smith Chart | Syncfusion<sup>®</sup>
-description: Learn here about getting started with Syncfusion<sup>®</sup> Windows Forms Smith Chart (SfSmithChart) control, its elements and more details.
-platform: WindowsForms
+title: Getting Started with Windows Forms Smith Chart | Syncfusion®
+description: Learn here about getting started with Syncfusion® Windows Forms Smith Chart (SfSmithChart) control, its elements and more details.
+platform: windowsforms
 control: SfSmithChart
 documentation: ug
 ---

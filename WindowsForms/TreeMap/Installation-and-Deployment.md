@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation-and-Deployment | Windows Forms | Syncfusion<sup>®</sup>
-description: Installation and deployment of Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> WindowsForms TreeMap control, its elements, and more.
+title: Installation-and-Deployment | Windows Forms | Syncfusion®
+description: Installation and deployment of Syncfusion® Essential Studio® WindowsForms TreeMap control, its elements, and more.
 platform: windowsforms
 control: TreeMap
 documentation: ug
