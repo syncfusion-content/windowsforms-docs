@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tree Map Legend in Windows Forms TreeMap control | Syncfusion
-description: Learn about Tree Map Legend support in Syncfusion Windows Forms TreeMap control, its elements and more details.
+title: Tree Map Legend in Windows Forms TreeMap control | Syncfusion®
+description: Learn about Tree Map Legend support in Syncfusion® Windows Forms TreeMap control, its elements and more details.
 platform: windowsforms
 control: TreeMap 
 documentation: ug
