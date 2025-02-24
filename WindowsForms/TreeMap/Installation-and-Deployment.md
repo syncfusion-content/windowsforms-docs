@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation-and-Deployment | Windows Forms | Syncfusion
-description: Installation and deployment of Syncfusion Essential Studio WindowsForms TreeMap control, its elements, and more.
+title: Installation-and-Deployment | Windows Forms | Syncfusion®
+description: Installation and deployment of Syncfusion® Essential Studio® WindowsForms TreeMap control, its elements, and more.
 platform: windowsforms
 control: TreeMap
 documentation: ug
@@ -9,13 +9,13 @@ documentation: ug
 
 # Installation and Deployment
 
-This section covers information on the install location, samples, licensing, patches update and updation of the recent version of Essential Studio. It comprises the following sub-sections:
+This section covers information on the install location, samples, licensing, patches update and updation of the recent version of Essential Studio<sup>®</sup>. It comprises the following sub-sections:
 
 
 
 ## Installation
 
-For step-by-step installation procedure for the installation of Essential Studio, refer to the Installation topic under Installation and Deployment in the Common UG.
+For step-by-step installation procedure for the installation of Essential Studio<sup>®</sup>, refer to the Installation topic under Installation and Deployment in the Common UG.
 
 
 
@@ -37,13 +37,13 @@ Use the following steps to view the samples:
 
 
 
-1. Click Start > All Programs > Syncfusion > Essential Studio <version number> >Dashboard
+1. Click Start > All Programs > Syncfusion<sup>®</sup> > Essential Studio<sup>®</sup> <version number> >Dashboard
 
-   The Essential Studio Enterprise Edition window will be displayed.
+   The Essential Studio<sup>®</sup> Enterprise Edition window will be displayed.
 
    ![Installation-and-Deployment_images1](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)
 
-   Syncfusion Essential Studio Dashboard
+   Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> Dashboard
    {:.caption}
 
 2. In the Dashboard window, click Run Samples for Windows Forms under UI Edition. The UI Windows Forms Sample Browser window will be displayed.
@@ -67,7 +67,7 @@ Use the following steps to view the samples:
 
    ![Installation-and-Deployment_images3](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)
 
-   Essential TreeMap WF Samples
+   Essential<sup>®</sup> TreeMap WF Samples
    {:.caption}
 
 
