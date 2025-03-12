@@ -37,7 +37,7 @@ Me.pasteButton.ToolTipText = "Add content on your clipboard to your document"
 
 ![ToolTip for Minimize button](ToolTip_Support_Images/MinimizeButton.png)
 
-![ToolTip for Maximize buttn](ToolTip_Support_Images/Maximize%20button.png)
+![ToolTip for Maximize buttn](ToolTip_Support_Images/MaximizeButton.png)
 
 ## SuperToolTip
 
