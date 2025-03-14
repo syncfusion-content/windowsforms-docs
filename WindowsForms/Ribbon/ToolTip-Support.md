@@ -33,12 +33,6 @@ Me.pasteButton.ToolTipText = "Add content on your clipboard to your document"
 
 {% endtabs %}
 
-### ToolTip for Minimize and Maximize button
-
-![ToolTip for Minimize button](ToolTip_Support_Images/MinimizeButton.jpg)
-
-![ToolTip for Maximize buttn](ToolTip_Support_Images/MaximizeButton.jpg)
-
 ## SuperToolTip
 
 Essential<sup>®</sup> Tools has come up with a new control known as the SuperToolTip which, enables the user to give tooltip information.
