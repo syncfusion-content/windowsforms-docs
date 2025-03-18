@@ -2,7 +2,7 @@
 layout: post
 title: Syntax Highlighting in Windows Forms Syntax Editor | Syncfusion
 description: Learn about Syntax Highlighting support in Syncfusion Windows Forms Syntax Editor control and more details.
-platform: WindowsForms
+platform: windowsforms
 control: SyntaxEditor
 documentation: ug
 ---
