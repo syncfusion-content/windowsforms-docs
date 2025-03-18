@@ -1250,7 +1250,7 @@ open.FormatName = "Operators";
 
 this.editControl1.Language.Lexems.Add(open);
 
-ConfigLexem close = new ConfigLexem("", ")", FormatType.Custom, false);
+ConfigLexem close = new ConfigLexem(")", "", FormatType.Custom, false);
 
 close.FormatName = "Operators";
 
@@ -1358,9 +1358,9 @@ ISnippetFormat Error = this.editControl1.Language.Add("Error");
 
  ConfigLexem err = new ConfigLexem("pubblic", "", FormatType.Custom, false);
 
- misspell.FormatName = "Error";
+ err.FormatName = "Error";
 
- this.editControl1.Language.Lexems.Add(misspell);
+ this.editControl1.Language.Lexems.Add(err);
 
 {% endhighlight %}
 
@@ -1379,9 +1379,9 @@ Dim Error As ISnippetFormat = Me.editControl1.Language.Add("Error")
 
  Dim err As ConfigLexem = new ConfigLexem("pubblic", "", FormatType.Custom, False)
 
- misspell.FormatName = "Error"
+ err.FormatName = "Error"
 
- Me.editControl1.Language.Lexems.Add(misspell)
+ Me.editControl1.Language.Lexems.Add(err)
 
 {% endhighlight %}
 
@@ -1404,6 +1404,8 @@ Split split = new Split();
 split.Text = "#region";
 
 currentConfigLanguage.Splits.Add(split);
+
+this.editControl1.ApplyConfiguration(currentConfigLanguage);
 
 ISnippetFormat keyword = this.editControl1.Language.Add("keyword");
 
@@ -1430,6 +1432,8 @@ Dim split As  Split  = new Split()
 split.Text = "#region"
 
 currentConfigLanguage.Splits.Add(split)
+
+Me.editControl1.ApplyConfiguration(currentConfigLanguage)
 
 Dim keyword As ISnippetFormat = Me.editControl1.Language.Add("keyword")
 
