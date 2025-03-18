@@ -95,6 +95,21 @@ sfComboBox1.DropDownPosition = Syncfusion.WinForms.Core.Enums.PopupRelativeAlign
 
 ![WinForms SfComboBox Dropdown position](DropDown_images/WinForms-SfComboBox-Dropdown-position.png)
 
+## Customizing drop-down Width
+
+The [`SfComboBox`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html) allows to change the Width of the dropdown list by using the DropDownWidth property. If no explicit value is assigned to the DropDownWidth property, the default width of the dropdown list will be used.
+
+{% tabs %}
+
+{% highlight c# %}
+
+sfComboBox1.DropDownWidth = 500;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WinForms SfComboBox Dropdown Width](DropDown_images/DropDown_img4.png)
 ## Load custom control in drop-down
 
 SfComboBox allows you to show the header and footer items in drop-down by enabling the [SfComboBox.DropDownListView.ShowHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_ShowHeader) and [SfComboBox.DropDownListView.ShowFooter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_ShowFooter) properties. This also allows you to load a custom control using the [SfComboBox.DropDownListView.HeaderControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_HeaderControl) and [SfComboBox.DropDownListView.FooterControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_FooterControl) properties.
