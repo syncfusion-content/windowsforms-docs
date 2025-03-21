@@ -119,9 +119,41 @@ Me.ribbonControlAdv1.ShowMinimizeButton = True
 
 ### ToolTip for Minimize and Maximize button
 
-![ToolTip for Minimize button](ToolTip_Support_Images/MinimizeButton.jpg)
+{% tabs %}
 
-![ToolTip for Maximize buttn](ToolTip_Support_Images/MaximizeButton.jpg)
+{% highlight c# %}
+
+this.ribbonControlAdv1.MinimizeToolTip = "Minimize button";
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.ribbonControlAdv1.MinimizeToolTip = "Minimize button"
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![ToolTip for Minimize button](Working_with_Ribbon_Images/MinimizeButton.jpg)
+
+{% tabs %}
+
+{% highlight c# %}
+
+this.ribbonControlAdv1.MaximizeToolTip = "Maximize button";
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.ribbonControlAdv1.MaximizeToolTip = "Maximize button"
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![ToolTip for Maximize buttn](Working_with_Ribbon_Images/MaximizeButton.jpg)
 
 ### State change through ContextMenu
 
