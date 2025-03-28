@@ -31,19 +31,6 @@ Syncfusion<sup>®</sup> Version </th>
 
 <tr>
 <td>
-Earlier Version</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td><td>
-No</td><td>
-No</td><td>
-No</td><td>
-No</td><td>
-No</td><td>
-No</td></tr>
-
-<tr>
-<td>
 From 28.1 (2024 Vol4)</td><td>
 No</td><td>
 No</td><td>
@@ -54,6 +41,7 @@ Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td></tr>
+
 <tr>
 <td>
 From 27.2 (2024 Vol3 SP)</td><td>
@@ -171,21 +159,17 @@ No</td><td>
 No</td><td>
 No</td></tr>
 
-
-
-
-
-
-
-
-
-
-
-
-
->
-
-
-
+<tr>
+<td>
+Earlier Version</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td><td>
+No</td><td>
+No</td><td>
+No</td><td>
+No</td><td>
+No</td><td>
+No</td></tr>
 
 </table>
