@@ -31,33 +31,85 @@ Syncfusion<sup>®</sup> Version </th>
 
 <tr>
 <td>
-Earlier Version</td><td>
+From 28.1 (2024 Vol4)</td><td>
+No</td><td>
+No</td><td>
+No</td><td>
+No</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td></tr>
+
+<tr>
+<td>
+From 27.2 (2024 Vol3 SP)</td><td>
+No</td><td>
+No</td><td>
+Yes</td><td>
+No</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td></tr>
+
+<tr>
+<td>
+From 23.2 (2023 Vol3 SP)</td><td>
+No</td><td>
+No</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td><td>
+No</td></tr>
+
+<tr>
+<td>
+From 21.1 (2023 Vol1)</td><td>
+No</td><td>
+No</td><td>
+Yes</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 No</td><td>
+No</td></tr>
+
+<tr>
+<td>
+From 20.4 (2022 Vol4)</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td><td>
 No</td><td>
-No</td><td>
+No</td></tr>
+
+<tr>
+<td>
+From 19.4 (2021 Vol4)</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td><td>
 No</td><td>
 No</td><td>
 No</td></tr>
 
 <tr>
 <td>
-From 11.2 (2013 Vol2)</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td><td>
-No</td><td>
-No</td><td>
-No</td><td>
-No</td><td>
-No</td></tr>
-
-<tr>
-<td>
-From 13.3 (2015 Vol3)</td><td>
+From 18.4 (2020 Vol4)</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
@@ -83,7 +135,7 @@ No</td></tr>
 
 <tr>
 <td>
-From 18.4 (2020 Vol4)</td><td>
+From 13.3 (2015 Vol3)</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
@@ -96,80 +148,28 @@ No</td></tr>
 
 <tr>
 <td>
-From 19.4 (2021 Vol4)</td><td>
+From 11.2 (2013 Vol2)</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
-Yes</td><td>
-Yes</td><td>
+No</td><td>
+No</td><td>
 No</td><td>
 No</td><td>
 No</td></tr>
 
 <tr>
 <td>
-From 20.4 (2022 Vol4)</td><td>
+Earlier Version</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td><td>
+No</td><td>
+No</td><td>
+No</td><td>
+No</td><td>
 No</td><td>
 No</td></tr>
-
-<tr>
-<td>
-From 21.1 (2023 Vol1)</td><td>
-No</td><td>
-No</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td><td>
-No</td><td>
-No</td></tr>
-
-<tr>
-<td>
-From 23.2 (2023 Vol3 SP)</td><td>
-No</td><td>
-No</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td><td>
-No</td></tr>
-
-<tr>
-<td>
-From 27.2 (2024 Vol3 SP)</td><td>
-No</td><td>
-No</td><td>
-Yes</td><td>
-No</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td></tr>
-
-<tr>
-<td>
-From 28.1 (2024 Vol4)</td><td>
-No</td><td>
-No</td><td>
-No</td><td>
-No</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td></tr>
 
 </table>
