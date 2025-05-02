@@ -37,7 +37,6 @@ we can  host a WPF PdfViewer control within a Windows Forms application using an
 {% tabs %}
 {% highlight c# %}
 
-
  /// <summary>
  /// Interaction logic for PdfViewer.xaml
  /// </summary>
