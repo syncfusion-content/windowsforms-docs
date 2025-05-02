@@ -30,7 +30,7 @@ we can  host a WPF PdfViewer control within a Windows Forms application using an
     <Grid>
         <PdfView:PdfViewerControl  x:Name="pdfViewer"/>
     </Grid>
-  ~~~
+   ~~~
 
 4. Load the PDF file into the PdfViewer when the UserControl is loaded in the application
 
