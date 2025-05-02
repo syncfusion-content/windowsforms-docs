@@ -24,7 +24,7 @@ we can  host a WPF PdfViewer control within a Windows Forms application using an
    </UserControl>
    ~~~
 
-3. Drag and drop the PdfViewerControl to the UserControl from the toolbox or add the below code in the XAML page to initialize the WPF PdfViewer.
+3. Add the below code in the XAML page to initialize the WPF PdfViewer.
 
    ~~~xaml
     <Grid>
@@ -56,7 +56,7 @@ we can  host a WPF PdfViewer control within a Windows Forms application using an
 {%endhighlight%}
 {% endtabs %}
 
-5. Add a panel to the form. Create an ElementHost object in the Form and add the created UserControl's object as child to the ElementHost object. Add the elementHost as a chile to the panel as mentioned below.
+5. Add a panel to the form. Create an ElementHost object in the Form and add the created UserControl's object as child to the ElementHost object. Add the elementHost as a child to the panel as mentioned below.
 
 {% tabs %}
 {% highlight c# %}
