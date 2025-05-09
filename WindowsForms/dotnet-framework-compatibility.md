@@ -31,6 +31,19 @@ Syncfusion<sup>®</sup> Version </th>
 
 <tr>
 <td>
+From 29.1 (2025 Vol1)</td><td>
+No</td><td>
+No</td><td>
+No</td><td>
+No</td><td>
+Yes</td><td>
+No</td><td>
+No</td><td>
+Yes</td><td>
+Yes</td></tr>
+
+<tr>
+<td>
 From 28.1 (2024 Vol4)</td><td>
 No</td><td>
 No</td><td>
