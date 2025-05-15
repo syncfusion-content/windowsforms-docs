@@ -9,7 +9,9 @@ documentation: ug
 
 # Hide or disable the Toolbar Button
 
-In Order to hide the toolbar button.You can use the [ToolbarSettings](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.DocumentToolbarSettings.html) API. This API allows you to control the visibility of toolbar buttons
+In the WinForms PDF Viewer, there is an API called [ToolbarSettings](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.DocumentToolbarSettings.html) that allows you to access and manage toolbar buttons. To hide a specific button, use the IsVisible property associated with that button. By setting IsVisible to false, the button will be hidden from the toolbar. This API provides an easy way to control the visibility of toolbar buttons based on your requirements.
+
+The following code snippet demonstrates how to hide the Open and Save buttons in the WinForms PDF Viewer control.
 
 {% tabs %}
 {%highlight c#%}
