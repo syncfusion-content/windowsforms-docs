@@ -9,7 +9,7 @@ documentation: ug
 
 # Download and Installation
 
-Syncfusion® publishes the Visual Studio extension in the below Visual Studio marketplace link. You can either install it directly from Visual Studio or download and install it from the Visual Studio marketplace.
+Syncfusion<sup>®</sup> publishes its Visual Studio extension on the Visual Studio Marketplace at the link below. You can install it directly from within Visual Studio or download it from the Marketplace.
 
 [Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.WindowsVSExtensions)
 
@@ -17,7 +17,7 @@ Syncfusion® publishes the Visual Studio extension in the below Visual Studio ma
 
 ## Prerequisites
 
-The following software prerequisites must be installed to install the Syncfusion® WinForms extension, as well as to creating, adding snippet, converting, and upgrading Syncfusion® WinForms applications.
+The following software prerequisites must be installed to use the Syncfusion<sup>®</sup> WinForms extension for creating projects, adding code snippets, converting, and upgrading Syncfusion<sup>®</sup> WinForms applications.
 
 * [Visual Studio 2010 or later](https://visualstudio.microsoft.com/downloads).
 
@@ -37,7 +37,7 @@ The steps below assist you to how to install the Syncfusion WinForms extensions 
 
 4. Click the **Download** button in the **“WinForms Extensions - Syncfusion”**.
 
-5. Close all Visual Studio instances after downloading the extensions to begin the installation process. You will see the following VSIX installation prompt.
+5. After downloading the extensions, close all instances of Visual Studio to begin the installation process. You will then see the following VSIX installation prompt.
 
     ![VSIX-Installation-Window](Download-Installation-Images/InstallUpdatedVersion.png)
 
@@ -63,7 +63,7 @@ The steps below illustrate how to download and install the Syncfusion Windows ex
 
 2. Close all Visual Studio instances running, if any.
 
-3. Double-click to install the downloaded VSIX file.You will see the VSIX installation prompts with the corresponding installed Visual Studio version checkbox for select the Visual Studio to install extension.
+3. Double-click the downloaded VSIX file to start the installation. You will see the VSIX installation prompts with checkboxes to select the Visual Studio versions where you want to install the extension.
 
     ![VSIX-Installation-Window](Download-Installation-Images/InstallVSIX.png)
 

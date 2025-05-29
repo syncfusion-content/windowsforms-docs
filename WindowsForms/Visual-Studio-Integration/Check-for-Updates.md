@@ -9,7 +9,7 @@ documentation: ug
 
 # Check for Updates in Syncfusion® Essential Windows Forms
 
-Syncfusion® provides the check for update extensions to find latest version of essential release was available, if it was available then provide option update most recent version of the Essential Studio® release. So that, you always get the latest features, fixes, and improvements by installing the latest version.
+Syncfusion® provides the check for update extensions to find the latest version of the essential release. If it is available, then provide the option to update to the most recent version of the Essential Studio® release. So that you always get the latest features, fixes, and improvements by installing the latest version.
 
 I> The Syncfusion® Check for updates is available from v17.1.0.32.
 
