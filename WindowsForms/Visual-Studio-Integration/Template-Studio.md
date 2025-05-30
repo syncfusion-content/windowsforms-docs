@@ -10,7 +10,7 @@ documentation: ug
 
 # Syncfusion WinForms Template Studio
 
-The WinForms Template Studio by Syncfusion® is a specialized tool for constructing applications with their WinForms components. This studio simplifies development by incorporating crucial Syncfusion® components, handling required NuGet references, offering preset namespaces, and creating component render code. Acting as a wizard, it facilitates the creation of WinForms applications using Syncfusion® components, streamlining the process for developers.
+The WinForms Template Studio by Syncfusion<sup>®</sup> is a specialized tool for building applications with Syncfusion<sup>®</sup> WinForms components. It simplifies development by including essential components, managing required NuGet references, providing preset namespaces, and generating component rendering code. Acting as a wizard, it streamlines the creation of WinForms applications using Syncfusion<sup>®</sup> components, making the process easier for developers.
 
 I> The Syncfusion® WinForms Template Studio is available from v24.1.41.
 
@@ -44,7 +44,7 @@ Create the Syncfusion® WinForms project using the Visual Studio Project Templat
 
 	![Syncfusion WinForms project configuration wizard](Template-Studio-Images/WF-5.png)
 
-	N> The installed location and GAC options will be available only after the Syncfusion® Essential WinForms setup has been installed. Use the NuGet option instead of installing the Syncfusion® Essential WinForms setup. Also, the GAC option will not be available when you choose .NET 8.0 and .NET 9.0 from the project type option in Visual Studio.
+	N> The **Installed Location** and **GAC** options become available only after installing the Syncfusion<sup>®</sup> Essential WinForms setup. If you prefer not to install the setup, use the NuGet option instead. Note that the GAC option is unavailable when you select .NET 8.0 or .NET 9.0 as the project type in Visual Studio.
 
 	I> Visual Basic Language support is available in WinForms Template Studio starting from version 25.1.35.
 
@@ -90,7 +90,7 @@ Create the Syncfusion® WinForms project using the Visual Studio Project Templat
 
 	To find out which NuGet packages are needed for other WinForms controls, please refer to this [documentation link](https://help.syncfusion.com/windowsforms/control-dependencies) for detailed information on the required packages for each control.
 
-10. When you create a WinForms project, the following Dependency Injection (DI) setup is added to the **Program.cs** file. This setup registers services, view models, and views with the DI container, ensuring proper functionality and service management within your application. Below **ConfigureServices** method in program.cs file establishes the DI setup in a WinForms project. It manages the application's services, view models, and views. Here's a detailed breakdown:
+10. When you create a WinForms project, the following Dependency Injection (DI) setup is added to the **Program.cs** file. This setup registers services, view models, and views with the DI container, ensuring proper functionality and service management within your application. The **ConfigureServices** method in the **Program.cs** file establishes this DI setup by managing the application’s services, view models, and views. Here’s a detailed breakdown:
       
      *I. Application Host:*
      - Registers **ApplicationHostService** to manage the app's lifecycle.
@@ -120,7 +120,7 @@ Here's a simple explanation:
 
 	![PageService](Template-Studio-Images/PageService.png)
 
-12. Some components require additional resource files, such as pdf and other necessary files, to function correctly. For example, if you add the **PDFViewer** and **Diagram** components to your WinForms project, the respective PDF and ico files will be added to the Resources folder in your project.
+12. Some components require additional resource files, such as PDFs and other necessary files, to function correctly. For example, if you add the **PDFViewer** and **Diagram** components to your WinForms project, the respective PDF and ico files will be added to the Resources folder in your project.
 
        ![Resources](Template-Studio-Images/Resources.png)
  

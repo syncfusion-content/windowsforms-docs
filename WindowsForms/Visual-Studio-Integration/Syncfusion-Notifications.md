@@ -9,7 +9,7 @@ documentation: ug
 
 # Syncfusion® Notifications
 
-Syncfusion® enhances the user experience in Windows Forms applications through notification messages. These notifications cover various aspects, including alerts for trial applications when utilizing Syncfusion® trial assemblies, updates regarding the availability of the latest Syncfusion® NuGet package, and notifications regarding newer releases of Essential Studio®. By keeping users informed, Syncfusion® ensures that developers stay updated with Syncfusion® latest features and enhancements.
+Syncfusion<sup>®</sup> enhances the user experience in Windows Forms applications through informative notification messages. These notifications include alerts for trial applications using Syncfusion<sup>®</sup> trial assemblies, updates on the availability of the latest Syncfusion<sup>®</sup> NuGet packages, and announcements of new Essential Studio<sup>®</sup> releases. By keeping developers informed, Syncfusion<sup>®</sup> ensures they stay up to date with the latest features and enhancements.
 
 N> The Syncfusion® Notification feature is available from Essential Studio® v22.1.34.
 
@@ -37,13 +37,13 @@ If you have installed lower versions of Syncfusion® NuGet packages in your appl
 
 **3. Newer Essential Studio® Build Notification**
 
-If you use older versions of Syncfusion® assemblies or NuGet packages from **Essential Studio® Windows,** Syncfusion® will notify you about new releases for the latest Essential Studio® build. Updating to the newest version ensures access to recent features, enhancements, and important updates, maximizing the capabilities of Syncfusion® in your Windows Forms development projects.
+If you use older versions of Syncfusion<sup>®</sup> assemblies or NuGet packages from **Essential Studio<sup>®</sup> Windows**, Syncfusion<sup>®</sup> will notify you about new releases of the latest Essential Studio<sup>®</sup> build. Updating to the latest version ensures access to new features, enhancements, and critical updates—maximizing the capabilities of Syncfusion<sup>®</sup> in your Windows Forms development projects.
 
 ![Build Notification](images/winforms-build.png)
 
 **4. Invalid License Key Notification**
 
-If you have mistakenly used an incorrect license key or used a license from another version or platform in your Windows Forms application, Syncfusion® will display a notification message stating, **The provided Syncfusion license key is invalid.** This message serves as a reminder to obtain a valid license key and ensure proper licensing for Syncfusion® components.
+If you mistakenly use an incorrect license key or a key from another version or platform in your Windows Forms application, Syncfusion<sup>®</sup> will display a notification stating: **The provided Syncfusion license key is invalid.** This message serves as a reminder to obtain a valid license key and ensure proper licensing for Syncfusion<sup>®</sup> components.
 
 ![Invalid Notification](images/winforms-invalid.png)
 

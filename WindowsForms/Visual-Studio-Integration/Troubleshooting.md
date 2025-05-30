@@ -9,7 +9,8 @@ documentation: ug
 
 # Troubleshoot the project
 
-Troubleshoot the project with the Syncfusion® configuration and apply the fix, such as adding a Syncfusion® assembly to the project with the wrong .NET Framework version or missing any Syncfusion® dependent assembly of a referred assembly. The Syncfusion Troubleshooter is capable of performing the following tasks:
+Troubleshoot your project for Syncfusion<sup>®</sup> configuration issues and apply necessary fixes, such as adding a Syncfusion<sup>®</sup> assembly targeting the incorrect .NET Framework version or resolving missing dependent Syncfusion<sup>®</sup> assemblies. The Syncfusion Troubleshooter is capable of performing the following tasks:
+
 
 * Report the Configuration issues.  
 * Apply the solution.
@@ -36,7 +37,7 @@ The following steps help you to utilize the Syncfusion Troubleshooter by Visual 
 
    ![Syncfusion Troubleshooter add-in](SyncfusionTroubleshooter_images/SyncfusionTroubleshooter-img1.jpeg)
 
-2. Analyze the project now, and if any Syncfusion® controls project configuration errors are discovered, they will be reported in the Troubleshooter dialog.  If there are no configuration issues with the project, the dialog box will indicate that no modifications are required in the following areas:
+2. Analyze the project now, and if any Syncfusion<sup>®</sup> control configuration errors are detected, they will be reported in the Troubleshooter dialog. If no configuration issues are found, the dialog box will indicate that no modifications are required in the following areas:
 
 * Syncfusion assembly references.
 * Syncfusion NuGet Packages. 
@@ -44,7 +45,7 @@ The following steps help you to utilize the Syncfusion Troubleshooter by Visual 
 
    ![No configuration changes required dialog box](SyncfusionTroubleshooter_images/SyncfusionTroubleshooter-img2.png)
 
-I> The Syncfusion Troubleshooter command will be visible only for Syncfusion® projects that means Syncfusion® assemblies or Syncfusion® NuGet packages should be referred in to the project and project should be .NET Framework project.
+I> The Syncfusion Troubleshooter command is visible only for Syncfusion<sup>®</sup> projects—that is, projects that reference Syncfusion<sup>®</sup> assemblies or NuGet packages and target the .NET Framework.
 
 The Syncfusion Troubleshooter handles the following project configuration issues: 
 
@@ -64,7 +65,7 @@ The Syncfusion Troubleshooter deals with the following assembly reference issues
 
    ![Dependent assemblies missing issue shown in Troubleshooter wizard](SyncfusionTroubleshooter_images/SyncfusionTroubleshooter-img3.png)
 
-2. Syncfusion assembly version mismatched. Compare to all Syncfusion assembly’s versions in the same project. If found any Syncfusion assembly version inconsistency, the Syncfusion Troubleshooter will show Syncfusion assemblies version mismatched. 
+2. Syncfusion assembly version mismatch detected. The Syncfusion Troubleshooter compares all Syncfusion assembly versions within the project and, if any inconsistencies are found, displays a Syncfusion assemblies version mismatch warning. 
 
    **For Instance:**  If “Syncfusion.Tools.Windows” assembly (v15.2450.0.40) referred in project, but other Syncfusion assemblies referred assembly version is v15.2450.0.43. Syncfusion Troubleshooter will be shown Syncfusion assembly version mismatched.
 
