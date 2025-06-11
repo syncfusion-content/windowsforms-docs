@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Border Settings in Windows Forms CheckBox control | Syncfusion
-description: Learn about Border Settings support in Syncfusion Windows Forms CheckBox (CheckBoxAdv) control and more details.
-platform: WindowsForms
+title: Border Settings in Windows Forms CheckBox control | Syncfusion®
+description: Learn about Border Settings support in Syncfusion® Windows Forms CheckBox (CheckBoxAdv) control and more details.
+platform: windowsforms
 control: EditorsPackage
 documentation: ug
 ---

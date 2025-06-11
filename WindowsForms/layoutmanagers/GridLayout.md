@@ -1,8 +1,8 @@
 ---
 layout: post
-title: GridLayout in Windows Forms Layout Managers Package | Syncfusion
+title: GridLayout in Windows Forms Layout Managers Package | Syncfusion®
 description: Layout Managers GridLayout allows user to arrange the child controls in a virtual grid containing rows and columns.
-platform: WindowsForms
+platform: windowsforms
 control: Layout Managers Package
 documentation: ug
 ---

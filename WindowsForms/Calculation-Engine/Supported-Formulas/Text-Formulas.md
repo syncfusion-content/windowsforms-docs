@@ -2184,3 +2184,50 @@ _FILTER(array, include, [if_empty])_
 
 
 * `FILTER` will return an error if the include array is not Boolean, or if it contains errors such as `#N/A` or `#VALUE!`.
+
+
+
+## BAHTTEXT  
+
+
+
+The function `BAHTTEXT` converts a number to Thai text and adds the suffix "Baht."  
+
+
+
+**Syntax**  
+
+
+
+_BAHTTEXT(number)_  
+
+
+
+**Where:**  
+
+
+
+* number: A number you want to convert to text. This can be:  
+
+
+
+  * A numeric value  
+
+
+
+  * A reference to a cell containing a number  
+
+
+
+  * A formula that evaluates to a number  
+
+
+
+**Remarks:**  
+
+
+
+* The output of `BAHTTEXT` is in Thai text with "Baht" as the suffix.  
+
+
+

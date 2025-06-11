@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sorting in Windows Forms Pivot Chart control | Syncfusion
-description: Learn about Sorting support in Syncfusion Windows Forms Pivot Chart control, its elements and more details.
+description: Learn about Sorting support in Syncfusion® Windows Forms Pivot Chart control, its elements and more details.
 platform: windowsforms
 control: PivotChart
 documentation: ug

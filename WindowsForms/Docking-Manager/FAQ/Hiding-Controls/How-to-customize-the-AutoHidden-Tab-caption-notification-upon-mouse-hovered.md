@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to customize the AutoHidden Tab caption notification upon mouse hovered | WindowsForms | Syncfusion
+title: How to customize the AutoHidden Tab caption notification upon mouse hovered | WindowsForms | Syncfusion®
 description: How to customize the AutoHidden Tab caption notification upon mouse hovered
-platform: WindowsForms
+platform: windowsforms
 control: DockingManager
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Control dependencies | Windows Forms | Syncfusion
-description: Learn here about Control Dependencies with Syncfusion Windows Forms control, its elements and more details.
-platform: WindowsForms
+title: Control dependencies | Windows Forms | Syncfusion®
+description: Learn here about Control Dependencies with Syncfusion® Windows Forms control, its elements and more details.
+platform: windowsforms
 control: Introduction
 documentation: ug
 ---
@@ -12,9 +12,9 @@ documentation: ug
 
 This section lists needed assembly or NuGet references to use any control in the  application. You can refer to the [deployment section](https://help.syncfusion.com/windowsforms/deployment) to know assembly installation location and [NuGet packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) section to know how to add NuGet reference.
  
-You can refer to the [syncfusion controls section](https://help.syncfusion.com/windowsforms/add-syncfusion-controls) to learn how to add syncfusion control.
+You can refer to the [Syncfusion<sup>®</sup> controls section](https://help.syncfusion.com/windowsforms/add-syncfusion-controls) to learn how to add Syncfusion<sup>®</sup> control.
 
-N> Starting with version 16.2(2018 Vol 2), the `Syncfusion.Licensing.dll` will be added as reference for all the Syncfusion Windows Forms controls. Please refer to this [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview) for more information.
+N> Starting with version 16.2(2018 Vol 2), the `Syncfusion.Licensing.dll` will be added as reference for all the Syncfusion<sup>®</sup> Windows Forms controls. Please refer to this [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview) for more information.
 
 ## AutoComplete
 

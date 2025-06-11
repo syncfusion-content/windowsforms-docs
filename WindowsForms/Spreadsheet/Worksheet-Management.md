@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Worksheet Management in Windows Forms Spreadsheet | Syncfusion
-description: Learn about Worksheet Management support in Syncfusion Windows Forms Spreadsheet control and more details.
+title: Worksheet Management in Windows Forms Spreadsheet | Syncfusion®
+description: Learn about Worksheet Management support in Syncfusion® Windows Forms Spreadsheet control and more details.
 platform: windowsforms
 control: Spreadsheet
 documentation: ug

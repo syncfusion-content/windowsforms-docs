@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Asked Questions | CurrencyTextbox | WindowsForms | Syncfusion
+title: Asked Questions | CurrencyTextbox | WindowsForms | Syncfusion®
 description: frequently asked questions
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---

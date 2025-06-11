@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Localization in Windows Forms Html Viewer control | Syncfusion
-description: Learn about Localization support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
-platform: WindowsForms
+title: Localization in Windows Forms Html Viewer control | Syncfusion®
+description: Learn about Localization support in Syncfusion® Windows Forms Html Viewer (HTMLUI) control and more details.
+platform: windowsforms
 control: HTMLUIControl
 documentation: ug
 ---
@@ -41,16 +41,16 @@ public class Localizer : ILocalizationProvider
                 ///
                 ///</summary>
                 case HTMLUIResourceIdentifiers.FindNext:
-                    return "Nächstes finden";
+                    return "Weiter suchen";
 
                 ///<summary>
                 ///
                 ///</summary>                    
                 case HTMLUIResourceIdentifiers.Title:
-                    return "Finden";
+                    return "Suchen";
 
                 case HTMLUIResourceIdentifiers.Cancel:
-                    return "Stornieren";
+                    return "Abbrechen";
 
                 ///<summary>
                 ///
@@ -59,22 +59,22 @@ public class Localizer : ILocalizationProvider
                     return "Richtung";
 
                 case HTMLUIResourceIdentifiers.Down:
-                    return "Nieder";
+                    return "Abwärts";
 
                 ///<summary>
                 ///
                 ///</summary>                    
                 case HTMLUIResourceIdentifiers.FindWhat:
-                    return "Finde was";
+                    return "Suchen nach";
 
                 case HTMLUIResourceIdentifiers.Matchcase:
-                    return "Match Fall";
+                    return "Groß-/Kleinschreibung beachten";
 
                 ///<summary>
                 ///
                 ///</summary>                    
                 case HTMLUIResourceIdentifiers.Up:
-                    return "Oben";
+                    return "Aufwärts";
                 ///<summary>
                 /// default
                 ///</summary>
@@ -106,33 +106,33 @@ Public Class Localizer
         #
         Dim HTMLUI As region
         HTMLUIResourceIdentifiers.FindNext
-        Return "N�chstes finden"
+        Return "Weiter suchen"
         '''<summary>
         '''
         '''</summary>                    
         HTMLUIResourceIdentifiers.Title
-        Return "Finden"
+        Return "Suchen"
         HTMLUIResourceIdentifiers.Cancel
-        Return "Stornieren"
+        Return "Abbrechen"
         '''<summary>
         '''
         '''</summary>                    
         HTMLUIResourceIdentifiers.Direction
         Return "Richtung"
         HTMLUIResourceIdentifiers.Down
-        Return "Nieder"
+        Return "Abwärts"
         '''<summary>
         '''
         '''</summary>                    
         HTMLUIResourceIdentifiers.FindWhat
-        Return "Finde was"
+        Return "Suchen nach"
         HTMLUIResourceIdentifiers.Matchcase
-        Return "Match Fall"
+        Return "Groß-/Kleinschreibung beachten"
         '''<summary>
         '''
         '''</summary>                    
         HTMLUIResourceIdentifiers.Up
-        Return "Oben"
+        Return "Aufwärts"
         '''<summary>
         ''' default
         '''</summary>

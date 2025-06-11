@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Working with Ribbon in Windows Forms Ribbon control | Syncfusion
-description: Learn about Working with Ribbon support in Syncfusion Windows Forms Ribbon (RibbonControlAdv) control and more details.
-platform: WindowsForms
+title: Working with Ribbon in Windows Forms Ribbon control | Syncfusion®
+description: Learn about Working with Ribbon support in Syncfusion® Windows Forms Ribbon (RibbonControlAdv) control and more details.
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
@@ -116,6 +116,44 @@ Me.ribbonControlAdv1.ShowMinimizeButton = True
 {% endtabs %}
 
 ![Ribbon State change using MinimizeButton](Working_with_Ribbon_Images/Working-with-Ribbon_img4.jpg)
+
+### ToolTip for Minimize and Maximize button
+
+{% tabs %}
+
+{% highlight c# %}
+
+this.ribbonControlAdv1.MinimizeToolTip = "Minimize button";
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.ribbonControlAdv1.MinimizeToolTip = "Minimize button"
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![ToolTip for Minimize button](Working_with_Ribbon_Images/MinimizeButton.jpg)
+
+{% tabs %}
+
+{% highlight c# %}
+
+this.ribbonControlAdv1.MaximizeToolTip = "Maximize button";
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.ribbonControlAdv1.MaximizeToolTip = "Maximize button"
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![ToolTip for Maximize buttn](Working_with_Ribbon_Images/MaximizeButton.jpg)
 
 ### State change through ContextMenu
 
@@ -329,7 +367,7 @@ Me.ribbonControlAdv1.ShowLauncher = False
 
 ## Status Bar
 
-Essential Tools has come up with `StatusStripEx` control which can be added to the bottom of the Ribbon. It can hold controls like TrackBarEx, ProgressBar, StatusStripButtons, and so on.
+Essential<sup>®</sup> Tools has come up with `StatusStripEx` control which can be added to the bottom of the Ribbon. It can hold controls like TrackBarEx, ProgressBar, StatusStripButtons, and so on.
 
 ![Using StatusStripEx in Ribbon](Working_with_Ribbon_Images/Working-with-Ribbon_img8.jpg)
 

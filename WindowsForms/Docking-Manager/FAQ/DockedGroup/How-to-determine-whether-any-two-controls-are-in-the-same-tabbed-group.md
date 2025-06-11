@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to determine whether any two controls are in the same tabbed group | WindowsForms | Syncfusion
+title: How to determine whether any two controls are in the same tabbed group | WindowsForms | Syncfusion®
 description: How to determine whether any two controls are in the same tabbed group
-platform: WindowsForms
+platform: windowsforms
 control: DockingManager
 documentation: ug
 ---

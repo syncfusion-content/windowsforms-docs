@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started in Windows Forms xptaskpane control | Syncfusion
-description: Learn about Getting Started support in Syncfusion Windows Forms xptaskpane (XPTaskPane) control and more details.
-platform: WindowsForms
+title: Getting Started in Windows Forms xptaskpane control | Syncfusion®
+description: Learn about Getting Started support in Syncfusion® Windows Forms xptaskpane (XPTaskPane) control and more details.
+platform: windowsforms
 control: XPTaskPane
 documentation: ug
 ---

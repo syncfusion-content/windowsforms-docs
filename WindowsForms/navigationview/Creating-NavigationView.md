@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Creating-NavigationView | WindowsForms | Syncfusion
-description: Learn here all about the creating navigationview of Syncfusion Windows Forms NavigationView control and more.
-platform: WindowsForms
+title: Creating-NavigationView | WindowsForms | Syncfusion®
+description: Learn here all about the creating navigationview of Syncfusion® Windows Forms NavigationView control and more.
+platform: windowsforms
 control: Navigation View 
 documentation: ug
 ---

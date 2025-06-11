@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Text-Field in WinForms CurrencyTextbox Control | Syncfusion 
-description: Learn here all about text field of Syncfusion WinForms Currency Textbox (CurrencyTextbox) control and more.
-platform: WindowsForms
+title: Text-Field in WinForms CurrencyTextbox Control | Syncfusion® 
+description: Learn here all about text field of Syncfusion® WinForms Currency Textbox (CurrencyTextbox) control and more.
+platform: windowsforms
 control: CurrencyTextbox
 documentation: ug
 ---

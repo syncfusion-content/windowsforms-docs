@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Navigation Bar in Windows Forms GridGrouping control | Syncfusion
-description: Learn about Navigation Bar support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
+title: Navigation Bar in Windows Forms GridGrouping control | Syncfusion®
+description: Learn about Navigation Bar support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug

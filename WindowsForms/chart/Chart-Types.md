@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart Types in Windows Forms Chart control | Syncfusion
-description: Learn about Chart Types support in Syncfusion Essential Studio Windows Forms Chart control and more details.
+description: Learn about Chart Types support in Syncfusion Essential Studio® Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Chart Types in Windows Forms Chart
 
-Essential Chart includes a comprehensive set of more than 35 Chart types for all your business needs. Each one is highly and easily configurable with built-in support for creating stunning visual effects.
+Essential® Chart includes a comprehensive set of more than 35 Chart types for all your business needs. Each one is highly and easily configurable with built-in support for creating stunning visual effects.
 
 Chart types are specified on each [ChartSeries](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html) through the [Type](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_Type) property. All the chart types are required to have at least one X and one Y value. Certain chart types need more than one Y value.
 
-The following table narrates the minimum and maximum number of series and number of Y values required by each type of chart supported by Essential Chart.
+The following table narrates the minimum and maximum number of series and number of Y values required by each type of chart supported by Essential® Chart.
 
 <table>
 <tr>
@@ -500,7 +500,7 @@ Bar Charts are the simplest and most versatile of statistical diagrams. Displaye
 
 A very similar, more common, chart type is the Column Charts where the bars are rendered vertically.
 
-EssentialChart supports these different types of Bar Charts:
+Essential® Chart supports these different types of Bar Charts:
 
 ### Bar Chart
 
@@ -510,7 +510,7 @@ Another good reason to use bar charts is when you realize that the number of a d
 
 The following image shows a multi series Bar Chart.
 
-![Chart Types](Chart-Types_images/Chart-Types_img5.jpeg)
+![Chart Types](Chart-Types_images/windowsforms-bar-chart.jpeg)
 
 #### Chart Details
 
@@ -522,7 +522,8 @@ Cannot be combined with - Any chart type except Bar and Stacked Bar charts.
 
 Bar series can be added to the chart using the following code.
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -577,7 +578,7 @@ Stacking Bar Charts are similar to regular bar charts except that the Y values s
 
 The following image shows a sample Stacking Bar Chart.
 
-![Chart Types](Chart-Types_images/Chart-Types_img6.jpeg)
+![Chart Types](Chart-Types_images/windowsforms-stacking-bar-chart.jpeg)
 
 ### Chart Details
 
@@ -589,7 +590,8 @@ Cannot be Combined with - Any chart type except Bar and Stacked Bar charts.
 
 Stacking bar series can be added to the chart using the following code.
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}
+{% highlight c# %}
 
 // Create chart series and add data point into it.
 
@@ -661,7 +663,7 @@ Me.chartControl1.Series.Add(series2)
 
 This chart type displays multiple series of data as stacked Bars ensuring that the cumulative proportion of each stacked element always totals 100%. The y-axis will hence always be rendered with the range 0 - 100.
 
-![Chart Types](Chart-Types_images/Chart-Types_img7.jpeg)
+![Chart Types](Chart-Types_images/windowsforms-stacked-bar-100-chart.jpeg)
 
 #### Chart Details
 
@@ -733,7 +735,7 @@ A Gantt chart is a graphical representation of the duration of tasks against the
 
 You could then use another series to represent the completed portion of the different tasks. This new series will then contain data points with their beginning values coinciding with the beginning values of the data points from the previous series and the ending value based on the fraction of the work that has been completed on the task. This way, one can get a quick reading of a project progress by drawing a vertical line through the chart at the current date.
 
-![Chart Types](Chart-Types_images/Chart-Types_img8.jpeg)
+![Chart Types](Chart-Types_images/windowsforms-gantt-chart.jpeg)
 
 #### Chart Details
 
@@ -799,7 +801,7 @@ Histograms are useful data summaries that convey the following information:
 
 The shape of the distribution conveys important information such as the probability distribution of the data.
 
-![Chart Types](Chart-Types_images/Chart-Types_img9.jpeg)
+![Chart Types](Chart-Types_images/windowsforms-histogram-chart.jpeg)
 
 #### Chart Details
 
@@ -809,7 +811,8 @@ Number of Series - One or more.
 
 Cannot be combined with - Pie, Bar, Polar, Radar.
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -891,7 +894,8 @@ Cannot be combined with - Pie, Bar, Polar, Radar.
 
 The Tornado series can be added to the chart using the following code.
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -978,7 +982,7 @@ Column Charts are among the most commonly used chart types. Displayed in vertica
 
 A very similar to the [Bar Charts](/windowsforms/chart/chart-types#bar-charts) type where the bars are rendered horizontal.
 
-EssentialChart supports these different Column Charts.
+Essential® Chart supports these different Column Charts.
 
 ### Column Chart
 
@@ -1064,7 +1068,8 @@ Cannot be combined with - Pie, Bar, Stacked Bar, Polar, Radar.
 
 The following code snippet illustrates this.
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -1274,7 +1279,7 @@ Area Charts emphasize the degree of change of the values over a period of time. 
 
 There is support for alpha-blending multiple series areas. The look and feel is also easily customizable by the user.
 
-EssentialChart supports these various types of Area Charts:
+Essential® Chart supports these various types of Area Charts:
 
 ### Area Chart
 
@@ -1525,7 +1530,8 @@ SupportMarker – No.
 
 Cannot be Combined with - Any other chart types.
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}
+{% highlight c# %}
 
 ChartSeries series1=chartControl1.Model.NewSeries("Series1",ChartSeriesType.StackingArea100);
 
@@ -1782,7 +1788,7 @@ Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible.
 
 ## Accumulation Charts
 
-Accumulation charts are typically single series charts representing the data as portions of 100% and do not use any axes. Essential Chart offers the two types of Accumulation charts.
+Accumulation charts are typically single series charts representing the data as portions of 100% and do not use any axes. Essential® Chart offers the two types of Accumulation charts.
 
 ### Funnel Chart
 
@@ -1794,11 +1800,11 @@ The following images are some sample Funnel Charts.
 
 ![Trapezoid funnel chart in Windowsforms](chart-types_images/windowsforms-trapezoid-funnel-chart.jpeg)
 
-![3D circular funnel chart in Windowsforms](chart-types_images/windowsforms-3d-circular-funnel-chart.jpeg)
+![Circular funnel 3D chart in Windowsforms](chart-types_images/windowsforms-3d-circular-funnel-chart.jpeg)
 
-![3D square funnel chart in Windowsforms](chart-types_images/windowsforms-3d-square-funnel-chart.jpeg)
+![Square funnel 3D chart in Windowsforms](chart-types_images/windowsforms-3d-square-funnel-chart.jpeg)
 
-![3D segmented square funnel chart in Windowsforms](chart-types_images/windowsforms-3d-segmented-square-funnel-chart.jpeg)
+![Segmented square funnel 3D chart in Windowsforms](chart-types_images/windowsforms-3d-segmented-square-funnel-chart.jpeg)
 
 #### Chart Details
 
@@ -1863,11 +1869,11 @@ The following images are some sample Pyramid Charts.
 
 ![Pyramid chart in WindowsForms](chart-types_images/windowsforms-pyramid-chart.jpeg)
 
-![3D circular pyramid chart in WindowsForms](chart-types_images/windowsforms-3d-circular-pyramid-chart.jpeg)
+![Circular pyramid 3D chart in WindowsForms](chart-types_images/windowsforms-3d-circular-pyramid-chart.jpeg)
 
-![3D flat pyramid chart in WindowsForms](chart-types_images/windowsforms-3d-flat-pyramid-chart.jpeg)
+![Flat pyramid 3D chart in WindowsForms](chart-types_images/windowsforms-3d-flat-pyramid-chart.jpeg)
 
-![3D flat segmented pyramid chart in WindowsForms](chart-types_images/windowsforms-3d-flat-segmented-pyramid-chart.jpeg)
+![Flat segmented pyramid 3D chart in WindowsForms](chart-types_images/windowsforms-3d-flat-segmented-pyramid-chart.jpeg)
 
 #### Chart Details
 
@@ -2156,7 +2162,7 @@ The following charts are a staple of analytical reports in the financial world. 
 
 The following charts cater to the above requirements and provide an easy-to-decipher picture of price action.
 
-Financial Chart types are supported in EssentialChart.
+Financial Chart types are supported in Essential® Chart.
 
 ### Candle Chart
 
@@ -2901,7 +2907,7 @@ Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible, Show
 
 ## Polar And Radar Chart
 
-Essential chart supports the implementation of Polar and Radar charts in the chart control. These charts can be used to display different values and angles in the form of a graph.
+Essential® chart supports the implementation of Polar and Radar charts in the chart control. These charts can be used to display different values and angles in the form of a graph.
 
 ### Polar Chart
 
@@ -3050,7 +3056,7 @@ Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible.
 
 ## Combination Chart
 
-Combination Charts refers to the ability to display multiple data series in the same chart with each series visualized using different chart types. In Essential Chart, Chart types that are compatible with each other may be combined in the same Chart Area.
+Combination Charts refers to the ability to display multiple data series in the same chart with each series visualized using different chart types. In Essential® Chart, Chart types that are compatible with each other may be combined in the same Chart Area.
 
 Typically it is a combination of a Line chart and a Column chart, sharing a common x-axis but with separate y-axes, one on either side of the chart.
 

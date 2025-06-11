@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Mode Settings | WindowsForms | Syncfusion
-description: Learn here about how to set the different Mode Settings to the Syncfusion Windows Forms MaskedEditBox control.
+title: Mode Settings | WindowsForms | Syncfusion®
+description: Learn here about how to set the different Mode Settings to the Syncfusion® Windows Forms MaskedEditBox control.
 platform: WindowsForms
 control: MaskedEditBox
 documentation: ug

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Advanced-Features in WinForms CurrencyTextbox Control | Syncfusion
-description: Learn here all about advanced features of Syncfusion WinForms Currency Textbox (CurrencyTextbox) control and more.
-platform: WindowsForms
+title: Advanced-Features in WinForms CurrencyTextbox Control | Syncfusion®
+description: Learn here all about advanced features of Syncfusion® WinForms Currency Textbox (CurrencyTextbox) control and more.
+platform: windowsforms
 control: CurrencyTextbox
 documentation: ug
 ---

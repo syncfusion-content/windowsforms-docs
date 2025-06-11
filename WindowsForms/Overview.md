@@ -1,18 +1,17 @@
 ---
 layout: post
-title: Overview of Syncfusion Essential Studio Windows Forms products
+title: Overview of Syncfusion® Essential Studio® Windows Forms products
 description: Over 100 WinForms (Windows Forms) controls like DataGrid, Charts, Docking, PDF Viewer and much more to build desktop applications.
 platform: windowsforms
 control: Introduction
 documentation: ug
 ---
 
-> With the 2024 Volume 4 release, we will discontinue support for .NET Framework 4.0 in WinForms, WPF, ASP.NET MVC, and Document Processing Libraries. Please plan to upgrade to .NET Framework 4.6.2 or higher.<br>
-With the 2025 Volume 1 release, we will discontinue support for .NET 6.0 and 7.0 in WinForms, WPF, WinUI, and Document Processing Libraries. Please plan to upgrade to .Net 8.0 or higher.
+> With the 2025 Volume 1 release, we will discontinue support for .NET 6.0 and 7.0 in WinForms, WPF, WinUI, and Document Processing Libraries. Please plan to upgrade to .Net 8.0 or higher.
 
-# Welcome to Syncfusion Essential Windows Forms
+# Welcome to Syncfusion<sup>®</sup> Essential<sup>®</sup> Windows Forms
 
-Syncfusion Essential Studio for Windows Forms is a comprehensive collection of over 100+ essential Windows Forms controls like Grids, Charts, Diagram, Scheduler and Tools for building powerful line-of-business applications faster. Syncfusion Windows Forms controls provides unparalleled performance, stunning built-in themes, touch-friendly UI, localization and seamless integration with Visual Studio.
+Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> for Windows Forms is a comprehensive collection of over 100+ Essential<sup>®</sup> Windows Forms controls like Grids, Charts, Diagram, Scheduler and Tools for building powerful line-of-business applications faster. Syncfusion<sup>®</sup> Windows Forms controls provides unparalleled performance, stunning built-in themes, touch-friendly UI, localization and seamless integration with Visual Studio.
 
 ## How to best read this user guide
 
@@ -340,7 +339,7 @@ background-color:transparent!important;
 
 ## Licensing
 
-Refer [licensing](https://help.syncfusion.com/common/essential-studio/licensing/overview) documentation to learn about registering syncfusion license key in your Windows Forms application to use syncfusion controls without license message dialog at runtime.
+Refer [licensing](https://help.syncfusion.com/common/essential-studio/licensing/overview) documentation to learn about registering Syncfusion<sup>®</sup> license key in your Windows Forms application to use Syncfusion<sup>®</sup> controls without license message dialog at runtime.
 
 ## Additional help resources
 

@@ -296,7 +296,7 @@ Gets or sets whether the `CalcEngine` throws any exception that occurs during th
 
 ### RethrowParseExceptions
 
-The default value of `RethrowParseExceptions` is false.If the value is set as true, CalcEngine throws an exception from [FormulaErrorStrings](https://help.syncfusion.com/windowsforms/calculation-engine/parse-and-compute#error-messages) collection. If the value is set as false, and the parsed formula is not a valid one,it returns error message  from [ErrorStrings]((https://help.syncfusion.com/windowsforms/calculation-engine/parse-and-compute#error-messages))collection without throwing exception.
+The default value of `RethrowParseExceptions` is false.If the value is set as true, CalcEngine throws an exception from [FormulaErrorStrings](https://help.syncfusion.com/windowsforms/calculation-engine/parse-and-compute#error-messages) collection. If the value is set as false, and the parsed formula is not a valid one,it returns error message  from [ErrorStrings](https://help.syncfusion.com/windowsforms/calculation-engine/parse-and-compute#error-messages)collection without throwing exception.
 
 ### SupportLogicalOperators
 

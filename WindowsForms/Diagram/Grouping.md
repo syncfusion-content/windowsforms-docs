@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Grouping in Windows Forms Diagram control | Syncfusion
-description: Learn about Grouping support in Syncfusion Windows Forms Diagram control, its elements and more details.
+title: Grouping in Windows Forms Diagram control | Syncfusion®
+description: Learn about Grouping support in Syncfusion® Windows Forms Diagram control, its elements and more details.
 platform: windowsforms
 control: Diagram
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Real Time Applications in Windows Forms GridGrouping | Syncfusion
-description: Learn about Real Time Applications support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
+title: Real Time Applications in Windows Forms GridGrouping | Syncfusion®
+description: Learn about Real Time Applications support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
@@ -46,7 +46,7 @@ Contribution Analyzer is a module which illustrates the contributions of differe
 ![Real-Time-Applications_img4](Real-Time-Applications_images/Real-Time-Applications_img4.png)
 
 ## Outlook Demo
-Microsoft Outlook UI can be implemented by using GridGroupingControl and other Syncfusion controls like RibbonControl etc. The themes can also be changed as per the user requirement. 
+Microsoft Outlook UI can be implemented by using GridGroupingControl and other Syncfusion<sup>®</sup> controls like RibbonControl etc. The themes can also be changed as per the user requirement. 
 
 GridGroupingControl supports all Office 2007, Office2010 and Metro (Office 2013) related look and feel. Some of the major features available in MS Outlook has been given in this real time application.
 

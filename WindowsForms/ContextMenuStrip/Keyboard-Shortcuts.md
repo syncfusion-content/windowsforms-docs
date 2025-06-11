@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Keyboard Shortcuts | Windows Forms | Syncfusion
-description: Learn here all about Keyboard Shortcuts feature in Syncfusion Windows Forms ContextMenuStrip (ContextMenuStripEx) control and more.
-platform: WindowsForms
+title: Keyboard Shortcuts | Windows Forms | Syncfusion®
+description: Learn here all about Keyboard Shortcuts feature in Syncfusion® Windows Forms ContextMenuStrip (ContextMenuStripEx) control and more.
+platform: windowsforms
 control: ContextMenuStripEx
 documentation: ug
 ---

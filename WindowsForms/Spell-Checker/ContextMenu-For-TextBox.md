@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Context-Menu-For-TextBox | WindowsForms | Syncfusion
+title: Context-Menu-For-TextBox | WindowsForms | Syncfusion®
 description: context menu for textbox
-platform: WindowsForms
+platform: windowsforms
 control: SpellCheckerAdv
 documentation: ug
 ---

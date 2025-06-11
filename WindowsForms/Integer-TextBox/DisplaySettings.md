@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Display Settings in Windows Forms Integer TextBox control | Syncfusion
-description: Learn about Display Settings support in Syncfusion Windows Forms Integer TextBox (Integertextbox) control and more details.
-platform: WindowsForms
+title: Display Settings in Windows Forms Integer TextBox control | Syncfusion®
+description: Learn about Display Settings support in Syncfusion® Windows Forms Integer TextBox (Integertextbox) control and more details.
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

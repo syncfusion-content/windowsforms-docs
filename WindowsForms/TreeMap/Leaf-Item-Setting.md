@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Features | Windows Forms | Syncfusion
-description: Learn here all about Leaf Item Setting in Syncfusion Essential Studio Windows Forms TreeMap control, its elements, and more.
+title: Features | Windows Forms | Syncfusion®
+description: Learn here all about Leaf Item Setting in Syncfusion® Essential Studio® Windows Forms TreeMap control, its elements, and more.
 platform: windowsforms
 control: TreeMap
 documentation: ug

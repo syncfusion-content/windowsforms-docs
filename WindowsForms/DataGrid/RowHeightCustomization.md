@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Row Height Customization in WinForms DataGrid control | Syncfusion
-description: Learn here all about row height customization feature of Syncfusion Windows Forms DataGrid (SfDataGrid) control and more.
+title: Row Height Customization in WinForms DataGrid control | Syncfusion®
+description: Learn here all about row height customization feature of Syncfusion® Windows Forms DataGrid (SfDataGrid) control and more.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug

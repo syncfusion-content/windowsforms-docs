@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Serialization Support in Windows Forms Ribbon control | Syncfusion
-description: Learn about Serialization Support in Syncfusion Windows Forms Ribbon (RibbonControlAdv) control and more details.
-platform: WindowsForms
+title: Serialization Support in Windows Forms Ribbon control | Syncfusion®
+description: Learn about Serialization Support in Syncfusion® Windows Forms Ribbon (RibbonControlAdv) control and more details.
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How To Create a Connection Programmatically | Diagram | Windows Forms | Syncfusion
-description: how to create a connection programmatically
+title: How To Create a Connection Programmatically | Syncfusion®
+description: Learn how to establish a database or network connection programmatically. This guide covers necessary steps and best practices in concise detail.
 platform: windowsforms
 control: Diagram
 documentation: ug

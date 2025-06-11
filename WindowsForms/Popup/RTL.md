@@ -1,8 +1,8 @@
 ---
 layout: post
-title: RTL in Windows Forms Popup control | Syncfusion
-description: Learn about RTL support in Syncfusion Windows Forms Popup (PopupControlContainer) control and more details.
-platform: WindowsForms
+title: RTL in Windows Forms Popup control | Syncfusion®
+description: Learn about RTL support in Syncfusion® Windows Forms Popup (PopupControlContainer) control and more details.
+platform: windowsforms
 control: PopupControlContainer
 documentation: ug
 ---

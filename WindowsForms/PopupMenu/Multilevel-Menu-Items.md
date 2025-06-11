@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Multi-level Menu Items in Windows Forms PopupMenu control | Syncfusion
-description: Learn about Multi-level Menu Items support in Syncfusion Windows Forms PopupMenu control and more details.
-platform: WindowsForms
+title: Multi-level Menu Items in Windows Forms PopupMenu control | Syncfusion®
+description: Learn about Multi-level Menu Items support in Syncfusion® Windows Forms PopupMenu control and more details.
+platform: windowsforms
 control: PopupMenu
 documentation: ug
 ---

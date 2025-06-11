@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in Windows Forms Button control | Syncfusion
-description: Learn about Appearance support in Syncfusion Windows Forms Button (SfButton) control and more details.
+title: Appearance in Windows Forms Button control | Syncfusion®
+description: Learn about Appearance support in Syncfusion® Windows Forms Button (SfButton) control and more details.
 platform: windowsforms
 control: SfButton
 documentation: ug
@@ -196,13 +196,70 @@ private void sfButton1_Paint(object sender, PaintEventArgs e)
     //Rounded rectangle corder radius. The radius must be less than 10.
     int radius = 5;
     e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
-    Rectangle rect = new Rectangle(this.sfButton1.ClientRectangle.X + 1, 
-                                   this.sfButton1.ClientRectangle.Y + 1,
-                                   this.sfButton1.ClientRectangle.Width - 2,
-                                   this.sfButton1.ClientRectangle.Height - 2);
+    Rectangle rect = new Rectangle(
+    this.sfButton1.ClientRectangle.X + 1,
+    this.sfButton1.ClientRectangle.Y + 1,
+    this.sfButton1.ClientRectangle.Width - 2,
+    this.sfButton1.ClientRectangle.Height - 2
+    );
     sfButton1.Region = new Region(GetRoundedRect(rect, radius));
     rect = new Rectangle(rect.X + 1, rect.Y + 1, rect.Width - 2, rect.Height - 2);
-    e.Graphics.DrawPath(new Pen(Color.Red), GetRoundedRect(rect, radius));
+
+    Pen borderPen;
+
+    if (!sfButton1.Enabled) // Disabled state
+    {
+        borderPen = new Pen(sfButton1.Style.DisabledBorder.Color);
+    }
+    else if (isPressed) // Pressed state (based on MouseDown)
+    {
+        borderPen = new Pen(sfButton1.Style.PressedBorder.Color);
+    }
+    else if (isHovered) // Hover state (based on MouseHover)
+    {
+        borderPen = new Pen(sfButton1.Style.HoverBorder.Color);
+    }
+    else // Focused state
+    {
+        borderPen = new Pen(sfButton1.Style.FocusedBorder.Color);
+    }
+
+    // Draw the path with the determined border color
+    e.Graphics.DrawPath(borderPen, GetRoundedRect(rect, radius));
+}
+
+private GraphicsPath GetRoundedRect(Rectangle rect, int radius)
+{
+    GraphicsPath graphicsPath = new GraphicsPath();
+
+    // Top-left corner
+    graphicsPath.AddArc(rect.X, rect.Y, radius * 2, radius * 2, 180, 90);
+
+    // Top edge
+    graphicsPath.AddLine(rect.X + radius, rect.Y, rect.Right - radius, rect.Y);
+
+    // Top-right corner
+    graphicsPath.AddArc(rect.Right - radius * 2, rect.Y, radius * 2, radius * 2, 270, 90);
+
+    // Right edge
+    graphicsPath.AddLine(rect.Right, rect.Y + radius, rect.Right, rect.Bottom - radius);
+
+    // Bottom-right corner
+    graphicsPath.AddArc(rect.Right - radius * 2, rect.Bottom - radius * 2, radius * 2, radius * 2, 0, 90);
+
+    // Bottom edge
+    graphicsPath.AddLine(rect.Right - radius, rect.Bottom, rect.X + radius, rect.Bottom);
+
+    // Bottom-left corner
+    graphicsPath.AddArc(rect.X, rect.Bottom - radius * 2, radius * 2, radius * 2, 90, 90);
+
+    // Left edge
+    graphicsPath.AddLine(rect.X, rect.Bottom - radius, rect.X, rect.Y + radius);
+
+    // Close the figure to complete the path
+    graphicsPath.CloseFigure();
+
+    return graphicsPath;
 }
 {% endhighlight %}
 {% endtabs %}
@@ -213,7 +270,7 @@ private void sfButton1_Paint(object sender, PaintEventArgs e)
 
 Refer to the following sample shows how to implement the rounded rectangle in the SfButton control.
 
-[Sample](https://www.syncfusion.com/downloads/support/directtrac/general/SFBUTT~1449710690.ZIP)
+> Note: [View sample in GitHub](https://github.com/SyncfusionExamples/How-to-customize-appearance-of-sfbutton)
 
 **Note**: When using the previous implementation to draw the rounded rectangle, the border customization properties like Border, HoverBorder, PressedBorder, FocusedBorder, and DisabledBorder does not work.
 

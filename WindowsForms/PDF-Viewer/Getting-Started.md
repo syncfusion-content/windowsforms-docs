@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Windows Forms PDF Viewer Control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms PDF Viewer control, its elements and more details.
+title: Getting Started with Windows Forms PDF Viewer | Syncfusion&reg;
+description: Learn here about getting started with Syncfusion<sup>&reg;</sup>; Windows Forms PDF Viewer control, its elements and more details.
 platform: windowsforms
 control: PdfViewerControl
 documentation: ug
@@ -15,10 +15,10 @@ Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/con
 
 ### Installing NuGet packages
 
-Adding reference to Syncfusion assemblies through NuGet packages is illustrated in the [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) section. 
+Adding reference to Syncfusion<sup>&reg;</sup>; assemblies through NuGet packages is illustrated in the [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) section. 
 
 N> Starting with version 23.1.x, a reference to the Syncfusion.PdfToImageConverter.Base assembly is necessary for PdfViewer applications.
-N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [this link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Windows Forms application to use our components.
+N> Starting with v16.2.0.x, if you reference Syncfusion<sup>&reg;</sup>; assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [this link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion&reg; license key in your Windows Forms application to use our components.
 
 ### Adding from the installed location
 
@@ -32,7 +32,7 @@ From v16.3.0x onwards, PDF Viewer uses PDFium as a default rendering engine to r
 
 ### Adding in designer
 
-1. Open your form in the designer. Add the Syncfusion controls to your .NET toolbox in Visual Studio if you haven't done so already (the install would have automatically done this unless you selected not to complete toolbox integration during installation).
+1. Open your form in the designer. Add the Syncfusion<sup>&reg;</sup>; controls to your .NET toolbox in Visual Studio if you haven't done so already (the install would have automatically done this unless you selected not to complete toolbox integration during installation).
    
    ![Windows forms pdfviewer drag and drop from toolbox](Getting-Started_images/Getting-Started_img1.png)
 
@@ -122,7 +122,7 @@ The [PdfDocumentView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Win
 
 ### Adding in designer
 
-1. Open your form in the designer. Add the Syncfusion controls to your .NET toolbox in Visual Studio if you haven't done so already (the install would have automatically done this unless you selected not to complete toolbox integration during installation).
+1. Open your form in the designer. Add the Syncfusion<sup>&reg;</sup>; controls to your .NET toolbox in Visual Studio if you haven't done so already (the install would have automatically done this unless you selected not to complete toolbox integration during installation).
    
    ![Windows forms PdfDocumentView drag and drop from toolbox](Getting-Started_images/Getting-Started_img1.png)
 

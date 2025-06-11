@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Get Around this Behavior in WinForms PopupControlContainer |Syncfusion
-description: Learn here all about how to Get Around this Behavior of Syncfusion Windows Forms PopupControlContainer and more.
-platform: WindowsForms
+title: Get Around this Behavior in WinForms PopupControlContainer |Syncfusion®
+description: Learn here all about how to Get Around this Behavior of Syncfusion® Windows Forms PopupControlContainer and more.
+platform: windowsforms
 control: PopupControlContainer
 documentation: ug
 ---

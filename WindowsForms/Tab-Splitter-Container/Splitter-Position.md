@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Splitter Position in Tab Splitter Container | Syncfusion
-description: Learn about Splitter Position support in Syncfusion Windows Forms Tab Splitter Container control and more details.
-platform: WindowsForms
+title: Splitter Position in Tab Splitter Container | Syncfusion®
+description: Learn about Splitter Position support in Syncfusion® Windows Forms Tab Splitter Container control and more details.
+platform: windowsforms
 control: TabSplitterContainer 
 documentation: ug
 ---

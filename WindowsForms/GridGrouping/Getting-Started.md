@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Windows Forms GridGrouping | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms GridGrouping control, its elements, and more.
+title: Getting Started with Windows Forms GridGrouping | Syncfusion®
+description: Learn here about getting started with Syncfusion® Windows Forms GridGrouping control, its elements, and more.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
@@ -12,7 +12,7 @@ This section will explain about creating simple GridGroupingControl and the over
 
 ## Choosing the Best Grid 
 
-Essential Grid includes a trio of grid controls as well as many other controls that are used in conjunction with these three grids. Essential Grid works similar to Microsoft Excel and allows extremely detailed customization down to the cell level. Multi-level Undo / Redo, Shared Scrollbar support, Data / View separation, floating cells, more than 15 cell types, and unmatched extensibility are the unique features of the Essential Grid.
+Essential<sup>®</sup> Grid includes a trio of grid controls as well as many other controls that are used in conjunction with these three grids. Essential<sup>®</sup> Grid works similar to Microsoft Excel and allows extremely detailed customization down to the cell level. Multi-level Undo / Redo, Shared Scrollbar support, Data / View separation, floating cells, more than 15 cell types, and unmatched extensibility are the unique features of the Essential<sup>®</sup> Grid.
 
 [GridGroupingControl](https://help.syncfusion.com/windowsforms/gridgrouping/getting-started): A high performance grouping grid that offers very flexible support for grouping flat data sources as well as hierarchical data sources. This grid supports expressions fields, filters, multi-column sorting, grouping, nested tables/hierarchies, and custom summaries. It can use any [IList](https://learn.microsoft.com/en-us/dotnet/api/system.collections.ilist?view=net-5.0) data source including [ADO.NET](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/) [DataSet](https://learn.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-5.0)/[DataTables](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-5.0) and [IBindingList](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ilistsource?view=net-5.0) objects.
 

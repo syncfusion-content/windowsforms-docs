@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Style Settings in Windows Forms Calculator control | Syncfusion
-description: Learn about Style Settings support in Syncfusion Essential Studio Windows Forms Calculator control and more details.
-platform: WindowsForms
+title: Style Settings in Windows Forms Calculator control | Syncfusion®
+description: Learn about Style Settings support in Syncfusion® Essential Studio® Windows Forms Calculator control and more details.
+platform: windowsforms
 control: Calculator
 documentation: ug
 ---
@@ -35,7 +35,7 @@ Me.calculatorControl1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
 
 ### Themes for the Calculator Control
 
-Essential Tools [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) is themed by default. To disable, set [ThemesEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_ThemesEnabled) property to false.
+Essential<sup>®</sup> Tools [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) is themed by default. To disable, set [ThemesEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_ThemesEnabled) property to false.
 
 {% tabs %}
 {% highlight c# %}
@@ -89,7 +89,7 @@ Me.calculatorControl1.ButtonStyle = Syncfusion.Windows.Forms.ButtonAppearance.Of
 
 ### OfficeColor Schemes
 
-Essential Tools [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) supports all the three OfficeColorSchemes. When the ButtonStyle is set to Office2007 style, the color schemes will be blue by default. It can be modified using [Office2007Theme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_Office2007Theme) property.
+Essential<sup>®</sup> Tools [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) supports all the three OfficeColorSchemes. When the ButtonStyle is set to Office2007 style, the color schemes will be blue by default. It can be modified using [Office2007Theme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_Office2007Theme) property.
 
 {% tabs %}
 {% highlight c# %}

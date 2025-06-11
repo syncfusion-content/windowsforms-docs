@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Appearance-Customization in Windows Forms Command Bar | Syncfusion
-description: Learn here all about appearance settings feature of Syncfusion Windows Forms Command Bar (CommandBars) control and more.
-platform: WindowsForms
+title: Appearance-Customization in Windows Forms Command Bar | Syncfusion®
+description: Learn here all about appearance settings feature of Syncfusion® Windows Forms Command Bar (CommandBars) control and more.
+platform: windowsforms
 control: CommandBars
 documentation: ug
 ---

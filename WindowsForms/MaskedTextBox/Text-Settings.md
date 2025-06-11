@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Text Settings | WindowsForms | Syncfusion
-description: Learn here about how set the text values to the Syncfusion Windows Forms MaskedEditControl and its features.
-platform: WindowsForms
+title: Text Settings | WindowsForms | Syncfusion®
+description: Learn here about how set the text values to the Syncfusion® Windows Forms MaskedEditControl and its features.
+platform: windowsforms
 control: MaskedEditBox
 documentation: ug
 --- 

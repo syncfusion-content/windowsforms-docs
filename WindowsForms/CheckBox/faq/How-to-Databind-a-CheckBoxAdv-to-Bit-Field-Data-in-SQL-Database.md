@@ -2,7 +2,7 @@
 layout: post
 title: DataBind CheckBoxAdv To BitField SQLDatabase| WindowsForms| Syncfusion
 description: This section gives detailed description on how to databind a CheckBoxAdv to Bit Field in SQL Database.
-platform: WindowsForms
+platform: windowsforms
 control: EditorsPackage
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: About Windows Forms Tab Splitter Container control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms Tab Splitter Container control, its elements and more details.
-platform: WindowsForms
+title: About Windows Forms Tab Splitter Container control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® Windows Forms Tab Splitter Container control, its elements and more details.
+platform: windowsforms
 control: TabSplitterContainer 
 documentation: ug
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to Get the UndoRedo Description | Diagram | Windows Forms | Syncfusion
-description: how to get the undo/redo description?
+title: How to Get the UndoRedo Description | Syncfusion®
+description: Learn how to retrieve descriptions for undo and redo actions using the HistoryManager class's GetUndoDescriptions and GetRedoDescriptions methods.
 platform: windowsforms
 control: Diagram
 documentation: ug

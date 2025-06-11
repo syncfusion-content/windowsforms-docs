@@ -1,7 +1,7 @@
 ---
 layout: post
-title: System Requirements in Windows Forms - Syncfusion
-description: Checkout and learn here all about the system requirements needed to use Syncfusion Windows Forms Components.
+title: System Requirements in Windows Forms - Syncfusion®
+description: Checkout and learn here all about the system requirements needed to use Syncfusion® Windows Forms Components.
 platform: windowsforms
 control: General
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 
 # System Requirement in Windows Forms controls
 
-This section describes the system requirements to use Syncfusion Windows Forms Controls for development.
+This section describes the system requirements to use Syncfusion<sup>®</sup> Windows Forms Controls for development.
 
 ### Operating Systems
 
@@ -33,7 +33,7 @@ This section describes the system requirements to use Syncfusion Windows Forms C
 ### Development Environment
 
 * Microsoft Visual Studio 2015/2017/2019/2022
-* .NET Framework 4.0/4.6.2
-* Lower Syncfusion .NET frameworks can be used in applications because they are compatible with .NET 4.7, .NET 4.7.1, .NET 4.7.2, and .NET 4.8. For example, in the application, the Syncfusion 4.6.2 .NET framework assembly can be referred to as 4.7 or higher target versions.
-* .NET 6.0, .NET 7.0, .NET 8.0, .NET 9.0.
+* .NET Framework 4.6.2
+* Lower Syncfusion<sup>®</sup> .NET frameworks can be used in applications because they are compatible with .NET 4.7, .NET 4.7.1, .NET 4.7.2, and .NET 4.8. For example, in the application, the Syncfusion<sup>®</sup> 4.6.2 .NET framework assembly can be referred to as 4.7 or higher target versions.
+* .NET 8.0, .NET 9.0.
 

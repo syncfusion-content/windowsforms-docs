@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Scrolling in Windows Forms GridGrouping control | Syncfusion
-description: Learn about Scrolling support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
+title: Scrolling in Windows Forms GridGrouping control | Syncfusion®
+description: Learn about Scrolling support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug

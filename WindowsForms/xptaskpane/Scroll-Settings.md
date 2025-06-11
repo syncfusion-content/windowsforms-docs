@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Scroll Settings in Windows Forms xptaskpane control | Syncfusion
-description: Learn about Scroll Settings support in Syncfusion Windows Forms xptaskpane (XPTaskPane) control and more details.
-platform: WindowsForms
+title: Scroll Settings in Windows Forms xptaskpane control | Syncfusion®
+description: Learn about Scroll Settings support in Syncfusion® Windows Forms xptaskpane (XPTaskPane) control and more details.
+platform: windowsforms
 control: Wizard
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Serialize or deserialize the docking state | WindowsForms | Syncfusion
+title: Serialize or deserialize the docking state | WindowsForms | Syncfusion®
 description: Learn here about How to serialize or deserialize the docking state for a docked control on loading the application 
-platform: WindowsForms
+platform: windowsforms
 control: DockingManager
 documentation: ug
 ---

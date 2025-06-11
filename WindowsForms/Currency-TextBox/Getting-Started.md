@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started in Windows Forms Currency TextBox | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms CurrencyTextBox control, its elements and more.
-platform: WindowsForms
+title: Getting Started in Windows Forms Currency TextBox | Syncfusion®
+description: Learn here about getting started with Syncfusion® Windows Forms CurrencyTextBox control, its elements and more.
+platform: windowsforms
 control: CurrencyTextBox
 documentation: ug
 ---

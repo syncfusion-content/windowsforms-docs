@@ -1,8 +1,8 @@
 ---
 layout: post
-title: HTML Tags in Windows Forms Html Viewer control | Syncfusion
-description: Learn about HTML Tags support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
-platform: WindowsForms
+title: HTML Tags in Windows Forms Html Viewer control | Syncfusion®
+description: Learn about HTML Tags support in Syncfusion® Windows Forms Html Viewer (HTMLUI) control and more details.
+platform: windowsforms
 control: HTML UI
 documentation: ug
 ---
@@ -584,7 +584,7 @@ File Location and Name:  C:\MyProjects\HorizRule\rule.html
 
 <body>
 
-<p>Syncfusion</p><hr width=100 size=10 noshade /><p>Essential Studio</p>
+<p>Syncfusion<sup>®</sup></p><hr width=100 size=10 noshade /><p>Essential Studio<sup>®</sup></p>
 
 </body>
 
@@ -1938,7 +1938,7 @@ File Location and Name:  C:\MyProjects\head\title.html
 
 <title>
 
-Syncfusion Essential HTMLUI
+Syncfusion<sup>®</sup> Essential HTMLUI<sup>®</sup>
 
 </title>
 

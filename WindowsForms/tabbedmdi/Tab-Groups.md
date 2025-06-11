@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Tab Groups in Windows Forms TabbedMDI control | Syncfusion
-description: Learn about Tab Groups support in Syncfusion Windows Forms TabbedMDI control, its elements and more details.
-platform: WindowsForms
+title: Tab Groups in Windows Forms TabbedMDI control | Syncfusion®
+description: Learn about Tab Groups support in Syncfusion® Windows Forms TabbedMDI control, its elements and more details.
+platform: windowsforms
 control: TabbedMDIManager 
 documentation: ug
 ---
@@ -19,7 +19,7 @@ The below topics will guide you on how to create tab groups and set borders for 
 
 ## Creating tab groups
 
-* To the application add Tools.Windows and Shared.Base Syncfusion assemblies.
+* To the application add Tools.Windows and Shared.Base Syncfusion<sup>®</sup> assemblies.
 * Add 2 more forms and rename them as TabGroup1_Form and TabGroup2_Form. (The application now contains three forms (i.e.) Form1, TabGroup1_Form and TabGroup2_Form).
 * In Form1, add the namespace Syncfusion.Windows.Forms.Tools.
 

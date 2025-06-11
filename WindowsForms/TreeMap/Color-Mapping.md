@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Color Mapping in Windows Forms TreeMap control | Syncfusion
-description: Learn about Color Mapping support in Syncfusion Windows Forms TreeMap control, its elements and more details.
+title: Color Mapping in Windows Forms TreeMap control | Syncfusion®
+description: Learn about Color Mapping support in Syncfusion® Windows Forms TreeMap control, its elements and more details.
 platform: windowsforms
 control: TreeMap 
 documentation: ug
