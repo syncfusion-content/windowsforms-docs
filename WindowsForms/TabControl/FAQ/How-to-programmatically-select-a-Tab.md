@@ -9,39 +9,99 @@ documentation: ug
 
 # How to programmatically select a tab?
 
-To programmatically select a specific tab in the TabControlAdv, you can use the SelectedIndex property or the SelectedTab property.
+To programmatically select a specific tab in the `TabControlAdv`, you can use the `SelectedIndex` property or the `SelectedTab` property.
 
 > **Note:**  
-> `tabControlAdv1` in the below examples refers to an instance of the [`Syncfusion.Windows.Forms.Tools.TabControlAdv`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) control. Ensure the control is defined in the designer or instantiated in code, and its `Name` property is set to `tabControlAdv1`.
+> `tabControlAdv1` in the below examples refers to an instance of the [`Syncfusion.Windows.Forms.Tools.TabControlAdv`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) control. Make sure this control and its tab pages are properly initialized either via designer or code.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight csharp %}
 
-// Select Second Tab using SelectedTab
-this.tabControlAdv1.SelectedTab = this.tabPageAdv2;
+using System;
+using System.Windows.Forms;
+using Syncfusion.Windows.Forms.Tools;
 
-// OR
+namespace TabControlAdvExample
+{
+    public class MainForm : Form
+    {
+        private TabControlAdv tabControlAdv1;
+        private TabPageAdv tabPageAdv1;
+        private TabPageAdv tabPageAdv2;
 
-// Select Second Tab using SelectedIndex
-this.tabControlAdv1.SelectedIndex = 1;
+        public MainForm()
+        {
+            tabControlAdv1 = new TabControlAdv();
+            tabPageAdv1 = new TabPageAdv() { Text = "Tab 1" };
+            tabPageAdv2 = new TabPageAdv() { Text = "Tab 2" };
+
+            tabControlAdv1.TabPages.Add(tabPageAdv1);
+            tabControlAdv1.TabPages.Add(tabPageAdv2);
+            tabControlAdv1.Dock = DockStyle.Fill;
+
+            this.Controls.Add(tabControlAdv1);
+
+            // Programmatically select the second tab using SelectedIndex
+            tabControlAdv1.SelectedIndex = 1;
+
+            // OR use SelectedTab
+            tabControlAdv1.SelectedTab = tabPageAdv2;
+
+            this.Text = "TabControlAdv Example";
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.Size = new System.Drawing.Size(400, 300);
+        }
+
+        static void Main()
+        {
+            Application.EnableVisualStyles();
+            Application.Run(new MainForm());
+        }
+    }
+}
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
-' Programmatically select a tab inside an event or method
-Private Sub TabControlAdv1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TabControlAdv1.SelectedIndexChanged
+Imports System
+Imports System.Windows.Forms
+Imports Syncfusion.Windows.Forms.Tools
 
-    ' Select Second Tab using SelectedTab
-    Me.tabControlAdv1.SelectedTab = Me.tabPageAdv2
+Public Class MainForm
+    Inherits Form
 
-    ' OR
+    Private tabControlAdv1 As TabControlAdv
+    Private tabPageAdv1 As TabPageAdv
+    Private tabPageAdv2 As TabPageAdv
 
-    ' Select Second Tab using SelectedIndex
-    Me.tabControlAdv1.SelectedIndex = 1
+    Public Sub New()
+        tabControlAdv1 = New TabControlAdv()
+        tabPageAdv1 = New TabPageAdv() With {.Text = "Tab 1"}
+        tabPageAdv2 = New TabPageAdv() With {.Text = "Tab 2"}
 
-End Sub
+        tabControlAdv1.TabPages.Add(tabPageAdv1)
+        tabControlAdv1.TabPages.Add(tabPageAdv2)
+        tabControlAdv1.Dock = DockStyle.Fill
 
+        Me.Controls.Add(tabControlAdv1)
+
+        ' Programmatically select the second tab using SelectedIndex
+        tabControlAdv1.SelectedIndex = 1
+
+        ' OR use SelectedTab
+        tabControlAdv1.SelectedTab = tabPageAdv2
+
+        Me.Text = "TabControlAdv Example"
+        Me.StartPosition = FormStartPosition.CenterScreen
+        Me.Size = New Drawing.Size(400, 300)
+    End Sub
+
+    Public Shared Sub Main()
+        Application.EnableVisualStyles()
+        Application.Run(New MainForm())
+    End Sub
+End Class
 {% endhighlight %}
 
 {% endtabs %}
