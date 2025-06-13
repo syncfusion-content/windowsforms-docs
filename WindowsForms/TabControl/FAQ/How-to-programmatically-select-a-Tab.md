@@ -16,7 +16,7 @@ To programmatically select a specific tab in the `TabControlAdv`, you can use th
 
 {% tabs %}
 
-{% highlight csharp %}
+{% highlight C# %}
 
 using System;
 using System.Windows.Forms;
@@ -62,7 +62,7 @@ namespace TabControlAdvExample
 }
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Imports System
 Imports System.Windows.Forms
