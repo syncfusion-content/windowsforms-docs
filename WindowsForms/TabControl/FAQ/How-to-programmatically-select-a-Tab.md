@@ -11,9 +11,6 @@ documentation: ug
 
 To programmatically select a specific tab in the `TabControlAdv`, you can use the `SelectedIndex` property or the `SelectedTab` property.
 
-> **Note:**  
-> `tabControlAdv1` in the below examples refers to an instance of the [`Syncfusion.Windows.Forms.Tools.TabControlAdv`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) control. Make sure this control and its tab pages are properly initialized either via designer or code.
-
 {% tabs %}
 
 {% highlight C# %}
