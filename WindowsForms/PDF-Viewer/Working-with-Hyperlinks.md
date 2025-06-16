@@ -20,22 +20,22 @@ Event </th><th>
 Description </th><th>
 Arguments </th></tr>
 <tr>
-<td>{{'[HyperlinkMouseOver](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html)'| markdownify }}</td>
+<td>{{'[HyperlinkMouseOver](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_Forms_PdfViewer_PdfViewerControl_HyperlinkMouseOver)'| markdownify }}</td>
 <td>This event is triggered when the mouse pointer is placed over the hyperlink.</td>
 <td>HyperlinkMouseOverEventArgs</td>
 </tr>
 <tr>
-<td>{{'[HyperlinkClicked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html)'| markdownify }}</td>
+<td>{{'[HyperlinkClicked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_Forms_PdfViewer_PdfViewerControl_HyperlinkClicked)'| markdownify }}</td>
 <td>This event is triggered when the hyperlink in the PDF document is clicked.</td>
 <td>HyperlinkClickedEventArgs</td>
 </tr>
 </table>
 
-N> From the version 19.3, The `HyperLinkClickedEventArgs` is renamed to [HyperlinkClickedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.HyperlinkClickedEventArgs.html). Also, We have renamed the `HyperLinkClicked` and `HyperLinkMouseOver` events to [HyperlinkClicked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.HyperLinkClickedEventHandler.html) and [HyperlinkMouseOver](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_Forms_PdfViewer_PdfViewerControl_HyperlinkMouseOver) respectively. Also, We have introduced [HyperlinkMouseOverEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.HyperlinkMouseOverEventArgs.html) to view the details of hyperlink when mouse is over.
+N> From the version 19.3, The `HyperLinkClickedEventArgs` is renamed to [HyperlinkClickedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.HyperlinkClickedEventArgs.html). Also, We have renamed the `HyperLinkClicked` and `HyperLinkMouseOver` events to [HyperlinkClicked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_Forms_PdfViewer_PdfViewerControl_HyperlinkClicked) and [HyperlinkMouseOver](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_Forms_PdfViewer_PdfViewerControl_HyperlinkMouseOver) respectively. Also, We have introduced [HyperlinkMouseOverEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.HyperlinkMouseOverEventArgs.html) to view the details of hyperlink when mouse is over.
 
 ## How to disable hyperlink navigation in PDF Viewer
 
-You can disable the hyperlink navigation in PDF viewer control by setting the value of [Handled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.HyperlinkClickedEventArgs.html#Syncfusion_Windows_Forms_PdfViewer_HyperlinkClickedEventArgs_Handled) in the [HyperlinkClickedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.HyperlinkClickedEventArgs.html) parameter as true in the [HyperlinkClicked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.HyperLinkClickedEventHandler.html) Event which is available in the PdfViewerControl and PdfDocumentView class. 
+You can disable the hyperlink navigation in PDF viewer control by setting the value of [Handled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.HyperlinkClickedEventArgs.html#Syncfusion_Windows_Forms_PdfViewer_HyperlinkClickedEventArgs_Handled) in the [HyperlinkClickedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.HyperlinkClickedEventArgs.html) parameter as true in the [HyperlinkClicked]https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_Forms_PdfViewer_PdfViewerControl_HyperlinkClicked Event which is available in the PdfViewerControl and PdfDocumentView class. 
 Please refer to the following example for more details.
 
 N> From the version 19.3, we have introduced [Handled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.HyperlinkClickedEventArgs.html#Syncfusion_Windows_Forms_PdfViewer_HyperlinkClickedEventArgs_Handled) property in the event arguments to disable the hyperlink navigation based on the standards. You need to change its value to `true` to disable the navigation.
@@ -80,7 +80,7 @@ You can retrieve the hyperlink details from PDF Viewer by using [HyperlinkClicke
 
 ### HyperlinkClicked Event
 
-You can acquire the details of the hyperlink which is clicked in the PDF file by using the [HyperlinkClickedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.HyperlinkClickedEventArgs.html) in the [HyperlinkClicked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.HyperLinkClickedEventHandler.html) event.
+You can acquire the details of the hyperlink which is clicked in the PDF file by using the [HyperlinkClickedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.HyperlinkClickedEventArgs.html) in the [HyperlinkClicked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_Forms_PdfViewer_PdfViewerControl_HyperlinkClicked) event.
 Please refer to the following example for more details.
 
 {% tabs %}
