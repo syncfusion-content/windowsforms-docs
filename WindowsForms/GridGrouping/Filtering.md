@@ -2,7 +2,7 @@
 layout: post
 title: Filtering in Windows Forms GridGrouping control | Syncfusion®
 description: Learn about Filtering support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
-platform: WindowsForms
+platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---
