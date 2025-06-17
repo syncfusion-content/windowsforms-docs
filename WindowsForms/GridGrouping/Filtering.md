@@ -14,7 +14,7 @@ The GridGroupingControl has the filtering support and it is specially designed f
 * [Dynamic filter](#dynamic-filter)
 * [Excel-like filter](#excel-like-filter)
 
-### Setting up a filter bar
+## Setting up a filter bar
 By default, the filter bar row will not be loaded with GridGroupingControl. The filter bar row can be enabled using [ShowFilterBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupOptionsStyleInfo_ShowFilterBar) property. When filter bar is applied, a new row (Filter Row) will be added at the top of the table displaying filter options for the columns in a drop down.
 {% tabs %}
 {% highlight c# %}
