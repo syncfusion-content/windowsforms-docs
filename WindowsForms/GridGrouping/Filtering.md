@@ -14,7 +14,7 @@ The GridGroupingControl has the filtering support and it is specially designed f
 * [Dynamic filter](#dynamic-filter)
 * [Excel-like filter](#excel-like-filter)
 
-### Setting up a filter bar
+## Setting up a filter bar
 By default, the filter bar row will not be loaded with GridGroupingControl. The filter bar row can be enabled using [ShowFilterBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupOptionsStyleInfo_ShowFilterBar) property. When filter bar is applied, a new row (Filter Row) will be added at the top of the table displaying filter options for the columns in a drop down.
 {% tabs %}
 {% highlight c# %}
@@ -27,7 +27,7 @@ Me.gridGroupingControl1.TopLevelGroupOptions.ShowFilterBar = true
 {% endhighlight %}
 {% endtabs %}
 
-### Enabling the filtering for a column
+## Enabling the filtering for a column
 To enable the filtering support for GridGroupingControl, the [AllowFilter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor.html#Syncfusion_Windows_Forms_Grid_Grouping_GridColumnDescriptor_AllowFilter) property should be enabled for the columns that require filter options. This is applicable for all the types of filtering in GridGroupingControl.
 This type of filter is known as `Normal Filter` in which the records can be filtered by selecting the dropdown items.
 {% tabs %}
@@ -46,7 +46,7 @@ column.AllowFilter = true;
 The below screenshot shows the grid is enabled with the normal filter in filter bar row,
 ![Filter enabled in the grid](Filtering_images/Filtering_img1.png)
 
-### Setting up a filter bar for nested table and groups
+## Setting up a filter bar for nested table and groups
 Filter bar row can also be added to the nested tables and groups. To turn on the filter bar for nested tables, set the property `ShowFilterBar` under [NestedTableGroupOptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridEngine.html#Syncfusion_Windows_Forms_Grid_Grouping_GridEngine_NestedTableGroupOptions). For all groups, `ShowFilterBar` under [ChildGroupOptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridEngine.html#Syncfusion_Windows_Forms_Grid_Grouping_GridEngine_ChildGroupOptions) need to be set to `true`.
 {% tabs %}
 {% highlight c# %}
@@ -66,7 +66,7 @@ Me.gridGroupingControl1.ChildGroupOptions.ShowFilterBar = True
 {% endtabs %}
 ![FilterBar for ChildTable](Filtering_images/Filtering_img2.png)
 
-### Removing custom and empty options from the filter bar drop down
+## Removing custom and empty options from the filter bar drop down
 By default the `Custom` and `Empty` options will be displayed in the filter bar drop down. These options can be hidden by using the [FilterRowOptions.AllowCustomFilter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.FilterRowOptions.html#Syncfusion_Windows_Forms_Grid_Grouping_FilterRowOptions_AllowCustomFilter) and [FilterRowOptions.AllowEmptyFilter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.FilterRowOptions.html#Syncfusion_Windows_Forms_Grid_Grouping_FilterRowOptions_AllowEmptyFilter) properties to `false`.
 {% tabs %}
 {% highlight c# %}
