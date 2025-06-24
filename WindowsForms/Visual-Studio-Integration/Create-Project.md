@@ -10,7 +10,7 @@ documentation: ug
 
 # Create WinForms application
 
-Syncfusion® provides the Visual Studio Project Template for the Syncfusion® WinForms platform to create the Syncfusion® WinForms Application by adding the required Syncfusion assemblies and forms. 
+Syncfusion<sup>®</sup> provides a Visual Studio Project Template for the WinForms platform that helps you create Syncfusion<sup>®</sup> WinForms applications by adding the required Syncfusion assemblies and forms. 
 
 I> The Syncfusion® Windows Forms templates are available from v14.3.0.49. 
 
@@ -62,11 +62,11 @@ Use the following steps to create the Syncfusion® Windows Forms project through
 
    **Installed ES Build Version:** Choose the build version to add the corresponding version assemblies to the project.
 
-   N> Installed ES build version option will be available only when you install the Syncfusion® Essential Windows Forms setup and choose the assembly location as Installed Location or GAC.
+   N> The Installed ES build version option is available only when you install the Syncfusion<sup>®</sup> Essential Windows Forms setup and select the assembly location as either Installed Location or GAC.
 
    **Select Window:** Choose the window as required for application.
       
-4. After choosing above project configuration options in the Project Configuration Wizard, click the create button then Syncfusion® WinForms project is created with the necessary XAML files and required Syncfusion® WinForms assemblies/NuGet packages. 
+4. After selecting the above project configuration options in the Project Configuration Wizard, click the Create button. The Syncfusion<sup>®</sup> WinForms project will then be created with the necessary XAML files and required Syncfusion<sup>®</sup> WinForms assemblies and NuGet packages. 
 
    ![Syncfusion Windows Forms project created with required references](Project-Template-images\Syncfusion-Project-Template-Gallery-6.png)
 
