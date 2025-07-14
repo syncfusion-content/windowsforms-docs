@@ -18,7 +18,7 @@ You can change the color and styles of the border of the [TextBoxExt](https://he
 {% highlight c# %}
 
 this.textBoxExt1.Border3DStyle = System.Windows.Forms.Border3DStyle.Raised;
-this.textBoxExt1.BorderColor = System.Drawing.Color.Orchid
+this.textBoxExt1.BorderColor = System.Drawing.Color.Orchid;
 this.textBoxExt1.BorderSides = System.Windows.Forms.Border3DSide.All;
 this.textBoxExt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
