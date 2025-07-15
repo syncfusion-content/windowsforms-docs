@@ -17,19 +17,29 @@ You can change the color and styles of the border of the [TextBoxExt](https://he
 
 {% highlight c# %}
 
-this.textBoxExt1.Border3DStyle = System.Windows.Forms.Border3DStyle.Raised;
-this.textBoxExt1.BorderColor = System.Drawing.Color.Orchid;
-this.textBoxExt1.BorderSides = System.Windows.Forms.Border3DSide.All;
-this.textBoxExt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+TextBoxExt textBoxExt1 = new TextBoxExt();
+textBoxExt1.Location = new System.Drawing.Point(100, 100);
+textBoxExt1.Size = new System.Drawing.Size(100, 20);
+textBoxExt1.Text = "textboxext1";
+textBoxExt1.Border3DStyle = System.Windows.Forms.Border3DStyle.Raised;
+textBoxExt1.BorderColor = System.Drawing.Color.Orchid;
+textBoxExt1.BorderSides = System.Windows.Forms.Border3DSide.All;
+textBoxExt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+this.Controls.Add(textBoxExt1);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Me.textBoxExt1.Border3DStyle = System.Windows.Forms.Border3DStyle.Raised
-Me.textBoxExt1.BorderColor = System.Drawing.Color.Orchid
-Me.textBoxExt1.BorderSides = System.Windows.Forms.Border3DSide.All
-Me.textBoxExt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+Dim textBoxExt1 As New TextBoxExt()
+textBoxExt1.Location = New System.Drawing.Point(100, 100)
+textBoxExt1.Size = New System.Drawing.Size(100, 20)
+textBoxExt1.Text = "textboxext1"
+textBoxExt1.Border3DStyle = System.Windows.Forms.Border3DStyle.Raised
+textBoxExt1.BorderColor = System.Drawing.Color.Orchid
+textBoxExt1.BorderSides = System.Windows.Forms.Border3DSide.All
+textBoxExt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+Me.Controls.Add(textBoxExt1)
 
 {% endhighlight %}
 {% endtabs %}
