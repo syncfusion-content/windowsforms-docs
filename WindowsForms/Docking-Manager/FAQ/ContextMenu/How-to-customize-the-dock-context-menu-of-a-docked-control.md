@@ -104,7 +104,7 @@ End Sub
 
 {% endtabs %}
 
- ![how to customize the dock context menu of a docked control.](Images/Docking-Events_img1.jpeg) 
+ ![](Images/Docking-Events_img1.jpeg) 
 
 
 
