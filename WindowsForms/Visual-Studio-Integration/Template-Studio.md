@@ -64,7 +64,7 @@ Create the Syncfusion® WinForms project using the Visual Studio Project Templat
 
 	To unselect the added control(s), Click ‘x’ for the corresponding control in the control list from the Project Details.
 
-		N> The Control Features option is not accessible for Blank Pages.
+	N> The Control Features option is not accessible for Blank Pages.
 
 7. Click **Next** or navigate to the **Control Features** tab to view the listed features for the selected controls. From here, choose the features needed.
 
