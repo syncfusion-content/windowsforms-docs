@@ -48,10 +48,12 @@ The [ImageSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.
 
 {% tabs %}
 {% highlight c# %}
-// Setting image size to 24x24 pixels
-sfButton1.ImageSize = new Size(24, 24);
+// Setting image size to 15x15 pixels
+sfButton1.ImageSize = new Size(15, 15);
 {% endhighlight %}
 {% endtabs %}
+
+![SfButton_ImageSize](SfButton_images/windows-forms-button-imagesize.jpeg)
 
 ### Auto Resizing
 
@@ -63,6 +65,8 @@ The [AutoSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.C
 sfButton1.AutoSize = true;
 {% endhighlight %}
 {% endtabs %}
+
+![SfButton_AutoSize](SfButton_images/windows-forms-button-autosize.jpeg)
 
 ### Spacing between Text and Image
 
