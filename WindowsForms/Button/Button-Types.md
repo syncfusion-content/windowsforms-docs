@@ -42,6 +42,32 @@ sfButton1.TextImageRelation = TextImageRelation.ImageBeforeText;
 
 ![SfButton_img3](SfButton_images/SfButton_img3.jpeg)
 
+### Customizing Image Size 
+
+The [ImageSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_ImageSize) property allows you to specify the dimensions of the image displayed on the button.
+
+{% tabs %}
+{% highlight c# %}
+// Setting image size to 15x15 pixels
+sfButton1.ImageSize = new Size(15, 15);
+{% endhighlight %}
+{% endtabs %}
+
+![SfButton_ImageSize](SfButton_images/windows-forms-button-imagesize.jpeg)
+
+### Auto Resizing
+
+The [AutoSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_AutoSize) property enables the SfButton to automatically resize itself based on its content, including both text and image. When this property is set to true, the button dynamically adjusts its dimensions to fit the combined size of the image and text.
+
+{% tabs %}
+{% highlight c# %}
+// Enable automatic resizing
+sfButton1.AutoSize = true;
+{% endhighlight %}
+{% endtabs %}
+
+![SfButton_AutoSize](SfButton_images/windows-forms-button-autosize.jpeg)
+
 ### Spacing between Text and Image
 
 The space between the text and image can be adjusted by using the [TextMargin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_TextMargin) and [ImageMargin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_ImageMargin) properties.
