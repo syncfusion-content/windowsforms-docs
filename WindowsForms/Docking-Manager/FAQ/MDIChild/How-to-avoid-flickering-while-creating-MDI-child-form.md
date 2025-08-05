@@ -59,5 +59,5 @@ Me.dockingManager1.UnlockHostFormUpdate()
 
 {% endtabs %}
 
-When multiple UI changes happen rapidly (like docking, resizing, or adding controls), the form may redraw several times, causing flickering. By locking updates during these operations, you ensure that the form redraws only once, after all changes are complete.
+When multiple UI changes happen rapidly (like docking, resizing, or adding controls), the form may redraw several times, causing flickering. By locking updates during these operations, allowing the form to redraw only once, after all changes are complete.
 
