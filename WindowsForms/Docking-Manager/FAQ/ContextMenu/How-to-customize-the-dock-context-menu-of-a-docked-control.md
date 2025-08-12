@@ -1,8 +1,7 @@
 ---
 layout: post
-title: How to customize the dock context menu of a docked control | WindowsForms | Syncfusion®
-description: How to customize the dock context menu of a docked control
-platform: windowsforms
+title: How to customize the dock context menu of a docked control 
+description: Check out and learn here all about how to customize the dock context menu of a docked control and much more.
 control: DockingManager
 documentation: ug
 ---
@@ -104,7 +103,7 @@ End Sub
 
 {% endtabs %}
 
- ![](Images/Docking-Events_img1.jpeg) 
+ ![ContextMenu of the Docked controls.](Images/Docking-Events_img1.jpeg) 
 
 
 
