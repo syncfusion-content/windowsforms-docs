@@ -1,7 +1,7 @@
 ---
 layout: post
 title: .NET Core | DesignTime | Windows Forms | Syncfusion®
-description: Learn here about Microsoft SDK Package for .NET Core Design-Time Features
+description: Learn about Microsoft's WinForms Designer SDK Package for .NET Core Design-Time Features, usage, and key advantages.
 platform: windowsforms
 control: .NET Core
 documentation: ug
