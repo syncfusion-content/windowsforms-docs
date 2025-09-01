@@ -138,3 +138,5 @@ Yes
 </td>
 </tr>
 </table>
+
+N> The listed package assemblies are built against the Designer SDK to provide integrated support for designer functionalities.
