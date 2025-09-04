@@ -96,3 +96,21 @@ Me.doubleTextBox1.UseUserOverride = True
 {% endtabs %}
 
 ![Double textbox culture](DoubleTextBox-images/DoubleTextBox-Culture.png)
+
+## Hiding the trail zeros
+
+The HideTrailingZeros property allows control over the display of trailing zeros in decimal values. When set to true, the DoubleTextBox displays only the significant digits of the value, hiding any trailing zeros.
+
+{% tabs %}
+{% highlight C# %}  
+// Hides the trailing zeros.
+this.doubleTextBox1.HideTrailingZeros = true;
+{% endhighlight %}
+{% highlight VB %} 
+' Hides the trailing zeros.
+Me.doubleTextBox1.HideTrailingZeros = True
+{% endhighlight %}
+{% endtabs %}
+
+![Double textbox culture](DoubleTextBox-images/Hiding_zeros.png)
+
