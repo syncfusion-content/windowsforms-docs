@@ -184,7 +184,6 @@ background-color:transparent!important;
   </tr>
   <tr>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/sparkline/gettingstarted">Sparkline</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/spreadsheet/getting-started">Spreadsheet</a> </td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/wizard-control/getting-started">Wizard Control</a> </td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/spell-checker/getting-started">Spell Checker</a> </td>
   </tr>
