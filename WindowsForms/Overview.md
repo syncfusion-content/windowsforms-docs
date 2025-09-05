@@ -190,15 +190,15 @@ background-color:transparent!important;
   </tr>
   <tr>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/treemap/getting-started">TreeMap</a> </td>
+    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/html-viewer/getting-started">HTML Viewer</a> </td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/xptaskbar/creating-an-xptaskbar">XPTaskBar</a> </td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/folder-browser/getting-started">Folder Browser</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/skins/getting-started">Skins</a> </td>
   </tr>
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/html-viewer/getting-started">HTML Viewer</a> </td>
+    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/skins/getting-started">Skins</a> </td>
+    <td></td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/xptaskpane/creating-a-simple-xptaskpane">XPTaskPane</a></td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/radial-menu/getting-started">Radial Slider</a> </td>
-    <td></td>
   </tr>
   <tr>
     <td></td>
