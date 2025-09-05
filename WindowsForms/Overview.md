@@ -7,7 +7,7 @@ control: Introduction
 documentation: ug
 ---
 
-> With the 2025 Volume 1 release, we will discontinue support for .NET 6.0 and 7.0 in WinForms, WPF, WinUI, and Document Processing Libraries. Please plan to upgrade to .Net 8.0 or higher.
+> With the 2025 Volume 1 release, we will discontinue support for .NET 6.0 and 7.0 in WinForms, WPF, WinUI, and Document Processing Libraries. Please plan to upgrade to .NET 8.0 or higher.
 
 # Welcome to Syncfusion<sup>®</sup> Essential<sup>®</sup> Windows Forms
 
@@ -184,19 +184,19 @@ background-color:transparent!important;
   </tr>
   <tr>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/sparkline/gettingstarted">Sparkline</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/spreadsheet/getting-started">Spreadsheet</a> </td>
+    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/syntax-editor/getting-started">Syntax Editor</a> </td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/wizard-control/getting-started">Wizard Control</a> </td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/spell-checker/getting-started">Spell Checker</a> </td>
   </tr>
   <tr>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/treemap/getting-started">TreeMap</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/syntax-editor/getting-started">Syntax Editor</a> </td>
+    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/html-viewer/getting-started">HTML Viewer</a> </td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/xptaskbar/creating-an-xptaskbar">XPTaskBar</a> </td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/folder-browser/getting-started">Folder Browser</a> </td>
   </tr>
   <tr>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/skins/getting-started">Skins</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/html-viewer/getting-started">HTML Viewer</a> </td>
+    <td></td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/xptaskpane/creating-a-simple-xptaskpane">XPTaskPane</a></td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/radial-menu/getting-started">Radial Slider</a> </td>
   </tr>
