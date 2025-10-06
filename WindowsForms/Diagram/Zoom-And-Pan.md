@@ -255,7 +255,7 @@ zoomTool.ZoomIncrement = 10
 
 #### Reset Zoom
 
-You can reset the zooming operation using the ZoomToActual() method of the view. Programmatically, it is implemented as follows:
+You can reset the zooming value using the ZoomToActual() method of the view. Programmatically, it is implemented as follows:
 
 {% tabs %}
 {% highlight c# %}
@@ -291,9 +291,9 @@ Sample diagram is as follows.
 
 ![Diagram Panning](Zoom-And-Pan_images/Zoom-And-Pan_img6.jpeg)
 
-#### Reset Zoom
+#### Reset Pan
 
-You can reset the panning operation by setting the view origin and scroll bounds to their default values. Programmatically, it is implemented as follows:
+You can reset the panning value by setting the view origin and scroll bounds to their default values. Programmatically, it is implemented as follows:
 
 {% tabs %}
 {% highlight c# %}
