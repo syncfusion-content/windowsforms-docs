@@ -253,6 +253,19 @@ zoomTool.ZoomIncrement = 10
 
 ![Diagram Zooming particular region using Zoom-Tool](Zoom-And-Pan_images/Zoom-And-Pan_img5.png)
 
+#### Reset Zoom
+
+You can reset the zooming value using the ZoomToActual() method of the view. Programmatically, it is implemented as follows:
+
+{% tabs %}
+{% highlight c# %}
+
+diagram1.View.ZoomToActual();
+
+{% endhighlight %}
+{% endtabs %}
+
+
 ## Panning Support
 
 Pan tool allows the user to drag the diagram and hence scroll it in any direction. 
@@ -278,3 +291,23 @@ Sample diagram is as follows.
 
 
 ![Diagram Panning](Zoom-And-Pan_images/Zoom-And-Pan_img6.jpeg)
+
+#### Reset Pan
+
+You can reset the panning value by setting the view origin and scroll bounds to their default values. Programmatically, it is implemented as follows:
+
+{% tabs %}
+{% highlight c# %}
+
+this.diagram1.BeginUpdate();
+this.diagram1.Controller.View.Origin = new PointF(0, 0);
+this.diagram1.Controller.View.ScrollVirtualBounds = new RectangleF(0, 0, 0, 0);
+//Deactivate pan tool and activate select tool
+this.diagram1.ActivateTool("SelectTool");
+this.diagram1.EndUpdate();
+
+
+{% endhighlight %}
+{% endtabs %}
+
+This code resets the diagram’s view to the top-left corner and clears any virtual scrolling bounds. It also switches the active tool back to the SelectTool, ensuring that the panning mode is deactivated.
