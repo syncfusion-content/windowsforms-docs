@@ -27,7 +27,22 @@ Syncfusion<sup>®</sup> Version </th>
 .NET 6.0</th><th>
 .NET 7.0</th><th>
 .NET 8.0</th><th>
-.NET 9.0</th></tr>
+.NET 9.0</th><th>
+.NET 10.0</th></tr>
+
+<tr>
+<td>
+From 31.2 (2025 Vol3 SP)</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td><td>
+No</td><td>
+No</td><td>
+No</td><td>
+No</td><td>
+No</td><td>
+Yes</td></tr>
 
 <tr>
 <td>
@@ -40,7 +55,8 @@ Yes</td><td>
 No</td><td>
 No</td><td>
 Yes</td><td>
-Yes</td></tr>
+Yes</td><td>
+No</td></tr>
 
 <tr>
 <td>
@@ -53,7 +69,8 @@ Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
-Yes</td></tr>
+Yes</td><td>
+No</td></tr>
 
 <tr>
 <td>
@@ -66,7 +83,8 @@ Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
-Yes</td></tr>
+Yes</td><td>
+No</td></tr>
 
 <tr>
 <td>
@@ -79,6 +97,7 @@ Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
+No</td><td>
 No</td></tr>
 
 <tr>
@@ -91,6 +110,7 @@ Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
+No</td><td>
 No</td><td>
 No</td></tr>
 
@@ -105,6 +125,7 @@ Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 No</td><td>
+No</td><td>
 No</td></tr>
 
 <tr>
@@ -118,6 +139,7 @@ Yes</td><td>
 Yes</td><td>
 No</td><td>
 No</td><td>
+No</td><td>
 No</td></tr>
 
 <tr>
@@ -128,6 +150,7 @@ Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
+No</td><td>
 No</td><td>
 No</td><td>
 No</td><td>
@@ -144,6 +167,7 @@ Yes</td><td>
 No</td><td>
 No</td><td>
 No</td><td>
+No</td><td>
 No</td></tr>
 
 <tr>
@@ -154,6 +178,7 @@ Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
+No</td><td>
 No</td><td>
 No</td><td>
 No</td><td>
@@ -170,6 +195,7 @@ No</td><td>
 No</td><td>
 No</td><td>
 No</td><td>
+No</td><td>
 No</td></tr>
 
 <tr>
@@ -178,6 +204,7 @@ Earlier Version</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
+No</td><td>
 No</td><td>
 No</td><td>
 No</td><td>
