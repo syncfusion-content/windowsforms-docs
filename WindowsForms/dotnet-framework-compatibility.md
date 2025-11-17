@@ -33,15 +33,15 @@ Syncfusion<sup>®</sup> Version </th>
 <tr>
 <td>
 From 31.2 (2025 Vol3 SP)</td><td>
+No</td><td>
+No</td><td>
+No</td><td>
+No</td><td>
+Yes</td><td>
+No</td><td>
+No</td><td>
 Yes</td><td>
 Yes</td><td>
-Yes</td><td>
-Yes</td><td>
-No</td><td>
-No</td><td>
-No</td><td>
-No</td><td>
-No</td><td>
 Yes</td></tr>
 
 <tr>
