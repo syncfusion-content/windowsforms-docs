@@ -2,7 +2,7 @@
 layout: post
 title: SyncfusionWinFormsAssistant MCP Server | Syncfusion
 description: Learn how to configure and use SyncfusionWinFormsAssistant MCP server for intelligent code generation, documentation, and troubleshooting in WindowsForms apps.
-platform: WindowsForms
+platform: Windows Forms
 control: Getting started with SyncfusionWinFormsAssistant MCP Server
 documentation: ug
 ---
