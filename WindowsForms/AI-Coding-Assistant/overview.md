@@ -66,5 +66,5 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant is desi
 
 ## See also
 
-* Add the [SyncfusionWinFormsAssistant MCP Server](https://help.syncfusion.com/windowsforms/ai-coding-assistant/mcp-server) to an MCP-enabled client.
+* Add the **SyncfusionWinFormsAssistant MCP Server** to an MCP-enabled client.
 * [Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms Documentation](https://help.syncfusion.com/windowsforms/overview).
