@@ -2,7 +2,7 @@
 layout: post
 title: Syncfusion AI Coding Assistant Overview | Syncfusion
 description: Learn how Syncfusion AI Coding Assistant boost Windows Forms productivity by generating accurate code snippets, configuration examples, and contextual guidance.
-platform: Windows Forms
+platform: WinForms
 control: Syncfusion AI Coding Assistant Overview.
 documentation: ug
 ---
