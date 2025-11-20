@@ -48,6 +48,9 @@ The [WizardControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windo
 
 ![Drag and drop the wizard control to form](Getting-Started_images/GettingStarted-img2.png)
 
+N> In .NET Core, the Wizard control’s Collection Editor displays the title “ControlProxy`1 CollectionEditor” instead of “WizardControlPage CollectionEditor.” This is a known issue that does not affect functionality; it has been logged, and we will provide updates as they become available. 
+GitHub - [Issue #14049](https://github.com/dotnet/winforms/issues/14049)
+
 ## Adding control manually in code
 
 To add control manually in C#, follow the given steps:
