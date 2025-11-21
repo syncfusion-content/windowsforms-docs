@@ -25,6 +25,8 @@ To create a StatusBarAdv control through designer,
 
    ![Run the application in WindowsForms-Status Bar](overview_images/windowsforms-status-bar-run-application.jpeg) 
    
+N> In .NET Core, the StatusBarAdv control’s Collection Editor displays the title “ControlProxy`1 CollectionEditor” instead of “StatusBarAdvPanel CollectionEditor.” This is a known issue that does not affect functionality; it has been logged, and we will provide updates as they become available. 
+GitHub - [Issue #14049](https://github.com/dotnet/winforms/issues/14049)
    
 ## Through code
 
