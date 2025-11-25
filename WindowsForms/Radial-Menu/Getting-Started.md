@@ -53,6 +53,9 @@ Menu items can be added into RadialMenu using `Items` collection in Smart Tags o
 
 ![Adding Menu Items in windows forms radial menu](Getting-Started_images/RadialMenu-img3.png) 
 
+N> In .NET Core, when adding child items to a RadialMenuItem directly from the Visual Studio Properties window, the default Collection Editor opens instead of the expected editor.
+Workaround: Use the main RadialMenu Collection Editor to add items, then configure the child items as needed. A permanent fix is in progress.
+
 ## Adding control manually using code
 
 To add control manually in C#, follow the given steps:
