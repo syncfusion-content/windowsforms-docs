@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion AI Coding Assistant Prompt Library | Syncfusion
-description: Explore the AI Coding Assistant Prompt Library to enhance Windows Forms development productivity with code generation, configuration examples, and contextual guidance.
+description: Explore the AI Coding Assistant PromptLibrary to enhance WinForms development productivity with code generation, configuration examples and contextual guidance.
 control: Syncfusion AI Coding Assistant Prompt Library
 platform: WindowsForms
 documentation: ug
@@ -142,7 +142,7 @@ The Syncfusion WinForms Diagram is a powerful, extensible, and feature-rich libr
 #SyncfusionWinFormsAssistant How to add ports to a custom symbol?
 {% endpromptcard %}
 {% promptcard Export %}
-#SyncfusionWinFormsAssistant How tp Export a Diagram into a Word Document?
+#SyncfusionWinFormsAssistant How to Export a Diagram into a Word Document?
 {% endpromptcard %}
 {% promptcard Print %}
 #SyncfusionWinFormsAssistant How to print a Diagram in a single page?
