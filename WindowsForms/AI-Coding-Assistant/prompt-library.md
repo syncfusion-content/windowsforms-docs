@@ -46,9 +46,6 @@ The Syncfusion WinForms Data Grid delivers fast, flexible tables for large datas
 {% promptcard Multicolumn Grid Setup %}
 #SyncfusionWinFormsAssistant Create a multicolumn Grid to display product details with sorting and filtering.
 {% endpromptcard %}
-{% promptcard Chat Integration %}
-#SyncfusionWinFormsAssistant How can I integrate a chat widget inside each row of the Syncfusion Grid?
-{% endpromptcard %}
 {% promptcard Advanced Grid Features %}
 #SyncfusionWinFormsAssistant Show me a Grid with paging, sorting, grouping, filtering, and virtual scrolling
 {% endpromptcard %}
@@ -58,14 +55,8 @@ The Syncfusion WinForms Data Grid delivers fast, flexible tables for large datas
 {% promptcard Inline Editing %}
 #SyncfusionWinFormsAssistant How do I enable inline editing for CRUD operations in the Grid?
 {% endpromptcard %}
-{% promptcard Custom Toolbar %}
-#SyncfusionWinFormsAssistant Add custom toolbar buttons for PDF and Excel export in the Grid.
-{% endpromptcard %}
 {% promptcard Dynamic Column Configuration %}
 #SyncfusionWinFormsAssistant How can I dynamically configure multicolumn layout with filtering and sorting?
-{% endpromptcard %}
-{% promptcard Drag and drop support %}
-#SyncfusionWinFormsAssistant How to Drag and Drop a Row in WinForms DataGrid??
 {% endpromptcard %}
 {% endpromptcards %}
 
@@ -157,54 +148,105 @@ The Syncfusion WinForms Diagram is a powerful, extensible, and feature-rich libr
 
 ### Ribbon
 
-The Syncfusion WinForms Ribbon is a command bar that organizes an application’s commands and tools into a series of tabs. It also supports a backstage view as like in Microsoft Office products.
-
+The Syncfusion WinForms Ribbon is an Office-inspired command bar that organizes features into tabs and groups, supports BackStage, Quick Access Toolbar, KeyTips, themes, and High DPI.
+ 
 {% promptcards %}
-{% promptcard Add ribbon items in Ribbon control %}
-#SyncfusionWinFormsAssistant How to add element like ribbon tab, ribbon group, ribbon button, ribbon drop-down button, ribbon combo-box in Syncfusion Ribbon control?
+{% promptcard Add ribbon items in Ribbon %}
+#SyncfusionWinFormsAssistant How to add RibbonTab, ToolStripEx (group), ToolStripButton, ToolStripDropDownButton, ToolStripSplitButton, ToolStripComboBox, and ToolStripGallery items in Ribbon?
 {% endpromptcard %}
-{% promptcard Application menu %}
-#SyncfusionWinFormsAssistant How to add the items to ribbon application menu in WinForms Ribbon control?
+{% promptcard Application menu (BackStage) %}
+#SyncfusionWinFormsAssistant How to add and configure the BackStage (application menu) with tabs, buttons, and recent items in Ribbon?
 {% endpromptcard %}
-{% promptcard Quick Access ToolBar %}
-#SyncfusionWinFormsAssistant How to add an item to the Quick Access Toolbar in WinForms Ribbon control?
+{% promptcard Quick Access Toolbar %}
+#SyncfusionWinFormsAssistant How to add, remove, and customize items in the Quick Access Toolbar (QAT) for Ribbon?
 {% endpromptcard %}
-{% promptcard ScreenTip %}
-#SyncfusionWinFormsAssistant How to create ScreenTip for the ribbon items in WinForms Ribbon control?
+{% promptcard ScreenTip / SuperToolTip %}
+#SyncfusionWinFormsAssistant How to create and assign ScreenTips or SuperToolTips for ribbon items in Ribbon?
 {% endpromptcard %}
-{% promptcard KeyTip %}
-#SyncfusionWinFormsAssistant How to set KeyTip in the WinForms Ribbon control?
+{% promptcard KeyTips %}
+#SyncfusionWinFormsAssistant How to enable and customize KeyTips (keyboard access keys) for Ribbon items?
 {% endpromptcard %}
 {% promptcard Serialization %}
-#SyncfusionWinFormsAssistant How to handle state persistence in the WinForms Ribbon control?
+#SyncfusionWinFormsAssistant How to save and restore the Ribbon layout, QAT, and BackStage state between application sessions?
 {% endpromptcard %}
-{% promptcard Simplified Layout %}
-#SyncfusionWinFormsAssistant Enabling simplified layout in Syncfusion Ribbon component.
+{% promptcard Contextual Tabs %}
+#SyncfusionWinFormsAssistant How to add contextual (category) ribbon tabs and show/hide them at runtime in Ribbon?
 {% endpromptcard %}
-{% promptcard Ribbon Merging %}
-#SyncfusionWinFormsAssistant Merging RibbonTab and RibbonBar of two different Ribbon controls in MDI applications.
+{% promptcard Galleries %}
+#SyncfusionWinFormsAssistant How to create a Ribbon gallery with item preview, grouping, and selection handling in Ribbon?
+{% endpromptcard %}
+{% promptcard Themes and High DPI %}
+#SyncfusionWinFormsAssistant How to apply Office/Fluent themes and ensure proper High DPI scaling in Ribbon?
+{% endpromptcard %}
+{% promptcard Simplified / Collapsed layout %}
+#SyncfusionWinFormsAssistant How to enable simplified or collapsed layout with automatic resizing rules in Ribbon?
+{% endpromptcard %}
+{% promptcard Ribbon Merging (MDI) %}
+#SyncfusionWinFormsAssistant How to merge parent and MDI child ribbon tabs/groups dynamically in Ribbon?
+{% endpromptcard %}
+{% promptcard Custom caption and form integration %}
+#SyncfusionWinFormsAssistant How to integrate Ribbon with Form title bar, custom caption buttons, and window icon behavior?
+{% endpromptcard %}
+{% promptcard Localization and RTL %}
+#SyncfusionWinFormsAssistant How to localize Ribbon text/resources and enable right-to-left (RTL) layout?
+{% endpromptcard %}
+{% promptcard Runtime item management %}
+#SyncfusionWinFormsAssistant How to add, remove, or reorder ribbon tabs, groups, and items programmatically at runtime?
+{% endpromptcard %}
+{% promptcard Keyboard and shortcuts %}
+#SyncfusionWinFormsAssistant How to assign keyboard shortcuts and handle command routing for Ribbon items?
 {% endpromptcard %}
 {% endpromptcards %}
 
 ### Docking Manager
 
 The Syncfusion WinForms Docking Manager provides an interface to create Visual Studio like dockable windows in your applications.
-
+ 
 {% promptcards %}
-{% promptcard Data Binding %}
-#SyncfusionWinFormsAssistant how to add child window through data binding in Syncfusion Docking Manager.
+{% promptcard Add dock panels programmatically %}
+#SyncfusionWinFormsAssistant How to create and add dockable panels (UserControl/Control) programmatically to Docking Manager?
 {% endpromptcard %}
-{% promptcard Dock support %}
-#SyncfusionWinFormsAssistant Enabling or Disabling the Dock functionality in Syncfusion Docking Manager.
+{% promptcard Dock support control %}
+#SyncfusionWinFormsAssistant How to enable or disable docking for specific controls or globally in Docking Manager?
 {% endpromptcard %}
 {% promptcard Drag support %}
-#SyncfusionWinFormsAssistant How to enable or or disable the dragging functionality of a window.
+#SyncfusionWinFormsAssistant How to enable or disable drag/resize behavior for docked windows in Docking Manager?
 {% endpromptcard %}
-{% promptcard Hosting a Windows Form control %}
-#SyncfusionWinFormsAssistant Show me how to host windows form control in Syncfusion Docking Manager. 
+{% promptcard Float and auto-hide programmatically %}
+#SyncfusionWinFormsAssistant How to float, auto-hide, or restore a docked window via code in Docking Manager?
 {% endpromptcard %}
-{% promptcard Serialization %}
-#SyncfusionWinFormsAssistant How to handle state persistence in the WinForms Docking Manager control?
+{% promptcard Tabbed documents %}
+#SyncfusionWinFormsAssistant How to create tabbed document windows and manage document groups in Docking Manager?
+{% endpromptcard %} 
+{% promptcard Prevent close or customize caption %}
+#SyncfusionWinFormsAssistant How to prevent closing certain dock windows and customize caption text, icons, and buttons in Docking Manager?
+{% endpromptcard %}
+{% promptcard Context menu customization %}
+#SyncfusionWinFormsAssistant How to disable or customize the dock window/tab context menu in Docking Manager?
+{% endpromptcard %}
+{% promptcard Events for state changes %}
+#SyncfusionWinFormsAssistant Which events track dock state changes (docked, floating, auto-hide, closed) and how to handle them in Docking Manager?
+{% endpromptcard %}
+{% promptcard Serialization / Layout persistence %}
+#SyncfusionWinFormsAssistant How to save and restore Docking Manager layout to file/stream and handle versioned changes?
+{% endpromptcard %}
+{% promptcard Multi-monitor and bounds %}
+#SyncfusionWinFormsAssistant How to persist and restore floating windows across multiple monitors and handle out-of-bounds recovery in Docking Manager?
+{% endpromptcard %}
+{% promptcard Theming and High DPI %}
+#SyncfusionWinFormsAssistant How to apply themes/skins and ensure High DPI scaling for Docking Manager windows and tabs?
+{% endpromptcard %}
+{% promptcard Runtime add/remove panels %}
+#SyncfusionWinFormsAssistant How to dynamically add and remove dock panels at runtime and update layout in Docking Manager?
+{% endpromptcard %}
+{% promptcard Restrict docking targets %}
+#SyncfusionWinFormsAssistant How to restrict where a panel can dock (left/right/top/bottom/tabbed) or disallow floating in Docking Manager?
+{% endpromptcard %}
+{% promptcard Persist per user or profile %}
+#SyncfusionWinFormsAssistant How to maintain separate Docking Manager layouts per user or profile and switch at runtime?
+{% endpromptcard %}
+{% promptcard Performance and memory %}
+#SyncfusionWinFormsAssistant What are best practices to improve performance and avoid memory leaks when frequently adding/removing docked panels in Docking Manager?
 {% endpromptcard %}
 {% endpromptcards %}
 
