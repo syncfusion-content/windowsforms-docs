@@ -45,7 +45,8 @@ The Syncfusion WinForms DataGrid provides fast, flexible tabular views for large
 {% endpromptcard %} 
 {% promptcard Multicolumn Grid Setup %} 
 #SyncfusionWinFormsAssistant Create a multicolumn Grid to display product details with sorting and filtering. 
-{% endpromptcard %} {% promptcard Advanced Grid Features %} 
+{% endpromptcard %} 
+{% promptcard Advanced Grid Features %} 
 #SyncfusionWinFormsAssistant Show me a Grid with paging, sorting, grouping, filtering, and virtual scrolling. 
 {% endpromptcard %} 
 {% promptcard Troubleshooting Grid Export %} 
@@ -89,7 +90,7 @@ The Syncfusion WinForms Chart suite offers versatile visualizations across many 
 #SyncfusionWinFormsAssistant Enable tooltips and data labels in a Syncfusion WinForms Chart. 
 {% endpromptcard %} 
 {% promptcard Animation Support %} 
-#SyncfusionWinFormsAssistant How to enable animations in WinForms Charts to make visualization more engaging? 
+#SyncfusionWinFormsAssistant Enable animations in WinForms Charts to make visualization more engaging? 
 {% endpromptcard %} 
 {% promptcard Drill-Down Support %} 
 #SyncfusionWinFormsAssistant How to implement drill-down functionality in WinForms Charts for detailed exploration? 
@@ -114,10 +115,10 @@ The Syncfusion WinForms Diagram library is powerful, extensible, and feature-ric
 #SyncfusionWinFormsAssistant How to populate the Diagram from a database or XML data? 
 {% endpromptcard %} 
 {% promptcard Nodes %} 
-#SyncfusionWinFormsAssistant How to create a custom symbol in the Syncfusion Diagram component? 
+#SyncfusionWinFormsAssistant Create a custom symbol in the Syncfusion Diagram component.
 {% endpromptcard %} 
 {% promptcard ToolTip Support for Nodes %} 
-#SyncfusionWinFormsAssistant How to display tooltips for symbols in the Syncfusion Diagram component? 
+#SyncfusionWinFormsAssistant Show how to display tooltips for symbols in the Syncfusion Diagram component? 
 {% endpromptcard %} 
 {% promptcard Connectors Customization %} 
 #SyncfusionWinFormsAssistant How to customize connector styles? 
@@ -151,16 +152,16 @@ The Syncfusion WinForms Ribbon is an Office-inspired command bar with tabs and g
 
 {% promptcards %} 
 {% promptcard Add Ribbon Items %} 
-#SyncfusionWinFormsAssistant How to add RibbonTab, ToolStripEx (group), ToolStripButton, ToolStripDropDownButton, ToolStripSplitButton, ToolStripComboBox, and ToolStripGallery items to the Ribbon? 
+#SyncfusionWinFormsAssistant Add RibbonTab, ToolStripEx (group), ToolStripButton, ToolStripDropDownButton, ToolStripSplitButton, ToolStripComboBox, and ToolStripGallery items to the Ribbon? 
 {% endpromptcard %} 
 {% promptcard Application Menu (Backstage) %} 
-#SyncfusionWinFormsAssistant How to add and configure the Backstage (application menu) with tabs, buttons, and recent items in the Ribbon? 
+#SyncfusionWinFormsAssistant Configure the Backstage (application menu) with tabs, buttons, and recent items in the Ribbon.
 {% endpromptcard %} 
 {% promptcard Quick Access Toolbar %} 
-#SyncfusionWinFormsAssistant How to add, remove, and customize items in the Quick Access Toolbar (QAT)? 
+#SyncfusionWinFormsAssistant Add, remove, and customize items in the Quick Access Toolbar (QAT).
 {% endpromptcard %} 
 {% promptcard ScreenTip / SuperToolTip %} 
-#SyncfusionWinFormsAssistant How to create and assign ScreenTips or SuperToolTips for Ribbon items? 
+#SyncfusionWinFormsAssistant Configure ScreenTips or SuperToolTips on Ribbon items.
 {% endpromptcard %} 
 {% promptcard KeyTips %}
 #SyncfusionWinFormsAssistant How to enable and customize KeyTips (keyboard access keys) for Ribbon items? 
