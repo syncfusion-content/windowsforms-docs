@@ -190,7 +190,7 @@ N> `FrozenColumnCount` and `FooterColumnCount` should be lesser than the number 
 
 
 ## Row Drag and Drop
-WinForms DataGrid allows drag and drop the rows within and between controls by setting the **AllowDraggingRows** and **AllowDrop** property as true. It is also possible to drag and drop the rows between datagrid and other controls such as **ListView**. SfDataGrid allows dropping rows when **AllowDrop** is true and allows dragging when **AllowDraggingRows** is true.
+WinForms DataGrid allows drag and drop the rows within and between controls by setting the **AllowDraggingRows** and **AllowDrop** property as true. It is also possible to drag and drop the rows between datagrid and `ListView`. SfDataGrid allows dropping rows when **AllowDrop** is true and allows dragging when **AllowDraggingRows** is true.
 
 {% tabs %}
 {% highlight c# %}
@@ -207,11 +207,11 @@ While dropping, the dragged records can be added above or below to the target re
 
 For example, if you dropped record at the bottom of the targeted record, it will be added below the targeted record.
 
-![Row Drag and Drop - Drop Below](DragAndDrop_images/RowDragAndDrag_Image1.png)
+![Row Drag and Drop - Drop Below](DragAndDrop_images/RowDragAndDrag_Image2.png)
 
 If you drop at the top of the targeted record, it will be added above the targeted record.
 
-![Row Drag and Drop - Drop Above](DragAndDrop_images/RowDragAndDrag_Image2.png)
+![Row Drag and Drop - Drop Above](DragAndDrop_images/RowDragAndDrag_Image1.png)
 
 ### Dragging multiple rows
 
@@ -334,8 +334,8 @@ private void RowDragDropController_DragStart(object sender, GridRowDragStartEven
     var records = e.DraggingRecords;
     var order= records[0] as OrderInfo;
     // You can restrict the dragging for certain rows based on the record value also. 
-    var rowIndex = this.sfDataGrid1.TableControl.ResolveToRowIndex(orders);
-    var recordIndex = this.sfDataGrid1.TableControl.ResolveToRecordIndex(rowIndex);
+    var rowIndex = this.sfDataGrid.TableControl.ResolveToRowIndex(orders);
+    var recordIndex = this.sfDataGrid.TableControl.ResolveToRecordIndex(rowIndex);
     if (recordIndex > 5)
         e.Handled = true;
 }
@@ -354,8 +354,8 @@ private void RowDragDropController_Drop(object sender, GridRowDropEventArgs e)
 {
     var record = e.TargetRecord;
     //You can restrict the dropping for certain rows based on the target record index.
-    var rowIndex = this.sfDataGrid1.TableControl.ResolveToRowIndex(record);
-    var recordIndex = this.sfDataGrid1.TableControl.ResolveToRecordIndex(rowIndex);
+    var rowIndex = this.sfDataGrid.TableControl.ResolveToRowIndex(record);
+    var recordIndex = this.sfDataGrid.TableControl.ResolveToRecordIndex(rowIndex);
     if (recordIndex > 5)
       e.Handled = true;
 }
@@ -439,4 +439,4 @@ N> The `CrossGridDropAction` property applies only when rows are dragged between
 - When grouping is applied, dragging multiple rows is allowed only when all selected rows are within the same group.
 - In Master-Details view, row drag-and-drop is supported only within the same DetailsViewDataGrid. 
 - Cross-hierarchical drag-and-drop (between master and detail views) is not allowed.
-- Cross-sfDataGrid Drop is not supported when grouping is applied in either of the grids.
+- Cross-Grid Drop is not supported when grouping is applied in either of the grids.

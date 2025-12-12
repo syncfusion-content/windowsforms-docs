@@ -994,6 +994,7 @@ End Sub
 
 N> `FrozenColumnCount` and `FooterColumnCount` should be lesser than the number of columns that can be displayed in view.
 
+
 ## Stacked Headers
 SfDataGrid supports additional unbound header rows known as [StackedHeaderRows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.StackedHeaderRows.html) that span across the DataGrid columns using `StackedHeaderRows`. SfDataGrid allows to group one or more columns under each stacked header. Each `StackedHeaderRow` contains the [StackedColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.StackedColumns.html) where each [StackedColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.StackedColumn.html) contains a number of child columns.
 [StackedColumn.ChildColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.StackedColumn.html#Syncfusion_WinForms_DataGrid_StackedColumn_ChildColumns) property returns the columns which are grouped under the stacked header row. [StackedColumn.HeaderText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.StackedColumn.html#Syncfusion_WinForms_DataGrid_StackedColumn_HeaderText) returns the text that displays in stacked header row.
