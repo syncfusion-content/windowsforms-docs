@@ -38,6 +38,14 @@ The [ParentBarItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windo
 
 ![ParentBarItem](Adding-menu-items-via-designer-images/parentBarItem.gif)
 
+### Arrange controls through drag and drop within form
+
+`ParentBarItem` can be dragged and dropped into a custom form through the `Customize` dialog. This functionality simplifies the process of adding and organizing bar items within the application.
+
+![ParentBarItemNetCore](Adding-menu-items-via-designer-images/parentBarItemNetCore.gif)
+
+Note: This UI is only applicable for `.NET Core`.
+
 ## Adding drop down item
 
 The [DropDownBarItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.DropDownBarItem.html) is a type of bar item, which will display a popup menu when clicked. A custom control can also be loaded and displayed when the menu item is clicked. This can be done by assigning the required component to the [PopupControlContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.DropDownBarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_DropDownBarItem_PopupControlContainer) property of the drop down bar item.
