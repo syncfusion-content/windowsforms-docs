@@ -806,6 +806,194 @@ Me.sfDataGrid.Columns("ProductName").Visible = False
 {% endtabs %}
 ![ProductName column is hidden in winforms datagrid](Columns_images/HiddenColumn.png)
 
+## Column Drag and Drop
+SfDataGrid allow end-users to rearrange the columns by drag and drop the column headers by setting [SfDataGrid.AllowDraggingColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowDraggingColumns) to true.
+{% tabs %}
+{% highlight c# %}
+sfDataGrid.AllowDraggingColumns = true;
+{% endhighlight %}
+{% highlight vb %}
+sfDataGrid.AllowDraggingColumns = True
+{% endhighlight %}
+{% endtabs %}
+![Windows form datagrid showing drag-and-drop the column](Columns_images/ColumnDragAndDrop_img1.png)
+
+The drag and drop operation for particular column can be enabled or disabled using the [AllowDragging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_AllowDragging) property.
+{% tabs %}
+{% highlight c# %}
+sfDataGrid.Columns[0].AllowDragging = false;
+{% endhighlight %}
+{% highlight vb %}
+sfDataGrid.Columns(0).AllowDragging = False
+{% endhighlight %}
+{% endtabs %}
+
+### Disable Column Reordering
+The [ColumnDragging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ColumnDragging) event occurs when start dragging the column header. The dragging operation of the particular column can canceled by handling the `ColumnDragging` event. [ColumnDraggingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.ColumnDraggingEventArgs.html) of `ColumnDragging` event provides information about the column triggered this event.
+
+#### Cancel Dragging Operation
+SfDataGrid allow to cancel dragging operation for particular column by handling the `ColumnDragging` event when the `e.Reason` is `ColumnDraggingAction.DragStarting`.
+{% tabs %}
+{% highlight c# %}
+sfDataGrid.ColumnDragging += sfDataGrid_ColumnDragging;
+
+void sfDataGrid_ColumnDragging(object sender, Syncfusion.WinForms.DataGrid.Events.ColumnDraggingEventArgs e)
+{
+    var column = sfDataGrid.Columns[e.From];
+    if (column.MappingName == "OrderID" && e.Reason == ColumnDraggingAction.DragStarting)
+    {
+        e.Cancel = true;
+    }
+}
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid.ColumnDragging, AddressOf sfDataGrid_ColumnDragging
+
+Private Sub sfDataGrid_ColumnDragging(ByVal sender As Object, ByVal e As Syncfusion.WinForms.DataGrid.Events.ColumnDraggingEventArgs)
+	Dim column = sfDataGrid.Columns(e.From)
+
+	If column.MappingName = "OrderID" AndAlso e.Reason = ColumnDraggingAction.DragStarting Then
+		e.Cancel = True
+	End If
+End Sub
+{% endhighlight %}
+{% endtabs %}
+
+#### Cancel Column Reordering
+SfDataGrid allow to cancel dropping a column at particular column by handling the `ColumnDragging` event with `e.Reason` is `ColumnDraggingAction.Dropping`.
+{% tabs %}
+{% highlight c# %}
+sfDataGrid.ColumnDragging += sfDataGrid_ColumnDragging;
+
+void sfDataGrid_ColumnDragging(object sender, Syncfusion.WinForms.DataGrid.Events.ColumnDraggingEventArgs e)
+{
+    if (e.Reason == ColumnDraggingAction.Dropping)
+    {
+        var column = sfDataGrid.Columns[e.To];
+        if (column.MappingName == "ProductName")
+        {
+            e.Cancel = true;
+        }
+    }
+}
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid.ColumnDragging, AddressOf sfDataGrid_ColumnDragging
+
+Private Sub sfDataGrid_ColumnDragging(ByVal sender As Object, ByVal e As Syncfusion.WinForms.DataGrid.Events.ColumnDraggingEventArgs)
+	If e.Reason = ColumnDraggingAction.Dropping Then
+		Dim column = sfDataGrid.Columns(e.To)
+
+		If column.MappingName = "ProductName" Then
+			e.Cancel = True
+		End If
+	End If
+End Sub
+{% endhighlight %}
+{% endtabs %}
+### Drag and Drop Customization
+The drag-and-drop operations can be changed by overriding the virtual methods of [ColumnDragDropController](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Interactivity.ColumnDragDropController.html) class and assigning it to [SfDataGrid.ColumnDragDropController](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ColumnDragDropController).
+{% tabs %}
+{% highlight c# %}
+
+sfDataGrid.ColumnDragDropController = new CustomDragAndDropController(sfDataGrid.TableControl, sfDataGrid.GroupPanel);
+
+public class CustomDragAndDropController : ColumnDragDropController
+{
+    public CustomDragAndDropController(TableControl tableControl, GroupPanel groupPanel)
+        : base(tableControl, groupPanel)
+    {
+    }
+
+    protected override bool CanShowPopup(GridColumn column)
+    {
+        if (column.MappingName == "UnitPrice")
+            return false;
+        return base.CanShowPopup(column);
+    }
+
+    protected override void PopupDroppedOnHeaderRow(int oldIndex, int newIndex)
+    {
+        if (newIndex == 0)
+            return;
+        base.PopupDroppedOnHeaderRow(oldIndex, newIndex);
+    }
+
+    protected override void PopupDroppedOnGroupDropArea(GridColumn draggingColumn, MouseEventArgs e)
+    {
+        if (draggingColumn.MappingName == "OrderID")
+            return;
+        base.PopupDroppedOnGroupDropArea(draggingColumn, e);
+    }
+}
+{% endhighlight %}
+{% highlight vb %}
+sfDataGrid.ColumnDragDropController = New CustomDragAndDropController(sfDataGrid.TableControl, sfDataGrid.GroupPanel)
+
+public class CustomDragAndDropController : ColumnDragDropController
+	public CustomDragAndDropController(TableControl tableControl, GroupPanel groupPanel)
+		MyBase.New(tableControl, groupPanel)
+
+
+	protected override Boolean CanShowPopup(GridColumn column)
+		If column.MappingName = "UnitPrice" Then
+			Return False
+		End If
+		Return MyBase.CanShowPopup(column)
+
+	protected override void PopupDroppedOnHeaderRow(Integer oldIndex, Integer newIndex)
+		If newIndex = 0 Then
+			Return
+		End If
+		MyBase.PopupDroppedOnHeaderRow(oldIndex, newIndex)
+
+	protected override void PopupDroppedOnGroupDropArea(GridColumn draggingColumn, MouseEventArgs e)
+		If draggingColumn.MappingName = "OrderID" Then
+			Return
+		End If
+		MyBase.PopupDroppedOnGroupDropArea(draggingColumn, e)
+{% endhighlight %}
+{% endtabs %}
+
+### Disabling Drag and Drop between Frozen and Non-frozen Columns
+
+By default, the columns re-ordering performed between any column regions of columns. The dropping action can cancel between the frozen and non-frozen columns by handling `SfDataGrid.ColumnDragging` event.
+{% tabs %}
+{% highlight c# %}
+sfDataGrid.ColumnDragging += sfDataGrid_ColumnDragging;
+
+void sfDataGrid_ColumnDragging(object sender, Syncfusion.WinForms.DataGrid.Events.ColumnDraggingEventArgs e)
+{
+    if (e.Reason == ColumnDraggingAction.Dropping)
+    {
+        var frozenColIndex = this.sfDataGrid.FrozenColumnCount + this.sfDataGrid.TableControl.ResolveToStartColumnIndex();
+        if (e.From < frozenColIndex && e.To > frozenColIndex - 1)
+            e.Cancel = true;
+        if (e.From > frozenColIndex && e.To < frozenColIndex || (e.From == frozenColIndex && e.To < frozenColIndex))
+            e.Cancel = true;
+    }
+}
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid.ColumnDragging, AddressOf sfDataGrid_ColumnDragging
+
+Private Sub sfDataGrid_ColumnDragging(ByVal sender As Object, ByVal e As Syncfusion.WinForms.DataGrid.Events.ColumnDraggingEventArgs)
+	If e.Reason = ColumnDraggingAction.Dropping Then
+		Dim frozenColIndex = Me.sfDataGrid.FrozenColumnCount + Me.sfDataGrid.TableControl.ResolveToStartColumnIndex()
+		If e.From < frozenColIndex AndAlso e.To > frozenColIndex - 1 Then
+			e.Cancel = True
+		End If
+		If e.From > frozenColIndex AndAlso e.To < frozenColIndex OrElse (e.From Is frozenColIndex AndAlso e.To < frozenColIndex) Then
+			e.Cancel = True
+		End If
+	End If
+End Sub
+{% endhighlight %}
+{% endtabs %}
+
+
+N> `FrozenColumnCount` and `FooterColumnCount` should be lesser than the number of columns that can be displayed in view.
+
 ## Stacked Headers
 SfDataGrid supports additional unbound header rows known as [StackedHeaderRows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.StackedHeaderRows.html) that span across the DataGrid columns using `StackedHeaderRows`. SfDataGrid allows to group one or more columns under each stacked header. Each `StackedHeaderRow` contains the [StackedColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.StackedColumns.html) where each [StackedColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.StackedColumn.html) contains a number of child columns.
 [StackedColumn.ChildColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.StackedColumn.html#Syncfusion_WinForms_DataGrid_StackedColumn_ChildColumns) property returns the columns which are grouped under the stacked header row. [StackedColumn.HeaderText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.StackedColumn.html#Syncfusion_WinForms_DataGrid_StackedColumn_HeaderText) returns the text that displays in stacked header row.

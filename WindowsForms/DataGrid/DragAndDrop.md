@@ -1,4 +1,4 @@
-# Drag and Drop
+# Drag and Drop in WinForms DataGrid (SfDataGrid)
 
 ## Column Drag and Drop
 SfDataGrid allow end-users to rearrange the columns by drag and drop the column headers by setting [SfDataGrid.AllowDraggingColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowDraggingColumns) to true.
@@ -203,13 +203,13 @@ Me.sfDataGrid.AllowDrop = True
 {% endhighlight %}
 {% endtabs %}
 
-While dropping, the dragged records can be added above or below to the target record based on its drop position.
+While dropping, the dragged records can be added above or below to the target record based on its drop indicator.
 
 For example, if you dropped record at the bottom of the targeted record, it will be added below the targeted record.
 
 ![Row Drag and Drop - Drop Below](DragAndDrop_images/RowDragAndDrag_Image1.png)
 
-If you drop above the targeted record, it will be added above the targeted record.
+If you drop at the top of the targeted record, it will be added above the targeted record.
 
 ![Row Drag and Drop - Drop Above](DragAndDrop_images/RowDragAndDrag_Image2.png)
 
@@ -332,7 +332,7 @@ this.sfDataGrid.RowDragDropController.DragStart += RowDragDropController_DragSta
 private void RowDragDropController_DragStart(object sender, GridRowDragStartEventArgs e)
 {
     var records = e.DraggingRecords;
-    var orders = records[0] as OrderInfo;
+    var order= records[0] as OrderInfo;
     // You can restrict the dragging for certain rows based on the record value also. 
     var rowIndex = this.sfDataGrid1.TableControl.ResolveToRowIndex(orders);
     var recordIndex = this.sfDataGrid1.TableControl.ResolveToRecordIndex(rowIndex);
@@ -430,3 +430,13 @@ You can able row drag-and-drop between two SfDataGrid controls and control the b
 - **CrossGridDropAction.Move** : The dragged records are removed from the source grid and inserted into the target grid.
 - **CrossGridDropAction.Copy** :  The dragged records are copied to the target grid without removing them from the source grid.
 
+N> The `CrossGridDropAction` property applies only when rows are dragged between two `SfDataGrid` controls. Dragging from other controls (such as `ListView`) into an SfDataGrid does not support these actions.
+
+![Dragging multiple rows](DragAndDrop_images/RowDragAndDrag_Image5.png)
+
+### Limitations
+- When grouping is applied, records cannot be dropped into a different group.
+- When grouping is applied, dragging multiple rows is allowed only when all selected rows are within the same group.
+- In Master-Details view, row drag-and-drop is supported only within the same DetailsViewDataGrid. 
+- Cross-hierarchical drag-and-drop (between master and detail views) is not allowed.
+- Cross-sfDataGrid Drop is not supported when grouping is applied in either of the grids.
