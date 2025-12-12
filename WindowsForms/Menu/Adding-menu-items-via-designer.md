@@ -13,14 +13,14 @@ This section provides a quick overview to add the menu items to a [Menu](https:/
 
 The MainFrameBarManager can be added to the application by drag and dropping from the tool box to the design form. The following required assembly references will be added automatically.
 
-* Syncfusion.Grid.Base.dll
-* Syncfusion.Grid.Windows.dll
-* Syncfusion.Shared.Base.dll
-* Syncfusion.Shared.Windows.dll
-* Syncfusion.Tools.Base.dll
-* Syncfusion.Tools.Windows.dll
-* Syncfusion.Licensing.dll
-* Syncfusion.SpellChecker.Base.dll
+-   Syncfusion.Grid.Base.dll
+-   Syncfusion.Grid.Windows.dll
+-   Syncfusion.Shared.Base.dll
+-   Syncfusion.Shared.Windows.dll
+-   Syncfusion.Tools.Base.dll
+-   Syncfusion.Tools.Windows.dll
+-   Syncfusion.Licensing.dll
+-   Syncfusion.SpellChecker.Base.dll
 
 ![Menu control selection from toolbox](Adding-menu-items-via-designer-images/menuControl_ToolBox_Selection.png)
 
@@ -37,6 +37,12 @@ The [Bar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.T
 The [ParentBarItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem.html) is a type of [bar item](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html), that acts as a parent component for child bar items and sub-menu.
 
 ![ParentBarItem](Adding-menu-items-via-designer-images/parentBarItem.gif)
+
+### .NET Core
+
+In .NET Core, the WinForms designer runs out of process. As a result, drag-and-drop inside the form surface may not work. We enhanced the designer to support drag-and-drop in a custom form, and you can also add ParentBarItem via the Customize dialog.
+
+![ParentBarItemNetCore](Adding-menu-items-via-designer-images/parentBarItemNetCore.gif)
 
 ## Adding drop down item
 

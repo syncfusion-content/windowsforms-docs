@@ -441,6 +441,14 @@ Me.dockingManager1.LoadDesignerDockState()
 
 {% endtabs %}
 
+## Restore to current state
+
+When the DockingManager loads a saved layout using the LoadDockState method, deserialization may fail if any error occurs. To handle this, we have implemented a feature that prevents applying partial layout changes. Instead, the current layout remains intact to preserve the user’s state.
+
+Return Value:
+`true` – The layout was successfully loaded and applied.
+`false` – Loading failed; no changes were applied. When loading fails, the docking layout remains unchanged.
+
 ## Serialize dynamically added children
 
 By default, the docking manager cannot deserialize its saved layout properly, when its child collection is modified after the DockState is saved.
