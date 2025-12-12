@@ -38,11 +38,13 @@ The [ParentBarItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windo
 
 ![ParentBarItem](Adding-menu-items-via-designer-images/parentBarItem.gif)
 
-### .NET Core
+### Arrange controls through drag and drop within form
 
-In .NET Core, the WinForms designer runs out of process. As a result, drag-and-drop inside the form surface may not work. We enhanced the designer to support drag-and-drop in a custom form, and you can also add ParentBarItem via the Customize dialog.
+`ParentBarItem` can be dragged and dropped into a custom form through the `Customize` dialog. This functionality simplifies the process of adding and organizing bar items within the application.
 
 ![ParentBarItemNetCore](Adding-menu-items-via-designer-images/parentBarItemNetCore.gif)
+
+Note: This UI is only applicable for `.NET Core`.
 
 ## Adding drop down item
 
