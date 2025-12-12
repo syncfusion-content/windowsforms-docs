@@ -13,14 +13,14 @@ This section provides a quick overview to add the menu items to a [Menu](https:/
 
 The MainFrameBarManager can be added to the application by drag and dropping from the tool box to the design form. The following required assembly references will be added automatically.
 
--   Syncfusion.Grid.Base.dll
--   Syncfusion.Grid.Windows.dll
--   Syncfusion.Shared.Base.dll
--   Syncfusion.Shared.Windows.dll
--   Syncfusion.Tools.Base.dll
--   Syncfusion.Tools.Windows.dll
--   Syncfusion.Licensing.dll
--   Syncfusion.SpellChecker.Base.dll
+* Syncfusion.Grid.Base.dll
+* Syncfusion.Grid.Windows.dll
+* Syncfusion.Shared.Base.dll
+* Syncfusion.Shared.Windows.dll
+* Syncfusion.Tools.Base.dll
+* Syncfusion.Tools.Windows.dll
+* Syncfusion.Licensing.dll
+* Syncfusion.SpellChecker.Base.dll
 
 ![Menu control selection from toolbox](Adding-menu-items-via-designer-images/menuControl_ToolBox_Selection.png)
 
