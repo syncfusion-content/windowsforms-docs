@@ -176,6 +176,10 @@ Me.numericTextBox.NumberFormatInfo = New CultureInfo("de-DE").NumberFormat
 
 ![Formatting the value](Gettingstarted_images/Formatting.png)
 
+N>The [SfNumericTextBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html) control preserves the full precision of the assigned value in its [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html#Syncfusion_WinForms_Input_SfNumericTextBox_Value) property while displaying the formatted value in the text box. This ensures that you can use the exact value for future calculations without losing accuracy. The Value property will only update when the user edits the value.
+
+![Formatting the value](Gettingstarted_images/FullPrecisionValue.png)
+
 ## Watermark
 
 SfNumericTextBox comes with the in-built watermark support. [WatermarkText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html#Syncfusion_WinForms_Input_SfNumericTextBox_WatermarkText) helps to display the details about what value need to enter. [WatermarkText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html#Syncfusion_WinForms_Input_SfNumericTextBox_WatermarkText) property allows to show the watermark for the control when the value of the control is set to null.
