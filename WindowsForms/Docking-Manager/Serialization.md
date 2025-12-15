@@ -443,7 +443,7 @@ Me.dockingManager1.LoadDesignerDockState()
 
 ## Restore to current state
 
-When the `DockingManager` loads a saved layout using the [LoadDockState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_LoadDockState) method, the process may fail if an error occurs during deserialization. In such cases, the layout is not applied, and the current docking layout remains unchanged to ensure a consistent user experience.
+When the `DockingManager` load a saved layout using the [LoadDockState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_LoadDockState) method, the process may fail if an error occurs during deserialization. In such cases, the saved layout is not applied, and the current docking layout remains unchanged to ensure a consistent user experience.
 
 The LoadDockState method returns `true` when the layout is successfully loaded and applied. If loading fails, the method returns `false`, and no changes are made to the existing layout.
 
