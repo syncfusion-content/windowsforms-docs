@@ -190,7 +190,7 @@ N> `FrozenColumnCount` and `FooterColumnCount` should be lesser than the number 
 
 
 ## Row Drag and Drop
-WinForms DataGrid allows drag and drop the rows within and between controls by setting the **AllowDraggingRows** and **AllowDrop** property as true. It is also possible to drag and drop the rows between datagrid and `ListView`. SfDataGrid allows dropping rows when **AllowDrop** is true and allows dragging when **AllowDraggingRows** is true.
+WinForms DataGrid allows drag and drop the rows within and between controls by setting the **AllowDraggingRows** and **AllowDrop** property as true. It is also possible to drag and drop the rows between datagrids. SfDataGrid allows dropping rows when **AllowDrop** is true and allows dragging when **AllowDraggingRows** is true.
 
 {% tabs %}
 {% highlight c# %}
