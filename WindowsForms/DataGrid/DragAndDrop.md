@@ -198,7 +198,7 @@ End Sub
 N> `FrozenColumnCount` and `FooterColumnCount` should be lesser than the number of columns that can be displayed in view.
 
 
-# Row Drag and Drop
+## Row Drag and Drop
 WinForms DataGrid allows drag and drop the rows within and between controls by setting the [AllowDraggingRows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowDraggingRows) and [AllowDrop](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowDrop) property as true. It is also possible to drag and drop the rows between datagrids. SfDataGrid allows dropping rows when [AllowDrop](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowDrop) is true and allows dragging when [AllowDraggingRows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowDraggingRows) is true.
 
 {% tabs %}
@@ -230,11 +230,11 @@ N> The drag selection cannot be performed while the [AllowDraggingRows](https://
 
 ![Dragging multiple rows](DragAndDrop_images/RowDragAndDrag_Image3.png)
 
-## Drag and drop events
+### Drag and drop events
 
 SfDataGrid triggers the following events when drag and drop:
 
-### Drag start event
+#### Drag start event
 
 [DragStart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Interactivity.RowDragDropController.html#Syncfusion_WinForms_DataGrid_Interactivity_RowDragDropController_DragStart) event occurs when you start to drag the records in datagrid. The [GridRowDragStartEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.GridRowDragStartEventArgs.html) has the following member, which provides information for the `DragStart` event.
 
@@ -250,7 +250,7 @@ private void RowDragDropController_DragStart(object sender, GridRowDragStartEven
 {% endhighlight %}
 {% endtabs %}
 
-### Drag over event
+#### Drag over event
 
 [DragOver](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Interactivity.RowDragDropController.html#Syncfusion_WinForms_DataGrid_Interactivity_RowDragDropController_DragOver) event occurs continuously while record is dragged within the target SfDataGrid. The [GridRowDragOverEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.GridRowDragOverEventArgs.html) has the following members, which provide information for the `DragOver` event.
 
@@ -270,7 +270,7 @@ private void RowDragDropController_DragOver(object sender, GridRowDragOverEventA
 {% endhighlight %}
 {% endtabs %}
 
-### Drag leave event
+#### Drag leave event
 
 [DragLeave](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Interactivity.RowDragDropController.html#Syncfusion_WinForms_DataGrid_Interactivity_RowDragDropController_DragLeave) event occurs when leave a drag-and-drop operation.The [GridRowDragLeaveEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.GridRowDragLeaveEventArgs.html) has the following members, which provide information for the `DragLeave` event.
 
@@ -289,7 +289,7 @@ private void RowDragDropController_DragLeave(object sender, GridRowDragLeaveEven
 {% endhighlight %}
 {% endtabs %}
 
-### Drop event
+#### Drop event
 
 [Drop](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Interactivity.RowDragDropController.html#Syncfusion_WinForms_DataGrid_Interactivity_RowDragDropController_Drop) event occurs when a record is dropping within the target SfDataGrid.The [GridRowDropEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.GridRowDropEventArgs.html) has the following members, which provide information for the `Drop` event.
 
@@ -309,7 +309,7 @@ private void RowDragDropController_Drop(object sender, GridRowDropEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-### Dropped event
+#### Dropped event
 
 [Dropped](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Interactivity.RowDragDropController.html#Syncfusion_WinForms_DataGrid_Interactivity_RowDragDropController_Dropped) event occurs when a record is dropping within the target SfDataGrid. The [GridRowDroppedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.GridRowDroppedEventArgs.html) has the following members, which provide information for the Drop event.
 
@@ -328,9 +328,9 @@ private void RowDragDropController_Dropped(object sender, GridRowDroppedEventArg
 {% endhighlight %}
 {% endtabs %}
 
-## Customizing row drag and drop operation
+### Customizing row drag and drop operation
 
-### Disable dragging of certain rows in WinForms DataGrid
+#### Disable dragging of certain rows in WinForms DataGrid
 
 You can restrict the dragging of certain rows in SfDataGrid by using the [GridRowDragDropController.DragStart event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Interactivity.RowDragDropController.html#Syncfusion_WinForms_DataGrid_Interactivity_RowDragDropController_DragStart).
 
@@ -351,7 +351,7 @@ private void RowDragDropController_DragStart(object sender, GridRowDragStartEven
 {% endhighlight %}
 {% endtabs %}
 
-### Disable dropping over certain rows in WinForms DataGrid
+#### Disable dropping over certain rows in WinForms DataGrid
 
 You can restrict the dropping the records in certain rows in SfDataGrid by using the [GridRowDragDropController.Drop event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Interactivity.RowDragDropController.html#Syncfusion_WinForms_DataGrid_Interactivity_RowDragDropController_Drop).
 
@@ -371,7 +371,7 @@ private void RowDragDropController_Drop(object sender, GridRowDropEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-### Disable the default drag UI
+#### Disable the default drag UI
 
 You can disable the draggable popup by setting the ShowDragUI as false in the DragOver event of [GridRowDragDropController.DragOver event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Interactivity.RowDragDropController.html#Syncfusion_WinForms_DataGrid_Interactivity_RowDragDropController_DragOver).
 
@@ -386,7 +386,7 @@ private void RowDragDropController_DragOver(object sender, GridRowDragOverEventA
 {% endhighlight %}
 {% endtabs %}
 
-### Customizing the Drag Preview Row
+#### Customizing the Drag Preview Row
 
 You can customize the appearance of the drag preview row by overriding the [DrawDragPreviewRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Interactivity.RowDragDropController.html#Syncfusion_WinForms_DataGrid_Interactivity_RowDragDropController_DrawDragPreviewRow_Syncfusion_WinForms_DataGrid_TableControl_System_Collections_Generic_List_System_Int32__) method. 
 
@@ -433,7 +433,7 @@ public class CustomizedRowDragDropController : RowDragDropController
 
 ![Customized Drag Preview Row](DragAndDrop_images/RowDragAndDrag_Image4.png)
 
-## Row drag and drop between two DataGrids
+### Row drag and drop between two DataGrids
 
 You can able row drag-and-drop between two SfDataGrid controls and control the behavior when dropping into another grid using the [CrossGridDropAction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_CrossGridDropAction) property:
 - [CrossGridDropAction.Move](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Enums.CrossGridDropAction.html#fields) : The dragged records are removed from the source grid and inserted into the target grid.
@@ -441,9 +441,12 @@ You can able row drag-and-drop between two SfDataGrid controls and control the b
 
 N> The `CrossGridDropAction` property applies only when rows are dragged between two `SfDataGrid` controls. Dragging from other controls (such as `ListView`) into an SfDataGrid does not support these actions.
 
-![Dragging multiple rows](DragAndDrop_images/RowDragAndDrag_Image5.png)
+![Drag and Drop Between Grids](DragAndDrop_images/RowDragAndDrag_Image5.png)
 
-## Row drag and drop between DataGrid and ListView
+You can download the [sample](https://github.com/SyncfusionExamples/How-to-drag-and-drop-rows-between-two-DataGrids-in-WinForms).
+
+
+### Row drag and drop between DataGrid and ListView
 
 To perform dragging between the ListView and SfDataGrid, by using the [GridRowDragDropController.Drop event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Interactivity.RowDragDropController.html#Syncfusion_WinForms_DataGrid_Interactivity_RowDragDropController_Drop) and you must set the `AllowDrop` property as true in the `ListView` while doing the drag and drop operation from `SfDataGrid` with `ListView` control.
 
@@ -467,25 +470,53 @@ private void ListView_ItemDrag(object sender, ItemDragEventArgs e)
 
 private void listView_DragDrop(object sender, DragEventArgs e)
 {
-    var dragged = new List<OrderInfo>();
-    var draggedItem = (ListViewItem)e.Data.GetData(typeof(ListViewItem));
+    var droppedRecords = new List<OrderInfo>();
+    var draggedListViewItem = (ListViewItem)e.Data.GetData(typeof(ListViewItem));
+
+    // Track whether the source is SfDataGrid
+    bool isFromDataGrid = false;
     if (e.Data.GetDataPresent("Records"))
     {
-        var obj = e.Data.GetData("Records");
-        if (obj is OrderInfo one)
-            dragged.Add(one);
-        else if (obj is System.Collections.IEnumerable seq)
-            foreach (var x in seq) if (x is OrderInfo o) dragged.Add(o);
-    }
-    if(draggedItem!=null) 
-    {
-        dragged.Add((OrderInfo)draggedItem.Tag);
-        listView.Items.Remove(draggedItem);
+        isFromDataGrid = true;
+        var data = e.Data.GetData("Records");
+        if (data is OrderInfo order)
+        {
+            droppedRecords.Add(order);
+        }
+        else if (data is System.Collections.IEnumerable sequence)
+        {
+            foreach (var item in sequence)
+            if (item is OrderInfo orderInSequence)
+                droppedRecords.Add(orderInSequence);
+        }
     }
 
-    foreach (var o in dragged)
-    { 
-        listView.Items.Add(new ListViewItem(o.ShipCountry ?? string.Empty) { Tag = o });
+    // If dragged from ListView, remove the original item
+    if (draggedListViewItem != null)
+    {
+        if (draggedListViewItem.Tag is OrderInfo orderFromTag)
+            droppedRecords.Add(orderFromTag);
+        listView.Items.Remove(draggedListViewItem);
+    }
+
+    // Insert into ListView
+    foreach (var order in droppedRecords)
+    {
+        listView.Items.Add(new ListViewItem(order.ShipCountry ?? string.Empty) { Tag = order });
+    }
+
+    // If the records came from SfDataGrid, remove them from the grid's source
+    if (isFromDataGrid)
+    {
+        var source = sfDataGrid.View?.SourceCollection as System.Collections.IList;
+        if (source != null)
+        {
+            foreach (var order in droppedRecords)
+            {
+                if (source.Contains(order))
+                    source.Remove(order);
+            }
+        }
     }
 }
 
@@ -532,7 +563,9 @@ private void RowDragDropController_Drop(object sender, GridRowDropEventArgs e)
 
 ![Drag and Drop Between DataGrid and ListView](DragAndDrop_images/RowDragAndDrag_Image6.png)
 
-## Limitations
+You can download the [sample](https://github.com/SyncfusionExamples/How-to-drag-and-drop-rows-between-DataGrid-and-ListView-in-WinForms).
+
+### Limitations
 - When grouping is applied, records cannot be dropped into a different group.
 - When grouping is applied, dragging multiple rows is allowed only when all selected rows are within the same group.
 - In Master-Details view, row drag-and-drop is supported only within the same DetailsViewDataGrid. 
