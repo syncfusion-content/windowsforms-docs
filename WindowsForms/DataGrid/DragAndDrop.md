@@ -449,41 +449,6 @@ To perform dragging between the ListView and SfDataGrid, by using the [GridRowDr
 
 {% tabs %}
 {% highlight c# %}
-this.sfDataGrid.RowDragDropController.Drop += RowDragDropController_Drop;
-
-private void RowDragDropController_Drop(object sender, GridRowDropEventArgs e)
-{
-    var record = e.TargetRecord;
-    //You can restrict the dropping for certain rows based on the target record index.
-    var rowIndex = this.sfDataGrid.TableControl.ResolveToRowIndex(record);
-    var recordIndex = this.sfDataGrid.TableControl.ResolveToRecordIndex(rowIndex);
-    if (recordIndex > 5)
-      e.Handled = true;
-}
-{% endhighlight %}
-{% endtabs %}
-
-### Disable the default drag UI
-
-You can disable the draggable popup by setting the ShowDragUI as false in the DragOver event of [GridRowDragDropController.DragOver event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Interactivity.RowDragDropController.html#Syncfusion_WinForms_DataGrid_Interactivity_RowDragDropController_DragOver).
-
-{% tabs %}
-{% highlight c# %}
-this.sfDataGrid.RowDragDropController.DragOver += RowDragDropController_DragOver;
-
-private void RowDragDropController_DragOver(object sender, GridRowDragOverEventArgs e)
-{
-    e.ShowDragUI = false;
-}
-{% endhighlight %}
-{% endtabs %}
-
-### Customizing the Drag Preview Row
-
-You can customize the appearance of the drag preview row by overriding the [DrawDragPreviewRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Interactivity.RowDragDropController.html#Syncfusion_WinForms_DataGrid_Interactivity_RowDragDropController_DrawDragPreviewRow_Syncfusion_WinForms_DataGrid_TableControl_System_Collections_Generic_List_System_Int32__) method. 
-
-{% tabs %}
-{% highlight c# %}
 this.listView.ItemDrag += ListView_ItemDrag;
 this.listView.DragEnter += ListView_DragEnter;
 this.listView.DragDrop += listView_DragDrop;
@@ -565,7 +530,7 @@ private void RowDragDropController_Drop(object sender, GridRowDropEventArgs e)
 {% endtabs %}
 
 
-![Dragging multiple rows](DragAndDrop_images/RowDragAndDrag_Image6.png)
+![Drag and Drop Between DataGrid and ListView](DragAndDrop_images/RowDragAndDrag_Image6.png)
 
 ## Limitations
 - When grouping is applied, records cannot be dropped into a different group.
