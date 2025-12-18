@@ -52,11 +52,11 @@ The Syncfusion WinForms DataGrid provides fast, flexible tabular views for large
 {% promptcard Troubleshooting Grid Export %} 
 #SyncfusionWinFormsAssistant Why isn’t my Grid exporting to PDF and Excel correctly? 
 {% endpromptcard %} 
-{% promptcard Inline Editing %} 
-#SyncfusionWinFormsAssistant How to enable inline editing for CRUD operations in the Grid? 
+{% promptcard Cell Editing %} 
+#SyncfusionWinFormsAssistant How to enable cell editing in the DataGrid? 
 {% endpromptcard %} 
 {% promptcard Dynamic Column Configuration %} 
-#SyncfusionWinFormsAssistant How can I dynamically configure a multicolumn layout with filtering and sorting? 
+#SyncfusionWinFormsAssistant How can I add or display the predefined or multi columns in a drop-down in the DataGrid?
 {% endpromptcard %} 
 {% endpromptcards %}
 
@@ -176,7 +176,7 @@ The Syncfusion WinForms Ribbon is an Office-inspired command bar with tabs and g
 #SyncfusionWinFormsAssistant How to create a Ribbon gallery with item preview, grouping, and selection handling? 
 {% endpromptcard %} 
 {% promptcard Themes and High DPI %} 
-#SyncfusionWinFormsAssistant How to apply Office/Fluent themes and ensure proper High DPI scaling in the Ribbon? 
+#SyncfusionWinFormsAssistant How to apply Office themes and ensure proper High DPI scaling in the Ribbon? 
 {% endpromptcard %} 
 {% promptcard Simplified / Collapsed Layout %} 
 #SyncfusionWinFormsAssistant How to enable a simplified or collapsed layout with automatic resizing rules? 
@@ -230,23 +230,14 @@ The Syncfusion WinForms Docking Manager provides Visual Studio–like dockable w
 {% promptcard Serialization / Layout Persistence %} 
 #SyncfusionWinFormsAssistant How to save and restore the Docking Manager layout to a file/stream and handle versioned changes? 
 {% endpromptcard %} 
-{% promptcard Multi-Monitor and Bounds %} 
-#SyncfusionWinFormsAssistant How to persist and restore floating windows across multiple monitors and recover from out-of-bounds layouts? 
-{% endpromptcard %} 
 {% promptcard Theming and High DPI %} 
-#SyncfusionWinFormsAssistant How to apply themes/skins and ensure High DPI scaling for Docking Manager windows and tabs? 
+#SyncfusionWinFormsAssistant How to apply themes and ensure High DPI scaling for Docking Manager windows and tabs? 
 {% endpromptcard %} 
 {% promptcard Runtime Add/Remove Panels %} 
 #SyncfusionWinFormsAssistant How to dynamically add and remove dock panels at runtime and update the layout? 
 {% endpromptcard %} 
 {% promptcard Restrict Docking Targets %} 
 #SyncfusionWinFormsAssistant How to restrict where a panel can dock (left/right/top/bottom/tabbed) or disallow floating? 
-{% endpromptcard %} 
-{% promptcard Persist per User or Profile %} 
-#SyncfusionWinFormsAssistant How to maintain separate Docking Manager layouts per user or profile and switch at runtime?
-{% endpromptcard %} 
-{% promptcard Performance and Memory %} 
-#SyncfusionWinFormsAssistant What are best practices to improve performance and avoid memory leaks when frequently adding/removing docked panels? 
 {% endpromptcard %} 
 {% endpromptcards %}
 
