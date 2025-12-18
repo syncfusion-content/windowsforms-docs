@@ -199,7 +199,7 @@ N> `FrozenColumnCount` and `FooterColumnCount` should be lesser than the number 
 
 
 ## Row Drag and Drop
-WinForms DataGrid allows drag and drop the rows within and between controls by setting the [AllowDraggingRows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowDraggingRows) and [AllowDrop](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowDrop) property as true. It is also possible to drag and drop the rows between datagrids. SfDataGrid allows dropping rows when [AllowDrop](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowDrop) is true and allows dragging when [AllowDraggingRows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowDraggingRows) is true.
+WinForms DataGrid allows drag and drop the rows within and between controls by setting the [AllowDraggingRows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowDraggingRows) and [AllowDrop](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowDrop) property as true. It is also possible to drag and drop the rows between datagrids. SfDataGrid allows dropping rows when `AllowDrop` is true and allows dragging when `AllowDraggingRows` is true.
 
 {% tabs %}
 {% highlight c# %}
@@ -332,7 +332,7 @@ private void RowDragDropController_Dropped(object sender, GridRowDroppedEventArg
 
 #### Disable dragging of certain rows in WinForms DataGrid
 
-You can restrict the dragging of certain rows in SfDataGrid by using the [GridRowDragDropController.DragStart event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Interactivity.RowDragDropController.html#Syncfusion_WinForms_DataGrid_Interactivity_RowDragDropController_DragStart).
+You can restrict the dragging of certain rows in SfDataGrid by using the [GridRowDragDropController.DragStart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Interactivity.RowDragDropController.html#Syncfusion_WinForms_DataGrid_Interactivity_RowDragDropController_DragStart) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -353,7 +353,7 @@ private void RowDragDropController_DragStart(object sender, GridRowDragStartEven
 
 #### Disable dropping over certain rows in WinForms DataGrid
 
-You can restrict the dropping the records in certain rows in SfDataGrid by using the [GridRowDragDropController.Drop event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Interactivity.RowDragDropController.html#Syncfusion_WinForms_DataGrid_Interactivity_RowDragDropController_Drop).
+You can restrict the dropping the records in certain rows in SfDataGrid by using the [GridRowDragDropController.Drop](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Interactivity.RowDragDropController.html#Syncfusion_WinForms_DataGrid_Interactivity_RowDragDropController_Drop) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -373,7 +373,7 @@ private void RowDragDropController_Drop(object sender, GridRowDropEventArgs e)
 
 #### Disable the default drag UI
 
-You can disable the draggable popup by setting the ShowDragUI as false in the DragOver event of [GridRowDragDropController.DragOver event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Interactivity.RowDragDropController.html#Syncfusion_WinForms_DataGrid_Interactivity_RowDragDropController_DragOver).
+You can disable the draggable popup by setting the ShowDragUI as false in the DragOver event of [GridRowDragDropController.DragOver](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Interactivity.RowDragDropController.html#Syncfusion_WinForms_DataGrid_Interactivity_RowDragDropController_DragOver) event.
 
 {% tabs %}
 {% highlight c# %}
