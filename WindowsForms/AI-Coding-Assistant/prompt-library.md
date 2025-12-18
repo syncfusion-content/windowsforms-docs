@@ -89,6 +89,24 @@ The Syncfusion WinForms Chart suite offers versatile visualizations across many 
 {% promptcard Data Labels and Tooltips %} 
 #SyncfusionWinFormsAssistant Enable tooltips and data labels in a Syncfusion WinForms Chart. 
 {% endpromptcard %} 
+{% promptcard Tooltips and Trackball %}
+#SyncfusionWinFormsAssistant Show interactive tooltips and a trackball with formatted labels and multiple series value display.
+{% endpromptcard %}
+{% promptcard Axes and Multiple Axes %}
+#SyncfusionWinFormsAssistant Configure CategoryAxis, NumericalAxis, DateTimeAxis, and add a secondary Y-axis with series mapped to it.
+{% endpromptcard %}
+{% promptcard Legend and Title %}
+#SyncfusionWinFormsAssistant Add chart title, subtitle, and a responsive legend (positioning, overflow modes) in a WinForms chart.
+{% endpromptcard %}
+{% promptcard Series Types Quick Setup %}
+#SyncfusionWinFormsAssistant Create a chart with Line, Spline, StepLine, Area, SplineArea, Column, Bar, Scatter, and Bubble series.
+{% endpromptcard %}
+{% promptcard Segment Color Mapping and Gradients %}
+#SyncfusionWinFormsAssistant Apply segment color mapping and gradient fills based on Y-value ranges.
+{% endpromptcard %}
+{% promptcard Axis Customization %}
+#SyncfusionWinFormsAssistant Configure axis intervals, labels format, inversed axis, axis crossing, and logarithmic axis.
+{% endpromptcard %}
 {% promptcard Animation Support %} 
 #SyncfusionWinFormsAssistant Enable animations in WinForms Charts to make visualization more engaging? 
 {% endpromptcard %} 
@@ -98,9 +116,6 @@ The Syncfusion WinForms Chart suite offers versatile visualizations across many 
 {% promptcard Multiple Series Types %} 
 #SyncfusionWinFormsAssistant How to combine bar and line chart types in a single Syncfusion Chart? 
 {% endpromptcard %}
-{% promptcard Troubleshooting Chart Data Binding %} 
-#SyncfusionWinFormsAssistant Why isn’t my remote data showing up in the Syncfusion Chart?
-{% endpromptcard %} 
 {% promptcard Custom Markers and Labels %} 
 #SyncfusionWinFormsAssistant Show me an example of customizing chart markers and data label styles. 
 {% endpromptcard %} 
