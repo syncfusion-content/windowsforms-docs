@@ -107,9 +107,9 @@ The Syncfusion WinForms Chart suite offers versatile visualizations across many 
 {% promptcard Axis Customization %}
 #SyncfusionWinFormsAssistant Configure axis intervals, labels format, inversed axis, axis crossing, and logarithmic axis.
 {% endpromptcard %}
-{% promptcard Animation Support %} 
-#SyncfusionWinFormsAssistant Enable animations in WinForms Charts to make visualization more engaging? 
-{% endpromptcard %} 
+{% promptcard Gridlines and Chart Area Styling %}
+#SyncfusionWinFormsAssistant Customize major/minor gridlines, tick lines, chart area background, and border.
+{% endpromptcard %}
 {% promptcard Drill-Down Support %} 
 #SyncfusionWinFormsAssistant How to implement drill-down functionality in WinForms Charts for detailed exploration? 
 {% endpromptcard %} 
