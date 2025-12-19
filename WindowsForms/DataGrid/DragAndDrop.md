@@ -448,7 +448,7 @@ You can download the [sample](https://github.com/SyncfusionExamples/How-to-drag-
 
 ### Row drag and drop between DataGrid and ListView
 
-To perform dragging between the ListView and SfDataGrid, by using the [GridRowDragDropController.Drop event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Interactivity.RowDragDropController.html#Syncfusion_WinForms_DataGrid_Interactivity_RowDragDropController_Drop) and you must set the `AllowDrop` property as true in the `ListView` while doing the drag and drop operation from `SfDataGrid` with `ListView` control.
+To perform dragging between the ListView and SfDataGrid, by using the [GridRowDragDropController.Drop](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Interactivity.RowDragDropController.html#Syncfusion_WinForms_DataGrid_Interactivity_RowDragDropController_Drop) event and you must set the `AllowDrop` property as true in the `ListView` while doing the drag and drop operation from `SfDataGrid` with `ListView` control.
 
 {% tabs %}
 {% highlight c# %}
