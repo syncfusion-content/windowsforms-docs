@@ -43,13 +43,13 @@ The Syncfusion WinForms DataGrid provides fast, flexible tabular views for large
 {% promptcard Virtual Scrolling %} 
 #SyncfusionWinFormsAssistant How to configure virtual scrolling for large datasets in the DataGrid? 
 {% endpromptcard %} 
-{% promptcard Multicolumn Grid Setup %} 
+{% promptcard Multicolumn DataGrid Setup %} 
 #SyncfusionWinFormsAssistant Create a DataGrid with multiple columns that displays product details and includes features for sorting and filtering. 
 {% endpromptcard %} 
-{% promptcard Advanced Grid Features %} 
+{% promptcard Advanced DataGrid Features %} 
 #SyncfusionWinFormsAssistant Show me a DataGrid with paging, sorting, grouping, filtering, and virtual scrolling. 
 {% endpromptcard %} 
-{% promptcard Troubleshooting Grid Export %} 
+{% promptcard Troubleshooting DataGrid Export %} 
 #SyncfusionWinFormsAssistant Why isn’t my DataGrid exporting to PDF and Excel correctly? 
 {% endpromptcard %} 
 {% promptcard Cell Editing %} 
