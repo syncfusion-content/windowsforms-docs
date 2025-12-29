@@ -23,34 +23,34 @@ Before starting, make sure your MCP Server is set up and running.
 
 ## Component-Specific Prompts
 
-### Grid
+### DataGrid
 
 The Syncfusion WinForms DataGrid provides fast, flexible tabular views for large datasets with built-in interactivity. 
 
 {% promptcards %} 
 {% promptcard Paging and Sorting %} 
-#SyncfusionWinFormsAssistant How to enable paging and sorting in the Syncfusion WinForms Grid? 
+#SyncfusionWinFormsAssistant How to enable paging and sorting in the Syncfusion WinForms DataGrid? 
 {% endpromptcard %} 
 {% promptcard Grouping and Filtering %} 
-#SyncfusionWinFormsAssistant Show me an example of grouping and filtering data in the Grid component. 
+#SyncfusionWinFormsAssistant Show me an example of grouping and filtering data in the DataGrid component. 
 {% endpromptcard %} 
 {% promptcard CRUD Operations %} 
-#SyncfusionWinFormsAssistant What’s the code to implement full CRUD operations in the Syncfusion WinForms Grid? 
+#SyncfusionWinFormsAssistant Give me the code example to perform full CRUD operations in the Syncfusion WinForms DataGrid? 
 {% endpromptcard %} 
 {% promptcard Export to PDF and Excel %} 
-#SyncfusionWinFormsAssistant How to export Grid data to PDF and Excel in the Syncfusion WinForms Grid? 
+#SyncfusionWinFormsAssistant How to export DataGrid data to PDF and Excel in the Syncfusion WinForms DataGrid? 
 {% endpromptcard %} 
 {% promptcard Virtual Scrolling %} 
-#SyncfusionWinFormsAssistant How to configure virtual scrolling for large datasets in the Grid? 
+#SyncfusionWinFormsAssistant How to configure virtual scrolling for large datasets in the DataGrid? 
 {% endpromptcard %} 
 {% promptcard Multicolumn Grid Setup %} 
-#SyncfusionWinFormsAssistant Create a multicolumn Grid to display product details with sorting and filtering. 
+#SyncfusionWinFormsAssistant Create a DataGrid with multiple columns that displays product details and includes features for sorting and filtering. 
 {% endpromptcard %} 
 {% promptcard Advanced Grid Features %} 
-#SyncfusionWinFormsAssistant Show me a Grid with paging, sorting, grouping, filtering, and virtual scrolling. 
+#SyncfusionWinFormsAssistant Show me a DataGrid with paging, sorting, grouping, filtering, and virtual scrolling. 
 {% endpromptcard %} 
 {% promptcard Troubleshooting Grid Export %} 
-#SyncfusionWinFormsAssistant Why isn’t my Grid exporting to PDF and Excel correctly? 
+#SyncfusionWinFormsAssistant Why isn’t my DataGrid exporting to PDF and Excel correctly? 
 {% endpromptcard %} 
 {% promptcard Cell Editing %} 
 #SyncfusionWinFormsAssistant How to enable cell editing in the DataGrid? 
