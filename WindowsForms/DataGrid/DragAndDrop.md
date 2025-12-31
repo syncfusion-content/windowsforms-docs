@@ -443,8 +443,6 @@ N> The `CrossGridDropAction` property applies only when rows are dragged between
 
 ![Drag and Drop Between Grids](DragAndDrop_images/RowDragAndDrag_Image5.png)
 
-You can download the [sample](https://github.com/SyncfusionExamples/How-to-drag-and-drop-rows-between-two-DataGrids-in-WinForms).
-
 
 ### Row drag and drop between DataGrid and ListView
 
@@ -562,8 +560,6 @@ private void RowDragDropController_Drop(object sender, GridRowDropEventArgs e)
 
 
 ![Drag and Drop Between DataGrid and ListView](DragAndDrop_images/RowDragAndDrag_Image6.png)
-
-You can download the [sample](https://github.com/SyncfusionExamples/How-to-drag-and-drop-rows-between-DataGrid-and-ListView-in-WinForms).
 
 ### Limitations
 - When grouping is applied, records cannot be dropped into a different group.
