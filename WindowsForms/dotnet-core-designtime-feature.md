@@ -143,8 +143,8 @@ N> The listed package assemblies are built against the Designer SDK to provide i
 
 ## Known Design-Time Limitations in .NET Core 
 
-Certain control properties in .NET Core WinForms have known design-time limitations. These limitations are primarily due to the out-of-process WinForms Designer architecture, which restricts how complex UITypeEditors, collection editors, and smart tags interact with the design surface. 
+Certain control properties in .NET Core WinForms have known design‑time limitations. These issues are largely caused by the out‑of‑process WinForms Designer architecture, which results in UITypeEditors, collection editors, and smart tags having only limited communication with the design surface.
 
 We have documented these details in the following Knowledge Base article. Please refer to it for comprehensive information.
 
-KB Link : [Known Design-Time Limitations in .NET Core WinForms and Syncfusion Controls](https://support.syncfusion.com/kb/article/22154/known-design-time-limitations-in-net-core-winforms-and-syncfusion-controls)
+**KB Link** : [Known Design-Time Limitations in .NET Core WinForms and Syncfusion Controls](https://support.syncfusion.com/kb/article/22154/known-design-time-limitations-in-net-core-winforms-and-syncfusion-controls)
