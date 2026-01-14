@@ -141,7 +141,7 @@ Yes
 
 N> The listed package assemblies are built against the Designer SDK to provide integrated support for designer functionalities.
 
-## Known Design-Time Limitations in .NET Core 
+## Limitations
 
 Certain controls properties in .NET Core WinForms have known design‑time limitations. These issues are largely caused by the out‑of‑process WinForms Designer architecture, which results in UITypeEditors, collection editors, and smart tags having only limited communication with the design surface.
 
