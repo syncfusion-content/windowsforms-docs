@@ -197,10 +197,8 @@ End Sub
 
 N> `FrozenColumnCount` and `FooterColumnCount` should be lesser than the number of columns that can be displayed in view.
 
-
 ## Row Drag and Drop
-WinForms DataGrid allows drag and drop rows both within the same grid and between different controls. To enable this functionality, set the  [AllowDraggingRows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowDraggingRows) and [AllowDrop](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowDrop) properties to true.
-Rows can also be dragged from the DataGrid and dropped into other controls, such as a ListView. Rows can be dragged when `AllowDraggingRows` is set to true, and dropped when `AllowDrop` is enabled.
+WinForms DataGrid allows drag and drop rows both within the same grid and between different controls. To enable this functionality, set the  [AllowDraggingRows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowDraggingRows) and [AllowDrop](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowDrop) properties to true.Rows can also be dragged from the DataGrid and dropped into other controls, such as a ListView. Rows can be dragged when `AllowDraggingRows` is set to true, and dropped when `AllowDrop` is enabled.
 
 {% tabs %}
 {% highlight c# %}
@@ -571,4 +569,4 @@ You can download the sample [here](https://github.com/SyncfusionExamples/How-to-
 - In Master-Details view, row drag-and-drop is supported only within the same DetailsViewDataGrid. 
 - Cross-hierarchical drag-and-drop (between master and detail views) is not allowed.
 - Cross-Grid Drop is not supported when grouping is applied in either of the grids.
-- DataGrid styles do not apply to the drag preview row.
+- DataGrid styles are not applied to the drag preview row.
