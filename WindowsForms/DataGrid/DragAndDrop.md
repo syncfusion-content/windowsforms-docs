@@ -197,9 +197,8 @@ End Sub
 
 N> `FrozenColumnCount` and `FooterColumnCount` should be lesser than the number of columns that can be displayed in view.
 
-
 ## Row Drag and Drop
-WinForms DataGrid allows drag and drop the rows within and between controls by setting the [AllowDraggingRows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowDraggingRows) and [AllowDrop](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowDrop) property as true. It is also possible to drag and drop the rows between datagrids. SfDataGrid allows dropping rows when `AllowDrop` is true and allows dragging when `AllowDraggingRows` is true.
+WinForms DataGrid allows drag and drop rows both within the same grid and between different controls. To enable this functionality, set the  [AllowDraggingRows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowDraggingRows) and [AllowDrop](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowDrop) properties to true.Rows can also be dragged from the DataGrid and dropped into other controls, such as a ListView. Rows can be dragged when `AllowDraggingRows` is set to true, and dropped when `AllowDrop` is enabled.
 
 {% tabs %}
 {% highlight c# %}
@@ -443,6 +442,7 @@ N> The `CrossGridDropAction` property applies only when rows are dragged between
 
 ![Drag and Drop Between Grids](DragAndDrop_images/RowDragAndDrag_Image5.png)
 
+You can download the sample [here](https://github.com/SyncfusionExamples/How-to-drag-and-drop-rows-between-two-DataGrids-in-WinForms).
 
 ### Row drag and drop between DataGrid and ListView
 
@@ -561,9 +561,12 @@ private void RowDragDropController_Drop(object sender, GridRowDropEventArgs e)
 
 ![Drag and Drop Between DataGrid and ListView](DragAndDrop_images/RowDragAndDrag_Image6.png)
 
+You can download the sample [here](https://github.com/SyncfusionExamples/How-to-drag-and-drop-rows-between-DataGrid-and-ListView-in-WinForms).
+
 ### Limitations
 - When grouping is applied, records cannot be dropped into a different group.
 - When grouping is applied, dragging multiple rows is allowed only when all selected rows are within the same group.
 - In Master-Details view, row drag-and-drop is supported only within the same DetailsViewDataGrid. 
 - Cross-hierarchical drag-and-drop (between master and detail views) is not allowed.
 - Cross-Grid Drop is not supported when grouping is applied in either of the grids.
+- DataGrid styles are not applied to the drag preview row.
