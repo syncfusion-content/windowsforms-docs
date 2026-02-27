@@ -673,7 +673,7 @@ manager.ImprovePerformance = True
 
 The Force-Directed Tree Layout Manager arranges nodes using a physics-based simulation. Nodes repel each other to reduce overlap while connectors behave like springs that pull related nodes together. This produces organic, readable layouts for dependency graphs, knowledge maps, and network-style hierarchies.
 
-The following parameters and properties are available for the `ForceDirectedTreelayoutManager`.
+The following parameters and properties are available for the `Force-Directed-Tree layout Manager`.
 
 <table>
 <tr>
