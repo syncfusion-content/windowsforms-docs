@@ -703,7 +703,7 @@ Programmatically, create the force-directed layout manager with the required arg
 {% tabs %}
 {% highlight c# %}
 // Initialize Force-Directed Tree layout
-ForceDirectedTreelayoutManager smtLayout = new ForceDirectedTreelayoutManager(this.diagram1.Model, 100);
+ForceDirectedTreeLayoutManager smtLayout = new ForceDirectedTreeLayoutManager(this.diagram1.Model, 100);
 
 smtLayout.MaximumIteration = 700;
 smtLayout.AttractionStrength = 0.6;
@@ -713,7 +713,7 @@ this.diagram1.LayoutManager.UpdateLayout(null);
 {% endhighlight %}
 {% highlight vb %}
 ' Initialize Force-Directed Tree layout
-Dim smtLayout As New ForceDirectedTreelayoutManager(Me.diagram1.Model, 100)
+Dim smtLayout As New ForceDirectedTreeLayoutManager(Me.diagram1.Model, 100)
 
 smtLayout.MaximumIteration = 700
 smtLayout.AttractionStrength = 0.6
