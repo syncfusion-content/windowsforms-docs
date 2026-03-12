@@ -747,7 +747,7 @@ Performance and threading
 Property ranges and defaults (recommended starting points)
 
 - `MaximumIteration`: default ~100; sensible range 50–5000 depending on graph size.
-- `RepulsionStrength`: positive, unitless; typical 1_000–20_000 (increase to spread nodes further).
+- `RepulsionStrength`: positive, unitless; typical 1000–20,000 (increase to spread nodes further).
 - `AttractionStrength`: 0.0–1.0, typical 0.3–0.8.
 
 Examples and tuning
@@ -756,9 +756,6 @@ Tune `MaximumIteration`, `RepulsionStrength`, and `AttractionStrength` to achiev
 
 ![Force-directed layout sample](Layout-Management_images/Layout-Management_img17.png)
 
-Documentation markup note
-
-- This document uses the `{% tabs %}` / `{% highlight %}` syntax elsewhere. Confirm your docs generator supports the Liquid/Octopress-style `{% %}` tags; if your pipeline does not, convert these blocks to the supported code block syntax.
 
 
 
