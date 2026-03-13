@@ -691,7 +691,7 @@ Maximum number of simulation cycles (positive integer). Typical default ~100; co
 <tr>
 <td>
 RepulsionStrength</td><td>
-Magnitude of the repulsive force between nodes (positive, unitless). Typical working range 1000–20000; increase to separate nodes further and reduce overlap.</td></tr>
+Magnitude of the repulsive force between nodes. Typical working range 1000–20000; increase to separate nodes further and reduce overlap.</td></tr>
 <tr>
 <td>
 AttractionStrength</td><td>
