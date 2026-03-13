@@ -7,7 +7,9 @@ control: SfAIAssistView
 documentation: ug
 ---
 
-# PromptRequest event
+# Event in Windows Forms AI AssistView (SfAIAssistView)
+
+## PromptRequest event
 
 This event notifies users when a prompt is submitted in the control. It can be used to validate user input before processing or trigger custom actions based on the prompt content. The input message and its details are passed through the PromptRequestEventArgs. This argument provides the following details:
 
