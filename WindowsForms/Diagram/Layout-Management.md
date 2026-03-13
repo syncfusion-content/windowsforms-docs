@@ -673,82 +673,55 @@ manager.ImprovePerformance = True
 
 The Force-Directed Tree Layout Manager arranges nodes using a physics-based simulation. Nodes repel each other to reduce overlap while connectors act like springs that pull related nodes together. This produces organic, readable layouts for dependency graphs, knowledge maps, and network-style hierarchies.
 
-Prerequisites
+The following parameters and properties are available for the Force-Directed Tree Layout Manager (`ForceDirectedTreeLayoutManager`).
 
-- Add the Syncfusion Diagram library for WinForms via your product installer or NuGet (use the Syncfusion Windows Forms Diagram package that matches your product version).
-- Add the namespace at the top of your C# files:
+<table>
+<tr>
+<th>
+Property</th><th>
+Description</th></tr>
+<tr>
+<td>
+Model</td><td>
+Represents the diagram model attached to the layout manager (passed via constructor).</td></tr>
+<tr>
+<td>
+MaximumIteration</td><td>
+Maximum number of simulation cycles (positive integer). Typical default ~100; common range 50–5000. Higher values improve stability at additional CPU cost.</td></tr>
+<tr>
+<td>
+RepulsionStrength</td><td>
+Magnitude of the repulsive force between nodes (positive, unitless). Typical working range 1000–20000; increase to separate nodes further and reduce overlap.</td></tr>
+<tr>
+<td>
+AttractionStrength</td><td>
+Spring factor pulling connected nodes together. Valid range 0.0–1.0; typical default ~0.4. Higher values create tighter clusters.</td></tr>
+</table>
 
-```csharp
-using Syncfusion.Windows.Forms.Diagram;
-using System.Threading.Tasks; // for async example
-```
-- Target a supported Windows Forms runtime (for example: .NET Framework 4.7.2+ or .NET 6/7/8 for WinForms). Use the Syncfusion assemblies that match your runtime.
+Programmatically, create the force-directed layout manager with the required arguments, assign it to the LayoutManager, and update the layout as follows.
 
-Parameters and property guidance
-
-| Property | Description |
-|---|---|
-| Model | The diagram model attached to the layout manager (constructor parameter). |
-| MaximumIteration | Maximum number of simulation cycles. Higher values yield more stable results but increase CPU cost. Typical defaults: 100 (constructor default); common range 50–5000. |
-| RepulsionStrength | Magnitude of the repulsive force between nodes (positive, unitless). Typical ranges: 1e3–2e4 for medium graphs; tune to avoid overlap. |
-| AttractionStrength | Spring factor pulling connected nodes together. Valid range 0.0–1.0 (typical default ~0.5). Higher values create tighter clusters. |
-
-Constructor note
-
-The sample in this document calls `new ForceDirectedTreeLayoutManager(model, 100)`. The second argument configures the connector length (the layout's ideal edge length) and is assigned internally to the layout's connector-length property — it is not the simulation iteration count. To control the number of simulation cycles use the `MaximumIteration` property after construction, for example:
-
-```csharp
-// connector length set via constructor; set iterations explicitly
+{% tabs %}
+{% highlight c# %}
+// Initialize Force-Directed Tree layout
 ForceDirectedTreeLayoutManager smtLayout = new ForceDirectedTreeLayoutManager(this.diagram1.Model, 100);
+
 smtLayout.MaximumIteration = 700;
-```
-
-Usage (C#)
-
-Use explicit types and include the required `using` directives. Because layout calculation can be CPU-intensive, prefer running the layout on a background thread and marshal view updates back to the UI thread as shown below.
-
-```csharp
-// Initialize Force-Directed Tree layout (explicit types)
-ForceDirectedTreeLayoutManager smtLayout = new ForceDirectedTreeLayoutManager(this.diagram1.Model, 100);
-smtLayout.MaximumIteration = 700;           // number of simulation steps
-smtLayout.AttractionStrength = 0.6f;        // 0.0 - 1.0
-smtLayout.RepulsionStrength = 15000f;       // unitless; tune per dataset
-
+smtLayout.AttractionStrength = 0.6;
+smtLayout.RepulsionStrength = 15000;
 this.diagram1.LayoutManager = smtLayout;
-
-// Run the expensive layout on a background thread to avoid blocking UI
-await Task.Run(() => this.diagram1.LayoutManager.UpdateLayout(null));
-
-// Ensure the view is refreshed on the UI thread
-this.diagram1.Invoke((Action)(() => this.diagram1.UpdateView()));
-```
-
-Usage (VB.NET)
-
-```vb
+this.diagram1.LayoutManager.UpdateLayout(null);
+{% endhighlight %}
+{% highlight vb %}
 ' Initialize Force-Directed Tree layout
 Dim smtLayout As New ForceDirectedTreeLayoutManager(Me.diagram1.Model, 100)
 
 smtLayout.MaximumIteration = 700
 smtLayout.AttractionStrength = 0.6
 smtLayout.RepulsionStrength = 15000
-
 Me.diagram1.LayoutManager = smtLayout
-
-' Run layout on background thread (Task.Run) then update view on UI thread
-Task.Run(Sub() Me.diagram1.LayoutManager.UpdateLayout(Nothing)).ContinueWith(Sub(t) Me.diagram1.Invoke(Sub() Me.diagram1.UpdateView()))
-```
-
-Performance and threading
-
-- `UpdateLayout` performs potentially heavy CPU work. Calling it on the UI thread may block the interface for large graphs. Run layout in a background task and marshal UI updates back to the main thread.
-- Consider exposing progress/cancellation in your UI if layout runs for long; store intermediate results and cancel via cooperative flags if needed.
-
-Property ranges and defaults (recommended starting points)
-
-- `MaximumIteration`: default ~100; sensible range 50–5000 depending on graph size.
-- `RepulsionStrength`: positive, unitless; typical 1000–20,000 (increase to spread nodes further).
-- `AttractionStrength`: 0.0–1.0, typical 0.3–0.8.
+Me.diagram1.LayoutManager.UpdateLayout(Nothing)
+{% endhighlight %}
+{% endtabs %}
 
 Examples and tuning
 
