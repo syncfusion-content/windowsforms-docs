@@ -13,7 +13,7 @@ This section explains the steps required to add the Windows Forms `SfAIAssistVie
 
 ## Assembly Deployment
 
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sfdatagrid) section to get the list of assemblies or [NuGet package](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) needs to be added as reference to use the SfAIAssistView control in any application.
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sfaiassistview) section to get the list of assemblies or [NuGet package](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) needs to be added as reference to use the SfAIAssistView control in any application.
 
 ## Creating Application with SfAIAssistView
 
@@ -32,7 +32,7 @@ Windows Forms AI AssistView (SfAIAssistView) control can be added to the applica
 
 In order to add control manually, do the below steps,
 
-1. Add the required [assembly references](https://help.syncfusion.com/windowsforms/control-dependencies#sfdatagrid) to the project.
+1. Add the required [assembly references](https://help.syncfusion.com/windowsforms/control-dependencies#sfaiassistview) to the project.
 
 2. Create the SfAIAssistView control instance and add it to the Form.
 
