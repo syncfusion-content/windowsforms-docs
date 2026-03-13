@@ -14,7 +14,7 @@ This section explains about how to connect the AI AssistView with OpenAI.
 ## Creating an application with NuGet reference.
 
 1. Create a [Windows Forms app](https://learn.microsoft.com/en-us/visualstudio/ide/create-csharp-winform-visual-studio?view=visualstudio).
-2. Add reference to [Syncfusion.SfAIAssistView.WinForms](https://www.nuget.org/packages/Syncfusion.SfAIAssistView.WinForms) NuGet. 
+2. Add reference to [Syncfusion.SfAIAssistView.WinForms](https://www.nuget.org/packages) NuGet. 
 3. Import the control namespace `Syncfusion.WinForms.AIAssistView` in C# code.
 4. Initialize the `SfAIAssistView` control.
 5. Add reference to [Microsoft Semantic NuGet](https://www.nuget.org/packages/Microsoft.SemanticKernel) NuGet.
