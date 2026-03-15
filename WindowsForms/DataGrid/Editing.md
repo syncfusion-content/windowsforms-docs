@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Editing in Windows Forms DataGrid | Syncfusion®
-description: This section explains about the editing support in SfDataGrid. It can be enabled or disabled by setting AllowEditing.
+description: Learn all about this section explains about the editing support in SfDataGrid. It can be enabled or disabled by setting AllowEditing.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
