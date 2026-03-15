@@ -669,3 +669,66 @@ manager.ImprovePerformance = True
 {% endhighlight %}
 {% endtabs %}
 
+## Force-Directed Tree Layout Manager
+
+The Force-Directed Tree Layout Manager arranges nodes using a physics-based simulation. Nodes repel each other to reduce overlap while connectors act like springs that pull related nodes together. This produces organic, readable layouts for dependency graphs, knowledge maps, and network-style hierarchies.
+
+The following parameters and properties are available for the Force-Directed Tree Layout Manager (`ForceDirectedTreeLayoutManager`).
+
+<table>
+<tr>
+<th>
+Property</th><th>
+Description</th></tr>
+<tr>
+<td>
+Model</td><td>
+Represents the diagram model attached to the layout manager (passed via constructor).</td></tr>
+<tr>
+<td>
+MaximumIteration</td><td>
+Maximum number of simulation cycles (positive integer). Typical default ~100; common range 50–5000. Higher values improve stability at additional CPU cost.</td></tr>
+<tr>
+<td>
+RepulsionStrength</td><td>
+Magnitude of the repulsive force between nodes. Typical working range 1000–20000; increase to separate nodes further and reduce overlap.</td></tr>
+<tr>
+<td>
+AttractionStrength</td><td>
+Spring factor pulling connected nodes together. Valid range 0.0–1.0; typical default ~0.4. Higher values create tighter clusters.</td></tr>
+</table>
+
+Programmatically, create the force-directed layout manager with the required arguments, assign it to the LayoutManager, and update the layout as follows.
+
+{% tabs %}
+{% highlight c# %}
+// Initialize Force-Directed Tree layout
+ForceDirectedTreeLayoutManager smtLayout = new ForceDirectedTreeLayoutManager(this.diagram1.Model, 100);
+
+smtLayout.MaximumIteration = 700;
+smtLayout.AttractionStrength = 0.6;
+smtLayout.RepulsionStrength = 15000;
+this.diagram1.LayoutManager = smtLayout;
+this.diagram1.LayoutManager.UpdateLayout(null);
+{% endhighlight %}
+{% highlight vb %}
+' Initialize Force-Directed Tree layout
+Dim smtLayout As New ForceDirectedTreeLayoutManager(Me.diagram1.Model, 100)
+
+smtLayout.MaximumIteration = 700
+smtLayout.AttractionStrength = 0.6
+smtLayout.RepulsionStrength = 15000
+Me.diagram1.LayoutManager = smtLayout
+Me.diagram1.LayoutManager.UpdateLayout(Nothing)
+{% endhighlight %}
+{% endtabs %}
+
+Examples and tuning
+
+Tune `MaximumIteration`, `RepulsionStrength`, and `AttractionStrength` to achieve the desired spacing and stability for your dataset. Start with the sample values and adjust while observing layout quality and runtime.
+
+![Force-directed layout sample](Layout-Management_images/Layout-Management_img17.png)
+
+
+
+

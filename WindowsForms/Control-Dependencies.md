@@ -2457,6 +2457,30 @@ Syncfusion.Shared.Base
 </tr>
 </table>
 
+## SfAIAssistView
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.SfAIAssistView.WinForms<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Core.WinForms
+
+</td>
+<td>
+Syncfusion.SfAIAssistView.WinForms
+</td>
+</tr>
+</table>
+
 ## SfButton
 
 <table>
