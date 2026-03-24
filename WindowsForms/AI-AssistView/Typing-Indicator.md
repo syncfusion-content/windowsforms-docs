@@ -9,9 +9,9 @@ documentation: ug
 
 # Typing Indicator in Windows Forms AI AssistView
 
-By using the `TypingIndicator` property, a typing indicator is shown while the AI is processing or generating a response, giving users real-time feedback and enhancing conversational flow.
+By using the [TypingIndicator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.SfAIAssistView.html#Syncfusion_WinForms_AIAssistView_SfAIAssistView_TypingIndicator) property, a typing indicator is shown while the AI is processing or generating a response, giving users real-time feedback and enhancing conversational flow.
 
-When the application runs, the TypingIndicator will show an animation representing the AI or user typing a message. This indicator is shown when the `ShowTypingIndicator` property value as true.
+When the application runs, the TypingIndicator will show an animation representing the AI or user typing a message. This indicator is shown when the [ShowTypingIndicator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.SfAIAssistView.html#Syncfusion_WinForms_AIAssistView_SfAIAssistView_ShowTypingIndicator) property value as true.
 
 {% tabs %}
 

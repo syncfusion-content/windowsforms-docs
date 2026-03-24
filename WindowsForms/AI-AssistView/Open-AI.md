@@ -16,7 +16,7 @@ This section explains about how to connect the AI AssistView with OpenAI.
 1. Create a [Windows Forms app](https://learn.microsoft.com/en-us/visualstudio/ide/create-csharp-winform-visual-studio?view=visualstudio).
 2. Add reference to [Syncfusion.SfAIAssistView.WinForms](https://www.nuget.org/packages) NuGet. 
 3. Import the control namespace `Syncfusion.WinForms.AIAssistView` in C# code.
-4. Initialize the `SfAIAssistView` control.
+4. Initialize the [SfAIAssistView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.SfAIAssistView.html) control.
 5. Add reference to [Microsoft Semantic NuGet](https://www.nuget.org/packages/Microsoft.SemanticKernel) NuGet.
 
 ## Creating the OpenAI view model class.

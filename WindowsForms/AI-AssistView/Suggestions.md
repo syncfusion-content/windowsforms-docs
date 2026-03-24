@@ -9,7 +9,7 @@ documentation: ug
 
 # Suggestions in Windows Forms AI AssistView
 
-By using the `Suggestions` property, the AssistView displays AI-driven suggestions in the bottom right corner, making it easy for users to quickly respond or choose from relevant options.
+By using the [Suggestions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.SfAIAssistView.html#Syncfusion_WinForms_AIAssistView_SfAIAssistView_Suggestions) property, the AssistView displays AI-driven suggestions in the bottom right corner, making it easy for users to quickly respond or choose from relevant options.
 
 {% tabs %}
 

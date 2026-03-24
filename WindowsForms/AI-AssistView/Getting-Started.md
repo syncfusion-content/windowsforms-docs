@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Windows Forms AI AssistView
 
-This section explains the steps required to add the Windows Forms `SfAIAssistView` control with its basic features.
+This section explains the steps required to add the Windows Forms [SfAIAssistView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.SfAIAssistView.html) control with its basic features.
 
 ## Assembly Deployment
 
