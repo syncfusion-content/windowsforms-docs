@@ -246,7 +246,3 @@ public partial class Form1 : Form
 {% endtabs %}
 
 ![WindowsForms AI AssistView Control Custom UserView](aiassistview_images/windowsforms_aiassistview_custom_userview.png)
-
-![WindowsForms AI AssistView control Customization](aiassistview_images/windowsforms_aiassistview_customization.gif)
-
-N> You can also explore our [sample](https://github.com/SyncfusionExamples/) on GitHub, which demonstrates complete customization of the BannerView, the creation of a custom BotView, and a custom UserView within an AssistView.
