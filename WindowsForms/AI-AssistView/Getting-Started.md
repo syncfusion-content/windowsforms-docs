@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Windows Forms AI AssistView control | Syncfusion
+title: Getting Started with Windows Forms AI AssistView control | Syncfusion
 description: Learn about getting started with the Syncfusion Windows Forms AI AssistView (SfAIAssistView) control with its basic features.
 platform: windowsforms
 control: SfAIAssistView

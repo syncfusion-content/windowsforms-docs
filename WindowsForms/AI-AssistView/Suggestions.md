@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Windows Forms AI AssistView control | Syncfusion
+title: Suggestions in Windows Forms AI AssistView control | Syncfusion
 description: Learn about the suggestion feature that displays AI-driven suggestions in the bottom right corner of the AI AssistView control.
 platform: windowsforms
 control: SfAIAssistView

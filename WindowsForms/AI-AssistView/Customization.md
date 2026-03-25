@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Windows Forms AI AssistView control | Syncfusion
-description: Learn all about customization in the Syncfusion AI AssistView control here.
+title: Customization in Windows Forms AI AssistView control | Syncfusion
+description: Learn about customizing the BannerView and creating custom BotView and UserView in the Syncfusion AI AssistView control here.
 platform: windowsforms
 control: SfAIAssistView
 documentation: ug

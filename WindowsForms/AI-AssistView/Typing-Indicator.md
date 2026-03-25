@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Windows Forms AI AssistView control | Syncfusion
+title: Typing Indicator in Windows Forms AI AssistView control | Syncfusion
 description: Learn about the typing indicator feature displayed in the AI AssistView control while the AI processes or generates a response.
 platform: windowsforms
 control: SfAIAssistView

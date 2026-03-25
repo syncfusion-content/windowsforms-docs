@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Windows Forms AI AssistView control | Syncfusion
+title: Events in Windows Forms AI AssistView control | Syncfusion
 description: Learn here all about Events support in Syncfusion AI AssistView control, its elements and more details.
 platform: windowsforms
 control: SfAIAssistView
