@@ -145,7 +145,7 @@ Once skills are installed, the assistant can be used to generate and update Sync
 
 - "Add a DataGrid with paging, sorting, and filtering."
 - "Create a Scheduler with week view and drag‑drop."
-- "Apply a dark theme and enable VisualStyle customization."
+
 ## Skills CLI Commands
 
 After installation, manage Syncfusion<sup style="font-size:70%">&reg;</sup> Agent Skills using the following commands:
