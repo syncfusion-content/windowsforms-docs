@@ -21,12 +21,10 @@ If you want to hide the axis label, you can set the [IsVisible](https://help.syn
 
 Format your axis labels to display numbers and dates in a specific way, improving readability and clarity. Use the **Format** property for numeric values and **DateTimeFormat** property for date-time values to control how data is presented on the axis.
 
-**Key Properties:**
-- {{'[Format](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_Format)'| markdownify }} - Specifies the format for double values using standard numeric format strings (e.g., "C" for currency, "P" for percentage)
-- {{'[DateTimeFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_DateTimeFormat)'| markdownify }} - Specifies the format for DateTime values using date/time format strings (e.g., "MMM" for abbreviated month, "yyyy" for year)
+- [Format](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_Format) - Specifies the format for double values using standard numeric format strings (e.g., "C" for currency, "P" for percentage)
+- [DateTimeFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_DateTimeFormat) - Specifies the format for DateTime values using date/time format strings (e.g., "MMM" for abbreviated month, "yyyy" for year)
 
 {% tabs %}
-
 {% highlight c# %}
 
 //Settings datetime format to X axis
@@ -37,7 +35,6 @@ this.chartControl1.PrimaryYAxis.ValueType = ChartValueType.Double;
 this.chartControl1.PrimaryYAxis.Format = "C";
 
 {% endhighlight %}
-
 {% highlight vb %}
 
 'Settings datetime format to X axis
@@ -50,16 +47,14 @@ Me.chartControl1.PrimaryYAxis.Format = "C"
 {% endhighlight %}
 {% endtabs %}
 
-### Styling Label Appearance
+### Customize label appearance
 
 Enhance the visual presentation of axis labels by customizing their color and font properties. Change the font family, size, style, and text color to match your application's design theme.
 
-**Key Properties:**
-- {{'[ForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_ForeColor)'| markdownify }} - Sets the color for labels and other axis text
-- {{'[Font](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_Font)'| markdownify }} - Specifies the font family, size, and style for axis labels (default: Trebuchet, 9pt, regular)
+- [ForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_ForeColor) - Sets the color for labels and other axis text
+- [Font](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_Font) - Specifies the font family, size, and style for axis labels (default: Trebuchet, 9pt, regular)
 
 {% tabs %}
-
 {% highlight c# %}
 
 //Setting ForeColor and Font to axes labels
@@ -87,13 +82,11 @@ Me.chartControl1.PrimaryYAxis.Font = New System.Drawing.Font("Arial", 9F, System
 
 Control how axis labels are aligned and rotated within the chart. Use alignment options to position labels (left, center, or right) and enable label rotation to prevent overlap when space is limited.
 
-**Key Properties:**
-- {{'[LabelAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_LabelAlignment)'| markdownify }} - Specifies label alignment: `Near`, `Center` (default), or `Far` within the available area
-- {{'[LabelRotate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_LabelRotate)'| markdownify }} - Enables or disables label rotation
-- {{'[LabelRotateAngle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_LabelRotateAngle)'| markdownify }} - Specifies the rotation angle in degrees when `LabelRotate` is enabled
+- [LabelAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_LabelAlignment) - Specifies label alignment: `Near`, `Center` (default), or `Far` within the available area
+- [LabelRotate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_LabelRotate) - Enables or disables label rotation
+- [LabelRotateAngle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_LabelRotateAngle)- Specifies the rotation angle in degrees when `LabelRotate` is enabled
 
 {% tabs %}
-
 {% highlight c# %}
 
 //Label property settings for X-Axis
@@ -123,11 +116,9 @@ Me.chartControl1.PrimaryYAxis.LabelAlignment = System.Drawing.StringAlignment.Fa
 
 Enable responsive label sizing that automatically adjusts text size when the chart is resized. This ensures labels remain proportional and readable at any chart dimension.
 
-**Key Property:**
-- {{'[ScaleLabels](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_ScaleLabels)'| markdownify }} - When set to `true`, labels automatically resize to match chart dimensions
+- [ScaleLabels](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_ScaleLabels) - When set to `true`, labels automatically resize to match chart dimensions
 
 {% tabs %}
-
 {% highlight c# %}
 
 //Enable auto-scaling for labels
@@ -153,128 +144,104 @@ The basic formatting options may not cover all your customization needs. Format 
 
 ### Using the FormatLabel Event
 
-Dynamically modify label text before rendering by handling the {{'[FormatLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_FormatLabel)'| markdownify }} event. This event fires for each label and provides access to event arguments containing label information.
+Dynamically modify label text before rendering by handling the [FormatLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_FormatLabel) event. This event fires for each label and provides access to event arguments containing label information.
 
-**Event Properties:**
-- {{'[AxisOrientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFormatAxisLabelEventArgs.html#Syncfusion_Windows_Forms_Chart_ChartFormatAxisLabelEventArgs_AxisOrientation)'| markdownify }} - Returns the axis orientation (Horizontal or Vertical)
-- {{'[Label](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFormatAxisLabelEventArgs.html#Syncfusion_Windows_Forms_Chart_ChartFormatAxisLabelEventArgs_Label)'| markdownify }} - Gets or sets the label text to be rendered
-- {{'[Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFormatAxisLabelEventArgs.html#Syncfusion_Windows_Forms_Chart_ChartFormatAxisLabelEventArgs_Value)'| markdownify }} - Returns the numeric value associated with the label position
-- {{'[ValueAsDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFormatAxisLabelEventArgs.html#Syncfusion_Windows_Forms_Chart_ChartFormatAxisLabelEventArgs_ValueAsDate)'| markdownify }} - Returns the value as DateTime when working with date values
-- {{'[IsAxisPrimary](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFormatAxisLabelEventArgs.html#Syncfusion_Windows_Forms_Chart_ChartFormatAxisLabelEventArgs_IsAxisPrimary)'| markdownify }} - Indicates if the axis is primary
-- {{'[Handled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFormatAxisLabelEventArgs.html#Syncfusion_Windows_Forms_Chart_ChartFormatAxisLabelEventArgs_Handled)'| markdownify }} - Mark as true to prevent further processing
-- {{'[Tooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFormatAxisLabelEventArgs.html#Syncfusion_Windows_Forms_Chart_ChartFormatAxisLabelEventArgs_ToolTip)'| markdownify }} - Specifies the tooltip content
+- [AxisOrientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFormatAxisLabelEventArgs.html#Syncfusion_Windows_Forms_Chart_ChartFormatAxisLabelEventArgs_AxisOrientation) - Returns the axis orientation (Horizontal or Vertical)
+- [Label](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFormatAxisLabelEventArgs.html#Syncfusion_Windows_Forms_Chart_ChartFormatAxisLabelEventArgs_Label) - Gets or sets the label text to be rendered
+- [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFormatAxisLabelEventArgs.html#Syncfusion_Windows_Forms_Chart_ChartFormatAxisLabelEventArgs_Value) - Returns the numeric value associated with the label position
+- [ValueAsDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFormatAxisLabelEventArgs.html#Syncfusion_Windows_Forms_Chart_ChartFormatAxisLabelEventArgs_ValueAsDate) - Returns the value as DateTime when working with date values
+- [IsAxisPrimary](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFormatAxisLabelEventArgs.html#Syncfusion_Windows_Forms_Chart_ChartFormatAxisLabelEventArgs_IsAxisPrimary) - Indicates if the axis is primary
+- [Handled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFormatAxisLabelEventArgs.html#Syncfusion_Windows_Forms_Chart_ChartFormatAxisLabelEventArgs_Handled) - Mark as true to prevent further processing
+- [Tooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFormatAxisLabelEventArgs.html#Syncfusion_Windows_Forms_Chart_ChartFormatAxisLabelEventArgs_ToolTip) - Specifies the tooltip content
 
 {% tabs %}
-
 {% highlight c# %}
 
-private void chartControl1_ChartFormatAxisLabel(object sender, ChartFormatAxisLabelEventArgs e)
-
-{
-
-    if (e.AxisOrientation == ChartOrientation.Horizontal)
-
+    private void chartControl1_ChartFormatAxisLabel(object sender, ChartFormatAxisLabelEventArgs e)
     {
+        if (e.AxisOrientation == ChartOrientation.Horizontal)
+        {
+            if (e.ValueAsDate.Month == 1)
+                e.Label = "1st Month";
 
-       if (e.ValueAsDate.Month == 1)
+            else if (e.ValueAsDate.Month == 2)
+                e.Label = "2nd Month";
 
-            e.Label = "1st Month";
+            else if (e.ValueAsDate.Month == 3)
+                e.Label = "3rd Month";
 
-        else if (e.ValueAsDate.Month == 2)
+            else if (e.ValueAsDate.Month == 4)
+                e.Label = "4th Month";
 
-            e.Label = "2nd Month";
+            else if (e.ValueAsDate.Month == 5)
+                e.Label = "5th Month";
 
-        else if (e.ValueAsDate.Month == 3)
+            else if (e.ValueAsDate.Month == 6)
+                e.Label = "6th Month";
 
-            e.Label = "3rd Month";
-
-        else if (e.ValueAsDate.Month == 4)
-
-            e.Label = "4th Month";
-
-        else if (e.ValueAsDate.Month == 5)
-
-            e.Label = "5th Month";
-
-        else if (e.ValueAsDate.Month == 6)
-
-            e.Label = "6th Month";
-
-        e.Handled = true;
-
+            e.Handled = true;
+        }
     }
-
-}
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Private Sub chartControl1_ChartFormatAxisLabel(ByVal sender As Object, ByVal e As ChartFormatAxisLabelEventArgs)
+    Private Sub chartControl1_ChartFormatAxisLabel(ByVal sender As Object, ByVal e As ChartFormatAxisLabelEventArgs)
 
-    If e.AxisOrientation = ChartOrientation.Horizontal Then
+        If e.AxisOrientation = ChartOrientation.Horizontal Then
 
-         If e.ValueAsDate.Month = 1 Then
+            If e.ValueAsDate.Month = 1 Then
+                e.Label = "1st Month"
 
-              e.Label = "1st Month"
+            ElseIf e.ValueAsDate.Month = 2 Then
+                e.Label = "2nd Month"
 
-          ElseIf e.ValueAsDate.Month = 2 Then
+            ElseIf e.ValueAsDate.Month = 3 Then
+                e.Label = "3rd Month"
 
-              e.Label = "2nd Month"
+            ElseIf e.ValueAsDate.Month = 4 Then
+                e.Label = "4th Month"
 
-          ElseIf e.ValueAsDate.Month = 3 Then
+            ElseIf e.ValueAsDate.Month = 5 Then
+                e.Label = "5th Month"
 
-              e.Label = "3rd Month"
+            ElseIf e.ValueAsDate.Month = 6 Then
+                e.Label = "6th Month"
 
-          ElseIf e.ValueAsDate.Month = 4 Then
+            End If
 
-              e.Label = "4th Month"
+            e.Handled = True
 
-          ElseIf e.ValueAsDate.Month = 5 Then
+        End If
 
-              e.Label = "5th Month"
-
-          ElseIf e.ValueAsDate.Month = 6 Then
-
-              e.Label = "6th Month"
-
-          End If
-
-           e.Handled = True
-
-     End If
-
-End Sub
+    End Sub
 
 {% endhighlight %}
 {% endtabs %}
 
 ![Chart Axes](Chart-Axes_images/Chart-Axes_img15.jpeg)
 
-### Using Custom Labels
+### Custom Labels
 
 Specify a set of custom labels to control both the label text and intervals displayed on the axis. This approach lets you fully define label content and positions.
 
-**Key Properties:**
-- {{'[TickLabelsDrawingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_TickLabelsDrawingMode)'| markdownify }} - Controls how labels are rendered:
+- [TickLabelsDrawingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_TickLabelsDrawingMode) - Controls how labels are rendered:
   - `AutomaticMode` - Labels determined by the chart engine
   - `UserMode` - Labels from the custom Labels collection only
   - `BothUserAndAutomaticMode` - Mix of automatic and custom labels
   - `None` - No labels rendered
-- {{'[Labels](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_Labels)'| markdownify }} - Custom collection for fully customized labels (requires `UserMode` or `BothUserAndAutomaticMode`)
+- [Labels](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_Labels) - Custom collection for fully customized labels (requires `UserMode` or `BothUserAndAutomaticMode`)
 
-#### Using Custom Text
+#### Custom Text
 
 {% tabs %}
-
 {% highlight c# %}
 
 //Setting drawing mode
-
 this.chartControl1.PrimaryXAxis.TickLabelsDrawingMode = ChartAxisTickLabelDrawingMode.UserMode;
 
 //Adding new labels
-
 this.chartControl1.PrimaryXAxis.Labels.Add(new ChartAxisLabel("Q1 Mid Point", Color.OrangeRed, new Font("Arial", 8F, System.Drawing.FontStyle.Bold), new DateTime(2007, 2, 15), "", "", ChartValueType.Custom));
 
 this.chartControl1.PrimaryXAxis.Labels.Add(new ChartAxisLabel("Q2 Mid Point", Color.OrangeRed, new Font("Arial", 8F, System.Drawing.FontStyle.Bold), new DateTime(2007, 5, 15), "", "", ChartValueType.Custom));
@@ -284,11 +251,9 @@ this.chartControl1.PrimaryXAxis.Labels.Add(new ChartAxisLabel("Q2 Mid Point", Co
 {% highlight vb %}
 
 'Setting drawing mode
-
 Me.chartControl1.PrimaryXAxis.TickLabelsDrawingMode = ChartAxisTickLabelDrawingMode.UserMode
 
 'Adding new labels
-
 Me.chartControl1.PrimaryXAxis.Labels.Add(New ChartAxisLabel("Q1 Mid Point", Color.OrangeRed, New Font("Arial", 8F, System.Drawing.FontStyle.Bold), New DateTime(2007, 2, 15), "", "", ChartValueType.Custom))
 
 Me.chartControl1.PrimaryXAxis.Labels.Add(New ChartAxisLabel("Q2 Mid Point", Color.OrangeRed, New Font("Arial", 8F, System.Drawing.FontStyle.Bold), New DateTime(2007, 5, 15), "", "", ChartValueType.Custom))
@@ -299,12 +264,11 @@ Me.chartControl1.PrimaryXAxis.Labels.Add(New ChartAxisLabel("Q2 Mid Point", Colo
 
 ![Chart Axes](Chart-Axes_images/Chart-Axes_img16.jpeg)
 
-#### Using Formatted Text
+#### Formatted Text
 
 Apply date/time formatting to custom labels to automatically format date values with your specified format string.
 
 {% tabs %}
-
 {% highlight c# %}
 
 //Setting drawing mode
@@ -344,16 +308,14 @@ When charts have limited space, axis labels may overlap and become unreadable. T
 
 Control how overlapping labels are handled using various intersection actions. Choose the strategy that best preserves label readability based on your chart layout.
 
-**Key Properties:**
-- {{'[LabelIntersectAction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_LabelIntersectAction)'| markdownify }} - Specifies action when labels overlap:
+- [LabelIntersectAction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_LabelIntersectAction) - Specifies action when labels overlap:
   - `MultipleRows` - Renders labels in multiple rows to avoid overlap
   - `Rotate` - Rotates text to prevent overlap
   - `Wrap` - Wraps text to fit available space
   - `None` - Do nothing (default) - labels may overlap
-- {{'[HidePartialLabels](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_HidePartialLabels)'| markdownify }} - When `true`, selectively hides certain labels (usually edge labels) to keep remaining labels readable
+- [HidePartialLabels](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_HidePartialLabels) - When `true`, selectively hides certain labels (usually edge labels) to keep remaining labels readable
 
 {% tabs %}
-
 {% highlight c# %}
 
 this.chartControl1.PrimaryXAxis.LabelIntersectAction = ChartLabelIntersectAction.Rotate;
@@ -369,12 +331,11 @@ Me.chartControl1.PrimaryXAxis.HidePartialLabels = True
 {% endhighlight %}
 {% endtabs %}
 
-### Managing Edge Labels
+### Edge label drawing
 
 Handle labels at the edges of an axis that might be partially clipped. Use the `EdgeLabelsDrawingMode` property to control how edge labels are positioned and displayed.
 
-**Key Property:**
-- {{'[EdgeLabelsDrawingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_EdgeLabelsDrawingMode)'| markdownify }} - Specifies how edge labels are rendered:
+- [EdgeLabelsDrawingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_EdgeLabelsDrawingMode) - Specifies how edge labels are rendered:
   - `Center` - Centers the label at the interval (default)
   - `Shift` - Shifts labels to be within interval boundaries
   - `ClippingProtection` - Uses intelligent logic to prevent clipping
@@ -389,12 +350,10 @@ Organize axis labels into logical groups and mark them with category labels. Gro
 
 Group a set of adjoining labels and assign a category name to enhance data organization and visualization clarity.
 
-**Key Properties:**
-- {{'[GroupingLabels](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_GroupingLabels)'| markdownify }} - Collection for defining label groups with custom names and ranges
-- {{'[DrawTickLabelGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_DrawTickLabelGrid)'| markdownify }} - When `true`, displays grouped labels within a grid (useful for visual organization)
+- [GroupingLabels](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_GroupingLabels) - Collection for defining label groups with custom names and ranges
+- [DrawTickLabelGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_DrawTickLabelGrid) - When `true`, displays grouped labels within a grid (useful for visual organization)
 
 {% tabs %}
-
 {% highlight c# %}
 
 //Create quarterly grouping labels
@@ -443,10 +402,9 @@ Control the number of decimal places displayed in numeric axis labels. By defaul
 Specify the number of decimal places to display for numeric labels using the `RoundingPlaces` property.
 
 **Key Property:**
-- {{'[RoundingPlaces](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_RoundingPlaces)'| markdownify }} - Sets the number of decimal places for numeric labels (default: 2)
+- [RoundingPlaces](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_RoundingPlaces) - Sets the number of decimal places for numeric labels (default: 2)
 
 {% tabs %}
-
 {% highlight c# %}
 
 //Set RoundingPlaces for axis
@@ -474,13 +432,11 @@ Control how custom labels are positioned on the axis by specifying whether posit
 
 Position custom labels based on their associated data position rather than their index in the labels collection, allowing more flexible label binding.
 
-**Key Property:**
-- {{'[CustomLabelsParameter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_CustomLabelsParameter)'| markdownify }} - Determines label positioning method:
+- [CustomLabelsParameter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_CustomLabelsParameter) - Determines label positioning method:
   - `Index` - Position labels by their index in the collection (default)
   - `Position` - Position labels by their associated data position value
 
 {% tabs %}
-
 {% highlight c# %}
 
 //Set CustomLabelsParameter for axis
@@ -530,17 +486,15 @@ When axis labels are long, they consume additional space outside the plot area, 
 
 ### Positioning Labels Inside or Outside Chart Area
 
-Specify whether axis labels should be placed inside or outside the plotted chart area using the {{'[AxisLabelPlacement](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_AxisLabelPlacement)'| markdownify }} property.
+Specify whether axis labels should be placed inside or outside the plotted chart area using the [AxisLabelPlacement](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_AxisLabelPlacement) property.
 
-**Key Property:**
-- {{'[AxisLabelPlacement](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_AxisLabelPlacement)'| markdownify }} - Specifies label position:
+- [AxisLabelPlacement](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_AxisLabelPlacement) - Specifies label position:
   - `Inside` - Places labels inside the chart plot area
   - `Outside` - Places labels outside the plot area (default)
 
 The following code illustrates how to place the chart axis label inside the plotted chart area:
 
 {% tabs %}
-
 {% highlight c# %}
 
 //Place axis labels inside the chart area
@@ -558,59 +512,57 @@ Me.chartControl1.PrimaryXAxis.AxisLabelPlacement = ChartPlacement.Inside
 
 ![Chart Axes](Chart-Axes_images/Chart-Axes_img37.png)
 
-### Positioning Individual Labels Dynamically
+### Positioning individual labels dynamically
 
 Customize the placement of individual axis labels dynamically based on data values or conditions. Use the **FormatLabel** event to adjust label placement for specific labels based on your requirements.
 
-Handle the [FormatLabel](/windowsforms/chart/chart-control-events#chartformataxislabel-event) event to dynamically adjust individual label placements based on data conditions.
+- [FormatLabel](/windowsforms/chart/chart-control-events#chartformataxislabel-event)  - Handle the event to dynamically adjust individual label placements based on data conditions.
 
 {% tabs %}
-
 {% highlight c# %}
 
-//Set default placement for all labels
-this.chartControl1.PrimaryYAxis.AxisLabelPlacement = ChartPlacement.Inside;
+    //Set default placement for all labels
+    this.chartControl1.PrimaryYAxis.AxisLabelPlacement = ChartPlacement.Inside;
 
-//Customize individual label placement in the FormatLabel event
-private void chartControl1_ChartFormatAxisLabel(object sender, ChartFormatAxisLabelEventArgs e)
-
+    //Customize individual label placement in the FormatLabel event
+    private void chartControl1_ChartFormatAxisLabel(object sender, ChartFormatAxisLabelEventArgs e)
+    {
+        if (e.AxisOrientation == ChartOrientation.Vertical)
         {
-            if (e.AxisOrientation == ChartOrientation.Vertical)
+            //Adjust label placement based on data values
+            if (e.Label == "1")
             {
-                //Adjust label placement based on data values
-                if (e.Label == "1")
-                {
-                    if (series.Points[(int)e.Value - 1].YValues[0] > 0)
-                        e.AxisLabelPlacement = ChartPlacement.Outside;
-                    e.Label = "Canada";
-                }
-                else if (e.Label == "2")
-                {
-                    if (series.Points[(int)e.Value - 1].YValues[0] > 0)
-                        e.AxisLabelPlacement = ChartPlacement.Outside;
-                    e.Label = "France";
-                }
-                else if (e.Label == "3")
-                {
-                    if (series.Points[(int)e.Value - 1].YValues[0] > 0)
-                        e.AxisLabelPlacement = ChartPlacement.Outside;
-                    e.Label = "Japan";
-                }
-                else if (e.Label == "4")
-                {
-                    if (series.Points[(int)e.Value - 1].YValues[0] > 0)
-                        e.AxisLabelPlacement = ChartPlacement.Outside;
-                    e.Label = "Britain";
-                }
-                else if (e.Label == "5")
-                {
-                    if (series.Points[(int)e.Value - 1].YValues[0] > 0)
-                        e.AxisLabelPlacement = ChartPlacement.Outside;
-                    e.Label = "United States";
-                }
-                e.Handled = true;
+                if (series.Points[(int)e.Value - 1].YValues[0] > 0)
+                    e.AxisLabelPlacement = ChartPlacement.Outside;
+                e.Label = "Canada";
             }
+            else if (e.Label == "2")
+            {
+                if (series.Points[(int)e.Value - 1].YValues[0] > 0)
+                    e.AxisLabelPlacement = ChartPlacement.Outside;
+                e.Label = "France";
+            }
+            else if (e.Label == "3")
+            {
+                if (series.Points[(int)e.Value - 1].YValues[0] > 0)
+                    e.AxisLabelPlacement = ChartPlacement.Outside;
+                e.Label = "Japan";
+            }
+            else if (e.Label == "4")
+            {
+                if (series.Points[(int)e.Value - 1].YValues[0] > 0)
+                    e.AxisLabelPlacement = ChartPlacement.Outside;
+                e.Label = "Britain";
+            }
+            else if (e.Label == "5")
+            {
+                if (series.Points[(int)e.Value - 1].YValues[0] > 0)
+                    e.AxisLabelPlacement = ChartPlacement.Outside;
+                e.Label = "United States";
+            }
+            e.Handled = true;
         }
+    }
 
 {% endhighlight %}
 

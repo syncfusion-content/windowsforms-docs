@@ -9,22 +9,20 @@ documentation: ug
 
 # Chart Axis Lines in Windows Forms Chart
 
-## Axis Line Type
+## Customization
 
 The axis line can be customized using the `LineType` property of the axis. The `LineType` property supports the following customization options: `ForeColor`, `DashStyle`, `Width`, and `BackColor`.
 
 ### ForeColor
 
-The foreground color of the axis line can be set using the `ForeColor` property.
+The foreground color of the axis line can be set using the [ForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.LineInfo.html#Syncfusion_Windows_Forms_Chart_LineInfo_ForeColor) property.
 
 {% tabs %}
-
 {% highlight c# %}
 
 chart.PrimaryXAxis.LineType.ForeColor = Color.Blue;
 
 {% endhighlight %}
-
 {% highlight vb %}
 
 chart.PrimaryXAxis.LineType.ForeColor = Color.Blue
@@ -36,16 +34,14 @@ chart.PrimaryXAxis.LineType.ForeColor = Color.Blue
 
 ### Width
 
-The thickness of the axis line can be set using the `Width` property.
+The thickness of the axis line can be set using the [Width](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.LineInfo.html#Syncfusion_Windows_Forms_Chart_LineInfo_Width) property.
 
 {% tabs %}
-
 {% highlight c# %}
 
 chart.PrimaryXAxis.LineType.Width = 3;
 
 {% endhighlight %}
-
 {% highlight vb %}
 
 chart.PrimaryXAxis.LineType.Width = 3
@@ -55,9 +51,9 @@ chart.PrimaryXAxis.LineType.Width = 3
 
 ![Chart Axes](Chart-Axes_images/Chart-Axes_img49.jpeg)
 
-### DashStyle
+### Dash style
 
-The dash style of the axis line can be set using the `DashStyle` property. The following six styles are supported:
+The dash style of the axis line can be set using the [DashStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.LineInfo.html#Syncfusion_Windows_Forms_Chart_LineInfo_DashStyle) property. The following properties allow you to customize the appearance of the major ticks dash style.
 
 * Solid
 * Dash
@@ -67,13 +63,11 @@ The dash style of the axis line can be set using the `DashStyle` property. The f
 * Custom
 
 {% tabs %}
-
 {% highlight c# %}
 
 chart.PrimaryXAxis.LineType.DashStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
 
 {% endhighlight %}
-
 {% highlight vb %}
 
 chart.PrimaryXAxis.LineType.DashStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot
@@ -85,7 +79,7 @@ chart.PrimaryXAxis.LineType.DashStyle = System.Drawing.Drawing2D.DashStyle.DashD
 
 ### BackColor
 
-When the `HatchFill` or `LinearGradient` pen type is used, an additional background color is required for the axis line. Both `ForeColor` and `BackColor` can be used together for these pen types.
+When the `HatchFill` or `LinearGradient` pen type is used, an additional background color is required for the axis line. Both [ForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.LineInfo.html#Syncfusion_Windows_Forms_Chart_LineInfo_ForeColor) and [BackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.LineInfo.html#Syncfusion_Windows_Forms_Chart_LineInfo_BackColor) can be used together for these pen types.
 
 {% tabs %}
 
