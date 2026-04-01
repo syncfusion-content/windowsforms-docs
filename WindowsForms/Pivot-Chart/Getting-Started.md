@@ -413,3 +413,5 @@ Me.pivotChart1.EndUpdate()
 {% endhighlight %}
 
 {% endtabs %}
+
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/GettingStarted-WinForms-PivotChart)
