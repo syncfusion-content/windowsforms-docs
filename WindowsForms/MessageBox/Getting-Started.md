@@ -93,10 +93,10 @@ This short guide helps you get a MessageBoxAdv dialog running quickly in a Windo
 
 ## Where to go next (concise references)
 
-- Buttons and return values: see the focused reference in [Button-Parameters.md](MessageBox/Button-Parameters.md) for the available `MessageBoxButtons` combinations, examples, and images.
-- Styling and themes: learn how to change the visual style and customize colors in [Styles-Settings.md](MessageBox/Styles-Settings.md).
-- Localization: if your app needs translated button text or captions, follow the step-by-step guide in [Localization.md](MessageBox/Localization.md).
-- Overview and advanced features: read [Overview.md](MessageBox/Overview.md) for feature highlights such as details view, resizing, icons, and RTL support.
+- Buttons and return values: see the focused reference in [Button Parameters](https://help.syncfusion.com/windowsforms/messagebox/button-parameters) for the available `MessageBoxButtons` combinations, examples, and images.
+- Styling and themes: learn how to change the visual style and customize colors in [Styles Settings](https://help.syncfusion.com/windowsforms/messagebox/styles-settings).
+- Localization: if your app needs translated button text or captions, follow the step-by-step guide in [Localization](https://help.syncfusion.com/windowsforms/messagebox/localization).
+- Overview and advanced features: read [Overview](https://help.syncfusion.com/windowsforms/messagebox/overview) for feature highlights such as details view, resizing, icons, and RTL support.
 
 ## Tips and common tasks (brief)
 
@@ -111,4 +111,4 @@ This short guide helps you get a MessageBoxAdv dialog running quickly in a Windo
 
 ## Summary
 
-This page provides a concise quickstart to get `MessageBoxAdv` displayed in your app and points you to the specialized pages in this folder for deeper examples and configuration. 
+This page provides a concise quick start to get `MessageBoxAdv` displayed in your app and points you to the specialized pages in this folder for deeper examples and configuration. 
