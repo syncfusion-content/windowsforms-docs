@@ -262,4 +262,4 @@ public class CustomGrid : DataGrid,ICalcData
 A sample that demonstrates using custom control with CalcEngine is available [here](https://github.com/SyncfusionExamples/how-to-use-custom-control-with-calcengine-) 
 
 N> To support cross-references among several `ICalcData` objects, you must register the objects with a single instance of the `CalcEngine`.
-For more reference, refer [here](https://help.syncfusion.com/windowsforms/calculate/getting-started#cross-sheet-reference).
+For more reference, refer [here](https://help.syncfusion.com/windowsforms/calculation-engine/getting-started#cross-sheet-reference).
