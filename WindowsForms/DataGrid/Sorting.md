@@ -35,6 +35,8 @@ Me.sfDataGrid1.Columns("CustomerID").AllowSorting = False
 N>The `GridColumn.AllowSorting` takes higher priority than `SfDataGrid.AllowSorting` property.
 End users can sort the column by clicking column header cell. Once the columns get sorted, the sort indicator will be displayed on the right side of the column header.
 
+N> Sorting is not supported for `GridHyperLinkColumn` when the bound property type is `Uri`, since [`System.Uri`](https://learn.microsoft.com/dotnet/api/system.uri) does not implement [`IComparable`](https://learn.microsoft.com/dotnet/api/system.icomparable). If sorting is required, a custom comparison logic based on a comparable value should be used.
+
 ![UI Sorting in SfDataGrid windowsforms](Sorting_images/Sorting_Image1.png)
 
 ## Adding Sort Columns
