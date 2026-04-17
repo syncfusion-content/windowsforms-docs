@@ -1216,15 +1216,17 @@ The column formats which are all set using the `Column.Appearance.AnyRecordField
 GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
 
 // Exporting the data without creating style object
+
 ExcelConverter.EnableOptimization = true;
 ExcelConverter.ExportToExcel(this.gridGroupingControl1, "Sample.xlsx", exportingOptions);
 {% endhighlight %}
 {% highlight vb %}
 Dim ExcelConverter As New GridGroupingExcelConverterControl()
 
-' Exporting the data without creating style object 
-excelConverter.EnableOptimization = True
-excelConverter.ExportToExcel(Me.gridGroupingControl1, "Sample.xlsx", exportingOptions)
+' Exporting the data without creating style object
+
+ExcelConverter.EnableOptimization = True
+ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "Sample.xlsx", exportingOptions)
 {% endhighlight %}
 {% endtabs %}
 
