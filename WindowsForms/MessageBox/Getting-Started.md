@@ -30,12 +30,13 @@ You can create the Windows Forms application with MessageBoxAdv as follows:
 
 Create a new Windows Forms project in the Visual Studio to display the MessageBoxAdv.
 
+
 ## Configure MessageBoxAdv
 
 To add control manually in C#, follow the given steps:
 
 **Step1:** Add the following required assembly references to the project:
-	
+   
    * Syncfusion.Shared.Base.dll
 
 **Step2:** Include the namespaces **Syncfusion.Windows.Forms**.
@@ -84,3 +85,59 @@ MessageBoxAdv.Show(this,"Save changes?", "File Modified", MessageBoxButtons.YesN
 
 ![MessageBoxAdv in windows forms messagebox](MessageBoxAdv_images/MessageBoxAdv_img32.png)
 
+## Appearance of MessageBoxAdv
+
+The appearance of the MessageBoxAdv can be customized by using the following properties of the MetroStyleColorTable.
+
+* AbortButtonBackColor
+* CancelButtonBackColor
+* IgnoreButtonBackColor
+* NoButtonBackColor
+* OKButtonBackColor
+* RetryButtonBackColor
+* YesButtonBackColor
+* CaptionBarColor
+* CaptionForeColor
+* ForeColor
+* BackColor
+* BorderColor
+
+{% tabs %}
+
+{% highlight C# %}
+
+//MetroColor table for MessageBoxAdv
+MetroStyleColorTable metroColorTable = new MetroStyleColorTable();
+//Sets the NoButton backColor
+metroColorTable.NoButtonBackColor = Color.Red;
+//Sets the YesButton backColor
+metroColorTable.YesButtonBackColor = Color.SkyBlue;
+//Sets the OK button backcolor
+metroColorTable.OKButtonBackColor = Color.Green;
+//Applies the MetroStyleColorTable to MessageBoxAdv
+MessageBoxAdv.MetroColorTable = metroColorTable;
+//Sets the MessageBoxStyle as Metro
+MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Metro;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'MetroColor table for MessageBoxAdv
+Dim metroColorTable As New MetroStyleColorTable()
+'Sets the NoButton backColor
+metroColorTable.NoButtonBackColor = Color.Red
+'Sets the YesButton backColor
+metroColorTable.YesButtonBackColor = Color.SkyBlue
+'Sets the OK button backcolor
+metroColorTable.OKButtonBackColor = Color.Green
+'Applies the MetroStyleColorTable to MessageBoxAdv
+MessageBoxAdv.MetroColorTable = metroColorTable
+'Sets the MessageBoxStyle as Metro
+MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Metro
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WindowsForms MessageBoxAdv Appearance](MessageBoxAdv_images/MessageBoxAdv_appearance.png) 
