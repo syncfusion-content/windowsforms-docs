@@ -30,13 +30,12 @@ You can create the Windows Forms application with MessageBoxAdv as follows:
 
 Create a new Windows Forms project in the Visual Studio to display the MessageBoxAdv.
 
-
 ## Configure MessageBoxAdv
 
 To add control manually in C#, follow the given steps:
 
 **Step1:** Add the following required assembly references to the project:
-   
+
    * Syncfusion.Shared.Base.dll
 
 **Step2:** Include the namespaces **Syncfusion.Windows.Forms**.
