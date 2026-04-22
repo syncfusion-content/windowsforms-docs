@@ -132,6 +132,6 @@ Me.sparkLine1.Markers.NegativePointColor = New BrushInfo(Color.Red)
 
 ![Marker customization in WindowsForms Sparkline](gettingstarted_images/windowsforms-sparkline-marker-customization.jpg)
 
-You can find the complete getting started sample from this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SparklineGettingStarted-1907776967).
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/GettingStarted-WinForms-Sparkline).
 
 
