@@ -68,17 +68,17 @@ Me.chartControl1.PrimaryYAxis.TitleRotationAngle = AxisTitleRotationAngle.Rotate
 {% endtabs %}
 
 The following screenshot shows the x-axis title rotated by 270 degrees while the y-axis title remains unrotated.
-![Chart Axes](Chart-Axes_images/Chart-Axes_img41_2.png)
+![Chart Axes](Axis_Images/Chart-Axes_img41_2.png)
 
 ## Multiline Chart Axes Title
 
 Axis titles can be wrapped and displayed as multiline text. To set a multiline title through the designer, type the title text in the [Axis.Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_Title) property, press **Enter** to insert a new line, and then press **Ctrl+Enter** to confirm the text.
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img21.jpeg)
+![Chart Axes](Axis_Images/Chart-Axes_img21.jpeg)
 
 The following screenshot illustrates a chart with multiline axis titles.
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img22.jpeg)
+![Chart Axes](Axis_Images/Chart-Axes_img22.jpeg)
 
 ## Drawing Mode of Title Text
 
@@ -108,4 +108,4 @@ Me.secYAxis.TitleDrawMode = ChartTitleDrawMode.Wrap
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img23.png)
+![Chart Axes](Axis_Images/Chart-Axes_img23.png)

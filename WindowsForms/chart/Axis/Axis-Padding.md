@@ -40,4 +40,4 @@ N> Use small values (e.g., `0.05`–`0.2`) for subtle spacing; use integer value
 
 The following screenshot illustrates the chart when `PointOffset` is set to `1` (one interval of padding).
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img45.png)
+![Chart Axes](Axis_Images/Chart-Axes_img45.png)

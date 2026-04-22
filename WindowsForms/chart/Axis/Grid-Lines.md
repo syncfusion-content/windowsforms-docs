@@ -64,4 +64,4 @@ Me.chartControl1.PrimaryYAxis.GridLineType.Width = 2F
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img31.jpeg)
+![Chart Axes](Axis_Images/Chart-Axes_img31.jpeg)

@@ -20,7 +20,7 @@ The following properties allow you to customize the appearance and behavior of t
 - [TickSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_TickSize) - Specifies the width and height of the tick rectangle. This is also a good way to hide the ticks, by default it is {1, 1}.
 - [TickColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_TickColor) - Color of the tick mark.
 - [TickLabelGridPadding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_TickLabelGridPadding) - The padding between the tick mark in the axis and the label, by default it is 5.
-- [TickDrawingOperationMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_TickLabelsDrawingMode) - Defines the number of ticks to render while zooming.
+- [TickDrawingOperationMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_TickDrawingOperationMode) - Defines the number of ticks to render while zooming.
 NumberOfIntervalsFixed - When you zoom, the number of visible intervals will be constant. So, as you zoom in, the total number of intervals will increase.
 IntervalFixed - The number of intervals will be constant. So, as you zoom in, fewer intervals will be visible at a time.
 
@@ -42,7 +42,7 @@ Me.chartControl1.PrimaryXAxis.TickLabelGridPadding = 8F
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img24.jpeg)
+![Chart Axes](Axis_Images/Chart-Axes_img24.jpeg)
 
 ### Minor Ticks
 
@@ -71,4 +71,4 @@ Me.chartControl1.PrimaryXAxis.SmallTicksPerInterval = 1
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img25.jpeg)
+![Chart Axes](Axis_Images/Chart-Axes_img25.jpeg)

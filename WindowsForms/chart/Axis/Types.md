@@ -95,7 +95,7 @@ Me.chartControl1.PrimaryXAxis.ValueType = ChartValueType.Category
 {% endhighlight %}
 {% endtabs %}
 
-![Category axis in Windows Forms Chart](Chart-Axes_images/Chart-Axes_img39.png)
+![Category axis in Windows Forms Chart](Axis_Images/Chart-Axes_img39.png)
 
 ### Indexed X Values
 
@@ -103,9 +103,9 @@ By default points in a series are plotted against their x and y values. However 
 
 In the figure below, the first chart shows a line chart that is not-indexed while the second chart shows a line chart whose x-axis is indexed. 
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img1.jpeg)
+![Chart Axes](Axis_Images/Chart-Axes_img1.jpeg)
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img2.jpeg)   
+![Chart Axes](Axis_Images/Chart-Axes_img2.jpeg)   
 
 N> Indexing is supported only on the X-axis.
 
@@ -363,7 +363,7 @@ Me.chartControl1.PrimaryYAxis.Inversed = True
 {% endhighlight %}
 {% endtabs %}
 
-![Inverted axis in Windows Forms Chart](Chart-Axes_images/Chart-Axes_img4.jpeg)
+![Inverted axis in Windows Forms Chart](Axis_Images/Chart-Axes_img4.jpeg)
 
 ### Opposed Axis
 
@@ -391,7 +391,7 @@ Me.chartControl1.PrimaryYAxis.OpposedPosition = True
 {% endhighlight %}
 {% endtabs %}
 
-![Opposed axis in Windows Forms Chart](Chart-Axes_images/Chart-Axes_img5.jpeg)
+![Opposed axis in Windows Forms Chart](Axis_Images/Chart-Axes_img5.jpeg)
 
 N> The [OpposedPosition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_OpposedPosition) and [Inversed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_Inversed) properties can be combined to implement right-to-left chart layouts.
 
@@ -431,7 +431,7 @@ Me.chartControl1.Series(1).XAxis = Me.secXAxis
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple X-axis in Windows Forms Chart](Chart-Axes_images/Chart-Axes_img6.jpeg)
+![Multiple X-axis in Windows Forms Chart](Axis_Images/Chart-Axes_img6.jpeg)
 
 ### Adding a Secondary Y-Axis
 
@@ -471,7 +471,7 @@ Me.chartControl1.Series(1).YAxis = Me.secYAxis
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple Y-axis in Windows Forms Chart](Chart-Axes_images/Chart-Axes_img6_1.jpg)
+![Multiple Y-axis in Windows Forms Chart](Axis_Images/Chart-Axes_img6_1.jpg)
 
 ### Opposed Position
 
@@ -491,7 +491,7 @@ secXAxis.OpposedPosition = True
 {% endhighlight %}
 {% endtabs %}
 
-![Opposed position in Windows Forms Chart](Chart-Axes_images/Chart-Axes_img7.jpeg)
+![Opposed position in Windows Forms Chart](Axis_Images/Chart-Axes_img7.jpeg)
 
 ### Stacked or Side-by-Side Position
 
@@ -513,7 +513,7 @@ Me.chartControl1.ChartArea.XAxesLayoutMode = ChartAxesLayoutMode.SideBySide
 {% endhighlight %}
 {% endtabs %}
 
-![Side-by-side axes in Windows Forms Chart](Chart-Axes_images/Chart-Axes_img8.jpeg)
+![Side-by-side axes in Windows Forms Chart](Axis_Images/Chart-Axes_img8.jpeg)
 
 ### ChartAxesLayouts
 
@@ -565,7 +565,7 @@ chartControl1.ChartArea.YLayouts.Add(layout1)
 {% endhighlight %}
 {% endtabs %}
 
-![ChartAxesLayouts in Windows Forms Chart](Chart-Axes_images/Chart-Axes_img9.jpeg)
+![ChartAxesLayouts in Windows Forms Chart](Axis_Images/Chart-Axes_img9.jpeg)
 
 N> All axes with the same orientation must be added to [ChartAxisLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxisLayout.html) (including the PrimaryAxis) as illustrated in the above code snippet.
 
@@ -639,7 +639,7 @@ Me.chartControl1.PrimaryYAxis.Location = New PointF(15, 200)
 {% endhighlight %}
 {% endtabs %}
 
-![Custom axis location in Windows Forms Chart](Chart-Axes_images/Chart-Axes_img11.jpeg)
+![Custom axis location in Windows Forms Chart](Axis_Images/Chart-Axes_img11.jpeg)
 
 ### Custom axis size
 
@@ -659,9 +659,9 @@ Me.chartControl1.PrimaryXAxis.Size = New Size(50, 20)
 {% endhighlight %}
 {% endtabs %}
 
-![Custom axis size in Windows Forms Chart](Chart-Axes_images/Chart-Axes_img12.jpeg)
+![Custom axis size in Windows Forms Chart](Axis_Images/Chart-Axes_img12.jpeg)
 
-![Custom axis size in Windows Forms Chart](Chart-Axes_images/Chart-Axes_img13.jpeg)
+![Custom axis size in Windows Forms Chart](Axis_Images/Chart-Axes_img13.jpeg)
 
 ## Axis Crossing Support
 
@@ -687,7 +687,7 @@ Me.chartControl1.Series3D = True
 {% endhighlight %}
 {% endtabs %}
 
-![Axis crossing support in Windows Forms Chart](Chart-Axes_images/Chart-Axes_img36.png)
+![Axis crossing support in Windows Forms Chart](Axis_Images/Chart-Axes_img36.png)
 
 ## Exclude Invisible Series Range
 
@@ -713,4 +713,4 @@ For example, when hidden the any of the series and set the ExcludeInvisibleSerie
 
 The following screenshot illustrates a chart whose x-axis and y-axis range exclude the invisible series by setting ExcludeInvisibleSeriesRange as true for corresponding axis.
 
-![Exclude invisible series range in Windows Forms Chart](Chart-Axes_images/Chart-Axes_img41.png)
+![Exclude invisible series range in Windows Forms Chart](Axis_Images/Chart-Axes_img41.png)

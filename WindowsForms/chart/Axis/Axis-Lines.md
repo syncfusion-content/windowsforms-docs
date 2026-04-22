@@ -30,7 +30,7 @@ chart.PrimaryXAxis.LineType.ForeColor = Color.Blue
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img48.png)
+![Chart Axes](Axis_Images/Chart-Axes_img48.png)
 
 ### Width
 
@@ -49,7 +49,7 @@ chart.PrimaryXAxis.LineType.Width = 3
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img49.jpeg)
+![Chart Axes](Axis_Images/Chart-Axes_img49.jpeg)
 
 ### Dash style
 
@@ -75,7 +75,7 @@ chart.PrimaryXAxis.LineType.DashStyle = System.Drawing.Drawing2D.DashStyle.DashD
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img50.jpeg)
+![Chart Axes](Axis_Images/Chart-Axes_img50.jpeg)
 
 ### BackColor
 
@@ -100,4 +100,4 @@ chart.PrimaryXAxis.LineType.PenType = System.Drawing.Drawing2D.PenType.LinearGra
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img54.jpeg)
+![Chart Axes](Axis_Images/Chart-Axes_img54.jpeg)

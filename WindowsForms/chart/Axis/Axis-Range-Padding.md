@@ -11,7 +11,7 @@ documentation: ug
 
 Control padding at the minimum and maximum ends of an axis range to ensure data points are not drawn flush against chart boundaries. Range padding can be disabled or automatically calculated to include an extra interval at both ends.
 
-- [RangePaddingType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_RangePaddingType) — Determines how range padding is applied (see options below)
+- [RangePaddingType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_RangePaddingType) — Determines how range padding is applied.
 
 ## Customization
 
@@ -41,8 +41,8 @@ chart.PrimaryXAxis.RangePaddingType = ChartAxisRangePaddingType.Calculate
 
 - The following screenshot shows the axis with `RangePaddingType = None`.
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img46.png)
+![Chart Axes](Axis_Images/Chart-Axes_img46.png)
 
 - The following screenshot shows the axis with `RangePaddingType = Calculate` (interval added to extremes).
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img47.png)
+![Chart Axes](Axis_Images/Chart-Axes_img47.png)
