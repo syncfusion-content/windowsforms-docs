@@ -14,7 +14,7 @@ The WinForms Template Studio by Syncfusion<sup>®</sup> is a specialized tool fo
 
 I> The Syncfusion® WinForms Template Studio is available from v24.1.41.
 
-N> WinForms Template Studio is compatible with Visual Studio 2022, Visual Studio 2019, and Visual Studio 2017. For the Visual Studio 2015 or lower versions, it is recommended to use a [WinForms project template](https://help.syncfusion.com/windowsforms/visual-studio-integration/create-project).
+N> WinForms Template Studio is compatible with Visual Studio 2022, Visual Studio 2019, and Visual Studio 2017. 
 
 Create the Syncfusion® WinForms project using the Visual Studio Project Template by following the provided steps.
 
