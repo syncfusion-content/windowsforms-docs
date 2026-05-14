@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Syncfusion® Windows Forms UI Composer Skill for AI Assistants | Syncfusion®
+title: Syncfusion® Windows Forms UI Composer Skill for AI Assistants
 description: Install Syncfusion® Windows Forms UI Composer to generate production-ready Windows Forms components from natural-language prompts.
 control: Skills
-platform: winforms
+platform: windowsforms
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -20,7 +20,7 @@ By combining intelligent code generation with best practices, accessibility stan
 Before installing Windows Forms UI Composer, ensure the following:
 
 - Install [APM (Agent Package Manager)](https://microsoft.github.io/apm/getting-started/installation/#quick-install-recommended)
-- Required [.NET SDK](https://dotnet.microsoft.com/download) version ≥ 6
+- Required [.NET SDK](https://dotnet.microsoft.com/en-us/download) version ≥ 6
 - Windows Forms application (existing or new); see [Quick Start](https://help.syncfusion.com/windowsforms/getting-started)
 - A supported AI agent or IDE that integrates with the Skills (VS Code, Cursor, Syncfusion® Code Studio, etc.)
 - Active Syncfusion<sup style="font-size:70%">&reg;</sup> license(any of the following):  
@@ -31,7 +31,7 @@ Before installing Windows Forms UI Composer, ensure the following:
 ## Key Benefits
 
 ### **AI-Driven UI Generation**
-- Converts prompts into complete WPF components—not just snippets
+- Converts prompts into complete WinForms components—not just snippets
 - Automatically selects appropriate Syncfusion® components and features
 - Produces structured, maintainable code
 
@@ -42,7 +42,7 @@ Before installing Windows Forms UI Composer, ensure the following:
 
 ### **Patterns & Best Practices**
 - Recommended component composition and state management
-- Event handling aligned with WPF standards
+- Event handling aligned with WinForms standards
 - Secure and scalable coding patterns
 
 ### **Accessibility & Responsiveness**
@@ -51,12 +51,12 @@ Before installing Windows Forms UI Composer, ensure the following:
 - Responsive layouts for desktop applications
 
 ### **Design-System Integration**
-- Supports built-in Syncfusion® WPF themes
+- Supports built-in Syncfusion® WinForms themes
 - Ensures consistent Syncfusion® styling and theme usage
 
 ## Installation
 
-Before installing WPF UI Composer, ensure that APM (Agent Package Manager) is installed and available in your environment.
+Before installing WinForms UI Composer, ensure that APM (Agent Package Manager) is installed and available in your environment.
 
 ### Verify APM Installation
 
