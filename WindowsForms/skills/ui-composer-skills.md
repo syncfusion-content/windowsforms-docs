@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion® Windows Forms UI Composer Skill for AI Assistants
+title: Syncfusion® WinForms UI Composer Skill for AI Assistants | Syncfusion®
 description: Install Syncfusion® Windows Forms UI Composer to generate production-ready Windows Forms components from natural-language prompts.
 control: Skills
 platform: windowsforms
@@ -21,7 +21,7 @@ Before installing Windows Forms UI Composer, ensure the following:
 
 - Install [APM (Agent Package Manager)](https://microsoft.github.io/apm/getting-started/installation/#quick-install-recommended)
 - Required [.NET SDK](https://dotnet.microsoft.com/en-us/download) version ≥ 6
-- Windows Forms application (existing or new); see [Quick Start](https://help.syncfusion.com/windowsforms/getting-started)
+- Windows Forms application (existing or new); see [Overview](https://help.syncfusion.com/windowsforms/overview)
 - A supported AI agent or IDE that integrates with the Skills (VS Code, Cursor, Syncfusion® Code Studio, etc.)
 - Active Syncfusion<sup style="font-size:70%">&reg;</sup> license(any of the following):  
   - [Commercial](https://www.syncfusion.com/sales/unlimitedlicense)  

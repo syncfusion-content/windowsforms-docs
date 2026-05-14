@@ -42,7 +42,7 @@ Before installing Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms
 
 ## Installation
 
-Install [Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms components skills](https://github.com/syncfusion/winforms-ui-components-skills.git) using the Skills CLI. Users can also explore available skills from the [marketplace](https://skills.sh/syncfusion).
+Install [Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms components skills](https://github.com/syncfusion/winforms-ui-components-skills.git) using the Skills CLI. Users can also explore available skills from the [marketplace](https://www.skills.sh/syncfusion).
 
 ### Install all skills
 
