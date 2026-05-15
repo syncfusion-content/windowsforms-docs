@@ -44,7 +44,7 @@ Before installing Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms
 
 ## Installation
 
-Install [Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms controls skills](https://github.com/syncfusion/winforms-ui-controls-skills.git) using the Skills CLI. Users can also explore available skills from the [marketplace](https://www.skills.sh/syncfusion).
+Install [Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms controls skills](https://github.com/syncfusion/winforms-ui-components-skills.git) using the Skills CLI. Users can also explore available skills from the [marketplace](https://www.skills.sh/syncfusion).
 
 ### Install all skills
 
@@ -53,7 +53,7 @@ Use the following command to install all control skills at once in the `.agents/
 {% tabs %}
 {% highlight bash tabtitle="NPM" %}
 
-npx skills add syncfusion/winforms-ui-controls-skills -y
+npx skills add syncfusion/winforms-ui-components-skills -y
 
 {% endhighlight %}
 {% endtabs %}
@@ -65,7 +65,7 @@ Use the following command to install skills interactively:
 {% tabs %}
 {% highlight bash tabtitle="NPM" %}
 
-npx skills add syncfusion/winforms-ui-controls-skills
+npx skills add syncfusion/winforms-ui-components-skills
 
 {% endhighlight %}
 {% endtabs %}
