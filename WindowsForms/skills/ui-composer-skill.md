@@ -142,7 +142,7 @@ After installing Windows Forms UI Composer with APM, the relevant agent and skil
 To start using the skill:
 
 1. Open your supported IDE.
-2. In the chat panel, select the `winforms-ui-composer` agent from the **Agent dropdown**.
+2. In the chat panel, select the `syncfusion-winforms-ui-composer` agent from the **Agent dropdown**.
 
 3. Start prompting the agent with a clear description of your UI requirements.
 
