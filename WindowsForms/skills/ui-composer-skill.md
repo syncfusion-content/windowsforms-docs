@@ -142,7 +142,7 @@ After installing Windows Forms UI Composer with APM, the relevant agent and skil
 To start using the skill:
 
 1. Open your supported IDE.
-2. In the chat panel, select the `winforms-ui-composer` agent from the **Agent dropdown**.
+2. In the chat panel, select the `syncfusion-winforms-ui-composer` agent from the **Agent dropdown**.
 
 3. Start prompting the agent with a clear description of your UI requirements.
 
@@ -157,7 +157,7 @@ Create a CMS Admin Dashboard UI featuring a collapsible TreeView in a left panel
 {% endpromptcard %}
 {% endpromptcards %}
 
-Generated code follows Windows Forms best practices with proper control layout, event handling, data bindings, strong C# typing, and built-in security measures such as input validation and avoidance of hard coded secrets. The code is fully compatible with Visual Studio designer and Windows Forms conventions.
+Generated code follows Windows Forms best practices with proper control layout, event handling, data bindings, strong C# typing, and built-in security measures such as input validation and avoidance of hardcore secrets. The code is fully compatible with Visual Studio designer and Windows Forms conventions.
 
 ## Best Practices
 
