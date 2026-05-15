@@ -53,8 +53,9 @@ Before installing Windows Forms UI Composer, ensure the following:
 - Theme consistency across desktop applications
 
 ### **Design-System Integration**
-- Supports Syncfusion® Windows Forms themes (Office2019Black, Office2019Blue, VisualStudio2015, etc.)
-- StyleManager integration for consistent theming
+- Supports Syncfusion® Windows Forms themes via SkinManager (Office2007, Office2010, Office2013, Office2016, Office2019, Metro, HighContrast)
+- SkinManager integration for consistent theming
+- Theme Studio support for customizing Office2019Colorful and HighContrastBlack themes
 - Ensures consistent Syncfusion® styling across controls
 
 ## Installation
@@ -112,9 +113,9 @@ Refer to the [documentation](https://microsoft.github.io/apm/reference/cli/targe
 3. **Control Mapping** — Map intent to Syncfusion® Windows Forms controls and required feature controls.
 4. **Theming & Design System**  
    Load required theming guidelines and confirm key design choices:
-   - Syncfusion® theme (Office2019Black, Office2019Blue, VisualStudio2015, Fluent, etc.)
+   - Syncfusion® Windows Forms theme (Office2007, Office2010, Office2013, Office2016, Office2019, Metro, HighContrast)
    - Core design basics (colors, fonts, control appearance, DPI awareness)
-   - Light and dark theme variants
+   - Light and dark theme variants per theme family
 5. **Code Generation** — Produce C# Windows Forms controls, data bindings, event handlers, and styling.
 6. **Dependency Management** — Recommend or install required Syncfusion® NuGet packages and .NET dependencies.
 7. **Validation** — Run code compatibility and basic security checks, request confirmation for changes.
@@ -122,11 +123,11 @@ Refer to the [documentation](https://microsoft.github.io/apm/reference/cli/targe
 
 Key enforcement points:
 
-- Adds correct StyleManager configuration and theme settings for chosen Syncfusion® themes
+- Adds correct SkinManager configuration and theme settings for chosen Syncfusion® themes (loads required theme assemblies)
 - Injects only the feature controls and behaviors required by generated controls
 - Follows Windows Forms conventions for control naming, initialization, and event handling
 - Generates designer-compatible code with proper control hierarchy and parent-child relationships
-- Ensures all required Syncfusion® assemblies are referenced and configured
+- Ensures all required Syncfusion® assemblies and theme NuGet packages are referenced and configured
 - Avoids unsupported or deprecated API usages for Syncfusion® Windows Forms controls
 
 > The assistant handles most stages automatically and may request confirmation where required.
@@ -149,7 +150,7 @@ Examples Prompts:
 
 {% promptcards %}
 {% promptcard Authentication %}
-Create a login form using the Office2019Blue theme with a centered TableLayoutPanel containing email and password TextBox controls with validation. Include a "Remember Me" CheckBox, a forgot password LinkLabel, and a primary login Button. Add a secondary "Create Account" button below. Ensure the form is well-organized and follows Windows Forms best practices.
+Create a login form using the Office2019Colorful theme with a centered TableLayoutPanel containing email and password TextBox controls with validation. Include a "Remember Me" CheckBox, a forgot password LinkLabel, and a primary login Button. Add a secondary "Create Account" button below. Ensure the form is well-organized and follows Windows Forms best practices with proper SkinManager configuration.
 {% endpromptcard %}
 {% promptcard Admin Dashboard %}
 Create a CMS Admin Dashboard UI featuring a collapsible TreeView in a left panel (docked) with navigation items for Dashboard, Content, Users, Analytics, and Settings; a top StatusBar showing the title "CMS Admin Dashboard" and user name; and a main content area with a SplitContainer containing three compact summary panels in a FlowLayoutPanel displaying Total Content, Total Users, and Active Sessions (each showing a label, count value, and percentage change), followed by a "Content Management" section with a DataGrid containing columns for Title, Author, Status, Date, and Actions, and finally two charts displayed side by side—a column chart titled "Content Over Time" and a pie chart titled "Content by Category"—using realistic sample data.

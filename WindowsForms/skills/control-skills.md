@@ -37,9 +37,9 @@ Before installing Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms
 - All guidance is authored directly in Skill files and does not rely on external documentation fetches
 
 **Design‑System Guidance**
-- VisualStyle and ThemeStyle patterns including Office2019Black, Office2019Colorful and custom themes
+- SkinManager integration with Office2007, Office2010, Office2013, Office2016, Office2019, Metro, and HighContrast themes
+- Theme customization using Theme Studio for Office2019Colorful and HighContrastBlack themes
 - Light and dark theme variants for Windows Forms
-- Customization approaches including background colors, fonts, and control appearance
 - Consistent design alignment across Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms controls
 
 ## Installation
@@ -148,7 +148,7 @@ Once skills are installed, the assistant can be used to generate and update Sync
 
 - "Add a DataGrid with paging, sorting, and filtering features."
 - "Create a Scheduler control with week view and drag-and-drop support."
-- "Apply the Office2019Blue theme to all Syncfusion controls."
+- "Apply the Office2019Colorful theme to all Syncfusion controls using SkinManager."
 - "Configure a ComboBox with autocomplete and data binding."
 
 ## Skills CLI Commands
