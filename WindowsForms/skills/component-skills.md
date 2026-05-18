@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion Windows Forms Agent Skills for AI Assistants | Syncfusion
-description: Learn how to install and use Syncfusion Agent Skills to enhance AI assistants with accurate Syncfusion Windows Forms control guidance.
+description: Learn how to install and use Syncfusion Agent Skills to enhance AI assistants with accurate Syncfusion Windows Forms component guidance.
 control: Skills
 platform: windowsforms
 documentation: ug
@@ -12,43 +12,41 @@ domainurl: ##DomainURL##
 
 This guide introduces **Syncfusion Windows Forms Skills**, a knowledge package that enables AI assistants (VS Code, Cursor, CodeStudio, etc.) to understand and generate accurate Windows Forms code using official APIs, patterns, and theming guidelines.
 
-These skills eliminate common issues with generic AI suggestions by grounding the assistant in accurate control usage patterns, API structures, supported features, and project‑specific configuration.
+These skills eliminate common issues with generic AI suggestions by grounding the assistant in accurate component usage patterns, API structures, supported features, and project‑specific configuration.
 
 ## Prerequisites
 
 Before installing Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms Agent Skills, ensure the following:
 
-- Required [.NET SDK](https://dotnet.microsoft.com/en-us/download) version >= 6 for Windows Forms development
+- Required [Node.js](https://nodejs.org/en/) version >= 16
 - Windows Forms application (existing or new); see [Overview](https://help.syncfusion.com/windowsforms/overview)
 - A supported AI agent or IDE that integrates with the Skills CLI (VS Code, Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio, Cursor, etc.)
 
 ## Key Benefits
 
-**Control Usage & API Knowledge**
-- Accurate guidance for adding and configuring Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms controls
+**Component Usage & API Knowledge**
+- Accurate guidance for adding and configuring Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms components
 - Component‑specific properties, events, and required assemblies
-- Guidance for control initialization and designer integration patterns
+- Guidance for component initialization and designer integration patterns
 
 **Patterns & Best Practices**
 - Recommended API structures and composition patterns for Windows Forms
-- Data‑binding approaches for common scenarios using DataSource and BindingSource
+- Data‑binding approaches for common scenarios
 - Feature‑injection workflows (for example, paging, sorting, filtering)
-- Event handling and layout management for Windows Forms controls
 - All guidance is authored directly in Skill files and does not rely on external documentation fetches
 
 **Design‑System Guidance**
-- SkinManager integration with Office2007, Office2010, Office2013, Office2016, Office2019, Metro, and HighContrast themes
-- Theme customization using Theme Studio for Office2019Colorful and HighContrastBlack themes
-- Light and dark theme variants for Windows Forms
-- Consistent design alignment across Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms controls
+- Theme usage, including light and dark variants
+- VisualStyle patterns and customization approaches
+- Consistent design alignment across Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms components
 
 ## Installation
 
-Install [Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms controls skills](https://github.com/syncfusion/winforms-ui-components-skills.git) using the Skills CLI. Users can also explore available skills from the [marketplace](https://www.skills.sh/syncfusion).
+Install [Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms components skills](https://github.com/syncfusion/winforms-ui-components-skills.git) using the Skills CLI. Users can also explore available skills from the [marketplace](https://www.skills.sh/syncfusion).
 
 ### Install all skills
 
-Use the following command to install all control skills at once in the `.agents/skills` directory:
+Use the following command to install all component skills at once in the `.agents/skills` directory:
 
 {% tabs %}
 {% highlight bash tabtitle="NPM" %}
@@ -133,23 +131,20 @@ To learn more about the Skills CLI, refer [here](https://www.skills.sh/docs).
 
 ## How Syncfusion<sup style="font-size:70%">&reg;</sup> Agent Skills Work
 
-1. **Reads relevant Skill files based on queries**, retrieving control usage patterns, APIs, and best‑practice guidance from installed Syncfusion<sup style="font-size:70%">&reg;</sup> Skills. The assistant initially loads only skill names and descriptions, then dynamically loads the required skill and reference files as needed to provide accurate Syncfusion guidance.
+1. **Reads relevant Skill files based on queries**, retrieving component usage patterns, APIs, and best‑practice guidance from installed Syncfusion<sup style="font-size:70%">&reg;</sup> Skills. The assistant initially loads only skill names and descriptions, then dynamically loads the required skill and reference files as needed to provide accurate Syncfusion guidance.
 2. **Enforces Syncfusion<sup style="font-size:70%">&reg;</sup> best practices**, including:
 
-   - Using the required Syncfusion assemblies for each control (.dll references).
-   - Injecting applicable control controls and behaviors (for example, paging, sorting, filtering, and other feature controls).
-   - Adding the correct theme, VisualStyle, and StyleManager configurations for Windows Forms.
-   - Proper event wiring and control initialization within Form designer or code.
-3. **Generates component‑accurate code**, avoiding invalid properties or unsupported patterns specific to Windows Forms.
+   - Using the required assemblies for each component.
+   - Injecting applicable component controls (for example, paging, sorting, filtering, and other feature controls).
+   - Adding the correct theme and VisualStyle settings.
+3. **Generates component‑accurate code**, avoiding invalid properties or unsupported patterns.
 
 ### Using the AI Assistant
 
 Once skills are installed, the assistant can be used to generate and update Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms code for tasks such as:
 
-- "Add a DataGrid with paging, sorting, and filtering features."
-- "Create a Scheduler control with week view and drag-and-drop support."
-- "Apply the Office2019Colorful theme to all Syncfusion controls using SkinManager."
-- "Configure a ComboBox with autocomplete and data binding."
+- "Add a DataGrid with paging, sorting, and filtering."
+- "Create a Scheduler with week view and drag‑drop."
 
 ## Skills CLI Commands
 
