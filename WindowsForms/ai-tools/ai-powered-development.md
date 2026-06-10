@@ -45,6 +45,7 @@ I need a Syncfusion WinForms [control name] with the following specifications:
 - [feature list]
 - Target: WinForms with .NET Framework or .NET Core
 - Implementation language: C#
+- Dependencies: Identify and use the correct from https://help.syncfusion.com/windowsforms/control-dependencies
 
 Reference: https://help.syncfusion.com/windowsforms/[control]/getting-started
 ```
@@ -68,6 +69,7 @@ I need a Syncfusion WinForms DataGrid component with the following specification
 - Implement row virtualization for performance
 - Target: WinForms with .NET Framework 4.7+
 - Implementation language: C# with Designer or code-behind
+- Dependencies: Identify and use the correct from https://help.syncfusion.com/windowsforms/control-dependencies
 
 Reference: https://help.syncfusion.com/windowsforms/datagrid/getting-started
 ```
@@ -130,7 +132,7 @@ If you're building tools or applications that use AI APIs (Claude API, OpenAI, G
 
 ```
 You are an expert in Syncfusion WinForms controls written in C#.
-- Always use Syncfusion NuGet packages
+- Always use Syncfusion NuGet packages, and ensure you identify and include the correct dependencies listed at: https://help.syncfusion.com/windowsforms/control-dependencies
 - Use Designer or code-behind for UI definitions and C# for event handling
 - Import namespaces from Syncfusion WinForms NuGet packages
 - Initialize controls programmatically or use the Designer in Visual Studio
@@ -226,7 +228,7 @@ AI models are trained on historical data and may suggest APIs from older Syncfus
 ```
 Use Syncfusion WinForms latest APIs only.
 Target: WinForms with .NET Framework 4.7+ or .NET Core 3.1+
-Use current Syncfusion.*.WinForms packages.
+Use current NuGet packages:Ensure you identify and include the correct dependencies listed at: https://help.syncfusion.com/windowsforms/control-dependencies
 
 Find any Syncfusion WinForms component's API reference at https://help.syncfusion.com/windowsforms/
 ```
