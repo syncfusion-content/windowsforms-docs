@@ -13,7 +13,7 @@ documentation: ug
 
 ### Styling based on Content
 
-The appearance of the record cells in SfDataGrid can be customized conditionally based on the content by handling the [SfDataGrid.QueryCellStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+The appearance of the record cells in [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) can be customized conditionally based on the content by handling the [SfDataGrid.QueryCellStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
 
 {% tabs %}
 {% highlight c# %}

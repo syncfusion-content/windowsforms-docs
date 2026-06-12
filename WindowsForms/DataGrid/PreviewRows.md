@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Preview Rows in Windows Forms DataGrid (SfDataGrid)
-The SfDataGrid provides support to display additional information of rows. This can be expanded or collapsed using an expander or programmatically.
+The [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) provides support to display additional information of rows. This can be expanded or collapsed using an expander or programmatically.
 
 ## Show preview row
 

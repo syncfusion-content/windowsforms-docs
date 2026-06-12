@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Column types in WinForms DataGrid (SfDataGrid) 
-SfDataGrid provides support for various built-in column types. Each column has its own properties and renderer to handle different types of data.
+[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) provides support for various built-in column types. Each column has its own properties and renderer to handle different types of data.
 <table>
 <tr>
 <td>

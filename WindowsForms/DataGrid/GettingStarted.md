@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: ug
 ---
 # Getting Started with Windows Forms DataGrid (SfDataGrid)
-This section provides a quick overview for working with the data grid for WinForms. Walk through the entire process of creating a real world data grid.
+This section provides a quick overview for working with the [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid). Walk through the entire process of creating a real world data grid.
 
 To get start quickly with WinForms DataGrid, you can check on this video:
 <style>#WinFormsDataGridVideoTutorial{width : 90% !important; height: 400px !important }</style>
@@ -565,4 +565,4 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-N> You can also explore our [WinForms DataGrid example](https://github.com/syncfusion/winforms-demos/tree/master/datagrid) that shows how to render the DataGrid in Windows Forms.
+N> Looking for the full WinForms Data Grid component overview, features, pricing, and documentation? Visit the [WinForms Data Grid](https://www.syncfusion.com/winforms-ui-controls/datagrid) page.

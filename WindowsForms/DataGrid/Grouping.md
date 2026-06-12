@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Grouping in Windows Forms DataGrid (SfDataGrid)
-SfDataGrid allows to group the data against one or more columns. When grouping is applied, the data is organized into a hierarchical structure based on matching column values and it is sorted by ascending order.
+[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) allows to group the data against one or more columns. When grouping is applied, the data is organized into a hierarchical structure based on matching column values and it is sorted by ascending order.
 
 ## UI Grouping
 End-user can group the data by setting [SfDataGrid.AllowGrouping](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowGrouping) property to `true`, where user can drag and drop the column into `GroupDropArea` to group based on that column.
