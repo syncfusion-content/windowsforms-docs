@@ -132,7 +132,7 @@ The following code shows how to apply conditional styling for the data table.
 
 {% tabs %}
 {% highlight c# %}
-this.sfDataGrid.QueryCellStyle += SfDataGrid_QueryCellStyle;
+this.sfDataGrid.QueryRowStyle += SfDataGrid_QueryRowStyle;
 
 private void SfDataGrid_QueryRowStyle(object sender, QueryRowStyleEventArgs e)
 {
