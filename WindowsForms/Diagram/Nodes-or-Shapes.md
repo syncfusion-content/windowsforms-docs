@@ -9,7 +9,7 @@ documentation: ug
 
 # Nodes or Shapes in Windows Forms Diagram
 
-The Diagram control supports different kinds of nodes. The following are the nodes that are supported by the Diagram control:
+The [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) control supports different kinds of nodes. The following are the nodes that are supported by the Diagram control:
 
 * TextNode
 * Shape

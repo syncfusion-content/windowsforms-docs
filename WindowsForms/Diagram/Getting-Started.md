@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Windows Forms Diagram
 
-This section helps you understand and quickly get started using Essential® Diagram in your Windows Forms applications. Control appearance and structure are defined, and the relevant classes are depicted.
+This section helps you understand and quickly get started using Essential® [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) in your Windows Forms applications. Control appearance and structure are defined, and the relevant classes are depicted.
 
 ## Assembly deployment
 

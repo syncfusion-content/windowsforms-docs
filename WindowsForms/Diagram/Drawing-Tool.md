@@ -10,7 +10,7 @@ documentation: ug
 
 # Drawing Tool in Windows Forms Diagram
 
-Diagram control now provides a drawing tool to draw different types of connectors dynamically and connector types are listed below.
+[WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) control now provides a drawing tool to draw different types of connectors dynamically and connector types are listed below.
 
 1. LineConnector
 2. OrthogonalConnector

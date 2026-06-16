@@ -9,7 +9,7 @@ documentation: ug
 
 # Diagram Grid in Windows Forms Diagram
 
-The Diagram grid is drawn with evenly spaced points that provides a visual guidance to the user.  
+The [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) grid is drawn with evenly spaced points that provides a visual guidance to the user.  
 
 #### Behavior
 

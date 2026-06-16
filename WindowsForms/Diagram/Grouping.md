@@ -12,7 +12,7 @@ documentation: ug
 
 A group is a node that acts as a transparent container for other nodes. A group is a composite node that controls a set of child nodes. The bounding rectangle of a group is the union of the bounds of its children. The group renders itself by iterating through its children and rendering them. Child nodes cannot be selected or manipulated individually. Members of the group are added and removed through the ICompositeNode interface.
 
-There are two ways available to add a Group in diagram control:
+There are two ways available to add a Group in [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) control:
 
 1. Add the children to the group manually with the help of Group class methods. The below code snippet creates a group with two nodes.
 
