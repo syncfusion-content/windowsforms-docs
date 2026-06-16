@@ -184,3 +184,5 @@ Sample diagram is as follows,
 
 
 ![Change HRuler Minor lines colors](Rulers_images/Rulers_img3.jpeg)
+
+N> Looking for the full WinForms Diagram component overview, features, pricing, and documentation? Visit the [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) page.

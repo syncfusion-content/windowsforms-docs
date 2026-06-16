@@ -2195,4 +2195,4 @@ The following screenshot displays the organizational flow of diagram.
 
 ![Organizational flow in WindowsForms Diagram](getting-started_images/windowsforms-diagram-organizational-flow.png)
 
-N> You can also explore our [WinForms Diagram example](https://github.com/syncfusion/winforms-demos/tree/master/diagram) that shows you how to render and configure the Diagram.
+N> Looking for the full WinForms Diagram component overview, features, pricing, and documentation? Visit the [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) page.
