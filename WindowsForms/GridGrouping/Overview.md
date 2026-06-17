@@ -1,6 +1,7 @@
 ---
 layout: post
 title: About Windows Forms GridGrouping control | Syncfusion®
+canonical_url: "https://www.syncfusion.com/winforms-ui-controls/datagrid"
 description: Learn here all about introduction of Syncfusion® Windows Forms GridGrouping control, its elements, its elements, and more details.
 platform: windowsforms
 control: GridGroupingControl
