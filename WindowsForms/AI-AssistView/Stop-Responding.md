@@ -13,7 +13,7 @@ The **SfAIAssistView** control includes a **Stop Responding** feature that allow
 
 ## EnableStopResponding
 
-By default, the **Stop Responding** button is not displayed. To enable it, set the **[EnableStopResponding](https://help.syncfusion.com/windowsforms/ai-assistview/stop-responding)** property to `true`.
+By default, the **Stop Responding** button is not displayed. To enable it, set the EnableStopResponding property to `true`.
 
 {% tabs %}
 
@@ -57,7 +57,7 @@ The **SfAIAssistView** control provides the **StopRespondingButtonClicked** even
 
 ## Customization
 
-The button text and hold duration in **SfAIAssistView** can be customized using the **[StopRespondingButtonText](https://help.syncfusion.com/windowsforms/ai-assistview/stop-responding)**, **[StopRespondingButtonCancelingText](https://help.syncfusion.com/windowsforms/ai-assistview/stop-responding)**, and **[StopRespondingHoldSeconds](https://help.syncfusion.com/windowsforms/ai-assistview/stop-responding)** properties. This allows you to set the button text, cancelling text, and hold time for the **Stop Responding** button.
+The button text and hold duration in **SfAIAssistView** can be customized using the **StopRespondingButtonText**, **StopRespondingButtonCancelingText**, and **StopRespondingHoldSeconds** properties. This allows you to set the button text, canceling text, and hold time for the **Stop Responding** button.
 
 {% tabs %}
 
@@ -66,7 +66,7 @@ The button text and hold duration in **SfAIAssistView** can be customized using 
     // Set button text
     sfaiAssistView1.StopRespondingButtonText = "⏹ Stop";
 
-    // Set cancelling text (shown while cancelling)
+    // Set canceling text (shown while canceling)
     sfaiAssistView1.StopRespondingButtonCancelingText = "Stopping...";
 
     // Set hold time (seconds button stays disabled after click)
@@ -78,7 +78,7 @@ The button text and hold duration in **SfAIAssistView** can be customized using 
 
 ## Customization
 
-The button text and hold duration in **SfAIAssistView** can be customized using the **StopRespondingButtonText**, **StopRespondingButtonCancelingText**, and **StopRespondingHoldSeconds** properties. This allows you to set the button text, cancelling text, and hold time for the **Stop Responding** button.
+The button text and hold duration in **SfAIAssistView** can be customized using the **StopRespondingButtonText**, **StopRespondingButtonCancelingText**, and **StopRespondingHoldSeconds** properties. This allows you to set the button text, canceling text, and hold time for the **Stop Responding** button.
 
 {% tabs %}
 
@@ -87,7 +87,7 @@ The button text and hold duration in **SfAIAssistView** can be customized using 
     // Set button text
     sfaiAssistView1.StopRespondingButtonText = "⏹ Stop";
 
-    // Set cancelling text (shown while cancelling)
+    // Set canceling text (shown while canceling)
     sfaiAssistView1.StopRespondingButtonCancelingText = "Stopping...";
 
     // Set hold time (seconds button stays disabled after click)

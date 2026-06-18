@@ -13,7 +13,7 @@ The **SfAIAssistView** control includes a **Response Toolbar** feature that allo
 
 ## IsResponseToolBarVisible
 
-By default, the **Response Toolbar** is not displayed. To enable it, set the **[IsResponseToolBarVisible](https://help.syncfusion.com/windowsforms/ai-assistview/response-toolbar)** property to `true`.
+By default, the **Response Toolbar** is not displayed. To enable it, set the **IsResponseToolBarVisible** property to `true`.
 
 {% tabs %}
 
@@ -40,7 +40,7 @@ The **Response Toolbar** supports the following action buttons:
 
 ## Response Toolbar Item Click Event
 
-The **SfAIAssistView** control provides the **[ResponseToolBarItemClicked](https://help.syncfusion.com/windowsforms/ai-assistview/response-toolbar)** event. This is triggered when a user clicks any toolbar action button. You can handle these actions to perform specific operations based on the toolbar item clicked.
+The **SfAIAssistView** control provides the **ResponseToolBarItemClicked** event. This is triggered when a user clicks any toolbar action button. You can handle these actions to perform specific operations based on the toolbar item clicked.
 
 ### Event Handler Code Example
 
@@ -75,7 +75,7 @@ The **SfAIAssistView** control provides the **[ResponseToolBarItemClicked](https
 
 {% endtabs %}
 
-The **[ResponseToolBarItemClickedEventArgs](https://help.syncfusion.com/windowsforms/ai-assistview/response-toolbar)** provides access to the **ChatItem** (the message being acted upon) and the **ToolBarItem** (the action button clicked).
+The **ResponseToolBarItemClickedEventArgs** provides access to the **ChatItem** (the message being acted upon) and the **ToolBarItem** (the action button clicked).
 
 ## Customization
 
