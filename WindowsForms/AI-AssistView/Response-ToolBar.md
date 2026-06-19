@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Response Toolbar in Windows Forms AI AssistView control | Syncfusion
-description: Learn about the Response Toolbar in AI AssistView that enables users to interact with bot responses using actions like copy, regenerate, like, and custom buttons.
+description: Learn about the Response Toolbar in AI AssistView, letting users interact with bot replies using copy, regenerate, like, and custom action buttons. 
 platform: windowsforms
 control: SfAIAssistView
 documentation: ug
