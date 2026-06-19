@@ -12,7 +12,7 @@ documentation: ug
 
 ## Zooming Support
 
-One of the interactive features of Essential® Diagram is its zooming capabilities. This feature allows you to interactively zoom in and out of the [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) in the following ways:
+One of the interactive features of [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) is its zooming capabilities. This feature allows you to interactively zoom in and out of the diagram in the following ways:
 
 * Zoom to the center of the diagram.
 * Zoom to the top left of the diagram.
