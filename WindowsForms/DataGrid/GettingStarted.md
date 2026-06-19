@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Getting Started with Windows Forms DataGrid Control | Syncfusion®
-canonical_url: "https://www.syncfusion.com/winforms-ui-controls/datagrid"
 description: Learn here about getting started with Syncfusion® Essential® Windows Forms DataGrid control, its elements and more.
 platform: windowsforms
 control: SfDataGrid
