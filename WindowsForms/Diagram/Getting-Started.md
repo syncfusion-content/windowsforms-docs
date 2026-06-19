@@ -5,6 +5,7 @@ description: Learn here about getting started with Syncfusion® Windows Forms Di
 platform: windowsforms
 control: Diagram
 documentation: ug
+canonical_url: "https://www.syncfusion.com/winforms-ui-controls/diagram"
 ---
 
 # Getting Started with Windows Forms Diagram
