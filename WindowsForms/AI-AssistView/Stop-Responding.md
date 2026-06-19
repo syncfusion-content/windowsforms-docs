@@ -25,6 +25,7 @@ By default, the **Stop Responding** button is not displayed. To enable it, set t
 {% endhighlight %}
 
 {% endtabs %}
+![WindowsForms AI AssistView control StopResponding](aiassistview_images/windowsforms-aiassistview_stopresponding.png)
 
 The button displays when EnableStopResponding is true.
 
@@ -54,6 +55,7 @@ The **SfAIAssistView** control provides the **StopRespondingButtonClicked** even
 {% endhighlight %}
 
 {% endtabs %}
+![WindowsForms AI AssistView control Cancel StopResponding](aiassistview_images/windowsforms-aiassistview_canceling.png)
 
 ## Customization
 
@@ -75,24 +77,5 @@ The button text and hold duration in **SfAIAssistView** can be customized using 
 {% endhighlight %}
 
 {% endtabs %}
+![WindowsForms AI AssistView control StopRespondingButtonText](aiassistview_images/windowsforms_aiassistview_stoprespondingtext.png)
 
-## Customization
-
-The button text and hold duration in **SfAIAssistView** can be customized using the **StopRespondingButtonText**, **StopRespondingButtonCancelingText**, and **StopRespondingHoldSeconds** properties. This allows you to set the button text, canceling text, and hold time for the **Stop Responding** button.
-
-{% tabs %}
-
-{% highlight c# %}
-
-    // Set button text
-    sfaiAssistView1.StopRespondingButtonText = "⏹ Stop";
-
-    // Set canceling text (shown while canceling)
-    sfaiAssistView1.StopRespondingButtonCancelingText = "Stopping...";
-
-    // Set hold time (seconds button stays disabled after click)
-    sfaiAssistView1.StopRespondingHoldSeconds = 2;
-
-{% endhighlight %}
-
-{% endtabs %}

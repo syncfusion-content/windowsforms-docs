@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Response Toolbar in Windows Forms AI AssistView control | Syncfusion
-description: Learn about the Response Toolbar feature in the AI AssistView control that allows users to perform actions on bot responses by clicking action buttons such as copy, regenerate, like, and custom actions.
+description: Learn about the Response Toolbar in AI AssistView that enables users to interact with bot responses using actions like copy, regenerate, like, and custom buttons.
 platform: windowsforms
 control: SfAIAssistView
 documentation: ug
 ---
 
-# Response Toolbar in WinForms AI AssistView
+# Response ToolBar in WinForms AI AssistView
 
 The **SfAIAssistView** control includes a **Response Toolbar** feature that allows users to perform actions on bot responses by clicking action buttons. This feature provides an interactive way for users to engage with AI responses through copy, regenerate, like, and other custom actions.
 
@@ -25,8 +25,8 @@ By default, the **Response Toolbar** is not displayed. To enable it, set the **I
 {% endhighlight %}
 
 {% endtabs %}
+![WindowsForms AI AssistView control Response ToolBar](aiassistview_images/windowsforms-aiassistview-responsetoolbar.png)
 
-The toolbar displays when **IsResponseToolBarVisible** is `true`.
 
 ## Response Toolbar Items
 
@@ -161,9 +161,8 @@ Set custom toolbar items in the control:
 
 {% endtabs %}
 
-## Practical Example
 
-### Hide Regenerate Button for Old Messages
+### How to hide Regenerate Button for Old Messages.
 
 {% tabs %}
 
