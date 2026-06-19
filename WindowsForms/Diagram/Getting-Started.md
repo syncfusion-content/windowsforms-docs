@@ -5,6 +5,7 @@ description: Learn here about getting started with Syncfusion® Windows Forms Di
 platform: windowsforms
 control: Diagram
 documentation: ug
+canonical_url: "https://www.syncfusion.com/winforms-ui-controls/diagram"
 ---
 
 # Getting Started with Windows Forms Diagram
@@ -601,7 +602,7 @@ The PaletteGroupView control will be added to the designer and its dependent ass
 
 
 
-![Palette group view added to designer in WindowsForms Diagram](getting-started_images/windowsforms-diagram-palette-group-view-added-to-designer.jpg)
+![Palette group view added to designer in WindowsForms Diagram](getting-started_images/windowsforms-diagram-palette-group-view-control-through-code.png)
 
 
 
