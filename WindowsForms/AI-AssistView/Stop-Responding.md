@@ -11,8 +11,6 @@ documentation: ug
 
 The **SfAIAssistView** control includes a **Stop Responding** feature that allows users to cancel an ongoing AI response by clicking the **Stop Responding** button. This feature ensures that users can interrupt the response if it is no longer needed.
 
-## ## How to enable StopResponding
-
 By default, the **Stop Responding** button is not displayed. To enable it, set the EnableStopResponding property to `true`.
 
 {% tabs %}

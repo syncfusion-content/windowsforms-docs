@@ -11,8 +11,6 @@ documentation: ug
 
 The **SfAIAssistView** control includes a **Response Toolbar** feature that allows users to perform actions on bot responses by clicking action buttons. This feature provides an interactive way for users to engage with AI responses through copy, regenerate, like, and other custom actions.
 
-## How to enable ResponseToolBar
-
 By default, the **Response Toolbar** is not displayed. To enable it, set the **IsResponseToolBarVisible** property to `true`.
 
 {% tabs %}
