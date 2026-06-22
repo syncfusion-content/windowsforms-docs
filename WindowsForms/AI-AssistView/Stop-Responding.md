@@ -11,7 +11,7 @@ documentation: ug
 
 The **SfAIAssistView** control includes a **Stop Responding** feature that allows users to cancel an ongoing AI response by clicking the **Stop Responding** button. This feature ensures that users can interrupt the response if it is no longer needed.
 
-## EnableStopResponding
+## ## How to enable StopResponding
 
 By default, the **Stop Responding** button is not displayed. To enable it, set the EnableStopResponding property to `true`.
 
@@ -19,13 +19,13 @@ By default, the **Stop Responding** button is not displayed. To enable it, set t
 
 {% highlight c# %}
 
-    SfAIAssistView sfAIAssistView = = new SfAIAssistView();
-    sfaiAssistView1.EnableStopResponding = true;
+    SfAIAssistView sfAIAssistView1 = new SfAIAssistView();
+    sfAIAssistView1.EnableStopResponding = true;
 
 {% endhighlight %}
 
 {% endtabs %}
-![WindowsForms AI AssistView control StopResponding](aiassistview_images/windowsforms-aiassistview_stopresponding.png)
+![WindowsForms AI AssistView control StopResponding](aiassistview_images/windowsforms_aiassistview_stopresponding.png)
 
 The button displays when EnableStopResponding is true.
 
@@ -37,7 +37,7 @@ The **SfAIAssistView** control provides the **StopRespondingButtonClicked** even
 
 {% highlight c# %}
 
-    sfaiAssistView1.StopRespondingButtonClicked += SfaiAssistView1_StopResponding;
+    sfAIAssistView1.StopRespondingButtonClicked += SfaiAssistView1_StopResponding;
 
     private void SfaiAssistView1_StopResponding(object sender, EventArgs e)
     {
@@ -55,7 +55,7 @@ The **SfAIAssistView** control provides the **StopRespondingButtonClicked** even
 {% endhighlight %}
 
 {% endtabs %}
-![WindowsForms AI AssistView control Cancel StopResponding](aiassistview_images/windowsforms-aiassistview_canceling.png)
+![WindowsForms AI AssistView control Cancel StopResponding](aiassistview_images/windowsforms_aiassistview_canceling.png)
 
 ## Customization
 
@@ -66,13 +66,13 @@ The button text and hold duration in **SfAIAssistView** can be customized using 
 {% highlight c# %}
 
     // Set button text
-    sfaiAssistView1.StopRespondingButtonText = "⏹ Stop";
+    sfAIAssistView1.StopRespondingButtonText = "⏹ Stop";
 
     // Set canceling text (shown while canceling)
-    sfaiAssistView1.StopRespondingButtonCancelingText = "Stopping...";
+    sfAIAssistView1.StopRespondingButtonCancelingText = "Stopping...";
 
     // Set hold time (seconds button stays disabled after click)
-    sfaiAssistView1.StopRespondingHoldSeconds = 2;
+    sfAIAssistView1.StopRespondingHoldSeconds = 2;
 
 {% endhighlight %}
 

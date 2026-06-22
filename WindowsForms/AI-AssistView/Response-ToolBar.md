@@ -11,7 +11,7 @@ documentation: ug
 
 The **SfAIAssistView** control includes a **Response Toolbar** feature that allows users to perform actions on bot responses by clicking action buttons. This feature provides an interactive way for users to engage with AI responses through copy, regenerate, like, and other custom actions.
 
-## IsResponseToolBarVisible
+## How to enable ResponseToolBar
 
 By default, the **Response Toolbar** is not displayed. To enable it, set the **IsResponseToolBarVisible** property to `true`.
 
@@ -19,13 +19,13 @@ By default, the **Response Toolbar** is not displayed. To enable it, set the **I
 
 {% highlight c# %}
 
-    SfAIAssistView sfaiAssistView1 = new SfAIAssistView();
-    sfaiAssistView1.IsResponseToolBarVisible = true;
+    SfAIAssistView sfAIAssistView1 = new SfAIAssistView();
+    sfAIAssistView1.IsResponseToolBarVisible = true;
 
 {% endhighlight %}
 
 {% endtabs %}
-![WindowsForms AI AssistView control Response ToolBar](aiassistview_images/windowsforms-aiassistview-responsetoolbar.png)
+![WindowsForms AI AssistView control Response ToolBar](aiassistview_images/windowsforms_aiassistview_responsetoolbar.png)
 
 
 ## Response Toolbar Items
@@ -48,9 +48,9 @@ The **SfAIAssistView** control provides the **ResponseToolBarItemClicked** event
 
 {% highlight c# %}
 
-    sfaiAssistView1.ResponseToolBarItemClicked += SfaiAssistView1_ResponseToolBarItemClicked;
+    sfAIAssistView1.ResponseToolBarItemClicked += sfAIAssistView1_ResponseToolBarItemClicked;
 
-    private void SfaiAssistView1_ResponseToolBarItemClicked(
+    private void sfAIAssistView1_ResponseToolBarItemClicked(
         object sender, 
         ResponseToolBarItemClickedEventArgs e)
     {
@@ -87,20 +87,25 @@ You can control the visibility of the entire toolbar or individual toolbar items
 
 {% highlight c# %}
 
-    // Hide the entire toolbar for a specific message
-    sfaiAssistView1.SetToolBarVisibility(message, false);
+    var messagesList = sfAIAssistView1.Messages as IList;
+    if(messagesList != null && messagesList.Count>0  )
+    {
+        var message = messagesList[1] as TextMessage;
+        // Hide the entire toolbar for a specific message
+        sfAIAssistView1.SetToolBarVisibility(message, false);
 
-    // Show the toolbar for a specific message
-    sfaiAssistView1.SetToolBarVisibility(message, true);
+        // Show the toolbar for a specific message
+        sfAIAssistView1.SetToolBarVisibility(message, true);
 
-    // Hide a specific toolbar item for a message
-    sfaiAssistView1.SetToolBarItemVisibility(
-        message, 
-        ResponseToolBarItemType.Regenerate.ToString(), 
-        false);
+        // Hide a specific toolbar item for a message
+        sfAIAssistView1.SetToolBarItemVisibility(
+            message,
+            ResponseToolBarItemType.Regenerate.ToString(),
+            false);
 
-    // Hide toolbar item by name
-    sfaiAssistView1.SetToolBarItemVisibility(message, "Copy", false);
+        // Hide toolbar item by name
+        sfAIAssistView1.SetToolBarItemVisibility(message, "Copy", false);
+    }
 
 {% endhighlight %}
 
@@ -115,7 +120,7 @@ Retrieve toolbar items from a message:
 {% highlight c# %}
 
     // Get a specific toolbar item
-    ResponseToolBarItem copyButton = sfaiAssistView1.GetToolBarItem(
+    ResponseToolBarItem copyButton = sfAIAssistView1.GetToolBarItem(
         message, 
         ResponseToolBarItemType.Copy.ToString());
 
@@ -138,7 +143,7 @@ Set custom toolbar items in the control:
 {% highlight c# %}
 
     // Configure toolbar items
-    sfaiAssistView1.ResponseToolBarItems = new ObservableCollection<ResponseToolBarItem>
+    sfAIAssistView1.ResponseToolBarItems = new ObservableCollection<ResponseToolBarItem>
     {
         new ResponseToolBarItem 
         { 
@@ -170,7 +175,7 @@ Set custom toolbar items in the control:
 
     private void UpdateToolbarForLatestMessage()
     {
-        var messages = (sfaiAssistView1.Messages as IList)
+        var messages = (sfAIAssistView1.Messages as IList)
             ?.Cast<TextMessage>().ToList();
         
         if (messages == null) return;
@@ -185,7 +190,7 @@ Set custom toolbar items in the control:
         foreach (var oldMessage in botMessages
             .Where(m => m != latestMessage))
         {
-            sfaiAssistView1.SetToolBarItemVisibility(
+            sfAIAssistView1.SetToolBarItemVisibility(
                 oldMessage, 
                 ResponseToolBarItemType.Regenerate.ToString(), 
                 false);
