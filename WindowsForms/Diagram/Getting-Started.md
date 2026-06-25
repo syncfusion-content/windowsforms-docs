@@ -9,15 +9,15 @@ documentation: ug
 
 # Getting Started with Windows Forms Diagram
 
-This section helps you understand and quickly get started using Essential® Diagram in your Windows Forms applications. Control appearance and structure are defined, and the relevant classes are depicted.
+This section helps you understand and quickly get started using [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) in your Windows Forms applications. Control appearance and structure are defined, and the relevant classes are depicted.
 
 ## Assembly deployment
 
 Refer to [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#diagram) section to get the list of assemblies or NuGet package needs to be added as reference to use the Diagram control in any application.
 
-## Structure of Essential® Diagram 
+## Structure of React Diagram 
 
-The Essential® Diagram package is comprised of the following controls:
+The React Diagram package is comprised of the following controls:
 
 * Diagram
 * Overview
@@ -86,7 +86,7 @@ The DocumentExplorer control allows you to visualize the details of the various 
 
 
 
-## Essential® Diagram in Windows Forms Application
+## React Diagram in Windows Forms Application
 
 This section helps you to create the Diagram, PaletteGroupBar, PaletteGroupView, Overview, PropertyEditor, and DocumentExplorer controls through the designer and code in a Windows Forms application.
 
@@ -229,7 +229,7 @@ Me.Controls.Add(diagram)
 
 #### Adding Nodes to the Model
 
-The Diagram control has a list of predefined basic shapes ([nodes](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Model.html#Syncfusion_Windows_Forms_Diagram_Model_Nodes)) which help you to draw diagrams according to your requirement. You can create your own shapes by inheriting the existing shape’s class and the Symbol Designer utility tool which is shipped with the Essential® Diagram package. 
+The Diagram control has a list of predefined basic shapes ([nodes](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Model.html#Syncfusion_Windows_Forms_Diagram_Model_Nodes)) which help you to draw diagrams according to your requirement. You can create your own shapes by inheriting the existing shape’s class and the Symbol Designer utility tool which is shipped with the React Diagram package. 
 
 The following code creates a rectangular node and adds it to the model.
 
@@ -951,7 +951,7 @@ For more details about these diagram controls, refer to the Palette GroupBar and
 
 3. Property Editor
 
-The Property Editor in Essential® Diagram displays properties of the currently selected object(s) in the diagram. It is a Windows Forms control that can be added to the Visual Studio .NET Toolbox. It also allows users to set or modify various properties of the objects or the model. The Property Editor provides an easy interface to set and view the various property settings. To know about the control's properties see Property Editor topic.
+The Property Editor in React Diagram displays properties of the currently selected object(s) in the diagram. It is a Windows Forms control that can be added to the Visual Studio .NET Toolbox. It also allows users to set or modify various properties of the objects or the model. The Property Editor provides an easy interface to set and view the various property settings. To know about the control's properties see Property Editor topic.
 
 4. Document Explorer
 
@@ -970,7 +970,7 @@ Diagram Builder Functionalities
 Follow the below steps in order to open an existing diagram document
 
 1. Add OpenFileDialog control to the Form. 
-2. Set the Filter property of OpenFileDialog as Essential® Diagram Palettes|*.edp|Visio Stencils|*.vss; *.vsx|Visio    Drawings(Shapes only)|*.vsd; *.vdx|All files|*.*. 
+2. Set the Filter property of OpenFileDialog as React Diagram Palettes|*.edp|Visio Stencils|*.vss; *.vsx|Visio    Drawings(Shapes only)|*.vsd; *.vdx|All files|*.*. 
 3. Add the below code snippet in your button click event.
 
 {% capture codesnippet9 %}
@@ -1005,7 +1005,7 @@ The diagram1.LoadBinary() method loads the selected diagram file into diagram do
    Below are the steps to save a diagram document.
 
    1.  Add SaveFileDialog control to the Form.
-   2.  Set the Filter property of SaveFileDialog as  Essential® Diagram Files|*.edd|All files|*.*.
+   2.  Set the Filter property of SaveFileDialog as  React Diagram Files|*.edd|All files|*.*.
    3.  Add the following code snippet in your button click event.
 
 {% capture codesnippet10 %}
@@ -2195,4 +2195,4 @@ The following screenshot displays the organizational flow of diagram.
 
 ![Organizational flow in WindowsForms Diagram](getting-started_images/windowsforms-diagram-organizational-flow.png)
 
-N> You can also explore our [WinForms Diagram example](https://github.com/syncfusion/winforms-demos/tree/master/diagram) that shows you how to render and configure the Diagram.
+N> Looking for the full WinForms Diagram component overview, features, pricing, and documentation? Visit the [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) page.
