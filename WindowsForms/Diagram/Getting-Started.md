@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Windows Forms Diagram
 
-This section helps you understand and quickly get started using [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) in your Windows Forms applications. Control appearance and structure are defined, and the relevant classes are depicted.
+This section helps you understand and quickly get started using Essential® Diagram in your Windows Forms applications. Control appearance and structure are defined, and the relevant classes are depicted.
 
 ## Assembly deployment
 
@@ -2195,4 +2195,4 @@ The following screenshot displays the organizational flow of diagram.
 
 ![Organizational flow in WindowsForms Diagram](getting-started_images/windowsforms-diagram-organizational-flow.png)
 
-N> Looking for the full WinForms Diagram component overview, features, pricing, and documentation? Visit the [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) page.
+N> You can also explore our [WinForms Diagram example](https://github.com/syncfusion/winforms-demos/tree/master/diagram) that shows you how to render and configure the Diagram.
