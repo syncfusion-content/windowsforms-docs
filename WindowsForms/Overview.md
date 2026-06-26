@@ -226,13 +226,13 @@ background-color:transparent!important;
   </tr>
   <tr>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/tabbed-form/getting-started">Tabbed Form</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/file-formats/presentation/getting-started">PowerPoint</a> </td>
+    <td> <a id="anchor" href="https://help.syncfusion.com/document-processing/powerpoint/powerpoint-library/net/getting-started">PowerPoint</a> </td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/buttonedit/getting-started">ButtonEdit</a> </td>
     <td> <a id="anchor" href="https://help.syncfusion.com/predictive-analytics/pmml-execution-engine/overview">Predictive Analytics</a></td>
   </tr>
   <tr>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/hub-tile/getting-started">Hub Tile</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/file-formats/docio/getting-started">Word</a> </td>
+    <td> <a id="anchor" href="https://help.syncfusion.com/document-processing/word/word-library/net/getting-started">Word</a> </td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/split-button/getting-started">SplitButton</a> </td>
     <td></td>
   </tr>
