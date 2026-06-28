@@ -28,7 +28,7 @@ The Essential® Diagram package is comprised of the following controls:
 
 ### Diagram
 
-The [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) control is an interactive two-dimensional graphics control for diagramming, technical drawing, visualization, and simulation applications. It provides a surface for rendering and manipulating 2-D shapes, text, images, and Windows Form controls.  The UI supports drag-and-drop, scaling, zooming, rotation, grouping, ungrouping, connection points, layouts, and many other features.
+The [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) control is an interactive two-dimensional graphics control for diagramming, technical drawing, visualization, and simulation applications. It provides a surface for rendering and manipulating 2-D shapes, text, images, and Windows Form controls.  The UI supports drag-and-drop, scaling, zooming, rotation, grouping, ungrouping, connection points, layouts, and many other features.
 
 The Diagram control’s architecture is composed of three objects, namely Model, View, and Controller and it provides a clear separation between data, visualization, and user interface. One advantage of model-view-controller architecture is that the parts are interchangeable. The model, view, and controller can be swapped in and out independently.
 
