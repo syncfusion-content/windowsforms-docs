@@ -9,7 +9,7 @@ documentation: ug
 
 # Touch Support in Windows Forms Scheduler (Schedule)
 
-The [WinForms Scheduler](https://www.syncfusion.com/winforms-ui-controls/scheduler) Control provides the swipe scrolling and zooming touch support like Outlook calendar. The touch support for schedule control can be enabled by setting the [EnableTouchMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleControl.html#Syncfusion_Windows_Forms_Schedule_ScheduleControl_EnableTouchMode) property to `true`. This will enable the grid to support the swiping, panning, and zooming. Default value of the `EnableTouchMode` property is `false`.
+The Schedule Control provides the swipe scrolling and zooming touch support like Outlook calendar. The touch support for schedule control can be enabled by setting the [EnableTouchMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleControl.html#Syncfusion_Windows_Forms_Schedule_ScheduleControl_EnableTouchMode) property to `true`. This will enable the grid to support the swiping, panning, and zooming. Default value of the `EnableTouchMode` property is `false`.
 
 {% tabs %}
 {% highlight c# %}
