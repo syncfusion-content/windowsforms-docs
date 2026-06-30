@@ -1,6 +1,7 @@
 ---
 layout: post
 title: About Windows Forms Scheduler control (Event Calendar) | Syncfusion®
+canonical_url: "https://www.syncfusion.com/scheduler-sdk/winforms-scheduler"
 description: Learn here all about introduction of Syncfusion® Windows Forms Scheduler (Event Calendar) control, its elements and more details.
 platform: windowsforms
 control: Schedule
@@ -15,7 +16,7 @@ The most popular WinForms Scheduler includes creating new appointments, displayi
 
 ![windows forms schedule showing month view](overview_images/windowsforms-scheduler-showing-month-view.png)
 
-The [WinForms Scheduler](https://www.syncfusion.com/winforms-ui-controls/scheduler) control finds a wide variety of applications such as Time Tables, Calendars, Event Scheduling, Sequences, Activities, Project Management, Reservations, Resource Usage Planners, and so on.
+The [WinForms Scheduler](https://www.syncfusion.com/scheduler-sdk/winforms-scheduler) control finds a wide variety of applications such as Time Tables, Calendars, Event Scheduling, Sequences, Activities, Project Management, Reservations, Resource Usage Planners, and so on.
 
 ## Key features
 
