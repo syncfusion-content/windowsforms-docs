@@ -13,7 +13,7 @@ Different Layout Manager are discussed under the following section:
 
 ## Manual Layout
 
-The various types of Layout Managers that are supported by the diagram control to align nodes are as follows.
+The various types of Layout Managers that are supported by the [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) control to align nodes are as follows.
 
 Some common Layout Manager settings are discussed in the below topic.
 

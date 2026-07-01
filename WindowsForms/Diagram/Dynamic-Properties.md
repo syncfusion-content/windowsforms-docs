@@ -14,7 +14,7 @@ This feature lets the user add additional properties or data to the nodes and co
 
 The node’s [PropertyBag](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Node.html#Syncfusion_Windows_Forms_Diagram_Node_PropertyBag) property, which is a key value pair, is used to add, edit, and remove the additional properties or data and can be serialized when saving the diagram.
 
-The diagram has built-in UI dialogs to add, edit, and remove the dynamic properties. 
+The [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) has built-in UI dialogs to add, edit, and remove the dynamic properties. 
 
 Use Case Scenario:
 

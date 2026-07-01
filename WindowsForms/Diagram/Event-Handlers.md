@@ -13,7 +13,7 @@ This section elaborates on the following:
 
 ### Diagram Events
 
-[DiagramViewerEventSink](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DiagramViewerEventSink.html#) class contains the events specific to the diagram. The various events that can be invoked using this class are discussed in the following topics.
+[DiagramViewerEventSink](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DiagramViewerEventSink.html#) class contains the events specific to the [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram). The various events that can be invoked using this class are discussed in the following topics.
 
 #### Node Collection Events
 
