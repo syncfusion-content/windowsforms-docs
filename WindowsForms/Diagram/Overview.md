@@ -9,7 +9,7 @@ documentation: ug
 
 # Windows Forms Diagram Overview
 
-This section covers information on Essential® Diagram control, its key features, and prerequisites to use the control, its compatibility with various OS and browsers and finally the documentation details complimentary with the product. It comprises the following sub sections:
+This section covers information on [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) control, its key features, and prerequisites to use the control, its compatibility with various OS and browsers and finally the documentation details complimentary with the product. It comprises the following sub sections:
 
 ## Introduction To Essential® Diagram
 
