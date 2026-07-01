@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Data Virtualization in Windows Forms DataGrid (SfDataGrid)
-SfDataGrid provides support to handle the large amount of data through built-in virtualization features. With Data virtualization, [SfDataGrid.View](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_View) process the data in on-demand for better performance while loading large amount of data.
+[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) provides support to handle the large amount of data through built-in virtualization features. With Data virtualization, [SfDataGrid.View](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_View) process the data in on-demand for better performance while loading large amount of data.
 The large amount of data can be loaded in less time by setting [SfDataGrid.EnableDataVirtualization](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_EnableDataVirtualization) property to `true`.
 
 {% tabs %}

@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Summaries in Windows Forms DataGrid (SfDataGrid)
-SfDataGrid provides support to display the concise information about the data objects using summaries. SfDataGrid provides below three different types of summary rows.
+[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) provides support to display the concise information about the data objects using summaries. SfDataGrid provides below three different types of summary rows.
 
 * **Table Summary** – Used to display summary information of table either at top or bottom of SfDataGrid.
 * **Group Summary** – Used to display summary information of data objects in each group.

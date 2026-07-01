@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Export to Excel in WinForms DataGrid (SfDataGrid)
-SfDataGrid provides support to export data to excel. It also provides support for grouping, filtering, sorting, paging, unbound rows and stacked headers while exporting.
+[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) provides support to export data to excel. It also provides support for grouping, filtering, sorting, paging, unbound rows and stacked headers while exporting.
 The following assemblies needs to be added for exporting to excel.
 
 * [Syncfusion.SfDataGridConverter.WinForms](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.html)

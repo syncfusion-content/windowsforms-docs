@@ -9,7 +9,7 @@ documentation: ug
 
 # Paging in Windows Forms DataGrid (SfDataGrid)
 
-SfDataGrid provides support to manipulate the data using [SfDataPager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataPager.SfDataPager.html) control.
+[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) provides support to manipulate the data using [SfDataPager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataPager.SfDataPager.html) control.
 
 ## Getting Started
 
