@@ -1,6 +1,7 @@
 ---
 layout: post
 title: About Windows Forms Scheduler control (Event Calendar) | Syncfusion®
+canonical_url: "https://www.syncfusion.com/winforms-ui-controls/scheduler"
 description: Learn here all about introduction of Syncfusion® Windows Forms Scheduler (Event Calendar) control, its elements and more details.
 platform: windowsforms
 control: Schedule
