@@ -9,7 +9,7 @@ documentation: ug
 
 # Windows Forms Scheduler (Event Calendar) Overview
 
-The Syncfusion<sup>®</sup> Scheduler is a Windows Forms class library built around the functionalities found in the Windows Forms Grid control. The control allows you to add scheduling support to your applications. 
+The Scheduler is a Windows Forms class library built around the functionalities found in the Windows Forms Grid control. The control allows you to add scheduling support to your applications. 
 
 The most popular WinForms Scheduler includes creating new appointments, displaying those appointments in a variety of views, including Monthly, Daily, Weekly, Work Week, and multiple days. In the daily formats, you can use the UI to drag appointments to another time slot and to extend appointments. A flexible navigation calendar lets you easily home on the dates you would like to see in the Schedule control. 
 
@@ -31,4 +31,4 @@ The [WinForms Scheduler](https://www.syncfusion.com/winforms-ui-controls/schedul
 * Recurrence appointment: Supports schedule recurring appointments to repeat daily, weekly, monthly, or yearly.
 * Touch support: Completely supports swiping, panning, zooming, and more.
 
-N> You can also explore our [WinForms Scheduler example](https://github.com/syncfusion/winforms-demos/tree/master/schedulecontrol) that shows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.
+N> You can also explore our [WinForms Scheduler example](https://github.com/syncfusion/winforms-demos/tree/master/schedulecontrol) that shows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar. Looking for the full WinForms Scheduler component overview, features, pricing, and documentation? Visit the [WinForms Scheduler](https://www.syncfusion.com/winforms-ui-controls/scheduler) page.

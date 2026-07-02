@@ -7,7 +7,7 @@ control: Schedule
 documentation: ug
 ---
 
-# Metro Theme for Essential<sup>®</sup> Schedule in Windows Forms Scheduler
+# Metro Theme for Schedule in Windows Forms Scheduler
 
 This feature enables you to apply new Metro styles to the Schedule control. 
 
