@@ -13,7 +13,7 @@ Serialization is the process of converting the state of diagram objects into a b
 
 ## Save
 
-In the diagram, [DataContractSerializer](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.datacontractserializer?view=net-8.0) is used for serialization. The features provided by `DataContractSerializer` apply to diagram serialization, supporting saving the diagram to a stream while preserving all its properties.
+In the [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram), [DataContractSerializer](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.datacontractserializer?view=net-8.0) is used for serialization. The features provided by `DataContractSerializer` apply to diagram serialization, supporting saving the diagram to a stream while preserving all its properties.
 
 ### Saving a Diagram via Filename
 

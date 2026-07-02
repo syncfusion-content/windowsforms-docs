@@ -9,7 +9,7 @@ documentation: ug
 
 # Layers in Windows Forms Diagram
 
-Layers are transparent sheets that can be added to the model and the objects are added to it. Layers allow to categorically arrange a set of nodes onto the diagram.
+Layers are transparent sheets that can be added to the model and the objects are added to it. Layers allow to categorically arrange a set of nodes onto the [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram).
 
 
 
