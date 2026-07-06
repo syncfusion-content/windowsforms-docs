@@ -9,7 +9,7 @@ documentation: ug
 
 # Customizing Appearance in Windows Forms Scheduler (Event Calendar)
 
-Appearance of any region of the ScheduleControl can be customized by using the [WinForms Scheduler](https://www.syncfusion.com/winforms-ui-controls/scheduler). Appearance property.
+Appearance of any region of the ScheduleControl can be customized by using the [WinForms Scheduler](https://www.syncfusion.com/scheduler-sdk/winforms-scheduler). Appearance property.
 
 This property gains access to the ScheduleAppearance object that controls various appearance attributes of different WinForms Scheduler regions. 
 
