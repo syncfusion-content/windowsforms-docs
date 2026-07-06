@@ -230,7 +230,7 @@ When rendered in 3D, the plot looks like a ribbon and hence such types are also 
 
 The appearance of the lines and the points can be configured with options such as the colors used, thickness of the lines and the symbols displayed.
 
-![Line chart in WindowsForms](chart-types_images/windowsforms-line-chart.jpeg)
+![Line chart in WindowsForms](chart-types_images/windowsforms-line-chart.png)
 
 #### Chart Details
 
@@ -293,7 +293,7 @@ When rendered in 3D, the plot looks like a ribbon and hence such types are also 
 
 The appearance of the lines and the points can be configured with options such as the colors used, thickness of the lines and the symbols displayed.
 
-![Spline Charts in WindowsForms](chart-types_images/windowsforms-spline-chart.jpeg)
+![Spline Charts in WindowsForms](chart-types_images/windowsforms-spline-chart.png)
 
 #### Chart Details
 
@@ -368,7 +368,7 @@ A Rotated Spline Chart is similar to an ordinary Spline Chart. The only differen
 
 The following image shows a sample Rotated Spline Chart.
 
-![Rotated spline chart in WindowsForms](chart-types_images/windowsforms-rotated-spline-chart.jpeg)
+![Rotated spline chart in WindowsForms](chart-types_images/windowsforms-rotated-spline-chart.png)
 
 #### Chart Details
 
@@ -433,7 +433,7 @@ Me.chartControl1.Series.Add(series1)
 
 Step Line Charts use horizontal and vertical lines to connect data points resulting in a step like progression.
 
-![Step line chart in WindowsForms](chart-types_images/windowsforms-step-line-chart.jpeg)
+![Step line chart in WindowsForms](chart-types_images/windowsforms-step-line-chart.png)
 
 ### Chart Details
 
