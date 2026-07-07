@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: ug
 ---
 # Theme in WinForms DataGrid
-SfDataGrid offers six built in themes for professional representation as follows.
+[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) offers six built in themes for professional representation as follows.
 
 * Office2016Colorful
 * Office2016White
