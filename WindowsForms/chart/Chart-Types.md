@@ -992,7 +992,7 @@ It is used for comparing the frequency, count, total or average of data in diffe
 
 The following image shows a multi series Column Chart.
 
-![Column chart in WindowsForms](chart-types_images/windowsforms-column-chart.jpeg)
+![Column chart in WindowsForms](chart-types_images/windowsforms-column-chart.png)
 
 #### Chart Details
 
@@ -1056,7 +1056,7 @@ Column Range Chart is similar to the Column Chart except that each column is ren
 
 The following figure shows a Column Range Chart.
 
-![Column range chart in WindowsForms](chart-types_images/windowsforms-column-range-chart.jpeg)
+![Column range chart in WindowsForms](chart-types_images/windowsforms-column-range-chart.png)
 
 #### Chart Details
 
@@ -1121,7 +1121,7 @@ Stacking Column Charts are similar to regular column charts except that the y va
 
 The following image shows a sample Stacking Column Chart.
 
-![Stacking column chart in WindowsForms](chart-types_images/windowsforms-stacking-column-chart.jpeg)
+![Stacking column chart in WindowsForms](chart-types_images/windowsforms-stacking-column-chart.png)
 
 #### Chart Details
 
@@ -1207,7 +1207,7 @@ Me.chartControl1.Series.Add(series2)
 
 This chart type displays multiple series of data as stacked Columns ensuring that the cumulative proportion of each stacked element always totals 100 percent. The y-axis will hence always be rendered with the range 0 - 100.
 
-![Stacked column100 chart in WindowForms](chart-types_images/windowsforms-stacked-column100-chart.jpeg)
+![Stacked column100 chart in WindowForms](chart-types_images/windowsforms-stacked-column100-chart.png)
 
 #### Chart Details
 
