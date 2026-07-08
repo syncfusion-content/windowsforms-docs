@@ -214,13 +214,13 @@ background-color:transparent!important;
   </tr>
   <tr>
    <td id="title">DIALOGS AND NOTIFICATION </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/file-formats/xlsio/getting-started-create-excel-file-csharp-vbnet">Excel</a> </td>
+   <td> <a id="anchor" href="https://help.syncfusion.com/document-processing/excel/excel-library/net/create-excel-file-csharp-vbnet">Excel</a> </td>
     <td id="title">BUTTONS </td>
     <td></td>
   </tr>
   <tr>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/form/getting-started">Form</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/file-formats/pdf/getting-started">PDF</a> </td>
+    <td> <a id="anchor" href="https://help.syncfusion.com/document-processing/pdf/pdf-library/net/create-pdf-file-in-c-sharp-vb-net">PDF</a> </td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/button/getting-started">Button</a> </td>
    <td id="title">DATA SCIENCE </td>
   </tr>
@@ -232,7 +232,7 @@ background-color:transparent!important;
   </tr>
   <tr>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/hub-tile/getting-started">Hub Tile</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/file-formats/docio/getting-started">Word</a> </td>
+    <td> <a id="anchor" href="https://help.syncfusion.com/document-processing/word/word-library/net/getting-started">Word</a> </td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/split-button/getting-started">SplitButton</a> </td>
     <td></td>
   </tr>
