@@ -21,78 +21,84 @@ The [`ItemsSource`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windo
 
 TreeMap TreeMap1 = new TreeMap();
 
-PopulationViewModel data = new PopulationViewModel();                     
+PopulationViewModel data = new PopulationViewModel();
 
 TreeMap1.ItemsSource = data.PopulationDetails;
-
 TreeMap1.WeightValuePath = "Population";
-
 TreeMap1.ColorValuePath = "Growth";
-
 
 public class PopulationViewModel
 {
+    public PopulationViewModel()
+    {
+        this.PopulationDetails = new ObservableCollection<PopulationDetail>();
+        PopulationDetails.Add(new PopulationDetail() { Continent = "Asia", Country = "Indonesia", Growth = 3, Population = 237641326, StrPopulation = "237.6 M" });
+        PopulationDetails.Add(new PopulationDetail() { Continent = "Asia", Country = "Russia", Growth = 2, Population = 152518015, StrPopulation = "152.5 M" });
+        PopulationDetails.Add(new PopulationDetail() { Continent = "Asia", Country = "Malaysia", Growth = 1, Population = 29672000, StrPopulation = "29.7 M" });
+        PopulationDetails.Add(new PopulationDetail() { Continent = "North America", Country = "United States", Growth = 4, Population = 315645000, StrPopulation = "315.6 M" });
+        PopulationDetails.Add(new PopulationDetail() { Continent = "North America", Country = "Mexico", Growth = 2, Population = 112336538, StrPopulation = "112.3 M" });
+        PopulationDetails.Add(new PopulationDetail() { Continent = "North America", Country = "Canada", Growth = 1, Population = 35056064, StrPopulation = "35.1 M" });
+        PopulationDetails.Add(new PopulationDetail() { Continent = "South America", Country = "Colombia", Growth = 1, Population = 47000000, StrPopulation = "47 M" });
+        PopulationDetails.Add(new PopulationDetail() { Continent = "South America", Country = "Brazil", Growth = 3, Population = 193946886, StrPopulation = "193.9 M" });
+        PopulationDetails.Add(new PopulationDetail() { Continent = "Africa", Country = "Nigeria", Growth = 2, Population = 170901000, StrPopulation = "170.9 M" });
+        PopulationDetails.Add(new PopulationDetail() { Continent = "Africa", Country = "Egypt", Growth = 1, Population = 83661000, StrPopulation = "83 M" });
+        PopulationDetails.Add(new PopulationDetail() { Continent = "Europe", Country = "Germany", Growth = 1, Population = 81993000, StrPopulation = "82 M" });
+        PopulationDetails.Add(new PopulationDetail() { Continent = "Europe", Country = "France", Growth = 1, Population = 65605000, StrPopulation = "65.6 M" });
+        PopulationDetails.Add(new PopulationDetail() { Continent = "Europe", Country = "UK", Growth = 1, Population = 63181775, StrPopulation = "63.2 M" });
+    }
 
-public PopulationViewModel()
-{
-
-this.PopulationDetails = new ObservableCollection<PopulationDetail>();
-
-PopulationDetails.Add(new PopulationDetail() { Continent = "Asia", Country = "Indonesia", Growth = 3, Population = 237641326, StrPopulation = "237.6 M" });
-
-PopulationDetails.Add(new PopulationDetail() { Continent = "Asia", Country = "Russia", Growth = 2, Population = 152518015, StrPopulation = "152.5 M" });
-
-PopulationDetails.Add(new PopulationDetail() { Continent = "Asia", Country = "Malaysia", Growth = 1, Population = 29672000, StrPopulation  = "29.7 M"});
-
-PopulationDetails.Add(new PopulationDetail() { Continent = "North America", Country = "United States", Growth = 4, Population = 315645000, StrPopulation = "315.6 M" });
-
-PopulationDetails.Add(new PopulationDetail() { Continent = "North America", Country = "Mexico", Growth = 2, Population = 112336538, StrPopulation = "112.3 M"});
-
-PopulationDetails.Add(new PopulationDetail() { Continent = "North America", Country = "Canada", Growth = 1, Population = 35056064, StrPopulation = "35.1 M"});
-
-PopulationDetails.Add(new PopulationDetail() { Continent = "South America", Country = "Colombia", Growth = 1, Population = 47000000, StrPopulation = "47 M" });
-
-PopulationDetails.Add(new PopulationDetail() { Continent = "South America", Country = "Brazil", Growth = 3, Population = 193946886, StrPopulation = "193.9 M" });
-
-PopulationDetails.Add(new PopulationDetail() { Continent = "Africa", Country = "Nigeria", Growth = 2, Population = 170901000, StrPopulation = "170.9 M"});
-
-PopulationDetails.Add(new PopulationDetail() { Continent = "Africa", Country = "Egypt", Growth = 1, Population = 83661000, StrPopulation = "83 M"});
-
-PopulationDetails.Add(new PopulationDetail() { Continent = "Europe", Country = "Germany", Growth = 1, Population = 81993000, StrPopulation ="82 M"});
-
-PopulationDetails.Add(new PopulationDetail() { Continent = "Europe", Country = "France", Growth = 1, Population = 65605000, StrPopulation  = "65.6 M"});
-
-PopulationDetails.Add(new PopulationDetail() { Continent = "Europe", Country = "UK", Growth = 1, Population = 63181775, StrPopulation = "63.2 M"});
-
-}
-
-public ObservableCollection<PopulationDetail> PopulationDetails
-
-{
-
-get;
-
-set;
-
+    public ObservableCollection<PopulationDetail> PopulationDetails { get; set; }
 }
 
 public class PopulationDetail
-
 {
-
-public string Continent { get; set; }
-
-public string Country { get; set; }
-
-public double Growth { get; set; }
-
-public double Population { get; set; }
-
-public string StrPopulation { get; set; }
-
+    public string Continent { get; set; }
+    public string Country { get; set; }
+    public double Growth { get; set; }
+    public double Population { get; set; }
+    public string StrPopulation { get; set; }
 }
 
-}  
+{% endhighlight %}
+
+{% highlight vb %}
+
+Dim TreeMap1 As New TreeMap()
+
+Dim data As New PopulationViewModel()
+
+TreeMap1.ItemsSource = data.PopulationDetails
+TreeMap1.WeightValuePath = "Population"
+TreeMap1.ColorValuePath = "Growth"
+
+Public Class PopulationViewModel
+    Public Sub New()
+        Me.PopulationDetails = New ObservableCollection(Of PopulationDetail)()
+        PopulationDetails.Add(New PopulationDetail() With { .Continent = "Asia", .Country = "Indonesia", .Growth = 3, .Population = 237641326, .StrPopulation = "237.6 M" })
+        PopulationDetails.Add(New PopulationDetail() With { .Continent = "Asia", .Country = "Russia", .Growth = 2, .Population = 152518015, .StrPopulation = "152.5 M" })
+        PopulationDetails.Add(New PopulationDetail() With { .Continent = "Asia", .Country = "Malaysia", .Growth = 1, .Population = 29672000, .StrPopulation = "29.7 M" })
+        PopulationDetails.Add(New PopulationDetail() With { .Continent = "North America", .Country = "United States", .Growth = 4, .Population = 315645000, .StrPopulation = "315.6 M" })
+        PopulationDetails.Add(New PopulationDetail() With { .Continent = "North America", .Country = "Mexico", .Growth = 2, .Population = 112336538, .StrPopulation = "112.3 M" })
+        PopulationDetails.Add(New PopulationDetail() With { .Continent = "North America", .Country = "Canada", .Growth = 1, .Population = 35056064, .StrPopulation = "35.1 M" })
+        PopulationDetails.Add(New PopulationDetail() With { .Continent = "South America", .Country = "Colombia", .Growth = 1, .Population = 47000000, .StrPopulation = "47 M" })
+        PopulationDetails.Add(New PopulationDetail() With { .Continent = "South America", .Country = "Brazil", .Growth = 3, .Population = 193946886, .StrPopulation = "193.9 M" })
+        PopulationDetails.Add(New PopulationDetail() With { .Continent = "Africa", .Country = "Nigeria", .Growth = 2, .Population = 170901000, .StrPopulation = "170.9 M" })
+        PopulationDetails.Add(New PopulationDetail() With { .Continent = "Africa", .Country = "Egypt", .Growth = 1, .Population = 83661000, .StrPopulation = "83 M" })
+        PopulationDetails.Add(New PopulationDetail() With { .Continent = "Europe", .Country = "Germany", .Growth = 1, .Population = 81993000, .StrPopulation = "82 M" })
+        PopulationDetails.Add(New PopulationDetail() With { .Continent = "Europe", .Country = "France", .Growth = 1, .Population = 65605000, .StrPopulation = "65.6 M" })
+        PopulationDetails.Add(New PopulationDetail() With { .Continent = "Europe", .Country = "UK", .Growth = 1, .Population = 63181775, .StrPopulation = "63.2 M" })
+    End Sub
+
+    Public Property PopulationDetails As ObservableCollection(Of PopulationDetail)
+End Class
+
+Public Class PopulationDetail
+    Public Property Continent As String
+    Public Property Country As String
+    Public Property Growth As Double
+    Public Property Population As Double
+    Public Property StrPopulation As String
+End Class
 
 {% endhighlight %}
 
@@ -113,28 +119,42 @@ TreeMap TreeMap1 = new TreeMap();
 PopulationViewModel data = new PopulationViewModel();
 
 TreeMap1.ItemsSource = data.PopulationDetails;
-
 TreeMap1.WeightValuePath = "Population";
-
 TreeMap1.ColorValuePath = "Growth";
 
 TreeMapFlatLevel treeMapFlatLevel1 = new TreeMapFlatLevel();
-
 treeMapFlatLevel1.GroupPath = "Continent";
-
 treeMapFlatLevel1.ShowLabels = true;
-
 TreeMap1.Levels.Add(treeMapFlatLevel1);
 
 TreeMapFlatLevel treeMapFlatLevel2 = new TreeMapFlatLevel();
-
 treeMapFlatLevel2.GroupPath = "Country";
-
 treeMapFlatLevel2.ShowLabels = true;
-
 treeMapFlatLevel2.HeaderHeight = 25;
-
 TreeMap1.Levels.Add(treeMapFlatLevel2);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Dim TreeMap1 As New TreeMap()
+
+Dim data As New PopulationViewModel()
+
+TreeMap1.ItemsSource = data.PopulationDetails
+TreeMap1.WeightValuePath = "Population"
+TreeMap1.ColorValuePath = "Growth"
+
+Dim treeMapFlatLevel1 As New TreeMapFlatLevel()
+treeMapFlatLevel1.GroupPath = "Continent"
+treeMapFlatLevel1.ShowLabels = True
+TreeMap1.Levels.Add(treeMapFlatLevel1)
+
+Dim treeMapFlatLevel2 As New TreeMapFlatLevel()
+treeMapFlatLevel2.GroupPath = "Country"
+treeMapFlatLevel2.ShowLabels = True
+treeMapFlatLevel2.HeaderHeight = 25
+TreeMap1.Levels.Add(treeMapFlatLevel2)
 
 {% endhighlight %}
 
@@ -155,29 +175,42 @@ TreeMap TreeMap1 = new TreeMap();
 PopulationViewModel data = new PopulationViewModel();
 
 TreeMap1.ItemsSource = data.PopulationDetails;
-
 TreeMap1.WeightValuePath = "Population";
-
 TreeMap1.ColorValuePath = "Growth";
 
 TreeMapFlatLevel treeMapFlatLevel1 = new TreeMapFlatLevel();
-
 treeMapFlatLevel1.GroupPath = "Continent";
-
 treeMapFlatLevel1.ShowLabels = true;
-
 TreeMap1.Levels.Add(treeMapFlatLevel1);
 
-
 TreeMapFlatLevel treeMapFlatLevel2 = new TreeMapFlatLevel();
-
 treeMapFlatLevel2.GroupPath = "Country";
-
 treeMapFlatLevel2.ShowLabels = true;
-
 treeMapFlatLevel2.HeaderHeight = 25;
-
 TreeMap1.Levels.Add(treeMapFlatLevel2);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Dim TreeMap1 As New TreeMap()
+
+Dim data As New PopulationViewModel()
+
+TreeMap1.ItemsSource = data.PopulationDetails
+TreeMap1.WeightValuePath = "Population"
+TreeMap1.ColorValuePath = "Growth"
+
+Dim treeMapFlatLevel1 As New TreeMapFlatLevel()
+treeMapFlatLevel1.GroupPath = "Continent"
+treeMapFlatLevel1.ShowLabels = True
+TreeMap1.Levels.Add(treeMapFlatLevel1)
+
+Dim treeMapFlatLevel2 As New TreeMapFlatLevel()
+treeMapFlatLevel2.GroupPath = "Country"
+treeMapFlatLevel2.ShowLabels = True
+treeMapFlatLevel2.HeaderHeight = 25
+TreeMap1.Levels.Add(treeMapFlatLevel2)
 
 {% endhighlight %}
 
