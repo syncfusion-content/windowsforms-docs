@@ -47,7 +47,7 @@ Item will be added to the Quick Access Toolbar.
 
 ### Add Items through Customize Window
 
-Items / controls can be added to the QuickAccessToolbar by clicking on the Edit quick items in the smart tag of the RibbonControlAdv. This opens Customize Quick Access Toolbar Dialog which displays the existing tool strip items. You can add the required items to the Quick Access Toolbar.
+Items can be added to the QuickAccessToolbar by clicking `Edit quick items` in the smart tag of the RibbonControlAdv. This opens Customize Quick Access Toolbar Dialog which displays the existing tool strip items. You can add the required items to the Quick Access Toolbar.
 
 ![Shows the customize window for QAT](Quick_Access_Toolbar_Images/Quick-Access-Toolbar_img3.jpg)
 

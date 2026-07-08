@@ -9,11 +9,11 @@ documentation: ug
 
 # Customization Support in Windows Forms Ribbon (RibbonControlAdv)
 
-RibbonControlAdv allows to customize the Ribbon and quick access toolbar with the support to add and remove different items to QAT and to add new tabs and change the location of existing tabs and items in ribbon.
+RibbonControlAdv lets you customize the Ribbon and Quick Access Toolbar with the support to add and remove different items to the QAT, add new tabs, and change the location of existing tabs and items in the ribbon.
 
 ## QAT customization
 
-For customization of QAT, please refer `Quick Access Toolbar`.
+For customization of QAT, please refer to [Quick Access Toolbar](Quick-Access-Toolbar.md).
 
 ## Ribbon Customization
 

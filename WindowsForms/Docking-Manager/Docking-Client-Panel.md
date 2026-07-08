@@ -23,7 +23,7 @@ N> The docking client panel control is intended only for use with forms that do 
 
 The following are the steps involved in setting up a docking layout on a non-MDIContainer form using the docking client panel. The docking client panel is used here because in addition to docking windows, the host form contains several non-dockable controls that require a container with static relative bounds to implement positioning and layout management.
 
-1. Add the docking manager to the form and apply the `EnableDocking` for those controls that need to be set as docking windows.
+1. Add the docking manager to the form and call `SetEnableDocking` for those controls that need to be set as docking windows.
 2. Select the docking client panel control from the designer tool box and drop it to the form hosting the docking manager. Size the control, so that its bounds can accommodate any non-dockable child controls that may already be present on the form.
 3. If any non-dockable controls are present in the form, then drag-and-drop the controls to the docking client panel instance.
 4. Set the DockingClientPanel.SizeToFit property to `true`. Turning on the SizeToFit property forces the DockingClientPanel to start interacting with the Essential<sup>®</sup> Tools docking architecture. The control will automatically be resized/repositioned to occupy the form's client bounds or left unoccupied by the docking windows.

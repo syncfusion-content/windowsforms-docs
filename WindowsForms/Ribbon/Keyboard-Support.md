@@ -36,7 +36,7 @@ Follow the steps below to add Super accelerator
 ![Keyboard-Support_img4](Keyboard_Support_Images/Keyboard-Support_img4.jpg)
 
 
-6.	Press the string in the keyboard and the corresponding item’s click event will be triggered. (Eg. If the accelerator string of Cut is X key, Press ALT key. Once all the accelerator strings are displayed, press X key the Cut item event will be triggered.)
+6.	Press the key on the keyboard and the corresponding item's click event will be triggered. (Eg. If the accelerator string of Cut is X, press the ALT key. Once all the accelerator strings are displayed, press X and the Cut item event will be triggered.)
 
 **Through Coding**
 {% tabs %}

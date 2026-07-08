@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Docking Events in Windows Forms Docking Manager control | Syncfusion®
 description: Learn about Docking Events support in Syncfusion® Windows Forms Docking Manager control and more details.
@@ -214,7 +214,7 @@ The [DockControlDeactivated](https://help.syncfusion.com/cr/windowsforms/Syncfus
 
 #### Event data
 
-The event handler receives a [DockedActivationChangedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockActivationChangedEventArgs.html) argument containing data related to this event. The following DockActivationChangedEventArgs members provide information specific to this event.
+The event handler receives a [DockActivationChangedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockActivationChangedEventArgs.html) argument containing data related to this event. The following DockActivationChangedEventArgs members provide information specific to this event.
 
 <table>
 <tr>
@@ -274,11 +274,34 @@ End Sub
 
 The [DockAllow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event occurs when a docking window is dragged over a potential dock target. This event helps to cancel the operation that is performed during the docking of windows.
 
+#### Event data
+
+The event handler receives a [DockAllowEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockAllowEventArgs.html) argument containing data related to this event. The following DockAllowEventArgs members provide information specific to this event.
+
+<table>
+<tr>
+<th>
+Member</th><th>
+Description</th></tr>
+<tr>
+<td>
+{{ '[Cancel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.ComponentModel.SyncfusionCancelEventArgs.html)' | markdownify }}</td><td>
+Gets or sets a value indicating whether the docking operation should be cancelled.</td></tr>
+<tr>
+<td>
+Source</td><td>
+Gets the control that is being dragged.</td></tr>
+<tr>
+<td>
+Target</td><td>
+Gets the control over which the dragged window is currently positioned.</td></tr>
+</table>
+
 {% tabs %}
 
 {% highlight C# %}
 
-Private void DockingManager1_DockAllow(object sender, DockAllowEventArgs arg)
+private void DockingManager1_DockAllow(object sender, DockAllowEventArgs arg)
 {
     arg.Cancel = true;
 }
@@ -468,7 +491,7 @@ End Sub
 
 ## Caption double-click
 
-The [OnCaptionDoubleClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event occurs when you double-click a dockable control or a docked control caption. This event is triggered when the [EnableDoubleClickOnCaption](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_EnableDoubleClickOnCaption) property is set to `false`. It displays the currently active control name.
+The [OnCaptionDoubleClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event occurs when you double-click a dockable control or a docked control caption. This event is triggered when the [EnableDoubleClickOnCaption](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_EnableDoubleClickOnCaption) property is set to `true`. It displays the currently active control name.
 
 ### Event data
 
@@ -509,17 +532,17 @@ private void dockingManager1_OnCaptionDoubleClick(object sender, Syncfusion.Wind
 
 'The DockControlActivated event occurs when a dockable control gets activated.
 
-Private Sub dockingManager1_OnCaptionDoubleClick(ByVal sender As Object, ByVal arg AsSyncfusion.Windows.Forms.Tools.DockActivationChangedEventArgs)
+Private Sub dockingManager1_OnCaptionDoubleClick(ByVal sender As Object, ByVal arg As Syncfusion.Windows.Forms.Tools.DockControlMouseSelection)
 
    'OnCaptionDoubleClick event is triggered
 
-   Console.WriteLine("Dock Control Activated Event is Fired");
+   Console.WriteLine("On Caption Double Click Event is Fired")
 
    'Displays the name of the control that is currently active.
 
-   Console.WriteLine("Activated Control Name : "+arg.Control.Name);
+   Console.WriteLine("Activated Control Name : " + arg.Control.Name)
 
-End Sub
+End Sub
 
 {% endhighlight %}
 
@@ -666,7 +689,7 @@ Me.bar1.Text = "Exit"
 
 Me.fileItem.Items.AddRange(New Syncfusion.Windows.Forms.Tools.XPMenus.BarItem() { Me.bar1})
 
-//handling the event
+'handling the event
 
 Private Sub dockingManager1_DockContextMenu(ByVal sender As Object, ByVal arg As Syncfusion.Windows.Forms.Tools.DockContextMenuEventArgs)
 
@@ -830,9 +853,9 @@ private void dockingManager1_ControlMaximized(object sender, Syncfusion.Windows.
 
    Console.WriteLine("Control Name : "+arg.Control.Name);
 
-   //Cancel is the Boolean property which can prevent docking event when it is true.
+   //Displays the docked control name
 
-   arg.Cancel=true;
+   Console.WriteLine("Control Name : "+arg.Control.Name);
 
 }
 
@@ -850,10 +873,6 @@ Private Sub dockingManager1_ControlMaximized(ByVal sender As Object, ByVal arg A
    'Displays the docked control name
 
    Console.WriteLine("Control Name : "+arg.Control.Name)
-
-   'Cancel is the Boolean property which can prevent docking event when it is true.
-
-   arg.Cancel=True
 
 End Sub
 
@@ -1010,6 +1029,7 @@ private void dockingManager1_DockStateChanged(object sender, Syncfusion.Windows.
 
 {
 
+
    Console.WriteLine("DockStateChanged Event has occurred");
 
    Console.WriteLine("Total Number of controls in a group : " + arg.Controls.Length.ToString());
@@ -1131,8 +1151,7 @@ private void dockingManager1_DockStateChanging(object sender, Syncfusion.Windows
    }
 
    //handle the dock state changing for Panel1
-    
-   if (this.panel1 == ctrl)
+   if (arg.Controls.Contains(this.panel1))
    {
       arg.Handled = true;
    }
@@ -1140,11 +1159,11 @@ private void dockingManager1_DockStateChanging(object sender, Syncfusion.Windows
    {
       arg.Handled = false;
    }
-            
+
    // arg.OldState indicates the old state of dock child.
    Console.WriteLine("Old DockState:"+ arg.OldState.ToString());
 
-   // arg.NewValue indicates the new state of dock child.
+   // arg.NewState indicates the new state of dock child.
    Console.WriteLine("New DockState:" +arg.NewState.ToString());
 
 
@@ -1180,20 +1199,16 @@ Private Sub dockingManager1_DockStateChanging(ByVal sender As Object, ByVal arg 
    Next
 
    'handle the dock state changing for Panel1
-    
-   If Me.panel1 Is ctrl Then
-      arg.Handled = Truetrue;
-   }
+   If arg.Controls.Contains(Me.panel1) Then
+      arg.Handled = True
    Else
-		arg.Handled = False
-	End If
-   Next ctrl
+      arg.Handled = False
+   End If
 
-            
    'arg.OldState indicates the old state of dock child
    Console.WriteLine("Old DockState:" & arg.OldState.ToString())
 
-   'arg.NewValue indicates the new state of dock child.
+   'arg.NewState indicates the new state of dock child.
    Console.WriteLine("New DockState:" & arg.NewState.ToString())
 
 End Sub
@@ -1700,23 +1715,19 @@ private void dockingManager1_DragFeedbackStart(object sender, System.EventArgs e
 
    //The following code is used to display all control names which are in the DockingManager.
 
-   Syncfusion.Windows.Forms.Tools.DockingManager ctrl=sender as
+   Syncfusion.Windows.Forms.Tools.DockingManager ctrl = sender as Syncfusion.Windows.Forms.Tools.DockingManager;
 
-   Syncfusion.Windows.Forms.Tools.DockingManager;
-
-   IEnumerator enumerator = ctrl.Controls;
-
-   ArrayList dockedControls = new ArrayList();
-
-   while(enumerator.MoveNext())
-
-   dockedControls.Add(enumerator.Current);
-
-   foreach(Control c in dockedControls)
+   if (ctrl != null)
 
    {
 
-     Console.WriteLine("Control Name :" + c.Name);
+       foreach (Control c in ctrl.Controls)
+
+       {
+
+           Console.WriteLine("Control Name :" + c.Name);
+
+       }
 
    }
 
@@ -1733,23 +1744,17 @@ Private Sub dockingManager1_DragFeedbackStart(ByVal sender As Object, ByVal e As
 
    Console.WriteLine("DragFeedbackStart Event has been ")
 
-   Dim ctrl As Syncfusion.Windows.Forms.Tools.DockingManager = CType(ConversionHelpers.AsWorkaround(sender, GetType(Syncfusion.Windows.Forms.Tools.DockingManager)), Syncfusion.Windows.Forms.Tools.DockingManager)
+   Dim ctrl As Syncfusion.Windows.Forms.Tools.DockingManager = TryCast(sender, Syncfusion.Windows.Forms.Tools.DockingManager)
 
-   Dim enumerator As IEnumerator = ctrl.Controls
+   If ctrl IsNot Nothing Then
 
-   Dim dockedControls As ArrayList = New ArrayList
+       For Each c As Control In ctrl.Controls
 
-   While enumerator.MoveNext
+           Console.WriteLine("Control Name :" + c.Name)
 
-   dockedControls.Add(enumerator.Current)
+       Next
 
-   End While
-
-   For Each c As Control In dockedControls
-
-    Console.WriteLine("Control Name :" + c.Name)
-
-   Next
+   End If
 
 End Sub
 
@@ -1830,11 +1835,15 @@ protected void DockingManager_TransferredToManager(object sender, TransferManage
 
    Console.WriteLine("Transferred to Manager Event has been Raised");
 
-   DockableControlBase dockableControl = args.Control as DockableControlBase;
+   DockingManager manager = sender as DockingManager;
 
-   dockableControl.CurrentDockingManager = sender as DockingManager;
+   if (manager != null)
 
-   Console.WriteLine("HostControl Name (Target Page Name) : "+dockableControl.CurrentDockingManager.HostControl.Name);
+   {
+
+       Console.WriteLine("HostControl Name (Target Page Name) : " + manager.HostControl.Name);
+
+   }
 
 }
 
@@ -1847,11 +1856,13 @@ Protected Sub DockingManager_TransferredToManager(ByVal sender As Object, ByVal 
 
    Console.WriteLine("Transferred to Manager Event has been Raised")
 
-   Dim dockableControl As DockableControlBase = CType(ConversionHelpers.AsWorkaround(args.Control, GetType(DockableControlBase)), DockableControlBase)
+   Dim manager As DockingManager = TryCast(sender, DockingManager)
 
-   dockableControl.CurrentDockingManager = CType(ConversionHelpers.AsWorkaround(sender, GetType(DockingManager)), DockingManager)
+   If manager IsNot Nothing Then
 
-   Console.WriteLine("HostControl Name (Target Page Name) : " + dockableControl.CurrentDockingManager.HostControl.Name)
+       Console.WriteLine("HostControl Name (Target Page Name) : " + manager.HostControl.Name)
+
+   End If
 
 End Sub
 
@@ -1890,11 +1901,15 @@ protected void DockingManager_TransferringFromManager(object sender, TransferMan
 
    Console.WriteLine("Transferring From Manager Event has been raised");
 
-   DockableControlBase dockableControl = args.Control as DockableControlBase;
+   DockingManager manager = sender as DockingManager;
 
-   dockableControl.CurrentDockingManager = sender as DockingManager; 
+   if (manager != null)
 
-   Console.WriteLine("HostControl name : "+dockableControl.CurrentDockingManager.HostControl.Name);
+   {
+
+       Console.WriteLine("HostControl name : " + manager.HostControl.Name);
+
+   }
 
 }
 
@@ -1909,11 +1924,13 @@ Protected Sub DockingManager_TransferringFromManager(ByVal sender As Object, ByV
 
    Console.WriteLine("Transferring From Manager Event has been raised")
 
-   Dim dockableControl As DockableControlBase = CType(ConversionHelpers.AsWorkaround(args.Control, GetType(DockableControlBase)), DockableControlBase)
+   Dim manager As DockingManager = TryCast(sender, DockingManager)
 
-   dockableControl.CurrentDockingManager = CType(ConversionHelpers.AsWorkaround(sender, GetType(DockingManager)), DockingManager)
+   If manager IsNot Nothing Then
 
-   Console.WriteLine("HostControl name : " + dockableControl.CurrentDockingManager.HostControl.Name)
+       Console.WriteLine("HostControl name : " + manager.HostControl.Name)
+
+   End If
 
 End Sub
 
@@ -2005,7 +2022,7 @@ Protected Sub DockingManager_InitializeControlOnLoad(ByVal sender As Object, ByV
 
    Console.WriteLine("InitializeControlOnLoad Event is Raised for the Control : " + args.ControlName)
 
-   Dim dockingManager As DockingManager = CType(ConversionHelpers.AsWorkaround(sender, GetType(DockingManager)), DockingManager)
+   Dim dockingManager As DockingManager = TryCast(sender, DockingManager)
 
    Select Case args.ControlName
 
@@ -2267,11 +2284,11 @@ protected void DockingManager_ProvidePersistenceID(object sender,Syncfusion.Wind
 
 'instances of the Form type.
 
-Protected Sub DockingManager_ProvidePersistenceID(ByVal sender As Object, ByVal e AsSyncfusion.Windows.Forms.ProvidePersistenceIDEventArgs)
+Protected Sub DockingManager_ProvidePersistenceID(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.ProvidePersistenceIDEventArgs)
 
    Console.WriteLine("Provide Persistence ID Event has been raised")
 
-   Dim dockingManager As Syncfusion.Windows.Forms.Tools.DockingManager = CType(ConversionHelpers.AsWorkaround(sender, GetType(DockingManager)), DockingManager)
+   Dim dockingManager As Syncfusion.Windows.Forms.Tools.DockingManager = TryCast(sender, Syncfusion.Windows.Forms.Tools.DockingManager)
 
    Console.WriteLine("Host control name = " + dockingManager.HostControl.Name.ToString)
 

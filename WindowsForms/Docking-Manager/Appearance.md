@@ -215,7 +215,7 @@ Me.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.VS2005
 
 **VS2010**
 
-This option helps to set the VS2010 style.
+This option helps to set the Visual Studio 2010 style.
 
 {% tabs %}
 
@@ -557,7 +557,7 @@ Me.DockingManager1.InActiveCaptionFont = New System.Drawing.Font("Arial", 11.25!
 
 The border color of the docked controls can be customized by using the [BorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_BorderColor) property of the docking manager.
 
-N> The [PaintBorders](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_PaintBorders) property must be enabled to effect this setting.
+N> The [PaintBorders](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_PaintBorders) property must be enabled to affect this setting.
 
 {% tabs %}
 
@@ -983,7 +983,7 @@ In docking manager, you can customize the AutoHidden window tabs foreground, fon
 
 The font style of the auto hidden tabs can be customized by using the [AutoHideTabFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_AutoHideTabFont) property of the docking manager. The height of AutoHidden tab control can be customized by using the [AutoHideTabHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_AutoHideTabHeight) property.
 
-N> This setting will effect only when the [DockingManager.VisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_VisualStyle) property is set as default.
+N> This setting will affect only when the [DockingManager.VisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_VisualStyle) property is set as default.
 
 {% tabs %}
 
@@ -1276,15 +1276,15 @@ this.RightToLeft = RightToLeft.Yes;
 {% endhighlight  %}
 
 
-{% highlight VB %}l
+{% highlight VB %}
 
-'Enable the Right to Left 
+'Enable the Right to Left
 
-Me.dockingManager1.HostControl = this
+Me.dockingManager1.HostControl = Me
 
 Me.RightToLeft = RightToLeft.Yes
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% endtabs %}
 

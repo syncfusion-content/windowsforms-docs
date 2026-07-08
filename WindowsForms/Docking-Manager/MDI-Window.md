@@ -90,7 +90,7 @@ Dim tabbedMDI As New TabbedMDIManager()
 
 tabbedMDI.AttachToMdiContainer(Me)
 
-Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendererOffice2016Colorful)
+tabbedMDI.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendererOffice2016Colorful)
   
 'To set as MDI Child window
 
@@ -115,7 +115,7 @@ C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Wi
 
 {% highlight C# %}
 
-System.Drawing.Icon icon = new System.Drawing.Icon(GetIconFile(GetIconFile(@"..\\..\\\$this.Icon.ico")));
+System.Drawing.Icon icon = new System.Drawing.Icon(GetIconFile(@"..\\..\\\$this.Icon.ico"));
           
 //To set icon in MDI Child window
 this.dockingManager1.SetMDIChildIcon(panel2, icon);
@@ -141,7 +141,7 @@ private string GetIconFile(string bitmapName)
 
 {% highlight VB %}
 
-Dim icon As System.Drawing.Icon = New System.Drawing.Icon(GetIconFile(GetIconFile("..\\..\\\$this.Icon.ico")))
+Dim icon As System.Drawing.Icon = New System.Drawing.Icon(GetIconFile("..\\..\\\$this.Icon.ico"))
 
 'To set icon in MDI Child window
 Me.dockingManager1.SetMDIChildIcon(panel2, icon)
@@ -200,7 +200,7 @@ Me.dockingManager1.SetAsMDIChild(panel2,True, New Rectangle(200, 400, 250, 250))
 
 ![Change MDI window size in DockingManager](MDI_Window_images/MDI_Window_img5.png) 
 
-## Change MDI window to dock window
+## Convert MDI child to dock window
 
 The MDI window can be moved to dock state by using its ContextMenu option. This can also be done programmatically by using the [SetAsMDIChild](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SetAsMDIChild_System_Windows_Forms_Control_System_Boolean_) function.
 

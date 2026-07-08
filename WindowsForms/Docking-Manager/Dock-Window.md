@@ -99,7 +99,7 @@ Me.dockingManager1.DockControl(Me.panel4, Me, Syncfusion.Windows.Forms.Tools.Doc
 
 ## Dock window to another window
 
-Provides support to dock a window inside another window with the help of drag providers. This can be done programmatically by using the [DockControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_DockControl_System_Windows_Forms_Control_System_Windows_Forms_Control_Syncfusion_Windows_Forms_Tools_DockingStyle_System_Int32_) function.
+Provides support to dock a window inside another window using drag provider styles. This can be done programmatically by using the [DockControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_DockControl_System_Windows_Forms_Control_System_Windows_Forms_Control_Syncfusion_Windows_Forms_Tools_DockingStyle_System_Int32_) function.
 
 ![Dock one window over another dock window in DockingManager](Dock_Window_images/Dock_Window_img18.png)
 
@@ -124,7 +124,7 @@ Me.dockingManager1.DockControl(Me.panel4, Me.panel1, Syncfusion.Windows.Forms.To
 
 ## Detect dock style
 
-Docking style that is assigned to the control can be detect at run time using the [GetDockStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_GetDockStyle_System_Windows_Forms_Control_) function.
+Docking style that is assigned to the control can be detected at run time using the [GetDockStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_GetDockStyle_System_Windows_Forms_Control_) function.
 
 {% tabs %}
 
@@ -179,11 +179,9 @@ Dock panel size can be resized at run time using the splitters between the dock 
 
 //Get the size of docked or Floating control using the GetControlSize function.
 
-this.dockingManager1.GetControlSize(this.panel2);
-
 Console.Write("Size" + this.dockingManager1.GetControlSize(this.panel2));
 
-//Set the size of docked or Floating control using the GetControlSize function.
+//Set the size of docked or Floating control using the SetControlSize function.
 
 this.dockingManager1.SetControlSize(this.panel1, new Size(200, 200));
 
@@ -230,7 +228,7 @@ This overloaded function returns the index of image associated with the docking 
 
 {% highlight C# %}
 
-System.Drawing.Icon icon = new System.Drawing.Icon(GetIconFile(GetIconFile(@"..\\..\\\$this.Icon.ico")));
+System.Drawing.Icon icon = new System.Drawing.Icon(GetIconFile(@"..\\..\\\$this.Icon.ico"));
 
 private string GetIconFile(string bitmapName)
 {
@@ -254,7 +252,7 @@ this.dockingManager1.SetDockIcon(this.panel1, icon);
 
 {% highlight VB %}
 
-Dim icon As System.Drawing.Icon = New System.Drawing.Icon(GetIconFile(GetIconFile("..\\..\\\$this.Icon.ico")))
+Dim icon As System.Drawing.Icon = New System.Drawing.Icon(GetIconFile("..\\..\\\$this.Icon.ico"))
 
 Private Function GetIconFile(ByVal bitmapName As String) As String
 	 
