@@ -12,15 +12,15 @@ WinForms TreeViewAdv performance can be improved by the following properties and
 
 ## EnableVirtualization
 
-In TreeViewAdv, while loading 20,000 nodes it took nearly 60 seconds to load. Make this delay as considerable time this property is enabled. When `EnableVirtualization` is set as true, the parent nodes are added by scrolling the vertical scrollbar  and the child nodes are added when expanding the respected parent node
+In TreeViewAdv, loading 20,000 nodes can take nearly 60 seconds. Since this is a considerable delay, the `EnableVirtualization` property can be used to mitigate it. When `EnableVirtualization` is set to `true`, the parent nodes are added by scrolling the vertical scrollbar, and the child nodes are added when the corresponding parent node is expanded.
 
 ## SuspendExpandRecalculate
 
-Improves performance of the TreeViewAdv with large number of nodes. Generally, the time taken to populate 5000 child nodes to a root node takes 10 milliseconds. But after setting the `SuspendExpandRecalculate `property to true, the time taken for populating is decreased to half of its original time i.e., 5 milliseconds. The unnecessary calling of Recalculate dimensions for the child nodes when the Root nodes are collapsed is also reduced.
+Improves the performance of the TreeViewAdv when it contains a large number of nodes. Generally, populating 5,000 child nodes under a root node takes about 10 milliseconds. After setting the `SuspendExpandRecalculate` property to `true`, the time required is roughly halved to 5 milliseconds. The unnecessary calling of Recalculate dimensions for child nodes when the root nodes are collapsed is also reduced.
 
 ## RecalculateExpansion
 
-By default, it is true. This property when set to false, greatly improves the performance of the tree nodes on load.
+By default, this property is `true`. When set to `false`, it greatly improves the performance of the tree nodes on load.
 
 
 <b>Property Table</b>
@@ -54,11 +54,11 @@ Description</th></tr>
 <tr>
 <td>
 BeginUpdate</td><td>
-Calling this method will stop the redraws of the control and makes the node addition more faster than normal.</td></tr>
+Calling this method stops the redraws of the control and makes node addition faster than normal.</td></tr>
 <tr>
 <td>
 EndUpdate</td><td>
-Resumes the painting of the control suspended by BeginUpdate method.</td></tr>
+Resumes the painting of the control suspended by the BeginUpdate method.</td></tr>
 </table>
 
 > Note
