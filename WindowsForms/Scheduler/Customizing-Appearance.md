@@ -9,9 +9,7 @@ documentation: ug
 
 # Customizing Appearance in Windows Forms Scheduler (Event Calendar)
 
-Appearance of any region of the ScheduleControl can be customized by using the [WinForms Scheduler](https://www.syncfusion.com/scheduler-sdk/winforms-scheduler). Appearance property.
-
-This property gains access to the ScheduleAppearance object that controls various appearance attributes of different WinForms Scheduler regions. 
+The appearance of any region of the ScheduleControl can be customized by using the [WinForms Scheduler](https://www.syncfusion.com/scheduler-sdk/winforms-scheduler). Appearance property. This property provides access to the ScheduleAppearance object that controls various appearance attributes of different WinForms Scheduler regions. 
 
 The following table describes the appearance options available in the customized WinForms Scheduler control.
 
@@ -212,7 +210,7 @@ Indicates whether the time column should appear or not.</td></tr>
 <tr>
 <td>
 TimeBackColor</td><td>
-Specifies the back color of the time column or not.</td></tr>
+Specifies the back color of the time column.</td></tr>
 <tr>
 <td>
 TimeBigFontSize</td><td>
