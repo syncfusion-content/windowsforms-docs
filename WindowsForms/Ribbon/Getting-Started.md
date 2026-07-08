@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Windows Forms Ribbon control | Syncfusion®
 description: Learn here about getting started with Syncfusion® Windows Forms Ribbon (RibbonControlAdv) control, its elements and more details.
-platform: windowsForms
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
