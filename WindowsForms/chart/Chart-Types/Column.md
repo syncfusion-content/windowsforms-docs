@@ -255,7 +255,7 @@ chartControl.Series.Add(secondServer)
 
 ![Stacking Column 100 Chart in WindowsForms](../Chart-Types_images/windowsforms-stacked-column100-chart.png)
 
-## Customization option
+## Customization Option
 
 The following chart series properties are used to customize column charts:
 
