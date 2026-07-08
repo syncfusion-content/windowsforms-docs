@@ -75,7 +75,7 @@ chartControl.Series.Add(secondServer)
 
 ## Rotated Spline Chart
 
-A Rotated Spline Chart is similar to an ordinary Spline Chart. The only difference is that, it would be rotated. It plots one or several series of data, and joins each series by smooth, rotated spline curves instead of straight lines. The following code shows how to define rotated spline line chart in chartcontrol.
+A Rotated Spline Chart is similar to an ordinary Spline Chart. The only difference is that, it would be rotated. It plots one or several series of data, and joins each series by smooth, rotated spline curves instead of straight lines. The following code shows how to define rotated spline line chart in chart control.
 
 {% tabs %}
 {% highlight c# %}
@@ -127,7 +127,7 @@ chartControl.Series.Add(secondServer)
 
 ## Spline Line Chart
 
-Spline Chart is similar to a Line Chart except that it connects the different data points using splines instead of straight lines. The following code shows how to define spline chart in chartcontrol.
+Spline Chart is similar to a Line Chart except that it connects the different data points using splines instead of straight lines. The following code shows how to define spline chart in chart control.
 
 {% tabs %}
 {% highlight c# %}
@@ -179,7 +179,7 @@ chartControl.Series.Add(secondServer)
 
 ## Step Line Chart
 
-Step Line Charts use horizontal and vertical lines to connect data points resulting in a step like progression. The following code shows how to define step chart in chartcontrol.
+Step Line Charts use horizontal and vertical lines to connect data points resulting in a step like progression. The following code shows how to define step chart in chart control.
 
 {% tabs %}
 {% highlight c# %}
