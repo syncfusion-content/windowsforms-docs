@@ -11,7 +11,7 @@ documentation: ug
 
 ## TreeViewFindReplaceDialog
 
-The find and replace feature enables users to search and replace a specific tree node present in the MultiColumnTreeView control. You can implement the fastest Find and Replace functionality in the MultiColumnTreeView control by using the TreeViewFindReplaceDialog class. This class provides the methods that are necessary to perform a find and replace operation.
+The find and replace feature enables users to search and replace a specific tree node present in the MultiColumnTreeView control. You can implement the fastest Find and Replace functionality in the MultiColumnTreeView control by using the `TreeViewFindReplaceDialog` class. This class provides the methods that are necessary to perform a find and replace operation.
 
 The value entered in the Search Text field is highlighted in the MultiColumnTreeView control after the search action is performed. You can switch to each highlighted tree node by clicking the Find Next button. This functionality is available only when there is more than one search result.
 
@@ -39,11 +39,11 @@ The available search options are as follows:
 
 ## MultiColumnTreeView Search Range
 
-1.	**TreeView** : Specifies whether the search can be performed in entire TreeViewAdv control.
+1.	**TreeView** : Specifies whether the search is performed across the entire MultiColumnTreeView control.
 
-2.	**Root Node** : Specifies whether the search can be performed only on the parent node level.
+2.	**Root Node** : Specifies whether the search is performed only at the parent node level.
 
-3.	**Child Node** : Specifies whether the search can be performed only on the child node level.
+3.	**Child Node** : Specifies whether the search is performed only at the child node level.
 
 Find and Replace can be enabled by using the below code
 
@@ -89,7 +89,7 @@ dialog.ReplaceAll("Britain", "United Kingdom", TreeViewSearchOption.MatchWholeTe
 
 ## OnNodeBeforeFind Event
 
-This event will be triggered before the matching tree nodes are highlighted in the MultiColumnTreeView control. 
+This event will be triggered before the matching tree nodes are highlighted in the MultiColumnTreeView control. 
 
 <b>Event Data</b>
 
@@ -140,7 +140,7 @@ End Sub
 
 ## OnNodeAfterFound Event
 
-This event will be triggered after the matching TreeNodeAdv is highlighted in the MultiColumnTreeView control. 
+This event will be triggered after the matching TreeNodeAdv is highlighted in the MultiColumnTreeView control. 
 
 <b>Event Data</b>
 
@@ -192,7 +192,7 @@ End Sub
 
 ## OnNodeReplacing Event
 
-This event will be triggered before replacing the matched tree node text in the MultiColumnTreeView control. 
+This event will be triggered before replacing the matched tree node text in the MultiColumnTreeView control. 
 
 <b>Event Data</b>
 
@@ -263,7 +263,7 @@ End Sub
 
 ## OnNodeReplaced Event
 
-This event will be triggered after the matched TreeNodeAdv text is replaced in the MultiColumnTreeView control. 
+This event will be triggered after the matched TreeNodeAdv text is replaced in the MultiColumnTreeView control. 
 
 <b>Event Data</b>
 
@@ -318,7 +318,7 @@ End Sub
 
 ## Keyboard Search
 
-Setting `AllowKeyboardSearch` property of the MultiColumnTreeView to true, will allow the user to search for a node by typing the name of the node using the keyboard.
+Setting the `AllowKeyboardSearch` property of the MultiColumnTreeView to `true` allows the user to search for a node by typing the name of the node using the keyboard. This feature is enabled by default.
 
 {% tabs %}
 
