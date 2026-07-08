@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Features of TreeMap control in Windows Forms | Syncfusion®
-description: Learn about ToolTip support in Syncfusion® Windows Forms TreeMap control, its elements and more details.
+description: Learn about Treemap levels in Syncfusion® Windows Forms TreeMap control, its elements and more details.
 platform: windowsforms
 control: TreeMap
 documentation: ug

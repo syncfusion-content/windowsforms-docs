@@ -25,6 +25,16 @@ TreeMap1.ColorValuePath = "Growth";
 
 {% endhighlight %}
 
+{% highlight vb %}
+
+Dim TreeMap1 As New TreeMap()
+
+TreeMap1.ItemsSource = data.PopulationDetails
+
+TreeMap1.ColorValuePath = "Growth"
+
+{% endhighlight %}
+
 {% endtabs %}
 
 N> The specified field must be available in every subclass (object) defined in the hierarchical (nested) data collection.
