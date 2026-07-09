@@ -735,7 +735,7 @@ A Gantt chart is a graphical representation of the duration of tasks against the
 
 You could then use another series to represent the completed portion of the different tasks. This new series will then contain data points with their beginning values coinciding with the beginning values of the data points from the previous series and the ending value based on the fraction of the work that has been completed on the task. This way, one can get a quick reading of a project progress by drawing a vertical line through the chart at the current date.
 
-![Chart Types](Chart-Types_images/windowsforms-gantt-chart.jpeg)
+![Chart Types](Chart-Types_images/windowsforms-gantt-chart.png)
 
 #### Chart Details
 
@@ -801,7 +801,7 @@ Histograms are useful data summaries that convey the following information:
 
 The shape of the distribution conveys important information such as the probability distribution of the data.
 
-![Chart Types](Chart-Types_images/windowsforms-histogram-chart.jpeg)
+![Chart Types](Chart-Types_images/windowsforms-histogram-chart.png)
 
 #### Chart Details
 
@@ -882,7 +882,7 @@ Me.chartControl1.Series.Add(series)
 
 The Tornado chart is a bar chart which shows the variability of an output to several different inputs. Variability is displayed using relative lengths of bars across a range. It is mainly used in sensitivity analysis. It shows how different random factors can influence the prognostic outcome.
 
-![Tornado chart in WindowsForms](chart-types_images/windowsforms-tornado-chart.jpeg)
+![Tornado chart in WindowsForms](chart-types_images/windowsforms-tornado-chart.png)
 
 #### Chart Details
 
@@ -2170,7 +2170,7 @@ A Candle chart displays stock information using the **High, Low, Open and Close 
 
 The following image shows a CandleChart displaying a single series.
 
-![Candle chart in WindowsForms](chart-types_images/windowsforms-candle-chart.jpeg)
+![Candle chart in WindowsForms](chart-types_images/windowsforms-candle-chart.png)
 
 ### Chart Details
 
@@ -2239,7 +2239,7 @@ HiLo Chart is a special kind of chart that is normally used in stock analysis. T
 
 The Hi Lo Chart expects two y values to be specified in the series. One value should represent the high and the other value should represent the low stock price for the period. This can be specified in any order.
 
-![HiLo chart in WindowsForms](chart-types_images/windowsforms-hilo-chart.jpeg)
+![HiLo chart in WindowsForms](chart-types_images/windowsforms-hilo-chart.png)
 
 #### Chart Details
 
@@ -2298,7 +2298,7 @@ DisplayText, DrawErrorBars, DrawSeriesNameInDepth, ErrorBarsSymbolShape, PhongAl
 
 HiLo Open Close Chart is a special kind of chart that is normally used in stock analysis. This chart type expects four y values for every point in the series. Those values should represent the High, Low, Open and Close values of the stock, in that order, for that period.
 
-![HiLo open close chart in WindowsForms](chart-types_images/windowsforms-hilo-open-close-chart.jpeg)
+![HiLo open close chart in WindowsForms](chart-types_images/windowsforms-hilo-open-close-chart.png)
 
 #### Chart Details
 
@@ -2363,7 +2363,7 @@ Kagi Charts are a Japanese invention and date since the late 1870's, but were po
 
 The penetration of a prior column's high or low, by the latest closing price, alters the colors of the lines. These colors depict either a bullish or bearish pattern. Use the PriceUpColor and PriceDownColor properties to specify the colors for these two patterns. The wider the columns, the stronger the patterns are.
 
-![Kagi chart in WindowsForms](chart-types_images/windowsforms-kagi-chart.jpeg)
+![Kagi chart in WindowsForms](chart-types_images/windowsforms-kagi-chart.png)
 
 #### Chart Details
 
@@ -2684,7 +2684,7 @@ In 1977, John Tukey published an efficient method for displaying a five-number d
 
 The following is an example of a Box and Whisker plot.
 
-![Box and whisker chart in WindowsForms](chart-types_images/windowsforms-box-and-whisker-chart.jpeg)
+![Box and whisker chart in WindowsForms](chart-types_images/windowsforms-box-and-whisker-chart.png)
 
 The Box and Whisker plot is interpreted as follows.
 
