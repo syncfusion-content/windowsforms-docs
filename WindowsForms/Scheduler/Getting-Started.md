@@ -126,8 +126,8 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using Syncfusion.Windows.Forms.Schedule;
-using GridScheduleSample;
-namespace ScheduleSample
+
+namespace GridScheduleSample
 {
     public partial class Form1 : Form
     {
@@ -158,9 +158,8 @@ Imports System.Drawing
 Imports System.Text
 Imports System.Windows.Forms
 Imports Syncfusion.Windows.Forms.Schedule
-Imports GridScheduleSample
 
-Namespace ScheduleSample
+Namespace GridScheduleSample
 
     Public Partial Class Form1
         Inherits Form
@@ -251,9 +250,9 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using Syncfusion.Windows.Forms.Schedule;
-using GridScheduleSample;
 using System.IO;
-namespace ScheduleSample
+
+namespace GridScheduleSample
 {
 	public partial class Form1 : Form
 	{
@@ -271,15 +270,14 @@ namespace ScheduleSample
 				data = SimpleScheduleDataProvider.LoadBinary("default.schedule");
 				data.FileName = "default.schedule";
 			}
-
 			else
 			{
-    			data = new SimpleScheduleDataProvider();
+				data = new SimpleScheduleDataProvider();
 				data.MasterList = new SimpleScheduleAppointmentList();
 				data.FileName = "default.schedule";
 			}
-				this.scheduleControl1.ScheduleType = ScheduleViewType.Month;
-				this.scheduleControl1.DataSource = data;
+			this.scheduleControl1.ScheduleType = ScheduleViewType.Month;
+			this.scheduleControl1.DataSource = data;
 		}
 
 	}
@@ -295,10 +293,9 @@ Imports System.Drawing
 Imports System.Text
 Imports System.Windows.Forms
 Imports Syncfusion.Windows.Forms.Schedule
-Imports GridScheduleSample
 Imports System.IO
 
-Namespace ScheduleSample
+Namespace GridScheduleSample
 
     Public Partial Class Form1
         Inherits Form
@@ -755,6 +752,6 @@ End Property
 
 The C# WinForms Calendar Scheduler control supports creating the recurring appointment. By this recurrence appointment, you can process on the daily, weekly, monthly, or yearly view to create the recurrence rule with or without end date. Details are explained in the following link:
 
-[Create the recurrence appointment in WinForms Calendar Scheduler control ](time-interval)
+[Create the recurrence appointment in WinForms Calendar Scheduler control ](time-interval.md)
 
-N> You can also explore our [WinForms Scheduler example](https://github.com/syncfusion/winforms-demos/tree/master/schedulecontrol) that shows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar. Looking for the full Winforms Scheduler component overview, features, pricing, and documentation? Visit the [WinForms Scheduler](https://www.syncfusion.com/winforms-ui-controls/scheduler) page.
+N> You can also explore our [WinForms Scheduler example](https://github.com/syncfusion/winforms-demos/tree/master/schedulecontrol) that shows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar. Looking for the full WinForms Scheduler component overview, features, pricing, and documentation? Visit the [WinForms Scheduler](https://www.syncfusion.com/winforms-ui-controls/scheduler) page.
