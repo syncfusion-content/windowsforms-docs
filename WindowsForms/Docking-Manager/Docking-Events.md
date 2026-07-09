@@ -853,9 +853,9 @@ private void dockingManager1_ControlMaximized(object sender, Syncfusion.Windows.
 
    Console.WriteLine("Control Name : "+arg.Control.Name);
 
-   //Displays the docked control name
+   //Displays the dock host name
 
-   Console.WriteLine("Control Name : "+arg.Control.Name);
+   Console.WriteLine("DockHost Name : "+arg.DockHost.Name);
 
 }
 

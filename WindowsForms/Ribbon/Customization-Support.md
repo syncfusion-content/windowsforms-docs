@@ -13,7 +13,7 @@ RibbonControlAdv lets you customize the Ribbon and Quick Access Toolbar with the
 
 ## QAT customization
 
-For customization of QAT, please refer to [Quick Access Toolbar](Quick-Access-Toolbar.md).
+For customization of QAT, please refer to `Quick Access Toolbar`.
 
 ## Ribbon Customization
 
