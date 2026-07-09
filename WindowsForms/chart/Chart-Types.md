@@ -230,7 +230,7 @@ When rendered in 3D, the plot looks like a ribbon and hence such types are also 
 
 The appearance of the lines and the points can be configured with options such as the colors used, thickness of the lines and the symbols displayed.
 
-![Line chart in WindowsForms](chart-types_images/windowsforms-line-chart.jpeg)
+![Line chart in WindowsForms](chart-types_images/windowsforms-line-chart.png)
 
 #### Chart Details
 
@@ -293,7 +293,7 @@ When rendered in 3D, the plot looks like a ribbon and hence such types are also 
 
 The appearance of the lines and the points can be configured with options such as the colors used, thickness of the lines and the symbols displayed.
 
-![Spline Charts in WindowsForms](chart-types_images/windowsforms-spline-chart.jpeg)
+![Spline Charts in WindowsForms](chart-types_images/windowsforms-spline-chart.png)
 
 #### Chart Details
 
@@ -368,7 +368,7 @@ A Rotated Spline Chart is similar to an ordinary Spline Chart. The only differen
 
 The following image shows a sample Rotated Spline Chart.
 
-![Rotated spline chart in WindowsForms](chart-types_images/windowsforms-rotated-spline-chart.jpeg)
+![Rotated spline chart in WindowsForms](chart-types_images/windowsforms-rotated-spline-chart.png)
 
 #### Chart Details
 
@@ -433,7 +433,7 @@ Me.chartControl1.Series.Add(series1)
 
 Step Line Charts use horizontal and vertical lines to connect data points resulting in a step like progression.
 
-![Step line chart in WindowsForms](chart-types_images/windowsforms-step-line-chart.jpeg)
+![Step line chart in WindowsForms](chart-types_images/windowsforms-step-line-chart.png)
 
 ### Chart Details
 
@@ -510,7 +510,7 @@ Another good reason to use bar charts is when you realize that the number of a d
 
 The following image shows a multi series Bar Chart.
 
-![Chart Types](Chart-Types_images/windowsforms-bar-chart.jpeg)
+![Chart Types](Chart-Types_images/windowsforms-bar-chart.png)
 
 #### Chart Details
 
@@ -578,7 +578,7 @@ Stacking Bar Charts are similar to regular bar charts except that the Y values s
 
 The following image shows a sample Stacking Bar Chart.
 
-![Chart Types](Chart-Types_images/windowsforms-stacking-bar-chart.jpeg)
+![Chart Types](Chart-Types_images/windowsforms-stacking-bar-chart.png)
 
 ### Chart Details
 
@@ -663,7 +663,7 @@ Me.chartControl1.Series.Add(series2)
 
 This chart type displays multiple series of data as stacked Bars ensuring that the cumulative proportion of each stacked element always totals 100%. The y-axis will hence always be rendered with the range 0 - 100.
 
-![Chart Types](Chart-Types_images/windowsforms-stacked-bar-100-chart.jpeg)
+![Chart Types](Chart-Types_images/windowsforms-stacked-bar-100-chart.png)
 
 #### Chart Details
 
@@ -735,7 +735,7 @@ A Gantt chart is a graphical representation of the duration of tasks against the
 
 You could then use another series to represent the completed portion of the different tasks. This new series will then contain data points with their beginning values coinciding with the beginning values of the data points from the previous series and the ending value based on the fraction of the work that has been completed on the task. This way, one can get a quick reading of a project progress by drawing a vertical line through the chart at the current date.
 
-![Chart Types](Chart-Types_images/windowsforms-gantt-chart.jpeg)
+![Chart Types](Chart-Types_images/windowsforms-gantt-chart.png)
 
 #### Chart Details
 
@@ -801,7 +801,7 @@ Histograms are useful data summaries that convey the following information:
 
 The shape of the distribution conveys important information such as the probability distribution of the data.
 
-![Chart Types](Chart-Types_images/windowsforms-histogram-chart.jpeg)
+![Chart Types](Chart-Types_images/windowsforms-histogram-chart.png)
 
 #### Chart Details
 
@@ -882,7 +882,7 @@ Me.chartControl1.Series.Add(series)
 
 The Tornado chart is a bar chart which shows the variability of an output to several different inputs. Variability is displayed using relative lengths of bars across a range. It is mainly used in sensitivity analysis. It shows how different random factors can influence the prognostic outcome.
 
-![Tornado chart in WindowsForms](chart-types_images/windowsforms-tornado-chart.jpeg)
+![Tornado chart in WindowsForms](chart-types_images/windowsforms-tornado-chart.png)
 
 #### Chart Details
 
@@ -992,7 +992,7 @@ It is used for comparing the frequency, count, total or average of data in diffe
 
 The following image shows a multi series Column Chart.
 
-![Column chart in WindowsForms](chart-types_images/windowsforms-column-chart.jpeg)
+![Column chart in WindowsForms](chart-types_images/windowsforms-column-chart.png)
 
 #### Chart Details
 
@@ -1056,7 +1056,7 @@ Column Range Chart is similar to the Column Chart except that each column is ren
 
 The following figure shows a Column Range Chart.
 
-![Column range chart in WindowsForms](chart-types_images/windowsforms-column-range-chart.jpeg)
+![Column range chart in WindowsForms](chart-types_images/windowsforms-column-range-chart.png)
 
 #### Chart Details
 
@@ -1121,7 +1121,7 @@ Stacking Column Charts are similar to regular column charts except that the y va
 
 The following image shows a sample Stacking Column Chart.
 
-![Stacking column chart in WindowsForms](chart-types_images/windowsforms-stacking-column-chart.jpeg)
+![Stacking column chart in WindowsForms](chart-types_images/windowsforms-stacking-column-chart.png)
 
 #### Chart Details
 
@@ -1207,7 +1207,7 @@ Me.chartControl1.Series.Add(series2)
 
 This chart type displays multiple series of data as stacked Columns ensuring that the cumulative proportion of each stacked element always totals 100 percent. The y-axis will hence always be rendered with the range 0 - 100.
 
-![Stacked column100 chart in WindowForms](chart-types_images/windowsforms-stacked-column100-chart.jpeg)
+![Stacked column100 chart in WindowForms](chart-types_images/windowsforms-stacked-column100-chart.png)
 
 #### Chart Details
 
@@ -1289,7 +1289,7 @@ Multiple series can be plotted on the same chart and alpha-blended interior colo
 
 The following image shows a multi series Area Chart.
 
-![Area chart in WindowsForms](chart-types_images/windowsforms-area-chart.jpeg)
+![Area chart in WindowsForms](chart-types_images/windowsforms-area-chart.png)
 
 #### Chart Details
 
@@ -1360,7 +1360,7 @@ Multiple series can be plotted on the same chart and alpha-blended interior colo
 
 The following image shows a multi series Spline Area Chart.
 
-![Spline area chart in WindowsForms](chart-types_images/windowsforms-spline-area-chart.jpeg)
+![Spline area chart in WindowsForms](chart-types_images/windowsforms-spline-area-chart.png)
 
 #### Chart Details
 
@@ -1429,7 +1429,7 @@ Stacking Area Charts are similar to regular area charts except that the y values
 
 The following image shows a sample Stacking Area Chart.
 
-![Stacking area chart in WindowsForms](chart-types_images/windowsforms-stacking-area-chart.jpeg)
+![Stacking area chart in WindowsForms](chart-types_images/windowsforms-stacking-area-chart.png)
 
 #### Chart Details
 
@@ -1518,7 +1518,7 @@ Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible.
 
 This chart type displays multiple series of data as stacked areas ensuring that the cumulative proportion of each stacked element always totals 100 percent. The y axis will hence always be rendered with the range 0 - 100.
 
-![StackedArea100 chart in WindowsForms](chart-types_images/windowsforms-stackedarea100-chart.jpeg)
+![StackedArea100 chart in WindowsForms](chart-types_images/windowsforms-stackedarea100-chart.png)
 
 #### Chart Details
 
@@ -1644,7 +1644,7 @@ Step Area Charts are similar to regular area chart except that instead of a stra
 
 The following image shows a sample Step Area Chart.
 
-![Step area chart in WindowsForms](chart-types_images/windowsforms-step-area-chart.jpeg)
+![Step area chart in WindowsForms](chart-types_images/windowsforms-step-area-chart.png)
 
 #### Chart Details
 
@@ -2170,7 +2170,7 @@ A Candle chart displays stock information using the **High, Low, Open and Close 
 
 The following image shows a CandleChart displaying a single series.
 
-![Candle chart in WindowsForms](chart-types_images/windowsforms-candle-chart.jpeg)
+![Candle chart in WindowsForms](chart-types_images/windowsforms-candle-chart.png)
 
 ### Chart Details
 
@@ -2239,7 +2239,7 @@ HiLo Chart is a special kind of chart that is normally used in stock analysis. T
 
 The Hi Lo Chart expects two y values to be specified in the series. One value should represent the high and the other value should represent the low stock price for the period. This can be specified in any order.
 
-![HiLo chart in WindowsForms](chart-types_images/windowsforms-hilo-chart.jpeg)
+![HiLo chart in WindowsForms](chart-types_images/windowsforms-hilo-chart.png)
 
 #### Chart Details
 
@@ -2298,7 +2298,7 @@ DisplayText, DrawErrorBars, DrawSeriesNameInDepth, ErrorBarsSymbolShape, PhongAl
 
 HiLo Open Close Chart is a special kind of chart that is normally used in stock analysis. This chart type expects four y values for every point in the series. Those values should represent the High, Low, Open and Close values of the stock, in that order, for that period.
 
-![HiLo open close chart in WindowsForms](chart-types_images/windowsforms-hilo-open-close-chart.jpeg)
+![HiLo open close chart in WindowsForms](chart-types_images/windowsforms-hilo-open-close-chart.png)
 
 #### Chart Details
 
@@ -2363,7 +2363,7 @@ Kagi Charts are a Japanese invention and date since the late 1870's, but were po
 
 The penetration of a prior column's high or low, by the latest closing price, alters the colors of the lines. These colors depict either a bullish or bearish pattern. Use the PriceUpColor and PriceDownColor properties to specify the colors for these two patterns. The wider the columns, the stronger the patterns are.
 
-![Kagi chart in WindowsForms](chart-types_images/windowsforms-kagi-chart.jpeg)
+![Kagi chart in WindowsForms](chart-types_images/windowsforms-kagi-chart.png)
 
 #### Chart Details
 
@@ -2684,7 +2684,7 @@ In 1977, John Tukey published an efficient method for displaying a five-number d
 
 The following is an example of a Box and Whisker plot.
 
-![Box and whisker chart in WindowsForms](chart-types_images/windowsforms-box-and-whisker-chart.jpeg)
+![Box and whisker chart in WindowsForms](chart-types_images/windowsforms-box-and-whisker-chart.png)
 
 The Box and Whisker plot is interpreted as follows.
 
