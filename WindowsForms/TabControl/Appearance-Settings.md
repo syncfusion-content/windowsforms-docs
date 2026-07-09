@@ -82,15 +82,15 @@ this.tabPageAdv1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Right;
 
 
 
-Private Me.tabPageAdv1.BackgroundImage = imageList1.Images(0)
+Me.tabPageAdv1.BackgroundImage = imageList1.Images(0)
 
-Private Me.tabPageAdv1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Right
+Me.tabPageAdv1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Right
 
 {% endhighlight %}
 
 {% endtabs %}
 
-### DisableInActivePageImage
+### Disable Inactive Page Image
 
 The [DisableInactivePageImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_DisableInactivePageImage) property specifies the value which determines whether the image should be disabled when the TabPage is not selected. The default value is `true`.
 
@@ -98,14 +98,14 @@ The [DisableInactivePageImage](https://help.syncfusion.com/cr/windowsforms/Syncf
 
 {% highlight C# %}
 
-this.tabPageAdv1.DisableInactivePageImage = imageList1.Images[0];
+this.tabPageAdv1.DisableInactivePageImage = true;
 
 {% endhighlight %}
 
 
 {% highlight VB %}
 
-Private Me.tabPageAdv1.DisableInactivePageImage = imageList1.Images(0)
+Me.tabPageAdv1.DisableInactivePageImage = True
 
 {% endhighlight %}
 
@@ -139,15 +139,15 @@ this.tabPageAdv1.TabBackColor = System.Drawing.Color.Pink;
 {% highlight VB %}
 
 
-Private Me.tabControlAdv1.ActiveTabColor = System.Drawing.Color.Ivory
+Me.tabControlAdv1.ActiveTabColor = System.Drawing.Color.Ivory
 
-Private Me.tabControlAdv1.InactiveTabColor = System.Drawing.Color.Silver
+Me.tabControlAdv1.InactiveTabColor = System.Drawing.Color.Silver
 
-Private Me.tabControlAdv1.TabPanelBackColor = System.Drawing.Color.White
+Me.tabControlAdv1.TabPanelBackColor = System.Drawing.Color.White
 
-Private Me.tabControlAdv1.BackColor = System.Drawing.Color.Yellow
+Me.tabControlAdv1.BackColor = System.Drawing.Color.Yellow
 
-Private Me.tabPageAdv1.TabBackColor = System.Drawing.Color.Pink
+Me.tabPageAdv1.TabBackColor = System.Drawing.Color.Pink
 
 {% endhighlight %}
 
@@ -172,9 +172,9 @@ The font settings for the [TabControlAdv](https://help.syncfusion.com/cr/windows
 {% highlight C# %}
 
 
-this.tabControlAdv1.ActiveTabFont = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+this.tabControlAdv1.ActiveTabFont = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, (byte)0);
 
-this.tabControlAdv1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+this.tabControlAdv1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, (byte)0);
 
 {% endhighlight %}
 
@@ -182,9 +182,9 @@ this.tabControlAdv1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Draw
 
 
 
-Private Me.tabControlAdv1.ActiveTabFont = New System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, (CByte(0)))
+Me.tabControlAdv1.ActiveTabFont = New System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CByte(0))
 
-Private Me.tabControlAdv1.Font = New System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, (CByte(0)))
+Me.tabControlAdv1.Font = New System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CByte(0))
 
 {% endhighlight %}
 
@@ -205,7 +205,7 @@ Specifies the Font for the tab item.</td></tr>
 
 {% highlight C# %}
 
-this.tabPageAdv1.TabFont = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+this.tabPageAdv1.TabFont = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, (byte)0);
 
 {% endhighlight %}
 
@@ -238,7 +238,7 @@ this.tabPageAdv1.TabForeColor = System.Drawing.Color.Sienna;
 
 {% highlight VB %}
 
-Private Me.tabPageAdv1.TabForeColor = System.Drawing.Color.Sienna
+Me.tabPageAdv1.TabForeColor = System.Drawing.Color.Sienna
 
 {% endhighlight %}
 
