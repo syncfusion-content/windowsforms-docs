@@ -75,7 +75,7 @@ Maintains the repeat type value for every year. Syntax:{StartDate};{EndDate};Eve
 
 ## Setting the time interval in seconds format
 
-The Schedule control, by default, allows you to set the time interval for scheduling appointments only in hours and minutes formats. Now, you can also include seconds in the time interval by enabling the AllowSecondsInAppointment property.
+The Schedule control, by default, allows you to set the time interval for scheduling appointments only in hours and minutes formats. You can also include seconds in the time interval by enabling the AllowSecondsInAppointment property.
 
 {% tabs %}
 {% highlight c# %}
@@ -91,7 +91,7 @@ Me.scheduleControl1.AllowSecondsInAppointment = True
 
 ## Setting the recurrence appointments in seconds
 
-By default, the Schedule control allows you to add the recurrence appointments only for each day, month, or year. Now, recurrence appointments in the Schedule WF can also be organized in seconds, minutes, and hours. To add the recurrence appointments in seconds, it is necessary to enable the [AllowSecondsInAppointment](https://help.syncfusion.com/windowsforms/scheduler/time-interval#setting-the-time-interval-in-seconds-format) property. The minimum value used for adding the recurrence appointments is 60 seconds. When the value goes below 60 seconds, then by default, the appointment time assigns 60 seconds. Recurrence Appointments can be added in two ways. 
+By default, the Schedule control allows you to add the recurrence appointments only for each day, month, or year. Recurrence appointments in the WinForms Scheduler can also be organized in seconds, minutes, and hours. To add the recurrence appointments in seconds, it is necessary to enable the [AllowSecondsInAppointment](https://help.syncfusion.com/windowsforms/scheduler/time-interval#setting-the-time-interval-in-seconds-format) property. When the value goes below 60 seconds, then by default, the appointment time defaults to 60 seconds. Recurrence appointments can be added in two ways.
 
 ### Adding recurrence by using Appointment Recurrence dialog
 
@@ -108,7 +108,7 @@ Recurrence appointments can be added by using the Appointment Recurrence dialog 
    ![Appointment recurrence dialog in WindowsForms Scheduler](time-interval_images/windowsforms-scheduler-appointment-recurrence-dialog.jpeg)
 
 5. The highlighted area above is the newly implemented recurrence settings.
-6. Choose the desired option to make the recurrence appointment in the schedule control and press OK.
+6. Choose the desired option to create the recurrence appointment in the schedule control and press OK.
 7. Now, Save and Close. 
 
 ### Adding recurrence by using the RecurrenceRule property
