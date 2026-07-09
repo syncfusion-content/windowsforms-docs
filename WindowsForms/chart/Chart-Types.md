@@ -510,7 +510,7 @@ Another good reason to use bar charts is when you realize that the number of a d
 
 The following image shows a multi series Bar Chart.
 
-![Chart Types](Chart-Types_images/windowsforms-bar-chart.jpeg)
+![Chart Types](Chart-Types_images/windowsforms-bar-chart.png)
 
 #### Chart Details
 
@@ -578,7 +578,7 @@ Stacking Bar Charts are similar to regular bar charts except that the Y values s
 
 The following image shows a sample Stacking Bar Chart.
 
-![Chart Types](Chart-Types_images/windowsforms-stacking-bar-chart.jpeg)
+![Chart Types](Chart-Types_images/windowsforms-stacking-bar-chart.png)
 
 ### Chart Details
 
@@ -663,7 +663,7 @@ Me.chartControl1.Series.Add(series2)
 
 This chart type displays multiple series of data as stacked Bars ensuring that the cumulative proportion of each stacked element always totals 100%. The y-axis will hence always be rendered with the range 0 - 100.
 
-![Chart Types](Chart-Types_images/windowsforms-stacked-bar-100-chart.jpeg)
+![Chart Types](Chart-Types_images/windowsforms-stacked-bar-100-chart.png)
 
 #### Chart Details
 
@@ -1289,7 +1289,7 @@ Multiple series can be plotted on the same chart and alpha-blended interior colo
 
 The following image shows a multi series Area Chart.
 
-![Area chart in WindowsForms](chart-types_images/windowsforms-area-chart.jpeg)
+![Area chart in WindowsForms](chart-types_images/windowsforms-area-chart.png)
 
 #### Chart Details
 
@@ -1360,7 +1360,7 @@ Multiple series can be plotted on the same chart and alpha-blended interior colo
 
 The following image shows a multi series Spline Area Chart.
 
-![Spline area chart in WindowsForms](chart-types_images/windowsforms-spline-area-chart.jpeg)
+![Spline area chart in WindowsForms](chart-types_images/windowsforms-spline-area-chart.png)
 
 #### Chart Details
 
@@ -1429,7 +1429,7 @@ Stacking Area Charts are similar to regular area charts except that the y values
 
 The following image shows a sample Stacking Area Chart.
 
-![Stacking area chart in WindowsForms](chart-types_images/windowsforms-stacking-area-chart.jpeg)
+![Stacking area chart in WindowsForms](chart-types_images/windowsforms-stacking-area-chart.png)
 
 #### Chart Details
 
@@ -1518,7 +1518,7 @@ Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible.
 
 This chart type displays multiple series of data as stacked areas ensuring that the cumulative proportion of each stacked element always totals 100 percent. The y axis will hence always be rendered with the range 0 - 100.
 
-![StackedArea100 chart in WindowsForms](chart-types_images/windowsforms-stackedarea100-chart.jpeg)
+![StackedArea100 chart in WindowsForms](chart-types_images/windowsforms-stackedarea100-chart.png)
 
 #### Chart Details
 
@@ -1644,7 +1644,7 @@ Step Area Charts are similar to regular area chart except that instead of a stra
 
 The following image shows a sample Step Area Chart.
 
-![Step area chart in WindowsForms](chart-types_images/windowsforms-step-area-chart.jpeg)
+![Step area chart in WindowsForms](chart-types_images/windowsforms-step-area-chart.png)
 
 #### Chart Details
 

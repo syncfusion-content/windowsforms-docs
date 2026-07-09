@@ -13,13 +13,19 @@ Area charts highlight the magnitude of change over time by rendering data in a c
 
 You can also customize the following features for area charts:
 
-* Series Color Settings: Background and foreground colors for area charts are customized through the `Interior` property of the `ChartStyleInfo` class.
-* Chart 3-D Mode: A chart is rendered in 3-D mode by enabling the `Series3D` property.
-* Border Settings: Border color and width of an area chart can be changed through the `Border.Color` and `Border.Width` properties.
+* Series Color Settings: Background and foreground colors for area charts are customized through the [Interior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStyleInfo.html#Syncfusion_Windows_Forms_Chart_ChartStyleInfo_Interior) property of the [ChartStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStyleInfo.html) class.
+* Chart 3-D Mode: A chart is rendered in 3-D mode by enabling the [Series3D](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Series3D) property.
+* Border Settings: Border color and width of an area chart can be changed through the [Color](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLineInfo.html#Syncfusion_Windows_Forms_Chart_ChartLineInfo_Color) and [Width](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLineInfo.html#Syncfusion_Windows_Forms_Chart_ChartLineInfo_Width) properties.
  
  ## Area Chart
  
-An Area Chart connects data points with straight lines, creating a shaded region between the lines and the x-axis using a specified color or gradient. By utilizing alpha-blending within these shaded areas, multiple series can be plotted on a single chart while ensuring that overlapping series remain clearly visible.
+An Area Chart connects data points with straight lines, creating a shaded region between the lines and the x-axis. Alpha-blending allows multiple series to be plotted on a single chart while keeping overlapping areas clearly visible.
+
+N>
+chart details for area chart.
+* Number of Y values per point - 1.
+* Number of Series - One or More.
+* Cannot be combined with - Pie, Bar, Polar, Radar, Gantt, Stacked Bar.
 
 {% tabs %}
 {% highlight c# %}
@@ -52,9 +58,13 @@ chartControl.Series.Add(firstServer)
 
 ## Spline Area Chart
 
-Spline Area Chart is similar to an Area Chart with the only difference being the way in which the points of a series are connected. It connects each series of points by a smooth spline curve. The area enclosed by the chart is filled with specified interior brush.
+A Spline Area Chart connects data points with smooth spline curves, filling the enclosed area with a specified interior brush. Multiple series can be plotted using alpha-blending to ensure visibility of overlapping areas.
 
-Multiple series can be plotted on the same chart and alpha-blended interior color can be used on the exterior chart to make the interior chart(s) show through.
+N>
+chart details for spline area chart.
+* Number of Y values per point - 1.
+* Number of Series - One or More.
+* Cannot be Combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 {% tabs %}
 {% highlight c# %}
@@ -88,6 +98,12 @@ chartControl.Series.Add(firstServer)
 ## Stacking Area Chart
 
 Stacking Area Charts are similar to standard area charts, but the Y-values of each series are stacked on top of one another in a specified order. This makes it easier to visualize the relationship between individual parts and the total sum.
+
+N>
+chart details for stacking area chart.
+* Number of Y values per point - 1.
+* Number of Series - One or More.
+* Cannot be combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 {% tabs %}
 {% highlight c# %}
@@ -140,6 +156,13 @@ chartControl.Series.Add(secondServer)
 ## Stacking Area100 Chart
 
 This chart type displays multiple data series as stacked areas, ensuring the cumulative proportion of each element always totals 100%. Consequently, the y-axis is always rendered within the 0 to 100 range.
+
+N>
+chart details for stacking area100 chart.
+* Number of Y values per point - 1.
+* Number of Series - One.
+* SupportMarker - No.
+* Cannot be Combined with - Any other chart types.
 
 {% tabs %}
 {% highlight c# %}
@@ -210,6 +233,12 @@ chartControl.Series.Add(thirdServer)
 
 Step Area Chart is similar to a standard area chart, but instead of connecting data points with straight lines, it uses horizontal and vertical lines to create a step-like pattern between values.
 
+N>
+chart details for step area chart.
+* Number of Y values per point - 1.
+* Number of Series - One or More.
+* Cannot be combined with - Pie, Bar, Polar, Radar, Stacked Bar.
+
 {% tabs %}
 {% highlight c# %}
 
@@ -239,7 +268,6 @@ chartControl.Series.Add(firstServer)
 
 ![Step Area Chart in WindowsForms](../Chart-Types_images/windowsforms-step-area-chart.png)
 
-
 ## Customization option
 The following chart series properties are used as customization options for all area chart types.
 
@@ -249,4 +277,4 @@ N>
 * The [StepItem.Inverted](https://help.syncfusion.com/windowsforms/chart/chart-series#stepiteminverted) property is supported only in the `Step Area Chart` as a customization option.
 * The [DisplayShadow](https://help.syncfusion.com/windowsforms/chart/chart-series#displayshadow) property is supported only in the `Area Chart` as a customization option.
 * The [ZOrder](https://help.syncfusion.com/windowsforms/chart/chart-series#zorder) property is supported only in the `Stacking Area` and `Stacking Area100` Chart as a customization option.
-* The [HighlightInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#highlightinterior) property is supported in all Area Chart types, except `Spline Area` and `Step Area` Charts, as a customization option.
+* The [HighlightInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#highlightinterior) property is supported in all area chart types, except `Spline Area` and `Step Area` charts, as a customization option.
