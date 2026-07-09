@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with Windows Forms Map control | Syncfusion® 
+title: Getting started with Windows Forms Map control | Syncfusion®
 description: Learn here all about getting started with Syncfusion® Windows Forms Maps (SfMaps) control, its elements, and more.
 platform: windowsforms
 control: Maps
@@ -11,19 +11,19 @@ documentation: ug
 
 ## Assembly deployment
 
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#maps) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#maps) section to get the list of assemblies or NuGet packages that need to be added as reference to use the control in any application.
 
-Please find more details regarding how to install the nuget packages in windows form application in the below link:
+Please find more details regarding how to install the NuGet packages in Windows Forms application in the below link:
 
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
+[How to install NuGet packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
 
 ## Key concepts
 
 Maps are visualized through layers. A map can accommodate one or more layers. ShapeFileLayer is one of the layers that can be used to generate map shapes and bind business objects with them.
 
-[WinForms Map](https://www.syncfusion.com/winforms-ui-controls/map) contains a set of elements, which includes shapes, bubbles, annotations, and data items. Bubbles and MapItems enhance the data visualization capabilities of the map with data binding. Annotation and tooltip shows additional information on the map.
+[WinForms Map](https://www.syncfusion.com/winforms-ui-controls/map) contains a set of elements, which includes shapes, bubbles, annotations, and data items. Bubbles and MapItems enhance the data visualization capabilities of the map with data binding. Annotations and tooltips show additional information on the map.
 
-Options such as zooming, panning, and map selection enable the effective interaction on map elements.
+Options such as zooming, panning, and map selection enable effective interaction on map elements.
 
 ![Windows Forms Maps Options](Getting-Started_images/Getting-Started_img1.png)
 
@@ -35,15 +35,15 @@ Map control has the following structures:
 
 ## Map control
 
-The MapControl class is a base class, which consists of several layers, namely ShapeFileLayer, Sub ShapeFileLayer and latitude/longitude viewer. The ShapeFileLayer is used to load the shape files. The latitude/longitude viewer displays the corresponding coordinates, receives user inputs, and translates them into actions and commands on other layers.
+The MapControl class is a base class, which consists of several layers, namely ShapeFileLayer, SubShapeFileLayer, and latitude/longitude viewer. The ShapeFileLayer is used to load the shape files. The latitude/longitude viewer displays the corresponding coordinates, receives user inputs, and translates them into actions and commands on other layers.
 
 ## Shape file layer
 
-The ShapeFileLayer is the most important component of the maps control. It provides a mechanism to upload the shape files that essentially forms the contents of a map. The shape file is in a digital vector storage format for storing geometric location and associated attribute information. Shape files spatially describe geometries such as points, polylines, and polygons.
+The ShapeFileLayer is the most important component of the maps control. It provides a mechanism to upload the shape files that essentially form the contents of a map. The shape file is in a digital vector storage format for storing geometric location and associated attribute information. Shape files spatially describe geometries such as points, polylines, and polygons.
 
 ## Shape file description
 
-The maps control supports reading and loading shape files. A shape file is a set of files, which are stored in a non-topological geometry and the attribute information for the spatial features and records in a data set. Spatial features and records are stored as shapes that consist of set vector coordinates. A computer program can read the content of the shape files and parse them as vector elements. The maps control also reads and parses the spatial information of a shape file into the graphical elements.
+The maps control supports reading and loading shape files. A shape file is a set of files, which are stored in a non-topological geometry and the attribute information for the spatial features and records in a data set. Spatial features and records are stored as shapes that consist of a set of vector coordinates. A computer program can read the content of the shape files and parse them as vector elements. The maps control also reads and parses the spatial information of a shape file into the graphical elements.
 
 As mentioned earlier, a shape file can be a set of files or a single file. Generally, the shape file contains the following files:
 
@@ -67,19 +67,19 @@ Maps read the main file and create the map shapes. Then, the associated .dbf fil
 
 ## Adding shape file
 
-To read the shape file using maps, the shape file’s main file .shp and .dbf files needs to be added as embedded resources in the application project. Then, the main file’s path has to be given in the Uri property of the shape file layer.
+To read the shape file using maps, the shape file’s main file .shp and .dbf files need to be added as embedded resources in the application project. Then, the main file’s path has to be given in the Uri property of the shape file layer.
 
 ### Uri property
 
 Uri is the string type property, which retrieves the location of the shape file that is added as an embedded resource.
 
-Example :  ShapeFilename.shp
+Example: ShapeFilename.shp
 
-Shape file added should set the properties as specified in the below image.
+The shape file added should set the properties as specified in the below image.
 
 ![Windows Forms Maps Uri Property](Getting-Started_images/ShapeFile.png)
 
-The following code snippet explains adding shape files in maps control.
+The following code snippet explains how to add shape files in maps control.
 
 #### Code sample:
 
@@ -167,7 +167,6 @@ End Class
 In the above snippet, "world1" is a shapefile name.
 
 ![Windows Forms Maps Adding Shape Files](Getting-Started_images/Getting-Started_img3.png)
-
 
 You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/Winforms-map-getting-started).
 

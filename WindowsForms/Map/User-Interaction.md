@@ -32,12 +32,12 @@ partial class Form1
     {
         this.mapsControl1 = new Syncfusion.Windows.Forms.Maps.Maps();
         this.mapsControl1.Name = "mapsControl1";
-        this.mapsControl1.Size = new System.Drawing.Size(880, 585); 
-        this.Controls.Add(this.mapsControl1);  
-        this.ClientSize = new System.Drawing.Size(880, 585);          
+        this.mapsControl1.Size = new System.Drawing.Size(880, 585);
+        this.Controls.Add(this.mapsControl1);
+        this.ClientSize = new System.Drawing.Size(880, 585);
         this.Load += new System.EventHandler(this.Form1_Load);
     }
-}  
+}
 
 {% endhighlight %}
 
@@ -89,9 +89,8 @@ public partial class Form1 : Form
         shapeLayer.ShapeSetting.ShapeStrokeThickness = 1.5;
         shapeLayer.ShapeSetting.ShapeStroke = "Black";
         shapeLayer.ShapeSetting.FillSetting.AutoFillColors = false;
-        this.mapsControl1 .Layers.Add(shapeLayer);
+        this.mapsControl1.Layers.Add(shapeLayer);
     }
-}       
 
 {% endhighlight %}
 
@@ -101,12 +100,10 @@ Public Partial Class Form1
     Inherits Form
 
     Private Sub Form1_Load(sender As Object, e As EventArgs)
-
         Me.mapsControl1.Dock = DockStyle.Fill
         Me.mapsControl1.Margin = New Padding(0, 0, 4, 0)
         Me.mapsControl1.MapBackgroundBrush = New SolidBrush(Color.White)
         Me.mapsControl1.MapItemsShape = Syncfusion.Windows.Forms.Maps.MapItemShapes.None
-
 
         Dim model As New MapViewModel()
         Dim shapeLayer As New ShapeFileLayer()
@@ -125,9 +122,7 @@ Public Partial Class Form1
         shapeLayer.ShapeSetting.ShapeStroke = "Black"
         shapeLayer.ShapeSetting.FillSetting.AutoFillColors = False
         Me.mapsControl1.Layers.Add(shapeLayer)
-
     End Sub
-
 End Class
 
 {% endhighlight %}
@@ -169,12 +164,29 @@ partial class Form1
     {
         this.mapsControl1 = new Syncfusion.Windows.Forms.Maps.Maps();
         this.mapsControl1.Name = "mapsControl1";
-        this.mapsControl1.Size = new System.Drawing.Size(880, 585); 
-        this.Controls.Add(this.mapsControl1);  
-        this.ClientSize = new System.Drawing.Size(880, 585);          
+        this.mapsControl1.Size = new System.Drawing.Size(880, 585);
+        this.Controls.Add(this.mapsControl1);
+        this.ClientSize = new System.Drawing.Size(880, 585);
         this.Load += new System.EventHandler(this.Form1_Load);
     }
-}  
+}
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Partial Class Form1
+    Private mapsControl1 As Syncfusion.Windows.Forms.Maps.Maps
+
+    Private Sub InitializeComponent()
+        Me.mapsControl1 = New Syncfusion.Windows.Forms.Maps.Maps()
+        Me.mapsControl1.Name = "mapsControl1"
+        Me.mapsControl1.Size = New System.Drawing.Size(880, 585)
+        Me.Controls.Add(Me.mapsControl1)
+        Me.ClientSize = New System.Drawing.Size(880, 585)
+        AddHandler Me.Load, New System.EventHandler(AddressOf Me.Form1_Load)
+    End Sub
+End Class
 
 {% endhighlight %}
 
@@ -226,9 +238,7 @@ Public Partial Class Form1
         shapeLayer.ShapeIDTableField = "NAME"
         shapeLayer.ShowMapItem = False
         Me.mapsControl1.Layers.Add(shapeLayer)
-
     End Sub
-
 End Class
 
 {% endhighlight %}
@@ -348,9 +358,6 @@ End Class
 {% endhighlight %}
 
 {% endtabs %}
-{% endhighlight %}
-
-{% endtabs %}
 
 ![Zooming in Windows Forms Maps](Zooming_images/Zooming_img1.png)
 
@@ -370,12 +377,29 @@ partial class Form1
     {
         this.mapsControl1 = new Syncfusion.Windows.Forms.Maps.Maps();
         this.mapsControl1.Name = "mapsControl1";
-        this.mapsControl1.Size = new System.Drawing.Size(880, 585); 
-        this.Controls.Add(this.mapsControl1);  
-        this.ClientSize = new System.Drawing.Size(880, 585);          
+        this.mapsControl1.Size = new System.Drawing.Size(880, 585);
+        this.Controls.Add(this.mapsControl1);
+        this.ClientSize = new System.Drawing.Size(880, 585);
         this.Load += new System.EventHandler(this.Form1_Load);
     }
-}  
+}
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Partial Class Form1
+    Private mapsControl1 As Syncfusion.Windows.Forms.Maps.Maps
+
+    Private Sub InitializeComponent()
+        Me.mapsControl1 = New Syncfusion.Windows.Forms.Maps.Maps()
+        Me.mapsControl1.Name = "mapsControl1"
+        Me.mapsControl1.Size = New System.Drawing.Size(880, 585)
+        Me.Controls.Add(Me.mapsControl1)
+        Me.ClientSize = New System.Drawing.Size(880, 585)
+        AddHandler Me.Load, New System.EventHandler(AddressOf Me.Form1_Load)
+    End Sub
+End Class
 
 {% endhighlight %}
 
