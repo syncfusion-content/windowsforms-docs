@@ -13,7 +13,7 @@ Options such as zooming, selection, and tooltip enable effective interaction on 
 
 ## Tooltip support
 
-Tooltip is a hanging window, Which will be shown when the shape is tapped. This is used to show additional information from the object bound with the shape. By default, it takes the property of the bound object, which is referred in the ShapeValuePath and displays its content when the corresponding shape is tapped.
+Tooltip is a hanging window that will be shown when the shape is tapped. This is used to show additional information from the object bound with the shape. By default, it takes the property of the bound object, which is referred to by the ShapeValuePath and displays its content when the corresponding shape is tapped.
 
 Tooltip is shown only when the [`ShowToolTip`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Maps.ShapeFileLayer.html#Syncfusion_Windows_Forms_Maps_ShapeFileLayer_ShowToolTip) is set to true in the shape file layer.
 
@@ -26,27 +26,35 @@ Tooltip is shown only when the [`ShowToolTip`](https://help.syncfusion.com/cr/wi
 
 partial class Form1
 {
+    private Syncfusion.Windows.Forms.Maps.Maps mapsControl1;
 
-         private void InitializeComponent()
-         {
-
-            this.mapsControl1 = new Syncfusion.Windows.Forms.Maps.Maps();
-
-            this.mapsControl1.Name = "mapsControl1";
-
-            this.mapsControl1.Size = new System.Drawing.Size(880, 585); 
-
-            this.Controls.Add(this.mapsControl1);  
-
-            this.ClientSize = new System.Drawing.Size(880, 585);          
-
-            this.Load += new System.EventHandler(this.Form1_Load);
-
-         }
-
-            private Syncfusion.Windows.Forms.Maps.Maps mapsControl1;
-
+    private void InitializeComponent()
+    {
+        this.mapsControl1 = new Syncfusion.Windows.Forms.Maps.Maps();
+        this.mapsControl1.Name = "mapsControl1";
+        this.mapsControl1.Size = new System.Drawing.Size(880, 585); 
+        this.Controls.Add(this.mapsControl1);  
+        this.ClientSize = new System.Drawing.Size(880, 585);          
+        this.Load += new System.EventHandler(this.Form1_Load);
+    }
 }  
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Partial Class Form1
+    Private mapsControl1 As Syncfusion.Windows.Forms.Maps.Maps
+
+    Private Sub InitializeComponent()
+        Me.mapsControl1 = New Syncfusion.Windows.Forms.Maps.Maps()
+        Me.mapsControl1.Name = "mapsControl1"
+        Me.mapsControl1.Size = New System.Drawing.Size(880, 585)
+        Me.Controls.Add(Me.mapsControl1)
+        Me.ClientSize = New System.Drawing.Size(880, 585)
+        AddHandler Me.Load, New System.EventHandler(AddressOf Me.Form1_Load)
+    End Sub
+End Class
 
 {% endhighlight %}
 
@@ -58,56 +66,69 @@ partial class Form1
 
 public partial class Form1 : Form
 {
+    private void Form1_Load(object sender, EventArgs e)
+    {
+        this.mapsControl1.Dock = DockStyle.Fill;
+        this.mapsControl1.Margin = new Padding(0, 0, 4, 0);
+        this.mapsControl1.MapBackgroundBrush = new SolidBrush(Color.White);
+        this.mapsControl1.MapItemsShape = Syncfusion.Windows.Forms.Maps.MapItemShapes.None;
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-            this.mapsControl1.Dock = DockStyle.Fill;
-
-            this.mapsControl1.Margin = new Padding(0, 0, 4, 0);
-
-            this.mapsControl1.MapBackgroundBrush = new SolidBrush(Color.White);
-
-            this.mapsControl1.MapItemsShape = Syncfusion.Windows.Forms.Maps.MapItemShapes.None;
-
-
-            MapViewModel model = new MapViewModel();
-
-            ShapeFileLayer shapeLayer = new ShapeFileLayer();
-
-            shapeLayer.Uri = "world1.shp";
-
-            shapeLayer.ItemSource = model.Countries;
-
-            shapeLayer.ShapeIDPath = "NAME";
-
-            shapeLayer.ShapeIDTableField = "NAME";
-
-            shapeLayer.ShapeSetting.ShapeValuePath = "Population";
-
-            shapeLayer.ShapeSetting.ShapeColorValuePath = "Population";
-
-            shapeLayer.ShapeSetting.ShapeDisplayValuePath = "NAME";
-
-            shapeLayer.ShapeSetting.TextForeground = "Black";
-
-            shapeLayer.ShowMapItem = false;
-
-            shapeLayer.ShowToolTip = true;
-
-            shapeLayer.ShapeSetting.ShapeFill = "#E5E5E5";
-
-            shapeLayer.ShapeSetting.ShapeStrokeThickness = 1.5;
-
-            shapeLayer.ShapeSetting.ShapeStroke = "Black";
-
-            shapeLayer.ShapeSetting.FillSetting.AutoFillColors = false;
-
-             this.mapsControl1 .Layers.Add(shapeLayer);
-
-         }
-
+        MapViewModel model = new MapViewModel();
+        ShapeFileLayer shapeLayer = new ShapeFileLayer();
+        shapeLayer.Uri = "world1.shp";
+        shapeLayer.ItemSource = model.Countries;
+        shapeLayer.ShapeIDPath = "NAME";
+        shapeLayer.ShapeIDTableField = "NAME";
+        shapeLayer.ShapeSetting.ShapeValuePath = "Population";
+        shapeLayer.ShapeSetting.ShapeColorValuePath = "Population";
+        shapeLayer.ShapeSetting.ShapeDisplayValuePath = "NAME";
+        shapeLayer.ShapeSetting.TextForeground = "Black";
+        shapeLayer.ShowMapItem = false;
+        shapeLayer.ShowToolTip = true;
+        shapeLayer.ShapeSetting.ShapeFill = "#E5E5E5";
+        shapeLayer.ShapeSetting.ShapeStrokeThickness = 1.5;
+        shapeLayer.ShapeSetting.ShapeStroke = "Black";
+        shapeLayer.ShapeSetting.FillSetting.AutoFillColors = false;
+        this.mapsControl1 .Layers.Add(shapeLayer);
+    }
 }       
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Public Partial Class Form1
+    Inherits Form
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs)
+
+        Me.mapsControl1.Dock = DockStyle.Fill
+        Me.mapsControl1.Margin = New Padding(0, 0, 4, 0)
+        Me.mapsControl1.MapBackgroundBrush = New SolidBrush(Color.White)
+        Me.mapsControl1.MapItemsShape = Syncfusion.Windows.Forms.Maps.MapItemShapes.None
+
+
+        Dim model As New MapViewModel()
+        Dim shapeLayer As New ShapeFileLayer()
+        shapeLayer.Uri = "world1.shp"
+        shapeLayer.ItemSource = model.Countries
+        shapeLayer.ShapeIDPath = "NAME"
+        shapeLayer.ShapeIDTableField = "NAME"
+        shapeLayer.ShapeSetting.ShapeValuePath = "Population"
+        shapeLayer.ShapeSetting.ShapeColorValuePath = "Population"
+        shapeLayer.ShapeSetting.ShapeDisplayValuePath = "NAME"
+        shapeLayer.ShapeSetting.TextForeground = "Black"
+        shapeLayer.ShowMapItem = False
+        shapeLayer.ShowToolTip = True
+        shapeLayer.ShapeSetting.ShapeFill = "#E5E5E5"
+        shapeLayer.ShapeSetting.ShapeStrokeThickness = 1.5
+        shapeLayer.ShapeSetting.ShapeStroke = "Black"
+        shapeLayer.ShapeSetting.FillSetting.AutoFillColors = False
+        Me.mapsControl1.Layers.Add(shapeLayer)
+
+    End Sub
+
+End Class
 
 {% endhighlight %}
 
@@ -124,7 +145,7 @@ Each shape in a map can be either selected or unselected when interacted with sh
 1. Single selection
 2. Multiple selection
 
-The selected map shapes are differentiated by their fill. The [`SelectedShapeColor`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.UI.Xaml.Maps.ShapeSetting.html#Syncfusion_UI_Xaml_Maps_ShapeSetting_SelectedShapeColor) of ShapeSetting is used to fill the selected shape.
+The selected map shapes are differentiated by their fill. The [`SelectedShapeColor`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Maps.ShapeSetting.html#Syncfusion_Windows_Forms_Maps_ShapeSetting_SelectedShapeColor) of ShapeSetting is used to fill the selected shape.
 
 All selected shapes are available in the [`SelectedMapShapes`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Maps.Maps.html#Syncfusion_Windows_Forms_Maps_Maps_SelectedMapShapes) of ShapeFileLayer.
 
@@ -142,26 +163,17 @@ Multiple shapes in the map can be selected when the [`SelectionMode`](https://he
 
 partial class Form1
 {
+    private Syncfusion.Windows.Forms.Maps.Maps mapsControl1;
 
-         private void InitializeComponent()
-         {
-
-            this.mapsControl1 = new Syncfusion.Windows.Forms.Maps.Maps();
-
-            this.mapsControl1.Name = "mapsControl1";
-
-            this.mapsControl1.Size = new System.Drawing.Size(880, 585); 
-
-            this.Controls.Add(this.mapsControl1);  
-
-            this.ClientSize = new System.Drawing.Size(880, 585);          
-
-            this.Load += new System.EventHandler(this.Form1_Load);
-
-         }
-
-            private Syncfusion.Windows.Forms.Maps.Maps mapsControl1;
-
+    private void InitializeComponent()
+    {
+        this.mapsControl1 = new Syncfusion.Windows.Forms.Maps.Maps();
+        this.mapsControl1.Name = "mapsControl1";
+        this.mapsControl1.Size = new System.Drawing.Size(880, 585); 
+        this.Controls.Add(this.mapsControl1);  
+        this.ClientSize = new System.Drawing.Size(880, 585);          
+        this.Load += new System.EventHandler(this.Form1_Load);
+    }
 }  
 
 {% endhighlight %}
@@ -174,51 +186,58 @@ partial class Form1
 
 public partial class Form1 : Form
 {
+    private void Form1_Load(object sender, EventArgs e)
+    {
+        this.mapsControl1.Dock = DockStyle.Fill;
+        this.mapsControl1.Margin = new Padding(0, 0, 4, 0);
+        this.mapsControl1.MapBackgroundBrush = new SolidBrush(Color.White);
+        this.mapsControl1.MapItemsShape = Syncfusion.Windows.Forms.Maps.MapItemShapes.None;
+        ShapeFileLayer shapeLayer = new ShapeFileLayer();
+        shapeLayer.ShapeSetting.FillSetting.AutoFillColors = false;
+        shapeLayer.Uri = "world1.shp";
+        shapeLayer.ShapeIDPath = "Country";
+        shapeLayer.EnableSelection = true;
+        shapeLayer.SelectionMode = SelectionModes.Multiple;
+        shapeLayer.ShapeIDTableField = "NAME";
+        shapeLayer.ShowMapItem = false;
+        this.mapsControl1.Layers.Add(shapeLayer);
+    }
+}
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
+{% endhighlight %}
 
-            this.mapsControl1.Dock = DockStyle.Fill;
+{% highlight vb %}
 
-            this.mapsControl1.Margin = new Padding(0, 0, 4, 0);
+Public Partial Class Form1
+    Inherits Form
 
-            this.mapsControl1.MapBackgroundBrush = new SolidBrush(Color.White);
+    Private Sub Form1_Load(sender As Object, e As EventArgs)
+        Me.mapsControl1.Dock = DockStyle.Fill
+        Me.mapsControl1.Margin = New Padding(0, 0, 4, 0)
+        Me.mapsControl1.MapBackgroundBrush = New SolidBrush(Color.White)
+        Me.mapsControl1.MapItemsShape = Syncfusion.Windows.Forms.Maps.MapItemShapes.None
 
-            this.mapsControl1.MapItemsShape = Syncfusion.Windows.Forms.Maps.MapItemShapes.None;
+        Dim shapeLayer As New ShapeFileLayer()
+        shapeLayer.ShapeSetting.FillSetting.AutoFillColors = False
+        shapeLayer.Uri = "world1.shp"
+        shapeLayer.ShapeIDPath = "Country"
+        shapeLayer.EnableSelection = True
+        shapeLayer.SelectionMode = SelectionModes.Multiple
+        shapeLayer.ShapeIDTableField = "NAME"
+        shapeLayer.ShowMapItem = False
+        Me.mapsControl1.Layers.Add(shapeLayer)
 
-            ShapeFileLayer shapeLayer = new ShapeFileLayer();
+    End Sub
 
-            shapeLayer.ShapeSetting.FillSetting.AutoFillColors = false;
-
-            shapeLayer.Uri = "world1.shp";
-
-            shapeLayer.ShapeIDPath = "Country";
-
-            shapeLayer.EnableSelection = true;
-
-            shapeLayer.SelectionMode = SelectionModes.Multiple;
-
-            shapeLayer.ShapeIDTableField = "NAME";
-
-            shapeLayer.ShowMapItem = false;
-
-            this.mapsControl1.Layers.Add(shapeLayer);
-
-        }   
-
-  }       
+End Class
 
 {% endhighlight %}
 
 {% endtabs %}
 
-Screenshot:
-
 ![Multi selection in Windows Forms Maps](Map-Selection_images/Map-Selection_img1.png)
 
 Multiple selection can be performed by selecting the map shape and holding the ctrl key over the map.
-
-Screenshot:
 
 ![Map selection in Windows Forms Maps](Map-Selection_images/Map-Selection_img2.png)
 
@@ -239,27 +258,35 @@ By changing the [`ZoomFactor`](https://help.syncfusion.com/cr/windowsforms/Syncf
 
 partial class Form1
 {
+    private Syncfusion.Windows.Forms.Maps.Maps mapsControl1;
 
-         private void InitializeComponent()
-         {
+    private void InitializeComponent()
+    {
+        this.mapsControl1 = new Syncfusion.Windows.Forms.Maps.Maps();
+        this.mapsControl1.Name = "mapsControl1";
+        this.mapsControl1.Size = new System.Drawing.Size(880, 585);
+        this.Controls.Add(this.mapsControl1);
+        this.ClientSize = new System.Drawing.Size(880, 585);
+        this.Load += new System.EventHandler(this.Form1_Load);
+    }
+}
 
-            this.mapsControl1 = new Syncfusion.Windows.Forms.Maps.Maps();
+{% endhighlight %}
 
-            this.mapsControl1.Name = "mapsControl1";
+{% highlight vb %}
 
-            this.mapsControl1.Size = new System.Drawing.Size(880, 585); 
+Partial Class Form1
+    Private mapsControl1 As Syncfusion.Windows.Forms.Maps.Maps
 
-            this.Controls.Add(this.mapsControl1);  
-
-            this.ClientSize = new System.Drawing.Size(880, 585);          
-
-            this.Load += new System.EventHandler(this.Form1_Load);
-
-         }
-
-            private Syncfusion.Windows.Forms.Maps.Maps mapsControl1;
-
-}  
+    Private Sub InitializeComponent()
+        Me.mapsControl1 = New Syncfusion.Windows.Forms.Maps.Maps()
+        Me.mapsControl1.Name = "mapsControl1"
+        Me.mapsControl1.Size = New System.Drawing.Size(880, 585)
+        Me.Controls.Add(Me.mapsControl1)
+        Me.ClientSize = New System.Drawing.Size(880, 585)
+        AddHandler Me.Load, New System.EventHandler(AddressOf Me.Form1_Load)
+    End Sub
+End Class
 
 {% endhighlight %}
 
@@ -271,42 +298,59 @@ partial class Form1
 
 public partial class Form1 : Form
 {
+    public Form1()
+    {
+        InitializeComponent();
+    }
 
-        public Form1()
-        {
-            InitializeComponent();
-        }
+    private void Form1_Load(object sender, EventArgs e)
+    {
+        this.mapsControl1.MapBackgroundBrush = new SolidBrush(Color.White);
+        this.mapsControl1.MapItemsShape = Syncfusion.Windows.Forms.Maps.MapItemShapes.None;
+        this.mapsControl1.ZoomFactor = 0.75f;
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
+        MapViewModel model = new MapViewModel();
+        ShapeFileLayer shapeLayer = new ShapeFileLayer();
+        shapeLayer.Uri = "world1.shp";
+        shapeLayer.ItemSource = model.Countries;
+        shapeLayer.ShapeIDPath = "NAME";
+        shapeLayer.ShapeIDTableField = "NAME";
+        this.mapsControl1.Layers.Add(shapeLayer);
+    }
+}
 
-            this.mapsControl1.MapBackgroundBrush = new SolidBrush(Color.White);
+{% endhighlight %}
 
-            this.mapsControl1.MapItemsShape = Syncfusion.Windows.Forms.Maps.MapItemShapes.None;
+{% highlight vb %}
 
-            this.mapsControl1.ZoomFactor = 0.75f;
+Public Partial Class Form1
+    Inherits Form
 
-            ShapeFileLayer shapeLayer = new ShapeFileLayer();
+    Public Sub New()
+        InitializeComponent()
+    End Sub
 
-            shapeLayer.Uri = "world1.shp";
+    Private Sub Form1_Load(sender As Object, e As EventArgs)
+        Me.mapsControl1.MapBackgroundBrush = New SolidBrush(Color.White)
+        Me.mapsControl1.MapItemsShape = Syncfusion.Windows.Forms.Maps.MapItemShapes.None
+        Me.mapsControl1.ZoomFactor = 0.75F
 
-            shapeLayer.ItemSource = model.Countries;
+        Dim model As New MapViewModel()
+        Dim shapeLayer As New ShapeFileLayer()
+        shapeLayer.Uri = "world1.shp"
+        shapeLayer.ItemSource = model.Countries
+        shapeLayer.ShapeIDPath = "NAME"
+        shapeLayer.ShapeIDTableField = "NAME"
+        Me.mapsControl1.Layers.Add(shapeLayer)
+    End Sub
+End Class
 
-            shapeLayer.ShapeIDPath = "NAME";
-
-            shapeLayer.ShapeIDTableField = "NAME"; 
-
-            this.mapsControl1.Layers.Add(shapeLayer);
-
-        }
-
-}       
-	 
 {% endhighlight %}
 
 {% endtabs %}
+{% endhighlight %}
 
-Screenshot:
+{% endtabs %}
 
 ![Zooming in Windows Forms Maps](Zooming_images/Zooming_img1.png)
 
@@ -320,26 +364,17 @@ When changing the [`ZoomLevel`](https://help.syncfusion.com/cr/windowsforms/Sync
 
 partial class Form1
 {
+    private Syncfusion.Windows.Forms.Maps.Maps mapsControl1;
 
-         private void InitializeComponent()
-         {
-
-            this.mapsControl1 = new Syncfusion.Windows.Forms.Maps.Maps();
-
-            this.mapsControl1.Name = "mapsControl1";
-
-            this.mapsControl1.Size = new System.Drawing.Size(880, 585); 
-
-            this.Controls.Add(this.mapsControl1);  
-
-            this.ClientSize = new System.Drawing.Size(880, 585);          
-
-            this.Load += new System.EventHandler(this.Form1_Load);
-
-         }
-
-            private Syncfusion.Windows.Forms.Maps.Maps mapsControl1;
-
+    private void InitializeComponent()
+    {
+        this.mapsControl1 = new Syncfusion.Windows.Forms.Maps.Maps();
+        this.mapsControl1.Name = "mapsControl1";
+        this.mapsControl1.Size = new System.Drawing.Size(880, 585); 
+        this.Controls.Add(this.mapsControl1);  
+        this.ClientSize = new System.Drawing.Size(880, 585);          
+        this.Load += new System.EventHandler(this.Form1_Load);
+    }
 }  
 
 {% endhighlight %}
@@ -352,37 +387,51 @@ partial class Form1
 
 public partial class Form1 : Form
 {
+    public Form1()
+    {
+        InitializeComponent();
+    }
 
-     public Form1()
-        {
-            InitializeComponent();
-        }
+    private void Form1_Load(object sender, EventArgs e)
+    {
+        this.mapsControl1.MapBackgroundBrush = new SolidBrush(Color.White);
+        this.mapsControl1.MapItemsShape = Syncfusion.Windows.Forms.Maps.MapItemShapes.None;
+        this.mapsControl1.ZoomFactor = 0.75f;
+        this.mapsControl1.ZoomLevel = 4;
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
+        ShapeFileLayer shapeLayer = new ShapeFileLayer();
+        shapeLayer.Uri = "world1.shp";
+        this.mapsControl1.Layers.Add(shapeLayer);
+    }
+}
 
-            this.mapsControl1.MapBackgroundBrush = new SolidBrush(Color.White);
+{% endhighlight %}
 
-            this.mapsControl1.MapItemsShape = Syncfusion.Windows.Forms.Maps.MapItemShapes.None;
+{% highlight vb %}
 
-            this.mapsControl1.ZoomFactor = 0.75f;
+Public Partial Class Form1
+    Inherits Form
 
-            this.mapsControl1.ZoomLevel = 4;
+    Public Sub New()
+        InitializeComponent()
+    End Sub
 
-            ShapeFileLayer shapeLayer = new ShapeFileLayer();
+    Private Sub Form1_Load(sender As Object, e As EventArgs)
+        Me.mapsControl1.MapBackgroundBrush = New SolidBrush(Color.White)
+        Me.mapsControl1.MapItemsShape = Syncfusion.Windows.Forms.Maps.MapItemShapes.None
+        Me.mapsControl1.ZoomFactor = 0.75F
+        Me.mapsControl1.ZoomLevel = 4
 
-            shapeLayer.Uri = "world1.shp";
-
-            this.mapsControl1.Layers.Add(shapeLayer);
-        }      
-
-}       
+        Dim shapeLayer As New ShapeFileLayer()
+        shapeLayer.Uri = "world1.shp"
+        Me.mapsControl1.Layers.Add(shapeLayer)
+    End Sub
+End Class
 
 {% endhighlight %}
 
 {% endtabs %}
 
-Screenshot:
 ![Zoom level of image](Zooming_images/Zooming_img2.png)
 
 ## Events
@@ -396,8 +445,17 @@ Below code snippet displays the selected country name which is specified in the 
 
 public partial class Form1 : Form
 {
+    private ListBox countryListBox;
 
-    this.mapsControl1.ShapeSelected+=mapsControl1_ShapeSelected;
+    private void Form1_Load(object sender, EventArgs e)
+    {
+        // Create ListBox control
+        countryListBox = new ListBox();
+        this.Controls.Add(countryListBox);
+
+        // Wire up ShapeSelected event
+        this.mapsControl1.ShapeSelected += mapsControl1_ShapeSelected;
+    }
 
     private void mapsControl1_ShapeSelected(object sender, ShapeSelectedEventArgs e)
     {
@@ -411,7 +469,32 @@ public partial class Form1 : Form
             }
         }
     }
-}       
+}
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Public Partial Class Form1
+    Inherits Form
+    Private countryListBox As ListBox
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs)
+        countryListBox = New ListBox()
+        Me.Controls.Add(countryListBox)
+        AddHandler Me.mapsControl1.ShapeSelected, AddressOf mapsControl1_ShapeSelected
+    End Sub
+
+    Private Sub mapsControl1_ShapeSelected(sender As Object, e As ShapeSelectedEventArgs)
+        countryListBox.Items.Clear()
+
+        If e.Data IsNot Nothing Then
+            For Each shape As Countries In e.Data
+                countryListBox.Items.Add(shape.Country)
+            Next
+        End If
+    End Sub
+End Class
 
 {% endhighlight %}
 

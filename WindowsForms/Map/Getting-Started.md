@@ -31,12 +31,7 @@ Options such as zooming, panning, and map selection enable the effective interac
 
 Map control has the following structures:
 
-
-![Windows Foms Maps Structure](Getting-Started_images/Getting-Started_img2.png)
-
-
-
-
+![Windows Forms Maps Structure](Getting-Started_images/Getting-Started_img2.png)
 
 ## Map control
 
@@ -44,7 +39,7 @@ The MapControl class is a base class, which consists of several layers, namely S
 
 ## Shape file layer
 
-The ShapeFileLayer is the most important component of the maps control. It provides a mechanism to upload the shape files that essentially forms the contents of a map. The shape file is in a digital vector storage format for storing geometric location and associated attribute information. Shape files spatially describe geometries such as points, polylines, and polygons.
+The ShapeFileLayer is the most important component of the maps control. It provides a mechanism to upload the shape files that essentially forms the contents of a map. The shape file is in a digital vector storage format for storing geometric location and associated attribute information. Shape files spatially describe geometries such as points, polylines, and polygons.
 
 ## Shape file description
 
@@ -52,17 +47,13 @@ The maps control supports reading and loading shape files. A shape file is a set
 
 As mentioned earlier, a shape file can be a set of files or a single file. Generally, the shape file contains the following files:
 
-•Main file (.shp)
-
-•Index file (.shx)
-
-•dBASE file (.dbf)
-
-
+* Main file (.shp)
+* Index file (.shx)
+* dBASE file (.dbf)
 
 All files must adhere to the 8.3 naming conventions. The Main file, Index file, and dBase file must have the same prefix, so they must have the same file name. This naming convention allows users or developers to identify specific geographical information.
 
-The main file (.shp) contains a fixed-length file header followed by the variable-length records. Each variable-length record is made up of a fixed-length record header followed by the variable-length record contents. 
+The main file (.shp) contains a fixed-length file header followed by the variable-length records. Each variable-length record is made up of a fixed-length record header followed by the variable-length record contents.
 
 The index file (.shx) contains a 100-byte header followed by 8-byte, fixed-length records.
 
@@ -98,25 +89,35 @@ The following code snippet explains adding shape files in maps control.
 
 partial class Form1
 {
+    private Syncfusion.Windows.Forms.Maps.Maps mapsControl1;
+
     private void InitializeComponent()
     {
-
         this.mapsControl1 = new Syncfusion.Windows.Forms.Maps.Maps();
-
         this.mapsControl1.Name = "mapsControl1";
-
         this.mapsControl1.Size = new System.Drawing.Size(880, 585);
-
         this.Controls.Add(this.mapsControl1);
-
         this.ClientSize = new System.Drawing.Size(880, 585);
-
         this.Load += new System.EventHandler(this.Form1_Load);
-
     }
-
-    private Syncfusion.Windows.Forms.Maps.Maps mapsControl1;
 }
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Partial Class Form1
+    Private mapsControl1 As Syncfusion.Windows.Forms.Maps.Maps
+
+    Private Sub InitializeComponent()
+        Me.mapsControl1 = New Syncfusion.Windows.Forms.Maps.Maps()
+        Me.mapsControl1.Name = "mapsControl1"
+        Me.mapsControl1.Size = New System.Drawing.Size(880, 585)
+        Me.Controls.Add(Me.mapsControl1)
+        Me.ClientSize = New System.Drawing.Size(880, 585)
+        AddHandler Me.Load, New System.EventHandler(AddressOf Me.Form1_Load)
+    End Sub
+End Class
 
 {% endhighlight %}
 
@@ -136,22 +137,34 @@ public partial class Form1 : Form
     private void Form1_Load(object sender, EventArgs e)
     {
         ShapeFileLayer shapeLayer = new ShapeFileLayer();
-
         shapeLayer.Uri = "world1.shp";
-
         this.mapsControl1.Layers.Add(shapeLayer);
-
     }
-}      
+}
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Public Partial Class Form1
+    Inherits Form
+
+    Public Sub New()
+        InitializeComponent()
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs)
+        Dim shapeLayer As New ShapeFileLayer()
+        shapeLayer.Uri = "world1.shp"
+        Me.mapsControl1.Layers.Add(shapeLayer)
+    End Sub
+End Class
 
 {% endhighlight %}
 
 {% endtabs %}
-	 
-In the above snippet “world1” is a shapefile name.
 
-
-Screenshot:
+In the above snippet, "world1" is a shapefile name.
 
 ![Windows Forms Maps Adding Shape Files](Getting-Started_images/Getting-Started_img3.png)
 
