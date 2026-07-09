@@ -24,32 +24,44 @@ TreeMap TreeMap1 = new TreeMap();
 PopulationViewModel data = new PopulationViewModel();
 
 TreeMap1.ItemsSource = data.PopulationDetails;
-
 TreeMap1.WeightValuePath = "Population";
-
 TreeMap1.ColorValuePath = "Growth";
-
-TreeMap1.ItemsLayoutMode =  Syncfusion.Windows.Forms.TreeMap.ItemsLayoutModes.Squarified;
+TreeMap1.ItemsLayoutMode = Syncfusion.Windows.Forms.TreeMap.ItemsLayoutModes.Squarified;
 
 TreeMapFlatLevel treeMapFlatLevel1 = new TreeMapFlatLevel();
-
 treeMapFlatLevel1.GroupPath = "Continent";
-
-
 treeMapFlatLevel1.ShowLabels = true;
-
 TreeMap1.Levels.Add(treeMapFlatLevel1);
 
-
 TreeMapFlatLevel treeMapFlatLevel2 = new TreeMapFlatLevel();
-
 treeMapFlatLevel2.GroupPath = "Country";
-
 treeMapFlatLevel2.ShowLabels = true;
-
 treeMapFlatLevel2.HeaderHeight = 25;
-
 TreeMap1.Levels.Add(treeMapFlatLevel2);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Dim TreeMap1 As New TreeMap()
+
+Dim data As New PopulationViewModel()
+
+TreeMap1.ItemsSource = data.PopulationDetails
+TreeMap1.WeightValuePath = "Population"
+TreeMap1.ColorValuePath = "Growth"
+TreeMap1.ItemsLayoutMode = Syncfusion.Windows.Forms.TreeMap.ItemsLayoutModes.Squarified
+
+Dim treeMapFlatLevel1 As New TreeMapFlatLevel()
+treeMapFlatLevel1.GroupPath = "Continent"
+treeMapFlatLevel1.ShowLabels = True
+TreeMap1.Levels.Add(treeMapFlatLevel1)
+
+Dim treeMapFlatLevel2 As New TreeMapFlatLevel()
+treeMapFlatLevel2.GroupPath = "Country"
+treeMapFlatLevel2.ShowLabels = True
+treeMapFlatLevel2.HeaderHeight = 25
+TreeMap1.Levels.Add(treeMapFlatLevel2)
 
 {% endhighlight %}
 
@@ -70,37 +82,50 @@ TreeMap TreeMap1 = new TreeMap();
 PopulationViewModel data = new PopulationViewModel();
 
 TreeMap1.ItemsSource = data.PopulationDetails;
-
 TreeMap1.WeightValuePath = "Population";
-
 TreeMap1.ColorValuePath = "Growth";
-
 TreeMap1.ItemsLayoutMode = Syncfusion.Windows.Forms.TreeMap.ItemsLayoutModes.SliceAndDiceAuto;
 
 TreeMapFlatLevel treeMapFlatLevel1 = new TreeMapFlatLevel();
-
 treeMapFlatLevel1.GroupPath = "Continent";
-
 treeMapFlatLevel1.ShowLabels = true;
-
 TreeMap1.Levels.Add(treeMapFlatLevel1);
 
 TreeMapFlatLevel treeMapFlatLevel2 = new TreeMapFlatLevel();
-
 treeMapFlatLevel2.GroupPath = "Country";
-
 treeMapFlatLevel2.ShowLabels = true;
-
 treeMapFlatLevel2.HeaderHeight = 25;
-
 TreeMap1.Levels.Add(treeMapFlatLevel2);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Dim TreeMap1 As New TreeMap()
+
+Dim data As New PopulationViewModel()
+
+TreeMap1.ItemsSource = data.PopulationDetails
+TreeMap1.WeightValuePath = "Population"
+TreeMap1.ColorValuePath = "Growth"
+TreeMap1.ItemsLayoutMode = Syncfusion.Windows.Forms.TreeMap.ItemsLayoutModes.SliceAndDiceAuto
+
+Dim treeMapFlatLevel1 As New TreeMapFlatLevel()
+treeMapFlatLevel1.GroupPath = "Continent"
+treeMapFlatLevel1.ShowLabels = True
+TreeMap1.Levels.Add(treeMapFlatLevel1)
+
+Dim treeMapFlatLevel2 As New TreeMapFlatLevel()
+treeMapFlatLevel2.GroupPath = "Country"
+treeMapFlatLevel2.ShowLabels = True
+treeMapFlatLevel2.HeaderHeight = 25
+TreeMap1.Levels.Add(treeMapFlatLevel2)
 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![Features_img4](Features_images/Features_img4.png)
-
 
 ## SliceAndDiceHorizontal layout
 
@@ -115,35 +140,50 @@ TreeMap TreeMap1 = new TreeMap();
 PopulationViewModel data = new PopulationViewModel();
 
 TreeMap1.ItemsSource = data.PopulationDetails;
-
 TreeMap1.WeightValuePath = "Population";
-
 TreeMap1.ColorValuePath = "Growth";
+TreeMap1.ItemsLayoutMode = Syncfusion.Windows.Forms.TreeMap.ItemsLayoutModes.SliceAndDiceHorizontal;
 
-TreeMap1.ItemsLayoutMode = Syncfusion.Windows.Forms.TreeMap.ItemsLayoutModes.SliceAndDiceHorizontal;            TreeMapFlatLevel treeMapFlatLevel1 = new TreeMapFlatLevel();
-
+TreeMapFlatLevel treeMapFlatLevel1 = new TreeMapFlatLevel();
 treeMapFlatLevel1.GroupPath = "Continent";
-
 treeMapFlatLevel1.ShowLabels = true;
-
 TreeMap1.Levels.Add(treeMapFlatLevel1);
 
 TreeMapFlatLevel treeMapFlatLevel2 = new TreeMapFlatLevel();
-
 treeMapFlatLevel2.GroupPath = "Country";
-
 treeMapFlatLevel2.ShowLabels = true;
-
 treeMapFlatLevel2.HeaderHeight = 25;
-
 TreeMap1.Levels.Add(treeMapFlatLevel2);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Dim TreeMap1 As New TreeMap()
+
+Dim data As New PopulationViewModel()
+
+TreeMap1.ItemsSource = data.PopulationDetails
+TreeMap1.WeightValuePath = "Population"
+TreeMap1.ColorValuePath = "Growth"
+TreeMap1.ItemsLayoutMode = Syncfusion.Windows.Forms.TreeMap.ItemsLayoutModes.SliceAndDiceHorizontal
+
+Dim treeMapFlatLevel1 As New TreeMapFlatLevel()
+treeMapFlatLevel1.GroupPath = "Continent"
+treeMapFlatLevel1.ShowLabels = True
+TreeMap1.Levels.Add(treeMapFlatLevel1)
+
+Dim treeMapFlatLevel2 As New TreeMapFlatLevel()
+treeMapFlatLevel2.GroupPath = "Country"
+treeMapFlatLevel2.ShowLabels = True
+treeMapFlatLevel2.HeaderHeight = 25
+TreeMap1.Levels.Add(treeMapFlatLevel2)
 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![Features_img5](Features_images/Features_img5.png)
-
 
 ## SliceAndDiceVertical layout
 
@@ -158,30 +198,44 @@ TreeMap TreeMap1 = new TreeMap();
 PopulationViewModel data = new PopulationViewModel();
 
 TreeMap1.ItemsSource = data.PopulationDetails;
-
 TreeMap1.WeightValuePath = "Population";
-
 TreeMap1.ColorValuePath = "Growth";
-
 TreeMap1.ItemsLayoutMode = Syncfusion.Windows.Forms.TreeMap.ItemsLayoutModes.SliceAndDiceVertical;
 
 TreeMapFlatLevel treeMapFlatLevel1 = new TreeMapFlatLevel();
-
 treeMapFlatLevel1.GroupPath = "Continent";
-
 treeMapFlatLevel1.ShowLabels = true;
-
 TreeMap1.Levels.Add(treeMapFlatLevel1);
 
 TreeMapFlatLevel treeMapFlatLevel2 = new TreeMapFlatLevel();
-
 treeMapFlatLevel2.GroupPath = "Country";
-
 treeMapFlatLevel2.ShowLabels = true;
-
 treeMapFlatLevel2.HeaderHeight = 25;
-
 TreeMap1.Levels.Add(treeMapFlatLevel2);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Dim TreeMap1 As New TreeMap()
+
+Dim data As New PopulationViewModel()
+
+TreeMap1.ItemsSource = data.PopulationDetails
+TreeMap1.WeightValuePath = "Population"
+TreeMap1.ColorValuePath = "Growth"
+TreeMap1.ItemsLayoutMode = Syncfusion.Windows.Forms.TreeMap.ItemsLayoutModes.SliceAndDiceVertical
+
+Dim treeMapFlatLevel1 As New TreeMapFlatLevel()
+treeMapFlatLevel1.GroupPath = "Continent"
+treeMapFlatLevel1.ShowLabels = True
+TreeMap1.Levels.Add(treeMapFlatLevel1)
+
+Dim treeMapFlatLevel2 As New TreeMapFlatLevel()
+treeMapFlatLevel2.GroupPath = "Country"
+treeMapFlatLevel2.ShowLabels = True
+treeMapFlatLevel2.HeaderHeight = 25
+TreeMap1.Levels.Add(treeMapFlatLevel2)
 
 {% endhighlight %}
 

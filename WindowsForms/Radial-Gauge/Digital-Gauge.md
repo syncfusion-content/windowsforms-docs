@@ -9,44 +9,44 @@ documentation: ug
 
 # Digital Gauge in Windows Forms Radial Gauge (Gauge)
 
-[DigitalGauge](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) control is used to display alphanumeric characters in digital (LED Display) mode. It is used to display a range of values that uses character in combination with numbers.
+[DigitalGauge](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) control is used to display alphanumeric characters in digital (LED display) mode. It is used to display a range of values that uses characters in combination with numbers.
 
 ## Key features
 
-* **Segment spacing** - Provides option to set user defined spacing between segments through a float value.
+* **Segment spacing** - Provides an option to set user-defined spacing between segments through a float value.
 
-* **Character type** - Provides option to display characters in different segment styles.
+* **Character type** - Provides an option to display characters in different segment styles.
 
-* **Character count** - Provides option to customize the number of characters to be displayed.
+* **Character count** - Provides an option to customize the number of characters to be displayed.
 
 * **Customization option** - Supports color and visibility customization of all elements.
 
-* **Visual style** - Supports rich set of visual styles to customize the look and feel.
+* **Visual style** - Supports a rich set of visual styles to customize the look and feel.
 
-**Getting started**
+## Getting started
 
-This section describes how to add [DigitalGauge](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) control in a Windows Forms application and overview of its basic functionalities.
+This section describes how to add the [DigitalGauge](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) control to a Windows Forms application and gives an overview of its basic functionalities.
 
 ## Assembly deployment
 
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#digital-gauge) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
- 
-Please find more details regarding how to install the nuget packages in windows form application in the below link:
- 
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
+Refer the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#digital-gauge) section to get the list of assemblies or NuGet packages that need to be added as a reference to use the control in any application.
+
+For more details on how to install the NuGet packages in a Windows Forms application, refer to the following link:
+
+[How to install NuGet packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
 
 
-**Creating simple application with DigitalGauge**
+## Creating a simple application with DigitalGauge
 
-You can create the Windows Forms application with [DigitalGauge](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) control as follows:
+You can create the Windows Forms application with the [DigitalGauge](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) control as follows:
 
 1. [Creating project](#creating-the-project)
 2. [Add control via designer](#adding-control-via-designer)
 3. [Add control manually using code](#adding-control-manually-using-code)
 
-**Creating the project**
+### Creating the project
 
-Create a new Windows Forms project in the Visual Studio to display the DigitalGauge with basic functionalities.
+Create a new Windows Forms project in Visual Studio to display the DigitalGauge with basic functionalities.
 
 ## Add control via designer
 
@@ -62,32 +62,32 @@ The [DigitalGauge](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Window
 
 ## Add control manually using code
 
-To add control manually in C#, follow the given steps:
+To add the control manually in C#, follow the given steps:
 
-**Step 1** : Add the following required assembly references to the project:
+**Step 1:** Add the following required assembly references to the project:
 
 * Syncfusion.Gauge.Windows.dll
 * Syncfusion.Shared.Base.dll
 
-**Step 2** : Include the namespaces **Syncfusion.Windows.Forms.Gauge**.
+**Step 2:** Include the namespace **Syncfusion.Windows.Forms.Gauge**.
 
 {% tabs %}
 
 {% highlight C# %}
 
-using Syncfusion.Windows.Forms.Gauge;
+using Syncfusion.Windows.Forms.Gauge;
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight VB %}
 
-Imports Syncfusion.Windows.Forms.Gauge
+Imports Syncfusion.Windows.Forms.Gauge
 
-{% endhighlight  %}
+{% endhighlight %}
 
-{% endtabs %} 
+{% endtabs %}
 
-**Step 3** : Create [DigitalGauge](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) control instance and add it to the form.
+**Step 3:** Create the [DigitalGauge](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) control instance and add it to the form.
 
 {% tabs %}
 
@@ -111,7 +111,7 @@ Me.Controls.Add(digitalGauge1)
 
 ![Digital Gauge for Windows Forms](Digital-Gauge_images/DigitalGauge_img1.png)
 
-##  Concepts and features
+## Concepts and features
 
 This section illustrates the features of the digital gauge with different visual styles and sample code. It contains the following topics:
 
@@ -124,7 +124,7 @@ This section illustrates the features of the digital gauge with different visual
 
 ### Visual styles
 
-The Gauge control for Windows Forms includes four stunning skins for professional representation of gauges. You can easily modify the look and feel of the gauge component using the [VisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.DigitalGauge.html#Syncfusion_Windows_Forms_Gauge_DigitalGauge_VisualStyle) property.
+The Gauge control for Windows Forms includes a rich set of stunning skins for professional representation of gauges. You can easily modify the look and feel of the gauge component using the [VisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.DigitalGauge.html#Syncfusion_Windows_Forms_Gauge_DigitalGauge_VisualStyle) property.
 
 The styles are built-in for all gauges.
 
@@ -181,7 +181,7 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Blue
 
 {% endtabs %}
 
-![Office style Digital Gauge](Digital-Gauge_images/Digital-Gauge_img2.png)
+![Digital Gauge with blue theme](Digital-Gauge_images/Digital-Gauge_img2.png)
 
 
 **Silver**
@@ -337,20 +337,19 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2
 
 **Custom**
 
- Gauge also provides an option to end user to create their own custom theme based on the requirement by setting the [VisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.DigitalGauge.html#Syncfusion_Windows_Forms_Gauge_DigitalGauge_VisualStyle) property as Custom.
+The gauge also provides an option to the end user to create their own custom theme based on the requirement by setting the [VisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.DigitalGauge.html#Syncfusion_Windows_Forms_Gauge_DigitalGauge_VisualStyle) property as Custom.
 
- **Steps to customize the theme in design time**
+**Steps to customize the theme at design time**
 
- **Step 1:**  Need to add DigitalGauge control to Form Designer.
-
+**Step 1:** Add the DigitalGauge control to the Form Designer.
 
 ![Digital Gauge in designer](Digital-Gauge_images/Digital-Gauge_img17.png)
 
- **Step 2:** Set the VisualStyle as Custom.
+**Step 2:** Set the VisualStyle as Custom.
 
 ![Customized Digital Gauge with smart tag](Digital-Gauge_images/Digital-Gauge_img18.png)
 
- **Step 3:** Need to add necessary Theme combination in ThemeBrush collection and it will update the Color customization details in DigitalGauge control.
+**Step 3:** Add the necessary theme combination in the ThemeBrush collection and it will update the color customization details in the DigitalGauge control.
 
 ![Customized Digital Gauge in designer](Digital-Gauge_images/Digital-Gauge_img19.png)
 
@@ -374,7 +373,8 @@ digitalGaugeThemeBrush1.BackgroundGradientEndColor = System.Drawing.Color.FromAr
 digitalGaugeThemeBrush1.BackgroundGradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
 digitalGaugeThemeBrush1.ForeColor = System.Drawing.Color.Yellow;
 digitalGaugeThemeBrush1.FrameBorderColor = System.Drawing.Color.Red;
-digitalGaugeThemeBrush1.InactiveTextColor = System.Drawing.Color.Transparent;digitalGaugeThemeBrush1.OuterFrameGradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(172)))), ((int)(((byte)(172)))));
+digitalGaugeThemeBrush1.InactiveTextColor = System.Drawing.Color.Transparent;
+digitalGaugeThemeBrush1.OuterFrameGradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(172)))), ((int)(((byte)(172)))));
 digitalGaugeThemeBrush1.OuterFrameGradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
 this.digitalGauge1.ThemeBrush.Add(digitalGaugeThemeBrush1);
 this.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Custom;
@@ -399,7 +399,8 @@ digitalGaugeThemeBrush1.BackgroundGradientEndColor = System.Drawing.Color.FromAr
 digitalGaugeThemeBrush1.BackgroundGradientStartColor = System.Drawing.Color.FromArgb((CType(((CType((240), Byte))), Integer)), (CType(((CType((240), Byte))), Integer)), (CType(((CType((240), Byte))), Integer)))
 digitalGaugeThemeBrush1.ForeColor = System.Drawing.Color.Yellow
 digitalGaugeThemeBrush1.FrameBorderColor = System.Drawing.Color.Red
-digitalGaugeThemeBrush1.InactiveTextColor = System.Drawing.Color.TransparentdigitalGaugeThemeBrush1.OuterFrameGradientEndColor = System.Drawing.Color.FromArgb((CType(((CType((172), Byte))), Integer)), (CType(((CType((172), Byte))), Integer)), (CType(((CType((172), Byte))), Integer)))
+digitalGaugeThemeBrush1.InactiveTextColor = System.Drawing.Color.Transparent
+digitalGaugeThemeBrush1.OuterFrameGradientEndColor = System.Drawing.Color.FromArgb((CType(((CType((172), Byte))), Integer)), (CType(((CType((172), Byte))), Integer)), (CType(((CType((172), Byte))), Integer)))
 digitalGaugeThemeBrush1.OuterFrameGradientStartColor = System.Drawing.Color.FromArgb((CType(((CType((229), Byte))), Integer)), (CType(((CType((229), Byte))), Integer)), (CType(((CType((229), Byte))), Integer)))
 Me.digitalGauge1.ThemeBrush.Add(digitalGaugeThemeBrush1)
 Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Custom
@@ -417,7 +418,7 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Custom
 
 Character types are used to customize the digital segments.
 
-#### Customizing scales
+#### Customizing character type
 
 You can customize the segments in the digital gauge using the [CharacterType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.DigitalGauge.html#Syncfusion_Windows_Forms_Gauge_DigitalGauge_CharacterType) property.
 
@@ -527,14 +528,15 @@ The [CharacterCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Wind
 
 this.digitalGauge1.CharacterCount = 4;
 
-this.digitalGauge1.Value = “123456”;
+this.digitalGauge1.Value = "123456";
 
 {% endhighlight %}
 
 {% highlight VB %}
 
 Me.digitalGauge1.CharacterCount = 4
-Me.digitalGauge1.Value = 123456
+
+Me.digitalGauge1.Value = "123456"
 
 {% endhighlight %}
 
@@ -550,20 +552,21 @@ The [SegmentSpacing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Wind
 
 {% highlight C# %}
 
-  this.digitalGauge1.CharacterCount = 2;
+this.digitalGauge1.CharacterCount = 2;
 
-  this.digitalGauge1.OverrideFontSize = false;
+this.digitalGauge1.OverrideFontSize = false;
 
-  this.digitalGauge1.Value = “123456”;
+this.digitalGauge1.Value = "123456";
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-Me.digitalGauge1.CharacterCount = 2
+Me.digitalGauge1.CharacterCount = 2
 
-Me.digitalGauge1.OverrideFontSize = false
-Me.digitalGauge1.Value = 123456
+Me.digitalGauge1.OverrideFontSize = False
+
+Me.digitalGauge1.Value = "123456"
 
 {% endhighlight %}
 
@@ -571,7 +574,7 @@ Me.digitalGauge1.Value = 123456
 
 ![Digital gauge with space between segments](Digital-Gauge_images/Digital-Gauge_img10.png)
 
-### Show visible segments
+### Show invisible segments
 
 The [ShowInvisibleSegments](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.DigitalGauge.html#Syncfusion_Windows_Forms_Gauge_DigitalGauge_ShowInvisibleSegments) property can be enabled to make the segments that are not drawn visible. This property can be disabled by setting it to `false`.
 
@@ -585,17 +588,17 @@ this.digitalGauge1.ShowInvisibleSegments = true;
 
 {% highlight VB %}
 
- Me.digitalGauge1.ShowInvisibleSegments = true
+Me.digitalGauge1.ShowInvisibleSegments = True
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Digital guage value showing invisible segments](Digital-Gauge_images/Digital-Gauge_img11.png)
+![Digital gauge value showing invisible segments](Digital-Gauge_images/Digital-Gauge_img11.png)
 
 ### RoundCornerRadius
 
-The [RoundCornerRadius](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.DigitalGauge.html#Syncfusion_Windows_Forms_Gauge_DigitalGauge_RoundCornerRadius) property of the digital gauge is used to draw digital gauge with rounded edges.
+The [RoundCornerRadius](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.DigitalGauge.html#Syncfusion_Windows_Forms_Gauge_DigitalGauge_RoundCornerRadius) property of the digital gauge is used to draw the digital gauge with rounded edges.
 
 {% tabs %}
 
@@ -613,15 +616,29 @@ Me.digitalGauge1.RoundCornerRadius = 50
 
 {% endtabs %}
 
-![Digital gauge frame with rounder corners](Digital-Gauge_images/Digital-Gauge_img12.png)
+![Digital gauge frame with rounded corners](Digital-Gauge_images/Digital-Gauge_img12.png)
 
 ### Data binding
 
-You can bind any data source to the digital gauge and map an index of a record to represent the actual value in the gauge. The [DisplayMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.DigitalGauge.html#Syncfusion_Windows_Forms_Gauge_DigitalGauge_DisplayMember) and [DisplayRecordIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.DigitalGauge.html#Syncfusion_Windows_Forms_Gauge_DigitalGauge_DisplayRecordIndex) properties map the DataColumn and DataRow of the bound data source, respectively, to the Gauge control. Data-bound gauges support high frequency data updates.
+You can bind any data source to the digital gauge and map an index of a record to represent the actual value in the gauge. The [DisplayMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.DigitalGauge.html#Syncfusion_Windows_Forms_Gauge_DigitalGauge_DisplayMember) and [DisplayRecordIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.DigitalGauge.html#Syncfusion_Windows_Forms_Gauge_DigitalGauge_DisplayRecordIndex) properties map the DataColumn and DataRow of the bound data source, respectively, to the Gauge control. Data-bound gauges support high-frequency data updates.
+
+{% tabs %}
 
 {% highlight C# %}
+
 this.digitalGauge1.DataSource = dataTable;
 this.digitalGauge1.DisplayRecordIndex = [Row Index];
 this.digitalGauge1.DisplayMember = [column name];
+
 {% endhighlight %}
+
+{% highlight VB %}
+
+Me.digitalGauge1.DataSource = dataTable
+Me.digitalGauge1.DisplayRecordIndex = [Row Index]
+Me.digitalGauge1.DisplayMember = [column name]
+
+{% endhighlight %}
+
+{% endtabs %}
 

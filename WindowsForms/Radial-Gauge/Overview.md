@@ -15,23 +15,31 @@ The Gauge control is intended for developers who want to use gauges in their Win
 
 ## Gauges 
 
-Windows Forms supports rich set of gauges to provide an intuitive and attractive way to display information graphically. 
+Windows Forms supports a rich set of gauges to provide an intuitive and attractive way to display information graphically.
 
 <table>
 <tr>
 <th>
-Name</th><th>
-Description</th></tr>
+Name</th>
+<th>
+Description</th>
+</tr>
 <tr>
 <td>
-[RadialGauge](https://help.syncfusion.com/windowsforms/gauge/radial-gauge)</td><td>
-Visualize a range of values in radial scale with circular, helical or half-circular representation.</td></tr>
+RadialGauge</td>
+<td>
+Visualize a range of values in radial scale with circular, helical or half-circular representation.</td>
+</tr>
 <tr>
 <td>
-[LinearGauge](https://help.syncfusion.com/windowsforms/gauge/linear-gauge)</td><td>
-Visualize a range of values in linear scale with horizontal or vertical representation.</td></tr>
+LinearGauge</td>
+<td>
+Visualize a range of values in linear scale with horizontal or vertical representation.</td>
+</tr>
 <tr>
 <td>
-[DigitalGauge](https://help.syncfusion.com/windowsforms/gauge/digital-gauge)</td><td>
-Visualize alphanumeric values in appearance like LED digital display.</td></tr>
+DigitalGauge</td>
+<td>
+Visualize alphanumeric values in an appearance like an LED digital display.</td>
+</tr>
 </table>
