@@ -11,12 +11,12 @@ documentation: ug
 [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) allows to validate the data and display hints in case of validation is not passed. In case of invalid data, error icon is displayed at the left corner of cell. When mouse hover the error icon, error information will be displayed in tooltip.
 
 ## Built-in Validations
-Built-in validations through[IDataErrorInfo](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo?view=net-5.0), [INotifyDataErrorInfo](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?view=net-5.0) and Data annotation attributes, can be enabled by setting [SfDataGrid.GridValidationMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ValidationMode) or [GridColumn.GridValidationMod](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_ValidationMode)e properties.
+Built-in validations through[IDataErrorInfo](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo?view=net-5.0), [INotifyDataErrorInfo](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?view=net-5.0) and Data annotation attributes, can be enabled by setting [SfDataGrid.GridValidationMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ValidationMode) or [GridColumn.GridValidationMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_ValidationMode)e properties.
 `GridColumn.GridValidationMode` takes priority than `SfDataGrid.GridValidationMode`.
 
-* `GridValidation.InEdit` - display error icon & tips and also doesn’t allows the users to commit the invalid data without allowing users to edit other cells.
-* `GridValidation.InView` - displays error icons and tips alone.
-* `GridValidation.None` - disables built-in validation support.
+* `GridValidationMode.InEdit` - display error icon & tips and also doesn’t allows the users to commit the invalid data without allowing users to edit other cells.
+* `GridValidationMode.InView` - displays error icons and tips alone.
+* `GridValidationMode.None` - disables built-in validation support.
 
 ### Using IDataErrorInfo
 
@@ -101,7 +101,7 @@ this.sfDataGrid.ValidationMode = GridValidationMode.InEdit;
 
 // Set the validation mode only for the particular column.
 this.sfDataGrid.Columns["Quantity"].ValidationMode = GridValidationMode.InEdit;
-{% endhighlight %}]
+{% endhighlight %}
 {% highlight vb %}
 ' Set the validation mode for the grid.
 Me.sfDataGrid.ValidationMode = GridValidationMode.InEdit
@@ -198,11 +198,11 @@ public class OrderInfo : INotifyDataErrorInfo
 
     public System.Collections.IEnumerable GetErrors(string propertyName)
     {
-        if (!propertyName.Equals("ShipCountry "))
+        if (!propertyName.Equals("ShipCountry"))
             return null;
 
-        if (this.ShipCity.Contains("Mexico"))
-            errors.Add("Delivery not available for the city " + ShipCountry);
+        if (this.ShipCountry.Contains("Mexico"))
+            errors.Add("Delivery not available for the country " + ShipCountry);
 
         return errors;
     }
@@ -237,12 +237,12 @@ Public Class OrderInfo
 	End Property
 
 	Public Function GetErrors(ByVal propertyName As String) As System.Collections.IEnumerable
-		If Not propertyName.Equals("ShipCountry ") Then
+		If Not propertyName.Equals("ShipCountry") Then
 			Return Nothing
 		End If
 
-		If Me.ShipCity.Contains("Mexico") Then
-			errors.Add("Delivery not available for the city " & ShipCountry)
+		If Me.ShipCountry.Contains("Mexico") Then
+			errors.Add("Delivery not available for the country " & ShipCountry)
 		End If
 
 		Return errors

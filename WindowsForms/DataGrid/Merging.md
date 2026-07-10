@@ -147,7 +147,7 @@ In the following code, the `GetRange` method returns the range of a cell based o
 {% tabs %}
 {% highlight c# %}
 /// <summary>
-/// Holds the PropertyAccessProvider to git the cell value.
+/// Holds the PropertyAccessProvider to get the cell value.
 /// </summary>
 IPropertyAccessProvider propertyAccessProvider = null;
 
@@ -285,7 +285,7 @@ private CoveredCellInfo GetRange(GridColumn column, int rowIndex, int columnInde
 {% endhighlight %}
 {% highlight vb %}
 ''' <summary>
-''' Holds the PropertyAccessProvider to git the cell value.
+''' Holds the PropertyAccessProvider to get the cell value.
 ''' </summary>
 Private propertyAccessProvider As IPropertyAccessProvider = Nothing
 
@@ -447,7 +447,7 @@ void FirstLevelNestedGrid_QueryCoveredRange(object sender, Syncfusion.WinForms.D
 {% endhighlight %}
 {% highlight vb %}
 Private FirstLevelNestedGrid As SfDataGrid = Me.sfDataGrid1.DetailsViewDefinitions(0).DataGrid
-AddHandler FirstLevelNestedGrid.QueryCoveredRange, AddressOf sfDataGrid1_QueryCoveredRange
+AddHandler FirstLevelNestedGrid.QueryCoveredRange, AddressOf FirstLevelNestedGrid_QueryCoveredRange
 
 Private Sub FirstLevelNestedGrid_QueryCoveredRange(ByVal sender As Object, ByVal e As Syncfusion.WinForms.DataGrid.Events.QueryCoveredRangeEventArgs)
 	If e.ColumnIndex = 1 Then

@@ -192,13 +192,13 @@ By default, table summaries in SfDataGrid will be exported to PDF. If you want t
 {% tabs %}
 {% highlight c# %}
 PdfExportingOptions options = new PdfExportingOptions();
-Options.ExportTableSummary = false;
+options.ExportTableSummary = false;
 var document = sfDataGrid.ExportToPdf(options);
 document.Save("Sample.pdf");
 {% endhighlight %}
 {% highlight vb %}
 Dim options As New PdfExportingOptions()
-Options.ExportTableSummary = False
+options.ExportTableSummary = False
 Dim document = sfDataGrid.ExportToPdf(options)
 document.Save("Sample.pdf")
 {% endhighlight %}
@@ -552,7 +552,7 @@ document.Save("Sample.pdf");
 
 void OnCellExporting(object sender, DataGridCellPdfExportingEventArgs e)
 {
-    // Based on the column mapping name and the cell type, we can change the cell values while exporting to excel.
+    // Based on the column mapping name and the cell type, we can change the cell values while exporting to PDF.
     if (e.CellType == ExportCellType.RecordCell && e.ColumnName == "OrderID")
     {              
         //if the cell value is Odd, "Odd" will be displayed else "Even" will be displayed.
@@ -570,7 +570,7 @@ Dim document = sfDataGrid1.ExportToPdf(options)
 document.Save("Sample.pdf")
 
 Private Sub OnCellExporting(ByVal sender As Object, ByVal e As DataGridCellPdfExportingEventArgs)
-    ' Based on the column mapping name and the cell type, we can change the cell values while exporting to excel.
+    ' Based on the column mapping name and the cell type, we can change the cell values while exporting to PDF.
     If e.CellType = ExportCellType.RecordCell AndAlso e.ColumnName = "OrderID" Then
         'if the cell value is Odd, "Odd" will be displayed else "Even" will be displayed.
         If Convert.ToInt16(e.CellValue) Mod 2 = 0 Then

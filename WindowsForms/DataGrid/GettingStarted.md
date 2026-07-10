@@ -380,7 +380,7 @@ Represents SfDataGrid column that hosts SfNumericTextBox controls in its cells
 </tr>
 <tr>
 <td>
-GridDataTimeColumn
+GridDateTimeColumn
 </td>
 <td>
 Represents SfDataGrid column that hosts SfDateTimeEdit controls in its cells which is used to display and format DateTime values.
