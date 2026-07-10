@@ -7,28 +7,42 @@ control: SfAIAssistView
 documentation: ug
 ---
 
-# OpenAI connection for AI AssistView
+# OpenAI Connection for AI AssistView
 
-This section explains about how to connect the AI AssistView with OpenAI.
+This section explains how to connect the AI AssistView with OpenAI.
 
-## Creating an application with NuGet reference.
+
+## Creating an Application with NuGet Reference
 
 1. Create a [Windows Forms app](https://learn.microsoft.com/en-us/visualstudio/ide/create-csharp-winform-visual-studio?view=visualstudio).
-2. Add reference to [Syncfusion.SfAIAssistView.WinForms](https://www.nuget.org/packages/Syncfusion.SfAIAssistView.WinForms) NuGet. 
+2. Add a reference to the [Syncfusion.SfAIAssistView.WinForms](https://www.nuget.org/packages/Syncfusion.SfAIAssistView.WinForms) NuGet package.
 3. Import the control namespace `Syncfusion.WinForms.AIAssistView` in C# code.
 4. Initialize the [SfAIAssistView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.SfAIAssistView.html) control.
-5. Add reference to [Microsoft Semantic NuGet](https://www.nuget.org/packages/Microsoft.SemanticKernel) NuGet.
+5. Add a reference to the [Microsoft.SemanticKernel](https://www.nuget.org/packages/Microsoft.SemanticKernel) NuGet package.
 
-## Creating the OpenAI view model class.
+## Creating the OpenAI View Model Class
 
-To connect with OpenAI, we need the following details.
-* OPENAI_KEY: A string variable where we should add our valid OpenAI API key.
-* OPENAI_MODEL: A string variable representing the OpenAI language model we want to use.
-* API_ENDPOINT: A string variable representing the URL endpoint of the OpenAI API.
+The following configuration values are required to connect with OpenAI or Azure OpenAI:
+
+- **OpenAIApiKey**: A string variable where you should add your valid OpenAI API key.
+- **OpenAIModel**: A string variable representing the OpenAI language model you want to use.
+- **ApiEndpoint**: A string variable representing the URL endpoint of the OpenAI API. For Azure OpenAI, this is the endpoint of your Azure OpenAI resource (the default value `https://openai.azure.com` is the Azure OpenAI endpoint, not the public OpenAI endpoint).
+
+> **Security Note:** Avoid storing API keys in source code in production. Use environment variables, `secrets.json`, or a secure key vault.
 
 {% tabs %}
 
 {% highlight c# %}
+
+using System;
+using System.Collections.ObjectModel;
+using System.Collections.Specialized;
+using System.ComponentModel;
+using System.Drawing;
+using System.Threading.Tasks;
+using Microsoft.SemanticKernel;
+using Microsoft.SemanticKernel.ChatCompletion;
+using Syncfusion.WinForms.AIAssistView;
 
 public class ViewModel : INotifyPropertyChanged
 {
@@ -111,7 +125,7 @@ public class ViewModel : INotifyPropertyChanged
         service.Initialize();
     }
 
-    private async void Chats_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+    private async void Chats_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
     {
         var item = e.NewItems?[0] as TextMessage;
         if (item == null) return;
@@ -137,24 +151,22 @@ public class ViewModel : INotifyPropertyChanged
         IChatCompletionService gpt;
         Kernel kernel;
 
-        private string OPENAI_KEY = "";// Add a valid OpenAI key here.
-        private string OPENAI_MODEL = "gpt-4o-mini";
-        private string API_ENDPOINT = "https://openai.azure.com";
-
-        public string Response { get; set; }
+        // Add a valid OpenAI key here. Avoid committing this to source control.
+        private const string OpenAIApiKey = "";
+        private const string OpenAIModel = "gpt-4o-mini";
+        private const string ApiEndpoint = "https://openai.azure.com";
 
         public async Task Initialize()
         {
             var builder = Kernel.CreateBuilder();
             builder.AddAzureOpenAIChatCompletion(
-                deploymentName: OPENAI_MODEL,
-                apiKey: OPENAI_KEY,
-                endpoint: API_ENDPOINT                     
+                deploymentName: OpenAIModel,
+                apiKey: OpenAIApiKey,
+                endpoint: ApiEndpoint
             );
 
             kernel = builder.Build();
             gpt = kernel.GetRequiredService<IChatCompletionService>();
-
         }
 
         public async Task NonStreamingChat(string line)
@@ -208,5 +220,14 @@ public partial class Form1 : Form
 
 ![WindowsForms AI AssistView control open ai](aiassistview_images/windowsforms_aiassistview_openai.gif)
 
-N> You can also explore our [WinForms AIAssistView example demos](https://github.com/syncfusion/winforms-demos/tree/master/assistview)
+N> You can also explore our [WinForms AIAssistView example demos](https://github.com/syncfusion/winforms-demos/tree/master/assistview).
+
+## Troubleshooting
+
+| Issue | Possible Cause | Resolution |
+|-------|----------------|------------|
+| `401 Unauthorized` from OpenAI | The API key is empty or invalid. | Verify `OpenAIApiKey` is set to a valid key from the OpenAI/Azure portal. |
+| `Kernel` cannot be created | Missing `Microsoft.SemanticKernel` package reference. | Install the [Microsoft.SemanticKernel](https://www.nuget.org/packages/Microsoft.SemanticKernel) NuGet package. |
+| No bot response is added to `Chats` | The submitted message's `Author.Name` does not match `CurrentUser.Name`. | Ensure the user is bound via `viewModel.CurrentUser = sfAIAssistView1.User;` so the comparison succeeds. |
+| `Image.FromFile` throws `FileNotFoundException` | The bot avatar image is missing at the referenced path. | Add `AI_Assist.png` to the project's `Asset` folder. |
 

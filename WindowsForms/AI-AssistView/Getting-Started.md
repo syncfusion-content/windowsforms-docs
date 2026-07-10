@@ -13,15 +13,17 @@ This section explains the steps required to add the Windows Forms [SfAIAssistVie
 
 ## Assembly Deployment
 
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sfaiassistview) section to get the list of assemblies or [NuGet package](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) needs to be added as reference to use the SfAIAssistView control in any application.
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sfaiassistview) section to get the list of assemblies or [NuGet package](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) that needs to be added as a reference to use the SfAIAssistView control in any application.
+
+**Supported target frameworks:** .NET Framework 4.5.2 and above, or .NET 6.0/7.0/8.0.
 
 ## Creating Application with SfAIAssistView
 
-In this walk through, users will create WinForms application that contains SfAIAssistView control.
+In this walkthrough, users will create a WinForms application that contains the SfAIAssistView control.
 
 ### Creating the Project
 
-Create new Windows Forms Project in Visual Studio to display SfAIAssistView.
+Create a new Windows Forms Project in Visual Studio to display SfAIAssistView.
 
 ### Adding Control via Designer
 
@@ -30,7 +32,7 @@ Windows Forms AI AssistView (SfAIAssistView) control can be added to the applica
 
 ### Adding Control in Code
 
-In order to add control manually, do the below steps,
+In order to add the control manually, do the following steps,
 
 1. Add the required [assembly references](https://help.syncfusion.com/windowsforms/control-dependencies#sfaiassistview) to the project.
 
@@ -68,6 +70,12 @@ Create a simple chat collection as shown in the following code example in a new 
 {% tabs %}
 
 {% highlight c# %} 
+using System;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Threading.Tasks;
+using Syncfusion.WinForms.AIAssistView;
+
 public class ViewModel : INotifyPropertyChanged
 {
      private ObservableCollection<object> chats;
@@ -81,9 +89,9 @@ public class ViewModel : INotifyPropertyChanged
 
      private async void GenerateMessages()
      {
-         this.Chats.Add( new TextMessage { Author = CurrentUser, Text = "What is Windows Forms?" } );        
+         this.Chats.Add( new TextMessage { Author = CurrentUser, Text = "What is Windows Forms?" });        
          await Task.Delay(1000);
-         this.Chats.Add( new TextMessage { Author = new Author { Name = "Bot" }, Text = " Windows Forms (also known as WinForms) is a graphical user interface (GUI) framework developed by Microsoft for building desktop applications for the Windows operating system " });
+         this.Chats.Add( new TextMessage { Author = new Author { Name = "Bot" }, Text = "Windows Forms (also known as WinForms) is a graphical user interface (GUI) framework developed by Microsoft for building desktop applications for the Windows operating system." });
      }
 
      public ObservableCollection<object> Chats
@@ -146,7 +154,7 @@ public partial class Form1 : Form
         SfAIAssistView sfAIAssistView1 = new SfAIAssistView();
         sfAIAssistView1.Location = new System.Drawing.Point(41, 40);
         sfAIAssistView1.Size = new System.Drawing.Size(818, 457);  
-        sfAIAssistView1.Dock= DockStyle.Fill;
+        sfAIAssistView1.Dock = DockStyle.Fill;
         this.Controls.Add(sfAIAssistView1);
 
         sfAIAssistView1.DataBindings.Add("Messages", viewModel, "Chats", true, DataSourceUpdateMode.OnPropertyChanged);
