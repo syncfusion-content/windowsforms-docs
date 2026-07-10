@@ -9,7 +9,7 @@ documentation: ug
 
 # Supported Barcode Types in Windows Forms Barcode
 
-The following table contains the supported types and associated valid characters.
+The following table contains the supported barcode types and the associated valid characters.
 
 <table>
 <tr>
@@ -29,7 +29,7 @@ variable</td></tr>
 {{'[DataMatrix](https://en.wikipedia.org/wiki/Data_Matrix)'| markdownify }}</td><td>
 DataMatrix</td><td>
 All ASCII characters</td><td>
-</td></tr>
+variable</td></tr>
 <tr>
 <td>
 {{'[Code 39](https://en.wikipedia.org/wiki/Code_39)'| markdownify }}</td><td>
@@ -88,6 +88,8 @@ variable</td></tr>
 <td>
 {{'[Code 128C](https://en.wikipedia.org/wiki/Code_128)'| markdownify }}</td><td>
 Code128C</td><td>
-ASCII 00-99(encodes each two digit with one code)</td><td>
+ASCII 00-99 (encodes each two digits with one code)</td><td>
 variable</td></tr>
 </table>
+
+For more information about the available symbol types, refer to the [BarcodeSymbol](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Barcode.BarcodeSymbolType.html) enumeration.
