@@ -1,16 +1,19 @@
 ---
 layout: post
 title: Overview of Syncfusion license registration - Syncfusion
-description: Learn here about how to register Syncfusion Windows Forms license key for Windows Forms application for license validation.
+description: Learn how to register the Syncfusion license key in a Windows Forms application for license validation.
 platform: windowsforms
 control: Essential Studio
 documentation: ug
 ---
 
+# Register Syncfusion license key in a Windows Forms application
 
-# Register Syncfusion License key in Windows Forms application
+To generate or obtain a license key, see [License key generation](https://www.syncfusion.com/account/licensing).
 
-The generated license key is just a string that needs to be registered before any Syncfusion control is initiated. The following code is used to register the license.
+N> **Prerequisites:** Install the Syncfusion Windows Forms NuGet package (for example, `Syncfusion.Licensing.WindowsForms`, or the platform-specific control package that depends on it) from the Syncfusion NuGet feed, and ensure `Syncfusion.Licensing.dll` is referenced in your project. Licensing support is available in Syncfusion Essential Studio version 16.1.0.24 and later.
+
+The generated license key is a string that must be registered before any Syncfusion control is initialized. The `Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense` method takes the license-key string as its only parameter and returns `void`. The following code registers the license.
 
 {% tabs %}
 {% highlight c# %}
@@ -18,14 +21,15 @@ Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY
 {% endhighlight %}
 {% endtabs %}
 
-N> * Place the license key between double quotes.  Also, ensure that Syncfusion.Licensing.dll is referenced in your project where the license key is being registered.
-* Syncfusion license validation is done offline during application execution and does not require internet access.  Apps registered with a Syncfusion license key can be deployed on any system that does not have an internet connection.
+N> * Place the license key between double quotes. Also, ensure that Syncfusion.Licensing.dll is referenced in your project where the license key is being registered (see the package name in the Prerequisites note above).
+* Syncfusion license validation is done offline during application execution and does not require internet access. Apps registered with a Syncfusion license key can be deployed on any system that does not have an internet connection.
+* If the license key is missing or invalid at runtime, a license dialog or warning will appear. For troubleshooting common registration failures, refer to the [Licensing FAQ](https://help.syncfusion.com/windowsforms/licensing/licensing-faq).
 
 I> Syncfusion license keys can be validated during the Continuous Integration (CI) processes to ensure proper licensing and prevent licensing errors during deployment. Refer to the [CI License Validation](https://help.syncfusion.com/windowsforms/licensing/licensing-faq/ci-license-validation) section for detailed instructions on how to implement it.
 
 ### Windows Forms
 
-You can register the licensing code in static void main method before calling **Application.Run()** method in C#. In Visual Basic, register the licensing code in **Application.designer.vb** file constructor.
+You can register the license key in the static void Main method before calling the **Application.Run()** method in C#. In Visual Basic, register the license key in the **Application.Designer.vb** file constructor.
 
 N> * If the **Application.Designer.vb** file is not included by default in the project, it will be generated in the **My Project** folder in your VB project directory.
 * Ensure to register the license key at the beginning of the application's entry point class.
@@ -57,7 +61,7 @@ End Sub
 
 {% endtabs %}
 
-By default, when converting a C# project to a VB project, a program.vb file is generated. If you choose to set the entry point in the program.vb file, it is mandatory to register the license key in the same file.
+By default, when converting a C# project to a VB project, a Program.vb file is generated. If you choose to set the entry point in the Program.vb file, it is mandatory to register the license key in the same file.
 
 {% tabs %}
 {% highlight vb tabtitle="Program.vb" %}
