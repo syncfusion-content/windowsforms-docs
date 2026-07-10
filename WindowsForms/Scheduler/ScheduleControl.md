@@ -9,7 +9,7 @@ documentation: ug
 
 # ScheduleControl in Windows Forms Scheduler (Schedule)
 
-It is a User Control that provides the basic scheduling functionality.
+The ScheduleControl is a User Control that provides the basic scheduling functionality.
 
 ### Properties
 
@@ -45,7 +45,7 @@ Gets the navigation panel.</td></tr>
 <tr>
 <td>
 ScheduleType</td><td>
-Gets or sets whether a daily, weekly or monthly schedule is displayed or not.</td></tr>
+Gets or sets whether a daily, weekly or monthly schedule is displayed.</td></tr>
 </table>
 
 ### Methods
@@ -99,7 +99,7 @@ Occurs when an item is clicked or double-clicked.</td></tr>
 <tr>
 <td>
 ScheduleGridCreated</td><td>
-Lets you either use a derived ScheduleGridControl or subscribe to the events on the ScheduleGridControl.</td></tr>
+Allows you to either use a derived ScheduleGridControl or subscribe to the events on the ScheduleGridControl.</td></tr>
 </table>
 
 ## Caption panel
@@ -112,7 +112,7 @@ It is a panel where you can place additional controls and make them appear adjac
 
 ## Navigation calendar
 
-A GridControl-derived object displays multiple calendars lets you select particular dates or data ranges to be displayed in the ScheduleControl.
+A GridControl-derived object displays multiple calendars and lets you select particular dates or data ranges to be displayed in the ScheduleControl.
 
 ### Properties
 
