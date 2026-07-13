@@ -75,7 +75,7 @@ private void CancelAIRequest()
 
 {% endtabs %}
 
-`CancellationTokenSource` is created and assigned to `ct` when an AI request is started, and the resulting token is passed into the AI service call. The event handler cancels that token when the user clicks Stop.
+`CancellationTokenSource` is created and assigned to `cs` when an AI request is started, and the resulting token is passed into the AI service call. The event handler cancels that token when the user clicks Stop.
 
 ### Wiring Cancellation into an AI Request
 
@@ -151,6 +151,6 @@ sfAIAssistView1.StopRespondingHoldSeconds = 2;
 | Issue | Possible Cause | Resolution |
 |-------|----------------|------------|
 | Clicking Stop does not cancel the request | The AI service call does not accept a `CancellationToken`. | Update the AI service to accept and observe a `CancellationToken` from `CancellationTokenSource`. |
-| `NullReferenceException` when clicking Stop | `ct` was never assigned because the request was never started. | Guard the cancel call with a null check on `ct`, as shown in the example. |
+| `NullReferenceException` when clicking Stop | `cs` was never assigned because the request was never started. | Guard the cancel call with a null check on `cs`, as shown in the example. |
 | The button never appears | `EnableStopResponding` is `false` (default). | Set `sfAIAssistView1.EnableStopResponding = true;` before showing the form. |
 
