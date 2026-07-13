@@ -182,7 +182,7 @@ public class ProductSales
             sales.UnitPrice = sales.Amount / sales.Quantity;
             sales.Date = dates[r.Next(r.Next(dates.GetLength(0) + 1))];
             sales.Product = products[r.Next(r.Next(products.GetLength(0) + 1))];
-            switch ( sales.Country )
+            switch (sales.Country)
             {
                 case "Australia":
                     {
@@ -401,21 +401,3 @@ Me.pivotChart1.EndUpdate()
 {% endtabs %}
 
 You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/GettingStarted-WinForms-PivotChart).
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-' Suspends the painting
-Me.pivotChart1.BeginUpdate()
-
-' do your bulk changes here
-
-' Resumes the painting which is suspended
-Me.pivotChart1.EndUpdate()
-
-{% endhighlight %}
-
-{% endtabs %}
-
-You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/GettingStarted-WinForms-PivotChart)

@@ -59,7 +59,7 @@ this.pivotChart1.ChartControl.PrimaryYAxis.TitleFont = new Font("Arial", 14);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Sets custom title for x-axis.
 Me.pivotChart1.ChartControl.PrimaryXAxis.Title = "x-axis"
@@ -130,7 +130,7 @@ this.chartControl1.PrimaryYAxis.GridLineType.Width = 2F;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Customizes X-Axis Gridlines.
 Me.chartControl1.PrimaryXAxis.GridLineType.BackColor = System.Drawing.Color.Transparent
