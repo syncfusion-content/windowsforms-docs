@@ -307,7 +307,7 @@ calendar.Style.Footer.HoverForeColor = Color.SpringGreen
 
 BackColor, ForeColor, and BorderColor of each date cells in the calendar can be customized. Date cells in the calendar control can be customized by the following style properties:
 
-* CellBackColor: Changes the background color of date clls in the calendar.
+* CellBackColor: Changes the background color of date cells in the calendar.
 * CellForeColor: Changes the foreground color of date cells in the calendar.
 * CellHoverBorderColor: Changes the border color of date cells in the calendar.
 * CellFont: Changes the font that is used to draw the date text of cell in the calendar.
@@ -623,7 +623,7 @@ calendar.ThemeName = "Office2016Black"
 
 {% endtabs %}
 
-![WindowsForms Calendar office2016 black theme](appearance-images/windowsforms-calendar-office2016-black-theme.png)
+![WindowsForms Calendar office2016 black theme](appearance-images/windowsforms-calendar-office2016black.png)
 
 ## Hide trailing dates   
 
