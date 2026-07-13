@@ -9,15 +9,33 @@ documentation: ug
 
 # Register Syncfusion license key in a Windows Forms application
 
-To generate or obtain a license key, see [License key generation](https://www.syncfusion.com/account/licensing).
-
 N> **Prerequisites:** Install the Syncfusion Windows Forms NuGet package (for example, `Syncfusion.Licensing.WindowsForms`, or the platform-specific control package that depends on it) from the Syncfusion NuGet feed, and ensure `Syncfusion.Licensing.dll` is referenced in your project. Licensing support is available in Syncfusion Essential Studio version 16.1.0.24 and later.
 
 The generated license key is a string that must be registered before any Syncfusion control is initialized. The `Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense` method takes the license-key string as its only parameter and returns `void`. The following code registers the license.
 
+**Registering a single license key**
+
 {% tabs %}
 {% highlight c# %}
 Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
+{% endhighlight %}
+{% endtabs %}
+
+**Registering multiple license keys**
+
+You can register multiple license keys using either a comma (,) or a semicolon (;) as the separator between keys.
+
+{% tabs %}
+{% highlight c# %}
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY_1,YOUR LICENSE KEY_2,...");
+{% endhighlight %}
+{% endtabs %}
+
+or
+
+{% tabs %}
+{% highlight c# %}
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY_1;YOUR LICENSE KEY_2;...");
 {% endhighlight %}
 {% endtabs %}
 
