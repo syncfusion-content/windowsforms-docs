@@ -13,11 +13,15 @@ The ScheduleControl provides swipe scrolling and zooming touch support, like the
 
 {% tabs %}
 {% highlight c# %}
-//Enable the touch mode
+using Syncfusion.Windows.Forms.Schedule;
+
+//Enable the touch mode.
 scheduleControl1.EnableTouchMode = true;
 {% endhighlight %}
 {% highlight vb %}
-'Enable the touch mode
+Imports Syncfusion.Windows.Forms.Schedule
+
+'Enable the touch mode.
 scheduleControl1.EnableTouchMode = True
 {% endhighlight %}
 {% endtabs %}

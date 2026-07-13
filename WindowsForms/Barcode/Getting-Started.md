@@ -7,31 +7,29 @@ control: SfBarcode
 documentation: ug
 ---
 # Getting Started with Windows Forms Barcode
-This section provides a quick overview for working with the barcode for WinForms.
+This section provides a quick overview for working with the [Barcode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Barcode.SfBarcode.html) for WinForms.
 
 ## Assembly deployment
-The following assembly reference is required for deploying Barcode.
+The following assembly reference is required for deploying the Barcode.
 
 {% highlight c# %}
-
 Namespace: Syncfusion.Windows.Forms.Barcode
 
 Assembly: Syncfusion.SfBarcode.Windows
+{% endhighlight %}
 
-{% endhighlight  %}
-
-## Creating application with SfBarcode
-In this walk through, users will create WinForms application that contains SfBarcode control.
+## Creating an application with SfBarcode
+In this walkthrough, you will create a WinForms application that contains the [SfBarcode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Barcode.SfBarcode.html) control.
 
 ### Creating the project
-Create new Windows Forms Project in Visual Studio to display SfBarcode.
+Create a new Windows Forms Project in Visual Studio to display the SfBarcode.
 
 ### Adding control via Designer
-SfBarcode control can be added to the application by dragging it from Toolbox and dropping it in Designer. The required assembly references will be added automatically.
-![Getting-Started_img1](Getting-Started_images/Getting-Started_img1.png)
+The SfBarcode control can be added to the application by dragging it from the Toolbox and dropping it in the Designer. The required assembly references will be added automatically.
+![WinForms Barcode designer](Getting-Started_images/Getting-Started_img1.png)
 
 ### Adding control in Code
-In order to add control manually, do the below steps,
+In order to add the control manually, follow the below steps,
 
 1. Add the below required assembly references to the project,
 
@@ -51,7 +49,7 @@ namespace WindowsFormsApplication1
         public Form1()
         {
             InitializeComponent();
-            SfBarcode sfDataGrid1 = new SfBarcode();
+            SfBarcode sfBarcode1 = new SfBarcode();
             sfBarcode1.Text = "http://www.google.com";
             this.Controls.Add(this.sfBarcode1);
         }
@@ -62,15 +60,15 @@ namespace WindowsFormsApplication1
 Imports Syncfusion.Windows.Forms.Barcode
 
 Namespace WindowsFormsApplication1
-	Partial Public Class Form1
-		Inherits Form
-		Public Sub New()
-			InitializeComponent()
-			Dim sfBarcode1 As New SfBarcode()
-			sfBarcode1.Text = "http://www.google.com"
-			Me.Controls.Add(Me.SfBarcode1)
-		End Sub
-	End Class
+    Partial Public Class Form1
+        Inherits Form
+        Public Sub New()
+            InitializeComponent()
+            Dim sfBarcode1 As New SfBarcode()
+            sfBarcode1.Text = "http://www.google.com"
+            Me.Controls.Add(Me.sfBarcode1)
+        End Sub
+    End Class
 End Namespace
 {% endhighlight %}
 {% endtabs %}

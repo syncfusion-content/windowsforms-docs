@@ -9,114 +9,104 @@ documentation: ug
 
 # Sparkline Types in Windows Forms Sparkline
 
-SparkLine control supports three types of Sparklines and the sparkline control must be bound to a data source. It supports a variety of datasource such as DataTable and any component that implements the interface IEnumerable, ICollection, IList. 
+The Sparkline control supports three types of sparklines, and the sparkline control must be bound to a data source by using the [Source](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.SparkLine.html#Syncfusion_Windows_Forms_Chart_SparkLine_Source) property. It supports a variety of data sources such as DataTable and any component that implements the interfaces IEnumerable, ICollection, and IList.
 
 * Line
 * Column
-* WinLoss 
+* WinLoss
 
 ## Drawing Line Sparkline in an Application
 
-The line type of spark line represents a set of data points, connected by a line. 
+The Line type of sparkline represents a set of data points connected by a line. The sparkline type can be changed by using the [Type](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.SparkLine.html#Syncfusion_Windows_Forms_Chart_SparkLine_Type) property.
 
-Refer to the following code samples to draw  the line sparkline.
+Refer to the following code samples to draw the line sparkline.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
-//Set Sparkline points to source property
+//Set Sparkline points to Source property
+this.sparkLine1.Source = new double[] { 30, -20, 80, 20, 40, -50, -30, 70, -40, 50 };
 
-this.sparkLine1.Source =new double[] { 30, -20, 80, 20, 40, -50, -30, 70,    -40, 50 };
-
-//Set line type sparkline
-
+//Set Line type sparkline
 this.sparkLine1.Type = SparkLine.SparkLineType.Line;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-'Set Sparkline points to source property
+'Set Sparkline points to Source property
+Me.sparkLine1.Source = New Double() { 30, -20, 80, 20, 40, -50, -30, 70, -40, 50 }
 
-Me.sparkLine1.Source = New Double() {30, -20, 80, 20, 40, -50,-30, 70, -40, 50}
-
-'Set line type sparkline
-
+'Set Line type sparkline
 Me.sparkLine1.Type = SparkLine.SparkLineType.Line
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Line](SparklineTypes_images/Line.png)
+![WinForms Sparkline line type](SparklineTypes_images/Line.png)
 
 ## Drawing Column Sparkline in an Application
 
-The column type of spark line represents each data point by a column. The vertical column direction represents the negative or positive value.
+The Column type of sparkline represents each data point by a column. The vertical column direction represents the negative or positive value.
+
 Refer to the following code samples to draw the column sparkline:
 
 {% tabs %}
 
 {% highlight c# %}
 
-//Set Sparkline points to source property
+//Set Sparkline points to Source property
+this.sparkLine1.Source = new double[] { 30, -20, 80, 20, 40, -50, -30, 70, -40, 50 };
 
-this.sparkLine1.Source =new double[] { 30, -20, 80, 20, 40, -50, -30, 70,    -40, 50 };
-
-//Set line type sparkline
-
+//Set Column type sparkline
 this.sparkLine1.Type = SparkLine.SparkLineType.Column;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-'Set Sparkline points to source property
+'Set Sparkline points to Source property
+Me.sparkLine1.Source = New Double() { 30, -20, 80, 20, 40, -50, -30, 70, -40, 50 }
 
-Me.sparkLine1.Source = New Double() {30, -20, 80, 20, 40, -50,-30, 70, -40, 50}
-
-'Set line type sparkline
-
-Me.sparkLine1.Type = SparkLine.SparkLineType. Column
+'Set Column type sparkline
+Me.sparkLine1.Type = SparkLine.SparkLineType.Column
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Column](SparklineTypes_images/Column.png)
+![WinForms Sparkline column type](SparklineTypes_images/Column.png)
 
 ## Drawing WinLoss Sparkline in an Application
 
-The WinLoss type of spark line is similar to column type but all columns have equal length for data points.   The vertical column direction represents the negative or positive value.
+The WinLoss type of sparkline is similar to the Column type, but all columns have equal length for data points. The vertical column direction represents the negative or positive value. The [SparkLineType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.SparkLineType.html) enum is used to set the WinLoss type.
+
 Refer to the following code samples to draw the WinLoss sparkline:
 
 {% tabs %}
 
 {% highlight c# %}
 
-//Set Sparkline points to source property
+//Set Sparkline points to Source property
+this.sparkLine1.Source = new double[] { 30, -20, 80, 20, 40, -50, -30, 70, -40, 50 };
 
-this.sparkLine1.Source =new double[] { 30, -20, 80, 20, 40, -50, -30, 70,    -40, 50 };
-
-//Set line type sparkline
-
+//Set WinLoss type sparkline
 this.sparkLine1.Type = SparkLine.SparkLineType.WinLoss;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-'Set Sparkline points to source property
+'Set Sparkline points to Source property
+Me.sparkLine1.Source = New Double() { 30, -20, 80, 20, 40, -50, -30, 70, -40, 50 }
 
-Me.sparkLine1.Source = New Double() {30, -20, 80, 20, 40, -50,-30, 70, -40, 50}
-
-'Set line type sparkline
-
-Me.sparkLine1.Type = SparkLine.SparkLineType. WinLoss
+'Set WinLoss type sparkline
+Me.sparkLine1.Type = SparkLine.SparkLineType.WinLoss
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Winloss](SparklineTypes_images/Winloss.png)
+![WinForms Sparkline WinLoss type](SparklineTypes_images/Winloss.png)
