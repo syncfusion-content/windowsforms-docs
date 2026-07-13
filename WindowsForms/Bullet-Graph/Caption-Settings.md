@@ -10,51 +10,40 @@ documentation: ug
 
 # Caption Settings in Windows Forms Bullet Graph
 
-The Caption for a Bullet Graph specifies a unique label describing the value represented in the BulletGraph. 
+The caption for a Bullet Graph specifies a unique label describing the value represented in the BulletGraph. The caption is set by using the [Caption](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_Caption) property.
 
 {% highlight c# %}
-
-			BulletGraph bullet = new BulletGraph();
-
-            bullet.Dock = DockStyle.Fill;
-
-            bullet.Caption = " Revenue YTD \n $ in thousands";
-
-            bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 3, RangeStroke = Color.LightGray });
-
-            bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeStroke = Color.Gray });
-
-            bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeStroke = Color.DarkGray });                    
-
-            this.Controls.Add(bullet);
-
+BulletGraph bullet = new BulletGraph();
+bullet.Dock = DockStyle.Fill;
+bullet.Caption = " Revenue YTD \n $ in thousands";
+bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 3, RangeStroke = Color.LightGray });
+bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeStroke = Color.Gray });
+bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeStroke = Color.DarkGray });
+this.Controls.Add(bullet);
 {% endhighlight %}
 
-![Features_img3](Features_images/Features_img3.png)
+![WinForms Bullet Graph caption](Features_images/Features_img3.png)
 
 ### Caption Position
 
-The caption in the Bullet Graph is placed at the start or end of the quantitative scale by choosing from one of the two options available in the CaptionPosition property. They are:
+The caption in the Bullet Graph is placed at the start or end of the quantitative scale by choosing from one of the two options available in the [CaptionPosition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_CaptionPosition) property. They are:
 
 * Near (Default)
 * Far
 
 {% highlight c# %}
-
-     BulletGraph bullet = new BulletGraph();
-
-     bullet.Dock = DockStyle.Fill;
-
-     bullet.Caption = " Revenue YTD \n $ in thousands";
-
-     bullet.CaptionPosition = BulletGraphCaptionPosition.Far;            bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 3, RangeStroke = Color.LightGray });
-
-    bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeStroke = Color.Gray });
-
-    bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeStroke = Color.DarkGray });                    
-
-    this.Controls.Add(bullet);
-
+BulletGraph bullet = new BulletGraph();
+bullet.Dock = DockStyle.Fill;
+bullet.Caption = " Revenue YTD \n $ in thousands";
+bullet.CaptionPosition = BulletGraphCaptionPosition.Far;
+bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 3, RangeStroke = Color.LightGray });
+bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeStroke = Color.Gray });
+bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeStroke = Color.DarkGray });
+this.Controls.Add(bullet);
 {% endhighlight %}
 
-![Features_img4](Features_images/Features_img4.png)
+![WinForms Bullet Graph caption position](Features_images/Features_img4.png)
+
+## API reference
+
+* [BulletGraph class](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html)
