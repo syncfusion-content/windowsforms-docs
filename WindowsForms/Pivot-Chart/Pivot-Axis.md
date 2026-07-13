@@ -14,9 +14,9 @@ Axis is used to locate data points in the chart area. Generally, two axes are re
 * Vertical axis (y-Axis).
 * Horizontal axis (x-Axis).
 
-By default, horizontal axis (PrimaryXAxis) and vertical axis (PrimaryYAxis) are added to the pivot chart with axis labels, grid lines, and tick lines. You can customize the axis explicitly by adding axis title or removing grid lines and tick lines that are added to the axis. The following screenshot displays the _PivotChart with Axis_
+By default, the horizontal axis (PrimaryXAxis) and vertical axis (PrimaryYAxis) are added to the pivot chart with axis labels, grid lines, and tick lines. You can customize the axis explicitly by adding an axis title or removing grid lines and tick lines that are added to the axis. The following screenshot displays the _PivotChart with Axis_.
 
-![PivotAxes_image3](Pivot-Axis_images/PivotAxes_image3.png)
+![WinForms PivotChart with axis](Pivot-Axis_images/PivotAxes_image3.png)
 
 ## Axis title
 
@@ -59,7 +59,7 @@ this.pivotChart1.ChartControl.PrimaryYAxis.TitleFont = new Font("Arial", 14);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Sets custom title for x-axis.
 Me.pivotChart1.ChartControl.PrimaryXAxis.Title = "x-axis"
@@ -75,7 +75,7 @@ Me.pivotChart1.ChartControl.PrimaryYAxis.TitleFont = New Font("Arial", 14)
 
 {% endtabs %}
 
-![PivotAxes_image1](Pivot-Axis_images/PivotAxes_image1.png)
+![WinForms PivotChart with axis title](Pivot-Axis_images/PivotAxes_image1.png)
 
 *PivotChart displays the axis with title*
 
@@ -130,7 +130,7 @@ this.chartControl1.PrimaryYAxis.GridLineType.Width = 2F;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Customizes X-Axis Gridlines.
 Me.chartControl1.PrimaryXAxis.GridLineType.BackColor = System.Drawing.Color.Transparent
@@ -148,13 +148,13 @@ Me.chartControl1.PrimaryYAxis.GridLineType.Width = 2F
 
 {% endtabs %}
 
-![PivotAxes_image2](Pivot-Axis_images/PivotAxes_image2.png)
+![WinForms PivotChart with customized grid line style](Pivot-Axis_images/PivotAxes_image2.png)
 
 *PivotChart with customized style*
 
 ## Show/Hide axis
 
-The visibility of axis in the pivot chart can be toggled by setting the `IsVisible` property. The following code snippet shows how to hide both the axes of the pivot chart.
+The visibility of the axis in the pivot chart can be toggled by setting the [IsVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html) property. The following code snippet shows how to hide both the axes of the pivot chart.
 
 {% tabs %}
 
@@ -174,7 +174,7 @@ Me.pivotChart1.ChartControl.PrimaryYAxis.IsVisible = False
 
 {% endtabs %}
 
-![PivotAxes_image4](Pivot-Axis_images/PivotAxes_image4.png)
+![WinForms PivotChart without axis](Pivot-Axis_images/PivotAxes_image4.png)
 
 _PivotChart without axis_
 
