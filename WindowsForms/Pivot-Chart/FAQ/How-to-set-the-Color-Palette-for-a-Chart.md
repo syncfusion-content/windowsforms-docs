@@ -9,21 +9,22 @@ documentation: ug
 
 # How to set the Color Palette for a Chart
 
-Custom color Palette can be specified in PivotChart by using the CustomPalette color collection.
+A custom color palette can be specified in the PivotChart by using the [CustomPalette](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_CustomPalette) color collection.
 
-{% highlight C# %}
+{% tabs %}
 
+{% highlight c# %}
 
+//Specifies a custom color.
+this.pivotChart1.CustomPalette = new System.Drawing.Color[] { System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(203)))), ((int)(((byte)(216))))), System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(209)))), ((int)(((byte)(248))))), System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(155)))), ((int)(((byte)(155))))) };
 
- 
-// Specifies a custom color.
-this.pivotChart1.CustomPalette = new System.Drawing.Color[] {System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(203)))), ((int)(((byte)(216))))),System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(209)))), ((int)(((byte)(248))))),System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))))};
 {% endhighlight %}
 
+{% highlight vb %}
 
-{% highlight vbnet %}
-
- 
 'Specifies a custom color.
 Me.pivotChart1.CustomPalette = New System.Drawing.Color() {System.Drawing.Color.FromArgb(CInt(CByte(255)), CInt(CByte(203)), CInt(CByte(216))), System.Drawing.Color.FromArgb(CInt(CByte(222)), CInt(CByte(209)), CInt(CByte(248))), System.Drawing.Color.FromArgb(CInt(CByte(250)), CInt(CByte(155)), CInt(CByte(155)))}
+
 {% endhighlight %}
+
+{% endtabs %}

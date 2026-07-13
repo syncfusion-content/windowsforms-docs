@@ -18,19 +18,19 @@ The grouping bar splits the pivot item collection and presents the data in an in
 
 ## Axis field section
 
-This section allows you to display the collection of FieldHeader values of PivotItems from *PivotAxis* and items placed at the bottom of the chart area.
+This section allows you to display the collection of FieldHeader values of PivotItems from [PivotAxis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_PivotAxis) and items placed at the bottom of the chart area.
 
 ## Legend field section
 
-This section allows you to display the collection of FieldHeader values of PivotItems from *PivotLegend* and items placed in-between the filter field section and the chart area.
+This section allows you to display the collection of FieldHeader values of PivotItems from [PivotLegend](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_PivotLegend) and items placed in-between the filter field section and the chart area.
 
 ## Value field section
 
-This section allows you to display the collection of FieldHeader values of PivotComputationInfo from *PivotCalculations* and items placed in-between the filter field section and the chart area.
+This section allows you to display the collection of FieldHeader values of PivotComputationInfo from [PivotCalculations](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_PivotCalculations) and items placed in-between the filter field section and the chart area.
 
 ## Filter field section
 
-This section allows you to display the collection of DimensionHeader values of filter expression from *PivotFilters* and items placed at the top of the chart area.
+This section allows you to display the collection of DimensionHeader values of filter expression from [PivotFilters](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_PivotFilters) and items placed at the top of the chart area.
 
 ## Defining grouping bar
 
@@ -58,7 +58,7 @@ Me.pivotChart1.FilterFieldSection.Visible = True
 
 {% endtabs %}
 
-![Windows forms pivotchart displays chart with grouping bar](Grouping-Bar_images/GroupingBar_image1.png)
+![WinForms PivotChart with grouping bar](Grouping-Bar_images/GroupingBar_image1.png)
 
 _PivotChart with grouping bar_
 
@@ -108,7 +108,7 @@ Me.pivotChart1.AxisFieldSection.BackInterior = Color.SkyBlue
 
 {% endtabs %}
 
-![Windows forms pivotchart displays colors applied to grouping bar](Grouping-Bar_images/GroupingBar_image2.png)
+![WinForms PivotChart with customized grouping bar](Grouping-Bar_images/GroupingBar_image2.png)
 
 _PivotChart with customized grouping bar_
 
