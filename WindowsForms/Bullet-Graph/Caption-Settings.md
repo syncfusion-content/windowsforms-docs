@@ -22,6 +22,16 @@ bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeStroke
 this.Controls.Add(bullet);
 {% endhighlight %}
 
+{% highlight vbnet %}
+Dim bullet As New BulletGraph()
+bullet.Dock = DockStyle.Fill
+bullet.Caption = " Revenue YTD " & Environment.NewLine & " $ in thousands"
+bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 3, .RangeStroke = Color.LightGray})
+bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 7, .RangeStroke = Color.Gray})
+bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 10, .RangeStroke = Color.DarkGray})
+Me.Controls.Add(bullet)
+{% endhighlight %}
+
 ![WinForms Bullet Graph caption](Features_images/Features_img3.png)
 
 ### Caption Position
@@ -40,6 +50,17 @@ bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 3, RangeStroke 
 bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeStroke = Color.Gray });
 bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeStroke = Color.DarkGray });
 this.Controls.Add(bullet);
+{% endhighlight %}
+
+{% highlight vbnet %}
+Dim bullet As New BulletGraph()
+bullet.Dock = DockStyle.Fill
+bullet.Caption = " Revenue YTD " & Environment.NewLine & " $ in thousands"
+bullet.CaptionPosition = BulletGraphCaptionPosition.Far
+bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 3, .RangeStroke = Color.LightGray})
+bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 7, .RangeStroke = Color.Gray})
+bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 10, .RangeStroke = Color.DarkGray})
+Me.Controls.Add(bullet)
 {% endhighlight %}
 
 ![WinForms Bullet Graph caption position](Features_images/Features_img4.png)

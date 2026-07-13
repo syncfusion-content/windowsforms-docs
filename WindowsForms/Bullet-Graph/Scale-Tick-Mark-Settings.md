@@ -35,6 +35,23 @@ bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeCaptio
 this.Controls.Add(bullet);
 {% endhighlight %}
 
+{% highlight vbnet %}
+Dim bullet As New BulletGraph()
+bullet.Dock = DockStyle.Fill
+bullet.FeaturedMeasure = 4.5
+bullet.ComparativeMeasure = 7
+bullet.MajorTickStroke = Color.Black
+bullet.MajorTickSize = 15
+bullet.MinorTickSize = 10
+bullet.MajorTickStroke = Color.Red
+bullet.MinorTickStroke = Color.Green
+bullet.MinorTicksPerInterval = 3
+bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 4, .RangeCaption = "Bad", .RangeStroke = Color.Red})
+bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 7, .RangeCaption = "Satisfactory", .RangeStroke = Color.Yellow})
+bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 10, .RangeCaption = "Good", .RangeStroke = Color.Green})
+Me.Controls.Add(bullet)
+{% endhighlight %}
+
 ![WinForms Bullet Graph tick customization](Features_images/Features_img9.png)
 
 ### TickPosition:
@@ -59,6 +76,20 @@ bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 4, RangeCaption
 bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeCaption = "Satisfactory", RangeStroke = Color.Yellow });
 bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeCaption = "Good", RangeStroke = Color.Green });
 this.Controls.Add(bullet);
+{% endhighlight %}
+
+{% highlight vbnet %}
+Dim bullet As New BulletGraph()
+bullet.Dock = DockStyle.Fill
+bullet.ComparativeMeasure = 7
+bullet.TickPosition = BulletGraphTicksPosition.Cross
+bullet.MajorTickSize = 30
+bullet.MinorTickSize = 30
+bullet.MinorTicksPerInterval = 3
+bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 4, .RangeCaption = "Bad", .RangeStroke = Color.Red})
+bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 7, .RangeCaption = "Satisfactory", .RangeStroke = Color.Yellow})
+bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 10, .RangeCaption = "Good", .RangeStroke = Color.Green})
+Me.Controls.Add(bullet)
 {% endhighlight %}
 
 ![WinForms Bullet Graph tick position](Features_images/Features_img10.png)

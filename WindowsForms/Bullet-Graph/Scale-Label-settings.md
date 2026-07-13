@@ -34,6 +34,22 @@ bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeCaptio
 this.Controls.Add(bullet);
 {% endhighlight %}
 
+{% highlight vbnet %}
+Dim bullet As New BulletGraph()
+bullet.Dock = DockStyle.Fill
+bullet.FeaturedMeasure = 5
+bullet.ComparativeMeasure = 7
+bullet.LabelOffset = 5
+bullet.LabelFontSize = 10
+bullet.LabelFormat = "#0 K"
+bullet.LabelStroke = Color.Red
+bullet.MinorTicksPerInterval = 3
+bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 4, .RangeCaption = "Bad", .RangeStroke = Color.Red})
+bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 7, .RangeCaption = "Satisfactory", .RangeStroke = Color.Yellow})
+bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 10, .RangeCaption = "Good", .RangeStroke = Color.Green})
+Me.Controls.Add(bullet)
+{% endhighlight %}
+
 ![WinForms Bullet Graph label customization](Features_images/Features_img11.png)
 
 ### Label Position
@@ -54,6 +70,19 @@ bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 4, RangeCaption
 bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeCaption = "Satisfactory", RangeStroke = Color.Yellow });
 bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeCaption = "Good", RangeStroke = Color.Green });
 this.Controls.Add(bullet);
+{% endhighlight %}
+
+{% highlight vbnet %}
+Dim bullet As New BulletGraph()
+bullet.Dock = DockStyle.Fill
+bullet.FeaturedMeasure = 5
+bullet.ComparativeMeasure = 7
+bullet.LabelPosition = BulletGraphLabelsPosition.Above
+bullet.MinorTicksPerInterval = 3
+bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 4, .RangeCaption = "Bad", .RangeStroke = Color.Red})
+bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 7, .RangeCaption = "Satisfactory", .RangeStroke = Color.Yellow})
+bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 10, .RangeCaption = "Good", .RangeStroke = Color.Green})
+Me.Controls.Add(bullet)
 {% endhighlight %}
 
 ![WinForms Bullet Graph label position](Features_images/Features_img12.png)

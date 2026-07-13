@@ -62,6 +62,26 @@ Namespace: Syncfusion.Windows.Forms.BulletGraph
    this.Controls.Add(bullet);
    {% endhighlight %}
 
+   {% highlight vbnet %}
+   Dim bullet As New BulletGraph()
+   bullet.Dock = DockStyle.Fill
+   bullet.FlowDirection = BulletGraphFlowDirection.Forward
+   bullet.Orientation = Orientation.Horizontal
+   bullet.FeaturedMeasure = 4.5
+   bullet.ComparativeMeasure = 7
+   bullet.LabelFontSize = 10
+   bullet.LabelStroke = Color.Black
+   bullet.MajorTickStroke = Color.Black
+   bullet.Minimum = 0
+   bullet.Maximum = 10
+   bullet.Interval = 2
+   bullet.MinorTicksPerInterval = 3
+   bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 4, .RangeCaption = "Bad", .RangeStroke = Color.Red})
+   bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 7, .RangeCaption = "Satisfactory", .RangeStroke = Color.Yellow})
+   bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 10, .RangeCaption = "Good", .RangeStroke = Color.Green})
+   Me.Controls.Add(bullet)
+   {% endhighlight %}
+
 4. Run the application to view the Bullet Graph.
 
    ![WinForms Bullet Graph control output](Getting-Started_images/Getting-Started_img2.png)
@@ -112,6 +132,26 @@ To add a Bullet Graph control, refer to the following steps:
    bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeCaption = "Satisfactory", RangeStroke = Color.Yellow });
    bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeCaption = "Good", RangeStroke = Color.Green });
    this.Controls.Add(bullet);
+   {% endhighlight %}
+
+   {% highlight vbnet %}
+   Dim bullet As New BulletGraph()
+   bullet.Dock = DockStyle.Fill
+   bullet.FlowDirection = BulletGraphFlowDirection.Forward
+   bullet.Orientation = Orientation.Horizontal
+   bullet.FeaturedMeasure = 4.5
+   bullet.ComparativeMeasure = 7
+   bullet.LabelFontSize = 10
+   bullet.LabelStroke = Color.Black
+   bullet.MajorTickStroke = Color.Black
+   bullet.Minimum = 0
+   bullet.Maximum = 10
+   bullet.Interval = 2
+   bullet.MinorTicksPerInterval = 3
+   bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 4, .RangeCaption = "Bad", .RangeStroke = Color.Red})
+   bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 7, .RangeCaption = "Satisfactory", .RangeStroke = Color.Yellow})
+   bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 10, .RangeCaption = "Good", .RangeStroke = Color.Green})
+   Me.Controls.Add(bullet)
    {% endhighlight %}
 
 7. The simple Bullet Graph control is created as shown in the following screenshot.

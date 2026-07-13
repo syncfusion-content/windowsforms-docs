@@ -27,6 +27,18 @@ bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeCaptio
 this.Controls.Add(bullet);
 {% endhighlight %}
 
+{% highlight vbnet %}
+Dim bullet As New BulletGraph()
+bullet.Dock = DockStyle.Fill
+bullet.FeaturedMeasure = 4.5
+bullet.ComparativeMeasure = 7
+bullet.MinorTicksPerInterval = 3
+bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 4, .RangeCaption = "Bad", .RangeStroke = Color.Red})
+bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 7, .RangeCaption = "Satisfactory", .RangeStroke = Color.Yellow})
+bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 10, .RangeCaption = "Good", .RangeStroke = Color.Green})
+Me.Controls.Add(bullet)
+{% endhighlight %}
+
 ![WinForms Bullet Graph range customization](Features_images/Features_img7.png)
 
 ### Binding RangeStroke to Ticks and Labels:
@@ -46,6 +58,21 @@ bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeCaptio
 bullet.BindRangeStrokeToTicks = true;
 bullet.BindRangeStrokeToLabels = true;
 this.Controls.Add(bullet);
+{% endhighlight %}
+
+{% highlight vbnet %}
+Dim bullet As New BulletGraph()
+bullet.Dock = DockStyle.Fill
+bullet.FeaturedMeasure = 4.5
+bullet.ComparativeMeasure = 7
+bullet.MajorTickStroke = Color.Black
+bullet.MinorTicksPerInterval = 3
+bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 4, .RangeCaption = "Bad", .RangeStroke = Color.Red})
+bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 7, .RangeCaption = "Satisfactory", .RangeStroke = Color.Yellow})
+bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 10, .RangeCaption = "Good", .RangeStroke = Color.Green})
+bullet.BindRangeStrokeToTicks = True
+bullet.BindRangeStrokeToLabels = True
+Me.Controls.Add(bullet)
 {% endhighlight %}
 
 ![WinForms Bullet Graph range stroke to ticks and labels](Features_images/Features_img8.png)
