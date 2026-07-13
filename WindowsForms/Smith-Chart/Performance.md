@@ -13,7 +13,7 @@ The performance of the SfSmithChart can be improved by using the following metho
 
 ## Begin update and end update
 
-Encapsulate your "data points" adding code within `BeginUpdate` and `EndUpdate` method which allows you to stop the continuous update of control and resume it finally.
+Encapsulate your "data points" adding code within [`BeginUpdate`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.SmithChart.SfSmithChart.html#Syncfusion_WinForms_SmithChart_SfSmithChart_BeginUpdate) and [`EndUpdate`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.SmithChart.SfSmithChart.html#Syncfusion_WinForms_SmithChart_SfSmithChart_EndUpdate) methods which allow you to stop the continuous update of control and resume it finally.
 
 <table>
 <tr>
@@ -33,39 +33,35 @@ Resumes the painting of the control suspended by BeginUpdate method.</td></tr>
 {% tabs %}
 
 {% highlight c# %}
-
 this.sfSmithChart.BeginUpdate();
 
-   //Add more points here
-   LineSeries lineSeries = sfSmithChart.Series[0] as LineSeries;
-   Random random = new Random();
-   for (int i = 0; i < 100; i++)
-   {
-      double val = random.Next(0, 5);
-      double val1 = random.Next(-5, 5);
-      lineSeries.Points.Add(val, val1);
-   }
+//Add more points here
+LineSeries lineSeries = sfSmithChart.Series[0] as LineSeries;
+Random random = new Random();
+for (int i = 0; i < 100; i++)
+{
+    double val = random.Next(0, 5);
+    double val1 = random.Next(-5, 5);
+    lineSeries.Points.Add(val, val1);
+}
 
 this.sfSmithChart.EndUpdate();
-
 {% endhighlight %}
 
-{% highlight vb %}
-
+{% highlight vb.net %}
 Me.sfSmithChart.BeginUpdate()
 
-    ' Add more points here
-    Dim lineSeries As LineSeries = TryCast(sfSmithChart.Series(0), LineSeries)
-    Dim random As Random = New Random()
+' Add more points here
+Dim lineSeries As LineSeries = TryCast(sfSmithChart.Series(0), LineSeries)
+Dim random As Random = New Random()
 
-    For i As Integer = 0 To 100 - 1
-        Dim val As Double = random.[Next](0, 5)
-        Dim val1 As Double = random.[Next](-5, 5)
-        lineSeries.Points.Add(val, val1)
-    Next
+For i As Integer = 0 To 100 - 1
+    Dim val As Double = random.[Next](0, 5)
+    Dim val1 As Double = random.[Next](-5, 5)
+    lineSeries.Points.Add(val, val1)
+Next
 
 Me.sfSmithChart.EndUpdate()
-
 {% endhighlight %}
 
 {% endtabs %}

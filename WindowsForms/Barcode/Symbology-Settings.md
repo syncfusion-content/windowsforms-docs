@@ -2,112 +2,96 @@
 layout: post
 title: Symbology settings in Windows Forms Barcode control | Syncfusion
 description: Learn about Symbology settings support in Syncfusion Windows Forms Barcode control and more details.
-platform: wpf
+platform: windowsforms
 control: SfBarcode
 documentation: ug
 ---
 
 # Symbology settings in Windows Forms Barcode
 
-Each Barcode symbol can be associated with optional settings that may affect that specific bar code. The code sample below shows the settings of a code39 Barcode.
+Each barcode symbol can be associated with optional settings that may affect that specific barcode. The code sample below shows the settings of a Code39 barcode.
 
 {% tabs %}
 {% highlight c# %}
-
 Code39Setting code39Settings = new Code39Setting();
 code39Settings.BarHeight = 100;
 this.sfBarcode1.SymbologySettings = code39Settings;
-
-{% endhighlight  %}
+{% endhighlight %}
 {% highlight vb %}
-
 Dim code39Settings As New Code39Setting()
 code39Settings.BarHeight = 100
 sfBarcode1.SymbologySettings = code39Settings
-
-{% endhighlight  %}
+{% endhighlight %}
 {% endtabs %}
 
 ## 1D Barcode settings
 
-The one dimensional barcodes have some of the settings in common, such as BarHeight which modifies the height of the bars and NarrowBarWidth which modifies the width ratio of the wide and narrow bars.
+The one-dimensional barcodes have some settings in common, such as [BarHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Barcode.Barcode1DSetting.html#Syncfusion_Windows_Forms_Barcode_Barcode1DSetting_BarHeight) which modifies the height of the bars and [NarrowBarWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Barcode.Barcode1DSetting.html#Syncfusion_Windows_Forms_Barcode_Barcode1DSetting_NarrowBarWidth) which modifies the width ratio of the wide and narrow bars.
 
 {% tabs %}
 {% highlight c# %}
-
 Code39Setting code39Settings = new Code39Setting();
 code39Settings.BarHeight = 100;
 code39Settings.NarrowBarWidth = 1;
 this.sfBarcode1.SymbologySettings = code39Settings;
-
-{% endhighlight  %}
+{% endhighlight %}
 {% highlight vb %}
-
 Dim code39Settings As New Code39Setting()
 code39Settings.BarHeight = 100
 code39Settings.NarrowBarWidth = 1
 sfBarcode1.SymbologySettings = code39Settings
-
-{% endhighlight  %}
+{% endhighlight %}
 {% endtabs %}
 
-The one dimensional barcodes also has the error detection settings. The EnableCheckDigit property enables the redundancy check using a check digit, the decimal equivalent of a binary parity bit. It consists of a single digit computed from the other digits in the message. The check digit can be shown in the barcode or kept hidden by using the ShowCheckDigit property.
+The one-dimensional barcodes also have error detection settings. The [EnableCheckDigit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Barcode.Barcode1DSetting.html#Syncfusion_Windows_Forms_Barcode_Barcode1DSetting_EnableCheckDigit) property enables the redundancy check using a check digit, the decimal equivalent of a binary parity bit. It consists of a single digit computed from the other digits in the message. The check digit can be shown in the barcode or kept hidden by using the [ShowCheckDigit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Barcode.Barcode1DSetting.html#Syncfusion_Windows_Forms_Barcode_Barcode1DSetting_ShowCheckDigit) property.
 
-The EncodeStartStopSymbols property adds Start and Stop symbols to signal a bar code reader that a bar code has been scanned.
+The [EncodeStartStopSymbols](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Barcode.Barcode1DSetting.html#Syncfusion_Windows_Forms_Barcode_Barcode1DSetting_EncodeStartStopSymbols) property adds Start and Stop symbols to signal a barcode reader that a barcode has been scanned.
 
 {% tabs %}
 {% highlight c# %}
-
 Code39Setting code39Settings = new Code39Setting();
 code39Settings.EnableCheckDigit = false;
 code39Settings.ShowCheckDigit = false;
 code39Settings.EncodeStartStopSymbols = true;
 this.sfBarcode1.SymbologySettings = code39Settings;
-
 {% endhighlight %}
 {% highlight vb %}
-
 Dim code39Settings As New Code39Setting()
 code39Settings.EnableCheckDigit = false
 code39Settings.ShowCheckDigit = false
 code39Settings.EncodeStartStopSymbols = true
 sfBarcode1.SymbologySettings = code39Settings
-
 {% endhighlight %}
 {% endtabs %}
 
 ## 2D Barcode Settings
 
-The two dimensional barcodes have a common XDimension property which modifies the block size of a two dimensional barcode.
+The two-dimensional barcodes have a common [XDimension](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Barcode.Barcode2DSetting.html#Syncfusion_Windows_Forms_Barcode_Barcode2DSetting_XDimension) property which modifies the block size of a two-dimensional barcode.
 
 ### DataMatrix Barcode settings
 
-The DataMatrix barcode settings has the properties to modify the encoding and size of the DataMatrix barcode.
+The [DataMatrixSetting](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Barcode.DataMatrixSetting.html) has properties to modify the encoding and size of the DataMatrix barcode.
 
 {% tabs %}
 {% highlight c# %}
-
 DataMatrixSetting barcodeSettings = new DataMatrixSetting();
 barcodeSettings.XDimension = 8;
 barcodeSettings.Encoding = DataMatrixEncoding.ASCII;
 barcodeSettings.Size = DataMatrixSize.Size10x10;
 this.sfBarcode1.SymbologySettings = barcodeSettings;
-
-{% endhighlight  %}
+{% endhighlight %}
 {% highlight vb %}
-
 Dim barcodeSettings As New DataMatrixSetting()
 barcodeSettings.XDimension = 8
 barcodeSettings.Encoding = DataMatrixEncoding.ASCII
 barcodeSettings.Size = DataMatrixSize.Size10x10
 sfBarcode1.SymbologySettings = barcodeSettings
-
-{% endhighlight  %}
+{% endhighlight %}
 {% endtabs %}
 
 ### Encoding
 
-The encoding of the DataMatrix barcode can be modified using the ‘Encoding’ property. The DataMatrixEncoding enumeration has the following four encoding schemes.
+The encoding of the DataMatrix barcode can be modified using the [Encoding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Barcode.DataMatrixSetting.html#Syncfusion_Windows_Forms_Barcode_DataMatrixSetting_Encoding) property. The [DataMatrixEncoding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Barcode.DataMatrixEncoding.html) enumeration has the following four encoding schemes.
 
 * ASCII
 * ASCIINumeric
@@ -116,7 +100,7 @@ The encoding of the DataMatrix barcode can be modified using the ‘Encoding’ 
 
 ### Size
 
-The DataMatrix Barcode settings allow the user to specify the size of the barcode from a set of predefined sizes available in the DataMatrixSize enumeration.
+The DataMatrix Barcode settings allow the user to specify the size of the barcode from a set of predefined sizes available in the [DataMatrixSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Barcode.DataMatrixSize.html) enumeration.
 
 Data Matrix size Table
 
@@ -251,42 +235,36 @@ Size16x48</td><td>
 Rectangular matrix with 16 rows and 48 columns.</td></tr>
 </table>
 
-
 ### QRBarcode settings
 
-The QRBarcode settings has properties to modify the version, error correction level and Input mode of the QRBarcode.
+The [QRBarcodeSetting](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Barcode.QRBarcodeSetting.html) has properties to modify the version, error correction level, and input mode of the QRBarcode.
 
 {% tabs %}
 {% highlight c# %}
-
 QRBarcodeSetting qrSettings = new QRBarcodeSetting();
 qrSettings.XDimension = 8;
 qrSettings.ErrorCorrectionLevel = ErrorCorrectionLevel.High;
 qrSettings.InputMode = QRInputMode.BinaryMode;
 qrSettings.Version = QRBarcodeVersion.Version04;
 this.sfBarcode1.SymbologySettings = qrSettings;
-
-{% endhighlight  %}
+{% endhighlight %}
 {% highlight vb %}
-
 Dim qrSettings As New QRBarcodeSetting()
 qrSettings.XDimension = 8
 qrSettings.ErrorCorrectionLevel = ErrorCorrectionLevel.High
 qrSettings.InputMode = QRInputMode.BinaryMode
 qrSettings.Version = QRBarcodeVersion.Version04
 sfBarcode1.SymbologySettings = qrSettings
-
-{% endhighlight  %}
+{% endhighlight %}
 {% endtabs %}
 
+### Version
 
-## Version
+The QR Barcode uses versions from 1 to 40. Version 1 measures 21 modules x 21 modules, Version 2 measures 25 modules x 25 modules, and so on, increasing in steps of 4 modules per side up to Version 40 which measures 177 modules x 177 modules. Each version has its own capacity. By default, the QR Version is Auto, which will automatically set the version according to the input text length.
 
-The QR Barcode uses version from 1 to 40.Version 1 measures 21 modules x 21 modules, Version 2 measures 25 modules x 25 modules and so on increasing in steps of 4 modules per side up to Version 40 which measures 177 modules x 177 modules. Each version has its own capacity.  By default the QR Version is Auto, which will automatically set the version according to the input text length.
+### Error correction level
 
-## Error correction level
-
-The QR Barcode employs error correction to generate a series of error correction codewords which are added to the data code word sequence in order to enable the symbol to withstand damage without loss of data. There are four user–selectable levels of error correction, as shown in the table, offering the capability of recovery from the following amounts of damage. By default the Error correction level is Low.
+The QR Barcode employs error correction to generate a series of error correction codewords which are added to the data codeword sequence in order to enable the symbol to withstand damage without loss of data. There are four user-selectable levels of error correction, as shown in the table, offering the capability of recovery from the following amounts of damage. By default, the error correction level is Low.
 
 Error Correction Level Table
 
@@ -313,9 +291,9 @@ H</td><td>
 30</td></tr>
 </table>
 
-## Input mode
+### Input mode
 
-There are three modes for the input as defined in the table. Each mode supports the specific set of Input characters. User may select the most suitable input mode. By default the Input mode is Binary Mode.
+There are three modes for the input as defined in the table. Each mode supports a specific set of input characters. You may select the most suitable input mode. By default, the input mode is Binary Mode.
 
 Input Mode Table
 
