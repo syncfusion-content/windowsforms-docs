@@ -18,6 +18,7 @@ A quantitative scale label specifies the numeric value according to the major ti
 
 The label's offset is changed by using the [LabelOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_LabelOffset) property. The foreground of the label is customized by setting [LabelStroke](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_LabelStroke). By setting the [LabelFontSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_LabelFontSize) property, the font size of the labels is modified.
 
+{% tabs %}
 {% highlight c# %}
 BulletGraph bullet = new BulletGraph();
 bullet.Dock = DockStyle.Fill;
@@ -49,6 +50,7 @@ bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 7, .RangeC
 bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 10, .RangeCaption = "Good", .RangeStroke = Color.Green})
 Me.Controls.Add(bullet)
 {% endhighlight %}
+{% endtabs %}
 
 ![WinForms Bullet Graph label customization](Features_images/Features_img11.png)
 
@@ -59,6 +61,7 @@ The labels in the scale are placed above or below the qualitative ranges by choo
 * Below (Default)
 * Above
 
+{% tabs %}
 {% highlight c# %}
 BulletGraph bullet = new BulletGraph();
 bullet.Dock = DockStyle.Fill;
@@ -84,6 +87,7 @@ bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 7, .RangeC
 bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 10, .RangeCaption = "Good", .RangeStroke = Color.Green})
 Me.Controls.Add(bullet)
 {% endhighlight %}
+{% endtabs %}
 
 ![WinForms Bullet Graph label position](Features_images/Features_img12.png)
 

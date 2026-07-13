@@ -11,6 +11,7 @@ documentation: ug
 
 The view of the Bullet Graph is changed by setting the [Orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_Orientation) property. The quantitative scale contains two major components: ticks and labels. The length of the quantitative scale is customized by using the [QuantitativeScaleLength](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_QuantitativeScaleLength) property. The direction of the quantitative scale is customized by using the [FlowDirection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_FlowDirection) property. It is either Forward or Backward.
 
+{% tabs %}
 {% highlight c# %}
 BulletGraph bullet = new BulletGraph();
 bullet.Dock = DockStyle.Fill;
@@ -32,6 +33,7 @@ bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 7, .RangeS
 bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 10, .RangeStroke = Color.DarkGray})
 Me.Controls.Add(bullet)
 {% endhighlight %}
+{% endtabs %}
 
 <table>
 <tr>

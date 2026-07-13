@@ -12,6 +12,7 @@ documentation: ug
 
 The caption for a Bullet Graph specifies a unique label describing the value represented in the BulletGraph. The caption is set by using the [Caption](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_Caption) property.
 
+{% tabs %}
 {% highlight c# %}
 BulletGraph bullet = new BulletGraph();
 bullet.Dock = DockStyle.Fill;
@@ -31,6 +32,7 @@ bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 7, .RangeS
 bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 10, .RangeStroke = Color.DarkGray})
 Me.Controls.Add(bullet)
 {% endhighlight %}
+{% endtabs %}
 
 ![WinForms Bullet Graph caption](Features_images/Features_img3.png)
 
@@ -41,6 +43,7 @@ The caption in the Bullet Graph is placed at the start or end of the quantitativ
 * Near (Default)
 * Far
 
+{% tabs %}
 {% highlight c# %}
 BulletGraph bullet = new BulletGraph();
 bullet.Dock = DockStyle.Fill;
@@ -62,9 +65,7 @@ bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 7, .RangeS
 bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 10, .RangeStroke = Color.DarkGray})
 Me.Controls.Add(bullet)
 {% endhighlight %}
+{% endtabs %}
 
 ![WinForms Bullet Graph caption position](Features_images/Features_img4.png)
 
-## API reference
-
-* [BulletGraph class](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html)

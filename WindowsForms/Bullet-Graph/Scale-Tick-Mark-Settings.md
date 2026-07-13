@@ -18,6 +18,7 @@ The quantitative scale is displayed with two types of ticks:
 
 The stroke of the major and minor ticks is customized by setting the [MajorTickStroke](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_MajorTickStroke) and [MinorTickStroke](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_MinorTickStroke) properties. The size is modified by using the [MajorTickSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_MajorTickSize) and [MinorTickSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_MinorTickSize) properties. By setting [MajorTickStrokeThickness](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_MajorTickStrokeThickness) and [MinorTickStrokeThickness](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_MinorTickStrokeThickness), the stroke's thickness is customized.
 
+{% tabs %}
 {% highlight c# %}
 BulletGraph bullet = new BulletGraph();
 bullet.Dock = DockStyle.Fill;
@@ -51,6 +52,7 @@ bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 7, .RangeC
 bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 10, .RangeCaption = "Good", .RangeStroke = Color.Green})
 Me.Controls.Add(bullet)
 {% endhighlight %}
+{% endtabs %}
 
 ![WinForms Bullet Graph tick customization](Features_images/Features_img9.png)
 
@@ -64,6 +66,7 @@ They are:
 * Above
 * Cross
 
+{% tabs %}
 {% highlight c# %}
 BulletGraph bullet = new BulletGraph();
 bullet.Dock = DockStyle.Fill;
@@ -91,6 +94,7 @@ bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 7, .RangeC
 bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 10, .RangeCaption = "Good", .RangeStroke = Color.Green})
 Me.Controls.Add(bullet)
 {% endhighlight %}
+{% endtabs %}
 
 ![WinForms Bullet Graph tick position](Features_images/Features_img10.png)
 

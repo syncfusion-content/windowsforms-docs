@@ -42,6 +42,7 @@ Namespace: Syncfusion.Windows.Forms.BulletGraph
 2. Add references to Syncfusion.BulletGraph.Windows.
 3. Add the Bullet Graph control in the code behind as follows.
 
+   {% tabs %}
    {% highlight c# %}
    BulletGraph bullet = new BulletGraph();
    bullet.Dock = DockStyle.Fill;
@@ -81,6 +82,7 @@ Namespace: Syncfusion.Windows.Forms.BulletGraph
    bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 10, .RangeCaption = "Good", .RangeStroke = Color.Green})
    Me.Controls.Add(bullet)
    {% endhighlight %}
+   {% endtabs %}
 
 4. Run the application to view the Bullet Graph.
 
@@ -114,6 +116,7 @@ To add a Bullet Graph control, refer to the following steps:
 
 6. Add the following code example in the code behind to create a simple Bullet Graph control.
 
+   {% tabs %}
    {% highlight c# %}
    BulletGraph bullet = new BulletGraph();
    bullet.Dock = DockStyle.Fill;
@@ -153,6 +156,7 @@ To add a Bullet Graph control, refer to the following steps:
    bullet.QualitativeRanges.Add(New QualitativeRange() With {.RangeEnd = 10, .RangeCaption = "Good", .RangeStroke = Color.Green})
    Me.Controls.Add(bullet)
    {% endhighlight %}
+   {% endtabs %}
 
 7. The simple Bullet Graph control is created as shown in the following screenshot.
 
