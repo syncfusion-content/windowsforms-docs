@@ -9,22 +9,22 @@ documentation: ug
 
 # How to enable drill down in PivotChart
 
-The PivotChart has in-built support to drill up and down the PivotSeries population. This behavior can be achieved by enabling the AllowDrillDown property.
+The PivotChart has built-in support to drill up and down the PivotSeries population. This behavior can be achieved by enabling the [AllowDrillDown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_AllowDrillDown) property.
 
-{% highlight C# %}
+{% tabs %}
 
-
+{% highlight c# %}
 
 this.pivotChart1.AllowDrillDown = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.pivotChart1.AllowDrillDown = True
 
 {% endhighlight %}
 
-Sample: <InstalledLocation> Syncfusion\EssentialStudio\<InstalledVersion>\Windows\PivotChart.Windows\Samples\PivotChart Layout\DrillDown Demo\CS
+{% endtabs %}
+
+Sample: &lt;InstalledLocation&gt;\Syncfusion\EssentialStudio\&lt;InstalledVersion&gt;\Windows\PivotChart.Windows\Samples\PivotChart Layout\DrillDown Demo\CS
