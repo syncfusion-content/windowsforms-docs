@@ -19,7 +19,7 @@ The BackColor, ForeColor, and BorderColor of the control can be customized by us
 * ForeColor - To change the foreground color of date-time text in DateTimeEdit.
 * WatermarkForeColor - To change the color to draw the Watermark Text that displays in DateTimeEdit when the Value is null.
 * BorderColor - To change the border color of DateTimeEdit.
-* DisabledBackColor - To change the border color of DateTimeEdit in disabled or readonly state.
+* DisabledBackColor - To change the background color of DateTimeEdit in disabled or readonly state.
 * DisabledForeColor - To change the foreground color of date-time text in disabled or readonly state.
 * FocusedBorderColor - To change the border color of DateTimeEdit in focused state.
 * HoverBorderColor - To change the border color of DateTimeEdit in mouse hover state.
@@ -29,14 +29,16 @@ The following code snippets illustrates the customization.
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
-    sfDateTimeEdit1.Style.BorderColor = Color.Red;
+sfDateTimeEdit1.Style.BorderColor = Color.Red;
 
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
-    sfDateTimeEdit1.Style.BorderColor = Color.Red
+sfDateTimeEdit1.Style.BorderColor = Color.Red
 
 {% endhighlight  %}
 
@@ -55,39 +57,41 @@ The BackColor and ForeColor of drop-down icon to open the calendar can be custom
 * HoverForeColor - To change the foreground color of dropdown icon in mouse hover state.
 * PressedForeColor - To change the foreground color of dropdown icon in pressed state.
 
-The following code snippets illustrates the same.
+The following code snippets illustrate the same.
 
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
-    //Setting the DropDown Fore color
+//Setting the DropDown Fore color
 
-    this.dateTimeEdit.Style.DropDown.ForeColor = Color.Purple;
-    this.dateTimeEdit.Style.DropDown.HoverForeColor = Color.Yellow;
-    this.dateTimeEdit.Style.DropDown.PressedForeColor = Color.Green;
+this.dateTimeEdit.Style.DropDown.ForeColor = Color.Purple;
+this.dateTimeEdit.Style.DropDown.HoverForeColor = Color.Yellow;
+this.dateTimeEdit.Style.DropDown.PressedForeColor = Color.Green;
 
-    //Setting the DropDown Back color
+//Setting the DropDown Back color
 
-    this.sfDateTimeEdit1.Style.DropDown.BackColor = Color.Aqua;
-    this.sfDateTimeEdit1.Style.DropDown.HoverBackColor = Color.Gray;
-    this.sfDateTimeEdit1.Style.DropDown.PressedBackColor = Color.Orange;
+this.sfDateTimeEdit1.Style.DropDown.BackColor = Color.Aqua;
+this.sfDateTimeEdit1.Style.DropDown.HoverBackColor = Color.Gray;
+this.sfDateTimeEdit1.Style.DropDown.PressedBackColor = Color.Orange;
 
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
-    'Setting the DropDown Fore color
+'Setting the DropDown Fore color
 
-    Me.dateTimeEdit.Style.DropDown.ForeColor = Color.Purple
-    Me.dateTimeEdit.Style.DropDown.HoverForeColor = Color.Yellow
-    Me.dateTimeEdit.Style.DropDown.PressedForeColor = Color.Green
+Me.dateTimeEdit.Style.DropDown.ForeColor = Color.Purple
+Me.dateTimeEdit.Style.DropDown.HoverForeColor = Color.Yellow
+Me.dateTimeEdit.Style.DropDown.PressedForeColor = Color.Green
 
-    'Setting the DropDown Back color
+'Setting the DropDown Back color
 
-    Me.sfDateTimeEdit1.Style.DropDown.BackColor = Color.Aqua
-    Me.sfDateTimeEdit1.Style.DropDown.HoverBackColor = Color.Gray
-    Me.sfDateTimeEdit1.Style.DropDown.PressedBackColor = Color.Orange
+Me.sfDateTimeEdit1.Style.DropDown.BackColor = Color.Aqua
+Me.sfDateTimeEdit1.Style.DropDown.HoverBackColor = Color.Gray
+Me.sfDateTimeEdit1.Style.DropDown.PressedBackColor = Color.Orange
 
 {% endhighlight  %}
 
@@ -106,14 +110,16 @@ Note: The recommended size for the custom image is 16x16 pixels. If the image is
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
-    this.dateTimeEdit.DateTimeIcon = Image.FromFile(@"Images/calendar.png");
+this.dateTimeEdit.DateTimeIcon = Image.FromFile(@"Images/calendar.png");
 
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
-    Me.dateTimeEdit.DateTimeIcon = Image.FromFile(@"Images/calendar.png");
+Me.dateTimeEdit.DateTimeIcon = Image.FromFile(@"Images/calendar.png");
 
 {% endhighlight  %}
 
@@ -128,42 +134,28 @@ The drop-down button in the SfDateTimeEdit allows you to open the pop-up calenda
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
-    //Enable the DropDown Button
-<<<<<<< HEAD
+//Enable the DropDown Button
 
-    this.dateTimeEdit.ShowDropDown = true;
+this.dateTimeEdit.ShowDropDown = true;
 
-    //Disable the DropDown Button
+//Disable the DropDown Button
 
-=======
-    
-    this.dateTimeEdit.ShowDropDown = true;
-
-    //Disable the DropDown Button
-
->>>>>>> 664175cf483e78a9bac155018dbdc92b8216b891
-    this.dateTimeEdit.ShowDropDown = false;
+this.dateTimeEdit.ShowDropDown = false;
 
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
-    'Enable the DropDown Button
+'Enable the DropDown Button
 
-<<<<<<< HEAD
-     Me.dateTimeEdit.ShowDropDown = true
+Me.dateTimeEdit.ShowDropDown = true
 
-    'Disable the DropDown Button
+'Disable the DropDown Button
 
-     Me.dateTimeEdit.ShowDropDown = false
-=======
-    Me.dateTimeEdit.ShowDropDown = true
-
-    'Disable the DropDown Button
-
-    Me.dateTimeEdit.ShowDropDown = false
->>>>>>> 664175cf483e78a9bac155018dbdc92b8216b891
+Me.dateTimeEdit.ShowDropDown = false
 
 {% endhighlight  %}
 
@@ -175,34 +167,36 @@ The drop-down button in the SfDateTimeEdit allows you to open the pop-up calenda
 
 The ForeColor of up-down icon in the `SfDateTimeEdit` can be customized by the following `Style` properties. The following `style` properties of the SfDateTimeEdit can be used to change the color of up-down icon in different states:
 
-* UpDownForeColor - To change the foreground color of updown icon in DateTimeEdit.
-* UpDownHoverForeColor - To change the foreground color of updown icon in mouse hover state.
-* UpDownBackColor - To change the background color of updown icon in DateTimeEdit.
-* UpDownHoverBackColor - To change the background color of updown icon in mouse hover state.
+* UpDownForeColor - To change the foreground color of up-down icon in DateTimeEdit.
+* UpDownHoverForeColor - To change the foreground color of up-down icon in mouse hover state.
+* UpDownBackColor - To change the background color of up-down icon in DateTimeEdit.
+* UpDownHoverBackColor - To change the background color of up-down icon in mouse hover state.
 
-The following code snippets illustrates the same.
+The following code snippets illustrate the same.
 
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
-    //Setting the UpDown Fore color
+//Setting the UpDown Fore color
 
-    this.dateTimeEdit.Style.UpDownForeColor = Color.HotPink;
-    this.dateTimeEdit.Style.UpDownHoverForeColor = Color.Blue;
-    this.dateTimeEdit.Style.UpDownBackColor = Color.LightGray;
-    this.dateTimeEdit.Style.UpDownHoverBackColor = Color.Yellow;
+this.dateTimeEdit.Style.UpDownForeColor = Color.HotPink;
+this.dateTimeEdit.Style.UpDownHoverForeColor = Color.Blue;
+this.dateTimeEdit.Style.UpDownBackColor = Color.LightGray;
+this.dateTimeEdit.Style.UpDownHoverBackColor = Color.Yellow;
 
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
-    'Setting the UpDown Fore color
+'Setting the UpDown Fore color
 
-    Me.dateTimeEdit.Style.UpDownForeColor = Color.HotPink
-    Me.dateTimeEdit.Style.UpDownHoverForeColor = Color.Blue
-    Me.dateTimeEdit.Style.UpDownBackColor = Color.LightGray
-    Me.dateTimeEdit.Style.UpDownHoverBackColor = Color.Yellow
+Me.dateTimeEdit.Style.UpDownForeColor = Color.HotPink
+Me.dateTimeEdit.Style.UpDownHoverForeColor = Color.Blue
+Me.dateTimeEdit.Style.UpDownBackColor = Color.LightGray
+Me.dateTimeEdit.Style.UpDownHoverBackColor = Color.Yellow
 
 {% endhighlight  %}
 
@@ -217,26 +211,28 @@ The up-down allows you to change the value by increment or decrement of values o
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
-    //Enable the UpDown Button
+//Enable the UpDown Button
 
-    this.dateTimeEdit.ShowUpDown = true;
+this.dateTimeEdit.ShowUpDown = true;
 
-    //Disable the UpDown Button
+//Disable the UpDown Button
 
-    this.dateTimeEdit.ShowUpDown = false;
+this.dateTimeEdit.ShowUpDown = false;
 
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
-    'Enable the UpDown Button
+'Enable the UpDown Button
 
-    Me.dateTimeEdit.ShowUpDown = true
+Me.dateTimeEdit.ShowUpDown = true
 
-    'Disable the UpDown Button
+'Disable the UpDown Button
 
-    Me.dateTimeEdit.ShowUpDown = false
+Me.dateTimeEdit.ShowUpDown = false
 
 {% endhighlight  %}
 
@@ -246,19 +242,21 @@ The up-down allows you to change the value by increment or decrement of values o
 
 ## Customize drop-down calendar appearance
 
-The drop-down calendar of the SfDateTimeEdit can be obtained from the [MonthCalendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_MonthCalendar) property. All the [customization with calendar](/windowsforms/calendar/appearance) will be reflected in drop-down calendar of the SfDateTimeEdit. The following code snippets illustrates how to change the visibility of footer in the drop-down calendar of the SfDateTimeEdit:
+The drop-down calendar of the SfDateTimeEdit can be obtained from the [MonthCalendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_MonthCalendar) property. All the [customization with calendar](/windowsforms/calendar/appearance) will be reflected in drop-down calendar of the SfDateTimeEdit. The following code snippets illustrate how to change the visibility of footer in the drop-down calendar of the SfDateTimeEdit:
 
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
-    dateTimeEdit.MonthCalendar.ShowFooter = false;
+dateTimeEdit.MonthCalendar.ShowFooter = false;
 
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
-    dateTimeEdit.MonthCalendar.ShowFooter = false
+dateTimeEdit.MonthCalendar.ShowFooter = false
 
 {% endhighlight  %}
 
@@ -273,20 +271,22 @@ The size of the drop-down calendar can be customized by using the [DropDownSize]
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
-    //Setting DropDownSize
+//Setting DropDownSize
 
-    this.dateTimeEdit.DropDownSize = new Size(294, 293);
-    this.dateTimeEdit.Width = 294;
+this.dateTimeEdit.DropDownSize = new Size(294, 293);
+this.dateTimeEdit.Width = 294;
 
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
-    'Setting DropDownSize
+'Setting DropDownSize
 
-    Me.dateTimeEdit.DropDownSize = New Size(294, 293)
-    Me.dateTimeEdit.Width = 294
+Me.dateTimeEdit.DropDownSize = New Size(294, 293)
+Me.dateTimeEdit.Width = 294
 
 {% endhighlight  %}
 
@@ -301,10 +301,11 @@ Week numbers can be displayed by setting [ShowWeekNumbers](https://help.syncfusi
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
-    //Setting ShowWeekNumbers
+//Setting ShowWeekNumbers
 
-    sfDateTimeEdit1.MonthCalendar.ShowWeekNumbers = true;
+sfDateTimeEdit1.MonthCalendar.ShowWeekNumbers = true;
 
 {% endhighlight  %}
 
@@ -314,7 +315,7 @@ Week numbers can be displayed by setting [ShowWeekNumbers](https://help.syncfusi
 
 ## Themes
 
-SfDateTimeEdit offers four built in themes for professional representation as follows.
+SfDateTimeEdit offers four built-in themes for professional representation as follows.
 
 * Office2016Colorful
 * Office2016White
@@ -330,46 +331,46 @@ Theme can be applied to SfDateTimeEdit by following the below steps:
 
 **Syncfusion.Office2016Theme.WinForms** assembly should be added as reference to set theme for SfDateTimeEdit in any application:
 
-Before apply theme to SfDateTimeEdit, required theme assembly should be loaded as follows. 
+Before applying theme to SfDateTimeEdit, required theme assembly should be loaded as follows. 
 
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
+using Syncfusion.WinForms.Controls;
 
-    using Syncfusion.WinForms.Controls;
-
-    static class Program
+static class Program
+{
+    /// <summary>
+    /// The main entry point for the application.
+    /// </summary>
+    
+    static void Main()
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        
-        static void Main()
-        {
-            SfSkinManager.LoadAssembly(typeof(Office2016Theme).Assembly);
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
-        }
+        SfSkinManager.LoadAssembly(typeof(Office2016Theme).Assembly);
+        Application.EnableVisualStyles();
+        Application.SetCompatibleTextRenderingDefault(false);
+        Application.Run(new Form1());
     }
+}
 
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
+Imports Syncfusion.WinForms.Controls
 
-    Imports Syncfusion.WinForms.Controls
-
-    Friend Module Program
-        ''' <summary>
-        ''' The main entry point for the application.
-        ''' </summary>
-        Sub Main()
-            SfSkinManager.LoadAssembly(GetType(Office2016Theme).Assembly)
-            Application.EnableVisualStyles()
-            Application.SetCompatibleTextRenderingDefault(False)
-            Application.Run(New Form1())
-        End Sub
-    End Module
+Friend Module Program
+    ''' <summary>
+    ''' The main entry point for the application.
+    ''' </summary>
+    Sub Main()
+        SfSkinManager.LoadAssembly(GetType(Office2016Theme).Assembly)
+        Application.EnableVisualStyles()
+        Application.SetCompatibleTextRenderingDefault(False)
+        Application.Run(New Form1())
+    End Sub
+End Module
 
 {% endhighlight  %}
 
@@ -386,18 +387,20 @@ This option helps to set the Office2016Colorful Theme.
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
-    // Office2016Colorful
+// Office2016Colorful
 
-    this.dateTimeEdit.ThemeName = "Office2016Colorful";
+this.dateTimeEdit.ThemeName = "Office2016Colorful";
 
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
-    ' Office2016Colorful 
+' Office2016Colorful 
 
-    Me.dateTimeEdit.ThemeName = "Office2016Colorful"
+Me.dateTimeEdit.ThemeName = "Office2016Colorful"
 
 {% endhighlight  %}
 
@@ -412,27 +415,20 @@ This option helps to set the Office2016White Theme.
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
-    // Office2016White
+// Office2016White
 
-<<<<<<< HEAD
-    this.dateTimeEdit.ThemeName = "Office2016White";
-=======
-     this.dateTimeEdit.ThemeName = "Office2016White";
->>>>>>> 664175cf483e78a9bac155018dbdc92b8216b891
+this.dateTimeEdit.ThemeName = "Office2016White";
 
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
  
-    ' Office2016White 
+' Office2016White 
 
-<<<<<<< HEAD
-=======
-    ' Office2016White 
-
->>>>>>> 664175cf483e78a9bac155018dbdc92b8216b891
-    Me.dateTimeEdit.ThemeName = "Office2016White"
+Me.dateTimeEdit.ThemeName = "Office2016White"
 
 {% endhighlight  %}
 
@@ -447,22 +443,20 @@ This option helps to set the Office2016DarkGray Theme.
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
-    // Office2016DarkGray
+// Office2016DarkGray
 
-<<<<<<< HEAD
-    this.dateTimeEdit.ThemeName = "Office2016DarkGray";
-=======
-     this.dateTimeEdit.ThemeName = "Office2016DarkGray";
->>>>>>> 664175cf483e78a9bac155018dbdc92b8216b891
+this.dateTimeEdit.ThemeName = "Office2016DarkGray";
 
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
-    ' Office2016DarkGray 
+' Office2016DarkGray 
 
-    Me.dateTimeEdit.ThemeName = "Office2016DarkGray"
+Me.dateTimeEdit.ThemeName = "Office2016DarkGray"
 
 {% endhighlight  %}
 
@@ -477,22 +471,20 @@ This option helps to set the Office2016Black Theme.
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
-    // Office2016Black
+// Office2016Black
 
-<<<<<<< HEAD
-    this.dateTimeEdit.ThemeName = "Office2016Black";
-=======
-     this.dateTimeEdit.ThemeName = "Office2016Black";
->>>>>>> 664175cf483e78a9bac155018dbdc92b8216b891
+this.dateTimeEdit.ThemeName = "Office2016Black";
 
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
-    ' Office2016Black 
+' Office2016Black 
 
-    Me.dateTimeEdit.ThemeName = "Office2016Black"
+Me.dateTimeEdit.ThemeName = "Office2016Black"
 
 {% endhighlight  %}
 
