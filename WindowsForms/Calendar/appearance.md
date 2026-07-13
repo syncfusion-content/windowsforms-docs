@@ -19,8 +19,8 @@ The BackColor and ForeColor of each part in the calendar header can be customize
 
 The header text in the calendar control displays the month and year of the selected date. The calendar header color can be customized by using the following style properties:
 
-* BackColor: Changes the background color of header in the calendar.
-* ForeColor: Changes the foreground color of the text, which displays month and year in the calendar header.
+* BackColor: Changes the background color of the header in the calendar.
+* ForeColor: Changes the foreground color of the header text that displays the month and year in the calendar header.
 * HoverForeColor: Changes the foreground color of the header text on mouse hover.
 * Font: Changes the font that is used to draw the header text in the calendar.
 
@@ -37,6 +37,7 @@ The following code example illustrates how to customize appearances of the calen
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 // Header customizations
 
@@ -63,6 +64,7 @@ calendar.Style.Header.DayNamesFont = new System.Drawing.Font("Calibri", 11.25F, 
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 ' Header customizations
 
@@ -105,6 +107,7 @@ The following code example illustrates the same:
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 // set the Navigation Button ForeColor
             
@@ -118,9 +121,18 @@ calendar.Style.Header.NavigationButtonHoverForeColor = Color.Indigo;
             
 calendar.Style.Header.NavigationButtonDisabledForeColor = Color.LightGray;
 
+// set the UpArrowImage
+
+calendar.UpArrowImage = Image.FromFile("UpArrow.png");
+
+// set the DownArrowImage
+
+calendar.DownArrowImage = Image.FromFile("DownArrow.png");
+
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 ' set the Navigation Button ForeColor
 
@@ -134,7 +146,13 @@ calendar.Style.Header.NavigationButtonHoverForeColor = Color.Indigo
 
 calendar.Style.Header.NavigationButtonDisabledForeColor = Color.LightGray
 
-The visibility and alignment of navigation buttons can also be customized.
+' set the UpArrowImage
+
+calendar.UpArrowImage = Image.FromFile("UpArrow.png")
+
+' set the DownArrowImage
+
+calendar.DownArrowImage = Image.FromFile("DownArrow.png")
 
 {% endhighlight  %}
 
@@ -149,6 +167,7 @@ Navigation buttons are used to move between views in the `SfCalendar`. The visib
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 // Indicating whether show the navigation buttons which used to move between views. 
 
@@ -157,6 +176,7 @@ calendar.ShowNavigationButton = false;
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 ' Indicating whether  show the navigation buttons which used to move between views. 
 
@@ -175,6 +195,7 @@ Navigation buttons can be aligned in different sides relative to the calendar he
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 // Indicating how the navigation buttons should align relative to the Calendar Header. Setting Left alignment. 
 
@@ -183,6 +204,7 @@ calendar.NavigationButtonAlignment = Syncfusion.WinForms.Input.Enums.NavigationB
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 ' Indicating how the navigation buttons should align relative to the Calendar Header. Setting Left alignment. 
 
@@ -197,6 +219,7 @@ calendar.NavigationButtonAlignment = Syncfusion.WinForms.Input.Enums.NavigationB
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 // Indicating how the navigation buttons should align relative to the Calendar Header. Setting Both alignment. 
 
@@ -205,6 +228,7 @@ calendar.NavigationButtonAlignment = Syncfusion.WinForms.Input.Enums.NavigationB
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 ' Indicating how the navigation buttons should align relative to the Calendar Header. Setting Both alignment. 
 
@@ -230,6 +254,7 @@ The following code example illustrates how to change the background and foregrou
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 // Footer customizations
 
@@ -252,6 +277,7 @@ calendar.Style.Footer.HoverForeColor = Color.SpringGreen;
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 ' Footer customizations
 
@@ -281,7 +307,7 @@ calendar.Style.Footer.HoverForeColor = Color.SpringGreen
 
 BackColor, ForeColor, and BorderColor of each date cells in the calendar can be customized. Date cells in the calendar control can be customized by the following style properties:
 
-* CellBackColor: Changes the background color of date cells in the calendar.
+* CellBackColor: Changes the background color of date clls in the calendar.
 * CellForeColor: Changes the foreground color of date cells in the calendar.
 * CellHoverBorderColor: Changes the border color of date cells in the calendar.
 * CellFont: Changes the font that is used to draw the date text of cell in the calendar.
@@ -309,12 +335,13 @@ The following code example illustrates the customization of calendar cells:
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 // Setting CellBackColor
 
 calendarr.Style.Cell.CellBackColor = Color.LightBlue;
 
-// Setting CellForeColor
+// Settig CellForeColor
 
 calendar.Style.Cell.CellForeColor = Color.Red;
 
@@ -361,6 +388,7 @@ calendar.Style.Cell.SelectedCellFont = new System.Drawing.Font("Calibri", 11.25F
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 ' Setting CellBackColor
 
@@ -434,12 +462,13 @@ Theme can be applied to SfCalendar by following the below steps:
 
 **Syncfusion.Office2016Theme.WinForms** assembly should be added as reference to set theme for SfCalendar in any application:
 
-Before apply theme to SfCalendar, required theme assembly should be loaded as follows. 
+Before applying theme to SfCalendar, required theme assembly should be loaded as follows. 
 
 {% tabs %}
 
 {% highlight C# %}
 
+using Syncfusion.WinForms.Core;
 using Syncfusion.WinForms.Core.Events;
 
          static class Program
@@ -461,6 +490,7 @@ using Syncfusion.WinForms.Core.Events;
 
 {% highlight VB %}
 
+Imports Syncfusion.WinForms.Core
 Imports Syncfusion.WinForms.Core.Events
 
  Friend Module Program
@@ -491,6 +521,7 @@ This option helps to set the Office2016Colorful Theme.
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 // Office2016Colorful
 
@@ -499,6 +530,7 @@ calendar.ThemeName = "Office2016Colorful";
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 ' Office2016Colorful 
 
@@ -515,8 +547,8 @@ calendar.ThemeName = "Office2016Colorful"
 This option helps to set the Office2016White Theme.
 
 {% tabs %}
-
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 // Office2016White
 
@@ -525,6 +557,7 @@ This option helps to set the Office2016White Theme.
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 ' Office2016White 
 
@@ -543,6 +576,7 @@ This option helps to set the Office2016DarkGray Theme.
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 // Office2016DarkGray
 
@@ -551,6 +585,7 @@ This option helps to set the Office2016DarkGray Theme.
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 ' Office2016DarkGray 
 
@@ -569,6 +604,7 @@ This option helps to set the Office2016Black Theme.
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 // Office2016Black
 
@@ -577,6 +613,7 @@ This option helps to set the Office2016Black Theme.
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 ' Office2016Black 
 
@@ -595,6 +632,7 @@ The `SfCalendar` allows you to hide the days of next month and previous month in
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 // Setting the Next and Previous Months Dates invisible
 
@@ -603,6 +641,7 @@ calendar.TrailingDatesVisible = false;
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 ' Setting the Next and Previous Months Dates invisible
 
@@ -621,6 +660,7 @@ By default, the day names are displayed in an abbreviated form in the calendar c
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 // Setting the Show Abbreviated Day Names
 
@@ -629,6 +669,7 @@ calendar.ShowAbbreviatedDayNames = false;
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 ' Setting the Show Abbreviated Day Names
 
@@ -647,6 +688,7 @@ calendar.ShowAbbreviatedDayNames = false
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 //Enable the Right to Left 
 
@@ -655,6 +697,7 @@ calendar.RightToLeft = RightToLeft.Yes;
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 'Enable the Right to Left 
 
@@ -673,6 +716,7 @@ The today cell will be highlighted even the selected date differs from today in 
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 // Indicating whether Today cell highlighted even selected date is different than today
 
@@ -681,6 +725,7 @@ calendar.HighlightTodayCell = true;
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 ' Indicating whether Today cell highlighted even selected date is different than Today
 
@@ -696,10 +741,10 @@ calendar.HighlightTodayCell = true
 
 The BackColor, ForeColor, and BorderColor of the today cell in the calendar can be customized. The today cell in the calendar control can be customized by using the following style properties:
 
-* TodayBackColor: Changes the background color of today cell in the calendar.
-* TodayForeColor: Changes the foreground color of today cell in the calendar.
-* TodayFont: Changes the font that is used to draw the date text of today cell in the calendar.
-* TodayHoverBorderColor: Changes the border color of today cell on mouse hover.
+* TodayBackColor: Changes the background color of the today cell in the calendar.
+* TodayForeColor: Changes the foreground color of the today cell in the calendar.
+* TodayFont: Changes the font that is used to draw the date text of the today cell in the calendar.
+* TodayHoverBorderColor: Changes the border color of the today cell on mouse hover.
 
 ## Change visibility of the footer
 
@@ -708,6 +753,7 @@ The visibility of the calendar footer can be customized by using the [ShowFooter
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 // Indicating the visibility of none button in footer 
 
@@ -718,6 +764,7 @@ calendar.ShowNone = false;
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 ' Indicating the visibility of none button in footer 
 
@@ -734,6 +781,7 @@ calendar.ShowNone = false
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 // Indicating the visibility of today button in footer 
 
@@ -744,6 +792,7 @@ calendar.ShowToday = false;
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 ' Indicating the visibility of today button in footer 
 
@@ -764,6 +813,7 @@ The visibility of splitters in the calendar control can be customized by setting
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 // Enable Horizontal splitter
 
@@ -784,6 +834,7 @@ calendar.Style.VerticalSplitterColor = Color.Green;
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 ' Enable Horizontal splitter
 

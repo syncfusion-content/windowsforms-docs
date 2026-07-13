@@ -13,11 +13,11 @@ The SfCalendar allows you to select one or more dates. The selected date in the 
 
 ## Change selection
 
-The `SfCalendar` control allows you to change the selection by clicking the specific date. 
+The `SfCalendar` control allows you to change the selection by clicking a specific date. 
 
 ### Change selection through keyboard
 
-The selected date of the `SfCalendar` control can be changed by the keyboard. `Up/Down` and `Left/Right` arrow keys help you to change the selection according to the key board interaction. 
+The selected date of the `SfCalendar` control can be changed by the keyboard. `Up/Down` and `Left/Right` arrow keys help you to change the selection according to the keyboard interaction. 
 
 ### Change selection programmatically
 
@@ -26,6 +26,7 @@ The selection of the calendar control can be changed programmatically by setting
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 // Move the current view to the date based on given value. Return value as false when the date is not fall within min max range or Blackout dates contains the date.
 
@@ -37,6 +38,7 @@ if (calendar.GoToDate(new DateTime(2018,02,02)))
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 ' Move the current view to the date based on given value. Return value as false when the date is not fall within min max range or Blackout dates contains the date.
 
@@ -74,14 +76,14 @@ Gets the CalendarViewType of the cell to draw in SfCalendar; whether it is month
 <tr>
 <td>
 {{ '[IsBlackoutDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.Events.CalendarCellEventArgs.html#Syncfusion_WinForms_Input_Events_CalendarCellEventArgs_IsBlackoutDate)' | markdownify }}</td><td>
-Gets a value that indicates whether the date of cell is SpecialDate in SfCalendar.</td></tr>
+Gets a value that indicates whether the date of cell is BlackoutDate in SfCalendar.</td></tr>
 <tr>
 <td>
 {{ '[DateRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.Events.CalendarCellEventArgs.html#Syncfusion_WinForms_Input_Events_CalendarCellEventArgs_DateRange)' | markdownify }}</td><td>
-Gets the StartDate and endDate range values of the clicked cell.</td></tr>
+Gets the StartDate and EndDate range values of the clicked cell.</td></tr>
 <tr>
 <td>
-{{ '[IsWeekNumber](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.Events.CalendarCellEventArgs.html#Syncfusion_WinForms_Input_Events_CalendarCellEventArgs_IsSpecialDate)' | markdownify }}</td><td>
+{{ '[IsWeekNumber](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.Events.CalendarCellEventArgs.html#Syncfusion_WinForms_Input_Events_CalendarCellEventArgs_IsWeekNumber)' | markdownify }}</td><td>
 Gets a value that indicates whether the date of cell is WeekNumber in SfCalendar.</td></tr>
 <tr>
 <td>
@@ -96,6 +98,11 @@ Gets the value of the clicked cell text.</td></tr>
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
+
+// Invoking the CellClick event.
+
+this.sfCalendar1.CellClick += SfCalendar1_CellClick;
 
 private void SfCalendar1_CellClick(object sender, Syncfusion.WinForms.Input.Events.CalendarCellEventArgs e)
 {
@@ -111,6 +118,11 @@ private void SfCalendar1_CellClick(object sender, Syncfusion.WinForms.Input.Even
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
+
+' Invoking the CellClick event.
+
+AddHandler Me.sfCalendar1.CellClick, AddressOf SfCalendar1_CellClick
 
 Private Sub SfCalendar1_CellClick(ByVal sender As Object, ByVal e As Syncfusion.WinForms.Input.Events.CalendarCellEventArgs)
    ' e.DateRange - Start and end range value of clicked cell
@@ -133,6 +145,7 @@ The `SfCalendar` control allows you to select multiple dates when the [AllowMult
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 // Setting to Allow Multiple Selection
 
@@ -141,6 +154,7 @@ calendar.AllowMultipleSelection = true;
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 ' Setting to Allow Multiple Selection
 
@@ -161,17 +175,17 @@ The specific range of dates can be selected by pressing the `Shift`. Select a da
 
 The `SfCalendar` allows you to select multiple dates through the keyboard by selecting the cells while pressing `Shift + UP/DOWN/LEFT/RIGHT` and `Shift + HOME/END` arrow keys.
 
-* Shift + UP: Selects previous week dates from the selected date.
+* Shift + UP: Selects the dates in the previous week from the selected date.
 
-* Shift + DOWN: Selects next week dates from the selected date.
+* Shift + DOWN: Selects the dates in the next week from the selected date.
 
-* Shift + RIGHT: Selects next date from the selected date.
+* Shift + RIGHT: Selects the next date from the selected date.
 
-* Shift + LEFT: Selects previous date from the selected date.
+* Shift + LEFT: Selects the previous date from the selected date.
 
-*  Shift + HOME: Selects the date range from first day of month to the current selected date.
+*  Shift + HOME: Selects the date range from the first day of the month to the current selected date.
 
-*  Shift + END: Selects the date range from current selected date to the last date of a month.
+*  Shift + END: Selects the date range from the current selected date to the last date of a month.
 
 
 ### Multiple selection programmatically
@@ -181,6 +195,7 @@ Multiple dates in the calendar control can be selected programmatically by addin
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 calendar.AllowMultipleSelection = true;
 
@@ -202,6 +217,29 @@ calendar.SelectedDates.Add(new DateTime(2018, 02, 18));
 
 {% endhighlight  %}
 
+{% highlight VB %}
+Imports Syncfusion.WinForms.Input
+
+calendar.AllowMultipleSelection = True
+
+calendar.BlackoutDates.Add(New DateTime(2018, 02, 12))
+
+calendar.SelectedDates.Add(New DateTime(2018, 02, 12))
+
+calendar.SelectedDates.Add(New DateTime(2018, 02, 13))
+
+calendar.SelectedDates.Add(New DateTime(2018, 02, 14))
+
+calendar.SelectedDates.Add(New DateTime(2018, 02, 15))
+
+calendar.SelectedDates.Add(New DateTime(2018, 02, 16))
+
+calendar.SelectedDates.Add(New DateTime(2018, 02, 17))
+
+calendar.SelectedDates.Add(New DateTime(2018, 02, 18))
+
+{% endhighlight  %}
+
 {% endtabs %}
 
 ![Multiple date selection](selection-images/multiselection.png)
@@ -213,6 +251,7 @@ The `BlackoutDates` refers the disabled dates that restrict the user from select
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 //Setting the Blackout Dates
 
@@ -228,11 +267,11 @@ calendar.BlackoutDates = time;
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
         'Setting the Blackout Dates
 
-        Dim weekends = GetDaysBetween(minDateTimeEdit.Value.Value, maxDateTimeEdit.Value.Value).Where(() => {  }, ((d.DayOfWeek = DayOfWeek.Saturday)  _
-                        OrElse (d.DayOfWeek = DayOfWeek.Sunday)))
+        Dim weekends = GetDaysBetween(minDateTimeEdit.Value.Value, maxDateTimeEdit.Value.Value).Where(Function(d) d.DayOfWeek = DayOfWeek.Saturday OrElse d.DayOfWeek = DayOfWeek.Sunday)
 
         Dim time As List(Of DateTime) = New List(Of DateTime)
 
@@ -259,12 +298,13 @@ Sometimes, the value should be restricted between some date ranges. In that scen
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 // Setting the Minimum and Maximum date
 
 Syncfusion.WinForms.Input.SfCalendar calendar = new Syncfusion.WinForms.Input.SfCalendar();
 
-calendar.Value = new DateTime(2018, 1, 12);
+calendar.SelectedDate = new DateTime(2018, 1, 12);
 
 calendar.MinDate = new DateTime(2018, 1, 05);
 
@@ -273,16 +313,17 @@ calendar.MaxDate = new DateTime(2018, 1, 25);
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 ' Setting the Minimum and Maximum date
 
 Dim calendar  As New Syncfusion.WinForms.Input.SfCalendar ()
 
-calendar.Value = New DateTime(2018, 1, 12)
+calendar.SelectedDate = New DateTime(2018, 1, 12)
 
-calendar.MinDate = new DateTime(2018, 1, 05)
+calendar.MinDate = New DateTime(2018, 1, 05)
 
-calendar.MaxDate = new DateTime(2018, 1, 25)
+calendar.MaxDate = New DateTime(2018, 1, 25)
 
 {% endhighlight  %}
 
@@ -310,6 +351,7 @@ The following code example illustrates how to restrict the selection change on-d
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 // Invoking selection changing event
 
@@ -343,14 +385,15 @@ private void SfCalendar_SelectionChanged(object sender, EventArgs e)
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 ' Invoking selection changing event
 
-calendar.SelectionChanging = (Me.sfCalendar.SelectionChanging + SfCalendar_SelectionChanging)
+AddHandler calendar.SelectionChanging, AddressOf SfCalendar_SelectionChanging
 
 ' Invoking selection changed event
 
-calendar.SelectionChanged = (Me.sfCalendar.SelectionChanged + SfCalendar_SelectionChanged)
+AddHandler calendar.SelectionChanged, AddressOf SfCalendar_SelectionChanged
 
 ' Occurs before the selected date changed in Calendar.
 
@@ -383,10 +426,20 @@ Selected dates of the calendar control can be removed from the selection by prog
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 // Clear the selected dates and set the new date as selected date
 
 calendar.ClearSelection(new DateTime(2018, 02, 16));
+
+{% endhighlight  %}
+
+{% highlight VB %}
+Imports Syncfusion.WinForms.Input
+
+' Clear the selected dates and set the new date as selected date
+
+calendar.ClearSelection(New DateTime(2018, 02, 16))
 
 {% endhighlight  %}
 
@@ -401,6 +454,7 @@ Weekends of the calendar can be disabled by providing the Date collection to [Bl
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 // disabling the weekends
 
@@ -414,6 +468,23 @@ for (var date = sfCalendar1.MinDate; date <= sfCalendar1.MaxDate; date = date.Ad
 
 {% endhighlight  %}
 
+{% highlight VB %}
+Imports Syncfusion.WinForms.Input
+
+' disabling the weekends
+
+sfCalendar1.MinDate = New DateTime(2000, 1, 5)
+sfCalendar1.MaxDate = New DateTime(2500, 1, 25)
+Dim [date] As DateTime = sfCalendar1.MinDate
+While [date] <= sfCalendar1.MaxDate
+    If [date].DayOfWeek = DayOfWeek.Sunday OrElse [date].DayOfWeek = DayOfWeek.Saturday Then
+        sfCalendar1.BlackoutDates.Add([date])
+    End If
+    [date] = [date].AddDays(1)
+End While
+
+{% endhighlight  %}
+
 {% endtabs %} 
 
-![Disable WeekEnds](selection-images/disable_Weekends.png)
+![Disable Weekends](selection-images/disable_Weekends.png)

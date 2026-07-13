@@ -13,7 +13,7 @@ documentation: ug
 
 ## Special dates
 
-The [SpecialDates](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_SpecialDates) helps you to hold the special dates collection with icon and description for dates which need to be highlighted. The `SpecialDates` contains the following properties to customize the cells:]()
+The [SpecialDates](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_SpecialDates) property holds a collection of special dates with icons and descriptions for dates that need to be highlighted. The `SpecialDates` contains the following properties to customize the cells:]()
 
 * **BackColor**: The background color for the special date to fill the cell.
 * **Value**: The value for the special date.
@@ -31,6 +31,7 @@ To customize the dates, use the following code example:
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
         SpecialDate specialDate1 = new SpecialDate();
 
@@ -139,6 +140,7 @@ To customize the dates, use the following code example:
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
  Private Sub InitializeComponent()
 
@@ -259,7 +261,7 @@ To customize the dates, use the following code example:
 
 ## ToolTip
 
-This support is used to display additional information such as text or image about a cell in calendar in form of tooltip.The `ToolTipOpeningEventArgs` provides the following data for the [ToolTipOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html) event of the calendar. All the [customization with tooltip](/windowsforms/tooltip/appearance) will be reflected in tooltip of cell in SfCalendar.
+This feature is used to display additional information such as text or image about a cell in the calendar in the form of a tooltip.The `ToolTipOpeningEventArgs` provides the following data for the [ToolTipOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html) event of the calendar. All the [customization with tooltip](/windowsforms/tooltip/appearance) will be reflected in tooltip of cell in SfCalendar.
 
 
 * ToolTipInfo: This option helps to set more information such as text or image about cell in calendar.
@@ -278,17 +280,18 @@ This support is used to display additional information such as text or image abo
 
 * Handled: This option is used to handle the tooltip opening event. It will restrict to visibility of tooltip, and you can set own text or image as tooltip.
 
-* ViewType: This option helps to represents the ViewType of calendar, whether it is month view or year view or decade view or century view.
+* ViewType: This option helps to represent the ViewType of calendar, whether it is month view, year view, decade view, or century view.
 
 
 {% tabs %}
 
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
   
   // Invoking the ToolTipOpening Event.
 
-    this.SfCalendar1.DrawCell += SfCalendar_ToolTipOpening;
+    this.sfCalendar.ToolTipOpening += SfCalendar_ToolTipOpening;
 
   //To show ToolTip
 
@@ -316,6 +319,7 @@ This support is used to display additional information such as text or image abo
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
   
    ' Invoking the ToolTipOpening Event.
 
@@ -328,13 +332,13 @@ This support is used to display additional information such as text or image abo
 			If e.ViewType = CalendarViewType.Month AndAlso e.Value.Value.Date = New Date(2018,02,14) Then
 				e.ToolTipInfo.Items(0).Text = "Valentine's Day"
 			End If
-			If e.ViewType = CalendarViewType.Year AndAlso e.Value.Value.Month = Date.Now.Date.Month Then
+			If e.ViewType = CalendarViewType.Year AndAlso e.Value.Value.Month = Date.Now.Month Then
 				e.ToolTipInfo.Items(0).Text = e.Value.Value.Date.ToString("MMM")
 			End If
 			If e.ViewType = CalendarViewType.Decade AndAlso e.RowIndex = 0 Then
 				e.ToolTipInfo.Items(0).Text = "Decade"
 			End If
-			If e.ViewType = CalendarViewType.Century AndAlso e.ColumnIndex = 0 Then
+			If e.ViewType = CalendarViewType.Century AndAlso e.ColumnIndex = 1 Then
 				e.ToolTipInfo.Items(0).Text = "Century"
 			End If
 
@@ -353,7 +357,7 @@ This support is used to display additional information such as text or image abo
 
 ## Render cell on-demand
 
-This support is used to highlight or customize dates to mention some special date on-demand. The `DrawCellEventArgs` provides the following data for the [DrawCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html) event of the calendar.
+This feature is used to highlight or customize dates on-demand to mark special dates. The `DrawCellEventArgs` provides the following data for the [DrawCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html) event of the calendar.
 
 
 * BackColor: Changes the background color of the date cell to draw in the calendar.
@@ -384,7 +388,7 @@ This support is used to highlight or customize dates to mention some special dat
 
 * Handled: This option is used to handle the draw cell event. It will restrict to draw default text, and you can draw own text within the bounds of the cell.
 
-* ViewType: This option helps to represents the ViewType of calendar, whether it is month view or year view or decade view or century view.
+* ViewType: This option helps to represent the ViewType of calendar, whether it is month view, year view, decade view, or century view.
 
 
 The following code example illustrates how to customize the cell on-demand:
@@ -392,15 +396,16 @@ The following code example illustrates how to customize the cell on-demand:
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
   
     // Invoking the DrawCell Event.
 
-    this.SfCalendar1.DrawCell += SfCalendar1_DrawCell;
+    this.sfCalendar1.DrawCell += SfCalendar1_DrawCell;
 
 
     // To Draw the Cell
 
-     private void SfCalendar1_DrawCell(SfCalendar sender, DrawCellEventArgs args)
+     private void SfCalendar1_DrawCell(SfCalendar sender, DrawCellEventArgs e)
 
         {
             //Image for year view cell
@@ -435,16 +440,15 @@ The following code example illustrates how to customize the cell on-demand:
 {% endhighlight  %}
 
 {% highlight VB %}
-
-InitializeComponent
+Imports Syncfusion.WinForms.Input
 
 ' Invoking the DrawCell Event.
 
-Me.SfCalendar1.DrawCell = (Me.SfCalendar1.DrawCell + SfCalendar1_DrawCell)
+AddHandler Me.SfCalendar1.DrawCell, AddressOf SfCalendar1_DrawCell
     
 ' To Draw the Cell
     
- Private Sub SfCalendar1_DrawCell(ByVal sender As SfCalendar, ByVal args As DrawCellEventArgs)
+ Private Sub SfCalendar1_DrawCell(ByVal sender As SfCalendar, ByVal e As DrawCellEventArgs)
 
          'Image for year view cell
            Dim image As Image = Nothing
