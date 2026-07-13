@@ -79,9 +79,13 @@ The Schedule control, by default, allows you to set the time interval for schedu
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.Windows.Forms.Schedule;
+
 this.scheduleControl1.AllowSecondsInAppointment = true;
 {% endhighlight %}
 {% highlight vb %}
+Imports Syncfusion.Windows.Forms.Schedule
+
 Me.scheduleControl1.AllowSecondsInAppointment = True
 {% endhighlight %}
 {% endtabs %}

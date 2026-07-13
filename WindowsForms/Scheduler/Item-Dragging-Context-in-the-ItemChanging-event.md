@@ -62,6 +62,8 @@ The following steps help you to get the target part in the Schedule control whil
 {% capture codesnippet1 %}​
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.Windows.Forms.Schedule;
+
 this.scheduleControl1.ItemChanging += new ScheduleAppointmentChangingEventHandler(scheduleControl1_ItemChanging);
 {% endhighlight %}
 {% highlight vb %}
