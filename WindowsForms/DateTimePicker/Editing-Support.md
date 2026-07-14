@@ -16,11 +16,12 @@ The DateTime value of the `SfDateTimeEdit` control can be updated by editing the
 
 ## Default editing
 
-The DateTime can be edited in the textbox of the `SfDateTimeEdit` control when the [DateTimeEditingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_DateTimeEditingMode) is default. In default editing mode, the value can be assigned in any valid format. Even if the text box text is not in the correct pattern, the SfDateTimeEdit control automatically updates the value in the correct pattern on lost focus. i.e, if the date time pattern is LongDate with pattern "dddd, MMMM dd, yyyy" and date is entered as "Mar 28 2017" in the editing text box, the DateTimeText will be automatically converted according to the LongDate pattern while pressing the enter key or on lost focus of the control.
+The DateTime can be edited in the textbox of the `SfDateTimeEdit` control when the [DateTimeEditingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_DateTimeEditingMode) is default. In default editing mode, the value can be assigned in any valid format. Even if the text box text is not in the correct pattern, the SfDateTimeEdit control automatically updates the value in the correct pattern on lost focus. i.e., if the date time pattern is LongDate with pattern "dddd, MMMM dd, yyyy" and date is entered as "Mar 28 2017" in the editing text box, the DateTimeText will be automatically converted according to the LongDate pattern while pressing the Enter key or on lost focus of the control.
 
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 Syncfusion.WinForms.Input.SfDateTimeEdit dateTimeEdit = new Syncfusion.WinForms.Input.SfDateTimeEdit();
 
@@ -33,8 +34,9 @@ dateTimeEdit.DateTimeEditingMode = DateTimeEditingMode.Default;
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
-Dim dateTimeEdit As Syncfusion.WinForms.Input.SfDateTimeEdit = New Syncfusion.WinForms.Input.
+Dim dateTimeEdit As Syncfusion.WinForms.Input.SfDateTimeEdit = New Syncfusion.WinForms.Input.SfDateTimeEdit
 
 Me.Controls.Add(dateTimeEdit)
 
@@ -50,11 +52,12 @@ dateTimeEdit.DateTimeEditingMode = DateTimeEditingMode.Default
 
 ## Mask editing
 
-The mask edit mode provides an easy and reliable way of collecting user input and displaying standard data in a specific format. In mask editing mode, the date will be separated into different fields such as date, month, year, minutes, hours, and seconds. The field can be updated by selecting the field and pressing the up or down arrow to increase or decrease the selected field respectively.
+The mask edit mode provides an easy and reliable way of collecting user input and displaying standard data in a specific format. In mask editing mode, the date will be separated into different fields such as date, month, year, minutes, hours, and seconds. The field can be updated by selecting the field and pressing the up or down arrow to increment or decrease the selected field, respectively.
 
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 Syncfusion.WinForms.Input.SfDateTimeEdit dateTimeEdit = new Syncfusion.WinForms.Input.SfDateTimeEdit();
 
@@ -67,6 +70,7 @@ dateTimeEdit.DateTimeEditingMode = DateTimeEditingMode.Mask;
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 Dim dateTimeEdit As Syncfusion.WinForms.Input.SfDateTimeEdit = New Syncfusion.WinForms.Input.SfDateTimeEdit
 
@@ -84,23 +88,25 @@ dateTimeEdit.DateTimeEditingMode = DateTimeEditingMode.Mask
 
 ## ReadOnly
 
-This control supports `ReadOnly` which is used to restrict edit date and time fields in the `SfDateTimeEdit`. By setting the [ReadOnly](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_ReadOnly) to **true**, you can restrict the text editing in the `SfDateTimeEdit` and you can change the value only by clicking up-down buttons or pick the date from the drop-down `SfCalendar`.
+This control supports `ReadOnly` which is used to restrict editing of date and time fields in the `SfDateTimeEdit`. By setting the [ReadOnly](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_ReadOnly) to **true**, you can restrict the text editing in the `SfDateTimeEdit` and you can change the value only by clicking the up-down buttons or picking the date from the drop-down `SfCalendar`.
 
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
-//Enable the User interactions
+//Enable the ReadOnly to restrict editing
 
-this.dateTimeEdit.ReadOnly = false;
+this.dateTimeEdit.ReadOnly = true;
 
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
-'Enable the User interactions
+'Enable the ReadOnly to restrict editing
 
-Me.dateTimeEdit.ReadOnly = false
+Me.dateTimeEdit.ReadOnly = true
 
 {% endhighlight  %}
 

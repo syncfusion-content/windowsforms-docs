@@ -49,14 +49,14 @@ The following steps describe how to create an **SfDateTimeEdit** control program
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 using Syncfusion.WinForms.Input;
 
 {% endhighlight  %}
 
 {% highlight VB %}
-
-Imports Syncfusion.WinForms.Input
+Imports Syncfusion.WinForms.Input
 
 {% endhighlight  %}
 
@@ -70,6 +70,7 @@ Imports Syncfusion.WinForms.Input
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 SfDateTimeEdit sfDateTimeEdit = new SfDateTimeEdit();
 
@@ -78,8 +79,9 @@ this.Controls.Add(sfDateTimeEdit);
 {% endhighlight %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
-Dim SfDateTimeEdit As New SfDateTimeEdit()
+Dim sfDateTimeEdit As New SfDateTimeEdit()
 
 Me.Controls.Add(sfDateTimeEdit)
 
@@ -96,6 +98,7 @@ In a real-time appointment scenario, the appointment is open only for a limited 
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 Syncfusion.WinForms.Input.SfDateTimeEdit dateTimeEdit = new Syncfusion.WinForms.Input.SfDateTimeEdit();
 
@@ -110,6 +113,7 @@ dateTimeEdit.MaxDateTime = new DateTime(2018, 2, 27);
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 Dim dateTimeEdit As New Syncfusion.WinForms.Input.SfDateTimeEdit()
 
@@ -129,22 +133,24 @@ dateTimeEdit.MaxDateTime = New DateTime(2018, 2, 27)
 
 ## Editing mode
 
-The date-time value in the DateTimeEdit can be edited by two ways as follows.
+The date-time value in the DateTimeEdit can be edited in two ways as follows.
 
 * Default Editing 
 * Mask Editing
 
-Editing modes can be changed using the [DateTimeEditingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_DateTimeEditingMode) property of SfDateTimEdit. The following code example demonstrates how to change the date-time editing mode.
+Editing modes can be changed using the [DateTimeEditingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_DateTimeEditingMode) property of SfDateTimeEdit. The following code example demonstrates how to change the date-time editing mode.
 
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 dateTimeEdit.DateTimeEditingMode = DateTimeEditingMode.Mask;
 
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 dateTimeEdit.DateTimeEditingMode = DateTimeEditingMode.Mask
 
@@ -156,11 +162,12 @@ dateTimeEdit.DateTimeEditingMode = DateTimeEditingMode.Mask
 
 ## Allow null value
 
-The **SfDateTimEdit** allows you to set [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_Value) to null in the mask mode of DateTimeEditing when [AllowNull](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_AllowNull) is set to true.
+The **SfDateTimeEdit** allows you to set [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_Value) to null in the mask mode of DateTimeEditing when [AllowNull](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_AllowNull) is set to true.
 
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 dateTimeEdit.DateTimeEditingMode = DateTimeEditingMode.Mask;
 
@@ -171,6 +178,7 @@ dateTimeEdit.Watermark = "Choose a date";
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 dateTimeEdit.DateTimeEditingMode = DateTimeEditingMode.Mask
 
@@ -182,7 +190,7 @@ dateTimeEdit.Watermark = "Choose a date"
 
 {% endtabs %}
 
-![SfDateTimEdit allows null value](watermark-images/watermark.png)
+![SfDateTimeEdit allows null value](watermark-images/watermark.png)
 
 ## Custom format
 
@@ -191,6 +199,7 @@ The custom pattern can be displayed in the **SfDateTimeEdit** control using the 
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 dateTimeEdit.Value = new DateTime(2018, 2, 5);
 
@@ -203,6 +212,7 @@ dateTimeEdit.Format = "MM/dd/yy hh:mm:ss";
 {% endhighlight %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 dateTimeEdit.Value = New DateTime(2018, 2, 5)
 
@@ -220,11 +230,12 @@ dateTimeEdit.Format = "MM/dd/yy hh:mm:ss"
 
 ## Configure up-down
 
-You can edit value of DateTimeEdit using the up-down button by setting the [ShowUpDown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_ShowUpDown) property to `true`. The up-down button appears only when [DateTimeEditingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_DateTimeEditingMode) is set to mask.
+You can edit the value of DateTimeEdit using the up-down button by setting the [ShowUpDown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_ShowUpDown) property to `true`. The up-down button appears only when [DateTimeEditingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_DateTimeEditingMode) is set to mask.
 
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 //Enable the UpDown Button
 
@@ -233,6 +244,7 @@ this.dateTimeEdit.ShowUpDown = true;
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 'Enable the UpDown Button
 
@@ -251,6 +263,7 @@ You can get the current week number in `SfDateTimeEdit` control by changing the 
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 SfDateTimeEdit sfdateTimeEdit1 = new SfDateTimeEdit();
 CultureInfo info = new CultureInfo("en-EN");
@@ -260,6 +273,7 @@ sfdateTimeEdit1.Culture = info;
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 Dim sfdateTimeEdit1 As SfDateTimeEdit = New SfDateTimeEdit()
 Dim info As CultureInfo = New CultureInfo("en-EN")
