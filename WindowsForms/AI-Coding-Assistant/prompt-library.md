@@ -9,23 +9,40 @@ documentation: ug
 
 # Prompt Library - AI Coding Assistant
 
-Speed up your WinForms projects using these ready-made prompts for popular Syncfusion components. Each prompt is short, easy to understand, and focused on real tasks—like quick setups, tweaks, and fixes.
+Speed up your Windows Forms projects using these ready-made prompts for popular Syncfusion components. Each prompt is focused on a real task, such as quick setups, configuration tweaks, and troubleshooting.
 
 ## How to Use
 
-Before starting, make sure your MCP Server is set up and running.
+Before starting, make sure the **SyncfusionWinFormsAssistant MCP Server** is set up and running. For prerequisites and setup instructions, refer to the [SyncfusionWinFormsAssistant MCP Server](https://help.syncfusion.com/windowsforms/ai-coding-assistant/mcp-server) documentation.
 
-* Choose a prompt that fits your need.
-* Copy the full prompt with the #SyncfusionWinFormsAssistant handle.
-* Customize the prompt for your specific use case.
-* Execute via the MCP Server.
-* Always check and test the code before adding it to your project.
+1. Choose a prompt that fits your need.
+2. Copy the full prompt, including the `#SyncfusionWinFormsAssistant` handle.
+3. Customize the prompt for your specific use case.
+4. Paste the prompt into the MCP client chat box or the agent prompt area (when supported by the client) and submit it. The server processes the prompt and returns a response.
+5. Always review and test the generated code before adding it to your project.
+
+> The prompts in this library are designed for use through the SyncfusionWinFormsAssistant MCP Server. They are not intended for direct use in the standalone Syncfusion AI Coding Assistant.
+
+> Always check AI-generated content and code for accuracy before using it.
+
+## Table of Contents
+
+* [DataGrid](#datagrid)
+* [Chart](#chart)
+* [Diagram](#diagram)
+* [Ribbon](#ribbon)
+* [Docking Manager](#docking-manager)
+* [Calendar](#calendar)
+
+## Scope
+
+This library currently covers a focused set of Syncfusion Windows Forms components. Additional components will be added over time. If you need a prompt for a component that is not listed, you can still use the SyncfusionWinFormsAssistant MCP Server with a custom prompt.
 
 ## Component-Specific Prompts
 
 ### DataGrid
 
-The Syncfusion WinForms DataGrid provides fast, flexible tabular views for large datasets with built-in interactivity. 
+The Syncfusion Windows Forms DataGrid provides fast, flexible tabular views for large datasets with built-in interactivity. 
 
 {% promptcards %} 
 {% promptcard Paging and Sorting %} 
@@ -38,7 +55,7 @@ The Syncfusion WinForms DataGrid provides fast, flexible tabular views for large
 #SyncfusionWinFormsAssistant Give me the code example to perform full CRUD operations in the Syncfusion WinForms DataGrid? 
 {% endpromptcard %} 
 {% promptcard Export to PDF and Excel %} 
-#SyncfusionWinFormsAssistant How to export DataGrid data to PDF and Excel in the Syncfusion WinForms DataGrid? 
+#SyncfusionWinFormsAssistant How to export DataGrid data to PDF and Excel in the Syncfusion Windows Forms DataGrid? 
 {% endpromptcard %} 
 {% promptcard Virtual Scrolling %} 
 #SyncfusionWinFormsAssistant How to configure virtual scrolling for large datasets in the DataGrid? 
@@ -49,8 +66,8 @@ The Syncfusion WinForms DataGrid provides fast, flexible tabular views for large
 {% promptcard Advanced DataGrid Features %} 
 #SyncfusionWinFormsAssistant Show me a DataGrid with paging, sorting, grouping, filtering, and virtual scrolling. 
 {% endpromptcard %} 
-{% promptcard Troubleshooting DataGrid Export %} 
-#SyncfusionWinFormsAssistant Why isn’t my DataGrid exporting to PDF and Excel correctly? 
+{% promptcard Troubleshoot DataGrid Export %} 
+#SyncfusionWinFormsAssistant Why is my DataGrid not exporting to PDF and Excel correctly, and how can I diagnose the issue? 
 {% endpromptcard %} 
 {% promptcard Cell Editing %} 
 #SyncfusionWinFormsAssistant How to enable cell editing in the DataGrid? 
@@ -62,14 +79,14 @@ The Syncfusion WinForms DataGrid provides fast, flexible tabular views for large
 
 ### Chart
 
-The Syncfusion WinForms Chart suite offers versatile visualizations across many series types for clear, insightful data representation. 
+The Syncfusion Windows Forms Chart suite offers versatile visualizations across many series types for clear, insightful data representation. 
 
 {% promptcards %} 
 {% promptcard Data Binding %} 
 #SyncfusionWinFormsAssistant How to bind data sources to a Syncfusion WinForms Chart for dynamic visualization? 
 {% endpromptcard %} 
-{% promptcard MVVM Support %} 
-#SyncfusionWinFormsAssistant How can I integrate Syncfusion WinForms Charts with MVVM-style patterns for clean architecture? 
+{% promptcard Application Architecture Patterns %} 
+#SyncfusionWinFormsAssistant How can I structure a Syncfusion WinForms Chart with clean separation of UI and logic and binding-friendly patterns? 
 {% endpromptcard %} 
 {% promptcard Chart Types %} 
 #SyncfusionWinFormsAssistant What chart types are available in Syncfusion WinForms Chart and how to configure them? 
@@ -78,7 +95,7 @@ The Syncfusion WinForms Chart suite offers versatile visualizations across many 
 #SyncfusionWinFormsAssistant How to enable zooming and panning in WinForms Charts for large datasets? 
 {% endpromptcard %} 
 {% promptcard Trendlines %} 
-#SyncfusionWinFormsAssistant Add trendlines to highlight patterns and predictions in WinForms Charts. 
+#SyncfusionWinFormsAssistant Add trendlines to highlight patterns and predictions in Windows Forms Charts. 
 {% endpromptcard %} 
 {% promptcard Export to Image or PDF %} 
 #SyncfusionWinFormsAssistant How to export a Syncfusion Chart to PDF or an image format? 
@@ -89,27 +106,27 @@ The Syncfusion WinForms Chart suite offers versatile visualizations across many 
 {% promptcard Data Labels and Tooltips %} 
 #SyncfusionWinFormsAssistant Enable tooltips and data labels in a Syncfusion WinForms Chart. 
 {% endpromptcard %} 
-{% promptcard Tooltips and Trackball %}
-#SyncfusionWinFormsAssistant Show interactive tooltips and a trackball with formatted labels and multiple series value display.
-{% endpromptcard %}
-{% promptcard Axes and Multiple Axes %}
-#SyncfusionWinFormsAssistant Configure CategoryAxis, NumericalAxis, DateTimeAxis, and add a secondary Y-axis with series mapped to it.
-{% endpromptcard %}
-{% promptcard Legend and Title %}
-#SyncfusionWinFormsAssistant Add chart title, subtitle, and a responsive legend (positioning, overflow modes) in a WinForms chart.
-{% endpromptcard %}
-{% promptcard Series Types Quick Setup %}
-#SyncfusionWinFormsAssistant Create a chart with Line, Spline, StepLine, Area, SplineArea, Column, Bar, Scatter, and Bubble series.
-{% endpromptcard %}
-{% promptcard Segment Color Mapping and Gradients %}
-#SyncfusionWinFormsAssistant Apply segment color mapping and gradient fills based on Y-value ranges.
-{% endpromptcard %}
-{% promptcard Axis Customization %}
-#SyncfusionWinFormsAssistant Configure axis intervals, labels format, inversed axis, axis crossing, and logarithmic axis.
-{% endpromptcard %}
-{% promptcard Gridlines and Chart Area Styling %}
-#SyncfusionWinFormsAssistant Customize major/minor gridlines, tick lines, chart area background, and border.
-{% endpromptcard %}
+{% promptcard Tooltips and Trackball %} 
+#SyncfusionWinFormsAssistant Show interactive tooltips and a trackball with formatted labels and multiple series value display. 
+{% endpromptcard %} 
+{% promptcard Axes and Multiple Axes %} 
+#SyncfusionWinFormsAssistant Configure CategoryAxis, NumericalAxis, DateTimeAxis, and add a secondary Y-axis with series mapped to it. 
+{% endpromptcard %} 
+{% promptcard Legend and Title %} 
+#SyncfusionWinFormsAssistant Add chart title, subtitle, and a responsive legend (positioning, overflow modes) in a Windows Forms chart. 
+{% endpromptcard %} 
+{% promptcard Series Types Quick Setup %} 
+#SyncfusionWinFormsAssistant Create a chart with Line, Spline, StepLine, Area, SplineArea, Column, Bar, Scatter, and Bubble series. 
+{% endpromptcard %} 
+{% promptcard Segment Color Mapping and Gradients %} 
+#SyncfusionWinFormsAssistant Apply segment color mapping and gradient fills based on Y-value ranges. 
+{% endpromptcard %} 
+{% promptcard Axis Customization %} 
+#SyncfusionWinFormsAssistant Configure axis intervals, labels format, inversed axis, axis crossing, and logarithmic axis. 
+{% endpromptcard %} 
+{% promptcard Gridlines and Chart Area Styling %} 
+#SyncfusionWinFormsAssistant Customize major/minor gridlines, tick lines, chart area background, and border. 
+{% endpromptcard %} 
 {% promptcard Drill-Down Support %} 
 #SyncfusionWinFormsAssistant How to implement drill-down functionality in WinForms Charts for detailed exploration? 
 {% endpromptcard %} 
@@ -150,11 +167,11 @@ The Syncfusion WinForms Diagram library is powerful, extensible, and feature-ric
 {% promptcard Export to Word Document %} 
 #SyncfusionWinFormsAssistant How to export a diagram to a Word document? 
 {% endpromptcard %} 
-{% promptcard Print support %} 
+{% promptcard Print Support %} 
 #SyncfusionWinFormsAssistant How to print a diagram on a single page? 
 {% endpromptcard %} 
 {% promptcard Serialization %} 
-#SyncfusionWinFormsAssistant How to serialize a node’s custom properties? 
+#SyncfusionWinFormsAssistant How to serialize a node's custom properties? 
 {% endpromptcard %} 
 {% promptcard Selection Handles Customization %} 
 #SyncfusionWinFormsAssistant Show me an example of customizing the appearance of selection handles? 
@@ -178,7 +195,7 @@ The Syncfusion WinForms Ribbon is an Office-inspired command bar with tabs and g
 {% promptcard ScreenTip / SuperToolTip %} 
 #SyncfusionWinFormsAssistant Configure ScreenTips or SuperToolTips on Ribbon items.
 {% endpromptcard %} 
-{% promptcard KeyTips %}
+{% promptcard KeyTips %} 
 #SyncfusionWinFormsAssistant How to enable and customize KeyTips (keyboard access keys) for Ribbon items? 
 {% endpromptcard %} 
 {% promptcard Serialization %} 
@@ -285,8 +302,8 @@ The Syncfusion WinForms Calendar supports flexible date selection, localization,
 {% promptcard Multi-Selection and Range %} 
 #SyncfusionWinFormsAssistant Enable both multi-date selection and range selection in the Calendar. 
 {% endpromptcard %} 
-{% promptcard Troubleshooting Date Range %} 
-#SyncfusionWinFormsAssistant Why isn’t my Calendar selecting the correct date range? 
+{% promptcard Troubleshoot Date Range %} 
+#SyncfusionWinFormsAssistant Why is my Calendar not selecting the correct date range, and how can I diagnose the issue? 
 {% endpromptcard %} 
 {% promptcard Advanced Calendar Setup %} 
 #SyncfusionWinFormsAssistant Create a Calendar with date range, multi-selection, globalization, and weekend highlights. 
@@ -297,3 +314,5 @@ The Syncfusion WinForms Calendar supports flexible date selection, localization,
 
 * [AI Coding Assistant Overview](https://help.syncfusion.com/windowsforms/ai-coding-assistant/overview)
 * [SyncfusionWinFormsAssistant MCP Server](https://help.syncfusion.com/windowsforms/ai-coding-assistant/mcp-server)
+* [Syncfusion Windows Forms Documentation](https://help.syncfusion.com/windowsforms/overview)
+* [Syncfusion Windows Forms Components](https://help.syncfusion.com/windowsforms/control-dependencies)

@@ -17,16 +17,25 @@ The WinForms Skin Manager library provides support to set a theme for all Syncfu
 * Office2016 (White, Dark Gray, Black and Colorful)
 * Office2019 (Colorful)
 * Metro
+* HighContrast (HighContrastBlack)
 
-This feature enables you to easily apply uniform style for all the child controls in the application.
+This feature enables you to easily apply a uniform style for all the child controls in the application.
 
 ![Overview of SkinManager](skin_images/overview.png)
 
-## IT scenarios
+## Scenarios
 
-When you create an application with multiple controls, you can apply uniform color for the entire form using this feature. 
+When you create an application with multiple controls, you can apply a uniform color for the entire form using this feature.
 
-Properties and Methods Tables for Skin Manager 
+## Version compatibility
+
+Refer to the official documentation for the minimum Syncfusion WinForms version and the supported .NET Framework or .NET versions required to use the SkinManager component. The exact behavior may vary based on the installed Syncfusion version.
+
+## Getting started
+
+Refer to the [Getting Started documentation](Getting-Started.md) for step-by-step instructions on creating a new Windows Forms project, adding the SkinManager component, loading theme assemblies, and applying themes through both the designer and code.
+
+## Properties and Methods
 
 ### Properties
 
@@ -69,7 +78,7 @@ Reference links </th></tr>
 <td>
 SetVisualTheme(Control,VisualTheme)</td><td>
 Specifies the parent control and theme has to be applied </td><td>
-Overloads: 1) (Control, String) 2) (Control,VisualTheme) </td><td>
+Overloads: 1. (Control, String) 2. (Control,VisualTheme) </td><td>
 NA </td><td>
 Void </td><td>
 NA </td></tr>

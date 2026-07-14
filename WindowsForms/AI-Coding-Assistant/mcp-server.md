@@ -23,13 +23,14 @@ The [SyncfusionWinFormsAssistant](https://www.npmjs.com/package/@syncfusion/winf
 
 Before using [SyncfusionWinFormsAssistant](https://www.npmjs.com/package/@syncfusion/winforms-assistant), ensure you have:
 
-* Required [node](https://nodejs.org/en/) version >= 18
-* A [compatible MCP client](https://modelcontextprotocol.io/clients) (VS Code with GitHub Copilot, [Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio](https://www.syncfusion.com/code-studio/), etc.)
+* A supported [Node.js](https://nodejs.org/en/) version (18 or later is recommended).
+* A [compatible MCP client](https://modelcontextprotocol.io/clients). Common options include VS Code with GitHub Copilot, [Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio](https://www.syncfusion.com/code-studio/), Visual Studio with GitHub Copilot, Cursor, and JetBrains IDEs with the AI Assistant plugin.
+* Outbound network access to the npm registry so that `npx` can download the `@syncfusion/winforms-assistant` package the first time the MCP server starts.
 * An active Syncfusion<sup style="font-size:70%">&reg;</sup> license (any of the following):
   - [Commercial License](https://www.syncfusion.com/sales/unlimitedlicense)
   - [Free Community License](https://www.syncfusion.com/products/communitylicense)
   - [Free Trial](https://www.syncfusion.com/account/manage-trials/start-trials)
-* An active [API KEY](https://syncfusion.com/account/api-key)
+* An active [API KEY](https://syncfusion.com/account/api-key).
 
 ## Unlimited Access
 
@@ -42,41 +43,65 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> offers unlimited access to this
 
 This ensures users can fully leverage Syncfusion<sup style="font-size:70%">&reg;</sup> components to enhance their development experience without limitations.
 
-## Installation and setup
+## Installation and Setup
 
-Before you can invoke the `SyncfusionWinFormsAssistant` MCP server, you need to configure your MCP client with these core settings. The **Generic MCP Server Settings** shown below are identical across all clients:
+Before you can invoke the `SyncfusionWinFormsAssistant` MCP server, you need to configure your MCP client with the core settings described below. The **Generic MCP Server Settings** are identical across all clients; the per-client sections show the exact configuration format each IDE expects.
 
 ### Generic MCP Server Settings
 
-- **npm package name**: `@syncfusion/winforms-assistant`
-- **Type**: stdio (standard input/output transport)
-- **Command**: npx
-- **Arguments**: -y
-- **Server name**: SyncfusionWinFormsAssistant
+| Setting         | Value                                            |
+|-----------------|--------------------------------------------------|
+| npm package name | `@syncfusion/winforms-assistant`               |
+| Type            | stdio (standard input/output transport)          |
+| Command         | `npx`                                            |
+| Arguments       | `["-y", "@syncfusion/winforms-assistant@latest"]` |
+| Server name     | `SyncfusionWinFormsAssistant`                    |
 
-You need to add your [Syncfusion API key](https://syncfusion.com/account/api-key) as an env parameter in the configuration file:
+The `-y` flag automatically confirms the npm install prompt, and the package spec that follows tells `npx` which package to run. Add your [Syncfusion API key](https://syncfusion.com/account/api-key) as an environment variable in the configuration file:
 
-```json
+{% capture codesnippet1 %}
+{% tabs %}
+
+{% highlight json %}
+
 "env": {
   "Syncfusion_API_Key": "YOUR_API_KEY"
 }
-```
 
-Below are setup instructions for popular MCP clients:
+{% endhighlight %}
+
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
+
+### Environment Variable
+
+| Name                 | Required | Description                                                  |
+|----------------------|----------|--------------------------------------------------------------|
+| `Syncfusion_API_Key` | Yes      | Your Syncfusion API key, used to authenticate with the server. |
+
+The server name shown in the configuration may vary by client (for example, Code Studio uses `winforms-mcp`). Use the server name recommended by the specific client configuration; the value is a local identifier and does not affect the underlying package or behavior.
+
+The setup instructions below cover popular MCP clients. After editing a configuration file, restart or reload the MCP client so that the new server is discovered.
 
 ### Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio
 
-* In [Code Studio](https://www.syncfusion.com/code-studio/), open MCP Marketplace and navigate to the `Custom Servers` tab.
-* Enter the Server Name as `winforms-mcp`, choose Server Type as npm package, and set the NPM Package name to `@syncfusion/winforms-assistant`.
-* Add an environment variable as `Syncfusion_API_Key` and value as your [Syncfusion API key](https://syncfusion.com/account/api-key), then click **Install Server**.
-* Once installed, the server will appear in the User Installed Server list, and will be added to the **config.yaml** file.
-* The server is now ready for use in Code Studio. For more details, refer to the [Code Studio documentation](https://help.syncfusion.com/code-studio/reference/configure-properties/mcp/customservers#npm-server).
+1. In [Code Studio](https://www.syncfusion.com/code-studio/), open the MCP Marketplace and navigate to the **Custom Servers** tab.
+2. Enter the Server Name as `winforms-mcp`, choose Server Type as **npm package**, and set the NPM Package name to `@syncfusion/winforms-assistant`.
+3. Add an environment variable named `Syncfusion_API_Key` with your [Syncfusion API key](https://syncfusion.com/account/api-key) as the value, then click **Install Server**.
+4. Once installed, the server appears in the User Installed Server list and is added to the `config.yaml` file.
+5. Restart or reload Code Studio so the new server is picked up.
+6. For more details, refer to the [Code Studio documentation](https://help.syncfusion.com/code-studio/reference/configure-properties/mcp/customservers#npm-server).
 
 ### Visual Studio Code (GitHub Copilot MCP)
 
-* To configure an MCP server for a specific workspace, you can create a `.vscode/mcp.json` file in your workspace folder.
+1. To configure an MCP server for a specific workspace, create a `.vscode/mcp.json` file in your workspace folder:
 
-```json
+{% capture codesnippet1 %}
+{% tabs %}
+
+{% highlight json %}
+
 {
   "servers": {
     "syncfusion-winforms-assistant": {
@@ -92,19 +117,27 @@ Below are setup instructions for popular MCP clients:
     }
   }
 }
-```
 
-* After updating the configuration in mcp.json, you'll notice a "Start" option at the top of the config. This allows you to easily start the [SyncfusionWinFormsAssistant](https://www.npmjs.com/package/@syncfusion/winforms-assistant) server directly from the settings interface without additional commands.
+{% endhighlight %}
 
-* Confirm the server is active by checking for a message like: `SyncfusionWinFormsAssistant is running...` in the output.
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-* For additional guidance, refer to the [VS Code documentation](https://code.visualstudio.com/docs/copilot/customization/mcp-servers#_add-an-mcp-server).
+2. After updating the configuration file, restart or reload the VS Code window so that the new server is discovered.
+3. You may notice a **Start** option at the top of the configuration. Use it to start the [SyncfusionWinFormsAssistant](https://www.npmjs.com/package/@syncfusion/winforms-assistant) server directly from the settings interface.
+4. Confirm the server is active by checking for a message such as `SyncfusionWinFormsAssistant is running...` in the output.
+5. For additional guidance, refer to the [VS Code documentation](https://code.visualstudio.com/docs/copilot/customization/mcp-servers#_add-an-mcp-server).
 
 ### Visual Studio (GitHub Copilot MCP)
 
-* To configure an MCP server for a specific workspace, you can create a `.vs/mcp.json` file in your workspace folder.
+1. To configure an MCP server for a specific workspace, create a `.vs/mcp.json` file in your workspace folder:
 
-```json
+{% capture codesnippet1 %}
+{% tabs %}
+
+{% highlight json %}
+
 {
   "servers": {
     "syncfusion-winforms-assistant": {
@@ -120,17 +153,29 @@ Below are setup instructions for popular MCP clients:
     }
   }
 }
-```
 
-* After updating the mcp.json configuration, open the GitHub Copilot Chat window. Click the Ask arrow, then select Agent.
-* Select the [SyncfusionWinFormsAssistant](https://www.npmjs.com/package/@syncfusion/winforms-assistant) from the tools section.
-* For more details, refer to the official [Visual Studio documentation](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022).
+{% endhighlight %}
+
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
+
+2. After updating the configuration file, restart Visual Studio so the new server is picked up.
+3. Open the GitHub Copilot Chat window, click the **Ask** arrow, and then select **Agent**.
+4. Select [SyncfusionWinFormsAssistant](https://www.npmjs.com/package/@syncfusion/winforms-assistant) from the tools section.
+5. For more details, refer to the official [Visual Studio documentation](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022).
+
+> Supported Visual Studio versions may vary. Refer to the official Visual Studio documentation for the versions that support MCP servers.
 
 ### Cursor
 
-To configure an MCP server for a specific workspace, you can create a .cursor/mcp.json file in your workspace folder.
+1. To configure an MCP server for a specific workspace, create a `.cursor/mcp.json` file in your workspace folder:
 
-```json
+{% capture codesnippet1 %}
+{% tabs %}
+
+{% highlight json %}
+
 {
   "mcpServers": {
     "syncfusion-winforms-assistant": {
@@ -141,21 +186,34 @@ To configure an MCP server for a specific workspace, you can create a .cursor/mc
         "@syncfusion/winforms-assistant@latest"
       ],
       "env": {
-       "Syncfusion_API_Key": "YOUR_API_KEY"
+        "Syncfusion_API_Key": "YOUR_API_KEY"
       }
     }
   }
 }
-```
-For more details, refer to the [Cursor documentation](https://cursor.com/docs/context/mcp#using-mcp-json).
+
+{% endhighlight %}
+
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
+
+2. After updating the configuration file, restart or reload Cursor so the new server is discovered.
+3. For more details, refer to the [Cursor documentation](https://cursor.com/docs/context/mcp#using-mcp-json).
+
+> The exact configuration format may differ between Cursor versions. Use the client-specific configuration format supported by your IDE.
 
 ### JetBrains IDEs
 
-* Go to Settings -> Tools -> AI Assistant -> Model Context Protocol (MCP).
-* Click + Add to add a new MCP server configuration.
-* In the New MCP Server dialog, switch the dropdown as `As JSON` and add the following config:
+1. Go to **Settings** → **Tools** → **AI Assistant** → **Model Context Protocol (MCP)**.
+2. Click **+ Add** to add a new MCP server configuration.
+3. In the **New MCP Server** dialog, switch the dropdown to **As JSON** and add the following configuration:
 
-```json
+{% capture codesnippet1 %}
+{% tabs %}
+
+{% highlight json %}
+
 {
   "mcpServers": {
     "syncfusion-winforms-assistant": {
@@ -165,72 +223,88 @@ For more details, refer to the [Cursor documentation](https://cursor.com/docs/co
         "@syncfusion/winforms-assistant@latest"
       ],
       "env": {
-       "Syncfusion_API_Key": "YOUR_API_KEY"
+        "Syncfusion_API_Key": "YOUR_API_KEY"
       }
     }
   }
 }
-```
 
-* Click OK and Apply.
+{% endhighlight %}
+
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
+
+4. Click **OK** and then **Apply**.
+5. Restart the IDE so the new server is picked up.
 
 For further assistance, see the [JetBrains documentation](https://www.jetbrains.com/help/ai-assistant/mcp.html#connect-to-an-mcp-server).
 
-> For more detailed information about configuring MCP servers in various clients, refer to the official documentations, e.g., [Windsurf](https://docs.windsurf.com/windsurf/cascade/mcp#mcp-config-json)
+> JetBrains IDEs may require a minimum version that supports native MCP integration. Refer to the JetBrains documentation for the supported versions.
+
+> For more detailed information about configuring MCP servers in additional clients, refer to the official documentation, e.g., [Windsurf](https://docs.windsurf.com/windsurf/cascade/mcp#mcp-config-json).
 
 ## Usage
 
 To activate the SyncfusionWinFormsAssistant MCP server:
 
-1. Start your prompt with one of the following:
-    * 'SyncfusionWinFormsAssistant'
-    * '/syncfusion-winforms-assistant'
-    * '/syncfusion-winforms'
-    * '@syncfusion-winforms'
-    * '@ask_syncfusion_winforms'
-    * 'winforms'
+1. Start your prompt with one of the supported handles. In VS Code, you can also use `#SyncfusionWinFormsAssistant` for direct invocation.
 
-   In VS Code, you can also use #SyncfusionWinFormsAssistant for direct invocation.
+   | Handle                          | Typical Client Context             |
+   |---------------------------------|------------------------------------|
+   | `SyncfusionWinFormsAssistant`   | Generic identifier                 |
+   | `/syncfusion-winforms-assistant` | Slash-command style trigger        |
+   | `/syncfusion-winforms`          | Short slash-command trigger        |
+   | `@syncfusion-winforms`          | Mention-style trigger              |
+   | `@ask_syncfusion_winforms`      | Ask-style mention trigger          |
+   | `winforms`                      | Short keyword trigger              |
+   | `#SyncfusionWinFormsAssistant`  | VS Code direct invocation          |
 
-2. Grant permission for the server to run (for the session, workspace, or always).
+2. When the client prompts you, grant permission for the server to run for the current session, the current workspace, or always. The exact wording of the permission prompt depends on the MCP client; refer to the client's documentation for details.
 3. For best results, start a new chat for each new topic to maintain clean context.
 
-### Mode availability
+### Mode Availability
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> MCP Servers provide full access to all AI interaction modes — Ask/Chat, Edit, and Agent — across supported MCP clients.
+Syncfusion<sup style="font-size:70%">&reg;</sup> MCP servers are designed to support common AI interaction modes such as Ask, Chat, Edit, and Agent. Available modes depend on the MCP client and version you are using. Refer to your client's documentation to confirm which modes are supported.
 
 ### Best Practices for Effective Usage
 
-1. `Be specific`: Mention both platform and component (e.g., "How do I create a Syncfusion Windows Forms DataGrid with paging and filtering?").
-2. `Provide context`: Include details about your use case for more targeted solutions.
-3. `Use descriptive queries`: Avoid vague questions that lack necessary context.
-4. `Start fresh for new topics`: Begin a new chat session when switching components or topics.
+1. **Be specific:** Mention both platform and component (for example, "How do I create a Syncfusion Windows Forms DataGrid with paging and filtering?").
+2. **Provide context:** Include details about your use case for more targeted solutions.
+3. **Use descriptive queries:** Avoid vague questions that lack necessary context.
+4. **Start fresh for new topics:** Begin a new chat session when switching components or topics.
 
 ### Example Queries
 
 Here are some effective ways to use [SyncfusionWinFormsAssistant](https://www.npmjs.com/package/@syncfusion/winforms-assistant):
 
- * "Create a Syncfusion Windows Forms DataGrid component with paging, sorting and filtering"
- * "How do I implement data binding with Syncfusion Windows Forms Scheduler?"
+* "Create a Syncfusion Windows Forms DataGrid component with paging, sorting, and filtering."
+* "How do I implement data binding with the Syncfusion Windows Forms Scheduler?"
 
 ## Troubleshooting
 
-If you encounter issues:
+If you encounter issues, review the following common causes and actions:
 
- * Verify your API key is correctly configured.
- * Ensure the MCP server is enabled in your client's tools selection.
- * Check that you're using a compatible MCP client version.
- * Try restarting your development environment.
+* **Missing or invalid API key:** Verify that the `Syncfusion_API_Key` environment variable is set in the configuration file and that the value matches the API key from your [Syncfusion account](https://syncfusion.com/account/api-key).
+* **`npx` package download failure:** Confirm that you have outbound network access to the npm registry and that Node.js is installed and on a supported version.
+* **Network issues:** Firewalls, proxies, or restricted networks can prevent `npx` from downloading the package. Use a network that allows access to the npm registry.
+* **MCP client not restarted:** After editing a configuration file, restart or reload the MCP client so the new server is discovered.
+* **Server not discovered by the client:** Confirm that the configuration file is in the expected location for your client (for example, `.vscode/mcp.json` for VS Code) and that the JSON is valid.
+* **Permission prompt not accepted:** When the client asks for permission to run the server, choose to allow it for the current session, workspace, or always.
+
+Log locations vary by MCP client. Refer to the client documentation for log details.
 
 ## Support
 
-Product support is available through the following mediums.
+Product support is available through the following channels:
 
-* [Support ticket](https://support.syncfusion.com/support/tickets/create) - Guaranteed Response in 24 hours \| Unlimited tickets \| Holiday support
+* [Support ticket](https://support.syncfusion.com/support/tickets/create) - Guaranteed response in 24 hours | Unlimited tickets | Holiday support
 * [Community forum](https://www.syncfusion.com/forums/windowsforms)
 * [Request feature or report bug](https://www.syncfusion.com/feedback/winforms)
 * Live chat
 
 ## See also
 
+* [Syncfusion AI Coding Assistant Overview](https://help.syncfusion.com/windowsforms/ai-coding-assistant/overview)
+* [Prompt Library](https://help.syncfusion.com/windowsforms/ai-coding-assistant/mcp-server)
 * [Syncfusion Windows Forms Documentation](https://help.syncfusion.com/windowsforms/overview)
