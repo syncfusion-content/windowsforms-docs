@@ -7,14 +7,22 @@ control: Installation and Deployment
 documentation: ug
 ---
 
-# Installaing Syncfusion Windows Forms Web Installer
+# Installing Syncfusion Windows Forms Web Installer
 
 
 ## Overview
 
-For the Essential Studio Windows Forms product, Syncfusion offers a Web Installer. This installer alleviates the burden of downloading a larger installer. You can simply download and run the online installer, which will be smaller in size and will download and install the Essential Studio products you have chosen. You can get the most recent version of Essential Studio Web Installer [here](https://www.syncfusion.com/downloads/latest-version). 
+For the Essential Studio Windows Forms product, Syncfusion offers a Web Installer. This installer alleviates the burden of downloading a larger installer. You can simply download and run the online installer, which will be smaller in size and will download and install the Essential Studio products you have chosen. You can get the most recent version of Essential Studio Web Installer [here](https://www.syncfusion.com/downloads/latest-version). For downloading instructions, see [Downloading the Windows Forms Web Installer](https://help.syncfusion.com/windowsforms/installation/web-installer/how-to-download).
 
- 
+## Prerequisites
+
+Before running the Web Installer, make sure the following prerequisites are met:
+
+* Administrative privileges on the machine.
+* An active internet connection throughout the installation.
+* A supported Windows operating system and supported .NET version. Refer to the [System Requirements](https://help.syncfusion.com/windowsforms/system-requirements) page.
+* A valid Syncfusion account with an active license or trial. For instructions on creating an account, see [Downloading the Windows Forms Web Installer](https://help.syncfusion.com/windowsforms/installation/web-installer/how-to-download).
+
 ## Installation
 
 The steps below show how to install Essential Studio Windows Forms Web Installer.
@@ -24,7 +32,7 @@ The steps below show how to install Essential Studio Windows Forms Web Installer
     ![Installer Extraction Wizard](images/Step-by-Step-Installation_img1.png)
 
     
-    N> The installer wizard extracts the syncfusionessentialwpfwebinstaller_{version}.exe dialog, which displays the package's unzip operation.
+    N> The installer wizard extracts the syncfusionessentialwindowsformswebinstaller_{version}.exe dialog, which displays the package's unzip operation.
     
 2. 	The Syncfusion Windows Forms Web Installer's welcome wizard will be displayed. Click the Next button.
 
@@ -43,7 +51,7 @@ The steps below show how to install Essential Studio Windows Forms Web Installer
 	
     ![Platform Selection wizard Installed](images/Step-by-Step-Installation_img24.png)
 	
-	I> If the required software for the selected product isn't already installed, the **Additional Software Required** alert will appear. You can, however, continue the installation and install the necessary software later.
+	I> If the required software for the selected product isn't already installed, the **"Additional Software Required"** alert will appear. You can, however, continue the installation and install the necessary software later.
 	
 	**Required Software**
 	
@@ -54,7 +62,7 @@ The steps below show how to install Essential Studio Windows Forms Web Installer
 
 	![Existing Version for install](images/Step-by-Step-Installation_img20.png)
 	
-	N> From the 2021 Volume 1 release, Syncfusion has provided option to uninstall the previous versions from 18.1 while installing the new version.
+	N> From the 2021 Volume 1 release, Syncfusion has provided the option to uninstall the previous versions from 18.1 while installing the new version. Installer behavior may vary depending on the installed Syncfusion version; refer to the release notes for version-specific behavior.
 	
 	
 5.	Pop up screen will be displayed to get the confirmation to uninstall selected previous versions.
@@ -74,23 +82,25 @@ The steps below show how to install Essential Studio Windows Forms Web Installer
     ![Install and samples location for install](images/Step-by-Step-Installation_img8.png)
 	
 	**Additional settings**
-	
-    * Select the **Install Demos** check box to install Syncfusion samples, or leave the check box unchecked, if you do not want to install Syncfusion samples
-	* Select the **Register Syncfusion Assemblies in GAC** check box to install the latest Syncfusion assemblies in GAC, or clear this check box when you do not want to install the latest assemblies in GAC.
-    * Select the **Configure Syncfusion controls in Visual Studio** check box to configure the Syncfusion controls in the Visual Studio toolbox, or clear this check box when you do not want to configure the Syncfusion controls in the Visual Studio toolbox during installation. Note that you must also select the Register Syncfusion assemblies in GAC check box when you select this check box.
-    * Select the **Configure Syncfusion Extensions controls in Visual Studio** checkbox to configure the Syncfusion Extensions in Visual Studio or clear this check box when you do not want to configure the Syncfusion Extensions in Visual Studio.
-    * Check the **Create Desktop Shortcut** checkbox to add a desktop shortcut for Syncfusion Control Panel
-    * Check the **Create Start Menu Shortcut** checkbox to add a shortcut to the start menu for Syncfusion Control Panel
+
+    * Select the **Install Demos** check box to install Syncfusion samples. Leave the check box unchecked if you do not want to install Syncfusion samples.
+	* Select the **Register Syncfusion Assemblies in GAC** check box to install the latest Syncfusion assemblies in GAC. Clear this check box when you do not want to install the latest assemblies in GAC.
+    * Select the **Configure Syncfusion controls in Visual Studio** check box to configure the Syncfusion controls in the Visual Studio toolbox. Clear this check box when you do not want to configure the Syncfusion controls in the Visual Studio toolbox during installation. Note that you must also select the **Register Syncfusion Assemblies in GAC** check box when you select this check box.
+    * Select the **Configure Syncfusion Extensions controls in Visual Studio** checkbox to configure the Syncfusion Extensions in Visual Studio. Clear this check box when you do not want to configure the Syncfusion Extensions in Visual Studio.
+    * Check the **Create Desktop Shortcut** checkbox to add a desktop shortcut for Syncfusion Control Panel.
+    * Check the **Create Start Menu Shortcut** checkbox to add a shortcut to the start menu for Syncfusion Control Panel.
 
 
 
 8.  After reading the License Terms and Conditions, check the **I agree to the License Terms and Privacy Policy** check box. Click the Next button.
 
-9.  The login wizard will appear. You must enter your Syncfusion email address and password. If you do not already have a Syncfusion account, you can create one by clicking on **Create an Account**. If you have forgotten your password, click **Forgot Password** to create a new one. Click the Install button. 
+9.  The login wizard will appear. You must enter your Syncfusion email address and password. If you do not already have a Syncfusion account, you can create one by clicking on **Create an Account**. If you have forgotten your password, click **Forgot Password** to create a new one. Click the Install button.
 
     ![Login wizard install](images/Step-by-Step-Installation_img9.png)
-	
-	I> The products you have chosen will be installed based on your Syncfusion License (Trial or Licensed).
+
+	I> The products you have chosen will be installed based on your Syncfusion License (Trial or Licensed). With a Trial account, only the latest trial version can be installed; with a Licensed account, the installer unlocks the product using the license attached to the account.
+
+	N> If the login fails, confirm that you are using the email address and password registered with Syncfusion. If your account is not yet email-verified, complete the verification using the link sent to your registered email and try again. For persistent login issues, use the **Forgot Password** link to reset your password, or contact Syncfusion support.
 
 10. The download and installation\uninstallation progress will be displayed as shown below.
 
@@ -112,12 +122,14 @@ The steps below show how to install Essential Studio Windows Forms Web Installer
 
 Syncfusion Windows Forms installer can be uninstalled in two ways.
 
-   * Uninstall the Windows Forms using the Syncfusion Windows Forms web installer
-   * Uninstall the Windows Forms from Windows Control Panel
+   * Uninstall the Windows Forms using the Syncfusion Windows Forms web installer.
+   * Uninstall the Windows Forms from Windows Control Panel.
 
-Follow either one of the option below to uninstall Syncfusion Essential Studio Windows Forms installer.
-  
-**Option 1: Uninstall the Windows Forms using the Syncfusion Windows Forms web installer**
+Follow either one of the options below to uninstall Syncfusion Essential Studio Windows Forms installer.
+
+N> Side-by-side versions are handled independently. Uninstalling one Syncfusion version does not affect other Syncfusion versions installed on the same machine.
+
+### Option 1: Uninstall the Windows Forms using the Syncfusion Windows Forms web installer
 
 Syncfusion provides the option to uninstall products of the same version directly from the Web Installer application. Select the products to be uninstalled from the list, and Web Installer will uninstall them one by one.
 
@@ -184,3 +196,10 @@ N> If the **Syncfusion Essential Studio for Windows Forms {version}** entry is s
 	
 	* To open the Syncfusion Control Panel, click **Launch Control Panel**.
 
+## See Also
+
+* [Downloading the Windows Forms Web Installer](https://help.syncfusion.com/windowsforms/installation/web-installer/how-to-download)
+* [Installing the Windows Forms Offline Installer](https://help.syncfusion.com/windowsforms/installation/offline-installer/how-to-install)
+* [Downloading the Windows Forms Offline Installer](https://help.syncfusion.com/windowsforms/installation/offline-installer/how-to-download)
+* [Install Syncfusion WinForms NuGet packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
+* [Common Installation Errors](https://help.syncfusion.com/windowsforms/installation/installation-errors)

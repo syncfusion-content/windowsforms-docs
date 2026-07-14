@@ -7,7 +7,7 @@ control: Introduction
 documentation: ug
 ---
 
-> With the 2025 Volume 1 release, we will discontinue support for .NET 6.0 and 7.0 in WinForms, WPF, WinUI, and Document Processing Libraries. Please plan to upgrade to .NET 8.0 or higher.
+> With the 2025 Volume 1 release, support for .NET 6.0 and 7.0 has been discontinued in Syncfusion Windows Forms. Plan to upgrade to .NET 8.0 or higher. Refer to the [Syncfusion Windows Forms compatibility documentation](https://help.syncfusion.com/windowsforms/compatibility) and [release notes](https://help.syncfusion.com/windowsforms/release-notes) for the latest supported framework versions. Supported frameworks may vary depending on the installed Syncfusion version.
 
 # Welcome to Syncfusion<sup>®</sup> Essential<sup>®</sup> Windows Forms
 
@@ -15,10 +15,10 @@ Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> for Windows Forms is a com
 
 ## How to best read this user guide
 
-* The best way to get started is to read the “Getting Started” section of the documentation for the component you need. The “Getting Started” guide gives information needed before writing the code. All the other information can be referred when required.
-* Now, that you are familiar with the basics of using the component, the next step is to start integrating the component into your application. A good starting point is to refer to the code examples in the sample browser that contains hundreds of code samples. It is very likely that you can find a code example that resembles your intended usage scenario.
-* After you have integrated the component into your application by using one of the sample code examples as a starting point, that you would need additional information on specific features and API. The best option is to search the specific topic by using the search box available at the top of the user guide.
-* Another valuable resource is the API reference that provides detailed information on the object hierarchy as well as the settings available on every object.
+* The best way to get started is to read the “Getting Started” section of the documentation for the component you need. The “Getting Started” guide gives the information needed before writing the code. All the other information can be referred to when required.
+* Now that you are familiar with the basics of using the component, the next step is to start integrating the component into your application. A good starting point is to refer to the code examples in the sample browser that contains hundreds of code samples. It is very likely that you can find a code example that resembles your intended usage scenario.
+* After you have integrated the component into your application by using one of the sample code examples as a starting point, you may need additional information on specific features and APIs. The best option is to search the specific topic using the search box at the top of the user guide.
+* Another valuable resource is the [API reference](https://help.syncfusion.com/windowsforms/api) that provides detailed information on the object hierarchy as well as the settings available on every object.
 
 ## Controls list
 
@@ -75,7 +75,7 @@ background-color:transparent!important;
   <tr>
     <th id="title">GRIDS</th>
     <th id="title">LAYOUT</th>
-    <th id="title">NAVIGATION </th>
+    <th id="title">NAVIGATION</th>
     <th id="title">INPUT CONTROLS</th>
   </tr>
 
@@ -101,7 +101,7 @@ background-color:transparent!important;
   <tr>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/gridgrouping/getting-started">GridGroupingControl</a> </td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/layoutmanagers/cardlayout/gettingstarted">Card Layout</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/navigationview/getting-started">Breadcrumb</a> </td>
+    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/navigationview/getting-started">NavigationView</a> </td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/color-picker-dropdown/getting-started">Color Picker DropDown</a> </td>
   </tr>
   <tr>
@@ -162,7 +162,7 @@ background-color:transparent!important;
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/radial-gauge/linear-gauge">Linear Gauge</a> </td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/gradientpanelext/getting-started">GradientPanelExt</a></td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/tab-splitter-container/gettingstarted">Tab Splitter Container</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/numericupdown/getting-started">NumericUpdown</a> </td>
+    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/numericupdown/getting-started">NumericUpDown</a> </td>
   </tr>
   <tr>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/pivot-chart/getting-started">Pivot Chart</a> </td>
@@ -172,7 +172,7 @@ background-color:transparent!important;
   </tr>
   <tr>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/bullet-graph/getting-started">Bullet Graph</a> </td>
-   <td id="title">FILE VIEWERS &amp; EDITORS </td>
+   <td id="title">FILE VIEWERS &amp; EDITORS</td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/radial-menu/getting-started">Radial Menu</a> </td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/textbox/getting-started">TextBox</a> </td>
   </tr>
@@ -198,7 +198,7 @@ background-color:transparent!important;
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/skins/getting-started">Skins</a> </td>
     <td></td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/xptaskpane/creating-a-simple-xptaskpane">XPTaskPane</a></td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/radial-menu/getting-started">Radial Slider</a> </td>
+    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/radial-slider/getting-started">Radial Slider</a> </td>
   </tr>
   <tr>
     <td></td>
@@ -246,7 +246,7 @@ background-color:transparent!important;
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/metro-form/getting-started">Metro Form</a> </td>
     <td></td>
     <td></td>
-    <td id="title">MISCELLEANEOUS </td>
+    <td id="title">MISCELLANEOUS </td>
   </tr>
   <tr>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/watermark-text-provider/getting-started">BannerTextProvider</a> </td>
@@ -335,20 +335,77 @@ background-color:transparent!important;
 </tbody>
 </table>
 
-
+N> * **Predictive Analytics** is a Syncfusion data science component and is not a Windows Forms-specific control. It is listed here for reference.
+* The **File Format Frameworks** (Excel, PDF, PowerPoint, Word, ProjIO) are provided by the Syncfusion File Formats suite and may require separate Syncfusion File Format packages, depending on the installed Syncfusion version. Refer to the Syncfusion File Formats documentation for the required packages.
+* **Office 2007 Form** and **Office 2010 Form** are legacy UI styles that may be deprecated in modern .NET. Refer to the Syncfusion release notes for the latest support status.
+* **DICOM** is a Syncfusion Windows Forms control for viewing and processing DICOM medical images. Refer to its [Getting Started](https://help.syncfusion.com/windowsforms/dicom/getting-started) page for details.
 
 ## Licensing
 
-Refer [licensing](https://help.syncfusion.com/common/essential-studio/licensing/overview) documentation to learn about registering Syncfusion<sup>®</sup> license key in your Windows Forms application to use Syncfusion<sup>®</sup> controls without license message dialog at runtime.
+Refer to the [Licensing overview](https://help.syncfusion.com/common/essential-studio/licensing/overview) documentation to learn about registering the Syncfusion<sup>®</sup> license key in your Windows Forms application and to use Syncfusion<sup>®</sup> controls without a license message dialog at runtime.
+
+Generate the license key for your Syncfusion account from the [License Keys](https://www.syncfusion.com/account/manage-license-keys) page, then register it in your application. The exact registration step may vary based on the installed Syncfusion version. Refer to the Syncfusion [how to register in an application](https://help.syncfusion.com/common/essential-studio/licensing/how-to-register-in-an-application) documentation for details.
+
+The following example shows how to register the license key in the `Program.cs` (or `Main` method) of a Windows Forms application using the `Syncfusion.Licensing` assembly:
+
+{% capture codesnippet1 %}
+{% tabs %}
+
+{% highlight C# %}
+
+using Syncfusion.Licensing;
+
+static class Program
+{
+    [STAThread]
+    static void Main()
+    {
+        // Register the Syncfusion license key before initializing any Syncfusion control.
+        SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
+
+        Application.EnableVisualStyles();
+        Application.SetCompatibleTextRenderingDefault(false);
+        Application.Run(new Form1());
+    }
+}
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Imports Syncfusion.Licensing
+
+Module Program
+    Sub Main()
+        ' Register the Syncfusion license key before initializing any Syncfusion control.
+        SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY")
+
+        Application.EnableVisualStyles()
+        Application.SetCompatibleTextRenderingDefault(False)
+        Application.Run(New Form1())
+    End Sub
+End Module
+
+{% endhighlight %}
+
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
+
+N> For .NET Framework projects, the `Syncfusion.Licensing` assembly is referenced automatically when you install Syncfusion<sup>®</sup> Windows Forms. For NuGet-based projects (.NET 6+/8+), install the appropriate Syncfusion<sup>®</sup> package for the control used in your application. Refer to [Install Syncfusion Windows Forms NuGet packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) for details.
 
 ## Additional help resources
 
-The [Knowledge Base](https://support.syncfusion.com/kb/desktop/category/82) section contains responses to most of the common questions that other customers have asked in the past, so this would be a good place to search for topics that are not covered in the User Guide.
+The [Knowledge Base](https://support.syncfusion.com/kb/desktop/category/82) section contains responses to most of the common questions that other customers have asked in the past. This is a good place to search for topics that are not covered in the User Guide.
 
-Similar to the [Knowledge Base](https://support.syncfusion.com/kb/desktop/category/82), the [Forum](https://www.syncfusion.com/forums/windowsforms) section also contains responses to questions that other customers has asked us in the past.
+The [Forum](https://www.syncfusion.com/forums/windowsforms) section also contains responses to questions that other customers have asked us in the past. A valid Syncfusion account is required to post in the forum.
 
-## Support and feedback
+N> A valid Syncfusion account is required to access the Knowledge Base and the Forum.
 
-If you are unable to find the information that you are looking for in the self-help resources mentioned above then you contact us by creating a [support ticket](https://internalsupport.bolddesk.com/agent/tickets/create).
+## Support
+
+If you are unable to find the information that you are looking for in the self-help resources mentioned above, you can contact us by creating a [support ticket](https://support.syncfusion.com/supportportal). A valid Syncfusion account is required to create a support ticket.
+
+## Feedback
 
 Don’t see what you need? Please request it in our [feedback portal](https://www.syncfusion.com/feedback/winforms).

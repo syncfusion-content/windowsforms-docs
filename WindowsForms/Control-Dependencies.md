@@ -10,11 +10,46 @@ documentation: ug
 
 # Windows Forms Control Dependencies
 
-This section lists needed assembly or NuGet references to use any control in the  application. You can refer to the [deployment section](https://help.syncfusion.com/windowsforms/deployment) to know assembly installation location and [NuGet packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) section to know how to add NuGet reference.
- 
-You can refer to the [Syncfusion<sup>®</sup> controls section](https://help.syncfusion.com/windowsforms/add-syncfusion-controls) to learn how to add Syncfusion<sup>®</sup> control.
+This section lists the required assemblies and NuGet packages to use any Syncfusion<sup>®</sup> Windows Forms control in the application. You can refer to the [deployment section](https://help.syncfusion.com/windowsforms/deployment) to learn about the assembly installation location and the [NuGet packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) section to learn how to add a NuGet reference.
 
-N> Starting with version 16.2(2018 Vol 2), the `Syncfusion.Licensing.dll` will be added as reference for all the Syncfusion<sup>®</sup> Windows Forms controls. Please refer to this [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview) for more information.
+You can refer to the [Syncfusion<sup>®</sup> controls section](https://help.syncfusion.com/windowsforms/add-syncfusion-controls) to learn how to add a Syncfusion<sup>®</sup> control.
+
+N> **Last verified for:** Essential Studio Volume 4, 2025 (or later).
+
+## Prerequisites
+
+- A Windows Forms project targeting a supported .NET Framework / .NET (Core) version as listed in the [system requirements](https://help.syncfusion.com/windowsforms/system-requirements).
+- Syncfusion<sup>®</sup> Essential Studio installed, or a valid NuGet feed configured.
+
+## Verifying the references
+
+After adding the assemblies or NuGet packages, rebuild the project. In Visual Studio, open the **Reference Manager** for the project to confirm that the listed Syncfusion<sup>®</sup> assemblies are resolved without warnings.
+
+## Licensing
+
+N> Starting with version 16.2(2018 Vol 2), the `Syncfusion.Licensing.dll` is added as a reference for all the Syncfusion<sup>®</sup> Windows Forms controls. Please refer to this [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview) for more information.
+
+Register the license key in your application startup (for example, in `Program.cs` or `App.xaml.cs`) as shown below.
+
+
+{% capture codesnippet1 %}
+{% tabs %}
+
+{% highlight C# %}
+
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR_LICENSE_KEY");
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR_LICENSE_KEY")
+
+{% endhighlight %}
+
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## AutoComplete
 
@@ -736,6 +771,8 @@ Syncfusion.Diagram.Windows<br/>
 
 ### Import Visio Files into Diagram
 
+N> **Prerequisite:** Importing Visio files additionally requires the `Syncfusion.Diagram.Utility.Base` assembly and the Visio file-format dependencies on the target machine. Refer to the [Diagram getting started guide](https://help.syncfusion.com/windowsforms/diagram/getting-started) for runtime requirements.
+
 <table>
 <tr>
 <td>
@@ -790,7 +827,13 @@ Syncfusion.Gauge.Windows
 </tr>
 <tr>
 <td>
-<br/>Syncfusion.Tools.Windows<br/>Syncfusion.Grid.Base<br/>Syncfusion.Grid.Windows<br/>Syncfusion.Shared.Base<br/>Syncfusion.Shared.Windows<br/>Syncfusion.Tools.Base<br/></td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+</td>
 <td>
 Syncfusion.Tools.Windows
 </td>
@@ -894,6 +937,8 @@ Syncfusion.Shared.Base
 </table>
 
 ## EditControl
+
+N> To enable spell-check in the EditControl, also reference the [SpellChecker](#spellchecker) entry.
 
 <table>
 <tr>
@@ -1203,7 +1248,7 @@ Syncfusion.Grid.Grouping.Windows
 </table>
 
 ### Exporting GridGroupingControl to Excel, PDF and CSV
-For exporting grid contents to Excel, pdf or CSV, the following references needs to be added in your application.
+For exporting grid contents to Excel, PDF or CSV, the following references need to be added in your application.
 
 <table>
 <tr>
@@ -1376,6 +1421,8 @@ Syncfusion.HtmlToPdfConverter.IE.WinForms
 </tr>
 </table>
 
+N> **Deprecation notice:** `Syncfusion.HtmlToPdfConverter.IE.WinForms` uses the legacy Internet Explorer-based renderer, which is deprecated. Use the modern `Syncfusion.HtmlToPdfConverter.WinForms` converter in current releases.
+
 ## HTMLUIControl
 
 <table>
@@ -1497,7 +1544,7 @@ Syncfusion.Tools.Windows
 </tr>
 </table>
 
-## Linear Gauge
+## LinearGauge
 
 <table>
 <tr>
@@ -1872,6 +1919,8 @@ Syncfusion.OCRProcessor.Base
 </tr>
 </table>
 
+N> **Prerequisite:** The OCR Processor is only a wrapper; it depends on the Tesseract native binaries and the Tesseract language data files (`.traineddata`) that are not included in the NuGet package. Download the required `.traineddata` files and place them in the application's output directory. Refer to the [WinForms PDF Viewer getting started](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/winforms/getting-started) for setup steps.
+
 ## Office2007Form
 
 <table>
@@ -1962,6 +2011,8 @@ Syncfusion.PdfViewer.Windows
 </td>
 </tr>
 </table>
+
+N> **Deprecation notice:** `Syncfusion.PdfToImageConverter.Base` is a legacy dependency. In recent releases, the PDF Viewer uses a different rendering pipeline. Refer to the [WinForms PDF Viewer getting started](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/winforms/getting-started) for the current dependency list.
 
 ## PercentTextBox
 
@@ -2459,6 +2510,8 @@ Syncfusion.Shared.Base
 
 ## SfAIAssistView
 
+N> **AI provider configuration required:** The `SfAIAssistView` control must be configured with an AI provider (for example, OpenAI). Refer to the [AI AssistView getting started](https://help.syncfusion.com/windowsforms/ai-assistview/getting-started) for setup steps.
+
 <table>
 <tr>
 <td>
@@ -2533,6 +2586,8 @@ Refer to [themes section](#themes) for theming assembly references to apply them
 
 ## SfComboBox
 
+N> **Cross-dependency:** `SfComboBox` also requires `Syncfusion.SfInput.WinForms` for its input editor and selection behavior.
+
 <table>
 <tr>
 <td>
@@ -2580,7 +2635,7 @@ Syncfusion.SfDataGrid.WinForms
 </table>
 
 ### Exporting SfDataGrid to Excel, PDF and CSV
-For exporting grid contents to Excel, pdf or CSV, the following references needs to be added in your application.
+For exporting grid contents to Excel, PDF or CSV, the following references need to be added in your application.
 
 <table>
 <tr>
@@ -2652,6 +2707,8 @@ Syncfusion.Core.WinForms
 </tr>
 </table>
 
+Refer to [themes section](#themes) for theming assembly references to apply theme.
+
 ## SfTabbedForm
 
 <table>
@@ -2673,6 +2730,8 @@ Syncfusion.Tools.Windows
 </td>
 </tr>
 </table>
+
+Refer to [themes section](#themes) for theming assembly references to apply theme.
 
 ## SfListView
 
@@ -2765,6 +2824,8 @@ Syncfusion.Core.WinForms
 </tr>
 </table>
 
+Refer to [themes section](#themes) for theming assembly references to apply theme.
+
 ## SfSmithChart
 
 <table>
@@ -2808,6 +2869,8 @@ Syncfusion.Core.WinForms
 </td>
 </tr>
 </table>
+
+Refer to [themes section](#themes) for theming assembly references to apply theme.
 
 ## SkinManager
 
@@ -3270,7 +3333,7 @@ Syncfusion.Tools.Windows
 </tr>
 </table>
 
-## TabbedMDIManger
+## TabbedMDIManager
 
 <table>
 <tr>
@@ -3638,6 +3701,7 @@ Syncfusion.Tools.Windows
 
 ## Themes
 
+N> The theme assembly is required by all Syncfusion<sup>®</sup> WinForms controls. Add the assembly that matches the visual style you want to apply. The full theme catalog is documented in the [Skins (Visual Styles / SkinManager)](https://help.syncfusion.com/windowsforms/skins/getting-started) section.
 
 <table>
 <tr>
@@ -3657,3 +3721,14 @@ Syncfusion.Office2016Theme.WinForms
 </td>
 </tr>
 </table>
+
+## Troubleshooting
+
+- `FileNotFoundException` or `Could not load file or assembly 'Syncfusion.*'` — confirm that all required assemblies/NuGet packages for the control are added, the target framework matches, and the project's NuGet restore succeeded.
+- For controls marked with **Refer to [themes section](#themes)**, also add the theme assembly to apply a Syncfusion<sup>®</sup> theme.
+
+## See also
+
+- [Add Syncfusion<sup>®</sup> controls to a Windows Forms application](https://help.syncfusion.com/windowsforms/add-syncfusion-controls)
+- [Install NuGet packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
+- [Deployment guide](https://help.syncfusion.com/windowsforms/deployment)
