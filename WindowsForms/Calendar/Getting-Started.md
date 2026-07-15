@@ -105,7 +105,7 @@ calendar.SelectedDate = new System.DateTime(2019, 08, 12);
 {% endhighlight %}
 
 {% highlight VB %}
-using Syncfusion.WinForms.Input;
+Imports Syncfusion.WinForms.Input
 
 calendar.SelectedDate = New System.DateTime(2019, 08, 12)
 

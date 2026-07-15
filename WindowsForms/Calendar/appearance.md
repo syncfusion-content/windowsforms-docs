@@ -471,20 +471,20 @@ Before applying theme to SfCalendar, required theme assembly should be loaded as
 using Syncfusion.WinForms.Core;
 using Syncfusion.WinForms.Core.Events;
 
-         static class Program
+static class Program
+{
+    /// <summary>
+    /// The main entry point for the application.
+    /// </summary>
+    
+    static void Main()
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        
-        static void Main()
-        {
-            SfSkinManager.LoadAssembly(typeof(Office2016Theme).Assembly);
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
-        }
+        SfSkinManager.LoadAssembly(typeof(Office2016Theme).Assembly);
+        Application.EnableVisualStyles();
+        Application.SetCompatibleTextRenderingDefault(false);
+        Application.Run(new Form1());
     }
+}
 
 {% endhighlight  %}
 
@@ -493,18 +493,18 @@ using Syncfusion.WinForms.Core.Events;
 Imports Syncfusion.WinForms.Core
 Imports Syncfusion.WinForms.Core.Events
 
- Friend Module Program
-        ''' <summary>
-        ''' The main entry point for the application.
-        ''' </summary>
-        <STAThread>
-        Sub Main()
-            SfSkinManager.LoadAssembly(GetType(Office2016Theme).Assembly)
-            Application.EnableVisualStyles()
-            Application.SetCompatibleTextRenderingDefault(False)
-            Application.Run(New Form1())
-        End Sub
-    End Module
+Friend Module Program
+''' <summary>
+''' The main entry point for the application.
+''' </summary>
+<STAThread>
+Sub Main()
+    SfSkinManager.LoadAssembly(GetType(Office2016Theme).Assembly)
+    Application.EnableVisualStyles()
+    Application.SetCompatibleTextRenderingDefault(False)
+    Application.Run(New Form1())
+End Sub
+End Module
 
 {% endhighlight  %}
 

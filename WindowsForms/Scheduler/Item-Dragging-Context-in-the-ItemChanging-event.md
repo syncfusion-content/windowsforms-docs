@@ -67,6 +67,8 @@ using Syncfusion.Windows.Forms.Schedule;
 this.scheduleControl1.ItemChanging += new ScheduleAppointmentChangingEventHandler(scheduleControl1_ItemChanging);
 {% endhighlight %}
 {% highlight vb %}
+Imports Syncfusion.Windows.Forms.Schedule
+
 AddHandler scheduleControl1.ItemChanging, AddressOf scheduleControl1_ItemChanging
 {% endhighlight %}
 {% endtabs %}
