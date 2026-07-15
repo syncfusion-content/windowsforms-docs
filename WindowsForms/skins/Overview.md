@@ -24,9 +24,9 @@ This feature enables you to easily apply uniform style for all the child control
 
 ## IT scenarios
 
-When you create an application with multiple controls, you can apply uniform color for the entire form using this feature. 
+When you create an application with multiple Syncfusion controls, you can apply a uniform color for the entire form using the SkinManager component.
 
-Properties and Methods Tables for Skin Manager 
+## Properties and Methods Tables for Skin Manager
 
 ### Properties
 
@@ -74,3 +74,7 @@ NA </td><td>
 Void </td><td>
 NA </td></tr>
 </table>
+
+## Next Steps
+
+Refer to the [Getting Started](https://help.syncfusion.com/windowsforms/skins/getting-started) page to create a new project and apply themes using the SkinManager component.
