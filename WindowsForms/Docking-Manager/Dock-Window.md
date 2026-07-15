@@ -228,7 +228,7 @@ This overloaded function returns the index of image associated with the docking 
 
 {% highlight C# %}
 
-System.Drawing.Icon icon = new System.Drawing.Icon(GetIconFile(@"..\\..\\\$this.Icon.ico"));
+System.Drawing.Icon icon = new System.Drawing.Icon(GetIconFile(GetIconFile(@"..\\..\\\$this.Icon.ico")));
 
 private string GetIconFile(string bitmapName)
 {
@@ -252,7 +252,7 @@ this.dockingManager1.SetDockIcon(this.panel1, icon);
 
 {% highlight VB %}
 
-Dim icon As System.Drawing.Icon = New System.Drawing.Icon(GetIconFile("..\\..\\\$this.Icon.ico"))
+Dim icon As System.Drawing.Icon = New System.Drawing.Icon(GetIconFile(GetIconFile("..\\..\\\$this.Icon.ico")))
 
 Private Function GetIconFile(ByVal bitmapName As String) As String
 	 

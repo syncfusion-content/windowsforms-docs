@@ -115,7 +115,7 @@ C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Wi
 
 {% highlight C# %}
 
-System.Drawing.Icon icon = new System.Drawing.Icon(GetIconFile(@"..\\..\\\$this.Icon.ico"));
+System.Drawing.Icon icon = new System.Drawing.Icon(GetIconFile(GetIconFile(@"..\\..\\\$this.Icon.ico")));
           
 //To set icon in MDI Child window
 this.dockingManager1.SetMDIChildIcon(panel2, icon);
@@ -141,7 +141,7 @@ private string GetIconFile(string bitmapName)
 
 {% highlight VB %}
 
-Dim icon As System.Drawing.Icon = New System.Drawing.Icon(GetIconFile("..\\..\\\$this.Icon.ico"))
+Dim icon As System.Drawing.Icon = New System.Drawing.Icon(GetIconFile(GetIconFile("..\\..\\\$this.Icon.ico")))
 
 'To set icon in MDI Child window
 Me.dockingManager1.SetMDIChildIcon(panel2, icon)
