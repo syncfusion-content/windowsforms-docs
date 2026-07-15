@@ -9,13 +9,13 @@ documentation: ug
 
 # Getting Started with Windows Forms MultiColumn TreeView
 
-This section explains how to create a new Windows Forms project in Visual Studio and add **"MultiColumnTreeView"** with it's basic functionalities.
+This section explains how to create a new Windows Forms project in Visual Studio and add **"MultiColumnTreeView"** with its basic functionalities.
 
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#multicolumntreeview) section to get the list of assemblies or NuGet package details which needs to be added as reference to use the control in any application.
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#multicolumntreeview) section to get the list of assemblies or NuGet package details that need to be added as a reference to use the control in any application.
 
-[Check here](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to find more details about on how to install nuget packages in Windows Forms application.
+[Check here](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to find more details on how to install NuGet packages in a Windows Forms application.
 
 
 ## Adding a MultiColumnTreeView control through designer
@@ -38,9 +38,9 @@ The **"MultiColumnTreeView"** control can be added through designer by following
 
 ## Adding a MultiColumnTreeView control through code
 
-**Step 1**: Create C# or VB application through Visual Studio.
+**Step 1**: Create a C# or VB application through Visual Studio.
 
-**Step 2**: Add the following reference to the project.
+**Step 2**: Add the following references to the project:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -380,8 +380,8 @@ The TreeNodeAdv can be customized with the following options.
 
 ### Root lines
 
-We can display the root lines between the root nodes by setting the property `ShowRootLines` to `true`. Whereas the property `ShowLines` displays connecting the line for rest of nodes in the control, except between the root nodes. By default, `ShowRootLines` and `ShowLines` is set as `true`.
-When `ShowLines` is set to `false`, the connecting lines will not be displayed for the entire control.
+You can display root lines between the root nodes by setting the `ShowRootLines` property to `true`. The `ShowLines` property displays the connecting lines for the rest of the nodes in the control, except between the root nodes. By default, `ShowRootLines` and `ShowLines` are set to `true`.
+When `ShowLines` is set to `false`, the connecting lines are not displayed for the entire control.
 
 <table>
 <tr>
@@ -417,7 +417,7 @@ Me.multiColumnTreeView1.ShowRootLines = True
 
 ### Plus Minus
 
-Plus minus symbols will be shown according to the state of the node, plus (+) will be shown if the node is in expanded state and minus (-) will be shown if the node is minimized.
+Plus Minus symbols are shown according to the state of the node. Plus (+) is shown when the node is collapsed, and minus (-) is shown when the node is expanded.
 
 
 <table>
@@ -464,7 +464,7 @@ ToolTip is a special control which automatically appears as a popup when a node 
 
 ### Check Box
 
-The `ShowCheckBoxes` property when set will display check box for all the nodes. To apply checkbox to individual nodes, set the `TreeNodeAdv.ShowCheckBox` property, only for the required nodes in the NodeCollection Editor.
+The `ShowCheckBoxes` property, when set, displays a check box for all the nodes. To apply the check box to individual nodes, set the `TreeNodeAdv.ShowCheckBox` property only for the required nodes in the NodeCollection Editor.
 
 The `InteractiveCheckBoxes` indicates whether the state of the parent node’s checkbox is based on the check state of its child nodes checkboxes. To set this for individual nodes set the `InteractiveCheckBox` property of the TreeNodeAdv.
 

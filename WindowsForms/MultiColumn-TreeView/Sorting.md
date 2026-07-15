@@ -9,9 +9,9 @@ documentation: ug
 
 # Sorting in Windows Forms MultiColumn TreeView
 	
-Sorting can be performed on the tree nodes using the Sort function and specifying the function to be performed on either the checkbox or tag or text values in ascending or descending order.
+Nodes can be sorted by the check box, tag, or text values, in ascending or descending order.
 
-The Sort operation sorts only the level 1 nodes. To perform the function on the other levels of nodes, the `SortWithChildNode` property should be set to true. The sort function can be performed using the Sort method in Tree node where sort order can be defined as an argument in the method.
+The sort operation sorts only the level 1 nodes. To sort the other levels of nodes, the `SortWithChildNode` property should be set to `true`. The sort function can be performed using the `Sort` method on a TreeNodeAdv collection, where the sort order is defined as an argument of the method.
 
 **Method Table**
 
@@ -43,7 +43,7 @@ Me.MultiColumnTreeView1.Nodes.Sort(SortOrder.Descending)
 
 {% endtabs %}
 
-The sort function can be done based on the value type which can be specified using SortType to either the option of Checkbox or Tag or Text. The order in which the sort function has to be performed can be specified using the SortOrder that holds the values of Ascending or Descending.
+The sort can be performed on a specific value type, specified using `SortType` (Checkbox, Tag, or Text). The order of the sort is specified using `SortOrder`, which holds the values of `Ascending` or `Descending`.
 
 <table>
 <tr>
@@ -81,18 +81,18 @@ Me.MultiColumnTreeView1.Nodes(0).SortOrder = SortOrder.Descending
 
 {% endtabs %}
 
-* Sort in Ascending 
+* **Sort in Ascending**
 
 ![Sorting_img1](Sorting_Images/Sorting_img1.jpg)
 
-* Sort in Descending
+* **Sort in Descending**
 
 ![Sorting_img2](Sorting_Images/Sorting_img2.jpg)
 
 ## Comparing Options for Sorting
 
-The CompareOptions property gives additional options of comparing the texts of the nodes.
-The Comparer property is an object that implements the IComparer interface. If you need to compare the nodes by some other field, create an object of this type, set it to the node and that node will use the object in comparing the sub nodes.
+The `CompareOptions` property specifies additional options for comparing node text during sorting.
+The `Comparer` property is an object that implements the `IComparer` interface. If you need to compare the nodes by some other field, create an object of this type, set it to the node and that node will use the object to compare its child nodes.
 
 **Property Table**
 

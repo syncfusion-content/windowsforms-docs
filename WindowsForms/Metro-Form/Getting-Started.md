@@ -13,7 +13,7 @@ This section describes how to configure `MetroForm` control in a Windows Forms a
 
 ## Assembly deployment
 
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#metroform) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#metroform) section to get the list of assemblies or NuGet packages that need to be added as a reference to use the control in any application.
  
 Please find more details regarding how to install the nuget packages in windows form application in the below link:
  
@@ -21,7 +21,7 @@ Please find more details regarding how to install the nuget packages in windows 
 
 ## Creating simple application with MetroForm
 
-You can create the Windows Forms application with MetroForm control as follows:
+You can create a Windows Forms application with the MetroForm control as follows:
 
 1. [Creating project](#creating-the-project)
 2. [Configure MetroForm](#configure-metroForm)
@@ -40,7 +40,7 @@ Create a new Windows Forms project in the Visual Studio to change the default fo
 
 * Syncfusion.Shared.Base.dll	
 
-**Step 2** - Include the namespaces **Syncfusion.Windows.Forms**.
+**Step 2** - Include the namespace **Syncfusion.Windows.Forms**.
 
 {% tabs %}
 
@@ -58,7 +58,7 @@ Imports Syncfusion.Windows.Forms
 
 {% endtabs %}
    
-**Step 3** - Change the class to inherit MetroForm instead of the default Form as follows.
+**Step 3** - Change the class to inherit `MetroForm` instead of the default `Form` as follows.
 
 {% tabs %}
 

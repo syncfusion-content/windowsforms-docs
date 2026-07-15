@@ -9,7 +9,7 @@ documentation: ug
 
 # DataSource in Windows Forms AutoComplete
 
-The AutoComplete component supports variety of data sources such as DataTables, DataSets, or any component that implement interfaces such as IList, IBindingList, ITypedList, and IListSource. For assigning data source to AutoComplete, use the [DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_DataSource) property. This section explains about the different types of data binding mechanisms and data settings supported by the AutoComplete component.
+The AutoComplete component supports a variety of data sources such as DataTables, DataSets, or any component that implements interfaces such as `IList`, `IBindingList`, `ITypedList`, and `IListSource`. For assigning a data source to AutoComplete, use the [DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_DataSource) property. This section explains the different types of data binding mechanisms and data settings supported by the AutoComplete component.
 
 ## Data settings
 
@@ -27,7 +27,7 @@ Specifies a unique or shared name that can be given to an AutoComplete component
 <tr>
 <td>
 DataSource</td><td>
-Sets the Datasource to the Autocomplete component. The AutoComplete component automatically picks the "History Data List" mode or "Data source" mode based on the values set for the DataSource property. When the datasource property is set to NULL (default value is NULL), the component defaults to History Data List mode. It is to be remembered that the properties CategoryName, AutoAddItem, and AutoSerialize have to be set appropriately for the History Data List mode to work properly.</td></tr>
+Sets the Datasource to the AutoComplete component. The AutoComplete component automatically picks the "History Data List" mode or "Data source" mode based on the values set for the DataSource property. When the DataSource property is set to NULL (default value is NULL), the component defaults to History Data List mode. The properties `CategoryName`, `AutoAddItem`, and `AutoSerialize` have to be set appropriately for the History Data List mode to work properly.</td></tr>
 </table>
 
 {% tabs %}
@@ -52,11 +52,11 @@ Me.autoComplete1.DataSource = DataTable1
 
 ## Dynamic source at run time
 
-Enabling the [AutoAddItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_AutoAddItem) property allows you to save your entries at run time, and pressing the `Enter` key saves your entry.
+Enabling the [AutoAddItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_AutoAddItem) property allows you to save your entries at runtime. Pressing the `Enter` key adds the current entry to the history list.
 
 ## Built-in source
 
-The different built-in source (FileSystem, HistoryList, AllUrl, etc) can be set to the AutoComplete component using the `AutoCompleteSource` property of the editor control.
+The different built-in sources (`FileSystem`, `HistoryList`, `AllUrl`, etc.) can be set on the editor control using the standard `System.Windows.Forms.AutoCompleteSource` property, which is then used by the Syncfusion `AutoComplete` component when bound to that editor.
 
 <table>
 <tr>
@@ -121,7 +121,7 @@ Me.textBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.History
 
 ## Custom source
 
-The AutoComplete component allows you add a set of text using `String Collection Editor`, and this editor window will be shown by clicking the `AutoCompleteCustomSource` property in property window of the editor control. The `AutoCompleteSource` property should be set to `CustomSource` for using custom items added through String Collection Editor.
+The AutoComplete component allows you to add a set of text using the `String Collection Editor`, which is shown by clicking the `AutoCompleteCustomSource` property in the property window of the editor control. The `AutoCompleteSource` property should be set to `CustomSource` to use the custom items added through the String Collection Editor.
 
 ![Windows Forms AutoComplete Customsource datasource](DataSource_images/AutoComplete_Customsource.png) 
 
@@ -150,7 +150,7 @@ The AutoComplete component allows you add a set of text using `String Collection
 
 ![Windows Forms AutoComplete Customsource datasource](DataSource_images/AutoComplete_Customsourcecode.png) 
 
-## Binding custom collections 
+## Binding custom collections
 
 The different custom collections that can be bound to the [DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_DataSource) property of the AutoComplete component are listed as follows.
 
@@ -161,4 +161,4 @@ The different custom collections that can be bound to the [DataSource](https://h
 * Generic Collections
 * DataTable
 
-A sample that demonstrates the binding of various data source is available [here](https://github.com/SyncfusionExamples/AutoCompleteModes_in_AutoComplete_Component/tree/master/DataSourceBinding) 
+A sample that demonstrates binding various data sources is available [here](https://github.com/SyncfusionExamples/AutoCompleteModes_in_AutoComplete_Component/tree/master/DataSourceBinding). 
