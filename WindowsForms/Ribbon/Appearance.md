@@ -517,7 +517,7 @@ this.ribbonControlAdv1.Office2016ColorTable.Add(color);
 
 ![WindowsForms Ribbon customized with Office2016ColorTable](Appearance_Images/WindowsForms-Ribbon-customized-with-Office2016ColorTable.jpg)
 
-**Offcie2013 Style Color Table**
+**Office2013 Style Color Table**
 
 RibbonControlAdv can now be fully customized in Office 2013 style. This can be achieved by using Office2013ColorTable property.
 
@@ -1028,11 +1028,11 @@ this.ribbonControlAdv1.ApplyTouchStyleColorTable(_touchColorTable);
 
     _touchColorTable.ToolstripTabItemForeColor = Color.White
 
-    // To set the hover fore color for BackStage items.
+    ' To set the hover fore color for BackStage items.
 
     _touchColorTable.BackStageItemHoverForeColor = Color.White
 
-    // To set the selection fore color for BackStage items.
+    ' To set the selection fore color for BackStage items.
 
     _touchColorTable.BackStageItemSelectionForeColor = Color.White
 

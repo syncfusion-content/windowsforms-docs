@@ -58,7 +58,7 @@ You can add any control in tab page.
 
 ## Add control manually in code
 
-To add the control manually in C#, follow the given steps:
+To add the control manually in code, follow the given steps:
 
 1. Add the following required assembly references to the project: 
 
@@ -105,13 +105,13 @@ Create an instance of [TabPageAdv](https://help.syncfusion.com/cr/windowsforms/S
 {% tabs %}
 {% highlight C# %}
 TabPageAdv tabPageAdv1 = new TabPageAdv();
-this.tabPageAdv1.Text = "tabPageAdv1";
-this.tabControlAdv1.Controls.Add(this.tabPageAdv1);
+tabPageAdv1.Text = "tabPageAdv1";
+this.tabControlAdv1.Controls.Add(tabPageAdv1);
 {% endhighlight %}
 {% highlight VB %}
 Dim tabPageAdv1 As TabPageAdv = New TabPageAdv()
-Me.tabControlAdv1.Controls.Add(Me.tabPageAdv1)
-Me.tabPageAdv1.Text = "tabPageAdv1"
+tabPageAdv1.Text = "tabPageAdv1"
+Me.tabControlAdv1.Controls.Add(tabPageAdv1)
 {% endhighlight %}
 {% endtabs %}
 
@@ -167,7 +167,7 @@ tabControlAdv1.Alignment = TabAlignment.Bottom
 
 ## Edit header at run time
 
-You can rename or edit the header at run time by enabling the [LabelEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_LabelEdit) property of [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html). 
+You can rename the tab header at run time by setting the [LabelEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_LabelEdit) property of [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) to `true`.
 
 {% tabs %}
 {% highlight C# %}

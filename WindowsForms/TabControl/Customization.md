@@ -17,7 +17,7 @@ TabControlAdv comes with the renaming functionality similar to Microsoft Excel. 
 
 To bring the text of the TabItem to the edit mode, the following can be done.
 
-1. Select the text of the TabItem to be edited and right-click on the tab to bring the text to edit mode. The text can now be edited and it can be saved by pressing the Enter key.
+1. Select the text of the TabItem to be edited and right-click on the tab to bring the text to edit mode. The text can now be edited and saved by pressing Enter.
 2. Also, double-clicking on a tab makes the text change to edit mode.
 
    ![Renaming tab item](TabControlAdv_images/TabControlAdv_img1.png)
@@ -80,18 +80,18 @@ Code snippets to set the padding
 
 {% highlight C# %}
 
-// Setting the Padding for TabControlAdv through Coding. 
+// Setting the Padding for TabControlAdv through Coding.
 
-this.tabControlAdv1.Padding = new Point(12, 12); 
+this.tabControlAdv1.Padding = new System.Windows.Forms.Padding(12, 12);
 
 {% endhighlight %}
 
 {% highlight VB %}
 
 
-'Setting the Padding for TabControlAdv through Coding. 
+'Setting the Padding for TabControlAdv through Coding.
 
-Me.tabControlAdv1.Padding = New Point(12, 12)
+Me.tabControlAdv1.Padding = New System.Windows.Forms.Padding(12, 12)
 
 {% endhighlight %}
 
@@ -101,7 +101,7 @@ Me.tabControlAdv1.Padding = New Point(12, 12)
 
 ## UseMnemonic
 
-This [UseMnemonic](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_UseMnemonic) property specifies whether the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) interprets the Ampersand character (&) as an Access key prefix character or not. The default value is set to `false`.
+This [UseMnemonic](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_UseMnemonic) property specifies whether the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) interprets the ampersand character (&) as an access-key prefix character. The default value is set to `false`.
 
 ## TabPages
 
@@ -112,7 +112,7 @@ The [BorderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows
 The three types of border styles are given below.
 
 * FixedSingle
-* Fixed 3D
+* Fixed3D
 * None
 
 ![Tab border style](TabControlAdv_images/TabControlAdv_img6.jpeg)
@@ -162,7 +162,7 @@ The following code illustrates insertion of the required GIF image.
 
 {% highlight C# %}
 
-this.tabPageAdv.Image = Image.FromFile(“sample.gif”);
+this.tabPageAdv.Image = Image.FromFile("sample.gif");
 
 this.tabPageAdv.ImageSize = new System.Drawing.Size(16,16);
 
@@ -183,7 +183,7 @@ Now, the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.
 
 //Prevents moving the tab.
 
-this this.tabControlAdv1.TabMoving += new Syncfusion.Windows.Forms.Tools.TabMovingEventHandler(tabControlAdv1_TabMoving);
+this.tabControlAdv1.TabMoving += new Syncfusion.Windows.Forms.Tools.TabMovingEventHandler(tabControlAdv1_TabMoving);
 
 void tabControlAdv1_TabMoving(object sender, Syncfusion.Windows.Forms.Tools.TabMovingEventArgs e)
         {
@@ -196,17 +196,15 @@ void tabControlAdv1_TabMoving(object sender, Syncfusion.Windows.Forms.Tools.TabM
 
             }
 
-        }     
+        }
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-‘Prevents moving the tab.
+'Prevents moving the tab.
 
-Private Me.tabControlAdv1.TabMoving += New Syncfusion.Windows.Forms.Tools.TabMovingEventHandler(AddressOf tabControlAdv1_TabMoving)
-
-
+AddHandler Me.tabControlAdv1.TabMoving, AddressOf tabControlAdv1_TabMoving
 
 Private Sub tabControlAdv1_TabMoving(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Tools.TabMovingEventArgs)
 

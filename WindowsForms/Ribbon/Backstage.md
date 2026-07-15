@@ -9,7 +9,7 @@ documentation: ug
 
 # Backstage in Windows Forms Ribbon (RibbonControlAdv)
 
-The Ribbon Backstage will appear when the user clicks on Menu button, it allows to make actions for the whole document such as Save, Save As and print. It can be used to show the recent changes in the document and even closing the application.
+The Ribbon Backstage will appear when the user clicks on the Menu button. It lets users perform actions for the whole document such as Save, Save As and Print. It can also be used to show the recent changes in the document or to close the application.
 
 Backstage structure will have two areas, left side which contain all the items in backstage panel and the right side which shows content of the BackstageTab.
 
@@ -23,7 +23,7 @@ There are three items that can be used in BackStage. They are
 
 ## Open BackStage
 
-In designer backstage can be opened by using smart tag of the backstage control below the designer and select `ShowBackstage`.
+In the designer, BackStage can be opened by using the smart tag of the BackStage control below the designer and selecting `ShowBackstage`.
 
 ![WindowsForms Ribbon open BackStage using ShowBackStage](BackStage_Images/WindowsForms-Ribbon-open-BackStage-using-ShowBackStage.jpg)
 
@@ -315,7 +315,7 @@ this.ribbonControlAdv1.MenuButtonVisible = false;
 
 {% highlight vb %}
 
-Me.ribbonControlAdv1.MenuButtonVisible = false
+Me.ribbonControlAdv1.MenuButtonVisible = False
 
 {% endhighlight %}
 

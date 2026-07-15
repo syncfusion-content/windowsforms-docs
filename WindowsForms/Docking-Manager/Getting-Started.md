@@ -497,4 +497,4 @@ Me.dockingManager.LoadDockState(serializer, this.listBox1)
 
 {% endtabs %}
 
-N> You can explore our [WinForms Docking Manager example](https://github.com/syncfusion/winforms-demos/tree/master/edit) that shows how to render the Docking Manager in Windows Forms.
+N> You can explore our [WinForms Docking Manager example](https://github.com/syncfusion/winforms-demos) that shows how to render the Docking Manager in Windows Forms.

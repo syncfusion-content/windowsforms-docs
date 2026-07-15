@@ -9,7 +9,7 @@ documentation: ug
 
 # Touch Support in Windows Forms Ribbon (RibbonControlAdv)
 
-Ribbon control have touch support and it provides Touch UI which is easy to access the elements in Ribbon.
+RibbonControlAdv has touch support and provides a Touch UI that makes it easy to access the elements in the Ribbon.
 
 ## Enable Touch Style
 

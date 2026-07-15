@@ -50,7 +50,7 @@ Me.gridControl1.ListBoxSelectionMode = SelectionMode.MultiSimple
 
 ## Adding Selection
 
-In the GridControl the selections are maintained in the [SelectedRanges](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableModel.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableModel_SelectedRanges) collection. To add the selection for particular range of cells, add the range into the `SelectedRanges` collection. 
+In the GridControl the selections are maintained in the [SelectedRanges](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_SelectedRanges) collection. To add the selection for particular range of cells, add the range into the `SelectedRanges` collection. 
 
 {% tabs %}
 {% highlight c# %}
@@ -176,7 +176,7 @@ void gridControl1_SelectionChanging(object sender, GridSelectionChangingEventArg
 
 {% highlight vb %}
 'To prevent the selection from particular range of cells
-Private Me.gridControl1.SelectionChanging += AddressOf gridControl1_SelectionChanging
+AddHandler Me.gridControl1.SelectionChanging, AddressOf gridControl1_SelectionChanging
 
 Private Sub gridControl1_SelectionChanging(ByVal sender As Object, ByVal e As GridSelectionChangingEventArgs)
 
@@ -222,7 +222,7 @@ The selection color of the grid can be reset by using the [ResetAlphaBlendSelect
 {% tabs %}
 {% highlight c# %}
 //To reset the color of selection in grid control
-gridControl.ResetAlphaBlendSelectionColor();
+this.gridControl1.ResetAlphaBlendSelectionColor();
 {% endhighlight %}
 
 {% highlight vb %}
@@ -233,7 +233,7 @@ gridControl.ResetAlphaBlendSelectionColor()
 
 ### Setting the CurrentCell Back Color Similar to the Back Color of the Remaining Selected Cells
 
-When the cell is entered into the edit mode, it will not display the selection color. To display the selection color for the editing cell, set the selection color as the back color for the current cell in the [CellDrawn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridCardView.html) event.
+When the cell is entered into the edit mode, it will not display the selection color. To display the selection color for the editing cell, set the selection color as the back color for the current cell in the [CellDrawn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_CellDrawn) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -257,7 +257,7 @@ void gridControl1_CellDrawn(object sender, GridDrawCellEventArgs e)
 
 {% highlight vb %}
 'To Draw the selection color for Current Cell
-Private Me.gridControl1.CellDrawn += AddressOf gridControl1_CellDrawn
+AddHandler Me.gridControl1.CellDrawn, AddressOf gridControl1_CellDrawn
 
 Private Sub gridControl1_CellDrawn(ByVal sender As Object, ByVal e As GridDrawCellEventArgs)
 
@@ -327,7 +327,7 @@ The selected values are printed in the output screen as of follows,
 
 ## Cell Text Selection
 
-The current cell activation behavior is controlled by the grid’s [ActivateCurrentCellBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_ActivateCurrentCellBehavior) property. When the property is set to [SelectAll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCellActivateAction.html)**,** it will selects all the text in the cell when the cell is activated.
+The current cell activation behavior is controlled by the grid's [ActivateCurrentCellBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_ActivateCurrentCellBehavior) property. When the property is set to [SelectAll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCellActivateAction.html), it will select all the text in the cell when the cell is activated.
 
 {% tabs %}
 {% highlight c# %}

@@ -355,7 +355,7 @@ Me.gridControl1.ChangeCells(GridRangeInfo.Cells(2, 2, 4, 2), style)
 
 Windows Forms GridControl provides two types of selection namely Range selection and Record selection. Range selection also known as cell based selection is used to select a range of cells, rows and columns in grid. Record selection which is also known as record based selection is used to select a single record or a range of records at a time in a grid.
 
-For selecting single row or multiple range of rows in GridControl, set the [ListBoxSelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableOptionsStyleInfo_ListBoxSelectionMode) property value as `Single`, `MultiSimple` or `MultiExtended` respectively. By default the value is `None`.
+For selecting single row or multiple range of rows in GridControl, set the [ListBoxSelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_ListBoxSelectionMode) property value as `Single`, `MultiSimple` or `MultiExtended` respectively. By default the value is `None`.
 
 {% tabs %}
 {% highlight c# %}
@@ -366,7 +366,7 @@ Me.gridControl1.ListBoxSelectionMode = SelectionMode.None
 {% endhighlight %}
 {% endtabs %}
 
-For selecting the range of cells in GridControl, set the [AllowSelection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableOptionsStyleInfo_AllowSelection) property to the appropriate value from the [GridSelectionFlags](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridSelectionFlags.html) enumeration. 
+For selecting the range of cells in GridControl, set the [AllowSelection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_AllowSelection) property to the appropriate value from the [GridSelectionFlags](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridSelectionFlags.html) enumeration. 
 
 {% tabs %}
 {% highlight c# %}
