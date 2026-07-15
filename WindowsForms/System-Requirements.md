@@ -27,13 +27,13 @@ This section describes the system requirements to use Syncfusion<sup>®</sup> Wi
 ### Hardware Environment
 
 * Processor: x86 or x64
-* RAM : 512 MB (minimum), 1 GB (recommended)
-* Hard disk: up to 4 GB of space may be required. However, even if you install in a different drive, 400 MB of free space is required in the boot drive.
+* RAM: 512 MB (minimum), 1 GB (recommended)
+* Hard disk: up to 4 GB of space may be required. However, even if you install in a different drive, 400 MB of free space is required in the system drive.
 
 ### Development Environment
 
 * Microsoft Visual Studio 2015/2017/2019/2022
 * .NET Framework 4.6.2
-* Lower Syncfusion<sup>®</sup> .NET frameworks can be used in applications because they are compatible with .NET 4.7, .NET 4.7.1, .NET 4.7.2, and .NET 4.8. For example, in the application, the Syncfusion<sup>®</sup> 4.6.2 .NET framework assembly can be referred to as 4.7 or higher target versions.
-* .NET 8.0, .NET 9.0.
+* Earlier Syncfusion<sup>®</sup> .NET frameworks can be used in applications because they are compatible with .NET 4.7, .NET 4.7.1, .NET 4.7.2, and .NET 4.8. For example, in the application, the Syncfusion<sup>®</sup> 4.6.2 .NET framework assembly can be referred to as 4.7 or higher target versions.
+* .NET 8.0, .NET 9.0, .NET 10.0.
 

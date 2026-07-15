@@ -9,13 +9,13 @@ documentation: ug
 
 # WinForms Applications using .NET Core and Syncfusion<sup>®</sup> WinForms Controls
 
-Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> for Windows Forms suits .NET core assemblies for building Windows Forms .NET Core applications using Syncfusion<sup>®</sup> Controls. This section explains how to create the project in .NET Core application and using Syncfusion<sup>®</sup> Windows Forms controls.
+Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> for Windows Forms provides .NET Core assemblies for building Windows Forms .NET Core applications using Syncfusion<sup>®</sup> Controls. This section explains how to create the project in a .NET Core application and using Syncfusion<sup>®</sup> Windows Forms controls.
 
-N> All Syncfusion<sup>®</sup> Windows Forms controls supports .NET Core Framework except the controls labeled as `classic`.
+N> All Syncfusion<sup>®</sup> Windows Forms controls support .NET Core Framework except the controls labeled as `classic`.
 
 ## Create a .NET Core project
 
-**Step 1**: Open Visual Studio, go to **File > New > Project...** and you can now see **Create a new project** dialog. Here, select **Windows Forms App (.NET Core)** template and click **Next**. 
+**Step 1**: Open Visual Studio, go to **File > New > Project...** and the following **Create a new project** dialog appears. Here, select **Windows Forms App (.NET Core)** template and click **Next**.
 
 <img src="NETcore_images/NETcore_createproject.png" alt="NETcore showing create the project" width="100%" Height="Auto"/>
 
@@ -25,7 +25,7 @@ N> All Syncfusion<sup>®</sup> Windows Forms controls supports .NET Core Framewo
 
 **Step 3**: In the Additional information window, select .NET 6.0 (Long-term support) for the Framework setting, and then click **Create**.
 
-<img src="NETcore_images/NETcore_selectedversion.png" alt="NETcore showing the Framework setting selected version" width="100%" Height="Auto"/>
+<img src="NETcore_images/NETcore_selectedversion.png" alt="NETcore showing the Framework setting — selected version" width="100%" Height="Auto"/>
 
 **Step 4**: Finally, Windows Forms (.NET Core) sample project is created.
 
@@ -67,8 +67,10 @@ We are now going to see a demo on how to add **ButtonAdv** control in WinForms .
 {% highlight c# %}
 
 ButtonAdv button = new ButtonAdv();
-button.Text = ”ButtonAdv”;
-this.controls.add(button);
+button.Text = "ButtonAdv";
+button.Location = new System.Drawing.Point(100, 100);
+button.Size = new System.Drawing.Size(200, 30);
+this.Controls.Add(button);
 
 {% endhighlight %}
 {% endtabs %}

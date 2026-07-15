@@ -11,13 +11,13 @@ documentation: ug
 
 # Welcome to Syncfusion<sup>®</sup> Essential<sup>®</sup> Windows Forms
 
-Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> for Windows Forms is a comprehensive collection of over 100+ Essential<sup>®</sup> Windows Forms controls like Grids, Charts, Diagram, Scheduler and Tools for building powerful line-of-business applications faster. Syncfusion<sup>®</sup> Windows Forms controls provides unparalleled performance, stunning built-in themes, touch-friendly UI, localization and seamless integration with Visual Studio.
+Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> for Windows Forms is a comprehensive collection of over 100 Essential<sup>®</sup> Windows Forms controls like Grids, Charts, Diagram, Scheduler, and Tools for building powerful line-of-business applications faster. Syncfusion<sup>®</sup> Windows Forms controls provide unparalleled performance, stunning built-in themes, touch-friendly UI, localization and seamless integration with Visual Studio.
 
 ## How to best read this user guide
 
-* The best way to get started is to read the “Getting Started” section of the documentation for the component you need. The “Getting Started” guide gives information needed before writing the code. All the other information can be referred when required.
-* Now, that you are familiar with the basics of using the component, the next step is to start integrating the component into your application. A good starting point is to refer to the code examples in the sample browser that contains hundreds of code samples. It is very likely that you can find a code example that resembles your intended usage scenario.
-* After you have integrated the component into your application by using one of the sample code examples as a starting point, that you would need additional information on specific features and API. The best option is to search the specific topic by using the search box available at the top of the user guide.
+* The best way to get started is to read the “Getting Started” section of the documentation for the component you need. The “Getting Started” guide gives information needed before writing the code. All the other information can be referred to when required.
+* Now that you are familiar with the basics of using the component, the next step is to start integrating the component into your application. A good starting point is to refer to the code examples in the sample browser that contains hundreds of code samples. It is very likely that you can find a code example that resembles your intended usage scenario.
+* After you have integrated the component into your application by using one of the sample code examples as a starting point, you may need additional information on specific features and API. The best option is to search the specific topic by using the search box available at the top of the user guide.
 * Another valuable resource is the API reference that provides detailed information on the object hierarchy as well as the settings available on every object.
 
 ## Controls list
@@ -246,7 +246,7 @@ background-color:transparent!important;
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/metro-form/getting-started">Metro Form</a> </td>
     <td></td>
     <td></td>
-    <td id="title">MISCELLEANEOUS </td>
+    <td id="title">MISCELLANEOUS </td>
   </tr>
   <tr>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/watermark-text-provider/getting-started">BannerTextProvider</a> </td>
@@ -345,10 +345,10 @@ Refer [licensing](https://help.syncfusion.com/common/essential-studio/licensing/
 
 The [Knowledge Base](https://support.syncfusion.com/kb/desktop/category/82) section contains responses to most of the common questions that other customers have asked in the past, so this would be a good place to search for topics that are not covered in the User Guide.
 
-Similar to the [Knowledge Base](https://support.syncfusion.com/kb/desktop/category/82), the [Forum](https://www.syncfusion.com/forums/windowsforms) section also contains responses to questions that other customers has asked us in the past.
+Similar to the [Knowledge Base](https://support.syncfusion.com/kb/desktop/category/82), the [Forum](https://www.syncfusion.com/forums/windowsforms) section also contains responses to questions that other customers have asked us in the past.
 
 ## Support and feedback
 
 If you are unable to find the information that you are looking for in the self-help resources mentioned above then you contact us by creating a [support ticket](https://internalsupport.bolddesk.com/agent/tickets/create).
 
-Don’t see what you need? Please request it in our [feedback portal](https://www.syncfusion.com/feedback/winforms).
+Don’t see what you need? Please request it in our [Feedback portal](https://www.syncfusion.com/feedback/winforms).

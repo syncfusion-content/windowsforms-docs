@@ -295,9 +295,3 @@ Me.treeViewAdv1.ThemeStyle.TreeNodeAdvStyle.TextColor = System.Drawing.Color.Red
 {% endtabs %}
 
 ![WinForms Skin Manager shows Office2019 theme applied in control](skin_images/winforms-skin-manager-shows-office2019-theme.png)
-
-## Troubleshooting
-
-* **Theme not applied:** Ensure the `Syncfusion.Shared.Base` assembly and the required theme assembly are referenced in the project, and that the SkinManager is associated with the target control or form via the `Controls` property.
-* **Missing theme assembly errors:** When using Office2016Theme, Office2019Theme, or HighContrastTheme, call `SkinManager.LoadAssembly` (see [Loading theme assemblies](#loading-theme-assemblies)) before setting `ApplicationVisualTheme` or `ThemeName`.
-* **Custom styles overridden by theme:** Set `CanOverrideStyle = true` on the control before applying the theme if you want the theme to override control-level `Style` or `ThemeStyle` settings.

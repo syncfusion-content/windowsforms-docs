@@ -12,7 +12,7 @@ documentation: ug
 
 ## Copy Local
 
-Copying assembly in local folder is supported by the Syncfusion assembly reference in the Solutions Explorer. It can be achieved by setting its Copy Local property of the reference to `True`. So, that the Syncfusion assemblies are copied to the Release/Bin, Debug/Bin folders. This deployment consists of copying the EXE, assembly and XML files to the client machines similar to that of manual copy.
+Copying assemblies in the local folder is supported by the Syncfusion assembly reference in the Solutions Explorer. It can be achieved by setting its Copy Local property of the reference to `True`. So, that the Syncfusion assemblies are copied to the Release/Bin and Debug/Bin folders. This deployment consists of copying the EXE, the assembly, and the XML files to the client machines, similar to that of a manual copy.
 
 ![windows forms assembly installation and deployment](Installation-And-Deployment_images/Deployment_img1.jpg)
 
@@ -23,7 +23,7 @@ Through Syncfusion installer, Syncfusion assemblies are installed in the GAC of 
 
 ## Installed Location
 
-The following table represents Assemblies/ Samples and its installed location
+The following table summarizes the Assemblies/ Samples and their installed locations.
 
 <table>
 <tr>
@@ -48,4 +48,4 @@ Samples</td><td>
 C:\Users\Public\Documents\Syncfusion\Windows\{{ site.releaseversion }}</td></tr>
 </table>
 
-N> In above section, Latest Essential Studio version details has been provided. User can refer installed Essential Studio version instead of mentioned version.
+N> In the above section, the latest Essential Studio version details have been provided. The user can refer to the installed Essential Studio version instead of the mentioned version.

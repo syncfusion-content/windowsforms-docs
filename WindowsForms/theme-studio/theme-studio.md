@@ -9,89 +9,100 @@ documentation: ug
 
 # Getting Started With Windows Forms Theme Studio
 
-Theme Studio for WinForms can be used to create and apply new theme for Syncfusion<sup>®</sup> controls from an existing theme. The primary goal here is to deliver an appearance rich Syncfusion<sup>®</sup> controls that suits bests for every user application, based on their needs. 
+Theme Studio for WinForms can be used to create and apply a new theme for Syncfusion<sup>®</sup> controls from an existing theme. The primary goal here is to deliver appearance-rich Syncfusion<sup>®</sup> controls that best suit every user application, based on the application's needs.
 
-## Customizing theme color from theme studio
+## Customizing Theme Color in Theme Studio
 
-In theme studio utility, each theme has a unique common variable list. When user change the common variable color code value, it will reflect in all the Syncfusion<sup>®</sup> WinForms controls. All Syncfusion<sup>®</sup> WinForms control styles are derived from these theme-based common variables. This common variable list is handled inside the theme studio application for customizing theme-based colors. 
+In the Theme Studio utility, each theme has a unique common variable list. When the user changes a common variable's color code value, it will reflect in all the Syncfusion<sup>®</sup> WinForms controls. All Syncfusion<sup>®</sup> WinForms control styles are derived from these theme-based common variables.
 
-Let us now see the step-by-step procedure to launch and work with the theme studio utility below.
+The following steps describe how to launch and work with the Theme Studio utility.
 
 
 **Step 1:**
 
-On installing the "Syncfusion<sup>®</sup> Windows Forms" suite, launch and select "Theme Studio" from the start-up panel.
+After installing the "Syncfusion<sup>®</sup> Windows Forms" suite, launch and select "Theme Studio" from the start-up panel.
 
 ![Theme Studio for Windows Forms](ThemeStudio_images/Built-In-Themes.png)
 
 
 **Step 2:**
 
-The theme studio application form has been divided into two sections: the controls preview section on the right, and the theme customization section on the left.
+The Theme Studio window is divided into two sections: a controls preview on the right and a theme-customization panel on the left.
 
 ![Theme Studio for Windows Forms](ThemeStudio_images/theme-studio.png)
 
 
 **Step 3:**
 
-Click the color pickers in the theme customization section to select the desired color.
+Click a color picker in the theme-customization section to select a color.
 
 ![Choose color in Theme Studio for Windows Forms](ThemeStudio_images/color-selected-in-theme-studio.png)
 
 
 **Step 4:**
 
-The Syncfusion<sup>®</sup> WinForms controls will be rendered with the newly selected colors in the preview section, after selecting the desired color. 
+The Syncfusion<sup>®</sup> WinForms controls render with the newly selected colors in the preview section. 
 
 ![Color reflected in controls loaded inside Theme Studio for Windows Forms](ThemeStudio_images/color-reflected-theme-studio.png)
 
 
-## Export the customized theme
+## Export the Customized Theme
  
 You can export the custom theme after changing the theme colors.
 
 
 **Step 1:**
 
-Click the Export button in the bottom left corner of the theme studio application. 
+Click the Export button in the bottom left corner of the Theme Studio application. 
 
 ![Export option in Theme Studio for Windows Forms](ThemeStudio_images/Export-Theme-studio.png)
 
 
 **Step 2:**
 
-Now the export dialog appears with an option to select either entire controls or just the desired control(s). This option is useful when you have integrated a selective list of Syncfusion<sup>®</sup> WinForms controls in your application. The theme studio will filter only the selected controls and customize the final output for those controls alone thereby reducing the final output assembly size. 
+Now the export dialog appears with an option to select either all controls or just the desired control(s). This option is useful when you have integrated a selective list of Syncfusion<sup>®</sup> WinForms controls in your application. The Theme Studio will filter only the selected controls and customize the final output for those controls alone, thereby reducing the final output assembly size. 
 
 ![Export dialog in Theme Studio for Windows Forms](ThemeStudio_images/Export-dialog-theme-studio.png)
 
 
 **Step 3:**
 
-The download theme will come as an assembly (*.dll) file that contains color codes for the selected Syncfusion<sup>®</sup> WinForms controls. 
+The exported theme is delivered as an assembly (*.dll) file that contains color codes for the selected Syncfusion<sup>®</sup> WinForms controls. 
 
 ![Export Theme assembly from Theme Studio for Windows Forms](ThemeStudio_images/Theme-Assembly-Theme-studio.png)
 
 
-N> You can enter the assembly name of your own choice while exporting. But remember that the assembly (*.dll) name will be custom theme name, when you refer it in your WinForms application. 
+**Note:** You can enter the assembly name of your own choice while exporting. But remember that the assembly (*.dll) name will be the custom theme name, when you refer to it in your WinForms application.
 
 
-## Using customized theme in a Windows Forms application
+## Using the Customized Theme in a Windows Forms Application
 
-You can now add the exported assembly in your Windows Forms application and set the custom theme to the appropriate controls. In this illustration, we are going to witness the custom theme set for SfDataGrid. 
+You can now add the exported assembly to your Windows Forms application and set the custom theme to the appropriate controls. In the following example, the custom theme is applied to the SfDataGrid control. 
 
 **Step 1:**
 
-Attach the exported assembly (*.dll) in your Windows Forms project.
+Add the exported assembly (*.dll) as a reference in your Windows Forms project (for example, right-click the project in **Solution Explorer** and choose **Add** → **Reference** → **Browse**, then select the exported DLL).
 
-![Export dialog in Theme Studio for Windows Forms](ThemeStudio_images/Export-dialog-theme-studio.png)
+**Note:** Close Theme Studio before referencing the exported DLL to avoid file-lock errors.
+
+![Attach exported assembly in Windows Forms project](ThemeStudio_images/Export-dialog-theme-studio.png)
 
 **Step 2:**
 
-Load the Theme assembly in Program.cs of your application and the initialize a SfDataGrid control in the main form and set it’s "ThemeName" property exactly to the assembly name.
+Load the theme assembly in `Program.cs` of your application and then initialize the SfDataGrid control in the main form. Set the `ThemeName` property of the SfDataGrid exactly to the exported assembly name. The exported assembly name and the class name follow the convention `Syncfusion.YourThemeName.Theme` (for example, `Syncfusion.VioletTheme.Theme`).
 
+**C# — Program.cs**
+
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
+using System;
+using System.Windows.Forms;
+using Syncfusion.Licensing;
+using Syncfusion.WinForms.Themes;
 
+namespace ThemeStudioDemo
+{
     static class Program
     {
         /// <summary>
@@ -100,37 +111,113 @@ Load the Theme assembly in Program.cs of your application and the initialize a S
         [STAThread]
         static void Main()
         {
-			Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(DemoCommon.FindLicenseKey());
-            SkinManager.LoadAssembly(typeof(VioletTheme).Assembly);
+            // Replace with your actual Syncfusion license key.
+            // See https://help.syncfusion.com/windowsforms/licensing for details.
+            SyncfusionLicenseProvider.RegisterLicense("YOUR_LICENSE_KEY");
+
+            // Load the exported theme assembly before any Syncfusion control is created.
+            SkinManager.LoadAssembly(typeof(Syncfusion.VioletTheme.Theme).Assembly);
+
             Application.EnableVisualStyles();
+            // SetCompatibleTextRenderingDefault must be called before any control is created.
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
         }
     }
-	
-sfDataGrid1.ThemeName = "VioletTheme";
-	
+}
 {% endhighlight %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
+
+**C# — Form1.cs**
+
+{% capture codesnippet2 %}
+{% tabs %}
+{% highlight c# %}
+using System.Windows.Forms;
+using Syncfusion.WinForms.DataGrid;
+
+namespace ThemeStudioDemo
+{
+    public partial class Form1 : Form
+    {
+        private SfDataGrid sfDataGrid1;
+
+        public Form1()
+        {
+            InitializeComponent();
+
+            // The ThemeName must match the exported assembly name.
+            sfDataGrid1 = new SfDataGrid();
+            sfDataGrid1.ThemeName = "VioletTheme";
+            this.Controls.Add(sfDataGrid1);
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
+
+**VB — Program.vb**
+
+{% capture codesnippet3 %}
+{% tabs %}
 {% highlight vb %}
+Imports System
+Imports System.Windows.Forms
+Imports Syncfusion.Licensing
+Imports Syncfusion.WinForms.Themes
 
 Module Program
     <STAThread>
     Private Sub Main()
-        Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(DemoCommon.FindLicenseKey())
-        SkinManager.LoadAssembly(GetType(VioletTheme).Assembly)
+        ' Replace with your actual Syncfusion license key.
+        ' See https://help.syncfusion.com/windowsforms/licensing for details.
+        SyncfusionLicenseProvider.RegisterLicense("YOUR_LICENSE_KEY")
+
+        ' Load the exported theme assembly before any Syncfusion control is created.
+        SkinManager.LoadAssembly(GetType(Syncfusion.VioletTheme.Theme).Assembly)
+
         Application.EnableVisualStyles()
+        ' SetCompatibleTextRenderingDefault must be called before any control is created.
         Application.SetCompatibleTextRenderingDefault(False)
         Application.Run(New Form1())
     End Sub
 End Module
-
-sfDataGrid1.ThemeName = "VioletTheme"
-
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
+
+**VB — Form1.vb**
+
+{% capture codesnippet4 %}
+{% tabs %}
+{% highlight vb %}
+Imports System.Windows.Forms
+Imports Syncfusion.WinForms.DataGrid
+
+Public Class Form1
+    Private sfDataGrid1 As SfDataGrid
+
+    Public Sub New()
+        InitializeComponent()
+
+        ' The ThemeName must match the exported assembly name.
+        sfDataGrid1 = New SfDataGrid()
+        sfDataGrid1.ThemeName = "VioletTheme"
+        Me.Controls.Add(sfDataGrid1)
+    End Sub
+End Class
+{% endhighlight %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 **Step 3:**
 
-Compile and run the Windows Forms application and you can now witness the custom theme applied to SfDataGrid control at run-time. 
+Compile and run the Windows Forms application. The custom theme is applied to the SfDataGrid control at run-time. 
 
 ![Theme applied in SfDataGrid](ThemeStudio_images/Theme-applied-SfDataGrid.png)
