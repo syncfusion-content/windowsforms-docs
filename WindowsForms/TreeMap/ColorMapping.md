@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Features | Windows Forms | Syncfusion®
+title: Color Mapping in TreeMap control | Syncfusion®
 description: Learn here all about ColorMapping of Syncfusion® Essential Studio® Windows Forms TreeMap control, its elements, and more.
 platform: windowsforms
 control: TreeMap
@@ -24,83 +24,75 @@ TreeMap leaf nodes can be provided with unique colors with the help of the Color
 
 #### Code Sample:
 
-
+{% tabs %}
 
 {% highlight c# %}
 
+public partial class Form1 : Form
+{
+    TreeMap TreeMap1 = new TreeMap();
+    UniColorMapping uniColorMapping = new UniColorMapping();
 
-
-public partial class Form1 :Form
-
+    public Form1()
     {
+        InitializeComponent();
+        this.BackColor = Color.White;
 
-        TreeMap TreeMap1 = new TreeMap();
+        PopulationViewModel data = new PopulationViewModel();
+        TreeMap1.ItemsSource = data.PopulationDetails;
+        TreeMap1.WeightValuePath = "Population";
+        TreeMap1.ColorValuePath = "Growth";
 
-        UniColorMapping uniColorMapping = new UniColorMapping();
+        TreeMapFlatLevel treeMapFlatLevel1 = new TreeMapFlatLevel();
+        treeMapFlatLevel1.GroupPath = "Continent";
+        TreeMap1.Levels.Add(treeMapFlatLevel1);
+        TreeMap1.LeafItemSettings.LabelPath = "Country";
+        this.Controls.Add(TreeMap1);
 
-
-
-     public Form1()
-
-        {
-
-            InitializeComponent();
-
-            this.BackColor = Color.White;
-
-
-
-            PopulationViewModel data = new PopulationViewModel();
-
-            TreeMap1.ItemsSource = data.PopulationDetails;
-
-            TreeMap1.WeightValuePath = "Population";
-
-            TreeMap1.ColorValuePath = "Growth";
-
-
-
-            TreeMapFlatLevel treeMapFlatLevel1 = new TreeMapFlatLevel();
-
-            treeMapFlatLevel1.GroupPath = "Continent";
-
-            TreeMap1.Levels.Add(treeMapFlatLevel1);
-
-            TreeMap1.LeafItemSettings.LabelPath ="Country";
-
-            this.Controls.Add(TreeMap1);
-
-
-
-
-
-uniColorMapping.Color = Color.MediumSlateBlue;
-
-             TreeMap1.LeafColorMapping = uniColorMapping;
-
-       } 
-
-
-
-     } 
-
-
+        uniColorMapping.Color = Color.MediumSlateBlue;
+        TreeMap1.LeafColorMapping = uniColorMapping;
+    }
+}
 
 {% endhighlight %}
 
+{% highlight vb %}
 
+Public Partial Class Form1
+    Inherits Form
 
+    Private TreeMap1 As New TreeMap()
+    Private uniColorMapping As New UniColorMapping()
 
+    Public Sub New()
+        InitializeComponent()
+        Me.BackColor = Color.White
+
+        Dim data As New PopulationViewModel()
+        TreeMap1.ItemsSource = data.PopulationDetails
+        TreeMap1.WeightValuePath = "Population"
+        TreeMap1.ColorValuePath = "Growth"
+
+        Dim treeMapFlatLevel1 As New TreeMapFlatLevel()
+        treeMapFlatLevel1.GroupPath = "Continent"
+        TreeMap1.Levels.Add(treeMapFlatLevel1)
+        TreeMap1.LeafItemSettings.LabelPath = "Country"
+        Me.Controls.Add(TreeMap1)
+
+        uniColorMapping.Color = Color.MediumSlateBlue
+        TreeMap1.LeafColorMapping = uniColorMapping
+    End Sub
+
+End Class
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![Features_images8](Features_images/Features_img8.png)
 
-
 Leaf Nodes colored by using UniColorMapping
 {:.caption}
-
-
-
-
 
 #### RangeBrushColorMapping
 
@@ -108,90 +100,83 @@ The leaf nodes of TreeMap can be colored based upon the range (i.e., From and To
 
 #### Code Sample:
 
-
-
-
+{% tabs %}
 
 {% highlight c# %}
 
-
-
 public partial class Form1 : Form
-
-    {
-
-        TreeMap TreeMap1 = new TreeMap();
-
+{
+    TreeMap TreeMap1 = new TreeMap();
     RangeBrushColorMapping rangeBrushColorMapping = new RangeBrushColorMapping();
 
-     public Form1()
+    public Form1()
+    {
+        InitializeComponent();
+        this.BackColor = Color.White;
 
-        {
+        PopulationViewModel data = new PopulationViewModel();
+        TreeMap1.ItemsSource = data.PopulationDetails;
+        TreeMap1.WeightValuePath = "Population";
+        TreeMap1.ColorValuePath = "Growth";
 
-            InitializeComponent();
+        TreeMapFlatLevel treeMapFlatLevel1 = new TreeMapFlatLevel();
+        treeMapFlatLevel1.GroupPath = "Continent";
+        TreeMap1.Levels.Add(treeMapFlatLevel1);
+        TreeMap1.LeafItemSettings.LabelPath = "Country";
+        this.Controls.Add(TreeMap1);
 
-            this.BackColor = Color.White;
+        rangeBrushColorMapping.Brushes.Add(new RangeBrush() { Color = System.Drawing.ColorTranslator.FromHtml("#77D8D8"), From = 0, To = 1, LegendLabel = "1% Growth" });
+        rangeBrushColorMapping.Brushes.Add(new RangeBrush() { Color = System.Drawing.ColorTranslator.FromHtml("#AED960"), From = 0, To = 2, LegendLabel = "2% Growth" });
+        rangeBrushColorMapping.Brushes.Add(new RangeBrush() { Color = System.Drawing.ColorTranslator.FromHtml("#FFAF51"), From = 0, To = 3, LegendLabel = "3% Growth" });
+        rangeBrushColorMapping.Brushes.Add(new RangeBrush() { Color = System.Drawing.ColorTranslator.FromHtml("#F3D240"), From = 0, To = 20, LegendLabel = "20% Growth" });
 
-
-
-            PopulationViewModel data = new PopulationViewModel();
-
-            TreeMap1.ItemsSource = data.PopulationDetails;
-
-            TreeMap1.WeightValuePath = "Population";
-
-            TreeMap1.ColorValuePath = "Growth";
-
-
-
-            TreeMapFlatLevel treeMapFlatLevel1 = new TreeMapFlatLevel();
-
-            treeMapFlatLevel1.GroupPath = "Continent";
-
-            TreeMap1.Levels.Add(treeMapFlatLevel1);
-
-            TreeMap1.LeafItemSettings.LabelPath ="Country";
-
-            this.Controls.Add(TreeMap1);
-
-
-
-
-
-
-
-rangeBrushColorMapping.Brushes.Add(new RangeBrush() { Color = System.Drawing.ColorTranslator.FromHtml("#77D8D8"), From = 0, To = 1, LegendLabel = "1% Growth" });
-
-            rangeBrushColorMapping.Brushes.Add(new RangeBrush() { Color = System.Drawing.ColorTranslator.FromHtml("#AED960"), From = 0, To = 2, LegendLabel = "2% Growth" });
-
-            rangeBrushColorMapping.Brushes.Add(new RangeBrush() { Color = System.Drawing.ColorTranslator.FromHtml("#FFAF51"), From = 0, To = 3, LegendLabel = "3% Growth" });
-
-            rangeBrushColorMapping.Brushes.Add(new RangeBrush() { Color = System.Drawing.ColorTranslator.FromHtml("#F3D240"), From = 0, To = 20, LegendLabel = "20% Growth" });
-
-
-
-           TreeMap1.LeafColorMapping = rangeBrushColorMapping;
-
-
-
-       } 
-
-
-
-     } 
-
+        TreeMap1.LeafColorMapping = rangeBrushColorMapping;
+    }
+}
 
 {% endhighlight %}
 
+{% highlight vb %}
 
+Public Partial Class Form1
+    Inherits Form
 
+    Private TreeMap1 As New TreeMap()
+    Private rangeBrushColorMapping As New RangeBrushColorMapping()
+
+    Public Sub New()
+        InitializeComponent()
+        Me.BackColor = Color.White
+
+        Dim data As New PopulationViewModel()
+        TreeMap1.ItemsSource = data.PopulationDetails
+        TreeMap1.WeightValuePath = "Population"
+        TreeMap1.ColorValuePath = "Growth"
+
+        Dim treeMapFlatLevel1 As New TreeMapFlatLevel()
+        treeMapFlatLevel1.GroupPath = "Continent"
+        TreeMap1.Levels.Add(treeMapFlatLevel1)
+        TreeMap1.LeafItemSettings.LabelPath = "Country"
+        Me.Controls.Add(TreeMap1)
+
+        rangeBrushColorMapping.Brushes.Add(New RangeBrush() With { .Color = System.Drawing.ColorTranslator.FromHtml("#77D8D8"), .From = 0, .To = 1, .LegendLabel = "1% Growth" })
+        rangeBrushColorMapping.Brushes.Add(New RangeBrush() With { .Color = System.Drawing.ColorTranslator.FromHtml("#AED960"), .From = 0, .To = 2, .LegendLabel = "2% Growth" })
+        rangeBrushColorMapping.Brushes.Add(New RangeBrush() With { .Color = System.Drawing.ColorTranslator.FromHtml("#FFAF51"), .From = 0, .To = 3, .LegendLabel = "3% Growth" })
+        rangeBrushColorMapping.Brushes.Add(New RangeBrush() With { .Color = System.Drawing.ColorTranslator.FromHtml("#F3D240"), .From = 0, .To = 20, .LegendLabel = "20% Growth" })
+
+        TreeMap1.LeafColorMapping = rangeBrushColorMapping
+    End Sub
+
+End Class
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![Features_images9](Features_images/Features_img9.png)
 
 Leaf nodes colored by using RangeBrushColorMapping
 {:.caption}
-
-
 
 ### DesaturationColorMapping
 
@@ -199,90 +184,81 @@ The leaf nodes of TreeMap can be colored based upon the Color specified using De
 
 #### Code Sample:
 
-
-
-
+{% tabs %}
 
 {% highlight c# %}
 
-
-
 public partial class Form1 : Form
+{
+    TreeMap TreeMap1 = new TreeMap();
+    DesaturationColorMapping desaturationColorMapping = new DesaturationColorMapping();
 
+    public Form1()
     {
+        InitializeComponent();
 
-        TreeMap TreeMap1 = new TreeMap();
+        PopulationViewModel data = new PopulationViewModel();
+        TreeMap1.ItemsSource = data.PopulationDetails;
+        TreeMap1.WeightValuePath = "Population";
+        TreeMap1.ColorValuePath = "Growth";
 
-        DesaturationColorMapping desaturationColorMapping = new   DesaturationColorMapping();     
+        TreeMapFlatLevel treeMapFlatLevel1 = new TreeMapFlatLevel();
+        treeMapFlatLevel1.GroupPath = "Continent";
+        TreeMap1.Levels.Add(treeMapFlatLevel1);
+        TreeMap1.LeafItemSettings.LabelPath = "Country";
+        this.Controls.Add(TreeMap1);
 
-
-
-       public Form1()
-
-        {
-
-            InitializeComponent();
-
-
-
-            PopulationViewModel data = new PopulationViewModel();
-
-            TreeMap1.ItemsSource = data.PopulationDetails;
-
-            TreeMap1.WeightValuePath = "Population";
-
-            TreeMap1.ColorValuePath = "Growth";
-
-
-
-            TreeMapFlatLevel treeMapFlatLevel1 = new TreeMapFlatLevel();
-
-            treeMapFlatLevel1.GroupPath = "Continent";
-
-            TreeMap1.Levels.Add(treeMapFlatLevel1);
-
-            TreeMap1.LeafItemSettings.LabelPath ="Country";
-
-            this.Controls.Add(TreeMap1);
-
-
-
-
-
-
-
-            desaturationColorMapping.Color = Color.OrangeRed;
-
-            desaturationColorMapping.From = 220;
-
-            desaturationColorMapping.To = 0;
-
-            desaturationColorMapping.RangeMinimum = 0;
-
-            desaturationColorMapping.RangeMaximum = 80000;
-
-            this.TreeMap1.LeafColorMapping = desaturationColorMapping;
-
-       } 
-
-
-
-
-
-     }
-
+        desaturationColorMapping.Color = Color.OrangeRed;
+        desaturationColorMapping.From = 220;
+        desaturationColorMapping.To = 0;
+        desaturationColorMapping.RangeMinimum = 0;
+        desaturationColorMapping.RangeMaximum = 80000;
+        this.TreeMap1.LeafColorMapping = desaturationColorMapping;
+    }
+}
 
 {% endhighlight %}
 
+{% highlight vb %}
 
+Public Partial Class Form1
+    Inherits Form
 
+    Private TreeMap1 As New TreeMap()
+    Private desaturationColorMapping As New DesaturationColorMapping()
+
+    Public Sub New()
+        InitializeComponent()
+
+        Dim data As New PopulationViewModel()
+        TreeMap1.ItemsSource = data.PopulationDetails
+        TreeMap1.WeightValuePath = "Population"
+        TreeMap1.ColorValuePath = "Growth"
+
+        Dim treeMapFlatLevel1 As New TreeMapFlatLevel()
+        treeMapFlatLevel1.GroupPath = "Continent"
+        TreeMap1.Levels.Add(treeMapFlatLevel1)
+        TreeMap1.LeafItemSettings.LabelPath = "Country"
+        Me.Controls.Add(TreeMap1)
+
+        desaturationColorMapping.Color = Color.OrangeRed
+        desaturationColorMapping.From = 220
+        desaturationColorMapping.To = 0
+        desaturationColorMapping.RangeMinimum = 0
+        desaturationColorMapping.RangeMaximum = 80000
+        Me.TreeMap1.LeafColorMapping = desaturationColorMapping
+    End Sub
+
+End Class
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![Features_images10](Features_images/Features_img10.png)
 
 Leaf nodes colored by using DesaturationColorMapping
 {:.caption}
-
-
 
 ### PaletteColorMapping
 
@@ -290,83 +266,80 @@ The leaf nodes are colored by using the brushes mentioned in Colors collection o
 
 #### Code Sample:
 
-
-
-
+{% tabs %}
 
 {% highlight c# %}
 
-
-
 public partial class Form1 : Form
+{
+    TreeMap TreeMap1 = new TreeMap();
+    PaletteColorMapping paletteColorMapping = new PaletteColorMapping();
 
+    public Form1()
     {
+        InitializeComponent();
 
-        TreeMap TreeMap1 = new TreeMap();
+        PopulationViewModel data = new PopulationViewModel();
+        TreeMap1.ItemsSource = data.PopulationDetails;
+        TreeMap1.WeightValuePath = "Population";
+        TreeMap1.ColorValuePath = "Growth";
 
-        PaletteColorMapping paletteColorMapping = new PaletteColorMapping();
+        TreeMapFlatLevel treeMapFlatLevel1 = new TreeMapFlatLevel();
+        treeMapFlatLevel1.GroupPath = "Continent";
+        TreeMap1.Levels.Add(treeMapFlatLevel1);
+        TreeMap1.LeafItemSettings.LabelPath = "Country";
+        this.Controls.Add(TreeMap1);
 
-
-
-       public Form1()
-
+        paletteColorMapping.Colors = new List<Brush>()
         {
-
-            InitializeComponent();
-
-
-
-            PopulationViewModel data = new PopulationViewModel();
-
-            TreeMap1.ItemsSource = data.PopulationDetails;
-
-            TreeMap1.WeightValuePath = "Population";
-
-            TreeMap1.ColorValuePath = "Growth";
-
-
-
-            TreeMapFlatLevel treeMapFlatLevel1 = new TreeMapFlatLevel();
-
-            treeMapFlatLevel1.GroupPath = "Continent";
-
-            TreeMap1.Levels.Add(treeMapFlatLevel1);
-
-            TreeMap1.LeafItemSettings.LabelPath ="Country";
-
-            this.Controls.Add(TreeMap1);
-
-
-
-            paletteColorMapping.Colors = new List<Brush>() 
-
-            {
-
-                new SolidBrush(Color.MediumSeaGreen),
-
-                new SolidBrush(Color.PaleVioletRed),
-
-                new SolidBrush(Color.MediumSlateBlue),
-
-            };
-
-            TreeMap1.LeafColorMapping = paletteColorMapping;
-
-     }
-
+            new SolidBrush(Color.MediumSeaGreen),
+            new SolidBrush(Color.PaleVioletRed),
+            new SolidBrush(Color.MediumSlateBlue),
+        };
+        TreeMap1.LeafColorMapping = paletteColorMapping;
+    }
 }
-
-
-
-
 
 {% endhighlight %}
 
+{% highlight vb %}
 
+Public Partial Class Form1
+    Inherits Form
+
+    Private TreeMap1 As New TreeMap()
+    Private paletteColorMapping As New PaletteColorMapping()
+
+    Public Sub New()
+        InitializeComponent()
+
+        Dim data As New PopulationViewModel()
+        TreeMap1.ItemsSource = data.PopulationDetails
+        TreeMap1.WeightValuePath = "Population"
+        TreeMap1.ColorValuePath = "Growth"
+
+        Dim treeMapFlatLevel1 As New TreeMapFlatLevel()
+        treeMapFlatLevel1.GroupPath = "Continent"
+        TreeMap1.Levels.Add(treeMapFlatLevel1)
+        TreeMap1.LeafItemSettings.LabelPath = "Country"
+        Me.Controls.Add(TreeMap1)
+
+        paletteColorMapping.Colors = New List(Of Brush)() From
+        {
+            New SolidBrush(Color.MediumSeaGreen),
+            New SolidBrush(Color.PaleVioletRed),
+            New SolidBrush(Color.MediumSlateBlue)
+        }
+        TreeMap1.LeafColorMapping = paletteColorMapping
+    End Sub
+
+End Class
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![Features_images11](Features_images/Features_img11.png)
 
-
 Leaf nodes colored by using PaletteColorMapping
 {:.caption}
-

@@ -23,11 +23,11 @@ Situations arise where any combination of available shape files needs to be load
 
 ### Adding multiple layers 
 
-ShapeFileLayer is the core layer of the map. Multiple layers can be added in the ShapeFileLayer itself. They have to be added in SubShapeFileLayer within the ShapeFileLayer. 
+ShapeFileLayer is the core layer of the map. Multiple layers can be added in the ShapeFileLayer itself. They have to be added in SubShapeFileLayer within the ShapeFileLayer.
 
 ### SubShapeFileLayers
 
-SubShapeFileLayer is a collection of SubShapeFileLayer. SubShapeFileLayer is also a type of ShapeFileLayer. The following code adds multiple layers into the ShapeFileLayer.
+SubShapeFileLayers is a collection of SubShapeFileLayer objects. Each SubShapeFileLayer is a type of ShapeFileLayer that can be added to a parent ShapeFileLayer. The following code adds multiple layers into the ShapeFileLayer.
 
 
 ### Code sample:
@@ -38,28 +38,36 @@ SubShapeFileLayer is a collection of SubShapeFileLayer. SubShapeFileLayer is als
 
 partial class Form1
 {
+    private Syncfusion.Windows.Forms.Maps.Maps mapsControl1;
 
-         private void InitializeComponent()
-         {
+    private void InitializeComponent()
+    {
+        this.mapsControl1 = new Syncfusion.Windows.Forms.Maps.Maps();
+        this.mapsControl1.Name = "mapsControl1";
+        this.mapsControl1.Size = new System.Drawing.Size(880, 585);
+        this.Controls.Add(this.mapsControl1);
+        this.ClientSize = new System.Drawing.Size(880, 585);
+        this.Load += new System.EventHandler(this.Form1_Load);
+    }
+}
 
-            this.mapsControl1 = new Syncfusion.Windows.Forms.Maps.Maps();
+{% endhighlight %}
 
-            this.mapsControl1.Name = "mapsControl1";
+{% highlight vb %}
 
-            this.mapsControl1.Size = new System.Drawing.Size(880, 585); 
+Partial Class Form1
+    Private mapsControl1 As Syncfusion.Windows.Forms.Maps.Maps
 
-            this.Controls.Add(this.mapsControl1);  
+    Private Sub InitializeComponent()
+        Me.mapsControl1 = New Syncfusion.Windows.Forms.Maps.Maps()
+        Me.mapsControl1.Name = "mapsControl1"
+        Me.mapsControl1.Size = New System.Drawing.Size(880, 585)
+        Me.Controls.Add(Me.mapsControl1)
+        Me.ClientSize = New System.Drawing.Size(880, 585)
+        AddHandler Me.Load, New System.EventHandler(AddressOf Me.Form1_Load)
+    End Sub
+End Class
 
-            this.ClientSize = new System.Drawing.Size(880, 585);          
-
-            this.Load += new System.EventHandler(this.Form1_Load);
-
-         }
-
-            private Syncfusion.Windows.Forms.Maps.Maps mapsControl1;
-
-}  
-	 
 {% endhighlight %}
 
 {% endtabs %}
@@ -70,69 +78,81 @@ partial class Form1
 
 public partial class Form1 : Form
 {
+    private void Form1_Load(object sender, EventArgs e)
+    {
+        this.mapsControl1.Dock = DockStyle.Fill;
+        this.mapsControl1.Margin = new Padding(0, 0, 4, 0);
+        this.mapsControl1.MapBackgroundBrush = new SolidBrush(Color.White);
+        this.mapsControl1.MapItemsShape = Syncfusion.Windows.Forms.Maps.MapItemShapes.None;
+        this.mapsControl1.MapItemStroke = new SolidBrush(Color.Black);
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
+        MapViewModel model = new MapViewModel();
+        ShapeFileLayer shapeLayer = new ShapeFileLayer();
+        shapeLayer.Uri = "world1.shp";
+        shapeLayer.ShapeSetting.ShapeFill = "#E5E5E5";
+        shapeLayer.ShapeSetting.ShapeStroke = "#C1C1C1";
+        shapeLayer.ShapeSetting.ShapeStrokeThickness = 0.5;
 
-            this.mapsControl1.Dock = DockStyle.Fill;
+        SubShapeFileLayer layer1 = new SubShapeFileLayer();
+        layer1.Uri = "Africa.shp";
+        layer1.ShapeSetting.ShapeFill = "#8DCEFF";
+        layer1.ShapeSetting.ShapeStrokeThickness = 0.5;
+        layer1.ShapeSetting.ShapeStroke = "#2F8CEA";
 
-            this.mapsControl1.Margin = new Padding(0, 0, 4, 0);
+        SubShapeFileLayer layer2 = new SubShapeFileLayer();
+        layer2.Uri = "australia.shp";
+        layer2.ShapeSetting.ShapeFill = "#8DCEFF";
+        layer2.ShapeSetting.ShapeStrokeThickness = 0.5;
+        layer2.ShapeSetting.ShapeStroke = "#2F8CEA";
 
-            this.mapsControl1.MapBackgroundBrush = new SolidBrush(Color.White);
+        shapeLayer.SubShapeFileLayers.Add(layer1);
+        shapeLayer.SubShapeFileLayers.Add(layer2);
+        this.mapsControl1.Layers.Add(shapeLayer);
+    }
+}
 
-            this.mapsControl1.MapItemsShape = Syncfusion.Windows.Forms.Maps.MapItemShapes.None;
+{% endhighlight %}
 
-            this.mapsControl1.MapItemStroke = new SolidBrush(Color.Black);
+{% highlight vb %}
 
-            MapViewModel model = new MapViewModel();
+Public Partial Class Form1
+    Inherits Form
 
-            ShapeFileLayer shapeLayer = new ShapeFileLayer();
+    Private Sub Form1_Load(sender As Object, e As EventArgs)
+        Me.mapsControl1.Dock = DockStyle.Fill
+        Me.mapsControl1.Margin = New Padding(0, 0, 4, 0)
+        Me.mapsControl1.MapBackgroundBrush = New SolidBrush(Color.White)
+        Me.mapsControl1.MapItemsShape = Syncfusion.Windows.Forms.Maps.MapItemShapes.None
+        Me.mapsControl1.MapItemStroke = New SolidBrush(Color.Black)
 
-            shapeLayer.Uri = "world1.shp";
+        Dim model As New MapViewModel()
+        Dim shapeLayer As New ShapeFileLayer()
+        shapeLayer.Uri = "world1.shp"
+        shapeLayer.ShapeSetting.ShapeFill = "#E5E5E5"
+        shapeLayer.ShapeSetting.ShapeStroke = "#C1C1C1"
+        shapeLayer.ShapeSetting.ShapeStrokeThickness = 0.5
 
-            shapeLayer.ShapeSetting.ShapeFill = "#E5E5E5";
+        Dim layer1 As New SubShapeFileLayer()
+        layer1.Uri = "Africa.shp"
+        layer1.ShapeSetting.ShapeFill = "#8DCEFF"
+        layer1.ShapeSetting.ShapeStrokeThickness = 0.5
+        layer1.ShapeSetting.ShapeStroke = "#2F8CEA"
 
-            shapeLayer.ShapeSetting.ShapeStroke = "#C1C1C1";
+        Dim layer2 As New SubShapeFileLayer()
+        layer2.Uri = "australia.shp"
+        layer2.ShapeSetting.ShapeFill = "#8DCEFF"
+        layer2.ShapeSetting.ShapeStrokeThickness = 0.5
+        layer2.ShapeSetting.ShapeStroke = "#2F8CEA"
 
-            shapeLayer.ShapeSetting.ShapeStrokeThickness = 0.5;
-
-
-            SubShapeFileLayer layer1 = new SubShapeFileLayer();
-
-            layer1.Uri = "Africa.shp"; 
-
-            layer1.ShapeSetting.ShapeFill = "#8DCEFF";
-
-            layer1.ShapeSetting.ShapeStrokeThickness = 0.5;
-
-            layer1.ShapeSetting.ShapeStroke = "#2F8CEA";
-            
-
-            SubShapeFileLayer layer2 = new SubShapeFileLayer();
-
-            layer2.Uri = "australia.shp";
-
-            layer2.ShapeSetting.ShapeFill = "#8DCEFF";
-
-            layer2.ShapeSetting.ShapeStrokeThickness = 0.5;
-
-            layer2.ShapeSetting.ShapeStroke = "#2F8CEA";
-
-            shapeLayer.SubShapeFileLayers.Add(layer1);
-
-            shapeLayer.SubShapeFileLayers.Add(layer2);
-
-            this.mapsControl1.Layers.Add(shapeLayer);
-
-         }   
-
- }       
+        shapeLayer.SubShapeFileLayers.Add(layer1)
+        shapeLayer.SubShapeFileLayers.Add(layer2)
+        Me.mapsControl1.Layers.Add(shapeLayer)
+    End Sub
+End Class
 
 {% endhighlight %}
 
 {% endtabs %}
-
-Screenshot:
 
 ![SubShapeFileLayer in Windows Forms Maps](Multilayer-Support_images/Multilayer-Support_img1.png)
 
@@ -159,39 +179,57 @@ In `Tile` layout, maps scale value is maintained in every direction around a poi
 
 {% highlight c# %}
 
-    public partial class Form1 : Form
-        {            
+public partial class Form1 : Form
+{
+    private void Form1_Load(object sender, EventArgs e)
+    {
+        ShapeFileLayer shapeLayer = new ShapeFileLayer();
+        shapeLayer.Uri = "world1.shp";
+        shapeLayer.LayoutType = LayoutType.Tile;
 
-            private void Form1_Load(object sender, EventArgs e)
-            {
-            
-                ShapeFileLayer shapeLayer = new ShapeFileLayer();
-                shapeLayer.Uri = "world1.shp";
+        shapeLayer.Annotations = new ObservableCollection<Annotation>()
+        {
+            new SyncfusionLocations() { Name = "USA", Latitude = 38.8833, Longitude = -77.0167 },
+            new SyncfusionLocations() { Name = "Indonesia", Latitude = -6.1750, Longitude = 106.8283 }
+        };
 
-                shapeLayer.LayoutType = LayoutType.Tile;  // LayoutType Tile
+        this.mapsControl1.AnnotationDrawing += mapsControl1_AnnotationDrawing;
+        this.mapsControl1.Layers.Add(shapeLayer);
+    }
 
-                
-                shapeLayer.Annotations = new ObservableCollection<Annotation>(){
-                new SyncfusionLocations() { Name = "USA", Latitude = 38.8833, Longitude = -77.0167},
-                new SyncfusionLocations() { Name = "Indonesia", Latitude = -6.1750, Longitude = 106.8283},
+    void mapsControl1_AnnotationDrawing(object sender, AnnotationDrawingEventArgs e)
+    {
+        Image image = Image.FromFile("..//..//pin.png");
+        e.Graphics.DrawImage(image, (float)(e.X - 10), (float)(e.Y - 25), 25, 30);
+    }
+}
 
-            };
+{% endhighlight %}
 
+{% highlight vb %}
 
-                this.mapsControl1.AnnotationDrawing += mapsControl1_AnnotationDrawing;
-                this.mapsControl1.Layers.Add(shapeLayer);
-            
-            }
+Public Partial Class Form1
+    Inherits Form
 
-            void mapsControl1_AnnotationDrawing(object sender, AnnotationDrawingEventArgs e)
-            {
-        
-                Image image = Image.FromFile("..//..//pin.png");
-                e.Graphics.DrawImage(image, (float)(e.X-10), (float)(e.Y-25),25,30);
-                
-            }
-            
+    Private Sub Form1_Load(sender As Object, e As EventArgs)
+        Dim shapeLayer As New ShapeFileLayer()
+        shapeLayer.Uri = "world1.shp"
+        shapeLayer.LayoutType = LayoutType.Tile
+
+        shapeLayer.Annotations = New ObservableCollection(Of Annotation)() From {
+            New SyncfusionLocations() With {.Name = "USA", .Latitude = 38.8833, .Longitude = -77.0167},
+            New SyncfusionLocations() With {.Name = "Indonesia", .Latitude = -6.1750, .Longitude = 106.8283}
         }
+
+        AddHandler Me.mapsControl1.AnnotationDrawing, AddressOf mapsControl1_AnnotationDrawing
+        Me.mapsControl1.Layers.Add(shapeLayer)
+    End Sub
+
+    Private Sub mapsControl1_AnnotationDrawing(sender As Object, e As AnnotationDrawingEventArgs)
+        Dim image As Image = Image.FromFile("..//..//pin.png")
+        e.Graphics.DrawImage(image, CSng(e.X - 10), CSng(e.Y - 25), 25, 30)
+    End Sub
+End Class
 
        public class SyncfusionLocations : Annotation
         {
@@ -214,25 +252,35 @@ The [`ItemSource`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windo
 
 partial class Form1
 {
+    private Syncfusion.Windows.Forms.Maps.Maps mapsControl1;
 
-        private void InitializeComponent()
-        {
-            this.mapsControl1 = new Syncfusion.Windows.Forms.Maps.Maps();
+    private void InitializeComponent()
+    {
+        this.mapsControl1 = new Syncfusion.Windows.Forms.Maps.Maps();
+        this.mapsControl1.Name = "mapsControl1";
+        this.mapsControl1.Size = new System.Drawing.Size(880, 585);
+        this.Controls.Add(this.mapsControl1);
+        this.ClientSize = new System.Drawing.Size(880, 585);
+        this.Load += new System.EventHandler(this.Form1_Load);
+    }
+}
 
-            this.mapsControl1.Name = "mapsControl1";
+{% endhighlight %}
 
-            this.mapsControl1.Size = new System.Drawing.Size(880, 585); 
+{% highlight vb %}
 
-            this.Controls.Add(this.mapsControl1);  
+Partial Class Form1
+    Private mapsControl1 As Syncfusion.Windows.Forms.Maps.Maps
 
-            this.ClientSize = new System.Drawing.Size(880, 585);          
-
-            this.Load += new System.EventHandler(this.Form1_Load);
-
-         }
-
-         private Syncfusion.Windows.Forms.Maps.Maps mapsControl1;
-}  
+    Private Sub InitializeComponent()
+        Me.mapsControl1 = New Syncfusion.Windows.Forms.Maps.Maps()
+        Me.mapsControl1.Name = "mapsControl1"
+        Me.mapsControl1.Size = New System.Drawing.Size(880, 585)
+        Me.Controls.Add(Me.mapsControl1)
+        Me.ClientSize = New System.Drawing.Size(880, 585)
+        AddHandler Me.Load, New System.EventHandler(AddressOf Me.Form1_Load)
+    End Sub
+End Class
 
 {% endhighlight %}
 
@@ -245,25 +293,40 @@ partial class Form1
 
 public partial class Form1 : Form
 {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+    public Form1()
+    {
+        InitializeComponent();
+    }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-             MapViewModel model = new MapViewModel();
+    private void Form1_Load(object sender, EventArgs e)
+    {
+        MapViewModel model = new MapViewModel();
+        ShapeFileLayer shapeLayer = new ShapeFileLayer();
+        shapeLayer.Uri = "world1.shp";
+        shapeLayer.ItemSource = model.Countries;
+        this.mapsControl1.Layers.Add(shapeLayer);
+    }
+}
 
-             ShapeFileLayer shapeLayer = new ShapeFileLayer();
+{% endhighlight %}
 
-             shapeLayer.Uri = "world1.shp";
+{% highlight vb %}
 
-             shapeLayer.ItemSource = model. Countries; 
+Public Partial Class Form1
+    Inherits Form
 
-             this.mapsControl1.Layers.Add(shapeLayer); 
+    Public Sub New()
+        InitializeComponent()
+    End Sub
 
-         }
-}       
+    Private Sub Form1_Load(sender As Object, e As EventArgs)
+        Dim model As New MapViewModel()
+        Dim shapeLayer As New ShapeFileLayer()
+        shapeLayer.Uri = "world1.shp"
+        shapeLayer.ItemSource = model.Countries
+        Me.mapsControl1.Layers.Add(shapeLayer)
+    End Sub
+End Class
 
 {% endhighlight %}
 
@@ -356,26 +419,35 @@ public class Country : INotifyPropertyChanged
 
 partial class Form1
 {
+    private Syncfusion.Windows.Forms.Maps.Maps mapsControl1;
 
-         private void InitializeComponent()
-         {
+    private void InitializeComponent()
+    {
+        this.mapsControl1 = new Syncfusion.Windows.Forms.Maps.Maps();
+        this.mapsControl1.Name = "mapsControl1";
+        this.mapsControl1.Size = new System.Drawing.Size(880, 585);
+        this.Controls.Add(this.mapsControl1);
+        this.ClientSize = new System.Drawing.Size(880, 585);
+        this.Load += new System.EventHandler(this.Form1_Load);
+    }
+}
 
-            this.mapsControl1 = new Syncfusion.Windows.Forms.Maps.Maps();
+{% endhighlight %}
 
-            this.mapsControl1.Name = "mapsControl1";
+{% highlight vb %}
 
-            this.mapsControl1.Size = new System.Drawing.Size(880, 585); 
+Partial Class Form1
+    Private mapsControl1 As Syncfusion.Windows.Forms.Maps.Maps
 
-            this.Controls.Add(this.mapsControl1);  
-
-            this.ClientSize = new System.Drawing.Size(880, 585);          
-
-            this.Load += new System.EventHandler(this.Form1_Load);
-         }
-
-            private Syncfusion.Windows.Forms.Maps.Maps mapsControl1;
-
-}  
+    Private Sub InitializeComponent()
+        Me.mapsControl1 = New Syncfusion.Windows.Forms.Maps.Maps()
+        Me.mapsControl1.Name = "mapsControl1"
+        Me.mapsControl1.Size = New System.Drawing.Size(880, 585)
+        Me.Controls.Add(Me.mapsControl1)
+        Me.ClientSize = New System.Drawing.Size(880, 585)
+        AddHandler Me.Load, New System.EventHandler(AddressOf Me.Form1_Load)
+    End Sub
+End Class
 
 {% endhighlight %}
 
@@ -387,29 +459,42 @@ partial class Form1
 
 public partial class Form1 : Form
 {
+    public Form1()
+    {
+        InitializeComponent();
+    }
 
-        public Form1()
-        {
-            InitializeComponent();
-        }
+    private void Form1_Load(object sender, EventArgs e)
+    {
+        MapViewModel model = new MapViewModel();
+        ShapeFileLayer shapeLayer = new ShapeFileLayer();
+        shapeLayer.Uri = "world1.shp";
+        shapeLayer.ItemSource = model.Countries;
+        shapeLayer.ShapeIDPath = "NAME";
+        this.mapsControl1.Layers.Add(shapeLayer);
+    }
+}
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
+{% endhighlight %}
 
-            MapViewModel model = new MapViewModel();
+{% highlight vb %}
 
-             ShapeFileLayer shapeLayer = new ShapeFileLayer();
+Public Partial Class Form1
+    Inherits Form
 
-             shapeLayer.Uri = "world1.shp";
+    Public Sub New()
+        InitializeComponent()
+    End Sub
 
-             shapeLayer.ItemSource = model. Countries;
-
-             shapeLayer.ShapeIDPath = "NAME";
-
-             this.mapsControl1.Layers.Add(shapeLayer); 
-         }
-
-}       
+    Private Sub Form1_Load(sender As Object, e As EventArgs)
+        Dim model As New MapViewModel()
+        Dim shapeLayer As New ShapeFileLayer()
+        shapeLayer.Uri = "world1.shp"
+        shapeLayer.ItemSource = model.Countries
+        shapeLayer.ShapeIDPath = "NAME"
+        Me.mapsControl1.Layers.Add(shapeLayer)
+    End Sub
+End Class
 
 {% endhighlight %}
 
@@ -417,7 +502,7 @@ public partial class Form1 : Form
 
 ## ShapeIDTableField
 
-The `ShapeIDTableField`[https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Maps.ShapeFileLayer.html#Syncfusion_Windows_Forms_Maps_ShapeFileLayer_ShapeIDTableField] property is similar to the ShapeIDPath. It is a string type property that refers to the column name in the dbf file to identify the shape. When the values of the ShapeIDPath property in the ItemSource and the value of ShapeIDTableField in the .dbf file match, then the associated objects from the ItemSource are bound to the corresponding shape.
+The [`ShapeIDTableField`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Maps.ShapeFileLayer.html#Syncfusion_Windows_Forms_Maps_ShapeFileLayer_ShapeIDTableField) property is similar to the ShapeIDPath. It is a string type property that refers to the column name in the dbf file to identify the shape. When the values of the ShapeIDPath property in the ItemSource and the value of ShapeIDTableField in the .dbf file match, then the associated objects from the ItemSource are bound to the corresponding shape.
 
 
 {% tabs %}
@@ -426,26 +511,35 @@ The `ShapeIDTableField`[https://help.syncfusion.com/cr/windowsforms/Syncfusion.
 
 partial class Form1
 {
-       private void InitializeComponent()
-       {
+    private Syncfusion.Windows.Forms.Maps.Maps mapsControl1;
 
-            this.mapsControl1 = new Syncfusion.Windows.Forms.Maps.Maps();
+    private void InitializeComponent()
+    {
+        this.mapsControl1 = new Syncfusion.Windows.Forms.Maps.Maps();
+        this.mapsControl1.Name = "mapsControl1";
+        this.mapsControl1.Size = new System.Drawing.Size(880, 585);
+        this.Controls.Add(this.mapsControl1);
+        this.ClientSize = new System.Drawing.Size(880, 585);
+        this.Load += new System.EventHandler(this.Form1_Load);
+    }
+}
 
-            this.mapsControl1.Name = "mapsControl1";
+{% endhighlight %}
 
-            this.mapsControl1.Size = new System.Drawing.Size(880, 585); 
+{% highlight vb %}
 
-            this.Controls.Add(this.mapsControl1);  
+Partial Class Form1
+    Private mapsControl1 As Syncfusion.Windows.Forms.Maps.Maps
 
-            this.ClientSize = new System.Drawing.Size(880, 585);          
-
-            this.Load += new System.EventHandler(this.Form1_Load);
-
-         }
-
-        private Syncfusion.Windows.Forms.Maps.Maps mapsControl1;
-
-}  
+    Private Sub InitializeComponent()
+        Me.mapsControl1 = New Syncfusion.Windows.Forms.Maps.Maps()
+        Me.mapsControl1.Name = "mapsControl1"
+        Me.mapsControl1.Size = New System.Drawing.Size(880, 585)
+        Me.Controls.Add(Me.mapsControl1)
+        Me.ClientSize = New System.Drawing.Size(880, 585)
+        AddHandler Me.Load, New System.EventHandler(AddressOf Me.Form1_Load)
+    End Sub
+End Class
 
 {% endhighlight %}
 
@@ -457,31 +551,44 @@ partial class Form1
 
 public partial class Form1 : Form
 {
+    public Form1()
+    {
+        InitializeComponent();
+    }
 
-        public Form1()
-        {
-            InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-            MapViewModel model = new MapViewModel();
-
-            ShapeFileLayer shapeLayer = new ShapeFileLayer();
-
-            shapeLayer.Uri = "world1.shp";
-
-            shapeLayer.ItemSource = model.Countries;
-
-            shapeLayer.ShapeIDPath = "NAME";
-
-            shapeLayer.ShapeIDTableField = "NAME";
-
-            this.mapsControl1.Layers.Add(shapeLayer); 
-        }
-
+    private void Form1_Load(object sender, EventArgs e)
+    {
+        MapViewModel model = new MapViewModel();
+        ShapeFileLayer shapeLayer = new ShapeFileLayer();
+        shapeLayer.Uri = "world1.shp";
+        shapeLayer.ItemSource = model.Countries;
+        shapeLayer.ShapeIDPath = "NAME";
+        shapeLayer.ShapeIDTableField = "NAME";
+        this.mapsControl1.Layers.Add(shapeLayer);
+    }
 }
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Public Partial Class Form1
+    Inherits Form
+
+    Public Sub New()
+        InitializeComponent()
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs)
+        Dim model As New MapViewModel()
+        Dim shapeLayer As New ShapeFileLayer()
+        shapeLayer.Uri = "world1.shp"
+        shapeLayer.ItemSource = model.Countries
+        shapeLayer.ShapeIDPath = "NAME"
+        shapeLayer.ShapeIDTableField = "NAME"
+        Me.mapsControl1.Layers.Add(shapeLayer)
+    End Sub
+End Class
 
 {% endhighlight %}
 

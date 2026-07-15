@@ -9,7 +9,7 @@ documentation: ug
 
 # Color Mapping in Windows Forms TreeMap
 
-Color mapping is categorized into the following four different types:
+Color mapping is categorized into the following four types:
 
 * UniColorMapping
 * RangeBrushColorMapping
@@ -193,7 +193,7 @@ this.TreeMap1.LeafColorMapping = desaturationColorMapping;
 
 ## Palette color mapping
 
-The leaf nodes can be colored using the brushes listed in the [`Colors`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TreeMap.PaletteColorMapping.html#Syncfusion_Windows_Forms_TreeMap_PaletteColorMapping_Colors) collection of PaletteColorMapping.
+The leaf nodes can be colored using the brushes specified in the [`Colors`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TreeMap.PaletteColorMapping.html#Syncfusion_Windows_Forms_TreeMap_PaletteColorMapping_Colors) collection of PaletteColorMapping.
 
 #### Code sample
 
