@@ -269,15 +269,15 @@ calendar.BlackoutDates = time;
 {% highlight VB %}
 Imports Syncfusion.WinForms.Input
 
-        'Setting the Blackout Dates
+'Setting the Blackout Dates
 
-        Dim weekends = GetDaysBetween(minDateTimeEdit.Value.Value, maxDateTimeEdit.Value.Value).Where(Function(d) d.DayOfWeek = DayOfWeek.Saturday OrElse d.DayOfWeek = DayOfWeek.Sunday)
+Dim weekends = GetDaysBetween(minDateTimeEdit.Value.Value, maxDateTimeEdit.Value.Value).Where(Function(d) d.DayOfWeek = DayOfWeek.Saturday OrElse d.DayOfWeek = DayOfWeek.Sunday)
 
-        Dim time As List(Of DateTime) = New List(Of DateTime)
+Dim time As List(Of DateTime) = New List(Of DateTime)
 
-        time = weekends.ToList
+time = weekends.ToList
 
-        calendar.BlackoutDates = time
+calendar.BlackoutDates = time
 
 {% endhighlight  %}
 

@@ -33,109 +33,109 @@ To customize the dates, use the following code example:
 {% highlight C# %}
 using Syncfusion.WinForms.Input;
 
-        SpecialDate specialDate1 = new SpecialDate();
+SpecialDate specialDate1 = new SpecialDate();
 
-        SpecialDate specialDate2 = new SpecialDate();
+SpecialDate specialDate2 = new SpecialDate();
 
-        SpecialDate specialDate3 = new SpecialDate();
+SpecialDate specialDate3 = new SpecialDate();
 
-        SpecialDate specialDate4 = new SpecialDate();  
+SpecialDate specialDate4 = new SpecialDate();  
 
-        List<SpecialDate> SpecialDates = new List<SpecialDate>();      
-         
-        specialDate1.BackColor = System.Drawing.Color.White;
+List<SpecialDate> SpecialDates = new List<SpecialDate>();      
 
-        specialDate1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, 
-                                               System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+specialDate1.BackColor = System.Drawing.Color.White;
 
-        specialDate1.ForeColor = System.Drawing.Color.Magenta;
+specialDate1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, 
+                                    System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 
-        specialDate1.Image = Properties.Resources.icons_Womens_day;
+specialDate1.ForeColor = System.Drawing.Color.Magenta;
 
-        specialDate1.Description = "International Women’s Day";
+specialDate1.Image = Properties.Resources.icons_Womens_day;
 
-        specialDate1.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+specialDate1.Description = "International Women’s Day";
 
-        specialDate1.IsDateVisible = false;
+specialDate1.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
-        specialDate1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+specialDate1.IsDateVisible = false;
 
-        specialDate1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+specialDate1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
-        specialDate1.Value = new System.DateTime(2018, 3, 8, 0, 0, 0, 0);
-            
-        specialDate2.BackColor = System.Drawing.Color.White;
+specialDate1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
 
-        specialDate2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, 
-                                               System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+specialDate1.Value = new System.DateTime(2018, 3, 8, 0, 0, 0, 0);
+    
+specialDate2.BackColor = System.Drawing.Color.White;
 
-        specialDate2.ForeColor = System.Drawing.Color.Magenta;
+specialDate2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, 
+                                    System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 
-        specialDate2.Description = "World Forestry Day";
+specialDate2.ForeColor = System.Drawing.Color.Magenta;
 
-        specialDate2.Image = Properties.Resources.Icon_World_Forestry_Day;
+specialDate2.Description = "World Forestry Day";
 
-        specialDate2.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+specialDate2.Image = Properties.Resources.Icon_World_Forestry_Day;
 
-        specialDate2.IsDateVisible = false;
+specialDate2.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
-        specialDate2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+specialDate2.IsDateVisible = false;
 
-        specialDate2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+specialDate2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
-        specialDate2.Value = new System.DateTime(2018, 3, 21, 0, 0, 0, 0);
-            
-        specialDate3.BackColor = System.Drawing.Color.White;
+specialDate2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
 
-        specialDate3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, 
-                                               System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+specialDate2.Value = new System.DateTime(2018, 3, 21, 0, 0, 0, 0);
+    
+specialDate3.BackColor = System.Drawing.Color.White;
 
-        specialDate3.ForeColor = System.Drawing.Color.Magenta;
+specialDate3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, 
+                                    System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 
-        specialDate3.Image = Properties.Resources.Icon_Water_day;
+specialDate3.ForeColor = System.Drawing.Color.Magenta;
 
-        specialDate3.Description = "World Day for Water";
+specialDate3.Image = Properties.Resources.Icon_Water_day;
 
-        specialDate3.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+specialDate3.Description = "World Day for Water";
 
-        specialDate3.IsDateVisible = false;
+specialDate3.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
-        specialDate3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+specialDate3.IsDateVisible = false;
 
-        specialDate3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+specialDate3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
-        specialDate3.Value = new System.DateTime(2018, 3, 24, 0, 0, 0, 0);
-        
-        specialDate4.BackColor = System.Drawing.Color.White;
+specialDate3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
 
-        specialDate4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, 
-                                               System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+specialDate3.Value = new System.DateTime(2018, 3, 24, 0, 0, 0, 0);
 
-        specialDate4.ForeColor = System.Drawing.Color.Magenta;
+specialDate4.BackColor = System.Drawing.Color.White;
 
-        specialDate4.Image = Properties.Resources.Icon_Healthy_day;
+specialDate4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, 
+                                    System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 
-        specialDate4.Description = "World Health Day";
+specialDate4.ForeColor = System.Drawing.Color.Magenta;
 
-        specialDate4.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+specialDate4.Image = Properties.Resources.Icon_Healthy_day;
 
-        specialDate4.IsDateVisible = false;
+specialDate4.Description = "World Health Day";
 
-        specialDate4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+specialDate4.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
-        specialDate4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+specialDate4.IsDateVisible = false;
 
-        specialDate4.Value = new System.DateTime(2018, 4, 7, 0, 0, 0, 0);
+specialDate4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
-        SpecialDates.Add(specialDate1);
+specialDate4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
 
-        SpecialDates.Add(specialDate2);
+specialDate4.Value = new System.DateTime(2018, 4, 7, 0, 0, 0, 0);
 
-        SpecialDates.Add(specialDate3);
+SpecialDates.Add(specialDate1);
 
-        SpecialDates.Add(specialDate4);
+SpecialDates.Add(specialDate2);
 
-        this.sfCalendar.SpecialDates = SpecialDates;       
+SpecialDates.Add(specialDate3);
+
+SpecialDates.Add(specialDate4);
+
+this.sfCalendar.SpecialDates = SpecialDates;       
   
 {% endhighlight  %}
 
@@ -144,114 +144,114 @@ Imports Syncfusion.WinForms.Input
 
  Private Sub InitializeComponent()
 
-        Me.components = New System.ComponentModel.Container
- 
-        Dim specialDate1 As SpecialDate = New SpecialDate
+Me.components = New System.ComponentModel.Container
 
-        Dim specialDate2 As SpecialDate = New SpecialDate
+Dim specialDate1 As SpecialDate = New SpecialDate
 
-        Dim specialDate3 As SpecialDate = New SpecialDate
+Dim specialDate2 As SpecialDate = New SpecialDate
 
-        Dim specialDate4 As SpecialDate = New SpecialDate
+Dim specialDate3 As SpecialDate = New SpecialDate
 
-        Dim SpecialDates As List(Of SpecialDate) = New List(Of SpecialDate)
+Dim specialDate4 As SpecialDate = New SpecialDate
 
-        
-        specialDate1.BackColor = System.Drawing.Color.White
+Dim SpecialDates As List(Of SpecialDate) = New List(Of SpecialDate)
 
-        specialDate1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, 
-                                               System.Drawing.GraphicsUnit.Point, CType(0,Byte))
 
-        specialDate1.ForeColor = System.Drawing.Color.Magenta
+specialDate1.BackColor = System.Drawing.Color.White
 
-        specialDate1.Image = Properties.Resources.icons_Womens_day
+specialDate1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, 
+                                        System.Drawing.GraphicsUnit.Point, CType(0,Byte))
 
-        specialDate1.Description = "International Womens Day"
+specialDate1.ForeColor = System.Drawing.Color.Magenta
 
-        specialDate1.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter
+specialDate1.Image = Properties.Resources.icons_Womens_day
 
-        specialDate1.IsDateVisible = false
+specialDate1.Description = "International Womens Day"
 
-        specialDate1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+specialDate1.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter
 
-        specialDate1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
+specialDate1.IsDateVisible = false
 
-        specialDate1.Value = New Date(2018, 3, 8, 0, 0, 0, 0)
+specialDate1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
 
-        specialDate2.BackColor = System.Drawing.Color.White
+specialDate1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
 
-        specialDate2.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, 
-                                               System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+specialDate1.Value = New Date(2018, 3, 8, 0, 0, 0, 0)
 
-        specialDate2.ForeColor = System.Drawing.Color.Magenta
+specialDate2.BackColor = System.Drawing.Color.White
 
-        specialDate2.Description = "World Forestry Day"
+specialDate2.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, 
+                                        System.Drawing.GraphicsUnit.Point, CType(0,Byte))
 
-        specialDate2.Image = Properties.Resources.Icon_World_Forestry_Day
+specialDate2.ForeColor = System.Drawing.Color.Magenta
 
-        specialDate2.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter
+specialDate2.Description = "World Forestry Day"
 
-        specialDate2.IsDateVisible = false
+specialDate2.Image = Properties.Resources.Icon_World_Forestry_Day
 
-        specialDate2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+specialDate2.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter
 
-        specialDate2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
+specialDate2.IsDateVisible = false
 
-        specialDate2.Value = New Date(2018, 3, 21, 0, 0, 0, 0)
+specialDate2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
 
-        specialDate3.BackColor = System.Drawing.Color.White
+specialDate2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
 
-        specialDate3.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, 
-                                               System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+specialDate2.Value = New Date(2018, 3, 21, 0, 0, 0, 0)
 
-        specialDate3.ForeColor = System.Drawing.Color.Magenta
+specialDate3.BackColor = System.Drawing.Color.White
 
-        specialDate3.Image = Properties.Resources.Icon_Water_day
+specialDate3.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, 
+                                        System.Drawing.GraphicsUnit.Point, CType(0,Byte))
 
-        specialDate3.Description = "World Day for Water"
+specialDate3.ForeColor = System.Drawing.Color.Magenta
 
-        specialDate3.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter
+specialDate3.Image = Properties.Resources.Icon_Water_day
 
-        specialDate3.IsDateVisible = false
+specialDate3.Description = "World Day for Water"
 
-        specialDate3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+specialDate3.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter
 
-        specialDate3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
+specialDate3.IsDateVisible = false
 
-        specialDate3.Value = New Date(2018, 3, 24, 0, 0, 0, 0)
+specialDate3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
 
-        specialDate4.BackColor = System.Drawing.Color.White
+specialDate3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
 
-        specialDate4.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, 
-                                               System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+specialDate3.Value = New Date(2018, 3, 24, 0, 0, 0, 0)
 
-        specialDate4.ForeColor = System.Drawing.Color.Magenta
+specialDate4.BackColor = System.Drawing.Color.White
 
-        specialDate4.Image = Properties.Resources.Icon_Healthy_day
+specialDate4.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, 
+                                        System.Drawing.GraphicsUnit.Point, CType(0,Byte))
 
-        specialDate4.Description = "World Health Day"
+specialDate4.ForeColor = System.Drawing.Color.Magenta
 
-        specialDate4.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter
+specialDate4.Image = Properties.Resources.Icon_Healthy_day
 
-        specialDate4.IsDateVisible = false
+specialDate4.Description = "World Health Day"
 
-        specialDate4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+specialDate4.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter
 
-        specialDate4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
+specialDate4.IsDateVisible = false
 
-        specialDate4.Value = New Date(2018, 4, 7, 0, 0, 0, 0)
-        
-        SpecialDates.Add(specialDate1)
+specialDate4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
 
-        SpecialDates.Add(specialDate2)
+specialDate4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
 
-        SpecialDates.Add(specialDate3)
-        
-        SpecialDates.Add(specialDate4)
+specialDate4.Value = New Date(2018, 4, 7, 0, 0, 0, 0)
 
-        Me.sfCalendar.SpecialDates = SpecialDates
+SpecialDates.Add(specialDate1)
 
-    End Sub
+SpecialDates.Add(specialDate2)
+
+SpecialDates.Add(specialDate3)
+
+SpecialDates.Add(specialDate4)
+
+Me.sfCalendar.SpecialDates = SpecialDates
+
+End Sub
 
 {% endhighlight  %}
 
@@ -289,63 +289,61 @@ This feature is used to display additional information such as text or image abo
 {% highlight C# %}
 using Syncfusion.WinForms.Input;
   
-  // Invoking the ToolTipOpening Event.
+// Invoking the ToolTipOpening Event.
 
-    this.sfCalendar.ToolTipOpening += SfCalendar_ToolTipOpening;
+this.sfCalendar.ToolTipOpening += SfCalendar_ToolTipOpening;
 
-  //To show ToolTip
+//To show ToolTip
 
-        private void SfCalendar_ToolTipOpening(SfCalendar sender, ToolTipOpeningEventArgs e)
-        {
-            if (e.ViewType == CalendarViewType.Month && e.Value.Value.Date == new DateTime(2018, 02, 14))
-            {
-                e.ToolTipInfo.Items[0].Text = "Valentine's Day";
-            }
-            if (e.ViewType == CalendarViewType.Year && e.Value.Value.Month == DateTime.Now.Month)
-            {
-                e.ToolTipInfo.Items[0].Text = e.Value.Value.Date.ToString("MMM");
-            }
-            if (e.ViewType == CalendarViewType.Decade && e.RowIndex == 0)
-            {
-                e.ToolTipInfo.Items[0].Text = "Decade";
-            }
-            if (e.ViewType == CalendarViewType.Century && e.ColumnIndex == 1)
-            {
-                e.ToolTipInfo.Items[0].Text = "Century";
-            }
-        }
+private void SfCalendar_ToolTipOpening(SfCalendar sender, ToolTipOpeningEventArgs e)
+{
+    if (e.ViewType == CalendarViewType.Month && e.Value.Value.Date == new DateTime(2018, 02, 14))
+    {
+        e.ToolTipInfo.Items[0].Text = "Valentine's Day";
+    }
+    if (e.ViewType == CalendarViewType.Year && e.Value.Value.Month == DateTime.Now.Month)
+    {
+        e.ToolTipInfo.Items[0].Text = e.Value.Value.Date.ToString("MMM");
+    }
+    if (e.ViewType == CalendarViewType.Decade && e.RowIndex == 0)
+    {
+        e.ToolTipInfo.Items[0].Text = "Decade";
+    }
+    if (e.ViewType == CalendarViewType.Century && e.ColumnIndex == 1)
+    {
+        e.ToolTipInfo.Items[0].Text = "Century";
+    }
+}
         
-
 {% endhighlight  %}
 
 {% highlight VB %}
 Imports Syncfusion.WinForms.Input
   
-   ' Invoking the ToolTipOpening Event.
+' Invoking the ToolTipOpening Event.
 
-	AddHandler Me.sfCalendar.ToolTipOpening, AddressOf SfCalendar_ToolTipOpening
+AddHandler Me.sfCalendar.ToolTipOpening, AddressOf SfCalendar_ToolTipOpening
 
-    ' To show ToolTip
+' To show ToolTip
 
-       Private Sub SfCalendar_ToolTipOpening(ByVal sender As SfCalendar, ByVal e As ToolTipOpeningEventArgs)
+Private Sub SfCalendar_ToolTipOpening(ByVal sender As SfCalendar, ByVal e As ToolTipOpeningEventArgs)
 
-			If e.ViewType = CalendarViewType.Month AndAlso e.Value.Value.Date = New Date(2018,02,14) Then
-				e.ToolTipInfo.Items(0).Text = "Valentine's Day"
-			End If
-			If e.ViewType = CalendarViewType.Year AndAlso e.Value.Value.Month = Date.Now.Month Then
-				e.ToolTipInfo.Items(0).Text = e.Value.Value.Date.ToString("MMM")
-			End If
-			If e.ViewType = CalendarViewType.Decade AndAlso e.RowIndex = 0 Then
-				e.ToolTipInfo.Items(0).Text = "Decade"
-			End If
-			If e.ViewType = CalendarViewType.Century AndAlso e.ColumnIndex = 1 Then
-				e.ToolTipInfo.Items(0).Text = "Century"
-			End If
+    If e.ViewType = CalendarViewType.Month AndAlso e.Value.Value.Date = New Date(2018,02,14) Then
+        e.ToolTipInfo.Items(0).Text = "Valentine's Day"
+    End If
+    If e.ViewType = CalendarViewType.Year AndAlso e.Value.Value.Month = Date.Now.Month Then
+        e.ToolTipInfo.Items(0).Text = e.Value.Value.Date.ToString("MMM")
+    End If
+    If e.ViewType = CalendarViewType.Decade AndAlso e.RowIndex = 0 Then
+        e.ToolTipInfo.Items(0).Text = "Decade"
+    End If
+    If e.ViewType = CalendarViewType.Century AndAlso e.ColumnIndex = 1 Then
+        e.ToolTipInfo.Items(0).Text = "Century"
+    End If
 
-		End Sub
+End Sub
 
 {% endhighlight  %}
-
 
 {% endtabs %} 
 
@@ -398,44 +396,44 @@ The following code example illustrates how to customize the cell on-demand:
 {% highlight C# %}
 using Syncfusion.WinForms.Input;
   
-    // Invoking the DrawCell Event.
+// Invoking the DrawCell Event.
 
-    this.sfCalendar1.DrawCell += SfCalendar1_DrawCell;
+this.sfCalendar1.DrawCell += SfCalendar1_DrawCell;
 
 
-    // To Draw the Cell
+// To Draw the Cell
 
-     private void SfCalendar1_DrawCell(SfCalendar sender, DrawCellEventArgs e)
+private void SfCalendar1_DrawCell(SfCalendar sender, DrawCellEventArgs e)
 
-        {
-            //Image for year view cell
-            Image image = null;
-            //Month View
-            if (e.ViewType == CalendarViewType.Month && e.Value.Value.Date == DateTime.Now.Date)
-            {
-                e.Handled = true;
-                TextRenderer.DrawText(e.Graphics, e.Value.Value.ToString("dd"), new Font("Segoe UI Bold",
-                                        this.sfCalendar1.Style.Cell.CellFont.Size), e.CellBounds, Color.Green);
+{
+    //Image for year view cell
+    Image image = null;
+    //Month View
+    if (e.ViewType == CalendarViewType.Month && e.Value.Value.Date == DateTime.Now.Date)
+    {
+        e.Handled = true;
+        TextRenderer.DrawText(e.Graphics, e.Value.Value.ToString("dd"), new Font("Segoe UI Bold",
+                                this.sfCalendar1.Style.Cell.CellFont.Size), e.CellBounds, Color.Green);
 
-                e.Graphics.FillRectangle(new SolidBrush(Color.Purple), new Rectangle((e.CellBounds.X + 
-                                        (e.CellBounds.Width - e.CellBounds.Width / 2)) - 15,
-                                        (e.CellBounds.Y + (e.CellBounds.Height - 20)) - 2, 12, 12));
+        e.Graphics.FillRectangle(new SolidBrush(Color.Purple), new Rectangle((e.CellBounds.X + 
+                                (e.CellBounds.Width - e.CellBounds.Width / 2)) - 15,
+                                (e.CellBounds.Y + (e.CellBounds.Height - 20)) - 2, 12, 12));
 
-                e.Graphics.FillRectangle(new SolidBrush(Color.Orange), new Rectangle((e.CellBounds.X +
-                                        (e.CellBounds.Width - e.CellBounds.Width / 2)) + 5,
-                                        (e.CellBounds.Y + (e.CellBounds.Height - 20)) - 2, 12, 12));
-            }
+        e.Graphics.FillRectangle(new SolidBrush(Color.Orange), new Rectangle((e.CellBounds.X +
+                                (e.CellBounds.Width - e.CellBounds.Width / 2)) + 5,
+                                (e.CellBounds.Y + (e.CellBounds.Height - 20)) - 2, 12, 12));
+    }
 
-            //Year View
-            if (e.ViewType == CalendarViewType.Year && e.Value.Value.Month == new DateTime(2018, 02, 14).Month 
-                                        && e.Value.Value.Year == new DateTime(2018, 02, 14).Year)
-            {
-                e.Handled = true;
-                image = Properties.Resources.Icon_Valentines_day;
-                e.Graphics.DrawImage(image, e.CellBounds);
-            }
-            
-        }
+    //Year View
+    if (e.ViewType == CalendarViewType.Year && e.Value.Value.Month == new DateTime(2018, 02, 14).Month 
+                                && e.Value.Value.Year == new DateTime(2018, 02, 14).Year)
+    {
+        e.Handled = true;
+        image = Properties.Resources.Icon_Valentines_day;
+        e.Graphics.DrawImage(image, e.CellBounds);
+    }
+    
+}
 
 {% endhighlight  %}
 
@@ -450,37 +448,36 @@ AddHandler Me.SfCalendar1.DrawCell, AddressOf SfCalendar1_DrawCell
     
  Private Sub SfCalendar1_DrawCell(ByVal sender As SfCalendar, ByVal e As DrawCellEventArgs)
 
-         'Image for year view cell
-           Dim image As Image = Nothing
+    'Image for year view cell
+    Dim image As Image = Nothing
 
-			'Month View
-			If e.ViewType = CalendarViewType.Month AndAlso e.Value.Value.Date = Date.Now.Date Then
-            
-				e.Handled = True
-				TextRenderer.DrawText(e.Graphics, e.Value.Value.ToString("dd"), New Font("Segoe UI Bold",
-                                      Me.sfCalendar1.Style.Cell.CellFont.Size), e.CellBounds, Color.Green)
+    'Month View
+    If e.ViewType = CalendarViewType.Month AndAlso e.Value.Value.Date = Date.Now.Date Then
+    
+        e.Handled = True
+        TextRenderer.DrawText(e.Graphics, e.Value.Value.ToString("dd"), New Font("Segoe UI Bold",
+                                Me.sfCalendar1.Style.Cell.CellFont.Size), e.CellBounds, Color.Green)
 
-				e.Graphics.FillRectangle(New SolidBrush(Color.Purple), New Rectangle((e.CellBounds.X + 
-                                      (e.CellBounds.Width - e.CellBounds.Width \ 2)) - 15,
-                                      (e.CellBounds.Y + (e.CellBounds.Height - 20)) - 2, 12, 12))
+        e.Graphics.FillRectangle(New SolidBrush(Color.Purple), New Rectangle((e.CellBounds.X + 
+                                (e.CellBounds.Width - e.CellBounds.Width \ 2)) - 15,
+                                (e.CellBounds.Y + (e.CellBounds.Height - 20)) - 2, 12, 12))
 
-				e.Graphics.FillRectangle(New SolidBrush(Color.Orange), New Rectangle((e.CellBounds.X + 
-                                      (e.CellBounds.Width - e.CellBounds.Width \ 2)) + 5,
-                                      (e.CellBounds.Y + (e.CellBounds.Height - 20)) - 2, 12, 12))
+        e.Graphics.FillRectangle(New SolidBrush(Color.Orange), New Rectangle((e.CellBounds.X + 
+                                (e.CellBounds.Width - e.CellBounds.Width \ 2)) + 5,
+                                (e.CellBounds.Y + (e.CellBounds.Height - 20)) - 2, 12, 12))
 
-			End If
+    End If
 
-			If e.ViewType = CalendarViewType.Year AndAlso e.Value.Value.Month = (New Date(2018, 02, 14)).Month
-                                      AndAlso e.Value.Value.Year = (New Date(2018, 02, 14)).Year Then
+    If e.ViewType = CalendarViewType.Year AndAlso e.Value.Value.Month = (New Date(2018, 02, 14)).Month
+                                AndAlso e.Value.Value.Year = (New Date(2018, 02, 14)).Year Then
 
-				e.Handled = True
-				image = My.Resources.Icon_Valentines_day
-				e.Graphics.DrawImage(image, e.CellBounds)
-                
+        e.Handled = True
+        image = My.Resources.Icon_Valentines_day
+        e.Graphics.DrawImage(image, e.CellBounds)
+        
+    End If
 
-			End If
-
-        End Sub
+End Sub
 
 {% endhighlight  %}
 
