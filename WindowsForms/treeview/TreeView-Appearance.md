@@ -258,12 +258,12 @@ ForeColor</td><td>
 Specifies the text color of the nodes.</td></tr>
 </table>
 
-<b>TreeNodeAdv Property Table</b>
+<b>TreeViewAdv Property Table</b>
 
 <table>
 <tr>
 <th>
-TreeNodeAdv Properties</th><th>
+Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -411,7 +411,7 @@ Description</th></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Sets the border style for the TreeView control. Options are: <b>FixedSingle</b> (a normal border) or <b>Fixed3D</b> (3D appearance).</td></tr>
+Sets the border style for the Treeview control.{{ '_FixedSingle_' | markdownify }} - a normal border,{{ '_Fixed3D_' | markdownify }} - 3D appearance.</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
@@ -424,7 +424,7 @@ Indicates the style of the 3D border when BorderStyle is set to Fixed3D. Options
 <li>Raised</li>
 <li>Etched</li>
 <li>Bump</li>
-<li>Sunken (Default)</li>
+<li>Sunken</li>
 <li>Adjust</li>
 <li>Flat</li>
 </ul>

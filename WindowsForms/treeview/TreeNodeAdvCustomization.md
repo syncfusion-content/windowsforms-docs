@@ -189,15 +189,15 @@ Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-<a href="https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdvStyleInfo.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdvStyleInfo_OptionButtonHoverBackColor">OptionButtonHoverBackColor</a></td><td>
+{{'[OptionButtonHoverBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdvStyleInfo.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdvStyleInfo_OptionButtonHoverBackColor)'|markdownify }}</td><td>
 Used to customize the hover background of the option button.</td></tr>
 <tr>
 <td>
-<a href="https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdvStyleInfo.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdvStyleInfo_OptionButtonHoverBorderColor">OptionButtonHoverBorderColor</a></td><td>
+{{'[OptionButtonHoverBorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdvStyleInfo.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdvStyleInfo_OptionButtonHoverBorderColor)'|markdownify }}</td><td>
 Used to customize the hover border of the option button.</td></tr>
 <tr>
 <td>
-<a href="https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdvStyleInfo.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdvStyleInfo_OptionButtonHoverColor">OptionButtonHoverColor</a></td><td>
+{{'[OptionButtonHoverColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdvStyleInfo.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdvStyleInfo_OptionButtonHoverColor)'|markdownify }}</td><td>
 Used to customize the checked hover of the option button.</td></tr>
 </table>
 
