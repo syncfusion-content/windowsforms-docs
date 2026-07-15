@@ -124,11 +124,11 @@ this.dockingManager1.LoadDockState(serializer, this.listBox1);
 {% highlight VB %}
 
 
+Me.dockingManager1.LoadDockState()
+
 Me.dockingManager1.LoadDockState(serializer)
 
-Me.dockingManager1.LoadDockState();
-
-Me.dockingManager1.LoadDockState(serializer, this.listBox1)
+Me.dockingManager1.LoadDockState(serializer, Me.listBox1)
 
 {% endhighlight %}
 
@@ -349,7 +349,7 @@ Me.dockingManager1.LoadDockState(serializer)
 
 {% endtabs %}
 
-Calling the [GetSerializedControls](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_GetSerializedControls_Syncfusion_Runtime_Serialization_AppStateSerializer_) function returns the serialized control collection enumerator in the specified serializer. This can be done using the following code.
+Calling the [GetSerializedControls](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_GetSerializedControls_Syncfusion_Runtime_Serialization_AppStateSerializer_) function returns an enumerator of the controls serialized in the specified serializer. This can be done using the following code.
 
 <table>
 <tr>

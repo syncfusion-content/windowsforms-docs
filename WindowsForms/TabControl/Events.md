@@ -11,7 +11,7 @@ documentation: ug
 
 ## AfterEdit event
 
-This [AfterEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_AfterEdit) event occurs after text editing is completed. It is fired even if no changes are made.
+This [AfterEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_AfterEdit) event occurs after text editing is completed. It fires even if no changes are made.
 
 ### Event data
 
@@ -59,7 +59,7 @@ End Sub
 
 ## BeforeEdit event
 
-This [BeforeEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_BeforeEdit) event occurs when the text enters into Edit mode.
+This [BeforeEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_BeforeEdit) event occurs when the text enters Edit mode.
 
 ### Event data
 
@@ -175,7 +175,7 @@ Console.Write("BackgroundImageLayoutChanged event is raised");
 
 {% highlight VB %}
 
-Private Sub tabControlAdv1_BackgroundImageLayout(ByVal sender As Object, ByVal e As System.Windows.Forms.EventArgs)
+Private Sub tabControlAdv1_BackgroundImageLayoutChanged(ByVal sender As Object, ByVal e As System.Windows.Forms.EventArgs)
 
 'Below line will be displayed in the output window at run-time, when this event is fired.
 
@@ -393,6 +393,8 @@ switch(this.comboBox1.SelectedIndex)
 
 {
 
+// The helper methods (Tab_DrawItemYahooMessengerLike / Tab_DrawItemMSNMessengerLike) are sample-specific and must be defined in your project.
+
 case 0:this.Tab_DrawItemYahooMessengerLike(sender, drawItemInfo);
 
 break;
@@ -411,7 +413,7 @@ break;
 
 
 
-Private Sub tabControlExt1_DrawItem(ByVal sender As System.Object, ByVal drawItemInfo As Syncfusion.Windows.Forms.Tools.DrawTabEventArgs) Handles tabControlExt1.DrawItem
+Private Sub tabControlAdv1_DrawItem(ByVal sender As System.Object, ByVal drawItemInfo As Syncfusion.Windows.Forms.Tools.DrawTabEventArgs) Handles tabControlAdv1.DrawItem
 
 drawItemInfo.DrawBackground()
 
@@ -725,7 +727,7 @@ Console.Write("Key code :" + e.KeyCode.ToString() + "\n" + "Key Value :" + e.Key
 
 Private Sub tabControlAdv1_PreviewKeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.PreviewKeyDownEventArgs)
 
-//Below line will be displayed in the output window at run-time, when this event is fired.
+'Below line will be displayed in the output window at run-time, when this event is fired.
 
 Console.Write("PreviewKeyDown event is raised")
 
@@ -778,7 +780,7 @@ End Sub
 
 ## TabPrimitiveClick event
 
-This [TabPrimitiveClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_TabPrimitiveClick) event occurs before the `NavigationButton` click.
+This [TabPrimitiveClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_TabPrimitiveClick) event occurs when a navigation button is clicked.
 
 ### Event data
 
@@ -846,7 +848,7 @@ End Sub
 ## SelectedIndexChanging event
 
 
-[SelectedIndexChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_SelectedIndexChanging) event occurs while changing the [SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_SelectedIndex) or [SelectedTab](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_SelectedTab) of the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html). Tab Selection can be restricted by setting args.Cancel to `true`.
+[SelectedIndexChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_SelectedIndexChanging) event occurs while changing the [SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_SelectedIndex) or [SelectedTab](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_SelectedTab) of the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html). Tab selection can be canceled by setting `args.Cancel = true`.
 
 {% tabs %}
 
@@ -896,7 +898,7 @@ private void TabControlAdv1_SelectedIndexChanged(object sender, EventArgs e)
 
 {
 
-foreach (TabPageAdv item in this.tabControlAdv1.TabPages)
+foreach (Syncfusion.Windows.Forms.Tools.TabPageAdv item in this.tabControlAdv1.TabPages)
 
 {
 
@@ -936,7 +938,7 @@ End Sub
 
 ## TabsOrderChanged event
 
-This [TabsOrderChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_TabsOrderChanged) event occurs when the order of the tabs are changed in the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
+This [TabsOrderChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_TabsOrderChanged) event occurs when the order of the tabs is changed in the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
 
 {% tabs %}
 
@@ -953,10 +955,6 @@ this.tabControlAdv1.UserMoveTabs = true;
 // Handle the TabsOrderChanged event.
 
 this.tabControlAdv1.TabsOrderChanged+=new EventHandler(tabControlAdv1_TabsOrderChanged);
-
-}
-
-
 
 private void tabControlAdv1_TabsOrderChanged(object sender, EventArgs e)
 
