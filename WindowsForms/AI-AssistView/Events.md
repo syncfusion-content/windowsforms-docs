@@ -15,13 +15,7 @@ The following events are supported by the [SfAIAssistView](https://help.syncfusi
 |-------|-------------|
 | [PromptRequest](#promptrequest-event) | Notifies when a prompt is submitted in the control. |
 
-## Prerequisites
-
-Before proceeding, ensure the following are in place:
-
-- A `ViewModel` class with a `Chats` collection, `ShowTypingIndicator`, `Suggestion`, and `CurrentUser` properties exists. Refer to the [Getting Started](https://help.syncfusion.com/windowsforms/ai-assistview/getting-started) page for setup details.
-- A bot avatar image is added to the project at the path referenced in code (for example, `Asset\AI_Assist.png`).
-- The following `using` directives are included in your file:
+The following `using` directives are included in your file:
 
 {% tabs %}
 {% highlight c# %}
@@ -32,6 +26,8 @@ using Syncfusion.WinForms.AIAssistView;
 
 {% endhighlight %}
 {% endtabs %}
+
+N> A `ViewModel` class with a `Chats` collection and `CurrentUser` properties exists. Refer to the [Getting Started](https://help.syncfusion.com/windowsforms/ai-assistview/getting-started) page for setup details.
 
 ## PromptRequest event
 
@@ -82,10 +78,3 @@ public partial class Form1 : Form
 {% endhighlight %}
 
 {% endtabs %}
-
-## Troubleshooting
-
-| Issue | Possible Cause | Resolution |
-|-------|----------------|------------|
-| `e.Message` is null at runtime | The bound `Messages` collection contains an item of an unexpected type. | Verify that the `Chats` collection is initialized with `TextMessage` (or other supported) items. |
-| `Handled = true` does not prevent default behavior | The event is raised after the message has already been added to `Messages`. | Subscribe to `PromptRequest` before the user submits a prompt, and set `Handled` inside the handler. |
