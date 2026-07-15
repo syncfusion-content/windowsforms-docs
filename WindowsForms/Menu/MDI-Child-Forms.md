@@ -16,11 +16,11 @@ This section illustrates how to create MDI Child forms using the ChildFrameBarMa
 
 ## Assembly deployment
 
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#childframebarmanager) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. Please find more details regarding [installation of nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) in a windows form application.
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#childframebarmanager) section to get the list of assemblies or NuGet packages that need to be added as a reference to use the control in any application. See [installing NuGet packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) for more details.
 
 ## Creating MDI parent form
 
-To create MDI parent form and MDI child form follow the below steps
+To create an MDI parent form and an MDI child form, follow the steps below:
 
 1. Set up an MDIParent form by setting Form.IsMdIContainer property to true.
 2. Add menu items, 'Open' and 'Exit', under File menu bar using MainFrameBarManager. You can refer [this topic](https://help.syncfusion.com/windowsforms/menus/adding-menu-items-via-code) to add menu items to the menu.
@@ -37,12 +37,12 @@ To create MDI parent form and MDI child form follow the below steps
 
 ## MDI merging
 
-The XP Menus Framework goes to a great extent to support associating menus and toolbars for MDIChild forms. It helps users to create custom menu items and toolbars for child forms and handle menu events right within the child form. Without this support, users would have to handle menu click events in their main form and delegate it to the appropriate child forms with drawn-out casting and run-time checks and would also have to manually control menu and toolbar visibility based on the active MDIChild forms.
+The XP Menus Framework goes to a great extent to support associating menus and toolbars for MDIChild forms. It helps users to create custom menu items and toolbars for child forms and handle menu events right within the child form. Without this support, users would have to handle menu click events in their main form and delegate them to the appropriate child forms with drawn-out casting and run-time checks, and would also have to manually control menu and toolbar visibility based on the active MDI child forms.
 
-Once an MDIChild form is associated with a ChildFrameBarManager, the XP Menus Framework merges the menus and toolbars of the child form with that of the main form. There are two ways in which MDI merging can happen.
+Once an MDI child form is associated with a `ChildFrameBarManager`, the XP Menus Framework merges the menus and toolbars of the child form with those of the main form. There are two ways in which MDI merging can happen.
 
-* Auto Merging - The Framework will automatically merge the menus of the child forms with that of the main form when a new instance of the child type is parented by the MDIParent. This merging will be undone when all instances of that child type are closed. This is the default behavior.
-* Explicit Merging - Explicitly merging the child types when the application loads will provide a completely merged menu/toolbar structure to the end users, all the time. This merged state will stay unaffected through out the lifetime of the application (whether or not there are instances of the child types currently loaded). Note that the merged BarItems of the MDI child forms would be displayed in the runtime customization dialog only, and will not be visible in the parent form's menus or toolbars until an actual instance of the child form is loaded. This is the behavior exhibited in VS .NET. You can explicitly merge child types by registering the child form types with the MainFrameBarManager, as follows.
+* Auto Merging - The Framework will automatically merge the menus of the child forms with those of the main form when a new instance of the child type is parented by the MDIParent. This merging will be undone when all instances of that child type are closed. This is the default behavior.
+* Explicit Merging - Explicitly merging the child types when the application loads will provide a completely merged menu/toolbar structure to the end users at all times. This merged state will stay unaffected throughout the lifetime of the application (whether or not there are instances of the child types currently loaded). Note that the merged `BarItem`s of the MDI child forms are displayed in the runtime customization dialog only, and will not be visible in the parent form's menus or toolbars until an actual instance of the child form is loaded. This is the behavior exhibited in VS .NET. You can explicitly merge child types by registering the child form types with the `MainFrameBarManager`, as follows.
 
 N> Here the child forms created in the above example is being used.
 
@@ -66,13 +66,13 @@ The MainFrameBarManager will then create an instance of these form types and obt
 
 The following applies to the explicit merging scenario only:
 
-_Warning_ Explicit merging imposes the requirement that the child form types should have a public default constructor (constructor with no arguments).
+**Warning**: Explicit merging imposes the requirement that the child form types should have a public default constructor (a constructor with no arguments).
 
 N> During explicit merging, a new 'dummy' instance of the child forms (one for each type) will be created by the Framework in the background. However, these child forms will never be made visible.
 
 ## Types of Merging
 
-There are three types of MDI merging supported in menu control.
+There are three types of MDI merging supported in the menu control.
 
 1. Main menu Merging: MainMenus (bars with the MainMenu BarStyle) in the main form and the child forms will automatically be merged into one, irrespective of their BarName.
 2. Toolbars Merging: Toolbars with the same BarName (in different forms) will be merged into one.
@@ -97,7 +97,7 @@ The merge behavior is also controlled by the `MergeType` property, as follows.
 | Replace | Replace | Child item will replace the parent item |
 | Replace | Remove | Parent item stays visible; child item will be hidden |
 
-You can choose anyone of the following for MDI merging.
+You can choose any one of the following for MDI merging.
 
 * To let the Framework automatically merge as new instances of the child types that are created.
 * Explicitly merge child types as soon as the application is started.

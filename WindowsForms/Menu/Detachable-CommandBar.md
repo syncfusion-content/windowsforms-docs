@@ -9,11 +9,11 @@ documentation: ug
 
 # Detachable Command Bar in Windows Forms Menu (Menus)
 
-The [`CommandBar`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBar.html) instance can be added to the menu bar and can be set to detach from the parent menu bar.
+The [`CommandBar`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBar.html) instance can be added to the menu bar and set to detach from the parent menu bar.
 
 ## Adding command bar via designer
 
-The command bar can be added via the `DetachedCommandBars` selection from the smart tags options. The below image shows the command bar is added to the menu via the designer settings.
+The command bar can be added via the `DetachedCommandBars` selection from the smart tags options. The image below shows the command bar being added to the menu via the designer settings.
 
 ![Command bar added to the bar](Detachable-Commandbar-images/adding_CommandBar_Designer.png)
 
@@ -21,7 +21,7 @@ The command bar can be added via the `DetachedCommandBars` selection from the sm
 
 ## Adding command bar via code
 
-The command bar instance should be created with required settings and added to the `DetachedCommandBars` collection property. The below code snippet shows the command bar is added to the menu control with top docked position.
+The command bar instance should be created with the required settings and added to the `DetachedCommandBars` collection property. The following code snippet shows the command bar being added to the menu control with top-docked position.
 
 {% tabs %}
 

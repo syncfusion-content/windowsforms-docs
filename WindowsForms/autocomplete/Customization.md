@@ -335,7 +335,7 @@ Sets the default theme.
 
 ## Persistence
 
-The history list of AutoComplete component can be saved in the following formats:
+The history list of the AutoComplete component can be saved in the following formats:
 
 * Binary Format
 * XML Format
@@ -343,11 +343,11 @@ The history list of AutoComplete component can be saved in the following formats
 * MemoryStream
 * PersistState property
 
-The AutoComplete component has a fully built-in serialization feature that provides automatic serialization for the AutoComplete's history list. The serialization mechanism is implemented using the standardized Syncfusion.Windows.Forms.AppStateSerializer component that acts as a central coordinator for all the Essential tools components and provides options to read or write to different media such as the default isolated storage, XML file, XML stream, binary file, binary stream, and the Windows Registry.
+The AutoComplete component has a fully built-in serialization feature that provides automatic serialization for the AutoComplete's history list. The serialization mechanism is implemented using the standardized `Syncfusion.Windows.Forms.AppStateSerializer` component, which acts as a central coordinator for all the Essential Tools components and provides options to read or write to different media such as the default isolated storage, XML file, XML stream, binary file, binary stream, and the Windows Registry.
 
 ### Persisting AutoComplete's data in the default storage
 
-The data of AutoComplete component can be persisted by setting the [AutoSerialize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_AutoSerialize) property to `true`. It specifies whether the AutoComplete component can persist its data. This information is stored in the isolated storage.
+The data of the AutoComplete component can be persisted by setting the [AutoSerialize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_AutoSerialize) property to `true`. This specifies whether the AutoComplete component can persist its data. The information is stored in the isolated storage.
 
 {% tabs %}
 

@@ -16,11 +16,11 @@ Caption label can be added to the MetroForm through designer or code.
 
 ### Through designer
 
-1) Labels can be added to the CaptionBar using `CaptionLabels` collection property.
+1. Labels can be added to the CaptionBar using the `CaptionLabels` collection property.
 
 ![Caption label With Designer](Customization_images/customization_img2.png)
 
-2) Add Labels through collection editor window.
+2. Add Labels through the collection editor window.
 
 ![Add Labels With collection editor window](Customization_images/customization_img3.png)
 
@@ -72,28 +72,28 @@ Me.CaptionLabels.Add(captionLabel1)
 
 ## Caption images
 
-Caption images can be added to the MetroForm through designer or code.
+Caption images can be added to the MetroForm through the designer or code.
 
 ### Through designer
 
-1) Images can be added to the CaptionBar using CaptionImages collection property.
+1. Images can be added to the CaptionBar using the `CaptionImages` collection property.
 
 ![Caption image added through CaptionBar](Customization_images/Caption-Image-Customization_img1.jpeg)
 
 
-2) Add images through collection editor window.
+2. Add images through the collection editor window.
 
 ![Caption image added through collection editor window](Customization_images/Caption-Image-Customization_img2.jpeg)
 
 
-3) Image can be added to the CaptionImage using Image property in Collection Editor.
+3. An image can be added to the CaptionImage using the `Image` property in the **Collection Editor**.
 
 ![Caption image added with Image property](Customization_images/Caption-Image-Customization_img3.jpeg)
 
 
 ### Through code
 
-The following code sample shows how to add an image to the caption bar of the Metro form.
+The following code sample shows how to add an image to the caption bar of the MetroForm.
 
 {% tabs %}
 
@@ -236,7 +236,7 @@ Me.CaptionButtonHoverColor = System.Drawing.Color.Lime
 
 ## Caption bar background
 
-User can customize the Brush effects in Caption Bar using the event CaptionBarPaint and the property CaptionBarBrush.
+You can customize the Brush effects in the CaptionBar using the `CaptionBarPaint` event and the `CaptionBarBrush` property.
 
 {% tabs %}
 
@@ -282,23 +282,23 @@ End Sub
 
 ### ImageMouseDown event
 
-The ImageMouseDown event is raised when the mouse pointer is over the caption image and a mouse button is pressed.
+The `ImageMouseDown` event is raised when the mouse pointer is over the caption image and a mouse button is pressed.
 
 ### ImageMouseUp event
 
-The ImageMouseUp event is raised when the mouse pointer is over the caption image and a mouse button is released.
+The `ImageMouseUp` event is raised when the mouse pointer is over the caption image and a mouse button is released.
 
 ### ImageMouseEnter event
 
-The ImageMouseEnter event is raised when the mouse pointer enters the caption image.
+The `ImageMouseEnter` event is raised when the mouse pointer enters the caption image.
 
 ### ImageMouseLeave event
 
-The ImageMouseLeave event is raised when the mouse pointer leaves the caption image.
+The `ImageMouseLeave` event is raised when the mouse pointer leaves the caption image.
 
 ### ImageMouseMove event
 
-The ImageMouseMove event is raised when the mouse pointer moves within the caption image.
+The `ImageMouseMove` event is raised when the mouse pointer moves within the caption image.
 
 #### Event data
 
