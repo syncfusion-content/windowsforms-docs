@@ -279,15 +279,15 @@ The [AnimationStep](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windo
 
 {% highlight C# %}
 
-DockingManager.AnimationStep = arg.Bounds.Width;
+this.dockingManager1.AnimationStep = arg.Bounds.Width;
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-'Prevent the tabbed controls from moving
+'Set the animation step for auto-hidden controls
 
-DockingManager.AnimationStep = arg.Bounds.Width
+Me.dockingManager1.AnimationStep = arg.Bounds.Width
 
 {% endhighlight %}
 
@@ -301,15 +301,15 @@ By using the [AutoHideInterval](https://help.syncfusion.com/cr/windowsforms/Sync
 
 {% highlight C# %}
 
-this.dockingManager1.AutoHideInterval=3000;
+this.dockingManager1.AutoHideInterval = 3000;
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-'Prevent the tabbed controls from moving
+'Set the auto-hide interval in milliseconds
 
-Me.dockingManager1.AutoHideInterval=3000
+Me.dockingManager1.AutoHideInterval = 3000
 
 {% endhighlight %}
 

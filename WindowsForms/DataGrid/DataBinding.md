@@ -46,7 +46,7 @@ Below are the limitations when binding DataTable as `DataSource` to SfDataGrid.
 * Custom sorting is not supported.
 * [SfDataGrid.View.Filter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Data.DataTableCollectionViewWrapper.html) is not supported.
 * Advanced Filtering does not support Case Sensitive filtering.
-* [AddNewRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AddNewRowPosition) is not support when filtering is enabled.
+* [AddNewRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AddNewRowPosition) is not supported when filtering is enabled.
 * [GridUnboundColumn.Expression](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridUnboundColumn.html#Syncfusion_WinForms_DataGrid_GridUnboundColumn_Expression) is not supported. This can be achieved by using the [DataColumn](https://learn.microsoft.com/en-us/dotnet/api/system.data.datacolumn?view=net-5.0) of DataTable by setting [DataColumn.Expression](https://learn.microsoft.com/en-us/dotnet/api/system.data.datacolumn.expression?view=net-5.0) property.
 * [SfDataGrid.LiveDataUpdateMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_LiveDataUpdateMode) is not supported.
 
@@ -333,7 +333,7 @@ To create Data Model using Entity Framework in Windows Forms application, follow
 
 1. Right click the project, select **Add** option and then click **New Item**. 
 
-2. The **Add New Item** wizard appears, select “**ADO.NET Entity Data Mode**” from the Data node. 
+2. The **Add New Item** wizard appears, select “**ADO.NET Entity Data Model**” from the Data node. 
 
 3. Name the file as **Model1.edmx** and then select **Add** button.  
 ![Choose the the ADO.Net entity model application from visual studio](DataBinding_images/DataBinding_img3.jpeg)

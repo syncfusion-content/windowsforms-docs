@@ -9,7 +9,7 @@ documentation: ug
 
 # Selection in Windows Forms DataGrid (SfDataGrid)
 
-[Windows Forms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) allows you to select one or more rows or cells. For selecting a specific row or group of rows, set the [SelectionUnit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SelectionUnit) as row. For selecting a specific cell or group of cells, set the SelectionUnit as cell or Any.In SelectionUnit.Any option. A row can be selected by clicking its row header.
+[Windows Forms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) allows you to select one or more rows or cells. For selecting a specific row or group of rows, set the [SelectionUnit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SelectionUnit) as row. For selecting a specific cell or group of cells, set the SelectionUnit as cell or Any. In SelectionUnit.Any option, a row can be selected by clicking its row header.
 
 ## Current cell navigation
 
@@ -415,7 +415,6 @@ Else
 End If
 
 MessageBox.Show(cellValue, "Value in cell (" & rowIndex & ", " & columnIndex & ")")
-& ")")
 {% endhighlight %}
 {% endtabs %}
 
@@ -783,7 +782,7 @@ private void SelectAll(Object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-By default, select all the rows (CaptionSummary, GroupSummary, UnboundRows, FilterRow, AddNewRow and DefaultRow) when press the <kbd>Ctrl+A</kbd> key in SfDataGrid. The following code shows how to select all the default row except other rows by overriding the [HandleKeyOperations](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Interactivity.RowSelectionController.html#Syncfusion_WinForms_DataGrid_Interactivity_RowSelectionController_HandleKeyOperations_System_Windows_Forms_KeyEventArgs_) method in [RowSelectionController](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Interactivity.RowSelectionController.html).
+By default, select all the rows (CaptionSummary, GroupSummary, UnboundRows, FilterRow, AddNewRow and DefaultRow) when press the <kbd>Ctrl+A</kbd> key in SfDataGrid. The following code shows how to select all the default rows except other rows by overriding the [HandleKeyOperations](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Interactivity.RowSelectionController.html#Syncfusion_WinForms_DataGrid_Interactivity_RowSelectionController_HandleKeyOperations_System_Windows_Forms_KeyEventArgs_) method in [RowSelectionController](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Interactivity.RowSelectionController.html).
 {% tabs %}
 {% highlight c# %}
 //Using the Custom SelectionController.
@@ -871,7 +870,7 @@ public class CustomSelectionController : RowSelectionController
 {% endtabs %}
 
 ### Tab key navigation
-The current cell navigation can be disabled in `Tab` key using the [AllowStandardTab](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowStandardTab) property. If `AllowStandardTab` is enabled, then the focus will be moved to next control in tab order;if else, the current cell will be moved to next cell in order in DataGrid.
+The current cell navigation can be disabled in `Tab` key using the [AllowStandardTab](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowStandardTab) property. If `AllowStandardTab` is enabled, then the focus will be moved to next control in tab order; otherwise, the current cell will be moved to next cell in order in DataGrid.
 
 {% tabs %}
 {% highlight c# %}

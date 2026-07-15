@@ -9,7 +9,7 @@ documentation: ug
 
 # Theming in Windows Forms Menu (Menus)
 
-In this section, the various themes supported in menu control is discussed. The required theme can be set via the [`Style`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarManager.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarManager_Style) property of the menu instance. The following are the list of applicable themes to menu control.
+This section discusses the various themes supported by the menu control. The required theme can be set via the [`Style`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarManager.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarManager_Style) property of the menu instance. The following is the list of themes applicable to the menu control.
 
 * Default theme
 * Metro theme
@@ -22,7 +22,7 @@ In this section, the various themes supported in menu control is discussed. The 
 
 ## Default theme
 
-The `Default` theme is applies the default styles to the visual components of the menu control. When this theme is applied the default color values can be modified based on the desired color values. The below code snippet shows the default theme is applied to the menu control.
+The `Default` theme applies the default styles to the visual components of the menu control. When this theme is applied, the default color values can be modified based on the desired color values. The following code snippet shows the default theme being applied to the menu control.
 
 {% tabs %}
 
@@ -68,7 +68,7 @@ MenuColors.CommandBarBackColor = Color.Yellow
 
 ## Metro Theme
 
-The menu control is applied with standard metro colors to provide rich look and feel of the control. The below code snippet shows the `Metro` theme is applied to the menu control.
+The menu control is applied with standard metro colors to provide a rich look and feel to the control. The following code snippet shows the `Metro` theme being applied to the menu control.
 
 {% tabs %}
 
@@ -90,7 +90,7 @@ Me.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
 
 ## Office XP theme
 
-The `OfficeXP` theme is the default theme of the menu control. This applies the default color values to all the components of the control. The below code snippet shows the Office XP theme is applied to the menu control.
+The `OfficeXP` theme is the default theme of the menu control. This applies the default color values to all the components of the control. The following code snippet shows the Office XP theme being applied to the menu control.
 
 {% tabs %}
 
@@ -134,7 +134,7 @@ Me.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2003
 
 ## Office 2007 theme
 
-The menu control can be applied with 4 different Office 2007 color values. The color scheme can be selected via the `Office2007Theme` property is used. This color values can also be customized to required color scheme
+The menu control can be applied with 4 different Office 2007 color values. The color scheme is selected via the `Office2007Theme` property. These color values can also be customized to a required color scheme.
 
 * Blue
 * Silver
@@ -215,7 +215,7 @@ Me.mainFrameBarManager1.Office2007Theme = Office2007Theme.Silver
 
 ### Managed theme
 
-The `Managed` color scheme applies with custom base color to the default Office colored theme. This custom base color is set via the `ApplyManagedColors` method in **Office2007Colors** class. The below code snippet shows the Office 2007 theme is applied to the menu control with red colored style.
+The `Managed` color scheme applies a custom base color to the default Office colored theme. This custom base color is set via the `ApplyManagedColors` method in the **Office2007Colors** class. The following code snippet shows the Office 2007 theme being applied to the menu control with a red-colored style.
 
 {% tabs %}
 
@@ -263,7 +263,7 @@ Me.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007O
 
 ## Office 2010 theme
 
-The menu control can be applied with 4 different Office 2010 color values. The color scheme can be selected via the `Office2010Theme` property is used. This color values can also be customized to required color scheme.
+The menu control can be applied with 4 different Office 2010 color values. The color scheme is selected via the `Office2010Theme` property. These color values can also be customized to a required color scheme.
 
 * Blue
 * Silver
@@ -344,7 +344,7 @@ Me.mainFrameBarManager1.Office2010Theme = Office2010Theme.Silver
 
 ### Managed theme
 
-The `Managed` color scheme applies with custom base color to the default Office colored theme. This custom base color is set via the `ApplyManagedColors` method in **Office2010Colors** class. The below code snippet shows the Office 2010 theme is applied to the menu control with brick colored style.
+The `Managed` color scheme applies a custom base color to the default Office colored theme. This custom base color is set via the `ApplyManagedColors` method in the **Office2010Colors** class. The following code snippet shows the Office 2010 theme being applied to the menu control with a brick-colored style.
 
 {% tabs %}
 

@@ -99,21 +99,21 @@ private void GridQueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 {% highlight vb %}
 
 'Determines number of rows.
-Private Me.gridControl1.QueryRowCount += New GridRowColCountEventHandler(AddressOf GridQueryRowCount)
+AddHandler Me.gridControl1.QueryRowCount, New GridRowColCountEventHandler(AddressOf GridQueryRowCount)
 Private Sub GridQueryRowCount(ByVal sender As Object, ByVal e As GridRowColCountEventArgs)
 e.Count = Me.numberOfArrayRows
 e.Handled = True
 End Sub
 
 'Determines the number of columns.
-Private Me.gridControl1.QueryColCount += New GridRowColCountEventHandler(AddressOf GridQueryColCount)
+AddHandler Me.gridControl1.QueryColCount, New GridRowColCountEventHandler(AddressOf GridQueryColCount)
 Private Sub GridQueryColCount(ByVal sender As Object, ByVal e As GridRowColCountEventArgs)
 e.Count = Me.numberOfArrayCols
 e.Handled = True
 End Sub
 
 'Passes value to a cell from a given data source.
-Private Me.gridControl1.QueryCellInfo += New GridQueryCellInfoEventHandler(AddressOf QueryCellInfoHandler)
+AddHandler Me.gridControl1.QueryCellInfo, New GridQueryCellInfoEventHandler(AddressOf QueryCellInfoHandler)
 Private Sub GridQueryCellInfo(ByVal sender As Object, ByVal e As GridQueryCellInfoEventArgs)
 If e.ColIndex > 0 AndAlso e.RowIndex > 0 Then
 
@@ -269,7 +269,7 @@ converter.ExportStyle = false;
 {% endhighlight %}
 {% highlight vb %}
 'Indicates to stop exporting the styles in GridControl
-converter.ExportStyle = True
+converter.ExportStyle = False
 {% endhighlight %}
 {% endtabs %}
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Stop Responding in Windows Forms AI AssistView
 
-The [`SfAIAssistView`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.SfAIAssistView.html) control includes a **Stop Responding** feature that allows users to cancel an ongoing AI response by clicking the **Stop Responding** button. This feature ensures that users can interrupt the response if it is no longer needed.
+The [`SfAIAssistView`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.SfAIAssistView.html) control includes a `Stop Responding` feature that allows users to cancel an ongoing AI response by clicking the **Stop Responding** button. This feature ensures that users can interrupt the response if it is no longer needed.
 
 The following `using` directives are included in your file:
 
@@ -28,7 +28,7 @@ N> An `SfAIAssistView` instance has been created and added to the form. See [Get
 
 ## Enabling the Stop Responding Button
 
-By default, the Stop Responding button is not displayed. To enable it, set the `EnableStopResponding` property to `true`.
+By default, the Stop Responding button is not displayed. To enable it, set the [EnableStopResponding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.SfAIAssistView.html#Syncfusion_WinForms_AIAssistView_SfAIAssistView_EnableStopResponding) property to `true`.
 
 {% tabs %}
 
@@ -42,11 +42,11 @@ sfAIAssistView1.EnableStopResponding = true;
 
 ![WindowsForms AI AssistView control StopResponding](aiassistview_images/windowsforms_aiassistview_stopresponding.png)
 
-The button is displayed when `EnableStopResponding` is set to `true`.
+The button is displayed when [EnableStopResponding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.SfAIAssistView.html#Syncfusion_WinForms_AIAssistView_SfAIAssistView_EnableStopResponding) is set to `true`.
 
 ## Stop Responding Event
 
-The `SfAIAssistView` control provides the `StopRespondingButtonClicked` event. This is triggered when the Stop Responding button is clicked. Use it to cancel any in-flight AI request:
+The `SfAIAssistView` control provides the [StopRespondingButtonClicked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.SfAIAssistView.html#Syncfusion_WinForms_AIAssistView_SfAIAssistView_StopRespondingButtonClicked) event. This is triggered when the Stop Responding button is clicked. Use it to cancel any in-flight AI request:
 
 {% tabs %}
 

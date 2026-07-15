@@ -35,7 +35,7 @@ Me.pasteButton.ToolTipText = "Add content on your clipboard to your document"
 
 ## SuperToolTip
 
-Essential<sup>®</sup> Tools has come up with a new control known as the SuperToolTip which, enables the user to give tooltip information.
+Essential<sup>®</sup> Tools has come up with a new control known as the SuperToolTip which enables the user to provide tooltip information.
 
 *	Header - The Header is used to display text which is used as a header for the tooltip.
 *	Body - This is the description part.

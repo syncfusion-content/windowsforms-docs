@@ -7,9 +7,9 @@ control: AutoComplete
 documentation: ug
 ---
 
-# Autocomplete Events in Windows Forms AutoComplete
+# AutoComplete Events in Windows Forms AutoComplete
 
-The events of the AutoComplete component are as follows.
+The events of the AutoComplete component are listed below.
 
 <table>
 <tr>
@@ -56,7 +56,7 @@ Occurs when the editor control of the AutoComplete component changes.</td></tr>
 
 ## AutoCompleteItemSelected event
 
-This event occurs while selecting a new item when the AutoComplete mode is set to AutoSuggest.
+This event is raised while a new item is selected when the AutoComplete mode is set to `AutoSuggest`. The event handler receives an argument of type `AutoCompleteItemEventArgs`.
 
 
 ## BeforeAddItem Event
@@ -79,7 +79,7 @@ Gets or sets the ColumnIndex into the AutoComplete.ImageList property.</td></tr>
 <tr>
 <td>
 RowItem</td><td>
-It is the System.Data.DataRow object that contains the value that is to be added to the history list.</td></tr>
+It is the `System.Data.DataRow` object that contains the value that is to be added to the history list.</td></tr>
 </table>
 
 {% tabs %}
@@ -114,7 +114,7 @@ End Sub
 
 ## AutoCompleteItemBrowsed event
 
-This event occurs when selecting an item from the list of possible matches when the AutoComplete is set to AutoSuggest. The event handler receives an argument of type AutoCompleteItemEventArgs. The event properties associated with the AutoCompleteItemEventArgs are as follows.
+This event is raised when selecting an item from the list of possible matches when the AutoComplete is set to `AutoSuggest`. The event handler receives an argument of type `AutoCompleteItemEventArgs`. The event properties associated with the `AutoCompleteItemEventArgs` are as follows.
 
 <table>
 <tr>
@@ -128,7 +128,7 @@ Gets or sets the value selected.</td></tr>
 <tr>
 <td>
 Handled</td><td>
-Specifies whether SelectedValue should be applied to editor control. This can be used only with AutoCompleteItemSelected.</td></tr>
+Specifies whether `SelectedValue` should be applied to the editor control. This property can be used only with the `AutoCompleteItemSelected` event.</td></tr>
 <tr>
 <td>
 ItemArray</td><td>

@@ -9,11 +9,11 @@ documentation: ug
 
 # Interactive Features in Windows Forms Menu (Menus)
 
-Menu control supports interactive features like tooltip and context menu associated with specified menu items. In this page such interactive features are discussed.
+Menu control supports interactive features like tooltip and context menu associated with specified menu items. This page discusses such interactive features.
 
 ## Super tooltip
 
-The menu control supports [`Super Tooltip`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SuperToolTip.html) support via the super tooltip control. In this topic we discuss about associating a super tooltip control to a bar item.
+The menu control supports a [`Super ToolTip`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SuperToolTip.html) via the super tooltip control. In this topic, we discuss associating a super tooltip control with a bar item.
 
 ### Adding super tooltip
 
@@ -23,7 +23,7 @@ The super tooltip control can be drag and dropped to the form via the toolbox of
 
 ### Enabling super tooltip
 
-The menu item should be associated with the super tooltip to display the content of the tooltip. This can be done either via the designer. The below image shows the menu item `ToolTip` extended property is being set to the super tooltip instance created.
+The menu item should be associated with the super tooltip to display the content of the tooltip. This can be done either via the designer. The image below shows the menu item `ToolTip` extended property being set to the super tooltip instance created.
 
 The content of the super tooltip can be edited via the **ToolTip Editor**. This can be opened via the ellipses button `...`. The below image shows the tooltip editor is being opened and the text property is being set.
 
@@ -31,7 +31,7 @@ The content of the super tooltip can be edited via the **ToolTip Editor**. This 
 
 ![Menu item with super tooltip](Interactive-Features-images/toolTipEditor_TextUpdated.png)
 
-By default the tooltip for every menu item is enabled via the [`ShowTooltip`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_ShowTooltip). This can be disabled so that no overlapping of content gets displayed. The following code snippet shows the tooltip menu item is being disabled.
+By default, the tooltip for every menu item is enabled via the [`ShowTooltip`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_ShowTooltip) property. This can be disabled so that no overlapping of content occurs. The following code snippet shows the tooltip for a menu item being disabled.
 
 {% tabs %}
 
@@ -51,7 +51,7 @@ Me.barItem3.ShowTooltip = False
 
 ![Super tooltip customized in Tooltip editor](Interactive-Features-images/menuItem_with_SuperToolTip.png)
 
-N> Disabling the default tooltip of the menu item is not mandatory. However the overlapping of both tooltip could possibly occur. Its recommended to hide the default tooltip to get better view of the super tooltip.
+N> Disabling the default tooltip of the menu item is not mandatory. However, overlapping of both tooltips can occur. It is recommended to hide the default tooltip for a better view of the super tooltip.
 
 ### Appearance customization
 
@@ -63,7 +63,7 @@ The super tooltip appearance can be customized depending upon the requirement. T
 
 ## Context menu
 
-By default, the context menu appears while right-clicking of the desired tool bar in the menu control. This provides the on-demand customization of the menu items in the specified tool bar. The below image shows the context menu being shown while right-clicking the toolbar.
+By default, the context menu appears when right-clicking the desired toolbar in the menu control. This provides on-demand customization of the menu items in the specified toolbar. The image below shows the context menu being shown when right-clicking the toolbar.
 
 ![Menu with conetxt menu](Interactive-Features-images/contextMenu_in_Toolbar.png)
 

@@ -19,7 +19,7 @@ This section provides options to the customize the tree structure and the nodes.
 
 The below properties sets the background color for the treeview and also the node text.
 
-Property Table
+<b>TreeViewAdv Property Table</b>
 
 <table>
 <tr>
@@ -29,7 +29,7 @@ Description</th></tr>
 <tr>
 <td>
 BackgroundColor</td><td>
-Indicates the background color of the control. It provides options to set style, back color, fore color, gradient color and gradient styles.</td></tr>
+Indicates the background color of the control. It provides options to set style, back color, fore color, gradient color, and gradient styles.</td></tr>
 <tr>
 <td>
 BackColor</td><td>
@@ -125,7 +125,7 @@ Indicates if the node control will be themed.</td></tr>
 
 ## Drawing Node Background
 
-To draw the node's background, users need to turn on OwnerDrawnNodesBackground property, in theTreeViewAdv and then listen to the tree's NodeBackgroundPaint event which will be called for each node. This can be implemented by using the following code snippet.
+To draw the node's background, users need to turn on the `OwnerDrawnNodesBackground` property in the TreeViewAdv and then listen to the tree's `NodeBackgroundPaint` event, which is called for each node. This can be implemented by using the following code snippet.
 
 Property Table
 
@@ -235,11 +235,13 @@ Me.treeViewAdv1.InactiveSelectedNodeForeColor = System.Drawing.Color.SteelBlue
 
 Foreground Settings for the tree node text
 
-Using the Text and TextColor property, individual node's text can be edited and colored respectively.
+Using the `Text` and `TextColor` properties, an individual node's text can be edited and colored respectively.
 
-Using the Font and the ForeColor properties of the control, the text and text color of the nodes can be set for all the nodes in the TreeView control.
+Using the `Font` and the `ForeColor` properties of the control, the text and text color of the nodes can be set for all the nodes in the TreeView control.
 
-N> The font style for individual nodes, can be set using the Font property available for individual nodes using NodeCollection Editor.
+N> The font style for individual nodes can be set using the Font property available for individual nodes through the NodeCollection Editor.
+
+<b>TreeViewAdv Property Table</b>
 
 <table>
 <tr>
@@ -256,13 +258,12 @@ ForeColor</td><td>
 Specifies the text color of the nodes.</td></tr>
 </table>
 
-
-Property Table
+<b>TreeViewAdv Property Table</b>
 
 <table>
 <tr>
 <th>
-TreeViewAdv Properties</th><th>
+Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -398,11 +399,9 @@ Image Overlaying
 
 ## Border Settings
 
-3D Border for TreeView 
+3D Border for TreeView
 
-The following properties sets 3D border for the treeview.
-
-Property Table
+The following properties set the 3D border for the TreeView.
 
 <table>
 <tr>
@@ -416,16 +415,29 @@ Sets the border style for the Treeview control.{{ '_FixedSingle_' | markdownify 
 <tr>
 <td>
 Border3DStyle</td><td>
-Indicates the style of the 3D border when BorderStyle is set to Fixed3D.RaisedOuter<br>SunkenOuterRaisedInnerSunkenInnerRaisedEtchedBumpSunken (Default)Adjust Flat</td></tr>
+Indicates the style of the 3D border when BorderStyle is set to Fixed3D. Options include:
+<ul>
+<li>RaisedOuter</li>
+<li>SunkenOuter</li>
+<li>RaisedInner</li>
+<li>SunkenInner</li>
+<li>Raised</li>
+<li>Etched</li>
+<li>Bump</li>
+<li>Sunken</li>
+<li>Adjust</li>
+<li>Flat</li>
+</ul>
+</td></tr>
 </table>
 
 ![Border in WinForms TreeView](Concepts-and--Features_images/Concepts-and--Features_img43.jpeg)
 
 ## 2D Border for TreeView
 
-The following properties let you set customized 2D border.
+The following properties let you set a customized 2D border.
 
-N> The settings will effect only when TreeViewAdv.BorderStyle property is set to FixedSingle.
+N> These settings will take effect only when the TreeViewAdv.BorderStyle property is set to FixedSingle.
 
 <table>
 <tr>
@@ -443,7 +455,16 @@ Specifies the sides of the control to which border should be set.</td></tr>
 <tr>
 <td>
 BorderSingle</td><td>
-Indicates the 2D border style. The options are,Solid (Default),Dotted,Dashed,Inset,Outset,None.</td></tr>
+Indicates the 2D border style. Options include:
+<ul>
+<li>Solid (Default)</li>
+<li>Dotted</li>
+<li>Dashed</li>
+<li>Inset</li>
+<li>Outset</li>
+<li>None</li>
+</ul>
+</td></tr>
 </table>
 
 {% tabs %}

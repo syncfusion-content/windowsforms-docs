@@ -22,7 +22,7 @@ Me.sfDataGrid1.AllowGrouping = True
 {% endhighlight %}
 {% endtabs %}
 
-Grouping for particular column can  be enables or disabled by setting the [GridColumnBase.AllowGrouping](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_AllowGrouping) property.
+Grouping for particular column can be enabled or disabled by setting the [GridColumnBase.AllowGrouping](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_AllowGrouping) property.
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.Columns["OrderID"].AllowGrouping = true;

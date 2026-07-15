@@ -11,7 +11,7 @@ documentation: ug
 
 ## Node Painting Events
 
-Node painting events will be triggered before painting or after painting a node.
+These events are triggered before and after a node is painted.
 
 <table>
 <tr>
@@ -68,7 +68,7 @@ End Sub
 
 ## CheckBox Event
 
-These events will be triggered before checking a node or when interactive check happens.
+These events are triggered before a node is checked or when an interactive check happens.
 
 <table>
 <tr>
@@ -272,7 +272,7 @@ Notifies that a new label has been provided for a node by the user.</td></tr>
 <tr>
 <td>
 NodeEditorValidating</td><td>
-Let’s you validate the new node label entered by the user.</td></tr>
+Lets you validate the new node label entered by the user.</td></tr>
 <tr>
 <td>
 NodeEditorValidateString</td><td>
@@ -549,7 +549,7 @@ End Sub
 
 ## ScrollingEvent
 
-Events related to the scroll functionality of the control. 
+These events are related to the scroll functionality of the control.
 
 <table>
 <tr>

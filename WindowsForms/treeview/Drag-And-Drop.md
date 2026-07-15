@@ -94,7 +94,11 @@ private void treeViewAdv_ItemDrag(object sender, System.Windows.Forms.ItemDragEv
         e.Effect = DragDropEffects.None;
         Point pt = this.treeViewAdv1.PointToClient(new Point(e.X, e.Y));
         this.treeViewAdv1.SelectedNode = this.treeViewAdv1.GetNodeAtPoint(pt);
-        Console.WriteLine(this.treeViewAdv1.SelectedNode.Text);
+        // Guard against null when the cursor is over the empty area of the tree.
+        if (this.treeViewAdv1.SelectedNode != null)
+        {
+            Console.WriteLine(this.treeViewAdv1.SelectedNode.Text);
+        }
     }
     private void treeViewAdv_DragDrop(object sender, System.Windows.Forms.DragEventArgs e)  
     {
@@ -120,32 +124,35 @@ private void treeViewAdv_ItemDrag(object sender, System.Windows.Forms.ItemDragEv
             e.Action = DragAction.Cancel;
         }
     }
-    private void treeViewAdv_DragEnter(object sender, System.Windows.Forms.DragEventArgs e) 
+    private void treeViewAdv_DragEnter(object sender, System.Windows.Forms.DragEventArgs e)
     {
-// Reset the label text.
+        // Reset the label text.
         DropLocationLabel.Text = "None";
     }
+
+    // Note: The following event and field declarations should be placed at the class level,
+    // not inside a method body. They are shown here inline for documentation purposes only.
     public event GiveFeedbackEventHandler GiveFeedback;
     private System.Windows.Forms.CheckBox UseCustomCursorsCheck;
     private Cursor MyNoDropCursor;
     private Cursor MyNormalCursor;
-    private void treeViewAdv_GiveFeedback(object sender, System.Windows.Forms.GiveFeedbackEventArgs e) 
+    private void treeViewAdv_GiveFeedback(object sender, System.Windows.Forms.GiveFeedbackEventArgs e)
     {
-// Use custom cursors if the check box is checked.
-        if (UseCustomCursorsCheck.Checked) 
+        // Use custom cursors if the check box is checked.
+        if (UseCustomCursorsCheck.Checked)
         {
             MyNormalCursor = new Cursor("3dwarro.cur");
             MyNoDropCursor = new Cursor("3dwno.cur");
             if (MyNormalCursor != null)
-            MyNormalCursor.Dispose();
+                MyNormalCursor.Dispose();
             if (MyNoDropCursor != null)
-            MyNoDropCursor.Dispose();
-// Sets the custom cursor based upon the effect.
-           e.UseDefaultCursors = false;
-           if ((e.Effect & DragDropEffects.Move) == DragDropEffects.Move)
-           Cursor.Current = MyNormalCursor;
-       else 
-           Cursor.Current = MyNoDropCursor;
+                MyNoDropCursor.Dispose();
+            // Sets the custom cursor based upon the effect.
+            e.UseDefaultCursors = false;
+            if ((e.Effect & DragDropEffects.Move) == DragDropEffects.Move)
+                Cursor.Current = MyNormalCursor;
+            else
+                Cursor.Current = MyNoDropCursor;
         }
     }
 
@@ -195,7 +202,10 @@ e.Effect = DragDropEffects.None
 End If
 Dim pt As Point = Me.treeViewAdv1.PointToClient(New Point(e.X, e.Y))
 Me.treeViewAdv1.SelectedNode = Me.treeViewAdv1.GetNodeAtPoint(pt)
-Console.WriteLine(Me.treeViewAdv1.SelectedNode.Text)
+' Guard against null when the cursor is over the empty area of the tree.
+If Me.treeViewAdv1.SelectedNode IsNot Nothing Then
+    Console.WriteLine(Me.treeViewAdv1.SelectedNode.Text)
+End If
 End Sub
 Private Sub treeViewAdv_DragDrop(ByVal sender As Object, ByVal e As System.Windows.Forms.DragEventArgs)
 Dim treeView As TreeViewAdv = CType(IIf(TypeOf sender Is TreeViewAdv, sender, Nothing), TreeViewAdv)
@@ -208,7 +218,7 @@ sourceNode.Move(destinationNode, NodePositions.Next)
 Me.currentSourceNode = Nothing
 treeView.SelectedNode = sourceNode
 End Sub
-Private Sub treeViewAdv_DragEnter(ByVal sender As Object, ByVal e As DragEventArgs) Handles ListDragTarget.DragEnter
+Private Sub treeViewAdv_DragEnter(ByVal sender As Object, ByVal e As DragEventArgs) Handles treeViewAdv1.DragEnter
 
 ' Reset the label text.
 DropLocationLabel.Text = "None"
@@ -226,10 +236,10 @@ e.Action = DragAction.Cancel
 End If
 End Sub
 Public Event GiveFeedback As GiveFeedbackEventHandler
-Friend WithEvents UseCustomCursorsCheck As System.Windows.Forms.CheckBox 
-Private MyNoDropCursor As Cursor 
-Private MyNormalCursor As Cursor 
-Private Sub treeViewAdv_GiveFeedback(ByVal sender As Object, ByVal e As GiveFeedbackEventArgs) Handles ListDragSource.GiveFeedback
+Friend WithEvents UseCustomCursorsCheck As System.Windows.Forms.CheckBox
+Private MyNoDropCursor As Cursor
+Private MyNormalCursor As Cursor
+Private Sub treeViewAdv_GiveFeedback(ByVal sender As Object, ByVal e As GiveFeedbackEventArgs) Handles treeViewAdv1.GiveFeedback
 
 ' Use custom cursors if the check box is checked.
 If (UseCustomCursorsCheck.Checked) Then

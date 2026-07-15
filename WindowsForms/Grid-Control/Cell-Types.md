@@ -41,7 +41,7 @@ TextBox cells are the default cell type of GridControl. TextBox cells displays t
 gridControl1[2, 2].Text = "TextBox";
 gridControl1[2, 2].CellType = "TextBox";
 gridControl1[2, 3].Text = "TextBox/Image";
-gridControl1[2, 2].CellType = "TextBox";
+gridControl1[2, 3].CellType = "TextBox";
 gridControl1[2, 3].ImageIndex = 0;
 {% endhighlight %}
 {% highlight vb %}
@@ -50,7 +50,7 @@ gridControl1(2, 2).CellType = "TextBox"
 
 'Text box with image assumes ImageList set the same Static sample code.
 gridControl1(2, 3).Text = "TextBox/Image"
-gridControl1(2, 2).CellType = "TextBox"
+gridControl1(2, 3).CellType = "TextBox"
 gridControl1(2, 3).ImageIndex = 0
 {% endhighlight %}
 {% endtabs %}
@@ -67,7 +67,7 @@ gridControl1[2, 2].Text = "Static";
 gridControl1[2, 2].CellType = "Static";
 
 gridControl1[2, 3].Text = "Static/Image";
-gridControl1[2, 2].CellType = "Static";
+gridControl1[2, 3].CellType = "Static";
 gridControl1[2, 3].ImageIndex = 2;
  
 {% endhighlight %}
@@ -77,7 +77,7 @@ gridControl1(2, 2).Text = "Static"
 gridControl1(2, 2).CellType = "Static"
 
 gridControl1(2, 3).Text = "Static/Image"
-gridControl1(2, 2).CellType = "Static"
+gridControl1(2, 3).CellType = "Static"
 gridControl1(2, 3).ImageIndex = 2
 
 {% endhighlight %}
@@ -85,7 +85,7 @@ gridControl1(2, 3).ImageIndex = 2
 
 ![Cell-Types_img3](Cell-Types_images/Cell-Types_img3.png)
 
-N> Though static cells cannot be edited, it can be deleted by using the&lt;kbd&gt DELETE&lt;/kbd&gt; key.
+N> Though static cells cannot be edited, it can be deleted by using the <kbd>DELETE</kbd> key.
 
 ## Header cell type
 Header cells are as same as that of static cells, in addition, this cell type has a button-like border that can have a depressed state. Header cell type is mainly used as header for rows and columns. If a particular cell needs to be of type header, then make use of this cell type.
@@ -568,8 +568,8 @@ It is possible to add an arbitrary control in a grid cell through `Control` cell
 {% tabs %}
 {% highlight c# %}
 Panel panel1 = new Panel();
-panel.Controls.Add(new Button());
-panel.Controls.Add(new RadioButton());
+panel1.Controls.Add(new Button());
+panel1.Controls.Add(new RadioButton());
 
 //Sets the control object.
 this.gridControl1[2, 2].Control = panel1;
@@ -578,8 +578,8 @@ this.gridControl1[2, 2].CellType = "Control";
 {% endhighlight %}
 {% highlight vb %}
 Dim panel1 As New Panel()
-panel.Controls.Add(New Button())
-panel.Controls.Add(New RadioButton())
+panel1.Controls.Add(New Button())
+panel1.Controls.Add(New RadioButton())
 
 'Sets the control object.
 Me.gridControl1(2, 2).Control = panel1
@@ -605,9 +605,9 @@ this.gridControl1[3, 2].CellType = GridCellTypeName.Currency;
 this.gridControl1[4, 2].CellType = GridCellTypeName.Currency;
 {% endhighlight %}
 {% highlight vb %}
-Me.gridControl1(2, 2).CellType = GridCellTypeName.ColorEdit
-Me.gridControl1[3, 2].CellType = GridCellTypeName.Currency
-Me.gridControl1[4, 2].CellType = GridCellTypeName.Currency
+Me.gridControl1(2, 2).CellType = GridCellTypeName.Currency
+Me.gridControl1(3, 2).CellType = GridCellTypeName.Currency
+Me.gridControl1(4, 2).CellType = GridCellTypeName.Currency
 {% endhighlight %}
 {% endtabs %}
 
@@ -1151,7 +1151,7 @@ AddHandler GridControl1.CellButtonClicked, AddressOf gridControl1_CellButtonClic
 {% endtabs %}
 
 ## RichTextBox cell type
-The `RichTextBox` control will allow to display and edit rich text in grid cells. To make use of this control set the cell type as `GridCellTypeName.RichTextBox`.
+The `RichTextBox` control will allow to display and edit rich text in grid cells. To make use of this control set the cell type as `GridCellTypeName.RichText`.
 {% tabs %}
 {% highlight c# %}
 GridStyleInfo style = gridControl1.Model[2, 2];

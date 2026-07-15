@@ -372,11 +372,13 @@ private void treeViewAdv1_BeforeCheck(object sender, Syncfusion.Windows.Forms.To
 {
    if (Control.MouseButtons == MouseButtons.Left)
    {
-// Allow check or uncheck.
+       // Allow check or uncheck when the user clicks the checkbox with the left mouse button.
    }
    else
-// Ignore all other ways to check/uncheck the node.
-   e.Cancel = true;
+   {
+       // Ignore all other ways to check/uncheck the node.
+       e.Cancel = true;
+   }
 }
 
 {% endhighlight %}
@@ -385,12 +387,10 @@ private void treeViewAdv1_BeforeCheck(object sender, Syncfusion.Windows.Forms.To
 
 Private Sub treeViewAdv1_BeforeCheck(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Tools.TreeNodeAdvBeforeCheckEventArgs)
 If Control.MouseButtons = MouseButtons.Left Then
-
-' Allow check or uncheck.
+    ' Allow check or uncheck when the user clicks the checkbox with the left mouse button.
 Else
-
-' Ignore all other ways to check/uncheck the node.
-e.Cancel = True
+    ' Ignore all other ways to check/uncheck the node.
+    e.Cancel = True
 End If
 End Sub
 
@@ -795,8 +795,8 @@ private void treeViewAdv1_NodeEditorValidated(object sender, Syncfusion.Windows.
 
 Private Sub treeViewAdv1_NodeEditorValidated(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Tools.TreeNodeAdvEditEventArgs)
 
-'This prints the treenodeadv action associated with the event in the output window at run time.
-Console.Write("Label :" + e.Action.ToString())
+'This prints the label for the node in the output window at run time.
+Console.Write("Label :" + e.Label.ToString())
 
 'This prints the treenodeadv associated with the event in the output window at run time.
 Console.Write("TreeNodeAdv :" + e.Node.ToString())
@@ -878,8 +878,8 @@ e.Cancel = true
 'otherwise editing mode will be preserved. Default is true.
 e.ContinueEditing = False
 
-'This prints the treenodeadv action associated with the event in the output window at run time.
-Console.Write("Label :" + e.Action.ToString())
+'This prints the label for the node in the output window at run time.
+Console.Write("Label :" + e.Label.ToString())
 
 'This prints the treenodeadv associated with the event in the output window at run time.
 Console.Write("TreeNodeAdv :" + e.Node.ToString())

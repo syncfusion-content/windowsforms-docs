@@ -15,7 +15,7 @@ documentation: ug
 
 ![Tabs with close button](Interactive-Features_images/Interactive-Features_img3.jpeg)
 
-Close button on all the TabItems can be made visible by setting the [ShowTabCloseButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_ShowTabCloseButton) property to`true`.
+Close button on all the TabItems can be made visible by setting the [ShowTabCloseButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_ShowTabCloseButton) property to `true`.
 
 {% tabs %}
 
@@ -65,7 +65,7 @@ this.tabControlAdv1.CloseTabOnMiddleClick = true;
 {% endhighlight %}
 {% highlight VB %}
 
-Me.tabControlAdv1.CloseTabOnMiddleClick = true
+Me.tabControlAdv1.CloseTabOnMiddleClick = True
 
 {% endhighlight %}
 {% endtabs %}
@@ -131,7 +131,7 @@ This section discusses about the Scrolling properties available in the [TabContr
 
 ### ScrollButton
 
-TabControlAdv has the ability to add ScrollButtons on the TabPanel when the number of tab items increase. These ScrollButtons allows the user to navigate through the TabPages in the front and back. For this, the [ShowScroll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_ShowScroll) property of the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) must be set.
+TabControlAdv has the ability to add ScrollButtons on the TabPanel when the number of tab items increase. These ScrollButtons allow the user to navigate through the TabPages in the front and back. For this, the [ShowScroll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_ShowScroll) property of the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) must be set.
 
 ScrollButtons can have a VS like scroll button-look and normal button look.
 
@@ -191,15 +191,15 @@ this.tabControlAdv1.BringSelectedTabToView();
 
 {% highlight VB %}
 
-Private Me.tabPageAdv1.AutoScroll = True
+Me.tabPageAdv1.AutoScroll = True
 
-Private Me.tabPageAdv1.AutoScrollMargin = New System.Drawing.Size(20, 20)
+Me.tabPageAdv1.AutoScrollMargin = New System.Drawing.Size(20, 20)
 
-Private Me.tabPageAdv1.AutoScrollMinSize = New System.Drawing.Size(50, 50)
+Me.tabPageAdv1.AutoScrollMinSize = New System.Drawing.Size(50, 50)
 
-Private Me.tabControlAdv1.ScrollIncrement = Syncfusion.Windows.Forms.Tools.ScrollIncrement.Page
+Me.tabControlAdv1.ScrollIncrement = Syncfusion.Windows.Forms.Tools.ScrollIncrement.Page
 
-Private Me.tabPageAdv1.BringSelectedTabToView()
+Me.tabControlAdv1.BringSelectedTabToView()
 
 {% endhighlight %}
 

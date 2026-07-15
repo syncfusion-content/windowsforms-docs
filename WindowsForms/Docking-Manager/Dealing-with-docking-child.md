@@ -159,7 +159,7 @@ this.dockingManager1.GetDockAbility(this.panel1);
 
 //Setting the Dock Ability
 
-this.dockingManager1.SetDockAbility(this.panel1, "Top");
+this.dockingManager1.SetDockAbility(this.panel1, Syncfusion.Windows.Forms.Tools.DockAbility.Top);
 
 {% endhighlight %}
 
@@ -171,7 +171,7 @@ Me.dockingManager1.GetDockAbility(Me.panel1)
 
 //Setting the Dock Ability
 
-Me.dockingManager1.SetDockAbility(Me.panel1, "Top")
+Me.dockingManager1.SetDockAbility(Me.panel1, Syncfusion.Windows.Forms.Tools.DockAbility.Top)
 
 {% endhighlight %}
 
@@ -340,7 +340,7 @@ You can show or hide the tooltip in docked, tabbed, and auto hide windows using 
 
 ![Tooltip for dock windows in DockingManager](Dealing-with-Windows_images/Dealing-with-Windows_img5.png)
 
-N> The [EnableSuperTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_EnableSuperToolTip) property should be set to `false` to effect the above default tooltip.
+N> The [EnableSuperTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_EnableSuperToolTip) property should be set to `false` to affect the above default tooltip.
 
 ## Remove particular caption button
 

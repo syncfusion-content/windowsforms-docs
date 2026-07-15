@@ -103,7 +103,7 @@ This enables users to disable highlighting matched TreeNodeAdv.</td></tr>
 {% tabs %}
 {% highlight c# %}
 
-Void treeViewAdv1_OnNodeBeforeFind(object sender, Syncfusion.Windows.Forms.Tools.TreeNodeAdvBeforeFindArgs e)
+void treeViewAdv1_BeforeNodeFind(object sender, Syncfusion.Windows.Forms.Tools.TreeNodeAdvBeforeFindArgs e)
 {
 
 // This will return the matched TreeNodeAdv.
@@ -120,7 +120,7 @@ Void treeViewAdv1_OnNodeBeforeFind(object sender, Syncfusion.Windows.Forms.Tools
 
 {% highlight vb %}
 
-Private Sub treeViewAdv1_OnNodeBeforeFind(sender As Object, e As Syncfusion.Windows.Forms.Tools. TreeNodeAdvBeforeFindArgs)
+Private Sub treeViewAdv1_BeforeNodeFind(sender As Object, e As Syncfusion.Windows.Forms.Tools.TreeNodeAdvBeforeFindArgs)
 
 ' This will return the matched TreeNodeAdv.
 Dim matchedNode As TreeNodeAdv = e.Node
@@ -164,7 +164,7 @@ This will return the search string to be highlighted in TreeNodeAdv.</td></tr>
 {% tabs %}
 {% highlight c# %}
 
-void treeViewAdv1_OnNodeAfterFound(object sender, Syncfusion.Windows.Forms.Tools.TreeNodeAdvAfterFindArgs e)
+void treeViewAdv1_AfterNodeFind(object sender, Syncfusion.Windows.Forms.Tools.TreeNodeAdvAfterFindArgs e)
 {
 
 // This will return matched TreeNodeAdv.
@@ -178,7 +178,7 @@ void treeViewAdv1_OnNodeAfterFound(object sender, Syncfusion.Windows.Forms.Tools
 
 {% highlight vb %}
 
-Private Sub treeViewAdv1_OnNodeAfterFound(sender As Object, e As Syncfusion.Windows.Forms.Tools. TreeNodeAdvAfterFindArgs)
+Private Sub treeViewAdv1_AfterNodeFind(sender As Object, e As Syncfusion.Windows.Forms.Tools.TreeNodeAdvAfterFindArgs)
 
 ' This will return the matched TreeNodeAdv.
 Dim matchedNode As TreeNodeAdv = e.Node
@@ -234,7 +234,7 @@ This will enable users to disable replacing matched TreeNodeAdv text.</td></tr>
 {% tabs %}
 {% highlight c# %}
 
-void treeViewAdv1_OnNodeReplacing(object sender, Syncfusion.Windows.Forms.Tools.TreeNodeAdvOnReplacingArgs e)
+void treeViewAdv1_BeforeReplaceNode(object sender, Syncfusion.Windows.Forms.Tools.TreeNodeAdvOnReplacingArgs e)
 {
 
 // This will return the replaced TreeNodeAdv.
@@ -260,7 +260,7 @@ void treeViewAdv1_OnNodeReplacing(object sender, Syncfusion.Windows.Forms.Tools.
 
 {% highlight vb %}
 
-Private Sub treeViewAdv1_OnNodeReplacing(sender As Object, e As Syncfusion.Windows.Forms.Tools. TreeNodeAdvOnReplacingArgs)
+Private Sub treeViewAdv1_BeforeReplaceNode(sender As Object, e As Syncfusion.Windows.Forms.Tools.TreeNodeAdvOnReplacingArgs)
 
 ' This will return the replaced TreeNodeAdv.
 Dim replaceNode As TreeNodeAdv = e.Node
@@ -316,7 +316,7 @@ This will return TreeNodeAdv text that has been replaced.</td></tr>
 {% tabs %}
 {% highlight c# %}
 
-void treeViewAdv1_OnNodeReplaced(object sender, Syncfusion.Windows.Forms.Tools.TreeNodeAdvOnReplacedArgs e)
+void treeViewAdv1_AfterReplaceNode(object sender, Syncfusion.Windows.Forms.Tools.TreeNodeAdvOnReplacedArgs e)
 {
 
 // This will return the replaced TreeNodeAdv.
@@ -333,7 +333,7 @@ void treeViewAdv1_OnNodeReplaced(object sender, Syncfusion.Windows.Forms.Tools.T
 
 {% highlight vb %}
 
-Private Sub treeViewAdv1_OnNodeReplaced(sender As Object, e As Syncfusion.Windows.Forms.Tools. TreeNodeAdvOnReplacedArgs)
+Private Sub treeViewAdv1_AfterReplaceNode(sender As Object, e As Syncfusion.Windows.Forms.Tools.TreeNodeAdvOnReplacedArgs)
 
 ' This will return Replaced TreeNodeAdv
 Dim replacedNode As TreeNodeAdv = e.Node
@@ -426,21 +426,19 @@ Gets or sets a value indicating whether the key event should be passed on to the
 
 The nodes can be added to the TreeViewAdv when any key is pressed, whereby the text of the node reflects the key that has been used for adding the node, by using the following code in the TreeViewAdv KeyDown event handler.
 
-#### Border Settings
-
 {% tabs %}
 {% highlight c# %}
 
 // Setting the key data to the newly added node.
 // Add the nodes to the selected node.
-private void treeViewAdv1_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e) 
-{ 
- // Setting the key data to the newly added node.
-     TreeNodeAdv node=new TreeNodeAdv("Node"+" "+e.KeyData.ToString()); 
+private void treeViewAdv1_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
+{
+    // Setting the key data to the newly added node.
+    TreeNodeAdv node = new TreeNodeAdv("Node" + " " + e.KeyData.ToString());
 
-// Add the nodes to the selected node.
-     this.treeViewAdv1.SelectedNode.Nodes.Add(node); 
-     Console.WriteLine("The "+node.Text+" "+"is added"); 
+    // Add the nodes to the selected node.
+    this.treeViewAdv1.SelectedNode.Nodes.Add(node);
+    Console.WriteLine("The " + node.Text + " " + "is added");
 }
 
 {% endhighlight %}
