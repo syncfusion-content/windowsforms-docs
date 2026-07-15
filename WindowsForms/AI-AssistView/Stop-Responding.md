@@ -11,11 +11,7 @@ documentation: ug
 
 The [`SfAIAssistView`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.SfAIAssistView.html) control includes a **Stop Responding** feature that allows users to cancel an ongoing AI response by clicking the **Stop Responding** button. This feature ensures that users can interrupt the response if it is no longer needed.
 
-## Prerequisites
-
-- An `SfAIAssistView` instance has been created and added to the form. See [Getting Started](https://help.syncfusion.com/windowsforms/ai-assistview/getting-started) for setup details.
-- A `ViewModel` is bound to the control via the `Messages` property. See [OpenAI Integration](https://help.syncfusion.com/windowsforms/ai-assistview/open-ai) for a working example of an in-flight bot response that can be canceled.
-- The following `using` directives are included in your file:
+The following `using` directives are included in your file:
 
 {% tabs %}
 
@@ -27,6 +23,8 @@ using Syncfusion.WinForms.AIAssistView;
 {% endhighlight %}
 
 {% endtabs %}
+
+N> An `SfAIAssistView` instance has been created and added to the form. See [Getting Started](https://help.syncfusion.com/windowsforms/ai-assistview/getting-started) for setup details.
 
 ## Enabling the Stop Responding Button
 
@@ -60,22 +58,22 @@ private void SfaiAssistView1_StopResponding(object sender, EventArgs e)
     CancelAIRequest();
 }
 
-private CancellationTokenSource cts;
+private CancellationTokenSource ct;
 
 private void CancelAIRequest()
 {
-    if (cts != null && !cts.IsCancellationRequested)
+    if (ct != null && !ct.IsCancellationRequested)
     {
-        cts.Cancel();
-        cts.Dispose();
-        cts = null;
+        ct.Cancel();
+        ct.Dispose();
+        ct = null;
     }
 }
 {% endhighlight %}
 
 {% endtabs %}
 
-`CancellationTokenSource` is created and assigned to `cs` when an AI request is started, and the resulting token is passed into the AI service call. The event handler cancels that token when the user clicks Stop.
+`CancellationTokenSource` is created and assigned to `ct` when an AI request is started, and the resulting token is passed into the AI service call. The event handler cancels that token when the user clicks Stop.
 
 ### Wiring Cancellation into an AI Request
 
@@ -91,11 +89,11 @@ private async void Chats_CollectionChanged(object sender, NotifyCollectionChange
     if (item.Author?.Name != viewModel.CurrentUser?.Name) return;
 
     viewModel.ShowTypingIndicator = true;
-    cts = new CancellationTokenSource();
+    ct = new CancellationTokenSource();
 
     try
     {
-        string response = await aiService.NonStreamingChatAsync(item.Text, cts.Token);
+        string response = await aiService.NonStreamingChatAsync(item.Text, ct.Token);
         viewModel.Chats.Add(new TextMessage
         {
             Author = new Author { Name = "Bot" },
@@ -123,9 +121,9 @@ The button text and the hold duration can be customized using the properties bel
 
 | Property | Description | Default |
 |----------|-------------|---------|
-| `StopRespondingButtonText` | Text shown on the button before cancellation. | `"Stop"` |
-| `StopRespondingButtonCancelingText` | Text shown on the button while cancellation is in progress. | `"Canceling..."` |
-| `StopRespondingHoldSeconds` | Number of seconds the button stays disabled after being clicked. | `0` |
+| `StopRespondingButtonText` | Text shown on the button before cancellation. | `"\u25A0 Stop Responding"` |
+| `StopRespondingButtonCancelingText` | Text shown on the button while cancellation is in progress. | `"Cancelling..."` |
+| `StopRespondingHoldSeconds` | Number of seconds the button stays disabled after being clicked. | `1` |
 
 {% tabs %}
 
@@ -145,12 +143,3 @@ sfAIAssistView1.StopRespondingHoldSeconds = 2;
 {% endtabs %}
 
 ![WindowsForms AI AssistView control StopRespondingButtonText](aiassistview_images/windowsforms_aiassistview_stoprespondingtext.png)
-
-## Troubleshooting
-
-| Issue | Possible Cause | Resolution |
-|-------|----------------|------------|
-| Clicking Stop does not cancel the request | The AI service call does not accept a `CancellationToken`. | Update the AI service to accept and observe a `CancellationToken` from `CancellationTokenSource`. |
-| `NullReferenceException` when clicking Stop | `cs` was never assigned because the request was never started. | Guard the cancel call with a null check on `cs`, as shown in the example. |
-| The button never appears | `EnableStopResponding` is `false` (default). | Set `sfAIAssistView1.EnableStopResponding = true;` before showing the form. |
-
