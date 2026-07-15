@@ -193,7 +193,7 @@ e.Handled = true;
 {% endhighlight %}
 
 {% highlight vb %}
-Private gridControl1.QueryRowCount += AddressOf gridControl1_QueryRowCount
+AddHandler gridControl1.QueryRowCount, AddressOf gridControl1_QueryRowCount
 
 Private Sub gridControl1_QueryRowCount(ByVal sender As Object, ByVal e As GridRowColCountEventArgs)
 
@@ -202,7 +202,7 @@ e.Count = 100
 e.Handled = True
 End Sub
 
-Private gridControl1.QueryColCount += AddressOf gridControl1_QueryColCount
+AddHandler gridControl1.QueryColCount, AddressOf gridControl1_QueryColCount
 
 Private Sub gridControl1_QueryColCount(ByVal sender As Object, ByVal e As GridRowColCountEventArgs)
 
@@ -304,7 +304,7 @@ void gridControl1_QueryRowHeight(object sender, GridRowColSizeEventArgs e)
 {% endhighlight %}
 
 {% highlight vb %}
-Me.gridControl1.QueryRowHeight += gridControl1_QueryRowHeight
+AddHandler Me.gridControl1.QueryRowHeight, AddressOf gridControl1_QueryRowHeight
 
 Private Sub gridControl1_QueryRowHeight(ByVal sender As Object, ByVal e As GridRowColSizeEventArgs)
 	
@@ -345,7 +345,7 @@ e.Handled = true;
 {% endhighlight %}
 
 {% highlight vb %}
-Private Me.gridControl1.QueryColWidth += AddressOf gridControl1_QueryColWidth
+AddHandler Me.gridControl1.QueryColWidth, AddressOf gridControl1_QueryColWidth
 
 Private Sub gridControl1_QueryColWidth(ByVal sender As Object, ByVal e As GridRowColSizeEventArgs)
 
@@ -384,7 +384,7 @@ e.Handled = true;
 {% endhighlight %}
 
 {% highlight vb %}
-Private Me.gridControl1.QueryCoveredRange += AddressOf gridControl1_QueryCoveredRange
+AddHandler Me.gridControl1.QueryCoveredRange, AddressOf gridControl1_QueryCoveredRange
 
 Private Sub gridControl1_QueryCoveredRange(ByVal sender As Object, ByVal e As GridQueryCoveredRangeEventArgs)
 

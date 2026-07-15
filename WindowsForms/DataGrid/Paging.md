@@ -797,7 +797,7 @@ The appearance of the button style can be customized using the [NavigationButton
 
 {% tabs %}
 {% highlight c# %}
-this.sfDataPager1.Style.NavigationButtonStyle.BackColor = Color. SeaGreen;
+this.sfDataPager1.Style.NavigationButtonStyle.BackColor = Color.SeaGreen;
 {% endhighlight %}
 {% highlight vb %}
 Me.sfDataPager1.Style.NavigationButtonStyle.BackColor = Color.SeaGreen

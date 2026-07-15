@@ -1463,7 +1463,7 @@ End Function
 {% endhighlight %}
 {% endtabs %}
 
-N> This event will be trigged only when the underlying data object contains relations otherwise, you must define a dummy relation to notify the DataGrid to fire this event.
+N> This event will be triggered only when the underlying data object contains relations otherwise, you must define a dummy relation to notify the DataGrid to fire this event.
 
 ## Defining properties for DetailsViewDataGrid
 

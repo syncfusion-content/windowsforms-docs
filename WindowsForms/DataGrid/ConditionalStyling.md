@@ -132,7 +132,7 @@ The following code shows how to apply conditional styling for the data table.
 
 {% tabs %}
 {% highlight c# %}
-this.sfDataGrid.QueryCellStyle += SfDataGrid_QueryCellStyle;
+this.sfDataGrid.QueryRowStyle += SfDataGrid_QueryRowStyle;
 
 private void SfDataGrid_QueryRowStyle(object sender, QueryRowStyleEventArgs e)
 {
@@ -156,7 +156,7 @@ private void SfDataGrid_QueryRowStyle(object sender, QueryRowStyleEventArgs e)
 }
 {% endhighlight %}
 {% highlight vb %}
-AddHandler sfDataGrid1.QueryCellStyle, AddressOf SfDataGrid1_QueryCellStyle 
+AddHandler sfDataGrid1.QueryRowStyle, AddressOf SfDataGrid_QueryRowStyle 
 Private Sub SfDataGrid_QueryRowStyle(ByVal sender As Object, ByVal e As QueryRowStyleEventArgs)
 	' Get the "Country" column from the RowData   
 	If e.RowType = RowType.DefaultRow Then

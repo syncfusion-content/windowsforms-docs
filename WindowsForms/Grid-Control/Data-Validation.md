@@ -67,7 +67,7 @@ N> While the error is occurred, the current cell will not leave from the edit mo
 
 ## Programmatic validation
 
-While setting the cell value through the code, it will not trigger the [CurrentCellStartEditing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridCardView.html) and [CurrentCellValidating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html) events. Therefore the validation will not work at this type of editing. To validate this type of editing, call [CurrentCell.Validate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCurrentCell.html#Syncfusion_Windows_Forms_Grid_GridCurrentCell_Validate) method after editing the value of the current cell. It will raise the `CurrentCellValidating` event to manually validate the cell value.
+While setting the cell value through the code, it will not trigger the [CurrentCellStartEditing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_CurrentCellStartEditing) and [CurrentCellValidating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html) events. Therefore the validation will not work at this type of editing. To validate this type of editing, call [CurrentCell.Validate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCurrentCell.html#Syncfusion_Windows_Forms_Grid_GridCurrentCell_Validate) method after editing the value of the current cell. It will raise the `CurrentCellValidating` event to manually validate the cell value.
 
 {% tabs %}
 {% highlight c# %}
@@ -175,7 +175,7 @@ void gridControl1_CurrentCellValidating(object sender, CancelEventArgs e)
 
 {% highlight vb %}
 'Invoke this event for validate the conditions.
-Private Me.gridControl1.CurrentCellValidating += AddressOf gridControl1_CurrentCellValidating
+AddHandler Me.gridControl1.CurrentCellValidating, AddressOf gridControl1_CurrentCellValidating
 
 Private Sub gridControl1_CurrentCellValidating(ByVal sender As Object, ByVal e As CancelEventArgs)
 
@@ -215,7 +215,7 @@ e.Cancel = true;
 {% endhighlight %}
 
 {% highlight vb %}
-Private Me.gridControl1.CurrentCellErrorMessage += AddressOf gridControl1_CurrentCellErrorMessage
+AddHandler Me.gridControl1.CurrentCellErrorMessage, AddressOf gridControl1_CurrentCellErrorMessage
 
 Private Sub gridControl1_CurrentCellErrorMessage(ByVal sender As Object, ByVal e As GridCurrentCellErrorMessageEventArgs)
 

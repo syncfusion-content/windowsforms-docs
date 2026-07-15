@@ -51,7 +51,7 @@ void gridControl1_QueryCoveredRange(object sender, GridQueryCoveredRangeEventArg
 {% endhighlight %}
 {% highlight vb %}
 'Triggering the QueryCoveredRange event.
-Private Me.gridControl1.QueryCoveredRange += New GridQueryCoveredRangeEventHandler(AddressOf gridControl1_QueryCoveredRange)
+AddHandler Me.gridControl1.QueryCoveredRange, New GridQueryCoveredRangeEventHandler(AddressOf gridControl1_QueryCoveredRange)
 
 Private Sub gridControl1_QueryCoveredRange(ByVal sender As Object, ByVal e As GridQueryCoveredRangeEventArgs)
 
@@ -124,7 +124,7 @@ The `CoveredRanges` from the GridControl can be cleared by using the [Clear](htt
 this.gridControl1.CoveredRanges.Clear();
 {% endhighlight %}
 {% highlight vb %}
-'Clearing CoveredRange from GridControl.
-this.gridControl1.CoveredRanges.Clear();
+'Clearing CoveredRange from GridControl.
+Me.gridControl1.CoveredRanges.Clear()
 {% endhighlight %}
 {% endtabs %}

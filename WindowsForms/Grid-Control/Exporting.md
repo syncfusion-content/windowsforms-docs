@@ -365,10 +365,10 @@ void excelConverter _QueryImportExportCellInfo(object sender, GridImportExportCe
 Private excelConverter As New Syncfusion.GridExcelConverter.GridExcelConverterControl()
 
 ' Triggering the event.
-Private excelConverter.QueryImportExportCellInfo += New GridImportExportCellInfoEventHandler(excelConverter AddressOf _QueryImportExportCellInfo)
+AddHandler excelConverter.QueryImportExportCellInfo, New GridImportExportCellInfoEventHandler(AddressOf excelConverter_QueryImportExportCellInfo)
 excelConverter.GridToExcel(Me.gridControl1.Model, "Sample.xlsx")
 
-void excelConverter _QueryImportExportCellInfo(Object sender, GridImportExportCellInfoEventArgs e)
+Private Sub excelConverter_QueryImportExportCellInfo(ByVal sender As Object, ByVal e As GridImportExportCellInfoEventArgs)
  
  ' Checking whether it is Exporting action.
     If e.Action = GridConverterAction.Export Then
@@ -541,8 +541,8 @@ private void pdfConverter_Exported(object sender, PDFExportedEventArgs e)
 'Create PDF converter 
 Private pdfConverter As New GridPDFConverter()
 'Used to perform the action while exporting the Grid.
-Private pdfConverter.Exporting += New GridPDFConverter.PDFExportingEventHandler(AddressOf pdfConverter_Exporting)
-Private pdfConverter.Exported += New GridPDFConverter.PDFExportedEventHandler(AddressOf pdfConverter_Exported)
+AddHandler pdfConverter.Exporting, New GridPDFConverter.PDFExportingEventHandler(AddressOf pdfConverter_Exporting)
+AddHandler pdfConverter.Exported, New GridPDFConverter.PDFExportedEventHandler(AddressOf pdfConverter_Exported)
 
 Private Sub pdfConverter_Exporting(ByVal sender As Object, ByVal e As PDFExportingEventArgs)
      '  Getting the pdf document.
@@ -606,9 +606,9 @@ void pdfConverter_DrawPDFFooter(object sender, PDFHeaderFooterEventArgs e)
 
 {% endhighlight %}
 {% highlight vb %}
-Private pdfConvertor.DrawPDFHeader += New GridPDFConverter.DrawPDFHeaderFooterEventHandler(AddressOf pdfConvertor_DrawPDFHeader)
+AddHandler pdfConvertor.DrawPDFHeader, New GridPDFConverter.DrawPDFHeaderFooterEventHandler(AddressOf pdfConvertor_DrawPDFHeader)
 
-Private pdfConvertor.DrawPDFFooter += New GridPDFConverter.DrawPDFHeaderFooterEventHandler(AddressOf pdfConvertor_DrawPDFFooter)
+AddHandler pdfConvertor.DrawPDFFooter, New GridPDFConverter.DrawPDFHeaderFooterEventHandler(AddressOf pdfConvertor_DrawPDFFooter)
 Private Sub pdfConverter_DrawPDFHeader(ByVal sender As Object, ByVal e As PDFHeaderFooterEventArgs)
     Dim header As PdfPageTemplateElement = e.HeaderFooterTemplate
     Dim brush As New PdfSolidBrush(Color.FromArgb(44, 71, 120))
@@ -700,13 +700,15 @@ void converter_DrawHeader(object sender, DocHeaderFooterEventArgs e)
 Private converter As New GridWordConverter(True,True)
 
 'To Set the Header and Footer for the Exported word document.
-Private wordConverter.DrawHeader += New GridWordConverterBase.DrawDocHeaderFooterEventHandler(AddressOf converter_DrawHeader)
-Private wordConverter.DrawFooter += New GridWordConverterBase.DrawDocHeaderFooterEventHandler(AddressOf converter_DrawFooter)
+AddHandler wordConverter.DrawHeader, New GridWordConverterBase.DrawDocHeaderFooterEventHandler(AddressOf converter_DrawHeader)
+AddHandler wordConverter.DrawFooter, New GridWordConverterBase.DrawDocHeaderFooterEventHandler(AddressOf converter_DrawFooter)
 converter.GridToWord("Sample.doc", gridControl1)
-void converter_DrawFooter(Object sender, DocHeaderFooterEventArgs e)
+Private Sub converter_DrawFooter(ByVal sender As Object, ByVal e As DocHeaderFooterEventArgs)
     e.Footer.AddParagraph().AppendText("Copyright 2001-2015")
-void converter_DrawHeader(Object sender, DocHeaderFooterEventArgs e)
+End Sub
+Private Sub converter_DrawHeader(ByVal sender As Object, ByVal e As DocHeaderFooterEventArgs)
     e.Header.AddParagraph().AppendText("Syncfusion Inc.")
+End Sub
 {% endhighlight %}
 {% endtabs %}
 

@@ -270,7 +270,7 @@ void gridControl1_DrawCommentIndicator(object sender, DrawCommentIndicatorEventA
 }
 {% endhighlight %}
 {% highlight vb %}
-Private Me.gridControl1.DrawCommentIndicator += New DrawCommentIndicatorEventHandler(AddressOf gridControl1_DrawCommentIndicator)
+AddHandler Me.gridControl1.DrawCommentIndicator, New DrawCommentIndicatorEventHandler(AddressOf gridControl1_DrawCommentIndicator)
 Private Sub gridControl1_DrawCommentIndicator(ByVal sender As Object, ByVal e As DrawCommentIndicatorEventArgs)
 	Console.WriteLine("CommentRow {0} CommentColumn {1}", e.RowIndex, e.ColIndex)
 End Sub
@@ -288,7 +288,7 @@ void gridControl1_CommentTipShowing(object sender, CommentTipShowingEventArgs e)
 }
 {% endhighlight %}
 {% highlight vb %}
-Private Me.gridControl1.CommentTipShowing += New CommentTipShowingEventHandler(AddressOf gridControl1_CommentTipShowing)
+AddHandler Me.gridControl1.CommentTipShowing, New CommentTipShowingEventHandler(AddressOf gridControl1_CommentTipShowing)
 Private Sub gridControl1_CommentTipShowing(ByVal sender As Object, ByVal e As CommentTipShowingEventArgs)
 	Console.WriteLine("CommentRow {0} CommentColumn {1}", e.RowIndex, e.ColIndex)
 End Sub
