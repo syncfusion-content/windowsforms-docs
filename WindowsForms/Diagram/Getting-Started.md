@@ -13,11 +13,11 @@ This section helps you understand and quickly get started using  [WinForms Diagr
 
 ## Assembly deployment
 
-Refer to [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#diagram) section to get the list of assemblies or NuGet package needs to be added as reference to use the Diagram control in any application.
+Refer to [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#diagram) section to get the list of assemblies or NuGet packages needs to be added as references to use the Diagram control in any application.
 
-## Structure of React Diagram 
+## Structure of Windows Forms Diagram
 
-The React Diagram package is comprised of the following controls:
+The Windows Forms Diagram package is comprised of the following controls:
 
 * Diagram
 * Overview
@@ -28,11 +28,11 @@ The React Diagram package is comprised of the following controls:
 
 ### Diagram
 
-The [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) control is an interactive two-dimensional graphics control for diagramming, technical drawing, visualization, and simulation applications. It provides a surface for rendering and manipulating 2-D shapes, text, images, and Windows Form controls.  The UI supports drag-and-drop, scaling, zooming, rotation, grouping, ungrouping, connection points, layouts, and many other features.
+The [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) control is an interactive two-dimensional graphics control for diagramming, technical drawing, visualization, and simulation applications. It provides a surface for rendering and manipulating 2-D shapes, text, images, and Windows Form controls.  The UI supports drag and drop, scaling, zooming, rotation, grouping, ungrouping, connection points, layouts, and many other features.
 
 The Diagram control’s architecture is composed of three objects, namely Model, View, and Controller and it provides a clear separation between data, visualization, and user interface. One advantage of model-view-controller architecture is that the parts are interchangeable. The model, view, and controller can be swapped in and out independently.
 
-The model contains the data (node/connector) portion of a diagram. The view is responsible for rendering the diagram, and the controller handles user interaction. The Diagram control supports both horizontal and vertical rulers.
+The model contains the data (nodes and connectors) portion of a diagram. The view is responsible for rendering the diagram, and the controller handles user interaction. The Diagram control supports both horizontal and vertical rulers.
 
 
 
@@ -52,7 +52,7 @@ The Overview control provides a perspective view of a diagram model and allows u
 
 ### PaletteGroupBar
 
-The PaletteGroupBar control provides a way for users to drag symbols onto a diagram. It is based on the GroupBar control of Essential® Tools. Each symbol palette loaded in the PaletteGroupBar control occupies a panel that can be selected by a bar button. The bar button is labeled with the name of the symbol palette. Each symbol palette is a list of symbols that have an icon and a label. The symbols in the palette are shown as icons that can be dragged onto the diagram. This control allows users to add symbols to a palette, and save or load the palette whenever necessary. It provides a way to classify and maintain symbols. It also provides preview of symbol during drag-and-drop operation.
+The PaletteGroupBar control provides a way for users to drag symbols onto a diagram. It is based on the GroupBar control of Essential® Tools. Each symbol palette loaded in the PaletteGroupBar control occupies a panel that can be selected by a bar button. The bar button is labeled with the name of the symbol palette. Each symbol palette is a list of symbols that have an icon and a label. The symbols in the palette are shown as icons that can be dragged onto the diagram. This control allows users to add symbols to a palette, and save or load the palette whenever necessary. It provides a way to classify and maintain symbols. It also provides a preview of symbols during drag and drop operations.
 
 
 
@@ -64,7 +64,7 @@ The PaletteGroupBar control provides a way for users to drag symbols onto a diag
 
 The PaletteGroupView control provides an easy way to serialize a symbol palette to and from a resource file of a form. At design time, users can attach a symbol palette to the PaletteGroupView control in the form. Selecting PaletteGroupView and clicking the Palette property in the Visual Studio .NET Properties window will open a standard Open File dialog, which allows the user to select a symbol palette file that has been created with the Symbol Designer.
 
-It displays the symbol models belonging to a symbol palette in the GroupView control of Essential® Tools for Windows Forms. It contains a list of icons and labels that can be hosted in the PaletteGroupBar control. The symbol models can be dragged from this control and dropped onto the diagram. It also provides preview of symbols during drag-and-drop operation.
+It displays the symbol models belonging to a symbol palette in the GroupView control of Essential® Tools for Windows Forms. It contains a list of icons and labels that can be hosted in the PaletteGroupBar control. The symbol models can be dragged from this control and dropped onto the diagram. It also provides a preview of symbols during drag and drop operation.
 
 ### PropertyEditor
 
@@ -86,7 +86,7 @@ The DocumentExplorer control allows you to visualize the details of the various 
 
 
 
-## React Diagram in Windows Forms Application
+## WinForms Diagram in Windows Forms Application
 
 This section helps you to create the Diagram, PaletteGroupBar, PaletteGroupView, Overview, PropertyEditor, and DocumentExplorer controls through the designer and code in a Windows Forms application.
 
@@ -108,7 +108,7 @@ To create a Diagram control using the designer:
 
 
 
-The Diagram control will be added to the designer and its dependent assemblies will be added to the project once you dropped it to the Designer Form window.
+The Diagram control will be added to the designer and its dependent assemblies will be added to the project once you drag and drop it onto the Designer Form.
 
 
 
@@ -229,7 +229,7 @@ Me.Controls.Add(diagram)
 
 #### Adding Nodes to the Model
 
-The Diagram control has a list of predefined basic shapes ([nodes](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Model.html#Syncfusion_Windows_Forms_Diagram_Model_Nodes)) which help you to draw diagrams according to your requirement. You can create your own shapes by inheriting the existing shape’s class and the Symbol Designer utility tool which is shipped with the React Diagram package. 
+The Diagram control has a list of predefined basic shapes ([nodes](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Model.html#Syncfusion_Windows_Forms_Diagram_Model_Nodes)) which help you to draw diagrams according to your requirement. You can create your own shapes by inheriting the existing shape’s class and the Symbol Designer utility tool which is shipped with the WinForms Diagram package. 
 
 The following code creates a rectangular node and adds it to the model.
 
@@ -498,7 +498,7 @@ To create a [PaletteGroupBar](https://help.syncfusion.com/cr/windowsforms/Syncfu
 
 
 
-The PaletteGroupBar control will be added to the designer and its dependent assemblies will be added to the project once you dropped it to the Designer Form window.
+The PaletteGroupBar control will be added to the designer and its dependent assemblies will be added to the project once you drag and drop it onto the Designer Form.
 
 
 
@@ -597,7 +597,7 @@ To create a [PaletteGroupView](https://help.syncfusion.com/cr/windowsforms/Syncf
 
 
 
-The PaletteGroupView control will be added to the designer and its dependent assemblies will be added to the project once you dropped it to the Designer Form window.
+The PaletteGroupView control will be added to the designer and its dependent assemblies will be added to the project once you drag and drop it onto the Designer Form.
 
 
 
@@ -691,7 +691,7 @@ To create an Overview control using the designer:
 
 
 
-The Overview control will be added to the designer and its dependent assemblies will be added to the project once you dropped it to the Designer Form window.
+The Overview control will be added to the designer and its dependent assemblies will be added to the project once you drag and drop it onto the Designer Form.
 
 
 
@@ -775,7 +775,7 @@ To create a [PropertyEditor](https://help.syncfusion.com/cr/windowsforms/Syncfus
 
 
 
-The PropertyEditor control will be added to the designer and its dependent assemblies will be added to the project once you dropped it to the Designer Form window.
+The PropertyEditor control will be added to the designer and its dependent assemblies will be added to the project once you drag and drop it onto the Designer Form.
 
 
 
@@ -861,7 +861,7 @@ To create a [DocumentExplorer](https://help.syncfusion.com/cr/windowsforms/Syncf
 
 
 
-The DocumentExplorer control will be added to the designer and its dependent assemblies will be added to the project once you dropped it to the Designer Form window.
+The DocumentExplorer control will be added to the designer and its dependent assemblies will be added to the project once you drag and drop it onto the Designer Form.
 
 
 
@@ -931,47 +931,47 @@ Diagram Builder application allows the user to create new diagrams and also modi
 
 The main difference between the diagram builder and symbol palette is as follows: 
 
-* In Diagram Builder, user creates diagram documents 
+* In Diagram Builder, users create diagram documents 
 * In Symbol Designer, user creates palettes. 
 
 Software Path
 
 "[Installed Drive]:\Program Files\Syncfusion\Essential Studio\{{ site.releaseversion }}\Utilities\Diagram\Windows Forms\DiagramBuilder"
 
-1. Overview Control
+**1. Overview Control**
 
 Overview Control provides a perspective view of a diagram model, and allows users to dynamically pan and zoom the diagrams. The control features a view port window that can be moved and / or resized using the mouse to modify the diagrams' origin and magnification properties at run-time. The properties of this control is discussed in the Overview Control topic.
 
-2. Palette GroupBar and GroupView
+**2. Palette GroupBar and GroupView**
 
 The PaletteGroupBar control provides a way for users to drag and drop symbols onto a diagram. It is based on the Syncfusion® Essential® Tools GroupBar control. Each symbol palette loaded in thePaletteGroupBar occupies a panel that can be selected by a bar button. The bar button is labeled with the name of the symbol palette. The symbols in the palette are shown as icons that can be dragged and dropped onto the diagram. This control allows users to add symbols to a palette, and save or load the palette whenever necessary. It provides a way to classify and maintain symbols.
 
 The PaletteGroupView control provides an easy way to serialize a symbol palette to and from the resource file of a form. At design-time, users can attach a symbol palette to a PaletteGroupView control in the form. Selecting the PaletteGroupView and clicking the Palette property in the Visual Studio .NET Properties window will open a standard Open File dialog, which allows the user to select a symbol palette file that has been created with the Symbol Designer.
 For more details about these diagram controls, refer to the Palette GroupBar and GroupView topic.
 
-3. Property Editor
+**3. Property Editor**
 
-The Property Editor in React Diagram displays properties of the currently selected object(s) in the diagram. It is a Windows Forms control that can be added to the Visual Studio .NET Toolbox. It also allows users to set or modify various properties of the objects or the model. The Property Editor provides an easy interface to set and view the various property settings. To know about the control's properties see Property Editor topic.
+The Property Editor in WinForms Diagram displays properties of the currently selected object(s) in the diagram. It is a Windows Forms control that can be added to the Visual Studio .NET Toolbox. It also allows users to set or modify various properties of the objects or the model. The Property Editor provides an easy interface to set and view the various property settings. To know about the control's properties see Property Editor topic.
 
-4. Document Explorer
+**4. Document Explorer**
 
 Document Explorer allows you to visualize the details of the various objects that are added onto the diagram control at run-time. The layers will be listed under the _Layers_ node and other objects like shapes, links, lines and text editor will be listed under _Nodes_ node.
 
-5. Diagram Document
+**5. Diagram Document**
 
 The [DiagramDocument](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DiagramDocument.html#) is a serializable document type that encapsulates the model and view data for the diagram. The grid area of the diagram document is the diagram view object area. The nodes dragged from the PaletteGroupBar will be dropped here.
 
 For more details, see Diagram Grid topic.
 
-Diagram Builder Functionalities
+**Diagram Builder Functionalities**
 
 1. How to Open an Existing Diagram Document
 
-Follow the below steps in order to open an existing diagram document
+   Follow the below steps in order to open an existing diagram document
 
-1. Add OpenFileDialog control to the Form. 
-2. Set the Filter property of OpenFileDialog as React Diagram Palettes|*.edp|Visio Stencils|*.vss; *.vsx|Visio    Drawings(Shapes only)|*.vsd; *.vdx|All files|*.*. 
-3. Add the below code snippet in your button click event.
+   1. Add OpenFileDialog control to the Form. 
+   2. Set the Filter property of OpenFileDialog as WinForms Diagram Palettes|*.edp|Visio Stencils|*.vss; *.vsx|Visio    Drawings(Shapes only)|*.vsd; *.vdx|All files|*.*. 
+   3. Add the below code snippet in your button click event.
 
 {% capture codesnippet9 %}
 {% tabs %}
@@ -1005,7 +1005,7 @@ The diagram1.LoadBinary() method loads the selected diagram file into diagram do
    Below are the steps to save a diagram document.
 
    1.  Add SaveFileDialog control to the Form.
-   2.  Set the Filter property of SaveFileDialog as  React Diagram Files|*.edd|All files|*.*.
+   2.  Set the Filter property of SaveFileDialog as  WinForms Diagram Files|*.edd|All files|*.*.
    3.  Add the following code snippet in your button click event.
 
 {% capture codesnippet10 %}
@@ -1036,13 +1036,13 @@ this.diagram1.SaveBinary(this.FileName);
 
 3. How to print a Diagram Document
 
-Following are the steps to print a diagram document:
+   Following are the steps to print a diagram document:
 
-1. Page Setup
+   1. **Page Setup**
 
-   The Page Setup dialog modifies the [Page Settings](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.View.html#Syncfusion_Windows_Forms_Diagram_View_PageSettings) and [Printer Settings](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.PageSizeControl.html#Syncfusion_Windows_Forms_Diagram_PageSizeControl_PrinterSettings) information for a given document. The user can enable sections of the dialog to manipulate printing, margins, paper orientation, size, source and to show help and network buttons. MinMargins defines the minimum margins a user can select.
+      The Page Setup dialog modifies the [Page Settings](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.View.html#Syncfusion_Windows_Forms_Diagram_View_PageSettings) and [Printer Settings](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.PageSizeControl.html#Syncfusion_Windows_Forms_Diagram_PageSizeControl_PrinterSettings) information for a given document. The user can enable sections of the dialog to manipulate printing, margins, paper orientation, size, source and to show help and network buttons. MinMargins defines the minimum margins a user can select.
 
-   The following code snippet can be used for setting the page set up for diagram document.
+      The following code snippet can be used for setting the page set up for diagram document.
 
 
 
@@ -1067,11 +1067,11 @@ if (dlgPageSetup.ShowDialog() == DialogResult.OK)
    ![Print a Diagram document in WindowsForms Diagram](getting-started_images/windowsforms-diagram-print-document.jpeg)
 
 
-2. Page Borders
+   2. **Page Borders**
 
-   The Page Borders dialog provides an interactive form-based interface, for setting the page borders of a diagram, initializing the dialog's   Syncfusion.Windows.Forms.Diagram.PageBorderDialog. The PageBorderStyle property with the corresponding Syncfusion.Windows.Forms.Diagram.View.PageBorderStyle member of the diagram's view, will let the users to configure the page border settings using the dialog controls.  
+      The Page Borders dialog provides an interactive form-based interface, for setting the page borders of a diagram, initializing the dialog's   Syncfusion.Windows.Forms.Diagram.PageBorderDialog. The PageBorderStyle property with the corresponding Syncfusion.Windows.Forms.Diagram.View.PageBorderStyle member of the diagram's view, will let the users to configure the page border settings using the dialog controls.  
 
-   The following code snippet can be used for setting the page border for diagram document.
+      The following code snippet can be used for setting the page border for diagram document.
 
 
 
@@ -1097,11 +1097,11 @@ if (diagram1 != null && diagram1.Model != null)
 
 
 
-3. Header and Footers
+   3. **Header and Footers**
 
-   The [Header](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Header.html#) and [Footer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Footer.html#) dialog provides an interactive form-based interface for initializing the Header and Footer settings of a diagram. 
+      The [Header](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Header.html#) and [Footer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Footer.html#) dialog provides an interactive form-based interface for initializing the Header and Footer settings of a diagram. 
 
-   The following code snippet can be used for creating the [Header and Footer dialog](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.HeaderFooterDialog.html#). 
+      The following code snippet can be used for creating the [Header and Footer dialog](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.HeaderFooterDialog.html#). 
 
 
 
@@ -1128,13 +1128,13 @@ if (diagram1 != null && diagram1.Model != null)
    ![Header and footer in WindowsForms Diagram](getting-started_images/windowsforms-diagram-header-and-footer.jpeg)
 
 
-4. Print Preview
+   4. **Print Preview**
 
-   It will show a preview of the page which will appear when printed. The Print Preview dialog shows the preview of the page with the following: 
+      It will show a preview of the page which will appear when printed. The Print Preview dialog shows the preview of the page with the following: 
 
-   * Page setup 
-   * Page border set up 
-   * Header and footers in the page
+      * Page setup 
+      * Page border set up 
+      * Header and footers in the page
 
    The following code snippet can be used for creating Print Preview dialog.
 
@@ -1165,11 +1165,11 @@ if (diagram1 != null)
 
 
     
-5. Print
+   5. **Print**
 
-   This option will send the diagram document to the printer.
+      This option will send the diagram document to the printer.
 
-   The following code snippet can be used for sending the document for printing.
+      The following code snippet can be used for sending the document for printing.
 
 
 
@@ -2104,7 +2104,7 @@ diagram.Location = new Point(20, 5);
 
 #### Establishing Database Connectivity
 
-2. You can populate Nodes and Connectors in diagram automatically based on content from database by using binding APIs. To achieve this, you need a table in a database that have 2 columns, one representing ‘Id’ to uniquely identify objects, and one ‘ParentId’ representing relationship with the parent object. The following code example explains how to bind diagram with data from database by initializing the binding properties.
+2. You can populate Nodes and Connectors in diagram automatically based on content from database by using binding APIs. To achieve this, you need a table in a database that has two columns, one representing ‘Id’ to uniquely identify objects, and one ‘ParentId’ representing relationship with the parent object. The following code example explains how to bind diagram with data from database by initializing the binding properties.
 
 {% capture codesnippet11 %}
 {% tabs %}
