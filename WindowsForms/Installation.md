@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Installation in Windows Forms controls
+# Installing Essential Studio for Windows Forms
 
 ## Manual Installation
 
@@ -21,7 +21,7 @@ The following procedure illustrates how to manually install Essential Studio for
 5. Click Next. Then, Select the Installation and Samples Folder window opens.
 6. To install it in the displayed default location, click “Install”.
 7. Select the “Run Dashboard” check box to launch the Dashboard after installing.
-8. Click "Finish". Essential Studio is installed on the system and the Syncfusion Essential Studio [Dashboard](https://help.syncfusion.com/common/essential-studio/dashboard) is launched automatically.
+8. Click **Finish**. Essential Studio is installed on the system, and the Syncfusion Essential Studio [Dashboard](https://help.syncfusion.com/common/essential-studio/overview) is launched automatically.
 
 ## Command Line installation
 

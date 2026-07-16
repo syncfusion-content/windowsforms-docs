@@ -20,7 +20,7 @@ Desktop applications fall into two categories based on the DPI awareness:
 
 ### Non-DPI aware application
 
-Non-DPI aware applications always render at 96 DPI, scale it up to the actual DPI, and leave entire scaling to the operating system. It keeps your application layout intact at the cost of quality - blurred images and more. The operating system applies font scaling and bitmap stretching in this mode.
+Non-DPI aware applications always render at 96 DPI, scale it up to the actual DPI, and leave entire scaling to the operating system. It keeps your application layout intact at the cost of quality - blurred images and more.
 
 Refer to the following DataGrid sample demo screenshot that runs under 192 DPI with blurred text and icons.
 
@@ -138,7 +138,7 @@ To turn your desktop application into DPI-aware and add `app.manifest` file, fol
 
 {% capture codesnippet1 %}
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
   <application xmlns="urn:schemas-microsoft-com:asm.v3">
     <windowsSettings>
@@ -146,7 +146,7 @@ To turn your desktop application into DPI-aware and add `app.manifest` file, fol
     </windowsSettings>
   </application>
 
-{% endhighlight %}
+{% endhighlight xaml %}
 {% endtabs %}
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
@@ -276,5 +276,3 @@ buttonAdv1.Image = imageListAdv1.Images(0)
 #### 200 Scaling
 
 ![Adding images and index](HighDPI_images/DPI_200.png)
-
-

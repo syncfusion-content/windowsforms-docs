@@ -7,7 +7,7 @@ control: .NET Core
 documentation: ug
 ---
 
-# WinForms Applications using .NET Core and Syncfusion<sup>®</sup> WinForms Controls
+# Using Syncfusion WinForms with .NET Core
 
 Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> for Windows Forms provides .NET Core assemblies for building Windows Forms .NET Core applications using Syncfusion<sup>®</sup> Controls. This section explains how to create the project in a .NET Core application and using Syncfusion<sup>®</sup> Windows Forms controls.
 
@@ -68,8 +68,6 @@ We are now going to see a demo on how to add **ButtonAdv** control in WinForms .
 
 ButtonAdv button = new ButtonAdv();
 button.Text = "ButtonAdv";
-button.Location = new System.Drawing.Point(100, 100);
-button.Size = new System.Drawing.Size(200, 30);
 this.Controls.Add(button);
 
 {% endhighlight %}

@@ -81,9 +81,9 @@ You can now add the exported assembly to your Windows Forms application and set 
 
 **Step 1:**
 
-Add the exported assembly (*.dll) as a reference in your Windows Forms project (for example, right-click the project in **Solution Explorer** and choose **Add** → **Reference** → **Browse**, then select the exported DLL).
+Add the exported assembly (*.dll) as a reference in your Windows Forms project (for example, right-click the project in **Solution Explorer** and choose **Add** → **Reference** → **Browse**, select the exported assembly file).
 
-**Note:** Close Theme Studio before referencing the exported DLL to avoid file-lock errors.
+**Note:** Close Theme Studio before referencing the exported assembly file to avoid file locking errors.
 
 ![Attach exported assembly in Windows Forms project](ThemeStudio_images/Export-dialog-theme-studio.png)
 
@@ -93,7 +93,6 @@ Load the theme assembly in `Program.cs` of your application and then initialize 
 
 **C# — Program.cs**
 
-{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 using System;
@@ -127,12 +126,9 @@ namespace ThemeStudioDemo
 }
 {% endhighlight %}
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 **C# — Form1.cs**
 
-{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 using System.Windows.Forms;
@@ -157,12 +153,9 @@ namespace ThemeStudioDemo
 }
 {% endhighlight %}
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 **VB — Program.vb**
 
-{% capture codesnippet3 %}
 {% tabs %}
 {% highlight vb %}
 Imports System
@@ -188,12 +181,9 @@ Module Program
 End Module
 {% endhighlight %}
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 **VB — Form1.vb**
 
-{% capture codesnippet4 %}
 {% tabs %}
 {% highlight vb %}
 Imports System.Windows.Forms
@@ -213,8 +203,6 @@ Public Class Form1
 End Class
 {% endhighlight %}
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 **Step 3:**
 
