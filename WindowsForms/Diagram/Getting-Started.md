@@ -213,7 +213,7 @@ diagram.Model = model
 this.Controls.Add(diagram);
 
 {% endhighlight %}
-{% highlight vb%}
+{% highlight vb %}
 
 'Add the Diagram control to the Diagram Form
 Me.Controls.Add(diagram)
