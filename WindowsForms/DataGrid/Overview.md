@@ -272,4 +272,4 @@ The [`Windows Forms SfDataGrid`](https://support.syncfusion.com/kb/desktop/secti
 
 Similar to the [`Knowledge Base`](https://support.syncfusion.com/kb/desktop/section/952), the [`forum`](https://www.syncfusion.com/forums/windowsforms) section also contains responses to questions that other customers have asked us in the past.
 
-N> Looking for the full WinForms Data Grid component overview, features, pricing, and documentation? Visit the [WinForms Data Grid](https://www.syncfusion.com/winforms-ui-controls/datagrid) page.
+N> Looking for the full WinForms Data Grid component overview, features, and pricing? Visit the [WinForms Data Grid](https://www.syncfusion.com/winforms-ui-controls/datagrid) page.

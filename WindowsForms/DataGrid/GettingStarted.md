@@ -566,4 +566,4 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-N> Looking for the full WinForms Data Grid component overview, features, pricing, and documentation? Visit the [WinForms Data Grid](https://www.syncfusion.com/winforms-ui-controls/datagrid) page.
+N> Looking for the full WinForms Data Grid component overview, features, and pricing? Visit the [WinForms Data Grid](https://www.syncfusion.com/winforms-ui-controls/datagrid) page.

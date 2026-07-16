@@ -11,7 +11,7 @@ documentation: ug
 
 ### Populating the data
 
-*	[WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) can be populated with the nodes and connectors based on the information provided from an external data source.
+*	[WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) can be populated with the nodes and connectors based on the information provided from an external data source.
 *	Diagram exposes its specific data-related properties, which allow you specify the data source fields from where the node information has to be retrieved.
 
 To explore those properties, refer to the [Data source settings](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Binding.html).
