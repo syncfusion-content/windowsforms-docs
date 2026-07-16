@@ -9,7 +9,7 @@ documentation: ug
 
 # Rulers in Windows Forms Diagram
 
-Rulers can be enabled by setting the ShowRulers property for the [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) control. The rulers will automatically inherit the MeasurementUnit set for the diagram model and get converted accordingly.
+Rulers can be enabled by setting the ShowRulers property for the [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) control. The rulers will automatically inherit the MeasurementUnit set for the diagram model and get converted accordingly.
 
 The height of the ruler can be set through RulersHeight property.
 
@@ -185,4 +185,4 @@ Sample diagram is as follows,
 
 ![Change HRuler Minor lines colors](Rulers_images/Rulers_img3.jpeg)
 
-N> Looking for the full WinForms Diagram component overview, features, pricing, and documentation? Visit the [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) page.
+N> Looking for the full WinForms Diagram component overview, features, and pricing? Visit the [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) page.

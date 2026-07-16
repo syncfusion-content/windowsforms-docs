@@ -9,7 +9,7 @@ documentation: ug
 
 # Diagram Grid in Windows Forms Diagram
 
-The [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) grid is drawn with evenly spaced points that provides a visual guidance to the user.  
+The [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) grid is drawn with evenly spaced points that provides a visual guidance to the user.  
 
 #### Behavior
 
@@ -88,4 +88,4 @@ diagram1.View.Grid.SnapToGrid = true;
 
 ![Diagram-Gridlines](Diagram-Grid_images/Diagram-Grid_img1.jpeg)
 
-N> Looking for the full WinForms Diagram component overview, features, pricing, and documentation? Visit the [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) page.
+N> Looking for the full WinForms Diagram component overview, features, and pricing? Visit the [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) page.

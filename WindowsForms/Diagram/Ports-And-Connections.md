@@ -16,7 +16,7 @@ Port is an object used to establish a connection between the node and the link.
 
 ### Central Port
 
-By default, the central port for a [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) is enabled using the EnableCentralPort property available for the node. 
+By default, the central port for a [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) is enabled using the EnableCentralPort property available for the node. 
 
 
 

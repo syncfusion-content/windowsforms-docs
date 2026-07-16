@@ -9,7 +9,7 @@ documentation: ug
 
 # Measurement Units in Windows Forms Diagram
 
-The [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) control provides a multiple logical unit of measurement option. The following are the measurement units that are supported by the Diagram control.
+The [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) control provides a multiple logical unit of measurement option. The following are the measurement units that are supported by the Diagram control.
 
 * Pixel
 * Point
@@ -63,7 +63,7 @@ The following code example illustrates to set measurement unit for the diagram.
 
 ### Custom Measurement unit
 
-The MeasureUnits contain constant values to apply in our [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram). So, you can use MeasureUnits.Custom to set the customized unit and specify the Custom Measurement unit value by using the Syncfusion.Windows.Forms.Diagram.Model.CustomUnitValue property.   
+The MeasureUnits contain constant values to apply in our [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram). So, you can use MeasureUnits.Custom to set the customized unit and specify the Custom Measurement unit value by using the Syncfusion.Windows.Forms.Diagram.Model.CustomUnitValue property.   
 The following code example illustrates how to set custom measurement unit for the Diagram control.
  
 {% tabs %}

@@ -11,7 +11,7 @@ documentation: ug
 
 The controls supported by Essential® Diagram are as follows.
 
-The controls associated with the [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) control are illustrated in the following image.
+The controls associated with the [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) control are illustrated in the following image.
 
 
 
