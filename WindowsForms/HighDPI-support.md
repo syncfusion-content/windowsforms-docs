@@ -136,7 +136,6 @@ To turn your desktop application into DPI-aware and add `app.manifest` file, fol
 
 4. When setting the `dpiAware` to true, the control will be drawn using the current DPI value. In this, the font size and image size will be automatically increased. The high DPI controls can be enabled by the following code snippet.
 
-{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -146,10 +145,8 @@ To turn your desktop application into DPI-aware and add `app.manifest` file, fol
     </windowsSettings>
   </application>
 
-{% endhighlight xaml %}
+{% endhighlight %}
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 
 5. Most of the Syncfusion controls support high DPI through a manifest file. But the following Syncfusion control provides the high DPI support by adding both manifest file and enabling the [DpiAware](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ScrollControl.html#Syncfusion_Windows_Forms_ScrollControl_DpiAware) property.
@@ -159,7 +156,7 @@ To turn your desktop application into DPI-aware and add `app.manifest` file, fol
   * GridDataBoundGrid
   * GridListControl
 
-{% capture codesnippet2 %}
+
 {% tabs %}
 {% highlight c# %}
 
@@ -192,8 +189,6 @@ gridListControl1.Grid.DpiAware = True
 
 {% endhighlight %}
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 
 ## Automatically change images based on DPI through ImageListAdv component
@@ -241,7 +236,6 @@ The steps below illustrate the setting of image for a ButtonAdv using ImageListA
 
 8. Now map the desired image from the [`Images`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ImageListAdv.html#Syncfusion_Windows_Forms_Tools_ImageListAdv_Images) collection to the ButtonAdv control using its [`Image`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ButtonAdv.html) property.
 
-{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -255,8 +249,6 @@ buttonAdv1.Image = imageListAdv1.Images(0)
 
 {% endhighlight %}
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 
 9. Run the application and the image for the ButtonAdv will be displayed as per the image set for different DPI scaling as shown below.
