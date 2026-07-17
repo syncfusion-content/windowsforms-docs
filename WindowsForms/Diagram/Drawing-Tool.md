@@ -42,5 +42,3 @@ diagram1.Controller.ActivateTool("OrgLineConnectorTool")
 Please refer to the Connectors sample from Windows Forms control Panel and find navigation path for the Connector sample as link.
 
 Sample : Windows Forms Control Panel -> Diagram -> Getting Started -> Connectors
-
-N> Looking for the full WinForms Diagram component overview, features, and pricing? Visit the [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) page.

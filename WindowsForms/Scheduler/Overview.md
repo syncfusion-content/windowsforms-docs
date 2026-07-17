@@ -32,4 +32,4 @@ The [WinForms Scheduler](https://www.syncfusion.com/scheduler-sdk/winforms-sched
 * Recurrence appointment: Supports schedule recurring appointments to repeat daily, weekly, monthly, or yearly.
 * Touch support: Completely supports swiping, panning, zooming, and more.
 
-N> You can also explore our [WinForms Scheduler example](https://github.com/syncfusion/winforms-demos/tree/master/schedulecontrol) that shows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar. Looking for the full WinForms Scheduler component overview, features, pricing, and documentation? Visit the [WinForms Scheduler](https://www.syncfusion.com/scheduler-sdk/winforms-scheduler) page.
+N> You can also explore our [WinForms Scheduler example](https://github.com/syncfusion/winforms-demos/tree/master/schedulecontrol) that shows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.

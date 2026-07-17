@@ -31,5 +31,3 @@ The grid grouping control is a very powerful data grid with built-in support for
 * Expression fields: Supports computing and displaying the values based on another columns value.
 * Serialization: Supports serializing the grid data to Binary, SOAP, and XML format and vice versa.
 * Touch support: Completely supports resizing, dragging-dropping a column, sorting, filtering, grouping, etc. in touch devices.
-
-N> Looking for the full WinForms Data Grid component overview, features, and pricing? Visit the [WinForms Data Grid](https://www.syncfusion.com/winforms-ui-controls/datagrid) page.

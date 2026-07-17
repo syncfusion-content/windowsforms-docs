@@ -757,4 +757,4 @@ The C# WinForms Calendar Scheduler control supports creating the recurring appoi
 
 [Create the recurrence appointment in WinForms Calendar Scheduler control ](time-interval)
 
-N> You can also explore our [WinForms Scheduler example](https://github.com/syncfusion/winforms-demos/tree/master/schedulecontrol) that shows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar. Looking for the full Winforms Scheduler component overview, features, and pricing? Visit the [WinForms Scheduler](https://www.syncfusion.com/scheduler-sdk/winforms-scheduler) page.
+N> You can also explore our [WinForms Scheduler example](https://github.com/syncfusion/winforms-demos/tree/master/schedulecontrol) that shows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.
