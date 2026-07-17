@@ -13,7 +13,7 @@ Syncfusion<sup>®</sup> publishes its Visual Studio extension on the Visual Stud
 
 [Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.WindowsVSExtensions)
 
-[Visual Studio 2019 or lower](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.Windows-Extensions)
+[Visual Studio 2019 or lower](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.Windows-Extensions) 
 
 ## Prerequisites
 
