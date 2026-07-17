@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Add a Syncfusion References| WinForms | Syncfusion
-description: Syncfusion Reference Manger extension is add-in to add the Syncfusion references into the WinForms application
+description: Syncfusion Reference Manager extension is an add-in that adds the Syncfusion references into the WinForms application
 platform: windowsforms
 control: Syncfusion Extensions
 documentation: ug
@@ -15,7 +15,7 @@ N> This Reference Manager can be applied to a project for Syncfusion® assembly 
 
 Follow the given steps to add the Syncfusion® references in Visual Studio:
 
-> Before use the Syncfusion® WinForms Reference Manager, check whether the **WinForms Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by going to Extensions -> Manage Extensions -> Installed for Visual Studio 2019 or later and for Visual Studio 2017 or lower by going to Tools -> Extensions and Updates -> Installed. If this extension not installed, please install the extension by follow the steps from the [download and installation](https://help.syncfusion.com/windowsforms/visual-studio-integration/download-and-installation) help topic.
+> Before using the Syncfusion® WinForms Reference Manager, check whether the **WinForms Extensions - Syncfusion** is installed or not in the Visual Studio Extension Manager by going to Extensions -> Manage Extensions -> Installed for Visual Studio 2019 or later, and for Visual Studio 2017 or lower, by going to Tools -> Extensions and Updates -> Installed. If this extension is not installed, please install the extension by following the steps from the [download and installation](https://help.syncfusion.com/windowsforms/visual-studio-integration/download-and-installation) help topic.
 
 1. Open a new or existing **WinForms** application.
 
@@ -35,33 +35,33 @@ Follow the given steps to add the Syncfusion® references in Visual Studio:
 
    ![Syncfusion Reference Manager add-in](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img1.png)
 
-3. The Syncfusion Reference Manager Wizard that contains the list of Syncfusion® WinForms controls that are loaded.
+3. The Syncfusion Reference Manager Wizard contains the list of Syncfusion® WinForms controls that are loaded.
 
-   ![Syncfusion Reference Manger Wizard](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img2.png)
+   ![Syncfusion Reference Manager Wizard](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img2.png)
 
-   **Platform Selection:** If launched the Syncfusion® Reference Manager from Console/Class Library project, Platform selection option will be appeared as option in Syncfusion® Reference Manager. Choose the required platform. 
+   **Platform Selection:** If you launch the Syncfusion® Reference Manager from a Console/Class Library project, the Platform selection option will appear as an option in Syncfusion® Reference Manager. Choose the required platform. 
 
-   ![Platform selection option in Syncfusion Reference Manger](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img3.png)
+   ![Platform selection option in Syncfusion Reference Manager](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img3.png)
 
-   **Assembly From:** Choose the assembly location, from where the assembly is added to the project.
+   **Assembly From:** Choose the assembly location from which the assembly is added to the project.
 
-   ![Assembly location option in Syncfusion Reference Manger](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img4.png)
+   ![Assembly location option in Syncfusion Reference Manager](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img4.png)
 
    N> The GAC option will not be available, if you have selected WinForms (.NET 8.0, .NET 7.0, .NET 6.0, .NET 5.0, and .NET Core 3.1) application in Visual Studio 2019 or later.
 
    **Version:** Choose the build version to add the corresponding version assemblies to the project.
 
-   ![Assembly location option in Syncfusion Reference Manger](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger1-img4.png)
+   ![Assembly location option in Syncfusion Reference Manager](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger1-img4.png)
 
    
-   N> Window Forms (.NET Core 3.1 and .NET 5.0) application in Visual Studio 2019 is supported from 18.2.0.44 version and .NET 6.0 application in Visual Studio 2022 is supported from 19.4.0.38 and .NET 7.0 application in Visual Studio 2022 is supported from 20.4.0.38 and .NET 8.0 application in Visual Studio 2022 is supported from 23.2.4. Version combobox is not visible for nuget option.
+   N> WinForms (.NET Core 3.1 and .NET 5.0) application in Visual Studio 2019 is supported from version 18.2.0.44, .NET 6.0 application in Visual Studio 2022 is supported from 19.4.0.38, .NET 7.0 application in Visual Studio 2022 is supported from 20.4.0.38, and .NET 8.0 application in Visual Studio 2022 is supported from 23.2.4. The Version combobox is not visible for the NuGet option.
   
 
-4. Choose the required controls that you want to include in the project. Then, click Done to add the required assemblies for the selected controls into the project. The following screenshot shows the list of required assemblies for the selected controls to be added.
+4. Choose the required controls that you want to include in the project. Then, click **Done** to add the required assemblies for the selected controls into the project. The following screenshot shows the list of required assemblies for the selected controls to be added.
 
    ![Syncfusion Reference Manager new assemblies add information dialog](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img5.png)
 
-5. Click **OK**. The listed Syncfusion assemblies are added to project. Then it notifies “Syncfusion assemblies have been added successfully” in Visual Studio status bar.
+5. Click **OK**. The listed Syncfusion assemblies are added to the project. Then it notifies “Syncfusion assemblies have been added successfully” in the Visual Studio status bar.
 
    ![Syncfusion Reference Manager success status in Visual Studio status bar](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img6.png)
 

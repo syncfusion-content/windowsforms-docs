@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Downloand and Installation | WinForms | Syncfusion
-description: this section provide the information about how to download and install the extensions in Visual Studio.
+title: Download and Installation | WinForms | Syncfusion
+description: This section provides the information about how to download and install the extensions in Visual Studio.
 platform: windowsforms
 control: Syncfusion Extensions
 documentation: ug
@@ -23,19 +23,19 @@ The following software prerequisites must be installed to use the Syncfusion<sup
 
 ## Install through the Visual Studio Manage Extensions
 
-The steps below assist you to how to install the Syncfusion WinForms extensions from **Visual Studio Manage Extensions**.
+The steps below illustrate how to install the Syncfusion WinForms extensions from **Visual Studio Manage Extensions**.
 
-1. Open the Visual Studio.
+1. Open Visual Studio.
 
-2. Navigate to **Extension ->Manage Extensions** and open the Manage Extensions.
+2. Navigate to **Extensions > Manage Extensions** to open the Manage Extensions dialog.
 
-     N>  In Visual Studio 2017 or lower, go to Tools -> Extensions and Updates
+     N>  In Visual Studio 2017 or lower, go to Tools > Extensions and Updates.
 
 3. On the left, click the **Online** tab and type **"Syncfusion Windows"** in the **search box**.
 
     ![Online-Manage-Extension-window](Download-Installation-Images/Online-Manage-Extension-window.png)
 
-4. Click the **Download** button in the **“WinForms Extensions - Syncfusion”**.
+4. Click the **Download** button on the **“WinForms Extensions - Syncfusion”** listing.
 
 5. After downloading the extensions, close all instances of Visual Studio to begin the installation process. You will then see the following VSIX installation prompt.
 
@@ -45,7 +45,7 @@ The steps below assist you to how to install the Syncfusion WinForms extensions 
 
 7. After the installation is complete, open Visual Studio.
 
-8. Now, under the menu **Extensions**, you can use the Syncfusion extensions from the Visual Studio.
+8. Now, under the **Extensions** menu, you can use the Syncfusion extensions in Visual Studio.
 
     ![SyncfusionMenu](Download-Installation-Images/SyncfusionMenu.png)
 
@@ -69,7 +69,7 @@ The steps below illustrate how to download and install the Syncfusion Windows ex
 
 4. Click the **Modify** button.
 
-5. After the installation is complete, open Visual Studio. You can now use Syncfusion extensions from the Visual Studio under the **Extensions** menu.
+5. After the installation is complete, open Visual Studio. You can now use Syncfusion extensions from the **Extensions** menu in Visual Studio.
 
      ![SyncfusionMenu](Download-Installation-Images/SyncfusionMenu.png)
 
