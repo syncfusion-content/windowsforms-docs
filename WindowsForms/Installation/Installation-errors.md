@@ -32,7 +32,7 @@ You are attempting to use a Trial unlock key to unlock the licensed installer.
 
 ### Suggested solution
 
-Only a licensed unlock key can unlock a licensed installer. So, to unlock the Licensed installer, use the Licensed unlock key. To generate the licensed unlock key, refer to [this](https://www.syncfusion.com/kb/2326) article. You can retrieve the licensed unlock key from your registered account's [License & Downloads](https://www.syncfusion.com/account/downloads) page.
+Only a licensed unlock key can unlock a licensed installer. So, to unlock the Licensed installer, use the Licensed unlock key. To generate the licensed unlock key, refer to [this](https://www.syncfusion.com/kb/2326) article.
 
 
 ## License has expired
@@ -86,7 +86,7 @@ The following are possible causes of this error:
 You can choose from the options listed below. 
 
 1. You can get a new license [here](https://www.syncfusion.com/sales/products). 
-2. Contact your account administrator. To find the administrator of your Syncfusion account, sign in to the [Syncfusion account](https://www.syncfusion.com/account) and check the **Account Settings** page, where the account owner is listed.
+2. Contact your account administrator.
 3. Send an email to <clientrelations@syncfusion.com> to request a license. 
 4. You can reach out to our sales team by emailing <sales@syncfusion.com>.
 

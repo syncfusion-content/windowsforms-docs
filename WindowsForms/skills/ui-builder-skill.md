@@ -72,7 +72,7 @@ apm --version
 
 ### Install the Syncfusion® Windows Forms UI Builder package using APM
 
-Use the APM CLI to install the WinForms UI Builder skill for your preferred environment. The `-t` flag selects the deployment target. Run the command from your project root:
+Use the APM CLI to install the WinForms UI Builder skill for your preferred environment:
 
 {% tabs %}
 {% highlight bash tabtitle="Copilot" %}
@@ -188,7 +188,7 @@ Follow these guidelines to get the most out of UI Builder and ensure high-qualit
 Any Skills-compatible agent that reads local skill files (Code Studio, VS Code, Cursor, etc.).
 
 **Are skills loaded automatically?**  
-Yes. Supported agents automatically load relevant skills based on your query. To disable automatic loading, deselect the skill in the agent's skill manager.
+Yes. Supported agents automatically load relevant skills based on your query.
 
 **Can I customize the generated styles?**
 Yes — the generated Windows Forms controls include clear integration points for style adjustments.

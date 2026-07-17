@@ -22,10 +22,6 @@ documentation: ug
 
 Syncfusion license key validation in CI services ensures that Syncfusion Essential Studio components are properly licensed during CI processes. Validating the license key at the CI level can prevent licensing errors during deployment. Set up the CI process to fail when the license key validation fails by surfacing a non-zero exit code from the validation script.
 
-This feature is supported from version 16.2.0.41 of Essential Studio and later. From v34.1.29 onwards, the platform identifier changed from `WindowsForms` to `UIComponent`; this is a breaking change for the validator script's `/platform:` argument.
-
-The PowerShell validator returns exit code `0` on success and a non-zero exit code on failure; the CI pipeline should treat any non-zero exit as a build failure.
-
 The following sections show how to validate the Syncfusion license key in CI services.
 
 * Download and extract the `LicenseKeyValidator.zip` utility from the following link: [LicenseKeyValidator](https://s3.amazonaws.com/files2.syncfusion.com/Installs/LicenseKeyValidation/LicenseKeyValidator.zip). Extract the contents to a known location, for example `D:\LicenseKeyValidator`.

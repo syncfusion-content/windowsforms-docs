@@ -107,37 +107,6 @@ The steps below show how to install Essential Studio for Windows Forms Web Insta
 
     ![Control Panel](images/Step-by-Step-Installation_img19.png)
 	
-	
-	
-After installation, you can register your Syncfusion license key in your application as described in the [Licensing overview](https://help.syncfusion.com/windowsforms/licensing/overview).
-
-## Silent Installation
-
-The Syncfusion Essential Studio for Windows Forms Web Installer supports installation and uninstallation via the command line. The command prompt must be run as Administrator.
-
-The following arguments are available:
-
-| Argument | Required | Description |
-|----------|----------|-------------|
-| `/Install silent` | Yes | Specifies that the installer should run in silent mode. |
-| `/UNLOCKKEY:"<key>"` | Yes | The product unlock key. |
-| `/log "<path>"` | No | Path to the log file. |
-| `/InstallPath:<path>` | No | Location to install. |
-| `/InstallSamples:{true/false}` | No | Whether to install samples. |
-| `/InstallAssemblies:{true/false}` | No | Whether to install assemblies. |
-| `/InstallToolbox:{true/false}` | No | Whether to configure the Visual Studio toolbox. |
-| `/uninstall silent` | Yes (for uninstall) | Specifies that the installer should uninstall in silent mode. |
-
-**Example (install):**
-
-`"path\to\syncfusionessentialwindowsformswebinstaller_x.x.x.x.exe" /Install silent /UNLOCKKEY:"product unlock key" /log "C:\Temp\EssentialStudio_WebInstaller.log"`
-
-**Example (uninstall):**
-
-`"path\to\syncfusionessentialwindowsformswebinstaller_x.x.x.x.exe" /uninstall silent`
-
-N> The installer returns exit code `0` on success and a non-zero exit code on failure. The log file specified by `/log` records the installation progress and any errors.
-
 ## Uninstallation
 
 Syncfusion Windows Forms installer can be uninstalled in two ways.
@@ -156,7 +125,7 @@ Syncfusion provides the option to uninstall products of the same version directl
 	
 **Option 2: Uninstall the Windows Forms from Windows Control Panel**  
 	
-You can uninstall all the installed products by selecting the **Syncfusion Essential Studio {version}** entry (element 1 in the below screenshot) from the Windows control panel, or you can uninstall Windows Forms alone by selecting the **Syncfusion Essential Studio for Windows Forms {version}** entry (element 2 in the below screenshot) from the Windows control panel. The Essential Studio entry removes all Syncfusion products installed in the same version, while the per-product entry only removes the Windows Forms setup.
+You can uninstall all the installed products by selecting the **Syncfusion Essential Studio {version}** entry (element 1 in the below screenshot) from the Windows control panel, or you can uninstall Windows Forms alone by selecting the **Syncfusion Essential Studio for Windows Forms {version}** entry (element 2 in the below screenshot) from the Windows control panel.
 
 ![Control Panel](images/Step-by-Step-Installation_img22.png)
 	

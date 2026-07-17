@@ -153,7 +153,7 @@ After installation, manage Syncfusion<sup style="font-size:70%">&reg;</sup> Agen
 
 ### List Skills
 
-View all installed skills in your current project or global environment. Use this command to discover the exact `<skill-name>` values used by the other commands:
+View all installed skills in your current project or global environment:
 
 {% tabs %}
 {% highlight bash tabtitle="NPM" %}
@@ -165,7 +165,7 @@ npx skills list
 
 ### Remove a Skill
 
-Uninstall a specific skill from your environment. Run `npx skills list` first to confirm the exact name to pass:
+Uninstall a specific skill from your environment:
 
 {% tabs %}
 {% highlight bash tabtitle="NPM" %}
@@ -213,7 +213,7 @@ Yes. Once installed, supported agents automatically detect and load relevant ski
 
 **Skills are not being loaded**
 
-Verify that skills are installed in the correct agent directory (for example, `.agents/skills/`), confirm with `npx skills list`, restart the IDE (or run the **Reload Window** command), and confirm that the agent supports external skill files. Check the agent's log output for the location of any skill-load error messages.
+Verify that skills are installed in the correct agent directory (for example, `.agents/skills/`), confirm with `npx skills list`, restart the IDE (or run the **Reload Window** command), and confirm that the agent supports external skill files.
 
 ## See also
 

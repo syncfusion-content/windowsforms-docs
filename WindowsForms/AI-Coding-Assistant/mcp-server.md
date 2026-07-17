@@ -51,10 +51,10 @@ Before you can invoke the `SyncfusionWinFormsAssistant` MCP server, you need to 
 - **npm package name**: `@syncfusion/winforms-assistant`
 - **Type**: stdio (standard input/output transport)
 - **Command**: npx
-- **Arguments**: `["-y", "@syncfusion/winforms-assistant@latest"]`
+- **Arguments**: -y
 - **Server name**: SyncfusionWinFormsAssistant
 
-You need to add your [Syncfusion API key](https://syncfusion.com/account/api-key) as an env parameter in the configuration file. The `Syncfusion_API_Key` variable authenticates requests from the MCP server to Syncfusion's documentation service:
+You need to add your [Syncfusion API key](https://syncfusion.com/account/api-key) as an env parameter in the configuration file:
 
 ```json
 "env": {
@@ -103,7 +103,6 @@ Below are setup instructions for popular MCP clients:
 
 ### Visual Studio (GitHub Copilot MCP)
 
-* MCP server support requires Visual Studio 2022 or later.
 * To configure an MCP server for a specific workspace, you can create a `.vs/mcp.json` file in your workspace folder.
 
 ```json
@@ -124,13 +123,13 @@ Below are setup instructions for popular MCP clients:
 }
 ```
 
-* After updating the mcp.json configuration, open the GitHub Copilot Chat window. Click the Ask arrow, then select **Agent** mode (Ask/Edit modes do not expose MCP tools).
+* After updating the mcp.json configuration, open the GitHub Copilot Chat window. Click the Ask arrow, then select **Agent**.
 * Select the [SyncfusionWinFormsAssistant](https://www.npmjs.com/package/@syncfusion/winforms-assistant) from the tools section.
 * For more details, refer to the official [Visual Studio documentation](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022).
 
 ### Cursor
 
-To configure an MCP server for a specific workspace, you can create a .cursor/mcp.json file in your workspace folder. After saving the file, restart Cursor and confirm the server appears under **Settings → MCP**.
+To configure an MCP server for a specific workspace, you can create a .cursor/mcp.json file in your workspace folder.
 
 ```json
 {
@@ -174,7 +173,7 @@ For more details, refer to the [Cursor documentation](https://cursor.com/docs/co
 }
 ```
 
-* Click OK and Apply. Verify the server is listed under **Settings → Tools → AI Assistant → Model Context Protocol (MCP)**.
+* Click OK and Apply.
 
 For further assistance, see the [JetBrains documentation](https://www.jetbrains.com/help/ai-assistant/mcp.html#connect-to-an-mcp-server).
 
@@ -231,7 +230,7 @@ Product support is available through the following mediums.
 * [Support ticket](https://support.syncfusion.com/support/tickets/create) - Guaranteed Response in 24 hours \| Unlimited tickets \| Holiday support
 * [Community forum](https://www.syncfusion.com/forums/windowsforms)
 * [Request feature or report bug](https://www.syncfusion.com/feedback/winforms)
-
+* Live Chat
 ## See also
 
 * [Syncfusion Windows Forms Documentation](https://help.syncfusion.com/windowsforms/overview)
