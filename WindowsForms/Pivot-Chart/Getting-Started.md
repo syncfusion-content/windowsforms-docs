@@ -16,29 +16,29 @@ This section provides an overview for working with the pivot chart for WinForms.
 
 ## Assembly deployment
 
-Refer to [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#pivot-chart) section to get the list of assemblies or NuGet package that should be added as reference to use the pivot chart control in any application.
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#pivot-chart) section to get the list of assemblies or NuGet packages that should be added as reference to use the pivot chart control in any application.
 
 ## Creating application with pivot chart
 
-This section explains how to add the pivot chart control through designer, code, and Syncfusion® Reference Manager.
+This section explains how to add the pivot chart control through the designer, code, and Syncfusion® Reference Manager.
 
 ### Adding control via designer
 
-The pivot chart control can be added through designer by following the given steps:
+The pivot chart control can be added through the designer by following the given steps:
 
 1. Create a new **Windows Forms Application** in Visual Studio.
 
 2. Drag and drop the pivot chart control from the toolbox into the designer page.
 
-![GettingStarted_img1](Getting-Started_images/GettingStarted_img1.png)
+![WinForms PivotChart control via designer](Getting-Started_images/GettingStarted_img1.png)
 
 3. Then, the pivot chart control will be successfully added to the application along with the required libraries.
 
-![GettingStarted_img2](Getting-Started_images/GettingStarted_img2.png)
+![WinForms PivotChart control added to the application](Getting-Started_images/GettingStarted_img2.png)
 
 ### Adding control via code
 
-The pivot chart control can be added through code-behind by following the given steps:
+The pivot chart control can be added through the code-behind by following the given steps:
 
 1. Create a new **Windows Forms Application** in Visual Studio.
 
@@ -58,20 +58,20 @@ The pivot chart control can be added through code-behind by following the given 
 
 {% highlight c# %}
 
-//Initialize a new PivotChart. 
+//Initialize a new PivotChart.
 Syncfusion.Windows.Forms.PivotChart.PivotChart pivotChart1 = new Syncfusion.Windows.Forms.PivotChart.PivotChart();
 
-// Add the PivotChart control to the parent control. 
+//Add the PivotChart control to the parent control.
 this.Controls.Add(pivotChart1);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-'Initialize a new PivotChart. 
+'Initialize a new PivotChart.
 Dim pivotChart1 As New Syncfusion.Windows.Forms.PivotChart.PivotChart()
 
-' Add the PivotChart control to the parent control. 
+'Add the PivotChart control to the parent control.
 Me.Controls.Add(pivotChart1)
 
 {% endhighlight %}
@@ -82,46 +82,46 @@ Me.Controls.Add(pivotChart1)
 
 ### Adding control via Syncfusion® reference manager
 
-[Syncfusion® reference manager](https://help.syncfusion.com/extension/syncfusion-reference-manager/overview) is a Visual Studio Add-In that helps to add Syncfusion® controls. The pivot chart control can be added through Syncfusion® reference manager by following the given steps:
+[Syncfusion® reference manager](https://help.syncfusion.com/extension/syncfusion-reference-manager/overview) is a Visual Studio Add-In that helps to add Syncfusion® controls. The pivot chart control can be added through the Syncfusion® Reference Manager by following the given steps:
 
 1. Create a new **Windows Forms Application** in Visual Studio.
 
 2. Then, right-click the project and select Syncfusion® Reference Manager.
 
-    ![GettingStarted_img3](Getting-Started_images/GettingStarted_img3.png)
+    ![WinForms PivotChart via Syncfusion reference manager](Getting-Started_images/GettingStarted_img3.png)
 
 3. The Syncfusion® Reference Manager wizard will be opened as follows.
 
-    ![GettingStarted_img4](Getting-Started_images/GettingStarted_img4.png)
+    ![WinForms PivotChart reference manager wizard](Getting-Started_images/GettingStarted_img4.png)
 
 4. Select the pivot chart control by searching it through the search box. Then, click the done button to add the selected pivot chart control.
 
-    ![GettingStarted_img5](Getting-Started_images/GettingStarted_img5.png)
+    ![WinForms PivotChart selecting control in reference manager](Getting-Started_images/GettingStarted_img5.png)
 
-5.  The required assemblies will be automatically added to the project by clicking OK.
+5. The required assemblies will be automatically added to the project by clicking OK.
 
-    ![GettingStarted_img6](Getting-Started_images/GettingStarted_img6.png)
+    ![WinForms PivotChart assemblies added via reference manager](Getting-Started_images/GettingStarted_img6.png)
 
-6. Add the following code snippet in code behind to create a simple pivot chart control.
+6. Add the following code snippet in the code-behind to create a simple pivot chart control.
 
 {% tabs %}
 
 {% highlight c# %}
 
-//Initialize a new PivotChart. 
+//Initialize a new PivotChart.
 Syncfusion.Windows.Forms.PivotChart.PivotChart pivotChart1 = new Syncfusion.Windows.Forms.PivotChart.PivotChart();
 
-// Add the PivotChart control to the parent control. 
+//Add the PivotChart control to the parent control.
 this.Controls.Add(pivotChart1);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-'Initialize a new PivotChart. 
+'Initialize a new PivotChart.
 Dim pivotChart1 As New Syncfusion.Windows.Forms.PivotChart.PivotChart()
 
-' Add the PivotChart control to the parent control. 
+'Add the PivotChart control to the parent control.
 Me.Controls.Add(pivotChart1)
 
 {% endhighlight %}
@@ -129,13 +129,13 @@ Me.Controls.Add(pivotChart1)
 {% endtabs %}
 
 N>
-Syncfusion® reference manager supports for specific framework that is shipped (assemblies) in our Syncfusion Essential Studio® setup. So, if you try to add Syncfusion® assemblies in project and framework that is not supported with selected Syncfusion® version assemblies, then the dialog will be appeared by specifying that “Current build v{version} is not supported this framework v{Framework Version}”.
+Syncfusion® reference manager supports for specific framework that is shipped (assemblies) in our Syncfusion Essential Studio® setup. So, if you try to add Syncfusion® assemblies in project and framework that is not supported with selected Syncfusion® version assemblies, then the dialog will be appeared by specifying that "Current build v{version} is not supported this framework v{Framework Version}".
 
 ## Binding data
 
-This section guides you how to bind the data source and its appropriate fields to a pivot chart control. The data source assigned to pivot chart control should be an [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?redirectedfrom=MSDN&view=net-6.0) list or a [DataView](https://learn.microsoft.com/en-us/dotnet/api/system.data.dataview?redirectedfrom=MSDN&view=net-6.0).
+This section guides you on how to bind the data source and its appropriate fields to a pivot chart control. The data source assigned to the pivot chart control should be an [IEnumerable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?redirectedfrom=MSDN&view=net-6.0) list or a [DataView](https://learn.microsoft.com/en-us/dotnet/api/system.data.dataview?redirectedfrom=MSDN&view=net-6.0).
 
-In this example, the `IEnumerable` list is used as data source for the pivot chart control and the sample data source contains properties such as Product, Date, Country, State, Quantity, Amount, UnitPrice, and TotalPrice for demonstration purpose.
+In this example, the `IEnumerable` list is used as the data source for the pivot chart control and the sample data source contains properties such as Product, Date, Country, State, Quantity, Amount, UnitPrice, and TotalPrice for demonstration purposes.
 
 {% tabs %}
 
@@ -144,19 +144,12 @@ In this example, the `IEnumerable` list is used as data source for the pivot cha
 public class ProductSales
 {
     public string Product { get; set; }
-
     public string Date { get; set; }
-
     public string Country { get; set; }
-
     public string State { get; set; }
-
     public int Quantity { get; set; }
-
     public double Amount { get; set; }
-
     public double UnitPrice { get; set; }
-
     public double TotalPrice { get; set; }
 
     public static ProductSalesCollection GetSalesData()
@@ -235,19 +228,12 @@ public class ProductSales
 Public Class ProductSales
 
     Public Property Product As String
-
     Public Property Date As String
-
     Public Property Country As String
-
     Public Property State As String
-
     Public Property Quantity As Integer
-
     Public Property Amount As Double
-
     Public Property UnitPrice As Double
-
     Public Property TotalPrice As Double
 
     Public Shared Function GetSalesData() As ProductSalesCollection
@@ -265,8 +251,8 @@ Public Class ProductSales
             Dim sales As ProductSales = New ProductSales()
             sales.Country = countries(r.[Next](1, countries.GetLength(0)))
             sales.Quantity = r.[Next](1, 12)
-            Dim discount As Double =(30000 * sales.Quantity) * (Double.Parse(sales.Quantity.ToString()) / 100)
-            sales.Amount =(30000 * sales.Quantity) - discount
+            Dim discount As Double = (30000 * sales.Quantity) * (Double.Parse(sales.Quantity.ToString()) / 100)
+            sales.Amount = (30000 * sales.Quantity) - discount
             sales.TotalPrice = sales.Amount * sales.Quantity
             sales.UnitPrice = sales.Amount / sales.Quantity
             sales.Date = dates(r.[Next](r.[Next](dates.GetLength(0) + 1)))
@@ -308,13 +294,13 @@ End Class
 
 N>
 `ProductSales` is a class that consists of `IList` data. For more information, refer to the *Getting Started* demo sample located under the following location.
-&lt;Installed Location&gt;\Syncfusion\Essential Studio\\&lt;Installed_Version&gt;\Windows\PivotChart.Windows\Samples\Getting Started\Getting Started Demo
+&lt;Installed Location&gt;\Syncfusion\Essential Studio\\&lt;Installed Version&gt;\Windows\PivotChart.Windows\Samples\Getting Started\Getting Started Demo
 
 The pivot chart control requires the following information to populate the data from the data source.
 
-* [ItemSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_ItemSource): The data source for the pivot table. This object should be either an    [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?redirectedfrom=MSDN&view=net-6.0) list or a [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable?redirectedfrom=MSDN&view=net-6.0).
-* [PivotAxis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_PivotAxis): Elements that should be added to the axis of pivot chart control.
-* [PivotLegend](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_PivotLegend): Elements that should be added to legend of pivot chart control.
+* [ItemSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_ItemSource): The data source for the pivot table. This object should be either an [IEnumerable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?redirectedfrom=MSDN&view=net-6.0) list or a [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable?redirectedfrom=MSDN&view=net-6.0).
+* [PivotAxis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_PivotAxis): Elements that should be added to the axis of the pivot chart control.
+* [PivotLegend](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_PivotLegend): Elements that should be added to the legend of the pivot chart control.
 * [PivotCalculations](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_PivotCalculations): Calculation values that should be added as data points to the pivot chart control.
 
 The following code snippet illustrates how to add the required information to the pivot chart control.
@@ -355,7 +341,7 @@ Me.pivotChart1.PivotCalculations.Add(New PivotComputationInfo With {.FieldName =
 
 Finally, run the application to obtain the following output.
 
-![GettingStarted_img7](Getting-Started_images/GettingStarted_img7.png)
+![WinForms PivotChart with bound data](Getting-Started_images/GettingStarted_img7.png)
 
 ## Real time updates
 
@@ -365,14 +351,14 @@ Finally, run the application to obtain the following output.
 
 {% highlight c# %}
 
-// Updates the PivotChart series values whenever the data gets changed in the underlying data source.
+//Updates the PivotChart series values whenever the data gets changed in the underlying data source.
 this.pivotChart1.EnableUpdating = true;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-' Updates the PivotChart series values whenever the data gets changed in the underlying data source.
+'Updates the PivotChart series values whenever the data gets changed in the underlying data source.
 Me.pivotChart1.EnableUpdating = True
 
 {% endhighlight %}
@@ -384,34 +370,34 @@ The default value of the `EnableUpdating` property is false.
 
 ### Begin update and end update
 
-When you do more changes in the underlying data source, the pivot chart will be updated for every changes and performance will be degraded. So, to do more changes or more operations, do them between the [BeginUpdate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_BeginUpdate) and [EndUpdate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_EndUpdate) methods of pivot chart. The BeginUpdate method will temporarily freeze the painting or refreshing of the control until the EndUpdate method is called. After all the changes have been made, invoke the EndUpdate method to resume painting of the control.
+When you make more changes in the underlying data source, the pivot chart will be updated for every change and the performance will be degraded. So, to do more changes or more operations, do them between the [BeginUpdate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_BeginUpdate) and [EndUpdate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_EndUpdate) methods of the pivot chart. The BeginUpdate method will temporarily freeze the painting or refreshing of the control until the EndUpdate method is called. After all the changes have been made, invoke the EndUpdate method to resume painting of the control.
 
 {% tabs %}
 
 {% highlight c# %}
 
-// Suspends the painting until EndUpdate method is invoked
+//Suspends the painting until EndUpdate method is invoked
 this.pivotChart1.BeginUpdate();
 
-// do your bulk changes here
+//do your bulk changes here
 
-// Resumes the painting which is suspended
+//Resumes the painting which is suspended
 this.pivotChart1.EndUpdate();
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-' Suspends the painting
+'Suspends the painting
 Me.pivotChart1.BeginUpdate()
 
-' do your bulk changes here
+'do your bulk changes here
 
-' Resumes the painting which is suspended
+'Resumes the painting which is suspended
 Me.pivotChart1.EndUpdate()
 
 {% endhighlight %}
 
 {% endtabs %}
 
-You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/GettingStarted-WinForms-PivotChart)
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/GettingStarted-WinForms-PivotChart).
