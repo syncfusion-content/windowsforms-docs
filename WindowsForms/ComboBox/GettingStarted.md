@@ -10,11 +10,6 @@ documentation: ug
 # Getting Started with Windows Forms ComboBox (SfComboBox)
 This section provides a quick overview for working with the ComboBox in WinForms.
 
-> **Prerequisites**
-> - Visual Studio 2017 or later with the **.NET desktop development** workload installed.
-> - A WinForms project that targets a .NET Framework (4.5+) or .NET (Core 3.1 / 5 / 6 / 7 / 8) version supported by your Syncfusion WinForms release.
-> - Syncfusion WinForms controls installed locally, or a reference to the `Syncfusion.ComboBox.WinForms` NuGet package (see [Assembly Deployment](#assembly-deployment)).
-
 ## Assembly Deployment
 Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sfcombobox) section for the list of assemblies or NuGet package that must be referenced to use the control in any application.
 

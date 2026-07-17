@@ -11,11 +11,6 @@ documentation: ug
 
 This section explains how to create an interactive code editor application like the Microsoft Visual Studio Editor by using the EditControl.
 
-> **Prerequisites**
-> - Visual Studio 2017 or later with the **.NET desktop development** workload installed.
-> - A WinForms project that targets a .NET Framework (4.5+) or .NET (Core 3.1 / 5 / 6 / 7 / 8) version supported by your Syncfusion WinForms release.
-> - Syncfusion WinForms controls installed locally, or a NuGet reference to `Syncfusion.Edit.Windows` (see [Assembly Deployment](#assembly-deployment)).
-
 ## Assembly deployment
 
 Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#editcontrol) section for the list of assemblies or the NuGet package details that must be referenced to use the control in any application.
