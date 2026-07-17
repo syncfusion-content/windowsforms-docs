@@ -45,7 +45,7 @@ Use the following steps to add the Syncfusion® WinForms controls through the Sy
 
     N> You can also configure Syncfusion® controls from a lower version Framework assembly to a higher version of Visual Studio.
    
-3. Click the **Install VSxxxx** button for the Visual Studio version you want to configure.
+3. Click the **Install** button for the Visual Studio version you want to configure.
 
 4. The successful configuration of the Toolbox is indicated by an information message. Click **OK**.
 

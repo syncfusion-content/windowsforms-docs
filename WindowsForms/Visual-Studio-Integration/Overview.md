@@ -11,7 +11,7 @@ documentation: ug
 
 The Syncfusion® WinForms Visual Studio Extensions can be accessed through the Syncfusion® Menu to create and configure the project with Syncfusion® references in Visual Studio. The Syncfusion® WinForms Extensions supports Microsoft Visual Studio 2015 or higher.
 
-N> Syncfusion® Extension is published in the Visual Studio Marketplace. We provide separate Syncfusion® WinForms Extension support for Visual Studio 2022 and Visual Studio 2019 or lower. Please refer to the marketplace links below. Kindly install this extension by following the steps from the [download and installation](https://help.syncfusion.com/windowsforms/visual-studio-integration/vs2019-extensions/download-and-installation/) help topic.
+N> Syncfusion® Extension is published in the Visual Studio Marketplace. We provide separate Syncfusion® WinForms Extension support for Visual Studio 2022 and Visual Studio 2019 or lower. Please refer to the marketplace links below. Kindly install this extension by following the steps from the [download and installation](https://help.syncfusion.com/windowsforms/visual-studio-integration/vs2019-extensions/download-and-installation) help topic.
 
 [Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.WindowsVSExtensions)
 
