@@ -8,26 +8,31 @@ documentation: ug
 ---
 
 # Getting Started with Windows Forms ComboBox (SfComboBox)
-This section provides a quick overview for working with combo box in WinForms. 
+This section provides a quick overview for working with the ComboBox in WinForms.
 
 ## Assembly Deployment
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sfcombobox) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. 
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sfcombobox) section for the list of assemblies or NuGet package that must be referenced to use the control in any application.
+
+To install via NuGet Package Manager Console, run:
+```
+Install-Package Syncfusion.SfListView.WinForms
+```
 
 ## Creating Application with SfComboBox control
-In this walk through, user will create a WinForms application that contains SfComboBox control.
+In this walkthrough, you will create a WinForms application that contains the SfComboBox control.
 
 ### Creating the Project
-Create a new Windows Forms Project in Visual Studio to display the SfCombobox control.
+Create a new Windows Forms project in Visual Studio to display the SfComboBox control.
 
 ### Adding Control via Designer
-The SfCombobox control can be added to the application by dragging it from the toolbox and dropping it in designer. The required assembly references will be added automatically.
+The SfComboBox control can be added to the application by dragging it from the toolbox and dropping it in the designer. The required assembly references will be added automatically.
 
 ![GettingStarted_img1](GettingStarted_images/GettingStarted_img1.png)
 
 ### Adding Control in Code
-To add control manually, follow the steps:
+To add the control manually, follow these steps:
 
-1. Add the below required assembly references to the project,
+1. Add the required assembly references below to the project.
 
     * 	Syncfusion.Core.WinForms
 
@@ -38,7 +43,7 @@ To add control manually, follow the steps:
     *   Syncfusion.SfListView.WinForms
 
 
-2. Create the SfComboBox control instance and add it to the control collection of Form.
+2. Create the SfComboBox control instance and add it to the control collection of the form.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -80,7 +85,7 @@ End Namespace
 
 ### Binding to data
 
-To bind the SfComboBox to data, set the [SfComboBox.DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_DataSource) property to `IEnumerable` implementation. You can bind a property of the underlying data source to display for SfComboBox by using the [DisplayMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_DisplayMember) property and you can bind a property to use as the actual value for the items by using the [ValueMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_ValueMember) property.
+To bind the SfComboBox to data, set the [SfComboBox.DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_DataSource) property to an `IEnumerable` implementation. You can bind a property of the underlying data source to display for SfComboBox by using the [DisplayMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_DisplayMember) property, and you can bind a property to use as the actual value for the items by using the [ValueMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_ValueMember) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -111,10 +116,12 @@ sfComboBox1.DataSource = usStates
 {% endhighlight %}
 {% endtabs %}
 
+> When the underlying data is a primitive type such as `string` or `int`, `DisplayMember` and `ValueMember` are not required.
+
 ![GettingStarted_img2](GettingStarted_images/GettingStarted_img2.png)
 
 ## Auto complete
-Auto complete provides three different ways to display suggestions in drop-down list.
+Auto complete provides three different ways to display suggestions in the drop-down list.
 
 They are, 
  
@@ -124,7 +131,7 @@ They are,
 
 * SuggestAppend: Both of these.
 
-Auto complete can be set by using the [AutoCompleteMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_AutoCompleteMode) property.
+Auto complete can be set by using the [AutoCompleteMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_AutoCompleteMode) property. Use the [AutoCompleteSuggestMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_AutoCompleteSuggestMode) property to control case sensitivity (e.g., `StartsWith`, `Contains`, `Equals`).
 
 {% tabs %}
 {% highlight c# %}
@@ -153,6 +160,6 @@ sfComboBox1.ComboBoxMode = ComboBoxMode.MultiSelection
 
 ## Selected Items
 
-Index of the selected item can be retrieved by using the [SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_SelectedIndex) property. The value of the selected item can be retrieved by using the [SelectedValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_SelectedValue) property. It returns the value of the property bound to the `ValueMember` property. If the `ValueMember` is not initialized, it will return the value of the property bound to the `DisplayMember`. The selected item of the SfComboBox can be retrieved by using the [SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_SelectedItem) property.
+The index of the selected item can be retrieved by using the [SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_SelectedIndex) property. The value of the selected item can be retrieved by using the [SelectedValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_SelectedValue) property. It returns the value of the property bound to the `ValueMember` property. If the `ValueMember` is not initialized, it returns the value of the property bound to the `DisplayMember`. The selected item of the SfComboBox can be retrieved by using the [SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_SelectedItem) property. In `MultiSelection` mode, use the [SelectedItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_SelectedItems) collection to retrieve all selected values.
 
 N> You can also explore our [WinForms ComboBox example](https://github.com/syncfusion/winforms-demos/tree/master/sfcombobox) that shows how to allows users to type a value, choose an item, or choose multiple items using a multiselect option. 
