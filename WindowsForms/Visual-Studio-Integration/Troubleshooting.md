@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Troubleshooting | WinForms | Syncfusion
-description: Syncfusion Troubleshooter is a Visual Studio extension that detects and fixes configuration issues related to Syncfusion assemblies, NuGet packages, and toolbox settings.
+description: The Syncfusion Troubleshooter Visual Studio extension helps identify and resolve issues with assembly references, NuGet packages, and toolbox configuration.
 platform: windowsforms
 control: Syncfusion Extensions
 documentation: ug
