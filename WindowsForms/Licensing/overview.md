@@ -40,6 +40,8 @@ This application was built using a trial version of Syncfusion Essential Studio.
 | **Trial installer** | If the Syncfusion assemblies used in Build Server were from Trial Installer, we should register the license key in the application for the corresponding version and platforms, to avoid trial license warning. | Yes | Use any developer trial license to [generate](https://help.syncfusion.com/windowsforms/licensing/how-to-generate) keys for Build Environments as well. |
 | **Licensed installer** |If the Syncfusion assemblies used in Build Server were from Licensed Installer, then there is no need to register the license keys.<br><br>You can [download](https://help.syncfusion.com/windowsforms/installation/web-installer/how-to-download#download-the-license-version) and [install](https://help.syncfusion.com/windowsforms/installation/web-installer/how-to-install) the licensed version of our installer. | No | Not applicable |
 
+For CI validation, see the [CI License Validation](https://help.syncfusion.com/windowsforms/licensing/licensing-faq/ci-license-validation) topic.
+
 ## See Also
 
 * [How to Generate Syncfusion WindowsForms License Key?](https://help.syncfusion.com/windowsforms/licensing/how-to-generate)

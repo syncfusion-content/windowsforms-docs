@@ -74,7 +74,3 @@ NA </td><td>
 Void </td><td>
 NA </td></tr>
 </table>
-
-## Next Steps
-
-Refer to the [Getting Started](https://help.syncfusion.com/windowsforms/skins/getting-started) page to create a new project and apply themes using the SkinManager component.

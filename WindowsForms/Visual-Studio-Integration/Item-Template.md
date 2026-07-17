@@ -15,39 +15,43 @@ I> The Syncfusion® Windows Forms item templates are available from v13.1.0.21.
 
 The following steps will guide you in adding the Syncfusion® WinForms components to your Visual Studio WinForms application.
 
-> Check whether the **WinForms Extensions - Syncfusion** are installed or not in Visual Studio Extension Manager by going to **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later and Visual Studio 2017 or lower by going to **Tools -> Extensions and Updates -> Installed**. If this extension is not installed, please install the extension by following the steps from the [download and installation](https://help.syncfusion.com/windowsforms/visual-studio-integration/download-and-installation) help topic.
+> Check whether the **Syncfusion WinForms** extension is installed in Visual Studio Extension Manager by going to **Extensions → Manage Extensions → Installed** for Visual Studio 2019 or later, and to **Tools → Extensions and Updates → Installed** for Visual Studio 2017 or lower. If this extension is not installed, install the extension by following the steps from the [download and installation](https://help.syncfusion.com/windowsforms/visual-studio-integration/download-and-installation) help topic.
+
+N> Item Templates are available from v13.1.0.21. The Item Template wizard supports **WinForms App (.NET Framework)** and **WinForms App (.NET)** project types.
 
 ## Add components using Syncfusion® Item Template
 
-1.	Open a new or existing WinForms application.
+1.	Open a new or existing **WinForms** project. Then choose one of the following options to open the wizard:
 
-	**Option 1:**
+    - **Option 1:** In **Solution Explorer**, right-click the WinForms project and choose **Add Syncfusion Item...**.
 
-2.	From the **Solution Explorer, right-click** on the WinForms application. Choose **Add Syncfusion Item...**.
+        ![Add Syncfusion Item option in the Solution Explorer context menu](Item-Template-images/Add-syncfusion-item.png)
 
-	![Choose Add Syncfusion Item option from right click project](Item-Template-images/Add-syncfusion-item.png)
+    - **Option 2:** Click **Extensions → Essential Studio® for WinForms → Add Syncfusion Item…** in Visual Studio.
 
-	**Option 2:**
+        ![Add Syncfusion Item option in the Extensions menu](Item-Template-images/Add-item.png)
 
-3.	Click **Extensions > Essential Studio® for WinForms > Add Syncfusion Item…** in Visual Studio.
+2.	The Syncfusion® WinForms Item Template wizard opens as shown below.
 
-	![Choose Add Syncfusion Item option from menu](Item-Template-images/Add-item.png)
+	![Syncfusion® WinForms Item Template wizard showing available forms and components](Item-Template-images/Add-syncfusion-ui.png)
 
-4.	The Syncfusion® WinForms Item Template wizard will be launched as follows.
+3.	Choose one of the following scenarios to add a Syncfusion® form in your application:
 
-	![Syncfusion WinForms Item template components](Item-Template-images/Add-syncfusion-ui.png)
+    | Scenario | When to use |
+    |----------|-------------|
+    | Default Form with Syncfusion® Component | Use the default Microsoft WinForms layout, but add a Syncfusion® control. |
+    | Syncfusion® Form with Syncfusion® Component | Use a Syncfusion® form (e.g., MetroForm, RibbonForm) and add a Syncfusion® control. |
+    | Syncfusion® Form without Syncfusion® Component | Add a blank Syncfusion® form without any components. |
 
-5.	Please choose one of the following scenarios to add Syncfusion Forms in your application:
+    **Default Form with Syncfusion® Component:** If you select the **Default** form and then choose any Syncfusion® component and the specific features that are essential for your project, the selected component is added with the default Microsoft WinForms layout.
 
-    **Default Form with Syncfusion Component:** If you select the **Default** form and then choose any Syncfusion® component and the specific features that are essential for your project, the selected component will be added with the default Microsoft form layout.
+	![Default form with a Syncfusion® component added](Item-Template-images/Default-Form-with-Syncfusion-Component.png)
 
-	![Default Form with Syncfusion Component](Item-Template-images/Default-Form-with-Syncfusion-Component.png)
+    **Syncfusion® Form with Syncfusion® Component:** If you select a Syncfusion® form and then choose any Syncfusion® component and the specific features that are essential for your project, the selected component is added with the layout of the selected Syncfusion® form. Available Syncfusion® forms include MetroForm, RibbonForm, Office2007Form, Office2010Form, TabbedForm, and XPMainForm.
 
-    **Syncfusion Form with Syncfusion Component:** If you select a Syncfusion® form and then choose any Syncfusion® component and the specific features that are essential for your project, the selected component will be added with the layout of the selected Syncfusion® form.
+	![Syncfusion® form with a Syncfusion® component added](Item-Template-images/Syncfusion-Form-with-Syncfusion-Component.png)
 
-	![Syncfusion Form with Syncfusion Component](Item-Template-images/Syncfusion-Form-with-Syncfusion-Component.png)
-
-    **Syncfusion Form without Syncfusion Components:** If you select a Syncfusion® form and then choose the **Blank** option from the Syncfusion® component list, a blank Syncfusion® form will be added without any Syncfusion® components.
+    **Syncfusion® Form without Syncfusion® Components:** If you select a Syncfusion® form and then choose **Blank** from the Syncfusion® component list, a blank Syncfusion® form is added without any Syncfusion® components.
 
 	![Syncfusion Form without Syncfusion Components](Item-Template-images/Syncfusion-Form-without-Syncfusion-Components.png) 
 

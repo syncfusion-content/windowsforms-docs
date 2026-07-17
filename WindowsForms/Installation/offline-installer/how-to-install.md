@@ -13,9 +13,11 @@ documentation: ug
 
 ## Installing with UI   
 
-The steps below show how to install the Essential Studio Windows Forms installer.
+Before starting the installation, close all Visual Studio instances and any running Syncfusion applications.
 
-1.	Open the Syncfusion Windows Forms offline installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package.
+The steps below show how to install the Essential Studio for Windows Forms installer.
+
+1.	Open the Syncfusion Windows Forms offline installer file from the downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package.
 
     ![Installer extraction wizard](images/Step-by-Step-Installation_img1.png)
 
@@ -51,15 +53,17 @@ The steps below show how to install the Essential Studio Windows Forms installer
 3.	After reading the License Terms and Privacy Policy, check the **“I agree to the License Terms and Privacy Policy”** check box. Click the Next button.
 
 
-4.	Change the install and sample locations here. You can also change the Additional settings. Click Next\Install to install with the default settings.
+4.	Change the install and sample locations here. You can also change the additional settings. Click Next and then Install to install with the default settings.
 
 
     ![Advanced options](images/Step-by-Step-Installation_img4.png)
 
     **Additional Settings**
+
+    The following additional settings can be configured for the installation:
     
-	* Select the **Install Demos** check box to install Syncfusion samples, or leave the check box unchecked, if you do not want to install Syncfusion samples
-	* Select the **Register Syncfusion Assemblies in GAC** check box to install the latest Syncfusion assemblies in GAC, or clear this check box when you do not want to install the latest assemblies in GAC.
+	* Select the **Install Demos** check box to install Syncfusion samples, or leave the check box unchecked if you do not want to install Syncfusion samples.
+	* Select the **Register Syncfusion Assemblies in GAC** check box to install the latest Syncfusion assemblies in the Global Assembly Cache (GAC), or clear this check box when you do not want to install the latest assemblies in the GAC. The GAC option applies only to .NET Framework projects; for .NET Core and .NET 5+ projects, the assemblies are referenced from the NuGet packages and GAC registration is not applicable.
     * Select the **Configure Syncfusion controls in Visual Studio** check box to configure the Syncfusion controls in the Visual Studio toolbox, or clear this check box when you do not want to configure the Syncfusion controls in the Visual Studio toolbox during installation. Note that you must also select the Register Syncfusion assemblies in GAC check box when you select this check box.
     * Select the **Configure Syncfusion Extensions controls in Visual Studio** checkbox to configure the Syncfusion Extensions in Visual Studio or clear this check box when you do not want to configure the Syncfusion Extensions in Visual Studio.
     * Check the **Create Desktop Shortcut** checkbox to add a desktop shortcut for Syncfusion Control Panel
@@ -68,10 +72,10 @@ The steps below show how to install the Essential Studio Windows Forms installer
 
 
 
-5.	If any previous versions of the current product is installed, the Uninstall Previous Version(s) wizard will be opened. Select **Uninstall** checkbox to uninstall the previous versions and then click the Proceed button.
+5.	If any previous version of the current product is installed, the Uninstall Previous Version(s) wizard will be opened. Select **Uninstall** checkbox to uninstall the previous versions and then click the Proceed button.
 
 
-    ![Advanced options](images/Step-by-Step-Installation_img7.png)
+    ![Uninstall Previous Versions wizard](images/Step-by-Step-Installation_img7.png)
 	
 	
 	N> From the 2021 Volume 1 release, Syncfusion has added the option to uninstall previous versions from 18.1 while installing the new version.
@@ -95,14 +99,16 @@ The steps below show how to install the Essential Studio Windows Forms installer
 	
 	![Completed wizard](images/Step-by-Step-Installation_img10.png)
 	
-7.  After installing, click the **Launch Control Panel** link to open the Syncfusion Control Panel.
+6.  After installing, click the **Launch Control Panel** link to open the Syncfusion Control Panel.
 
 
-8.  Click the Finish button. Your system has been installed with the Syncfusion Essential Studio Windows Forms product.
+7.  Click the Finish button. Your system has been installed with the Syncfusion Essential Studio for Windows Forms product.
+
+After installation, you can register your Syncfusion license key in your application as described in the [Licensing overview](https://help.syncfusion.com/windowsforms/licensing/overview).
 
 ## Installing in silent mode
 
-The Syncfusion Essential Studio Windows Forms Installer supports installation and uninstallation via the command line.
+The Syncfusion Essential Studio for Windows Forms Installer supports installation and uninstallation via the command line. The command prompt must be run as Administrator to install or uninstall the product silently.
 
 ### Command Line Installation
 
@@ -111,27 +117,41 @@ To install through the Command Line in Silent mode, follow the steps below.
 1.	Run the Syncfusion Windows Forms installer by double-clicking it. The Installer Wizard automatically opens and extracts the package.
 2.	The file syncfusionessentialwindowsforms_(version).exe file will be extracted into the Temp directory.
 3.	Run %temp%. The Temp folder will be opened. The syncfusionessentialwindowsforms_(version).exe file will be located in one of the folders.
-4.	Copy the extracted syncfusionessentialwindowsforms_(version).exe file in local drive.
+4.	Copy the extracted syncfusionessentialwindowsforms_(version).exe file to a local drive.
 5.	Exit the Wizard.
 6.	Run Command Prompt in administrator mode and enter the following arguments.
 
-   
-    **Arguments:** “installer file path\SyncfusionEssentialStudio(product)_(version).exe” /Install silent /UNLOCKKEY:“(product unlock key)” [/log “{Log file path}”] [/InstallPath:{Location to install}] [/InstallSamples:{true/false}] [/InstallAssemblies:{true/false}] [/UninstallExistAssemblies:{true/false}] [/InstallToolbox:{true/false}]
+    The available arguments are:
+
+    | Argument | Required | Description |
+    |----------|----------|-------------|
+    | `/Install silent` | Yes | Specifies that the installer should run in silent mode. |
+    | `/UNLOCKKEY:"<key>"` | Yes | The product unlock key. |
+    | `/log "<path>"` | No | Path to the log file. |
+    | `/InstallPath:<path>` | No | Location to install. |
+    | `/InstallSamples:{true/false}` | No | Whether to install samples. |
+    | `/InstallAssemblies:{true/false}` | No | Whether to install assemblies. |
+    | `/UninstallExistAssemblies:{true/false}` | No | Whether to uninstall existing assemblies. |
+    | `/InstallToolbox:{true/false}` | No | Whether to configure the Visual Studio toolbox. |
+
+    **Arguments:** "installer file path\SyncfusionEssentialStudio(product)_(version).exe" /Install silent /UNLOCKKEY:"(product unlock key)" [/log "{Log file path}"] [/InstallPath:{Location to install}] [/InstallSamples:{true/false}] [/InstallAssemblies:{true/false}] [/UninstallExistAssemblies:{true/false}] [/InstallToolbox:{true/false}]
 
 
     N> [..] – Arguments inside the square brackets are optional.
 
-    **Example:** “D:\Temp\syncfusionessentialwindowsforms_x.x.x.x.exe” /Install silent /UNLOCK:“product unlock key” /log “C:\Temp\EssentialStudio_Platform.log” /InstallPath:C:\Syncfusion\x.x.x.x /InstallSamples:true /InstallAssemblies:true /UninstallExistAssemblies:true /InstallToolbox:true
+    **Example:** "D:\Temp\syncfusionessentialwindowsforms_x.x.x.x.exe" /Install silent /UNLOCKKEY:"product unlock key" /log "C:\Temp\EssentialStudio_Platform.log" /InstallPath:C:\Syncfusion\x.x.x.x /InstallSamples:true /InstallAssemblies:true /UninstallExistAssemblies:true /InstallToolbox:true
 
 	
 7.  Essential Studio for Windows Forms is installed.
 
     N> x.x.x.x should be replaced with the Essential Studio version and the Product Unlock Key needs to be replaced with the Unlock Key for that version.
+
+    N> The installer returns exit code `0` on success and a non-zero exit code on failure. The log file specified by `/log` records the installation progress and any errors.
    
 
 ### Command Line Uninstallation
 
-Syncfusion Essential Windows Forms can be uninstalled silently using the Command Line.
+Syncfusion Essential Studio for Windows Forms can be uninstalled silently using the Command Line.
 
 1.	Run the Syncfusion Windows Forms installer by double-clicking it. The Installer Wizard automatically opens and extracts the package.
 2.	The file syncfusionessentialwindowsforms_(version).exe file will be extracted into the Temp directory.
@@ -140,11 +160,9 @@ Syncfusion Essential Windows Forms can be uninstalled silently using the Command
 5.	Exit the Wizard.
 6.	Run Command Prompt in administrator mode and enter the following arguments.
    
-    **Arguments:** “Copied installer file path\syncfusionessentialwindowsforms_(version).exe” /uninstall silent 
+    **Arguments:** "Copied installer file path\syncfusionessentialwindowsforms_(version).exe" /uninstall silent 
 
-    **Example:** “D:\Temp\syncfusionessentialwindowsforms_x.x.x.x.exe" /uninstall silent
-
-
+    **Example:** "D:\Temp\syncfusionessentialwindowsforms_x.x.x.x.exe" /uninstall silent
 7.  Essential Studio for Windows Forms is uninstalled.
    
    

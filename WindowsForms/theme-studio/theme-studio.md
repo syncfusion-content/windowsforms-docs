@@ -85,127 +85,95 @@ Add the exported assembly (*.dll) as a reference in your Windows Forms project (
 
 **Note:** Close Theme Studio before referencing the exported assembly file to avoid file locking errors.
 
-![Attach exported assembly in Windows Forms project](ThemeStudio_images/Export-dialog-theme-studio.png)
+![Export dialog in Theme Studio for Windows Forms](ThemeStudio_images/Export-dialog-theme-studio.png)
 
 **Step 2:**
 
-Load the theme assembly in `Program.cs` of your application and then initialize the SfDataGrid control in the main form. Set the `ThemeName` property of the SfDataGrid exactly to the exported assembly name. The exported assembly name and the class name follow the convention `Syncfusion.YourThemeName.Theme` (for example, `Syncfusion.VioletTheme.Theme`).
-
-**C# — Program.cs**
+Load the exported theme assembly and apply the custom theme to the SfDataGrid control.
 
 {% tabs %}
-{% highlight c# %}
+
+{% highlight C# %}
+
+using Syncfusion.Windows.Forms;
 using System;
+using System.Reflection;
 using System.Windows.Forms;
-using Syncfusion.Licensing;
-using Syncfusion.WinForms.Themes;
 
 namespace ThemeStudioDemo
 {
     static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
-            // Replace with your actual Syncfusion license key.
-            // See https://help.syncfusion.com/windowsforms/licensing for details.
-            SyncfusionLicenseProvider.RegisterLicense("YOUR_LICENSE_KEY");
-
-            // Load the exported theme assembly before any Syncfusion control is created.
-            SkinManager.LoadAssembly(typeof(Syncfusion.VioletTheme.Theme).Assembly);
+            SkinManager.LoadAssembly(Assembly.LoadFrom("VioletTheme.dll"));
 
             Application.EnableVisualStyles();
-            // SetCompatibleTextRenderingDefault must be called before any control is created.
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
         }
     }
 }
+
 {% endhighlight %}
-{% endtabs %}
 
-**C# — Form1.cs**
+{% highlight VB %}
 
-{% tabs %}
-{% highlight c# %}
-using System.Windows.Forms;
-using Syncfusion.WinForms.DataGrid;
-
-namespace ThemeStudioDemo
-{
-    public partial class Form1 : Form
-    {
-        private SfDataGrid sfDataGrid1;
-
-        public Form1()
-        {
-            InitializeComponent();
-
-            // The ThemeName must match the exported assembly name.
-            sfDataGrid1 = new SfDataGrid();
-            sfDataGrid1.ThemeName = "VioletTheme";
-            this.Controls.Add(sfDataGrid1);
-        }
-    }
-}
-{% endhighlight %}
-{% endtabs %}
-
-**VB — Program.vb**
-
-{% tabs %}
-{% highlight vb %}
-Imports System
+Imports Syncfusion.Windows.Forms
+Imports System.Reflection
 Imports System.Windows.Forms
-Imports Syncfusion.Licensing
-Imports Syncfusion.WinForms.Themes
 
 Module Program
-    <STAThread>
-    Private Sub Main()
-        ' Replace with your actual Syncfusion license key.
-        ' See https://help.syncfusion.com/windowsforms/licensing for details.
-        SyncfusionLicenseProvider.RegisterLicense("YOUR_LICENSE_KEY")
-
-        ' Load the exported theme assembly before any Syncfusion control is created.
-        SkinManager.LoadAssembly(GetType(Syncfusion.VioletTheme.Theme).Assembly)
+    <STAThread()>
+    Sub Main()
+        SkinManager.LoadAssembly(Assembly.LoadFrom("VioletTheme.dll"))
 
         Application.EnableVisualStyles()
-        ' SetCompatibleTextRenderingDefault must be called before any control is created.
         Application.SetCompatibleTextRenderingDefault(False)
         Application.Run(New Form1())
     End Sub
 End Module
+
 {% endhighlight %}
-{% endtabs %}
 
-**VB — Form1.vb**
-
-{% tabs %}
-{% highlight vb %}
-Imports System.Windows.Forms
-Imports Syncfusion.WinForms.DataGrid
-
-Public Class Form1
-    Private sfDataGrid1 As SfDataGrid
-
-    Public Sub New()
-        InitializeComponent()
-
-        ' The ThemeName must match the exported assembly name.
-        sfDataGrid1 = New SfDataGrid()
-        sfDataGrid1.ThemeName = "VioletTheme"
-        Me.Controls.Add(sfDataGrid1)
-    End Sub
-End Class
-{% endhighlight %}
 {% endtabs %}
 
 **Step 3:**
 
+Set the exported theme name to the `ThemeName` property of the SfDataGrid control.
+
+{% tabs %}
+
+{% highlight C# %}
+
+public Form1()
+{
+    InitializeComponent();
+
+    sfDataGrid1.ThemeName = "VioletTheme";
+}
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Public Sub New()
+    InitializeComponent()
+
+    sfDataGrid1.ThemeName = "VioletTheme"
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> The `sfDataGrid1` control should already be added to the form through the designer or created in code.
+
+**Step 4:**
+
 Compile and run the Windows Forms application. The custom theme is applied to the SfDataGrid control at run-time. 
 
 ![Theme applied in SfDataGrid](ThemeStudio_images/Theme-applied-SfDataGrid.png)
+
+N> Replace `VioletTheme` with the actual name used while exporting the custom theme assembly from Theme Studio. Ensure that the exported theme assembly, such as `VioletTheme.dll`, is added to the project and copied to the application output directory.

@@ -9,7 +9,7 @@ documentation: ug
 
 # Syncfusion® AI Coding Assistant Overview
 
-The **Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant** are designed to streamline your development workflow when building Windows Forms applications with Syncfusion<sup style="font-size:70%">&reg;</sup> components. It uses contextual knowledge of the Syncfusion<sup style="font-size:70%">&reg;</sup> component library to generate accurate code snippets, configuration examples, and guided explanations—minimizing documentation searches and maximizing productivity.
+The **Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant** is designed to streamline your development workflow when building Windows Forms applications with Syncfusion<sup style="font-size:70%">&reg;</sup> components. It uses contextual awareness based on Syncfusion's documentation to generate accurate code snippets, configuration examples, and guided explanations—minimizing documentation searches and maximizing productivity.
 
 AI Coding Assistant:
 
@@ -28,6 +28,8 @@ To use the AI Coding Assistant, you need:
   - [Free Trial](https://www.syncfusion.com/account/manage-trials/start-trials)
 * An active [API KEY](https://syncfusion.com/account/api-key)
 * A [Windows Forms application that includes Syncfusion Windows Forms](https://help.syncfusion.com/windowsforms/overview)
+
+The AI Coding Assistant is supported on Syncfusion WinForms current and previous major releases. See the [SyncfusionWinFormsAssistant MCP Server](https://help.syncfusion.com/windowsforms/ai-coding-assistant/mcp-server) page for setup steps and the [Prompt Library](https://help.syncfusion.com/windowsforms/ai-coding-assistant/prompt-library) for ready-made prompts.
 
 ## Unlimited Access
 
@@ -53,7 +55,7 @@ This ensures users can fully leverage Syncfusion<sup style="font-size:70%">&reg;
 ## Recommendations
 
 * Session Management: Start new sessions when switching tasks to ensure prompt relevance and maintain content focus.
-* Model Compatibility: For optimal performance, use the tools with advanced AI models such as GPT-5 or Claude Sonnet 4.
+* Model Compatibility: For optimal performance, use the tools with a current advanced AI model available in your region, such as GPT-5 or Claude Sonnet 4.
 
 ## Privacy & Data Handling
 
@@ -66,5 +68,5 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant is desi
 
 ## See also
 
-* Add the **SyncfusionWinFormsAssistant MCP Server** to an MCP-enabled client.
+* Add the [SyncfusionWinFormsAssistant MCP Server](https://help.syncfusion.com/windowsforms/ai-coding-assistant/mcp-server) to an MCP-enabled client.
 * [Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms Documentation](https://help.syncfusion.com/windowsforms/overview).

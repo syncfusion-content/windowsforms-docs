@@ -15,7 +15,7 @@ This section briefly describes how to create a new Windows Forms project in Visu
 
 SkinManager is present in the `Syncfusion.Shared.Base` assembly.
 
-N> The corresponding Syncfusion WinForms assemblies (e.g., `Syncfusion.Shared.Base`, and the theme-specific assemblies listed below) must be referenced in the project. The Syncfusion WinForms Toolbox installer / Visual Studio extension must be installed for the SkinManager component to appear in the toolbox.
+N> Ensure that the required Syncfusion WinForms assemblies, such as `Syncfusion.Shared.Base` and any theme-specific assemblies, are referenced in the project. The Syncfusion WinForms Toolbox installer or Visual Studio extension must be installed for the SkinManager component to appear in the toolbox.
 
 <table>
 <tr>
@@ -80,13 +80,13 @@ SkinManager.LoadAssembly(GetType(Syncfusion.WinForms.Themes.Office2016Theme).Ass
 
 ## Through designer
 
-1) Create a new Windows Forms application in Visual Studio.
+1 Create a new Windows Forms application in Visual Studio.
 
 2) Open the target form in the designer.
 
-3) The `SkinManager` component can be added to the designer by dragging it from the toolbox to the design view.
+3) Drag the `SkinManager` component from the toolbox and drop it onto the designer.
 
-4) Select the `SkinManager` component on the form and use the `Controls` property in the Properties window to choose the control or form to which the theme should be applied.
+4) Select the `SkinManager` component and use the `Controls` property in the Properties window to choose the control or form to which the theme should be applied.
 
 The following dependent assemblies will be added automatically: 
 

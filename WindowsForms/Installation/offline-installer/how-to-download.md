@@ -38,7 +38,7 @@ Our 30-day trial can be downloaded in two ways.
 
 7. Click the More Download Options (element 2 in the above screenshot) button to get the Essential Studio Windows Forms Offline trial installer which is available in EXE and ZIP format.
 
-   ![License and downloads of Syncfusion Essential Studio](images/start-trial-download-offline-installer.png)
+   ![Offline trial installer formats for Syncfusion Essential Studio](images/start-trial-download-offline-installer.png)
 
 ### Start Trials if using components through [NuGet.org](https://www.nuget.org/packages?q=syncfusion)
 
@@ -50,7 +50,7 @@ You should initiate an evaluation if you have already obtained our components th
 	
    ![Trial and downloads of Syncfusion Essential Studio](images/start-trial-download.png)
    
-2. To access this page, you must sign up\log in with your Syncfusion account.
+2. To access this page, you must sign up or log in with your Syncfusion account.
 3. Begin your trial by selecting the Windows Forms product. 
 
    N> If you've already used the trial products and they haven't expired, you won't be able to start the trial for the same product again.
@@ -68,13 +68,19 @@ You should initiate an evaluation if you have already obtained our components th
 2. You can view all the licenses (both active and expired) associated with your account.
 3. Click the Download (element 1 in the screenshot below) button to download the respective product’s installer.
 4. The most recent version of the installer will be downloaded from this page.
-5. To download older version installers, go to [Downloads Older Versions](https://www.syncfusion.com/account/downloads/studio) (element 2 in the screenshot below).
-6. You can download other platform\add-on installers by going to More Downloads Options (element 3 in the screenshot below).
+5. To download older version installers, go to [Download Older Versions](https://www.syncfusion.com/account/downloads/studio) (element 2 in the screenshot below).
+6. You can download other platform or add-on installers by going to More Downloads Options (element 3 in the screenshot below).
 
    ![License and downloads of Syncfusion Essential Studio](images/license-download.png)
 
-7. For Windows OS, EXE and Zip formats are available for download. They are both Offline Installers.
+7. For Windows OS, EXE and Zip formats are available for download. Both formats are offline installers.
    
-   ![License and downloads of Syncfusion Essential Studio](images/start-trial-download-offline-installer.png)
+   ![Offline installer formats for Syncfusion Essential Studio](images/start-trial-download-offline-installer.png)
 
-You can also refer to the [**Offline installer**](https://help.syncfusion.com/windowsforms/installation/offline-installer/how-to-install) links for step-by-step installation guidelines.	
+You can also refer to the [**Offline installer**](https://help.syncfusion.com/windowsforms/installation/offline-installer/how-to-install) links for step-by-step installation guidelines.
+
+For information about retrieving and using your license key after installation, see the [Licensing overview](https://help.syncfusion.com/windowsforms/licensing/overview).
+
+## Verify the Downloaded Installer
+
+After downloading the offline installer, you can verify its integrity by checking the digital signature of the EXE or ZIP file. Right-click the downloaded file in Windows Explorer, select **Properties**, and then open the **Digital Signatures** tab. The signature should be issued to **Syncfusion, Inc.** If the digital signature is missing or invalid, re-download the installer from the Syncfusion website.	

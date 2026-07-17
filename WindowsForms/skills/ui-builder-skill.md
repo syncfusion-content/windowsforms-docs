@@ -72,7 +72,7 @@ apm --version
 
 ### Install the Syncfusion® Windows Forms UI Builder package using APM
 
-Use the APM CLI to install the WinForms UI Builder skill for your preferred environment:
+Use the APM CLI to install the WinForms UI Builder skill for your preferred environment. The `-t` flag selects the deployment target. Run the command from your project root:
 
 {% tabs %}
 {% highlight bash tabtitle="Copilot" %}
@@ -136,7 +136,7 @@ Key enforcement points:
 
 After installing Windows Forms UI Builder with APM, the relevant agent and skill files are added to your project under:
 
-- `.agent/skills/` (skill files)
+- `.agents/skills/` (skill files)
 - `.github/agents/` (Windows Forms UI builder agent configuration, based on the selected target)
 
 To start using the skill:
@@ -159,7 +159,7 @@ Create a CMS Admin Dashboard UI featuring a collapsible TreeView in a left panel
 {% endpromptcard %}
 {% endpromptcards %}
 
-Generated code follows Windows Forms best practices with proper control layout, event handling, data bindings, strong C# typing, and built-in security measures such as input validation and avoidance of hardcore secrets. The code is fully compatible with Visual Studio designer and Windows Forms conventions.
+Generated code follows Windows Forms best practices with proper control layout, event handling, data bindings, strong C# typing, and built-in security measures such as input validation and avoidance of hard-coded secrets. The code is fully compatible with Visual Studio designer and Windows Forms conventions.
 
 ## Best Practices
 
@@ -173,7 +173,7 @@ Follow these guidelines to get the most out of UI Builder and ensure high-qualit
 
 ## Troubleshooting
 
-- **APM installation failure**: Refer to this [documentation](https://microsoft.github.io/apm/getting-started/installation/#troubleshooting)
+- **APM installation failure**: Refer to this [documentation](https://microsoft.github.io/apm/getting-started/installation/#troubleshooting).
 
 - **Skills not loading**: Ensure the **.agent/** and **.github/agents/** folders exist in your project and that the skill was installed successfully using APM. Verify that the correct agent is selected from the Agent dropdown in your IDE.
 
@@ -188,15 +188,18 @@ Follow these guidelines to get the most out of UI Builder and ensure high-qualit
 Any Skills-compatible agent that reads local skill files (Code Studio, VS Code, Cursor, etc.).
 
 **Are skills loaded automatically?**  
-Yes. Supported agents automatically load relevant skills based on your query.
+Yes. Supported agents automatically load relevant skills based on your query. To disable automatic loading, deselect the skill in the agent's skill manager.
 
 **Can I customize the generated styles?**
 Yes — the generated Windows Forms controls include clear integration points for style adjustments.
 
 **Does it modify files automatically?**
-The skill proposes changes and requires confirmation for insertion; automatic dependency installation may be offered depending on agent permissions.
+The skill proposes changes and requires confirmation for insertion. Automatic dependency installation may be offered depending on agent permissions (file-read, file-write, and package-install scopes).
 
 ## See also
 
 - [Agent Skills Standards](https://agentskills.io/home)
 - [Agent Package Manager](https://microsoft.github.io/apm/getting-started/quick-start/)
+- [Theme Studio](https://help.syncfusion.com/windowsforms/skinmanager/theme-studio)
+- [VisualStyle](https://help.syncfusion.com/windowsforms/visualstyle)
+- [Licensing](https://help.syncfusion.com/windowsforms/licensing)

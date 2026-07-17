@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Upgrade Syncfusion WinForms NuGet packages to a latest version
-description: Learn here about the how to upgrading Syncfusion WinForms NuGet packages to a latest version using NuGet manager and package manager UI.
+title: Upgrade Syncfusion WinForms NuGet packages to the latest version
+description: Learn here about the how to upgrade Syncfusion WinForms NuGet packages to the latest version using the NuGet manager and package manager UI.
 platform: WindowsForms
 control: Essential Studio
 documentation: ug
 ---
 
-# Upgrading Syncfusion WinForms NuGet packages to a latest version
+# Upgrading Syncfusion WinForms NuGet packages to the latest version
 
 Every three months, Syncfusion releases new volumes with interesting new features. For this volume, there will be weekly NuGet releases and a service pack. Syncfusion WinForms NuGet packages are released on a weekly basis to address critical issue fixes.
 
-From any Syncfusion WinForms NuGet version you have installed; you can update to our most recent version.
+From any Syncfusion WinForms NuGet version you have installed, you can update to our most recent version.
 
 ## Upgrade NuGet packages through Package Manager UI
 
@@ -27,52 +27,70 @@ The NuGet **Package Manager UI** in Visual Studio allows you to easily install, 
 
     > The [nuget.org](https://api.nuget.org/v3/index.json) package source is selected by default in the Package source drop-down. If your Visual Studio does not have nuget.org configured, follow the instructions in the [Microsoft documents](https://docs.microsoft.com/en-us/nuget/tools/package-manager-ui#package-sources) to set up the nuget.org feed URL.
 
-3. By default, the package selected with latest version. You can select the required version and click the **Update** button and accept the license terms. The package will be upgraded to selected version in your WinForms application.
+3. By default, the package is selected with the latest version. You can select the required version and click the **Update** button and accept the license terms. The package will be upgraded to the selected version in your WinForms application.
 
     ![Winforms Upgrade](images/NuGetUpgrade.png)
 
     You can choose the multiple NuGet packages by selecting the checkbox like below and click the **Update** button to update the multiple Syncfusion NuGet packages in your application.
 
-    ![Winform NuGet Upgrade](images/MultipleNuGetUpgrade.png)
+    ![Select multiple Syncfusion NuGet packages for upgrade](images/MultipleNuGetUpgrade.png)
+
+4. After the upgrade, perform a **Clean** and then **Rebuild** of the solution. Verify the upgraded version in the `.csproj`/`.vbproj` file or in the **Installed** tab of the NuGet Package Manager.
 
 ## Upgrade NuGet packages through .NET CLI
 
-There is no distinct command for the update procedure in the .NET CLI. Unless you specify the package version, .NET CLI installs the latest version of the Syncfusion WinForms NuGet packages when you use the dotnet add package command.
+The .NET CLI does not have a separate update command. To upgrade an already-installed Syncfusion WinForms NuGet package to a newer version, navigate to the project folder and re-run `dotnet add package` with the desired version. The CLI replaces the existing reference in the `.csproj` file and then runs `dotnet restore`.
 
-To specify a version, add the -v parameter:
+1. Open a command prompt and navigate to the project folder:
 
-```dotnet add package Syncfusion.Grid.Windows -v 19.2.0.59```
+    `cd C:\Projects\MyWinFormsApp`
+
+2. To upgrade to a specific version, run:
+
+    ```dotnet add package Syncfusion.Grid.Windows -v 26.1.0.35```
+
+    To upgrade to the latest version, omit the `-v` parameter:
+
+    ```dotnet add package Syncfusion.Grid.Windows```
+
+3. After the command completes, perform a **Clean** and then **Rebuild** of the solution.
+
+N> The `dotnet add package` command uses the `-v` flag to specify a version. This is different from the Package Manager Console, which uses the `-Version` parameter.
+
+N> To roll back to a previous version, run `dotnet add package <PackageName> -v <PreviousVersion>` again with the desired older version.
 
 ## Upgrade NuGet packages through Package Manager Console
 
 The **Package Manager Console** saves NuGet packages upgrade time since you don't have to search for the package you want to update, and you can just type the command to update the appropriate Syncfusion WinForms NuGet package. Follow the steps below to upgrade the installed Syncfusion NuGet packages using the Package Manager Console in your WinForms application.
 
-1. To show the Package Manager Console, open your WinForms application in Visual Studio and navigate to **Tools** in the Visual Studio menu and after hovering **NuGet Package Manager**, select **Package Manager Console**.
+1. To show the Package Manager Console, open your WinForms application in Visual Studio and navigate to **Tools** in the Visual Studio menu and after hovering **NuGet Package Manager**, select **Package Manager Console**. In the **Default project** dropdown at the top of the Package Manager Console, select the project in which you want to update the package.
 
     ![Package Manager Console](images/console.png)
 
-2. The Package Manager Console will be shown at the bottom of the screen. You can install the Syncfusion WinForms NuGet packages by enter the following NuGet update commands.
+2. The **Package Manager Console** will be shown at the bottom of the screen. You can update the Syncfusion WinForms NuGet packages by entering the following NuGet update commands.
 
-    ***Update specified Syncfusion WinForms NuGet package***
+    ### Updating a specified Syncfusion WinForms NuGet package
 
-    The below command will update the Syncfusion WinForms NuGet package in the default WinForms application
+    The command below updates the Syncfusion WinForms NuGet package in the default WinForms application.
 
     ```Update-Package <Package Name>```
 
     **For example:** Update-Package Syncfusion.Grid.Windows
 
-    ***Update specified Syncfusion WinForms NuGet package in specified WinForms application***
+    ### Updating a specified Syncfusion WinForms NuGet package in a specified WinForms application
 
-    The below command will update the Syncfusion WinForms NuGet package in the given WinForms application alone
+    The command below updates the Syncfusion WinForms NuGet package in the given WinForms application.
 
     ```Update-Package <Package Name> -ProjectName <Project Name>```
 
-    **For example:** Update-Package Syncfusion.Grid.Windows -ProjectName SyncfusionWinformsApp
+    **For example:** `Update-Package Syncfusion.Grid.Windows -ProjectName SyncfusionWinformsApp`
 
-3. By default, the package will be installed with latest version. You can give the required version with the -Version term like below to install the Syncfusion WinForms NuGet packages in the appropriate version.
+3. By default, the package will be updated to the latest version. To update to a specific version, use the `-Version` parameter (note: Package Manager Console uses `-Version`, while the .NET CLI uses the shorter `-v`).
 
-    ```Update-Package Syncfusion.Grid.Windows -Version 19.2.0.59```
+    ```Update-Package Syncfusion.GridF.Windows -Version 26.1.0.35```
 
     ![Package Manager Console Output](images/UpdateConsole.png)
 
-4. The NuGet package manager will update the Syncfusion WinForms NuGet package as well as the dependencies it has.
+4. The NuGet package manager will update the Syncfusion WinForms NuGet package as well as its dependencies. When the update is complete, the console shows the updated package version.
+
+5. After the upgrade, perform a **Clean** and then **Rebuild** of the solution. Verify the upgraded version in the **Installed** tab of the NuGet Package Manager or in the `.csproj`/`.vbproj` file.

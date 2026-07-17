@@ -20,9 +20,9 @@ Create the Syncfusion® WinForms project using the Visual Studio Project Templat
 
 > Check whether the **WinForms Extensions - Syncfusion** are installed or not in Visual Studio Extension Manager by going to **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later, and for Visual Studio 2017 by going to **Tools -> Extensions and Updates -> Installed**. If this extension is not installed, please install the extension by following the steps from the [download and installation](https://help.syncfusion.com/windowsforms/visual-studio-integration/download-and-installation) help topic.
 
-1.	Open the Visual Studio 2022.
+1.	Open Visual Studio 2017, 2019, or 2022.
 
-2.	Select one of the following options to create the Syncfusion® WinForms application
+2.	Select one of the following options to create the Syncfusion® WinForms application:
 
 	**Option 1:**  
 	Choose **Extension -> Syncfusion -> Essential Studio® for WinForms -> Create New Syncfusion Project…** from the Visual Studio menu.
@@ -52,17 +52,17 @@ Create the Syncfusion® WinForms project using the Visual Studio Project Templat
 
 	![Syncfusion WinForms project type selection wizard](Template-Studio-Images/WF-4.png)
 
-	**Predefined template:** Choose this option to select from 5 predefined templates, including Calendar, Contact, Outlook, Docking Manager, and Spreadsheet. By choosing one of these templates, you can create your application without needing to follow any further steps.
+	**Predefined template:** Choose this option to select from 5 predefined templates, including Calendar, Contact, Outlook, Docking Manager, and Spreadsheet. You can create your application without further steps.
 
 	![Syncfusion WinForms Predefined template wizard](Template-Studio-Images/WF-10.png)
 
-	**Project type:** Choose this option to select from 4 project types, including Blank, Menu Bar, Ribbon, and Tabbed Form.
+	**Project type:** Choose this option to select from 4 project types, including Blank, Menu Bar, Ribbon, and Tabbed Form. Blank creates an empty project, Menu Bar creates a project with a top menu bar, Ribbon creates a project with a ribbon, and Tabbed Form creates a project with a tabbed MDI layout.
 
 6. Click **Next** or navigate to the **Pages** tab to access a list of available Syncfusion® WinForms components you can add to the application.
 
 	![Syncfusion WinForms pages selection wizard](Template-Studio-Images/WF-6.png)
 
-	To unselect the added control(s), Click ‘x’ for the corresponding control in the control list from the Project Details.
+	To unselect an added control, click the X icon next to the corresponding control in the **Project Details** list.
 
 	N> The Control Features option is not accessible for Blank Pages.
 
@@ -74,7 +74,7 @@ Create the Syncfusion® WinForms project using the Visual Studio Project Templat
 
 	![Syncfusion WinForms app features selection wizard](Template-Studio-Images/WF-7.png)
 
-    N> The App Features option is not accessible for .NET Framework.	
+    N> The App Features option is not accessible for .NET Framework because the generated DI setup targets .NET (non-Framework) hosts.
 
 	**Project Details Section**
 
@@ -87,6 +87,8 @@ Create the Syncfusion® WinForms project using the Visual Studio Project Templat
 	![Syncfusion WinForms project created with readme](Template-Studio-Images/WF-9.png)
 
     ![NuGetEntry](Template-Studio-Images/NuGetEntry.png)
+
+	N> After the project is created, open the **Package Manager Console** or the **NuGet Package Manager** and confirm that all Syncfusion® packages restored successfully. If any package shows a warning, run **Update-Package -reinstall** for that package.
 
 	To find out which NuGet packages are needed for other WinForms controls, please refer to this [documentation link](https://help.syncfusion.com/windowsforms/control-dependencies) for detailed information on the required packages for each control.
 
@@ -125,7 +127,7 @@ Here's a simple explanation:
        ![Resources](Template-Studio-Images/Resources.png)
  
 
-	> The .NET 8.0 and .NET 9.0 options will be available in the Select a framework version dropdown only if the respective .NET SDKs are installed on your system. The table below outlines the .NET versions, the specific product versions from which they are available, and the Visual Studio versions that support them:
+	> The .NET 8.0, .NET 9.0, and .NET 10.0 options are available in the **Select a framework version** dropdown only if the respective .NET SDKs are installed on the system. The table below outlines the .NET versions, the product versions from which they are available, and the Visual Studio versions that support them:
 	> <table>
 	>   <thead>
 	>     <tr>
@@ -143,6 +145,11 @@ Here's a simple explanation:
 	>     <tr>
 	>       <td>.NET 9.0</td>
 	>       <td>v27.2.2</td>
+	>       <td>Visual Studio 2022</td>
+	>     </tr>
+	>     <tr>
+	>       <td>.NET 10.0</td>
+	>       <td>v28.1.6</td>
 	>       <td>Visual Studio 2022</td>
 	>     </tr>
 	>   </tbody>

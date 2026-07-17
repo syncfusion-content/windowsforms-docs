@@ -13,13 +13,15 @@ Speed up your WinForms projects using these ready-made prompts for popular Syncf
 
 ## How to Use
 
-Before starting, make sure your MCP Server is set up and running.
+Before starting, make sure your MCP Server is set up and running. Confirm `SyncfusionWinFormsAssistant` is listed as an active tool in your MCP client.
 
 * Choose a prompt that fits your need.
 * Copy the full prompt with the #SyncfusionWinFormsAssistant handle.
 * Customize the prompt for your specific use case.
 * Execute via the MCP Server.
 * Always check and test the code before adding it to your project.
+
+Prompts target the current major Syncfusion WinForms release and are validated against the latest APIs available in that release.
 
 ## Component-Specific Prompts
 
@@ -64,31 +66,31 @@ The Syncfusion WinForms DataGrid provides fast, flexible tabular views for large
 
 The Syncfusion WinForms Chart suite offers versatile visualizations across many series types for clear, insightful data representation. 
 
-{% promptcards %} 
-{% promptcard Data Binding %} 
+{% promptcards %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How to bind data sources to a Syncfusion WinForms Chart for dynamic visualization? 
-{% endpromptcard %} 
-{% promptcard MVVM Support %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How can I integrate Syncfusion WinForms Charts with MVVM-style patterns for clean architecture? 
-{% endpromptcard %} 
-{% promptcard Chart Types %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant What chart types are available in Syncfusion WinForms Chart and how to configure them? 
-{% endpromptcard %} 
-{% promptcard Zooming and Panning %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How to enable zooming and panning in WinForms Charts for large datasets? 
-{% endpromptcard %} 
-{% promptcard Trendlines %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant Add trendlines to highlight patterns and predictions in WinForms Charts. 
-{% endpromptcard %} 
-{% promptcard Export to Image or PDF %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How to export a Syncfusion Chart to PDF or an image format? 
-{% endpromptcard %} 
-{% promptcard Print Support %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant Enable print functionality for a Syncfusion WinForms Chart component. 
-{% endpromptcard %} 
-{% promptcard Data Labels and Tooltips %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant Enable tooltips and data labels in a Syncfusion WinForms Chart. 
-{% endpromptcard %} 
+{% endpromptcard %}
 {% promptcard Tooltips and Trackball %}
 #SyncfusionWinFormsAssistant Show interactive tooltips and a trackball with formatted labels and multiple series value display.
 {% endpromptcard %}
@@ -110,187 +112,187 @@ The Syncfusion WinForms Chart suite offers versatile visualizations across many 
 {% promptcard Gridlines and Chart Area Styling %}
 #SyncfusionWinFormsAssistant Customize major/minor gridlines, tick lines, chart area background, and border.
 {% endpromptcard %}
-{% promptcard Drill-Down Support %} 
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How to implement drill-down functionality in WinForms Charts for detailed exploration? 
-{% endpromptcard %} 
-{% promptcard Multiple Series Types %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How to combine bar and line chart types in a single Syncfusion Chart? 
 {% endpromptcard %}
-{% promptcard Custom Markers and Labels %} 
+{% promptcard  %}
 #SyncfusionWinFormsAssistant Show me an example of customizing chart markers and data label styles. 
-{% endpromptcard %} 
+{% endpromptcard %}
 {% endpromptcards %}
 
 ### Diagram
 
 The Syncfusion WinForms Diagram library is powerful, extensible, and feature-rich for creating and editing interactive diagrams.
 
-{% promptcards %} 
-{% promptcard Data Source %} 
+{% promptcards %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How to populate the Diagram from a database or XML data? 
-{% endpromptcard %} 
-{% promptcard Nodes %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant Create a custom symbol in the Syncfusion Diagram component.
-{% endpromptcard %} 
-{% promptcard ToolTip Support for Nodes %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant Show how to display tooltips for symbols in the Syncfusion Diagram component? 
-{% endpromptcard %} 
-{% promptcard Connectors Customization %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How to customize connector styles? 
-{% endpromptcard %} 
-{% promptcard Decorator Customization %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How to customize decorator shapes and styles? 
-{% endpromptcard %} 
-{% promptcard Annotation %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How to disable label editing? 
-{% endpromptcard %} 
-{% promptcard Ports %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How to add ports to a custom symbol? 
-{% endpromptcard %} 
-{% promptcard Export to Word Document %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How to export a diagram to a Word document? 
-{% endpromptcard %} 
-{% promptcard Print support %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How to print a diagram on a single page? 
-{% endpromptcard %} 
-{% promptcard Serialization %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How to serialize a node’s custom properties? 
-{% endpromptcard %} 
-{% promptcard Selection Handles Customization %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant Show me an example of customizing the appearance of selection handles? 
-{% endpromptcard %} 
+{% endpromptcard %}
 {% endpromptcards %}
 
 ### Ribbon
 
 The Syncfusion WinForms Ribbon is an Office-inspired command bar with tabs and groups, Backstage, Quick Access Toolbar, KeyTips, themes, and High DPI support. 
 
-{% promptcards %} 
-{% promptcard Add Ribbon Items %} 
+{% promptcards %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant Add RibbonTab, ToolStripEx (group), ToolStripButton, ToolStripDropDownButton, ToolStripSplitButton, ToolStripComboBox, and ToolStripGallery items to the Ribbon? 
-{% endpromptcard %} 
-{% promptcard Application Menu (Backstage) %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant Configure the Backstage (application menu) with tabs, buttons, and recent items in the Ribbon.
-{% endpromptcard %} 
-{% promptcard Quick Access Toolbar %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant Add, remove, and customize items in the Quick Access Toolbar (QAT).
-{% endpromptcard %} 
-{% promptcard ScreenTip / SuperToolTip %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant Configure ScreenTips or SuperToolTips on Ribbon items.
-{% endpromptcard %} 
+{% endpromptcard %}
 {% promptcard KeyTips %}
 #SyncfusionWinFormsAssistant How to enable and customize KeyTips (keyboard access keys) for Ribbon items? 
-{% endpromptcard %} 
-{% promptcard Serialization %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How to save and restore the Ribbon layout, QAT, and Backstage state between sessions? 
-{% endpromptcard %} 
-{% promptcard Contextual Tabs %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How to add contextual (category) Ribbon tabs and show/hide them at runtime? 
-{% endpromptcard %} 
-{% promptcard Ribbon Gallery %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How to create a Ribbon gallery with item preview, grouping, and selection handling? 
-{% endpromptcard %} 
-{% promptcard Themes and High DPI %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How to apply Office themes and ensure proper High DPI scaling in the Ribbon? 
-{% endpromptcard %} 
-{% promptcard Simplified / Collapsed Layout %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How to enable a simplified or collapsed layout with automatic resizing rules? 
-{% endpromptcard %} 
-{% promptcard Ribbon Merging (MDI) %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How to merge parent and MDI child Ribbon tabs/groups dynamically? 
-{% endpromptcard %} 
-{% promptcard Custom Caption and Form Integration %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How to integrate the Ribbon with the Form title bar, custom caption buttons, and window icon behavior? 
-{% endpromptcard %} 
-{% promptcard Localization and RTL %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How to localize Ribbon text /resources and enable right-to-left (RTL) layout? 
-{% endpromptcard %} 
-{% promptcard Runtime Item Management %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How to add, remove, or reorder Ribbon tabs, groups, and items programmatically at runtime?
-{% endpromptcard %} 
-{% promptcard Keyboard and Shortcuts %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How to assign keyboard shortcuts and handle command routing for Ribbon items? 
-{% endpromptcard %} 
+{% endpromptcard %}
 {% endpromptcards %}
 
 ### Docking Manager
 
 The Syncfusion WinForms Docking Manager provides Visual Studio–like dockable windows for your applications. 
 
-{% promptcards %} 
-{% promptcard Add Dock Panels Programmatically %} 
+{% promptcards %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How to create and add dockable panels (UserControl/Control) programmatically to the Docking Manager? 
-{% endpromptcard %} 
-{% promptcard Dock Support Control %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How to enable or disable docking for specific controls or globally? 
-{% endpromptcard %} 
-{% promptcard Drag Support %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How to enable or disable drag/resize behavior for docked windows? 
-{% endpromptcard %} 
-{% promptcard Float and Auto-Hide Programmatically %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How to float, auto-hide, or restore a docked window via code? 
-{% endpromptcard %} 
-{% promptcard Tabbed Documents %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How to create tabbed document windows and manage document groups? 
-{% endpromptcard %} 
-{% promptcard Prevent Close or Customize Caption %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How to prevent closing certain dock windows and customize caption text, icons, and buttons? 
-{% endpromptcard %} 
-{% promptcard Context Menu Customization %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How to disable or customize the dock window/tab context menu? 
-{% endpromptcard %} 
-{% promptcard Events for State Changes %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant Which events track dock state changes (docked, floating, auto-hide, closed) and how to handle them? 
-{% endpromptcard %} 
-{% promptcard Serialization / Layout Persistence %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How to save and restore the Docking Manager layout to a file/stream and handle versioned changes? 
-{% endpromptcard %} 
-{% promptcard Theming and High DPI %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How to apply themes and ensure High DPI scaling for Docking Manager windows and tabs? 
-{% endpromptcard %} 
-{% promptcard Runtime Add/Remove Panels %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How to dynamically add and remove dock panels at runtime and update the layout? 
-{% endpromptcard %} 
-{% promptcard Restrict Docking Targets %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How to restrict where a panel can dock (left/right/top/bottom/tabbed) or disallow floating? 
-{% endpromptcard %} 
+{% endpromptcard %}
 {% endpromptcards %}
 
 ### Calendar
 
 The Syncfusion WinForms Calendar supports flexible date selection, localization, and custom rendering. 
 
-{% promptcards %} 
-{% promptcard Date Range Selection %} 
+{% promptcards %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How to enable date range selection in the Syncfusion WinForms Calendar? 
-{% endpromptcard %} 
-{% promptcard Globalization Support %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant Configure the Calendar to support multiple cultures and languages. 
-{% endpromptcard %} 
-{% promptcard Multi-Date Selection %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant Show me how to allow users to select multiple dates in the Calendar.
-{% endpromptcard %} 
-{% promptcard Skip Months Feature %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant Enable skipping months in Calendar navigation for faster browsing. 
-{% endpromptcard %} 
-{% promptcard Show Other-Month Days %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant How to show days from adjacent months in the current Calendar view? 
-{% endpromptcard %} 
-{% promptcard Custom Day Cell Format %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant Customize the day cell format to show short weekday names. 
-{% endpromptcard %} 
-{% promptcard Highlight Weekends %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant Highlight weekends in the Calendar with a different background color. 
-{% endpromptcard %} 
-{% promptcard Multi-Selection and Range %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant Enable both multi-date selection and range selection in the Calendar. 
-{% endpromptcard %} 
-{% promptcard Troubleshooting Date Range %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant Why isn’t my Calendar selecting the correct date range? 
-{% endpromptcard %} 
-{% promptcard Advanced Calendar Setup %} 
+{% endpromptcard %}
+{% promptcard  %}
 #SyncfusionWinFormsAssistant Create a Calendar with date range, multi-selection, globalization, and weekend highlights. 
-{% endpromptcard %} 
+{% endpromptcard %}
 {% endpromptcards %}
 
 ## See also
