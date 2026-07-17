@@ -112,7 +112,7 @@ A version mismatch means the key was generated for an Essential Studio version d
 
 This error applies to all supported versions.
 
-Please ensure that all Syncfusion NuGet packages including [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing) were installed properly, and assembly references are upgraded to the required version. Also, verify that the `.csproj` (or `.vbproj`) and `packages.config` file references have been updated to the new version.
+Please ensure that all Syncfusion NuGet packages including [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing) were installed properly, and assembly references are upgraded to the required version.
 
 After upgrading, perform a Clean and then Rebuild of the solution to ensure stale binaries are removed.
 
