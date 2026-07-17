@@ -53,8 +53,8 @@ N> * If the **Application.Designer.vb** file is not included by default in the p
 {% highlight c# %}
 static void Main()
 {
-	//Register Syncfusion license
-	Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
+    //Register Syncfusion license
+    Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
 	
     Application.EnableVisualStyles();
     Application.SetCompatibleTextRenderingDefault(false);
