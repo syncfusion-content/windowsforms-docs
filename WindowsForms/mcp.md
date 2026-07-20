@@ -148,7 +148,7 @@ You can install the Syncfusion WinForms MCP server as a local tool without a glo
     dotnet tool install Syncfusion.WinForms.MCP
     ````
 
-2. In your MCP client config (`.vscode/mcp.json`, `.codestudio/mcp.json`, `.cursor/mcp.json`, or the JetBrains MCP settings), replace the server entry with:
+2. In your MCP client config (for example, `.vscode/mcp.json`), replace the server entry with:
 
     ````json
     {
