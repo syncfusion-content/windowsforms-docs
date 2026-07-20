@@ -565,5 +565,3 @@ Private Sub OnMouseDown(ByVal sender As Object, ByVal e As MouseEventArgs)
 End Sub
 {% endhighlight %}
 {% endtabs %}
-
-N> Looking for the full WinForms Data Grid component overview, features, pricing, and documentation? Visit the [WinForms Data Grid](https://www.syncfusion.com/winforms-ui-controls/datagrid) page.
