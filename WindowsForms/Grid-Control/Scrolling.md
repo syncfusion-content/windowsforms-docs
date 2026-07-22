@@ -219,7 +219,7 @@ Me.gridControl1.ScrollCellInView(rowIndex, colIndex)
 Me.gridControl1.ScrollCellInView(rowIndex, colIndex, GridScrollCurrentCellReason.MoveTo)
 {% endhighlight %}
 {% endtabs %}
-It can be used to scrolling the grid to the top of the given range as of follows,
+It can be used to scroll the grid to the top of the given range as follows,
 {% tabs %}
 {% highlight c# %}
 GridRangeInfo range = GridRangeInfo.Row(14);
@@ -438,7 +438,8 @@ this.gridControl1.VScrollBehavior = GridScrollbarMode.Shared;
 //Enable the Shared Scrollbars
 this.gridControl1.UseSharedScrollBars = true;
 
-//Set the inner scrollbar which is shared to the grid this.gridControl1.HScrollBar.InnerScrollBar = hScrollBar1;
+//Set the inner scrollbar which is shared to the grid
+this.gridControl1.HScrollBar.InnerScrollBar = hScrollBar1;
 this.gridControl1.VScrollBar.InnerScrollBar = vScrollBar1;
 {% endhighlight %}
 {% highlight vb %}
@@ -449,7 +450,8 @@ Me.gridControl1.VScrollBehavior = GridScrollbarMode.Shared
 'Enable the Shared Scrollbars
 Me.gridControl1.UseSharedScrollBars = True
 
-'Set the inner scrollbar which is shared to the grid this.gridControl1.HScrollBar.InnerScrollBar = hScrollBar1;
+'Set the inner scrollbar which is shared to the grid
+Me.gridControl1.HScrollBar.InnerScrollBar = hScrollBar1
 Me.gridControl1.VScrollBar.InnerScrollBar = vScrollBar1
 
 {% endhighlight %}
@@ -476,7 +478,7 @@ void VScrollBar_Scroll(object sender, ScrollEventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 'Used to get the scroll index
-Private Me.gridControl1.VScrollBar.Scroll += AddressOf VScrollBar_Scroll
+AddHandler Me.gridControl1.VScrollBar.Scroll, AddressOf VScrollBar_Scroll
 
 Private lastValue As Integer = -1
 Private Sub VScrollBar_Scroll(ByVal sender As Object, ByVal e As ScrollEventArgs)
@@ -574,7 +576,7 @@ void gridControl1_HorizontalScroll(object sender, ScrollEventArgs e)
 }
 {% endhighlight %}
 {% highlight vb %}
-Private Me.gridControl1.HorizontalScroll += New ScrollEventHandler(AddressOf gridControl1_HorizontalScroll)
+AddHandler Me.gridControl1.HorizontalScroll, New ScrollEventHandler(AddressOf gridControl1_HorizontalScroll)
 Private Sub gridControl1_HorizontalScroll(ByVal sender As Object, ByVal e As ScrollEventArgs)
 	If e.NewValue > 230 Then
 

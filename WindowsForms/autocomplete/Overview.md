@@ -9,9 +9,9 @@ documentation: ug
 
 # Windows Forms AutoComplete Overview
 
-The AutoComplete control is an extender control that provides AutoCompletion services to any edit control on the same form as the AutoComplete control.
+The `AutoComplete` control is an extender control that provides AutoCompletion services to any edit control on the same form as the AutoComplete control.
 
-AutoCompletion can be defined as prompting you with probable matches during data entry. This feature is similar to the AutoCompletion of the web addresses in the Internet Explorer address box.
+AutoCompletion can be defined as prompting you with probable matches during data entry. This feature is similar to the AutoCompletion of web addresses in the Internet Explorer address box.
 
 ![Overview for Autocomplete](Overview_images/Overview_image1.png) 
 

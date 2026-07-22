@@ -11,12 +11,7 @@ documentation: ug
 
 The [`SfAIAssistView`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.SfAIAssistView.html) control includes a **Response Toolbar** feature that allows users to perform actions on bot responses by clicking action buttons. This feature provides an interactive way for users to engage with AI responses through **copy**, **regenerate**, **like**, and other **custom** actions.
 
-## Prerequisites
-
-- An [`SfAIAssistView`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.SfAIAssistView.html) instance has been created and added to the form. See [Getting Started](https://help.syncfusion.com/windowsforms/ai-assistview/getting-started) for setup details.
-- A **ViewModel** with a **Chats** collection bound to the control's [`Messages`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.SfAIAssistView.html#Syncfusion_WinForms_AIAssistView_SfAIAssistView_Messages) property. See [Getting Started](https://help.syncfusion.com/windowsforms/ai-assistview/getting-started#bind-messages).
-- A [`TextMessage`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.TextMessage.html)-based message exists in the bound collection so that toolbar items can be retrieved or hidden.
-- The following `using` directives are included in your file:
+The following `using` directives are included in your file:
 
 {% tabs %}
 {% highlight c# %}
@@ -29,6 +24,8 @@ using Syncfusion.WinForms.AIAssistView;
 
 {% endhighlight %}
 {% endtabs %}
+
+N> An `SfAIAssistView` instance has been created and added to the form. See [Getting Started](https://help.syncfusion.com/windowsforms/ai-assistview/getting-started) for setup details.
 
 ## Enabling the Response Toolbar
 
@@ -209,12 +206,4 @@ private void UpdateToolbarForLatestMessage()
 
 {% endtabs %}
 
-Call `UpdateToolbarForLatestMessage` whenever a new bot response is added (for example, in the **`Chats_CollectionChanged`** handler used in the OpenAI integration).
-
-## Troubleshooting
-
-| Issue | Possible Cause | Resolution |
-|-------|----------------|------------|
-| `e.ToolBarItem` is `null` | The clicked item is not a known toolbar item, or the default items have been replaced. | Null-check `e.ToolBarItem` and ensure the item is registered in `ResponseToolBarItems`. |
-| `GetToolBarItem` returns `null` | The message has no toolbar (e.g., user message) or the item name does not match. | Ensure the message is a bot response with the toolbar visible, and verify the item name. |
-| `messagesList[1]` throws `ArgumentOutOfRangeException` | The `Messages` collection has fewer than 2 items. | Guard the index with a length check, as shown in the example. |
+Call `UpdateToolbarForLatestMessage` whenever a new bot response is added (for example, in the `Chats_CollectionChanged` handler used in the OpenAI integration).

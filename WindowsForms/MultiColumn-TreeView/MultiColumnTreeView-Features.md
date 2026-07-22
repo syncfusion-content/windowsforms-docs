@@ -15,13 +15,13 @@ MultiColumnTreeView contains following features,
 
 ### SelectionMode
 
-`SelectionMode` defines the ability to select number of nodes at a time, there are three modes.
+`SelectionMode` defines the ability to select a number of nodes at a time. The following three modes are available:
 
-•	Single – Allows the user to select only a single node.
+* **Single** – Allows the user to select only a single node.
 
-•	MultiSelectSameLevel – Allows to multi select only when the multiple nodes are same level.
+* **MultiSelectSameLevel** – Allows multi-selection only when the multiple nodes are at the same level.
 
-•	MultiSelectAll – Allows to multi select the nodes irrespective of node level.
+* **MultiSelectAll** – Allows multi-selection of nodes irrespective of node level.
 
 {% tabs %}
 
@@ -83,10 +83,10 @@ Me.MultiColumnTreeView1.ActiveNode = Me.MultiColumnTreeView1.Nodes(4).Nodes(1)
 
 {% endtabs %}
 
-## Keyboard and Mouse based selection
+## Keyboard-Based and Mouse-Based Selection
 
-Mouse based selection allows the user to select the nodes using mouse drag, simply click on any area in MultiColumnTreeView and drag. All the nodes available in the drag region will be selected .
-Use the property ` AllowMouseBasedSelection`, to select the nodes using mouse.
+Mouse-based selection allows the user to select the nodes using a mouse drag. Simply click on any area in MultiColumnTreeView and drag. All the nodes available in the drag region will be selected.
+Use the property `AllowMouseBasedSelection` to select nodes using the mouse.
 
 {% tabs %}
 
@@ -106,7 +106,7 @@ Me.MultiColumnTreeView1.AllowMouseBasedSelection = True
 
 ![MultiColumnTreeView-Features_img2](MultiColumntreeView-Features_Images/MultiColumnTreeView-Features_img2.jpg)
 
-MultiColumnTreeView supports to search the nodes with the keyboard buttons. Simply tap any alphabet in keyboard and MultiColumnTreeView will show the node starting with that alphabet and keep tapping the button to show all the nodes starting with that alphabet.
+MultiColumnTreeView supports searching for nodes using the keyboard. Tap any letter on the keyboard and MultiColumnTreeView will show the node starting with that letter. Keep tapping the same letter to cycle through all the nodes starting with it.
 
 {% tabs %}
 
@@ -124,14 +124,14 @@ Me.MultiColumnTreeView1.AllowKeyboardSearch = True
 
 {% endtabs %}
 
-## Auto Size for columns
+## Auto Size for Columns
 
-MultiColumnTreeView has the support for calculating the width of the Nodes and SubItems by calculating the width of Text and images in it and assigns the largest node width to its column.
+MultiColumnTreeView supports calculating the width of nodes and sub-items based on the width of the text and images they contain, and assigns the largest node width to its column.
 
-It can be done by using the property `AutoSizeMode`, it has two options None and AllCellsExceptHeader.
+This is controlled by the `AutoSizeMode` property, which has the following options:
 
-*	None – No Auto size to the columns
-*	AllCellsExceptHeader – Calculates the nodes width and assigns  the width to the column, this option will not calculate width of the header text.
+* **None** – No auto-size is applied to the columns.
+* **AllCellsExceptHeader** – Calculates the node width and assigns it to the column. The width of the header text is not included in the calculation.
 
 
 {% tabs %}
@@ -154,10 +154,10 @@ Me.multiColumnTreeView1.AutoSizeMode = Syncfusion.Windows.Forms.Tools.MultiColum
 
 ## Undo & Redo
 
-Undo action is used to erase the last change done to the node and takes back to the older state.
+The Undo action erases the last change made to a node and reverts it to the previous state.
 
-Redo is the opposite of Undo, the redo command reverses the Undo and takes the node to the current state. Redo can be performed only after an Undo action.
-The actions can be recorded into the history manager such that the undo and redo operations can be performed. 
+Redo is the opposite of Undo. The redo command reverses the Undo and returns the node to the current state. Redo can be performed only after an Undo action.
+Actions can be recorded in the history manager so that Undo and Redo operations can be performed.
 
 **Property Table**
 
@@ -209,7 +209,7 @@ this.multiColumnTreeView1.HistoryManager.Redo();
 
 {% endtabs %}
 
-## ToolTip & HelpText
+## Tooltip and Help Text
 
 ### Help Text
 
@@ -265,7 +265,7 @@ The MultiColumnTreeView performance can be improved with the following propertie
 
 ### SuspendExpandRecalculate
 
-When the SuspendExpandRecalculate property to true, the populating time nearly reduces to half of its original time by recalculating the nodes maximum height while expanding and collapsing.
+When the `SuspendExpandRecalculate` property is set to `true`, the populating time is nearly halved by recalculating the maximum height of the nodes only while expanding and collapsing.
 
 {% tabs %}
 

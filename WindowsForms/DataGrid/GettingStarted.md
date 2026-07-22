@@ -380,7 +380,7 @@ Represents SfDataGrid column that hosts SfNumericTextBox controls in its cells
 </tr>
 <tr>
 <td>
-GridDataTimeColumn
+GridDateTimeColumn
 </td>
 <td>
 Represents SfDataGrid column that hosts SfDateTimeEdit controls in its cells which is used to display and format DateTime values.
@@ -565,5 +565,3 @@ Private Sub OnMouseDown(ByVal sender As Object, ByVal e As MouseEventArgs)
 End Sub
 {% endhighlight %}
 {% endtabs %}
-
-N> Looking for the full WinForms Data Grid component overview, features, pricing, and documentation? Visit the [WinForms Data Grid](https://www.syncfusion.com/winforms-ui-controls/datagrid) page.

@@ -363,7 +363,7 @@ Me.sfDataGrid1.Style.TableSummaryRowStyle.Font = New GridFontInfo(New Font("Aria
 ![Table summary row appearance customization in windows form datagrid](SfDataGrid_Summaries_UG_images/summaries5.png)
 
 ### Overriding Table Summary Renderer
-[GridTableSummaryCellRender](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Renderers.GridTableSummaryCellRenderer.html) is the cell renderer which renders the table summary row. The table summary row appearance and the summary value can be customized with the `GridTableSummaryCellRender`.
+[GridTableSummaryCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Renderers.GridTableSummaryCellRenderer.html) is the cell renderer which renders the table summary row. The table summary row appearance and the summary value can be customized with the `GridTableSummaryCellRenderer`.
 
 #### Creating Custom Renderer
 The number format for numeric values displayed on [GridTableSummaryRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridTableSummaryRow.html) can be applied by overriding the `OnRender` method in `GridTableSummaryCellRenderer` class.
@@ -495,14 +495,14 @@ Summary information can be displayed in row by setting [GridSummaryRow.ShowSumma
 GridSummaryRow groupSummaryRow1 = new GridSummaryRow();
 groupSummaryRow1.Name = "GroupSummary";
 groupSummaryRow1.ShowSummaryInRow = true;
-groupSummaryRow1.Title = "Total Price $: { UnitPrice }";
+groupSummaryRow1.Title = "Total Price $: {UnitPrice}";
 
 // Creates the GridSummaryColumn.
 GridSummaryColumn summaryColumn1 = new GridSummaryColumn();
 summaryColumn1.Name = "UnitPrice";
 summaryColumn1.SummaryType = SummaryType.DoubleAggregate;
 summaryColumn1.Format = "{Sum:c}";
-summaryColumn1.MappingName = " UnitPrice ";
+summaryColumn1.MappingName = "UnitPrice";
 
 // Adds the GridSummaryColumn in SummaryColumns collection.
 groupSummaryRow1.SummaryColumns.Add(summaryColumn1);
@@ -515,14 +515,14 @@ this.sfDataGrid1.GroupSummaryRows.Add(groupSummaryRow1);
 Dim groupSummaryRow1 As New GridSummaryRow()
 groupSummaryRow1.Name = "GroupSummary"
 groupSummaryRow1.ShowSummaryInRow = True
-groupSummaryRow1.Title = "Total Price $: { UnitPrice }"
+groupSummaryRow1.Title = "Total Price $: {UnitPrice}"
 
 ' Creates the GridSummaryColumn.
 Dim summaryColumn1 As New GridSummaryColumn()
 summaryColumn1.Name = "UnitPrice"
 summaryColumn1.SummaryType = SummaryType.DoubleAggregate
 summaryColumn1.Format = "{Sum:c}"
-summaryColumn1.MappingName = " UnitPrice "
+summaryColumn1.MappingName = "UnitPrice"
 
 ' Adds the GridSummaryColumn in SummaryColumns collection.
 groupSummaryRow1.SummaryColumns.Add(summaryColumn1)
@@ -567,7 +567,7 @@ summaryColumn2.Format = "{Count:d}";
 summaryColumn2.MappingName = "Quantity";
 summaryColumn2.SummaryType = SummaryType.CountAggregate;
 
-// Creates the GridSummaryColumn2.
+// Creates the GridSummaryColumn3.
 GridSummaryColumn summaryColumn3 = new GridSummaryColumn();
 summaryColumn3.Name = "PriceAmount";
 summaryColumn3.Format = "{Sum:c}";
@@ -604,7 +604,7 @@ summaryColumn2.Format = "{Count:d}"
 summaryColumn2.MappingName = "Quantity"
 summaryColumn2.SummaryType = SummaryType.CountAggregate
 
-' Creates the GridSummaryColumn2.
+' Creates the GridSummaryColumn3.
 Dim summaryColumn3 As New GridSummaryColumn()
 summaryColumn3.Name = "PriceAmount"
 summaryColumn3.Format = "{Sum:c}"
@@ -649,7 +649,7 @@ Me.sfDataGrid1.Style.GroupSummaryRowStyle.Font = New GridFontInfo(New Font("Aria
 ![Group summary row Appearance customization in windows forms datagrid](SfDataGrid_Summaries_UG_images/summaries9.png)
 
 ### Overriding Group Summary Renderer
-[GridGroupSummaryCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Renderers.GridGroupSummaryCellRenderer.html) is the cell renderer which renders the group summary row. The group summary row appearance and the summary value can be customized with the `GridGroupSummaryCellRender`.
+[GridGroupSummaryCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Renderers.GridGroupSummaryCellRenderer.html) is the cell renderer which renders the group summary row. The group summary row appearance and the summary value can be customized with the `GridGroupSummaryCellRenderer`.
 
 #### Creating Custom Renderer
 The number format for numeric values displayed on group summary row can be applied by overriding the `OnRender` method in `GridGroupSummaryCellRenderer` class.
@@ -1074,7 +1074,7 @@ GridSummaryColumn summaryColumn1 = new GridSummaryColumn();
 summaryColumn1.Name = "UnitPrice";
 summaryColumn1.SummaryType = SummaryType.DoubleAggregate;
 summaryColumn1.Format = "{Sum}";
-summaryColumn1.MappingName = " UnitPrice ";
+summaryColumn1.MappingName = "UnitPrice";
 
 // Adds the GridSummaryColumn in the SummaryColumns collection.
 tableSummaryRow1.SummaryColumns.Add(summaryColumn1);
@@ -1094,7 +1094,7 @@ Dim summaryColumn1 As New GridSummaryColumn()
 summaryColumn1.Name = "UnitPrice"
 summaryColumn1.SummaryType = SummaryType.DoubleAggregate
 summaryColumn1.Format = "{Sum}"
-summaryColumn1.MappingName = " UnitPrice "
+summaryColumn1.MappingName = "UnitPrice"
 
 ' Adds the GridSummaryColumn in the SummaryColumns collection.
 tableSummaryRow1.SummaryColumns.Add(summaryColumn1)
@@ -1117,7 +1117,7 @@ GridSummaryColumn summaryColumn1 = new GridSummaryColumn();
 summaryColumn1.Name = "UnitPrice";
 summaryColumn1.SummaryType = SummaryType.DoubleAggregate;
 summaryColumn1.Format = "{Sum:c}";
-summaryColumn1.MappingName = " UnitPrice ";
+summaryColumn1.MappingName = "UnitPrice";
 
 // Adds the GridSummaryColumn in the SummaryColumns collection.
 tableSummaryRow1.SummaryColumns.Add(summaryColumn1);
@@ -1131,7 +1131,7 @@ Dim summaryColumn1 As New GridSummaryColumn()
 summaryColumn1.Name = "UnitPrice"
 summaryColumn1.SummaryType = SummaryType.DoubleAggregate
 summaryColumn1.Format = "{Sum:c}"
-summaryColumn1.MappingName = " UnitPrice "
+summaryColumn1.MappingName = "UnitPrice"
 
 ' Adds the GridSummaryColumn in the SummaryColumns collection.
 tableSummaryRow1.SummaryColumns.Add(summaryColumn1)
@@ -1194,7 +1194,7 @@ GridSummaryColumn summaryColumn1 = new GridSummaryColumn();
 summaryColumn1.Name = "TotalPrice";
 summaryColumn1.SummaryType = SummaryType.DoubleAggregate;
 summaryColumn1.Format = "{Sum:c}";
-summaryColumn1.MappingName = " UnitPrice ";
+summaryColumn1.MappingName = "UnitPrice";
 
 // Adds the GridSummaryColumn in the SummaryColumns collection.
 tableSummaryRow1.SummaryColumns.Add(summaryColumn1);
@@ -1215,7 +1215,7 @@ Dim summaryColumn1 As New GridSummaryColumn()
 summaryColumn1.Name = "TotalPrice"
 summaryColumn1.SummaryType = SummaryType.DoubleAggregate
 summaryColumn1.Format = "{Sum:c}"
-summaryColumn1.MappingName = " UnitPrice "
+summaryColumn1.MappingName = "UnitPrice"
 
 ' Adds the GridSummaryColumn in the SummaryColumns collection.
 tableSummaryRow1.SummaryColumns.Add(summaryColumn1)

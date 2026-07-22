@@ -1,16 +1,17 @@
 ---
 layout: post
 title: Overview of Syncfusion license registration - Syncfusion
-description: Learn here about how to register Syncfusion Windows Forms license key for Windows Forms application for license validation.
+description: Learn how to register the Syncfusion license key in a Windows Forms application for license validation.
 platform: windowsforms
 control: Essential Studio
 documentation: ug
 ---
 
-
-# Register Syncfusion License Key in Windows Forms application
+# Register Syncfusion license key in a Windows Forms application
 
 The generated license key is just a string that needs to be registered before any Syncfusion control is initiated. The following code is used to register the license.
+
+**Registering a single license key**
 
 {% tabs %}
 {% highlight c# %}
@@ -18,8 +19,26 @@ Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY
 {% endhighlight %}
 {% endtabs %}
 
-N> * Place the license key between double quotes. Also, ensure that Syncfusion.Licensing.dll is referenced in your project where the license key is being registered.
-* Syncfusion license validation is done offline during application execution and does not require internet access.  Apps registered with a Syncfusion license key can be deployed on any system that does not have an internet connection.
+**Registering multiple license keys**
+
+You can register multiple license keys using either a comma (,) or a semicolon (;) as the separator between keys.
+
+{% tabs %}
+{% highlight c# %}
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY_1,YOUR LICENSE KEY_2,...");
+{% endhighlight %}
+{% endtabs %}
+
+or
+
+{% tabs %}
+{% highlight c# %}
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY_1;YOUR LICENSE KEY_2;...");
+{% endhighlight %}
+{% endtabs %}
+
+N> * Place the license key between double quotes. Also, ensure that Syncfusion.Licensing.dll is referenced in your project where the license key is being registered (see the package name in the Prerequisites note above).
+* Syncfusion license validation is done offline during application execution and does not require internet access. Apps registered with a Syncfusion license key can be deployed on any system that does not have an internet connection.
 
 I> Syncfusion license keys can be validated during the Continuous Integration (CI) processes to ensure proper licensing and prevent licensing errors during deployment. Refer to the [CI License Validation](https://help.syncfusion.com/windowsforms/licensing/licensing-faq/ci-license-validation) section for detailed instructions on how to implement it.
 
@@ -34,8 +53,8 @@ N> * If the **Application.Designer.vb** file is not included by default in the p
 {% highlight c# %}
 static void Main()
 {
-	//Register Syncfusion license
-	Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
+    //Register Syncfusion license
+    Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
 	
     Application.EnableVisualStyles();
     Application.SetCompatibleTextRenderingDefault(false);

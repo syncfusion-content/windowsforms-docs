@@ -61,9 +61,9 @@ treeNode.Optioned = True
 
 ### Draw custom option button
 
-The [TreeViewAv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) allows to draw the custom option button inside a tree node using the [DrawNodeCheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DrawNodeCheckBox) event. Set the `Handled` property of the [DrawTreeViewAdvNodeEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawTreeViewAdvNodeEventArgs.html) to `true` while drawing the custom option button.
+The [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) allows you to draw a custom option button inside a tree node using the [DrawNodeCheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DrawNodeCheckBox) event. Set the `Handled` property of the [DrawTreeViewAdvNodeEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawTreeViewAdvNodeEventArgs.html) to `true` while drawing the custom option button.
 
-> Note:  If `Handled` property of the [DrawTreeViewAdvNodeEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawTreeViewAdvNodeEventArgs.html) is `false`, then the [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) will automatically draw the usual radio button of the node.       
+> Note: If the `Handled` property of the [DrawTreeViewAdvNodeEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawTreeViewAdvNodeEventArgs.html) is `false`, then the [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) will automatically draw the default radio button of the node.
 
 This example illustrates how to draw the custom option button.
 
@@ -284,9 +284,9 @@ public partial class Form2 : Form
 
 
 ## CheckBox
-We can display CheckBox for all nodes in `TreeViewAdv` by setting `ShowCheckBoxes`  property to True. The CheckBox for individual nodes can also be shown or hidden using `ShowCheckBox` property in `TreeNodeAdv`. 
+We can display a CheckBox for all nodes in `TreeViewAdv` by setting the `ShowCheckBoxes` property to `True`. The CheckBox for individual nodes can also be shown or hidden using the `ShowCheckBox` property in `TreeNodeAdv`.
 
-The `InteractiveCheckBoxes` indicates whether the state of the parent node’s checkbox is based on the check state of its child nodes checkboxes. To set this for individual nodes set the `InteractiveCheckBox` property of the TreeNodeAdv.
+The `InteractiveCheckBoxes` property indicates whether the state of the parent node's checkbox is based on the check state of its child nodes' checkboxes. To set this for individual nodes, set the `InteractiveCheckBox` property of the TreeNodeAdv.
 
 <b> Property Table</b>
 
@@ -383,9 +383,9 @@ treeNode3.CheckState = System.Windows.Forms.CheckState.Unchecked
 
 ### Draw custom checkbox
 
-The [TreeViewAv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) allows to draw the custom checkbox inside a tree node using the [DrawNodeCheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DrawNodeCheckBox) event.  Set the `Handled` property of the [DrawTreeViewAdvNodeEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawTreeViewAdvNodeEventArgs.html) to `true` while drawing the custom checkbox.
+The [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) allows you to draw a custom checkbox inside a tree node using the [DrawNodeCheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DrawNodeCheckBox) event. Set the `Handled` property of the [DrawTreeViewAdvNodeEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawTreeViewAdvNodeEventArgs.html) to `true` while drawing the custom checkbox.
 
-> Note:  If `Handled` property of the [DrawTreeViewAdvNodeEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawTreeViewAdvNodeEventArgs.html) is `false`, then the [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) will automatically draw the usual checkbox of the node.     
+> Note: If the `Handled` property of the [DrawTreeViewAdvNodeEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawTreeViewAdvNodeEventArgs.html) is `false`, then the [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) will automatically draw the default checkbox of the node.
 
 This example illustrates how to draw the custom checkbox.
 

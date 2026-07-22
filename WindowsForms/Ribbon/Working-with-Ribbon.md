@@ -233,7 +233,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/how-to-add-the-
 
 ## Ribbon Resize behavior
 
-By default, the ribbon control dynamically resizes as width of the window decreases, when the windows border touches the last placed ToolStripEx, the total ToolStripEx will be converted into a dropdown button and the items can be accessed by clicking on that dropdown arrow.
+By default, the ribbon control dynamically resizes as the width of the window decreases. When the window's border touches the last placed ToolStripEx, the entire ToolStripEx will be converted into a dropdown button and the items can be accessed by clicking on that dropdown arrow.
 Same behavior will be continued to every ToolStripEx while minimized continuously. 
 Again, the ToolStripEx will be visible if the spacing between window border and ToolStripEx has enough space to allocate all the items in that ToolStripEx.
 
@@ -353,13 +353,14 @@ Launcher button for ToolStripEx can be hidden by changing the value of the prope
 {% highlight c# %}
 
 //This will hide the launcher
-this.ribbonControlAdv1.ShowLauncher = false;
+this.toolStripEx1.ShowLauncher = false;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Me.ribbonControlAdv1.ShowLauncher = False
+'This will hide the launcher
+Me.toolStripEx1.ShowLauncher = False
 
 {% endhighlight %}
 

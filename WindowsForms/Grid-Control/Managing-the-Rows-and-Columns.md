@@ -191,12 +191,12 @@ A frozen row is one that cannot be scrolled. The column headers and row headers 
 
 {% tabs %}
 {% highlight c# %}
-//Has 3 non-scrollable rows at the top.        
+//Has 2 non-scrollable rows at the top.        
 this.gridControl.Rows.FrozenCount = 2;  
 this.gridControl1.Cols.FrozenCount = 3; 
 {% endhighlight %}
 {% highlight vb %}
-'Has 3 non-scrollable rows at the top.        
+'Has 2 non-scrollable rows at the top.        
 Me.gridControl.Rows.FrozenCount = 2
 Me.gridControl1.Cols.FrozenCount = 3
 {% endhighlight %}
@@ -258,7 +258,7 @@ void gridControl1_RowsMoved(object sender, Syncfusion.Windows.Forms.Grid.GridRan
 }
 {% endhighlight %}
 {% highlight vb %}
-Private Me.gridControl1.RowsMoved += New Syncfusion.Windows.Forms.Grid.GridRangeMovedEventHandler(AddressOf gridControl1_RowsMoved)
+AddHandler Me.gridControl1.RowsMoved, New Syncfusion.Windows.Forms.Grid.GridRangeMovedEventHandler(AddressOf gridControl1_RowsMoved)
 Private Sub gridControl1_RowsMoved(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.GridRangeMovedEventArgs)
     Dim index As Integer = e.Count
 End Sub

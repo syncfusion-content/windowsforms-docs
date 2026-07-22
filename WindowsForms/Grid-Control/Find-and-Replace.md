@@ -110,7 +110,7 @@ void gridControl1_CurrentCellKeyDown(object sender, KeyEventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 'Triggering the CurrentCellKeyDown event.
-Private Me.gridControl1.CurrentCellKeyDown += New KeyEventHandler(AddressOf gridControl1_CurrentCellKeyDown)
+AddHandler Me.gridControl1.CurrentCellKeyDown, New KeyEventHandler(AddressOf gridControl1_CurrentCellKeyDown)
 
 Private Sub gridControl1_CurrentCellKeyDown(ByVal sender As Object, ByVal e As KeyEventArgs)
      If e.Control AndAlso e.KeyCode = Keys.F Then
@@ -134,7 +134,7 @@ End Sub
 The `Find and Replace` of the text in GridControl can be customized or can be used other than the `GridFindReplaceDialog`. The [GridFindReplaceEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFindReplaceEventArgs.html) class provides the options to the `GridFindReplaceDialogSink` to perform the `Find and Replace` programmatically without having dialog.
 
 ### Find and Find All
-To find first possible match at the earliest based on the search options, use the [Find](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupTypedListRecordsCollection.html) method. The below code is used to find the text in GridControl
+To find first possible match at the earliest based on the search options, use the [Find](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFindReplaceDialogSink.html) method. The below code is used to find the text in GridControl
 
 {% tabs %}
 {% highlight c# %}

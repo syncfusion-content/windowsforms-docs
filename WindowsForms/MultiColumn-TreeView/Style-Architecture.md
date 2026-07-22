@@ -9,9 +9,9 @@ documentation: ug
 
 # Style Architecture in Windows Forms MultiColumn TreeView
 
-The tree control employs an extensive Styles Architecture, that let users specify node styles globally, specifically for a class of nodes. This is possible by using a style information instance for each class of nodes, represented by a MultiColumnTreeView.TreeNodeAdvStyleInfo. Users will notice that for some of these classes of nodes, the style needs to be declared with a name at the tree level and stored in the tree’s BaseStyles hatch table.
+The tree control employs an extensive Styles Architecture, that let users specify node styles globally, specifically for a class of nodes. This is possible by using a style information instance for each class of nodes, represented by a `MultiColumnTreeView.TreeNodeAdvStyleInfo`. Users will notice that for some of these classes of nodes, the style needs to be declared with a name at the tree level and stored in the tree's BaseStyles hash table.
 
-As illustrated below, implicit style inheritance is enforced by the Framework while explicit style inheritance can be setup by the programmer. For all styles, explicit inheritance precedes implicit inheritance.
+As illustrated below, implicit style inheritance is enforced by the Framework, while explicit style inheritance can be set up by the programmer. For all styles, explicit inheritance precedes implicit inheritance.
 
 ### Implicit Style Inheritance
 
@@ -19,7 +19,7 @@ When a style is not set in a style info object, it inherits the style from the p
 
 *	Node Specific Style: At the bottom of the hierarchy is the node specific style which lets users specify a style directly on a TreeNodeAdv. Refer Node specific Style.
 
-*	Node’s Child Style: Each node also exposes a ChildStyle property where you can specify the style for the immediate children of that node. Refer Child Style for setting style of children nodes.
+*	Node's Child Style: Each node also exposes a ChildStyle property where you can specify the style for the immediate children of that node. Refer Child Style for setting style of children nodes.
 
 *	Node Level Styles: The Framework also lets you specify a style for all nodes at a level in the tree hierarchy, the top-most level being 1. Refer Node Level Style for setting node level style settings.
 
@@ -31,7 +31,7 @@ When a style is not set in a style info object, it inherits the style from the p
 
 ### Explicit Style Inheritance
 
-Any StyleInfo instance can also inherit explicitly from a specific named StyleInfo object. This can be done using the BaseStyle property of the TreeNodeAdvStyleInfo type. As noted previously, such named styles should be available in the tree control’s BaseStyles Collection Editor. You can also add custom styles using this editor.
+Any StyleInfo instance can also inherit explicitly from a specific named StyleInfo object. This can be done using the BaseStyle property of the TreeNodeAdvStyleInfo type. As noted previously, such named styles should be available in the tree control's BaseStyles Collection Editor. You can also add custom styles using this editor.
 
 <table>
 <tr>
@@ -67,12 +67,12 @@ StandardSubItemStyle</td><td>
 Indicates the style that all the sub items will inherit from.</td></tr>
 </table>
 
-## StandardStyle 
+## StandardStyle
 
-Setting a Common Style for all the Nodes in the MultiColumnTreeView
+Setting a common style for all the nodes in the MultiColumnTreeView.
 
-We can modify the background for all the children of a parent node by editing the StandardStyle property.
-The below image displays a gradient style for all the columns of the MultiColumnTreeView control.
+You can modify the background for all the children of a parent node by editing the `StandardStyle` property.
+The following image displays a gradient style for all the columns of the MultiColumnTreeView control.
 
 ### StandardStyle Settings
 
@@ -232,19 +232,19 @@ Specifies the sort type of the node.</td></tr>
 
 ![Style-Architecture_img10](Style-Architecture_Images/Style-Architecture_img10.jpg)
 
-Image Showing three Standard styles  for Nodes, SubItem and Column.
+Image showing three Standard styles for Nodes, SubItem, and Column.
 
-The below image displays a gradient style  for all the columns of the MultiColumnTreeView control by changing the properties of Standard Style 
+The following image displays a gradient style for all the columns of the MultiColumnTreeView control by changing the properties of the Standard Style.
 
 ![Style-Architecture_img9](Style-Architecture_Images/Style-Architecture_img9.jpg)
 
 
 ## Node Custom Style
-	
-Make a Node’s Style Inherit from Another Base Style
-Apart from the  Standard Style , we can also create custom Base styles using the BaseStyles Collection Editor. Select the Base Style option, then click Add Style.
 
-This new base style can be applied to any of the nodes, using TreeNodeAdv.BaseStyle property of the respective nodes.
+A node's style can be made to inherit from another base style.
+Apart from the Standard Style, you can also create custom base styles using the BaseStyles Collection Editor. Select the Base Style option, then click Add Style.
+
+This new base style can be applied to any of the nodes using the `TreeNodeAdv.BaseStyle` property of the respective nodes.
 
 This overrides the Standard Style settings for the specified nodes and displays the image as follows.
 
@@ -409,10 +409,10 @@ Specifies the sort type of the node.</td></tr>
 ![Style-Architecture_img2](Style-Architecture_Images/Style-Architecture_img2.jpg)
 
 ## Node Level Style
-	
-Setting a Common Style for all the Nodes in a Level
-MultiColumnTreeView lets you add node level styles using the BaseStyles Collection Editor. By default, this style will be applied to all the nodes in the Level1 for NodeLevel1 style, Level2 for NodeLevel2 style and so on.
-You can apply this style to any of the node by using TreeNodeAdv.BaseStyle property for a node. Refer to Style Settings table in Node Specific Style.
+
+Setting a common style for all the nodes at a level.
+MultiColumnTreeView lets you add node level styles using the BaseStyles Collection Editor. By default, this style is applied to all nodes in Level 1 for `NodeLevel1` style, Level 2 for `NodeLevel2` style, and so on.
+You can apply this style to any node by using the `TreeNodeAdv.BaseStyle` property for a node. Refer to the Style Settings table in Node Specific Style.
 
 ![Style-Architecture_img3](Style-Architecture_Images/Style-Architecture_img3.jpg)
 
@@ -420,11 +420,11 @@ You can apply this style to any of the node by using TreeNodeAdv.BaseStyle prope
 
 ## Column Style
 
-Standard - Column style is default style that will applied for all the columns of the MultiColumnTreeView control. The style settings can be edited by the user.
+Standard - Column style is the default style that will be applied to all the columns of the MultiColumnTreeView control. The style settings can be edited by the user.
 
-###Column Style Properties
+### Column Style Properties
 
-The below properties control the appearance of the columns.
+The following properties control the appearance of the columns.
 
 
 
@@ -502,11 +502,11 @@ The user-defined column style can be applied to any of the columns, using Column
 
 ## SubItem Styles
 
-Standard - SubItem style in the BaseStyles Collection Editor will be applied by default to all the sub items that are added to the tree nodes. User can also edit the default style settings.
+Standard - SubItem style in the BaseStyles Collection Editor is applied by default to all the sub items that are added to the tree nodes. Users can also edit the default style settings.
 
 ### Properties
 
-The below properties let you customize the sub items using the Styles editor.
+The following properties let you customize the sub items using the Styles editor.
 
 
 

@@ -12,7 +12,7 @@ This section discusses the following topics.
 
 ## OptionButton
 
-Option button allows the user to select only one node out of all nodes.
+Option button allows the user to select only one node from all nodes.
 
 **Property Table**
 
@@ -44,7 +44,7 @@ Indicates if the option button will be shown for the node.</td></tr>
 <tr>
 <td>
 Optioned</td><td>
-Gets or sets optioned state to a node</td></tr>
+Gets or sets the optioned state of a node.</td></tr>
 <tr>
 <td>
 OptionButtonColor</td><td>
@@ -81,9 +81,9 @@ Me.multiColumnTreeView1.Nodes(0).Optioned = True
 
 ## CheckBox
 
-The ShowCheckBoxes property when set will display check box for all the nodes. To apply checkbox to individual nodes, set the TreeNodeAdv.ShowCheckBox property, only for the required nodes in the NodeCollection Editor.
+The `ShowCheckBoxes` property, when set, displays a check box for all the nodes. To apply the check box to individual nodes, set the `TreeNodeAdv.ShowCheckBox` property only for the required nodes in the NodeCollection Editor.
 
-The InteractiveCheckBoxes indicates whether the state of the parent node’s checkbox is based on the check state of its child nodes checkboxes. To set this for individual nodes set the InteractiveCheckBox property of the TreeNodeAdv.
+The `InteractiveCheckBoxes` property indicates whether the state of the parent node's check box is based on the check state of its child nodes' check boxes. To set this for individual nodes, set the `InteractiveCheckBox` property of the `TreeNodeAdv`.
 
 **Property Table**
 
@@ -156,8 +156,8 @@ Me.multiColumnTreeView1.Nodes(0).Checked = True
 
 **Tristate CheckBox Settings**
 
-In the MultiColumnTreeView, the partial checking of the child nodes is supported. They are Checked State, Unchecked State and Intermediate State.
-The CheckColor and CheckState property is used to set the color and the state of the check mark of the selected node. The options for the CheckState property are Checked, Unchecked and Indeterminate.
+In the MultiColumnTreeView, the partial checking of the child nodes is supported. They are Checked State, Unchecked State, and Intermediate State.
+The `CheckColor` and `CheckState` properties are used to set the color and the state of the check mark of the selected node. The options for the `CheckState` property are `Checked`, `Unchecked`, and `Indeterminate`.
 
 *Property Table*
 
@@ -200,8 +200,8 @@ TreeNodeAdv can hold controls using custom control feature. This increases the f
 
 ### LabelEdit
 
-Indicates whether the label text of the tree nodes can be edited. By default, it is false . To edit the node,LabelEdit property must be set as true. BeforeEdit event occurs before a node gets into edit node.
-For further details refer [editing event](https://help.syncfusion.com/windowsforms/multicolumn-treeview/multicolumntreeview-events#node-editing). 
+Indicates whether the label text of the tree nodes can be edited. By default, it is `false`. To edit a node, the `LabelEdit` property must be set to `true`. The `BeforeEdit` event occurs before a node enters edit mode.
+For further details, refer to the [Editing Event](https://help.syncfusion.com/windowsforms/multicolumn-treeview/multicolumntreeview-events#node-editing).
 
 
 

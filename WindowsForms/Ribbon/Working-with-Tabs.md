@@ -9,7 +9,7 @@ documentation: ug
 
 # Working with Tabs in Windows Forms Ribbon (RibbonControlAdv)
 
-Ribbon panels are represented as Tabs(ToolStripTabItem) with tab name above the panel, these panels are split into groups which are ‘ToolStripEx’, this ToolStripEx accepts to display various items like buttons, gallery items, labels and panels.
+Ribbon panels are represented as Tabs (ToolStripTabItem) with the tab name above the panel. These panels are split into groups represented as `ToolStripEx`, which displays various items like buttons, gallery items, labels and panels.
 
 The following image shows four tabs (**Home**, **Send/Receive**, **Folder** and **View**). The Home tab which is selected consists of six ‘ToolStripEx’ (**New**, **Delete**, **Respond**, **Move**, **Tags** and **Quick Steps** ).
 
