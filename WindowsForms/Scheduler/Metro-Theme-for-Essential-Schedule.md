@@ -9,7 +9,7 @@ documentation: ug
 
 # Metro Theme for Schedule in Windows Forms Scheduler
 
-This feature enables you to apply new Metro styles to the Schedule control. 
+This feature enables you to apply the Metro theme to the Schedule control. 
 
 ### Use case scenario
 
@@ -49,9 +49,13 @@ You can apply Metro theme to the Schedule control by setting the GridVisualStyle
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.Windows.Forms.Schedule;
+
 this.scheduleControl1.GetScheduleHost().Schedule.Appearance.VisualStyle = Syncfusion.Windows.Forms.GridVisualStyles.Metro;
 {% endhighlight %}
 {% highlight vb %}
+Imports Syncfusion.Windows.Forms.Schedule
+
 Me.scheduleControl1.GetScheduleHost().Schedule.Appearance.VisualStyle = Syncfusion.Windows.Forms.GridVisualStyles.Metro
 {% endhighlight %}
 {% endtabs %}
