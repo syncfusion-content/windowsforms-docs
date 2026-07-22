@@ -230,7 +230,7 @@ To get the most out of the Syncfusion<sup style="font-size:70%">&reg;</sup> WinF
 - **Use Descriptive Queries** - Avoid overly brief or ambiguous requests. Providing sufficient detail helps improve the accuracy and relevance of the response.
 - **Stay Consistent** - Keep file organization, naming conventions, and coding standards consistent throughout your WinForms project.
 - **Start Fresh for New Topics** - Begin a new chat when switching to a different component or task to maintain clean context.
-- **Use Advanced AI Models** - For optimal performance, leverage advanced frontier AI models (such as latest-generation **Claude**, **GPT**, or **Gemini models**).
+- **Use Advanced AI Models** - For the best results, use advanced AI models such as the latest-generation **Claude**, **GPT**, or **Gemini** models.
 - **For Troubleshooting** - Use AI suggestions for common issues; consult the [official documentation](https://help.syncfusion.com/windowsforms/overview) or [support](https://support.syncfusion.com/support/tickets/create) for complex problems.
 - **Minimize Active Tools** - Limit the number of active MCP tools in your IDE to prevent tool-selection ambiguity and improve response accuracy.
 
