@@ -98,7 +98,7 @@ Choose one of these two options:
 
 **Option 1: Install MCP Server**
 
-The MCP Server establishes a direct connection between your IDE-integrated AI and Syncfusion WinForms documentation, enabling the AI to retrieve real-time information for unfamiliar controls. Using Retrieval-Augmented Generation (RAG), it injects relevant documentation into the AI's context to generate accurate and up-to-date code suggestions. For setup steps, see the [SyncfusionWinFormsAssistant MCP Server](https://help.syncfusion.com/windowsforms/ai-coding-assistant/mcp-server) page.
+The MCP Server establishes a direct connection between your IDE-integrated AI and Syncfusion WinForms documentation, enabling the AI to retrieve real-time information for unfamiliar controls. Using Retrieval-Augmented Generation (RAG), it injects relevant documentation into the AI's context to generate accurate and up-to-date code suggestions.
  
 **What you get:**
 - Complete documentation for all 145+ WinForms controls

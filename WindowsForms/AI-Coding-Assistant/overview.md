@@ -29,8 +29,6 @@ To use the AI Coding Assistant, you need:
 * An active [API KEY](https://syncfusion.com/account/api-key)
 * A [Windows Forms application that includes Syncfusion Windows Forms](https://help.syncfusion.com/windowsforms/overview)
 
-The AI Coding Assistant is supported on Syncfusion WinForms current and previous major releases. See the [SyncfusionWinFormsAssistant MCP Server](https://help.syncfusion.com/windowsforms/ai-coding-assistant/mcp-server) page for setup steps and the [Prompt Library](https://help.syncfusion.com/windowsforms/ai-coding-assistant/prompt-library) for ready-made prompts.
-
 ## Unlimited Access
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> offers unlimited access to the AI Coding Assistant, with no limitations on:

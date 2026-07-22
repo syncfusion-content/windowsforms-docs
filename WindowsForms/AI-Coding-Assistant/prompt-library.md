@@ -21,8 +21,6 @@ Before starting, make sure your MCP Server is set up and running.
 * Execute via the MCP Server.
 * Always check and test the code before adding it to your project.
 
-Prompts target the current major Syncfusion WinForms release and are validated against the latest APIs available in that release.
-
 ## Component-Specific Prompts
 
 ### DataGrid
