@@ -7,7 +7,7 @@ control: Installation and Deployment
 documentation: ug
 ---
 
-# Installing Syncfusion Windows Forms Web Installer
+# Installing Syncfusion Windows Forms web installer
 
 
 ## Overview
