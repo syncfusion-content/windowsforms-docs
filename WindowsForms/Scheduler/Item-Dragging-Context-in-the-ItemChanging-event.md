@@ -9,11 +9,11 @@ documentation: ug
 
 # Item Dragging Context in the ItemChanging event in Scheduler
 
-This feature provides support to detect the dragging context when an item is dropped in the schedule part or calendar part. It also enables you to cancel the needed items through the ItemChanging event.
+This feature provides support to detect the dragging context when an item is dropped in the schedule part or calendar part. It also enables you to cancel specific items as needed through the ItemChanging event.
 
 ### Use case scenario
 
-In ItemChanging event, through the ItemDragHitContext enumeration, you can detect the dragging context (Schedule or Calendar) and cancel the needed items.
+In the ItemChanging event, through the ItemDragHitContext enumeration, you can detect the dragging context (Schedule or Calendar) and cancel specific items as needed.
 
 ### Property
 
@@ -51,7 +51,7 @@ You can get the schedule sample from the following online location:
 
 [http://samples.syncfusion.com/windowsforms](http://samples.syncfusion.com/windowsforms)
 
-### Adding this support to an application
+### Adding drag-context detection to an application
 
 The following steps help you to get the target part in the Schedule control while dragging:
 
@@ -62,9 +62,13 @@ The following steps help you to get the target part in the Schedule control whil
 {% capture codesnippet1 %}​
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.Windows.Forms.Schedule;
+
 this.scheduleControl1.ItemChanging += new ScheduleAppointmentChangingEventHandler(scheduleControl1_ItemChanging);
 {% endhighlight %}
 {% highlight vb %}
+Imports Syncfusion.Windows.Forms.Schedule
+
 AddHandler scheduleControl1.ItemChanging, AddressOf scheduleControl1_ItemChanging
 {% endhighlight %}
 {% endtabs %}

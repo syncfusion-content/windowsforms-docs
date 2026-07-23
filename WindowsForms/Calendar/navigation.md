@@ -13,7 +13,7 @@ By default, the calendar displays the month view. You can move from current mont
 
 ## Different views 
 
-Calendar supports month, year, decade, and century views and provides intuitive interface through which you can navigate and quickly select dates.
+Calendar supports month, year, decade, and century views and provides an intuitive interface through which you can navigate and quickly select dates.
 
 ![Navigation view](navigation-images/allview.png)
 
@@ -24,6 +24,7 @@ You can choose the required view options in the calendar by the [ViewMode](https
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 // setting Year and decade mode to display year and decade view
     
@@ -32,6 +33,7 @@ calendar.ViewMode = Syncfusion.WinForms.Input.Enums.CalendarViewType.Year | Sync
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 ' setting Year and decade mode to display year and decade view
 
@@ -43,7 +45,7 @@ calendar.ViewMode = Syncfusion.WinForms.Input.Enums.CalendarViewType.Year Or Syn
 
 ## Navigation through mouse
 
-The navigation between next or previous range of dates for the current view in the calendar can be done by clicking up and down navigation buttons in the calendar header. The `SfCalendar` control allows you to navigate from one view to other view by clicking the header text of the calendar and selecting the cell from the view to navigate back to the next available view in the `ViewMode`.
+The navigation between the next and previous ranges of dates for the current view in the calendar can be done by clicking up and down navigation buttons in the calendar header. The `SfCalendar` control allows you to navigate from one view to other view by clicking the header text of the calendar and selecting the cell from the view to navigate back to the next available view in the `ViewMode`.
 
 ## Navigation through keyboard
 
@@ -51,15 +53,16 @@ The `SfCalendar` control allows you to navigate from one view to other view by p
 
 ## Navigation through touch
 
-The navigation between next or previous range of dates for the current view in the calendar can be done by panning on the calendar view. The `SfCalendar` control allows you to navigate from one view to other view by tapping the header of the calendar. Tapping the cell in view navigates back to the next available view in the `ViewMode`.
+The navigation between the next and previous ranges of dates for the current view in the calendar can be done by panning on the calendar view. The `SfCalendar` control allows you to navigate from one view to other view by tapping the header of the calendar. Tapping the cell in view navigates back to the next available view in the `ViewMode`.
 
 ## Handle view change
 
-The [ViewChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html) event occurs when the calendar header text is clicked to change the view from one view to another view. The change of view can be restricted on-demand by handling the [ViewChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html) event. The `ViewChangingEventArgs` provides information about the old and new `ViewType`. This helps to restrict the view change in specific scenarios only. The following code example illustrates the same:
+The [ViewChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html) event occurs when the calendar header text is clicked to change the calendar from one view to another. The change of view can be restricted on-demand by handling the [ViewChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html) event. The `ViewChangingEventArgs` provides information about the old and new `ViewType`. This helps to restrict the view change in specific scenarios only. The following code example illustrates the same:
 
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 // Invoked when the view changed.
 
@@ -82,10 +85,11 @@ The [ViewChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinFor
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 ' Invoked when the view changed.
 
-calendar.ViewChanging += SfCalendar_ViewChanging
+AddHandler calendar.ViewChanging, AddressOf SfCalendar_ViewChanging
 
     Private Sub SfCalendar_ViewChanging(ByVal sender As 
     Syncfusion.WinForms.Input.SfCalendar, ByVal args As Syncfusion.WinForms.Input.Events.ViewChangingEventArgs)
@@ -110,6 +114,7 @@ The [Navigating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 // Invoked the Navigating event.
 
@@ -132,10 +137,11 @@ private void SfCalendar_Navigating(SfCalendar sender, Syncfusion.WinForms.Input.
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 ' Invoked the Navigating event.
 
-Me.sfCalendar.Navigating = (Me.sfCalendar.Navigating + SfCalendar_Navigating)
+AddHandler Me.sfCalendar.Navigating, AddressOf SfCalendar_Navigating
     
     Private Sub SfCalendar_Navigating(ByVal sender As SfCalendar, ByVal args As Syncfusion.WinForms.Input.Events.NavigatingEventArgs)
 
@@ -155,11 +161,12 @@ End Sub
 
 ## Disable animation on navigation
 
-The SfCalendar animates the content while navigating between different sets of date ranges or move from one view to another view. This animation can be disabled by setting the [EnableAnimation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_EnableAnimation) to false. The following code example illustrates the same:
+The SfCalendar animates the content while navigating between different sets of date ranges or moving from one view to another view. This animation can be disabled by setting the [EnableAnimation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_EnableAnimation) to false. The following code example illustrates the same:
 
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 // Disabling the animation
 
@@ -168,6 +175,7 @@ calendar.EnableAnimation = false;
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 ' Disabling the animation
 
