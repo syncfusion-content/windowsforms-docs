@@ -11,7 +11,7 @@ documentation: ug
 
 ## Overview
 
-We have expanded design-time support—such as Smart Tags, Custom Collection Editors, and Custom Forms for UITypeEditor—to include controls targeting .NET 6 and higher, which were previously available only in the .NET Framework.
+We have added design-time support—such as Smart Tags, Custom Collection Editors, and Custom Forms for UITypeEditor—to include controls targeting .NET 6 and higher, which were previously available only in the .NET Framework.
 
 ## Why We Use the WinForms Designer SDK
 Microsoft has introduced the **WinForms Designer SDK** NuGet package to support custom design-time experiences in Visual Studio for .NET Core and later versions. This SDK replaces the traditional designer APIs that were previously part of the .NET Framework and Windows OS.
@@ -22,11 +22,11 @@ The new Designer SDK offers several key advantages:
 * Not reliant on the .NET Framework
 * Fully integrated with Visual Studio
 
-It provides essential extension points and base classes that allow developers to implement advanced design-time features such as, **Smart Tags, Custom Collection Editors, Custom Forms for UITypeEditor**.
+It provides essential extension points and base classes that allow developers to implement advanced design-time features such as **Smart Tags, Custom Collection Editors, Custom Forms for UITypeEditor**.
 
 These features are now available for controls targeting .NET 6 and higher.
 
-To enable this functionality, we have included the **WinForms Designer SDK** as a dependency in our control NuGet packages starting from this version **v26.1.35**. This ensures a consistent and enhanced design-time experience across modern .NET platforms.
+To enable this functionality, we have added the **WinForms Designer SDK** as a dependency in our control NuGet packages starting from this version **v26.1.35**. This ensures a consistent and enhanced design-time experience across modern .NET platforms, including .NET 6, .NET 7, .NET 8, .NET 9, and later.
 
 ## Control Package Details
 We have added the **WinForms Designer SDK** as a dependency in the following control packages. Please refer to the table below for details:
@@ -145,6 +145,6 @@ N> The listed package assemblies are built against the Designer SDK to provide i
 
 Certain controls properties in .NET Core WinForms have known design‑time limitations. These issues are largely caused by the out‑of‑process WinForms Designer architecture, which results in UITypeEditors, collection editors, and smart tags having only limited communication with the design surface.
 
-We have documented these details in the following Knowledge Base article. Please refer to it for comprehensive information.
+We have documented these details in the following Knowledge Base article. Please refer to it for comprehensive information. Refer to the [Visual Studio version requirements](https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes) for the .NET 6 and later WinForms Designer SDK support.
 
 **KB Link** : [Known Design-Time Limitations in .NET Core WinForms and Syncfusion Controls](https://support.syncfusion.com/kb/article/22154/known-design-time-limitations-in-net-core-winforms-and-syncfusion-controls)

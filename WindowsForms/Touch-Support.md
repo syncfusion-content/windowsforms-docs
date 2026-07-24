@@ -11,7 +11,8 @@ documentation: ug
 
 ## Gesture
 
-Gestures determine whether a finger or stylus has moved over a control. Syncfusion<sup>®</sup> WinForms controls support the following touch gestures: Tap, Swipe, Pinch, and Hold.<br/>
+Gestures detect whether a finger or stylus has moved over a control. Syncfusion<sup>®</sup> WinForms controls support the following touch gestures: Tap, Swipe, Pinch, and Hold.
+
 This table shows the gesture mappings for each control.
 
 <table>
@@ -30,7 +31,7 @@ Grids</td><td>
 Cell Grid</td><td>
 Selection, Scrolling</td><td>
 -</td><td>
-Click and select</td><td>
+Click and Select</td><td>
 Right-Click</td></tr>
 <tr>
 <td>
@@ -187,7 +188,7 @@ Context Menu</td></tr>
 <tr>
 <td>
 </td><td>
-TabbedMdI Manager</td><td>
+TabbedMDI Manager</td><td>
 TabMove</td><td>
 -</td><td>
 Click</td><td>

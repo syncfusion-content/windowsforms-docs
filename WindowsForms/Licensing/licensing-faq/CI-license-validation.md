@@ -20,7 +20,7 @@ documentation: ug
 
 # Syncfusion License Key Validation in CI Services
 
-Syncfusion license key validation in CI services ensures that Syncfusion Essential Studio components are properly licensed during CI processes. Validating the license key at the CI level can prevent licensing errors during deployment. Set up the continuous integration process to fail when the license key validation fails by surfacing a non-zero exit code from the validation script.
+Syncfusion license key validation in CI services ensures that Syncfusion Essential Studio components are properly licensed during CI processes. Validating the license key at the CI level can prevent licensing errors during deployment. Set up the CI process to fail when the license key validation fails by surfacing a non-zero exit code from the validation script.
 
 The following sections show how to validate the Syncfusion license key in CI services.
 
@@ -29,7 +29,7 @@ The following sections show how to validate the Syncfusion license key in CI ser
 * Open the `LicenseKeyValidation.ps1` PowerShell script in a text or code editor, as shown in the example below.
 
 {% tabs %}
-{% highlight c# tabtitle="v34.1.29 and later" %}
+{% highlight powershell tabtitle="v34.1.29 and later" %}
 # Replace the parameters with the desired platform, version, and actual license key.
 
 $result = & $PSScriptRoot"\LicenseKeyValidatorConsole.exe" /platform:"UIComponent" /version:"34.1.29" /licensekey:"Your License Key"
@@ -37,7 +37,7 @@ $result = & $PSScriptRoot"\LicenseKeyValidatorConsole.exe" /platform:"UIComponen
 Write-Host $result
 {% endhighlight %}
 
-{% highlight c# tabtitle="Before v34.1.29" %}
+{% highlight powershell tabtitle="Before v34.1.29" %}
 # Replace the parameters with the desired platform, version, and actual license key.
 
 $result = & $PSScriptRoot"\LicenseKeyValidatorConsole.exe" /platform:"WindowsForms" /version:"26.2.4" /licensekey:"Your License Key"
@@ -48,13 +48,13 @@ Write-Host $result
 
 * Update the parameters in the script:
   
-  **Platform:** Set /platform:"**UIComponent**" for v34.1.29 and later, or /platform:"**WindowsForms**" for earlier versions (use the relevant Syncfusion platform as needed).
+  **Platform:** Set `/platform:"UIComponent"` for v34.1.29 and later, or `/platform:"WindowsForms"` for earlier versions (use the relevant Syncfusion platform as needed).
 
-  **Version:** Change the value for `/version:` to the required version (e.g., `"26.2.4"`).
+  **Version:** Change the value for `/version:` to the required version (e.g., `"34.1.29"` for v34+ or `"26.2.4"` for earlier versions).
 
   **License Key:** Replace the value for `/licensekey:` with your actual license key (e.g., `"YOUR LICENSE KEY"`).
 
-  N> This feature is supported from version 16.2.0.41 of Essential Studio and later.
+  N> This feature is supported from version 16.2.0.41 of Essential Studio and later. The `Platform.UIComponent` value replaces `Platform.WindowsForms` from v34.1.29 onwards.
 
 ## Azure Pipelines
 
@@ -67,7 +67,7 @@ Write-Host $result
 The following example shows the syntax for Windows build agents.
 
 {% tabs %}
-{% highlight c# tabtitle="YAML" %}
+{% highlight yaml tabtitle="YAML" %}
 pool:
   vmImage: 'windows-latest'
 
@@ -97,7 +97,7 @@ steps:
 The following example shows the syntax for validating the Syncfusion license key in GitHub Actions.
 
 {% tabs %}
-{% highlight c# tabtitle="YAML" %}
+{% highlight yaml tabtitle="YAML" %}
   steps:
   - name: Syncfusion License Validation
     shell: pwsh
@@ -112,10 +112,10 @@ The following example shows the syntax for validating the Syncfusion license key
 
 * Add a stage in the Jenkins pipeline to execute the `LicenseKeyValidation.ps1` script in PowerShell. On Windows agents, use the `bat` step (the `sh` step is for Linux/Unix agents).
 
-The following example shows the syntax for validating the Syncfusion license key in the Jenkins pipeline.
+The following example shows the syntax for validating the Syncfusion license key in the Jenkins pipeline on a Windows agent.
 
 {% tabs %}
-{% highlight json %}
+{% highlight groovy tabtitle="Jenkinsfile (Windows agent)" %}
 pipeline {
 	agent any
 	environment {
@@ -124,7 +124,7 @@ pipeline {
 	stages {
 		stage('Syncfusion License Validation') {
 			steps {
-				sh 'pwsh ${LICENSE_VALIDATION}'
+				bat 'pwsh %LICENSE_VALIDATION%'
 			}
 		}
 	}
@@ -134,9 +134,9 @@ pipeline {
 
 ## Validate the License Key By Using the ValidateLicense() Method
 
-* Register the license key properly by calling RegisterLicense("License Key") method with the license key. 
+* Register the license key properly by calling `RegisterLicense("License Key")` with the license key.
 
-* Once the license key is registered, it can be validated by using the `ValidateLicense(Platform.WindowsForms)` method. This ensures that the license key is valid for the platform and version you are using. Refer to the following example.
+* Once the license key is registered, it can be validated by using the `ValidateLicense(Platform.WindowsForms)` method (or `ValidateLicense(new[] { Platform.UIComponent })` for v34.1.29+). This ensures that the license key is valid for the platform and version you are using. The method returns `true` when the registered key is valid; the `out string validationMessage` overload also returns a description of any failure. Refer to the following example.
 
 {% tabs %}
 {% highlight c# tabtitle="v34.1.29 and later" %}
@@ -163,9 +163,8 @@ bool isValid = SyncfusionLicenseProvider.ValidateLicense(Platform.WindowsForms);
 
 N> Use `Platform.UIComponent` for UI component license validation in v34.1.29 and later. `Platform.WindowsForms` is not supported from v34.1.29 onwards.
 
-* If the ValidateLicense() method returns true, registered license key is valid and can proceed with deployment.
-
-* If the ValidateLicense() method returns false, there will be invalid license errors in deployment due to either an invalid license key or an incorrect assembly or package version that is referenced in the project. Please ensure that all the referenced Syncfusion assemblies or NuGet packages are all on the same version as the license key’s version before deployment. 
+* If the `ValidateLicense()` method returns `true`, the registered license key is valid and the build can proceed with deployment.
+* If the `ValidateLicense()` method returns `false`, the deployment will report invalid license errors. This typically means the license key is invalid or the referenced assembly/package version does not match the license key's version. Please ensure that all the referenced Syncfusion assemblies or NuGet packages are on the same version as the license key's version before deployment.
 
 ## Validate the License Key By Using the Unit Test Project
 
@@ -175,7 +174,7 @@ N> Use `Platform.UIComponent` for UI component license validation in v34.1.29 an
 
 * For more details on creating unit test projects in Visual Studio, refer to the [Getting Started with Unit Testing guide](https://learn.microsoft.com/en-us/visualstudio/test/getting-started-with-unit-testing?view=vs-2022&tabs=dotnet%2Cmstest#create-unit-tests).
 
-* Add a reference (or NuGet package) for `Syncfusion.Licensing` to the test project, and register the license key by calling the `RegisterLicense("YOUR LICENSE KEY")` method in the test project's setup.
+* Add a reference to the application/project under test (or to the same `Syncfusion.Licensing` NuGet package the application uses), and add the `Syncfusion.Licensing` NuGet package to the test project. Register the license key by calling the `RegisterLicense("YOUR LICENSE KEY")` method in the test project's setup (or load it from an environment variable / secret).
 
 N> * Place the license key between double quotes (e.g., `RegisterLicense("YOUR LICENSE KEY")`). Ensure that `Syncfusion.Licensing.dll` is referenced in the project where the license key is being registered.
 
@@ -184,7 +183,7 @@ N> * Place the license key between double quotes (e.g., `RegisterLicense("YOUR L
 * Refer to the following example, which demonstrates how to register and validate the license key in the unit test project.
 
 {% tabs %}
-{% highlight c# %}
+{% highlight c# tabtitle="NUnit" %}
 public void TestSyncfusionWindowsFormsLicense()
 {
 	var platform = Platform.WindowsForms;
@@ -203,7 +202,7 @@ public void TestSyncfusionWindowsFormsLicense()
 {% endhighlight %}
 {% endtabs %}
 
-* Once the unit test is executed, if the license key validation passes for the specified platform, the output similar to the following will be displayed in the Test Explorer window.
+* After running the test, the output below appears in the Test Explorer window on success.
 
 ![License Validation Success Message](licensing-images/unit-test-success-message.png)
 
@@ -213,7 +212,7 @@ public void TestSyncfusionWindowsFormsLicense()
 
 ### Troubleshooting
 
-License validation fails due to either an invalid license key or an incorrect assembly or package version referenced in the project. In such cases:
+License validation fails due to either an invalid license key or an incorrect assembly or package version referenced in the project. Perform the following steps:
 
 1. Verify that you are using a valid license key for the platform.
 2. Ensure that the assembly or package versions referenced in the project match the version of the license key.

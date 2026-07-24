@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Syncfusion Windows Forms Agent Skills for AI Assistants
 
-This guide introduces **Syncfusion Windows Forms Skills**, a knowledge package that enables AI assistants (VS Code, Cursor, CodeStudio, etc.) to understand and generate accurate Windows Forms code using official APIs, patterns, and theming guidelines.
+This guide introduces **Syncfusion Windows Forms Skills**, a knowledge package that enables AI assistants (Visual Studio Code, Cursor, CodeStudio, etc.) to understand and generate accurate Windows Forms code using official APIs, patterns, and theming guidelines.
 
 These skills eliminate common issues with generic AI suggestions by grounding the assistant in accurate component usage patterns, API structures, supported features, and project‑specific configuration.
 
@@ -20,7 +20,8 @@ Before installing Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms
 
 - Required [Node.js](https://nodejs.org/en/) version >= 16
 - Windows Forms application (existing or new); see [Overview](https://help.syncfusion.com/windowsforms/overview)
-- A supported AI agent or IDE that integrates with the Skills CLI (VS Code, Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio, Cursor, etc.)
+- A supported AI agent or IDE that integrates with the Skills CLI (Visual Studio Code, Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio, Cursor, etc.)
+- A Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio for Windows Forms release that matches the skill pack version installed.
 
 ## Key Benefits
 
@@ -37,7 +38,7 @@ Before installing Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms
 
 **Design‑System Guidance**
 - Theme usage, including light and dark variants
-- VisualStyle patterns and customization approaches
+- [VisualStyle](https://help.syncfusion.com/windowsforms/visualstyle) patterns and customization approaches
 - Consistent design alignment across Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms components
 
 ## Installation
@@ -46,7 +47,7 @@ Install [Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms componen
 
 ### Install all skills
 
-Use the following command to install all component skills at once in the `.agents/skills` directory:
+From your project root, run the following command to install all component skills at once in the `.agents/skills` directory. The `-y` flag accepts the default answers (project scope, default agent) without prompting.
 
 {% tabs %}
 {% highlight bash tabtitle="NPM" %}
@@ -58,7 +59,7 @@ npx skills add syncfusion/winforms-ui-components-skills -y
 
 ### Install selected skills
 
-Use the following command to install skills interactively:
+Run the command below from your project root to install skills interactively. The command opens a list of available skills and prompts for the target agent and installation scope.
 
 {% tabs %}
 {% highlight bash tabtitle="NPM" %}
@@ -68,7 +69,7 @@ npx skills add syncfusion/winforms-ui-components-skills
 {% endhighlight %}
 {% endtabs %}
 
-The terminal will display a list of available skills. Use the arrow keys to navigate, the space bar to select the desired skills, and the Enter key to confirm.
+The terminal will display a list of available skills. Use the **arrow keys** to move between skills, the **space bar** to toggle a skill on or off, and the **Enter** key to confirm your selection. If you do not select any skills and press Enter, the command exits without installing.
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
 
@@ -125,26 +126,26 @@ Choose your installation scope (project-level or global), then confirm to comple
 {% endhighlight %}
 {% endtabs %}
 
-This registers the Syncfusion<sup style="font-size:70%">&reg;</sup> skill pack so your AI assistant can automatically load it in supported IDEs such as [Code Studio](https://help.syncfusion.com/code-studio/reference/configure-properties/skills), [Visual Studio Code](https://code.visualstudio.com/docs/copilot/customization/agent-skills), and [Cursor](https://cursor.com/docs/skills).
+This registers the Syncfusion<sup style="font-size:70%">&reg;</sup> skill pack so your AI assistant can automatically load it in supported IDEs such as [Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio](https://help.syncfusion.com/code-studio/reference/configure-properties/skills), [Visual Studio Code](https://code.visualstudio.com/docs/copilot/customization/agent-skills), and [Cursor](https://cursor.com/docs/skills). After installation, restart your IDE (or use the **Reload Window** command) so the IDE can detect the newly added skill files.
 
 To learn more about the Skills CLI, refer [here](https://www.skills.sh/docs). 
-
-## How Syncfusion<sup style="font-size:70%">&reg;</sup> Agent Skills Work
-
-1. **Reads relevant Skill files based on queries**, retrieving component usage patterns, APIs, and best‑practice guidance from installed Syncfusion<sup style="font-size:70%">&reg;</sup> Skills. The assistant initially loads only skill names and descriptions, then dynamically loads the required skill and reference files as needed to provide accurate Syncfusion guidance.
-2. **Enforces Syncfusion<sup style="font-size:70%">&reg;</sup> best practices**, including:
-
-   - Using the required assemblies for each component.
-   - Injecting applicable component controls (for example, paging, sorting, filtering, and other feature controls).
-   - Adding the correct theme and VisualStyle settings.
-3. **Generates component‑accurate code**, avoiding invalid properties or unsupported patterns.
 
 ### Using the AI Assistant
 
 Once skills are installed, the assistant can be used to generate and update Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms code for tasks such as:
 
 - "Add a DataGrid with paging, sorting, and filtering."
-- "Create a Scheduler with week view and drag‑drop."
+- "Create a Schedule control with week view and drag‑drop."
+
+## How Syncfusion<sup style="font-size:70%">&reg;</sup> Agent Skills Work
+
+1. **Reads relevant Skill files based on queries**, retrieving component usage patterns, APIs, and best‑practice guidance from installed Syncfusion<sup style="font-size:70%">&reg;</sup> Skills. The assistant initially loads only skill names and descriptions. It then dynamically loads the required skill and reference files as needed to provide accurate Syncfusion guidance. Skill files are matched to the query by name, description, and file references declared inside the skill.
+2. **Enforces Syncfusion<sup style="font-size:70%">&reg;</sup> best practices** when generating code, including:
+
+   - Using the required assemblies for each component.
+   - Recommending applicable feature controls (for example, paging, sorting, filtering) so they are included in the generated code.
+   - Adding the correct theme and [VisualStyle](https://help.syncfusion.com/windowsforms/visualstyle) settings. Supported themes include Office2007, Office2010, Office2013, Office2016, Office2019, Metro, and HighContrast.
+3. **Generates component‑accurate code**, avoiding invalid properties or unsupported patterns.
 
 ## Skills CLI Commands
 
@@ -212,9 +213,10 @@ Yes. Once installed, supported agents automatically detect and load relevant ski
 
 **Skills are not being loaded**
 
-Verify that skills are installed in the correct agent directory, restart the IDE, and confirm that the agent supports external skill files.
+Verify that skills are installed in the correct agent directory (for example, `.agents/skills/`), confirm with `npx skills list`, restart the IDE (or run the **Reload Window** command), and confirm that the agent supports external skill files.
 
 ## See also
 
 - [Agent Skills Standards](https://agentskills.io/home)
 - [Skills CLI](https://www.skills.sh/docs)
+- [VisualStyle](https://help.syncfusion.com/windowsforms/visualstyle)

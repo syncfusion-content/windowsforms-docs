@@ -17,27 +17,27 @@ N> Syncfusion® Extension is published in Visual Studio Marketplace. We provided
 
 [Visual Studio 2019 or lower](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.Windows-Extensions). 
 
-I> The Syncfusion® WinForms menu option is available from v17.1.0.32.
+I> The Syncfusion® WinForms menu option is available from v17.1.0.32. The same availability note also applies to the [Check for Updates](https://help.syncfusion.com/windowsforms/visual-studio-integration/check-for-updates) feature.
 
-The Syncfusion® provides the following supports in Visual Studio:
+Syncfusion® provides the following features in Visual Studio:
 
-1.	[Create Project](https://help.syncfusion.com/windowsforms/Visual-Studio-Integration/Create-Project): Creates the Syncfusion® WinForms application by adding the required Syncfusion® assemblies and forms.
-2.	[Item Template](https://help.syncfusion.com/windowsforms/Visual-Studio-Integration/Item-Template): Add predefined Syncfusion® items (Forms) and the required Syncfusion® assemblies in WinForms Application.
-3.	[Add References](https://help.syncfusion.com/windowsforms/Visual-Studio-Integration/Add-References): Add the required Syncfusion® assembly to Windows project reference based on the selected control(s).
+1.	[Create Project](https://help.syncfusion.com/windowsforms/visual-studio-integration/template-studio): Creates the Syncfusion® WinForms application by adding the required Syncfusion® assemblies and forms.
+2.	[Item Template](https://help.syncfusion.com/windowsforms/visual-studio-integration/item-template): Add predefined Syncfusion® items (Forms) and the required Syncfusion® assemblies in WinForms Application.
+3.	[Add References](https://help.syncfusion.com/windowsforms/visual-studio-integration/add-references): Add the required Syncfusion® assembly to Windows project reference based on the selected control(s).
 4.	[Toolbox](https://help.syncfusion.com/windowsforms/visual-studio-integration/toolbox-configuration): Configure the Syncfusion® controls into the Visual Studio .NET toolbox.
-5.	[Troubleshooting](https://help.syncfusion.com/windowsforms/Visual-Studio-Integration/Troubleshooting): Troubleshoots the project with the Syncfusion® configuration and apply the fix like, wrong Framework Syncfusion® assembly added to the project or missing any Syncfusion® dependent assembly of a referred assembly.
+5.	[Troubleshooting](https://help.syncfusion.com/windowsforms/visual-studio-integration/troubleshooting): Troubleshoots the project with the Syncfusion® configuration and apply the fix like, wrong Framework Syncfusion® assembly added to the project or missing any Syncfusion® dependent assembly of a referred assembly.
 
-**No project selected in Visual Studio**
+**Figure 1: Syncfusion® menu when no project is selected in Visual Studio**
 
-![Syncfusion Menu when No project selected in Visual Studio](Overview-images/Syncfusion_Menu_OverView1.png)
+![Syncfusion® menu when no project is selected in Visual Studio](Overview-images/Syncfusion_Menu_OverView1.png)
 
-**Selected Microsoft WinForms application in Visual Studio**
+**Figure 2: Syncfusion® menu when a Microsoft WinForms application is selected in Visual Studio**
 
-![Syncfusion Menu when Selected Microsoft WinForms application in Visual Studio](Overview-images/Syncfusion_Menu_OverView2.png)
+![Syncfusion® menu when a Microsoft WinForms application is selected in Visual Studio](Overview-images/Syncfusion_Menu_OverView2.png)
 
-**Selected Syncfusion® WinForms application in Visual Studio**
+**Figure 3: Syncfusion® menu when a Syncfusion® WinForms application is selected in Visual Studio**
 
-![Syncfusion Menu when Selected Synfusion WinForms application in Visual Studio](Overview-images/Syncfusion_Menu_OverView3.png)
+![Syncfusion® menu when a Syncfusion® WinForms application is selected in Visual Studio](Overview-images/Syncfusion_Menu_OverView3.png)
 
 N> In Visual Studio 2017 or lower, you can see the Syncfusion menu directly in the Visual Studio menu.
 

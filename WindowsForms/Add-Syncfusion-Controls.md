@@ -150,13 +150,13 @@ The following steps direct you to create the Syncfusion<sup>®</sup> Windows For
 
    ![Add-Syncfusion-Control_images5](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-5.png)
       
-4. Once the Project Configuration Wizard is done, the Syncfusion<sup>®</sup> Windows Forms project is created with required references and forms. 
+4. Once the Project Configuration Wizard is done, the Syncfusion<sup>®</sup> Windows Forms project is created with the required references and forms. 
 
    ![Add-Syncfusion-Control_images6](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-6.png)
 
    ![Add-Syncfusion-Control_images7](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-7.png)
 
-5. Then, Syncfusion<sup>®</sup> licensing registration required message box will be shown as follow, if you are installed the trial setup or NuGet packages since Syncfusion<sup>®</sup> introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio<sup>®</sup> release. Please navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key) which is shown in the licensing message box to generate and register the Syncfusion<sup>®</sup> license key to your project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in Essential Studio<sup>®</sup>.
+5. Then, Syncfusion<sup>®</sup> licensing registration required message box will be shown as follow, if you have installed the trial setup or NuGet packages since Syncfusion<sup>®</sup> introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio<sup>®</sup> release. Please navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key) which is shown in the licensing message box to generate and register the Syncfusion<sup>®</sup> license key to your project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in Essential Studio<sup>®</sup>.
 
    ![Add-Syncfusion-Control_images8](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-8.png)   
 
@@ -191,7 +191,7 @@ This is a combo box where you can choose the application’s platform. For now i
 
 #### Version
 
-Syncfusion’s Installed Build Versions are listed for Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> v13.1.0.21 and later, for the installed Windows Forms platform. 
+Syncfusion's Installed Build Versions are listed for Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> v13.1.0.21 and later, for the installed Windows Forms platform.
 
 #### Template Gallery
 
@@ -201,13 +201,13 @@ When Add button is clicked, then the selected item template is added to the proj
 
 ![Add-Syncfusion-Control_images5](Add-Syncfusion-Control_images\Syncfusion-Item-Template-Gallery-5.png)
 
-5.Then, Syncfusion<sup>®</sup> licensing registration required message box will be shown as follow, if you are installed the trial setup or NuGet packages since Syncfusion<sup>®</sup> introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio<sup>®</sup> release. Please navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key) which is shown in the licensing message box to generate and register the Syncfusion<sup>®</sup> license key to your project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in Essential Studio<sup>®</sup>.
+5. Then, Syncfusion<sup>®</sup> licensing registration required message box will be shown as follow, if you have installed the trial setup or NuGet packages since Syncfusion<sup>®</sup> introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio<sup>®</sup> release. Please navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key) which is shown in the licensing message box to generate and register the Syncfusion<sup>®</sup> license key to your project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in Essential Studio<sup>®</sup>.
 
    ![Add-Syncfusion-Control_images8](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-8.png)
 
 ### Using Visual Studio Add new Item
 
-Syncfusion<sup>®</sup> Project Template can be also add from the Visual Studio Item Template. Right-click on the Windows Forms Project Add ->New Item. You can refer to the following screenshot for more information.
+Syncfusion<sup>®</sup> Project Template can also be added from the Visual Studio Item Template. Right-click on the Windows Forms Project Add ->New Item. You can refer to the following screenshot for more information.
 
 ![Add-Syncfusion-Control_images1](Add-Syncfusion-Control_images\Syncfusion-Add-New-Item-1.png)
 
@@ -221,6 +221,6 @@ Syncfusion<sup>®</sup> Project Template can be also add from the Visual Studio 
 
    ![Add-Syncfusion-Control_images4](Add-Syncfusion-Control_images\Syncfusion-Add-New-Item-4.png)
 
-3. Then, Syncfusion<sup>®</sup> licensing registration required message box will be shown as follow, if you are installed the trial setup or NuGet packages since Syncfusion<sup>®</sup> introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio<sup>®</sup> release. Please navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key) which is shown in the licensing message box to generate and register the Syncfusion<sup>®</sup> license key to your project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in Essential Studio<sup>®</sup>.
+3. Then, Syncfusion<sup>®</sup> licensing registration required message box will be shown as follow, if you have installed the trial setup or NuGet packages since Syncfusion<sup>®</sup> introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio<sup>®</sup> release. Please navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key) which is shown in the licensing message box to generate and register the Syncfusion<sup>®</sup> license key to your project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in Essential Studio<sup>®</sup>.
 
    ![Add-Syncfusion-Control_images8](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-8.png)

@@ -24,7 +24,7 @@ The [SyncfusionWinFormsAssistant](https://www.npmjs.com/package/@syncfusion/winf
 Before using [SyncfusionWinFormsAssistant](https://www.npmjs.com/package/@syncfusion/winforms-assistant), ensure you have:
 
 * Required [node](https://nodejs.org/en/) version >= 18
-* A [compatible MCP client](https://modelcontextprotocol.io/clients) (VS Code with GitHub Copilot, [Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio](https://www.syncfusion.com/code-studio/), etc.)
+* A [compatible MCP client](https://modelcontextprotocol.io/clients) (VS Code with GitHub Copilot, [Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio](https://www.syncfusion.com/code-studio/), etc.)
 * An active Syncfusion<sup style="font-size:70%">&reg;</sup> license (any of the following):
   - [Commercial License](https://www.syncfusion.com/sales/unlimitedlicense)
   - [Free Community License](https://www.syncfusion.com/products/communitylicense)
@@ -66,7 +66,8 @@ Below are setup instructions for popular MCP clients:
 
 ### Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio
 
-* In [Code Studio](https://www.syncfusion.com/code-studio/), open MCP Marketplace and navigate to the `Custom Servers` tab.
+* Sign in to [Code Studio](https://www.syncfusion.com/code-studio/) with your Syncfusion account before installing the server.
+* In Code Studio, open MCP Marketplace and navigate to the `Custom Servers` tab.
 * Enter the Server Name as `winforms-mcp`, choose Server Type as npm package, and set the NPM Package name to `@syncfusion/winforms-assistant`.
 * Add an environment variable as `Syncfusion_API_Key` and value as your [Syncfusion API key](https://syncfusion.com/account/api-key), then click **Install Server**.
 * Once installed, the server will appear in the User Installed Server list, and will be added to the **config.yaml** file.
@@ -122,7 +123,7 @@ Below are setup instructions for popular MCP clients:
 }
 ```
 
-* After updating the mcp.json configuration, open the GitHub Copilot Chat window. Click the Ask arrow, then select Agent.
+* After updating the mcp.json configuration, open the GitHub Copilot Chat window. Click the Ask arrow, then select **Agent**.
 * Select the [SyncfusionWinFormsAssistant](https://www.npmjs.com/package/@syncfusion/winforms-assistant) from the tools section.
 * For more details, refer to the official [Visual Studio documentation](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022).
 
@@ -229,8 +230,7 @@ Product support is available through the following mediums.
 * [Support ticket](https://support.syncfusion.com/support/tickets/create) - Guaranteed Response in 24 hours \| Unlimited tickets \| Holiday support
 * [Community forum](https://www.syncfusion.com/forums/windowsforms)
 * [Request feature or report bug](https://www.syncfusion.com/feedback/winforms)
-* Live chat
-
+* Live Chat
 ## See also
 
 * [Syncfusion Windows Forms Documentation](https://help.syncfusion.com/windowsforms/overview)

@@ -17,7 +17,9 @@ Syncfusion<sup>®</sup> controls will be automatically configured in the Visual 
 
 Use the following steps to add the Syncfusion® WinForms controls through the Syncfusion® Toolbox Installer:
 
-1. To launch Toolbox configuration utility, follow either one of the options below:
+N> The Syncfusion® Essential Studio® WinForms installer must be installed before running the Toolbox Installer. If multiple Visual Studio versions are installed on the same machine, run the Toolbox Installer once and select each Visual Studio version to configure.
+
+1. To launch the Toolbox Configuration utility, follow either of the options below:
 
    **Option 1:**   
    To open the Syncfusion Control Panel, click **Add On and Utilities > Toolbox Installer**.
@@ -45,7 +47,7 @@ Use the following steps to add the Syncfusion® WinForms controls through the Sy
 
     N> You can also configure Syncfusion® controls from a lower version Framework assembly to higher version of Visual Studio.
    
-3. The successful configuration of Toolbox is indicated by an Information message. Click **OK**.
+3. The successful configuration of the Toolbox is indicated by an information message. Click **OK**.
 
    ![Toolbox Installer](Toolbox-Configuration_images/Toolbox-Configuration_img3.png)
    
