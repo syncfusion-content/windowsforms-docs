@@ -49,8 +49,7 @@ To specify a version, add the -v parameter:
 
 The **Package Manager Console** saves NuGet packages upgrade time since you don't have to search for the package you want to update, and you can just type the command to update the appropriate Syncfusion WinForms NuGet package. Follow the steps below to upgrade the installed Syncfusion NuGet packages using the Package Manager Console in your WinForms application.
 
-1. To show the Package Manager Console, open your WinForms application in Visual Studio and navigate to **Tools** in the Visual Studio menu and after hovering **NuGet Package Manager**, select **Package Manager Console**. In the **Default project** dropdown at the top of the Package Manager Console, select the project in which you want to update the package.
-
+1. To show the Package Manager Console, open your WinForms application in Visual Studio and navigate to **Tools** in the Visual Studio menu and after hovering **NuGet Package Manager**, select **Package Manager Console**.
     ![Package Manager Console](images/console.png)
 
 2. The **Package Manager Console** will be shown at the bottom of the screen. You can update the Syncfusion WinForms NuGet packages by entering the following NuGet update commands.

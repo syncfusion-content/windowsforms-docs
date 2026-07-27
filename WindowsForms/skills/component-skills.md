@@ -129,6 +129,16 @@ This registers the Syncfusion<sup style="font-size:70%">&reg;</sup> skill pack s
 
 To learn more about the Skills CLI, refer [here](https://www.skills.sh/docs). 
 
+## How Syncfusion<sup style="font-size:70%">&reg;</sup> Agent Skills Work
+
+1. **Reads relevant Skill files based on queries**, retrieving component usage patterns, APIs, and best‑practice guidance from installed Syncfusion<sup style="font-size:70%">&reg;</sup> Skills. The assistant initially loads only skill names and descriptions, then dynamically loads the required skill and reference files as needed to provide accurate Syncfusion guidance.
+2. **Enforces Syncfusion<sup style="font-size:70%">&reg;</sup> best practices**, including:
+
+   - Using the required assemblies for each component.
+   - Injecting applicable component controls (for example, paging, sorting, filtering, and other feature controls).
+   - Adding the correct theme and VisualStyle settings.
+3. **Generates component‑accurate code**, avoiding invalid properties or unsupported patterns.
+
 ### Using the AI Assistant
 
 Once skills are installed, the assistant can be used to generate and update Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms code for tasks such as:

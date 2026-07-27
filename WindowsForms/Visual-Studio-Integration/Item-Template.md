@@ -17,8 +17,6 @@ The following steps will guide you in adding the Syncfusion® WinForms component
 
 > Check whether the **Syncfusion WinForms** extension is installed in Visual Studio Extension Manager by going to **Extensions → Manage Extensions → Installed** for Visual Studio 2019 or later, and to **Tools → Extensions and Updates → Installed** for Visual Studio 2017 or lower. If this extension is not installed, install the extension by following the steps from the [download and installation](https://help.syncfusion.com/windowsforms/visual-studio-integration/download-and-installation) help topic.
 
-N> Item Templates are available from v13.1.0.21. The Item Template wizard supports **WinForms App (.NET Framework)** and **WinForms App (.NET)** project types.
-
 ## Add components using Syncfusion® Item Template
 
 1.	Open a new or existing **WinForms** project. Then choose one of the following options to open the wizard:

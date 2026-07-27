@@ -74,8 +74,8 @@ Create the Syncfusion® WinForms project using the Visual Studio Project Templat
 
 	![Syncfusion WinForms app features selection wizard](Template-Studio-Images/WF-7.png)
 
-    N> The App Features option is not accessible for .NET Framework because the generated DI setup targets .NET (non-Framework) hosts.
-
+    N> The App Features option is not accessible for .NET Framework.
+	
 	**Project Details Section**
 
 	In the **Project Details** section, modify configurations and project types. Additionally, you can remove one or more controls from the selected list and remove the chosen application feature.
