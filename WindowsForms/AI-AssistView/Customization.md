@@ -13,13 +13,7 @@ This section explains how to customize the BannerView, and how to create a custo
 
 N> You can also explore our [sample](https://github.com/SyncfusionExamples/How-to-Customize-BannerView-and-Create-a-Custom-BotView-and-UserView-in-AIAssistView) on GitHub, which demonstrates complete customization of the BannerView, the creation of a custom BotView, and a custom UserView within an AssistView.
 
-## Prerequisites
-
-Before proceeding, ensure the following are in place:
-
-- A `ViewModel` class with a `Chats` collection, `ShowTypingIndicator`, `Suggestion`, and `CurrentUser` properties exists. Refer to the [Getting Started](https://help.syncfusion.com/windowsforms/ai-assistview/getting-started) page for setup details.
-- A banner image is added to the project at the path referenced in code (for example, `Asset\AI_Assist.png`).
-- The following `using` directives are included in your file:
+The following `using` directives are included in your file:
 
 {% tabs %}
 {% highlight c# %}
@@ -33,6 +27,8 @@ using Syncfusion.WinForms.AIAssistView;
 
 {% endhighlight %}
 {% endtabs %}
+
+N> A `ViewModel` class with a `Chats` collection and `CurrentUser` properties exists. Refer to the [Getting Started](https://help.syncfusion.com/windowsforms/ai-assistview/getting-started) page for setup details.
 
 ## Customizing BannerView
 

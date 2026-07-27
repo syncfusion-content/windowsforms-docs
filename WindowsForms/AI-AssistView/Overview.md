@@ -11,10 +11,6 @@ documentation: ug
 
 The Syncfusion [Windows Forms AI AssistView](https://www.syncfusion.com/winforms-ui-controls/aiassistview) ([SfAIAssistView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.SfAIAssistView.html)) control is used to enhance interaction between users and AI services. It offers a user-friendly interface for creating intelligent and responsive applications with AI services. Users can easily customize its appearance.
 
-## Prerequisites
-
-- **Required package:** [Syncfusion.SfAIAssistView.WinForms](https://www.nuget.org/packages/Syncfusion.SfAIAssistView.WinForms) NuGet package (or the equivalent Syncfusion WinForms assemblies). See [Getting Started](https://help.syncfusion.com/windowsforms/ai-assistview/getting-started) for installation details.
-
 ## Use Cases
 
 SfAIAssistView is well suited for:

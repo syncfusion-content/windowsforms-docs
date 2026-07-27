@@ -90,7 +90,7 @@ void gridControl1_ClipboardCopy(object sender, GridCutPasteEventArgs e)
 }
 {% endhighlight %}
 {% highlight vb %}
-Private Me.gridControl1.ClipboardCopy += AddressOf gridControl1_ClipboardCopy
+AddHandler Me.gridControl1.ClipboardCopy, AddressOf gridControl1_ClipboardCopy
 Private Sub gridControl1_ClipboardCopy(ByVal sender As Object, ByVal e As GridCutPasteEventArgs)
 	'To restrict the Clipboard copy.
 	e.Handled = True
@@ -122,7 +122,7 @@ void gridControl1_ClipboardPaste(object sender, GridCutPasteEventArgs e)
 }
 {% endhighlight %}
 {% highlight vb %}
-Private Me.gridControl1.ClipboardPaste += AddressOf gridControl1_ClipboardPaste
+AddHandler Me.gridControl1.ClipboardPaste, AddressOf gridControl1_ClipboardPaste
 Private Sub gridControl1_ClipboardPaste(ByVal sender As Object, ByVal e As GridCutPasteEventArgs)
 'To restrict the paste operation.
 	e.Handled = True
@@ -201,7 +201,7 @@ void gridControl1_ClipboardPaste(object sender, GridCutPasteEventArgs e)
 }
 {% endhighlight %}
 {% highlight vb %}
-Private Me.gridControl1.ClipboardPaste += AddressOf gridControl1_ClipboardPaste
+AddHandler Me.gridControl1.ClipboardPaste, AddressOf gridControl1_ClipboardPaste
 
 Private Sub gridControl1_ClipboardPaste(ByVal sender As Object, ByVal e As GridCutPasteEventArgs)
 	Dim data As DataObject = CType(Clipboard.GetDataObject(), DataObject)
@@ -416,7 +416,7 @@ End Sub
 {% endtabs %}
 
 ### Preventing Paste for a particular Cell
-The pasting operation can be prevented for particular cells by handling the [PasteCellText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_PasteCellText) event. This event will fire when the cell is not in edit mode at the time of pasting. This can be achieved by setting the [ActivateCurrentCellBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_ActivateCurrentCellBehavior) property to `DoubleClickOnCell`.
+The pasting operation can be prevented for particular cells by handling the [PasteCellText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_PasteCellText) event. This event will fire when the cell is not in edit mode at the time of pasting. This can be achieved by setting the [ActivateCurrentCellBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_ActivateCurrentCellBehavior) property to `DoubleClickOnCell`.
 {% tabs %}
 {% highlight c# %}
 this.gridControl1.PasteCellText += new GridPasteCellTextEventHandler(gridControl1_PasteCellText);
@@ -431,7 +431,7 @@ void gridControl1_PasteCellText(object sender, GridPasteCellTextEventArgs e)
 }
 {% endhighlight %}
 {% highlight vb %}
-Private Me.gridControl1.PasteCellText += New GridPasteCellTextEventHandler(AddressOf gridControl1_PasteCellText)
+AddHandler Me.gridControl1.PasteCellText, New GridPasteCellTextEventHandler(AddressOf gridControl1_PasteCellText)
 
 Private Sub gridControl1_PasteCellText(ByVal sender As Object, ByVal e As GridPasteCellTextEventArgs)
 

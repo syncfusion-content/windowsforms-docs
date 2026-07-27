@@ -9,7 +9,7 @@ documentation: ug
 
 # MiniToolBar in Windows Forms Ribbon (RibbonControlAdv)
 
-Essential Tools comes with MiniToolBar control with similar look and feel of Microsoft Office 2007. It appears when the user selects and right clicks on the text. It gives options to customize the selected text. It will look blurred in the beginning, but once the mouse is focused on it, it will be prominent to the users.
+Essential Tools comes with a MiniToolBar control with a look and feel similar to Microsoft Office 2007. It appears when the user selects and right-clicks on the text. It gives options to customize the selected text. It appears blurred initially, but becomes prominent when the mouse hovers over it.
 
 ![Mini-ToolBar_img1](Mini_Toolbar_Images/Mini-ToolBar_img1.jpg)
 
@@ -314,9 +314,9 @@ Console.WriteLine("ToolStrip Item Name : " + e.Item.ToString());
 
 {% highlight vb %}
 
-Default Private Property Item(ByVal  As miniToolBar1.ItemAdded, ByVal  As MiniToolBar1_ItemAdded) As
+AddHandler Me.miniToolBar1.ItemAdded, AddressOf MiniToolBar1_ItemAdded
 
- Private Sub MiniToolBar1_ItemAdded(ByVal sender As Object, ByVal e As ToolStripItemEventArgs)
+    Private Sub MiniToolBar1_ItemAdded(ByVal sender As Object, ByVal e As ToolStripItemEventArgs)
 
     Console.WriteLine("ItemAdded event is raised")
     Console.WriteLine("ToolStrip Item Name : " & e.Item.ToString())
@@ -334,7 +334,7 @@ This event is handled when a ToolStripItem has been added to the ToolStrip's Ite
 
 **Event** **Data**
 
-The ToolStripItemClickedEventHandler receives an argument of type ToolStripItemEventArgs containing data related to this event. The following type ToolStripItemEventArgs member provide information specific to this event.
+The ToolStripItemClickedEventHandler receives an argument of type ToolStripItemClickedEventArgs containing data related to this event. The following ToolStripItemClickedEventArgs members provide information specific to this event.
 
 <table>
 <tr>
@@ -368,9 +368,9 @@ Console.WriteLine("ToolStrip Item Name : " + e.ClickedItem.ToString());
 
 {% highlight vb %}
 
-Default Private Property Item(ByVal  As miniToolBar1.ItemClicked, ByVal  As MiniToolBar1_ItemClicked) As
+AddHandler Me.miniToolBar1.ItemClicked, AddressOf MiniToolBar1_ItemClicked
 
- Private Sub MiniToolBar1_ItemClicked(ByVal sender As Object, ByVal e As ToolStripItemClickedEventArgs)
+    Private Sub MiniToolBar1_ItemClicked(ByVal sender As Object, ByVal e As ToolStripItemClickedEventArgs)
 
     Console.WriteLine("ItemClicked event is raised")
     Console.WriteLine("ToolStrip Item Name : " & e.ClickedItem.ToString())
@@ -419,9 +419,9 @@ Console.WriteLine("ToolStrip Item Name : " + e.Item.ToString());
 
 {% highlight vb %}
 
-Default Private Property Item(ByVal  As miniToolBar1.ItemRemoved, ByVal  As MiniToolBar1_ItemRemoved) As
+AddHandler Me.miniToolBar1.ItemRemoved, AddressOf MiniToolBar1_ItemRemoved
 
- Private Sub MiniToolBar1_ItemRemoved(ByVal sender As Object, ByVal e As ToolStripItemEventArgs)
+    Private Sub MiniToolBar1_ItemRemoved(ByVal sender As Object, ByVal e As ToolStripItemEventArgs)
 
     Console.WriteLine("ToolStrip Item Name : " & e.Item.ToString())
 
@@ -453,9 +453,9 @@ Console.Write("BeginDrag Event is raised");
 
 {% highlight vb %}
 
-Default Private Property Item(ByVal  As miniToolBar1.BeginDrag, ByVal  As MiniToolBar1_BeginDrag) As
+AddHandler Me.miniToolBar1.BeginDrag, AddressOf MiniToolBar1_BeginDrag
 
-Private Sub MiniToolBar1_BeginDrag(ByVal sender As Object, ByVal e As EventArgs)
+    Private Sub MiniToolBar1_BeginDrag(ByVal sender As Object, ByVal e As EventArgs)
 
 Console.Write("BeginDrag Event is raised")
 
@@ -491,7 +491,6 @@ Gets or Sets a value indicating whether the event should be canceled.<br/><br/><
 this.miniToolBar1.Opening += MiniToolBar1_Opening;
 
 private void MiniToolBar1_Opening(object sender, CancelEventArgs e)
-
 {
 //EventArgs can give the options to Allow or Cancel the event by this method.
 
@@ -503,9 +502,9 @@ e.Cancel = true;
 
 {% highlight vb %}
 
-Default Private Property Item(ByVal  As miniToolBar1.Opening, ByVal  As MiniToolBar1_Opening) As
+AddHandler Me.miniToolBar1.Opening, AddressOf MiniToolBar1_Opening
 
- Private Sub MiniToolBar1_Opening(ByVal sender As Object, ByVal e As CancelEventArgs)
+    Private Sub MiniToolBar1_Opening(ByVal sender As Object, ByVal e As CancelEventArgs)
 
     e.Cancel = True
 
@@ -538,9 +537,9 @@ Console.Write(" Opened Event is raised");
 
 {% highlight vb %}
 
-Default Private Property Item(ByVal  As miniToolBar1.Opened, ByVal  As MiniToolBar1_Opened) As
+AddHandler Me.miniToolBar1.Opened, AddressOf MiniToolBar1_Opened
 
- Private Sub MiniToolBar1_Opened(ByVal sender As Object, ByVal e As EventArgs)
+    Private Sub MiniToolBar1_Opened(ByVal sender As Object, ByVal e As EventArgs)
 
     Console.Write(" Opened Event is raised")
     

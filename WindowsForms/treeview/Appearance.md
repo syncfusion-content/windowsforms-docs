@@ -20,15 +20,15 @@ BorderStyle Property has the following styles
 
 * None
 
-    If the BorderStyle set as none, border of TreeViewAdv will be collapsed
+    If the BorderStyle is set as `None`, the border of the TreeViewAdv will be collapsed.
 
 * FixedSingle (For 2D)
 
-    If the BorderStyle set as FixedSingle , then the border of the TreeViewAdv will be visible and we can customize the border 
+    If the BorderStyle is set as `FixedSingle`, then the border of the TreeViewAdv will be visible and can be customized.
 
 * Fixed3D (Default)
 
-    If the BorderStyle set as Fixed3D, then the border of the TreeViewAdv will be visible in 3D and we can customize the border settings
+    If the BorderStyle is set as `Fixed3D`, then the border of the TreeViewAdv will be visible in 3D and the border settings can be customized.
 
 ### BorderSingle
 
@@ -93,8 +93,8 @@ It has the following Styles
 
 >NOTE
 >
->The settings will have applied only when TreeViewAdv.BorderStyle property is set to FixedSingle or Fixed3D.
-To customize the 2D border of TreeViewAdv, set the below properties as follows.
+>The settings will be applied only when the TreeViewAdv.BorderStyle property is set to FixedSingle or Fixed3D.
+To customize the 2D border of the TreeViewAdv, set the below properties as follows.
 
 <b>Property Table</b>
 
@@ -286,7 +286,7 @@ Fore Color for the selected node when control loses focus can be set using Inact
 
 >NOTE:
 >
->The settings will have applied only when TreeViewAdv.HideSelection property should be set to false.
+>These settings will be applied only when the TreeViewAdv.HideSelection property is set to false.
 
 
 {% tabs %}
@@ -387,7 +387,7 @@ this.treeViewAdv1.Office2010ColorScheme = Syncfusion.Windows.Forms.Office2010The
 {% highlight vb %}
 
 Me.treeViewAdv1.Style = TreeStyle.Office2010
-Me.treeViewAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2010Theme.Silver	
+Me.treeViewAdv1.Office2010ColorScheme = Syncfusion.Windows.Forms.Office2010Theme.Silver	
 
 {% endhighlight %}
 {% endtabs %}

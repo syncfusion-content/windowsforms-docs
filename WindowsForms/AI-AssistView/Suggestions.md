@@ -11,13 +11,6 @@ documentation: ug
 
 Use the [`Suggestions`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.SfAIAssistView.html#Syncfusion_WinForms_AIAssistView_SfAIAssistView_Suggestions) property to display AI-driven suggestions in the bottom-right corner of the AssistView, so users can quickly respond or select from relevant options.
 
-## Prerequisites
-
-- **Required package:** [Syncfusion.SfAIAssistView.WinForms](https://www.nuget.org/packages/Syncfusion.SfAIAssistView.WinForms) NuGet package.
-- A `ViewModel` with `Chats`, `CurrentUser`, and `Suggestion` properties exists. See [Getting Started](https://help.syncfusion.com/windowsforms/ai-assistview/getting-started#creating-viewmodel-for-ai-assistview) for setup details.
-- The `Suggestion` collection is bound to the control's `Suggestions` property. The collection should be of a type that implements `INotifyCollectionChanged` (for example, `ObservableCollection<string>`) so updates are reflected automatically.
-- A bot avatar image is added to the project at `Asset\AI_Assist.png` (if the example is extended with one).
-
 ## ViewModel
 
 The following `ViewModel` populates `Chats` with a sample conversation and updates the `Suggestion` collection once the bot response is added. The collection is mutated in place (via `Add`) so the bound `ObservableCollection` notifies the UI of the change:
@@ -135,28 +128,35 @@ public partial class Form1 : Form
 
 ## Handling Suggestion Clicks
 
-When a user clicks a suggestion, the text is sent as a new prompt. Handle the `PromptRequest` event (or `Chats_CollectionChanged`) to react to the selection:
+The `SuggestionSelected` event occurs when a user clicks a suggestion displayed in the AI AssistView. Use this event to retrieve the selected suggestion text and perform custom actions, such as sending the suggestion as a new prompt, generating a response, or updating the conversation.
+
+The selected item is available through the `Item` property of the `SuggestionSelectedEventArgs`.
 
 {% tabs %}
 
 {% highlight c# %}
 
-sfAIAssistView1.PromptRequest += (sender, e) =>
+sfAIAssistView1.SuggestionSelected += AiAssistView_SuggestionSelected;
+
+private void AiAssistView_SuggestionSelected(
+    object sender,
+    SuggestionSelectedEventArgs e)
 {
-    // e.Message contains the selected suggestion
-    var message = e.Message as TextMessage;
-    if (message == null) return;
-    // Process the prompt here, e.g., forward to your AI service
-};
+    string suggestionText = e.Item?.ToString();
+
+    if (string.IsNullOrWhiteSpace(suggestionText))
+        return;
+
+    // Handle the selected suggestion.
+    // For example, add it as a user message or forward it to an AI service.
+
+    viewModel.Chats.Add(new TextMessage
+    {
+        Author = viewModel.CurrentUser,
+        Text = suggestionText
+    });
+}
 
 {% endhighlight %}
 
 {% endtabs %}
-
-## Troubleshooting
-
-| Issue | Possible Cause | Resolution |
-|-------|----------------|------------|
-| Suggestions are not displayed | `Suggestion` is reassigned to a new instance after the binding is created, breaking the binding. | Mutate the existing `ObservableCollection` (e.g., `Suggestion.Add(...)`) instead of replacing it. |
-| Suggestions appear only once and then disappear | The collection is reassigned to a new empty instance. | Clear and refill the existing collection rather than reassigning. |
-| `NullReferenceException` when iterating suggestions | The bound `Suggestion` is `null` at the time of binding. | Initialize the collection in the `ViewModel` constructor before binding. |

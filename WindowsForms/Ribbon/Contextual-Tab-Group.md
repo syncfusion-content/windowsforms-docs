@@ -35,7 +35,7 @@ When the simplified layout is enabled, the ContextTabGroup will display its item
 
 ## Tab Arrangement
 
-If tabs are placed consecutively and both tabs are assigned with same tag group, the tab group portion will be combined.
+If tabs are placed consecutively and both tabs are assigned to the same tab group, the tab group portion will be combined.
 
 ![Arrangement of context tabs](Contextual_Tab_Group_Images/Contextual-Tab-Group_img4.jpg)
 

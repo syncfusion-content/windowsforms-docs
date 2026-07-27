@@ -129,7 +129,7 @@ Filters the Boolean values.
 DateTime
 </td>
 <td>
-SfDataTimeEdit
+SfDateTimeEdit
 </td>
 <td>
 FilterRowDateTimeCellRenderer
@@ -280,7 +280,7 @@ Always Equals or Not Equal filter condition will be applied based on the selecte
 ![WindowsForms DataGrid showing filterrow with textbox editor options](filterrow_images/windowsforms-datagrid-filterrow-with-textbox-editor-options.png)
 
 ## Filtering null Values 
-The null values of the columns can be filtered by using the filter row options such as Null and Not Null. This options is enabled by default for all the filter row editors. To disable the null filter options from the filter options list, use the [AllowBlankFilters](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_AllowBlankFilters) property of the GridColumn. The default value of this property is `true`.
+The null values of the columns can be filtered by using the filter row options such as Null and Not Null. These options are enabled by default for all the filter row editors. To disable the null filter options from the filter options list, use the [AllowBlankFilters](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_AllowBlankFilters) property of the GridColumn. The default value of this property is `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -600,7 +600,7 @@ public class FilterRowMultiSelectComboBoxCellRendererExt : FilterRowMultiSelectC
     /// </summary>
     /// <param name="filterPredicate">FilterPredicates for a column</param>
     /// <param name="filterValue">FilterValue for a column</param>
-    /// <returns>Returns trow whether the column having the filter value other wise return false.</returns>
+    /// <returns>Returns true whether the column having the filter value; otherwise, returns false.</returns>
     private bool NeedToAdd(ObservableCollection<FilterPredicate> filterPredicate, string filterValue)
     {
         bool needToAdd = false;
@@ -778,7 +778,7 @@ Public Class FilterRowMultiSelectComboBoxCellRendererExt
 	''' </summary>
 	''' <param name="filterPredicate">FilterPredicates for a column</param>
 	''' <param name="filterValue">FilterValue for a column</param>
-	''' <returns>Returns trow whether the column having the filter value other wise return false.</returns>
+	''' <returns>Returns true whether the column having the filter value; otherwise, returns false.</returns>
 	Private Function NeedToAdd(ByVal filterPredicate As ObservableCollection(Of FilterPredicate), ByVal filterValue As String) As Boolean
 'INSTANT VB NOTE: The local variable needToAdd was renamed since Visual Basic will not allow local variables with the same name as their enclosing function or property:
 		Dim needToAdd_Renamed As Boolean = False

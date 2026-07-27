@@ -9,7 +9,7 @@ documentation: ug
 
 # Save and Load XML in Windows Forms TreeView
 
-`TreeViewAdv` does not have direct option to load/save from XML file. This below section will help to load/save TreeViewAdv from XML.
+`TreeViewAdv` does not have a direct option to load or save from an XML file. The section below demonstrates how to load and save a TreeViewAdv from XML.
 
 
 {% tabs %}
@@ -26,12 +26,23 @@ private void LoadTreeViewAdvXML()
     XmlDocument xDoc = new XmlDocument();
     xDoc.Load("TreeView.xml");
     treeViewAdv1.Nodes.Clear();
-    treeViewAdv1.Nodes.Add(new
-    TreeNodeAdv(xDoc.DocumentElement.Name));
+    treeViewAdv1.Nodes.Add(new TreeNodeAdv(xDoc.DocumentElement.Name));
     TreeNodeAdv tNode = new TreeNodeAdv();
     tNode = (TreeNodeAdv)treeViewAdv1.Nodes[0];
     LoadFromXML(xDoc.DocumentElement, tNode);
     treeViewAdv1.ExpandAll();
+}
+
+/// <summary>
+/// Helper that returns the value of the "name" attribute on the supplied XML node, or null if the attribute is missing.
+/// </summary>
+private string GetAttributeText(XmlNode xmlNode, string attributeName)
+{
+    if (xmlNode.Attributes != null && xmlNode.Attributes[attributeName] != null)
+    {
+        return xmlNode.Attributes[attributeName].Value;
+    }
+    return null;
 }
 private void LoadFromXML(XmlNode xmlNode, TreeNodeAdv treeNode)
 {
@@ -62,17 +73,12 @@ private void LoadFromXML(XmlNode xmlNode, TreeNodeAdv treeNode)
 }
        
 /// <summary>
+        /// To write details in XML Elements
+        /// </summary>
+        private XmlTextWriter XmlTextWriter;
 
-/// To write details in XML Elements
-
-/// </summary>
-private XmlTextWriter XmlTextWriter;
-
-/// <summary>
-
-/// To save TreeViewAdv node information to XML File
-
-/// </summary>
+        /// <summary>
+        /// To save TreeViewAdv node information to XML File
 public void ExportToXML(TreeViewAdv tree, string filename)
 {
     XmlTextWriter = new XmlTextWriter(filename, System.Text.Encoding.UTF8);
@@ -118,15 +124,25 @@ private void SaveToXML(TreeNodeAdvCollection menu)
 
 ''' </summary>
 Private Sub LoadTreeViewAdvXML()
-Dim xDoc As New XmlDocument()
-xDoc.Load("TreeView.xml")
-treeViewAdv1.Nodes.Clear()
-treeViewAdv1.Nodes.Add(New TreeNodeAdv(xDoc.DocumentElement.Name))
-Dim tNode As New TreeNodeAdv()
-tNode = CType(treeViewAdv1.Nodes(0), TreeNodeAdv)
-LoadFromXML(xDoc.DocumentElement, tNode)
-treeViewAdv1.ExpandAll()
+    Dim xDoc As New XmlDocument()
+    xDoc.Load("TreeView.xml")
+    treeViewAdv1.Nodes.Clear()
+    treeViewAdv1.Nodes.Add(New TreeNodeAdv(xDoc.DocumentElement.Name))
+    Dim tNode As New TreeNodeAdv()
+    tNode = CType(treeViewAdv1.Nodes(0), TreeNodeAdv)
+    LoadFromXML(xDoc.DocumentElement, tNode)
+    treeViewAdv1.ExpandAll()
 End Sub
+
+''' <summary>
+''' Helper that returns the value of the named attribute on the supplied XML node, or Nothing if the attribute is missing.
+''' </summary>
+Private Function GetAttributeText(ByVal xmlNode As XmlNode, ByVal attributeName As String) As String
+    If xmlNode.Attributes IsNot Nothing AndAlso xmlNode.Attributes(attributeName) IsNot Nothing Then
+        Return xmlNode.Attributes(attributeName).Value
+    End If
+    Return Nothing
+End Function
 Private Sub LoadFromXML(ByVal xmlNode As XmlNode, ByVal treeNode As TreeNodeAdv)
 Dim xNode As XmlNode
 Dim tNode As TreeNodeAdv

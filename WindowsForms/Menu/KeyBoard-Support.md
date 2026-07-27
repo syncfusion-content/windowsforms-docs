@@ -9,11 +9,11 @@ documentation: ug
 
 # Keyboard Support in Windows Forms Menu (Menus)
 
-The menu control supports keyboard functionalities for navigation and selection of menu items. In this topic such keyboard support is discussed.
+The menu control supports keyboard functionality for navigation and selection of menu items. This topic discusses such keyboard support.
 
 ## Displaying shortcut text in menu item
 
-The menu items can be selected and the respective action can be done by specifying the shortcuts via the `Shortcut` property of the menu item. The below code snippet shows a shortcut is being assigned to the menu item.
+The menu items can be selected and the respective action can be performed by specifying the shortcuts via the `Shortcut` property of the menu item. The following code snippet shows a shortcut being assigned to the menu item.
 
 {% tabs %}
 
@@ -35,9 +35,9 @@ Me.barItem1.Shortcut = Shortcut.AltDownArrow
 
 ## Displaying Mnemonic in menu items
 
-The menu items supports to add mnemonic text. As usual, the required mnemonic character is appended with `&` symbol in the `Text` property of the menu item. This character can be made visible all the time using the `ShowMnemonicUnderlinesAlways` property of the menu item.
+The menu items support mnemonic text. As usual, the required mnemonic character is prefixed with the `&` symbol in the `Text` property of the menu item. This character can be made visible all the time using the `ShowMnemonicUnderlinesAlways` property of the menu item.
 
-The below snippet shows the drop down item is applied with the mnemonics.
+The following snippet shows the drop-down item being applied with mnemonics.
 
 {% tabs %}
 

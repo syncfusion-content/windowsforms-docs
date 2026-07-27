@@ -13,12 +13,7 @@ Use the [`TypingIndicator`](https://help.syncfusion.com/cr/windowsforms/Syncfusi
 
 The `TypingIndicator` shows an animation representing the AI or user typing a message. The indicator is shown when the [`ShowTypingIndicator`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.SfAIAssistView.html#Syncfusion_WinForms_AIAssistView_SfAIAssistView_ShowTypingIndicator) property is set to `true`.
 
-## Prerequisites
-
-- **Required package:** [Syncfusion.SfAIAssistView.WinForms](https://www.nuget.org/packages/Syncfusion.SfAIAssistView.WinForms) NuGet package.
-- A `ViewModel` with `Chats`, `ShowTypingIndicator`, and `CurrentUser` properties exists. See [Getting Started](https://help.syncfusion.com/windowsforms/ai-assistview/getting-started) for setup details.
-- A bot avatar image is added to the project at `Asset\AI_Assist.png`.
-- The following `using` directives are included in your file:
+ following `using` directives are included in your file:
 
 {% tabs %}
 
@@ -31,6 +26,8 @@ using Syncfusion.WinForms.AIAssistView;
 {% endhighlight %}
 
 {% endtabs %}
+
+N> A `ViewModel` class with a `Chats` collection, `ShowTypingIndicator`, `Suggestion`, and `CurrentUser` properties exists. Refer to the [Getting Started](https://help.syncfusion.com/windowsforms/ai-assistview/getting-started) page for setup details.
 
 ## Configuring the Typing Indicator
 
@@ -68,11 +65,3 @@ public partial class Form1 : Form
 {% endtabs %}
 
 ![WindowsForms AI AssistView control typing indicator](aiassistview_images/windowsforms_aiassistview_typing_indicator.gif)
-
-## Troubleshooting
-
-| Issue | Possible Cause | Resolution |
-|-------|----------------|------------|
-| The indicator never appears | `ShowTypingIndicator` is not bound, or the bound property is not set to `true`. | Ensure `ShowTypingIndicator = true` is set in the `ViewModel` and the property is bound. |
-| `FileNotFoundException` for `AI_Assist.png` | The bot avatar image is missing from the project. | Add `AI_Assist.png` to the project's `Asset` folder, or update the path. |
-| The indicator shows the wrong avatar/name | `TypingIndicator.Author` is not set. | Assign an `Author` to `TypingIndicator.Author` before the control is shown. |

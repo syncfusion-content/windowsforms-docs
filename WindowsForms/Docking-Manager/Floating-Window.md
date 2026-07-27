@@ -376,15 +376,15 @@ The [GetFloatOnly](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Window
 
 this.dockingManager1.SetFloatOnly(this.panel1, true);
 
-Console.Write("IsAlways in FloatState:" + this.dockingManager1.SetFloatOnly(this.panel1, true));
+Console.Write("IsAlways in FloatState:" + this.dockingManager1.GetFloatOnly(this.panel1));
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-Me.dockingManager1.SetFloatOnly(this.panel1, True)
+Me.dockingManager1.SetFloatOnly(Me.panel1, True)
 
-Console.Write("IsAlways in FloatState:" + Me.dockingManager1.SetFloatOnly(Me.panel1, True))
+Console.Write("IsAlways in FloatState:" & Me.dockingManager1.GetFloatOnly(Me.panel1))
 
 {% endhighlight %}
 

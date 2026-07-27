@@ -87,7 +87,7 @@ End Sub
 
 {% endtabs %}
 
-Here, the `FilterNodes` delegate filters the node based on Salary. The `FilterNodes` delegate is assigned to  [Filter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.MultiColumnTreeView.html#Syncfusion_Windows_Forms_Tools_MultiColumnTreeView_MultiColumnTreeView_Filter) predicate to filter the nodes. After that, [RefreshFilter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.MultiColumnTreeView.html#Syncfusion_Windows_Forms_Tools_MultiColumnTreeView_MultiColumnTreeView_RefreshFilter) method is called to refresh the nodes.
+Here, the `FilterNodes` delegate filters nodes based on the Salary value. The `FilterNodes` delegate is assigned to the [Filter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.MultiColumnTreeView.html#Syncfusion_Windows_Forms_Tools_MultiColumnTreeView_MultiColumnTreeView_Filter) delegate property to filter the nodes. After that, the [RefreshFilter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.MultiColumnTreeView.html#Syncfusion_Windows_Forms_Tools_MultiColumnTreeView_MultiColumnTreeView_RefreshFilter) method is called to refresh the nodes.
 
 ![WindowsForms MultiColumnTreeView Filtering](Filtering_images/WindowsForms-MultiColumnTreeView-Filtering.png)
 

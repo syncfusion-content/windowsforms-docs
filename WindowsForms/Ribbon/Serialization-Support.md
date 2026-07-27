@@ -9,7 +9,7 @@ documentation: ug
 
 # Serialization Support in Windows Forms Ribbon (RibbonControlAdv)
 
-The RibbonControlAdv has built-in serialization support to serialize the entire Ribbon control state and details of the layout mode. It also provides supports to save and load the Ribbon at any time while running the application, either with simplified or normal layout.
+The RibbonControlAdv has built-in serialization support to serialize the entire Ribbon control state and the details of the layout mode. It also provides support to save and load the Ribbon at any time while the application is running, either with the simplified or normal layout.
 
 ## States which get serialized
 
@@ -53,7 +53,7 @@ The Ribbon state can be saved in an xml file and stored in a specific location u
 {% highlight c# %}
 
 AppStateSerializer serializer = new AppStateSerializer(SerializeMode.XMLFile, "D:/Ribbon Serialization/RibbonState");
-this.wordribbon.SaveState(serializer);
+this.ribbonControlAdv1.SaveState(serializer);
 serializer.PersistNow();
 
 {% endhighlight %}
@@ -61,7 +61,7 @@ serializer.PersistNow();
 {% highlight vb %}
 
 Dim serializer As AppStateSerializer = New AppStateSerializer(SerializeMode.XMLFile, "D:/Ribbon Serialization/RibbonState")
-Me.wordribbon.SaveState(serializer)
+Me.ribbonControlAdv1.SaveState(serializer)
 serializer.PersistNow()
 
 {% endhighlight %}
@@ -79,7 +79,7 @@ Ribbon control provides an option to save the state of QAT alone instead of savi
 AppStateSerializer serializer = new AppStateSerializer(SerializeMode.XMLFile, "D:/Ribbon Serialization/QATState");
 RibbonControlAdv.SerializationOptions options = new RibbonControlAdv.SerializationOptions();
 options.SerializeTabItems = false;
-this.wordribbon.SaveState(serializer);
+this.ribbonControlAdv1.SaveState(serializer);
 serializer.PersistNow();
 
 {% endhighlight %}
@@ -89,7 +89,7 @@ serializer.PersistNow();
 Dim serializer As AppStateSerializer = New AppStateSerializer(SerializeMode.XMLFile, "D:/Ribbon Serialization/QATState")
 Dim options As RibbonControlAdv.SerializationOptions = New RibbonControlAdv.SerializationOptions()
 options.SerializeTabItems = False
-Me.wordribbon.SaveState(serializer)
+Me.ribbonControlAdv1.SaveState(serializer)
 serializer.PersistNow()
 
 {% endhighlight %}
@@ -107,7 +107,7 @@ Ribbon control provides an option to save the state of Ribbon Tabs alone instead
 AppStateSerializer serializer = new AppStateSerializer(SerializeMode.XMLFile, "D:/Ribbon Serialization/TabState");
 RibbonControlAdv.SerializationOptions options = new RibbonControlAdv.SerializationOptions();
 options.SerializeQATItems = false;
-this.wordribbon.SaveState(serializer);
+this.ribbonControlAdv1.SaveState(serializer);
 serializer.PersistNow();
 
 {% endhighlight %}
@@ -117,7 +117,7 @@ serializer.PersistNow();
 Dim serializer As AppStateSerializer = New AppStateSerializer(SerializeMode.XMLFile, "D:/Ribbon Serialization/TabState")
 Dim options As RibbonControlAdv.SerializationOptions = New RibbonControlAdv.SerializationOptions()
 options.SerializeQATItems = False
-Me.wordribbon.SaveState(serializer)
+Me.ribbonControlAdv1.SaveState(serializer)
 serializer.PersistNow()
 
 {% endhighlight %}
@@ -158,7 +158,7 @@ The saved Ribbon state can be loaded from an xml file using the [`AppStateSerial
 {% highlight c# %}
 
 AppStateSerializer serializer = new AppStateSerializer(SerializeMode.XMLFile, "D:/Ribbon Serialization/RibbonState");
-this.wordribbon.LoadState(serializer);
+this.ribbonControlAdv1.LoadState(serializer);
 
 
 {% endhighlight %}
@@ -166,7 +166,7 @@ this.wordribbon.LoadState(serializer);
 {% highlight vb %}
 
 Dim serializer As AppStateSerializer = New AppStateSerializer(SerializeMode.XMLFile, "D:/Ribbon Serialization/RibbonState")
-Me.wordribbon.LoadState(serializer)
+Me.ribbonControlAdv1.LoadState(serializer)
 
 {% endhighlight %}
 
@@ -183,7 +183,7 @@ Ribbon control provides an option to load the state of QAT alone instead of load
 AppStateSerializer serializer = new AppStateSerializer(SerializeMode.XMLFile, "D:/Ribbon Serialization/QATState");
 RibbonControlAdv.DeserializationOptions options = new RibbonControlAdv.DeserializationOptions();
 options.DeserializeTabItems = false;
-this.wordribbon.LoadState(serializer);
+this.ribbonControlAdv1.LoadState(serializer);
 
 {% endhighlight %}
 
@@ -192,7 +192,7 @@ this.wordribbon.LoadState(serializer);
 Dim serializer As AppStateSerializer = New AppStateSerializer(SerializeMode.XMLFile, "D:/Ribbon Serialization/QATState")
 Dim options As RibbonControlAdv.DeserializationOptions = New RibbonControlAdv.DeserializationOptions()
 options.DeserializeTabItems = False
-Me.wordribbon.LoadState(serializer)
+Me.ribbonControlAdv1.LoadState(serializer)
 
 {% endhighlight %}
 
@@ -209,7 +209,7 @@ Ribbon control provides an option to load only the state of Ribbon Tabs instead 
 AppStateSerializer serializer = new AppStateSerializer(SerializeMode.XMLFile, "D:/Ribbon Serialization/TabState");
 RibbonControlAdv.DeserializationOptions options = new RibbonControlAdv.DeserializationOptions();
 options.DeserializeQATItems = false;
-this.wordribbon.LoadState(serializer);
+this.ribbonControlAdv1.LoadState(serializer);
 
 {% endhighlight %}
 
@@ -218,7 +218,7 @@ this.wordribbon.LoadState(serializer);
 Dim serializer As AppStateSerializer = New AppStateSerializer(SerializeMode.XMLFile, "D:/Ribbon Serialization/TabState")
 Dim options As RibbonControlAdv.DeserializationOptions = New RibbonControlAdv.DeserializationOptions()
 options.DeserializeQATItems = False
-Me.wordribbon.LoadState(serializer)
+Me.ribbonControlAdv1.LoadState(serializer)
 
 {% endhighlight %}
 

@@ -517,12 +517,12 @@ private void SfDataGrid_DrawFreezePaneLine(object sender, DrawFreezePaneLineArgs
 {
     if (e.LineType == LineType.FrozenRow)
     {
-        e.Graphics.DrawLine(new Pen(Color. DeepSkyBlue, 2), e.Point1, e.Point2);
+        e.Graphics.DrawLine(new Pen(Color.DeepSkyBlue, 2), e.Point1, e.Point2);
         e.Handled = true;
     }
     if (e.LineType == LineType.FooterRow)
     {
-        e.Graphics.DrawLine(new Pen(Color. BlueViolet, 2), e.Point1, e.Point2);
+        e.Graphics.DrawLine(new Pen(Color.BlueViolet, 2), e.Point1, e.Point2);
         e.Handled = true;
     }
     if (e.LineType == LineType.FrozenColumn)
