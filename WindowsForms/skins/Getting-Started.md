@@ -15,8 +15,6 @@ This section briefly describes how to create a new Windows Forms project in Visu
 
 SkinManager is present in the `Syncfusion.Shared.Base` assembly.
 
-N> Ensure that the required Syncfusion WinForms assemblies, such as `Syncfusion.Shared.Base` and any theme-specific assemblies, are referenced in the project. The Syncfusion WinForms Toolbox installer or Visual Studio extension must be installed for the SkinManager component to appear in the toolbox.
-
 <table>
 <tr>
 <th>Theme name</th>

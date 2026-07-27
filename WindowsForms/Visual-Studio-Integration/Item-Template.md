@@ -37,17 +37,11 @@ N> Item Templates are available from v13.1.0.21. The Item Template wizard suppor
 
 3.	Choose one of the following scenarios to add a Syncfusion® form in your application:
 
-    | Scenario | When to use |
-    |----------|-------------|
-    | Default Form with Syncfusion® Component | Use the default Microsoft WinForms layout, but add a Syncfusion® control. |
-    | Syncfusion® Form with Syncfusion® Component | Use a Syncfusion® form (e.g., MetroForm, RibbonForm) and add a Syncfusion® control. |
-    | Syncfusion® Form without Syncfusion® Component | Add a blank Syncfusion® form without any components. |
-
     **Default Form with Syncfusion® Component:** If you select the **Default** form and then choose any Syncfusion® component and the specific features that are essential for your project, the selected component is added with the default Microsoft WinForms layout.
 
 	![Default form with a Syncfusion® component added](Item-Template-images/Default-Form-with-Syncfusion-Component.png)
 
-    **Syncfusion® Form with Syncfusion® Component:** If you select a Syncfusion® form and then choose any Syncfusion® component and the specific features that are essential for your project, the selected component is added with the layout of the selected Syncfusion® form. Available Syncfusion® forms include MetroForm, RibbonForm, Office2007Form, Office2010Form, TabbedForm, and XPMainForm.
+    **Syncfusion® Form with Syncfusion® Component:** If you select a Syncfusion® form and then choose any Syncfusion® component and the specific features that are essential for your project, the selected component is added with the layout of the selected Syncfusion® form.
 
 	![Syncfusion® form with a Syncfusion® component added](Item-Template-images/Syncfusion-Form-with-Syncfusion-Component.png)
 

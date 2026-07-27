@@ -98,8 +98,6 @@ If the application is registered with another version's license key, the followi
 
 **Error Message:** "The included Syncfusion license ({Registered Version}) is invalid for version {Required version}. Please refer to this [help topic](https://help.syncfusion.com/windowsforms/licensing/licensing-errors#version-mismatch) for more information."
 
-A version mismatch means the key was generated for an Essential Studio version different from the assemblies referenced in the project. Syncfusion license keys validate the same major release forward; if the key is older than the assemblies, regenerate it for the new version.
-
 ![Version mismatch](licensing-images/version-mismatch.png)
 
 **Solution:**
@@ -120,16 +118,8 @@ To avoid run-time errors, set **Copy Local** to true. **Copy Local** determines 
 
 ![Set Copy Local to true](licensing-images/SetCopyLocalTrue.png)
 
-Set **Copy Local** as True for `Syncfusion.Licensing.dll` along with all other Syncfusion assemblies and ensure that the `Syncfusion.Licensing.dll` assembly is also present in the output folder or deployment folder of the application. For .NET Framework projects, you may also need a binding redirect in `app.config` if multiple Syncfusion assemblies reference different versions of `Syncfusion.Licensing.dll`.
+Set **Copy Local** as True for `Syncfusion.Licensing.dll` along with all other Syncfusion assemblies and ensure that the `Syncfusion.Licensing.dll` assembly is also present in the output folder or deployment folder of the application.
 
 ![Output folder](licensing-images/OutputFolder.png)
 
 Refer to this knowledge base article to set [Copy Local](https://www.syncfusion.com/kb/4808/how-to-resolve-server-error-could-not-load-or-assembly-when-publishing-an-application) as true.
-
-
-
-
-
-
-
-

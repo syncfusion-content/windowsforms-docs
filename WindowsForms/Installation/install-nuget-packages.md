@@ -26,8 +26,6 @@ The NuGet **Package Manager UI** allows you to search, install, uninstall, and u
 
     As an alternative, after opening the WinForms application in Visual Studio, go to the **Tools** menu and after hovering **NuGet Package Manager**, select **Manage NuGet Packages for Solution...**
 
-    > You need Visual Studio 2019 or later with the .NET desktop development workload installed to use the Package Manager UI.
-
 2. The Manage NuGet Packages window will open. Navigate to the **Browse** tab, then search for the Syncfusion WinForms NuGet packages using a term like **"Syncfusion.WinForms"** (or the legacy **"Syncfusion.Grid.Windows"** package for the specific control shown in the examples below) and select the appropriate Syncfusion WinForms NuGet package for your development.
 
     > The [nuget.org](https://api.nuget.org/v3/index.json) package source is selected by default in the Package source drop-down. If your Visual Studio does not have nuget.org configured, follow the instructions in the [Microsoft documents](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio#package-sources) to set up the nuget.org feed URL.
@@ -48,9 +46,7 @@ The [dotnet Command Line Interface (CLI)](https://learn.microsoft.com/en-us/nuge
 
 Follow the below instructions to use the dotnet CLI command to install the Syncfusion WinForms NuGet packages.
 
-1. Open a command prompt and navigate to the directory where your Syncfusion WinForms project file is located using the `cd` command. For example:
-
-    `cd C:\Projects\MyWinFormsApp`
+1. Open a command prompt and navigate to the directory where your Syncfusion WinForms project file is located.
 
 2. To install a NuGet package, run the following command.
 

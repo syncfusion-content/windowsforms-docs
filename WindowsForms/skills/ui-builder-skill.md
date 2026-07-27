@@ -194,7 +194,7 @@ Yes. Supported agents automatically load relevant skills based on your query.
 Yes — the generated Windows Forms controls include clear integration points for style adjustments.
 
 **Does it modify files automatically?**
-The skill proposes changes and requires confirmation for insertion. Automatic dependency installation may be offered depending on agent permissions (file-read, file-write, and package-install scopes).
+The skill proposes changes and requires confirmation for insertion. Automatic dependency installation may be offered depending on agent permissions 
 
 ## See also
 

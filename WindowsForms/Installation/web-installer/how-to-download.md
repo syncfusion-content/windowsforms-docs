@@ -80,7 +80,3 @@ You should initiate an evaluation if you have already obtained our components th
 You can also refer to the [**web installer**](https://help.syncfusion.com/windowsforms/installation/web-installer/how-to-install) links for step-by-step installation guidelines.
 
 For information about retrieving and using your license key after installation, see the [Licensing overview](https://help.syncfusion.com/windowsforms/licensing/overview).
-
-## Verify the Downloaded Installer
-
-After downloading the web installer, you can verify its integrity by checking the digital signature of the downloaded file. Right-click the file in Windows Explorer, select **Properties**, and then open the **Digital Signatures** tab. The signature should be issued to **Syncfusion, Inc.** If the digital signature is missing or invalid, re-download the installer from the Syncfusion website.	

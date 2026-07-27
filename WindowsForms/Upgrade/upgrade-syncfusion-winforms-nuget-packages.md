@@ -39,25 +39,11 @@ The NuGet **Package Manager UI** in Visual Studio allows you to easily install, 
 
 ## Upgrade NuGet packages through .NET CLI
 
-The .NET CLI does not have a separate update command. To upgrade an already-installed Syncfusion WinForms NuGet package to a newer version, navigate to the project folder and re-run `dotnet add package` with the desired version. The CLI replaces the existing reference in the `.csproj` file and then runs `dotnet restore`.
+There is no distinct command for the update procedure in the .NET CLI. Unless you specify the package version, .NET CLI installs the latest version of the Syncfusion WinForms NuGet packages when you use the dotnet add package command.
 
-1. Open a command prompt and navigate to the project folder:
+To specify a version, add the -v parameter:
 
-    `cd C:\Projects\MyWinFormsApp`
-
-2. To upgrade to a specific version, run:
-
-    ```dotnet add package Syncfusion.Grid.Windows -v 26.1.0.35```
-
-    To upgrade to the latest version, omit the `-v` parameter:
-
-    ```dotnet add package Syncfusion.Grid.Windows```
-
-3. After the command completes, perform a **Clean** and then **Rebuild** of the solution.
-
-N> The `dotnet add package` command uses the `-v` flag to specify a version. This is different from the Package Manager Console, which uses the `-Version` parameter.
-
-N> To roll back to a previous version, run `dotnet add package <PackageName> -v <PreviousVersion>` again with the desired older version.
+```dotnet add package Syncfusion.Grid.Windows -v 19.2.0.59```
 
 ## Upgrade NuGet packages through Package Manager Console
 
@@ -87,7 +73,7 @@ The **Package Manager Console** saves NuGet packages upgrade time since you don'
 
 3. By default, the package will be updated to the latest version. To update to a specific version, use the `-Version` parameter (note: Package Manager Console uses `-Version`, while the .NET CLI uses the shorter `-v`).
 
-    ```Update-Package Syncfusion.GridF.Windows -Version 26.1.0.35```
+      ```Update-Package Syncfusion.Grid.Windows -Version 19.2.0.59```
 
     ![Package Manager Console Output](images/UpdateConsole.png)
 

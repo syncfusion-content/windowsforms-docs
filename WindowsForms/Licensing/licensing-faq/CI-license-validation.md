@@ -115,7 +115,7 @@ The following example shows the syntax for validating the Syncfusion license key
 The following example shows the syntax for validating the Syncfusion license key in the Jenkins pipeline on a Windows agent.
 
 {% tabs %}
-{% highlight groovy tabtitle="Jenkinsfile (Windows agent)" %}
+{% highlight json %}
 pipeline {
 	agent any
 	environment {
@@ -124,7 +124,7 @@ pipeline {
 	stages {
 		stage('Syncfusion License Validation') {
 			steps {
-				bat 'pwsh %LICENSE_VALIDATION%'
+				sh 'pwsh ${LICENSE_VALIDATION}'
 			}
 		}
 	}

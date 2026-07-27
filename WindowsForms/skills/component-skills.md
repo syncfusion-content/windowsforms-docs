@@ -21,7 +21,6 @@ Before installing Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms
 - Required [Node.js](https://nodejs.org/en/) version >= 16
 - Windows Forms application (existing or new); see [Overview](https://help.syncfusion.com/windowsforms/overview)
 - A supported AI agent or IDE that integrates with the Skills CLI (Visual Studio Code, Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio, Cursor, etc.)
-- A Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio for Windows Forms release that matches the skill pack version installed.
 
 ## Key Benefits
 
@@ -47,7 +46,7 @@ Install [Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms componen
 
 ### Install all skills
 
-From your project root, run the following command to install all component skills at once in the `.agents/skills` directory. The `-y` flag accepts the default answers (project scope, default agent) without prompting.
+Use the following command to install all component skills at once in the `.agents/skills` directory:
 
 {% tabs %}
 {% highlight bash tabtitle="NPM" %}
@@ -136,16 +135,6 @@ Once skills are installed, the assistant can be used to generate and update Sync
 
 - "Add a DataGrid with paging, sorting, and filtering."
 - "Create a Schedule control with week view and drag‑drop."
-
-## How Syncfusion<sup style="font-size:70%">&reg;</sup> Agent Skills Work
-
-1. **Reads relevant Skill files based on queries**, retrieving component usage patterns, APIs, and best‑practice guidance from installed Syncfusion<sup style="font-size:70%">&reg;</sup> Skills. The assistant initially loads only skill names and descriptions. It then dynamically loads the required skill and reference files as needed to provide accurate Syncfusion guidance. Skill files are matched to the query by name, description, and file references declared inside the skill.
-2. **Enforces Syncfusion<sup style="font-size:70%">&reg;</sup> best practices** when generating code, including:
-
-   - Using the required assemblies for each component.
-   - Recommending applicable feature controls (for example, paging, sorting, filtering) so they are included in the generated code.
-   - Adding the correct theme and [VisualStyle](https://help.syncfusion.com/windowsforms/visualstyle) settings. Supported themes include Office2007, Office2010, Office2013, Office2016, Office2019, Metro, and HighContrast.
-3. **Generates component‑accurate code**, avoiding invalid properties or unsupported patterns.
 
 ## Skills CLI Commands
 
