@@ -12,10 +12,6 @@ documentation: ug
 
 License keys for Windows Forms can be generated from the [License & Downloads](https://www.syncfusion.com/account/downloads) or [Trial & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) section from your Syncfusion account.
 
-1. Sign in to your [Syncfusion account](https://www.syncfusion.com/account).
-2. Navigate to the [License & Downloads](https://www.syncfusion.com/account/downloads) section.
-3. Select the **Windows Forms** platform and the required version, then click **Generate Key**.
-
 ![Get License Key](licensing-images/generate-license.png)
 
 I> * Syncfusion license keys are **version and platform specific**, refer to the [KB](https://support.syncfusion.com/kb/article/7898/how-to-generate-license-key-for-licensed-products) to generate the license key for the required version and platform.
@@ -23,7 +19,7 @@ I> * Syncfusion license keys are **version and platform specific**, refer to the
 
 ## Claim License Key
 
-Syncfusion license keys can also be generated from the **"Claim License Key"** page based on the trial or valid license associated with your Syncfusion account. The **Claim License Key** button is also available directly from the application licensing-warning popup.
+Syncfusion license keys can also be generated from the **"Claim License Key"** page based on the trial or valid license associated with your Syncfusion account.
 
 You can get the license key, based on license availability in your Syncfusion account.
 
@@ -43,13 +39,11 @@ If you have a Syncfusion account associated with a valid trial license, the lice
 
 If you have a Syncfusion account with an expired license, your license subscription must be renewed to obtain a valid license key for the latest Essential Studio version. Meanwhile, a temporary license key with a 5-day validity period will be generated.
 
-To renew, see [My Renewals](https://www.syncfusion.com/account/my-renewals).
-
 ![Expired License](licensing-images/expired-license.png)
 
 ### No Trial or No License or Expired trial
 
-If the Syncfusion account is not associated with a trial, license, or expired trial, you can start a new trial from the [Start Trial](https://www.syncfusion.com/account/manage-trials/start-trials) page. After starting the trial, generate the key from the [Trial & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page.
+If the Syncfusion account is not associated with a trial, license, or expired trial, you can try to claim either a trial or a valid license from claim license page.
 
 ![No Trial or No License](licensing-images/no-active-trial-or-license.png)
 

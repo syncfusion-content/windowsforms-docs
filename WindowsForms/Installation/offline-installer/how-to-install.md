@@ -108,7 +108,7 @@ After installation, you can register your Syncfusion license key in your applica
 
 ## Installing in silent mode
 
-The Syncfusion Essential Studio for Windows Forms Installer supports installation and uninstallation via the command line. The command prompt must be run as Administrator to install or uninstall the product silently.
+The Syncfusion Essential Studio for Windows Forms Installer supports installation and uninstallation via the command line.
 
 ### Command Line Installation
 

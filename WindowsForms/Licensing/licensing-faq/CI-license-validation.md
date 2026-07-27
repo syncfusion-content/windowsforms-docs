@@ -50,11 +50,11 @@ Write-Host $result
   
   **Platform:** Set `/platform:"UIComponent"` for v34.1.29 and later, or `/platform:"WindowsForms"` for earlier versions (use the relevant Syncfusion platform as needed).
 
-  **Version:** Change the value for `/version:` to the required version (e.g., `"34.1.29"` for v34+ or `"26.2.4"` for earlier versions).
+  **Version:** Change the value for `/version:` to the required version (e.g., `"34.1.29"`).
 
   **License Key:** Replace the value for `/licensekey:` with your actual license key (e.g., `"YOUR LICENSE KEY"`).
 
-  N> This feature is supported from version 16.2.0.41 of Essential Studio and later. The `Platform.UIComponent` value replaces `Platform.WindowsForms` from v34.1.29 onwards.
+  N> This feature is supported from version 16.2.0.41 of Essential Studio and later.
 
 ## Azure Pipelines
 
@@ -112,7 +112,7 @@ The following example shows the syntax for validating the Syncfusion license key
 
 * Add a stage in the Jenkins pipeline to execute the `LicenseKeyValidation.ps1` script in PowerShell. On Windows agents, use the `bat` step (the `sh` step is for Linux/Unix agents).
 
-The following example shows the syntax for validating the Syncfusion license key in the Jenkins pipeline on a Windows agent.
+The following example shows the syntax for validating the Syncfusion license key in the Jenkins pipeline.
 
 {% tabs %}
 {% highlight json %}
@@ -136,7 +136,7 @@ pipeline {
 
 * Register the license key properly by calling `RegisterLicense("License Key")` with the license key.
 
-* Once the license key is registered, it can be validated by using the `ValidateLicense(Platform.WindowsForms)` method (or `ValidateLicense(new[] { Platform.UIComponent })` for v34.1.29+). This ensures that the license key is valid for the platform and version you are using. The method returns `true` when the registered key is valid; the `out string validationMessage` overload also returns a description of any failure. Refer to the following example.
+* Once the license key is registered, it can be validated by using the `ValidateLicense(Platform.WindowsForms)` method  (or `ValidateLicense(new[] { Platform.UIComponent })` for v34.1.29+). . This ensures that the license key is valid for the platform and version you are using. Refer to the following example.
 
 {% tabs %}
 {% highlight c# tabtitle="v34.1.29 and later" %}
@@ -174,7 +174,7 @@ N> Use `Platform.UIComponent` for UI component license validation in v34.1.29 an
 
 * For more details on creating unit test projects in Visual Studio, refer to the [Getting Started with Unit Testing guide](https://learn.microsoft.com/en-us/visualstudio/test/getting-started-with-unit-testing?view=vs-2022&tabs=dotnet%2Cmstest#create-unit-tests).
 
-* Add a reference to the application/project under test (or to the same `Syncfusion.Licensing` NuGet package the application uses), and add the `Syncfusion.Licensing` NuGet package to the test project. Register the license key by calling the `RegisterLicense("YOUR LICENSE KEY")` method in the test project's setup (or load it from an environment variable / secret).
+* Add a reference (or NuGet package) for `Syncfusion.Licensing` to the test project, and register the license key by calling the `RegisterLicense("YOUR LICENSE KEY")` method in the test project's setup.
 
 N> * Place the license key between double quotes (e.g., `RegisterLicense("YOUR LICENSE KEY")`). Ensure that `Syncfusion.Licensing.dll` is referenced in the project where the license key is being registered.
 

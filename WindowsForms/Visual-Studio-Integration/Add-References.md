@@ -15,7 +15,7 @@ N> This Reference Manager can be applied to a project for Syncfusion® assembly 
 
 Follow the given steps to add the Syncfusion® references in Visual Studio:
 
-> Before using the Syncfusion® WinForms Reference Manager, verify that the **Syncfusion WinForms** extension is installed by going to **Extensions → Manage Extensions → Installed** in Visual Studio 2019 or later, or **Tools → Extensions and Updates → Installed** in Visual Studio 2017 or lower. If this extension is not installed, install the extension by following the steps from the [download and installation](https://help.syncfusion.com/windowsforms/visual-studio-integration/download-and-installation) help topic.
+> Before use the Syncfusion® WinForms Reference Manager, check whether the **WinForms Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by going to Extensions -> Manage Extensions -> Installed for Visual Studio 2019 or later and for Visual Studio 2017 or lower by going to Tools -> Extensions and Updates -> Installed. If this extension not installed, please install the extension by follow the steps from the [download and installation](https://help.syncfusion.com/windowsforms/visual-studio-integration/download-and-installation) help topic.
 
 1. Open a new or existing **WinForms** application.
 
@@ -68,9 +68,3 @@ Follow the given steps to add the Syncfusion® references in Visual Studio:
    ![Syncfusion license registration required information dialog in Syncfusion Reference Manager](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img7.png)
 
 N>  Syncfusion<sup>®</sup> provides Reference Manager support for specific .NET Framework versions, based on the assemblies shipped with the Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> setup. If you attempt to add Syncfusion<sup>®</sup> assemblies to a project whose target framework is not supported by the selected Syncfusion<sup>®</sup> version, a dialog will appear with the following message: **“Current build v{version} does not support this framework v{Framework Version}.”**
-
-
-
-
-
-

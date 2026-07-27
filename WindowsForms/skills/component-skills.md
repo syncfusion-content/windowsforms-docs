@@ -58,7 +58,7 @@ npx skills add syncfusion/winforms-ui-components-skills -y
 
 ### Install selected skills
 
-Run the command below from your project root to install skills interactively. The command opens a list of available skills and prompts for the target agent and installation scope.
+Use the following command to install skills interactively:
 
 {% tabs %}
 {% highlight bash tabtitle="NPM" %}
@@ -68,8 +68,7 @@ npx skills add syncfusion/winforms-ui-components-skills
 {% endhighlight %}
 {% endtabs %}
 
-The terminal will display a list of available skills. Use the **arrow keys** to move between skills, the **space bar** to toggle a skill on or off, and the **Enter** key to confirm your selection. If you do not select any skills and press Enter, the command exits without installing.
-{% tabs %}
+The terminal will display a list of available skills. Use the **arrow keys** to move between skills, the **space bar** to toggle a skill on or off, and the **Enter** key to confirm.
 {% highlight bash tabtitle="CMD" %}
 
  Select skills to install (space to toggle)
@@ -125,7 +124,7 @@ Choose your installation scope (project-level or global), then confirm to comple
 {% endhighlight %}
 {% endtabs %}
 
-This registers the Syncfusion<sup style="font-size:70%">&reg;</sup> skill pack so your AI assistant can automatically load it in supported IDEs such as [Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio](https://help.syncfusion.com/code-studio/reference/configure-properties/skills), [Visual Studio Code](https://code.visualstudio.com/docs/copilot/customization/agent-skills), and [Cursor](https://cursor.com/docs/skills). After installation, restart your IDE (or use the **Reload Window** command) so the IDE can detect the newly added skill files.
+This registers the Syncfusion<sup style="font-size:70%">&reg;</sup> skill pack so your AI assistant can automatically load it in supported IDEs such as [Code Studio](https://help.syncfusion.com/code-studio/reference/configure-properties/skills), [Visual Studio Code](https://code.visualstudio.com/docs/copilot/customization/agent-skills), and [Cursor](https://cursor.com/docs/skills). After installation, restart your IDE (or use the **Reload Window** command) so the IDE can detect the newly added skill files.
 
 To learn more about the Skills CLI, refer [here](https://www.skills.sh/docs). 
 

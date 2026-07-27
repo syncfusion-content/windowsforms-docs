@@ -108,18 +108,14 @@ If the application is registered with another version's license key, the followi
 
 ## Could not load Syncfusion.Licensing.dll assembly version...?
 
-This error applies to all supported versions.
+Please ensure that all Syncfusion NuGet packages including [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing) were installed properly, and assembly references are upgraded to the required version. Also, verify that the csproj and packages.config/web.config files references have been referred with the updated version.
 
-Please ensure that all Syncfusion NuGet packages including [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing) were installed properly, and assembly references are upgraded to the required version.
+To avoid run-time errors, set copy local to true. Copy Local determines whether a reference is copied to the project output path.
 
-After upgrading, perform a Clean and then Rebuild of the solution to ensure stale binaries are removed.
+![Set copy local to true](licensing-images/SetCopyLocalTrue.png)
 
-To avoid run-time errors, set **Copy Local** to true. **Copy Local** determines whether a reference is copied to the project output path.
-
-![Set Copy Local to true](licensing-images/SetCopyLocalTrue.png)
-
-Set **Copy Local** as True for `Syncfusion.Licensing.dll` along with all other Syncfusion assemblies and ensure that the `Syncfusion.Licensing.dll` assembly is also present in the output folder or deployment folder of the application.
+Set “CopyLocal” as True for Syncfusion.Licensing.dll along with all other Syncfusion assemblies and ensure that the Syncfusion.Licensing.dll assembly is also present in the output folder or deployment folder of the application.
 
 ![Output folder](licensing-images/OutputFolder.png)
 
-Refer to this knowledge base article to set [Copy Local](https://www.syncfusion.com/kb/4808/how-to-resolve-server-error-could-not-load-or-assembly-when-publishing-an-application) as true.
+Refer to this knowledge base articles to set [copy local](https://www.syncfusion.com/kb/4808/how-to-resolve-server-error-could-not-load-or-assembly-when-publishing-an-application) as true.

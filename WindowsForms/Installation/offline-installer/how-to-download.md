@@ -78,5 +78,3 @@ You should initiate an evaluation if you have already obtained our components th
    ![Offline installer formats for Syncfusion Essential Studio](images/start-trial-download-offline-installer.png)
 
 You can also refer to the [**Offline installer**](https://help.syncfusion.com/windowsforms/installation/offline-installer/how-to-install) links for step-by-step installation guidelines.
-
-For information about retrieving and using your license key after installation, see the [Licensing overview](https://help.syncfusion.com/windowsforms/licensing/overview).

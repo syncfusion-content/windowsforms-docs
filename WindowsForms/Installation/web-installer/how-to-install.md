@@ -9,6 +9,8 @@ documentation: ug
 
 # Installing Syncfusion Windows Forms Web Installer
 
+## Overview
+
 For the Essential Studio for Windows Forms product, Syncfusion offers a Web Installer. This installer alleviates the burden of downloading a larger installer. You can simply download and run the online installer, which will be smaller in size and will download and install the Essential Studio products you have chosen. You can get the most recent version of Essential Studio Web Installer [here](https://www.syncfusion.com/downloads/latest-version). 
 
  
@@ -73,8 +75,6 @@ The steps below show how to install Essential Studio for Windows Forms Web Insta
     ![Install and samples location for install](images/Step-by-Step-Installation_img8.png)
 	
 	**Additional settings**
-
-    The following additional settings can be configured on a per-product basis. (For more details on each option, see the [offline installer Additional Settings](https://help.syncfusion.com/windowsforms/installation/offline-installer/how-to-install#installing-with-ui) section.)
 	
     * Select the **Install Demos** check box to install Syncfusion samples, or leave the check box unchecked if you do not want to install Syncfusion samples.
 	* Select the **Register Syncfusion Assemblies in GAC** check box to install the latest Syncfusion assemblies in the Global Assembly Cache (GAC), or clear this check box when you do not want to install the latest assemblies in the GAC.

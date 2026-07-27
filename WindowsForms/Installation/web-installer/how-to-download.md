@@ -75,8 +75,6 @@ You should initiate an evaluation if you have already obtained our components th
    
 8. After downloading, the Syncfusion Windows Forms web installer can be unlocked using Syncfusion registered login credential.
 
-   N> The Syncfusion web installer handles both trial and licensed installations. When you sign in, the installer uses your account license to determine whether to install a trial or licensed version.
+   N> For Syncfusion trial and licensed products, there is no separate web installer. Based on your account license,Syncfusion trial or licensed products will be installed via web installer.
 
 You can also refer to the [**web installer**](https://help.syncfusion.com/windowsforms/installation/web-installer/how-to-install) links for step-by-step installation guidelines.
-
-For information about retrieving and using your license key after installation, see the [Licensing overview](https://help.syncfusion.com/windowsforms/licensing/overview).

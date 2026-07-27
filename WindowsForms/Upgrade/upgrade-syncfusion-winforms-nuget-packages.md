@@ -70,7 +70,7 @@ The **Package Manager Console** saves NuGet packages upgrade time since you don'
 
     **For example:** `Update-Package Syncfusion.Grid.Windows -ProjectName SyncfusionWinformsApp`
 
-3. By default, the package will be updated to the latest version. To update to a specific version, use the `-Version` parameter (note: Package Manager Console uses `-Version`, while the .NET CLI uses the shorter `-v`).
+3. By default, the package will be installed with latest version. You can give the required version with the -Version term like below to install the Syncfusion WinForms NuGet packages in the appropriate version.
 
       ```Update-Package Syncfusion.Grid.Windows -Version 19.2.0.59```
 
