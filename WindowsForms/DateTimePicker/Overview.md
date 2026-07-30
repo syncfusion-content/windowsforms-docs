@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of SfDateTimeEdit control | Windows Forms | Syncfusion
-description: SfDateTimeEdit allows user to edit the DateTime in the text with the support of minimum and maximum value validation, watermark, etc.,
+description: SfDateTimeEdit allows the user to edit the DateTime in the text with the support of minimum and maximum value validation, watermark, etc.,
 platform: WindowsForms
 control: SfDateTimeEdit
 documentation: ug
@@ -15,13 +15,13 @@ The **SfDateTimeEdit** is a control that allows you to edit DateTime in the text
 
 ## Key Features
 
-**Editing mode** - Supports the default text editing and mask mode that helps to restrict the date input in formatted values based on a date-time pattern.
+**Editing mode** - Supports the default text editing and mask mode that restricts date input to formatted values based on a date-time pattern.
 
-**Date-range support** - Supports the maximum and minimum dates to prevent users from setting a date or time within a specified range.
+**Date-range support** - Supports the maximum and minimum dates to prevent users from setting a date or time outside a specified range.
 
 **Globalization** - Supports different date-time formats and patterns based on cultures.
 
-**Date validation** - Supports date validation and error messages due to invalid dates or when date range constraints are met.
+**Date validation** - Supports date validation and error messages due to invalid dates or when date range constraints are violated.
 
 **Accessibility** - Provides touch, keyboard, and mouse support to make applications available to a wide variety of users.
 
@@ -39,15 +39,15 @@ Syncfusion WinForms suite comes up with the following different DateTime control
 
 ### SfDateTimeEdit
 
-The [SfDateTimeEdit](https://help.syncfusion.com/windowsforms/datetimepicker/overview) control allows you to edit date-time in the text or mask format with minimum and maximum values validation, watermark, and globalization support. Provides flexible options to display date-time according to the required format.
+The [SfDateTimeEdit](https://help.syncfusion.com/windowsforms/datetimepicker/overview) control allows you to edit date-time in the text or mask format with minimum and maximum values validation, watermark, and globalization support. It provides flexible options to display the date-time according to the required format.
 
 ### DateTimePickerAdv
 
-[DateTimePickerAdv](https://help.syncfusion.com/windowsforms/classic/datetimepicker/overview) is an advanced DateTimePicker control. Provides an easy way to implement a culture based DateTimePicker in an application. Support for a string to be displayed when the user does not want a specific date selected.
+[DateTimePickerAdv](https://help.syncfusion.com/windowsforms/classic/datetimepicker/overview) is an advanced DateTimePicker control. It provides an easy way to implement a culture based DateTimePicker in an application. It displays a string when no specific date is selected.
 
 ### SfDateTimeEdit vs DateTimePickerAdv
 
-Both SfDateTimeEdit and DateTimePickerAdv controls are used for the same purpose. But, the SfDateTimeEdit control offers rich set of features over DateTimePickerAdv. To customize the updown and dropdown buttons, use DateTimePickerAdv. For date range support, watermark, navigation, and date validation, use SfDateTimeEdit.
+Both SfDateTimeEdit and DateTimePickerAdv controls are used for the same purpose. But, the SfDateTimeEdit control offers a rich set of features over DateTimePickerAdv. To customize the updown and dropdown buttons, use DateTimePickerAdv. For date range support, watermark, navigation, and date validation, use SfDateTimeEdit.
 
 The list of some of the specific API differences between SfDateTimeEdit and DateTimePickerAdv is as follows.
 
@@ -93,7 +93,7 @@ MinDateTime
 MinValue
 </td>
 <td>
-Sets the time less than specific date-time.
+Sets the minimum selectable date-time.
 </td>
 </tr>
 <tr>
@@ -104,7 +104,7 @@ MaxDateTime
 MaxValue
 </td>
 <td>
-Sets the time greater than specific date-time.
+Sets the maximum selectable date-time.
 </td>
 </tr>
 <tr>
@@ -144,7 +144,7 @@ Support for free style editing with different {{'[mode](https://help.syncfusion.
 Date validation
 </td>
 <td>
-Shows error messages on the invalid dates or when date-range constraints are met. To learn more about date validation in SfDateTimeEdit, refer to {{'[here](https://help.syncfusion.com/windowsforms/datetimepicker/validation)'| markdownify }}.
+Shows error messages on the invalid dates or when date-range constraints are violated. To learn more about date validation in SfDateTimeEdit, refer to {{'[here](https://help.syncfusion.com/windowsforms/datetimepicker/validation)'| markdownify }}.
 </td>
 </tr>
 <tr>

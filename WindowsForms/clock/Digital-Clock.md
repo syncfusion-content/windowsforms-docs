@@ -9,19 +9,21 @@ documentation: ug
 
 # Digital Clock in Windows Forms Clock
 
-The DigitalClock is implemented as an extension to the existing [Windows Forms Clock](https://www.syncfusion.com/winforms-ui-controls/clock) control in the UI controls, but offers a richer UI experience than the existing clock and is capable of displaying the time as digital text.
+The DigitalClock is implemented as an extension to the existing [Windows Forms Clock](https://www.syncfusion.com/winforms-ui-controls/clock) control. It offers a richer UI experience than the existing clock and is capable of displaying the time as digital text.
 
 You can use the DigitalClock in your application by simply switching the [ClockType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html#Syncfusion_Windows_Forms_Tools_Clock_ClockType) of the existing [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html) control as described in the following sample code:
 
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.Windows.Forms.Tools;
 
 this.clock1.ClockType = Syncfusion.Windows.Forms.Tools.ClockTypes.Digital;
 
 {% endhighlight %}
 
 {% highlight VB %}
+Imports Syncfusion.Windows.Forms.Tools
 
 Me.clock1.ClockType = Syncfusion.Windows.Forms.Tools.ClockTypes.Digital
 
@@ -35,24 +37,26 @@ The DigitalClock offers a wide range of options to customize its appearance. It 
 
 ### Frames
 
-To enable the background frames, the DigitalClock should be enabled with the property [ShowClockFrame](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html#Syncfusion_Windows_Forms_Tools_Clock_ShowClockFrame) set to `true`.
+To enable the background frames, set the [ShowClockFrame](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html#Syncfusion_Windows_Forms_Tools_Clock_ShowClockFrame) property to `true`.
 
 #### Rectangular frame
 
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.Windows.Forms.Tools;
 
-    this.clock1.ShowClockFrame = true;
+this.clock1.ShowClockFrame = true;
 
-    this.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.RectangularFrame;
+this.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.RectangularFrame;
 
 {% endhighlight %}
 
 {% highlight VB %}
+Imports Syncfusion.Windows.Forms.Tools
 
-    Me.clock1.ShowClockFrame = true
-    Me.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.RectangularFrame
+Me.clock1.ShowClockFrame = True
+Me.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.RectangularFrame
 
 {% endhighlight %}
 
@@ -65,17 +69,19 @@ To enable the background frames, the DigitalClock should be enabled with the pro
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.Windows.Forms.Tools;
 
-    this.clock1.ShowClockFrame = true;
+this.clock1.ShowClockFrame = true;
 
-    this.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.CircularFrame;
+this.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.CircularFrame;
 
 {% endhighlight %}
 
 {% highlight VB %}
+Imports Syncfusion.Windows.Forms.Tools
 
-Me.clock1.ShowClockFrame = true
-Me.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.CircularFrame
+Me.clock1.ShowClockFrame = True
+Me.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.CircularFrame
 
 {% endhighlight %}
 
@@ -90,17 +96,19 @@ Me.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.CircularFram
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.Windows.Forms.Tools;
 
-    this.clock1.ShowClockFrame = true;
+this.clock1.ShowClockFrame = true;
 
-    this.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.SquareFrame;
+this.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.SquareFrame;
 
 {% endhighlight %}
 
 {% highlight VB %}
+Imports Syncfusion.Windows.Forms.Tools
 
-Me.clock1.ShowClockFrame = true
-Me.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.SquareFrame
+Me.clock1.ShowClockFrame = True
+Me.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.SquareFrame
 
 {% endhighlight %}
 
@@ -110,24 +118,26 @@ Me.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.SquareFrame
 
 ### Shapes
 
-To enable background shapes in the [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html) control, the [ShowClockFrame](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html#Syncfusion_Windows_Forms_Tools_Clock_ShowClockFrame) property should be disabled so that the control can support rendering the background shapes.
+To enable background shapes in the [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html) control, set the [ShowClockFrame](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html#Syncfusion_Windows_Forms_Tools_Clock_ShowClockFrame) property to `false` to enable the background shapes.
 
 #### Rectangular shape
 
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.Windows.Forms.Tools;
 
-    this.clock1.ShowClockFrame = false;
+this.clock1.ShowClockFrame = false;
 
-    this.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.Rectangle;
+this.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.Rectangle;
 
 {% endhighlight %}
 
 {% highlight VB %}
+Imports Syncfusion.Windows.Forms.Tools
 
-Me.clock1.ShowClockFrame = False
-Me.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.CircularFrame
+Me.clock1.ShowClockFrame = False
+Me.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.Rectangle
 
 {% endhighlight %}
 
@@ -142,17 +152,19 @@ Me.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.CircularFram
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.Windows.Forms.Tools;
 
-    this.clock1.ShowClockFrame = false;
+this.clock1.ShowClockFrame = false;
 
-    this.clock2.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.RoundedRectangle;
+this.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.RoundedRectangle;
 
  {% endhighlight %}
 
 {% highlight VB %}
+Imports Syncfusion.Windows.Forms.Tools
 
-Me.clock1.ShowClockFrame = False
-Me.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockShapes.CircularFrame
+Me.clock1.ShowClockFrame = False
+Me.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.RoundedRectangle
 
 {% endhighlight %}
 
@@ -167,17 +179,19 @@ Me.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockShapes.CircularFram
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.Windows.Forms.Tools;
 
-  this.clock1.ShowClockFrame = false;
+this.clock1.ShowClockFrame = false;
 
-  this.clock2.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.Circle;
+this.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.Circle;
 
 {% endhighlight %}
  
 {% highlight VB %}
+Imports Syncfusion.Windows.Forms.Tools
 
-Me.clock1.ShowClockFrame = false
-Me.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.Circle
+Me.clock1.ShowClockFrame = False
+Me.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.Circle
 
 {% endhighlight %}
 
@@ -192,17 +206,19 @@ Me.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.Circle
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.Windows.Forms.Tools;
 
-  this.clock1.ShowClockFrame = false;
+this.clock1.ShowClockFrame = false;
 
-  this.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.Square;
+this.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.Square;
 
  {% endhighlight %}
 
 {% highlight VB %}
+Imports Syncfusion.Windows.Forms.Tools
 
-Me.clock1.ShowClockFrame = false
-Me.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.Square
+Me.clock1.ShowClockFrame = False
+Me.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.Square
 
  {% endhighlight %}
 
@@ -217,17 +233,19 @@ Me.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.Square
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.Windows.Forms.Tools;
 
-  this.clock1.ShowClockFrame = false;
+this.clock1.ShowClockFrame = false;
 
-  this.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.RoundedSquare;
+this.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.RoundedSquare;
 
 {% endhighlight %}
 
 {% highlight VB %}
+Imports Syncfusion.Windows.Forms.Tools
 
-Me.clock1.ShowClockFrame = false
-Me.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.RoundedSquare
+Me.clock1.ShowClockFrame = False
+Me.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.RoundedSquare
 
 {% endhighlight %}
 
@@ -244,16 +262,18 @@ The foreground color for the DigitalClock can be changed using the [ForeColor](h
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.Windows.Forms.Tools;
 
-    this.clock1.ForeColor = System.Drawing.Color.Yellow;
+this.clock1.ForeColor = System.Drawing.Color.Yellow;
 
 {% endhighlight %}
 
 
 
 {% highlight VB %}
+Imports Syncfusion.Windows.Forms.Tools
 
-   Me.clock1.ForeColor = System.Drawing.Color.Yellow
+Me.clock1.ForeColor = System.Drawing.Color.Yellow
 
 {% endhighlight %}
 
@@ -269,22 +289,22 @@ The background color for the DigitalClock can be changed using the [BackgroundCo
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.Windows.Forms.Tools;
 
+this.clock1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
 
-
-    this.clock1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-
-    this.clock1.ForeColor = System.Drawing.Color.Yellow;
+this.clock1.ForeColor = System.Drawing.Color.Yellow;
 
 {% endhighlight %}
 
 
 
 {% highlight VB %}
+Imports Syncfusion.Windows.Forms.Tools
 
-   Me.clock1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption
+Me.clock1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption
 
-   Me.clock1.ForeColor = System.Drawing.Color.Yellow
+Me.clock1.ForeColor = System.Drawing.Color.Yellow
 
 {% endhighlight %}
 
@@ -299,26 +319,26 @@ The border color for the control will be reflected only when the control is assi
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.Windows.Forms.Tools;
 
+this.clock1.BorderColor = System.Drawing.Color.Yellow;    
 
+this.clock1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
 
-    this.clock1.BorderColor = System.Drawing.Color.Yellow;    
-
-    this.clock1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-
-    this.clock1.ForeColor = System.Drawing.Color.Yellow;
+this.clock1.ForeColor = System.Drawing.Color.Yellow;
 
 {% endhighlight %}
 
 
 
 {% highlight VB %}
+Imports Syncfusion.Windows.Forms.Tools
 
-   Me.clock1.BorderColor = System.Drawing.Color.Yellow
+Me.clock1.BorderColor = System.Drawing.Color.Yellow
 
-   Me.clock1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption
+Me.clock1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption
 
-   Me.clock1.ForeColor = System.Drawing.Color.Yellow
+Me.clock1.ForeColor = System.Drawing.Color.Yellow
 
 {% endhighlight %}
 
@@ -330,21 +350,23 @@ The border color for the control will be reflected only when the control is assi
 
 ### Show or hide days of the week
 
-To display or hide the week days and current date in the DigitalClock, the [DisplayDates](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html#Syncfusion_Windows_Forms_Tools_Clock_DisplayDates) property can be used.
+To display or hide the weekdays and current date in the DigitalClock, the [DisplayDates](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html#Syncfusion_Windows_Forms_Tools_Clock_DisplayDates) property can be used.
 
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.Windows.Forms.Tools;
 
-          this.clock1.DisplayDates = true;
+this.clock1.DisplayDates = true;
 
 {% endhighlight %}
 
 
 
 {% highlight VB %}
+Imports Syncfusion.Windows.Forms.Tools
 
-        Me.clock1.DisplayDates = True
+Me.clock1.DisplayDates = True
 
 {% endhighlight %}
 
@@ -364,66 +386,56 @@ To display or hide the hour designator (AM and PM) in the DigitalClock, the [Sho
 
 {% tabs %}
 
-{% highlight C# %}     
+{% highlight C# %}
+using Syncfusion.Windows.Forms.Tools;     
 
-          this.clock1.ShowHourDesignator = false;
+this.clock1.ShowHourDesignator = false;
 
 {% endhighlight %}
 
 
 
 {% highlight VB %}
+Imports Syncfusion.Windows.Forms.Tools
 
-          Me.clock1.ShowHourDesignator = false
+Me.clock1.ShowHourDesignator = False
 
 {% endhighlight %}
 
 {% endtabs %}
 
-
-
 ![Hide the hour designator](Overview_images/Overview_img113.png) 
-
-
 
 ![Show the hour designator](Overview_images/Overview_img114.png) 
 
 
 ### Custom time Clock
 
-To enable the custom time, the DigitalClock should be enabled with the property [ShowCustomTimeClock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html#Syncfusion_Windows_Forms_Tools_Clock_ShowCustomTimeClock) set as `true`.
+To enable the custom time, set the [ShowCustomTimeClock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html#Syncfusion_Windows_Forms_Tools_Clock_ShowCustomTimeClock) property to `true`.
 
 #### Input formats
 
-To enable the custom time, the clock control should be enabled with the [ShowCustomTimeClock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html#Syncfusion_Windows_Forms_Tools_Clock_ShowCustomTimeClock) property set as `true`, and the custom time should be in DateTime format.
+To enable the custom time, set the [ShowCustomTimeClock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html#Syncfusion_Windows_Forms_Tools_Clock_ShowCustomTimeClock) property to `true`, and the custom time should be in DateTime format.
 
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.Windows.Forms.Tools;
 
-          this.clock1.ShowCustomTimeClock = true;
-
-          this.clock1.CustomTime = new System.DateTime(2013, 9, 14, 10, 10, 15, 0);
-
-
+this.clock1.ShowCustomTimeClock = true;
+this.clock1.CustomTime = new System.DateTime(2013, 9, 14, 10, 10, 15, 0);
 {% endhighlight %}
-
-
-
-
 {% highlight VB %}
+Imports Syncfusion.Windows.Forms.Tools
 
-          Me.clock1.ShowCustomTimeClock = true
-
-                   Me.clock1.CustomTime = New Date(2013, 9, 14, 10, 10, 15, 0)
+Me.clock1.ShowCustomTimeClock = True
+Me.clock1.CustomTime = New Date(2013, 9, 14, 10, 10, 15, 0)
 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![Custom time Clock](Overview_images/Overview_img115.png) 
-
-
 
 #### Applying custom renderer to the DigitalClock control
 
@@ -432,29 +444,29 @@ The following code sample can be utilized for applying a custom renderer to the 
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.Windows.Forms.Tools;
 
-  DigitalRenderer render = new DigitalRenderer();
+DigitalRenderer render = new DigitalRenderer();
 
-  this.clock1.DigitalRenderer = render;
+this.clock1.DigitalRenderer = render;
 
-   public class DigitalRenderer : DigitalClockRenderer
+public class DigitalRenderer : DigitalClockRenderer
 
+{
+
+    public override void DrawDigitalClockFrame(Graphics g, Image newImage, Clock clock)
     {
 
-        public override void DrawDigitalClockFrame(Graphics g, Image newImage, Clock clock)
+        Image image =Image.FromFile(@"D:\CustomClock.PNG");
 
-        {
-
-            Image image =Image.FromFile(@"D:\CustomClock.PNG");
-
-            base.DrawDigitalClockFrame(g, image, clock);
-
-        }
+        base.DrawDigitalClockFrame(g, image, clock);
 
     }
+}
 
 {% endhighlight %}
 {% highlight VB %}
+Imports Syncfusion.Windows.Forms.Tools
 
 Dim render As DigitalRenderer = New DigitalRenderer
 Me.clock1.DigitalRenderer = render
@@ -466,7 +478,6 @@ Public Class DigitalRenderer
         MyBase.DrawDigitalClockFrame(g, image, clock)
     End Sub
 End Class
-
 
 {% endhighlight %}
 
