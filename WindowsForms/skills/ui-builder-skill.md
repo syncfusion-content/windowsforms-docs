@@ -200,6 +200,3 @@ The skill proposes changes and requires confirmation for insertion. Automatic de
 
 - [Agent Skills Standards](https://agentskills.io/home)
 - [Agent Package Manager](https://microsoft.github.io/apm/getting-started/quick-start/)
-- [Theme Studio](https://help.syncfusion.com/windowsforms/skinmanager/theme-studio)
-- [VisualStyle](https://help.syncfusion.com/windowsforms/visualstyle)
-- [Licensing](https://help.syncfusion.com/windowsforms/licensing)
