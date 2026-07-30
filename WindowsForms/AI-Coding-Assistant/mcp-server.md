@@ -11,7 +11,7 @@ documentation: ug
 
 ## Overview
 
-The [SyncfusionWinFormsAssistant](https://www.npmjs.com/package/@syncfusion/winforms-assistant) is a specialized [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) server that provides intelligent assistance for developers using Syncfusion's Windows Forms component libraries. This tool seamlessly integrates with compatible [MCP clients](https://modelcontextprotocol.io/clients) to enhance your development workflow when building .NET Windows Forms applications with Syncfusion<sup style="font-size:70%">&reg;</sup> components.
+The [SyncfusionWinFormsAssistant](https://www.npmjs.com/package/@syncfusion/winforms-assistant) is a specialized [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro) server that provides intelligent assistance for developers using Syncfusion's Windows Forms component libraries. This tool seamlessly integrates with compatible [MCP clients](https://modelcontextprotocol.io/clients) to enhance your development workflow when building .NET Windows Forms applications with Syncfusion<sup style="font-size:70%">&reg;</sup> components.
 
 ### Key Benefits
 
