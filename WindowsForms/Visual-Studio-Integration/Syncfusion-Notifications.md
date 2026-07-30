@@ -15,11 +15,19 @@ N> The Syncfusion® Notification feature is available from Essential Studio® v2
 
 ## Notification Configuration
 
-The Syncfusion® Options page allows you to configure notification settings. Customise trial and newer version notifications with a simple true or false toggle.
+The Syncfusion<sup>®</sup> Options page allows you to configure notification settings. Each notification can be toggled **on** (true) or **off** (false). Toggling a notification off suppresses that notification at runtime, while leaving the others active.
 
-It can be accessed by clicking **Tools -> Options -> Syncfusion -> Winforms**
+To configure a notification:
 
-![Option Page](images/winforms-optionPage.png)
+1. Open Visual Studio.
+2. Navigate to **Tools → Options → Syncfusion → WinForms**.
+3. Locate the notification to disable.
+4. Set its value to **False** to disable the notification or **True** to enable it.
+5. Click **OK**.
+
+The toggles are per-user settings stored in the Visual Studio profile, and they persist across Visual Studio upgrades on the same machine.
+
+![Syncfusion® WinForms Options page listing the notification toggles](images/winforms-optionPage.png)
 
 ## Notification Types
 
