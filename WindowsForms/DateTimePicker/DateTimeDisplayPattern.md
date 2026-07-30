@@ -22,18 +22,19 @@ The `SfDateTimeEdit` control supports the following DateTime format:
 * FullDateTime
 * MonthDay
 * Custom
-* ShortableDateTime
-* UniversalShortableDateTime
+* SortableDateTime
+* UniversalSortableDateTime
 * RFC1123
 * YearMonth
 
 ![date time edit pattern](datetimepattern-images/allpattern.png)
 
-The different display formats of the DateTime can be set by the [DateTimePattern](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_DateTimePattern) property. The following code snippet illustrates how to set the format as LongDate:
+The different display formats of the DateTime can be set by using the [DateTimePattern](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_DateTimePattern) property. The following code snippet illustrates how to set the format as LongDate:
 
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 Syncfusion.WinForms.Input.SfDateTimeEdit dateTimeEdit = new  Syncfusion.WinForms.Input.SfDateTimeEdit();
 
@@ -46,6 +47,7 @@ dateTimeEdit.DateTimePattern = DateTimePattern.LongDate;
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 Dim dateTimeEdit As Syncfusion.WinForms.Input.SfDateTimeEdit = New Syncfusion.WinForms.Input.SfDateTimeEdit
 
@@ -66,21 +68,22 @@ dateTimeEdit.DateTimePattern = DateTimePattern.LongDate
 The custom pattern can be displayed in the `SfDateTimeEdit` control by using the [Format](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_Format) property. Refer to the following list to create the custom format for the `SfDateTimeEdit`:
 
 * d: Day of the month.
-* ddd: Short name of day of the week.
+* ddd: Abbreviated day of the week name.
 * dddd: Full name of day of the week.
 * M: The month, from 1 to 12.
-* MMM: Short name of Month.
-* MMMM: Long name of the Month.
-* yy: Last two digit of year.
-* yyyy: Full Year.
+* MMM: Short name of month.
+* MMMM: Long name of the month.
+* yy: Last two digits of the year.
+* yyyy: Full year.
 * hh: Hour.
 * mm: Minutes.
 * ss: Seconds.
-* tt: The AM/PM Meridiem.
+* tt: The AM/PM indicator.
 
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 Syncfusion.WinForms.Input.SfDateTimeEdit dateTimeEdit = new Syncfusion.WinForms.Input.SfDateTimeEdit();
 
@@ -97,6 +100,7 @@ dateTimeEdit.Format = "MM/dd/yy hh:mm:ss";
 {% endhighlight %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 Dim dateTimeEdit As Syncfusion.WinForms.Input.SfDateTimeEdit = New Syncfusion.WinForms.Input.SfDateTimeEdit
 

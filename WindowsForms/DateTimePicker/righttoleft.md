@@ -14,6 +14,7 @@ documentation: ug
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 //Enable the Right to Left
 
@@ -22,6 +23,7 @@ this.dateTimeEdit.RightToLeft = RightToLeft.Yes;
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 'Enable the Right to Left
 
@@ -35,11 +37,12 @@ Me.dateTimeEdit.RightToLeft = RightToLeft.Yes
 
 ## Change drop-down calendar alignment
 
-The `SfDateTimeEdit` allows you to change the drop-down opening side of the calendar relative to the control. The [DropDownPopupAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_DropDownPopupAlignment) of the SfDateTimeEdit can be used to change the alignment of calendar.
+The `SfDateTimeEdit` allows you to change the drop-down opening side of the calendar relative to the control. The [DropDownPopupAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_DropDownPopupAlignment) of the SfDateTimeEdit can be used to change the alignment of the calendar.
 
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 //Setting Left Popup alignment
 
@@ -52,6 +55,7 @@ this.dateTimeEdit.DropDownPopupAlignment = DropDownPopupAlignment.Right;
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 'Setting Left Popup alignment
 

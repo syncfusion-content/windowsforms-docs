@@ -14,6 +14,7 @@ The `SfDateTimeEdit` control provides globalization support that allows you to d
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("pt-BR");
 
@@ -22,6 +23,7 @@ System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalizatio
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 System.Threading.Thread.CurrentThread.CurrentCulture = New System.Globalization.CultureInfo("pt-BR")
 
@@ -33,11 +35,12 @@ System.Threading.Thread.CurrentThread.CurrentUICulture = New System.Globalizatio
 
 ## Change culture
 
-By default, the `SfDateTimeEdit` supports system's current culture. Based on the usage, the culture of `SfDateTimeEdit` can be changed by using the [Culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_Culture) property. The date and time information displayed in the `SfDateTimeEdit` can be changed based on culture changes.
+By default, the `SfDateTimeEdit` supports the system's current culture. The culture of the `SfDateTimeEdit` can be changed by using the [Culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_Culture) property. The date and time information displayed in the `SfDateTimeEdit` can be changed based on culture changes.
 
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 Syncfusion.WinForms.Input.SfDateTimeEdit dateTimeEdit = new Syncfusion.WinForms.Input.SfDateTimeEdit();
 
@@ -50,6 +53,7 @@ dateTimeEdit.Culture = new CultureInfo("en-US");
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 Dim dateTimeEdit As Syncfusion.WinForms.Input.SfDateTimeEdit = New Syncfusion.WinForms.Input.SfDateTimeEdit
 
@@ -68,6 +72,7 @@ dateTimeEdit.Culture = New CultureInfo("en-US")
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 Syncfusion.WinForms.Input.SfDateTimeEdit dateTimeEdit = new Syncfusion.WinForms.Input.SfDateTimeEdit();
 
@@ -80,6 +85,7 @@ dateTimeEdit.Culture = new CultureInfo("fr-FR");
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 Dim dateTimeEdit As New Syncfusion.WinForms.Input.SfDateTimeEdit()
 
