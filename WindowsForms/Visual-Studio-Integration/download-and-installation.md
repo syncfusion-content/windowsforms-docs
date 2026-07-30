@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Downloand and Installation | WinForms | Syncfusion
+title: Download and Installation | WinForms | Syncfusion
 description: this section provide the information about how to download and install the extensions in Visual Studio.
 platform: windowsforms
 control: Syncfusion Extensions
@@ -19,7 +19,7 @@ Syncfusion<sup>®</sup> publishes its Visual Studio extension on the Visual Stud
 
 The following software prerequisites must be installed to use the Syncfusion<sup>®</sup> WinForms extension for creating projects, adding code snippets, converting, and upgrading Syncfusion<sup>®</sup> WinForms applications.
 
-* [Visual Studio 2010 or later](https://visualstudio.microsoft.com/downloads).
+* [Visual Studio 2015 or later](https://visualstudio.microsoft.com/downloads).
 
 ## Install through the Visual Studio Manage Extensions
 

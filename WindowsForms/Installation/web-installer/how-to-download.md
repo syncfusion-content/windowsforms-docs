@@ -46,7 +46,7 @@ You should initiate an evaluation if you have already obtained our components th
 	
    ![Trial and downloads of Syncfusion Essential Studio](images/start-trial-download.png)
    
-2. To access this page, you must sign up\log in with your Syncfusion account.
+2. To access this page, you must sign up or log in with your Syncfusion account.
 3. Begin your trial by selecting the Windows Forms product. 
 
    N> If you've already used the trial products and they haven't expired, you won't be able to start the trial for the same product again.
@@ -64,8 +64,8 @@ You should initiate an evaluation if you have already obtained our components th
 2. You can view all the licenses (both active and expired) associated with your account.
 3. Click the Download (element 1 in the screenshot below) button to download the Windows Forms web installer.
 4. The most recent version of the installer will be downloaded from this page.
-5. To download older version installers, go to [Downloads Older Versions](https://www.syncfusion.com/account/downloads/studio) (element 2 in the screenshot below).
-6. You can download other platform\add-on installers by going to More Downloads Options (element 3 in the screenshot below).
+5. To download older version installers, go to [Download Older Versions](https://www.syncfusion.com/account/downloads/studio) (element 2 in the screenshot below).
+6. You can download other platform or add-on installers by going to More Downloads Options (element 3 in the screenshot below).
 
    ![License and downloads of Syncfusion Essential Studio](images/license-download.png)
  
@@ -75,6 +75,6 @@ You should initiate an evaluation if you have already obtained our components th
    
 8. After downloading, the Syncfusion Windows Forms web installer can be unlocked using Syncfusion registered login credential.
 
-   N> For Syncfusion trial and licensed products, there is no separate web installer. Based on your account license, Syncfusion trial or licensed products will be installed via web installer.
+   N> For Syncfusion trial and licensed products, there is no separate web installer. Based on your account license,Syncfusion trial or licensed products will be installed via web installer.
 
-You can also refer to the [**web installer**](https://help.syncfusion.com/windowsforms/installation/web-installer/how-to-install) links for step-by-step installation guidelines.	
+You can also refer to the [**web installer**](https://help.syncfusion.com/windowsforms/installation/web-installer/how-to-install) links for step-by-step installation guidelines.
