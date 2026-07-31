@@ -119,14 +119,14 @@ You can restrict the specific [DockAbility](https://help.syncfusion.com/cr/windo
 
 {% highlight C# %}
 
-this.dockingManager1.SetDockAbility(panel1, "Top");
+this.dockingManager1.SetDockAbility(panel1, Syncfusion.Windows.Forms.Tools.DockAbility.Top);
 
 {% endhighlight %}
 
 
 {% highlight VB %}
 
-this.dockingManager1.SetDockAbility(panel1, "Top");
+Me.dockingManager1.SetDockAbility(panel1, Syncfusion.Windows.Forms.Tools.DockAbility.Top)
 
 {% endhighlight %}
 
@@ -220,7 +220,7 @@ By using [GetTabPosition](https://help.syncfusion.com/cr/windowsforms/Syncfusion
 
 {% highlight C# %}
 
-/Getting the tab position
+///Getting the tab position
 
 this.dockingManager1.GetTabPosition(panel1);
 

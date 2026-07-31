@@ -7,7 +7,7 @@ control: GridControl
 documentation: ug
 ---
 # Cell Merging in Windows Forms Grid Control
-The cell merging is also one of the technique to merge the range of cells in the GridControl. The range of cells will be merged based on the data. The cells which has same data will be merged in row wise in same column or column wise in same row. To enable the merging support in grid, the [MergeCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridMergeCellsLayout.html), [MergeCellsMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelOptions.html#Syncfusion_Windows_Forms_Grid_GridModelOptions_MergeCellsMode) and [MergeCellsLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridMergeCellsLayout.html) properties can be used.
+The cell merging is also one of the technique to merge the range of cells in the GridControl. The range of cells will be merged based on the data. The cells which has same data will be merged in row wise in same column or column wise in same row. To enable the merging support in grid, the [MergeCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_MergeCell), [MergeCellsMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelOptions.html#Syncfusion_Windows_Forms_Grid_GridModelOptions_MergeCellsMode) and [MergeCellsLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridMergeCellsLayout.html) properties can be used.
 
 The following code snippet is used to enable the merging in GridControl,
 
@@ -172,7 +172,7 @@ void gridControl1_QueryCanMergeCells(object sender, GridQueryCanMergeCellsEventA
 {% highlight vb %}
 
 'Triggering the QueryCanMergeCells event.
-Private Me.gridControl1.QueryCanMergeCells += New GridQueryCanMergeCellsEventHandler(AddressOf gridControl1_QueryCanMergeCells)
+AddHandler Me.gridControl1.QueryCanMergeCells, New GridQueryCanMergeCellsEventHandler(AddressOf gridControl1_QueryCanMergeCells)
 
 Private Sub gridControl1_QueryCanMergeCells(ByVal sender As Object, ByVal e As GridQueryCanMergeCellsEventArgs)
 

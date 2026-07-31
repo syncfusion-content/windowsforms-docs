@@ -44,3 +44,4 @@ This application was built using a trial version of Syncfusion Essential Studio.
 
 * [How to Generate Syncfusion WindowsForms License Key?](https://help.syncfusion.com/windowsforms/licensing/how-to-generate)
 * [How to Register Syncfusion License Key in WindowsForms Application?](https://help.syncfusion.com/windowsforms/licensing/how-to-register-in-an-application)
+* For CI validation, see the [CI License Validation](https://help.syncfusion.com/windowsforms/licensing/licensing-faq/ci-license-validation) topic.

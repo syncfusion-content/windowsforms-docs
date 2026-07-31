@@ -54,12 +54,12 @@ Me.gridControl.DisplayVerticalLines = False
 ![Appearance-and-Formatting_img3](Appearance-and-Formatting_images/Appearance-and-Formatting_img3.jpeg)
 
 #### Hiding horizontalLines
-To display the grid without the horizontal lines, set the [DisplayHorizontalLines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_DisplayVerticalLines) property to `false`.
+To display the grid without the horizontal lines, set the [DisplayHorizontalLines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_DisplayHorizontalLines) property to `false`.
 
 {% tabs %}
 {% highlight c# %}
 //Remove the Horizontal Lines
-this.gridControl. DisplayHorizontalLines = false;
+this.gridControl.DisplayHorizontalLines = false;
 {% endhighlight %}
 {% highlight vb %}
 'Remove the Horizontal Lines
@@ -149,7 +149,7 @@ void gridControl_BackgroundImageChanged(object sender, EventArgs e)
 }
 {% endhighlight %}
 {% highlight vb %}
-Private Me.gridControl.BackgroundImageChanged += AddressOf gridControl_BackgroundImageChanged
+AddHandler Me.gridControl.BackgroundImageChanged, AddressOf gridControl_BackgroundImageChanged
 
 Private Sub gridControl_BackgroundImageChanged(ByVal sender As Object, ByVal e As EventArgs)
 'Add the required code over here.
@@ -296,11 +296,11 @@ The row header of the current cell can be highlighted by using [MarkRowHeader](h
 
 {% tabs %}
 {% highlight c# %}
-//To highlight the Column header for the current cell.
+//To highlight the Row header for the current cell.
 this.gridControl.Properties.MarkRowHeader = true;
 {% endhighlight %}
 {% highlight vb %}
-'To highlight the Column header for the current cell.
+'To highlight the Row header for the current cell.
 Me.gridControl.Properties.MarkRowHeader = True
 {% endhighlight %}
 {% endtabs %}
@@ -339,7 +339,7 @@ Me.gridControl1.Properties.Printing = True
 The list of print properties available in GridControl can be viewed in the separate topic named Printing. Refer that topic for more detailed explanation on Printing functionality.
 
 ### Scroll bar properties
-GridControl provides support to control functionalities and appearance of grid scroll bars. To enable or disable the scrolling make use of the [HScrollBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_HScrollBehavior) and [VScrollBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupDropArea.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupDropArea_VScrollBehavior) properties. It specifies the behavior of the horizontal and vertical scroll bar respectively.[GridScrollbarMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridScrollbarMode.html) enumeration provides list of options to control the scroll bar behavior.
+GridControl provides support to control functionalities and appearance of grid scroll bars. To enable or disable the scrolling make use of the [HScrollBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_HScrollBehavior) and [VScrollBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_VScrollBehavior) properties. It specifies the behavior of the horizontal and vertical scroll bar respectively.[GridScrollbarMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridScrollbarMode.html) enumeration provides list of options to control the scroll bar behavior.
 
 {% tabs %}
 {% highlight c# %}
@@ -431,7 +431,7 @@ Custom Drawing denotes adding text and drawings such as lines, polygon etc., to 
 {% highlight c# %}
 
 //DrawCell event is used to apply styles to the grid.
-this.gridControl1.CellDrawn += new GridDrawCellEventHandler(gridControl1_CellDrawn);
+this.gridControl1.DrawCell += new GridDrawCellEventHandler(gridControl1_DrawCell);
 
 private void gridControl1_DrawCell(object sender, GridDrawCellEventArgs e)
 {

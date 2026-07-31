@@ -260,7 +260,7 @@ sfDataGrid1.Columns("OrderID").FilterPopupMode = FilterPopupMode.Both
 {% endtabs %}
 
 ### Changing Filter UI using Event
-The column `FilterPopupMode` can also be changed by using the [FilterPopupShowing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event. This even will be raised on opening the filter popup.
+The column `FilterPopupMode` can also be changed by using the [FilterPopupShowing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event. This event will be raised on opening the filter popup.
 
 {% tabs %}
 {% highlight c# %}
@@ -362,7 +362,7 @@ After filtering, both records having the same OrderDate display value will be di
 ![Filtering Based on Display Text](Filtering_images/Filtering_img10.png)
 
 ## Advanced Filtering
-Advanced filter UI provides multiple filter options to filter the data easily. Filter menu options are loaded based on advanced filter type by automatically detecting the underlying date type.
+Advanced filter UI provides multiple filter options to filter the data easily. Filter menu options are loaded based on advanced filter type by automatically detecting the underlying data type.
 Below are the built-in filter types supported.
 
 * **Text Filters** – Loads various menu options to filter the display text effectively.

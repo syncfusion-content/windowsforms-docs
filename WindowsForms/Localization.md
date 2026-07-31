@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization in Windows Forms | Syncfusion®
-description: Learn about Localization support in Syncfusion® WF UI Contorls using .RESX files and also explains editing default strings of WF controls.
+description: Learn about Localization support in Syncfusion® WF UI Controls using .RESX files and also explains editing default strings of WF controls.
 platform: windowsforms
 control: Localization
 documentation: ug
@@ -10,9 +10,9 @@ documentation: ug
 
 # Localization of Syncfusion<sup>®</sup> WF Controls
 
-Localization is the process of making application multilingual by formatting the content according to the cultures. This involves configuring the application for a specific language. Culture is the combination of language and location. For example, `en-US` is the culture for English spoken in United States; `en-GB` is the culture for English spoken in Great Britain.
+Localization is the process of making an application multilingual by formatting the content according to the cultures. This involves configuring the application for a specific language. Culture is the combination of language and location. For example, `en-US` is the culture for English spoken in the United States; `en-GB` is the culture for English spoken in Great Britain.
 
-Syncfusion<sup>®</sup> components support localization and have their own neutral resources. These resources can be localized as per the customer requirement and they can be localized in three ways are, 
+Syncfusion<sup>®</sup> components support localization and have their own neutral resources. These resources can be localized as per the customer requirement in three ways, 
 
 * Using [ILocalizationProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ILocalizationProvider.html)
 * Using Satellite Assemblies
@@ -217,7 +217,7 @@ N> In above section, Latest Essential Studio<sup>®</sup> version details has be
 
 2. Inside the NeutralResources folder, there are four resource files corresponding to the Tools package. These resources contain the string representations for the English culture, both default and neutral.
 
-3. Microsoft Visual Studio.NET ships with a tool called Resource Editor (ResEditor) that can be used to localize the string resources. It provides a graphical interface that allows to construct resource files containing bitmaps, icons, and strings.
+3. Microsoft Visual Studio.NET ships with a tool called Resource Editor (ResEditor) that can be used to localize the string resources. It provides a graphical interface that allows you to construct resource files containing bitmaps, icons, and strings.
 
 4. Compile the source code by using the build.bat command in the Microsoft Visual Studio 2008 Command prompt. The following figure shows how the Resource Editor looks when it first opens.
 
@@ -237,7 +237,7 @@ N> In above section, Latest Essential Studio<sup>®</sup> version details has be
 
 9. Click File -> Save As and select the culture to be localized. In this case, German-Germany. Now, a new resource file with the name `Syncfusion.Windows.Forms.Tools.XPMenus.CustomizationPanel.de-DE.resources` is added to the source path.
 
-10. Repeat the process for other resources and save it. Now, in the Visual Studio.NET Command Prompt, enter the following command and press Enter. Make sure that sf.public snk file is available from the Localization folder.
+10. Repeat the process for other resources and save it. Now, in the Visual Studio.NET Command Prompt, enter the following command and press Enter. Make sure that the sf.publicsnk file is available from the Localization folder.
 
 For **Tools.Windows**
 
@@ -286,7 +286,7 @@ sn –Vr Syncfusion.Tools.Windows.resources.dll
 {% endcapture %}
 {{ codesnippet7 | OrderList_Indent_Level_1 }}
 
-13. Drop this assembly into an appropriate sub-directory under .EXE’s directory (bin\Debug), based on the naming conventions enforced in .NET. and it can placed in the `de-DE` sub-directory when this assembly contains resources from the German (Germany) culture.
+13. Drop this assembly into an appropriate subdirectory under the .EXE’s directory (bin\Debug), based on the naming conventions enforced in .NET, and it can be placed in the `de-DE` subdirectory when this assembly contains resources from the German (Germany) culture.
 
 14. Finally, application can refer German resources during runtime by using the following code example. To change the UI culture of the current thread, add this code in the Forms constructor before the `InitializeComponent()`.
 
@@ -309,7 +309,7 @@ Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("de
 {% endcapture %}
 {{ codesnippet8 | OrderList_Indent_Level_1 }}
 
-15. Now, Run the application that contains the Syncfusion<sup>®</sup> Toolbar and Menu controls and open the Customization dialog. The dialog appears in German as shown in the following figure:
+15. Now, run the application that contains the Syncfusion<sup>®</sup> Toolbar and Menu controls and open the Customization dialog. The dialog appears in German as shown in the following figure:
 
 ![Windows Form Localization Customization dialog German culture](Localization_images/WindowsForm-Localization-CustomizationDialog.png)
 

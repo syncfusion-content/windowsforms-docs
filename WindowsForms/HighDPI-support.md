@@ -13,10 +13,10 @@ DPI stands for Dots Per Inch is the number of pixels or points rendered in one i
 
 ## DPI awareness
 
-Desktop application fall into two categories based on the DPI awareness:
+Desktop applications fall into two categories based on the DPI awareness:
 
 * Non-DPI aware application
-* DPI aware application
+* DPI-aware application
 
 ### Non-DPI aware application
 
@@ -26,9 +26,9 @@ Refer to the following DataGrid sample demo screenshot that runs under 192 DPI w
 
 ![windows forms High DPI support with default scaling](HighDPI_images/HighDPI_img1.jpeg)
 
-### DPI aware application
+### DPI-aware application
 
-The applications render themselves based on the actual DPI of a screen and provide a much better visual experience. The controls or applications needs manual implementation, such DPI awareness by retrieving the current monitor DPI value, scaling its content, applying different icon sets, and more. 
+The applications render themselves based on the actual DPI of a screen and provide a much better visual experience. The controls or applications need manual implementation, such DPI awareness by retrieving the current monitor DPI value, scaling its content, applying different icon sets, and more.
 
 The following DataGrid sample demo screenshot runs under 192 DPI, you can see the better quality of text and icon.
 
@@ -102,12 +102,12 @@ The application or control created in 96 DPI value must be properly changed base
 
 ## DPI scaling
 
-The DPI scaling mechanism calculates the scaling difference between the system that form has been designed on and the running system. This DPI scaling will only trigger if your application declares to be DPI aware. Otherwise, the system will be rendered in the default DPI (96 DPI) sandbox and bitmap scaling of the OS will be used.
+The DPI scaling mechanism calculates the scaling difference between the system that form has been designed on and the running system. This DPI scaling will only trigger if your application is declared to be DPI aware. Otherwise, the system will be rendered in the default DPI (96 DPI) sandbox and bitmap scaling of the OS will be used.
 
-You have probably noticed the following two properties:
+The following two properties are involved in DPI scaling:
 
-* [AutoScaleDimensions](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.containercontrol.autoscaledimensions?view=netframework-4.7.2#System_Windows_Forms_ContainerControl_AutoScaleDimensions): The Visual Studio designer will serialize the dimensions of the unit used for comparison either font or DPI. When running the form with different DPI settings, its dimensions will be obtained and compared against the serialized dimensions. The scaling factor is computed based on that, then it is applied.
-* [AutoScaleMode](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.containercontrol.autoscalemode?view=netframework-4.7.2#System_Windows_Forms_ContainerControl_AutoScaleMode): Indicates the method to calculate the scale factor. Depending on it, the scaling mechanism will calculate the scale factor according to the dimensions of the system font or system DPI. If the AutoScaleMode is set to `None`, the automatic scaling will be disabled. When the scale factor is calculated, the framework calls the scale method of form which basically recalculates the size and the location of child controls on it. Their scale method is also called as properly scale.
+* [AutoScaleDimensions](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.containercontrol.autoscaledimensions?view=netframework-4.7.2#System_Windows_Forms_ContainerControl_AutoScaleDimensions): The Visual Studio designer will serialize the dimensions of the unit used for comparison either font or DPI. When running the form with different DPI settings, its dimensions will be obtained and compared against the serialized dimensions. The scaling factor is then computed and applied.
+* [AutoScaleMode](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.containercontrol.autoscalemode?view=netframework-4.7.2#System_Windows_Forms_ContainerControl_AutoScaleMode): Indicates the method to calculate the scale factor. Based on this, the scaling mechanism will calculate the scale factor according to the dimensions of the system font or system DPI. When the AutoScaleMode is set to `None`, the automatic scaling will be disabled. When the scale factor is calculated, the framework calls the scale method of form which basically recalculates the size and the location of child controls on it. Their scale method is also called to properly scale them.
 
 {% tabs %}
 {% highlight c# %}
@@ -136,7 +136,6 @@ To turn your desktop application into DPI-aware and add `app.manifest` file, fol
 
 4. When setting the `dpiAware` to true, the control will be drawn using the current DPI value. In this, the font size and image size will be automatically increased. The high DPI controls can be enabled by the following code snippet.
 
-{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -146,20 +145,18 @@ To turn your desktop application into DPI-aware and add `app.manifest` file, fol
     </windowsSettings>
   </application>
 
-{% endhighlight xaml %}
+{% endhighlight %}
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 
-5. Most of the Syncfusion controls support high DPI through manifest file. But, the following Syncfusion controls provides the high DPI support by adding both manifest file and enabling the [DpiAware](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ScrollControl.html#Syncfusion_Windows_Forms_ScrollControl_DpiAware) property.
+5. Most of the Syncfusion controls support high DPI through a manifest file. But the following Syncfusion control provides the high DPI support by adding both manifest file and enabling the [DpiAware](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ScrollControl.html#Syncfusion_Windows_Forms_ScrollControl_DpiAware) property.
 
   * GridControl
   * GridGroupingControl
   * GridDataBoundGrid
   * GridListControl
 
-{% capture codesnippet2 %}
+
 {% tabs %}
 {% highlight c# %}
 
@@ -192,8 +189,6 @@ gridListControl1.Grid.DpiAware = True
 
 {% endhighlight %}
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 
 ## Automatically change images based on DPI through ImageListAdv component
@@ -213,7 +208,7 @@ The steps below illustrate the setting of image for a ButtonAdv using ImageListA
 
 1. Drag and drop the ImageListAdv from the toolbox to the designer. 
 
-2. Add the required images to the [`Images`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ImageListAdv.html#Syncfusion_Windows_Forms_Tools_ImageListAdv_Images) collection of the ImageListAdv. These images will act as default images that will be displayed at all scaling when no DPI images are set.
+2. Add the required images to the [`Images`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ImageListAdv.html#Syncfusion_Windows_Forms_Tools_ImageListAdv_Images) collection of the ImageListAdv. These images act as default images that will be displayed at all scaling when no DPI images are set.
 
 ![Images collection editor](HighDPI_images/ImageListAdv_Properties.png)
 
@@ -241,7 +236,6 @@ The steps below illustrate the setting of image for a ButtonAdv using ImageListA
 
 8. Now map the desired image from the [`Images`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ImageListAdv.html#Syncfusion_Windows_Forms_Tools_ImageListAdv_Images) collection to the ButtonAdv control using its [`Image`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ButtonAdv.html) property.
 
-{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -255,8 +249,6 @@ buttonAdv1.Image = imageListAdv1.Images(0)
 
 {% endhighlight %}
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 
 9. Run the application and the image for the ButtonAdv will be displayed as per the image set for different DPI scaling as shown below.
@@ -276,5 +268,3 @@ buttonAdv1.Image = imageListAdv1.Images(0)
 #### 200 Scaling
 
 ![Adding images and index](HighDPI_images/DPI_200.png)
-
-

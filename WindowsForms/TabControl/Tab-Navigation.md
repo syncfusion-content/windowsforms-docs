@@ -51,7 +51,7 @@ To create [TabPrimitives](https://help.syncfusion.com/cr/windowsforms/Syncfusion
 
 
 
-2. A TabPrimitives Collection Editor will be opened. Click the Add option in the Editor to add a TabPrimitive.
+2. The TabPrimitives Collection Editor opens. Click the Add option in the Editor to add a TabPrimitive.
 
    ![Need to set tab primitive](TabPrimitives_images/TabPrimitives_img6.jpeg)
 
@@ -71,7 +71,7 @@ To create [TabPrimitives](https://help.syncfusion.com/cr/windowsforms/Syncfusion
 
 //Adds a TabPrimitive of type DropDown.
 
-this.tabControlAdv4.TabPrimitivesHost.TabPrimitives.Add(new Syncfusion.Windows.Forms.Tools.TabPrimitive(Syncfusion.Windows.Forms.Tools.TabPrimitiveType.DropDown, null, System.Drawing.Color.Empty, true, 1, "TabPrimitive0"));
+this.tabControlAdv1.TabPrimitivesHost.TabPrimitives.Add(new Syncfusion.Windows.Forms.Tools.TabPrimitive(Syncfusion.Windows.Forms.Tools.TabPrimitiveType.DropDown, null, System.Drawing.Color.Empty, true, 1, "TabPrimitive0"));
 
 
 
@@ -95,7 +95,7 @@ this.tabControlAdv1.TabPrimitivesHost.Visible = true;
 
 'Adds a TabPrimitive of type DropDown.
 
-Me.tabControlAdv4.TabPrimitivesHost.TabPrimitives.Add(New Syncfusion.Windows.Forms.Tools.TabPrimitive(Syncfusion.Windows.Forms.Tools.TabPrimitiveType.DropDown, Nothing, System.Drawing.Color.Empty, True, 1, "TabPrimitive0"))
+Me.tabControlAdv1.TabPrimitivesHost.TabPrimitives.Add(New Syncfusion.Windows.Forms.Tools.TabPrimitive(Syncfusion.Windows.Forms.Tools.TabPrimitiveType.DropDown, Nothing, System.Drawing.Color.Empty, True, 1, "TabPrimitive0"))
 
 
 
@@ -111,7 +111,7 @@ Me.tabControlAdv1.TabPrimitivesHost.TabPrimitives.Add(New Syncfusion.Windows.For
 
 'Makes the TabPrimitive visible in the control.
 
-Private Me.tabControlAdv1.TabPrimitivesHost.Visible = True
+Me.tabControlAdv1.TabPrimitivesHost.Visible = True
 
 {% endhighlight %}
 

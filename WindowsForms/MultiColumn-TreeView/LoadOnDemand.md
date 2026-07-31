@@ -11,7 +11,7 @@ documentation: ug
 
 LoadOnDemand feature is to give a delay in loading a node in a Tree, before the user initiates a node to expand.
 
-By setting LoadOnDemand property to true, the plus (+) and minus (-) of all the nodes will be visible in the beginning. By handling the BeforeExpand event of the nodes, sub nodes can be added to the respective nodes. Now the tree will display or hide the plus or minus based on whether the children are added.
+By setting the `LoadOnDemand` property to `true`, the plus (+) and minus (-) signs of all the nodes are visible at the start. By handling the `BeforeExpand` event of the nodes, sub nodes can be added to the respective nodes. The tree then displays or hides the plus or minus sign based on whether the children are added.
 
 **Property Table**
 
@@ -45,9 +45,9 @@ Method which is used to derive the path string for a specific node.</td></tr>
 
 ## Retrieving Node Path
 
-In the BeforeExpand event the user can retrieve the path string for a specific node using the TreeNodeAdv.GetPath method where the user can also specify the separator.
+In the `BeforeExpand` event, the user can retrieve the path string for a specific node using the `TreeNodeAdv.GetPath` method, where the user can also specify the separator.
 
-The vital thing in this sample is that the MultiColumnTreeView.AddSeparatorAtEnd property must be set to True to add a “\” character at the end of the path of the node, when calling the Node.GetPath method.
+The vital thing in this sample is that the `MultiColumnTreeView.AddSeparatorAtEnd` property must be set to `True` to add a "\" character at the end of the path of the node when calling the `Node.GetPath` method.
 
 {% tabs %}
 
