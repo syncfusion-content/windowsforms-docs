@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Syncfusion Windows Forms Agent Skills for AI Assistants
 
-This guide introduces **Syncfusion Windows Forms Skills**, a knowledge package that enables AI assistants (VS Code, Cursor, CodeStudio, etc.) to understand and generate accurate Windows Forms code using official APIs, patterns, and theming guidelines.
+This guide introduces **Syncfusion Windows Forms Skills**, a knowledge package that enables AI assistants (Visual Studio Code, Cursor, CodeStudio, etc.) to understand and generate accurate Windows Forms code using official APIs, patterns, and theming guidelines.
 
 These skills eliminate common issues with generic AI suggestions by grounding the assistant in accurate component usage patterns, API structures, supported features, and project‑specific configuration.
 
@@ -20,7 +20,7 @@ Before installing Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms
 
 - Required [Node.js](https://nodejs.org/en/) version >= 16
 - Windows Forms application (existing or new); see [Overview](https://help.syncfusion.com/windowsforms/overview)
-- A supported AI agent or IDE that integrates with the Skills CLI (VS Code, Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio, Cursor, etc.)
+- A supported AI agent or IDE that integrates with the Skills CLI (Visual Studio Code, Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio, Cursor, etc.)
 
 ## Key Benefits
 
@@ -37,7 +37,7 @@ Before installing Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms
 
 **Design‑System Guidance**
 - Theme usage, including light and dark variants
-- VisualStyle patterns and customization approaches
+- [VisualStyle](https://help.syncfusion.com/windowsforms/visualstyle) patterns and customization approaches
 - Consistent design alignment across Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms components
 
 ## Installation
@@ -68,8 +68,7 @@ npx skills add syncfusion/winforms-ui-components-skills
 {% endhighlight %}
 {% endtabs %}
 
-The terminal will display a list of available skills. Use the arrow keys to navigate, the space bar to select the desired skills, and the Enter key to confirm.
-{% tabs %}
+The terminal will display a list of available skills. Use the **arrow keys** to move between skills, the **space bar** to toggle a skill on or off, and the **Enter** key to confirm.
 {% highlight bash tabtitle="CMD" %}
 
  Select skills to install (space to toggle)
@@ -125,7 +124,7 @@ Choose your installation scope (project-level or global), then confirm to comple
 {% endhighlight %}
 {% endtabs %}
 
-This registers the Syncfusion<sup style="font-size:70%">&reg;</sup> skill pack so your AI assistant can automatically load it in supported IDEs such as [Code Studio](https://help.syncfusion.com/code-studio/reference/configure-properties/skills), [Visual Studio Code](https://code.visualstudio.com/docs/copilot/customization/agent-skills), and [Cursor](https://cursor.com/docs/skills).
+This registers the Syncfusion<sup style="font-size:70%">&reg;</sup> skill pack so your AI assistant can automatically load it in supported IDEs such as [Code Studio](https://help.syncfusion.com/code-studio/reference/configure-properties/skills), [Visual Studio Code](https://code.visualstudio.com/docs/copilot/customization/agent-skills), and [Cursor](https://cursor.com/docs/skills). After installation, restart your IDE (or use the **Reload Window** command) so the IDE can detect the newly added skill files.
 
 To learn more about the Skills CLI, refer [here](https://www.skills.sh/docs). 
 
@@ -144,7 +143,7 @@ To learn more about the Skills CLI, refer [here](https://www.skills.sh/docs).
 Once skills are installed, the assistant can be used to generate and update Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms code for tasks such as:
 
 - "Add a DataGrid with paging, sorting, and filtering."
-- "Create a Scheduler with week view and drag‑drop."
+- "Create a Schedule control with week view and drag‑drop."
 
 ## Skills CLI Commands
 
@@ -212,9 +211,10 @@ Yes. Once installed, supported agents automatically detect and load relevant ski
 
 **Skills are not being loaded**
 
-Verify that skills are installed in the correct agent directory, restart the IDE, and confirm that the agent supports external skill files.
+Verify that skills are installed in the correct agent directory (for example, `.agents/skills/`), confirm with `npx skills list`, restart the IDE (or run the **Reload Window** command), and confirm that the agent supports external skill files.
 
 ## See also
 
 - [Agent Skills Standards](https://agentskills.io/home)
 - [Skills CLI](https://www.skills.sh/docs)
+- [VisualStyle](https://help.syncfusion.com/windowsforms/visualstyle)

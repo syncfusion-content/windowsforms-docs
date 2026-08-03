@@ -631,9 +631,9 @@ private void sfDataGrid1_AutoGeneratingRelations(object sender, Syncfusion.WinFo
 }
 {% endhighlight %}
 {% highlight vb %}
-AddHandler sfDataGrid1. AutoGeneratingRelations, AddressOf SfDataGrid_AutoGeneratingRelations 
+AddHandler sfDataGrid1.AutoGeneratingRelations, AddressOf SfDataGrid_AutoGeneratingRelations 
 Private Sub SfDataGrid_AutoGeneratingRelations(ByVal sender As Object, ByVal e As AutoGeneratingRelationsEventArgs) 
-     e.GridViewDefinition.DataGrid.AddNewRowPosition = RowPosition.Top;
+     e.GridViewDefinition.DataGrid.AddNewRowPosition = RowPosition.Top
 End Sub
 {% endhighlight %}
 {% endtabs %}

@@ -18,7 +18,7 @@ The following are the ways to bind various data sources to [TreeViewAdv](https:/
 ## Binding to Self-Referencing Data
 In this type, [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) binds to self-referencing data where the [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) is bound to single table instead of multiple related tables.
 
-Parent-Child relationship for all the records is defined by setting the [ParentMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ParentMember) and [ChildMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ChildMember) properties to the respective fields in the data source. If the Parent ID of one record has the respective value in the Child ID of any other records from the table, then that record is considered to have parent. If not, then the record is considered to have no parents and, in such case, it won’t be visible in the [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html). 
+Parent-Child relationship for all the records is defined by setting the [ParentMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ParentMember) and [ChildMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ChildMember) properties to the respective fields in the data source. If the Parent ID of one record has the respective value in the Child ID of any other record from the table, then that record is considered to have a parent. If not, then the record is considered to have no parent and, in such case, it will not be visible in the [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html).
 
 If the value in [ParentMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ParentMember) field of some records matches with the [TreeViewAdv.SelfRelationRootValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_SelfRelationRootValue), then those records are considered as root nodes of [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html).
   
@@ -93,9 +93,9 @@ treeViewAdv1.DataSource = Table_1
 {% endhighlight %}
 {% endtabs %}
 
-N> 
-1)	Root nodes are parent less (for example, see **"North America"** node in the image above). All root nodes must have their parent member values **(TreeViewAdv.ParentMember)** set to **TreeViewAdv.SelfRelationRootValue**property. If the property is not specified then, you may notice empty TreeViewAdv. So, to avoid this, we suggest that you always set parent member values with TreeViewAdv.SelfRelationRootValue for root nodes.
-2)	You must specify **TreeViewAdv.DisplayMember**, **TreeViewAdv.ParentMember**, **TreeViewAdv.ChildMember** properties mandatorily to populate the appropriate TreeViewAdv.
+N>
+1)	Root nodes are parentless (for example, see the **"North America"** node in the image above). All root nodes must have their parent member values (**TreeViewAdv.ParentMember**) set to the **TreeViewAdv.SelfRelationRootValue** property. If the property is not specified, you may notice an empty TreeViewAdv. To avoid this, we recommend that you always set the parent member values to TreeViewAdv.SelfRelationRootValue for root nodes.
+2)	You must specify the **TreeViewAdv.DisplayMember**, **TreeViewAdv.ParentMember**, and **TreeViewAdv.ChildMember** properties to populate the TreeViewAdv.
 
 ## Binding to Data Relations
 In this type, [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) are bound to database where levels are created using [DataRelation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DataRelations) class. Each [DataRelation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DataRelations) class object describes the parent data being bound to, the child data being bound to and the data columns used to populate **Text** and selected **Value** properties of the nodes.
@@ -119,7 +119,7 @@ Syncfusion.Windows.Forms.Tools.DataRelation childRelation3;
 
 childRelation1 = new Syncfusion.Windows.Forms.Tools.DataRelation(Table_2, "Table_2", "SubFolderName1", "ChildFolder", "SubFolderChild1", "SubFolderName1", "Checked");
 
-childRelation2 = new Syncfusion.Windows.Forms.Tools.DataRelation(Table_3, "SubFolderName2", "SubFolderChild1", "SubFolderChild2");
+childRelation2 = new Syncfusion.Windows.Forms.Tools.DataRelation(Table_3, "Table_3", "SubFolderName2", "SubFolderChild1", "SubFolderChild2");
 
 childRelation3 = new Syncfusion.Windows.Forms.Tools.DataRelation(Table_4, "Table_4", "SubFolderName3", "SubFolderChild2", "SubFolderChild3", "SubFolderName3", "Checked");
 
@@ -133,7 +133,7 @@ treeViewAdv1.DataRelations.Add(childRelation1);
 treeViewAdv1.DataRelations.Add(childRelation2);
 treeViewAdv1.DataRelations.Add(childRelation3);
 
-treeViewAdv1.DataSource = Table_1;           
+treeViewAdv1.DataSource = Table_1;
 
 {% endhighlight %}
 {% highlight vb %}
@@ -142,13 +142,11 @@ Dim childRelation1 As Syncfusion.Windows.Forms.Tools.DataRelation
 Dim childRelation2 As Syncfusion.Windows.Forms.Tools.DataRelation
 Dim childRelation3 As Syncfusion.Windows.Forms.Tools.DataRelation
 
-childRelation1 = New Syncfusion.Windows.Forms.Tools.DataRelation(Table_2, "SubFolder1", "SubFolderName1", "FolderChild", "SubFolderChild1", "SubFolderName1", "Checked")    
+childRelation1 = New Syncfusion.Windows.Forms.Tools.DataRelation(Table_2, "Table_2", "SubFolderName1", "ChildFolder", "SubFolderChild1", "SubFolderName1", "Checked")
 
-childRelation2 = New Syncfusion.Windows.Forms.Tools.DataRelation(Table_3, "SubFolderName2", "SubFolderChild1", "SubFolderChild2")
+childRelation2 = New Syncfusion.Windows.Forms.Tools.DataRelation(Table_3, "Table_3", "SubFolderName2", "SubFolderChild1", "SubFolderChild2")
 
-childRelation3 = New Syncfusion.Windows.Forms.Tools.DataRelation(Table_4, "SubFolder3", "SubFolderName3", "SubFolderChild2", "SubFolderChild3", "SubFolderName3", "Checked")
-
-treeViewAdv1.DataRelations.Clear()
+childRelation3 = New Syncfusion.Windows.Forms.Tools.DataRelation(Table_4, "Table_4", "SubFolderName3", "SubFolderChild2", "SubFolderChild3", "SubFolderName3", "Checked")
 
 treeViewAdv1.DisplayMember = "FolderName"
 treeViewAdv1.ParentMember = "ParentFolder"
@@ -196,15 +194,17 @@ State -> Third level.
 </td></tr>
 </table>
 
+N> `ChildMember` and `DisplayMember` use a backslash-separated hierarchy path. In C# the backslash must be escaped (`\\`), while VB.NET uses a single backslash (`\`).
+
 {% tabs %}
 {% highlight c# %}
-treeViewAdv1.DisplayMember = "ContinentName\\CountryName\\StateName"; 
+treeViewAdv1.DisplayMember = "ContinentName\\CountryName\\StateName";
 treeViewAdv1.ChildMember = "Continent\\Country\\State";
 {% endhighlight %}
 {% highlight vb %}
 
-treeViewAdv1.DisplayMember = "ContinentName\\CountryName\\StateName"
-treeViewAdv1.ChildMember = "Continent\\Country\\State"
+treeViewAdv1.DisplayMember = "ContinentName\CountryName\StateName"
+treeViewAdv1.ChildMember = "Continent\Country\State"
 {% endhighlight %}
 {% endtabs %}
 
@@ -221,7 +221,9 @@ The [`TreeViewAdv`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windo
 
 ### Importing Microsoft Access Database
 
-To load the data from Microsoft Access database, follow the below steps.
+N> Prerequisite: The Microsoft Access Database Engine 2010 (or later) Redistributable must be installed on the development machine so that the **.NET Framework Data Provider for OLE DB** can list the **Microsoft Office Access Database Engine OLE DB Provider**.
+
+To load the data from a Microsoft Access database, follow the steps below.
 
 1) On the **View** menu, select **Other Windows > Data Sources**.
 

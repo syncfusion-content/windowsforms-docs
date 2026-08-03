@@ -44,7 +44,7 @@ I> Syncfusion license keys can be validated during the Continuous Integration (C
 
 ### Windows Forms
 
-You can register the licensing code in static void main method before calling **Application.Run()** method in C#. In Visual Basic, register the licensing code in **Application.designer.vb** file constructor.
+You can register the licensing code in the `static void Main` method before calling the `Application.Run()` method in C#. In Visual Basic, register the licensing code in **Application.designer.vb** file constructor.
 
 N> * If the **Application.Designer.vb** file is not included by default in the project, it will be generated in the **My Project** folder in your VB project directory.
 * Ensure to register the license key at the beginning of the application's entry point class.

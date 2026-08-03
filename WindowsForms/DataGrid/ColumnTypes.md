@@ -235,7 +235,7 @@ Public Sub New()
 	Dim data = New OrderInfoCollection()
 	sfDataGrid.DataSource = data.OrdersListDetails
 
-	sfDataGrid.Columns("OrderDate").Format = "dd/mm/yyyy"
+	sfDataGrid.Columns("OrderDate").Format = "dd/MM/yyyy"
 	sfDataGrid.Columns("OrderDate").FormatProvider = New CustomFormatter()
 End Sub
 
@@ -1095,12 +1095,12 @@ comboBoxColumn.AutoSuggestDelay = 1000
 {% highlight c# %}
 this.sfDataGrid1.Columns.Add(new GridButtonColumn() 
 { 
-    MappingName = "ProductName ", 
+    MappingName = "ProductName", 
     HeaderText = "Product Name"
 });
 {% endhighlight %}
 {% highlight vb %}
-Me.sfDataGrid1.Columns.Add(New GridButtonColumn() With {.MappingName = "ProductName ", .HeaderText = "Product Name"})
+Me.sfDataGrid1.Columns.Add(New GridButtonColumn() With {.MappingName = "ProductName", .HeaderText = "Product Name"})
 {% endhighlight %}
 {% endtabs %}
 
@@ -1197,7 +1197,7 @@ private void sfDataGrid1_CellButtonClick(object sender, CellButtonClickEventArgs
 }
 {% endhighlight %}
 {% highlight vb %}
-AddHandler sfDataGrid1.CellButtonClick, AddressOf SfDataGrid1_ CellButtonClick
+AddHandler sfDataGrid1.CellButtonClick, AddressOf SfDataGrid1_CellButtonClick
 
 Private Sub sfDataGrid1_CellButtonClick(ByVal sender As Object, ByVal e As CellButtonClickEventArgs)
 	sfDataGrid1.DeleteSelectedRecords()
@@ -1213,12 +1213,12 @@ End Sub
 {% highlight c# %}
 this.sfDataGrid1.Columns.Add(new GridHyperlinkColumn() 
 { 
-   MappingName = " OrderURI ", 
+   MappingName = "OrderURI", 
    HeaderText = "Order URI" 
 });
 {% endhighlight %}
 {% highlight vb %}
-Me.sfDataGrid1.Columns.Add(New GridHyperlinkColumn() With {.MappingName = " OrderURI ", .HeaderText = "Order URI"})
+Me.sfDataGrid1.Columns.Add(New GridHyperlinkColumn() With {.MappingName = "OrderURI", .HeaderText = "Order URI"})
 {% endhighlight %}
 {% endtabs %}
 
@@ -2253,7 +2253,7 @@ Numeric
 {{'[GridDateTimeCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Renderers.GridDateTimeCellRenderer.html#"")'| markdownify }}
 </td>
 <td>
-DataTime
+DateTime
 </td>
 </tr>
 <tr>

@@ -9,7 +9,7 @@ documentation: ug
 
 # Windows Forms Docking Manager Overview
 
-The `DockingManager` control implements an architecture that allows panels to be docked at any part of form. The dock panels containing child elements can be interactively dragged to any area within screen and can be resized at run time. Panels can be docked to form edges or each other panels. Dock panels can also be floated, tabbed, and auto hidden.
+The `DockingManager` control implements an architecture that allows panels to be docked at any part of form. The dock panels containing child elements can be interactively dragged to any area within screen and can be resized at run time. Panels can be docked to the form's edges or to other panels. Dock panels can also be floated, tabbed, and auto hidden.
 
 ![Visual Style Dock windows in DockingManager](GettingStarted_images/VisualStudioDemo.png)
 

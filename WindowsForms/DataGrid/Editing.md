@@ -38,7 +38,7 @@ Me.sfDataGrid.Columns(0).AllowEditing = True
 ![Windows forms datagrid Editing](Editing_images/Editing_Image1.png)
 
 ## Entering into Edit Mode
-The current cell can be enter into edit mode by pressing &lt;kbd&gt;F2&lt;/kbd&gt; key or clicking (touch also supported) the cell. The edit mode of the cell can be changed to the single click or double click by setting the [EditMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_EditMode) property.
+The current cell can be enter into edit mode by pressing <kbd>F2</kbd> key or clicking (touch also supported) the cell. The edit mode of the cell can be changed to the single click or double click by setting the [EditMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_EditMode) property.
 
 {%tabs%}
 {% highlight c# %}

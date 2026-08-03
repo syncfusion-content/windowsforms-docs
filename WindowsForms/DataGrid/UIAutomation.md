@@ -60,11 +60,11 @@ The Coded UI support for SfDataGrid can be enabled using the `AccessibilityEnabl
 {% tabs %}
 {% highlight c# %}
 //To enable the accessibility.
- this. sfDataGrid1.AccessibilityEnabled = true;
+this.sfDataGrid1.AccessibilityEnabled = true;
 {% endhighlight %}
 {% highlight vb %}
 'To enable the accessibility.
-Me. sfDataGrid1.AccessibilityEnabled = true
+Me.sfDataGrid1.AccessibilityEnabled = True
 {% endhighlight %}
 {% endtabs %}
 

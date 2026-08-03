@@ -9,19 +9,25 @@ documentation: ug
 
 # Getting Started with Windows Forms Syntax Editor
 
-This section explains how to create an interactive code editor application like Microsoft Visual Studio Editor by using the EditControl.
+This section explains how to create an interactive code editor application like the Microsoft Visual Studio Editor by using the EditControl.
 
 ## Assembly deployment
 
-Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#editcontrol) section to get the list of assemblies or details of NuGet package that needs to be added as reference to use the control in any application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#editcontrol) section for the list of assemblies or the NuGet package details that must be referenced to use the control in any application.
 
-Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install nuget packages in a Windows Forms application.
+Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install NuGet packages in a Windows Forms application.
+
+To install via the NuGet Package Manager Console, run:
+
+```
+Install-Package Syncfusion.Edit.Windows
+```
 
 ## Adding EditControl via designer
 
 1. Create a new Windows Forms project in Visual Studio.
 
-2. Add the [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
+2. Add the [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) to the application by dragging it from the toolbox to the designer surface. The following dependent assemblies are added automatically:
 
 	* Syncfusion.Shared.Base
 	* Syncfusion.Tools.Windows
@@ -31,9 +37,9 @@ Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/
 
 ## Adding EditControl via code
 
-To add the control manually in C#, follow the given steps:
+To add the control manually, follow these steps:
 
-1. Create a C# or VB application via Visual Studio.
+1. Create a C# or VB.NET application in Visual Studio.
 
 2. Add the following assembly references to the project:
 
@@ -41,7 +47,7 @@ To add the control manually in C#, follow the given steps:
 	* Syncfusion.Tools.Windows
 	* Syncfusion.Edit.Windows
 
-3. Create an instance of the [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html), and then add it to the form.
+3. Create an instance of the [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) and add it to the form.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -103,9 +109,9 @@ Me.Controls.Add(editControl1)
 
 ![Windows Forms showing EditControl](Getting-Started_images/Getting-Started_img3.png)
 
-## Loading a file into document
+## Loading a file into the document
 
-This option helps to load a file into the EditControl.
+This section explains how to load a file into the EditControl.
 
 {% tabs %}
 
@@ -130,7 +136,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 ## Syntax highlighting
 
-The [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) offers mostly-used languages such as C#, VB, XML, HTML, JScript, PowerShell, and SQL as built-in languages. It also provides support to configure a new custom language.
+The [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) offers built-in syntax highlighting for the most commonly used languages and also provides support for configuring a new custom language.
 
 The EditControl has built-in syntax highlighting support for the following languages:
 
@@ -150,7 +156,7 @@ The EditControl has built-in syntax highlighting support for the following langu
 
 {% highlight C# %}
 
-// Considering configuration settings for C# as an example. Using the [KnownLanguages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.html) enumerator.
+// Apply the built-in configuration for a known language.
 
 this.editControl1.ApplyConfiguration(KnownLanguages.CSharp);
 
@@ -159,7 +165,7 @@ this.editControl1.ApplyConfiguration(KnownLanguages.CSharp);
 
 {% highlight VB %}
 
-' Considering configuration settings for C# as an example. Using the [KnownLanguages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.html) enumerator.
+' Apply the built-in configuration for a known language.
 
 Me.editControl1.ApplyConfiguration(KnownLanguages.CSharp)
 
@@ -171,9 +177,9 @@ Me.editControl1.ApplyConfiguration(KnownLanguages.CSharp)
 
 ## Custom language configuration
 
-The EditControl provides supports custom language configuration. You can plug-in an external configuration file that defines a custom language to the EditControl using the [Configurator.Open](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_Configurator) and [ApplyConfiguration](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ApplyConfiguration_Syncfusion_Windows_Forms_Edit_Enums_KnownLanguages_) functions.
+The EditControl supports custom language configuration. You can plug in an external XML configuration file that defines a custom language and then apply it with the [Configurator.Open](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_Configurator) and [ApplyConfiguration](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ApplyConfiguration_System_String_) methods.
 
-1. Create a configuration file.
+1. Create a configuration file (for example, `config.xml`) and set its **Copy to Output Directory** property to **Copy if newer**.
 
 {% capture codesnippet2 %}
 {% highlight xaml %}
@@ -204,12 +210,11 @@ The EditControl provides supports custom language configuration. You can plug-in
 		</splits>
 	</ConfigLanguage>
 </ArrayOfConfigLanguage>
-
 {% endhighlight %}
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }} 
 
-2. Apply the configuration file into the EditControl.
+2. Apply the configuration file to the EditControl.
 
 {% capture codesnippet3 %}
 {% tabs %}
@@ -217,7 +222,7 @@ The EditControl provides supports custom language configuration. You can plug-in
 
 private string configFile = Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\config.xml";
 
-// Plug-in an external configuration file.
+// Plug in an external configuration file.
 
 this.editControl1.Configurator.Open(configFile);
 
@@ -232,7 +237,7 @@ this.editControl1.ApplyConfiguration("LISP");
 
 private string configFile = Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\config.xml";
 
-' Plug-in an external configuration file.
+' Plug in an external configuration file.
 
 Me.editControl1.Configurator.Open(configFile)
 
@@ -247,4 +252,4 @@ Me.editControl1.ApplyConfiguration("LISP")
 
 ![Windows Forms EditControl configured for custom language](Getting-Started_images/Getting-Started_img5.png)
 
-N> You can refer to our [WinForms Syntax Editor](https://www.syncfusion.com/winforms-ui-controls/syntax-editor) feature tour page for its unique feature sets. You can also explore our [WinForms Syntax Editor example](https://github.com/syncfusion/winforms-demos/tree/master/edit) that shows how to create interactive code editor applications with syntax highlighting, text indentation, intellisense, etc,.
+N> You can refer to our [WinForms Syntax Editor](https://www.syncfusion.com/winforms-ui-controls/syntax-editor) feature tour page for its unique feature set. You can also explore our [WinForms Syntax Editor example](https://github.com/syncfusion/winforms-demos/tree/master/edit) that shows how to create interactive code-editor applications with syntax highlighting, text indentation, IntelliSense, and more.

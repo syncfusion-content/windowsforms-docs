@@ -9,9 +9,7 @@ documentation: ug
 
 # Search Functionality in WinForms TreeView(SfTreeView)
 
-Description
-
-The find and replace feature enables users to search and replace a specific tree node present in the TreeViewAdv control. You can implement the fastest Find and Replace functionality in the TreeViewAdv control by using the TreeViewAdvFindReplaceDialog class. This class provides the methods that are necessary to perform a find and replace operation. 
+This document describes how to use the built-in search and replace feature of the TreeViewAdv control. The find and replace feature enables users to search and replace a specific tree node present in the TreeViewAdv control. You can implement the fastest Find and Replace functionality in the TreeViewAdv control by using the TreeViewAdvFindReplaceDialog class. This class provides the methods that are necessary to perform a find and replace operation.
 
 The value entered in the Search Text field is highlighted in the TreeViewAdv control after the search action is performed. You can switch to each highlighted tree node by clicking the Find Next button. This functionality is available only when there is more than one search result.
 
@@ -105,7 +103,7 @@ This enables users to disable highlighting matched TreeNodeAdv.</td></tr>
 {% tabs %}
 {% highlight c# %}
 
-Void treeViewAdv1_OnNodeBeforeFind(object sender, Syncfusion.Windows.Forms.Tools.TreeNodeAdvBeforeFindArgs e)
+void treeViewAdv1_BeforeNodeFind(object sender, Syncfusion.Windows.Forms.Tools.TreeNodeAdvBeforeFindArgs e)
 {
 
 // This will return the matched TreeNodeAdv.
@@ -122,7 +120,7 @@ Void treeViewAdv1_OnNodeBeforeFind(object sender, Syncfusion.Windows.Forms.Tools
 
 {% highlight vb %}
 
-Private Sub treeViewAdv1_OnNodeBeforeFind(sender As Object, e As Syncfusion.Windows.Forms.Tools. TreeNodeAdvBeforeFindArgs)
+Private Sub treeViewAdv1_BeforeNodeFind(sender As Object, e As Syncfusion.Windows.Forms.Tools.TreeNodeAdvBeforeFindArgs)
 
 ' This will return the matched TreeNodeAdv.
 Dim matchedNode As TreeNodeAdv = e.Node
@@ -166,7 +164,7 @@ This will return the search string to be highlighted in TreeNodeAdv.</td></tr>
 {% tabs %}
 {% highlight c# %}
 
-void treeViewAdv1_OnNodeAfterFound(object sender, Syncfusion.Windows.Forms.Tools.TreeNodeAdvAfterFindArgs e)
+void treeViewAdv1_AfterNodeFind(object sender, Syncfusion.Windows.Forms.Tools.TreeNodeAdvAfterFindArgs e)
 {
 
 // This will return matched TreeNodeAdv.
@@ -180,7 +178,7 @@ void treeViewAdv1_OnNodeAfterFound(object sender, Syncfusion.Windows.Forms.Tools
 
 {% highlight vb %}
 
-Private Sub treeViewAdv1_OnNodeAfterFound(sender As Object, e As Syncfusion.Windows.Forms.Tools. TreeNodeAdvAfterFindArgs)
+Private Sub treeViewAdv1_AfterNodeFind(sender As Object, e As Syncfusion.Windows.Forms.Tools.TreeNodeAdvAfterFindArgs)
 
 ' This will return the matched TreeNodeAdv.
 Dim matchedNode As TreeNodeAdv = e.Node
@@ -236,7 +234,7 @@ This will enable users to disable replacing matched TreeNodeAdv text.</td></tr>
 {% tabs %}
 {% highlight c# %}
 
-void treeViewAdv1_OnNodeReplacing(object sender, Syncfusion.Windows.Forms.Tools.TreeNodeAdvOnReplacingArgs e)
+void treeViewAdv1_BeforeReplaceNode(object sender, Syncfusion.Windows.Forms.Tools.TreeNodeAdvOnReplacingArgs e)
 {
 
 // This will return the replaced TreeNodeAdv.
@@ -262,7 +260,7 @@ void treeViewAdv1_OnNodeReplacing(object sender, Syncfusion.Windows.Forms.Tools.
 
 {% highlight vb %}
 
-Private Sub treeViewAdv1_OnNodeReplacing(sender As Object, e As Syncfusion.Windows.Forms.Tools. TreeNodeAdvOnReplacingArgs)
+Private Sub treeViewAdv1_BeforeReplaceNode(sender As Object, e As Syncfusion.Windows.Forms.Tools.TreeNodeAdvOnReplacingArgs)
 
 ' This will return the replaced TreeNodeAdv.
 Dim replaceNode As TreeNodeAdv = e.Node
@@ -318,7 +316,7 @@ This will return TreeNodeAdv text that has been replaced.</td></tr>
 {% tabs %}
 {% highlight c# %}
 
-void treeViewAdv1_OnNodeReplaced(object sender, Syncfusion.Windows.Forms.Tools.TreeNodeAdvOnReplacedArgs e)
+void treeViewAdv1_AfterReplaceNode(object sender, Syncfusion.Windows.Forms.Tools.TreeNodeAdvOnReplacedArgs e)
 {
 
 // This will return the replaced TreeNodeAdv.
@@ -335,7 +333,7 @@ void treeViewAdv1_OnNodeReplaced(object sender, Syncfusion.Windows.Forms.Tools.T
 
 {% highlight vb %}
 
-Private Sub treeViewAdv1_OnNodeReplaced(sender As Object, e As Syncfusion.Windows.Forms.Tools. TreeNodeAdvOnReplacedArgs)
+Private Sub treeViewAdv1_AfterReplaceNode(sender As Object, e As Syncfusion.Windows.Forms.Tools.TreeNodeAdvOnReplacedArgs)
 
 ' This will return Replaced TreeNodeAdv
 Dim replacedNode As TreeNodeAdv = e.Node

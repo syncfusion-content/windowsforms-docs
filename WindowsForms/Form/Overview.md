@@ -9,13 +9,13 @@ documentation: ug
 
 # Windows Forms Form (SfForm) Overview
 
-The `SfForm` is a window control for completing customization of the appearance and loading of custom user interface in the Title bar.
+The `SfForm` is a window control for completely customizing the appearance of a form and loading a custom user interface in the title bar.
 
 ## Key Features
 
-Following are the key features of the SfForm:
+The key features of the SfForm are as follows:
 
-* `Title bar customization` : Customizes the appearance of the title bar and load the user control as a title bar.
+* `Title bar customization`: Customizes the appearance of the title bar and loads a user control into the title bar.
 
 * `MDI(Multiple Document Interface) customization` : Adds MDI child forms and customizes the appearance of MDI child forms.
 
@@ -30,19 +30,19 @@ Syncfusion<sup>®</sup> WinForms suite comes up with the following different for
 
 ### SfForm
 
-The [SfForm](https://help.syncfusion.com/windowsforms/form/overview) window control allows you to completely customize its appearance. Support to load an user interface in the title bar: add an MDI child form and allows the appearance of child forms to be customized.
+The [SfForm](https://help.syncfusion.com/windowsforms/form/overview) window control allows you to completely customize its appearance. It supports loading a custom user interface in the title bar, adding MDI child forms, and customizing the appearance of child forms.
 
 ### MetroForm
 
-[MetroForm](https://help.syncfusion.com/windowsforms/metro-form/overview) is used to create customizable window for the end user's application. It supports various built-in skins and let the user to control its behavior and appearance.
+[MetroForm](https://help.syncfusion.com/windowsforms/metro-form/overview) is used to create a customizable window for the end user's application. It supports various built-in skins and lets the user control its behavior and appearance.
 
 ### Office2007Form
 
-[Office2007Form](https://help.syncfusion.com/windowsforms/office2007form/overview) is an advanced standard form that offers Microsoft Office2007 like, UI and appearance. It supports various built-in color schemes and customization options to control its behavior and appearance.
+[Office2007Form](https://help.syncfusion.com/windowsforms/office2007form/overview) is an advanced standard form that offers a Microsoft Office2007 like UI and appearance. It supports various built-in color schemes and customization options to control its behavior and appearance.
 
 ### SfForm vs MetroForm
 
-Both SfForm and MetroForm controls are used for the same purpose. But, the SfForm control offers rich set of features over MetroForm. For caption images and label, use MetroForm. For custom user control in TitleBar and customizing the appearance of form and MDI forms, use SfForm.
+Both SfForm and MetroForm controls are used for the same purpose. However, the SfForm control offers a rich set of features over MetroForm. For caption images and labels, use MetroForm. For custom user controls in the title bar and customizing the appearance of the form and MDI forms, use SfForm.
 
 The list of some specific API differences between SfForm and MetroForm are as follows.
 

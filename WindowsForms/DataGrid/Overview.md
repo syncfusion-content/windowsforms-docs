@@ -271,5 +271,3 @@ Large amount of data can be loaded in less time by setting {{'[EnableDataVirtual
 The [`Windows Forms SfDataGrid`](https://support.syncfusion.com/kb/desktop/section/952) Knowledge Base section contains responses to some of the most common questions that other customers have asked us before. So this will be a good place to search for topics that are not covered in the user guide.
 
 Similar to the [`Knowledge Base`](https://support.syncfusion.com/kb/desktop/section/952), the [`forum`](https://www.syncfusion.com/forums/windowsforms) section also contains responses to questions that other customers have asked us in the past.
-
-N> Looking for the full WinForms Data Grid component overview, features, pricing, and documentation? Visit the [WinForms Data Grid](https://www.syncfusion.com/winforms-ui-controls/datagrid) page.

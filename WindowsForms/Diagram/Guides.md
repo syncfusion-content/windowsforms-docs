@@ -10,7 +10,7 @@ documentation: ug
 
 # Guides in Windows Forms Diagram
 
-Guides for the [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) control are viewable, non printing guidelines used to align a diagram node with other nodes. They provide support to align a diagram node with the boundary, center, or margin of other nodes.
+Guides for the [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) control are viewable, non printing guidelines used to align a diagram node with other nodes. They provide support to align a diagram node with the boundary, center, or margin of other nodes.
 
 You can also change the visual style of Guides by using its LineStyle property.
 
