@@ -15,6 +15,8 @@ This section explains the steps required to add the Windows Forms [SfAIAssistVie
 
 Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sfaiassistview) section to get the list of assemblies or [NuGet package](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) that needs to be added as a reference to use the SfAIAssistView control in any application.
 
+**Supported target frameworks:** .NET Framework 4.5.2 and above, or .NET 6.0/7.0/8.0.
+
 ## Creating Application with SfAIAssistView
 
 In this walkthrough, users will create a WinForms application that contains the SfAIAssistView control.
