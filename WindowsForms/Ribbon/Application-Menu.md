@@ -9,7 +9,7 @@ documentation: ug
 
 # Application Menu in Windows Forms Ribbon (RibbonControlAdv)
 
-The RibbonControlAdv has the office menu button at the top left corner of the form. Controls can be added to the panels of the office menu button dropdown through designer without a single piece of code.
+The RibbonControlAdv has the Office menu button at the top left corner of the form. Controls can be added to the panels of the Office menu dropdown through the designer, without writing any code.
 
 ## Open ApplicationMenu
 
@@ -68,7 +68,7 @@ You can hide or minimize the menu bar panel by setting the [MinimizePanel](https
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.ribbonControlAdv1.MinimizePanel = true;
 

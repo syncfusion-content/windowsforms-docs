@@ -110,7 +110,7 @@ e.AllowDrag = false;
 {% endhighlight %}
 
 {% highlight vb %}
-Private Me.gridControl1.QueryAllowDragColumnHeader += New GridQueryDragColumnHeaderEventHandler(AddressOf gridControl1_QueryAllowDragColumnHeader)
+AddHandler Me.gridControl1.QueryAllowDragColumnHeader, New GridQueryDragColumnHeaderEventHandler(AddressOf gridControl1_QueryAllowDragColumnHeader)
 Private Sub gridControl1_QueryAllowDragColumnHeader(ByVal sender As Object, ByVal e As GridQueryDragColumnHeaderEventArgs)
 
 'Prevents dragging in 2nd column.
@@ -232,7 +232,7 @@ void gridControl1_QueryCanOleDragRange(object sender, GridQueryCanOleDragRangeEv
 {% endhighlight %}
 
 {% highlight vb %}
-Private Me.gridControl1.QueryCanOleDragRange += New GridQueryCanOleDragRangeEventHandler(AddressOf gridControl1_QueryCanOleDragRange)
+AddHandler Me.gridControl1.QueryCanOleDragRange, New GridQueryCanOleDragRangeEventHandler(AddressOf gridControl1_QueryCanOleDragRange)
 Private Sub gridControl1_QueryCanOleDragRange(ByVal sender As Object, ByVal e As GridQueryCanOleDragRangeEventArgs)
 
 'Drag Drop process will be canceled.

@@ -13,8 +13,8 @@ The performance of the MultiColumnTreeView can be improved by using the followin
 
 ##  SuspendExpandRecalculate
 
-When the `SuspendExpandRecalculate` property is set to true, the populating time nearly reduces to half of its original time by recalculating the nodes maximum height while expanding and collapsing.
-The unnecessary calling of Recalculate dimensions for the child nodes when the Root nodes are collapsed is also reduced.
+When the `SuspendExpandRecalculate` property is set to `true`, the populating time is nearly halved by recalculating the maximum height of the nodes only while expanding and collapsing.
+This also reduces the unnecessary recalculation of dimensions for child nodes when the root nodes are collapsed.
 
 {% tabs %}
 
@@ -32,7 +32,7 @@ Me.multiColumnTreeView1.SuspendExpandRecalculate = True
 
 {% endtabs %}
 
-The below methods can be used to temporarily stop painting of nodes and new nodes can be added to the control in between these methods 
+The following methods can be used to temporarily stop painting of nodes so that new nodes can be added to the control in between these calls.
 
 <table>
 <tr>

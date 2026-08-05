@@ -516,7 +516,7 @@ System.Diagnostics.Process.Start("Sample.png")
 {% endhighlight %}
 {% endtabs %}
 
-## Import form Excel to SfDataGrid
+## Import from Excel to SfDataGrid
 The DataSource of the SfDataGrid can be imported from the excel sheet by using the [IWorkSheet.ExportDataTable](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.IWorksheet.html#Syncfusion_XlsIO_IWorksheet_ExportDataTable_Syncfusion_XlsIO_IRange_Syncfusion_XlsIO_ExcelExportDataTableOptions_) method. This method will convert the excel data into the DataTable.
 {% tabs %}
 {% highlight c# %}

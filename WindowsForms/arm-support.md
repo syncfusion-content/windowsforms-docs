@@ -9,7 +9,7 @@ documentation: ug
 
 # ARM support in Windows Forms Controls
 
-The Syncfusion WinForms components are compatible with ARM64 devices. You can build the application with our components. The following components/features are alone yet to be supported for ARM64 device compatibility. Based on the feasibility, we will provide the support for the below components/features soon,
+The Syncfusion WinForms components are compatible with ARM64 devices. You can build the application with our components. The following components/features are not yet supported for ARM64 device compatibility. Based on the feasibility, we will provide support for the below components/features soon,
 
 * PDF library: HTML to PDF conversion
 * PDF library: OCR Processing

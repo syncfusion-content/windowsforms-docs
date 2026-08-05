@@ -84,36 +84,35 @@ Me.editItem.Text = "&Edit"
 {% tabs %}
 {% highlight c# %}
 
-// Declared to NULL if the right click is outside the node area .
+// Declared to null if the right click is outside the node area.
 private TreeNodeAdv rightMouseDownNodeCached = null;
 
 // Context menu pop up
 private void contextMenu1_Popup(object sender, System.EventArgs e)
 {
-	this.rightMouseDownNodeCached = this.treeViewAdv1.RMouseDownNode;
+    this.rightMouseDownNodeCached = this.treeViewAdv1.RMouseDownNode;
 
-// This will be null if the user clicked in the empty portion of the tree.
-    if(this.treeViewAdv1.RMouseDownNode == null)
+    // This will be null if the user clicked in the empty portion of the tree.
+    if (this.treeViewAdv1.RMouseDownNode == null)
     {
-		this.copyItem.Visible = false;
-		this.cutItem.Visible = false;
-		this.editItem.Visible = false;
-	}
-	else
-	{
-		this.copyItem.Visible = true;
-		this.cutItem.Visible = true;
-		this.editItem.Visible = true;
-	}
-
+        this.copyItem.Visible = false;
+        this.cutItem.Visible = false;
+        this.editItem.Visible = false;
+    }
+    else
+    {
+        this.copyItem.Visible = true;
+        this.cutItem.Visible = true;
+        this.editItem.Visible = true;
+    }
 }
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-' Declared to NULL if the right click is outside the node area .
-Private rightMouseDownNodeCached As TreeNodeAdv =  Nothing
+' Declared to Nothing if the right click is outside the node area.
+Private rightMouseDownNodeCached As TreeNodeAdv = Nothing
 
 ' Context menu Popup
 Private Sub contextMenu1_Popup(ByVal sender As Object, ByVal e As System.EventArgs) Handles contextMenu1.Popup
@@ -286,7 +285,14 @@ Specifies whether scrolling is allowed using middle mouse button.</td></tr>
 <tr>
 <td>
 AccelerateScrolling</td><td>
-Specifies the acceleration behavior for scrollbars.FastImmediateNoneDefault</td></tr>
+Specifies the acceleration behavior for scrollbars. Options include:
+<ul>
+<li>Fast</li>
+<li>Immediate</li>
+<li>None</li>
+<li>Default</li>
+</ul>
+</td></tr>
 <tr>
 <td>
 AllowIncreaseSmallChange</td><td>
@@ -307,7 +313,13 @@ Description</th></tr>
 <tr>
 <td>
 SizeGripStyle</td><td>
-Specifies if the sizing grip should be drawn at the bottom right corner when both scrollbars are visible. The options are,{{ '_Show_' | markdowify }} - shows the sizing grip.{{ '_Auto_' | markdowify }} - shows the sizing grip whenever needed.{{ '_Hide_'  | markdowify}} - Hides the sizing grip.</td></tr>
+Specifies whether the sizing grip should be drawn at the bottom right corner when both scrollbars are visible. Options are:
+<ul>
+<li><b>Show</b> - always shows the sizing grip.</li>
+<li><b>Auto</b> - shows the sizing grip whenever needed.</li>
+<li><b>Hide</b> - hides the sizing grip.</li>
+</ul>
+</td></tr>
 </table>
 
 
@@ -317,7 +329,7 @@ Specifies if the sizing grip should be drawn at the bottom right corner when bot
 
 ### Office2007 Look and Feel for ScrollBars
 
-TreeViewAdv provides support for Office2007Scrollbars with all three color schemes.
+TreeViewAdv provides support for Office2007Scrollbars with all available color schemes (Blue, Silver, Black, and Managed).
 
 ![Office2007 in WinForms TreeView](Concepts-and--Features_images/Concepts-and--Features_img29.jpeg)
 
@@ -360,12 +372,12 @@ Scrolling Events
 
 ### Hot Tracking
 
-Hot Tracking is a feature available for nodes of the TreeViewAdv control. This gives a hot tracked appearance to the nodes when the mouse cursor is hovering over a corresponding node.
+Hot Tracking is a feature available for nodes of the TreeViewAdv control. This gives a hot-tracked appearance to the nodes when the mouse cursor is hovering over a corresponding node.
 
-Enabling the HotTracking property to true and when the mouse hovers over any node, 
+When the `HotTracking` property is set to `true` and the mouse hovers over any node:
 
-* The fore color will change to blue and the text will be underlined with blue color, giving the node label a hyperlink appearance.
-* In the below image the node "France" is given a link approach by setting the HotTracking property to true and by moving the mouse over the node.
+* The foreground color changes to blue and the text is underlined with blue, giving the node label a hyperlink appearance.
+* In the image below, the node "France" displays a hyperlink appearance because `HotTracking` is enabled and the mouse is hovering over the node.
 
 ![Hot Tracking in WinForms TreeView](Concepts-and--Features_images/Concepts-and--Features_img30.jpeg)
 
@@ -397,9 +409,9 @@ treeNodeAdv9.HelpText = "ToolTip for TreeView";
 
 {% highlight vb %}
 
-TreeNodeAdv9.HelpText = "ToolTip for TreeView"
+Me.treeNodeAdv9.HelpText = "ToolTip for TreeView"
 
 {% endhighlight %}
 {% endtabs %}
 
-We can display scroll tips for the [scrollbars](/windowsforms/treeview/runtime-features#scrolling).
+We can display scroll tips for the [scrollbars](#scrolling).

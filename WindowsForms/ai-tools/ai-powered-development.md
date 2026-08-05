@@ -100,7 +100,6 @@ Choose one of these two options:
 
 The MCP Server establishes a direct connection between your IDE-integrated AI and Syncfusion WinForms documentation, enabling the AI to retrieve real-time information for unfamiliar controls. Using Retrieval-Augmented Generation (RAG), it injects relevant documentation into the AI's context to generate accurate and up-to-date code suggestions.
  
-
 **What you get:**
 - Complete documentation for all 145+ WinForms controls
 - Live API references (properties, methods, events)
@@ -190,7 +189,7 @@ public partial class EmployeeForm : Form
         InitializeComponent();
         SetupGrid();
     }
-    
+
     private void SetupGrid()
     {
         employeeGrid = new GridControl();
@@ -213,7 +212,7 @@ public partial class EmployeeForm : Form
         this.Controls.Add(employeeGrid);
         LoadEmployees();
     }
-    
+
     private void LoadEmployees()
     {
         // Load employee data
@@ -248,7 +247,6 @@ If you encounter unexpected results, use this as a quick diagnostic reference:
 | Control not visible or unstyled | Missing control initialization or incorrect property assignment | Ensure control is added to form's Controls collection; verify Syncfusion WinForms control namespace imports; check control properties |
 | Data binding not working | Incorrect binding setup or DataSource not assigned | Set DataSource property correctly; use WinForms binding patterns with GridControl and other bound controls |
 | NuGet package conflicts | Multiple incompatible Syncfusion versions installed | Use matching Syncfusion versions for all components in your project |
-
 
 ## Quick Reference
 

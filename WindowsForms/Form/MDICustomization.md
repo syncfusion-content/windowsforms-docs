@@ -9,7 +9,7 @@ documentation: ug
 
 # MDI Customization in Windows Forms Form (SfForm)
 
-Multiple Document Interface applications allows displaying multiple documents (or forms) in an application at the same time. MDI parent is a form that contains MDI child windows which are the sub-windows. A form can be changed as MDI parent by enabling the [IsMDIContainer](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.form.ismdicontainer?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) property.
+Multiple Document Interface (MDI) applications allow displaying multiple documents (or forms) in an application at the same time. An MDI parent is a form that contains MDI child windows, which are the sub-windows. A form can be changed to an MDI parent by enabling the [IsMDIContainer](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.form.ismdicontainer?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) property.
 
 ## Adding MDI child form
 
@@ -20,7 +20,7 @@ MDI child forms can be added to the MDI parent by making it as parent for the ch
 this.IsMdiContainer = true;
 
 SfForm child1 = new SfForm();
-child1.Text = "Child1;
+child1.Text = "Child1";
 child1.MdiParent = this;
 child1.Show();
 
@@ -56,12 +56,12 @@ this.IsMdiContainer = true;
 
 //Creating MDI child
 SfForm child2 = new SfForm();
-Child2.Text = "Child2;
-Child2.MdiParent = this;
-Child2.Show();
+child2.Text = "Child2";
+child2.MdiParent = this;
+child2.Show();
 
 //Customize title bar appearance.
-Child2.Style.TitleBar.BackColor = Color.MidnightBlue;
+child2.Style.TitleBar.BackColor = Color.MidnightBlue;
 child2.Style.TitleBar.ForeColor = Color.White;
 
 //Customize title bar button appearance.
@@ -112,7 +112,7 @@ Dim activeChild As SfForm = TryCast(Me.ActiveMdiChild, SfForm)
 
 ## Notifying the key events for MDI child
 
-By default, the MDI child form will not receive its key events when any control inside the form has focus. This can be changed by enabling the [KeyPreview](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.form.keypreview?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) property of the child form.
+By default, the MDI child form will not receive its key events when any control inside the form has focus. This can be changed by enabling the [KeyPreview](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.form.keypreview?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) property on the child form.
 
 When this property is set to `true`, the form will receive `KeyPress`, `KeyDown` and `KeyUp` events. Once the form event handlers have completed the keystroke processing, the keystroke is then assigned to the control with focus.
 
@@ -122,13 +122,13 @@ this.IsMdiContainer = true;
 
 //Creating MDI child
 SfForm child1 = new SfForm();
-Child1.Text = "Child1;
-Child1.MdiParent = this;
+child1.Text = "Child1";
+child1.MdiParent = this;
 
 //Enabling KeyPreview for the child.
 child1.KeyPreview = true;
 
-Child1.Show();
+child1.Show();
 {% endhighlight %}
 {% highlight vb %}
 Me.IsMdiContainer = True

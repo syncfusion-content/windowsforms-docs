@@ -17,7 +17,7 @@ RibbonControlAdv now supports adaptation of its controls and its details to meet
 
 2. Create a class that implements the `ILocalizationProvider` interface defined in the Syncfusion.Windows.Forms namespace in the Syncfusion.Shared.Base.dll.
 
-3. Return the localized versions of the strings corresponding to the string identifiers.
+3. Return the localized versions of the strings that correspond to the string identifiers.
 
 4. String identifiers are defined in the `ToolsResourceIdentifier` classes in Syncfusion.Tools.Windows
 
@@ -171,7 +171,7 @@ class localization : ILocalizationProvider
 {% highlight vb %}
 
 Class localization
-    Inherits ILocalizationProvider
+    Implements ILocalizationProvider
 
     Public Function GetLocalizedString(ByVal culture As System.Globalization.CultureInfo, ByVal stringname As String, ByVal obj As Object) As String
         Select Case stringname
@@ -432,7 +432,7 @@ this.ribbonControlAdv1.RightToLeft = RightToLeft.Yes;
 
 {% highlight vb %}
 
-this.ribbonControlAdv1.RightToLeft = RightToLeft.Yes;
+Me.ribbonControlAdv1.RightToLeft = RightToLeft.Yes
 
 {% endhighlight %}
 

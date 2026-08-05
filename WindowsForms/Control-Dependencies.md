@@ -1150,7 +1150,7 @@ Syncfusion.GridExport.WinForms
 </tr>
 </table>
 
-## GridDataBoundGrid(Classic)
+## GridDataBoundGrid (Classic)
 
 <table>
 <tr>

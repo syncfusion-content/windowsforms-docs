@@ -9,25 +9,25 @@ documentation: ug
 
 # Windows Forms Menu (Menus) Overview
 
-[MainFrameBarManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) control allows the hierarchal menu model of elements that are associated with commands and toolbars. This control contains a collection of [BarItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html), which can be expanded to display additional [BarItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html) or to perform a specific action when being clicked.
+[MainFrameBarManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) control allows a hierarchical menu model of elements that are associated with commands and toolbars. This control contains a collection of [BarItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html), which can be expanded to display additional [BarItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html) entries or to perform a specific action when clicked.
 
 
 ## Key features
 
-* **Bar** - Supports [Bar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.Bar.html) which is an unique structure represents a main menu, status bar or a regular toolbar in the XP Menus Framework.
+* **Bar** - Supports [Bar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.Bar.html), a unique structure that represents a main menu, status bar, or a regular toolbar in the XP Menus Framework.
 
-* **Host form** - Provides option to host into any kind of forms.
+* **Host form** - Provides the option to host into any kind of form.
 
-* **Localization** - Provides localization support for all elements into any desired language
+* **Localization** - Provides localization support for all elements into any desired language.
 
-* **BarItem types** - Provides rich set of built-in controls such as ParentBarItem, BarItem, ComboBoxBarItem, TextBoxBarItem and much more.
+* **BarItem types** - Provides a rich set of built-in controls such as `ParentBarItem`, `BarItem`, `ComboBoxBarItem`, `TextBoxBarItem`, and many more.
 
-* **Serialization** - Provides options to save and load the state of the BarItem.
+* **Serialization** - Provides options to save and load the state of the `BarItem`.
 
-* **Customization** - Supports Customization dialog to allow the end user to customize the menu structure at runtime.
+* **Customization** - Supports a Customization dialog that lets the end user customize the menu structure at runtime.
 
-* **Visual style** - Supports rich set of visual styles to customize the look and feel of MainFrameBarManager.
+* **Visual style** - Supports a rich set of visual styles to customize the look and feel of the `MainFrameBarManager`.
 
-* **MDI layout** - Supports MDI Layout, Learn more [MDIChildForms](https://help.syncfusion.com/windowsforms/menu/mdi-child-forms)
+* **MDI layout** - Supports MDI layout. Learn more in [MDIChildForms](https://help.syncfusion.com/windowsforms/menu/mdi-child-forms).
 
-* **ToolTip** - Provides options to set ToolTip for each BarItem.
+* **ToolTip** - Provides options to set a ToolTip for each `BarItem`.

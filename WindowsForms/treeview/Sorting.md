@@ -11,7 +11,7 @@ documentation: ug
 
 Sorting can be performed on the tree nodes using the Sort function and specifying the function to be performed on either the checkbox or tag or text values in ascending or descending order.
 
-The Sort operation sorts only the level 1 nodes. To perform the function on the other levels of nodes, the [SortWithChildNode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_SortWithChildNodes) property should be set to true. The sort function can be done based on the value type which can be specified using [SortType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdv_SortType) to either the option of [Checkbox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdv_CheckBox) or [Tag](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdv_Tag) or [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdv_Text). The order in which the sort function must be performed can be specified using the [SortOrder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdv_SortOrder) that holds the values of Ascending or Descending.
+The Sort operation sorts only the level 1 nodes. To perform the function on the other levels of nodes, the [SortWithChildNodes](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_SortWithChildNodes) property should be set to true. The sort function can be done based on the value type which can be specified using [SortType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdv_SortType) to either the option of [Checkbox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdv_CheckBox) or [Tag](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdv_Tag) or [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdv_Text). The order in which the sort function must be performed can be specified using the [SortOrder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdv_SortOrder) that holds the values of Ascending or Descending.
 
 <b>Property Table</b>
 
@@ -23,11 +23,11 @@ Description</th></tr>
 <tr>
 <td>
 SortOrder</td><td>
-The SortOrder property indicates the order of the sorting: Ascending,Descending, None.</td></tr>
+The SortOrder property indicates the order of the sorting: Ascending, Descending, or None. The default value is <b>None</b>.</td></tr>
 <tr>
 <td>
 SortType</td><td>
-The SortType property indicates the field. Nodes will be sorted based on the type of sorting.</td></tr>
+The SortType property indicates the field. Nodes will be sorted based on the type of sorting. The default value is <b>Text</b>.</td></tr>
 </table>
 
 {% tabs %}
@@ -40,8 +40,8 @@ treeNode.SortType = Syncfusion.Windows.Forms.Tools.TreeNodeAdvSortType.CheckBox;
 
 {% highlight vb %}
 
-treeNode.SortOrder = System.Windows.Forms.SortOrder.Ascending
-treeNode.SortType = Syncfusion.Windows.Forms.Tools.TreeNodeAdvSortType.CheckBox
+Me.treeNode.SortOrder = System.Windows.Forms.SortOrder.Ascending
+Me.treeNode.SortType = Syncfusion.Windows.Forms.Tools.TreeNodeAdvSortType.CheckBox
 
 
 {% endhighlight %}
@@ -95,8 +95,8 @@ treeNodeAdv9.Comparer = null;
 
 {% highlight vb %}
 
-TreeNodeAdv9.CompareOptions = System.Globalization.CompareOptions.IgnoreCase;
-TreeNodeAdv9.Comparer = Null
+Me.treeNodeAdv9.CompareOptions = System.Globalization.CompareOptions.IgnoreCase
+Me.treeNodeAdv9.Comparer = Nothing
 
 {% endhighlight %}
 {% endtabs %}

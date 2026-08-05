@@ -15,14 +15,11 @@ documentation: ug
 
 BorderStyle Property has the following styles
 
-*	None
-If the BorderStyle set as none, border of MultiColumnTreeView will be collapsed
+*	`None` - If the BorderStyle is set to None, the border of the MultiColumnTreeView is collapsed.
 
-*	FixedSingle (For 2D)
-      If the BorderStyle set as FixedSingle, then the border of the MultiColumnTreeView will be visible and we can customize the border.
+*	`FixedSingle (For 2D)` - If the BorderStyle is set to FixedSingle, the border of the MultiColumnTreeView is visible and you can customize it.
 
-*	Fixed3D (Default)
-     If the BorderStyle set as Fixed3D, then the border of the MultiColumnTreeView will be visible in 3D and we can customize the border settings
+*	`Fixed3D (Default)` - If the BorderStyle is set to Fixed3D, the border of the MultiColumnTreeView is visible in 3D and you can customize the border settings.
 
 ### BorderSingle
 
@@ -50,22 +47,17 @@ BorderSides Property specify the sides of the control to which 3D border should 
 
 It has the following Options
 
-*	All
-Three-dimensional border will be set for all sides
+*	`All` - Three-dimensional border is set for all sides.
 
-*	Right
-Three-dimensional border on the right side of MultiColumnTreeView
+*	`Right` - Three-dimensional border is set on the right side of the MultiColumnTreeView.
 
-*	Left
-Three-dimensional border on the left side of MultiColumnTreeView
+*	`Left` - Three-dimensional border is set on the left side of the MultiColumnTreeView.
 
-*	Top
-Three-dimensional border on the top of MultiColumnTreeView
+*	`Top` - Three-dimensional border is set on the top of the MultiColumnTreeView.
 
-*	Bottom
-Three-dimensional border on the bottom of MultiColumnTreeView
+*	`Bottom` - Three-dimensional border is set on the bottom of the MultiColumnTreeView.
 
-*	Middle
+*	`Middle`
 
 ### Border3DStyle
 
@@ -471,7 +463,7 @@ Me.MultiColumnTreeView1.Nodes(0).Nodes(0).Nodes(2).SubItems(1).BorderStyle = Bor
 
 ### Image Customization
 
-Sub items can be customized with the Right and left image using the property `RightImage` and `LeftImage`
+Sub items can be customized with right and left images using the `RightImage` and `LeftImage` properties.
 
 {% tabs %}
 
@@ -579,7 +571,7 @@ Me.multiColumnTreeView1.Style = MultiColumnVisualStyle.Office2016DarkGray
 
 ## PlusMinus
 
-Plus Minus are used to display plus/minus images for the parent nodes using the property `ShowPlusMinus` these images can be disabled.
+Plus Minus are used to display plus/minus images for the parent nodes. Set the `ShowPlusMinus` property to `false` to disable these images.
 
 {% tabs %}
 
@@ -888,6 +880,6 @@ treeNodeAdv1.CloseImgIndex = 2
 {% endcapture %}
 {{ codesnippet6 | OrderList_Indent_Level_1 }}
 
-4. Repeat step 3 until  set OpenImgIndex and ClosedImgIndex for all the nodes in MultiColumnTreeView.
+4. Repeat step 3 until the `OpenImageIndex` and `ClosedImageIndex` are set for all the nodes in the MultiColumnTreeView.
 
 ![Appearance_img20](Appearance_Images/Appearance_img20.jpg)
