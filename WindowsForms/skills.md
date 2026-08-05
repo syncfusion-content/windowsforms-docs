@@ -37,7 +37,7 @@ Before installing Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms
 
 **Design‑System Guidance**
 - Theme usage, including light and dark variants
-- [VisualStyle](https://help.syncfusion.com/windowsforms/visualstyle) patterns and customization approaches
+- [SkinManager](https://help.syncfusion.com/windowsforms/skins/overview) theming patterns and customization approaches
 - Consistent design alignment across Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms components
 
 ## Installation
@@ -217,4 +217,3 @@ Verify that skills are installed in the correct agent directory (for example, `.
 
 - [Agent Skills Standards](https://agentskills.io/home)
 - [Skills CLI](https://www.skills.sh/docs)
-- [VisualStyle](https://help.syncfusion.com/windowsforms/visualstyle)

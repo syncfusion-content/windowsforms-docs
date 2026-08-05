@@ -3,7 +3,7 @@ layout: post
 title: Release Notes - Syncfusion WinForms AI Coding Assistants | Syncfusion
 description: Explore the release notes for Syncfusion WinForms AI Coding Assistants, covering MCP Server, Skills, and Agentic UI Builder updates across all versions.
 control: Syncfusion WinForms AI Coding Assistants Release Notes
-platform: WinForms
+platform: WindowsForms
 documentation: ug
 domainurl: ##DomainURL##
 ---
