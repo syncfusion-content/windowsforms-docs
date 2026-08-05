@@ -69,6 +69,7 @@ npx skills add syncfusion/winforms-ui-components-skills
 {% endtabs %}
 
 The terminal will display a list of available skills. Use the **arrow keys** to move between skills, the **space bar** to toggle a skill on or off, and the **Enter** key to confirm.
+{% tabs %}
 {% highlight bash tabtitle="CMD" %}
 
  Select skills to install (space to toggle)
