@@ -37,7 +37,7 @@ Before installing Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms
 
 **Design‑System Guidance**
 - Theme usage, including light and dark variants
-- [VisualStyle](https://help.syncfusion.com/windowsforms/visualstyle) patterns and customization approaches
+- [SkinManager](https://help.syncfusion.com/windowsforms/skins/overview) theming patterns and customization approaches
 - Consistent design alignment across Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms components
 
 ## Installation
@@ -69,6 +69,7 @@ npx skills add syncfusion/winforms-ui-components-skills
 {% endtabs %}
 
 The terminal will display a list of available skills. Use the **arrow keys** to move between skills, the **space bar** to toggle a skill on or off, and the **Enter** key to confirm.
+{% tabs %}
 {% highlight bash tabtitle="CMD" %}
 
  Select skills to install (space to toggle)
@@ -124,7 +125,7 @@ Choose your installation scope (project-level or global), then confirm to comple
 {% endhighlight %}
 {% endtabs %}
 
-This registers the Syncfusion<sup style="font-size:70%">&reg;</sup> skill pack so your AI assistant can automatically load it in supported IDEs such as [Code Studio](https://help.syncfusion.com/code-studio/reference/configure-properties/skills), [Visual Studio Code](https://code.visualstudio.com/docs/copilot/customization/agent-skills), and [Cursor](https://cursor.com/docs/skills). After installation, restart your IDE (or use the **Reload Window** command) so the IDE can detect the newly added skill files.
+This registers the Syncfusion<sup style="font-size:70%">&reg;</sup> skill pack so your AI assistant can automatically load it in supported IDEs such as [Code Studio](https://help.syncfusion.com/code-studio/reference/configure-properties/skills), [Visual Studio Code](https://code.visualstudio.com/docs/agent-customization/agent-skills), and [Cursor](https://cursor.com/docs/skills). After installation, restart your IDE (or use the **Reload Window** command) so the IDE can detect the newly added skill files.
 
 To learn more about the Skills CLI, refer [here](https://www.skills.sh/docs). 
 
@@ -217,4 +218,3 @@ Verify that skills are installed in the correct agent directory (for example, `.
 
 - [Agent Skills Standards](https://agentskills.io/home)
 - [Skills CLI](https://www.skills.sh/docs)
-- [VisualStyle](https://help.syncfusion.com/windowsforms/visualstyle)
