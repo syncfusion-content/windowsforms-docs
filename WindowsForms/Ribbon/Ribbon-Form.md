@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ribbon Form in Windows Forms Ribbon control | Syncfusion®
-description: Learn about Ribbon Form support in Syncfusion® Windows Forms Ribbon (RibbonControlAdv) control and more details.
+title: Ribbon Form in Windows Forms Ribbon | Syncfusion®
+description: The Ribbon Form is an extension of the standard form that enables different visual styles for the ribbon with a Microsoft Office look.
 platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# Ribbon Form in Windows Forms Ribbon (RibbonControlAdv)
+# Ribbon Form in Windows Forms Ribbon
 
 `RibbonForm` is an extension of the standard form that enables different visual styles for the ribbon and gives its controls a look and feel similar to Microsoft Office.
 

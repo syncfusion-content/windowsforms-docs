@@ -1,14 +1,14 @@
 ---
 layout: post
-title: How to activate a particular docked control | WindowsForms | Syncfusion®
-description: How to activate a particular docked control
+title: How to activate a particular docked control in Docking Manager | Syncfusion®
+description: Learn how to activate a particular docked control in Syncfusion Windows Forms Docking Manager control with examples.
 platform: windowsforms
 control: DockingManager
 documentation: ug
 ---
 
 
-# How to activate a particular docked control?
+# How to activate a particular docked control in Docking Manager
 
 To activate particular docked control, call the `ActivateControl` method inside NewDockStateEndLoad event.
 

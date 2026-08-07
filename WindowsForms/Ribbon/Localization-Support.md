@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization Support in Windows Forms Ribbon control | Syncfusion®
-description: Learn about Localization Support in Syncfusion® Windows Forms Ribbon (RibbonControlAdv) control and more details.
+title: Localization Support in Windows Forms Ribbon | Syncfusion®
+description: Localization support in Ribbon adapts controls and details to meet different languages and cultural requirements for global applications.
 platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# Localization Support in Windows Forms Ribbon (RibbonControlAdv)
+# Localization Support in Windows Forms Ribbon
 
 RibbonControlAdv now supports adaptation of its controls and its details to meet different languages and cultural requirements. This involves configuring the ribbon to a specific language.
 

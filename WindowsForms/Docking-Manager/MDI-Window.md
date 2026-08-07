@@ -1,7 +1,7 @@
 ---
 layout: post
-title: MDI Window in Windows Forms Docking Manager control | Syncfusion®
-description: Learn about MDI Window support in Syncfusion® Windows Forms Docking Manager control and more details.
+title: MDI Window in Windows Forms Docking Manager | Syncfusion®
+description: The MDI window in Docking Manager allows multiple windows to reside under a single parent window within the docking layout.
 platform: windowsforms
 control: DockingManager 
 documentation: ug

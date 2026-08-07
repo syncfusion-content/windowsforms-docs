@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Touch Support in Windows Forms Ribbon control | Syncfusion®
-description: Learn about Touch Support in Syncfusion® Windows Forms Ribbon (RibbonControlAdv) control and more details.
+title: Touch Support in Windows Forms Ribbon | Syncfusion®
+description: Touch support in Ribbon provides a touch UI with plenty of interaction space, making it easy to access elements on touch devices.
 platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# Touch Support in Windows Forms Ribbon (RibbonControlAdv)
+# Touch Support in Windows Forms Ribbon
 
 RibbonControlAdv has touch support and provides a Touch UI that makes it easy to access the elements in the Ribbon.
 
