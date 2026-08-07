@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Syncfusion® Windows Forms SfForm Control | Syncfusion®
-description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms SfForm control and more details.
+title: About Syncfusion® Windows Forms Form Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms Form (SfForm) control and more details.
 platform: WindowsForms
 control: SfForm
 documentation: ug

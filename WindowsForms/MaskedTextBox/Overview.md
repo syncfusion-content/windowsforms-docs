@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® Windows Forms MaskedEditBox Control | Syncfusion®
-description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms MaskedEditBox control and more details.
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms MaskedTextBox (MaskedEditBox) control and more details.
 platform: windowsforms
 control: MaskedEditBox
 documentation: ug

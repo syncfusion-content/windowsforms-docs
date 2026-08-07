@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Syncfusion® Windows Forms Layout Managers Package Control | Syncfusion®
-description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms Layout Managers Package control and more details.
+title: About Syncfusion® Windows Forms LayoutManagers Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms LayoutManagers control and more details.
 platform: windowsforms
 control: Layout Managers Package
 documentation: ug

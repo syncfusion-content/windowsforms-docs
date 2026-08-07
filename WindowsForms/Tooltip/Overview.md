@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Syncfusion® Windows Forms SfToolTip Control | Syncfusion®
-description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms SfToolTip control and more details.
+title: About Syncfusion® Windows Forms  Tooltip Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms  Tooltip (SfToolTip) control and more details.
 platform: windowsforms
 control: SfToolTip
 documentation: ug

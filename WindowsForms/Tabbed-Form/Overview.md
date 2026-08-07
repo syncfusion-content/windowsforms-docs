@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Syncfusion® Windows Forms SfTabbedForm Control | Syncfusion®
-description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms SfTabbedForm control and more details.
+title: About Syncfusion® Windows Forms TabbedForm Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms TabbedForm (SfTabbedForm) control and more details.
 platform: WindowsForms
 control: SfTabbedForm
 documentation: ug

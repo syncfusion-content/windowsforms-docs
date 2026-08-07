@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Syncfusion® Windows Forms SfButton Control | Syncfusion®
-description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms SfButton control and more details.
+title: About Syncfusion® Windows Forms Button Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms Button control and more details.
 platform: windowsforms
 control: SfButton
 documentation: ug

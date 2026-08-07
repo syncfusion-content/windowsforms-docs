@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Menus Package | Syncfusion®
-description: Learn how to get started with the Syncfusion® Windows Forms Menus Package control. Explore setup, features, examples, and customization options.
+title: Getting Started with Windows Forms Menu | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms Menus (MainFrameBarManager) control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
 control: Menus Package 
 documentation: ug
 ---
 
-# Windows Forms Menu (Menus) Getting started
+# Getting Started with Menu (MainFrameBarManager)
 
 This section provides a quick overview for working with the [Menu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) control for Windows Forms.
 

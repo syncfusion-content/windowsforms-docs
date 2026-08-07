@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Getting Started with Windows Forms MaskedEditBox | Syncfusion®
-description: Learn how to get started with the Syncfusion® Windows Forms MaskedEditBox control. Explore setup, features, examples, and customization options.
+title: Getting Started with Windows Forms MaskedTextBox | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms MaskedTextBox(MaskedEditBox) control. Explore setup, features, examples, and customization options.
 platform: windowsforms
 control: MaskedEditBox
 documentation: ug
 ---
-# Getting Started with Windows Forms MaskedEditBox
+# Getting Started with Windows Forms MaskedTextBox (MaskedEditBox)
 
 This section briefly describes how to create a new Windows Forms project in Visual Studio and how to add the [WinForms MaskedTextBox](https://www.syncfusion.com/winforms-ui-controls/maskedtextbox) control with its basic functionalities.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Syncfusion® Windows Forms Editors Package Control | Syncfusion®
-description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms Editors Package control and more details.
+title: About Syncfusion® Windows Forms SplitContainer Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms SplitContainer (SplitContainerAdv) control and more details.
 platform: windowsforms
 control: Editors Package
 documentation: ug
