@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WinForms ButtonEdit control| Syncfusion®
-description: Learn here about getting started with Syncfusion® Essential Studio® Windows Forms ButtonEdit control, its elements, and more.
+title: Getting Started with Windows Forms ButtonEdit | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms ButtonEdit control. Explore setup, features, examples, and customization options.
 platform: windowsforms
 control: ButtonEdit
 documentation: ug

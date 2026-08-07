@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Windows Forms Menu control | Syncfusion 
-description: Learn here about getting started with Syncfusion Windows Forms Menus control, its elements and more details.
+title: Getting Started with Windows Forms Menus Package | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms Menus Package control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
 control: Menus Package 
 documentation: ug

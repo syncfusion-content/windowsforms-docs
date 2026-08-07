@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Windows Forms Toggle Button control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® Windows Forms Toggle Button control, its elements and more details.
+title: About Syncfusion® Windows Forms ToggleButton Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms ToggleButton control and more details.
 platform: windowsforms
 control: ToggleButton 
 documentation: ug

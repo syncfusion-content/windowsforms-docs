@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | Windows Forms MultiColumn TreeView | Syncfusion®
-description: Learn here about getting started with Syncfusion® Windows Forms MultiColumn TreeView control, its elements, and more.
+title: Getting Started with Windows Forms MultiColumnTreeView | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms MultiColumnTreeView control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
 control: MultiColumnTreeView
 documentation: ug
 ---
 
-# Getting Started with Windows Forms MultiColumn TreeView
+# Getting Started with Windows Forms MultiColumnTreeView
 
 This section explains how to create a new Windows Forms project in Visual Studio and add **"MultiColumnTreeView"** with its basic functionalities.
 

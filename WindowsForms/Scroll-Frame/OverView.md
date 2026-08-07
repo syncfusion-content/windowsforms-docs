@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Windows Forms Scroll Frame control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® Windows Forms Scroll Frame (SfScrollFrame) control, its elements and more details.
+title: About Syncfusion® Windows Forms SfScrollFrame Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms SfScrollFrame control and more details.
 platform: WindowsForms
 control: SfScrollFrame
 documentation: ug

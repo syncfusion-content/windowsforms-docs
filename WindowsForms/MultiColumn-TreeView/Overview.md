@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Windows Forms MultiColumn TreeView control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® Windows Forms MultiColumn TreeView control, its elements and more details.
+title: About Syncfusion® Windows Forms MultiColumnTreeView Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms MultiColumnTreeView control and more details.
 platform: WindowsForms
 control: MultiColumnTreeView
 documentation: ug

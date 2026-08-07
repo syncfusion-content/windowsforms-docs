@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Windows Forms TextBox control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms TextBox control, its elements and more details.
+title: Getting Started with Windows Forms TextBoxExt | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms TextBoxExt control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
 control: TextBoxExt
 documentation: ug
 ---
 
-# Getting Started with Windows Forms TextBox
+# Getting Started with Windows Forms TextBoxExt
 
 This section briefly describes how to create a new Windows Forms project in Visual Studio and add [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html) with its basic functionalities.
 
