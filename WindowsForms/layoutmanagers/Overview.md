@@ -1,12 +1,13 @@
 ---
 layout: post
-title: About Syncfusion® Windows Forms Layout Managers Package Control | Syncfusion®
+title: About Syncfusion® Windows Forms Layout Managers Package Control
 description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms Layout Managers Package control and more details.
 platform: windowsforms
 control: Layout Managers Package
 documentation: ug
 ---
 # Windows Forms LayoutManagers Overview
+The Windows Forms Layout Managers provides components for arranging and managing controls within container controls.
 
 ## Layout Manager
 
