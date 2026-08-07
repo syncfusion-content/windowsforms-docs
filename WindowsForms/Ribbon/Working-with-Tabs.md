@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Working with Tabs in Windows Forms Ribbon control | Syncfusion®
-description: Learn about Working with Tabs support in Syncfusion® Windows Forms Ribbon (RibbonControlAdv) control and more details.
+title: Working with Tabs in Windows Forms Ribbon | Syncfusion®
+description: Working with Tabs covers ribbon panels represented as tabs with groups that display various items like buttons, galleries, and labels.
 platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# Working with Tabs in Windows Forms Ribbon (RibbonControlAdv)
+# Working with Tabs in Windows Forms Ribbon
 
 Ribbon panels are represented as Tabs (ToolStripTabItem) with the tab name above the panel. These panels are split into groups represented as `ToolStripEx`, which displays various items like buttons, gallery items, labels and panels.
 

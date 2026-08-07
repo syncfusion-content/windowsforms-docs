@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Tabbed Style Dockable in WinForms TabbedMDI Manager|Syncfusion®
-description: How to Enable the Tabbed Style Dockable Window using Syncfusion® WinForms TabbedMDI Manager Control, its elements, and more.
+title: How to enable the tabbed style dockable window in Docking Manager | Syncfusion®
+description: Learn how to enable the tabbed style dockable window using TabbedMDI manager in Syncfusion Windows Forms Docking Manager.
 platform: WindowsForms
 control: DockingManager
 documentation: ug
 ---
 
 
-# How to enable the Tabbed Style Dockable Window using DockingManager?
+# How to enable the tabbed style dockable window in Docking Manager
 
 The Tabbed MDI Package provides a new Tabbed MDI layout mode (as an alternative to the default Cascade and Tiled modes), popularized by VS .NET. 
 

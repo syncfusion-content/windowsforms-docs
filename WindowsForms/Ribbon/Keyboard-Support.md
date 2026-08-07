@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Keyboard Support in Windows Forms Ribbon control | Syncfusion®
-description: Learn about Keyboard Support in Syncfusion® Windows Forms Ribbon (RibbonControlAdv) control and more details.
+title: Keyboard Support in Windows Forms Ribbon | Syncfusion®
+description: Keyboard support in Ribbon provides KeyTip support through Super Accelerator to invoke any command using keyboard shortcuts.
 platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# Keyboard Support in Windows Forms Ribbon (RibbonControlAdv)
+# Keyboard Support in Windows Forms Ribbon
 
 To invoke any command using KeyBoard, RibbonControlAdv provides KeyTip support through Super Accelerator. On pressing Alt key, KeyTips for the corresponding RibbonItem gets displayed.
 

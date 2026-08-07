@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Dealing with docking child | WinForms Docking Manager| Syncfusion®
-description: Learn about Dealing with docking child support in Syncfusion® Windows Forms Docking Manager control and more.
+title: Dealing with Docking Child in Docking Manager | Syncfusion®
+description: Dealing with docking child lets you resize, position, and customize caption buttons and context menus of docking child windows in Docking Manager.
 platform: windowsforms
 control: DockingManager 
 documentation: ug
 ---
 
-# Dealing with docking child in Windows Forms Docking Manager
+# Dealing with Docking Child in Docking Manager
 
 This section explains about resizing and positioning of child windows in DockingManager. And also explains customizing the visibility of caption button and context menu of docking child windows.
 

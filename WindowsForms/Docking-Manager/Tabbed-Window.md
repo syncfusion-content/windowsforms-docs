@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tabbed Window in Windows Forms Docking Manager control | Syncfusion®
-description: Learn about Tabbed Window support in Syncfusion® Windows Forms Docking Manager control and more details.
+title: Tabbed Window in Windows Forms Docking Manager | Syncfusion®
+description: The tabbed window in Docking Manager allows grouping dock or float windows in tabs with full customization of tab appearance.
 platform: windowsforms
 control: DockingManager
 documentation: ug
