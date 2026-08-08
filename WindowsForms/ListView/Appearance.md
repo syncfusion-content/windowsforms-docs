@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance
-description: This section explains about the Appearance support in SfListView.
+title: Customizing Item Appearance in Windows Forms SfListView | Syncfusion®
+description: Customize item appearance in Windows Forms SfListView with styling options for selected items, groups, and visual elements to enhance the user experience.
 platform: windowsforms
 control: SfListView
 documentation: ug
 ---
 
-# Appearance
+# Customizing Item Appearance in Windows Forms SfListView
 SfListView allows to customize the appearance of selected items through the [SfListView.Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_Style) property that contains all the settings for Item and Items Group appearance customizations.
 
 ## Customizing item appearance
