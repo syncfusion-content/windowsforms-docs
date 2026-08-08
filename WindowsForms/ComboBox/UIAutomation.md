@@ -1,13 +1,13 @@
 ---
 layout: post
-title: UI Automation in Windows Forms ComboBox control | Syncfusion
-description: Learn about UI Automation support in Syncfusion Windows Forms ComboBox (SfComboBox) control and more details.
+title: UI Automation in Windows Forms SfComboBox | Syncfusion®
+description: UI automation in Windows Forms SfComboBox enables accessibility support and automated UI testing through frameworks such as Coded UI Test and QTP.
 platform: WindowsForms
 control: SfComboBox
 documentation: ug
 ---
 
-# UI Automation in Windows Forms ComboBox (SfComboBox)
+# UI Automation in Windows Forms SfComboBox
 
 Microsoft UI automation is a new accessibility Framework for Microsoft Windows available on all the operating systems that support Windows Forms. UI automation provides accessibility to most of the UI elements and provides information about the UI element to the end user. You can interact with UI by using automated test scripts. To learn more about UI automation, refer to the [MSDN page](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-overview).
 
