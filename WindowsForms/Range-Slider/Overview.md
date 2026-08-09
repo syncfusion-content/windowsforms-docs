@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Windows Forms Range Slider control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® Windows Forms Range Slider control, its elements and more details.
+title: About Syncfusion® Windows Forms RangeSlider Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms RangeSlider control and more details.
 platform: windowsforms
 control: RangeSlider 
 documentation: ug
