@@ -184,7 +184,7 @@ Public Sub New()
 
 End Sub
 
-{% endhighlight vb %}
+{% endhighlight %}
 
 {% endtabs %}
 

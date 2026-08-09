@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Syncfusion® Windows Forms Popup (PopupControlContainer) Control | Syncfusion®
+title: About Syncfusion® Windows Forms PopupControlContainer | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms Popup (PopupControlContainer) control and more details.
 platform: windowsforms
 control: PopupControlContainer

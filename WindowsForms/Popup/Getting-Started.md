@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Popup (PopupControlContainer) | Syncfusion®
+title: Getting Started with Windows Forms PopupControlContainer | Syncfusion®
 description: Learn how to get started with the Syncfusion® Windows Forms Popup (PopupControlContainer) control. Explore setup, features, examples, and customization options.
 platform: windowsforms
 control: PopupControlContainer

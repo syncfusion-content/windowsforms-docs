@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Syncfusion® Windows Forms TabSplitterContainer Control | Syncfusion®
+title: About Syncfusion® Windows Forms TabSplitterContainer | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms TabSplitterContainer control and more details.
 platform: windowsforms
 control: TabSplitterContainer 
