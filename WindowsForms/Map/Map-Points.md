@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Map Points in Windows Forms Maps | Syncfusion®
-description: Map points in the Windows Forms Maps display location-based data and support customization of markers, labels, and visual appearance.
+title: Points in Windows Forms Maps | Syncfusion®
+description: Points in the Windows Forms Maps display location-based data and support customization of markers, labels, and visual appearance.
 platform: windowsforms
 control: Maps
 documentation: ug
 ---
 
-# Map Points in Windows Forms Maps
+# Points in Windows Forms Maps
 
 [`Points`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Maps.ShapeFileRecord.html#Syncfusion_Windows_Forms_Maps_ShapeFileRecord_Points) are one of the record types in the shape file layer. Points are used to specify the specific point in the map. For example, they are used to specify the capital of countries. Points in the shape file are given as latitude and longitude coordinates. Those points should be converted as map points. 
 

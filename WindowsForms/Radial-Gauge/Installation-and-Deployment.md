@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Installation and Deployment in Windows Forms Radial Gauge | Syncfusion®
-description: Installation and deployment in the Windows Forms Radial Gauge cover setup requirements, assembly deployment, and application distribution.
+title: Installation and Deployment in Windows Forms Gauge | Syncfusion®
+description: Installation and deployment in the Windows Forms Gauge cover setup requirements, assembly deployment, and application distribution.
 platform: WindowsForms
 control: Gauge
 documentation: ug
 ---
 
-# Installation and Deployment in Windows Forms Radial Gauge
+# Installation and Deployment in Windows Forms Gauge
 
 This section covers information on installation, the process of viewing samples through the sample browser, and the locations of samples and source code.
 
