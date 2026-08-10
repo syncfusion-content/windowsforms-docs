@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Windows Forms Syntax Editor control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms Syntax Editor control, its elements and more details.
+title: About Syncfusion® Windows Forms SyntaxEditor Control | Syncfusion®
+description: Learn about the introduction and overview of Syncfusion® Windows Forms SyntaxEditor control, including its features, elements, and capabilities.
 platform: WindowsForms
 control: SyntaxEditor
 documentation: ug
 ---
 
-# Windows Forms Syntax Editor Overview
+# About Syncfusion® Windows Forms Syntax Editor Control
 
 The [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) is a powerful text-editor control for creating interactive code-editor applications with a rich feature set. It includes editing, syntax highlighting, text indentation, IntelliSense, expand/collapse of code blocks, and custom language configuration similar to the Microsoft Visual Studio Editor.
 
