@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How To Create a Directional Link | Syncfusion®
-description: Learn to create directional links with a 'Filled Arrow' endpoint, enhancing the visual flow by marking the head port edge of the connection.
+title: How to create a directional link in Windows Forms Diagram | Syncfusion®
+description: Learn how to create a directional link in the Syncfusion® Windows Forms Diagram control by adding arrow decorators to indicate connection direction.
 platform: windowsforms
 control: Diagram
 documentation: ug

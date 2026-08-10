@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How To Export a Diagram Into a Word Document | Syncfusion®
-description: Learn how to save your diagram in a standard image format and seamlessly export it into a Word document using Essential® DocIO.
+title: How to export a diagram into a Word document in Windows Forms Diagram | Syncfusion®
+description: Learn how to export a diagram from the Syncfusion® Windows Forms Diagram control into a Word document using Essential® DocIO.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# How To Export a Diagram Into a Word Document
+# How to export a diagram into a Word document in Windows Forms Diagram
 
 To export a diagram into a Word document, follow the below given steps.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Custom Property And Display in WPF Diagram Control | Syncfusion®
-description: How to add a custom property to diagram and display it in the property editor in Syncfusion® Windows Forms Diagram Control and more.
+title: How to add a custom property to Diagram in Windows Forms Diagram | Syncfusion®
+description: Learn how to add a custom property to the Syncfusion® Windows Forms Diagram control and display it in the Property Editor.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# Add a Custom Property To Diagram And Display It In the Property Editor
+# How to add a custom property to Diagram in Windows Forms Diagram
 
 The below given code snippet illustrates how you can add a custom property to Diagram and display it in the Property Editor.
 

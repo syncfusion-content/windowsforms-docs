@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How To Programmatically Add a Symbol From the Palette | Syncfusion®
-description: Learn how to programmatically add a symbol from a palette in your application, enhancing functionality and user experience with dynamic symbol integration.
+title: How to add a symbol from the palette programmatically in Windows Forms Diagram | Syncfusion®
+description: Learn how to programmatically add a symbol from a symbol palette to the Syncfusion® Windows Forms Diagram control using code.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# How To Programmatically Add a Symbol From the Palette
+# How to add a symbol from the palette programmatically in Windows Forms Diagram
 
 The following code sample demonstrates how you can programmatically add a symbol from the symbol palette to a diagram.
 

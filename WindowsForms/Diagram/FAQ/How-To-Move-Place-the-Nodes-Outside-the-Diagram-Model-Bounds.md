@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How To Place the Nodes Outside the Diagram Model Bounds | Syncfusion®
-description: Learn how to allow nodes to be positioned outside a diagram's default boundaries by disabling the BoundaryConstraintsEnabled property.
+title: How to place nodes outside diagram bounds in Windows Forms Diagram | Syncfusion®
+description: Learn how to place nodes outside the diagram model bounds in the Syncfusion® Windows Forms Diagram control by disabling boundary constraints.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# How To Move / Place the Nodes Outside the Diagram Model's Bounds
+# How to place nodes outside diagram bounds in Windows Forms Diagram
 
 Setting the model's BoundaryConstraintsEnabled property to 'false', will let you place the nodes outside the bounds of the diagram model.
 

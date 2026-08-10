@@ -1,13 +1,12 @@
 ---
 layout: post
-title: How to Detect whether a Property Value is Changed  | Syncfusion®
-description: Use the PropertyValueChanged event in a property grid to track changes in property values within the property editor efficiently.
-platform: windowsforms
+title: How to detect property value changes in Windows Forms Diagram | Syncfusion®
+description: Learn how to detect property value changes in the Syncfusion® Windows Forms Diagram Property Editor using the PropertyValueChanged event.
 control: Diagram
 documentation: ug
 ---
 
-# How to Detect whether a Property Value is Changed in the Property Editor?
+# How to detect property value changes in Windows Forms Diagram
 
 You can use the PropertyValueChanged event to detect whether a property value is changed in the property editor. The following code example illustrates this.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Windows Forms Diagram control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® Windows Forms Diagram control, its elements, and more details.
+title: About Syncfusion® Windows Forms Diagram Control | Syncfusion®
+description: Learn about the introduction, key features, compatibility, and documentation of the Syncfusion® Windows Forms Diagram control.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# Windows Forms Diagram Overview
+# About Syncfusion® Windows Forms Diagram Control
 
 This section covers information on [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) control, its key features, and prerequisites to use the control, its compatibility with various OS and browsers and finally the documentation details complimentary with the product. It comprises the following sub sections:
 

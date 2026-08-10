@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to convert a Model Coordinates to Client Coordinates | Syncfusion®
-description: Learn how to transform model coordinates into client coordinates, ensuring accurate positioning and rendering of objects on your user's display.
+title: How to convert model coordinates to client coordinates in Windows Forms Diagram | Syncfusion®
+description: Learn how to convert model coordinates to client coordinates in the Syncfusion® Windows Forms Diagram control for accurate positioning.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# How to convert a Model Coordinates to Client Coordinates
+# How to convert model coordinates to client coordinates in Windows Forms Diagram
 
 The conversion of model Coordinates to Client Coordinates is used to find out the accurate mouse positions on the Diagram when a Diagram document is panned, zoomed or having the ruler inside the Diagram.
 

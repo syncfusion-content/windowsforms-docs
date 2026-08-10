@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Layers in Windows Forms Diagram control | Syncfusion®
-description: Learn about Layers support in Syncfusion® Windows Forms Diagram control, its elements and more details.
+title: Layers in Windows Forms Diagram | Syncfusion®
+description: Organize diagram elements with layers in the Syncfusion® Windows Forms Diagram control and manage visibility, grouping, and object arrangement.
 platform: windowsforms
 control: Diagram
 documentation: ug
