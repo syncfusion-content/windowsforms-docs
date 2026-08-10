@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How To Highlight a Particular Node At Run time | Syncfusion®
-description: Learn how to dynamically highlight diagram nodes during mouse movements by adjusting their LineStyle and FillStyle with real-time user interaction.
+title: How to highlight a node at run time in WinForms Diagram | Syncfusion®
+description: Learn how to highlight a specific node at run time in the Syncfusion® Windows Forms Diagram control using mouse move events and styling.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# How To Highlight a Particular Node At Run-time
+# How to highlight a node at run time in Windows Forms Diagram
 
 A diagram node can be highlighted at run time using the mouse move actions. Using the Controller.GetNodeUnderMouseMove method, we can get the corresponding node under mouse move. By changing the node's LineStyle and FillStyle effects, we can highlight the respective nodes.
 

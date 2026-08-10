@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How To Prevent the Nodes From Being Rotated | Syncfusion®
-description: Learn how to stop nodes from being rotated in a diagram by triggering the Diagram.Model.EventSink.RotationChanging event and canceling the action.
+title: How to disable node rotation in Windows Forms Diagram | Syncfusion®
+description: Learn how to prevent nodes from being rotated in the Syncfusion® Windows Forms Diagram control using the RotationChanging event.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# How To Prevent the Nodes From Being Rotated
+# How to prevent nodes from being rotated in Windows Forms Diagram
 
 This can be done by raising the Diagram.Model.EventSink.RotationChanging event and canceling the operation.
 

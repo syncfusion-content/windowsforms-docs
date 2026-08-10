@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How To Create a Connection Programmatically | Syncfusion®
-description: Learn how to establish a database or network connection programmatically. This guide covers necessary steps and best practices in concise detail.
+title: How to create a connection in Windows Forms Diagram | Syncfusion®
+description: Learn how to create connections programmatically between symbols and ports in the Syncfusion® Windows Forms Diagram control.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# How To Create a Connection Programmatically
+# How to create a connection programmatically in Windows Forms Diagram
 
 Typically, symbols and links are connected together using the interactive LinkTool UI tool or the LinkCmd command class. Sometimes, it is useful to create connections programmatically. For example, you might be generating a diagram from the data in a database or possibly even writing your own custom link tool. You might even create a connection between two symbols directly without having a link in between.
 

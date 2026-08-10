@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Clipboard commands in Diagram | Syncfusion®
-description: This section explains how to use the clipboard commands (cut, copy, and paste) to the selected nodes in Essential® Diagram
+title: How to copy and paste nodes in Windows Forms Diagram | Syncfusion®
+description: Learn how to copy and paste nodes, symbols, shapes, and links in the Syncfusion® Windows Forms Diagram control using clipboard commands.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# How To Copy / Paste Nodes In Essential® Diagram
+# How to copy and paste nodes in Windows Forms Diagram
 
 The following code snippet illustrates how you can copy / paste nodes (symbol, shape, or link) in Essential® Diagram.
 

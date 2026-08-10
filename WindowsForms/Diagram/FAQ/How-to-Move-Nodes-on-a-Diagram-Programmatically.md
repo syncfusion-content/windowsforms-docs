@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to Move Nodes on a Diagram Programmatically | Syncfusion®
-description: Learn how to programmatically reposition nodes in a diagram using the MoveNodes method, streamlining your diagram editing and customization process.
+title: How to move nodes programmatically in WinForms Diagram | Syncfusion®
+description: Learn how to move nodes programmatically in the Syncfusion® Windows Forms Diagram control using the MoveNodes method.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# How to Move Nodes on a Diagram Programmatically?
+# How to move nodes programmatically in Windows Forms Diagram
 
 You can move the desired collection of nodes to a diagram using the MoveNodes method. The following code example illustrates this.
 

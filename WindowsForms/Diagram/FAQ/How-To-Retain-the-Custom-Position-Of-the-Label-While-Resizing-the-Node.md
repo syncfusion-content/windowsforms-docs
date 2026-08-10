@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How To Retain Position Of Label while resizing Node | Syncfusion®
-description: Learn to maintain a label's custom offset during node resizing by leveraging the SizeChanged event to update and preserve its position dynamically.
+title: How to retain a label position in WinForms Diagram | Syncfusion®
+description: Learn how to retain a label's custom position while resizing a node in the Syncfusion® Windows Forms Diagram control using the SizeChanged event.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# How To Retain the Custom Position Of the Label While Resizing the Node
+# How to retain label position while resizing node in WinForms Diagram
 
 We can retain the label's offset value using the SizeChanged event. While resizing a node, the SizeEvent gets fired. Using this event we can retain the label's position.
 

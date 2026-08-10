@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How To Retrieve the Port Information Of a Symbol | Syncfusion®
-description: Learn to use the HandlesHitTesting.GetConnectionPointAtPoint method to retrieve port details for a symbol by specifying the Node and Point parameters.
+title: How to retrieve port information in WinForms Diagram | Syncfusion®
+description: Learn how to retrieve port information from a symbol in the Syncfusion® Windows Forms Diagram control using the GetConnectionPointAtPoint method.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# How To Retrieve the Port Information Of a Particular Symbol
+# How to retrieve port information of a symbol in Windows Forms Diagram
 
 You can retrieve port information of a particular symbol using the HandlesHitTesting.GetConnectionPointAtPoint(Node, Point) method.
 

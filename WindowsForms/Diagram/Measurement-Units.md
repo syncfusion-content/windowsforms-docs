@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Measurement Units in Windows Forms Diagram control | Syncfusion®
-description: Learn about Measurement Units support in Syncfusion® Windows Forms Diagram control, its elements and more details.
+title: Measurement Units in Windows Forms Diagram | Syncfusion®
+description: Configure measurement units in the Syncfusion® Windows Forms Diagram control using built-in or custom units for accurate diagram sizing and positioning.
 platform: WindowsForms
 control: Diagram
 documentation: ug
