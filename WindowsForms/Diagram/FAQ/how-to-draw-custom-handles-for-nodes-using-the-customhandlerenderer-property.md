@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to draw custom handles for nodes in Windows Forms Diagram | Syncfusion®
+title: How to draw custom handles for nodes in WinForms Diagram | Syncfusion®
 description: Learn how to draw custom handles for nodes in the Syncfusion® Windows Forms Diagram control using the CustomHandleRenderer property.
 platform: windowsforms
 control: Diagram

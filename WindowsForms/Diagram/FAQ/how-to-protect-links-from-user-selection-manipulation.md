@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to protect links from user selection in Windows Forms Diagram | Syncfusion®
+title: How to protect links from selection in WinForms Diagram | Syncfusion®
 description: Learn how to protect links from user selection and manipulation in the Syncfusion® Windows Forms Diagram control using the EditStyle class.
 platform: windowsforms
 control: Diagram

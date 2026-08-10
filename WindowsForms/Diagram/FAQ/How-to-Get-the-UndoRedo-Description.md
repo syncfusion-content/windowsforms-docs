@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to get undo and redo descriptions in Windows Forms Diagram | Syncfusion®
+title: How to get undo/redo descriptions in WinForms Diagram | Syncfusion®
 description: Learn how to retrieve undo and redo descriptions from the Syncfusion® Windows Forms Diagram control using HistoryManager methods.
 platform: windowsforms
 control: Diagram
