@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-## Installation and Deployment in Windows Forms Diagram
+# Installation and Deployment in Windows Forms Diagram
 
 This section covers information on the install location, samples, licensing, patches update and updation of the recent version of Essential Studio®. It comprises the following sub-sections:
 

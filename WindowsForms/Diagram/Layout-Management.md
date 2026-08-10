@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Layout Management in Windows Forms Diagram | Syncfusion®
-description: Arrange diagram nodes automatically using table, tree, hierarchical, org chart, radial, and force-directed layouts in the Syncfusion® Windows Forms Diagram control.
+description: 	Arrange diagram nodes automatically using table, tree, hierarchical, org chart, and force-directed layouts in the Syncfusion® Windows Forms Diagram control.
 platform: windowsforms
 control: Diagram
 documentation: ug
