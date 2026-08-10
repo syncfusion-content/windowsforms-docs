@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Binding in Windows Forms ListView Control | Syncfusion
-description: This section explains about the DataBinding support in Syncfusion Windows Forms (SfListView) control, its elements, and more.
+title: Data Binding in Windows Forms SfListView | Syncfusion®
+description: Data binding in Windows Forms SfListView enables seamless connection to data sources, allowing efficient display, management, and updates of list data.
 platform: windowsforms
 control: SfListView
 documentation: ug
 ---
 
-# Data Binding in Windows Forms ListView Control
+# Data Binding in Windows Forms SfListView
 The data source can be bound by using the [SfListView.DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_DataSource) property. The following members controls data binding:
 
 * Display Member -  A property of the underlying datasource to display for SfListView. 
