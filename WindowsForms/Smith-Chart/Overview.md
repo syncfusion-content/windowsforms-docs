@@ -1,12 +1,12 @@
 ---
 layout: post
-title: About Windows Forms Smith Chart control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® Windows Forms Smith Chart (SfSmithChart) control, its elements and more details.
+title: About Syncfusion® Windows Forms Smith Chart Control | Syncfusion®
+description: Learn about the introduction of Syncfusion Essential Studio® Windows Forms Smith Chart control, its features, capabilities, and more details.
 platform: windowsforms
 control: SfSmithChart
 documentation: ug
 ---
-# Windows Forms Smith Chart (SfSmithChart) Overview
+# About Syncfusion® Windows Forms Smith Chart Control
 
 The Smith chart is one of the most useful data visualization tools for high-frequency circuit applications. It contains two sets of circles to plot the parameters of transmission lines.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Features in TreeMap control | Syncfusion®
-description: Learn here all about features of Syncfusion® Essential Studio® Windows Forms TreeMap control, its elements, and more.
+title: Features in Windows Forms TreeMap  | Syncfusion®
+description: TreeMap features in Windows Forms provide hierarchical data visualization, grouping, color mapping, customization, and interactive analysis capabilities.
 platform: windowsforms
 control: TreeMap
 documentation: ug
 ---
 
-# Features of Windows Forms TreeMap control
+# Features in Windows Forms TreeMap
 
 ## WeightValuePath
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Pivot Chart | Syncfusion
-description: Learn here about getting started with Syncfusion® Windows Forms Pivot Chart control, its elements and more details.
+title: Getting Started with Windows Forms Pivot Chart | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms Pivot Chart control. Explore setup, configuration, features, and customization options.
 platform: windowsforms
 control: PivotChart
 documentation: ug

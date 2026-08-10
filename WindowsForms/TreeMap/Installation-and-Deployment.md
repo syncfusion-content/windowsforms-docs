@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Installation-and-Deployment | Windows Forms | Syncfusion®
-description: Installation and deployment of Syncfusion® Essential Studio® WindowsForms TreeMap control, its elements, and more.
+title: Installation and Deployment in Windows Forms TreeMap | Syncfusion®
+description: Installation and deployment in the Windows Forms TreeMap cover setup requirements, assembly deployment, and application distribution.
 platform: windowsforms
 control: TreeMap
 documentation: ug
 ---
 
-# Installation and Deployment
+# Installation and Deployment in Windows Forms TreeMap
 
 This section covers information on the install location, samples, licensing, patches update and updation of the recent version of Essential Studio<sup>®</sup>. It comprises the following sub-sections:
 

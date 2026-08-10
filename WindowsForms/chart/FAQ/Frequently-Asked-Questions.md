@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Frequently-Asked-Questions | Windows Forms | Syncfusion
-description: frequently asked questions
+title: Getting Started with Windows Forms Chart | Syncfusion®
+description: Learn how to get started with the Windows Forms Chart control. Explore setup, configuration, chart types, and customization options.
 platform: windowsforms
 control: Control Name undefined
 documentation: ug

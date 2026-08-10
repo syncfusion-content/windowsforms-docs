@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Map-Shape-Customization in Windows-Forms Map Control | Syncfusion®
-description: Learn here all about map shape customization feature of Syncfusion® Windows Forms Map (Maps) control and more.
+title: Map Shape Customization in Windows Forms Maps | Syncfusion®
+description: Map shape customization in the Windows Forms Maps enables customization of shape appearance, colors, borders, and visual styles.
 platform: windowsforms
 control: Maps
 documentation: ug
 ---
 
-# Shape Customization in Windows Forms Map (Maps)
+# Map Shape Customization in Windows Forms Maps
 
 Shapes in the map control can be customized using the ShapeSetting properties such as ShapeFill, ShapeStroke, and ShapeStrokeThickness.
 

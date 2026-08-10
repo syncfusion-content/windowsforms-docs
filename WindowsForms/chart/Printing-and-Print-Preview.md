@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Printing in Windows Forms Chart control | Syncfusion
-description: Learn about Printing support in Syncfusion Essential Studio® Windows Forms Chart control and more details.
+title: Printing in Windows Forms Chart | Syncfusion®
+description: Printing in the Windows Forms Chart enables chart content to be printed with configurable settings for reporting and presentation purposes.
 platform: windowsforms
 control: Chart
 documentation: ug

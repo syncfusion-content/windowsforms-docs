@@ -1,12 +1,12 @@
 ---
 layout: post
-title: User Interactions in Windows Forms Smith Chart control | Syncfusion®
-description: Learn about User Interactions support in Syncfusion® Windows Forms Smith Chart (SfSmithChart) control and more details.
+title: User Interactions in Windows Forms Smith Chart | Syncfusion®
+description: User interactions in the Windows Forms Smith Chart enable selection, tooltips, and interactive exploration of chart data and elements.
 platform: windowsforms
 control: SfSmithChart
 documentation: ug
 ---
-# User Interactions in Windows Forms Smith Chart (SfSmithChart)
+# User Interactions in Windows Forms Smith Chart
 
 ## Tooltip
 

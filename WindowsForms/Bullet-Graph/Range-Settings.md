@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Range Settings in Windows Forms Bullet Graph control | Syncfusion®
-description: Learn about Range Settings support in Syncfusion® Windows Forms Bullet Graph control and more details.
+title: Range Settings in Windows Forms Bullet Graph | Syncfusion®
+description: Range settings in the Windows Forms Bullet Graph enable configuration of qualitative ranges to visualize performance levels and target thresholds.
 platform: windowsforms
 control: Bullet Graph
 documentation: ug

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Rendering Mode in Windows Forms Smith Chart control | Syncfusion®
-description: Learn about Rendering Mode support in Syncfusion® Windows Forms Smith Chart (SfSmithChart) control and more details.
+title: Rendering Mode in Windows Forms Smith Chart | Syncfusion®
+description: Rendering mode in the Windows Forms Smith Chart controls how chart elements are rendered, supporting optimized visualization and performance.
 platform: windowsforms
 control: SfSmithChart
 documentation: ug
 ---
-# Rendering Mode in Windows Forms Smith Chart (SfSmithChart)
+# Rendering Mode in Windows Forms Smith Chart
 
 The Smith chart provides options for plotting both impedance and admittance by using the [`RenderingMode`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.SmithChart.SfSmithChart.html#Syncfusion_WinForms_SmithChart_SfSmithChart_RenderingMode) property.
 
