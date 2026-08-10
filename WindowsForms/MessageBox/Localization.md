@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization in Windows Forms MessageBox control | Syncfusion
-description: Learn here all about the localization feature of Syncfusion Windows Forms MessageBox (MessageBoxAdv) control and more.
+title: Localization in Windows Forms MessageBoxAdv | Syncfusion®
+description: Localization in Windows Forms MessageBoxAdv enables displaying dialog content, button text, and messages in different languages and regional settings.
 platform: WindowsForms
 control: MessageBoxAdv
 documentation: ug
 ---
 
-# Localization in Windows Forms MessageBox (MessageBoxAdv)
+# Localization in Windows Forms MessageBoxAdv
 
 Localization is the process of translating the application resources into different language for the specific cultures. MessageBoxAdv control can be localized in any Languages, based on application requirement by following below steps.
 
