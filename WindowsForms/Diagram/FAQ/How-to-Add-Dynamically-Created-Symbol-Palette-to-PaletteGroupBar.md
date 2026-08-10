@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to add a symbol palette to PaletteGroupBar in Windows Forms Diagram | Syncfusion®
+title: How to add palette to GroupBar in Windows Forms Diagram | Syncfusion®
 description: Learn how to dynamically create and add a symbol palette to the Syncfusion® Windows Forms Diagram PaletteGroupBar control.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# How to add a symbol palette to PaletteGroupBar in Windows Forms Diagram
+# How to add a symbol palette to PaletteGroupBar in WinForms Diagram
 
 The following code sample demonstrates how to add a dynamically created symbol palette to the PaletteGroupBar control.
 

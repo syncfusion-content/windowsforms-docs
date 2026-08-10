@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to display tooltips for symbols in Windows Forms Diagram | Syncfusion®
+title: How to display tooltips for symbols in WinForms Diagram | Syncfusion®
 description: Learn how to display tooltips for symbols in the Syncfusion® Windows Forms Diagram control using MouseEnter and MouseLeave events.
 platform: windowsforms
 control: Diagram

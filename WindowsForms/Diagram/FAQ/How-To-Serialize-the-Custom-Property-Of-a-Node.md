@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to serialize a custom property of a node in Windows Forms Diagram | Syncfusion®
+title: How to serialize a custom property in WinForms Diagram | Syncfusion®
 description: Learn how to serialize custom properties of a node in the Syncfusion® Windows Forms Diagram control by creating a custom node class.
 platform: windowsforms
 control: Diagram

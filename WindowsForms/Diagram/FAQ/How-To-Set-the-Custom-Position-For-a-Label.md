@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to set a custom position for a label in Windows Forms Diagram | Syncfusion®
+title: How to set position for label in Windows Forms Diagram | Syncfusion®
 description: Learn how to set a custom position for a label in the Syncfusion® Windows Forms Diagram control using custom coordinates and offset values.
 platform: windowsforms
 control: Diagram

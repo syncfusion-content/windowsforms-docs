@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to highlight a node at run time in Windows Forms Diagram | Syncfusion®
+title: How to highlight a node at run time in WinForms Diagram | Syncfusion®
 description: Learn how to highlight a specific node at run time in the Syncfusion® Windows Forms Diagram control using mouse move events and styling.
 platform: windowsforms
 control: Diagram

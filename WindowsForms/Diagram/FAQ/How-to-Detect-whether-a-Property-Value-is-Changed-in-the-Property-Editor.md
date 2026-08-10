@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to detect property value changes in Windows Forms Diagram | Syncfusion®
+title: How to detect value changes in Windows Forms Diagram | Syncfusion®
 description: Learn how to detect property value changes in the Syncfusion® Windows Forms Diagram Property Editor using the PropertyValueChanged event.
 control: Diagram
 documentation: ug

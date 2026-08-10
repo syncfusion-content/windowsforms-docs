@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to prevent nodes from being rotated in Windows Forms Diagram | Syncfusion®
+title: How to disable node rotation in Windows Forms Diagram | Syncfusion®
 description: Learn how to prevent nodes from being rotated in the Syncfusion® Windows Forms Diagram control using the RotationChanging event.
 platform: windowsforms
 control: Diagram

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to print a diagram on a single page in Windows Forms Diagram | Syncfusion®
+title: How to do single page printing in Windows Forms Diagram | Syncfusion®
 description: Learn how to print a diagram on a single page in the Syncfusion® Windows Forms Diagram control by adjusting model size and page settings.
 platform: windowsforms
 control: Diagram

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to programmatically link two symbols in Windows Forms Diagram | Syncfusion®
+title: How to link two symbols in Windows Forms Diagram | Syncfusion®
 description: Learn how to programmatically link two symbols in the Syncfusion® Windows Forms Diagram control using the LinkCmd command class.
 platform: windowsforms
 control: Diagram

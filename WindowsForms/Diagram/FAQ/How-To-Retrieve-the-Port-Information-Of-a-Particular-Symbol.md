@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to retrieve port information of a symbol in Windows Forms Diagram | Syncfusion®
+title: How to retrieve port information in WinForms Diagram | Syncfusion®
 description: Learn how to retrieve port information from a symbol in the Syncfusion® Windows Forms Diagram control using the GetConnectionPointAtPoint method.
 platform: windowsforms
 control: Diagram

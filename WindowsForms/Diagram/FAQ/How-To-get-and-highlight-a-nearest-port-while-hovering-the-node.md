@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to find and highlight the nearest port in Windows Forms Diagram | Syncfusion®
+title: How to highlight the nearest port in WinForms Diagram | Syncfusion®
 description: Learn how to find and highlight the nearest connection point while hovering over nodes in the Syncfusion® Windows Forms Diagram control.
 platform: WindowsForms
 control: Diagram
