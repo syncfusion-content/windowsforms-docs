@@ -375,3 +375,4 @@ circle.TreatAsObstacle = True
 {% endtabs %}
 
 In the above code snippets, the [TreatAsObstacle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Node.html#Syncfusion_Windows_Forms_Diagram_Node_TreatAsObstacle) property is set to the circle object.
+
