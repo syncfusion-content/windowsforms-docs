@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Interactive-Features | WindowsForms | Syncfusion®
-description: Learn here all about Interactive Features support in Syncfusion® Windows Forms CommandBar (CommandBars) control and more.
+title: Interactive Features in Windows Forms CommandBars | Syncfusion®
+description: Interactive features support floating, docking, wrapping, drop-down actions, and command bar state management events.
 platform: windowsforms
 control: CommandBars
 documentation: ug

@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Serialization | WindowsForms | Syncfusion®
-description: Learn here all about Serialization support in Syncfusion® Windows Forms CommandBar (CommandBars) control and more. 
+title: Serialization in Windows Forms CommandBar | Syncfusion®
+description: Serialization support enables saving and restoring command bar layouts using XML, binary files, registry, and isolated storage.
 platform: windowsforms
 control: CommandBars
 documentation: ug
