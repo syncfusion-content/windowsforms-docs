@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Style in Windows Forms Syntax Editor control | Syncfusion
-description: Learn about Style support in Syncfusion Windows Forms Syntax Editor control, its elements and more details.
+title: Style in Windows Forms SyntaxEditor | Syncfusion®
+description: Style support in Windows Forms SyntaxEditor enables applying built-in themes and visual styles to customize the editor's appearance and user experience.
 platform: WindowsForms
 control: SyntaxEditor
 documentation: ug
 ---
 
-# Style in Windows Forms Syntax Editor
+# Style in Windows Forms SyntaxEditor
 
 The EditControl control has rich set of themes for professional representation. You can easily modify the look and feel of the EditControl using the built-in themes.
 

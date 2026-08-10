@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Text Visualization in Windows Forms Syntax Editor | Syncfusion
-description: Learn about Text Visualization support in Syncfusion Windows Forms Syntax Editor control and more details.
+title: Text Visualization in Windows Forms SyntaxEditor | Syncfusion®
+description: Text visualization in Windows Forms SyntaxEditor enhances code readability through syntax highlighting, line formatting, and visual text presentation features.
 platform: WindowsForms
 control: SyntaxEditor
 documentation: ug
 ---
 
-# Text Visualization in Windows Forms Syntax Editor
+# Text Visualization in Windows Forms SyntaxEditor
 
 Various text visualization features of EditControl is elaborated under the following topics.
 
