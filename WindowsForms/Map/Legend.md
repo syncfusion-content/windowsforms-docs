@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Map Legend in Windows Forms Maps | Syncfusion®
-description: Map legend in the Windows Forms Maps explains symbols, colors, and data categories, helping users interpret geographic information.
+title: Legend in Windows Forms Maps | Syncfusion®
+description: legend in the Windows Forms Maps explains symbols, colors, and data categories, helping users interpret geographic information.
 platform: windowsforms
 control: Maps
 documentation: ug
 ---
 
-# Map Legend in Windows Forms Maps
+# Legend in Windows Forms Maps
 
 A legend is a key used on a map that contains swatches of symbols with descriptions. A legend interprets what the map displays; it can be represented in various colors, shapes, or other identifiers based on data. 
 
