@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to get the nearest grid point in Windows Forms Diagram | Syncfusion®
+title: How to get the nearest grid point in WinForms Diagram | Syncfusion®
 description: Learn how to get the nearest grid point on a diagram in the Syncfusion® Windows Forms Diagram control using the GetNearestGridPoint method.
 platform: windowsforms
 control: Diagram

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to get a connector vertex point in Windows Forms Diagram | Syncfusion®
+title: How to get a connector vertex point in WinForms Diagram | Syncfusion®
 description: Learn how to retrieve connector vertex points in the Syncfusion® Windows Forms Diagram control using the Connector GetPoint method.
 platform: windowsforms
 control: Diagram

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to get a node at a point or mouse location in Windows Forms Diagram | Syncfusion®
+title: How to get node at an exact location in WinForms Diagram | Syncfusion®
 description: Learn how to get a node at a specific point or under the mouse location in the Syncfusion® Windows Forms Diagram control.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# How to get a node at a point or mouse location in Windows Forms Diagram
+# How to get node at a point or mouse location in Windows Forms Diagram
 
 ## GetNodeAtPoint 
 
