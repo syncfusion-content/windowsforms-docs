@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Windows Forms AutoComplete control | Syncfusion
-description: Learn about introduction of Syncfusion Essential Studio Windows Forms AutoComplete control and more details.
+title: About Syncfusion® Windows Forms AutoComplete Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms AutoComplete control and more details.
 platform: windowsforms
 control: AutoComplete
 documentation: ug

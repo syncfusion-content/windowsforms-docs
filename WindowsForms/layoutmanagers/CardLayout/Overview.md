@@ -7,7 +7,7 @@ control: CardLayout
 documentation: ug
 ---
 
-# Windows Forms LayoutManagers Overview
+# Windows Forms CardLayout Overview
 
 The `CardLayout` is a layout manager applied to a container. The components are added to a layout in a particular form and not in different forms. It treats each component in the container as a card. Only one card is visible at a time, and the container acts as a stack of cards. The first component added to a CardLayout object is the visible component when the container is displayed first.
 

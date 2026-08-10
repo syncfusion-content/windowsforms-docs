@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Windows Forms ScrollersFrame control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® Windows Forms ScrollersFrame control, its elements and more details.
+title: About Syncfusion® Windows Forms ScrollersFrame Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms ScrollersFrame control and more details.
 platform: windowsforms
 control: ScrollersFrame
 documentation: ug

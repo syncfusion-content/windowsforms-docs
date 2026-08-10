@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WinForms Metro Form control | Syncfusion®
-description: Learn here about getting started with Syncfusion® Windows Forms Metro Form control and more details about it.
+title: Getting Started with Windows Forms MetroForm | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms MetroForm control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
 control: MetroForm
 documentation: ug
 ---
 
-# Getting Started with Windows Forms Metro Form
+# Getting Started with Windows Forms MetroForm
 
 This section describes how to configure `MetroForm` control in a Windows Forms application and overview of its basic functionalities.
 

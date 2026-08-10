@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Form control | Syncfusion®
-description: Learn here about getting started with Syncfusion® Windows Forms Form (SfForm) control, its elements, and more details.
+title: Getting Started with Windows Forms Form | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms Form (SfForm) control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
 control: SfForm
 documentation: ug

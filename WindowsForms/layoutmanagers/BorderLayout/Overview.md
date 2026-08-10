@@ -7,7 +7,7 @@ control: BorderLayout
 documentation: ug
 ---
 
-# Windows Forms LayoutManagers Overview
+# Windows Forms BorderLayout Overview
 
 `BorderLayout` is a layout manager. It allows users arrange and layout the child controls along the borders to the center like .NET framework’s built-in docking support.
 

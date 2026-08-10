@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Windows Forms xptaskpane control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® Windows Forms xptaskpane (XPTaskPane) control, its elements and more details.
+title: About Syncfusion® Windows Forms XPTaskPane Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms XPTaskPane control and more details.
 platform: windowsforms
 control: XPTaskPane 
 documentation: ug

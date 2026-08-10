@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Windows Forms GroupView control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms GroupView control, its elements and more details.
+title: About Syncfusion® Windows Forms GroupView Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms GroupView control and more details.
 platform: WindowsForms
 control: GroupView
 documentation: ug

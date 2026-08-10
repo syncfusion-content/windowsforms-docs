@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WinForms Button control | Syncfusion®
-description: Learn here about getting started with Syncfusion® Windows Forms Button (SfButton) control and more details.
+title: Getting Started with Windows Forms Button | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms Button control. Explore setup, features, examples, and customization options.
 platform: windowsforms
 control: SfButton
 documentation: ug
