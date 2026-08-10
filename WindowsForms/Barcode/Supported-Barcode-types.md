@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Supported Barcode Types in Windows Forms Barcode control | Syncfusion
-description: Learn about Supported Barcode Types support in Syncfusion Windows Forms Barcode control and more details.
+title: Supported Barcode Types in Windows Forms Barcode | Syncfusion®
+description: Supported barcode types in the Windows Forms Barcode enable generation of one-dimensional and two-dimensional barcodes for diverse applications.
 platform: wpf
 control: SfBarcode
 documentation: ug

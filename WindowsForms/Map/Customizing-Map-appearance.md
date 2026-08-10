@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customizing-Map-appearance in Windows-Forms Map Control | Syncfusion®
-description: Learn here all about customizing map appearance feature of Syncfusion® Windows Forms Map (Maps) control and more.
+title: Color Mapping in Windows Forms Maps | Syncfusion®
+description: Color mapping in the Windows Forms Maps visualizes data using color variations and supports customized representation of geographic information.
 platform: windowsforms
 control: Maps
 documentation: ug
 ---
 
-# Color Mapping in Windows Forms Map (Maps)
+# Color Mapping in Windows Forms Maps
 
 The color mapping support allows you customize the shape colors based on the underlying value of shapes received from the bound data.
 

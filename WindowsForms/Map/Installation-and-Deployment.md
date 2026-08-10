@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Installation-and-Deployment in Windows-Forms Map Control | Syncfusion®
-description: Learn here all about installation and deployment feature of Syncfusion® Windows Forms Map (Maps) control and more.
+title: Installation and Deployment in Windows Forms Maps | Syncfusion®
+description: Installation and deployment in the Windows Forms Maps cover setup requirements, assembly deployment, and application distribution.
 platform: windowsforms
 control: Maps
 documentation: ug
 ---
 
-# Installation and Deployment in Windows Forms Map (Maps)
+# Installation and Deployment in Windows Forms Maps
 
 This section covers information on the install location, samples, licensing, patches update, and updation of the recent version of Essential Studio<sup>®</sup>. It comprises the following subsections:
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Installation-and-Deployment | Windows Forms | Syncfusion
-description: Learn here all about the installation and deployment of Syncfusion Windows Forms Chart control and more.
+title: Installation and Deployment in Windows Forms Chart | Syncfusion®
+description: Learn about installation and deployment support in the Windows Forms Chart, including setup requirements and deployment details.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Installation and Deployment
+# Installation and Deployment in Windows Forms Chart
 
 This section covers information on the install location, samples, licensing, patches update and updation of the recent version of Essential Studio. It comprises the following sub-sections:
 

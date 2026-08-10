@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sparkline Types in Windows Forms Sparkline control | Syncfusion
-description: Learn about Sparkline Types support in Syncfusion® Windows Forms Sparkline control, its elements and more details.
+title: Sparkline Types in Windows Forms Sparkline | Syncfusion®
+description: Sparkline types in the Windows Forms Sparkline provide multiple chart styles for visualizing trends, variations, and comparisons in data.
 platform: windowsforms
 control: Sparkline
 documentation: ug

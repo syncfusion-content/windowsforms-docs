@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tree Map Levels in Windows Forms TreeMap control | Syncfusion®
-description: Learn about Tree Map Levels support in Syncfusion® Windows Forms TreeMap control, its elements and more details.
+title: Tree Map Levels in Windows Forms TreeMap | Syncfusion®
+description: Tree Map levels in the Windows Forms TreeMap organize hierarchical data into multiple levels, enabling structured visualization and data analysis.
 platform: windowsforms
 control: TreeMap 
 documentation: ug
