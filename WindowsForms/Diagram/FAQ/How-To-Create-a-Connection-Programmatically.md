@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to create a connection programmatically in Windows Forms Diagram | Syncfusion®
+title: How to create a connection in Windows Forms Diagram | Syncfusion®
 description: Learn how to create connections programmatically between symbols and ports in the Syncfusion® Windows Forms Diagram control.
 platform: windowsforms
 control: Diagram

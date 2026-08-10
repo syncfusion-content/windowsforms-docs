@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to customize selection handles in Windows Forms Diagram | Syncfusion®
+title: How to customize selection handles in WinForms Diagram | Syncfusion®
 description: Learn how to customize the appearance of selection handles, resize handles, and outline borders in the Syncfusion® Windows Forms Diagram control.
 platform: windowsforms
 control: Diagram

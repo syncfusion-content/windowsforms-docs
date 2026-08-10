@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to combine actions into an atomic action in Windows Forms Diagram | Syncfusion®
+title: How to combine actions in Windows Forms Diagram | Syncfusion®
 description: Learn how to combine multiple actions into a single atomic action in the Syncfusion® Windows Forms Diagram control to manage undo operations.
 platform: windowsforms
 control: Diagram

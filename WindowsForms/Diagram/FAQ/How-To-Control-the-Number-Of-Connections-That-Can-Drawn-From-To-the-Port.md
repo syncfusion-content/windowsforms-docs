@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to control the number of connections to a port in Windows Forms Diagram | Syncfusion®
 description: Learn how to control the number of connections that can be drawn from or to a port in the Syncfusion® Windows Forms Diagram control.
+title: How to control connection count in Windows Forms Diagram | Syncfusion®
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# How to control the number of connections to a port in Windows Forms Diagram
+# How to control connections count of a port in Windows Forms Diagram
 
 This can be done using the port's ConnectionsLimit property. ConnectionsLimit specifies the number of connections to be allowed. Default value is _10_. 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to detect link additions and removals in Windows Forms Diagram | Syncfusion®
+title: How to detect changes in links in WinForms Diagram | Syncfusion®
 description: Learn how to detect when links are added or removed in the Syncfusion Windows Forms Diagram control using connection change events.
 platform: windowsforms
 control: Diagram
