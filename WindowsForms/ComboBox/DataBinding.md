@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Binding in Windows Forms ComboBox control | Syncfusion
-description: Learn about Data Binding support in Syncfusion Windows Forms ComboBox (SfComboBox) control and more details.
+title: Data Binding in Windows Forms SfComboBox | Syncfusion®
+description: Data binding in Windows Forms SfComboBox enables connecting to various data sources using display and value members for efficient data presentation.
 platform: windowsforms
 control: SfComboBox
 documentation: ug
 ---
 
-# Data Binding in Windows Forms ComboBox (SfComboBox)
+# Data Binding in Windows Forms SfComboBox
 
 The data source can be bound by using the [DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_DataSource) property. The following properties controls the data binding:
 
