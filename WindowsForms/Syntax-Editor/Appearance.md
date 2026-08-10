@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in Windows Forms SyntaxEditor | Syncfusion®
-description: Appearance support in Windows Forms SyntaxEditor enables customizing colors, text styles, split views, scrollbars, and other visual elements.
+description: Appearance in Windows Forms SyntaxEditor enables customizing colors, text styles, split views, scrollbars, and other visual elements.
 platform: WindowsForms
 control: SyntaxEditor
 documentation: ug
