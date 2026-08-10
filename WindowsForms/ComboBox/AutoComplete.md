@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Auto Complete in Windows Forms ComboBox control | Syncfusion
-description: Learn about Auto Complete support in Syncfusion Windows Forms ComboBox (SfComboBox) control and more details.
+title: Auto Complete in Windows Forms SfComboBox | Syncfusion®
+description: Auto complete in Windows Forms SfComboBox provides suggestion, append, and filtering modes with configurable matching for faster item selection.
 platform: windowsforms
 control: SfComboBox
 documentation: ug
 ---
 
-# Auto Complete in Windows Forms ComboBox (SfComboBox)
+# Auto Complete in Windows Forms SfComboBox
 
 Auto complete can be enabled by using the [SfComboBox.AutoCompleteMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_AutoCompleteMode) property. Three different ways to display the suggestions are:
 

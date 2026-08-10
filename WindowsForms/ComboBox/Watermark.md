@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Watermark in Windows Forms ComboBox control | Syncfusion
-description: Learn about Watermark support in Syncfusion Windows Forms ComboBox (SfComboBox) control and more details.
+title: Watermark in Windows Forms SfComboBox | Syncfusion®
+description: Watermark support in Windows Forms SfComboBox displays placeholder text when no value is selected and allows customization of its appearance.
+
 platform: windowsforms
 control: SfComboBox
 documentation: ug
 ---
 
-# Watermark in Windows Forms ComboBox (SfComboBox)
+# Watermark in Windows Forms SfComboBox
  
 ## Null value
 
