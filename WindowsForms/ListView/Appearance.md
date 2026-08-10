@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in Windows Forms SfListView | Syncfusion®
-description: Appearance in Windows Forms SfListView enables customizing specific items, groups, and visual elements with various styling options to enhance the user experience.
+description: Appearance in Windows Forms SfListView enables customizing specific items, groups, and visual elements with various styling options.
 control: SfListView
 documentation: ug
 ---
