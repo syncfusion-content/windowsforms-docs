@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to detect link additions and removals in Windows Forms Diagram
+# How to Detect Link Additions and Removals in Windows Forms Diagram
 
 You can use the Diagram.Model.EventSink's ConnectionChanging/ConnectionChanged events to detect whether the connection changes has been occurred between the nodes in diagram.
 

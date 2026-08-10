@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to smooth out shape edges in Windows Forms Diagram
+# How to Smooth out Shape Edges in Windows Forms Diagram
 
 You can use the Diagram.Model.RenderingStyle.SmoothingMode property to smooth-out the edges, lines and curves of the shapes in a diagram.
 

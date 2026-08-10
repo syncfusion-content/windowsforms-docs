@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to move nodes programmatically in Windows Forms Diagram
+# How to Move Nodes Programmatically in Windows Forms Diagram
 
 You can move the desired collection of nodes to a diagram using the MoveNodes method. The following code example illustrates this.
 

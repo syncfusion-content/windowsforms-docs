@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to fill shapes drawn by the Pencil Tool in Windows Forms Diagram
+# How to Fill Shapes drawn by the Pencil Tool in Windows Forms Diagram
 
 By default, when you draw the shape using the pencil tool, it will be created as `PolyLineNode` and you cannot define the fill style for polyline node. To draw a shape with filled background appearance using the pencil tool, create a custom tool by creating a new class with inheriting 'PencilTool' class and override the `CreateNode` method to draw the shape with filled background appearance.
 

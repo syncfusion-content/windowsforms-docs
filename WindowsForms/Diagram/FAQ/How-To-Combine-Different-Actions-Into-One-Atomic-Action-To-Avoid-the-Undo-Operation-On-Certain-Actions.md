@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to combine actions into an atomic action in Windows Forms Diagram
+# How to Combine Actions into an Atomic Action in Windows Forms Diagram
 
 This is done by calling the Model.HistoryManger.StartAtomicAction(string description) / EndAtomicAction() methods. 
 

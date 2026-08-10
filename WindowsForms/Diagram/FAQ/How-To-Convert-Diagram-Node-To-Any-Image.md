@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to convert a diagram node to an image in Windows Forms Diagram
+# How to Convert a Diagram Node to an Image in Windows Forms Diagram
 
 To export a single node as an image, use the below code snippet.
 

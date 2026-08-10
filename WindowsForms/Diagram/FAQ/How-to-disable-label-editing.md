@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to disable label editing in Windows Forms Diagram
+# How to Disable Label Editing in Windows Forms Diagram
 
 How to disable label editing for node
 

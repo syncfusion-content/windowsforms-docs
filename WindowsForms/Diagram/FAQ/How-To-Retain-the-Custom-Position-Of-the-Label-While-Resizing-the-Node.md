@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to retain label position while resizing node in WinForms Diagram
+# How to Retain Label Position while Resizing Node in WinForms Diagram
 
 We can retain the label's offset value using the SizeChanged event. While resizing a node, the SizeEvent gets fired. Using this event we can retain the label's position.
 

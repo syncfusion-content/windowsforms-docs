@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to create a connection programmatically in Windows Forms Diagram
+# How to Create a Connection Programmatically in Windows Forms Diagram
 
 Typically, symbols and links are connected together using the interactive LinkTool UI tool or the LinkCmd command class. Sometimes, it is useful to create connections programmatically. For example, you might be generating a diagram from the data in a database or possibly even writing your own custom link tool. You might even create a connection between two symbols directly without having a link in between.
 

@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to get node at a point or mouse location in Windows Forms Diagram
+# How to Get Node at a Point or Mouse Location in Windows Forms Diagram
 
 ## GetNodeAtPoint 
 

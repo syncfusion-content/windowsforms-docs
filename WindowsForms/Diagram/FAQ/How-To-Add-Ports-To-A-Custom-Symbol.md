@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to add ports to a custom symbol in Windows Forms Diagram
+# How to Add Ports to a Custom Symbol in Windows Forms Diagram
 
 The following code snippet illustrates how ports can be added to a custom symbol.
 

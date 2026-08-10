@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to add a custom property to Diagram in Windows Forms Diagram
+# How to Add a Custom Property to Diagram in Windows Forms Diagram
 
 The below given code snippet illustrates how you can add a custom property to Diagram and display it in the Property Editor.
 

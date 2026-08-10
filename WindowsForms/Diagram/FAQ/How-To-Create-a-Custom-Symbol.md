@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to create a custom symbol in Windows Forms Diagram
+# How to Create a Custom Symbol in Windows Forms Diagram
 
 The following code sample demonstrates how you can create a custom symbol and use it in Essential® Diagram.
 
