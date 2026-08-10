@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Item Height in Windows Forms ComboBox control | Syncfusion
-description: Learn about Item Height support in Syncfusion Windows Forms ComboBox (SfComboBox) control and more details.
+title: Item Height in Windows Forms SfComboBox | Syncfusion®
+description: Item height support in Windows Forms SfComboBox enables customizing item heights, auto-fitting items based on content, and applying conditional sizing.
 platform: windowsforms
 control: SfComboBox
 documentation: ug
 ---
 
-# Item Height in Windows Forms ComboBox (SfComboBox)
+# Item Height in Windows Forms SfComboBox
 
 ## Setting height for the items
 
