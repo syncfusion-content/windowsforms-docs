@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to change the selection mode of the SelectTool in Windows Forms Diagram | Syncfusion®
+title: How to change the selection mode in WinForms Diagram | Syncfusion®
 description: Learn how to change the SelectTool selection mode in the Syncfusion® Windows Forms Diagram control using Containing and Intersecting modes.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# How to change the selection mode of the SelectTool in Windows Forms Diagram
+# How to change the selection mode of the SelectTool in WinForms Diagram
 
 The Diagram SelectTool provides an enum property called _SelectMode_, to change the selection mode. The following are the supported selection modes: 
 

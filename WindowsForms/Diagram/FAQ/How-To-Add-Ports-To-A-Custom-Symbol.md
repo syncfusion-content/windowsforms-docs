@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to add ports to a custom symbol in Windows Forms Diagram | Syncfusion®
+title: How to add ports to a symbol in Windows Forms Diagram | Syncfusion®
 description: Learn how to add ports to a custom symbol in the Syncfusion® Windows Forms Diagram control to improve connectivity and interaction.
 platform: windowsforms
 control: Diagram
