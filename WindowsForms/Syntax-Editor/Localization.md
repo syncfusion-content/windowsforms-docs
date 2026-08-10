@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization in Windows Forms Syntax Editor control | Syncfusion
-description: Learn about Localization support in Syncfusion Windows Forms Syntax Editor control and more details.
+title: Localization in Windows Forms SyntaxEditor | Syncfusion®
+description: Localization in Windows Forms SyntaxEditor enables translating dialog boxes, strings, and editor resources into different languages and cultures.
 platform: windowsforms
 control: SyntaxEditor
 documentation: ug
 ---
 
-# Localization in Windows Forms Syntax Editor
+# Localization in Windows Forms SyntaxEditor
 
 Localization is the process of translating the application resources into different languages for some specific cultures. The `EditControl` supports complete localization to any desired language of all the dialogs boxes and strings associated with it. It can be localized by using the [ILocalizationProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ILocalizationProvider.html).
 

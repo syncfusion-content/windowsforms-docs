@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Item Sizing in WinForms ListView Control | Syncfusion
-description: Learn here about Item Sizing in Syncfusion Essential WinForms ListView (SfListView) Control, its elements, and more.
+title: Item Sizing in Windows Forms SfListView | Syncfusion®
+description: Item sizing in Windows Forms SfListView enables customizing the size of list items to improve content presentation, readability, and layout flexibility.
 platform: windowsforms
 control: SfListView
 documentation: ug
 ---
 
-# Item Sizing in WinForms ListView (SfListView)
+# Item Sizing in Windows Forms SfListView
 This section explains how to customize the item size in the SfListView.
 
 ## Customizing item and group height
