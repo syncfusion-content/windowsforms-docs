@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Supported Controls  in Windows Forms Diagram control | Syncfusion®
-description: Learn about Supported Controls  support in Syncfusion® Windows Forms Diagram control and more details.
+title: Supported Controls in Windows Forms Diagram | Syncfusion®
+description: Explore supported controls in the Syncfusion® Windows Forms Diagram control, including Overview, Property Editor, Document Explorer, and Symbol Palette.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# Supported Controls  in Windows Forms Diagram
+# Supported Controls in Windows Forms Diagram
 
 The controls supported by Essential® Diagram are as follows.
 
