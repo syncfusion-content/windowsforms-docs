@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: Load On Demand in Windows Forms MultiColumn TreeView | Syncfusion®
-description: Learn about Load On Demand support in Syncfusion® Windows Forms MultiColumn TreeView control and more details.
+description: Load On Demand delays child node creation until expansion, improving performance and supporting dynamic loading.
 platform: WindowsForms
 control: MultiColumnTreeView
 documentation: ug
