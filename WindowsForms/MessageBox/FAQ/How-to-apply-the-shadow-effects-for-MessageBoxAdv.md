@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Apply Shadow Effects in Windows Forms MessageBoxAdv | Syncfusion®
+title: How to add shadow effects in MessageBoxAdv | Syncfusion®
 description: Shadow effects in Windows Forms MessageBoxAdv enhance dialog appearance by adding visual depth, creating a modern and engaging user experience.
 platform: WindowsForms
 control: Frequently Asked Questions
@@ -35,11 +35,11 @@ N> The default value of the DropShadow property is false. So, it is needed to en
 
 
 
-![](How-to-apply-the-shadow-effects-for-MessageBoxAdv_images/How-to-apply-the-shadow-effects-for-MessageBoxAdv_img2.png)
+![MessageBoxAdv without shadow effect](How-to-apply-the-shadow-effects-for-MessageBoxAdv_images/How-to-apply-the-shadow-effects-for-MessageBoxAdv_img2.png)
 
 
 
-![](How-to-apply-the-shadow-effects-for-MessageBoxAdv_images/How-to-apply-the-shadow-effects-for-MessageBoxAdv_img3.png)
+![MessageBoxAdv with shadow effect enabled](How-to-apply-the-shadow-effects-for-MessageBoxAdv_images/How-to-apply-the-shadow-effects-for-MessageBoxAdv_img3.png)
 
 
 
