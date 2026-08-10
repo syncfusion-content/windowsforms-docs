@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Unbound Row in Windows Forms DataGrid control | Syncfusion®
-description: This section explains about the unbound row feature and it's customization in datagrid control for windows forms
+title: Unbound Rows in Windows Forms SfDataGrid | Syncfusion®
+description: Learn about unbound rows in Syncfusion® Windows Forms SfDataGrid, including adding custom rows, displaying calculated data, and row customization.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
 ---
 
-# Unbound Rows in Windows Forms DataGrid (SfDataGrid)
+# Unbound Rows in Windows Forms SfDataGrid
 [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) allows to add **additional rows** at top and also bottom of the SfDataGrid which are **not bound with data object** from underlying data source. The unbound rows can add by using [SfDataGrid.UnboundRows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.UnboundRows.html) collection property. SfDataGrid allows to add any number of unbound rows. Unbound rows can be exported to excel and PDF.
 {% tabs %}
 {% highlight c# %}

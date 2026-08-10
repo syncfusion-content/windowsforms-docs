@@ -1,14 +1,14 @@
 ---
 layout: post
-title: DataManipulation | DataGrid | WinForms | Syncfusion®
-description: Learn about data operations to manipulate the data in Syncfusion® WinForms DataGrid (SfDataGrid) control and more details.
+title: Data Manipulation in Windows Forms SfDataGrid | Syncfusion®
+description: Learn about data manipulation in Syncfusion® Windows Forms SfDataGrid, including data operations, editing, updating, and managing records efficiently.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
 
 ---
 
-# Data Manipulation in Windows Forms DataGrid (SfDataGrid)
+# Data Manipulation in Windows Forms SfDataGrid
 
 [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) listens and responds to the manipulation operations such as add, delete and data update (property change) at runtime. DataGrid refresh the sorting, filtering, grouping and summaries based on [SfDataGrid.LiveDataUpdateMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_LiveDataUpdateMode) property.
 

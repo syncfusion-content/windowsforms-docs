@@ -1,13 +1,13 @@
 ---
 layout: post
-title: UI Automation in Windows Forms DataGrid control | Syncfusion®
-description: Learn here all about UI Automation feature of Syncfusion® Windows Forms DataGrid (SfDataGrid) control and more.
+title: UI Automation in Windows Forms SfDataGrid | Syncfusion®
+description: Learn about UI Automation in Syncfusion® Windows Forms SfDataGrid, including accessibility support, automation peers, and automated testing capabilities.
 platform: WindowsForms
 control: SfDataGrid 
 documentation: ug
 ---
 
-# UI Automation in Windows Forms DataGrid (SfDataGrid)
+# UI Automation in Windows Forms SfDataGrid
 
 Microsoft UI automation is a new accessibility Framework for Microsoft Windows available on all the operating systems that support Windows Forms. UI automation provides accessibility to most of the UI elements and provides information about the UI element to the end user. You can interact with UI by using the automated test scripts. To learn more about UI automation, refer to the [MSDN page](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-overview).
 

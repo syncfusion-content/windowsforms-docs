@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization | DataGrid | WinForms | Syncfusion®
-description: Learn about localization support to customize the default strings in Syncfusion® WinForms DataGrid (SfDataGrid) control and more details.
+title: Localization in Windows Forms SfDataGrid | Syncfusion®
+description: Learn about localization support in Syncfusion® Windows Forms SfDataGrid, including customizing default strings, messages, and user interface text.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
 ---
 
-# Localization in DataGrid (SfDataGrid)
+# Localization in Windows Forms SfDataGrid
 Localization is the process of translating the application resources into different language for the specific cultures. The [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) can be localized by adding [resource](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/aa992030(v=vs.100)) file. Application culture can be changed by setting [CurrentUICulture ](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentuiculture?view=net-5.0)before `InitializeComponent` method.
 
 ## Localize at Sample Level

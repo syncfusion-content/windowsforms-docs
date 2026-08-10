@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Paging in WinForms DataGrid control | Syncfusion®
-description: Learn about paging support (pagination) in Syncfusion® WinForms DataGrid (SfDataGrid) control and more details.
+title: Paging in Windows Forms SfDataGrid | Syncfusion®
+description: Learn about paging in Syncfusion® Windows Forms SfDataGrid, including pagination support, page navigation, and efficient data viewing options.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
 ---
 
-# Paging in Windows Forms DataGrid (SfDataGrid)
+# Paging in Windows Forms SfDataGrid
 
 [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) provides support to manipulate the data using [SfDataPager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataPager.SfDataPager.html) control.
 

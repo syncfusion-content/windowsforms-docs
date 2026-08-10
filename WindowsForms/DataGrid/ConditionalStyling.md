@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Conditional Styling in WinForms DataGrid Control | Syncfusion®
-description: Learn about Conditional Styling support in Syncfusion® Windows Forms DataGrid (SfDataGrid) control and more.
+title: Conditional Styling in Windows Forms SfDataGrid | Syncfusion®
+description: Learn about conditional styling in Syncfusion® Windows Forms SfDataGrid, including customizing cell and row appearance based on specific conditions.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
 ---
 
-# Conditional Styling in Windows Forms DataGrid (SfDataGrid)
+# Conditional Styling in Windows Forms SfDataGrid
 
 ## Cells
 
