@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to set a custom position for a label in Windows Forms Diagram
+# How to Set a Custom Position for a Label in Windows Forms Diagram
 
 We can adjust the label position by setting the Position property as 'Custom'. Then, we have to set the Offset values for the X and Y coordinates to specify the label position.
 

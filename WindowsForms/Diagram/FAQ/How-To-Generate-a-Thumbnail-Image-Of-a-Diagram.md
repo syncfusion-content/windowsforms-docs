@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to generate a thumbnail image of a diagram in WinForms Diagram
+# How to Generate a Thumbnail Image of a Diagram in WinForms Diagram
 
 To display a thumbnail image of the diagram, follow the below given steps.
 

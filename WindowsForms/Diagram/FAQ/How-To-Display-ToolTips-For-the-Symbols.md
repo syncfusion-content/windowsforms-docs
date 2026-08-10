@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to display tooltips for symbols in Windows Forms Diagram
+# How to Display Tooltips for Symbols in Windows Forms Diagram
 
 ToolTips can be displayed using the Model's MouseEnter and MouseLeave events. Here is a sample where tooltips are displayed only for nodes of the type 'MySymbol'.
 

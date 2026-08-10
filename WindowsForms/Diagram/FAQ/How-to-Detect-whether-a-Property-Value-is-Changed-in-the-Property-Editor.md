@@ -6,7 +6,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to detect property value changes in Windows Forms Diagram
+# How to Detect Property Value Changes in Windows Forms Diagram
 
 You can use the PropertyValueChanged event to detect whether a property value is changed in the property editor. The following code example illustrates this.
 

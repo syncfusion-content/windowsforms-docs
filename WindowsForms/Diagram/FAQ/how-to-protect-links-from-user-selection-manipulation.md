@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to protect links from user selection in Windows Forms Diagram
+# How to Protect Links from User Selection in Windows Forms Diagram
 
 You can protect links from user selection / manipulation by making use of the EditStyle class. By setting the Enabled property of the EditStyle class to _false_, you can disable the selection of a node link.
 

@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to programmatically link two symbols in Windows Forms Diagram
+# How to Programmatically Link Two Symbols in Windows Forms Diagram
 
 The Syncfusion.Windows.Forms.Diagram.LinkCmd command class can be used to programmatically link symbols. 
 

@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to export a diagram into a Word document in Windows Forms Diagram
+# How to Export a Diagram into a Word Document in Windows Forms Diagram
 
 To export a diagram into a Word document, follow the below given steps.
 

@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to copy and paste nodes in Windows Forms Diagram
+# How to Copy and Paste Nodes in Windows Forms Diagram
 
 The following code snippet illustrates how you can copy / paste nodes (symbol, shape, or link) in Essential® Diagram.
 

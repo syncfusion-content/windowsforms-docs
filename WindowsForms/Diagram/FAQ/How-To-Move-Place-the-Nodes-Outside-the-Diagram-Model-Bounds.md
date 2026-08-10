@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to place nodes outside diagram bounds in Windows Forms Diagram
+# How to Place Nodes Outside Diagram Bounds in Windows Forms Diagram
 
 Setting the model's BoundaryConstraintsEnabled property to 'false', will let you place the nodes outside the bounds of the diagram model.
 

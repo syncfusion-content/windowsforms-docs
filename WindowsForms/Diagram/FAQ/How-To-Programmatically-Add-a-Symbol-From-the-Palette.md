@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to add a symbol to palette programmatically in WinForms Diagram
+# How to Add a Symbol to Palette Programmatically in WinForms Diagram
 
 The following code sample demonstrates how you can programmatically add a symbol from the symbol palette to a diagram.
 

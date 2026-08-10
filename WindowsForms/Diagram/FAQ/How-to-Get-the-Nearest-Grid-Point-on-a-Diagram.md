@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to get the nearest grid point in Windows Forms Diagram
+# How to Get the Nearest Grid Point in Windows Forms Diagram
 
 The GetNearestGridPoint method can be used to get the nearest grid point on a diagram based on a given point.
 

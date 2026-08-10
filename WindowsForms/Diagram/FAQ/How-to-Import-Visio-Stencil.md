@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to import Visio stencils in Windows Forms Diagram
+# How to Import Visio Stencils in Windows Forms Diagram
 
 You can import Visio stencils (.vss and .vsx) into symbol palettes. Essential® Diagram uses the Visio stencil converter to convert the stencils as the symbol palette. You have to add Syncfusion.Diagram.Utility.Windows.dll as a reference in your application to use this converter.
 

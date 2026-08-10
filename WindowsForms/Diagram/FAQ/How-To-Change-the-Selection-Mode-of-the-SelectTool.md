@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to change the selection mode of the SelectTool in WinForms Diagram
+# How to Change the Selection Mode of the SelectTool in WinForms Diagram
 
 The Diagram SelectTool provides an enum property called _SelectMode_, to change the selection mode. The following are the supported selection modes: 
 

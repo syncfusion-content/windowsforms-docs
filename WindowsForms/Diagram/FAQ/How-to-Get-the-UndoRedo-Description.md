@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to get undo and redo descriptions in Windows Forms Diagram
+# How to Get Undo and Redo Descriptions in Windows Forms Diagram
 
 The HistoryManager class has an option to get undo or redo description. You can use the GetUndoDescriptions or RedoDescriptions method to get the desired depth of descriptions available in the history of undo or redo list, respectively. The following code example illustrates this.
 

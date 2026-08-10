@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to change the color of Connector in Windows Forms Diagram
+# How to Change the Color of Connector in Windows Forms Diagram
 
 This page explains about How To Change the Color Of the LineConnector When Activating the LineTool and more details.
 

@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to convert model to client coordinates in Windows Forms Diagram
+# How to Convert Model to Client Coordinates in Windows Forms Diagram
 
 The conversion of model Coordinates to Client Coordinates is used to find out the accurate mouse positions on the Diagram when a Diagram document is panned, zoomed or having the ruler inside the Diagram.
 

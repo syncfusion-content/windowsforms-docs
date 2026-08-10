@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to get a connector vertex point in Windows Forms Diagram
+# How to Get a Connector Vertex Point in Windows Forms Diagram
 
 Connector has a method called GetPoint to get its vertex point. 
 

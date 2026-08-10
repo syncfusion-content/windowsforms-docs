@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to retrieve port information of a symbol in Windows Forms Diagram
+# How to Retrieve Port Information of a Symbol in Windows Forms Diagram
 
 You can retrieve port information of a particular symbol using the HandlesHitTesting.GetConnectionPointAtPoint(Node, Point) method.
 

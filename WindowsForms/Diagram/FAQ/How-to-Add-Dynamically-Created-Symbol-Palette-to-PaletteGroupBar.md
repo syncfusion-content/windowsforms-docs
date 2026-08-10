@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to add a symbol palette to PaletteGroupBar in WinForms Diagram
+# How to Add a Symbol Palette to PaletteGroupBar in WinForms Diagram
 
 The following code sample demonstrates how to add a dynamically created symbol palette to the PaletteGroupBar control.
 

@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to find and highlight the nearest port in Windows Forms Diagram
+# How to Find and Highlight the Nearest Port in Windows Forms Diagram
 
 By default, when hover over the Diagram nodes, the CentralPort will be highlighted and establish connection to the node. If you disabled the CentralPort, then highlight the ConnectionPoint (which is currently under in the mouse pointer) to establish the connection.
 

@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to highlight a node at run time in Windows Forms Diagram
+# How to Highlight a Node at Run time in Windows Forms Diagram
 
 A diagram node can be highlighted at run time using the mouse move actions. Using the Controller.GetNodeUnderMouseMove method, we can get the corresponding node under mouse move. By changing the node's LineStyle and FillStyle effects, we can highlight the respective nodes.
 

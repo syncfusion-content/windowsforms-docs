@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to detect shape additions and removals in Windows Forms Diagram
+# How to Detect Shape Additions and Removals in Windows Forms Diagram
 
 You can make use of the Diagram.Model.EventSink.NodeCollectionChanged to detect whether a new node (symbol, shape or link) has been added/removed from a diagram. The event's CollectionExEventArgs argument provides information about the node ensuing the add / remove operation.
 

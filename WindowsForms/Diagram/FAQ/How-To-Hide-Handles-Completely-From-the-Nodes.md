@@ -6,7 +6,7 @@ platform: windowsforms
 control: Diagram
 documentation: ug
 ---
-# How to hide handles completely from nodes in Windows Forms Diagram
+# How to Hide Handles completely From Nodes in Windows Forms Diagram
 
 This page explains about How To Hide Handles Completely From the Nodes and more details.
 

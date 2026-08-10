@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to prevent nodes from being rotated in Windows Forms Diagram
+# How to Prevent Nodes from Being Rotated in Windows Forms Diagram
 
 This can be done by raising the Diagram.Model.EventSink.RotationChanging event and canceling the operation.
 

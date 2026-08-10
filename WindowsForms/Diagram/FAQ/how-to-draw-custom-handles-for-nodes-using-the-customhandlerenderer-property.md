@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How to draw custom handles for nodes in Windows Forms Diagram
+# How to Draw Custom Handles for Nodes in Windows Forms Diagram
 
 This page explains about How To Draw Custom Handles For Nodes Using the CustomHandleRenderer Property and more details.
 
