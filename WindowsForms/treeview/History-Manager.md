@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: History Manager in Windows Forms TreeView control | Syncfusion®
-description: Learn about History Manager support in Syncfusion® Windows Forms TreeView control, its elements and more details.
+title: History Manager in Windows Forms TreeView | Syncfusion®
+description: History Manager records tree operations and provides undo and redo support for node actions.
 platform: WindowsForms
 control: TreeView 
 documentation: ug

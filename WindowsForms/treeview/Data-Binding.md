@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Data Binding in Windows Forms TreeView control | Syncfusion®
-description: Learn about Data Binding support in Syncfusion® Windows Forms TreeView control, its elements and more details.
+title: Data Binding in Windows Forms TreeView | Syncfusion®
+description: Data binding supports self-referencing, relational, and object-relational data sources with hierarchical node generation.
 platform: WindowsForms
 control: TreeView 
 documentation: ug

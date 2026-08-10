@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: LoadOnDemand in Windows Forms TreeView control | Syncfusion®
-description: Learn about LoadOnDemand support in Syncfusion® Windows Forms TreeView control, its elements and more details.
+title: LoadOnDemand in Windows Forms TreeView | Syncfusion®
+description: Load On Demand improves performance by loading child nodes only when parent nodes are expanded.
 platform: WindowsForms
 control: TreeView 
 documentation: ug
