@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Button-Parameters | WindowsForms | Syncfusion
-description: Learn about various button parameters, Right to Left, Details view and Resizing support in Windows Forms MessageBoxAdv
+title: Button Parameters in Windows Forms MessageBoxAdv | Syncfusion®
+description: Button parameters in Windows Forms MessageBoxAdv enable configuring button options, right-to-left layout, details view, and dialog resizing behavior.
 platform: WindowsForms
 control: MessageBoxAdv
 documentation: ug
 ---
 
-# Button Parameters in Windows Forms MessageBox (MessageBoxAdv)
+# Button Parameters in Windows Forms MessageBoxAdv
 
 [Show](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html#Syncfusion_Windows_Forms_MessageBoxAdv_Show_System_String_) function helps to display a [MessageBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html). This section explains regarding the parameters available in [Show](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html#Syncfusion_Windows_Forms_MessageBoxAdv_Show_System_String_) function.
 
