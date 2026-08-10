@@ -1,7 +1,7 @@
 ﻿---
 layout: post
 title: Border Settings in Windows Forms TextBox | Syncfusion®
-description: Border settings support customizing border styles, colors, sides, and 3D appearance for TextBoxExt.
+description: Border settings in TextBoxExt support customizing border styles, colors, sides, and three-dimensional border appearance.
 platform: windowsforms
 control: TextBoxExt
 documentation: ug

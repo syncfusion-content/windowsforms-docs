@@ -1,7 +1,7 @@
 ﻿---
 layout: post
 title: Behavior Settings in Windows Forms TextBox | Syncfusion®
-description: Behavior settings allow configuring maximum input length and read-only mode in TextBoxExt.
+description: Behavior settings in TextBoxExt allow configuring maximum input length, read-only mode, and user interaction behavior for text entry.
 platform: WindowsForms
 control: TextBoxExt
 documentation: ug
