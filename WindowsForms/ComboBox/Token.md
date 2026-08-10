@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Token appearance in Windows Forms SfComboBox | Syncfusion®
+title: Token support in Windows Forms SfComboBox | Syncfusion®
 description: Token support in Windows Forms SfComboBox displays selected items as tokens, enabling intuitive multi-selection, token customization, and item management.
 platform: windowsforms
 control: SfComboBox
 documentation: ug
 ---
 
-# Token appearance in Windows Forms SfComboBox
+# Token support in Windows Forms SfComboBox
 
 Token represents the selected item(s) in combobox. The selected items are displayed in rounded-polygon shape with close icon. This option also helps to select multiple items without using check box and remove the token at run time. 
 
