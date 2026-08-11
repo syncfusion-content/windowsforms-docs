@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Appearance in Windows Forms xptoolbar control | Syncfusion
-description: Learn about Appearance support in Syncfusion Windows Forms xptoolbar (XPToolbar) control and more details.
+title: Appearance in Windows Forms XPToolBar | Syncfusion®
+description: Appearance customization supports background colors, images, fonts, sizing, foreground colors, and item visibility settings.
 platform: WindowsForms
 control: XPToolBar
 documentation: ug
 ---
 
-# Appearance in Windows Forms xp toolbar (XPToolbar)
+# Appearance in Windows Forms XPToolBar
 
 ## Background Color
 
