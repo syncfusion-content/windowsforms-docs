@@ -1,12 +1,12 @@
----
+﻿---
 layout: post
-title: Features Overview | WindowsForms | Syncfusion
-description: overview
+title: Features in WindowsForms GroupView | Syncfusion®
+description: GroupView features include appearance customization, text formatting, image support, tooltips, drag-and-drop, themes, and orientation settings.
 platform: WindowsForms
 control: GroupView
 documentation: ug
 ---
-# Features overview
+# Features in WindowsForms GroupView
 
 This section discusses the feature list of GroupView.
 
