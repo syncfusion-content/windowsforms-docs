@@ -7,7 +7,7 @@ control: chart
 documentation: ug
 ---
 
-# How to Drag Chart Series Points at Runtime
+# How to drag chart series points at runtime in Windows Forms Chart
 
 You can drag the chart series points by calculating new x and y values while handling any of the ChartRegionMouse Events likeMouseUp, MouseDown, MouseHover, MouseLeave, and so forth, on the chart. The new x and y values of the series are calculated from the mouse point, and GetValueByPoint which returns the x and y values of the mouse point calculated from the Chart Point.
 

@@ -7,7 +7,7 @@ control: chart
 documentation: ug
 ---
 
-# How to Provide DateTime Input Data in Chart
+# How to provide datetime input data in Windows Forms Chart
 
 The Start Date and Time can be expressed using an instance of the DateTime class. If you want to add days, the AddDays() method can be used along with that instance. AddHours() and AddMinutes() can be used for adding any number of hours and minutes.
 

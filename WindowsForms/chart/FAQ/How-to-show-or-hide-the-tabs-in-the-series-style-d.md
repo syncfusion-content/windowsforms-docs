@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to Show or Hide Series Style Dialog Tabs | Syncfusion®
+title: How to show or hide tabs in Windows Forms Chart | Syncfusion®
 description: Learn how to show or hide tabs in the series style dialog of a Windows Forms Chart and customize the available style options.
 platform: windowsforms
 control: chart
 documentation: ug
 ---
 
-# How to Show or Hide Tabs in the Series Style Dialog
+# How to show or hide tabs in Windows Forms Chart
 
 The tabs in the series style dialog can be shown or hidden using the below properties settings.
 
