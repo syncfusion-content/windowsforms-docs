@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to Place Data Labels Outside a Chart | Syncfusion®
+title: How to place data labels outside in Windows Forms Chart | Syncfusion®
 description: Learn how to place callout data labels outside the chart region in a Windows Forms Chart and customize label positioning.
 platform: windowsforms
 control: chart
 documentation: ug
 ---
 
-# How to Place Data Labels Outside the Chart Region
+# How to place data labels outside in Windows Forms Chart
 
 ## Callout Labels
 
