@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in WindowsForms SfListView Control | Syncfusion
-description: Learn here about Localization with Syncfusion Windows Forms SfListView Control, its elements, and more.
+title: Localization in Windows Forms SfListView | Syncfusion®
+description: Localization support in Windows Forms SfListView enables adapting text, messages, and user interface elements to different languages and regional settings.
 platform: windowsforms
 control: SfListView
 documentation: ug

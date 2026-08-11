@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Working with Windows Forms AutoComplete control | Syncfusion
-description: Learn about Working with AutoComplete support in Syncfusion Windows Forms AutoComplete control and more details.
+title: Working with Windows Forms AutoComplete | Syncfusion®
+description: Working with AutoComplete covers matching modes, suggestion behavior, history management, data integration, and popup customization.
 platform: WindowsForms
 control: AutoComplete
 documentation: ug

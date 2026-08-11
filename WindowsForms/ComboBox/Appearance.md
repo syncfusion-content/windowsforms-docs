@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance in Windows Forms ComboBox control | Syncfusion
-description: Learn about Appearance support in Syncfusion Windows Forms ComboBox (SfComboBox) control and more details.
+title: Appearance in Windows Forms SfComboBox | Syncfusion®
+description: Appearance in Windows Forms SfComboBox enables customizing editor, drop-down, and button visuals with styles, images, themes, and other visual settings.
 platform: windowsforms
 control: SfComboBox
 documentation: ug
 ---
 
-# Appearance in Windows Forms ComboBox (SfComboBox)
+# Appearance in Windows Forms SfComboBox
 
 ## Customizing editor appearance
 
