@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to float a single control even if it is tabbed to many controls in Docking Manager | Syncfusion®
+title: How to float a tabbed control in Windows Forms Docking Manager | Syncfusion®
 description: Learn how to float a single control even if it is tabbed to many controls in Syncfusion Windows Forms Docking Manager.
 platform: windowsforms
 control: DockingManager
@@ -9,7 +9,7 @@ documentation: ug
 
 
 
-# How to float a single control even if it is tabbed to many controls in Docking Manager
+# How to float a tabbed control in Windows Forms Docking Manager
 
 The `FloatControl` method enables the end users to float a particular control. Using this method, we can float a single control even if it is tabbed with many controls.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to find whether a docked control is floating in Docking Manager | Syncfusion®
+title: How to check floating state in Windows Forms Docking Manager | Syncfusion®
 description: Learn how to find out whether a docked control is floating or not in Syncfusion Windows Forms Docking Manager.
 platform: windowsforms
 control: DockingManager
