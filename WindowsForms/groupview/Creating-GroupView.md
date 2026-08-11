@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Creating GroupView | WindowsForms | Syncfusion
-description: overview
+title: Create GroupView in Windows Forms | Syncfusion®
+description: Learn how to create a GroupView control in Windows Forms using the designer or code, add GroupView items, and configure the control.
 platform: WindowsForms
 control: GroupView
 documentation: ug
 ---
-# Creating GroupView
+# Create GroupView in Windows Forms
 
 This section provides a step-by-step procedure to create a GroupView control through designer and through programmatic approach in a .NET application.
 
