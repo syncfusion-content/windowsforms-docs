@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Annotations in Windows-Forms Map Control | Syncfusion®
-description: Learn here all about the annotations feature of Syncfusion® Windows Forms Map (Maps) control and more.
+title: Annotations in Windows Forms Maps | Syncfusion®
+description: Annotations in the Windows Forms Maps display custom content at specific locations and support flexible positioning and appearance customization.
 platform: windowsforms
 control: Maps
 documentation: ug
 ---
 
-# Annotations in Windows Forms Map (Maps)
+# Annotations in Windows Forms Maps
 
 Annotations are used to add messages on the map. In Maps control, annotations are denoted using the following major properties:
 

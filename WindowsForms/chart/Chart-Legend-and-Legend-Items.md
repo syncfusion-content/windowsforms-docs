@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Chart Legend in Windows Forms Chart control | Syncfusion
-description: Learn about Chart Legend support in Syncfusion Essential Studio® Windows Forms Chart control and more details.
+title: Legend in Windows Forms Chart | Syncfusion®
+description: Legend in the Windows Forms Chart identifies data series and chart elements, supporting customization, positioning, and display options.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Chart Legend in Windows Forms Chart
+# Legend in Windows Forms Chart
 
 Essential® Chart by default displays a legend with information on each series that has been plotted on the chart.
 

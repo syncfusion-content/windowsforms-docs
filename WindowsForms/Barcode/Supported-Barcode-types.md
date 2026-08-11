@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Supported Barcode Types in Windows Forms Barcode control | Syncfusion
-description: Learn about Supported Barcode Types support in Syncfusion Windows Forms Barcode control and more details.
+title: Symbology Types in Windows Forms Barcode | Syncfusion®
+description: Symbology Types in the Windows Forms Barcode enable generation of one-dimensional and two-dimensional barcodes for diverse applications.
 platform: wpf
 control: SfBarcode
 documentation: ug
 ---
 
-# Supported Barcode Types in Windows Forms Barcode
+# Symbology Types in Windows Forms Barcode
 
 The following table contains the supported barcode types and the associated valid characters.
 

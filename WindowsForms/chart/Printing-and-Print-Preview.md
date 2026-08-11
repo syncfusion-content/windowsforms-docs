@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Printing in Windows Forms Chart control | Syncfusion
-description: Learn about Printing support in Syncfusion Essential Studio® Windows Forms Chart control and more details.
+title: Printing in Windows Forms Chart | Syncfusion®
+description: Printing in the Windows Forms Chart enables chart content to be printed with configurable settings for reporting and presentation purposes.
 platform: windowsforms
 control: Chart
 documentation: ug
@@ -114,7 +114,9 @@ A sample illustrating the printing features is available in the below location.
 
 [ShowToolBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ShowToolbar) property should be set to true to display a toolbar in the Chart. You can show or hide the toolbar while printing a Chart using [PrintToolBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPrintDocument.html#Syncfusion_Windows_Forms_Chart_ChartPrintDocument_PrintToolBar) property. 
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 chartControl1.ShowToolbar = true;
 
