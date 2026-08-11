@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to change the dock tab alignment | WindowsForms | Syncfusion®
-description: How to change the dock tab alignment
+title: How to change the dock tab alignment in Docking Manager | Syncfusion®
+description: Learn how to change the dock tab alignment in Syncfusion Windows Forms Docking Manager control, with available positions.
 platform: windowsforms
 control: DockingManager
 documentation: ug
 ---
 
-# How to change the dock tab alignment?
+# How to change the dock tab alignment in Docking Manager
 
 The tabs of the Docked window are placed at the bottom, by default. To place the tabs of the docked window at different sides set the property `DockTabAlignment` with desired values such as Top, Bottom, Left, and Right.
 

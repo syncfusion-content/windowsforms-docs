@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Chart Title in Windows Forms Chart control | Syncfusion
-description: Learn about Chart Title support in Syncfusion Essential Studio® Windows Forms Chart control and more details.
+title: Title in Windows Forms Chart | Syncfusion®
+description: Title in the Windows Forms Chart displays descriptive text for charts and supports customization of content, alignment, and appearance.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Chart Title in Windows Forms Chart
+# Title in Windows Forms Chart
 
 ## Default Title
 

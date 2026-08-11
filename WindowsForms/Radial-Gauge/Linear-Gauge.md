@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Linear Gauge in Windows Forms Radial Gauge control | Syncfusion
-description: Learn about Linear Gauge support in Syncfusion Windows Forms Radial Gauge (Gauge) control and more details.
+title: Linear Gauge in Windows Forms Gauge | Syncfusion®
+description: Linear gauge in the Windows Forms Gauge displays values on a linear scale and supports customization of appearance and measurement settings.
 platform: WindowsForms
 control: Gauge
 documentation: ug
 ---
 
-# Linear Gauge in Windows Forms Radial Gauge (Gauge)
+# Linear Gauge in Windows Forms Gauge
 
 [LinearGauge](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.LinearGauge.html) displays a range of values graphically along the linear scale. It measures the values of the scales and can be presented in a horizontal or vertical sliding meter.
 

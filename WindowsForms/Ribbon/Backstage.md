@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Backstage in Windows Forms Ribbon control | Syncfusion®
-description: Learn about Backstage support in Syncfusion® Windows Forms Ribbon (RibbonControlAdv) control and more details.
+title: Backstage in Windows Forms Ribbon | Syncfusion®
+description: The backstage view in Ribbon appears when clicking the menu button and lets users perform document actions like Save, Save As, and Print.
 platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# Backstage in Windows Forms Ribbon (RibbonControlAdv)
+# Backstage in Windows Forms Ribbon
 
 The Ribbon Backstage will appear when the user clicks on the Menu button. It lets users perform actions for the whole document such as Save, Save As and Print. It can also be used to show the recent changes in the document or to close the application.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Legend in Windows Forms Pivot Chart control | Syncfusion
-description: Learn about Legend support in Syncfusion® Windows Forms Pivot Chart control, its elements and more details.
+title: Legend in Windows Forms Pivot Chart | Syncfusion®
+description: Legend in the Windows Forms Pivot Chart identifies data series and chart elements, supporting customization, positioning, and display options.
 platform: windowsforms
 control: PivotChart
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Serialization in Windows Forms Docking Manager control | Syncfusion®
-description: Learn about Serialization support in Syncfusion® Windows Forms Docking Manager control and more details.
+title: Serialization in Windows Forms Docking Manager | Syncfusion®
+description: Serialization in Docking Manager lets you save and restore dock panel states in binary or XML formats for state persistence.
 platform: windowsforms
 control: DockingManager 
 documentation: ug

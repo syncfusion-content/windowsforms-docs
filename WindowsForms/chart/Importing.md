@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Importing in Windows Forms Chart control | Syncfusion
-description: Learn about Importing support in Syncfusion Essential Studio® Windows Forms Chart control and more details.
+title: Importing in Windows Forms Chart | Syncfusion®
+description: Importing in the Windows Forms Chart enables chart data to be loaded from external sources for visualization and analysis.
 platform: windowsforms
 control: Chart
 documentation: ug

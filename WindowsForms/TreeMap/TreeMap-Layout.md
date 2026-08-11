@@ -1,13 +1,13 @@
 ---
 layout: post
-title: TreeMap Layout in Windows Forms TreeMap control | Syncfusion®
-description: Learn about TreeMap Layout support in Syncfusion® Windows Forms TreeMap control, its elements and more details.
+title: Layout in Windows Forms TreeMap | Syncfusion®
+description: Layout in the Windows Forms TreeMap controls how hierarchical data is arranged, supporting different layout algorithms for effective visualization.
 platform: windowsforms
 control: TreeMap 
 documentation: ug
 ---
 
-# TreeMap Layout in Windows Forms TreeMap
+# Layout in Windows Forms TreeMap
 
 The [`ItemsLayoutMode`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TreeMap.TreeMap.html#Syncfusion_Windows_Forms_TreeMap_TreeMap_ItemsLayoutMode) of the tree map control specifies the mode in which the items should be laid out. This layout will be applied for all the tree map levels. It includes four different types of layout.
 
