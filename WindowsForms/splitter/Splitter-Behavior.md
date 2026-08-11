@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Splitter Behavior in Windows Forms Splitter control | Syncfusion
-description: Learn about Splitter Behavior support in Syncfusion Windows Forms Splitter control and more details.
+title: Splitter Behavior in Windows Forms Splitter | Syncfusion®
+description: Learn about splitter behavior in the Syncfusion® Windows Forms Splitter control, including row, column, and combined split bars for flexible worksheet and grid layouts.
 platform: windowsforms
 control: Splitter
 documentation: ug

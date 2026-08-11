@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Appearance in Windows Forms Scroll Frame control | Syncfusion®
-description: Learn about Appearance support in Syncfusion® Windows Forms Scroll Frame (SfScrollFrame) control and more details.
+title: Appearance in Windows Forms Scroll Frame | Syncfusion®
+description: Appearance customization supports scrollbar styling, thumb sizing, arrow button settings, disabled states, and built-in themes.
 platform: WindowsForms
 control: SfScrollFrame
 documentation: ug
