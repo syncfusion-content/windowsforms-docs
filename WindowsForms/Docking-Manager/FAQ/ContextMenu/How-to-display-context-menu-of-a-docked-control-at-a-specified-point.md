@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to display context menu at a point in Windows Forms Docking Manager | Syncfusion®
+title: How to display menu in Windows Forms Docking Manager | Syncfusion®
 description: Learn how to display context menu of a docked control at a specified point in Syncfusion Windows Forms Docking Manager.
 platform: windowsforms
 control: DockingManager
 documentation: ug
 ---
 
-# How to display context menu at a point in Windows Forms Docking Manager
+# How to display menu in Windows Forms Docking Manager
 
 This can be done using ShowMenu method.
 

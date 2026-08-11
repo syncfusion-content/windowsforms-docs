@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to get docked control properties in Windows Forms Docking Manager | Syncfusion®
+title: How to get properties in Windows Forms Docking Manager | Syncfusion®
 description: Learn how to get the individual docked controls properties in Syncfusion Windows Forms Docking Manager control.
 platform: windowsforms
 control: DockingManager
 documentation: ug
 ---
 
-# How to get docked control properties in Windows Forms Docking Manager
+# How to get properties in Windows Forms Docking Manager
 
 To check whether a control is floating or docked, you could use the code snippet given below.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to prevent closing a docked window in Windows Forms Docking Manager | Syncfusion®
+title: How to prevent closing in Windows Forms Docking Manager | Syncfusion®
 description: Learn how to prevent closing of docked window in Syncfusion Windows Forms Docking Manager control with code samples.
 platform: windowsforms
 control: DockingManager
 documentation: ug
 ---
 
-# How to prevent closing of docked window in Docking Manager
+# How to prevent closing in Windows Forms Docking Manager
 
 Closing of docked window can be restricted using `DockVisibilityChanging` event. When the end users tries to change the docking control visibility, this event will be handled. The members of this event is as follows.
 

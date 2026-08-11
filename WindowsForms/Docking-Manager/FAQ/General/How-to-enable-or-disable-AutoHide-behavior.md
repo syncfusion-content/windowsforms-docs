@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to enable or disable AutoHide in Windows Forms Docking Manager | Syncfusion®
+title: How to toggle AutoHide in Windows Forms Docking Manager | Syncfusion®
 description: Learn how to enable or disable AutoHide behavior in Syncfusion Windows Forms Docking Manager control for docked controls.
 platform: WindowsForms
 control: DockingManager
 documentation: ug
 ---
 
-# How to enable or disable AutoHide in Windows Forms Docking Manager
+# How to toggle AutoHide in Windows Forms Docking Manager
 
 AutoHide behavior can be enabled or disables using `AutoHideEnabled` property in DockingManager.
 

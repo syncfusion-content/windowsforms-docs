@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to identify a closing dock window in Windows Forms Docking Manager | Syncfusion®
+title: How to find closing in Windows Forms Docking Manager | Syncfusion®
 description: Learn how to identify the docking window which is currently being closed in Syncfusion Windows Forms Docking Manager.
 platform: windowsforms
 control: DockingManager
@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# How to identify a closing dock window in Windows Forms Docking Manager
+# How to find closing in Windows Forms Docking Manager
 
 This can be achieved by using the DockVisibilityChanged event which occurs after a control's DockVisibility state has changed.
 The Control member of this event gets the control which is undergoing the visibility change.

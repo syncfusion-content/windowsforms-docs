@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to make a docked control float only in Windows Forms Docking Manager | Syncfusion®
+title: How to make float only in Windows Forms Docking Manager | Syncfusion®
 description: Learn how to make a docked control float only in Syncfusion Windows Forms Docking Manager control with step-by-step instructions.
 platform: windowsforms
 control: DockingManager
@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# How to make a docked control float only in Windows Forms Docking Manager
+# How to make float only in Windows Forms Docking Manager
 
 The docked control can also be only floating and cannot be docked, by calling the `SetFloatOnly` method.
 

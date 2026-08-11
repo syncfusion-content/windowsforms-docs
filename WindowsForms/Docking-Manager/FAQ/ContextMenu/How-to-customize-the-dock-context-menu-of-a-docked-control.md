@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to customize dock context menu in Windows Forms Docking Manager | Syncfusion®
+title: How to edit dock menu in Windows Forms Docking Manager | Syncfusion®
 description: Learn how to customize the dock context menu of a docked control in Syncfusion Windows Forms Docking Manager.
 platform: windowsforms
 control: DockingManager
 documentation: ug
 ---
 
-# How to customize dock context menu in Windows Forms Docking Manager
+# How to edit dock menu in Windows Forms Docking Manager
 
 ContextMenu of the Docked controls can be customized using DockContextMenu event in DockingManager.The DockContextMenu event is fired when the mouse is right-clicked over a docking window's caption.
 
