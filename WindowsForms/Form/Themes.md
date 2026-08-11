@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: Themes in Windows Forms Form control | Syncfusion®
-description: Learn about Themes support in Syncfusion® Windows Forms Form (SfForm) control, its elements and more details.
+description: Themes in Form (SfForm) provide built-in visual styles and theme management options to customize the appearance of application windows.
 platform: windowsforms
 control: SfForm
 documentation: ug

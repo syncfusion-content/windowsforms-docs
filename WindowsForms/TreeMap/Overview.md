@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Windows Forms TreeMap control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® Windows Forms TreeMap control, its elements and more details.
+title: About Syncfusion® Windows Forms TreeMap Control | Syncfusion®
+description: Learn about the introduction of Syncfusion Essential Studio® Windows Forms TreeMap control, its features, capabilities, and more details.
 platform: windowsforms
 control: TreeMap 
 documentation: ug
 ---
 
-# Windows Forms TreeMap Overview
+# About Syncfusion® Windows Forms TreeMap Control
 
 ## Introduction
 

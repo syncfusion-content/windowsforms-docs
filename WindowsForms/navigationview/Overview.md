@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Windows Forms NavigationView control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® Windows Forms NavigationView control, its elements and more details.
+title: About Syncfusion® Windows Forms Navigation View Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms Navigation View control and more details.
 platform: windowsforms
 control: Navigation View 
 documentation: ug

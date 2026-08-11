@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-specify-the-position-for-a-Floating-Legend | Windows Forms | Syncfusion
-description: how to specify the position for a floating legend
+title: How to position a floating legend in Windows Forms Chart | Syncfusion®
+description: Learn how to specify the position of a floating legend in a Windows Forms Chart and place the legend at a custom location.
 platform: windowsforms
 control: chart
 documentation: ug
 ---
 
-# How to specify the position for a Floating Legend
+# How to position a floating legend in Windows Forms Chart
 
 When the LegendPosition property of the ChartControl is set to ChartDock.Floating, the position of the legend defaults to the top-right corner of the ChartArea. Once this is done, you can specify the coordinates via the Legend.Location property of the ChartLegend.
 

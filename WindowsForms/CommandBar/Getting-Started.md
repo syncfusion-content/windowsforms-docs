@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started in Windows Forms CommandBar control | Syncfusion®
-description: Learn here about getting started with Syncfusion® Windows Forms CommandBar (CommandBars) control, its elements, and more.
+title: Getting Started with Windows Forms CommandBar | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms CommandBar control. Explore setup, features, examples, and customization options.
 platform: windowsforms
 control: CommandBar
 documentation: ug
 ---
 
-# Getting Started with Windows Forms CommandBar (CommandBars)
+# Getting Started with Windows Forms CommandBar
 
 This section provides a quick overview to work with the command bar control in WinForms.
 

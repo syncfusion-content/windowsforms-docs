@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Main Frame Bar Manager | Windows Forms | Syncfusion
-description: The main frame manager control allows the hierarchal menu model of elements that are associated with commands and toolbars.
+title: About Syncfusion® Windows Forms MainFrameBarManager | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms MainFrameBarManager control and more details.
 platform: WindowsForms
 control: MainFrameBarManager 
 documentation: ug

@@ -1,12 +1,12 @@
----
+﻿---
 layout: post
-title: Mode Settings | WindowsForms | Syncfusion®
-description: Learn here about how to set the different Mode Settings to the Syncfusion® Windows Forms MaskedEditBox control.
+title: Mode Settings in Windows Forms MaskedTextBox | Syncfusion®
+description: Mode settings in MaskedEditBox configure clipboard behavior, input handling, and numeric data entry modes.
 platform: WindowsForms
 control: MaskedEditBox
 documentation: ug
 --- 
-# Mode Settings in MaskedEditBox
+# Mode Settings in MaskedTextBox (MaskedEditBox)
 
 This section discusses how to set the different mode to the MaskedEditBox control.
 

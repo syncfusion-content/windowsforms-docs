@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Guides in Windows Forms Diagram control | Syncfusion®
-description: Learn about Guides support in Syncfusion® Windows Forms Diagram control, its elements and more details.
+title: Guides in Windows Forms Diagram | Syncfusion®
+description: Align diagram nodes with visual guides in the Syncfusion® Windows Forms Diagram control using boundary, center, and margin guides.
 platform: windowsforms
 control: Diagram
 documentation: ug

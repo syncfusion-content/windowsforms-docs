@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customizing the appearances of the Selection handles | Syncfusion®
-description: Learn to customize selection handles in Syncfusion's Diagram control using the CustomHandleRenderer property to enhance your application's visuals.
+title: How to customize selection handles in WinForms Diagram | Syncfusion®
+description: Learn how to customize the appearance of selection handles, resize handles, and outline borders in the Syncfusion® Windows Forms Diagram control.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# Customizing the appearances of the selection handles
+# How to Customize Selection Handles in Windows Forms Diagram
 
 The Diagram control provides an option to customize the selection handles of the nodes or connectors to change the appearance of the handles in the application side by using the Syncfusion.Windows.Forms.Diagram.View.CustomHandleRenderer property.
 

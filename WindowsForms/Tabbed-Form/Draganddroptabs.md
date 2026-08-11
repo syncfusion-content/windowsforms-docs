@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Drag and drop tabs in Windows Forms Tabbed Form control | Syncfusion®
-description: Learn about Drag and drop tabs support in Syncfusion® Windows Forms Tabbed Form (SfTabbedForm) control and more details.
+title: Drag and drop tabs in Windows Forms Tabbed Form | Syncfusion®
+description: Drag-and-drop support allows tab reordering and provides events to control or cancel tab dragging operations.
 platform: WindowsForms
 control: SfTabbedForm
 documentation: ug

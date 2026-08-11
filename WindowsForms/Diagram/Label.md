@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Label in Windows Forms Diagram control | Syncfusion®
-description: Learn about Label support in Syncfusion® Windows Forms Diagram control, its elements and more details.
+title: Label in Windows Forms Diagram | Syncfusion®
+description: Create, format, position, and customize labels in the Syncfusion® Windows Forms Diagram control with support for styling and interaction.
 platform: windowsforms
 control: Diagram
 documentation: ug

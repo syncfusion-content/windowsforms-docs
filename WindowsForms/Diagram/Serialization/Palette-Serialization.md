@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Palette Serialization in Windows Forms Diagram control | Syncfusion®
-description: Learn about Palette Serialization support in Syncfusion® Windows Forms Diagram control and more details.
+title: Palette Serialization in Windows Forms Diagram | Syncfusion®
+description: Learn about palette serialization in the Syncfusion® Windows Forms Diagram control, including saving and loading symbol palettes.
 platform: windowsforms
 control: Diagram
 documentation: ug

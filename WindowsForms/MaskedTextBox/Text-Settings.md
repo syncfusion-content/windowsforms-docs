@@ -1,12 +1,12 @@
----
+﻿---
 layout: post
-title: Text Settings | WindowsForms | Syncfusion®
-description: Learn here about how set the text values to the Syncfusion® Windows Forms MaskedEditControl and its features.
+title: Text Settings in Windows Forms MaskedTextBox | Syncfusion®
+description: Text settings in MaskedEditBox enable character casing, alignment, selection handling, clipping, and overflow indicators.
 platform: windowsforms
 control: MaskedEditBox
 documentation: ug
 --- 
-# Text Settings in MaskedEditBox
+# Text Settings in MaskedTextBox (MaskedEditBox)
 
 This section discusses the text settings of the MaskedEditBox control.
 

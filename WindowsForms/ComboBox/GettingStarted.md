@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Windows Forms ComboBox control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms ComboBox (SfComboBox) control and more details.
+title: Getting Started with Windows Forms SfComboBox | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms SfComboBox control. Explore setup, elements, features, examples, and customization options.
 platform: windowsforms
 control: SfComboBox
 documentation: ug
 ---
 
-# Getting Started with Windows Forms ComboBox (SfComboBox)
+# Getting Started with Windows Forms SfComboBox
 This section provides a quick overview for working with the ComboBox in WinForms.
 
 ## Assembly Deployment
