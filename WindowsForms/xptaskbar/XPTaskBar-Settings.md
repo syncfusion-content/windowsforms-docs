@@ -1,12 +1,12 @@
----
+﻿---
 layout: post
-title: XPTaskBar Settings in Windows Forms xptaskbar control | Syncfusion®
-description: Learn about XPTaskBar Settings support in Syncfusion® Windows Forms xptaskbar (XPTaskBar) control and more details.
+title: Configure XPTaskBar Settings in Windows Forms XPTaskBar | Syncfusion®
+description: XPTaskBar settings support layout management, scrolling behavior, drag-and-drop functionality, and state persistence.
 platform: windowsforms
 control: XPTaskBar
 documentation: ug
 ---
-# XPTaskBar Settings in Windows Forms xp taskbar (XPTaskBar)
+# Configure XPTaskBar Settings in Windows Forms XPTaskBar
 
 The behavior of the XPTaskBar can be controlled using the properties given below.
 
