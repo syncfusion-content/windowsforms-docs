@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Syncfusion® Windows Forms MainFrameBarManager | Syncfusion®
+title: About Syncfusion® Windows Forms MainFrameBarManager Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms MainFrameBarManager control and more details.
 platform: WindowsForms
 control: MainFrameBarManager 
 documentation: ug
 ---
 
-# Windows Forms Menu (Menus) Overview
+# About Syncfusion® Windows Forms MainFrameBarManager Control
 
 [MainFrameBarManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) control allows a hierarchical menu model of elements that are associated with commands and toolbars. This control contains a collection of [BarItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html), which can be expanded to display additional [BarItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html) entries or to perform a specific action when clicked.
 

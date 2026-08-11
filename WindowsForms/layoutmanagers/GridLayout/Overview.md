@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Windows Forms LayoutManagers control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® Windows Forms LayoutManagers control, its elements and more details.
+title: About Syncfusion® Windows Forms GridLayout Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms GridLayout control and more details.
 platform: windowsforms
 control: GridLayout
 documentation: ug
 ---
 
-# Windows Forms GridLayout Overview
+# About Syncfusion® Windows Forms GridLayout Control
 
 `GridLayout` is a layout manager. It allows you arrange the child controls in a grid that contains rows and columns. By deriving from the layout manager base, the GridLayout inherits all the functionalities that the LayoutManager type exposes. In its simplest form, this layout manager can be used to automatically arrange the child components in one or more rows.
 

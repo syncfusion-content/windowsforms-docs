@@ -7,7 +7,7 @@ control: AutoComplete
 documentation: ug
 ---
 
-# Windows Forms AutoComplete Overview
+# About Syncfusion® Windows Forms AutoComplete Control
 
 The `AutoComplete` control is an extender control that provides AutoCompletion services to any edit control on the same form as the AutoComplete control.
 
