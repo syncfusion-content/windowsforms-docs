@@ -199,5 +199,5 @@ Create a Calendar with date range, multi-selection, globalization, and weekend h
 
 ## See also
 
-* [SKills](https://help.syncfusion.com/windowsforms/skills/component-skills)
+* [Skills](https://help.syncfusion.com/windowsforms/skills)
 * [MCP Server](https://help.syncfusion.com/windowsforms/ai-coding-assistant/mcp-server)
