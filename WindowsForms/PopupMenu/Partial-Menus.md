@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Partial Menus in Windows Forms PopupMenu control | Syncfusion®
-description: Learn about Partial Menus support in Syncfusion® Windows Forms PopupMenu control, its elements and more details.
+title: Partial Menus in Windows Forms PopupMenu | Syncfusion®
+description: Partial menus prioritize frequently used commands while temporarily hiding less-used items to reduce menu clutter.
 platform: windowsforms
 control: PopupMenu
 documentation: ug
