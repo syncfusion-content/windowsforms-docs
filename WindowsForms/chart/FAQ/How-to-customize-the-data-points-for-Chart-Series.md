@@ -7,7 +7,7 @@ control: chart
 documentation: ug
 ---
 
-# How to Customize data points in Windows Forms Chart
+# How to customize data points in Windows Forms Chart
 
 You can customize the data points by exposing the IChartSeriesModel interface to the series. The default Series store is an implementation of the IChartSeriesModel. By implementing this interface, we can set it as the underlying data.
 
