@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Chart Axes in Windows Forms Chart control | Syncfusion
-description: Learn about Chart Axes support in Syncfusion Essential Studio® Windows Forms Chart control and more details.
+title: Axes in Windows Forms Chart | Syncfusion®
+description: Axes in the Windows Forms Chart define scales, labels, categories, and value ranges for accurate data visualization.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Chart Axes in Windows Forms Chart
+# Axes in Windows Forms Chart
 
 An axis in Essential® Chart is represented by the [ChartAxis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html) class. The axes are stored in the [WinForms Chart](https://www.syncfusion.com/winforms-ui-controls/chart) control's Axes collection.
 

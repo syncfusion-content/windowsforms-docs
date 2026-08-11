@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Working with Ribbon in Windows Forms Ribbon control | Syncfusion®
-description: Learn about Working with Ribbon support in Syncfusion® Windows Forms Ribbon (RibbonControlAdv) control and more details.
+title: Working with Ribbon in Windows Forms Ribbon | Syncfusion®
+description: Working with Ribbon covers ribbon state management, configuration, and customization to build a complete ribbon-based application UI.
 platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# Working with Ribbon in Windows Forms Ribbon (RibbonControlAdv)
+# Working with Ribbon in Windows Forms Ribbon
 
 ## Ribbon State
 

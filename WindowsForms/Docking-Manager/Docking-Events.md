@@ -1,7 +1,7 @@
-﻿---
+---
 layout: post
-title: Docking Events in Windows Forms Docking Manager control | Syncfusion®
-description: Learn about Docking Events support in Syncfusion® Windows Forms Docking Manager control and more details.
+title: Docking Events in Windows Forms Docking Manager | Syncfusion®
+description: The docking events in Docking Manager provide programmatic access to handle dock, float, auto hide, and state persistence notifications.
 platform: windowsforms
 control: DockingManager 
 documentation: ug

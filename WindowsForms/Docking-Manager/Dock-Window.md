@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dock Window in Windows Forms Docking Manager control | Syncfusion®
-description: Learn about Dock Window support in Syncfusion® Windows Forms Docking Manager control and more details.
+title: Dock Window in Windows Forms Docking Manager | Syncfusion®
+description: The dock window feature in Docking Manager lets you customize captions, add buttons, and configure context menus for docked controls.
 platform: windowsforms
 control: DockingManager 
 documentation: ug

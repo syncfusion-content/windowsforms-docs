@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Docking Client Panel in WinForms Docking Manager | Syncfusion®
-description: Learn about Docking Client Panel support in Syncfusion® Windows Forms Docking Manager control and more details.
+title: Docking Client Panel in Windows Forms Docking Manager | Syncfusion®
+description: The Docking Client Panel in Docking Manager synchronizes MDI client window resizing with changes in docking windows layout at run-time.
 platform: windowsforms
 control: DockingManager 
 documentation: ug

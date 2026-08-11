@@ -1,7 +1,7 @@
 ---
 layout: post
-title: TDI Window in Windows Forms Docking Manager control | Syncfusion®
-description: Learn about TDI Window support in Syncfusion® Windows Forms Docking Manager control and more details.
+title: TDI Window in Windows Forms Docking Manager | Syncfusion®
+description: The TDI window in Docking Manager provides support for adding tabbed document windows with the EnableDocumentMode property.
 platform: windowsforms
 control: DockingManager 
 documentation: ug
