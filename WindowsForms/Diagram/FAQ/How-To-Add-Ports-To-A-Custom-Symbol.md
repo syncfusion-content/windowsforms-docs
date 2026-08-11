@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How To Add Ports To A Custom Symbol | Syncfusion®
-description: Learn how to add ports to a custom symbol in your software application, enhancing functionality and connectivity for your projects.
+title: How to add ports to a symbol in Windows Forms Diagram | Syncfusion®
+description: Learn how to add ports to a custom symbol in the Syncfusion® Windows Forms Diagram control to improve connectivity and interaction.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# How To Add Ports To A Custom Symbol
+# How to Add Ports to a Custom Symbol in Windows Forms Diagram
 
 The following code snippet illustrates how ports can be added to a custom symbol.
 

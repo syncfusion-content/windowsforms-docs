@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Touch Support in Windows Forms Diagram control | Syncfusion®
-description: Learn about Touch Support support in Syncfusion® Windows Forms Diagram control, its elements and more details.
+title: Touch Support in Windows Forms Diagram | Syncfusion®
+description: Enable touch interactions in the Syncfusion® Windows Forms Diagram control with support for tap, double tap, long press, and pinch gestures.
 platform: windowsforms
 control: Diagram
 documentation: ug

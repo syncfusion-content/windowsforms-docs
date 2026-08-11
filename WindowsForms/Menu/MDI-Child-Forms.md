@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: MDI Child Forms in Menus | Windows Forms | Syncfusion
-description: Learn here about MDI Child forms with Syncfusion Windows Forms Toggle Button control, its elements and more details.
+title: MDI Child Forms in Windows Forms Menu | Syncfusion
+description: MDI Child Forms support menu merging, toolbar integration, child form management, and customizable merge behavior.
 platform: WindowsForms
 control: ChildFrameBarManager 
 documentation: ug
 ---
 
-# Windows Forms Menus MDI Child Forms
+# MDI Child Forms in Windows Forms Menus
 
 >**Important**
 Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion license key in your Windows Forms application to use our components.
