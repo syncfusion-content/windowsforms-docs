@@ -1,12 +1,12 @@
----
+﻿---
 layout: post
-title: MaskedEditBox Events | WindowsForms | Syncfusion®
-description: Learn here about how to applying the Syncfusion® Windows Forms MaskedEditBox control events and usage of events.
+title: Events in Windows Forms MaskedTextBox | Syncfusion®
+description: MaskedEditBox events provide notifications for mask validation, text changes, border updates, and control state changes.
 platform: windowsforms
 control: MaskedEditBox
 documentation: ug
 ---
-# MaskedEditBox Events in MaskedEditBox
+# MaskedEditBox Events in MaskedTextBox (MaskedEditBox)
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 

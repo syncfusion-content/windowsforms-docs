@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: TextboxExt Events in Windows Forms TextBox control | Syncfusion
-description: Learn about TextboxExt Events support in Syncfusion Windows Forms TextBox (TextBoxExt) control and more details.
+title: Events in Windows Forms TextBox | Syncfusion®
+description: TextBoxExt events provide notifications for border, text, layout, behavior, and theme-related property changes.
 platform: WindowsForms
 control: TextBoxExt
 documentation: ug
 ---
 
-# TextboxExt Events in Windows Forms TextBox (TextBoxExt)
+# Events in Windows Forms TextBox (TextBoxExt)
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 

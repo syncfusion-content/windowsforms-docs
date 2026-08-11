@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: ChildButtonCustomization in Windows Forms Tools control | Syncfusion®
-description: Learn about ChildButtonCustomization support in Syncfusion® Windows Forms ButtonEdit control and more details.
+title: ChildButton Customization in Windows Forms ButtonEdit | Syncfusion®
+description: Child Button Customization enables configuring button types, alignment, images, styles, focus behavior, and visibility in ButtonEdit.
 platform: WindowsForms
 control: Tools
 documentation: ug
 ---
 
-# ChildButtonCustomization in Windows Forms ButtonEdit
+# ChildButton Customization in Windows Forms ButtonEdit
 
 The child buttons in a [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control are normal windows button, but supports additional features within ButtonEdit control.
 
