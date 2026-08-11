@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Syncfusion® Windows Forms MainFrameBarManager Control | Syncfusion®
+title: About Syncfusion® WinForms MainFrameBarManager | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms MainFrameBarManager control and more details.
 platform: WindowsForms
 control: MainFrameBarManager 

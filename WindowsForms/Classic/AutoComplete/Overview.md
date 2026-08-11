@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Syncfusion® Windows Forms ComboBoxAutoComplete Control | Syncfusion®
+title: About Syncfusion® WinForms ComboBoxAutoComplete | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms ComboBoxAutoComplete control and more details.
 platform: WindowsForms
 control: ComboBoxAutoComplete
