@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Localization in Windows Forms Scroll Frame control | Syncfusion®
-description: Learn about Localization support in Syncfusion® Windows Forms Scroll Frame (SfScrollFrame) control and more details.
+title: Localization in Windows Forms Scroll Frame | Syncfusion®
+description: Localization support enables translating scrollbar context menu content using resource files and culture-specific settings.
 platform: WindowsForms
 control: SfScrollFrame
 documentation: ug
