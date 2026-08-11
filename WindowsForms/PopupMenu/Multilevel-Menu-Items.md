@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Multi-level Menu Items in Windows Forms PopupMenu control | Syncfusion®
-description: Learn about Multi-level Menu Items support in Syncfusion® Windows Forms PopupMenu control and more details.
+title: Multi Level Menu Items in Windows Forms PopupMenu | Syncfusion®
+description: Multi-level menu items support hierarchical menus, nested commands, and child menu structures within popup menus.
 platform: windowsforms
 control: PopupMenu
 documentation: ug
 ---
 
-# Multi-level Menu Items in Windows Forms PopupMenu
+# Multi Level Menu Items in Windows Forms PopupMenu
 
 Multi-level menu items refer to creating and adding submenu or child items to the popup menu. The below code snippet shows how to add submenu or child items to the PopupMenu control.
 
