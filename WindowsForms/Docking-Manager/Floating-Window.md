@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Floating Window in Windows Forms Docking Manager control | Syncfusion®
-description: Learn about Floating Window support in Syncfusion® Windows Forms Docking Manager control and more details.
+title: Floating Window in Windows Forms Docking Manager | Syncfusion®
+description: The floating window feature in Docking Manager lets you drag and float docked panels over any place on the screen with docking hints.
 platform: windowsforms
 control: DockingManager
 documentation: ug

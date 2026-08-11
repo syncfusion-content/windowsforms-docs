@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ToolTip Support in Windows Forms Ribbon control | Syncfusion®
-description: Learn about ToolTip Support in Syncfusion® Windows Forms Ribbon (RibbonControlAdv) control and more details.
+title: ToolTip Support in Windows Forms Ribbon | Syncfusion®
+description: ToolTip support in Ribbon shows a small popup box with information when the user hovers over an element, with SuperTooltip customization.
 platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# ToolTip Support in Windows Forms Ribbon (RibbonControlAdv)
+# ToolTip Support in Windows Forms Ribbon
 
 ToolTip is a small popup box that appears when the user moves the pointer over an element.
 

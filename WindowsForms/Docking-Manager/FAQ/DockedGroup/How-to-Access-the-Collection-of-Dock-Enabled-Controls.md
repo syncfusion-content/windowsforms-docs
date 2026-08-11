@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Collection of DockEnabled Controls | WindowsForms | Syncfusion®
-description: Learn about How to Access the Collection of Dock-Enabled Controls, with Syncfusion® Essential Studio® Windows Forms
+title: How to access the collection of dock-enabled controls in Docking Manager | Syncfusion®
+description: Learn how to access the collection of dock-enabled controls in Syncfusion Windows Forms Docking Manager.
 platform: windowsforms
 control: DockingManager
 documentation: ug
 ---
 
 
-# How to access the collection of Dock-Enabled controls?
+# How to access the collection of dock-enabled controls in Docking Manager
 
 The DockingManager.Controls property returns an enumerator that may be used for accessing the controls that are currently associated with the DockingManager. To access and modify the DockingManager’s control, the contents of the enumerator should first be copied to a temporary collection.
 
