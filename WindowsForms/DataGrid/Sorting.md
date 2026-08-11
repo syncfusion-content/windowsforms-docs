@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sorting in Windows Forms SfDataGrid | Syncfusion®
-description: Learn about sorting in Syncfusion® Windows Forms SfDataGrid, including single-column sorting, multi-column sorting, and custom sorting options.
+description: Sorting in SfDataGrid supports single and multiple column sorting, custom sort logic, and flexible data organization for improved analysis.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug

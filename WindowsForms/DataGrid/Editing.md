@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Editing in Windows Forms SfDataGrid | Syncfusion®
-description: Learn about editing support in Syncfusion® Windows Forms SfDataGrid, including enabling, disabling, and customizing data editing operations.
+description: Editing in SfDataGrid supports cell and record editing, customizable edit modes, event-based validation, and programmatic data updates.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug

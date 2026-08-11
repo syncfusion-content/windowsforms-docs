@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Manipulation in Windows Forms SfDataGrid | Syncfusion®
-description: Learn about data manipulation in Syncfusion® Windows Forms SfDataGrid, including data operations, editing, updating, and managing records efficiently.
+description: Data manipulation in SfDataGrid supports editing, updating, adding, deleting, and managing records efficiently through built-in data operations.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug

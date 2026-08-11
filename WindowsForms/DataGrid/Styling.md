@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Styles in Windows Forms SfDataGrid | Syncfusion®
-description: Learn about styling in Syncfusion® Windows Forms SfDataGrid, including customizing grid elements, themes, cell styles, and visual appearance.
+description: Styles in SfDataGrid support customizing grid appearance, cell and row styles, themes, and visual elements for enhanced user experience.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug

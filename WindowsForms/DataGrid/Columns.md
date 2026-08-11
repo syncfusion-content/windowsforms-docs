@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Columns in Windows Forms SfDataGrid | Syncfusion®
-description: Learn about columns support in Syncfusion® Windows Forms SfDataGrid, including column types, customization options, and data presentation features.
+description: Columns in SfDataGrid support auto-generation, customization, resizing, drag-and-drop, stacked headers, and sizing for flexible data display.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug

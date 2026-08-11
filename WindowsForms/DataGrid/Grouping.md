@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grouping in Windows Forms SfDataGrid | Syncfusion®
-description: Learn about grouping in Syncfusion® Windows Forms SfDataGrid, including grouping data, customizing group views, and organizing records efficiently.
+description: Grouping in SfDataGrid organizes and displays data in groups to improve readability, navigation, and data analysis.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Helpers in Windows Forms SfDataGrid | Syncfusion®
-description: Learn about helper methods in Syncfusion® Windows Forms SfDataGrid, including retrieving row indexes, accessing grid data, and handling grouped records.
+description: Helpers in SfDataGrid provides helper classes and methods to customize grid behavior, access grid elements, and simplify development tasks.
 platform: windowsforms
 control: SfDataGrid 
 documentation: ug

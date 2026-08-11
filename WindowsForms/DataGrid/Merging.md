@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Merge Cells in Windows Forms SfDataGrid | Syncfusion®
-description: Learn about cell merging in Syncfusion® Windows Forms SfDataGrid, including merging adjacent cells, customization options, and enhanced data presentation.
+description: Merge cells in SfDataGrid combines adjacent cells with matching values, enhancing data presentation, readability, and visual organization.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug

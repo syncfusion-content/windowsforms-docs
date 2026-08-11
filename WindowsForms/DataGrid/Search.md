@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Search in Windows Forms SfDataGrid | Syncfusion®
-description: Learn about search functionality in Syncfusion® Windows Forms SfDataGrid, including searching records, filtering results, and using the SearchController.
+description: Search in SfDataGrid enables efficient record searching, result navigation, and customizable search operations through the built-in SearchController.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug

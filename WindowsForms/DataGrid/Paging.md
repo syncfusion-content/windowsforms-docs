@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Paging in Windows Forms SfDataGrid | Syncfusion®
-description: Learn about paging in Syncfusion® Windows Forms SfDataGrid, including pagination support, page navigation, and efficient data viewing options.
+description: Paging in SfDataGrid supports data pagination, page navigation, and efficient viewing of large datasets through organized page-wise records.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug

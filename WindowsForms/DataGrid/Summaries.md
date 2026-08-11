@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Summaries in Windows Forms SfDataGrid | Syncfusion®
-description: Learn about summaries in Syncfusion® Windows Forms SfDataGrid, including table summaries, group summaries, custom calculations, and data aggregation.
+description: Summaries in SfDataGrid support table and group summaries, custom calculations, and data aggregation for meaningful insights and analysis.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug

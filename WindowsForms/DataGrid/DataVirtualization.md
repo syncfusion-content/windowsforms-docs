@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Virtualization in Windows Forms SfDataGrid | Syncfusion®
-description: Learn about data virtualization in Syncfusion® Windows Forms SfDataGrid, including efficient loading, scrolling, and display of large datasets.
+description: Data virtualization in SfDataGrid enables efficient loading, scrolling, and rendering of large datasets for improved performance and responsiveness.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug

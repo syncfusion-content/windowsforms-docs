@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Unbound Column in Windows Forms SfDataGrid | Syncfusion®
-description: Learn about unbound columns in Syncfusion® Windows Forms SfDataGrid, including displaying custom data, calculations, and value customization.
+description: Unbound Column in SfDataGrid displays calculated or custom values that are not directly bound to the underlying data source.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug

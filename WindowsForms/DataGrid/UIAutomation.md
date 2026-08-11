@@ -1,7 +1,7 @@
 ---
 layout: post
 title: UI Automation in Windows Forms SfDataGrid | Syncfusion®
-description: Learn about UI Automation in Syncfusion® Windows Forms SfDataGrid, including accessibility support, automation peers, and automated testing capabilities.
+description: UI Automation in SfDataGrid provides accessibility support, automation peers, and UI automation capabilities for testing and assistive technologies.
 platform: WindowsForms
 control: SfDataGrid 
 documentation: ug

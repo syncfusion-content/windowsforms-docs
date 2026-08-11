@@ -1,14 +1,14 @@
 ---
 layout: post
-title: About Syncfusion® Windows Forms SfDataGrid | Syncfusion®
+title: About Syncfusion® Windows Forms SfDataGrid Control| Syncfusion®
 canonical_url: "https://www.syncfusion.com/winforms-ui-controls/datagrid"
-description: Learn about the overview of Syncfusion® Windows Forms SfDataGrid, including data binding, selection, editing, and other key features.
+description: Learn about the overview of Syncfusion® Windows Forms SfDataGrid Control, including data binding, selection, editing, and other key features.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
 ---
 
-# About Syncfusion® Windows Forms SfDataGrid
+# About Syncfusion® Windows Forms SfDataGrid Control
 
 The [Windows Forms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) control is used to display collection of data in rows and columns. The SfDataGrid control includes editing and data shaping features (Sorting, grouping, filtering and etc) that allows the end users to easily manage the data.
 Following are the key features of SfDataGrid control

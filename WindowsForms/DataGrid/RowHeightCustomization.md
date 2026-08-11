@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Row Height Customization in Windows Forms SfDataGrid | Syncfusion®
-description: Learn about row height customization in Syncfusion® Windows Forms SfDataGrid, including resizing rows, dynamic height adjustment, and display customization.
+description: Row Height Customization in SfDataGrid customizes row heights dynamically to improve data display, readability, and user experience.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug

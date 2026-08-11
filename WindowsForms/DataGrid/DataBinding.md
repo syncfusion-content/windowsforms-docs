@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding in Windows Forms SfDataGrid | Syncfusion®
-description: Learn about data binding in Syncfusion® Windows Forms SfDataGrid, including binding to various data sources and managing data efficiently.
+description: Data binding in SfDataGrid supports connecting to various data sources, enabling efficient data management, display, and synchronization.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug

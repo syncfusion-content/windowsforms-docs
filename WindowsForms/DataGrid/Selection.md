@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in Windows Forms SfDataGrid | Syncfusion®
-description: Learn about selection support in Syncfusion® Windows Forms SfDataGrid, including row selection, cell selection, multiple selection, and customization options.
+description: Selection in SfDataGrid supports row, cell, and multiple selection modes with customizable behaviors for efficient data interaction and navigation.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug

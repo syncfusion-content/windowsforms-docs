@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Serialization in Windows Forms SfDataGrid | Syncfusion®
-description: Learn about serialization and deserialization in Syncfusion® Windows Forms SfDataGrid, including saving and restoring grid settings and layouts.
+description: Serialization in SfDataGrid supports saving and restoring grid settings, layouts, and configurations through serialization and deserialization.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Drag and Drop in Windows Forms SfDataGrid | Syncfusion®
-description: Learn about drag-and-drop functionality in Syncfusion® Windows Forms SfDataGrid, including row dragging, column dragging, and drop operations.
+description: Drag and Drop in SfDataGrid supports row and column reordering, enabling flexible data organization and intuitive user interactions.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug

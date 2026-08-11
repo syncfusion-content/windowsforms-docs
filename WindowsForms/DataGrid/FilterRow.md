@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Filter Row in Windows Forms SfDataGrid | Syncfusion®
-description: Learn about the Filter Row feature in Syncfusion® Windows Forms SfDataGrid, including customization options and row-based filtering capabilities.
+description: Filter Row in SfDataGrid provides row-based filtering with customizable filter options, enabling quick and efficient data searching.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Unbound Rows in Windows Forms SfDataGrid | Syncfusion®
-description: Learn about unbound rows in Syncfusion® Windows Forms SfDataGrid, including adding custom rows, displaying calculated data, and row customization.
+description: Unbound Rows in SfDataGrid display custom rows for calculations, summaries, and additional information independent of the data source.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization in Windows Forms SfDataGrid | Syncfusion®
-description: Learn about localization support in Syncfusion® Windows Forms SfDataGrid, including customizing default strings, messages, and user interface text.
+description: Localization in SfDataGrid supports customizing default strings, messages, and interface text to provide a localized user experience.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug

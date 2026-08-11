@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Filtering in Windows Forms SfDataGrid | Syncfusion®
-description: Learn about data filtering in Syncfusion® Windows Forms SfDataGrid, including Excel-like filtering, filter conditions, and data analysis capabilities.
+description: Filtering in SfDataGrid supports Excel-like filtering, custom filter conditions, and data analysis for efficient record retrieval and management.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug

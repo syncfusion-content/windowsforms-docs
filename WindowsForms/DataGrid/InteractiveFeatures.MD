@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Interactive Features in Windows Forms SfDataGrid | Syncfusion®
-description: Learn about interactive features in Syncfusion® Windows Forms SfDataGrid, including context menus, column chooser, tooltips, and customization options.
+description: Interactive features in SfDataGrid provide context menus, column chooser, tooltips, and customization options for enhanced user interaction.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug

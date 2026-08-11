@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Validation in Windows Forms SfDataGrid | Syncfusion®
-description: Learn about data validation in Syncfusion® Windows Forms SfDataGrid, including validation rules, error notifications, and input validation support.
+description: Data validation in SfDataGrid supports validation rules, input checking, and error notifications to ensure accurate and reliable data entry.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug

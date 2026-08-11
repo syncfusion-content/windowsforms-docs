@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Column Types in Windows Forms SfDataGrid | Syncfusion®
-description: Learn about the various column types in Syncfusion® Windows Forms SfDataGrid, including Text, Numeric, DateTime, ComboBox, and other data columns.
+description: Column types in SfDataGrid support displaying and editing text, numeric, date, checkbox, image, hyperlink, and other data formats.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
