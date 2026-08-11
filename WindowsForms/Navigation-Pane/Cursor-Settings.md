@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Cursor Settings in Windows Forms Navigation Pane control | Syncfusion
-description: Learn about Cursor Settings support in Syncfusion Windows Forms Navigation Pane (GroupBar) control and more details.
+title: Cursor Settings in Windows Forms Navigation Pane | Syncfusion®
+description: Cursor settings allow customizing pointer behavior for GroupBar controls and navigation items during user interaction.
 platform: WindowsForms
 control: GroupBar
 documentation: ug

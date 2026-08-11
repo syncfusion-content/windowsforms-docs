@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Style in Windows Forms Navigation Pane control | Syncfusion
-description: Learn about Style support in Syncfusion Windows Forms Navigation Pane (GroupView) control and more details.
+title: Style in Windows Forms Navigation Pane | Syncfusion®
+description: Style settings provide built-in themes including Metro and Office 2016 color schemes for GroupView controls.
 platform: WindowsForms
 control: GroupBar
 documentation: ug
