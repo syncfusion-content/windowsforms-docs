@@ -1,13 +1,13 @@
 ---
 layout: post
-title: User interaction in Windows-Forms Map Control | Syncfusion®
-description: Learn here all about User interaction feature of Syncfusion® Windows-Forms Map (Maps) control and more.
+title: User Interactions in Windows Forms Maps | Syncfusion®
+description: User interactions in the Windows Forms Maps enable zooming, panning, selection, and interactive exploration of map data and elements.
 platform: windowsforms
 control: Maps
 documentation: ug
 ---
 
-# User interaction in Windows Forms Map (Maps)
+# User Interactions in Windows Forms Maps
 
 Options such as zooming, selection, and tooltip enable effective interaction on map elements.
 

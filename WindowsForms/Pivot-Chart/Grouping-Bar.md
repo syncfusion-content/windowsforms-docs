@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Grouping Bar in Windows Forms Pivot Chart control | Syncfusion
-description: Learn about Grouping Bar support in Syncfusion® Windows Forms Pivot Chart control, its elements and more details.
+title: Grouping Bar in Windows Forms Pivot Chart | Syncfusion®
+description: Grouping bar in the Windows Forms Pivot Chart enables interactive organization, filtering, and arrangement of pivot fields for data analysis.
 platform: windowsforms
 control: PivotChart
 documentation: ug

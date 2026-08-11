@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Bubbles in Windows-Forms Map Control | Syncfusion®
-description: Learn here all about the Bubbles feature of the Syncfusion® Windows Forms Map (Maps) control and more.
+title: Bubble Markers in Windows Forms Maps | Syncfusion®
+description: Bubble markers in the Windows Forms Maps visualize bound data values and support customization of size, color, and appearance.
 platform: windowsforms
 control: Maps
 documentation: ug
 ---
 
-# Bubbles in Windows Forms Map (Maps)
+# Bubble Markers in Windows Forms Maps
 
 Bubbles in the maps control represent the underlying bound data values of the map. Bubbles are scattered throughout the map shapes, which contain bound values.
 

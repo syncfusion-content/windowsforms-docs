@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Sparkline control | Syncfusion
-description: Learn here about getting started with Syncfusion® Windows Forms Sparkline control, its elements and more details.
+title: Getting Started with Windows Forms Sparkline | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms Sparkline control. Explore setup, data binding, features, and customization options.
 platform: windowsforms
 control: Sparkline
 documentation: ug

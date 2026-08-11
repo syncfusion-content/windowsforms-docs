@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-filter-particular-set-of-data-points-in-the | Windows Forms | Syncfusion
-description: how to filter particular set of data points in the chart series
+title: How to filter data points in Windows Forms Chart | Syncfusion®
+description: Learn how to filter specific data points in a Windows Forms Chart series and display only the required data for visualization.
 platform: windowsforms
 control: chart
 documentation: ug
 ---
 
-# How to filter particular set of data points in the Chart Series
+# How to filter data points in Windows Forms Chart
 
 Data is filtered on a series-by-series basis. When series data points are filtered, they can be either removed from the Series Points collection or marked as Empty.
 

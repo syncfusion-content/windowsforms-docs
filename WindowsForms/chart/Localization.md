@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in Windows Forms Chart control | Syncfusion
-description: Learn about Localization support in Syncfusion Essential Studio® Windows Forms Chart control and more details.
+title: Localization in Windows Forms Chart | Syncfusion®
+description: Localization in the Windows Forms Chart enables chart content and user interface elements to be displayed in different languages and regional settings.
 platform: windowsforms
 control: Chart
 documentation: ug

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Legend in Windows Forms Smith Chart control | Syncfusion®
-description: Learn about Legend support in Syncfusion® Windows Forms Smith Chart (SfSmithChart) control and more details.
+title: Legend in Windows Forms Smith Chart | Syncfusion®
+description: Legend in the Windows Forms Smith Chart identifies data series and chart elements, supporting customization, positioning, and display options.
 platform: windowsforms
 control: SfSmithChart
 documentation: ug
 ---
-# Legend in Windows Forms Smith Chart (SfSmithChart)
+# Legend in Windows Forms Smith Chart
 
 Legend contains a list of chart series that appears in the Smith chart. It can be defined by using the following code example.
 
