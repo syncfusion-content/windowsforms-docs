@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in Windows Forms Docking Manager control | Syncfusion®
-description: Learn about Appearance support in Syncfusion® Windows Forms Docking Manager control and more details.
+title: Appearance in Windows Forms Docking Manager | Syncfusion®
+description: The appearance of the Docking Manager control lets you customize themes, visual styles, colors, and more for dock, float, and auto hide windows.
 platform: windowsforms
 control: DockingManager 
 documentation: ug

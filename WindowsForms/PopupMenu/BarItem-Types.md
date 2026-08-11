@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: BarItem Types in Windows Forms PopupMenu control | Syncfusion®
-description: Learn about BarItem Types support in Syncfusion® Windows Forms PopupMenu control, its elements and more details.
+title: BarItem Types in Windows Forms PopupMenu | Syncfusion®
+description: BarItem types include standard items, parent items, drop-downs, combo boxes, list items, text boxes, and static items.
 platform: windowsforms
 control: PopupMenu
 documentation: ug

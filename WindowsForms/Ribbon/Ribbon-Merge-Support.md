@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ribbon Merge Support in Windows Forms Ribbon control | Syncfusion®
-description: Learn about Ribbon Merge Support in Syncfusion® Windows Forms Ribbon (RibbonControlAdv) control and more details.
+title: Ribbon Merge Support in Windows Forms Ribbon | Syncfusion®
+description: Ribbon Merge support lets you merge the RibbonPanel in a child form to the RibbonPanel of the parent form in MDI scenarios.
 platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# Ribbon Merge Support in Windows Forms Ribbon (RibbonControlAdv)
+# Ribbon Merge Support in Windows Forms Ribbon
 
 RibbonControlAdv allows merging of RibbonPanel in a child form to the RibbonPanel of the parent form.
 `RibbonPanelMergeContainer` is the container of TabItems and ToolStripEx items for the child form. When merged, the items present in this container will be merged with the parent form.
