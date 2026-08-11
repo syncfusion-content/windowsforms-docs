@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: MultiColumnTreeView Features in MultiColumn TreeView | Syncfusion®
-description: Learn about MultiColumnTreeView Features support in Syncfusion® Windows Forms MultiColumn TreeView control and more details.
+description: MultiColumnTreeView features include multi-selection, keyboard search, auto-sizing, undo-redo support, tooltips, and performance optimization.
 platform: WindowsForms
 control: MultiColumnTreeView
 documentation: ug
