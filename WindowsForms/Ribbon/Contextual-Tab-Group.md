@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Contextual Tab Group in Windows Forms Ribbon control | Syncfusion®
-description: Learn about Contextual Tab Group support in Syncfusion® Windows Forms Ribbon (RibbonControlAdv) control and more details.
+title: Contextual Tab Group in Windows Forms Ribbon | Syncfusion®
+description: The contextual tab group in Ribbon displays commands relevant only when a particular object type is selected in the application.
 platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# Contextual Tab Group in Windows Forms Ribbon (RibbonControlAdv)
+# Contextual Tab Group in Windows Forms Ribbon
 
 Use a contextual tab to display a collection of commands that are relevant only when users select an object type, they are displayed only when a particular object type is selected.
 

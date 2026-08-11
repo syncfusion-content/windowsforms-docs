@@ -1,13 +1,13 @@
 ---
 layout: post
-title: MiniToolBar in Windows Forms Ribbon control | Syncfusion®
-description: Learn about MiniToolBar support in Syncfusion® Windows Forms Ribbon (RibbonControlAdv) control and more details.
+title: Mini ToolBar in Windows Forms Ribbon | Syncfusion®
+description: The Mini ToolBar in Ribbon appears when the user selects and right-clicks on text, offering options to customize the selected text.
 platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# MiniToolBar in Windows Forms Ribbon (RibbonControlAdv)
+# Mini ToolBar in Windows Forms Ribbon
 
 Essential Tools comes with a MiniToolBar control with a look and feel similar to Microsoft Office 2007. It appears when the user selects and right-clicks on the text. It gives options to customize the selected text. It appears blurred initially, but becomes prominent when the mouse hovers over it.
 
