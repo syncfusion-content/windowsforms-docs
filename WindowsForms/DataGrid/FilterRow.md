@@ -1,13 +1,13 @@
 ---
 layout: post
-title: FilterRow | DataGrid Control for Windows Forms | Syncfusion®
-description: This section explains about the filter row feature and it's customization in datagrid control for windows forms
+title: Filter Row in Windows Forms SfDataGrid | Syncfusion®
+description: Filter Row in SfDataGrid provides row-based filtering with customizable filter options, enabling quick and efficient data searching.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
 ---
 
-# FilterRow in Windows Forms DataGrid (SfDataGrid)
+# Filter Row in Windows Forms SfDataGrid
 [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) provides built-in row (called FilterRow) to filter the records. This FilterRow can be enabled by specifying the position where it should be displayed by setting [SfDataGrid.FilterRowPosition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_FilterRowPosition) property.
 
 {% tabs %}

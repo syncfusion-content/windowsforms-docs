@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ExportToExcel in SfDataGrid | Syncfusion®
-description: Learn about exporting datagrid to excel support in Syncfusion® WinForms DataGrid (SfDataGrid) control and more details.
+title: Export To Excel in Windows Forms SfDataGrid | Syncfusion®
+description: Export To Excel in SfDataGrid supports exporting records with customization options, formatting, and styles for efficient spreadsheet generation.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
 ---
 
-# Export to Excel in WinForms DataGrid (SfDataGrid)
+# Export To Excel in Windows Forms SfDataGrid
 [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) provides support to export data to excel. It also provides support for grouping, filtering, sorting, paging, unbound rows and stacked headers while exporting.
 The following assemblies needs to be added for exporting to excel.
 
@@ -948,7 +948,7 @@ workBook.SaveAs("Sample.xlsx")
 
 ![Windows forms datagrid displays applied colors in specific range to exported excel](ExportToExcel_images/ExportToExcel_img9.jpeg)
 
-#### Exporting Multiple SfDataGrid to Single Excel Sheet
+### Exporting Multiple SfDataGrid to Single Excel Sheet
 The multiple grids can also be exported to the same worksheet by using the `UsedRange.CopyTo` method.
 {% tabs %}
 {% highlight c# %}
