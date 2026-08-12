@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Configuring Child Controls in WinForms LayoutManagers | Syncfusion®
-description: Learn about Configuring Child Controls support in Syncfusion® Windows Forms LayoutManagers control and more details.
+title: Configure Child Controls in Windows Forms GridBagLayout | Syncfusion®
+description: Configure child controls using grid positions, spanning, weights, anchoring, fill behavior, padding, and layout constraints.
 platform: windowsforms
 control: GridBagLayout
 documentation: ug
 ---
 
-# Configuring Child Controls in Windows Forms LayoutManagers
+# Configure Child Controls in Windows Forms LayoutManagers
 
 The `GridBagLayout` is completely configured through the GridBag constraints set for each child component. The number of rows and columns in the virtual grid is also derived from the specified constraints. The constraints for each child component on the GridBagLayout can be specified through designer and programmatically.
 
