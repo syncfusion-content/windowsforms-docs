@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Creating-NavigationView | WindowsForms | Syncfusion®
-description: Learn here all about the creating navigationview of Syncfusion® Windows Forms NavigationView control and more.
+title: Create NavigationView in Windows Forms | Syncfusion®
+description: Learn how to create a NavigationView control in Windows Forms using the designer or code, add parent and child bars, and configure its appearance.
 platform: windowsforms
 control: Navigation View 
 documentation: ug
 ---
 
-# Creating NavigationView in Windows Forms
+# Create NavigationView in Windows Forms
 
 Navigation View can be created in the following ways:
 

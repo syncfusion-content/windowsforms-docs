@@ -7,7 +7,7 @@ control: SplitButton
 documentation: ug
 ---
 
-# Windows Forms Split Button Overview
+# About Syncfusion® Windows Forms SplitButton Control
 
 The **"SplitButton"** control is like a combination of control that behaves like a Button and dropdown menu which provide access to create a dropdown button-like interface. Using this control, you can perform different operations with dropdown items as like menu hierarchy. 
 

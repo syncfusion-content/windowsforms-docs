@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Overview of GroupView control | Windows Forms | Syncfusion
-description: GroupView control provides a rich customizable layout to arrange the items, wide variety of visual theme, image settings and much more.
+title: About Syncfusion® Windows Forms GroupView Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms GroupView control and more details.
 platform: WindowsForms
 control: GroupView
 documentation: ug
 ---
-# Control overview
+# About Syncfusion® Windows Forms GroupView Control
 
 The various sections of GroupView and their description are given below.
 
