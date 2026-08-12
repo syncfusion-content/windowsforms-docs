@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion® Essential Studio® Windows Forms products
-description: Over 100 WinForms (Windows Forms) controls like DataGrid, Charts, Docking, PDF Viewer and much more to build desktop applications.
+title: About Syncfusion® Windows Forms Control | Syncfusion®
+description: Learn about introduction of Syncfusion® Essential Studio Windows Forms controls and comprehensive collection of over 100 controls.
 platform: windowsforms
 control: Introduction
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 > With the 2025 Volume 1 release, we will discontinue support for .NET 6.0 and 7.0 in WinForms, WPF, WinUI, and Document Processing Libraries. Please plan to upgrade to .NET 8.0 or higher.
 
-# Welcome to Syncfusion<sup>®</sup> Essential<sup>®</sup> Windows Forms
+# About Syncfusion® Windows Forms Control
 
 Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> for Windows Forms is a comprehensive collection of over 100 Essential<sup>®</sup> Windows Forms controls like Grids, Charts, Diagram, Scheduler, and Tools for building powerful line-of-business applications faster. Syncfusion<sup>®</sup> Windows Forms controls provide unparalleled performance, stunning built-in themes, touch-friendly UI, localization and seamless integration with Visual Studio.
 

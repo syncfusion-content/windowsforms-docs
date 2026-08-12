@@ -1,13 +1,13 @@
 ---
 layout: post
-title: .NET Core | Windows Forms | Syncfusion®
-description: Learn here about how to creating the Windows Forms Applications using .NET Core and the Syncfusion® Windows Forms controls
+title: .NET Core Support in Windows Forms | Syncfusion®
+description: Learn how to create Windows Forms applications using .NET Core and Syncfusion® Windows Forms controls.
 platform: windowsforms
 control: .NET Core
 documentation: ug
 ---
 
-# Using Syncfusion WinForms with .NET Core
+# .NET Core Support in Windows Forms
 
 Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> for Windows Forms provides .NET Core assemblies for building Windows Forms .NET Core applications using Syncfusion<sup>®</sup> Controls. This section explains how to create the project in a .NET Core application and using Syncfusion<sup>®</sup> Windows Forms controls.
 
