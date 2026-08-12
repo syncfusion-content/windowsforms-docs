@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Row Height Customization in WinForms DataGrid control | Syncfusion®
-description: Learn here all about row height customization feature of Syncfusion® Windows Forms DataGrid (SfDataGrid) control and more.
+title: Row Height Customization in Windows Forms SfDataGrid | Syncfusion®
+description: Row Height Customization in SfDataGrid customizes row heights dynamically to improve data display, readability, and user experience.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
 ---
 
-# Row Height Customization in Windows Forms DataGrid (SfDataGrid)
+# Row Height Customization in Windows Forms SfDataGrid
 
 The height of the default row and Header row can be changed by using the [SfDataGrid.RowHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_RowHeight) and [SfDataGrid.HeaderRowHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_HeaderRowHeight) property.
 

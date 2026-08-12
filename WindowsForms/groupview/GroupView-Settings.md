@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: GroupView Settings in Windows Forms GroupView control | Syncfusion
-description: Learn about GroupView Settings support in Syncfusion Windows Forms GroupView control and more details.
+title: GroupView Settings in Windows Forms GroupView Control | Syncfusion®
+description: GroupView settings support appearance customization, drag-and-drop behavior, spacing configuration, and integrated scrolling.
 platform: WindowsForms
 control: GroupView
 documentation: ug

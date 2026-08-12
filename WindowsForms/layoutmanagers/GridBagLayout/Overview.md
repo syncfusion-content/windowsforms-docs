@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Windows Forms LayoutManagers control | Syncfusion®
-description: Learn about introduction of Syncfusion® Windows Forms LayoutManagers control, its elements and more details.
+title: About Syncfusion® Windows Forms GridBagLayout Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms GridBagLayout control and more details.
 platform: windowsforms
 control: GridBagLayout
 documentation: ug
 ---
 
-# Windows Forms GridBagLayout Overview
+# About Syncfusion® Windows Forms GridBagLayout Control
 
 `GridBagLayout` is a layout manager. It allows you arrange the child controls in a virtual grid of rows and columns. But, unlike the GridLayout, the size of the columns/rows varies, and the child controls may span to more than one cell.
 
