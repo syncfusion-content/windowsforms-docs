@@ -34,7 +34,7 @@ Me.groupBar1.Cursor = System.Windows.Forms.Cursors.Cross
 
 
 
-#### Cursor settings for GroupBar items
+### Cursor settings for GroupBar items
 
 You can set different types of cursors when the mouse pointer is over the GroupBar Items using [GroupBarItemCursor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_GroupBarItemCursor) property. The cursors available are Mouse, Cross, Help, Hand, and so on. The default cursor is 'Arrow'.
 
