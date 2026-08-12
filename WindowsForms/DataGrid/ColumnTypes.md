@@ -1447,7 +1447,7 @@ End Sub
 
 [GridProgressBarColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridProgressBarColumn.html) provides support to display non-editable integer type data.
 
-#### Changing boundary values of progress
+### Changing boundary values of progress
 
 You can change the boundary values of ProgressBar using the `Maximum` and `Minimum` properties.
 
