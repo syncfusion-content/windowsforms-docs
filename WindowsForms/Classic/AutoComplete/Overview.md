@@ -1,14 +1,14 @@
 ---
 layout: post
 title: About Syncfusion® WinForms ComboBoxAutoComplete | Syncfusion®
-description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms ComboBoxAutoComplete control and more details.
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms ComboBoxAutoComplete (Classic) control and more details.
 platform: WindowsForms
 control: ComboBoxAutoComplete
 documentation: ug
 ---
 
 
-# About Syncfusion® Windows Forms ComboBoxAutoComplete Control
+# About Syncfusion® Windows Forms ComboBoxAutoComplete (Classic) 
 
 The ComboBoxAutoComplete control combines a combo box control with an AutoComplete control to provide autocompletion for that instance of the combo box. 
 
