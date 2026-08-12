@@ -224,7 +224,7 @@ The Layout state of GroupBar can be saved and loaded using the [AppStateSerializ
 
 
 
-### Output
+## Output
 
 At run-time, select any GroupBar Item and save it's state using the Save_Button click and close the form.
 
