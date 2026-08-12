@@ -7,7 +7,7 @@ control: Menus Package
 documentation: ug
 ---
 
-# Getting Started with Menu (MainFrameBarManager)
+# Getting Started with Windows Forms Menu (MainFrameBarManager)
 
 This section provides a quick overview for working with the [Menu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) control for Windows Forms.
 
