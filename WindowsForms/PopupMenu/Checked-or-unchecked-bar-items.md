@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Checked/unchecked bar items in Windows Forms PopupMenu | Syncfusion®
-description: Learn about Checked/unchecked bar items support in Syncfusion® Windows Forms PopupMenu control and more details.
+title: Check and Uncheck Bar Items in Windows Forms PopupMenu | Syncfusion®
+description: Checked bar items indicate selection states and allow users to identify and toggle commands within popup menus.
 platform: windowsforms
 control: PopupMenu
 documentation: ug
 ---
 
-# Checked/unchecked bar items in Windows Forms PopupMenu
+# Check and Uncheck Bar Items in Windows Forms PopupMenu
 
 This support will help users to easily acknowledge the selected bar item by using the check mark. The [`Checked`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_Checked) property indicates whether a check mark should appear before the text of the bar item. On runtime, user can toggle the state manually through the [`Click`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_Click) event of the bar item.
 
