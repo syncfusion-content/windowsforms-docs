@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grouping | DataGrid Control for Windows Forms | Syncfusion®
-description: This section explains about the grouping feature and it's customization in datagrid control for windows forms
+title: Grouping in Windows Forms SfDataGrid | Syncfusion®
+description: Grouping in SfDataGrid organizes and displays data in groups to improve readability, navigation, and data analysis.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
 ---
 
-# Grouping in Windows Forms DataGrid (SfDataGrid)
+# Grouping in Windows Forms SfDataGrid
 [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) allows to group the data against one or more columns. When grouping is applied, the data is organized into a hierarchical structure based on matching column values and it is sorted by ascending order.
 
 ## UI Grouping

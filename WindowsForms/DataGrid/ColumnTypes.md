@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Column types in WinForms DataGrid control | Syncfusion®
-description: Learn about different column types support (Text, Numeric, DateTime, ComboBox and so on) in Syncfusion® WinForms DataGrid (SfDataGrid) control and more details.
+title: Column Types in Windows Forms SfDataGrid | Syncfusion®
+description: Column types in SfDataGrid support displaying and editing text, numeric, date, checkbox, image, hyperlink, and other data formats.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
 ---
 
-# Column types in WinForms DataGrid (SfDataGrid) 
+# Column Types in Windows Forms SfDataGrid
 [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) provides support for various built-in column types. Each column has its own properties and renderer to handle different types of data.
 <table>
 <tr>
@@ -1447,7 +1447,7 @@ End Sub
 
 [GridProgressBarColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridProgressBarColumn.html) provides support to display non-editable integer type data.
 
-#### Changing boundary values of progress
+### Changing boundary values of progress
 
 You can change the boundary values of ProgressBar using the `Maximum` and `Minimum` properties.
 
