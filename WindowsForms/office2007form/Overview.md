@@ -7,7 +7,7 @@ control: Office2007 Form
 documentation: ug
 ---
 
-# Windows Forms Office2007Form Overview
+# About Syncfusion® Windows Forms Office2007 Form Control
 
 The `Office2007Form` is an advanced standard Form that offers Microsoft Office2007 like UI and appearance. It allows the end-user to create Microsoft Office2007 like appealing User Interface in their application. It also supports various built-in Color Schemes and customization options that helps user to control its behavior and appearance.
 

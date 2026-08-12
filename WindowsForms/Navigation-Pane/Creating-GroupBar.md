@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Creating GroupBar | WindowsForms | Syncfusion
-description: Learn here all about the Creating GroupBar of Syncfusion Windows Forms Navigation Pane (GroupBar) control and more.
+title: Create GroupBar in Windows Forms | Syncfusion®
+description: Learn how to create a Windows Forms GroupBar control using the designer or code, add GroupBar items, and organize child controls.
 platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---
-# Creating GroupBar in Windows Forms GroupBar
+# Create GroupBar in Windows Forms
 
 This tutorial will show you how a GroupBar is created through the following ways.
 

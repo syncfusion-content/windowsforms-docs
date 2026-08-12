@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Creating GroupView | WindowsForms | Syncfusion
-description: overview
+title: Create GroupView in Windows Forms | Syncfusion®
+description: Learn how to create a GroupView control in Windows Forms using the designer or code, add GroupView items, and configure the control.
 platform: WindowsForms
 control: GroupView
 documentation: ug
 ---
-# Creating GroupView
+# Create GroupView in Windows Forms
 
 This section provides a step-by-step procedure to create a GroupView control through designer and through programmatic approach in a .NET application.
 
@@ -16,20 +16,20 @@ To create a GroupView control and add GroupView Items to it,
 
 1. Drag-and-drop a GroupView control from the VS.NET toolbox onto the form. This will create an instance of the GroupView control on the form.
 
-   ![](Overview_images/Overview_img51.jpeg)
+   ![WindowsForms GroupView is dragged from toolbox](Overview_images/Overview_img51.jpeg)
 
 
 2. In the Properties window, select the GroupViewItems property. The GroupViewItemCollectionEditor will be opened. Click Add, a GroupView Item will be added to the GroupView control.
 
    The text of the GroupView Items is also set using the Collection Editor.
 
-   ![](Overview_images/Overview_img52.jpeg)
+   ![Windows Forms GroupView showing collection editor of item](Overview_images/Overview_img52.jpeg)
   
 
-   ![](Overview_images/Overview_img53.jpeg)
+   ![Windows Forms GroupView add item via collection Editor](Overview_images/Overview_img53.jpeg)
  
 
-   ![](Overview_images/Overview_img54.jpeg)
+   ![Windows Forms GroupView after added the Item](Overview_images/Overview_img54.jpeg)
 
 
 ## Through code
@@ -136,4 +136,4 @@ GroupView control can be created using the GroupView class. GroupView Items can 
 
 	{% endtabs %}
 
-   ![](Overview_images/Overview_img55.jpeg) 
+   ![Winform GroupView with Items](Overview_images/Overview_img55.jpeg) 
