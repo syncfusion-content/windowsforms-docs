@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Columns in Windows Forms DataGrid Control | Syncfusion®
-description: Learn here all about columns support in Syncfusion® Windows Forms DataGrid control, its elements and more details.
+title: Columns in Windows Forms SfDataGrid | Syncfusion®
+description: Columns in SfDataGrid support auto-generation, customization, resizing, drag-and-drop, stacked headers, and sizing for flexible data display.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
 ---
 
-# Columns in WinForms DataGrid (SfDataGrid)
+# Columns in Windows Forms SfDataGrid
 [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) allows to add or remove columns using [SfDataGrid.Columns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_Columns) property. The columns to be added can be chosen from built-in column types or own column can be created and add to the `SfDataGrid.Columns`.
 Below are the built-in column types supported in SfDataGrid. Each column has its own properties to handle different types of data.
 <table>
