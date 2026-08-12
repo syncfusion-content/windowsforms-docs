@@ -1,12 +1,12 @@
 ﻿---
 layout: post
-title: Configure XPTaskBarBox Settings in Windows Forms XPTaskBar | Syncfusion®
+title: XPTaskBarBox Settings in Windows Forms XPTaskBar | Syncfusion®
 description: XPTaskBarBox settings support header customization, animations, tooltips, collapse behavior, and child control hosting.
 platform: windowsforms
 control: XPtaskBar
 documentation: ug
 ---
-# Configure XPTaskBarBox Settings in Windows Forms XPTaskBar
+# XPTaskBarBox Settings in Windows Forms XPTaskBar
 
 This section discusses the appearance and behavior settings of the XPTaskBar Box.
 

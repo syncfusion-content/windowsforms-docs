@@ -11,7 +11,7 @@ documentation: ug
 
 ## Background Color
 
-The [`BackColor`](https://help.syncfusion.com/cr/windowsforms/) property is used to set the background color of XPToolBar control. Background color is used to improve the visual appearance of the control.
+The [`BackColor`](https://help.syncfusion.com/cr/windowsforms) property is used to set the background color of XPToolBar control. Background color is used to improve the visual appearance of the control.
 
 The below code snippet will explain how to set background color of XPToolBar control.
 
@@ -87,7 +87,7 @@ Me.barItem4.Enabled = False
 
 ## Font
 
-The [`Font`](https://help.syncfusion.com/cr/windowsforms/) property is used to set the "FontFamily", "FontStyle", and "FontSize" of XPToolBar control.
+The [`Font`](https://help.syncfusion.com/cr/windowsforms) property is used to set the "FontFamily", "FontStyle", and "FontSize" of XPToolBar control.
 
 
 The below code snippet will explain the procedure to set font for toolbar.
