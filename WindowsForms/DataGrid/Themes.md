@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Theme in winforms datagrid | Syncfusion®
-description: Learn about the theme support and load theme assembly in Syncfusion® WinForms SfDataGrid control and more details.
+title: Theme in Windows Forms SfDataGrid | Syncfusion®
+description: Theme support in SfDataGrid allows applying built-in themes, loading theme assemblies, and customizing visual appearance for a consistent UI.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
 ---
-# Theme in WinForms DataGrid
+# Theme in Windows Forms SfDataGrid
 [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) offers six built in themes for professional representation as follows.
 
 * Office2016Colorful
