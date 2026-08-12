@@ -20,5 +20,5 @@ Me.sfDataGrid1.EnableDataVirtualization = True
 {% endhighlight %}
 {% endtabs %}
 
-### Limitations
+## Limitations
 1. Data update using [LiveDataUpdateMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.LiveDataUpdateMode.html) is not supported.

@@ -948,7 +948,7 @@ workBook.SaveAs("Sample.xlsx")
 
 ![Windows forms datagrid displays applied colors in specific range to exported excel](ExportToExcel_images/ExportToExcel_img9.jpeg)
 
-#### Exporting Multiple SfDataGrid to Single Excel Sheet
+### Exporting Multiple SfDataGrid to Single Excel Sheet
 The multiple grids can also be exported to the same worksheet by using the `UsedRange.CopyTo` method.
 {% tabs %}
 {% highlight c# %}
