@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Features in Windows Forms TrackBar control | Syncfusion®
+title: Features in Windows Forms TrackBar | Syncfusion®
 description: Learn about Features support in Syncfusion® Windows Forms TrackBar (TrackBarEx) control and more details.
 platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# Features in Windows Forms TrackBar (TrackBarEx)
+# Features in Windows Forms TrackBar
 
 The TrackBarEx is a new Office2007 control, which has a track bar or a pointer which slides between the minimum value and maximum value specified. The user can drag the track bar along the line and also, the pointer can be placed at a particular point by clicking a position inside this TrackBar. 
 

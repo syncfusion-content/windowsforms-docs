@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Remove-the-Context-Menu | WindowsForms | Syncfusion®
-description: how to remove the context menu for a particular tab
+title: Remove the context menu for a particular tab | Syncfusion®
+description: Learn how to remove the context menu for a particular tab in Syncfusion Windows Forms TabbedMDIManager by handling the BeforePopup event.
 platform: windowsforms
 control: TabbedMDIManager
 documentation: ug
 ---
 
-# How to remove the Context Menu for a particular tab
+# Remove the context menu for a particular tab
 
 This can be achieved by handling the BeforePopup event of TabbedMDIManager.ContextMenuItem. Before that we should know which tab is currently active. To keep track of this, SelectedIndexChanged event of MDITabPanel can be used.
 

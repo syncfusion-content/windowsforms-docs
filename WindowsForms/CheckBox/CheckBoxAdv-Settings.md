@@ -1,13 +1,13 @@
 ---
 layout: post
-title: CheckBoxAdv Settings in Windows Forms CheckBox control | Syncfusion®
+title: CheckBoxAdv Settings in Windows Forms CheckBox | Syncfusion®
 description: Learn about CheckBoxAdv Settings support in Syncfusion® Windows Forms CheckBox (CheckBoxAdv) control and more details.
 platform: windowsforms
 control: EditorsPackage
 documentation: ug
 ---
 
-# CheckBoxAdv Settings in Windows Forms CheckBox (CheckBoxAdv)
+# CheckBoxAdv Settings in Windows Forms CheckBox
 
 This section discusses the various states of the [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control and the method of associating values with the states.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Serialization Support in Windows Forms TabbedMDI control | Syncfusion®
+title: Serialization Support in Windows Forms TabbedMDI | Syncfusion®
 description: Learn about Serialization Support in Syncfusion® Windows Forms TabbedMDI control, its elements and more details.
 platform: windowsforms
 control: TabbedMDIManager 

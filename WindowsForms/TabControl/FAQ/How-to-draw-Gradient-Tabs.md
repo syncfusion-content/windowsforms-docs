@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How-to-draw-Gradient-Tabs | WindowsForms | Syncfusion®
-description: how to draw gradient tabs
+description: Learn how to draw gradient tabs in Syncfusion Windows Forms TabControlAdv by handling the DrawItem event of TabPageAdv and using LinearGradientBrush.
 platform: windowsforms
 control: TabsPackage
 documentation: ug

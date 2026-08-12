@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-display-BannerIcon-in-Banner-of-HubTile | WindowsForms | Syncfusion®
-description: how to display bannericon in banner of hubtile?
-platform: wpf
+title: Display BannerIcon in Windows Forms HubTile banner | Syncfusion®
+description: Learn how to display BannerIcon in the banner of HubTile in Syncfusion Windows Forms using HubTileShowBannerTileIcon and BannerIcon properties.
+platform: windowsforms
 control: TabbedMDIPackage
 documentation: ug
 ---
 
-# How to display BannerIcon in banner of HubTile?
+# Display BannerIcon in Windows Forms HubTile banner
 
 You can achieve this by using HubTileShowBannerTileIcon and BannerIcon property.
 

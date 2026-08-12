@@ -1,13 +1,13 @@
 ---
 layout: post
-title: HTML Forms in Windows Forms Html Viewer control | Syncfusion®
+title: HTML Forms in Windows Forms Html Viewer | Syncfusion®
 description: Learn about HTML Forms support in Syncfusion® Windows Forms Html Viewer (HTMLUI) control and more details.
 platform: windowsforms
 control: HTML UI
 documentation: ug
 ---
 
-# HTML Forms in Windows Forms Html Viewer (HTMLUI)
+# HTML Forms in Windows Forms Html Viewer
 
 Forms are the containers for placing the elements in a HTML document. HTMLUI supports the usage of forms for developing advanced and decorative pages in the user's application.
 

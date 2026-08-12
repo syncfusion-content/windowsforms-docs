@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Highlight the tab page text | WindowsForms | Syncfusion®
-description: how to highlight the tabpage text using hottrack property
+description: Learn how to highlight the TabPage text when the mouse hovers in Syncfusion Windows Forms TabControlAdv by using the HotTrack property.
 platform: windowsforms
 control: TabsPackage
 documentation: ug

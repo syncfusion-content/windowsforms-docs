@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Alignment Settings in Windows Forms CheckBox control | Syncfusion®
+title: Alignment Settings in Windows Forms CheckBox | Syncfusion®
 description: Learn about Alignment Settings support in Syncfusion® Windows Forms CheckBox (CheckBoxAdv) control and more details.
 platform: windowsforms
 control: EditorsPackage
 documentation: ug
 ---
 
-# Alignment Settings in Windows Forms CheckBox (CheckBoxAdv)
+# Alignment Settings in Windows Forms CheckBox
 
 This section discusses the alignment settings of the [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control.
 

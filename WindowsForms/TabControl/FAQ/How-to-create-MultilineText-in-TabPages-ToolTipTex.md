@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MultilineText in tab page tooltip| WindowsForms | Syncfusion®
-description: how to create multilinetext in tabpages tooltiptext
+description: Learn how to create multi-line text in TabPages ToolTipText of Syncfusion Windows Forms TabControlAdv control using the ShowToolTips property.
 platform: windowsforms
 control: TabsPackage
 documentation: ug

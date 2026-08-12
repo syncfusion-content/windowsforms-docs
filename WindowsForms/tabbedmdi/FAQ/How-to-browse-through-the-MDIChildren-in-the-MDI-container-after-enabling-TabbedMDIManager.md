@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-browse-through-the-MDIChildren | WindowsForms | Syncfusion®
-description: how to browse through the mdichildren in the mdicontainer after enabling tabbedmdimanager
+title: Browse MDIChildren after enabling TabbedMDIManager | Syncfusion®
+description: Learn how to browse through the MDIChildren in the MDI container after enabling the Syncfusion Windows Forms TabbedMDIManager.
 platform: windowsforms
 control: TabbedMDIManager
 documentation: ug
 ---
 
-# How to browse through the MDIChildren in the MDIContainer after enabling TabbedMDIManager
+# Browse MDIChildren after enabling TabbedMDIManager
 
 You should not use the MDIContainer form’s [MDIChildren](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_MdiChildren) property to browse through the MDIChildren. This is because the TabbedMDI Framework introduces some additional MDIChildren into your MDIContainer that are not part of your application logic.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How-to-create-custom-tab-renderer-class | WindowsForms | Syncfusion®
-description: how to create custom tab renderer class
+description: Learn how to create a custom tab renderer class in Syncfusion Windows Forms TabControlAdv to fully control the appearance and behavior of tabs.
 platform: windowsforms
 control: TabsPackage
 documentation: ug

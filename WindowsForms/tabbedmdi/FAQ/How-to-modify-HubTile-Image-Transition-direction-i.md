@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-modify-HubTile-Image-Transition-direction-i | WindowsForms | Syncfusion®
-description:  how to modify hubtile image transition direction in runtime?
-platform: wpf
+title: Modify HubTile Image Transition direction | Syncfusion®
+description: Learn how to modify HubTile image transition direction at runtime in Syncfusion Windows Forms using the HubTileSlideTransition property.
+platform: windowsforms
 control: TabbedMDIPackage
 documentation: ug
 ---
 
-#  How to modify HubTile Image Transition direction in runtime?
+# Modify HubTile Image Transition direction
 
 You can set HubTileSlideTransition property to achieve this.
 

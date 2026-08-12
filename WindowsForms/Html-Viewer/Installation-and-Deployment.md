@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Installation-and-Deployment | WindowsForms | Syncfusion®
-description: installation and deployment
+title: Installation and Deployment of Html Viewer | Syncfusion®
+description: Learn about the installation and deployment of Syncfusion Windows Forms Html Viewer (HTMLUI) control, install location, and patches.
 platform: windowsforms
 control: HTML UI
 documentation: ug
 ---
 
-# Installation and deployment
+# Installation and Deployment of Html Viewer
 
 This section covers information on the install location, samples, licensing, patches update and updation of the recent version of Essential Studio<sup>®</sup>. It comprises the following subsections:
 

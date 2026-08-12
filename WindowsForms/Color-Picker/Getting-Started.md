@@ -6,7 +6,7 @@ platform: windowsforms
 control: ColorPickerUIAdv
 documentation: ug
 ---
-# Getting Started with Windows Forms Color Picker (ColorPickerUIAdv)
+# Getting Started with Windows Forms Color Picker
 
 This section briefly describes how to create a new Windows Forms project in Visual Studio and add **ColorPickerUIAdv** with its basic functionalities.
 

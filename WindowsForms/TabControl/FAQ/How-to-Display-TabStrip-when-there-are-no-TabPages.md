@@ -1,7 +1,7 @@
 ---
 layout: post
 title: TabStrip without tab page | WindowsForms | Syncfusion®
-description: how to display tabstrip when there are no tabpages
+description: Learn how to display the tab strip in Syncfusion Windows Forms TabControlAdv when no TabPages are added by using the ReserveTabSpace property.
 platform: windowsforms
 control: TabsPackage
 documentation: ug

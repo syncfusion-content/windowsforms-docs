@@ -7,7 +7,7 @@ control: SfNumericTextBox
 documentation: ug
 ---
 
-# Getting Started with Windows Forms Numeric TextBox (SfNumericTextBox)
+# Getting Started with Windows Forms Numeric TextBox
 
 This section briefly describes how to create a new Windows Forms project in Visual Studio and add **SfNumericTextBox** with its basic functionalities.
 

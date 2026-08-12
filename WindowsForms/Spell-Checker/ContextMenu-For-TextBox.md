@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Context-Menu-For-TextBox | WindowsForms | Syncfusion®
-description: context menu for textbox
+description: Learn how to add Microsoft Office-style context menu suggestions to the TextBox control in Syncfusion Windows Forms SpellCheckerAdv control.
 platform: windowsforms
 control: SpellCheckerAdv
 documentation: ug

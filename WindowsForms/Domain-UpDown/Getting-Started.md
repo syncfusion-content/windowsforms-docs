@@ -7,7 +7,7 @@ control: DomainUpdownExt
 documentation: ug
 ---
 
-# Getting Started with Windows Forms Domain UpDown (DomainUpdownExt)
+# Getting Started with Windows Forms Domain UpDown
 
 ## Assembly deployment
 

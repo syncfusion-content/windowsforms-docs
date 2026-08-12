@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Configuring FlowLayout in WinForms LayoutManagers | Syncfusion®
+title: Configuring FlowLayout in Windows Forms FlowLayout | Syncfusion®
 description: Learn about Configuring FlowLayout support in Syncfusion® Windows Forms LayoutManagers control and more details.
 platform: windowsforms
 control: FlowLayout
 documentation: ug
 ---
 
-# Configuring FlowLayout in Windows Forms LayoutManagers
+# Configuring FlowLayout in Windows Forms FlowLayout
 
 ## Layout mode
 

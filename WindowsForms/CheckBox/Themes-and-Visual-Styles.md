@@ -7,7 +7,7 @@ control: EditorsPackage
 documentation: ug
 ---
 
-# Themes and Visual Styles in Windows Forms CheckBox (CheckBoxAdv)
+# Themes and Visual Styles in Windows Forms CheckBox
 
 This section discusses the themes and visual style settings supported by the [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control.
 

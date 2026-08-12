@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization in Windows Forms Html Viewer control | Syncfusion®
+title: Localization in Windows Forms Html Viewer | Syncfusion®
 description: Learn about Localization support in Syncfusion® Windows Forms Html Viewer (HTMLUI) control and more details.
 platform: windowsforms
 control: HTMLUIControl
 documentation: ug
 ---
 
-# Localization in Windows Forms Html Viewer (HTMLUI)
+# Localization in Windows Forms Html Viewer
 
 Localization is the process of making application multilingual by formatting the content according to the cultures. HTMLUIControl can be localized in any Languages, based on application requirement by following below steps.
 

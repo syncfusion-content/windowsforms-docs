@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DataBind CheckBoxAdv To BitField SQLDatabase| WindowsForms| Syncfusion
-description: This section gives detailed description on how to databind a CheckBoxAdv to Bit Field in SQL Database.
+title: Databind CheckBoxAdv to Bit Field in SQL Database | Syncfusion®
+description: Learn how to databind Syncfusion Windows Forms CheckBoxAdv to a Bit Field in an SQL Database using the BoolValue property.
 platform: windowsforms
 control: EditorsPackage
 documentation: ug
 ---
 
-# How to Databind a CheckBoxAdv to Bit Field in SQL Database 
+# Databind CheckBoxAdv to Bit Field in SQL Database 
 
 The [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) [BoolValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_BoolValue) property can be used to data bind to bit values as illustrated below.
 

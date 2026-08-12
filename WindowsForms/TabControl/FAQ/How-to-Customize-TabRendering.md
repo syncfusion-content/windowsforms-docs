@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How-to-Customize-TabRendering | WindowsForms | Syncfusion®
-description: how to customize tabrendering
+description: Learn how to customize tab rendering in Syncfusion Windows Forms TabControlAdv by handling the DrawItem event for full control over tab appearance.
 platform: windowsforms
 control: TabsPackage
 documentation: ug

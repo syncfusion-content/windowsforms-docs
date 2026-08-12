@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Print-the-Contents-Of-the-HTMLUIControl | WindowsForms | Syncfusion®
-description: how to print the contents of the htmlui control?
+title: Print the Contents Of the HTMLUIControl | Syncfusion®
+description: Learn how to print the Contents Of the HTMLUIControl in Syncfusion Windows Forms Html Viewer (HTMLUI) control.
 platform: windowsforms
 control: HTMLUIControl
 documentation: ug
 ---
 
-# How to print the contents of the HTMLUI control?
+# Print the Contents Of the HTMLUIControl
 
 The document available in the HTMLUI control can be printed with the help of the [HTMLUIPrintDocument](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIPrintDocument.html) class. The Print method of this class is used to start the document printing process.
 

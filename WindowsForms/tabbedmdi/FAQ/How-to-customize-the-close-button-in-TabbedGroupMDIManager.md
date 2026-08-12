@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-customize-the-close-button | WindowsForms | Syncfusion®
-description: how to customize the close button in tabbedgroupmdimanager
+title: Customize the close button in TabbedGroupMDIManager | Syncfusion®
+description: Learn how to customize the close button in Syncfusion Windows Forms TabbedGroupMDIManager by deriving and overriding GetCloseButtonBounds.
 platform: windowsforms
 control: TabbedMDIManager
 documentation: ug
 ---
 
-# How to customize the close button in TabbedGroupMDIManager
+# Customize the close button in TabbedGroupMDIManager
 
 This can be achieved by deriving TabbedGroupMDIManager class and overriding [GetCloseButtonBounds](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MDITabPanel.html#Syncfusion_Windows_Forms_Tools_MDITabPanel_GetCloseButtonBounds) method as follows.
 

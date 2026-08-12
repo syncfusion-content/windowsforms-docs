@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to set image for Slider in Toggle Button | Syncfusion®
-description: how to set image for slider in Syncfusion® Windows Forms Toggle Button control, its elements and more details.
+title: Set image for Slider in Windows Forms Toggle Button | Syncfusion®
+description: Learn how to set an image for the Slider in Syncfusion Windows Forms Toggle Button using the Image property with a code example.
 platform: windowsforms
 control: Toggle Button
 documentation: ug
 ---
 
-# How to Set Image for Slider in Toggle Button
+# Set image for Slider in Windows Forms Toggle Button
 
 You can set the image through the Image property. Following code example illustrates the same.
 

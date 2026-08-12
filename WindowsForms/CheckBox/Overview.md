@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Windows Forms CheckBox control | Syncfusion®
+title: About Windows Forms CheckBox | Syncfusion®
 description: Learn here all about introduction of Syncfusion® Windows Forms CheckBox (CheckBoxAdv) control and more details.
 platform: windowsforms
 control: EditorsPackage
 documentation: ug
 ---
 
-# Windows Forms CheckBox (CheckBoxAdv) Overview
+# About Windows Forms CheckBox
 
 The [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) is an advanced CheckBox control that supports themes, gradient colors, border settings, and shadow text with various alignment options for both the text and check box. It provides options to display images and gradient backgrounds.
 

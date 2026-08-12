@@ -7,7 +7,7 @@ control: HTMLUIControl
 documentation: ug
 ---
 
-# Getting Started with Windows Forms Html Viewer (HTMLUI)
+# Getting Started with Windows Forms Html Viewer
 
 This section describes how to configure a `HTMLUIControl` in a Windows Forms application and overview of its basic functionalities.
 

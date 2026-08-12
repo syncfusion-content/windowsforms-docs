@@ -1,13 +1,13 @@
 ---
 layout: post
-title: HTML Format in Windows Forms Html Viewer control | Syncfusion®
+title: HTML Format in Windows Forms Html Viewer | Syncfusion®
 description: Learn about HTML Format support in Syncfusion® Windows Forms Html Viewer (HTMLUI) control and more details.
 platform: windowsforms
 control: HTML UI
 documentation: ug
 ---
 
-# HTML Format in Windows Forms Html Viewer (HTMLUI)
+# HTML Format in Windows Forms Html Viewer
 
 HTMLUI allows the user to apply formats to the elements at run time. The HTMLFormat class creates a format for the HTML elements displayed in the HTMLUI control. The user can apply the format on the execution of some events based on the necessity of the application.
 

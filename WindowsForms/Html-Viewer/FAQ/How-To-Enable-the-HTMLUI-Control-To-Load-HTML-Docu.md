@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-To-Enable-the-HTMLUI-Control-To-Load-HTML-Docu | WindowsForms | Syncfusion®
-description: how to enable the htmlui control to load html documents that have been dragged onto the control?
-platform: WindowsForms
+title: How To Enable the HTMLUI Control To Load HTML Docu | Syncfusion®
+description: Learn how to how To Enable the HTMLUI Control To Load HTML Docu in Syncfusion Windows Forms Html Viewer (HTMLUI) control.
+platform: windowsforms
 control: HTML UI
 documentation: ug
 ---
 
-# How to enable the HTMLUI control to load HTML documents that have been dragged onto the control?
+# How To Enable the HTMLUI Control To Load HTML Docu
 
 In order to enable the HTMLUI control to load HTML documents that have been dragged onto the control, you have to set the AllowDrop property of the HTMLUI control to `true`. This property helps in supporting the drag-and-drop operation in the HTMLUI control.
 

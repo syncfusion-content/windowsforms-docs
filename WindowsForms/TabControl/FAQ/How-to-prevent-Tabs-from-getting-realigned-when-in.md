@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Prevent tabs | WindowsForms | Syncfusion®
-description: how to prevent tabs from getting realigned when in multiline mode
+description: Learn how to prevent tabs from getting realigned when in Multiline mode in Syncfusion Windows Forms TabControlAdv by deriving from TabControlExt.
 platform: windowsforms
 control: TabsPackage
 documentation: ug

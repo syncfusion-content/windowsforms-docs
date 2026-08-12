@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How-to-enable-themes-in-TabControlAdv | WindowsForms | Syncfusion®
-description: how to enable themes in tabcontroladv
+description: Learn how to enable themes in Syncfusion Windows Forms TabControlAdv and TabPageAdv controls by setting the ThemesEnabled property for a modern look.
 platform: windowsforms
 control: TabsPackage
 documentation: ug

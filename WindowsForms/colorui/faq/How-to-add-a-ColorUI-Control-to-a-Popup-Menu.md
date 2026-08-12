@@ -1,12 +1,12 @@
 ---
 layout: post
-title: How to add a ColorUI Control to a Popup Menu | WindowsForms | Syncfusion®
-description: how to add a colorui control to a popup menu
+title: Add ColorUI Control to Popup Menu in Windows Forms | Syncfusion®
+description: Learn how to add a Syncfusion Windows Forms ColorUIControl to a popup menu using PopupMenu and PopupControlContainer.
 platform: windowsforms
-control: ColorUI 
+control: ColorUI
 documentation: ug
 ---
-# How to Add a ColorUI Control to a Pop-Up Menu
+# Add ColorUI Control to Popup Menu in Windows Forms
 
 To add ColorUIControl to a PopupMenu, we need to use PopupMenu, PopupControlContainer. Follow the below steps to add a ColorUIControl to a popup menu.
 

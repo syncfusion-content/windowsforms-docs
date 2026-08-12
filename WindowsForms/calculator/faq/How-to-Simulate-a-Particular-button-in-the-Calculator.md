@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Simulate a particular button | WindowsForms | Syncfusion®
-description: how to simulate a particular button in the calculator?
+description: Learn how to simulate a particular button in the Syncfusion Windows Forms Calculator control using the ButtonAction method and CalcActions enumerator.
 platform: windowsforms
 control: Editors Package
 documentation: ug

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating a Simple Layout in Windows Forms LayoutManagers | Syncfusion®
+title: Creating a Simple Layout in Windows Forms LayoutManager | Syncfusion®
 description: Learn about Creating a Simple Layout support in Syncfusion® Windows Forms LayoutManagers control and more details.
 platform: windowsforms
 control: Layout Managers Package

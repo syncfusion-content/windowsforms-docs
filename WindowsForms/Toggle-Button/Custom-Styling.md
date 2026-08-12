@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom Styling in Windows Forms Toggle Button control | Syncfusion®
+title: Custom Styling in Windows Forms Toggle Button | Syncfusion®
 description: Learn about Custom Styling support in Syncfusion® Windows Forms Toggle Button control and more details.
 platform: windowsforms
 control: ToggleButton 

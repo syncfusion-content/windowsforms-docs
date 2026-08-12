@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Text Selection in Windows Forms Html Viewer control | Syncfusion®
+title: Text Selection in Windows Forms Html Viewer | Syncfusion®
 description: Learn about Text Selection support in Syncfusion® Windows Forms Html Viewer (HTMLUI) control and more details.
 platform: windowsforms
 control: HTMLUIControl
 documentation: ug
 ---
 
-# Text Selection in Windows Forms Html Viewer (HTMLUI)
+# Text Selection in Windows Forms Html Viewer
 
 An interesting feature of the HTMLUI control is its ability to access the selected text. This feature helps the user to select required texts available in the HTMLUI control and use the selected text in the applications. The [SelectedText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html#Syncfusion_Windows_Forms_HTMLUI_HTMLUIControl_SelectedText) property of the HTMLUI control is used for this purpose.
 

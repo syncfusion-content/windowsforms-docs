@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Backcolor-of-Active-Inactive-tabs | WindowsForms | Syncfusion®
-description: how to change the backcolor of active and inactive tabs
+title: Change backcolor of active and inactive tabs | Syncfusion®
+description: Learn how to change the backcolor of active and inactive tabs in Syncfusion Windows Forms TabbedMDIManager using ActiveTabColor and InactiveTabColor.
 platform: windowsforms
 control: TabbedMDIManager
 documentation: ug
 ---
 
-# How to change the back color of Active and Inactive tabs
+# Change backcolor of active and inactive tabs
 
 You can change the tab back color for active tabs and inactive tabs using [ActiveTabColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_ActiveTabColor) and [InactiveTabColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_InactiveTabColor) properties. The following code snippet illustrates this.
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: About Windows Forms Double TextBox control | Syncfusion®
+title: About Windows Forms Double TextBox | Syncfusion®
 description: Learn here all about introduction of Syncfusion® Windows Forms Double TextBox control, its elements, and more details.
 platform: windowsforms
 control: DoubleTextBox
 documentation: ug
 ---
-# Windows Forms Double TextBox Overview
+# About Windows Forms Double TextBox
 
 The DoubleTextBox is a text box-derived control that can display double data type values.
 
