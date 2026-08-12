@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Syncfusion Windows Forms AIAssistView Control | Syncfusion
-description: Learn about introduction of Syncfusion Essential Studio Windows Forms AIAssistView control and more details.
+title: About Syncfusion Windows Forms SfAIAssistView Control | Syncfusion
+description: 	Learn about introduction of Syncfusion Essential Studio Windows Forms SfAIAssistView control and more details.
 platform: windowsforms
 control: SfAIAssistView
 documentation: ug
 ---
 
-# About Syncfusion Windows Forms AIAssistView Control
+# About Syncfusion Windows Forms SfAIAssistView Control
 
 The Syncfusion [Windows Forms AI AssistView](https://www.syncfusion.com/winforms-ui-controls/aiassistview) ([SfAIAssistView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.SfAIAssistView.html)) control is used to enhance interaction between users and AI services. It offers a user-friendly interface for creating intelligent and responsive applications with AI services. Users can easily customize its appearance.
 
