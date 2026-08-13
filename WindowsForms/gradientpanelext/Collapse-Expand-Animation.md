@@ -3,7 +3,7 @@ layout: post
 title: Animation in Windows Forms GradientPanelExt | Syncfusion®
 description: Configure collapse and expand animations in the Windows Forms GradientPanelExt control to create smooth and interactive user experiences.
 platform: WindowsForms
-control: EditorPackage 
+control: GradientPanelExt 
 documentation: ug
 ---
 # Collapse and Expand Animation in Windows Forms GradientPanelExt
