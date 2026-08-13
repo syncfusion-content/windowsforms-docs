@@ -18,7 +18,7 @@ The following listed events are available in Toggle Button.
 
 This event is triggered in Toggle Button when its state is changing.
 
-#### Event data
+### Event data
 
 Member Table
 
@@ -56,9 +56,7 @@ End Sub
 
 This event is triggered in Toggle Button after its value is changed. 
 
-#### Event data
-
-Member Table
+### Event data
 
 <table>
 <tr>

@@ -65,13 +65,13 @@ Me.HubTile1.ImageList = Me.ImageList
 
 The following screenshot displays the ImageListAdv property.
 
-![](How-to-add-ImageCollection-to-HubTile-for-Transiti_images/How-to-add-ImageCollection-to-HubTile-for-Transiti_img1.png)
+![ImageListAdv property of HubTile](How-to-add-ImageCollection-to-HubTile-for-Transiti_images/How-to-add-ImageCollection-to-HubTile-for-Transiti_img1.png)
 
 
 
 The following screenshot displays the ImageList property.
 
-![](How-to-add-ImageCollection-to-HubTile-for-Transiti_images/How-to-add-ImageCollection-to-HubTile-for-Transiti_img2.png)
+![ImageList property of HubTile](How-to-add-ImageCollection-to-HubTile-for-Transiti_images/How-to-add-ImageCollection-to-HubTile-for-Transiti_img2.png)
 
 
 

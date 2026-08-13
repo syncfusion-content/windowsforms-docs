@@ -104,7 +104,7 @@ Me.tabbedMDIManager1.ThemesEnabled = True
 
 TabbedMDIManager provides complete support for customizing the active and inactive tabs back color, fore color, and font.
 
-#### ActiveTabBackColor
+### ActiveTabBackColor
 
 This option helps to customize the active tab back color.
 

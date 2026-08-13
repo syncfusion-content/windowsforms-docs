@@ -36,7 +36,7 @@ Me.label1.Text = Me.HtmluiControl1.SelectedText
 
 {% endtabs %}
 
-### CopyTextToClipBoard
+## CopyTextToClipBoard
 
 The HTMLUI control allows the user to copy the text selected in the HTMLUI control to the Clipboard, and paste it in other applications. The following code snippet shows how this feature is implemented with the HTMLUI control.
 

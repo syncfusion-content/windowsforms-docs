@@ -7,7 +7,7 @@ control: SpellCheckerAdv
 documentation: ug
 ---
 
-# Custom Dictionary in Windows Forms Spell Checker (SpellCheckerAdv)
+# Custom Dictionary in Windows Forms Spell Checker
 
 You can use a default and custom dictionaries to spell check the document based on your need. You can also spell check for any culture and languages using various dictionaries.
 

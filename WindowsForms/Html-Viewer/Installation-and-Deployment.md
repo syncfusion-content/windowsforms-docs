@@ -37,7 +37,7 @@ This section covers the location of the installed samples and describes the proc
 
 
 
-#### Sample installation location
+### Sample installation location
 
 The Essential<sup>®</sup> HTMLUI Windows Forms samples are installed in the following location.
 
@@ -54,7 +54,7 @@ To view the samples, follow the steps below:
 1. Click Start-->All Programs-->Syncfusion-->Essential Studio <version number> -->Dashboard. Essential Studio<sup>®</sup> Enterprise Edition window is displayed.
 
 
-![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)
+![Essential Studio Enterprise Edition window](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)
 
 
 
@@ -74,14 +74,14 @@ N> You can view the samples in any of the following three ways:
 
 
 
-![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)
+![UI Windows Form Sample Browser window](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)
 
 
 3. Click HTML UI from the bottom-left pane. HTML UI samples will be displayed.
 
 
 
-![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)
+![HTML UI samples displayed in the Sample Browser](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)
 
 
 
