@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events in Windows Forms GradientPanelExt | Syncfusion® 
-description: Handle user interactions and component lifecycle events in the Windows Forms GradientPanelExt control for responsive application behavior.
+description: Events in Windows Forms GradientPanelExt provide notifications when the corner radius or primitives collection changes.
 platform: WindowsForms
 control: EditorPackage 
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 
 The GradientPanelExt offers the following unique events, to make it more flexible to work with.
 
-CornerRadiusChanged Event
+## CornerRadiusChanged Event
 
 This event is raised every time the Corner Radius value is changed.
 
