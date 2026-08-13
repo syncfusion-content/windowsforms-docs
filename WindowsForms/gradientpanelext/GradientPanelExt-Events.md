@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Events in Windows Forms GradientPanelExt | Syncfusion
+title: Events in Windows Forms GradientPanelExt | Syncfusion® 
 description: Handle user interactions and component lifecycle events in the Windows Forms GradientPanelExt control for responsive application behavior.
 platform: WindowsForms
 control: EditorPackage 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: GradientPanel Appearance in Windows Forms GradientPanel | Syncfusion
+title: Appearance in Windows Forms GradientPanel | Syncfusion®
 description: Customize the appearance of the Windows Forms GradientPanel control using gradient colors, visual styles, and panel display settings.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# GradientPanel Appearance in Windows Forms GradientPanel
+# Appearance in Windows Forms GradientPanel
 
 The background of the GradientPanel can be customized using the below properties.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Border Settings in Windows Forms GradientPanel | Syncfusion
+title: Border Settings in Windows Forms GradientPanel | Syncfusion®
 description: Customize the border appearance of the Windows Forms GradientPanel control using border styles, colors, and visual settings.
 platform: WindowsForms
 control: Editors Package
