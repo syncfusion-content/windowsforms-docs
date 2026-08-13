@@ -3,7 +3,7 @@ layout: post
 title: Scroll Settings in Windows Forms GradientPanel | Syncfusion® 
 description: Configure scrolling behavior in the Windows Forms GradientPanel control using auto-scroll settings and scrollbar customization options.
 platform: WindowsForms
-control: Editors Package
+control: GradientPanel
 documentation: ug
 ---
 # Scroll Settings in Windows Forms GradientPanel	
