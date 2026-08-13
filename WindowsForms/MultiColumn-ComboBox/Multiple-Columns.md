@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Multiple-Columns | WindowsForms | Syncfusion
-description: This section explains about the multi columns support and its selection color, dropdownwidth and filtering options.
+title: Multiple Columns in Windows Forms MultiColumnComboBox | Syncfusion®
+description: Display and manage multiple columns in the Windows Forms MultiColumnComboBox control for enhanced data presentation and selection.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# Multiple Columns Support
+# Multiple Columns in Windows Forms MultiColumnComboBox
 
 MultiColumnComboBox control is a [ComboBoxAdv](https://help.syncfusion.com/windowsforms/classic/combobox/overview) control with multiple columns. Multiple columns will be enabled by default. To disable this, set [MultiColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html#Syncfusion_Windows_Forms_Tools_MultiColumnComboBox_MultiColumn) property to false. We can display the headers for the columns using ShowColumnHeader property. 
 

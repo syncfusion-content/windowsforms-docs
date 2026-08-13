@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Windows Forms MultiColumnComboBox control | Syncfusion
-description: An overview about MultiColumnComboBox which supports multiple column in the dropdown and can be bound to a large data sourcee
+title: About Windows Forms MultiColumnComboBox Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms MultiColumnComboBox control and its key features.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# Windows Forms MultiColumnComboBox Overview
+# About Syncfusion® Windows Forms MultiColumnComboBox Control
 
 Based on our ComboBoxBase control, the MultiColumnComboBox is an advanced combo box control that has the capability to show multiple columns in the drop-down list. Also, since the drop-down list is bound virtually to the datasource, data binding to a very large datasource is instantaneous. 
 

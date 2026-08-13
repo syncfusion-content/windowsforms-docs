@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data-binding | WindowsForms | Syncfusion
-description: This section deals with explain about the DataBinding support in Winforms MulticolumnComboBox control
+title: Data Binding in Windows Forms MultiColumnComboBox | Syncfusion®
+description: Bind data to the Windows Forms MultiColumnComboBox control to display and manage items from various data sources efficiently.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# Data Binding in Windows Forms MultiColumn ComboBox
+# Data Binding in Windows Forms MultiColumnComboBox
 
 Data binding concepts for the [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) are discussed in the below topics.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Creating ListControl Derived in WinForms ComboBoxBase | Syncfusion
-description: Learn about Creating ListControl Derived Controls support in Syncfusion Windows Forms ComboBoxBase control and more details.
+title: Derived Controls in Windows Forms ComboBoxBase | Syncfusion®
+description: Create derived controls using the Windows Forms ComboBoxBase control to support customized list display and selection behavior.
 platform: WindowsForms
 control: ComboBoxBase
 documentation: ug
 ---
 
-# Creating ListControl Derived Controls in Windows Forms ComboBoxBase
+# Derived Controls in Windows Forms ComboBoxBase
 
 When you create custom ListControl - derived controls for use with the ComboBoxBase class, it is essential that you provide certain properties and methods to avail all the capabilities of the ComboBoxBase class.
 
