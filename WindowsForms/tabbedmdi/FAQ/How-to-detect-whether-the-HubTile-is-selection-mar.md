@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Detect if HubTile is selection marked in Windows Forms | Syncfusion®
-description: Learn how to detect whether the HubTile is selection marked or not in Syncfusion Windows Forms using the HubTileIsSelectionMarked property.
+title: How to Detect if HubTile is Selection Marked | Syncfusion®
+description: Learn how to detect whether the HubTile is selection marked in Syncfusion Windows Forms TabbedMDI control, its elements and more details.
 platform: windowsforms
 control: TabbedMDIPackage
 documentation: ug
 ---
 
-# Detect if HubTile is selection marked in Windows Forms
+# How to Detect if HubTile is Selection Marked
 
 You can achieve it by using HubTileIsSelectionMarked property.
 

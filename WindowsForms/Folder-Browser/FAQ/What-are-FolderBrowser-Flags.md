@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Folderbrowser flags in Windows Forms Folder Browser | Syncfusion®
+title: Folder browser flags in Windows Forms Folder Browser | Syncfusion®
 description: Learn about What are folderbrowser flags support in Syncfusion® Windows Forms Folder Browser control and more details.
 platform: windowsforms
 control: Tools

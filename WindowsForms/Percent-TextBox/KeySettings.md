@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Key Settings in Windows Forms Percent TextBox control | Syncfusion®
+title: Key Settings in Windows Forms Percent TextBox | Syncfusion®
 description: Learn about Key Settings support in Syncfusion® Windows Forms Percent TextBox control and more details.
 platform: windowsforms
 control: Editors Package

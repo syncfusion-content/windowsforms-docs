@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Simulate a particular button | WindowsForms | Syncfusion®
-description: Learn how to simulate a particular button in the Syncfusion Windows Forms Calculator control using the ButtonAction method and CalcActions enumerator.
+title: How to Simulate a Button in Windows Forms Calculator | Syncfusion®
+description: Learn how to simulate a Button in Syncfusion Windows Forms Calculator control, its elements and more details.
 platform: windowsforms
-control: Editors Package
+control: Calculator
 documentation: ug
 ---
 
-# How to Simulate a Particular Button in the Calculator
+# How to Simulate a Button in Windows Forms Calculator
 
 We can use [Calculator.ButtonAction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_ButtonAction_Syncfusion_Windows_Forms_Tools_CalcActions_) method for this. When the user clicks the button, the [ButtonAction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_ButtonAction_Syncfusion_Windows_Forms_Tools_CalcActions_) method of the Calculator control will call back the action of the particular button (in this example it is "=" button) and displays the result in the textbox area, using [CalcActions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalcActions.html) Enumerator. This enumerator has all the actions that can be assigned to the calculator buttons including digits and arithmetic operators also.
 

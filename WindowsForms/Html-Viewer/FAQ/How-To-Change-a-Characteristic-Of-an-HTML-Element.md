@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Change a Characteristic Of an HTML Element | Syncfusion®
-description: Learn how to change a Characteristic Of an HTML Element in Syncfusion Windows Forms Html Viewer (HTMLUI) control.
+title: How to Change HTML Element Characteristic in Html Viewer | Syncfusion®
+description: Learn how to change a Characteristic of an HTML Element in Syncfusion Windows Forms Html Viewer control, its elements and more details.
 platform: windowsforms
 control: HTMLUIControl
 documentation: ug
 ---
 
-# Change a Characteristic Of an HTML Element
+# How to Change HTML Element Characteristic in Html Viewer
 
 The characteristic of an element can be easily changed in the PreRenderDocument event of the HTMLUI control.
 

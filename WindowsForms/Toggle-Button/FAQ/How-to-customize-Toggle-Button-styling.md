@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customize Toggle Button styling in Windows Forms | Syncfusion®
-description: Learn how to customize the Toggle Button styling in Syncfusion Windows Forms using the IToggleButtonRenderer interface to control the appearance.
+title: How to Customize Toggle Button Styling in Toggle Button | Syncfusion®
+description: Learn how to customize the Toggle Button styling in Syncfusion Windows Forms Toggle Button control, its elements and more details.
 platform: windowsforms
 control: Toggle Button
 documentation: ug
 ---
 
-# Customize Toggle Button styling in Windows Forms
+# How to Customize Toggle Button Styling in Toggle Button
 
 You can customize the appearance of the Toggle Button by using the IToggleButtonRenderer. The following code example illustrates how to achieve iOS platform look-alike Toggle Button.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RunTime Features in Windows Forms Calculator control | Syncfusion®
+title: RunTime Features in Windows Forms Calculator | Syncfusion®
 description: Learn about RunTime Features support in Syncfusion® Windows Forms Calculator control and more details.
 platform: windowsforms
 control: Calculator

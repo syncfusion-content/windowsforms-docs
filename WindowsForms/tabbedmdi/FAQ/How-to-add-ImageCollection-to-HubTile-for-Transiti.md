@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Add ImageCollection to HubTile in Windows Forms | Syncfusion®
-description: Learn how to add an ImageCollection to HubTile for transition effects in Syncfusion Windows Forms using HubTileImageList and ImageListAdv.
+title: How to Add ImageCollection to HubTile in TabbedMDI | Syncfusion®
+description: Learn how to add an ImageCollection to HubTile in Syncfusion Windows Forms TabbedMDI control, its elements and more details.
 platform: windowsforms
 control: TabbedMDIPackage
 documentation: ug
 ---
 
-# Add ImageCollection to HubTile in Windows Forms
+# How to Add ImageCollection to HubTile in TabbedMDI
 
 You can achieve this requirement using HubTileImageList and ImageListAdv properties.
 

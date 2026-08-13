@@ -3,11 +3,11 @@ layout: post
 title: Display Mode in Windows Forms Toggle Button | Syncfusion®
 description: Learn about Display Mode Configuration support in Syncfusion® Windows Forms Toggle Button control and more details.
 platform: windowsforms
-control: ToggleButton 
+control: ToggleButton
 documentation: ug
 ---
 
-# Display Mode Configuration in Windows Forms Toggle Button
+# Display Mode in Windows Forms Toggle Button
 
 Toggle Button is set to display either text or image through its DisplayMode property.
 

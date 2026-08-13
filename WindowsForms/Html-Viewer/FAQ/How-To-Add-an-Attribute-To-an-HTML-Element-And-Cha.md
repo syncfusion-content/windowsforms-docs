@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Add an Attribute to an HTML Element in Html Viewer | Syncfusion®
-description: Learn how to add an attribute to an HTML element and change its value in Syncfusion Windows Forms Html Viewer (HTMLUI) control.
+title: How to Add an Attribute to HTML Element in Html Viewer | Syncfusion®
+description: Learn how to add an attribute to an HTML element and change its value in Syncfusion Windows Forms Html Viewer control, its elements and more details.
 platform: windowsforms
 control: HTML UI
 documentation: ug
 ---
 
-# Add an Attribute to an HTML Element in Html Viewer
+# How to Add an Attribute to HTML Element in Html Viewer
 
 You can add an attribute to an HTML element using the Add method of the Attributes property, as shown in the following code snippet.
 

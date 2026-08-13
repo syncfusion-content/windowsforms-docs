@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customize the calculator display text | WindowsForms | Syncfusion®
-description: Learn how to customize the Calculator display text area in Syncfusion Windows Forms Calculator to use the NumberGroupSeparator for formatted number display.
+title: How to Customize Calculator Display Area in Calculator | Syncfusion®
+description: Learn how to customize the Calculator display text area in Syncfusion Windows Forms Calculator control, its elements and more details.
 platform: windowsforms
-control: Calculator control
+control: Calculator
 documentation: ug
 ---
 
-# How to Customize the Calculator Display Text Area in Windows Forms
+# How to Customize Calculator Display Area in Calculator
 
 The [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) by default does not allow the use of NumberGroupSeparator like in DoubleTextBox. 
 
