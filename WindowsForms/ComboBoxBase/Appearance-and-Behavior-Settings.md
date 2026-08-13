@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance Settings in Windows Forms ComboBoxBase | Syncfusion®
+title: Appearance in Windows Forms ComboBoxBase | Syncfusion®
 description: Customize appearance settings in the Windows Forms ComboBoxBase control to manage display, interaction, and behavior options.
 platform: WindowsForms
 control: ComboBoxBase
 documentation: ug
 ---
 
-# Appearance Settings in Windows Forms ComboBoxBase
+# Appearance in Windows Forms ComboBoxBase.
 
 This section includes the discussion of Appearance and Behavior Settings of ComboBoxBase.
 
