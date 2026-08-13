@@ -3,7 +3,7 @@ layout: post
 title: Scroll Settings in Windows Forms Gradient Panel control | Syncfusion
 description: Learn about Scroll Settings support in Syncfusion Windows Forms Gradient Panel control and more details.
 platform: WindowsForms
-control: Gradient Panel
+control: Editors Package
 documentation: ug
 ---
 # Scroll Settings in Windows Forms Gradient Panel
