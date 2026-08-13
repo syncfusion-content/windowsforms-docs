@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Visual Styles in Windows Forms FontComboBox control | Syncfusion
-description: Learn about Visual Styles support in Syncfusion Windows Forms FontComboBox control and more details.
+title: VisualStyles in Windows Forms FontComboBox | Syncfusion®
+description: Apply VisualStyles in the Windows Forms FontComboBox control to customize its appearance and maintain a consistent user interface.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# Visual Styles in Windows Forms FontComboBox
+# VisualStyles in Windows Forms FontComboBox
 
 Visual Styles for the FontComboBox control can be enabled through below properties.
 

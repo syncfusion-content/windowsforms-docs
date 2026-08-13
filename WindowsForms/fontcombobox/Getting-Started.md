@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Windows Forms FontComboBox | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms FontComboBox control, its elements, and more details.
+title: Getting Started with Windows Forms FontComboBox | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms FontComboBox control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
 control: FontComboBox
 documentation: ug
 ---
 
-# Getting Started with Windows Forms FontComboBox
+# Getting Started with Syncfusion® Windows Forms FontComboBox
 
 This section briefly describes how to create a new Windows Forms project in Visual Studio and add the [FontComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.FontComboBox.html) control with its functionalities.
 
