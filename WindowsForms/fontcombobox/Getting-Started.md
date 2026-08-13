@@ -7,7 +7,7 @@ control: FontComboBox
 documentation: ug
 ---
 
-# Getting Started with Syncfusion® Windows Forms FontComboBox
+# Getting Started with Windows Forms FontComboBox
 
 This section briefly describes how to create a new Windows Forms project in Visual Studio and add the [FontComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.FontComboBox.html) control with its functionalities.
 

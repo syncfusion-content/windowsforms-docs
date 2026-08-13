@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DropDownSettings in Windows Forms FontComboBox | Syncfusion®
-description: Customize DropdownSettings in the Windows Forms FontComboBox control, including item display, sizing, appearance, and interaction behavior.
+title: DropDown Settings in Windows Forms FontComboBox | Syncfusion®
+description: Customize Dropdown Settings in the Windows Forms FontComboBox control, including item display, sizing, appearance, and interaction behavior.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# DropDownSettings in Windows Forms FontComboBox
+# DropDown Settings in Windows Forms FontComboBox
 
 FontComboBox has properties to control the appearance and behavior of the dropdown.
 
