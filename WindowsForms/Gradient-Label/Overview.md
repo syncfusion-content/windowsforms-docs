@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Syncfusion Windows Forms GradientLabel Control | Syncfusion
-description: Learn about the introduction of Syncfusion Essential Studio Windows Forms GradientLabel control and its key features and customization options.
+title: About Syncfusion® Windows Forms GradientLabel Control | Syncfusion® 
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms GradientLabel control and its key features and customization options.
 platform: WindowsForms
 control: GradientLabel
 documentation: ug
 ---
 
-# About Syncfusion Windows Forms GradientLabel Control
+# About Syncfusion® Windows Forms GradientLabel Control
 
 The GradientLabel class provides a way to create fancy and appealing labels in your forms.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Event Handling in Windows Forms ComboDropDown | Syncfusion
+title: Event Handling in Windows Forms ComboDropDown | Syncfusion®
 description: Handle user interactions and control events in the Windows Forms ComboDropDown control for responsive application behavior.
 platform: WindowsForms
 control: ComboDropDown

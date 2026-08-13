@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Text in Windows Forms ComboDropDown | Syncfusion
+title: Text in Windows Forms ComboDropDown | Syncfusion®
 description: Configure and customize text display, editing, and input behavior in the Windows Forms ComboDropDown control.
 platform: WindowsForms
 control: ComboDropDown
 documentation: ug
 ---
 
-# Banner Text in Windows Forms ComboDropDownText Support in  
+# Text in Windows Forms ComboDropDown
 
 ComboDropDown control supports the properties which can change the appearance and behavior of the control's edit portion.
 

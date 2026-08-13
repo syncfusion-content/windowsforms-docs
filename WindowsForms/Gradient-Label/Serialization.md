@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Serialization in Windows Forms GradientLabel | Syncfusion
+title: Serialization in Windows Forms GradientLabel | Syncfusion®
 description: Learn how serialization preserves and restores Windows Forms GradientLabel properties for consistent design-time and runtime behavior.
 platform: WindowsForms
 control: Editors Package

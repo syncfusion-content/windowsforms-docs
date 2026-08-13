@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Using ComboBoxes in Windows Forms ComboDropDown | Syncfusion
-description: Learn how to use ComboBox controls within the Windows Forms ComboDropDown control to provide flexible item selection and input options.
+title: Using-ComboBoxes-inside-ComboDropDown | WindowsForms | Syncfusion
+description: Learn here all about to using comboboxes inside combodropdown with Syncfusion Essential Studio Windows Forms ComboBox DropDown control and more details.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# Using ComboBoxes in Windows Forms ComboDropDown
+# How to Use ComboBox inside ComboDropDown
 
 This section deals on how to use two combobox within the dropdown area of a ComboDropDown. The panel contains two ComboBoxes and a Button. The text will change only after the Button had pressed. 
 
