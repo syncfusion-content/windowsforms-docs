@@ -74,7 +74,7 @@ Me.radioButtonAdv1.StretchImage = False
 
  ![Windows forms RadioButtonAdv image displayed in control when it is in checked](Overview_images/RadioButtonAdv_checkedimage.jpeg)
 
-#### Images displayed during mouse hover
+## Images displayed during mouse hover
 
 Images can also be set when the mouse is hovered over the RadioButtonAdv control.
 

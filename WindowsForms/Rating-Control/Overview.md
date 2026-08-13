@@ -13,7 +13,7 @@ The [Rating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Form
 
 ![Overview of the Rating Control](Overview_images/Overview_img1.png)
 
-### Key features
+## Key features
 
 **Shape** - Allows the end users to rate items from a predefined list of shapes.
 
