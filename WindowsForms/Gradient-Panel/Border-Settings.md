@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Border Settings in Windows Forms Gradient Panel control | Syncfusion
-description: Learn about Border Settings support in Syncfusion Windows Forms Gradient Panel control and more details.
+title: Border Settings in Windows Forms GradientPanel | Syncfusion
+description: Customize the border appearance of the Windows Forms GradientPanel control using border styles, colors, and visual settings.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# Border Settings in Windows Forms Gradient Panel
+# Border Settings in Windows Forms GradientPanel
 
 [Windows Forms Gradient Panel](https://www.syncfusion.com/winforms-ui-controls/gradient-panel) can have 2D and 3D borders. The properties which sets the border style are as follows.
 

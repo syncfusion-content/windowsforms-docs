@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Scroll Settings in Windows Forms Gradient Panel control | Syncfusion
-description: Learn about Scroll Settings support in Syncfusion Windows Forms Gradient Panel control and more details.
+title: Scroll Settings in Windows Forms GradientPanel | Syncfusion
+description: Configure scrolling behavior in the Windows Forms GradientPanel control using auto-scroll settings and scrollbar customization options.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
-# Scroll Settings in Windows Forms Gradient Panel
+# Scroll Settings in Windows Forms GradientPanel
 
 When the contents inside the gradient panel exceeds the visible area, the scroll bars appears. AutoScroll property should be set to true for this purpose. Margin width for the control during auto scroll is set through AutoScrollMargin property. The minimum logical size for the auto scroll region is specified using the AutoScrollMinSize.
 

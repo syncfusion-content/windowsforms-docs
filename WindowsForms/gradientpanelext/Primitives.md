@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Primitives in Windows Forms GradientPanelExt control | Syncfusion
-description: Learn about Primitives support in Syncfusion Windows Forms GradientPanelExt control and more details.
+title: Primitives in Windows Forms GradientPanelExt | Syncfusion
+description: Use primitive elements in the Windows Forms GradientPanelExt control to create customized layouts and enhance visual presentation.
 platform: WindowsForms
 control: EditorPackage 
 documentation: ug
