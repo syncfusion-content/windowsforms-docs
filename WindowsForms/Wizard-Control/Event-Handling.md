@@ -11,7 +11,7 @@ documentation: ug
 
 This section comprises the below events:
 
-#### Wizard control events
+## Wizard control events
 
 The events available for Wizard control and the methods which raises these events are listed in the below tables.
 

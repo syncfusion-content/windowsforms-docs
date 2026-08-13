@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Wizard Page Settings in Windows Forms WizardControl | Syncfusion®
-description: Configure wizard page settings in the Windows Forms WizardControl, including page appearance, navigation behavior, and layout options.
+description: Wizard page settings in Windows Forms WizardControl enable customizing page appearance, foreground and background colors, fonts, and border styles.
 platform: WindowsForms
 control: Wizard Package 
 documentation: ug

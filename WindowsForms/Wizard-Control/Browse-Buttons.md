@@ -13,7 +13,7 @@ The default buttons which are available for the Wizard control are Back, Next, C
 
 N> You can navigate between the pages at Design Time also. See Page Navigation at Design time topic for more details.
 
-### Button visibility
+## Button visibility
 
 By default, all the buttons are visible for all the Wizard pages. To change their visibility, use the below properties in individual pages.
 

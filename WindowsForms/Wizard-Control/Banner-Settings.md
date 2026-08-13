@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Banner Settings in Windows Forms WizardControl | Syncfusion®
-description: Configure banner settings in the Windows Forms WizardControl to customize banner text, images, appearance, and layout options.
+description: Banner settings in Windows Forms WizardControl enable customizing banner panels, title text, descriptions, images, and layout for wizard pages.
 platform: WindowsForms
 control: Wizard
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 The controls inside the Banner Control include Banner Panel, Title, description and a picture box. The section will walk you through the properties which customizes these controls.
 
-### Banner panel
+## Banner panel
 
 A Banner Panel is a simple gradient panel which holds a Title label, a Description label and a Picture box controls.
 
@@ -26,8 +26,6 @@ N> The [Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Fo
 {% tabs %}
 
 {% highlight C# %}
-
-
 
 this.wizardControl1.Banner = this.pictureBox2;
 
