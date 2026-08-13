@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ComboDropDown-Appearance | WindowsForms | Syncfusion
-description: Learn here all about the appearance settings of Syncfusion Windows Forms ComboDropDown control and more. 
+title: ComboDropDown Appearance in Windows Forms ComboDropDown | Syncfusion
+description: Customize the appearance of the Windows Forms ComboDropDown control using colors, fonts, borders, and styling options.
 platform: WindowsForms
 control: ComboDropDown
 documentation: ug
 ---
 
-# Windows Forms ComboDropDown Appearance
+# ComboDropDown Appearance in Windows Forms ComboDropDown
 
 This section discusses the appearance settings for ComboDropDown control.
 
