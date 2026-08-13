@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance in Windows Forms Tree Navigator control | Syncfusion
-description: Learn about Appearance support in Syncfusion Windows Forms Tree Navigator control, its elements and more details.
+title: Appearance in Windows Forms TreeNavigator | Syncfusion®
+description: Customize the appearance of the Windows Forms TreeNavigator control using visual styles, colors, themes, and display settings.
 platform: WindowsForms
 control: TreeNavigator 
 documentation: ug
 ---
 
-# Appearance in Windows Forms Tree Navigator
+# Appearance in Windows Forms TreeNavigator
 
 ## Style
 
