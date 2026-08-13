@@ -6,7 +6,7 @@ platform: WindowsForms
 control: AutoLabel
 documentation: ug
 ---
-# Event in Windows Forms AutoLabel  
+# Event in Windows Forms AutoLabel
 
 A detailed explanation about the PropertyChanged event is given in the following section.
 
