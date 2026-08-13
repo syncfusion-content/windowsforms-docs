@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Rating Control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms Rating Control, its elements and more details.
+title: Getting Started with Windows Forms Rating | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms Rating. Explore setup, features, examples, and customization options.
 platform: WindowsForms
 control: Rating  
 documentation: ug
 ---
 
-# Getting Started with Windows Forms Rating Control (Rating)
+# Getting Started with Windows Forms Rating
 
 ## Assembly deployment
 

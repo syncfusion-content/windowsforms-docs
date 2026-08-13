@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Image Settings in Windows Forms Radio Button control | Syncfusion
-description: Learn about Image Settings support in Syncfusion Windows Forms Radio Button (RadioButtonAdv) control and more details.
+title: Image Settings in Windows Forms RadioButtonAdv | Syncfusion®
+description: Image settings in Windows Forms RadioButtonAdv enable displaying custom images for checked, unchecked, and disabled states with configurable sizing.
+
 platform: WindowsForms
 control: RadioButtonAdv
 documentation: ug
 ---
 
-# Image Settings in Windows Forms Radio Button (RadioButtonAdv)
+# Image Settings in Windows Forms RadioButtonAdv
 
 The image settings of the RadioButtonAdv control have been discussed in this section.
 
