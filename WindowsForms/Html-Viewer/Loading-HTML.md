@@ -214,7 +214,7 @@ An HTML document containing file links is illustrated by the code given below:
 
 <FONT color="#66ffff" size="6">
 
-<A href="MODEL1.htm" aria-label="To link1">To link1</a>
+<A href="MODEL1.htm" aria-label="Link to MODEL1 sample file">To link1</a>
 
 </FONT>
 
@@ -222,7 +222,7 @@ An HTML document containing file links is illustrated by the code given below:
 
 <FONT color="#66ffff" size="6">
 
-<A href="MODEL2.htm" aria-label="To link2">To link2</a>
+<A href="MODEL2.htm" aria-label="Link to MODEL2 sample file">To link2</a>
 
 </FONT>
 
