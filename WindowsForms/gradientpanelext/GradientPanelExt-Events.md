@@ -3,7 +3,7 @@ layout: post
 title: Gradientpanelext Events in WinForms GradientPanelExt | Syncfusion
 description: Learn about Gradientpanelext Events support in Syncfusion Windows Forms GradientPanelExt control and more details.
 platform: WindowsForms
-control: EditorPackage 
+control: GradientPanelExt 
 documentation: ug
 ---
 # Gradient panel next Events in Windows Forms Gradient Panel next

@@ -3,7 +3,7 @@ layout: post
 title: Primitives in Windows Forms GradientPanelExt control | Syncfusion
 description: Learn about Primitives support in Syncfusion Windows Forms GradientPanelExt control and more details.
 platform: WindowsForms
-control: EditorPackage 
+control: GradientPanelExt 
 documentation: ug
 ---
 # Primitives in Windows Forms GradientPanelExt
