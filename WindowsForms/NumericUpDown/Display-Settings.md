@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Display Settings in Windows Forms NumericUpDown control | Syncfusion
-description: Learn about Display Settings support in Syncfusion Windows Forms NumericUpDown (NumericUpDownExt) control and more details.
+title: Display Settings in Windows Forms NumericUpDownExt | Syncfusion®
+description: Display settings in Windows Forms NumericUpDownExt enable configuring decimal places and thousand separators for accurate and readable numeric value display.
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
 
-# Display Settings in Windows Forms NumericUpDown (NumericUpDownExt)
+# Display Settings in Windows Forms NumericUpDownExt
 
 This section discusses the Display settings of the NumericUpDownExt control.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Value Settings in Windows Forms NumericUpDown control | Syncfusion
-description: Learn about Value Settings support in Syncfusion Windows Forms NumericUpDown (NumericUpDownExt) control and more details.
+title: Value Settings in Windows Forms NumericUpDownExt | Syncfusion®
+description: Value settings in Windows Forms NumericUpDownExt enable configuring numeric values, increments, limits, and hexadecimal display options.
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
 
-# Value Settings in Windows Forms NumericUpDown (NumericUpDownExt)
+# Value Settings in Windows Forms NumericUpDownExt
 
 The various Values of the NumericUpDownExt control and their settings are given below.
 
