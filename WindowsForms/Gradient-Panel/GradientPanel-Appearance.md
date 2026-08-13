@@ -3,7 +3,7 @@ layout: post
 title: Gradientpanel Appearance in WinForms Gradient Panel | Syncfusion
 description: Learn about Gradientpanel Appearance support in Syncfusion Windows Forms Gradient Panel control and more details.
 platform: WindowsForms
-control: Editors Package
+control: Gradient Panel
 documentation: ug
 ---
 

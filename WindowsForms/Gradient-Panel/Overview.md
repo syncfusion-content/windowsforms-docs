@@ -3,7 +3,7 @@ layout: post
 title: About Windows Forms Gradient Panel control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms Gradient Panel control and more details.
 platform: WindowsForms
-control: GradientPanel
+control: Gradient Panel
 documentation: ug
 ---
 
