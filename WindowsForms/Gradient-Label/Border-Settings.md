@@ -3,7 +3,7 @@ layout: post
 title: Border Settings in Windows Forms GradientLabel | Syncfusion®
 description: Customize the border appearance of the Windows Forms GradientLabel control using border styles, colors, and visual settings.
 platform: WindowsForms
-control: Editors Package
+control: GradientLabel
 documentation: ug
 ---
 # Border Settings in Windows Forms GradientLabel
