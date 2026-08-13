@@ -3,7 +3,7 @@ layout: post
 title: Data Binding in Windows Forms MultiColumnComboBox | Syncfusion®
 description: Bind data to the Windows Forms MultiColumnComboBox control to display and manage items from various data sources efficiently.
 platform: WindowsForms
-control: Editors Package
+control: MultiColumnComboBox
 documentation: ug
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: About Windows Forms MultiColumnComboBox Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms MultiColumnComboBox control and its key features.
 platform: WindowsForms
-control: Editors Package
+control: MultiColumnComboBox
 documentation: ug
 ---
 

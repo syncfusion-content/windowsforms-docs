@@ -3,7 +3,7 @@ layout: post
 title: Multiple Columns in Windows Forms MultiColumnComboBox | Syncfusion®
 description: Display and manage multiple columns in the Windows Forms MultiColumnComboBox control for enhanced data presentation and selection.
 platform: WindowsForms
-control: Editors Package
+control: MultiColumnComboBox
 documentation: ug
 ---
 
