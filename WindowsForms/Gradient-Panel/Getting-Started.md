@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Windows Forms GradientPanelControl | Syncfusion
-description: Learn how to get started with the Syncfusion Windows Forms GradientPanelControl control. Explore setup, features, examples, and customization options.
+title: Getting Started with Windows Forms GradientPanel Control | Syncfusion
+description: Learn Assembly deployment in  Grid using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: WindowsForms
 control: GradientPanel
 documentation: ug
 ---
 
-# Getting Started with Windows Forms GradientPanelControl
+# Assembly deployment in  Grid
 
 This section will guide you to create a Gradient Panel via designer and also programming approach.
 
