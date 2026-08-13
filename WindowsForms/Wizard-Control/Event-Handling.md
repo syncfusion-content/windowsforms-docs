@@ -33,7 +33,7 @@ The events available for Wizard control and the methods which raises these event
 
 This [BannerControlLocationChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html) event is discussed in How to Cancel the AutoLayout of the Banner panel controls.
 
-#### Wizard page events
+### Wizard page events
 
 The events available for the Wizard Page and the methods which raises these events are listed in the below tables.
 
