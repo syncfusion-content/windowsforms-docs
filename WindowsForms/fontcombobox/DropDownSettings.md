@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Dropdown Settings in Windows Forms FontComboBox | Syncfusion®
-description: Customize Dropdown Settings in the Windows Forms FontComboBox control, including item display, sizing, appearance, and interaction behavior.
+description: Dropdown settings in Windows Forms FontComboBox enable configuring dropdown style, size, item count, and font preview options for enhanced font selection.
 platform: WindowsForms
-control: Editors Package
+control: FontComboBox
 documentation: ug
 ---
 

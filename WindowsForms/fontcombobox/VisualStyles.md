@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Visual Styles in Windows Forms FontComboBox | Syncfusion®
-description: Apply Visual Styles in the Windows Forms FontComboBox control to customize its appearance and maintain a consistent user interface.
+description: Visual styles in Windows Forms FontComboBox enable applying built-in themes and color schemes to customize the control appearance and user experience.
 platform: WindowsForms
-control: Editors Package
+control: FontComboBox
 documentation: ug
 ---
 
@@ -40,7 +40,7 @@ Me.fontComboBox2.VisualStyle = Syncfusion.Windows.Forms.Tools.ThemedComboBoxStyl
 {% endhighlight %}
 {% endtabs %}
 
-![Overview_img582](Overview_images/Overview_img582.jpeg) 
+![windowsforms-font-combo-box-overview](Overview_images/windowsforms-font-combo-box-overview.jpeg) 
 
 ## Custom Colors
 
