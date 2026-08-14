@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Autocomplete in Windows Forms FontComboBox control | Syncfusion
-description: Learn about Autocomplete support in Syncfusion Windows Forms FontComboBox control, its elements and more details.
+title: Autocomplete in Windows Forms FontComboBox | Syncfusion®
+description: Enable Autocomplete functionality in the Windows Forms FontComboBox control to help users quickly find and select font names.
 platform: WindowsForms
-control: Editors Package
+control: FontComboBox
 documentation: ug
 ---
 
@@ -56,6 +56,6 @@ Me.fontComboBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.Cu
 
 {% seealso %}
 
-[DropDown Settings](/windowsforms/fontcombobox/dropdownsettings/)
+[DropDown Settings](/windowsforms/fontcombobox/dropdownsettings)
 
 {% endseealso %}

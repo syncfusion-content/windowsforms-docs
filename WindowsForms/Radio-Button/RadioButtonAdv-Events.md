@@ -1,13 +1,13 @@
 ---
 layout: post
-title: RadioButtonAdv Events in Windows Forms Radio Button | Syncfusion
-description: Learn about RadioButtonAdv Events support in Syncfusion Windows Forms Radio Button (RadioButtonAdv) control and more details.
+title: Events in Windows Forms RadioButtonAdv | Syncfusion®
+description: Events in Windows Forms RadioButtonAdv provide notifications when checked states change, enabling responsive handling of selection and group selection changes.
 platform: WindowsForms
 control: RadioButtonAdv
 documentation: ug
 ---
 
-# RadioButtonAdv Events in Windows Forms Radio Button (RadioButtonAdv)
+# Events in Windows Forms RadioButtonAdv
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 

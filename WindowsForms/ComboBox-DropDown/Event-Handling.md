@@ -1,19 +1,17 @@
 ---
 layout: post
-title: Event-Handling | WindowsForms | Syncfusion
-description: Learn about Event Handling support in Syncfusion Windows Forms ComboBox DropDown (ComboDropDown) control, its elements and more.
+title: Event Handling in Windows Forms ComboDropDown | Syncfusion®
+description: Event handling in Windows Forms ComboDropDown enables responding to user interactions through control events such as DropDown and Popup.
 platform: WindowsForms
 control: ComboDropDown
 documentation: ug
 ---
 
-# Event Handling in Windows Forms ComboBox DropDown (ComboDropDown)
+# Event Handling in Windows Forms ComboDropDown
 
 ## Events of ComboDropDown
 
 ComboDropDown.DropDown:  It occurs before the dropdown portion is shown. This event can be handled to select the item in the control based on the text of ComboDropDown before its dropdown position is shown. The event handler receives an argument of type EventArgs.
-
-Refer DropDown Event.
 
 ComboDropDown.PopupContainer.Popup: It occurs after the popup has been dropped down and made visible. It can be handled to get focus on the drop down portion of ComboDropDown. The event handler receives an argument of type EventArgs. Refer Make the DropDown Respond to Mouse Move.
 
