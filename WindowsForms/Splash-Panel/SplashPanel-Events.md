@@ -1,13 +1,13 @@
 ---
 layout: post
-title: SplashPanel Events in Windows Forms SplashPanel | Syncfusion®
-description: SplashPanel events in Windows Forms SplashPanel allow handling panel lifecycle and user interaction events to customize runtime behavior.
+title: Events in Windows Forms SplashPanel | Syncfusion®
+description: Events in Windows Forms SplashPanel enable handling panel lifecycle events to customize splash screen behavior during runtime.
 platform: WindowsForms
 control: SplashPanel
 documentation: ug
 ---
 
-# SplashPanel Events in Windows Forms SplashPanel
+# Events in Windows Forms SplashPanel
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
