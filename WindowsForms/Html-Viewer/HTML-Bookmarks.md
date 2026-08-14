@@ -19,9 +19,9 @@ Bookmarks feature is enabled in the HTMLUI control. This allows the user to swit
 
 <body>
 
-<a href="Newfile.htm#bookmark" aria-label="New file Book mark"> New file Book mark </a>
+<a href="Newfile.htm#bookmark" aria-label="Navigate to new file bookmark"> New file Book mark </a>
 
-<a href="#bookmark" aria-label="Bookmark in same file"> Bookmark in same file </a>
+<a href="#bookmark" aria-label="Jump to bookmark in same file"> Bookmark in same file </a>
 
 ......
 
