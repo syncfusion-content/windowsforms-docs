@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in Windows Forms MultiColumn TreeView control | Syncfusion
-description: Learn about Appearance support in Syncfusion Windows Forms MultiSelectionComboBox control and more details.
+title: Appearance in Windows Forms MultiSelectionComboBox | Syncfusion®
+description: Customize the appearance of the Windows Forms MultiSelectionComboBox control using styles, colors, layouts, and display settings.
 platform: WindowsForms
 control: Editors Package
 documentation: ug

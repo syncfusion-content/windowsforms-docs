@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Windows Forms MultiColumn TreeView control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms MultiSelectionComboBox control and more details.
+title: About Windows Forms MultiSelectionComboBox Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms MultiSelectionComboBox control and its key features.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# Windows Forms MultiSelectionComboBox Overview
+# About Syncfusion® Windows Forms MultiSelectionComboBox Control
 
 The MultiSelectionComboBox is a type of ComboBox Control with multiple item selection and auto suggestion capabilities. When you type a character into the text area, the control performs a search operation and suggest a list of possible matching results to select.
 

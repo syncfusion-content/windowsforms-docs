@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ComboBoxAdv Options in Windows Forms xptoolbar control | Syncfusion
-description: Learn about ComboBoxAdv Options support in Syncfusion Windows Forms ComboBoxAdv(Classic) control and more details.
+title: Options in Windows Forms ComboBoxAdv(Classic) | Syncfusion®
+description: Configure options in the Windows Forms ComboBoxAdv(Classic) control to customize behavior, appearance, and user interactions.
 platform: WindowsForms
 control: ComboBoxAdv
 documentation: ug
 ---
 
-# ComboBoxAdv Options in Windows Forms ComboBoxAdv(Classic)
+# Options in Windows Forms ComboBoxAdv(Classic)
 
 ComboBoxAdv control has a textbox, that is the edit portion of the control, and a dropdown.
 
