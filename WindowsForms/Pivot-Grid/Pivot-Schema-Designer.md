@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pivot Schema Designer in Windows Forms Pivot Grid | Syncfusion®
-description: Learn about Pivot Schema Designer support in Syncfusion® Windows Forms Pivot Grid control and more details.
+description: Use Pivot Schema Designer in Syncfusion® Windows Forms Pivot Grid control to add, arrange, filter, and manage fields with Excel-like layout and features.
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
