@@ -1,12 +1,12 @@
 ﻿---
 layout: post
-title: Getting Started with Windows Forms Color Picker | Syncfusion®
+title: Getting Started with Windows Forms ColorPickerUIAdv | Syncfusion®
 description: Learn here about getting started with Syncfusion Windows Forms Color Picker (ColorPickerUIAdv) control, its elements, and more.
 platform: windowsforms
 control: ColorPickerUIAdv
 documentation: ug
 ---
-# Getting Started with Windows Forms Color Picker
+# Getting Started with Windows Forms ColorPickerUIAdv
 
 This section briefly describes how to create a new Windows Forms project in Visual Studio and add **ColorPickerUIAdv** with its basic functionalities.
 
@@ -117,4 +117,3 @@ Me.colorPickerUIAdv1.SelectedColor = System.Drawing.Color.White
 {% endtabs %}
 
 ![Windows Forms ColorPickerUIAdv showing selected color](ColorPickerUIAdv_Images/ColorPickerUIAdv_colorselection.png)
-
