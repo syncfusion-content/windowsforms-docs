@@ -1,14 +1,14 @@
 ---
 layout: post
-title: How to add a new data row to the Data table at runtime | WindowsForms | Syncfusion
-description: How to add a new data row to the Data table at runtime
+title: How to Add a New Data Row at Runtime in Windows Forms AutoComplete | Syncfusion®
+description: Add new data rows at runtime in Syncfusion® Windows Forms AutoComplete control by updating the data source and internal table data.
 platform: WindowsForms
 control: Tools
 documentation: ug
 ---
 
 
-# How to add a new data row to the Data table at runtime?
+# How to Add a New Data Row at Runtime in Windows Forms AutoComplete
 
 This method sets internal table data based on AutoComplete.DataSource property. You can do this by calling the SetTableData() method as follows.
 

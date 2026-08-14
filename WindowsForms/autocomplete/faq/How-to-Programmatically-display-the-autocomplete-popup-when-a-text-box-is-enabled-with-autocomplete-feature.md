@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: How to display the AutoComplete popup programmatically, when a textbox is enabled with AutoComplete feature | WindowsForms | Syncfusion
-description: How to display the AutoComplete popup programmatically, when a textbox is enabled with AutoComplete feature
+title: How to Display the AutoComplete Popup Programmatically in Windows Forms AutoComplete | Syncfusion®
+description: Display the AutoComplete popup programmatically in Syncfusion® Windows Forms AutoComplete control using built-in popup APIs and more.
 platform: WindowsForms
 control: Tools
 documentation: ug
 ---
 
-# How to display the AutoComplete popup programmatically, when a textbox is enabled with AutoComplete feature?
+# How to Display the AutoComplete Popup Programmatically in Windows Forms AutoComplete
 
 [AutoComplete popup](https://help.syncfusion.com/windowsforms/autocomplete/autocomplete-popup) can be displayed programmatically.
 

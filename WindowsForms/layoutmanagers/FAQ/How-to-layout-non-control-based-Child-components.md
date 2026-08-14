@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Non-control based Child components | WindowsForms | Syncfusion®
-description: how to layout non-control based child components in Syncfusion® Windows Forms Layout Managers Package control and more details.
+title: How to Layout Non-Control Child Components in WinForms LayoutManagers | Syncfusion®
+description: Layout non-control-based child components in Syncfusion® Windows Forms Layout Managers using LayoutItemBase, custom components, and more.
 platform: WindowsForms
 control: Layout Managers Package
 documentation: ug
 ---
 
-# How to layout non-control based Child components
+# How to Layout Non-Control Child Components in WinForms LayoutManagers
 
 The Layout Manager architecture seamlessly lets you use non-control derived Child-instances as the layout's Child controls. You can easily accomplish this by deriving your Child-types from the LayoutItemBase type and implementing methods. These instances can be used in any of the Layout Manager methods in the place of a Child control (for ex: SetConstraints, SetPreferredSize). This is feasible because the LayoutItemBase class has an implicit type-conversion operator that can convert itself to a control (use LayoutItemBase.ToControl method in VB.NET).
 

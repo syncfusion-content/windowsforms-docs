@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to delete the items in the list at runtime | WindowsForms | Syncfusion
-description: How to delete the items in the list at runtime
+title: How to Delete List Items at Runtime in Windows Forms AutoComplete | Syncfusion®
+description: Delete list items at runtime in Syncfusion® Windows Forms AutoComplete control using the AllowListDelete property and keyboard actions.
 platform: WindowsForms
 control: Tools
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 
 
-# How to delete the items in the list at runtime?
+# How to Delete List Items at Runtime in Windows Forms AutoComplete
 
 You can delete items in the list at runtime by enabling the AllowListDelete property and then pressing the Delete key.
 

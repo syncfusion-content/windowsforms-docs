@@ -1,12 +1,12 @@
----
+﻿---
 layout: post
-title: How to retrieve the corresponding matching item from a Datasource for the selected Item in the AutoComplete control | Windows Forms | Syncfusion
-description: How to retrieve the corresponding matching item from a Datasource for the selected Item in the AutoComplete control
+title: How to Retrieve a Matching Item in Windows Forms AutoComplete | Syncfusion®
+description: Retrieve the corresponding matching item in Syncfusion® Windows Forms AutoComplete control using the AutoCompleteItemSelected event and more.
 platform: windowsforms
 control: Editors Package
 documentation: ug
 ---
 
-# How to retrieve the corresponding matching item from a Datasource for the selected Item in the AutoComplete control?
+# How to Retrieve a Matching Item in Windows Forms AutoComplete
 
 This can be done by using the AutoCompleteItemSelected event, discussed in the [External Datasource](http://help.syncfusion.com/windowsforms/autocomplete/datasource#external-datasource)  topic.

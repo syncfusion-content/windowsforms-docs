@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Replacing default TextBox in ButtonEdit | WindowsForms | Syncfusion®
-description: This section gives detailed description on how to replace default TextBox in the ButtonEdit control.
+title: How to Replace the Default TextBox in Windows Forms ButtonEdit | Syncfusion®
+description: Replace the default TextBox in Syncfusion® Windows Forms ButtonEdit control using a custom text box, its configuration options, and more.
 platform: windowsforms
 control: Tools
 documentation: ug
