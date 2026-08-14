@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Toolbox Configuration | WinForms | Syncfusion
-description: The Syncfusion Toolbox Configuration utility adds Syncfusion WinForms controls into the Visual Studio .NET toolbox.
+title: Toolbox Configuration in Windows Forms | Syncfusion®
+description: The Syncfusion® Toolbox Configuration utility adds Syncfusion® WinForms controls into the Visual Studio .NET toolbox for easy access.
 platform: windowsforms
 control: Essential Studio®
 documentation: ug
 ---
 
-# Toolbox Configuration
+# Toolbox Configuration in Windows Forms
 
 The Syncfusion® Toolbox utility adds the Syncfusion® WinForms controls into the Visual Studio .NET toolbox.
 
