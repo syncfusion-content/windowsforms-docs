@@ -1,13 +1,13 @@
 ---
 layout: post
-title: SplashControl Events in Windows Forms Splash Screen | Syncfusion
-description: Learn about SplashControl Events support in Syncfusion Windows Forms Splash Screen (Splash) control and more details.
+title: SplashControl Events in Windows Forms SplashControl | Syncfusion®
+description: SplashControl events in Windows Forms SplashControl allow handling lifecycle actions and user interactions to customize behavior.
 platform: WindowsForms
 control: SplashControl
 documentation: ug
 ---
 
-# SplashControl Events in Windows Forms Splash Screen (Splash)
+# SplashControl Events in Windows Forms SplashControl
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 

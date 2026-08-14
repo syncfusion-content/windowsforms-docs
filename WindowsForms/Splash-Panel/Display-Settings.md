@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Display Settings in Windows Forms Splash Panel control | Syncfusion
-description: Learn about Display Settings support in Syncfusion Windows Forms Splash Panel control and more details.
+title: Display Settings in Windows Forms SplashPanel | Syncfusion®
+description: Display settings in Windows Forms SplashPanel enable configuration of panel appearance, position, visibility, and display behavior.
 platform: WindowsForms
 control: SplashPanel
 documentation: ug
 ---
 
-# Display Settings in Windows Forms Splash Panel
+# Display Settings in Windows Forms SplashPanel
 
 The section illustrates the display settings available for the SplashPanel control.
 

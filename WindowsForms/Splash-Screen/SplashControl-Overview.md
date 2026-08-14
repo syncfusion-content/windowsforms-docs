@@ -1,7 +1,7 @@
 ---
 layout: post
-title: SplashControl-Overview | WindowsForms | Syncfusion
-description: Learn here about overview of Syncfusion Essential WindowsForms Splash Control, its elements, and more.
+title: SplashControl Overview | Syncfusion®
+description: SplashControl overview introduces the Windows Forms SplashControl and highlights its capabilities, features, and customization options.
 platform: WindowsForms
 control: SplashControl
 documentation: ug

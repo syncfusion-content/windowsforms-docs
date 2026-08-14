@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to access the default panel of a SplashControl | WindowsForms | Syncfusion
-description: How to access the default panel of a SplashControl
+title: Default Panel Access in Windows Forms SplashControl | Syncfusion®
+description: Default Panel Access in Windows Forms SplashControl to customize content, appearance, and behavior for specific application needs.
 platform: WindowsForms
 control: Notification Package 
 documentation: ug
 ---
 
-#  How to Access the Default Panel of a SplashControl
+#  Default Panel Access in Windows Forms SplashControl 
 
 The default panel of a SplashControl can be accessed through the SplashControlPanel property.
 The example given below illustrates how the background color of a SplashControl's internal panel can be changed.

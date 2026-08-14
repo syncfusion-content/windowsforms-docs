@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Splash Panel | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms Splash Panel control, its elements and more details.
+title: Getting Started with Windows Forms SplashPanel | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms SplashPanel control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
 control: SplashPanel
 documentation: ug
 ---
 
-# Getting Started with Windows Forms Splash Panel
+# Getting Started with Windows Forms SplashPanel
 
 This section explains how to add `SplashPanel` in a Windows Forms and overview of its basic functionalities.
 
