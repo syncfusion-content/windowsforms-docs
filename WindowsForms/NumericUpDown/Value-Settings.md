@@ -3,7 +3,7 @@ layout: post
 title: Value Settings in Windows Forms NumericUpDownExt | Syncfusion®
 description: Value settings in Windows Forms NumericUpDownExt enable configuring numeric values, increments, limits, and hexadecimal display options.
 platform: WindowsForms
-control: EditorsPackage
+control: NumericUpDownExt
 documentation: ug
 ---
 
