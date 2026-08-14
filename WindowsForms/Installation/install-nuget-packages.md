@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Install Syncfusion Windows Forms NuGet packages - Syncfusion
-description: Learn here about the how to install Syncfusion Windows Forms NuGet packages from Package manager and NuGet manager.
+title: Install NuGet Packages in Windows Forms Extension | Syncfusion®
+description: Learn how to install Syncfusion® Windows Forms NuGet packages using the Package Manager UI and NuGet CLI in Visual Studio.
 platform: windowsforms
 control: Extension
 documentation: ug
 
 ---
 
-# Install Syncfusion WinForms NuGet packages
+# Install NuGet Packages in Windows Forms Extension
 
 ## Compatibility
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Installing Syncfusion Windows Forms web installer - Syncfusion
-description: Learn here about how to install Syncfusion Windows Forms web installer after downloading from our Syncfusion website.
+title: How to install Windows Forms web installer | Syncfusion®
+description: Learn to install Syncfusion® Windows Forms web installer after downloading from Syncfusion® website easily.
 platform: WindowsForms
 control: Installation and Deployment
 documentation: ug
 ---
 
-# Installing Syncfusion Windows Forms web installer
+# How to install Syncfusion® Windows Forms web installer
 
 
 ## Overview
