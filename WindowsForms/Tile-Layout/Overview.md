@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Windows Forms Tile Layout control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms Tile Layout control, its elements and more details.
+title: About Syncfusion® Windows Forms TileLayout Control | Syncfusion®
+description: Learn about introduction of Syncfusion® Essential Studio Windows Forms TileLayout control and more details.
 platform: WindowsForms
 control: TileLayout 
 documentation: ug
 ---
 
-# Windows Forms Tile Layout Overview
+# About Syncfusion® Windows Forms TileLayout Control
 
 [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html) control is Windows 8 Start screen inspired control . It acts as a container that holds a set of tile view items that can be maximized, minimized, dragged to reorder and arranged in matrix position to achieve best layout. 
 
