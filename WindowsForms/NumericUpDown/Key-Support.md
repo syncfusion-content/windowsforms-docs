@@ -3,7 +3,7 @@ layout: post
 title: Key Support in Windows Forms NumericUpDownExt | Syncfusion®
 description: Key support in Windows Forms NumericUpDownExt enables keyboard-based value entry and custom key actions, simplifying input of large numeric values.
 platform: WindowsForms
-control: EditorsPackage
+control: NumericUpDownExt
 documentation: ug
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Alignment Settings in Windows Forms NumericUpDownExt | Syncfusion®
 description: Alignment settings in Windows Forms NumericUpDownExt enable customizing the alignment of numeric values for improved readability and appearance.
 platform: WindowsForms
-control: EditorsPackage
+control: NumericUpDownExt
 documentation: ug
 ---
 

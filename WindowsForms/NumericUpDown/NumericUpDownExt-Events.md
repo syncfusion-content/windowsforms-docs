@@ -3,7 +3,7 @@ layout: post
 title: Events in Windows Forms NumericUpDownExt | Syncfusion®
 description: NumericUpDownExt events in Windows Forms provide notifications for property, value, appearance, and theme changes, enabling custom event handling.
 platform: WindowsForms
-control: EditorsPackage
+control: NumericUpDownExt
 documentation: ug
 ---
 

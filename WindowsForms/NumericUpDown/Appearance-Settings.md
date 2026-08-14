@@ -4,7 +4,7 @@ title: Appearance Settings in Windows Forms NumericUpDownExt | Syncfusion®
 description: Appearance settings in Windows Forms NumericUpDownExt enable customizing colors, borders, fonts, themes, and visual styles to enhance the control appearance.
 
 platform: WindowsForms
-control: EditorsPackage
+control: NumericUpDownExt
 documentation: ug
 ---
 

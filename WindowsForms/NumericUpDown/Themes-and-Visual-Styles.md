@@ -3,7 +3,7 @@ layout: post
 title: Themes and Styling in Windows Forms NumericUpDownExt | Syncfusion®
 description: Themes and visual styles in Windows Forms NumericUpDownExt enable applying built-in themes and customized appearances for a consistent user interface.
 platform: WindowsForms
-control: EditorsPackage
+control: NumericUpDownExt
 documentation: ug
 ---
 

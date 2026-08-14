@@ -3,7 +3,7 @@ layout: post
 title: Display Settings in Windows Forms NumericUpDownExt | Syncfusion®
 description: Display settings in Windows Forms NumericUpDownExt enable configuring decimal places and thousand separators for accurate and readable numeric value display.
 platform: WindowsForms
-control: EditorsPackage
+control: NumericUpDownExt
 documentation: ug
 ---
 

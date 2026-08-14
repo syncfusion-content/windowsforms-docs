@@ -3,7 +3,7 @@ layout: post
 title: Border Settings in Windows Forms NumericUpDownExt | Syncfusion®
 description: Border settings in Windows Forms NumericUpDownExt enable customizing border styles, colors, sides, and 3D border appearances to enhance control visuals.
 platform: WindowsForms
-control: EditorsPackage
+control: NumericUpDownExt
 documentation: ug
 ---
 
