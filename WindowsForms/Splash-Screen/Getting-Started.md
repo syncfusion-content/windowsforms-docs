@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Windows Forms SplashControl | Syncfusion®
-description: Learn how to get started with the Syncfusion® Windows Forms SplashControl control. Explore setup, features, examples, and customization options.
+description: Learn how to get started with the Syncfusion® Windows Forms SplashControl. Explore setup, features, examples, and customization options.
 platform: WindowsForms
 control: SplashControl
 documentation: ug
