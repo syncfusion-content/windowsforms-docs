@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ComboDropDown-Text | WindowsForms | Syncfusion
-description: Learn here all about ComboDropDown Text support in Syncfusion Windows Forms ComboBox DropDown (ComboDropDown) control, its elements, and more. 
+title: Text Settings in Windows Forms ComboDropDown | Syncfusion®
+description: Text settings in Windows Forms ComboDropDown enable configuring character casing, numeric input, read-only mode, and autocomplete behavior.
 platform: WindowsForms
 control: ComboDropDown
 documentation: ug
 ---
 
-# ComboDropDown Text in Windows Forms ComboBox DropDown (ComboDropDown)
+# Text Settings in Windows Forms ComboDropDown
 
 ComboDropDown control supports the properties which can change the appearance and behavior of the control's edit portion.
 
