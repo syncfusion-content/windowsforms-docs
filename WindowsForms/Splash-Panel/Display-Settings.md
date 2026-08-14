@@ -205,7 +205,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-### Location
+## Location
 
 The location for displaying the splash window is specified using the property given below.
 

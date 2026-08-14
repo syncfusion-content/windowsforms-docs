@@ -11,7 +11,7 @@ documentation: ug
 
 The various sections of SplashControl and their descriptions are given below.
 
-![WindowsForms Splash overview](Overview_images/Overview_img35.jpeg) 
+![WindowsForms Splash overview](Overview_images/windowsforms-splash-screen-overview.jpeg") 
 
 
 ## SplashControl
