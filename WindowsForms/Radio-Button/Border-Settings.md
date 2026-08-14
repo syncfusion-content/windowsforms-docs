@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Border Settings in Windows Forms Radio Button control | Syncfusion
-description: Learn about Border Settings support in Syncfusion Windows Forms Radio Button (RadioButtonAdv) control and more details.
+title: Border Settings in Windows Forms RadioButtonAdv | Syncfusion®
+description: Border settings in Windows Forms RadioButtonAdv enable customizing 2D and 3D border styles, border colors, and mouse-over border appearance.
 platform: WindowsForms
 control: RadioButtonAdv
 documentation: ug
 ---
 
-# Border Settings in Windows Forms Radio Button (RadioButtonAdv)
+# Border Settings in Windows Forms RadioButtonAdv
 
 Color and Styles can be applied to the border of the RadioButtonAdv as discussed below.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Text Settings in Windows Forms Radio Button control | Syncfusion
-description: Learn about Text Settings support in Syncfusion Windows Forms Radio Button (RadioButtonAdv) control and more details.
+title: Text Settings in Windows Forms RadioButtonAdv | Syncfusion®
+description: Text settings in Windows Forms RadioButtonAdv enable configuring text shadow, shadow color, shadow offset, and text wrapping for enhanced text presentation.
 platform: WindowsForms
 control: RadioButtonAdv
 documentation: ug
 ---
 
-# Text Settings in Windows Forms Radio Button (RadioButtonAdv)
+# Text Settings in Windows Forms RadioButtonAdv
 
 This section discusses the text settings of the RadioButtonAdv.
 
