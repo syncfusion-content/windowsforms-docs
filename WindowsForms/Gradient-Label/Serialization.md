@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Serialization in Windows Forms GradientLabel | Syncfusion®
-description: Learn how serialization preserves and restores Windows Forms GradientLabel properties for consistent design-time and runtime behavior.
+description: Serialization in Windows Forms GradientLabel enables saving and loading gradient color settings using XML, helping preserve control appearance across sessions.
 platform: WindowsForms
 control: GradientLabel
 documentation: ug
