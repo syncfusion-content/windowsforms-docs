@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Layout Settings in Windows Forms NumericUpDown control | Syncfusion
-description: Learn about Layout Settings support in Syncfusion Windows Forms NumericUpDown (NumericUpDownExt) control and more details.
+title: Layout Settings in Windows Forms NumericUpDownExt | Syncfusion®
+description: Layout settings in Windows Forms NumericUpDownExt enable configuring minimum and maximum control sizes to support flexible layout design.
 platform: WindowsForms
-control: EditorsPackage
+control: NumericUpDownExt
 documentation: ug
 ---
 
-# Layout Settings in Windows Forms NumericUpDown (NumericUpDownExt)
+# Layout Settings in Windows Forms NumericUpDownExt
 
 The layout settings of the NumericUpDownExt control are discussed in this section.
 
