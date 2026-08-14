@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to close the splash panel in Windows Forms | Syncfusion
-description: Learn here all about how to close the splash panel of Syncfusion Windows Forms SplashPanel control and more.
+title: Closing SplashPanel Using CloseOnClick | Syncfusion®
+description: Learn how to close the Windows Forms SplashPanel when CloseOnClick is enabled but clicking a child control does not close the panel.
 platform: WindowsForms
 control: SplashPanel
 documentation: ug
 ---
 
-# How to close the splash panel in Windows Forms
+# Closing SplashPanel Using CloseOnClick
 
 This section discusses The property CloseOnClick is used but SplashPanel is not closing when clicking on child control.
 
