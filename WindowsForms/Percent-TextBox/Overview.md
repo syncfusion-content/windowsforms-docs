@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# About Syncfusion® Windows Forms Percent TextBox Control.
+# About Syncfusion Windows Forms Percent TextBox Control.
 
 The PercentTextBox is a textbox-derived control that can display double data type values in percentage form.
 

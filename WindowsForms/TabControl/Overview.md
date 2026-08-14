@@ -7,7 +7,7 @@ control: TabControlAdv
 documentation: ug
 ---
 
-# About Syncfusion® Windows Forms TabControl Control
+# About Syncfusion Windows Forms TabControl Control
 
 The [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) is an advanced form of the standard TabControl that enables an end-user to arrange visual content in a compacted and organized form in less space. It includes all standard TabControl features, plus extensive appearance and configuration options.
 
