@@ -1,13 +1,13 @@
 ---
 layout: post
-title: StatusStripEx in Windows Forms StatusStrip control | Syncfusion
-description: Learn about StatusStripEx support in Syncfusion Windows Forms StatusStrip (StatusStripEx) control and more details.
+title: Getting Started with Windows Forms StatusStripEx | Syncfusion®
+description: StatusStripEx in Windows Forms provides a customizable status bar with support for status items, visual styles, layout customization, and user interaction.
 platform: windowsforms
 control: StatusStripEx 
 documentation: ug
 ---
 
-# StatusStripEx in Windows Forms StatusStrip (StatusStripEx)
+# Getting Started with Windows Forms StatusStripEx
 
 Essential Tools has come up with StatusStripEx control which can be added to the bottom of the Ribbon. It can hold controls like TrackBarEx, ProgressBar, StatusStripButtons, and so on.
 
