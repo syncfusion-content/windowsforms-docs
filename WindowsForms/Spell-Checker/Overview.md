@@ -1,7 +1,7 @@
 ﻿---
 layout: post
 title: About Syncfusion Windows Forms Spell Checker Control | Syncfusion®
-description: Learn here all about introduction of Syncfusion Windows Forms Spell Checker (SpellCheckerAdv) control, its elements and more details.
+description: Provides an overview of Syncfusion Windows Forms Spell Checker (SpellCheckerAdv) control, its key features, elements, and getting started guidance.
 platform: windowsforms
 control: SpellCheckerAdv
 documentation: ug

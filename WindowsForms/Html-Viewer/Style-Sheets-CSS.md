@@ -1089,13 +1089,13 @@ The following sample shows how different properties can be set for the hyperlink
 
 <body>
 
-<a class="ChangeColor" href="none.htm" target="_blank">This link changes color</a><br/>
+<a class="ChangeColor" href="none.htm" target="_blank" aria-label="This link changes color">This link changes color</a><br/>
 
-<a class="ChangeFont" href="none.htm" target="_blank">This link changes font</a><br/>
+<a class="ChangeFont" href="none.htm" target="_blank" aria-label="This link changes font">This link changes font</a><br/>
 
-<a class="ChangeBgcolor" href="none.htm" target="_blank">This link changes background-color</a><br/>
+<a class="ChangeBgcolor" href="none.htm" target="_blank" aria-label="This link changes background-color">This link changes background-color</a><br/>
 
-<a class="ChangeTextDec" href="none.htm" target="_blank">This link changes text-decoration</a><br/>
+<a class="ChangeTextDec" href="none.htm" target="_blank" aria-label="This link changes text-decoration">This link changes text-decoration</a><br/>
 
 </body>
 
