@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Windows Forms Status Bar control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms Status Bar (StatusBarAdv) control, its elements and more details.
+title: Overview of Windows Forms StatusBarAdv | Syncfusion®
+description: StatusBarAdv overview introduces the Windows Forms StatusBarAdv control, its panels, child controls, and their roles within the status bar.
 platform: windowsforms
 control: StatusBarAdv
 documentation: ug
 ---
 
-# Windows Forms Status Bar (StatusBarAdv) Overview
+# Overview of Windows Forms StatusBarAdv
 
 The various sections of StatusBarAdv and their descriptions are given below.
 
