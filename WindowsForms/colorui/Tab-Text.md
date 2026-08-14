@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: Tab Text in Windows Forms ColorUI | Syncfusion®
-description: Learn about Tab Text support in Syncfusion® Windows Forms ColorUI control, its features, and more details.
+description: Learn about Tab Text support in Syncfusion Windows Forms ColorUI control, its features, and more details.
 platform: windowsforms
 control: ColorUI
 documentation: ug

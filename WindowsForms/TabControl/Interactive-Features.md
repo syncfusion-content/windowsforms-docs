@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: Interactive Features in Windows Forms TabControl | Syncfusion®
-description: Learn about Interactive Features support in Syncfusion® Windows Forms TabControl (TabControlAdv) control and more details.
+description: Learn about Interactive Features support in Syncfusion Windows Forms TabControl (TabControlAdv) control and more details.
 platform: windowsforms
 control: TabControlAdv
 documentation: ug

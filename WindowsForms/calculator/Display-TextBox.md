@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: Display TextBox in Windows Forms Calculator | Syncfusion®
-description: Learn about Display TextBox support in Syncfusion® Windows Forms Calculator control and more details.
+description: Learn about Display TextBox support in Syncfusion Windows Forms Calculator control and more details.
 platform: windowsforms
 control: Calculator
 documentation: ug

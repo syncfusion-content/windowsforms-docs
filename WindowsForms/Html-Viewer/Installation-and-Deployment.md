@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Installation and Deployment in Windows Forms Html Viewer | Syncfusion®
+title: Installation and Deployment in Windows Forms HTMLUI | Syncfusion®
 description: Learn about the installation and deployment of Syncfusion Windows Forms Html Viewer (HTMLUI) control, install location, and patches.
 platform: windowsforms
-control: HTML UI
+control: HTMLUI
 documentation: ug
 ---
 
-# Installation and Deployment in Windows Forms Html Viewer
+# Installation and Deployment in Windows Forms HTMLUI
 
 This section covers information on the install location, samples, licensing, patches update and updation of the recent version of Essential Studio<sup>®</sup>. It comprises the following subsections:
 
@@ -136,4 +136,3 @@ Windows Forms – HTMLUI
 
 
  Syncfusion.HTMLUI.Base.dll depends on Syncfusion.MIME.Base.dll. So this needs to be included in the deployment of any application which uses HTMLUI.
-

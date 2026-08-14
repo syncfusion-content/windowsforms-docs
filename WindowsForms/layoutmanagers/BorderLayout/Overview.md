@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: About Syncfusion Windows Forms BorderLayout Control | Syncfusion®
-description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms BorderLayout control and more details.
+description: Learn about the introduction of Syncfusion Essential Studio Windows Forms BorderLayout control and more details.
 platform: windowsforms
 control: BorderLayout
 documentation: ug

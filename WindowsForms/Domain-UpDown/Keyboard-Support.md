@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: Keyboard Support in Windows Forms Domain UpDown | Syncfusion®
-description: Learn about Keyboard Support support in Syncfusion® Windows Forms Domain UpDown (DomainUpdownExt) control and more details.
+description: Learn about Keyboard Support support in Syncfusion Windows Forms Domain UpDown (DomainUpdownExt) control and more details.
 platform: windowsforms
 control: DomainUpdownExt 
 documentation: ug

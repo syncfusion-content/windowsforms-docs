@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: About Syncfusion® Windows Forms Calculator Control | Syncfusion®
-description: Learn here all about the introduction of Syncfusion® Windows Forms Calculator control and more details.
+title: About Syncfusion Windows Forms Calculator Control | Syncfusion®
+description: Learn here all about the introduction of Syncfusion Windows Forms Calculator control and more details.
 platform: windowsforms
 control: Calculator
 documentation: ug

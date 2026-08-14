@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: CheckBoxAdv Events in Windows Forms CheckBox | Syncfusion®
-description: Learn about CheckBoxAdv Events support in Syncfusion® Windows Forms CheckBox (CheckBoxAdv) control and more details.
+description: Learn about CheckBoxAdv Events support in Syncfusion Windows Forms CheckBox (CheckBoxAdv) control and more details.
 platform: windowsforms
 control: EditorsPackage
 documentation: ug

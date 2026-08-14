@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: Serialization in Windows Forms TabControl | Syncfusion®
-description: Learn about Serialization support in Syncfusion® Windows Forms TabControl (TabControlAdv) control and more details.
+description: Learn about Serialization support in Syncfusion Windows Forms TabControl (TabControlAdv) control and more details.
 platform: windowsforms
 control: TabControlAdv
 documentation: ug

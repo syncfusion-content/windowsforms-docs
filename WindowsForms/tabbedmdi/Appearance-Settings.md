@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: Appearance Settings in Windows Forms TabbedMDI | Syncfusion®
-description: Learn about Appearance Settings support in Syncfusion® Windows Forms TabbedMDI control and more details.
+description: Learn about Appearance Settings support in Syncfusion Windows Forms TabbedMDI control and more details.
 platform: windowsforms
 control: TabbedMDIPackage 
 documentation: ug

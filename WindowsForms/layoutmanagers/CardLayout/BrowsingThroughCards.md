@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: Browsing Through Cards in Windows Forms CardLayout | Syncfusion®
-description: Learn about Browsing Through Cards support in Syncfusion® Windows Forms LayoutManagers control and more details.
+description: Learn about Browsing Through Cards support in Syncfusion Windows Forms LayoutManagers control and more details.
 platform: windowsforms
 control: CardLayout
 documentation: ug

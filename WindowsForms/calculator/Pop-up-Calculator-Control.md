@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: Popup Calculator in Windows Forms Calculator | Syncfusion®
-description: Learn about Popup Calculator support in Syncfusion® Windows Forms Calculator control and more details.
+description: Learn about Popup Calculator support in Syncfusion Windows Forms Calculator control and more details.
 platform: windowsforms
 control: Editors Package
 documentation: ug

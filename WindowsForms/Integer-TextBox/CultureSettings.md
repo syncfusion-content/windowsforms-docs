@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: Culture Settings in Windows Forms Integer TextBox | Syncfusion®
-description: Learn about Culture Settings support in Syncfusion® Windows Forms Integer TextBox (Integertextbox) control and more details.
+description: Learn about Culture Settings support in Syncfusion Windows Forms Integer TextBox (Integertextbox) control and more details.
 platform: windowsforms
 control: Tools
 documentation: ug

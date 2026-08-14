@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: Text Settings in Windows Forms Folder Browser | Syncfusion®
-description: Learn about Text Settings support in Syncfusion® Windows Forms Folder Browser control and more details.
+description: Learn about Text Settings support in Syncfusion Windows Forms Folder Browser control and more details.
 platform: windowsforms
 control: Tools
 documentation: ug

@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: Appearance and Behavior in Windows Forms CheckBox | Syncfusion®
-description: Learn about Appearance and Behavior Settings support in Syncfusion® Windows Forms CheckBox (CheckBoxAdv) control and more details.
+description: Learn about Appearance and Behavior Settings support in Syncfusion Windows Forms CheckBox (CheckBoxAdv) control and more details.
 platform: windowsforms
 control: EditorsPackage
 documentation: ug

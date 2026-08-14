@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Auto Close in Windows Forms ContextMenuStrip Control | Syncfusion®
-description: Learn here all about Auto Close feature of Syncfusion® Windows Forms ContextMenuStrip (ContextMenuStripEx) control and more.
+description: Use the Auto Close property to control whether the context menu closes on user actions in Syncfusion Windows Forms ContextMenuStrip control.
 platform: windowsforms
 control: ContextMenuStripEx
 documentation: ug
@@ -24,6 +24,10 @@ this.contextMenuStripEx1.AutoClose = true;
 {% highlight vb %}
 
 Me.contextMenuStripEx1.AutoClose = True
+
+{% endhighlight %}
+{% endtabs %}
+se = True
 
 {% endhighlight %}
 {% endtabs %}

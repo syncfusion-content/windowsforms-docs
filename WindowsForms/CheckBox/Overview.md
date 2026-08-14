@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: About Syncfusion® Windows Forms CheckBox Control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® Windows Forms CheckBox (CheckBoxAdv) control and more details.
+title: About Syncfusion Windows Forms CheckBox Control | Syncfusion®
+description: Learn here all about introduction of Syncfusion Windows Forms CheckBox (CheckBoxAdv) control and more details.
 platform: windowsforms
 control: EditorsPackage
 documentation: ug

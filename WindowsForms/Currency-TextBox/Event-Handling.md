@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: Event Handling in Windows Forms Currency TextBox | Syncfusion®
-description: Learn here about event handling with Syncfusion® Windows Forms Currency TextBox control, its elements, and more.
+description: Learn here about event handling with Syncfusion Windows Forms Currency TextBox control, its elements, and more.
 platform: windowsforms
 control: CurrencyTextbox
 documentation: ug

@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Style Sheets CSS in Windows Forms Html Viewer control | Syncfusion®
-description: Learn about Style Sheets CSS support in Syncfusion® Windows Forms Html Viewer (HTMLUI) control and more details.
+title: Style Sheets CSS in Windows Forms HTMLUI control | Syncfusion®
+description: Learn about Style Sheets CSS support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
 platform: windowsforms
-control: HTML UI
+control: HTMLUI
 documentation: ug
 ---
 
-#  Style Sheets CSS in Windows Forms Html Viewer control
+# Style Sheets CSS in Windows Forms HTMLUI control
 
 The support for style sheets is enabled in HTMLUI. This lets the user to define styles for HTML elements and decide the appearance of the HTML elements in the application. HTMLUI supports three types of style sheets.
 
@@ -1204,6 +1204,5 @@ HTMLUIBackColor Sample
 By default, this sample can be found under the following location:
 
 ...\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\HTMLUI.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
-
 
 

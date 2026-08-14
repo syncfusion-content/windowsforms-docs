@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: Getting Started with Windows Forms CheckBox | Syncfusion®
-description: Learn here about getting started with Syncfusion® Windows Forms CheckBox (CheckBoxAdv) control and more details.
+description: Learn here about getting started with Syncfusion Windows Forms CheckBox (CheckBoxAdv) control and more details.
 platform: windowsforms
 control: CheckBoxAdv
 documentation: ug

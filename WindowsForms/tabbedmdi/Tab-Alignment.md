@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: Tab Alignment in Windows Forms TabbedMDI | Syncfusion®
-description: Learn about Tab Alignment support in Syncfusion® Windows Forms TabbedMDI control, its elements and more details.
+description: Learn about Tab Alignment support in Syncfusion Windows Forms TabbedMDI control, its elements and more details.
 platform: windowsforms
 control: TabbedMDIManager 
 documentation: ug
