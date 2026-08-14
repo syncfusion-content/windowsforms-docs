@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Licensing FAQ â€“ Upgrade from Trial version | Syncfusion
-description: Learn here some information about upgrading from trial version of Essential Studio to Licensed version.
+title: How to upgrade from trial version in Windows Forms | Syncfusion®
+description: Upgrade from trial version to licensed version of Syncfusion® Windows Forms after purchasing a license.
 platform: WindowsForms
 control: Essential Studio
 documentation: ug
 ---
 
-# How to upgrade from Trial version after purchasing a license
+# How to upgrade from trial version in Windows Forms
 
 To upgrade from trial version, there are two possible solutions.
 

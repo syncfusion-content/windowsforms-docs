@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion license registration - Syncfusion
-description: Learn how to register the Syncfusion license key in a Windows Forms application for license validation.
+title: How to register license key in Windows Forms | Syncfusion®
+description: Register Syncfusion® license key in Windows Forms applications for license validation and deployment.
 platform: windowsforms
 control: Essential Studio
 documentation: ug
 ---
 
-# Register Syncfusion license key in a Windows Forms application
+# How to register license key in Windows Forms
 
 The generated license key is just a string that needs to be registered before any Syncfusion control is initiated. The following code is used to register the license.
 

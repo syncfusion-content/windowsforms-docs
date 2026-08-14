@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Essential Studio Licensing | Syncfusion
-description: Learn here about Syncfusion Essential Studio license key, how to generate the license key, how to register the license key, and more details.
+title: Register Account for NuGet.org Users in Windows Forms | Syncfusion®
+description: Register Syncfusion® account for direct NuGet.org users to obtain trial license key for Windows Forms.
 platform: WindowsForms
 control: Essential Studio
 documentation: ug
 ---
 
-# Registering Syncfusion account for direct NuGet.org users
+# Register Account for NuGet.org Users in Windows Forms
 
 If you have directly obtained Syncfusion assemblies from [NuGet.org](https://www.nuget.org/) and do not have a Syncfusion account, follow these steps to obtain a free 30-day trial license key:
 
