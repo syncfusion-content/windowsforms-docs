@@ -27,7 +27,3 @@ Me.contextMenuStripEx1.AutoClose = True
 
 {% endhighlight %}
 {% endtabs %}
-se = True
-
-{% endhighlight %}
-{% endtabs %}

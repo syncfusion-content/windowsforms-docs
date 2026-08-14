@@ -30,7 +30,7 @@ The following example illustrates how the Anchor tag is rendered in HTMLUI.
 
 
 
-string htmlCode="<html><head><title>A Tag support</title></head><body><A href="link.htm" aria-label="Sample link tag">Link</A></body></html>";
+string htmlCode="<html><head><title>A Tag support</title></head><body><A href="link.htm" aria-label="Sample link tag">Sample link</A></body></html>";
 
 this.htmluiControl1.LoadFromString(htmlCode);
 
@@ -40,7 +40,7 @@ this.htmluiControl1.LoadFromString(htmlCode);
 
 
 
-Private htmlCode As String = "<html><head><title>A Tag support</title></head><body><A href="link.htm" aria-label="Sample link tag">Link</A></body></html>"
+Private htmlCode As String = "<html><head><title>A Tag support</title></head><body><A href="link.htm" aria-label="Sample link tag">Sample link</A></body></html>"
 
 Me.HtmluiControl1.LoadFromString(htmlCode)
 
