@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Record and Run the tests for Syncfusion Essential WindowsForms
-description: This section explains about how to Record and Run the tests with QTP/UFT for Syncfusion Windows Forms controls.
+title: Record and Run Tests in Windows Forms UFT | Syncfusion®
+description: Learn how to create, record and run tests with Syncfusion® Essential Studio Windows Forms UFT for testing controls.
 platform: WindowsForms
 control: Testing
 documentation: ug
 ---
 
-# Create, Record and Run the tests
+# Record and Run Tests in Syncfusion® Windows Forms UFT
+
 Essential QuickTest Professional lets you test applications with different Syncfusion controls, and allows playback of scripts. This section describes about how to create, record and run the tests in HP QTP/UFT.
 
 ## Creating a new Test
