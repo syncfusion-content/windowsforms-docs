@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Foreground Settings in WinForms Gradient Label | Syncfusion
-description: Learn about Foreground Settings support in Syncfusion Windows Forms Gradient Label control and more details.
+title: Foreground Settings in Windows Forms GradientLabel | Syncfusion®
+description: Customize the foreground appearance of the Windows Forms GradientLabel control using text colors, styles, and visual settings
 platform: WindowsForms
-control: Editors Package
+control: GradientLabel
 documentation: ug
 ---
 
-# Foreground Settings in Windows Forms Gradient Label
+# Foreground Settings in Windows Forms GradientLabel
 
 This section illustrates the foreground settings of the GradientLabel control.
 

@@ -6,7 +6,7 @@ platform: windowsforms
 control: Layout Managers Package
 documentation: ug
 ---
-# Windows Forms LayoutManagers Overview
+# About Syncfusion® Windows Forms Layout Managers Control
 
 ## Layout Manager
 

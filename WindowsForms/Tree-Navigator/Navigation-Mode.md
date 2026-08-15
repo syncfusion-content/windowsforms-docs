@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Navigation Mode in Windows Forms Tree Navigator control | Syncfusion
-description: Learn about Navigation Mode support in Syncfusion Windows Forms Tree Navigator control and more details.
+title: Navigation Mode in Windows Forms TreeNavigator | Syncfusion®
+description: Navigation mode in Windows Forms Tree Navigator enables navigating between parent and child items using default and extended navigation modes.
 platform: WindowsForms
 control: TreeNavigator 
 documentation: ug
 ---
 
-# Navigation Mode in Windows Forms Tree Navigator
+# Navigation Mode in Windows Forms TreeNavigator
 
 The Navigation Mode is used to navigate from parent to child items or child to parent items using Back button.
 

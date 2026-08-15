@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Styles Settings in Windows Forms Range Slider control | Syncfusion®
-description: Learn about Styles Settings support in Syncfusion® Windows Forms Range Slider control and more details.
+title: Styles Settings in Windows Forms Range Slider | Syncfusion®
+description: Style settings provide Metro, Office 2016, and default themes for customizing the visual appearance of RangeSlider controls.
 platform: windowsforms
 control: RangeSlider
 documentation: ug

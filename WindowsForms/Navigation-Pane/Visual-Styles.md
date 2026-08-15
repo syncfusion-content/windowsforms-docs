@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Visual Styles in Windows Forms Navigation Pane control | Syncfusion
-description: Learn about Visual Styles support in Syncfusion Windows Forms Navigation Pane (GroupBar) control and more details.
+title: Visual Styles in Windows Forms Navigation Pane | Syncfusion®
+description: Visual styles provide Office, Metro, and Office 2016 themes with configurable color schemes for Navigation Pane controls.
 platform: WindowsForms
 control: GroupBar
 documentation: ug

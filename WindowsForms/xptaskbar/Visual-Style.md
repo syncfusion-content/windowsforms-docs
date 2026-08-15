@@ -1,12 +1,12 @@
----
+﻿---
 layout: post
-title: Visual Style in Windows Forms xptaskbar control | Syncfusion®
-description: Learn about Visual Style support in Syncfusion® Windows Forms xptaskbar (XPTaskBar) control and more details.
+title: Visual Style in Windows Forms XPTaskBar | Syncfusion®
+description: Visual styles provide Office, Metro, and custom themes for enhancing the appearance of XPTaskBar controls.
 platform: windowsforms
 control: XPTaskBar
 documentation: ug
 ---
-# Visual Style in Windows Forms xp taskbar (XPTaskBar)
+# Visual Style in Windows Forms XPTaskBar
 
  XPTaskBar offers various built in themes for its professional representation as follows
 

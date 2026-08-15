@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Windows Forms Tree Navigator control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms Tree Navigator control, its elements and more details.
+title: About Syncfusion® Windows Forms TreeNavigator Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms TreeNavigator control and its features, customization, and navigation capabilities.
 platform: WindowsForms
 control: TreeNavigator 
 documentation: ug
 ---
 
-# Windows Forms Tree Navigator Overview
+# About Syncfusion® Windows Forms TreeNavigator Control
 
 The Tree Navigator control provides a unique interface that can expand a tree structure in-place without taking up more space on the screen. Items in the control are expanded or collapsed, and you can drill down to sub-items by simply clicking on items in the TreeNavigator. 
 
