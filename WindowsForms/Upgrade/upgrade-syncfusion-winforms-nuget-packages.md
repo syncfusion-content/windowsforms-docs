@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion� WinForms NuGet package upgrades | Syncfusion�
-description: Learn to upgrade Syncfusion� WinForms NuGet packages to the latest version using NuGet manager and package manager UI.
+title: Syncfusion® WinForms NuGet package upgrades | Syncfusion®
+description: Learn to upgrade Syncfusion® WinForms NuGet packages to the latest version using NuGet manager and package manager UI.
 platform: WindowsForms
 control: Essential Studio
 documentation: ug
 ---
 
-# Syncfusion� WinForms NuGet package upgrades
+# Syncfusion® WinForms NuGet package upgrades
 
 Every three months, Syncfusion releases new volumes with interesting new features. For this volume, there will be weekly NuGet releases and a service pack. Syncfusion WinForms NuGet packages are released on a weekly basis to address critical issue fixes.
 

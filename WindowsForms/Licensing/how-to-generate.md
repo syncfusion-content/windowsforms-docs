@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to generate license key in Windows Forms | Syncfusion®
-description: Generate Syncfusion® Windows Forms license key for license validation in Windows Forms applications.
+title: How to generate license key in Windows Forms | SyncfusionÂ®
+description: Generate SyncfusionÂ® Windows Forms license key for license validation in Windows Forms applications.
 platform: WindowsForms
 control: Essential Studio
 documentation: ug

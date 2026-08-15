@@ -1,14 +1,14 @@
 ---
 layout: post
-title: How to download Windows Forms web installer | Syncfusion®
-description: Learn to download Syncfusion® Windows Forms web installer from Syncfusion® website for trial or licensed.
+title: How to download Windows Forms web installer | SyncfusionÂ®
+description: Learn to download SyncfusionÂ® Windows Forms web installer from SyncfusionÂ® website for trial or licensed.
 platform: WindowsForms
 control: Installation and Deployment
 documentation: ug
 
 ---
 
-# How to download Syncfusion® Windows Forms web installer
+# How to download SyncfusionÂ® Windows Forms web installer
 
 The Syncfusion Windows Forms web installer can be downloaded from the [Syncfusion.com](https://www.syncfusion.com/winforms-ui-controls) website. You can either download the licensed installer or try our trial installer depending on your license.
 

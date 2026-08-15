@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Get License Key in Windows Forms | Syncfusion®
-description: Get Syncfusion® license key from License and Downloads or Trial Downloads section for Windows Forms.
+title: Get License Key in Windows Forms | SyncfusionÂ®
+description: Get SyncfusionÂ® license key from License and Downloads or Trial Downloads section for Windows Forms.
 platform: WindowsForms
 control: Essential Studio
 documentation: ug
