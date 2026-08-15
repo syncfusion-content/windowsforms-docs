@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: How to Assign the Selected Item to Tag in Windows Forms GroupBar | Syncfusion®
+title: How to Assign the Selected Item to Tag in Windows Forms GroupBar
 description: Assign the selected GroupBar item to the Tag property in Syncfusion® Windows Forms GroupBar control using selection events and more.
 platform: WindowsForms
 control: GroupBar
@@ -8,7 +8,7 @@ documentation: ug
 ---
 # How to Assign the Selected Item to Tag in Windows Forms GroupBar
 
-You could do so by handling the GroupBar’s [GroupBarItemSelected](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html) event. Within this event handler, index into the GroupBar Items Collection using the GroupBar's [SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_SelectedItem) property value, to get the currently selected GroupBar Item, and then assign it to the GroupBar’s [Tag](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.Windows.Forms.Control.Tag)&rd=true) property.
+You could do so by handling the GroupBar’s [GroupBarItemSelected](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html) event. Within this event handler, index into the GroupBar Items Collection using the GroupBar's [SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_SelectedItem) property value, to get the currently selected GroupBar Item, and then assign it to the GroupBar’s [Tag](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.tag?view=windowsdesktop-10.0) property.
 
 {% tabs %}
 

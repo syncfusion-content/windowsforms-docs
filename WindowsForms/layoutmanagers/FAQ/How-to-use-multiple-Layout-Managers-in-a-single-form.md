@@ -1,13 +1,13 @@
 ﻿---
 layout: post
-title: How to Use Multiple LayoutManagers in a WinForms Form Form | Syncfusion®
+title: How to Use Multiple LayoutManagers in a WinForms Form
 description: Use multiple layout managers in a Syncfusion® Windows Forms form to arrange controls with FlowLayout, GridLayout, BorderLayout, and more.
 platform: windowsforms
 control: Layout Managers Package
 documentation: ug
 ---
 
-# How to Use Multiple LayoutManagers in a WinForms Form Form
+# How to Use Multiple LayoutManagers in a WinForms Form
 
 This page explains How to use multiple Layout Managers in a single form and more details.
 

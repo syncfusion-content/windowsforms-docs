@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: How to Programmatically Nest Layouts in WinForms LayoutManagers | Syncfusion®
+title: How to Programmatically Nest Layouts in WinForms LayoutManagers
 description: Programmatically nest multiple layouts in Syncfusion® Windows Forms Layout Managers using GridBagLayout, FlowLayout, and more.
 platform: windowsforms
 control: Layout Managers Package
