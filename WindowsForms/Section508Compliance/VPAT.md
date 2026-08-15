@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Section 508 Compliance for Syncfusion Windows Forms products
-description: Learn here all about Voluntary Product Accessibility Template of Syncfusion Windows Forms products and more.
+title: Section 508 Compliance in Windows Forms | Syncfusion®
+description: Section 508 VPAT documentation for Windows Forms. Review accessibility compliance covering keyboard support, assistive technology, and universal design features.
 platform: WindowsForms
 control: General
 documentation: ug
 ---
 
 
-# Section 508 Compliance - Voluntary Product Accessibility Template
+# Section 508 Compliance in Syncfusion® Windows Forms
 
 The following Voluntary Product Accessibility information refers to the Syncfusion Essential Studio for Windows Forms.
 
