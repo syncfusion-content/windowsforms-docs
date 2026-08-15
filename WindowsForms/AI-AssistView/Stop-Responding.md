@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Stop Responding in Windows Forms SfAIAssistView | Syncfusion®
-description: Cancel ongoing AI responses using the Stop Responding feature in the Syncfusion® Windows Forms SfAIAssistView control.
+title: Stop Responding in Windows Forms SfAIAssistView | Syncfusion
+description: Cancel ongoing AI responses using the Stop Responding feature in the Syncfusion Windows Forms SfAIAssistView control.
 platform: windowsforms
 control: SfAIAssistView
 documentation: ug

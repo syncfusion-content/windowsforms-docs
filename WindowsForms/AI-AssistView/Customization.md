@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 	Customization in Windows Forms SfAIAssistView | Syncfusion®
-description: Customize the BannerView and create custom BotView and UserView in the Syncfusion® Windows Forms SfAIAssistView control.
+title: 	Customization in Windows Forms SfAIAssistView | Syncfusion
+description: Customize the BannerView and create custom BotView and UserView in the Syncfusion Windows Forms SfAIAssistView control.
 platform: windowsforms
 control: SfAIAssistView
 documentation: ug
