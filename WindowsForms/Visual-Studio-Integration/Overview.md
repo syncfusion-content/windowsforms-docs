@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Syncfusion® Windows Forms Visual Studio Integration | Syncfusion®
+title: About Syncfusion® WinForms Visual Studio Integration | Syncfusion®
 description: Learn about introduction of Syncfusion® Essential Studio Windows Forms Visual Studio Integration and more details.
 platform: windowsforms
 control: Syncfusion Extensions

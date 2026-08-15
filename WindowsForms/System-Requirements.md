@@ -11,7 +11,7 @@ documentation: ug
 
 This section describes the system requirements to use Syncfusion<sup>®</sup> Windows Forms Controls for development.
 
-### Operating Systems
+## Operating Systems
 
 * Windows 2000
 * Windows XP
@@ -23,13 +23,13 @@ This section describes the system requirements to use Syncfusion<sup>®</sup> Wi
 * Windows Server (from 2003 to latest)
 
 
-### Hardware Environment
+## Hardware Environment
 
 * Processor: x86 or x64
 * RAM : 512 MB (minimum), 1 GB (recommended)
 * Hard disk: up to 4 GB of space may be required. However, even if you install in a different drive, 400 MB of free space is required in the boot drive.
 
-### Development Environment
+## Development Environment
 
 * Microsoft Visual Studio 2015/2017/2019/2022
 * .NET Framework 4.6.2

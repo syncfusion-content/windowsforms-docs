@@ -175,4 +175,4 @@ The following image shows the mouse pointer pointing towards the path and file d
 ![shows the mouse pointer pointing towards the path and file as a  window name](QTP_images/QTP_img31.jpeg)
 
 3) Click Run on the toolbar to run the test.
-For more details on running the test, refer [this](http://172.16.0.76/windowsforms/testing/uft/record-and-run-the-tests#running-a-test) document. The process of running a saved test is complete.
+For more details on running the test, refer **http://172.16.0.76/windowsforms/testing/uft/record-and-run-the-tests#running-a-test** document. The process of running a saved test is complete.

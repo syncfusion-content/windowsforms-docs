@@ -1,7 +1,7 @@
 ---
 layout: post
-title: CI License Validation in Windows Forms | Syncfusion®
-description: Validate Syncfusion® license key in CI services for Windows Forms applications during deployment.
+title: CI License Validation in Windows Forms | SyncfusionÂ®
+description: Validate SyncfusionÂ® license key in CI services for Windows Forms applications during deployment process.
 platform: windowsforms
 control: Essential Studio
 documentation: ug

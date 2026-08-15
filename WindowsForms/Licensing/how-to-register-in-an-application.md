@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to register license key in Windows Forms | Syncfusion®
-description: Register Syncfusion® license key in Windows Forms applications for license validation and deployment.
+title: How to register license key in Windows Forms | Syncfusionï¿½
+description: Register Syncfusionï¿½ license key in Windows Forms applications for license validation and deployment.
 platform: windowsforms
 control: Essential Studio
 documentation: ug
@@ -42,7 +42,7 @@ N> * Place the license key between double quotes. Also, ensure that Syncfusion.L
 
 I> Syncfusion license keys can be validated during the Continuous Integration (CI) processes to ensure proper licensing and prevent licensing errors during deployment. Refer to the [CI License Validation](https://help.syncfusion.com/windowsforms/licensing/licensing-faq/ci-license-validation) section for detailed instructions on how to implement it.
 
-### Windows Forms
+## Windows Forms
 
 You can register the licensing code in the `static void Main` method before calling the `Application.Run()` method in C#. In Visual Basic, register the licensing code in **Application.designer.vb** file constructor.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Internet Connection for License Validation in Windows Forms | Syncfusion®
-description: Learn if internet connection is required for Syncfusion® Windows Forms license validation and deployment.
+title: Internet Connection for License Validation in WinForms | SyncfusionÂ®
+description: Learn if internet connection is required for SyncfusionÂ® Windows Forms license validation and deployment.
 platform: WindowsForms
 control: Essential Studio
 documentation: ug

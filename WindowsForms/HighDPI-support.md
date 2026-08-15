@@ -253,18 +253,18 @@ buttonAdv1.Image = imageListAdv1.Images(0)
 
 9. Run the application and the image for the ButtonAdv will be displayed as per the image set for different DPI scaling as shown below.
 
-#### 100 DPI Scaling
+**100 DPI Scaling**
 
 ![Adding images and index](HighDPI_images/DPI_100.png)
 
-#### 125 Scaling
+**125 DPI Scaling**
 
 ![Adding images and index](HighDPI_images/DPI_125.png)
 
-#### 150 Scaling 
+**150 DPI Scaling**
 
 ![Adding images and index](HighDPI_images/DPI_150.png)
 
-#### 200 Scaling
+**200 DPI Scaling**
 
 ![Adding images and index](HighDPI_images/DPI_200.png)
