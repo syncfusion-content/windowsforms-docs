@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Windows Forms Splash Panel control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms Splash Panel control, its elements and more details.
+title: About Syncfusion® Windows Forms SplashPanel Control | Syncfusion
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms SplashPanel control and explore its features and more details.
 platform: WindowsForms
 control: SplashPanel
 documentation: ug
 ---
 
-# Windows Forms Splash Panel Overview
+# About Syncfusion® Windows Forms SplashPanel Control
 
 The SplashPanel is a System.Windows.Forms panel-derived class that allows users to design custom splash screens within the form's designer. The SplashPanel can take multiple child controls that can be used to display information or collect information from the user.
 
