@@ -7,7 +7,7 @@ control: SfForm
 documentation: ug
 ---
 
-# Windows Forms Form (SfForm) Overview
+# About Syncfusion® Windows Forms SfForm Control
 
 The `SfForm` is a window control for completely customizing the appearance of a form and loading a custom user interface in the title bar.
 

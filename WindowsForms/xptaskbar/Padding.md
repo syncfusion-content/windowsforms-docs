@@ -1,12 +1,12 @@
----
+﻿---
 layout: post
-title: Padding in Windows Forms xptaskbar control | Syncfusion®
-description: Learn about Padding support in Syncfusion® Windows Forms xptaskbar (XPTaskBar) control and more details.
+title: Padding in Windows Forms XPTaskBar | Syncfusion®
+description: Padding settings enable configuring spacing for XPTaskBar layouts and task box headers to improve content presentation.
 platform: windowsforms
 control: XPTaskBar
 documentation: ug
 --- 
-# Padding in Windows Forms xp taskbar (XPTaskBar)
+# Padding in Windows Forms XPTaskBar
 
 ## Padding settings for XPTaskBar
 

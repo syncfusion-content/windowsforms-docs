@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Properties in Windows Forms Carousel control | Syncfusion
-description: Learn about Properties support in Syncfusion Essential Studio Windows Forms Carousel control and more details.
+title: Properties in Windows Forms Carousel control | Syncfusion®
+description: Properties in Carousel provide options to customize item layout, rotation behavior, appearance, navigation, and display settings.
 platform: WindowsForms
 control: Carousel
 documentation: ug

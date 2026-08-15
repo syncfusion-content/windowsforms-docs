@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Syncfusion® Windows Forms PopupControlContainer | Syncfusion®
+title: About Syncfusion® WinForms PopupControlContainer | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms Popup (PopupControlContainer) control and more details.
 platform: windowsforms
 control: PopupControlContainer
 documentation: ug
 ---
 
-# Windows Forms Popup (PopupControlContainer) Overview
+# About Syncfusion® Windows Forms PopupControlContainer Control
 
 A PopupControlContainer is a panel-derived control that allows end-users to populate it with child controls and finally associate the same with a parent control. By default, it’s hidden, and it can be brought into existence when performing events like mouse-down, mouse-up, etc… over the parent control. 
 

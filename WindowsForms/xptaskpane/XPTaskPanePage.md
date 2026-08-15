@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: XPTaskPanePage in Windows Forms xptaskpane control | Syncfusion®
-description: Learn about XPTaskPanePage support in Syncfusion® Windows Forms xptaskpane (XPTaskPane) control and more details.
+title: XPTaskPanePage in Windows Forms XPTaskPane | Syncfusion®
+description: XPTaskPanePage supports page titles, layout management, border customization, fonts, colors, and page-level appearance settings.
 platform: windowsforms
 control: XPTaskPane
 documentation: ug
 ---
 
-# XPTaskPanePage in Windows Forms xp task pane (XPTaskPane)
+# XPTaskPanePage in Windows Forms XPTaskPane
 
 XPTaskPane has a TaskPanePageContainer which hosts the Task pages. Any number of controls can added to the Task pages and can be customized. Properties which controls the appearance of the Task pages are discussed in this section.
 
