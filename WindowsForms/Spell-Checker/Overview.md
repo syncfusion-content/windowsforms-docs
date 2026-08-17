@@ -1,13 +1,13 @@
 ﻿---
 layout: post
-title: About Syncfusion Windows Forms Spell Checker Control | Syncfusion®
+title: About Syncfusion® Windows Forms Spell Checker Control | Syncfusion®
 description: Provides an overview of Syncfusion Windows Forms Spell Checker (SpellCheckerAdv) control, its key features, elements, and getting started guidance.
 platform: windowsforms
 control: SpellCheckerAdv
 documentation: ug
 ---
 
-# About Syncfusion Windows Forms Spell Checker Control
+# About Syncfusion® Windows Forms Spell Checker Control
 
 SpellCheckerAdv control offers Microsoft Office style spell checking capabilities to your Windows Application. This component is completely customizable and can be attached to any text-editing controls. End users can also use it together with the standard Microsoft text-editing controls.
 

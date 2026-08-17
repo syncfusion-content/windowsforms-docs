@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Syncfusion Windows Forms Docking Manager Control | Syncfusion®
+title: About Syncfusion® Windows Forms Docking Manager Control | Syncfusion®
 description: Learn about introduction of Syncfusion Essential Studio Windows Forms Docking Manager control and more details.
 platform: windowsforms
 control: DockingManager 
 documentation: ug
 ---
 
-# About Syncfusion Windows Forms Docking Manager Control
+# About Syncfusion® Windows Forms Docking Manager Control
 
 The `DockingManager` control implements an architecture that allows panels to be docked at any part of form. The dock panels containing child elements can be interactively dragged to any area within screen and can be resized at run time. Panels can be docked to the form's edges or to other panels. Dock panels can also be floated, tabbed, and auto hidden.
 
