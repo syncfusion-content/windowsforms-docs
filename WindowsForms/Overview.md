@@ -298,38 +298,38 @@ background-color:transparent!important;
   </tr>
   <tr>
     <td> <a id="anchor" aria-label="Get started with StatusBarAdvPanel" href="https://help.syncfusion.com/windowsforms/statusbaradvpanel/getting-started">StatusBarAdvPanel</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/fontcombobox/getting-started">FontComboBox</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/classic/combobox/getting-started">ComboBoxAdv</a> </td>
+    <td> <a id="anchor" aria-label="Get started with FontComboBox" href="https://help.syncfusion.com/windowsforms/fontcombobox/getting-started">FontComboBox</a> </td>
+    <td> <a id="anchor" aria-label="Get started with ComboBoxAdv" href="https://help.syncfusion.com/windowsforms/classic/combobox/getting-started">ComboBoxAdv</a> </td>
     <td></td>
   </tr>
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/tabbedmdi/getting-started">TabbedMDIManager</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/fontlistbox/getting-started">FontListBox</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/classic/autocomplete/getting-started">ComboBoxAutoComplete</a> </td>
+    <td> <a id="anchor" aria-label="Get started with TabbedMDIManager" href="https://help.syncfusion.com/windowsforms/tabbedmdi/getting-started">TabbedMDIManager</a> </td>
+    <td> <a id="anchor" aria-label="Get started with FontListBox" href="https://help.syncfusion.com/windowsforms/fontlistbox/getting-started">FontListBox</a> </td>
+    <td> <a id="anchor" aria-label="Get started with ComboBoxAutoComplete" href="https://help.syncfusion.com/windowsforms/classic/autocomplete/getting-started">ComboBoxAutoComplete</a> </td>
     <td></td>
   </tr>
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/progress-bar/creating-progressbaradv">Progress Bar</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/combobox-dropdown/getting-started">ComboDropDown</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/classic/datetimepicker/creating-datetimepickeradv">DateTimePickerAdv</a> </td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/commandbar/getting-started">CommandBarController</a></td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/classic/databoundgrid/getting-started">GridDataBoundGrid</a> </td>
+    <td> <a id="anchor" aria-label="Get started with Progress Bar" href="https://help.syncfusion.com/windowsforms/progress-bar/creating-progressbaradv">Progress Bar</a> </td>
+    <td> <a id="anchor" aria-label="Get started with ComboDropDown" href="https://help.syncfusion.com/windowsforms/combobox-dropdown/getting-started">ComboDropDown</a> </td>
+    <td> <a id="anchor" aria-label="Get started with DateTimePickerAdv" href="https://help.syncfusion.com/windowsforms/classic/datetimepicker/creating-datetimepickeradv">DateTimePickerAdv</a> </td>
     <td></td>
   </tr>
   <tr>
     <td></td>
-    <td></td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/classic/month-calendar/creating-monthcalendaradv">MonthCalendarAdv</a> </td>
+    <td> <a id="anchor" aria-label="Get started with CommandBarController" href="https://help.syncfusion.com/windowsforms/commandbar/getting-started">CommandBarController</a></td>
+    <td> <a id="anchor" aria-label="Get started with GridDataBoundGrid" href="https://help.syncfusion.com/windowsforms/classic/databoundgrid/getting-started">GridDataBoundGrid</a> </td>
     <td></td>
   </tr>
   <tr>
     <td></td>
     <td></td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/classic/tooltip/supertooltip">SuperTooltip</a></td>
+    <td> <a id="anchor" aria-label="Get started with MonthCalendarAdv" href="https://help.syncfusion.com/windowsforms/classic/month-calendar/creating-monthcalendaradv">MonthCalendarAdv</a> </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td> <a id="anchor" aria-label="Get started with SuperTooltip" href="https://help.syncfusion.com/windowsforms/classic/tooltip/supertooltip">SuperTooltip</a></td>
     <td></td>
   </tr>
 </tbody>
@@ -343,12 +343,12 @@ Refer [licensing](https://help.syncfusion.com/common/essential-studio/licensing/
 
 ## Additional help resources
 
-The [Knowledge Base](https://support.syncfusion.com/kb/desktop/category/82) section contains responses to most of the common questions that other customers have asked in the past, so this would be a good place to search for topics that are not covered in the User Guide.
+The [Knowledge Base](https://support.syncfusion.com/kb/desktop/category/82 "Browse Syncfusion Knowledge Base articles") section contains responses to most of the common questions that other customers have asked in the past, so this would be a good place to search for topics that are not covered in the User Guide.
 
-Similar to the [Knowledge Base](https://support.syncfusion.com/kb/desktop/category/82), the [Forum](https://www.syncfusion.com/forums/windowsforms) section also contains responses to questions that other customers have asked us in the past.
+Similar to the [Knowledge Base](https://support.syncfusion.com/kb/desktop/category/82 "Browse Syncfusion Knowledge Base articles"), the [Forum](https://www.syncfusion.com/forums/windowsforms "Visit Syncfusion Windows Forms community forum") section also contains responses to questions that other customers have asked us in the past.
 
 ## Support and feedback
 
-If you are unable to find the information that you are looking for in the self-help resources mentioned above then you contact us by creating a [support ticket](https://internalsupport.bolddesk.com/agent/tickets/create).
+If you are unable to find the information that you are looking for in the self-help resources mentioned above then you contact us by creating a [support ticket](https://internalsupport.bolddesk.com/agent/tickets/create "Create a new support ticket").
 
-Don’t see what you need? Please request it in our [Feedback portal](https://www.syncfusion.com/feedback/winforms).
+Don't see what you need? Please request it in our [Feedback portal](https://www.syncfusion.com/feedback/winforms "Submit feedback about Windows Forms controls").
