@@ -18,7 +18,7 @@ If the content of a grid cell exceeds the cell width, then characters can be dis
 
 N> When set to None, the original content will be displayed.
 
-![](How-to-Display-Placeholder-Characters-when-Cell-Co_images/How-to-Display-Placeholder-Characters-when-Cell-Co_img2.png)
+![Display Placeholder Characters](How-to-Display-Placeholder-Characters-when-Cell-Co_images/How-to-Display-Placeholder-Characters-when-Cell-Co_img2.png)
 
 ## Converting alphabetic content
 
@@ -109,7 +109,7 @@ Me.gridcontrol1[1,1]. AutoFitChar=’@’
 {% endhighlight %}
 {% endtabs %}
 
-![](How-to-Display-Placeholder-Characters-when-Cell-Co_images/How-to-Display-Placeholder-Characters-when-Cell-Co_img4.png)
+![Display Placeholder Characters](How-to-Display-Placeholder-Characters-when-Cell-Co_images/How-to-Display-Placeholder-Characters-when-Cell-Co_img4.png)
 
 ### Sample link
 
