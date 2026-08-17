@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: How to Restrict SlideOnTop Expand in WinForms NavigationDrawer
+title: How to Restrict Expand in NavigationDrawer | Syncfusion
 description: Restrict the SlideOnTop expand transition in Syncfusion® Windows Forms Navigation Drawer control for the left position using events and more.
 platform: WindowsForms
 control: Frequently Asked Questions

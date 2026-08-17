@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Set Tooltips for Child Buttons in Windows Forms ButtonEdit
+title: How to Set Tooltips for Child Buttons in ButtonEdit | Syncfusion
 description: Set tooltips for child buttons in Syncfusion® Windows Forms ButtonEdit control, its tooltip customization options, and more.
 platform: windowsforms
 control: Tools

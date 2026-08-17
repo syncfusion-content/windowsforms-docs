@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: How to Check Popup Drop-Down State in Windows Forms Popup
+title: How to Check Popup Drop-Down State in Popup | Syncfusion
 description: Check whether a popup is currently dropped down in Syncfusion® Windows Forms PopupControlContainer control using the IsShowing method and more.
 platform: windowsforms
 control: PopupControlContainer

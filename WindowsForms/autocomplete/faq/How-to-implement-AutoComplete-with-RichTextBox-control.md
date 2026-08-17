@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: How to Implement AutoComplete with Windows Forms RichTextBox
+title: How to Implement AutoComplete with RichTextBox | Syncfusion
 description: Implement AutoComplete with a Syncfusion® Windows Forms RichTextBox control using custom edit controls, data sources, and suggestions.
 platform: WindowsForms
 control: Editors Package
