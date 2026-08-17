@@ -51,7 +51,7 @@ Me.comboBoxAdv1.MatchFirstCharacterOnly = True
 {% endhighlight %}
 {% endtabs %}
 
-![Autocomplete Support](Overview_images/Overview_img305.png)
+![Autocomplete Support](Overview_images/windowsforms-combobox-auto-complete-support.png)
 
 ## Data Binding
 
@@ -133,5 +133,5 @@ Me.comboBoxAdv1.DisplayMember = "place"
 {% endhighlight %}
 {% endtabs %}
 
-![Data Binding support ](Overview_images/Overview_img306.png) 
+![Data Binding support ](Overview_images/windowsforms-combobox-data-binding-support.png) 
 
