@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Syncfusion® WinForms Visual Studio Integration | Syncfusion®
-description: Learn about introduction of Syncfusion® Essential Studio Windows Forms Visual Studio Integration and more details.
+title: Overview | WinForms | Syncfusion
+description: The Syncfusion Windows Extensions provide quick access to Project Templates to create or configure the Syncfusion Windows Forms application.
 platform: windowsforms
 control: Syncfusion Extensions
 documentation: ug
 ---
 
-# About Syncfusion® Windows Forms Visual Studio Integration
+# Syncfusion® Windows Forms Extensions
 
 The Syncfusion® WinForms Visual Studio Extensions can be accessed through the Syncfusion® Menu to create and configure the project with Syncfusion® references in Visual Studio. The Syncfusion® WinForms Extensions supports Microsoft Visual Studio 2015 or higher.
 
