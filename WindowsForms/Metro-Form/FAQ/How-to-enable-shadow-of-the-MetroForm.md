@@ -27,7 +27,7 @@ this.DropShadow = false ;
 
 {% endtabs %}
 
-![](DropShadow_images/DropShadow.png)
+![Enable Shadow in Windows Forms MetroForm](DropShadow_images/DropShadow.png)
 
 
 

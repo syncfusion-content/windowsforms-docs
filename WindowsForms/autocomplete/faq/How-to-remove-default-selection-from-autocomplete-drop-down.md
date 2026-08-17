@@ -9,7 +9,7 @@ documentation: ug
 
 
 
-# How tio Remove the Default Selection from AutoComplete Dropdown
+# How to Remove the Default Selection from AutoComplete Dropdown
 
 To remove the default selection in AutoComplete dropdown, set SelectedIndex property to _-1_ inside the DropdownDisplayed event of the AutoComplete control as follows.
 
