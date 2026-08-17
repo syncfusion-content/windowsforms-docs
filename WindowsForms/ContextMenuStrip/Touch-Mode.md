@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Touch Mode in Windows Forms ContextMenuStrip Control | Syncfusion®
+title: Touch Mode in Windows Forms ContextMenuStrip | Syncfusion®
 description: Learn here all about touch mode feature of Syncfusion® Windows Forms ContextMenuStrip (ContextMenuStripEx) control and more.
 platform: windowsforms
 control: ContextMenuStripEx
 documentation: ug
 ---
 
-# Touch Mode in Windows Forms ContextMenuStrip (ContextMenuStripEx)
+# Touch Mode in Windows Forms ContextMenuStrip
 
 Touch mode is used to access the control easily in touch devices. This option can be enabled using the [`EnableTouchMode`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ContextMenuStripEx.html#Syncfusion_Windows_Forms_Tools_ContextMenuStripEx_EnableTouchMode) property of ContextMenuStripEx control.
 

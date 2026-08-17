@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-apply-themes | WindowsForms | Syncfusion®
-description: how to apply office2007 silver, blue, and black themes to the tabbedmdimanager
+title: How to Apply Office2007 Themes in TabbedMDI | Syncfusion®
+description: Learn how to apply Office2007 Silver, Blue, and Black themes in Syncfusion Windows Forms TabbedMDI control, its elements and more details.
 platform: windowsforms
 control: TabbedMDIPackage
 documentation: ug
 ---
 
-# How to apply Office2007 Silver, Blue, and Black themes to the TabbedMDIManager
+# How to Apply Office2007 Themes in TabbedMDI
 
 You can apply [Office2007ColorScheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_Office2007ColorScheme) when TabControl is added as follows.
 

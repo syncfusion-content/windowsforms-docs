@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Freeze-HubTile-functionality-in-runtime | WindowsForms | Syncfusion®
-description:  how to freeze hubtile functionality in runtime?
-platform: wpf
+title: How to Freeze HubTile Functionality in TabbedMDI | Syncfusion®
+description: Learn how to freeze HubTile functionality at runtime in Syncfusion Windows Forms TabbedMDI control, its elements and more details.
+platform: windowsforms
 control: TabbedMDIPackage
 documentation: ug
 ---
 
-#  How to freeze HubTile functionality in runtime?
+# How to Freeze HubTile Functionality in TabbedMDI
 
 You can achieve it by setting HubTileFreeze property to `true`.
 

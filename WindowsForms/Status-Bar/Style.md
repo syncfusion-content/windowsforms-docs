@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Style in Windows Forms Status Bar control | Syncfusion
-description: Learn about Style support in Syncfusion Windows Forms Status Bar (StatusBarAdv) control and more details.
+title: Style in Windows Forms StatusBarAdv | Syncfusion®
+description: Style in Windows Forms StatusBarAdv enables customization of visual elements and appearance settings to match application design requirements.
 platform: WindowsForms
 control: StatusBarAdv
 documentation: ug
 ---
 
-# Style in Windows Forms Status Bar (StatusBarAdv)
+# Style in Windows Forms StatusBarAdv
 
 StatusBarAdv supports visual styles such as Default, Metro. The style can be set using Style property. 
 

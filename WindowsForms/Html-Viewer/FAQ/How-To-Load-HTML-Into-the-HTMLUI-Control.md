@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-To-Load-HTML-Into-the-HTMLUI-Control | WindowsForms | Syncfusion®
-description:  how to load html into the htmlui control?
+title: How To Load HTML Into the HTMLUI Control | Syncfusion®
+description: Learn how to how To Load HTML Into the HTMLUI Control in Syncfusion Windows Forms Html Viewer (HTMLUI) control.
 platform: windowsforms
 control: HTMLUIControl
 documentation: ug
 ---
 
-#  How to load HTML into the HTMLUI control?
+#  How to load HTML into the HTMLUI control
 
 You can make use of the [GetControlByElement](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.InputHTML.html#Syncfusion_Windows_Forms_HTMLUI_InputHTML_GetControlByElement_Syncfusion_Windows_Forms_HTMLUI_IHTMLElement_) method of the InputHTML Interface to get an object for the control present in an HTML element in the HTMLUI control. If the HTML element does not contain any control in it, it returns a null value, by default.
 

@@ -1,23 +1,23 @@
 ---
 layout: post
-title: How to add a ColorUI Control to a Popup Menu | WindowsForms | Syncfusion®
-description: how to add a colorui control to a popup menu
+title: How to Add ColorUI Control to a Popup Menu in ColorUI | Syncfusion®
+description: Learn how to add a ColorUI Control to a popup menu in Syncfusion Windows Forms ColorUI control, its elements and more details.
 platform: windowsforms
-control: ColorUI 
+control: ColorUI
 documentation: ug
 ---
-# How to Add a ColorUI Control to a Pop-Up Menu
+# How to Add ColorUI Control to a Popup Menu in ColorUI
 
 To add ColorUIControl to a PopupMenu, we need to use PopupMenu, PopupControlContainer. Follow the below steps to add a ColorUIControl to a popup menu.
 
 1. Drag and drop a ColorUIControl, a PopupMenu control, a PopupControlContainer control, a label control and a Panel control onto the form. Place the ColorUIControl inside the PopupControlContainer and the label inside the panel control.
 2. Right click PopupMenu and select 'Add Default ParentBarItem" from the verbs. 
 
-   ![](FAQ_images/Overview_img240.jpeg) 
+   ![ColorUIControl placed inside PopupControlContainer](FAQ_images/Overview_img240.jpeg)
 
 3. In the property grid of PopupMenu, expand ParentBarItem, then add a DropDownBarItem to the ParentBarItem using BarItem Collection Editor. Also set the PopupControlContainer as the DropDownBarItem's PopupControlContainer as shown in the image below.
 
-   ![](FAQ_images/Overview_img241.jpeg) 
+   ![DropDownBarItem added to ParentBarItem in PopupMenu](FAQ_images/Overview_img241.jpeg)
 
 4. In the MouseUp event of the Panel control call the PopupMenu.Show method.
 
@@ -43,6 +43,6 @@ End Sub
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-   ![](FAQ_images/Overview_img242.jpeg) 
+   ![PopupMenu shown on the Panel control](FAQ_images/Overview_img242.jpeg)
 
 N> You can close the popup whenever a color is selected at run time. This is done using ColorUIControl.ColorSelected Event.

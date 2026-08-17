@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: About Windows Forms Html Viewer control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® Windows Forms Html Viewer (HTMLUI) control, its elements and more details.
+title: About Syncfusion Windows Forms HTMLUI Control | Syncfusion®
+description: Learn here all about introduction of Syncfusion Windows Forms Html Viewer (HTMLUI) control, its elements and more details.
 platform: windowsforms
-control: HTML UI
+control: HTMLUI
 documentation: ug
 ---
 
-# Windows Forms Html Viewer (HTMLUI) Overview
+# About Syncfusion Windows Forms HTMLUI Control.
 
 HTMLUIControl helps to render the Hyper Text Markup Language (HTML). Its functionality is similar to a web browser used for display purposes. Like popular web browsers, HTMLUI comes with advanced options to work with web-related functionalities like navigating through a history of documents, selection and much more.
 

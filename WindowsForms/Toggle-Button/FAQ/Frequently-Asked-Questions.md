@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Frequently-Asked-Questions | WindowsForms | Syncfusion®
-description: frequently asked questions
-platform: WindowsForms
-control: HubTile
+title: FAQ in Windows Forms Toggle Button | Syncfusion®
+description: Find frequently asked questions and answers about Syncfusion Windows Forms ToggleButton control, its features, behavior, and common usage scenarios.
+platform: windowsforms
+control: ToggleButton
 documentation: ug
 ---
 
-## Frequently Asked Questions
+# FAQ in Windows Forms Toggle Button
 

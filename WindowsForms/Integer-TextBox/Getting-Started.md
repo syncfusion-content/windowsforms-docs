@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: Getting Started with Windows Forms Integer TextBox | Syncfusion®
-description: Learn here about getting started with Syncfusion® Windows Forms Integer TextBox (Integertextbox) control, its elements, and more.
+description: Learn here about getting started with Syncfusion Windows Forms Integer TextBox (Integertextbox) control, its elements, and more.
 platform: windowsforms
 control: Tools
 documentation: ug
