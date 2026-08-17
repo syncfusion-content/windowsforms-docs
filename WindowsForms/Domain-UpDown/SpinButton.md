@@ -1,12 +1,12 @@
 ﻿---
 layout: post
-title: SpinButton in Windows Forms Domain UpDown | Syncfusion®
-description: Learn about Spinbutton support in Syncfusion Windows Forms Domain UpDown (DomainUpdownExt) control and more details.
+title: SpinButton in Windows Forms DomainUpdownExt | Syncfusion®
+description: Learn about Spinbutton support in Syncfusion Windows Forms DomainUpdownExt control and more details.
 platform: windowsforms
 control: DomainUpdownExt 
 documentation: ug
 ---
-# SpinButton in Windows Forms Domain UpDown
+# SpinButton in Windows Forms DomainUpdownExt
 
 This section will discuss the properties which controls the alignment and orientation of the spin button in a DomainUpDownExt control.
 

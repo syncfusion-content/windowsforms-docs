@@ -1,12 +1,12 @@
 ﻿---
 layout: post
-title: Visual Styles in Windows Forms Domain UpDown | Syncfusion®
-description: Learn about Visual Styles support in Syncfusion Windows Forms Domain UpDown (DomainUpdownExt) control and more details.
+title: Visual Styles in Windows Forms DomainUpdownExt | Syncfusion®
+description: Learn about Visual Styles support in Syncfusion Windows Forms DomainUpdownExt control and more details.
 platform: windowsforms
 control: DomainUpdownExt 
 documentation: ug
 ---
-# Visual Styles in Windows Forms Domain UpDown
+# Visual Styles in Windows Forms DomainUpdownExt
 
 DomainUpDownExt supports Office2007 visual style with all three color schemes.
 

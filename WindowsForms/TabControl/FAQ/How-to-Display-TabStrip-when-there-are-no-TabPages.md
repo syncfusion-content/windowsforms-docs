@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to Display TabStrip with No TabPages in TabControl | Syncfusion®
-description: Learn how to display the tab strip when no TabPages are added in Syncfusion Windows Forms TabControl control, its elements and more details.
+title: How to Display TabStrip with No TabPages in TabControlAdv | Syncfusion®
+description: Learn how to display the tab strip when no TabPages are added in Syncfusion Windows Forms TabControlAdv control, its elements and more details.
 platform: windowsforms
 control: TabsPackage
 documentation: ug
 ---
 
-# How to Display TabStrip with No TabPages in TabControl
+# How to Display TabStrip with No TabPages in TabControlAdv
 
 The TabStrip can be made visible even if there are no TabPages added. The TabControlAdv has a [ReserveTabSpace](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_ReserveTabSpace) property which makes the tab strip visible when set to `true`. [ReservedSpace](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_ReservedSpace) property is used to specify the height of the tab strip when the above bool property is enabled.
 

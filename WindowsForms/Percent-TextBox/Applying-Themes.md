@@ -1,13 +1,13 @@
 ﻿---
 layout: post
-title: Applying Themes in Windows Forms Percent TextBox | Syncfusion®
-description: Learn about Applying Themes support in Syncfusion Windows Forms Percent TextBox control and more details.
+title: Applying Themes in Windows Forms PercentTextBox | Syncfusion®
+description: Learn about Applying Themes support in Syncfusion Windows Forms PercentTextBox control and more details.
 platform: windowsforms
 control: Editors Package
 documentation: ug
 ---
 
-# Applying Themes in Windows Forms Percent TextBox
+# Applying Themes in Windows Forms PercentTextBox
 
 Themes can be applied to the PercentTextBox control using the [ThemesEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_ThemesEnabled) property.
 

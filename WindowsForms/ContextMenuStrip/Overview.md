@@ -7,7 +7,7 @@ control: ContextMenuStripEx
 documentation: ug
 ---
 
-# About Syncfusion® Windows Forms ContextMenuStrip Control.
+# About Syncfusion® Windows Forms ContextMenuStrip Control
 
 Context menu is a group of frequently used commands or menu items that can be accessed by right-clicking the target control. For example, Cut, Copy and Paste, frequently used commands are grouped and accessed on simple right-click option. 
 

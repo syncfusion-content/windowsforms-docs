@@ -1,13 +1,13 @@
 ﻿---
 layout: post
-title: Customization in Windows Forms TabControl | Syncfusion®
-description: Learn about Customization support in Syncfusion Windows Forms TabControl (TabControlAdv) control and more details.
+title: Customization in Windows Forms TabControlAdv | Syncfusion®
+description: Learn about Customization support in Syncfusion Windows Forms TabControlAdv control and more details.
 platform: windowsforms
 control: TabControlAdv
 documentation: ug
 ---
 
-# Customization in Windows Forms TabControl
+# Customization in Windows Forms TabControlAdv
 
 The look and feel of the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) can be customized through various properties of the control. These properties are discussed in below topics.
 

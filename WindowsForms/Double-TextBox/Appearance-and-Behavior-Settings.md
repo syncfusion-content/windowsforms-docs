@@ -1,12 +1,12 @@
 ﻿---
 layout: post
-title: Appearance and Behavior in Windows Forms Double TextBox | Syncfusion®
-description: Learn about Appearance and Behavior Settings support in Syncfusion Windows Forms Double TextBox control and more details.
+title: Appearance and Behavior in Windows Forms DoubleTextBox | Syncfusion®
+description: Learn about Appearance and Behavior Settings support in Syncfusion Windows Forms DoubleTextBox control and more details.
 platform: windowsforms
 control: DoubleTextBox
 documentation: ug
 ---
-# Appearance and Behavior in Windows Forms Double TextBox
+# Appearance and Behavior in Windows Forms DoubleTextBox
 
 This section discusses the complete Appearance and behavior settings of Double TextBox.
 

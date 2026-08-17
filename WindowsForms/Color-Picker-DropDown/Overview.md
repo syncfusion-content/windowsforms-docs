@@ -1,7 +1,7 @@
 ﻿---
 layout: post
-title: About Syncfusion® Windows Forms ColorPickerButon Control | Syncfusion®
-description: Learn here all about introduction of Syncfusion Windows Forms Color Picker DropDown (ColorPickerButton) control and more details.
+title: About Syncfusion® Windows Forms ColorPickerButton Control | Syncfusion®
+description: Learn here all about introduction of Syncfusion Windows Forms ColorPickerButton control and more details.
 platform: windowsforms
 control: ColorPickerUIAdv 
 documentation: ug
