@@ -1,12 +1,12 @@
 ﻿---
 layout: post
-title: About Syncfusion Windows Forms ColorPickerUIAdv Control | Syncfusion®
+title: About Syncfusion® Windows Forms ColorPickerUIAdv Control | Syncfusion®
 description: Learn here all about introduction of Syncfusion Windows Forms Color Picker (ColorPickerUIAdv) control and more details.
 platform: windowsforms
 control: ColorPickerUIAdv
 documentation: ug
 ---
-# About Syncfusion Windows Forms ColorPickerUIAdv Control.
+# About Syncfusion® Windows Forms ColorPickerUIAdv Control.
 
 The Essential<sup>®</sup> Tools ColorPickerUIAdv allows.NET developers to provide Microsoft Word 2007 ColorCells for selecting colors in their applications. The ColorPickerUIAdv comprises of a panel displaying themed colors and standard colors. The ColorPickerUIAdv also comes with a More Colors option, in a color dialog, displaying more sub colors for the base colors in the control. 
 

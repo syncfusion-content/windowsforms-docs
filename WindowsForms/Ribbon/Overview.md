@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Syncfusion Windows Forms Ribbon Control | Syncfusion®
+title: About Syncfusion® Windows Forms Ribbon Control | Syncfusion®
 description: Learn about introduction of Syncfusion Essential Studio Windows Forms Ribbon (RibbonControlAdv) control and more details.
 platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# About Syncfusion Windows Forms Ribbon Control
+# About Syncfusion® Windows Forms Ribbon Control
 
 The [WinForms Ribbon Control](https://help.syncfusion.com/windowsforms/ribbon/overview) (ribbon menu) accommodates all the tools required for an application in a single, easy-to-navigate user interface like Microsoft Office. Its dynamic resizing, keyboard accessibility, and complete customization options help to organize an application. It provides an application UI like Microsoft Office with a 2007 style that contains an application menu and 2016 style that contains a backstage view.
 
