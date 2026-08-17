@@ -9,7 +9,7 @@ documentation: ug
 
 
 
-# How to Remove Default Selection from Windows Forms AutoComplete Dropdown
+# How tio Remove the Default Selection from AutoComplete Dropdown
 
 To remove the default selection in AutoComplete dropdown, set SelectedIndex property to _-1_ inside the DropdownDisplayed event of the AutoComplete control as follows.
 
