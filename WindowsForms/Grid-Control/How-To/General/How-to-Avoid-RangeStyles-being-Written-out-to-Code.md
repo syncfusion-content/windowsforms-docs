@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Avoid-RangeStyles-being-Written-out-to-Code | Windows Forms | Syncfusion
-description: how to avoid rangestyles being written out to code in a derived gridcontrol
+title: RangeStyles Serialization in Windows Forms GridControl | Syncfusion®
+description: Prevent RangeStyles from being written to designer code in Syncfusion® Windows Forms GridControl by hiding serialization for derived grid properties and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to avoid RangeStyles being written out to code in a derived GridControl
+# How to Prevent RangeStyles Serialization in Windows Forms GridControl
 
 When a derived grid is dropped onto a form at design-time, the styles that are changed in the derived grid's constructor will be written out as code in the form. This serialization to code can be avoided by overriding the respective properties and by setting it to the DesignerSerializationVisibility.Hidden.
 

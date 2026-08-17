@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to avoid a, b, c and / or 1, 2, 3 in the headers | Syncfusion
-description: Learn here all about how to avoid a, b, c and / or 1, 2, 3 in the headers of Syncfusion Windows Forms Gridcontrol and more.
+title: How to Hide Header Labels in Windows Forms GridControl | Syncfusion®
+description: Hide A, B, C and 1, 2, 3 header labels in Syncfusion® Windows Forms GridControl using row and column header settings and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to avoid A, B, C and / or 1, 2, 3 in the headers
+# How to Hide Header Labels in Windows Forms GridControl
 
 In a GridControl, whether the headers contain the default A, B, C, ... or 1, 2, 3, ... values is controlled by the properties in the Model.Options property. 
 

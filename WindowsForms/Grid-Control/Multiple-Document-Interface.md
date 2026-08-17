@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Multiple Document Interface of Windows Forms GridControl | Syncfusion®
-description: This section explains on how to implement the multiple document interface (MDI) in Syncfusion® Windows Forms GridControl and more.
+title: MDI in Windows Forms Grid Control | Syncfusion®
+description: Multiple Document Interface (MDI) support in Grid Control enables working with multiple grid windows simultaneously within a single parent application window.
 platform: WindowsForms
-control: GridControl
+control: Grid Control
 documentation: ug
 ---
-# Multiple Document Interface in Windows Forms GridControl
+# Multiple Document Interface in Windows Forms Grid Control
 GridControl supports Multiple Document Interface (MDI). This support is used to work with multiple GridControl’s simultaneously. Here, multiple windows reside under a single parent window.
 
 ![MDI in Windows Forms Grid Control](Multiple-Document-Interface_images/Multiple-Document-Interface_img1.jpeg)

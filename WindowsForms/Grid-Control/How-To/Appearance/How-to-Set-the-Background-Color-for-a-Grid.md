@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Set-the-Background-Color-for-a-Grid | Windows Forms |Syncfusion
-description: Learn here all about how to set the background color for a grid of Syncfusion Windows Forms Gridcontrol and more.
+title: How to Set Grid BackColor in Windows Forms GridControl | Syncfusion®
+description: Set the background color for a grid in Syncfusion® Windows Forms GridControl using grid properties to customize the grid appearance and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to set the Background color for a Grid
+# How to Set the BackColor for a Grid in Windows Forms GridControl
 
 To set the BackColor for the area of the grid populated by cells, you must set the grid.BackColor property to the color. The grid display may also have regions where there are no cells. These regions will be the grid's client area where there are no cells or scrollbars. 
 

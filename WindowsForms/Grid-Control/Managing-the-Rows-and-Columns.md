@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Managing Rows and Columns in Windows Forms Grid Control | Syncfusion®
-description: Learn about Managing Rows and Columns support in Syncfusion® Windows Forms Grid Control, its elements and more details.
+description: Manage rows and columns in Grid Control with support for hiding, freezing, moving, inserting, deleting, resizing, styling, and navigation customization.
 platform: WindowsForms
-control: GridControl
+control: Grid Control
 documentation: ug
 ---
 

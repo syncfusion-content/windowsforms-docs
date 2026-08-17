@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Add-a-Sort-Icon-Up-and-Down-Arrow-in-a-Grid | Windows Forms | Syncfusion
-description: how to add a sort icon (up and down arrow) in a gridcontrol's column header
+title: Add Sort Icons in Windows Forms GridControl | Syncfusion®
+description: Add sort icons to column headers in Syncfusion® Windows Forms GridControl using GridSortColumnHeaderCellModel and sort direction settings.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to add a sort icon (Up and Down arrow) in a GridControl's column header
+# How to Add Sort Icons in Windows Forms GridControl
 
 Add GridSortColumnHeaderCellModel to the GridControl's CellModels collection to include SortColumn HeaderCell. Then assign this as CellType and set tag property to either ListSortDirection.Ascending or ListSortDirection.Descending to show the up and down arrow mark.
 

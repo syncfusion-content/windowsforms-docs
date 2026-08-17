@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Set the Width of a Column in Windows Forms GridControl | Syncfusion
-description: Learn here about how to set the width of a Column in Syncfusion Essential Studio Windows Forms Grid Control, and more.
+title: Set Column Width in Windows Forms GridControl | Syncfusion®
+description: Set the width of columns in Syncfusion® Windows Forms GridControl using the ColWidths collection and customize column sizing programmatically.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to set the width of a column
+# How to Set the Width of a Column in Windows Forms GridControl
 
 Changing a column's width is simple whether you are using the designer or code. In the designer, use ColWidthsEntries collection. In code, use GridControl.ColWidths collection to specify the width of a column. 
 

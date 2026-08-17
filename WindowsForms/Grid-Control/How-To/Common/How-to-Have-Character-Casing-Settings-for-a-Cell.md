@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to have character casing settings for a cell | Syncfusion
-description: Learn here all about how to have character casing settings for a cell in Syncfusion Windows Forms GridControl and more.
+title: Set Character Casing in Windows Forms GridControl | Syncfusion®
+description: Set character casing for cells in Syncfusion® Windows Forms GridControl using OriginalTextBox cell types, character casing settings, and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to Have Character Casing Settings for a Cell
+# How to Set Character Casing in Windows Forms GridControl
 
 ### Introduction
 

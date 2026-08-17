@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to have character casing settings for a cell | Syncfusion
-description: Learn here all about how to have character casing settings for a cell of Syncfusion Windows Forms Gridcontrol and more.
+title: How to Set Character Casing in Windows Forms GridControl | Syncfusion®
+description: Configure character casing for cells in Syncfusion® Windows Forms GridControl using OriginalTextBox cell types and character casing options and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to have character casing settings for a cell
+# How to Set Character Casing in Windows Forms GridControl
 
 CharacterCasing works only with CellType = "OriginalTextBox" that uses a control derived from System.Windows.Forms.TextBox. The CellType text box is derived from RichTextBox, which does not have CharacterCasing property. To enable UpperCasing for the whole grid, set properties in TableStyle. To enable CharacterCasing on a column, row or cell basis, set style properties using techniques that are appropriate for grid that you are using as discussed in the topics on changing BackColor.
 

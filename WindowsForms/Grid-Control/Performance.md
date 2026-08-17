@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Performance in Windows Forms Grid Control | Syncfusion®
-description: Learn about Performance support in Syncfusion® Windows Forms Grid Control, its elements and more details.
+description: Optimize Grid Control performance with virtual mode, high-frequency updates, efficient data loading, smooth scrolling, and faster import and export operations.
 platform: WindowsForms
-control: GridControl
+control: Grid Control
 documentation: ug
 ---
 

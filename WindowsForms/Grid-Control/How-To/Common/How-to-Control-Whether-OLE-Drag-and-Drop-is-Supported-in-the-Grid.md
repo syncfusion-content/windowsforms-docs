@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Control whether OLE Drag-and-Drop is supported in Grid | Syncfusion
-description: Learn here all about how to control whether ole drag-and-drop is supported in Syncfusion Windows Forms GridControl and more.
+title: Control OLE Drag-and-Drop in Windows Forms GridControl | Syncfusion®
+description: Control OLE drag-and-drop support in Syncfusion® Windows Forms GridControl using DragDropDropTargetFlags and customize grid drop target behavior and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to control whether OLE Drag-and-Drop is supported in the Grid
+# How to Control OLE Drag-and-Drop in Windows Forms GridControl
 
 Whether a grid is an OLE drop target, which is controlled by DragDropTargetFlags in the grids Model.Options class. These flags control things like clipboard format, the type of data, whether columns or rows can be appended to accommodate the dropped data, and whether auto scrolling is supported. Check the enums for GridDragDropFlags to see the full set of options.
 

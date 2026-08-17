@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to Make Grid Behave Like a List Box | Windows Forms | Syncfusion
-description: Learn here all about how to make the grid behave like a list box in Syncfusion Windows Forms GridControl and more.
+title: Make Grid Act Like ListBox in Windows Forms GridControl | Syncfusion®
+description: Make the Grid behave like a ListBox in Syncfusion® Windows Forms GridControl using row selection and current cell activation settings and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to Make the Grid Behave Like a List Box in WinForms GridControl
+# How to Make Grid Act Like ListBox in Windows Forms GridControl
 
 ### Introduction
 

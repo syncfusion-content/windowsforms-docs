@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to retrieve the text from a cell in GridControl | Syncfusion
-description: Learn here all about how to retrieve the text from a cell of Syncfusion Windows Forms Gridcontrol and more.
+title: How to Retrieve Cell Text in Windows Forms GridControl | Syncfusion®
+description: Retrieve text from a cell in Syncfusion® Windows Forms GridControl using the cell Text property and access displayed cell content and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to retrieve the text from a cell in Windows Forms GridControl
+# How to Retrieve Cell Text in Windows Forms GridControl
 
 To retrieve text from a cell, simply use [Text](/windowsforms/grid/cell-style-architecture#text-and-cellvalue) property of the cells style object, which is obtained through an indexer in the GridControl.
 

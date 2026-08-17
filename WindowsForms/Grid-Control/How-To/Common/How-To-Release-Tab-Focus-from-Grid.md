@@ -1,9 +1,9 @@
 ---
 layout: post
-title: How to Release Tab Focus from Grid | Windows Forms | Syncfusion
-description: Learn here all about how to release tab focus from grid in Syncfusion Windows Forms GridControl and more.
+title: Release Tab Focus in Windows Forms GridControl | Syncfusion®
+description: Release tab focus from Syncfusion® Windows Forms GridControl by using the WantTabKey property and enable navigation to other controls and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 

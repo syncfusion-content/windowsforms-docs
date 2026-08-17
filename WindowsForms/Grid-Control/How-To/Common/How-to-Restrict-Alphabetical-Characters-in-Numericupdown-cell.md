@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Restrict Alphabetical Characters in NumericUpDown Cell | Syncfusion
-description: Learn here all about how to restrict alphabetical characters in numericupdown cell of Syncfusion Windows Forms GridControl and more.
+title: Restrict Alpha Keys in Windows Forms GridControl | Syncfusion®
+description: Restrict alphabetical characters in a NumericUpDown cell in Syncfusion® Windows Forms GridControl using the AcceptAlphaKeys property and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to Restrict Alphabetical Characters in NumericUpDown Cell
+# How to Restrict Alpha Keys in Windows Forms GridControl 
 
 NumericUpDown cell can be customized to allow only numeric characters by setting the AcceptAlphaKeys property to false. This property can be derived from GridNumericUpDownCellModel class.
 

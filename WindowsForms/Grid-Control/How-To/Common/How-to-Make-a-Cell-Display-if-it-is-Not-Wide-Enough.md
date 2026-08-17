@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to Make a Cell Display '...' if it is Not Wide Enough | Syncfusion
-description: Learn here all about how to make a cell display '...' if it is not wide enough in Syncfusion Windows Forms GridControl and more.
+title: Display Ellipsis Text in Windows Forms GridControl | Syncfusion®
+description: Display ellipsis text when cell content exceeds the available width in Syncfusion® Windows Forms GridControl using trimming settings and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to Make a Cell Display '...' if it is Not Wide Enough
+# How to Display Ellipsis Text in Windows Forms GridControl
 
 ### Introduction
 

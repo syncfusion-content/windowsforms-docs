@@ -1,13 +1,13 @@
 ---
 layout: post
 title: MS Excel Like Features in Windows Forms Grid Control | Syncfusion®
-description: Learn about MS Excel Like Features support in Syncfusion® Windows Forms Grid Control, its elements and more details.
+description: Excel-like features in Grid Control include selection frames, freeze panes, workbook views, cell merging, comments, find and replace, and undo/redo support.
 platform: WindowsForms
-control: GridControl
+control: Grid Control
 documentation: ug
 ---
 
-# Microsoft Excel Like Features in Windows Forms Grid Control
+# MS Excel Like Features in Windows Forms Grid Control
 The [Windows Forms Grid](https://www.syncfusion.com/winforms-ui-controls/grid-control) Control provides some of the functionalities of Microsoft Excel as the features. This section will walk through the implementation of these features. 
 
 ## Excel Like Selection Frame

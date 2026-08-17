@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to set the cell properties for a range of cells | Syncfusion
-description: Learn here all about how to set the cell properties for a range of cells in Gridcontrol of Syncfusion Windows Forms Gridcontrol and more.
+title: How to Customize CellRange in Windows Forms GridControl | Syncfusion®
+description: Set cell properties for a range of cells in Syncfusion® Windows Forms GridControl using GridRangeInfo and apply styles to multiple cells and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to set the cell properties for a range of cells
+# How to Set Cell Properties for Range in Windows Forms GridControl
 
 Use the GridControl's ChangeCells method by passing it a [GridRangeInfo](/windowsforms/Grid/Cell-Style-Architecture#gridrangeinfo) object to change the appearance of a range of cells. 
 

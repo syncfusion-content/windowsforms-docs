@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Implement-Fill-Paste-in-the-Grid | Windows Forms | Syncfusion
-description: how to implement fill paste in the grid
+title: Implement Fill Paste in Windows Forms GridControl | Syncfusion®
+description: Implement Fill Paste in Syncfusion® Windows Forms GridControl by copying a cell value and pasting it across a selected range using clipboard events.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to implement Fill Paste in the Grid
+# How to Implement Fill Paste in Windows Forms GridControl
 
 Copy a cell value and replicate it by selecting a range. Then paste this value into that range. This is called "Fill Paste". You can try handling this in ClipboardPaste event.
 

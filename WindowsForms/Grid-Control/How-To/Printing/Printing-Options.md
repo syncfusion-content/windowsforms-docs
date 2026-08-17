@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Printing Options in Windows Forms GridControl | Syncfusion
-description: Learn here about printing options in Syncfusion Essential Studio Windows Forms Grid Control, and more.
+title: Printing Options in Windows Forms GridControl | Syncfusion®
+description: Configure printing options in Syncfusion® Windows Forms GridControl, including row and column headers, horizontal and vertical grid lines, and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 

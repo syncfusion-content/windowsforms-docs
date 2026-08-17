@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to achieve Excel-like Text Alignment in Grid Control | Syncfusion
-description: Learn here all about how to achieve excel-like text alignment in grid control of Syncfusion Windows Forms GridControl and more.
+title: Set Excel-like Text Align in Windows Forms GridControl | Syncfusion®
+description: Achieve Excel-like text alignment in Syncfusion® Windows Forms GridControl using the ExcelLikeAlignment property to align cell content based on data types.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to achieve Excel-like Text Alignment in Grid Control
+# How to Achieve Excel-like Text Alignment in Windows Forms GridControl
 
 Text alignment in Grid cells is similar to text alignment in Excel cells. When no data type is explicitly specified for a cell, by default, text containing numbers is right-aligned and the remaining text is left-aligned. If the data type of the cell is set to Integer, Double, or Decimal, the text is right-aligned; or else the text is left-aligned. In some cases, when the text contains numbers and the data type of the cell is set to String_,_ the text is left-aligned. This default text alignment also applies to the respective Header cells of the Grid control. Excel-like Text Alignment can be achieved in Grid cells by using ExcelLikeAlignment property. It enables you to apply Excel-like alignment to text in grid cells. This property is of Boolean data type and is set to false_,_ by default.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to Set the Background Color for a Grid | Windows Forms |Syncfusion
-description: Learn here all about how to set the background color for a Grid in Syncfusion Windows Forms GridControl and more.
+title: Set Grid Background Color in Windows Forms GridControl | Syncfusion®
+description: Set the background color for a grid in Syncfusion® Windows Forms GridControl using grid properties to customize grid appearance and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to Set the Background Color for a Grid in WinForms GridControl
+# How to Set Background Color for a Grid in Windows Forms GridControl
 
 ### Introduction
 

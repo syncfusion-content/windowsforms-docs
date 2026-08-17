@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Set the Number of Rows and Columns in WinForms GridControl| Syncfusion
-description: Learn here about how to set the Number of Rows and Columns in Syncfusion Essential Studio Windows Forms Grid Control, and more.
+title: Set Row and Column Count in Windows Forms GridControl | Syncfusion®
+description: Set the number of rows and columns in Syncfusion® Windows Forms GridControl using RowCount and ColCount properties and customize grid size dynamically.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to set the number of rows or columns
+# How to Set the Number of Rows and Columns in Windows Forms GridControl
 
 Dynamically changing the RowCount or ColCount properties while a GridControl is being displayed is an efficient way to add or remove rows and/or columns from a GridControl. Using the designer, set grid’s RowCount and ColCount properties. From code, set these properties after the call to InitializeComponent in the form's constructor (or anytime later in your code after the GridControl has been created). 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Exclude-Hidden-Rows-and-Column-for-Scrollin | Windows Forms | Syncfusion
-description: how to exclude hidden rows and column for scrolling? 
+title: Exclude Hidden Rows,Columns in Windows Forms GridControl | Syncfusion®
+description: Exclude hidden rows and columns from scrolling in Syncfusion® Windows Forms GridControl using HScrollPixel and VScrollPixel properties.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to exclude hidden rows and columns for scrolling 
+# How to Exclude Hidden Rows and Columns in Windows Forms GridControl
 
 When scrolling the grid, hidden rows and columns are considered as existing rows and columns. This takes a long time to scroll the grid. To avoid this and save time, you can exclude hidden rows and columns for scrolling. You can achieve this by using HScrollPixel and VScrollPixel properties. To exclude hidden columns for scrolling, set HScrollPixel to true. Similarly, to exclude hidden rows for scrolling, set VScrollPixel to true.    
 

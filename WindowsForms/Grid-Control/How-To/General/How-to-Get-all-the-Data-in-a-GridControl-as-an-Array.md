@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Get-all-the-Data-in-a-GridControl-as-an-Arr | Windows Forms | Syncfusion
-description: how to get all the data in a gridcontrol as an array
+title: Get Grid Data as an Array in Windows Forms GridControl | Syncfusion®
+description: Get all data in Syncfusion® Windows Forms GridControl as an array by accessing GridData directly and retrieving cell values efficiently.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to get all the data in a GridControl as an array
+# How to Get Grid Data as an Array in Windows Forms GridControl
 
 Using an indexer to retrieve grid[row, col].CellValue triggers events(like QueryCellInfo). In a GridControl where the data is stored in the grid, you can avoid triggering of these events (which slow things down) by accessing GridData directly. 
 

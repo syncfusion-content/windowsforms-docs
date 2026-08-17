@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to select all text in a grid after clicking a cell | Syncfusion
-description: Learn here all about how to select all text in a grid after clicking a cell in Syncfusion Windows Forms GridControl and more.
+title: Select All Text in Windows Forms GridControl | Syncfusion®
+description: Select all text in a cell in Syncfusion® Windows Forms GridControl using the ActivateCurrentCellBehavior property and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to Select All Text in a Grid After Clicking a Cell
+# How to Select All Text in Windows Forms GridControl
 
 ### Introduction
 

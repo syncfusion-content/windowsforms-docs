@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Get-the-Top-Bottom--Left-or-Right-Viewable-row-and-column-indexes | Windows Forms | Syncfusion
-description: how to get the top, bottom / left, or right viewable row and column indexes
+title: Get Row and Column Indexes in Windows Forms GridControl | Syncfusion®
+description: Get the top, bottom, left, and right viewable row and column indexes in Syncfusion® Windows Forms GridControl using grid layout properties and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to get the top, bottom or left, or right viewable row and column indexes
+# How to Get Viewable Row, Column Indexes in Windows Forms GridControl
 
 Use the following variables to get the viewable row and column indexes.
 

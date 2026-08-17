@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Synchronize the Selection in Windows Forms GridControl | Syncfusion
-description: How to synchronize the selection of multiple grids in Syncfusion Windows Forms Grid Control, and more.
+title: Synchronize Grid Selections in Windows Forms GridControl | Syncfusion®
+description: Synchronize selections across multiple Syncfusion® Windows Forms GridControl instances using selection events and shared selection ranges.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to synchronize the selection of multiple Grids
+# How to Synchronize the Selection of Grids in Windows Forms GridControl
 
 This can be achieved by using SelectionChanged Event. In this event, the selection range of the source grids can be copied into the target grid in order to have synchronization between grids. The TopRowChanged event and the LeftColChanged event can be used to synchronize the top row index and the left column index changes, when the grid is scrolled. Refer to the sample for more details. Here is the code snippet, which explains how selection change in one grid affects the other grid.
 

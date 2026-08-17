@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Common in Windows Forms GridControl | Syncfusion
-description: This section describes about the common features of the Syncfusion Windows Forms GridControl and more.
+title: Common in Windows Forms GridControl | Syncfusion®
+description: This section describes about the common features of the Syncfusion® Windows Forms GridControl and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 

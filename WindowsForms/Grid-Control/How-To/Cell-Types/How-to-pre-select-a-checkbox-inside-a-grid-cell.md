@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Pre-select a checkbox inside a grid cell in GridControl | Syncfusion
-description: Learn here all about how to pre-select a checkbox inside a grid cell of Syncfusion Windows Forms GridControl control and more.
+title: Pre-Select a Checkbox in Windows Forms GridControl | Syncfusion®
+description: Pre-select a checkbox inside a grid cell in Syncfusion® Windows Forms GridControl using CheckBoxOptions and cell value settings and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to pre-select checkbox inside a grid cell in WinForms GridControl
+# How to Pre-Select a Checkbox in Windows Forms GridControl
 
 You need to set a style member called CheckBoxOptions for a particular grid cell, for this purpose. CheckBoxOptions.CheckedValue is used to specify what value should be given in the CellValue to make the checkbox checked. 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Show or Hide Header | Windows Forms | Syncfusion
-description: Learn here all about the show or hide header feature of Syncfusion Windows Forms GridControl and more.
+title: Show or Hide Headers in Windows Forms GridControl | Syncfusion®
+description: Show or hide row and column headers in Syncfusion® Windows Forms GridControl using header visibility properties and customize grid layout and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# Show or Hide Header in Windows Forms GridControl
+# How to Show or Hide Headers in Windows Forms GridControl
 
 You can show or hide row and column headers using _ShowColumnHeaders_and_ShowRowHeaders_ properties. 
 

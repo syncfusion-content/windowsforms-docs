@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Appearance and Formatting in Windows Forms Grid Control | Syncfusion®
-description: Learn about Appearance and Formatting support in Syncfusion® Windows Forms Grid Control, its elements and more details.
+description: Appearance and formatting in Grid Control enable customization of grid styles, cell formatting, borders, headers, backgrounds, and custom drawing.
 platform: WindowsForms
-control: GridControl
+control: Grid Control
 documentation: ug
 ---
 

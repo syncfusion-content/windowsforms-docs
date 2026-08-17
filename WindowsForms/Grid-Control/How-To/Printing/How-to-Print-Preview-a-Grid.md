@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to Print Preview a Grid in Windows Forms Grid Control | Syncfusion
-description: Learn here about how to print preview a grid in Syncfusion Essential Studio Windows Forms Grid Control, and more.
+title: Print Preview a Grid in Windows Forms GridControl | Syncfusion®
+description: Preview grid content before printing in Syncfusion® Windows Forms GridControl using the GridPrintDocument class and PrintPreviewDialog.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to Print Preview a Grid
+# How to Print Preview a Grid in Windows Forms GridControl
 
 GridPrintDocument class will allow you to [print](/windowsforms/gridgrouping/printing) preview your grids. Here is a button click event handler that will show you how to use this class.
 

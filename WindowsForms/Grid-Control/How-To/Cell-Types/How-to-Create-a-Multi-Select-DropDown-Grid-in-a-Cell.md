@@ -1,13 +1,13 @@
 ---
 layout: post
-title: how to create a multi-select dropdown grid in a cell | Syncfusion
-description: Learn here all about how to create a multi-select dropdown grid in a cell of Syncfusion Windows Forms GridControl control and more.
+title: Create MultiSelect Dropdown in Windows Forms GridControl | Syncfusion®
+description: Create a multi-select dropdown grid in a cell in Syncfusion® Windows Forms GridControl using a custom DropDownGrid cell type and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to create a multi-select DropDown Grid in a cell 
+# How to Create a Multi-Select Dropdown in Windows Forms GridControl
 
 To have a cell that has a multi-selection dropdown grid, you must use a derived custom cell that is derived from GridDropDownGridCellModel and GridDropDownGridCellRenderer. 
 

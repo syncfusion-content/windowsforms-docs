@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Exporting in GridControl
-description: how to save the contents of a grid in memory rather than a file system to export to another grid
+title: Save Grid Content in Memory in Windows Forms GridControl | Syncfusion®
+description: Save GridControl content in memory instead of the file system in Syncfusion® Windows Forms GridControl using SaveSoap or SaveBinary methods and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to save the contents of a Grid in memory rather than a file system to export to another grid
+# How to Save Grid Content in Memory in Windows Forms GridControl
 
 You can save the contents of a grid in memory rather than writing to a file system. This can be done using SaveSoap or SaveBinary method of GridControl. The below code snippet illustrates how this can be done.
 

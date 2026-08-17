@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Getting Started with Windows Forms Grid Control | Syncfusion®
-description: Learn here about getting started with Syncfusion® Essential Studio® Windows Forms Grid Control, its elements, and more.
+description: Get started with Grid Control in WinForms. Learn how to create, configure, populate, style, edit, and select data in a customizable cell-based grid.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 
 ---

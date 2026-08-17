@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Prevent Resizing a Specific Column in WinForms GridControl| Syncfusion
-description: How to prevent resizing a specific column in Syncfusion Essential Windows Forms Grid control, and more.
+title: Prevent Column Resizing in Windows Forms GridControl | Syncfusion®
+description: Prevent resizing of specific columns in Syncfusion® Windows Forms GridControl by handling the ResizingColumns event and customizing resize behavior and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to prevent resizing a specific column in GridControl
+# How to Prevent Resizing a Specific Column in Windows Forms GridControl
 
 Handle ResizingColumns event and cancel the resizing for specific columns.
 

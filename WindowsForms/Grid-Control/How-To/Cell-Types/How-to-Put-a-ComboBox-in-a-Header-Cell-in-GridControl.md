@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to put a ComboBox in a header cell in GridControl | Syncfusion
-description: Learn here all about how to put a combobox in a header cell of Syncfusion Windows Forms GridControl control and more.
+title: Put a ComboBox in Windows Forms GridControl Header | Syncfusion®
+description: Put a ComboBox in a header cell in Syncfusion® Windows Forms GridControl using ComboBox cell types, data sources, and cell events and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to put a ComboBox in a header cell in Windows Forms GridControl
+# How to Put a ComboBox in a Header Cell in Windows Forms GridControl
 
 ### GridControl
 

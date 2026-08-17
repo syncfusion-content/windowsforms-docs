@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to get the screen point for the given cell coordinates |Syncfusion
-description: Learn here all about how to get the screen point for the given cell coordinates in Syncfusion Windows Forms GridControl and more.
+title: Get Screen Point in Windows Forms GridControl | Syncfusion®
+description: Get the screen point for given cell coordinates in Syncfusion® Windows Forms GridControl using RangeInfoToRectangle and PointToScreen methods and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to get the screen point for the given cell coordinates
+# How to Get Screen Point in Windows Forms GridControl
 
 You can get the cell's rectangle in grid coordinates from RangeInfoToRectangle method. Then with the rectangle's coordinates, you can get the screen point using PointToScreen method.
 

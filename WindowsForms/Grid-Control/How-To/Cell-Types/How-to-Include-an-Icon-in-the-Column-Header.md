@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to include an icon in the column header in GridControl| Syncfusion
-description: Learn here all about how to include an icon in the column header of Syncfusion Windows Forms GridControl control and more.
+title: Include an Icon in Header in Windows Forms GridControl | Syncfusion®
+description: Include an icon in a column header in Syncfusion® Windows Forms GridControl using image properties and customize header appearance and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to include an icon in the column header in WinForms GridControl
+# How to Include Icon in the Column Header in Windows Forms GridControl
 
 The GridControl will allow you to place images in cells by specifying style.ImageIndex and style.ImageList value for the cell, provided style.CellType is either "Static" or "Text Box". So, to make your header cell hold an icon, make it "Static" and set the following properties.
 

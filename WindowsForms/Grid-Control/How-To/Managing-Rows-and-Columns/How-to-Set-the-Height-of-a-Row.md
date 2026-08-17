@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Set the Height of a Row in Windows Forms GridControl | Syncfusion
-description: Learn here about how to set the height of a row in Syncfusion Essential Studio Windows Forms Grid Control, and more.
+title: Set Row Height in Windows Forms GridControl | Syncfusion®
+description: Set the height of rows in Syncfusion® Windows Forms GridControl using the RowHeights collection and customize row sizing programmatically.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to set the height of a row in Windows Forms Grid Control
+# How to Set the Height of a Row in Windows Forms GridControl
 
 Changing a row's height is simple whether you are using the designer or code. From the designer, use RowHeightEntries collection. To explicitly set height of the particular row from code, use GridControl.RowHeights collection.
 

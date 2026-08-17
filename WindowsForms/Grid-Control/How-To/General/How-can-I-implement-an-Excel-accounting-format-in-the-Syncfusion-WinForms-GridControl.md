@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-can-I-implement-an-Excel-accounting-format-in-the-Syncfusion-WinForms-GridControl | Windows Forms | Syncfusion
-description: how can i implement an excel accounting format in the syncfusion winforms gridcontrol
+title: Excel Accounting Format in Windows Forms GridControl | Syncfusion®
+description: Implement Excel accounting format in Syncfusion® Windows Forms GridControl using currency cell settings, decimal precision, alignment options, and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How can i implement an Excel accounting format in the Syncfusion WinForms GridControl
+# How to Implement Excel Accounting Format in Windows Forms GridControl
 
 We can achieve this behavior by setting the cell type to Currency. The currency symbol is removed from the cell data with the following code:
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to Get the Selected Ranges in WinForms GridControl | Syncfusion
-description: Learn here all about how to get the selected ranges in Syncfusion Windows Forms GridControl and more.
+title: Get Selected Ranges in Windows Forms GridControl | Syncfusion®
+description: Get selected ranges in Syncfusion® Windows Forms GridControl using the Selections.Ranges collection and access active and expanded ranges and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to Get the Selected Ranges in a Windows Forms GridControl
+# How to Get Selected Ranges in Windows Forms GridControl
 
 ### Introduction
 
