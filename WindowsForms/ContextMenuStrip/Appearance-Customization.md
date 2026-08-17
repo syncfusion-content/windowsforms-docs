@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance Customization in WinForms ContextMenuStrip | Syncfusion®
+title: Customize appearance in Windows Forms ContextMenuStrip | Syncfusion®
 description: Learn here all about appearance customization feature of Syncfusion® Windows Forms ContextMenuStrip (ContextMenuStripEx) control and more.
 platform: windowsforms
 control: ContextMenuStripEx
 documentation: ug
 ---
 
-# Appearance in Windows Forms ContextMenuStrip (ContextMenuStripEx)
+# Customize appearance in Windows Forms ContextMenuStrip
 
 ## Background Color
 

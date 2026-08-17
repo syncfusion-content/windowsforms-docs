@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ToolTip in Windows Forms statusbaradvpanel control | Syncfusion
-description: Learn about ToolTip support in Syncfusion Windows Forms statusbaradvpanel (StatusBarAdvPanel) control and more details.
+title: ToolTip in Windows Forms StatusBarAdvPanel | Syncfusion®
+description: ToolTip in Windows Forms StatusBarAdvPanel displays contextual information, improving usability and user guidance.
 platform: WindowsForms
 control: StatusBarAdvPanel
 documentation: ug
 ---
 
-# ToolTip in Windows Forms statusbaradvpanel (StatusBarAdvPanel)
+# ToolTip in Windows Forms StatusBarAdvPanel
 
 ToolTip can be set for the StatusBarAdvPanel using the property given below.
 

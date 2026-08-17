@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-To-Toggle-the-Visibility-Of-an-HTML-Element-In | WindowsForms | Syncfusion®
-description: how to toggle the visibility of an html element in the htmlui control at run-time?
+title: How To Toggle the Visibility Of an HTML Element In | Syncfusion®
+description: Learn how to how To Toggle the Visibility Of an HTML Element In in Syncfusion Windows Forms Html Viewer (HTMLUI) control.
 platform: windowsforms
 control: HTML UI
 documentation: ug
 ---
 
-# How to toggle the visibility of an HTML element in the HTMLUI control at run-time?
+# How To Toggle the Visibility Of an HTML Element In
 
 Each HTML element in the HTMLUI has an xVisible attribute by default that helps the user to toggle the visibility of a particular element. Since the xVisible is a bool property, the value to be set is either `true` or `false`, as string.
 

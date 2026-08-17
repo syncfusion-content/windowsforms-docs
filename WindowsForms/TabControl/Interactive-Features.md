@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Interactive Features in Windows Forms TabControl control | Syncfusion®
-description: Learn about Interactive Features support in Syncfusion® Windows Forms TabControl (TabControlAdv) control and more details.
+title: Interactive Features in Windows Forms TabControl | Syncfusion®
+description: Learn about Interactive Features support in Syncfusion Windows Forms TabControl (TabControlAdv) control and more details.
 platform: windowsforms
-control: TabControlAdv 
+control: TabControlAdv
 documentation: ug
 ---
 
-# Interactive Features in Windows Forms TabControl (TabControlAdv)
+# Interactive Features in Windows Forms TabControl
 
 ## CloseButton settings
 

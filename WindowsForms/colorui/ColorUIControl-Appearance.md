@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: ColorUIControl Appearance in Windows Forms ColorUI | Syncfusion®
-description: Learn about ColorUIControl Appearance support in Syncfusion® Windows Forms ColorUI control, its elements and more details.
+description: Learn about ColorUIControl Appearance support in Syncfusion Windows Forms ColorUI control, its elements and more details.
 platform: windowsforms
 control: ColorUI
 documentation: ug
