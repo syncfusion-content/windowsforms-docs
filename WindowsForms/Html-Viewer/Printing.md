@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Printing in Windows Forms Html Viewer control | Syncfusion®
-description: Learn about Printing support in Syncfusion® Windows Forms Html Viewer (HTMLUI) control and more details.
+title: Printing in Windows Forms HTMLUI control | Syncfusion®
+description: Learn about Printing support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
 platform: windowsforms
-control: HTML UI
+control: HTMLUI
 documentation: ug
 ---
 
-#  Printing in Windows Forms Html Viewer control
+# Printing in Windows Forms HTMLUI control
 
 The HTMLUI control supports printing that helps the user in developing a hard copy of the document displayed in the HTMLUI control. Also the Print Preview feature lets the user to preview the page before being printed, and change the page according to the requirements.
 
@@ -160,4 +160,3 @@ This sample shows how an HTML document available in the HTMLUI can be printed.
 By default, this sample can be found under the following location:
 
 ...\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\HTMLUI.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
-

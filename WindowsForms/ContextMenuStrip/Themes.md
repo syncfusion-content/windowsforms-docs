@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Themes in Windows Forms ContextMenuStrip Control | Syncfusion®
+title: Themes in Windows Forms ContextMenuStrip | Syncfusion®
 description: Learn here all about themes feature of Syncfusion® Windows Forms ContextMenuStrip (ContextMenuStripEx) control and more.
 platform: windowsforms
 control: ContextMenuStripEx
 documentation: ug
 ---
 
-# Themes in Windows Forms ContextMenuStrip (ContextMenuStripEx)
+# Themes in Windows Forms ContextMenuStrip
 
 Theming is the process of applying rich look and feel to visual elements of a control. The [`Style`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ContextMenuStripEx.html#Syncfusion_Windows_Forms_Tools_ContextMenuStripEx_Style) property is used to set the visual style of ContextMenuStripEx control. This control provides the following theming options:
 

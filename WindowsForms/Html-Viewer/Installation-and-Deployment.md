@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Installation-and-Deployment | WindowsForms | Syncfusion®
-description: installation and deployment
+title: Installation and Deployment in Windows Forms HTMLUI | Syncfusion®
+description: Learn about the installation and deployment of Syncfusion Windows Forms Html Viewer (HTMLUI) control, install location, and patches.
 platform: windowsforms
-control: HTML UI
+control: HTMLUI
 documentation: ug
 ---
 
-# Installation and deployment
+# Installation and Deployment in Windows Forms HTMLUI
 
 This section covers information on the install location, samples, licensing, patches update and updation of the recent version of Essential Studio<sup>®</sup>. It comprises the following subsections:
 
@@ -37,7 +37,7 @@ This section covers the location of the installed samples and describes the proc
 
 
 
-#### Sample installation location
+### Sample installation location
 
 The Essential<sup>®</sup> HTMLUI Windows Forms samples are installed in the following location.
 
@@ -54,7 +54,7 @@ To view the samples, follow the steps below:
 1. Click Start-->All Programs-->Syncfusion-->Essential Studio <version number> -->Dashboard. Essential Studio<sup>®</sup> Enterprise Edition window is displayed.
 
 
-![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)
+![Essential Studio Enterprise Edition window](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)
 
 
 
@@ -74,14 +74,14 @@ N> You can view the samples in any of the following three ways:
 
 
 
-![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)
+![UI Windows Form Sample Browser window](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)
 
 
 3. Click HTML UI from the bottom-left pane. HTML UI samples will be displayed.
 
 
 
-![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)
+![HTML UI samples displayed in the Sample Browser](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)
 
 
 
@@ -136,4 +136,3 @@ Windows Forms – HTMLUI
 
 
  Syncfusion.HTMLUI.Base.dll depends on Syncfusion.MIME.Base.dll. So this needs to be included in the deployment of any application which uses HTMLUI.
-

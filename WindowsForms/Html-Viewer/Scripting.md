@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Scripting in Windows Forms Html Viewer control | Syncfusion®
-description: Learn about Scripting support in Syncfusion® Windows Forms Html Viewer (HTMLUI) control and more details.
+title: Scripting in Windows Forms HTMLUI control | Syncfusion®
+description: Learn about Scripting support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
 platform: windowsforms
-control: HTML UI
+control: HTMLUI
 documentation: ug
 ---
 
-#  Scripting in Windows Forms Html Viewer control
+# Scripting in Windows Forms HTMLUI control
 
 Essential<sup>®</sup> HTMLUI has extensive support to Scripts. Scripting involves creating self-contained documents. The concept behind this is to make the interface easier just by loading different HTML documents that contain the logic in themselves.
 
@@ -114,6 +114,5 @@ This sample illustrates the support of self-contained HTML documents in HTMLUI.
 By default, this sample can be found under the following location:
 
 ...\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\HTMLUI.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
-
 
 

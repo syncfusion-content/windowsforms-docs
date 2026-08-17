@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Searching in Windows Forms Html Viewer control | Syncfusion®
-description: Learn about Searching support in Syncfusion® Windows Forms Html Viewer (HTMLUI) control and more details.
+title: Searching in Windows Forms HTMLUI control | Syncfusion®
+description: Learn about Searching support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
 platform: windowsforms
-control: HTMLUIControl
+control: HTMLUI
 documentation: ug
 ---
 
-#  Searching in Windows Forms Html Viewer control
+# Searching in Windows Forms HTMLUI control
 
 Like in popular browsers, the HTMLUI control helps the users to search for a given text in the document displayed in the HTMLUI control. The HTMLUI control uses the [DisplayFindForm](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html#Syncfusion_Windows_Forms_HTMLUI_HTMLUIControl_DisplayFindForm) method for this purpose. This feature comes with an Updown search and also the Match case search that helps the user to easily find the required text from the displayed document.
 
@@ -44,6 +44,5 @@ This sample shows how a text can be searched in a document loaded into the HTMLU
 
 
 ![HTML Searching option](Searching_images/Searching_img1.jpeg)
-
 
 

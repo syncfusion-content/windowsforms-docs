@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Exporting in Windows Forms Html Viewer control | Syncfusion®
-description: Learn about Exporting support in Syncfusion® Windows Forms Html Viewer (HTMLUI) control and more details.
+title: Exporting in Windows Forms HTMLUI control | Syncfusion®
+description: Learn about Exporting support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
 platform: windowsforms
-control: HTML UI
+control: HTMLUI
 documentation: ug
 ---
 
-#  Exporting in Windows Forms Html Viewer control
+# Exporting in Windows Forms HTMLUI control
 
 Essential<sup>®</sup> HTMLUI supports the export of HTML documents. These documents that are available in the HTMLUI control can be exported as images. The HTMLUI control uses the InputHTML class to render the HTML document and then converts the available document to Bitmaps.
 
@@ -142,6 +142,5 @@ End Function
 This sample illustrates the export of HTML documents loaded into the HTMLUI to images.
 
 ![Exporting_img1](Exporting_images/Exporting_img1.jpeg)
-
 
 

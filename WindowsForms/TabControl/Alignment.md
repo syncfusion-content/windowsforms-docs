@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Alignment in Windows Forms TabControl control | Syncfusion®
-description: Learn about Alignment support in Syncfusion® Windows Forms TabControl (TabControlAdv) control and more details.
+title: Alignment in Windows Forms TabControl | Syncfusion®
+description: Learn about Alignment support in Syncfusion Windows Forms TabControl (TabControlAdv) control and more details.
 platform: windowsforms
-control: TabControlAdv 
+control: TabControlAdv
 documentation: ug
 ---
 
-# Alignment in Windows Forms TabControl (TabControlAdv)
+# Alignment in Windows Forms TabControl
 
 Alignment of the tabs can be set through the [Alignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_Alignment) and [TabGap](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_TabGap) properties.
 
