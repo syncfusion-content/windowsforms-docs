@@ -81,223 +81,223 @@ background-color:transparent!important;
 
 
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/datagrid/gettingstarted">DataGrid</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/docking-manager/getting-started">Docking Manager</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/tabcontrol/getting-started">TabControl</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/maskedtextbox/getting-started">MaskedTextBox</a> </td>
+    <td> <a id="anchor" aria-label="DataGrid" href="https://help.syncfusion.com/windowsforms/datagrid/gettingstarted">DataGrid</a> </td>
+    <td> <a id="anchor" aria-label="Docking Manager" href="https://help.syncfusion.com/windowsforms/docking-manager/getting-started">Docking Manager</a> </td>
+    <td> <a id="anchor" aria-label="TabControl" href="https://help.syncfusion.com/windowsforms/tabcontrol/getting-started">TabControl</a> </td>
+    <td> <a id="anchor" aria-label="MaskedTextBox" href="https://help.syncfusion.com/windowsforms/maskedtextbox/getting-started">MaskedTextBox</a> </td>
   </tr>
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/grid-control/getting-started">Grid Control</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/carousel/getting-started">Carousel</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/ribbon/getting-started">Ribbon</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/autocomplete/getting-started">AutoComplete</a> </td>
+    <td> <a id="anchor" aria-label="Grid Control" href="https://help.syncfusion.com/windowsforms/grid-control/getting-started">Grid Control</a> </td>
+    <td> <a id="anchor" aria-label="Carousel" href="https://help.syncfusion.com/windowsforms/carousel/getting-started">Carousel</a> </td>
+    <td> <a id="anchor" aria-label="Ribbon" href="https://help.syncfusion.com/windowsforms/ribbon/getting-started">Ribbon</a> </td>
+    <td> <a id="anchor" aria-label="AutoComplete" href="https://help.syncfusion.com/windowsforms/autocomplete/getting-started">AutoComplete</a> </td>
   </tr>
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/pivot-grid/getting-started">Pivot Grid</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/layoutmanagers/borderlayout/gettingstarted">Border Layout</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/treeview/getting-started">TreeView</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/checkbox/getting-started">CheckBox</a> </td>
+    <td> <a id="anchor" aria-label="Pivot Grid" href="https://help.syncfusion.com/windowsforms/pivot-grid/getting-started">Pivot Grid</a> </td>
+    <td> <a id="anchor" aria-label="Border Layout" href="https://help.syncfusion.com/windowsforms/layoutmanagers/borderlayout/gettingstarted">Border Layout</a> </td>
+    <td> <a id="anchor" aria-label="TreeView" href="https://help.syncfusion.com/windowsforms/treeview/getting-started">TreeView</a> </td>
+    <td> <a id="anchor" aria-label="CheckBox" href="https://help.syncfusion.com/windowsforms/checkbox/getting-started">CheckBox</a> </td>
   </tr>
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/gridgrouping/getting-started">GridGroupingControl</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/layoutmanagers/cardlayout/gettingstarted">Card Layout</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/navigationview/getting-started">Breadcrumb</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/color-picker-dropdown/getting-started">Color Picker DropDown</a> </td>
+    <td> <a id="anchor" aria-label="GridGroupingControl" href="https://help.syncfusion.com/windowsforms/gridgrouping/getting-started">GridGroupingControl</a> </td>
+    <td> <a id="anchor" aria-label="Card Layout" href="https://help.syncfusion.com/windowsforms/layoutmanagers/cardlayout/gettingstarted">Card Layout</a> </td>
+    <td> <a id="anchor" aria-label="Breadcrumb" href="https://help.syncfusion.com/windowsforms/navigationview/getting-started">Breadcrumb</a> </td>
+    <td> <a id="anchor" aria-label="Color Picker DropDown" href="https://help.syncfusion.com/windowsforms/color-picker-dropdown/getting-started">Color Picker DropDown</a> </td>
   </tr>
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/multicolumn-listbox/getting-started">GridListControl</a></td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/layoutmanagers/flowlayout/gettingstarted">Flow Layout</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/contextmenustrip/getting-started">ContextMenuStrip</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/color-picker/getting-started">Color Picker</a> </td>
+    <td> <a id="anchor" aria-label="GridListControl" href="https://help.syncfusion.com/windowsforms/multicolumn-listbox/getting-started">GridListControl</a></td>
+    <td> <a id="anchor" aria-label="Flow Layout" href="https://help.syncfusion.com/windowsforms/layoutmanagers/flowlayout/gettingstarted">Flow Layout</a> </td>
+    <td> <a id="anchor" aria-label="ContextMenuStrip" href="https://help.syncfusion.com/windowsforms/contextmenustrip/getting-started">ContextMenuStrip</a> </td>
+    <td> <a id="anchor" aria-label="Color Picker" href="https://help.syncfusion.com/windowsforms/color-picker/getting-started">Color Picker</a> </td>
   </tr>
   <tr>
     <td></td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/layoutmanagers/gridlayout/getting-started">Grid Layout</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/navigation-drawer/getting-started">Navigation Drawer</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/colorui/getting-started">ColorUIControl</a> </td>
+    <td> <a id="anchor" aria-label="Grid Layout" href="https://help.syncfusion.com/windowsforms/layoutmanagers/gridlayout/getting-started">Grid Layout</a> </td>
+    <td> <a id="anchor" aria-label="Navigation Drawer" href="https://help.syncfusion.com/windowsforms/navigation-drawer/getting-started">Navigation Drawer</a> </td>
+    <td> <a id="anchor" aria-label="ColorUIControl" href="https://help.syncfusion.com/windowsforms/colorui/getting-started">ColorUIControl</a> </td>
   </tr>
   <tr>
     <td id="title">DATA VISUALIZATION </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/layoutmanagers/gridbaglayout/getting-started">Grid Bag Layout</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/menu/getting-started">Menu</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/double-textbox/getting-started">DoubleTextBox</a> </td>
+    <td> <a id="anchor" aria-label="Grid Bag Layout" href="https://help.syncfusion.com/windowsforms/layoutmanagers/gridbaglayout/getting-started">Grid Bag Layout</a> </td>
+    <td> <a id="anchor" aria-label="Menu" href="https://help.syncfusion.com/windowsforms/menu/getting-started">Menu</a> </td>
+    <td> <a id="anchor" aria-label="DoubleTextBox" href="https://help.syncfusion.com/windowsforms/double-textbox/getting-started">DoubleTextBox</a> </td>
   </tr>
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/chart/getting-started">Chart</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/tile-layout/getting-started">Tile Layout</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/navigation-pane/gettingstarted">Navigation Pane</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/integer-textbox/getting-started">IntegerTextBox</a> </td>
+    <td> <a id="anchor" aria-label="Chart" href="https://help.syncfusion.com/windowsforms/chart/getting-started">Chart</a> </td>
+    <td> <a id="anchor" aria-label="Tile Layout" href="https://help.syncfusion.com/windowsforms/tile-layout/getting-started">Tile Layout</a> </td>
+    <td> <a id="anchor" aria-label="Navigation Pane" href="https://help.syncfusion.com/windowsforms/navigation-pane/gettingstarted">Navigation Pane</a> </td>
+    <td> <a id="anchor" aria-label="IntegerTextBox" href="https://help.syncfusion.com/windowsforms/integer-textbox/getting-started">IntegerTextBox</a> </td>
   </tr>
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/diagram/getting-started">Diagram</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/gradient-panel/getting-started">GradientPanel</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/multicolumn-treeview/getting-started">MultiColumn TreeView</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/percent-textbox/getting-started">PercentTextBox</a> </td>
+    <td> <a id="anchor" aria-label="Diagram" href="https://help.syncfusion.com/windowsforms/diagram/getting-started">Diagram</a> </td>
+    <td> <a id="anchor" aria-label="GradientPanel" href="https://help.syncfusion.com/windowsforms/gradient-panel/getting-started">GradientPanel</a> </td>
+    <td> <a id="anchor" aria-label="MultiColumn TreeView" href="https://help.syncfusion.com/windowsforms/multicolumn-treeview/getting-started">MultiColumn TreeView</a> </td>
+    <td> <a id="anchor" aria-label="PercentTextBox" href="https://help.syncfusion.com/windowsforms/percent-textbox/getting-started">PercentTextBox</a> </td>
   </tr>
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/map/getting-started">Maps</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/popup/getting-started">Popup</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/scroll-frame/gettingstarted">Scroll Frame</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/numeric-textbox/gettingstarted">Numeric TextBox</a> </td>
+    <td> <a id="anchor" aria-label="Maps" href="https://help.syncfusion.com/windowsforms/map/getting-started">Maps</a> </td>
+    <td> <a id="anchor" aria-label="Popup" href="https://help.syncfusion.com/windowsforms/popup/getting-started">Popup</a> </td>
+    <td> <a id="anchor" aria-label="Scroll Frame" href="https://help.syncfusion.com/windowsforms/scroll-frame/gettingstarted">Scroll Frame</a> </td>
+    <td> <a id="anchor" aria-label="Numeric TextBox" href="https://help.syncfusion.com/windowsforms/numeric-textbox/gettingstarted">Numeric TextBox</a> </td>
   </tr>
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/smith-chart/gettingstarted">Smith Chart</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/gradient-label/getting-started">Gradient Label</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/scrollersframe/getting-started">ScrollersFrame</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/classic/currency-edit/getting-started">CurrencyEdit</a> </td>
+    <td> <a id="anchor" aria-label="Smith Chart" href="https://help.syncfusion.com/windowsforms/smith-chart/gettingstarted">Smith Chart</a> </td>
+    <td> <a id="anchor" aria-label="Gradient Label" href="https://help.syncfusion.com/windowsforms/gradient-label/getting-started">Gradient Label</a> </td>
+    <td> <a id="anchor" aria-label="ScrollersFrame" href="https://help.syncfusion.com/windowsforms/scrollersframe/getting-started">ScrollersFrame</a> </td>
+    <td> <a id="anchor" aria-label="CurrencyEdit" href="https://help.syncfusion.com/windowsforms/classic/currency-edit/getting-started">CurrencyEdit</a> </td>
   </tr>
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/radial-gauge/radial-gauge">Radial Gauge</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/popupmenu/getting-started">PopupMenu</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/gridrecordnavigationcontrol/getting-started">Record Navigation Control</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/currency-textbox/getting-started">CurrencyTextBox</a> </td>
+    <td> <a id="anchor" aria-label="Radial Gauge" href="https://help.syncfusion.com/windowsforms/radial-gauge/radial-gauge">Radial Gauge</a> </td>
+    <td> <a id="anchor" aria-label="PopupMenu" href="https://help.syncfusion.com/windowsforms/popupmenu/getting-started">PopupMenu</a> </td>
+    <td> <a id="anchor" aria-label="Record Navigation Control" href="https://help.syncfusion.com/windowsforms/gridrecordnavigationcontrol/getting-started">Record Navigation Control</a> </td>
+    <td> <a id="anchor" aria-label="CurrencyTextBox" href="https://help.syncfusion.com/windowsforms/currency-textbox/getting-started">CurrencyTextBox</a> </td>
   </tr>
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/radial-gauge/digital-gauge">Digital Gauge</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/splitcontainer/creating-splitcontaineradv">SplitContainer</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/splitter/getting-started">Excel-like Tab bar Splitter</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/radio-button/getting-started">Radio Button</a> </td>
+    <td> <a id="anchor" aria-label="Digital Gauge" href="https://help.syncfusion.com/windowsforms/radial-gauge/digital-gauge">Digital Gauge</a> </td>
+    <td> <a id="anchor" aria-label="SplitContainer" href="https://help.syncfusion.com/windowsforms/splitcontainer/creating-splitcontaineradv">SplitContainer</a> </td>
+    <td> <a id="anchor" aria-label="Excel-like Tab bar Splitter" href="https://help.syncfusion.com/windowsforms/splitter/getting-started">Excel-like Tab bar Splitter</a> </td>
+    <td> <a id="anchor" aria-label="Radio Button" href="https://help.syncfusion.com/windowsforms/radio-button/getting-started">Radio Button</a> </td>
   </tr>
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/radial-gauge/linear-gauge">Linear Gauge</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/gradientpanelext/getting-started">GradientPanelExt</a></td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/tab-splitter-container/gettingstarted">Tab Splitter Container</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/numericupdown/getting-started">NumericUpdown</a> </td>
+    <td> <a id="anchor" aria-label="Linear Gauge" href="https://help.syncfusion.com/windowsforms/radial-gauge/linear-gauge">Linear Gauge</a> </td>
+    <td> <a id="anchor" aria-label="GradientPanelExt" href="https://help.syncfusion.com/windowsforms/gradientpanelext/getting-started">GradientPanelExt</a></td>
+    <td> <a id="anchor" aria-label="Tab Splitter Container" href="https://help.syncfusion.com/windowsforms/tab-splitter-container/gettingstarted">Tab Splitter Container</a> </td>
+    <td> <a id="anchor" aria-label="NumericUpdown" href="https://help.syncfusion.com/windowsforms/numericupdown/getting-started">NumericUpdown</a> </td>
   </tr>
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/pivot-chart/getting-started">Pivot Chart</a> </td>
+    <td> <a id="anchor" aria-label="Pivot Chart" href="https://help.syncfusion.com/windowsforms/pivot-chart/getting-started">Pivot Chart</a> </td>
     <td></td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/tree-navigator/getting-started">Tree Navigator</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/domain-updown/getting-started">DomainUpDownExt</a> </td>
+    <td> <a id="anchor" aria-label="Tree Navigator" href="https://help.syncfusion.com/windowsforms/tree-navigator/getting-started">Tree Navigator</a> </td>
+    <td> <a id="anchor" aria-label="DomainUpDownExt" href="https://help.syncfusion.com/windowsforms/domain-updown/getting-started">DomainUpDownExt</a> </td>
   </tr>
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/bullet-graph/getting-started">Bullet Graph</a> </td>
+    <td> <a id="anchor" aria-label="Bullet Graph" href="https://help.syncfusion.com/windowsforms/bullet-graph/getting-started">Bullet Graph</a> </td>
    <td id="title">FILE VIEWERS &amp; EDITORS </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/radial-menu/getting-started">Radial Menu</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/textbox/getting-started">TextBox</a> </td>
+    <td> <a id="anchor" aria-label="Radial Menu" href="https://help.syncfusion.com/windowsforms/radial-menu/getting-started">Radial Menu</a> </td>
+    <td> <a id="anchor" aria-label="TextBox" href="https://help.syncfusion.com/windowsforms/textbox/getting-started">TextBox</a> </td>
   </tr>
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/barcode/getting-started">Barcode</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/pdf-viewer/getting-started">PDF Viewer</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/xptoolbar/getting-started">ToolBar</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/trackbar/getting-started">TrackBar</a> </td>
+    <td> <a id="anchor" aria-label="Barcode" href="https://help.syncfusion.com/windowsforms/barcode/getting-started">Barcode</a> </td>
+    <td> <a id="anchor" aria-label="PDF Viewer" href="https://help.syncfusion.com/windowsforms/pdf-viewer/getting-started">PDF Viewer</a> </td>
+    <td> <a id="anchor" aria-label="ToolBar" href="https://help.syncfusion.com/windowsforms/xptoolbar/getting-started">ToolBar</a> </td>
+    <td> <a id="anchor" aria-label="TrackBar" href="https://help.syncfusion.com/windowsforms/trackbar/getting-started">TrackBar</a> </td>
   </tr>
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/sparkline/gettingstarted">Sparkline</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/syntax-editor/getting-started">Syntax Editor</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/wizard-control/getting-started">Wizard Control</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/spell-checker/getting-started">Spell Checker</a> </td>
+    <td> <a id="anchor" aria-label="Sparkline" href="https://help.syncfusion.com/windowsforms/sparkline/gettingstarted">Sparkline</a> </td>
+    <td> <a id="anchor" aria-label="Syntax Editor" href="https://help.syncfusion.com/windowsforms/syntax-editor/getting-started">Syntax Editor</a> </td>
+    <td> <a id="anchor" aria-label="Wizard Control" href="https://help.syncfusion.com/windowsforms/wizard-control/getting-started">Wizard Control</a> </td>
+    <td> <a id="anchor" aria-label="Spell Checker" href="https://help.syncfusion.com/windowsforms/spell-checker/getting-started">Spell Checker</a> </td>
   </tr>
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/treemap/getting-started">TreeMap</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/html-viewer/getting-started">HTML Viewer</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/xptaskbar/creating-an-xptaskbar">XPTaskBar</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/folder-browser/getting-started">Folder Browser</a> </td>
+    <td> <a id="anchor" aria-label="TreeMap" href="https://help.syncfusion.com/windowsforms/treemap/getting-started">TreeMap</a> </td>
+    <td> <a id="anchor" aria-label="HTML Viewer" href="https://help.syncfusion.com/windowsforms/html-viewer/getting-started">HTML Viewer</a> </td>
+    <td> <a id="anchor" aria-label="XPTaskBar" href="https://help.syncfusion.com/windowsforms/xptaskbar/creating-an-xptaskbar">XPTaskBar</a> </td>
+    <td> <a id="anchor" aria-label="Folder Browser" href="https://help.syncfusion.com/windowsforms/folder-browser/getting-started">Folder Browser</a> </td>
   </tr>
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/skins/getting-started">Skins</a> </td>
+    <td> <a id="anchor" aria-label="Skins" href="https://help.syncfusion.com/windowsforms/skins/getting-started">Skins</a> </td>
     <td></td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/xptaskpane/creating-a-simple-xptaskpane">XPTaskPane</a></td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/radial-menu/getting-started">Radial Slider</a> </td>
+    <td> <a id="anchor" aria-label="XPTaskPane" href="https://help.syncfusion.com/windowsforms/xptaskpane/creating-a-simple-xptaskpane">XPTaskPane</a></td>
+    <td> <a id="anchor" aria-label="Radial Slider" href="https://help.syncfusion.com/windowsforms/radial-menu/getting-started">Radial Slider</a> </td>
   </tr>
   <tr>
     <td></td>
     <td></td>
     <td></td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/range-slider/getting-started">Range Slider</a> </td>
+    <td> <a id="anchor" aria-label="Range Slider" href="https://help.syncfusion.com/windowsforms/range-slider/getting-started">Range Slider</a> </td>
   </tr>
   <tr>
     <td></td>
     <td id="title">FILE FORMAT FRAMEWORKS </td>
     <td></td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/rating-control/getting-started">Rating Control</a></td>
+    <td> <a id="anchor" aria-label="Rating Control" href="https://help.syncfusion.com/windowsforms/rating-control/getting-started">Rating Control</a></td>
   </tr>
   <tr>
    <td id="title">DIALOGS AND NOTIFICATION </td>
-   <td> <a id="anchor" href="https://help.syncfusion.com/document-processing/excel/excel-library/net/create-excel-file-csharp-vbnet">Excel</a> </td>
+   <td> <a id="anchor" aria-label="Excel" href="https://help.syncfusion.com/document-processing/excel/excel-library/net/create-excel-file-csharp-vbnet">Excel</a> </td>
     <td id="title">BUTTONS </td>
     <td></td>
   </tr>
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/form/getting-started">Form</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/document-processing/pdf/pdf-library/net/create-pdf-file-in-c-sharp-vb-net">PDF</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/button/getting-started">Button</a> </td>
+    <td> <a id="anchor" aria-label="Form" href="https://help.syncfusion.com/windowsforms/form/getting-started">Form</a> </td>
+    <td> <a id="anchor" aria-label="PDF" href="https://help.syncfusion.com/document-processing/pdf/pdf-library/net/create-pdf-file-in-c-sharp-vb-net">PDF</a> </td>
+    <td> <a id="anchor" aria-label="Button" href="https://help.syncfusion.com/windowsforms/button/getting-started">Button</a> </td>
    <td id="title">DATA SCIENCE </td>
   </tr>
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/tabbed-form/getting-started">Tabbed Form</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/file-formats/presentation/getting-started">PowerPoint</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/buttonedit/getting-started">ButtonEdit</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/predictive-analytics/pmml-execution-engine/overview">Predictive Analytics</a></td>
+    <td> <a id="anchor" aria-label="Tabbed Form" href="https://help.syncfusion.com/windowsforms/tabbed-form/getting-started">Tabbed Form</a> </td>
+    <td> <a id="anchor" aria-label="PowerPoint" href="https://help.syncfusion.com/file-formats/presentation/getting-started">PowerPoint</a> </td>
+    <td> <a id="anchor" aria-label="ButtonEdit" href="https://help.syncfusion.com/windowsforms/buttonedit/getting-started">ButtonEdit</a> </td>
+    <td> <a id="anchor" aria-label="Predictive Analytics" href="https://help.syncfusion.com/predictive-analytics/pmml-execution-engine/overview">Predictive Analytics</a></td>
   </tr>
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/hub-tile/getting-started">Hub Tile</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/document-processing/word/word-library/net/getting-started">Word</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/split-button/getting-started">SplitButton</a> </td>
+    <td> <a id="anchor" aria-label="Hub Tile" href="https://help.syncfusion.com/windowsforms/hub-tile/getting-started">Hub Tile</a> </td>
+    <td> <a id="anchor" aria-label="Word" href="https://help.syncfusion.com/document-processing/word/word-library/net/getting-started">Word</a> </td>
+    <td> <a id="anchor" aria-label="SplitButton" href="https://help.syncfusion.com/windowsforms/split-button/getting-started">SplitButton</a> </td>
     <td></td>
   </tr>
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/messagebox/getting-started">MessageBox</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/projio/project">ProjIO</a></td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/toggle-button/getting-started">Toggle Button</a></td>
+    <td> <a id="anchor" aria-label="MessageBox" href="https://help.syncfusion.com/windowsforms/messagebox/getting-started">MessageBox</a> </td>
+    <td> <a id="anchor" aria-label="ProjIO" href="https://help.syncfusion.com/windowsforms/projio/project">ProjIO</a></td>
+    <td> <a id="anchor" aria-label="Toggle Button" href="https://help.syncfusion.com/windowsforms/toggle-button/getting-started">Toggle Button</a></td>
     <td></td>
   </tr>
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/metro-form/getting-started">Metro Form</a> </td>
+    <td> <a id="anchor" aria-label="Metro Form" href="https://help.syncfusion.com/windowsforms/metro-form/getting-started">Metro Form</a> </td>
     <td></td>
     <td></td>
     <td id="title">MISCELLANEOUS </td>
   </tr>
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/watermark-text-provider/getting-started">BannerTextProvider</a> </td>
+    <td> <a id="anchor" aria-label="BannerTextProvider" href="https://help.syncfusion.com/windowsforms/watermark-text-provider/getting-started">BannerTextProvider</a> </td>
    <td id="title">LISTS AND DROPDOWN </td>
     <td></td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/calculation-engine/getting-started">Calculation Engine</a> </td>
+    <td> <a id="anchor" aria-label="Calculation Engine" href="https://help.syncfusion.com/windowsforms/calculation-engine/getting-started">Calculation Engine</a> </td>
   </tr>
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/splash-screen/getting-started">Splash Screen</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/combobox/gettingstarted">ComboBox</a> </td>
+    <td> <a id="anchor" aria-label="Splash Screen" href="https://help.syncfusion.com/windowsforms/splash-screen/getting-started">Splash Screen</a> </td>
+    <td> <a id="anchor" aria-label="ComboBox" href="https://help.syncfusion.com/windowsforms/combobox/gettingstarted">ComboBox</a> </td>
     <td id="title">CALENDAR </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/calculator/getting-started">Calculator</a> </td>
+    <td> <a id="anchor" aria-label="Calculator" href="https://help.syncfusion.com/windowsforms/calculator/getting-started">Calculator</a> </td>
   </tr>
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/splash-panel/getting-started">SplashPanel</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/listview/gettingstarted">ListView</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/calendar/getting-started">Calendar</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/clock/getting-started">Clock</a> </td>
+    <td> <a id="anchor" aria-label="SplashPanel" href="https://help.syncfusion.com/windowsforms/splash-panel/getting-started">SplashPanel</a> </td>
+    <td> <a id="anchor" aria-label="ListView" href="https://help.syncfusion.com/windowsforms/listview/gettingstarted">ListView</a> </td>
+    <td> <a id="anchor" aria-label="Calendar" href="https://help.syncfusion.com/windowsforms/calendar/getting-started">Calendar</a> </td>
+    <td> <a id="anchor" aria-label="Clock" href="https://help.syncfusion.com/windowsforms/clock/getting-started">Clock</a> </td>
   </tr>
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/office2007form/getting-started">Office 2007 Form</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/autolabel/getting-started">AutoLabel</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/scheduler/getting-started">Scheduler</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/grouping/getting-started">Grouping</a> </td>
+    <td> <a id="anchor" aria-label="Office 2007 Form" href="https://help.syncfusion.com/windowsforms/office2007form/getting-started">Office 2007 Form</a> </td>
+    <td> <a id="anchor" aria-label="AutoLabel" href="https://help.syncfusion.com/windowsforms/autolabel/getting-started">AutoLabel</a> </td>
+    <td> <a id="anchor" aria-label="Scheduler" href="https://help.syncfusion.com/windowsforms/scheduler/getting-started">Scheduler</a> </td>
+    <td> <a id="anchor" aria-label="Grouping" href="https://help.syncfusion.com/windowsforms/grouping/getting-started">Grouping</a> </td>
   </tr>
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/office2010form/getting-started">Office2010Form</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/editable-listbox/getting-started">Editable ListBox</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/datetimepicker/getting-started">SfDateTimeEdit</a></td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/groupview/getting-started">GroupView</a> </td>
+    <td> <a id="anchor" aria-label="Office2010Form" href="https://help.syncfusion.com/windowsforms/office2010form/getting-started">Office2010Form</a> </td>
+    <td> <a id="anchor" aria-label="Editable ListBox" href="https://help.syncfusion.com/windowsforms/editable-listbox/getting-started">Editable ListBox</a> </td>
+    <td> <a id="anchor" aria-label="SfDateTimeEdit" href="https://help.syncfusion.com/windowsforms/datetimepicker/getting-started">SfDateTimeEdit</a></td>
+    <td> <a id="anchor" aria-label="GroupView" href="https://help.syncfusion.com/windowsforms/groupview/getting-started">GroupView</a> </td>
   </tr>
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/statusstrip/statusstripex">StatusStrip</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/multicolumn-combobox/getting-started">Multicolumn ComboBox</a> </td>
+    <td> <a id="anchor" aria-label="StatusStrip" href="https://help.syncfusion.com/windowsforms/statusstrip/statusstripex">StatusStrip</a> </td>
+    <td> <a id="anchor" aria-label="Multicolumn ComboBox" href="https://help.syncfusion.com/windowsforms/multicolumn-combobox/getting-started">Multicolumn ComboBox</a> </td>
     <td></td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/dicom/getting-started">DICOM</a></td>
+    <td> <a id="anchor" aria-label="DICOM" href="https://help.syncfusion.com/windowsforms/dicom/getting-started">DICOM</a></td>
   </tr>
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/tooltip/gettingstarted">Tooltip</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/comboboxbase/getting-started">ComboBoxBase</a> </td>
+    <td> <a id="anchor" aria-label="Tooltip" href="https://help.syncfusion.com/windowsforms/tooltip/gettingstarted">Tooltip</a> </td>
+    <td> <a id="anchor" aria-label="ComboBoxBase" href="https://help.syncfusion.com/windowsforms/comboboxbase/getting-started">ComboBoxBase</a> </td>
     <td id="title">CLASSIC CONTROLS </td>
     <td></td>
   </tr>
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/status-bar/getting-started">Status Bar</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/classic/multiselectioncombobox/getting-started">MultiSelectionComboBox</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/classic/button/getting-started">ButtonAdv</a> </td>
+    <td> <a id="anchor" aria-label="Status Bar" href="https://help.syncfusion.com/windowsforms/status-bar/getting-started">Status Bar</a> </td>
+    <td> <a id="anchor" aria-label="MultiSelectionComboBox" href="https://help.syncfusion.com/windowsforms/classic/multiselectioncombobox/getting-started">MultiSelectionComboBox</a> </td>
+    <td> <a id="anchor" aria-label="ButtonAdv" href="https://help.syncfusion.com/windowsforms/classic/button/getting-started">ButtonAdv</a> </td>
     <td></td>
   </tr>
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/statusbaradvpanel/getting-started">StatusBarAdvPanel</a> </td>
+    <td> <a id="anchor" aria-label="StatusBarAdvPanel" href="https://help.syncfusion.com/windowsforms/statusbaradvpanel/getting-started">StatusBarAdvPanel</a> </td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/fontcombobox/getting-started">FontComboBox</a> </td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/classic/combobox/getting-started">ComboBoxAdv</a> </td>
     <td></td>
