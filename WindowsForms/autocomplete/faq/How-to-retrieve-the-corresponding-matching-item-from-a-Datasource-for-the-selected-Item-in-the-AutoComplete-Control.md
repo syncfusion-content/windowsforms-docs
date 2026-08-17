@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: How to Retrieve a Matching Item in Windows Forms AutoComplete | Syncfusion®
+title: How to Retrieve a Matching Item in AutoComplete | Syncfusion
 description: Retrieve the corresponding matching item in Syncfusion® Windows Forms AutoComplete control using the AutoCompleteItemSelected event and more.
 platform: windowsforms
 control: Editors Package

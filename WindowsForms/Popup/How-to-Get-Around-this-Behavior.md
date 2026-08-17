@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: How to Handle Popup Close Behavior in Windows Forms Popup
+title: How to Handle Popup Close Behavior in Popup | Syncfusion
 description: Handle popup close behavior in Syncfusion® Windows Forms PopupControlContainer control using events, Boolean flags, and more.
 platform: windowsforms
 control: PopupControlContainer
