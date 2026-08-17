@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Installation-and-Deployment | WindowsForms | Syncfusion®
-description: installation and deployment
+title: Installation and Deployment for Windows Forms Grouping | Syncfusion®
+description: Explore installation, deployment requirements, sample browsing, source code locations, licensing details, and assembly dependencies in Windows Forms Grouping.
 platform: WindowsForms
 control: Grouping
 documentation: ug
 ---
 
-# Installation and Deployment
+# Installation and Deployment in Windows Forms Grouping
 
 This section covers information on the install location, samples, licensing, patches update and updation of the recent version of Essential Studio<sup>®</sup>. It comprises the following subsections:
 
