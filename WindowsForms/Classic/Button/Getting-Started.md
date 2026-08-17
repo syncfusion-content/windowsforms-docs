@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Windows Forms ButtonAdv (Classic) | Syncfusion®
+title: Getting Started with Windows Forms ButtonAdv | Syncfusion®
 description: Learn how to get started with the Syncfusion® Windows Forms ButtonAdv(Classic) control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
 control: ButtonAdv
