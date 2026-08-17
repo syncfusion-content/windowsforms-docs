@@ -3,7 +3,7 @@ layout: post
 title: Data Binding in Windows Forms MultiSelectionComboBox | Syncfusion®
 description: Bind data to the Windows Forms MultiSelectionComboBox control to display, manage, and select items from data sources.
 platform: WindowsForms
-control: Editors Package
+control: MultiSelectionComboBox
 documentation: ug
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: VisualItemInputMode in MultiSelectionComboBox | Syncfusion®
 description: Configure VisualItemInputMode in the Windows Forms MultiSelectionComboBox control to customize item selection and user interaction.
 platform: WindowsForms
-control: Editors Package
+control: MultiSelectionComboBox
 documentation: ug
 ---
 

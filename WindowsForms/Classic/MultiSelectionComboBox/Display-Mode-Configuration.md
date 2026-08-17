@@ -3,7 +3,7 @@ layout: post
 title: Display Mode Configuration in MultiSelectionComboBox | Syncfusion®
 description: Configure display mode in the Windows Forms MultiSelectionComboBox control to customize how selected items and values are presented.
 platform: WindowsForms
-control: Editors Package
+control: MultiSelectionComboBox
 documentation: ug
 ---
 

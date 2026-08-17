@@ -3,11 +3,11 @@ layout: post
 title: Advanced Features in Windows Forms MultiSelectionComboBox | Syncfusion®
 description: Explore advanced features in the Windows Forms MultiSelectionComboBox control to enhance selection, display, and user interaction capabilities.
 platform: WindowsForms
-control: Editors Package
+control: MultiSelectionComboBox
 documentation: ug
 ---
 
-# Advanced Feature in Windows Forms MultiSelectionComboBox
+# Advanced Features in Windows Forms MultiSelectionComboBox
 
 ## Auto suggestion
 
