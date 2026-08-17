@@ -7,7 +7,7 @@ control: StatusBarAdv
 documentation: ug
 ---
 
-# Overview of Windows Forms StatusBarAdv
+# About Syncfusion® Windows Forms StatusBarAdv Control
 
 The various sections of StatusBarAdv and their descriptions are given below.
 
