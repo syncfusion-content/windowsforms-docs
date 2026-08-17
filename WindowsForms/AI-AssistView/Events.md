@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Events in Windows Forms SfAIAssistView | Syncfusion®
-description: Learn about event support in the Syncfusion® Windows Forms SfAIAssistView control and how to handle events.
+title: Events in Windows Forms SfAIAssistView | Syncfusion
+description: Learn about event support in the Syncfusion Windows Forms SfAIAssistView control and how to handle events.
 platform: windowsforms
 control: SfAIAssistView
 documentation: ug

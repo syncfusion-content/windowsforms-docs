@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Suggestions in Windows Forms SfAIAssistView | Syncfusion®
-description: Display AI-driven suggestions in the bottom-right corner of the Syncfusion® Windows Forms SfAIAssistView control.
+title: Suggestions in Windows Forms SfAIAssistView | Syncfusion
+description: Display AI-driven suggestions in the bottom-right corner of the Syncfusion Windows Forms SfAIAssistView control.
 platform: windowsforms
 control: SfAIAssistView
 documentation: ug

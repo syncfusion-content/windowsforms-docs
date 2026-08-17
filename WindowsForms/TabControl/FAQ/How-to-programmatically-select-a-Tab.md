@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-programmatically-select-a-Tab | WindowsForms | Syncfusion®
-description: Clarified TabControlAdv usage and added complete C#/VB examples to show how to programmatically select a tab in WinForms.
+title: How to Programmatically Select a Tab in TabControl | Syncfusion®
+description: Learn how to programmatically select a tab in Syncfusion Windows Forms TabControl control, its elements and more details.
 platform: windowsforms
 control: TabsPackage
 documentation: ug
 ---
 
-# How to programmatically select a tab?
+# How to Programmatically Select a Tab in TabControl
 
 To programmatically select a specific tab in the `TabControlAdv`, you can use the `SelectedIndex` property or the `SelectedTab` property.
 

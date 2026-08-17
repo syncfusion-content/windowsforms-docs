@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: About Windows Forms Numeric TextBox control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® Windows Forms Numeric TextBox (SfNumericTextBox) control and more details.
+title: About Syncfusion® Windows Forms Numeric TextBox Control | Syncfusion®
+description: Learn here all about introduction of Syncfusion Windows Forms Numeric TextBox (SfNumericTextBox) control and more details.
 platform: windowsforms
 control: SfNumericTextBox
 documentation: ug
 ---
 
-# Windows Forms Numeric TextBox (SfNumericTextBox) Overview
+# About Syncfusion® Windows Forms Numeric TextBox Control.
 
 The **NumericTextBox** control is an advanced text box control that allows you to enter numeric values in a specific format such as numeric, currency, and percent. It also provides support to display value with custom units.
 

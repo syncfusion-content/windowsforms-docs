@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
 title: Getting Started with Windows Forms TabControl | Syncfusion®
-description: Learn here about getting started with Syncfusion® Windows Forms TabControl (TabControlAdv) control, its elements and more details.
+description: Learn here about getting started with Syncfusion Windows Forms TabControl (TabControlAdv) control, its elements and more details.
 platform: windowsforms
-control: TabControlAdv 
+control: TabControlAdv
 documentation: ug
 ---
 
-# Getting Started with Windows Forms TabControl (TabControlAdv)
+# Getting Started with Windows Forms TabControl
 
 ## Assembly deployment
 

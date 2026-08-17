@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Culture Settings in Windows Forms Integer TextBox control | Syncfusion®
-description: Learn about Culture Settings support in Syncfusion® Windows Forms Integer TextBox (Integertextbox) control and more details.
+title: Culture Settings in Windows Forms Integer TextBox | Syncfusion®
+description: Learn about Culture Settings support in Syncfusion Windows Forms Integer TextBox (Integertextbox) control and more details.
 platform: windowsforms
 control: Tools
 documentation: ug
 ---
 
-# Culture Settings in Windows Forms Integer TextBox (Integertextbox)
+# Culture Settings in Windows Forms Integer TextBox
 Users can set the culture of the integer text box control using the [Culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html#Syncfusion_Windows_Forms_Tools_NumberTextBoxBase_Culture), [CurrentCultureRefresh](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html#Syncfusion_Windows_Forms_Tools_NumberTextBoxBase_CurrentCultureRefresh), [SpecialCultureValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html#Syncfusion_Windows_Forms_Tools_NumberTextBoxBase_SpecialCultureValue), and [UseUserOverride](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html#Syncfusion_Windows_Forms_Tools_NumberTextBoxBase_UseUserOverride) properties.
 
 {% tabs %}

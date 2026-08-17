@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: About Windows Forms LayoutManagers control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® Windows Forms LayoutManagers control, its elements and more details.
+title: About Syncfusion® Windows Forms FlowLayout Control | Syncfusion®
+description: Learn here all about introduction of Syncfusion Windows Forms LayoutManagers control, its elements and more details.
 platform: windowsforms
 control: FlowLayout
 documentation: ug
 ---
 
-# Windows Forms FlowLayout Overview
+# About Syncfusion® Windows Forms FlowLayout Control.
 
 The `FlowLayout` is a layout manager. It allows users arrange the child components horizontally or vertically in a specific order based on the settings. FlowLayout is one of the most commonly used layout managers. By deriving from the LayoutManager class, the FlowLayout component is created to support simple horizontal and vertical flows and complex constraint-based FlowLayouts.
 

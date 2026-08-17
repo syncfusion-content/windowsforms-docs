@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Configuring BorderLayout in Windows Forms LayoutManagers | Syncfusion®
-description: Learn about Configuring BorderLayout support in Syncfusion® Windows Forms LayoutManagers control and more details.
+title: Configuring BorderLayout in Windows Forms BorderLayout | Syncfusion®
+description: Learn about Configuring BorderLayout support in Syncfusion Windows Forms LayoutManagers control and more details.
 platform: windowsforms
 control: BorderLayout
 documentation: ug
 ---
 
-# Configuring BorderLayout in Windows Forms LayoutManagers
+# Configuring BorderLayout in Windows Forms BorderLayout
 
 The configuration settings for the BorderLayout control have been given in this section.
 

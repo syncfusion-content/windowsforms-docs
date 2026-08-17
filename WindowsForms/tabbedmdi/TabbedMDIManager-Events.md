@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: TabbedMDIManager Events in Windows Forms TabbedMDI | Syncfusion®
-description: Learn about TabbedMDIManager Events support in Syncfusion® Windows Forms TabbedMDI control and more details.
+description: Learn about TabbedMDIManager Events support in Syncfusion Windows Forms TabbedMDI control and more details.
 platform: windowsforms
 control: TabbedMDIManager 
 documentation: ug

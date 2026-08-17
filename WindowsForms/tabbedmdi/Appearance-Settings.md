@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Appearance Settings in Windows Forms TabbedMDI control | Syncfusion®
-description: Learn about Appearance Settings support in Syncfusion® Windows Forms TabbedMDI control and more details.
+title: Appearance Settings in Windows Forms TabbedMDI | Syncfusion®
+description: Learn about Appearance Settings support in Syncfusion Windows Forms TabbedMDI control and more details.
 platform: windowsforms
 control: TabbedMDIPackage 
 documentation: ug
@@ -104,7 +104,7 @@ Me.tabbedMDIManager1.ThemesEnabled = True
 
 TabbedMDIManager provides complete support for customizing the active and inactive tabs back color, fore color, and font.
 
-#### ActiveTabBackColor
+### ActiveTabBackColor
 
 This option helps to customize the active tab back color.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Windows Forms SfAIAssistView | Syncfusion®
-description: Learn how to get started with the Syncfusion® Windows Forms SfAIAssistView control. Explore setup, features, examples, and customization options.
+title: Getting Started with Windows Forms SfAIAssistView | Syncfusion
+description: Learn how to get started with the Syncfusion Windows Forms SfAIAssistView control. Explore setup, features, examples, and customization options.
 platform: windowsforms
 control: SfAIAssistView
 documentation: ug

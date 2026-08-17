@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Themes in Windows Forms statusbaradvpanel control | Syncfusion
-description: Learn about Themes support in Syncfusion Windows Forms statusbaradvpanel (StatusBarAdvPanel) control and more details.
+title: Themes in Windows Forms StatusBarAdvPanel | Syncfusion®
+description: Themes in Windows Forms StatusBarAdvPanel provide consistent visual styles, helping applications maintain a unified appearance.
 platform: WindowsForms
 control: StatusBarAdvPanel
 documentation: ug
 ---
 
-# Themes in Windows Forms statusbaradvpanel (StatusBarAdvPanel)
+# Themes in Windows Forms StatusBarAdvPanel
 
 The StatusBarAdvPanel control can be provided with a themed look and feel using the properties given below.
 

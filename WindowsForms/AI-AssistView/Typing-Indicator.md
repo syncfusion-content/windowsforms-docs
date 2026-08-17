@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typing Indicator in Windows Forms SfAIAssistView | Syncfusion®
-description: Display a typing indicator while the AI processes or generates a response in the Syncfusion® Windows Forms SfAIAssistView.
+title: Typing Indicator in Windows Forms SfAIAssistView | Syncfusion
+description: Display a typing indicator while the AI processes or generates a response in the Syncfusion Windows Forms SfAIAssistView.
 platform: windowsforms
 control: SfAIAssistView
 documentation: ug

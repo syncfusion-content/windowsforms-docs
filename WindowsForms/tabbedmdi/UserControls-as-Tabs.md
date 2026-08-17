@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: UserControls as Tabs in Windows Forms TabbedMDI control | Syncfusion®
-description: Learn about UserControls as Tabs support in Syncfusion® Windows Forms TabbedMDI control and more details.
+title: UserControls as Tabs in Windows Forms TabbedMDI | Syncfusion®
+description: Learn about UserControls as Tabs support in Syncfusion Windows Forms TabbedMDI control and more details.
 platform: windowsforms
 control: TabbedMDIPackage 
 documentation: ug
