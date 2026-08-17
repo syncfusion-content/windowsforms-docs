@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Section 508 Compliance in Windows Forms | Syncfusion®
-description: Section 508 VPAT documentation for Windows Forms. Review accessibility compliance covering keyboard support, assistive technology, and universal design features.
+description: Section 508 VPAT documentation for Windows Forms. Review accessibility compliance features including keyboard support and assistive technology.
 platform: WindowsForms
 control: General
 documentation: ug
