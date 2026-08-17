@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Restrict transition | WindowsForms | Syncfusion
-description: how to restrict slideontop collapse transition for left position?
+title: How to Restrict Collapse in NavigationDrawer | Syncfusion
+description: Restrict the SlideOnTop collapse transition in Syncfusion® Windows Forms Navigation Drawer control for the left position using events and more.
 platform: WindowsForms
 control: Frequently Asked Questions
 documentation: ug
 ---
 
-# How to restrict SlideOnTop collapse transition for left position?
+# How to Restrict SlideOnTop Collapse in WinForms NavigationDrawer
 
 This requirement can be achieved by handling the Closing Event.
 
