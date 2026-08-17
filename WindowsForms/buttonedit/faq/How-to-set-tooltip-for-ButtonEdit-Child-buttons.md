@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Set tooltip for ButtonEdit Child buttons | WindowsForms | Syncfusion®
-description: This section gives detailed description on how to set tooltip for ButtonEditChildButton in ButtonEdit control.
+title: How to Set Tooltips for Child Buttons in ButtonEdit | Syncfusion
+description: Set tooltips for child buttons in Syncfusion® Windows Forms ButtonEdit control, its tooltip customization options, and more.
 platform: windowsforms
 control: Tools
 documentation: ug
 ---
 
-# How to Set Tooltip for ButtonEdit Child Buttons
+# How to Set Tooltips for Child Buttons in Windows Forms ButtonEdit
 
  To set tooltip for a child button in a [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control, drag and drop a [SfToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.SfToolTip.html) control from the toolbox. Text for tooltip is set using the extender property of the particular child button in Properties window.
 
