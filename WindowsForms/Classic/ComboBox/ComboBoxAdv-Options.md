@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Options in Windows Forms ComboBoxAdv(Classic) | Syncfusion®
-description: Configure options in the Windows Forms ComboBoxAdv(Classic) control to customize behavior, appearance, and user interactions.
+title: TextBox and DropDown Settings in ComboBoxAdv(Classic) | Syncfusion®
+description: TextBox and DropDown settings in Windows Forms ComboBoxAdv(Classic) to control appearance, behavior, text editing, and user interactions.
 platform: WindowsForms
 control: ComboBoxAdv
 documentation: ug
 ---
 
-# Options in Windows Forms ComboBoxAdv(Classic)
+# TextBox and DropDown settings in Windows Forms ComboBoxAdv(Classic)
 
 ComboBoxAdv control has a textbox, that is the edit portion of the control, and a dropdown.
 
