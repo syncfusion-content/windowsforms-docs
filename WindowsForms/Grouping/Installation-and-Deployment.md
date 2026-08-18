@@ -50,7 +50,7 @@ To view the samples:
 
 2. Select Reporting Edition.
 
-   ![The Reporting Edition option is selected in the Syncfusion Essential Studio Dashboard.](Installation-and-Deployment_images/Installation-and-Deployment_img2.png)
+   ![The Reporting Edition option is selected in the Syncfusion Essential Studio Dashboard](Installation-and-Deployment_images/Installation-and-Deployment_img2.png)
 
 The steps to view the Grouping samples in various platforms are discussed below:
 
