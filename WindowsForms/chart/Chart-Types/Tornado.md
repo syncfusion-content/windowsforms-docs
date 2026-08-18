@@ -16,7 +16,7 @@ The following feature is supported in the Tornado chart:
 * **Chart Axis Labels**: The axis labels of a chart can be set by handling the `ChartFormatAxisLabel` event.
 
 N>
-chart details for tornado chart.
+Chart details for tornado chart.
 * Number of Y values per point - 2.
 * Number of Series - One or more.
 * Cannot be combined with - Pie, Bar, Polar, Radar.

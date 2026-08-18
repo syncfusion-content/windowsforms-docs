@@ -22,7 +22,7 @@ You can also customize the following features for area charts:
 An Area Chart connects data points with straight lines, creating a shaded region between the lines and the x-axis. Alpha-blending allows multiple series to be plotted on a single chart while keeping overlapping areas clearly visible.
 
 N>
-chart details for area chart.
+Chart details for area chart.
 * Number of Y values per point - 1.
 * Number of Series - One or More.
 * Cannot be combined with - Pie, Bar, Polar, Radar, Gantt, Stacked Bar.
@@ -61,7 +61,7 @@ chartControl.Series.Add(firstServer)
 A Spline Area Chart connects data points with smooth spline curves, filling the enclosed area with a specified interior brush. Multiple series can be plotted using alpha-blending to ensure visibility of overlapping areas.
 
 N>
-chart details for spline area chart.
+Chart details for spline area chart.
 * Number of Y values per point - 1.
 * Number of Series - One or More.
 * Cannot be Combined with - Pie, Bar, Polar, Radar, Stacked Bar.
@@ -100,7 +100,7 @@ chartControl.Series.Add(firstServer)
 Stacking Area Charts are similar to standard area charts, but the Y-values of each series are stacked on top of one another in a specified order. This makes it easier to visualize the relationship between individual parts and the total sum.
 
 N>
-chart details for stacking area chart.
+Chart details for stacking area chart.
 * Number of Y values per point - 1.
 * Number of Series - One or More.
 * Cannot be combined with - Pie, Bar, Polar, Radar, Stacked Bar.
@@ -158,7 +158,7 @@ chartControl.Series.Add(secondServer)
 This chart type displays multiple data series as stacked areas, ensuring the cumulative proportion of each element always totals 100%. Consequently, the y-axis is always rendered within the 0 to 100 range.
 
 N>
-chart details for stacking area100 chart.
+Chart details for stacking area100 chart.
 * Number of Y values per point - 1.
 * Number of Series - One.
 * SupportMarker - No.
@@ -234,7 +234,7 @@ chartControl.Series.Add(thirdServer)
 Step Area Chart is similar to a standard area chart, but instead of connecting data points with straight lines, it uses horizontal and vertical lines to create a step-like pattern between values.
 
 N>
-chart details for step area chart.
+Chart details for step area chart.
 * Number of Y values per point - 1.
 * Number of Series - One or More.
 * Cannot be combined with - Pie, Bar, Polar, Radar, Stacked Bar.

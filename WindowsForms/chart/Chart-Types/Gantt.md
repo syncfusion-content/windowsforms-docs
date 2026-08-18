@@ -18,7 +18,7 @@ The following features are supported in the Gantt chart:
 * **Chart Strip Lines**: Strip lines are used to highlight the weekends on a calendar.
 
 N>
-chart details for gantt chart.
+Chart details for gantt chart.
 * Number of Y values per point - 2 (1st is beginning value and the 2nd is the ending value).
 * Number of Series - One or More.
 * Cannot be combined with - Pie, Bar, Polar, Radar.

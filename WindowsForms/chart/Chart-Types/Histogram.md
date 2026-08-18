@@ -16,7 +16,7 @@ The following feature is supported in the Histogram chart:
 * **Chart 3-D Mode**: A histogram chart can be rendered in 3-D mode by enabling the [Series3D](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Series3D) property.
 
 N>
-chart details for histogram chart.
+Chart details for histogram chart.
 * Number of Y values per point - 1.
 * Number of Series - One or more.
 * Cannot be combined with - Pie, Bar, Polar, Radar.

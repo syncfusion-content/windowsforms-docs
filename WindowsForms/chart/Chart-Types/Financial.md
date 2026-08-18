@@ -18,7 +18,11 @@ The following features are supported in the Financial charts:
 
 ## Box And Whisker Chart
 
-Box and Whisker Chart is a statistical chart used to summarize and visualize the distribution of a dataset. It displays key measures such as the minimum, maximum, median, and quartiles, helping to identify data spread, variability, skewness, and potential outliers.
+In 1977, John Tukey introduced the Box and Whisker plot (BoxPlot) to display a five-number data summary:
+
+* Median
+* Upper and lower quartiles (75th and 25th percentiles)
+* Minimum and maximum data values
 
 {% tabs %}
 {% highlight c# %}
@@ -75,6 +79,12 @@ chartControl.Series.Add(profitSeries)
 ## Candle Chart
 A Candle chart displays stock information using the `High`, `Low`, `Open` and `Close` values. The Hi and Lo values are represented by the wick of a candle. The candle represents open and close values.
 
+n>
+Chart details for candle chart.
+* Number of Y values per point - 4 (High, Low, Open and Close respectively).
+* Number of Series - One or More.
+* Cannot be combined with - Pie, Bar, Polar, Radar, Stacked Bar.
+
 {% tabs %}
 {% highlight c# %}
 
@@ -110,6 +120,12 @@ chartControl.Series.Add(series)
 ## HiLo Chart
 
 HiLo Chart is a financial chart commonly used to display the trading range of a stock or other data over a period. It uses two Y-values `High` and `Low` to represent the maximum and minimum values, making it easy to visualize value ranges and fluctuations.
+
+N>
+Chart details for HiLo chart.
+Number of Y values per point - 2.
+* Number of Series - One or More.
+* Cannot be combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 {% tabs %}
 {% highlight c# %}
@@ -176,6 +192,12 @@ profit.Style.Border.Width = 3
 ## HiLo Open Close Chart
 
 HiLo open close chart is a financial chart commonly used in stock market analysis. It requires four Y-values for each data point `High`, `Low`, `Open`, and `Close` to represent a stock's price movement during a specific period, providing a clear view of trading activity and market trends.
+
+N>
+Chart details for area chart.
+* Number of Y values per point - 4.
+* Number of Series - One or More.
+* Cannot be combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 {% tabs %}
 {% highlight c# %}
@@ -271,6 +293,40 @@ Point and figure Chart is a financial chart used to identify price trends, suppo
 {% tabs %}
 {% highlight c# %}
 
+double[] points = {   35.250,37.750,39.000,38.275,37.750,37.750,37.275,36.250,35.750,35.250,36.250,35.250,34.500,
+                                35.625,35.500,36.625,36.275,36.250,36.875,37.250,36.875,36.500,37.125,36.275,35.875,36.625,
+                                27.125,26.250,27.000,27.250,37.500,38.500,39.500,38.875,38.500,39.000,38.500,28.500,29.000,
+                                29.000,40.000,29.875,29.875,28.875,28.500,28.250,28.875,29.275,29.275,29.750,29.500,29.275,
+                                28.500,27.750,27.625,27.500,26.500,25.000,26.625,26.000,25.875,25.000,25.250,25.125,25.050};
+
+double[] points1 = {   25,27.500,28.750,28.025,27.500,27.500,27.025,26.250,35.750,35.250,36.250,35.250,34.500,
+                                25.625,25.500,26.625,26.275,26.250,26.875,27.250,26.875,26.500,27.125,26.275,25.875,26.625,
+                                27.125,26.250,27.000,27.250,27.500,38.500,39.500,38.875,38.500,39.000,28.500,28.500,29.000,
+                                29.000,40.000,29.875,29.875,28.875,28.500,28.250,28.875,29.275,29.275,29.750,29.500,29.275,
+                                28.500,27.750,27.625,27.500,26.500,25.000,26.625,26.000,25.875,25.000,25.250,25.125,25.050};
+
+
+DateTime current = new DateTime(2026, 01, 1);
+int numPoints1 = points.Length;
+
+ChartSeries series = new ChartSeries("Series 1");
+for (int j = 0; j < numPoints1; j++)
+{
+    series.Points.Add(current.AddDays(j), new double[] { points[j], points1[j] });
+}
+
+series.Type = ChartSeriesType.PointAndFigure;
+series.Text = series.Name;
+series.ReversalAmount = 0.0;
+
+
+chartControl.Series.Add(series);
+
+chartControl.PrimaryXAxis.ValueType = ChartValueType.DateTime;
+chartControl.PrimaryXAxis.RangeType = ChartAxisRangeType.Set;
+chartControl.PrimaryXAxis.DateTimeRange = new ChartDateTimeRange(current, current.AddDays(30), 10, ChartDateTimeIntervalType.Days);
+chartControl.PrimaryXAxis.DateTimeFormat = "MMM/dd";
+
 {% endhighlight %}
 {% highlight vb %}
 
@@ -285,6 +341,30 @@ Point and figure Chart is a financial chart used to identify price trends, suppo
 {% tabs %}
 {% highlight c# %}
 
+double[] points5 = {   25.250,27.750,29.000,28.275,27.750,27.750,27.275,26.250,25.750,25.250,26.250,25.250,24.500,
+                            25.625,25.500,26.625,26.275,26.250,26.875,27.250,26.875,26.500,27.125,26.275,25.875,26.625,
+                            27.125,26.250,27.000,27.250,27.500,28.500,29.500,28.875,28.500,29.000,28.500,28.500,29.000,
+                            29.000,40.000,29.875,29.875,28.875,28.500,28.250,28.875,29.275,29.275,29.750,29.500,29.275,
+                            28.500,27.750,27.625,27.500,26.500,25.000,26.625,26.000,25.875,25.000,25.250,25.125,25.050};
+
+DateTime date5 = new DateTime(2004, 1, 1);
+
+ChartSeries series11 = new ChartSeries("Series");
+
+for (int day = 0; day < points5.Length; day++)
+{
+    series11.Points.Add(date5.AddDays(day), points5[day]);
+}
+
+series11.Type = ChartSeriesType.Renko;
+series11.ReversalAmount = 1;
+chartControl.Series.Add(series11);
+
+chartControl.PrimaryXAxis.ValueType = ChartValueType.DateTime;
+chartControl.PrimaryXAxis.DateTimeFormat = "MMM/dd";
+chartControl.PrimaryXAxis.DateTimeRange = new ChartDateTimeRange(date5, date5.AddDays(60), 10, ChartDateTimeIntervalType.Days);
+chartControl.PrimaryYAxis.Format = "$ #";
+
 {% endhighlight %}
 {% highlight vb %}
 
@@ -298,6 +378,31 @@ Point and figure Chart is a financial chart used to identify price trends, suppo
 
 {% tabs %}
 {% highlight c# %}
+
+double[] points6 = {   25.250,27.750,29.000,28.275,27.750,27.750,27.275,26.250,25.750,25.250,26.250,25.250,24.500,
+                              25.625,25.500,26.625,26.275,26.250,26.875,27.250,26.875,26.500,27.125,26.275,25.875,26.625,
+                              27.125,26.250,27.000,27.250,27.500,28.500,29.500,28.875,28.500,29.000,28.500,28.500,29.000,
+                              29.000,40.000,29.875,29.875,28.875,28.500,28.250,28.875,29.275,29.275,29.750,29.500,29.275,
+                              28.500,27.750,27.625,27.500,26.500,25.000,26.625,26.000,25.875,25.000,25.250,25.125,25.050};
+
+DateTime dates = new DateTime(2026,9,4).AddDays(-points6.Length);
+
+ChartSeries series8 = new ChartSeries("Series");
+
+for (int day = 0; day < points6.Length; day++)
+{
+    series8.Points.Add(dates.AddDays(day), points6[day]);
+}
+
+series8.Type = ChartSeriesType.ThreeLineBreak;
+series8.ReversalAmount = 3.0;
+
+chartControl.Text = "Three Line Break Chart";
+chartControl.PrimaryYAxis.Format = "$ #";
+chartControl.PrimaryXAxis.ValueType = ChartValueType.DateTime;
+chartControl.PrimaryXAxis.DateTimeRange = new ChartDateTimeRange(dates, dates.AddDays(60), 10, ChartDateTimeIntervalType.Days);
+chartControl.PrimaryXAxis.DateTimeFormat = "MMM/dd";
+chartControl.Series.Add(series8);
 
 {% endhighlight %}
 {% highlight vb %}

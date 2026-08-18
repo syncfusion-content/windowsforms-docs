@@ -26,7 +26,7 @@ You can also customize the following features for column charts:
 A chart that uses vertical bars (columns) to compare values across different categories or to show changes in data over time. It is useful for comparing counts, totals, averages, or frequencies between groups. The following code shows how to define a column chart in ChartControl.
 
 N>
-chart details for column chart.
+Chart details for column chart.
 * Number of Y values per point - 1.
 * Number of Series - One or More.
 * Cannot be combined with - Pie, Bar, Stacked Bar, Polar, Radar.

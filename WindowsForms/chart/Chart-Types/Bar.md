@@ -21,7 +21,7 @@ You can also customize the following features for line charts:
 Bar chart display data with horizontal bars to compare values across categories. They support multiple series and can be shown with a 3D visual effect. The following code shows how to define a bar chart in ChartControl.
 
 N>
-chart details for bar chart.
+Chart details for bar chart.
 * Number of Y values per point - 1.
 * Number of Series - One or More.
 * Cannot be combined with - Any chart type except Bar and Stacked Bar charts.
@@ -77,7 +77,7 @@ chartControl.Series.Add(secondServer)
 Stacking bar chart are similar to regular bar chart, but the Y values are stacked on top of each other in the specified series order. This helps visualize the relationship of parts to a whole. The following code shows how to define a stacking bar chart in ChartControl.
 
 N>
-chart details for stacking bar chart.
+Chart details for stacking bar chart.
 * Number of Y values per point - 1.
 * Number of Series - Two or More (Single series is rendered just as a bar).
 * Cannot be Combined with - Any chart type except Bar and Stacked Bar charts.
@@ -133,7 +133,7 @@ chartControl.Series.Add(secondServer)
 This chart type displays multiple series of data as stacked Bars ensuring that the cumulative proportion of each stacked element always totals 100%. The y-axis will hence always be rendered with the range 0 - 100. The following code shows how to define a stacking bar100 chart in ChartControl.
 
 N>
-chart details for stacking bar100 chart.
+Chart details for stacking bar100 chart.
 * Number of Y values per point - 1.
 * Number of Series - Two or More.
 * MarkerSupport - No.
