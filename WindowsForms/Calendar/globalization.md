@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Globalization in Windows Forms Calendar control | Syncfusion
-description: Learn about Globalization support in Syncfusion Windows Forms Calendar (SfCalendar) control and more details.
+title: Globalization in Windows Forms Calendar | Syncfusion
+description: Learn about globalization and localization support in Windows Forms Calendar control for multiple cultures.
 platform: WindowsForms
 control: SfCalendar
 documentation: ug
 ---
 
-# Globalization in Windows Forms Calendar (SfCalendar)
+# Globalization in Windows Forms Calendar
 
 The `SfCalendar` control provides globalization support to design and develop a world-ready application that supports localized interfaces and regional data for users in multiple cultures. Before beginning the design phase, determine the cultures that your application supports.
 
