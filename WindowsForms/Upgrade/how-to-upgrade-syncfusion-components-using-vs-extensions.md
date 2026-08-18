@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Upgrading Syncfusion WinForms components to the latest version
-description: Learn here about the how upgrade Syncfusion WinForms components to a latest version from NuGet manager and migrate.
+title: How to upgrade Syncfusion® WinForms components | Syncfusion®
+description: Learn how to upgrade Syncfusion® WinForms components to the latest version using Visual Studio extensions.
 platform: WindowsForms
 control: Essential Studio
 documentation: ug
 ---
 
-# Upgrading Syncfusion Windows Forms components to the latest version
+# How to upgrade Syncfusion® Windows Forms components
 
 Syncfusion publishes the Visual Studio extension in the [Visual Studio marketplace](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.Windows-Extensions) for every Syncfusion Volume release, with exciting new features, and a Service Pack release with major bug fixes in the volume release.
 

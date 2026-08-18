@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion Item Template | WinForms | Syncfusion
-description: Syncfusion Item Templates provide predefined forms with Syncfusion components to add to Windows Forms applications.
+title: Item Template in Windows Forms | Syncfusion®
+description: Syncfusion® Item Templates provide predefined forms with Syncfusion® components to seamlessly add to your Windows Forms applications.
 platform: windowsforms
 control: Syncfusion Extensions
 documentation: ug
 ---
 
-# Add Syncfusion® components to the WinForms Application
+# Item Template in Windows Forms
 
 Syncfusion<sup>®</sup> offers robust support for Visual Studio Item Templates that enable seamless integration of Syncfusion<sup>®</sup> WinForms components and preconfigured forms into your WinForms application. These templates include all necessary Syncfusion<sup>®</sup> WinForms libraries, ensuring a smooth development experience.
 

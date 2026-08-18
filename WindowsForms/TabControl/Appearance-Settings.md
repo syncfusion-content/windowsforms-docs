@@ -1,13 +1,13 @@
 ﻿---
 layout: post
-title: Appearance Settings in Windows Forms TabControl | Syncfusion®
-description: Learn about Appearance Settings support in Syncfusion Windows Forms TabControl (TabControlAdv) control and more details.
+title: Appearance Settings in Windows Forms TabControlAdv | Syncfusion®
+description: Learn about Appearance Settings support in Syncfusion Windows Forms TabControlAdv control and more details.
 platform: windowsforms
 control: TabControlAdv
 documentation: ug
 ---
 
-# Appearance Settings in Windows Forms TabControl
+# Appearance Settings in Windows Forms TabControlAdv
 
 The various appearance settings for [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) are discussed in this section. 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started With Windows Forms Theme Studio | Syncfusion®
-description: Learn here about getting started with Syncfusion® Windows Forms Theme Studio, its elements, and more.
+title: Getting Started with Windows Forms Theme Studio | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms Theme Studio. Explore setup, features, examples, and customization options.
 platform: windowsforms
 control: ThemeStudio
 documentation: ug
 ---
 
-# Getting Started With Windows Forms Theme Studio
+# Getting Started with Windows Forms Theme Studio
 
 Theme Studio for WinForms can be used to create and apply a new theme for Syncfusion<sup>®</sup> controls from an existing theme. The primary goal here is to deliver appearance-rich Syncfusion<sup>®</sup> controls that best suit every user application, based on the application's needs.
 

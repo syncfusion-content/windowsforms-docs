@@ -1,13 +1,13 @@
 ﻿---
 layout: post
-title: Tab Navigation in Windows Forms TabControl | Syncfusion®
-description: Learn about Tab Navigation support in Syncfusion Windows Forms TabControl (TabControlAdv) control and more details.
+title: Tab Navigation in Windows Forms TabControlAdv | Syncfusion®
+description: Learn about Tab Navigation support in Syncfusion Windows Forms TabControlAdv control and more details.
 platform: windowsforms
 control: TabControlAdv
 documentation: ug
 ---
 
-# Tab Navigation in Windows Forms TabControl
+# Tab Navigation in Windows Forms TabControlAdv
 
 [TabPrimitives](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabPrimitivesCollection.html) is a collection of NavigationControls used to navigate through the [TabPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_TabPages) of the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html). 
 

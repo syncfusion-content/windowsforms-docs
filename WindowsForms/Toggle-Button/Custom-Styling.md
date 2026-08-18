@@ -1,13 +1,13 @@
 ﻿---
 layout: post
-title: Custom Styling in Windows Forms Toggle Button | Syncfusion®
-description: Learn about Custom Styling support in Syncfusion Windows Forms Toggle Button control and more details.
+title: Custom Styling in Windows Forms ToggleButton | Syncfusion®
+description: Learn about Custom Styling support in Syncfusion Windows Forms ToggleButton control and more details.
 platform: windowsforms
 control: ToggleButton 
 documentation: ug
 ---
 
-# Custom Styling in Windows Forms Toggle Button
+# Custom Styling in Windows Forms ToggleButton
 
 The appearance of the Toggle Button is customized by using the IToggleButtonRenderer. This interface provides few methods to control painting borders, arrow, and so on. 
 
