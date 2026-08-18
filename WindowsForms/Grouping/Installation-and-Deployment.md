@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Installation-and-Deployment | WindowsForms | Syncfusion®
-description: installation and deployment
+title: Installation and Deployment for Windows Forms Grouping | Syncfusion®
+description: Explore installation, deployment requirements, sample browsing, source code locations, licensing details, and assembly dependencies in Windows Forms Grouping.
 platform: WindowsForms
 control: Grouping
 documentation: ug
 ---
 
-# Installation and Deployment
+# Installation and Deployment in Windows Forms Grouping
 
 This section covers information on the install location, samples, licensing, patches update and updation of the recent version of Essential Studio<sup>®</sup>. It comprises the following subsections:
 
@@ -46,11 +46,11 @@ To view the samples:
 
    The UI Edition samples are displayed by default.
 
-   ![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)
+   ![Syncfusion Essential Studio Dashboard showing UI Edition samples](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)
 
 2. Select Reporting Edition.
 
-   ![](Installation-and-Deployment_images/Installation-and-Deployment_img2.png)
+   ![The Reporting Edition option is selected in the Syncfusion Essential Studio Dashboard](Installation-and-Deployment_images/Installation-and-Deployment_img2.png)
 
 The steps to view the Grouping samples in various platforms are discussed below:
 
@@ -68,7 +68,7 @@ The steps to view the Grouping samples in various platforms are discussed below:
 
 
 
-   ![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)
+   ![Syncfusion Essential Studio Dashboard showing Samples Navigation](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)
 
 
 
@@ -76,7 +76,7 @@ The steps to view the Grouping samples in various platforms are discussed below:
 
 
 
-   ![](Installation-and-Deployment_images/Installation-and-Deployment_img5.png)
+   ![Syncfusion Essential Studio Dashboard Grouping Samples in Windows](Installation-and-Deployment_images/Installation-and-Deployment_img5.png)
 
 3. Select any sample and browse through the features.
 
@@ -90,7 +90,7 @@ The steps to view the Grouping samples in various platforms are discussed below:
  
    N> You can view the samples in any of the three ways displayed:
 
-   ![](Installation-and-Deployment_images/Installation-and-Deployment_img7.png)
+   ![ASP.NET Sample Browser window](Installation-and-Deployment_images/Installation-and-Deployment_img7.png)
 
 
 
@@ -98,7 +98,7 @@ The steps to view the Grouping samples in various platforms are discussed below:
 
 
 
-   ![](Installation-and-Deployment_images/Installation-and-Deployment_img8.png)
+   ![Syncfusion Essential Studio Dashboard Grouping Samples in ASP.Net](Installation-and-Deployment_images/Installation-and-Deployment_img8.png)
 
 
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: How to Add Custom Calculations to Expression Fields | WindowsForms | Syncfusion
-description: How to Add Custom Calculations to Expression Fields
+title: How to Add Custom Calculations in Windows Forms Grouping | Syncfusion®
+description: Add custom calculations to expression fields in Syncfusion® Windows Forms Grouping control by registering custom functions and implementing calculation logic.
 platform: WindowsForms
 control: Grouping
 documentation: ug
 ---
-# How to Add Custom Calculations to Expression Fields
+# How to Add Custom Calculations in Windows Forms Grouping
 
 Essential Grouping lets you add your own functions to a function library which can be used in an expression field. In this manner, you can do custom calculations in expressions. This is a two-step process which is given below:
 1. Register the function name and a delegate with the grouping engine.

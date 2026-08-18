@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion® Windows Forms SfDataGrid Control| Syncfusion®
 canonical_url: "https://www.syncfusion.com/winforms-ui-controls/datagrid"
-description: Learn about the overview of Syncfusion® Windows Forms SfDataGrid Control, including data binding, selection, editing, and other key features.
+description: Learn about the overview of Syncfusion® Essential Studio Windows Forms SfDataGrid Control, its features and more details.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
