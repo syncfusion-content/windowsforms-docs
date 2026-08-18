@@ -13,17 +13,17 @@ If the Grid is performing a time-consuming task, BeginUpdate() and EndUpdate() m
 
 The problem arises when users try to dispatch windows messages to the controls (triggering the Application.DoEvents) inside BeginUpdate() and EndUpdate() methods.
 
-## Root Cause:
+### Root Cause:
 
 The root cause of the problem is that the usage of Application.DoEvents will ask WM_PAINT messages of Grid to execute, but WM_PAINT messages will be ignored since the grid is in an updating state (the WM_PAINT message will be processed by the Grid only when the EndUpdate is called). Hence the above makes an Infinite loop execution, meaning the loop will never be returned from WM_PAINT.
 
 The above problem can be resolved in the following two ways:
 
-### Solution 1:
+#### Solution 1:
 
 If the usage of Application.DoEvents is mandatory, then the simplest way to get rid of this problem is by calling the grid.CancelUpdate before triggering Application.DoEvents. After that, the grid can be updated with the call to Grid.BeginUpdate.
 
-### Solution 2:
+#### Solution 2:
 
 Add a public static member to the class where Application.DoEvents is to be used. Then override the Grid's WndProc method and process WM_PAINT if the DoEvents loop is triggered.
 

@@ -7,7 +7,7 @@ control: Grid Control
 documentation: ug
 ---
 
-# Microsoft Excel Like Features in Windows Forms Grid Control
+# MS Excel Like Features in Windows Forms Grid Control
 The [Windows Forms Grid](https://www.syncfusion.com/winforms-ui-controls/grid-control) Control provides some of the functionalities of Microsoft Excel as the features. This section will walk through the implementation of these features. 
 
 ## Excel Like Selection Frame

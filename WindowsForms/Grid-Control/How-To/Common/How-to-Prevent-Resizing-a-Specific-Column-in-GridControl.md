@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Prevent Resizing a Specific Column in Windows Forms GridControl
 
-## Introduction
+### Introduction
 
 Handle ResizingColumns event and cancel the resizing for specific columns.
 

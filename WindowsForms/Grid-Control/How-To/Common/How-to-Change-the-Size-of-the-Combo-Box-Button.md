@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Change Size of the ComboBox Button in Windows Forms GridControl
 
-## Introduction
+### Introduction
 
 Change the size of the combobox button by changing the ButtonBarSize in the CellModel for the control. 
 
