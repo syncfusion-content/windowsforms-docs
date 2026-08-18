@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # TabBarSplitterControl in Windows Forms Grid Control
-User can create TabBar Pages with dynamic splitters by using [TabBarSplitterControl](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarSplitterControl.html). When used with a GridControl, it gives a workbook like appearance. User can add more than one [TabBarPage](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarPage.html) and GridControl can be added in each page. This control is helpful when GridControl with formula cells and [Cross-Reference](http://help.syncfusion.com/windowsforms/grid/formula-support#named-ranges) sheets are used. The TabBarSplitterControl comes under the library [Syncfusion.Shared.Base](http://help.syncfusion.com/cr/windowsforms/) assembly.
+User can create TabBar Pages with dynamic splitters by using [TabBarSplitterControl](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarSplitterControl.html). When used with a GridControl, it gives a workbook like appearance. User can add more than one [TabBarPage](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarPage.html) and GridControl can be added in each page. This control is helpful when GridControl with formula cells and [Cross-Reference](http://help.syncfusion.com/windowsforms/grid/formula-support#named-ranges) sheets are used. The TabBarSplitterControl comes under the library [Syncfusion.Shared.Base](http://help.syncfusion.com/cr/windowsforms) assembly.
 
 ## Adding via Designer
 
@@ -165,7 +165,7 @@ tabBarSplitterControl1.Style = TabBarSplitterStyle.Metro
 
 This option helps to set the Office2016Colorful style.
 
-#####  Code Sample
+### Code Sample
 
 {% tabs %}
 
@@ -193,7 +193,7 @@ Me.tabBarSplitterControl1.Style = Syncfusion.Windows.Forms.TabBarSplitterStyle.O
 
 This option helps to set the Office2016White style.
 
-#####  Code Sample
+### Code Sample
 
 {% tabs %}
 
@@ -221,7 +221,7 @@ Me.tabBarSplitterControl1.Style = Syncfusion.Windows.Forms.TabBarSplitterStyle.O
 
 This option helps to set the Office2016DarkGray style.
 
-#####  Code Sample
+### Code Sample
 
 {% tabs %}
 
@@ -249,7 +249,7 @@ Me.tabBarSplitterControl1.Style = Syncfusion.Windows.Forms.TabBarSplitterStyle.O
 
 This option helps to set the Office2016Black style.
 
-#####  Code Sample
+### Code Sample
 
 {% tabs %}
 
@@ -273,7 +273,7 @@ Me.tabBarSplitterControl1.Style = Syncfusion.Windows.Forms.TabBarSplitterStyle.O
 
 ![TabBarSplitterControl_img15](TabBarSplitterControl_images/TabBarSplitterControl_img15.png)
 
-##Custom Styles
+## Custom Styles
 
 It is possible to apply custom color to the TabBarSplitterControl by setting `Office2007ColorScheme` property as `Managed`. The desired color can be chosen by using the [ApplyManagedColors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Colors.html#Syncfusion_Windows_Forms_Office2007Colors_ApplyManagedColors_System_Windows_Forms_Form_System_Drawing_Color_) method.
 

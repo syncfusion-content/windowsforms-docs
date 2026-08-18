@@ -815,7 +815,7 @@ CHITEST(actual_range, expected_range)
 
 ### CHOOSE
 The `CHOOSE` function returns the value from a range of values on a specific index.
-##### Syntax:
+#### Syntax:
 CHOOSE(index, value array)
 
 #### Where:

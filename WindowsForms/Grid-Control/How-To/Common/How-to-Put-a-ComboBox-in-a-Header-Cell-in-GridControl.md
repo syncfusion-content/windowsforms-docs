@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Put a ComboBox in a Header Cell in Windows Forms GridControl
 
-### Introduction
+## Introduction
 
 ### GridControl
 

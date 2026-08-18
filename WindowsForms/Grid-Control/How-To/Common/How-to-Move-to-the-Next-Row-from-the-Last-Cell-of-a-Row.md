@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Move to the Next Row in Windows Forms GridControl
 
-### Introduction
+## Introduction
 
 Set the WrapCellBehavior property to wrap a row when the Tab or Enter key is pressed.
 

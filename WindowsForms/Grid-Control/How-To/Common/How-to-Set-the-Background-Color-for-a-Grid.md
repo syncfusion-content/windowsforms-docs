@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Set Background Color for a Grid in Windows Forms GridControl
 
-### Introduction
+## Introduction
 
 To set the BackColor for the area of the grid populated by cells, you must set the grid.BackColor property to the color. The grid display may also have regions where there are no cells. These regions will be the grid's client area where there are no cells or scrollbars. 
 

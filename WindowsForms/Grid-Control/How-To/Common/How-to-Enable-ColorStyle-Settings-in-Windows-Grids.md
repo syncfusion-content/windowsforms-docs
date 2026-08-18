@@ -37,7 +37,7 @@ Get or set the value.</td><td>
 Boolean </td></tr>
 </table>
 
-#### Sample Link
+## Sample Link
 
 _{Installed Path}\Syncfusion\EssentialStudio\{Version}\Windows\Grid.Grouping.Windows\Samples\2.0\ Styling and Formatting\Skin Customization Demo\_
 

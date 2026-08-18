@@ -35,7 +35,7 @@ ShowRowHeaders</td><td>
 Specifies whether row headers have to be shown. </td><td>
 GridControl</td><td>
 Boolean  </td><td>
-<a href="/windowsforms/grid/how-to/common/show-or-hide-header">Show or Hider Header</a>
+<a href="/windowsforms/grid/how-to/common/show-or-hide-header" aria-label="Show or Hider Header">Show or Hider Header</a>
 </td></tr>
 <tr>
 <td>
@@ -43,7 +43,7 @@ DisplayHorizontalLines</td><td>
 Specifies whether horizontal lines have to be displayed. </td><td>
 GridControl</td><td>
 Boolean  </td><td>
-<a href="/windowsforms/grid/how-to/common/customize-appearance">Customize the Appearance</a>
+<a href="/windowsforms/grid/how-to/common/customize-appearance" aria-label="Apperance Customiation">Customize the Appearance</a>
 </td></tr>
 <tr>
 <td>
@@ -51,21 +51,21 @@ DisplayVerticalLines</td><td>
 Specifies whether vertical lines have to be displayed. </td><td>
 GridControl</td><td>
 Boolean  </td><td>
-<a href="/windowsforms/grid/how-to/common/customize-appearance">Customize the Appearance</a></td></tr>
+<a href="/windowsforms/grid/how-to/common/customize-appearance" aria-label="Apperance Customiation">Customize the Appearance</a></td></tr>
 <tr>
 <td>
 GridLineColor</td><td>
 Specifies the grid line color.</td><td>
 GridControl</td><td>
 Boolean  </td><td>
-<a href="/windowsforms/grid/how-to/common/customize-appearance">Customize the Appearance</a></td></tr>
+<a href="/windowsforms/grid/how-to/common/customize-appearance" aria-label="Apperance Customiation">Customize the Appearance</a></td></tr>
 <tr>
 <td>
 PrintColumnHeader</td><td>
 Specifies whether column header has to be printed. </td><td>
 GridControl</td><td>
 Boolean  </td><td>
-<a href="/windowsforms/grid/how-to/printing/printing-options">Printing Options</a>
+<a href="/windowsforms/grid/how-to/printing/printing-options" aria-label="Printing Options">Printing Options</a>
 </td></tr>
 <tr>
 <td>
@@ -73,21 +73,21 @@ PrintHorizontalLines</td><td>
 Specifies whether horizontal lines have to be printed.</td><td>
 GridControl</td><td>
 Boolean  </td><td>
-<a href="/windowsforms/grid/how-to/printing/printing-options">Printing Options</a></td></tr>
+<a href="/windowsforms/grid/how-to/printing/printing-options" aria-label="Printing Options">Printing Options</a></td></tr>
 <tr>
 <td>
 PrintRowHeader</td><td>
 Specifies whether row header has to be printed.</td><td>
 GridControl</td><td>
 Boolean  </td><td>
-<a href="/windowsforms/grid/how-to/printing/printing-options">Printing Options</a></td></tr>
+<a href="/windowsforms/grid/how-to/printing/printing-options" aria-label="Printing Options">Printing Options</a></td></tr>
 <tr>
 <td>
 PrintVerticalLines</td><td>
 Specifies whether vertical lines have to be printed.</td><td>
 GridControl</td><td>
 Boolean  </td><td>
-<a href="/windowsforms/grid/how-to/printing/printing-options">Printing Options</a></td></tr>
+<a href="/windowsforms/grid/how-to/printing/printing-options" aria-label="Printing Options">Printing Options</a></td></tr>
 </table>
 
 
@@ -107,7 +107,7 @@ ActivateCurrentCellBehavior</td><td>
 Used to set CurrentCell behavior </td><td>
 GridControl</td><td>
 Enum</td><td>
-<a href="/windowsforms/grid/how-to/common/grid-model-options">Grid Model Options</a>
+<a href="/windowsforms/grid/how-to/common/grid-model-options" aria-label="Grid Model Options">Grid Model Options</a>
 </td></tr>
 <tr>
 <td>
@@ -115,35 +115,35 @@ AllowScrollCurrentCellInView</td><td>
 To set Allow Scroll in current cell view </td><td>
 GridControl</td><td>
 Enum</td><td>
-<a href="/windowsforms/grid/how-to/common/grid-model-options">Grid Model Options</a></td></tr>
+<a href="/windowsforms/grid/how-to/common/grid-model-options" aria-label="Grid Model Options">Grid Model Options</a></td></tr>
 <tr>
 <td>
 AlphaBlendSelectionColor</td><td>
 To select alpha blend selection color </td><td>
 GridControl</td><td>
 Enum</td><td>
-<a href="/windowsforms/grid/how-to/common/grid-model-options">Grid Model Options</a></td></tr>
+<a href="/windowsforms/grid/how-to/common/grid-model-options" aria-label="Grid Model Options">Grid Model Options</a></td></tr>
 <tr>
 <td>
 ClickedOnDisabledCellBehavior</td><td>
 Disable to click behavior </td><td>
 GridControl</td><td>
 Enum</td><td>
-<a href="/windowsforms/grid/how-to/common/grid-model-options">Grid Model Options</a></td></tr>
+<a href="/windowsforms/grid/how-to/common/grid-model-options" aria-label="Grid Model Options">Grid Model Options</a></td></tr>
 <tr>
 <td>
 ShowCurrentCellBorderBehavior</td><td>
 To show CurrentCell border behavior </td><td>
 GridControl</td><td>
 Enum</td><td>
-<a href="/windowsforms/grid/how-to/common/grid-model-options">Grid Model Options</a></td></tr>
+<a href="/windowsforms/grid/how-to/common/grid-model-options" aria-label="Grid Model Options">Grid Model Options</a></td></tr>
 <tr>
 <td>
 DefaultGridBorderStyle</td><td>
 To set Default Grid Border style.</td><td>
 GridControl</td><td>
 Enum</td><td>
-<a href="/windowsforms/grid/how-to/common/grid-model-options">Grid Model Options</a></td></tr>
+<a href="/windowsforms/grid/how-to/common/grid-model-options" aria-label="Grid Model Options">Grid Model Options</a></td></tr>
 </table>
 
 

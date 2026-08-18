@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Select All Text in Windows Forms GridControl
 
-### Introduction
+## Introduction
 
 ActivateCurrentCellBehavior property controls the activation behavior as a cell becomes current by being clicked or through the cursor keys. If you want the cell text to be fully selected when a cell becomes the current cell, then use the following property.
 

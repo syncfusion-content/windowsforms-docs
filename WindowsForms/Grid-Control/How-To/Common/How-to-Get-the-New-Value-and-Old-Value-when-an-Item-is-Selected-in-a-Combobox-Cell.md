@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Get ComboBox Values in Windows Forms GridControl
 
-### Introduction
+## Introduction
 
 CurrentCellCloseDropDown event gets triggered when a dropdown is closed in a grid cell. The new value of ComboBox can be obtained from CurrentCell's Renderer property and old value can be obtained from the grid.
 

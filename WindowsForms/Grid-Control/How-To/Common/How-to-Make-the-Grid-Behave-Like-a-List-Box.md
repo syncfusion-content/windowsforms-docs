@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Make Grid Act Like ListBox in Windows Forms GridControl
 
-### Introduction
+## Introduction
 
 You need to do two things to make the grid work like a list box. You must set grid.ListBoxSelectionMode property to make the grid select the whole row when you click a cell or move the current cell with arrow keys. This will highlight the entire row except for the current cell. If your grid is to be non-editable, you must highlight the current cell as well as handle CurrentCellActivating event.
 

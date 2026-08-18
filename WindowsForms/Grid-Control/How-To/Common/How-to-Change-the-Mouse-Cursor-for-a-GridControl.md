@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Change the Mouse Cursor in Windows Forms GridControl
 
-### Introduction
+## Introduction
 
 The simplest way is to derive the grid and override OnSetCursor. You can add additional checks to narrow down where to set the cursor.
 
