@@ -13,7 +13,7 @@ This section describes how to add `HubTile` control in a Windows Forms applicati
 
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#hubtile) section to get the list of assemblies or NuGet package that needs to be added as reference to use the control in any application. 
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies/#hubtile) section to get the list of assemblies or NuGet package that needs to be added as reference to use the control in any application. 
  
 You can find more details about installing the NuGet packages in a Windows Forms application in the following link: 
  
@@ -111,7 +111,7 @@ RotateTile – This tile rotates itself in transition and direction.
 
 PulsingTile – This tile zooms in and out and translates its image.
 
-You can customize the types of tile using [TileType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_TileType) property of HubTileControl.
+You can customize the types of tile using [TileType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html/#Syncfusion_Windows_Forms_Tools_HubTile_TileType) property of HubTileControl.
 
 {% tabs %}
 {% highlight C# %}
@@ -150,7 +150,7 @@ Me.HubTile3.TileType = HubTileType.RotateTile
 
 ## Set header and footer
 
-You can define the header and footer for tile by setting the [Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_Title) and [Footer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_Footer) property of HubTile.
+You can define the header and footer for tile by setting the [Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html/#Syncfusion_Windows_Forms_Tools_HubTile_Title) and [Footer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html/#Syncfusion_Windows_Forms_Tools_HubTile_Footer) property of HubTile.
 
 {% tabs %}
 {% highlight C# %}
@@ -222,7 +222,7 @@ In HubTile, image transition can be performed at specified intervals and in diff
 *	Left to Right
 *	Right to Left
 
-You can customize the transition direction by setting [SlideTransition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_SlideTransition) properties of HubTile. 
+You can customize the transition direction by setting [SlideTransition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html/#Syncfusion_Windows_Forms_Tools_HubTile_SlideTransition) properties of HubTile. 
 
 {% tabs %}
 {% highlight C# %}

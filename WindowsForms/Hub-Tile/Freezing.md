@@ -9,7 +9,7 @@ documentation: ug
 
 # Freezing in Windows Forms HubTile 
 
-The Notification and animation of a HubTile can be frozen by enabling the [IsFrozen](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_IsFrozen) property.
+The Notification and animation of a HubTile can be frozen by enabling the [IsFrozen](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html/#Syncfusion_Windows_Forms_Tools_HubTile_IsFrozen) property.
 
 {% tabs %}
 
