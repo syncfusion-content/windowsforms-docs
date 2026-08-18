@@ -1,13 +1,13 @@
 ﻿---
 layout: post
-title: Text Settings in Windows Forms CheckBox | Syncfusion®
-description: Learn about Text Settings support in Syncfusion Windows Forms CheckBox (CheckBoxAdv) control and more details.
+title: Text Settings in Windows Forms CheckBoxAdv | Syncfusion®
+description: Learn about Text Settings support in Syncfusion Windows Forms CheckBoxAdv control, its features and more details.
 platform: windowsforms
 control: EditorsPackage
 documentation: ug
 ---
 
-# Text Settings in Windows Forms CheckBox
+# Text Settings in Windows Forms CheckBoxAdv
 
 This section discusses the text settings of the [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html).
 

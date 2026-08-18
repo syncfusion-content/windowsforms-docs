@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Prevent Focus Rectangle Drawing in Tabs | Syncfusion®
-description: Learn how to prevent the focus rectangle from being drawn on the tabs in Syncfusion Windows Forms TabControl control, its elements and more details.
+description: Learn how to prevent the focus rectangle from being drawn on the tabs in Syncfusion Windows Forms TabControlAdv control, its elements and more details.
 platform: windowsforms
 control: TabsPackage
 documentation: ug

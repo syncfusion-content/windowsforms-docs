@@ -1,12 +1,12 @@
 ﻿---
 layout: post
-title: Event Handling in Windows Forms Double TextBox | Syncfusion®
-description: Learn about Event Handling support in Syncfusion Windows Forms Double TextBox control and more details.
+title: Event Handling in Windows Forms DoubleTextBox | Syncfusion®
+description: Learn about Event Handling support in Syncfusion Windows Forms DoubleTextBox control and more details.
 platform: windowsforms
 control: DoubleTextBox
 documentation: ug
 ---
-# Event Handling in Windows Forms Double TextBox
+# Event Handling in Windows Forms DoubleTextBox
 
 ## DoubleValueChanged Event
 
