@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance in Windows Forms Calendar control | Syncfusion
-description: Learn about Appearance support in Syncfusion Windows Forms Calendar (SfCalendar) control and more details.
+title: Appearance in Windows Forms Calendar | Syncfusion
+description: Learn about appearance customization options in Windows Forms Calendar control for styling and theming.
 platform: WindowsForms
 control: SfCalendar
 documentation: ug
 ---
 
-# Appearance in Windows Forms Calendar (SfCalendar)
+# Appearance in Windows Forms Calendar
 
 This section explains how to customize the appearance of header, footer, and cells in the calendar by using [style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_Style) properties.
 

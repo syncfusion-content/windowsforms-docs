@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization of SfDateTimeEdit | Windows Forms | Syncfusion
-description: Customize the visibility of UpDown Button, Key Navigation Support and DropDown Popup alignment support
-platform: windowsforms
+title: Appearance in Windows Forms DateTimePicker | Syncfusion
+description: Learn about appearance customization options in Windows Forms DateTimePicker control for styling and visual customization.
+platform: WindowsForms
 control: SfDateTimeEdit
 documentation: ug
 ---
 
-# Customization of DateTimeEdit
+# Appearance in Windows Forms DateTimePicker
 
 The appearance of each and every part in the DateTimeEdit can be customized. The SfDateTimeEdit allows you to customize the drop-down icon, calendar, and up-down buttons by using [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_Style) properties.
 
