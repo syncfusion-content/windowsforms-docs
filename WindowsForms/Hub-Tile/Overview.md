@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion® Windows Forms HubTile Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms HubTile control and explore its features and more details.
-platform: WindowsForms
+platform: windowsforms
 control: HubTile
 documentation: ug
 ---

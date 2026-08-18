@@ -2,7 +2,7 @@
 layout: post
 title: PulsingTile in Windows Forms HubTile | Syncfusion®
 description: PulsingTile in Windows Forms HubTile highlights content with pulsing effects, drawing attention to important information and updates.
-platform: WindowsForms
+platform: windowsforms
 control: HubTile
 documentation: ug
 ---

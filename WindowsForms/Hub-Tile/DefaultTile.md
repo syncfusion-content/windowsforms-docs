@@ -2,7 +2,7 @@
 layout: post
 title: DefaultTile in Windows Forms HubTile | Syncfusion®
 description: DefaultTile in Windows Forms HubTile displays content in a standard tile layout, providing a simple and effective presentation style.
-platform: WindowsForms
+platform: windowsforms
 control: HubTile
 documentation: ug
 ---

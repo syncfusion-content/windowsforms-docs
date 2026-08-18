@@ -2,7 +2,7 @@
 layout: post
 title: Appearance and Styling in Windows Forms HubTile | Syncfusion®
 description: Appearance and styling in Windows Forms HubTile allow customization of colors, layouts, animations, and visual elements to match application themes.
-platform: WindowsForms
+platform: windowsforms
 control: HubTile
 documentation: ug
 ---

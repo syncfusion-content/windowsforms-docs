@@ -2,7 +2,7 @@
 layout: post
 title: Freezing in Windows Forms HubTile | Syncfusion®
 description: Freezing in Windows Forms HubTile pauses tile animations and updates, helping maintain a consistent display when needed.
-platform: WindowsForms
+platform: windowsforms
 control: HubTile
 documentation: ug
 ---
