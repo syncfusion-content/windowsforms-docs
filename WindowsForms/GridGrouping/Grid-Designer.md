@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grid Designer in Windows Forms GridGrouping control | Syncfusion®
-description: Learn about Grid Designer support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
+title: Grid Designer in Windows Forms GridGroupingControl | Syncfusion®
+description: Grid Designer in Windows Forms GridGroupingControl enables design-time configuration of grouping, sorting, summaries, filtering, relations, appearance, skins.
 platform: WindowsForms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# Grid Designer in Windows Forms GridGrouping control
+# Grid Designer in Windows Forms GridGroupingControl
 The GridGroupingControl has strong designer support. The user can control all aspects of grid's appearance through the designer. Additional commands (verbs) will let you save layouts and restore them. 
 
 The user can also use preview feature that will allow you load data into your control and then further set the GridGroupingControl properties that can be persisted as design-time properties.

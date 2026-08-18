@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Advanced Features in Windows Forms GridGrouping control | Syncfusion®
-description: Learn about Advanced Features support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
+title: Advanced Features in Windows Forms GridGroupingControl | Syncfusion®
+description: The advanced features in GridGroupingControl support custom grouping, sorting, summaries, filtering, and Excel-like filtering for enhanced data management.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# Advanced Features in Windows Forms GridGrouping Control
+# Advanced Features in Windows Forms GridGroupingControl
 
 ## Custom Grouping
 

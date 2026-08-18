@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events in Windows Forms GridGrouping control | Syncfusion®
-description: Learn about Events support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
+title: Events in Windows Forms GridGroupingControl | Syncfusion®
+description: The events feature in GridGroupingControl enables handling cell, current cell, mouse, keyboard, filtering, grouping, and table interactions.
 platform: WindowsForms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# Events in Windows Forms GridGrouping control
+# Events in Windows Forms GridGroupingControl
 An Event is a message that is triggered to notify an object or a class of the occurrence of an action. When an event gets fired, all the event handlers will be notified i.e. the event handler functions will be invoked. In order to receive the event notifications, the caller object must subscribe to the desired events. If the user does not want to listen to an event, it can simply unsubscripted from the event notification. 
 
 ## Cell Events 

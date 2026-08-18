@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Relations and Hierarchy in Windows Forms GridGrouping | Syncfusion®
-description: Learn about Relations and Hierarchy support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
+title: Relations and Hierarchy in WinForms GridGroupingControl | Syncfusion®
+description: Relations and Hierarchy in Windows Forms GridGroupingControl support master-detail views, nested tables, foreign keys, and hierarchical data display.
 platform: WindowsForms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# Relations and Hierarchy in Windows Forms GridGrouping
+# Relations and Hierarchy in Windows Forms GridGroupingControl
 GridGroupingControl can display nested tables in a hierarchy using master-detail configuration. In a hierarchical view, all the tables in the data source are inter-connected via relations. Generally a relation between any two tables can take any of the following forms: `1:1`, `1:n`, `n:1` or `n:n`.
 
 A GridGroupingControl can automatically detect [DataRelations](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/dataset-datatable-dataview/adding-datarelations) in a [dataset](https://learn.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-5.0) for display. By default, `Relation` is created for each relation found in dataset. Hence, the data relations defined in a dataset are sufficient enough for the grid to form relations. No additional code is required in this case.

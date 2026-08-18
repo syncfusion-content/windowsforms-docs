@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Covered Ranges in Windows Forms GridGrouping control | Syncfusion®
-description: Learn about Covered Ranges support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
+title: Covered Ranges in Windows Forms GridGroupingControl | Syncfusion®
+description: The covered ranges feature in GridGroupingControl enables combining adjacent cells, rows, or columns and managing covered ranges programmatically.
 platform: WindowsForms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# Covered Ranges in Windows Forms GridGrouping Control
+# Covered Ranges in Windows Forms GridGroupingControl
 The GridGroupingControl supports the options for adding the covered ranges. It is the process of combining two or more adjacent cells, rows or columns and displayed with in a single cell. This can be achieved by adding the range of cells to the [CoveredRanges](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_CoveredRanges) collection.
 
 {% tabs %}

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Managing Records and Columns in WinForms GridGrouping | Syncfusion®
-description: Learn about Managing Records and Columns support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
+title: Managing Records in Windows Forms GridGroupingControl | Syncfusion®
+description: Managing Records and Columns in Windows Forms GridGroupingControl supports hiding records, moving columns, unbound fields, sizing, styling, record management.
 platform: WindowsForms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# Managing Records and Columns in Windows Forms GridGrouping
+# Managing Records and Columns in Windows Forms GridGroupingControl
 This section will explain about working with records and columns in GridGroupingControl.
 
 ## Hiding Records and Columns

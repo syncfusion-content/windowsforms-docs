@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Expression Fields in Windows Forms GridGrouping control | Syncfusion®
-description: Learn about Expression Fields support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
+title: Expression Fields in Windows Forms GridGroupingControl | Syncfusion®
+description: Create calculated and unbound columns using Expression Fields in GridGroupingControl with formulas, custom functions, nested expressions, and validation.
 platform: WindowsForms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# Expression Fields in Windows Forms GridGrouping control
+# Expression Fields in Windows Forms GridGroupingControl
 The GridGroupingControl lets column to display the calculation results based on other fields in the same record. The calculation result can be displayed in a separate column i.e. unbound column. These expression columns can be visible or invisible, used in grouping and sorting, and may be employed as summary fields for summary rows.
 
 The [ExpressionFields](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html) are maintained in the [ExpressionFieldsDescriptorCollection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldDescriptorCollection.html) in which each entry termed as [ExpressionFieldDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldDescriptor.html) defines one expression field. 

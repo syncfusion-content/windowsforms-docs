@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grid Helper Classes in Windows Forms GridGrouping control | Syncfusion®
-description: Learn about Grid Helper Classes support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
+title: Grid Helper Classes in Windows Forms GridGroupingControl | Syncfusion®
+description: Grid Helper Classes in Windows Forms GridGroupingControl support dynamic filtering, Excel-like filters, foreign key lookups, field chooser, and row resizing.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# Grid Helper Classes in Windows Forms GridGrouping
+# Grid Helper Classes in Windows Forms GridGroupingControl
 
 ## Resizing Heights of Individual Rows in Grid
 
