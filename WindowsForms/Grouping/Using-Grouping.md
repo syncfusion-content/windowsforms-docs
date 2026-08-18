@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Using Grouping in Windows Forms Grouping | Syncfusion®
-description: Using grouping in Grouping enables you to organize data into groups, access grouped records, create summaries, and retrieve aggregate values efficiently.
+description: Using grouping in the Grouping enables you to organize data into groups, access grouped records, create summaries, and retrieve aggregate values efficiently.
 platform: WindowsForms
 control: Grouping
 documentation: ug

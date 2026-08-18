@@ -7,7 +7,7 @@ control: Grouping
 documentation: ug
 ---
 
-# Algebra Supported In Expressions  Filters in Windows Forms Grouping 
+# Algebra Supported In Expressions Filters in Windows Forms Grouping
 
 Expressions can be any well-formed algebraic combination of the following: 
 

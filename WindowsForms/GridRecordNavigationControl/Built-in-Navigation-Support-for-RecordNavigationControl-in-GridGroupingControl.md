@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Navigation in Windows Forms GridRecordNavigationControl | Syncfusion®
-description: Built in navigation in GridRecordNavigationControl enables quick movement between first, last, previous, and next records with ease.
+description: Built-in navigation in GridRecordNavigationControl enables quick movement between first, last, previous, and next records with ease.
 platform: windowsforms
 control: GridRecordNavigationControl
 documentation: ug
