@@ -1,13 +1,13 @@
 ﻿---
 layout: post
-title: Text Settings in Windows Forms Integer TextBox | Syncfusion®
-description: Learn about Text Settings support in Syncfusion Windows Forms Integer TextBox (Integertextbox) control and more details.
+title: Text Settings in Windows Forms IntegerTextBox | Syncfusion®
+description: Learn about Text Settings support in Syncfusion Windows Forms IntegerTextBox (Integertextbox) control and more details.
 platform: windowsforms
 control: Tools
 documentation: ug
 ---
 
-# Text Settings in Windows Forms Integer TextBox
+# Text Settings in Windows Forms IntegerTextBox
 
 This section discusses the text settings of the IntegerTextBox control.
 

@@ -1,13 +1,13 @@
 ﻿---
 layout: post
-title: Getting Started with Windows Forms Double TextBox | Syncfusion®
-description: Learn here about getting started with Syncfusion Windows Forms Double TextBox control, its elements, and more.
+title: Getting Started with Windows Forms DoubleTextBox | Syncfusion®
+description: Learn here about getting started with Syncfusion Windows Forms DoubleTextBox control, its elements, and more.
 platform: windowsforms
 control: Tools
 documentation: ug
 ---
 
-# Getting Started with Windows Forms Double TextBox
+# Getting Started with Windows Forms DoubleTextBox
 
 ## Assembly deployment
 

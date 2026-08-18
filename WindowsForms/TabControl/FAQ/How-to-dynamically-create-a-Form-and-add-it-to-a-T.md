@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to Create Form and Add to a Tab in TabControl | Syncfusion®
-description: Learn how to dynamically create a Form and add it to a new tab in Syncfusion Windows Forms TabControl control, its elements and more details.
+title: How to Create Form and Add to a Tab in TabControlAdv | Syncfusion®
+description: Learn how to dynamically create a Form and add it to a new tab in Syncfusion Windows Forms TabControlAdv control, its elements and more details.
 platform: windowsforms
 control: TabsPackage
 documentation: ug
 ---
 
-# How to Create Form and Add to a Tab in TabControl
+# How to Create Form and Add to a Tab in TabControlAdv
 
 Here is a code sample which demonstrates how you could dynamically create a Form and add that form to a new Tab.
 
