@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Syncfusion Windows Forms Agent Skills for AI Assistants | Syncfusion
-description: Learn how to install and use Syncfusion Agent Skills to enhance AI assistants with accurate Syncfusion Windows Forms component guidance.
+title: Syncfusion® Windows Forms Agent Skills for AI Assistants | Syncfusion®
+description: Learn how to install and use Syncfusion® Agent Skills to enhance AI assistants with accurate Syncfusion® Windows Forms component guidance.
 control: Skills
 platform: windowsforms
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Syncfusion Windows Forms Agent Skills for AI Assistants
+# Syncfusion® Windows Forms Agent Skills for AI Assistants
 
 This guide introduces **Syncfusion Windows Forms Skills**, a knowledge package that enables AI assistants (Visual Studio Code, Cursor, CodeStudio, etc.) to understand and generate accurate Windows Forms code using official APIs, patterns, and theming guidelines.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Add a Syncfusion References| WinForms | Syncfusion
-description: Syncfusion Reference Manager extension is an add-in that adds the Syncfusion references into the WinForms application
+title: Add References in Windows Forms | Syncfusion®
+description: The Syncfusion® Reference Manager extension is an add-in that adds Syncfusion® references into the WinForms application efficiently.
 platform: windowsforms
 control: Syncfusion Extensions
 documentation: ug
 ---
 
-# Add Reference for WinForms
+# Add References in Windows Forms
 
 **Syncfusion® Reference Manager** is a Visual Studio add-in for the WinForms platform that helps manage Syncfusion<sup>®</sup> assembly references in your projects. It allows you to add references from either the GAC or the Essential Studio<sup>®</sup> WinForms installed location. Additionally, it can migrate projects containing older versions of Syncfusion<sup>®</sup> assemblies to newer or specific versions. The add-in supports Microsoft Visual Studio 2015 and later and has been included since the Essential Studio<sup>®</sup> 2013 Volume 3 release.
 

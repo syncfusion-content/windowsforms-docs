@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Template Studio | WinForms | Syncfusion
-description: Visual Studio Project Templates for the Syncfusion WinForms platform to create Syncfusion WinForms Application by adding the required assemblies
+title: Template Studio in Windows Forms | Syncfusion®
+description: The Syncfusion® WinForms Template Studio is a specialized tool that simplifies building applications with Syncfusion® WinForms components.
 platform: windowsforms
 control: Syncfusion Extensions
 documentation: ug
 ---
 
 
-# Syncfusion WinForms Template Studio
+# Template Studio in Windows Forms
 
 The WinForms Template Studio by Syncfusion<sup>®</sup> is a specialized tool for building applications with Syncfusion<sup>®</sup> WinForms components. It simplifies development by including essential components, managing required NuGet references, providing preset namespaces, and generating component rendering code. Acting as a wizard, it streamlines the creation of WinForms applications using Syncfusion<sup>®</sup> components, making the process easier for developers.
 

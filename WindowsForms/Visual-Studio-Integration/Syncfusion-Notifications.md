@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Notifications | WinForms | Syncfusion
-description: Displays notifications about trial and newer version update information for Syncfusion applications.
+title: Notifications in Windows Forms | Syncfusion®
+description: Syncfusion® Notifications display informative messages about trial applications, NuGet package updates, and new Essential Studio releases.
 platform: extension
 control: Visual Studio Extensions
 documentation: ug
 ---
 
-# Syncfusion® Notifications
+# Notifications in Windows Forms
 
 Syncfusion<sup>®</sup> enhances the user experience in Windows Forms applications through informative notification messages. These notifications include alerts for trial applications using Syncfusion<sup>®</sup> trial assemblies, updates on the availability of the latest Syncfusion<sup>®</sup> NuGet packages, and announcements of new Essential Studio<sup>®</sup> releases. By keeping developers informed, Syncfusion<sup>®</sup> ensures they stay up to date with the latest features and enhancements.
 

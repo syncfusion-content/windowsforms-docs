@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Downloading Syncfusion Windows Forms offline installer - Syncfusion
-description: Learn here about how to download the Syncfusion Windows Forms offline installer from our Syncfusion website.
+title: How to download Windows Forms offline installer | Syncfusion®
+description: Learn to download Syncfusion® Windows Forms offline installer from Syncfusion® website for trial or licensed.
 platform: WindowsForms
 control: Installation and Deployment
 documentation: ug
 
 ---
 
-# Downloading Syncfusion Windows Forms offline installer
+# How to download Syncfusion® Windows Forms offline installer
 
 The Syncfusion Windows Forms offline installer can be downloaded from the [Syncfusion.com](https://www.syncfusion.com/winforms-ui-controls) website. You can either download the licensed installer or try our trial installer depending on your license.
 
