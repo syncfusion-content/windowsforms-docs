@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion WinForms MCP Server | Syncfusion
-description: Learn how to configure and use Syncfusion WinForms MCP server for intelligent code generation, documentation, and troubleshooting in WindowsForms apps.
+title: Syncfusion® WinForms MCP Server | Syncfusion®
+description: Learn how to configure and use Syncfusion® WinForms MCP server for intelligent code generation, documentation, and troubleshooting in WindowsForms apps.
 platform: WindowsForms
-control: Getting started with Syncfusion WinForms MCP Server
+control: Getting started with Syncfusion® WinForms MCP Server
 documentation: ug
 ---
 
-# Syncfusion WinForms MCP Server
+# Syncfusion® WinForms MCP Server
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> MCP Server accelerates WinForms application development by providing deep knowledge directly in your AI-powered IDE. [Model Context Protocol](https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro) (MCP) integration enables quick access to documentation, API references, and code-generation features from within the development environment.
 

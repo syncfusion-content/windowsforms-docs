@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Apply the Patch for Major\Service Pack Version | Syncfusion
-description: Learn here about how to apply the patch for major or service pack version of Syncfusion Essential Studio.
+title: Applying Patches in Windows Forms | Syncfusion®
+description: Learn how to apply patches for major or service pack versions in Syncfusion® Essential Studio for Windows Forms.
 platform: windowsforms
 control: Essential Studio
 documentation: ug
 ---
 
-# Applying the Patches
+# Applying Patches in Windows Forms
 
 Syncfusion provides patch installer for major version or service pack version, either to add new features or to fix issues. You have to install the patches in the order you have received.
 

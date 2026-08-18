@@ -1,13 +1,13 @@
 ---
 layout: post
-title: QTP or UFT for Syncfusion Essential WindowsForms
-description: This section explains about the how to create a simple test with TreeViewAdv and supported windows forms controls
+title: About Syncfusion® Windows Forms UFT Component | Syncfusion®
+description: Learn about introduction of Syncfusion® Essential Studio Windows Forms UFT component and more details.
 platform: WindowsForms
 control: Testing
 documentation: ug
 ---
 
-# Overview of Windows Forms UFT
+# About Syncfusion® Windows Forms UFT Component
 
 UFT (formerly known as HP Quick Test Professional - QTP) is an automated testing software designed for testing various software applications and environments. Syncfusion provides QTP add-in that contains custom libraries, that help UFT or QTP to recognize Syncfusion controls. These custom libraries are built with the help of .NET add-in extensibility. 
 

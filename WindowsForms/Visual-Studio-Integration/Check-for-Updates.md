@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Check for Updates | WinForms | Syncfusion
-description: Syncfusion Check for Updates provides an extension to update to the most recent version of the Essential Studio® release.
+title: Check for Updates in Windows Forms | Syncfusion®
+description: The Syncfusion® Check for Updates extension provides a convenient way to update to the most recent version of Essential Studio.
 platform: windowsforms
 control: Visual Studio Extensions
 documentation: ug
 ---
 
-# Check for Updates in Syncfusion® Essential Windows Forms
+# Check for Updates in Windows Forms
 
 Syncfusion® provides the Check for Updates extension to find the latest version of the Essential Studio® release. If an update is available, it provides the option to update to the most recent version of the Essential Studio® release, so that you always get the latest features, fixes, and improvements by installing the latest version.
 
