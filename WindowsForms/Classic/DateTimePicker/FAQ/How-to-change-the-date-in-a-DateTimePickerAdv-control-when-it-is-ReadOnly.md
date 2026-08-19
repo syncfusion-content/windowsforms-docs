@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Change the date in a DateTimePickerAdv| WindowsForms | Syncfusion
-description: Learn about How to Change the Date When it is ReadOnly support in Syncfusion Windows Forms DateTimePickerAdv control and more.
+title: How to change date in ReadOnly DateTimePickerAdv | Syncfusion
+description: Learn how to change the date in Syncfusion Windows Forms DateTimePickerAdv (Classic) when ReadOnly via ReadOnlyValueChange property and more.
 platform: WindowsForms
-control: DateTimePickerAdv 
+control: DateTimePickerAdv
 documentation: ug
 ---
-# Change the date in a DateTimePickerAdv
+# How to change date in ReadOnly DateTimePickerAdv in WindowsForms
 
 This page explains How to navigate to current date in DateTimePickerAdv and more details.
 
