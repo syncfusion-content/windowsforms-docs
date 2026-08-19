@@ -18,11 +18,7 @@ The following features are supported in the Financial charts:
 
 ## Box And Whisker Chart
 
-In 1977, John Tukey introduced the Box and Whisker plot (BoxPlot) to display a five-number data summary:
-
-* Median
-* Upper and lower quartiles (75th and 25th percentiles)
-* Minimum and maximum data values
+Box and Whisker Chart is a statistical chart used to summarize and visualize the distribution of a dataset. It displays key measures such as the minimum, maximum, median, and quartiles, helping to identify data spread, variability, skewness, and potential outliers.
 
 {% tabs %}
 {% highlight c# %}
@@ -74,7 +70,7 @@ chartControl.Series.Add(profitSeries)
 {% endhighlight %}
 {% endtabs %}
 
-![HiLo Open Close Chart in WindowsForms](../Chart-Types_images/windowsforms-box-and-whisker-chart.png)
+![Box And Whisker Chart in WindowsForms](../Chart-Types_images/windowsforms-box-and-whisker-chart.png)
 
 ## Candle Chart
 A Candle chart displays stock information using the `High`, `Low`, `Open` and `Close` values. The Hi and Lo values are represented by the wick of a candle. The candle represents open and close values.
@@ -284,7 +280,7 @@ chartControl.Series.Add(series)
 {% endhighlight %}
 {% endtabs %}
 
-![HiLo Open Close Chart in WindowsForms](../Chart-Types_images/windowsforms-kagi-chart.png)
+![kagi Chart in WindowsForms](../Chart-Types_images/windowsforms-kagi-chart.png)
 
 ## Point and Figure Chart
 
@@ -334,7 +330,7 @@ chartControl.PrimaryXAxis.DateTimeFormat = "MMM/dd";
 {% endhighlight %}
 {% endtabs %}
 
-![HiLo Open Close Chart in WindowsForms](../Chart-Types_images/windowsforms-point-and-figure-chart.png)
+![Point And Figure Chart in WindowsForms](../Chart-Types_images/windowsforms-point-and-figure-chart.png)
 
 ## Renko Chart
 
@@ -372,7 +368,7 @@ chartControl.PrimaryYAxis.Format = "$ #";
 {% endhighlight %}
 {% endtabs %}
 
-![HiLo Open Close Chart in WindowsForms](../Chart-Types_images/windowsforms-renko-chart.png)
+![Renko Chart in WindowsForms](../Chart-Types_images/windowsforms-renko-chart.png)
 
 ## Three Line Break Chart
 
@@ -411,4 +407,4 @@ chartControl.Series.Add(series8);
 {% endhighlight %}
 {% endtabs %}
 
-![HiLo Open Close Chart in WindowsForms](../Chart-Types_images/windowsforms-three-line-break-chart.png)
+![Three Line Break Chart in WindowsForms](../Chart-Types_images/windowsforms-three-line-break-chart.png)
