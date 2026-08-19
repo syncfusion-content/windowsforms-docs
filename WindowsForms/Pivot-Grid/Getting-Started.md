@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Windows Forms Pivot Grid | Syncfusion®
-description: Learn here about getting started with Syncfusion® Windows Forms Pivot Grid control, its elements and more details.
+description: Learn how to get started with the Syncfusion® Windows Forms Pivot Grid control. Explore setup, features, examples, and customization options.
 platform: windowsforms
 control: PivotGrid
 documentation: ug
