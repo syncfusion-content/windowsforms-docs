@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Align Text,Cell Value in WinForms Grid Control |Syncfusion®
-description: Understand TextAlign, HorizontalAlignment, and VerticalAlignment in Syncfusion® Windows Forms Grid Control for aligning cell values and controls and more.
+description: Understand TextAlign, HorizontalAlignment, and VerticalAlignment in Syncfusion® Windows Forms Grid Control for aligning cell values.
 platform: windowsforms
 control: Grid Control
 documentation: ug
