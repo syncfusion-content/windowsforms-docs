@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to Use Combo Box in a Column | Windows Forms | Syncfusion
-description: Learn about How to use Combo Box in a Column support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
+title: Use a ComboBox in a column in WinForms GridDataBoundGrid | Syncfusion®
+description: Use a ComboBox column in Syncfusion® WinForms GridDataBoundGrid by populate items using  ChoiceList or a data source and configuring display and value members.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# How to use Combo Box in a Column in WinForms
+# How to use a ComboBox in a column in WinForms GridDataBoundGrid
 
 This page explains How to Use Combo Box in a Column and more details.
 

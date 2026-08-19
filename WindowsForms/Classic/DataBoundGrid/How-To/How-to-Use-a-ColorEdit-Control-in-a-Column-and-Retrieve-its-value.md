@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ColorEdit Control in Windows Forms DataBoundGrid | Syncfusion
-description: Learn about How to Use a Coloredit Control in a Column and Retrieve its Value support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more.
+title: Use a ColorEdit control in WinForms GridDataBoundGrid | Syncfusion®
+description: Use the ColorEdit cell type in Syncfusion® WinForms GridDataBoundGrid to select colors, set initial values, and retrieve color values from grid cells.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# Colored it Control in Windows Forms DataBoundGrid
+# How to use a ColorEdit control in WinForms GridDataBoundGrid
 
 This page explains How to Use a ColorEdit Control in a Column and Retrieve its Value and more details.
 

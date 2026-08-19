@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Double clicking the contents in DataBoundGrid| WinForms | Syncfusion
-description: Learn about How to Select all the Contents in a Cell After Double Clicking the Contents support in Syncfusion Windows Forms GridDataBoundGrid control and more.
+title: Select all on double click in WinForms GridDataBoundGrid | Syncfusion®
+description: Select all text in a cell after double-clicking or pressing F2 in Syncfusion® Windows Forms GridDataBoundGrid by handling cell control and keyboard events.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# Double clicking the contents in DataBoundGrid
+# Select all contents after double click in WinForms GridDataBoundGrid
 
 This page explains How to Select All the Contents in a Cell After Double-Clicking the Contents and more details.
 

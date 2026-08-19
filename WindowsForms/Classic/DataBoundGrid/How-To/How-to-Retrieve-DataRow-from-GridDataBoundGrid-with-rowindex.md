@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Retrieve GridDataBoundGrid in DataBoundGrid | Syncfusion
-description: Learn about How to Retrieve Datarow From Rowindex in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more.
+title: Get DataRow from row index in WinForms GridDataBoundGrid | Syncfusion®
+description: Retrieve the underlying DataRow from a row index in Syncfusion® Windows Forms GridDataBoundGrid by converting the row index to a data position using the Binder.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# Retrieve GridDataBoundGrid in DataBoundGrid
+# How to retrieve DataRow from row index in WinForms GridDataBoundGrid
 
 This page explains How to Retrieve DataRow from GridDataBoundGrid with RowIndex and more details.
 
