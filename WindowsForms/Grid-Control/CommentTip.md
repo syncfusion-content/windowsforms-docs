@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Comment Tip in Windows Forms Grid Control | Syncfusion®
-description: Learn about Comment Tip support in Syncfusion® Windows Forms Grid Control, its elements and more details.
-platform: WindowsForms
-control: GridControl
+description: Comment tip in Grid Control enables Excel-like cell comments, images, custom indicators, tooltips, events, and appearance customization.
+platform: windowsforms
+control: Grid Control
 documentation: ug
 ---
 
