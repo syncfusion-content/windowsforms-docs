@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing Values in Windows Forms Pivot Grid control | Syncfusion®
-description: Learn about Editing Values support in Syncfusion® Windows Forms Pivot Grid control, its elements and more details.
+title: Editing Values in Windows Forms Pivot Grid | Syncfusion®
+description: Edit values in Syncfusion® Windows Forms Pivot Grid control to modify value and total cells at runtime with customization support.
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
