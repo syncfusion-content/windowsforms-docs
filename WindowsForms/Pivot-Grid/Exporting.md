@@ -3,7 +3,7 @@ layout: post
 title: Exporting in Windows Forms Pivot Grid | Syncfusion®
 description: Export data from Syncfusion® Windows Forms Pivot Grid control to Excel, Word, and PDF formats with support for cell-by-cell and pivot table modes.
 platform: windowsforms
-control: PivotGrid
+control: Pivot Grid
 documentation: ug
 ---
 

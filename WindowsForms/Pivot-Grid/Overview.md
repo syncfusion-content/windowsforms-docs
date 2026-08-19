@@ -3,7 +3,7 @@ layout: post
 title: About Syncfusion Windows Forms Pivot Grid Control | Syncfusion®
 description: Learn about introduction of Syncfusion® Essential Studio Windows Forms Pivot Grid control and more details.
 platform: windowsforms
-control: PivotGrid
+control: Pivot Grid
 documentation: ug
 ---
 

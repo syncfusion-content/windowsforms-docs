@@ -3,7 +3,7 @@ layout: post
 title: Serialization in Windows Forms Pivot Grid | Syncfusion®
 description: Serialize and deserialize settings in Syncfusion® Windows Forms Pivot Grid control using XML files, streams, or custom options for persistence.
 platform: windowsforms
-control: PivotGrid
+control: Pivot Grid
 documentation: ug
 ---
 # Serialization and Deserialization in Windows Forms Pivot Grid

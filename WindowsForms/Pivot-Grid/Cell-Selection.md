@@ -3,7 +3,7 @@ layout: post
 title: Cell Selection in Windows Forms Pivot Grid | Syncfusion®
 description: Enable cell selection in Syncfusion® Windows Forms Pivot Grid control with Excel-like frames, multi-cell selection, and customizable borders.
 platform: windowsforms
-control: PivotGrid
+control: Pivot Grid
 documentation: ug
 ---
 

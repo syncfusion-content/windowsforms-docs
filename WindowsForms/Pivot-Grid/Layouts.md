@@ -3,7 +3,7 @@ layout: post
 title: Layouts in Windows Forms Pivot Grid | Syncfusion®
 description: Configure layouts in Syncfusion® Windows Forms Pivot Grid control with support for normal and flat layouts, subtotals, grand totals, and interactive options.
 platform: windowsforms
-control: PivotGrid
+control: Pivot Grid
 documentation: ug
 ---
 
