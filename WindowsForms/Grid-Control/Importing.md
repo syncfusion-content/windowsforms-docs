@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Importing in Windows Forms Grid Control | Syncfusion®
-description: Learn about Importing support in Syncfusion® Windows Forms Grid Control, its elements and more details.
+description: Import Excel data into Grid Control with support for styles, formatting, virtual loading, customized import behavior, and high-performance data conversion.
 platform: windowsforms
-control: GridControl
+control: Grid Control
 documentation: ug
 ---
 

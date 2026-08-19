@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Find and Replace in Windows Forms Grid Control | Syncfusion®
-description: Learn about Find and Replace support in Syncfusion® Windows Forms Grid Control, its elements and more details.
-platform: WindowsForms
-control: GridControl
+description: Find and replace support in Grid Control enables text search, replacement, highlighting, keyboard shortcuts, configurable search options, and APIs.
+platform: windowsforms
+control: Grid Control
 documentation: ug
 ---
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Feature-Summary in Windows Forms GridControl | Syncfusion®
-description: Learn here all about feature summary support of Syncfusion® Windows Forms Grid Control (GridControl) and more.
+title: Feature Summary in Windows Forms Grid Control | Syncfusion®
+description: Explore Grid Control features including cell customization, cell types, data binding, Excel-like functionality, drag-and-drop, formulas, exporting, printing.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# Feature Summary in Windows Forms Grid Control (GridControl)
+# Feature Summary in Windows Forms Grid Control
 
 Grid control is a powerful control that is implemented by using a unique Styles Architecture. This grid control is similar to Microsoft Excel, and allows detailed customization of control down to the cell level. Multi-level Undo/Redo, shared scroll bar support, data/view separation, floating cells, more than 18 cell types and unmatched extensibility are unique features of the Grid control.
 

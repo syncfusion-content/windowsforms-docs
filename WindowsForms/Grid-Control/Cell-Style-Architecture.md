@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Cell Style Architecture in Windows Forms Grid | Syncfusion®
-description: Learn about Cell Style Architecture support in Syncfusion® Windows Forms Grid Control, its elements and more details.
+description: Cell style architecture in Grid Control enables cell styling, base styles, formatting, visual customization, and style management for grid cells.
 platform: windowsforms
-control: GridControl
+control: Grid Control
 documentation: ug
 ---
 
@@ -328,7 +328,8 @@ gridControl1.BaseStylesMap("Row Header").StyleInfo.TextColor = Color.Orange
 
 Custom BaseStyles can be defined in GridControl by using the [GridBaseStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridBaseStyle.html). After defining a BaseStyle, it has to be added to the [BaseStylesMap](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridBaseStylesMap.html) so that it can be accessed in `GridStyleInfo` objects. Assign the defined base style to the desired cells by using the [BaseStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_BaseStyle) property in the `GridStyleInfo`.
 
-{% tabs %} {% highlight c# %}
+{% tabs %}
+{% highlight c# %}
 //Adds a new base style.
 GridBaseStyle gridBaseStyle1 = new GridBaseStyle("BaseStyleTest", false);
 gridBaseStyle1.StyleInfo.BackColor = Color.SkyBlue;
@@ -410,7 +411,8 @@ Me.gridControl1.ChangeCells(GridRangeInfo.Cells(3, 2, 4, 3), style, StyleModifyT
 
 Changes can be done for the whole grid by using the [TableStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_TableStyle) property. TableStyle is a single `GridStyleInfo` object that is associated with the entire grid. 
 
-{% tabs %}{% highlight c# %}
+{% tabs %}
+{% highlight c# %}
 //Creates a GridStyleInfo object
 GridStyleInfo style = new GridStyleInfo();
 
@@ -503,7 +505,8 @@ Me.gridControl1.RowStyles(4) = style
 
 Changes can be done for a particular or range of columns by using the [ColStyles](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_ColStyles) property. This property is a `GridStyleInfo` object which is associated with each column.
 
-{% tabs %} {% highlight c# %}
+{% tabs %}
+{% highlight c# %}
 //Creates a GridStyleInfo object.
 GridStyleInfo style = new GridStyleInfo();
 
@@ -614,7 +617,8 @@ N> <kbd>Ctrl</kbd>+<kbd>Delete</kbd> key combination can be used to clear the se
 
 For clearing only the selected range of cells, make use of the [Model.Clear](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_Clear_System_Boolean_) method. This method clears only the cells that are selected. 
 
-{% tabs %}{% highlight c# %}
+{% tabs %}
+{% highlight c# %}
 // Will clear the selected contents.
 this.gridControl1.Model.Clear(true);
 {% endhighlight %}
