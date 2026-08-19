@@ -3,7 +3,7 @@ layout: post
 title: ComboBoxBase in Windows Forms MultiColumn ListBox | Syncfusion®
 description: ComboBoxBase in Syncfusion® Windows Forms MultiColumn ListBox links GridListControl as a dropdown, providing advanced multi‑column list selection support.
 platform: windowsforms
-control: GridList
+control: MultiColumn ListBox
 documentation: ug
 ---
 

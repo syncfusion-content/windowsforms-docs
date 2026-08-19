@@ -1,10 +1,9 @@
 ---
 layout: post
-title: About Syncfusion WindowsForms MultiColumn ListBox Control |
-Syncfusion
+title: About Syncfusion WindowsForms MultiColumn ListBox Control | Syncfusion
 description: Learn about introduction of Syncfusion® Essential Studio Windows Forms MultiColumn ListBox control and more details.
 platform: windowsforms
-control: GridListControl
+control: MultiColumn ListBox
 documentation: ug
 ---
 

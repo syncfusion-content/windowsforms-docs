@@ -3,7 +3,7 @@ layout: post
 title: Selection Modes in Windows Forms MultiColumn ListBox | Syncfusion®
 description: Selection Modes in Syncfusion® Windows Forms MultiColumn ListBox let users select one item or choose multiple items using simple or extended options.
 platform: windowsforms
-control: GridList
+control: MultiColumn ListBox
 documentation: ug
 ---
 

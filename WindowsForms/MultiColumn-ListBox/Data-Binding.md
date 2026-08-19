@@ -3,7 +3,7 @@ layout: post
 title: Data Binding in Windows Forms MultiColumn ListBox | Syncfusion®
 description: Data Binding in Syncfusion® Windows Forms MultiColumn ListBox enables binding large datasets to display multiple columns.
 platform: windowsforms
-control: GridList
+control: MultiColumn ListBox
 documentation: ug
 ---
 

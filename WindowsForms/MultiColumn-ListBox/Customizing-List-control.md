@@ -3,7 +3,7 @@ layout: post
 title: Customizing in Windows Forms MultiColumn ListBox | Syncfusion®
 description: Customize Syncfusion® Windows Forms MultiColumn ListBox appearance using properties like background, grid lines, headers, and images for flexible UI design.
 platform: windowsforms
-control: GridList
+control: MultiColumn ListBox
 documentation: ug
 ---
 
