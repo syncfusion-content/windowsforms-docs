@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Swap Rows and Columns in Windows Forms GridControl | Syncfusion
-description: Learn here about how to swap rows and columns in Syncfusion Essential Windows Forms Grid Control, and more.
+title: Swap Rows and Columns in Windows Forms Grid Control | Syncfusion®
+description: Swap rows and columns in Syncfusion® Windows Forms Grid Control using virtual events and data properties to transpose grid data and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to swap rows and columns
+# How to Swap Rows and Columns in Windows Forms Grid Control
 
 This can be done in GridControl by handling virtual events QueryCellInfo, SaveCellInfo, QueryRowCount, QueryColCount. Here GridControl.Data property is used.
 

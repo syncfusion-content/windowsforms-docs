@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Resize Row Height Based on the Font in GridControl | Syncfusion
-description: How to resize row height based on the font of grid cell content in Syncfusion Windows Forms Grid Control, and more.
+title: Resize RowHeight Based Font in WinForms Grid Control | Syncfusion®
+description: Resize row height based on cell font and content in Syncfusion® Windows Forms Grid Control using row resizing events and text measurement methods.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to resize row height based on the font of Grid cell content
+# How to Resize Row Height Based on the Font in WinForms Grid Control
 
 You can resize the row height based on the cell content height using ResizingRows event. Calculate the content height using MeasuringString() method. This considers the text, font style and font size to calculate the content size. Assign the calculated value to RowHeights property.
 
