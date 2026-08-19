@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Event Handling in Windows Forms xptoolbar control | Syncfusion
-description: Learn about Event Handling support in Syncfusion Windows Forms MonthCalendarAdv(Classic) control and more details.
+title: Event Handling in Windows Forms MonthCalendarAdv | Syncfusion
+description: Learn about event handling in Syncfusion Windows Forms MonthCalendarAdv control and more details.
 platform: WindowsForms
 control: CalendarDateTime
 documentation: ug
 ---
-# Event Handling in Windows Forms MonthCalendarAdv(Classic)
+
+# Event Handling in Windows Forms MonthCalendarAdv
 
 MonthCalendarAdv triggers events whenever the date is selected and changed. The most widely used events are discussed as follows.
 

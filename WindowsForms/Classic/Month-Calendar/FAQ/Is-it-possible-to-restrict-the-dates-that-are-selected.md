@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Dates that are Selected in Windows Forms xptoolbar | Syncfusion
-description: Learn about Is it Possible to Restrict the Dates that are Selected support in Syncfusion Windows Forms MonthCalendarAdv(Classic) control and more details.
+title: Restrict dates that are selected in WindowsForms | Syncfusion
+description: Learn how to restrict the dates selected in Syncfusion Windows Forms MonthCalendarAdv (Classic) using the DateCellQueryInfo event handler and more.
 platform: WindowsForms
 control: CalendarDateTime
 documentation: ug
 ---
-# Dates that are Selected in Windows Forms MonthCalendarAdv(Classic)
+# Restrict dates that are selected in WindowsForms
 
 Yes, we can restrict the dates that are selected. If you want to allow the user to select only Mondays on the calendar, you can set Clickable property to `false` for other days except Monday using [DateCellQueryInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html) event handler.
 
