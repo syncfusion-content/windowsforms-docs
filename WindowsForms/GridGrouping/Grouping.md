@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Grouping in Windows Forms GridGroupingControl | Syncfusion®
-description: Grouping in Windows Forms GridGroupingControl enables hierarchical data organization with multi-column grouping, custom grouping, group customization.
-platform: WindowsForms
+description: Grouping in GridGroupingControl enables hierarchical data organization with multi-column grouping, custom grouping, and group customization.
+platform: windowsforms
 control: GridGroupingControl
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Editing in Windows Forms GridGroupingControl | Syncfusion®
 description: The editing feature in GridGroupingControl enables cell editing, read-only modes, validation, current cell events, and editing customization.
-platform: WindowsForms
+platform: windowsforms
 control: GridGroupingControl
 documentation: ug
 ---

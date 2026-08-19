@@ -2,7 +2,7 @@
 layout: post
 title: Cell Types in Windows Forms GridGroupingControl | Syncfusion®
 description: The cell types feature in GridGroupingControl supports built-in, enhanced, and custom cell types to extend editing, display, and interaction capabilities.
-platform: WindowsForms
+platform: windowsforms
 control: GridGroupingControl
 documentation: ug
 ---

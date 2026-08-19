@@ -2,7 +2,7 @@
 layout: post
 title: Paging in Windows Forms GridGroupingControl | Syncfusion®
 description: Paging in Windows Forms GridGroupingControl divides large datasets into pages, enabling efficient navigation, sorting, grouping, filtering, and data management.
-platform: WindowsForms
+platform: windowsforms
 control: GridGroupingControl
 documentation: ug
 ---

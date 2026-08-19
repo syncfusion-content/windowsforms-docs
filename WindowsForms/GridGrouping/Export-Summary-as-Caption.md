@@ -3,7 +3,7 @@ layout: post
 title: Export Summary in Windows Forms GridGroupingControl | Syncfusion®
 description: Export summaries as captions and search text across all or selected columns in GridGroupingControl using built-in Excel export and search features.
 platform: windowsforms
-control: GridGroupingControl;
+control: GridGroupingControl
 documentation: ug
 ---
 

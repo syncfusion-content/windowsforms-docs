@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with WinForms GridGroupingControl | Syncfusion®
 canonical_url: "https://www.syncfusion.com/winforms-ui-controls/datagrid"
 description: Learn how to get started with the Syncfusion® Windows Forms GridGrouping control. Explore setup, data binding, grouping, sorting, filtering and more options.
-platform: WindowsForms
+platform: windowsforms
 control: GridGroupingControl
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Comment Tip in Windows Forms GridGroupingControl | Syncfusion®
 description: The comment tip feature in GridGroupingControl enables displaying custom text, images, indicators, and Excel-like cell annotations on hover.
-platform: WindowsForms
+platform: windowsforms
 control: GridGroupingControl
 documentation: ug
 ---

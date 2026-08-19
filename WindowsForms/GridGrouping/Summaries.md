@@ -2,7 +2,7 @@
 layout: post
 title: Summaries in Windows Forms GridGrouping control | Syncfusion®
 description: Learn about Summaries support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
-platform: WindowsForms
+platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---

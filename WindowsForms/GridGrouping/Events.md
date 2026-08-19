@@ -2,7 +2,7 @@
 layout: post
 title: Events in Windows Forms GridGroupingControl | Syncfusion®
 description: The events feature in GridGroupingControl enables handling cell, current cell, mouse, keyboard, filtering, grouping, and table interactions.
-platform: WindowsForms
+platform: windowsforms
 control: GridGroupingControl
 documentation: ug
 ---

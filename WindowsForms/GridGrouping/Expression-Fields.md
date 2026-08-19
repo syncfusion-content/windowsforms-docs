@@ -2,7 +2,7 @@
 layout: post
 title: Expression Fields in Windows Forms GridGroupingControl | Syncfusion®
 description: Create calculated and unbound columns using Expression Fields in GridGroupingControl with formulas, custom functions, nested expressions, and validation.
-platform: WindowsForms
+platform: windowsforms
 control: GridGroupingControl
 documentation: ug
 ---

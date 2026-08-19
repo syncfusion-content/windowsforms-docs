@@ -2,7 +2,7 @@
 layout: post
 title: Clipboard Operation in Windows Forms GridGroupingControl | Syncfusion®
 description: The clipboard operations feature in GridGroupingControl supports copying, cutting, pasting, and managing clipboard actions for records and cell ranges.
-platform: WindowsForms
+platform: windowsforms
 control: GridGroupingControl
 documentation: ug
 ---

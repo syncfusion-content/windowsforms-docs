@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Validation in Windows Forms GridGroupingControl | Syncfusion®
-description: The data validation feature in GridGroupingControl enables validating cell input, displaying error messages, handling events, preventing invalid entries.
+title: Data Representation in Windows Forms GridGroupingControl | Syncfusion®
+description: Data representation in GridGroupingControl supports organizing, displaying, grouping, and summarizing data efficiently.
 platform: windowsforms
 control: GridGroupingControl
 documentation: ug
 ---
 
-# Data Validation in Windows Forms GridGroupingControl
+# Data Representation in Windows Forms GridGroupingControl
 
 This section deals with different layouts supported by grid grouping control. These layouts help grouping grid to organize data display. For example, if you want to view the data arranged based on values of a specific field, then you can group data columns by the required field.
 

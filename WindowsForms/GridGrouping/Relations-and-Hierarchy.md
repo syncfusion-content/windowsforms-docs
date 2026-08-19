@@ -2,7 +2,7 @@
 layout: post
 title: Relations and Hierarchy in WinForms GridGroupingControl | Syncfusion®
 description: Relations and Hierarchy in Windows Forms GridGroupingControl support master-detail views, nested tables, foreign keys, and hierarchical data display.
-platform: WindowsForms
+platform: windowsforms
 control: GridGroupingControl
 documentation: ug
 ---

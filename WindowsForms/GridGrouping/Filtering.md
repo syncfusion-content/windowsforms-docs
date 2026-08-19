@@ -2,7 +2,7 @@
 layout: post
 title: Filtering in Windows Forms GridGroupingControl | Syncfusion®
 description: Filter data in GridGroupingControl using record filters, dynamic filtering, Excel-like filters, expressions, display members, and nested table support.
-platform: WindowsForms
+platform: windowsforms
 control: GridGroupingControl
 documentation: ug
 ---

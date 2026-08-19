@@ -2,7 +2,7 @@
 layout: post
 title: Exporting in Windows Forms GridGroupingControl | Syncfusion®
 description: Export data from GridGroupingControl to Excel, PDF, Word, and CSV with support for styling, grouping, summaries, custom options, and events.
-platform: WindowsForms
+platform: windowsforms
 control: GridGroupingControl
 documentation: ug
 ---

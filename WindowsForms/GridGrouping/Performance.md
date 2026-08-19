@@ -2,7 +2,7 @@
 layout: post
 title: Performance in Windows Forms GridGroupingControl | Syncfusion®
 description: Performance in Windows Forms GridGroupingControl improves memory usage, virtual mode, high-frequency updates, grouping efficiency, and rendering speed.
-platform: WindowsForms
+platform: windowsforms
 control: GridGroupingControl
 documentation: ug
 ---

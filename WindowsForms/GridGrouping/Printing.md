@@ -2,7 +2,7 @@
 layout: post
 title: Printing in Windows Forms GridGroupingControl | Syncfusion®
 description: Printing in Windows Forms GridGroupingControl supports print preview, scaling, headers, footers, page breaks, layout customization, and multiple grid printing.
-platform: WindowsForms
+platform: windowsforms
 control: GridGroupingControl
 documentation: ug
 ---
@@ -569,7 +569,7 @@ End Sub
 ### Printing the Client Area in Form
 The GridGroupingControl does not have built-in support for printing the client application form. It can be done by using the `PrintDocument` class and following customization,
 
-1. Call the [BitBlt](https://learn.microsoft.com/en-us/windows/win32/api/wingdi/nf-wingdi-bitblt) function. unmanaged code in a managed application. 
+1. Call the [BitBlt](https://learn.microsoft.com/en-us/windows/win32/api/wingdi/nf-wingdi-bitblt) function (unmanaged code) in a managed application. 
 {% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}

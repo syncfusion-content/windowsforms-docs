@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Grid Designer in Windows Forms GridGroupingControl | Syncfusion®
-description: Grid Designer in Windows Forms GridGroupingControl enables design-time configuration of grouping, sorting, summaries, filtering, relations, appearance, skins.
-platform: WindowsForms
+description: Grid Designer in GridGroupingControl enables design-time configuration of grouping, sorting, summaries, filtering, relations, appearance, and skins.
+platform: windowsforms
 control: GridGroupingControl
 documentation: ug
 ---

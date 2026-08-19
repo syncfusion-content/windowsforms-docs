@@ -2,7 +2,7 @@
 layout: post
 title: Find and Replace in Windows Forms GridGroupingControl | Syncfusion®
 description: Find, replace, and highlight text in GridGroupingControl using built-in dialogs, keyboard shortcuts, search options, and programmatic operations.
-platform: WindowsForms
+platform: windowsforms
 control: GridGroupingControl
 documentation: ug
 ---

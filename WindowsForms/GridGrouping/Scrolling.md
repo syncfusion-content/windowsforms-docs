@@ -2,7 +2,7 @@
 layout: post
 title: Scrolling in Windows Forms GridGroupingControl | Syncfusion®
 description: Scrolling in Windows Forms GridGroupingControl supports programmatic scrolling, shared scrollbars, custom scrollbar styles, and scrolling events.
-platform: WindowsForms
+platform: windowsforms
 control: GridGroupingControl
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Appearance in Windows Forms GridGroupingControl | Syncfusion®
 description: The appearance and formatting features in GridGroupingControl enable customizing cell styles, table layouts, conditional formatting, and visual elements.
-platform: WindowsForms
+platform: windowsforms
 control: GridGroupingControl
 documentation: ug
 ---

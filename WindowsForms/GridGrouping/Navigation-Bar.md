@@ -2,7 +2,7 @@
 layout: post
 title: Navigation Bar in Windows Forms GridGroupingControl | Syncfusion®
 description: Navigation Bar in Windows Forms GridGroupingControl enables record navigation, customization, RTL support, visual styles, and programmatic navigation features.
-platform: WindowsForms
+platform: windowsforms
 control: GridGroupingControl
 documentation: ug
 ---
