@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Windows Forms Clock control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms Clock control, its elements and more details.
+title: About Syncfusion Windows Forms Clock Control | Syncfusion
+description: Learn about introduction of Syncfusion Essential Studio Windows Forms Clock control, its key features, clock functionality, and more details.
 platform: WindowsForms
 control: Clock-Control-for-Windows-Forms
 documentation: ug
 ---
 
-# Windows Forms Clock Overview
+# About Syncfusion Windows Forms Clock Control
 
 Essential Tools for Windows Forms supports [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html) control in an application. This feature enables you to add customizable analog clocks in the application.
 

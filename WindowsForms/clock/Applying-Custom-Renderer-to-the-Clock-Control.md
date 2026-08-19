@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Applying Custom Renderer to the Clock in Windows Forms | Syncfusion
-description: Learn about Applying Custom Renderer to the Clock Control support in Syncfusion Windows Forms Clock control and more details.
+title: Custom Renderer in Windows Forms Clock | Syncfusion
+description: Learn how to apply custom renderer to Windows Forms Clock control for advanced customization and personalized appearance.
 platform: WindowsForms
-control: Clock-Control-for-Windows-Forms
+control: Clock
 documentation: ug
 ---
 
-# Applying Custom Renderer to the Clock Control in Windows Forms
+# Custom Renderer in Windows Forms Clock
 
 ## Customization of rendering by overriding the method
 

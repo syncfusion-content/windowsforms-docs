@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Calendar control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms Calendar (SfCalendar) control and more details.
+title: Getting Started with Windows Forms Calendar | Syncfusion
+description: Learn how to get started with the Syncfusion Windows Forms Calendar control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
 control: SfCalendar 
 documentation: ug
 ---
 
-# Getting Started with Windows Forms Calendar (SfCalendar)
+# Getting Started with Windows Forms Calendar
 
 This section briefly describes how to create a new Windows Forms project in Visual Studio and add the [WinForms Calendar](https://www.syncfusion.com/winforms-ui-controls/calendar) (SfCalendar) control with its basic functionalities.
 

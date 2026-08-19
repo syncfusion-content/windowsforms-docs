@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Navigation in Windows Forms Calendar control | Syncfusion
-description: Learn about Navigation support in Syncfusion Windows Forms Calendar (SfCalendar) control and more details.
+title: Navigation in Windows Forms Calendar | Syncfusion
+description: Learn how to navigate between months and years in Windows Forms Calendar control with keyboard and mouse support.
 platform: WindowsForms
 control: SfCalendar
 documentation: ug
 ---
 
-# Navigation in Windows Forms Calendar (SfCalendar)
+# Navigation in Windows Forms Calendar
 
 By default, the calendar displays the month view. You can move from current month to previous or next month in the calendar control by clicking navigation buttons in the header, and also you can move from month view to other views (year, decade, century) to select the dates from other year or decade by clicking the header text of the calendar.
 
