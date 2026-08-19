@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Overview of GridList | Syncfusion
-description: This section explains about the multi column listbox control for windows forms and its important key features
+title: About Syncfusion WindowsForms MultiColumn ListBox Control |
+Syncfusion
+description: Learn about introduction of Syncfusion® Essential Studio Windows Forms MultiColumn ListBox control and more details.
 platform: windowsforms
 control: GridListControl
 documentation: ug
 ---
 
-# Overview of GridList control
+# About Syncfusion® Windows Forms MultiColumn ListBox Control
 
 The GridList control provides a very rich way to display a list of items in multi-column list view with headers. It supports displaying single and multiple columns, data binding, single and multiple selection, and style customization at cell level.
 

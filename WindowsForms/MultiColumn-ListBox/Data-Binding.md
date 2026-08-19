@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data-binding-and-Selection-Modes | Windows Forms | Syncfusion
-description: Learn here all about data binding and selection modes feature of Syncfusion Windows Forms MultiColumn ListBox (GridListControl) control and more.
+title: Data Binding in Windows Forms MultiColumn ListBox | Syncfusion®
+description: Data Binding in Syncfusion® Windows Forms MultiColumn ListBox enables binding large datasets to display multiple columns.
 platform: windowsforms
 control: GridList
 documentation: ug
 ---
 
-# Data Binding and Selection Modes in Windows Forms MultiColumn ListBox
+# Data Binding in Windows Forms MultiColumn ListBox
 
 ## Data Binding
 
@@ -33,26 +33,5 @@ array.Add(New [MyClass](4, "Jessy"))
 array.Add(New [MyClass](5, "Bruch"))
 array.Add(New [MyClass](6, "Johny"))
 Me.gridlistControl1.DataSource = array
-{% endhighlight  %}
-{% endtabs %}
-
-## Selection modes
-
-Selection behavior of the GridList control can be specified by using the SelectionMode property. There are three types of selection behaviors:
-
-* One: Selects only one item.
-* MultiSimple: Selects multiple items.
-* MultiExtended: Selects multiple items using SHIFT, CTRL, arrow keys, etc.
-
-{% tabs %}
-{% highlight c# %}
-this.gridListControl1.SelectionMode = SelectionMode.One;
-this.gridListControl1.SelectionMode = SelectionMode.MultiSimple;
-this.gridListControl1.SelectionMode = SelectionMode.MultiExtended;
-{% endhighlight  %}
-{% highlight vb %}
-Me.gridListControl1.SelectionMode = SelectionMode.One
-Me.gridListControl1.SelectionMode = SelectionMode.MultiSimple
-Me.gridListControl1.SelectionMode = SelectionMode.MultiExtended
 {% endhighlight  %}
 {% endtabs %}
