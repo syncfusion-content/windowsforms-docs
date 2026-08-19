@@ -2,7 +2,7 @@
 layout: post
 title: Covered Ranges in Windows Forms Grid Control | Syncfusion®
 description: Covered ranges in Grid Control allow merging cells, managing covered ranges, querying ranges, finding merged cells, and customizing cell layouts.
-platform: WindowsForms
+platform: windowsforms
 control: Grid Control
 documentation: ug
 ---

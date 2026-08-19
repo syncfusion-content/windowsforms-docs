@@ -2,7 +2,7 @@
 layout: post
 title: Cell Merging in Windows Forms Grid Control | Syncfusion®
 description: Cell merging in Grid Control enables merging adjacent cells with matching data, custom merge behavior, merged range management, and cell merge evaluation.
-platform: WindowsForms
+platform: windowsforms
 control: Grid Control
 documentation: ug
 ---
