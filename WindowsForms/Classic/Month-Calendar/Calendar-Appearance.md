@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Calendar Appearance in Windows Forms xptoolbar control | Syncfusion
-description: Learn about Calendar Appearance support in Syncfusion Windows Forms MonthCalendarAdv(Classic) control and more details.
+title: Calendar Appearance in Windows Forms MonthCalendarAdv | Syncfusion
+description: Learn about calendar appearance in Syncfusion Windows Forms MonthCalendarAdv control and more details.
 platform: WindowsForms
 control: CalendarDateTime
 documentation: ug
 ---
-# Calendar Appearance in Windows Forms MonthCalendarAdv(Classic)
+
+# Calendar Appearance in Windows Forms MonthCalendarAdv
 
 This section comprises the appearance settings under the following topics:
 

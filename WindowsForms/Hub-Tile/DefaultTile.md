@@ -1,12 +1,12 @@
 ---
 layout: post
-title: DefaultTile in Windows Forms Hub Tile control | Syncfusion
-description: Learn about DefaultTile support in Syncfusion Windows Forms Hub Tile control, its elements and more details.
-platform: WindowsForms
+title: DefaultTile in Windows Forms HubTile | Syncfusion®
+description: DefaultTile in Windows Forms HubTile displays content in a standard tile layout, providing a simple and effective presentation style.
+platform: windowsforms
 control: HubTile
 documentation: ug
 ---
-# DefaultTile in Windows Forms Hub Tile
+# DefaultTile in Windows Forms HubTile
 
 This type provides notification through various transition effects.
 
