@@ -2,7 +2,7 @@
 layout: post
 title: ToolTip in Windows Forms GridGrouping control | Syncfusion®
 description: Learn about ToolTip support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
-platform: windowsforms
+platform: WindowsForms
 control: GridGroupingControl
 documentation: ug
 ---
