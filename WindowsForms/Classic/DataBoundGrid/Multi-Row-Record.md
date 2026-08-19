@@ -19,7 +19,7 @@ N> For more details, refer to the following browser sample:
 
 **_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Customization\Multi Row Record Demo_**
 
-### Example
+## Example
 
 Using the following code example, you can switch display of records from NorthWind's Customers table between displaying a single row per record and multiple rows per record. The Binder.LayoutColumns function can be used to break records into multiple rows. The record can be broken by inserting a "." in the LayoutColumns() function of GridHierarchyLevel class.
 

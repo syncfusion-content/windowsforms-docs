@@ -19,7 +19,7 @@ N> For more details, refer to the following browser sample:
 
 **_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Product Showcase\Record Navigation Data Bound Grid Demo_**
 
-### Example
+## Example
 
 The following sample displays DataBound Grid within Grid Record Navigation control. This sample was created using the designer. 
 
