@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance and Styling in Windows Forms Hub Tile control | Syncfusion
-description: Learn about Appearance and Styling support in Syncfusion Windows Forms Hub Tile control and more details.
+title: Appearance and Styling in Windows Forms HubTile | Syncfusion®
+description: Appearance and styling in Windows Forms HubTile allow customization of colors, layouts, animations, and visual elements to match application themes.
 platform: WindowsForms
 control: HubTile
 documentation: ug
 ---
 
-# Appearance and Styling in Windows Forms Hub Tile
+# Appearance and Styling in Windows Forms HubTile
 
 ## Banner visibility
 
