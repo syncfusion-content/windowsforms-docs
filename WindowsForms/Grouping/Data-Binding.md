@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding in Windows Forms Grouping control | Syncfusion®
-description: Learn about Data Binding support in Syncfusion® Windows Forms Grouping control, its elements and more details.
+title: Data Binding in Windows Forms Grouping | Syncfusion®
+description: Data binding in Grouping enables you to bind IList data sources, access records through the grouping engine, and iterate grouped data efficiently.
 platform: WindowsForms
 control: Grouping
 documentation: ug

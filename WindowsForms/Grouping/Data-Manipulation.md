@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Manipulation in Windows Forms Grouping control | Syncfusion®
-description: Learn about Data Manipulation support in Syncfusion® Windows Forms Grouping control and more details.
+title: Data Manipulation in Windows Forms Grouping | Syncfusion®
+description: Data manipulation in Grouping enables filtering, expression-based calculations, sorting, and custom sorting to organize and analyze data efficiently.
 platform: WindowsForms
 control: Grouping
 documentation: ug
