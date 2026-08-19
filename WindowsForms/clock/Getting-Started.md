@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Clock control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential Studio Windows Forms Clock control, its elements and more details.
+title: Getting Started with Windows Forms Clock | Syncfusion
+description: Learn how to get started with the Syncfusion Windows Forms Clock control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
 control: Clock
 documentation: ug
