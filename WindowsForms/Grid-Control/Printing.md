@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Printing in Windows Forms Grid Control | Syncfusion®
-description: Print and preview Grid Control content with support for page breaks, headers, footers, scaling, print customization, and multiple-grid printing.
+description: Printing in Grid Control supports print preview, page layout, page breaks, scaling and custom print settings.
 platform: windowsforms
 control: Grid Control
 documentation: ug
