@@ -1,13 +1,13 @@
 ---
 layout: post
-title: What-are-the-events-fired-when-the-record-values-a | Windows Forms | Syncfusion
-description: what are the events fired when the record values are changed
+title: RecordValueChanged Event in WinForms GridGroupingControl | Syncfusion®
+description: The events triggered when record values change in Syncfusion® WinForms GridGroupingControl, its record updates, value changes, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# What are the Events Fired when the Record Values are Changed
+# What Events Trigger in Value Changes in WinForms GridGroupingControl
 
 When the record values are changed, the following events are fired.
 

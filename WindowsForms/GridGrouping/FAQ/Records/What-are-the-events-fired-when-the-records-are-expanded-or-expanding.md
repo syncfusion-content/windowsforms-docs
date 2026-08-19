@@ -1,13 +1,13 @@
 ---
 layout: post
-title: What-are-the-events-fired-when-the-records-are-exp | Windows Forms | Syncfusion
-description: what are the events fired when the records are expanded or expanding
+title: Record Expanding Event in WinForms GridGroupingControl | Syncfusion®
+description: The events triggered when records are expanding or expanded in Syncfusion® WinForms GridGroupingControl, its record state changes, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# What are the Events Fired when the Records are Expanded or Expanding
+# What Event Trigger in Record Expanding in WinForms GridGroupingControl
 
 When the records are expanding or expanded, the following events are fired.
 

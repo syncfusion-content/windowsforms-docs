@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Groups | Windows Forms | Syncfusion
-description: groups
+title: Groups in WinForms GridGroupingControl | Syncfusion®
+description: Groups in Syncfusion® WinForms GridGroupingControl support data organization, group captions, nested grouping, summaries, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# Groups
+# Groups in WinForms GridGroupingControl
 

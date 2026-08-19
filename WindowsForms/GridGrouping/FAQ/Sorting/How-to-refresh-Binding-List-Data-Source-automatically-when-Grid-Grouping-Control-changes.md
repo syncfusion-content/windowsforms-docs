@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-refresh-Binding-List-Data-Source-automatica | Windows Forms | Syncfusion
-description: how to refresh binding list data source automatically when grid grouping control changes
+title: List Data Source in WinForms GridGroupingControl | Syncfusion®
+description: Refresh the Binding List data source automatically in Syncfusion® WinForms GridGroupingControl, its TableDirty property, data updates, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Refresh Binding List Data Source automatically when Grid Grouping Control Changes
+# How to Refresh Binding List DataSource in WinForms GridGroupingControl
 
 To refresh binding list data source automatically when GridGroupingControl changes, you need to set TableDirty property to _‘__True’_ in GridGroupingControl. Doing this invalidates Grid Table to its current changes. Refreshing Data Source takes place only while using the data source as Binding List. The following code sample shows how to refresh Binding List Data Source when GridGroupingControl changes.
 

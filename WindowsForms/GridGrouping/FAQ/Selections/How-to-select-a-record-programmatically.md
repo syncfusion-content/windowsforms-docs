@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-select-a-record-programmatically | Windows Forms | Syncfusion
-description: how to select a record programmatically
+title: Programmatic Selection WinForms GridGroupingControl | Syncfusion®
+description: Select a record programmatically in Syncfusion® WinForms GridGroupingControl, its selected records collection, record selection, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Select a Record programmatically
+# How to Select Record Programmatically in WinForms GridGroupingControl
 
 The following code illustrates how to select a record programmatically.
 
