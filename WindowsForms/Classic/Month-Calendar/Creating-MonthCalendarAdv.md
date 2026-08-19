@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Getting Started in Windows Forms xptoolbar control | Syncfusion
-description: Learn about Getting Started support in Syncfusion Windows Forms MonthCalendarAdv(Classic) control and more details.
+title: Getting Started with Windows Forms MonthCalendarAdv | Syncfusion
+description: Learn how to get started with the Syncfusion Windows Forms MonthCalendarAdv control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
 control: MonthCalendarAdv
 documentation: ug
 ---
-# Getting Started in Windows Forms MonthCalendarAdv(Classic)
+
+# Getting Started with Windows Forms MonthCalendarAdv
 
 This section describes how to add a `MonthCalendarAdv` control in a Windows Forms application and overview of its basic functionalities.
 
