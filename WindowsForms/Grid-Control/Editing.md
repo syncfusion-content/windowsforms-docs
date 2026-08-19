@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Editing in Windows Forms Grid Control | Syncfusion®
-description: Learn about Editing support in Syncfusion® Windows Forms Grid Control, its elements and more details.
+description: Editing support in Grid Control enables cell editing, read-only modes, programmatic editing, validation, editing events, and customization of editing behavior.
 platform: windowsforms
-control: GridControl
+control: Grid Control
 documentation: ug
 ---
 # Editing in Windows Forms Grid Control
