@@ -6,7 +6,7 @@ platform: WindowsForms
 control: CalendarDateTime
 documentation: ug
 ---
-# Customize diagonal columns appearance in WindowsForms
+# Customize diagonal columns appearance in Windows Forms
 
 This page explains How to customize the appearance of the diagonal columns and more details.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Child Controls in Windows Forms DateTimePickerAdv | Syncfusion
-description: Learn about child controls in Syncfusion Windows Forms DateTimePickerAdv control and more details.
+description: Learn about child controls in Syncfusion Windows Forms DateTimePickerAdv control, including UpDown and DropDown buttons.
 platform: WindowsForms
 control: DateTimePicker
 documentation: ug

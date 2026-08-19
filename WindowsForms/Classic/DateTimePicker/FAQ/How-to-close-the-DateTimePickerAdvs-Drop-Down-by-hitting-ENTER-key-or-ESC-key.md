@@ -6,7 +6,7 @@ platform: WindowsForms
 control: DateTimePickerAdv
 documentation: ug
 ---
-# Close DateTimePickerAdv drop-down via ENTER or ESC in WindowsForms
+# Close DateTimePickerAdv drop-down via ENTER or ESC in Windows Forms
 
 This page explains How to close the DateTimePickerAdv's Drop-Down by hitting ENTER key or ESC key and more details.
 

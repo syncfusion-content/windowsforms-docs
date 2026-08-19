@@ -6,7 +6,7 @@ platform: WindowsForms
 control: CalendarDateTime
 documentation: ug
 ---
-# Identify current selected date at run time in WindowsForms
+# Identify current selected date at run time in Windows Forms
 
 This page explains How to identify the current selected date at run time and more details.
 
