@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-trigger-an-event-when-the-ComBox-DropDownList-has-null-value-or-has-no-datasource-bound-to-it | Windows Forms | Syncfusion
-description: how to trigger an event when the combox dropdownlist has null value or has no datasource bound to it
+title: Event for Empty ComboBox in WinForms GridGroupingControl | Syncfusion®
+description: Trigger an event when a ComboBox DropDownList has no value or data source in Syncfusion® WinForms GridGroupingControl, its dropdown handling, and more.
 platform: windowsforms
-control: Grid
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Trigger an Event when the ComBox DropDownList has Null Value or has no Datasource Bound to it
+# How to Trigger an Empty ComboBox Event in WinForms GridGroupingControl
 
 If a ComboBox is neither bound to any datasource nor has list items, it can be notified to the user by clicking on it. The notification message that the user wants to display can be given as shown in the following TableControlCurrentCellShowingDropDown event.  
 

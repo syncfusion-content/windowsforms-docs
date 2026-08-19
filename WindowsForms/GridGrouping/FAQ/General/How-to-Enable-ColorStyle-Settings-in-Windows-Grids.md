@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Enable-ColorStyle-Settings-in-Windows-Grids | Windows Forms | Syncfusion
-description: how to enable colorstyle settings in windows grids
+title: Color Style Settings in WinForms GridGroupingControl | Syncfusion®
+description: Enable ColorStyle settings in Syncfusion® Windows Forms GridGroupingControl, its visual styles, themes, enhanced appearance customization, and more.
 platform: windowsforms
-control: Grid
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Enable ColorStyle Settings in Windows Grids
+# How to Enable ColorStyle Settings in WinForms GridGroupingControl
 
 This feature enables you to apply enhanced visual styles to the following Windows Forms Grid controls: Grid, GridGrouping, GridDataBoundGrid, and GridList. 
 

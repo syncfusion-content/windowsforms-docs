@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Make-Use-of-the-Journal-Control-using-GridG | Windows Forms | Syncfusion
-description: how to make use of the journal control using gridgrouping controls
+title: Use of Journal Control in WinForms GridGroupingControl | Syncfusion®
+description: Make use of the Journal Control in Syncfusion® WinForms GridGroupingControl, its navigation bar, record preview rows, data display, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Make Use of the Journal Control using GridGrouping Controls
+# How to Make Use of the Journal Control in WinForms GridGroupingControl
 
 You can use GridGroupingControl, TextBox, RecordNavigationBar and Button control to make use of Journal control. GridGroupingControl is designed as a grid to bind the data source. The navigation bar is used to browse the records in the grid. The navigation bar can be enabled by setting ShowNavigationBar property as true. Preview operation can be performed through Button control. QueryCellInfo event is used to display text box value in the preview cell.
 

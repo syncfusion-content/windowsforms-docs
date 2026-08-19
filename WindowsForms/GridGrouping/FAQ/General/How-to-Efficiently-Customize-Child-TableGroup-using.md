@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Efficiently-Customize-Child-TableGroup-usin | Windows Forms | Syncfusion
-description: how to efficiently customize child table/group using custom engine.
+title: Customize Child, Group in WinForms GridGroupingControl | Syncfusion®
+description: Efficiently customize child tables and groups in Syncfusion® Windows Forms GridGroupingControl, its custom engine implementation, initialization methods.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Efficiently Customize Child Table/Group using Custom Engine
+# How to Customize Child Table and Group in WinForms GridGroupingControl
 
 When customizing GridChildTable/GridGroup by deriving GridChildTable/GridGroup in the custom engine, OnInitializeVisibleCounters method and OnEnsureInitialized method must also be overridden along with other overrides. Otherwise, GridGroup calls into GridGroup extend methods and sometimes bypasses methods like IsChildVisible that you have overridden.
 

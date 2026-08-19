@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-add-Expression-columns | Windows Forms | Syncfusion
-description: how to add expression columns
+title: Add Expression Columns in WinForms GridGroupingControl | Syncfusion®
+description: Add expression columns in Syncfusion® Windows Forms GridGroupingControl, its calculated fields, expressions, grouping, sorting, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How To Add Expression Columns
+# How to Add Expression Columns in Windows Forms GridGroupingControl
 
 Expression fields allows you to add a column that holds calculated values based on other fields in the same record. These expression columns can be used in grouping and sorting. This also can be employed as summary fields for summary rows.
 

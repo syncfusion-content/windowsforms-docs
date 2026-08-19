@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-access-all-DisplayElements-or-a-particular- | Windows Forms | Syncfusion
-description: how to access all displayelements or a particular displayelement in gridgrouping control
+title: Access DisplayElements in WinForms GridGroupingControl | Syncfusion®
+description: Access all or specific DisplayElements in Syncfusion® Windows Forms GridGroupingControl, its display element collection, element information, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Access All DisplayElements or a Particular DisplayElement in GridGrouping Control
+# How to Access DisplayElements in Windows Forms GridGroupingControl
 
 You can access DisplayElements by using the following code.
 

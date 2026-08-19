@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Place-UserControl-in-a-Header-Cell | Windows Forms | Syncfusion
-description: how to place usercontrol in a header cell
+title: UserControl in Header in WinForms GridGroupingControl | Syncfusion®
+description: Place a UserControl in a header cell in Syncfusion® WinForms GridGroupingControl, its custom cell models, cell renderers, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Place UserControl in a Header Cell
+# How to Place UserControl in HeaderCell in WinForms GridGroupingControl
 
 To have User Control in GridGroupingControl, GridGenericCellModel and GridGenericCellRenderer classes must be derived and User Control designed must be made as a cell model in the GridGroupingControl using these derived classes.
 
