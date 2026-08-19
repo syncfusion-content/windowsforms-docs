@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Binding to a Datatable in Windows Forms xptoolbar control | Syncfusion
-description: Learn about Binding to a Datatable support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
+title: Binding to a DataTable in WinForms GridDataBoundGrid | Syncfusion®
+description: Bind data from a DataTable to the Syncfusion® Windows Forms GridDataBoundGrid control and display rows and columns with simple data source configuration.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# Binding to a Data table in Windows Forms GridDataBoundGrid(Classic)
+# Binding to a DataTable in Windows Forms GridDataBoundGrid 
 
 Binding to a DataTable is a very simple and straight-forward process. After defining DataTable, you must set GridDataBoundGrid.DataSource property to the table. Then you can easily use the Data Tab of your toolbox in Visual Studio to generate DataTables. Here we will add a simple People table using the code to illustrate how you can dynamically create a DataTable. 
 

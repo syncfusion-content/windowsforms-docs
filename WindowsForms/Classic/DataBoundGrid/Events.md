@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events in Windows Forms xptoolbar control | Syncfusion
-description: Learn about Events support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
+title: Events in Windows Forms GridDataBoundGrid | Syncfusion®
+description: Explore current cell, mouse, and control events in the Syncfusion® WinForms GridDataBoundGrid to handle user interactions and customize behavior.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# Events in Windows Forms GridDataBoundGrid(Classic)
+# Events in Windows Forms GridDataBoundGrid
 
 The important events in Grid control and DataBound Grid are as follows.
 

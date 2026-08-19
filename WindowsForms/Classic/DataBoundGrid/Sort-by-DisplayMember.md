@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sort by Displaymember in Windows Forms xptoolbar control | Syncfusion
-description: Learn about Sort by Displaymember support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
+title: Sort by DisplayMember in Windows Forms GridDataBoundGrid | Syncfusion®
+description: Sort data by display values instead of value members in the Syncfusion® WinForms GridDataBoundGrid using custom DisplayMember-based sorting.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# Sort by Display member in Windows Forms GridDataBoundGrid(Classic)
+# Sort by DisplayMember in Windows Forms GridDataBoundGrid
 
 By default, sorting is done in DataBound Grid through IBindingList.
 

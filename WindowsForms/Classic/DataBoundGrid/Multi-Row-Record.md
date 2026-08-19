@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Multi Row Record in Windows Forms xptoolbar control | Syncfusion
-description: Learn about Multi Row Record support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
+title: Multi-Row Records in Windows Forms GridDataBoundGrid | Syncfusion®
+description: Display a single data record across multiple rows in the Syncfusion® WinForms GridDataBoundGrid to improve readability and custom record layouts.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# Multi Row Record in Windows Forms GridDataBoundGrid(Classic)
+# Multi-Row Records in Windows Forms GridDataBoundGrid
 
 DataBound Grid has support for displaying a single record in multiple rows. 
 

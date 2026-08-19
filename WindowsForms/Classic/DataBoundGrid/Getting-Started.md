@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Windows Forms DataBoundGrid control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms GridDataBoundGrid (Classic) control, its elements, and more.
+title: Getting Started with WinForms GridDataBoundGrid Control | Syncfusion®
+description: Learn how to get started with the Syncfusion® WinForms GridDataBoundGrid control. Explore data binding, editing, selection, sorting, and customization options.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# Getting Started with Windows Forms GridDataBoundGrid(Classic)
+# Getting Started with Windows Forms GridDataBoundGrid Control
 
 This section will provide step-by-step procedure to create Grid DataBound Grid through designer and through programmatic approach in a .NET application.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Enables Migration of Net Grid in Windows Forms xptoolbar | Syncfusion
-description: Learn about Enables Migration of Net Grid to Esssential Grid support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
+title: .NET Grid Migration in Windows Forms GridDataBoundGrid | Syncfusion®
+description: Migrate .NET Grid applications to Syncfusion® WinForms GridDataBoundGrid using equivalent properties, events, and methods for a seamless transition.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# Enables Migration in Windows Forms GridDataBoundGrid
+# .NET Grid Migration in Windows Forms GridDataBoundGrid
 
 Look-up table that Enables Migration of .NET Grid to Essential Grid
 
