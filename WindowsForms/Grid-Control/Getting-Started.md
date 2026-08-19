@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Windows Forms Grid Control | Syncfusion®
-description: Learn how to get started with the Syncfusion® Windows Forms Grid Control. Explore setup, data population, cell customization, editing, selection, and styling options.
+description: Learn how to get started with the Syncfusion® Windows Forms Grid Control. Explore setup, data population, customization, editing, selection, and styling.
 platform: windowsforms
 control: Grid Control
 documentation: ug
