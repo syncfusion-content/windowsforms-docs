@@ -3,7 +3,7 @@ layout: post
 title: Get ComboBox Cell Values in WinForms GridDataBoundGrid | Syncfusion®
 description: Retrieve old and new values from a ComboBox cell in Syncfusion® WinForms GridDataBoundGrid by handling the CurrentCellCloseDropDown event.
 platform: windowsforms
-control: Grid
+control: DataBoundGrid
 documentation: ug
 ---
 
