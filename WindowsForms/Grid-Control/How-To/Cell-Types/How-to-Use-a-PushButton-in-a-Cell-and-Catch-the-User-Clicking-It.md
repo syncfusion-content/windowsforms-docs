@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Use a PushButton in a cell and catch the user clicking it | Syncfusion
-description: This section describes how to use a pushbutton in a cell and catch the user clicking it in WindowsForms platform.
+title: Use a PushButton in a Cell in Windows Forms Grid Control | Syncfusion®
+description: Use a PushButton in a cell in Syncfusion® Windows Forms Grid Control and handle user click events to perform custom actions and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to use a PushButton in a cell and catch the user clicking it
+# How to Use a PushButton in a Cell in Windows Forms Grid Control
 
 Set the [CellType](https://help.syncfusion.com/windowsforms/grid-control/cell-types) property in the cell style to "PushButton" and handle grids CellButtonClicked event. Use the Description property of the cell style to specify the text that is to be displayed on the button.
 

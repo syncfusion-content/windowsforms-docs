@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Cell Styles in GridControl
-description: what is the difference between textalign, horizontalalignment, and verticalalignment?
+title: How to Align Text,Cell Value in WinForms Grid Control |Syncfusion®
+description: Understand TextAlign, HorizontalAlignment, and VerticalAlignment in Syncfusion® Windows Forms Grid Control for aligning cell values and controls and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# What is the difference between TextAlign, HorizontalAlignment, and VerticalAlignment
+# How to Use Text and Cell Alignment in Windows Forms Grid Control
 
 TextAlign is set when the description of embedded controls are to be aligned to the left or right. HorizontalAlignment is set when cell value is to be aligned either left or right or center of the cell. VerticalAlignment is set when the cell value is to be aligned either top or bottom or middle of the cell.
 
