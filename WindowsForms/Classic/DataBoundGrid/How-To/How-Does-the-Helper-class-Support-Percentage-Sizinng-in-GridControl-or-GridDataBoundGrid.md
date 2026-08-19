@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Support Percentage Sizing in GridDataBoundGrid | Syncfusion
-description: Learn about How Does The Helper Class In Gridcontrol Or Griddataboundgrid Support Percentage Sizinng in Windows Forms and more details.
+title: How to use percentage size in WinForms GridDataBoundGrid | Syncfusion®
+description: Learn how to implement percentage and proportional column sizing in the Syncfusion® WinForms GridDataBoundGrid using the GridColSizingHelper class.
 platform: windowsforms
 control: Grid
 documentation: ug
 ---
 
-# Support Percentage Sizing in GridDataBoundGrid
+# How to support percentage sizing in Windows Forms GridDataBoundGrid
 
 This page explains How Does the Helper class Support Percentage Sizing in GridControl/GridDataBoundGrid and more details.
 

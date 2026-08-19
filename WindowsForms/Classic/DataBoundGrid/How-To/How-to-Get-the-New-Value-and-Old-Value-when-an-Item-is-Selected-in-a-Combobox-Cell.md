@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Get New and Old Value in WinForms GridDataBoundGrid | Syncfusion
-description: Learn about How To Get The New Value And Old Value When an Item is Selected in a Combobox Cell support in Windows Forms GridDataBoundGridand more.
+title: Get ComboBox Cell Values in WinForms GridDataBoundGrid | Syncfusion®
+description: Retrieve old and new values from a ComboBox cell in Syncfusion® WinForms GridDataBoundGrid by handling the CurrentCellCloseDropDown event.
 platform: windowsforms
 control: Grid
 documentation: ug
 ---
 
-# Get New and Old Value in WinForms GridDataBoundGrid
+# Get ComboBox Cell New and Old Values in WinForms GridDataBoundGrid
 
 This page explains How to Get the New Value and Old Value when an Item is Selected in a Combobox Cell and more details.
 

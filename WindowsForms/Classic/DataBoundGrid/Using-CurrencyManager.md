@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Using Currencymanager in Windows Forms xptoolbar control | Syncfusion
-description: Learn about Using Currencymanager support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
+title: Using CurrencyManager in Windows Forms GridDataBoundGrid | Syncfusion®
+description: Access and manage underlying data records in the Syncfusion® WinForms GridDataBoundGrid using CurrencyManager for accurate data retrieval and synchronization.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# Using Currency manager in Windows Forms GridDataBoundGrid(Classic)
+# Using CurrencyManager in Windows Forms GridDataBoundGrid
 
 Sometimes the grid itself will not contain all the data in the data table. For example, your data table may have 12 columns in it, but you are able to add only three GridBoundColumns to display exactly three of the twelve columns. In this case, the table has nine more columns than the grid. How do you get all the values in the columns that are not in the grid? 
 

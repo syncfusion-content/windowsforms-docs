@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sorting in Windows Forms xptoolbar control | Syncfusion
-description: Learn about Sorting support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
+title: Sorting in Windows Forms GridDataBoundGrid | Syncfusion®
+description: Sort data in the Syncfusion® WinForms GridDataBoundGrid using configurable sorting behaviors, including single-click, double-click, and DisplayMember sorting.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# Sorting in Windows Forms GridDataBoundGrid(Classic)
+# Sorting in Windows Forms GridDataBoundGrid
 
 Sorting feature available in DataBound Grid control allows the user to arrange items in a sequence and/or in different sets. SortBehavior property under the control allows you to sort a column in a data bound grid when the column header cell is clicked. Implementation of this property will rearrange the cell data in the clicked column. This property can be set using either a code or designer. By default, it is set to perform sorting on double-click. GridSortBehavior is an enumeration that defines the sorting behavior options/values.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to Determine that No Cell is Selected | Windows Forms | Syncfusion
-description: Learn about How to Determine that no Cell is Selected support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
+title: Check No Cell Is Selected in WinForms GridDataBoundGrid | Syncfusion®
+description: Determine whether any cell is selected in Syncfusion® WinForms GridDataBoundGrid by using the GetSelectedRanges method and checking the selected range count.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# How to Determine that No Cell is Selected
+# Determine Whether No Cell Is Selected in WinForms GridDataBoundGrid
 
 This page explains How to Determine that No Cell is Selected and more details.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: GridDataBoundGrid row and column count | Windows Forms | Syncfusion
-description: Learn about How to Paste Clipboard Contents Bigger Than Griddataboundgrid Row and Column Count in Windows Forms and more.
+title: Paste Larger Contents in WinForms GridDataBoundGrid | Syncfusion®
+description: Paste clipboard data larger than the existing Syncfusion® WinForms GridDataBoundGrid size by dynamically adding rows and columns to the underlying DataTable.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# GridDataBoundGrid row and column count in Windows Forms
+# Paste Larger Contents in WinForms GridDataBoundGrid
 
 This page explains How to Paste Clipboard Contents Bigger than GridDataBoundGrid Row and Column Count and more details.
 
