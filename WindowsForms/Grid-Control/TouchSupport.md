@@ -2,7 +2,7 @@
 layout: post
 title: Touch Support in Windows Forms Grid Control | Syncfusion®
 description: The touch support feature in Grid Control enables swipe scrolling, zooming, panning, and Excel-like touch selection for touch-enabled applications.
-platform: WindowsForms
+platform: windowsforms
 control: Grid Control
 documentation: ug
 --- 
