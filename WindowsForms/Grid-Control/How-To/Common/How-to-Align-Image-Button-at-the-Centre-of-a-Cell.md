@@ -7,7 +7,7 @@ control: Grid Control
 documentation: ug
 ---
 
-# How to Align ImageButton in Center Cell in Windows Forms Grid Control
+# How to Align ImageButton at Cell Center in Windows Forms Grid Control
 
 To align the button at the center of the cell, customize the model and the renderer of the cell. Specify the bounds of the button using the OnLayout() method. The following code illustrates how to align the button at the center of the grid cell: 
 

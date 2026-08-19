@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Common in Windows Forms Grid Control | Syncfusion®
-description: This section describes about the common features of the Syncfusion® Windows Forms Grid Control and more.
+title: Customize Appearance in Windows Forms Grid Control | Syncfusion®
+description: Customize the appearance of Syncfusion® Windows Forms Grid Control by displaying horizontal and vertical grid lines, setting grid line colors, and more.
 platform: windowsforms
 control: Grid Control
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Use Grid Model Properties in Windows Forms Grid Control | Syncfusion®
-description: Write syntax for Grid model properties in Syncfusion® Windows Forms Grid Control and configure headers, grid lines, printing, and grid behaviors and more.
+description: Grid model properties in Syncfusion® Windows Forms Grid Control and configure headers, grid lines, printing, and grid behaviors and more.
 platform: windowsforms
 control: Grid Control
 documentation: ug

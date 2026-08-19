@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RangeStyles Serialization in Windows Forms Grid Control | Syncfusion®
+title: Avoid RangeStyles Serialization in WinForms Grid Control | Syncfusion®
 description: Prevent RangeStyles from being written to designer code in Syncfusion® Windows Forms Grid Control by hiding serialization for derived grid properties and more.
 platform: windowsforms
 control: Grid Control
