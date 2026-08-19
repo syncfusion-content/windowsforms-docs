@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Selection in Windows Forms Grid Control | Syncfusion®
-description: Learn about Selection support in Syncfusion® Windows Forms Grid Control, its elements and more details.
+description: The selection feature in Grid  Control enables users to select cells, rows, columns, and ranges, customize selection behavior, and retrieve selected data.
 platform: windowsforms
-control: GridControl
+control: Grid Control
 documentation: ug
 ---
 # Selection in Windows Forms Grid Control
