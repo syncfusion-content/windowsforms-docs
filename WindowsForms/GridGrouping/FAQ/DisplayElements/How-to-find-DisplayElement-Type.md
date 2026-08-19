@@ -7,7 +7,7 @@ control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Find DisplayElement Type in Windows Forms GridGroupingControl
+# How to Find DisplayElement Type in WinForms GridGroupingControl
 
 You can find the type of particular DisplayElement using the code below.
 

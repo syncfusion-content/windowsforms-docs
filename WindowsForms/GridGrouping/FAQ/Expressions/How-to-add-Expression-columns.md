@@ -7,7 +7,7 @@ control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Add Expression Columns in Windows Forms GridGroupingControl
+# How to Add Expression Columns in WinForms GridGroupingControl
 
 Expression fields allows you to add a column that holds calculated values based on other fields in the same record. These expression columns can be used in grouping and sorting. This also can be employed as summary fields for summary rows.
 

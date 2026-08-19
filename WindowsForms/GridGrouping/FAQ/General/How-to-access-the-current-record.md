@@ -7,7 +7,7 @@ control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Access the Current Record in Windows Forms GridGroupingControl
+# How to Access the Current Record in WinForms GridGroupingControl
 
 To access the current record, use the following code.
 

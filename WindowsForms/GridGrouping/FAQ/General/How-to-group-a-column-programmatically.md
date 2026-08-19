@@ -7,7 +7,7 @@ control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Group a Column Programmatically in WinForms GridGroupingControl
+# How to Group Columns Programmatically in WinForms GridGroupingControl
 
 To group a column programmatically, use the following code.
 

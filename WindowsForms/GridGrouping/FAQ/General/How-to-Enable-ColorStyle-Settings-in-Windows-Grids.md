@@ -37,11 +37,11 @@ Get or set the value.</td><td>
 Boolean </td></tr>
 </table>
 
-#### Sample Link
+## Sample Link
 
 ** _{Installed Path}\Syncfusion\EssentialStudio\{Version}\Windows\Grid.Grouping.Windows\Samples\2.0\ Styling and Formatting\Skin Customization Demo\_ **
 
-![](How-to-Enable-ColorStyle-Settings-in-Windows-Grids_images/How-to-Enable-ColorStyle-Settings-in-Windows-Grids_img1.png)
+![Enable Color Style Settings in Windows Grids](How-to-Enable-ColorStyle-Settings-in-Windows-Grids_images/How-to-Enable-ColorStyle-Settings-in-Windows-Grids_img1.png)
 
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Suppress KeyDown Event in WinForms GridGroupingControl
+title: Suppress KeyDown Event in WinForms GridGroupingControl | Syncfusion®
 description: Suppress KeyDown events in Syncfusion® WinForms GridGroupingControl, its keyboard input handling, key processing, command keys, and more.
 platform: windowsforms
 control: GridGroupingControl

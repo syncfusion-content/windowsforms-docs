@@ -69,4 +69,4 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](How-to-Make-Use-of-the-Journal-Control-using-GridG_images/How-to-Make-Use-of-the-Journal-Control-using-GridG_img1.png)
+![Journal Control Using Grid](How-to-Make-Use-of-the-Journal-Control-using-GridG_images/How-to-Make-Use-of-the-Journal-Control-using-GridG_img1.png)
