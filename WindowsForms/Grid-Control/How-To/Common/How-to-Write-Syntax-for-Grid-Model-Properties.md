@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to write syntax for Grid model properties | WinForms | Syncfusion
-description: Learn here all about how to write syntax for grid model properties of Syncfusion Windows Forms GridControl and more.
+title: Use Grid Model Properties in Windows Forms Grid Control | Syncfusion®
+description: Write syntax for Grid model properties in Syncfusion® Windows Forms Grid Control and configure headers, grid lines, printing, and grid behaviors and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to write syntax for Grid model properties in WinForms GridControl
+# How to Use Grid Model Properties in Windows Forms Grid Control
 
 From Essential Studio 9.4.6.20, it is not mandatory to specify the complete network to utilize the GridModel properties. 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Display Placeholder when Cell Content Exceeds Cell Width | Syncfusion
-description: Learn here all about how to display placeholder characters when cell content exceeds cell width of Syncfusion Windows Forms GridControl and more.
+title: Display Placeholder Text in Windows Forms Grid Control | Syncfusion®
+description: Display placeholder characters when cell content exceeds cell width in Syncfusion® Windows Forms Grid Control using AutoFit settings and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# Display Placeholder Characters when Cell Content Exceeds Cell Width
+# How to Display Placeholder Characters in Windows Forms Grid Control
 
 This page explains how to display placeholder characters when cell content exceeds cell width of Syncfusion Windows Forms GridControl and more details.
 

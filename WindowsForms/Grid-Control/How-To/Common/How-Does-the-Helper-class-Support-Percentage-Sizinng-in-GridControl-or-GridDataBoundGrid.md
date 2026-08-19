@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Helper class support percentage sizing in GridControl | Syncfusion
-description: Learn here all about how does the helper class support percentage sizing in Syncfusion Windows Forms GridControl and more.
+title: Use Percentage Sizing in Windows Forms Grid Control | Syncfusion®
+description: Use a helper class for percentage sizing in Syncfusion® Windows Forms Grid Control to automatically size columns based on proportional, percentage values.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How does the helper class support percentage sizing in GridControl
+# How does the helper class support percentage sizing in Grid Control
 
 ### Introduction
 

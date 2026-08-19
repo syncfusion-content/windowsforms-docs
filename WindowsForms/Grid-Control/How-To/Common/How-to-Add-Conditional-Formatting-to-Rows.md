@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Add-Conditional-Formatting-to-Rows in GridControl | Syncfusion
-description: Learn here all about how to add conditional formatting to rows of Syncfusion Windows Forms GridControl and more.
+title: Add Conditional Formatting in Windows Forms Grid Control | Syncfusion®
+description: Add conditional formatting to rows in Syncfusion® Windows Forms Grid Control using the PrepareViewStyleInfo event and custom style conditions and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to Add Conditional Formatting to Rows in Windows Forms GridControl
+# How to Add Conditional Formatting to Rows in WinForms Grid Control
 
 ### Introduction
 
