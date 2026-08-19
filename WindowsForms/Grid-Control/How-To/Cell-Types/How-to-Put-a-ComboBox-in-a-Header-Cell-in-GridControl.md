@@ -9,7 +9,7 @@ documentation: ug
 
 # How to put a ComboBox in a header cell in Windows Forms Grid Control
 
-### GridControl
+## GridControl
 
 To place a ComboBox in a header cell of GridControl, you must set CellType of the header to ComboBox and assign a valid data source (ChoiceList or DataSource).
 
