@@ -6,7 +6,7 @@ platform: WindowsForms
 control: Calendar
 documentation: ug
 ---
-# Event raised on date change in DateTimePickerAdv in WindowsForms
+# Event raised on date change in DateTimePickerAdv in Windows Forms
 
 Calendar [DateChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html) event is raised when a date in the DateTimePickerAdv is changed using the keys, or using the mouse.
 

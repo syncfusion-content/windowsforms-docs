@@ -6,7 +6,7 @@ platform: WindowsForms
 control: CalendarDateTime
 documentation: ug
 ---
-# Clear a date selection programmatically in WindowsForms
+# Clear a date selection programmatically in Windows Forms
 
 This page explains How to clear a date selection programmatically and more details.
 

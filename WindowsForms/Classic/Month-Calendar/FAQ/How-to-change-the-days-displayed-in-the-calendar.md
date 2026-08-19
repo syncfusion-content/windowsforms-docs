@@ -6,7 +6,7 @@ platform: WindowsForms
 control: CalendarDateTime
 documentation: ug
 ---
-# Change the days displayed in the calendar in WindowsForms
+# Change the days displayed in the calendar in Windows Forms
 
 This page about How to change the days displayed in the calendar and more details.
 

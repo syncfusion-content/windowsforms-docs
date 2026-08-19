@@ -6,7 +6,7 @@ platform: WindowsForms
 control: Calendar
 documentation: ug
 ---
-# Event raised on month change via arrow button in WindowsForms
+# Event raised on month change via arrow button in Windows Forms
 
 When the month in the DateTimePickerAdv is changed using Arrow button, ValueChanged event is raised.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Event Handling in Windows Forms MonthCalendarAdv | Syncfusion
-description: Learn about event handling in Syncfusion Windows Forms MonthCalendarAdv control and more details.
+description: Learn about event handling in Syncfusion Windows Forms MonthCalendarAdv control, including DateChanged and more.
 platform: WindowsForms
 control: CalendarDateTime
 documentation: ug

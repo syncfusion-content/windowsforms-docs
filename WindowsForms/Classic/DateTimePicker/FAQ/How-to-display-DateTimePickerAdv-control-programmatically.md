@@ -6,7 +6,7 @@ platform: WindowsForms
 control: DateTimePickerAdv
 documentation: ug
 ---
-# Display DateTimePickerAdv programmatically in WindowsForms
+# Display DateTimePickerAdv programmatically in Windows Forms
 
 This page explains How to display DateTimePickerAdv control programmatically and more details.
 

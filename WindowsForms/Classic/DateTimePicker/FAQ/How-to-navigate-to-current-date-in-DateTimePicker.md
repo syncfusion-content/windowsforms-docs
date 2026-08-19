@@ -7,7 +7,7 @@ control: DateTimePickerAdv
 documentation: ug
 ---
 
-# Navigate to current date in DateTimePickerAdv in WindowsForms
+# Navigate to current date in DateTimePickerAdv in Windows Forms
 
 This page explains How to navigate to current date in DateTimePickerAdv and more details.
 

@@ -6,7 +6,7 @@ platform: WindowsForms
 control: DateTimePickerAdv
 documentation: ug
 ---
-# How to change date in ReadOnly DateTimePickerAdv in WindowsForms
+# How to change date in ReadOnly DateTimePickerAdv in Windows Forms
 
 This page explains How to navigate to current date in DateTimePickerAdv and more details.
 
