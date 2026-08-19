@@ -11,4 +11,4 @@ GridControl supports Multiple Document Interface (MDI). This support is used to 
 
 ![MDI in Windows Forms Grid Control](Multiple-Document-Interface_images/Multiple-Document-Interface_img1.jpeg)
 
-A sample demonstrating this feature is available under the following [Sample Location](https://github.com/syncfusion/winforms-demos/tree/master/gridcontrol/Product%20Showcase/Grid%20Pad%20Demo)
+A sample demonstrating this feature is available under the following [Sample Location](https://github.com/syncfusion/winforms-demos/tree/master/gridcontrol/Product%20Showcase/Grid%20Pad%20Demo).
