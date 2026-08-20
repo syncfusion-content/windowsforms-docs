@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Backcolor of a Single Cell in DataBoundGrid | Syncfusion
-description: Learn about How to Change the Backcolor of a Single Cell support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
+title: Change Cell BackColor in WinForms GridDataBoundGrid | Syncfusion®
+description: Change the BackColor of a specific cell in Syncfusion® Windows Forms GridDataBoundGrid using the PrepareViewStyleInfo event for custom cell styling.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 
-# Backcolor of a Single Cell in DataBoundGrid
+# How to Change Cell BackColor in WinForms GridDataBoundGrid
 
 This page explains How to Change the BackColor of a Single Cell and more details.
 
