@@ -31,6 +31,11 @@ The following code example demonstrates how to create a Scatter Chart.
 {% tabs %}
 {% highlight c# %}
 
+ChartTitle title = new ChartTitle() { Text = "Product  Comparison Chart" };
+chartControl.Titles.Add(title);
+
+chartControl.PrimaryXAxis.Title = "Range(Miles)";
+chartControl.PrimaryYAxis.Title = "Capacity(Tonnes)";
 ChartSeries series = new ChartSeries("Technology AAA", ChartSeriesType.Scatter);
 series.Text = series.Name;
 
@@ -56,7 +61,20 @@ chartControl.Series.Add(ChartSeries);
 {% endhighlight %}
 {% highlight vb %}
 
+' Chart Title
+Dim title As New ChartTitle() With {
+    .Text = "Product  Comparison Chart"
+}
+
+chartControl.Titles.Add(title)
+
+' Axis Titles
+chartControl.PrimaryXAxis.Title = "Range(Miles)"
+chartControl.PrimaryYAxis.Title = "Capacity(Tonnes)"
+
+' Technology AAA Series
 Dim series As New ChartSeries("Technology AAA", ChartSeriesType.Scatter)
+
 series.Text = series.Name
 
 series.Points.Add(10, 36, 3)
@@ -67,16 +85,18 @@ series.Points.Add(90, 35, 4)
 
 chartControl.Series.Add(series)
 
-Dim series2 As New ChartSeries("Technology BBB", ChartSeriesType.Scatter)
-series2.Text = series2.Name
+' Technology BBB Series
+Dim chartSeries As New ChartSeries("Technology BBB", ChartSeriesType.Scatter)
 
-series2.Points.Add(10, 18, 4)
-series2.Points.Add(30, 29, 3)
-series2.Points.Add(50, 18, 2)
-series2.Points.Add(70, 24, 4)
-series2.Points.Add(90, 15, 4)
+chartSeries.Text = chartSeries.Name
 
-chartControl.Series.Add(series2)
+chartSeries.Points.Add(10, 18, 4)
+chartSeries.Points.Add(30, 29, 3)
+chartSeries.Points.Add(50, 18, 2)
+chartSeries.Points.Add(70, 24, 4)
+chartSeries.Points.Add(90, 15, 4)
+
+chartControl.Series.Add(chartSeries)
 
 {% endhighlight %}
 {% endtabs %}

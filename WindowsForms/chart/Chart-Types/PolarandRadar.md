@@ -15,7 +15,7 @@ You can also customize the following features for Polar and Radar charts:
 
 * **Draw Type**: The rendering style of the chart can be customized using the `RadarItem` property of `ConfigItems`.
 
-* **Radar Axis Style**: The appearance of the radar axis can be customized using the [RadarStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_RadarStyle) property in Rader chart.
+* **Radar Axis Style**: The appearance of the radar axis can be customized using the [RadarStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_RadarStyle) property in Radar chart.
 
 * **Inversed Polar and Radar Charts**: Polar and Radar charts can be rendered in the clockwise direction using the [Inversed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_Inversed) property in [ChartAxis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html).
 

@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-## Range Area in Windows Forms Chart
+# Range Area in Windows Forms Chart
 
 A Range Area Chart is similar to an Area Chart, but it requires two Y-values for each X-value: a start (lower bound) and an end (upper bound). The chart fills the area between these two values, making it easy to visualize the range of data for each point.
 

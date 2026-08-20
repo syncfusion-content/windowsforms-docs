@@ -119,7 +119,7 @@ Stocks.ConfigItems.HeatMapItem.EndText = "Utah"
 
 ![HeatMap Chart in WindowsForms](../Chart-Types_images/windowsforms-heat-map-charts.png)
 
-### Features
+## Features
 
 The following table lists the properties of heat map chart with descriptions.
 

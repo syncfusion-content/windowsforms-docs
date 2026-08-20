@@ -15,7 +15,6 @@ You can also customize the following feature:
 
 * **Chart 3-D Mode**: A chart can be rendered in 3-D mode by enabling the [Series3D](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Series3D) property.
 
-
 ## Funnel Chart
 
 A Funnel Chart is a single-series chart that represents data as portions of 100% and does not use axes. It is commonly used to visualize stages in a process, such as a sales pipeline, and can be displayed in 2D or 3D mode.
@@ -197,7 +196,5 @@ The following chart series properties are used as customization options for accu
 [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border), [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext), [DrawSeriesNameInDepth](https://help.syncfusion.com/windowsforms/chart/chart-series#drawseriesnameindepth), [FigureBase](https://help.syncfusion.com/windowsforms/chart/chart-series#figurebase), [GapRatio](https://help.syncfusion.com/windowsforms/chart/chart-series#gapratio), [HighlightInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#highlightinterior), [LabelPlacement](https://help.syncfusion.com/windowsforms/chart/chart-series#labelplacement), [LabelStyle](https://help.syncfusion.com/windowsforms/chart/chart-series#labelstyle), [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip), [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font), [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior), [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem), [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name), [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat), [SmartLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#smartlabels), [Summary](https://help.syncfusion.com/windowsforms/chart/chart-series#summary), [Text](https://help.syncfusion.com/windowsforms/chart/chart-series#text-series), [TextColor](https://help.syncfusion.com/windowsforms/chart/chart-series#textcolor), [TextFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#textformat), [TextOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#textoffset), [TextOrientation](https://help.syncfusion.com/windowsforms/chart/chart-series#textorientation), [Visible](https://help.syncfusion.com/windowsforms/chart/chart-series#visible), [ShowDataBindLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#showdatabindlabels).
 
 N>
-
 * The [PyramidMode](https://help.syncfusion.com/windowsforms/chart/chart-series#pyramidmode) property is supported only in the `Pyramid Chart` as a customization option.
-
 * The [FunnelMode](https://help.syncfusion.com/windowsforms/chart/chart-series#funnelmode) property is supported only in the `Funnel Chart` as a customization option.

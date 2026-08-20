@@ -30,7 +30,11 @@ Chart details for area chart.
 {% tabs %}
 {% highlight c# %}
 
-ChartSeries firstServer = new ChartSeries("Server 1", Area);
+ChartTitle title = new ChartTitle() { Text = "Daily Server Load" };
+chartControl.Titles.Add(title);
+chartControl.PrimaryYAxis.Title = "Number of Medals Won";
+
+ChartSeries firstServer = new ChartSeries("Server 1", ChartSeriesType.Area);
 firstServer.Points.Add(10, 300);
 firstServer.Points.Add(20, 500);
 firstServer.Points.Add(30, 380);
@@ -47,7 +51,18 @@ chartControl.LegendsPlacement = ChartPlacement.Outside;
 {% endhighlight %}
 {% highlight vb %}
 
+' Chart Title
+Dim title As New ChartTitle() With {
+    .Text = "Daily Server Load"
+}
+
+chartControl.Titles.Add(title)
+
+chartControl.PrimaryYAxis.Title = "Server Load (MB Bytes)"
+
+' Area Series
 Dim firstServer As New ChartSeries("Server 1", ChartSeriesType.Area)
+
 firstServer.Points.Add(10, 300)
 firstServer.Points.Add(20, 500)
 firstServer.Points.Add(30, 380)
@@ -56,10 +71,11 @@ firstServer.Points.Add(50, 390)
 
 chartControl.Series.Add(firstServer)
 
+' Legend Settings
 chartControl.Legend.Visible = True
 chartControl.Legend.Position = ChartDock.Top
 chartControl.LegendAlignment = ChartAlignment.Center
-chartControl.LegendsPlacement = ChartPlacement.Outside
+chartControl.LegendsPlacement
 
 {% endhighlight %}
 {% endtabs %}
@@ -206,22 +222,25 @@ chartControl.Series.Add(thirdServer);
 {% endhighlight %}
 {% highlight vb %}
 
+' Server 1
 Dim firstServer As New ChartSeries("Server 1", ChartSeriesType.StackingArea100)
+
 firstServer.Points.Add(10, 300)
 firstServer.Points.Add(20, 500)
 firstServer.Points.Add(30, 380)
 firstServer.Points.Add(40, 450)
 firstServer.Points.Add(50, 390)
 
-chartControl.Series.Add(firstServer)
-
+' Server 2
 Dim secondServer As New ChartSeries("Server 2", ChartSeriesType.StackingArea100)
+
 secondServer.Points.Add(10, 550)
 secondServer.Points.Add(20, 300)
 secondServer.Points.Add(30, 600)
 secondServer.Points.Add(40, 500)
 secondServer.Points.Add(50, 750)
 
+' Server 3
 Dim thirdServer As New ChartSeries("Server 3", ChartSeriesType.StackingArea100)
 
 thirdServer.Points.Add(10, 400)
@@ -230,6 +249,7 @@ thirdServer.Points.Add(30, 480)
 thirdServer.Points.Add(40, 550)
 thirdServer.Points.Add(50, 490)
 
+' Add Series
 chartControl.Series.Add(firstServer)
 chartControl.Series.Add(secondServer)
 chartControl.Series.Add(thirdServer)
