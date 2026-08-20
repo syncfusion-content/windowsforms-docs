@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Resize RowHeight Based Font in WinForms Grid Control | Syncfusion®
+title: Resize RowHeight Based on Font in WinForms Grid Control | Syncfusion®
 description: Resize row height based on cell font and content in Syncfusion® Windows Forms Grid Control using row resizing events and text measurement methods.
 platform: windowsforms
 control: Grid Control
