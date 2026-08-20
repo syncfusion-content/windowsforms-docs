@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Coded UI Automation in Windows Forms GridGrouping control | Syncfusion®
-description: Learn about Coded UI Automation support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
+title: Coded UI Automation in Windows Forms GridGroupingControl | Syncfusion®
+description: The coded UI automation feature in GridGroupingControl supports automated testing, assertions, recording, playback, and UI validation using Coded UI technology.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# Coded UI Automation in Windows Forms GridGrouping
+# Coded UI Automation in Windows Forms GridGroupingControl
 The GridGroupingControl can be automated with Coded UI testing automation. Using Visual Studio Premium, Visual Studio Ultimate or Visual Studio Enterprise, user can create a coded UI Test Project which will be used to test and automate the UI of the GridGroupingControl. The validation can be done at grid level or cell level.
 
 Levels of Microsoft Coded UI Test (CUIT) support,
