@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Change-the-Color-of-All-Headers | Windows Forms | Syncfusion
-description: Learn here all about how to change the color of all headers of Syncfusion Windows Forms Gridcontrol and more.
+title: How to Change Header Colors in WinForms Grid Control | Syncfusion®
+description: Change the color of all headers in Syncfusion® Windows Forms Grid Control using header base styles and customize header appearance and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to change the color of all headers in WinForms Grid control
+# How to Change Header Colors in Windows Forms Grid Control
 
 The styles of the Header cells are controlled by base styles. The "Header" base style will affect all column headers including cell 0,0. The "Column Header" base style will affect the column headers excluding cell 0,0. The "RowHeader" base style will affect all row headers excluding cell 0,0.
 
