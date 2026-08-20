@@ -3,7 +3,7 @@ layout: post
 title: Binding to a DataTable in WinForms GridDataBoundGrid | Syncfusion®
 description: Bind data from a DataTable to the Syncfusion® Windows Forms GridDataBoundGrid control and display rows and columns with simple data source configuration.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

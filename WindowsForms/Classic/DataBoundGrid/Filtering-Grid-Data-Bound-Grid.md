@@ -3,7 +3,7 @@ layout: post
 title: Filtering in Windows Forms GridDataBoundGrid | Syncfusion®
 description: Filter data in the Syncfusion® WinForms GridDataBoundGrid using DataView RowFilter, GridFilterBar, and display member-based filtering options.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

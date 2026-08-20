@@ -3,7 +3,7 @@ layout: post
 title: Record Navigation Bar in Windows Forms GridDataBoundGrid | Syncfusion®
 description: Navigate records efficiently in the Syncfusion® WinForms GridDataBoundGrid using the Record Navigation Bar for quick access and data browsing.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

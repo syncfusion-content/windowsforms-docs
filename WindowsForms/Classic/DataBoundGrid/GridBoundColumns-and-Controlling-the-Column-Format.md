@@ -3,7 +3,7 @@ layout: post
 title: GridBoundColumns in Windows Forms GridDataBoundGrid | Syncfusion®
 description: Customize column appearance and behavior in the Syncfusion® WinForms GridDataBoundGrid using GridBoundColumns and Binder-generated columns.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

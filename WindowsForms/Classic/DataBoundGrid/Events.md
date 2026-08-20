@@ -3,7 +3,7 @@ layout: post
 title: Events in Windows Forms GridDataBoundGrid | Syncfusion®
 description: Explore current cell, mouse, and control events in the Syncfusion® WinForms GridDataBoundGrid to handle user interactions and customize behavior.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

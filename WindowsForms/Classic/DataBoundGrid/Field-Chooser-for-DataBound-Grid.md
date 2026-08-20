@@ -3,7 +3,7 @@ layout: post
 title: Field Chooser in Windows Forms GridDataBoundGrid | Syncfusion®
 description: Customize visible columns in the Syncfusion® WinForms GridDataBoundGrid using the Field Chooser to add, remove, and manage column display.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Changing Column Order in Windows Forms GridDataBoundGrid | Syncfusion®
 description: Reorder columns in the Syncfusion® Windows Forms GridDataBoundGrid control using the MoveRange method to customize column arrangement and display order.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

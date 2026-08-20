@@ -3,7 +3,7 @@ layout: post
 title: .NET Grid Migration in Windows Forms GridDataBoundGrid | Syncfusion®
 description: Migrate .NET Grid applications to Syncfusion® WinForms GridDataBoundGrid using equivalent properties, events, and methods for a seamless transition.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

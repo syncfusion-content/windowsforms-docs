@@ -3,7 +3,7 @@ layout: post
 title: Error Provider Support in WinForms GridDataBoundGrid | Syncfusion®
 description: Display error icons and validation messages in the Syncfusion® Windows Forms GridDataBoundGrid control to alert users and handle invalid data entry.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

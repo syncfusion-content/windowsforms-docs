@@ -3,7 +3,7 @@ layout: post
 title: Multi-Row Records in Windows Forms GridDataBoundGrid | Syncfusion®
 description: Display a single data record across multiple rows in the Syncfusion® WinForms GridDataBoundGrid to improve readability and custom record layouts.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

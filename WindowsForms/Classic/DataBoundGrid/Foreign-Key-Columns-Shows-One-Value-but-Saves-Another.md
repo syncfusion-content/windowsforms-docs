@@ -3,7 +3,7 @@ layout: post
 title: Foreign Key Columns in Windows Forms GridDataBoundGrid | Syncfusion®
 description: Display meaningful values while storing foreign key data in the Syncfusion® WinForms GridDataBoundGrid using ValueMember and DisplayMember mapping.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

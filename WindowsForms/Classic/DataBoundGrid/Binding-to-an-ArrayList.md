@@ -3,7 +3,7 @@ layout: post
 title: Binding to an ArrayList in WinForms GridDataBoundGrid | Syncfusion®
 description: Bind an ArrayList containing business objects to the Syncfusion® Windows Forms GridDataBoundGrid control and display data through public object properties.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

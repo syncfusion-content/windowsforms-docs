@@ -3,7 +3,7 @@ layout: post
 title: Sort by DisplayMember in Windows Forms GridDataBoundGrid | Syncfusion®
 description: Sort data by display values instead of value members in the Syncfusion® WinForms GridDataBoundGrid using custom DisplayMember-based sorting.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

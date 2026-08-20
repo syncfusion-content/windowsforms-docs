@@ -3,7 +3,7 @@ layout: post
 title: Multiple Headers in Windows Forms GridDataBoundGrid | Syncfusion®
 description: Display multiple row and column headers in the Syncfusion® WinForms GridDataBoundGrid to organize data and enhance header presentation.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

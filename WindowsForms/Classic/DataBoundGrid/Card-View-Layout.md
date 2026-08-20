@@ -3,7 +3,7 @@ layout: post
 title: Card View Layout in Windows Forms GridDataBoundGrid | Syncfusion®
 description: Display records as customizable cards in the Syncfusion® WinForms GridDataBoundGrid control with flexible layouts, styling, and card-based data presentation.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

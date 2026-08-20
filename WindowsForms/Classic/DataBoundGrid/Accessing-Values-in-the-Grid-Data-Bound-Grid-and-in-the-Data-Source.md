@@ -3,7 +3,7 @@ layout: post
 title: Accessing Values in Windows Forms GridDataBoundGrid | Syncfusion®
 description: Access values in the Syncfusion® WinForms GridDataBoundGrid control using row and column indexes or retrieve data based on column names through the Binder API.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

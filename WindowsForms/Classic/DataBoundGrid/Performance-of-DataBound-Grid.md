@@ -3,7 +3,7 @@ layout: post
 title: Performance in Windows Forms GridDataBoundGrid | Syncfusion®
 description: Optimize data handling in the Syncfusion® WinForms GridDataBoundGrid with high-performance data loading, batch updates, and efficient record management.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Data Relations in Windows Forms GridDataBoundGrid | Syncfusion®
 description: Display hierarchical data in the Syncfusion® WinForms GridDataBoundGrid using nested relations, drop-down grids, tree lines, and expand/collapse features.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

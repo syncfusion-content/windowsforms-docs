@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with WinForms GridDataBoundGrid Control | Syncfusion®
 description: Learn how to get started with the Syncfusion® WinForms GridDataBoundGrid control. Explore data binding, editing, selection, sorting, and customization options.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 
