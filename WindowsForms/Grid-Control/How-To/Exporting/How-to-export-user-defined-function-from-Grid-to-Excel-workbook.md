@@ -7,7 +7,7 @@ control: Grid Control
 documentation: ug
 ---
 
-# How to Export User-Defined to Excel in Windows Forms Grid Control
+# How to Export User-Defined Functions to Excel in Windows Forms Grid Control
 
 To export user-defined formula library function from Grid to Excel:
 
