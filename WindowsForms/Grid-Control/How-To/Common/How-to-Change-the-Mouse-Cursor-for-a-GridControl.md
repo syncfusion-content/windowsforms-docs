@@ -1,15 +1,15 @@
 ---
 layout: post
-title: How to Change the Mouse Cursor for a WinForms GridControl | Syncfusion
-description: Learn here all about how to change the mouse cursor in Syncfusion Windows Forms GridControl and more.
+title: Change Mouse Cursor in Windows Forms Grid Control | Syncfusion®
+description: Change the mouse cursor in Syncfusion® Windows Forms Grid Control by overriding cursor behavior and applying custom cursor settings and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to Change the Mouse Cursor in Windows Forms GridControl
+# How to Change the Mouse Cursor in Windows Forms Grid Control
 
-### Introduction
+## Introduction
 
 The simplest way is to derive the grid and override OnSetCursor. You can add additional checks to narrow down where to set the cursor.
 
