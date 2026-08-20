@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-set-conditional-formatting-in-the-GroupingG | Windows Forms | Syncfusion
-description: how to set conditional formatting in the groupinggrid
+title: Conditional Formatting in WinForms GridGroupingControl | Syncfusion®
+description: Set conditional formatting in Syncfusion® WinForms GridGroupingControl, its conditional format descriptors, expressions, cell styling, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Set Conditional Formatting in the GroupingGrid
+# How to Set Conditional Formatting in WinForms GridGroupingControl
 
 To set up conditional formatting in the GroupingGrid, use the following code.
 

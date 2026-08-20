@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Access-the-Nested-Tables-in-GridGroupingCon | Windows Forms | Syncfusion
-description: how to access the nested tables in gridgroupingcontrol
+title: Access Nested Tables in WinForms GridGroupingControl | Syncfusion®
+description: Access nested tables in Syncfusion® WinForms GridGroupingControl, its child tables, records, table descriptors, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Access the Nested Tables in GridGroupingControl
+# How to Access Nested Tables in WinForms GridGroupingControl
 
 You can get access to a nested table inside a record using the following code.
 

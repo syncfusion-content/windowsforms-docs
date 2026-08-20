@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-create-multiple-rows-per-record-in-a-GridGr | Windows Forms | Syncfusion
-description: how to create multiple rows per record in a gridgroupingcontrol
+title: Multiple Rows per Record in WinForms GridGroupingControl | Syncfusion®
+description: Create multiple rows per record in Syncfusion® WinForms GridGroupingControl, its ColumnSets, column span descriptors, custom layouts, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Create Multiple Rows per Record in a GridGroupingControl
+# How to Create Multiple Rows per Record in WinForms GridGroupingControl
 
 This can be done by using ColumnSets property of GridGrouping control.
 

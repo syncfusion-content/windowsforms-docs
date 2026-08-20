@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-create-weighted-summaries-in-GridGroupingCo | Windows Forms | Syncfusion
-description: how to create weighted summaries in gridgroupingcontrol
+title: Weighted Summaries in WinForms GridGroupingControl | Syncfusion®
+description: Create weighted summaries in Syncfusion® WinForms GridGroupingControl, its custom summary calculations, weighted averages, summary descriptors, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Create Weighted Summaries in GridGroupingControl
+# How to Create Weighted Summaries in WinForms GridGroupingControl
 
 You can create custom summaries that perform weighted average calculations using code naming convention to pass the column holding the weights to the summary descriptor. Refer to the code snippet below, which illustrates this.
 
