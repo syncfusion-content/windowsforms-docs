@@ -2,7 +2,7 @@
 layout: post
 title: Zooming in Windows Forms GridGroupingControl | Syncfusion®
 description: Zooming in Windows Forms GridGroupingControl supports grid and cell level zooming with customizable zoom modes, factors, borders, and sizes.
-platform: WindowsForms
+platform: windowsforms
 control: GridGroupingControl
 documentation: ug
 ---

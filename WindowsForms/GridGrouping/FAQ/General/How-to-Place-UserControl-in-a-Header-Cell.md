@@ -7,7 +7,7 @@ control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Place UserControl in HeaderCell in WinForms GridGroupingControl
+# How to Place UserControl in HeaderCell of WinForms GridGroupingControl
 
 To have User Control in GridGroupingControl, GridGenericCellModel and GridGenericCellRenderer classes must be derived and User Control designed must be made as a cell model in the GridGroupingControl using these derived classes.
 

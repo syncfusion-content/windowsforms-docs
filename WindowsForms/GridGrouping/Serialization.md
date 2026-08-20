@@ -2,7 +2,7 @@
 layout: post
 title: Serialization in Windows Forms GridGroupingControl | Syncfusion®
 description: Serialization in Windows Forms GridGroupingControl supports XML serialization, schema persistence, look and feel settings, and GridExcelFilter serialization.
-platform: WindowsForms
+platform: windowsforms
 control: GridGroupingControl
 documentation: ug
 ---

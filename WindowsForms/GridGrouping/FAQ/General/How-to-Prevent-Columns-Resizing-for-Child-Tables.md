@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Prevent Column Resizing in WinForms GridGroupingControl | Syncfusion®
-description: Prevent columns resizing for child tables in Syncfusion® WinForms GridGroupingControl, its child table customization, resizing behavior, and more.
+description: Prevent column resizing for child tables in Syncfusion® WinForms GridGroupingControl, its child table customization, resizing behavior, and more.
 platform: windowsforms
 control: GridGroupingControl
 documentation: ug

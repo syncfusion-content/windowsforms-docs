@@ -2,7 +2,7 @@
 layout: post
 title: Sorting in Windows Forms GridGroupingControl | Syncfusion®
 description: Sorting in Windows Forms GridGroupingControl supports single and multi-column sorting, custom sorting, sort icons, grouped sorting, and events.
-platform: WindowsForms
+platform: windowsforms
 control: GridGroupingControl
 documentation: ug
 ---

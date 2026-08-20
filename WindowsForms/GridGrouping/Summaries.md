@@ -2,7 +2,7 @@
 layout: post
 title: Summaries in Windows Forms GridGroupingControl | Syncfusion®
 description: Summaries in Windows Forms GridGroupingControl support aggregate, caption, custom, multi-column, and group summaries with flexible formatting and styling.
-platform: WindowsForms
+platform: windowsforms
 control: GridGroupingControl
 documentation: ug
 ---

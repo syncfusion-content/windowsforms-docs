@@ -2,7 +2,7 @@
 layout: post
 title: Touch Support in Windows Forms GridGroupingControl | Syncfusion®
 description: Touch Support in Windows Forms GridGroupingControl enables swipe scrolling, touch selection, panning, zooming, and touch-friendly interaction features.
-platform: WindowsForms
+platform: windowsforms
 control: GridGroupingControl
 documentation: ug
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize Child, Group in WinForms GridGroupingControl | Syncfusion®
-description: Efficiently customize child tables and groups in Syncfusion® Windows Forms GridGroupingControl, its custom engine implementation, initialization methods.
+description: Efficiently customize child tables and groups in Syncfusion® Windows Forms GridGroupingControl, its custom engine implementation, and initialization methods.
 platform: windowsforms
 control: GridGroupingControl
 documentation: ug

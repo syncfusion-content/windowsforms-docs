@@ -2,7 +2,7 @@
 layout: post
 title: Visual Styles in Windows Forms GridGroupingControl | Syncfusion®
 description: Visual Styles in Windows Forms GridGroupingControl support built-in themes, skin management, custom styling, Metro colors, and Office 2016 theme customization.
-platform: WindowsForms
+platform: windowsforms
 control: GridGroupingControl
 documentation: ug
 ---

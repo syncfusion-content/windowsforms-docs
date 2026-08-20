@@ -2,7 +2,7 @@
 layout: post
 title: ToolTip in Windows Forms GridGroupingControl | Syncfusion®
 description: ToolTip in Windows Forms GridGroupingControl supports cell, column, and nested table tooltips with customizable delays, events, and display behavior.
-platform: WindowsForms
+platform: windowsforms
 control: GridGroupingControl
 documentation: ug
 ---
