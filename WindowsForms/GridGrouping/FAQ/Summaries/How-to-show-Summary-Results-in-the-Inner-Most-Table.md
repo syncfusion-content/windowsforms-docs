@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-show-Summary-Results-in-the-Inner-Most-Tabl | Windows Forms | Syncfusion
-description: how to show summary results in the inner most table on every parent level in nested related tables
+title: Show Summary Results in WinForms GridGroupingControl | Syncfusion®
+description: Show summary results in the innermost table of nested related tables in Syncfusion® WinForms GridGroupingControl, its summary calculation, nested tables.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Show Summary Results in the Inner Most Table on every Parent Level in Nested Related Tables
+# How to Show Summary Results in WinForms GridGroupingControl
 
 The summary results of the nested tables can be obtained by using GetSummaryText method of GridEngine. 
 

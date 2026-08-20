@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-access-all-the-groups | Windows Forms | Syncfusion
-description: how to access all the groups
+title: Access All the Groups in WinForms GridGroupingControl | Syncfusion®
+description: Access all the groups in Syncfusion® WinForms GridGroupingControl, its group hierarchy, records, group levels, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Access All the Groups
+# How to Access All the Groups in WinForms GridGroupingControl
 
 To access all the groups and records categorized under it, use the following code.
 

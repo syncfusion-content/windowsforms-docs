@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-get-rowindex-given-the-record-index | Windows Forms | Syncfusion
-description: how to get rowindex given the record index
+title: RowIndex by RecordIndex in WinForms GridGroupingControl | Syncfusion®
+description: Get a row index by record index in Syncfusion® WinForms GridGroupingControl, its display elements, record mapping, row retrieval, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Get Row Index Given the Record Index
+# How to Get RowIndex by RecordIndex in WinForms GridGroupingControl
 
 This can be done using the following code snippet.
 
