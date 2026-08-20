@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-reject-the-changes-made-to-GridGroupingCont | Windows Forms | Syncfusion
-description: how to reject the changes made to gridgroupingcontrol
+title: Reject Changes Made to WinForms GridGroupingControl | Syncfusion®
+description: Reject changes made to Syncfusion® WinForms GridGroupingControl, its data source updates, change tracking, data rollback operations, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Reject the Changes made to GridGroupingControl
+# How to Reject Changes Made to WinForms GridGroupingControl
 
 By default, any changes made to GridGroupingControl will affect the underlying data source. In order to cancel the changes, you can make use of RejectChanges method to reject the recent changes made to the data source. Also, ensure that AcceptChanges method is called after date source is filled, as RejectChanges method will roll back all the changes made to the data source since the last time the AcceptChanges method was called.
 

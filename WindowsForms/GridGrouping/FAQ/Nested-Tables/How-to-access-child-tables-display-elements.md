@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-access-child-tables-display-elements | Windows Forms | Syncfusion
-description: how to access child table's display elements
+title: ChildTable Elements in WinForms GridGroupingControl | Syncfusion®
+description: Access child table display elements in Syncfusion® WinForms GridGroupingControl, its nested tables, display elements, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Access Child Table's Display Elements
+# How to Get ChildTable DisplayElements in WinForms GridGroupingControl
 
 This can be done using the code below.
 

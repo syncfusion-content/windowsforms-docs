@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Capture-Function-Keys-When-the-Current-Cell-is-in-active-edit-mode | Windows Forms | Syncfusion
-description: how to capture function keys when the current cell is in active edit mode
+title: Capture Function Keys in WinForms GridGroupingControl | Syncfusion®
+description: Capture function keys in active edit mode in Syncfusion® Windows Forms GridGroupingControl, its key message handling, editing behavior, and more.
 platform: windowsforms
-control: Grid
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Capture Function Keys When the Current Cell is in Active Edit Mode
+# How to capture function keys in Windows Forms GridGroupingControl
 
 While the grid cell is not actively edited, the grid itself will get these keystrokes. In this case, event handlers like grid.CurrentCellKeyDown and grid.KeyDown can be used to catch the keys. When the current cell is actively being edited, the grid does not automatically catch these keys. In this case, you can use Grid.CurrentCellControlKeyMessage to catch the function keys. You will have to manually subscribe to it. Note that this event may be hit multiple times for each keystroke (eg., for both KeyDown and KeyUp). You can check e.Msg property to see what key message is being processed by your event handler.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-set-texts-in-the-preview-record | Windows Forms | Syncfusion
-description: how to set texts in the preview record
+title: Texts in Preview Record in WinForms GridGroupingControl | Syncfusion®
+description: Set texts in the preview record in Syncfusion® WinForms GridGroupingControl, its preview row customization, text styling, formatting, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Set Texts in the Preview Record
+# How to Set Texts in the Preview Record in WinForms GridGroupingControl
 
 This can be done by handling QueryCellStyleInfo event.
 
