@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Card View Layout in Windows Forms xptoolbar control | Syncfusion
-description: Learn about Card View Layout support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
+title: Card View Layout in Windows Forms GridDataBoundGrid | Syncfusion®
+description: Display records as customizable cards in the Syncfusion® WinForms GridDataBoundGrid control with flexible layouts, styling, and card-based data presentation.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 
-# Card View Layout in Windows Forms GridDataBoundGrid(Classic)
+# Card View Layout in Windows Forms GridDataBoundGrid
 
 The card view displays records as separate cards arranged in a grid-like layout. It is implemented similar to binding GridDataBoundGrid control to GridCardView object.
 

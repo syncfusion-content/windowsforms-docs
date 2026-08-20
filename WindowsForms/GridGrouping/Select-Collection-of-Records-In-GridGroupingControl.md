@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Select Collection of Records In GridGrouping Control | Syncfusion®
-description: Learn about Select Collection of Records In GridGroupingControl support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
+title: Select Records in Windows Forms GridGroupingControl | Syncfusion®
+description: Select Collection of Records in Windows Forms GridGroupingControl supports selecting all records or specified records using built-in record selection methods.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# Select Collection of Records In GridGroupingControl in Windows Forms
+# Select Collection of Records in Windows Forms GridGroupingControl
 
 Essential<sup>®</sup> GridGroupingControl now supports two methods for selecting records in grid table. 
 

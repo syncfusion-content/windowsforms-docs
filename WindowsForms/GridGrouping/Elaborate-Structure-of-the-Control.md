@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Elaborate Structure of the Control in GridGrouping | Syncfusion®
-description: Learn about Elaborate Structure of the Control support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
+title: Elaborate Structure of Windows Forms GridGroupingControl | Syncfusion®
+description: The elaborate structure in GridGroupingControl provides caption sections, column headers, filter bars, summaries, preview sections, group drop areas, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# Elaborate Structure of the Control in Windows Forms GridGrouping
+# Elaborate Structure of the Control in WinForms GridGroupingControl
 
 This section lists the important elements that are used by the grouping grid to organize data. These grid elements can have specific appearance and behavior. The following screen shot points out the various grid elements.
 
