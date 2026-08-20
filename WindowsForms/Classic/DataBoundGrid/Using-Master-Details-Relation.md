@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Master-Details Relation in Windows Forms GridDataBoundGrid | Syncfusion®
+title: Master-Details Relation in WinForms GridDataBoundGrid | Syncfusion®
 description: Display and manage related master and detail records in the Syncfusion® WinForms GridDataBoundGrid using DataRelation and data binding.
 platform: windowsforms
 control: GridDataBoundGrid

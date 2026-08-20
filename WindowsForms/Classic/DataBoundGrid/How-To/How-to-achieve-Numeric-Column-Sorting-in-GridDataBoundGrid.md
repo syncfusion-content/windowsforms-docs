@@ -78,7 +78,7 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-#### Sample Link
+## Sample Link
 
 To view a sample on this, see [Numeric Column Sorting](http://www.syncfusion.com/downloads/Support/DirectTrac/72524/GridDataBoundGridCustomSorting1509447642-1313190486.zip).
 

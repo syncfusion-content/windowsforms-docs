@@ -7,7 +7,7 @@ control: GridDataBoundGrid
 documentation: ug
 ---
 
-# How to change the BackColor of a column in Windows Forms GridDataBoundGrid
+# How to change the BackColor of a column in WinForms GridDataBoundGrid
 
  This page explains How to Change the BackColor of a Column and more details.
 

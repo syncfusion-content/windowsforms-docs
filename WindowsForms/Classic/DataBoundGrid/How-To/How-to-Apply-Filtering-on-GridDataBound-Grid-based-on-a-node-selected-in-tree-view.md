@@ -79,7 +79,7 @@ End Sub
 
 
 
-#### Sample Link
+## Sample Link
 
 A sample can be downloaded from the following location: [http://www.syncfusion.com/downloads/Support/DirectTrac/91763/Syncfusion FTP1-989352783.zip](http://www.syncfusion.com/downloads/Support/DirectTrac/91763/Syncfusion%20FTP1-989352783.zip)
 
