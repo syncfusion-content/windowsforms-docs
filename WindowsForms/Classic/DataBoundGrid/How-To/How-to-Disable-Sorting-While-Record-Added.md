@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to Disable Sorting While Record Added | Windows Forms | Syncfusion
-description: Learn about How to Disable Sorting While Record Added support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
+title: Disable Sort on Add Record in WinForms GridDataBoundGrid | Syncfusion®
+description: Disable automatic sorting when records are added in Syncfusion® WinForms GridDataBoundGrid by implementing custom sorting logic using wrapper classes.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 
-# How to Disable Sorting While Record Added
+# Disable Sorting While Adding Records in WinForms GridDataBoundGrid
 
 This page explains How to Disable Sorting while Record Added and more details.
 
