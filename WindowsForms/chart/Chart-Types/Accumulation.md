@@ -30,6 +30,9 @@ The following code example demonstrates how to create a Funnel Chart.
 {% tabs %}
 {% highlight c# %}
 
+ChartTitle title = new ChartTitle() { Text = "World Crop Statistics" };
+chartControl.Titles.Add(title);
+
 ChartSeries series = new ChartSeries("Funnel chart", ChartSeriesType.Funnel);
 series.Points.Add(0, 25);
 series.Points.Add(1, 25);
@@ -50,9 +53,20 @@ series.Style.TextColor = Color.Black;
 series.ConfigItems.FunnelItem.LabelStyle = ChartAccumulationLabelStyle.OutsideInColumn;
 series.ConfigItems.FunnelItem.LabelPlacement = ChartAccumulationLabelPlacement.Center;
 
+chartControl.Legend.Visible = false;
+
+chartControl.Size = new Size(400, 350);
+
 {% endhighlight %}
 {% highlight vb %}
 
+' Chart Title
+Dim title As New ChartTitle() With {
+    .Text = "World Crop Statistics"
+}
+chartControl.Titles.Add(title)
+
+' Funnel Series
 Dim series As New ChartSeries("Funnel chart", ChartSeriesType.Funnel)
 
 series.Points.Add(0, 25)
@@ -63,17 +77,26 @@ series.Points.Add(4, 25)
 
 chartControl.Series.Add(series)
 
+' Data Labels
 series.Styles(0).Text = "Oats" & vbLf & "4.15%"
 series.Styles(1).Text = "Barley" & vbLf & "12.89%"
 series.Styles(2).Text = "Maize" & vbLf & "21.62%"
 series.Styles(3).Text = "Rice" & vbLf & "23.75%"
 series.Styles(4).Text = "Wheat" & vbLf & "37.5%"
 
+' Series Style
 series.Style.DisplayText = True
 series.Style.TextColor = Color.Black
 
+' Funnel Configuration
 series.ConfigItems.FunnelItem.LabelStyle = ChartAccumulationLabelStyle.OutsideInColumn
 series.ConfigItems.FunnelItem.LabelPlacement = ChartAccumulationLabelPlacement.Center
+
+' Legend
+chartControl.Legend.Visible = False
+
+' Chart Size
+chartControl.Size = New Size(400, 350)
 
 {% endhighlight %}
 {% endtabs %}
@@ -93,6 +116,9 @@ The following code example demonstrates how to create a Pyramid Chart.
 
 {% tabs %}
 {% highlight c# %}
+
+ChartTitle title = new ChartTitle() { Text = "World Crop Statistics" };
+chartControl.Titles.Add(title);
 
 ChartSeries series = new ChartSeries("Pyramid chart", ChartSeriesType.Pyramid);
 series.Points.Add(0, 25);
@@ -114,9 +140,20 @@ series.Style.TextColor = Color.Black;
 series.ConfigItems.PyramidItem.LabelStyle = ChartAccumulationLabelStyle.OutsideInColumn;
 series.ConfigItems.PyramidItem.LabelPlacement = ChartAccumulationLabelPlacement.Center;
 
+chartControl.Legend.Visible = false;
+
+chartControl.Size = new Size(400, 350);
+
 {% endhighlight %}
 {% highlight vb %}
 
+' Chart Title
+Dim title As New ChartTitle() With {
+    .Text = "World Crop Statistics"
+}
+chartControl.Titles.Add(title)
+
+' Pyramid Series
 Dim series As New ChartSeries("Pyramid chart", ChartSeriesType.Pyramid)
 
 series.Points.Add(0, 25)
@@ -127,17 +164,26 @@ series.Points.Add(4, 25)
 
 chartControl.Series.Add(series)
 
+' Labels
 series.Styles(0).Text = "Oats" & vbLf & "4.15%"
 series.Styles(1).Text = "Barley" & vbLf & "12.89%"
 series.Styles(2).Text = "Maize" & vbLf & "21.62%"
 series.Styles(3).Text = "Rice" & vbLf & "23.75%"
 series.Styles(4).Text = "Wheat" & vbLf & "37.5%"
 
+' Display Labels
 series.Style.DisplayText = True
 series.Style.TextColor = Color.Black
 
+' Pyramid Settings
 series.ConfigItems.PyramidItem.LabelStyle = ChartAccumulationLabelStyle.OutsideInColumn
 series.ConfigItems.PyramidItem.LabelPlacement = ChartAccumulationLabelPlacement.Center
+
+' Hide Legend
+chartControl.Legend.Visible = False
+
+' Set Chart Size
+chartControl.Size = New Size(400, 350)
 
 {% endhighlight %}
 {% endtabs %}

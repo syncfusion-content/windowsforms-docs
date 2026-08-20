@@ -39,6 +39,11 @@ firstServer.Points.Add(50, 390);
 
 chartControl.Series.Add(firstServer);
 
+chartControl.Legend.Visible = true;
+chartControl.Legend.Position = ChartDock.Top;
+chartControl.LegendAlignment = ChartAlignment.Center;
+chartControl.LegendsPlacement = ChartPlacement.Outside;
+
 {% endhighlight %}
 {% highlight vb %}
 
@@ -50,6 +55,11 @@ firstServer.Points.Add(40, 450)
 firstServer.Points.Add(50, 390)
 
 chartControl.Series.Add(firstServer)
+
+chartControl.Legend.Visible = True
+chartControl.Legend.Position = ChartDock.Top
+chartControl.LegendAlignment = ChartAlignment.Center
+chartControl.LegendsPlacement = ChartPlacement.Outside
 
 {% endhighlight %}
 {% endtabs %}

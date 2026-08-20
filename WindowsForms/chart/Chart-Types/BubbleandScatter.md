@@ -1,15 +1,15 @@
 ---
 layout: post
-title: XY Charts in Windows Forms Chart control | Syncfusion
-description: Learn here all about the XY Chart types in Syncfusion Essential Studio® Windows Forms Chart control and more details.
+title: Bubble and Scatter in Windows Forms Chart control | Syncfusion
+description: Learn here all about the Bubble and Scatter in Syncfusion Essential Studio® Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# XY Charts (Bubble and Scatter) in Windows Forms Chart
+# Bubble and Scatter in Windows Forms Chart
 
-XY Charts are used to visualize the relationship between two variables by plotting data points on X and Y axes. They help identify trends, patterns, and correlations. Bubble Charts extend Scatter Charts by using bubble size to represent an additional data value.
+Bubble and Scatter(also know as XY Charts) Charts are used to visualize the relationship between two variables by plotting data points on X and Y axes. They help identify trends, patterns, and correlations. Bubble Charts extend Scatter Charts by using bubble size to represent an additional data value.
 
 You can also customize the following features for XY charts chart:
 
