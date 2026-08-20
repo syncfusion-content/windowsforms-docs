@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to set transparent BackColor for GridControl | Syncfusion
-description: Learn here all about how to set transparent backcolor for gridcontrol of Syncfusion Windows Forms Gridcontrol and more.
+title: How to Set TransparentColor in WinForms Grid Control | Syncfusion®
+description: Set a transparent BackColor in Syncfusion® Windows Forms Grid Control using background properties to create transparent grid backgrounds and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to set transparent BackColor for GridControl
+# How to Set Transparent BackColor in Windows Forms Grid Control
 
 Setting the transparent [BackColor](/windowsforms/Grid/Cell-Style-Architecture#backcolor) for a GridControl can be done easily with simple code.
 

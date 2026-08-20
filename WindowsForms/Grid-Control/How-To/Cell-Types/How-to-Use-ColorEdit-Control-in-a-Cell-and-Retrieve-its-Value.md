@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Use ColorEdit control in a cell and retrieve its value | Syncfusion
-description: This section describes how to use coloredit control in a cell and retrieve its value in WindowsForms platform.
+title: How to add ColorEdit Cell in Windows Forms Grid Control | Syncfusion®
+description: Use the ColorEdit control in a cell in Syncfusion® Windows Forms Grid Control and retrieve color values using cell properties and converters and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to use ColorEdit control in a cell and retrieve its value
+# How to add ColorEdit Control in a Cell in Windows Forms Grid Control
 
 It is simple to use the ColorEdit control to specify a cell's value. Just set the [CellType](https://help.syncfusion.com/windowsforms/grid-control/cell-types) property in the cell style to "ColorEdit" and set the text property to an appropriate value.
 
