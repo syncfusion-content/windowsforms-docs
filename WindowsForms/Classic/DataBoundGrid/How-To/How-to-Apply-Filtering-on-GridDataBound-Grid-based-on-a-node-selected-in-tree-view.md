@@ -3,7 +3,7 @@ layout: post
 title: How to Filter TreeView in WinForms GridDataBoundGrid | Syncfusion®
 description: Apply filtering in Syncfusion® Windows Forms GridDataBoundGrid based on the selected TreeView node using GridFilterBar and dynamic row filtering.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

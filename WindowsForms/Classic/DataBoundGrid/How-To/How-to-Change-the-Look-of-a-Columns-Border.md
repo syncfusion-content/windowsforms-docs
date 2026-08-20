@@ -3,7 +3,7 @@ layout: post
 title: Change Column Border Look in WinForms GridDataBoundGrid | Syncfusion®
 description: Change the appearance of column borders in Syncfusion® Windows Forms GridDataBoundGrid using GridStyleInfo border and margin settings.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

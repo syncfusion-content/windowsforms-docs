@@ -3,7 +3,7 @@ layout: post
 title: How to Get Selected Ranges in WinForms GridDataBoundGrid | Syncfusion®
 description: Retrieve selected cell ranges in Syncfusion® WinForms GridDataBoundGrid by using the GetSelectedRanges method and iterate through selected cells.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

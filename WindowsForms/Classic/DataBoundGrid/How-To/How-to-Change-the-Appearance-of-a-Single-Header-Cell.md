@@ -3,7 +3,7 @@ layout: post
 title: Header Cell Appearance in WinForms GridDataBoundGrid | Syncfusion®
 description: Change the appearance of a single header cell in Syncfusion® Windows Forms GridDataBoundGrid by customizing styles through the PrepareViewStyleInfo event.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

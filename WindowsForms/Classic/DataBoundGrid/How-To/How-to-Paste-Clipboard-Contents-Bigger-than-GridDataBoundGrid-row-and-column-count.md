@@ -3,7 +3,7 @@ layout: post
 title: Paste Larger Contents in WinForms GridDataBoundGrid | Syncfusion®
 description: Paste clipboard data larger than the existing Syncfusion® WinForms GridDataBoundGrid size by dynamically adding rows and columns to the underlying DataTable.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

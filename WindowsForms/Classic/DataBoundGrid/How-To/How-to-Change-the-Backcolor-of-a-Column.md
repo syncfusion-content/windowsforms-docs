@@ -2,10 +2,8 @@
 layout: post
 title: How To Column BackColor in WinForms GridDataBoundGrid | Syncfusion®
 description: Change the BackColor of a column in Syncfusion® Windows Forms GridDataBoundGrid using GridBoundColumns or Binder.InternalColumns styling options.
-1
-Change the BackColor of a column in Syncfusion® Windows Forms GridDataBoundGrid using GridBoundColumns or Binder.InternalColumns styling options.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: How to Get Selected Rows in WinForms GridDataBoundGrid | Syncfusion®
 description: Retrieve selected rows in Syncfusion® WinForms GridDataBoundGrid by using the GetSelectedRows method and iterate through the selected row ranges.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Change Column Header Text in WinForms GridDataBoundGrid | Syncfusion®
 description: Change the column header text in Syncfusion® Windows Forms GridDataBoundGrid by setting the GridBoundColumn.HeaderText property.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Use AutoComplete ComboBox in WinForms GridDataBoundGrid | Syncfusion®
 description: Configure GridFilterBar to use an AutoComplete ComboBox in Syncfusion® WinForms GridDataBoundGrid by applying a custom GridStyleInfo.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

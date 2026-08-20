@@ -3,7 +3,7 @@ layout: post
 title: Change GridControl Cursor in WinForms GridDataBoundGrid | Syncfusion®
 description: Change the mouse cursor in Syncfusion® Windows Forms GridDataBoundGrid by overriding the OnSetCursor method and applying custom cursor settings.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

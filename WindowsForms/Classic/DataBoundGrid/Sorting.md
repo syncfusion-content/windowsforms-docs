@@ -3,7 +3,7 @@ layout: post
 title: Sorting in Windows Forms GridDataBoundGrid | Syncfusion®
 description: Sort data in the Syncfusion® WinForms GridDataBoundGrid using configurable sorting behaviors, including single-click, double-click, and DisplayMember sorting.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

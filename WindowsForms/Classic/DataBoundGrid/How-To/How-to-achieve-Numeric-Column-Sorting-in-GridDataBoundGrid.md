@@ -3,7 +3,7 @@ layout: post
 title: How to sort numeric column in WinForms GridDataBoundGrid | Syncfusion®
 description: Learn how to implement numeric column sorting in the Syncfusion® Windows Forms GridDataBoundGrid using custom IComparer implementations.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

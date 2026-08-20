@@ -3,7 +3,7 @@ layout: post
 title: BackColor of a Single Row in WinForms GridDataBoundGrid | Syncfusion®
 description: Change the BackColor of a single row in Syncfusion® Windows Forms GridDataBoundGrid by using the PrepareViewStyleInfo event.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

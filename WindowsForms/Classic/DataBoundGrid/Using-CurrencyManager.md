@@ -3,7 +3,7 @@ layout: post
 title: Using CurrencyManager in Windows Forms GridDataBoundGrid | Syncfusion®
 description: Access and manage underlying data records in the Syncfusion® WinForms GridDataBoundGrid using CurrencyManager for accurate data retrieval and synchronization.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

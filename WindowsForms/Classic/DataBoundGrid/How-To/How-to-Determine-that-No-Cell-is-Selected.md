@@ -3,7 +3,7 @@ layout: post
 title: Check No Cell Is Selected in WinForms GridDataBoundGrid | Syncfusion®
 description: Determine whether any cell is selected in Syncfusion® WinForms GridDataBoundGrid by using the GetSelectedRanges method and checking the selected range count.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

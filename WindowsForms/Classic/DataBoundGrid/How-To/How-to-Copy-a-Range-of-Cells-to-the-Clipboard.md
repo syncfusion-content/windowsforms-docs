@@ -3,7 +3,7 @@ layout: post
 title: Copy a Range of Cells in WinForms GridDataBoundGrid | Syncfusion®
 description: Copy selected cell ranges to the clipboard in Syncfusion® WinForms GridDataBoundGrid using the CopyTextToClipboard method and display the copied data status.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

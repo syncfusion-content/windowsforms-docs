@@ -3,7 +3,7 @@ layout: post
 title: Change the Row Header UI in WinForms GridDataBoundGrid | Syncfusion®
 description: Display line numbers in row headers instead of the default black triangle in Syncfusion® Windows Forms GridDataBoundGrid using the PrepareViewStyleInfo event.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

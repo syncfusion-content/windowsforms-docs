@@ -3,7 +3,7 @@ layout: post
 title: Show Icon in Column Header in WinForms GridDataBoundGrid | Syncfusion®
 description: Display icons in column headers of Syncfusion® WinForms GridDataBoundGrid by configuring header cell styles and assigning images through PrepareViewStyleInfo.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Draw Header Check Box in WinForms GridDataBoundGrid | Syncfusion®
 description: Add a check box to the header of a Syncfusion® WinForms GridDataBoundGrid and synchronize column check box values using custom event handling.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

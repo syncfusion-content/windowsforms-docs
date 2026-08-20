@@ -3,7 +3,7 @@ layout: post
 title: Unbound CheckBox Column in WinForms GridDataBoundGrid | Syncfusion®
 description: Insert an unbound CheckBox column in Syncfusion® WinForms GridDataBoundGrid and manage its values using QueryCellInfo and SaveCellInfo events.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 
