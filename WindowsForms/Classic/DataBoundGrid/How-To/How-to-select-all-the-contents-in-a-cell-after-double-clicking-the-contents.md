@@ -3,7 +3,7 @@ layout: post
 title: Select all on double click in WinForms GridDataBoundGrid | Syncfusion®
 description: Select all text in a cell after double-clicking or pressing F2 in Syncfusion® Windows Forms GridDataBoundGrid by handling cell control and keyboard events.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

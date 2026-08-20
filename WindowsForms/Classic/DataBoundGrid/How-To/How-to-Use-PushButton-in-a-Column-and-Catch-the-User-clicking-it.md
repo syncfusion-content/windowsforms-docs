@@ -3,7 +3,7 @@ layout: post
 title: Use PushButton in a column in WinForms GridDataBoundGrid | Syncfusion®
 description: Add a PushButton column and handle user click actions in Syncfusion® WinForms GridDataBoundGrid using the CellButtonClicked event.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

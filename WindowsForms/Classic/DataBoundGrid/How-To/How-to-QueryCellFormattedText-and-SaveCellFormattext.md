@@ -3,7 +3,7 @@ layout: post
 title: How to format text in Windows Forms GridDataBoundGrid | Syncfusion®
 description: Format cell values for display and save in original format by QueryCellFormattedText and SaveCellFormattedText events in Syncfusion® WinForms GridDataBoundGrid.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

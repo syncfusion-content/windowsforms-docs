@@ -3,7 +3,7 @@ layout: post
 title: Set the width of a column in WinForms GridDataBoundGrid | Syncfusion®
 description: Set custom column widths in Syncfusion® WinForms GridDataBoundGrid by disabling automatic sizing and using the Model.ColWidths collection.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

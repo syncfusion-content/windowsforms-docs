@@ -3,7 +3,7 @@ layout: post
 title: Prevent showing '+' sign in WinForms GridDataBoundGrid | Syncfusion®
 description: Hide the '+' expansion indicator for parent rows without child records in Syncfusion® WinForms GridDataBoundGrid using CellDrawn and CellButtonClicked events.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

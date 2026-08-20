@@ -3,7 +3,7 @@ layout: post
 title: Support tri-state sorting in WinForms GridDataBoundGrid | Syncfusion®
 description: Implement tri-state sort in Syncfusion® WinForms GridDataBoundGrid by toggle column sort between ascending, descending, and unsorted states using header clicks.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

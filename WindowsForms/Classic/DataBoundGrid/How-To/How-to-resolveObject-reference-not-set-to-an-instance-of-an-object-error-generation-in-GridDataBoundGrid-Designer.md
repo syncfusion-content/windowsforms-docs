@@ -3,7 +3,7 @@ layout: post
 title: Fix object reference error in WinForms GridDataBoundGrid | Syncfusion®
 description: Fix the "Object reference not set to an instance of an object" error in Syncfusion® WinForms GridDataBoundGrid by using designer generated code after migration.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Use a ComboBox in a column in WinForms GridDataBoundGrid | Syncfusion®
 description: Use a ComboBox column in Syncfusion® WinForms GridDataBoundGrid by populate items using  ChoiceList or a data source and configuring display and value members.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 

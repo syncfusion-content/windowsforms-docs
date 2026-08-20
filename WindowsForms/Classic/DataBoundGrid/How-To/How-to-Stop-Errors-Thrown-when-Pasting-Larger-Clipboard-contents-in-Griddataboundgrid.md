@@ -3,7 +3,7 @@ layout: post
 title: Fix error on paste content in WinForms GridDataBoundGrid | Syncfusion®
 description: Prevent IndexOutOfRangeException when pasting large contents in Syncfusion® WinForms GridDataBoundGrid by validating row indexes in the PasteCellText event.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 
