@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-# Combination Charts in Windows Forms Chart
+# Combination charts in windows forms chart
 
 ## Combination Chart
 
@@ -17,6 +17,8 @@ N>
 Chart Details
 * Number of Series - One or More.
 * Cannot be combined with - Pie, Bar, Polar, Radar.
+
+The following code example demonstrates how to create a Combination Chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -115,11 +117,36 @@ chartControl.Series(0).Style.Symbol.Shape = ChartSymbolShape.Diamond
 {% endhighlight %}
 {% endtabs %}
 
-## Customization option
-The following chart series properties are used as customization options for combination chart types.
+![RColumn Range Chart in Windows Forms](../Chart-Types_images/windowsforms-combination-chart.png)
 
-## Customization option
+### Customization option
 
-The following chart series properties are used as customization options for chart types.
+The following chart series properties are used as customization options for Combination chart:
 
-[Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border), [DisplayShadow](https://help.syncfusion.com/windowsforms/chart/chart-series#displayshadow), [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext), [DrawColumnSeparatingLines](https://help.syncfusion.com/windowsforms/chart/chart-series#drawcolumnseparatinglines), [ElementBorders](https://help.syncfusion.com/windowsforms/chart/chart-series#elementborders), [ImageIndex](https://help.syncfusion.com/windowsforms/chart/chart-series#imageindex), [Images](https://help.syncfusion.com/windowsforms/chart/chart-series#images), [LightAngle](https://help.syncfusion.com/windowsforms/chart/chart-series#lightangle), [LightColor](https://help.syncfusion.com/windowsforms/chart/chart-series#lightcolor), [PhongAlpha](https://help.syncfusion.com/windowsforms/chart/chart-series#phongalpha), [Spacing Between Series](https://help.syncfusion.com/windowsforms/chart/chart-series#spacingbetweenseries), [ShadowInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowinterior), [ShadowOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowoffset), [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip), [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font), [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior), [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem),[Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name), [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat), [SmartLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#smartlabels),[Summary](https://help.syncfusion.com/windowsforms/chart/chart-series#summary), [Text](https://help.syncfusion.com/windowsforms/chart/chart-series#text-series), [TextColor](https://help.syncfusion.com/windowsforms/chart/chart-series#textcolor), [TextFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#textformat), [TextOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#textoffset), [TextOrientation](https://help.syncfusion.com/windowsforms/chart/chart-series#textorientation), [Visible](https://help.syncfusion.com/windowsforms/chart/chart-series#visible).
+- [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border)
+- [DisplayShadow](https://help.syncfusion.com/windowsforms/chart/chart-series#displayshadow)
+- [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
+- [DrawColumnSeparatingLines](https://help.syncfusion.com/windowsforms/chart/chart-series#drawcolumnseparatinglines)
+- [ElementBorders](https://help.syncfusion.com/windowsforms/chart/chart-series#elementborders)
+- [ImageIndex](https://help.syncfusion.com/windowsforms/chart/chart-series#imageindex)
+- [Images](https://help.syncfusion.com/windowsforms/chart/chart-series#images)
+- [LightAngle](https://help.syncfusion.com/windowsforms/chart/chart-series#lightangle)
+- [LightColor](https://help.syncfusion.com/windowsforms/chart/chart-series#lightcolor)
+- [PhongAlpha](https://help.syncfusion.com/windowsforms/chart/chart-series#phongalpha)
+- [Spacing Between Series](https://help.syncfusion.com/windowsforms/chart/chart-series#spacingbetweenseries)
+- [ShadowInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowinterior)
+- [ShadowOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowoffset)
+- [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip)
+- [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font)
+- [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior)
+- [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem)
+- [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name)
+- [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat)
+- [SmartLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#smartlabels)
+- [Summary](https://help.syncfusion.com/windowsforms/chart/chart-series#summary)
+- [Text](https://help.syncfusion.com/windowsforms/chart/chart-series#text-series)
+- [TextColor](https://help.syncfusion.com/windowsforms/chart/chart-series#textcolor)
+- [TextFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#textformat)
+- [TextOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#textoffset)
+- [TextOrientation](https://help.syncfusion.com/windowsforms/chart/chart-series#textorientation)
+- [Visible](https://help.syncfusion.com/windowsforms/chart/chart-series#visible)

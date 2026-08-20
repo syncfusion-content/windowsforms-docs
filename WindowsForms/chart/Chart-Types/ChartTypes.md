@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-# Types in Windows Forms Chart
+# Types in windows forms chart
 
 Essential® Chart includes a comprehensive set of more than 35 Chart types for all your business needs. Each one is highly and easily configurable with built-in support for creating stunning visual effects.
 

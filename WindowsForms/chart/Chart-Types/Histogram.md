@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Histogram Chart in Windows Forms Chart control | Syncfusion
-description: Learn here all about the histogram chart in Syncfusion Essential Studio® Windows Forms Chart control and more details.
+description: Learn here all about the Histogram chart in Syncfusion Essential Studio® Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Histogram Chart in Windows Forms Chart
+# Histogram chart in windows forms chart
 
 A Histogram chart displays the frequency distribution of data by grouping values into continuous intervals and representing them with adjacent bars. It helps analyze the shape, spread, and patterns of a dataset, making trends and variations easier to understand.
 
@@ -20,6 +20,8 @@ Chart details for histogram chart.
 * Number of Y values per point - 1.
 * Number of Series - One or more.
 * Cannot be combined with - Pie, Bar, Polar, Radar.
+
+The following code example demonstrates how to create a Histogram Chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -150,10 +152,37 @@ chartControl.PrimaryYAxis.Range = New MinMaxInfo(0, 50, 10)
 {% endhighlight %}
 {% endtabs %}
 
-![Histogram Chart in WindowsForms](../Chart-Types_images/windowsforms-histogram-chart.png)
+![Histogram Chart in Windows Forms](../Chart-Types_images/windowsforms-histogram-chart.png)
 
-## Customization Option
+## Customization option
 
-The following chart series properties are used as customize option to histogram chart:
+The following chart series properties are used as customization options for Histogram chart:
 
-[Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border), [DisplayShadow](https://help.syncfusion.com/windowsforms/chart/chart-series#displayshadow), [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext), [DrawHistogramNormalDistribution](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_DrawHistogramNormalDistribution), [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip), [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font), [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior), [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem), [LightAngle](https://help.syncfusion.com/windowsforms/chart/chart-series#lightangle), [LightColor](https://help.syncfusion.com/windowsforms/chart/chart-series#lightcolor), [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name), [NumberOfHistogramIntervals](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_NumberOfHistogramIntervals), [PhongAlpha](https://help.syncfusion.com/windowsforms/chart/chart-series#phongalpha), [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat), [Rotate](https://help.syncfusion.com/windowsforms/chart/chart-series#rotate), [ShadingMode](https://help.syncfusion.com/windowsforms/chart/chart-series#shadingmode), [ShadowInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowinterior), [ShadowOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowoffset), [ShowHistogramDataPoints](https://help.syncfusion.com/windowsforms/chart/chart-series#showhistogramdatapoints), [SmartLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#smartlabels), [Spacing Between Series](https://help.syncfusion.com/windowsforms/chart/chart-series#spacingbetweenseries), [Summary](https://help.syncfusion.com/windowsforms/chart/chart-series#summary), [Text](https://help.syncfusion.com/windowsforms/chart/chart-series#text-series), [TextColor](https://help.syncfusion.com/windowsforms/chart/chart-series#textcolor), [TextFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#textformat), [TextOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#textoffset), [TextOrientation](https://help.syncfusion.com/windowsforms/chart/chart-series#textorientation), [Visible](https://help.syncfusion.com/windowsforms/chart/chart-series#visible).
+- [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border)
+- [DisplayShadow](https://help.syncfusion.com/windowsforms/chart/chart-series#displayshadow)
+- [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
+- [DrawHistogramNormalDistribution](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_DrawHistogramNormalDistribution)
+- [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip)
+- [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font)
+- [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior)
+- [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem)
+- [LightAngle](https://help.syncfusion.com/windowsforms/chart/chart-series#lightangle)
+- [LightColor](https://help.syncfusion.com/windowsforms/chart/chart-series#lightcolor)
+- [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name)
+- [NumberOfHistogramIntervals](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_NumberOfHistogramIntervals)
+- [PhongAlpha](https://help.syncfusion.com/windowsforms/chart/chart-series#phongalpha)
+- [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat)
+- [Rotate](https://help.syncfusion.com/windowsforms/chart/chart-series#rotate)
+- [ShadingMode](https://help.syncfusion.com/windowsforms/chart/chart-series#shadingmode)
+- [ShadowInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowinterior)
+- [ShadowOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowoffset)
+- [ShowHistogramDataPoints](https://help.syncfusion.com/windowsforms/chart/chart-series#showhistogramdatapoints)
+- [SmartLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#smartlabels)
+- [Spacing Between Series](https://help.syncfusion.com/windowsforms/chart/chart-series#spacingbetweenseries)
+- [Summary](https://help.syncfusion.com/windowsforms/chart/chart-series#summary)
+- [Text](https://help.syncfusion.com/windowsforms/chart/chart-series#text-series)
+- [TextColor](https://help.syncfusion.com/windowsforms/chart/chart-series#textcolor)
+- [TextFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#textformat)
+- [TextOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#textoffset)
+- [TextOrientation](https://help.syncfusion.com/windowsforms/chart/chart-series#textorientation)
+- [Visible](https://help.syncfusion.com/windowsforms/chart/chart-series#visible)

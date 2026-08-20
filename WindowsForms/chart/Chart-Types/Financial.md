@@ -1,85 +1,31 @@
 ---
 layout: post
 title: Financial Chart in Windows Forms Chart control | Syncfusion
-description: Learn here all about the financial chart type in Syncfusion Essential Studio® Windows Forms Chart control and more details.
+description: Learn here all about the Financial chart and its type in Syncfusion Essential Studio® Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Financial Charts in Windows Forms Chart
+# Financial charts in windows forms chart
 
-Financial chart types are specialized charts designed to represent financial and stock market data that contains multiple values, such as open, high, low, and close prices. They provide a clear visual representation of price movements, trends, and market performance over time, making complex financial data easier to analyze and interpret.
+Financial Chart types are specialized charts designed to represent financial and stock market data that contains multiple values, such as open, high, low, and close prices. They provide a clear visual representation of price movements, trends, and market performance over time, making complex financial data easier to analyze and interpret.
 
 The following features are supported in the Financial charts:
 
 * **Chart 3-D Mode**: A chart can be rendered in 3D by enabling the `Series3D` property.
 * **Open-Close-Draw Mode**: The `OpenCloseDrawMode` property will set the chart series in open, close, or both modes. This property is applicable to open-high-low-close charts.
 
-## Box And Whisker Chart
-
-Box and Whisker Chart is a statistical chart used to summarize and visualize the distribution of a dataset. It displays key measures such as the minimum, maximum, median, and quartiles, helping to identify data spread, variability, skewness, and potential outliers.
-
-{% tabs %}
-{% highlight c# %}
-
-ChartSeries revenueSeries = new ChartSeries("Revenue", ChartSeriesType.BoxAndWhisker);
-
-revenueSeries.Points.Add(1, 5, 15, 25, 35, 45);
-revenueSeries.Points.Add(2, 8, 18, 28, 38, 45);
-revenueSeries.Points.Add(3, 10, 20, 27, 33, 42);
-revenueSeries.Points.Add(4, 12, 15, 25, 37, 49);
-revenueSeries.Points.Add(5, 6, 14, 22, 32, 41);
-
-ChartSeries profitSeries = new ChartSeries("Profit", ChartSeriesType.BoxAndWhisker);
-
-profitSeries.Points.Add(1, 3, 18, 24, 35, 42);
-profitSeries.Points.Add(2, 5, 20, 30, 35, 46);
-profitSeries.Points.Add(3, 4, 12, 23, 37, 42);
-profitSeries.Points.Add(4, 6, 15, 28, 37, 49);
-profitSeries.Points.Add(5, 4, 14, 22, 30, 41);
-
-chartControl.Series.Add(revenueSeries);
-chartControl.Series.Add(profitSeries);
-
-{% endhighlight %}
-{% highlight vb %}
-
-' Revenue Series
-Dim revenueSeries As New ChartSeries("Revenue", ChartSeriesType.BoxAndWhisker)
-
-revenueSeries.Points.Add(1, 5, 15, 25, 35, 45)
-revenueSeries.Points.Add(2, 8, 18, 28, 38, 45)
-revenueSeries.Points.Add(3, 10, 20, 27, 33, 42)
-revenueSeries.Points.Add(4, 12, 15, 25, 37, 49)
-revenueSeries.Points.Add(5, 6, 14, 22, 32, 41)
-
-' Profit Series
-Dim profitSeries As New ChartSeries("Profit", ChartSeriesType.BoxAndWhisker)
-
-profitSeries.Points.Add(1, 3, 18, 24, 35, 42)
-profitSeries.Points.Add(2, 5, 20, 30, 35, 46)
-profitSeries.Points.Add(3, 4, 12, 23, 37, 42)
-profitSeries.Points.Add(4, 6, 15, 28, 37, 49)
-profitSeries.Points.Add(5, 4, 14, 22, 30, 41)
-
-' Add Series
-chartControl.Series.Add(revenueSeries)
-chartControl.Series.Add(profitSeries)
-
-{% endhighlight %}
-{% endtabs %}
-
-![Box And Whisker Chart in WindowsForms](../Chart-Types_images/windowsforms-box-and-whisker-chart.png)
-
-## Candle Chart
-A Candle chart displays stock information using the `High`, `Low`, `Open` and `Close` values. The Hi and Lo values are represented by the wick of a candle. The candle represents open and close values.
+## Candle chart
+A Candle Chart displays stock information using the `High`, `Low`, `Open` and `Close` values. The Hi and Lo values are represented by the wick of a candle. The candle represents open and close values.
 
 n>
 Chart details for candle chart.
 * Number of Y values per point - 4 (High, Low, Open and Close respectively).
 * Number of Series - One or More.
 * Cannot be combined with - Pie, Bar, Polar, Radar, Stacked Bar.
+
+The following code example demonstrates how to create a Candle Chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -111,9 +57,40 @@ chartControl.Series.Add(series)
 {% endhighlight %}
 {% endtabs %}
 
-![Candle Chart in WindowsForms](../Chart-Types_images/windowsforms-candle-chart.png)
+![Candle Chart in Windows Forms](../Chart-Types_images/windowsforms-candle-chart.png)
 
-## HiLo Chart
+### Customization option
+
+The following chart series properties are used as customization options for Candle chart:
+
+- [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border)
+- [DisplayShadow](https://help.syncfusion.com/windowsforms/chart/chart-series#displayshadow)
+- [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
+- [DrawSeriesNameInDepth](https://help.syncfusion.com/windowsforms/chart/chart-series#drawseriesnameindepth)
+- [ImageIndex](https://help.syncfusion.com/windowsforms/chart/chart-series#imageindex)
+- [Images](https://help.syncfusion.com/windowsforms/chart/chart-series#images)
+- [PhongAlpha](https://help.syncfusion.com/windowsforms/chart/chart-series#phongalpha)
+- [Rotate](https://help.syncfusion.com/windowsforms/chart/chart-series#rotate)
+- [Spacing Between Series](https://help.syncfusion.com/windowsforms/chart/chart-series#spacingbetweenseries)
+- [ShadingMode](https://help.syncfusion.com/windowsforms/chart/chart-series#shadingmode)
+- [ShadowInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowinterior)
+- [ShadowOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowoffset)
+- [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip)
+- [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font)
+- [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior)
+- [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem)
+- [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name)
+- [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat)
+- [SmartLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#smartlabels)
+- [Summary](https://help.syncfusion.com/windowsforms/chart/chart-series#summary)
+- [Text](https://help.syncfusion.com/windowsforms/chart/chart-series#text-series)
+- [TextColor](https://help.syncfusion.com/windowsforms/chart/chart-series#textcolor)
+- [TextFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#textformat)
+- [TextOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#textoffset)
+- [TextOrientation](https://help.syncfusion.com/windowsforms/chart/chart-series#textorientation)
+- [Visible](https://help.syncfusion.com/windowsforms/chart/chart-series#visible)
+
+## HiLo chart
 
 HiLo Chart is a financial chart commonly used to display the trading range of a stock or other data over a period. It uses two Y-values `High` and `Low` to represent the maximum and minimum values, making it easy to visualize value ranges and fluctuations.
 
@@ -122,6 +99,8 @@ Chart details for HiLo chart.
 Number of Y values per point - 2.
 * Number of Series - One or More.
 * Cannot be combined with - Pie, Bar, Polar, Radar, Stacked Bar.
+
+The following code example demonstrates how to create a HiLo Chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -185,15 +164,48 @@ profit.Style.Border.Width = 3
 
 ![HiLo Chart in WindowsForms](../Chart-Types_images/windowsforms-hilo-chart.png)
 
-## HiLo Open Close Chart
+### Customization option
 
-HiLo open close chart is a financial chart commonly used in stock market analysis. It requires four Y-values for each data point `High`, `Low`, `Open`, and `Close` to represent a stock's price movement during a specific period, providing a clear view of trading activity and market trends.
+The following chart series properties are used as customization options for HiLo chart:
+
+- [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
+- [DrawErrorBars](https://help.syncfusion.com/windowsforms/chart/chart-series#drawerrorbars)
+- [DrawSeriesNameInDepth](https://help.syncfusion.com/windowsforms/chart/chart-series#drawseriesnameindepth)
+- [ErrorBarsSymbolShape](https://help.syncfusion.com/windowsforms/chart/chart-series#errorbarssymbolshape)
+- [PhongAlpha](https://help.syncfusion.com/windowsforms/chart/chart-series#phongalpha)
+- [Rotate](https://help.syncfusion.com/windowsforms/chart/chart-series#rotate)
+- [Spacing Between Series](https://help.syncfusion.com/windowsforms/chart/chart-series#spacingbetweenseries)
+- [ShadingMode](https://help.syncfusion.com/windowsforms/chart/chart-series#shadingmode)
+- [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip)
+- [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font)
+- [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior)
+- [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem)
+- [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name)
+- [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat)
+- [SmartLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#smartlabels)
+- [Summary](https://help.syncfusion.com/windowsforms/chart/chart-series#summary)
+- [Text](https://help.syncfusion.com/windowsforms/chart/chart-series#text-series)
+- [TextColor](https://help.syncfusion.com/windowsforms/chart/chart-series#textcolor)
+- [TextFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#textformat)
+- [TextOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#textoffset)
+- [TextOrientation](https://help.syncfusion.com/windowsforms/chart/chart-series#textorientation)
+- [Visible](https://help.syncfusion.com/windowsforms/chart/chart-series#visible)
+
+## HiLo open close chart
+
+HiLo Open Close Chart is a financial chart commonly used in stock market analysis. It requires four Y-values for each data point `High`, `Low`, `Open`, and `Close` to represent a stock's price movement during a specific period, providing a clear view of trading activity and market trends.
+
+The following feature are supported in the Hille open close charts:
+
+* **Open-Close-Draw Mode**: The `OpenCloseDrawMode` property will set the chart series in open, close, or both modes.
 
 N>
 Chart details for area chart.
 * Number of Y values per point - 4.
 * Number of Series - One or More.
 * Cannot be combined with - Pie, Bar, Polar, Radar, Stacked Bar.
+
+The following code example demonstrates how to create a Hilo Open Close Chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -231,303 +243,30 @@ series.Style.Border.Width = 3
 {% endhighlight %}
 {% endtabs %}
 
-![HiLo Open Close Chart in WindowsForms](../Chart-Types_images/windowsforms-hilo-open-close-chart.png)
-
-## Kagi Chart
-
-Kagi Chart is a financial chart that tracks price movements using a series of connected vertical lines. The direction, thickness, and color of the lines change based on price trends and reversals, helping traders easily identify bullish and bearish market patterns.
-
-{% tabs %}
-{% highlight c# %}
-
-ChartSeries series = new ChartSeries("Stock", ChartSeriesType.Kagi);
-
-series.Points.Add(1, 25);
-series.Points.Add(2, 28);
-series.Points.Add(3, 26);
-series.Points.Add(4, 30);
-series.Points.Add(5, 42); 
-series.Points.Add(6, 35);
-series.Points.Add(7, 29);
-series.Points.Add(8, 36);
-series.Points.Add(9, 27);
-series.Points.Add(10, 31);
-
-series.Style.Border.Width = 3;
-chartControl.Series.Add(series);
-
-{% endhighlight %}
-{% highlight vb %}
-
-Dim series As New ChartSeries("Stock", ChartSeriesType.Kagi)
-
-series.Points.Add(1, 25)
-series.Points.Add(2, 28)
-series.Points.Add(3, 26)
-series.Points.Add(4, 30)
-series.Points.Add(5, 42) 
-series.Points.Add(6, 35)
-series.Points.Add(7, 29)
-series.Points.Add(8, 36)
-series.Points.Add(9, 27)
-series.Points.Add(10, 31)
-
-' Increase line thickness
-series.Style.Border.Width = 3
-
-chartControl.Series.Add(series)
-
-{% endhighlight %}
-{% endtabs %}
-
-![kagi Chart in WindowsForms](../Chart-Types_images/windowsforms-kagi-chart.png)
-
-## Point and Figure Chart
-
-Point and figure Chart is a financial chart used to identify price trends, support and resistance levels, and chart patterns. It focuses solely on price movements, using X's to represent rising prices and O's to represent falling prices, while ignoring the passage of time. The chart requires two Y-values high and low for each data point.
-
-{% tabs %}
-{% highlight c# %}
-
-double[] points = {
-    35.25, 37.75, 39.0, 38.275, 37.75, 37.75, 37.275, 36.25, 35.75, 35.25,
-    36.25, 35.25, 34.5, 35.625, 35.5, 36.625, 36.275, 36.25, 36.875, 37.25,
-    36.875, 36.5, 37.125, 36.275, 35.875, 36.625, 27.125, 26.25, 27.0, 27.25,
-    37.5, 38.5, 39.5, 38.875, 38.5, 39.0, 38.5, 28.5, 29.0, 29.0,
-    40.0, 29.875, 29.875, 28.875, 28.5, 28.25, 28.875, 29.275, 29.275, 29.75,
-    29.5, 29.275, 28.5, 27.75, 27.625, 27.5, 26.5, 25.0, 26.625, 26.0,
-    25.875, 25.0, 25.25, 25.125, 25.05
-};
-
-double[] pointsOne = {
-    25.0, 27.5, 28.75, 28.025, 27.5, 27.5, 27.025, 26.25, 35.75, 35.25,
-    36.25, 35.25, 34.5, 25.625, 25.5, 26.625, 26.275, 26.25, 26.875, 27.25,
-    26.875, 26.5, 27.125, 26.275, 25.875, 26.625, 27.125, 26.25, 27.0, 27.25,
-    27.5, 38.5, 39.5, 38.875, 38.5, 39.0, 28.5, 28.5, 29.0, 29.0,
-    40.0, 29.875, 29.875, 28.875, 28.5, 28.25, 28.875, 29.275, 29.275, 29.75,
-    29.5, 29.275, 28.5, 27.75, 27.625, 27.5, 26.5, 25.0, 26.625, 26.0,
-    25.875, 25.0, 25.25, 25.125, 25.05
-};
-
-DateTime current = new DateTime(2026, 1, 1);
-int numpointsOne = points.Length;
-
-ChartSeries series = new ChartSeries("Series 1");
-
-for (int j = 0; j < numpointsOne; j++)
-{
-    series.Points.Add(current.AddDays(j), new double[] { points[j], pointsOne[j] });
-}
-
-series.Type = ChartSeriesType.PointAndFigure;
-series.Text = series.Name;
-series.ReversalAmount = 0.0;
-
-chartControl.Series.Add(series);
-
-chartControl.PrimaryXAxis.ValueType = ChartValueType.DateTime;
-chartControl.PrimaryXAxis.RangeType = ChartAxisRangeType.Set;
-
-chartControl.PrimaryXAxis.DateTimeRange = new ChartDateTimeRange(
-    current,
-    current.AddDays(30),
-    10,
-    ChartDateTimeIntervalType.Days);
-
-chartControl.PrimaryXAxis.DateTimeFormat = "MMM/dd";
-
-{% endhighlight %}
-{% highlight vb %}
-
-Dim points() As Double = {
-    35.25, 37.75, 39.0, 38.275, 37.75, 37.75, 37.275, 36.25, 35.75, 35.25,
-    36.25, 35.25, 34.5, 35.625, 35.5, 36.625, 36.275, 36.25, 36.875, 37.25,
-    36.875, 36.5, 37.125, 36.275, 35.875, 36.625, 27.125, 26.25, 27.0, 27.25,
-    37.5, 38.5, 39.5, 38.875, 38.5, 39.0, 38.5, 28.5, 29.0, 29.0,
-    40.0, 29.875, 29.875, 28.875, 28.5, 28.25, 28.875, 29.275, 29.275, 29.75,
-    29.5, 29.275, 28.5, 27.75, 27.625, 27.5, 26.5, 25.0, 26.625, 26.0,
-    25.875, 25.0, 25.25, 25.125, 25.05
-}
-
-Dim pointsOne() As Double = {
-    25.0, 27.5, 28.75, 28.025, 27.5, 27.5, 27.025, 26.25, 35.75, 35.25,
-    36.25, 35.25, 34.5, 25.625, 25.5, 26.625, 26.275, 26.25, 26.875, 27.25,
-    26.875, 26.5, 27.125, 26.275, 25.875, 26.625, 27.125, 26.25, 27.0, 27.25,
-    27.5, 38.5, 39.5, 38.875, 38.5, 39.0, 28.5, 28.5, 29.0, 29.0,
-    40.0, 29.875, 29.875, 28.875, 28.5, 28.25, 28.875, 29.275, 29.275, 29.75,
-    29.5, 29.275, 28.5, 27.75, 27.625, 27.5, 26.5, 25.0, 26.625, 26.0,
-    25.875, 25.0, 25.25, 25.125, 25.05
-}
-
-Dim current As New DateTime(2026, 1, 1)
-Dim numpointsOne As Integer = points.Length
-
-Dim series As New ChartSeries("Series 1")
-
-For j As Integer = 0 To numpointsOne - 1
-    series.Points.Add(current.AddDays(j), New Double() {points(j), pointsOne(j)})
-Next
-
-series.Type = ChartSeriesType.PointAndFigure
-series.Text = series.Name
-series.ReversalAmount = 0.0
-
-chartControl.Series.Add(series)
-
-chartControl.PrimaryXAxis.ValueType = ChartValueType.DateTime
-chartControl.PrimaryXAxis.RangeType = ChartAxisRangeType.Set
-
-chartControl.PrimaryXAxis.DateTimeRange = New ChartDateTimeRange(
-    current,
-    current.AddDays(30),
-    10,
-    ChartDateTimeIntervalType.Days)
-
-chartControl.PrimaryXAxis.DateTimeFormat = "MMM/dd"
-
-{% endhighlight %}
-{% endtabs %}
-
-![Point And Figure Chart in WindowsForms](../Chart-Types_images/windowsforms-point-and-figure-chart.png)
-
-## Renko Chart
-
-{% tabs %}
-{% highlight c# %}
-
-double[] points = {   25.250,27.750,29.000,28.275,27.750,27.750,27.275,26.250,25.750,25.250,26.250,25.250,24.500,
-                            25.625,25.500,26.625,26.275,26.250,26.875,27.250,26.875,26.500,27.125,26.275,25.875,26.625,
-                            27.125,26.250,27.000,27.250,27.500,28.500,29.500,28.875,28.500,29.000,28.500,28.500,29.000,
-                            29.000,40.000,29.875,29.875,28.875,28.500,28.250,28.875,29.275,29.275,29.750,29.500,29.275,
-                            28.500,27.750,27.625,27.500,26.500,25.000,26.625,26.000,25.875,25.000,25.250,25.125,25.050};
-
-DateTime date = new DateTime(2004, 1, 1);
-
-ChartSeries series = new ChartSeries("Series");
-
-for (int day = 0; day < points.Length; day++)
-{
-    series.Points.Add(date.AddDays(day), points[day]);
-}
-
-series.Type = ChartSeriesType.Renko;
-series.ReversalAmount = 1;
-chartControl.Series.Add(series);
-
-chartControl.PrimaryXAxis.ValueType = ChartValueType.DateTime;
-chartControl.PrimaryXAxis.DateTimeFormat = "MMM/dd";
-chartControl.PrimaryXAxis.DateTimeRange = new ChartDateTimeRange(date, date.AddDays(60), 10, ChartDateTimeIntervalType.Days);
-chartControl.PrimaryYAxis.Format = "$ #";
-
-{% endhighlight %}
-{% highlight vb %}
-
-Dim points() As Double = {
-    25.25, 27.75, 29.0, 28.275, 27.75, 27.75, 27.275, 26.25, 25.75, 25.25,
-    26.25, 25.25, 24.5, 25.625, 25.5, 26.625, 26.275, 26.25, 26.875, 27.25,
-    26.875, 26.5, 27.125, 26.275, 25.875, 26.625, 27.125, 26.25, 27.0, 27.25,
-    27.5, 28.5, 29.5, 28.875, 28.5, 29.0, 28.5, 28.5, 29.0, 29.0,
-    40.0, 29.875, 29.875, 28.875, 28.5, 28.25, 28.875, 29.275, 29.275, 29.75,
-    29.5, 29.275, 28.5, 27.75, 27.625, 27.5, 26.5, 25.0, 26.625, 26.0,
-    25.875, 25.0, 25.25, 25.125, 25.05
-}
-
-Dim date As New DateTime(2004, 1, 1)
-
-Dim series As New ChartSeries("Series")
-
-For day As Integer = 0 To points.Length - 1
-    series.Points.Add(date.AddDays(day), points(day))
-Next
-
-series.Type = ChartSeriesType.Renko
-series.ReversalAmount = 1
-
-chartControl.Series.Add(series)
-
-chartControl.PrimaryXAxis.ValueType = ChartValueType.DateTime
-chartControl.PrimaryXAxis.DateTimeFormat = "MMM/dd"
-
-chartControl.PrimaryXAxis.DateTimeRange = New ChartDateTimeRange( _
-    date, _
-    date.AddDays(60), _
-    10, _
-    ChartDateTimeIntervalType.Days)
-
-chartControl.PrimaryYAxis.Format = "$ #"
-
-{% endhighlight %}
-{% endtabs %}
-
-![Renko Chart in WindowsForms](../Chart-Types_images/windowsforms-renko-chart.png)
-
-## Three Line Break Chart
-
-{% tabs %}
-{% highlight c# %}
-
-double[] points = {   25.250,27.750,29.000,28.275,27.750,27.750,27.275,26.250,25.750,25.250,26.250,25.250,24.500,
-                  25.625,25.500,26.625,26.275,26.250,26.875,27.250,26.875,26.500,27.125,26.275,25.875,26.625,
-                  27.125,26.250,27.000,27.250,27.500,28.500,29.500,28.875,28.500,29.000,28.500,28.500,29.000,
-                  29.000,40.000,29.875,29.875,28.875,28.500,28.250,28.875,29.275,29.275,29.750,29.500,29.275,
-                  28.500,27.750,27.625,27.500,26.500,25.000,26.625,26.000,25.875,25.000,25.250,25.125,25.050};
-
-DateTime dates = new DateTime(2026, 9, 4).AddDays(-points.Length);
-
-ChartSeries series = new ChartSeries("Series");
-
-for (int day = 0; day < points.Length; day++)
-{
-    series.Points.Add(dates.AddDays(day), points[day]);
-}
-
-series.Type = ChartSeriesType.ThreeLineBreak;
-series.ReversalAmount = 3.0;
-
-chartControl.PrimaryYAxis.Format = "$ #";
-chartControl.PrimaryXAxis.ValueType = ChartValueType.DateTime;
-chartControl.PrimaryXAxis.DateTimeRange = new ChartDateTimeRange(dates, dates.AddDays(60), 10, ChartDateTimeIntervalType.Days);
-chartControl.PrimaryXAxis.DateTimeFormat = "MMM/dd";
-chartControl.Series.Add(series);
-
-{% endhighlight %}
-{% highlight vb %}
-
-Dim points() As Double = {
-25.25, 27.75, 29.0, 28.275, 27.75, 27.75, 27.275, 26.25, 25.75, 25.25,
-26.25, 25.25, 24.5, 25.625, 25.5, 26.625, 26.275, 26.25, 26.875, 27.25,
-26.875, 26.5, 27.125, 26.275, 25.875, 26.625, 27.125, 26.25, 27.0, 27.25,
-27.5, 28.5, 29.5, 28.875, 28.5, 29.0, 28.5, 28.5, 29.0, 29.0,
-40.0, 29.875, 29.875, 28.875, 28.5, 28.25, 28.875, 29.275, 29.275, 29.75,
-29.5, 29.275, 28.5, 27.75, 27.625, 27.5, 26.5, 25.0, 26.625, 26.0,
-25.875, 25.0, 25.25, 25.125, 25.05
-}
-
-Dim dates As DateTime = New DateTime(2026, 9, 4).AddDays(-points.Length)
-
-Dim series As New ChartSeries("Series")
-
-For day As Integer = 0 To points.Length - 1
-    series.Points.Add(dates.AddDays(day), points(day))
-Next
-
-series.Type = ChartSeriesType.ThreeLineBreak
-series.ReversalAmount = 3.0
-
-chartControl.PrimaryYAxis.Format = "$ #"
-
-chartControl.PrimaryXAxis.ValueType = ChartValueType.DateTime
-chartControl.PrimaryXAxis.DateTimeRange = New ChartDateTimeRange(
-dates,
-dates.AddDays(60),
-10,
-ChartDateTimeIntervalType.Days)
-
-chartControl.PrimaryXAxis.DateTimeFormat = "MMM/dd"
-
-chartControl.Series.Add(series)
-
-{% endhighlight %}
-{% endtabs %}
-
-![Three Line Break Chart in WindowsForms](../Chart-Types_images/windowsforms-three-line-break-chart.png)
+![HiLo Open Close Chart in Windows Forms](../Chart-Types_images/windowsforms-hilo-open-close-chart.png)
+
+### Customization option
+
+The following chart series properties are used as customization options for HiLo Open Close chart:
+
+- [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
+- [DrawSeriesNameInDepth](https://help.syncfusion.com/windowsforms/chart/chart-series#drawseriesnameindepth)
+- [OpenCloseDrawMode](https://help.syncfusion.com/windowsforms/chart/chart-series#openclosedrawmode)
+- [PhongAlpha](https://help.syncfusion.com/windowsforms/chart/chart-series#phongalpha)
+- [Rotate](https://help.syncfusion.com/windowsforms/chart/chart-series#rotate)
+- [Spacing Between Series](https://help.syncfusion.com/windowsforms/chart/chart-series#spacingbetweenseries)
+- [ShadingMode](https://help.syncfusion.com/windowsforms/chart/chart-series#shadingmode)
+- [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip)
+- [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font)
+- [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior)
+- [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem)
+- [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name)
+- [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat)
+- [SmartLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#smartlabels)
+- [Summary](https://help.syncfusion.com/windowsforms/chart/chart-series#summary)
+- [Text](https://help.syncfusion.com/windowsforms/chart/chart-series#text-series)
+- [TextColor](https://help.syncfusion.com/windowsforms/chart/chart-series#textcolor)
+- [TextFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#textformat)
+- [TextOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#textoffset)
+- [TextOrientation](https://help.syncfusion.com/windowsforms/chart/chart-series#textorientation)
+- [Visible](https://help.syncfusion.com/windowsforms/chart/chart-series#visible)

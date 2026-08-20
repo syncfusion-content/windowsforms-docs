@@ -1,13 +1,13 @@
 ---
 layout: post
 title: HeatMap Chart in Windows Forms Chart control | Syncfusion
-description: Learn here all about the heatmap chart in Syncfusion Essential Studio® Windows Forms Chart control and more details.
+description: Learn here all about the Heatmap chart in Syncfusion Essential Studio® Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# HeatMap in Windows Forms Chart
+# HeatMap chart in windows forms chart
 
 Heat map chart is a graphical representation of data where the values taken by a variable in two-dimensional map are represented as colors.
 
@@ -17,7 +17,7 @@ Chart Details
 * Number of Series - One.
 * Cannot be Combined with - Any other chart types.
 
-The following code example demonstrates how to create a HeatMap Chart.
+The following code example demonstrates how to create a HeatMap chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -122,9 +122,9 @@ Stocks.ConfigItems.HeatMapItem.EndText = "Utah"
 {% endhighlight %}
 {% endtabs %}
 
-![HeatMap Chart in WindowsForms](../Chart-Types_images/windowsforms-heat-map-charts.png)
+![HeatMap Chart in Windows Forms](../Chart-Types_images/windowsforms-heat-map-charts.png)
 
-## Features
+## Support features
 
 The following table lists the properties of heat map chart with descriptions.
 
