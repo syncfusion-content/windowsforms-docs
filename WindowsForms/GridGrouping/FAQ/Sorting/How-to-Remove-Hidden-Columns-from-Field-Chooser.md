@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HiddenColumns from FieldChooser in WinForms GridGrouping | Syncfusion®
+title: Hide WinForms GridGroupingControl Field Chooser Columns | Syncfusion®
 description: Remove hidden columns from the Field Chooser in Syncfusion® WinForms GridGroupingControl, its column collections, visible columns, and more.
 platform: windowsforms
 control: GridGroupingControl
