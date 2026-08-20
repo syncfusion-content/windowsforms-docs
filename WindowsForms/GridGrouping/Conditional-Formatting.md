@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Conditional Formatting in WinForms GridGroupingControl | Syncfusion®
+title: Conditional Formatting in Windows Forms GridGrouping | Syncfusion®
 description: The conditional formatting feature in GridGroupingControl enables applying custom styles, data bars, and dynamic formatting based on expressions and rules.
 platform: windowsforms
 control: GridGroupingControl
