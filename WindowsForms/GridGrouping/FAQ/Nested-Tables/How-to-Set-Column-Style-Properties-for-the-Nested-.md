@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Set-Column-Style-Properties-for-the-Nested- | Windows Forms | Syncfusion
-description: how to set column style properties for the nested tables in a grouping grid
+title: Styles for NestedTables in WinForms GridGroupingControl | Syncfusion®
+description: Set column style properties for nested tables in Syncfusion® WinForms GridGroupingControl, its table descriptors, nested relations, column customization.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Set Column Style Properties for the Nested Tables in a Grouping Grid
+# How to Set Styles for NestedTables in WinForms GridGroupingControl
 
 To set column properties for nested tables, you will need to use TableDescriptor property for different tables. Here is the code that will get TableDescriptors for the parent table, child table and grandchild table from the GroupingControl's GridEngine, which sets some column style properties for each table.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-format-summary-rows | Windows Forms | Syncfusion
-description: how to format summary rows
+title: Format Summary Rows in WinForms GridGroupingControl | Syncfusion®
+description: Format summary rows in Syncfusion® WinForms GridGroupingControl, its summary field appearance, cell styling, customization options, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Format Summary Rows
+# How to Format Summary Rows in WinForms GridGroupingControl
 
 The following code shows how to format summary rows.
 

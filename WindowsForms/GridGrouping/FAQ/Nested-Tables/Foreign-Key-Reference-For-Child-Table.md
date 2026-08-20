@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Foreign-Key-Reference-For-Child-Table | Windows Forms | Syncfusion
-description: foreign key reference for child table
+title: ForeignKey ChildTable in WinForms GridGroupingControl | Syncfusion®
+description: Create a ChildTable with ForeignKey reference in Syncfusion® WinForms GridGroupingControl, its table relations, foreign key mapping, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Create a Child Table with Foreign Key Reference
+# How to add ChildTable with ForeignKey in WinForms GridGroupingControl
 
 When you want to create a relation between child and grandchild table with ForeignKeyReference, set RelationKind property of GridRelationDescriptor to ForeignKeyReference.
 
