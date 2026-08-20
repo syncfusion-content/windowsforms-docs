@@ -7,7 +7,7 @@ control: GridGroupingControl
 documentation: ug
 ---
 
-# What Events Trigger in Value Changes in WinForms GridGroupingControl
+# Events Trigger at Record Value Changes in WinForms GridGroupingControl
 
 When the record values are changed, the following events are fired.
 

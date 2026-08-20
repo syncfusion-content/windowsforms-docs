@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Programmatic Selection WinForms GridGroupingControl | Syncfusion®
+title: Programmatic Selection in WinForms GridGroupingControl | Syncfusion®
 description: Select a record programmatically in Syncfusion® WinForms GridGroupingControl, its selected records collection, record selection, and more.
 platform: windowsforms
 control: GridGroupingControl

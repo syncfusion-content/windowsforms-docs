@@ -1,6 +1,6 @@
 ---
 layout: post
-title: List Data Source in WinForms GridGroupingControl | Syncfusion®
+title: Refresh Data Source in WinForms GridGroupingControl | Syncfusion®
 description: Refresh the Binding List data source automatically in Syncfusion® WinForms GridGroupingControl, its TableDirty property, data updates, and more.
 platform: windowsforms
 control: GridGroupingControl

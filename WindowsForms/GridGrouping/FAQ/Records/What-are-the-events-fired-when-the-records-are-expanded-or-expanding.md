@@ -7,7 +7,7 @@ control: GridGroupingControl
 documentation: ug
 ---
 
-# What Event Trigger in Record Expanding in WinForms GridGroupingControl
+# Event Trigger in Record Expanding in WinForms GridGroupingControl
 
 When the records are expanding or expanded, the following events are fired.
 

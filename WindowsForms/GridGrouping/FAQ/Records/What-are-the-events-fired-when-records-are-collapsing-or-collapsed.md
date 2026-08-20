@@ -7,7 +7,7 @@ control: GridGroupingControl
 documentation: ug
 ---
 
-# What Event Trigger in RecordCollapsing in WinForms GridGroupingControl
+# Event Trigger in RecordCollapsing in WinForms GridGroupingControl
 
 When the records are collapsing or collapsed, the following events are fired.
 
