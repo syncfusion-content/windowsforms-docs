@@ -66,21 +66,24 @@ Stocks.ConfigItems.HeatMapItem.EndText = "Utah";
 {% endhighlight %}
 {% highlight vb %}
 
+' Chart Text
 chartControl.Text = "Stocks - Sales and Expense details"
 
+' Chart Title
 Dim title As New ChartTitle() With {
 .Text = "Cell Size as Sales, Cell Color as Expense"
 }
 
 chartControl.Titles.Add(title)
 
-chartControl.Title.Font = New System.Drawing.Font("Segoe UI", 16.0F)
-chartControl.Title.ForeColor = System.Drawing.Color.MidnightBlue
+chartControl.Title.Font = New Font("Segoe UI", 16.0F)
+chartControl.Title.ForeColor = Color.MidnightBlue
 chartControl.Title.Name = "Default"
 
-title.Font = New System.Drawing.Font("Segoe UI", 8.5F, System.Drawing.FontStyle.Bold)
-title.ForeColor = System.Drawing.Color.Black
+title.Font = New Font("Segoe UI", 8.5F, FontStyle.Bold)
+title.ForeColor = Color.Black
 
+' HeatMap Series
 Dim Stocks As New ChartSeries("Stocks", ChartSeriesType.HeatMap)
 
 Stocks.Points.Add(7, 4, 10000)
@@ -91,6 +94,7 @@ Stocks.Points.Add(3, 2.5, 6882)
 Stocks.Points.Add(2, 1.5, 6584)
 Stocks.Points.Add(1, 1, 2799)
 
+' Data Labels
 Stocks.Styles(0).Text = "US"
 Stocks.Styles(1).Text = "South Carolina"
 Stocks.Styles(2).Text = "Florida"
@@ -106,6 +110,7 @@ chartControl.Series.Add(Stocks)
 
 chartControl.ShowLegend = False
 
+' HeatMap Settings
 Stocks.ConfigItems.HeatMapItem.DisplayTitle = True
 Stocks.ConfigItems.HeatMapItem.LowestValueColor = Color.FromArgb(255, 23, 0)
 Stocks.ConfigItems.HeatMapItem.HighestValueColor = Color.FromArgb(81, 168, 0)

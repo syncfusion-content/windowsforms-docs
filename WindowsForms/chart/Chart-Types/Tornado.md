@@ -45,6 +45,7 @@ chartControl.Series.Add(negativeImpact);
 {% endhighlight %}
 {% highlight vb %}
 
+' Positive Impact Series
 Dim positiveImpact As New ChartSeries("Positive Impact", ChartSeriesType.Tornado)
 
 positiveImpact.Points.Add(1, 0, 48)
@@ -53,6 +54,7 @@ positiveImpact.Points.Add(3, 0, 27)
 positiveImpact.Points.Add(4, 0, 20)
 positiveImpact.Points.Add(5, 0, 9)
 
+' Negative Impact Series
 Dim negativeImpact As New ChartSeries("Negative Impact", ChartSeriesType.Tornado)
 
 negativeImpact.Points.Add(1, 0, -45)
@@ -61,6 +63,7 @@ negativeImpact.Points.Add(3, 0, -31)
 negativeImpact.Points.Add(4, 0, -20)
 negativeImpact.Points.Add(5, 0, -11)
 
+' Add Series to Chart
 chartControl.Series.Add(positiveImpact)
 chartControl.Series.Add(negativeImpact)
 

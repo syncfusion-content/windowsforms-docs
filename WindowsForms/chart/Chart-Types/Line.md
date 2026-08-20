@@ -12,8 +12,8 @@ documentation: ug
 Line charts typically connect data points in a series using lines. Depending on the chart type, the connecting lines can be straight, splines, or steps. Line charts are simpler and also allow you to visualize multiple series without the overlap that you may see in bar charts.
 
 You can also customize the following features for line charts:
-* Border Settings: Border width and border style of a line chart are customized through the [Width](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLineInfo.html#Syncfusion_Windows_Forms_Chart_ChartLineInfo_Width) and [DashStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLineInfo.html#Syncfusion_Windows_Forms_Chart_ChartLineInfo_DashStyle) properties.
-* Point Color Settings: Data points in a series can be set to different colors by listening to the [PrepareStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_PrepareStyle) event.
+* **Border Settings**: Border width and border style of a line chart are customized through the [Width](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLineInfo.html#Syncfusion_Windows_Forms_Chart_ChartLineInfo_Width) and [DashStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLineInfo.html#Syncfusion_Windows_Forms_Chart_ChartLineInfo_DashStyle) properties.
+* **Point Color Settings**: Data points in a series can be set to different colors by listening to the [PrepareStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_PrepareStyle) event.
 
 N>
 Common chart details for line charts.

@@ -12,9 +12,9 @@ documentation: ug
 A bar chart is a graphical representation of data that uses rectangular bars to compare values across different categories. The length of each bar indicates the magnitude of the value, making it easy to visualize and compare data. They operate similarly to column charts, which display vertical bars.
 
 You can also customize the following features for line charts:
-* Chart 3-D Mode: Render the chart in 3-D mode by enabling the [Series3D](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Series3D) property.
-* Chart Series Points: Display series points using the [DisplayText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStyleInfo.html#Syncfusion_Windows_Forms_Chart_ChartStyleInfo_DisplayText) property in a chart control.
-* Series Color Settings: Change series colors using the [Interior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStyleInfo.html#Syncfusion_Windows_Forms_Chart_ChartStyleInfo_Interior) property in a chart control.
+* **Chart 3-D Mode**: Render the chart in 3-D mode by enabling the [Series3D](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Series3D) property.
+* **Chart Series Points**: Display series points using the [DisplayText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStyleInfo.html#Syncfusion_Windows_Forms_Chart_ChartStyleInfo_DisplayText) property in a chart control.
+* **Series Color Settings**: Change series colors using the [Interior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStyleInfo.html#Syncfusion_Windows_Forms_Chart_ChartStyleInfo_Interior) property in a chart control.
 
 ## Bar Chart
 

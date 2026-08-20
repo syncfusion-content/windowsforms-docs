@@ -48,6 +48,7 @@ chartControl.Series.Add(developmentPhase);
 {% endhighlight %}
 {% highlight vb %}
 
+' Planning Phase Series
 Dim planningPhase As New ChartSeries("Planning Phase", ChartSeriesType.Gantt)
 
 planningPhase.Points.Add(0, 10, 35) ' Duration 25
@@ -56,6 +57,7 @@ planningPhase.Points.Add(2, 30, 45) ' Duration 15
 planningPhase.Points.Add(3, 40, 75) ' Duration 35
 planningPhase.Points.Add(4, 50, 65) ' Duration 15
 
+' Development Phase Series
 Dim developmentPhase As New ChartSeries("Development Phase", ChartSeriesType.Gantt)
 
 developmentPhase.Points.Add(0, 35, 70) ' Duration 35
@@ -64,6 +66,7 @@ developmentPhase.Points.Add(2, 45, 80) ' Duration 35
 developmentPhase.Points.Add(3, 75, 95) ' Duration 20
 developmentPhase.Points.Add(4, 65, 85) ' Duration 20
 
+' Add Series to Chart
 chartControl.Series.Add(planningPhase)
 chartControl.Series.Add(developmentPhase)
 

@@ -23,9 +23,6 @@ Box and Whisker Chart is a statistical chart used to summarize and visualize the
 {% tabs %}
 {% highlight c# %}
 
-chartControl.PrimaryXAxis.Title = "Quarter";
-chartControl.PrimaryYAxis.Title = "Revenue (Million USD)";
-
 ChartSeries revenueSeries = new ChartSeries("Revenue", ChartSeriesType.BoxAndWhisker);
 
 revenueSeries.Points.Add(1, 5, 15, 25, 35, 45);
@@ -66,7 +63,7 @@ profitSeries.Points.Add(3, 4, 12, 23, 37, 42)
 profitSeries.Points.Add(4, 6, 15, 28, 37, 49)
 profitSeries.Points.Add(5, 4, 14, 22, 30, 41)
 
-' Add series to chart
+' Add Series
 chartControl.Series.Add(revenueSeries)
 chartControl.Series.Add(profitSeries)
 
@@ -292,6 +289,56 @@ Point and figure Chart is a financial chart used to identify price trends, suppo
 {% tabs %}
 {% highlight c# %}
 
+double[] points = {
+    35.25, 37.75, 39.0, 38.275, 37.75, 37.75, 37.275, 36.25, 35.75, 35.25,
+    36.25, 35.25, 34.5, 35.625, 35.5, 36.625, 36.275, 36.25, 36.875, 37.25,
+    36.875, 36.5, 37.125, 36.275, 35.875, 36.625, 27.125, 26.25, 27.0, 27.25,
+    37.5, 38.5, 39.5, 38.875, 38.5, 39.0, 38.5, 28.5, 29.0, 29.0,
+    40.0, 29.875, 29.875, 28.875, 28.5, 28.25, 28.875, 29.275, 29.275, 29.75,
+    29.5, 29.275, 28.5, 27.75, 27.625, 27.5, 26.5, 25.0, 26.625, 26.0,
+    25.875, 25.0, 25.25, 25.125, 25.05
+};
+
+double[] pointsOne = {
+    25.0, 27.5, 28.75, 28.025, 27.5, 27.5, 27.025, 26.25, 35.75, 35.25,
+    36.25, 35.25, 34.5, 25.625, 25.5, 26.625, 26.275, 26.25, 26.875, 27.25,
+    26.875, 26.5, 27.125, 26.275, 25.875, 26.625, 27.125, 26.25, 27.0, 27.25,
+    27.5, 38.5, 39.5, 38.875, 38.5, 39.0, 28.5, 28.5, 29.0, 29.0,
+    40.0, 29.875, 29.875, 28.875, 28.5, 28.25, 28.875, 29.275, 29.275, 29.75,
+    29.5, 29.275, 28.5, 27.75, 27.625, 27.5, 26.5, 25.0, 26.625, 26.0,
+    25.875, 25.0, 25.25, 25.125, 25.05
+};
+
+DateTime current = new DateTime(2026, 1, 1);
+int numpointsOne = points.Length;
+
+ChartSeries series = new ChartSeries("Series 1");
+
+for (int j = 0; j < numpointsOne; j++)
+{
+    series.Points.Add(current.AddDays(j), new double[] { points[j], pointsOne[j] });
+}
+
+series.Type = ChartSeriesType.PointAndFigure;
+series.Text = series.Name;
+series.ReversalAmount = 0.0;
+
+chartControl.Series.Add(series);
+
+chartControl.PrimaryXAxis.ValueType = ChartValueType.DateTime;
+chartControl.PrimaryXAxis.RangeType = ChartAxisRangeType.Set;
+
+chartControl.PrimaryXAxis.DateTimeRange = new ChartDateTimeRange(
+    current,
+    current.AddDays(30),
+    10,
+    ChartDateTimeIntervalType.Days);
+
+chartControl.PrimaryXAxis.DateTimeFormat = "MMM/dd";
+
+{% endhighlight %}
+{% highlight vb %}
+
 Dim points() As Double = {
     35.25, 37.75, 39.0, 38.275, 37.75, 37.75, 37.275, 36.25, 35.75, 35.25,
     36.25, 35.25, 34.5, 35.625, 35.5, 36.625, 36.275, 36.25, 36.875, 37.25,
@@ -339,10 +386,6 @@ chartControl.PrimaryXAxis.DateTimeRange = New ChartDateTimeRange(
 chartControl.PrimaryXAxis.DateTimeFormat = "MMM/dd"
 
 {% endhighlight %}
-{% highlight vb %}
-
-
-{% endhighlight %}
 {% endtabs %}
 
 ![Point And Figure Chart in WindowsForms](../Chart-Types_images/windowsforms-point-and-figure-chart.png)
@@ -358,22 +401,22 @@ double[] points = {   25.250,27.750,29.000,28.275,27.750,27.750,27.275,26.250,25
                             29.000,40.000,29.875,29.875,28.875,28.500,28.250,28.875,29.275,29.275,29.750,29.500,29.275,
                             28.500,27.750,27.625,27.500,26.500,25.000,26.625,26.000,25.875,25.000,25.250,25.125,25.050};
 
-DateTime date5 = new DateTime(2004, 1, 1);
+DateTime date = new DateTime(2004, 1, 1);
 
-ChartSeries series11 = new ChartSeries("Series");
+ChartSeries series = new ChartSeries("Series");
 
 for (int day = 0; day < points.Length; day++)
 {
-    series11.Points.Add(date5.AddDays(day), points[day]);
+    series.Points.Add(date.AddDays(day), points[day]);
 }
 
-series11.Type = ChartSeriesType.Renko;
-series11.ReversalAmount = 1;
-chartControl.Series.Add(series11);
+series.Type = ChartSeriesType.Renko;
+series.ReversalAmount = 1;
+chartControl.Series.Add(series);
 
 chartControl.PrimaryXAxis.ValueType = ChartValueType.DateTime;
 chartControl.PrimaryXAxis.DateTimeFormat = "MMM/dd";
-chartControl.PrimaryXAxis.DateTimeRange = new ChartDateTimeRange(date5, date5.AddDays(60), 10, ChartDateTimeIntervalType.Days);
+chartControl.PrimaryXAxis.DateTimeRange = new ChartDateTimeRange(date, date.AddDays(60), 10, ChartDateTimeIntervalType.Days);
 chartControl.PrimaryYAxis.Format = "$ #";
 
 {% endhighlight %}
@@ -389,25 +432,25 @@ Dim points() As Double = {
     25.875, 25.0, 25.25, 25.125, 25.05
 }
 
-Dim date5 As New DateTime(2004, 1, 1)
+Dim date As New DateTime(2004, 1, 1)
 
-Dim series11 As New ChartSeries("Series")
+Dim series As New ChartSeries("Series")
 
 For day As Integer = 0 To points.Length - 1
-    series11.Points.Add(date5.AddDays(day), points(day))
+    series.Points.Add(date.AddDays(day), points(day))
 Next
 
-series11.Type = ChartSeriesType.Renko
-series11.ReversalAmount = 1
+series.Type = ChartSeriesType.Renko
+series.ReversalAmount = 1
 
-chartControl.Series.Add(series11)
+chartControl.Series.Add(series)
 
 chartControl.PrimaryXAxis.ValueType = ChartValueType.DateTime
 chartControl.PrimaryXAxis.DateTimeFormat = "MMM/dd"
 
 chartControl.PrimaryXAxis.DateTimeRange = New ChartDateTimeRange( _
-    date5, _
-    date5.AddDays(60), _
+    date, _
+    date.AddDays(60), _
     10, _
     ChartDateTimeIntervalType.Days)
 
@@ -424,68 +467,65 @@ chartControl.PrimaryYAxis.Format = "$ #"
 {% highlight c# %}
 
 double[] points = {   25.250,27.750,29.000,28.275,27.750,27.750,27.275,26.250,25.750,25.250,26.250,25.250,24.500,
-                              25.625,25.500,26.625,26.275,26.250,26.875,27.250,26.875,26.500,27.125,26.275,25.875,26.625,
-                              27.125,26.250,27.000,27.250,27.500,28.500,29.500,28.875,28.500,29.000,28.500,28.500,29.000,
-                              29.000,40.000,29.875,29.875,28.875,28.500,28.250,28.875,29.275,29.275,29.750,29.500,29.275,
-                              28.500,27.750,27.625,27.500,26.500,25.000,26.625,26.000,25.875,25.000,25.250,25.125,25.050};
+                  25.625,25.500,26.625,26.275,26.250,26.875,27.250,26.875,26.500,27.125,26.275,25.875,26.625,
+                  27.125,26.250,27.000,27.250,27.500,28.500,29.500,28.875,28.500,29.000,28.500,28.500,29.000,
+                  29.000,40.000,29.875,29.875,28.875,28.500,28.250,28.875,29.275,29.275,29.750,29.500,29.275,
+                  28.500,27.750,27.625,27.500,26.500,25.000,26.625,26.000,25.875,25.000,25.250,25.125,25.050};
 
-DateTime dates = new DateTime(2026,9,4).AddDays(-points.Length);
+DateTime dates = new DateTime(2026, 9, 4).AddDays(-points.Length);
 
-ChartSeries series8 = new ChartSeries("Series");
+ChartSeries series = new ChartSeries("Series");
 
 for (int day = 0; day < points.Length; day++)
 {
-    series8.Points.Add(dates.AddDays(day), points[day]);
+    series.Points.Add(dates.AddDays(day), points[day]);
 }
 
-series8.Type = ChartSeriesType.ThreeLineBreak;
-series8.ReversalAmount = 3.0;
+series.Type = ChartSeriesType.ThreeLineBreak;
+series.ReversalAmount = 3.0;
 
-chartControl.Text = "Three Line Break Chart";
 chartControl.PrimaryYAxis.Format = "$ #";
 chartControl.PrimaryXAxis.ValueType = ChartValueType.DateTime;
 chartControl.PrimaryXAxis.DateTimeRange = new ChartDateTimeRange(dates, dates.AddDays(60), 10, ChartDateTimeIntervalType.Days);
 chartControl.PrimaryXAxis.DateTimeFormat = "MMM/dd";
-chartControl.Series.Add(series8);
+chartControl.Series.Add(series);
 
 {% endhighlight %}
 {% highlight vb %}
 
 Dim points() As Double = {
-    25.25, 27.75, 29.0, 28.275, 27.75, 27.75, 27.275, 26.25, 25.75, 25.25,
-    26.25, 25.25, 24.5, 25.625, 25.5, 26.625, 26.275, 26.25, 26.875, 27.25,
-    26.875, 26.5, 27.125, 26.275, 25.875, 26.625, 27.125, 26.25, 27.0, 27.25,
-    27.5, 28.5, 29.5, 28.875, 28.5, 29.0, 28.5, 28.5, 29.0, 29.0,
-    40.0, 29.875, 29.875, 28.875, 28.5, 28.25, 28.875, 29.275, 29.275, 29.75,
-    29.5, 29.275, 28.5, 27.75, 27.625, 27.5, 26.5, 25.0, 26.625, 26.0,
-    25.875, 25.0, 25.25, 25.125, 25.05
+25.25, 27.75, 29.0, 28.275, 27.75, 27.75, 27.275, 26.25, 25.75, 25.25,
+26.25, 25.25, 24.5, 25.625, 25.5, 26.625, 26.275, 26.25, 26.875, 27.25,
+26.875, 26.5, 27.125, 26.275, 25.875, 26.625, 27.125, 26.25, 27.0, 27.25,
+27.5, 28.5, 29.5, 28.875, 28.5, 29.0, 28.5, 28.5, 29.0, 29.0,
+40.0, 29.875, 29.875, 28.875, 28.5, 28.25, 28.875, 29.275, 29.275, 29.75,
+29.5, 29.275, 28.5, 27.75, 27.625, 27.5, 26.5, 25.0, 26.625, 26.0,
+25.875, 25.0, 25.25, 25.125, 25.05
 }
 
 Dim dates As DateTime = New DateTime(2026, 9, 4).AddDays(-points.Length)
 
-Dim series8 As New ChartSeries("Series")
+Dim series As New ChartSeries("Series")
 
 For day As Integer = 0 To points.Length - 1
-    series8.Points.Add(dates.AddDays(day), points(day))
+    series.Points.Add(dates.AddDays(day), points(day))
 Next
 
-series8.Type = ChartSeriesType.ThreeLineBreak
-series8.ReversalAmount = 3.0
-
-chartControl.Text = "Three Line Break Chart"
+series.Type = ChartSeriesType.ThreeLineBreak
+series.ReversalAmount = 3.0
 
 chartControl.PrimaryYAxis.Format = "$ #"
 
 chartControl.PrimaryXAxis.ValueType = ChartValueType.DateTime
 chartControl.PrimaryXAxis.DateTimeRange = New ChartDateTimeRange(
-    dates,
-    dates.AddDays(60),
-    10,
-    ChartDateTimeIntervalType.Days)
+dates,
+dates.AddDays(60),
+10,
+ChartDateTimeIntervalType.Days)
 
 chartControl.PrimaryXAxis.DateTimeFormat = "MMM/dd"
 
-chartControl.Series.Add(series8)
+chartControl.Series.Add(series)
 
 {% endhighlight %}
 {% endtabs %}

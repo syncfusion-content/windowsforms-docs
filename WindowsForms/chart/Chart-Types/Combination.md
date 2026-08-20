@@ -21,11 +21,6 @@ Chart Details
 {% tabs %}
 {% highlight c# %}
 
-ChartTitle title = new ChartTitle() { Text = "Beijing 2008 Olympics" };
-chartControl.Titles.Add(title);
-chartControl.PrimaryXAxis.Title = "Country";
-chartControl.PrimaryYAxis.Title = "Number of Medals Won";
-
 for (int i = 0; i < 3; i++)
 {
     ChartSeries Combination = new ChartSeries("Gold");
@@ -68,18 +63,8 @@ for (int i = 0; i < 3; i++)
 chartControl.Series[1].Style.Symbol.Shape = ChartSymbolShape.Diamond;
 chartControl.Series[0].Style.Symbol.Shape = ChartSymbolShape.Diamond;
 
-chartControl.Legend.Visible = true;
-chartControl.Legend.Position = ChartDock.Top;
-chartControl.LegendAlignment = ChartAlignment.Center;
-chartControl.LegendsPlacement = ChartPlacement.Outside;
-
 {% endhighlight %}
 {% highlight vb %}
-
-chartControl.Titles.Add(New ChartTitle() With {.Text = "Beijing 2008 Olympics"})
-
-chartControl.PrimaryXAxis.Title = "Country"
-chartControl.PrimaryYAxis.Title = "Number of Medals Won"
 
 For i As Integer = 0 To 2
 
@@ -126,11 +111,6 @@ Next
 
 chartControl.Series(1).Style.Symbol.Shape = ChartSymbolShape.Diamond
 chartControl.Series(0).Style.Symbol.Shape = ChartSymbolShape.Diamond
-
-chartControl.Legend.Visible = True
-chartControl.Legend.Position = ChartDock.Top
-chartControl.LegendAlignment = ChartAlignment.Center
-chartControl.LegendsPlacement = ChartPlacement.Outside
 
 {% endhighlight %}
 {% endtabs %}

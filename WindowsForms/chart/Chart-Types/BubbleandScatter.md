@@ -31,11 +31,6 @@ The following code example demonstrates how to create a Scatter Chart.
 {% tabs %}
 {% highlight c# %}
 
-ChartTitle title = new ChartTitle() { Text = "Product  Comparison Chart" };
-chartControl.Titles.Add(title);
-
-chartControl.PrimaryXAxis.Title = "Range(Miles)";
-chartControl.PrimaryYAxis.Title = "Capacity(Tonnes)";
 ChartSeries series = new ChartSeries("Technology AAA", ChartSeriesType.Scatter);
 series.Text = series.Name;
 
@@ -60,17 +55,6 @@ chartControl.Series.Add(ChartSeries);
 
 {% endhighlight %}
 {% highlight vb %}
-
-' Chart Title
-Dim title As New ChartTitle() With {
-    .Text = "Product  Comparison Chart"
-}
-
-chartControl.Titles.Add(title)
-
-' Axis Titles
-chartControl.PrimaryXAxis.Title = "Range(Miles)"
-chartControl.PrimaryYAxis.Title = "Capacity(Tonnes)"
 
 ' Technology AAA Series
 Dim series As New ChartSeries("Technology AAA", ChartSeriesType.Scatter)

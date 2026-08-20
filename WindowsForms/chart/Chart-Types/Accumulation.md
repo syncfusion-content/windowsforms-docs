@@ -9,7 +9,7 @@ documentation: ug
 
 # Accumulation Charts in Windows Forms Chart
 
-Accumulation Charts display data as parts of a whole, where each segment represents a percentage of the total value. These charts typically use a single data series and do not require axes. Essential® Chart provides two types of Accumulation Charts: **Pyramid Chart** and **Funnel Chart**..
+Accumulation Charts display data as parts of a whole, where each segment represents a percentage of the total value. These charts typically use a single data series and do not require axes. Chart provides two types of Accumulation Charts: **Pyramid Chart** and **Funnel Chart**..
 
 You can also customize the following feature:
 
@@ -28,9 +28,6 @@ The following code example demonstrates how to create a Funnel Chart.
 
 {% tabs %}
 {% highlight c# %}
-
-ChartTitle title = new ChartTitle() { Text = "World Crop Statistics" };
-chartControl.Titles.Add(title);
 
 ChartSeries series = new ChartSeries("Funnel chart", ChartSeriesType.Funnel);
 series.Points.Add(0, 25);
@@ -54,16 +51,8 @@ series.ConfigItems.FunnelItem.LabelPlacement = ChartAccumulationLabelPlacement.C
 
 chartControl.Legend.Visible = false;
 
-chartControl.Size = new Size(400, 350);
-
 {% endhighlight %}
 {% highlight vb %}
-
-' Chart Title
-Dim title As New ChartTitle() With {
-    .Text = "World Crop Statistics"
-}
-chartControl.Titles.Add(title)
 
 ' Funnel Series
 Dim series As New ChartSeries("Funnel chart", ChartSeriesType.Funnel)
@@ -94,9 +83,6 @@ series.ConfigItems.FunnelItem.LabelPlacement = ChartAccumulationLabelPlacement.C
 ' Legend
 chartControl.Legend.Visible = False
 
-' Chart Size
-chartControl.Size = New Size(400, 350)
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -115,9 +101,6 @@ The following code example demonstrates how to create a Pyramid Chart.
 
 {% tabs %}
 {% highlight c# %}
-
-ChartTitle title = new ChartTitle() { Text = "World Crop Statistics" };
-chartControl.Titles.Add(title);
 
 ChartSeries series = new ChartSeries("Pyramid chart", ChartSeriesType.Pyramid);
 series.Points.Add(0, 25);
@@ -141,16 +124,8 @@ series.ConfigItems.PyramidItem.LabelPlacement = ChartAccumulationLabelPlacement.
 
 chartControl.Legend.Visible = false;
 
-chartControl.Size = new Size(400, 350);
-
 {% endhighlight %}
 {% highlight vb %}
-
-' Chart Title
-Dim title As New ChartTitle() With {
-    .Text = "World Crop Statistics"
-}
-chartControl.Titles.Add(title)
 
 ' Pyramid Series
 Dim series As New ChartSeries("Pyramid chart", ChartSeriesType.Pyramid)
@@ -180,9 +155,6 @@ series.ConfigItems.PyramidItem.LabelPlacement = ChartAccumulationLabelPlacement.
 
 ' Hide Legend
 chartControl.Legend.Visible = False
-
-' Set Chart Size
-chartControl.Size = New Size(400, 350)
 
 {% endhighlight %}
 {% endtabs %}

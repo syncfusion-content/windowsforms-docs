@@ -44,6 +44,7 @@ chartControl.Series.Add(series);
 {% endhighlight %}
 {% highlight vb %}
 
+' Range Area Series
 Dim series As New ChartSeries("Profit Range", ChartSeriesType.RangeArea)
 
 series.Points.Add(1, 18, 50)

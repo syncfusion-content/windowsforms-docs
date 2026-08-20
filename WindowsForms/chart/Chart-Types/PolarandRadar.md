@@ -14,11 +14,8 @@ Polar and Radar charts are used to display values and angles in a graphical form
 You can also customize the following features for Polar and Radar charts:
 
 * **Draw Type**: The rendering style of the chart can be customized using the `RadarItem` property of `ConfigItems`.
-
 * **Radar Axis Style**: The appearance of the radar axis can be customized using the [RadarStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_RadarStyle) property in Radar chart.
-
 * **Inversed Polar and Radar Charts**: Polar and Radar charts can be rendered in the clockwise direction using the [Inversed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_Inversed) property in [ChartAxis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html).
-
 * **Line Style Customization**: The solid circular lines of Polar and Radar charts can be customized using the pen properties of the primary X and Y axes.
 
 ## Polar Chart
@@ -36,9 +33,6 @@ The following code example demonstrates how to create a Polar Chart.
 
 {% tabs %}
 {% highlight c# %}
-
-ChartTitle title = new ChartTitle() { Text = "ABS(Sin(3φ))" };
-chartControl.Titles.Add(title);
 
 ChartSeries series1 = new ChartSeries(" System 1", ChartSeriesType.Polar);
 series1.Text = series1.Name;
@@ -66,17 +60,12 @@ chartControl.PrimaryYAxis.Range = new MinMaxInfo(0, 1.5, 0.5);
 chartControl.PrimaryXAxis.RangeType = ChartAxisRangeType.Set;
 chartControl.PrimaryXAxis.Range = new MinMaxInfo(0, 360, 45);
 
-
 {% endhighlight %}
 {% highlight vb %}
 
-Dim title As New ChartTitle() With {
-    .Text = "ABS(Sin(3φ))"
-}
+' System 1 Series
+Dim series1 As New ChartSeries(" System 1", ChartSeriesType.Polar)
 
-chartControl.Titles.Add(title)
-
-Dim series1 As New ChartSeries("System 1", ChartSeriesType.Polar)
 series1.Text = series1.Name
 
 For i As Integer = 0 To 710
@@ -88,7 +77,9 @@ series1.Style.Border.Color = Color.FromArgb(0, 128, 192)
 
 chartControl.Series.Add(series1)
 
-Dim series2 As New ChartSeries("System 2", ChartSeriesType.Polar)
+' System 2 Series
+Dim series2 As New ChartSeries(" System 2", ChartSeriesType.Polar)
+
 series2.Text = series2.Name
 
 For i As Integer = 0 To 355
@@ -100,9 +91,11 @@ series2.Style.Border.Color = Color.FromArgb(209, 0, 0)
 
 chartControl.Series.Add(series2)
 
+' Y-Axis Settings
 chartControl.PrimaryYAxis.RangeType = ChartAxisRangeType.Set
 chartControl.PrimaryYAxis.Range = New MinMaxInfo(0, 1.5, 0.5)
 
+' X-Axis Settings
 chartControl.PrimaryXAxis.RangeType = ChartAxisRangeType.Set
 chartControl.PrimaryXAxis.Range = New MinMaxInfo(0, 360, 45)
 

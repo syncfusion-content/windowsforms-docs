@@ -60,10 +60,12 @@ series.ConfigItems.PieItem.PieRadius = 100;
 series.Style.Font.Size = 8.0f;
 
 chartControl.Series.Add(series);
+chartControl.Legend.Visible = false;
 
 {% endhighlight %}
 {% highlight vb %}
 
+' Pie Series
 Dim series As New ChartSeries("Market", ChartSeriesType.Pie)
 
 series.Points.Add(0, 20)
@@ -74,6 +76,7 @@ series.Points.Add(4, 12)
 series.Points.Add(5, 3)
 series.Points.Add(6, 2)
 
+' Data Labels
 series.Styles(0).Text = String.Format("Production {0}%", series.Points(0).YValues(0))
 series.Styles(1).Text = String.Format("Labor {0}%", series.Points(1).YValues(0))
 series.Styles(2).Text = String.Format("Facilities {0}%", series.Points(2).YValues(0))
@@ -84,16 +87,19 @@ series.Styles(6).Text = String.Format("Legal {0}%", series.Points(6).YValues(0))
 
 series.Style.DisplayText = True
 
+' Pie Settings
 series.ConfigItems.PieItem.LabelStyle = ChartAccumulationLabelStyle.OutsideInColumn
 series.ConfigItems.PieItem.AngleOffset = 60
 
 series.ExplodedIndex = 3
-
 series.ConfigItems.PieItem.PieRadius = 100
 
 series.Style.Font.Size = 8.0F
 
 chartControl.Series.Add(series)
+
+' Hide Legend
+chartControl.Legend.Visible = False
 
 {% endhighlight %}
 {% endtabs %}

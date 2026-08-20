@@ -13,9 +13,9 @@ Area charts highlight the magnitude of change over time by rendering data in a c
 
 You can also customize the following features for area charts:
 
-* Series Color Settings: Background and foreground colors for area charts are customized through the [Interior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStyleInfo.html#Syncfusion_Windows_Forms_Chart_ChartStyleInfo_Interior) property of the [ChartStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStyleInfo.html) class.
-* Chart 3-D Mode: A chart is rendered in 3-D mode by enabling the [Series3D](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Series3D) property.
-* Border Settings: Border color and width of an area chart can be changed through the [Color](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLineInfo.html#Syncfusion_Windows_Forms_Chart_ChartLineInfo_Color) and [Width](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLineInfo.html#Syncfusion_Windows_Forms_Chart_ChartLineInfo_Width) properties.
+* **Series Color Settings**: Background and foreground colors for area charts are customized through the [Interior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStyleInfo.html#Syncfusion_Windows_Forms_Chart_ChartStyleInfo_Interior) property of the [ChartStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStyleInfo.html) class.
+* **Chart 3-D Mode**: A chart is rendered in 3-D mode by enabling the [Series3D](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Series3D) property.
+* **Border Settings**: Border color and width of an area chart can be changed through the [Color](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLineInfo.html#Syncfusion_Windows_Forms_Chart_ChartLineInfo_Color) and [Width](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLineInfo.html#Syncfusion_Windows_Forms_Chart_ChartLineInfo_Width) properties.
  
  ## Area Chart
  
@@ -30,10 +30,6 @@ Chart details for area chart.
 {% tabs %}
 {% highlight c# %}
 
-ChartTitle title = new ChartTitle() { Text = "Daily Server Load" };
-chartControl.Titles.Add(title);
-chartControl.PrimaryYAxis.Title = "Number of Medals Won";
-
 ChartSeries firstServer = new ChartSeries("Server 1", ChartSeriesType.Area);
 firstServer.Points.Add(10, 300);
 firstServer.Points.Add(20, 500);
@@ -43,22 +39,8 @@ firstServer.Points.Add(50, 390);
 
 chartControl.Series.Add(firstServer);
 
-chartControl.Legend.Visible = true;
-chartControl.Legend.Position = ChartDock.Top;
-chartControl.LegendAlignment = ChartAlignment.Center;
-chartControl.LegendsPlacement = ChartPlacement.Outside;
-
 {% endhighlight %}
 {% highlight vb %}
-
-' Chart Title
-Dim title As New ChartTitle() With {
-    .Text = "Daily Server Load"
-}
-
-chartControl.Titles.Add(title)
-
-chartControl.PrimaryYAxis.Title = "Server Load (MB Bytes)"
 
 ' Area Series
 Dim firstServer As New ChartSeries("Server 1", ChartSeriesType.Area)
@@ -70,12 +52,6 @@ firstServer.Points.Add(40, 450)
 firstServer.Points.Add(50, 390)
 
 chartControl.Series.Add(firstServer)
-
-' Legend Settings
-chartControl.Legend.Visible = True
-chartControl.Legend.Position = ChartDock.Top
-chartControl.LegendAlignment = ChartAlignment.Center
-chartControl.LegendsPlacement
 
 {% endhighlight %}
 {% endtabs %}
