@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Navigation Bar in Windows Forms GridGrouping control | Syncfusion®
-description: Learn about Navigation Bar support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
-platform: WindowsForms
-control: GridGrouping
+title: Navigation Bar in Windows Forms GridGroupingControl | Syncfusion®
+description: Navigation Bar in Windows Forms GridGroupingControl enables record navigation, customization, RTL support, visual styles, and programmatic navigation features.
+platform: windowsforms
+control: GridGroupingControl
 documentation: ug
 ---
 
-# Navigation Bar in Windows Forms GridGrouping control
+# Navigation Bar in Windows Forms GridGroupingControl
 GridGroupingControl comes with an in-built navigation control that allows the user to browse through the records with ease. The navigation bar consists of buttons that facilitate navigation to first, next, previous, last records and also to add new records in the grid. It also contains a label that displays the current record number together with the total record count.
 
-### Adding Navigation Bar Through Code
+## Adding Navigation Bar Through Code
 Navigation Bar can added through code by setting the [ShowNavigationBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_ShowNavigationBar) property to `true`. Tooltips can be enabled for the navigation bar by setting the property, [ShowNavigationBarToolTips](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_ShowNavigationBarToolTips) to `true`. 
 
 {% tabs %}
