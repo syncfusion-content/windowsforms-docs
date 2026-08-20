@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-find-DisplayElement-Type | Windows Forms | Syncfusion
-description: how to find displayelement type
+title: Find DisplayElement Type in WinForms GridGroupingControl | Syncfusion®
+description: Find the DisplayElement type in Syncfusion® Windows Forms GridGroupingControl, its display elements, element kinds, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How To Find DisplayElement Type
+# How to Find DisplayElement Type in WinForms GridGroupingControl
 
 You can find the type of particular DisplayElement using the code below.
 
