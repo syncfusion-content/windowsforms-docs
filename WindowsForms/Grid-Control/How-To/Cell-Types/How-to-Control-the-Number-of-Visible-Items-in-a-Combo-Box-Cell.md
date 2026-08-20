@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ComboBox Items Count in in Windows Forms Grid Control | Syncfusion®
+title: Change ComboBox Items Count in WinForms Grid Control | Syncfusion®
 description: Control the number of visible items in a combo box cell in Syncfusion® Windows Forms Grid Control using the DropDownRows property and more.
 platform: windowsforms
 control: Grid Control
