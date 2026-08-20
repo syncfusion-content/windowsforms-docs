@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Conditional Formatting in WinForms GridGroupingControl | Syncfusion®
+title: Row Conditional Formatting WinForms GridGroupingControl | Syncfusion®
 description: Add conditional formatting to rows in Syncfusion® Windows Forms GridGroupingControl, its row styling, conditional appearance customization.
 platform: windowsforms
 control: GridGroupingControl
