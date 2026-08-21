@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Event Handling in Windows Forms CurrencyTextBox | Syncfusion®
 description: Learn here about event handling with Syncfusion Windows Forms CurrencyTextBox control, its elements, and more.

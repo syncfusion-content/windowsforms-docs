@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Style Settings in Windows Forms Calculator | Syncfusion®
 description: Learn about Style Settings support in Syncfusion Essential Studio® Windows Forms Calculator control and more details.

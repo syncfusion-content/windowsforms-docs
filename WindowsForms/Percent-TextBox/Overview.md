@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: About Syncfusion® Windows Forms PercentTextBox Control | Syncfusion®
 description: Learn here all about introduction of Syncfusion Windows Forms PercentTextBox control, its elements and more details.

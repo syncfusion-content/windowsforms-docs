@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Styles Settings in Windows Forms TabControlAdv | Syncfusion®
 description: Learn about Styles Settings support in Syncfusion Windows Forms TabControlAdv control and more details.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Control Events in Windows Forms HTMLUI | Syncfusion®
 description: Learn about Control Events support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.

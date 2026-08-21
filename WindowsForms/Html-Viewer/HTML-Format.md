@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: HTML Format in Windows Forms HTMLUI | Syncfusion®
 description: Learn about HTML Format support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: DomainUpDownExt Events in Windows Forms DomainUpdownExt | Syncfusion®
 description: Learn about Domainupdownext Events support in Syncfusion Windows Forms DomainUpdownExt control and more details.

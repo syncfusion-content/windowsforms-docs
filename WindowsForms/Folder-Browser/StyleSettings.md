@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Style Settings in Windows Forms FolderBrowser | Syncfusion®
 description: Learn about Style Settings support in Syncfusion Windows Forms FolderBrowser control and more details.

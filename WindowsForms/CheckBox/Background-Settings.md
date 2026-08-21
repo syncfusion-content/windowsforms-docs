@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Background Settings in Windows Forms CheckBoxAdv | Syncfusion®
 description: Learn about Background Settings support in Syncfusion Windows Forms CheckBoxAdv control and more details.

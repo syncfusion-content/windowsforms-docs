@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: About Syncfusion® Windows Forms CheckBoxAdv Control | Syncfusion®
 description: Learn here all about introduction of Syncfusion Windows Forms CheckBoxAdv control, its features and more details.

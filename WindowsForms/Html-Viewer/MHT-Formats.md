@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: MHT Formats in Windows Forms HTMLUI | Syncfusion®
 description: Learn about MHT Formats support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
