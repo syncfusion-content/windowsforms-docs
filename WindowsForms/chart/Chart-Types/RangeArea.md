@@ -76,7 +76,6 @@ The following chart series properties are used as customization options for the 
 * [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font)
 * [HighlightInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#highlightinterior)
 * [ImageIndex](https://help.syncfusion.com/windowsforms/chart/chart-series#imageindex)
-* [Images](https://help.syncfusion.com/windowsforms/chart/chart-series#images)
 * [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior)
 * [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem)
 * [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name)

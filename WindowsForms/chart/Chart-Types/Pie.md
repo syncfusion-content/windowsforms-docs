@@ -106,6 +106,61 @@ chartControl.Legend.Visible = False
 
 ![Pie Chart in Windows Forms](../Chart-Types_images/windowsforms-pie-chart.png)
 
+### Pie type
+
+The [PieType](https://help.syncfusion.com/windowsforms/chart/chart-series#pietype) property specifies the painting style used to render a Pie Chart.
+
+The following values are supported by the [ChartPieType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieType.html) enumeration:
+
+* **None**: No painting style is applied.
+* **Outside**: Applies the painting style to the outer surface of the pie chart.
+* **Inside**: Applies the painting style to the inner surface of the pie chart.
+* **Round**: Applies a rounded painting style to the pie chart.
+* **Bevel**: Applies the painting style to a sloping edge or surface of the pie chart.
+* **Custom**: Applies a custom painting style to the pie chart.
+
+### Customization option
+
+The following chart series properties are used as customization options for Pie chart:
+
+- [AngleOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#angleoffset)
+- [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border)
+- [DisplayShadow](https://help.syncfusion.com/windowsforms/chart/chart-series#displayshadow)
+- [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
+- [DoughnutCoefficient](https://help.syncfusion.com/windowsforms/chart/chart-series#doughnutcoefficient)
+- [DrawSeriesNameInDepth](https://help.syncfusion.com/windowsforms/chart/chart-series#drawseriesnameindepth)
+- [ElementBorders](https://help.syncfusion.com/windowsforms/chart/chart-series#elementborders)
+- [ExplodedAll](https://help.syncfusion.com/windowsforms/chart/chart-series#explodedall)
+- [ExplodedIndex](https://help.syncfusion.com/windowsforms/chart/chart-series#explodedindex)
+- [ExplosionOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#explosionoffset)
+- [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip)
+- [FillMode](https://help.syncfusion.com/windowsforms/chart/chart-series#fillmode)
+- [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font)
+- [Gradient](https://help.syncfusion.com/windowsforms/chart/chart-series#gradient)
+- [HeightByAreaDepth](https://help.syncfusion.com/windowsforms/chart/chart-series#heightbyareadepth)
+- [HeightCoefficient](https://help.syncfusion.com/windowsforms/chart/chart-series#heightcoefficient)
+- [HighlightInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#highlightinterior)
+- [InSideRadius](https://help.syncfusion.com/windowsforms/chart/chart-series#insideradius)
+- [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior)
+- [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem)
+- [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name)
+- [OptimizePiePointPositions](https://help.syncfusion.com/windowsforms/chart/chart-series#optimizepiepointpositions)
+- [PieType](https://help.syncfusion.com/windowsforms/chart/chart-series#pietype)
+- [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat)
+- [ShadowInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowinterior)
+- [ShadowOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowoffset)
+- [ShowDataBindLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#showdatabindlabels)
+- [ShowTicks](https://help.syncfusion.com/windowsforms/chart/chart-series#showticks)
+- [SmartLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#smartlabels)
+- [Summary](https://help.syncfusion.com/windowsforms/chart/chart-series#summary)
+- [Text](https://help.syncfusion.com/windowsforms/chart/chart-series#text-series)
+- [TextColor](https://help.syncfusion.com/windowsforms/chart/chart-series#textcolor)
+- [TextFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#textformat)
+- [TextOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#textoffset)
+- [TextOrientation](https://help.syncfusion.com/windowsforms/chart/chart-series#textorientation)
+- [Visible](https://help.syncfusion.com/windowsforms/chart/chart-series#visible)
+- [VisibleAllPies](https://help.syncfusion.com/windowsforms/chart/chart-series#visibleallpies)
+
 ## Doughnut chart
 
 A Doughnut Chart is a variation of a Pie Chart that displays data as slices in a ring-shaped circle with a hollow center. It is used to show the proportion or percentage contribution of categories to the whole dataset.
@@ -152,22 +207,9 @@ series.ConfigItems.PieItem.HeightCoeficient = 0.1F
 
 ![Height Coefficient in Windows Forms](../Chart-Types_images/windowsforms-chart-height-coefficient.png)
 
-## Pie type
-
-The [PieType](https://help.syncfusion.com/windowsforms/chart/chart-series#pietype) property specifies the painting style used to render a Pie Chart.
-
-The following values are supported by the [ChartPieType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieType.html) enumeration:
-
-* **None**: No painting style is applied.
-* **Outside**: Applies the painting style to the outer surface of the pie chart.
-* **Inside**: Applies the painting style to the inner surface of the pie chart.
-* **Round**: Applies a rounded painting style to the pie chart.
-* **Bevel**: Applies the painting style to a sloping edge or surface of the pie chart.
-* **Custom**: Applies a custom painting style to the pie chart.
-
 ### Customization option
 
-The following chart series properties are used as customization options for Pie chart:
+The following chart series properties are used as customization options for Doughnut chart:
 
 - [AngleOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#angleoffset)
 - [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border)

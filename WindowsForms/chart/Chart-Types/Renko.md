@@ -9,9 +9,9 @@ documentation: ug
 
 # Renko chart in windows forms chart
 
-Renko Chart is a price-based chart that uses fixed-size bricks to represent price movements. A new brick is drawn only when the price moves by a specified amount (ReversalAmount), helping filter out minor market fluctuations and highlight the overall trend. Bullish and bearish trends can be distinguished using PriceUpColor and PriceDownColor.
+A Renko Chart tracks price movements using equal-sized bricks while filtering out minor price changes. A new brick is added only when the price moves by the specified [ReversalAmount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ReversalAmount), which defaults to 1.
 
-Renko charts are commonly used to identify trend direction, support levels, and resistance levels.
+The brick color changes when the trend reverses, showing the new trend direction. Use the [PriceUpColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFinancialConfigItem_PriceUpColor) property for bullish trends and the [PriceDownColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFinancialConfigItem_PriceDownColor) property for bearish trends. Renko Charts help identify trends, support levels, and resistance levels.
 
 The following feature are supported in the Renko charts:
 

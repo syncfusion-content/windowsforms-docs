@@ -9,11 +9,9 @@ documentation: ug
 
 # Three line break chart in windows forms chart
 
-Three Line Break Chart is a price-based chart that displays a series of rising and falling vertical lines based on price movements while ignoring the passage of time. 
+A Three Line Break Chart tracks price movements using vertical boxes while ignoring time. A rising box is added when the price exceeds the previous high, while a falling box is added when the price reaches a new low.
 
-A new line is drawn only when the price exceeds the previous high or low by a specified amount (ReversalAmount), making it useful for identifying trend changes and filtering out minor price fluctuations. 
-
-Bullish and bearish trends can be highlighted using PriceUpColor and PriceDownColor.
+The box color changes to indicate a trend reversal. Use the [PriceUpColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFinancialConfigItem_PriceUpColor) property for bullish trends and the [PriceDownColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFinancialConfigItem_PriceDownColor) property for bearish trends. The [ReversalAmount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ReversalAmount) property defines the price change required to draw a new box.
 
 The following feature are supported in the Three Line Break chart:
 

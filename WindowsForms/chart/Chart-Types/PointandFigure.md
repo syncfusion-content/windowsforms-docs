@@ -9,7 +9,9 @@ documentation: ug
 
 # Point and figure in windows forms chart
 
-Point and Figure Chart is a financial chart used to identify price trends, support and resistance levels, and chart patterns. It focuses solely on price movements, using X's to represent rising prices and O's to represent falling prices, while ignoring the passage of time. The chart requires two Y-values high and low for each data point.
+A Point and Figure Chart tracks price movements while ignoring time. It uses X’s for upward trends and O’s for downward trends to identify support, resistance, and price patterns.
+
+Use the [PriceUpColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFinancialConfigItem_PriceUpColor) property for X’s and the [PriceDownColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFinancialConfigItem_PriceDownColor) property for O’s. The default [ReversalAmount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ReversalAmount) is 1, and the chart requires high and low Y-values for each period.
 
 The following feature are supported in the Point and Figure chart:
 
