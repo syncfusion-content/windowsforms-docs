@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Filtering in Windows Forms SfDataGrid | Syncfusion®
-description: Filtering in SfDataGrid supports Excel-like filtering, custom filter conditions, and data analysis for efficient record retrieval and management.
+title: Filtering in Windows Forms Data Grid | Syncfusion®
+description: Filtering in Data Grid supports Excel-like filtering, custom filter conditions, and data analysis for efficient record retrieval and management.
 platform: windowsforms
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Filtering in Windows Forms SfDataGrid
+# Filtering in Windows Forms Data Grid
 Filtering is the process of retrieving the values from the collection which satisfy the specified condition. In the [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) the filtering can be applied though the UI as well as the programmatic filters. 
 
 ## Programmatic Filtering
