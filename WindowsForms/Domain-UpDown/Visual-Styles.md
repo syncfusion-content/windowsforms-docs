@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Visual Styles in Windows Forms DomainUpdownExt | Syncfusion®
 description: Learn about Visual Styles support in Syncfusion Windows Forms DomainUpdownExt control and more details.

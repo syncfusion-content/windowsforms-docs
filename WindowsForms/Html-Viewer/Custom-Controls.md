@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Custom Controls in Windows Forms HTMLUI control | Syncfusion®
 description: Learn about Custom Controls support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.

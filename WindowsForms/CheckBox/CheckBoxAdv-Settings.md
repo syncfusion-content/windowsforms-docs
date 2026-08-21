@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: CheckBoxAdv Settings in Windows Forms CheckBoxAdv | Syncfusion®
 description: Learn about CheckBoxAdv Settings support in Syncfusion Windows Forms CheckBoxAdv control and more details.

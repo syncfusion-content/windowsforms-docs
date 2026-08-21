@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Exporting in Windows Forms HTMLUI control | Syncfusion®
 description: Learn about Exporting support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.

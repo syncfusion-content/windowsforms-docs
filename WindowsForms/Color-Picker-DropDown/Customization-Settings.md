@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Customization in Windows Forms ColorPickerButton | Syncfusion®
 description: Learn about Customization Settings support in Syncfusion Windows Forms Color Picker DropDown (ColorPickerButton) control and more details.

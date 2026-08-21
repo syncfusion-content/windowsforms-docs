@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Text Selection in Windows Forms HTMLUI | Syncfusion®
 description: Learn about Text Selection support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Image Settings in Windows Forms CheckBoxAdv | Syncfusion®
 description: Learn about Image Settings support in Syncfusion Windows Forms CheckBoxAdv control and more details.

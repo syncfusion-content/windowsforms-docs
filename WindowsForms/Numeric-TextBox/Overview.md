@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: About Syncfusion® Windows Forms SfNumericTextBox Control | Syncfusion®
 description: Learn here all about introduction of Syncfusion Windows Forms Numeric TextBox (SfNumericTextBox) control and more details.

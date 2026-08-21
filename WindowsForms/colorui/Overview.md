@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: About Syncfusion® Windows Forms ColorUI Control | Syncfusion®
 description: Learn here all about introduction of Syncfusion Windows Forms ColorUI control, its features, and more details.

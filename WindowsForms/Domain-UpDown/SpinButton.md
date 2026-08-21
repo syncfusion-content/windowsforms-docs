@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: SpinButton in Windows Forms DomainUpdownExt | Syncfusion®
 description: Learn about Spinbutton support in Syncfusion Windows Forms DomainUpdownExt control and more details.

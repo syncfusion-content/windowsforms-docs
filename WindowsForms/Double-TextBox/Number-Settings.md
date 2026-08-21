@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Number Settings in Windows Forms DoubleTextBox | Syncfusion®
 description: Learn about Number Settings support in Syncfusion Windows Forms DoubleTextBox control and more details.

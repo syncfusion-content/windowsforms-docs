@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Getting Started with Windows Forms SpellCheckerAdv | Syncfusion®
 description: Walks through setting up Syncfusion Windows Forms SpellCheckerAdv control, including elements and basic configuration.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Tab Navigation in Windows Forms TabControlAdv | Syncfusion®
 description: Learn about Tab Navigation support in Syncfusion Windows Forms TabControlAdv control and more details.

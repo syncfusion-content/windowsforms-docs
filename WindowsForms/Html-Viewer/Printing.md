@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Printing in Windows Forms HTMLUI control | Syncfusion®
 description: Learn about Printing support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Getting Started with Windows Forms ToggleButton | Syncfusion®
 description: Learn how to get started with the Syncfusion Windows Forms ToggleButton control. Explore setup, features, examples, and customization options.

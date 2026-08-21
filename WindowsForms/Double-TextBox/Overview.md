@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: About Syncfusion® Windows Forms DoubleTextBox Control | Syncfusion®
 description: Learn here all about introduction of Syncfusion Windows Forms DoubleTextBox control, its elements, and more details.

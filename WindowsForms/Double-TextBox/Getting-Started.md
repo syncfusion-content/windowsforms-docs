@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Getting Started with Windows Forms DoubleTextBox | Syncfusion®
 description: Learn here about getting started with Syncfusion Windows Forms DoubleTextBox control, its elements, and more.

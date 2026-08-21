@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Appearance Settings in Windows Forms TabControlAdv | Syncfusion®
 description: Learn about Appearance Settings support in Syncfusion Windows Forms TabControlAdv control and more details.

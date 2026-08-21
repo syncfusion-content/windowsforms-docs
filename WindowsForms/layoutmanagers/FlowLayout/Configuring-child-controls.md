@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Configure Child Controls in Windows Forms FlowLayout | Syncfusion®
 description: Learn about Configuring Child Controls support in Syncfusion Windows Forms LayoutManagers control and more details.

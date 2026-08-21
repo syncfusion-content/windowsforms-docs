@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Alignment in Windows Forms TabControlAdv | Syncfusion®
 description: Learn about Alignment support in Syncfusion Windows Forms TabControlAdv control, its features and more details.
