@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Size Settings in Windows Forms PercentTextBox | Syncfusion®
 description: Learn about Size Settings support in Syncfusion Windows Forms PercentTextBox control and more details.

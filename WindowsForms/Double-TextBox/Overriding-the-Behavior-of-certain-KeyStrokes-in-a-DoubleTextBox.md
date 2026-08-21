@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Overriding Behavior in Windows Forms DoubleTextBox | Syncfusion®
 description: Learn about Overriding the Behavior of certain Keystrokes in a Doubletextbox support in Syncfusion Windows Forms DoubleTextBox control and more details.

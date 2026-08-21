@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Getting Started with Windows Forms HTMLUI | Syncfusion®
 description: Learn here about getting started with Syncfusion Windows Forms Html Viewer (HTMLUI) control, its elements, and more.

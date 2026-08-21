@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: HTML Bookmarks in Windows Forms HTMLUI control | Syncfusion®
 description: Learn about HTML Bookmarks support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.

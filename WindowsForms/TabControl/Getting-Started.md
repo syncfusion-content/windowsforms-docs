@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Getting Started with Windows Forms TabControlAdv | Syncfusion®
 description: Learn here about getting started with Syncfusion Windows Forms TabControlAdv control, its elements and more details.

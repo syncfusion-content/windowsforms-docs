@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Text Settings in Windows Forms CheckBoxAdv | Syncfusion®
 description: Learn about Text Settings support in Syncfusion Windows Forms CheckBoxAdv control, its features and more details.

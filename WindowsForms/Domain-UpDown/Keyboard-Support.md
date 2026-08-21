@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Keyboard Support in Windows Forms DomainUpdownExt | Syncfusion®
 description: Learn about Keyboard Support support in Syncfusion Windows Forms DomainUpdownExt control and more details.

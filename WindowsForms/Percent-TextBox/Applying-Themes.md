@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Applying Themes in Windows Forms PercentTextBox | Syncfusion®
 description: Learn about Applying Themes support in Syncfusion Windows Forms PercentTextBox control and more details.

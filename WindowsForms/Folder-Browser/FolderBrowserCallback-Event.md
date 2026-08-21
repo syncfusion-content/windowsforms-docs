@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Browser Callback Event in Windows Forms FolderBrowser | Syncfusion®
 description: Learn about Folderbrowser Callback Event support in Syncfusion Windows Forms FolderBrowser control and more details.

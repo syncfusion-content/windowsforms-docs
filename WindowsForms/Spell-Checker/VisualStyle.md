@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: VisualStyle in Windows Forms SpellCheckerAdv | Syncfusion®
 description: Describes the visual styles and themes available in Syncfusion Windows Forms SpellCheckerAdv control for customizing appearance.

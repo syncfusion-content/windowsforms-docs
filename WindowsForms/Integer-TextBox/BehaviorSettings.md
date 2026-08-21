@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Behavior Settings in Windows Forms IntegerTextBox | Syncfusion®
 description: Learn about Behavior Settings support in Syncfusion Windows Forms IntegerTextBox control, its elements and more details.

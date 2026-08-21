@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Popup Calculator in Windows Forms Calculator | Syncfusion®
 description: Learn here all about the Syncfusion Essential Studio® Windows Forms Popup Calculator control, its elements, and more.

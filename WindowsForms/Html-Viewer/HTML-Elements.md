@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: HTML Elements in Windows Forms HTMLUI | Syncfusion®
 description: Learn about HTML Elements support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Working with SfNumericTextBox in Windows Forms | Syncfusion®
 description: Learn about Working with NumericTextBox support in Syncfusion Windows Forms Numeric TextBox (SfNumericTextBox) control and more details.

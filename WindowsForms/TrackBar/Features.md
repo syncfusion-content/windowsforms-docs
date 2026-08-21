@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Features in Windows Forms TrackBarEx | Syncfusion®
 description: Learn about Features support in Syncfusion Windows Forms TrackBarEx control, its features and more details.

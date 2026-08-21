@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Border Settings in Windows Forms PercentTextBox | Syncfusion®
 description: Learn about Border Settings support in Syncfusion Windows Forms PercentTextBox control and more details.

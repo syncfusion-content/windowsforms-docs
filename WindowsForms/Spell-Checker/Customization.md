@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Customization in Windows Forms SpellCheckerAdv | Syncfusion®
 description: Describes customization options for Syncfusion Windows Forms SpellCheckerAdv control, including UI and behavior configuration.

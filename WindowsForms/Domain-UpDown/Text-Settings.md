@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Text Settings in Windows Forms DomainUpdownExt | Syncfusion®
 description: Learn about Text Settings support in Syncfusion Windows Forms DomainUpdownExt control and more details.
