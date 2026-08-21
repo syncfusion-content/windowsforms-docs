@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Validation in Windows Forms SfDataGrid | Syncfusion®
-description: Data validation in SfDataGrid supports validation rules, input checking, and error notifications to ensure accurate and reliable data entry.
+title: Data Validation in Windows Forms Data Grid | Syncfusion®
+description: Data validation in Data Grid supports validation rules, input checking, and error notifications to ensure accurate and reliable data entry.
 platform: windowsforms
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Data Validation in Windows Forms SfDataGrid
+# Data Validation in Windows Forms Data Grid
 [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) allows to validate the data and display hints in case of validation is not passed. In case of invalid data, error icon is displayed at the left corner of cell. When mouse hover the error icon, error information will be displayed in tooltip.
 
 ## Built-in Validations
