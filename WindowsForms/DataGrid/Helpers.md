@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Helpers in Windows Forms SfDataGrid | Syncfusion®
-description: Helpers in SfDataGrid provides helper classes and methods to customize grid behavior, access grid elements, and simplify development tasks.
+title: Helpers in Windows Forms Data Grid | Syncfusion®
+description: Helpers in Data Grid provides helper classes and methods to customize grid behavior, access grid elements, and simplify development tasks.
 platform: windowsforms
-control: SfDataGrid 
+control: Data Grid 
 documentation: ug
 ---
 
-# Helpers in Windows Forms SfDataGrid
+# Helpers in Windows Forms Data Grid
 
 ## IndexResolver
 
