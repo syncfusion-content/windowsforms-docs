@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Export To PDF in Windows Forms SfDataGrid | Syncfusion®
-description: Export To PDF in SfDataGrid supports exporting records with customization options, formatting, styles, and layout settings for PDF documents.
+title: Export To PDF in Windows Forms Data Grid | Syncfusion®
+description: Export To PDF in Data Grid supports exporting records with customization options, formatting, styles, and layout settings for PDF documents.
 platform: windowsforms
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Export To PDF in Windows Forms SfDataGrid
+# Export To PDF in Windows Forms Data Grid
 [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) provides support to export data to PDF file. It also provides support for grouping, filtering, sorting, unbound rows and stacked headers while exporting.
 The following assemblies needs to be added for exporting to PDF file.
 

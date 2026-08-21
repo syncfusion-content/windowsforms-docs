@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Windows Forms SfDataGrid | Syncfusion®
+title: Getting Started with Windows Forms Data Grid | Syncfusion®
 canonical_url: "https://www.syncfusion.com/winforms-ui-controls/datagrid"
-description: Learn how to get started with the Syncfusion® Windows Forms SfDataGrid control. Explore setup, features, examples, and customization options.
+description: Learn how to get started with the Syncfusion® Windows Forms Data Grid control. Explore setup, features, examples, and customization options.
 platform: windowsforms
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
-# Getting Started with Windows Forms SfDataGrid
+# Getting Started with Windows Forms Data Grid
 This section provides a quick overview for working with the [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid). Walk through the entire process of creating a real world data grid.
 
 To get start quickly with WinForms DataGrid, you can check on this video:

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Rows in Windows Forms SfDataGrid | Syncfusion®
-description: Rows in SfDataGrid support row headers, header customization, frozen rows and columns, row styling, and record management features.
+title: Rows in Windows Forms Data Grid | Syncfusion®
+description: Rows in Data Grid support row headers, header customization, frozen rows and columns, row styling, and record management features.
 platform: windowsforms
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Rows in Windows Forms SfDataGrid
+# Rows in Windows Forms Data Grid
 
 ## Row Header
 
