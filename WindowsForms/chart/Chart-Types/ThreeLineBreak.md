@@ -17,7 +17,7 @@ Bullish and bearish trends can be highlighted using PriceUpColor and PriceDownCo
 
 The following feature are supported in the Three Line Break chart:
 
-* **Chart 3-D Mode**: A chart can be rendered in 3D by enabling the `Series3D` property.
+* **Chart 3-D Mode**: A chart can be rendered in 3D by enabling the [Series3D](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Series3D) property.
 
 N>
 Chart Details
@@ -104,20 +104,20 @@ The following chart series properties are used as customization options for Thre
 - [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
 - [DrawSeriesNameInDepth](https://help.syncfusion.com/windowsforms/chart/chart-series#drawseriesnameindepth)
 - [ElementBorders](https://help.syncfusion.com/windowsforms/chart/chart-series#elementborders)
-- [ImageIndex](https://help.syncfusion.com/windowsforms/chart/chart-series#imageindex)
-- [Images](https://help.syncfusion.com/windowsforms/chart/chart-series#images)
-- [PriceDownColor](https://help.syncfusion.com/windowsforms/chart/chart-series#pricedowncolor)
-- [PriceUpColor](https://help.syncfusion.com/windowsforms/chart/chart-series#priceupcolor)
-- [Spacing Between Series](https://help.syncfusion.com/windowsforms/chart/chart-series#spacingbetweenseries)
-- [ShadowInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowinterior)
-- [ShadowOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowoffset)
 - [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip)
 - [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font)
+- [ImageIndex](https://help.syncfusion.com/windowsforms/chart/chart-series#imageindex)
+- [Images](https://help.syncfusion.com/windowsforms/chart/chart-series#images)
 - [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior)
 - [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem)
 - [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name)
 - [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat)
+- [PriceDownColor](https://help.syncfusion.com/windowsforms/chart/chart-series#pricedowncolor)
+- [PriceUpColor](https://help.syncfusion.com/windowsforms/chart/chart-series#priceupcolor)
+- [ShadowInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowinterior)
+- [ShadowOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowoffset)
 - [SmartLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#smartlabels)
+- [Spacing Between Series](https://help.syncfusion.com/windowsforms/chart/chart-series#spacingbetweenseries)
 - [Summary](https://help.syncfusion.com/windowsforms/chart/chart-series#summary)
 - [Text](https://help.syncfusion.com/windowsforms/chart/chart-series#text-series)
 - [TextColor](https://help.syncfusion.com/windowsforms/chart/chart-series#textcolor)

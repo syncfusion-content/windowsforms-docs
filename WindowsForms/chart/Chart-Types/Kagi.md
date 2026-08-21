@@ -13,7 +13,7 @@ Kagi Chart is a financial chart that tracks price movements using a series of co
 
 The following feature are supported in the Kagi chart:
 
-* **Chart 3-D Mode**: A chart can be rendered in 3D by enabling the `Series3D` property.
+* **Chart 3-D Mode**: A chart can be rendered in 3D by enabling the [Series3D](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Series3D) property.
 
 N>
 Chart Details
@@ -75,20 +75,20 @@ The following chart series properties are used as customization options for Kagi
 - [DisplayShadow](https://help.syncfusion.com/windowsforms/chart/chart-series#displayshadow)
 - [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
 - [DrawSeriesNameInDepth](https://help.syncfusion.com/windowsforms/chart/chart-series#drawseriesnameindepth)
-- [PriceDownColor](https://help.syncfusion.com/windowsforms/chart/chart-series#pricedowncolor)
-- [PriceUpColor](https://help.syncfusion.com/windowsforms/chart/chart-series#priceupcolor)
-- [ReversalAmount](https://help.syncfusion.com/windowsforms/chart/chart-series#reversalamount)
-- [Rotate](https://help.syncfusion.com/windowsforms/chart/chart-series#rotate)
-- [Spacing Between Series](https://help.syncfusion.com/windowsforms/chart/chart-series#spacingbetweenseries)
-- [ShadowInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowinterior)
-- [ShadowOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowoffset)
 - [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip)
 - [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font)
 - [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior)
 - [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem)
 - [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name)
 - [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat)
+- [PriceDownColor](https://help.syncfusion.com/windowsforms/chart/chart-series#pricedowncolor)
+- [PriceUpColor](https://help.syncfusion.com/windowsforms/chart/chart-series#priceupcolor)
+- [ReversalAmount](https://help.syncfusion.com/windowsforms/chart/chart-series#reversalamount)
+- [Rotate](https://help.syncfusion.com/windowsforms/chart/chart-series#rotate)
+- [ShadowInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowinterior)
+- [ShadowOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowoffset)
 - [SmartLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#smartlabels)
+- [Spacing Between Series](https://help.syncfusion.com/windowsforms/chart/chart-series#spacingbetweenseries)
 - [Summary](https://help.syncfusion.com/windowsforms/chart/chart-series#summary)
 - [Text](https://help.syncfusion.com/windowsforms/chart/chart-series#text-series)
 - [TextColor](https://help.syncfusion.com/windowsforms/chart/chart-series#textcolor)

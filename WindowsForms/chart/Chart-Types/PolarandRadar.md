@@ -13,8 +13,6 @@ Polar and Radar charts are used to display values and angles in a graphical form
 
 You can also customize the following features for Polar and Radar charts:
 
-* **Draw Type**: The rendering style of the chart can be customized using the `RadarItem` property of `ConfigItems`.
-* **Radar Axis Style**: The appearance of the radar axis can be customized using the [RadarStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_RadarStyle) property in Radar chart.
 * **Inversed Polar and Radar Charts**: Polar and Radar charts can be rendered in the clockwise direction using the [Inversed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_Inversed) property in [ChartAxis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html).
 * **Line Style Customization**: The solid circular lines of Polar and Radar charts can be customized using the pen properties of the primary X and Y axes.
 
@@ -112,21 +110,21 @@ The following chart series properties are used as customization options for Pola
 - [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
 - [DrawSeriesNameInDepth](https://help.syncfusion.com/windowsforms/chart/chart-series#drawseriesnameindepth)
 - [ElementBorders](https://help.syncfusion.com/windowsforms/chart/chart-series#elementborders)
+- [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip)
+- [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font)
 - [ImageIndex](https://help.syncfusion.com/windowsforms/chart/chart-series#imageindex)
 - [Images](https://help.syncfusion.com/windowsforms/chart/chart-series#images)
+- [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior)
+- [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem)
 - [LightAngle](https://help.syncfusion.com/windowsforms/chart/chart-series#lightangle)
 - [LightColor](https://help.syncfusion.com/windowsforms/chart/chart-series#lightcolor)
+- [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name)
+- [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat)
 - [RadarType](https://help.syncfusion.com/windowsforms/chart/chart-series#radartype)
 - [Rotate](https://help.syncfusion.com/windowsforms/chart/chart-series#rotate)
 - [ShadingMode](https://help.syncfusion.com/windowsforms/chart/chart-series#shadingmode)
 - [ShadowInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowinterior)
 - [ShadowOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowoffset)
-- [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip)
-- [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font)
-- [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior)
-- [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem)
-- [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name)
-- [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat)
 - [SmartLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#smartlabels)
 - [Summary](https://help.syncfusion.com/windowsforms/chart/chart-series#summary)
 - [Text](https://help.syncfusion.com/windowsforms/chart/chart-series#text-series)
@@ -141,6 +139,11 @@ The following chart series properties are used as customization options for Pola
 Radar Chart displays data using radial axes that extend from a central point. Each category is plotted along its own axis, and the data points are connected to form a shape. 
 
 It is useful for comparing multiple data series, analyzing performance against ideal values, and visualizing data with a natural cyclic order, such as seasons or time periods.
+
+You can also customize the following features for Radar chart:
+
+* **Draw Type**: The rendering style of the chart can be customized using the `RadarItem` property of `ConfigItems`.
+* **Radar Axis Style**: The appearance of the radar axis can be customized using the [RadarStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_RadarStyle) property in Radar chart.
 
 N>
 Chart Details
@@ -307,23 +310,23 @@ The following chart series properties are used as customization options for Rada
 - [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
 - [DrawSeriesNameInDepth](https://help.syncfusion.com/windowsforms/chart/chart-series#drawseriesnameindepth)
 - [ElementBorders](https://help.syncfusion.com/windowsforms/chart/chart-series#elementborders)
+- [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip)
+- [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font)
 - [ImageIndex](https://help.syncfusion.com/windowsforms/chart/chart-series#imageindex)
 - [Images](https://help.syncfusion.com/windowsforms/chart/chart-series#images)
+- [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior)
+- [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem)
 - [LightAngle](https://help.syncfusion.com/windowsforms/chart/chart-series#lightangle)
 - [LightColor](https://help.syncfusion.com/windowsforms/chart/chart-series#lightcolor)
+- [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name)
 - [PhongAlpha](https://help.syncfusion.com/windowsforms/chart/chart-series#phongalpha)
-- [RadarType](https://help.syncfusion.com/windowsforms/chart/chart-series#radartype)
+- [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat)
 - [RadarStyle](https://help.syncfusion.com/windowsforms/chart/chart-series#radarstyle)
+- [RadarType](https://help.syncfusion.com/windowsforms/chart/chart-series#radartype)
 - [Rotate](https://help.syncfusion.com/windowsforms/chart/chart-series#rotate)
 - [ShadingMode](https://help.syncfusion.com/windowsforms/chart/chart-series#shadingmode)
 - [ShadowInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowinterior)
 - [ShadowOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowoffset)
-- [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip)
-- [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font)
-- [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior)
-- [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem)
-- [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name)
-- [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat)
 - [SmartLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#smartlabels)
 - [Summary](https://help.syncfusion.com/windowsforms/chart/chart-series#summary)
 - [Text](https://help.syncfusion.com/windowsforms/chart/chart-series#text-series)

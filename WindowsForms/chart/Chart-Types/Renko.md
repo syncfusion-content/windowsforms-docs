@@ -9,11 +9,13 @@ documentation: ug
 
 # Renko chart in windows forms chart
 
-Renko Chart is a price-based chart that uses fixed-size bricks to represent price movements. A new brick is drawn only when the price moves by a specified amount (ReversalAmount), helping filter out minor market fluctuations and highlight the overall trend. Bullish and bearish trends can be distinguished using PriceUpColor and PriceDownColor. Renko charts are commonly used to identify trend direction, support levels, and resistance levels.
+Renko Chart is a price-based chart that uses fixed-size bricks to represent price movements. A new brick is drawn only when the price moves by a specified amount (ReversalAmount), helping filter out minor market fluctuations and highlight the overall trend. Bullish and bearish trends can be distinguished using PriceUpColor and PriceDownColor.
+
+Renko charts are commonly used to identify trend direction, support levels, and resistance levels.
 
 The following feature are supported in the Renko charts:
 
-* **Chart 3-D Mode**: A chart can be rendered in 3D by enabling the `Series3D` property.
+* **Chart 3-D Mode**: A chart can be rendered in 3D by enabling the `[Series3D](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Series3D) property.
 
 N>
 Chart Details
@@ -103,21 +105,21 @@ The following chart series properties are used as customization options for Renk
 - [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
 - [DrawSeriesNameInDepth](https://help.syncfusion.com/windowsforms/chart/chart-series#drawseriesnameindepth)
 - [ElementBorders](https://help.syncfusion.com/windowsforms/chart/chart-series#elementborders)
-- [ImageIndex](https://help.syncfusion.com/windowsforms/chart/chart-series#imageindex)
-- [Images](https://help.syncfusion.com/windowsforms/chart/chart-series#images)
-- [PriceDownColor](https://help.syncfusion.com/windowsforms/chart/chart-series#pricedowncolor)
-- [PriceUpColor](https://help.syncfusion.com/windowsforms/chart/chart-series#priceupcolor)
-- [ReversalAmount](https://help.syncfusion.com/windowsforms/chart/chart-series#reversalamount)
-- [Spacing Between Series](https://help.syncfusion.com/windowsforms/chart/chart-series#spacingbetweenseries)
-- [ShadowInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowinterior)
-- [ShadowOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowoffset)
 - [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip)
 - [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font)
+- [ImageIndex](https://help.syncfusion.com/windowsforms/chart/chart-series#imageindex)
+- [Images](https://help.syncfusion.com/windowsforms/chart/chart-series#images)
 - [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior)
 - [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem)
 - [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name)
 - [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat)
+- [PriceDownColor](https://help.syncfusion.com/windowsforms/chart/chart-series#pricedowncolor)
+- [PriceUpColor](https://help.syncfusion.com/windowsforms/chart/chart-series#priceupcolor)
+- [ReversalAmount](https://help.syncfusion.com/windowsforms/chart/chart-series#reversalamount)
+- [ShadowInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowinterior)
+- [ShadowOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowoffset)
 - [SmartLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#smartlabels)
+- [Spacing Between Series](https://help.syncfusion.com/windowsforms/chart/chart-series#spacingbetweenseries)
 - [Summary](https://help.syncfusion.com/windowsforms/chart/chart-series#summary)
 - [Text](https://help.syncfusion.com/windowsforms/chart/chart-series#text-series)
 - [TextColor](https://help.syncfusion.com/windowsforms/chart/chart-series#textcolor)

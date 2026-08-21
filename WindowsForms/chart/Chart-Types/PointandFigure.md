@@ -13,7 +13,15 @@ Point and Figure Chart is a financial chart used to identify price trends, suppo
 
 The following feature are supported in the Point and Figure chart:
 
-* **Chart 3-D Mode**: A chart can be rendered in 3D by enabling the `Series3D` property.
+* **Chart 3-D Mode**: A chart can be rendered in 3D by enabling the [Series3D](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Series3D) property.
+
+N>
+Chart Details
+* Number of Y values per point - 2.
+* Number of Series - One.
+* Cannot be combined with - Pie, Bar.
+
+The following code example demonstrates how to create a Point and Figure Chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -126,20 +134,20 @@ The following chart series properties are used as customization options for Poin
 - [DisplayShadow](https://help.syncfusion.com/windowsforms/chart/chart-series#displayshadow)
 - [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
 - [DrawSeriesNameInDepth](https://help.syncfusion.com/windowsforms/chart/chart-series#drawseriesnameindepth)
-- [HeightBox](https://help.syncfusion.com/windowsforms/chart/chart-series#heightbox)
-- [PriceDownColor](https://help.syncfusion.com/windowsforms/chart/chart-series#pricedowncolor)
-- [PriceUpColor](https://help.syncfusion.com/windowsforms/chart/chart-series#priceupcolor)
-- [ReversalAmount](https://help.syncfusion.com/windowsforms/chart/chart-series#reversalamount)
-- [Spacing Between Series](https://help.syncfusion.com/windowsforms/chart/chart-series#spacingbetweenseries)
-- [ShadowInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowinterior)
-- [ShadowOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowoffset)
 - [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip)
 - [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font)
+- [HeightBox](https://help.syncfusion.com/windowsforms/chart/chart-series#heightbox)
 - [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior)
 - [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem)
 - [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name)
 - [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat)
+- [PriceDownColor](https://help.syncfusion.com/windowsforms/chart/chart-series#pricedowncolor)
+- [PriceUpColor](https://help.syncfusion.com/windowsforms/chart/chart-series#priceupcolor)
+- [ReversalAmount](https://help.syncfusion.com/windowsforms/chart/chart-series#reversalamount)
+- [ShadowInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowinterior)
+- [ShadowOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowoffset)
 - [SmartLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#smartlabels)
+- [Spacing Between Series](https://help.syncfusion.com/windowsforms/chart/chart-series#spacingbetweenseries)
 - [Summary](https://help.syncfusion.com/windowsforms/chart/chart-series#summary)
 - [Text](https://help.syncfusion.com/windowsforms/chart/chart-series#text-series)
 - [TextColor](https://help.syncfusion.com/windowsforms/chart/chart-series#textcolor)

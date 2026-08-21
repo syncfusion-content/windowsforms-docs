@@ -67,21 +67,21 @@ The following chart series properties are used as customization options for Cand
 - [DisplayShadow](https://help.syncfusion.com/windowsforms/chart/chart-series#displayshadow)
 - [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
 - [DrawSeriesNameInDepth](https://help.syncfusion.com/windowsforms/chart/chart-series#drawseriesnameindepth)
-- [ImageIndex](https://help.syncfusion.com/windowsforms/chart/chart-series#imageindex)
-- [Images](https://help.syncfusion.com/windowsforms/chart/chart-series#images)
-- [PhongAlpha](https://help.syncfusion.com/windowsforms/chart/chart-series#phongalpha)
-- [Rotate](https://help.syncfusion.com/windowsforms/chart/chart-series#rotate)
-- [Spacing Between Series](https://help.syncfusion.com/windowsforms/chart/chart-series#spacingbetweenseries)
-- [ShadingMode](https://help.syncfusion.com/windowsforms/chart/chart-series#shadingmode)
-- [ShadowInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowinterior)
-- [ShadowOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowoffset)
 - [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip)
 - [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font)
+- [ImageIndex](https://help.syncfusion.com/windowsforms/chart/chart-series#imageindex)
+- [Images](https://help.syncfusion.com/windowsforms/chart/chart-series#images)
 - [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior)
 - [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem)
 - [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name)
+- [PhongAlpha](https://help.syncfusion.com/windowsforms/chart/chart-series#phongalpha)
 - [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat)
+- [Rotate](https://help.syncfusion.com/windowsforms/chart/chart-series#rotate)
+- [ShadingMode](https://help.syncfusion.com/windowsforms/chart/chart-series#shadingmode)
+- [ShadowInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowinterior)
+- [ShadowOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowoffset)
 - [SmartLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#smartlabels)
+- [Spacing Between Series](https://help.syncfusion.com/windowsforms/chart/chart-series#spacingbetweenseries)
 - [Summary](https://help.syncfusion.com/windowsforms/chart/chart-series#summary)
 - [Text](https://help.syncfusion.com/windowsforms/chart/chart-series#text-series)
 - [TextColor](https://help.syncfusion.com/windowsforms/chart/chart-series#textcolor)
@@ -96,7 +96,7 @@ HiLo Chart is a financial chart commonly used to display the trading range of a 
 
 N>
 Chart details for HiLo chart.
-Number of Y values per point - 2.
+* Number of Y values per point - 2.
 * Number of Series - One or More.
 * Cannot be combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
@@ -172,17 +172,17 @@ The following chart series properties are used as customization options for HiLo
 - [DrawErrorBars](https://help.syncfusion.com/windowsforms/chart/chart-series#drawerrorbars)
 - [DrawSeriesNameInDepth](https://help.syncfusion.com/windowsforms/chart/chart-series#drawseriesnameindepth)
 - [ErrorBarsSymbolShape](https://help.syncfusion.com/windowsforms/chart/chart-series#errorbarssymbolshape)
-- [PhongAlpha](https://help.syncfusion.com/windowsforms/chart/chart-series#phongalpha)
-- [Rotate](https://help.syncfusion.com/windowsforms/chart/chart-series#rotate)
-- [Spacing Between Series](https://help.syncfusion.com/windowsforms/chart/chart-series#spacingbetweenseries)
-- [ShadingMode](https://help.syncfusion.com/windowsforms/chart/chart-series#shadingmode)
 - [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip)
 - [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font)
 - [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior)
 - [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem)
 - [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name)
+- [PhongAlpha](https://help.syncfusion.com/windowsforms/chart/chart-series#phongalpha)
 - [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat)
+- [Rotate](https://help.syncfusion.com/windowsforms/chart/chart-series#rotate)
+- [ShadingMode](https://help.syncfusion.com/windowsforms/chart/chart-series#shadingmode)
 - [SmartLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#smartlabels)
+- [Spacing Between Series](https://help.syncfusion.com/windowsforms/chart/chart-series#spacingbetweenseries)
 - [Summary](https://help.syncfusion.com/windowsforms/chart/chart-series#summary)
 - [Text](https://help.syncfusion.com/windowsforms/chart/chart-series#text-series)
 - [TextColor](https://help.syncfusion.com/windowsforms/chart/chart-series#textcolor)
@@ -195,9 +195,9 @@ The following chart series properties are used as customization options for HiLo
 
 HiLo Open Close Chart is a financial chart commonly used in stock market analysis. It requires four Y-values for each data point `High`, `Low`, `Open`, and `Close` to represent a stock's price movement during a specific period, providing a clear view of trading activity and market trends.
 
-The following feature are supported in the Hille open close charts:
+The following feature are supported in the HiLo open close charts:
 
-* **Open-Close-Draw Mode**: The `OpenCloseDrawMode` property will set the chart series in open, close, or both modes.
+* **Open-Close-Draw Mode**: The [DrawMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHiLoOpenCloseConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHiLoOpenCloseConfigItem_DrawMode) property will set the chart series in open, close, or both modes.
 
 N>
 Chart details for area chart.
@@ -251,18 +251,18 @@ The following chart series properties are used as customization options for HiLo
 
 - [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
 - [DrawSeriesNameInDepth](https://help.syncfusion.com/windowsforms/chart/chart-series#drawseriesnameindepth)
-- [OpenCloseDrawMode](https://help.syncfusion.com/windowsforms/chart/chart-series#openclosedrawmode)
-- [PhongAlpha](https://help.syncfusion.com/windowsforms/chart/chart-series#phongalpha)
-- [Rotate](https://help.syncfusion.com/windowsforms/chart/chart-series#rotate)
-- [Spacing Between Series](https://help.syncfusion.com/windowsforms/chart/chart-series#spacingbetweenseries)
-- [ShadingMode](https://help.syncfusion.com/windowsforms/chart/chart-series#shadingmode)
 - [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip)
 - [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font)
 - [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior)
 - [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem)
 - [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name)
+- [OpenCloseDrawMode](https://help.syncfusion.com/windowsforms/chart/chart-series#openclosedrawmode)
+- [PhongAlpha](https://help.syncfusion.com/windowsforms/chart/chart-series#phongalpha)
 - [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat)
+- [Rotate](https://help.syncfusion.com/windowsforms/chart/chart-series#rotate)
+- [ShadingMode](https://help.syncfusion.com/windowsforms/chart/chart-series#shadingmode)
 - [SmartLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#smartlabels)
+- [Spacing Between Series](https://help.syncfusion.com/windowsforms/chart/chart-series#spacingbetweenseries)
 - [Summary](https://help.syncfusion.com/windowsforms/chart/chart-series#summary)
 - [Text](https://help.syncfusion.com/windowsforms/chart/chart-series#text-series)
 - [TextColor](https://help.syncfusion.com/windowsforms/chart/chart-series#textcolor)

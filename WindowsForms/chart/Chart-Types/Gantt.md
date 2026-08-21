@@ -15,7 +15,7 @@ The following features are supported in the Gantt chart:
 
 * **Drag and Drop**: Dragging and dropping within a chart can be enabled by handling the appropriate `Chart Region Mouse` events.
 * **Chart Custom Points**: Chart custom points are used to set custom points for a series so they can show employee task completion in terms of days.
-* **Chart Strip Lines**: Strip lines are used to highlight the weekends on a calendar.
+* **Chart Strip Lines**: Strip lines are used to highlight specific ranges or regions in a chart.
 
 N>
 Chart details for gantt chart.
@@ -86,25 +86,24 @@ The following chart series properties are used as customization options for Gant
 - [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
 - [DrawSeriesNameInDepth](https://help.syncfusion.com/windowsforms/chart/chart-series#drawseriesnameindepth)
 - [ElementBorders](https://help.syncfusion.com/windowsforms/chart/chart-series#elementborders)
+- [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip)
+- [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font)
 - [HighlightInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#highlightinterior)
 - [ImageIndex](https://help.syncfusion.com/windowsforms/chart/chart-series#imageindex)
 - [Images](https://help.syncfusion.com/windowsforms/chart/chart-series#images)
+- [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior)
+- [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem)
 - [LightAngle](https://help.syncfusion.com/windowsforms/chart/chart-series#lightangle)
 - [LightColor](https://help.syncfusion.com/windowsforms/chart/chart-series#lightcolor)
+- [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name)
+- [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat)
 - [Rotate](https://help.syncfusion.com/windowsforms/chart/chart-series#rotate)
-- [Spacing](https://help.syncfusion.com/windowsforms/chart/chart-series#spacing)
-- [Spacing Between Series](https://help.syncfusion.com/windowsforms/chart/chart-series#spacingbetweenseries)
 - [ShadingMode](https://help.syncfusion.com/windowsforms/chart/chart-series#shadingmode)
 - [ShadowInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowinterior)
 - [ShadowOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowoffset)
-- [ZOrder](https://help.syncfusion.com/windowsforms/chart/chart-series#zorder)
-- [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip)
-- [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font)
-- [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior)
-- [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem)
-- [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name)
-- [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat)
 - [SmartLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#smartlabels)
+- [Spacing](https://help.syncfusion.com/windowsforms/chart/chart-series#spacing)
+- [Spacing Between Series](https://help.syncfusion.com/windowsforms/chart/chart-series#spacingbetweenseries)
 - [Summary](https://help.syncfusion.com/windowsforms/chart/chart-series#summary)
 - [Text](https://help.syncfusion.com/windowsforms/chart/chart-series#text-series)
 - [TextColor](https://help.syncfusion.com/windowsforms/chart/chart-series#textcolor)
@@ -112,3 +111,4 @@ The following chart series properties are used as customization options for Gant
 - [TextOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#textoffset)
 - [TextOrientation](https://help.syncfusion.com/windowsforms/chart/chart-series#textorientation)
 - [Visible](https://help.syncfusion.com/windowsforms/chart/chart-series#visible)
+- [ZOrder](https://help.syncfusion.com/windowsforms/chart/chart-series#zorder)
