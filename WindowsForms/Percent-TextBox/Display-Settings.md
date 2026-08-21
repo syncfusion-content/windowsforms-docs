@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Display Settings in Windows Forms PercentTextBox | Syncfusion®
 description: Learn about Display Settings support in Syncfusion Windows Forms PercentTextBox control and more details.

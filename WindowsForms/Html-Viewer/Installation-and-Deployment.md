@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Installation and Deployment in Windows Forms HTMLUI | Syncfusion®
 description: Learn about the installation and deployment of Syncfusion Windows Forms Html Viewer (HTMLUI) control, install location, and patches.

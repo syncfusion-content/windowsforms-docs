@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Getting Started with Windows Forms FolderBrowser | Syncfusion®
 description: Learn here about getting started with Syncfusion Windows Forms FolderBrowser control, its elements, and more.

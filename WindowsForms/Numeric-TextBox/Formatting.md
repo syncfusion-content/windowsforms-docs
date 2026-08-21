@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Formatting in Windows Forms SfNumericTextBox | Syncfusion®
 description: Learn about Formatting support in Syncfusion Windows Forms Numeric TextBox (SfNumericTextBox) control and more details.

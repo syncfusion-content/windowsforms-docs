@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Event Handling in Windows Forms DoubleTextBox | Syncfusion®
 description: Learn about Event Handling support in Syncfusion Windows Forms DoubleTextBox control and more details.

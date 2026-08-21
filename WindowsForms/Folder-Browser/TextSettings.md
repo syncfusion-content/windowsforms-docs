@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Text Settings in Windows Forms FolderBrowser | Syncfusion®
 description: Learn about Text Settings support in Syncfusion Windows Forms FolderBrowser control and more details.

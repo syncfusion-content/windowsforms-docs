@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Behavior Settings in Windows Forms PercentTextBox | Syncfusion®
 description: Learn about Behavior Settings support in Syncfusion Windows Forms PercentTextBox control and more details.

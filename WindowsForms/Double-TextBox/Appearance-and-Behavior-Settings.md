@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Appearance and Behavior in Windows Forms DoubleTextBox | Syncfusion®
 description: Learn about Appearance and Behavior Settings support in Syncfusion Windows Forms DoubleTextBox control and more details.

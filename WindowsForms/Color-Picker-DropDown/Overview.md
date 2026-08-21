@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: About Syncfusion® Windows Forms ColorPickerButton | Syncfusion®  
 description: Learn here all about introduction of Syncfusion Windows Forms ColorPickerButton control and more details.

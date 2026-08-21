@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Color Groups in Windows Forms ColorPickerUIAdv | Syncfusion®
 description: Learn about Color Groups support in Syncfusion Windows Forms Color Picker (ColorPickerUIAdv) control and more details.

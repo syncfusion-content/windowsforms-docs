@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Location Settings in Windows Forms FolderBrowser | Syncfusion®
 description: Learn about Location Settings support in Syncfusion Windows Forms FolderBrowser control and more details.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Customization in Windows Forms TabControlAdv | Syncfusion®
 description: Learn about Customization support in Syncfusion Windows Forms TabControlAdv control and more details.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Custom Dictionary in Windows Forms SpellCheckerAdv | Syncfusion®
 description: Describes how to add and use custom dictionaries in Syncfusion Windows Forms SpellCheckerAdv control for language-specific word validation.

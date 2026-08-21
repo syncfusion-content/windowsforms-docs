@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Appearance in Windows Forms ColorPickerUIAdv | Syncfusion®
 description: Learn about ColorPickerUIAdv Appearance support in Syncfusion Windows Forms Color Picker (ColorPickerUIAdv) control and more details.

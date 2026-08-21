@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Getting Started with Windows Forms CheckBoxAdv | Syncfusion®
 description: Learn here about getting started with Syncfusion Windows Forms CheckBoxAdv control and more details.

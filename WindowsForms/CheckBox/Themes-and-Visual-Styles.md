@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Themes and Visual Styles in Windows Forms CheckBoxAdv | Syncfusion®
 description: Learn about Themes and Visual Styles support in Syncfusion Windows Forms CheckBoxAdv control and more details.

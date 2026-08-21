@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Element Format in Windows Forms HTMLUI | Syncfusion®
 description: Learn about Element Format support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.

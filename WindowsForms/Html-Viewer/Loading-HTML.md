@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Loading HTML in Windows Forms HTMLUI | Syncfusion®
 description: Learn about Loading HTML support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.

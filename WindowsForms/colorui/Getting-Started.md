@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Getting Started with Windows Forms ColorUI | Syncfusion®
 description: Learn here about getting started with Syncfusion Windows Forms ColorUI control, its elements and more details.

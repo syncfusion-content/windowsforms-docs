@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Alignment Settings in Windows Forms CheckBoxAdv | Syncfusion®
 description: Learn about Alignment Settings support in Syncfusion Windows Forms CheckBoxAdv control and more details.

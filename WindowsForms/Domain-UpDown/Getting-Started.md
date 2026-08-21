@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Getting Started with Windows Forms DomainUpdownExt | Syncfusion®
 description: Learn here about getting started with Syncfusion Windows Forms DomainUpdownExt control, its elements, and more.
