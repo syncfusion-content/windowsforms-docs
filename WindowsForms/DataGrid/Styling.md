@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Styles in Windows Forms SfDataGrid | Syncfusion®
-description: Styles in SfDataGrid support customizing grid appearance, cell and row styles, themes, and visual elements for enhanced user experience.
+title: Styles in Windows Forms Data Grid | Syncfusion®
+description: Styles in Data Grid support customizing grid appearance, cell and row styles, themes, and visual elements for enhanced user experience.
 platform: windowsforms
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Styles in Windows Forms SfDataGrid
+# Styles in Windows Forms Data Grid
 
 ## Styling Record Cell
 

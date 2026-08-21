@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Conditional Styling in Windows Forms SfDataGrid | Syncfusion®
-description: Conditional styling in SfDataGrid customizes cell and row appearance based on specific conditions, improving data visualization and readability.
+title: Conditional Styling in Windows Forms Data Grid | Syncfusion®
+description: Conditional styling in Data Grid customizes cell and row appearance based on specific conditions, improving data visualization and readability.
 platform: windowsforms
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Conditional Styling in Windows Forms SfDataGrid
+# Conditional Styling in Windows Forms Data Grid
 
 ## Cells
 

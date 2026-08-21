@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Column Types in Windows Forms SfDataGrid | Syncfusion®
-description: Column types in SfDataGrid support displaying and editing text, numeric, date, checkbox, image, hyperlink, and other data formats.
+title: Column Types in Windows Forms Data Grid | Syncfusion®
+description: Column types in Data Grid support displaying and editing text, numeric, date, checkbox, image, hyperlink, and other data formats.
 platform: windowsforms
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Column Types in Windows Forms SfDataGrid
+# Column Types in Windows Forms Data Grid
 [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) provides support for various built-in column types. Each column has its own properties and renderer to handle different types of data.
 <table>
 <tr>

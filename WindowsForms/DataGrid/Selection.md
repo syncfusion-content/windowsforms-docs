@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection in Windows Forms SfDataGrid | Syncfusion®
-description: Selection in SfDataGrid supports row, cell, and multiple selection modes with customizable behaviors for efficient data interaction and navigation.
+title: Selection in Windows Forms Data Grid | Syncfusion®
+description: Selection in Data Grid supports row, cell, and multiple selection modes with customizable behaviors for efficient data interaction and navigation.
 platform: windowsforms
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Selection in Windows Forms SfDataGrid
+# Selection in Windows Forms Data Grid
 
 [Windows Forms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) allows you to select one or more rows or cells. For selecting a specific row or group of rows, set the [SelectionUnit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SelectionUnit) as row. For selecting a specific cell or group of cells, set the SelectionUnit as cell or Any. In SelectionUnit.Any option, a row can be selected by clicking its row header.
 
