@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Windows Forms CurrencyEdit | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms CurrencyEdit control, its elements, and more.
+title: Getting Started with Windows Forms CurrencyEdit | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms CurrencyEdit control. Explore setup, calculator features, culture settings, and customization options.
 platform: WindowsForms
 control: CurrencyEdit
 documentation: ug
