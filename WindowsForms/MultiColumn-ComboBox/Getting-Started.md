@@ -43,7 +43,7 @@ To add the control manually, follow these steps:
 
 	* Syncfusion.Tools.Windows
 
-3. Include the required namespace.
+3. Include the required namespaces.
 
 {% tabs %}
 {% highlight c# %}
