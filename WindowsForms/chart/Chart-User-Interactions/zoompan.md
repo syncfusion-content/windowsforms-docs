@@ -225,7 +225,7 @@ chartControl.ZoomCancel = Keys.Escape
 {% endhighlight %}
 {% endtabs %}
 
-> **Note:** The chart must have keyboard focus for the configured keyboard shortcuts to respond.
+N> The chart must have keyboard focus for the configured keyboard shortcuts to respond.
 
 ## Zoom type
 
@@ -341,7 +341,7 @@ chartControl.ScrollPrecision = 20
 {% endhighlight %}
 {% endtabs %}
 
-> **Note:** Keyboard navigation through a zoomed range is configured using `ZoomLeft`, `ZoomRight`, `ZoomUp`, and `ZoomDown` in the **Keyboard zooming and navigation** section.
+N> Keyboard navigation through a zoomed range is configured using `ZoomLeft`, `ZoomRight`, `ZoomUp`, and `ZoomDown` in the **Keyboard zooming and navigation** section.
 
 ## Panning
 
@@ -387,7 +387,7 @@ chartControl.PrimaryYAxis.ZoomActions = ChartZoomingAction.Panning
 
 Press and hold the left mouse button within the zoomed chart area, and then drag the chart to navigate through hidden data ranges.
 
-> **Note:** Panning works only after the chart has been zoomed. Enable zooming for the required axes before enabling panning.
+N> Panning works only after the chart has been zoomed. Enable zooming for the required axes before enabling panning.
 
 ### Disable panning
 
@@ -423,7 +423,7 @@ chartControl.PrimaryXAxis.SmartDateZoomDayLevelLabelFormat = "dd MM/yy HH.00"
 {% endhighlight %}
 {% endtabs %}
 
-> **Note:** The axis value type must be set to `DateTime` to use smart date labels.
+N> The axis value type must be set to `DateTime` to use smart date labels.
 
 ## See also
 
