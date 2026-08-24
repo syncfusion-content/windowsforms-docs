@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Globalization in Windows Forms Calendar control | Syncfusion
-description: Learn about Globalization support in Syncfusion Windows Forms Calendar (SfCalendar) control and more details.
+title: Globalization in Windows Forms Calendar | Syncfusion
+description: Learn about globalization and localization support in Windows Forms Calendar control for multiple cultures.
 platform: WindowsForms
 control: SfCalendar
 documentation: ug
 ---
 
-# Globalization in Windows Forms Calendar (SfCalendar)
+# Globalization in Windows Forms Calendar
 
 The `SfCalendar` control provides globalization support to design and develop a world-ready application that supports localized interfaces and regional data for users in multiple cultures. Before beginning the design phase, determine the cultures that your application supports.
 
@@ -18,6 +18,7 @@ The culture information can be applied to the calendar by using the [Culture](ht
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 //Setting the culture
 
@@ -26,6 +27,7 @@ calendar.Culture = new CultureInfo("he-IL");
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 ' Setting the culture
 
@@ -53,13 +55,13 @@ The `SfCalendar` control allows you to localize the static text used in the cale
 
 ![Add resource file in application](globalization-images/NewItem.png)
 
-* **Step 5**: The culture name that indicates the name of language and country.
+* **Step 5**: The culture name indicates the name of the language and country.
 
-* **Step 6**: Now, select Add option to add the resource file in Resources folder.
+* **Step 6**: Now, select Add option to add the resource file in the Resources folder.
 
 ![Add culture resource file in application](globalization-images/resource.png)
 
-* **Step 7**: Add the required text to the `NoneButtonText` and `TodayButtonText`.
+* **Step 7**: Add the required text to the `NoneButtonText` and `TodayButtonText` fields.
 
 ![Add attribute values](globalization-images/resxfile.png)
 

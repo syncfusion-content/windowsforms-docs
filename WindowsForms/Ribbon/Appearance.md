@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance in Windows Forms Ribbon control | Syncfusion®
-description: Learn about Appearance support in Syncfusion® Windows Forms Ribbon (RibbonControlAdv) control and more details.
+title: Appearance in Windows Forms Ribbon | Syncfusion®
+description: The appearance of the Ribbon control lets you apply built-in themes such as Office2007, Office2010, Office2013, TouchStyle, and Office2016.
 platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# Appearance in Windows Forms Ribbon (RibbonControlAdv)
+# Appearance in Windows Forms Ribbon
 
 The Ribbon control ships with several built-in themes such as Office2007, Office2010, Office2013, TouchStyle and Office2016.
 All these themes can be applied with the ribbon property `RibbonStyle`.
@@ -517,7 +517,7 @@ this.ribbonControlAdv1.Office2016ColorTable.Add(color);
 
 ![WindowsForms Ribbon customized with Office2016ColorTable](Appearance_Images/WindowsForms-Ribbon-customized-with-Office2016ColorTable.jpg)
 
-**Offcie2013 Style Color Table**
+**Office2013 Style Color Table**
 
 RibbonControlAdv can now be fully customized in Office 2013 style. This can be achieved by using Office2013ColorTable property.
 
@@ -1028,11 +1028,11 @@ this.ribbonControlAdv1.ApplyTouchStyleColorTable(_touchColorTable);
 
     _touchColorTable.ToolstripTabItemForeColor = Color.White
 
-    // To set the hover fore color for BackStage items.
+    ' To set the hover fore color for BackStage items.
 
     _touchColorTable.BackStageItemHoverForeColor = Color.White
 
-    // To set the selection fore color for BackStage items.
+    ' To set the selection fore color for BackStage items.
 
     _touchColorTable.BackStageItemSelectionForeColor = Color.White
 

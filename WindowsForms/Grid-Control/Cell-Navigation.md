@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Cell Navigation in Windows Forms Grid Control | Syncfusion®
-description: Learn about Cell Navigation support in Syncfusion® Windows Forms Grid Control, its elements and more details.
+description: Cell navigation in Grid Control enables keyboard and mouse navigation, focus management, and programmatic cell movement.
 platform: windowsforms
-control: GridControl
+control: Grid Control
 documentation: ug
 ---
 
@@ -61,7 +61,7 @@ void gridControl1_CurrentCellActivating(object sender, Syncfusion.Windows.Forms.
 }
 {% endhighlight %}
 {% highlight vb %}
-Private Me.gridControl1.CurrentCellActivating += New GridCurrentCellActivatingEventHandler(AddressOf gridControl1_CurrentCellActivating)
+AddHandler Me.gridControl1.CurrentCellActivating, New GridCurrentCellActivatingEventHandler(AddressOf gridControl1_CurrentCellActivating)
 Private Sub gridControl1_CurrentCellActivating(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.GridCurrentCellActivatingEventArgs)
 
 	'Cancel the activation of current cell.

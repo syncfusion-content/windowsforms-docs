@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Nodes or Shapes in Windows Forms Diagram control | Syncfusion®
-description: Learn about Nodes or Shapes support in Syncfusion® Windows Forms Diagram control, its elements and more details.
+title: Nodes or Shapes in Windows Forms Diagram | Syncfusion®
+description: Create, customize, and manage nodes and shapes in the Syncfusion® Windows Forms Diagram control with editing, styling, and interaction support.
 platform: windowsforms
 control: Diagram
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Nodes or Shapes in Windows Forms Diagram
 
-The [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) control supports different kinds of nodes. The following are the nodes that are supported by the Diagram control:
+The [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) control supports different kinds of nodes. The following are the nodes that are supported by the Diagram control:
 
 * TextNode
 * Shape
@@ -404,5 +404,3 @@ diagram1.Controller.RotatingStyle = RenderingHelperStyle.DashedOutline
 
 
 ![Node-Selections_img5](Nodes-or-Shapes_images/Node-Selections_img5.png)
-
-N> Looking for the full WinForms Diagram component overview, features, pricing, and documentation? Visit the [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) page.

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Color Groups in Windows Forms Color Picker control | Syncfusion®
-description: Learn about Color Groups support in Syncfusion® Windows Forms Color Picker (ColorPickerUIAdv) control and more details.
+title: Color Groups in Windows Forms ColorPickerUIAdv | Syncfusion®
+description: Learn about Color Groups support in Syncfusion Windows Forms Color Picker (ColorPickerUIAdv) control and more details.
 platform: windowsforms
 control: ColorPickerUIAdv
 documentation: ug
 ---
-# Color Groups in Windows Forms Color Picker (ColorPickerUIAdv)
+# Color Groups in Windows Forms ColorPickerUIAdv
 
 The default color groups available for ColorPickerUIAdv control are listed in the below table.
 
@@ -268,4 +268,3 @@ Me.colorPickerUIAdv1.Font = New System.Drawing.Font("Microsoft Sans Serif",9F, S
 {% endtabs %}
 
 ![Windows forms ColorPickerUIAdv set alignment of the color group headers](ColorPickerUIAdv_Images/ColorPickerUIAdv_textalign.jpeg) 
-

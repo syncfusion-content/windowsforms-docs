@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ToolTip in Windows Forms GridGrouping control | Syncfusion®
-description: Learn about ToolTip support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
-platform: WindowsForms
+title: ToolTip in Windows Forms GridGroupingControl | Syncfusion®
+description: ToolTip in Windows Forms GridGroupingControl supports cell, column, and nested table tooltips with customizable delays, events, and display behavior.
+platform: windowsforms
 control: GridGroupingControl
 documentation: ug
 ---
 
-# ToolTip in Windows Forms GridGrouping control
+# ToolTip in Windows Forms GridGroupingControl
 
 The ToolTip can be added to the individual cells. This allows a user to show more information about the particular cell on mouse hover.
 

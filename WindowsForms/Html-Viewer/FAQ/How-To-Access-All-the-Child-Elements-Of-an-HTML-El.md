@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-To-Access-All-the-Child-Elements | WindowsForms | Syncfusion®
-description: how to access all the child elements of an html element in the htmlui control?
+title: How To Access All the Child Elements | Syncfusion®
+description: Learn how to how To Access All the Child Elements in Syncfusion Windows Forms Html Viewer (HTMLUI) control.
 platform: windowsforms
 control: HTMLUIControl
 documentation: ug
 ---
 
-# How to access all the child elements of an HTML element in the HTMLUI control?
+# How To Access All the Child Elements
 
 The [IHTMLElement.Children](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.IHTMLElement.html#Syncfusion_Windows_Forms_HTMLUI_IHTMLElement_Children) property of any IHTMLElement, collects all the child elements of a specified HTML element inside an IHTMLElementsCollection. You can access the elements needed for your conditions from this collection.
 

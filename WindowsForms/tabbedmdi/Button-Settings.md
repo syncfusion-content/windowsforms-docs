@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Button Settings in Windows Forms TabbedMDI control | Syncfusion®
-description: Learn about Button Settings support in Syncfusion® Windows Forms TabbedMDI control, its elements and more details.
+title: Button Settings in Windows Forms TabbedMDI | Syncfusion®
+description: Learn about Button Settings support in Syncfusion Windows Forms TabbedMDI control, its elements and more details.
 platform: windowsforms
 control: TabbedMDIManager 
 documentation: ug
@@ -170,7 +170,7 @@ Me.tabbedMDIManager.CloseButtonColor = Color.Red
 
 
 
-#### Middle mouse button
+### Middle mouse button
 
 The tabs can be closed by clicking the middle mouse button on enabling the [CloseOnMiddleButtonClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_CloseOnMiddleButtonClick) property.
 
@@ -198,11 +198,11 @@ Me.tabbedMDIManager.CloseOnMiddleButtonClick = True
 
 Essential<sup>®</sup> Tools for Windows Forms now provides support to show or hide close button of the individual tabs in TabbedMDI Manager.
 
-#### Use case scenarios
+### Use case scenarios
 
 Using this feature you can hide the close button for the tabs you want to restrict close and show for the rest of the tabs.
 
-#### Methods
+### Methods
 
 Method table
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Behavior Settings in Windows Forms Percent TextBox | Syncfusion®
-description: Learn about Behavior Settings support in Syncfusion® Windows Forms Percent TextBox control and more details.
+title: Behavior Settings in Windows Forms PercentTextBox | Syncfusion®
+description: Learn about Behavior Settings support in Syncfusion Windows Forms PercentTextBox control and more details.
 platform: windowsforms
 control: Editors Package
 documentation: ug
 ---
 
 
-# Behavior Settings in Windows Forms Percent TextBox
+# Behavior Settings in Windows Forms PercentTextBox
 
 The Behavior settings of the PercentTextBox control are discussed below.
 

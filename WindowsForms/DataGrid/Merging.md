@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Merge Cells in Windows Forms DataGrid control | Syncfusion®
-description: Learn here all about merging feature of Syncfusion® Windows Forms DataGrid (SfDataGrid) control and more.
+title: Merge Cells in Windows Forms Data Grid | Syncfusion®
+description: Merge cells in Data Grid combines adjacent cells with matching values, enhancing data presentation, readability, and visual organization.
 platform: windowsforms
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Merge Cells in Windows Forms DataGrid (SfDataGrid)
+# Merge Cells in Windows Forms Data Grid
 The [Windows Forms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) allows merging a range of adjacent cells by using the [QueryCoveredRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_QueryCoveredRange) event. The merged cells can be exported and printed.
 
 `QueryCoveredRange` event is not fired for the cells that are not visible and also for the cells that are already in covered range. When scrolling the grid, the merged range will be added for newly added rows and columns through this event and removed for the rows and columns which are out of view.
@@ -147,7 +147,7 @@ In the following code, the `GetRange` method returns the range of a cell based o
 {% tabs %}
 {% highlight c# %}
 /// <summary>
-/// Holds the PropertyAccessProvider to git the cell value.
+/// Holds the PropertyAccessProvider to get the cell value.
 /// </summary>
 IPropertyAccessProvider propertyAccessProvider = null;
 
@@ -285,7 +285,7 @@ private CoveredCellInfo GetRange(GridColumn column, int rowIndex, int columnInde
 {% endhighlight %}
 {% highlight vb %}
 ''' <summary>
-''' Holds the PropertyAccessProvider to git the cell value.
+''' Holds the PropertyAccessProvider to get the cell value.
 ''' </summary>
 Private propertyAccessProvider As IPropertyAccessProvider = Nothing
 
@@ -447,7 +447,7 @@ void FirstLevelNestedGrid_QueryCoveredRange(object sender, Syncfusion.WinForms.D
 {% endhighlight %}
 {% highlight vb %}
 Private FirstLevelNestedGrid As SfDataGrid = Me.sfDataGrid1.DetailsViewDefinitions(0).DataGrid
-AddHandler FirstLevelNestedGrid.QueryCoveredRange, AddressOf sfDataGrid1_QueryCoveredRange
+AddHandler FirstLevelNestedGrid.QueryCoveredRange, AddressOf FirstLevelNestedGrid_QueryCoveredRange
 
 Private Sub FirstLevelNestedGrid_QueryCoveredRange(ByVal sender As Object, ByVal e As Syncfusion.WinForms.DataGrid.Events.QueryCoveredRangeEventArgs)
 	If e.ColumnIndex = 1 Then

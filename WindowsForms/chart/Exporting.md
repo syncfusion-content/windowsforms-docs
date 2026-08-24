@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Exporting in Windows Forms Chart control | Syncfusion
-description: Learn about Exporting support in Syncfusion Essential Studio® Windows Forms Chart control and more details.
+title: Exporting in Windows Forms Chart | Syncfusion®
+description: Exporting in the Windows Forms Chart enables chart data and visuals to be saved in supported formats for sharing, reporting, and analysis.
 platform: windowsforms
 control: Chart
 documentation: ug

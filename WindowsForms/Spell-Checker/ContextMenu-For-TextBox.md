@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Context-Menu-For-TextBox | WindowsForms | Syncfusion®
-description: context menu for textbox
+title: ContextMenu for TextBox in Windows Forms SpellCheckerAdv | Syncfusion®
+description: Learn how to add Microsoft Office-style context menu suggestions to the TextBox control in Syncfusion Windows Forms SpellCheckerAdv control.
 platform: windowsforms
 control: SpellCheckerAdv
 documentation: ug
 ---
 
-# Context menu for TextBox
+# ContextMenu for TextBox in Windows Forms SpellCheckerAdv
 
 SpellCheckerAdv offers Microsoft Office application like context menu suggestions and helps user to correct spell errors by choosing correct option from the listed suggestions.
 
@@ -183,7 +183,7 @@ Me.spellCheckerAdv1.PerformSpellCheckUsingContextMenu(SpellEditor)
 
 {% endtabs %}
 
- ![](ContextMenu_images/ContextMenu.png)
+ ![Context menu suggestions for spelling corrections](ContextMenu_images/ContextMenu.png)
 
 
 

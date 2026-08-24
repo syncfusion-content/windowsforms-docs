@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Folder Browser | Syncfusion®
-description: Learn here about getting started with Syncfusion® Windows Forms Folder Browser control, its elements, and more.
+title: Getting Started with Windows Forms FolderBrowser | Syncfusion®
+description: Learn here about getting started with Syncfusion Windows Forms FolderBrowser control, its elements, and more.
 platform: windowsforms
 control: Tools
 documentation: ug
 ---
 
-# Getting Started with Windows Forms Folder Browser
+# Getting Started with Windows Forms FolderBrowser
 
 ## Assembly deployment
 

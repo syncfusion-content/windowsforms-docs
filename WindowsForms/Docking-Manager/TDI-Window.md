@@ -1,7 +1,7 @@
 ---
 layout: post
-title: TDI Window in Windows Forms Docking Manager control | Syncfusion®
-description: Learn about TDI Window support in Syncfusion® Windows Forms Docking Manager control and more details.
+title: TDI Window in Windows Forms Docking Manager | Syncfusion®
+description: The TDI window in Docking Manager provides support for adding tabbed document windows with the EnableDocumentMode property.
 platform: windowsforms
 control: DockingManager 
 documentation: ug
@@ -36,8 +36,8 @@ Provides support for adding tabbed document windows in the docking manager. To e
 {% highlight VB %}
 
 'Invoking the NewDockStateEndLoad event.
-Me.dockingManager1.NewDockStateEndLoad += DockingManager1_NewDockStateEndLoad
- 
+AddHandler Me.dockingManager1.NewDockStateEndLoad, AddressOf DockingManager1_NewDockStateEndLoad
+
 Private Sub DockingManager1_NewDockStateEndLoad(ByVal sender As Object, ByVal e As EventArgs)
 
    'To add TDI child
@@ -182,7 +182,7 @@ MessageBox.Show(this.dockingManager1.IsFrozenToDocumentState(this.panel1).ToStri
 
 ## Creating Document Tab Group
 
-The DockingManger allows to create document tab groups like Visual Studio. The document tab groups can be grouped using the drag-and-drop operations and also using the options in context menu items.
+The DockingManager allows to create document tab groups like Visual Studio. The document tab groups can be grouped using the drag-and-drop operations and also using the options in context menu items.
 
 ### Create tab group using context menu option
 

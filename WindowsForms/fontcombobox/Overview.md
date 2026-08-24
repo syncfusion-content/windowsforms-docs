@@ -1,14 +1,14 @@
 ---
 layout: post
-title: About Windows Forms FontComboBox control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms FontComboBox control, its elements, and more details.
+title: About Syncfusion® Windows Forms FontComboBox Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms FontComboBox control and its features, customization, and usage options.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
 
-# Windows Forms FontComboBox Overview
+# About Syncfusion® Windows Forms FontComboBox Control
 
 The FontComboBox is a combo box-derived controls that are automatically populated with the fonts installed on the user's system. It provide an easy way to fill a combo box with system fonts.
 

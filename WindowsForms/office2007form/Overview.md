@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Windows Forms Office2007Form control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® Windows Forms Office2007Form control, its elements and more details.
+title: About Syncfusion® Windows Forms Office2007 Form Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms Office2007 Form control and more details.
 platform: WindowsForms
 control: Office2007 Form
 documentation: ug
 ---
 
-# Windows Forms Office2007Form Overview
+# About Syncfusion® Windows Forms Office2007 Form Control
 
 The `Office2007Form` is an advanced standard Form that offers Microsoft Office2007 like UI and appearance. It allows the end-user to create Microsoft Office2007 like appealing User Interface in their application. It also supports various built-in Color Schemes and customization options that helps user to control its behavior and appearance.
 

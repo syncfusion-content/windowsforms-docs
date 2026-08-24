@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Diagram Serialization in Windows Forms Diagram control | Syncfusion®
-description: Learn about Diagram Serialization support in Syncfusion® Windows Forms Diagram control and more details.
+title: Diagram Serialization in Windows Forms Diagram | Syncfusion®
+description: Learn about diagram serialization in the Syncfusion® Windows Forms Diagram control, including saving, loading, and managing diagram data.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# Serialization in Windows Forms Diagram
+# Diagram Serialization in Windows Forms Diagram
 
 Serialization is the process of converting the state of diagram objects into a byte stream, allowing them to be recreated later. These streams can be stored in a database, a file, or memory. The reverse process is known as deserialization.
 
 ## Save
 
-In the [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram), [DataContractSerializer](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.datacontractserializer?view=net-8.0) is used for serialization. The features provided by `DataContractSerializer` apply to diagram serialization, supporting saving the diagram to a stream while preserving all its properties.
+In the [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram), [DataContractSerializer](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.datacontractserializer?view=net-8.0) is used for serialization. The features provided by `DataContractSerializer` apply to diagram serialization, supporting saving the diagram to a stream while preserving all its properties.
 
 ### Saving a Diagram via Filename
 

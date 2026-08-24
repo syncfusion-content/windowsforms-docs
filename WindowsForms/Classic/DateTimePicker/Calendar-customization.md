@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Calendar customization in Windows Forms xptoolbar control | Syncfusion
-description: Learn about Calendar customization support in Syncfusion Windows Forms DateTimePickerAdv(Classic) control and more details.
+title: Calendar Customization in Windows Forms DateTimePickerAdv | Syncfusion
+description: Learn about calendar customization in Syncfusion Windows Forms DateTimePickerAdv control and more details.
 platform: WindowsForms
 control: DateTimePickerAdv
 documentation: ug
 ---
-# Calendar customization in Windows Forms DateTimePickerAdv(Classic)
+
+# Calendar Customization in Windows Forms DateTimePickerAdv
 
 DateTimePickerAdv control has properties which can improve the look and feel of the popup calendar. This section discusses various appearance settings available for the calendar.
 

@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Tab Navigation in Windows Forms Tabbed Form control | Syncfusion®
-description: Learn about Tab Navigation support in Syncfusion® Windows Forms Tabbed Form (SfTabbedForm) control and more details.
+title: Tab Navigation in Windows Forms Tabbed Form | Syncfusion®
+description: Tab navigation provides built-in navigation buttons, overflow handling, and events for managing tab navigation actions.
 platform: WindowsForms
 control: SfTabbedForm
 documentation: ug

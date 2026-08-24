@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Form control | Syncfusion®
-description: Learn here about getting started with Syncfusion® Windows Forms Form (SfForm) control, its elements, and more details.
+title: Getting Started with Windows Forms Form | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms Form (SfForm) control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
 control: SfForm
 documentation: ug
@@ -68,7 +68,7 @@ End Class
 
 ## Title Bar Customization
 
-By default, the SfForm loads with the default appearance, that  can be customized by using the [TitleBarStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo.html) property. It contains all the settings for the appearance of the form.
+By default, the SfForm loads with the default appearance, which can be customized by using the [TitleBarStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo.html) property. It contains all the settings for the appearance of the title bar.
 
 
 {% tabs %}

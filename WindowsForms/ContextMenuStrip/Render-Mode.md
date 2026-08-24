@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Render Mode | Windows Forms | Syncfusion®
+title: Render Mode in Windows Forms ContextMenuStrip | Syncfusion®
 description: Learn about Rendering mode (Predefined and custom) support in Syncfusion® WinForms ContextMenu (ContextMenuStripEx) control and more details.
 platform: windowsforms
 control: ContextMenuStripEx
 documentation: ug
 ---
 
-# Render Mode to customize appearance of ContextMenuStrip
+# Render Mode in Windows Forms ContextMenuStrip
 
 Render mode is used to customize the appearance of the ContextMenu either through predefined or custom standards. It also refers to what kind of visual style the ToolStripItems needs to use. The [`RenderMode`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstrip.rendermode?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStrip_RenderMode) property is used to provides different painting styles like:
 

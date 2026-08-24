@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Zoom-And-Pan in Windows Forms Diagram control | Syncfusion®
-description: Learn about Zoom-And-Pan support in Syncfusion® Windows Forms Diagram control, its elements and more details.
+title: Zoom and Pan in Windows Forms Diagram | Syncfusion®
+description: Zoom and pan diagram content in the Syncfusion® Windows Forms Diagram control with interactive zoom tools, magnification settings, and panning support.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
 
-# Zoom-And-Pan in Windows Forms Diagram
+# Zoom and Pan in Windows Forms Diagram
 
 ## Zooming Support
 
-One of the interactive features of [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) is its zooming capabilities. This feature allows you to interactively zoom in and out of the diagram in the following ways:
+One of the interactive features of [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) is its zooming capabilities. This feature allows you to interactively zoom in and out of the diagram in the following ways:
 
 * Zoom to the center of the diagram.
 * Zoom to the top left of the diagram.

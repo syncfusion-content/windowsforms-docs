@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-add-HubTile-using-code-example | WindowsForms | Syncfusion®
-description: how to add hubtile using code example?
-platform: wpf
+title: How to Add HubTile using Code Example in TabbedMDI | Syncfusion®
+description: Learn how to add a HubTile using a code example in Syncfusion Windows Forms TabbedMDI control, its elements and more details.
+platform: windowsforms
 control: TabbedMDIPackage
 documentation: ug
 ---
 
-# How to add HubTile using code example?
+# How to Add HubTile using Code Example in TabbedMDI
 
 The following section guides you through the steps involved in setting up a simple HubTile layout design through code.
 

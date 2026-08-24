@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Windows Forms Radial Gauge control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms Radial Gauge control, its elements and more details.
+title: About Syncfusion® Windows Forms Gauge Control | Syncfusion®
+description: Learn about the introduction of Syncfusion Essential Studio® Windows Forms Gauge control, its features, capabilities, and more details.
 platform: WindowsForms
 control: Gauge
 documentation: ug
 ---
 
-# Windows Forms Radial Gauge (Gauge) Overview
+# About Syncfusion® Windows Forms Gauge Control
 
 The Gauge control for Windows Forms is a data visualization tool that can be used to display several data points or data ranges in a precise and compact area. The data displayed in the control can be quickly understood by the user. Syncfusion’s Windows Forms library enables users to configure the Gauge control through C# codes. The Gauge control comes with sophisticated customization support.
 
@@ -15,23 +15,31 @@ The Gauge control is intended for developers who want to use gauges in their Win
 
 ## Gauges 
 
-Windows Forms supports rich set of gauges to provide an intuitive and attractive way to display information graphically. 
+Windows Forms supports a rich set of gauges to provide an intuitive and attractive way to display information graphically.
 
 <table>
 <tr>
 <th>
-Name</th><th>
-Description</th></tr>
+Name</th>
+<th>
+Description</th>
+</tr>
 <tr>
 <td>
-[RadialGauge](https://help.syncfusion.com/windowsforms/gauge/radial-gauge)</td><td>
-Visualize a range of values in radial scale with circular, helical or half-circular representation.</td></tr>
+RadialGauge</td>
+<td>
+Visualize a range of values in radial scale with circular, helical or half-circular representation.</td>
+</tr>
 <tr>
 <td>
-[LinearGauge](https://help.syncfusion.com/windowsforms/gauge/linear-gauge)</td><td>
-Visualize a range of values in linear scale with horizontal or vertical representation.</td></tr>
+LinearGauge</td>
+<td>
+Visualize a range of values in linear scale with horizontal or vertical representation.</td>
+</tr>
 <tr>
 <td>
-[DigitalGauge](https://help.syncfusion.com/windowsforms/gauge/digital-gauge)</td><td>
-Visualize alphanumeric values in appearance like LED digital display.</td></tr>
+DigitalGauge</td>
+<td>
+Visualize alphanumeric values in an appearance like an LED digital display.</td>
+</tr>
 </table>

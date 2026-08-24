@@ -1,17 +1,17 @@
 ---
 layout: post
-title: About Windows Forms AutoComplete control | Syncfusion
-description: Learn about introduction of Syncfusion Essential Studio Windows Forms AutoComplete control and more details.
+title: About Syncfusion® Windows Forms AutoComplete Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms AutoComplete control and more details.
 platform: windowsforms
 control: AutoComplete
 documentation: ug
 ---
 
-# Windows Forms AutoComplete Overview
+# About Syncfusion® Windows Forms AutoComplete Control
 
-The AutoComplete control is an extender control that provides AutoCompletion services to any edit control on the same form as the AutoComplete control.
+The `AutoComplete` control is an extender control that provides AutoCompletion services to any edit control on the same form as the AutoComplete control.
 
-AutoCompletion can be defined as prompting you with probable matches during data entry. This feature is similar to the AutoCompletion of the web addresses in the Internet Explorer address box.
+AutoCompletion can be defined as prompting you with probable matches during data entry. This feature is similar to the AutoCompletion of web addresses in the Internet Explorer address box.
 
 ![Overview for Autocomplete](Overview_images/Overview_image1.png) 
 

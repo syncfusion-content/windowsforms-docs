@@ -1,13 +1,13 @@
 ---
 layout: post
-title: HTML Elements in Windows Forms Html Viewer control | Syncfusion®
-description: Learn about HTML Elements support in Syncfusion® Windows Forms Html Viewer (HTMLUI) control and more details.
+title: HTML Elements in Windows Forms HTMLUI | Syncfusion®
+description: Learn about HTML Elements support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
 platform: windowsforms
-control: HTMLUIControl
+control: HTMLUI
 documentation: ug
 ---
 
-# HTML Elements in Windows Forms Html Viewer (HTMLUI)
+# HTML Elements in Windows Forms HTMLUI
 
 HTMLUI supports various elements in an HTML document for rendering and presenting them to the user and also allows the user to dynamically access the elements to produce rich, customized user interfaces. Each HTML element defines properties and methods which can be used for customization.
 
@@ -838,4 +838,3 @@ The UL element is used in generating an unordered list. The properties and metho
 ## U - Underline element
 
 The U element is used to underline the specified text. The [UElementImpl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.UElementImpl.html) class contains the properties and methods for the underline element.
-

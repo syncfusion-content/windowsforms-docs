@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Layout Management in Windows Forms Diagram control | Syncfusion®
-description: Learn about Layout Management support in Syncfusion® Windows Forms Diagram control, its elements and more details.
+title: Layout Management in Windows Forms Diagram | Syncfusion®
+description: 	Arrange diagram nodes automatically using table, tree, hierarchical, org chart, and force-directed layouts in the Syncfusion® Windows Forms Diagram control.
 platform: windowsforms
 control: Diagram
 documentation: ug
@@ -13,7 +13,7 @@ Different Layout Manager are discussed under the following section:
 
 ## Manual Layout
 
-The various types of Layout Managers that are supported by the [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) control to align nodes are as follows.
+The various types of Layout Managers that are supported by the [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) control to align nodes are as follows.
 
 Some common Layout Manager settings are discussed in the below topic.
 

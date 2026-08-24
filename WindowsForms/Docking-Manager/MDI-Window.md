@@ -1,7 +1,7 @@
 ---
 layout: post
-title: MDI Window in Windows Forms Docking Manager control | Syncfusion®
-description: Learn about MDI Window support in Syncfusion® Windows Forms Docking Manager control and more details.
+title: MDI Window in Windows Forms Docking Manager | Syncfusion®
+description: The MDI window in Docking Manager allows multiple windows to reside under a single parent window within the docking layout.
 platform: windowsforms
 control: DockingManager 
 documentation: ug
@@ -90,7 +90,7 @@ Dim tabbedMDI As New TabbedMDIManager()
 
 tabbedMDI.AttachToMdiContainer(Me)
 
-Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendererOffice2016Colorful)
+tabbedMDI.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendererOffice2016Colorful)
   
 'To set as MDI Child window
 
@@ -200,7 +200,7 @@ Me.dockingManager1.SetAsMDIChild(panel2,True, New Rectangle(200, 400, 250, 250))
 
 ![Change MDI window size in DockingManager](MDI_Window_images/MDI_Window_img5.png) 
 
-## Change MDI window to dock window
+## Convert MDI child to dock window
 
 The MDI window can be moved to dock state by using its ContextMenu option. This can also be done programmatically by using the [SetAsMDIChild](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SetAsMDIChild_System_Windows_Forms_Control_System_Boolean_) function.
 

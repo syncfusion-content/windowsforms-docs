@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Quick Access Toolbar in Windows Forms Ribbon control | Syncfusion®
-description: Learn about Quick Access Toolbar support in Syncfusion® Windows Forms Ribbon (RibbonControlAdv) control and more details.
+title: Quick Access Toolbar in Windows Forms Ribbon | Syncfusion®
+description: The Quick Access Toolbar in Ribbon provides one-click access to the most important and frequently used items, fully customizable.
 platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# Quick Access Toolbar in Windows Forms Ribbon (RibbonControlAdv)
+# Quick Access Toolbar in Windows Forms Ribbon
 
 `QuickAccessToolBar`**(QAT)** is a customizable bar that provides one click access to the most important and frequently used items.
 
@@ -47,7 +47,7 @@ Item will be added to the Quick Access Toolbar.
 
 ### Add Items through Customize Window
 
-Items / controls can be added to the QuickAccessToolbar by clicking on the Edit quick items in the smart tag of the RibbonControlAdv. This opens Customize Quick Access Toolbar Dialog which displays the existing tool strip items. You can add the required items to the Quick Access Toolbar.
+Items can be added to the QuickAccessToolbar by clicking `Edit quick items` in the smart tag of the RibbonControlAdv. This opens Customize Quick Access Toolbar Dialog which displays the existing tool strip items. You can add the required items to the Quick Access Toolbar.
 
 ![Shows the customize window for QAT](Quick_Access_Toolbar_Images/Quick-Access-Toolbar_img3.jpg)
 

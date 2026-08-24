@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Trigger Menu Items in WinForms ContextMenuStrip Control | Syncfusion®
+title: Trigger Menu Items in Windows Forms ContextMenuStrip | Syncfusion®
 description: Learn here all about trigger menu items feature of Syncfusion® Windows Forms ContextMenuStrip (ContextMenuStripEx) control and more.
 platform: windowsforms
 control: ContextMenuStripEx
 documentation: ug
 ---
 
-# Trigger Menu Item in WinForms ContextMenuStrip (ContextMenuStripEx)
+# Trigger Menu Items in Windows Forms ContextMenuStrip
 
 On selection, the context menu item functionality is handled through the [`Click`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripitem.click?view=netframework-4.7.2) event for further operations.
 

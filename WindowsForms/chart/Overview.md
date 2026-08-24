@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Windows Forms Chart control | Syncfusion
-description: Learn here all about introduction of Syncfusion Essential Studio® Windows Forms Chart control and more details.
+title: About Syncfusion® Windows Forms Chart Control | Syncfusion®
+description: Learn about the introduction of Syncfusion Essential Studio® Windows Forms Chart control, its features, capabilities, and more details.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Windows Forms Chart Overview
+# About Syncfusion® Windows Forms Chart Control
 
 This section covers information on Essential® Chart control, its key features, prerequisites to use the control, its compatibility with various OS and browsers and finally the documentation details complimentary with the product. It comprises the following sub sections:
 

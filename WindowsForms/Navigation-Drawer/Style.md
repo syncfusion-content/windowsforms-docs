@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Style in Windows Forms Navigation Drawer control | Syncfusion
-description: Learn about Style support in Syncfusion Windows Forms Navigation Drawer control, its elements and more details.
+title: Style in Windows Forms Navigation Drawer | Syncfusion®
+description: Style settings provide built-in themes including Office 2016 variants and default styles for customizing NavigationDrawer appearance.
 platform: WindowsForms
 control: NavigationDrawer 
 documentation: ug

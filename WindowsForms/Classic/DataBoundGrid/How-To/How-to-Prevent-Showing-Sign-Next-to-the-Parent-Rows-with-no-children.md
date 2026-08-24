@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sign Next to the Parent Rows in DataBoundGrid | Syncfusion
-description: Learn about How to Prevent Showing Sign Next to the Parent Rows with no Children support in Syncfusion Windows Forms GridDataBoundGrid control and more.
+title: Prevent showing '+' sign in WinForms GridDataBoundGrid | Syncfusion®
+description: Hide the '+' expansion indicator for parent rows without child records in Syncfusion® WinForms GridDataBoundGrid using CellDrawn and CellButtonClicked events.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 
-# Sign Next to the Parent Rows in DataBoundGrid
+# Prevent showing '+' sign in WinForms GridDataBoundGrid
 
 This page explains How to Prevent Showing '+' Sign Next to the Parent Rows with No Children and more details.
 

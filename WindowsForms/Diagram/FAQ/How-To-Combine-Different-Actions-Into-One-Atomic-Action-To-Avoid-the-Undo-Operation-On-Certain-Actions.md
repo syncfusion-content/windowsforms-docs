@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How To Combine Different Actions Into One Atomic Action | Syncfusion®
-description: how to combine different actions into one atomic action to avoid the undo operation on certain actions
+title: How to combine actions in Windows Forms Diagram | Syncfusion®
+description: Learn how to combine multiple actions into a single atomic action in the Syncfusion® Windows Forms Diagram control to manage undo operations.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# How To Combine Different Actions Into One Atomic Action To Avoid the Undo Operation On Certain Actions
+# How to Combine Actions into an Atomic Action in Windows Forms Diagram
 
 This is done by calling the Model.HistoryManger.StartAtomicAction(string description) / EndAtomicAction() methods. 
 

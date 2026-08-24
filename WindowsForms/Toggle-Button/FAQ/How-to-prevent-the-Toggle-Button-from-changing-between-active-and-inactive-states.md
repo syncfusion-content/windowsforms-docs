@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-prevent-the-Toggle-Button-from-changing-between-active-and-inactive-states | WindowsForms | Syncfusion®
-description: how to prevent the toggle button from changing between active and inactive states?
+title: How to Prevent Toggle Button State Change | Syncfusion®
+description: Learn how to prevent Toggle Button state change between active and inactive states in Syncfusion Windows Forms ToggleButton control.
 platform: windowsforms
-control: HubTile
+control: ToggleButton
 documentation: ug
 ---
 
-# How to Prevent the Toggle Button from changing between Active and Inactive States
+# How to Prevent Toggle Button State Change
 
 You have to subscribe to the ToggleStateChanging event and cancel the change. The following code example explains the same.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with Windows Forms DataGrid Control | Syncfusion®
+title: Getting Started with Windows Forms Data Grid | Syncfusion®
 canonical_url: "https://www.syncfusion.com/winforms-ui-controls/datagrid"
-description: Learn here about getting started with Syncfusion® Essential® Windows Forms DataGrid control, its elements and more.
+description: Learn how to get started with the Syncfusion® Windows Forms Data Grid control. Explore setup, features, examples, and customization options.
 platform: windowsforms
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
-# Getting Started with Windows Forms DataGrid (SfDataGrid)
-This section provides a quick overview for working with the data grid for WinForms. Walk through the entire process of creating a real world data grid.
+# Getting Started with Windows Forms Data Grid
+This section provides a quick overview for working with the [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid). Walk through the entire process of creating a real world data grid.
 
 To get start quickly with WinForms DataGrid, you can check on this video:
 <style>#WinFormsDataGridVideoTutorial{width : 90% !important; height: 400px !important }</style>
@@ -380,7 +380,7 @@ Represents SfDataGrid column that hosts SfNumericTextBox controls in its cells
 </tr>
 <tr>
 <td>
-GridDataTimeColumn
+GridDateTimeColumn
 </td>
 <td>
 Represents SfDataGrid column that hosts SfDateTimeEdit controls in its cells which is used to display and format DateTime values.
@@ -565,5 +565,3 @@ Private Sub OnMouseDown(ByVal sender As Object, ByVal e As MouseEventArgs)
 End Sub
 {% endhighlight %}
 {% endtabs %}
-
-N> You can also explore our [WinForms DataGrid example](https://github.com/syncfusion/winforms-demos/tree/master/datagrid) that shows how to render the DataGrid in Windows Forms.

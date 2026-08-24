@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ToolTip Support in Windows Forms Ribbon control | Syncfusion®
-description: Learn about ToolTip Support in Syncfusion® Windows Forms Ribbon (RibbonControlAdv) control and more details.
+title: ToolTip Support in Windows Forms Ribbon | Syncfusion®
+description: ToolTip support in Ribbon shows a small popup box with information when the user hovers over an element, with SuperTooltip customization.
 platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# ToolTip Support in Windows Forms Ribbon (RibbonControlAdv)
+# ToolTip Support in Windows Forms Ribbon
 
 ToolTip is a small popup box that appears when the user moves the pointer over an element.
 
@@ -35,7 +35,7 @@ Me.pasteButton.ToolTipText = "Add content on your clipboard to your document"
 
 ## SuperToolTip
 
-Essential<sup>®</sup> Tools has come up with a new control known as the SuperToolTip which, enables the user to give tooltip information.
+Essential<sup>®</sup> Tools has come up with a new control known as the SuperToolTip which enables the user to provide tooltip information.
 
 *	Header - The Header is used to display text which is used as a header for the tooltip.
 *	Body - This is the description part.

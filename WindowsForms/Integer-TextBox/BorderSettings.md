@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Border Settings in Windows Forms Integer TextBox control | Syncfusion®
-description: Learn about Border Settings support in Syncfusion® Windows Forms Integer TextBox (Integertextbox) control and more details.
+title: Border Settings in Windows Forms IntegerTextBox | Syncfusion®
+description: Learn about Border Settings support in Syncfusion Windows Forms IntegerTextBox (Integertextbox) control and more details.
 platform: windowsforms
 control: Tools
 documentation: ug
 ---
 
-# Border Settings in Windows Forms Integer TextBox (Integertextbox)
+# Border Settings in Windows Forms IntegerTextBox
 
 Color and styles can be applied to the border of the IntegerTextBox control using the below properties.
 

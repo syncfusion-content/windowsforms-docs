@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Windows Forms TabbedMDI control | Syncfusion®
-description: Learn here about getting started with Syncfusion® Windows Forms TabbedMDI control, its elements and more details.
+title: Getting Started with Windows Forms TabbedMDI | Syncfusion®
+description: Learn here about getting started with Syncfusion Windows Forms TabbedMDI control, its elements and more details.
 platform: windowsforms
 control: TabbedMDIManager 
 documentation: ug

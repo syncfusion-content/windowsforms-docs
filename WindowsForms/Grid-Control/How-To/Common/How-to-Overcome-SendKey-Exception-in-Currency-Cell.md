@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to overcome sendkey exception in currency cell | Syncfusion
-description:  Learn here all about how to overcome sendkey exception in currency cell of Syncfusion Windows Forms GridControl and more.
+title: Overcome SendKey Exception in Windows Forms Grid Control | Syncfusion®
+description: Overcome SendKey exceptions in currency cells in Syncfusion® Windows Forms Grid Control by disabling the ActivateSendKey property and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to overcome SendKey exception in currency cell
+# How to Overcome SendKey Exception in Windows Forms Grid Control
 
 CurrentCellKeyDown event cannot be handled for CurrencyTextbox when Windows Forms application is hosted into Internet Explorer. It will throw an error message as,“SendKeys cannot run inside this application.” To overcome this exemption, set ActivateSendKey property to false. 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Event Handlers in Windows Forms Diagram control | Syncfusion®
-description: Learn about Event Handlers support in Syncfusion® Windows Forms Diagram control, its elements, and more details.
+title: Event Handlers in Windows Forms Diagram | Syncfusion®
+description: Handle diagram, node, tool, property, connection, and model events in the Syncfusion® Windows Forms Diagram control for interactive applications.
 platform: windowsforms
 control: Diagram
 documentation: ug
@@ -13,7 +13,7 @@ This section elaborates on the following:
 
 ### Diagram Events
 
-[DiagramViewerEventSink](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DiagramViewerEventSink.html#) class contains the events specific to the [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram). The various events that can be invoked using this class are discussed in the following topics.
+[DiagramViewerEventSink](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DiagramViewerEventSink.html#) class contains the events specific to the [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram). The various events that can be invoked using this class are discussed in the following topics.
 
 #### Node Collection Events
 

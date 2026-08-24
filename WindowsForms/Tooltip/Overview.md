@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Windows Forms Tooltip control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® Windows Forms Tooltip (SfToolTip) control, its elements and more details.
+title: About Syncfusion® Windows Forms ToolTip Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms SfToolTip control and more details.
 platform: windowsforms
 control: SfToolTip
 documentation: ug
 
 ---
-# Windows Forms Tooltip (SfToolTip) Overview
+# About Syncfusion® Windows Forms SfToolTip Control
 
 The `SfToolTip` appears automatically as a pop-up and shows the information of purpose of the control when resetting the pointer on the control. The control includes the control adding feature that allows an end user to add the user control to the SfToolTip so, end user can customize any ToolTip item in the `SfToolTip`.
 

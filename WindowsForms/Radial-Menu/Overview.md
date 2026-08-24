@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Windows Forms Radial Menu control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms Radial Menu control, its elements and more details.
+title: About Syncfusion® Windows Forms RadialMenu Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms RadialMenu control and more details.
 platform: WindowsForms
 control: RadialMenu 
 documentation: ug
 ---
 
-# Windows Forms Radial Menu Overview
+# About Syncfusion® Windows Forms RadialMenu Control
 
 The `RadialMenu` comprises a hierarchical menu in a circular layout. It is used as a context menu and configured with familiar items for quick access.
 

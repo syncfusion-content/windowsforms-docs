@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-access-unfiltered-records | Windows Forms | Syncfusion
-description: how to access unfiltered records
+title: Unfiltered Records in WinForms GridGroupingControl | Syncfusion®
+description: Access unfiltered records in Syncfusion® WinForms GridGroupingControl, its record collections, filtered records comparison, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Access Unfiltered Records
+# How to Access Unfiltered Records in WinForms GridGroupingControl
 
 This can be done using the following code snippet.
 

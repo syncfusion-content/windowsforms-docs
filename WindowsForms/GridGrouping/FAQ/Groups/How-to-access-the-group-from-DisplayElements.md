@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-access-the-group-from-DisplayElements | Windows Forms | Syncfusion
-description: how to access the group from displayelements
+title: Access the Group in WinForms GridGroupingControl | Syncfusion®
+description: Access the group from DisplayElements in Syncfusion® WinForms GridGroupingControl, its display elements, group hierarchy, parent groups, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Access the Group from DisplayElements
+# How to Access the Group in WinForms GridGroupingControl
 
 To access the group from DisplayElements, use the following code snippet.
 

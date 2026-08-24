@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: State Persistence in Menus | Windows Forms | Syncfusion
-description: Learn here all about the serialization feature of Syncfusion Windows Forms Menu (Menus) control and more.
+title: State Persistence in Windows Forms Menu | Syncfusion
+description: State Persistence enables automatic serialization and restoration of toolbar layouts and menu customization settings.
 platform: WindowsForms
 control: MainFrameBarManager 
 documentation: ug
@@ -13,13 +13,13 @@ The menu control supports serialization persisting the state of the toolbars and
 
 ## Enabling state persistence
 
-The menu control by default, enables the serialization and state persistence of the menu items. This can be done via the [`AutoLoadToolBarPositions`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html#Syncfusion_Windows_Forms_Tools_XPMenus_MainFrameBarManager_AutoLoadToolBarPositions) and [`AutoPersistCustomization`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html#Syncfusion_Windows_Forms_Tools_XPMenus_MainFrameBarManager_AutoLoadToolBarPositions). This can be done either via designer **Smart tag** options or through code.
+The menu control by default enables the serialization and state persistence of the menu items. This can be done via the [`AutoLoadToolBarPositions`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html#Syncfusion_Windows_Forms_Tools_XPMenus_MainFrameBarManager_AutoLoadToolBarPositions) and [`AutoPersistCustomization`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html#Syncfusion_Windows_Forms_Tools_XPMenus_MainFrameBarManager_AutoPersistCustomization) properties. This can be done either via the designer **Smart tag** options or through code.
 
 The below image shows the serialization is being enabled via the designer
 
 ![Enabling Serialization via designer](State-Persistance-images/enablingStatePersistence_Designer.png)
 
-The below code snippet shows the enabling of toolbar state persistence and serialization of menu item state.
+The following code snippet shows the enabling of toolbar state persistence and serialization of the menu item state.
 
 {% tabs %}
 

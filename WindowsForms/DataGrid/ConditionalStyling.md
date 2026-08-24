@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Conditional Styling in WinForms DataGrid Control | Syncfusion®
-description: Learn about Conditional Styling support in Syncfusion® Windows Forms DataGrid (SfDataGrid) control and more.
+title: Conditional Styling in Windows Forms Data Grid | Syncfusion®
+description: Conditional styling in Data Grid customizes cell and row appearance based on specific conditions, improving data visualization and readability.
 platform: windowsforms
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Conditional Styling in Windows Forms DataGrid (SfDataGrid)
+# Conditional Styling in Windows Forms Data Grid
 
 ## Cells
 
 ### Styling based on Content
 
-The appearance of the record cells in SfDataGrid can be customized conditionally based on the content by handling the [SfDataGrid.QueryCellStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+The appearance of the record cells in [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) can be customized conditionally based on the content by handling the [SfDataGrid.QueryCellStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -132,7 +132,7 @@ The following code shows how to apply conditional styling for the data table.
 
 {% tabs %}
 {% highlight c# %}
-this.sfDataGrid.QueryCellStyle += SfDataGrid_QueryCellStyle;
+this.sfDataGrid.QueryRowStyle += SfDataGrid_QueryRowStyle;
 
 private void SfDataGrid_QueryRowStyle(object sender, QueryRowStyleEventArgs e)
 {
@@ -156,7 +156,7 @@ private void SfDataGrid_QueryRowStyle(object sender, QueryRowStyleEventArgs e)
 }
 {% endhighlight %}
 {% highlight vb %}
-AddHandler sfDataGrid1.QueryCellStyle, AddressOf SfDataGrid1_QueryCellStyle 
+AddHandler sfDataGrid1.QueryRowStyle, AddressOf SfDataGrid_QueryRowStyle 
 Private Sub SfDataGrid_QueryRowStyle(ByVal sender As Object, ByVal e As QueryRowStyleEventArgs)
 	' Get the "Country" column from the RowData   
 	If e.RowType = RowType.DefaultRow Then

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Diagram Grid in Windows Forms Diagram control | Syncfusion®
-description: Learn about Diagram Grid support in Syncfusion® Windows Forms Diagram control, its elements and more details.
+title: Diagram Grid in Windows Forms Diagram | Syncfusion®
+description: Customize diagram grid appearance and enable snap-to-grid behavior in the Syncfusion® Windows Forms Diagram control for precise node placement.
 platform: windowsforms
 control: Diagram
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Diagram Grid in Windows Forms Diagram
 
-The [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) grid is drawn with evenly spaced points that provides a visual guidance to the user.  
+The [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) grid is drawn with evenly spaced points that provides a visual guidance to the user.  
 
 #### Behavior
 
@@ -87,5 +87,3 @@ diagram1.View.Grid.SnapToGrid = true;
 {% endtabs %}
 
 ![Diagram-Gridlines](Diagram-Grid_images/Diagram-Grid_img1.jpeg)
-
-N> Looking for the full WinForms Diagram component overview, features, pricing, and documentation? Visit the [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) page.

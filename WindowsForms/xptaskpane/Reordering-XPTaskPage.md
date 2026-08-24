@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Reordering-XPTaskPage in Windows Forms xptaskpane control | Syncfusion®
-description: Learn about Reordering-XPTaskPage support in Syncfusion® Windows Forms xptaskpane (XPTaskPane) control and more details.
+title: Reordering XPTaskPage in Windows Forms XPTaskPane | Syncfusion®
+description: Reordering XPTaskPage explains page sequencing, navigation order, and managing next and previous pages at design time and runtime.
 platform: windowsforms
 control: XPTaskPane
 documentation: ug
 ---
 
-# Reordering-XPTaskPage in Windows Forms xp task pane (XPTaskPane)
+# Reordering-XPTaskPage in Windows Forms XPTaskPane
 
 When the end user adds a page to the XPTaskPane control, the order of the page is decided, as the page is added. They can be reordered using any one of the below methods in the designer.
 

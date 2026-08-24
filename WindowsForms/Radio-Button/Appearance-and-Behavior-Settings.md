@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance and Behavior Settings in WinForms Radio Button | Syncfusion
-description: Learn about Appearance and Behavior Settings support in Syncfusion Windows Forms Radio Button (RadioButtonAdv) control and more details.
+title: Appearance and Settings in Windows Forms RadioButtonAdv | Syncfusion®
+description: Appearance and behavior settings in Windows Forms RadioButtonAdv enable configuring focus indicators, auto sizing, and click event behavior.
 platform: WindowsForms
 control: RadioButtonAdv
 documentation: ug
 ---
 
-# Appearance and Behavior Settings in Windows Forms Radio Button
+# Appearance and Behavior Settings in Windows Forms RadioButtonAdv
 
 This section discusses the appearance and behavior settings of the RadioButtonAdv control.
 

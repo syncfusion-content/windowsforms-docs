@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Loading HTML in Windows Forms Html Viewer control | Syncfusion®
-description: Learn about Loading HTML support in Syncfusion® Windows Forms Html Viewer (HTMLUI) control and more details.
+title: Loading HTML in Windows Forms HTMLUI | Syncfusion®
+description: Learn about Loading HTML support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
 platform: windowsforms
-control: HTMLUIControl
+control: HTMLUI
 documentation: ug
 ---
 
-# Loading HTML in Windows Forms Html Viewer (HTMLUI)
+# Loading HTML in Windows Forms HTMLUI
 
 HTML documents available at various resources can be easily loaded into the HTMLUI control. Some of the resources from where the HTML documents can be loaded are as follows.
 
@@ -214,7 +214,7 @@ An HTML document containing file links is illustrated by the code given below:
 
 <FONT color="#66ffff" size="6">
 
-<A href="MODEL1.htm">To link1</a>
+<A href="MODEL1.htm" aria-label="Link to MODEL1 sample file">To link1</a>
 
 </FONT>
 
@@ -222,7 +222,7 @@ An HTML document containing file links is illustrated by the code given below:
 
 <FONT color="#66ffff" size="6">
 
-<A href="MODEL2.htm">To link2</a>
+<A href="MODEL2.htm" aria-label="Link to MODEL2 sample file">To link2</a>
 
 </FONT>
 
@@ -471,4 +471,3 @@ By default, this sample can be found under the following location:
 
 
 ...\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\HTMLUI.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
-

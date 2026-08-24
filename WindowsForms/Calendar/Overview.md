@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Windows Forms Calendar control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms Calendar (SfCalendar) control and more details.
+title: About Syncfusion Windows Forms Calendar Control | Syncfusion
+description: Learn about introduction of Syncfusion Essential Studio Windows Forms Calendar control, its key features, calendar functionality, and more details.
 platform: WindowsForms
 control: SfCalendar
 documentation: ug
 ---
 
-# Windows Forms Calendar (SfCalendar) Overview
+# About Syncfusion Windows Forms Calendar Control
 
 The **SfCalendar** is a control that allows you to select a date from calendar, and it provides various customization options for the calendar. This provides multiple views of the month, year, decade, and century, so that dates can be selected easily. The **SfCalendar** supports multiple selection and provides complete customization options to the control.
 
@@ -23,7 +23,7 @@ The **SfCalendar** is a control that allows you to select a date from calendar, 
 
 **Special dates** - Supports highlighting special dates with icons and descriptions.
 
-**Blackout dates** - Supports blocking a certain dates from selection and user interaction. Separate styles can be applied to blackout dates.
+**Blackout dates** - Supports blocking certain dates from selection and user interaction. Separate styles can be applied to blackout dates.
 
 **Accessibility** - Provides touch, keyboard, and mouse supports to make applications available to a wide variety of users.
 
@@ -70,7 +70,7 @@ SelectedDate
 Value
 </td>
 <td>
-Indicates the current date of calendar.
+Indicates the current date of the calendar.
 </td>
 </tr>
 <tr>
@@ -104,7 +104,7 @@ ShowVerticalSplitter
 GridLines
 </td>
 <td>
-To change the border style of calendar.
+To change the border style of the calendar.
 </td>
 </tr>
 <tr>

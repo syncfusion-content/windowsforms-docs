@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance Settings in Windows Forms Status Bar control | Syncfusion
-description: Learn about Appearance Settings support in Syncfusion Windows Forms Status Bar (StatusBarAdv) control and more details.
+title: Appearance Settings in Windows Forms StatusBarAdv | Syncfusion®
+description: Appearance settings in Windows Forms StatusBarAdv customize colors, styles, and visual elements to create consistent user interfaces.
 platform: WindowsForms
 control: StatusBarAdv
 documentation: ug
 ---
 
-# Appearance Settings in Windows Forms Status Bar (StatusBarAdv)
+# Appearance Settings in Windows Forms StatusBarAdv
 
 You can enhance the appearance of the StatusBarAdv control by using the following properties.
 

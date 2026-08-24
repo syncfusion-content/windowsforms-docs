@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Drag and Drop in Windows Forms DataGrid | Syncfusion®
-description: This section explains about the drag and drop support in SfDataGrid. It can be enabled by setting AllowDraggingRows, AllowDraggingColumns and AllowDrop to true.
+title: Drag and Drop in Windows Forms Data Grid | Syncfusion®
+description: Drag and Drop in Data Grid supports row and column reordering, enabling flexible data organization and intuitive user interactions.
 platform: windowsforms
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Drag and Drop in WinForms DataGrid (SfDataGrid)
+# Drag and Drop in Windows Forms Data Grid
 
 ## Column Drag and Drop
-SfDataGrid allow end-users to rearrange the columns by drag and drop the column headers by setting [SfDataGrid.AllowDraggingColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowDraggingColumns) to true.
+[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) allow end-users to rearrange the columns by drag and drop the column headers by setting [SfDataGrid.AllowDraggingColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowDraggingColumns) to true.
 {% tabs %}
 {% highlight c# %}
 sfDataGrid.AllowDraggingColumns = true;
@@ -434,7 +434,7 @@ public class CustomizedRowDragDropController : RowDragDropController
 
 ### Row drag and drop between two DataGrids
 
-You can able row drag-and-drop between two SfDataGrid controls and control the behavior when dropping into another grid using the [CrossGridDropAction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_CrossGridDropAction) property:
+You can perform row drag-and-drop between two SfDataGrid controls and control the behavior when dropping into another grid using the [CrossGridDropAction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_CrossGridDropAction) property:
 - [CrossGridDropAction.Move](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Enums.CrossGridDropAction.html#fields) : The dragged records are removed from the source grid and inserted into the target grid.
 - [CrossGridDropAction.Copy](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Enums.CrossGridDropAction.html#fields) :  The dragged records are copied to the target grid without removing them from the source grid.
 

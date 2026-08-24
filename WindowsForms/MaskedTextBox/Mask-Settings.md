@@ -1,12 +1,12 @@
----
+﻿---
 layout: post
-title: Mask Settings | WindowsForms | Syncfusion®
-description: Learn here about how to set the different Mask settings to the Syncfusion® Windows Forms MaskedEditControl.
+title: Mask Settings in Windows Forms MaskedTextBox | Syncfusion®
+description: Mask settings in MaskedEditBox define input formats using mask characters, literals, and validation patterns.
 platform: WindowsForms
 control: MaskedEditBox
 documentation: ug
 ---
-# Mask Settings in MaskedEditBox
+# Mask Settings in MaskedTextBox (MaskedEditBox)
 
 This section deals with the mask settings of MaskedEditBox control.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Element Format in Windows Forms Html Viewer control | Syncfusion®
-description: Learn about Element Format support in Syncfusion® Windows Forms Html Viewer (HTMLUI) control and more details.
+title: Element Format in Windows Forms HTMLUI | Syncfusion®
+description: Learn about Element Format support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
 platform: windowsforms
-control: HTML UI
+control: HTMLUI
 documentation: ug
 ---
 
-#  Element format  in Windows Forms Html Viewer control
+# Element Format in Windows Forms HTMLUI
 
 Essential<sup>®</sup> HTMLUI supports formatting of not only the entire HTML document as a whole, but also the individual elements. With HTMLUI, the user can replace any HTML element into some other format before displaying, in a view to develop advanced user interactivity.
 
@@ -92,6 +92,5 @@ This sample illustrates Element Formatting in HTMLUI.
 
 
 ![Element-Format_img2](Element-Format_images/Element-Format_img2.jpeg)
-
 
 

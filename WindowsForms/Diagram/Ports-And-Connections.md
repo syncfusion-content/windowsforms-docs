@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ports And Connections in Windows Forms Diagram | Syncfusion®
-description: Learn about Ports And Connections support in Syncfusion® Essential Studio® Windows Forms Diagram control and more.
+title: Ports and Connections in Windows Forms Diagram | Syncfusion®
+description: Create and customize ports and connections in the Syncfusion® Windows Forms Diagram control with support of connection points, port styles, and linking options.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
 
-# Ports And Connections in Windows Forms Diagram
+# Ports and Connections in Windows Forms Diagram
 
 ## Ports
 
@@ -16,7 +16,7 @@ Port is an object used to establish a connection between the node and the link.
 
 ### Central Port
 
-By default, the central port for a [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) is enabled using the EnableCentralPort property available for the node. 
+By default, the central port for a [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) is enabled using the EnableCentralPort property available for the node. 
 
 
 

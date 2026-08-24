@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Rows in WinForms DataGrid Control | Syncfusion®
-description: This section explains about the rows related customization such as row header, header row, freeze panes in datagrid control for windows forms
+title: Rows in Windows Forms Data Grid | Syncfusion®
+description: Rows in Data Grid support row headers, header customization, frozen rows and columns, row styling, and record management features.
 platform: windowsforms
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Rows in Windows Forms DataGrid (SfDataGrid)
+# Rows in Windows Forms Data Grid
 
 ## Row Header
 
@@ -517,12 +517,12 @@ private void SfDataGrid_DrawFreezePaneLine(object sender, DrawFreezePaneLineArgs
 {
     if (e.LineType == LineType.FrozenRow)
     {
-        e.Graphics.DrawLine(new Pen(Color. DeepSkyBlue, 2), e.Point1, e.Point2);
+        e.Graphics.DrawLine(new Pen(Color.DeepSkyBlue, 2), e.Point1, e.Point2);
         e.Handled = true;
     }
     if (e.LineType == LineType.FooterRow)
     {
-        e.Graphics.DrawLine(new Pen(Color. BlueViolet, 2), e.Point1, e.Point2);
+        e.Graphics.DrawLine(new Pen(Color.BlueViolet, 2), e.Point1, e.Point2);
         e.Handled = true;
     }
     if (e.LineType == LineType.FrozenColumn)

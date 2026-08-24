@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Ribbon control | Syncfusion®
-description: Learn here about getting started with Syncfusion® Windows Forms Ribbon (RibbonControlAdv) control, its elements and more details.
-platform: windowsForms
+title: Getting Started with Windows Forms Ribbon | Syncfusion®
+description: Learn how to get started with the Syncfusion Windows Forms Ribbon (RibbonControlAdv) control. Explore setup, features, examples, and customization options.
+platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# Getting Started with Windows Forms Ribbon (RibbonControlAdv)
+# Getting Started with Windows Forms Ribbon
 
 This section explains how to implement a similar UI as Microsoft Outlook using [WinForms Ribbon](https://www.syncfusion.com/winforms-ui-controls/ribbon).
 
@@ -46,10 +46,10 @@ this.Controls.Add(ribbonControlAdv1);
 
 {% highlight vb %}
 
-Private ribbonControlAdv1 As Syncfusion.Windows.Forms.Tools.RibbonControlAdv
+'Declare and initialize the new ribbon control
+Me.ribbonControlAdv1 = New RibbonControlAdv()
 
-Default Private Property Item(ByVal Optional  As ribbonControlAdv1 = New RibbonControlAdv()) As
-
+'Adding ribbon control to form
 Me.Controls.Add(ribbonControlAdv1)
 
 {% endhighlight %}
@@ -120,7 +120,7 @@ Me.ribbonControlAdv1.RibbonStyle = RibbonStyle.Office2016
 
 ## Add Tabs to Ribbon
 
-RibbonControlAdv lets you to create ToolStripTabItems easily using the smart tag. It also adds a RibbonPanel to which ToolStripItems can be added.
+RibbonControlAdv lets you create ToolStripTabItems easily using the smart tag. It also adds a RibbonPanel to which ToolStripItems can be added.
 
 ![Adding Tabs through designer](Getting_Started_Images/Getting-Started_img3.jpg)
 

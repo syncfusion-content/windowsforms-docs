@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance in WinForms CurrencyTextbox Control | Syncfusion®
-description: Learn here all about appearance of Syncfusion® WinForms Currency Textbox (CurrencyTextbox) control and more.
+title: Appearance in Windows Forms CurrencyTextBox | Syncfusion®
+description: Learn here all about appearance of Syncfusion WinForms CurrencyTextbox (CurrencyTextbox) control and more.
 platform: windowsforms
 control: CurrencyTextbox
 documentation: ug
 ---
 
-# Appearance in Windows Forms Currency Textbox (CurrencyTextbox)
+# Appearance in Windows Forms CurrencyTextBox
 
 ## Themes
 

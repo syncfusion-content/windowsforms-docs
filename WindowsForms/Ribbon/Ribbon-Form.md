@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Ribbon Form in Windows Forms Ribbon control | Syncfusion®
-description: Learn about Ribbon Form support in Syncfusion® Windows Forms Ribbon (RibbonControlAdv) control and more details.
+title: Ribbon Form in Windows Forms Ribbon | Syncfusion®
+description: The Ribbon Form is an extension of the standard form that enables different visual styles for the ribbon with a Microsoft Office look.
 platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# Ribbon Form in Windows Forms Ribbon (RibbonControlAdv)
+# Ribbon Form in Windows Forms Ribbon
 
-`RibbonForm` is an extension that replaces the default form to enable different Visual styles to the ribbon. This RibbonForm now gives similar look and feel of Microsoft office, to its controls.
+`RibbonForm` is an extension of the standard form that enables different visual styles for the ribbon and gives its controls a look and feel similar to Microsoft Office.
 
 ## Appearance Settings
 
@@ -87,7 +87,7 @@ this.IconSize = new Size(32,32);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.IconSize = New Size(32, 32)
 
@@ -119,7 +119,7 @@ this.Borders = new System.Windows.Forms.Padding(10);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.Borders = New System.Windows.Forms.Padding(10)
 
@@ -129,7 +129,7 @@ Me.Borders = New System.Windows.Forms.Padding(10)
 
 ### Customizing the Top Left Edge
 
-This TopLeftRadius property gets/sets the curved radius of the top left edge of the form. Default is 8.
+This TopLeftRadius property gets/sets the curved radius of the top left edge of the form. The default value is 8.
 
 {% highlight c# %}
 
@@ -137,7 +137,7 @@ this.TopLeftRadius = 20;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.TopLeftRadius = 20
 

@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Events in Windows Forms PopupMenu control | Syncfusion®
-description: Learn about Events support in Syncfusion® Windows Forms PopupMenu control, its elements and more details.
+title: Events in Windows Forms PopupMenu | Syncfusion®
+description: PopupMenu events provide notifications before display, after display, menu collapse, and parent bar item changes.
 platform: windowsforms
 control: PopupMenu
 documentation: ug

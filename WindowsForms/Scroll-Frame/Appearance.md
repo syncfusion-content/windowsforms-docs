@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Appearance in Windows Forms Scroll Frame control | Syncfusion®
-description: Learn about Appearance support in Syncfusion® Windows Forms Scroll Frame (SfScrollFrame) control and more details.
+title: Appearance in Windows Forms Scroll Frame | Syncfusion®
+description: Appearance customization supports scrollbar styling, thumb sizing, arrow button settings, disabled states, and built-in themes.
 platform: WindowsForms
 control: SfScrollFrame
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains how to customize the default appearance of the scrollbars using the [style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfScrollFrame.html#Syncfusion_WinForms_Controls_SfScrollFrame_Style) properties. By default, the [SfScrollFrame](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfScrollFrame.html) loads the scrollbars with default appearance. 
 
-### Scrollbar appearance
+## Scrollbar appearance
 
 The inner elements of the scrollbar can be customized by using the [ScrollBarStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.ScrollBarStyleInfo.html) property, that allows changing the appearance of the horizontal and vertical scrollbars separately.
 

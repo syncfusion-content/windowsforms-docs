@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column types in WinForms DataGrid control | Syncfusion®
-description: Learn about different column types support (Text, Numeric, DateTime, ComboBox and so on) in Syncfusion® WinForms DataGrid (SfDataGrid) control and more details.
+title: Column Types in Windows Forms Data Grid | Syncfusion®
+description: Column types in Data Grid support displaying and editing text, numeric, date, checkbox, image, hyperlink, and other data formats.
 platform: windowsforms
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Column types in WinForms DataGrid (SfDataGrid) 
-SfDataGrid provides support for various built-in column types. Each column has its own properties and renderer to handle different types of data.
+# Column Types in Windows Forms Data Grid
+[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) provides support for various built-in column types. Each column has its own properties and renderer to handle different types of data.
 <table>
 <tr>
 <td>
@@ -235,7 +235,7 @@ Public Sub New()
 	Dim data = New OrderInfoCollection()
 	sfDataGrid.DataSource = data.OrdersListDetails
 
-	sfDataGrid.Columns("OrderDate").Format = "dd/mm/yyyy"
+	sfDataGrid.Columns("OrderDate").Format = "dd/MM/yyyy"
 	sfDataGrid.Columns("OrderDate").FormatProvider = New CustomFormatter()
 End Sub
 
@@ -1095,12 +1095,12 @@ comboBoxColumn.AutoSuggestDelay = 1000
 {% highlight c# %}
 this.sfDataGrid1.Columns.Add(new GridButtonColumn() 
 { 
-    MappingName = "ProductName ", 
+    MappingName = "ProductName", 
     HeaderText = "Product Name"
 });
 {% endhighlight %}
 {% highlight vb %}
-Me.sfDataGrid1.Columns.Add(New GridButtonColumn() With {.MappingName = "ProductName ", .HeaderText = "Product Name"})
+Me.sfDataGrid1.Columns.Add(New GridButtonColumn() With {.MappingName = "ProductName", .HeaderText = "Product Name"})
 {% endhighlight %}
 {% endtabs %}
 
@@ -1197,7 +1197,7 @@ private void sfDataGrid1_CellButtonClick(object sender, CellButtonClickEventArgs
 }
 {% endhighlight %}
 {% highlight vb %}
-AddHandler sfDataGrid1.CellButtonClick, AddressOf SfDataGrid1_ CellButtonClick
+AddHandler sfDataGrid1.CellButtonClick, AddressOf SfDataGrid1_CellButtonClick
 
 Private Sub sfDataGrid1_CellButtonClick(ByVal sender As Object, ByVal e As CellButtonClickEventArgs)
 	sfDataGrid1.DeleteSelectedRecords()
@@ -1213,12 +1213,12 @@ End Sub
 {% highlight c# %}
 this.sfDataGrid1.Columns.Add(new GridHyperlinkColumn() 
 { 
-   MappingName = " OrderURI ", 
+   MappingName = "OrderURI", 
    HeaderText = "Order URI" 
 });
 {% endhighlight %}
 {% highlight vb %}
-Me.sfDataGrid1.Columns.Add(New GridHyperlinkColumn() With {.MappingName = " OrderURI ", .HeaderText = "Order URI"})
+Me.sfDataGrid1.Columns.Add(New GridHyperlinkColumn() With {.MappingName = "OrderURI", .HeaderText = "Order URI"})
 {% endhighlight %}
 {% endtabs %}
 
@@ -1447,7 +1447,7 @@ End Sub
 
 [GridProgressBarColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridProgressBarColumn.html) provides support to display non-editable integer type data.
 
-#### Changing boundary values of progress
+### Changing boundary values of progress
 
 You can change the boundary values of ProgressBar using the `Maximum` and `Minimum` properties.
 
@@ -2253,7 +2253,7 @@ Numeric
 {{'[GridDateTimeCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Renderers.GridDateTimeCellRenderer.html#"")'| markdownify }}
 </td>
 <td>
-DataTime
+DateTime
 </td>
 </tr>
 <tr>

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Drag and Drop in Windows Forms Grid Control | Syncfusion®
-description: Learn about Drag and Drop support in Syncfusion® Windows Forms Grid Control, its elements and more details.
+description: Drag and drop support in Grid Control enables moving data between cells and grids, column reordering, drag-drop customization, and event handling.
 platform: windowsforms
-control: GridControl
+control: Grid Control
 documentation: ug
 ---
 # Drag and Drop in Windows Forms Grid Control
@@ -110,7 +110,7 @@ e.AllowDrag = false;
 {% endhighlight %}
 
 {% highlight vb %}
-Private Me.gridControl1.QueryAllowDragColumnHeader += New GridQueryDragColumnHeaderEventHandler(AddressOf gridControl1_QueryAllowDragColumnHeader)
+AddHandler Me.gridControl1.QueryAllowDragColumnHeader, New GridQueryDragColumnHeaderEventHandler(AddressOf gridControl1_QueryAllowDragColumnHeader)
 Private Sub gridControl1_QueryAllowDragColumnHeader(ByVal sender As Object, ByVal e As GridQueryDragColumnHeaderEventArgs)
 
 'Prevents dragging in 2nd column.
@@ -232,7 +232,7 @@ void gridControl1_QueryCanOleDragRange(object sender, GridQueryCanOleDragRangeEv
 {% endhighlight %}
 
 {% highlight vb %}
-Private Me.gridControl1.QueryCanOleDragRange += New GridQueryCanOleDragRangeEventHandler(AddressOf gridControl1_QueryCanOleDragRange)
+AddHandler Me.gridControl1.QueryCanOleDragRange, New GridQueryCanOleDragRangeEventHandler(AddressOf gridControl1_QueryCanOleDragRange)
 Private Sub gridControl1_QueryCanOleDragRange(ByVal sender As Object, ByVal e As GridQueryCanOleDragRangeEventArgs)
 
 'Drag Drop process will be canceled.

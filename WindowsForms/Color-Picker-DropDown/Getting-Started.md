@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Getting Started | Windows Forms Color Picker DropDown | Syncfusion®
-description: Learn here about getting started with Syncfusion® Windows Forms Color Picker DropDown (ColorPickerButton) control, its elements, and more.
+title: Getting Started with Windows Forms ColorPickerButton | Syncfusion®
+description: Learn here about getting started with Syncfusion Windows Forms Color Picker DropDown (ColorPickerButton) control, its elements, and more.
 platform: windowsforms
 control: ColorPickerDropDown
 documentation: ug
 ---
-# Getting Started with Windows Forms Color Picker DropDown
+# Getting Started with Windows Forms ColorPickerButton
 
 This section briefly describes how to create a new Windows Forms project in Visual Studio and add **ColorPickerButton** with it’s basic functionalities.
 

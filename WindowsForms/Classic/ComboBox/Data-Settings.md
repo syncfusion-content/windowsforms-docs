@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Settings in Windows Forms xptoolbar control | Syncfusion
-description: Learn about Data Settings support in Syncfusion Windows Forms ComboBoxAdv(Classic) control and more details.
+title: Data Settings in Windows Forms ComboBoxAdv(Classic) | Syncfusion®
+description: Data Settings in the Windows Forms ComboBoxAdv(Classic) control enable data binding, item management, and value display customization.
 platform: WindowsForms
 control: ComboBoxAdv
 documentation: ug

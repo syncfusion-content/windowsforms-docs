@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Prevent-Columns-Resizing-for-Child-Tables | Windows Forms | Syncfusion
-description: how to prevent columns resizing for child tables
+title: Prevent Column Resizing in WinForms GridGroupingControl | Syncfusion®
+description: Prevent column resizing for child tables in Syncfusion® WinForms GridGroupingControl, its child table customization, resizing behavior, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Prevent Columns Resizing for Child Tables
+# How to Prevent Child Column Resizing in WinForms GridGroupingControl
 
 To prevent GridGroupingControl's child table or grandchild table's columns from getting resized, you must handle TableControlResizingColumns event of the grid. In the event handler, check for the e.TableDescriptor.Name and cancel the event by setting e.Cancel to true. The following code snippet cancels resizing the Child table.
 

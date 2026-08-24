@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ExportToPDF in SfDataGrid | Syncfusion®
-description: Learn about exporting datagrid to PDF support in Syncfusion® WinForms DataGrid (SfDataGrid) control and more details.
+title: Export To PDF in Windows Forms Data Grid | Syncfusion®
+description: Export To PDF in Data Grid supports exporting records with customization options, formatting, styles, and layout settings for PDF documents.
 platform: windowsforms
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Export to PDF in WinForms DataGrid (SfDataGrid)
+# Export To PDF in Windows Forms Data Grid
 [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) provides support to export data to PDF file. It also provides support for grouping, filtering, sorting, unbound rows and stacked headers while exporting.
 The following assemblies needs to be added for exporting to PDF file.
 
@@ -192,13 +192,13 @@ By default, table summaries in SfDataGrid will be exported to PDF. If you want t
 {% tabs %}
 {% highlight c# %}
 PdfExportingOptions options = new PdfExportingOptions();
-Options.ExportTableSummary = false;
+options.ExportTableSummary = false;
 var document = sfDataGrid.ExportToPdf(options);
 document.Save("Sample.pdf");
 {% endhighlight %}
 {% highlight vb %}
 Dim options As New PdfExportingOptions()
-Options.ExportTableSummary = False
+options.ExportTableSummary = False
 Dim document = sfDataGrid.ExportToPdf(options)
 document.Save("Sample.pdf")
 {% endhighlight %}
@@ -349,7 +349,7 @@ document.Save("Sample.pdf")
 {% endhighlight %}
 {% endtabs %}
 
-Refer the [PDF documentation](https://help.syncfusion.com/#saving-a-pdf-document-to-file-system) for more information.
+Refer the [PDF documentation](https://help.syncfusion.com/document-processing/pdf/pdf-library/net/working-with-document) for more information.
 
 ### Save as Stream
 After exporting to PDF, the exported PDF file can be saved to a stream by using [Save](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Pdf.PdfDocumentBase.html#Syncfusion_Pdf_PdfDocumentBase_Save_System_IO_Stream_) method.
@@ -552,7 +552,7 @@ document.Save("Sample.pdf");
 
 void OnCellExporting(object sender, DataGridCellPdfExportingEventArgs e)
 {
-    // Based on the column mapping name and the cell type, we can change the cell values while exporting to excel.
+    // Based on the column mapping name and the cell type, we can change the cell values while exporting to PDF.
     if (e.CellType == ExportCellType.RecordCell && e.ColumnName == "OrderID")
     {              
         //if the cell value is Odd, "Odd" will be displayed else "Even" will be displayed.
@@ -570,7 +570,7 @@ Dim document = sfDataGrid1.ExportToPdf(options)
 document.Save("Sample.pdf")
 
 Private Sub OnCellExporting(ByVal sender As Object, ByVal e As DataGridCellPdfExportingEventArgs)
-    ' Based on the column mapping name and the cell type, we can change the cell values while exporting to excel.
+    ' Based on the column mapping name and the cell type, we can change the cell values while exporting to PDF.
     If e.CellType = ExportCellType.RecordCell AndAlso e.ColumnName = "OrderID" Then
         'if the cell value is Odd, "Odd" will be displayed else "Even" will be displayed.
         If Convert.ToInt16(e.CellValue) Mod 2 = 0 Then
