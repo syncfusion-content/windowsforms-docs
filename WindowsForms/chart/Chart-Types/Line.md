@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Line Chart in Windows Forms Chart control | Syncfusion
-description: Learn here all about the Line chart and its type in Syncfusion Essential Studio® Windows Forms Chart control and more details.
+description: Line chart in the Windows Forms Chart displays continuous data trends and changes over time, helping users analyze data progression effectively.
 platform: windowsforms
 control: Chart
 documentation: ug
@@ -75,65 +75,28 @@ chartControl.Series.Add(secondServer)
 
 ![Line Chart in Windows Forms](../Chart-Types_images/windowsforms-line-chart.png)
 
-## Spline line chart
+### Disable line cap
 
-Spline Chart is similar to a Line Chart except that it connects the different data points using splines instead of straight lines. The following code shows how to define spline chart in chart control.
-
-N>
-Chart Details
-* Number of Y values per point – 1.
-* Number of Series - One or More.
-* Cannot be Combined with - Pie, Bar, Stacked Bar, Polar, Radar.
-
-The following code example demonstrates how to create a Spline Line Chart.
+The [DisableLineCap](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLineConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartLineConfigItem_DisableLineCap) property controls whether line caps are disabled when rendering Line and Spline series.
 
 {% tabs %}
 {% highlight c# %}
-
-// Create chart series and add data points into it.
-ChartSeries firstServer = new ChartSeries("Server 1", ChartSeriesType.Spline);
-firstServer.Points.Add(10, 300);
-firstServer.Points.Add(20, 600);
-firstServer.Points.Add(30, 400);
-firstServer.Points.Add(40, 300);
-firstServer.Points.Add(50, 400);
-
-ChartSeries secondServer = new ChartSeries("Server 2", ChartSeriesType.Spline);
-secondServer.Points.Add(10, 300);
-secondServer.Points.Add(20, 500);
-secondServer.Points.Add(30, 200);
-secondServer.Points.Add(40, 700);
-secondServer.Points.Add(50, 750);
-
-chartControl.Series.Add(firstServer);
-chartControl.Series.Add(secondServer);
-
+chartControl.Series[0].ConfigItems.LineItem.DisableLineCap = true;
 {% endhighlight %}
 {% highlight vb %}
-
-// Create chart series and add data points into it.
-
-Dim firstServer As New ChartSeries("Server 1", ChartSeriesType.Spline)
-firstServer.Points.Add(10, 300)
-firstServer.Points.Add(20, 600)
-firstServer.Points.Add(30, 400)
-firstServer.Points.Add(40, 300)
-firstServer.Points.Add(50, 400)
-
-Dim secondServer As New ChartSeries("Server 2", ChartSeriesType.Spline)
-secondServer.Points.Add(10, 300)
-secondServer.Points.Add(20, 500)
-secondServer.Points.Add(30, 200)
-secondServer.Points.Add(40, 700)
-secondServer.Points.Add(50, 750)
-
-chartControl.Series.Add(firstServer)
-chartControl.Series.Add(secondServer)
-
+chartControl.Series(0).ConfigItems.LineItem.DisableLineCap = True
 {% endhighlight %}
 {% endtabs %}
 
-![Spline Chart in Windows Forms](../Chart-Types_images/windowsforms-spline-chart.png)
+### Disable line region
+
+The [DisableLineRegion](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLineConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartLineConfigItem_DisableLineRegion) property controls whether the line segments connecting adjacent data points are disabled in Line and Spline series.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.LineItem.DisableLineRegion = true;
+{% endhighlight %}
+{% highlight vb}
 
 ### Customization option
 

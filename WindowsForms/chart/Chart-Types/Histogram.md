@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Histogram Chart in Windows Forms Chart control | Syncfusion
-description: Learn here all about the Histogram chart in Syncfusion Essential Studio® Windows Forms Chart control and more details.
+description: Histogram in the Windows Forms Chart displays the frequency distribution of data, helping analyze data patterns and value ranges effectively.
 platform: windowsforms
 control: Chart
 documentation: ug

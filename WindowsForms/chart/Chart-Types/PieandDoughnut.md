@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Pie Chart in Windows Forms Chart control | Syncfusion
-description: Learn here all about the Pie chart in Syncfusion Essential Studio® Windows Forms Chart control and more details.
+title: Pie and Doughnut Chart in Windows Forms Chart control | Syncfusion
+description: Pie and doughnut in the Windows Forms Chart display proportional data as segments, enabling comparison of parts within a whole.
 platform: windowsforms
 control: Chart
 documentation: ug
@@ -118,6 +118,178 @@ The following values are supported by the [ChartPieType](https://help.syncfusion
 * **Round**: Applies a rounded painting style to the pie chart.
 * **Bevel**: Applies the painting style to a sloping edge or surface of the pie chart.
 * **Custom**: Applies a custom painting style to the pie chart.
+
+### Angle offset
+
+The [AngleOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_AngleOffset) property rotates the pie chart by changing the starting angle of the first segment.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.PieItem.AngleOffset = 45f;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.PieItem.AngleOffset = 45.0F
+{% endhighlight %}
+{% endtabs %}
+
+### Fill mode
+
+The [FillMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_FillMode) property specifies how gradient colors are applied to the pie chart.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.PieItem.FillMode = ChartPieFillMode.AllPie;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.PieItem.FillMode = ChartPieFillMode.AllPie
+{% endhighlight %}
+{% endtabs %}
+
+### Gradient
+
+The [Gradient](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_Gradient) property specifies the gradient colors applied when the **PieType** property is set to **Custom**.
+
+{% tabs %}
+{% highlight c# %}
+ColorBlend colorBlend = new ColorBlend();
+colorBlend.Colors = new Color[] { Color.Red, Color.Blue };
+colorBlend.Positions = new float[] { 0f, 1f };
+
+chartControl.Series[0].ConfigItems.PieItem.Gradient = colorBlend;
+{% endhighlight %}
+{% highlight vb %}
+Dim colorBlend As New ColorBlend()
+colorBlend.Colors = New Color() {Color.Red, Color.Blue}
+colorBlend.Positions = New Single() {0.0F, 1.0F}
+
+chartControl.Series(0).ConfigItems.PieItem.Gradient = colorBlend
+{% endhighlight %}
+{% endtabs %}
+
+### Height by area depth
+
+The [HeightByAreaDepth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_HeightByAreaDepth) property controls whether the height of a 3D pie chart is determined by the chart area's **Depth** property.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.PieItem.HeightByAreaDepth = true;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.PieItem.HeightByAreaDepth = True
+{% endhighlight %}
+{% endtabs %}
+
+### Label style
+
+The [LabelStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_LabelStyle) property specifies how data labels are displayed relative to the pie segments.
+
+The **LabelStyle** property supports the following values:
+
+- **Disabled**: Hides the data labels.
+- **Inside**: Displays labels inside the pie segments.
+- **Outside**: Displays labels outside the pie segments.
+- **OutsideInArea**: Displays labels outside the segments but within the chart area.
+- **OutsideInColumn**: Displays labels outside the segments in a column layout.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.PieItem.LabelStyle = ChartAccumulationLabelStyle.Outside;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.PieItem.LabelStyle = ChartAccumulationLabelStyle.Outside
+{% endhighlight %}
+{% endtabs %}
+
+### Pie height
+
+The [PieHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieHeight) property specifies the height of an individual pie when multiple pies are enabled.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.PieItem.PieHeight = 100f;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.PieItem.PieHeight = 100.0F
+{% endhighlight %}
+{% endtabs %}
+
+### Pie radius
+
+The [PieRadius](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieRadius) property controls the radius of the pie chart, allowing its rendered size to be adjusted.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.PieItem.PieRadius = 100f;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.PieItem.PieRadius = 100.0F
+{% endhighlight %}
+{% endtabs %}
+
+### Pie size
+
+The [PieSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieSize) property specifies the width and height of an individual pie when multiple pies are enabled. This property is primarily intended for internal use.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.PieItem.PieSize = new SizeF(200f, 150f);
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.PieItem.PieSize = New SizeF(200.0F, 150.0F)
+{% endhighlight %}
+{% endtabs %}
+
+### Pie tilt
+
+The [PieTilt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieTilt) property specifies the tilte of an individual pie when multiple pies are enabled.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.PieItem.PieTilt = 30f;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.PieItem.PieTilt = 30.0F
+{% endhighlight %}
+{% endtabs %}
+
+### Pie with same radius
+
+The [PieWithSameRadius](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieWithSameRadius) property maintains the same pie radius when the **LabelStyle** property is set to **Outside** or **OutsideInColumn**.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.PieItem.PieWithSameRadius = true;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.PieItem.PieWithSameRadius = True
+{% endhighlight %}
+{% endtabs %}
+
+### Show databind labels
+
+The [ShowDataBindLabels](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_ShowDataBindLabels) property controls whether labels obtained from the bound data source are displayed on the pie segments.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.PieItem.ShowDataBindLabels = true;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.PieItem.ShowDataBindLabels = True
+{% endhighlight %}
+{% endtabs %}
+
+### Show series title
+
+The [ShowSeriesTitle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_ShowSeriesTitle) property controls whether the series title is displayed in the pie chart.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.PieItem.ShowSeriesTitle = true;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.PieItem.ShowSeriesTitle = True
+{% endhighlight %}
+{% endtabs %}
 
 ### Customization option
 
