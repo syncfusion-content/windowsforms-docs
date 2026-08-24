@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Windows Forms MultiColumnComboBox | Syncfusion®
-description: Learn how to get started with the Syncfusion® Windows Forms MultiColumnComboBox control. Explore setup, features, examples, and customization options.
+title: Getting Started with Windows Forms MultiColumnComboBox | SyncfusionÂ®
+description: Learn how to get started with the SyncfusionÂ® Windows Forms MultiColumnComboBox control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
 control: MultiColumnComboBox
 documentation: ug
