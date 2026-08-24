@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Windows Forms Syntax Editor
 
-This section explains how to create an interactive code editor application like the Microsoft Visual Studio Editor by using the EditControl.
+This section explains how to use the EditControl to build a code editor similar to the Visual Studio Editor.
 
 ## Assembly deployment
 
@@ -29,9 +29,9 @@ Install-Package Syncfusion.Edit.Windows
 
 2. Add the [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) to the application by dragging it from the toolbox to the designer surface. The following dependent assemblies are added automatically:
 
-	* Syncfusion.Shared.Base
-	* Syncfusion.Tools.Windows
 	* Syncfusion.Edit.Windows
+	* Syncfusion.Tools.Windows
+	* Syncfusion.Shared.Base
 
 ![Windows Forms EditControl drag and drop from toolbox](Getting-Started_images/Getting-Started_img2.png)
 
@@ -43,9 +43,9 @@ To add the control manually, follow these steps:
 
 2. Add the following assembly references to the project:
 
-	* Syncfusion.Shared.Base
-	* Syncfusion.Tools.Windows
 	* Syncfusion.Edit.Windows
+	* Syncfusion.Tools.Windows
+	* Syncfusion.Shared.Base
 
 3. Create an instance of the [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) and add it to the form.
 
@@ -53,54 +53,47 @@ To add the control manually, follow these steps:
 {% tabs %}
 {% highlight C# %}
 
-// Create the EditControl instance.
+using System.Drawing;
+using System.Windows.Forms;
+using Syncfusion.Windows.Forms.Edit;
 
-private Syncfusion.Windows.Forms.Edit.EditControl editControl1;
-
-editControl1 = new Syncfusion.Windows.Forms.Edit.EditControl();
-
-// Set an appropriate size for the EditControl.
-
-editControl1.Size = new Size(50, 50);
-
-// Set the Dock property to the appropriate DockStyle enumeration value if desired.
-
-editControl1.Dock = DockStyle.Fill;
-
-// Set an appropriate BorderStyle to the EditControl instance.
-
-editControl1.BorderStyle = BorderStyle.Fixed3D;
-
-// Adding the edit control to the form.
-
-this.Controls.Add(editControl1);
+namespace Winforms_Sample_Framework
+{
+    public partial class Form1 : Form
+    {
+        private EditControl editControl1;
+        public Form1()
+        {
+            InitializeComponent();
+            editControl1 = new EditControl();
+            editControl1.Size = new Size(50, 50);
+            editControl1.Dock = DockStyle.Fill;
+            editControl1.BorderStyle = BorderStyle.Fixed3D;
+            this.Controls.Add(editControl1);
+        }
+    }
+}
 
 {% endhighlight %}
 
-
 {% highlight VB %}
 
-'Create the EditControl instance.
+Imports System.Windows.Forms
+Imports Syncfusion.Windows.Forms.Edit
 
-private editControl1 As Syncfusion.Windows.Forms.Edit.EditControl
+Public Class Form1
+    Inherits Form
 
-editControl1 = New Syncfusion.Windows.Forms.Edit.EditControl()
-
-'Set an appropriate size for the EditControl.
-
-editControl1.Size = New Size(50, 50)
-
-' Set the Dock property to the appropriate DockStyle enumeration value if desired.
-
-editControl1.Dock = DockStyle.Fill
-
-'Set an appropriate BorderStyle to the EditControl instance.
-
-editControl1.BorderStyle = BorderStyle.Fixed3D
-
-' Adding the edit control to the form.
-
-Me.Controls.Add(editControl1)
+    Private editControl1 As EditControl
+    Public Sub New()
+        InitializeComponent()
+        editControl1 = New Syncfusion.Windows.Forms.Edit.EditControl()
+        editControl1.Size = New Size(50, 50)
+        editControl1.Dock = DockStyle.Fill
+        editControl1.BorderStyle = BorderStyle.Fixed3D
+        Me.Controls.Add(editControl1)
+    End Sub
+End Class
 
 {% endhighlight %}
 {% endtabs %}
@@ -117,18 +110,17 @@ This section explains how to load a file into the EditControl.
 
 {% highlight C# %}
 
-// Loading the files into edit control by passing the file name as parameter to the LoadFile function.
+// Load the file into the EditControl by passing the file path to the LoadFile method.
 
 this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\FileName.cs");
 
 {% endhighlight %}
 
-
 {% highlight VB %}
 
-` Loading the files into edit control by passing the file name as parameter to the LoadFile function.
+' Load the file into the EditControl by passing the file path to the LoadFile function.
 
-Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\FileName.cs")
+Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + "\..\..\FileName.cs")
 
 {% endhighlight %}
 
@@ -162,10 +154,9 @@ this.editControl1.ApplyConfiguration(KnownLanguages.CSharp);
 
 {% endhighlight %}
 
-
 {% highlight VB %}
 
-' Apply the built-in configuration for a known language.
+'Apply the built-in configuration for a known language.
 
 Me.editControl1.ApplyConfiguration(KnownLanguages.CSharp)
 
@@ -177,12 +168,12 @@ Me.editControl1.ApplyConfiguration(KnownLanguages.CSharp)
 
 ## Custom language configuration
 
-The EditControl supports custom language configuration. You can plug in an external XML configuration file that defines a custom language and then apply it with the [Configurator.Open](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_Configurator) and [ApplyConfiguration](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ApplyConfiguration_System_String_) methods.
+The EditControl supports custom language configuration. You can plug in an external XML file that defines the new language and then apply it with the [Configurator.Open](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_Configurator) and [ApplyConfiguration](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ApplyConfiguration_System_String_) methods.
 
 1. Create a configuration file (for example, `config.xml`) and set its **Copy to Output Directory** property to **Copy if newer**.
 
 {% capture codesnippet2 %}
-{% highlight xaml %}
+{% highlight xml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
 <ArrayOfConfigLanguage>
@@ -210,40 +201,84 @@ The EditControl supports custom language configuration. You can plug in an exter
 		</splits>
 	</ConfigLanguage>
 </ArrayOfConfigLanguage>
+
 {% endhighlight %}
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }} 
 
-2. Apply the configuration file to the EditControl.
+2. Add a sample file `Sample.lsp` to the project root and set its **Copy to Output Directory** property to **Copy if newer**.
+
+{% capture codesnippet_sample_lsp %}
+{% highlight lisp %}
+
+#Region "Collapsible Region"
+
+(car '(rose violet daisy buttercup))
+(cdr '(rose violet daisy buttercup))
+(cons 'pine '(fir oak maple))
+
+#End Region
+
+{% endhighlight %}
+{% endcapture %}
+{{ codesnippet_sample_lsp | OrderList_Indent_Level_1 }}
+
+3. Apply the configuration file to the EditControl.
 
 {% capture codesnippet3 %}
 {% tabs %}
 {% highlight C# %}
 
-private string configFile = Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\config.xml";
+using Syncfusion.Windows.Forms.Edit;
+using System.Drawing;
+using System.IO;
+using System.Windows.Forms;
 
-// Plug in an external configuration file.
-
-this.editControl1.Configurator.Open(configFile);
-
-// Apply the configuration defined in the configuration file.
-
-this.editControl1.ApplyConfiguration("LISP");
+namespace Winforms_Sample_Framework
+{
+    public partial class Form1 : Form
+    {
+        private EditControl editControl1;
+        private string configFile = Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\config.xml";
+        public Form1()
+        {
+            InitializeComponent();
+            editControl1 = new EditControl();
+            editControl1.Size = new Size(50, 50);
+            editControl1.Dock = DockStyle.Fill;
+            editControl1.BorderStyle = BorderStyle.Fixed3D;
+            this.editControl1.Configurator.Open(configFile);
+            this.editControl1.ApplyConfiguration("LISP");
+            this.editControl1.LoadFile("Sample.lsp");
+            this.Controls.Add(editControl1);
+        }
+    }
+}
 
 {% endhighlight %}
 
-
 {% highlight VB %}
 
-private string configFile = Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\config.xml";
+Imports System.IO
+Imports Syncfusion.Windows.Forms.Edit
 
-' Plug in an external configuration file.
+Public Class Form1
+    Inherits Form
 
-Me.editControl1.Configurator.Open(configFile)
-
-' Apply the configuration defined in the configuration file.
-
-Me.editControl1.ApplyConfiguration("LISP")
+    Private editControl1 As EditControl
+    Private configFile As String = Path.GetDirectoryName(Application.ExecutablePath) + "\..\..\config.xml"
+    Public Sub New()
+        InitializeComponent()
+        editControl1 = New EditControl()
+        editControl1.Size = New Size(50, 50)
+        editControl1.Dock = DockStyle.Fill
+        editControl1.BorderStyle = BorderStyle.Fixed3D
+        Me.editControl1.Configurator.Open(configFile)
+        Me.editControl1.ApplyConfiguration("LISP")
+        Me.editControl1.LoadFile("Sample.lsp")
+        Me.Controls.Add(editControl1)
+    End Sub
+End Class
 
 {% endhighlight %}
 {% endtabs %}
