@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Calculator layout | CurrencyEdit | WindowsForms | Syncfusion
-description: Learn about How to change the Calculator Layout using CalcPopup Property support in Syncfusion Windows Forms CurrencyEdit control and more details.
+title: Change Calculator Layout in Windows Forms CurrencyEdit | Syncfusion®
+description: Learn how to change the calculator layout in Windows Forms CurrencyEdit using the CalcPopup property and Windows standard calculator options.
 platform: WindowsForms
-control: Editors Package
+control: CurrencyEdit
 documentation: ug
 ---
 
 
-# Calculator Layout using CalcPopup Property in WinForms CurrencyEdit
+# How to change calculator layout in Windows Forms CurrencyEdit
 
 This page explains How to Change the Calculator layout using CalcPopup property and more details.
 
