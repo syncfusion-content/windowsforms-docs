@@ -55,7 +55,7 @@ using Syncfusion.Windows.Forms;
 
 Imports Syncfusion.Windows.Forms
 
-{% endhighlight vb %}
+{% endhighlight %}
 
 {% endtabs %}
 {% endcapture %}
@@ -112,7 +112,7 @@ this.Controls.Add(textBoxExt);
 
 Me.Controls.Add(textBoxExt)
 
-{% endhighlight vb %}
+{% endhighlight %}
 
 {% endtabs %}
 {% endcapture %}
