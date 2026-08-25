@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Text Settings in Windows Forms ContextMenuStrip control | Syncfusion
-description: Learn about Text Settings support in Syncfusion Windows Forms CurrencyEdit control and more details.
+title: Text Settings in Windows Forms CurrencyEdit | Syncfusion®
+description: Text settings in Windows Forms CurrencyEdit control enable customization of text alignment, textbox behavior, calculator value transfer, and value handling.
 platform: WindowsForms
 control: CurrencyEdit
 documentation: ug
