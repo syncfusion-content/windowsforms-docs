@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Windows Forms TreeNavigator | Syncfusion®
-description: Learn how to get started with the Syncfusion® Windows Forms TreeNavigator control. Explore setup, features, examples, and customization options.
+title: Getting Started with Windows Forms TreeNavigator | SyncfusionÂ®
+description: Learn how to get started with the SyncfusionÂ® Windows Forms TreeNavigator control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
 control: TreeNavigator 
 documentation: ug
