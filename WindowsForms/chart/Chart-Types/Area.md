@@ -9,7 +9,7 @@ documentation: ug
 
 # Area charts in windows forms chart
 
-Area charts highlight the magnitude of change over time by rendering data in a continuous, flowing pattern rather than using discrete bars or columns. They feature support for alpha-blending multiple series and provide extensive customization options for the chart's appearance.
+Area charts highlight the magnitude of change over time by rendering data in a continuous, flowing pattern rather than using discrete bars or columns. It support for alpha-blending multiple series and provide extensive customization options for the chart's appearance.
 
 You can also customize the following features for area charts:
 

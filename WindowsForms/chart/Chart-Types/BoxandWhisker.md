@@ -77,7 +77,7 @@ chartControl.Series.Add(profitSeries)
 
 ![Box And Whisker Chart in Windows Forms](../Chart-Types_images/windowsforms-box-and-whisker-chart.png)
 
-### Customization option
+## Customization option
 
 The following chart series properties are used as customization options for Box and Whisker chart:
 

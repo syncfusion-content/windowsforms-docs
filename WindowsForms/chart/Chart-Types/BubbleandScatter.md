@@ -85,11 +85,13 @@ chartControl.Series.Add(series2)
 
 ![Bubble Chart in Windows Forms](../Chart-Types_images/windowsforms-bubble-chart.png)
 
-## Minbounds and maxbounds
+### Minbounds and maxbounds
 
 The size of the bubbles depends on MinBounds and MaxBounds of the bubbleItem in series. By default, the minBounds is (20, 20) and MaxBounds is (50, 50), so the width and height of the bubbles lie between 20 and 50.
 
-You can change the minBounds and maxBounds using the `minBounds` and `maxBounds` properties in series options.
+You can change the minBounds and maxBounds using the [minBounds](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBubbleConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartBubbleConfigItem_MinBounds) and [MaxBounds](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBubbleConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartBubbleConfigItem_MaxBounds) properties in series options.
+
+The following code example demonstrates how to set the minimum and maximum bounds for bubble chart elements.
 
 {% tabs %}
 {% highlight c# %}
@@ -110,19 +112,42 @@ series.ConfigItems.BubbleItem.MaxBounds = New RectangleF(0, 0, 25, 25)
 
 ### Bubble type
 
-The [BubbleType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBubbleConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartBubbleConfigItem_BubbleType) property determines the appearance of bubbles in a Bubble chart. Using this property, bubbles can be displayed as a **Circle**, **Square**, or **Image**.
+The [BubbleType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBubbleConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartBubbleConfigItem_BubbleType) property determines the appearance of bubbles in a Bubble chart. The supported values are [Circle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBubbleType.html#Syncfusion_Windows_Forms_Chart_ChartBubbleType_Circle), [Square](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBubbleType.html#Syncfusion_Windows_Forms_Chart_ChartBubbleType_Square), and [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBubbleType.html#Syncfusion_Windows_Forms_Chart_ChartBubbleType_Image). The default value is **Circle**.
+
+The following code example demonstrates how to set the bubble type to Square.
 
 {% tabs %}
 {% highlight c# %}
-chartControl.Series[0].Style.BubbleType = ChartBubbleType.Circle;
-
+chartControl.Series[0].ConfigItems.BubbleItem.BubbleType =
+ChartBubbleType.Square;
 {% endhighlight %}
 {% highlight vb %}
-
-chartControl.Series[0].Style.BubbleType = ChartBubbleType.Circle
-
+chartControl.Series(0).ConfigItems.BubbleItem.BubbleType =
+ChartBubbleType.Square
 {% endhighlight %}
 {% endtabs %}
+
+![Bubble Chart Bubble Type in Windows Forms](../Chart-Types_images/windowsforms-bubble-type-chart.png)
+
+### Enable phong style 
+
+The [EnablePhongStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBubbleConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartBubbleConfigItem_EnablePhongStyle) property specifies whether Phong-style shading is applied to bubble chart elements. The default value is true, which renders bubbles with a three-dimensional lighting effect.
+
+The following code example demonstrates how to disable Phong-style shading for bubble chart elements.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.BubbleItem.EnablePhongStyle =
+false;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.BubbleItem.EnablePhongStyle =
+False
+{% endhighlight %}
+{% endtabs %}
+
+![Bubble Chart Enable Phong Style in Windows Forms](../Chart-Types_images/windowsforms-bubble-phong-style-chart.png)
+
 ### Customization option
 
 The following chart series properties are used as customization options for Bubble chart:

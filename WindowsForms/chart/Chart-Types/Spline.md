@@ -9,7 +9,7 @@ documentation: ug
 
 ## Spline line chart
 
-Spline Chart is similar to a Line Chart except that it connects the different data points using splines instead of straight lines. The following code shows how to define spline chart in chart control.
+Spline Chart is similar to a Line Chart except that it connects the different data points using splines instead of straight lines.
 
 N>
 Chart Details
