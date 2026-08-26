@@ -263,7 +263,7 @@ chartControl.Series.Add(series)
 
 ![Range Area Chart in Windows Forms](../Chart-Types_images/windowsforms-range-area-chart.png)
 
-## Customization Options
+### Customization Options
 
 The following chart series properties are used as customization options for the Range Area chart:
 

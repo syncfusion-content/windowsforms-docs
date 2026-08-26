@@ -77,7 +77,7 @@ chartControl.Series.Add(secondServer)
 
 ### Disable line cap
 
-The [DisableLineCap](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLineConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartLineConfigItem_DisableLineCap) property controls whether line caps are disabled when rendering Line and Spline series.
+The [DisableLineCap](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLineConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartLineConfigItem_DisableLineCap) property controls whether line caps are disabled when rendering Line and Spline series. By default, this property is set to false, which renders line caps for line segments.
 
 {% tabs %}
 {% highlight c# %}
@@ -88,15 +88,23 @@ chartControl.Series(0).ConfigItems.LineItem.DisableLineCap = True
 {% endhighlight %}
 {% endtabs %}
 
+![Line Cap in Windows Forms](../Chart-Types_images/windowsforms-line-chart-disable-line-cap.png)
+
 ### Disable line region
 
 The [DisableLineRegion](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLineConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartLineConfigItem_DisableLineRegion) property controls whether the line segments connecting adjacent data points are disabled in Line and Spline series.
+By default, this property is set to false, which renders line segments between data points.
 
 {% tabs %}
 {% highlight c# %}
 chartControl.Series[0].ConfigItems.LineItem.DisableLineRegion = true;
 {% endhighlight %}
 {% highlight vb}
+chartControl.Series(0).ConfigItems.LineItem.DisableLineRegion = True
+{% endhighlight %}
+{% endtabs %}
+
+![Line Region in Windows Forms](../Chart-Types_images/windowsforms-line-chart-disable-line-region.png)
 
 ### Customization option
 

@@ -230,131 +230,283 @@ Stocks.ConfigItems.HeatMapItem.EndText = "Utah"
 
 ![HeatMap Chart in Windows Forms](../Chart-Types_images/windowsforms-heat-map-charts.png)
 
-### Support features
+### Heat map style
 
-The following table lists the properties of heat map chart with descriptions.
+The [HeatMapStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_HeatMapStyle) property specifies the layout style of the Heat Map chart, with **Rectangular** as its default value.
 
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th></tr>
-<tr>
-<td>
+The supported values are:
 
-{{'[HeatMapStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_HeatMapStyle)'| markdownify }}
-</td><td>
-Specifies styles of heat maps. The types are Rectangular, Vertical and Horizontal styles.</td></tr>
-<tr>
-<td>
-{{'[DisplayColorSwatch](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_DisplayColorSwatch)'| markdownify }}
-</td><td>
-Enables the color swatch of the heat map.</td></tr>
-<tr>
-<td>
-{{'[DisplayTitle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_DisplayTitle)'| markdownify }}
-</td><td>
-Enables or disables the series title in the left corner of the swatch.</td></tr>
-<tr>
-<td>
-{{'[StartText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_StartText)'| markdownify }}
-</td><td>
-Sets the text for the left label in the color swatch.</td></tr>
-<tr>
-<td>
-{{'[EndText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_EndText)'| markdownify }}
-</td><td>
-Sets the text for the right label in the color swatch.</td></tr>
-<tr>
-<td>
-{{'[LowestValueColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_LowestValueColor)'| markdownify }}
-</td><td>
-Sets the lowest value color of the heat map chart.</td></tr>
-<tr>
-<td>
-{{'[HighestValueColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_HighestValueColor)'| markdownify }}
-</td><td>
-Sets the highest value color of the heat map chart.</td></tr>
-<tr>
-<td>
-{{'[MiddleValueColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_MiddleValueColor)'| markdownify }}
-</td><td>
-Sets the middle value color of the heat map chart.</td></tr>
-<tr>
-<td>
-{{'[LabelMargins](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_LabelMargins)'| markdownify }}
-</td><td>
-Sets the margin for the left and right side labels.</td></tr>
-</table>
+- [Rectangular](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapLayoutStyle.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapLayoutStyle_Rectangular): Arranges the Heat Map cells in a rectangular layout.
+- [Vertical](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapLayoutStyle.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapLayoutStyle_Vertical): Arranges the Heat Map cells in a vertical layout.
+- [Horizontal](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapLayoutStyle.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapLayoutStyle_Horizontal): Arranges the Heat Map cells in a horizontal layout.
+
+The following code applies the **Vertical** layout style to the Heat Map chart.
 
 {% tabs %}
-
 {% highlight c# %}
-
-//Sets the Heat map style.
-
-this.chartControl.Series[0].ConfigItems.HeatMapItem.HeatMapStyle = ChartHeatMapLayoutStyle.Rectangular;
-
-//Display color swatch.
-
-this.chartControl.Series[0].ConfigItems.HeatMapItem.DisplayColorSwatch = true;
-
-//Sets the Series Title.
-
-this.chartControl.Series[0].ConfigItems.HeatMapItem.DisplayTitle = true;
-
-//Sets the left and right label text.
-
-this.chartControl.Series[0].ConfigItems.HeatMapItem.StartText = "US";
-
-this.chartControl.Series[0].ConfigItems.HeatMapItem.EndText = "Utah";
-
-//Sets the lowest, highest and middle value color.
-
-this.chartControl.Series[0].ConfigItems.HeatMapItem.LowestValueColor = Color.Red;
-
-this.chartControl.Series[0].ConfigItems.HeatMapItem.HighestValueColor = Color.Blue;
-
-this.chartControl.Series[0].ConfigItems.HeatMapItem.MiddleValueColor = Color.Yellow;
-
-//Sets the value for label margin.
-
-this.chartControl.Series[0].ConfigItems.HeatMapItem.LabelMargins = 15;
-
+chartControl.Series[0].ConfigItems.HeatMapItem.HeatMapStyle =
+    ChartHeatMapLayoutStyle.Vertical;
 {% endhighlight %}
-
 {% highlight vb %}
+chartControl.Series(0).ConfigItems.HeatMapItem.HeatMapStyle =
+    ChartHeatMapLayoutStyle.Vertical
+{% endhighlight %}
+{% endtabs %}
 
-'Sets the Heat map style.
+![HeatMap Style in Windows Forms](../Chart-Types_images/windowsforms-heat-map-style.png)
 
-Me.chartControl.Series(0).ConfigItems.HeatMapItem.HeatMapStyle =ChartHeatMapLayoutStyle.Rectangular
+### Display color swatch
 
-'Display color swatch.
+The [DisplayColorSwatch](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_DisplayColorSwatch) property specifies whether the color swatch is displayed in the Heat Map chart, with **true** as its default value.
 
-Me.chartControl.Series(0).ConfigItems.HeatMapItem.DisplayColorSwatch = True
+The following code hides the color swatch.
 
-'Sets the display title.
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.HeatMapItem.DisplayColorSwatch =
+    false;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.HeatMapItem.DisplayColorSwatch =
+    False
+{% endhighlight %}
+{% endtabs %}
 
-Me.chartControl.Series(0).ConfigItems.HeatMapItem.DisplayTitle = True
+![HeatMap Color Swatch in Windows Forms](../Chart-Types_images/windowsforms-heat-map-color-swatch.png)
 
-'Sets the start and end text.
+### Display title
 
-series.ConfigItems.HeatMapItem.StartText = "US"
+The [DisplayTitle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_DisplayTitle) property specifies whether the series title is displayed in the color swatch, with **true** as its default value.
 
-series.ConfigItems.HeatMapItem.EndText = "Utah"
+The following code hides the series title from the color swatch.
 
-'Sets the lowest, highest and middle value color.
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.HeatMapItem.DisplayTitle =
+    false;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.HeatMapItem.DisplayTitle =
+    False
+{% endhighlight %}
+{% endtabs %}
 
-series.ConfigItems.HeatMapItem.LowestValueColor = Color.FromArgb(255, 23, 0)
+![HeatMap Display Title in Windows Forms](../Chart-Types_images/windowsforms-heat-map-display-title.png)
 
-series.ConfigItems.HeatMapItem.HighestValueColor = Color.FromArgb(81, 168, 0)
+### Start text
 
-series.ConfigItems.HeatMapItem.MiddleValueColor = Color.Gold
+The [StartText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_StartText) property specifies the text displayed at the start of the color swatch, with an empty string as its default value.
 
-'Sets the margin for the left and right labels.
+The following code displays **Low** at the start of the color swatch.
 
-series.ConfigItems.HeatMapItem.LabelMargins = 15
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.HeatMapItem.StartText =
+    "US";
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.HeatMapItem.StartText =
+    "US"
+{% endhighlight %}
+{% endtabs %}
 
+![HeatMap Start Text in Windows Forms](../Chart-Types_images/windowsforms-heat-map-charts.png)
+
+### End text
+
+The [EndText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_EndText) property specifies the text displayed at the end of the color swatch, with an empty string as its default value.
+
+The following code displays **High** at the end of the color swatch.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.HeatMapItem.EndText =
+    "Utah";
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.HeatMapItem.EndText =
+    "Utah"
+{% endhighlight %}
+{% endtabs %}
+
+![HeatMap End Text in Windows Forms](../Chart-Types_images/windowsforms-heat-map-charts.png)
+
+### Lowest value color
+
+The [LowestValueColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_LowestValueColor) property specifies the color used to represent the lowest value in the Heat Map chart, with **Red** as its default value.
+
+The following code sets the lowest-value color to **Green**.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.HeatMapItem.LowestValueColor =
+    Color.Green;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.HeatMapItem.LowestValueColor =
+    Color.Green
+{% endhighlight %}
+{% endtabs %}
+
+![HeatMap Lowest Value Color in Windows Forms](../Chart-Types_images/windowsforms-heat-map-color.png)
+
+### Middle value color
+
+The [MiddleValueColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_MiddleValueColor) property specifies the color used to represent the middle value in the Heat Map chart, with **Yellow** as its default value.
+
+The following code sets the middle-value color to **Orange**.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.HeatMapItem.MiddleValueColor =
+    Color.Orange;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.HeatMapItem.MiddleValueColor =
+    Color.Orange
+{% endhighlight %}
+{% endtabs %}
+
+![HeatMap Middle Value Color in Windows Forms](../Chart-Types_images/windowsforms-heat-map-color.png)
+
+### Highest value color
+
+The [HighestValueColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_HighestValueColor) property specifies the color used to represent the highest value in the Heat Map chart, with **Blue** as its default value.
+
+The following code sets the highest-value color to **Purple**.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.HeatMapItem.HighestValueColor =
+    Color.Purple;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.HeatMapItem.HighestValueColor =
+    Color.Purple
+{% endhighlight %}
+{% endtabs %}
+
+![HeatMap Highest Value Color in Windows Forms](../Chart-Types_images/windowsforms-heat-map-color.png)
+
+### Label margins
+
+The [LabelMargins](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_LabelMargins) property specifies the margin applied to the start and end labels of the color swatch, with **2f** as its default value.
+
+The following code sets the label margin to **15f**.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.HeatMapItem.LabelMargins =
+    15f;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.HeatMapItem.LabelMargins =
+    15.0F
+{% endhighlight %}
+{% endtabs %}
+
+![HeatMap Label Margin in Windows Forms](../Chart-Types_images/windowsforms-heat-map-label-margin.png)
+
+### Allow labels auto fit
+
+The [AllowLabelsAutoFit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_AllowLabelsAutoFit) property specifies whether Heat Map labels are automatically resized to fit within the available space, with **true** as its default value.
+
+The following code disables automatic label resizing.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.HeatMapItem.AllowLabelsAutoFit =
+    false;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.HeatMapItem.AllowLabelsAutoFit =
+    False
+{% endhighlight %}
+{% endtabs %}
+
+
+### Enable label rotation
+
+The [EnableLabelRotation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_EnableLabelRotation) property specifies whether Heat Map labels can be rotated to fit within the available space, with **true** as its default value.
+
+The following code disables label rotation.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.HeatMapItem.EnableLabelRotation =
+    false;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.HeatMapItem.EnableLabelRotation =
+    False
+{% endhighlight %}
+{% endtabs %}
+
+### Enable labels truncation
+
+The [EnableLabelsTruncation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_EnableLabelsTruncation) property specifies whether labels are truncated when they exceed the available display space, with **false** as its default value.
+
+The following code enables label truncation.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.HeatMapItem.EnableLabelsTruncation =
+    true;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.HeatMapItem.EnableLabelsTruncation =
+    True
+{% endhighlight %}
+{% endtabs %}
+
+### Maximum characters
+
+The [MaximumCharacters](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_MaximumCharacters) property specifies the maximum number of characters displayed in a Heat Map label, with **-1** as its default value, indicating that no character limit is applied.
+
+The following code limits each Heat Map label to **10** characters.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.HeatMapItem.MaximumCharacters =
+    10;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.HeatMapItem.MaximumCharacters =
+    10
+{% endhighlight %}
+{% endtabs %}
+
+### Minimum font size
+
+The [MinimumFontSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_MinimumFontSize) property specifies the minimum font size used when Heat Map labels are automatically resized, with **6f** as its default value.
+
+The following code sets the minimum label font size to **8f**.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.HeatMapItem.MinimumFontSize =
+    8f;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.HeatMapItem.MinimumFontSize =
+    8.0F
+{% endhighlight %}
+{% endtabs %}
+
+### Show large labels
+
+The [ShowLargeLabels](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_ShowLargeLabels) property specifies whether labels that exceed the available display area are displayed, with **false** as its default value.
+
+The following code displays labels that exceed the available display area.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.HeatMapItem.ShowLargeLabels =
+    true;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.HeatMapItem.ShowLargeLabels =
+    True
 {% endhighlight %}
 {% endtabs %}
 
@@ -720,7 +872,7 @@ The following chart series properties are used as customization options for Renk
 - [TextOrientation](https://help.syncfusion.com/windowsforms/chart/chart-series#textorientation)
 - [Visible](https://help.syncfusion.com/windowsforms/chart/chart-series#visible)
 
-# Three line break
+## Three line break
 
 A Three Line Break Chart tracks price movements using vertical boxes while ignoring time. A rising box is added when the price exceeds the previous high, while a falling box is added when the price reaches a new low.
 
