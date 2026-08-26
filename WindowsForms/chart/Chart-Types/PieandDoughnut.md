@@ -217,9 +217,11 @@ series.ConfigItems.PieItem.FillMode =
 
 The [Gradient](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_Gradient) property specifies the gradient colors applied to the Pie chart when the [PieType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieType) property is set to [Custom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieType.html#Syncfusion_Windows_Forms_Chart_ChartPieType_Custom). Since the default value is `null`, the Pie chart is rendered without a custom gradient until gradient colors are assigned.
 
+![Pie Gradient in Windows Forms](../Chart-Types_images/windowsforms-pie-fill-mode.png)
+
 ### Height by area depth
 
-The [HeightByAreaDepth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_HeightByAreaDepth) property controls whether the height of a 3D Pie chart is determined by the chart area's `Depth` property. By default, this property is set to `false`, and the Pie chart height is determined using the `HeightCoefficient` property.
+The [HeightByAreaDepth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_HeightByAreaDepth) property controls whether the height of a 3D Pie chart is determined by the chart area's `Depth` property. By default, this property is set to `false`, and the Pie chart height is determined using the [HeightCoefficient](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_HeightCoeficient) property.
 
 The following code configures the Pie chart height based on the chart area's depth.
 
@@ -261,7 +263,11 @@ chartControl.Series(0).ConfigItems.PieItem.LabelStyle = ChartAccumulationLabelSt
 
 ### Pie height
 
-The [PieHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieHeight) property specifies the height of an individual pie when multiple pies are enabled.
+The [PieHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieHeight) property specifies the height of an individual Pie chart when [MultiplePies](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_MultiplePies) are enabled.
+
+N> [PieHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieHeight) property is applicable when [Series3D](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl) set to `true`.
+
+The following code sets the Pie height to `100f`.
 
 {% tabs %}
 {% highlight c# %}
@@ -272,9 +278,14 @@ chartControl.Series(0).ConfigItems.PieItem.PieHeight = 100.0F
 {% endhighlight %}
 {% endtabs %}
 
+![Pie Height in Windows Forms](../Chart-Types_images/windowsforms-pie-chart-pie-height.png)
+
+
 ### Pie radius
 
-The [PieRadius](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieRadius) property controls the radius of the pie chart, allowing its rendered size to be adjusted.
+The [PieRadius](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieRadius) property controls the radius of the Pie chart, allowing its rendered size to be adjusted, with `0f` used as the default value.
+
+The following code sets the Pie radius to `100f`.
 
 {% tabs %}
 {% highlight c# %}
@@ -285,35 +296,45 @@ chartControl.Series(0).ConfigItems.PieItem.PieRadius = 100.0F
 {% endhighlight %}
 {% endtabs %}
 
+![Pie Radius in Windows Forms](../Chart-Types_images/windowsforms-pie-chart-pie-radius.png)
+
 ### Pie size
 
-The [PieSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieSize) property specifies the width and height of an individual pie when multiple pies are enabled. This property is primarily intended for internal use.
+The [PieSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieSize) property specifies the width and height of an individual Pie chart when [MultiplePies](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_MultiplePies) is enabled. This property is primarily intended for internal use, with `SizeF.Empty` used as the default value.
 
 {% tabs %}
 {% highlight c# %}
-chartControl.Series[0].ConfigItems.PieItem.PieSize = new SizeF(200f, 150f);
+chartControl.Series[0].ConfigItems.PieItem.PieSize = new SizeF(100f, 80f);
 {% endhighlight %}
 {% highlight vb %}
-chartControl.Series(0).ConfigItems.PieItem.PieSize = New SizeF(200.0F, 150.0F)
+chartControl.Series(0).ConfigItems.PieItem.PieSize = New SizeF(100.0F, 80.0F)
 {% endhighlight %}
 {% endtabs %}
 
+![Pie Size in Windows Forms](../Chart-Types_images/windowsforms-pie-chart-height.png)
+
 ### Pie tilt
 
-The [PieTilt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieTilt) property specifies the tilte of an individual pie when multiple pies are enabled.
+The [PieTilt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieTilt) property specifies the tilt angle of an individual Pie chart when `MultiplePies` is enabled, with `0f` used as the default value.
+
+The following code sets the Pie tilt angle to `30f`.
 
 {% tabs %}
 {% highlight c# %}
-chartControl.Series[0].ConfigItems.PieItem.PieTilt = 30f;
+chartControl.Series[0].ConfigItems.PieItem.PieTilt =
+    30f;
 {% endhighlight %}
 {% highlight vb %}
-chartControl.Series(0).ConfigItems.PieItem.PieTilt = 30.0F
+chartControl.Series(0).ConfigItems.PieItem.PieTilt =
+    30.0F
 {% endhighlight %}
 {% endtabs %}
 
 ### Pie with same radius
 
-The [PieWithSameRadius](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieWithSameRadius) property maintains the same pie radius when the **LabelStyle** property is set to **Outside** or **OutsideInColumn**.
+The [PieWithSameRadius](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieWithSameRadius) property maintains the same pie radius when the [LabelStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_LabelStyle) property is set to **Outside** or **OutsideInColumn**.
+
+The following code enables the Pie chart to maintain the same radius when labels are rendered outside the Pie chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -324,22 +345,124 @@ chartControl.Series(0).ConfigItems.PieItem.PieWithSameRadius = True
 {% endhighlight %}
 {% endtabs %}
 
+![Pie With Same Radius in Windows Forms](../Chart-Types_images/windowsforms-pie-chart-pie-same-radius.png)
+
 ### Show databind labels
 
-The [ShowDataBindLabels](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_ShowDataBindLabels) property controls whether labels obtained from the bound data source are displayed on the pie segments.
+The [ShowDataBindLabels](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_ShowDataBindLabels) property controls whether labels obtained from the bound data source are displayed on the pie segments, with `false` used as the default value.
+
+The following code displays labels from the bound data source on the Pie chart segments.
 
 {% tabs %}
 {% highlight c# %}
-chartControl.Series[0].ConfigItems.PieItem.ShowDataBindLabels = true;
+DataTable table = new DataTable("PieData");
+
+table.Columns.Add("Category", typeof(string));
+table.Columns.Add("Value", typeof(double));
+
+table.Rows.Add("Production", 20);
+table.Rows.Add("Labor", 28);
+table.Rows.Add("Facilities", 23);
+table.Rows.Add("Taxes", 10);
+table.Rows.Add("Insurance", 12);
+table.Rows.Add("Licenses", 3);
+table.Rows.Add("Legal", 2);
+
+// Bind values.
+ChartDataBindModel seriesModel =
+    new ChartDataBindModel(table);
+
+seriesModel.YNames = new string[] { "Value" };
+
+// Create Pie series.
+ChartSeries series = new ChartSeries(
+    "Market",
+    ChartSeriesType.Pie);
+
+series.SeriesModel = seriesModel;
+
+// Bind category names as labels.
+ChartDataBindAxisLabelModel labelModel =
+    new ChartDataBindAxisLabelModel(table);
+
+labelModel.LabelName = "Category";
+
+chartControl.PrimaryXAxis.LabelsImpl =
+    labelModel;
+series.Style.DisplayText = true;
+
+// Display bound labels.
+series.ConfigItems.PieItem.ShowDataBindLabels =
+    true;
+
+series.ConfigItems.PieItem.LabelStyle =
+    ChartAccumulationLabelStyle.OutsideInColumn;
+
+series.ConfigItems.PieItem.AngleOffset = 60f;
+
+chartControl.Series.Add(series);
+chartControl.Legend.Visible = false;
+
 {% endhighlight %}
 {% highlight vb %}
-chartControl.Series(0).ConfigItems.PieItem.ShowDataBindLabels = True
+Dim table As New DataTable("PieData")
+
+table.Columns.Add("Category", GetType(String))
+table.Columns.Add("Value", GetType(Double))
+
+table.Rows.Add("Production", 20)
+table.Rows.Add("Labor", 28)
+table.Rows.Add("Facilities", 23)
+table.Rows.Add("Taxes", 10)
+table.Rows.Add("Insurance", 12)
+table.Rows.Add("Licenses", 3)
+table.Rows.Add("Legal", 2)
+
+' Bind values.
+Dim seriesModel As New ChartDataBindModel(table)
+
+seriesModel.YNames = New String() {"Value"}
+
+' Create Pie series.
+Dim series As New ChartSeries(
+    "Market",
+    ChartSeriesType.Pie)
+
+series.SeriesModel = seriesModel
+
+' Bind category names as labels.
+Dim labelModel As New ChartDataBindAxisLabelModel(table)
+
+labelModel.LabelName = "Category"
+
+chartControl.PrimaryXAxis.LabelsImpl =
+    labelModel
+
+series.Style.DisplayText = True
+
+' Display bound labels.
+series.ConfigItems.PieItem.ShowDataBindLabels =
+    True
+
+series.ConfigItems.PieItem.LabelStyle =
+    ChartAccumulationLabelStyle.OutsideInColumn
+
+series.ConfigItems.PieItem.AngleOffset =
+    60.0F
+
+chartControl.Series.Add(series)
+chartControl.Legend.Visible = False
+
 {% endhighlight %}
 {% endtabs %}
 
+![Pie Show DataBind Labels in Windows Forms](../Chart-Types_images/windowsforms-pie-chart-pie-show-databind-labels.png)
+
 ### Show series title
 
-The [ShowSeriesTitle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_ShowSeriesTitle) property controls whether the series title is displayed in the pie chart.
+The [ShowSeriesTitle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_ShowSeriesTitle) pproperty controls whether the series title is displayed in the Pie chart and is set to `false` by default.
+
+The following code displays the series title in the Pie chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -349,6 +472,8 @@ chartControl.Series[0].ConfigItems.PieItem.ShowSeriesTitle = true;
 chartControl.Series(0).ConfigItems.PieItem.ShowSeriesTitle = True
 {% endhighlight %}
 {% endtabs %}
+
+![Pie Show Series Title in Windows Forms](../Chart-Types_images/windowsforms-pie-chart-pie-show-series-title.png)
 
 ### Customization option
 

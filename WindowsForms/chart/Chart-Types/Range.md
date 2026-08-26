@@ -263,6 +263,23 @@ chartControl.Series.Add(series)
 
 ![Range Area Chart in Windows Forms](../Chart-Types_images/windowsforms-range-area-chart.png)
 
+### Swap high low point
+
+The [SwapHighLowPoint](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRangeAreaConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartRangeAreaConfigItem_SwapHighLowPoint) property controls whether the High and Low values are automatically swapped in a Range Area chart when the Low value is greater than the High value.
+
+The following code enables automatic swapping of High and Low values.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.RangeAreaItem.SwapHighLowPoint =
+    true;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.RangeAreaItem.SwapHighLowPoint =
+    True
+{% endhighlight %}
+{% endtabs %}
+
 ### Customization Options
 
 The following chart series properties are used as customization options for the Range Area chart:

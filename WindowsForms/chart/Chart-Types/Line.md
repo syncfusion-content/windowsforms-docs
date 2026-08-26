@@ -289,6 +289,47 @@ chartControl.Series.Add(secondServer)
 
 ![Step Line Chart in Windows Forms](../Chart-Types_images/windowsforms-step-line-chart.png)
 
+### Inverted
+
+The [Inverted](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStepConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartStepConfigItem_Inverted) property specifies whether the step line is rendered in an inverted direction in a Step chart, with `false` used as the default value.
+
+The following code enables inverted step-line rendering.
+
+{% tabs %}
+{% highlight c# %}
+ChartSeries series = new ChartSeries(
+"Server 1",
+ChartSeriesType.StepLine);
+
+series.Points.Add(10, 300);
+series.Points.Add(20, 600);
+series.Points.Add(30, 400);
+series.Points.Add(40, 300);
+series.Points.Add(50, 400);
+
+chartControl.Series.Add(series);
+chartControl.Series[0].ConfigItems.StepItem.Inverted =
+    true;
+{% endhighlight %}
+{% highlight vb %}
+Dim series As New ChartSeries(
+    "Server 1",
+    ChartSeriesType.StepLine)
+
+series.Points.Add(10, 300)
+series.Points.Add(20, 600)
+series.Points.Add(30, 400)
+series.Points.Add(40, 300)
+series.Points.Add(50, 400)
+
+chartControl.Series.Add(series)
+
+chartControl.Series(0).ConfigItems.StepItem.Inverted = True
+{% endhighlight %}
+{% endtabs %}
+
+![Step Line Inverted in Windows Forms](../Chart-Types_images/windowsforms-step-line-inverted.png)
+
 ### Customization option
 
 The following chart series properties are used as customization options for Step Line chart:

@@ -154,6 +154,59 @@ chartControl.PrimaryYAxis.Range = New MinMaxInfo(0, 50, 10)
 
 ![Histogram Chart in Windows Forms](../Chart-Types_images/windowsforms-histogram-chart.png)
 
+### Number of intervals
+
+The [NumberOfIntervals](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHistogramConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHistogramConfigItem_NumberOfIntervals) property specifies the number of intervals used to group data values in a Histogram chart and defaults to `10`.
+
+The following code sets the number of intervals to `15`.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.HistogramItem.NumberOfIntervals = 15;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.HistogramItem.NumberOfIntervals = 15
+{% endhighlight %}
+{% endtabs %}
+
+![Histogram Number of Intervals in Windows Forms](../Chart-Types_images/windowsforms-histogram-chart-number-of-intervals.png)
+
+### Show normal distribution
+
+The [ShowNormalDistribution](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHistogramConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHistogramConfigItem_ShowNormalDistribution) property controls whether a normal distribution curve is displayed on the Histogram chart and is set to `false` by default.
+
+The following code displays the normal distribution curve on the Histogram chart.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.HistogramItem.ShowNormalDistribution =
+    true;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.HistogramItem.ShowNormalDistribution =
+    True
+{% endhighlight %}
+{% endtabs %}
+
+![Histogram Show Number Distribution in Windows Forms](../Chart-Types_images/windowsforms-histogram-normal-distribution.png)
+
+### Show data points
+
+The [ShowDataPoints](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHistogramConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHistogramConfigItem_ShowDataPoints) property controls whether data points are displayed on the Histogram chart and is set to `true` by default.
+
+The following code hides the data points in the Histogram chart.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.HistogramItem.ShowDataPoints = false;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.HistogramItem.ShowDataPoints = False
+{% endhighlight %}
+{% endtabs %}
+
+![Histogram Show Number Distribution in Windows Forms](../Chart-Types_images/windowsforms-histogram-show-data-points.png)
+
 ## Customization option
 
 The following chart series properties are used as customization options for Histogram chart:

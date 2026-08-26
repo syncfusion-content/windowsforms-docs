@@ -67,48 +67,59 @@ series.Style.Border.Width = 3
 
 ### Close tip color
 
-The [CloseTipColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHiLoOpenCloseConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHiLoOpenCloseConfigItem_CloseTipColor) property specifies the color of the tip that represents the closing value in a HiLo Open Close chart.
+The [CloseTipColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHiLoOpenCloseConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHiLoOpenCloseConfigItem_CloseTipColor) property specifies the color of the tip that represents the closing value in a HiLo Open Close chart, with `Color.Empty` as the default value.
+
+The following code sets the close tip color to `Color.Blue`.
 
 {% tabs %}
 {% highlight c# %}
-chartControl.Series[0].ConfigItems.HiLoOpenCloseItem.CloseTipColor = Color.Red;
+chartControl.Series[0].ConfigItems.HiLoOpenCloseItem.CloseTipColor = Color.Blue;
 {% endhighlight %}
 {% highlight vb %}
-chartControl.Series(0).ConfigItems.HiLoOpenCloseItem.CloseTipColor = Color.Red
+chartControl.Series(0).ConfigItems.HiLoOpenCloseItem.CloseTipColor = Color.Blue
 {% endhighlight %}
 {% endtabs %}
+![HiLo Open Close Close Tip Color in Windows Forms](../Chart-Types_images/windowsforms-hilo-chart-tip-close.png)
 
 ### Draw mode
 
-The [DrawMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHiLoOpenCloseConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHiLoOpenCloseConfigItem_DrawMode) property specifies whether the open tip, close tip, or both tips are displayed in a HiLo Open Close chart.
+The [DrawMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHiLoOpenCloseConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHiLoOpenCloseConfigItem_DrawMode) property specifies whether the open tip, close tip, or both tips are displayed in a HiLo Open Close chart. By default, both tips are displayed using the `Both` draw mode.
 
 The **DrawMode** property supports the following values:
 
-- **Both**: Displays both the open and close tips.
-- **Close**: Displays only the close tip.
-- **Open**: Displays only the open tip.
+- [Both](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartOpenCloseDrawMode.html#Syncfusion_Windows_Forms_Chart_ChartOpenCloseDrawMode_Both): Displays both the open and close tips.
+- [Close]((https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartOpenCloseDrawMode.html#Syncfusion_Windows_Forms_Chart_ChartOpenCloseDrawMode_Close)): Displays only the close tip.
+- [Open]((https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartOpenCloseDrawMode.html#Syncfusion_Windows_Forms_Chart_ChartOpenCloseDrawMode_Open)): Displays only the open tip.
+
+The following code displays only the open tip.
 
 {% tabs %}
 {% highlight c# %}
-chartControl.Series[0].ConfigItems.HiLoOpenCloseItem.DrawMode = ChartOpenCloseDrawMode.Both;
+chartControl.Series[0].ConfigItems.HiLoOpenCloseItem.DrawMode = ChartOpenCloseDrawMode.Open;
 {% endhighlight %}
 {% highlight vb %}
-chartControl.Series(0).ConfigItems.HiLoOpenCloseItem.DrawMode = ChartOpenCloseDrawMode.Both
+chartControl.Series(0).ConfigItems.HiLoOpenCloseItem.DrawMode = ChartOpenCloseDrawMode.Open
 {% endhighlight %}
 {% endtabs %}
+
+![HiLo Open Close Draw Mode in Windows Forms](../Chart-Types_images/windowsforms-hilo-chart-draw-mode.png)
 
 ### Open tip color
 
-The [OpenTipColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHiLoOpenCloseConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHiLoOpenCloseConfigItem_OpenTipColor) property specifies the color of the tip that represents the opening value in a HiLo Open Close chart.
+The [OpenTipColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHiLoOpenCloseConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHiLoOpenCloseConfigItem_OpenTipColor) property specifies the color of the tip that represents the opening value in a HiLo Open Close chart, with `Color.Empty` used as the default value.
+
+The following code sets the open tip color to `Color.Blue`.
 
 {% tabs %}
 {% highlight c# %}
-chartControl.Series[0].ConfigItems.HiLoOpenCloseItem.OpenTipColor = Color.Green;
+chartControl.Series[0].ConfigItems.HiLoOpenCloseItem.OpenTipColor = Color.Blue;
 {% endhighlight %}
 {% highlight vb %}
-chartControl.Series(0).ConfigItems.HiLoOpenCloseItem.OpenTipColor = Color.Green
+chartControl.Series(0).ConfigItems.HiLoOpenCloseItem.OpenTipColor = Color.Blue
 {% endhighlight %}
 {% endtabs %}
+
+![HiLo Open Close Open Tip Color in Windows Forms](../Chart-Types_images/windowsforms-hilo-chart-tip-open.png)
 
 ### Customization option
 
