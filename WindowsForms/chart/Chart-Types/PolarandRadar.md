@@ -302,6 +302,31 @@ End Sub
 
 ![Radar Chart in Windows Forms](../Chart-Types_images/windowsforms-radar-chart.png)
 
+### Type
+
+The [Type](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartRadarConfigItem_Type) property specifies the type of Radar chart to be rendered, with `Area` used as the default value.
+
+The **Type** property supports the following values:
+
+- [Area](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarDrawType.html#Syncfusion_Windows_Forms_Chart_ChartRadarDrawType_Area): Renders the Radar chart as a filled area.
+- [Line](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarDrawType.html#Syncfusion_Windows_Forms_Chart_ChartRadarDrawType_Line): Renders the Radar chart using connected lines only.
+
+The following code renders the Radar chart as a line chart.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.RadarItem.Type = ChartRadarDrawType.Line;
+chartControl.Series[1].ConfigItems.RadarItem.Type = ChartRadarDrawType.Line;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.RadarItem.Type = ChartRadarDrawType.Line
+chartControl.Series(1).ConfigItems.RadarItem.Type = ChartRadarDrawType.Line
+{% endhighlight %}
+{% endtabs %}
+
+![Radar Draw Type in Windows Forms](../Chart-Types_images/windowsforms-radar-chart-draw-type.png)
+
+
 ### Customization option
 
 The following chart series properties are used as customization options for Radar chart:
