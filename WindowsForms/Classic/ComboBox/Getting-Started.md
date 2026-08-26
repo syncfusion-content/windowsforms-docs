@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Getting Started with Windows Forms ComboBoxAdv(Classic) | Syncfusion®
 description: Learn how to get started with the Syncfusion® Windows Forms ComboBoxAdv(Classic) control. Explore setup, features, examples, and customization options.
@@ -37,13 +37,13 @@ Install-Package Syncfusion.Tools.Windows
 3. Open the Toolbox and locate the **ComboBoxAdv** control under the **Syncfusion Windows Forms** tab.
 4. Drag the ComboBoxAdv control from the Toolbox onto the Form.
 
-![Overview of Windows Forms ComboBoxAdv (Classic) control](overview_images/windowsforms-combobox-overview.png)
+![Overview of Windows Forms ComboBoxAdv control](overview_images/windowsforms-combobox-overview.png)
 
 ## Configuring the ComboBoxAdv control
 
 The most commonly used settings of the ComboBoxAdv control can be configured through the Smart tag, the Properties window, or in code.
 
-![Configuring ComboBoxAdv (Classic) control in Windows Forms](overview_images/windowsforms-combobox-configuring.png)
+![Configuring ComboBoxAdv control in Windows Forms](overview_images/windowsforms-combobox-configuring.png)
 
 Typical settings include:
 
@@ -220,4 +220,4 @@ End Class
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_2 }}
 
-![Adding the ComboBoxAdv (Classic) control to a Windows Forms form](overview_images/windowsforms-combobox-add-form.png)
+![Adding the ComboBoxAdv control to a Windows Forms form](overview_images/windowsforms-combobox-add-form.png)
