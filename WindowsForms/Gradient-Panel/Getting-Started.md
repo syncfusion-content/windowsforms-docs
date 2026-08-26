@@ -17,6 +17,12 @@ Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/con
 
 Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install NuGet packages in a Windows Forms application.
 
+To install via the NuGet Package Manager Console, run:
+
+```powershell
+Install-Package Syncfusion.Shared.Base
+```
+
 ## Adding GradientPanel control via designer
 
 1. Create a new Windows Forms project in Visual Studio.
