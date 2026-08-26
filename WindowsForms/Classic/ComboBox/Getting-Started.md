@@ -7,7 +7,7 @@ control: ComboBoxAdv
 documentation: ug
 ---
 
-# Getting Started with Windows Forms ComboBoxAdv (Classic)
+# Getting Started with Windows Forms ComboBoxAdv(Classic)
 
 This section describes how to add the ComboBoxAdv control to a Windows Forms application and configure its commonly used settings.
 
