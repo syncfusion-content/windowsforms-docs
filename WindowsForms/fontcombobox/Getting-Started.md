@@ -22,7 +22,7 @@ You can find more details about installing the NuGet packages in a Windows Forms
 To install the required Syncfusion.Editors.WinForms NuGet package via the Package Manager Console, run the following command:
 
 ```powershell
-Install-Package Syncfusion.Editors.WinForms
+Install-Package Syncfusion.Tools.Windows
 ```
 
 ## Adding FontComboBox via Designer
