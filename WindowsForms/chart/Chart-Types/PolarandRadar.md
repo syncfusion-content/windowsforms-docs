@@ -140,11 +140,6 @@ Radar Chart displays data using radial axes that extend from a central point. Ea
 
 It is useful for comparing multiple data series, analyzing performance against ideal values, and visualizing data with a natural cyclic order, such as seasons or time periods.
 
-You can also customize the following features for Radar chart:
-
-* **Draw Type**: The rendering style of the chart can be customized using the `RadarItem` property of `ConfigItems`.
-* **Radar Axis Style**: The appearance of the radar axis can be customized using the [RadarStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_RadarStyle) property in Radar chart.
-
 N>
 Chart Details
 * Number of Y values per point - 1.
@@ -269,8 +264,6 @@ Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) Handles MyB
     chartControl.PrimaryXAxis.RangeType = ChartAxisRangeType.Set
     chartControl.PrimaryXAxis.Range = New MinMaxInfo(0, 6, 1)
 
-    chartControl.Dock = DockStyle.Fill
-
     Me.Controls.Add(chartControl)
 
 End Sub
@@ -326,6 +319,29 @@ chartControl.Series(1).ConfigItems.RadarItem.Type = ChartRadarDrawType.Line
 
 ![Radar Draw Type in Windows Forms](../Chart-Types_images/windowsforms-radar-chart-draw-type.png)
 
+### Radar style
+
+The [RadarStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_RadarStyle) property determines the axis style used to render a Radar chart. By default, the Radar chart is rendered using the [Polygon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarAxisStyle.html#Syncfusion_Windows_Forms_Chart_ChartRadarAxisStyle_Polygon) axis style.
+
+The supported Radar styles are:
+
+- [Polygon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarAxisStyle.html#Syncfusion_Windows_Forms_Chart_ChartRadarAxisStyle_Polygon): Renders the Radar chart with polygonal grid lines, where each grid level is displayed as a multi-sided polygon. This is the default value.
+- [Circle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarAxisStyle.html#Syncfusion_Windows_Forms_Chart_ChartRadarAxisStyle_Circle): Renders the Radar chart with circular grid lines, giving the chart a smoother and more rounded appearance.
+
+The following code sets the Radar chart axis style to `Circle`.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.RadarStyle =
+    ChartRadarAxisStyle.Circle;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.RadarStyle =
+    ChartRadarAxisStyle.Circle
+{% endhighlight %}
+{% endtabs %}
+
+![Radar Axis Style in Windows Forms](../Chart-Types_images/windowsforms-radar-chart-axis-stye.png)
 
 ### Customization option
 
