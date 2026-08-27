@@ -104,8 +104,6 @@ chartControl.Series(0).ConfigItems.LineItem.DisableLineRegion = True
 {% endhighlight %}
 {% endtabs %}
 
-![Line Region in Windows Forms](../Chart-Types_images/windowsforms-line-chart-disable-line-region.png)
-
 ### Customization option
 
 The following chart series properties are used as customization options for Spline Line chart:
