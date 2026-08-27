@@ -9,13 +9,19 @@ documentation: ug
 
 # Getting Started with Windows Forms NumericUpDownExt
 
-This section briefly describes how to create a new Windows Forms project in Visual Studio and add the **NumericUpDownExt** control with its basic functionalities.
+This section briefly describes how to create a new Windows Forms project in Visual Studio and add the **NumericUpDownExt** control with its basic functionality.
 
 ## Assembly deployment
 
 Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#numericupdownext) section to get the list of assemblies or the details of NuGet package that need to be added as reference to use the control in any application.
 
 Refer to this [documentation](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to find more details about installing NuGet packages in a Windows Forms application.
+
+You can also add the required assemblies as references from the Package Manager Console using the following PowerShell command:
+
+```powershell
+Install-Package Syncfusion.Tools.Windows
+```
 
 ## Adding the NumericUpDownExt control via designer
 
@@ -32,7 +38,7 @@ Refer to this [documentation](https://help.syncfusion.com/windowsforms/installat
 
 ![Drag and drop NumericUpDownExt from toolbox](Creating-NumericUpDownExt_images/Creating-NumericUpDownExt_img1.png)
 
-The **NumericUpDownExt** allows you to display numeric values by clicking the up and down buttons.
+The **NumericUpDownExt** allows you to display numeric values by clicking the up and down buttons on the spin box.
 
 ![Windows Forms NumericUpDownExt showing numeric values](Creating-NumericUpDownExt_images/Creating-NumericUpDownExt_img2.png)
 
@@ -72,31 +78,47 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4. Create an instance of the [NumericUpDownExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumericUpDownExt.html) control, and add it to the form.
+4. Create an instance of the [NumericUpDownExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumericUpDownExt.html) control and add it to **Form1**.
 
 {% capture codesnippet2 %}​
 {% tabs %}
 {% highlight c# %}
 
-private Syncfusion.Windows.Forms.Tools.NumericUpDownExt numericUpDownExt1;
-this.numericUpDownExt1 = new Syncfusion.Windows.Forms.Tools.NumericUpDownExt();
-this.Controls.Add(this.numericUpDownExt1);
+public partial class Form1 : Form
+{
+    private Syncfusion.Windows.Forms.Tools.NumericUpDownExt numericUpDownExt1;
 
-this.numericUpDownExt1.Location = new System.Drawing.Point(70, 29);
-this.numericUpDownExt1.Name = "numericUpDownExt1";
-this.numericUpDownExt1.Size = new System.Drawing.Size(84, 20);
+    public Form1()
+    {
+        InitializeComponent();
+
+        this.numericUpDownExt1 = new Syncfusion.Windows.Forms.Tools.NumericUpDownExt();
+        this.numericUpDownExt1.Location = new System.Drawing.Point(70, 29);
+        this.numericUpDownExt1.Name = "numericUpDownExt1";
+        this.numericUpDownExt1.Size = new System.Drawing.Size(84, 20);
+        this.Controls.Add(this.numericUpDownExt1);
+    }
+}
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Private numericUpDownExt1 As Syncfusion.Windows.Forms.Tools.NumericUpDownExt
-Me.numericUpDownExt1 = New Syncfusion.Windows.Forms.Tools.NumericUpDownExt()
-Me.Controls.Add(Me.numericUpDownExt1)
+Public Partial Class Form1
+    Inherits Form
 
-Me.numericUpDownExt1.Location = New System.Drawing.Point(70, 29)
-Me.numericUpDownExt1.Name = "numericUpDownExt1"
-Me.numericUpDownExt1.Size = New System.Drawing.Size(84, 20)
+    Private numericUpDownExt1 As Syncfusion.Windows.Forms.Tools.NumericUpDownExt
+
+    Public Sub New()
+        InitializeComponent()
+
+        Me.numericUpDownExt1 = New Syncfusion.Windows.Forms.Tools.NumericUpDownExt()
+        Me.numericUpDownExt1.Location = New System.Drawing.Point(70, 29)
+        Me.numericUpDownExt1.Name = "numericUpDownExt1"
+        Me.numericUpDownExt1.Size = New System.Drawing.Size(84, 20)
+        Me.Controls.Add(Me.numericUpDownExt1)
+    End Sub
+End Class
 
 {% endhighlight %}
 {% endtabs %}
