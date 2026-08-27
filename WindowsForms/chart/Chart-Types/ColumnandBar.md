@@ -98,7 +98,7 @@ chartControl.ColumnWidthMode =
 
 The following **Column fixed width** section demonstrates `FixedWidthMode` by specifying the width of each column in pixels.
 
-![Column Chart in Windows Forms](../Chart-Types_images/windowsforms-column-mode-width-chart.png)
+![Column Fixed Width in Windows Forms](../Chart-Types_images/windowsforms-column-mode-width-chart.png)
 
 ### Column fixed width
 
@@ -112,6 +112,8 @@ chartControl.ColumnFixedWidth = 10;
 chartControl.ColumnFixedWidth = 10
 {% endhighlight %}
 {% endtabs %}
+
+![Column Fixed width in Windows Forms](../Chart-Types_images/windowsforms-column-mode-width-chart.png)
 
 ### Column type
 
@@ -141,7 +143,7 @@ chartControl.Series(0).ConfigItems.ColumnItem.ColumnType =
 
 ### Corner radius
 
-The [CornerRadius](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartColumnConfigItem_CornerRadius) property specifies the horizontal and vertical radii used to render rounded corners for columns and bars. The default value is **SizeF.Empty**, which renders columns without rounded corners.
+The [CornerRadius](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartColumnConfigItem_CornerRadius) property specifies the horizontal and vertical radii used to render rounded corners for columns and bars. The default value is `SizeF.Empty`, which renders columns without rounded corners.
 
 The following code example demonstrates how to set the corner radius for column chart.
 
@@ -154,13 +156,13 @@ chartControl.Series(0).ConfigItems.ColumnItem.CornerRadius = New SizeF(10, 10)
 {% endhighlight %}
 {% endtabs %}
 
-![Column Type in Windows Forms](../Chart-Types_images/windowsforms-column-corner-radius-chart.png)
+![Column Radisu in Windows Forms](../Chart-Types_images/windowsforms-column-corner-radius-chart.png)
 
 ### Light angle
 
-The [LightAngle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartColumnConfigItem_LightAngle) property specifies the horizontal angle of the light source when the **ShadingMode** property is set to **PhongCylinder**. The angle is specified in radians, and the default value is **Math.PI /4**.
+The [LightAngle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartColumnConfigItem_LightAngle) property specifies the horizontal angle of the light source when the [ShadingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartColumnConfigItem_ShadingMode) property is set to [PhongCylinder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnShadingMode.html#Syncfusion_Windows_Forms_Chart_ChartColumnShadingMode_PhongCylinder). The angle is specified in radians, and the default value is `-Math.PI /4`.
 
-The following code sets the light angle to **Math.PI / 2**.
+The following code sets the light angle to Math.PI / 2.
 
 {% tabs %}
 {% highlight c# %}
@@ -179,7 +181,7 @@ chartControl.Series(0).ConfigItems.ColumnItem.LightAngle =
 
 ### Light color
 
-The [LightColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartColumnConfigItem_LightColor) property specifies the color of the light source when the **ShadingMode** property is set to **PhongCylinder**. If no color is specified, White is used as the light source color by default.
+The [LightColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartColumnConfigItem_LightColor) property specifies the color of the light source when the **ShadingMode** property is set to [PhongCylinder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnShadingMode.html#Syncfusion_Windows_Forms_Chart_ChartColumnShadingMode_PhongCylinder). If no color is specified, White is used as the light source color by default.
 
 The following code example demonstrates how to apply Color.Red as the light source color.
 

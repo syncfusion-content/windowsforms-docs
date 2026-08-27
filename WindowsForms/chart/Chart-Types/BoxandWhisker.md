@@ -77,6 +77,98 @@ chartControl.Series.Add(profitSeries)
 
 ![Box And Whisker Chart in Windows Forms](../Chart-Types_images/windowsforms-box-and-whisker-chart.png)
 
+## Percentile mode
+
+The [PercentileMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBoxAndWhiskerConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartBoxAndWhiskerConfigItem_PercentileMode) property controls whether the Box and Whisker chart is rendered in percentile mode or normal mode and is set to `false` by default.
+
+The following code enables percentile mode.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.BoxAndWhiskerItem.PercentileMode = true;
+chartControl.Series[1].ConfigItems.BoxAndWhiskerItem.PercentileMode = true;
+chartControl.Series[0].ConfigItems.BoxAndWhiskerItem.Percentile = 0.25;
+
+chartControl.Series[1].ConfigItems.BoxAndWhiskerItem.Percentile = 0.25;
+
+chartControl.Series[0].ConfigItems.BoxAndWhiskerItem.OutLierWidth = 50;
+
+chartControl.Series[1].ConfigItems.BoxAndWhiskerItem.OutLierWidth = 50;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.BoxAndWhiskerItem.PercentileMode = True
+
+chartControl.Series(1).ConfigItems.BoxAndWhiskerItem.PercentileMode = True
+
+chartControl.Series(0).ConfigItems.BoxAndWhiskerItem.Percentile = 0.25
+
+chartControl.Series(1).ConfigItems.BoxAndWhiskerItem.Percentile = 0.25
+
+chartControl.Series(0).ConfigItems.BoxAndWhiskerItem.OutLierWidth = 50
+
+chartControl.Series(1).ConfigItems.BoxAndWhiskerItem.OutLierWidth = 50
+{% endhighlight %}
+{% endtabs %}
+
+![Box And Whisker Percentile Mode in Windows Forms](../Chart-Types_images/windowsforms-box-and-whisker-percentile-mode.png)
+
+## Percentile
+
+The [Percentile](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBoxAndWhiskerConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartBoxAndWhiskerConfigItem_Percentile) property specifies the percentile value used to determine outliers in a Box and Whisker chart. The default percentile value is `0`.
+
+N> The [Percentile](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBoxAndWhiskerConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartBoxAndWhiskerConfigItem_Percentile) property is applicable only when [PercentileMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBoxAndWhiskerConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartBoxAndWhiskerConfigItem_PercentileMode) is enabled.
+
+The following code sets the percentile value to `0.15`.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.BoxAndWhiskerItem.Percentile = 0.15;
+
+chartControl.Series[1].ConfigItems.BoxAndWhiskerItem.Percentile = 0.15;
+
+{% endhighlight %}
+{% highlight vb %}
+
+chartControl.Series(0).ConfigItems.BoxAndWhiskerItem.Percentile = 0.15
+chartControl.Series(1).ConfigItems.BoxAndWhiskerItem.Percentile = 0.15
+{% endhighlight %}
+{% endtabs %}
+
+![Box And Whisker Percentile in Windows Forms](../Chart-Types_images/windowsforms-box-and-whisker-percentile.png)
+
+## Outlier width
+
+The [OutLierWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBoxAndWhiskerConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartBoxAndWhiskerConfigItem_OutLierWidth) property specifies the width of the outlier marker in a Box and Whisker chart. By default, the outlier width is set to 0.
+
+N>The [OutLierWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBoxAndWhiskerConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartBoxAndWhiskerConfigItem_OutLierWidth) property is applicable only when [PercentileMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBoxAndWhiskerConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartBoxAndWhiskerConfigItem_PercentileMode) is set to `true` and the [Percentile](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBoxAndWhiskerConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartBoxAndWhiskerConfigItem_Percentile) property is assigned a value greater than `0`.
+
+The following code sets the outlier width to `60`.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.BoxAndWhiskerItem.PercentileMode = true;
+chartControl.Series[1].ConfigItems.BoxAndWhiskerItem.PercentileMode = true;
+
+chartControl.Series[0].ConfigItems.BoxAndWhiskerItem.Percentile = 0.15;
+chartControl.Series[1].ConfigItems.BoxAndWhiskerItem.Percentile = 0.15;
+
+chartControl.Series[0].ConfigItems.BoxAndWhiskerItem.OutLierWidth = 60;
+chartControl.Series[1].ConfigItems.BoxAndWhiskerItem.OutLierWidth = 60;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.BoxAndWhiskerItem.PercentileMode = True
+chartControl.Series(1).ConfigItems.BoxAndWhiskerItem.PercentileMode = True
+
+chartControl.Series(0).ConfigItems.BoxAndWhiskerItem.Percentile = 0.15
+chartControl.Series(1).ConfigItems.BoxAndWhiskerItem.Percentile = 0.15
+
+chartControl.Series(0).ConfigItems.BoxAndWhiskerItem.OutLierWidth = 60
+chartControl.Series(1).ConfigItems.BoxAndWhiskerItem.OutLierWidth = 60
+{% endhighlight %}
+{% endtabs %}
+
+![Box And Whisker OutLier Width in Windows Forms](../Chart-Types_images/windowsforms-box-and-whisker-outlier-width.png)
+
 ## Customization option
 
 The following chart series properties are used as customization options for Box and Whisker chart:
