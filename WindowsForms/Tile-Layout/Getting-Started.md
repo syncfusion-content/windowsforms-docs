@@ -3,238 +3,247 @@ layout: post
 title: Getting Started with Windows Forms TileLayout | Syncfusion®
 description: Learn how to get started with the Syncfusion® Windows Forms TileLayout control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
-control: TileLayout 
+control: TileLayout
 documentation: ug
 ---
 
-# Getting Started with Windows Forms TileLayout 
+# Getting Started with Windows Forms TileLayout
 
-This section describes how to add [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html) control in a Windows Forms application and overview of its basic functionalities.
+This section describes how to add the [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html) control to a Windows Forms application and provides an overview of its basic functionalities.
+
+* [Assembly deployment](#assembly-deployment)
+* [Adding TileLayout through the designer](#adding-tilelayout-through-the-designer)
+* [Adding TileLayout through code](#adding-tilelayout-through-code)
 
 ## Assembly deployment
 
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#tilelayout) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
- 
-Please find more details regarding how to install the nuget packages in windows form application in the below link:
- 
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#tilelayout) section for the list of assemblies or the NuGet package details that must be referenced to use the control in any application.
 
+Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install NuGet packages in a Windows Forms application.
 
-## Creating simple application with TileLayout
+You can also add the required assemblies as references from the Package Manager Console using the following PowerShell command:
 
-You can create the Windows Forms application with [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html) control as follows:
+```powershell
+Install-Package Syncfusion.Tools.Windows
+```
 
-1. [Creating project](#creating-the-project)
-2. [Adding control via designer](#adding-control-via-designer)
-3. [Adding control manually using code](#adding-control-manually-using-code)
+## Adding TileLayout through the designer
 
-### Creating the project
+1. Create a new **Windows Forms Application** project in Visual Studio.
 
-Create a new Windows Forms project in the Visual Studio to display the [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html) with functionalities.
+2. Drag the **TileLayout** control from the Toolbox onto the form. The following required assembly references will be added automatically:
 
-## Adding control via designer
+    * Syncfusion.Grid.Base.dll
+    * Syncfusion.Grid.Windows.dll
+    * Syncfusion.Shared.Base.dll
+    * Syncfusion.Shared.Windows.dll
+    * Syncfusion.Tools.Base.dll
+    * Syncfusion.Tools.Windows.dll
 
-The [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html) control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+    ![Search WindowsForms Tile Layout control in toolbox](getting-started_images/windowsforms-tile-layout-toolbox.png)
 
-* Syncfusion.Grid.Base.dll
-* Syncfusion.Grid.Windows.dll
-* Syncfusion.Shared.Base.dll
-* Syncfusion.Shared.Windows.dll
-* Syncfusion.Tools.Base.dll
-* Syncfusion.Tools.Windows.dll
+3. Add a [LayoutGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.LayoutGroup.html) through the **Groups Collection** in the Smart Tags of the [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html).
 
-![Search WindowsForms Tile Layout control in toolbox](getting-started_images/windowsforms-tile-layout-toolbox.png)
+    ![WindowsForms Tile Layout control added by designer](getting-started_images/windowsforms-tile-layout-added-by-designer.png)
 
-**Adding LayoutGroup into TileLayout**
+4. Add an [ImageStreamer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ImageStreamer.html) into the LayoutGroup through the [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.LayoutGroup.html#Syncfusion_Windows_Forms_Tools_LayoutGroup_Items) collection in the Properties window.
 
-[LayoutGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.LayoutGroup.html) can be added through `Groups Collection` in Smart Tags of [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html).
+    ![Adding images streamer in WindowsForms Tile Layout](getting-started_images/windowsforms-tile-layout-adding-image-streamer.png)
 
-![WindowsForms Tile Layout control added by designer](getting-started_images/windowsforms-tile-layout-added-by-designer.png)
+## Adding TileLayout through code
 
-**Adding ImageStreamer into LayoutGroup**
+Add the TileLayout control programmatically by following the steps below.
 
-[ImageStreamer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ImageStreamer.html) can be added into LayoutGroup through the [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.LayoutGroup.html#Syncfusion_Windows_Forms_Tools_LayoutGroup_Items) collection in PropertyGrid. 
+1. **Add required assembly references**
 
-![Adding images streamer in WindowsForms Tile Layout](getting-started_images/windowsforms-tile-layout-adding-image-streamer.png)
+    Add the following assemblies to the **References** folder through the Solution Explorer:
 
-## Adding control manually using code
+    * Syncfusion.Grid.Base.dll
+    * Syncfusion.Grid.Windows.dll
+    * Syncfusion.Shared.Base.dll
+    * Syncfusion.Shared.Windows.dll
+    * Syncfusion.Tools.Base.dll
+    * Syncfusion.Tools.Windows.dll
 
-To add control manually in C#, follow the given steps:
+    Then include the `Syncfusion.Windows.Forms.Tools` namespace in the code.
 
-**Step 1** - Add the following required assembly references to the project:
+    {% capture codesnippet_ns %}
+    {% tabs %}
+    {% highlight c# %}
 
-        * Syncfusion.Grid.Base.dll
-        * Syncfusion.Grid.Windows.dll
-        * Syncfusion.Shared.Base.dll
-        * Syncfusion.Shared.Windows.dll
-        * Syncfusion.Tools.Base.dll
-        * Syncfusion.Tools.Windows.dll
+    using Syncfusion.Windows.Forms.Tools;
+    using System.Windows.Forms;
+    using System.Drawing;
+    using System.ComponentModel;
 
-**Step 2** - Include the namespaces **Syncfusion.Windows.Forms.Tools**.
+    {% endhighlight %}
+    {% highlight vb %}
 
-{% capture codesnippet1 %}​
-{% tabs %}
+    Imports Syncfusion.Windows.Forms.Tools
+    Imports System.Windows.Forms
+    Imports System.Drawing
+    Imports System.ComponentModel
 
-{% highlight C# %}
+    {% endhighlight %}
+    {% endtabs %}
+    {% endcapture %}
+    {{ codesnippet_ns | OrderList_Indent_Level_1 }}
 
-using Syncfusion.Windows.Forms.Tools;
+2. **Create the TileLayout instance inside Form1**
 
-{% endhighlight  %}
+    Create the [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html) control instance inside the `Form1` constructor and add it to the form.
 
-{% highlight VB %}
+    {% capture codesnippet_instance %}
+    {% tabs %}
+    {% highlight c# %}
 
-Imports Syncfusion.Windows.Forms.Tools
+    public partial class Form1 : Form
+    {
+        private Syncfusion.Windows.Forms.Tools.TileLayout tileLayout1;
+        public Form1()
+        {
+            InitializeComponent();
+            this.tileLayout1 = new TileLayout();
+            this.Controls.Add(this.tileLayout1);
+        }
+    }
 
-{% endhighlight  %}
+    {% endhighlight %}
+    {% highlight vb %}
 
-{% endtabs %} 
-{% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
+    Public Partial Class Form1
+        Inherits System.Windows.Forms.Form
 
-**Step 3** - Create [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html) control instance and add it to the form.
+        Private tileLayout1 As Syncfusion.Windows.Forms.Tools.TileLayout
 
-{% capture codesnippet2 %}
-{% tabs %}
-
-{% highlight C# %}
-
-TileLayout tileLayout1 = new TileLayout();
-
-this.Controls.Add(tileLayout1);
-
-{% endhighlight %}
-
-{% highlight VB %}
-
-Dim tileLayout1 As TileLayout = New TileLayout()
-
-Me.Controls.Add(tileLayout1)
-
-{% endhighlight %}
-
-{% endtabs %}
-{% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
-
-**Adding LayoutGroup into TileLayout**
-
-Create an instance of [LayoutGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.LayoutGroup.html) and add it to [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html).
-
-{% tabs %}
-
-{% highlight C# %}
-
-// Create instance of TileLayout
-LayoutGroup layoutGroup1 = new LayoutGroup();
-LayoutGroup layoutGroup2 = new LayoutGroup();
-
-layoutGroup1.BackColor= ColorTranslator.FromHtml("#fa8c6f5");
-layoutGroup2.BackColor= ColorTranslator.FromHtml("#fa8c6f5");
-
-// Add it to TileL
-this.tileLayout1.Controls.Add(this.layoutGroup1);
-this.tileLayout1.Controls.Add(this.layoutGroup2);
-
-{% endhighlight %}
-
-{% highlight VB %}
-
-' Create instance of TileLayout
-Dim layoutGroup1 As New LayoutGroup()
-Dim layoutGroup2 As New LayoutGroup()
-
-layoutGroup1.BackColor= ColorTranslator.FromHtml("#fa8c6f5")
-layoutGroup2.BackColor= ColorTranslator.FromHtml("#fa8c6f5")
-
-' Add it to TileL
-Me.tileLayout1.Controls.Add(Me.layoutGroup1)
-Me.tileLayout1.Controls.Add(Me.layoutGroup2)
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Adding group by code in WindowsForms Tile Layout](getting-started_images/windowsforms-tile-layout-group-by-code.png)   
-
-
-**Adding ImageStreamer into LayoutGroup**
-
-Create instance of [ImageStreamer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ImageStreamer.html)  and add it the [LayoutGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.LayoutGroup.html).
-
-{% tabs %}
-
-{% highlight C# %}
-
-// Create instance of ImageStreamer
-
-ImageStreamer imageStreamer1 = new ImageStreamer;
-ImageStreamer imageStreamer2 = new ImageStreamer;
-ImageStreamer imageStreamer3 = new ImageStreamer;
-ImageStreamer imageStreamer4 = new ImageStreamer;
-ImageStreamer imageStreamer5 = new ImageStreamer;
-ImageStreamer imageStreamer6 = new ImageStreamer;
-ImageStreamer imageStreamer7 = new ImageStreamer;
-ImageStreamer imageStreamer8 = new ImageStreamer;
-
-// Add images to ImageStreamer
-this.imageStreamer1.Images.Add(((System.Drawing.Image)(resources.GetObject("imageStreamer1.Images"))));
-this.imageStreamer2.Images.Add(((System.Drawing.Image)(resources.GetObject("imageStreamer2.Images"))));
-this.imageStreamer3.Images.Add(((System.Drawing.Image)(resources.GetObject("imageStreamer3.Images"))));
-this.imageStreamer4.Images.Add(((System.Drawing.Image)(resources.GetObject("imageStreamer4.Images"))));
-this.imageStreamer5.Images.Add(((System.Drawing.Image)(resources.GetObject("imageStreamer5.Images"))));
-this.imageStreamer6.Images.Add(((System.Drawing.Image)(resources.GetObject("imageStreamer6.Images"))));
-this.imageStreamer7.Images.Add(((System.Drawing.Image)(resources.GetObject("imageStreamer7.Images"))));
-this.imageStreamer8.Images.Add(((System.Drawing.Image)(resources.GetObject("imageStreamer8.Images"))));
-
-// Add it to LayoutGroup
-this.layoutGroup1.Controls.Add(this.imageStreamer1);
-this.layoutGroup1.Controls.Add(this.imageStreamer2);
-this.layoutGroup1.Controls.Add(this.imageStreamer3);
-this.layoutGroup1.Controls.Add(this.imageStreamer);
-        
-this.layoutGroup2.Controls.Add(this.imageStreamer5);
-this.layoutGroup2.Controls.Add(this.imageStreamer6);
-this.layoutGroup2.Controls.Add(this.imageStreamer7);
-this.layoutGroup2.Controls.Add(this.imageStreamer8);
-
-{% endhighlight %}
-
-{% highlight VB %}
-
-' Create instance of ImageStreamer
-
-Dim imageStreamer1 As ImageStreamer = New ImageStreamer
-Dim imageStreamer2 As ImageStreamer = New ImageStreamer
-Dim imageStreamer3 As ImageStreamer = New ImageStreamer
-Dim imageStreamer4 As ImageStreamer = New ImageStreamer
-Dim imageStreamer5 As ImageStreamer = New ImageStreamer
-Dim imageStreamer6 As ImageStreamer = New ImageStreamer
-Dim imageStreamer7 As ImageStreamer = New ImageStreamer
-Dim imageStreamer8 As ImageStreamer = New ImageStreamer
-
-' Add images to ImageStreamer
-Me.imageStreamer1.Images.Add((CType(resources.GetObject("imageStreamer1.Images"), System.Drawing.Image)))
-Me.imageStreamer2.Images.Add((CType(resources.GetObject("imageStreamer2.Images"), System.Drawing.Image)))
-Me.imageStreamer3.Images.Add((CType(resources.GetObject("imageStreamer3.Images"), System.Drawing.Image)))
-Me.imageStreamer4.Images.Add((CType(resources.GetObject("imageStreamer4.Images"), System.Drawing.Image)))
-Me.imageStreamer5.Images.Add((CType(resources.GetObject("imageStreamer5.Images"), System.Drawing.Image)))
-Me.imageStreamer6.Images.Add((CType(resources.GetObject("imageStreamer6.Images"), System.Drawing.Image)))
-Me.imageStreamer7.Images.Add((CType(resources.GetObject("imageStreamer7.Images"), System.Drawing.Image)))
-Me.imageStreamer8.Images.Add((CType(resources.GetObject("imageStreamer8.Images"), System.Drawing.Image)))
-
-' Add it to LayoutGroup
-Me.layoutGroup1.Controls.Add(Me.imageStreamer1)
-Me.layoutGroup1.Controls.Add(Me.imageStreamer2)
-Me.layoutGroup1.Controls.Add(Me.imageStreamer3)
-Me.layoutGroup1.Controls.Add(Me.imageStreamer)
-
-Me.layoutGroup2.Controls.Add(Me.imageStreamer5)
-Me.layoutGroup2.Controls.Add(Me.imageStreamer6)
-Me.layoutGroup2.Controls.Add(Me.imageStreamer7)
-Me.layoutGroup2.Controls.Add(Me.imageStreamer8)
-
-{% endhighlight %}
-
-{% endtabs %}
-       
-![Adding images to Tile Layout Group in WindowsForms](getting-started_images/windowsforms-tile-layout-adding-images-to-group.png)       
+        Public Sub New()
+            InitializeComponent()
+            Me.tileLayout1 = New TileLayout()
+            Me.Controls.Add(Me.tileLayout1)
+        End Sub
+    End Class
+
+    {% endhighlight %}
+    {% endtabs %}
+    {% endcapture %}
+    {{ codesnippet_instance | OrderList_Indent_Level_1 }}
+
+3. **Create and add LayoutGroups**
+
+    Create instances of [LayoutGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.LayoutGroup.html) and add them to the TileLayout.
+
+    {% capture codesnippet_groups %}
+    {% tabs %}
+    {% highlight c# %}
+
+    // Create instance of LayoutGroup
+    LayoutGroup layoutGroup1 = new LayoutGroup();
+    LayoutGroup layoutGroup2 = new LayoutGroup();
+
+    layoutGroup1.BackColor = ColorTranslator.FromHtml("#f8c6f5");
+    layoutGroup2.BackColor = ColorTranslator.FromHtml("#f8c6f5");
+
+    // Add it to TileLayout
+    this.tileLayout1.Groups.Add(layoutGroup1);
+    this.tileLayout1.Groups.Add(layoutGroup2);
+
+    {% endhighlight %}
+    {% highlight vb %}
+
+    ' Create instance of LayoutGroup
+    Dim layoutGroup1 As New LayoutGroup()
+    Dim layoutGroup2 As New LayoutGroup()
+
+    layoutGroup1.BackColor = ColorTranslator.FromHtml("#f8c6f5")
+    layoutGroup2.BackColor = ColorTranslator.FromHtml("#f8c6f5")
+
+    ' Add it to TileLayout
+    Me.tileLayout1.Groups.Add(layoutGroup1)
+    Me.tileLayout1.Groups.Add(layoutGroup2)
+
+    {% endhighlight %}
+    {% endtabs %}
+    {% endcapture %}
+    {{ codesnippet_groups | OrderList_Indent_Level_1 }}
+
+    ![Adding group by code in WindowsForms Tile Layout](Getting-Started_images/windowsforms-tile-layout-group-by-code.png)
+
+4. **Add ImageStreamers to the LayoutGroups**
+
+    Create instances of [ImageStreamer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ImageStreamer.html) and add them to the [LayoutGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.LayoutGroup.html) through the `Items` collection.
+
+    {% capture codesnippet_streamers %}
+    {% tabs %}
+    {% highlight c# %}
+
+    // Create instance of ImageStreamer (declared as fields in Form1)
+    ImageStreamer imageStreamer1 = new ImageStreamer();
+    ImageStreamer imageStreamer2 = new ImageStreamer();
+    ImageStreamer imageStreamer3 = new ImageStreamer();
+    ImageStreamer imageStreamer4 = new ImageStreamer();
+    ImageStreamer imageStreamer5 = new ImageStreamer();
+    ImageStreamer imageStreamer6 = new ImageStreamer();
+    ImageStreamer imageStreamer7 = new ImageStreamer();
+    ImageStreamer imageStreamer8 = new ImageStreamer();
+
+    // Add images to ImageStreamer
+    this.imageStreamer1.Images.Add(((System.Drawing.Image)(resources.GetObject("imageStreamer1.Images"))));
+    this.imageStreamer2.Images.Add(((System.Drawing.Image)(resources.GetObject("imageStreamer2.Images"))));
+    this.imageStreamer3.Images.Add(((System.Drawing.Image)(resources.GetObject("imageStreamer3.Images"))));
+    this.imageStreamer4.Images.Add(((System.Drawing.Image)(resources.GetObject("imageStreamer4.Images"))));
+    this.imageStreamer5.Images.Add(((System.Drawing.Image)(resources.GetObject("imageStreamer5.Images"))));
+    this.imageStreamer6.Images.Add(((System.Drawing.Image)(resources.GetObject("imageStreamer6.Images"))));
+    this.imageStreamer7.Images.Add(((System.Drawing.Image)(resources.GetObject("imageStreamer7.Images"))));
+    this.imageStreamer8.Images.Add(((System.Drawing.Image)(resources.GetObject("imageStreamer8.Images"))));
+
+    // Add it to LayoutGroup
+    this.layoutGroup1.Items.Add(this.imageStreamer1);
+    this.layoutGroup1.Items.Add(this.imageStreamer2);
+    this.layoutGroup1.Items.Add(this.imageStreamer3);
+    this.layoutGroup1.Items.Add(this.imageStreamer4);
+
+    this.layoutGroup2.Items.Add(this.imageStreamer5);
+    this.layoutGroup2.Items.Add(this.imageStreamer6);
+    this.layoutGroup2.Items.Add(this.imageStreamer7);
+    this.layoutGroup2.Items.Add(this.imageStreamer8);
+
+    {% endhighlight %}
+    {% highlight vb %}
+
+    ' Create instance of ImageStreamer
+    Dim imageStreamer1 As New ImageStreamer()
+    Dim imageStreamer2 As New ImageStreamer()
+    Dim imageStreamer3 As New ImageStreamer()
+    Dim imageStreamer4 As New ImageStreamer()
+    Dim imageStreamer5 As New ImageStreamer()
+    Dim imageStreamer6 As New ImageStreamer()
+    Dim imageStreamer7 As New ImageStreamer()
+    Dim imageStreamer8 As New ImageStreamer()
+
+    ' Add images to ImageStreamer
+    Me.imageStreamer1.Images.Add(CType(resources.GetObject("imageStreamer1.Images"), System.Drawing.Image))
+    Me.imageStreamer2.Images.Add(CType(resources.GetObject("imageStreamer2.Images"), System.Drawing.Image))
+    Me.imageStreamer3.Images.Add(CType(resources.GetObject("imageStreamer3.Images"), System.Drawing.Image))
+    Me.imageStreamer4.Images.Add(CType(resources.GetObject("imageStreamer4.Images"), System.Drawing.Image))
+    Me.imageStreamer5.Images.Add(CType(resources.GetObject("imageStreamer5.Images"), System.Drawing.Image))
+    Me.imageStreamer6.Images.Add(CType(resources.GetObject("imageStreamer6.Images"), System.Drawing.Image))
+    Me.imageStreamer7.Images.Add(CType(resources.GetObject("imageStreamer7.Images"), System.Drawing.Image))
+    Me.imageStreamer8.Images.Add(CType(resources.GetObject("imageStreamer8.Images"), System.Drawing.Image))
+
+    ' Add it to LayoutGroup
+    Me.layoutGroup1.Items.Add(Me.imageStreamer1)
+    Me.layoutGroup1.Items.Add(Me.imageStreamer2)
+    Me.layoutGroup1.Items.Add(Me.imageStreamer3)
+    Me.layoutGroup1.Items.Add(Me.imageStreamer4)
+
+    Me.layoutGroup2.Items.Add(Me.imageStreamer5)
+    Me.layoutGroup2.Items.Add(Me.imageStreamer6)
+    Me.layoutGroup2.Items.Add(Me.imageStreamer7)
+    Me.layoutGroup2.Items.Add(Me.imageStreamer8)
+
+    {% endhighlight %}
+    {% endtabs %}
+    {% endcapture %}
+    {{ codesnippet_streamers | OrderList_Indent_Level_1 }}
+
+    ![Adding images to Tile Layout Group in WindowsForms](Getting-Started_images/windowsforms-tile-layout-adding-images-to-group.png)
