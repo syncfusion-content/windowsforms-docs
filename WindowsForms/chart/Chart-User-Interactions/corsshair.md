@@ -17,24 +17,35 @@ The [Crosshair](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.F
 
 The [Visible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartCrosshair.html#Syncfusion_Windows_Forms_Chart_ChartCrosshair_Visible) property controls whether the Crosshair is displayed in the chart.
 
+N> To display the Crosshair tooltip, set the [ShowCrosshairTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_ShowCrosshairTooltip) property to `true`.
+
+The following code example demonstrates how to enable the Crosshair and display tooltips on the primary X and Y axes.
+
 {% tabs %}
 {% highlight c# %}
+// Enables the Crosshair.
 chartControl.Crosshair.Visible = true;
-{% endhighlight %}
+
+// Displays the Crosshair tooltips on the axes.
+chartControl.PrimaryXAxis.ShowCrosshairTooltip = true;
+chartControl.PrimaryYAxis.ShowCrosshairTooltip = true;{% endhighlight %}
 {% highlight vb %}
+' Enables the Crosshair.
 chartControl.Crosshair.Visible = True
+
+' Displays the Crosshair tooltips on the axes.
+chartControl.PrimaryXAxis.ShowCrosshairTooltip = True
+chartControl.PrimaryYAxis.ShowCrosshairTooltip = True
 {% endhighlight %}
 {% endtabs %}
 
-Move the mouse pointer across the chart area to display the Crosshair lines and the corresponding axis values.
-
-![Crosshair](../Chart-User-Interactions-Images/crosshair.jpg)
+![Crosshair Visible in Windows Forms Chart](../Chart-User-Interactions-Images/crosshair-visible.png)
 
 ## Crosshair line
 
-The [Line](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartCrosshair.html#Syncfusion_Windows_Forms_Chart_ChartCrosshair_Line) property controls the appearance of the Crosshair lines.
+The [Line](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartCrosshair.html#Syncfusion_Windows_Forms_Chart_ChartCrosshair_Line) property provides options to customize the appearance of the Crosshair lines. The default value is a new instance of the [ChartLineInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLineInfo.html) class.
 
-The line color and width can be customized.
+The following code example demonstrates how to customize the color and width of the Crosshair lines.
 
 {% tabs %}
 {% highlight c# %}
@@ -51,49 +62,35 @@ chartControl.Crosshair.Line.Width = 2
 
 ## Axis tooltip
 
-The [AxisTooltip]https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartCrosshair.html#Syncfusion_Windows_Forms_Chart_ChartCrosshair_AxisTooltip property provides options to customize the tooltips displayed on the chart axes at the current Crosshair position.
+The [AxisTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartCrosshair.html#Syncfusion_Windows_Forms_Chart_ChartCrosshair_AxisTooltip) property provides options to customize the tooltips displayed on the chart axes at the current Crosshair position. The default value is a new instance of the [TrackballTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.TrackballTooltip.html) class.
 
-### Tooltip appearance
+N> Create a [ChartLineInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLineInfo.html) instance for the `Border` property before customizing it to avoid a null-reference exception.
 
-The tooltip background, text color, border, and corner radius can be customized.
-
-{% tabs %}
-{% highlight c# %}
-chartControl.Crosshair.AxisTooltip.Interior =
-    new BrushInfo(Color.White);
-chartControl.Crosshair.AxisTooltip.TextColor = Color.Black;
-chartControl.Crosshair.AxisTooltip.CornerRadius = 3;
-chartControl.Crosshair.AxisTooltip.Border.Color = Color.Gray;
-chartControl.Crosshair.AxisTooltip.Border.Width = 1;
-{% endhighlight %}
-{% highlight vb %}
-chartControl.Crosshair.AxisTooltip.Interior =
-    New BrushInfo(Color.White)
-chartControl.Crosshair.AxisTooltip.TextColor = Color.Black
-chartControl.Crosshair.AxisTooltip.CornerRadius = 3
-chartControl.Crosshair.AxisTooltip.Border.Color = Color.Gray
-chartControl.Crosshair.AxisTooltip.Border.Width = 1
-{% endhighlight %}
-{% endtabs %}
-
-### Tooltip format
-
-The `XValueFormat` and `YValueFormat` properties specify how the X-axis and Y-axis values are displayed in the Crosshair tooltips.
+The following code example demonstrates how to configure the Crosshair axis tooltip.
 
 {% tabs %}
 {% highlight c# %}
-chartControl.Crosshair.AxisTooltip.XValueFormat = "MMM, yyyy";
-chartControl.Crosshair.AxisTooltip.YValueFormat = "n0";
+chartControl.Crosshair.AxisTooltip.Border = new ChartLineInfo();
+chartControl.Crosshair.AxisTooltip.Border.Color = Color.Green;
+chartControl.Crosshair.AxisTooltip.Border.Width = 3;
+chartControl.Crosshair.AxisTooltip.Interior = new BrushInfo(Color.Red);
+
+chartControl.Crosshair.AxisTooltip.TextColor = Color.White;
+
 {% endhighlight %}
 {% highlight vb %}
-chartControl.Crosshair.AxisTooltip.XValueFormat = "MMM, yyyy"
-chartControl.Crosshair.AxisTooltip.YValueFormat = "n0"
+
+chartControl.Crosshair.AxisTooltip.Border = New ChartLineInfo()
+chartControl.Crosshair.AxisTooltip.Border.Color = Color.Green
+chartControl.Crosshair.AxisTooltip.Border.Width = 
+chartControl.Crosshair.AxisTooltip.Interior = New BrushInfo(Color.Red)
+chartControl.Crosshair.AxisTooltip.TextColor = Color.White
+
 {% endhighlight %}
+
 {% endtabs %}
 
-![Chart after zooming](../Chart-User-Interactions-Images/trackball_axistooltip.png)
-
-N> Date-and-time formats such as `MMM, yyyy` are applicable when the corresponding axis contains `DateTime` values.
+![Line customization](../Chart-User-Interactions-Images/crosshair-axis-tooltip.png)
 
 ## Crosshair event
 
