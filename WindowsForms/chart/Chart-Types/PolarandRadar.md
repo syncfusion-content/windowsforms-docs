@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Polar And Radar Charts in Windows Forms Chart control | Syncfusion
-description: Learn here all about the Polar and Radar chart type in Syncfusion Essential Studio® Windows Forms Chart control and more details.
+title: Polar And Radar Charts in Windows Forms Charts control | Syncfusion
+description: Radar and polar types in the Windows Forms Chart display multivariable data in a circular layout, enabling comparison of patterns and trends.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Polar and radar charts in windows forms chart
+# Polar and Radar in windows forms charts
 
 Polar and Radar charts are used to display values and angles in a graphical format, making it easy to compare data across multiple categories.
 
 You can also customize the following features for Polar and Radar charts:
 
 * **Inversed Polar and Radar Charts**: Polar and Radar charts can be rendered in the clockwise direction using the [Inversed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_Inversed) property in [ChartAxis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html).
-* **Line Style Customization**: The solid circular lines of Polar and Radar charts can be customized using the pen properties of the primary X and Y axes.
+* **Line Style Customization**: The solid circular lines of Polar and Radar charts can be customized using the [Pens](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_Pens) properties of the primary X and Y axes.
 
 ## Polar chart
 Polar Chart displays data using values and angles in a circular coordinate system. The X-values determine the angles of the data points, while the Y-values determine their distance from the center of the chart.
@@ -22,10 +22,7 @@ Polar Chart displays data using values and angles in a circular coordinate syste
 It is useful for visually comparing several quantitative or qualitative aspects of a situation and for comparing multiple data sets using the same axes.
 
 N>
-Chart Details
-* Number of Y values per point - 1.
-* Number of Series - One.
-* Cannot be combined with - Any other chart types.
+It cannot be combined with any other chart types.
 
 The following code example demonstrates how to create a Polar Chart.
 
@@ -141,10 +138,7 @@ Radar Chart displays data using radial axes that extend from a central point. Ea
 It is useful for comparing multiple data series, analyzing performance against ideal values, and visualizing data with a natural cyclic order, such as seasons or time periods.
 
 N>
-Chart Details
-* Number of Y values per point - 1.
-* Number of Series - One.
-* Cannot be combined with - Any other chart types.
+It cannot be combined with Any other chart types.
 
 The following code example demonstrates how to create a Radar Chart.
 
@@ -297,9 +291,9 @@ End Sub
 
 ### Type
 
-The [Type](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartRadarConfigItem_Type) property specifies the type of Radar chart to be rendered, with `Area` used as the default value.
+The [Type](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartRadarConfigItem_Type) property specifies the type of Radar chart to be rendered, with [Area](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarDrawType.html#Syncfusion_Windows_Forms_Chart_ChartRadarDrawType_Area) used as the default value.
 
-The **Type** property supports the following values:
+This property supports the following values:
 
 - [Area](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarDrawType.html#Syncfusion_Windows_Forms_Chart_ChartRadarDrawType_Area): Renders the Radar chart as a filled area.
 - [Line](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarDrawType.html#Syncfusion_Windows_Forms_Chart_ChartRadarDrawType_Line): Renders the Radar chart using connected lines only.
@@ -325,19 +319,17 @@ The [RadarStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.
 
 The supported Radar styles are:
 
-- [Polygon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarAxisStyle.html#Syncfusion_Windows_Forms_Chart_ChartRadarAxisStyle_Polygon): Renders the Radar chart with polygonal grid lines, where each grid level is displayed as a multi-sided polygon. This is the default value.
+- [Polygon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarAxisStyle.html#Syncfusion_Windows_Forms_Chart_ChartRadarAxisStyle_Polygon): Renders the Radar chart with polygonal grid lines, where each grid level is displayed as a multi-sided polygon.
 - [Circle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarAxisStyle.html#Syncfusion_Windows_Forms_Chart_ChartRadarAxisStyle_Circle): Renders the Radar chart with circular grid lines, giving the chart a smoother and more rounded appearance.
 
 The following code sets the Radar chart axis style to `Circle`.
 
 {% tabs %}
 {% highlight c# %}
-chartControl.RadarStyle =
-    ChartRadarAxisStyle.Circle;
+chartControl.RadarStyle = ChartRadarAxisStyle.Circle;
 {% endhighlight %}
 {% highlight vb %}
-chartControl.RadarStyle =
-    ChartRadarAxisStyle.Circle
+chartControl.RadarStyle = ChartRadarAxisStyle.Circle
 {% endhighlight %}
 {% endtabs %}
 

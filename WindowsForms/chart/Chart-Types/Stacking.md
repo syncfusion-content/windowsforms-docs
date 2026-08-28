@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Stacking Chart in Windows Forms Chart control | Syncfusion
-description: Stacked chart in the Windows Forms Chart display cumulative values across categories, enabling comparison of individual and total contributions.
+description: Stacked types in the Windows Forms Chart display cumulative values across categories, enabling comparison of individual and total contributions.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Stacking charts in windows forms chart
+# Stacking charts in Windows Forms Charts
 
 Stacking charts are similar to regular charts except that the y values stack on top of each other in the specified series order. Stacking charts help visualize data that is a sum of parts, each of which is in a series.
 
@@ -22,13 +22,10 @@ There are different types of stacking charts:
 
 ## Stacking column chart
 
-Stacking Column chart are similar to regular column charts, except that the Y values are stacked on top of each other in the order of the series. This helps visualize how each part contributes to the whole. The following code shows how to define a stacking column chart in ChartControl.
+Stacking Column chart are similar to regular column charts, except that the Y values are stacked on top of each other in the order of the series. This helps visualize how each part contributes to the whole.
 
 N>
-Chart details for stacking column chart.
-* Number of Y values per point - 1.
-* Number of Series - Two or More (A single series will render just like a bar chart).
-* Cannot be combined with - Pie, Bar, Stacked Bar, Polar, Radar.
+It cannot be combined with Pie, Bar, Stacked Bar, Polar, Radar.
 
 The following code example demonstrates how to create a Stacking Column Chart.
 
@@ -122,11 +119,7 @@ The following chart series properties are used as customization options for Stac
 This chart type presents multiple series as stacked columns so that the total proportion of all stacked elements sums to 100%. As a result, the y-axis is always displayed from 0 to 100. The following code shows how to define a stacking column100 chart in ChartControl.
 
 N>
-Chart details for stacking column100 chart.
-* Number of Y values per point - 1.
-* Number of Series - Two or More.
-* SupportMarker - No.
-* Cannot be combined with - Doughnut, Pie, Bar, Stacked Bar charts, Polar, Radar, Pyramid, or Funnel.
+It cannot be combined with Doughnut, Pie, Bar, Stacked Bar charts, Polar, Radar, Pyramid, or Funnel.
 
 The following code example demonstrates how to create a Stacking Column 100 Chart.
 
@@ -219,17 +212,8 @@ The following chart series properties are used as customization options for Stac
 
 Stacking bar chart are similar to regular bar chart, but the Y values are stacked on top of each other in the specified series order. This helps visualize the relationship of parts to a whole. The following code shows how to define a stacking bar chart in ChartControl.
 
-You can also customize the following features for stacking bar chart:
-
-* **Series Color Settings**: Background and foreground colors for area charts are customized through the [Interior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStyleInfo.html#Syncfusion_Windows_Forms_Chart_ChartStyleInfo_Interior) property of the [ChartStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStyleInfo.html) class.
-* **Chart 3-D Mode**: A chart is rendered in 3-D mode by enabling the [Series3D](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Series3D) property.
-* **Border Settings**: Border color and width of an area chart can be changed through the [Color](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLineInfo.html#Syncfusion_Windows_Forms_Chart_ChartLineInfo_Color) and [Width](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLineInfo.html#Syncfusion_Windows_Forms_Chart_ChartLineInfo_Width) properties.
-
 N>
-Chart details for stacking bar chart.
-* Number of Y values per point - 1.
-* Number of Series - Two or More (Single series is rendered just as a bar).
-* Cannot be Combined with - Any chart type except Bar and Stacked Bar charts.
+It cannot be combined with Any chart type except Bar and Stacked Bar charts.
 
 The following code example demonstrates how to create a Stacking Bar Chart.
 
@@ -317,14 +301,9 @@ The following chart series properties are used as customization options for Stac
 
 ## Stacking bar100 chart
 
-This chart type displays multiple series of data as stacked Bars ensuring that the cumulative proportion of each stacked element always totals 100%. The y-axis will hence always be rendered with the range 0 - 100. The following code shows how to define a stacking bar100 chart in ChartControl.
-
+This chart type displays multiple series of data as stacked Bars ensuring that the cumulative proportion of each stacked element always totals 100%. The y-axis will hence always be rendered with the range 0 - 100. 
 N>
-Chart details for stacking bar100 chart.
-* Number of Y values per point - 1.
-* Number of Series - Two or More.
-* MarkerSupport - No.
-* Cannot be combined with - Any other chart types.
+It cannot be combined with any other chart types.
 
 The following code example demonstrates how to create a Stacking Bar 100 Chart.
 
@@ -414,17 +393,8 @@ The following chart series properties are used as customization options for Stac
 
 Stacking Area Chart are similar to standard area charts, but the Y-values of each series are stacked on top of one another in a specified order. This makes it easier to visualize the relationship between individual parts and the total sum.
 
-You can also customize the following features for stacking area chart:
-
-* **Series Color Settings**: Background and foreground colors for area charts are customized through the [Interior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStyleInfo.html#Syncfusion_Windows_Forms_Chart_ChartStyleInfo_Interior) property of the [ChartStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStyleInfo.html) class.
-* **Chart 3-D Mode**: A chart is rendered in 3-D mode by enabling the [Series3D](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Series3D) property.
-* **Border Settings**: Border color and width of an area chart can be changed through the [Color](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLineInfo.html#Syncfusion_Windows_Forms_Chart_ChartLineInfo_Color) and [Width](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLineInfo.html#Syncfusion_Windows_Forms_Chart_ChartLineInfo_Width) properties.
-
 N>
-Chart details for stacking area chart.
-* Number of Y values per point - 1.
-* Number of Series - One or More.
-* Cannot be combined with - Pie, Bar, Polar, Radar, Stacked Bar.
+It cannot be combined with Pie, Bar, Polar, Radar, Stacked Bar.
 
 The following code example demonstrates how to create a Stacking Area Chart.
 
@@ -510,11 +480,7 @@ The following chart series properties are used as customization options for Stac
 This chart type displays multiple data series as stacked areas, ensuring the cumulative proportion of each element always totals 100%. Consequently, the y-axis is always rendered within the 0 to 100 range.
 
 N>
-Chart details for stacking area100 chart.
-* Number of Y values per point - 1.
-* Number of Series - One.
-* SupportMarker - No.
-* Cannot be Combined with - Any other chart types.
+It cannot be combined with Any other chart types.
 
 The following code example demonstrates how to create a Stacking Area100 Chart.
 
