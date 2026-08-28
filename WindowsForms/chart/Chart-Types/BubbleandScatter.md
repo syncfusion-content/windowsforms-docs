@@ -78,7 +78,7 @@ chartControl.Series.Add(series2)
 
 ![Bubble Chart in Windows Forms](../Chart-Types_images/windowsforms-bubble-chart.png)
 
-### Minbounds and maxbounds
+### Min bounds and max bounds
 
 The size of the bubbles depends on MinBounds and MaxBounds of the bubbleItem in series. By default, the minBounds is (20, 20) and MaxBounds is (50, 50), so the width and height of the bubbles lie between 20 and 50.
 

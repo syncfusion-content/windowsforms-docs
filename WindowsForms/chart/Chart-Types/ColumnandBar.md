@@ -7,6 +7,8 @@ control: Chart
 documentation: ug
 ---
 
+# Column and Bar in Windows Forms Charts
+
 ## Column chart
 
 A chart that uses vertical bars (columns) to compare values across different categories or to show changes in data over time. It is useful for comparing counts, totals, averages, or frequencies between groups. The following code shows how to define a column chart in ChartControl.
