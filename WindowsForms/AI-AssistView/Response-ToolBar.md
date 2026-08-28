@@ -44,7 +44,7 @@ sfAIAssistView1.IsResponseToolBarVisible = true;
 {% endhighlight %}
 
 {% endtabs %}
-![WindowsForms AI AssistView control Response Toolbar](aiassistview_images/windowsforms_aiassistview_responsetoolbar.png)
+![Windows Forms AI AssistView control Response Toolbar](aiassistview_images/windowsforms_aiassistview_responsetoolbar.png)
 
 
 ## Response Toolbar Items

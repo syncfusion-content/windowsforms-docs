@@ -92,7 +92,7 @@ public partial class Form1 : Form
 
 {% endtabs %}
 
-![WindowsForms AI AssistView Control Customized BannerView](aiassistview_images/windowsforms_aiassistview_customize_bannerview.png)
+![Windows Forms AI AssistView Control Customized BannerView](aiassistview_images/windowsforms_aiassistview_customize_bannerview.png)
 
 ## Creating a Custom BotView
 
@@ -211,7 +211,7 @@ public partial class Form1 : Form
 
 {% endtabs %}
 
-![WindowsForms AI AssistView Control Custom BotView](aiassistview_images/windowsforms_aiassistview_custom_botview.png)
+![Windows Forms AI AssistView Control Custom BotView](aiassistview_images/windowsforms_aiassistview_custom_botview.png)
 
 ## Creating a Custom UserView
 
@@ -268,6 +268,6 @@ public partial class Form1 : Form
 
 {% endtabs %}
 
-![WindowsForms AI AssistView Control Custom UserView](aiassistview_images/windowsforms_aiassistview_custom_userview.png)
+![Windows Forms AI AssistView Control Custom UserView](aiassistview_images/windowsforms_aiassistview_custom_userview.png)
 
-![WindowsForms AI AssistView control Customization](aiassistview_images/windowsforms_aiassistview_customization.gif)
+![Windows Forms AI AssistView control Customization](aiassistview_images/windowsforms_aiassistview_customization.gif)

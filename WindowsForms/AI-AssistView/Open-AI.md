@@ -218,9 +218,9 @@ public partial class Form1 : Form
 
 {% endtabs %}
 
-![WindowsForms AI AssistView control open ai](aiassistview_images/windowsforms_aiassistview_openai.gif)
+![Windows Forms AI AssistView control open ai](aiassistview_images/windowsforms_aiassistview_openai.gif)
 
-N> You can also explore our [WinForms AIAssistView example demos](https://github.com/syncfusion/winforms-demos/tree/master/assistview).
+N> You can also explore our [Windows Forms AI AssistView example demos](https://github.com/syncfusion/winforms-demos/tree/master/assistview).
 
 ## Troubleshooting
 

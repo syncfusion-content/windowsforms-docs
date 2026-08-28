@@ -42,7 +42,7 @@ sfAIAssistView1.EnableStopResponding = true;
 
 {% endtabs %}
 
-![WindowsForms AI AssistView control StopResponding](aiassistview_images/windowsforms_aiassistview_stopresponding.png)
+![Windows Forms AI AssistView control StopResponding](aiassistview_images/windowsforms_aiassistview_stopresponding.png)
 
 The button is displayed when `EnableStopResponding` is set to `true`.
 
@@ -115,7 +115,7 @@ private async void Chats_CollectionChanged(object sender, NotifyCollectionChange
 
 {% endtabs %}
 
-![WindowsForms AI AssistView control Cancel StopResponding](aiassistview_images/windowsforms_aiassistview_canceling.png)
+![Windows Forms AI AssistView control Cancel StopResponding](aiassistview_images/windowsforms_aiassistview_canceling.png)
 
 ## Customization
 
@@ -144,7 +144,7 @@ sfAIAssistView1.StopRespondingHoldSeconds = 2;
 
 {% endtabs %}
 
-![WindowsForms AI AssistView control StopRespondingButtonText](aiassistview_images/windowsforms_aiassistview_stoprespondingtext.png)
+![Windows Forms AI AssistView control StopRespondingButtonText](aiassistview_images/windowsforms_aiassistview_stoprespondingtext.png)
 
 ## Troubleshooting
 

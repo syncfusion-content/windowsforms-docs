@@ -17,18 +17,18 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 **Supported target frameworks:** .NET Framework 4.5.2 and above, or .NET 6.0/7.0/8.0.
 
-## Creating Application with SfAIAssistView
+## Creating Application with Windows Forms AI AssistView
 
-In this walkthrough, users will create a WinForms application that contains the SfAIAssistView control.
+In this walkthrough, users will create a WinForms application that contains the AI AssistView control.
 
 ### Creating the Project
 
-Create a new Windows Forms Project in Visual Studio to display SfAIAssistView.
+Create a new Windows Forms Project in Visual Studio to display AI AssistView.
 
 ### Adding Control via Designer
 
 Windows Forms AI AssistView (SfAIAssistView) control can be added to the application by dragging it from Toolbox and dropping it in Designer. The required assembly references will be added automatically.
-![WindowsForms AI AssistView is dragged from toolbox](aiassistview_images/windowsforms-aiassistview-dragged-from-toolbox.png)
+![Windows Forms AI AssistView is dragged from toolbox](aiassistview_images/windowsforms-aiassistview-dragged-from-toolbox.png)
 
 ### Adding Control in Code
 
@@ -36,7 +36,7 @@ In order to add the control manually, do the following steps,
 
 1. Add the required [assembly references](https://help.syncfusion.com/windowsforms/control-dependencies#sfaiassistview) to the project.
 
-2. Create the SfAIAssistView control instance and add it to the Form.
+2. Create the AI AssistView control instance and add it to the Form.
 
 {% tabs %}
 
@@ -165,4 +165,4 @@ public partial class Form1 : Form
 
 {% endtabs %}
 
-![WindowsForms AI AssistView control getting started](aiassistview_images/windowsforms_aiassistview_gettingstarted.png)
+![Windows Forms AI AssistView control getting started](aiassistview_images/windowsforms_aiassistview_gettingstarted.png)
