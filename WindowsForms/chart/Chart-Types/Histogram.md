@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Histogram Chart in Windows Forms Chart control | Syncfusion
-description: Histogram in the Windows Forms Chart displays the frequency distribution of data, helping analyze data patterns and value ranges effectively.
+title: Histogram Chart in Windows Forms Charts control | Syncfusion
+description: Histogram type in the Windows Forms Chart displays the frequency distribution of data, helping analyze data patterns and value ranges effectively.
 platform: windowsforms
 control: Chart
 documentation: ug
@@ -11,15 +11,7 @@ documentation: ug
 
 A Histogram chart displays the frequency distribution of data by grouping values into continuous intervals and representing them with adjacent bars. It helps analyze the shape, spread, and patterns of a dataset, making trends and variations easier to understand.
 
-The following feature is supported in the Histogram chart:
-
-* **Chart 3-D Mode**: A histogram chart can be rendered in 3-D mode by enabling the [Series3D](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Series3D) property.
-
-N>
-Chart details for histogram chart.
-* Number of Y values per point - 1.
-* Number of Series - One or more.
-* Cannot be combined with - Pie, Bar, Polar, Radar.
+N> It cannot be combined with Pie, Bar, Polar, Radar.
 
 The following code example demonstrates how to create a Histogram Chart.
 
@@ -188,7 +180,7 @@ chartControl.Series(0).ConfigItems.HistogramItem.ShowNormalDistribution =
 {% endhighlight %}
 {% endtabs %}
 
-![Histogram Show Number Distribution in Windows Forms](../Chart-Types_images/windowsforms-histogram-normal-distribution.png)
+![Histogram Show Normal Distribution in Windows Forms](../Chart-Types_images/windowsforms-histogram-normal-distribution.png)
 
 ### Show data points
 

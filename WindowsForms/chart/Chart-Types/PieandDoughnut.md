@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Pie and Doughnut Chart in Windows Forms Chart control | Syncfusion
-description: Pie and doughnut in the Windows Forms Chart display proportional data as segments, enabling comparison of parts within a whole.
+title: Pie and Doughnut Chart in Windows Forms Charts | Syncfusion
+description: Pie and doughnut types in the Windows Forms Chart display proportional data as segments, enabling comparison of parts within a whole.
 platform: windowsforms
 control: Chart
 documentation: ug
@@ -17,17 +17,12 @@ The X-values represent categories, while the Y-values determine the size of the 
 
 You can also customize the following features for pie chart:
 
-* **Chart 3-D Mode**: A pie or doughnut chart can be rendered in 3-D mode by enabling the [Series3D](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Series3D) property.
-* **Optimize Pie Point Positions**: Small pie slices can be arranged more effectively for better readability using the [OptimizePiePointPositions](https://help.syncfusion.com/windowsforms/chart/chart-series#optimizepiepointpositions) property.
-* **Show Ticks**: Connector lines between slices and labels can be displayed using the [ShowTicks](https://help.syncfusion.com/windowsforms/chart/chart-series#showticks) property.
-* **Explode Slices**: Pie and doughnut slices can be separated from the chart to emphasize specific data points using the [ExplodedAll](https://help.syncfusion.com/windowsforms/chart/chart-series#explodedall), [ExplodedIndex](https://help.syncfusion.com/windowsforms/chart/chart-series#explodedindex), and [ExplosionOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#explosionoffset) properties.
-* **Chart Rotation**: The starting angle of a pie or doughnut chart can be adjusted using the [AngleOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#angleoffset) property.
+* **Optimize Pie Point Positions**: Small pie slices can be arranged more effectively for better readability using the [OptimizePiePointPositions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_OptimizePiePointPositions) property.
+* **Show Ticks**: Connector lines between slices and labels can be displayed using the [ShowTicks](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ShowTicks) property.
+* **Explode Slices**: Pie and doughnut slices can be separated from the chart to emphasize specific data points using the [ExplodedAll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ExplodedAll), [ExplodedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ExplodedIndex), and [ExplosionOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ExplosionOffset) properties.
 
 N>
-Chart Details
-* Number of Y values per point - 1.
-* Number of Series - One.
-* Cannot be combined with - Any other chart types.
+It cannot be combined with any other chart types.
 
 The following code example demonstrates how to create a Pie Chart.
 
@@ -108,7 +103,7 @@ chartControl.Legend.Visible = False
 
 ### Pie type
 
-The [PieType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieType) property specifies the painting style used to render a Pie chart, with **None** used as the default value.
+The [PieType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieType) property specifies the painting style used to render a Pie chart, with [None](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieType.html#Syncfusion_Windows_Forms_Chart_ChartPieType_None) used as the default value.
 
 The available painting styles are:
 
@@ -155,12 +150,12 @@ chartControl.Series(0).ConfigItems.PieItem.AngleOffset =
 
 ### Fill mode
 
-The [FillMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_FillMode) property specifies how gradient colors are applied to the Pie chart, with **AllPie** used by default to apply one continuous gradient across the complete chart.
+The [FillMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_FillMode) property specifies how gradient colors are applied to the Pie chart, with [AllPie](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieFillMode.html#Syncfusion_Windows_Forms_Chart_ChartPieFillMode_AllPie) used by default to apply one continuous gradient across the complete chart.
 
 The available fill modes are:
 
-- **AllPie**: Applies the gradient colors across the complete Pie chart as a single shape.
-- **EveryPie**: Applies the gradient colors separately to each Pie segment.
+- [AllPie](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieFillMode.html#Syncfusion_Windows_Forms_Chart_ChartPieFillMode_AllPie): Applies the gradient colors across the complete Pie chart as a single shape.
+- [EveryPie](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieFillMode.html#Syncfusion_Windows_Forms_Chart_ChartPieFillMode_EveryPie): Applies the gradient colors separately to each Pie segment.
 
 The following code defines a custom gradient using the `Gradient` property. Set `PieType` to `Custom` to apply the gradient, and set `FillMode` to `EveryPie` to restart the complete gradient separately within each Pie segment.
 
@@ -182,7 +177,7 @@ gradient.Positions = new float[]
 0.5f,
 1.0f
 }
-            ;
+;
 
 series.ConfigItems.PieItem.Gradient = gradient;
 series.ConfigItems.PieItem.FillMode = ChartPieFillMode.EveryPie;
@@ -221,7 +216,7 @@ The [Gradient](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Fo
 
 ### Height by area depth
 
-The [HeightByAreaDepth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_HeightByAreaDepth) property controls whether the height of a 3D Pie chart is determined by the chart area's `Depth` property. By default, this property is set to `false`, and the Pie chart height is determined using the [HeightCoefficient](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_HeightCoeficient) property.
+The [HeightByAreaDepth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_HeightByAreaDepth) property controls whether the height of a 3D Pie chart is determined by the chart area's [Depth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_Depth) property. By default, this property is set to `false`, and the Pie chart height is determined using the [HeightCoefficient](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_HeightCoeficient) property.
 
 The following code configures the Pie chart height based on the chart area's depth.
 
@@ -239,7 +234,7 @@ chartControl.Series(0).ConfigItems.PieItem.HeightByAreaDepth = True
 
 ### Label style
 
-The [LabelStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_LabelStyle) property specifies how data labels are displayed relative to the Pie chart segments, with **Outside** used as the default label style.
+The [LabelStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_LabelStyle) property specifies how data labels are displayed relative to the Pie chart segments, with [Outside](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAccumulationLabelStyle.html#Syncfusion_Windows_Forms_Chart_ChartAccumulationLabelStyle_Outside) used as the default label style.
 
 The available label styles are:
 
@@ -315,7 +310,7 @@ chartControl.Series(0).ConfigItems.PieItem.PieSize = New SizeF(100.0F, 80.0F)
 
 ### Pie tilt
 
-The [PieTilt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieTilt) property specifies the tilt angle of an individual Pie chart when `MultiplePies` is enabled, with `0f` used as the default value.
+The [PieTilt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieTilt) property specifies the tilt angle of an individual Pie chart when [MultiplePies](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_MultiplePies) is enabled, with `0f` used as the default value.
 
 The following code sets the Pie tilt angle to `30f`.
 
@@ -332,7 +327,7 @@ chartControl.Series(0).ConfigItems.PieItem.PieTilt =
 
 ### Pie with same radius
 
-The [PieWithSameRadius](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieWithSameRadius) property maintains the same pie radius when the [LabelStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_LabelStyle) property is set to **Outside** or **OutsideInColumn**.
+The [PieWithSameRadius](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieWithSameRadius) property maintains the same pie radius when the [LabelStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_LabelStyle) property is set to [Outside](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAccumulationLabelStyle.html#Syncfusion_Windows_Forms_Chart_ChartAccumulationLabelStyle_Outside) or [OutsideInColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAccumulationLabelStyle.html#Syncfusion_Windows_Forms_Chart_ChartAccumulationLabelStyle_OutsideInColumn).
 
 The following code enables the Pie chart to maintain the same radius when labels are rendered outside the Pie chart.
 
@@ -523,7 +518,7 @@ A Doughnut Chart is a variation of a Pie Chart that displays data as slices in a
 
 ### Doughnut coefficient
 
-The [DoughnutCoefficient](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_DoughnutCoeficient) property is used to render a Pie Chart as a Doughnut Chart. It specifies the size of the hollow center as a fraction of the chart's radius. By default, the value is 0.0, which renders the chart as a full Pie Chart. Valid values range from 0.0 to 0.9.
+The [DoughnutCoefficient](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_DoughnutCoeficient) property is used to render a Pie Chart as a Doughnut Chart. It specifies the size of the hollow center as a fraction of the chart's radius. By default, the value is `0.0`, which renders the chart as a full Pie Chart. Valid values range from `0.0` to `0.9`.
 
 {% tabs %}
 {% highlight c# %}

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Line Chart in Windows Forms Chart control | Syncfusion
-description: Line chart in the Windows Forms Chart displays continuous data trends and changes over time, helping users analyze data progression effectively.
+description: Line types in the Windows Forms Chart displays continuous data trends and changes over time, helping users analyze data progression effectively.
 platform: windowsforms
 control: Chart
 documentation: ug
@@ -17,13 +17,10 @@ You can also customize the following features for line charts:
 
 ## Line chart
 
-Line chart connects data points on a plot using straight lines to show trends at equal intervals. The following code shows how to define a line chart in ChartControl.
+Line chart connects data points on a plot using straight lines to show trends at equal intervals. 
 
 N>
-Chart Details
-* Number of Y values per point – 1.
-* Number of Series - One or More.
-* Cannot be Combined with - Pie, Bar, Stacked Bar, Polar, Radar.
+It cannot be combined with Pie, Bar, Stacked Bar, Polar, Radar.
 
 The following code example demonstrates how to create a Line Chart.
 
@@ -77,7 +74,9 @@ chartControl.Series.Add(secondServer)
 
 ### Disable line cap
 
-The [DisableLineCap](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLineConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartLineConfigItem_DisableLineCap) property controls whether line caps are disabled when rendering Line and Spline series. By default, this property is set to false, which renders line caps for line segments.
+The [DisableLineCap](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLineConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartLineConfigItem_DisableLineCap) property controls whether line caps are disabled when rendering Line and Spline series. By default, this property is set to `false`, which renders line caps for line segments.
+
+The following code example demonstrates how to disable line caps using the DisableLineCap property.
 
 {% tabs %}
 {% highlight c# %}
@@ -93,7 +92,9 @@ chartControl.Series(0).ConfigItems.LineItem.DisableLineCap = True
 ### Disable line region
 
 The [DisableLineRegion](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLineConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartLineConfigItem_DisableLineRegion) property controls whether the line segments connecting adjacent data points are disabled in Line and Spline series.
-By default, this property is set to false, which renders line segments between data points.
+By default, this property is set to `false`, which renders line segments between data points.
+
+The following code example demonstrates how to disable line segments using the DisableLineRegion property.
 
 {% tabs %}
 {% highlight c# %}
@@ -136,13 +137,10 @@ The following chart series properties are used as customization options for Spli
 
 ## Rotated spline chart
 
-A Rotated Spline Chart is similar to an ordinary Spline Chart. The only difference is that, it would be rotated. It plots one or several series of data, and joins each series by smooth, rotated spline curves instead of straight lines. The following code shows how to define rotated spline line chart in chart control.
+A Rotated Spline Chart is similar to an ordinary Spline Chart. The only difference is that, it would be rotated. It plots one or several series of data, and joins each series by smooth, rotated spline curves instead of straight lines.
 
 N>
-Chart Details
-* Number of Y values per point – 1.
-* Number of Series - One or More.
-* Cannot be Combined with - Pie, Bar, Stacked Bar, Polar, Radar.
+It cannot be combined with Pie, Bar, Stacked Bar, Polar, Radar.
 
 The following code example demonstrates how to create a Rotated Spline Line Chart.
 
@@ -225,13 +223,10 @@ The following chart series properties are used as customization options for Rota
 
 ## Step line chart
 
-Step Line Chart use horizontal and vertical lines to connect data points resulting in a step like progression. The following code shows how to define step chart in chart control.
+Step Line Chart use horizontal and vertical lines to connect data points resulting in a step like progression.
 
 N>
-Chart Details
-* Number of Y values per point - 1.
-* Number of Series - One or More.
-* Cannot be Combined with - Pie, Bar, Stacked Bar, Polar, Radar.
+It cannot be combined with Pie, Bar, Stacked Bar, Polar, Radar.
 
 The following code example demonstrates how to create a Step Line Chart.
 

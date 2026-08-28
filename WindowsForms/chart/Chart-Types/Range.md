@@ -1,23 +1,20 @@
 ---
 layout: post
 title: Range Chart in Windows Forms Charts | Syncfusion®
-description: Range series in the Windows Forms Chart display minimum and maximum values across data points, enabling visualization of value ranges and variations.
+description: Range types in the Windows Forms Chart display minimum and maximum values across data points, enabling visualization of value ranges and variations.
 platform: windowsforms
 control: SfChart
 documentation: ug
 ---
 
-# Range Chart in Windows Forms Chart
+# Range Chart in Windows Forms Charts
 
 ## HiLo chart
 
 HiLo Chart is a financial chart commonly used to display the trading range of a stock or other data over a period. It uses two Y-values `High` and `Low` to represent the maximum and minimum values, making it easy to visualize value ranges and fluctuations.
 
 N>
-Chart details for HiLo chart.
-* Number of Y values per point - 2.
-* Number of Series - One or More.
-* Cannot be combined with - Pie, Bar, Polar, Radar, Stacked Bar.
+It cannot be combined with Pie, Bar, Polar, Radar, Stacked Bar.
 
 The following code example demonstrates how to create a HiLo Chart.
 
@@ -110,15 +107,12 @@ The following chart series properties are used as customization options for HiLo
 - [TextOrientation](https://help.syncfusion.com/windowsforms/chart/chart-series#textorientation)
 - [Visible](https://help.syncfusion.com/windowsforms/chart/chart-series#visible)
 
-## Range Column chart
+## Range column chart
 
 Range Column Chart is similar to the Column Chart, except that each column is rendered over a range. Therefore, the user must specify the starting and ending Y-axis values for each data point. The following code shows how to define a column range chart in ChartControl.
 
 N>
-Chart details for column range chart.
-* Number of Y values per point - 2.
-* Number of Series - One or More.
-* Cannot be combined with - Pie, Bar, Stacked Bar, Polar, Radar.
+It cannot be combined with Pie, Bar, Stacked Bar, Polar, Radar.
 
 The following code example demonstrates how to create a Column Range Chart.
 
@@ -216,12 +210,6 @@ It is commonly used to display value variations, such as the daily minimum and m
 You can also customize the following feature for range area charts:
 
 * **Chart Custom Points**: Chart custom points are used to set custom points in a series using the [ChartCustomPoint](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartCustomPoint.html) class.
-
-N>
-Chart Details for range area chart.
-* Number of Y values per point - 2.
-* Maximum Number of Series - Unlimited.
-* Minimum Number of Series - 1.
 
 The following code example demonstrates how to create a Range Area Chart.
 
