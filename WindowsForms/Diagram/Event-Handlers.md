@@ -11,11 +11,11 @@ documentation: ug
 
 This section elaborates on the following:
 
-### Diagram Events
+## Diagram Events
 
 [DiagramViewerEventSink](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DiagramViewerEventSink.html#) class contains the events specific to the [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram). The various events that can be invoked using this class are discussed in the following topics.
 
-#### Node Collection Events
+### Node Collection Events
 
 This topic discusses the events that are fired while adding or removing the node to or from the node collection. The below table discusses all the available node collection events.
 
@@ -133,7 +133,7 @@ Sample diagrams are as follows,
 
 
 
-#### Node Mouse Events
+### Node Mouse Events
 
 This topic discusses the events that are raised when mouse entering or leaving the node. The below table discusses all the available node mouse events.
 
@@ -248,7 +248,7 @@ End Sub
 {% endtabs %}
 
 
-#### Tool Events
+### Tool Events
 
 The below events gets fired while activating or deactivating the UI tools ([Zoom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ZoomTool.html), [Pan](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.PanTool.html), [Select](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.SelectTool.html) etc) in the diagram.
 
@@ -348,7 +348,7 @@ Sample diagrams are as follows,
 
 
 
-#### Origin Events
+### Origin Events
 
 The [Origin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.View.html#Syncfusion_Windows_Forms_Diagram_View_Origin) changes when the diagram window is scrolled either horizontally or vertically.
 
@@ -485,7 +485,7 @@ Sample diagrams are as follows.
 ![Event-Handlers_img6](Event-Handlers_images/Event-Handlers_img6.jpeg)
 
 
-#### Magnification Event 
+### Magnification Event 
 
 When the control is zoomed in or out, the magnification events will be fired displaying the old and new magnification factors.
 
@@ -568,9 +568,9 @@ Sample diagrams are as follows,
 
 
 
-#### Editor Events
+### Editor Events
 
-Diagram control provides support to notify users when the text in the [Text Editor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DiagramController.html#Syncfusion_Windows_Forms_Diagram_DiagramController_TextEditor) and Label Editor are changed. The following table lists the Editor events associated with Diagram control.
+WinForms Diagram control provides support to notify users when the text in the [Text Editor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DiagramController.html#Syncfusion_Windows_Forms_Diagram_DiagramController_TextEditor) and Label Editor are changed. The following table lists the Editor events associated with WinForms Diagram control .
 
 
 
