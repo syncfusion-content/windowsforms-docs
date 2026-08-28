@@ -7,36 +7,36 @@ control: Chart
 documentation: ug
 ---
 
-# About Syncfusion® Windows Forms Chart Control
+# About syncfusion® Windows Forms chart control
 
-This section covers information on Essential® Chart control, its key features, prerequisites to use the control, its compatibility with various OS and browsers and finally the documentation details complimentary with the product. It comprises the following sub sections:
+This section covers information about the Essential® Chart control, its key features, prerequisites for using the control, compatibility with various operating systems and browsers, and the complementary documentation provided with the product. It comprises the following subsections:
 
-## Introduction to Essential® Chart
+## Introduction to essential® Chart
 
-Essential® Chart is an easily configurable, presentation quality business chart control. A unique point based Styles Architecture, easily extendable Data Model, easily extendable rendering model, native Date Handling and a unique Shared Data Model are the features that distinguish Essential® chart. This control has been created using C#, which means that it is a fully-managed .NET component, and  has been specifically designed for use with Microsoft's Visual Studio .NET.
+Essential® Chart is an easily configurable, presentation-quality business chart control. Its unique point-based styles architecture, easily extensible data model, easily extensible rendering model, native data handling, and unique shared data model are the features that distinguish Essential® Chart. This control was created using C#, which means that it is a fully managed .NET component specifically designed for use with Microsoft Visual Studio .NET.
 
-Essential® Chart for Windows Forms is a perfect solution for developers looking to add advanced, feature rich, visually appealing charts to their Windows Forms applications. The product comes with numerous samples as well as an extensive documentation to guide you every step of the way. 
+Essential® Chart for Windows Forms is a perfect solution for developers looking to add advanced, feature-rich, and visually appealing charts to their Windows Forms applications. The product comes with numerous samples and extensive documentation to guide you every step of the way.
 
-Chart is used as a means to show the graphical representation of two values. For Example, a Line Chart can be used in health Statistic reports, in which it can show the rates over time or for a series of values, such as age-specific death rates. Logarithmic charts can be used in Share price charts where we plot between price and time. In logarithmic chart, we can identify the 'Proportional change in price' with respect to the 'Change in time'. We use 'Proportional change in price' to observe market sentiment. Market participants move share prices either up or down proportionally depending on how bullish or bearish they feel.
+A chart is used to show the graphical representation of two values. For example, a line chart can be used in health statistics reports to show rates over time or across a series of values, such as age-specific death rates. Logarithmic charts can be used in share price charts, where price is plotted against time. In a logarithmic chart, we can identify the "proportional change in price" with respect to the "change in time." We use the proportional change in price to observe market sentiment. Market participants move share prices either up or down proportionally, depending on how bullish or bearish they feel.
 
 ![Overview in WindowsForms Chart](overview_images/windowsforms-chart-overview.jpeg)
 
 ### Key Features
 
-Some of the key features of Essential® Chart are listed below.
+Some of the key features of Essential® Chart are listed below:
 
-* The control provides complete support for customization of the Chart control through Chart Wizard at design time and also at run time. Chart Wizard comes with new Office look and feel.
-* Chart Data Model is an innovative data object model which makes it easy to populate the chart with any kind of data source. 
-* Essential® Chart features built in support for dates. The data type of any series that is plotted on the chart can be set to DateTime.
-* Essential® Chart offers automatic interval calculation capabilities for any range of numbers or dates. This calculation can be overridden by explicit allocation of ranges and intervals to be used and also with settings that control how 'nice' numbers are calculated for display.
-* Essential® Chart offers extensive customization possibilities of the legend. The position of the legend on the chart area as well as its representation aspects can all be completely customized. Essential® Chart also features modification of legend items using events. It also supports custom legend items that are not tied to series of data.
-* Statistical formula means, Standard Deviation, Variance, Distributions, T-test, F-test and Z-test support etc.
-* Exporting Chart to PDF, Excel and Doc etc., are available for the chart control. Importing is also supported.
-* Users can create custom palettes for their Charts using CustomPalette property. Also, can create non-gradient palettes for the Charts using this custom palettes feature. 
+* The control provides complete support for customizing the Chart control through the Chart Wizard at design time and runtime. The Chart Wizard comes with a new Office look and feel.
+* The Chart Data Model is an innovative data object model that makes it easy to populate the chart using any kind of data source.
+* Essential® Chart features built-in support for dates. The data type of any series plotted on the chart can be set to `DateTime`.
+* Essential® Chart offers automatic interval calculation capabilities for any range of numbers or dates. This calculation can be overridden by explicitly specifying the ranges and intervals. Settings are also available to control how "nice" numbers are calculated for display.
+* Essential® Chart offers extensive customization options for the legend. The position and appearance of the legend within the chart area can be completely customized. Essential® Chart also supports modifying legend items using events. It supports custom legend items that are not tied to a data series.
+* Statistical formulas such as Mean, Standard Deviation, Variance, Distributions, T-test, F-test, and Z-test are supported.
+* Exporting charts to PDF, Excel, and Doc etc., are available for the chart control. Importing is also supported.
+* Users can create custom palettes for their charts using the `CustomPalette` property. They can also create non-gradient palettes using this custom palette feature.
 * Multiple Chart Titles and Multiple Legends can be provided with abilities to format the Title text. 
 * Chart Breaks are very useful when you use series points with large difference. 
 
-## Prerequisites and Compatibility
+## Prerequisites and compatibility
 
 This section covers the requirements mandatory for using Essential® Chart control. It also lists operating systems and browsers compatible with the product.
 
@@ -87,57 +87,124 @@ Operating Systems</th></tr>
 </td></tr>
 </table>
 
-## Control Structure
+## Control structure
 
-This section gives you an idea of the different sections of a Chart control. Below is the image that illustrates various sections of the control and their description in detail below.
+This section describes the different parts of the Chart control. The following image illustrates the various sections of the control.
 
 ![Control structure in WindowsForms Chart](getting-started_images/windowsforms-chart-control-structure.jpeg)
 
-### Chart Control
+<table>
+<tr>
+<th>
+Section
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+Chart Control
+</td>
+<td>
+The ChartControl represents the complete visual display of the control. All other sections are displayed within the ChartControl.
+</td>
+</tr>
+<tr>
+<td>
+Chart Title
+</td>
+<td>
+The chart title is the area at the top of the Chart control that displays the title text.
+</td>
+</tr>
+<tr>
+<td>
+Chart Legend
+</td>
+<td>
+The chart legend displays an entry for each data series added to the ChartControl. By default, the chart legend is positioned within the ChartControl but outside the ChartArea. However, when the chart legend is set to floating mode, it can be positioned anywhere inside the Chart control.
 
-The ChartControl is the complete visible display for the Control. All other sections will be inside the ChartControl. 
-
-### Chart Title
-
-The Chart title is the area at the top of the Chart control that displays the text of the ChartControl.
-
-### Chart Legend 
-
-The Chart legend is the portion of the display showing an entry for each of the data series added to the ChartControl. The Chart legend is positioned in line within the ChartControl (but outside the ChartArea) by default. However, if the chart legend is set to floating mode, the Chart legend can be positioned anywhere inside the Chart control.
-
-The legend can also contain custom items with custom image and text.
-
-### Chart Area 
-
-This is the section that holds the plots / graphs that are defined in the Chart. The Chart Area also includes the Chart axes that are defined. A primary X axis and primary Y axis are defined by default.
-
-### Axis Title
-
-Indicates the title for individual axis.
-
-### Axis Label
-
-Represents the label texts on the axes data points in a Chart.
-
-### Chart Interior
-
-This section is the interior part of the chart control, within the chart area, which contains the data points plotted against X-axis and Y-axis.
-
-### Chart Series
-
-Chart Series are the elements present inside the chart area.
-
-### Series Symbol
-
-Symbol that can be placed on the series points.
-
-### Chart Shadow
-
-Chart Area Shadow indicates the shadow of the chart area.
+The legend can also contain custom items with custom images and text.
+</td>
+</tr>
+<tr>
+<td>
+Chart Area
+</td>
+<td>
+The chart area contains the plots or graphs defined in the chart. It also includes the chart axes. A primary X-axis and a primary Y-axis are defined by default.
+</td>
+</tr>
+<tr>
+<td>
+Axis Title
+</td>
+<td>
+The axis title indicates the title of an individual axis.
+</td>
+</tr>
+<tr>
+<td>
+Axis Label
+</td>
+<td>
+The axis label represents the label text displayed for data points along the chart axes.
+</td>
+</tr>
+<tr>
+<td>
+Chart Interior
+</td>
+<td>
+The chart interior is the area within the chart area that contains the data points plotted against the X-axis and Y-axis.
+</td>
+</tr>
+<tr>
+<td>
+Chart Series
+</td>
+<td>
+Chart series are the elements displayed inside the chart area.
+</td>
+</tr>
+<tr>
+<td>
+Series Symbol
+</td>
+<td>
+A series symbol is a symbol that can be displayed on the series points.
+</td>
+</tr>
+<tr>
+<td>
+Chart Shadow
+</td>
+<td>
+The chart shadow indicates the shadow applied to the chart area.
+</td>
+</tr>
+</table>
 
 {% seealso %}
 
-[Text](https://help.syncfusion.com/windowsforms/chart/chart-appearance#foreground-settings), [Chart Legend](https://help.syncfusion.com/windowsforms/chart/chart-legend-and-legend-items), [Chart Series](https://help.syncfusion.com/windowsforms/chart/chart-series), [Chart Area](https://help.syncfusion.com/windowsforms/chart/chart-area), [Axis Label Text Formatting](https://help.syncfusion.com/windowsforms/chart/chart-axes#axis-label-text-formatting-appearance-and-positioning), [Appearance and Positioning](https://help.syncfusion.com/windowsforms/chart/chart-appearance), [Customizing Label Text](https://help.syncfusion.com/windowsforms/chart/chart-axes#customizing-label-text), [Intersecting Labels](https://help.syncfusion.com/windowsforms/chart/chart-axes#intersecting-labels), [Grouping Labels](https://help.syncfusion.com/windowsforms/chart/chart-axes#grouping-labels)
+1.[Text](https://help.syncfusion.com/windowsforms/chart/chart-appearance#foreground-settings)
+
+2.[Chart Legend](https://help.syncfusion.com/windowsforms/chart/chart-legend-and-legend-items)
+
+3.[Chart Series](https://help.syncfusion.com/windowsforms/chart/chart-series)
+
+4.[Chart Area](https://help.syncfusion.com/windowsforms/chart/chart-area)
+
+5.[Axis Label Text Formatting](https://help.syncfusion.com/windowsforms/chart/chart-axes#axis-label-text-formatting-appearance-and-positionin)
+
+6.[Appearance and Positioning](https://help.syncfusion.com/windowsforms/chart/chart-appearance)
+
+7.[Customizing Label Text](https://help.syncfusion.com/windowsforms/chart/chart-axes#customizing-label-text)
+
+8.[Intersecting Labels](https://help.syncfusion.com/windowsforms/chart/chart-axes#intersecting-labels)
+
+9.[Grouping Labels](https://help.syncfusion.com/windowsforms/chart/chart-axes#grouping-labels)
 
 {% endseealso %}
 
