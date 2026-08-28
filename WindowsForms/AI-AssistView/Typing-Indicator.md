@@ -67,7 +67,7 @@ public partial class Form1 : Form
 
 {% endtabs %}
 
-![WindowsForms AI AssistView control typing indicator](aiassistview_images/windowsforms_aiassistview_typing_indicator.gif)
+![Windows Forms AI AssistView control typing indicator](aiassistview_images/windowsforms_aiassistview_typing_indicator.gif)
 
 ## Troubleshooting
 

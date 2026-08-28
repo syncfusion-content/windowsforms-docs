@@ -131,7 +131,7 @@ public partial class Form1 : Form
 
 {% endtabs %}
 
-![WindowsForms AI AssistView control Suggestions](aiassistview_images/windowsforms_aiassistview_suggestions.png)
+![Windows Forms AI AssistView control Suggestions](aiassistview_images/windowsforms_aiassistview_suggestions.png)
 
 ## Handling Suggestion Clicks
 
