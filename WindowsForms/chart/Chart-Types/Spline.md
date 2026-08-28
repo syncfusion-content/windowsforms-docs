@@ -1,20 +1,18 @@
 ---
 layout: post
 title: Spline Chart in Windows Forms Charts | Syncfusion®
-description: Spline series in the Windows Forms Chart display smooth curves between data points, helping visualize trends and patterns in continuous data.
+description: Spline types in the Windows Forms Chart display smooth curves between data points, helping visualize trends and patterns in continuous data.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-## Spline line chart
+## Spline Line Chart in Windows Forms charts
 
 Spline Chart is similar to a Line Chart except that it connects the different data points using splines instead of straight lines.
 
 N>
 Chart Details
-* Number of Y values per point – 1.
-* Number of Series - One or More.
 * Cannot be Combined with - Pie, Bar, Stacked Bar, Polar, Radar.
 
 The following code example demonstrates how to create a Spline Line Chart.
@@ -73,8 +71,6 @@ A Spline Area Chart connects data points with smooth spline curves, filling the 
 
 N>
 Chart details for spline area chart.
-* Number of Y values per point - 1.
-* Number of Series - One or More.
 * Cannot be Combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 The following code example demonstrates how to create a Spline Area chart.

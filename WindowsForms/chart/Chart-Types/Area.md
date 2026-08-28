@@ -1,21 +1,15 @@
 ---
 layout: post
-title: Area Chart in Windows Forms Chart control | Syncfusion
-description: Area series in the Windows Forms Chart displays data as filled regions between data points and the axis to emphasize trends and values.
+title: Area Chart in Windows Forms Charts control | Syncfusion
+description: Area type in the Windows Forms Chart displays data as filled regions between data points and the axis to emphasize trends and values.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Area charts in windows forms chart
+# Area Chart in Windows Forms charts
 
 Area charts highlight the magnitude of change over time by rendering data in a continuous, flowing pattern rather than using discrete bars or columns. It support for alpha-blending multiple series and provide extensive customization options for the chart's appearance.
-
-You can also customize the following features for area charts:
-
-* **Series Color Settings**: Background and foreground colors for area charts are customized through the [Interior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStyleInfo.html#Syncfusion_Windows_Forms_Chart_ChartStyleInfo_Interior) property of the [ChartStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStyleInfo.html) class.
-* **Chart 3-D Mode**: A chart is rendered in 3-D mode by enabling the [Series3D](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Series3D) property.
-* **Border Settings**: Border color and width of an area chart can be changed through the [Color](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLineInfo.html#Syncfusion_Windows_Forms_Chart_ChartLineInfo_Color) and [Width](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLineInfo.html#Syncfusion_Windows_Forms_Chart_ChartLineInfo_Width) properties.
  
  ## Area chart
  
@@ -23,8 +17,6 @@ An Area chart connects data points with straight lines, creating a shaded region
 
 N>
 Chart details for area chart.
-* Number of Y values per point - 1.
-* Number of Series - One or More.
 * Cannot be combined with - Pie, Bar, Polar, Radar, Gantt, Stacked Bar.
 
 The following code example demonstrates how to create an Area chart.
@@ -95,8 +87,6 @@ Step Area chart is similar to a standard area chart, but instead of connecting d
 
 N>
 Chart details for step area chart.
-* Number of Y values per point - 1.
-* Number of Series - One or More.
 * Cannot be combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 The following code example demonstrates how to create a Step Area chart.

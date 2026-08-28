@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Types in Windows Forms Chart | Syncfusion®
+title: Types in Windows Forms Charts | Syncfusion®
 description: Types in the Windows Forms Chart provide multiple visualization options for presenting, comparing, and analyzing data effectively.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Types in windows forms chart
+# Types in Windows Forms Charts
 
 Essential® Chart includes a comprehensive set of more than 35 Chart types for all your business needs. Each one is highly and easily configurable with built-in support for creating stunning visual effects.
 

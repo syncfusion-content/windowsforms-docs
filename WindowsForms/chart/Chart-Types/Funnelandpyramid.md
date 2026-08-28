@@ -1,25 +1,19 @@
 ---
 layout: post
-title: Funnel and Pyramid Chart in Windows Forms Chart control | Syncfusion
-description: Funnel and pyramid series in the Windows Forms Chart visualize proportional data across stages, enabling effective comparison and analysis.
+title: Funnel and Pyramid Chart in Windows Forms Charts control | Syncfusion
+description: Funnel and pyramid types in the Windows Forms Chart visualize proportional data across stages, enabling effective comparison and analysis.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Funnel and Pyramid charts in windows forms chart
+# Funnel and Pyramid Chart in Windows Forms Charts
 
 ## Pyramid chart
 Pyramid Chart is a single-series chart that represents data as portions of 100% and does not use axes. It is similar to a Funnel Chart and is often used to display hierarchical or geographical data. Pyramid charts can be displayed in 2D or 3D mode.
 
-You can also customize the following feature:
-
-* **Chart 3-D Mode**: A chart can be rendered in 3-D mode by enabling the [Series3D](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Series3D) property.
-
 N>
 Chart Details
-* Number of Y values per point - 1.
-* Number of Series - One.
 * Cannot be combined with - Any other chart types.
 
 The following code example demonstrates how to create a Pyramid chart.
@@ -94,7 +88,6 @@ The available base types are:
 
 - [Square](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFigureBase.html#Syncfusion_Windows_Forms_Chart_ChartFigureBase_Square): Renders the Pyramid chart with a square base. This is the default value.
 - [Circle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFigureBase.html#Syncfusion_Windows_Forms_Chart_ChartFigureBase_Circle): Renders the Pyramid chart with a circular base.
-The following code enables 3D rendering and displays the Pyramid chart with a circular base.
 
 The following code displays the Pyramid chart with a circular base.
 
@@ -111,9 +104,11 @@ chartControl.Series(0).ConfigItems.PyramidItem.FigureBase = ChartFigureBase.Circ
 
 ### Gap ratio
 
-The [GapRatio](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPyramidConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPyramidConfigItem_GapRatio) property specifies the amount of space between the Pyramid chart segments. The default value is **0.0f**, which displays the segments without a gap.
+The [GapRatio](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPyramidConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPyramidConfigItem_GapRatio) property specifies the amount of space between the Pyramid chart segments. The default value is `0.0f`, which displays the segments without a gap.
 
-Increasing the value increases the separation between the segments. The following code sets the gap ratio to `0.2f`.
+Increasing the value increases the separation between the segments.
+
+The following code sets the gap ratio to `0.2f`.
 
 {% tabs %}
 {% highlight c# %}
@@ -128,7 +123,7 @@ chartControl.Series(0).ConfigItems.PyramidItem.GapRatio = 0.2F
 
 ### Label placement
 
-The [LabelPlacement](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPyramidConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPyramidConfigItem_LabelPlacement) property specifies the position of data labels relative to the Pyramid chart segments. This property works together with the [LabelStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPyramidConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPyramidConfigItem_LabelStyle) property. The label is positioned to the right of the Pyramid chart segment when [LabelStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPyramidConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPyramidConfigItem_LabelStyle) is set to [Outside](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAccumulationLabelStyle.html#Syncfusion_Windows_Forms_Chart_ChartAccumulationLabelStyle_Outside), and **Right** is the default value.
+The [LabelPlacement](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPyramidConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPyramidConfigItem_LabelPlacement) property specifies the position of data labels relative to the Pyramid chart segments. This property works together with the [LabelStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPyramidConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPyramidConfigItem_LabelStyle) property. [Right](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAccumulationLabelPlacement.html#Syncfusion_Windows_Forms_Chart_ChartAccumulationLabelPlacement_Right) is the default value.
 
 The available label positions are:
 
@@ -202,7 +197,7 @@ chartControl.Series(0).ConfigItems.PyramidItem.PyramidMode = ChartPyramidMode.Su
 
 ### Show databind labels
 
-The [ShowDataBindLabels](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPyramidConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPyramidConfigItem_ShowDataBindLabels) property controls whether he bound data source are displayed on the Pyramid chart segments and is set to `false` by default.
+The [ShowDataBindLabels](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPyramidConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPyramidConfigItem_ShowDataBindLabels) property controls whether the bound data source are displayed on the Pyramid chart segments and is set to `false` by default.
 
 The following code displays data-bound labels on Pyramid chart segments.
 
@@ -360,13 +355,9 @@ The following chart series properties are used as customization options for Pyra
 
 A Funnel Chart is a single-series chart that represents data as portions of 100% and does not use axes. It is commonly used to visualize stages in a process, such as a sales pipeline, and can be displayed in 2D or 3D mode.
 
-You can also customize the following feature:
-
-* **Chart 3-D Mode**: A chart can be rendered in 3-D mode by enabling the [Series3D](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Series3D) property.
 
 N>
-* Number of Y values per point - 1.
-* Number of Series - One.
+Chart details for funnel chart.
 * Cannot be combined with - Any other chart types.
 
 The following code example demonstrates how to create a Funnel chart.
@@ -435,7 +426,7 @@ chartControl.Legend.Visible = False
 
 ### Figure base
 
-The [FigureBase](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFunnelConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFunnelConfigItem_FigureBase) property specifiesthe funnel base when the chart is rendered in 3D mode.
+The [FigureBase](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFunnelConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFunnelConfigItem_FigureBase) property specifies the funnel base when the chart is rendered in 3D mode.
 
 The supported values are defined in the [ChartFigureBase](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPyramidMode.html) enumeration:
 
@@ -459,7 +450,7 @@ chartControl.Series(0).ConfigItems.FunnelItem.FigureBase = ChartFigureBase.Squar
 
 The [FunnelMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFunnelConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFunnelConfigItem_FunnelMode) property specifies whether the Y-values are used to calculate the height or width of the funnel blocks.
 
-The **FunnelMode** property supports the following values:
+It supports the following values:
 
 - [YIsHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFunnelMode.html#Syncfusion_Windows_Forms_Chart_ChartFunnelMode_YIsHeight): Uses the Y-value to calculate the height of each funnel block. It is the default value of the Funnel mode.
 - [YIsWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFunnelMode.html#Syncfusion_Windows_Forms_Chart_ChartFunnelMode_YIsWidth): Uses the Y-value to calculate the width of each funnel block.
@@ -479,11 +470,11 @@ chartControl.Series(0).ConfigItems.FunnelItem.FunnelMode = ChartFunnelMode.YIsWi
 
 ### Gap ratio
 
-The [GapRatio](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFunnelConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFunnelConfigItem_GapRatio) property specifies the amount of space between funnel blocks. The default value is 0.0f, which renders the blocks without any gap.
+The [GapRatio](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFunnelConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFunnelConfigItem_GapRatio) property specifies the amount of space between funnel blocks. The default value is `0.0f`, which renders the blocks without any gap.
 
 Increasing the GapRatio value increases the separation between adjacent funnel blocks.
 
-The following code sets the gap ratio to 0.2f.
+The following code sets the gap ratio.
 
 {% tabs %}
 {% highlight c# %}
@@ -498,14 +489,14 @@ chartControl.Series(0).ConfigItems.FunnelItem.GapRatio = 0.2F
 
 ### Label placement
 
-The [LabelPlacement](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFunnelConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFunnelConfigItem_LabelPlacement) determines the positioning of data labels in addition to the `LabelStyle` property. By default, labels are positioned to the right of the Funnel chart segments.
+The [LabelPlacement](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFunnelConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFunnelConfigItem_LabelPlacement) determines the positioning of data labels in addition to the [LabelStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFunnelConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFunnelConfigItem_LabelStyle) property. By default, labels are positioned to the [Right](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAccumulationLabelPlacement.html#Syncfusion_Windows_Forms_Chart_ChartAccumulationLabelPlacement_Right) of the Funnel chart segments.
 
-The **LabelPlacement** property supports the following values:
+This property supports the following values:
 
 - [Top](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAccumulationLabelPlacement.html#Syncfusion_Windows_Forms_Chart_ChartAccumulationLabelPlacement_Top): Positions the label at the top of the segment.
 - [Bottom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAccumulationLabelPlacement.html#Syncfusion_Windows_Forms_Chart_ChartAccumulationLabelPlacement_Bottom): Positions the label at the bottom of the segment.
-- [Center]((https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAccumulationLabelPlacement.html#Syncfusion_Windows_Forms_Chart_ChartAccumulationLabelPlacement_Center)): Positions the label at the center of the segment.
-- [Left]((https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAccumulationLabelPlacement.html#Syncfusion_Windows_Forms_Chart_ChartAccumulationLabelPlacement_Left)): Positions the label to the left of the segment.
+- [Center](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAccumulationLabelPlacement.html#Syncfusion_Windows_Forms_Chart_ChartAccumulationLabelPlacement_Center): Positions the label at the center of the segment.
+- [Left](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAccumulationLabelPlacement.html#Syncfusion_Windows_Forms_Chart_ChartAccumulationLabelPlacement_Left): Positions the label to the left of the segment.
 - [Right](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAccumulationLabelPlacement.html#Syncfusion_Windows_Forms_Chart_ChartAccumulationLabelPlacement_Right): Positions the label to the right of the segment. 
 
 The following code positions labels to the left of funnel blocks.
@@ -525,7 +516,7 @@ chartControl.Series(0).ConfigItems.FunnelItem.LabelPlacement = ChartAccumulation
 
 The [LabelStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFunnelConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFunnelConfigItem_LabelStyle) property specifies how data labels are displayed in the funnel chart.
 
-The **LabelStyle** property supports the following values:
+It supports the following values:
 
 - [Disabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAccumulationLabelStyle.html#Syncfusion_Windows_Forms_Chart_ChartAccumulationLabelStyle_Disabled): Hides the data labels.
 - [Inside](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAccumulationLabelStyle.html#Syncfusion_Windows_Forms_Chart_ChartAccumulationLabelStyle_Inside): Displays labels inside the funnel blocks.
@@ -548,26 +539,9 @@ chartControl.Series(0).ConfigItems.FunnelItem.LabelStyle = ChartAccumulationLabe
 
 ### Show databind labels
 
-The [ShowDataBindLabels](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFunnelConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFunnelConfigItem_ShowDataBindLabels) property controls whether labels obtained from the bound data source are displayed on the funnel blocks. The default value is false, which hides data-bound labels on funnel blocks.
+The [ShowDataBindLabels](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFunnelConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFunnelConfigItem_ShowDataBindLabels) property controls whether labels obtained from the bound data source are displayed on the funnel blocks. The default value is `false`, which hides data-bound labels on funnel blocks.
 
 The following code displays data-bound labels on funnel blocks.
-
-{% tabs %}
-{% highlight c# %}
-chartControl.Series[0].ConfigItems.FunnelItem.ShowDataBindLabels = true;
-{% endhighlight %}
-{% highlight vb %}
-chartControl.Series(0).ConfigItems.FunnelItem.ShowDataBindLabels = True
-{% endhighlight %}
-{% endtabs %}
-
-![Funnel Show DataBind Labels in Windows Forms](../Chart-Types_images/funnel.png)
-
-### Show series title
-
-The [ShowSeriesTitle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFunnelConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFunnelConfigItem_ShowSeriesTitle) property controls whether the series title is displayed in the funnel chart. By default, this property is set to false, so the series title is not displayed in the Funnel chart.
-
-The following code displays the series title in the Funnel chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -620,6 +594,7 @@ chartControl.Series.Add(series);
 chartControl.Legend.Visible = false;
 {% endhighlight %}
 {% highlight vb %}
+
 Dim table As New DataTable("FunnelData")
 
 table.Columns.Add("Position", GetType(Integer))
@@ -662,6 +637,25 @@ series.ConfigItems.FunnelItem.LabelStyle =
 chartControl.Series.Add(series)
 
 chartControl.Legend.Visible = False
+{% endhighlight %}
+{% endtabs %}
+
+![Funnel Show DataBind Labels in Windows Forms](../Chart-Types_images/funnel.png)
+
+### Show series title
+
+The [ShowSeriesTitle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFunnelConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFunnelConfigItem_ShowSeriesTitle) property controls whether the series title is displayed in the funnel chart. By default, this property is set to `false`, so the series title is not displayed in the Funnel chart.
+
+The following code displays the series title in the Funnel chart.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.FunnelItem.ShowSeriesTitle = true;
+
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.FunnelItem.ShowSeriesTitle = True
+
 {% endhighlight %}
 {% endtabs %}
 

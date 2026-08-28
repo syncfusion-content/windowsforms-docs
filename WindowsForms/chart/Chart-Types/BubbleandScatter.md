@@ -1,19 +1,15 @@
 ---
 layout: post
-title: Bubble and Scatter in Windows Forms Chart control | Syncfusion
-description: Bubble and scatter series in the Windows Forms Chart visualize relationships between data points using coordinates and variable-sized markers.
+title: Bubble and Scatter in Windows Forms Charts control | Syncfusion
+description: Bubble and scatter types in the Windows Forms Chart visualize relationships between data points using coordinates and variable-sized markers.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Bubble and scatter chart in windows forms chart
+# Bubble and Scatter Chart in Windows Forms Chart
 
 Bubble and Scatter(also know as XY Charts) Charts are used to visualize the relationship between two variables by plotting data points on X and Y axes. They help identify trends, patterns, and correlations. Bubble Charts extend Scatter Charts by using bubble size to represent an additional data value.
-
-You can also customize the following features for XY bubble and scatter chart:
-
-* **Chart 3-D Mode**: A pie or doughnut chart can be rendered in 3-D mode by enabling the [Series3D](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Series3D) property.
 
 ## Bubble chart
 
@@ -23,10 +19,7 @@ It is commonly used to compare and analyze relationships among multiple data set
 
 N>
 Chart Details
-* Number of Y values per point - 2 (optional second value defines the size of the shape).
-Number of Series - One or More.
 * Cannot be combined with - Pie, Bar, Polar, Radar, Stacked Bar.
-* Bubble series can be added to the chart using the following code.
 
 The following code example demonstrates how to create a Bubble Chart.
 
@@ -89,7 +82,7 @@ chartControl.Series.Add(series2)
 
 The size of the bubbles depends on MinBounds and MaxBounds of the bubbleItem in series. By default, the minBounds is (20, 20) and MaxBounds is (50, 50), so the width and height of the bubbles lie between 20 and 50.
 
-You can change the minBounds and maxBounds using the [minBounds](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBubbleConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartBubbleConfigItem_MinBounds) and [MaxBounds](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBubbleConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartBubbleConfigItem_MaxBounds) properties in series options.
+You can change the minBounds and maxBounds using the [MinBounds](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBubbleConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartBubbleConfigItem_MinBounds) and [MaxBounds](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBubbleConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartBubbleConfigItem_MaxBounds) properties in series options.
 
 The following code example demonstrates how to set the minimum and maximum bounds for bubble chart elements.
 
@@ -118,12 +111,16 @@ The following code example demonstrates how to set the bubble type to Square.
 
 {% tabs %}
 {% highlight c# %}
+
 chartControl.Series[0].ConfigItems.BubbleItem.BubbleType =
 ChartBubbleType.Square;
+
 {% endhighlight %}
 {% highlight vb %}
+
 chartControl.Series(0).ConfigItems.BubbleItem.BubbleType =
 ChartBubbleType.Square
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -131,18 +128,16 @@ ChartBubbleType.Square
 
 ### Enable phong style 
 
-The [EnablePhongStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBubbleConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartBubbleConfigItem_EnablePhongStyle) property specifies whether Phong-style shading is applied to bubble chart elements. The default value is true, which renders bubbles with a three-dimensional lighting effect.
+The [EnablePhongStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBubbleConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartBubbleConfigItem_EnablePhongStyle) property specifies whether Phong-style shading is applied to bubble chart elements. The default value is `true`, which renders bubbles with a three-dimensional lighting effect.
 
 The following code example demonstrates how to disable Phong-style shading for bubble chart elements.
 
 {% tabs %}
 {% highlight c# %}
-chartControl.Series[0].ConfigItems.BubbleItem.EnablePhongStyle =
-false;
+chartControl.Series[0].ConfigItems.BubbleItem.EnablePhongStyle = false;
 {% endhighlight %}
 {% highlight vb %}
-chartControl.Series(0).ConfigItems.BubbleItem.EnablePhongStyle =
-False
+chartControl.Series(0).ConfigItems.BubbleItem.EnablePhongStyle = False
 {% endhighlight %}
 {% endtabs %}
 
@@ -185,8 +180,6 @@ A Scatter chart (XY Chart) displays the relationship between two numerical varia
 It is useful for identifying patterns, trends, and correlations between variables. It commonly used for scientific and statistical data analysis.
 
 Chart Details
-* Number of Y values per point - 1.
-* Number of Series - One or More.
 * Cannot be combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 The following code example demonstrates how to create a Scatter Chart.

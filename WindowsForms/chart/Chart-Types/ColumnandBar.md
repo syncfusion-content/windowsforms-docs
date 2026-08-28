@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Column and Bar Chart in Windows Forms Chart control | Syncfusion
-description: Column and bar series in the Windows Forms Chart compare categorical data using vertical and horizontal bars for clear data visualization.
+title: Column and Bar Chart in Windows Forms Charts control | Syncfusion
+description: Column and bar types in the Windows Forms Chart compare categorical data using vertical and horizontal bars for clear data visualization.
 platform: windowsforms
 control: Chart
 documentation: ug
@@ -11,16 +11,8 @@ documentation: ug
 
 A chart that uses vertical bars (columns) to compare values across different categories or to show changes in data over time. It is useful for comparing counts, totals, averages, or frequencies between groups. The following code shows how to define a column chart in ChartControl.
 
-Column charts are similar to Bar Charts, except that bar charts use `horizontal bars`.
-
-You can also customize the following features for column charts:
-* **Column Spacing**: The [Spacing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Spacing) property is used to control the gap between columns from different data series.
-* **3D Style**: Enable the [Style3D](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Style3D) property to render the chart in a 3D view with enhanced colors and depth effects.
-
 N>
 Chart details for column chart.
-* Number of Y values per point - 1.
-* Number of Series - One or More.
 * Cannot be combined with - Pie, Bar, Stacked Bar, Polar, Radar.
 
 The following code example demonstrates how to create a Column Chart.
@@ -75,7 +67,7 @@ chartControl.Series.Add(secondServer)
 
 ### Column width mode
 
-The [ColumnWidthMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ColumnWidthMode) property specifies how column widths are calculated. The default value is **DefaultWidthMode**.
+The [ColumnWidthMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ColumnWidthMode) property specifies how column widths are calculated. The default value is [DefaultWidthMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnWidthMode.html#Syncfusion_Windows_Forms_Chart_ChartColumnWidthMode_DefaultWidthMode).
 
 The supported values are defined in the [ChartColumnWidthMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnWidthMode.html) enumeration:
 
@@ -96,13 +88,13 @@ chartControl.ColumnWidthMode =
 {% endhighlight %}
 {% endtabs %}
 
-The following **Column fixed width** section demonstrates `FixedWidthMode` by specifying the width of each column in pixels.
-
 ![Column Fixed Width in Windows Forms](../Chart-Types_images/windowsforms-column-mode-width-chart.png)
 
 ### Column fixed width
 
-The [ColumnFixedWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ColumnFixedWidth) property specifies the width of each column in pixels when the **ColumnWidthMode** property is set to **FixedWidthMode**. The default value is 20.
+The [ColumnFixedWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ColumnFixedWidth) property specifies the width of each column in pixels when the [ColumnWidthMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ColumnWidthMode) property is set to [FixedWidthMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnWidthMode.html#Syncfusion_Windows_Forms_Chart_ChartColumnWidthMode_FixedWidthMode). The default value is `20`.
+
+The following code example demonstrates how to set a fixed width for chart columns.
 
 {% tabs %}
 {% highlight c# %}
@@ -117,7 +109,7 @@ chartControl.ColumnFixedWidth = 10
 
 ### Column type
 
-The [ColumnType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartColumnConfigItem_ColumnType) property specifies the shape used to render columns in a 3D chart. The default value is **Box**.
+The [ColumnType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartColumnConfigItem_ColumnType) property specifies the shape used to render columns in a 3D chart. The default value is [Box](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnType.html#Syncfusion_Windows_Forms_Chart_ChartColumnType_Box).
 
 The supported values are defined in the [ChartColumnType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnType.html) enumeration:
 
@@ -143,7 +135,7 @@ chartControl.Series(0).ConfigItems.ColumnItem.ColumnType =
 
 ### Corner radius
 
-The [CornerRadius](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartColumnConfigItem_CornerRadius) property specifies the horizontal and vertical radii used to render rounded corners for columns and bars. The default value is `SizeF.Empty`, which renders columns without rounded corners.
+The [CornerRadius](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartColumnConfigItem_CornerRadius) property specifies the horizontal and vertical radii used to render rounded corners for columns. The default value is `SizeF.Empty`, which renders columns without rounded corners.
 
 The following code example demonstrates how to set the corner radius for column chart.
 
@@ -156,7 +148,7 @@ chartControl.Series(0).ConfigItems.ColumnItem.CornerRadius = New SizeF(10, 10)
 {% endhighlight %}
 {% endtabs %}
 
-![Column Radisu in Windows Forms](../Chart-Types_images/windowsforms-column-corner-radius-chart.png)
+![Column Radius in Windows Forms](../Chart-Types_images/windowsforms-column-corner-radius-chart.png)
 
 ### Light angle
 
@@ -181,9 +173,9 @@ chartControl.Series(0).ConfigItems.ColumnItem.LightAngle =
 
 ### Light color
 
-The [LightColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartColumnConfigItem_LightColor) property specifies the color of the light source when the **ShadingMode** property is set to [PhongCylinder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnShadingMode.html#Syncfusion_Windows_Forms_Chart_ChartColumnShadingMode_PhongCylinder). If no color is specified, White is used as the light source color by default.
+The [LightColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartColumnConfigItem_LightColor) property specifies the color of the light source when the [ShadingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartColumnConfigItem_ShadingMode) property is set to [PhongCylinder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnShadingMode.html#Syncfusion_Windows_Forms_Chart_ChartColumnShadingMode_PhongCylinder). If no color is specified, `White` is used as the light source color by default.
 
-The following code example demonstrates how to apply Color.Red as the light source color.
+The following code example demonstrates how to apply light color.
 
 {% tabs %}
 {% highlight c# %}
@@ -196,24 +188,24 @@ chartControl.Series(0).ConfigItems.ColumnItem.LightColor = Color.Red
 
 ### Phong alpha
 
-The [PhongAlpha](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartColumnConfigItem_PhongAlpha) property controls the intensity and sharpness of the specular lighting effect applied to columns and bars. By default, the value is set to 20d.
+The [PhongAlpha](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartColumnConfigItem_PhongAlpha) property controls the intensity and sharpness of the specular lighting effect applied to columns or bars. By default, the value is set to `20d`.
 
 The following code example demonstrates how to set the PhongAlpha property to 40d for column chart.
 
 {% tabs %}
 {% highlight c# %}
-chartControl.Series[0].ConfigItems.ColumnItem.PhongAlpha = 20d;
+chartControl.Series[0].ConfigItems.ColumnItem.PhongAlpha = 40d;
 {% endhighlight %}
 {% highlight vb %}
-chartControl.Series(0).ConfigItems.ColumnItem.PhongAlpha = 20.0
+chartControl.Series(0).ConfigItems.ColumnItem.PhongAlpha = 40.0
 {% endhighlight %}
 {% endtabs %}
 
 ### Shading mode
 
-The [ShadingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartColumnConfigItem_ShadingMode) property specifies the shading effect applied to columns and bars. By default, the shading mode is set to [PhongCylinder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnShadingMode.html#Syncfusion_Windows_Forms_Chart_ChartColumnShadingMode_PhongCylinder), rendering columns  with a cylindrical lighting effect.
+The [ShadingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartColumnConfigItem_ShadingMode) property specifies the shading effect applied to columns or bars. By default, the shading mode is set to [PhongCylinder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnShadingMode.html#Syncfusion_Windows_Forms_Chart_ChartColumnShadingMode_PhongCylinder), rendering columns  with a cylindrical lighting effect.
 
-The **ShadingMode** property supports the following values:
+The [ShadingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartColumnConfigItem_ShadingMode) property supports the following values:
 
 - [FlatRectangle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnShadingMode.html#Syncfusion_Windows_Forms_Chart_ChartColumnShadingMode_FlatRectangle): Renders columns or bars with flat rectangular shading which is default value of Shading mode.
 - [PhongCylinder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnShadingMode.html#Syncfusion_Windows_Forms_Chart_ChartColumnShadingMode_PhongCylinder): Renders columns or bars using Phong shading to create a cylindrical lighting effect.
@@ -272,26 +264,15 @@ The following chart series properties are used as customization options for Colu
 - [TextOrientation](https://help.syncfusion.com/windowsforms/chart/chart-series#textorientation)
 - [Visible](https://help.syncfusion.com/windowsforms/chart/chart-series#visible)
 
-## Bar chart in windows forms chart
+## Bar chart
 
-A bar chart is a graphical representation of data that uses rectangular bars to compare values across different categories. The length of each bar indicates the magnitude of the value, making it easy to visualize and compare data. They operate similarly to column charts, which display vertical bars.
-
-You can also customize the following features for bar chart:
-* **Chart 3-D Mode**: Render the chart in 3-D mode by enabling the [Series3D](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Series3D) property.
-* **Chart Series Points**: Display series points using the [DisplayText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStyleInfo.html#Syncfusion_Windows_Forms_Chart_ChartStyleInfo_DisplayText) property in a chart control.
-* **Series Color Settings**: Change series colors using the [Interior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStyleInfo.html#Syncfusion_Windows_Forms_Chart_ChartStyleInfo_Interior) property in a chart control.
-
-### Bar chart
-
-Bar chart display data with horizontal bars to compare values across categories. They support multiple series and can be shown with a 3D visual effect. The following code shows how to define a bar chart in ChartControl.
+A bar chart displays data using horizontal bars to compare values across different categories. The length of each bar represents the magnitude of the corresponding value, making it easy to visualize and compare data across multiple categories and series.
 
 N>
 Chart details for bar chart.
-* Number of Y values per point - 1.
-* Number of Series - One or More.
 * Cannot be combined with - Any chart type except Bar and Stacked Bar charts.
 
-The following code example demonstrates how to create a Bunnel chart.
+The following code shows how to define a bar chart in ChartControl.
 
 {% tabs %}
 {% highlight c# %}
