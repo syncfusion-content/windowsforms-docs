@@ -9,11 +9,11 @@ documentation: ug
 
 # Context Menu in Windows Forms Diagram
 
-### Built-in context menu
+## Built-in context menu
 
 The [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) provides built-in context menu support to the Diagram.
 
-All available tools for the Diagram control such as File options, Edit options, Action options, Layout, Connectors, and Shapes are listed in the built-in context menu. 
+All available tools for the WinForms Diagram control such as File options, Edit options, Action options, Layout, Connectors, and Shapes are listed in the built-in context menu. 
 
 Use Case Scenarios
 
