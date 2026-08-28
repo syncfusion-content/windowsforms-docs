@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Polar And Radar Charts in Windows Forms Charts control | Syncfusion
+title: Polar And Radar Chart in Windows Forms Charts | Syncfusion
 description: Radar and polar types in the Windows Forms Chart display multivariable data in a circular layout, enabling comparison of patterns and trends.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Polar and Radar in windows forms charts
+# Polar and Radar in windows Forms Charts
 
 Polar and Radar charts are used to display values and angles in a graphical format, making it easy to compare data across multiple categories.
 

@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-# Stacking charts in Windows Forms Charts
+# Stacking Chart in Windows Forms Charts
 
 Stacking charts are similar to regular charts except that the y values stack on top of each other in the specified series order. Stacking charts help visualize data that is a sum of parts, each of which is in a series.
 
