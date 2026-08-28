@@ -17,7 +17,7 @@ The Syncfusion [Windows Forms AI AssistView](https://www.syncfusion.com/winforms
 
 ## Use Cases
 
-SfAIAssistView is well suited for:
+AI AssistView is well suited for:
 
 - AI chat assistants integrated into desktop applications.
 - Customer support or help-desk conversational UIs.
