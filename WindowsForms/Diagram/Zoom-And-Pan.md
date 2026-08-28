@@ -18,7 +18,7 @@ One of the interactive features of [WinForms Diagram](https://www.syncfusion.com
 * Zoom to the top left of the diagram.
 * Zoom to the pointer position using Ctrl and the mouse wheel.
 
-#### Use Case Scenarios
+### Use Case Scenarios
 
 Users can zoom in and out of diagram content based on their requirements.
 
@@ -78,7 +78,7 @@ NA</td><td>
 void</td></tr>
 </table>
 
-#### ZoomIn, ZoomOut, ZoomToActual, ZoomToSelection
+### ZoomIn, ZoomOut, ZoomToActual, ZoomToSelection
 
 The diagram document can be zoomed in, zoomed out, zoomed to its original size, and zoomed to a selected area based on the ZoomIncrement. You can use the following methods to zoom in the diagram document.
 
@@ -129,7 +129,7 @@ Me.diagram1.View.ZoomToSelection(New RectangleF(100,100,100,100))
 {% endhighlight %}
 {% endtabs %}
 
-#### Zooming to the Center of the Diagram
+### Zooming to the Center of the Diagram
 
 The diagram document can be zoomed to the center of the current viewport by setting the ZoomType as Center. The default value of ZoomType is Center. 
 
@@ -154,7 +154,7 @@ Me.diagram1.View.ZoomType = ZoomType.Center
 
 
 
-#### Zooming to the Top-Left of the Diagram
+### Zooming to the Top-Left of the Diagram
 
 The diagram document can be zoomed to the top-left corner of the viewport by setting the ZoomType as TopLeft. 
 
@@ -180,9 +180,9 @@ Me.diagram1.View.ZoomType = ZoomType.TopLeft
 
 
 
-#### Zooming to the Pointer Position
+### Zooming to the Pointer Position
 
-Essential® Diagram supports zooming the diagram document to the pointer position using Ctrl and the mouse wheel. 
+WinForms Diagram supports zooming the diagram document to the pointer position using Ctrl and the mouse wheel. 
 
 
 
@@ -192,7 +192,7 @@ Essential® Diagram supports zooming the diagram document to the pointer positio
 
 #### ZoomTool
 
-Essential® Diagram supports a UI tool called ZoomTool which is used to zoom and select the diagram document interactively. Users can use the ZoomTool’s MaximumMagnification and MinimumMagnification properties to restrict the document’s maximum or minimum zoom levels and use the ZoomIncrement property to specify the amount to zoom each time the diagram is zoomed in or out.
+WinForms Diagram supports a UI tool called ZoomTool which is used to zoom and select the diagram document interactively. Users can use the ZoomTool’s MaximumMagnification and MinimumMagnification properties to restrict the document’s maximum or minimum zoom levels and use the ZoomIncrement property to specify the amount to zoom each time the diagram is zoomed in or out.
 
 Zoom Tool Properties
 
@@ -292,7 +292,7 @@ Sample diagram is as follows.
 
 ![Diagram Panning](Zoom-And-Pan_images/Zoom-And-Pan_img6.jpeg)
 
-#### Reset Pan
+### Reset Pan
 
 You can reset the panning value by setting the view origin and scroll bounds to their default values. Programmatically, it is implemented as follows:
 

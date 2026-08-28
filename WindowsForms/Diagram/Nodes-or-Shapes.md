@@ -9,7 +9,7 @@ documentation: ug
 
 # Nodes or Shapes in Windows Forms Diagram
 
-The [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) control supports different kinds of nodes. The following are the nodes that are supported by the Diagram control:
+The [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) control supports different kinds of nodes. The following are the nodes that are supported by the WinForms Diagram control:
 
 * TextNode
 * Shape
@@ -44,9 +44,9 @@ The [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) 
 * Link
 * PolyLineConnector
 
-### Creating a Node in the Diagram Control at Run Time
+## Creating a Node in the WinForms Diagram control at Run Time
 
-To create a node in the Diagram control:
+To create a node in the WinForms Diagram control:
 
 1. Drag the Diagram control to the windows form.
 2. Press the F7 key to open the *.cs file and enter the following code in the Page_Load function.
@@ -346,7 +346,7 @@ In the above code snippets, the properties are set to the Rectangular node (rect
 
 ## Dragging, Resizing, and Rotation Styles for Nodes
 
-Essential® Diagram for Windows Forms provides dragging, resizing, and rotation styles such as ghost copy, filled rectangle, solid outline, and dashed outline for nodes. These styles provide better visual effects for your diagram and increase the performance speed of the diagram while dragging, rotating, or resizing nodes.
+WinForms Diagram provides dragging, resizing, and rotation styles such as ghost copy, filled rectangle, solid outline, and dashed outline for nodes. These styles provide better visual effects for your diagram and increase the performance speed of the diagram while dragging, rotating, or resizing nodes.
 
 Properties Table
 

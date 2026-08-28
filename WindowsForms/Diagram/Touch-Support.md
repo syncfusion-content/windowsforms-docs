@@ -13,7 +13,7 @@ Touch support for [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winf
 
 ## Properties
 
-The following table describes the property associated with turning on/off touch support in Diagram control.
+The following table describes the property associated with turning on/off touch support in WinForms Diagram control.
 
 
 
@@ -27,11 +27,11 @@ Description</th></tr>
 <tr>
 <td>
 TouchMode</td><td>
-Specifies whether to turn on/off touch support in Diagram control.</td></tr>
+Specifies whether to turn on/off touch support in WinForms Diagram control.</td></tr>
 </table>
 
 
-The following code example illustrates how to turn on touch support for Diagram control.
+The following code example illustrates how to turn on touch support for WinForms Diagram control.
 
 
 {% tabs %}
