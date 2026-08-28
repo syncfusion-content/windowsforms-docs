@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Line Chart in Windows Forms Chart control | Syncfusion
+title: Line Chart in Windows Forms Chart | Syncfusion
 description: Line types in the Windows Forms Chart displays continuous data trends and changes over time, helping users analyze data progression effectively.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Line charts in windows forms chart
+# Line Chart in Windows Forms Charts
 
 Line charts typically connect data points in a series using lines. Depending on the chart type, the connecting lines can be straight, splines, or steps. Line charts are simpler and also allow you to visualize multiple series without the overlap that you may see in bar charts.
 

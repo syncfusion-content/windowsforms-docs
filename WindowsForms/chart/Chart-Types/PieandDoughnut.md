@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-# Pie chart in windows forms chart
+# Pie and Doughnut in Windows Forms Charts
 
 ## Pie chart
 

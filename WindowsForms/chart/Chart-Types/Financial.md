@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Financial Chart in Windows Forms Chart control | Syncfusion
+title: Financial Chart in Windows Forms Charts | Syncfusion
 description: Financial types in the Windows Forms Chart visualize stock market and financial data using specialized chart types for trend analysis.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Financial charts in windows forms chart
+# Financial Chart in Windows Forms Charts
 
 Financial Chart types are specialized charts designed to represent financial and stock market data that contains multiple values, such as open, high, low, and close prices. They provide a clear visual representation of price movements, trends, and market performance over time, making complex financial data easier to analyze and interpret.
 

@@ -7,6 +7,8 @@ control: Chart
 documentation: ug
 ---
 
+# Other Types in Windows Forms Charts
+
 ## Gantt chart
 
 A project management chart that displays tasks as horizontal bars along a timeline, showing their start dates, durations, end dates, and progress. It helps track schedules, dependencies, and overall project status at a glance.

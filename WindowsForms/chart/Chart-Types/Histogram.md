@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Histogram Chart in Windows Forms Charts control | Syncfusion
+title: Histogram Chart in Windows Forms Charts | Syncfusion
 description: Histogram type in the Windows Forms Chart displays the frequency distribution of data, helping analyze data patterns and value ranges effectively.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Histogram chart in windows forms chart
+# Histogram Chart in Windows Forms Charts
 
 A Histogram chart displays the frequency distribution of data by grouping values into continuous intervals and representing them with adjacent bars. It helps analyze the shape, spread, and patterns of a dataset, making trends and variations easier to understand.
 
