@@ -9,9 +9,9 @@ documentation: ug
 
 # How to Customize Selection Handles in Windows Forms Diagram
 
-The Diagram control provides an option to customize the selection handles of the nodes or connectors to change the appearance of the handles in the application side by using the Syncfusion.Windows.Forms.Diagram.View.CustomHandleRenderer property.
+The WinForms Diagram control provides an option to customize the selection handles of the nodes or connectors to change the appearance of the handles in the application side by using the Syncfusion.Windows.Forms.Diagram.View.CustomHandleRenderer property.
 
-### Customizing the UserHandleRenderer class
+## Customizing the UserHandleRenderer class
 
 You should customize the diagram UserHandleRenderer class, and then override the needed methods in that customized class to change the appearance of selection handles like resize handle, outline border, rotation handle, and pinpoint handle.
 The following code example illustrates how to customize the UserHandleRenderer class.
@@ -81,7 +81,7 @@ End Class
 
 {% endtabs %}
 
-### Rendering the custom selection’s outline borders
+## Rendering the custom selection’s outline borders
 
 Here, a logic for customizing the selection’s outline border have been created and resized handles by overriding the OutlineBoundingRectangle method. The following code example illustrates how to render the outline border for the connector, if the connector has a single segment.
 
@@ -166,7 +166,7 @@ End Sub
 
 {% endtabs %}
 
-### Rendering the custom selection’s resize handles
+## Rendering the custom selection’s resize handles
 
 The OnDrawResizeHandleShape method can also override to customize the selection’s resize handles. The following code example demonstrates how to customize the selection’s resize handle in the application side.
 
