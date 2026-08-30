@@ -10,11 +10,8 @@ documentation: ug
 # Funnel and Pyramid Chart in Windows Forms Charts
 
 ## Pyramid chart
-Pyramid Chart is a single-series chart that represents data as portions of 100% and does not use axes. It is similar to a Funnel Chart and is often used to display hierarchical or geographical data. Pyramid charts can be displayed in 2D or 3D mode.
 
-N>
-Chart Details
-* Cannot be combined with - Any other chart types.
+A Pyramid chart displays data in a triangular shape divided into sections, where the width of each section represents its corresponding value.
 
 The following code example demonstrates how to create a Pyramid chart.
 
@@ -82,7 +79,7 @@ chartControl.Legend.Visible = False
 
 ### Figure base
 
-The [FigureBase](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPyramidConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPyramidConfigItem_FigureBase) property specifies the shape of the Pyramid chart base when the chart is rendered in 3D mode.
+The [FigureBase](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPyramidConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPyramidConfigItem_FigureBase) property specifies base shape of the Pyramid chart in 3D mode.
 
 The available base types are:
 
@@ -197,7 +194,7 @@ chartControl.Series(0).ConfigItems.PyramidItem.PyramidMode = ChartPyramidMode.Su
 
 ### Show databind labels
 
-The [ShowDataBindLabels](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPyramidConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPyramidConfigItem_ShowDataBindLabels) property controls whether the bound data source are displayed on the Pyramid chart segments and is set to `false` by default.
+The [ShowDataBindLabels](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPyramidConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPyramidConfigItem_ShowDataBindLabels) property specifies whether data-bound labels are displayed on the Pyramid chart segments. By default, this property is set to `false`.
 
 The following code displays data-bound labels on Pyramid chart segments.
 
@@ -218,11 +215,9 @@ ChartDataBindModel seriesModel =
 new ChartDataBindModel(table);
             seriesModel.YNames = new string[] { "Value" };
 
-            // Creates the Pyramid series.
-            ChartSeries series = new ChartSeries(
-"Pyramid chart",
-
-ChartSeriesType.Pyramid);
+// Creates the Pyramid series.
+ChartSeries series = new ChartSeries(
+"Pyramid chart", ChartSeriesType.Pyramid);
 
 series.SeriesModel = seriesModel;
 series.Style.DisplayText = true;
@@ -322,7 +317,7 @@ chartControl.Series(0).ConfigItems.PyramidItem.ShowSeriesTitle = True
 
 ![Pyramid Chart in Windows Forms](../Chart-Types_images/windowsforms-pyramid-show-title.png)
 
-### Customization option
+### Customization options
 
 The following chart series properties are used as customization options for Pyramid chart:
 
@@ -353,12 +348,7 @@ The following chart series properties are used as customization options for Pyra
 
 ## Funnel chart
 
-A Funnel Chart is a single-series chart that represents data as portions of 100% and does not use axes. It is commonly used to visualize stages in a process, such as a sales pipeline, and can be displayed in 2D or 3D mode.
-
-
-N>
-Chart details for funnel chart.
-* Cannot be combined with - Any other chart types.
+A Funnel chart displays data in a funnel shape, where each section represents a portion of the total value. It is a single-series chart and does not use axes.
 
 The following code example demonstrates how to create a Funnel chart.
 
@@ -661,7 +651,7 @@ chartControl.Series(0).ConfigItems.FunnelItem.ShowSeriesTitle = True
 
 ![Funnel Show Series Title in Windows Forms](../Chart-Types_images/windowsforms-trapezoid-funnel-show-series-title.png)
 
-### Customization option
+### Customization options
 
 The following chart series properties are used as customization options for Funnel chart:
 

@@ -7,13 +7,11 @@ control: Chart
 documentation: ug
 ---
 
-## Spline Line Chart in Windows Forms charts
+## Spline Chart in Windows Forms Charts
 
-Spline Chart is similar to a Line Chart except that it connects the different data points using splines instead of straight lines.
+## Spline
 
-N>
-Chart Details
-* Cannot be Combined with - Pie, Bar, Stacked Bar, Polar, Radar.
+Spline Chart is similar to a Line Chart , but it connects data points using smooth curves instead of straight lines.
 
 The following code example demonstrates how to create a Spline Line Chart.
 
@@ -67,11 +65,7 @@ chartControl.Series.Add(secondServer)
 
 ## Spline area chart
 
-A Spline Area Chart connects data points with smooth spline curves, filling the enclosed area with a specified interior brush. Multiple series can be plotted using alpha-blending to ensure visibility of overlapping areas.
-
-N>
-Chart details for spline area chart.
-* Cannot be Combined with - Pie, Bar, Polar, Radar, Stacked Bar.
+A Spline Area chart connects data points using smooth curves and fills the area below the curve with a specified color.
 
 The following code example demonstrates how to create a Spline Area chart.
 
@@ -104,7 +98,7 @@ chartControl.Series.Add(firstServer)
 
 ![Spline Area Chart in Windows Forms](../Chart-Types_images/windowsforms-spline-area-chart.png)
 
-### Customization option
+### Customization options
 
 The following chart series properties are used as customization options for Spline Area chart:
 

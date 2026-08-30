@@ -1,21 +1,33 @@
 ---
 layout: post
 title: Box And Whisker Chart in Windows Forms Charts control | Syncfusion
-description: Box and Whisker type in the Windows Forms Chart displays data distribution using quartiles, median, minimum, maximum, and outlier values.
+description: Box and Whisker type in Windows Forms displays the distribution of data using boxes and lines.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Box and Whisker Chart in Windows Forms charts
+# Box and Whisker Chart in Windows Forms Charts
 
-A Box and Whisker Chart displays the minimum, lower quartile, median, upper quartile, and maximum values. The box contains the middle 50% of the values, the line inside represents the median, and the whiskers indicate the data range.
+A Box and Whisker chart renders a combination of boxes and lines to show how the values are distributed in a dataset.
 
-The chart supports **Normal mode** and **Percentile mode**. In Normal mode, values beyond 1.5 times the interquartile range are treated as outliers. In Percentile mode, use the [PercentileMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBoxAndWhiskerConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartBoxAndWhiskerConfigItem_PercentileMode) and [Percentile](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBoxAndWhiskerConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartBoxAndWhiskerConfigItem_Percentile) properties to define the whisker limits. Use the [OutLierWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBoxAndWhiskerConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartBoxAndWhiskerConfigItem_OutLierWidth) property to adjust the width of the outliers.
+The chart supports **Normal mode** and **Percentile mode** for determining the whisker range and outliers. In Normal mode, values beyond 1.5 times the interquartile range are treated as outliers. In Percentile mode, use the [PercentileMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBoxAndWhiskerConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartBoxAndWhiskerConfigItem_PercentileMode) and [Percentile](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBoxAndWhiskerConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartBoxAndWhiskerConfigItem_Percentile) properties to define the whisker limits. Use the [OutLierWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBoxAndWhiskerConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartBoxAndWhiskerConfigItem_OutLierWidth) property to adjust the width of the outliers.
 
+N>1.The percentile value should lie between 0.0 and 0.25.
 N>
-Chart Details
-* Cannot be combined with - Pie, Bar, Polar, Radar.
+N>2.It is not possible to set upper Percentile value. It is calculated automatically based on the Percentile value.
+N>
+N>For example: Percentile = 0.15
+N>
+N>Upper Percentile = 1 - Percentile = 0.85.
+N>
+N>In Normal mode, Outliers are present in which case the whiskers extend to a maximum of 1.5 times the inter-quartile range. But in Percentile mode, Outliers will be calculated based on the Percentile value.
+N>
+N>For example: Percentile = 0.15
+N>
+N>Outliers are present in which case the whiskers extend to minimum and maximum of 15th and 85th percentile of overall data set, respectively. If 'Percentile' value is Zero, then, there is no outliers in the Chart.
+N>
+N>3.The width of the Outliers can be adjusted by using this 'Series1.ConfigItems.BoxAndWhiskerItem.OutLierWidth' property. If it is zero, the width of the outlier will be calculated based on the data points range.
 
 {% tabs %}
 {% highlight c# %}

@@ -1,23 +1,17 @@
 ---
 layout: post
 title: Area Chart in Windows Forms Charts control | Syncfusion
-description: Area type in the Windows Forms Chart displays data as filled regions between data points and the axis to emphasize trends and values.
+description: Area type in Windows Forms displays data as connected line segments with the area between the line and the horizontal axis filled with color.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Area Chart in Windows Forms charts
-
-Area charts highlight the magnitude of change over time by rendering data in a continuous, flowing pattern rather than using discrete bars or columns. It support for alpha-blending multiple series and provide extensive customization options for the chart's appearance.
+# Area Chart in Windows Forms Charts
  
- ## Area chart
- 
-An Area chart connects data points with straight lines, creating a shaded region between the lines and the x-axis. Alpha-blending allows multiple series to be plotted on a single chart while keeping overlapping areas clearly visible.
+## Area chart
 
-N>
-Chart details for area chart.
-* Cannot be combined with - Pie, Bar, Polar, Radar, Gantt, Stacked Bar.
+An Area Chart renders data points as connected line segments and fills the area between the line and the horizontal axis with a specified color.
 
 The following code example demonstrates how to create an Area chart.
 
@@ -52,7 +46,7 @@ chartControl.Series.Add(firstServer)
 
 ![Area Chart in Windows Forms](../Chart-Types_images/windowsforms-area-chart.png)
 
-### Customization option
+### Customization options
 
 The following chart series properties are used as customization options for Area chart:
 
@@ -85,10 +79,6 @@ The following chart series properties are used as customization options for Area
 
 Step Area chart is similar to a standard area chart, but instead of connecting data points with straight lines, it uses horizontal and vertical lines to create a step-like pattern between values.
 
-N>
-Chart details for step area chart.
-* Cannot be combined with - Pie, Bar, Polar, Radar, Stacked Bar.
-
 The following code example demonstrates how to create a Step Area chart.
 
 {% tabs %}
@@ -120,7 +110,7 @@ chartControl.Series.Add(firstServer)
 
 ![Step Area Chart in Windows Forms](../Chart-Types_images/windowsforms-step-area-chart.png)
 
-### Customization option
+### Customization options
 
 The following chart series properties are used as customization options for Step Area chart:
 

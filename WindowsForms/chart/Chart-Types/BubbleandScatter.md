@@ -7,19 +7,13 @@ control: Chart
 documentation: ug
 ---
 
-# Bubble and Scatter Chart in Windows Forms Chart
-
-Bubble and Scatter(also know as XY Charts) Charts are used to visualize the relationship between two variables by plotting data points on X and Y axes. They help identify trends, patterns, and correlations. Bubble Charts extend Scatter Charts by using bubble size to represent an additional data value.
+# Bubble and Scatter in Windows Forms Chart
 
 ## Bubble chart
 
-A Bubble chart is an extension of a Scatter chart that displays three variables. The X and Y coordinates determine the position of each data point, while the size of the bubble represents a third value. 
+A Bubble Chart is an extension of a Scatter chart that displays three variables. The X and Y coordinates determine the position of each data point, while the size of the bubble represents a third value. 
 
 It is commonly used to compare and analyze relationships among multiple data sets, such as market trends and product comparisons.
-
-N>
-Chart Details
-* Cannot be combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 The following code example demonstrates how to create a Bubble Chart.
 
@@ -105,7 +99,7 @@ series.ConfigItems.BubbleItem.MaxBounds = New RectangleF(0, 0, 25, 25)
 
 ### Bubble type
 
-The [BubbleType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBubbleConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartBubbleConfigItem_BubbleType) property determines the appearance of bubbles in a Bubble chart. The supported values are [Circle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBubbleType.html#Syncfusion_Windows_Forms_Chart_ChartBubbleType_Circle), [Square](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBubbleType.html#Syncfusion_Windows_Forms_Chart_ChartBubbleType_Square), and [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBubbleType.html#Syncfusion_Windows_Forms_Chart_ChartBubbleType_Image). The default value is **Circle**.
+The [BubbleType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBubbleConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartBubbleConfigItem_BubbleType) property determines the appearance of bubbles in a Bubble chart. The supported values are [Circle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBubbleType.html#Syncfusion_Windows_Forms_Chart_ChartBubbleType_Circle), [Square](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBubbleType.html#Syncfusion_Windows_Forms_Chart_ChartBubbleType_Square), and [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBubbleType.html#Syncfusion_Windows_Forms_Chart_ChartBubbleType_Image). The default value is [Circle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBubbleType.html#Syncfusion_Windows_Forms_Chart_ChartBubbleType_Circle).
 
 The following code example demonstrates how to set the bubble type to Square.
 
@@ -143,7 +137,7 @@ chartControl.Series(0).ConfigItems.BubbleItem.EnablePhongStyle = False
 
 ![Bubble Chart Enable Phong Style in Windows Forms](../Chart-Types_images/windowsforms-bubble-phong-style-chart.png)
 
-### Customization option
+### Customization options
 
 The following chart series properties are used as customization options for Bubble chart:
 
@@ -178,9 +172,6 @@ The following chart series properties are used as customization options for Bubb
 A Scatter chart (XY Chart) displays the relationship between two numerical variables by plotting data points on X and Y axes. The points are not connected by lines. 
 
 It is useful for identifying patterns, trends, and correlations between variables. It commonly used for scientific and statistical data analysis.
-
-Chart Details
-* Cannot be combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 The following code example demonstrates how to create a Scatter Chart.
 
@@ -243,7 +234,7 @@ chartControl.Series.Add(chartSeries)
 
 ![Scatter Chart in Windows Forms](../Chart-Types_images/windowsforms-scatter-chart.png)
 
-### Customization option
+### Customization options
 
 The following chart series properties are used as customization options for Scatter chart:
 
