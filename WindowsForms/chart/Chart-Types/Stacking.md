@@ -9,23 +9,9 @@ documentation: ug
 
 # Stacking Chart in Windows Forms Charts
 
-Stacking charts are similar to regular charts except that the y values stack on top of each other in the specified series order. Stacking charts help visualize data that is a sum of parts, each of which is in a series.
-
-There are different types of stacking charts:
-
-- Stacking Column Chart
-- StackedColumn100 Chart
-- Stacking Bar Chart
-- StackedBar100 Chart
-- Stacking Area Chart
-- StackedArea100 Chart
-
 ## Stacking column chart
 
-Stacking Column chart are similar to regular column charts, except that the Y values are stacked on top of each other in the order of the series. This helps visualize how each part contributes to the whole.
-
-N>
-It cannot be combined with Pie, Bar, Stacked Bar, Polar, Radar.
+Stacking column chart are similar to regular column charts, except that the Y values are stacked on top of each other in the order of the series. This helps visualize how each part contributes to the whole.
 
 The following code example demonstrates how to create a Stacking Column Chart.
 
@@ -77,7 +63,7 @@ chartControl.Series.Add(secondServer)
 
 ![Stacking Column Chart in WindowsForms](../Chart-Types_images/windowsforms-stacking-column-chart.png)
 
-### Customization option
+### Customization options
 
 The following chart series properties are used as customization options for Stacking Column chart:
 
@@ -116,10 +102,7 @@ The following chart series properties are used as customization options for Stac
 
 ## Stacking column 100 chart
 
-This chart type presents multiple series as stacked columns so that the total proportion of all stacked elements sums to 100%. As a result, the y-axis is always displayed from 0 to 100. The following code shows how to define a stacking column100 chart in ChartControl.
-
-N>
-It cannot be combined with Doughnut, Pie, Bar, Stacked Bar charts, Polar, Radar, Pyramid, or Funnel.
+A Stacking Column 100 chart is similar to a Stacking Column chart, except that the stacked values in each column always add up to 100%.
 
 The following code example demonstrates how to create a Stacking Column 100 Chart.
 
@@ -171,7 +154,7 @@ chartControl.Series.Add(secondServer)
 
 ![Stacking Column 100 Chart in Windows Forms](../Chart-Types_images/windowsforms-stacked-column100-chart.png)
 
-### Customization option
+### Customization options
 
 The following chart series properties are used as customization options for Stacking Column 100 chart types:
 
@@ -210,10 +193,7 @@ The following chart series properties are used as customization options for Stac
 
 ## Stacking bar chart
 
-Stacking bar chart are similar to regular bar chart, but the Y values are stacked on top of each other in the specified series order. This helps visualize the relationship of parts to a whole. The following code shows how to define a stacking bar chart in ChartControl.
-
-N>
-It cannot be combined with Any chart type except Bar and Stacked Bar charts.
+Stacking bar chart are similar to regular bar chart, but the Y values are stacked on top of each other in the specified series order. This helps visualize the relationship of parts to a whole. 
 
 The following code example demonstrates how to create a Stacking Bar Chart.
 
@@ -263,7 +243,7 @@ chartControl.Series.Add(secondServer)
 
 ![Stacking Bar Chart in Windows Forms](../Chart-Types_images/windowsforms-stacking-bar-chart.png)
 
-### Customization option
+### Customization options
 
 The following chart series properties are used as customization options for Stacking Bar chart:
 
@@ -301,9 +281,7 @@ The following chart series properties are used as customization options for Stac
 
 ## Stacking bar100 chart
 
-This chart type displays multiple series of data as stacked Bars ensuring that the cumulative proportion of each stacked element always totals 100%. The y-axis will hence always be rendered with the range 0 - 100. 
-N>
-It cannot be combined with any other chart types.
+A Stacking Bar100 chart is similar to a Stacking Bar chart, except that the stacked values in each bar always add up to 100%.
 
 The following code example demonstrates how to create a Stacking Bar 100 Chart.
 
@@ -353,7 +331,7 @@ chartControl.Series.Add(secondServer)
 
 ![Stacked Bar100 Chart in Windows Forms](../Chart-Types_images/windowsforms-stacked-bar-100-chart.png)
 
-### Customization option
+### Customization options
 
 The following chart series properties are used as customization options for Stacking Bar 100 chart:
 
@@ -391,10 +369,7 @@ The following chart series properties are used as customization options for Stac
 
 ## Stacking area chart
 
-Stacking Area Chart are similar to standard area charts, but the Y-values of each series are stacked on top of one another in a specified order. This makes it easier to visualize the relationship between individual parts and the total sum.
-
-N>
-It cannot be combined with Pie, Bar, Polar, Radar, Stacked Bar.
+A Stacking Area chart is similar to a standard Area chart, but the areas of each series are stacked on top of one another in a specified order.
 
 The following code example demonstrates how to create a Stacking Area Chart.
 
@@ -446,7 +421,7 @@ chartControl.Series.Add(secondServer)
 
 ![Stacking Area Chart in Windows Forms](../Chart-Types_images/windowsforms-stacking-area-chart.png)
 
-### Customization option
+### Customization options
 
 The following chart series properties are used as customization options for Stacked Area chart:
 
@@ -477,10 +452,7 @@ The following chart series properties are used as customization options for Stac
 
 ## Stacking area100 chart
 
-This chart type displays multiple data series as stacked areas, ensuring the cumulative proportion of each element always totals 100%. Consequently, the y-axis is always rendered within the 0 to 100 range.
-
-N>
-It cannot be combined with Any other chart types.
+Stacking Area100 chart displays multiple data series as stacked areas, ensuring the cumulative proportion of each element always totals 100%. 
 
 The following code example demonstrates how to create a Stacking Area100 Chart.
 
@@ -553,7 +525,7 @@ chartControl.Series.Add(thirdServer)
 
 ![Stacking Area100 Chart in Windows Forms](../Chart-Types_images/windowsforms-stackedarea100-chart.png)
 
-### Customization option
+### Customization options
 
 The following chart series properties are used as customization options for Stacking Area 100 chart:
 

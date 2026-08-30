@@ -9,20 +9,9 @@ documentation: ug
 
 # Polar and Radar in windows Forms Charts
 
-Polar and Radar charts are used to display values and angles in a graphical format, making it easy to compare data across multiple categories.
-
-You can also customize the following features for Polar and Radar charts:
-
-* **Inversed Polar and Radar Charts**: Polar and Radar charts can be rendered in the clockwise direction using the [Inversed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_Inversed) property in [ChartAxis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html).
-* **Line Style Customization**: The solid circular lines of Polar and Radar charts can be customized using the [Pens](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_Pens) properties of the primary X and Y axes.
-
 ## Polar chart
-Polar Chart displays data using values and angles in a circular coordinate system. The X-values determine the angles of the data points, while the Y-values determine their distance from the center of the chart.
 
-It is useful for visually comparing several quantitative or qualitative aspects of a situation and for comparing multiple data sets using the same axes.
-
-N>
-It cannot be combined with any other chart types.
+Polar chart displays data using values and angles in a circular coordinate system. The X-values determine the angles of the data points, while the Y-values determine their distance from the center of the chart.
 
 The following code example demonstrates how to create a Polar Chart.
 
@@ -99,7 +88,7 @@ chartControl.PrimaryXAxis.Range = New MinMaxInfo(0, 360, 45)
 
 ![Polar Chart in Windows Forms](../Chart-Types_images/windowsforms-polar-chart.png)
 
-### Customization option
+### Customization options
 
 The following chart series properties are used as customization options for Polar chart:
 
@@ -133,12 +122,7 @@ The following chart series properties are used as customization options for Pola
 
 ## Radar chart
 
-Radar Chart displays data using radial axes that extend from a central point. Each category is plotted along its own axis, and the data points are connected to form a shape. 
-
-It is useful for comparing multiple data series, analyzing performance against ideal values, and visualizing data with a natural cyclic order, such as seasons or time periods.
-
-N>
-It cannot be combined with Any other chart types.
+Radar chart displays data using radial axes that extend from a central point. Each category is plotted along its own axis, and the data points are connected to form a shape. 
 
 The following code example demonstrates how to create a Radar Chart.
 
@@ -335,7 +319,7 @@ chartControl.RadarStyle = ChartRadarAxisStyle.Circle
 
 ![Radar Axis Style in Windows Forms](../Chart-Types_images/windowsforms-radar-chart-axis-stye.png)
 
-### Customization option
+### Customization options
 
 The following chart series properties are used as customization options for Radar chart:
 
