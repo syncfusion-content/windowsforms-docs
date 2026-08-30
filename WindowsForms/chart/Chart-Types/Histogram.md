@@ -144,7 +144,7 @@ chartControl.PrimaryYAxis.Range = New MinMaxInfo(0, 50, 10)
 
 ![Histogram Chart in Windows Forms](../Chart-Types_images/windowsforms-histogram-chart.png)
 
-### Number of intervals
+## Number of intervals
 
 The [NumberOfIntervals](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHistogramConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHistogramConfigItem_NumberOfIntervals) property specifies the number of intervals used to group data values in a Histogram chart and defaults to `10`.
 
@@ -161,7 +161,7 @@ chartControl.Series(0).ConfigItems.HistogramItem.NumberOfIntervals = 15
 
 ![Histogram Number of Intervals in Windows Forms](../Chart-Types_images/windowsforms-histogram-chart-number-of-intervals.png)
 
-### Show normal distribution
+## Show normal distribution
 
 The [ShowNormalDistribution](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHistogramConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHistogramConfigItem_ShowNormalDistribution) property controls whether a normal distribution curve is displayed on the Histogram chart and is set to `false` by default.
 
@@ -180,7 +180,7 @@ chartControl.Series(0).ConfigItems.HistogramItem.ShowNormalDistribution =
 
 ![Histogram Show Normal Distribution in Windows Forms](../Chart-Types_images/windowsforms-histogram-normal-distribution.png)
 
-### Show data points
+## Show data points
 
 The [ShowDataPoints](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHistogramConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHistogramConfigItem_ShowDataPoints) property controls whether data points are displayed on the Histogram chart and is set to `true` by default.
 

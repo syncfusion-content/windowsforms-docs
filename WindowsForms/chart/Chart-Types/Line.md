@@ -91,7 +91,7 @@ The following code example demonstrates how to disable line segments using the D
 {% highlight c# %}
 chartControl.Series[0].ConfigItems.LineItem.DisableLineRegion = true;
 {% endhighlight %}
-{% highlight vb}
+{% highlight vb %}
 chartControl.Series(0).ConfigItems.LineItem.DisableLineRegion = True
 {% endhighlight %}
 {% endtabs %}
