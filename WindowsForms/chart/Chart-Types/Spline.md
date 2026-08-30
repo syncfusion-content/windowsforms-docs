@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-## Spline Chart in Windows Forms Charts
+# Spline Chart in Windows Forms Charts
 
 ## Spline
 

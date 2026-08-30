@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Box And Whisker Chart in Windows Forms Charts control | Syncfusion
-description: Box and Whisker type in Windows Forms displays the distribution of data using boxes and lines.
+description: Box and Whisker type in Windows Forms displays data using boxes and lines to show how values are distributed across a dataset.
 platform: windowsforms
 control: Chart
 documentation: ug
