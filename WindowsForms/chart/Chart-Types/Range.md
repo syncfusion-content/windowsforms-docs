@@ -11,10 +11,7 @@ documentation: ug
 
 ## HiLo chart
 
-HiLo Chart is a financial chart commonly used to display the trading range of a stock or other data over a period. It uses two Y-values `High` and `Low` to represent the maximum and minimum values, making it easy to visualize value ranges and fluctuations.
-
-N>
-It cannot be combined with Pie, Bar, Polar, Radar, Stacked Bar.
+HiLo chart is a financial chart commonly used to display the trading range of a stock or other data over a period. It uses two Y-values `High` and `Low` to represent the maximum and minimum values, making it easy to visualize value ranges and fluctuations.
 
 The following code example demonstrates how to create a HiLo Chart.
 
@@ -80,7 +77,7 @@ profit.Style.Border.Width = 3
 
 ![HiLo Chart in WindowsForms](../Chart-Types_images/windowsforms-hilo-chart.png)
 
-### Customization option
+### Customization options
 
 The following chart series properties are used as customization options for HiLo chart:
 
@@ -109,10 +106,7 @@ The following chart series properties are used as customization options for HiLo
 
 ## Range column chart
 
-Range Column Chart is similar to the Column Chart, except that each column is rendered over a range. Therefore, the user must specify the starting and ending Y-axis values for each data point. The following code shows how to define a column range chart in ChartControl.
-
-N>
-It cannot be combined with Pie, Bar, Stacked Bar, Polar, Radar.
+The range column chart is similar to the Column Chart, except that each column is rendered over a range. Therefore, the user must specify the starting and ending Y-axis values for each data point.
 
 The following code example demonstrates how to create a Column Range Chart.
 
@@ -165,7 +159,7 @@ chartControl.Series.Add(secondServer)
 
 ![Range Column Chart in Windows Forms](../Chart-Types_images/windowsforms-column-range-chart.png)
 
-### Customization option
+### Customization options
 
 The following chart series properties are used as customization options for Column Range chart:
 
@@ -203,9 +197,7 @@ The following chart series properties are used as customization options for Colu
 
 ## Range area
 
-A Range Area Chart is similar to an Area Chart, but it requires two Y-values for each X-value: a start (lower bound) and an end (upper bound). The chart fills the area between these two values, making it easy to visualize the range of data for each point.
-
-It is commonly used to display value variations, such as the daily minimum and maximum temperature range.
+A range area chart is similar to an Area Chart, but it requires two Y-values for each X-value: a start (lower bound) and an end (upper bound). The chart fills the area between these two values, making it easy to visualize the range of data for each point.
 
 You can also customize the following feature for range area charts:
 

@@ -9,13 +9,9 @@ documentation: ug
 
 # Financial Chart in Windows Forms Charts
 
-Financial Chart types are specialized charts designed to represent financial and stock market data that contains multiple values, such as open, high, low, and close prices. They provide a clear visual representation of price movements, trends, and market performance over time, making complex financial data easier to analyze and interpret.
-
 ## HiLo open close chart
 
-HiLo Open Close Chart is a financial chart commonly used in stock market analysis. It requires four Y-values for each data point `High`, `Low`, `Open`, and `Close` to represent a stock's price movement during a specific period, providing a clear view of trading activity and market trends.
-
-N> It cannot be combined with Pie, Bar, Polar, Radar, Stacked Bar.
+A HiLo Open Close chart displays each data point as a group of horizontal lines and a vertical line representing the `High`, `Low`, `Open`, and `Close` values. 
 
 The following code example demonstrates how to create a Hilo Open Close Chart.
 
@@ -114,7 +110,7 @@ chartControl.Series(0).ConfigItems.HiLoOpenCloseItem.OpenTipColor = Color.Blue
 
 ![HiLo Open Close Open Tip Color in Windows Forms](../Chart-Types_images/windowsforms-hilo-chart-tip-open.png)
 
-### Customization option
+### Customization options
 
 The following chart series properties are used as customization options for HiLo Open Close chart:
 
@@ -142,10 +138,7 @@ The following chart series properties are used as customization options for HiLo
 
 ## Candle chart
 
-A Candle Chart displays stock information using the `High`, `Low`, `Open` and `Close` values. The Hi and Lo values are represented by the wick of a candle. The candle represents open and close values.
-
-N>
-* Cannot be combined with - Pie, Bar, Polar, Radar, Stacked Bar.
+Candle chart displays each data point using a vertical column and a vertical line based on the `High`, `Low`, `Open`, and `Close` values. The vertical line represents the High and Low values, while the column represents the Open and Close values.
 
 The following code example demonstrates how to create a Candle Chart.
 
@@ -161,6 +154,8 @@ series.Points.Add(4, 480, 300, 350, 440); // body 90
 series.Points.Add(5, 460, 270, 420, 340); // body 80
 
 chartControl.Series.Add(series);
+series.Style.Border.Width = 3;
+
 
 {% endhighlight %}
 {% highlight vb %}
@@ -175,13 +170,15 @@ series.Points.Add(4, 480, 300, 350, 440) ' Body = 90
 series.Points.Add(5, 460, 270, 420, 340) ' Body = 80
 
 chartControl.Series.Add(series)
+' Increase line thickness
+series.Style.Border.Width = 3
 
 {% endhighlight %}
 {% endtabs %}
 
 ![Candle Chart in Windows Forms](../Chart-Types_images/windowsforms-candle-chart.png)
 
-### Customization option
+### Customization options
 
 The following chart series properties are used as customization options for Candle chart:
 

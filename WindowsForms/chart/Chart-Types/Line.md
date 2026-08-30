@@ -9,18 +9,9 @@ documentation: ug
 
 # Line Chart in Windows Forms Charts
 
-Line charts typically connect data points in a series using lines. Depending on the chart type, the connecting lines can be straight, splines, or steps. Line charts are simpler and also allow you to visualize multiple series without the overlap that you may see in bar charts.
-
-You can also customize the following features for line charts:
-* **Border Settings**: Border width and border style of a line chart are customized through the [Width](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLineInfo.html#Syncfusion_Windows_Forms_Chart_ChartLineInfo_Width) and [DashStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLineInfo.html#Syncfusion_Windows_Forms_Chart_ChartLineInfo_DashStyle) properties.
-* **Point Color Settings**: Data points in a series can be set to different colors by listening to the [PrepareStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_PrepareStyle) event.
-
 ## Line chart
 
-Line chart connects data points on a plot using straight lines to show trends at equal intervals. 
-
-N>
-It cannot be combined with Pie, Bar, Stacked Bar, Polar, Radar.
+Line chart connects data points on a plot using straight lines to show trends at equal intervals.
 
 The following code example demonstrates how to create a Line Chart.
 
@@ -105,7 +96,7 @@ chartControl.Series(0).ConfigItems.LineItem.DisableLineRegion = True
 {% endhighlight %}
 {% endtabs %}
 
-### Customization option
+### Customization options
 
 The following chart series properties are used as customization options for Spline Line chart:
 
@@ -137,10 +128,7 @@ The following chart series properties are used as customization options for Spli
 
 ## Rotated spline chart
 
-A Rotated Spline Chart is similar to an ordinary Spline Chart. The only difference is that, it would be rotated. It plots one or several series of data, and joins each series by smooth, rotated spline curves instead of straight lines.
-
-N>
-It cannot be combined with Pie, Bar, Stacked Bar, Polar, Radar.
+Rotated spline chart is similar to an ordinary Spline Chart. The only difference is that, it would be rotated. It plots one or several series of data, and joins each series by smooth, rotated spline curves instead of straight lines.
 
 The following code example demonstrates how to create a Rotated Spline Line Chart.
 
@@ -223,10 +211,7 @@ The following chart series properties are used as customization options for Rota
 
 ## Step line chart
 
-Step Line Chart use horizontal and vertical lines to connect data points resulting in a step like progression.
-
-N>
-It cannot be combined with Pie, Bar, Stacked Bar, Polar, Radar.
+Step line chart use horizontal and vertical lines to connect data points resulting in a step like progression.
 
 The following code example demonstrates how to create a Step Line Chart.
 

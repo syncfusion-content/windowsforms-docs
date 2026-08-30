@@ -11,18 +11,13 @@ documentation: ug
 
 ## Pie chart
 
-A Pie Chart is used to display how different categories contribute to a whole. Each category is shown as a slice of a circle, and the size of each slice is proportional to its value. Pie charts are useful for comparing percentages or proportions of categories within a dataset. 
-
-The X-values represent categories, while the Y-values determine the size of the slices. A Pie Chart can display only one data series at a time.
+A pie chart displays data as slices of a circle to show how each value contributes to the whole. The X-values represent the categories, while the Y-values determine the size of each slice.
 
 You can also customize the following features for pie chart:
 
 * **Optimize Pie Point Positions**: Small pie slices can be arranged more effectively for better readability using the [OptimizePiePointPositions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_OptimizePiePointPositions) property.
 * **Show Ticks**: Connector lines between slices and labels can be displayed using the [ShowTicks](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ShowTicks) property.
 * **Explode Slices**: Pie and doughnut slices can be separated from the chart to emphasize specific data points using the [ExplodedAll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ExplodedAll), [ExplodedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ExplodedIndex), and [ExplosionOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ExplosionOffset) properties.
-
-N>
-It cannot be combined with any other chart types.
 
 The following code example demonstrates how to create a Pie Chart.
 
@@ -470,7 +465,30 @@ chartControl.Series(0).ConfigItems.PieItem.ShowSeriesTitle = True
 
 ![Pie Show Series Title in Windows Forms](../Chart-Types_images/windowsforms-pie-chart-pie-show-series-title.png)
 
-### Customization option
+### Height coefficient
+
+When the chart is displayed in 3D mode, the [HeightCoefficient](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_HeightCoeficient) property controls the relative height of the Pie Chart. For this property to take effect, [HeightByAreaDepth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_HeightByAreaDepth) must be set to false. Valid values range from 0.1f to 0.5f, and the default value is 0.2f.
+
+{% tabs %}
+{% highlight c# %}
+
+series.ConfigItems.PieItem.HeightByAreaDepth = false;
+
+series.ConfigItems.PieItem.HeightCoeficient = 0.1f;
+
+{% endhighlight %}
+{% highlight vb %}
+
+series.ConfigItems.PieItem.HeightByAreaDepth = False
+
+series.ConfigItems.PieItem.HeightCoeficient = 0.1F
+
+{% endhighlight %}
+{% endtabs %}
+
+![Height Coefficient in Windows Forms](../Chart-Types_images/windowsforms-chart-height-coefficient.png)
+
+### Customization options
 
 The following chart series properties are used as customization options for Pie chart:
 
@@ -514,7 +532,7 @@ The following chart series properties are used as customization options for Pie 
 
 ## Doughnut chart
 
-A Doughnut Chart is a variation of a Pie Chart that displays data as slices in a ring-shaped circle with a hollow center. It is used to show the proportion or percentage contribution of categories to the whole dataset.
+Doughnut chart is a variation of a Pie Chart that displays data as slices in a ring-shaped circle with a hollow center. It is used to show the proportion or percentage contribution of categories to the whole dataset.
 
 ### Doughnut coefficient
 
@@ -535,30 +553,7 @@ series.ConfigItems.PieItem.DoughnutCoeficient = 0.5F
 
 ![Doughnut Coefficient in Windows Forms](../Chart-Types_images/windowsforms-chart-doughnut-coefficient.png)
 
-### Height coefficient
-
-When the chart is displayed in 3D mode, the [HeightCoefficient](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_HeightCoeficient) property controls the relative height of the Doughnut Chart. For this property to take effect, [HeightByAreaDepth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_HeightByAreaDepth) must be set to false. Valid values range from 0.1f to 0.5f, and the default value is 0.2f.
-
-{% tabs %}
-{% highlight c# %}
-
-series.ConfigItems.PieItem.HeightByAreaDepth = false;
-
-series.ConfigItems.PieItem.HeightCoeficient = 0.1f;
-
-{% endhighlight %}
-{% highlight vb %}
-
-series.ConfigItems.PieItem.HeightByAreaDepth = False
-
-series.ConfigItems.PieItem.HeightCoeficient = 0.1F
-
-{% endhighlight %}
-{% endtabs %}
-
-![Height Coefficient in Windows Forms](../Chart-Types_images/windowsforms-chart-height-coefficient.png)
-
-### Customization option
+### Customization options
 
 The following chart series properties are used as customization options for Doughnut chart:
 

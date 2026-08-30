@@ -11,16 +11,7 @@ documentation: ug
 
 ## Gantt chart
 
-A project management chart that displays tasks as horizontal bars along a timeline, showing their start dates, durations, end dates, and progress. It helps track schedules, dependencies, and overall project status at a glance.
-
-The following features are supported in the Gantt chart:
-
-* **Drag and Drop**: Dragging and dropping within a chart can be enabled by handling the appropriate `Chart Region Mouse` events.
-* **Chart Custom Points**: Chart custom points are used to set custom points for a series so they can show employee task completion in terms of days.
-* **Chart Strip Lines**: Strip lines are used to highlight specific ranges or regions in a chart.
-
-N>
-It cannot be combined with Pie, Bar, Polar, Radar.
+Gantt chart displays tasks or project phases as horizontal bars along a timeline. The position and length of each bar show when a task starts and how long it lasts.
 
 The following code example demonstrates how to create a Gantt Chart.
 
@@ -78,11 +69,11 @@ chartControl.Series.Add(developmentPhase)
 
 ### Draw mode
 
-The [DrawMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartGanttConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartGanttConfigItem_DrawMode) property specifies the drawing mode of a Gantt chart, where [`ChartGanttDrawModeWidthMode`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartGanttDrawMode.html#Syncfusion_Windows_Forms_Chart_ChartGanttDrawMode_CustomPointWidthMode) is the default drawing mode.
+The [DrawMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartGanttConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartGanttConfigItem_DrawMode) property specifies the drawing mode of a Gantt chart, where [CustomPointWidthMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartGanttDrawMode.html#Syncfusion_Windows_Forms_Chart_ChartGanttDrawMode_CustomPointWidthMode) is the default drawing mode.
 
 This property supports the following values:
 
-- [CustomPointWidthMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartGanttDrawMode html#Syncfusion_Windows_Forms_Chart_ChartGanttDrawMode_CustomPointWidthMode): Renders Gantt bars as overlapped bars using the configured point width.
+- [CustomPointWidthMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartGanttDrawMode.html#Syncfusion_Windows_Forms_Chart_ChartGanttDrawMode_CustomPointWidthMode): Renders Gantt bars as overlapped bars using the configured point width.
 - [AutoSizeMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartGanttDrawMode.html#Syncfusion_Windows_Forms_Chart_ChartGanttDrawMode_AutoSizeMode): Renders Gantt bars side-by-side and automatically adjusts their width based on the available space. 
 
 The following code sets the Gantt chart to use the `AutoSizeMode` drawing mode.
@@ -98,7 +89,7 @@ chartControl.Series(0).ConfigItems.GanttItem.DrawMode = ChartGanttDrawMode.AutoS
 
 ![Gantt Draw Mode in Windows Forms](../Chart-Types_images/windowsforms-gantt-draw-mode.png)
 
-### Customization option
+### Customization options
 
 The following chart series properties are used as customization options for Gantt chart:
 
@@ -137,9 +128,6 @@ The following chart series properties are used as customization options for Gant
 ## HeatMap chart
 
 Heat map chart is a graphical representation of data where the values taken by a variable in two-dimensional map are represented as colors.
-
-N>
-It cannot be combined with any other chart types.
 
 The following code example demonstrates how to create a HeatMap chart.
 
@@ -517,10 +505,7 @@ chartControl.Series(0).ConfigItems.HeatMapItem.ShowLargeLabels =
 
 ## Kagi chart
 
-A Kagi Chart shows price trends using connected vertical lines. The line continues when the closing price moves in the same direction and reverses when the price reaches a predefined [ReversalAmount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ReversalAmount). Breaking a previous high or low changes the line color to indicate a bullish or bearish pattern. The [PriceUpColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFinancialConfigItem_PriceUpColor) and [PriceDownColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFinancialConfigItem_PriceDownColor) properties control these colors, while the column width represents trend strength.
-
-N>
-It cannot be combined with Pie, Bar.
+Kagi chart shows price trends using connected vertical lines. The line continues when the closing price moves in the same direction and reverses when the price reaches a predefined [ReversalAmount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ReversalAmount). Breaking a previous high or low changes the line color to indicate a bullish or bearish pattern. The [PriceUpColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFinancialConfigItem_PriceUpColor) and [PriceDownColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFinancialConfigItem_PriceDownColor) properties control these colors, while the column width represents trend strength.
 
 The following code example demonstrates how to create a Kagi Chart.
 
@@ -569,7 +554,7 @@ chartControl.Series.Add(series)
 
 ![kagi Chart in Windows Forms](../Chart-Types_images/windowsforms-kagi-chart.png)
 
-### Customization option
+### Customization options
 
 The following chart series properties are used as customization options for Kagi chart:
 
@@ -600,12 +585,9 @@ The following chart series properties are used as customization options for Kagi
 
 ## Point and figure
 
-A Point and Figure Chart tracks price movements while ignoring time. It uses X’s for upward trends and O’s for downward trends to identify support, resistance, and price patterns.
+Point and figure chart tracks price movements while ignoring time. It uses X’s for upward trends and O’s for downward trends to identify support, resistance, and price patterns.
 
 Use the [PriceUpColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFinancialConfigItem_PriceUpColor) property for X’s and the [PriceDownColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFinancialConfigItem_PriceDownColor) property for O’s. The default [ReversalAmount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ReversalAmount) is 1, and the chart requires high and low Y-values for each period.
-
-N>
-It cannot be combined with Pie, Bar.
 
 The following code example demonstrates how to create a Point and Figure Chart.
 
@@ -713,7 +695,7 @@ chartControl.PrimaryXAxis.DateTimeFormat = "MMM/dd"
 
 ![Point And Figure Chart in Windows Forms](../Chart-Types_images/windowsforms-point-and-figure-chart.png)
 
-### Customization option
+### Customization options
 
 The following chart series properties are used as customization options for Point and Figure chart:
 
@@ -744,12 +726,9 @@ The following chart series properties are used as customization options for Poin
 
 ## Renko chart
 
-A Renko Chart tracks price movements using equal-sized bricks while filtering out minor price changes. A new brick is added only when the price moves by the specified [ReversalAmount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ReversalAmount), which defaults to 1.
+Renko chart tracks price movements using equal-sized bricks while filtering out minor price changes. A new brick is added only when the price moves by the specified [ReversalAmount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ReversalAmount), which defaults to 1.
 
 The brick color changes when the trend reverses, showing the new trend direction. Use the [PriceUpColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFinancialConfigItem_PriceUpColor) property for bullish trends and the [PriceDownColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFinancialConfigItem_PriceDownColor) property for bearish trends. Renko Charts help identify trends, support levels, and resistance levels.
-
-N>
-It cannot be combined with Pie, Bar.
 
 The following code example demonstrates how to create a Renko Chart.
 
@@ -822,7 +801,7 @@ chartControl.PrimaryYAxis.Format = "$ #"
 
 ![Renko Chart in Windows Forms](../Chart-Types_images/windowsforms-renko-chart.png)
 
-### Customization option
+### Customization options
 
 The following chart series properties are used as customization options for Renko chart:
 
@@ -858,12 +837,9 @@ The following chart series properties are used as customization options for Renk
 
 ## Three line break
 
-A Three Line Break Chart tracks price movements using vertical boxes while ignoring time. A rising box is added when the price exceeds the previous high, while a falling box is added when the price reaches a new low.
+Three line break chart tracks price movements using vertical boxes while ignoring time. A rising box is added when the price exceeds the previous high, while a falling box is added when the price reaches a new low.
 
 The box color changes to indicate a trend reversal. Use the [PriceUpColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFinancialConfigItem_PriceUpColor) property for bullish trends and the [PriceDownColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFinancialConfigItem_PriceDownColor) property for bearish trends. The [ReversalAmount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ReversalAmount) property defines the price change required to draw a new box.
-
-N>
-It cannot be combined with Pie, Bar.
 
 The following code example demonstrates how to create a Three Line Break Chart.
 
@@ -969,14 +945,11 @@ The following chart series properties are used as customization options for Thre
 
 ## Tornado chart
 
-A Tornado chart is a bar chart that illustrates how changes in different input variables affect an outcome. It is commonly used in sensitivity analysis to compare the impact of multiple factors and identify which variables have the greatest influence on the final result.
+Tornado chart displays data points as horizontal bars that extend in different directions based on their values.
 
 The following feature is supported in the Tornado chart:
 
 * **Chart Axis Labels**: The axis labels of a chart can be set by handling the [ChartFormatAxisLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ChartFormatAxisLabel) event.
-
-N>
-It cannot be combined with Pie, Bar, Polar, Radar.
 
 The following code example demonstrates how to create a Tornado Chart.
 
@@ -1031,7 +1004,7 @@ chartControl.Series.Add(negativeImpact)
 
 ![Tornado Chart in Windows Forms](../Chart-Types_images/windowsforms-tornado-chart.png)
 
-### Customization option
+### Customization options
 
 The following chart series properties are used as customization options for Tornado chart types:
 

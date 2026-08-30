@@ -9,9 +9,7 @@ documentation: ug
 
 # Histogram Chart in Windows Forms Charts
 
-A Histogram chart displays the frequency distribution of data by grouping values into continuous intervals and representing them with adjacent bars. It helps analyze the shape, spread, and patterns of a dataset, making trends and variations easier to understand.
-
-N> It cannot be combined with Pie, Bar, Polar, Radar.
+A Histogram chart displays the frequency distribution of data by grouping values into continuous intervals and representing them with adjacent bars.
 
 The following code example demonstrates how to create a Histogram Chart.
 
@@ -199,7 +197,7 @@ chartControl.Series(0).ConfigItems.HistogramItem.ShowDataPoints = False
 
 ![Histogram Show Number Distribution in Windows Forms](../Chart-Types_images/windowsforms-histogram-show-data-points.png)
 
-## Customization option
+## Customization options
 
 The following chart series properties are used as customization options for Histogram chart:
 
