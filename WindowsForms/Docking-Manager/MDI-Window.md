@@ -7,17 +7,17 @@ control: DockingManager
 documentation: ug
 ---
 
-# MDI Window in Windows Forms Docking Manager
+# MDI Window in WinForms Docking Control
 
-Provides support for residing multiple windows under a single parent window in the docking manager.
+Provides support for residing multiple windows under a single parent window in the WinForms Docking Control.
 
 ## Enable MDI container
 
-To enable MDI functionalities in the docking manager, the `IsMdIContainer` property of its parent form should be `true`.
+To enable MDI functionalities in the WinForms Docking Control, the `IsMdIContainer` property of its parent form should be `true`.
 
 ## Make MDI child
 
-[SetAsMDIChild](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SetAsMDIChild_System_Windows_Forms_Control_System_Boolean_) function helps to set the docking window to the MDIChild window in the docking manager. You can set the docked control as an MDI child by using the `MDI Child` option in the context menu.
+[SetAsMDIChild](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SetAsMDIChild_System_Windows_Forms_Control_System_Boolean_) function helps to set the docking window to the MDIChild window in the WinForms Docking Control. You can set the docked control as an MDI child by using the `MDI Child` option in the context menu.
 
 ![Option to make MDI windows in DockingManager](MDI_Window_images/MDI_Window_img3.png) 
 
@@ -53,7 +53,7 @@ C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Wi
 
 ## Make tabbed MDI child using client control
 
-[SetAsMDIChild](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SetAsMDIChild_System_Windows_Forms_Control_System_Boolean_) function helps to set the docking window to the tabbed MDIChild window in the docking manager using the [TabbedMDIManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html) control. You can set the docked control as an MDI child easily by using the `Tabbed document` option in the context menu. To enable this option, attach the parent form of docking manager to MDI container of TabbedMDIManager by using [AttachToMdiContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_AttachToMdiContainer_System_Windows_Forms_Form_).
+[SetAsMDIChild](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SetAsMDIChild_System_Windows_Forms_Control_System_Boolean_) function helps to set the docking window to the tabbed MDIChild window in the WinForms Docking Control using the [TabbedMDIManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html) control. You can set the docked control as an MDI child easily by using the `Tabbed document` option in the context menu. To enable this option, attach the parent form of WinForms Docking Control to MDI container of TabbedMDIManager by using [AttachToMdiContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_AttachToMdiContainer_System_Windows_Forms_Form_).
 
 ![Option to create tabbed documents in DockingManager](MDI_Window_images/MDI_Window_img2.png) 
 
@@ -109,7 +109,7 @@ C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Wi
 
 ## Add icon in caption
 
-[SetMDIChildIcon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SetMDIChildIcon_System_Windows_Forms_Control_System_Drawing_Icon_) function helps to set custom icons in the caption bar of MDIChild window in the docking manager.
+[SetMDIChildIcon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SetMDIChildIcon_System_Windows_Forms_Control_System_Drawing_Icon_) function helps to set custom icons in the caption bar of MDIChild window in the WinForms Docking Control.
 
 {% tabs %}
 
@@ -176,7 +176,7 @@ End Function
 
 ## Change MDI window size
 
-[SetAsMDIChild](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SetAsMDIChild_System_Windows_Forms_Control_System_Boolean_) function helps to change the size of MDI window in the docking manager.
+[SetAsMDIChild](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SetAsMDIChild_System_Windows_Forms_Control_System_Boolean_) function helps to change the size of MDI window in the WinForms Docking Control.
 
 {% tabs %}
 
@@ -262,7 +262,7 @@ Me.dockingManager1.Office2007MdiColorScheme = Office2007Theme.Silver
 
 ## Identify control is in MDI mode or not
 
-The docking manager [IsMDIMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_IsMDIMode_System_Windows_Forms_Control_) function is used to determine the MDI state of a docked window. This function takes the control as its argument and returns `true` when the specified control is in MDI child mode. Otherwise, it returns `false`.
+The WinForms Docking Control [IsMDIMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_IsMDIMode_System_Windows_Forms_Control_) function is used to determine the MDI state of a docked window. This function takes the control as its argument and returns `true` when the specified control is in MDI child mode. Otherwise, it returns `false`.
 
 {% tabs %}
 
