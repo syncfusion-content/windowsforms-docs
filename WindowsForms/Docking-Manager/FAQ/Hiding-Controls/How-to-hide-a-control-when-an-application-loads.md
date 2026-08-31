@@ -7,7 +7,7 @@ control: DockingManager
 documentation: ug
 ---
 
-# How to hide on load in Windows Forms Docking Manager
+# How to hide on load in WinForms Docking Control
 
 This is done programmatically, by calling `SetHiddenOnLoad` method or through Designer, by setting `HiddenOnLoad` property to `true`.
 

@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# How to make float only in Windows Forms Docking Manager
+# How to make float only in WinForms Docking Control
 
 The docked control can also be only floating and cannot be docked, by calling the `SetFloatOnly` method.
 

@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# How to restore layout in Windows Forms Docking Manager
+# How to restore layout in WinForms Docking Control
 
 Calling `LoadDesignerDockState()` method at run time, will restore the docking windows layout that was set in the Designer.
 

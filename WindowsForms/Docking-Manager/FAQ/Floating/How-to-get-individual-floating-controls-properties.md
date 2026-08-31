@@ -7,11 +7,11 @@ control: DockingManager
 documentation: ug
 ---
 
-# How to get float info in Windows Forms Docking Manager
+# How to get float info in WinForms Docking Control
 
 To get the x,y coordinates of the control if it is in floating state,
 
-1. Add a list view and a docking manager to your form.
+1. Add a list view and a WinForms Docking Control to your form.
 2. Enable the list view as a dock control.
 
 {% capture codesnippet1 %}

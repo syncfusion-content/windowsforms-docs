@@ -8,13 +8,13 @@ documentation: ug
 ---
 
 
-# How to enable tabbed in Windows Forms Docking Manager
+# How to enable tabbed in WinForms Docking Control
 
 The Tabbed MDI Package provides a new Tabbed MDI layout mode (as an alternative to the default Cascade and Tiled modes), popularized by VS .NET. 
 
 We can enable and attach the dockable window into the Tabbed MDI manager during application startup using the following simple steps.
 
-* Add 4 panels and the DockingManager to your application.
+* Add 4 panels and the WinForms Docking Control to your application.
 * Declare the TabbedMDIManager.
 
 {% capture codesnippet1 %}

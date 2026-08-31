@@ -7,7 +7,7 @@ control: DockingManager
 documentation: ug
 ---
 
-# How to set dock ability in Windows Forms Docking Manager
+# How to set dock ability in WinForms Docking Control
 
 The current dock ability for the controls can be retrieved or set using the below methods.
 

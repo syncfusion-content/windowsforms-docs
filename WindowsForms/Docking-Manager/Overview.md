@@ -7,9 +7,9 @@ control: DockingManager
 documentation: ug
 ---
 
-# About Syncfusion® Windows Forms Docking Manager Control
+# About Syncfusion® WinForms Docking Control
 
-The `DockingManager` control implements an architecture that allows panels to be docked at any part of form. The dock panels containing child elements can be interactively dragged to any area within screen and can be resized at run time. Panels can be docked to the form's edges or to other panels. Dock panels can also be floated, tabbed, and auto hidden.
+The `WinForms Docking Control` control implements an architecture that allows panels to be docked at any part of form. The dock panels containing child elements can be interactively dragged to any area within screen and can be resized at run time. Panels can be docked to the form's edges or to other panels. Dock panels can also be floated, tabbed, and auto hidden.
 
 ![Visual Style Dock windows in DockingManager](GettingStarted_images/VisualStudioDemo.png)
 
@@ -17,10 +17,10 @@ The `DockingManager` control implements an architecture that allows panels to be
 
 * [DockState](https://help.syncfusion.com/windowsforms/docking-manager/getting-started#change-dock-state-of-child): Supports different dock states such as docking, floating, auto hide, and tabbed.
 * [Dock ability](https://help.syncfusion.com/windowsforms/docking-manager/dealing-with-docking-child#restrict-to-dock-on-specific-sides): Provides extensive support to dock the elements at any side relative to form or other dock panels and allows users to restrict only dock at specific side.
-* [MDI](https://help.syncfusion.com/windowsforms/docking-manager/mdi-window): Allows multiple windows to reside under a single parent window in the docking manager.
+* [MDI](https://help.syncfusion.com/windowsforms/docking-manager/mdi-window): Allows multiple windows to reside under a single parent window in the WinForms Docking Control.
 * [Serialization](https://help.syncfusion.com/windowsforms/docking-manager/serialization): Allows to save and restore dock panels states in different formats such as binary and XML.
-* [Nested layout](https://help.syncfusion.com/windowsforms/docking-manager/linked-and-nested-dockingmanager#nested-dockingmanager): Provides complete support to add the docking manager as a child window to another docking manager.
-* [Linked manager](https://help.syncfusion.com/windowsforms/docking-manager/linked-and-nested-dockingmanager#enable-linked-manager): Supports to drag and drop the dock panels between different docking managers.
+* [Nested layout](https://help.syncfusion.com/windowsforms/docking-manager/linked-and-nested-dockingmanager#nested-dockingmanager): Provides complete support to add the WinForms Docking Control as a child window to another.
+* [Linked manager](https://help.syncfusion.com/windowsforms/docking-manager/linked-and-nested-dockingmanager#enable-linked-manager): Supports to drag and drop the dock panels between different WinForms Docking Controls.
 * [Drag providers](https://help.syncfusion.com/windowsforms/docking-manager/appearance#change-dock-provider-styles): Supports various styles of drag providers.
 * [ContextMenu support](https://help.syncfusion.com/windowsforms/docking-manager/dock-window#enable--disable-the-context-menu): Provides built-in ContextMenu support for caption bar, tabbed controls, and auto hidden tabs to change the states.
 * [Theming](https://help.syncfusion.com/windowsforms/docking-manager/appearance#visual-styles): Supports several built-in themes such as Metro, Office2016, etc.

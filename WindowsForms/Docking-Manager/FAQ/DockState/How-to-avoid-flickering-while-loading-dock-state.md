@@ -7,7 +7,7 @@ control: DockingManager
 documentation: ug
 ---
 
-# How to avoid flicker in Windows Forms Docking Manager
+# How to avoid flicker in WinForms Docking Control
 
 Flickering can be avoided by calling the below methods.
 

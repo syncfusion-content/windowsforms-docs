@@ -7,11 +7,11 @@ control: DockingManager
 documentation: ug
 ---
 
-# Localization in Windows Forms Docking Manager
+# Localization in WinForms Docking Control
 
-Localization is the process of translating the application resources into different languages for specific cultures. `DockingManager` supports complete localization to any desired language of header and context menus of docking child windows. It can be localized by using [ILocalizationProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ILocalizationProvider.html).
+Localization is the process of translating the application resources into different languages for specific cultures. `WinForms Docking Control` supports complete localization to any desired language of header and context menus of docking child windows. It can be localized by using [ILocalizationProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ILocalizationProvider.html).
 
-The following steps help to localize the header and context menus of docking child windows in the docking manager:
+The following steps help to localize the header and context menus of docking child windows in the WinForms Docking Control:
 
 **Step 1:** Include the required namespaces at the beginning of the file.
 
@@ -51,7 +51,7 @@ LocalizationProvider.Provider = New Localizer()
 
 {% endtabs %}  
 
-**Step 3:** Add the GetLocalizedString function in the [LocalizationProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.LocalizationProvider.html) class in which the localization content is provided for required components that are used in the docking manager.
+**Step 3:** Add the GetLocalizedString function in the [LocalizationProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.LocalizationProvider.html) class in which the localization content is provided for required components that are used in the WinForms Docking Control.
 
 For example: Header and ContextMenu of docking child windows are localized in Chinese Language.
 
@@ -96,7 +96,7 @@ Me.dockingManager.SetDockLabel(panel4, "产量");
 
 **Localize ContextMenu options**
 
-The following code example illustrates how to localize the context menus of docking child windows in the docking manager.
+The following code example illustrates how to localize the context menus of docking child windows in the WinForms Docking Control.
 
 {% tabs %}
 
@@ -198,5 +198,5 @@ End Function
 
 ![Localization_img2](Localization_images/Localization_img2.png) 
 
-N> Refer to the following sample link that demonstrates the localization support in the docking manager.
+N> Refer to the following sample link that demonstrates the localization support in the WinForms Docking Control.
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\Windows\Tools.Windows\Samples\Docking manager\Localization
