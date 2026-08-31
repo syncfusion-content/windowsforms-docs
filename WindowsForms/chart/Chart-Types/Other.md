@@ -11,9 +11,9 @@ documentation: ug
 
 ## Gantt chart
 
-Gantt chart displays tasks or project phases as horizontal bars along a timeline. The position and length of each bar show when a task starts and how long it lasts.
+A gantt chart displays tasks or project phases as horizontal bars along a timeline. The position and length of each bar show when a task starts and how long it lasts.
 
-The following code example demonstrates how to create a Gantt Chart.
+The following code example demonstrates how to create a gantt Chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -69,14 +69,14 @@ chartControl.Series.Add(developmentPhase)
 
 ### Draw mode
 
-The [DrawMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartGanttConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartGanttConfigItem_DrawMode) property specifies the drawing mode of a Gantt chart, where [CustomPointWidthMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartGanttDrawMode.html#Syncfusion_Windows_Forms_Chart_ChartGanttDrawMode_CustomPointWidthMode) is the default drawing mode.
+The [DrawMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartGanttConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartGanttConfigItem_DrawMode) property specifies the drawing mode of a gantt chart, where [CustomPointWidthMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartGanttDrawMode.html#Syncfusion_Windows_Forms_Chart_ChartGanttDrawMode_CustomPointWidthMode) is the default drawing mode.
 
 This property supports the following values:
 
-- [CustomPointWidthMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartGanttDrawMode.html#Syncfusion_Windows_Forms_Chart_ChartGanttDrawMode_CustomPointWidthMode): Renders Gantt bars as overlapped bars using the configured point width.
-- [AutoSizeMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartGanttDrawMode.html#Syncfusion_Windows_Forms_Chart_ChartGanttDrawMode_AutoSizeMode): Renders Gantt bars side-by-side and automatically adjusts their width based on the available space. 
+- [CustomPointWidthMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartGanttDrawMode.html#Syncfusion_Windows_Forms_Chart_ChartGanttDrawMode_CustomPointWidthMode): Renders gantt bars as overlapped bars using the configured point width.
+- [AutoSizeMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartGanttDrawMode.html#Syncfusion_Windows_Forms_Chart_ChartGanttDrawMode_AutoSizeMode): Renders gantt bars side-by-side and automatically adjusts their width based on the available space. 
 
-The following code sets the Gantt chart to use the `AutoSizeMode` drawing mode.
+The following code sets the gantt chart to use the `AutoSizeMode` drawing mode.
 
 {% tabs %}
 {% highlight c# %}
@@ -91,7 +91,7 @@ chartControl.Series(0).ConfigItems.GanttItem.DrawMode = ChartGanttDrawMode.AutoS
 
 ### Customization options
 
-The following chart series properties are used as customization options for Gantt chart:
+The following chart series properties are used as customization options for gantt chart:
 
 - [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border)
 - [ColumnDrawMode](https://help.syncfusion.com/windowsforms/chart/chart-series#columndrawmode)
@@ -127,9 +127,9 @@ The following chart series properties are used as customization options for Gant
 
 ## HeatMap chart
 
-Heat map chart is a graphical representation of data where the values taken by a variable in two-dimensional map are represented as colors.
+A heat map chart is a graphical representation of data where the values taken by a variable in two-dimensional map are represented as colors.
 
-The following code example demonstrates how to create a HeatMap chart.
+The following code example demonstrates how to create a heat map chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -238,15 +238,15 @@ Stocks.ConfigItems.HeatMapItem.EndText = "Utah"
 
 ### Heat map style
 
-The [HeatMapStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_HeatMapStyle) property specifies the layout style of the Heat Map chart, with [Rectangular](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapLayoutStyle.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapLayoutStyle_Rectangular) as its default value.
+The [HeatMapStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_HeatMapStyle) property specifies the layout style of the heat map chart, with [Rectangular](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapLayoutStyle.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapLayoutStyle_Rectangular) as its default value.
 
 The supported values are:
 
-- [Rectangular](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapLayoutStyle.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapLayoutStyle_Rectangular): Arranges the Heat Map cells in a rectangular layout.
-- [Vertical](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapLayoutStyle.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapLayoutStyle_Vertical): Arranges the Heat Map cells in a vertical layout.
-- [Horizontal](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapLayoutStyle.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapLayoutStyle_Horizontal): Arranges the Heat Map cells in a horizontal layout.
+- [Rectangular](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapLayoutStyle.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapLayoutStyle_Rectangular): Arranges the heat map cells in a rectangular layout.
+- [Vertical](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapLayoutStyle.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapLayoutStyle_Vertical): Arranges the heat map cells in a vertical layout.
+- [Horizontal](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapLayoutStyle.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapLayoutStyle_Horizontal): Arranges the heat map cells in a horizontal layout.
 
-The following code applies the `Horizontal` layout style to the Heat Map chart.
+The following code applies the `Horizontal` layout style to the heat map chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -261,7 +261,7 @@ chartControl.Series(0).ConfigItems.HeatMapItem.HeatMapStyle = ChartHeatMapLayout
 
 ### Display color swatch
 
-The [DisplayColorSwatch](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_DisplayColorSwatch) property specifies whether the color swatch is displayed in the Heat Map chart, with `true` as its default value.
+The [DisplayColorSwatch](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_DisplayColorSwatch) property specifies whether the color swatch is displayed in the heat map chart, with `true` as its default value.
 
 The following code hides the color swatch.
 
@@ -329,7 +329,7 @@ chartControl.Series(0).ConfigItems.HeatMapItem.EndText = "Utah"
 
 ### Lowest value color
 
-The [LowestValueColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_LowestValueColor) property specifies the color used to represent the lowest value in the Heat Map chart, with `Red` as its default value.
+The [LowestValueColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_LowestValueColor) property specifies the color used to represent the lowest value in the heat map chart, with `Red` as its default value.
 
 The following code sets the lowest-value color to **Green**.
 
@@ -346,7 +346,7 @@ chartControl.Series(0).ConfigItems.HeatMapItem.LowestValueColor = Color.Green
 
 ### Middle value color
 
-The [MiddleValueColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_MiddleValueColor) property specifies the color used to represent the middle value in the Heat Map chart, with `Yellow` as its default value.
+The [MiddleValueColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_MiddleValueColor) property specifies the color used to represent the middle value in the heat map chart, with `Yellow` as its default value.
 
 The following code sets the middle-value color to `Orange`.
 
@@ -363,7 +363,7 @@ chartControl.Series(0).ConfigItems.HeatMapItem.MiddleValueColor = Color.Orange
 
 ### Highest value color
 
-The [HighestValueColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_HighestValueColor) property specifies the color used to represent the highest value in the Heat Map chart, with `Blue` as its default value.
+The [HighestValueColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_HighestValueColor) property specifies the color used to represent the highest value in the heat map chart, with `Blue` as its default value.
 
 The following code sets the highest-value color to `Purple`.
 
@@ -397,7 +397,7 @@ chartControl.Series(0).ConfigItems.HeatMapItem.LabelMargins = 15.0F
 
 ### Allow labels auto fit
 
-The [AllowLabelsAutoFit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_AllowLabelsAutoFit) property specifies whether Heat Map labels are automatically resized to fit within the available space, with `true` as its default value.
+The [AllowLabelsAutoFit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_AllowLabelsAutoFit) property specifies whether heat map labels are automatically resized to fit within the available space, with `true` as its default value.
 
 The following code disables automatic label resizing.
 
@@ -414,7 +414,7 @@ chartControl.Series(0).ConfigItems.HeatMapItem.AllowLabelsAutoFit = False
 
 ### Enable label rotation
 
-The [EnableLabelRotation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_EnableLabelRotation) property specifies whether Heat Map labels can be rotated to fit within the available space, with `true` as its default value.
+The [EnableLabelRotation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_EnableLabelRotation) property specifies whether heat map labels can be rotated to fit within the available space, with `true` as its default value.
 
 The following code disables label rotation.
 
@@ -450,11 +450,11 @@ chartControl.Series(0).ConfigItems.HeatMapItem.EnableLabelsTruncation = True
 
 ### Maximum characters
 
-The [MaximumCharacters](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_MaximumCharacters) property specifies the maximum number of characters displayed in a Heat Map label, with **-1** as its default value, indicating that no character limit is applied.
+The [MaximumCharacters](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_MaximumCharacters) property specifies the maximum number of characters displayed in a heat map label, with **-1** as its default value, indicating that no character limit is applied.
 
 N> [MaximumCharacters](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_MaximumCharacters) applicable only when [EnableLabelsTruncation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_EnableLabelsTruncation) is set to `true`.
 
-The following code limits each Heat Map label to **3** characters.
+The following code limits each heat map label to **3** characters.
 
 {% tabs %}
 {% highlight c# %}
@@ -469,7 +469,7 @@ chartControl.Series(0).ConfigItems.HeatMapItem.MaximumCharacters = 3
 
 ### Minimum font size
 
-The [MinimumFontSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_MinimumFontSize) property specifies the minimum font size used when Heat Map labels are automatically resized, with `6f` as its default value.
+The [MinimumFontSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_MinimumFontSize) property specifies the minimum font size used when heat map labels are automatically resized, with `6f` as its default value.
 
 The following code sets the minimum label font size to **8f**.
 
@@ -505,9 +505,9 @@ chartControl.Series(0).ConfigItems.HeatMapItem.ShowLargeLabels =
 
 ## Kagi chart
 
-Kagi chart shows price trends using connected vertical lines. The line continues when the closing price moves in the same direction and reverses when the price reaches a predefined [ReversalAmount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ReversalAmount). Breaking a previous high or low changes the line color to indicate a bullish or bearish pattern. The [PriceUpColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFinancialConfigItem_PriceUpColor) and [PriceDownColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFinancialConfigItem_PriceDownColor) properties control these colors, while the column width represents trend strength.
+A kagi chart shows price trends using connected vertical lines. The line continues when the closing price moves in the same direction and reverses when the price reaches a predefined [ReversalAmount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ReversalAmount). Breaking a previous high or low changes the line color to indicate a bullish or bearish pattern. The [PriceUpColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFinancialConfigItem_PriceUpColor) and [PriceDownColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFinancialConfigItem_PriceDownColor) properties control these colors, while the column width represents trend strength.
 
-The following code example demonstrates how to create a Kagi Chart.
+The following code example demonstrates how to create a kagi Chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -556,7 +556,7 @@ chartControl.Series.Add(series)
 
 ### Customization options
 
-The following chart series properties are used as customization options for Kagi chart:
+The following chart series properties are used as customization options for kagi chart:
 
 - [DisplayShadow](https://help.syncfusion.com/windowsforms/chart/chart-series#displayshadow)
 - [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
@@ -585,11 +585,11 @@ The following chart series properties are used as customization options for Kagi
 
 ## Point and figure
 
-Point and figure chart tracks price movements while ignoring time. It uses X’s for upward trends and O’s for downward trends to identify support, resistance, and price patterns.
+A point and figure chart tracks price movements while ignoring time. It uses X’s for upward trends and O’s for downward trends to identify support, resistance, and price patterns.
 
 Use the [PriceUpColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFinancialConfigItem_PriceUpColor) property for X’s and the [PriceDownColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFinancialConfigItem_PriceDownColor) property for O’s. The default [ReversalAmount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ReversalAmount) is 1, and the chart requires high and low Y-values for each period.
 
-The following code example demonstrates how to create a Point and Figure Chart.
+The following code example demonstrates how to create a point and figure Chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -697,7 +697,7 @@ chartControl.PrimaryXAxis.DateTimeFormat = "MMM/dd"
 
 ### Customization options
 
-The following chart series properties are used as customization options for Point and Figure chart:
+The following chart series properties are used as customization options for point and figure chart:
 
 - [DisplayShadow](https://help.syncfusion.com/windowsforms/chart/chart-series#displayshadow)
 - [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
@@ -726,11 +726,11 @@ The following chart series properties are used as customization options for Poin
 
 ## Renko chart
 
-Renko chart tracks price movements using equal-sized bricks while filtering out minor price changes. A new brick is added only when the price moves by the specified [ReversalAmount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ReversalAmount), which defaults to 1.
+A renko chart tracks price movements using equal-sized bricks while filtering out minor price changes. A new brick is added only when the price moves by the specified [ReversalAmount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ReversalAmount), which defaults to 1.
 
 The brick color changes when the trend reverses, showing the new trend direction. Use the [PriceUpColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFinancialConfigItem_PriceUpColor) property for bullish trends and the [PriceDownColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFinancialConfigItem_PriceDownColor) property for bearish trends. Renko Charts help identify trends, support levels, and resistance levels.
 
-The following code example demonstrates how to create a Renko Chart.
+The following code example demonstrates how to create a renko Chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -803,7 +803,7 @@ chartControl.PrimaryYAxis.Format = "$ #"
 
 ### Customization options
 
-The following chart series properties are used as customization options for Renko chart:
+The following chart series properties are used as customization options for renko chart:
 
 - [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border)
 - [ColorsMode](https://help.syncfusion.com/windowsforms/chart/chart-series#colorsmode)
@@ -837,11 +837,11 @@ The following chart series properties are used as customization options for Renk
 
 ## Three line break
 
-Three line break chart tracks price movements using vertical boxes while ignoring time. A rising box is added when the price exceeds the previous high, while a falling box is added when the price reaches a new low.
+The three line break chart tracks price movements using vertical boxes while ignoring time. A rising box is added when the price exceeds the previous high, while a falling box is added when the price reaches a new low.
 
 The box color changes to indicate a trend reversal. Use the [PriceUpColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFinancialConfigItem_PriceUpColor) property for bullish trends and the [PriceDownColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFinancialConfigItem_PriceDownColor) property for bearish trends. The [ReversalAmount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ReversalAmount) property defines the price change required to draw a new box.
 
-The following code example demonstrates how to create a Three Line Break Chart.
+The following code example demonstrates how to create a three line break chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -915,7 +915,7 @@ chartControl.Series.Add(series)
 
 ### Customization option
 
-The following chart series properties are used as customization options for Three Line Break chart:
+The following chart series properties are used as customization options for three line break chart:
 
 - [DisplayShadow](https://help.syncfusion.com/windowsforms/chart/chart-series#displayshadow)
 - [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
@@ -945,13 +945,13 @@ The following chart series properties are used as customization options for Thre
 
 ## Tornado chart
 
-Tornado chart displays data points as horizontal bars that extend in different directions based on their values.
+The tornado chart displays data points as horizontal bars that extend in different directions based on their values.
 
-The following feature is supported in the Tornado chart:
+The following feature is supported in the tornado chart:
 
 * **Chart Axis Labels**: The axis labels of a chart can be set by handling the [ChartFormatAxisLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ChartFormatAxisLabel) event.
 
-The following code example demonstrates how to create a Tornado Chart.
+The following code example demonstrates how to create a tornado Chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -1006,7 +1006,7 @@ chartControl.Series.Add(negativeImpact)
 
 ### Customization options
 
-The following chart series properties are used as customization options for Tornado chart types:
+The following chart series properties are used as customization options for tornado chart types:
 
 - [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border)
 - [DisplayShadow](https://help.syncfusion.com/windowsforms/chart/chart-series#displayshadow)

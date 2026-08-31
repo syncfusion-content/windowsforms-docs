@@ -11,9 +11,9 @@ documentation: ug
 
 ## Line chart
 
-Line chart connects data points on a plot using straight lines to show trends at equal intervals.
+A line chart connects data points on a plot using straight lines to show trends at equal intervals.
 
-The following code example demonstrates how to create a Line Chart.
+The following code example demonstrates how to create a line Chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -65,7 +65,7 @@ chartControl.Series.Add(secondServer)
 
 ### Disable line cap
 
-The [DisableLineCap](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLineConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartLineConfigItem_DisableLineCap) property controls whether line caps are disabled when rendering Line and Spline series. By default, this property is set to `false`, which renders line caps for line segments.
+The [DisableLineCap](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLineConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartLineConfigItem_DisableLineCap) property controls whether line caps are disabled when rendering line and spline series. By default, this property is set to `false`, which renders line caps for line segments.
 
 The following code example demonstrates how to disable line caps using the DisableLineCap property.
 
@@ -82,7 +82,7 @@ chartControl.Series(0).ConfigItems.LineItem.DisableLineCap = True
 
 ### Disable line region
 
-The [DisableLineRegion](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLineConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartLineConfigItem_DisableLineRegion) property controls whether the line segments connecting adjacent data points are disabled in Line and Spline series.
+The [DisableLineRegion](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLineConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartLineConfigItem_DisableLineRegion) property controls whether the line segments connecting adjacent data points are disabled in line and spline series.
 By default, this property is set to `false`, which renders line segments between data points.
 
 The following code example demonstrates how to disable line segments using the DisableLineRegion property.
@@ -98,7 +98,7 @@ chartControl.Series(0).ConfigItems.LineItem.DisableLineRegion = True
 
 ### Customization options
 
-The following chart series properties are used as customization options for Spline Line chart:
+The following chart series properties are used as customization options for spline line chart:
 
 - [DisplayShadow](https://help.syncfusion.com/windowsforms/chart/chart-series#displayshadow)
 - [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
@@ -128,9 +128,9 @@ The following chart series properties are used as customization options for Spli
 
 ## Rotated spline chart
 
-Rotated spline chart is similar to an ordinary Spline Chart. The only difference is that, it would be rotated. It plots one or several series of data, and joins each series by smooth, rotated spline curves instead of straight lines.
+The rotated spline chart is similar to an ordinary spline chart. The only difference is that, it would be rotated. It plots one or several series of data, and joins each series by smooth, rotated spline curves instead of straight lines.
 
-The following code example demonstrates how to create a Rotated Spline Line Chart.
+The following code example demonstrates how to create a rotated spline line chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -182,7 +182,7 @@ chartControl.Series.Add(secondServer)
 
 ### Customization option
 
-The following chart series properties are used as customization options for Rotated Spline chart:
+The following chart series properties are used as customization options for rotated spline chart:
 
 - [DisplayShadow](https://help.syncfusion.com/windowsforms/chart/chart-series#displayshadow)
 - [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
@@ -211,9 +211,9 @@ The following chart series properties are used as customization options for Rota
 
 ## Step line chart
 
-Step line chart use horizontal and vertical lines to connect data points resulting in a step like progression.
+A step line chart use horizontal and vertical lines to connect data points resulting in a step like progression.
 
-The following code example demonstrates how to create a Step Line Chart.
+The following code example demonstrates how to create a step line Chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -269,7 +269,7 @@ chartControl.Series.Add(secondServer)
 
 ### Inverted
 
-The [Inverted](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStepConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartStepConfigItem_Inverted) property specifies whether the step line is rendered in an inverted direction in a Step chart, with `false` used as the default value.
+The [Inverted](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStepConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartStepConfigItem_Inverted) property specifies whether the step line is rendered in an inverted direction in a step chart, with `false` used as the default value.
 
 The following code enables inverted step-line rendering.
 
@@ -310,7 +310,7 @@ chartControl.Series(0).ConfigItems.StepItem.Inverted = True
 
 ### Customization option
 
-The following chart series properties are used as customization options for Step Line chart:
+The following chart series properties are used as customization options for step line chart:
 
 - [DisplayShadow](https://help.syncfusion.com/windowsforms/chart/chart-series#displayshadow)
 - [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)

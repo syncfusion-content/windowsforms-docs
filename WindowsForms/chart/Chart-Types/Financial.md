@@ -11,9 +11,9 @@ documentation: ug
 
 ## HiLo open close chart
 
-A HiLo Open Close chart displays each data point as a group of horizontal lines and a vertical line representing the `High`, `Low`, `Open`, and `Close` values. 
+A hilo open close chart displays each data point as a group of horizontal lines and a vertical line representing the `High`, `Low`, `Open`, and `Close` values. 
 
-The following code example demonstrates how to create a Hilo Open Close Chart.
+The following code example demonstrates how to create a hilo open close chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -55,7 +55,7 @@ series.Style.Border.Width = 3
 
 ### Close tip color
 
-The [CloseTipColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHiLoOpenCloseConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHiLoOpenCloseConfigItem_CloseTipColor) property specifies the color of the tip that represents the closing value in a HiLo Open Close chart, with `Color.Empty` as the default value.
+The [CloseTipColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHiLoOpenCloseConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHiLoOpenCloseConfigItem_CloseTipColor) property specifies the color of the tip that represents the closing value in a hiLo open close chart, with `Color.Empty` as the default value.
 
 The following code sets the close tip color to `Color.Blue`.
 
@@ -72,7 +72,7 @@ chartControl.Series(0).ConfigItems.HiLoOpenCloseItem.CloseTipColor = Color.Blue
 
 ### Draw mode
 
-The [DrawMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHiLoOpenCloseConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHiLoOpenCloseConfigItem_DrawMode) property specifies whether the open tip, close tip, or both tips are displayed in a HiLo Open Close chart. By default, both tips are displayed using the `Both` draw mode.
+The [DrawMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHiLoOpenCloseConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHiLoOpenCloseConfigItem_DrawMode) property specifies whether the open tip, close tip, or both tips are displayed in a hiLo open close chart. By default, both tips are displayed using the `Both` draw mode.
 
 This property supports the following values:
 
@@ -95,7 +95,7 @@ chartControl.Series(0).ConfigItems.HiLoOpenCloseItem.DrawMode = ChartOpenCloseDr
 
 ### Open tip color
 
-The [OpenTipColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHiLoOpenCloseConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHiLoOpenCloseConfigItem_OpenTipColor) property specifies the color of the tip that represents the opening value in a HiLo Open Close chart, with `Color.Empty` used as the default value.
+The [OpenTipColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHiLoOpenCloseConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHiLoOpenCloseConfigItem_OpenTipColor) property specifies the color of the tip that represents the opening value in a hiLo open close chart, with `Color.Empty` used as the default value.
 
 The following code sets the open tip color to `Color.Blue`.
 
@@ -112,7 +112,7 @@ chartControl.Series(0).ConfigItems.HiLoOpenCloseItem.OpenTipColor = Color.Blue
 
 ### Customization options
 
-The following chart series properties are used as customization options for HiLo Open Close chart:
+The following chart series properties are used as customization options for hilo open close chart:
 
 - [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
 - [DrawSeriesNameInDepth](https://help.syncfusion.com/windowsforms/chart/chart-series#drawseriesnameindepth)
@@ -138,9 +138,9 @@ The following chart series properties are used as customization options for HiLo
 
 ## Candle chart
 
-Candle chart displays each data point using a vertical column and a vertical line based on the `High`, `Low`, `Open`, and `Close` values. The vertical line represents the High and Low values, while the column represents the Open and Close values.
+A candle chart displays each data point using a vertical column and a vertical line based on the `High`, `Low`, `Open`, and `Close` values. The vertical line represents the High and Low values, while the column represents the Open and Close values.
 
-The following code example demonstrates how to create a Candle Chart.
+The following code example demonstrates how to create a candle Chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -180,7 +180,7 @@ series.Style.Border.Width = 3
 
 ### Customization options
 
-The following chart series properties are used as customization options for Candle chart:
+The following chart series properties are used as customization options for candle chart:
 
 - [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border)
 - [DisplayShadow](https://help.syncfusion.com/windowsforms/chart/chart-series#displayshadow)

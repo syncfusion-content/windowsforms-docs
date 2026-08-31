@@ -9,9 +9,9 @@ documentation: ug
 
 # Histogram Chart in Windows Forms Charts
 
-A Histogram chart displays the frequency distribution of data by grouping values into continuous intervals and representing them with adjacent bars.
+A histogram chart displays the frequency distribution of data by grouping values into continuous intervals and representing them with adjacent bars.
 
-The following code example demonstrates how to create a Histogram Chart.
+The following code example demonstrates how to create a histogram Chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -146,7 +146,7 @@ chartControl.PrimaryYAxis.Range = New MinMaxInfo(0, 50, 10)
 
 ## Number of intervals
 
-The [NumberOfIntervals](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHistogramConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHistogramConfigItem_NumberOfIntervals) property specifies the number of intervals used to group data values in a Histogram chart and defaults to `10`.
+The [NumberOfIntervals](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHistogramConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHistogramConfigItem_NumberOfIntervals) property specifies the number of intervals used to group data values in a histogram chart and defaults to `10`.
 
 The following code sets the number of intervals to `15`.
 
@@ -163,9 +163,9 @@ chartControl.Series(0).ConfigItems.HistogramItem.NumberOfIntervals = 15
 
 ## Show normal distribution
 
-The [ShowNormalDistribution](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHistogramConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHistogramConfigItem_ShowNormalDistribution) property controls whether a normal distribution curve is displayed on the Histogram chart and is set to `false` by default.
+The [ShowNormalDistribution](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHistogramConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHistogramConfigItem_ShowNormalDistribution) property controls whether a normal distribution curve is displayed on the histogram chart and is set to `false` by default.
 
-The following code displays the normal distribution curve on the Histogram chart.
+The following code displays the normal distribution curve on the histogram chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -182,9 +182,9 @@ chartControl.Series(0).ConfigItems.HistogramItem.ShowNormalDistribution =
 
 ## Show data points
 
-The [ShowDataPoints](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHistogramConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHistogramConfigItem_ShowDataPoints) property controls whether data points are displayed on the Histogram chart and is set to `true` by default.
+The [ShowDataPoints](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHistogramConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHistogramConfigItem_ShowDataPoints) property controls whether data points are displayed on the histogram chart and is set to `true` by default.
 
-The following code hides the data points in the Histogram chart.
+The following code hides the data points in the histogram chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -199,7 +199,7 @@ chartControl.Series(0).ConfigItems.HistogramItem.ShowDataPoints = False
 
 ## Customization options
 
-The following chart series properties are used as customization options for Histogram chart:
+The following chart series properties are used as customization options for histogram chart:
 
 - [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border)
 - [DisplayShadow](https://help.syncfusion.com/windowsforms/chart/chart-series#displayshadow)
