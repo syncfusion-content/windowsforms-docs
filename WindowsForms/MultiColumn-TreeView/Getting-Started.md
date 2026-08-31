@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Windows Forms MultiColumnTreeView
 
-This section explains how to create a new Windows Forms project in Visual Studio and add **"MultiColumnTreeView"** with its basic functionalities.
+This section explains how to create a new Windows Forms project in Visual Studio and add **"WinForms MultiColumn TreeView"** with its basic functionalities.
 
 ## Assembly deployment
 
@@ -18,11 +18,11 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 [Check here](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to find more details on how to install NuGet packages in a Windows Forms application.
 
 
-## Adding a MultiColumnTreeView control through designer
+## Adding a WinForms MultiColumn TreeView control through designer
 
-The **"MultiColumnTreeView"** control can be added through designer by following steps.
+The **"WinForms MultiColumn TreeView"** control can be added through designer by following steps.
 
-**Step 1**: The **"MultiColumnTreeView"** control can be added to an application by dragging it from toolbox to design view. The following dependent assemblies will be added automatically.
+**Step 1**: The **"WinForms MultiColumn TreeView"** control can be added to an application by dragging it from toolbox to design view. The following dependent assemblies will be added automatically.
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -33,10 +33,10 @@ The **"MultiColumnTreeView"** control can be added through designer by following
 
 ![Windows Forms MultiColumnTreeView drag and drop from toolbox](Getting-Started_Images/GettingStarted_toolbox.png) 
 
-**Step 2**: Set the desired properties for **"MultiColumnTreeView"** control through the **"Properties"** dialog.
+**Step 2**: Set the desired properties for **"WinForms MultiColumn TreeView"** control through the **"Properties"** dialog.
 
 
-## Adding a MultiColumnTreeView control through code
+## Adding a WinForms MultiColumn TreeView control through code
 
 **Step 1**: Create a C# or VB application through Visual Studio.
 
@@ -65,7 +65,7 @@ Imports Syncfusion.Windows.Forms.Tools.MultiColumnTreeView
 {% endhighlight %}
 {% endtabs %}
 
-**Step 4**: Create an instance of the **"MultiColumnTreeView"** and add it to the form.
+**Step 4**: Create an instance of the **"WinForms MultiColumn TreeView"** and add it to the form.
 
 {% tabs %}
 
@@ -96,7 +96,7 @@ Me.Controls.Add(Me.multiColumnTreeView1)
 
 ### Adding Columns
 
-This section explains about how to add the columns into the **"MultiColumnTreeView"** control using C# code.
+This section explains about how to add the columns into the **"WinForms MultiColumn TreeView"** control using C# code.
 
 {% tabs %}
 
@@ -142,7 +142,7 @@ multiColumnTreeView1.Columns.AddRange(New TreeColumnAdv() { countryColumn, capit
 
 ### Adding nodes to the control
 
-This section explains about how to add nodes into the **"MultiColumnTreeView"** control.
+This section explains about how to add nodes into the **"WinForms MultiColumn TreeView"** control.
 
 {% tabs %}
 
@@ -386,7 +386,7 @@ When `ShowLines` is set to `false`, the connecting lines are not displayed for t
 <table>
 <tr>
 <th>
-MultiColumnTreeView Property</th><th>
+WinForms MultiColumn TreeView Property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -423,7 +423,7 @@ Plus Minus symbols are shown according to the state of the node. Plus (+) is sho
 <table>
 <tr>
 <th>
-MultiColumnTreeView Property</th><th>
+WinForms MultiColumn TreeView Property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -471,7 +471,7 @@ The `InteractiveCheckBoxes` indicates whether the state of the parent node’s c
 <table>
 <tr>
 <th>
-MultiColumnTreeView Property</th><th>
+WinForms MultiColumn TreeView Property</th><th>
 Description</th></tr>
 <tr>
 <td>

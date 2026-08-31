@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Appearance in Windows Forms MultiColumn TreeView | Syncfusion®
 description: Appearance customization supports borders, colors, styles, images, header formatting, and node visual customization.
@@ -15,11 +15,11 @@ documentation: ug
 
 BorderStyle Property has the following styles
 
-*	`None` - If the BorderStyle is set to None, the border of the MultiColumnTreeView is collapsed.
+*	`None` - If the BorderStyle is set to None, the border of the WinForms MultiColumn TreeView is collapsed.
 
-*	`FixedSingle (For 2D)` - If the BorderStyle is set to FixedSingle, the border of the MultiColumnTreeView is visible and you can customize it.
+*	`FixedSingle (For 2D)` - If the BorderStyle is set to FixedSingle, the border of the WinForms MultiColumn TreeView is visible and you can customize it.
 
-*	`Fixed3D (Default)` - If the BorderStyle is set to Fixed3D, the border of the MultiColumnTreeView is visible in 3D and you can customize the border settings.
+*	`Fixed3D (Default)` - If the BorderStyle is set to Fixed3D, the border of the WinForms MultiColumn TreeView is visible in 3D and you can customize the border settings.
 
 ### BorderSingle
 
@@ -49,13 +49,13 @@ It has the following Options
 
 *	`All` - Three-dimensional border is set for all sides.
 
-*	`Right` - Three-dimensional border is set on the right side of the MultiColumnTreeView.
+*	`Right` - Three-dimensional border is set on the right side of the WinForms MultiColumn TreeView.
 
-*	`Left` - Three-dimensional border is set on the left side of the MultiColumnTreeView.
+*	`Left` - Three-dimensional border is set on the left side of the WinForms MultiColumn TreeView.
 
-*	`Top` - Three-dimensional border is set on the top of the MultiColumnTreeView.
+*	`Top` - Three-dimensional border is set on the top of the WinForms MultiColumn TreeView.
 
-*	`Bottom` - Three-dimensional border is set on the bottom of the MultiColumnTreeView.
+*	`Bottom` - Three-dimensional border is set on the bottom of the WinForms MultiColumn TreeView.
 
 *	`Middle`
 
@@ -85,16 +85,16 @@ It has the following Styles
 
 *	SunkenOuter
 
-N> The settings will have applied only when `MultiColumnTreeView.BorderStyle` property is set to FixedSingle or Fixed3D.
+N> The settings will have applied only when WinForms MultiColumn TreeView's `BorderStyle` property is set to FixedSingle or Fixed3D.
 
-**To customize the 2D border of MultiColumnTreeView, set the below properties as follows.**
+**To customize the 2D border of WinForms MultiColumn TreeView, set the below properties as follows.**
 
 *Property Table*
 
 <table>
 <tr>
 <th>
-MultiColumnTreeView Property</th><th>
+WinForms MultiColumn TreeView Property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -136,14 +136,14 @@ Me.multiColumnTreeView1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSing
 
 ![Appearance_img1](Appearance_Images/Appearance_img1.jpg)
 
-**To customize the 3D border of MultiColumnTreeView, set the below property as follows**
+**To customize the 3D border of WinForms MultiColumn TreeView, set the below property as follows**
 
 *Property Table*
 
 <table>
 <tr>
 <th>
-MultiColumnTreeView Property</th><th>
+WinForms MultiColumn TreeView Property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -195,7 +195,7 @@ Me.multiColumnTreeView1.BorderColor = Color.SteelBlue
 
 ## Color Customization
 
-Color Customization lets you customize the MultiColumnTreeView with personalized colors to its components.
+Color Customization lets you customize the WinForms MultiColumn TreeView with personalized colors to its components.
 
 ### BackColor
 
@@ -293,7 +293,7 @@ In the image Node Level 1, Node Level 2 and SubItem Style Base style has been ad
 
 ### LineColor
 
-Indicates the color of RootLines in MultiColumnTreeView.
+Indicates the color of RootLines in WinForms MultiColumn TreeView.
 
 {% tabs %}
 
@@ -595,7 +595,7 @@ Me.multiColumnTreeView2.ShowPlusMinus = False
 
 ### LeftImageList
 
-The tree nodes can be set with left images using LeftImageList property in the property window. Left images for the individual nodes can be specified in LeftImageIndices property of individual nodes, using the MultiColumnTreeView Nodes Collection Editor.
+The tree nodes can be set with left images using LeftImageList property in the property window. Left images for the individual nodes can be specified in LeftImageIndices property of individual nodes, using the WinForms MultiColumn TreeView Nodes Collection Editor.
 
 The nodes with the images can be given an enhanced appearance using LeftImagePadding.
 
@@ -604,7 +604,7 @@ The nodes with the images can be given an enhanced appearance using LeftImagePad
 <table>
 <tr>
 <th>
-MultiColumnTreeView Property</th><th>
+WinForms MultiColumn TreeView Property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -633,7 +633,7 @@ LeftStateImagePadding</td><td>
 It is the space provided between, the LeftStateImage of the node and node.</td></tr>
 </table>
 
-To set the left images for all the nodes in MultiColumnTreeView follow the below steps
+To set the left images for all the nodes in WinForms MultiColumn TreeView follow the below steps
 
 1. Create image list and add images in it.
 
@@ -660,7 +660,7 @@ Me.multiColumnTreeView1.LeftImageList = Me.leftImageList
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-3. Now set the LeftImageIndices for each node in MultiColumnTreeView.
+3. Now set the LeftImageIndices for each node in WinForms MultiColumn TreeView.
 
 {% capture codesnippet2 %}​
 {% tabs %}
@@ -686,7 +686,7 @@ multiColumnTreeView1.LeftImageIndices = New Integer() {1}
 ### RightImageList
 
 
-The tree nodes can be set with right images using RightImageList property in the property window. right images for the individual nodes can be specified in RightImageIndices property of individual nodes, using the MultiColumnTreeView Nodes Collection Editor.
+The tree nodes can be set with right images using RightImageList property in the property window. right images for the individual nodes can be specified in RightImageIndices property of individual nodes, using the WinForms MultiColumn TreeView Nodes Collection Editor.
 
 The nodes with the images can be given an enhanced appearance using RightImagePadding.
 
@@ -695,7 +695,7 @@ The nodes with the images can be given an enhanced appearance using RightImagePa
 <table>
 <tr>
 <th>
-MultiColumnTreeView Property</th><th>
+WinForms MultiColumn TreeView Property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -724,7 +724,7 @@ RightStateImagePadding</td><td>
 It is the space provided between, the RightStateImage of the node and node.</td></tr>
 </table>
 
-To set the right images for all the nodes in MultiColumnTreeView follow the below steps
+To set the right images for all the nodes in WinForms MultiColumn TreeView follow the below steps
 
 1. Create image list and add images in it.
 
@@ -752,7 +752,7 @@ Me.multiColumnTreeView1.RightImageList = Me.rightImageList
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 
-3. Now set the RightImageIndices for each node in MultiColumnTreeView.
+3. Now set the RightImageIndices for each node in WinForms MultiColumn TreeView.
 
 {% capture codesnippet4 %}​
 {% tabs %}
@@ -781,12 +781,12 @@ Different images can be set for expand / collapse states of the node, using Stat
 
 **Property Table**
 
-**MultiColumnTreeView Property**
+**WinForms MultiColumn TreeView Property**
 
 <table>
 <tr>
 <th>
-MultiColumnTreeView Event</th><th>
+WinForms MultiColumn TreeView Event</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -813,7 +813,7 @@ The above properties can also be set to individual nodes
 <table>
 <tr>
 <th>
-MultiColumnTreeView Event</th><th>
+WinForms MultiColumn TreeView Event</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -829,7 +829,7 @@ OpenImageIndex</td><td>
 It is the image index in StateImageList where the node is expanded.</td></tr>
 </table>
 
-To set the state images for all the nodes in MultiColumnTreeView follow the below steps
+To set the state images for all the nodes in WinForms MultiColumn TreeView follow the below steps
 
 1. Create image list and add images in it.
 
@@ -855,7 +855,7 @@ Me.multiColumnTreeView1.StateImageList = Me.stateImageList
 {% endcapture %}
 {{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-3. Now set the OpenImgIndex and ClosedImgIndex for each node in MultiColumnTreeView.
+3. Now set the OpenImgIndex and ClosedImgIndex for each node in WinForms MultiColumn TreeView.
 
 {% capture codesnippet6 %}
 {% tabs %}
@@ -880,6 +880,6 @@ treeNodeAdv1.CloseImgIndex = 2
 {% endcapture %}
 {{ codesnippet6 | OrderList_Indent_Level_1 }}
 
-4. Repeat step 3 until the `OpenImageIndex` and `ClosedImageIndex` are set for all the nodes in the MultiColumnTreeView.
+4. Repeat step 3 until the `OpenImageIndex` and `ClosedImageIndex` are set for all the nodes in the WinForms MultiColumn TreeView.
 
 ![Appearance_img20](Appearance_Images/Appearance_img20.jpg)

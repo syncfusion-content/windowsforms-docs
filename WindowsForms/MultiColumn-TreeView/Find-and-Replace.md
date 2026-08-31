@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Find and Replace in Windows Forms MultiColumn TreeView | Syncfusion®
 description: Find and Replace supports searching, highlighting, navigating, and replacing node text across tree nodes.
@@ -7,21 +7,21 @@ control: MultiColumnTreeView
 documentation: ug
 ---
 
-# Find and Replace in Windows Forms MultiColumn TreeView
+# Find and Replace in Windows Forms WinForms MultiColumn TreeView
 
 ## TreeViewFindReplaceDialog
 
-The find and replace feature enables users to search and replace a specific tree node present in the MultiColumnTreeView control. You can implement the fastest Find and Replace functionality in the MultiColumnTreeView control by using the `TreeViewFindReplaceDialog` class. This class provides the methods that are necessary to perform a find and replace operation.
+The find and replace feature enables users to search and replace a specific tree node present in the WinForms MultiColumn TreeView control. You can implement the fastest Find and Replace functionality in the WinForms MultiColumn TreeView control by using the `TreeViewFindReplaceDialog` class. This class provides the methods that are necessary to perform a find and replace operation.
 
-The value entered in the Search Text field is highlighted in the MultiColumnTreeView control after the search action is performed. You can switch to each highlighted tree node by clicking the Find Next button. This functionality is available only when there is more than one search result.
+The value entered in the Search Text field is highlighted in the WinForms MultiColumn TreeView control after the search action is performed. You can switch to each highlighted tree node by clicking the Find Next button. This functionality is available only when there is more than one search result.
 
-*	Search and replace functionalities can be performed for the entire MultiColumnTreeView control or specific levels of tree nodes.
+*	Search and replace functionalities can be performed for the entire WinForms MultiColumn TreeView control or specific levels of tree nodes.
 
 *	Search and replace functionalities can be performed for individual tree nodes by using the Find Next and Replace buttons.
 
 *	Search and replace functionalities can be performed for all the search results by using the Find All and Replace All buttons.
 
-## MultiColumnTreeView Search Options
+## WinForms MultiColumn TreeView Search Options
 
 The available search options are as follows:
 
@@ -29,7 +29,7 @@ The available search options are as follows:
 
 2.	**Match Whole Node** : Matches the search text with the entire text in a tree node.
 
-## MultiColumnTreeView Search Navigation
+## WinForms MultiColumn TreeView Search Navigation
 
 1.	**Search Up** : Specifies whether the search can be performed from the bottom of the control up.
 
@@ -37,9 +37,9 @@ The available search options are as follows:
 
 3.	**Search All** : Specifies whether the search can be performed from the bottom up, and then back to the bottom.
 
-## MultiColumnTreeView Search Range
+## WinForms MultiColumn TreeView Search Range
 
-1.	**TreeView** : Specifies whether the search is performed across the entire MultiColumnTreeView control.
+1.	**TreeView** : Specifies whether the search is performed across the entire WinForms MultiColumn TreeView control.
 
 2.	**Root Node** : Specifies whether the search is performed only at the parent node level.
 
@@ -89,7 +89,7 @@ dialog.ReplaceAll("Britain", "United Kingdom", TreeViewSearchOption.MatchWholeTe
 
 ## OnNodeBeforeFind Event
 
-This event will be triggered before the matching tree nodes are highlighted in the MultiColumnTreeView control. 
+This event will be triggered before the matching tree nodes are highlighted in the WinForms MultiColumn TreeView control. 
 
 <b>Event Data</b>
 
@@ -140,7 +140,7 @@ End Sub
 
 ## OnNodeAfterFound Event
 
-This event will be triggered after the matching TreeNodeAdv is highlighted in the MultiColumnTreeView control. 
+This event will be triggered after the matching TreeNodeAdv is highlighted in the WinForms MultiColumn TreeView control. 
 
 <b>Event Data</b>
 
@@ -192,7 +192,7 @@ End Sub
 
 ## OnNodeReplacing Event
 
-This event will be triggered before replacing the matched tree node text in the MultiColumnTreeView control. 
+This event will be triggered before replacing the matched tree node text in the WinForms MultiColumn TreeView control. 
 
 <b>Event Data</b>
 
@@ -263,7 +263,7 @@ End Sub
 
 ## OnNodeReplaced Event
 
-This event will be triggered after the matched TreeNodeAdv text is replaced in the MultiColumnTreeView control. 
+This event will be triggered after the matched TreeNodeAdv text is replaced in the WinForms MultiColumn TreeView control. 
 
 <b>Event Data</b>
 
@@ -318,7 +318,7 @@ End Sub
 
 ## Keyboard Search
 
-Setting the `AllowKeyboardSearch` property of the MultiColumnTreeView to `true` allows the user to search for a node by typing the name of the node using the keyboard. This feature is enabled by default.
+Setting the `AllowKeyboardSearch` property of the WinForms MultiColumn TreeView to `true` allows the user to search for a node by typing the name of the node using the keyboard. This feature is enabled by default.
 
 {% tabs %}
 

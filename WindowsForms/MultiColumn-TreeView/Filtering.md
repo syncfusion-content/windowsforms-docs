@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Filtering in Windows Forms MultiColumn TreeView | Syncfusion®
 description: Filtering enables displaying nodes that match custom conditions using filter levels and delegate-based filtering.
@@ -31,11 +31,11 @@ Me.multiColumnTreeView1.FilterLevel = FilterLevel.All
 
 {% endtabs %}
 
-* Root - Filter will be applied only to root nodes in [MultiColumnTreeView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.MultiColumnTreeView.html). All other nodes will be invisible in view.
+* Root - Filter will be applied only to root nodes in [WinForms MultiColumn TreeView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.MultiColumnTreeView.html). All other nodes will be invisible in view.
 
-* All - Filter will be applied to all the nodes in [MultiColumnTreeView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.MultiColumnTreeView.html). If a parent node does not match the filter condition, filter will not be applied for child nodes. Else, filter will be applied to its child nodes also.
+* All - Filter will be applied to all the nodes in [WinForms MultiColumn TreeView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.MultiColumnTreeView.html). If a parent node does not match the filter condition, filter will not be applied for child nodes. Else, filter will be applied to its child nodes also.
 
-* Extended - Filter will be applied to all the nodes in [MultiColumnTreeView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.MultiColumnTreeView.html). If a node matches the filter condition, its all ancestors will also be displayed even though the parent node does not match the filter condition.
+* Extended - Filter will be applied to all the nodes in [WinForms MultiColumn TreeView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.MultiColumnTreeView.html). If a node matches the filter condition, its all ancestors will also be displayed even though the parent node does not match the filter condition.
 
 N> You can change the `FilterLevel` at run time.
 

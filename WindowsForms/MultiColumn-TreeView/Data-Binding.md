@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Data Binding in Windows Forms MultiColumn TreeView | Syncfusion®
 description: Learn how to load and save MultiColumnTreeView data using XML and programmatically manage tree nodes.
@@ -7,8 +7,8 @@ control: MultiColumnTreeView
 documentation: ug
 ---
 
-# Data Binding in Windows Forms MultiColumn TreeView
-MultiColumnTreeView does not have direct option to load/save from XML file. This below section will help to load/save MultiColumnTreeView from XML.
+# Data Binding in Windows Forms WinForms MultiColumn TreeView
+WinForms MultiColumn TreeView does not have direct option to load/save from XML file. This below section will help to load/save WinForms MultiColumn TreeView from XML.
 
 **Example**
 
