@@ -554,7 +554,7 @@ The margins for ChartPlotArea is specified in [ChartPlotAreaMargins](https://hel
 <table>
 <tr>
 <th>
-ChartControl Property</th><th>
+WinForms Chart Property</th><th>
 Description</th></tr>
 <tr>
 <td>

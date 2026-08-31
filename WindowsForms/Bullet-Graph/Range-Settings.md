@@ -7,9 +7,9 @@ control: Bullet Graph
 documentation: ug
 ---
 
-# Range Settings in Windows Forms Bullet Graph
+# Range Settings in WinForms Bullet Graph
 
-Ranges for a Bullet Graph are a collection of qualitative ranges. A qualitative range is a visual element that ends at a specified [RangeEnd](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.QualitativeRange.html#Syncfusion_Windows_Forms_BulletGraph_QualitativeRange_RangeEnd) at the start of the previous range's RangeEnd. The qualitative ranges are arranged according to each RangeEnd value.
+Ranges for a WinForms Bullet Graph are a collection of qualitative ranges. A qualitative range is a visual element that ends at a specified [RangeEnd](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.QualitativeRange.html#Syncfusion_Windows_Forms_BulletGraph_QualitativeRange_RangeEnd) at the start of the previous range's RangeEnd. The qualitative ranges are arranged according to each RangeEnd value.
 
 ### Customizing Range:
 

@@ -7,7 +7,7 @@ control: TreeMap
 documentation: ug
 ---
 
-# Leaf Nodes Customization in Windows Forms TreeMap
+# Leaf Nodes Customization in WinForms TreeMap
 
 Leaf nodes can be customized by raising the [`LeafItemDrawing`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TreeMap.TreeMap.html#Syncfusion_Windows_Forms_TreeMap_TreeMap_LeafItemDrawing) event of the tree map control. 
 

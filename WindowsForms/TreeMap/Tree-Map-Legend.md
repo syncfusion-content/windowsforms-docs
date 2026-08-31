@@ -7,7 +7,7 @@ control: TreeMap
 documentation: ug
 ---
 
-# Legend in Windows Forms TreeMap
+# Legend in WinForms TreeMap
 
 The tree map legend is used to demonstrate the color value of the leaf nodes. This legend may be appropriate only for tree maps whose leaf nodes are colored by using the RangeBrushColorMapping. 
 

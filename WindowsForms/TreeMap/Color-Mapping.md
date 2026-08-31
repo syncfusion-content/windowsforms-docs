@@ -7,7 +7,7 @@ control: TreeMap
 documentation: ug
 ---
 
-# Color Mapping in Windows Forms TreeMap
+# Color Mapping in WinForms TreeMap
 
 Color mapping is categorized into the following four types:
 

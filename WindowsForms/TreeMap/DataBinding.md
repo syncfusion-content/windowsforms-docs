@@ -7,11 +7,11 @@ control: TreeMap
 documentation: ug
 ---
 
-# Data Binding in Windows Forms TreeMap
+# Data Binding in WinForms TreeMap
 
 TreeMap control supports Data Binding and it can be achieved using ItemsSource property.
 
-The ItemsSource property accepts the collection values as input. For example, you can provide the list of objects as input. The following code illustrates you on how to bind a flat collection as items source for TreeMap.
+The ItemsSource property accepts the collection values as input. For example, you can provide the list of objects as input. The following code illustrates you on how to bind a flat collection as items source for WinForms TreeMap.
 
 {% highlight c# %}
 
