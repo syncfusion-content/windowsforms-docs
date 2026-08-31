@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-# Polar and Radar in windows Forms Charts
+# Polar and Radar in Windows Forms Charts
 
 ## Polar chart
 
