@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# How to check hidden in Windows Forms Docking Manager
+# How to check hidden in WinForms Docking Control
 
 This can be achieved using the `GetHiddenOnLoad` method.
 

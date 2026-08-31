@@ -7,13 +7,13 @@ control: DockingManager
 documentation: ug
 ---
 
-# Getting Started with Windows Forms Docking Manager
+# Getting Started with WinForms Docking Control
 
-This section explains how to design a [Docking Manager in Windows Forms](https://www.syncfusion.com/winforms-ui-controls/docking-manager) application and overview of its basic functionalities.
+This section explains how to design a [WinForms Docking Control in Windows Forms](https://www.syncfusion.com/winforms-ui-controls/docking-manager) application and overview of its basic functionalities.
 
 ## Assembly deployment
 
-The following list of assemblies should be added as reference to use the docking manager in any application:
+The following list of assemblies should be added as reference to use the WinForms Docking Control in any application:
 
 Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#dockingmanager) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. 
 
@@ -21,9 +21,9 @@ Find more details about how to install the nuget packages in Windows Forms appli
 
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
 
-**Creating simple application with docking manager**
+**Creating simple application with WinForms Docking Control**
 
-You can create the Windows Forms application with docking manager control as follows:
+You can create the Windows Forms application with WinForms Docking Control as follows:
 
 1. [Creating the project](#creating-the-project)
 2. [Adding control via Designer](#adding-control-via-designer)
@@ -36,11 +36,11 @@ You can create the Windows Forms application with docking manager control as fol
 
 **Creating the project**
 
-Create a new Windows Forms project in the Visual Studio to dock panels as like Visual Studio using the docking manager.
+Create a new Windows Forms project in the Visual Studio to dock panels as like Visual Studio using the WinForms Docking Control.
 
 ## Adding control via designer
 
-To add the docking manager control to an application, drag it from the toolbox and drop in a designer view. The following required assembly references will be added automatically:
+To add the WinForms Docking Control to an application, drag it from the toolbox and drop in a designer view. The following required assembly references will be added automatically:
 
    * Syncfusion.Grid.Base.dll
    * Syncfusion.Grid.Windows.dll
@@ -63,14 +63,14 @@ To add control manually in C#, follow the given steps:
    * Syncfusion.Tools.Base.dll
    * Syncfusion.Tools.Windows.dll
 
-2. Create [DockingManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) control instance and add it to the component list.
+2. Create [WinForms Docking Control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) control instance and add it to the component list.
 
 {% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight C# %}
 
-// Create the DockingManager instance and add it the component list. 
+// Create the WinForms Docking Control instance and add it the component list. 
 
 private Syncfusion.Windows.Forms.Tools.DockingManager dockingManager1; 
 
@@ -84,7 +84,7 @@ this.dockingManager1.HostControl = this;
 
 {% highlight VB %}
 
-'Create the DockingManager instance and add it the component list. 
+'Create the WinForms Docking Control instance and add it the component list. 
 
 Private dockingManager1 As Syncfusion.Windows.Forms.Tools.DockingManager
 
@@ -102,7 +102,7 @@ Me.dockingManager1.HostControl = Me
 
 ## Add dock child window
 
-Docking can be enabled to any controls by invoking [SetEnableDocking](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SetEnableDocking_System_Windows_Forms_Control_System_Boolean_) with the corresponding docking manager. Here, four panels are added to the form and transformed to a docking window.
+Docking can be enabled to any controls by invoking [SetEnableDocking](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SetEnableDocking_System_Windows_Forms_Control_System_Boolean_) with the corresponding WinForms Docking Control. Here, four panels are added to the form and transformed to a docking window.
 
 {% tabs %}
 
@@ -173,7 +173,7 @@ Me.dockingManager1.SetEnableDocking(panel4, True)
 
 ### Identify whether the panel is docking or not
 
-The [GetEnableDocking](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_GetEnableDocking_System_Windows_Forms_Control_) function of docking manager helps to determine whether the child window is docking or not.
+The [GetEnableDocking](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_GetEnableDocking_System_Windows_Forms_Control_) function of WinForms Docking Control helps to determine whether the child window is docking or not.
 
 {% tabs %}
 
@@ -256,7 +256,7 @@ Console.Write("DockWindow Header:" + Me.dockingManager1.GetDockLabel(panel1))
 
 ## Change dock state of child
 
-The docking manager provides an option to dock, float, and auto hide the controls.
+The WinForms Docking Control provides an option to dock, float, and auto hide the controls.
 
 To dock the child window, use the following code snippet.
 
@@ -383,9 +383,9 @@ Me.dockingManager1.DockControl(Me.panel4, panel1, Syncfusion.Windows.Forms.Tools
 
 ## Make MDI child
 
-The [SetAsMDIChild](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SetAsMDIChild_System_Windows_Forms_Control_System_Boolean_) function helps to set the docking window to the MDIChild window in the docking manager. Also, you can set the docked control as an MDI child in an easy method by using the `MDI Child` option in the context menu.
+The [SetAsMDIChild](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SetAsMDIChild_System_Windows_Forms_Control_System_Boolean_) function helps to set the docking window to the MDIChild window in the WinForms Docking Control. Also, you can set the docked control as an MDI child in an easy method by using the `MDI Child` option in the context menu.
 
-N> To enable MDI functionalities in the docking manager, the `IsMdIContainer` property of its parent form should be `true`.
+N> To enable MDI functionalities in the WinForms Docking Control, the `IsMdIContainer` property of its parent form should be `true`.
 
 ![Option to make MDI forms in DockingManager](GettingStarted_images/GettingStarted_img6.png)
 
@@ -418,7 +418,7 @@ Me.dockingManager1.SetAsMDIChild(panel2, True)
 
 ## Serialize dock windows
 
-The PersistState feature helps to save the current layout of the docking manager automatically to isolated storage while closing the form. The dock state can also be saved by calling the [SaveDockState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SaveDockState) function.
+The PersistState feature helps to save the current layout of the WinForms Docking Control automatically to isolated storage while closing the form. The dock state can also be saved by calling the [SaveDockState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SaveDockState) function.
 
 {% tabs %}
 
@@ -497,4 +497,4 @@ Me.dockingManager.LoadDockState(serializer, this.listBox1)
 
 {% endtabs %}
 
-N> You can explore our [WinForms Docking Manager example](https://github.com/syncfusion/winforms-demos) that shows how to render the Docking Manager in Windows Forms.
+N> You can explore our [WinForms Docking Control example](https://github.com/syncfusion/winforms-demos) that shows how to render the WinForms Docking Control in Windows Forms.

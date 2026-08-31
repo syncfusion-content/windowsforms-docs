@@ -7,13 +7,13 @@ control: DockingManager
 documentation: ug
 ---
 
-# TDI Window in Windows Forms Docking Manager
+# TDI Window in WinForms Docking Control
 
-Provides support for adding tabbed document windows in the docking manager. To enable the document mode in docking manager, set the [EnableDocumentMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_EnableDocumentMode) property to true.
+Provides support for adding tabbed document windows in the WinForms Docking Control. To enable the document mode in it, set the [EnableDocumentMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_EnableDocumentMode) property to true.
 
 ## Add child view as tabbed document
 
-[DockAsDocument](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_DockAsDocument_System_Windows_Forms_Control_) function helps to add the child window as a document tab in docking manager. The document window should be added after dock layout has been loaded. The `NewDockStateEndLoad` event is recommended to add tabbed documents in docking manager.
+[DockAsDocument](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_DockAsDocument_System_Windows_Forms_Control_) function helps to add the child window as a document tab in WinForms Docking Control. The document window should be added after dock layout has been loaded. The `NewDockStateEndLoad` event is recommended to add tabbed documents in WinForms Docking Control.
 
 
 {% tabs %}
@@ -56,7 +56,7 @@ Private Sub DockingManager1_NewDockStateEndLoad(ByVal sender As Object, ByVal e 
 
 ## Document window behavior
 
-[SetWindowMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SetWindowMode_System_Windows_Forms_Control_Syncfusion_Windows_Forms_Tools_WindowMode_) function helps to specify the window mode of docking child that defines dockability for specific child in DockingManager. It decides whether the docking child can be docked as `Tool` window or `Document` window.
+[SetWindowMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SetWindowMode_System_Windows_Forms_Control_Syncfusion_Windows_Forms_Tools_WindowMode_) function helps to specify the window mode of docking child that defines dockability for specific child in WinForms Docking Control. It decides whether the docking child can be docked as `Tool` window or `Document` window.
 
 ### Window mode
 
@@ -114,7 +114,7 @@ this.dockingManager1.SetWindowMode(this.panel2,Syncfusion.Windows.Forms.Tools.Wi
 
 ### Identify whether the control is tool window or document window
 
-The [GetWindowMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_GetWindowMode_System_Windows_Forms_Control_) function of docking manager is used to determine window mode of docking child. This function takes the control as its argument and returns `WindowMode` whether the specified control is `Tool` or `Document`.
+The [GetWindowMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_GetWindowMode_System_Windows_Forms_Control_) function of WinForms Docking Control is used to determine window mode of docking child. This function takes the control as its argument and returns `WindowMode` whether the specified control is `Tool` or `Document`.
 
 {% tabs %}
 
@@ -136,7 +136,7 @@ MessageBox.Show(this.dockingManager1.GetWindowMode(this.panel1).ToString());
 
 ## Freeze to document state
 
-The [FreezeToDocumentState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_FreezeToDocumentState_System_Windows_Forms_Control_System_Boolean_) function of docking manager helps to freeze the docking window state in Document and docking manager will not allows to move the child window to any other state.
+The [FreezeToDocumentState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_FreezeToDocumentState_System_Windows_Forms_Control_System_Boolean_) function of WinForms Docking Control helps to freeze the docking window state in Document and it will not allows to move the child window to any other state.
 
 {% tabs %}
 
@@ -161,7 +161,7 @@ Me.dockingManager1.FreezeToDocumentState(panel2, true)
 
 ### Identify whether the control is frozen to document state
 
-The docking manager [IsFrozenToDocumentState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_IsFrozenToDocumentState_System_Windows_Forms_Control_) function is used to determine the frozen state of a document window. This function takes the control as its argument and returns true if the specified control is frozen to document state. Else, it returns false.
+The WinForms Docking Control [IsFrozenToDocumentState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_IsFrozenToDocumentState_System_Windows_Forms_Control_) function is used to determine the frozen state of a document window. This function takes the control as its argument and returns true if the specified control is frozen to document state. Else, it returns false.
 
 {% tabs %}
 
@@ -182,11 +182,11 @@ MessageBox.Show(this.dockingManager1.IsFrozenToDocumentState(this.panel1).ToStri
 
 ## Creating Document Tab Group
 
-The DockingManager allows to create document tab groups like Visual Studio. The document tab groups can be grouped using the drag-and-drop operations and also using the options in context menu items.
+The WinForms Docking Control allows to create document tab groups like Visual Studio. The document tab groups can be grouped using the drag-and-drop operations and also using the options in context menu items.
 
 ### Create tab group using context menu option
 
-In docking manager, a new tab group can be created at horizontal or vertical side in the document area using the `ContextMenu` option.
+In WinForms Docking Control, a new tab group can be created at horizontal or vertical side in the document area using the `ContextMenu` option.
 
 ![Docking manager displays the horizontal document tab group](TDI_Window_images/Document_group_creation.png) 
 
@@ -194,9 +194,9 @@ In docking manager, a new tab group can be created at horizontal or vertical sid
 
 ### TabGroup creation through mouse interaction
 
-Like Visual Studio, the DragProvider of DockingManager contains eight dock hints to create DocumentTab group through drag provider. Out of eight dock hints, four outer dock hints are used to create a dock window and four inner dock hints are used to create a document window. A new tab group can be created at the top, left, right, or bottom of the document area through mouse interactions. This feature is not supported in `VS2005`, `VS2008`, and `Whidbey` styles.
+Like Visual Studio, the DragProvider of WinForms Docking Control contains eight dock hints to create DocumentTab group through drag provider. Out of eight dock hints, four outer dock hints are used to create a dock window and four inner dock hints are used to create a document window. A new tab group can be created at the top, left, right, or bottom of the document area through mouse interactions. This feature is not supported in `VS2005`, `VS2008`, and `Whidbey` styles.
 
-If there is no active document available in the DockingManager, only the center dock hint will be visible in DragProvider.
+If there is no active document available in the WinForms Docking Control, only the center dock hint will be visible in DragProvider.
 
 ![Docking manager displays center dock hint in DragProvider](TDI_Window_images/Tab-Group-Creation-Non-ActiveWindow.png) 
 
@@ -216,7 +216,7 @@ The docking direction (DockHints) can be restricted by setting `DockAbility` to 
 
 ## Disable tab group creation
 
-Tab group creation can be enabled or disabled using the [EnableTabGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DocumentWindowSettings.html#Syncfusion_Windows_Forms_Tools_DocumentWindowSettings_EnableTabGroup) property of docking manager. To disable tab group creation, set the `EnableTabGroup` to `False`. So, the docking manager will not display “New Horizontal Tab Group” and “New Vertical Tab Group” context menu items when right-click the document header.
+Tab group creation can be enabled or disabled using the [EnableTabGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DocumentWindowSettings.html#Syncfusion_Windows_Forms_Tools_DocumentWindowSettings_EnableTabGroup) property of WinForms Docking Control. To disable tab group creation, set the `EnableTabGroup` to `False`. So, the WinForms Docking Control will not display “New Horizontal Tab Group” and “New Vertical Tab Group” context menu items when right-click the document header.
 
 {% tabs %}
 
@@ -257,7 +257,7 @@ TDI window can be moved to float state by floating menu item in the contextMenu 
 
 ### Restrict dragging document window 
 
-The document tab window of docking manager can moved to the float state while dragging its tab header. This functionality can be enabled or disabled using the [AllowDragging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DocumentWindowSettings.html#Syncfusion_Windows_Forms_Tools_DocumentWindowSettings_AllowDragging) property. By default, this property is set to `true`.
+The document tab window of WinForms Docking Control can moved to the float state while dragging its tab header. This functionality can be enabled or disabled using the [AllowDragging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DocumentWindowSettings.html#Syncfusion_Windows_Forms_Tools_DocumentWindowSettings_AllowDragging) property. By default, this property is set to `true`.
 
 {% tabs %}
 
@@ -282,7 +282,7 @@ Me.dockingManager1.DocumentWindowSettings.AllowDragging = false
 
 ## Document tab reordering
 
-The docking manager allows to reorder the document tab by selecting and dragging to the desired index in document tab panel. The re-ordering behavior of document tabs can be enabled or disabled using the [AllowTabsMoving](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_AllowTabsMoving) property. By default, this property is set to `true`.
+The WinForms Docking Control allows to reorder the document tab by selecting and dragging to the desired index in document tab panel. The re-ordering behavior of document tabs can be enabled or disabled using the [AllowTabsMoving](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_AllowTabsMoving) property. By default, this property is set to `true`.
 
 {% tabs %}
 
@@ -307,7 +307,7 @@ Me.dockingManager1.AllowTabsMoving = false
 
 ## Closing TDI tab item using mouse middle click
 
-You can close the tab items of `DocumentContainer` and tabbed windows in `DockingManager` by clicking the mouse middle button on the tab item header. You can enable it by using the [CloseTabOnMiddleClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_CloseTabOnMiddleClick) property value as `true`. The default value of  `CloseTabOnMiddleClick` is `false`.
+You can close the tab items of `DocumentContainer` and tabbed windows in `WinForms Docking Control` by clicking the mouse middle button on the tab item header. You can enable it by using the [CloseTabOnMiddleClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_CloseTabOnMiddleClick) property value as `true`. The default value of  `CloseTabOnMiddleClick` is `false`.
 
 {% tabs %}
 {% highlight C# %}

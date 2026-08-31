@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# How to activate control in Windows Forms Docking Manager
+# How to activate control in WinForms Docking Control
 
 To activate particular docked control, call the `ActivateControl` method inside NewDockStateEndLoad event.
 

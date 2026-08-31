@@ -7,9 +7,9 @@ control: DockingManager
 documentation: ug
 ---
 
-# How to toggle AutoHide in Windows Forms Docking Manager
+# How to toggle AutoHide in WinForms Docking Control
 
-AutoHide behavior can be enabled or disables using `AutoHideEnabled` property in DockingManager.
+AutoHide behavior can be enabled or disables using `AutoHideEnabled` property in WinForms Docking Control.
 
 
 {% tabs %}

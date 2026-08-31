@@ -7,7 +7,7 @@ control: DockingManager
 documentation: ug
 ---
 
-# How to set docked size in Windows Forms Docking Manager
+# How to set docked size in WinForms Docking Control
 
 `GetControlSize` and `SetControlSize` methods lets you get or set the size of the control respectively.
 

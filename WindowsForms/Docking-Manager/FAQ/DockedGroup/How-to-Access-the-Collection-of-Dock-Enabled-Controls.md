@@ -8,11 +8,11 @@ documentation: ug
 ---
 
 
-# How to access controls in Windows Forms Docking Manager
+# How to access controls in WinForms Docking Control
 
-The DockingManager.Controls property returns an enumerator that may be used for accessing the controls that are currently associated with the DockingManager. To access and modify the DockingManager’s control, the contents of the enumerator should first be copied to a temporary collection.
+The DockingManager.Controls property returns an enumerator that may be used for accessing the controls that are currently associated with the WinForms Docking Control. To access and modify the WinForms Docking Control's control, the contents of the enumerator should first be copied to a temporary collection.
 
-Step 1: Create the respective controls and dock the control through design by setting `EnableDocking on dockingManager` property to `true` and follow the below given steps to enable, access, and modify the docked controls.
+Step 1: Create the respective controls and dock the control through design by setting `EnableDocking on WinForms Docking Control` property to `true` and follow the below given steps to enable, access, and modify the docked controls.
 
  ![Enable Docking on DockingManager](Docked-Group_images/Docked-Group_img4.jpeg)
 

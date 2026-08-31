@@ -7,17 +7,17 @@ control: DockingManager
 documentation: ug
 ---
 
-# Dealing with Docking Child in Docking Manager
+# Dealing with Docking Child in WinForms Docking Control
 
-This section explains about resizing and positioning of child windows in DockingManager. And also explains customizing the visibility of caption button and context menu of docking child windows.
+This section explains about resizing and positioning of child windows in WinForms Docking Control. And also explains customizing the visibility of caption button and context menu of docking child windows.
 
 ## Docked Children
 
-The docking manager allows you to dock the control on any of the four sides of the container control, and this provides docking hints when dragging the panel over it. This preview explains how the layout looks after dropping the panel to dock.
+The WinForms Docking Control allows you to dock the control on any of the four sides of the container control, and this provides docking hints when dragging the panel over it. This preview explains how the layout looks after dropping the panel to dock.
 
 ### Get order of the docked child
 
-Arrangement of child elements in the `DockingManager` is based on the order in which child has been added. You can get the order of controls that is added as a child of the docking manager using the `DockAreaControllers` property. For instance, the child elements have been iterated from the collection of DockAreaControllers and displayed the DockLabel of child element in the output window.
+Arrangement of child elements in the `WinForms Docking Control` is based on the order in which child has been added. You can get the order of controls that is added as a child of the WinForms Docking Control using the `DockAreaControllers` property. For instance, the child elements have been iterated from the collection of DockAreaControllers and displayed the DockLabel of child element in the output window.
 
 {% tabs %}
 
@@ -48,7 +48,7 @@ Next i
 
 ## Activate window
  
-The docking manager [ActivateControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_ActivateControl_System_Windows_Forms_Control_) function helps to activate the particular docked control.
+The WinForms Docking Control [ActivateControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_ActivateControl_System_Windows_Forms_Control_) function helps to activate the particular docked control.
 
 {% tabs %}
 
@@ -73,7 +73,7 @@ Me.DockingManager1.ActivateControl(Me.panel1)
 
 ## Identify whether the window is docking or not
 
-The docking manager [IsFloating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_IsFloating_System_Windows_Forms_Control_) function returns `false` if the control is in docked state and `true` if the control is in floating state.
+The WinForms Docking Control [IsFloating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_IsFloating_System_Windows_Forms_Control_) function returns `false` if the control is in docked state and `true` if the control is in floating state.
 
 {% tabs %}
 
@@ -119,7 +119,7 @@ Me.dockingManager1.DockControl(Me.panel1, Me, Syncfusion.Windows.Forms.Tools.Doc
 
 ## Size constraint for dock children
 
-The docking manager provides option to restrict user to resize the dock panel to specified minimum size. The [SetControlMinimumSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SetControlMinimumSize_System_Windows_Forms_Control_System_Drawing_Size_) function helps to set the minimum size of docked control.
+The WinForms Docking Control provides option to restrict user to resize the dock panel to specified minimum size. The [SetControlMinimumSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SetControlMinimumSize_System_Windows_Forms_Control_System_Drawing_Size_) function helps to set the minimum size of docked control.
 
 {% tabs %}
 
@@ -143,7 +143,7 @@ Me.dockingManager1.SetControlMinimumSize(panel1,new Size(200, 400))
 
 ## Restrict to dock on specific sides
 
-You can restrict the specific [DockAbility](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockAbility.html) of child window when it is moved to the client area in the docking manager.
+You can restrict the specific [DockAbility](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockAbility.html) of child window when it is moved to the client area in the WinForms Docking Control.
 
 ### Inner dock ability
 
@@ -249,9 +249,9 @@ Me.dockingManager1.GetCloseButtonToolTip()
 
 ### Super tooltip
 
-The docking manager displays a SuperToolTip for dock caption buttons by enabling the [EnableSuperTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_EnableSuperToolTip) property. For this, the SuperTooltip control should be dragged and dropped to the form and it should be selected in the [DockingManager.SuperTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SuperToolTip) property.
+The WinForms Docking Control displays a SuperToolTip for dock caption buttons by enabling the [EnableSuperTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_EnableSuperToolTip) property. For this, the SuperTooltip control should be dragged and dropped to the form and it should be selected in the [DockingManager.SuperTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SuperToolTip) property.
 
-A SuperToolTip can be added to the docking manager programmatically using the following code snippet.
+A SuperToolTip can be added to the WinForms Docking Control programmatically using the following code snippet.
 
 {% tabs %}
 
@@ -344,7 +344,7 @@ N> The [EnableSuperTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusi
 
 ## Remove particular caption button
 
-You can remove the particular caption button by using [CaptionButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_CaptionButtons) collection. The following code example illustrates how to remove close button in the docking manager. The following CaptionButton text can be used for removing particular caption button in the docking child window.
+You can remove the particular caption button by using [CaptionButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_CaptionButtons) collection. The following code example illustrates how to remove close button in the WinForms Docking Control. The following CaptionButton text can be used for removing particular caption button in the docking child window.
 
 <table>
 <tr>
