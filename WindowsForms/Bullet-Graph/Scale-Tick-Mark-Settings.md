@@ -7,7 +7,7 @@ control: Bullet Graph
 documentation: ug
 ---
 
-# Scale Tick Mark Settings in Windows Forms Bullet Graph
+# Scale Tick Mark Settings in WinForms Bullet Graph
 
 The quantitative scale is displayed with two types of ticks:
 

@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Scale Label Settings in Windows Forms Bullet Graph
+# Scale Label Settings in WinForms Bullet Graph
 
 ### Labels:
 

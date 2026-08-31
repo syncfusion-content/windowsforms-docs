@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Measure Settings in Windows Forms Bullet Graph
+# Measure Settings in WinForms Bullet Graph
 
 ### Featured Measure:
 
@@ -16,7 +16,7 @@ The Featured Measure displays the primary data, or the current value of the data
 
 #### Customizing Featured Measure:
 
-The value of the Featured Measure of the BulletGraph is set by the [FeaturedMeasure](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_FeaturedMeasure) property. By setting the [FeaturedMeasureBarStroke](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_FeaturedMeasureBarStroke) property, the stroke of the FeaturedMeasure bar is customized. The thickness of the Featured Measure bar is modified by using [FeaturedMeasureBarStrokeThickness](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_FeaturedMeasureBarStrokeThickness).
+The value of the Featured Measure of the WinForms Bullet Graph is set by the [FeaturedMeasure](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_FeaturedMeasure) property. By setting the [FeaturedMeasureBarStroke](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_FeaturedMeasureBarStroke) property, the stroke of the FeaturedMeasure bar is customized. The thickness of the Featured Measure bar is modified by using [FeaturedMeasureBarStrokeThickness](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_FeaturedMeasureBarStrokeThickness).
 
 {% tabs %}
 {% highlight c# %}

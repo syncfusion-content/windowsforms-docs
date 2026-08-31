@@ -7,7 +7,7 @@ control: TreeMap
 documentation: ug
 ---
 
-# Layout in Windows Forms TreeMap
+# Layout in WinForms TreeMap
 
 The [`ItemsLayoutMode`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TreeMap.TreeMap.html#Syncfusion_Windows_Forms_TreeMap_TreeMap_ItemsLayoutMode) of the tree map control specifies the mode in which the items should be laid out. This layout will be applied for all the tree map levels. It includes four different types of layout.
 

@@ -7,7 +7,7 @@ control: TreeMap
 documentation: ug
 ---
 
-# Headers and Labels in Windows Forms TreeMap
+# Headers and Labels in WinForms TreeMap
 
 Labels and headers in a tree map can be customized using the following properties available in the tree map control:
 
