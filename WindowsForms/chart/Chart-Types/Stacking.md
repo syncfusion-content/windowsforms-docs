@@ -13,7 +13,7 @@ documentation: ug
 
 Stacking column chart are similar to regular column charts, except that the Y values are stacked on top of each other in the order of the series. This helps visualize how each part contributes to the whole.
 
-The following code example demonstrates how to create a Stacking Column Chart.
+The following code example demonstrates how to create a stacking column chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -65,7 +65,7 @@ chartControl.Series.Add(secondServer)
 
 ### Customization options
 
-The following chart series properties are used as customization options for Stacking Column chart:
+The following chart series properties are used as customization options for stacking column chart:
 
 - [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border)
 - [ColumnFixedWidth](https://help.syncfusion.com/windowsforms/chart/chart-series#columnfixedwidth)
@@ -102,9 +102,9 @@ The following chart series properties are used as customization options for Stac
 
 ## Stacking column 100 chart
 
-A Stacking Column 100 chart is similar to a Stacking Column chart, except that the stacked values in each column always add up to 100%.
+A Stacking column 100 chart is similar to a stacking column chart, except that the stacked values in each column always add up to 100%.
 
-The following code example demonstrates how to create a Stacking Column 100 Chart.
+The following code example demonstrates how to create a stacking column 100 Chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -156,7 +156,7 @@ chartControl.Series.Add(secondServer)
 
 ### Customization options
 
-The following chart series properties are used as customization options for Stacking Column 100 chart types:
+The following chart series properties are used as customization options for stacking column 100 chart types:
 
 - [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border)
 - [ColumnFixedWidth](https://help.syncfusion.com/windowsforms/chart/chart-series#columnfixedwidth)
@@ -195,7 +195,7 @@ The following chart series properties are used as customization options for Stac
 
 Stacking bar chart are similar to regular bar chart, but the Y values are stacked on top of each other in the specified series order. This helps visualize the relationship of parts to a whole. 
 
-The following code example demonstrates how to create a Stacking Bar Chart.
+The following code example demonstrates how to create a stacking bar chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -245,7 +245,7 @@ chartControl.Series.Add(secondServer)
 
 ### Customization options
 
-The following chart series properties are used as customization options for Stacking Bar chart:
+The following chart series properties are used as customization options for stacking bar chart:
 
 - [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border)
 - [ColumnDrawMode](https://help.syncfusion.com/windowsforms/chart/chart-series#columndrawmode)
@@ -281,9 +281,9 @@ The following chart series properties are used as customization options for Stac
 
 ## Stacking bar100 chart
 
-A Stacking Bar100 chart is similar to a Stacking Bar chart, except that the stacked values in each bar always add up to 100%.
+A stacking bar 100 chart is similar to a stacking bar chart, except that the stacked values in each bar always add up to 100%.
 
-The following code example demonstrates how to create a Stacking Bar 100 Chart.
+The following code example demonstrates how to create a stacking bar 100 Chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -333,7 +333,7 @@ chartControl.Series.Add(secondServer)
 
 ### Customization options
 
-The following chart series properties are used as customization options for Stacking Bar 100 chart:
+The following chart series properties are used as customization options for stacking bar 100 chart:
 
 - [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border)
 - [ColumnDrawMode](https://help.syncfusion.com/windowsforms/chart/chart-series#columndrawmode)
@@ -369,9 +369,9 @@ The following chart series properties are used as customization options for Stac
 
 ## Stacking area chart
 
-A Stacking Area chart is similar to a standard Area chart, but the areas of each series are stacked on top of one another in a specified order.
+A stacking area chart is similar to a standard area chart, but the areas of each series are stacked on top of one another in a specified order.
 
-The following code example demonstrates how to create a Stacking Area Chart.
+The following code example demonstrates how to create a stacking area chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -423,7 +423,7 @@ chartControl.Series.Add(secondServer)
 
 ### Customization options
 
-The following chart series properties are used as customization options for Stacked Area chart:
+The following chart series properties are used as customization options for stacked area chart:
 
 - [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border)
 - [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
@@ -452,9 +452,9 @@ The following chart series properties are used as customization options for Stac
 
 ## Stacking area100 chart
 
-Stacking Area100 chart displays multiple data series as stacked areas, ensuring the cumulative proportion of each element always totals 100%. 
+Stacking area 100 chart displays multiple data series as stacked areas, ensuring the cumulative proportion of each element always totals 100%. 
 
-The following code example demonstrates how to create a Stacking Area100 Chart.
+The following code example demonstrates how to create a stacking area 100 Chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -527,7 +527,7 @@ chartControl.Series.Add(thirdServer)
 
 ### Customization options
 
-The following chart series properties are used as customization options for Stacking Area 100 chart:
+The following chart series properties are used as customization options for stacking area 100 chart:
 
 - [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border)
 - [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)

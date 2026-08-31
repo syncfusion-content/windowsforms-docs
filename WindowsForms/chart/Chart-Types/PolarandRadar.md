@@ -13,7 +13,7 @@ documentation: ug
 
 Polar chart displays data using values and angles in a circular coordinate system. The X-values determine the angles of the data points, while the Y-values determine their distance from the center of the chart.
 
-The following code example demonstrates how to create a Polar Chart.
+The following code example demonstrates how to create a polar chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -90,7 +90,7 @@ chartControl.PrimaryXAxis.Range = New MinMaxInfo(0, 360, 45)
 
 ### Customization options
 
-The following chart series properties are used as customization options for Polar chart:
+The following chart series properties are used as customization options for polar chart:
 
 - [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border)
 - [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
@@ -124,7 +124,7 @@ The following chart series properties are used as customization options for Pola
 
 Radar chart displays data using radial axes that extend from a central point. Each category is plotted along its own axis, and the data points are connected to form a shape. 
 
-The following code example demonstrates how to create a Radar Chart.
+The following code example demonstrates how to create a radar Chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -275,14 +275,14 @@ End Sub
 
 ### Type
 
-The [Type](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartRadarConfigItem_Type) property specifies the type of Radar chart to be rendered, with [Area](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarDrawType.html#Syncfusion_Windows_Forms_Chart_ChartRadarDrawType_Area) used as the default value.
+The [Type](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartRadarConfigItem_Type) property specifies the type of radar chart to be rendered, with [Area](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarDrawType.html#Syncfusion_Windows_Forms_Chart_ChartRadarDrawType_Area) used as the default value.
 
 This property supports the following values:
 
-- [Area](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarDrawType.html#Syncfusion_Windows_Forms_Chart_ChartRadarDrawType_Area): Renders the Radar chart as a filled area.
-- [Line](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarDrawType.html#Syncfusion_Windows_Forms_Chart_ChartRadarDrawType_Line): Renders the Radar chart using connected lines only.
+- [Area](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarDrawType.html#Syncfusion_Windows_Forms_Chart_ChartRadarDrawType_Area): Renders the radar chart as a filled area.
+- [Line](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarDrawType.html#Syncfusion_Windows_Forms_Chart_ChartRadarDrawType_Line): Renders the radar chart using connected lines only.
 
-The following code renders the Radar chart as a line chart.
+The following code renders the radar chart as a line chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -299,14 +299,14 @@ chartControl.Series(1).ConfigItems.RadarItem.Type = ChartRadarDrawType.Line
 
 ### Radar style
 
-The [RadarStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_RadarStyle) property determines the axis style used to render a Radar chart. By default, the Radar chart is rendered using the [Polygon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarAxisStyle.html#Syncfusion_Windows_Forms_Chart_ChartRadarAxisStyle_Polygon) axis style.
+The [RadarStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_RadarStyle) property determines the axis style used to render a radar chart. By default, the radar chart is rendered using the [Polygon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarAxisStyle.html#Syncfusion_Windows_Forms_Chart_ChartRadarAxisStyle_Polygon) axis style.
 
-The supported Radar styles are:
+The supported radar styles are:
 
-- [Polygon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarAxisStyle.html#Syncfusion_Windows_Forms_Chart_ChartRadarAxisStyle_Polygon): Renders the Radar chart with polygonal grid lines, where each grid level is displayed as a multi-sided polygon.
-- [Circle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarAxisStyle.html#Syncfusion_Windows_Forms_Chart_ChartRadarAxisStyle_Circle): Renders the Radar chart with circular grid lines, giving the chart a smoother and more rounded appearance.
+- [Polygon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarAxisStyle.html#Syncfusion_Windows_Forms_Chart_ChartRadarAxisStyle_Polygon): Renders the radar chart with polygonal grid lines, where each grid level is displayed as a multi-sided polygon.
+- [Circle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarAxisStyle.html#Syncfusion_Windows_Forms_Chart_ChartRadarAxisStyle_Circle): Renders the radar chart with circular grid lines, giving the chart a smoother and more rounded appearance.
 
-The following code sets the Radar chart axis style to `Circle`.
+The following code sets the radar chart axis style to `Circle`.
 
 {% tabs %}
 {% highlight c# %}
@@ -321,7 +321,7 @@ chartControl.RadarStyle = ChartRadarAxisStyle.Circle
 
 ### Customization options
 
-The following chart series properties are used as customization options for Radar chart:
+The following chart series properties are used as customization options for radar chart:
 
 - [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border)
 - [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
