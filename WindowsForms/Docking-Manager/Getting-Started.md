@@ -63,7 +63,7 @@ To add control manually in C#, follow the given steps:
    * Syncfusion.Tools.Base.dll
    * Syncfusion.Tools.Windows.dll
 
-2. Create [WinForms Docking Control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) control instance and add it to the component list.
+2. Create [WinForms Docking Control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) instance and add it to the component list.
 
 {% capture codesnippet1 %}
 {% tabs %}
