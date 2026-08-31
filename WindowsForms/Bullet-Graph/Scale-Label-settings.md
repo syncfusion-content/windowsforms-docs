@@ -8,9 +8,9 @@ documentation: ug
 ---
 
 
-# Scale Label Settings in Windows Forms Bullet Graph
+# Scale Label Settings in WinForms Bullet Graph
 
-### Labels:
+## Labels:
 
 A quantitative scale label specifies the numeric value according to the major ticks in the range of the scale.
 

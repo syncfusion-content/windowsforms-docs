@@ -22,7 +22,7 @@ this.pivotChart1.EnableTouchMode = true;
 
 {% highlight vb %}
 
-'Enable the touch mode for PivotChart
+'Enable the touch mode for WinForms Pivot Chart
 Me.pivotChart1.EnableTouchMode = True
 
 {% endhighlight %}

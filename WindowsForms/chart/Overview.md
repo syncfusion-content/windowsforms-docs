@@ -95,15 +95,15 @@ This section gives you an idea of the different sections of a Chart control. Bel
 
 ### Chart Control
 
-The ChartControl is the complete visible display for the Control. All other sections will be inside the ChartControl. 
+The WinForms Chart is the complete visible display for the Control. All other sections will be inside the WinForms Chart. 
 
 ### Chart Title
 
-The Chart title is the area at the top of the Chart control that displays the text of the ChartControl.
+The Chart title is the area at the top of the Chart control that displays the text of the WinForms Chart.
 
 ### Chart Legend 
 
-The Chart legend is the portion of the display showing an entry for each of the data series added to the ChartControl. The Chart legend is positioned in line within the ChartControl (but outside the ChartArea) by default. However, if the chart legend is set to floating mode, the Chart legend can be positioned anywhere inside the Chart control.
+The Chart legend is the portion of the display showing an entry for each of the data series added to the WinForms Chart. The Chart legend is positioned in line within the WinForms Chart (but outside the ChartArea) by default. However, if the chart legend is set to floating mode, the Chart legend can be positioned anywhere inside the Chart control.
 
 The legend can also contain custom items with custom image and text.
 

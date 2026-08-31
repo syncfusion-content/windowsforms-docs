@@ -7,7 +7,7 @@ control: TreeMap
 documentation: ug
 ---
 
-# Levels in Windows Forms TreeMap
+# Levels in WinForms TreeMap
 
 The levels of the tree map control can be categorized into two types: flat and hierarchical, which are used to define the levels of a data collection. 
 
