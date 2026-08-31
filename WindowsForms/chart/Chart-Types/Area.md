@@ -11,9 +11,9 @@ documentation: ug
  
 ## Area chart
 
-An Area Chart renders data points as connected line segments and fills the area between the line and the horizontal axis with a specified color.
+An area chart renders data points as connected line segments and fills the area between the line and the horizontal axis with a specified color.
 
-The following code example demonstrates how to create an Area chart.
+The following code example demonstrates how to create an area chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -48,7 +48,7 @@ chartControl.Series.Add(firstServer)
 
 ### Customization options
 
-The following chart series properties are used as customization options for Area chart:
+The following chart series properties are used as customization options for area chart:
 
 - [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border)
 - [DisplayShadow](https://help.syncfusion.com/windowsforms/chart/chart-series#displayshadow)
@@ -77,9 +77,9 @@ The following chart series properties are used as customization options for Area
 
 ## Step area chart
 
-Step Area chart is similar to a standard area chart, but instead of connecting data points with straight lines, it uses horizontal and vertical lines to create a step-like pattern between values.
+A step area chart is similar to a standard area chart, but instead of connecting data points with straight lines, it uses horizontal and vertical lines to create a step-like pattern between values.
 
-The following code example demonstrates how to create a Step Area chart.
+The following code example demonstrates how to create a step area chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -112,7 +112,7 @@ chartControl.Series.Add(firstServer)
 
 ### Customization options
 
-The following chart series properties are used as customization options for Step Area chart:
+The following chart series properties are used as customization options for step area chart:
 
 - [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border)
 - [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)

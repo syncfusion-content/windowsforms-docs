@@ -7,13 +7,13 @@ control: Chart
 documentation: ug
 ---
 
-# Funnel and Pyramid Chart in Windows Forms Charts
+# Funnel and Pyramid in Windows Forms Charts
 
 ## Pyramid chart
 
-A Pyramid chart displays data in a triangular shape divided into sections, where the width of each section represents its corresponding value.
+A pyramid chart displays data in a triangular shape divided into sections, where the width of each section represents its corresponding value.
 
-The following code example demonstrates how to create a Pyramid chart.
+The following code example demonstrates how to create a pyramid chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -319,7 +319,7 @@ chartControl.Series(0).ConfigItems.PyramidItem.ShowSeriesTitle = True
 
 ### Customization options
 
-The following chart series properties are used as customization options for Pyramid chart:
+The following chart series properties are used as customization options for pyramid chart:
 
 - [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border)
 - [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
@@ -348,7 +348,7 @@ The following chart series properties are used as customization options for Pyra
 
 ## Funnel chart
 
-A Funnel chart displays data in a funnel shape, where each section represents a portion of the total value. It is a single-series chart and does not use axes.
+A funnel chart displays data in a funnel shape, where each section represents a portion of the total value. It is a single-series chart and does not use axes.
 
 The following code example demonstrates how to create a Funnel chart.
 
@@ -653,7 +653,7 @@ chartControl.Series(0).ConfigItems.FunnelItem.ShowSeriesTitle = True
 
 ### Customization options
 
-The following chart series properties are used as customization options for Funnel chart:
+The following chart series properties are used as customization options for funnel chart:
 
 - [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border)
 - [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)

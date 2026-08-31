@@ -9,7 +9,7 @@ documentation: ug
 
 # Box and Whisker Chart in Windows Forms Charts
 
-A Box and Whisker chart renders a combination of boxes and lines to show how the values are distributed in a dataset.
+A box and whisker chart renders a combination of boxes and lines to show how the values are distributed in a dataset.
 
 The chart supports **Normal mode** and **Percentile mode** for determining the whisker range and outliers. In Normal mode, values beyond 1.5 times the interquartile range are treated as outliers. In Percentile mode, use the [PercentileMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBoxAndWhiskerConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartBoxAndWhiskerConfigItem_PercentileMode) and [Percentile](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBoxAndWhiskerConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartBoxAndWhiskerConfigItem_Percentile) properties to define the whisker limits. Use the [OutLierWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBoxAndWhiskerConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartBoxAndWhiskerConfigItem_OutLierWidth) property to adjust the width of the outliers.
 
@@ -32,7 +32,7 @@ N>3.The width of the Outliers can be adjusted by using this 'Series1.ConfigItems
 {% tabs %}
 {% highlight c# %}
 
-The following code example demonstrates how to create a Box and Whisker chart.
+The following code example demonstrates how to create a box and whisker chart.
 
 ChartSeries revenueSeries = new ChartSeries("Revenue", ChartSeriesType.BoxAndWhisker);
 
@@ -184,9 +184,9 @@ chartControl.Series(1).ConfigItems.BoxAndWhiskerItem.OutLierWidth = 60
 
 ![Box And Whisker OutLier Width in Windows Forms](../Chart-Types_images/windowsforms-box-and-whisker-outlier-width.png)
 
-## Customization option
+## Customization options
 
-The following chart series properties are used as customization options for Box and Whisker chart:
+The following chart series properties are used as customization options for box and whisker chart:
 
 - [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border)
 - [ColumnDrawMode](https://help.syncfusion.com/windowsforms/chart/chart-series#columndrawmode)

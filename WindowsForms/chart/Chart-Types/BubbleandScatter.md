@@ -11,11 +11,9 @@ documentation: ug
 
 ## Bubble chart
 
-A Bubble Chart is an extension of a Scatter chart that displays three variables. The X and Y coordinates determine the position of each data point, while the size of the bubble represents a third value. 
+A bubble chart is an extension of a Scatter chart that displays three variables. The X and Y coordinates determine the position of each data point, while the size of the bubble represents a third value. 
 
-It is commonly used to compare and analyze relationships among multiple data sets, such as market trends and product comparisons.
-
-The following code example demonstrates how to create a Bubble Chart.
+The following code example demonstrates how to create a bubble Chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -139,7 +137,7 @@ chartControl.Series(0).ConfigItems.BubbleItem.EnablePhongStyle = False
 
 ### Customization options
 
-The following chart series properties are used as customization options for Bubble chart:
+The following chart series properties are used as customization options for bubble chart:
 
 - [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border)
 - [BubbleType](https://help.syncfusion.com/windowsforms/chart/chart-series#bubbletype)
@@ -169,9 +167,7 @@ The following chart series properties are used as customization options for Bubb
 
 ## Scatter chart
 
-A Scatter chart (XY Chart) displays the relationship between two numerical variables by plotting data points on X and Y axes. The points are not connected by lines. 
-
-It is useful for identifying patterns, trends, and correlations between variables. It commonly used for scientific and statistical data analysis.
+A scatter chart (XY Chart) displays the relationship between two numerical variables by plotting data points on X and Y axes. The points are not connected by lines. 
 
 The following code example demonstrates how to create a Scatter Chart.
 
@@ -236,7 +232,7 @@ chartControl.Series.Add(chartSeries)
 
 ### Customization options
 
-The following chart series properties are used as customization options for Scatter chart:
+The following chart series properties are used as customization options for scatter chart:
 
 - [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
 - [DrawSeriesNameInDepth](https://help.syncfusion.com/windowsforms/chart/chart-series#drawseriesnameindepth)

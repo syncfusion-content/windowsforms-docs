@@ -11,9 +11,9 @@ documentation: ug
 
 ## Column chart
 
-A Column chart renders discrete vertical rectangles for the given data points.
+A column chart renders discrete vertical rectangles for the given data points.
 
-The following code example demonstrates how to create a Column Chart.
+The following code example demonstrates how to create a column Chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -221,7 +221,7 @@ chartControl.Series(0).ConfigItems.ColumnItem.ShadingMode = ChartColumnShadingMo
 
 ### Customization options
 
-The following chart series properties are used as customization options for Column chart:
+The following chart series properties are used as customization options for column chart:
 
 - [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border)
 - [ColumnDrawMode](https://help.syncfusion.com/windowsforms/chart/chart-series#columndrawmode)
@@ -264,7 +264,7 @@ The following chart series properties are used as customization options for Colu
 
 ## Bar chart
 
-A Bar chart renders data points as horizontal bars to compare values across different categories.
+A bar chart renders data points as horizontal bars to compare values across different categories.
 
 The following code shows how to define a bar chart in ChartControl.
 
@@ -316,7 +316,7 @@ chartControl.Series.Add(secondServer)
 
 ### Customization options
 
-The following chart series properties are used as customization options for Bar chart:
+The following chart series properties are used as customization options for bar chart:
 
 - [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border)
 - [ColumnDrawMode](https://help.syncfusion.com/windowsforms/chart/chart-series#columndrawmode)
