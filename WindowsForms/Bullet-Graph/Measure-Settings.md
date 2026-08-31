@@ -10,11 +10,11 @@ documentation: ug
 
 # Measure Settings in WinForms Bullet Graph
 
-### Featured Measure:
+## Featured Measure:
 
 The Featured Measure displays the primary data, or the current value of the data that you are measuring. It should usually be encoded as a bar, like the bar on a bar graph, and be prominent.
 
-#### Customizing Featured Measure:
+### Customizing Featured Measure:
 
 The value of the Featured Measure of the WinForms Bullet Graph is set by the [FeaturedMeasure](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_FeaturedMeasure) property. By setting the [FeaturedMeasureBarStroke](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_FeaturedMeasureBarStroke) property, the stroke of the FeaturedMeasure bar is customized. The thickness of the Featured Measure bar is modified by using [FeaturedMeasureBarStrokeThickness](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_FeaturedMeasureBarStrokeThickness).
 
@@ -44,11 +44,11 @@ Me.Controls.Add(bullet)
 
 ![WinForms Bullet Graph featured measure](Features_images/Features_img5.png)
 
-### Comparative Measure:
+## Comparative Measure:
 
 The Comparative Measure should be less visually dominant than the Featured Measure. It should always be encoded as a short line that runs perpendicular to the orientation of the graph. A good example is a target for YTD revenue. Whenever the Featured Measure intersects a Comparative Measure, the Comparative Measure appears behind the Featured Measure.
 
-#### Customizing Comparative Measure:
+### Customizing Comparative Measure:
 
 The value of the Comparative Measure is set by using the [ComparativeMeasure](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_ComparativeMeasure) property. By setting the [ComparativeMeasureSymbolStroke](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_ComparativeMeasureSymbolStroke) property, the stroke of the Comparative Measure symbol is customized. The thickness of the Comparative Measure symbol is modified by using [ComparativeMeasureSymbolStrokeThickness](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_ComparativeMeasureSymbolStrokeThickness).
 

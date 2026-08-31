@@ -23,7 +23,7 @@ The leaf nodes of the tree map can be colored using the [`Color`](https://help.s
 
 
 
-#### Code sample
+### Code sample
 
 {% tabs %}
 
@@ -75,7 +75,7 @@ this.TreeMap1.LeafColorMapping = uniColorMapping;
 
 The leaf nodes of the tree map control can be colored based on the [`From`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TreeMap.RangeBrush.html#Syncfusion_Windows_Forms_TreeMap_RangeBrush_From) and [`To`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TreeMap.RangeBrush.html#Syncfusion_Windows_Forms_TreeMap_RangeBrush_To) ranges. Color can be specified using the [`Color`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TreeMap.RangeBrush.html#Syncfusion_Windows_Forms_TreeMap_RangeBrush_Color) property in the range brush collection of RangeBrushColorMapping.
 
-#### Code sample
+### Code sample
 
 {% tabs %}
 
@@ -134,7 +134,7 @@ this.TreeMap1.LeafColorMapping = rangeBrushColorMapping;
 
 The leaf nodes of the tree map control can be colored based on the [`Color`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TreeMap.RangeBrush.html#Syncfusion_Windows_Forms_TreeMap_RangeBrush_Color) property specified in the DesaturationColorMapping. The [`RangeMinimum`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TreeMap.DesaturationColorMapping.html#Syncfusion_Windows_Forms_TreeMap_DesaturationColorMapping_RangeMinimum) and [`RangeMaximum`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TreeMap.DesaturationColorMapping.html#Syncfusion_Windows_Forms_TreeMap_DesaturationColorMapping_RangeMaximum) must be specified to determine opacity for every leaf node. The opacity of leaf nodes lies in the range between [`From`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TreeMap.DesaturationColorMapping.html#Syncfusion_Windows_Forms_TreeMap_DesaturationColorMapping_From) and [`To`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TreeMap.DesaturationColorMapping.html#Syncfusion_Windows_Forms_TreeMap_DesaturationColorMapping_To) properties in DesaturationColorMapping.
 
-#### Code sample
+### Code sample
 
 {% tabs %}
 
@@ -195,7 +195,7 @@ this.TreeMap1.LeafColorMapping = desaturationColorMapping;
 
 The leaf nodes can be colored using the brushes specified in the [`Colors`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TreeMap.PaletteColorMapping.html#Syncfusion_Windows_Forms_TreeMap_PaletteColorMapping_Colors) collection of PaletteColorMapping.
 
-#### Code sample
+### Code sample
 
 {% tabs %}
 

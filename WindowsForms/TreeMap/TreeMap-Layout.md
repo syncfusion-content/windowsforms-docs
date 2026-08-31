@@ -13,7 +13,7 @@ The [`ItemsLayoutMode`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.W
 
 ## Squarified layout
 
-#### Code sample
+### Code sample
 
 {% tabs %}
 
@@ -71,7 +71,7 @@ TreeMap1.Levels.Add(treeMapFlatLevel2)
 
 ## SliceAndDiceAuto layout
 
-#### Code sample
+### Code sample
 
 {% tabs %}
 
@@ -129,7 +129,7 @@ TreeMap1.Levels.Add(treeMapFlatLevel2)
 
 ## SliceAndDiceHorizontal layout
 
-#### Code sample
+### Code sample
 
 {% tabs %}
 
@@ -187,7 +187,7 @@ TreeMap1.Levels.Add(treeMapFlatLevel2)
 
 ## SliceAndDiceVertical layout
 
-#### Code sample
+### Code sample
 
 {% tabs %}
 

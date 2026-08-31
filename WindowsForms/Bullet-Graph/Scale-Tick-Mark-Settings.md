@@ -14,7 +14,7 @@ The quantitative scale is displayed with two types of ticks:
 * Major ticks: The primary scale indicators.
 * Minor ticks: The secondary scale indicators that fall in between the major ticks.
 
-### Customizing Ticks:
+## Customizing Ticks:
 
 The stroke of the major and minor ticks is customized by setting the [MajorTickStroke](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_MajorTickStroke) and [MinorTickStroke](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_MinorTickStroke) properties. The size is modified by using the [MajorTickSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_MajorTickSize) and [MinorTickSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_MinorTickSize) properties. By setting [MajorTickStrokeThickness](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_MajorTickStrokeThickness) and [MinorTickStrokeThickness](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_MinorTickStrokeThickness), the stroke's thickness is customized.
 
@@ -56,7 +56,7 @@ Me.Controls.Add(bullet)
 
 ![WinForms Bullet Graph tick customization](Features_images/Features_img9.png)
 
-### TickPosition:
+## TickPosition:
 
 The ticks in the scale are placed above or below the ranges of the quantitative scale by choosing the options available in the [TickPosition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_TickPosition) property.
 
