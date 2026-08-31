@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Performance in Windows Forms TreeView | Syncfusion®
 description: Performance optimization includes virtualization, deferred recalculation, batch updates, and efficient node loading.
@@ -8,15 +8,15 @@ documentation: ug
 ---
 # Performance in Windows Forms TreeView
 
-WinForms TreeViewAdv performance can be improved by the following properties and methods.
+WinForms TreeView performance can be improved by the following properties and methods.
 
 ## EnableVirtualization
 
-In TreeViewAdv, loading 20,000 nodes can take nearly 60 seconds. Since this is a considerable delay, the `EnableVirtualization` property can be used to mitigate it. When `EnableVirtualization` is set to `true`, the parent nodes are added by scrolling the vertical scrollbar, and the child nodes are added when the corresponding parent node is expanded.
+In WinForms TreeView, loading 20,000 nodes can take nearly 60 seconds. Since this is a considerable delay, the `EnableVirtualization` property can be used to mitigate it. When `EnableVirtualization` is set to `true`, the parent nodes are added by scrolling the vertical scrollbar, and the child nodes are added when the corresponding parent node is expanded.
 
 ## SuspendExpandRecalculate
 
-Improves the performance of the TreeViewAdv when it contains a large number of nodes. Generally, populating 5,000 child nodes under a root node takes about 10 milliseconds. After setting the `SuspendExpandRecalculate` property to `true`, the time required is roughly halved to 5 milliseconds. The unnecessary calling of Recalculate dimensions for child nodes when the root nodes are collapsed is also reduced.
+Improves the performance of the WinForms TreeView when it contains a large number of nodes. Generally, populating 5,000 child nodes under a root node takes about 10 milliseconds. After setting the `SuspendExpandRecalculate` property to `true`, the time required is roughly halved to 5 milliseconds. The unnecessary calling of Recalculate dimensions for child nodes when the root nodes are collapsed is also reduced.
 
 ## RecalculateExpansion
 
@@ -28,7 +28,7 @@ By default, this property is `true`. When set to `false`, it greatly improves th
 <table>
 <tr>
 <th>
-TreeViewAdv Properties</th><th>
+WinForms TreeView Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -49,7 +49,7 @@ Methods Table
 <table>
 <tr>
 <th>
-TreeViewAdv Methods</th><th>
+WinForms TreeView Methods</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -63,7 +63,7 @@ Resumes the painting of the control suspended by the BeginUpdate method.</td></t
 
 > Note
 > 
-> While adding more than one node to the treeViewAdv control, calling the `BeginUpdate` and `EndUpdate` method will improve performance of the control.
+> While adding more than one node to the WinForms TreeView control, calling the `BeginUpdate` and `EndUpdate` method will improve performance of the control.
 
 {% tabs %}
 {% highlight c# %}

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Data Binding in Windows Forms TreeView | Syncfusion®
 description: Data binding supports self-referencing, relational, and object-relational data sources with hierarchical node generation.
@@ -8,19 +8,19 @@ documentation: ug
 ---
 
 # Data Binding in Windows Forms TreeView
-[TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) binds to any table, collection of tables, custom objects, etc. by using the [TreeViewAdv.DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DataSource) property. 
+[WinForms TreeView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) binds to any table, collection of tables, custom objects, etc. by using the [TreeViewAdv.DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DataSource) property. 
 
-The following are the ways to bind various data sources to [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html).
+The following are the ways to bind various data sources to [WinForms TreeView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html).
 1.	Binding to Self-Referencing Data
 2.	Binding to Data Relations
 3.	Binding to Object-Relational Data
 
 ## Binding to Self-Referencing Data
-In this type, [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) binds to self-referencing data where the [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) is bound to single table instead of multiple related tables.
+In this type, [WinForms TreeView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) binds to self-referencing data, where it is bound to a single table instead of multiple related tables.
 
-Parent-Child relationship for all the records is defined by setting the [ParentMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ParentMember) and [ChildMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ChildMember) properties to the respective fields in the data source. If the Parent ID of one record has the respective value in the Child ID of any other record from the table, then that record is considered to have a parent. If not, then the record is considered to have no parent and, in such case, it will not be visible in the [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html).
+Parent-Child relationship for all the records is defined by setting the [ParentMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ParentMember) and [ChildMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ChildMember) properties to the respective fields in the data source. If the Parent ID of one record has the respective value in the Child ID of any other record from the table, then that record is considered to have a parent. If not, then the record is considered to have no parent and, in such case, it will not be visible in the [WinForms TreeView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html).
 
-If the value in [ParentMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ParentMember) field of some records matches with the [TreeViewAdv.SelfRelationRootValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_SelfRelationRootValue), then those records are considered as root nodes of [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html).
+If the value in [ParentMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ParentMember) field of some records matches the value of the WinForms TreeView's [SelfRelationRootValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_SelfRelationRootValue) property, then those records are considered as root nodes of [WinForms TreeView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html).
   
 <table>
 <tr>
@@ -30,31 +30,31 @@ Description</th></tr>
 <tr>
 <td>
 DataSource </td><td>
-Gets or sets the data source object in TreeViewAdv.</td></tr>
+Gets or sets the data source object in WinForms TreeView.</td></tr>
 <tr>
 <td>
 DisplayMember  </td><td>
-Gets or sets the field that populates the Text property of the TreeNodeAdv in TreeViewAdv.</td></tr>
+Gets or sets the field that populates the Text property of the TreeNodeAdv in WinForms TreeView.</td></tr>
 <tr>
 <td>
 ValueMember  </td><td>
-Gets or sets the field that populates the Value property of TreeNodeAdv in TreeViewAdv. </td></tr>
+Gets or sets the field that populates the Value property of TreeNodeAdv in WinForms TreeView. </td></tr>
 <tr>
 <td>
 ParentMember </td><td>
-Gets or sets a value indicating the parent data field which behaves as a parent node in TreeViewAdv.</td></tr>
+Gets or sets a value indicating the parent data field which behaves as a parent node in WinForms TreeView.</td></tr>
 <tr>
 <td>
 ChildMember </td><td>
-Gets or sets a value indicating the child data field which behaves as a child node in TreeViewAdv.</td></tr>
+Gets or sets a value indicating the child data field which behaves as a child node in WinForms TreeView.</td></tr>
 <tr>
 <td>
 DataMember </td><td>
-Gets or sets the table name that should be bound to the TreeViewAdv. </td></tr>
+Gets or sets the table name that should be bound to the WinForms TreeView. </td></tr>
 <tr>
 <td>
 CheckedMember</td><td>
-Gets or sets a value indicating the field to populate the state of checkbox of TreeNodeAdv in TreeViewAdv.</td></tr>
+Gets or sets a value indicating the field to populate the state of checkbox of TreeNodeAdv in WinForms TreeView.</td></tr>
 <tr>
 <td>
 SelfRelationRootValue </td><td>
@@ -94,15 +94,15 @@ treeViewAdv1.DataSource = Table_1
 {% endtabs %}
 
 N>
-1)	Root nodes do not have parent nodes (for example, see the **"North America"** node in the image above). All root nodes must have their parent member values (**TreeViewAdv.ParentMember**) set to the **TreeViewAdv.SelfRelationRootValue** property. If the property is not specified, you may notice an empty TreeViewAdv. To avoid this, we recommend that you always set the parent member values to TreeViewAdv.SelfRelationRootValue for root nodes.
-2)	You must specify the **TreeViewAdv.DisplayMember**, **TreeViewAdv.ParentMember**, and **TreeViewAdv.ChildMember** properties to populate the TreeViewAdv.
+1)	Root nodes do not have parent nodes (for example, see the "North America" node in the image above). All root nodes must have their parent member values (**WinForms TreeView's ParentMember**) set to **SelfRelationRootValue**. If this property is not specified, you may notice an empty WinForms TreeView. To avoid this, we recommend always setting the parent member values of root nodes to SelfRelationRootValue.
+2)	To populate the WinForms TreeView, you must specify the **DisplayMember**, **ParentMember**, and **ChildMember** properties.
 
 ## Binding to Data Relations
-In this type, [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) are bound to database where levels are created using [DataRelation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DataRelations) class. Each [DataRelation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DataRelations) class object describes the parent data being bound to, the child data being bound to and the data columns used to populate **Text** and selected **Value** properties of the nodes.
+In this type, [WinForms TreeView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) are bound to database where levels are created using [DataRelation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DataRelations) class. Each [DataRelation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DataRelations) class object describes the parent data being bound to, the child data being bound to and the data columns used to populate **Text** and selected **Value** properties of the nodes.
 
 <table>
 <tr><th>S.No</th><th>Property Name</th><th>Description</th></tr>
-<tr><td>1</td><td>DataRelations</td><td>Contains the collection of DataRelation in TreeViewAdv.</td></tr></table>
+<tr><td>1</td><td>DataRelations</td><td>Contains the collection of DataRelation in WinForms TreeView.</td></tr></table>
 
 <table>
 <tr><th>S.No</th><th>Class Name</th><th>Description</th></tr>
@@ -163,17 +163,17 @@ treeViewAdv1.DataSource = Table_1
 
 ![DataRelations](DataBinding_images/DataRelations2.png)
 
-N> 1)	In this type, you must specify **DisplayMember**, **ParentMember**, **ChildMember** properties mandatorily to populate appropriate TreeViewAdv.
-2)	Here levels are created using **DataRelation**, so if you want to dynamically add new level then you need to create new instance of **DataRelation** and add it to **TreeViewAdv.DataRelations** property with proper relation first.
+N> 1)	In this type, you must specify **DisplayMember**, **ParentMember**, **ChildMember** properties mandatorily to populate appropriate WinForms TreeView.
+2)	Here levels are created using **DataRelation**, so if you want to dynamically add new level then you need to create new instance of **DataRelation** and add it to **WinForms TreeView's DataRelations** property with proper relation first.
 
 ## Binding to Object-Relational Data
-In this type, [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) binds to class objects which have collections associated with other dependent class objects establishing proper relation.
+In this type, [WinForms TreeView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) binds to class objects which have collections associated with other dependent class objects establishing proper relation.
 
 ![Object-RelationalData](DataBinding_images/Object-RelationalData1.png)
 
 In this illustration, there are three classes named Continent, Country and State. In this case the **Continent** class has a property named **ContinentName**, **ContinentID** and **Country_List** which is a collection of **Country** objects. This is the first relation. The second relation is the **State_List** property in the **Country** class, it offers a reference to a collection of **State**. 
 
-You must specify the [DisplayMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DisplayMember), [ChildMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ChildMember) property and here you need not define [ParentMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ParentMember) property. [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) must display it in hierarchical view.
+You must specify the [DisplayMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DisplayMember), [ChildMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ChildMember) property and here you need not define [ParentMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ParentMember) property. [WinForms TreeView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) must display it in hierarchical view.
 
 <table>
 <tr><th>S.No</th><th>Properties</th><th>Description</th></tr>
@@ -217,7 +217,7 @@ treeViewAdv1.ChildMember = "Continent\Country\State"
 
 ## Binding data through designer
 
-The [`TreeViewAdv`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) control supports to bind data from Microsoft Access database through designer. This section describes about how to bind the data from Microsoft Access database to [`TreeViewAdv`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html).
+The [`WinForms TreeView`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) control supports binding data from a Microsoft Access database through the designer. This section describes how to bind data from a Microsoft Access database to the control.
 
 ### Importing Microsoft Access Database
 
@@ -269,7 +269,7 @@ To access the Microsoft Access database, follow the below steps.
 
 ![WinForms TreeViewAdv parent member choosing through the visual studio](DataBinding_images/WinForms-TreeViewAdv-parent-member-choosing-through-the-visual-studio.png)
 
-3) Based on the [`DataSource`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DataSource) binding with the [`TreeViewAdv`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) control, the items can be displayed by using [`DisplayMember`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DisplayMember), [`ValueMember`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ValueMember) and [`ParentMember`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ParentMember) properties.
+3) Based on the [`DataSource`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DataSource) binding with the [`WinForms TreeView`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) control, the items can be displayed by using [`DisplayMember`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DisplayMember), [`ValueMember`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ValueMember) and [`ParentMember`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ParentMember) properties.
 
 ![WinForms TreeViewAdv items displayed using Datasource binding through the visual studio](DataBinding_images/WinForms-TreeViewAdv-items-displayed-using-Datasource-binding-through-the-visual-studio.png)
 
@@ -297,6 +297,6 @@ To create the `DataRelations` through designer follow the below steps,
 
 ![WinForms TreeViewAdv add DataRelations](DataBinding_images/WinForms-TreeViewAdv-add-datarelation.png)
 
-5) Based on the [`DataRelations`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DataRelations) binding with the [`TreeViewAdv`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) control, the items can be displayed by using [`DisplayMember`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DisplayMember) and [`ParentMember`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ParentMember) properties.
+5) Based on the [`DataRelations`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DataRelations) binding with the [`WinForms TreeView`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) control, the items can be displayed by using [`DisplayMember`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DisplayMember) and [`ParentMember`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ParentMember) properties.
 
 ![WinForms TreeViewAdv items displayed using DataRelations binding through the visual studio](DataBinding_images/WinForms-TreeViweAdv-items-displayed-using-DataRelations-binding-through-the-visual-studio.png)

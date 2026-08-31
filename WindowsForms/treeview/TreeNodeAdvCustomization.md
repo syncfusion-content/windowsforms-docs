@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: TreeNodeAdv Customization in Windows Forms TreeView | Syncfusion®
 description: TreeNodeAdv customization supports images, checkboxes, option buttons, custom controls, editing, and advanced node selection.
@@ -11,7 +11,7 @@ documentation: ug
 
 ## OptionButton
 
-The Option Buttons can be displayed for the nodes in the `TreeViewAdv` using the `ShowOptionButtons` property. We can also show or hide the Option Button for a respective node using `ShowOptionButton` property in the `TreeNodeAdv`.
+The Option Buttons can be displayed for the nodes in the `WinForms TreeView` using the `ShowOptionButtons` property. We can also show or hide the Option Button for a respective node using `ShowOptionButton` property in the `TreeNodeAdv`.
 
 <b>Property Table</b>
 
@@ -61,9 +61,9 @@ treeNode.Optioned = True
 
 ### Draw custom option button
 
-The [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) allows you to draw a custom option button inside a tree node using the [DrawNodeCheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DrawNodeCheckBox) event. Set the `Handled` property of the [DrawTreeViewAdvNodeEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawTreeViewAdvNodeEventArgs.html) to `true` while drawing the custom option button.
+The [WinForms TreeView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) allows you to draw a custom option button inside a tree node using the [DrawNodeCheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DrawNodeCheckBox) event. Set the `Handled` property of the [DrawTreeViewAdvNodeEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawTreeViewAdvNodeEventArgs.html) to `true` while drawing the custom option button.
 
-> Note: If the `Handled` property of the [DrawTreeViewAdvNodeEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawTreeViewAdvNodeEventArgs.html) is `false`, then the [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) will automatically draw the default radio button of the node.
+> Note: If the `Handled` property of the [DrawTreeViewAdvNodeEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawTreeViewAdvNodeEventArgs.html) is `false`, then the [WinForms TreeView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) will automatically draw the default radio button of the node.
 
 This example illustrates how to draw the custom option button.
 
@@ -284,13 +284,13 @@ public partial class Form2 : Form
 
 
 ## CheckBox
-We can display a CheckBox for all nodes in `TreeViewAdv` by setting the `ShowCheckBoxes` property to `True`. The CheckBox for individual nodes can also be shown or hidden using the `ShowCheckBox` property in `TreeNodeAdv`.
+We can display a CheckBox for all nodes in `WinForms TreeView` by setting the `ShowCheckBoxes` property to `True`. The CheckBox for individual nodes can also be shown or hidden using the `ShowCheckBox` property in `TreeNodeAdv`.
 
 The `InteractiveCheckBoxes` property indicates whether the state of the parent node's checkbox is based on the check state of its child nodes' checkboxes. To set this for individual nodes, set the `InteractiveCheckBox` property of the TreeNodeAdv.
 
 <b> Property Table</b>
 
-<b>TreeViewAdv Properties</b>
+<b>WinForms TreeView Properties</b>
 
 <table>
 <tr>
@@ -383,9 +383,9 @@ treeNode3.CheckState = System.Windows.Forms.CheckState.Unchecked
 
 ### Draw custom checkbox
 
-The [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) allows you to draw a custom checkbox inside a tree node using the [DrawNodeCheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DrawNodeCheckBox) event. Set the `Handled` property of the [DrawTreeViewAdvNodeEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawTreeViewAdvNodeEventArgs.html) to `true` while drawing the custom checkbox.
+The [WinForms TreeView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) allows you to draw a custom checkbox inside a tree node using the [DrawNodeCheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DrawNodeCheckBox) event. Set the `Handled` property of the [DrawTreeViewAdvNodeEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawTreeViewAdvNodeEventArgs.html) to `true` while drawing the custom checkbox.
 
-> Note: If the `Handled` property of the [DrawTreeViewAdvNodeEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawTreeViewAdvNodeEventArgs.html) is `false`, then the [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) will automatically draw the default checkbox of the node.
+> Note: If the `Handled` property of the [DrawTreeViewAdvNodeEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawTreeViewAdvNodeEventArgs.html) is `false`, then the [WinForms TreeView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) will automatically draw the default checkbox of the node.
 
 This example illustrates how to draw the custom checkbox.
 
@@ -527,7 +527,7 @@ public partial class Form2 : Form
 
 ### Customizing the hover appearance
 
-The hover state appearance of the checkBox which displayed inside the `TreeViewAdv` can be customized using the below properties,
+The hover state appearance of the checkBox which displayed inside the `WinForms TreeView` can be customized using the below properties,
 
 <table>
 <tr>
@@ -633,7 +633,7 @@ public partial class Form2 : Form
 
 #### AfterInteractiveChecks Event
 
-`InteractiveCheckBox` settings available for the TreeNodeAdv indicates whether the node will have an interactive checkbox. This AfterInteractiveChecks event will be triggered when the checked state of one or more nodes of a TreeViewAdv has changed due to this InteractiveCheckbox setting.
+`InteractiveCheckBox` settings available for the TreeNodeAdv indicates whether the node will have an interactive checkbox. This AfterInteractiveChecks event will be triggered when the checked state of one or more nodes of a WinForms TreeView has changed due to this InteractiveCheckbox setting.
 
 <b>Event Data</b>
 
@@ -646,7 +646,7 @@ Members
 </th><th>
 Description</th></tr><tr><td>
 Action</td><td>
-Gets or sets the Syncfusion.Windows.Forms.Tools.TreeViewAdv Action associated with the event.</td></tr><tr><td>
+Gets or sets the Syncfusion.Windows.Forms.Tools.WinForms TreeView Action associated with the event.</td></tr><tr><td>
 Node</td><td>
 Gets or sets the Syncfusion.Windows.Forms.Tools.TreeNodeAdv associated with the event.</td></tr></table>
 
@@ -775,11 +775,11 @@ treeNode.CustomControl = this.comboBoxAdv;
 
 ## Primitives
 
-The TreeViewAdv control supports a set of primitive collections, that can be set through the Primitives Collection Editor available with each node in the `TreeViewAdv` controls.
+The WinForms TreeView control supports a set of primitive collections, that can be set through the Primitives Collection Editor available with each node in the `WinForms TreeView` controls.
 
 To open the primitive collection editor, follow steps given below
 
-1. Open “TreeNodeAdv NodeCollection Editor” and select any node in the TreeViewAdv
+1. Open “TreeNodeAdv NodeCollection Editor” and select any node in the WinForms TreeView
 
 2. In the property window of selected node has Primitives property. Click the Primitives property to open the Primitive Collection Editor
 
@@ -936,7 +936,7 @@ To set the CustomControlPrimitives for an individual node follow the given steps
 
 ### ExpanderType
 
-We can display Plus/Minus sign for the parent nodes by setting the property `ShowPlusMinus` to True. This will set Plus/Minus sign for all the parent nodes in TreeViewAdv except Office2016 and Metro styles.
+We can display Plus/Minus sign for the parent nodes by setting the property `ShowPlusMinus` to True. This will set Plus/Minus sign for all the parent nodes in WinForms TreeView except Office2016 and Metro styles.
 
 In Office2016 and Metro style instead of plus/minus sign arrow has been shown. User can customize which expander type is needed for their requirement. It has two types, which are
 
@@ -1003,7 +1003,7 @@ Handle this event when you want to do some processing of the specified node afte
 
 #### DefaultCollapseImageIndexChanged Event
 
-`DefaultCollapseImageIndex` property of the TreeViewAdv sets the index of the default image for collapse button. This event is triggered when this property is changed.
+`DefaultCollapseImageIndex` property of the WinForms TreeView sets the index of the default image for collapse button. This event is triggered when this property is changed.
 
 {% tabs %}
 {% highlight c# %}
@@ -1028,7 +1028,7 @@ End Sub
 
 #### DefaultExpandImageIndexChanged Event
 
-`DefaultExpandImageIndex` property of the TreeViewAdv sets the index of the default image for Expand button. The DefaultExpandImageIndexChanged event is triggered when this property is changed.
+`DefaultExpandImageIndex` property of the WinForms TreeView sets the index of the default image for Expand button. The DefaultExpandImageIndexChanged event is triggered when this property is changed.
 
 {% tabs %}
 {% highlight c# %}
@@ -1076,17 +1076,17 @@ End Sub
 
 ## Image Customization
 
-`TreeViewAdv` control can be customized with images for each of its actions. For example, collapse / expand state, plus / minus of the tree etc.,
+`WinForms TreeView` control can be customized with images for each of its actions. For example, collapse / expand state, plus / minus of the tree etc.,
 
 ### Left Image
 
-The tree nodes can be set with left images using LeftImageList property in the property window. Left images for the individual nodes can be specified in `LeftImageIndices` property of individual nodes, using the TreeViewAdv Nodes Collection Editor.
+The tree nodes can be set with left images using LeftImageList property in the property window. Left images for the individual nodes can be specified in `LeftImageIndices` property of individual nodes, using the WinForms TreeView Nodes Collection Editor.
 
 The nodes with the images can be given an enhanced appearance using `LeftImagePadding`.
 
 <b>Property Table</b>
 
-<b>TreeViewAdv Property</b>
+<b>WinForms TreeView Property</b>
 
 <table>
 <tr>
@@ -1116,7 +1116,7 @@ LeftStateImagePadding</td><td>
 It is the space provided between, the LeftStateImage of the node and node.</td></tr>
 </table>
 
-To set the left images for all the nodes in treeview follow the below steps 
+To set the left images for all the nodes in WinForms TreeView follow the below steps 
 
 <b>Step 1</b>: Create image list and add images in it.
 
@@ -1138,7 +1138,7 @@ Me.treeViewAdv1.LeftImageList = Me.leftImageList
 {% endcapture %}
 {{ codesnippet4 | OrderList_Indent_Level_1 }}
 			
-<b>Step 3</b>: Now set the `LeftImageIndices` for each node in TreeViewAdv.
+<b>Step 3</b>: Now set the `LeftImageIndices` for each node in WinForms TreeView.
 
 {% capture codesnippet5 %}
 {% tabs %}
@@ -1151,19 +1151,19 @@ treeNodeAdv1.LeftImageIndices = new int[] {1};
 {% endcapture %}
 {{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-<b>Step 4</b>:. Repeat step 3 until  set `LeftImageIndices` for all the nodes in treeview
+<b>Step 4</b>:. Repeat step 3 until  set `LeftImageIndices` for all the nodes in WinForms TreeView
 
 ![TreeNodeAdv_Customization_Img21](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img21.jpg)
 
 ### Right Image
 
-The tree nodes can be set with right images using RightImageList property in the property window. Right images for the individual nodes can be specified in `RightImageIndices` property of individual nodes, using the TreeViewAdv Nodes Collection Editor.
+The tree nodes can be set with right images using RightImageList property in the property window. Right images for the individual nodes can be specified in `RightImageIndices` property of individual nodes, using the WinForms TreeView Nodes Collection Editor.
 
 The nodes with the images can be given an enhanced appearance using `RightImagePadding`.
 
 <b>Property Table</b>
 
-<b>TreeViewAdv Property</b>
+<b>WinForms TreeView Property</b>
 
 <table>
 <tr>
@@ -1190,7 +1190,7 @@ RightImagePadding</td><td>	It is the space provided between the RightImage of th
 RightStateImagePadding</td><td>	It is the space provided between, the RightStateImage of the node and node.</td></tr>
 </table>
 
-To set the Right images for all the nodes in treeview follow the below steps 
+To set the Right images for all the nodes in WinForms TreeView follow the below steps 
 
 <b>Step 1</b>: Create image list and add images in it.
 
@@ -1212,7 +1212,7 @@ Me.treeViewAdv1.RightImageList = Me.rightImageList
 {% endcapture %}
 {{ codesnippet6 | OrderList_Indent_Level_1 }}
 			
-<b>Step 3</b>: Now set the `RightImageIndices` for each node in TreeViewAdv.
+<b>Step 3</b>: Now set the `RightImageIndices` for each node in WinForms TreeView.
 
 {% capture codesnippet7 %}
 {% tabs %}
@@ -1225,7 +1225,7 @@ treeNodeAdv1.RightImageIndices = new int[] {1};
 {% endcapture %}
 {{ codesnippet7 | OrderList_Indent_Level_1 }}
 
-<b>Step 4</b>: Repeat step 3 until  set `RightImageIndices` for all the nodes in treeview
+<b>Step 4</b>: Repeat step 3 until  set `RightImageIndices` for all the nodes in WinForms TreeView
 
 ![TreeNodeAdv_Customization_Img22](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img22.jpg)
 
@@ -1235,7 +1235,7 @@ Different images can be set for expand / collapse states of the node, using Stat
 
 <b>Property Table</b>
 
-<b>TreeViewAdv Property</b>
+<b>WinForms TreeView Property</b>
 
 <table>
 <tr>
@@ -1277,7 +1277,7 @@ OpenImgIndex</td><td>
 It is the image index in StateImageList where the node is expanded.</td></tr>
 </table>
 
-To set the state images for all the nodes in treeview follow the below steps  
+To set the state images for all the nodes in WinForms TreeView follow the below steps  
 
 <b>Step 1</b>: Create image list and add images in it.
 
@@ -1302,7 +1302,7 @@ Me.treeViewAdv1. StateImageList = Me.stateImageList
 {% endcapture %}
 {{ codesnippet8 | OrderList_Indent_Level_1 }}
 
-<b>Step 3</b>: Now set the OpenImgIndex and ClosedImgIndex for each node in TreeViewAdv.
+<b>Step 3</b>: Now set the OpenImgIndex and ClosedImgIndex for each node in WinForms TreeView.
 
 {% capture codesnippet9 %}
 {% tabs %}
@@ -1318,13 +1318,13 @@ treeNodeAdv1.CloseImgIndex = 1;
 {% endcapture %}
 {{ codesnippet9 | OrderList_Indent_Level_1 }}
 
-<b>Step 4</b>: Repeat step 3 until  set OpenImgIndex and ClosedImgIndex for all the nodes in treeview
+<b>Step 4</b>: Repeat step 3 until  set OpenImgIndex and ClosedImgIndex for all the nodes in WinForms TreeView
 			 
 ![TreeNodeAdv_Customization_Img21](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img21.jpg)
 
 ### Customizing the Image Size
 
-The `ImageSize` property let you enhance the image size for a `TreeNodeAdv`. By default, the `TreeViewAdv` control displays the image size depending on the size of the image that is set in the image list. 
+The `ImageSize` property let you enhance the image size for a `TreeNodeAdv`. By default, the `WinForms TreeView` control displays the image size depending on the size of the image that is set in the image list. 
 
 {% tabs %}
 {% highlight c# %}
@@ -1353,7 +1353,7 @@ Images for individual nodes can be specified in `treeNodeAdv.ExpandImageIndex` /
 
 <b>Property Table</b>
 
-<b>TreeViewAdv Property</b>
+<b>WinForms TreeView Property</b>
 
 <table>
 <tr>
@@ -1387,7 +1387,7 @@ ExpandImageIndex</td><td>
 It is the image index for expand button.</td></tr>
 </table>
 
-To set the expander images for all the nodes in treeview follow the below steps
+To set the expander images for all the nodes in WinForms TreeView follow the below steps
 
 <b>Step 1</b>: Create image list and add images in it.
 
@@ -1412,7 +1412,7 @@ Me.treeViewAdv1. NodeStateImageList = Me.nodeStateImageList
 {% endcapture %}
 {{ codesnippet10 | OrderList_Indent_Level_1 }}
 
-<b>Step 3</b>: Now set the ExpandImageIndex and CollapseImageIndex for each node in TreeViewAdv.
+<b>Step 3</b>: Now set the ExpandImageIndex and CollapseImageIndex for each node in WinForms TreeView.
 
 {% capture codesnippet11 %}
 {% tabs %}
@@ -1428,13 +1428,13 @@ treeNodeAdv1. CollapseImageIndex = 0;
 {% endcapture %}
 {{ codesnippet11 | OrderList_Indent_Level_1 }}
 
-<b>Step 4</b>: Repeat step 3 until  set the ExpandImageIndex and CollapseImageIndex  for all the nodes in treeview
+<b>Step 4</b>: Repeat step 3 until  set the ExpandImageIndex and CollapseImageIndex  for all the nodes in WinForms TreeView
 			 
 ![TreeNodeAdv_Customization_Img23](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img23.jpg)
 
 ### Line Images
 
-TreeViewAdv control provides options to customize the lines which connects the nodes and can hold custom images for expand / collapse operations. These properties are discussed in this section.
+WinForms TreeView control provides options to customize the lines which connects the nodes and can hold custom images for expand / collapse operations. These properties are discussed in this section.
 
 #### Line and Plus/Minus images
 
@@ -1442,13 +1442,13 @@ TreeViewAdv control provides options to customize the lines which connects the n
 
 `ShowLines` when disabled, does not display the connecting lines for the entire tree control. The hierarchical lines can be customized by setting the type of lines to be used and the color using the LineStyle and LineColor properties.
 
-The standard +/- signs for the expand/collapse buttons in the TreeViewAdv can be replaced with custom images by setting the ImageList to the `NodeStateImageList` property of the TreeViewAdv. 
+The standard +/- signs for the expand/collapse buttons in the WinForms TreeView can be replaced with custom images by setting the ImageList to the `NodeStateImageList` property of the WinForms TreeView. 
 
 `ShowPlusMinus` when disabled, does not display the plus / minus images for the parent nodes, i.e., the expand/collapse images will not be displayed.
 
 <b>Property Table</b>
 
-<b>TreeViewAdv Property</b>
+<b>WinForms TreeView Property</b>
 
 <table>
 <tr>
@@ -1499,8 +1499,8 @@ Me.treeViewAdv1.ShowRootLines = True
 ### Image Overlaying
 
 The steps below will show how you could draw overlay images on the images associated with the tree nodes.
-* Set the TreeViewAdv’s OwnerDrawNodes property to true.
-* Handle the TreeViewAdv’s AfterNodePaint event as shown in code below to perform overlaying of images. The below code snippet shows overlaying LeftImages. The same code snippet can be used for overlaying RightImages and StateImages also by replacing LeftImagesX with RightImagesX and StateImagesX respectively. 
+* Set the WinForms TreeView’s OwnerDrawNodes property to true.
+* Handle the WinForms TreeView’s AfterNodePaint event as shown in code below to perform overlaying of images. The below code snippet shows overlaying LeftImages. The same code snippet can be used for overlaying RightImages and StateImages also by replacing LeftImagesX with RightImagesX and StateImagesX respectively. 
 
 {% tabs %}
 {% highlight c# %}
@@ -1581,7 +1581,7 @@ Indicates whether editing should end now.</td></tr>
 
 <b>How to Validate Node Label Text</b>
 
-This topic shows how you can validate the text of the label of a node in the TreeViewAdv control. You need to listen to the NodeEditorValidating event of the TreeViewAdv control to validate the node’s label text entered by the user. The code sample below demonstrates how you can prevent blank labels in a node.
+This topic shows how you can validate the text of the label of a node in the WinForms TreeView control. You need to listen to the NodeEditorValidating event of the WinForms TreeView control to validate the node’s label text entered by the user. The code sample below demonstrates how you can prevent blank labels in a node.
 
 {% tabs %}
 {% highlight c# %}
@@ -1856,13 +1856,13 @@ End Sub
 
 This event is triggered when the control is no longer the active control of the form. An example which uses the Leave event is as follows.
 
-How to Use Delete Key for Deleting and as a Shortcut to BarItems / MenuItems of TreeViewAdv
+How to Use Delete Key for Deleting and as a Shortcut to BarItems / MenuItems of WinForms TreeView
 
-The form contains a treeViewAdv with nodes with LabelEdit property set to true as well as BarItems or MenuItems with Delete key as their shortcut. 
+The form contains a WinForms TreeView with nodes with LabelEdit property set to true as well as BarItems or MenuItems with Delete key as their shortcut. 
 
 After editing the node by pressing F2, if the Delete key is pressed, to avoid the menu shortcut from getting triggered and trigger the deletion of text in the editor, follow the procedure below.
 
-Disable the menu shortcut as soon as the editor gets focus and enable the shortcut as soon as the editor loses focus. It can be done by handling the TreeViewAdv's BeforeEdit event, setting the bar item's shortcut to None and listening to the node's edit textbox's Leave event. Within this Leave event handler, set the bar item's shortcut back to Del.
+Disable the menu shortcut as soon as the editor gets focus and enable the shortcut as soon as the editor loses focus. It can be done by handling the WinForms TreeView's BeforeEdit event, setting the bar item's shortcut to None and listening to the node's edit textbox's Leave event. Within this Leave event handler, set the bar item's shortcut back to Del.
 
 {% tabs %}
 {% highlight c# %}
@@ -1908,13 +1908,13 @@ End Sub
 
 ### SelectionMode
 
-During drag and drop operation of the tree nodes, a single node or same level nodes or multi-level nodes can be selected and dragged based on the selection mode set for the treeview control. `SelectionMode` property is used for this purpose.
+During drag and drop operation of the tree nodes, a single node or same level nodes or multi-level nodes can be selected and dragged based on the selection mode set for the WinForms TreeView control. `SelectionMode` property is used for this purpose.
 
 We can select nodes by three modes, which are
 
 * Single (Default SelectionMode)
 
-    The user can only select one node at a time and implement the drag-drop operation in the TreeViewAdv
+    The user can only select one node at a time and implement the drag-drop operation in the WinForms TreeView
 
 * MultiSelectSameLevel
 
@@ -1922,7 +1922,7 @@ We can select nodes by three modes, which are
 
 * MultiSelectAll
 
-    The user can select multiple nodes for implementing the DragDrop operation in the TreeViewAdv.
+    The user can select multiple nodes for implementing the DragDrop operation in the WinForms TreeView.
 
 ### SelectedNode
 	
@@ -1937,7 +1937,7 @@ If the SelectionMode is single, then SelectedNode and SelectedNodes holds the sa
 
 ## Programmatic selection
 
-TreeViewAdv allows to select the items programmatically using both [`SelectedItem`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_SelectedItem) and [`SelectedItems`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_SelectedItems) property.
+WinForms TreeView allows to select the items programmatically using both [`SelectedItem`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_SelectedItem) and [`SelectedItems`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_SelectedItems) property.
 
 ### SelectedItem
 
@@ -2103,7 +2103,7 @@ public partial class Form2 : Form
 
 <b>Property Table</b>
 
-<b>TreeViewAdv Property</b>
+<b>WinForms TreeView Property</b>
 
 <table>
 <tr>
@@ -2187,30 +2187,30 @@ Me.treeViewAdv1.ExtendSelectionTo(Me.treeNode, False)
 
 <b>ShouldSelectNodeOnEnter:</b>
 
-When ShouldSelectNodeOnEnter property is enabled, default node can be selected if treeview control gains focus. By default , it will be set as true;
+When ShouldSelectNodeOnEnter property is enabled, default node can be selected if WinForms TreeView control gains focus. By default , it will be set as true;
 
 <b>HideSelection</b>
 
-When `HideSelection` property is enabled, it will hide the selected nodes if the treeview control has lost its focus. It should be set as false to highlight the selected nodes .By default, it will be set as false.
+When `HideSelection` property is enabled, it will hide the selected nodes if the WinForms TreeView control has lost its focus. It should be set as false to highlight the selected nodes .By default, it will be set as false.
 
 <b>Property Table</b>
 
 <table>
 <tr>
 <th>
-TreeViewAdv Property</th><th>
+WinForms TreeView Property</th><th>
 Description</th></tr>
 <tr>
 <td>
 ShouldSelectNodeOnEnter</td><td>
-Indicates whether a default node should be selected when the TreeViewAdv control gains focus.</td></tr><tr><td>
+Indicates whether a default node should be selected when the WinForms TreeView control gains focus.</td></tr><tr><td>
 HideSelection</td><td>
-Indicates if the TreeViewAdv hides its selected nodes when not focused.</td></tr>
+Indicates if the WinForms TreeView hides its selected nodes when not focused.</td></tr>
 </table>
 
 ### AllowMouseBasedSelection and AllowKeyboardSearch
 
-Setting `AllowKeyboardSearch` property of the treeview to true, will allow the user to search for a node by typing the name of the node using the keyboard. User have to ensure that the TreeViewAdv control is focused while searching.
+Setting `AllowKeyboardSearch` property of the WinForms TreeView to true, will allow the user to search for a node by typing the name of the node using the keyboard. User have to ensure that the WinForms TreeView control is focused while searching.
 
 By setting the `AllowMouseBasedSelection` property to true, multiple nodes can be selected with mouse down and these selected nodes can be dragged.
 
@@ -2219,7 +2219,7 @@ Property Table
 <table>
 <tr>
 <th>
-TreeViewAdv Properties</th><th>
+WinForms TreeView Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -2484,7 +2484,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-#####  Mouse Selection Events in TreeViewAdv and MultiColumnTreeView
+#####  Mouse Selection Events in WinForms TreeView and MultiColumnTreeView
 
 <b>Description</b>
 
@@ -2668,7 +2668,7 @@ End Sub
 
 #### AfterSelect Event
 
-Whenever a `TreeViewAdv` is selected, `AfterSelect` event will be raised. You can raise a Click event when a child node is selected, inside this handler using the following code snippet.
+Whenever a `WinForms TreeView` is selected, `AfterSelect` event will be raised. You can raise a Click event when a child node is selected, inside this handler using the following code snippet.
 
 {% tabs %}
 {% highlight c# %}
@@ -2743,7 +2743,7 @@ End Sub
 
 #### NodeHotTrackChanged Event
 
-In `TreeViewAdv`, a `NodeHotTrackChanged` event enables users to retrieve the TreeViewAdv node which is currently being hot tracked by the mouse. This event will be triggered when the mouse moves over the nodes in a tree view, and the node that is currently selected by the mouse pointer is the hot tracked node.
+In `WinForms TreeView`, `NodeHotTrackChanged` event allows users to retrieve the node that is currently being hot-tracked by the mouse. This event is triggered when the mouse pointer moves over a node in the WinForms TreeView. The node currently under the mouse pointer is considered the hot-tracked node
 
 <b>Use Cases</b>
 
@@ -2764,7 +2764,7 @@ TreeViewAdvNodeEventArgs </td><td>
 It will return the specific node currently being tracked by mouse pointer from its argument.</td></tr>
 </table>
 
-When TreeView HotTracking is set as False, this event will not return details for the specific node being HotTracked. This event can return entire details of a node as it is tracked by the mouse.
+When WinForms TreeView HotTracking is set as False, this event will not return details for the specific node being HotTracked. This event can return entire details of a node as it is tracked by the mouse.
 
 {% tabs %}
 {% highlight c# %}

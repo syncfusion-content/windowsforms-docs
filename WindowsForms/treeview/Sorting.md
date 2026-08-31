@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Sorting in Windows Forms TreeView | Syncfusion®
 description: Sorting supports ordering nodes by text, checkbox, or tag values with customizable comparison options.
@@ -49,7 +49,7 @@ Me.treeNode.SortType = Syncfusion.Windows.Forms.Tools.TreeNodeAdvSortType.CheckB
 
 <b>Comparing Options for Sorting</b>
 
-* The [CompareOptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdv_CompareOptions) property gives additional options of comparing the texts of the nodes.[TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) provides the following CompareOptions
+* The [CompareOptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdv_CompareOptions) property gives additional options of comparing the texts of the nodes.[WinForms TreeView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) provides the following CompareOptions
 
     1. IgnoreCase
 

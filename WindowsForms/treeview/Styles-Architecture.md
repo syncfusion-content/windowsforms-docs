@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Styles Architecture in Windows Forms TreeView | Syncfusion®
 description: Styles Architecture provides hierarchical style inheritance, global styling, node-level styling, and custom styles.
@@ -27,7 +27,7 @@ The different levels in the above hierarchy are,
 
 * <b>Node Level Styles</b>: The Framework also lets you specify a style for all nodes at a particular level in the tree hierarchy, the top-most level being 1. Refer Node Level Style for setting node level style settings.
 
-* <b>Standard Style or Global Style</b>: A standard, global style is exposed by the TreeViewAdv control to be applied on all the nodes in the tree. Refer Standard Style for setting style in a Tree level.
+* <b>Standard Style or Global Style</b>: A standard, global style is exposed by the WinForms TreeView control to be applied on all the nodes in the tree. Refer Standard Style for setting style in a Tree level.
 
 ### Explicit Style Inheritance
 
@@ -38,7 +38,7 @@ Property Table
 <table>
 <tr>
 <th>
-TreeViewAdv Properties</th><th>
+WinForms TreeView Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -50,14 +50,14 @@ Indicates the base style of the nodes.</td></tr>
 
 StandardStyle is the default style for the nodes. It can be edited using `StandardStyle` property. It can also be edited through BaseStyles Collection Editor dialog.
 
-Setting a Common Style for All the Nodes in the TreeViewAdv
+Setting a Common Style for All the Nodes in the WinForms TreeView
 
 We can modify the background for all the children of a parent node by editing the `StandardStyle` property. 
 
 ![StyleArchitecture_img1](StyleArchitecture_images/StyleArchitecture_img1.jpg)
 
 
-The below image displays a gradient style for all the nodes of the TreeView control.
+The below image displays a gradient style for all the nodes of the WinForms TreeView control.
 
 ![StyleArchitecture_img2](StyleArchitecture_images/StyleArchitecture_img2.jpg)
 
@@ -103,7 +103,7 @@ In the Node Collection Editor, modify the settings in the `TreeNodeAdv.ChildStyl
 
 Setting a Common Style for all the Nodes in a Level
 
-TreeView lets you add node level styles using the BaseStyles Collection Editor.
+WinForms TreeView lets you add node level styles using the BaseStyles Collection Editor.
 
 ![StyleArchitecture_img8](StyleArchitecture_images/StyleArchitecture_img8.jpg)
 
