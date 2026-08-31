@@ -13,7 +13,7 @@ The [`SfAIAssistView`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Wi
 
 ## Prerequisites
 
-- An `SfAIAssistView` instance has been created and added to the form. See [Getting Started](https://help.syncfusion.com/windowsforms/ai-assistview/getting-started) for setup details.
+- `SfAIAssistView` has been created and added to your form. See [Getting Started](https://help.syncfusion.com/windowsforms/ai-assistview/getting-started) for setup details.
 - A `ViewModel` is bound to the control via the `Messages` property. See [OpenAI Integration](https://help.syncfusion.com/windowsforms/ai-assistview/open-ai) for a working example of an in-flight bot response that can be canceled.
 - The following `using` directives are included in your file:
 
@@ -48,7 +48,7 @@ The button is displayed when `EnableStopResponding` is set to `true`.
 
 ## Stop Responding Event
 
-The `SfAIAssistView` control provides the `StopRespondingButtonClicked` event. This is triggered when the Stop Responding button is clicked. Use it to cancel any in-flight AI request:
+The control provides the `StopRespondingButtonClicked` event. This is triggered when the Stop Responding button is clicked. Use it to cancel any in-flight AI request:
 
 {% tabs %}
 
