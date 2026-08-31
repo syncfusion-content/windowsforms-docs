@@ -18,7 +18,7 @@ Labels and headers in a tree map can be customized using the following propertie
 * [`LabelBorderThickness`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TreeMap.TreeMap.html#Syncfusion_Windows_Forms_TreeMap_TreeMap_LabelBorderThickness)
 * [`HeaderBrush`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TreeMap.TreeMap.html#Syncfusion_Windows_Forms_TreeMap_TreeMap_HeaderBrush)
 
-#### Code sample
+## Code sample
 
 {% tabs %}
 

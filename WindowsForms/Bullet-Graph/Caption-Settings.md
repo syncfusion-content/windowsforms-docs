@@ -36,7 +36,7 @@ Me.Controls.Add(bullet)
 
 ![WinForms Bullet Graph caption](Features_images/Features_img3.png)
 
-### Caption Position
+## Caption Position
 
 The caption in the Bullet Graph is placed at the start or end of the quantitative scale by choosing from one of the two options available in the [CaptionPosition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_CaptionPosition) property. They are:
 
