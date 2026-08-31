@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-# Chart Title in Windows Forms Chart
+# Chart title in Windows Forms Chart
 
 The WinForms Chart provides properties to set custom titles for the axes. Set the title text for an axis using the [Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_Title) property. 
 
@@ -22,8 +22,7 @@ The title text can be customized using the  using the following properties.
 {% tabs %}
 {% highlight c# %}
 
-//Sets a custom title for the x-axis, Set a custom title for the y-axis in the same way.
-
+// Sets a custom title for the x and y axis.
 this.chartControl1.PrimaryXAxis.Title = "x-axis";
 this.chartControl1.PrimaryXAxis.TitleColor = Color.Red;
 this.chartControl1.PrimaryXAxis.TitleFont = new Font("Arial", 10);
@@ -32,7 +31,7 @@ this.chartControl1.PrimaryXAxis.TitleFont = new Font("Arial", 10);
 
 {% highlight vb %}
 
-'Sets a custom title for the x-axis, Set a custom title for the y-axis in the same way.
+' Sets a custom title for the x-axis, Set a custom title for the y-axis in the same way.
 
 Me.chartControl1.PrimaryXAxis.Title = "x-axis"
 Me.chartControl1.PrimaryXAxis.TitleColor = Color.Red
@@ -41,28 +40,30 @@ Me.chartControl1.PrimaryXAxis.TitleFont = New Font("Arial", 10)
 {% endhighlight %}
 {% endtabs %}
 
-## Rotating Axis Title
+![Chart Axes](Axis_Images/Chart-Axes_Title.png)
+
+## Rotating axis title
 
 The axis title can be rotated to 0, 90, 180, or 270 degrees using the [TitleRotationAngle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_TitleRotationAngle) property of [ChartAxis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html).
 
 {% tabs %}
 {% highlight c# %}
 
-//Rotating x-axis title by 270 degrees
-this.chartControl1.PrimaryXAxis.TitleRotationAngle = AxisTitleRotationAngle.Rotate270;
+// Rotating x-axis title by 270 degrees
+this.chartControl1.PrimaryXAxis.TitleRotationAngle = AxisTitleRotationAngle.RotateBy270;
 
-//Rotating y-axis title by 0 degree
-this.chartControl1.PrimaryYAxis.TitleRotationAngle = AxisTitleRotationAngle.Rotate0;
+// Rotating y-axis title by 0 degree
+this.chartControl1.PrimaryYAxis.TitleRotationAngle = AxisTitleRotationAngle.RotateBy0;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-'Rotating x-axis title by 270 degrees
-Me.chartControl1.PrimaryXAxis.TitleRotationAngle = AxisTitleRotationAngle.Rotate270
+' Rotating x-axis title by 270 degrees
+Me.chartControl1.PrimaryXAxis.TitleRotationAngle = AxisTitleRotationAngle.RotateBy270
 
-'Rotating y-axis title by 0 degree
-Me.chartControl1.PrimaryYAxis.TitleRotationAngle = AxisTitleRotationAngle.Rotate0
+' Rotating y-axis title by 0 degree
+Me.chartControl1.PrimaryYAxis.TitleRotationAngle = AxisTitleRotationAngle.RotateBy0
 
 {% endhighlight %}
 {% endtabs %}
@@ -70,7 +71,7 @@ Me.chartControl1.PrimaryYAxis.TitleRotationAngle = AxisTitleRotationAngle.Rotate
 The following screenshot shows the x-axis title rotated by 270 degrees while the y-axis title remains unrotated.
 ![Chart Axes](Axis_Images/Chart-Axes_img41_2.png)
 
-## Multiline Chart Axes Title
+## Multiline chart axes title
 
 Axis titles can be wrapped and displayed as multiline text. To set a multiline title through the designer, type the title text in the [Axis.Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_Title) property, press **Enter** to insert a new line, and then press **Ctrl+Enter** to confirm the text.
 
@@ -80,7 +81,7 @@ The following screenshot illustrates a chart with multiline axis titles.
 
 ![Chart Axes](Axis_Images/Chart-Axes_img22.jpeg)
 
-## Drawing Mode of Title Text
+## Drawing mode of title text
 
 When the axis title text exceeds the axis length, it can be displayed as a partial text with an ellipsis at the end. There is also an option to wrap the title text, in addition to the multiline axis title feature described above. The [TitleDrawMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_TitleDrawMode) property is used to set the drawing mode.
 
@@ -89,21 +90,21 @@ When the axis title text exceeds the axis length, it can be displayed as a parti
 {% tabs %}
 {% highlight c# %}
 
-//Sets the drawing mode of the x-axis title.
+// Sets the drawing mode of the x-axis title.
 this.chartControl1.PrimaryXAxis.TitleDrawMode = ChartTitleDrawMode.Ellipsis;
 
-//Sets the drawing mode of the secondary y-axis title.
-this.secYAxis.TitleDrawMode = ChartTitleDrawMode.Wrap;
+// Sets the drawing mode of the secondary y-axis title.
+this.chartControl1.PrimaryYAxis.TitleDrawMode = ChartTitleDrawMode.Wrap;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-'Sets the drawing mode of the x-axis title.
+' Sets the drawing mode of the x-axis title.
 Me.chartControl1.PrimaryXAxis.TitleDrawMode = ChartTitleDrawMode.Ellipsis
 
-'Sets the drawing mode of the secondary y-axis title.
-Me.secYAxis.TitleDrawMode = ChartTitleDrawMode.Wrap
+' Sets the drawing mode of the secondary y-axis title.
+Me.chartControl1.PrimaryYAxis.TitleDrawMode = ChartTitleDrawMode.Wrap
 
 {% endhighlight %}
 {% endtabs %}

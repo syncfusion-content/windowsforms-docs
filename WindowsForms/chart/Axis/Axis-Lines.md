@@ -7,13 +7,13 @@ control: Chart
 documentation: ug
 ---
 
-# Chart Axis Lines in Windows Forms Chart
+# Chart axis lines in Windows Forms Chart
 
 ## Customization
 
 The axis line can be customized using the `LineType` property of the axis. The `LineType` property supports the following customization options: `ForeColor`, `DashStyle`, `Width`, and `BackColor`.
 
-### ForeColor
+### Forecolor
 
 The foreground color of the axis line can be set using the [ForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.LineInfo.html#Syncfusion_Windows_Forms_Chart_LineInfo_ForeColor) property.
 
@@ -77,7 +77,7 @@ chart.PrimaryXAxis.LineType.DashStyle = System.Drawing.Drawing2D.DashStyle.DashD
 
 ![Chart Axes](Axis_Images/Chart-Axes_img50.jpeg)
 
-### BackColor
+### Backcolor
 
 When the `HatchFill` or `LinearGradient` pen type is used, an additional background color is required for the axis line. Both [ForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.LineInfo.html#Syncfusion_Windows_Forms_Chart_LineInfo_ForeColor) and [BackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.LineInfo.html#Syncfusion_Windows_Forms_Chart_LineInfo_BackColor) can be used together for these pen types.
 

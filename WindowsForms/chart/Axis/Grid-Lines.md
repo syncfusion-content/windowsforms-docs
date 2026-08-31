@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-# Chart Grid Lines in Windows Forms Chart
+# Chart grid lines in Windows Forms Chart
 
 Grid lines are horizontal and vertical lines drawn across the chart area to help users read data values against the axis intervals. 
 
@@ -17,8 +17,8 @@ The grid lines in the chart can be customized using the following properties.
 - [DrawGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_DrawGrid) - Specifies whether or not to draw the grid lines.
 - [GridLineType.ForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.LineInfo.html#Syncfusion_Windows_Forms_Chart_LineInfo_ForeColor) - The fore color of the line.
 - [GridLineType.BackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.LineInfo.html#Syncfusion_Windows_Forms_Chart_LineInfo_BackColor) - The back color of the line.
-- [GridLineType.DashStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.LineInfo.html#Syncfusion_Windows_Forms_Chart_LineInfo_DashStyle) - The DashStyle to use for drawing the line.
-- [GridLineType.PenType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.LineInfo.html#Syncfusion_Windows_Forms_Chart_LineInfo_PenType) - The PenType to use for drawing the line.
+- [GridLineType.DashStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.LineInfo.html#Syncfusion_Windows_Forms_Chart_LineInfo_DashStyle) - The dash style to use for drawing the line.
+- [GridLineType.PenType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.LineInfo.html#Syncfusion_Windows_Forms_Chart_LineInfo_PenType) - The pen type to use for drawing the line.
 - [GridLineType.Width](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.LineInfo.html#Syncfusion_Windows_Forms_Chart_LineInfo_Width) - The thickness of the lines.
 
 The following code snippet illustrates how to enable and customize grid lines on both axes.
