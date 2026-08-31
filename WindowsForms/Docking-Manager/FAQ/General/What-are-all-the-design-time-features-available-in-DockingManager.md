@@ -7,7 +7,7 @@ control: DockingManager
 documentation: ug
 ---
 
-# What are all the design time features available in WinForms Docking Control
+# Design time features available in WinForms Docking Control
 
 ## Dragging and docking at DesignTime
 WinForms Docking Control supports dragging and docking of the dockable controls at the design time itself. It also lets you float the controls.

@@ -884,7 +884,7 @@ End Sub
 
 The [ControlRestored](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event gets fired after the docked control is restored to its original position. This event can give the previous state of the control using the PreviousSizeState property of the handler.
 
-#### Event data
+### Event data
 
 The event handler receives an argument of [ControlRestoredEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ControlRestoredEventArgs.html) type containing data related to this event. The following ControlRestoredEventArgs members provide information specific to this event.
 

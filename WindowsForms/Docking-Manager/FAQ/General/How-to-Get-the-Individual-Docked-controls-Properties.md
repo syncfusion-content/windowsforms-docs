@@ -29,7 +29,7 @@ Me.dockingManager1.IsFloating(this.listBox1);
 
 {% endtabs %}
 
-### To get the Dock location
+## To get the Dock location
 
 1. Add a list view and a WinForms Docking Control in your form.
 2. Enable the list view as a docked control.
