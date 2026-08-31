@@ -25,7 +25,7 @@ this.panel.Controls.Add(this.pivotTableFieldList1.PivotGrid);
 
 {% highlight vb %}
 
-'Synchronizes the PivotChart with the PivotTableFieldList.
+'Synchronizes the WinForms Pivot Chart with the PivotTableFieldList.
 Me.pivotTableFieldList1.AssociateWith(Me.pivotChart1)
 
 'Generates the PivotGrid by using the assigned pivot engine item source.

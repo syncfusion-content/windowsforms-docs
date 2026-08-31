@@ -26,7 +26,7 @@ Description</th>
 </tr>
 <tr>
 <td>
-RadialGauge</td>
+WinForms Radial Gauge</td>
 <td>
 Visualize a range of values in radial scale with circular, helical or half-circular representation.</td>
 </tr>
@@ -38,7 +38,7 @@ Visualize a range of values in linear scale with horizontal or vertical represen
 </tr>
 <tr>
 <td>
-DigitalGauge</td>
+WinForms Digital Gauge</td>
 <td>
 Visualize alphanumeric values in an appearance like an LED digital display.</td>
 </tr>
