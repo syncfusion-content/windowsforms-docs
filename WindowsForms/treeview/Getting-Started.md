@@ -9,23 +9,23 @@ documentation: ug
 
 # Getting Started with Windows Forms TreeView
 
-This section provides a quick overview for working with the [Windows Forms TreeView](https://www.syncfusion.com/winforms-ui-controls/treeview) (TreeViewAdv) for WinForms. Walk through the entire process of creating a real world TreeView.
+This section provides a quick overview of working with the [Windows Forms TreeView](https://www.syncfusion.com/winforms-ui-controls/treeview) (WinForms TreeView) for WinForms. It walks through the complete process of creating a real-world WinForms TreeView.
 
 ## Assembly Deployment
 
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#treeviewadv) section to get the list of assemblies or [NuGet package](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) needs to be added as reference to use the TreeViewAdv control in any application.
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#treeviewadv) section to get the list of assemblies or [NuGet package](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) needs to be added as reference to use the WinForms TreeView control in any application.
 
-## Creating Application with TreeViewAdv
+## Creating Application with WinForms TreeView
 
-In this walk through, users will create WinForms application that contains TreeViewAdv control.
+In this walk through, users will create WinForms application that contains WinForms TreeView control.
 
 ### Creating the Project
 
-Create new Windows Forms Project in Visual Studio to display [TreeViewAdv](https://help.syncfusion.com/windowsforms/treeview/overview) with data objects.
+Create new Windows Forms Project in Visual Studio to display [WinForms TreeView](https://help.syncfusion.com/windowsforms/treeview/overview) with data objects.
 
 ## Adding control via Designer
 
-[TreeViewAdv](https://help.syncfusion.com/windowsforms/treeview/overview) control can be added to the application by dragging it from Toolbox and dropping it in Designer. The required assembly references will be added automatically.
+[WinForms TreeView](https://help.syncfusion.com/windowsforms/treeview/overview) control can be added to the application by dragging it from Toolbox and dropping it in Designer. The required assembly references will be added automatically.
 
 ![Windows Forms TreeViewAdv through designer](Getting-Started_images/Getting-Started_img1.jpg)
 
@@ -35,12 +35,12 @@ In order to add control manually, do the below steps,
 
 1. Add the required [assembly references](https://help.syncfusion.com/windowsforms/control-dependencies#treeviewadv) to the project.
 
-2.  Create the `TreeViewAdv` control instance and add it to the Form.
+2.  Create the `WinForms TreeView` control instance and add it to the Form.
 
 {% tabs %}
 {% highlight c# %}
 
-//Adding Namespace for TreeViewAdv control
+//Adding Namespace for WinForms TreeView control
 using Syncfusion.Windows.Forms.Tools;
 
 namespace WindowsFormsApplication1
@@ -91,9 +91,9 @@ End Namespace
 
 Tree nodes can be added to the control at design time as follows.
 
-1.Select the [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) control in the form. 
+1.Select the [WinForms TreeView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) control in the form. 
 
-2.Click the smart tag of the TreeViewAdv and click Edit Node Collection to open the TreeNodeAdv NodeCollection Editor.
+2.Click the smart tag of the WinForms TreeView and click Edit Node Collection to open the TreeNodeAdv NodeCollection Editor.
 
 ![Windows Forms TreeNodeAdv designer](Getting-Started_images/wf-treeviewadv-nodecollection.png)
 
@@ -121,7 +121,7 @@ You can also open this editor using task window or by right clicking the control
 
 Tree nodes can be added to the control programmatically as follows.
 
-Create the Windows Forms TreeView (TreeViewAdv) control instance and add newly created instance of TreeNodeAdv as child of TreeViewAdv control as follows.
+Create the Windows Forms TreeView (WinForms TreeView) control instance and add newly created instance of TreeNodeAdv as child of WinForms TreeView control as follows.
 
 {% tabs %}
 
@@ -272,9 +272,9 @@ End Namespace
 
 ### Root Lines
 
-We can display the Root lines between the root nodes by setting the property [TreeViewAdv.ShowRootLines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ShowRootLines) to True. Whereas the property [TreeViewAdv.ShowLines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ShowLines) displays connecting line for rest of the nodes in the control except between the root nodes. By default, [TreeViewAdv.ShowRootLines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ShowRootLines) and[TreeViewAdv.ShowLines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ShowLines) are set as `true`.
+We can display the Root lines between the root nodes by setting the WinForms TreeView's [ShowRootLines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ShowRootLines) property to True. Whereas the WinForms TreeView's  [ShowLines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ShowLines) property displays connecting line for rest of the nodes in the control except between the root nodes. By default, [ShowRootLines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ShowRootLines) and [ShowLines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ShowLines) are set as `true`.
 
-When [TreeViewAdv.ShowLines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ShowLines) is set to `false`, the connecting lines will not be displayed for the entire control.
+When [ShowLines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ShowLines) is set to `false`, the connecting lines will not be displayed for the entire control.
 
 {% tabs %}
 {% highlight c# %}
@@ -296,10 +296,10 @@ Me.treeViewAdv1.ShowLines = False
 
 ### Plus/Minus
 
-We can display Plus/Minus sign for the parent nodes by setting the property [TreeViewAdv.ShowPlusMinus](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ShowPlusMinus) to True. This will set Plus/Minus sign for all the parent nodes in [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html). 
+We can display Plus/Minus sign for the parent nodes by setting the WinForms TreeView's [ShowPlusMinus](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ShowPlusMinus) property to True. This will set Plus/Minus sign for all the parent nodes in [WinForms TreeView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html). 
 We can also set this for nodes using [TreeNodeAdv.ShowPlusMinus](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdv_ShowPlusMinus) property in the [TreeNodeAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html).
 
-The nodes in the [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html), even when it is in the expanded state, can still display the Plus sign using the [TreeNodeAdv.ShowPlusOnExpand](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdv_ShowPlusOnExpand) property. [TreeViewAdv.LoadOnDemand](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_LoadOnDemand) property should be set to true for this feature to be effective.
+The nodes in the [WinForms TreeView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html), even when it is in the expanded state, can still display the Plus sign using the [TreeNodeAdv.ShowPlusOnExpand](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdv_ShowPlusOnExpand) property. WinForms TreeView's [LoadOnDemand](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_LoadOnDemand) property should be set to true for this feature to be effective.
 
 {% tabs %}
 
@@ -319,7 +319,7 @@ Me.treeViewAdv1.ShowPlusMinus = False
 
 ### CheckBox
 
-We can display CheckBox for all nodes in [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) by setting [TreeViewAdv.ShowCheckBoxes](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ShowCheckBoxes)  property to True. The CheckBox for individual nodes can also be shown or hidden using [TreeNodeAdv.ShowCheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdv_ShowCheckBox) property in [TreeNodeAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html).
+We can display CheckBox for all nodes in [WinForms TreeView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) by setting [ShowCheckBoxes](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ShowCheckBoxes)  property to True. The CheckBox for individual nodes can also be shown or hidden using [TreeNodeAdv.ShowCheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdv_ShowCheckBox) property in [TreeNodeAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -343,7 +343,7 @@ In the above image we can show check box for India and china node.
 
 ### OptionButton
 
-The Option Buttons can be displayed for the nodes in the [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) using the [TreeViewAdv.ShowOptionButtons](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ShowOptionButtons) property. We can also show or hide the Option Button for individual nodes using [TreeNodeAdv.ShowOptionButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdv_ShowOptionButton) property in the [TreeNodeAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html).
+The Option Buttons can be displayed for the nodes in the [WinForms TreeView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) using the [ShowOptionButtons](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ShowOptionButtons) property. We can also show or hide the Option Button for individual nodes using [TreeNodeAdv.ShowOptionButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdv_ShowOptionButton) property in the [TreeNodeAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -368,6 +368,6 @@ In the above image we can show option button for India and china node.
 
 ## Assigning Active Nodes
     
-[TreeViewAdv.ActiveNode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ActiveNode) holds  a currently selected node. By default, it is null.
+WinForms TreeView's [ActiveNode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ActiveNode) holds  a currently selected node. By default, it is null.
 
 N> You can refer to our [WinForms TreeView](https://www.syncfusion.com/winforms-ui-controls/treeview) feature tour page for its groundbreaking feature representations. You can also explore our [WinForms TreeView examples](https://github.com/syncfusion/winforms-demos/tree/master/treeview) that shows you how to present and manipulate data.

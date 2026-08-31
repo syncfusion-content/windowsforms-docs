@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Scrollbar Customization in Windows Forms TreeView | Syncfusion®
 description: Scrollbar customization supports scrollbar visibility, pixel scrolling, Metro styling, Office styling, and scroll events.
@@ -54,7 +54,7 @@ Me.treeViewAdv1.VScrollPixel = True
 
 ## MetroScrollBars
 		
-`TreeViewAdv` provides support for Metro scrollbars.
+`WinForms TreeView` provides support for Metro scrollbars.
 
 `MetroScrollBars` property use to toggle between standard scrollbar and metro scrollbar. By default, `MetroScrollBars` will set as false. If it is true, then scrollbar style will be switched to metro style or it displays metro scrollbar.
 
@@ -73,7 +73,7 @@ Me.treeViewAdv1.MetroScrollBars = True
 
 ## Office2007ScrollBars
 
-TreeViewAdv provides support for Office2007 Scroll bar with all color schemes.
+WinForms TreeView provides support for Office2007 Scroll bar with all color schemes.
 
 `Office2007ScrollBars` property use to toggle between standard scrollbar and Office2007 scrollbar. By default, `Office2007ScrollBars` will set as `false`. If it is true, then scrollbar style will be switched to Office2007 style or it displays office2007 scrollbar.
 
@@ -101,7 +101,7 @@ When the control is been used under a splitter window and if it is sharing the s
 <table>
 <tr>
 <th>
-TreeViewAdv Properties</th><th>
+WinForms TreeView Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -111,7 +111,7 @@ Provides support for using the control inside dynamic splitter window and sharin
 
 ### FillSplitterPaneChanged Event
 
-The FillSplitterPane property of a TreeViewAdv control is the one that toggles support for using the control inside a dynamic splitter window and sharing scrollbars with the parent window. The FillSplitterPaneChanged event will be raised when this property is changed.
+The FillSplitterPane property of a WinForms TreeView control is the one that toggles support for using the control inside a dynamic splitter window and sharing scrollbars with the parent window. The FillSplitterPaneChanged event will be raised when this property is changed.
 
 {% tabs %}
 {% highlight c# %}

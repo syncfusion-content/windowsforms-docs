@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Find and Replace in Windows Forms TreeView | Syncfusion®
 description: Find and Replace supports searching, highlighting, navigating, and replacing node text across tree hierarchies.
@@ -10,18 +10,18 @@ documentation: ug
 
 ## TreeViewAdvFindReplaceDialog
 
-The find and replace feature enables users to search and replace a specific tree node present in the `TreeViewAdv` control. You can implement the fastest Find and Replace functionality in the `TreeViewAdv` control by using the `TreeViewAdvFindReplaceDialog` class. This class provides the methods that are necessary to perform a find and replace operation.
+The find and replace feature enables users to search and replace a specific tree node present in the `WinForms TreeView ` control. You can implement the fastest Find and Replace functionality in the control by using the `TreeViewAdvFindReplaceDialog` class. This class provides the methods that are necessary to perform a find and replace operation.
 
-The value entered in the Search Text field is highlighted in the TreeViewAdv control after the search action is performed. You can switch to each highlighted tree node by clicking the Find Next button. This functionality is available only when there is more than one search result.
+The value entered in the Search Text field is highlighted in the WinForms TreeView control after the search action is performed. You can switch to each highlighted tree node by clicking the Find Next button. This functionality is available only when there is more than one search result.
 
-* Search and replace functionalities can be performed for the entire TreeViewAdv control or specific levels of tree nodes.
+* Search and replace functionalities can be performed for the entire WinForms TreeView control or specific levels of tree nodes.
 
 * Search and replace functionalities can be performed for 
 individual tree nodes by using the Find Next and Replace buttons.
 
 * Search and replace functionalities can be performed for all the search results by using the Find All and Replace All buttons
 
-<b> TreeView Search Options</b>
+<b> WinForms TreeView Search Options</b>
 
 The available search options are as follows:
 
@@ -29,7 +29,7 @@ The available search options are as follows:
 
 2. <b>Match Whole Node</b>: Matches the search text with the entire text in a tree node.
 
-<b>TreeViewAdv Search Navigation</b>
+<b>WinForms TreeView Search Navigation</b>
 
 1. <b>Search Up</b>: Specifies whether the search can be performed from the bottom of the control up.
 
@@ -38,16 +38,16 @@ The available search options are as follows:
 3. <b>Search All</b>: Specifies whether the search can be performed from the bottom up, and then back to the bottom.
 
 
-<b>TreeViewAdv Search Range</b>
+<b>WinForms TreeView Search Range</b>
 
-1. <b>TreeView</b>: Specifies whether the search can be performed in entire TreeViewAdv control.
+1. <b>WinForms TreeView</b>: Specifies whether the search can be performed in entire control.
 
 2. <b>Root Node</b>: Specifies whether the search can be performed only on the parent node level.
 
 3. <b>Child Node</b>: Specifies whether the search can be performed only on the child node level.
 
 
-The find and replace feature can be enabled for the TreeViewAdv control by using the following code:
+The find and replace feature can be enabled for the WinForms TreeView control by using the following code:
 
 {% tabs %}
 {% highlight c# %}
@@ -73,7 +73,7 @@ dialog.ReplaceAll ("India", TreeViewSearchOption.MatchWholeText, TreeViewSearchR
 
 ## OnNodeBeforeFind Event
 
-This event will be triggered before the matching tree nodes are highlighted in the TreeViewAdv control. 
+This event will be triggered before the matching tree nodes are highlighted in the WinForms TreeView control. 
 
 <b>Event Data</b>
 
@@ -138,7 +138,7 @@ End Sub
 
 ## OnNodeAfterFound Event
 
-This event will be triggered after the matching TreeNodeAdv is highlighted in the TreeViewAdv control. 
+This event will be triggered after the matching TreeNodeAdv is highlighted in the WinForms TreeView control. 
 
 <b>Event Data</b>
 
@@ -192,7 +192,7 @@ End Sub
 
 ## OnNodeReplacing Event
 
-This event will be triggered before replacing the matched tree node text in the TreeViewAdv control. 
+This event will be triggered before replacing the matched tree node text in the WinForms TreeView control. 
 
 <b>Event Data</b>
 
@@ -286,7 +286,7 @@ End Sub
 
 ## OnNodeReplaced Event
 
-This event will be triggered after the matched TreeNodeAdv text is replaced in the TreeViewAdv control. 
+This event will be triggered after the matched TreeNodeAdv text is replaced in the WinForms TreeView control. 
 
 <b>Event Data</b>
 
@@ -350,13 +350,13 @@ End Sub
 
 ## Keyboard Search
 
-Setting AllowKeyboardSearch property of the treeview to true, will allow the user to search for a node by typing the name of the node using the keyboard.
+Setting AllowKeyboardSearch property of the WinForms TreeView to true, will allow the user to search for a node by typing the name of the node using the keyboard.
 
 <b>Property Table</b>
 
 <table>
 <tr><th>
-TreeViewAdv Property</th><th>
+WinForms TreeView Property</th><th>
 Description</th></tr><tr><td>
 AllowKeyboardSearch</td><td>
 Gets or sets a value indicating if keyboard-based searching should be allowed.</td></tr>
@@ -422,9 +422,9 @@ Gets or sets a value indicating whether the key event should be passed on to the
 </tr>
 </table>
 
-#### Adding Nodes into the TreeViewAdv using KeyBoard
+#### Adding Nodes into the WinForms TreeView using KeyBoard
 
-The nodes can be added to the TreeViewAdv when any key is pressed, whereby the text of the node reflects the key that has been used for adding the node, by using the following code in the TreeViewAdv KeyDown event handler.
+The nodes can be added to the WinForms TreeView when any key is pressed, whereby the text of the node reflects the key that has been used for adding the node, by using the following code in the KeyDown event handler.
 
 {% tabs %}
 {% highlight c# %}
