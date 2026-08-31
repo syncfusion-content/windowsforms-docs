@@ -451,7 +451,7 @@ chartControl.Legend.Visible = False
 
 ### Show series title
 
-The [ShowSeriesTitle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_ShowSeriesTitle) pproperty controls whether the series title is displayed in the Pie chart and is set to `false` by default.
+The [ShowSeriesTitle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_ShowSeriesTitle) property controls whether the series title is displayed in the Pie chart and is set to `false` by default.
 
 The following code displays the series title in the Pie chart.
 
