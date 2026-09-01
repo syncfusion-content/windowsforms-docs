@@ -7,7 +7,7 @@ control: BorderLayout
 documentation: ug
 ---
 
-# Configuring Border Layout in WinForms
+# Configuring WinForms Border Layout
 
 The configuration settings for the WinForms Border Layout control have been given in this section.
 

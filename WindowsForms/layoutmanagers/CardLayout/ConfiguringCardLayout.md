@@ -7,7 +7,7 @@ control: CardLayout
 documentation: ug
 ---
 
-# Configuring Card Layout in WinForms
+# Configuring WinForms Card Layout
 
 The configuration settings for `WinForms Card Layout` have been given in this section.
 
