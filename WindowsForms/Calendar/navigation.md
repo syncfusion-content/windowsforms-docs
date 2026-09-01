@@ -45,15 +45,15 @@ calendar.ViewMode = Syncfusion.WinForms.Input.Enums.CalendarViewType.Year Or Syn
 
 ## Navigation through mouse
 
-The navigation between the next and previous ranges of dates for the current view in the calendar can be done by clicking up and down navigation buttons in the calendar header. The `SfCalendar` control allows you to navigate from one view to other view by clicking the header text of the calendar and selecting the cell from the view to navigate back to the next available view in the `ViewMode`.
+The navigation between the next and previous ranges of dates for the current view in the calendar can be done by clicking up and down navigation buttons in the calendar header. The `Windows Forms Calendar` control allows you to navigate from one view to other view by clicking the header text of the calendar and selecting the cell from the view to navigate back to the next available view in the `ViewMode`.
 
 ## Navigation through keyboard
 
-The `SfCalendar` control allows you to navigate from one view to other view by pressing the `CTRL + UP` keys in backward direction or `CTRL + DOWN` keys in forward direction. The SfCalendar allows you to navigate between different cells in the same view by pressing navigation arrows. `CTRL + LEFT` and `CTRL + RIGHT` arrow keys are pressed to navigate to previous or next month of the calendar respectively.
+The `Windows Forms Calendar` control allows you to navigate from one view to other view by pressing the `CTRL + UP` keys in backward direction or `CTRL + DOWN` keys in forward direction. The Windows Forms Calendar allows you to navigate between different cells in the same view by pressing navigation arrows. `CTRL + LEFT` and `CTRL + RIGHT` arrow keys are pressed to navigate to previous or next month of the calendar respectively.
 
 ## Navigation through touch
 
-The navigation between the next and previous ranges of dates for the current view in the calendar can be done by panning on the calendar view. The `SfCalendar` control allows you to navigate from one view to other view by tapping the header of the calendar. Tapping the cell in view navigates back to the next available view in the `ViewMode`.
+The navigation between the next and previous ranges of dates for the current view in the calendar can be done by panning on the calendar view. The `Windows Forms Calendar` control allows you to navigate from one view to other view by tapping the header of the calendar. Tapping the cell in view navigates back to the next available view in the `ViewMode`.
 
 ## Handle view change
 

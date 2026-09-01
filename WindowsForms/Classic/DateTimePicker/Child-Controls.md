@@ -11,7 +11,7 @@ documentation: ug
 
 DateTimePickerAdv has child controls like DropDown, Updown arrows, checkbox. This section discusses the properties which controls the appearance and behavior of these controls.
 
-![DateTimePickerAdv child controls](DateTimePicker_images/Overview_img183.jpeg)
+![Windows Forms DateTimePickerAdv child controls](DateTimePicker_images/Overview_img183.jpeg)
 
 ## UpDown and DropDown buttons
 
@@ -326,7 +326,7 @@ Me.dateTimePickerAdv5.CustomFormat = "dd - MM - yyyy"
 
 {% endtabs %}
 
-![DateTimePickerAdv formats](DateTimePicker_images/Overview_img196.jpeg) 
+![Windows Forms DateTimePickerAdv formats](DateTimePicker_images/Overview_img196.jpeg) 
 
 
 
@@ -352,7 +352,7 @@ Me.dateTimePickerAdv1.Spacing = 5
 
 {% endtabs %}
 
-![DateTimePickerAdv spacing](DateTimePicker_images/Overview_img197.jpeg) 
+![Windows Forms DateTimePickerAdv spacing](DateTimePicker_images/Overview_img197.jpeg) 
 
 
 
