@@ -7,13 +7,13 @@ control: ContextMenuStripEx
 documentation: ug
 ---
 
-# Checked State in Windows Forms ContextMenuStrip
+# Checked State in WinForms Context Menu Strip
 
 This support will help users to easily acknowledge the selected menu item by using the check mark. The [`Checked`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripmenuitem.checked?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripMenuItem_Checked) property indicates whether a check mark should appear before the text of the menu item or not. The [`CheckState`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripmenuitem.checkstate?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripMenuItem_CheckState) property specifies the exact state - checked or unchecked which needs to be set either statically. On runtime, user need to toggle the state manually through the [`Click`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripitem.click?view=netframework-4.7.2) event of the menu item.
 
 >**NOTE:**       
 >1. This feature is not applicable for combobox and textbox.       
->2. This feature will be applied only if [`ShowCheckMargin`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripdropdownmenu.showcheckmargin?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripDropDownMenu_ShowCheckMargin) property of ContextMenuStripEx is set to `true`.
+>2. This feature will be applied only if [`ShowCheckMargin`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripdropdownmenu.showcheckmargin?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripDropDownMenu_ShowCheckMargin) property of WinForms Context Menu Strip is set to `true`.
 
 
 Below code snippet will explain the check state of the menu item.

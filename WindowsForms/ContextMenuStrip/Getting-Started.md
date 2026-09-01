@@ -7,12 +7,12 @@ control: ContextMenuStripEx
 documentation: ug
 ---
 
-# Getting Started with Windows Forms ContextMenuStrip
+# Getting Started with WinForms Context Menu Strip
 
 >**Important**
 Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion license key in your Windows Forms application to use our components.
 
-This section provides a quick overview for working with the **ContextMenuStripEx** control in a WinForms application.
+This section provides a quick overview for working with the **WinForms Context Menu Strip** control in a WinForms application.
 
 ## Dependent Assemblies
 
@@ -25,15 +25,15 @@ The following assemblies needs to be added as reference to use the control in an
 * Syncfusion.Shared.Windows
 * Syncfusion.Tools.Base
 
-## Adding a context menu through designer
+## Adding a WinForms Context Menu Strip through designer
 
-The [Windows Forms ContextMenuStrip](https://www.syncfusion.com/winforms-ui-controls/contextmenustrip) (ContextMenuStripEx) control can be added through designer by following the below steps.
+The [WinForms Context Menu Strip](https://www.syncfusion.com/winforms-ui-controls/contextmenustrip) (ContextMenuStripEx) control can be added through designer by following the below steps.
 
-1. Drag and drop the ContextMenuStripEx control from the toolbox (under the section "Syncfusion<sup>®</sup> Windows **Visual Studio Version** Toolbox **Essential Studio<sup>®</sup> Version**") into the designer page.
+1. Drag and drop the WinForms Context Menu Strip control from the toolbox (under the section "Syncfusion<sup>®</sup> Windows **Visual Studio Version** Toolbox **Essential Studio<sup>®</sup> Version**") into the designer page.
 
    ![Adding a Context Menu](GettingStarted_Images/ContextMenuStripEx1.png)
 
-2. Now the ContextMenuStripEx control will be successfully added into the application along with the required dependent assemblies.
+2. Now the WinForms Context Menu Strip control will be successfully added into the application along with the required dependent assemblies.
 
    ![Adding a Context Menu](GettingStarted_Images/ContextMenuStripEx2.png)
 
@@ -57,26 +57,26 @@ The [Windows Forms ContextMenuStrip](https://www.syncfusion.com/winforms-ui-cont
 
    ![Text](GettingStarted_Images/ContextMenuStripEx10.png)
 
-7. To associate the context menu to a control we need to drag and drop any control of your choice to the application. In this illustration, we have used "RichTextBox".
+7. To associate the WinForms Context Menu Strip to a control we need to drag and drop any control of your choice to the application. In this illustration, we have used "RichTextBox".
 
    >**NOTE**:
-   To associate the ContextMenuStripEx control, you can choose any type of control like RichTextBox, Button, Label, TextBox, MaskedTextBox etc...
+   To associate the WinForms Context Menu Strip control, you can choose any type of control like RichTextBox, Button, Label, TextBox, MaskedTextBox etc...
 
    ![Associating Context Menu](GettingStarted_Images/TextBox.png)
 
-8. **Right-click** on the RichTextBox control in the designer and select **Properties**. Now, in the **Properties** panel, under **Behavior > ContextMenuStrip** we need to assign the respective context menu.
+8. **Right-click** on the RichTextBox control in the designer and select **Properties**. Now, in the **Properties** panel, under **Behavior > WinForms Context Menu Strip** we need to assign the respective context menu.
 
    ![Associating Context Menu](GettingStarted_Images/ContextMenuStripEx6.png)
 
    ![Associating Context Menu](GettingStarted_Images/ContextMenuStripEx7.png)
 
-9. Finally, we have populated the ContextMenuStripEx control successfully.
+9. Finally, we have populated the WinForms Context Menu Strip control successfully.
 
    ![ContextMenuStripEx](GettingStarted_Images/Associate.png)         
 
 ## Adding a context menu through code
 
-The ContextMenuStripEx control can be added through code by following the below steps.
+The WinForms Context Menu Strip control can be added through code by following the below steps.
 
 1. Add the following dependency assembly references to the project.
 
@@ -91,7 +91,7 @@ The ContextMenuStripEx control can be added through code by following the below 
    You can get these assemblies by browsing to the default assembly location.
 {System Drive}: \Program Files (x86) \ Syncfusion\Essential Studio\ {Platform} \ {Build Version Number} \ precompiledassemblies \ {Framework Version Number}
 
-2. The below code snippets adds a ContextMenuStripEx control to the application.
+2. The below code snippets adds a WinForms Context Menu Strip control to the application.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -161,7 +161,7 @@ Me.Controls.Add(Me.richTextBox1)
 
 ![Add a Context Menu](GettingStarted_Images/Associate.png)
 
-## Adding a context menu through NuGet package
+## Adding a WinForms Context Menu Strip through NuGet package
 
 Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#contextmenustripex) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
 

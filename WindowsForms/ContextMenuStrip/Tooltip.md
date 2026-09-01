@@ -7,12 +7,12 @@ control: ContextMenuStripEx
 documentation: ug
 ---
 
-# Tooltip in Windows Forms ContextMenuStrip
+# Tooltip in WinForms Context Menu Strip
 
 Tooltip is nothing but a hint, showing short format or customized text about the menu item, when mouse hover on it. It can be enabled using the [`ShowItemToolTips`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstrip.showitemtooltips?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStrip_ShowItemToolTips) property. The [`ToolTipText`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripitem.tooltiptext?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripItem_ToolTipText) property is used to set the short format or customized text for each menu item.
 
 
-The below code snippet will explain how to set tooltip for context menu items.
+The below code snippet will explain how to set tooltip for WinForms Context Menu Strip items.
 
 {% tabs %}
 {% highlight c# %}
