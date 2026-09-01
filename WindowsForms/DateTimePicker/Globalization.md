@@ -9,7 +9,7 @@ documentation: ug
 
 # Globalization in Windows Forms DateTimePicker
 
-The `SfDateTimeEdit` control provides globalization support that allows you to design and develop a world-ready application that supports localized interfaces and regional data for users in multiple cultures. Before beginning the design phase, determine the cultures that your application supports.
+The `Windows Forms DateTimePicker` control provides globalization support that allows you to design and develop a world-ready application that supports localized interfaces and regional data for users in multiple cultures. Before beginning the design phase, determine the cultures that your application supports.
 
 {% tabs %}
 

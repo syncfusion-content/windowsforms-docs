@@ -103,7 +103,7 @@ Me.dateTimePickerAdv5.Format = System.Windows.Forms.DateTimePickerFormat.Time
 {% endhighlight %}
 {% endtabs %}
 
-![DateTimePickerAdv date format](DateTimePicker_images/wf-date-time-picker-format.png) 
+![Windows Forms DateTimePickerAdv date format](DateTimePicker_images/wf-date-time-picker-format.png) 
 
 ### Custom format
 
@@ -122,7 +122,7 @@ Me.dateTimePickerAdv1.CustomFormat = "MMMM/yyyy"
 {% endhighlight %}
 {% endtabs %}
 
-![DateTimePickerAdv date format](DateTimePicker_images/CustomFormat.png) 
+![Windows Forms DateTimePickerAdv date format](DateTimePicker_images/CustomFormat.png) 
 
 N> The DateTimePickerAdv control supports all custom date-time formats string of .NetFramework. Refer to this [documentation](https://learn.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings) for more information.
 
@@ -130,9 +130,9 @@ N> The DateTimePickerAdv control supports all custom date-time formats string of
 
 You can edit the date values in the DateTimePickerAdv control directly.
 
-![DateTimePickerAdv date editing option](DateTimePicker_images/Editing-support.png) 
+![Windows Forms DateTimePickerAdv date editing option](DateTimePicker_images/Editing-support.png) 
 
-![DateTimePickerAdv date editing option](DateTimePicker_images/Editing-support1.png) 
+![Windows Forms DateTimePickerAdv date editing option](DateTimePicker_images/Editing-support1.png) 
 
 ## Date range constraints
 
@@ -149,4 +149,4 @@ Me.dateTimePickerAdv1.MinValue = New System.DateTime(2007, 2, 1, 0, 0, 0, 0)
 {% endhighlight %}
 {% endtabs %}
 
-![DateTimePickerAdv date range](DateTimePicker_images/date-ranges.png)  
+![Windows Forms DateTimePickerAdv date range](DateTimePicker_images/date-ranges.png)  

@@ -13,11 +13,11 @@ The SfCalendar allows you to select one or more dates. The selected date in the 
 
 ## Change selection
 
-The `SfCalendar` control allows you to change the selection by clicking a specific date. 
+The `Windows Forms Calendar` control allows you to change the selection by clicking a specific date. 
 
 ### Change selection through keyboard
 
-The selected date of the `SfCalendar` control can be changed by the keyboard. `Up/Down` and `Left/Right` arrow keys help you to change the selection according to the keyboard interaction. 
+The selected date of the `Windows Forms Calendar` control can be changed by the keyboard. `Up/Down` and `Left/Right` arrow keys help you to change the selection according to the keyboard interaction. 
 
 ### Change selection programmatically
 
