@@ -11,7 +11,7 @@ documentation: ug
 
 ## ContentView
 
-ContentView is the main view of the WinForms NavigationDrawer on which the desired items can be placed. For example, RichTextBox can be used in this sample.
+ContentView is the main view of the WinForms Navigation Drawer on which the desired items can be placed. For example, RichTextBox can be used in this sample.
 
 {% tabs %}
 
