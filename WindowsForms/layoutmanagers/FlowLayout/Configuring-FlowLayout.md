@@ -7,7 +7,7 @@ control: FlowLayout
 documentation: ug
 ---
 
-# Configuring FlowLayout in WinForms Flow Layout
+# Configuring Flow Layout in WinForms
 
 ## Layout mode
 
