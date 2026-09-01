@@ -13,7 +13,7 @@ documentation: ug
 
 Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sftabbedform) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
 
-## Converting standard form into SfTabbedForm
+## Converting standard form into SfTabbedForm (WinForms Tabbed Form)
 
 The default form can be changed into `WinForms Tabbed Form` by following the given steps:
 
@@ -33,7 +33,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-3. Change the base class of your form from `System.Windows.Forms.Form` to `WinForms Tabbed Form`.
+3. Change the base class of your form from `System.Windows.Forms.Form` to `SfTabbedForm (WinForms Tabbed Form)`.
 
 {% capture codesnippet2 %}​
 {% tabs %}
@@ -58,7 +58,7 @@ End Class
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-## Loading TabbedFormControl to TabbedForm
+## Loading TabbedFormControl to WinForms Tabbed Form
 
 The `TabbedFormControl` provides the tabbed user interface to the `WinForms Tabbed Form`. The `TabbedFormControl` should be added to the form to have the tabbed user interface. The control can be loaded to form using the following code.
 
@@ -76,7 +76,7 @@ Me.TabbedFormControl = tabbedFormControl
 {% endtabs %}
 
 
-## Adding tabs to TabbedForm
+## Adding tabs to WinForms Tabbed Form
 
 To add tabs to form, create an instance of [TabPageAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabPageAdv.html) and add it to the tabs collection of the `TabbedFormControl`.
 
