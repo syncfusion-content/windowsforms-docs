@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Windows Forms Office2007 Form
 
-This section describes how to configure `Office2007Form` control in a Windows Forms application.
+This section describes how to configure `WinForms Office2007Form` control in a Windows Forms application.
 
 ## Assembly deployment
 
@@ -21,18 +21,18 @@ Please find more details regarding how to install the nuget packages in windows 
 
 ## Creating simple application with Office2007Form
 
-You can create the Windows Forms application with Office2007Form control as follows:
+You can create the Windows Forms application with WinForms Office2007Form control as follows:
 
 1. [Creating the project](#creating-the-project)
-2. [Configure Office2007Form](#configure-office2007form)
+2. [Configure WinForms Office2007Form](#configure-office2007form)
 
 ### Creating the project
 
-Create a new Windows Forms project in the Visual Studio to change the standard form into Office2007Form.
+Create a new Windows Forms project in the Visual Studio to change the standard form into WinForms Office2007Form.
 
 ### Configure Office2007Form
 
-`Office2007Form` is an advanced standard Form, we can configure it by following the given steps:
+`WinForms Office2007Form` is an advanced standard Form, we can configure it by following the given steps:
 
 **Step 1:** Add the following required assembly references to the project:
 
@@ -56,7 +56,7 @@ Imports Syncfusion.Windows.Forms
 
 {% endtabs %}
    
-**Step 3:** Change the class to inherit `Office2007Form` instead of the standard form.
+**Step 3:** Change the class to inherit `Office2007Form (WinForms Office2007Form)` instead of the standard form.
 
 {% tabs %}
 
