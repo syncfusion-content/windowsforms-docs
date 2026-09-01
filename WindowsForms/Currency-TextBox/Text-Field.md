@@ -7,15 +7,15 @@ control: CurrencyTextbox
 documentation: ug
 ---
 
-# Text Field in Windows Forms CurrencyTextBox
+# Text Field in WinForms Currency TextBox
 
-The text field of a CurrencyTextBox control can be customized using the properties available. The below image illustrates the various sections of the control.
+The text field of a WinForms Currency TextBox control can be customized using the properties available. The below image illustrates the various sections of the control.
 
 ![Text field](Overview_images/Overview_img490.png) 
 
 ## Text
 
-The default text in the CurrencyTextBox can be edited through [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyTextBox.html#Syncfusion_Windows_Forms_Tools_CurrencyTextBox_Text) property. Default value is $2.00. The text can be aligned to Left, Right or Center using TextAlign property.
+The default text in the WinForms Currency TextBox can be edited through [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyTextBox.html#Syncfusion_Windows_Forms_Tools_CurrencyTextBox_Text) property. Default value is $2.00. The text can be aligned to Left, Right or Center using TextAlign property.
 
 {% tabs %}
 
@@ -43,7 +43,7 @@ Me.currencyTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 
 ### Multiline Feature
 
-The CurrencyTextBox control can be made multiline by setting [Multiline](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.multiline?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBox_Multiline) property to true. Using the below properties we can control the behavior of control. 
+The WinForms Currency TextBox control can be made multiline by setting [Multiline](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.multiline?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBox_Multiline) property to true. Using the below properties we can control the behavior of control. 
 
 * [Lines](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.lines?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBoxBase_Lines)
 * [WordWrap](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.wordwrap?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBoxBase_WordWrap)
@@ -120,7 +120,7 @@ Me.currencyTextBox1.PasswordChar = '*'
 
 ### Banner Text Support
 
-We can set banner text for the CurrencyTextBox control. Refer BannerTextProvider Component topic for more details.
+We can set banner text for the WinForms Currency TextBox control. Refer BannerTextProvider Component topic for more details.
 
 We need to do the below settings to make Banner text feature available for the control.
 
@@ -154,11 +154,11 @@ Me.currencyTextBox1.Text = ""
 
 ## Number and Decimal Digits
 
-The CurrencyTextBox text field has a number part and a decimal part. The properties which controls appearance and behavior of the text field are discussed in this section.
+The WinForms Currency TextBox text field has a number part and a decimal part. The properties which controls appearance and behavior of the text field are discussed in this section.
 
 ### Number part
 
-The below properties lets you decide the formatting of the number part of CurrencyTextBox control.
+The below properties lets you decide the formatting of the number part of WinForms Currency TextBox control.
 
 * [CurrencyNumberDigits](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyTextBox.html#Syncfusion_Windows_Forms_Tools_CurrencyTextBox_CurrencyNumberDigits)
 * [CurrencyPositivePattern](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyTextBox.html#Syncfusion_Windows_Forms_Tools_CurrencyTextBox_CurrencyPositivePattern)
@@ -191,7 +191,7 @@ Me.currencyTextBox1.CurrencyNegativePattern = 2
 
 ### Decimal Part
 
-The below properties lets you decide the formatting of the CurrencyTextBox control's number part.
+The below properties lets you decide the formatting of the WinForms Currency TextBox control's number part.
 
 * [CurrencyDecimalDigits](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyTextBox.html#Syncfusion_Windows_Forms_Tools_CurrencyTextBox_CurrencyDecimalDigits)
 * [CurrencyDecimalSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyTextBox.html#Syncfusion_Windows_Forms_Tools_CurrencyTextBox_CurrencyDecimalSeparator)
@@ -245,7 +245,7 @@ Me.currencyTextBox1.RemoveDecimalZeros = True
 
 ## Negative Part
 
-The default negative sign '-' can be changed by [NegativeSign](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html#Syncfusion_Windows_Forms_Tools_NumberTextBoxBase_NegativeSign) property to any other special characters. We can specify the behavior of the Currency TextBox by [NegativeInputPendingOnSelectAll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html#Syncfusion_Windows_Forms_Tools_NumberTextBoxBase_NegativeInputPendingOnSelectAll) when its content is fully selected and negative key is pressed by the user. When [NegativeInputPendingOnSelectAll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html#Syncfusion_Windows_Forms_Tools_NumberTextBoxBase_NegativeInputPendingOnSelectAll) set to 'True', the current value is not changed. The next key stroke is taken to a new value and the entire content of the TextBox is replaced by the negative value of the key stroke entered.
+The default negative sign '-' can be changed by [NegativeSign](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html#Syncfusion_Windows_Forms_Tools_NumberTextBoxBase_NegativeSign) property to any other special characters. We can specify the behavior of the WinForms Currency TextBox by [NegativeInputPendingOnSelectAll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html#Syncfusion_Windows_Forms_Tools_NumberTextBoxBase_NegativeInputPendingOnSelectAll) when its content is fully selected and negative key is pressed by the user. When [NegativeInputPendingOnSelectAll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html#Syncfusion_Windows_Forms_Tools_NumberTextBoxBase_NegativeInputPendingOnSelectAll) set to 'True', the current value is not changed. The next key stroke is taken to a new value and the entire content of the TextBox is replaced by the negative value of the key stroke entered.
 
 For example, if the current value of the TextBox is 1.00 with all the text being selected and when the user presses the negative key followed by key 5, the value will be  '-5'.
 

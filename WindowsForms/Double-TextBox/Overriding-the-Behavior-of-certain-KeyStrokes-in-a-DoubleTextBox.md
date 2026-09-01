@@ -6,7 +6,7 @@ platform: windowsforms
 control: DoubleTextBox
 documentation: ug
 ---
-# Overriding Behavior in Windows Forms DoubleTextBox
+# Overriding Behavior in WinForms Double TextBox
 
 This can be done by overriding the HandleSubtractKey(). Given below is the code snippet which shows an example of how to clear the text when the NegativeSign is changed.
 

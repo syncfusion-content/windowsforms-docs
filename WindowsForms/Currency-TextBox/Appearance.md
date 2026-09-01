@@ -7,11 +7,11 @@ control: CurrencyTextbox
 documentation: ug
 ---
 
-# Appearance in Windows Forms CurrencyTextBox
+# Appearance in WinForms Currency TextBox
 
 ## Themes
 
-CurrencyTextBox control can be themed by setting [ThemesEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_ThemesEnabled) to true.
+WinForms Currency TextBox control can be themed by setting [ThemesEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_ThemesEnabled) to true.
 
 {% tabs %}
 
@@ -35,7 +35,7 @@ Me.currencyTextBox1.ThemesEnabled = True
 
 ## Border Styles
 
-The below properties describes various properties available to set border for the CurrencyTextBox control.
+The below properties describes various properties available to set border for the WinForms Currency TextBox control.
 
 * [BorderStyle](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.borderstyle?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBoxBase_BorderStyle)
 * [Border3DStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_Border3DStyle)
@@ -77,7 +77,7 @@ Me.currencyTextBox1.BorderSides = System.Windows.Forms.Border3DSide.All
 
 ## Color Settings
 
-We can set different colors for the different set of currency values i.e, Colors can be set for positive currency values, negative currency values and zero values by using the below properties. We can draw the background of Currency TextBox with colors when it is in read only mode by [ReadOnlyBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html#Syncfusion_Windows_Forms_Tools_NumberTextBoxBase_ReadOnlyBackColor).
+We can set different colors for the different set of currency values i.e, Colors can be set for positive currency values, negative currency values and zero values by using the below properties. We can draw the background of WinForms Currency TextBox with colors when it is in read only mode by [ReadOnlyBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html#Syncfusion_Windows_Forms_Tools_NumberTextBoxBase_ReadOnlyBackColor).
 
 * [PositiveColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html#Syncfusion_Windows_Forms_Tools_NumberTextBoxBase_PositiveColor)
 * [NegativeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html#Syncfusion_Windows_Forms_Tools_NumberTextBoxBase_NegativeColor)
@@ -117,4 +117,4 @@ Me.currencyTextBox1.ZeroColor = System.Drawing.Color.DarkOrange
 
 ## Visual Style
 
-Please refer the [TextBoxExt Visual style](/windowsforms/TextBoxExt/Appearance-Settings) to set themes for CurrencyTextBox.
+Please refer the [TextBoxExt Visual style](/windowsforms/TextBoxExt/Appearance-Settings) to set themes for WinForms Currency TextBox.
