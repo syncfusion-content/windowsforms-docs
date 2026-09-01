@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Title Bar in Windows Forms Form control | Syncfusion®
 description: Title Bar customization in Form (SfForm) supports styling, button customization, rich text, embedded controls, and caption image configuration.
@@ -105,7 +105,7 @@ Me.MaximizeBox = False
 
 ## Rich text formatting
 
-Rich text can be displayed inside the title bar by enabling the [Style.TitleBar.AllowRichText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo.html#Syncfusion_WinForms_Controls_Styles_TitleBarStyleInfo_AllowRichText) property and adding the proper rich text to the [Text](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.form.text?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) property of the form.
+Rich text can be displayed inside the title bar by enabling the [Style.TitleBar.AllowRichText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo.html#Syncfusion_WinForms_Controls_Styles_TitleBarStyleInfo_AllowRichText) property and adding the proper rich text to the [Text](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.form.text?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) property of the WinForms Form.
 
 {% tabs %}
 {% highlight c# %}
@@ -128,7 +128,7 @@ N> Adding rich text to the `Text` property will have no effect, if the `AllowRic
 
 ## Loading user control to the title bar
 
-The [WinForms Form](https://www.syncfusion.com/winforms-ui-controls/form) (SfForm) allows you to load any user control into the title bar instead of the title bar text by using the [TitleBarTextControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfForm.html#Syncfusion_WinForms_Controls_SfForm_TitleBarTextControl) property. The size of the user control should be set properly to fit the control within the title bar.
+The [WinForms Form](https://www.syncfusion.com/winforms-ui-controls/form) allows you to load any user control into the title bar instead of the title bar text by using the [TitleBarTextControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfForm.html#Syncfusion_WinForms_Controls_SfForm_TitleBarTextControl) property. The size of the user control should be set properly to fit the control within the title bar.
 
 {% tabs %}
 {% highlight c# %}

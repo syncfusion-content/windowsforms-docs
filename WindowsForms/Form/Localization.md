@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Localization in Windows Forms Form control | Syncfusion®
 description: Localization in Form (SfForm) enables translating form resources, customizing localized content, and supporting multiple cultures using resource files.
@@ -8,14 +8,14 @@ documentation: ug
 ---
 
 # Localization in Windows Forms Form (SfForm)
-Localization is the process of translating the application resources into different languages for specific cultures. The SfForm can be localized by adding a [resource](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/aa992030(v=vs.100)) file. The application culture can be changed by setting the [CurrentUICulture](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentuiculture?view=net-5.0) before the `InitializeComponent` method.
+Localization is the process of translating the application resources into different languages for specific cultures. The WinForms Form can be localized by adding a [resource](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/aa992030(v=vs.100)) file. The application culture can be changed by setting the [CurrentUICulture](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentuiculture?view=net-5.0) before the `InitializeComponent` method.
 
 ## Localize at Sample Level
-To localize the SfForm based on `CurrentUICulture` using resource files, follow the steps below.
+To localize the WinForms Form based on `CurrentUICulture` using resource files, follow the steps below.
 
 1. Create a new folder and name it **Resources** in your application.
 
-2. Add the default resource file of SfForm into the **Resources** folder. You can download the `Syncfusion.Shared.Base.resx` from the [GitHub](https://github.com/syncfusion/winforms-controls-localization-resx-files/blob/master/Syncfusion.Shared.Base/Syncfusion.Shared.Base.resx).
+2. Add the default resource file of WinForms Form into the **Resources** folder. You can download the `Syncfusion.Shared.Base.resx` from the [GitHub](https://github.com/syncfusion/winforms-controls-localization-resx-files/blob/master/Syncfusion.Shared.Base/Syncfusion.Shared.Base.resx).
 
 ![Added default resource file of winforms sfform shown in solution explorer](Localization_images/Localization_img1.png) 
 
@@ -60,7 +60,7 @@ End Sub
 ![Winforms sfform localized with modified resources](Localization_images/Localization_img5.png)
 
 ## Editing Default Resource File
-The default resource file can be edited by adding it to the **Resources** folder of the application, which is where SfForm reads the static texts from. The default resource file can be downloaded from the [GitHub](https://github.com/syncfusion/winforms-controls-localization-resx-files/blob/master/Syncfusion.Shared.Base/Syncfusion.Shared.Base.resx).
+The default resource file can be edited by adding it to the **Resources** folder of the application, which is where WinForms Form reads the static texts from. The default resource file can be downloaded from the [GitHub](https://github.com/syncfusion/winforms-controls-localization-resx-files/blob/master/Syncfusion.Shared.Base/Syncfusion.Shared.Base.resx).
 
 ![Added default resource file of winforms sfform shown in solution explorer](Localization_images/Localization_img6.png)
 
