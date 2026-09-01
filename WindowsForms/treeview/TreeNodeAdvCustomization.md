@@ -646,7 +646,7 @@ Members
 </th><th>
 Description</th></tr><tr><td>
 Action</td><td>
-Gets or sets the Syncfusion.Windows.Forms.Tools.WinForms TreeView Action associated with the event.</td></tr><tr><td>
+Gets or sets the Syncfusion.Windows.Forms.Tools.TreeViewAdv Action associated with the event.</td></tr><tr><td>
 Node</td><td>
 Gets or sets the Syncfusion.Windows.Forms.Tools.TreeNodeAdv associated with the event.</td></tr></table>
 
@@ -716,7 +716,7 @@ Members
 </th><th>
 Description</th></tr><tr><td>
 Action</td><td>
-Gets or sets the Syncfusion.Windows.Forms.Tools.TreeViewAdvAction associated with the event.</td></tr><tr><td>
+Gets or sets the Syncfusion.Windows.Forms.Tools.TreeViewAdv Action associated with the event.</td></tr><tr><td>
 Node</td><td>
 Gets or sets the Syncfusion.Windows.Forms.Tools.TreeNodeAdv associated with the event.</td></tr>
 </table>
@@ -967,7 +967,7 @@ Me.treeViewAdv1.ExpanderType = ExpanderType.Classic
 #### BeforeExpand Event	
 
 The `BeforeExpand` event will be raised when the plus is clicked again and when in expanded mode so that you can check the data source for changes. This topic explained in LoadOnDemand feature.
-Use this event when you set the `TreeViewAdv.LoadOnDemand` property to true to add child nodes to the specified node before it is expanded.
+Use this event when you set the WinForms TreeView's `LoadOnDemand` property to true to add child nodes to the specified node before it is expanded.
 
 <b>Event Table</b>
 
@@ -2484,7 +2484,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-#####  Mouse Selection Events in WinForms TreeView and MultiColumnTreeView
+#####  Mouse Selection Events in WinForms TreeView and WinForms MultiColumn TreeView
 
 <b>Description</b>
 

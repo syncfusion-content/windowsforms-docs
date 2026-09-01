@@ -274,7 +274,7 @@ End Namespace
 
 We can display the Root lines between the root nodes by setting the WinForms TreeView's [ShowRootLines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ShowRootLines) property to True. Whereas the WinForms TreeView's  [ShowLines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ShowLines) property displays connecting line for rest of the nodes in the control except between the root nodes. By default, [ShowRootLines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ShowRootLines) and [ShowLines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ShowLines) are set as `true`.
 
-When [ShowLines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ShowLines) is set to `false`, the connecting lines will not be displayed for the entire control.
+When WinForms TreeView's [ShowLines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ShowLines) is set to `false`, the connecting lines will not be displayed for the entire control.
 
 {% tabs %}
 {% highlight c# %}

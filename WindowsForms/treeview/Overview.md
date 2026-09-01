@@ -9,7 +9,7 @@ documentation: ug
 
 # About Syncfusion® Windows Forms WinForms TreeView Control
 
-[WinForms TreeView control](https://www.syncfusion.com/winforms-ui-controls/treeview) displays a collection of data in a hierarchical tree structure, and the data can be expanded and collapsed. It offers many advanced features such as drag-and-drop, load on demand, context menus, and data binding that make the control unique and powerful. While the `WinForms TreeView` exposes global styles that can be applied to all nodes, the [TreeNodeAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html) class allows users to specify styles for individual nodes. The control comes with complete design-time support.
+[WinForms TreeView](https://www.syncfusion.com/winforms-ui-controls/treeview) control displays a collection of data in a hierarchical tree structure, and the data can be expanded and collapsed. It offers many advanced features such as drag-and-drop, load on demand, context menus, and data binding that make the control unique and powerful. While the `WinForms TreeView` exposes global styles that can be applied to all nodes, the [TreeNodeAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html) class allows users to specify styles for individual nodes. The control comes with complete design-time support.
 
 ![Overview of Syncfusion TreeViewAdv](Overview_images/Overview_img1.jpg)
 

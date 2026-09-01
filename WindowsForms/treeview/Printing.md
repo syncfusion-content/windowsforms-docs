@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Printing in Windows Forms TreeView
 
-[WinForms TreeView](https://www.syncfusion.com/winforms-ui-controls/treeview) Control has in-built support for printing. To print the content of the WinForms TreeView, convert the control into a printable document by using the TreeViewPrintDocument.
+[WinForms TreeView](https://www.syncfusion.com/winforms-ui-controls/treeview) control has in-built support for printing. To print the content of the WinForms TreeView, convert the control into a printable document by using the TreeViewPrintDocument.
 
 {% tabs %}
 {% highlight c# %}
