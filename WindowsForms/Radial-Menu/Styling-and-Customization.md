@@ -193,7 +193,7 @@ Me.radialMenu1.DisplayStyle = Syncfusion.Windows.Forms.Tools.DisplayStyle. Image
 
 ## Image size customization
 
-The `WinForms RadialMenu` control allows changing the size of its item images. The [`MenuItemImageSize`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialMenu.html#Syncfusion_Windows_Forms_Tools_RadialMenu_MenuItemImageSize) property is used to change the image size of all items.
+The `WinForms Radial Menu` control allows changing the size of its item images. The [`MenuItemImageSize`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialMenu.html#Syncfusion_Windows_Forms_Tools_RadialMenu_MenuItemImageSize) property is used to change the image size of all items.
 
 {% tabs %}
 
@@ -247,7 +247,7 @@ this.Controls.Add(this.radialMenu);
 
 ![Image Size](Styling-and-Customization_images/Styling-and-Customization_img8.png)
 
-The [`ImageSize`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialMenuItem.html#Syncfusion_Windows_Forms_Tools_RadialMenuItem_ImageSize) property of `RadialMenuItem` is used to change the image size of each WinForms RadialMenu item.
+The [`ImageSize`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialMenuItem.html#Syncfusion_Windows_Forms_Tools_RadialMenuItem_ImageSize) property of `RadialMenuItem` is used to change the image size of each WinForms Radial Menu item.
 
 {% tabs %}
 
@@ -301,5 +301,5 @@ this.Controls.Add(this.radialMenu);
 
 ![Image Size](Styling-and-Customization_images/Styling-and-Customization_img9.png)
 
-N> If the [`ImageSize`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialMenuItem.html#Syncfusion_Windows_Forms_Tools_RadialMenuItem_ImageSize) is defined, setting the [`MenuItemImageSize`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialMenu.html#Syncfusion_Windows_Forms_Tools_RadialMenu_MenuItemImageSize) property has no effect for particular WinForms RadialMenu item.
+N> If the [`ImageSize`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialMenuItem.html#Syncfusion_Windows_Forms_Tools_RadialMenuItem_ImageSize) is defined, setting the [`MenuItemImageSize`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialMenu.html#Syncfusion_Windows_Forms_Tools_RadialMenu_MenuItemImageSize) property has no effect for particular WinForms Radial Menu item.
 

@@ -12,7 +12,7 @@ documentation: ug
 >**Important**
 Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion license key in your Windows Forms application to use our components.
 
-This section describes how to add a `WinForms RadialMenu` control in a Windows Forms application and overview of its basic functionalities.
+This section describes how to add a `WinForms Radial Menu` control in a Windows Forms application and overview of its basic functionalities.
 
 ## Assembly deployment
 
@@ -22,9 +22,9 @@ Please find more details regarding how to install the nuget packages in windows 
  
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
 
-## Creating simple application with RadialMenu
+## Creating simple application with WinForms Radial Menu
 
-You can create the Windows Forms application with WinForms RadialMenu control as follows:
+You can create the Windows Forms application with WinForms Radial Menu control as follows:
 
 1. [Creating project](#creating-the-project)
 2. [Adding control via designer](#adding-control-via-designer)
@@ -32,11 +32,11 @@ You can create the Windows Forms application with WinForms RadialMenu control as
 
 ### Creating the project
 
-Create a new Windows Forms project in the Visual Studio to display the WinForms RadialMenu with basic information.
+Create a new Windows Forms project in the Visual Studio to display the WinForms Radial Menu with basic information.
 
 ## Adding control via designer
 
-WinForms RadialMenu control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+WinForms Radial Menu control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
 * Syncfusion.Grid.Base.dll
 * Syncfusion.Grid.Windows.dll
@@ -49,12 +49,12 @@ WinForms RadialMenu control can be added to the application by dragging it from 
 
 **Adding Menu Items**
 
-Menu items can be added into WinForms RadialMenu using `Items` collection in Smart Tags in the design view.
+Menu items can be added into WinForms Radial Menu using `Items` collection in Smart Tags in the design view.
 
 ![Adding Menu Items in windows forms radial menu](Getting-Started_images/RadialMenu-img3.png) 
 
 N> In .NET Core, when adding child items to a RadialMenuItem directly from the Visual Studio Properties window, the default Collection Editor opens instead of the expected editor.
-Workaround: Use the main WinForms RadialMenu Collection Editor to add items, then configure the child items as needed. A permanent fix is in progress.
+Workaround: Use the main WinForms Radial Menu Collection Editor to add items, then configure the child items as needed. A permanent fix is in progress.
 
 ## Adding control manually using code
 
@@ -87,7 +87,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-**Step 3:** Create `WinForms RadialMenu` control instance and add it to the form. Its `Visible` property should be set to `true` to make it visible initially.
+**Step 3:** Create `WinForms Radial Menu` control instance and add it to the form. Its `Visible` property should be set to `true` to make it visible initially.
 
 {% tabs %}
 
@@ -121,7 +121,7 @@ Me.Controls.Add(radialMenu1)
 
 **Adding menu items**
 
-To add menu items, create an instance for the required menu item and add it to `Items` collection property in WinForms RadialMenu.
+To add menu items, create an instance for the required menu item and add it to `Items` collection property in WinForms Radial Menu.
 
 {% tabs %}
 

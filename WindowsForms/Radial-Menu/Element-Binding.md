@@ -269,7 +269,7 @@ Me.radialMenu1.ImageList = Me.imageListAdv1
 
 
 
-## Populating Radial Menu Slider
+## Populating WinForms Radial Menu Slider
 
 WinForms Radial Menu Slider is configured with minimum and maximum value in WinForms Radial Menu.
 

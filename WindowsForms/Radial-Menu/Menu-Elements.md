@@ -9,7 +9,7 @@ documentation: ug
 
 # Menu Elements in Windows Forms Radial Menu
 
-## Radial Menu items
+## WinForms Radial Menu items
 
 WinForms Radial Menu items are populated with the business object collection. Each menu item can be checked.
 
@@ -88,9 +88,9 @@ Me.radialMenuItem3.CheckMode = CheckMode.Option
 
 
 
-## Radial Menu Slider
+## WinForms Radial Menu Slider
 
-[Radial Menu Slider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialMenuSlider.html) is formed in WinForms Radial Menu with minimum and maximum value and it is used to update the size.
+[WinForms Radial Menu Slider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialMenuSlider.html) is formed with minimum and maximum value and is used to update the size.
 
 ![Radial Menu Slider](Menu-Elements_images/Menu-Elements_img4.png)
 
