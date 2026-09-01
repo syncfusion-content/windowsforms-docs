@@ -490,7 +490,7 @@ Last</td><td>
 Show the last card in the list.</td></tr>
 </table>
 
-N> The SmartTag feature (available only in Visual Studio 2005) can also be used to browse through the cards of the CardLWinForms Card Layoutayout.
+N> The SmartTag feature (available only in Visual Studio 2005) can also be used to browse through the cards of the WinForms Card Layout.
 
 ### Through code
 
