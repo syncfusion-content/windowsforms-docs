@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Windows Forms MetroForm
 
-This section describes how to configure `MetroForm` control in a Windows Forms application and overview of its basic functionalities.
+This section describes how to configure `WinForms MetroForm` control in a Windows Forms application and overview of its basic functionalities.
 
 ## Assembly deployment
 
@@ -19,22 +19,22 @@ Please find more details regarding how to install the nuget packages in windows 
  
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
 
-## Creating simple application with MetroForm
+## Creating simple application with WinForms MetroForm
 
-You can create a Windows Forms application with the MetroForm control as follows:
+You can create a Windows Forms application with the WinForms MetroForm control as follows:
 
 1. [Creating project](#creating-the-project)
-2. [Configure MetroForm](#configure-metroForm)
+2. [Configure WinForms MetroForm](#configure-metroForm)
 3. [Add Caption Labels](#add-caption-labels)
 3. [Add Caption Images](#add-caption-images)
 
 ## Creating the project
 
-Create a new Windows Forms project in the Visual Studio to change the default form into MetroForm.
+Create a new Windows Forms project in the Visual Studio to change the default form into WinForms MetroForm.
 
-## Configure MetroForm
+## Configure WinForms MetroForm
 
-`MetroForm` is an advanced standard Form, we can configure it by following the given steps:
+`WinForms MetroForm` is an advanced standard Form, we can configure it by following the given steps:
 
 **Step 1** - Add the following required assembly references to the project:
 
@@ -58,7 +58,7 @@ Imports Syncfusion.Windows.Forms
 
 {% endtabs %}
    
-**Step 3** - Change the class to inherit `MetroForm` instead of the default `Form` as follows.
+**Step 3** - Change the class to inherit `WinForms MetroForm` instead of the default `Form` as follows.
 
 {% tabs %}
 
@@ -80,9 +80,9 @@ Partial Public Class MetroForm Inherits MetroForm
 
 ## Add Caption Labels
 
-The `MetroForm` allows you to add caption labels with design and appearance. Caption labels can be added to the MetroForm through the `CaptionLabels`collection.
+The `WinForms MetroForm` allows you to add caption labels with design and appearance. Caption labels can be added to the WinForms MetroForm through the `CaptionLabels` collection.
 
-Following code illustrates how to add the caption labels to the MetroForm:
+Following code illustrates how to add the caption labels to the WinForms MetroForm:
 
 {% tabs %}
 
@@ -132,8 +132,8 @@ Me.CaptionLabels.Add(captionLabel1)
 
 ## Add Caption Images
 
-The `MetroForm` allows you to add caption images with design and appearance. Caption images can be added to the MetroForm through the `CaptionImages`collection.
-Following code illustrates how to add the caption images to the MetroForm:
+The `WinForms MetroForm` allows you to add caption images with design and appearance. Caption images can be added to the WinForms MetroForm through the `CaptionImages` collection.
+Following code illustrates how to add the caption images to the WinForms MetroForm:
 
 {% tabs %}
 

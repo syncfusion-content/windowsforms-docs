@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Appearance in Windows Forms Metro Form | Syncfusion®
 description: Appearance customization supports border styling, caption bar settings, icon alignment, colors, and rounded corners.
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Border thickness
 
-MetroForm border can be customized using `BorderThickness` property.
+WinForms MetroForm border can be customized using `BorderThickness` property.
 
 {% tabs %}
 
@@ -77,7 +77,7 @@ Me.CaptionBarHeight = 40
 
 ### Retain the caption bar height on maximized mode
 
-By default, the height of the caption bar is reduced when the form is in the maximized state. The same height can be retained in both normal and maximized state by setting the [MetroForm.CaptionBarHeightMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MetroForm.html#Syncfusion_Windows_Forms_MetroForm_CaptionBarHeightMode) property to `SameAlwaysOnMaximize`.
+By default, the height of the caption bar is reduced when the form is in the maximized state. The same height can be retained in both normal and maximized state by setting the WinForms MetroForm's [CaptionBarHeightMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MetroForm.html#Syncfusion_Windows_Forms_MetroForm_CaptionBarHeightMode) property to `SameAlwaysOnMaximize`.
 
 {% tabs %}
 
@@ -120,7 +120,7 @@ Me.CaptionBarColor = Color.Pink
 
 ## Caption alignment
 
-MetroForm caption can be aligned vertically using `CaptionAlign` property.
+WinForms MetroForm caption can be aligned vertically using `CaptionAlign` property.
 
 * Left
 * Center
@@ -147,7 +147,7 @@ Me.CaptionAlign = System.Windows.Forms.HorizontalAlignment.Right
 
 ## Caption vertical alignment
 
-MetroForm caption can be aligned vertically using `CaptionVerticalAlignment` property.
+WinForms MetroForm caption can be aligned vertically using `CaptionVerticalAlignment` property.
 
 * Top
 * Center
@@ -174,7 +174,7 @@ Me.CaptionVerticalAlignment = Syncfusion.Windows.Forms.VerticalAlignment.Top
 
 ## Icon alignment support
 
-MetroForm supports Left, Right, and Center alignment for Icon.
+WinForms MetroForm supports Left, Right, and Center alignment for Icon.
 
 {% tabs %}
 
@@ -197,7 +197,7 @@ this.IconAlign = System.Windows.Forms.HorizontalAlignment.Right;
  
 ## Rounded corner
 
-Rounded corners for `MetroForm` can be enabled by using the [AllowRoundedCorners](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MetroForm.html#Syncfusion_Windows_Forms_MetroForm_AllowRoundedCorners) property. Rounded corners are not supported in OS versions lower than Windows 11. Enabling `AllowRoundedCorners` property will have no effect on those operating systems. 
+Rounded corners for `WinForms MetroForm` can be enabled by using the [AllowRoundedCorners](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MetroForm.html#Syncfusion_Windows_Forms_MetroForm_AllowRoundedCorners) property. Rounded corners are not supported in OS versions lower than Windows 11. Enabling `AllowRoundedCorners` property will have no effect on those operating systems. 
 
 N> When the rounded corners are enabled, the border and shadow of the Form are drawn by the operating system.
 
