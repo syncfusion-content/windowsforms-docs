@@ -7,16 +7,16 @@ control: FlowLayout
 documentation: ug
 ---
 
-# Configuring FlowLayout in Windows Forms FlowLayout
+# Configuring FlowLayout in WinForms Flow Layout
 
 ## Layout mode
 
-The core function of FlowLayout is to layout the child controls either horizontally or vertically. The following property will be in effect for both the scenarios.
+The core function of WinForms Flow Layout is to layout the child controls either horizontally or vertically. The following property will be in effect for both the scenarios.
 
 <table>
 <tr>
 <th>
-FlowLayoutProperties</th><th>
+WinForms Flow Layout Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -44,7 +44,7 @@ Me.flowLayout1.LayoutMode = Syncfusion.Windows.Forms.Tools.FlowLayoutMode.Vertic
 
 ### ParticipateInLayout
 
-Child controls can be prevented from being laid out using the FlowLayout manager. This can be done using the following methods.
+Child controls can be prevented from being laid out using the WinForms Flow Layout manager. This can be done using the following methods.
 
 <table>
 <tr>
@@ -61,7 +61,7 @@ SetParticipateInLayout</td><td>
 Adds or removes the specified control from the layout list.</td></tr>
 </table>
 
-The following code is used to add or remove the child control from the FlowLayout list programmatically.
+The following code is used to add or remove the child control from the WinForms Flow Layout list programmatically.
 
 {% tabs %}
 
@@ -86,7 +86,7 @@ The horizontal and vertical gaps between the child controls can be set using the
 <table>
 <tr>
 <th>
-FlowLayoutProperty</th><th>
+WinForms Flow Layout Property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -127,7 +127,7 @@ The height of the container control can be automatically increased when there is
 <table>
 <tr>
 <th>
-FlowLayout Property</th><th>
+WinForms Flow Layout Property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -153,12 +153,12 @@ Me.flowLayout1.AutoHeight = True
 
 ## Layout direction
 
-The FlowLayout allows you layout the child controls in opposite direction (right to left or bottom to top).
+The WinForms Flow Layout allows you layout the child controls in opposite direction (right to left or bottom to top).
 
 <table>
 <tr>
 <th>
-FlowLayout Property</th><th>
+WinForms Flow Layout Property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -194,7 +194,7 @@ N> Alignment is applied only along the direction of flow. For example, if the La
 <table>
 <tr>
 <th>
-FlowLayout Property</th><th>
+WinForms Flow Layout Property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -220,16 +220,16 @@ Me.flowLayout1.Alignment = Syncfusion.Windows.Forms.Tools.FlowAlignment.Near
 
 ![Left aligned child controls in flow layout](ConfiguringFlowLayout_images/ConfiguringFlowLayout_img3.jpeg)
 
-When you specify the alignment of FlowLayout as `ChildConstraints`, the layout manager uses a constraint-based layout logic based on the constraints specified on each child component. During design time, the constraints can be specified for each child control through the following extended property.
+When you specify the alignment of WinForms Flow Layout as `ChildConstraints`, the layout manager uses a constraint-based layout logic based on the constraints specified on each child component. During design time, the constraints can be specified for each child control through the following extended property.
 
 <table>
 <tr>
 <th>
-FlowLayout property</th><th>
+WinForms Flow Layout property</th><th>
 Description</th></tr>
 <tr>
 <td>
-Constraints on flowLayout</td><td>
+Constraints on WinForms Flow Layout</td><td>
 Specifies the alignment of layout components in the direction of flow when the alignment property is set to `ChildConstraints`.</td></tr>
 </table>
 

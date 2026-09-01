@@ -7,9 +7,9 @@ control: BorderLayout
 documentation: ug
 ---
 
-# Configuring BorderLayout in Windows Forms BorderLayout
+# Configuring BorderLayout in WinForms Border Layout
 
-The configuration settings for the BorderLayout control have been given in this section.
+The configuration settings for the WinForms Border Layout control have been given in this section.
 
 ## Spacing
 
@@ -21,7 +21,7 @@ The horizontal and vertical gaps between the child controls can be set using the
 
 <th>
 
-BorderLayout properties</th><th>
+WinForms Border Layout properties</th><th>
 
 Description</th></tr>
 
@@ -81,12 +81,12 @@ Description</th></tr>
 <tr>
 <td>
 
-Position on borderLayout<br/></td><td>
+Position on WinForms Border Layout<br/></td><td>
 Gets or sets the border position for a child components.<br/></td></tr>
 
 </table>
 
-N> This property is added as an extended property in the properties window of the child control added to BorderLayout.
+N> This property is added as an extended property in the properties window of the child control added to WinForms Border Layout.
 
 {% tabs %}
 

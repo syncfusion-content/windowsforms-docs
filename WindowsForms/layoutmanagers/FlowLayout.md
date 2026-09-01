@@ -8,7 +8,7 @@ documentation: ug
 ---
 # FlowLayout in Windows Forms Layout Manager
 
-`FlowLayout` is a Layout Manager which allows us to arrange the Child components horizontally or vertically in a specific order, based on the settings. FlowLayout is one of the most commonly used Layout Managers. Deriving from the LayoutManager class, the FlowLayout component was created to support simple horizontal and vertical flow and complex constraint-based FlowLayouts.
+`WinForms Flow Layout` is a Layout Manager which allows us to arrange the Child components horizontally or vertically in a specific order, based on the settings. It is one of the most commonly used Layout Managers. Deriving from the LayoutManager class, the WinForms Flow Layout component was created to support simple horizontal and vertical flow and complex constraint-based WinForms Flow Layouts.
 
 In its simplest form, this Layout Manager can be used to automatically arrange the Child components in one or more rows, as shown below.
 
@@ -28,7 +28,7 @@ In its simplest form, this Layout Manager can be used to automatically arrange t
 
 **Getting started**
 
-This section describes how to add `FlowLayout` control in a Windows Forms application and overview of its basic functionalities.
+This section describes how to add `WinForms Flow Layout` control in a Windows Forms application and overview of its basic functionalities.
 
 ## Assembly deployment
 
@@ -40,9 +40,9 @@ Please find more details regarding how to install the nuget packages in windows 
 
 
 
-**Creating simple application with FlowLayout**
+**Creating simple application with WinForms Flow Layout**
 
-You can create the Windows Forms application with FlowLayout control as follows:
+You can create the Windows Forms application with WinForms Flow Layout control as follows:
 
 1. [Creating project](#creating-the-project)
 2. [Adding control via designer](#adding-control-via-designer)
@@ -52,12 +52,12 @@ You can create the Windows Forms application with FlowLayout control as follows:
 
 **Creating the project**
 
-Create a new Windows Forms project in the Visual Studio to display the FlowLayout with basic functionalities.
+Create a new Windows Forms project in the Visual Studio to display the WinForms Flow Layout with basic functionalities.
 
 
 ## Adding control via designer
 
-The FlowLayout control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+The WinForms Flow Layout control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
 * Syncfusion.Shared.Base.dll
 
@@ -65,7 +65,7 @@ The FlowLayout control can be added to the application by dragging it from the t
 ![Drag and drop flow layout from toolbox](FlowLayout_images/FlowLayout_img28.png)
 
 
-To add the form as a Container control of the FlowLayout, click `Yes` in a popup form which appears automatically before FlowLayout gets added.
+To add the form as a Container control of the WinForms Flow Layout, click `Yes` in a popup form which appears automatically before WinForms Flow Layout gets added.
 
 ![Alert message to add Flow layout as container control of form](FlowLayout_images/FlowLayout_img30.png)
 
@@ -103,7 +103,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %} 
 
-**Step 3**  Create `FlowLayout` control instance and set `ContainerControl` as form.
+**Step 3**  Create `WinForms Flow Layout` control instance and set `ContainerControl` as form.
 
 {% tabs %}
 
@@ -173,18 +173,18 @@ Me.Controls.Add(this.buttonAdv4)
 
 ![Adding child controls to flow layout](FlowLayout_images/FlowLayout_img31.png)
 
-## Configuring FlowLayout
+## Configuring WinForms Flow Layout
 
 ### Layout mode
 
-The layout mode dictates the core function of a FlowLayout, whether to layout the Child controls horizontally or vertically. This property will be in effect for both the scenarios.
+The layout mode dictates the core function of a WinForms Flow Layout, whether to layout the Child controls horizontally or vertically. This property will be in effect for both the scenarios.
 
 
 
 <table>
 <tr>
 <th>
-FlowLayout property</th><th>
+WinForms Flow Layout property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -215,7 +215,7 @@ Me.flowLayout1.LayoutMode = Syncfusion.Windows.Forms.Tools.FlowLayoutMode.Vertic
 
 ## ParticipateInLayout
 
-Child controls can be prevented from being laid out using the FlowLayout Manager. This can be done using the methods given below.
+Child controls can be prevented from being laid out using the WinForms Flow Layout Manager. This can be done using the methods given below.
 
 
 
@@ -235,7 +235,7 @@ Adds or removes the specified control from the layout list.</td></tr>
 </table>
 
 
-The following code can be used to add or remove the Child control from the FlowLayout list programmatically.
+The following code can be used to add or remove the Child control from the WinForms Flow Layout list programmatically.
 
 
 {% tabs %}
@@ -266,7 +266,7 @@ The horizontal and the vertical gap between the Child controls can be set using 
 <table>
 <tr>
 <th>
-FlowLayout property</th><th>
+WinForms Flow Layout property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -316,7 +316,7 @@ The height of the Container control can be automatically increased when there is
 <table>
 <tr>
 <th>
-FlowLayout property</th><th>
+WinForms Flow Layout property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -347,14 +347,14 @@ Me.flowLayout1.AutoHeight = True
 
 ## Layout direction
 
-FlowLayout allows you to layout the Child controls in the opposite direction (right to left or bottom to top).
+WinForms Flow Layout allows you to layout the Child controls in the opposite direction (right to left or bottom to top).
 
 
 
 <table>
 <tr>
 <th>
-FlowLayout property</th><th>
+WinForms Flow Layout property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -397,7 +397,7 @@ N> Alignment is applied only along the direction of flow. For example, if the La
 <table>
 <tr>
 <th>
-FlowLayout property</th><th>
+WinForms Flow Layout property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -429,18 +429,18 @@ Me.flowLayout1.Alignment = Syncfusion.Windows.Forms.Tools.FlowAlignment.Near
 ![Left aligned child controls in flow layout](Overview_images/Overview_img38.jpeg) 
 
 
-Once you specify the alignment of a FlowLayout as 'ChildConstraints', the Layout Manager will use a constraint-based layout logic based on the constraints specified on each Child component. During design time, the constraints can be specified for each Child control through the following extended property.
+Once you specify the alignment of a WinForms Flow Layout as 'ChildConstraints', the Layout Manager will use a constraint-based layout logic based on the constraints specified on each Child component. During design time, the constraints can be specified for each Child control through the following extended property.
 
 
 
 <table>
 <tr>
 <th>
-FlowLayout property</th><th>
+WinForms Flow Layout property</th><th>
 Description</th></tr>
 <tr>
 <td>
-Constraints on flowLayout</td><td>
+Constraints on WinForms Flow Layout</td><td>
 Specifies the alignment of layout components in the direction of flow when the Alignment property is set to 'ChildConstraints'.</td></tr>
 </table>
 
@@ -467,13 +467,13 @@ Me.flowLayout1.Alignment = Syncfusion.Windows.Forms.Tools.FlowAlignment.ChildCon
 
 
 
-N> Refer[FlowLayout - Configuring Child Controls](#configuring-child-controls) topic to know about HAlign, VAlign and other options provided by the Constraints on flowLayout property.
+N> Refer[WinForms Flow Layout - Configuring Child Controls](#configuring-child-controls) topic to know about HAlign, VAlign and other options provided by the Constraints on WinForms Flow Layout property.
 
 ## Configuring Child controls
 
-### Constraints on FlowLayout
+### Constraints on WinForms Flow Layout
 
-Constrained FlowLayout is typically useful when creating resizable data entry forms filled with textboxes, checkboxes, and so on. During design time, the constraints can be specified for each Child control through its extended Constraints on flowLayout property. The constraints in the FlowLayout are described below in detail.
+Constrained WinForms Flow Layout is typically useful when creating resizable data entry forms filled with textboxes, checkboxes, and so on. During design time, the constraints can be specified for each Child control through its extended Constraints on WinForms Flow Layout property. The constraints in the WinForms Flow Layout are described below in detail.
 
 **Setting the constraints through designer**
 
@@ -663,9 +663,9 @@ When resized to a smaller width, two rows are created resulting in the layout sh
 ![New rows created on demand while resize container](FlowLayout_images/FlowLayout_img15.jpeg)
 
 
-## Enabling constrained FlowLayout on a container
+## Enabling constrained WinForms Flow Layout on a container
 
-This section will illustrate how Constrained FlowLayout can be used to implement complex form layout logic.
+This section will illustrate how Constrained WinForms Flow Layout can be used to implement complex form layout logic.
 
 For example, create a 'User Info entry' panel with auto labels, textboxes and combobox to allow the user to enter personal information. This Container panel should also be capable of handling different widths by repositioning and resizing the Child controls appropriately.
 
@@ -955,9 +955,9 @@ Steps to achieve the above layout and behavior are described below.
 
    {% endtabs %}
 
-3. Now add theFlowLayout component and set the panel to be its Container control. The FlowLayout will layout the controls in the order in which they were added to the panel. Use the Bring To Front and Send To Back design time verbs to move the controls to the front or back of the layout order.
+3. Now add the WinForms Flow Layout component and set the panel to be its Container control. It will layout the controls in the order in which they were added to the panel. Use the Bring To Front and Send To Back design time verbs to move the controls to the front or back of the layout order.
 
-   N> The FlowLayout will treat each control and it's auto label pair as a single unit during layout.
+   N> The WinForms Flow Layout will treat each control and it's auto label pair as a single unit during layout.
 
 
  
@@ -1002,7 +1002,7 @@ Steps to achieve the above layout and behavior are described below.
    {% endtabs %}
 
 4. Now set some appropriate constraints on the input controls as follows.
-   * Select the First Name textbox and browse to the extended Constraints on flowLayout property. Set the HAlign property to 'Justify', so that this control's width will be resized to fit any available empty horizontal space in the row. This also requires that you specify an appropriate preferred size for the control, such as (100, 20).
+   * Select the First Name textbox and browse to the extended Constraints on WinForms Flow Layout property. Set the HAlign property to 'Justify', so that this control's width will be resized to fit any available empty horizontal space in the row. This also requires that you specify an appropriate preferred size for the control, such as (100, 20).
    * The Middle Initial textbox needs to be left aligned and not justified. This is the default constraint setting, so we don't need to make any changes to it's constraints.
    * Select the Last Name textbox and specify the same constraints as the 'First Name'textbox.
    * The Address textbox should always begin in a new row, so set the NewLine property to `true` in it's constraints. Also, set the HAlign property to 'Justify' and also provide a preferred size.
@@ -1061,7 +1061,7 @@ Steps to achieve the above layout and behavior are described below.
 
    {% endtabs %}
 
-5. The panel itself should increase or decrease in width when the number of rows in the layout increases or decreases. To get this behavior, set the FlowLayout's AutoHeight property to `true`.
+5. The panel itself should increase or decrease in width when the number of rows in the layout increases or decreases. To get this behavior, set the WinForms Flow Layout's AutoHeight property to `true`.
    
    {% tabs %}
 
@@ -1104,24 +1104,24 @@ The AutoLabel control is a label-derived control that lets you pair a label with
 
 The AutoLabel control can be positioned relative to the top, left, bottom or right of the labeled control. It can also be positioned at a custom distance from the labeled control specified via its DX and DY properties. When using relative positioning, you can also specify the gap between the label and the control.
 
-The FlowLayout will always treat the 'AutoLabel-LabeledControl' pair as a unit. You can use AutoLabels and FlowLayout together to implement complex and powerful form layouts.
+The WinForms Flow Layout will always treat the 'AutoLabel-LabeledControl' pair as a unit. You can use AutoLabels and WinForms Flow Layout together to implement complex and powerful form layouts.
 
 
 N> Refer to AutoLabel under Editors Package for more details.
 
-## Rearranging the controls laid out by FlowLayout
+## Rearranging the controls laid out by WinForms Flow Layout
 
-The FlowLayout manager arranges the controls in the way it gets added into the Container collection.
+The WinForms Flow Layout manager arranges the controls in the way it gets added into the Container collection.
 
 ### Through designer
 
-* You can rearrange the controls laid out by FlowLayout by right clicking the control and selecting the Bring To Front or Send To Back verbs in the designer.
+* You can rearrange the controls laid out by WinForms Flow Layout by right clicking the control and selecting the Bring To Front or Send To Back verbs in the designer.
 
 ![Rearranging the child controls in designer using context menu](FlowLayout_images/FlowLayout_img22.jpeg)
 
 
 
-* Rearranging of Child controls of the FlowLayout can also be done by dragging and dropping them at design time.
+* Rearranging of Child controls of the WinForms Flow Layout can also be done by dragging and dropping them at design time.
 
 ![Rearranging the child controls in designer by drag and drop child controls](FlowLayout_images/FlowLayout_img23.jpeg)
 
@@ -1129,9 +1129,9 @@ The FlowLayout manager arranges the controls in the way it gets added into the C
 
 ### Through code
 
-We can also programmatically change the order of the controls laid out by the Flow layout. This can be done using the method given below.
+We can also programmatically change the order of the controls laid out by the WinForms Flow Layout. This can be done using the method given below.
 
-* Set up a form with Panel1 and drag the FlowLayout onto the Panel1 which would act as the Container control.
+* Set up a form with Panel1 and drag the WinForms Flow Layout onto the Panel1 which would act as the Container control.
 
 
 
@@ -1139,7 +1139,7 @@ We can also programmatically change the order of the controls laid out by the Fl
 
 
 
-* Drag another three Panels onto the Panel1. The Flow Layout automatically arranges the Child controls as given below.
+* Drag another three Panels onto the Panel1. The WinForms Flow Layout automatically arranges the Child controls as given below.
 
 ![Arranged child controls in Flow layout](FlowLayout_images/FlowLayout_img25.jpeg)
 
