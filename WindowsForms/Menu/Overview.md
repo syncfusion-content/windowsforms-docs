@@ -9,7 +9,7 @@ documentation: ug
 
 # About Syncfusion® Windows Forms MainFrameBarManager Control
 
-[MainFrameBarManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) control allows a hierarchical menu model of elements that are associated with commands and toolbars. This control contains a collection of [BarItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html), which can be expanded to display additional [BarItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html) entries or to perform a specific action when clicked.
+[WinForms MainFrame Bar Manager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) control allows a hierarchical menu model of elements that are associated with commands and toolbars. This control contains a collection of [BarItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html), which can be expanded to display additional [BarItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html) entries or to perform a specific action when clicked.
 
 
 ## Key features
@@ -26,7 +26,7 @@ documentation: ug
 
 * **Customization** - Supports a Customization dialog that lets the end user customize the menu structure at runtime.
 
-* **Visual style** - Supports a rich set of visual styles to customize the look and feel of the `MainFrameBarManager`.
+* **Visual style** - Supports a rich set of visual styles to customize the look and feel of the `WinForms MainFrame Bar Manager`.
 
 * **MDI layout** - Supports MDI layout. Learn more in [MDIChildForms](https://help.syncfusion.com/windowsforms/menu/mdi-child-forms).
 

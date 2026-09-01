@@ -14,9 +14,9 @@ documentation: ug
 
 ![Overview of MultiColumnTreeView](Overview_Images/overview.png)
 
-## Components of MultiColumnTreeView
+## Components of WinForms MultiColumn TreeView
 
-*	**TreeColumnAdv** - Represents a column in the MultiColumnTreeView control.
+*	**TreeColumnAdv** - Represents a column in the WinForms MultiColumn TreeView control.
 *	**TreeNodeAdv** - Represents a node that can be added to the control and supports sub-items.
 *	**TreeNodeAdvSubItem** - Represents a sub-item displayed in additional columns of a node.
 *	**Custom Control** - Represents a control that can be embedded in a node of the first column.
@@ -43,4 +43,4 @@ documentation: ug
 
 **Multiline Support** - TreeNodeAdv provides an option to enable multiline text for each node by using the `Multiline` property on `TreeNodeAdvStyleInfo`. This must be set for each individual node and is available through the NodeCollection Editor.
 
-**Enhanced performance** - MultiColumnTreeView can be populated with a large number of nodes. Performance when expanding or collapsing nodes can be improved by setting the `SuspendExpandRecalculate` property. See [Performance](performance) for details.
+**Enhanced performance** - WinForms MultiColumn TreeView can be populated with a large number of nodes. Performance when expanding or collapsing nodes can be improved by setting the `SuspendExpandRecalculate` property. See [Performance](performance) for details.

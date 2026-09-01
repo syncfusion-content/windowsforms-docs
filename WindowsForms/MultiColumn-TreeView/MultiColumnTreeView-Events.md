@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Events in Windows Forms MultiColumn TreeView | Syncfusion®
 description: Events provide notifications for node painting, selection, editing, expansion, scrolling, column interactions, and checkbox actions.
@@ -16,16 +16,16 @@ These events are triggered before and after a node is painted.
 <table>
 <tr>
 <th>
-MultiColumnTreeView Event</th><th>
+WinForms MultiColumn TreeView Event</th><th>
 Description</th></tr>
 <tr>
 <td>
 BeforeNodePaint</td><td>
-Fired before a node is being painted when the MultiColumnTreeView.OwnerDrawNodes property is set to true.</td></tr>
+Fired before a node is being painted when the WinForms MultiColumn TreeView's OwnerDrawNodes property is set to true.</td></tr>
 <tr>
 <td>
 AfterNodePaint</td><td>
-Fired after a node is being painted when the MultiColumnTreeView.OwnerDrawNodes property is set to true.</td></tr>
+Fired after a node is being painted when the WinForms MultiColumn TreeView's OwnerDrawNodes property is set to true.</td></tr>
 </table>
 
 {% tabs %}
@@ -73,7 +73,7 @@ These events are triggered before a node is checked or when an interactive check
 <table>
 <tr>
 <th>
-MultiColumnTreeView Event</th><th>
+WinForms MultiColumn TreeView Event</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -129,7 +129,7 @@ private void MultiColumnTreeView1_BeforeCheck(object sender, Syncfusion.Windows.
 <table>
 <tr>
 <th>
-MultiColumnTreeView Event</th><th>
+WinForms MultiColumn TreeView Event</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -201,7 +201,7 @@ These events triggers when default expand or collapse image index in changed.
 <table>
 <tr>
 <th>
-MultiColumnTreeView Event</th><th>
+WinForms MultiColumn TreeView Event</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -259,7 +259,7 @@ Events related to node editing.
 <table>
 <tr>
 <th>
-MultiColumnTreeView Event</th><th>
+WinForms MultiColumn TreeView Event</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -359,7 +359,7 @@ These events will be triggered while selecting a node.
 <table>
 <tr>
 <th>
-MultiColumnTreeView Event</th><th>
+WinForms MultiColumn TreeView Event</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -438,7 +438,7 @@ These events will be triggered while performing mouse action on Column Header.
 <table>
 <tr>
 <th>
-MultiColumnTreeView Event</th><th>
+WinForms MultiColumn TreeView Event</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -514,7 +514,7 @@ Mouse action related events.
 <table>
 <tr>
 <th>
-MultiColumnTreeView Event</th><th>
+WinForms MultiColumn TreeView Event</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -554,7 +554,7 @@ These events are related to the scroll functionality of the control.
 <table>
 <tr>
 <th>
-MultiColumnTreeView Event</th><th>
+WinForms MultiColumn TreeView Event</th><th>
 Description</th></tr>
 <tr>
 <td>
