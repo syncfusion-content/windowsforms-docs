@@ -29,7 +29,7 @@ The following steps describe how to create an **SfDateTimeEdit** control via des
     * Syncfusion.SfInput.WinForms
     * Syncfusion.Shared.Base
 
-![Drag and drop the SfDateTimeEdit control to form](getting-started-images/toolbox.png)
+![Drag and drop the Windows Forms DateTimePicker control to form](getting-started-images/toolbox.png)
 
 ## Adding SfDateTimeEdit control via code
 
@@ -129,7 +129,7 @@ dateTimeEdit.MaxDateTime = New DateTime(2018, 2, 27)
 
 {% endtabs %}
 
-![SfDateTimeEdit control](getting-started-images/minmax.png)
+![Windows Forms DateTimePicker control](getting-started-images/minmax.png)
 
 ## Editing mode
 
@@ -158,7 +158,7 @@ dateTimeEdit.DateTimeEditingMode = DateTimeEditingMode.Mask
 
 {% endtabs %} 
 
-![Editing mode](editing-support-images/mask.png)
+![Windows Forms DateTimePicker Editing mode](editing-support-images/mask.png)
 
 ## Allow null value
 
@@ -190,7 +190,7 @@ dateTimeEdit.Watermark = "Choose a date"
 
 {% endtabs %}
 
-![SfDateTimeEdit allows null value](watermark-images/watermark.png)
+![Windows Forms DateTimePicker allows null value](watermark-images/watermark.png)
 
 ## Custom format
 
@@ -258,7 +258,7 @@ Me.dateTimeEdit.ShowUpDown = true
 
 ## Configure the calculation of week number based on culture
 
-You can get the current week number in `SfDateTimeEdit` control by changing the `CalendarWeekRule` property value of date time format in `CultureInfo`. The default value of `CalendarWeekRule` property is `FirstDay`.
+You can get the current week number in `Windows Forms DateTimePicker` control by changing the `CalendarWeekRule` property value of date time format in `CultureInfo`. The default value of `CalendarWeekRule` property is `FirstDay`.
 
 {% tabs %}
 
