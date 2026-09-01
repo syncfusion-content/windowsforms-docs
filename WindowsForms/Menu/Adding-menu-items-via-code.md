@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Adding Menu Items via Code in Windows Forms Menu | Syncfusion
 description: Learn how to create menus programmatically and add bars, menu items, drop-downs, text boxes, and toolbar items.
@@ -42,7 +42,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-**Step 3** : Create [MainFrameBarManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) control instance and add it to the form.
+**Step 3** : Create [WinForms MainFrame Bar Manager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) control instance and add it to the form.
 
 {% tabs %}
 
@@ -70,7 +70,7 @@ Me.mainFrameBarManager1.Form = Me;
 
 ## Adding main bar
 
-The [Bar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.Bar.html) component acts as a place holder for the menu items. It can be added to the menu using the `Bars` collection property of the `MainFrameBarManager` instance.
+The [Bar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.Bar.html) component acts as a place holder for the menu items. It can be added to the menu using the `Bars` collection property of the `WinForms MainFrame Bar Manager` instance.
 
 The following code snippet shows the addition of a bar to the menu.
 

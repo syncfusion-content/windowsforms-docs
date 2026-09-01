@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Adding Menu Items via Designer in Windows Forms  Menu | Syncfusion
 description: Learn how to create menus through the designer and add bars, menu items, drop-downs, combo boxes, and toolbar items.
@@ -11,7 +11,7 @@ documentation: ug
 
 This section provides a quick overview to add the menu items to a [Menu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) control through the designer.
 
-The `MainFrameBarManager` can be added to the application by dragging it from the toolbox and dropping it onto the design form. The required assembly references will be added automatically.
+The `WinForms MainFrame Bar Manager` can be added to the application by dragging it from the toolbox and dropping it onto the design form. The required assembly references will be added automatically.
 
 * Syncfusion.Grid.Base.dll
 * Syncfusion.Grid.Windows.dll
