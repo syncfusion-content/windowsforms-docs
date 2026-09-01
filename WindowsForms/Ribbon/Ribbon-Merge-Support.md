@@ -7,14 +7,14 @@ control: RibbonControlAdv
 documentation: ug
 ---
 
-# Ribbon Merge Support in Windows Forms Ribbon
+# Ribbon Merge Support in WinForms Ribbon Control
 
-RibbonControlAdv allows merging of RibbonPanel in a child form to the RibbonPanel of the parent form.
+WinForms Ribbon Control allows merging of RibbonPanel in a child form to the RibbonPanel of the parent form.
 `RibbonPanelMergeContainer` is the container of TabItems and ToolStripEx items for the child form. When merged, the items present in this container will be merged with the parent form.
 
 To merge the RibbonPanel in the ChildForm with the RibbonPanel in the parent form, follow the below given steps.
 
-In a Ribbon form, add a RibbonControlAdv control and the required ToolStripTabItems and the ToolStripEx items.
+In a Ribbon form, add a WinForms Ribbon Control and the required ToolStripTabItems and the ToolStripEx items.
 
 ## Creating Ribbon Panel Merge Container
 
@@ -58,7 +58,7 @@ frm.Show()
 
 ![Child Form](Ribbon_Merge_Support_Images/Ribbon-Merge-Support_img3.jpg)
 
-* Parent form after merging, the extra tabs from child form (Data and View) are merged with the main form Ribbon control.
+* Parent form after merging, the extra tabs from child form (Data and View) are merged with the main form WinForms Ribbon Control.
 
 ![Parent form after merging](Ribbon_Merge_Support_Images/Ribbon-Merge-Support_img4.jpg)
 
@@ -150,6 +150,6 @@ merge.SetTabIndex(Me.ViewToolStripEx.Text, 0)
 
 ## Merged items in simplified layout
 
-When the simplified layout is enabled in the Ribbon control, the merged items will be displayed in a single line as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/windowsforms/ribbon/simplifiedlayout).
+When the simplified layout is enabled in the WinForms Ribbon Control, the merged items will be displayed in a single line as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/windowsforms/ribbon/simplifiedlayout).
 
 ![Merged items in simplified layout](Ribbon_Merge_Support_Images/RibbonMerge_SimplifiedLayout.png)

@@ -7,9 +7,9 @@ control: RibbonControlAdv
 documentation: ug
 ---
 
-# Keyboard Support in Windows Forms Ribbon
+# Keyboard Support in WinForms Ribbon Control
 
-To invoke any command using KeyBoard, RibbonControlAdv provides KeyTip support through Super Accelerator. On pressing Alt key, KeyTips for the corresponding RibbonItem gets displayed.
+To invoke any command using KeyBoard, WinForms Ribbon Control provides KeyTip support through Super Accelerator. On pressing Alt key, KeyTips for the corresponding RibbonItem gets displayed.
 
 ## Add Super Accelerator
 
@@ -19,7 +19,7 @@ Follow the steps below to add Super accelerator
 
 ![Keyboard-Support_img1](Keyboard_Support_Images/Keyboard-Support_img1.jpg)
 
-2.	When the SuperAccelerator component is added to a form, an extended property will be added to the properties of every item in the RibbonControlAdv.
+2.	When the SuperAccelerator component is added to a form, an extended property will be added to the properties of every item in the WinForms Ribbon Control.
 
 ![Keyboard-Support_img2](Keyboard_Support_Images/Keyboard-Support_img2.jpg)
 
