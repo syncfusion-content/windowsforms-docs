@@ -7,7 +7,7 @@ control: MultiColumnTreeView
 documentation: ug
 ---
 
-# Find and Replace in Windows Forms WinForms MultiColumn TreeView
+# Find and Replace in Windows Forms MultiColumn TreeView
 
 ## TreeViewFindReplaceDialog
 

@@ -7,7 +7,7 @@ control: MultiColumnTreeView
 documentation: ug
 ---
 
-# Data Binding in Windows Forms WinForms MultiColumn TreeView
+# Data Binding in Windows Forms MultiColumn TreeView
 WinForms MultiColumn TreeView does not have direct option to load/save from XML file. This below section will help to load/save WinForms MultiColumn TreeView from XML.
 
 **Example**
