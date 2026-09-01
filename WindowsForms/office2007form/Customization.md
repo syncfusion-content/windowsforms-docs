@@ -9,7 +9,7 @@ documentation: ug
 
 # Office2007Form Customization in Windows Forms
 
-The WinForms Office2007Form caption can be aligned to the left, right or center by using the [CaptionAlign](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Form.html#Syncfusion_Windows_Forms_Office2007Form_CaptionAlign) property.
+The WinForms Office 2007 Form caption can be aligned to the left, right or center by using the [CaptionAlign](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Form.html#Syncfusion_Windows_Forms_Office2007Form_CaptionAlign) property.
 
 {% tabs %}
 
@@ -31,7 +31,7 @@ Me.CaptionAlign = System.Windows.Forms.HorizontalAlignment.Center
 
 ## Caption font
 
-WinForms Office2007Form's caption Font can be customized through [CaptionFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Form.html#Syncfusion_Windows_Forms_Office2007Form_CaptionFont) property.
+WinForms Office 2007 Form's caption Font can be customized through [CaptionFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Form.html#Syncfusion_Windows_Forms_Office2007Form_CaptionFont) property.
 
 {% tabs %}
 
@@ -103,7 +103,7 @@ Me. CaptionBarHeight = 50
 
 ### Retain the caption bar height on maximized mode
 
-By Default, the height of the caption bar will be reduced when the form is in maximized state. It can be retained same in both normal and maximized state by setting the WinForms Office2007Form's [CaptionBarHeightMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Form.html#Syncfusion_Windows_Forms_Office2007Form_CaptionBarHeightMode) property as `SameAlwaysOnMaximize`
+By Default, the height of the caption bar will be reduced when the form is in maximized state. It can be retained same in both normal and maximized state by setting the WinForms Office 2007 Form's [CaptionBarHeightMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Form.html#Syncfusion_Windows_Forms_Office2007Form_CaptionBarHeightMode) property as `SameAlwaysOnMaximize`
 
 {% tabs %}
 
@@ -149,7 +149,7 @@ Me.CaptionBarHeightMode = Syncfusion.Windows.Forms.Enums.CaptionBarHeightMode.Sa
 
 ## Right to left
 
-Right to left support can be enabled using below properties in WinForms Office2007Form.
+Right to left support can be enabled using below properties in WinForms Office 2007 Form.
 
 {% tabs %}
 
@@ -175,7 +175,7 @@ Me.RightToLeft = System.Windows.Forms.RightToLeft.Yes
 
 ## Rounded corner
 
-Rounded corners for `WinForms Office2007Form` can be enabled by using the [AllowRoundedCorners](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Form.html#Syncfusion_Windows_Forms_Office2007Form_AllowRoundedCorners) property. Rounded corners are not supported in OS versions lower than Windows 11. Enabling `AllowRoundedCorners` property will have no effect on those operating systems. 
+Rounded corners for `WinForms Office 2007 Form` can be enabled by using the [AllowRoundedCorners](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Form.html#Syncfusion_Windows_Forms_Office2007Form_AllowRoundedCorners) property. Rounded corners are not supported in OS versions lower than Windows 11. Enabling `AllowRoundedCorners` property will have no effect on those operating systems. 
 
 N> When the rounded corners are enabled, the border and shadow of the Form are drawn by the operating system.
 

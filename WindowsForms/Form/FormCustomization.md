@@ -9,11 +9,11 @@ documentation: ug
 
 # Form Customization in Windows Forms Form (SfForm)
 
-## Form icon
+## WinForms Form icon
 
 A WinForms Form icon designates the image that represents it in the taskbar and appears on its title bar.
 
-### Changing form icon
+### Changing WinForms Form icon
 
 The WinForms Form icon displayed on the title bar and task bar can be changed by using the [Icon](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.form.icon?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) property.
 
@@ -28,7 +28,7 @@ Me.Icon = New Icon("sfIcon.ico")
 
 ![WindowsForms Form shows icon](formcustomization_images/windowsforms-form-shows-icon.png)
 
-### Form icon alignment
+### WinForms Form icon alignment
 
 The WinForms Form icon can be aligned vertically and horizontally by using the [Style.TitleBar.IconVerticalAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo.html#Syncfusion_WinForms_Controls_Styles_TitleBarStyleInfo_IconVerticalAlignment) and [Style.TitleBar.IconHorizontalAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo.html#Syncfusion_WinForms_Controls_Styles_TitleBarStyleInfo_IconHorizontalAlignment) properties.
 
@@ -45,7 +45,7 @@ Me.Style.TitleBar.IconHorizontalAlignment = HorizontalAlignment.Right
 
 ![WindowsForms Form icon is alignment](formcustomization_images/windowsforms-form-icon-alignment.png)
 
-## Form border
+## WinForms Form border
 
 Appearance of the border can be customized by using the [Style.Border](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.FormVisualStyle.html#Syncfusion_WinForms_Controls_Styles_FormVisualStyle_Border) and [Style.InactiveBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.FormVisualStyle.html#Syncfusion_WinForms_Controls_Styles_FormVisualStyle_InactiveBorder) properties.
 
