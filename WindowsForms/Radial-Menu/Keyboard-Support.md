@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Keyboard Support in Windows Forms RadialMenu | Syncfusion®
 description: Keyboard support enables key tips, SuperAccelerator integration, shortcut access, and customizable accelerator appearance.
@@ -9,7 +9,7 @@ documentation: ug
 
 # Keyboard Support in Windows Forms RadialMenu
 
-The RadialMenu control supports key tips for radial menu items, letting users quickly access radial menu items in a few keystrokes. When a user presses the Alt key, key tips for radial menu items are displayed. Pressing a key indicated in the key tip invokes the click event of the corresponding radial menu item.
+The WinForms RadialMenu control supports key tips for its items, letting users quickly access them in a few keystrokes. When a user presses the Alt key, key tips for the items are displayed. Pressing a key indicated in the key tip invokes the click event of the corresponding item.
 
 ## Add Super Accelerator
 
@@ -30,7 +30,7 @@ Follow the steps below to add the [`SuperAccelerator`](https://help.syncfusion.c
 
 {% endtabs %}
 
-2. To set a `SuperAccelerator` on use a SetAccelerator method to set the string value in radial menu item.
+2. To set a `SuperAccelerator` on use a SetAccelerator method to set the string value in WinForms RadialMenu item.
 
 **Through Coding**
 {% tabs %}
@@ -56,7 +56,7 @@ Follow the steps below to add the [`SuperAccelerator`](https://help.syncfusion.c
 4. Press the string in the keyboard and the corresponding item’s click event will be triggered. (Eg. If the accelerator string of Copy is X key, Press ALT key. Once all the accelerator strings are displayed, press X key the Copy item event will be triggered.)
 
 
-> Note: Do not set same string value to multiple radial menu items.
+> Note: Do not set same string value to multiple WinForms RadialMenu items.
 
 ## SuperAccelerator appearance
 

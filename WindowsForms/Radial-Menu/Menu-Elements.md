@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Menu Elements in Windows Forms Radial Menu | Syncfusion®
 description: Menu elements include radial menu items, check modes, grouping, color palettes, font lists, sliders, and center icons.
@@ -11,11 +11,11 @@ documentation: ug
 
 ## Radial Menu items
 
-Radial Menu items are populated with the business object collection. Each menu item can be checked.
+WinForms Radial Menu items are populated with the business object collection. Each menu item can be checked.
 
 ### Check mode
 
-The CheckMode of a Radial Menu Item is defined with the following options:
+The CheckMode of a WinForms Radial Menu Item is defined with the following options:
 
 * None - When the CheckMode is set to None, item can not be checked.
 * CheckBox - When the CheckMode is set to CheckBox, you can check more than one item in the same level.
@@ -74,7 +74,7 @@ Me.radialMenuItem3.CheckMode = CheckMode.Option
 
 ## Radial color palette
 
-[Radial Color Palette](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialColorPalette.html) is formed in Radial Menu with the Radial Color Items and it is used to update the color.
+[Radial Color Palette](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialColorPalette.html) is formed in WinForms Radial Menu with the Radial Color Items and it is used to update the color.
 
 ![Radial color palette](Menu-Elements_images/Menu-Elements_img2.png)
 
@@ -82,7 +82,7 @@ Me.radialMenuItem3.CheckMode = CheckMode.Option
 
 ## Radial font list box
 
-[Radial Font List Box](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialFontListBox.html) is formed in Radial Menu with installed font family and it is used to update the font style.
+[Radial Font List Box](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialFontListBox.html) is formed in WinForms Radial Menu with installed font family and it is used to update the font style.
 
 ![Radial font list box](Menu-Elements_images/Menu-Elements_img3.png)
 
@@ -90,7 +90,7 @@ Me.radialMenuItem3.CheckMode = CheckMode.Option
 
 ## Radial Menu Slider
 
-[Radial Menu Slider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialMenuSlider.html) is formed in Radial Menu with minimum and maximum value and it is used to update the size.
+[Radial Menu Slider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialMenuSlider.html) is formed in WinForms Radial Menu with minimum and maximum value and it is used to update the size.
 
 ![Radial Menu Slider](Menu-Elements_images/Menu-Elements_img4.png)
 
@@ -98,7 +98,7 @@ Me.radialMenuItem3.CheckMode = CheckMode.Option
 
 ## Icon
 
-The Icon property of Radial Menu is used to customize the icon displayed in the center of Radial Menu circle. Icon is not displayed if it is not loaded.
+The Icon property of WinForms Radial Menu is used to customize the icon displayed in the center of the circle. Icon is not displayed if it is not loaded.
 
 ![Icon](Menu-Elements_images/Menu-Elements_img5.png)
 

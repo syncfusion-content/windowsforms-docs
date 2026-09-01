@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Element Binding in Windows Forms Radial Menu | Syncfusion®
 description: Element binding supports menu item population, image management, state persistence, ordering, and specialized radial elements.
@@ -11,11 +11,11 @@ documentation: ug
 
 ## Menu items
 
-Radial Menu Items is populated with the business object collection. This section explains how to create a Radial Menu that shows the list of Application commands.
+WinForms Radial Menu Items is populated with the business object collection. This section explains how to create a WinForms Radial Menu that shows the list of Application commands.
 
 ### Slice count
 
-Slice Count functionality is used to define the maximum number of menu items (slices) that is made visible by default in the Radial Menu.
+Slice Count functionality is used to define the maximum number of menu items (slices) that is made visible by default in the WinForms Radial Menu.
 
 {% tabs %}
 
@@ -94,7 +94,7 @@ Me.radialMenu1.PersistPreviousState = True
 
 ### Custom images
 
-A custom set of images are configured to the Menu using ImageListAdv in the Radial Menu Control.
+A custom set of images are configured to the Menu using ImageListAdv in the WinForms Radial Menu Control.
 
 Following code example illustrates the Custom Images.
 
@@ -120,7 +120,7 @@ Me.radialMenu1.ImageList = Me.imageListAdv1
 
 ### Index based ordering
 
-Menu items in Radial Menu are arranged based on their respective indices. You can arrange the items in index-based order or in a sequential order by enabling this functionality.
+Menu items in WinForms Radial Menu are arranged based on their respective indices. You can arrange the items in index-based order or in a sequential order by enabling this functionality.
 
 {% tabs %}
 
@@ -150,7 +150,7 @@ Me.radialMenu1.UseIndexBasedOrder= true
 
 ## Populating color palette
 
-Radial Color Palette is configured with the set of colors in Radial Menu using the following code example.
+Radial Color Palette is configured with the set of colors in WinForms Radial Menu using the following code example.
 
 {% tabs %}
 
@@ -210,7 +210,7 @@ Me.radialMenu1.ImageList = Me.imageListAdv1
 
 ## Populating font list box
 
-Radial Font List Box is configured in Radial Menu with installed font family using the following code example.
+Radial Font List Box is configured in WinForms Radial Menu with installed font family using the following code example.
 
 {% tabs %}
 
@@ -271,7 +271,7 @@ Me.radialMenu1.ImageList = Me.imageListAdv1
 
 ## Populating Radial Menu Slider
 
-Radial Menu Slider is configured in Radial Menu with minimum and maximum value.
+WinForms Radial Menu Slider is configured with minimum and maximum value in WinForms Radial Menu.
 
 {% tabs %}
 
