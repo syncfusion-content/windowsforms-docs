@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Office2010Form Customization in Windows Forms | Syncfusion®
 description: Customization options include caption alignment, fonts, colors, help button support, RTL layouts, and rounded corners.
@@ -9,7 +9,7 @@ documentation: ug
 
 # Caption alignment in WinForms Office2010Form
 
-The Form caption can be aligned to the left, right or center by using the [CaptionAlign](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2010Form.html#Syncfusion_Windows_Forms_Office2010Form_CaptionAlign) property.
+The WinForms Office2010Form caption can be aligned to the left, right or center by using the [CaptionAlign](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2010Form.html#Syncfusion_Windows_Forms_Office2010Form_CaptionAlign) property.
 
 {% tabs %}
 
@@ -31,7 +31,7 @@ Me.CaptionAlign = System.Windows.Forms.HorizontalAlignment.Center
 
 ## Caption font
 
-Office2010Form's caption Font can be customized through [CaptionFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2010Form.html#Syncfusion_Windows_Forms_Office2010Form_CaptionFont) property.
+WinForms Office2010Form's caption Font can be customized through [CaptionFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2010Form.html#Syncfusion_Windows_Forms_Office2010Form_CaptionFont) property.
 
 {% tabs %}
 
@@ -130,7 +130,7 @@ Me. CaptionBarHeight = 50
 
 ## Right to left
 
-Right to left support can be enabled using below properties in Office2010Form.
+Right to left support can be enabled using below properties in WinForms Office2010Form.
 
 {% tabs %}
 
@@ -156,9 +156,9 @@ Me.RightToLeft = System.Windows.Forms.RightToLeft.Yes
 
 ## Rounded corner
 
-Rounded corners for `Office2010Form` can be enabled by using the [AllowRoundedCorners](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2010Form.html#Syncfusion_Windows_Forms_Office2010Form_AllowRoundedCorners) property. Rounded corners are not supported in OS versions lower than Windows 11. Enabling `AllowRoundedCorners` property will have no effect on those operating systems. 
+Rounded corners for `WinForms Office2010Form` can be enabled by using the [AllowRoundedCorners](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2010Form.html#Syncfusion_Windows_Forms_Office2010Form_AllowRoundedCorners) property. Rounded corners are not supported in OS versions lower than Windows 11. Enabling `AllowRoundedCorners` property will have no effect on those operating systems. 
 
-N> When the rounded corners are enabled, the border and shadow of the Form are drawn by the operating system.
+N> When the rounded corners are enabled, the border and shadow of the WinForms Office2010Form are drawn by the operating system.
 
 {% tabs %}
 

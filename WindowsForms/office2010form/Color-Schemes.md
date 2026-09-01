@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Configure Color Schemes in Windows Forms Office2010Form | Syncfusion®
 description: Color schemes support Office-inspired themes, managed colors, Aero theme integration, and background color customization.
@@ -9,7 +9,7 @@ documentation: ug
 
 # Configure Color Schemes in Windows Forms Office2010Form
 
-Office2010Form supports following office color schemes which can be edited through `ColorScheme` property.
+WinForms Office2010Form supports following office color schemes which can be edited through `ColorScheme` property.
 
 * Blue
 * Silver
@@ -68,7 +68,7 @@ Office2010Colors.ApplyManagedColors(this, Color.DarkMagenta);
 
 ## Background color for Office2010 Form
 
-The background of the Office2010 Form can be same, as the color scheme applied to the form. `UseOffice2007SchemeBackColor` property has to `true`, to make this effective.
+The background of the WinForms Office2010Form can be same, as the color scheme applied to the form. `UseOffice2007SchemeBackColor` property has to `true`, to make this effective.
 
 {% tabs %}
 
@@ -91,9 +91,9 @@ Me.UseOffice2010SchemeBackColor = True
   
 ## Applying color schemes
 
-Office2010Form now have the option to apply the Aero theme on forms, which provides a glassy effect. This can be done through the [ApplyAeroTheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2010Form.html#Syncfusion_Windows_Forms_Office2010Form_ApplyAeroTheme) property.
+WinForms Office2010Form now have the option to apply the Aero theme on forms, which provides a glassy effect. This can be done through the [ApplyAeroTheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2010Form.html#Syncfusion_Windows_Forms_Office2010Form_ApplyAeroTheme) property.
 
-Aero theme support is available for Office2010Form when used on Windows Vista machines. Previously, ColorSchemes could not be applied to the Office2010Form when the Aero theme was enabled. Now, ColorSchemes can be applied by disabling the Aero theme on Office2010Form.
+Aero theme support is available for WinForms Office2010Form on Windows Vista machines. Previously, ColorSchemes could not be applied when the Aero theme was enabled. Now, ColorSchemes can be applied by disabling the Aero theme.
 
 {% tabs %}
 
