@@ -7,7 +7,7 @@ control: DockingManager
 documentation: ug
 ---
 
-# How to get properties in Windows Forms Docking Manager
+# How to get properties in WinForms Docking Control
 
 To check whether a control is floating or docked, you could use the code snippet given below.
 
@@ -29,9 +29,9 @@ Me.dockingManager1.IsFloating(this.listBox1);
 
 {% endtabs %}
 
-### To get the Dock location
+## To get the Dock location
 
-1. Add a list view and a docking manager in your form.
+1. Add a list view and a WinForms Docking Control in your form.
 2. Enable the list view as a docked control.
 
 {% capture codesnippet1 %}

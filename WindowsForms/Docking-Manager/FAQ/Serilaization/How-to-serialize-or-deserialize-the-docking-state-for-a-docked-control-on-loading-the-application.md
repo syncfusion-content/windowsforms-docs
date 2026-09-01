@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# How to serialize state in Windows Forms Docking Manager
+# How to serialize state in WinForms Docking Control
 
 To serialize or deserialize the docking state on loading the application?  follow the below steps.
 

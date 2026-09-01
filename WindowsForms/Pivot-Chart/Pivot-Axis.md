@@ -77,7 +77,7 @@ Me.pivotChart1.ChartControl.PrimaryYAxis.TitleFont = New Font("Arial", 14)
 
 ![WinForms PivotChart with axis title](Pivot-Axis_images/PivotAxes_image1.png)
 
-*PivotChart displays the axis with title*
+*WinForms Pivot Chart displays the axis with title*
 
 ## Grid line style
 
@@ -150,7 +150,7 @@ Me.chartControl1.PrimaryYAxis.GridLineType.Width = 2F
 
 ![WinForms PivotChart with customized grid line style](Pivot-Axis_images/PivotAxes_image2.png)
 
-*PivotChart with customized style*
+*WinForms Pivot Chart with customized style*
 
 ## Show/Hide axis
 

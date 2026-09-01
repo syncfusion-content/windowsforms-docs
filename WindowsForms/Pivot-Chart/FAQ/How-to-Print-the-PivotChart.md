@@ -9,7 +9,7 @@ documentation: ug
 
 # How to print a Windows Forms Pivot Chart
 
-The PivotChart has built-in support to print the pivotal data. This can be achieved by using the [PrintDocument](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_PrintDocument) method available in the PrintDocument extension of the PivotChart component.
+The WinForms Pivot Chart has built-in support to print the pivotal data. This can be achieved by using the [PrintDocument]https:(//help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_PrintDocument) method available in the PrintDocument extension of the WinForms Pivot Chart component.
 
 {% tabs %}
 

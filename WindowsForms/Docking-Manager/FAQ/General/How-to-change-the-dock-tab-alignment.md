@@ -7,7 +7,7 @@ control: DockingManager
 documentation: ug
 ---
 
-# How to change the dock tab alignment in Docking Manager
+# How to change the dock tab alignment in WinForms Docking Control
 
 The tabs of the Docked window are placed at the bottom, by default. To place the tabs of the docked window at different sides set the property `DockTabAlignment` with desired values such as Top, Bottom, Left, and Right.
 

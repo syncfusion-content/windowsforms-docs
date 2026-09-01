@@ -7,7 +7,7 @@ control: DockingManager
 documentation: ug
 ---
 
-# How to display menu in Windows Forms Docking Manager
+# How to display menu in WinForms Docking Control
 
 This can be done using ShowMenu method.
 

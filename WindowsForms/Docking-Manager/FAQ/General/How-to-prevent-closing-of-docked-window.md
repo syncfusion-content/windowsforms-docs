@@ -7,9 +7,9 @@ control: DockingManager
 documentation: ug
 ---
 
-# How to prevent closing in Windows Forms Docking Manager
+# How to prevent closing in WinForms Docking Control
 
-Closing of docked window can be restricted using `DockVisibilityChanging` event. When the end users tries to change the docking control visibility, this event will be handled. The members of this event is as follows.
+Closing of docked window can be restricted using `DockVisibilityChanging` event. When the end users tries to change the visibility of the child elements, this event will be handled. The members of this event is as follows.
 
 <table>
 <tr>
