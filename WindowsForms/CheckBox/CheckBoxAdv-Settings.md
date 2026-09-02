@@ -7,27 +7,27 @@ control: EditorsPackage
 documentation: ug
 ---
 
-# CheckBoxAdv Settings in Windows Forms CheckBoxAdv
+# Settings in WinForms CheckBox
 
-This section discusses the various states of the [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control and the method of associating values with the states.
+This section discusses the various states of the [WinForms CheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control and the method of associating values with the states.
 
-## CheckBoxAdv States
+## WinForms CheckBox States
 
-The [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) states can be changed by using [CheckState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_CheckState) or [Checked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_Checked) property.
+The [WinForms CheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) states can be changed by using [CheckState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_CheckState) or [Checked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_Checked) property.
 
 <table>
 <tr>
 <th>
-CheckBoxAdv Property</th><th>
+WinForms CheckBox Property</th><th>
 Description</th></tr>
 <tr>
 <td>
 CheckState</td><td>
-Gets or sets the check state of the CheckBox. It includes Unchecked,Checked and Indeterminate options. </td></tr>
+Gets or sets the check state of the WinForms CheckBox. It includes Unchecked,Checked and Indeterminate options. </td></tr>
 <tr>
 <td>
 Checked</td><td>
-Gets or sets the checked state of the CheckBox.</td></tr>
+Gets or sets the checked state of the WinForms CheckBox.</td></tr>
 </table>
 
 {% tabs %}
@@ -50,19 +50,19 @@ Me.checkBoxAdv1.Checked = True
 
 {% seealso %}
 
-[Image Settings of CheckBoxAdv](https://help.syncfusion.com/windowsforms/checkbox/image-settings)
+[Image Settings of WinForms CheckBox](https://help.syncfusion.com/windowsforms/checkbox/image-settings)
 
 {% endseealso %}
 
 
-## CheckBoxAdv Values
+## WinForms CheckBox Values
 
-You can customize the values associated with the various check states of [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control. Both integer and string values can be associated with the check states.
+You can customize the values associated with the various check states of [WinForms CheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control. Both integer and string values can be associated with the check states.
 
 <table>
 <tr>
 <th>
-CheckBoxAdv Properties</th><th>
+WinForms CheckBox Properties</th><th>
 Description</th></tr>
 <tr>
 <td>

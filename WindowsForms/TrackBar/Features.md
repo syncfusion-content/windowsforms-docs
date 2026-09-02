@@ -7,15 +7,15 @@ control: RibbonControlAdv
 documentation: ug
 ---
 
-# Features in Windows Forms TrackBarEx
+# Features in WinForms TrackBar
 
-The TrackBarEx is a new Office2007 control, which has a track bar or a pointer which slides between the minimum value and maximum value specified. The user can drag the track bar along the line and also, the pointer can be placed at a particular point by clicking a position inside this TrackBar. 
+The WinForms TrackBar is a new Office2007 control, which has a track bar or a pointer which slides between the minimum value and maximum value specified. The user can drag the track bar along the line and also, the pointer can be placed at a particular point by clicking a position inside this TrackBar. 
 
 Various Features and Customization options are discussed in the following topics.
 
 ## Button, Slider and Channel Settings 
 
-The properties which controls the size of various components of the TrackBarEx are as follows.
+The properties which controls the size of various components of the WinForms TrackBar are as follows.
 
 <table>
 <tr>
@@ -97,17 +97,17 @@ Me.trackBarEx1.PushedButtonEndColor = System.Drawing.Color.OrangeRed
 
 ![TrackBarEx button hover color](TrackBarEx_images/TrackBarEx_img4.jpeg)
 
-## TrackBar Appearance
+## WinForms TrackBar Appearance
 
 ### FocusRectangle
 
-A focus rectangle for the TrackBarEx control can be shown or hidden using ShowFocusRect property.
+A focus rectangle for the WinForms TrackBar control can be shown or hidden using ShowFocusRect property.
 
 ![TrackBarEx focus rectangle](TrackBarEx_images/TrackBarEx_img5.jpeg)
 
 ### Gradient Start and End Color
 
-By default, the TrackBarEx control has a gradient appearance. The start color and end color for this gradient appearance can be specified using TrackBarGradientStart and TrackBarGradientEnd properties.
+By default, the WinForms TrackBar control has a gradient appearance. The start color and end color for this gradient appearance can be specified using TrackBarGradientStart and TrackBarGradientEnd properties.
 
 {% highlight c# %}
 
@@ -143,7 +143,7 @@ Me.trackBarEx1.Transparent = True
 
 ![TrackBarEx transparent](TrackBarEx_images/TrackBarEx_img7.jpeg)
 
-### TrackBarEx Orientation
+### WinForms TrackBar Orientation
 
 This control has options for vertical and horizontal orientation.
 
@@ -174,9 +174,9 @@ Me.trackBarEx1.Orientation = Orientation.Horizontal
 ![TrackBarEx orientation](TrackBarEx_images/TrackBarEx_img8.jpeg)
 
 
-## TrackBar Value
+## WinForms TrackBar Value
 
-The TrackBarEx control slides between the minimum and maximum values, which are specified in Minimum and Maximum properties. The properties with description are listed in the below table.
+The WinForms TrackBar control slides between the minimum and maximum values, which are specified in Minimum and Maximum properties. The properties with description are listed in the below table.
 
 
 <table>
@@ -187,23 +187,23 @@ Description</th></tr>
 <tr>
 <td>
 Minimum</td><td>
-Gets or sets minimum value of TrackBarEx. Default is 10. </td></tr>
+Gets or sets minimum value of WinForms TrackBar. Default is 10. </td></tr>
 <tr>
 <td>
 Maximum</td><td>
-Gets or sets the maximum value of TrackBarEx. Default is 20. </td></tr>
+Gets or sets the maximum value of WinForms TrackBar. Default is 20. </td></tr>
 <tr>
 <td>
 Value</td><td>
-Gets or sets value of TrackBarEx position i.e. slider position. Default is 5. </td></tr>
+Gets or sets value of WinForms TrackBar position i.e. slider position. Default is 5. </td></tr>
 <tr>
 <td>
 SmallChange</td><td>
-Gets or sets small change of TrackBarEx value while changing. Default is 1. </td></tr>
+Gets or sets small change of WinForms TrackBar value while changing. Default is 1. </td></tr>
 <tr>
 <td>
 LargeChange</td><td>
-Gets or sets large change of TrackBarEx value while changing. Default is 5. </td></tr>
+Gets or sets large change of WinForms TrackBar value while changing. Default is 5. </td></tr>
 <tr>
 <td>
 TimerInterval</td><td>
@@ -243,7 +243,7 @@ Me.trackBarEx1.TimerInterval = 50
 
 {% endhighlight %}
 
-Following are the methods for the TrackBarEx control which gives the respective results based on SmallChange and LargeChange properties.
+Following are the methods for the WinForms TrackBar control which gives the respective results based on SmallChange and LargeChange properties.
 
 
 <table>
@@ -270,9 +270,9 @@ Increases the value by small change specified in SmallChange property. </td></tr
 </table>
 
 
-## TrackBarEx Event
+## WinForms TrackBar Event
 
-Scroll event of the TrackBarEx will be handled whenever the user moves the slider.
+Scroll event of the WinForms TrackBar will be handled whenever the user moves the slider.
 
 {% highlight c# %}
 
