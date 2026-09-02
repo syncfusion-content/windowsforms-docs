@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Response Toolbar in Windows Forms SfAIAssistView | Syncfusion
+title: Response Toolbar in Windows Forms AI AssistView | Syncfusion
 description: Interact with bot responses using copy, regenerate, like, and custom action buttons in the Response Toolbar.
 platform: windowsforms
 control: SfAIAssistView
 documentation: ug
 ---
 
-# 	Response Toolbar in Windows Forms SfAIAssistView
+# 	Response Toolbar in Windows Forms AI AssistView
 
 The [`SfAIAssistView`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.SfAIAssistView.html) control includes a **Response Toolbar** feature that allows users to perform actions on bot responses by clicking action buttons. This feature provides an interactive way for users to engage with AI responses through copy, regenerate, like, and other custom actions.
 
