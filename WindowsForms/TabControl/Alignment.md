@@ -7,7 +7,7 @@ control: TabControlAdv
 documentation: ug
 ---
 
-# Alignment in Windows Forms TabControlAdv
+# Alignment in WinForms TabControl
 
 Alignment of the tabs can be set through the [Alignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_Alignment) and [TabGap](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_TabGap) properties.
 
@@ -38,7 +38,7 @@ Me.tabControlAdv1.TabGap = 2
 
 ## Text alignment
 
-The below properties deals with alignment of the text in the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html):
+The below properties deals with alignment of the text in the [WinForms TabControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html):
 
 * [TextAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_TextAlignment)
 
@@ -69,7 +69,7 @@ Me.tabControlAdv1.TextLineAlignment = System.Drawing.StringAlignment.Near
 
 ## Multiline support
 
-Multiple level of tabs can be created by setting the [Multiline](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_Multiline) property of the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) to `true`, which places the tabs in more than one line. This allows the tabs to be arranged in multiple lines when the tabs exceed the width of the control, with all the TabItems in view.
+Multiple level of tabs can be created by setting the [Multiline](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_Multiline) property of the [WinForms TabControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) to `true`, which places the tabs in more than one line. This allows the tabs to be arranged in multiple lines when the tabs exceed the width of the control, with all the TabItems in view.
 
 The TabItem's text can be placed in more than one line by setting the [MultilineText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_MultilineText) property.
 
@@ -107,7 +107,7 @@ Me.tabControlAdv1.KeepSelectedTabInFrontRow = True
 
 ## RTL support
 
-[TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) allows the TabItems to be drawn from right to left. This can be done by setting the [RightToLeft](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.righttoleft?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_RightToLeft) property to Yes.
+[WinForms TabControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) allows the TabItems to be drawn from right to left. This can be done by setting the [RightToLeft](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.righttoleft?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_RightToLeft) property to Yes.
 
 This property aligns the tabs and the text from right to left which proves to be helpful for the Right-To-Left languages.
 

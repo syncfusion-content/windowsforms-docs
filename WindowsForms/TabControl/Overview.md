@@ -7,16 +7,16 @@ control: TabControlAdv
 documentation: ug
 ---
 
-# About Syncfusion® Windows Forms TabControlAdv Control
+# About Syncfusion® WinForms TabControl Control
 
-The [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) is an advanced form of the standard TabControl that enables an end-user to arrange visual content in a compacted and organized form in less space. It includes all standard TabControl features, plus extensive appearance and configuration options.
+The [WinForms TabControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) is an advanced form of the standard TabControl that enables an end-user to arrange visual content in a compacted and organized form in less space. It includes all standard TabControl features, plus extensive appearance and configuration options.
 
 ![TabControlAdv for Windows Forms with multiline and reorder support](Overview_images/Overview.png)
 
 ## Key features
 
 * **Tab Alignment** - Supports to specify tabs alignment in left, right, top, and bottom directions.
-* **Navigation support** - Supports to navigate through the tabs of the TabControlAdv.
+* **Navigation support** - Supports to navigate through the tabs of the WinForms TabControl.
 * **Editing support** - Provides options to edit the tab header text at run-time.
 * **Icons support** - Supports to add images in the tab header.
 * **Drag and drop** - Supports to rearrange tabs through Drag and Drop functionality. 
