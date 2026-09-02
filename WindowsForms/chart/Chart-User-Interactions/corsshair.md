@@ -44,7 +44,7 @@ chartControl.PrimaryYAxis.ShowCrosshairTooltip = True
 
 ![Crosshair Visible in Windows Forms Chart](../Chart-User-Interactions-Images/crosshair-visible.png)
 
-## Crosshair line
+## Line
 
 The [Line](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartCrosshair.html#Syncfusion_Windows_Forms_Chart_ChartCrosshair_Line) property allows you to customize the appearance of the crosshair lines. By default, this property is initialized with a new instance of the [ChartLineInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLineInfo.html) class.
 
@@ -112,7 +112,7 @@ chartControl.Crosshair.AxisTooltip.TextColor = Color.White
 
 ![Line customization](../Chart-User-Interactions-Images/crosshair-axis-tooltip.png)
 
-## Crosshair event
+## Event
 
 The [AxisTooltipRendering](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartCrosshair.html) event is triggered once for each axis before its crosshair tooltip is displayed.
 

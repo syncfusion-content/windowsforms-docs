@@ -43,7 +43,7 @@ chartControl.ChartToolTip = "Sales chart"
 
 ![Chart tooltip](../Chart-User-Interactions-Images/chart-tooltip.png)
 
-## Chart-area tooltip
+## Chart area tooltip
 
 The [ChartAreaToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_ChartAreaToolTip) property specifies the tooltip displayed when the mouse pointer hovers over the chart plotting area. The default value is `Empty`.
 
@@ -58,7 +58,7 @@ chartControl.ChartArea.ChartAreaToolTip = "Sales data area"
 
 ![Chart-area tooltip](../Chart-User-Interactions-Images/chart-area-tooltip.png)
 
-## Series-point tooltip
+## Points tooltip format
 
 The [PointsToolTipFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_PointsToolTipFormat) property specifies the format of the tooltip displayed when the mouse pointer hovers over a data point in the series. The default value is `"{4}"`, which displays the first Y-value of the data point.
 
@@ -76,18 +76,16 @@ The following code example displays the series name, X-value, and first Y-value 
 
 {% tabs %}
 {% highlight c# %}
-chartControl.Series[0].PointsToolTipFormat =
-    "{0} - X: {3}, Y: {4}";
+chartControl.Series[0].PointsToolTipFormat  "{0} - X: {3}, Y: {4}";
 {% endhighlight %}
 {% highlight vb %}
-chartControl.Series(0).PointsToolTipFormat =
-    "{0} - X: {3}, Y: {4}"
+chartControl.Series(0).PointsToolTipFormat = "{0} - X: {3}, Y: {4}"
 {% endhighlight %}
 {% endtabs %}
 
 ![Series-point tooltip](../Chart-User-Interactions-Images/tooltip-series-point.png)
 
-## Tooltip appearance
+## Tooltip
 
 The [Tooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Tooltip) property provides options to customize the appearance of chart tooltips. By default, the property is initialized with a [ChartTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.UI.Xaml.Charts.ChartTooltip.html) instance.
 
@@ -95,36 +93,30 @@ The following code example demonstrates how to customize chart tooltips.
 
 {% tabs %}
 {% highlight c# %}
-chartControl.Tooltip.BackgroundColor =
-    new BrushInfo(Color.White);
-chartControl.Tooltip.BorderStyle =
-    BorderStyle.FixedSingle;
-chartControl.Tooltip.ForeColor =
-    Color.Black;
-chartControl.Tooltip.Font =
-    new Font("Segoe UI", 10);
-chartControl.Tooltip.Padding =
-    new Padding(4);
+
+chartControl.Tooltip.BackgroundColor = new BrushInfo(Color.White);
+chartControl.Tooltip.BorderStyle = BorderStyle.FixedSingle;
+chartControl.Tooltip.ForeColor = Color.Black;
+chartControl.Tooltip.Font = new Font("Segoe UI", 10);
+chartControl.Tooltip.Padding = new Padding(4);
+
 {% endhighlight %}
 {% highlight vb %}
-chartControl.Tooltip.BackgroundColor =
-    New BrushInfo(Color.White)
-chartControl.Tooltip.BorderStyle =
-    BorderStyle.FixedSingle
-chartControl.Tooltip.ForeColor =
-    Color.Black
-chartControl.Tooltip.Font =
-    New Font("Segoe UI", 10)
-chartControl.Tooltip.Padding =
-    New Padding(4)
+
+chartControl.Tooltip.BackgroundColor = New BrushInfo(Color.White)
+chartControl.Tooltip.BorderStyle = BorderStyle.FixedSingle
+chartControl.Tooltip.ForeColor = Color.Black
+chartControl.Tooltip.Font = New Font("Segoe UI", 10)
+chartControl.Tooltip.Padding = New Padding(4)
+
 {% endhighlight %}
 {% endtabs %}
 
 ![Tooltip appearance](../Chart-User-Interactions-Images/tooltip-appearance.png)
 
-## Fancy toolTip appearance
+## Fancy toolTip
 
-The [FancyToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_FancyToolTip) property provides options to customize the fancy tooltip of a chart series. By default, the property is initialized with a [ChartFancyToolTipInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo.html) instance.
+The [FancyToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_FancyToolTip) property provides options to customize the fancy tooltip displayed when the mouse pointer hovers over a data point. By default, the property is initialized with a [ChartFancyToolTipInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo.html) instance.
 
 The following properties are available in the `ChartFancyToolTipInfo` class to customize the appearance of the fancy tooltip:
 
@@ -150,26 +142,20 @@ The following code example demonstrates how to customize the fancy tooltip.
 
 {% tabs %}
 {% highlight c# %}
+
 chartControl.Series[0].FancyToolTip.Visible = true;
-
 chartControl.Series[0].FancyToolTip.BackColor = Color.LawnGreen;
-
 chartControl.Series[0].FancyToolTip.ForeColor =  Color.Black;
-
 chartControl.Series[0].FancyToolTip.Border.ForeColor = Color.Red;
-
 chartControl.Series[0].FancyToolTip.Border.Width = 1;
 
 {% endhighlight %}
 {% highlight vb %}
+
 chartControl.Series(0).FancyToolTip.Visible = True;
-
 chartControl.Series(0).FancyToolTip.BackColor = Color.LawnGreen
-
 chartControl.Series(0).FancyToolTip.ForeColor = Color.Black
-
 chartControl.Series(0).FancyToolTip.Border.ForeColor = Color.Red
-
 chartControl.Series(0).FancyToolTip.Border.Width = 1
 
 {% endhighlight %}
@@ -180,6 +166,7 @@ chartControl.Series(0).FancyToolTip.Border.Width = 1
 
 ## See also
 
+- [How to display tooltip over Histogram Chart columns](https://help.syncfusion.com/windowsforms/chart/faq/how-to-display-custom-tooltip-over-histogram-chart)
 - [How to display tooltips in WinForms Chart](https://support.syncfusion.com/kb/article/1178/how-to-display-winforms-chart-tooltips)
 - [How to display fancytooltips in WinForms Chart](https://support.syncfusion.com/kb/article/1176/how-to-display-fancytooltips-in-winforms-chart)
 - [How to format tooltips in WinForms Chart series?](https://support.syncfusion.com/kb/article/1226/how-to-format-tooltips-in-winforms-chart-series)
