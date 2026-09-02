@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Data Manipulation in Windows Forms Data Grid | Syncfusion®
 description: Data manipulation in Data Grid supports editing, updating, adding, deleting, and managing records efficiently through built-in data operations.
@@ -259,7 +259,8 @@ Updated
 
 
 ## AddNewRow
-Data Grid provides built-in row (called AddNewRow) to add new records to underlying collection. AddNewRow can be enabled by specifying the position where it should be displayed by setting [SfDataGrid.AddNewRowPosition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AddNewRowPosition) property. When start editing in AddNewRow, the Data Grid control creates an instance for the underlying data object and adds it to underlying collection when editing completed.
+Data Grid provides built-in row (called AddNewRow) to add new records to underlying collection. AddNewRow can be enabled by specifying the position where it should be displayed by setting [SfDataGrid.AddNewRowPosition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AddNewRowPosition) property.
+When start editing in AddNewRow, the Data Grid control creates an instance for the underlying data object and adds it to underlying collection when editing completed.
 
 
 N> The underlying data object must be defined with default constructor. Otherwise, create instance of data object by handling [AddNewRowInitiating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
@@ -457,7 +458,7 @@ Me.sfDataGrid.AddNewRowText = "Click to add new row"
 ### Customizing AddNewRow Text using Default Resource File
 Data Grid allows to customize the watermark text of AddNewRow by changing value of AddNewRowText in Resource Designer. To customize the AddNewRowText, add the default `Syncfusion.SfDataGrid.WinForms.resx` file in **Resources** folder and then customize the value of AddNewRowText.
 
-![Addnewrow resx file customiztion in](DataManipulation_images/AddNewRow_img4.png)
+![Addnewrow resx file customiztion](DataManipulation_images/AddNewRow_img4.png)
 
 ![showing lozalized addnewrow string](DataManipulation_images/AddNewRow_img5.png)
 

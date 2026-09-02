@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Export To PDF in Windows Forms Data Grid | Syncfusion®
 description: Export To PDF in Data Grid supports exporting records with customization options, formatting, styles, and layout settings for PDF documents.
@@ -241,7 +241,8 @@ document.Save("Sample.pdf")
 {% endtabs %}
 
 ## Setting Header and Footer
-Data Grid provides a way to display additional content at the top (Header) or bottom (Footer) of the page while exporting to PDF. This can be achieved by setting [HeaderFooterExporting](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.PdfExportingOptions.html) event in [PdfExportingOptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.PdfExportingOptions.html). Setting [PdfPageTemplateElement](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Pdf.PdfPageTemplateElement.html) to `PdfDocumentTemplate.Top` loads the content at top of the page and setting the `PdfDocumentTemplate.Bottom` loads the content at bottom of the page.
+Data Grid provides a way to display additional content at the top (Header) or bottom (Footer) of the page while exporting to PDF. This can be achieved by setting [HeaderFooterExporting](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.PdfExportingOptions.html) event in [PdfExportingOptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.PdfExportingOptions.html).
+Setting [PdfPageTemplateElement](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Pdf.PdfPageTemplateElement.html) to `PdfDocumentTemplate.Top` loads the content at top of the page and setting the `PdfDocumentTemplate.Bottom` loads the content at bottom of the page.
 
 
 {% tabs %}

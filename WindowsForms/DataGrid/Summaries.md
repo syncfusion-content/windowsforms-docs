@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Summaries in Windows Forms Data Grid | Syncfusion®
 description: Summaries in Data Grid support table and group summaries, custom calculations, and data aggregation for meaningful insights and analysis.
@@ -335,7 +335,7 @@ Me.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow2)
 
 The following screenshot illustrates displaying summary columns with title at same time for `TableSummaryRow`.
 
-![Table summary columns with title in](SfDataGrid_Summaries_UG_images/summaries23.png)
+![Table summary columns with title](SfDataGrid_Summaries_UG_images/summaries23.png)
 
 #### Limitations
 
@@ -360,7 +360,7 @@ Me.sfDataGrid1.Style.TableSummaryRowStyle.Font = New GridFontInfo(New Font("Aria
 {% endhighlight %}
 {% endtabs %}
 
-![Table summary row appearance customization in](SfDataGrid_Summaries_UG_images/summaries5.png)
+![Table summary row appearance customization](SfDataGrid_Summaries_UG_images/summaries5.png)
 
 ### Overriding Table Summary Renderer
 [GridTableSummaryCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Renderers.GridTableSummaryCellRenderer.html) is the cell renderer which renders the table summary row. The table summary row appearance and the summary value can be customized with the `GridTableSummaryCellRenderer`.
@@ -428,7 +428,7 @@ Me.sfDataGrid1.CellRenderers.Add("TableSummary", New CustomGridTableSummaryRende
 {% endhighlight %}
 {% endtabs %}
 
-![Custom table summary cell renderer in](SfDataGrid_Summaries_UG_images/summaries6.png)
+![Custom table summary cell renderer](SfDataGrid_Summaries_UG_images/summaries6.png)
 
 ## Group Summary
 Group summary values calculated based on the records in the group and the summary information will be displayed at the bottom of each group. The group summary row can be viewed by expanding the corresponding group header. Data Grid allows to add any number of group summary rows.
@@ -623,7 +623,7 @@ Me.sfDataGrid1.GroupSummaryRows.Add(groupSummaryRow1)
 
 The following screenshot illustrates displaying summary columns with title at same time for `GroupSummaryRow`.
 
-![Group summary columns with title in](SfDataGrid_Summaries_UG_images/summaries24.png)
+![Group summary columns with title](SfDataGrid_Summaries_UG_images/summaries24.png)
 
 #### Limitations
 
@@ -646,7 +646,7 @@ Me.sfDataGrid1.Style.GroupSummaryRowStyle.Font = New GridFontInfo(New Font("Aria
 {% endhighlight %}
 {% endtabs %}
 
-![Group summary row Appearance customization in](SfDataGrid_Summaries_UG_images/summaries9.png)
+![Group summary row Appearance customization](SfDataGrid_Summaries_UG_images/summaries9.png)
 
 ### Overriding Group Summary Renderer
 [GridGroupSummaryCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Renderers.GridGroupSummaryCellRenderer.html) is the cell renderer which renders the group summary row. The group summary row appearance and the summary value can be customized with the `GridGroupSummaryCellRenderer`.
@@ -714,7 +714,7 @@ Me.sfDataGrid1.CellRenderers.Add("GroupSummary", New CustomGridGroupSummaryRende
 {% endhighlight %}
 {% endtabs %}
 
-![Custom group summary cell renderer in](SfDataGrid_Summaries_UG_images/summaries10.png)
+![Custom group summary cell renderer](SfDataGrid_Summaries_UG_images/summaries10.png)
 
 ## Caption Summary
 Data Grid provides built-in support for caption summary. The caption summary value calculated based on the records in a group and the summary information will be displayed in the caption of group. Below screen shot shows the built-in caption summary of Group.
@@ -739,7 +739,7 @@ this.sfDataGrid1.GroupCaptionTextFormat = "{Key} : {ItemsCount}";
 Me.sfDataGrid1.GroupCaptionTextFormat = "{Key} : {ItemsCount}"
 {% endhighlight %}
 {% endtabs %}
-![Custom group summary format in](SfDataGrid_Summaries_UG_images/summaries12.png)
+![Custom group summary format](SfDataGrid_Summaries_UG_images/summaries12.png)
 
 ### Displaying Caption Summary for Column
 
@@ -942,7 +942,7 @@ Me.sfDataGrid1.CaptionSummaryRow = captionSummaryRow
 
 The following screenshot illustrates displaying summary columns with title at same time for `CaptionSummaryRow`.
 
-![Caption summary columns with title in](SfDataGrid_Summaries_UG_images/summaries25.png)
+![Caption summary columns with title](SfDataGrid_Summaries_UG_images/summaries25.png)
 
 #### Limitations
 
@@ -964,7 +964,7 @@ Me.sfDataGrid1.Style.CaptionSummaryRowStyle.Font = New GridFontInfo(New Font("Ar
 {% endhighlight %}
 {% endtabs %}
 
-![Group caption appearance customization in](SfDataGrid_Summaries_UG_images/summaries15.png)
+![Group caption appearance customization](SfDataGrid_Summaries_UG_images/summaries15.png)
 
 ### Overriding Caption Summary Renderer
 [GridCaptionSummaryCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Renderers.GridCaptionSummaryCellRenderer.html) is the cell renderer which renders the caption summary row. The caption summary row appearance and the summary value can be customized with the `GridCaptionSummaryCellRender`.
@@ -1038,7 +1038,7 @@ Me.sfDataGrid1.CellRenderers.Add("CaptionSummary", New CustomGridCaptionSummaryR
 {% endhighlight %}
 {% endtabs %}
 
-![Custom group caption summary cell renderer in](SfDataGrid_Summaries_UG_images/summaries16.png)
+![Custom group caption summary cell renderer](SfDataGrid_Summaries_UG_images/summaries16.png)
 
 ## On-demand summary calculation for group and caption summary
 
@@ -1229,7 +1229,8 @@ Me.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow1)
 
 ## Calculate summary for selected rows
 
-Data Grid calculates the summaries for all records by default. You can calculate the summaries for selected records by using the [SfDataGrid.SummaryCalculationUnit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SummaryCalculationUnit) or [GridSummaryRow.CalculationUnit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_CalculationUnit) property. This is applicable for all type of summary rows such as table, caption and group summary.
+Data Grid calculates the summaries for all records by default. You can calculate the summaries for selected records by using the [SfDataGrid.SummaryCalculationUnit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SummaryCalculationUnit) or [GridSummaryRow.CalculationUnit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_CalculationUnit) property.
+This is applicable for all type of summary rows such as table, caption and group summary.
 
 
 In the below code snippet, the summaries for selected records are calculated for the top positioned `TableSummaryRow` and the summaries for all records are calculated for the bottom positioned `TableSummaryRow`.
@@ -1318,7 +1319,8 @@ N> The `GridSummaryRow.CalculationUnit` takes higher priority than the `SfDataGr
 `SummaryCalculationUnit.SelectedRows` or `SummaryCalculationUnit.Mixed` will not be considered for cell selection.
 
 ## Custom Summaries
-Data Grid allows to implement own aggregate functions, when the built-in aggregate functions don’t meet the requirement. The summary values can be calculated based on custom logic using [GridSummaryColumn.CustomAggregate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryColumn.html#Syncfusion_WinForms_DataGrid_GridSummaryColumn_CustomAggregate) property.
+Data Grid allows to implement own aggregate functions, when the built-in aggregate functions don’t meet the requirement.
+The summary values can be calculated based on custom logic using [GridSummaryColumn.CustomAggregate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryColumn.html#Syncfusion_WinForms_DataGrid_GridSummaryColumn_CustomAggregate) property.
 
 
 ### Implementing Custom Aggregate

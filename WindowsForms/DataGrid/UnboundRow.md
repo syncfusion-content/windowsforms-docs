@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Unbound Rows in Windows Forms Data Grid | Syncfusion®
 description: Unbound Rows in Data Grid display custom rows for calculations, summaries, and additional information independent of the data source.
@@ -115,7 +115,8 @@ Below screen shot shows different unbound rows placed in all possible positions,
 ![showing positions of unbound row](UnboundRow_images/windowsforms-datagrid-positioning-unbound-row.png)
 
 ## Populating Data for Unbound Rows
-The data for the unbound row can populated by handling [QueryUnboundRowInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event of Data Grid. This event occurs for each cell in unbound row whenever the row gets refreshed. [QueryUnboundRowInfoArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.QueryUnboundRowInfoArgs.html) of the `QueryUnboundRowInfo` event provides information about the cell triggered this event. The [QueryUnboundRowInfoArgs.Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.QueryUnboundRowInfoArgs.html#Syncfusion_WinForms_DataGrid_Events_QueryUnboundRowInfoArgs_Value) property can be get or set based on the [UnboundAction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.QueryUnboundRowInfoArgs.html#Syncfusion_WinForms_DataGrid_Events_QueryUnboundRowInfoArgs_UnboundAction). If `UnboundAction` is `QueryData` then the value can set for display. If the `UnboundAction` is `CommitData` then able to get the edited value.
+The data for the unbound row can populated by handling [QueryUnboundRowInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event of Data Grid. This event occurs for each cell in unbound row whenever the row gets refreshed. [QueryUnboundRowInfoArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.QueryUnboundRowInfoArgs.html) of the `QueryUnboundRowInfo` event provides information about the cell triggered this event.
+The [QueryUnboundRowInfoArgs.Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.QueryUnboundRowInfoArgs.html#Syncfusion_WinForms_DataGrid_Events_QueryUnboundRowInfoArgs_Value) property can be get or set based on the [UnboundAction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.QueryUnboundRowInfoArgs.html#Syncfusion_WinForms_DataGrid_Events_QueryUnboundRowInfoArgs_UnboundAction). If `UnboundAction` is `QueryData` then the value can set for display. If the `UnboundAction` is `CommitData` then able to get the edited value.
 
 {% tabs %}
 {% highlight c# %}
@@ -252,7 +253,8 @@ sfDataGrid.Style.UnboundRowStyle.TextColor = Color.Red
 ![Unbound row appearance customization in](UnboundRow_images/windowsforms-datagrid-appearance-customization.png)
 
 ## Customizing the Unbound Row's Behavior
-Data Grid allows to customize the operations like key navigation and UI related interactions by overriding the corresponding renderer associated with the unbound row cell. Each renderer have set of virtual methods for handling the behaviors. Creating new renderers also supported. The renderer of unbound row cell defined by [QueryUnboundRowInfoArgs.CellType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.QueryUnboundRowInfoArgs.html#Syncfusion_WinForms_DataGrid_Events_QueryUnboundRowInfoArgs_CellType) property in the `QueryUnboundRowInfo` event. If the `QueryUnboundRowInfoArgs.CellType` not defined then the UnboundRowCell set as default cell type.
+Data Grid allows to customize the operations like key navigation and UI related interactions by overriding the corresponding renderer associated with the unbound row cell. Each renderer have set of virtual methods for handling the behaviors. Creating new renderers also supported.
+The renderer of unbound row cell defined by [QueryUnboundRowInfoArgs.CellType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.QueryUnboundRowInfoArgs.html#Syncfusion_WinForms_DataGrid_Events_QueryUnboundRowInfoArgs_CellType) property in the `QueryUnboundRowInfo` event. If the `QueryUnboundRowInfoArgs.CellType` not defined then the UnboundRowCell set as default cell type.
 
 
 ### Overriding Existing CellType

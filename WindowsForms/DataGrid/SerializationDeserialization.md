@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Serialization in Windows Forms Data Grid | Syncfusion®
 description: Serialization in Data Grid supports saving and restoring grid settings, layouts, and configurations through serialization and deserialization.

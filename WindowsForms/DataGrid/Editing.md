@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Editing in Windows Forms Data Grid | Syncfusion®
 description: Editing in Data Grid supports cell and record editing, customizable edit modes, event-based validation, and programmatic data updates.
@@ -52,7 +52,8 @@ Me.sfDataGrid.EditMode = EditMode.DoubleClick
 {%endtabs%}
 
 ## Cursor Placement
-When the cell enters into edit mode, cursor is placed based on [EditorSelectionBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_EditorSelectionBehavior) property. The following types of [EditorSelectionBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Enums.EditorSelectionBehavior.html) is available,
+When the cell enters into edit mode, cursor is placed based on [EditorSelectionBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_EditorSelectionBehavior) property.
+The following types of [EditorSelectionBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Enums.EditorSelectionBehavior.html) is available,
 
 
 * `Default` – Moves the cursor to the clicked position on the text.

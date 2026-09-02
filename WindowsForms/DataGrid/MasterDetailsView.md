@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Master-Details View in Windows Forms Data Grid | Syncfusion®
 description: Master-Details View in Data Grid displays hierarchical data through nested tables and relationships for organized data navigation and management.

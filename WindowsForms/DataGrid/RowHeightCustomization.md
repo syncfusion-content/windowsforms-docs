@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Row Height Customization in Windows Forms Data Grid | Syncfusion®
 description: Row Height Customization in Data Grid customizes row heights dynamically to improve data display, readability, and user experience.
@@ -73,7 +73,8 @@ End Sub
 ![Height for the Specific Row](RowHeightCustomization_images/RowHeightCustomization_img2.jpeg)
 
 ## Fit Row Height based on its Content
-The row height can be fit based on its content in [QueryRowHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event using [GetAutoRowHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.AutoSizeController.html#Syncfusion_WinForms_DataGrid_AutoSizeController_GetAutoRowHeight_System_Int32_Syncfusion_WinForms_DataGrid_RowAutoFitOptions_System_Int32__) method. This improves the readability of the content and it does not affect the loading performance of the [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (Data Grid) as the `QueryRowHeight` event triggered for rows in on-demand. `GetAutoRowHeight` method returns true when the row height is calculated for record & header rows and returns false for other rows. Calculated height based on content set to the out parameter and you can assign the calculated height to the Height property of[QueryRowHeightEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.QueryRowHeightEventArgs.html).
+The row height can be fit based on its content in [QueryRowHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event using [GetAutoRowHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.AutoSizeController.html#Syncfusion_WinForms_DataGrid_AutoSizeController_GetAutoRowHeight_System_Int32_Syncfusion_WinForms_DataGrid_RowAutoFitOptions_System_Int32__) method. This improves the readability of the content and it does not affect the loading performance of the [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (Data Grid) as the `QueryRowHeight` event triggered for rows in on-demand.
+`GetAutoRowHeight` method returns true when the row height is calculated for record & header rows and returns false for other rows. Calculated height based on content set to the out parameter and you can assign the calculated height to the Height property of[QueryRowHeightEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.QueryRowHeightEventArgs.html).
 
 
 {% tabs %}
@@ -174,7 +175,8 @@ End Sub
 ## Reset the RowHeight at Runtime
 The row height of particular or all rows in View can be reset at runtime to get the updated height from `QueryRowHeight` event handler by using the [InvalidateRowHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_InvalidateRowHeight_System_Int32_) and [Reset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.RowHeightManager.html#Syncfusion_WinForms_DataGrid_RowHeightManager_Reset) methods.
 
-`InvalidateRowHeight` – Resets the height of particular row. `RowHeightManager.Reset` – Resets the height for all rows in View.
+`InvalidateRowHeight` – Resets the height of particular row.
+`RowHeightManager.Reset` – Resets the height for all rows in View.
 
 
 {% tabs %}
@@ -199,7 +201,8 @@ Me.sfDataGrid.TableControl.Invalidate()
 {% endtabs %}
 
 ### Update RowHeight while Editing 
-The row height of the currently edited row can be updated based on its content by using the [CurrentCellEndEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event. In this event call the `InvalidateRowHeight` to reset the current row height. Then call the `Invalidate` method of [TableControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.TableControl.html) to refresh the view. Now the `QueryRowHeight` event is called again for edited row alone and row height is calculated based on edited content.
+The row height of the currently edited row can be updated based on its content by using the [CurrentCellEndEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+In this event call the `InvalidateRowHeight` to reset the current row height. Then call the `Invalidate` method of [TableControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.TableControl.html) to refresh the view. Now the `QueryRowHeight` event is called again for edited row alone and row height is calculated based on edited content.
 
 
 {% tabs %}

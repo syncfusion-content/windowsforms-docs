@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Conditional Styling in Windows Forms Data Grid | Syncfusion®
 description: Conditional styling in Data Grid customizes cell and row appearance based on specific conditions, improving data visualization and readability.
@@ -613,7 +613,8 @@ End Sub
 
 ## Highlighting the Newly Added Row 
 
-The newly added records in Data Grid can be highlighted by changing its Background or Foreground color. For that add a new Boolean property in underling data source and set it as true for newly added records in [SfDataGrid.AddNewRowInitiating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+The newly added records in Data Grid can be highlighted by changing its Background or Foreground color. 
+For that add a new Boolean property in underling data source and set it as true for newly added records in [SfDataGrid.AddNewRowInitiating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
 
 
 {% tabs %}

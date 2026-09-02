@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Column Types in Windows Forms Data Grid | Syncfusion®
 description: Column types in Data Grid support displaying and editing text, numeric, date, checkbox, image, hyperlink, and other data formats.
@@ -307,7 +307,7 @@ Me.sfDataGrid.Columns("ProductName").HeaderStyle.TextColor = Color.White
 {% endhighlight %}
 {% endtabs %}
 
-![shows to apply the cell style to the columns in](ColumnTypes_images/ColumnTypes_img2.png)
+![shows to apply the cell style to the columns](ColumnTypes_images/ColumnTypes_img2.png)
 
 ### Disable Column
 
@@ -396,7 +396,7 @@ Me.sfDataGrid1.Columns.Add(New GridNumericColumn() With {.MappingName = "Discoun
 {% endhighlight %}
 {% endtabs %}
 
-![shows to display the percent format mode of numeric column in](ColumnTypes_images/ColumnTypes_img3.png)
+![shows to display the percent format mode of numeric column](ColumnTypes_images/ColumnTypes_img3.png)
 
 #### Currency
 
@@ -416,7 +416,7 @@ Me.sfDataGrid1.Columns.Add(New GridNumericColumn() With {.MappingName = "UnitPri
 {% endhighlight %}
 {% endtabs %}
 
-![shows to display the currency format mode of numeric column in](ColumnTypes_images/ColumnTypes_img4.png)
+![shows to display the currency format mode of numeric column](ColumnTypes_images/ColumnTypes_img4.png)
 
 N> By default, `GridNumericColumn` displays the record with `Numeric` format.
 
@@ -675,12 +675,14 @@ Sets the custom pattern for date and time value.
 
 ### Displaying Null Value
 
-[GridDateTimeColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridDateTimeColumn.html) provides support to restrict or allow null value in columns based on [AllowNull](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridDateTimeColumn.html#Syncfusion_WinForms_DataGrid_GridDateTimeColumn_AllowNull) property. Instead of displaying null values, any default date time value can be displayed by using[NullValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridDateTimeColumn.html#Syncfusion_WinForms_DataGrid_GridDateTimeColumn_NullValue) property. The `NullValue` property won’t work, when the `AllowNull` property is false.
+[GridDateTimeColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridDateTimeColumn.html) provides support to restrict or allow null value in columns based on [AllowNull](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridDateTimeColumn.html#Syncfusion_WinForms_DataGrid_GridDateTimeColumn_AllowNull) property. Instead of displaying null values, any default date time value can be displayed by using[NullValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridDateTimeColumn.html#Syncfusion_WinForms_DataGrid_GridDateTimeColumn_NullValue) property.
+The `NullValue` property won’t work, when the `AllowNull` property is false.
 
 
 ### Auto Increment
 
-[GridDateTimeColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridDateTimeColumn.html) allows end-user to increment or decrement the value when `MouseWheel`  by setting the [AllowValueChangeOnMouseWheel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridDateTimeColumn.html#Syncfusion_WinForms_DataGrid_GridDateTimeColumn_AllowValueChangeOnMouseWheel) property to true. The value can also be changed by pressing up and down arrow keys when the [InterceptArrowKeys](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridDateTimeColumn.html#Syncfusion_WinForms_DataGrid_GridDateTimeColumn_InterceptArrowKeys) property is true.
+[GridDateTimeColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridDateTimeColumn.html) allows end-user to increment or decrement the value when `MouseWheel`  by setting the [AllowValueChangeOnMouseWheel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridDateTimeColumn.html#Syncfusion_WinForms_DataGrid_GridDateTimeColumn_AllowValueChangeOnMouseWheel) property to true.
+The value can also be changed by pressing up and down arrow keys when the [InterceptArrowKeys](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridDateTimeColumn.html#Syncfusion_WinForms_DataGrid_GridDateTimeColumn_InterceptArrowKeys) property is true.
 
 
 ### Setting Date Time Value Range
@@ -723,7 +725,7 @@ TryCast(Me.sfDataGrid1.Columns("IsClosed"), GridCheckBoxColumn).AllowText = True
 {% endhighlight %}
 {% endtabs %}
 
-![shows to display the text of checkbox column in](ColumnTypes_images/ColumnTypes_img9.png)
+![shows to display the text of checkbox column](ColumnTypes_images/ColumnTypes_img9.png)
 
 ### Check Box on Header
 
@@ -738,11 +740,11 @@ TryCast(Me.sfDataGrid1.Columns("IsClosed"), GridCheckBoxColumn).AllowCheckBoxOnH
 {% endhighlight %}
 {% endtabs %}
 
-![shows to display the header text of checkbox column in](ColumnTypes_images/ColumnTypes_img10.png)
+![shows to display the header text of checkbox column](ColumnTypes_images/ColumnTypes_img10.png)
 
 All the checkboxes in a column will be checked/unchecked by clicking on the CheckBox in the header.
 
-![shows to display the all checked/unchecked by clicking on the checkbox in the header in](ColumnTypes_images/ColumnTypes_img22.png)
+![shows to display the all checked/unchecked by clicking on the checkbox in the header](ColumnTypes_images/ColumnTypes_img22.png)
 
 By default, enabling the [AllowCheckBoxOnHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridCheckBoxColumn.html#Syncfusion_WinForms_DataGrid_GridCheckBoxColumn_AllowCheckBoxOnHeader) property will display the checkbox with text on the header cell of [GridCheckBoxColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridCheckBoxColumn.html). The text in the header cell can be disabled by setting empty value for the [HeaderText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_HeaderText) property of the column.
 
@@ -757,7 +759,7 @@ Me.sfDataGrid1.Columns("IsClosed").HeaderText = String.Empty
 {% endhighlight %}
 {% endtabs %}
 
-![shows to display the header text as disable of checkbox column in](ColumnTypes_images/ColumnTypes_img23.png)
+![shows to display the header text as disable of checkbox column](ColumnTypes_images/ColumnTypes_img23.png)
 
 ### Customizing the Check Box Value
 
@@ -827,7 +829,7 @@ Me.sfDataGrid1.Style.CheckBoxStyle.UncheckedBorderColor = Color.DarkSlateGray
 {% endhighlight %}
 {% endtabs %}
 
-![shows to display the changed the appearance of checkbox column in](ColumnTypes_images/ColumnTypes_img12.png)
+![shows to display the changed the appearance of checkbox column](ColumnTypes_images/ColumnTypes_img12.png)
 
 #### Conditional Styling
 
@@ -860,7 +862,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![shows to display the changed the appearance of checkbox column based on the condition in](ColumnTypes_images/ColumnTypes_img13.png)
+![shows to display the changed the appearance of checkbox column based on the condition](ColumnTypes_images/ColumnTypes_img13.png)
 
 ### Canceling the check box state change
 
@@ -908,7 +910,7 @@ The Data Grid triggers the [CellComboBoxSelectionChanged](https://help.syncfusio
 *	[SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.CellComboBoxSelectionChangedEventArgs.html#Syncfusion_WinForms_DataGrid_Events_CellComboBoxSelectionChangedEventArgs_SelectedIndex) : Returns the index of selected item.
 *	[SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.CellComboBoxSelectionChangedEventArgs.html#Syncfusion_WinForms_DataGrid_Events_CellComboBoxSelectionChangedEventArgs_SelectedItem)	: Returns the selected item from drop-down list.
 
-![shows to display GridComboBoxColumn in](ColumnTypes_images/ComboBox_img1.png)
+![shows to display GridComboBoxColumn](ColumnTypes_images/ComboBox_img1.png)
 
 ### Opening drop-down popup on single-click
 Drop-down of the combo-box column can be shown on single click by using the custom combo-box renderer. 
@@ -956,7 +958,7 @@ sfDataGrid.Columns.Add(New GridComboBoxColumn() With {.MappingName = "ShipCityID
 {% endhighlight %}
 {% endtabs %}
 
-![shows to display the customizing groupcaptiontext based on the displaymemberpath in](ColumnTypes_images/ComboBox_img2.png)
+![shows to display the customizing groupcaptiontext based on the displaymemberpath](ColumnTypes_images/ComboBox_img2.png)
 
 ### Loading different DataSources for each row of GridComboBoxColumn
 Different data sources can be loaded for each row of the [GridComboBoxColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridComboBoxColumn.html) by using the [DataSourceSelector](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridComboBoxColumn.html#Syncfusion_WinForms_DataGrid_GridComboBoxColumn_IDataSourceSelector) property.
@@ -1041,7 +1043,7 @@ sfDataGrid.Columns.Add(New GridComboBoxColumn() With {.MappingName = "ShipCityID
 {% endhighlight %}
 {% endtabs %}
 
-![shows to apply the edit mode of combobox column in](ColumnTypes_images/ComboBox_img5.png)
+![shows to apply the edit mode of combobox column](ColumnTypes_images/ComboBox_img5.png)
 
 ### Auto completing on edit mode
 The auto completion on the edit mode can be enabled by using the [GridComboBoxColumn.AutoCompleteMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridComboBoxColumn.html#Syncfusion_WinForms_DataGrid_GridComboBoxColumn_AutoCompleteMode) property. Default value is `None`. Following types of auto complete modes are available,
@@ -1122,7 +1124,7 @@ TryCast(Me.sfDataGrid1.Columns("ProductName"), GridButtonColumn).DefaultButtonTe
 {% endhighlight %}
 {% endtabs %}
 
-![shows to display the default data as button column in](ColumnTypes_images/ColumnTypes_img15.png)
+![shows to display the default data as button column](ColumnTypes_images/ColumnTypes_img15.png)
 
 ### Adding Image for the Button Column
 
@@ -1161,7 +1163,7 @@ The text and image within the [GridButtonColumn](https://help.syncfusion.com/cr/
   Me.sfDataGrid1.Columns.Add(New GridButtonColumn() With {.MappingName = "ProductName", .HeaderText = "Product Name", .Image = SystemIcons.Information.ToBitmap(), .ImageSize = New Size(16, 16), .TextImageRelation = TextImageRelation.ImageBeforeText})
 {% endhighlight %}
 {% endtabs %}
-![shows to display the column data and images as button column in](ColumnTypes_images/ColumnTypes_img16.png)
+![shows to display the column data and images as button column](ColumnTypes_images/ColumnTypes_img16.png)
 
 ### Appearance
 
@@ -1182,7 +1184,7 @@ Me.sfDataGrid1.Style.ButtonStyle.BorderColor = Pens.DarkRed
 {% endhighlight %}
 {% endtabs %}
 
-![shows to display the customize the appearance of button column in](ColumnTypes_images/ColumnTypes_img17.png)
+![shows to display the customize the appearance of button column](ColumnTypes_images/ColumnTypes_img17.png)
 
 ### Deleting the selected records by button click
 
@@ -1259,7 +1261,7 @@ Me.sfDataGrid1.Style.HyperlinkStyle.HoveredLinkColor = Color.Red
 {% endhighlight %}
 {% endtabs %}
 
-![shows to display the customize the appearance of hyperlink column in](ColumnTypes_images/ColumnTypes_img18.png)
+![shows to display the customize the appearance of hyperlink column](ColumnTypes_images/ColumnTypes_img18.png)
 
 ### Canceling the Navigation
 
@@ -1442,7 +1444,7 @@ Private Sub SfDataGrid1_QueryImageCellStyle(ByVal sender As Object, ByVal e As Q
 End Sub
 {% endhighlight %}
 {% endtabs %}
-![shows to display the customize the appearance of image column in](ColumnTypes_images/ColumnTypes_img19.png)
+![shows to display the customize the appearance of image column](ColumnTypes_images/ColumnTypes_img19.png)
 
 ## GridProgressBarColumn
 
@@ -1983,7 +1985,8 @@ sfDataGrid.Columns.Add(New GridMaskColumn() With {.MappingName = "ContactNumber"
 
 You can display the data along with separators specifying date, time and decimals at runtime using the [GridMaskColumn.DateSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridMaskColumn.html#Syncfusion_WinForms_DataGrid_GridMaskColumn_DateSeparator), [GridMaskColumn.TimeSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridMaskColumn.html#Syncfusion_WinForms_DataGrid_GridMaskColumn_TimeSeparator) and [GridMaskColumn.DecimalSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridMaskColumn.html#Syncfusion_WinForms_DataGrid_GridMaskColumn_DecimalSeparator) properties. Separators can be specified in the mask character itself.
 
-For example, if you want to display the user data in date time format say 'mm/dd/yy', the mask character should be '##/##/##’. If you want to display the date time as ‘mm-dd-yy’, change the `GridMaskColumn.DateSeparator` property from ‘/’ to ‘-‘.
+For example, if you want to display the user data in date time format say 'mm/dd/yy', the mask character should be '##/##/##’.
+If you want to display the date time as ‘mm-dd-yy’, change the `GridMaskColumn.DateSeparator` property from ‘/’ to ‘-‘.
 
 
 <table>
@@ -2130,7 +2133,8 @@ Data Grid allows to create own column by overriding predefined column type and t
 
 ### Creating Column from Existing Column
 
-New column type can be created by overriding the predefined column types in Data Grid. In the below code snippet, `GridCurrencyColumn` column created from `GridNumericColumn`.
+New column type can be created by overriding the predefined column types in Data Grid.
+In the below code snippet, `GridCurrencyColumn` column created from `GridNumericColumn`.
 
 
 {% tabs %}
@@ -2208,7 +2212,8 @@ Me.sfDataGrid1.Columns.Add(New GridCurrencyColumn() With {.MappingName = "UnitPr
 
 ### Customize Column Renderer
 
-Data Grid allows to customize the column related operations like key navigation and UI related interactions by overriding the corresponding renderer associated with the column. Each column has its own renderer with set of virtual methods for handling the column level operations. Below table lists the available cell types for columns and its renderers.
+Data Grid allows to customize the column related operations like key navigation and UI related interactions by overriding the corresponding renderer associated with the column. Each column has its own renderer with set of virtual methods for handling the column level operations. 
+Below table lists the available cell types for columns and its renderers.
 
 
 <table>

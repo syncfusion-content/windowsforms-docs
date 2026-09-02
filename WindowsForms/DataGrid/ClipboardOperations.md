@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Clipboard Operations in Windows Forms Data Grid | Syncfusion®
 description: Clipboard Operations in Data Grid enables copy, cut, and paste actions with configurable settings, events, and custom clipboard behavior.
@@ -46,9 +46,8 @@ Me.sfDataGrid1.CopyOption = CopyOptions.CopyData Or CopyOptions.IncludeHeaders
 
 ## Paste
 
-Paste operation works based on [PasteOption](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_PasteOption) property. 
+Paste operation works based on [PasteOption](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_PasteOption) property.
 PasteOption provides the following options,
-
 
 [None](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_PasteOption) – Disables paste in Data Grid.
 
@@ -212,7 +211,8 @@ End Sub
 
 ### Copy
 
-Data Grid allows to change the clipboard value while copying the values to the clipboard by handling the [CopyCellContent](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event. The below code example changes the clipboard value as `100` instead of cell value `10003` in the control while copying the record.
+Data Grid allows to change the clipboard value while copying the values to the clipboard by handling the [CopyCellContent](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event. 
+The below code example changes the clipboard value as `100` instead of cell value `10003` in the control while copying the record.
 
 
 {% tabs %}

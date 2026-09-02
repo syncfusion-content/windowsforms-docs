@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Merge Cells in Windows Forms Data Grid | Syncfusion®
 description: Merge cells in Data Grid combines adjacent cells with matching values, enhancing data presentation, readability, and visual organization.
@@ -70,7 +70,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Cells merged horizontally in](Merging_images/Merging1.png)
+![Cells merged horizontally](Merging_images/Merging1.png)
 
 ### Merging cells vertically by fixed range
 A range of rows for a particular column can be merged by setting the row range using the [Top](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.CoveredCellInfo.html#Syncfusion_WinForms_DataGrid_CoveredCellInfo_Top) and [Bottom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.CoveredCellInfo.html#Syncfusion_WinForms_DataGrid_CoveredCellInfo_Bottom) properties of [CoveredCellInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.CoveredCellInfo.html).
@@ -106,7 +106,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Cells merged Vertically in](Merging_images/Merging2.png)
+![Cells merged Vertically](Merging_images/Merging2.png)
 
 ### Merging range of cells
 A range of rows and columns can be merged by using the [Left](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.CoveredCellInfo.html#Syncfusion_WinForms_DataGrid_CoveredCellInfo_Left), [Right](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.CoveredCellInfo.html#Syncfusion_WinForms_DataGrid_CoveredCellInfo_Right), [Top](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.CoveredCellInfo.html#Syncfusion_WinForms_DataGrid_CoveredCellInfo_Top) and [Bottom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.CoveredCellInfo.html#Syncfusion_WinForms_DataGrid_CoveredCellInfo_Bottom) properties of [CoveredCellInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.CoveredCellInfo.html).
@@ -138,10 +138,11 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Merging range of cells in](Merging_images/Merging3.png)
+![Merging range of cells](Merging_images/Merging3.png)
 
 ## Merging cells based on the content
-The redundant data of adjacent cells in a row or a column can be merged by using the [QueryCoveredRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event. In the following code, the `GetRange` method returns the range of a cell based on the adjacent cells content.
+The redundant data of adjacent cells in a row or a column can be merged by using the [QueryCoveredRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+In the following code, the `GetRange` method returns the range of a cell based on the adjacent cells content.
 
 
 {% tabs %}

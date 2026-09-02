@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: About Syncfusion® Windows Forms Data Grid Control| Syncfusion®
 canonical_url: "https://www.syncfusion.com/winforms-ui-controls/datagrid"
@@ -10,7 +10,8 @@ documentation: ug
 
 # About Syncfusion® Windows Forms Data Grid Control
 
-The [Windows Forms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (WinForms Data Grid) control is used to display collection of data in rows and columns. The Data Grid control includes editing and data shaping features (Sorting, grouping, filtering and etc) that allows the end users to easily manage the data. Following are the key features of Data Grid control
+The [Windows Forms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) control is used to display collection of data in rows and columns. The Data Grid control includes editing and data shaping features (Sorting, grouping, filtering and etc) that allows the end users to easily manage the data.
+Following are the key features of Data Grid control
 
 
 * Data binding – Supports to bind different types of data sources.
@@ -40,7 +41,7 @@ Syncfusion<sup>®</sup> WinForms suite comes up with following different grid na
 
 ### Data Grid
 
-Windows Forms Data Grid (the control) is designed based on column-oriented architecture that provides support to customize the grid easily. It is used to display collection of data in rows and columns. The Data Grid control includes editing and data shaping features (sorting, grouping, filtering, etc.,) that allows the end users to easily manage the data. It also supports printing and exporting to Excel and PDF file formats.
+Windows Forms Data Grid is designed based on column-oriented architecture that provides support to customize the grid easily. It is used to display collection of data in rows and columns. The Data Grid control includes editing and data shaping features (sorting, grouping, filtering, etc.,) that allows the end users to easily manage the data. It also supports printing and exporting to Excel and PDF file formats.
 
 ### GridGroupingControl
 
@@ -224,7 +225,7 @@ Data Grid enables fitting the width of the cell based on its content on demand f
 IEditableObjectSupport
 </td>
 <td>
-Windows Forms Data Grid (the control) supports to roll back the changes when you press Esc Key by implementing IEditableObject interface. For more information about IEditableObject, refer {{'[IEditableObject](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject?view=netframework-4.7.2)'| markdownify }}.
+Windows Forms Data Grid supports to roll back the changes when you press Esc Key by implementing IEditableObject interface. For more information about IEditableObject, refer {{'[IEditableObject](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject?view=netframework-4.7.2)'| markdownify }}.
 
 </td>
 </tr>
@@ -233,7 +234,7 @@ Windows Forms Data Grid (the control) supports to roll back the changes when you
 Style customization
 </td>
 <td>
-Windows Forms Data Grid (the control) control provides extensive support to customize the styles of cells and rows. To know more about styling in the control, refer {{'[here](https://help.syncfusion.com/windowsforms/datagrid/styling)'| markdownify }}.
+Windows Forms Data Grid control provides extensive support to customize the styles of cells and rows. To know more about styling in the control, refer {{'[here](https://help.syncfusion.com/windowsforms/datagrid/styling)'| markdownify }}.
 
 </td>
 </tr>
@@ -242,7 +243,7 @@ Windows Forms Data Grid (the control) control provides extensive support to cust
 Exporting to Excel
 </td>
 <td>
-Windows Forms Data Grid (the control) control provides support to Export data to Excel and returns an ExcelEngine that contains the exported workbook. the control Exporting is faster than GridGroupingControl. It takes very less time to export the huge amounts of data. To know more about exporting the control to Excel, refer {{'[here](https://help.syncfusion.com/windowsforms/datagrid/exporttoexcel)'| markdownify }}.
+Windows Forms Data Grid control provides support to Export data to Excel and returns an ExcelEngine that contains the exported workbook. the control Exporting is faster than GridGroupingControl. It takes very less time to export the huge amounts of data. To know more about exporting the control to Excel, refer {{'[here](https://help.syncfusion.com/windowsforms/datagrid/exporttoexcel)'| markdownify }}.
 
 </td>
 </tr>
@@ -251,7 +252,7 @@ Windows Forms Data Grid (the control) control provides support to Export data to
 Exporting to PDF
 </td>
 <td>
-Windows Forms Data Grid (the control) control provides support for exporting the data into a PDF file. You can export Grouping, Filtering, Summaries and DetailsView, StackedHeaders in to PDF file. To know more about exporting the control to PDF, refer {{'[here](https://help.syncfusion.com/windowsforms/datagrid/exporttopdf)'| markdownify }}.
+Windows Forms Data Grid control provides support for exporting the data into a PDF file. You can export Grouping, Filtering, Summaries and DetailsView, StackedHeaders in to PDF file. To know more about exporting the control to PDF, refer {{'[here](https://help.syncfusion.com/windowsforms/datagrid/exporttopdf)'| markdownify }}.
 
 </td>
 </tr>

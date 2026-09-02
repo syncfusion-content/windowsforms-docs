@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Search in Windows Forms Data Grid | Syncfusion®
 description: Search in Data Grid enables efficient record searching, result navigation, and customizable search operations through the built-in SearchController.
@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Search in Windows Forms Data Grid
-[Windows Forms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (WinForms Data Grid) provides the support for search the specific string in the control. This can be achieved by using the [SearchController.Search](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SearchController.html#Syncfusion_WinForms_DataGrid_SearchController_Search_System_String_) method. The founded matches will be highlighted in the control.
+[Windows Forms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) provides the support for search the specific string in the control. This can be achieved by using the [SearchController.Search](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SearchController.html#Syncfusion_WinForms_DataGrid_SearchController_Search_System_String_) method. The founded matches will be highlighted in the control.
 
 {% tabs %}
 {% highlight c# %}

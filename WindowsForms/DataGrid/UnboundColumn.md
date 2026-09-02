@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Unbound Column in Windows Forms Data Grid | Syncfusion®
 description: Unbound Column in Data Grid displays calculated or custom values that are not directly bound to the underlying data source.
@@ -9,7 +9,7 @@ documentation: ug
 
 
 # Unbound Column in Windows Forms Data Grid
-[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (WinForms Data Grid) allows to add additional columns which are **not bound with data object** from underlying data source. The unbound column can add to the control by using [GridUnboundColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridUnboundColumn.html) class. Unbound columns supports for sorting, filtering, grouping and exporting as normal columns.
+[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) allows to add additional columns which are **not bound with data object** from underlying data source. The unbound column can add to the control by using [GridUnboundColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridUnboundColumn.html) class. Unbound columns supports for sorting, filtering, grouping and exporting as normal columns.
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid.Columns.Add(new GridUnboundColumn() { HeaderText = "Total Price", MappingName = "TotalPrice", Expression = "UnitPrice*Quantity" });
@@ -20,7 +20,7 @@ Me.sfDataGrid.Columns.Add(New GridUnboundColumn() With {.HeaderText = "Total Pri
 
 {% endhighlight %}
 {% endtabs %}
-![Add Unbound Column in](UnboundColumn_images/UnboundColumn_img1.png)
+![Add Unbound Column](UnboundColumn_images/UnboundColumn_img1.png)
 
 N> It is mandatory to specify the `GridColumn.MappingName` for `GridUnboundColumn` with some name to identify the column. It is not necessary to define name of field in the data object.
 
@@ -203,10 +203,12 @@ unboundColumn.Format = "{UnitPrice}% for {OrderID}"
 ![Using Format in Unbound Column](UnboundColumn_images/UnboundColumn_img3.png)
 
 ### Using QueryUnboundColumnInfo Event
-The data for unbound column can populated by handling the [QueryUnboundColumnInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.[QueryUnboundColumnInfoArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.QueryUnboundColumnInfoArgs.html) of the `QueryUnboundColumnInfo` event provides the information about the cell triggered this event. The [QueryUnboundColumnInfoArgs.Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.QueryUnboundColumnInfoArgs.html#Syncfusion_WinForms_DataGrid_Events_QueryUnboundColumnInfoArgs_Value) property can get or set based on the `UnboundAction`.
+The data for unbound column can populated by handling the [QueryUnboundColumnInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.[QueryUnboundColumnInfoArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.QueryUnboundColumnInfoArgs.html) of the `QueryUnboundColumnInfo` event provides the information about the cell triggered this event.
+The [QueryUnboundColumnInfoArgs.Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.QueryUnboundColumnInfoArgs.html#Syncfusion_WinForms_DataGrid_Events_QueryUnboundColumnInfoArgs_Value) property can get or set based on the `UnboundAction`.
 
 
-UnboundAction - `QueryData` denotes the event triggered to query value and cell information. UnboundAction – `CommitData` denotes the event triggered to save the edited value.
+UnboundAction - `QueryData` denotes the event triggered to query value and cell information.
+UnboundAction – `CommitData` denotes the event triggered to save the edited value.
 
 {% tabs %}
 {% highlight c# %}
@@ -237,7 +239,7 @@ Private Sub sfDataGrid_QueryUnboundColumnInfo(ByVal sender As Object, ByVal e As
 End Sub
 {% endhighlight %}
 {% endtabs %}
-![Using QueryUnboundColumnInfo Event in](UnboundColumn_images/UnboundColumn_img4.png)
+![Using QueryUnboundColumnInfo Event](UnboundColumn_images/UnboundColumn_img4.png)
 
 ## Editing Unbound Column
 
@@ -330,7 +332,8 @@ Me.sfDataGrid.Columns.Add(unboundColumn)
 ## Customize the Unbound Column Behavior
 
 ### Overriding Existing CellType
-The unbound row cell behavior can customized by overriding existing renderer and replace the default one in [SfDataGrid.CellRenderers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_CellRenderers). In the below code snippet, [GridUnboundCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Renderers.GridUnboundCellRenderer.html) is customized to change the text color and replaced the default renderer with customized renderer in `SfDataGrid.CellRenderers` collection.
+The unbound row cell behavior can customized by overriding existing renderer and replace the default one in [SfDataGrid.CellRenderers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_CellRenderers).
+In the below code snippet, [GridUnboundCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Renderers.GridUnboundCellRenderer.html) is customized to change the text color and replaced the default renderer with customized renderer in `SfDataGrid.CellRenderers` collection.
 
 {% tabs %}
 {% highlight c# %}

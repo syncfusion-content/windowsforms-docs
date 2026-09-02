@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Localization in Windows Forms Data Grid | Syncfusion®
 description: Localization in Data Grid supports customizing default strings, messages, and interface text to provide a localized user experience.
@@ -26,7 +26,8 @@ To localize the Data Grid based on `CurrentUICulture` using resource files, foll
 
 ![Adding new resource file through Add New Item wizard](Localization_images/Localization_img2.png)
 
-5) The culture name that indicates the name of language and country. 6) Now, select `Add` option to add the resource file in **Resources** folder.
+5) The culture name that indicates the name of language and country. 
+6) Now, select `Add` option to add the resource file in **Resources** folder.
 
 
 ![Added resource file shown in solution explorer](Localization_images/Localization_img3.png) 
@@ -70,7 +71,7 @@ The default resource file can be edited by adding it to Resources folder of the 
 
 Now, change the Name/Value pair in Resource Designer of `Syncfusion.SfDataGrid.WinForms.resx` file.
 
-![Modifying default resource file of](Localization_images/Localization_img7.png)
+![Modifying default resource file](Localization_images/Localization_img7.png)
 
 Now run the sample,
 

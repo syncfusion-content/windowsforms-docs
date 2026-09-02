@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Export To Excel in Windows Forms Data Grid | Syncfusion®
 description: Export To Excel in Data Grid supports exporting records with customization options, formatting, and styles for efficient spreadsheet generation.
@@ -8,7 +8,8 @@ documentation: ug
 ---
 
 # Export To Excel in Windows Forms Data Grid
-[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (WinForms Data Grid) provides support to export data to excel. It also provides support for grouping, filtering, sorting, paging, unbound rows and stacked headers while exporting. The following assemblies needs to be added for exporting to excel.
+[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (WinForms Data Grid) provides support to export data to excel. It also provides support for grouping, filtering, sorting, paging, unbound rows and stacked headers while exporting.
+The following assemblies needs to be added for exporting to excel.
 
 
 * [Syncfusion.SfDataGridConverter.WinForms](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.html)
@@ -994,7 +995,8 @@ workBook1.SaveAs("sample.xlsx");
 Using [ExcelExportingOptions.CellExporting](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions.html) event and changing settings for each cell will consume more memory and time consumption. So, avoid using CellsExporting event and instead of that, do the required settings in the exported sheet.
 
 ### Formatting Columns without using Event
-The cell level customization such as row-level styling, formatting particular column can be performed in the exported worksheet. In the below code snippet, `NumberFormat` for Unit Price column is changed in the exported sheet after exporting without using `CellsExporting` event.
+The cell level customization such as row-level styling, formatting particular column can be performed in the exported worksheet.
+In the below code snippet, `NumberFormat` for Unit Price column is changed in the exported sheet after exporting without using `CellsExporting` event.
 
 {% tabs %}
 {% highlight c# %}

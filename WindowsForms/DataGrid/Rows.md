@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Rows in Windows Forms Data Grid | Syncfusion®
 description: Rows in Data Grid support row headers, header customization, frozen rows and columns, row styling, and record management features.
@@ -37,7 +37,7 @@ Me.sfDataGrid1.Style.RowHeaderStyle.BackColor = Color.CadetBlue
 {% endhighlight %}
 {% endtabs %}
 
-![Row header appearance customization in](Rows_images/img2.png)
+![Row header appearance customization](Rows_images/img2.png)
 
 ### Selection marker customization
 The appearance of the selection marker can be customized using the selection marker properties in `RowHeaderStyle`.
@@ -55,7 +55,7 @@ Me.sfDataGrid1.Style.RowHeaderStyle.SelectionBackColor = Color.White
 {% endhighlight %}
 {% endtabs %}
 
-![Row header appearance customization in](Rows_images/img10.png)
+![Row header appearance customization](Rows_images/img10.png)
 
 ### Row Indicators and its Description
 
@@ -88,7 +88,8 @@ Denotes that the current row which has errors.
 
 ### Showing the Numbered Row Header
 
-RowHeader cell can be customized by using [DrawCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_DrawCell) event which is raised for each cell. The default column index of the row header cell is zero, the  style settings for a row header can be applied by using column index when it is enabled in Data Grid. By default, the row header does not have the cell values. The numbers or any text can be set in the row header by setting the [DisplayText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.DrawCellEventArgs.html#Syncfusion_WinForms_DataGrid_Events_DrawCellEventArgs_DisplayText) which is available in the [DrawCellEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.DrawCellEventArgs.html) of `DrawCell` event.
+RowHeader cell can be customized by using [DrawCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_DrawCell) event which is raised for each cell. The default column index of the row header cell is zero, the  style settings for a row header can be applied by using column index when it is enabled in Data Grid.
+By default, the row header does not have the cell values. The numbers or any text can be set in the row header by setting the [DisplayText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.DrawCellEventArgs.html#Syncfusion_WinForms_DataGrid_Events_DrawCellEventArgs_DisplayText) which is available in the [DrawCellEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.DrawCellEventArgs.html) of `DrawCell` event.
 
 
 {% tabs %}
@@ -264,9 +265,10 @@ Me.sfDataGrid1.Style.HeaderStyle.Font.Bold = True
 {% endhighlight %}
 {% endtabs %}
 
-![Header row appearance customization in](Rows_images/img5.png)
+![Header row appearance customization](Rows_images/img5.png)
 
-The appearance of any particular column header can be customized by using [GridColumnBase.HeaderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_HeaderStyle) property.
+The appearance of any particular column header can be customized by using 
+[GridColumnBase.HeaderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_HeaderStyle) property.
 
 
 {% tabs %}
@@ -282,7 +284,7 @@ Me.sfDataGrid1.Columns("OrderID").HeaderStyle.Font.Bold = True
 {% endhighlight %}
 {% endtabs %}
 
-![Specific column header appearance customization in](Rows_images/img6.png)
+![Specific column header appearance customization](Rows_images/img6.png)
 
 ### Font orientation for Header Row
 
@@ -299,7 +301,7 @@ Me.sfDataGrid1.Style.HeaderStyle.Font.Orientation = 45
 {% endhighlight %}
 {% endtabs %}
 
-![Font orientation customization in header row of](Rows_images/img8.png)
+![Font orientation customization in header row](Rows_images/img8.png)
 
 ### Text alignment for Header Row
 
@@ -320,7 +322,7 @@ Me.sfDataGrid1.Style.HeaderStyle.VerticalAlignment = System.Windows.Forms.Visual
 {% endhighlight %}
 {% endtabs %}
 
-![Text alignment customization of header cell in](Rows_images/img11.png)
+![Text alignment customization of header cell](Rows_images/img11.png)
 
 ### Text wrapping for Header Row
 
@@ -337,7 +339,7 @@ Me.sfDataGrid1.Columns("CustomerID").AllowHeaderTextWrapping = True
 {% endhighlight %}
 {% endtabs %} 
 
-![Text wrapping for header cell in](Rows_images/img12.png)
+![Text wrapping for header cell](Rows_images/img12.png)
 
 ### Hiding Header Row
 
@@ -456,7 +458,7 @@ Me.sfDataGrid1.Style.FreezePaneLineStyle.Color = System.Drawing.Color.BlueViolet
 {% endhighlight %}
 {% endtabs %}
 
-![Frozen line appearance customization in](Rows_images/FreezePanes_img3.png)
+![Frozen line appearance customization](Rows_images/FreezePanes_img3.png)
 
 #### Freeze Line Weight
 Freeze line weight or thickness can be changed by setting the [FreezePaneLineStyle.Weight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.FreezePaneLineStyleInfo.html#Syncfusion_WinForms_DataGrid_Styles_FreezePaneLineStyleInfo_Weight) property.
@@ -469,7 +471,7 @@ Me.sfDataGrid1.Style.FreezePaneLineStyle.Weight = 3
 {% endhighlight %}
 {% endtabs %}
 
-![Freeze line weight customization in](Rows_images/FreezePanes_img4.png)
+![Freeze line weight customization](Rows_images/FreezePanes_img4.png)
 
 #### Changing the Freeze Line Style
 An appearance of the freeze pane line can be customized by using [DrawFreezePaneLine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event. The freeze pane line type can be check by using [LineType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.DrawFreezePaneLineArgs.html#Syncfusion_WinForms_DataGrid_Events_DrawFreezePaneLineArgs__ctor_System_Drawing_Graphics_System_Drawing_Point_System_Drawing_Point_Syncfusion_WinForms_DataGrid_Enums_LineType_System_Boolean_System_Object_) property which indicates freeze pane line type such as `FrozenRow`, `FooterRow`, `FrozenColumn`, `FooterColumn. The `e.Handled` property which is available in the [Draw​Freeze​Pane​Line​Args ](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.DrawFreezePaneLineArgs.html) should be enabled to draw the custom line.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Helpers in Windows Forms Data Grid | Syncfusion®
 description: Helpers in Data Grid provides helper classes and methods to customize grid behavior, access grid elements, and simplify development tasks.

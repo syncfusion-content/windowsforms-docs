@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Paging in Windows Forms Data Grid | Syncfusion®
 description: Paging in Data Grid supports data pagination, page navigation, and efficient viewing of large datasets through organized page-wise records.
@@ -9,7 +9,7 @@ documentation: ug
 
 # Paging in Windows Forms Data Grid
 
-[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (WinForms Data Grid) provides support to manipulate the data using [SfDataPager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataPager.SfDataPager.html) control.
+[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) provides support to manipulate the data using [SfDataPager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataPager.SfDataPager.html) control.
 
 ## Getting Started
 
@@ -675,13 +675,15 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Pagecount of datapager changed at runtime after filtering in](Paging_images/Paging2.png)
+![Pagecount of datapager changed at runtime after filtering](Paging_images/Paging2.png)
 
-Here, records are filtered based on the textbox text in clicking event of Filter button. Initially PageCount is 5 and it is changed as 1 once the records are filtered. You can refer the [sample](https://github.com/SyncfusionExamples/how-to-change-the-PageCount-at-runtime-when-data-loaded-on-demand-is-filtered-in-winforms-datapager) from here.
+Here, records are filtered based on the textbox text in clicking event of Filter button. Initially PageCount is 5 and it is changed as 1 once the records are filtered. 
+You can refer the [sample](https://github.com/SyncfusionExamples/how-to-change-the-PageCount-at-runtime-when-data-loaded-on-demand-is-filtered-in-winforms-datapager) from here.
 
 
 ### Sorting complete collection
-You can sort the complete collection with on-demand paging by using [SfDataGrid.SortColumnsChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SortColumnsChanging) event. In this event, you can sort the complete underlying collection instead of sorting current page alone by resetting the caches.
+You can sort the complete collection with on-demand paging by using [SfDataGrid.SortColumnsChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SortColumnsChanging) event.
+In this event, you can sort the complete underlying collection instead of sorting current page alone by resetting the caches.
 
 
 {% tabs %}
@@ -781,7 +783,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Complete collection loaded on-demand is sorted in](Paging_images/Paging3.png)
+![Complete collection loaded on-demand is sorted](Paging_images/Paging3.png)
 
 ### Limitations
 1.	UI Filtering is not supported. You can code in application level to filter the data.

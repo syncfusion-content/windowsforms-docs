@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Data Virtualization in Windows Forms Data Grid | Syncfusion®
 description: Data virtualization in Data Grid enables efficient loading, scrolling, and rendering of large datasets for improved performance and responsiveness.
