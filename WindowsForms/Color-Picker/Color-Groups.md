@@ -6,14 +6,14 @@ platform: windowsforms
 control: ColorPickerUIAdv
 documentation: ug
 ---
-# Color Groups in Windows Forms ColorPickerUIAdv
+# Color Groups in WinForms color picker
 
-The default color groups available for ColorPickerUIAdv control are listed in the below table.
+The default color groups available for WinForms color picker control are listed in the below table.
 
 <table>
 <tr>
 <th>
-ColorPickerUIAdv Color Groups</th><th>
+Color Groups in WinForms color picker</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -47,7 +47,7 @@ The sections of a color group is illustrated in the below image.
 
 ## Custom Color Groups
 
-Custom Color Groups can be added to ColorPickerUIAdv control using CustomGroups property. This property invokes ColorUIAdvGroup Collection Editor and lets you to add custom user groups.
+Custom Color Groups can be added to WinForms color picker control using CustomGroups property. This property invokes ColorUIAdvGroup Collection Editor and lets you to add custom user groups.
 
 ![Windows forms ColorPickerUIAdv custom color groups added](ColorPickerUIAdv_Images/ColorPickerUIAdv_customgroups.jpeg) 
 
@@ -95,7 +95,7 @@ The below properties lets you add color items and sub items.
 <table>
 <tr>
 <th>
-ColorPickerUIAdv Properties</th><th>
+WinForms color picker Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -173,7 +173,7 @@ Me.colorPickerUIAdv1.ColorItemSize = New System.Drawing.Size(20, 20)
 
 ### Spacing Between Color Items
 
-HorizontalItemsSpacing and VerticalItemsSpacing properties of ColorPickerUIAdv control can be used to set the horizontal and vertical spacing between the color items respectively. Default value of these properties are 4 and 0 respectively.
+HorizontalItemsSpacing and VerticalItemsSpacing properties of WinForms color picker control can be used to set the horizontal and vertical spacing between the color items respectively. Default value of these properties are 4 and 0 respectively.
 
 {% tabs %}
 {% highlight c# %}
@@ -221,7 +221,7 @@ Sets the name of the color group, i.e, the header text.</td></tr>
 <table>
 <tr>
 <th>
-ColorPickerUIAdv Property</th><th>
+WinForms color picker Property</th><th>
 Description</th></tr>
 <tr>
 <td>

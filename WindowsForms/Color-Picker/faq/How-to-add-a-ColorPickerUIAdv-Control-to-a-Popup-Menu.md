@@ -6,6 +6,6 @@ platform: windowsforms
 control: ColorPickerUIAdv
 documentation: ug
 ---
-# How to Add ColorPickerUIAdv to Popup Menu in Windows Forms
+# How to Add WinForms color picker to Popup Menu
 
-This is discussed in [How to add a ColorUI Control to a Popup Menu?](/windowsforms/colorui/faq/how-to-add-a-colorui-control-to-a-popup-menu) topic in ColorUIControl. Replace ColorUIControl with ColorPickerUIAdv control in that topic and you will be able to add a ColorPickerUIAdv control to a popup menu.
+This is discussed in [How to add a ColorUI Control to a Popup Menu?](/windowsforms/colorui/faq/how-to-add-a-colorui-control-to-a-popup-menu) topic in ColorUIControl. Replace ColorUIControl with WinForms color picker control in that topic and you will be able to add a WinForms color picker control to a popup menu.
