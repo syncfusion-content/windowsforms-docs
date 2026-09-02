@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Export To PDF in Windows Forms Data Grid | Syncfusion®
 description: Export To PDF in Data Grid supports exporting records with customization options, formatting, styles, and layout settings for PDF documents.
@@ -8,15 +8,15 @@ documentation: ug
 ---
 
 # Export To PDF in Windows Forms Data Grid
-[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) provides support to export data to PDF file. It also provides support for grouping, filtering, sorting, unbound rows and stacked headers while exporting.
-The following assemblies needs to be added for exporting to PDF file.
+[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (WinForms Data Grid) provides support to export data to PDF file. It also provides support for grouping, filtering, sorting, unbound rows and stacked headers while exporting. The following assemblies needs to be added for exporting to PDF file.
+
 
 * [Syncfusion.SfDataGridConverter.WinForms](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.html)
 * [Syncfusion.Pdf.Base](https://help.syncfusion.com/cr/windowsforms)
 
 For [NuGet package](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages), have to install [Syncfusion.DataGridExport.WinForms](https://www.nuget.org/packages/Syncfusion.DataGridExport.WinForms/) package. For more details refer this [UG link](https://help.syncfusion.com/windowsforms/control-dependencies#exporting-sfdatagrid-to-excel-pdf-and-csv)
 
-The SfDataGrid can be exported to the pdf by using the following methods which is available in the `Syncfusion.WinForms.DataGridConverter` namespace.
+The Data Grid can be exported to the pdf by using the following methods which is available in the `Syncfusion.WinForms.DataGridConverter` namespace.
 
 * [ExportToPdf](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.DataGridPdfExportExtension.html#Syncfusion_WinForms_DataGridConverter_DataGridPdfExportExtension_ExportToPdf_Syncfusion_WinForms_DataGrid_SfDataGrid_)
 * [ExportToPdfGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.DataGridPdfExportExtension.html#Syncfusion_WinForms_DataGridConverter_DataGridPdfExportExtension_ExportToPdfGrid_Syncfusion_WinForms_DataGrid_SfDataGrid_Syncfusion_Data_ICollectionViewAdv_Syncfusion_WinForms_DataGridConverter_PdfExportingOptions_)
@@ -36,13 +36,13 @@ document.Save("Sample.pdf")
 {% endhighlight %}
 {% endtabs %}
 
-N> SfDataGrid exports data to PDF file by using[Essential<sup>®</sup> PDF](https://help.syncfusion.com/file-formats/pdf/overview). You can refer [PDF documentation](https://help.syncfusion.com/file-formats/pdf/working-with-document) for manipulating.
+N> Data Grid exports data to PDF file by using[Essential<sup>®</sup> PDF](https://help.syncfusion.com/file-formats/pdf/overview). You can refer [PDF documentation](https://help.syncfusion.com/file-formats/pdf/working-with-document) for manipulating.
 
 ## Exporting Options
 Exporting operation can be customized by passing [PdfExportingOptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.PdfExportingOptions.html) instance as argument to `ExportToPdf` and `ExportToPdfGrid` method.
 
 ### Exporting with Auto Column Width
-SfDataGrid can be exported to PDF with fitting column widths based on its content by setting [AutoColumnWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.PdfExportingOptions.html#Syncfusion_WinForms_DataGridConverter_PdfExportingOptions_AutoColumnWidth) property as `true`.
+Data Grid can be exported to PDF with fitting column widths based on its content by setting [AutoColumnWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.PdfExportingOptions.html#Syncfusion_WinForms_DataGridConverter_PdfExportingOptions_AutoColumnWidth) property as `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -60,7 +60,7 @@ document.Save("Sample.pdf")
 {% endtabs %}
 
 ### Exporting with Auto Row Height
-SfDataGrid can be exported to PDF with fitting row heights based on its content by setting [AutoRowHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.PdfExportingOptions.html#Syncfusion_WinForms_DataGridConverter_PdfExportingOptions_AutoRowHeight) property as `true`.
+Data Grid can be exported to PDF with fitting row heights based on its content by setting [AutoRowHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.PdfExportingOptions.html#Syncfusion_WinForms_DataGridConverter_PdfExportingOptions_AutoRowHeight) property as `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -78,7 +78,7 @@ document.Save("Sample.pdf")
 {% endtabs %}
 
 ### Exclude Columns while Exporting
-By default, all the columns (including hidden columns) in SfDataGrid will be exported to PDF. In order to exclude some columns while exporting to PDF, use the [ExcludeColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.PdfExportingOptions.html#Syncfusion_WinForms_DataGridConverter_PdfExportingOptions_ExcludeColumns) property in [PdfExportingOptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.PdfExportingOptions.html).
+By default, all the columns (including hidden columns) in Data Grid will be exported to PDF. In order to exclude some columns while exporting to PDF, use the [ExcludeColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.PdfExportingOptions.html#Syncfusion_WinForms_DataGridConverter_PdfExportingOptions_ExcludeColumns) property in [PdfExportingOptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.PdfExportingOptions.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -151,7 +151,7 @@ document.Save("Sample.pdf")
 {% endtabs %}
 
 ### Exclude Groups on Exporting
-By default, all the groups in SfDataGrid will be exported to PDF. To export the SfDataGrid without the groups, need to set the [ExportGroups](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.PdfExportingOptions.html#Syncfusion_WinForms_DataGridConverter_PdfExportingOptions_ExportGroups) property as `false`.
+By default, all the groups in Data Grid will be exported to PDF. To export the control without the groups, need to set the [ExportGroups](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.PdfExportingOptions.html#Syncfusion_WinForms_DataGridConverter_PdfExportingOptions_ExportGroups) property as `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -169,7 +169,7 @@ document.Save("Sample.pdf")
 {% endtabs %}
 
 ### Exclude Group Summaries while Exporting
-By default, group summaries in SfDataGrid will be exported to PDF. To export the SfDataGrid without the group summaries, set the [ExportGroupSummary](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions.html#Syncfusion_WinForms_DataGridConverter_ExcelExportingOptions_ExportGroupSummary) property as `false`.
+By default, group summaries in Data Grid will be exported to PDF. To export the control without the group summaries, set the [ExportGroupSummary](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions.html#Syncfusion_WinForms_DataGridConverter_ExcelExportingOptions_ExportGroupSummary) property as `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -187,7 +187,7 @@ document.Save("Sample.pdf")
 {% endtabs %}
 
 ### Exclude Table Summaries while Exporting
-By default, table summaries in SfDataGrid will be exported to PDF. If you want to export without table summaries, need to set [ExportTableSummary](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.PdfExportingOptions.html#Syncfusion_WinForms_DataGridConverter_PdfExportingOptions_ExportTableSummary) property as `false`.
+By default, table summaries in Data Grid will be exported to PDF. If you want to export without table summaries, need to set [ExportTableSummary](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.PdfExportingOptions.html#Syncfusion_WinForms_DataGridConverter_PdfExportingOptions_ExportTableSummary) property as `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -241,8 +241,8 @@ document.Save("Sample.pdf")
 {% endtabs %}
 
 ## Setting Header and Footer
-SfDataGrid provides a way to display additional content at the top (Header) or bottom (Footer) of the page while exporting to PDF. This can be achieved by setting [HeaderFooterExporting](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.PdfExportingOptions.html) event in [PdfExportingOptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.PdfExportingOptions.html).
-Setting [PdfPageTemplateElement](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Pdf.PdfPageTemplateElement.html) to `PdfDocumentTemplate.Top` loads the content at top of the page and setting the `PdfDocumentTemplate.Bottom` loads the content at bottom of the page.
+Data Grid provides a way to display additional content at the top (Header) or bottom (Footer) of the page while exporting to PDF. This can be achieved by setting [HeaderFooterExporting](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.PdfExportingOptions.html) event in [PdfExportingOptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.PdfExportingOptions.html). Setting [PdfPageTemplateElement](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Pdf.PdfPageTemplateElement.html) to `PdfDocumentTemplate.Top` loads the content at top of the page and setting the `PdfDocumentTemplate.Bottom` loads the content at bottom of the page.
+
 
 {% tabs %}
 {% highlight c# %}
@@ -276,7 +276,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays header and footer of the page while exporting to PDF](ExportToPDF_images/ExportToPDF_img1.jpeg)
+![displays header and footer of the page while exporting to PDF](ExportToPDF_images/ExportToPDF_img1.jpeg)
 
 Here, string is inserted in the header of exported PDF file using `DrawString` method. Similarly, you can insert image, line,etc. using `DrawImage`, `DrawLine` methods respectively.
 
@@ -330,7 +330,7 @@ document.Save("Sample.pdf")
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays exported the selected item to PDF](ExportToPDF_images/ExportToPDF_img2.jpeg)
+![displays exported the selected item to PDF](ExportToPDF_images/ExportToPDF_img2.jpeg)
 
 ## Saving Options
 
@@ -442,7 +442,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays applied colors to exported PDF](ExportToPDF_images/ExportToPDF_img3.jpeg)
+![displays applied colors to exported PDF](ExportToPDF_images/ExportToPDF_img3.jpeg)
 
 ### Embedding Fonts in PDF File
 By default, some fonts (such as Unicode font) are not supported in PDF. In this case, it is possible to embed the font in PDF document with the help of [PdfTrueTypeFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Pdf.Graphics.PdfTrueTypeFont.html).
@@ -485,7 +485,7 @@ Here, new font is created from font file and it is assigned to the Font of[PdfGr
 
 ### Set the width of the column when enable FitAllColumnsInOnePage option
 
-By default, all the columns will have same width when enabling the [FitAllColumnsInOnePage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.PdfExportingOptions.html#Syncfusion_WinForms_DataGridConverter_PdfExportingOptions_FitAllColumnsInOnePage) option in [PdfExportingOptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.PdfExportingOptions.html). Column width will be changed when exporting SfDataGrid to PdfGrid using the [ExportToPdfGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.DataGridPdfExportExtension.html#Syncfusion_WinForms_DataGridConverter_DataGridPdfExportExtension_ExportToPdfGrid_Syncfusion_WinForms_DataGrid_SfDataGrid_Syncfusion_Data_ICollectionViewAdv_Syncfusion_WinForms_DataGridConverter_PdfExportingOptions_) method. 
+By default, all the columns will have same width when enabling the [FitAllColumnsInOnePage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.PdfExportingOptions.html#Syncfusion_WinForms_DataGridConverter_PdfExportingOptions_FitAllColumnsInOnePage) option in [PdfExportingOptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.PdfExportingOptions.html). Column width will be changed when exporting Data Grid to PdfGrid using the [ExportToPdfGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.DataGridPdfExportExtension.html#Syncfusion_WinForms_DataGridConverter_DataGridPdfExportExtension_ExportToPdfGrid_Syncfusion_WinForms_DataGrid_SfDataGrid_Syncfusion_Data_ICollectionViewAdv_Syncfusion_WinForms_DataGridConverter_PdfExportingOptions_) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -541,7 +541,7 @@ End Sub
 The exported cells of the PDF document can be customized document by setting [CellExporting](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions.html) event of the `PdfExportingOptions`.
 
 ### Customize Cell Values while Exporting
- The cell value can be customized while exporting to PDF by using the `CellExporting` event of the `PdfExportingOption`.
+The cell value can be customized while exporting to PDF by using the `CellExporting` event of the `PdfExportingOption`.
  
 {% tabs %}
 {% highlight c# %}
@@ -583,7 +583,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays changed cell calue while exporting to PDF](ExportToPDF_images/ExportToPDF_img4.jpeg)
+![displays changed cell calue while exporting to PDF](ExportToPDF_images/ExportToPDF_img4.jpeg)
 
 Here, cell values are changed for `OrderID` column based on custom condition.
 
@@ -632,7 +632,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays applied color in specific rows in exported PDF](ExportToPDF_images/ExportToPDF_img5.jpeg)
+![displays applied color in specific rows in exported PDF](ExportToPDF_images/ExportToPDF_img5.jpeg)
 
 ### Changing the border color of cells in PDF document
 
@@ -666,10 +666,10 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays applied color to cell border in exported PDF](ExportToPDF_images/ExportToPDF_img7.jpg)
+![displays applied color to cell border in exported PDF](ExportToPDF_images/ExportToPDF_img7.jpg)
 
-### Exporting Middle Eastern Languages (Arabic, Hebrew) from SfDataGrid to PDF
-By default, Middle Eastern languages (Arabic, Hebrew) in SfDataGrid are exported as left to right in PDF. You can export them as displayed in SfDataGrid (export from Right to Left) by enabling [RightToLeft](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Pdf.Graphics.PdfStringFormat.html#Syncfusion_Pdf_Graphics_PdfStringFormat_RightToLeft) property in [PdfStringFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Pdf.Graphics.PdfStringFormat.html) class and apply the format to the [PdfGridCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Pdf.Grid.PdfGridCell.html) by using `CellExporting` event.
+### Exporting Middle Eastern Languages (Arabic, Hebrew) from Data Grid to PDF
+By default, Middle Eastern languages (Arabic, Hebrew) in Data Grid are exported as left to right in PDF. You can export them as displayed in the control (export from Right to Left) by enabling [RightToLeft](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Pdf.Graphics.PdfStringFormat.html#Syncfusion_Pdf_Graphics_PdfStringFormat_RightToLeft) property in [PdfStringFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Pdf.Graphics.PdfStringFormat.html) class and apply the format to the [PdfGridCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Pdf.Grid.PdfGridCell.html) by using `CellExporting` event.
 {% tabs %}
 {% highlight c# %}
 PdfExportingOptions options = new PdfExportingOptions();
@@ -778,7 +778,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays added image into the column in exported PDF](ExportToPDF_images/ExportToPDF_img6.jpeg)
+![displays added image into the column in exported PDF](ExportToPDF_images/ExportToPDF_img6.jpeg)
 
 
 ## See also

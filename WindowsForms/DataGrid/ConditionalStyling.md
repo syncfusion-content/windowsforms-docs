@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Conditional Styling in Windows Forms Data Grid | Syncfusion®
 description: Conditional styling in Data Grid customizes cell and row appearance based on specific conditions, improving data visualization and readability.
@@ -13,7 +13,7 @@ documentation: ug
 
 ### Styling based on Content
 
-The appearance of the record cells in [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) can be customized conditionally based on the content by handling the [SfDataGrid.QueryCellStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+The appearance of the record cells in [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (WinForms Data Grid) can be customized conditionally based on the content by handling the [SfDataGrid.QueryCellStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -53,7 +53,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays applied style to particular cells in grid](ConditionalStyling_images/ConditonalStyling1.png)
+![displays applied style to particular cells in grid](ConditionalStyling_images/ConditonalStyling1.png)
 
 ### Styling Alternate Cells
 
@@ -88,13 +88,13 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays applied backcolor in particular cell](ConditionalStyling_images/ConditonalStyling2.png)
+![displays applied backcolor in particular cell](ConditionalStyling_images/ConditonalStyling2.png)
 
 ## Rows
 
 ### Styling based on Content
 
-The appearance of the record rows in SfDataGrid can be conditionally customized based on the content by handling the [SfDataGrid.QueryRowStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event. The following code shows how to apply conditional styling for Observable collection.
+The appearance of the record rows in Data Grid can be conditionally customized based on the content by handling the [SfDataGrid.QueryRowStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event. The following code shows how to apply conditional styling for Observable collection.
 
 {% tabs %}
 {% highlight c# %}
@@ -126,7 +126,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays applied color based on the specific text](ConditionalStyling_images/ConditonalStyling3.png)
+![displays applied color based on the specific text](ConditionalStyling_images/ConditonalStyling3.png)
 
 The following code shows how to apply conditional styling for the data table.
 
@@ -178,11 +178,11 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays applied color based on the text](ConditionalStyling_images/ConditonalStyling16.jpg)
+![displays applied color based on the text](ConditionalStyling_images/ConditonalStyling16.jpg)
 
 ### Styling Alternate Rows
 
-The appearance of the alternating rows in  SfDataGrid can be customized by using the [SfDataGrid.QueryRowStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+The appearance of the alternating rows in  Data Grid can be customized by using the [SfDataGrid.QueryRowStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -214,13 +214,13 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays applied specific color in each row](ConditionalStyling_images/ConditonalStyling4.png)
+![displays applied specific color in each row](ConditionalStyling_images/ConditonalStyling4.png)
 
 ## Caption Summary
 
 ### Cell
 
-The appearance of the caption summary cells in SfDataGrid can be customized conditionally based on the summary values by handling the [SfDataGrid.DrawCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+The appearance of the caption summary cells in Data Grid can be customized conditionally based on the summary values by handling the [SfDataGrid.DrawCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -256,12 +256,12 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays applied color in specific cell](ConditionalStyling_images/ConditonalStyling5.png)
+![displays applied color in specific cell](ConditionalStyling_images/ConditonalStyling5.png)
 
 ### Row
 
-The appearance of the caption summary row in SfDataGrid can be customized conditionally based on the summary values by handling the 
-[SfDataGrid.DrawCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+The appearance of the caption summary row in Data Grid can be customized conditionally based on the summary values by handling the [SfDataGrid.DrawCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+
 
 {% tabs %}
 {% highlight c# %}
@@ -297,13 +297,13 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms displays applied color in specific rows](ConditionalStyling_images/ConditonalStyling6.png)
+![displays applied color in specific rows](ConditionalStyling_images/ConditonalStyling6.png)
 
 ## Group Summary
 
 ### Cell
 
-The appearance of the group summary cells in SfDataGrid can be customized conditionally by handling the [SfDataGrid.DrawCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+The appearance of the group summary cells in Data Grid can be customized conditionally by handling the [SfDataGrid.DrawCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -330,11 +330,11 @@ Private Sub SfDataGrid1_DrawCell(ByVal sender As Object, ByVal e As DrawCellEven
 End Sub
 {% endhighlight %}
 {% endtabs %}
-![Windows forms datagrid displays applied color in calculated cell](ConditionalStyling_images/ConditonalStyling7.png)
+![displays applied color in calculated cell](ConditionalStyling_images/ConditonalStyling7.png)
 
 ### Row
 
-The appearance of the group summary row in SfDataGrid can be customized conditionally by handling the [SfDataGrid.DrawCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+The appearance of the group summary row in Data Grid can be customized conditionally by handling the [SfDataGrid.DrawCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -368,13 +368,13 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays applied color in calculated rows](ConditionalStyling_images/ConditonalStyling8.png)
+![displays applied color in calculated rows](ConditionalStyling_images/ConditonalStyling8.png)
 
 ## Table Summary
 
 ### Cell
 
-The appearance of the table summary cells in SfDataGrid can be customized conditionally by handling the [SfDataGrid.DrawCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+The appearance of the table summary cells in Data Grid can be customized conditionally by handling the [SfDataGrid.DrawCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -402,11 +402,11 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays applied color in specific calculated column](ConditionalStyling_images/ConditonalStyling9.png)
+![displays applied color in specific calculated column](ConditionalStyling_images/ConditonalStyling9.png)
 
 ### Row
 
-The appearance of the table summary row in SfDataGrid can be customized conditionally by handling the [SfDataGrid.DrawCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+The appearance of the table summary row in Data Grid can be customized conditionally by handling the [SfDataGrid.DrawCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -440,11 +440,11 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays applied different color in different calculated rows](ConditionalStyling_images/ConditonalStyling10.png)
+![displays applied different color in different calculated rows](ConditionalStyling_images/ConditonalStyling10.png)
 
 ## Stacked Header
 
-The appearance of the stacked headers in SfDataGrid can be customized conditionally by overriding the [GridStackedHeaderCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Renderers.GridStackedHeaderCellRenderer.html) class.
+The appearance of the stacked headers in Data Grid can be customized conditionally by overriding the [GridStackedHeaderCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Renderers.GridStackedHeaderCellRenderer.html) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -486,11 +486,11 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays applied colors in header](ConditionalStyling_images/ConditonalStyling11.png)
+![displays applied colors in header](ConditionalStyling_images/ConditonalStyling11.png)
 
 ## Row Header
 
-The appearance of the row headers in SfDataGrid can be customized conditionally by handling the [SfDataGrid.DrawCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+The appearance of the row headers in Data Grid can be customized conditionally by handling the [SfDataGrid.DrawCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -524,11 +524,11 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid applied colors in row header](ConditionalStyling_images/ConditonalStyling12.png)
+![applied colors in row header](ConditionalStyling_images/ConditonalStyling12.png)
 
 ## Indent cell
 
-The appearance of indent cells in SfDataGrid can be customized conditionally by overriding the [GridIndentCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Renderers.GridIndentCellRenderer.html) class.
+The appearance of indent cells in Data Grid can be customized conditionally by overriding the [GridIndentCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Renderers.GridIndentCellRenderer.html) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -574,11 +574,11 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid applied colors in indent cell](ConditionalStyling_images/ConditonalStyling17.png)
+![applied colors in indent cell](ConditionalStyling_images/ConditonalStyling17.png)
 
 ## Adding an Image for a Cell
 
-SfDataGrid allows to add image within a cell by handling the [SfDataGrid.DrawCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+Data Grid allows to add image within a cell by handling the [SfDataGrid.DrawCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -609,12 +609,12 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays added image into the cell](ConditionalStyling_images/ConditonalStyling13.png)
+![displays added image into the cell](ConditionalStyling_images/ConditonalStyling13.png)
 
 ## Highlighting the Newly Added Row 
 
-The newly added records in SfDataGrid can be highlighted by changing its Background or Foreground color. 
-For that add a new Boolean property in underling data source and set it as true for newly added records in [SfDataGrid.AddNewRowInitiating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+The newly added records in Data Grid can be highlighted by changing its Background or Foreground color. For that add a new Boolean property in underling data source and set it as true for newly added records in [SfDataGrid.AddNewRowInitiating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+
 
 {% tabs %}
 {% highlight c# %}
@@ -662,7 +662,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays highlight added new row in grid](ConditionalStyling_images/ConditonalStyling14.png)
+![displays highlight added new row in grid](ConditionalStyling_images/ConditonalStyling14.png)
 
 ## Alignment Customization based on Column
 
@@ -693,5 +693,5 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays applied center alignment in particular column](ConditionalStyling_images/ConditonalStyling15.png)
+![displays applied center alignment in particular column](ConditionalStyling_images/ConditonalStyling15.png)
 

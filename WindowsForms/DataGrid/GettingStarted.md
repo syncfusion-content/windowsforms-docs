@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Getting Started with Windows Forms Data Grid | Syncfusion®
 canonical_url: "https://www.syncfusion.com/winforms-ui-controls/datagrid"
@@ -10,30 +10,30 @@ documentation: ug
 # Getting Started with Windows Forms Data Grid
 This section provides a quick overview for working with the [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid). Walk through the entire process of creating a real world data grid.
 
-To get start quickly with WinForms DataGrid, you can check on this video:
+To get start quickly with WinForms Data Grid, you can check on this video:
 <style>#WinFormsDataGridVideoTutorial{width : 90% !important; height: 400px !important }</style>
 <iframe id='WinFormsDataGridVideoTutorial' src='https://www.youtube.com/embed/ShhjvfqfrxM'></iframe>
 
 ## Assembly Deployment
 
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sfdatagrid) section to get the list of assemblies or [NuGet package](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) needs to be added as reference to use the SfDataGrid control in any application.
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sfdatagrid) section to get the list of assemblies or [NuGet package](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) needs to be added as reference to use the Data Grid control in any application.
 
-## Creating Application with SfDataGrid
-In this walk through, users will create WinForms application that contains SfDataGrid control.
+## Creating Application with Data Grid
+In this walk through, users will create WinForms application that contains Data Grid control.
 
 ### Creating the Project
-Create new Windows Forms Project in Visual Studio to display SfDataGrid with data objects.
+Create new Windows Forms Project in Visual Studio to display Data Grid with data objects.
 
 ### Adding Control via Designer
-Windows Forms DataGrid (SfDataGrid) control can be added to the application by dragging it from Toolbox and dropping it in Designer. The required assembly references will be added automatically.
-![WindowsForms DataGrid is dragged from toolbox](gettingstarted_images/windowsforms-datagrid-dragged-from-toolbox.png)
+Windows Forms Data Grid (the control) control can be added to the application by dragging it from Toolbox and dropping it in Designer. The required assembly references will be added automatically.
+![is dragged from toolbox](gettingstarted_images/windowsforms-datagrid-dragged-from-toolbox.png)
 
 ### Adding Control in Code
 In order to add control manually, do the below steps,
 
 1. Add the required [assembly references](https://help.syncfusion.com/windowsforms/control-dependencies#sfdatagrid) to the project
 
-2. Create the SfDataGrid control instance and add it to the Form
+2. Create the Data Grid control instance and add it to the Form
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -77,7 +77,7 @@ End Namespace
 
 ### Creating Data for Sample Application
 
-SfDataGrid is a data-bound control. So data must be created for application.
+Data Grid is a data-bound control. So data must be created for application.
 
 1. Create data object class named “OrderInfo” and declare properties as shown below,
 
@@ -261,7 +261,7 @@ End Class
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 ### Binding to Data
-To bind the SfDataGrid to data, set the [SfDataGrid.DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_DataSource) property to an IEnumerable implementation. Each row in SfDataGrid is bound to an object in data source and each column in SfDataGrid bound to a property in data object.
+To bind the Data Grid to data, set the [SfDataGrid.DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_DataSource) property to an IEnumerable implementation. Each row in the control is bound to an object in data source and each column in the control bound to a property in data object.
 {% tabs %}
 {% highlight c# %}
 OrderInfoCollection orderInfoCollection = new OrderInfoCollection();
@@ -275,11 +275,11 @@ sfDataGrid1.DataSource = orderInfoCollection.Orders
 
 Now, run the application, the below output will occur.
 
-![WindowsForms DataGrid showing collection of data](gettingstarted_images/windowsforms-datagrid-collection-of-data.png)
+![showing collection of data](gettingstarted_images/windowsforms-datagrid-collection-of-data.png)
 
 ## Defining Columns
-By default, the SfDataGrid control generates the columns automatically when value assigned to [SfDataGrid.DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_DataSource) property. The type of the column generated depends on the type of data in the column and the attribute of the property the column bound with.
-The following table lists the column types and its constraints for auto column generation.
+By default, the Data Grid control generates the columns automatically when value assigned to [SfDataGrid.DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_DataSource) property. The type of the column generated depends on the type of data in the column and the attribute of the property the column bound with. The following table lists the column types and its constraints for auto column generation.
+
 <table>
 <tr>
 <td>
@@ -338,8 +338,8 @@ Property of type Bool.
 </td>
 </tr>
 </table>
-When columns are auto-generated, the [SfDataGrid.AutoGeneratingColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AutoGeneratingColumn) event can be handled to customize or cancel the columns before they are added to the SfDataGrid.
-The automatic column generation can be prevented by setting [SfDataGrid.AutoGenerateColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AutoGenerateColumns) property is false, The columns to be displayed should be defined as below,
+When columns are auto-generated, the [SfDataGrid.AutoGeneratingColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AutoGeneratingColumn) event can be handled to customize or cancel the columns before they are added to the Data Grid. The automatic column generation can be prevented by setting [SfDataGrid.AutoGenerateColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AutoGenerateColumns) property is false, The columns to be displayed should be defined as below,
+
 {% tabs %}
 {% highlight c# %}
 sfDataGrid1.AutoGenerateColumns = false;
@@ -352,7 +352,7 @@ sfDataGrid1.Columns.Add(New GridTextColumn() With {.MappingName = "OrderID"})
 sfDataGrid1.Columns.Add(New GridTextColumn() With {.MappingName = "CustomerID"})
 {% endhighlight %}
 {% endtabs %}
-Below is the list of column types provided in SfDataGrid.
+Below is the list of column types provided in Data Grid.
 <table>
 <tr>
 <td>
@@ -367,7 +367,7 @@ Below is the list of column types provided in SfDataGrid.
 GridTextColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts textual content in its cells.
+Represents Data Grid column that hosts textual content in its cells.
 </td>
 </tr>
 <tr>
@@ -375,7 +375,7 @@ Represents SfDataGrid column that hosts textual content in its cells.
 GridNumericColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts SfNumericTextBox controls in its cells which is used to format and display Numeric values.
+Represents Data Grid column that hosts SfNumericTextBox controls in its cells which is used to format and display Numeric values.
 </td>
 </tr>
 <tr>
@@ -383,7 +383,7 @@ Represents SfDataGrid column that hosts SfNumericTextBox controls in its cells
 GridDateTimeColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts SfDateTimeEdit controls in its cells which is used to display and format DateTime values.
+Represents Data Grid column that hosts SfDateTimeEdit controls in its cells which is used to display and format DateTime values.
 </td>
 </tr>
 <tr>
@@ -391,7 +391,7 @@ Represents SfDataGrid column that hosts SfDateTimeEdit controls in its cells w
 GridImageColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts Image in its cells.
+Represents Data Grid column that hosts Image in its cells.
 </td>
 </tr>
 <tr>
@@ -399,7 +399,7 @@ Represents SfDataGrid column that hosts Image in its cells.
 GridHyperLinkColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts Hyperlink in its cells
+Represents Data Grid column that hosts Hyperlink in its cells
 </td>
 </tr>
 <tr>
@@ -407,7 +407,7 @@ Represents SfDataGrid column that hosts Hyperlink in its cells
 GridCheckBoxColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts CheckBox in its cells.
+Represents Data Grid column that hosts CheckBox in its cells.
 </td>
 </tr>
 <tr>
@@ -415,7 +415,7 @@ Represents SfDataGrid column that hosts CheckBox in its cells.
 GridComboBoxColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts ComboBox in its cells.
+Represents Data Grid column that hosts ComboBox in its cells.
 </td>
 </tr>
 <tr>
@@ -423,7 +423,7 @@ Represents SfDataGrid column that hosts ComboBox in its cells.
 GridButtonColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts Button in its cells.
+Represents Data Grid column that hosts Button in its cells.
 </td>
 </tr>
 <tr>
@@ -431,13 +431,13 @@ Represents SfDataGrid column that hosts Button in its cells.
 GridUnboundColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts textual content which are not actually bound with data object of row.
+Represents Data Grid column that hosts textual content which are not actually bound with data object of row.
 </td>
 </tr>
 </table>
 
 ## Selection
-By default, the entire row is selected when a user clicks a cell in a SfDataGrid. The [SfDataGrid.SelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SelectionMode) property can be set to specify whether a user can select single row, or multiple rows. The information about the rows that are selected can be retrieved using [SfDataGrid.SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SelectedItem) and [SfDataGrid.SelectedItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SelectedItems) properties.
+By default, the entire row is selected when a user clicks a cell in a Data Grid. The [SfDataGrid.SelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SelectionMode) property can be set to specify whether a user can select single row, or multiple rows. The information about the rows that are selected can be retrieved using [SfDataGrid.SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SelectedItem) and [SfDataGrid.SelectedItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SelectedItems) properties.
 {% tabs %}
 {% highlight c# %}
 sfDataGrid1.SelectionMode = Syncfusion.WinForms.DataGrid.Enums.GridSelectionMode.Extended;
@@ -446,14 +446,14 @@ sfDataGrid1.SelectionMode = Syncfusion.WinForms.DataGrid.Enums.GridSelectionMode
 sfDataGrid1.SelectionMode = Syncfusion.WinForms.DataGrid.Enums.GridSelectionMode.Extended
 {% endhighlight %}
 {% endtabs %}
-![WindowsForms DataGrid showing selection](gettingstarted_images/windowsforms-datagrid-selection.png)
+![showing selection](gettingstarted_images/windowsforms-datagrid-selection.png)
 
-The selection operations can be handled with the help of [SfDataGrid.SelectionChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SelectionChanging) and [SfDataGrid.SelectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SelectionChanged) events of SfDataGrid.
+The selection operations can be handled with the help of [SfDataGrid.SelectionChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SelectionChanging) and [SfDataGrid.SelectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SelectionChanged) events of Data Grid.
 
 ## Sorting, Grouping, and Filtering
 
 ### Sorting
-By default, columns in a SfDataGrid can be sorted by clicking the column header. The sorting can be configured by setting [SfDataGrid.SortColumnDescriptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SortColumnDescriptions) property as below,
+By default, columns in a Data Grid can be sorted by clicking the column header. The sorting can be configured by setting [SfDataGrid.SortColumnDescriptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SortColumnDescriptions) property as below,
 {% tabs %}
 {% highlight c# %}
 OrderInfoCollection orderInfoCollection = new OrderInfoCollection();
@@ -466,7 +466,7 @@ sfDataGrid1.DataSource = orderInfoCollection.Orders
 sfDataGrid1.SortColumnDescriptions.Add(New SortColumnDescription() With {.ColumnName = "Country"})
 {% endhighlight %}
 {% endtabs %}
-![WindowsForms DataGrid showing sorting the columns](gettingstarted_images/windowsforms-datagrid-sorting-the-columns.png)
+![showing sorting the columns](gettingstarted_images/windowsforms-datagrid-sorting-the-columns.png)
 
 The sorting can be customized by handling the [SfDataGrid.SortColumnsChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SortColumnsChanging) and [SfDataGrid.SortColumnsChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SortColumnsChanged) events. To cancel the default sort, set the Cancel property to true in `SfDataGrid.SortColumnsChanging` event.
 {% tabs %}
@@ -504,10 +504,10 @@ sfDataGrid1.DataSource = orderInfoCollection.Orders
 sfDataGrid1.GroupColumnDescriptions.Add(New GroupColumnDescription() With {.ColumnName = "CustomerName"})
 {% endhighlight %}
 {% endtabs %}
-![WindowsForms DataGrid showing grouped data](gettingstarted_images/windowsforms-datagrid-grouped-data.png)
+![showing grouped data](gettingstarted_images/windowsforms-datagrid-grouped-data.png)
 
 ### Filtering
-Filtering can be enabled by setting [SfDataGrid.AllowFiltering](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowFiltering) property to true, where advanced filter UI can be  opened by clicking the Filter icon in column header and filter the SfDataGrid. The filtering operations ca be customized by handling [SfDataGrid.FilterChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_FilterChanging) and [SfDataGrid.FilterChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_FilterChanged) events.
+Filtering can be enabled by setting [SfDataGrid.AllowFiltering](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowFiltering) property to true, where advanced filter UI can be  opened by clicking the Filter icon in column header and filter the Data Grid. The filtering operations ca be customized by handling [SfDataGrid.FilterChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_FilterChanging) and [SfDataGrid.FilterChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_FilterChanged) events.
 {% tabs %}
 {% highlight c# %}
 OrderInfoCollection orderInfoCollection = new OrderInfoCollection();
@@ -520,15 +520,15 @@ sfDataGrid1.DataSource = orderInfoCollection.Orders
 sfDataGrid1.AllowFiltering = True
 {% endhighlight %}
 {% endtabs %}
-![WindowsForms DataGrid showing filter control](gettingstarted_images/windowsforms-datagrid-filtering.png)
+![showing filter control](gettingstarted_images/windowsforms-datagrid-filtering.png)
 
 ## Editing
-Editing can be enabled by setting [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowEditing) property to true. Set [SfDataGrid.AllowDeleting](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowDeleting) property to specify whether user can delete rows by pressing <kbd>Delete</kbd> key.
-Set [SfDataGrid.AddNewRowPosition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AddNewRowPosition) property to enable additional row either Top or Bottom of SfDataGrid, where user can enter new items into the blank row. Adding new row adds an item to the [SfDataGrid.DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_DataSource).
-The editing operations can be customized by handling [SfDataGrid.CurrentCellBeginEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_CurrentCellBeginEdit) and [SfDataGrid.CurrentCellEndEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_CurrentCellEndEdit) events.
+Editing can be enabled by setting [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowEditing) property to true. Set [SfDataGrid.AllowDeleting](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowDeleting) property to specify whether user can delete rows by pressing <kbd>Delete</kbd> key. Set [SfDataGrid.AddNewRowPosition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AddNewRowPosition) property to enable additional row either Top or Bottom of Data Grid, where user can enter new items into the blank row. Adding new row adds an item to the [SfDataGrid.DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_DataSource). The editing operations can be customized by handling [SfDataGrid.CurrentCellBeginEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_CurrentCellBeginEdit) and [SfDataGrid.CurrentCellEndEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_CurrentCellEndEdit) events.
+
+
 
 ## Handling events 
-You cannot handle the Key and Mouse events of the SfDataGrid when raising them, because the TableControl is hosted in the SfDataGrid. So, raise the events for [SfDataGrid.TableControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_TableControl).
+You cannot handle the Key and Mouse events of the Data Grid when raising them, because the TableControl is hosted in the control. So, raise the events for [SfDataGrid.TableControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_TableControl).
 
 {% tabs %}
 {% highlight c# %}

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Editing in Windows Forms Data Grid | Syncfusion®
 description: Editing in Data Grid supports cell and record editing, customizable edit modes, event-based validation, and programmatic data updates.
@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Editing in Windows Forms Data Grid
-[Windows Forms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) provides support for editing and it can be enabled or disabled by setting [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowEditing) property.
+[Windows Forms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (WinForms Data Grid) provides support for editing and it can be enabled or disabled by setting [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowEditing) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -21,7 +21,7 @@ Me.sfDataGrid.AllowEditing = True
 {% endhighlight %}
 {% endtabs %}
 
-The editing can be enabled only for the particular columns by setting the [GridColumn.AllowEditing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_AllowEditing) property to `true`. 
+The editing can be enabled only for the particular columns by setting the [GridColumn.AllowEditing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_AllowEditing) property to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -35,7 +35,7 @@ Me.sfDataGrid.Columns(0).AllowEditing = True
 {% endtabs %}
 
 **Note:**The `GridColumn.AllowEditing` has the high priority than the `SfDataGrid.AllowEditing`.
-![Windows forms datagrid Editing](Editing_images/Editing_Image1.png)
+![Editing](Editing_images/Editing_Image1.png)
 
 ## Entering into Edit Mode
 The current cell can be enter into edit mode by pressing <kbd>F2</kbd> key or clicking (touch also supported) the cell. The edit mode of the cell can be changed to the single click or double click by setting the [EditMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_EditMode) property.
@@ -52,8 +52,8 @@ Me.sfDataGrid.EditMode = EditMode.DoubleClick
 {%endtabs%}
 
 ## Cursor Placement
-When the cell enters into edit mode, cursor is placed based on [EditorSelectionBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_EditorSelectionBehavior) property.
-The following types of [EditorSelectionBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Enums.EditorSelectionBehavior.html) is available,
+When the cell enters into edit mode, cursor is placed based on [EditorSelectionBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_EditorSelectionBehavior) property. The following types of [EditorSelectionBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Enums.EditorSelectionBehavior.html) is available,
+
 
 * `Default` – Moves the cursor to the clicked position on the text.
 * `SelectAll`– selects the text of edit element loaded inside cell.
@@ -70,7 +70,7 @@ Me.sfDataGrid.EditorSelectionBehavior = EditorSelectionBehavior.SelectAll
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid Editing select all](Editing_images/Editing_Image2.png)
+![Editing select all](Editing_images/Editing_Image2.png)
 
 ## Customization Using Events
 
@@ -122,7 +122,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid Editing CurrentCellEndEdit ](Editing_images/Editing_Image3.png)
+![Editing CurrentCellEndEdit](Editing_images/Editing_Image3.png)
 
 ### Change style of editor control
 
@@ -150,7 +150,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid Editing changing style of editor control](Editing_images/Editing_Image4.png)
+![Editing changing style of editor control](Editing_images/Editing_Image4.png)
 
 ## Programmatic Editing 
 The editing can be handled programmatically by using the [CurrentCellManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Interactivity.CurrentCellManager.html) which has the helper methods for handling the editing.
@@ -206,7 +206,7 @@ Me.sfDataGrid.CurrentCell.CancelEdit()
 
 ## Change a cell value programmatically
 
-The value exists in a particular cell can be changed programmatically by using the row column index of the cell. 
+The value exists in a particular cell can be changed programmatically by using the row column index of the cell.
 
 {% tabs %}
 {% highlight c# %}

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Paging in Windows Forms Data Grid | Syncfusion®
 description: Paging in Data Grid supports data pagination, page navigation, and efficient viewing of large datasets through organized page-wise records.
@@ -9,11 +9,11 @@ documentation: ug
 
 # Paging in Windows Forms Data Grid
 
-[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) provides support to manipulate the data using [SfDataPager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataPager.SfDataPager.html) control.
+[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (WinForms Data Grid) provides support to manipulate the data using [SfDataPager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataPager.SfDataPager.html) control.
 
 ## Getting Started
 
-Follow the below steps to bind SfDataGrid with SfDataPager.
+Follow the below steps to bind Data Grid with SfDataPager.
 
 1.	 Create IEnumerable collection that you want to bind and set it to SfDataPager.Source property.
 2.	 Set [SfDataPager.PageSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.PagedCollectionView.html#Syncfusion_Data_PagedCollectionView_PageSize)  property to specify the number of records to be displayed per page.
@@ -384,11 +384,11 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-![winforms datagrid shown with DataPager](Paging_images/Paging1.png)
+![shown with DataPager](Paging_images/Paging1.png)
 
 ### Limitations
 1.	SfDataPager doesn’t accepts `DataTable` as Source.
-2. `AddNewRow` is not supported in SfDataGrid.
+2. `AddNewRow` is not supported in Data Grid.
 
 
 
@@ -675,14 +675,14 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Pagecount of datapager changed at runtime after filtering in winforms datagrid](Paging_images/Paging2.png)
+![Pagecount of datapager changed at runtime after filtering in](Paging_images/Paging2.png)
 
-Here, records are filtered based on the textbox text in clicking event of Filter button. Initially PageCount is 5 and it is changed as 1 once the records are filtered.
-You can refer the [sample](https://github.com/SyncfusionExamples/how-to-change-the-PageCount-at-runtime-when-data-loaded-on-demand-is-filtered-in-winforms-datapager) from here.
+Here, records are filtered based on the textbox text in clicking event of Filter button. Initially PageCount is 5 and it is changed as 1 once the records are filtered. You can refer the [sample](https://github.com/SyncfusionExamples/how-to-change-the-PageCount-at-runtime-when-data-loaded-on-demand-is-filtered-in-winforms-datapager) from here.
+
 
 ### Sorting complete collection
-You can sort the complete collection with on-demand paging by using [SfDataGrid.SortColumnsChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SortColumnsChanging) event.
-In this event, you can sort the complete underlying collection instead of sorting current page alone by resetting the caches.
+You can sort the complete collection with on-demand paging by using [SfDataGrid.SortColumnsChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SortColumnsChanging) event. In this event, you can sort the complete underlying collection instead of sorting current page alone by resetting the caches.
+
 
 {% tabs %}
 {% highlight c# %}
@@ -781,7 +781,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Complete collection loaded on-demand is sorted in winforms datagrid](Paging_images/Paging3.png)
+![Complete collection loaded on-demand is sorted in](Paging_images/Paging3.png)
 
 ### Limitations
 1.	UI Filtering is not supported. You can code in application level to filter the data.
@@ -804,7 +804,7 @@ Me.sfDataPager1.Style.NavigationButtonStyle.BackColor = Color.SeaGreen
 {% endhighlight %}
 {% endtabs %}
 
-![Style of navigation buttons changed in winforms datapager](Paging_images/Paging4.png)
+![Style of navigation buttons changed in datapager](Paging_images/Paging4.png)
 
 {% tabs %}
 {% highlight c# %}
@@ -817,7 +817,7 @@ Me.sfDataPager1.Style.PageButtonStyle.FocusedBackColor = Color.Silver
 {% endhighlight %}
 {% endtabs %}
 
-![Style of page buttons changed in winforms datapager](Paging_images/Paging5.png)
+![Style of page buttons changed in datapager](Paging_images/Paging5.png)
 
 ### Orientation
 SfDataPager allows you to arrange the child elements either horizontally or vertically. This can be achieved by using the [Orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataPager.SfDataPager.html#Syncfusion_WinForms_DataPager_SfDataPager_Orientation) Property. Orientation is an Enum type. The following table describes the Orientation enum values.
@@ -826,20 +826,20 @@ SfDataPager allows you to arrange the child elements either horizontally or vert
 <table>
 <tr>
 <th>
-Enum Value</th><th>
-Description</th></tr>
+Enum Value</th><th> Description</th></tr>
+
 <tr>
 <td>
-Horizontal</td><td>
-This is the default enum value for Orientation. Arranges all the navigation buttons and numeric buttons horizontally.
-{{'![Buttons arranged horizontally in winforms datapager](Paging_images/Paging6.png)'|markdownify}}
+Horizontal</td><td> This is the default enum value for Orientation. Arranges all the navigation buttons and numeric buttons horizontally. {{'![Buttons arranged horizontally in datapager](Paging_images/Paging6.png)'|markdownify}}
+
+
 
 </td></tr>
 <tr>
 <td>
-Vertical</td><td>
-Arranges all the navigation buttons and numeric buttons vertically.
-{{'![Buttons arrange vertically in winforms datapager](Paging_images/Paging7.png)'|markdownify}}
+Vertical</td><td> Arranges all the navigation buttons and numeric buttons vertically. {{'![Buttons arrange vertically in datapager](Paging_images/Paging7.png)'|markdownify}}
+
+
 
 </td></tr>
 </table>

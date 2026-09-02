@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Unbound Rows in Windows Forms Data Grid | Syncfusion®
 description: Unbound Rows in Data Grid display custom rows for calculations, summaries, and additional information independent of the data source.
@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Unbound Rows in Windows Forms Data Grid
-[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) allows to add **additional rows** at top and also bottom of the SfDataGrid which are **not bound with data object** from underlying data source. The unbound rows can add by using [SfDataGrid.UnboundRows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.UnboundRows.html) collection property. SfDataGrid allows to add any number of unbound rows. Unbound rows can be exported to excel and PDF.
+[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (WinForms Data Grid) allows to add **additional rows** at top and also bottom of the control which are **not bound with data object** from underlying data source. The unbound rows can add by using [SfDataGrid.UnboundRows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.UnboundRows.html) collection property. the control allows to add any number of unbound rows. Unbound rows can be exported to excel and PDF.
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid.UnboundRows.Add(new GridUnboundRow() { Position = VerticalPosition.Top });
@@ -17,11 +17,11 @@ this.sfDataGrid.UnboundRows.Add(new GridUnboundRow() { Position = VerticalPositi
 Me.sfDataGrid.UnboundRows.Add(New GridUnboundRow() With {.Position = VerticalPosition.Top})
 {% endhighlight %}
 {% endtabs %}
-![Windows forms datagrid showing unbound row at top](UnboundRow_images/windowsforms-datagrid-unbound-row-at-top.png)
+![showing unbound row at top](UnboundRow_images/windowsforms-datagrid-unbound-row-at-top.png)
 
 ## Positioning Unbound Rows
-Unbound row can be placed in top or bottom of the SfDataGrid. Unbound row positioned based on [GridUnboundRow.Position](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridUnboundRow.html#Syncfusion_WinForms_DataGrid_GridUnboundRow_Position) and [GridUnboundRow.ShowBelowSummary](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridUnboundRow.html#Syncfusion_WinForms_DataGrid_GridUnboundRow_ShowBelowSummary) properties.
-Below table shows the unbound row positioning based on property settings of Position and ShowBelowSummary.
+Unbound row can be placed in top or bottom of the Data Grid. Unbound row positioned based on [GridUnboundRow.Position](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridUnboundRow.html#Syncfusion_WinForms_DataGrid_GridUnboundRow_Position) and [GridUnboundRow.ShowBelowSummary](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridUnboundRow.html#Syncfusion_WinForms_DataGrid_GridUnboundRow_ShowBelowSummary) properties. Below table shows the unbound row positioning based on property settings of Position and ShowBelowSummary.
+
 <table>
 <tr>
 <td>
@@ -31,7 +31,7 @@ Below table shows the unbound row positioning based on property settings of Posi
 {{'**ShowBelowSummary**'| markdownify }}
 </td>
 <td>
-{{'**Position in DataGrid**'| markdownify }}
+{{'**Position in Data Grid**'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -66,7 +66,7 @@ Bottom
 True
 </td>
 <td>
-Unbound row placed at bottom of SfDataGrid. In this position, unbound row is {{'**not selectable**'| markdownify }}, {{'**not editable** '| markdownify }}and {{'**frozen** '| markdownify }}when scrolling.
+Unbound row placed at bottom of Data Grid. In this position, unbound row is {{'**not selectable**'| markdownify }}, {{'**not editable** '| markdownify }}and {{'**frozen** '| markdownify }}when scrolling.
 
 </td>
 </tr>
@@ -112,11 +112,11 @@ Me.sfDataGrid.UnboundRows.Add(New GridUnboundRow() With {.Position = VerticalPos
 {% endhighlight %}
 {% endtabs %}
 Below screen shot shows different unbound rows placed in all possible positions,
-![Windows forms datagrid showing positions of unbound row](UnboundRow_images/windowsforms-datagrid-positioning-unbound-row.png)
+![showing positions of unbound row](UnboundRow_images/windowsforms-datagrid-positioning-unbound-row.png)
 
 ## Populating Data for Unbound Rows
-The data for the unbound row can populated by handling [QueryUnboundRowInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event of SfDataGrid. This event occurs for each cell in unbound row whenever the row gets refreshed. [QueryUnboundRowInfoArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.QueryUnboundRowInfoArgs.html) of the `QueryUnboundRowInfo` event provides information about the cell triggered this event.
-The [QueryUnboundRowInfoArgs.Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.QueryUnboundRowInfoArgs.html#Syncfusion_WinForms_DataGrid_Events_QueryUnboundRowInfoArgs_Value) property can be get or set based on the [UnboundAction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.QueryUnboundRowInfoArgs.html#Syncfusion_WinForms_DataGrid_Events_QueryUnboundRowInfoArgs_UnboundAction). If `UnboundAction` is `QueryData` then the value can set for display. If the `UnboundAction` is `CommitData` then able to get the edited value.
+The data for the unbound row can populated by handling [QueryUnboundRowInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event of Data Grid. This event occurs for each cell in unbound row whenever the row gets refreshed. [QueryUnboundRowInfoArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.QueryUnboundRowInfoArgs.html) of the `QueryUnboundRowInfo` event provides information about the cell triggered this event. The [QueryUnboundRowInfoArgs.Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.QueryUnboundRowInfoArgs.html#Syncfusion_WinForms_DataGrid_Events_QueryUnboundRowInfoArgs_Value) property can be get or set based on the [UnboundAction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.QueryUnboundRowInfoArgs.html#Syncfusion_WinForms_DataGrid_Events_QueryUnboundRowInfoArgs_UnboundAction). If `UnboundAction` is `QueryData` then the value can set for display. If the `UnboundAction` is `CommitData` then able to get the edited value.
+
 {% tabs %}
 {% highlight c# %}
 //Select some records in SfDataGrid.
@@ -167,7 +167,7 @@ void sfDataGrid_QueryUnboundRowInfo(Object sender, QueryUnboundRowInfoArgs e)
 	End If
 {% endhighlight %}
 {% endtabs %}
-![Windows forms datagrid showing populating data for unbound rows](UnboundRow_images/windowsforms-datagrid-populating-data-for-unbound-rows.png)
+![showing populating data for unbound rows](UnboundRow_images/windowsforms-datagrid-populating-data-for-unbound-rows.png)
 
 ## Refreshing the Unbound Rows at Runtime
 The unbound rows can be add or remove using `UnboundRows` property which reflects in UI immediately. The `QueryUnboundRowInfo` event for the unbound row cells at runtime by invalidating the unbound row by calling [SfDataGrid.InValidateUnboundRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_InValidateUnboundRow_Syncfusion_WinForms_DataGrid_GridUnboundRow_System_Boolean_) method.
@@ -249,14 +249,14 @@ sfDataGrid.Style.UnboundRowStyle.TextColor = Color.Red
 
 {% endhighlight %}
 {% endtabs %}
-![Unbound row appearance customization in windows forms datagrid](UnboundRow_images/windowsforms-datagrid-appearance-customization.png)
+![Unbound row appearance customization in](UnboundRow_images/windowsforms-datagrid-appearance-customization.png)
 
 ## Customizing the Unbound Row's Behavior
-SfDataGrid allows to customize the operations like key navigation and UI related interactions by overriding the corresponding renderer associated with the unbound row cell. Each renderer have set of virtual methods for handling the behaviors. Creating new renderers also supported.
-The renderer of unbound row cell defined by [QueryUnboundRowInfoArgs.CellType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.QueryUnboundRowInfoArgs.html#Syncfusion_WinForms_DataGrid_Events_QueryUnboundRowInfoArgs_CellType) property in the `QueryUnboundRowInfo` event. If the `QueryUnboundRowInfoArgs.CellType` not defined then the UnboundRowCell set as default cell type.
+Data Grid allows to customize the operations like key navigation and UI related interactions by overriding the corresponding renderer associated with the unbound row cell. Each renderer have set of virtual methods for handling the behaviors. Creating new renderers also supported. The renderer of unbound row cell defined by [QueryUnboundRowInfoArgs.CellType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.QueryUnboundRowInfoArgs.html#Syncfusion_WinForms_DataGrid_Events_QueryUnboundRowInfoArgs_CellType) property in the `QueryUnboundRowInfo` event. If the `QueryUnboundRowInfoArgs.CellType` not defined then the UnboundRowCell set as default cell type.
+
 
 ### Overriding Existing CellType
-SfDataGrid allows to customize the unbound row cell behavior by overriding existing renderer and replace the default one in [UnboundRowCellRenderers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_UnboundRowCellRenderers).
+Data Grid allows to customize the unbound row cell behavior by overriding existing renderer and replace the default one in [UnboundRowCellRenderers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_UnboundRowCellRenderers).
 {% tabs %}
 {% highlight c# %}
 public class GridUnboundRowCellTextBoxRendererExt : GridUnboundRowCellRenderer
@@ -300,11 +300,11 @@ sfDataGrid.UnboundRowCellRenderers.Remove("UnboundRowCell")
 sfDataGrid.UnboundRowCellRenderers.Add("UnboundRowCell", New GridUnboundRowCellTextBoxRendererExt())
 {% endhighlight %}
 {% endtabs %}
-![Overriding existing cell type of unbound row in windows forms datagrid](UnboundRow_images/windowsforms-datagrid-overriding-existing-cell-type.png)
+![Overriding existing cell type of unbound row in](UnboundRow_images/windowsforms-datagrid-overriding-existing-cell-type.png)
 
 ### Custom Renderer
-SfDataGrid allows to customize the unbound row cell by creating new renderer, deriving from `GridUnboundRowCellRenderer` and setting the `QueryUnboundRowInfoArgs.CellType` property.
-Below code creates **DatePickerRenderer** to load the DatePicker as editor element in the first cell of unbound row.
+Data Grid allows to customize the unbound row cell by creating new renderer, deriving from `GridUnboundRowCellRenderer` and setting the `QueryUnboundRowInfoArgs.CellType` property. Below code creates **DatePickerRenderer** to load the DatePicker as editor element in the first cell of unbound row.
+
 {% tabs %}
 {% highlight c# %}
 // The custom unbound row cell renderer.
@@ -622,7 +622,7 @@ Private Sub sfDataGrid_QueryUnboundRowInfo(ByVal sender As Object, ByVal e As Qu
 End Sub
 {% endhighlight %}
 {% endtabs %}
-![Custom unbound cell renderer with month calendar control in Windows forms datagrid](UnboundRow_images/windowsforms-datagrid-custom-unbound-cell-renderer.png)
+![Custom unbound cell renderer with month calendar control in](UnboundRow_images/windowsforms-datagrid-custom-unbound-cell-renderer.png)
 
 ## Changing Unbound Row Height
 The height of unbound row can changed by using [SfDataGrid.QueryRowHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event,
@@ -651,7 +651,7 @@ Private Sub dataGrid_QueryRowHeight(ByVal sender As Object, ByVal e As QueryRowH
 End Sub
 {% endhighlight %}
 {% endtabs %}
-![Windows form datagrid showing height of unbound row](UnboundRow_images/windowsforms-datagrid-changing-unbound-row-height.png)
+![showing height of unbound row](UnboundRow_images/windowsforms-datagrid-changing-unbound-row-height.png)
 
 ## Exporting Unbound Rows
 

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Theme in Windows Forms Data Grid | Syncfusion®
 description: Theme support in Data Grid allows applying built-in themes, loading theme assemblies, and customizing visual appearance for a consistent UI.
@@ -7,7 +7,7 @@ control: Data Grid
 documentation: ug
 ---
 # Theme in Windows Forms Data Grid
-[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) offers six built in themes for professional representation as follows.
+[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (WinForms Data Grid) offers six built in themes for professional representation as follows.
 
 * Office2016Colorful
 * Office2016White
@@ -16,7 +16,7 @@ documentation: ug
 * Office2019Colorful
 * HighContrastBlack
 
-Theme can be applied to SfDataGrid by following the below steps:
+Theme can be applied to Data Grid by following the below steps:
 
 * [Load theme assembly](#load-theme-assembly)
 * [Apply theme](#apply-theme)
@@ -36,13 +36,13 @@ To set theme to `SfDataGrid`, the following assemblies should be added as refere
 </tr>
 <tr>
 <td>
-Syncfusion.Office2016Theme.WinForms       
+Syncfusion.Office2016Theme.WinForms
 </td>
 <td>
-Office2016Colorful<br>
-Office2016White<br>
-Office2016DarkGray<br>
-Office2016Black
+Office2016Colorful<br> Office2016White<br> Office2016DarkGray<br> Office2016Black
+
+
+
 </td>
 </tr>
 <tr>
@@ -109,7 +109,7 @@ End Module
 {% endtabs %}
 
 ## Apply theme
-Appearance of SfDataGrid can be changed by [ThemeName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) of SfDataGrid.
+Appearance of Data Grid can be changed by [ThemeName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) of the control.
 
 ## Office2016Colorful
 This option helps to set the Office2016Colorful Theme.
@@ -125,7 +125,7 @@ This option helps to set the Office2016Colorful Theme.
 {% endhighlight %}
 {% endtabs %}
 
-![Office2016colorful theme applied in winforms datagrid](Themes_images/Themes_img1.png)
+![Office2016colorful theme applied in](Themes_images/Themes_img1.png)
 
 ## Office2016White
 This option helps to set the Office2016White Theme.
@@ -141,7 +141,7 @@ This option helps to set the Office2016White Theme.
 {% endhighlight %}
 {% endtabs %}
 
-![Office2016white theme applied in winforms datagrid](Themes_images/Themes_img2.png)
+![Office2016white theme applied in](Themes_images/Themes_img2.png)
 
 ## Office2016DarkGray
 This option helps to set the Office2016DarkGray Theme.
@@ -157,7 +157,7 @@ This option helps to set the Office2016DarkGray Theme.
 {% endhighlight %}
 {% endtabs %}
 
-![Office2016darkgray theme applied in winforms datagrid](Themes_images/Themes_img3.png)
+![Office2016darkgray theme applied in](Themes_images/Themes_img3.png)
 
 ## Office2016Black
 This option helps to set the Office2016Black Theme.
@@ -173,7 +173,7 @@ This option helps to set the Office2016Black Theme.
 {% endhighlight %}
 {% endtabs %}
 
-![Office2016black theme applied in winforms datagrid](Themes_images/Themes_img4.png)
+![Office2016black theme applied in](Themes_images/Themes_img4.png)
 
 ## Office2019Colorful
 This option helps to set the Office2019Colorful Theme.
@@ -189,7 +189,7 @@ This option helps to set the Office2019Colorful Theme.
 {% endhighlight %}
 {% endtabs %}
 
-![Office2019colorful theme applied in winforms datagrid](Themes_images/Themes_img5.png)
+![Office2019colorful theme applied in](Themes_images/Themes_img5.png)
 
 ## HighContrastBlack
 This option helps to set the HighContrastBlack Theme.
@@ -205,4 +205,4 @@ This option helps to set the HighContrastBlack Theme.
 {% endhighlight %}
 {% endtabs %}
 
-![Highcontrastblack theme applied in winforms datagrid](Themes_images/Themes_img6.png)
+![Highcontrastblack theme applied in](Themes_images/Themes_img6.png)

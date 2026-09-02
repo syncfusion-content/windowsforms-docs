@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Preview Rows in Windows Forms Data Grid | Syncfusion®
 description: Preview rows in Data Grid display additional record details within rows, offering customizable layouts and enhanced data visibility.
@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Preview Rows in Windows Forms Data Grid
-The [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) provides support to display additional information of rows. This can be expanded or collapsed using an expander or programmatically.
+The [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (WinForms Data Grid) provides support to display additional information of rows. This can be expanded or collapsed using an expander or programmatically.
 
 ## Show preview row
 
@@ -29,7 +29,7 @@ sfDataGrid.ExpandAllPreviewRow()
 {% endhighlight %}
 {% endtabs %}
 
-![Winforms datagrid shows the preview rows in the cell](PreviewRow_images/PreviewRow_img1.png)
+![shows the preview rows in the cell](PreviewRow_images/PreviewRow_img1.png)
 
 To display the custom text for each preview rows, use the [DrawPreviewRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event and initialize the [DrawPreviewRowEventArgs.Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.DrawPreviewRowEventArgs.html) property to change the display text of the preview rows.
 
@@ -53,11 +53,11 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Winforms datagrid shows to change text preview rows](PreviewRow_images/PreviewRow_img2.png)
+![shows to change text preview rows](PreviewRow_images/PreviewRow_img2.png)
 
 ## Expand and collapse preview rows
 
-The SfDataGrid allows you to expand or collapse the preview rows programmatically in different ways.
+The Data Grid allows you to expand or collapse the preview rows programmatically in different ways.
 
 ### Expand or collapse all the preview rows
 
@@ -106,7 +106,7 @@ sfDataGrid.ExpandAllPreviewRow()
 {% endhighlight %}
 {% endtabs %}
 
-![Winforms data grid is shown without Expand option of the preview rows](PreviewRow_images/PreviewRow_img7.png)
+![data grid is shown without Expand option of the preview rows](PreviewRow_images/PreviewRow_img7.png)
 
 #### Height customization
 
@@ -150,11 +150,11 @@ sfDataGrid.PreviewRowHeightMode = PreviewRowHeightMode.Auto
 {% endhighlight %}
 {% endtabs %}
 
-![Winforms data grid is shown to apply the preview row height mode in preview rows.](PreviewRow_images/PreviewRow_img8.png)
+![data grid is shown to apply the preview row height mode in preview rows.](PreviewRow_images/PreviewRow_img8.png)
 
 ## Appearance 
 
-The appearance of the preview rows can be changed by using the [PreviewRowStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_PreviewRowStyle) property. 
+The appearance of the preview rows can be changed by using the [PreviewRowStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_PreviewRowStyle) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -169,7 +169,7 @@ sfDataGrid.Style.PreviewRowStyle.TextColor = Color.White
 {% endhighlight %}
 {% endtabs %}
 
-![Winforms datagrid shows appearance of the preview rows](PreviewRow_images/PreviewRow_img3.png)
+![shows appearance of the preview rows](PreviewRow_images/PreviewRow_img3.png)
 
 ### Conditional Styling
 
@@ -208,7 +208,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Winforms datagrid shows conditional styling in the preview rows](PreviewRow_images/PreviewRow_img4.png)
+![shows conditional styling in the preview rows](PreviewRow_images/PreviewRow_img4.png)
 
 ### Setting preview row padding
 
@@ -233,7 +233,7 @@ sfDataGrid.PreviewRowPadding = New Padding(100, 5, 5, 5)
 {% endhighlight %}
 {% endtabs %}
 
-![Winforms datagrid shows with setting padding of the preview rows](PreviewRow_images/PreviewRow_img5.png)
+![shows with setting padding of the preview rows](PreviewRow_images/PreviewRow_img5.png)
 
 ### Display image in preview row using custom drawing
 
@@ -289,11 +289,11 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Winforms datagrid shows display the image in preview rows in the cell](PreviewRow_images/PreviewRow_img6.png)
+![shows display the image in preview rows in the cell](PreviewRow_images/PreviewRow_img6.png)
 
 ## Handling expand or collapse operations
 
-You can cancel the expanding operation while expanding the preview rows by using the [PreviewRowExpandingEventArgs.Cancel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.PreviewRowExpandingEventArgs.html) property in the [PreviewRowExpanding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event handler. 
+You can cancel the expanding operation while expanding the preview rows by using the [PreviewRowExpandingEventArgs.Cancel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.PreviewRowExpandingEventArgs.html) property in the [PreviewRowExpanding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event handler.
 
 {% tabs %}
 {% highlight c# %}

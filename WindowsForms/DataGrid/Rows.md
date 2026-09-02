@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Rows in Windows Forms Data Grid | Syncfusion®
 description: Rows in Data Grid support row headers, header customization, frozen rows and columns, row styling, and record management features.
@@ -22,7 +22,7 @@ Me.sfDataGrid1.ShowRowHeader = True
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid showing rowheader](Rows_images/img1.png)
+![showing rowheader](Rows_images/img1.png)
 
 ### Appearance
 
@@ -37,7 +37,7 @@ Me.sfDataGrid1.Style.RowHeaderStyle.BackColor = Color.CadetBlue
 {% endhighlight %}
 {% endtabs %}
 
-![Row header appearance customization in windows form datagrid](Rows_images/img2.png)
+![Row header appearance customization in](Rows_images/img2.png)
 
 ### Selection marker customization
 The appearance of the selection marker can be customized using the selection marker properties in `RowHeaderStyle`.
@@ -55,7 +55,7 @@ Me.sfDataGrid1.Style.RowHeaderStyle.SelectionBackColor = Color.White
 {% endhighlight %}
 {% endtabs %}
 
-![Row header appearance customization in windows form datagrid](Rows_images/img10.png)
+![Row header appearance customization in](Rows_images/img10.png)
 
 ### Row Indicators and its Description
 
@@ -70,7 +70,7 @@ Me.sfDataGrid1.Style.RowHeaderStyle.SelectionBackColor = Color.White
 </tr>
 <tr>
 <td>
-<img src= "Rows_images/AddNewRowIcon.png" alt="WinForms DataGrid AddNewRowIcon"/>
+<img src= "Rows_images/AddNewRowIcon.png" alt="WinForms Data Grid AddNewRowIcon"/>
 </td>
 <td>
 Denotes row is AddNewRow.
@@ -78,7 +78,7 @@ Denotes row is AddNewRow.
 </tr>
 <tr>
 <td>
-<img src= "Rows_images/rowError.png" alt="WinForms DataGrid rowError"/>
+<img src= "Rows_images/rowError.png" alt="WinForms Data Grid rowError"/>
 </td>
 <td>
 Denotes that the current row which has errors.
@@ -88,8 +88,8 @@ Denotes that the current row which has errors.
 
 ### Showing the Numbered Row Header
 
-RowHeader cell can be customized by using [DrawCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_DrawCell) event which is raised for each cell. The default column index of the row header cell is zero, the  style settings for a row header can be applied by using column index when it is enabled in SfDataGrid. 
-By default, the row header does not have the cell values. The numbers or any text can be set in the row header by setting the [DisplayText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.DrawCellEventArgs.html#Syncfusion_WinForms_DataGrid_Events_DrawCellEventArgs_DisplayText) which is available in the [DrawCellEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.DrawCellEventArgs.html) of `DrawCell` event.
+RowHeader cell can be customized by using [DrawCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_DrawCell) event which is raised for each cell. The default column index of the row header cell is zero, the  style settings for a row header can be applied by using column index when it is enabled in Data Grid. By default, the row header does not have the cell values. The numbers or any text can be set in the row header by setting the [DisplayText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.DrawCellEventArgs.html#Syncfusion_WinForms_DataGrid_Events_DrawCellEventArgs_DisplayText) which is available in the [DrawCellEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.DrawCellEventArgs.html) of `DrawCell` event.
+
 
 {% tabs %}
 {% highlight c# %}
@@ -121,7 +121,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid showing numbered row header](Rows_images/img3.png)
+![showing numbered row header](Rows_images/img3.png)
 
 ### Showing the image in RowHeader
 
@@ -129,7 +129,7 @@ You can display an image in the [RowHeader](https://help.syncfusion.com/cr/windo
 
 #### Using DrawCell event 
 
-The [RowHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridBaseStylesMap.html#Syncfusion_Windows_Forms_Grid_GridBaseStylesMap_RowHeader) cell can be customized by using the [DrawCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_DrawCell) event raised for each cell. The default column index of the row header cell is zero. The style settings for a row header can be applied using the column index when it is enabled in the SfDataGrid. The image can be drawn in the row header using `DrawImage`.          
+The [RowHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridBaseStylesMap.html#Syncfusion_Windows_Forms_Grid_GridBaseStylesMap_RowHeader) cell can be customized by using the [DrawCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_DrawCell) event raised for each cell. The default column index of the row header cell is zero. The style settings for a row header can be applied using the column index when it is enabled in the Data Grid. The image can be drawn in the row header using `DrawImage`.
 
 {% tabs %}
 {% highlight c# %}
@@ -239,13 +239,13 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid showing image in rowheader](Rows_images/img9.png)
+![showing image in rowheader](Rows_images/img9.png)
 
 ## Header Row
 
-Header row is present in top of the SfDataGrid which has column headers in it. Column header describes the caption to identify the column content.
+Header row is present in top of the Data Grid which has column headers in it. Column header describes the caption to identify the column content.
 
-![Windows forms datagrid showing header row](Rows_images/img4.png)
+![showing header row](Rows_images/img4.png)
 
 ### Appearance
 
@@ -264,10 +264,10 @@ Me.sfDataGrid1.Style.HeaderStyle.Font.Bold = True
 {% endhighlight %}
 {% endtabs %}
 
-![Header row appearance customization in windows forms datagrid](Rows_images/img5.png)
+![Header row appearance customization in](Rows_images/img5.png)
 
-The appearance of any particular column header can be customized by using 
-[GridColumnBase.HeaderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_HeaderStyle) property.
+The appearance of any particular column header can be customized by using [GridColumnBase.HeaderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_HeaderStyle) property.
+
 
 {% tabs %}
 {% highlight c# %}
@@ -282,7 +282,7 @@ Me.sfDataGrid1.Columns("OrderID").HeaderStyle.Font.Bold = True
 {% endhighlight %}
 {% endtabs %}
 
-![Specific column header appearance customization in windows forms datagrid](Rows_images/img6.png)
+![Specific column header appearance customization in](Rows_images/img6.png)
 
 ### Font orientation for Header Row
 
@@ -299,7 +299,7 @@ Me.sfDataGrid1.Style.HeaderStyle.Font.Orientation = 45
 {% endhighlight %}
 {% endtabs %}
 
-![Font orientation customization in header row of Windows forms datagrid](Rows_images/img8.png)
+![Font orientation customization in header row of](Rows_images/img8.png)
 
 ### Text alignment for Header Row
 
@@ -320,7 +320,7 @@ Me.sfDataGrid1.Style.HeaderStyle.VerticalAlignment = System.Windows.Forms.Visual
 {% endhighlight %}
 {% endtabs %}
 
-![Text alignment customization of header cell in windows forms datagrid](Rows_images/img11.png)
+![Text alignment customization of header cell in](Rows_images/img11.png)
 
 ### Text wrapping for Header Row
 
@@ -337,7 +337,7 @@ Me.sfDataGrid1.Columns("CustomerID").AllowHeaderTextWrapping = True
 {% endhighlight %}
 {% endtabs %} 
 
-![Text wrapping for header cell in windows forms datagrid](Rows_images/img12.png)
+![Text wrapping for header cell in](Rows_images/img12.png)
 
 ### Hiding Header Row
 
@@ -351,7 +351,7 @@ Me.sfDataGrid1.HeaderRowHeight = 0
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid showing hidden headerrow](Rows_images/img7.png)
+![showing hidden headerrow](Rows_images/img7.png)
 
 ## Freeze Panes 
 The rows and column can freeze in view like excel. The rows and columns can be freeze by setting following properties,
@@ -370,7 +370,7 @@ Description
 {{'[FrozenRowCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_FrozenRowCount)'| markdownify }}
 </td>
 <td>
-Set the frozen rows count at top of the SfDataGrid.
+Set the frozen rows count at top of the Data Grid.
 </td>
 </tr>
 <tr>
@@ -378,7 +378,7 @@ Set the frozen rows count at top of the SfDataGrid.
 {{'[FooterRowCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_FooterRowCount)'| markdownify }}
 </td>
 <td>
-Set the footer rows count at bottom of the SfDataGrid.
+Set the footer rows count at bottom of the Data Grid.
 </td>
 </tr>
 <tr>
@@ -386,7 +386,7 @@ Set the footer rows count at bottom of the SfDataGrid.
 {{'[FrozenColumnCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_FrozenColumnCount)'| markdownify }}
 </td>
 <td>
-Set the frozen columns count in left side of the SfDataGrid.
+Set the frozen columns count in left side of the Data Grid.
 </td>
 </tr>
 <tr>
@@ -394,7 +394,7 @@ Set the frozen columns count in left side of the SfDataGrid.
 {{'[FooterColumnCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_FooterColumnCount)'| markdownify }}
 </td>
 <td>
-Set the footer columns in right side of the SfDataGrid.
+Set the footer columns in right side of the Data Grid.
 </td>
 </tr>
 </table>
@@ -419,7 +419,7 @@ Me.sfDataGrid1.FooterRowCount = 2
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid showing frozen row and footer row](Rows_images/FreezePanes_img1.png)
+![showing frozen row and footer row](Rows_images/FreezePanes_img1.png)
 
 ### Freezing Columns
 The columns can be freeze in view at left and right like Excel by setting the `FrozenColumnCount` and `FooterColumnCount` properties.
@@ -440,7 +440,7 @@ Me.sfDataGrid1.FrozenColumnCount = 2
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid showing frozen column and footer column](Rows_images/FreezePanes_img2.png)
+![showing frozen column and footer column](Rows_images/FreezePanes_img2.png)
 
 ### Appearance
 
@@ -456,7 +456,7 @@ Me.sfDataGrid1.Style.FreezePaneLineStyle.Color = System.Drawing.Color.BlueViolet
 {% endhighlight %}
 {% endtabs %}
 
-![Frozen line appearance customization in windows forms datagrid](Rows_images/FreezePanes_img3.png)
+![Frozen line appearance customization in](Rows_images/FreezePanes_img3.png)
 
 #### Freeze Line Weight
 Freeze line weight or thickness can be changed by setting the [FreezePaneLineStyle.Weight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.FreezePaneLineStyleInfo.html#Syncfusion_WinForms_DataGrid_Styles_FreezePaneLineStyleInfo_Weight) property.
@@ -469,11 +469,11 @@ Me.sfDataGrid1.Style.FreezePaneLineStyle.Weight = 3
 {% endhighlight %}
 {% endtabs %}
 
-![Freeze line weight customization in windows forms datagrid](Rows_images/FreezePanes_img4.png)
+![Freeze line weight customization in](Rows_images/FreezePanes_img4.png)
 
 #### Changing the Freeze Line Style
-An appearance of the freeze pane line can be customized by using [DrawFreezePaneLine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event. The freeze pane line type can be check by using [LineType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.DrawFreezePaneLineArgs.html#Syncfusion_WinForms_DataGrid_Events_DrawFreezePaneLineArgs__ctor_System_Drawing_Graphics_System_Drawing_Point_System_Drawing_Point_Syncfusion_WinForms_DataGrid_Enums_LineType_System_Boolean_System_Object_) property which indicates freeze pane line type such as `FrozenRow`, `FooterRow`, `FrozenColumn`, `FooterColumn. The `e.Handled` property which is available in the 
-[Draw​Freeze​Pane​Line​Args ](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.DrawFreezePaneLineArgs.html) should be enabled to draw the custom line.
+An appearance of the freeze pane line can be customized by using [DrawFreezePaneLine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event. The freeze pane line type can be check by using [LineType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.DrawFreezePaneLineArgs.html#Syncfusion_WinForms_DataGrid_Events_DrawFreezePaneLineArgs__ctor_System_Drawing_Graphics_System_Drawing_Point_System_Drawing_Point_Syncfusion_WinForms_DataGrid_Enums_LineType_System_Boolean_System_Object_) property which indicates freeze pane line type such as `FrozenRow`, `FooterRow`, `FrozenColumn`, `FooterColumn. The `e.Handled` property which is available in the [Draw​Freeze​Pane​Line​Args ](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.DrawFreezePaneLineArgs.html) should be enabled to draw the custom line.
+
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.DrawFreezePaneLine += SfDataGrid_DrawFreezePaneLine;
@@ -504,7 +504,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid showing freeze line with dotted style](Rows_images/FreezePanes_img5.png)
+![showing freeze line with dotted style](Rows_images/FreezePanes_img5.png)
 
 #### Changing the Back Color of Freeze Line based on Freeze Line LineType
 By default, the back color of the freeze pane line cannot be changed based on the freeze pane line type. But it can be customized by drawing the line using the `DrawFreezePaneLine` event based on the freeze pane line type. The `e.Handled` property which is available in the `DrawFreezePane​Line​Args` should be enabled to draw the custom line.
@@ -561,11 +561,11 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid showing conditional freeze line styling](Rows_images/FreezePanes_img6.png)
+![showing conditional freeze line styling](Rows_images/FreezePanes_img6.png)
 
 ## Loop through Records
 
-The records in a view can be looped using [SfDataGrid.View.Records](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.CollectionViewAdv.html#Syncfusion_Data_CollectionViewAdv_Records) collection. 
+The records in a view can be looped using [SfDataGrid.View.Records](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.CollectionViewAdv.html#Syncfusion_Data_CollectionViewAdv_Records) collection.
 
 {% tabs %}
 {% highlight c# %}
