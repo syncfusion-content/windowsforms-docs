@@ -7,8 +7,8 @@ control: Calculator
 documentation: ug
 ---
 
-# About Syncfusion® Windows Forms Calculator Control
+# About Syncfusion® WinForms Calculator Control
 
-The Essential<sup>®</sup> Tools CalculatorControl encapsulates the functionality of a standard calculator. It provides an easy way to implement a complete calculator in your applications. The value of the CalculatorControl in the form is maintained internally and also provides the value in the format required. The CalculatorValue class provides methods to get the value of the CalculatorControl as a String or as a Double Value. It supports Office2007 color schemes.
+The Essential<sup>®</sup> Tools WinForms Calculator Control encapsulates the functionality of a standard calculator. It provides an easy way to implement a complete calculator in your applications. The value of the WinForms Calculator Control in the form is maintained internally and also provides the value in the format required. The CalculatorValue class provides methods to get the value of the WinForms Calculator Control as a String or as a Double Value. It supports Office2007 color schemes.
 
 ![Overview of Calculator](Overview_images/Overview_img110.png) 

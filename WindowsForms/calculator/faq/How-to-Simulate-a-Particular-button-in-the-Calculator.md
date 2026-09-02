@@ -7,9 +7,9 @@ control: Calculator
 documentation: ug
 ---
 
-# How to Simulate a Button in Windows Forms Calculator
+# How to Simulate a Button in WinForms Calculator
 
-We can use [Calculator.ButtonAction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_ButtonAction_Syncfusion_Windows_Forms_Tools_CalcActions_) method for this. When the user clicks the button, the [ButtonAction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_ButtonAction_Syncfusion_Windows_Forms_Tools_CalcActions_) method of the Calculator control will call back the action of the particular button (in this example it is "=" button) and displays the result in the textbox area, using [CalcActions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalcActions.html) Enumerator. This enumerator has all the actions that can be assigned to the calculator buttons including digits and arithmetic operators also.
+We can use [Calculator.ButtonAction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_ButtonAction_Syncfusion_Windows_Forms_Tools_CalcActions_) method for this. When the user clicks the button, the [ButtonAction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_ButtonAction_Syncfusion_Windows_Forms_Tools_CalcActions_) method of the WinForms Calculator control will call back the action of the particular button (in this example it is "=" button) and displays the result in the textbox area, using [CalcActions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalcActions.html) Enumerator. This enumerator has all the actions that can be assigned to the WinForms Calculator buttons including digits and arithmetic operators also.
 
 {% tabs %}
 {% highlight C# %}

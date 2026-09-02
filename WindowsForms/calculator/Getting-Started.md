@@ -7,7 +7,7 @@ control: Calculator
 documentation: ug
 ---
 
-# Getting Started with Windows Forms Calculator
+# Getting Started with WinForms Calculator
 
 ## Assembly deployment
 
@@ -17,17 +17,17 @@ You can find more details about installing the NuGet package in a Windows Forms 
  
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
 
-## Create a simple application with Calculator
+## Create a simple application with WinForms Calculator
 
-You can create a Windows Forms application with the [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) using the following steps:
+You can create a Windows Forms application with the [WinForms Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) using the following steps:
 
 ## Create a project
 
-Create a new Windows Forms project in Visual Studio to display the [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html).
+Create a new Windows Forms project in Visual Studio to display the [WinForms Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html).
 
 ## Add control through designer
 
-The [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) can be added to an application by dragging it from the toolbox to a designer view. The following required assembly references will be added automatically to the project:
+The [WinForms Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) can be added to an application by dragging it from the toolbox to a designer view. The following required assembly references will be added automatically to the project:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -51,7 +51,7 @@ To add the control manually in C#, follow the given steps:
     * Syncfusion.Tools.Base 
     * Syncfusion.Tools.Windows
 
-2. Include the [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) namespace **Syncfusion.Windows.Forms.Tools;**.
+2. Include the [WinForms Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) namespace **Syncfusion.Windows.Forms.Tools;**.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -65,7 +65,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-3. Create a [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) instance, and add it to the form.
+3. Create a [WinForms Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) instance, and add it to the form.
 
 {% capture codesnippet2 %}
 {% tabs %}
