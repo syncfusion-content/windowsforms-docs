@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Importing in Windows Forms Grid Control
-The [GridExcelConverterControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridExcelConverterControl.html) provides support to import the content from Excel sheet to GridControl. 
+The [GridExcelConverterControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridExcelConverterControl.html) provides support to import the content from Excel sheet to WinForms Grid Control. 
 
 The following assembly files should be added to the application reference folder,
 
@@ -17,7 +17,7 @@ The following assembly files should be added to the application reference folder
 
 N> **Syncfusion.XlsIO.Base** libraries are used to support conversion of the grid contents to Excel. 
 
-The [ExcelToGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridExcelConverterControl.html#Syncfusion_GridExcelConverter_GridExcelConverterControl_ExcelToGrid_Syncfusion_XlsIO_IWorkbook_) method is used to import the entire Excel sheet to GridControl. In this technique, the entire cells from Excel sheet will be imported to GridControl. The following styles can be imported to GridControl from Excel,
+The [ExcelToGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridExcelConverterControl.html#Syncfusion_GridExcelConverter_GridExcelConverterControl_ExcelToGrid_Syncfusion_XlsIO_IWorkbook_) method is used to import the entire Excel sheet to Grid Control. In this technique, the entire cells from Excel sheet will be imported to the control. The following styles can be imported to the control from Excel,
 
 * Font
 * BackColor and ForeColor
@@ -30,7 +30,7 @@ The [ExcelToGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExc
 * Column width
 * Freeze panes
 
-The following example shows the GridControl is imported from Excel sheet,
+The following example shows the Grid Control is imported from Excel sheet,
 {% tabs %}
 {% highlight c# %}
 GridExcelConverterControl excelConverter = new GridExcelConverterControl();
@@ -68,7 +68,7 @@ void excelConverter_QueryImportExportCellInfo(object sender, GridImportExportCel
        if (e.Action == GridConverterAction.Import)
         {
 
-// Setting backcolor for second row cells in GridControl.
+// Setting backcolor for second row cells in Grid Control.
             if (e.RowIndex == 9)
              {
                  e.GridCell.BackColor = Color.Pink;
@@ -96,7 +96,7 @@ Private Sub excelConverter_QueryImportExportCellInfo(ByVal sender As Object, ByV
  ' Checking whether it is Importing action
    If e.Action = GridConverterAction.Import Then
  
- ' Setting backcolor for second row cells in GridControl.
+ ' Setting backcolor for second row cells in Grid Control.
         If e.RowIndex = 9 Then
              e.GridCell.BackColor = Color.Pink
              e.GridCell.CellValue = e.ExcelCell.Value
@@ -116,7 +116,7 @@ End Sub
 ![Importing_img2](Importing_images/Importing_img2.jpeg)
 
 ## Virtual Importing
-To increase the performance of importing, the data of GridControl can be imported virtually (On-Demand mode) from the Excel sheet. This technique is the efficient way to import the Excel sheet to GridControl when it is needed. 
+To increase the performance of importing, the data of Grid Control can be imported virtually (On-Demand mode) from the Excel sheet. This technique is the efficient way to import the Excel sheet to the control when it is needed. 
 
 The following two methods are used to import the Excel as virtually,
 
@@ -223,7 +223,7 @@ N> Please refer to the following dashboard sample for more details about Virtual
 N> &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\[Version_No]\Windows\Grid.Windows\Samples\Importing\Virtual Importing\CS
 
 ### Importing without Borders and Styles
-By default, the styles and borders will be imported to GridControl when importing as a virtual grid. This functionality can be handled by using [ImportBorders](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridExcelConverterControl.html#Syncfusion_GridExcelConverter_GridExcelConverterControl_ImportBorders) and [ImportStyles](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridExcelConverterControl.html#Syncfusion_GridExcelConverter_GridExcelConverterControl_ImportStyles) properties.
+By default, the styles and borders will be imported to Grid Control when importing as a virtual grid. This functionality can be handled by using [ImportBorders](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridExcelConverterControl.html#Syncfusion_GridExcelConverter_GridExcelConverterControl_ImportBorders) and [ImportStyles](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridExcelConverterControl.html#Syncfusion_GridExcelConverter_GridExcelConverterControl_ImportStyles) properties.
 
 N> The performance of the virtual importing can also be increased by disabling the `ImportBorders` and `ImportStyles` properties.
 

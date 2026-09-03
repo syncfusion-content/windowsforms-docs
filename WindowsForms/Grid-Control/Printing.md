@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Printing in Windows Forms Grid Control
-The GridControl has in-built support for printing. To print the contents of the grid, convert the grid into the printable document using [GridPrintDocument](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridPrintDocument.html) and pass it to the [PrintDialog](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.printdialog?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0). 
+The WinForms Grid Control has in-built support for printing. To print the contents of the grid, convert the grid into the printable document using [GridPrintDocument](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridPrintDocument.html) and pass it to the [PrintDialog](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.printdialog?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0). 
 
 {% tabs %}
 {% highlight c# %}
@@ -104,7 +104,7 @@ End Sub
 {% endtabs %}
 
 ## Print Settings
-GridControl supports all the default settings of the printing. This section explains about the additional settings and the usages of [GridPrintDocument](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridPrintDocument.html) and [GridPrintDocumentAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridPrintDocumentAdv.html).
+Grid Control supports all the default settings of the printing. This section explains about the additional settings and the usages of [GridPrintDocument](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridPrintDocument.html) and [GridPrintDocumentAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridPrintDocumentAdv.html).
 
 The `GridPrintDocumentAdv` class is available in the [Syncfusion.GridHelperClasses.Windows.dll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.html) assembly. So, this assembly needs to be added into the assembly reference.
 
@@ -409,7 +409,7 @@ End Sub
 The printing options of the grid can be customized by using the following methods.
 
 ### Applying Header Colors while Printing
-The cell styles can be changed dynamically on printing the grid by using [PrintingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_PrintingMode) property. The following code snippet is used to set the header colors for the GridControl only on the printed document,
+The cell styles can be changed dynamically on printing the grid by using [PrintingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_PrintingMode) property. The following code snippet is used to set the header colors for the Grid Control only on the printed document,
 {% tabs %}
 {% highlight c# %}
 this.gridControl1.QueryCellInfo += new GridQueryCellInfoEventHandler(gridControl1_QueryCellInfo);
@@ -576,7 +576,7 @@ End Sub
 {% endtabs %}
 
 ### Print the Selected Range of the Cells 
-To print only the selected range of cells from the grid, set the [PrintRange](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing.printrange?view=dotnet-plat-ext-7.0&viewFallbackFrom=net-5.0) value as `Selection`. It will print the selected range of cells or the selected page from the GridControl. 
+To print only the selected range of cells from the grid, set the [PrintRange](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing.printrange?view=dotnet-plat-ext-7.0&viewFallbackFrom=net-5.0) value as `Selection`. It will print the selected range of cells or the selected page from the Grid Control. 
 {% tabs %}
 {% highlight c# %}
 GridPrintDocument gridPrintDocument = new GridPrintDocument(this.gridControl1, true);

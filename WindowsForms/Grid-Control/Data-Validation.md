@@ -8,11 +8,11 @@ documentation: ug
 ---
 # Data Validation in Windows Forms Grid Control
 
-GridControl provides support to validate the cell while editing. When an incorrect data is entered in the cell, it will display an error icon and an error message.  It is also possible to display error icon in row header.
+Grid Control provides support to validate the cell while editing. When an incorrect data is entered in the cell, it will display an error icon and an error message.  It is also possible to display error icon in row header.
 
 ## Built-in validation
 
-The GridControl has the built-in data validation. It will shows the error icon on the current cell to notify the error is occurred. The visibility of the error icon can be changed by setting the setting [ShowErrorIcon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCurrentCell.html#Syncfusion_Windows_Forms_Grid_GridCurrentCell_ShowErrorIcon) and [ShowRowHeaderErrorIcon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_ShowRowHeaderErroricon) property.  
+The Grid Control has the built-in data validation. It will shows the error icon on the current cell to notify the error is occurred. The visibility of the error icon can be changed by setting the setting [ShowErrorIcon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCurrentCell.html#Syncfusion_Windows_Forms_Grid_GridCurrentCell_ShowErrorIcon) and [ShowRowHeaderErrorIcon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_ShowRowHeaderErroricon) property.  
 
 {% tabs %}
 {% highlight c# %}
@@ -36,8 +36,7 @@ N> The default value for the [ShowErrorIcon](https://help.syncfusion.com/cr/wind
 
 ![DataValidation_img1](DataValidation_images/DataValidation_img1.jpeg)
 
-
-GridControl validates the cell based on the [CellValueType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_CellValueType) property and shows the error message. If `CellValueType` is `int` type and user enters `string` value, then the grid will automatically throw the error message like “Value(x) is not a valid value for Int32” in a message box. Whereas, `x` denotes the entered cell value.
+Grid Control validates the cell based on the [CellValueType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_CellValueType) property and shows the error message. If `CellValueType` is `int` type and user enters `string` value, then the grid will automatically throw the error message like “Value(x) is not a valid value for Int32” in a message box. Whereas, `x` denotes the entered cell value.
 
 By default the error provider will show a popup while the exception is occurred. When you want to disable this popup, set the [ShowErrorMessageBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCurrentCell.html#Syncfusion_Windows_Forms_Grid_GridCurrentCell_ShowErrorMessageBox) property to `false`.
 
