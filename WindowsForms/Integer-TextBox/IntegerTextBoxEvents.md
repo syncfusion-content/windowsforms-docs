@@ -7,7 +7,7 @@ control: Tools
 documentation: ug
 ---
 
-# Events in Windows Forms IntegerTextBox
+# Events in WinForms Integer TextBox
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
