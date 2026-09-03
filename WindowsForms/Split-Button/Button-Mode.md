@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Button Mode in Windows Forms Split Button | Syncfusion
 description: Button Mode supports normal and toggle behaviors, including configurable checked and unchecked button states.
@@ -51,7 +51,7 @@ Setting Button State for Toggle Mode
 {% endhighlight %}
 {% endtabs %}
 
-You can set the button state using the _IsButtonChecked_ property. When this is set to true button will be in _Checked_ state. When this is set to false button will be in Unchecked state. This Property will active only When this SplitButton in Toggle Mode.
+You can set the button state using the _IsButtonChecked_ property. When this is set to true button will be in _Checked_ state. When this is set to false button will be in Unchecked state. This Property will active only When this WinForms Split Button in Toggle Mode.
 
 The following code illustrates how to set the button in checked state:
 

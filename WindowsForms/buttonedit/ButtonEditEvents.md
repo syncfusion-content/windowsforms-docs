@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Events in Windows Forms ButtonEdit | Syncfusion®
 description: ButtonEdit events provide notifications for child button interactions, border changes, and custom event handling scenarios.
@@ -9,7 +9,7 @@ documentation: ug
 
 # Events in Windows Forms ButtonEdit
 
-The [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) events are discussed in the below sections.
+The [WinForms ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) events are discussed in the below sections.
 
 ## ButtonClicked Event
 
@@ -38,21 +38,21 @@ End Sub
 
 ## Border Events
 
-The [Border3DStyleChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) and [BorderSidesChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) events are raised whenever [Border3DStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html#Syncfusion_Windows_Forms_Tools_ButtonEdit_Border3DStyle) and [BorderSides](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html#Syncfusion_Windows_Forms_Tools_ButtonEdit_BorderSides) properties values are changed in [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control.
+The [Border3DStyleChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) and [BorderSidesChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) events are raised whenever [Border3DStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html#Syncfusion_Windows_Forms_Tools_ButtonEdit_Border3DStyle) and [BorderSides](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html#Syncfusion_Windows_Forms_Tools_ButtonEdit_BorderSides) properties values are changed in [WinForms ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control.
 
 <table>
 <tr>
 <th>
-ButtonEdit Properties</th><th>
+WinForms ButtonEdit Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
 Border3DStyleChanged</td><td>
-Raised when Border3DStyle property of ButtonEdit control is changed.</td></tr>
+Raised when Border3DStyle property of WinForms ButtonEdit control is changed.</td></tr>
 <tr>
 <td>
 BorderSidesChanged</td><td>
-Raised when BorderSides property of ButtonEdit control is changed.</td></tr>
+Raised when BorderSides property of WinForms ButtonEdit control is changed.</td></tr>
 </table>
 
 {% tabs %}
@@ -93,7 +93,7 @@ Description</th></tr>
 <tr>
 <td>
 Click</td><td>
-Occurs when the control is clicked. This event calls the ButtonEdit.HandleChildButtonClicked method. Using this method, we can access the corresponding control and customize it.</td></tr>
+Occurs when the control is clicked. This event calls the WinForms ButtonEdit.HandleChildButtonClicked method. Using this method, we can access the corresponding control and customize it.</td></tr>
 <tr>
 <td>
 TextChanged</td><td>
@@ -121,14 +121,14 @@ Raised when the mouse pointer rests the control. This event calls HandleChildBut
 <tr>
 <td>
 BackColorChanged</td><td>
-Raised when BackColor property of the ButtonEdit control is changed. This event calls HandleChildButtonBackColorChanged method. Using this method, we can access the corresponding control and customize it.</td></tr>
+Raised when BackColor property of the WinForms ButtonEdit control is changed. This event calls HandleChildButtonBackColorChanged method. Using this method, we can access the corresponding control and customize it.</td></tr>
 </table>
 
 ## Click Event
 
-You can display CalendarPopup on [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) Child button click event. It can be done using the below steps.
+You can display CalendarPopup on [WinForms ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) Child button click event. It can be done using the below steps.
 
-1. Drag and drop TableLayoutPanel and add ButtonEdit control on first row and resize to its fit.
+1. Drag and drop TableLayoutPanel and add WinForms ButtonEdit control on first row and resize to its fit.
 2. Remove unwanted columns in TableLayoutPanel.
 3. Create an instance of [CalendarPopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalendarPopup.html) and [MonthCalendarAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html) control and add MonthCalendarAdv in CalendarPopup.
 4. Add the CalendarPopup control in second row.
@@ -223,7 +223,7 @@ End Sub
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-6. The event DateSelected can also be handled to display the selected date in the textbox of ButtonEdit control.
+6. The event DateSelected can also be handled to display the selected date in the textbox of WinForms ButtonEdit control.
    
 {% capture codesnippet3 %}
 {% tabs %}
