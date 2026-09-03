@@ -7,9 +7,9 @@ control: HTMLUI
 documentation: ug
 ---
 
-# HTML Format in Windows Forms HTMLUI
+# HTML Format in WinForms HTML Viewer
 
-HTMLUI allows the user to apply formats to the elements at run time. The HTMLFormat class creates a format for the HTML elements displayed in the HTMLUI control. The user can apply the format on the execution of some events based on the necessity of the application.
+WinForms HTML Viewer allows the user to apply formats to the elements at run time. The HTMLFormat class creates a format for the HTML elements displayed in the WinForms HTML Viewer control. The user can apply the format on the execution of some events based on the necessity of the application.
 
 {% tabs %}
 

@@ -7,11 +7,11 @@ control: HTMLUI
 documentation: ug
 ---
 
-# Control Events in Windows Forms HTMLUI
+# Control Events in WinForms HTML Viewer
 
-HTMLUI control comes with a rich set of events to help the application developer in keeping track of the execution. These events are programmed based on the Event arguments containing data related to the event.
+WinForms HTML Viewer control comes with a rich set of events to help the application developer in keeping track of the execution. These events are programmed based on the Event arguments containing data related to the event.
 
-The events executed by the HTMLUI control are as follows:
+The events executed by the WinForms HTML Viewer control are as follows:
 
 * [LinkClicked event](#linkclicked-event)
 * [LoadStarted event](#loadstarted-event)
@@ -94,7 +94,7 @@ End Sub
 
 ## LoadStarted event
 
-This [LoadStarted event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html) is raised when a new HTML document has started loading into the HTMLUI control from the specified resource.
+This [LoadStarted event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html) is raised when a new HTML document has started loading into the WinForms HTML Viewer control from the specified resource.
 
 {% tabs %}
 
@@ -140,7 +140,7 @@ End Sub
 
 ## LoadFinished event
 
-This [LoadFinished event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html) is raised after the loading of HTML document inside the HTMLUI control is completed.
+This [LoadFinished event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html) is raised after the loading of HTML document inside the WinForms HTML Viewer control is completed.
 
 {% tabs %}
 
@@ -236,7 +236,7 @@ End Sub
 
 ## PreRenderDocument event
 
-This [PreRenderDocument event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html) is raised when the elements in the HTML document are created in the HTMLUI control, but their size and location are not calculated yet.
+This [PreRenderDocument event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html) is raised when the elements in the HTML document are created in the WinForms HTML Viewer control, but their size and location are not calculated yet.
 
 {% tabs %}
 
@@ -286,7 +286,7 @@ End Sub
 
 ## ShowTitleChanged event
 
-This [ShowTitleChanged event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html) is raised after the ShowTitle property of the HTMLUI control is changed. The event handler receives its data from the ValueChangedEventArguments. The following properties are associated with the ShowTitleChanged event handling.
+This [ShowTitleChanged event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html) is raised after the ShowTitle property of the WinForms HTML Viewer control is changed. The event handler receives its data from the ValueChangedEventArguments. The following properties are associated with the ShowTitleChanged event handling.
 
 
 
@@ -338,7 +338,7 @@ End Sub
 
 ## TitleChanged event
 
-The [TitleChanged event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html) is raised after the Title property of the HTMLUI control is changed. The Title value can be set explicitly by the user or it can be extracted from the title tag of the HTML document that is to be loaded into the HTMLUI control.
+The [TitleChanged event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html) is raised after the Title property of the WinForms HTML Viewer control is changed. The Title value can be set explicitly by the user or it can be extracted from the title tag of the HTML document that is to be loaded into the WinForms HTML Viewer control.
 
 The event handler receives its data from the ValueChangedEventArguments. The following properties are associated with the TitleChanged event handling.
 
@@ -731,9 +731,9 @@ End Sub
 
 {% endtabs %}
 
-## HTMLUI control events sample
+## WinForms HTML Viewer control events sample
 
-This sample illustrates the different events executed by the HTMLUI control.
+This sample illustrates the different events executed by the WinForms HTML Viewer control.
 
 
 

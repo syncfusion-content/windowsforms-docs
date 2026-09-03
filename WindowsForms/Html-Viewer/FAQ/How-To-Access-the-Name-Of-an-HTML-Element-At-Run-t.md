@@ -11,7 +11,7 @@ documentation: ug
 
 The element.Name property gets the name of the tag that defines the element as an attribute, and not the name of the element defined by the user. You can access the name of the element with the help of the element.Attributes property.
 
-The following HTML document illustrates how an input element with a name is declared and accessed in HTMLUI.
+The following HTML document illustrates how an input element with a name is declared and accessed in WinForms HTML Viewer.
 
 {% tabs %}
 

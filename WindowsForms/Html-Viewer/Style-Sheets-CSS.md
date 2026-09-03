@@ -7,9 +7,9 @@ control: HTMLUI
 documentation: ug
 ---
 
-# Style Sheets CSS in Windows Forms HTMLUI control
+# Style Sheets CSS in WinForms HTML Viewer control
 
-The support for style sheets is enabled in HTMLUI. This lets the user to define styles for HTML elements and decide the appearance of the HTML elements in the application. HTMLUI supports three types of style sheets.
+The support for style sheets is enabled in WinForms HTML Viewer. This lets the user to define styles for HTML elements and decide the appearance of the HTML elements in the application. WinForms HTML Viewer supports three types of style sheets.
 
 
 
@@ -86,7 +86,7 @@ Private Me.textBox.Attributes("style").Value = "background-color:red;"
 
 Cascading style sheets contain the style definitions for various HTML tags that are defined in the document. Style sheets are included in a HTML document to make the document more clearer so that the actual contents will be inside the document while the styles for these contents will be applied from an external resource. This is to improve the readability of the document and also to apply style changes to the existing document at different times when required.
 
-HTMLUI supports the following style sheets for adding styles to the HTML document:
+WinForms HTML Viewer supports the following style sheets for adding styles to the HTML document:
 
 ### Inline StyleSheet
 
@@ -270,7 +270,7 @@ File name and location: C:\MyProjects\StyleSheets\external.html
 
 {% endtabs %}
 
-The HTMLUI control uses two modes of applying styles to the HTML document with the help of the external style sheets.
+The WinForms HTML Viewer control uses two modes of applying styles to the HTML document with the help of the external style sheets.
 
 #### Design time
 
@@ -298,7 +298,7 @@ htmluiControl.LoadHTML(@"C:\MyProjects\StyleSheets\external.html")
 
 #### Run time
 
-HTMLUI is so flexible that the user can define styles for the HTML document at run time. The LoadCSS method of the HTMLUI control helps the user to load another CSS file to the current document at run time.
+WinForms HTML Viewer is so flexible that the user can define styles for the HTML document at run time. The LoadCSS method of the WinForms HTML Viewer control helps the user to load another CSS file to the current document at run time.
 
 {% tabs %}
 
@@ -328,7 +328,7 @@ htmluiControl.LoadCSS(@"C:\MyProjects\StyleSheets\NewStyleSheet.css")
 
 Internal and external styles are not only defined by mentioning the names of the tags, but also by the Style Class Selectors. The class selectors are used to define the styles under a common class name and apply the styles to different tags by specifying the name of the class as the value of the class attribute, for the specific element.
 
-HTMLUI supports two types of styles definitions for the HTML documents with the help of the class selectors as given below:
+WinForms HTML Viewer supports two types of styles definitions for the HTML documents with the help of the class selectors as given below:
 
 
 
@@ -450,7 +450,7 @@ htmluiControl.LoadHTML(@"C:\MyProjects\StyleSheets\idClass.html")
 
 ### CSS comments
 
-The HTMLUI control supports comments inside the cascading style sheet. The comments helps the developer to explain his ideas behind the styles and also help the user to understand the functionality of the styles. A CSS comment begins with '/*' and ends with '*/' (For eg., /*This is a comment*/). The comments are not visible in the browser at run time.
+The WinForms HTML Viewer control supports comments inside the cascading style sheet. The comments helps the developer to explain his ideas behind the styles and also help the user to understand the functionality of the styles. A CSS comment begins with '/*' and ends with '*/' (For eg., /*This is a comment*/). The comments are not visible in the browser at run time.
 
 {% tabs %}
 
@@ -474,13 +474,13 @@ div{color: red}
 
 ## Supported CSS attributes
 
- The following attributes are supported in HTMLUI for the cascading style sheet definition.
+ The following attributes are supported in WinForms HTML Viewer for the cascading style sheet definition.
 
 
 
 ### Background - CSS
 
-The background attribute of CSS helps the user to set the back ground properties for the specified element. The following are the background properties that are supported in HTMLUI for a HTML element using CSS.
+The background attribute of CSS helps the user to set the back ground properties for the specified element. The following are the background properties that are supported in WinForms HTML Viewer for a HTML element using CSS.
 
 
 
@@ -669,7 +669,7 @@ The text-align attribute is used to align the text inside an element to the spec
 
 #### Text decoration
 
-The text-decoration attribute is used to decorate a text. The HTMLUI control supports the Underline and the None style values for the text decoration attribute.
+The text-decoration attribute is used to decorate a text. The WinForms HTML Viewer control supports the Underline and the None style values for the text decoration attribute.
 
 {% tabs %}
 
@@ -695,9 +695,9 @@ The text-decoration attribute is used to decorate a text. The HTMLUI control sup
 
 ### Font – CSS
 
-The font attribute is used to define the font specification for a HTML element in the HTMLUI. With the CSS font specification, the user can create good presentation applications in HTMLUI.
+The font attribute is used to define the font specification for a HTML element in the WinForms HTML Viewer. With the CSS font specification, the user can create good presentation applications in the control.
 
-The HTMLUI control supports the following font attributes for the HTML elements.
+The WinForms HTML Viewer control supports the following font attributes for the HTML elements.
 
 #### Font family
 
@@ -729,7 +729,7 @@ The font-family attribute is used to specify a font for the text that is to be d
 
 #### Font size
 
-The font-size attribute is used to specify a size for the rendered text that is to be displayed in the HTMLUI control.
+The font-size attribute is used to specify a size for the rendered text that is to be displayed in the WinForms HTML Viewer control.
 
 {% tabs %}
 
@@ -756,7 +756,7 @@ The font-size attribute is used to specify a size for the rendered text that is 
 
 #### Font style
 
-The font-style attribute is used to format the specified text with the given styles. HTMLUI supports the normal and italic styles for the rendered text inside the HTML element.
+The font-style attribute is used to format the specified text with the given styles. WinForms HTML Viewer supports the normal and italic styles for the rendered text inside the HTML element.
 
 {% tabs %}
 
@@ -782,7 +782,7 @@ The font-style attribute is used to format the specified text with the given sty
 
 #### Font weight
 
-The font-weight attribute is used to specify the thickness or boldness of the rendered text. HTMLUI supports the normal and bold font-weight that is associated with the CSS text rendering.
+The font-weight attribute is used to specify the thickness or boldness of the rendered text. WinForms HTML Viewer supports the normal and bold font-weight that is associated with the CSS text rendering.
 
 {% tabs %}
 
@@ -808,7 +808,7 @@ The font-weight attribute is used to specify the thickness or boldness of the re
 
 ###  Border – CSS
 
-The border attribute is used to specify the border properties for the rendered table element through CSS. The color and thickness of the border can also be specified through the border attribute. HTMLUI also supports applying border properties to the four sides of the table border independently.
+The border attribute is used to specify the border properties for the rendered table element through CSS. The color and thickness of the border can also be specified through the border attribute. WinForms HTML Viewer also supports applying border properties to the four sides of the table border independently.
 
 #### Border color
 
@@ -892,7 +892,7 @@ table{border-left-width: 3;  border-right-width: 5; border-top-width: 6; border-
 
 ### Padding – CSS
 
-The CSS padding attribute in HTMLUI is used to define a fixed space between the element's border and its contents. The top, right, bottom and left padding attributes can be specified independently.
+The CSS padding attribute in WinForms HTML Viewer is used to define a fixed space between the element's border and its contents. The top, right, bottom and left padding attributes can be specified independently.
 
 {% tabs %}
 
@@ -950,12 +950,12 @@ The Dimension properties are used to specify the size for an HTML element.
 
 
 
-* height: Specifies the height of an element. The HTMLUI control allows the user to specify the height either in percentage or units.
+* height: Specifies the height of an element. The WinForms HTML Viewer control allows the user to specify the height either in percentage or units.
 * width: Specifies the width of an element.
 
 
 
-The width of an element in HTMLUI can be mentioned in terms of units.
+The width of an element in WinForms HTML Viewer can be mentioned in terms of units.
 
 {% tabs %}
 
@@ -983,7 +983,7 @@ The width of an element in HTMLUI can be mentioned in terms of units.
 
 ### Classification - CSS
 
-The CSS Classification properties determine the display of an element in the HTMLUI control. The HTMLUI control supports the following classification property that determines how and where to display a HTML element.
+The CSS Classification properties determine the display of an element in the WinForms HTML Viewer control. The control supports the following classification property that determines how and where to display a HTML element.
 
 
 
@@ -1040,9 +1040,9 @@ The positioning attribute is used to determine the position of the HTML element 
 
 ### Pseudo - Classes
 
-The Pseudo-Classes are used to add special effects to the HTML hyperlink element display. For understanding this case clearly in HTMLUI, let us define a general case, where the link should change its appearance when a mouse pointer is moved over it.
+The Pseudo-Classes are used to add special effects to the HTML hyperlink element display. For understanding this case clearly in WinForms HTML Viewer, let us define a general case, where the link should change its appearance when a mouse pointer is moved over it.
 
-The HTMLUI control supports the link and the hover classes in order to display the links in the HTMLUI control.
+The WinForms HTML Viewer control supports the link and the hover classes in order to display the links in it.
 
 
 
@@ -1105,9 +1105,9 @@ The following sample shows how different properties can be set for the hyperlink
 
 {% endtabs %}
 
-##  HTMLUIUseCSS sample
+##  WinForms HTML Viewer UseCSS sample
 
-This sample demonstrates the implementation of External Style Sheets in HTMLUI.
+This sample demonstrates the implementation of External Style Sheets in WinForms HTML Viewer.
 
 ![Style-Sheets-CSS_img1](Style-Sheets-CSS_images/Style-Sheets-CSS_img1.png)
 
@@ -1119,7 +1119,7 @@ By default, this sample can be found under the following location:
 
 ...\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\HTMLUI.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-### HTMLUIElementsCSS sample
+### WinForms HTML Viewer ElementsCSS sample
 
 This sample demonstrates the implementation of Internal Style Sheets on HTML Elements.
 
@@ -1135,11 +1135,11 @@ By default, this sample can be found under the following location:
 
 
 
-## HTMLUI appearance
+## WinForms HTML Viewer appearance
 
-With HTMLUI, the application developer can decide the appearance of his application even at run time by setting the style according to his needs. A common application is changing the background color for a particular page based on the user signing in. These interactive applications help in developing user-friendly applications.
+With WinForms HTML Viewer, the application developer can decide the appearance of his application even at run time by setting the style according to his needs. A common application is changing the background color for a particular page based on the user signing in. These interactive applications help in developing user-friendly applications.
 
-The HTMLUI control allows the following modes of changing the background color to your application.
+The WinForms HTML Viewer control allows the following modes of changing the background color to your application.
 
 
 
@@ -1148,7 +1148,7 @@ The HTMLUI control allows the following modes of changing the background color t
 
 
 
-The following HTML coding shows the different methods of changing the background color that HTMLUI control supports, leaving it to the user to choose the best among the various options as per the requirements.
+The following HTML coding shows the different methods of changing the background color that WinForms HTML Viewer control supports, leaving it to the user to choose the best among the various options as per the requirements.
 
 {% tabs %}
 
@@ -1178,7 +1178,7 @@ The following HTML coding shows the different methods of changing the background
 
 {% endtabs %}
 
-The following figure shows the back color of the HTML document customized by using HTMLUI.
+The following figure shows the back color of the HTML document customized by using WinForms HTML Viewer.
 
 
 
@@ -1188,9 +1188,9 @@ The following figure shows the back color of the HTML document customized by usi
 
 
 
-### HTMLUIAppearance sample
+### WinForms HTML Viewer Appearance sample
 
-This sample illustrates the customization of HTMLUI Appearance.
+This sample illustrates the customization of WinForms HTML Viewer Appearance.
 
 
 

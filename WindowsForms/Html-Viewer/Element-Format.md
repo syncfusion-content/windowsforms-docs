@@ -7,9 +7,9 @@ control: HTMLUI
 documentation: ug
 ---
 
-# Element Format in Windows Forms HTMLUI
+# Element Format in WinForms HTML Viewer
 
-Essential<sup>®</sup> HTMLUI supports formatting of not only the entire HTML document as a whole, but also the individual elements. With HTMLUI, the user can replace any HTML element into some other format before displaying, in a view to develop advanced user interactivity.
+Essential<sup>®</sup> WinForms HTML Viewer supports formatting of not only the entire HTML document as a whole, but also the individual elements. With WinForms HTML Viewer, the user can replace any HTML element into some other format before displaying, in a view to develop advanced user interactivity.
 
 
 The following snippet shows how a text content can be replaced with an image in a text sequence.
@@ -79,7 +79,7 @@ End Sub
 
 {% endtabs %}
 
-The following image shows the text element Time replaced by an image when displayed using HTMLUI.
+The following image shows the text element Time replaced by an image when displayed using WinForms HTML Viewer.
 
 ![Element-Format_img1](Element-Format_images/Element-Format_img1.png)
 
@@ -87,7 +87,7 @@ The following image shows the text element Time replaced by an image when displa
 
 ## ElementFormat sample
 
-This sample illustrates Element Formatting in HTMLUI.
+This sample illustrates Element Formatting in WinForms HTML Viewer.
 
 
 

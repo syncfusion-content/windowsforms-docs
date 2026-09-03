@@ -9,7 +9,7 @@ documentation: ug
 
 # How To Access the Inner HTML Text Of the Current H
 
-You can access the inner HTML text of the current HTML element in the HTMLUI control by using the InnerHTML property of the HTMLUI control. This property also allows access to the child elements of the HTML elements.
+You can access the inner HTML text of the current HTML element in the WinForms HTML Viewer control by using the InnerHTML property of the control. This property also allows access to the child elements of the HTML elements.
 
 The following HTML document contains a div element. The code snippet shows how the inner text of the element is accessed and displayed in the output at run time.
 

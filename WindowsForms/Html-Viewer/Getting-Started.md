@@ -7,9 +7,9 @@ control: HTMLUI
 documentation: ug
 ---
 
-# Getting Started with Windows Forms HTMLUI
+# Getting Started with WinForms HTML Viewer
 
-This section describes how to configure a `HTMLUIControl` in a Windows Forms application and overview of its basic functionalities.
+This section describes how to configure a `WinForms HTML Viewer Control` in a Windows Forms application and overview of its basic functionalities.
 
 ## Assembly deployment
 
@@ -17,9 +17,9 @@ Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-de
 
 Get more details regarding how to install the nuget packages in windows form application in the [How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) link.
 
-## Creating simple application with HTMLUIControl
+## Creating simple application with WinForms HTML Viewer Control
 
-You can create Windows Forms application with HTMLUIControl as follows:
+You can create Windows Forms application with WinForms HTML Viewer Control as follows:
 
 1. [Creating the project](#creating-the-project)
 2. [Adding control via designer](#adding-control-via-designer)
@@ -28,11 +28,11 @@ You can create Windows Forms application with HTMLUIControl as follows:
 
 ### Creating the project
 
-Create a new Windows Forms project in Visual Studio to display the HTMLUIControl.
+Create a new Windows Forms project in Visual Studio to display the WinForms HTML Viewer Control.
 
 ## Adding control via designer
 
-The HTMLUIControl can be added to the application by dragging it from the toolbox and dropping it in the designer view. The following required assembly references will be added automatically:
+The WinForms HTML Viewer Control can be added to the application by dragging it from the toolbox and dropping it in the designer view. The following required assembly references will be added automatically:
 
    * Syncfusion.HTMLUI.Base.dll
    * Syncfusion.HTMLUI.Windows.dll
@@ -78,7 +78,7 @@ Imports Syncfusion.Windows.Forms.HTMLUI
 
 {% endtabs %}
 
-**Step 3** : Create the HTMLUIControl instance and add it to the form.
+**Step 3** : Create the WinForms HTML Viewer Control instance and add it to the form.
 
 {% tabs %}
 
@@ -139,7 +139,7 @@ Me.htmluiControl1.Title = "StartUp Document"
 
 ## Loading a file into document
 
-File can be added to HTMLUIControl using [LoadHTML](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html#Syncfusion_Windows_Forms_HTMLUI_HTMLUIControl_LoadHTML_System_IO_Stream_) method where the file path given as parameter.
+File can be added to WinForms HTML Viewer Control using [LoadHTML](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html#Syncfusion_Windows_Forms_HTMLUI_HTMLUIControl_LoadHTML_System_IO_Stream_) method where the file path given as parameter.
 
 {% tabs %}
 

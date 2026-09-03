@@ -7,9 +7,9 @@ control: HTMLUI
 documentation: ug
 ---
 
-# HTML Tables in Windows Forms HTMLUI
+# HTML Tables in WinForms HTML Viewer
 
-HTMLUI has a rich table support that lets the user to decide the table's dimensions and design. The HTMLUI table support also comes with different alignments of text within the table. This helps the user in creating advanced and highly structured HTML applications.
+WinForms HTML Viewer has a rich table support that lets the user to decide the table's dimensions and design. The WinForms HTML Viewer table support also comes with different alignments of text within the table. This helps the user in creating advanced and highly structured HTML applications.
 
 {% tabs %}
 
@@ -33,11 +33,11 @@ HTMLUI has a rich table support that lets the user to decide the table's dimensi
 
 {% endtabs %}
 
-The HTML document that defines the Tables is then loaded into HTMLUI using any of the ways discussed in the section [Loading HTML](/windowsforms/htmlui/loading-html).
+The HTML document that defines the Tables is then loaded into WinForms HTML Viewer using any of the ways discussed in the section [Loading HTML](/windowsforms/htmlui/loading-html).
 
-## HTMLUI tables sample
+## WinForms HTML Viewer tables sample
 
-This sample illustrates how to implement Tables using HTMLUI.
+This sample illustrates how to implement Tables using WinForms HTML Viewer.
 
 
 
