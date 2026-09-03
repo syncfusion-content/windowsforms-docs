@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How To Access the Inner HTML Text Of the Current HTML element in the HTMLUI control | Syncfusion®
+title: How To Access the Inner HTML Text in the WinForms HTML Viewer control | Syncfusion®
 description: Learn how to Access the Inner HTML Text Of the Current HTML element in the HTMLUI control in Syncfusion Windows Forms Html Viewer (HTMLUI) control.
 platform: windowsforms
 control: HTML UI
 documentation: ug
 ---
 
-# How To Access the Inner HTML Text Of the Current HTML element in the WinForms HTML Viewer control
+# How To Access the Inner HTML Text in the WinForms HTML Viewer control
 
 You can access the inner HTML text of the current HTML element in the WinForms HTML Viewer control by using the InnerHTML property of the control. This property also allows access to the child elements of the HTML elements.
 
