@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Features in Windows Forms Navigation Drawer | Syncfusion®
 description: Navigation Drawer features include content and drawer views, transitions, positioning options, animations, and drawer toggling.
@@ -11,7 +11,7 @@ documentation: ug
 
 ## ContentView
 
-ContentView is the main view of the NavigationDrawer on which the desired items can be placed. For example, RichTextBox can be used in this sample.
+ContentView is the main view of the WinForms Navigation Drawer on which the desired items can be placed. For example, RichTextBox can be used in this sample.
 
 {% tabs %}
 
