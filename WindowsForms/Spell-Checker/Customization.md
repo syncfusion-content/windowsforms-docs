@@ -7,9 +7,9 @@ control: SpellCheckerAdv
 documentation: ug
 ---
 
-# Customization in Windows Forms SpellCheckerAdv
+# Customization in WinForms Spell Checker
 
-SpellCheckerAdv allows customizing options to add misspelled words from the input text to the error list.
+WinForms Spell Checker allows customizing options to add misspelled words from the input text to the error list.
 
 {% tabs %}
 
@@ -61,7 +61,7 @@ checker.IgnoreAlphaNumericWords = True
 
 {% endtabs %}
 
-These options are accessible at runtime through the Spell Checker Options dialog. This can be invoked by Options button available in the SpellChecker dialog.
+These options are accessible at runtime through the WinForms Spell Checker Options dialog. This can be invoked by Options button available in the WinForms Spell Checker dialog.
 
 ![SpellCheckerAdv dialog window](Customization_images/Options1.png)
  
@@ -70,7 +70,7 @@ These options are accessible at runtime through the Spell Checker Options dialog
 
 ## Getting suggestions for wrong word
 
-SpellCheckerAdv provides support to get suggestion list by passing the wrong word in the below methods.
+WinForms Spell Checker provides support to get suggestion list by passing the wrong word in the below methods.
 
 * [GetSuggestions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SpellCheckerAdv.html#Syncfusion_Windows_Forms_Tools_SpellCheckerAdv_GetSuggestions_System_String_)
 * [GetPhoneticWords](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SpellCheckerAdv.html#Syncfusion_Windows_Forms_Tools_SpellCheckerAdv_GetPhoneticWords_System_String_)

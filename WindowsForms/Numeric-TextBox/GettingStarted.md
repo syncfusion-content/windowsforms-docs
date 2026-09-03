@@ -7,9 +7,9 @@ control: SfNumericTextBox
 documentation: ug
 ---
 
-# Getting Started with Windows Forms SfNumericTextBox
+# Getting Started with WinForms Numeric TextBox
 
-This section briefly describes how to create a new Windows Forms project in Visual Studio and add **SfNumericTextBox** with its basic functionalities.
+This section briefly describes how to create a new Windows Forms project in Visual Studio and add **WinForms Numeric TextBox** with its basic functionalities.
 
 ## Assembly deployment
 
@@ -17,13 +17,13 @@ Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/con
 
 Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install nuget packages in a Windows Forms application.
 
-## Adding SfNumericTextBox control via designer
+## Adding WinForms Numeric TextBox control via designer
 
-The following steps describe how to create a **SfNumericTextBox** control via designer:
+The following steps describe how to create a **WinForms Numeric TextBox** control via designer:
 
 1. Create a new Windows Forms application in Visual Studio.
 
-2. Add the [SfNumericTextBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html) control to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
+2. Add the [WinForms Numeric TextBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html) control to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
 
     * Syncfusion.Core.WinForms
     * Syncfusion.SfInput.WinForms
@@ -31,7 +31,7 @@ The following steps describe how to create a **SfNumericTextBox** control via de
 
 ![Drag and drop the SfNumericTextBox control to form](Gettingstarted_images/SfNumericTextBoxAdd.png)
 
-## Adding SfNumericTextBox control via code
+## Adding WinForms Numeric TextBox control via code
 
 1. Create a C# or VB application via Visual Studio.
 
@@ -62,7 +62,7 @@ Imports Syncfusion.WinForms.Input
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4) Create an instance of [SfNumericTextBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html), and then add it to the form.
+4) Create an instance of [WinForms Numeric TextBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html), and then add it to the form.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -89,7 +89,7 @@ Me.Controls.Add(Me.numericTextBox)
 
 ## Value
 
-SfNumericTextBox holds double value, and it can also hold null value. The [AllowNull](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html#Syncfusion_WinForms_Input_SfNumericTextBox_AllowNull) property needs to be set to make the value nullable. The [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html#Syncfusion_WinForms_Input_SfNumericTextBox_Text) property of the control is formatted from the [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html#Syncfusion_WinForms_Input_SfNumericTextBox_Value) property.
+WinForms Numeric TextBox holds double value, and it can also hold null value. The [AllowNull](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html#Syncfusion_WinForms_Input_SfNumericTextBox_AllowNull) property needs to be set to make the value nullable. The [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html#Syncfusion_WinForms_Input_SfNumericTextBox_Text) property of the control is formatted from the [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html#Syncfusion_WinForms_Input_SfNumericTextBox_Value) property.
 
 {% tabs %}
 
@@ -119,7 +119,7 @@ The string formatting is replacement of string in specified string format. Based
 * Percent
 * Currency
 
-These modes can be applied in SfNumericTextBox using the [FormatMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html#Syncfusion_WinForms_Input_SfNumericTextBox_FormatMode) property. By default, the FormatMode is set to Numeric.
+These modes can be applied in WinForms Numeric TextBox using the [FormatMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html#Syncfusion_WinForms_Input_SfNumericTextBox_FormatMode) property. By default, the FormatMode is set to Numeric.
 
 {% tabs %}
 
@@ -176,13 +176,13 @@ Me.numericTextBox.NumberFormatInfo = New CultureInfo("de-DE").NumberFormat
 
 ![Formatting the value](Gettingstarted_images/Formatting.png)
 
-N>The [SfNumericTextBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html) control preserves the full precision of the assigned value in its [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html#Syncfusion_WinForms_Input_SfNumericTextBox_Value) property while displaying the formatted value in the text box. This ensures that you can use the exact value for future calculations without losing accuracy. While editing, the Value property will be updated based on the current value in the textbox.
+N>The [WinForms Numeric TextBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html) control preserves the full precision of the assigned value in its [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html#Syncfusion_WinForms_Input_SfNumericTextBox_Value) property while displaying the formatted value in the text box. This ensures that you can use the exact value for future calculations without losing accuracy. While editing, the Value property will be updated based on the current value in the textbox.
 
 ![Formatting the value](Gettingstarted_images/FullPrecisionValue.png)
 
 ## Watermark
 
-SfNumericTextBox comes with the in-built watermark support. [WatermarkText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html#Syncfusion_WinForms_Input_SfNumericTextBox_WatermarkText) helps to display the details about what value need to enter. [WatermarkText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html#Syncfusion_WinForms_Input_SfNumericTextBox_WatermarkText) property allows to show the watermark for the control when the value of the control is set to null.
+WinForms Numeric TextBox comes with the in-built watermark support. [WatermarkText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html#Syncfusion_WinForms_Input_SfNumericTextBox_WatermarkText) helps to display the details about what value need to enter. [WatermarkText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html#Syncfusion_WinForms_Input_SfNumericTextBox_WatermarkText) property allows to show the watermark for the control when the value of the control is set to null.
 
 {% tabs %}
 

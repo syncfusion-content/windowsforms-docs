@@ -7,9 +7,9 @@ control: SpellCheckerAdv
 documentation: ug
 ---
 
-# Getting Started with Windows Forms SpellCheckerAdv
+# Getting Started with WinForms Spell Checker
 
-This section describes how to add a [SpellCheckerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SpellCheckerAdv.html) control in a Windows Forms application and overview of its basic functionalities.
+This section describes how to add a [WinForms Spell Checker](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SpellCheckerAdv.html) control in a Windows Forms application and overview of its basic functionalities.
 
 ## Assembly deployment
 
@@ -19,25 +19,25 @@ Please find more details regarding how to install the nuget packages in windows 
  
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
 
-## Creating simple application with SpellCheckerAdv
+## Creating simple application with WinForms Spell Checker
 
-You can create the Windows Forms application with SpellCheckerAdv control as follows:
+You can create the Windows Forms application with WinForms Spell Checker control as follows:
 
 1. [Creating project](#creating-the-project)
 2. [Add control via designer](#add-control-via-designer)
 3. [Add control manually using Code](#add-control-manually-using-code)
-4. [Configuring SpellCheckerAdv into RichTextBox control](#configuring-spellCheckerAdv-into-RichTextBox-control)
+4. [Configuring WinForms Spell Checker into RichTextBox control](#configuring-spellCheckerAdv-into-RichTextBox-control)
 5. [Applying Dictionary](#applying-dictionary)
 6. [Applying Custom Dictionary](#applying-custom-dictionary)
 7. [Configuring VisualStyle](#configuring-VisualStyle)
 
 ### Creating the project
 
-Create a new Windows Forms project in the Visual Studio to display the SpellCheckerAdv with basic information.
+Create a new Windows Forms project in the Visual Studio to display the WinForms Spell Checker with basic information.
 
 ## Add control via designer
 
-SpellCheckerAdv control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+WinForms Spell Checker control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
 * Syncfusion.Grid.Base.dll
 * Syncfusion.Grid.Windows.dll
@@ -86,7 +86,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-**Step 3** :  Create `SpellCheckerAdv` control instance.
+**Step 3** :  Create `WinForms Spell Checker` control instance.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -107,7 +107,7 @@ Dim spellCheckerAdv1 As SpellCheckerAdv = New SpellCheckerAdv
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-## Configuring SpellCheckerAdv into RichTextBox control
+## Configuring WinForms Spell Checker into RichTextBox control
 
 **Step 1** : Create a class implementing [ISpellCheckerAdvEditorTools](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ISpellCheckerAdvEditorTools.html) interface as shown below.
 
@@ -303,7 +303,7 @@ Me.Controls.Add(Me.richTextBox1)
 
 ![Configure WindowsForms Spell Checker into RichTextBox control](getting-started_images/windowsforms-spellchecker-configuring-richtextbox.png)
 
-**Step 3** - Create an instance of the `TextBoxSpellEditor` class by having `RichTextBox` as its Control and it to `SpellCheckerAdv` using [PerformSpellCheckForControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SpellCheckerAdv.html#Syncfusion_Windows_Forms_Tools_SpellCheckerAdv_PerformSpellCheckForControl_Syncfusion_Windows_Forms_Tools_ISpellCheckerAdvEditorTools_) method.
+**Step 3** - Create an instance of the `TextBoxSpellEditor` class by having `RichTextBox` as its Control and it to `WinForms Spell Checker` using [PerformSpellCheckForControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SpellCheckerAdv.html#Syncfusion_Windows_Forms_Tools_SpellCheckerAdv_PerformSpellCheckForControl_Syncfusion_Windows_Forms_Tools_ISpellCheckerAdvEditorTools_) method.
 
 {% capture codesnippet5 %}​
 {% tabs %}
@@ -328,7 +328,7 @@ Me.spellCheckerAdv1.PerformSpellCheckForControl(TextEditor)
 {% endcapture %}
 {{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-**Step 4** - Finally trigger `SpellCheckerAdv` through an event such as `Click` of the button as given below.
+**Step 4** - Finally trigger `WinForms Spell Checker` through an event such as `Click` of the button as given below.
 
 {% capture codesnippet6 %}​
 {% tabs %}
@@ -358,7 +358,7 @@ End Sub
 
 ## Applying dictionary
 
-SpellCheckerAdv provide built-in dictionary whose Path can be set using [DictionaryPath](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SpellCheckerAdv.html#Syncfusion_Windows_Forms_Tools_SpellCheckerAdv_DictionaryPath) property in SpellCheckerAdv.
+WinForms Spell Checker provide built-in dictionary whose Path can be set using [DictionaryPath](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SpellCheckerAdv.html#Syncfusion_Windows_Forms_Tools_SpellCheckerAdv_DictionaryPath) property in it.
 
 {% tabs %}
 
@@ -397,7 +397,7 @@ N> Refer the [Adding Custom Dictionary](https://help.syncfusion.com/wpf/spellche
 
 ## Configuring VisualStyle
 
-Look and feel of the SpellCheckerAdv can be customize using [VisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SpellCheckerAdv.html#Syncfusion_Windows_Forms_Tools_SpellCheckerAdv_VisualStyle) property.
+Look and feel of the WinForms Spell Checker can be customize using [VisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SpellCheckerAdv.html#Syncfusion_Windows_Forms_Tools_SpellCheckerAdv_VisualStyle) property.
 
 {% tabs %}
 
