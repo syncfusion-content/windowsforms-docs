@@ -7,9 +7,9 @@ control: CurrencyEdit
 documentation: ug
 ---
 
-# Calculator Settings in Windows Forms CurrencyEdit
+# Calculator Settings in WinForms CurrencyEdit
 
-A [CurrencyEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyEdit.html) control has a text field and a Calculator button, pressing which will open a Calculator control. The below image illustrates the same.
+A [WinForms CurrencyEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyEdit.html) control has a text field and a Calculator button, pressing which will open a Calculator control. The below image illustrates the same.
 
 ![Calculator](Overview_images/Overview_img416.png) 
 
