@@ -6,9 +6,9 @@ platform: windowsforms
 control: DoubleTextBox
 documentation: ug
 ---
-# Number Settings in Windows Forms DoubleTextBox
+# Number Settings in WinForms Double TextBox
 
-The below table lists the properties which illustrates the number settings for the DoubleTextBox.
+The below table lists the properties which illustrates the number settings for the WinForms Double TextBox.
 
 * [DoubleValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DoubleTextBox.html#Syncfusion_Windows_Forms_Tools_DoubleTextBox_DoubleValue)
 * [NumberDecimalDigits](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumericTextBox.html#Syncfusion_Windows_Forms_Tools_NumericTextBox_NumberDecimalDigits)
@@ -37,9 +37,9 @@ Me.doubleTextBox1.NumberNegativePattern = 2
 {% endhighlight %} 
 {% endtabs %}
 
-## DoubleTextBox Value
+## WinForms Double TextBox Value
 
-The maximum and minimum value of the editable field in DoubleTextBox control can be specified using the below properties.
+The maximum and minimum value of the editable field in WinForms Double TextBox control can be specified using the below properties.
 
 * [MaxValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DoubleTextBox.html#Syncfusion_Windows_Forms_Tools_DoubleTextBox_MaxValue)
 * [MinValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DoubleTextBox.html#Syncfusion_Windows_Forms_Tools_DoubleTextBox_MinValue)
@@ -57,7 +57,7 @@ Me.doubleTextBox1.MinValue = 4
 
 ## Banner Text Support
 
-We can set banner text for the DoubleTextBox control. Refer [BannerTextProvider Component](/windowsforms/integertextbox/bannertextsupport) topic for more details.
+We can set banner text for the WinForms Double TextBox control. Refer [BannerTextProvider Component](/windowsforms/integertextbox/bannertextsupport) topic for more details.
 
 We need to do the below settings to make Banner text feature available for the control.
 
@@ -99,7 +99,7 @@ Me.doubleTextBox1.UseUserOverride = True
 
 ## Hiding the trail zeros
 
-The HideTrailingZeros property allows control over the display of trailing zeros in decimal values. When set to true, the DoubleTextBox displays only the significant digits of the value, hiding any trailing zeros.
+The HideTrailingZeros property allows control over the display of trailing zeros in decimal values. When set to true, the WinForms Double TextBox displays only the significant digits of the value, hiding any trailing zeros.
 
 {% tabs %}
 {% highlight C# %}  
