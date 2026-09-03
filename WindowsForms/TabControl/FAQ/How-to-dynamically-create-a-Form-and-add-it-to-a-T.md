@@ -7,7 +7,7 @@ control: TabsPackage
 documentation: ug
 ---
 
-# How to Create Form and Add to a Tab in TabControlAdv
+# How to Create Form and Add to a Tab in WinForms TabControl
 
 Here is a code sample which demonstrates how you could dynamically create a Form and add that form to a new Tab.
 

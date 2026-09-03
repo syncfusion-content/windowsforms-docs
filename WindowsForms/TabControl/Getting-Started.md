@@ -7,7 +7,7 @@ control: TabControlAdv
 documentation: ug
 ---
 
-# Getting Started with Windows Forms TabControlAdv
+# Getting Started with WinForms TabControl
 
 ## Assembly deployment
 
@@ -17,17 +17,17 @@ You can find more details about installing the NuGet packages in a Windows Forms
 
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
 
-### Create a simple application with TabControlAdv
+### Create a simple application with WinForms TabControl
 
-You can create a Windows Forms application with [Windows Forms TabControl](https://www.syncfusion.com/winforms-ui-controls/tabcontrol) (TabControlAdv) using the following steps:
+You can create a Windows Forms application with [WinForms TabControl](https://www.syncfusion.com/winforms-ui-controls/tabcontrol) (WinForms TabControl) using the following steps:
 
 ### Create a project
 
-Create a new Windows Forms project in Visual Studio to display the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) control with tab pages.
+Create a new Windows Forms project in Visual Studio to display the [WinForms TabControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) control with tab pages.
 
 ## Add control through designer
 
-The [Windows Forms TabControl](https://www.syncfusion.com/winforms-ui-controls/tabcontrol) (TabControlAdv) control can be added to an application by dragging it from the toolbox to a designer view. The following assembly references are added automatically:
+The [WinForms TabControl](https://www.syncfusion.com/winforms-ui-controls/tabcontrol) (WinForms TabControl) control can be added to an application by dragging it from the toolbox to a designer view. The following assembly references are added automatically:
 
 * Syncfusion.Grid.Base.dll
 * Syncfusion.Grid.Windows.dll
@@ -40,13 +40,13 @@ The [Windows Forms TabControl](https://www.syncfusion.com/winforms-ui-controls/t
 
 ## Add tabs
 
-The tabs can be added to [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) in the following ways:
+The tabs can be added to [WinForms TabControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) in the following ways:
 
-**1.** Right-click the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) and select the Add Tab option to add the [TabPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_TabPages) to [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) through designer.
+**1.** Right-click the [WinForms TabControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) and select the Add Tab option to add the [TabPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_TabPages) to [WinForms TabControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) through designer.
 
 ![tabs added using add tab option](GettingStarted_images/AddingTabs.png)
 
-**2.** Add tabs using [TabPagesCollection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_TabPages) in smart tags of [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
+**2.** Add tabs using [TabPagesCollection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_TabPages) in smart tags of [WinForms TabControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
 
 ![tabs added using tab pages collection](GettingStarted_images/wf-tab-page-added-by-designer.png)
 
@@ -82,7 +82,7 @@ To add the control manually in code, follow the given steps:
   {% endcapture %}
   {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-3. Create a [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) instance, and add it to the window.
+3. Create a [WinForms TabControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) instance, and add it to the window.
 
   {% capture codesnippet2 %}
   {% tabs %}
@@ -100,7 +100,7 @@ To add the control manually in code, follow the given steps:
 
 ## Add tabs
 
-Create an instance of [TabPageAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabPageAdv.html), and add it to the TabControlAdv.
+Create an instance of [TabPageAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabPageAdv.html), and add it to the WinForms TabControl.
 
 {% tabs %}
 {% highlight C# %}
@@ -136,7 +136,7 @@ tabPageAdv1.Controls.Add(calendar)
 
 ## Tab placement
 
-[Windows Forms TabControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) (TabControlAdv) provides an option to display tabs horizontally at the top or bottom and vertically at the left or right by setting the [Alignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_Alignment) property of [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
+[WinForms TabControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) (WinForms TabControl) provides an option to display tabs horizontally at the top or bottom and vertically at the left or right by setting the [Alignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_Alignment) property of [WinForms TabControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
 
 {% tabs %}
 {% highlight C# %}
@@ -167,7 +167,7 @@ tabControlAdv1.Alignment = TabAlignment.Bottom
 
 ## Edit header at run time
 
-You can rename the tab header at run time by setting the [LabelEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_LabelEdit) property of [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) to `true`.
+You can rename the tab header at run time by setting the [LabelEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_LabelEdit) property of [WinForms TabControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) to `true`.
 
 {% tabs %}
 {% highlight C# %}
@@ -184,7 +184,7 @@ Me.tabControlAdv.LabelEdit = True
 
 ## Multi-line tabs
 
-You can arrange the tabs in multiple rows by enabling the [Multiline](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_Multiline) property of [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
+You can arrange the tabs in multiple rows by enabling the [Multiline](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_Multiline) property of [WinForms TabControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
 
 {% tabs %}
 {% highlight C# %}
