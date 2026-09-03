@@ -9,11 +9,11 @@ documentation: ug
 
 # About Syncfusion® Windows Forms SfTabbedForm Control
 
-The tabbed form is used to display tabbed user interface. Users can add any number of tabs and each tab can contain any number of controls. The tabs can be loaded into form's title bar or the tabs can be displayed below the title bar.
+The WinForms Tabbed Form is used to display tabbed user interface. Users can add any number of tabs and each tab can contain any number of controls. The tabs can be loaded into form's title bar or the tabs can be displayed below the title bar.
 
 ## Key features
 
-SfTabbedForm provides the following key features:
+WinForms Tabbed Form provides the following key features:
 
 * Provides easy navigation through the tabs.
 * Adds images to the tabs for intuitive user interface.
