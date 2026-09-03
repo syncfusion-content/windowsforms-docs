@@ -7,7 +7,7 @@ control: CurrencyEdit
 documentation: ug
 ---
 
-# Events in Windows Forms CurrencyEdit
+# Events in WinForms CurrencyEdit
 
 ## CalculatorClosing Event
 
