@@ -9,17 +9,40 @@ documentation: ug
 
 # Data Binding in Windows Forms Diagram
 
-### Populating the data
+## Populating the data
 
-*	[WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) can be populated with the nodes and connectors based on the information provided from an external data source.
-*	Diagram exposes its specific data-related properties, which allow you specify the data source fields from where the node information has to be retrieved.
+* [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) can be populated with the nodes and connectors based on the information provided from an external data source.
+* Diagram exposes its specific data-related properties, which allow you specify the data source fields from which the node information has to be retrieved.
 
 To explore those properties, refer to the [Data source settings](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Binding.html).
 
+The following table lists the Binding properties used to map data source fields to the diagram:
+
+<table>
+<tr>
+<th>Property</th><th>Description</th><th>Data Type</th></tr>
+<tr>
+<td>DefaultNode</td><td>Gets or sets the default node used as a template for each data-bound node.</td><td>Node</td></tr>
+<tr>
+<td>DefaultConnector</td><td>Gets or sets the default conennector.</td><td>ConnectorBase </td></tr>
+<tr>
+<td>Diagram</td><td>Gets or sets the Diagram.</td><td>Diagram </td></tr>
+<tr>
+<td>Label</td><td>Gets the collection of data source field names whose values are displayed as node labels.</td><td>Collection&lt;string&gt;</td></tr>
+<tr>
+<td>Id</td><td>Gets or sets the data source field name that uniquely identifies each node.</td><td>string</td></tr>
+<tr>
+<td>ParentId</td><td>Gets or sets the data source field name that identifies the parent node of each node.</td><td>string</td></tr>
+<tr>
+<td>DataSource</td><td>Gets or sets the data source (XML, DataTable, or object collection) from which node information is retrieved.</td><td>object</td></tr>
+</table>
+
 ## XML data binding
 
-Diagram can be populated based on the user defined XML data by mapping the relevant data source fields.
-To map the user defined XML data with Diagram, you have to configure the [DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Binding.html#Syncfusion_Windows_Forms_Diagram_Binding_DataSource) fields. The following code example illustrates how to bind XML data with the Diagram.
+Diagram can be populated based on the user-defined XML data by mapping the relevant data source fields.
+To map the user-defined XML data with Diagram, you have to configure the [DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Binding.html#Syncfusion_Windows_Forms_Diagram_Binding_DataSource) fields. The following code example illustrates how to bind XML data to the Diagram.
+
+### Sample XML Data
 
 {% highlight xml %}
 
@@ -79,6 +102,8 @@ To map the user defined XML data with Diagram, you have to configure the [DataSo
  
 {% endhighlight %}
 
+The following code must be placed inside the form's `Load` event handler or constructor.
+
 {% tabs %}
 {% highlight c# %}
 
@@ -126,17 +151,23 @@ diagram1.Binding.DataSource = diagram1.GetDataSourceFromXML("..\..\XML Binding1.
 {% endhighlight %}
 {% endtabs %}
 
-Sample diagram is as follows.
+The following is a sample diagram.
 
 
 
 ![Diagram XML Data-Binding](Data-Binding_images/Diagram-Data-Binding_img1.jpg)
 
 
-## DataBase Binding
+## Database Binding
 
-You can bind the Diagram with DataBase data by using SqlConnection.
+You can bind the Diagram with database data by using `SqlConnection`.
 The following code illustrates how to bind the data to the Diagram.
+
+The connection string used by `cbn.Connection.ConnectionString` is configured through the typed DataSet designer. To configure it manually, set the connection string directly, for example:
+
+`string connectionString = "Data Source=SERVER_NAME;Initial Catalog=DATABASE_NAME;Integrated Security=True";`
+
+The following code must be placed inside the form's `Load` event handler or constructor.
 
 {% tabs %}
 {% highlight c# %}
@@ -208,7 +239,7 @@ End Using
 {% endtabs %}
 
 
-Sample diagram is as follows.
+The following is a sample diagram.
 
 
 

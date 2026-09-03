@@ -9,7 +9,9 @@ documentation: ug
 
 # Connectors or Links in Windows Forms Diagram
 
-Connectors and lines have the following decorators:
+## Decorators
+
+Decorators are arrowheads/endcaps set via the `DecoratorShape` enumeration. Connectors and lines support the following decorator shapes:
 
 * Circle
 * CircleCross
@@ -50,11 +52,11 @@ protected void Page_Load(object sender, EventArgs e)
 	Syncfusion.Windows.Forms.Diagram.Ellipse ellipse = new Syncfusion.Windows.Forms.Diagram.Ellipse(10, 10, 110, 70);
 	Syncfusion.Windows.Forms.Diagram.Rectangle rectangle = new Syncfusion.Windows.Forms.Diagram.Rectangle(300, 50, 50, 80);
 	Syncfusion.Windows.Forms.Diagram.LineConnector lineconnector = new Syncfusion.Windows.Forms.Diagram.LineConnector(new System.Drawing.PointF(10, 200), new System.Drawing.PointF(300, 250));
-	this.DiagramWebControl1.Model.AppendChild(ellipse);
-	this.DiagramWebControl1.Model.AppendChild(rectangle);
+	this.diagram1.Model.AppendChild(ellipse);
+	this.diagram1.Model.AppendChild(rectangle);
 	ellipse.CentralPort.TryConnect(lineconnector.HeadEndPoint);
 	rectangle.CentralPort.TryConnect(lineconnector.TailEndPoint);
-	this.DiagramWebControl1.Model.AppendChild(lineconnector);
+	this.diagram1.Model.AppendChild(lineconnector);
 }
 
 {% endhighlight %}
@@ -65,11 +67,11 @@ Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
 Dim ellipse As New Syncfusion.Windows.Forms.Diagram.Ellipse(10, 10, 110, 70)
 Dim rectangle As New Syncfusion.Windows.Forms.Diagram.Rectangle(300, 50, 50, 80)
 Dim lineconnector As New Syncfusion.Windows.Forms.Diagram.LineConnector(New System.Drawing.PointF(10, 200), New System.Drawing.PointF(300, 250))
-Me.DiagramWebControl1.Model.AppendChild(ellipse)
-Me.DiagramWebControl1.Model.AppendChild(rectangle)
+Me.diagram1.Model.AppendChild(ellipse)
+Me.diagram1.Model.AppendChild(rectangle)
 ellipse.CentralPort.TryConnect(lineconnector.HeadEndPoint)
 rectangle.CentralPort.TryConnect(lineconnector.TailEndPoint)
-Me.DiagramWebControl1.Model.AppendChild(lineconnector)
+Me.diagram1.Model.AppendChild(lineconnector)
 End Sub
 
 {% endhighlight %}
@@ -78,10 +80,31 @@ End Sub
 ![Connecting Two Nodes with Line Connector](Connectors-or-Links_images/Connectors-or-Links_img1.jpeg)
 
 
-
-
+## Customizing Connector Appearance
 
 You can change the appearance of the connectors using its properties through code. The following code example illustrates the line properties.
+
+The following table lists the properties used to customize a connector's decorators and line style:
+
+<table>
+<tr>
+<th>Property</th><th>Description</th><th>Data Type</th></tr>
+<tr>
+<td>DecoratorShape</td><td>Gets or sets the shape of the decorator at the head or tail end of the connector.</td><td>DecoratorShape</td></tr>
+<tr>
+<td>Container</td><td>Reference to the container node the decorator is attached to.</td><td>Node</td></tr>
+<tr>
+<td>GraphicsPath</td><td>Gets the graphics path that defines the visual representation of the decorator.</td><td>GraphicsPath</td></tr>
+<tr>
+<td>FillStyle</td><td>Properties for creating a brush to fill the decorator with.</td><td>FillStyle</td></tr>
+<tr>
+<tr>
+<td>Size</td><td>Gets or sets the width and height of the decorator.</td><td>SizeF</td></tr>
+<tr>
+<td>IsPathClosed</td><td>Gets a value indicating whether the decorator graphics path is closed (protected).</td><td>bool</td></tr>
+<tr>
+<td>LineStyle</td><td>Line drawing properties for the connector; determines the configuration of the pen used to outline the connector.</td><td>LineStyle</td></tr>
+</table>
 
 
 {% tabs %}
@@ -125,14 +148,14 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Connecting Two Nodes with Line Connector](Connectors-or-Links_images/Connectors-or-Links_img2.jpeg)
+![Customizing Connector Appearance](Connectors-or-Links_images/Connectors-or-Links_img2.jpeg)
 
 
 ## Rounded Corner
 
-You can now change the look of connectors ([Orthogonal](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.OrthogonalConnector.html#), [OrgLine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.OrgLineConnector.html#), [Polyline](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Polyline.html#)) by providing rounded corners to connectors.
+You can change the look of connectors ([Orthogonal](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.OrthogonalConnector.html#), [OrgLine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.OrgLineConnector.html#), [Polyline](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Polyline.html#)) by providing rounded corners to connectors.
 
-The [EnableRoundedCorner](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ConnectorBase.html#Syncfusion_Windows_Forms_Diagram_ConnectorBase_EnableRoundedCorner) is used to to enable rounded corner for a connector, and the [CurveRadius](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.OrgLineConnector.html#Syncfusion_Windows_Forms_Diagram_OrgLineConnector_CurveRadius) connector property is used and set the radius for the rounded corner curve respectively.
+The [EnableRoundedCorner](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ConnectorBase.html#Syncfusion_Windows_Forms_Diagram_ConnectorBase_EnableRoundedCorner) property is used to enable rounded corners for a connector, and the [CurveRadius](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.OrgLineConnector.html#Syncfusion_Windows_Forms_Diagram_OrgLineConnector_CurveRadius) connector property is used to set the radius for the rounded corner curve respectively.
 
 ### Use Case Scenario
 
@@ -143,18 +166,21 @@ This is used to change the visual style of connectors.
 <tr>
 <th>
 Property</th><th>
-Description </th><th>
-Data Type </th></tr>
+Description</th><th>
+Data Type</th><th>
+Default Value</th></tr>
 <tr>
 <td>
 {{'[EnableRoundedCorner](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ConnectorBase.html#Syncfusion_Windows_Forms_Diagram_ConnectorBase_EnableRoundedCorner)'| markdownify }}</td><td>
 Enables or disables rounded corner for a connector.</td><td>
-bool</td></tr>
+bool</td><td>
+false</td></tr>
 <tr>
 <td>
 {{'[CurveRadius](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.OrgLineConnector.html#Syncfusion_Windows_Forms_Diagram_OrgLineConnector_CurveRadius)'| markdownify }}</td><td>
-Gets or sets the radius for the rounded corner curve of a connector.</td><td>
-float</td></tr>
+Gets or sets the radius for the rounded corner curve of a connector. Valid values are non-negative floats.</td><td>
+float</td><td>
+0</td></tr>
 </table>
 
 
@@ -195,7 +221,7 @@ diagram1.Model.AppendChild(orthogonal)
 
 ## Line Bridging
 
-Line bridging provides the visual effect such that the links jump over other links that are found in it's way with lower [Z-order](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Node.html#Syncfusion_Windows_Forms_Diagram_Node_ZOrder), thereby avoiding the links from intersecting each other and providing a hassle-free view to clearly state the various connections between the nodes.It will also create the same visual effect when it jumps over any port. This is done by enabling the [LineBridgingEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ConnectorBase.html#Syncfusion_Windows_Forms_Diagram_ConnectorBase_LineBridgingEnabled) property. Default value is _false_.
+Line bridging provides the visual effect such that the links jump over other links that are found in its way with lower [Z-order](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Node.html#Syncfusion_Windows_Forms_Diagram_Node_ZOrder), preventing the links from intersecting each other and making the connections clearer. The connector will also create the same visual effect when it jumps over any port. This is done by enabling the [LineBridgingEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ConnectorBase.html#Syncfusion_Windows_Forms_Diagram_ConnectorBase_LineBridgingEnabled) property. Default value is _false_.
 
 
 
@@ -212,16 +238,24 @@ The below table lists the properties which controls the appearance of the bridge
 <tr>
 <th>
 Property</th><th>
-Description</th></tr>
+Description</th><th>
+Default Value</th></tr>
+<tr>
+<td>
+{{'[LineBridgingEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ConnectorBase.html#Syncfusion_Windows_Forms_Diagram_ConnectorBase_LineBridgingEnabled)'| markdownify }}</td><td>
+Enables or disables line bridging for a connector or the diagram.</td><td>
+false</td></tr>
 <tr>
 <td>
 {{'[LineBridgeSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Model.html#Syncfusion_Windows_Forms_Diagram_Model_LineBridgeSize)'| markdownify }}</td><td>
-Allows to set the size of the bridge when the links intersect each other. Default value is 16.</td></tr>
+Allows to set the size of the bridge when the links intersect each other.</td><td>
+16</td></tr>
 <tr>
 <td>
-BridgeStyle</td><td>
-Specifies the type of bridge to be applied. Default value is 'Arc'. The value when set, applies to all the links that are drawn on the diagram. The links will bridge over the other link only when it's {{'[Z-order](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Node.html#Syncfusion_Windows_Forms_Diagram_Node_ZOrder)'| markdownify }} value is high. The options include the following:
-<ul><li> Arc</li><li> Gap</li><li> Square</li><li> Side2</li><li>Side3</li><li>Side4</li><li>Side5</li><li>Side6</li><li>Side7</li></ul></td></tr>
+{{'[BridgeStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Model.html#Syncfusion_Windows_Forms_Diagram_Model_BridgeStyle)'| markdownify }}</td><td>
+Specifies the type of bridge to be applied. The value when set, applies to all the links that are drawn on the diagram. The links will bridge over the other link only when its {{'[Z-order](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Node.html#Syncfusion_Windows_Forms_Diagram_Node_ZOrder)'| markdownify }} value is high. The options include the following:
+<ul><li> Arc</li><li> Gap</li><li> Square</li><li> Side2</li><li>Side3</li><li>Side4</li><li>Side5</li><li>Side6</li><li>Side7</li></ul></td><td>
+Arc</td></tr>
 </table>
 
 
@@ -323,15 +357,18 @@ To customize the distance between the connectors and the obstacles, and the type
 <tr>
 <th>
 Line Router Property</th><th>
-Description</th></tr>
+Description</th><th>
+Default Value</th></tr>
 <tr>
 <td>
-{{'[DistanceToObstacle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.LineRouter.html#Syncfusion_Windows_Forms_Diagram_LineRouter_DistanceToObstacles)'| markdownify }}</td><td>
-Specifies the distance from routing connector to the obstacle.</td></tr>
+{{'[DistanceToObstacles](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.LineRouter.html#Syncfusion_Windows_Forms_Diagram_LineRouter_DistanceToObstacles)'| markdownify }}</td><td>
+Specifies the distance from routing connector to the obstacle.</td><td>
+10</td></tr>
 <tr>
 <td>
 {{'[RoutingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.LineRouter.html#Syncfusion_Windows_Forms_Diagram_LineRouter_RoutingMode)'| markdownify }}</td><td>
-Specifies the type of LineRouting engine routing mode to be used. The default value is 'Inactive'. The options includes, Inactive, Automatic and SemiAutomatic.</td></tr>
+Specifies the routing mode. The options include Inactive (routing disabled), Automatic (links re-routed automatically around obstacles), and SemiAutomatic (links re-routed only on user interaction).</td><td>
+Inactive</td></tr>
 </table>
 
 
@@ -355,11 +392,24 @@ Me.diagram1.Model.LineRouter.RoutingMode = RoutingMode.Automatic
 
 The [LineBridgingEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ConnectorBase.html#Syncfusion_Windows_Forms_Diagram_ConnectorBase_LineBridgingEnabled), [LineRoutingEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ConnectorBase.html#Syncfusion_Windows_Forms_Diagram_ConnectorBase_LineRoutingEnabled) properties can be set for the diagram, in which case it will be automatically applied to all the links added to the model. Else it can be enabled only for the required links individually.
 
-### Node Settings
+### Marking Nodes as Obstacles
 
-When line routing is enabled make sure to set the [TreatAsObstacle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Node.html#Syncfusion_Windows_Forms_Diagram_Node_TreatAsObstacle) property of the objects to true, to avoid the links running over them. If not set for an object, then that node will not be considered as an obstacle and the link will pass over it.
+When line routing is enabled, make sure to set the [TreatAsObstacle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Node.html#Syncfusion_Windows_Forms_Diagram_Node_TreatAsObstacle) property of the objects to true, to avoid the links running over them. The default value is _false_. If not set for an object, then that node will not be considered as an obstacle and the link will pass over it.
 
-Programmatically it can be set as follows: 
+<table>
+<tr>
+<th>
+Property</th><th>
+Description</th><th>
+Default Value</th></tr>
+<tr>
+<td>
+{{'[TreatAsObstacle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Node.html#Syncfusion_Windows_Forms_Diagram_Node_TreatAsObstacle)'| markdownify }}</td><td>
+Gets or sets a value indicating whether the node should be treated as an obstacle for line routing.</td><td>
+false</td></tr>
+</table>
+
+Programmatically it can be set as follows:
 
 {% tabs %}
 {% highlight c# %}
