@@ -7,9 +7,9 @@ control: CardLayout
 documentation: ug
 ---
 
-# Browsing Through Cards in Windows Forms CardLayout
+# Browsing Through Cards in WinForms Card Layout
 
-This section explains how to browse through the cards (child controls) that have been added to the CardLayout manager.
+This section explains how to browse through the cards (child controls) that have been added to the WinForms Card Layout manager.
 
 ## Through designer
 
@@ -18,7 +18,7 @@ The selected card can be displayed using the following property, which simply ta
 <table>
 <tr>
 <th>
-CardLayout Properties</th><th>
+WinForms Card Layout Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -69,11 +69,11 @@ Last</td><td>
 Shows the last card in the list.</td></tr>
 </table>
 
-N> The SmartTag feature (available only in Visual Studio 2005) can also be used to browse through the cards of the CardLayout.
+N> The SmartTag feature (available only in Visual Studio 2005) can also be used to browse through the cards of the WinForms Card Layout.
 
 ## Through code
 
-Drag and drop the ComboBox, and the Previous and Next buttons for viewing a selected card. Use the Previous() and Next() methods of the CardLayout to see the CardLayout in action inside the Previous and Next Button clicks.
+Drag and drop the ComboBox, and the Previous and Next buttons for viewing a selected card. Use the Previous() and Next() methods of the WinForms Card Layout to see it in action inside the Previous and Next Button clicks.
 
 {% tabs %}
 

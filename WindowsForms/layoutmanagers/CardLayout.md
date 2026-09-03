@@ -8,17 +8,17 @@ documentation: ug
 ---
 # CardLayout in Windows Forms Layout Manager
 
-`CardLayout` is a Layout Manager that is applied to a Container, and components are added to the layout in a particular form and not between different forms. It treats each component in the Container as a card. Only one card is visible at a time, and the Container acts as a stack of cards. The first component added to a CardLayout object is the visible component when the Container is first displayed.
+`WinForms Card Layout` is a Layout Manager that is applied to a Container, and components are added to the layout in a particular form and not between different forms. It treats each component in the Container as a card. Only one card is visible at a time, and the Container acts as a stack of cards. The first component added to a WinForms Card Layout object is the visible component when the Container is first displayed.
 
-The Child component/card can either be made to fill or simply centered within the Container. Some common uses of a CardLayout are to create WizardControls and property pages.
+The Child component/card can either be made to fill or simply centered within the Container. Some common uses of a WinForms Card Layout are to create WizardControls and property pages.
 
-N> The WizardControl uses the CardLayout component internally in it's implementation.
+N> The WizardControl uses the WinForms Card Layout component internally in it's implementation.
 
 In it's simplest form, this Layout Manager can be used to automatically arrange the Child components in one or more rows, as given below.
 
 ![CardLayout for Windows Forms](Overview_images/Overview_img23.jpeg)
 
-N> CardLayout does not arrange the Child components automatically like the other Layout Managers.
+N> WinForms Card Layout does not arrange the Child components automatically like the other Layout Managers.
 
 ## Key Features
 
@@ -32,7 +32,7 @@ N> CardLayout does not arrange the Child components automatically like the other
 
 **Getting started**
 
-This section describes how to add `CardLayout` control in a Windows Forms application and overview of its basic functionalities.
+This section describes how to add `WinForms Card Layout` control in a Windows Forms application and overview of its basic functionalities.
 
 ## Assembly deployment
 
@@ -42,9 +42,9 @@ Please find more details regarding how to install the nuget packages in windows 
  
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
 
-**Creating simple application with CardLayout**
+**Creating simple application with WinForms Card Layout**
 
-You can create the Windows Forms application with CardLayout control as follows:
+You can create the Windows Forms application with WinForms Card Layout control as follows:
 
 1. [Creating project](#creating-the-project)
 2. [Adding control via designer](#adding-control-via-designer)
@@ -52,17 +52,17 @@ You can create the Windows Forms application with CardLayout control as follows:
 
 **Creating the project**
 
-Create a new Windows Forms project in the Visual Studio to display the CardLayout with basic functionalities.
+Create a new Windows Forms project in the Visual Studio to display the WinForms Card Layout with basic functionalities.
 
 ## Adding control via designer
 
-The CardLayout control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+The WinForms Card Layout control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
 * Syncfusion.Shared.Base.dll
 
 ![Drag and drop CardLayout from toolbox](CardLayout_images/CardLayout_img4.png) 
 
-To add the form as a Container control of the CardLayout, click `Yes` in a popup form which appears automatically before CardLayout gets added.
+To add the form as a Container control of the CardLayout, click `Yes` in a popup form which appears automatically before WinForms Card Layout gets added.
 
 ![Alert to add CardLayout to form](CardLayout_images/CardLayout_img6.png) 
 
@@ -99,7 +99,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %} 
 
-**Step 3** -  Create `CardLayout` control instance and set `ContainerControl` as form.
+**Step 3** -  Create `WinForms Card Layout` control instance and set `ContainerControl` as form.
 
 {% tabs %}
 
@@ -164,19 +164,19 @@ Me.Controls.Add(this.buttonAdv3)
 ![Adding child controls to CardLayout](CardLayout_images/CardLayout_img9.png) 
 
 
-## Configuring CardLayout
+## Configuring WinForms Card Layout
 
-The configuration settings for the CardLayout have been discussed in this topic.
+The configuration settings for the WinForms Card Layout have been discussed in this topic.
 
 ### Card names
 
-By default, when a new Child control is added, the CardLayout will render a unique card name for it. This name can be modified by using the property given below.
+By default, when a new Child control is added, the WinForms Card Layout will render a unique card name for it. This name can be modified by using the property given below.
 
 
 <table>
 <tr>
 <th>
-CardLayout property</th><th>
+WinForms Card Layout property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -231,14 +231,14 @@ Returns an associated control given a card name. </td></tr>
 <tr>
 <td>
 GetNewCardName</td><td>
-Generates a new unique name for the card that could be added to this CardLayout. </td></tr>
+Generates a new unique name for the card that could be added to this WinForms Card Layout. </td></tr>
 <tr>
 <td>
 SetCardName</td><td>
 Sets the card name for a Child component.</td></tr>
 </table>
 
-N> This property is added as an extended property in the properties window of the Child control added to the CardLayout.
+N> This property is added as an extended property in the properties window of the Child control added to the WinForms Card Layout.
 
 ### Card index
 
@@ -249,7 +249,7 @@ The index of the previous and next cards can be determined using the below given
 <table>
 <tr>
 <th>
-CardLayout properties</th><th>
+WinForms Card Layout properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -270,7 +270,7 @@ The aspect ratio can be set using the property given below.
 <table>
 <tr>
 <th>
-CardLayout property</th><th>
+WinForms Card Layout property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -321,9 +321,9 @@ Sets the value for maintaining aspect ratio based on the control's preferred siz
 
 ## Configuring Child controls
 
-Deriving from the Layout Manager base, the CardLayout inherits all the functionality that the Layout Manager type exposes.
+Deriving from the Layout Manager base, the WinForms Card Layout inherits all the functionality that the Layout Manager type exposes.
 
-For example, when the CardLayout is added to a form, and a Panel control is added to it, then this Panel control acts as Card1, where the user can add the needed controls. Then another Panel control can be added which will act as Card2 and so on. During runtime, only one Card will be visible at a time. You can traverse through these cards by adding buttons and setting the appropriate code.
+For example, when the WinForms Card Layout is added to a form, and a Panel control is added to it, then this Panel control acts as Card1, where the user can add the needed controls. Then another Panel control can be added which will act as Card2 and so on. During runtime, only one Card will be visible at a time. You can traverse through these cards by adding buttons and setting the appropriate code.
 
 In the following screenshot, Panel control acts as the Container control and Label control acts as a card.
 
@@ -372,11 +372,11 @@ Me.label1.Image = DirectCast((resources.GetObject("label1.Image")), System.Drawi
 
 #### Size
 
-The preferred size and minimum size of the Child controls can be set using the PreferredSize and MinimumSize extended properties of the Child controls that are added to the CardLayout. Refer Child Control Settings to know about this topic.
+The preferred size and minimum size of the Child controls can be set using the PreferredSize and MinimumSize extended properties of the Child controls that are added to the WinForms Card Layout. Refer Child Control Settings to know about this topic.
 
 #### Layout mode
 
-The CardLayout provides two modes to layout the Child controls. The mode can be set using the property given below.
+The WinForms Card Layout provides two modes to layout the Child controls. The mode can be set using the property given below.
 
 
 
@@ -384,7 +384,7 @@ The CardLayout provides two modes to layout the Child controls. The mode can be 
 
 <table>
 <tr>
-<th>CardLayout property</th>
+<th>WinForms Card Layout property</th>
 <th>Description</th>
 </tr>
 <tr>
@@ -393,7 +393,7 @@ The CardLayout provides two modes to layout the Child controls. The mode can be 
 </tr>
 </table>
 
-When the layout mode of CardLayout is set to 'Default', the Child control is simply centered within the Container when the Container's size is bigger than the Child control's preferred size. However, if the Container's size is smaller than the Child controls's preferred size, the Child control's size will shrink down to its minimum size. When shrunk, you have an option to specify whether the preferred width/height aspect ratio should be maintained for that Child control, which is specified using the extended MaintainAspectRatio property of each Child.
+When the layout mode of WinForms Card Layout is set to 'Default', the Child control is simply centered within the Container when the Container's size is bigger than the Child control's preferred size. However, if the Container's size is smaller than the Child controls's preferred size, the Child control's size will shrink down to its minimum size. When shrunk, you have an option to specify whether the preferred width/height aspect ratio should be maintained for that Child control, which is specified using the extended MaintainAspectRatio property of each Child.
 
 When the layout mode is set to 'Fill', it simply resizes the Child control to fill the entire Container client area.
 
@@ -419,7 +419,7 @@ Me.cardLayout1.LayoutMode = Syncfusion.Windows.Forms.Tools.CardLayoutMode.Fill
 
 ## Browsing through cards
 
-This section discusses illustrates how to browse through the Cards (Child controls) that have been added to the CardLayout Manager.
+This section discusses illustrates how to browse through the Cards (Child controls) that have been added to the WinForms Card Layout Manager.
 
 ### Through designer
 
@@ -430,7 +430,7 @@ The selected card can be displayed using the property given below, which simply 
 <table>
 <tr>
 <th>
-CardLayout property</th><th>
+WinForms Card Layout property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -490,11 +490,11 @@ Last</td><td>
 Show the last card in the list.</td></tr>
 </table>
 
-N> The SmartTag feature (available only in Visual Studio 2005) can also be used to browse through the cards of the CardLayout.
+N> The SmartTag feature (available only in Visual Studio 2005) can also be used to browse through the cards of the WinForms Card Layout.
 
 ### Through code
 
-Drag and drop the ComboBox and the Previous and Next Buttons for viewing the selected card. Use the Previous() and Next() methods of the CardLayout to see the CardLayout in action inside the Previous and Next Button Clicks.
+Drag and drop the ComboBox and the Previous and Next Buttons for viewing the selected card. Use the Previous() and Next() methods of the WinForms Card Layout to see it in action inside the Previous and Next Button Clicks.
 
 {% tabs %}
 
