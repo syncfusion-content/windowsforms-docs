@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: How To | WindowsForms | Syncfusion®
 description: How-to topics for SfButton explain using buttons as form accept or cancel buttons and displaying tooltips on mouse hover.
@@ -9,13 +9,13 @@ documentation: ug
 
 # How To Questions of Windows Forms SfButton
 
-## Set the SfButton as Accept or Cancel Button to the Form
+## Set the WinForms Button as Accept or Cancel Button to the Form
 
-This section describes how to set the SfButton as Accept or Cancel button to the form.
+This section describes how to set the WinForms Button as Accept or Cancel button to the form.
 
 ### Accept Button
 
-The SfButton can be set as Accept button to a form by setting the AcceptButton property of the form.
+The WinForms Button can be set as Accept button to a form by setting the AcceptButton property of the form.
 
 {% tabs %}
 {% highlight c# %}
@@ -29,7 +29,7 @@ this.AcceptButton = sfButton1;
 
 ### Cancel Button
 
-The SfButton can be set as Cancel button to a form by setting the CancelButton property of the form.
+The WinForms Button can be set as Cancel button to a form by setting the CancelButton property of the form.
 
 {% tabs %}
 {% highlight c# %}
@@ -43,10 +43,10 @@ this.CancelButton = sfButton2;
 
 ## Show the Tooltip on Mouse Hover
 
-The SfToolTip can be shown on the SfButton when the mouse hovering. Follow the steps to perform this feature:
+The SfToolTip can be shown on the WinForms Button when the mouse hovering. Follow the steps to perform this feature:
 
 1. Create a new instance of SfToolTip.
-2. Initialize the SfToolTip to the SfButton by using the SetToolTip method.
+2. Initialize the SfToolTip to the WinForms Button by using the SetToolTip method.
 
 {% capture codesnippet1 %}​
 {% tabs %}
