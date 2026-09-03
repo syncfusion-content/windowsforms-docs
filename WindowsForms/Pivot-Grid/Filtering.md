@@ -9,9 +9,9 @@ documentation: ug
 
 # Filtering in Windows Forms Pivot Grid
 
-The filtered data displays only a subset of data that meets a specific criteria and hides the data that you do not want to display. The filters are automatically re-applied every time when the pivot grid is refreshed or updated until you remove those filters. In the pivot grid, filters are additive, which means that each additional filter is based on the current filter and further reduces the subset of data. At a time, 'n' number of filtering conditions can be applied to the pivot grid.
+The filtered data displays only a subset of data that meets a specific criteria and hides the data that you do not want to display. The filters are automatically re-applied every time when the Pivot Grid is refreshed or updated until you remove those filters. In Pivot Grid, filters are additive, which means that each additional filter is based on the current filter and further reduces the subset of data. At a time, 'n' number of filtering conditions can be applied to the control.
 
-In the pivot grid control, the filtering operation can be performed by any of the following ways:
+In the Pivot Grid control, the filtering operation can be performed by any of the following ways:
 
 ## Using filter expression programmatically
 
@@ -28,9 +28,9 @@ Set the FieldMappingName property value into the DimensionName and DimensionHead
 
 ### Defining filter expressions
 
-To define a filter, create an instance of [FilterExpression](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base.FilterExpression.html) class and add that instance to [Filters](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_Filters) collection of pivot grid control.
+To define a filter, create an instance of [FilterExpression](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base.FilterExpression.html) class and add that instance to [Filters](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_Filters) collection of Pivot Grid control.
 
-Refer to the code sample to define filter expressions in the pivot grid control.
+Refer to the code sample to define filter expressions in the Pivot Grid control.
 
 {% tabs %}
 
@@ -64,7 +64,7 @@ pivotGridControl1.Filters.Add(filterExpression1)
 
 ![Filtering_img1](Filtering_images/Filtering_img1.png)
 
-Refer to the code sample to define a filter expression in the pivot grid control by using the 'OR' operator.
+Refer to the code sample to define a filter expression in the Pivot Grid control by using the 'OR' operator.
 
 {% tabs %}
 
@@ -98,7 +98,7 @@ pivotGridControl1.Filters.Add(filterExpression1)
 
 ![Filtering_img3](Filtering_images/Filtering_img3.png)
 
-Refer to the code sample to define a filter expression in the pivot grid control by using the 'IN' operator.
+Refer to the code sample to define a filter expression in the Pivot Grid control by using the 'IN' operator.
 
 {% tabs %}
 

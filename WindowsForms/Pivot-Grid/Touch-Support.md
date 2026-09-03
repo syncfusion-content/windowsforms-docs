@@ -9,13 +9,13 @@ documentation: ug
 
 # Touch Support in Windows Forms Pivot Grid
 
-PivotGrid control provides touch support for scrolling, panning and bubble selection while selecting cells.
+WinForms Pivot Grid provides touch support for scrolling, panning and bubble selection while selecting cells.
 
 ## Enabling touch mode
 
-The touch support in pivot grid can be enabled using the [EnableTouchMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_EnableTouchMode) property of pivot grid. By default, the `EnableTouchMode` property is set as false.
+The touch support in Pivot Grid can be enabled using the [EnableTouchMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_EnableTouchMode) property of the control. By default, the `EnableTouchMode` property is set as false.
 
-Refer to the below code sample to enable the touch mode in pivot grid.
+Refer to the below code sample to enable the touch mode in Pivot Grid.
 
 {% tabs %}
 
@@ -35,17 +35,17 @@ Me.pivotGridControl1.EnableTouchMode = True
 
 ## Touch gestures
 
-Enabling the touch mode in pivot grid control allows to expand or collapse the header cells. It also allows to drag and drop the pivot items between the [pivot table field list](https://help.syncfusion.com/windowsforms/pivotgrid/pivot-schema-designer) and the [grouping bar](https://help.syncfusion.com/windowsforms/pivotgrid/grouping-bar).
+Enabling the touch mode in Pivot Grid control allows to expand or collapse the header cells. It also allows to drag and drop the pivot items between the [pivot table field list](https://help.syncfusion.com/windowsforms/pivotgrid/pivot-schema-designer) and the [grouping bar](https://help.syncfusion.com/windowsforms/pivotgrid/grouping-bar).
 
 ## Touch swiping
 
-When the touch mode is enabled, the pivot grid control allows to scroll its tabular values by swiping the control in both horizontal and vertical directions.
+When the touch mode is enabled, the Pivot Grid control allows to scroll its tabular values by swiping in both horizontal and vertical directions.
 
 ![Touch-Support_img1](Touch-Support_images/Touch-Support_img1.png)
 
 ## Touch selection
 
-The pivot grid control provides support to select multiple cells with the help of touch indicator.
+The Pivot Grid control provides support to select multiple cells with the help of touch indicator.
 
 ### Enabling Excel like touch selection
 
@@ -74,11 +74,11 @@ Me.pivotGridControl1.TableModel.Options.ExcelLikeCurrentCell = True
 
 ![Touch-Support_img2](Touch-Support_images/Touch-Support_img2.png)
 
-N> When Excel 2003 selection frame is enabled, then the touch selection cannot be performed in the pivot grid control.
+N> When Excel 2003 selection frame is enabled, then the touch selection cannot be performed in the Pivot Grid control.
 
 ### Disabling touch indicator
 
-The touch indicator used for cell selection can be hidden in the pivot grid control by using the [ShowTouchIndicator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_ShowTouchIndicator) property. By default, its value is set as `true`.
+The touch indicator used for cell selection can be hidden in the Pivot Grid control by using the [ShowTouchIndicator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_ShowTouchIndicator) property. By default, its value is set as `true`.
 
 {% tabs %}
 
