@@ -7,9 +7,9 @@ control: HTMLUI
 documentation: ug
 ---
 
-# Scrolling in Windows Forms HTMLUI control
+# Scrolling in WinForms HTML Viewer control
 
-The Scroll property of the HTMLUI control helps in loading large HTML documents. This scroll property can be set as per the application. Also the HTMLUI control allows programmatic scrolling to a particular location or element with its extensive scroll properties support.
+The Scroll property of the WinForms HTML Viewer control helps in loading large HTML documents. This scroll property can be set as per the application. Also the WinForms HTML Viewer control allows programmatic scrolling to a particular location or element with its extensive scroll properties support.
 
 {% tabs %}
 
@@ -39,9 +39,9 @@ Me.htmluiControl1.ScrollToElement(elem)
 
 {% endtabs %}
 
-## HTMLUIAutoScroll sample
+## WinForms HTML Viewer AutoScroll sample
 
-This sample illustrates the Scrolling feature supported in HTMLUI.
+This sample illustrates the Scrolling feature supported in WinForms HTML Viewer.
 
 
 

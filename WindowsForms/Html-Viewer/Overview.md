@@ -7,9 +7,9 @@ control: HTMLUI
 documentation: ug
 ---
 
-# About Syncfusion® Windows Forms HTMLUI Control
+# About Syncfusion® WinForms HTML Viewer Control
 
-HTMLUIControl helps to render the Hyper Text Markup Language (HTML). Its functionality is similar to a web browser used for display purposes. Like popular web browsers, HTMLUI comes with advanced options to work with web-related functionalities like navigating through a history of documents, selection and much more.
+WinForms HTML Viewer Control helps to render the Hyper Text Markup Language (HTML). Its functionality is similar to a web browser used for display purposes. Like popular web browsers, WinForms HTML Viewer comes with advanced options to work with web-related functionalities like navigating through a history of documents, selection and much more.
 
 
 ## Key features

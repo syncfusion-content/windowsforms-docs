@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How To Load Custom Controls As Part Of the HTML La | Syncfusion®
-description: Learn how to how To Load Custom Controls As Part Of the HTML La in Syncfusion Windows Forms Html Viewer (HTMLUI) control.
+title: How To Load Custom Controls As Part Of the HTML Layout | Syncfusion®
+description: Learn how to Load Custom Controls As Part Of the HTML Layout in Syncfusion Windows Forms Html Viewer (HTMLUI) control.
 platform: windowsforms
 control: HTML UI
 documentation: ug
 ---
 
-# How To Load Custom Controls As Part Of the HTML La
+# How To Load Custom Controls As Part Of the HTML Layout
 
 An HTML document containing custom controls is shown below.
 
@@ -87,7 +87,7 @@ An HTML document containing custom controls is shown below.
 
 {% endhighlight %}
 
-The CustomControlBase implements the base functionality of the Windows Forms control on the HTML tag element and loads the custom controls with its respective functionalities into the HTMLUI.
+The CustomControlBase implements the base functionality of the Windows Forms control on the HTML tag element and loads the custom controls with its respective functionalities into the WinForms HTML Viewer.
 
 
 
