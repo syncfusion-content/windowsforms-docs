@@ -6,11 +6,11 @@ platform: windowsforms
 control: ColorPickerUIAdv 
 documentation: ug
 ---
-# Events in Windows Forms ColorPickerUIAdv
+# Events in WinForms color picker
 
 ## Picked Event
 
-This event is raised every time a color is picked in the ColorPickerUIAdv control. The event handler receives an argument of type ColorPickedEventArgs. The event property provided by ColorPickedEventArgs argument is as follows.
+This event is raised every time a color is picked in the WinForms color picker control. The event handler receives an argument of type ColorPickedEventArgs. The event property provided by ColorPickedEventArgs argument is as follows.
 
 <table>
 <tr>

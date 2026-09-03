@@ -6,14 +6,14 @@ platform: windowsforms
 control: ColorPickerUIAdv 
 documentation: ug
 ---
-# Appearance in Windows Forms ColorPickerUIAdv
+# Appearance in WinForms color picker
 
 
 ## Style Settings
 
 ### Visual Style
 
-The appearance and behavior settings, available for the ColorPickerUIAdv are discussed in this section. This control supports the below VisualStyles
+The appearance and behavior settings, available for the WinForms color picker are discussed in this section. This control supports the below VisualStyles
 
 * Default
 * Office2007
@@ -24,7 +24,7 @@ The appearance and behavior settings, available for the ColorPickerUIAdv are dis
 * Office2016Black
 * Office2016DarkGray
 
-The style can be applied using the Style property. The following code example allows you to set the style for the ColorPickerUIAdv.
+The style can be applied using the Style property. The following code example allows you to set the style for the WinForms color picker.
 
 {% tabs %}
 {% highlight c# %}
@@ -46,12 +46,12 @@ Me.colorPickerUIAdv1.Style = Syncfusion.Windows.Forms.Tools.ColorPickerUIAdv.vis
 
 ### Office2007 Color Schemes
 
-By default ColorPickerUIAdv control has Office2007 look and feel. 
+By default WinForms color picker control has Office2007 look and feel. 
 
 <table>
 <tr>
 <th>
-ColorPickerUIAdv Properties</th><th>
+WinForms color picker Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -91,7 +91,7 @@ The Office2007 Visual Styles can be turned off by setting the UseOffice2007Style
 
 ### Custom Colors
 
-We can also apply custom colors to the ColorPickerUIAdv control by setting Office2007Theme to "Managed" and specifying the custom color through the ApplyManagedColors method as follows.
+We can also apply custom colors to the WinForms color picker control by setting Office2007Theme to "Managed" and specifying the custom color through the ApplyManagedColors method as follows.
 
 {% tabs %}
 {% highlight c# %}
@@ -116,7 +116,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.Orange)
 
 ### Border Styles
 
-Border for ColorPickerUIAdv control can be Fixed Single, Fixed3D or None, which is set using BorderStyle property. By default the border style is None.
+Border for WinForms color picker control can be Fixed Single, Fixed3D or None, which is set using BorderStyle property. By default the border style is None.
 
 {% tabs %}
 {% highlight c# %}
@@ -140,10 +140,10 @@ The below property is used to change the border height.
 
 <table>
 <tr>
-<th>ColorPickerUIAdv Property</th>
+<th>WinForms color picker Property</th>
 <th>Description</th></tr>
 <tr>
 <td>BorderOffset</td>
-<td>Set the border height for ColorPickerUIAdv control. The default value is 3.</td>
+<td>Set the border height for WinForms color picker control. The default value is 3.</td>
 </tr>
 </table>

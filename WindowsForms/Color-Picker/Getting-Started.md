@@ -6,9 +6,9 @@ platform: windowsforms
 control: ColorPickerUIAdv
 documentation: ug
 ---
-# Getting Started with Windows Forms ColorPickerUIAdv
+# Getting Started with WinForms color picker
 
-This section briefly describes how to create a new Windows Forms project in Visual Studio and add **ColorPickerUIAdv** with its basic functionalities.
+This section briefly describes how to create a new Windows Forms project in Visual Studio and add **WinForms color picker** with its basic functionalities.
 
 
 ## Assembly deployment
@@ -17,11 +17,11 @@ Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/con
 
 Click [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install nuget packages in Windows Forms application.
 
-## Adding the ColorPickerUIAdv control via designer
+## Adding the WinForms color picker control via designer
 
 1. Create a new Windows Forms application in Visual Studio.
 
-2. The [ColorPickerUIAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ColorPickerUIAdv.html) control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
+2. The [WinForms color picker](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ColorPickerUIAdv.html) control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
 
    * Syncfusion.Grid.Base
    * Syncfusion.Grid.Windows
@@ -34,7 +34,7 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/ins
 ![Windows forms ColorPickerUIAdv drag and drop from toolbox](ColorPickerUIAdv_Images/ColorPickerUIAdv_toolbox.jpeg) 
 
 
-## Adding the ColorPickerUIAdv control via code
+## Adding the WinForms color picker control via code
 
 It can be added programmatically by performing the following steps.
 
@@ -68,7 +68,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4. Create an instance of [ColorPickerUIAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ColorPickerUIAdv.html), and add it to the form.
+4. Create an instance of [WinForms color picker](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ColorPickerUIAdv.html), and add it to the form.
 
 {% capture codesnippet2 %}
 {% tabs %}
