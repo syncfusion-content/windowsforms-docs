@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Button Types in Windows Forms Button control | Syncfusion®
 description: Button Types in SfButton support text, image, and icon buttons with customizable layouts, sizing, and spacing options.
@@ -9,11 +9,11 @@ documentation: ug
 
 # Button Types in Windows Forms Button (SfButton)
 
-This section describes various types of button supported by the SfButton.
+This section describes various types of button supported by the WinForms Button.
 
 ## Text and Image Button
 
-The text and image can be displayed inside the SfButton by initializing the [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_Text) and [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_Image) properties.
+The text and image can be displayed inside the WinForms Button by initializing the [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_Text) and [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_Image) properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -57,7 +57,7 @@ sfButton1.ImageSize = new Size(15, 15);
 
 ### Auto Resizing
 
-The [AutoSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_AutoSize) property enables the SfButton to automatically resize itself based on its content, including both text and image. When this property is set to true, the button dynamically adjusts its dimensions to fit the combined size of the image and text.
+The [AutoSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_AutoSize) property enables the WinForms Button to automatically resize itself based on its content, including both text and image. When this property is set to true, the button dynamically adjusts its dimensions to fit the combined size of the image and text.
 
 {% tabs %}
 {% highlight c# %}
@@ -85,13 +85,13 @@ sfButton1.ImageMargin = new Padding(3, 3, 3, 3);
 
 ## Image Button
 
-The SfButton can be displayed only with the image by setting the empty string value to the [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_Text) property and initialize the image value to the [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_Image) property. The size of the image can be changed by using the ImageSize property.
+The WinForms Button can be displayed only with the image by setting the empty string value to the [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_Text) property and initialize the image value to the [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_Image) property. The size of the image can be changed by using the ImageSize property.
 
 ![SfButton_img4](SfButton_images/SfButton_img4.jpeg)
 
 ## Icon Button
 
-The SfButton can be displayed only with an icon by setting the empty string value to the Text property and initialize the icon value to [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_Image) property. You can show the icon button alone by setting the borders to null, and setting the back color of the button same as the background area.
+The WinForms Button can be displayed only with an icon by setting the empty string value to the Text property and initialize the icon value to [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_Image) property. You can show the icon button alone by setting the borders to null, and setting the back color of the button same as the background area.
 
 {% tabs %}
 {% highlight c# %}
