@@ -10,19 +10,19 @@ documentation: ug
 
 # Dynamic Properties in Windows Forms Diagram
 
-This feature lets the user add additional properties or data to the nodes and connectors. Any type of data can be added as additional data or properties.
+## Overview
 
-The node’s [PropertyBag](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Node.html#Syncfusion_Windows_Forms_Diagram_Node_PropertyBag) property, which is a key value pair, is used to add, edit, and remove the additional properties or data and can be serialized when saving the diagram.
+This feature lets users add additional properties or data to the nodes and connectors. Any type of data can be added as additional data or properties.
+
+The node's [PropertyBag](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Node.html#Syncfusion_Windows_Forms_Diagram_Node_PropertyBag) property, which is a key-value pair, is used to add, edit, and remove the additional properties or data, which can be serialized when saving the diagram.
 
 The [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) has built-in UI dialogs to add, edit, and remove the dynamic properties. 
 
-Use Case Scenario:
+## Use Case Scenario
 
 It is used to store additional data to the nodes or connectors as needed.
 
-
-
-Properties
+## Properties
 
 <table>
 <tr>
@@ -37,6 +37,7 @@ Gets or sets the dynamic property data dictionary.</td><td>
 Dictionary<string, object></td></tr>
 </table>
 
+## Code Example
 
 The following code shows how to add additional data to a node by using the [PropertyBag](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Node.html#Syncfusion_Windows_Forms_Diagram_Node_PropertyBag) property.
 
@@ -44,12 +45,20 @@ The following code shows how to add additional data to a node by using the [Prop
 {% tabs %}
 {% highlight c# %}
 
+// Assumes a diagram node and an employee source object have been created beforehand.
+Syncfusion.Windows.Forms.Diagram.Node node = new Syncfusion.Windows.Forms.Diagram.Node();
+Employee employee = new Employee { EmployeeName = "John Doe", EmployeeID = 1001, Designation = "Developer" };
+
 node.PropertyBag.Add("Name", employee.EmployeeName);
 node.PropertyBag.Add("ID", employee.EmployeeID);
 node.PropertyBag.Add("Designation", employee.Designation);
 
 {% endhighlight %}
 {% highlight vb %}
+
+' Assumes a diagram node and an employee source object have been created beforehand.
+Dim node As New Syncfusion.Windows.Forms.Diagram.Node()
+Dim employee As New Employee() With { .EmployeeName = "John Doe", .EmployeeID = 1001, .Designation = "Developer" }
 
 node.PropertyBag.Add("Name", employee.EmployeeName)
 node.PropertyBag.Add("ID", employee.EmployeeID)

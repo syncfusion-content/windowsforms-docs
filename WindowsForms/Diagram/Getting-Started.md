@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started with Windows Forms Diagram
 
-This section helps you understand and quickly get started using  [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) in your Windows Forms applications. Control appearance and structure are defined, and the relevant classes are depicted.
+This section helps you understand and quickly get started using [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) in your Windows Forms applications. Control appearance and structure are defined, and the relevant classes are depicted.
 
 ## Assembly deployment
 
-Refer to [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#diagram) section to get the list of assemblies or NuGet packages needs to be added as references to use the Diagram control in any application.
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#diagram) section to get the list of assemblies or NuGet packages that need to be added as references to use the Diagram control in any application.
 
 ## Structure of Windows Forms Diagram
 
@@ -701,7 +701,7 @@ The Overview control will be added to the designer and its dependent assemblies 
 
 #### Creating an Overview Control through Code
 
-This section shows the step-by-step procedure to create an Overview control programmatically in a .NET Windows Forms application.
+This section shows the step-by-step procedure to create an Overview control programmatically in a .NET Windows Forms application. A Diagram control named diagram1 must already exist on the form.
 
 To create an Overview control using code:
 
@@ -721,7 +721,7 @@ To create an Overview control using code:
 using Syncfusion.Windows.Forms.Diagram.Controls;
 
 //Creates an OverviewControl instance
-OverviewControl overviewControl = new OverviewControl();
+overviewControl = new OverviewControl();
 overviewControl.Dock = DockStyle.Left;
 
 //Set the diagram reference to overviewControl
@@ -741,7 +741,7 @@ Dim overviewControl As New OverviewControl()
 overviewControl.Dock = DockStyle.Left
 
 'Set the diagram reference to overviewControl
-overviewControl.Diagram = Diagram1
+overviewControl.Diagram = diagram1
 
 'Add overviewControl to the form
 Me.Controls.Add(overviewControl)
@@ -785,7 +785,7 @@ The PropertyEditor control will be added to the designer and its dependent assem
 
 #### Creating a PropertyEditor Control through Code
 
-This section shows the step-by-step procedure to create a PropertyEditor control programmatically in a .NET Windows Forms application.
+This section shows the step-by-step procedure to create a PropertyEditor control programmatically in a .NET Windows Forms application. A Diagram control named diagram1 must already exist on the form.
 
 To create a PropertyEditor control using code:
 
@@ -827,7 +827,7 @@ propertyEditor.Dock = DockStyle.Left
 propertyEditor.ShowCombo = True
 
 'Set the diagram reference to propertyEditor
-propertyEditor.Diagram = Diagram1
+propertyEditor.Diagram = diagram1
 
 'Add propertyEditor to the form
 Me.Controls.Add(propertyEditor)
@@ -911,7 +911,7 @@ Dim documentExplorer As New DocumentExplorer()
 documentExplorer.Dock = DockStyle.Left
 
 'Attach a diagram model to documentExplorer
-documentExplorer.AttachModel(Diagram1.Model)
+documentExplorer.AttachModel(diagram1.Model)
 
 'Add documentExplorer to the form
 Me.Controls.Add(documentExplorer)
@@ -927,12 +927,12 @@ Me.Controls.Add(documentExplorer)
 
 ## Diagram Builder
 
-Diagram Builder application allows the user to create new diagrams and also modify the existing ones. This application has *.edd extension. The user can use this diagram in their applications. 
+Diagram Builder application allows the user to create new diagrams and also modify the existing ones. This application has an .edd extension. The user can use this diagram in their applications. 
 
-The main difference between the diagram builder and symbol palette is as follows: 
+The main difference between the Diagram Builder and Symbol Designer is as follows: 
 
-* In Diagram Builder, users create diagram documents 
-* In Symbol Designer, user creates palettes. 
+* In Diagram Builder, users create diagram documents.
+* In Symbol Designer, users create palettes. 
 
 Software Path
 
@@ -970,7 +970,7 @@ For more details, see Diagram Grid topic.
    Follow the below steps in order to open an existing diagram document
 
    1. Add OpenFileDialog control to the Form. 
-   2. Set the Filter property of OpenFileDialog as WinForms Diagram Palettes|*.edp|Visio Stencils|*.vss; *.vsx|Visio    Drawings(Shapes only)|*.vsd; *.vdx|All files|*.*. 
+   2. Set the Filter property of OpenFileDialog as WinForms Diagram Palettes|*.edp|Visio Stencils|*.vss;*.vsx|Visio Drawings (Shapes only)|*.vsd;*.vdx|All files|*.*. 
    3. Add the below code snippet in your button click event.
 
 {% capture codesnippet9 %}
@@ -1069,7 +1069,7 @@ if (dlgPageSetup.ShowDialog() == DialogResult.OK)
 
    2. **Page Borders**
 
-      The Page Borders dialog provides an interactive form-based interface, for setting the page borders of a diagram, initializing the dialog's   Syncfusion.Windows.Forms.Diagram.PageBorderDialog. The PageBorderStyle property with the corresponding Syncfusion.Windows.Forms.Diagram.View.PageBorderStyle member of the diagram's view, will let the users to configure the page border settings using the dialog controls.  
+      The Page Borders dialog provides an interactive form-based interface for setting the page borders of a diagram, initializing the dialog's Syncfusion.Windows.Forms.Diagram.PageBorderDialog. The PageBorderStyle property, together with the corresponding Syncfusion.Windows.Forms.Diagram.View.PageBorderStyle member of the diagram's view, lets users configure the page border settings using the dialog controls.  
 
       The following code snippet can be used for setting the page border for diagram document.
 
@@ -1132,8 +1132,8 @@ if (diagram1 != null && diagram1.Model != null)
 
       It will show a preview of the page which will appear when printed. The Print Preview dialog shows the preview of the page with the following: 
 
-      * Page setup 
-      * Page border set up 
+      * Page setup
+      * Page border setup
       * Header and footers in the page
 
    The following code snippet can be used for creating Print Preview dialog.
@@ -1206,32 +1206,32 @@ Code Snippet</th></tr>
 <td>
 Undo</td><td>
 Reverts the latest modification done.</td><td>
-Diagram1.Model.HistoryManager.Undo();</td></tr>
+diagram1.Model.HistoryManager.Undo();</td></tr>
 <tr>
 <td>
 Redo</td><td>
 Steps forward to operation history records and redoes the last undone task.</td><td>
-Diagram1.Model.HistoryManager.Redo();</td></tr>
+diagram1.Model.HistoryManager.Redo();</td></tr>
 <tr>
 <td>
 Cut</td><td>
 Removes the currently selected nodes from the diagram and move them to the clipboard.</td><td>
-Diagram1.Controller.Cut();</td></tr>
+diagram1.Controller.Cut();</td></tr>
 <tr>
 <td>
 Copy </td><td>
 Copies the currently selected nodes to the clipboard.</td><td>
-Diagram1.Controller.Copy();</td></tr>
+diagram1.Controller.Copy();</td></tr>
 <tr>
 <td>
 Paste </td><td>
 Pastes the contents of the clipboard to the diagram.</td><td>
-Diagram1.Controller.Paste();</td></tr>
+diagram1.Controller.Paste();</td></tr>
 <tr>
 <td>
 Select All</td><td>
 Adds all nodes in the diagram  model to the SelectionList.</td><td>
-Diagram1.Controller.SelectAll();</td></tr>
+diagram1.Controller.SelectAll();</td></tr>
 </table>
 
 
@@ -1261,28 +1261,29 @@ diagram1.Controller.ActivateTool("PanTool");</td>
 <tr>
 <td>
 {{'[Zoom Tool](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ZoomTool.html#"")'| markdownify }}</td><td>
-Zoom tool allows the user to zoom the diagram with minimum and maximum [magnification](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.View.html#Syncfusion_Windows_Forms_Diagram_View_Magnification)'| markdownify }}.</td><td>
+Zoom tool allows the user to zoom the diagram with minimum and maximum {{'[magnification](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.View.html#Syncfusion_Windows_Forms_Diagram_View_Magnification)'| markdownify }}.</td><td>
 diagram1.Controller.ActivateTool("ZoomTool");</td></tr>
 <tr>
 <td>
 {{'[Magnification](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.View.html#Syncfusion_Windows_Forms_Diagram_View_Magnification)'| markdownify }}</td><td>
 This value is used to zoom the view in and out. The x and y axes can be scaled independently. Normally, the x and y axes will have the same magnification value.</td><td>
-int magVal = 30;diagram1.View.Magnification= magVal;</td></tr>
+int magVal = 30;
+diagram1.View.Magnification = magVal;</td></tr>
 <tr>
 <td>
 ShowGrid</td><td>
 This will show / hide the diagram view grid.</td><td>
-Diagram1.View.Grid.Visible = true;</td></tr>
+diagram1.View.Grid.Visible = true;</td></tr>
 <tr>
 <td>
 {{'[SnapToGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.LayoutGrid.html#Syncfusion_Windows_Forms_Diagram_LayoutGrid_SnapToGrid)'| markdownify }}</td><td>
 Specifies whether the snap to grid feature is enabled.</td><td>
-Diagram1.View.Grid.SnapToGrid =true; </td></tr>
+diagram1.View.Grid.SnapToGrid = true;</td></tr>
 <tr>
 <td>
 {{'[Rulers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Ruler.html#"")'| markdownify }}</td><td>
-Diagram control supports rulers similar to that in Microsoft Word. For details see Rulers</td><td>
-Diagram1.ShowRulers=true;</td></tr>
+Diagram control supports rulers similar to those in Microsoft Word. For details, see the Rulers topic.</td><td>
+diagram1.ShowRulers = true;</td></tr>
 </table>
 
 
@@ -1397,12 +1398,12 @@ Code Snippet</th></tr>
 <tr>
 <td>
 {{'[SpaceAcross](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.Diagram.html#Syncfusion_Windows_Forms_Diagram_Controls_Diagram_SpaceAcross)'| markdownify }}</td><td>
-Positions the selected nodes for equal horizontal spacing</td><td>
+Positions the selected nodes for equal horizontal spacing.</td><td>
 diagram1.SpaceAcross();</td></tr>
 <tr>
 <td>
 {{'[SpaceDown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.Diagram.html#Syncfusion_Windows_Forms_Diagram_Controls_Diagram_SpaceDown)'| markdownify }}</td><td>
-Positions the selected nodes for equal vertical spacing</td><td>
+Positions the selected nodes for equal vertical spacing.</td><td>
 diagram1.SpaceDown();</td></tr>
 <tr>
 <td>
@@ -1485,7 +1486,7 @@ string name = this.comboBoxBarItemFontFamily.ListBox.SelectedItem.ToString();if(
 <tr>
 <td>
 Font Size</td><td>
-Gets or sets the size of the point.</td><td>
+Gets or sets the font size in points.</td><td>
 int ptSize = 10; this.diagram1.Controller.TextEditor.PointSize = ptSize;</td></tr>
 <tr>
 <td>
@@ -1500,12 +1501,12 @@ bool newValue = !( this.diagram1.Controller.TextEditor.Italic );this.diagram1.Co
 <tr>
 <td>
 {{'[Underline](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.TextEditor.html#Syncfusion_Windows_Forms_Diagram_TextEditor_Underline)'| markdownify }}</td><td>
-Gets or sets a value indicating whether the Syncfusion.Windows.Forms.Diagram.TextEditor is underline.</td><td>
+Gets or sets a value indicating whether the Syncfusion.Windows.Forms.Diagram.TextEditor is underlined.</td><td>
 bool newValue = !( this.diagram1.Controller.TextEditor.Underline );this.diagram1.Controller.TextEditor.Underline = newValue;</td></tr>
 <tr>
 <td>
 {{'[StrikeOut](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.TextEditor.html#Syncfusion_Windows_Forms_Diagram_TextEditor_Strikeout)'| markdownify }}</td><td>
-Gets or sets a value indicating whether the Syncfusion.Windows.Forms.Diagram.TextEditor is strikeout.</td><td>
+Gets or sets a value indicating whether the Syncfusion.Windows.Forms.Diagram.TextEditor is strikethrough.</td><td>
 bool newValue = !( this.diagram1.Controller.TextEditor.Strikeout );this.diagram1.Controller.TextEditor.Strikeout = newValue;</td></tr>
 <tr>
 <td>
@@ -1571,12 +1572,12 @@ Code Snippet</th></tr>
 <tr>
 <td>
 {{'[Group](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controller.html#Syncfusion_Windows_Forms_Diagram_Controller_Group)'| markdownify }}</td><td>
-Groups the currently selected nodes in a diagram Group.</td><td>
+Groups the currently selected nodes into a diagram group.</td><td>
 diagram1.Controller.Group();</td></tr>
 <tr>
 <td>
 {{'[UnGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controller.html#Syncfusion_Windows_Forms_Diagram_Controller_UnGroup)'| markdownify }}</td><td>
-Ungroup the currently selected group in a diagram.</td><td>
+Ungroups the currently selected group in a diagram.</td><td>
 diagram1.Controller.UnGroup();</td></tr>
 <tr>
 <td>
@@ -1592,12 +1593,12 @@ diagram1.Controller.SendToBack();</td></tr>
 <td>
 {{'[BringForward](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controller.html#Syncfusion_Windows_Forms_Diagram_Controller_BringForward)'| markdownify }}</td><td>
 Brings the selected nodes forward in the Z-order.</td><td>
-Diagram1.Controller.BringForward();</td></tr>
+diagram1.Controller.BringForward();</td></tr>
 <tr>
 <td>
 {{'[SendBackward](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controller.html#Syncfusion_Windows_Forms_Diagram_Controller_SendBackward)'| markdownify }}</td><td>
 Sends the selected nodes backward in the Z-order.</td><td>
-Diagram1.Controller.SendBackward();</td></tr>
+diagram1.Controller.SendBackward();</td></tr>
 </table>
 
 
@@ -1624,7 +1625,7 @@ diagram1.Controller.ActivateTool("SelectTool");</td></tr>
 <tr>
 <td>
 {{'[LineTool](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.LineTool.html#"")'| markdownify }}</td><td>
-Draws straight line with start and end point.</td><td>
+Draws a straight line with a start and end point.</td><td>
 diagram1.Controller.ActivateTool("LineTool");</td></tr>
 <tr>
 <td>
@@ -1669,12 +1670,12 @@ diagram1.Controller.ActivateTool("PencilTool");</td></tr>
 <tr>
 <td>
 {{'[SplineTool](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.SplineTool.html#"")'| markdownify }}</td><td>
-Interactive tool for drawing spline.</td><td>
+Interactive tool for drawing a spline.</td><td>
 diagram1.Controller.ActivateTool("SplineTool");</td></tr>
 <tr>
 <td>
 {{'[BezierTool](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.BezierTool.html#"")'| markdownify }}</td><td>
-Interactive tool for drawing bezier.</td><td>
+Interactive tool for drawing a bezier curve.</td><td>
 diagram1.Controller.ActivateTool("BezierTool");</td></tr>
 <tr>
 <td>
@@ -1707,7 +1708,7 @@ The following screen shot illustrates the Diagram Connector tools.
 
 ![Diagram connector tools in WindowsForms Diagram](getting-started_images/windowsforms-diagram-connector-tools.jpeg)
 
-### LineConnectorTool  
+### LineConnectorTool 
 
 
 Line Connector Tool is used to connect nodes in a straight line. It creates line shape nodes. The name of the [LineConnectorTool](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.LineConnectorTool.html#) is LineLinkTool.
@@ -2028,7 +2029,7 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
 
 
-* Repeat the steps 3 to 7 for creating more symbols.
+* Repeat the above steps for creating more symbols.
 * If you create symbols using more than one shapes, you need to group all the shapes into single symbol using the Group option in symbol designer.
 
  ![Group in symbol designer in WindowsForms Diagram](getting-started_images/windowsforms-diagram-group-in-symbol-designer.png)
@@ -2104,7 +2105,7 @@ diagram.Location = new Point(20, 5);
 
 ### Establishing Database Connectivity
 
-2. You can populate Nodes and Connectors in diagram automatically based on content from database by using binding APIs. To achieve this, you need a table in a database that has two columns, one representing ‘Id’ to uniquely identify objects, and one ‘ParentId’ representing relationship with the parent object. The following code example explains how to bind diagram with data from database by initializing the binding properties.
+2. You can populate nodes and connectors in the diagram automatically based on content from a database by using binding APIs. To achieve this, you need a table in a database that has two columns, one representing Id to uniquely identify objects, and one ParentId representing the relationship with the parent object. The following code example explains how to bind the diagram with data from the database by initializing the binding properties.
 
 {% capture codesnippet11 %}
 {% tabs %}
@@ -2152,18 +2153,18 @@ diagram1.EndUpdate();
 
 {% capture codesnippet12 %}
 {% tabs %}
-{% highlight vb %}
+{% highlight c# %}
 
 private DataTable DataSource()
 {
-DataTable dataTable = new DataTable();
-//Querying from DB
-SqlConnection sqlConnection = new SqlConnection(connectionString);
-SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(new                SqlCommand("select * from Employees", sqlConnection));
-sqlConnection.Open();
-sqlDataAdapter.Fill(dataTable);
-sqlConnection.Close();
-return dataTable;
+    DataTable dataTable = new DataTable();
+    // Querying from DB
+    SqlConnection sqlConnection = new SqlConnection(connectionString);
+    SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(new SqlCommand("select * from Employees", sqlConnection));
+    sqlConnection.Open();
+    sqlDataAdapter.Fill(dataTable);
+    sqlConnection.Close();
+    return dataTable;
 }
 
 {% endhighlight %}
