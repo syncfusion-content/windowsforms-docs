@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Windows Forms RadialSlider
 
-This section briefly describes how to create a new Windows Forms project in Visual Studio and add the **RadialSlider** control with its basic functionalities.
+This section briefly describes how to create a new Windows Forms project in Visual Studio and add the **WinForms Radial Slider** control with its basic functionalities.
 
 ## Assembly deployment
 
@@ -17,13 +17,13 @@ Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/con
 
 Refer to this [documentation](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to find more details about installing NuGet packages in a Windows Forms application.
 
-## Adding the RadialSlider control via designer
+## Adding the WinForms Radial Slider control via designer
 
-The following steps describe how to create an **RadialSlider** control via the designer.
+The following steps describe how to create an **WinForms Radial Slider** control via the designer.
 
 1. Create a new Windows Forms application in Visual Studio.
 
-2. Add the [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html) control to an application by dragging it from the toolbox to the design view. The following dependent assemblies will be added automatically:
+2. Add the [WinForms Radial Slider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html) control to an application by dragging it from the toolbox to the design view. The following dependent assemblies will be added automatically:
 
     * Syncfusion.Grid.Base
     * Syncfusion.Grid.Windows
@@ -34,11 +34,11 @@ The following steps describe how to create an **RadialSlider** control via the d
 
 ![Search RadialSlider in ToolBox](Getting-Started_images/RadialSlider-img1.png) 
 
-3. Set the desired properties for [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html) control using the **Properties** dialog.
+3. Set the desired properties for [WinForms Radial Slider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html) control using the **Properties** dialog.
 
-## Adding the RadialSlider control via code
+## Adding the WinForms Radial Slider control via code
 
-The following steps explain how to create a **RadialSlider** control programmatically:
+The following steps explain how to create a **WinForms Radial Slider** control programmatically:
 
 1. Create a C# or VB application via Visual Studio.
 
@@ -72,7 +72,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4. Create an instance of the [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html) control, and then add it to the form.
+4. Create an instance of the [WinForms Radial Slider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html) control, and then add it to the form.
 
 {% capture codesnippet2 %}​
 {% tabs %}
@@ -101,7 +101,7 @@ Me.Controls.Add(radialSlider1)
 
 ## Values
 
-The value of **RadialSlider** control can be restricted within the minimum and maximum limits.
+The value of **WinForms Radial Slider** control can be restricted within the minimum and maximum limits.
 
 * **MinimumValue** - The slider initial value depends on its minimum value, and the default minimum value is 0. The minimum value can be changed using the [MinimumValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html#Syncfusion_Windows_Forms_Tools_RadialSlider_MinimumValue) property.
 
@@ -164,7 +164,7 @@ End Sub
 
 ## Division
 
-The division for the [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html) can be customized using the [SliderDivision](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html#Syncfusion_Windows_Forms_Tools_RadialSlider_SliderDivision) property. The default slider division is 10.
+The division for the [WinForms Radial Slider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html) can be customized using the [SliderDivision](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html#Syncfusion_Windows_Forms_Tools_RadialSlider_SliderDivision) property. The default slider division is 10.
 
 {% tabs %}
 
@@ -232,7 +232,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winf
 
 ## Slider Style
 
-The **RadialSlider** supports two different styles to its appearance using the [SliderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html#Syncfusion_Windows_Forms_Tools_RadialSlider_SliderStyle) property.
+The **WinForms Radial Slider** supports two different styles to its appearance using the [SliderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html#Syncfusion_Windows_Forms_Tools_RadialSlider_SliderStyle) property.
 
 * **Default** - Renders the slider control with two hollow circles and a small circle as center with its dividend ticks.
 
