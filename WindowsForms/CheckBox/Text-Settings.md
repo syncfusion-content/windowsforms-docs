@@ -7,16 +7,16 @@ control: EditorsPackage
 documentation: ug
 ---
 
-# Text Settings in Windows Forms CheckBoxAdv
+# Text Settings in WinForms CheckBox
 
-This section discusses the text settings of the [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html).
+This section discusses the text settings of the [WinForms CheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html).
 
-Text in the CheckBoxAdv can be shadowed and wrapped by using [TextShadow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_TextShadow), [ShadowColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_ShadowColor), [ShadowOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_ShadowOffset) and [WrapText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_WrapText) properties.
+Text in the WinForms CheckBox can be shadowed and wrapped by using [TextShadow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_TextShadow), [ShadowColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_ShadowColor), [ShadowOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_ShadowOffset) and [WrapText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_WrapText) properties.
 
 <table>
 <tr>
 <th>
-CheckBoxAdv Properties</th><th>
+WinForms CheckBox Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -33,7 +33,7 @@ The offset of the text shadow.</td></tr>
 <tr>
 <td>
 WrapText</td><td>
-Determines if the text in the CheckBoxAdv is wrapped.</td></tr>
+Determines if the text in the WinForms CheckBox is wrapped.</td></tr>
 </table>
 
 {% tabs %}

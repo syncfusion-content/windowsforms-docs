@@ -7,9 +7,9 @@ control: Toggle Button
 documentation: ug
 ---
 
-# How to Customize Toggle Button Styling in ToggleButton
+# How to Customize WinForms Toggle Button Styling
 
-You can customize the appearance of the Toggle Button by using the IToggleButtonRenderer. The following code example illustrates how to achieve iOS platform look-alike Toggle Button.
+You can customize the appearance of the WinForms Toggle Button by using the IToggleButtonRenderer. The following code example illustrates how to achieve iOS platform look-alike WinForms Toggle Button.
 
 {% tabs %}
 {% highlight c# %}

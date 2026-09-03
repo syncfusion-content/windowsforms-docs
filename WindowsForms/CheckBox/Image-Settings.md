@@ -7,19 +7,19 @@ control: EditorsPackage
 documentation: ug
 ---
 
-# Image Settings in Windows Forms CheckBoxAdv
+# Image Settings in WinForms CheckBox
 
-You can set the images to the [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) when it is in the Checked, Unchecked or Indeterminate state using [ImageCheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_ImageCheckBox),[ImageCheckBoxSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_ImageCheckBoxSize),[CheckedImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_CheckedImage),[UncheckedImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_UncheckedImage),[IndeterminateImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_IndeterminateImage),[DisabledImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_DisabledImage) and [StretchImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_StretchImage) properties.
+You can set the images to the [WinForms CheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) when it is in the Checked, Unchecked or Indeterminate state using [ImageCheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_ImageCheckBox),[ImageCheckBoxSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_ImageCheckBoxSize),[CheckedImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_CheckedImage),[UncheckedImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_UncheckedImage),[IndeterminateImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_IndeterminateImage),[DisabledImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_DisabledImage) and [StretchImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_StretchImage) properties.
 
 <table>
 <tr>
 <th>
-CheckBoxAdv Properties</th><th>
+WinForms CheckBox Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
 ImageCheckBox</td><td>
-Indicates whether the CheckBox will be drawn using the images provided.</td></tr>
+Indicates whether the WinForms CheckBox will be drawn using the images provided.</td></tr>
 <tr>
 <td>
 ImageCheckBoxSize</td><td>
@@ -27,23 +27,23 @@ Gets or sets the size of the ImageCheckBox.ImageCheckbox property must be set to
 <tr>
 <td>
 CheckedImage</td><td>
-Gets or sets the image used to draw the CheckBox when checked and mouse not over.</td></tr>
+Gets or sets the image used to draw the WinForms CheckBox when checked and mouse not over.</td></tr>
 <tr>
 <td>
 UncheckedImage</td><td>
-Gets or sets the image used to draw the CheckBox when unchecked and mouse not over.</td></tr>
+Gets or sets the image used to draw the WinForms CheckBox when unchecked and mouse not over.</td></tr>
 <tr>
 <td>
 IndeterminateImage</td><td>
-The image used to draw the CheckBox when indeterminate and mouse not over.</td></tr>
+The image used to draw the WinForms CheckBox when indeterminate and mouse not over.</td></tr>
 <tr>
 <td>
 DisabledImage</td><td>
-Gets or sets the image used to draw the CheckBox when disabled.</td></tr>
+Gets or sets the image used to draw the WinForms CheckBox when disabled.</td></tr>
 <tr>
 <td>
 StretchImage</td><td>
-Indicates whether the state images of the CheckBox are stretched.</td></tr>
+Indicates whether the state images of the WinForms CheckBox are stretched.</td></tr>
 </table>
 
 N> Before setting the images, make sure the [ImageCheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_ImageCheckBox) property is set to 'True'.
@@ -80,25 +80,25 @@ Me.checkBoxAdv1.StretchImage = False
 
 ## Images displayed during Mouse Hover
 
-You can set the image in [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control when the mouse is hovered over it using [MouseOverCheckedImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_MouseOverCheckedImage),[MouseOverIndetermImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_MouseOverIndetermImage) and [MouseOverUncheckedImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_MouseOverUncheckedImage) properties.
+You can set the image in [WinForms CheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control when the mouse is hovered over it using [MouseOverCheckedImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_MouseOverCheckedImage),[MouseOverIndetermImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_MouseOverIndetermImage) and [MouseOverUncheckedImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_MouseOverUncheckedImage) properties.
 
 <table>
 <tr>
 <th>
-CheckBoxAdv Properties</th><th>
+WinForms CheckBox Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
 MouseOverCheckedImage</td><td>
-Gets or sets the image used to draw the CheckBox when checked and mouse over.</td></tr>
+Gets or sets the image used to draw the WinForms CheckBox when checked and mouse over.</td></tr>
 <tr>
 <td>
 MouseOverIndetermImage</td><td>
-Gets or sets the image used to draw the CheckBox when indeterminate and mouse over.</td></tr>
+Gets or sets the image used to draw the WinForms CheckBox when indeterminate and mouse over.</td></tr>
 <tr>
 <td>
 MouseOverUncheckedImage</td><td>
-Gets or sets the image used to draw the CheckBox when unchecked and mouse over.</td></tr>
+Gets or sets the image used to draw the WinForms CheckBox when unchecked and mouse over.</td></tr>
 </table>
 
 {% tabs %}

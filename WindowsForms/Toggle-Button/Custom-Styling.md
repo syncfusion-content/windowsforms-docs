@@ -7,14 +7,14 @@ control: ToggleButton
 documentation: ug
 ---
 
-# Custom Styling in Windows Forms ToggleButton
+# Custom Styling in WinForms Toggle Button
 
-The appearance of the Toggle Button is customized by using the IToggleButtonRenderer. This interface provides few methods to control painting borders, arrow, and so on. 
+The appearance of the WinForms Toggle Button is customized by using the IToggleButtonRenderer. This interface provides few methods to control painting borders, arrow, and so on. 
 
 To customize the appearance, 
 
 1. Create a new custom renderer class and implement each of the members defined in IToggleButtonRenderer. 
-2. Assign instance of your custom renderer to the Renderer property of ToggleButton. By default, ToggleButton is painted by using its default renderer.
+2. Assign instance of your custom renderer to the Renderer property of WinForms Toggle Button. By default, WinForms Toggle Button is painted by using its default renderer.
 
 {% tabs %}
 {% highlight c# %}

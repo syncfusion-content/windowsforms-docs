@@ -7,9 +7,9 @@ control: CheckBoxAdv
 documentation: ug
 ---
 
-# Getting Started with Windows Forms CheckBoxAdv
+# Getting Started with WinForms CheckBox
 
-This section gives detailed description on Getting Started of [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control.
+This section gives detailed description on Getting Started of [WinForms CheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control.
 
 ## Assembly Deployment
 
@@ -17,25 +17,25 @@ Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/con
 
 Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install nuget packages in a Windows Forms application.
 
-## Adding CheckBoxAdv control via designer
+## Adding WinForms CheckBox control via designer
 
-The following steps explain how to create the CheckBoxAdv control via designer.
+The following steps explain how to create the WinForms CheckBox control via designer.
 
 1. Create a new Windows Forms Project in Visual Studio.
 
-2. Drag and drop the [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) from toolbox in Form designer window. 
+2. Drag and drop the [WinForms CheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) from toolbox in Form designer window. 
 
 3. The [dependent assemblies](https://help.syncfusion.com/windowsforms/control-dependencies#buttonedit) will be added automatically.
 
 ![WindowsForms CheckBox drag and drop from toolbox](getting-Started-images/windowsforms-checkbox-drag-and-drop-from-toolbox.png)
 
-## Adding CheckBoxAdv control via code
+## Adding WinForms CheckBox control via code
 
-In order to add [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control manually, do the below steps,
+In order to add [WinForms CheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control manually, do the below steps,
 
 1. Add the required [assembly references](https://help.syncfusion.com/windowsforms/control-dependencies#sfdatagrid) to the project.
 
-2. Create the [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control instance and add it to the Form.
+2. Create the [WinForms CheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control instance and add it to the Form.
 
 3. Include the required namespace.
 
@@ -75,9 +75,9 @@ Me.Controls.Add(checkBoxAdv)
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-## CheckBox State
+## WinForms CheckBox State
 
-You can get or set the current checked status of [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) using the [Checked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_Checked) or [CheckState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_CheckState) property. The default value of Checked property is `false` and CheckState property is `Unchecked`.
+You can get or set the current checked status of [WinForms CheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) using the [Checked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_Checked) or [CheckState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_CheckState) property. The default value of Checked property is `false` and CheckState property is `Unchecked`.
 
 {% tabs %}
 {% highlight c# %}
@@ -96,4 +96,4 @@ Me.checkBoxAdv1.CheckState = System.Windows.Forms.CheckState.Checked
 
 ![WindowsForms CheckBox showing checked state of the control](overview_images/windowsforms-checkbox-check-state.png)
 
-N> To learn more about the CheckBoxAdv states click [here](https://help.syncfusion.com/windowsforms/checkbox/checkboxadv-settings).
+N> To learn more about the WinForms CheckBox states click [here](https://help.syncfusion.com/windowsforms/checkbox/checkboxadv-settings).
