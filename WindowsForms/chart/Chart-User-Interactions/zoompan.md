@@ -8,7 +8,6 @@ documentation: ug
 ---
 
 # Zooming and Panning in Windows Forms Chart
-## Zooming and panning
 
 The Windows Forms Chart allows you to zoom the chart area with the help of the zoom feature. This behavior is mostly used to view data points in a specific area when the chart contains many data points.
 
@@ -31,28 +30,15 @@ chartControl.EnableYZooming = True
 {% endhighlight %}
 {% endtabs %}
 
-## Reset on double-click
+## Zoom area appearance
 
-The [ResetOnDoubleClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ResetOnDoubleClick) property controls whether the chart returns to its original range when the chart area is double-clicked or double-tapped. By default, this property is `false`.
+The [Zooming](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Zooming) property provides access to the appearance settings of the interactive zoom-selection area. By default, the property is initialized with a new instance of the [ChartZooming](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartZooming.html) class.
 
-The following code example demonstrates how to reset the chart.
+The `ChartZooming` class provides the [Border](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartZooming.html#Syncfusion_Windows_Forms_Chart_ChartZooming_Border), [Interior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartZooming.html#Syncfusion_Windows_Forms_Chart_ChartZooming_Interior), [Opacity](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartZooming.html#Syncfusion_Windows_Forms_Chart_ChartZooming_Opacity), and [ShowBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartZooming.html#Syncfusion_Windows_Forms_Chart_ChartZooming_ShowBorder) properties to customize the zoom-selection area.
 
-{% tabs %}
-{% highlight c# %}
-chartControl.ResetOnDoubleClick = true;
-{% endhighlight %}
-{% highlight vb %}
-chartControl.ResetOnDoubleClick = True
-{% endhighlight %}
-{% endtabs %}
+### Zoom area border
 
-## Zoom-area appearance
-
-The [Zooming](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Zooming) property provides access to the appearance settings of the interactive zoom-selection area.
-
-### Zoom-area border
-
-The [Border](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartZooming.html#Syncfusion_Windows_Forms_Chart_ChartZooming_Border) property specifies the line used to draw the border around the selected zoom area. The border can be customized using its width, color, and dash style. By default, a new `LineInfo` instance is used.
+The [Border](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartZooming.html#Syncfusion_Windows_Forms_Chart_ChartZooming_Border) property specifies the line used to draw the border around the selected zoom area. The border can be customized using its width, color, and dash style. By default, a new [LineInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.LineInfo.html) instance is used.
 
 The [ShowBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartZooming.html#Syncfusion_Windows_Forms_Chart_ChartZooming_ShowBorder) property controls whether the border is displayed. By default, this property is `false`.
 
@@ -82,7 +68,7 @@ chartControl.Zooming.Border.DashStyle = DashStyle.Solid
 
 ![Zoom area border in Windows Forms Chart](../Chart-User-Interactions-Images/zoom_border.png)
 
-### Zoom-area interior
+### Zoom area interior
 
 The [Interior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartZooming.html#Syncfusion_Windows_Forms_Chart_ChartZooming_Interior) property specifies the brush used to fill the selected zoom area. The brush can use foreground and background colors with a gradient style. Its default brush is a `BrushInfo` initialized with `SystemColors.Highlight`.
 
@@ -157,7 +143,38 @@ chartControl.ZoomPositionY = 0.40
 {% endhighlight %}
 {% endtabs %}
 
-![Zoom position in Windows Forms Chart](../Chart-User-Interactions-Images/zoom_position.png)
+![Zoom position in Windows Forms Chart](../Chart-User-Interactions-Images/zoom-position.png)
+
+### Axis level zooming
+
+The [ZoomFactor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart__ChartAxis_ZoomFactor) and [ZoomPosition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_ZoomPosition) properties specify the zoom level and position of an individual axis.
+
+The [VisibleRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_VisibleRange) property gets the range currently visible on the axis, while the [ZoomedRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_ZoomedRange) property gets the range displayed after zooming. Both are get-only properties and are updated automatically when the zoom factor or zoom position changes.
+
+N> The `ZoomFactorX` and `ZoomFactorY` properties apply to the primary X and Y axes, respectively. Use the `ZoomFactor` property of an individual `ChartAxis` to configure the zoom factor of an additional axis.
+
+The following code example sets the zoom factor and position directly on the primary axes.
+
+{% tabs %}
+{% highlight c# %}
+
+chartControl.PrimaryXAxis.ZoomFactor = 0.5;
+chartControl.PrimaryYAxis.ZoomFactor = 0.5;
+chartControl.PrimaryXAxis.ZoomPosition = 0.40;
+chartControl.PrimaryYAxis.ZoomPosition = 0.40;
+
+{% endhighlight %}
+{% highlight vb %}
+
+chartControl.PrimaryXAxis.ZoomFactor = 0.5
+chartControl.PrimaryYAxis.ZoomFactor = 0.5
+chartControl.PrimaryXAxis.ZoomPosition = 0.4
+chartControl.PrimaryYAxis.ZoomPosition = 0.4
+
+{% endtabs %}
+{% endhighlight %}
+
+![Zoom Axis in Windows Forms Chart](../Chart-User-Interactions-Images/zoom-position.png)
 
 ### Minimum zoom factor
 
@@ -178,9 +195,9 @@ chartControl.MinZoomFactorY = 0.7
 {% endhighlight %}
 {% endtabs %}
 
-![Min Zoom Factor in Windows Forms Chart](../Chart-User-Interactions-Images/min_zoom_factor.png)
+![Min Zoom Factor in Windows Forms Chart](../Chart-User-Interactions-Images/min-zoom-factor.png)
 
-### Zoom-out increment
+### Zoom out increment
 
 The [ZoomOutIncrement](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ZoomOutIncrement) property specifies the amount by which the chart zooms out for each zoom-out action. The default value of this property is `0.2`.
 
@@ -213,6 +230,7 @@ The following properties specify the keyboard shortcuts used to control a zoomed
 
 {% tabs %}
 {% highlight c# %}
+
 chartControl.KeyZoom = true;
 chartControl.ZoomIn = Keys.Add;
 chartControl.ZoomOut = Keys.Subtract;
@@ -221,8 +239,10 @@ chartControl.ZoomRight = Keys.Right;
 chartControl.ZoomUp = Keys.Up;
 chartControl.ZoomDown = Keys.Down;
 chartControl.ZoomCancel = Keys.Escape;
+
 {% endhighlight %}
 {% highlight vb %}
+
 chartControl.KeyZoom = True
 chartControl.ZoomIn = Keys.Add
 chartControl.ZoomOut = Keys.Subtract
@@ -231,6 +251,7 @@ chartControl.ZoomRight = Keys.Right
 chartControl.ZoomUp = Keys.Up
 chartControl.ZoomDown = Keys.Down
 chartControl.ZoomCancel = Keys.Escape
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -278,11 +299,11 @@ chartControl.ShowScrollBars = False
 {% endhighlight %}
 {% endtabs %}
 
-![Zoom Show Scroll Bars in Windows Forms Chart](../Chart-User-Interactions-Images/zoom-show-toolbars.png)
+![Zoom Show Scroll Bars in Windows Forms Chart](../Chart-User-Interactions-Images/zoom_selection_2.png)
 
 ## Scroll precision
 
-The [ScrollPrecision](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ScrollPrecision) property specifies the movement precision of the chart scroll bars. The default value of this property is `100`.
+The [ScrollPrecision](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ScrollPrecision) property specifies the movement precision of the horizontal and vertical scroll bars displayed after zooming. The default value is `100`.
 
 The following code example demonstrates how to set the scroll precision.
 
@@ -295,11 +316,14 @@ chartControl.ScrollPrecision = 20
 {% endhighlight %}
 {% endtabs %}
 
-![Zoom Scroll Precision in Windows Forms Chart](../Chart-User-Interactions-Images/zoom-precision.png)
-
 ## Enable panning
 
-The [MouseAction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_MouseAction) property enables mouse-based panning. The chart uses `Zooming` as the default mouse action. 
+The [MouseAction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_MouseAction) property specifies the action performed when users drag the mouse over the chart. The default value is [Zooming](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartMouseAction.html#Syncfusion_Windows_Forms_Chart_ChartMouseAction_Zooming).
+
+The following options are available:
+
+- [Panning](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartMouseAction.html#Syncfusion_Windows_Forms_Chart_ChartMouseAction_Panning): Allows users to navigate through the zoomed chart by dragging the mouse.
+- [Zooming](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartMouseAction.html#Syncfusion_Windows_Forms_Chart_ChartMouseAction_Zooming): Allows users to select and zoom into a chart region by dragging the mouse.
 
 The [ZoomActions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_ZoomActions) property controls panning independently for each axis. The default value of this property is `None`.
 
@@ -314,6 +338,7 @@ N> Panning works only after the chart is zoomed. Enable zooming on both axes usi
 
 {% tabs %}
 {% highlight c# %}
+
 chartControl.EnableXZooming = true;
 chartControl.EnableYZooming = true;
 
@@ -324,8 +349,10 @@ chartControl.ZoomFactorY = 0.5;
 chartControl.MouseAction = ChartMouseAction.Panning;
 chartControl.PrimaryXAxis.ZoomActions = ChartZoomingAction.Panning;
 chartControl.PrimaryYAxis.ZoomActions = ChartZoomingAction.Panning;
+
 {% endhighlight %}
 {% highlight vb %}
+
 chartControl.EnableXZooming = True
 chartControl.EnableYZooming = True
 
@@ -336,22 +363,40 @@ chartControl.ZoomFactorY = 0.5
 chartControl.MouseAction = ChartMouseAction.Panning
 chartControl.PrimaryXAxis.ZoomActions = ChartZoomingAction.Panning
 chartControl.PrimaryYAxis.ZoomActions = ChartZoomingAction.Panning
+
 {% endhighlight %}
 {% endtabs %}
 
 ![Panning in Windows Forms Chart](../Chart-User-Interactions-Images/panning.png)
 
+## Reset on double-click
+
+The [ResetOnDoubleClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ResetOnDoubleClick) property controls whether the chart returns to its original range when the chart area is double-clicked or double-tapped. By default, this property is `false`.
+
+The following code example demonstrates how to reset the chart.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.ResetOnDoubleClick = true;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.ResetOnDoubleClick = True
+{% endhighlight %}
+{% endtabs %}
+
 ## Formatted labels in a zoomed DateTime axis
 
-The [SmartDateZoom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_SmartDateZoom) property enables formatted axis labels when a DateTime axis is zoomed.  You can set any one of the following custom label formats to the chart axis.
+The [SmartDateZoom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_SmartDateZoom) property enables formatted axis labels when a DateTime axis is zoomed. The default value is `false`.
 
-- SmartDateZoomDayLevelLabelFormat
-- SmartDateZoomYearLevelLabelFormat
-- SmartDateZoomWeekLevelLabelFormat
-- SmartDateZoomSecondLevelLabelFormat
-- SmartDateZoomMonthLevelLabelFormat
-- SmartDateZoomHourLevelLabelFormat
-- SmartDateZoomMinuteLevelLabelFormat
+You can set any one of the following custom label formats to the chart axis.
+
+- [SmartDateZoomDayLevelLabelFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_SmartDateZoomDayLevelLabelFormat)
+- [SmartDateZoomHourLevelLabelFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_SmartDateZoomHourLevelLabelFormat)
+- [SmartDateZoomMinuteLevelLabelFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_SmartDateZoomMinuteLevelLabelFormat)
+- [SmartDateZoomMonthLevelLabelFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_SmartDateZoomMonthLevelLabelFormat)
+- [SmartDateZoomSecondLevelLabelFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_SmartDateZoomSecondLevelLabelFormat)
+- [SmartDateZoomWeekLevelLabelFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_SmartDateZoomWeekLevelLabelFormat)
+- [SmartDateZoomYearLevelLabelFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_SmartDateZoomYearLevelLabelFormat)
 
 N> The axis value type must be set to `DateTime` to use smart date labels.
 
@@ -369,6 +414,13 @@ chartControl.PrimaryXAxis.SmartDateZoomDayLevelLabelFormat = "dd MM/yy HH.00"
 {% endtabs %}
 
 ![Zoom Format Label in Windows Forms Chart](../Chart-User-Interactions-Images/zoom-data-time.png){height:"350", width="350"}
+
+## Zoom events
+
+The following events notify changes to the visible chart range during zooming:
+
+- [VisibleRangeChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_VisibleRangeChanging): Occurs while the visible range is changing during zooming.
+- [VisibleRangeChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_VisibleRangeChanged): Occurs after the visible range has changed during zooming.
 
 ## See also
 

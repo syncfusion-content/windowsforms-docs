@@ -11,7 +11,7 @@ documentation: ug
 
 The [Crosshair](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Crosshair) is used to view the chart values at the current mouse or touch position. Moving the crosshair horizontally displays the corresponding X-axis value, while moving it vertically displays the corresponding Y-axis value.
 
-## Enable crosshair
+## Show crosshair
 
 The [Visible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartCrosshair.html#Syncfusion_Windows_Forms_Chart_ChartCrosshair_Visible) property controls whether the crosshair is displayed in the chart. By default, it is set to `false`.
 
@@ -65,7 +65,7 @@ chartControl.Crosshair.Line.Width = 2
 {% endhighlight %}
 {% endtabs %}
 
-![Line customization](../Chart-User-Interactions-Images/trackball_line.png)
+![Line customization](../Chart-User-Interactions-Images/crosshair-line.png)
 
 ## Axis tooltip
 
@@ -92,7 +92,7 @@ chartControl.Crosshair.AxisTooltip.TextColor = Color.White;
 {% endhighlight %}
 {% highlight vb %}
 
-'' Customizes the Crosshair lines.
+' Customizes the Crosshair lines.
 chartControl.Crosshair.Line.Color = Color.Gray
 chartControl.Crosshair.Line.Width = 2
 
@@ -112,8 +112,8 @@ chartControl.Crosshair.AxisTooltip.TextColor = Color.White
 
 ![Line customization](../Chart-User-Interactions-Images/crosshair-axis-tooltip.png)
 
-## Event
+## Events
 
-The [AxisTooltipRendering](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartCrosshair.html) event is triggered once for each axis before its crosshair tooltip is displayed.
+The [AxisTooltipRendering](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartCrosshair.html#Syncfusion_Windows_Forms_Chart_ChartCrosshair_AxisTooltipRendering) event is triggered once for each axis before its crosshair tooltip is displayed.
 
 This event can be used to customize the text, background, border, or text color of an individual axis tooltip.

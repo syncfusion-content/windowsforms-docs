@@ -9,13 +9,11 @@ documentation: ug
 
 # Trackball in Windows Forms Chart
 
-## Trackball
-
 The [ChartTrackball](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTrackball.html) displays information about the data point close to the current mouse position. The x values of an axis are determined from the position of the vertical line of the axis, and y values are determined from the points touching the vertical line in the series.
 
-### Enable trackball
+## Show trackball
 
-The [Visible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartCrosshair.html#Syncfusion_Windows_Forms_Chart_ChartCrosshair_Visible) property controls whether the trackball is displayed in the chart. By default, the trackball is not displayed.
+The [Visible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartCrosshair.html#Syncfusion_Windows_Forms_Chart_ChartCrosshair_Visible) property controls whether the trackball is displayed in the chart. The default value is `false`.
 
 The following code example enables the trackball.
 
@@ -29,68 +27,6 @@ chartControl.Trackball.Visible = True
 {% endtabs %}
 
 ![Trackball Visible in Windows Forms Chart](../Chart-User-Interactions-Images/trackball-visible.png)
-
-### Tooltip
-
-The [Tooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTrackball.html#Syncfusion_Windows_Forms_Chart_ChartTrackball_Tooltip) property provides options to customize the appearance and content of the trackball tooltip. By default, the property is initialized with a new instance of the [TrackballTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.TrackballTooltip.html) class.
-
-The `TrackballTooltip` class contains the following properties:
-
-- [Border](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.TrackballTooltip.html#Syncfusion_Windows_Forms_Chart_TrackballTooltip_Border): Provides options to customize the tooltip border, including its color, width, and style.
-- [CornerRadius](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.TrackballTooltip.html#Syncfusion_Windows_Forms_Chart_TrackballTooltip_CornerRadius): Specifies the corner radius of the trackball tooltip.
-- [Font](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.TrackballTooltip.html#Syncfusion_Windows_Forms_Chart_TrackballTooltip_Font): Specifies the font used to render the tooltip text.
-- [Interior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.TrackballTooltip.html#Syncfusion_Windows_Forms_Chart_TrackballTooltip_Interior): Specifies the background of the trackball tooltip.
-- [Margin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.TrackballTooltip.html#Syncfusion_Windows_Forms_Chart_TrackballTooltip_Margin): Specifies the spacing between the tooltip text and its border.
-- [Offset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.TrackballTooltip.html#Syncfusion_Windows_Forms_Chart_TrackballTooltip_Offset): Specifies the padding between the highlighted symbol and the trackball tooltip.
-- [TextColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.TrackballTooltip.html#Syncfusion_Windows_Forms_Chart_TrackballTooltip_TextColor): Specifies the color of the tooltip text.
-- [TextFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.TrackballTooltip.html#Syncfusion_Windows_Forms_Chart_TrackballTooltip_TextFormat): Specifies the format used to display the tooltip text.
-- [Visible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.TrackballTooltip.html#Syncfusion_Windows_Forms_Chart_TrackballTooltip_Visible): Controls whether the trackball tooltip is displayed.
-- [XValueFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.TrackballTooltip.html#Syncfusion_Windows_Forms_Chart_TrackballTooltip_XValueFormat): Specifies the format applied to the X-values displayed in the trackball tooltip.
-- [YValueFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.TrackballTooltip.html#Syncfusion_Windows_Forms_Chart_TrackballTooltip_YValueFormat): Specifies the format applied to the Y-values displayed in the trackball tooltip.
-
-The following code example customizes the background and text colors of the trackball tooltip.
-
-{% tabs %}
-{% highlight c# %}
-
-// Displays values such as "September, 2002 : 89".
-chartControl.Trackball.Tooltip.TextFormat = "{1} : {2}";
-chartControl.Trackball.Tooltip.XValueFormat = "MMMM, yyyy";
-chartControl.Trackball.Tooltip.YValueFormat = "n0";
-
-// Customizes the tooltip shape and position.
-chartControl.Trackball.Tooltip.CornerRadius = 15;
-
-// Initializes and customizes the tooltip border.
-chartControl.Trackball.Tooltip.Border = new ChartLineInfo() { Width = 1 };
-chartControl.Trackball.Tooltip.CornerRadius = 15;
-
-// Uses white text over the series-colored tooltip backgrounds.
-chartControl.Trackball.Tooltip.TextColor = Color.White;
-
-{% endhighlight %}
-{% highlight vb %}
-
-' Displays values such as "September, 2002 : 89".
-chartControl.Trackball.Tooltip.TextFormat = "{1} : {2}"
-chartControl.Trackball.Tooltip.XValueFormat = "MMMM, yyyy"
-chartControl.Trackball.Tooltip.YValueFormat = "n0"
-
-' Customizes the tooltip shape.
-chartControl.Trackball.Tooltip.CornerRadius = 15
-
-' Initializes and customizes the tooltip border.
-chartControl.Trackball.Tooltip.Border = New ChartLineInfo() With {
-.Width = 1
-}
-
-' Uses white text over the series-colored tooltip backgrounds.
-chartControl.Trackball.Tooltip.TextColor = Color.White
-
-{% endhighlight %}
-{% endtabs %}
-
-![Trackball Visible in Windows Forms Chart](../Chart-User-Interactions-Images/trackball-tooltip.png)
 
 ## Display mode
 
@@ -150,7 +86,7 @@ chartControl.Trackball.Line.Width = 2
 {% endhighlight %}
 {% endtabs %}
 
-![Trackball Display Mode in Windows Forms Chart](../Chart-User-Interactions-Images/trackball-line.png)
+![Trackball Line in Windows Forms Chart](../Chart-User-Interactions-Images/trackball-line.png)
 
 ## Symbol
 
@@ -201,14 +137,74 @@ chartControl.Trackball.Symbol.Border.Width = 2
 {% endhighlight %}
 {% endtabs %}
 
-![Trackball Display Mode in Windows Forms Chart](../Chart-User-Interactions-Images/trackball-symbol.png)
+![Trackball Symbol in Windows Forms Chart](../Chart-User-Interactions-Images/trackball-symbol.png)
 
+## Tooltip
+
+The [Tooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTrackball.html#Syncfusion_Windows_Forms_Chart_ChartTrackball_Tooltip) property provides options to customize the appearance and content of the trackball tooltip. By default, the property is initialized with a new instance of the [TrackballTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.TrackballTooltip.html) class.
+
+The `TrackballTooltip` class contains the following properties:
+
+- [Border](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.TrackballTooltip.html#Syncfusion_Windows_Forms_Chart_TrackballTooltip_Border): Provides options to customize the tooltip border, including its color, width, and style.
+- [CornerRadius](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.TrackballTooltip.html#Syncfusion_Windows_Forms_Chart_TrackballTooltip_CornerRadius): Specifies the corner radius of the trackball tooltip.
+- [Font](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.TrackballTooltip.html#Syncfusion_Windows_Forms_Chart_TrackballTooltip_Font): Specifies the font used to render the tooltip text.
+- [Interior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.TrackballTooltip.html#Syncfusion_Windows_Forms_Chart_TrackballTooltip_Interior): Specifies the background of the trackball tooltip.
+- [Margin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.TrackballTooltip.html#Syncfusion_Windows_Forms_Chart_TrackballTooltip_Margin): Specifies the spacing between the tooltip text and its border.
+- [Offset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.TrackballTooltip.html#Syncfusion_Windows_Forms_Chart_TrackballTooltip_Offset): Specifies the padding between the highlighted symbol and the trackball tooltip.
+- [TextColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.TrackballTooltip.html#Syncfusion_Windows_Forms_Chart_TrackballTooltip_TextColor): Specifies the color of the tooltip text.
+- [TextFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.TrackballTooltip.html#Syncfusion_Windows_Forms_Chart_TrackballTooltip_TextFormat): Specifies the format used to display the tooltip text.
+- [Visible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.TrackballTooltip.html#Syncfusion_Windows_Forms_Chart_TrackballTooltip_Visible): Controls whether the trackball tooltip is displayed.
+- [XValueFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.TrackballTooltip.html#Syncfusion_Windows_Forms_Chart_TrackballTooltip_XValueFormat): Specifies the format applied to the X-values displayed in the trackball tooltip.
+- [YValueFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.TrackballTooltip.html#Syncfusion_Windows_Forms_Chart_TrackballTooltip_YValueFormat): Specifies the format applied to the Y-values displayed in the trackball tooltip.
+
+The following code example formats and customizes the trackball tooltip.
+
+{% tabs %}
+{% highlight c# %}
+
+// Displays values such as "September, 2002 : 89".
+chartControl.Trackball.Tooltip.TextFormat = "{1} : {2}";
+chartControl.Trackball.Tooltip.XValueFormat = "MMMM, yyyy";
+chartControl.Trackball.Tooltip.YValueFormat = "n0";
+
+// Customizes the tooltip shape and position.
+chartControl.Trackball.Tooltip.CornerRadius = 15;
+
+// Initializes and customizes the tooltip border.
+chartControl.Trackball.Tooltip.Border = new ChartLineInfo() { Width = 1 };
+
+// Uses white text over the series-colored tooltip backgrounds.
+chartControl.Trackball.Tooltip.TextColor = Color.White;
+
+{% endhighlight %}
+{% highlight vb %}
+
+' Displays values such as "September, 2002 : 89".
+chartControl.Trackball.Tooltip.TextFormat = "{1} : {2}"
+chartControl.Trackball.Tooltip.XValueFormat = "MMMM, yyyy"
+chartControl.Trackball.Tooltip.YValueFormat = "n0"
+
+' Customizes the tooltip shape.
+chartControl.Trackball.Tooltip.CornerRadius = 15
+
+' Initializes and customizes the tooltip border.
+chartControl.Trackball.Tooltip.Border = New ChartLineInfo() With {
+.Width = 1
+}
+
+' Uses white text over the series-colored tooltip backgrounds.
+chartControl.Trackball.Tooltip.TextColor = Color.White
+
+{% endhighlight %}
+{% endtabs %}
+
+![Trackball Tooltip in Windows Forms Chart](../Chart-User-Interactions-Images/trackball-tooltip.png)
 
 ## Axis tooltip
 
-The [AxisTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartCrosshair.html#Syncfusion_Windows_Forms_Chart_ChartCrosshair_AxisTooltip) property provides options to customize the tooltip displayed on the horizontal axis at the current trackball position.
+The [AxisTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartCrosshair.html#Syncfusion_Windows_Forms_Chart_ChartCrosshair_AxisTooltip) property provides options to customize the tooltip displayed on a chart axis at the current trackball position.
 
-N> To show the axistooltip enable the [ShowCrosshairTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_ShowCrosshairTooltip) property.
+N> N> To display the axis tooltip, set the [ShowCrosshairTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_ShowCrosshairTooltip) property of the corresponding axis to `true`.
 
 The following code example enables and customizes the axis tooltip.
 
@@ -240,7 +236,7 @@ chartControl.Trackball.AxisTooltip.TextColor = Color.Black
 {% endhighlight %}
 {% endtabs %}
 
-![Trackball Display Mode in Windows Forms Chart](../Chart-User-Interactions-Images/trackball-axis-tooltip.png)
+![Trackball Axis Tooltip in Windows Forms Chart](../Chart-User-Interactions-Images/trackball-axis-tooltip.png)
 
 ## Events
 
