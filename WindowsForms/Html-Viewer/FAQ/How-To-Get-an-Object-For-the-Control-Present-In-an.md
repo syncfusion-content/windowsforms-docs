@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How To Get an Object For the Control | Syncfusion®
-description: Learn how to how To Get an Object For the Control in Syncfusion Windows Forms Html Viewer (HTMLUI) control.
+description: Learn how to Get an Object For the Control in Syncfusion Windows Forms Html Viewer (HTMLUI) control.
 platform: windowsforms
 control: HTMLUIControl
 documentation: ug

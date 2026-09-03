@@ -7,7 +7,7 @@ control: HTML UI
 documentation: ug
 ---
 
-# How to Enable HTMLUI to Load HTML in WinForms HTML Viewer
+# How to Enable WinForms HTML Viewer to Load HTML 
 
 In order to enable the WinForms HTML Viewer control to load HTML documents that have been dragged onto the control, you have to set the AllowDrop property of the control to `true`. This property helps in supporting the drag-and-drop operation in the control.
 

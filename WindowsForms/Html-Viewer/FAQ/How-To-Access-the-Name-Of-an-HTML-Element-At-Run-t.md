@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How To Access the Name Of an HTML Element At Run t | Syncfusion®
-description: Learn how to how To Access the Name Of an HTML Element At Run t in Syncfusion Windows Forms Html Viewer (HTMLUI) control.
+title: How To Access the Name Of an HTML Element At Run time | Syncfusion®
+description: Learn how to Access the Name Of an HTML Element At Run time in Syncfusion Windows Forms Html Viewer (HTMLUI) control.
 platform: windowsforms
 control: HTML UI
 documentation: ug
 ---
 
-# How To Access the Name Of an HTML Element At Run t
+# How To Access the Name Of an HTML Element At Run time
 
 The element.Name property gets the name of the tag that defines the element as an attribute, and not the name of the element defined by the user. You can access the name of the element with the help of the element.Attributes property.
 
