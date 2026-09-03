@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Editing in Windows Forms TreeView | Syncfusion®
 description: Editing support enables adding, deleting, renaming, and synchronizing tree nodes with bound data sources.
@@ -9,9 +9,9 @@ documentation: ug
 
 # Editing in Windows Forms TreeView
 
-TreeViewAdv supports dynamic update of the underlying changes in data source settings. So, whenever user does insert, delete, rename (aka, update), drag and drop operations, it should also be reflected in the TreeViewAdv and data source.
+WinForms TreeView supports dynamic update of the underlying changes in data source settings. So, whenever user does insert, delete, rename (update), drag and drop operations, it should also be reflected in the control and data source.
 
-For example, while we set the same data source object for two different controls such as GridGroupingControl and TreeViewAdv, whenever we do insert, delete, update, etc. operations in GridGroupingControl should reflect in TreeViewAdv and vice versa. Below code sample demonstrates the addition and removal of records in DataTable source at runtime. 
+For example, while we set the same data source object for two different controls such as GridGroupingControl and WinForms TreeView, whenever we do insert, delete, update, etc. operations in GridGroupingControl should reflect in the control and vice versa. Below code sample demonstrates the addition and removal of records in DataTable source at runtime.
 
 {% tabs %}
 {% highlight c# %}
@@ -81,7 +81,7 @@ Self-Referencing
 In this type, you can do insert, delete, edit, drag and drop operations.
 </td></tr>
 
-<tr><td>2</td><td>Data Relations</td><td>You can perform insert, delete, edit, and drag-and-drop operations. Inserting a new record into a new level is not allowed because levels are created using DataRelation. To dynamically add a new level, you must create a new instance of DataRelation and add it to the TreeViewAdv.DataRelations property with the proper relation.
+<tr><td>2</td><td>Data Relations</td><td>You can perform insert, delete, edit, and drag-and-drop operations. Inserting a new record into a new level is not allowed because levels are created using DataRelation. To dynamically add a new level, you must create a new instance of DataRelation and add it to the WinForms TreeView's DataRelations property with the proper relation.
 </td></tr>
 
 <tr><td>3</td><td>Object-Relational</td><td>You can perform insert, delete, edit, and drag-and-drop operations. Inserting a new record into a new level is not allowed because levels are based on the number of classes specified in ChildMember. Editing is limited to the number of classes defined and cannot go beyond that.
@@ -90,12 +90,12 @@ In this type, you can do insert, delete, edit, drag and drop operations.
 
 
 N>
-1.	For all binding types, the `TreeViewAdv.LabelEdit` property and the `AllowDrop` property must be enabled on the TreeViewAdv in order to allow editing.
-2.	For Self-referencing and Data Relation binding types, you need to call `AcceptChanges()` after adding new rows and before deleting the existing rows to allow dynamic updates in the TreeViewAdv.
+1.	For all binding types, the `LabelEdit` property and the `AllowDrop` property must be enabled on the WinForms TreeView in order to allow editing.
+2.	For Self-referencing and Data Relation binding types, you need to call `AcceptChanges()` after adding new rows and before deleting the existing rows to allow dynamic updates in the WinForms TreeView.
 
 
 ## Editing Object-Relational View
-In this type, you can insert, delete, edit, and drag-and-drop the new or existing data. Custom objects must be implemented with either the **INotifyPropertyChanged** or **INotifyCollectionChanged** interface so that the TreeViewAdv automatically refreshes the UI when any item is changed, added, removed, or the list is cleared.
+In this type, you can insert, delete, edit, and drag-and-drop the new or existing data. Custom objects must be implemented with either the **INotifyPropertyChanged** or **INotifyCollectionChanged** interface so that the WinForms TreeView automatically refreshes the UI when any item is changed, added, removed, or the list is cleared.
 
 
 ![Object-RelationalView](Editing_images/Object-RelationalView.png)

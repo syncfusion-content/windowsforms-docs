@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Appearance in Windows Forms TreeView | Syncfusion®
 description: Appearance customization supports borders, colors, themes, gradients, selection styles, and custom node rendering.
@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Appearance in Windows Forms TreeView
 
-This section deals with the appearance of TreeViewAdv control
+This section deals with the appearance of WinForms TreeView control
 
 ## Border Customization
 	
@@ -20,15 +20,15 @@ BorderStyle Property has the following styles
 
 * None
 
-    If the BorderStyle is set as `None`, the border of the TreeViewAdv will be collapsed.
+    If the BorderStyle is set as `None`, the border of the WinForms TreeView will be collapsed.
 
 * FixedSingle (For 2D)
 
-    If the BorderStyle is set as `FixedSingle`, then the border of the TreeViewAdv will be visible and can be customized.
+    If the BorderStyle is set as `FixedSingle`, then the border of the WinForms TreeView will be visible and can be customized.
 
 * Fixed3D (Default)
 
-    If the BorderStyle is set as `Fixed3D`, then the border of the TreeViewAdv will be visible in 3D and the border settings can be customized.
+    If the BorderStyle is set as `Fixed3D`, then the border of the WinForms TreeView will be visible in 3D and the border settings can be customized.
 
 ### BorderSingle
 
@@ -57,19 +57,19 @@ It has the following Options
 
 * Right 
 
-    Three-dimensional border on the right side of TreeViewAdv
+    Three-dimensional border on the right side of WinForms TreeView
 
 * Left
 
-    Three-dimensional border on the left side of TreeViewAdv 
+    Three-dimensional border on the left side of WinForms TreeView 
 
 * Top
 
-    Three-dimensional border on the top of TreeViewAdv
+    Three-dimensional border on the top of WinForms TreeView
 
 * Bottom
 
-    Three-dimensional border on the bottom of TreeViewAdv
+    Three-dimensional border on the bottom of WinForms TreeView
 
 * Middle     
 
@@ -93,8 +93,8 @@ It has the following Styles
 
 >NOTE
 >
->The settings will be applied only when the TreeViewAdv.BorderStyle property is set to FixedSingle or Fixed3D.
-To customize the 2D border of the TreeViewAdv, set the below properties as follows.
+>The settings will be applied only when the WinForms TreeView's BorderStyle property is set to FixedSingle or Fixed3D.
+To customize the 2D border of the WinForms TreeView, set the below properties as follows.
 
 <b>Property Table</b>
 
@@ -110,7 +110,7 @@ Indicates the color of the 2D border.</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Sets the 2D border style for the Treeview control.</td></tr>
+Sets the 2D border style for the WinForms TreeView control.</td></tr>
 <tr>
 <td>
 BorderSingle</td><td>	
@@ -136,17 +136,17 @@ Me.treeViewAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 ![Appearence_img1](Appearence_images/Appearence_img1.jpg)
 
-To customize the 3D border of TreeViewAdv, set the below property as follows
+To customize the 3D border of WinForms TreeView, set the below property as follows
 
 <b>Property Table</b>
 
 <table>
 <tr>
 <th>
-TreeViewAdv Property </th><th>
+WinForms TreeView Property </th><th>
 Description</th></tr><tr><td>
 BorderStyle</td><td>
-Sets the 3D border style for the Treeview control. It must be set as Fixed3D</td></tr><tr><td> 
+Sets the 3D border style for the WinForms TreeView control. It must be set as Fixed3D</td></tr><tr><td> 
 Border3DStyle</td><td>
 Indicates the style of the 3D border when BorderStyle is set to Fixed3D.</td></tr><tr><td> 
 BorderSides</td><td>
@@ -251,7 +251,7 @@ Apart from the Standard style, we can also create custom Base styles using the f
 
 ### LineColor
 
-Indicates the color of RootLines in TreeViewAdv.
+Indicates the color of RootLines in WinForms TreeView.
 
 {% tabs %}
 {% highlight c# %}
@@ -278,7 +278,7 @@ Fore color for the selected node can be set using SelectedNodeForeColor property
 
 ### InactiveSelectedNodeBackground
 
-The selection rectangle gets grayed out when the TreeViewAdv loses focus. If the user still wishes to maintain the node’s active colors, then the InactiveSelectedNodeBackground and InactiveSelectedNodeForeColor properties can be set.
+The selection rectangle gets grayed out when the WinForms TreeView loses focus. If the user still wishes to maintain the node’s active colors, then the InactiveSelectedNodeBackground and InactiveSelectedNodeForeColor properties can be set.
 
 ### InactiveSelectedNodeForeColor
 
@@ -286,7 +286,7 @@ Fore Color for the selected node when control loses focus can be set using Inact
 
 >NOTE:
 >
->These settings will be applied only when the TreeViewAdv.HideSelection property is set to false.
+>These settings will be applied only when the WinForms TreeView's HideSelection property is set to false.
 
 
 {% tabs %}
@@ -316,14 +316,14 @@ Me.treeViewAdv1.InactiveSelectedNodeForeColor = System.Drawing.Color.SteelBlue
 
 ## Style
 
-Style provides rich and professional look and feel UI for the TreeViewAdv control. 
+Style provides rich and professional look and feel UI for the WinForms TreeView control. 
 
-Style can be applied for the TreeViewAdv using Style property.
+Style can be applied for the WinForms TreeView using Style property.
 Some of the available Styles are as follows:
 
 ### Default
 
-By default, TreeViewAdv has `Default` visual style.
+By default, WinForms TreeView has `Default` visual style.
 
 ![Appearence_img6](Appearence_images/Appearence_img6.jpg)
 
@@ -331,9 +331,9 @@ By default, TreeViewAdv has `Default` visual style.
 
 ####  Office2007ColorScheme
 
-TreeViewAdv includes new color schemes as available in the Office 2007 suite to provide a more personalized experience with the TreeViewAdv.
+WinForms TreeView includes new color schemes as available in the Office 2007 suite to provide a more personalized experience with the WinForms TreeView.
 
-TreeViewAdv now supports four themes: 
+WinForms TreeView now supports four themes: 
 *	Black
 *	Blue (Default)
 *	Managed
@@ -356,9 +356,9 @@ Me.treeViewAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme
 
 #### Office2007ColorTable
 
-TreeViewAdv has new color table based on Office2007ColorScheme.
+WinForms TreeView has new color table based on Office2007ColorScheme.
 
-TreeViewAdv has following color tables
+WinForms TreeView has following color tables
 
 *	Office2007BlueColors
 *	Office2007SilverColors
@@ -370,7 +370,7 @@ TreeViewAdv has following color tables
 
 #### Office2010ColorScheme
 
-TreeViewAdv includes new color schemes as available in the Office 2010 suite to provide a more personalized experience with the TreeViewAdv. TreeViewAdv now supports four themes: 
+WinForms TreeView includes new color schemes as available in the Office 2010 suite to provide a more personalized experience. It now supports four themes:
 
 *	Black
 *	Blue (Default)
@@ -394,9 +394,9 @@ Me.treeViewAdv1.Office2010ColorScheme = Syncfusion.Windows.Forms.Office2010Theme
 
 #### Office2010ColorTable
 
-TreeViewAdv has new color table based on Office2010ColorScheme.
+WinForms TreeView has new color table based on Office2010ColorScheme.
 
-TreeViewAdv has following color tables
+WinForms TreeView has following color tables
 *	Office2010BlueColors
 *	Office2010SilverColors
 *	Office2010BlackColors
@@ -616,7 +616,7 @@ Handled before a node is being painted.</td></tr>
 <table>
 <tr>
 <th>
-TreeViewAdv Property</th><th>
+WinForms TreeView Property</th><th>
 Description</th></tr><tr><td>
 OwnerDrawNodes</td><td>
 Indicates if the BeforeNodePaint event will be fired before drawing a node.</td></tr>
