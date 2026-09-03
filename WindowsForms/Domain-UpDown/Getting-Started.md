@@ -7,7 +7,7 @@ control: DomainUpdownExt
 documentation: ug
 ---
 
-# Getting Started with Windows Forms DomainUpdownExt
+# Getting Started with WinForms DomainUpDownExt
 
 ## Assembly deployment
 
@@ -17,17 +17,17 @@ You can find more details about installing the NuGet package in a Windows Forms 
 
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
 
-## Create a simple application with DomainUpDownExt
+## Create a simple application with WinForms DomainUpDownExt
 
-You can create a Windows Forms application with the DomainUpDownExt control using the following steps:
+You can create a Windows Forms application with the WinForms DomainUpDownExt control using the following steps:
 
 ## Create a project
 
-Create a new Windows Forms project in Visual Studio to display the DomainUpDownExt.
+Create a new Windows Forms project in Visual Studio to display the WinForms DomainUpDownExt.
 
 ## Add control through designer
 
-The DomainUpDownExt control can be added to an application by dragging it from the toolbox to a designer view. The following required assembly references will be added automatically to the project:
+The WinForms DomainUpDownExt control can be added to an application by dragging it from the toolbox to a designer view. The following required assembly references will be added automatically to the project:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -51,7 +51,7 @@ To add the control manually in C#, follow the given steps:
     * Syncfusion.Tools.Base 
     * Syncfusion.Tools.Windows
 
-2. Include the DomainUpDownExt control namespace **Syncfusion.Windows.Forms.Tools;**.
+2. Include the WinForms DomainUpDownExt control namespace **Syncfusion.Windows.Forms.Tools;**.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -65,7 +65,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }} 
 
-3. Create a DomainUpDownExt control instance, and add it to the form.
+3. Create a WinForms DomainUpDownExt control instance, and add it to the form.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -83,7 +83,7 @@ Me.Controls.Add(domainUpDownExt1)
 
 ## Adding items
 
-You can add items in DomainUpDownExt control using Items.Add method. 
+You can add items in WinForms DomainUpDownExt control using Items.Add method. 
 
 {% tabs %}
 {% highlight C# %}
