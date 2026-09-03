@@ -77,7 +77,7 @@ Me.CaptionBarHeight = 40
 
 ### Retain the caption bar height on maximized mode
 
-By default, the height of the caption bar is reduced when the form is in the maximized state. The same height can be retained in both normal and maximized state by setting the WinForms MetroForm's [CaptionBarHeightMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MetroForm.html#Syncfusion_Windows_Forms_MetroForm_CaptionBarHeightMode) property to `SameAlwaysOnMaximize`.
+By default, the caption bar height is reduced when the form is maximized. To maintain the same height in both normal and maximized states, set the [CaptionBarHeightMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MetroForm.html#Syncfusion_Windows_Forms_MetroForm_CaptionBarHeightMode) property to `SameAlwaysOnMaximize`.
 
 {% tabs %}
 
@@ -197,7 +197,7 @@ this.IconAlign = System.Windows.Forms.HorizontalAlignment.Right;
  
 ## Rounded corner
 
-Rounded corners for `WinForms MetroForm` can be enabled by using the [AllowRoundedCorners](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MetroForm.html#Syncfusion_Windows_Forms_MetroForm_AllowRoundedCorners) property. Rounded corners are not supported in OS versions lower than Windows 11. Enabling `AllowRoundedCorners` property will have no effect on those operating systems. 
+Rounded corners for `MetroForm` can be enabled by using the [AllowRoundedCorners](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MetroForm.html#Syncfusion_Windows_Forms_MetroForm_AllowRoundedCorners) property. Rounded corners are not supported in OS versions lower than Windows 11. Enabling `AllowRoundedCorners` property will have no effect on those operating systems. 
 
 N> When the rounded corners are enabled, the border and shadow of the Form are drawn by the operating system.
 

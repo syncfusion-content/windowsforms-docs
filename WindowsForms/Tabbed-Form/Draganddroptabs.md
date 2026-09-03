@@ -24,7 +24,7 @@ tabbedFormControl.AllowDraggingTabs = True
 
 ## Cancel tab dragging
 
-Dragging a particular tab in `WinForms Tabbed Form` can be canceled by handling the [TabDragging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SfTabbedFormControl.html) event by setting `e.Cancel` to `true` when [e.Action](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabDraggingEventArgs.html#Syncfusion_Windows_Forms_Tools_TabDraggingEventArgs_Action) is [TabDraggingAction.DragStarting](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabDraggingAction.html). 
+Dragging a particular tab in `Tabbed Form` can be canceled by handling the [TabDragging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SfTabbedFormControl.html) event by setting `e.Cancel` to `true` when [e.Action](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabDraggingEventArgs.html#Syncfusion_Windows_Forms_Tools_TabDraggingEventArgs_Action) is [TabDraggingAction.DragStarting](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabDraggingAction.html). 
 
 {% tabs %}
 {% highlight c# %}

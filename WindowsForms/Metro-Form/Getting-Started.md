@@ -80,7 +80,7 @@ Partial Public Class MetroForm Inherits MetroForm
 
 ## Add Caption Labels
 
-The `WinForms MetroForm` allows you to add caption labels with design and appearance. Caption labels can be added to the WinForms MetroForm through the `CaptionLabels` collection.
+The WinForms MetroForm supports caption labels with customizable appearance. Add caption labels through the `CaptionLabels` collection.
 
 Following code illustrates how to add the caption labels to the WinForms MetroForm:
 
@@ -132,8 +132,8 @@ Me.CaptionLabels.Add(captionLabel1)
 
 ## Add Caption Images
 
-The `WinForms MetroForm` allows you to add caption images with design and appearance. Caption images can be added to the WinForms MetroForm through the `CaptionImages` collection.
-Following code illustrates how to add the caption images to the WinForms MetroForm:
+The WinForms MetroForm supports caption images with customizable appearance. Use the `CaptionImages` collection to add caption images to the form.
+The following code example demonstrates how to add them:
 
 {% tabs %}
 

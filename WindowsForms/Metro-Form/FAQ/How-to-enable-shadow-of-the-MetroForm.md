@@ -7,7 +7,7 @@ control: MetroForm
 documentation: ug
 ---
 
-# How to Enable Shadow in Windows Forms MetroForm
+# How to Enable Shadow in WinForms MetroForm
 
 Shadow of the WinForms MetroForm can be enabled or disabled using the `DropShadow` property.
 
