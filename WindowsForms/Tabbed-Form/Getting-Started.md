@@ -7,7 +7,7 @@ control: SfTabbedForm
 documentation: ug
 ---
 
-# Getting Started with WinForms Tabbed Form
+# Getting Started with Windows Forms Tabbed Form
 
 ## Assembly deployment
 
