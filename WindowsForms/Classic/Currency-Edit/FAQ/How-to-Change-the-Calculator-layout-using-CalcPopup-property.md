@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# How to change calculator layout in Windows Forms CurrencyEdit
+# How to change calculator layout in WinForms CurrencyEdit
 
 This page explains How to Change the Calculator layout using CalcPopup property and more details.
 

@@ -6,9 +6,9 @@ platform: windowsforms
 control: DomainUpdownExt 
 documentation: ug
 ---
-# Keyboard Support in Windows Forms DomainUpdownExt
+# Keyboard Support in WinForms DomainUpDownExt
 
-Using Up and Down arrow keys we can increment and decrement the value of DomainUpDownExt control by setting InterceptArrowKeys to true.
+Using Up and Down arrow keys we can increment and decrement the value of WinForms DomainUpDownExt control by setting InterceptArrowKeys to true.
 
 {% tabs %}
 {% highlight c# %}
