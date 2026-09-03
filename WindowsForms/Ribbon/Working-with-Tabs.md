@@ -7,9 +7,9 @@ control: RibbonControlAdv
 documentation: ug
 ---
 
-# Working with Tabs in Windows Forms Ribbon
+# Working with Tabs in WinForms Ribbon Control
 
-Ribbon panels are represented as Tabs (ToolStripTabItem) with the tab name above the panel. These panels are split into groups represented as `ToolStripEx`, which displays various items like buttons, gallery items, labels and panels.
+WinForms Ribbon Control panels are represented as Tabs (ToolStripTabItem) with the tab name above the panel. These panels are split into groups represented as `ToolStripEx`, which displays various items like buttons, gallery items, labels and panels.
 
 The following image shows four tabs (**Home**, **Send/Receive**, **Folder** and **View**). The Home tab which is selected consists of six ‘ToolStripEx’ (**New**, **Delete**, **Respond**, **Move**, **Tags** and **Quick Steps** ).
 
@@ -44,11 +44,11 @@ Appearance of a tab can be customized using color table in Office 2016 theme.
 Follow the steps below to customize the tab using color table.
 
 
-*	In the property window of the Ribbon, click the Office2016ColorTable property. The following window will be shown
+*	In the property window of the WinForms Ribbon Control, click the Office2016ColorTable property. The following window will be shown
 
 ![Working-with-Tabs_img2](Working_with_Tabs_Images/Working-with-Tabs_img2.jpg)
 
-*	Click Add button to customize the RibbonControlAdv with the Office2016ColorTable property.
+*	Click Add button to customize the WinForms Ribbon Control with the Office2016ColorTable property.
 
 ![Working-with-Tabs_img3](Working_with_Tabs_Images/Working-with-Tabs_img3.jpg)
 

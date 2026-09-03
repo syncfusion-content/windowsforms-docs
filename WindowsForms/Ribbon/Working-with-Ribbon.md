@@ -7,7 +7,7 @@ control: RibbonControlAdv
 documentation: ug
 ---
 
-# Working with Ribbon in Windows Forms Ribbon
+# Working with Ribbon in WinForms Ribbon Control
 
 ## Ribbon State
 
@@ -70,7 +70,7 @@ ShowTabsAndCommands</td><td>
 Show Ribbon Tabs and Command all the time.</td></tr>
 </table>
 
-The following code example illustrates how to set [`DisplayOption`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html#Syncfusion_Windows_Forms_Tools_RibbonControlAdv_DisplayOption) for the RibbonControlAdv.
+The following code example illustrates how to set [`DisplayOption`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html#Syncfusion_Windows_Forms_Tools_RibbonControlAdv_DisplayOption) for the WinForms Ribbon Control.
 
 {% tabs %}
 
@@ -162,11 +162,11 @@ Open the context menu with right click on `ToolStripItem` or `ToolStripTabItem` 
 
 ### Display option changed event
 
-[`RibbonControlAdv.DisplayOptionChanged`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html#Syncfusion_Windows_Forms_Tools_RibbonControlAdv_DisplayOptionChanged) event occurs when [`DisplayOption`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html#Syncfusion_Windows_Forms_Tools_RibbonControlAdv_DisplayOption) property is changed in RibbonControlAdv. This event receives two arguments namely sender that handles RibbonControlAdv and [`DisplayOptionChangedEventArgs`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DisplayOptionChangedEventArgs.html) as objects.
+[`RibbonControlAdv.DisplayOptionChanged`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html#Syncfusion_Windows_Forms_Tools_RibbonControlAdv_DisplayOptionChanged) event occurs when [`DisplayOption`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html#Syncfusion_Windows_Forms_Tools_RibbonControlAdv_DisplayOption) property is changed in WinForms Ribbon Control. This event receives two arguments namely sender that handles WinForms Ribbon Control and [`DisplayOptionChangedEventArgs`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DisplayOptionChangedEventArgs.html) as objects.
 The [`DisplayOptionChangedEventArgs`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DisplayOptionChangedEventArgs.html) object contains the following properties:
 
-* [`NewValue`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DisplayOptionChangedEventArgs.html#Syncfusion_Windows_Forms_Tools_DisplayOptionChangedEventArgs_NewValue) - Gets the new [`RibbonDisplayOption`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonDisplayOption.html) value assigned to the RibbonControlAdv.
-* [`OldValue`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DisplayOptionChangedEventArgs.html#Syncfusion_Windows_Forms_Tools_DisplayOptionChangedEventArgs_OldValue) - Gets the old [`RibbonDisplayOption`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonDisplayOption.html) value of the RibbonControlAdv.
+* [`NewValue`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DisplayOptionChangedEventArgs.html#Syncfusion_Windows_Forms_Tools_DisplayOptionChangedEventArgs_NewValue) - Gets the new [`RibbonDisplayOption`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonDisplayOption.html) value assigned to the WinForms Ribbon Control.
+* [`OldValue`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DisplayOptionChangedEventArgs.html#Syncfusion_Windows_Forms_Tools_DisplayOptionChangedEventArgs_OldValue) - Gets the old [`RibbonDisplayOption`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonDisplayOption.html) value of the WinForms Ribbon Control.
 
 ## Options Available in Ribbon ContextMenu
 
@@ -182,7 +182,7 @@ ContextMenu can be opened with right click on the `ToolStripItem` or `ToolStripT
 
 3.**Show Quick Access Toolbar Below the Ribbon** (or) **Show Quick Access Toolbar Above the Ribbon** – Allows to change the location of QAT.
 
-4.**Customize the Ribbon** – RibbonControlAdv Tab and TabItems can be customized in run time using Ribbon Customization window.
+4.**Customize the Ribbon** – WinForms Ribbon Control Tab and TabItems can be customized in run time using Ribbon Customization window.
 
 Clicking the option will open the Customize Ribbon Editor dialog which lets you do the following.
 
@@ -233,7 +233,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/how-to-add-the-
 
 ## Ribbon Resize behavior
 
-By default, the ribbon control dynamically resizes as the width of the window decreases. When the window's border touches the last placed ToolStripEx, the entire ToolStripEx will be converted into a dropdown button and the items can be accessed by clicking on that dropdown arrow.
+By default, the WinForms Ribbon Control dynamically resizes as the width of the window decreases. When the window's border touches the last placed ToolStripEx, the entire ToolStripEx will be converted into a dropdown button and the items can be accessed by clicking on that dropdown arrow.
 Same behavior will be continued to every ToolStripEx while minimized continuously. 
 Again, the ToolStripEx will be visible if the spacing between window border and ToolStripEx has enough space to allocate all the items in that ToolStripEx.
 

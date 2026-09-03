@@ -7,13 +7,13 @@ control: RibbonControlAdv
 documentation: ug
 ---
 
-# ToolTip Support in Windows Forms Ribbon
+# ToolTip Support in WinForms Ribbon Control
 
 ToolTip is a small popup box that appears when the user moves the pointer over an element.
 
-## Adding ToolTip for Ribbon controls
+## Adding ToolTip for WinForms Ribbon Controls
 
-ToolTip can be added to all the ribbon controls through that control property `ToolTipText`, this text will appear in a popup when hovered.   
+ToolTip can be added to all the WinForms Ribbon Controls through that control property `ToolTipText`, this text will appear in a popup when hovered.   
 
 Through coding
 
@@ -44,7 +44,7 @@ Essential<sup>®</sup> Tools has come up with a new control known as the SuperTo
 ### Creating SuperToolTip through designer
 
 1.	Drag and drop the SuperToolTip on your form.
-2.	When the SuperToolTip component is added to a form, an extended property will be added to the properties of every item in the RibbonControlAdv.
+2.	When the SuperToolTip component is added to a form, an extended property will be added to the properties of every item in the WinForms Ribbon Control.
 
 ![SuperToolTip property window in designer](ToolTip_Support_Images/ToolTip-Support_img1.jpg)
 

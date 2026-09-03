@@ -7,26 +7,26 @@ control: RibbonControlAdv
 documentation: ug
 ---
 
-# Getting Started with Windows Forms Ribbon
+# Getting Started with WinForms Ribbon Control
 
 This section explains how to implement a similar UI as Microsoft Outlook using [WinForms Ribbon](https://www.syncfusion.com/winforms-ui-controls/ribbon).
 
-## Add RibbonControlAdv in Designer
+## Add WinForms Ribbon Control in Designer
 
-*	Drag and drop the ‘RibbonControlAdv’ from toolbox to designer. The required assembly references will be added automatically. It will generate the Ribbon as shown below:
+*	Drag and drop the ‘WinForms Ribbon Control’ from toolbox to designer. The required assembly references will be added automatically. It will generate the Ribbon as shown below:
 
 ![Adding RibbonControlAdv from Toolbox](Getting_Started_Images/Getting-Started_img1.jpg)
 
-## Add RibbonControlAdv in Code
+## Add WinForms Ribbon Control in Code
 
-To add the RibbonControlAdv manually through code, follow the below steps.
+To add the WinForms Ribbon Control manually through code, follow the below steps.
 
 1. Add the below required assembly reference to the project,
 
     *	Syncfusion.Shared.Base
     *	Syncfusion.Tools.Windows
 
-2. New ‘RibbonControlAdv’ can be added to the forms using the `Controls.Add` method.   Create a new Ribbon control and initialize the ribbon and then add it to the Controls using below code.
+2. New ‘WinForms Ribbon Control’ can be added to the forms using the `Controls.Add` method.   Create a new WinForms Ribbon Control and initialize the ribbon and then add it to the Controls using below code.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -60,7 +60,7 @@ Me.Controls.Add(ribbonControlAdv1)
 
 ## Configure RibbonForm
 
-RibbonForm enables a similar look and feel of Microsoft Office. This section will guide you in applying different visual styles to RibbonControlAdv using RibbonForm.
+RibbonForm enables a similar look and feel of Microsoft Office. This section will guide you in applying different visual styles to WinForms Ribbon Control using RibbonForm.
 By default, the Form in application will extend to Form class. Add the respective namespace and programmatically change it as RibbonForm class. 
 
 {% tabs %}
@@ -88,9 +88,9 @@ End Class
 
 ## Applying Visual Style
 
-RibbonControlAdv appearance can be enhanced by using the `RibbonStyle` property of the Ribbon Control.
+WinForms Ribbon Control appearance can be enhanced by using the `RibbonStyle` property.
 
-The following styles are supported by the Ribbon control.
+The following styles are supported by the WinForms Ribbon Control.
 
 *	Office2007
 *	Office2010
@@ -98,7 +98,7 @@ The following styles are supported by the Ribbon control.
 *	Office2016
 *	TouchStyle
 
-The following code example illustrates how to set style for the RibbonControlAdv through code.
+The following code example illustrates how to set style for the WinForms Ribbon Control through code.
 
 {% tabs %}
 
@@ -120,7 +120,7 @@ Me.ribbonControlAdv1.RibbonStyle = RibbonStyle.Office2016
 
 ## Add Tabs to Ribbon
 
-RibbonControlAdv lets you create ToolStripTabItems easily using the smart tag. It also adds a RibbonPanel to which ToolStripItems can be added.
+WinForms Ribbon Control lets you create ToolStripTabItems easily using the smart tag. It also adds a RibbonPanel to which ToolStripItems can be added.
 
 ![Adding Tabs through designer](Getting_Started_Images/Getting-Started_img3.jpg)
 
@@ -128,7 +128,7 @@ Customize the Tab item using the property grid.
 
 ![Customizing the Tab items](Getting_Started_Images/Getting-Started_img4.jpg)
 
-A new TabItem can be added to the RibbonControlAdv programmatically using the `AddMainItem` method. Create a ToolStripTabItem and then add it to the RibbonControlAdv using the below method.
+A new TabItem can be added to the WinForms Ribbon Control programmatically using the `AddMainItem` method. Create a ToolStripTabItem and then add it to the WinForms Ribbon Control using the below method.
 
 {% tabs %}
 
@@ -1094,7 +1094,7 @@ ToolStripComboBox is similar to ToolStripComboBoxEx with some changes in visual 
 
 ## Add ToolStripGallery
 
-RibbonControlAdv provides options to add a collection of items and store them into a gallery. A gallery can be added to a ToolStripTabItem using Panel Button.
+WinForms Ribbon Control provides options to add a collection of items and store them into a gallery. A gallery can be added to a ToolStripTabItem using Panel Button.
 
 Gallery Items can be added through the Items Collection Editor from the Property grid of ToolStripGallery.
 
@@ -1230,7 +1230,7 @@ toolStripEx1.Items.Add(quickGallery);
  
 ## Add ToolStripCheckBox
 
- ToolStripCheckBox is used to select or unselect options. It provides similar set of functionalities like normal CheckBox control in Ribbon.It can be added to a ToolStripEx directly or through a panel.
+ ToolStripCheckBox is used to select or unselect options. It provides similar set of functionalities like normal CheckBox control in WinForms Ribbon Control.It can be added to a ToolStripEx directly or through a panel.
 
  {% tabs %}
 
@@ -1477,7 +1477,7 @@ toolStripEx1.Items.Add(toolStripLabel);
 
 ## Add ToolStripSeparator
 
-Ribbon Separator is used to separate the similar set of Ribbon elements in Ribbon. It can separate RibbonButtons according to their purpose and it can be added to a ToolStripEx directly or through a panel.
+Ribbon Separator is used to separate the similar set of Ribbon elements in WinForms Ribbon Control. It can separate RibbonButtons according to their purpose and it can be added to a ToolStripEx directly or through a panel.
 
 {% tabs %}
 
@@ -1618,7 +1618,7 @@ Me.currentViewToolStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem(
 ## Add QAT
 
 `QuickAccessToolBar` is a customizable bar that provides one click access to the frequently used items.
-By default, the location of QAT will be above the Ribbon, its location can be changed using the property `ShowQuickPanelBelowRibbon`.
+By default, the location of QAT will be above the WinForms Ribbon Control, its location can be changed using the property `ShowQuickPanelBelowRibbon`.
 
 ### QuickAccessToolBar Items
 
@@ -1630,7 +1630,7 @@ QAT item can be added by right clicking the ribbon item and choosing `Add to Qui
 
 ## Add BackStage
 
-Ribbon enables you to work in the document and Backstage enables you to work with the document. Using this you can alter contents and provide end-user options that are related to specific solution requirements.
+WinForms Ribbon Control enables you to work in the document and Backstage enables you to work with the document. Using this you can alter contents and provide end-user options that are related to specific solution requirements.
 
 The following are steps to create a BackStageView:
 
@@ -1642,7 +1642,7 @@ The following are steps to create a BackStageView:
 
 ![Navigating to BackStage](Getting_Started_Images/Getting-Started_img29.jpg)
 
-3. Set BackStageView to RibbonControlAdv
+3. Set BackStageView to WinForms Ribbon Control
 
 ![Setting BackStageView to the Ribbon](Getting_Started_Images/Getting-Started_img30.jpg)
 
@@ -1800,11 +1800,11 @@ Separator can be added through Smart tag as explained in adding backstage button
 
 ## Add ApplicationMenu
 
-The RibbonControlAdv has the office menu button at the top left corner of the form. Controls can be added to the panels of the office menu button dropdown through designer.
+The WinForms Ribbon Control has the office menu button at the top left corner of the form. Controls can be added to the panels of the office menu button dropdown through designer.
 
 ![Adding Application Menu](Getting_Started_Images/Getting-Started_img35.jpg)
 
-N> ApplicationMenu can be accessed only when ribbon style is Office2007
+N> ApplicationMenu can be accessed only when WinForms Ribbon Control style is Office2007
 
 ## Set simplified layout
 

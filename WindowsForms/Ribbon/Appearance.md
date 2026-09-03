@@ -7,16 +7,16 @@ control: RibbonControlAdv
 documentation: ug
 ---
 
-# Appearance in Windows Forms Ribbon
+# Appearance in WinForms Ribbon Control
 
-The Ribbon control ships with several built-in themes such as Office2007, Office2010, Office2013, TouchStyle and Office2016.
-All these themes can be applied with the ribbon property `RibbonStyle`.
+The WinForms Ribbon Control ships with several built-in themes such as Office2007, Office2010, Office2013, TouchStyle and Office2016.
+All these themes can be applied with the WinForms Ribbon Control property `RibbonStyle`.
 
 ## Apply Visual styles
 
-Visual styles can be applied by using the ribbon property `RibbonStyle`
+Visual styles can be applied by using the WinForms Ribbon Control property `RibbonStyle`
 
-The following code example illustrates how to set style for the RibbonControlAdv.
+The following code example illustrates how to set style for the WinForms Ribbon Control.
 
 {% tabs %}
 
@@ -61,12 +61,12 @@ Essential<sup>®</sup> Tools for Windows Forms provides support to apply Office2
 To apply Visual style through skin manager, follow the steps below
 
 *	Drag the Skin Manager from the Toolbox tab to the designer.
-*	Open the property grid and click the `Controls` property and select ribbon control as parent control.
+*	Open the property grid and click the `Controls` property and select WinForms Ribbon Control as parent control.
 *	set the visual style using `VisualTheme` property.
 
 **Through code**
 
-You can add Skin Manager to one of the controls in your form or to the entire ribbon control as needed by specifying the root control. 
+You can add Skin Manager to one of the controls in your form or to the entire WinForms Ribbon Control as needed by specifying the root control. 
 
 {% tabs %}
 
@@ -90,9 +90,9 @@ SkinManager.SetVisualStyle(Me.ribbonControlAdv1, VisualTheme.Office2007Blue)
 
 **Office 2016 Color Scheme**
 
-The RibbonControlAdv includes new color schemes as available in the Office 2016 suite to provide a more personalized experience with the RibbonControlAdv.
+The WinForms Ribbon Control includes new color schemes as available in the Office 2016 suite to provide a more personalized experience.
 
- RibbonControlAdv now supports four themes:
+WinForms Ribbon Control now supports four themes:
 
 *	Colorful
 *	White
@@ -101,7 +101,7 @@ The RibbonControlAdv includes new color schemes as available in the Office 2016 
 
 ![WindowsForms Ribbon Various Office 2016 Color Schemes](Appearance_Images/WindowsForms-Ribbon-Various-Office-2016-Color-Schemes.jpg)
 
-The following code sample illustrates how to set the Colorful theme for the Office 2016 style RibbonControlAdv.
+The following code sample illustrates how to set the Colorful theme for the Office 2016 style WinForms Ribbon Control.
 
 {% tabs %}
 
@@ -122,7 +122,7 @@ Me.ribbonControlAdv1.Office2016ColorScheme = Office2016ColorScheme.Colorful
 
 **Office 2013 Color Scheme**
 
-The RibbonControlAdv includes new color schemes as available in the Office 2013 suite to provide a more personalized experience with the RibbonControlAdv.
+The WinForms Ribbon Control includes new color schemes as available in the Office 2013 suite to provide a more personalized experience.
 
 Office 2013 theme now supports three color schemes:
 
@@ -133,7 +133,7 @@ Office 2013 theme now supports three color schemes:
 
 ![WindowsForms Ribbon Various Office 2013 Color Schemes](Appearance_Images/WindowsForms-Ribbon-Various-Office-2013-Color-Schemes.jpg)
 
-The following code sample illustrates how to set the scheme for the Office 2013 style RibbonControlAdv.
+The following code sample illustrates how to set the scheme for the Office 2013 style WinForms Ribbon Control.
 
 {% tabs %}
 
@@ -154,7 +154,7 @@ Me.ribbonControlAdv1.Office2013ColorScheme = Office2013ColorScheme.DarkGray
 
 **Office Color Scheme**
 
-The Ribbon Control Adv has come up with the same visual style of Office 2007. The users can choose between three colors
+The WinForms Ribbon Control Adv has come up with the same visual style of Office 2007. The users can choose between three colors
 
 *	Blue
 *	Silver
@@ -162,7 +162,7 @@ The Ribbon Control Adv has come up with the same visual style of Office 2007. Th
 *	Default
 *	Managed
 
-It can be set through the `OfficeColorScheme` property of the RibbonControlAdv class.
+It can be set through the `OfficeColorScheme` property of the WinForms Ribbon Control class.
 
 ![WindowsForms Ribbon Various Office 2007 Color Schemes](Appearance_Images/WindowsForms-Ribbon-Various-Office-2007-Color-Schemes.jpg)
 
@@ -215,17 +215,17 @@ Office12ColorTable.ApplyManagedColors(Me, Color.Red)
 
 ## Color Table
 
-RibbonControlAdv can now be fully customized by using the Color table in Office 2016, Office 2013 and Touch style.
+WinForms Ribbon Control can now be fully customized by using the Color table in Office 2016, Office 2013 and Touch style.
 
 **Office2016 Style Color Table**
 
-RibbonControlAdv can now be fully customized in Office2016 style under Colorful theme. This can be achieved by using Office2016ColorTable property.
+WinForms Ribbon Control can now be fully customized in Office2016 style under Colorful theme. This can be achieved by using Office2016ColorTable property.
 
-In the property window of the Ribbon, click the Office2016ColorTable property. The following window will be shown
+In the property window of the WinForms Ribbon Control, click the Office2016ColorTable property. The following window will be shown
 
 ![WindowsForms Ribbon Office 2016 Color Table Editor](Appearance_Images/WindowsForms-Ribbon-Office-2016-Color-Table-Editor.jpg)
 
-Click Add button to customize the RibbonControlAdv with the Office2016ColorTable property.
+Click Add button to customize the WinForms Ribbon Control with the Office2016ColorTable property.
 
 ![WindowsForms Ribbon Office 2016 Color Table adding](Appearance_Images/WindowsForms-Ribbon-Office-2016-Color-Table-adding.jpg)
 
@@ -519,7 +519,7 @@ this.ribbonControlAdv1.Office2016ColorTable.Add(color);
 
 **Office2013 Style Color Table**
 
-RibbonControlAdv can now be fully customized in Office 2013 style. This can be achieved by using Office2013ColorTable property.
+WinForms Ribbon Control can now be fully customized in Office 2013 style. This can be achieved by using Office2013ColorTable property.
 
 {% tabs %}
 
@@ -712,7 +712,7 @@ Dim color As Office2013ColorTable = New Office2013ColorTable()
 
 **Touch Style Color Table**
 
-RibbonControlAdv can now be fully customized in TouchStyle. This can be achieved by using TouchStyle ColorTable.
+WinForms Ribbon Control can now be fully customized in TouchStyle. This can be achieved by using TouchStyle ColorTable.
 
 The following code demonstrate how to use the TouchStyleColorTable.
 
@@ -1046,7 +1046,7 @@ this.ribbonControlAdv1.ApplyTouchStyleColorTable(_touchColorTable);
 
 ## EnableHighContrastTheme
 
-`EnableHighContrastTheme` property used to specify whether to use default high contrast theme color in RibbonControlAdv. By default, EnableHighContrastTheme property is set to True.
+`EnableHighContrastTheme` property used to specify whether to use default high contrast theme color in WinForms Ribbon Control. By default, EnableHighContrastTheme property is set to True.
 
 {% tabs %}
 

@@ -7,9 +7,9 @@ control: RibbonControlAdv
 documentation: ug
 ---
 
-# Localization Support in Windows Forms Ribbon
+# Localization Support in WinForms Ribbon Control
 
-RibbonControlAdv now supports adaptation of its controls and its details to meet different languages and cultural requirements. This involves configuring the ribbon to a specific language.
+WinForms Ribbon Control now supports adaptation of its controls and its details to meet different languages and cultural requirements. This involves configuring the WinForms Ribbon Control to a specific language.
 
 ## Adding ILocalizationProvider
 
@@ -420,7 +420,7 @@ Quick access dialog in customize ribbon window<br/><br/></td></tr>
 
 ## Right To Left
 
-In Right To Left support, RibbonControlAdv aligns all its controls from right To left when the ribbon property `RightToLeft’ is set to Yes.
+In Right To Left support, WinForms Ribbon Control aligns all its controls from right To left when the ribbon property `RightToLeft’ is set to Yes.
 
 {% tabs %}
 
