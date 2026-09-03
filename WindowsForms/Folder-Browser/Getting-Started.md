@@ -7,7 +7,7 @@ control: Tools
 documentation: ug
 ---
 
-# Getting Started with Windows Forms FolderBrowser
+# Getting Started with WinForms Folder Browser
 
 ## Assembly deployment
 
@@ -17,17 +17,17 @@ You can find more details about installing the NuGet package in a Windows Forms 
 
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
 
-## Create a simple application with FolderBrowser
+## Create a simple application with WinForms Folder Browser
 
-You can create a Windows Forms application with the FolderBrowser control using the following steps:
+You can create a Windows Forms application with the WinForms Folder Browser control using the following steps:
 
 ## Create a project
 
-Create a new Windows Forms project in Visual Studio to select the a folder using the FolderBrowser control.
+Create a new Windows Forms project in Visual Studio to select the a folder using the WinForms Folder Browser control.
 
 ## Add control through designer
 
-The FolderBrowser control can be added to an application by dragging it from the toolbox to a designer view. The **Syncfusion.Shared.Base** assembly reference will be added automatically to the project.
+The WinForms Folder Browser control can be added to an application by dragging it from the toolbox to a designer view. The **Syncfusion.Shared.Base** assembly reference will be added automatically to the project.
 
 ![wf domain up down control added by designer](Getting-Started_images/wf-folder-browser-control-added-by-designer.png) 
 
@@ -37,7 +37,7 @@ To add the control manually in C#, follow the given steps:
 
 1. Add the **Syncfusion.Shared.Base** assembly reference to the project.
 
-2. Include the FolderBrowser control namespace **Syncfusion.Windows.Forms;**.
+2. Include the WinForms Folder Browser control namespace **Syncfusion.Windows.Forms;**.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -51,7 +51,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }} 
 
-3. Create a FolderBrowser control instance, and invoke the [FolderBrowser.ShowDialog()](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.FolderBrowser.html#Syncfusion_Windows_Forms_FolderBrowser_ShowDialog().html) method to display the FolderBrowser dialog.
+3. Create a WinForms Folder Browser control instance, and invoke the [FolderBrowser.ShowDialog()](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.FolderBrowser.html#Syncfusion_Windows_Forms_FolderBrowser_ShowDialog().html) method to display its dialog.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -93,7 +93,7 @@ Me.folderBrowser1.ShowDialog()
 
 ## Auto complete file path
 
-The FolderBrowser control supports editing folder location and auto-complete, which displays available folder paths in a drop-down list to choose by setting the folder browser [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.FolderBrowser.html#Syncfusion_Windows_Forms_FolderBrowser_Style) to ShowTextBox.
+The WinForms Folder Browser control supports editing folder location and auto-complete, which displays available folder paths in a drop-down list to choose by setting its [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.FolderBrowser.html#Syncfusion_Windows_Forms_FolderBrowser_Style) to ShowTextBox.
 
 {% tabs %}
 {% highlight C# %}
