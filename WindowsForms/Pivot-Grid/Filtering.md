@@ -9,7 +9,7 @@ documentation: ug
 
 # Filtering in Windows Forms Pivot Grid
 
-The filtered data displays only a subset of data that meets a specific criteria and hides the data that you do not want to display. The filters are automatically re-applied every time when the Pivot Grid is refreshed or updated until you remove those filters. In Pivot Grid, filters are additive, which means that each additional filter is based on the current filter and further reduces the subset of data. At a time, 'n' number of filtering conditions can be applied to the control.
+The filtered data displays only a subset of data that meets a specific criteria and hides the data that you do not want to display. The filters are automatically re-applied every time when the Pivot Grid is refreshed or updated until you remove those filters. In Control, filters are additive, which means that each additional filter is based on the current filter and further reduces the subset of data. At a time, 'n' number of filtering conditions can be applied to the control.
 
 In the Pivot Grid control, the filtering operation can be performed by any of the following ways:
 
