@@ -10,7 +10,7 @@ documentation: ug
 
 # Data Manipulation in Windows Forms Data Grid
 
-[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (WinForms Data Grid) listens and responds to the manipulation operations such as add, delete and data update (property change) at runtime. the control refresh the sorting, filtering, grouping and summaries based on [SfDataGrid.LiveDataUpdateMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_LiveDataUpdateMode) property.
+[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) listens and responds to the manipulation operations such as add, delete and data update (property change) at runtime. the control refresh the sorting, filtering, grouping and summaries based on [SfDataGrid.LiveDataUpdateMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_LiveDataUpdateMode) property.
 
 {% tabs %}
 {% highlight c# %}

@@ -29,7 +29,7 @@ When an item is added/removed in [ObservableCollection](https://learn.microsoft.
 Data Grid control supports to bind any collection that implements the [IEnumerable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.ienumerable?view=net-5.0) interface. All the data operations such as sorting, grouping, filtering, summaries are supported when binding collection derived from `IEnumerable`.
 
 ## Binding with DataTable
-Data Grid control supports to bind the DataTable. Data Grid control automatically refresh the UI when binding DataTable as `DataSource` when rows are added, removed or cleared.
+Data Grid control supports to bind the DataTable. It automatically refresh the UI when binding DataTable as `DataSource` when rows are added, removed or cleared.
 
 {% tabs %}
 {% highlight c# %}

@@ -41,7 +41,7 @@ Syncfusion<sup>®</sup> WinForms suite comes up with following different grid na
 
 ### Data Grid
 
-Windows Forms Data Grid is designed based on column-oriented architecture that provides support to customize the grid easily. It is used to display collection of data in rows and columns. The Data Grid control includes editing and data shaping features (sorting, grouping, filtering, etc.,) that allows the end users to easily manage the data. It also supports printing and exporting to Excel and PDF file formats.
+Windows Forms Data Grid is designed based on column-oriented architecture that provides support to customize the grid easily. It is used to display collection of data in rows and columns. The control includes editing and data shaping features (sorting, grouping, filtering, etc.,) that allows the end users to easily manage the data. It also supports printing and exporting to Excel and PDF file formats.
 
 ### GridGroupingControl
 

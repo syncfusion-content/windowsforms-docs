@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Export To PDF in Windows Forms Data Grid
-[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (WinForms Data Grid) provides support to export data to PDF file. It also provides support for grouping, filtering, sorting, unbound rows and stacked headers while exporting. The following assemblies needs to be added for exporting to PDF file.
+[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) provides support to export data to PDF file. It also provides support for grouping, filtering, sorting, unbound rows and stacked headers while exporting. The following assemblies needs to be added for exporting to PDF file.
 
 
 * [Syncfusion.SfDataGridConverter.WinForms](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.html)

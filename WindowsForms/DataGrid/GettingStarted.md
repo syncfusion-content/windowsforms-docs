@@ -25,7 +25,7 @@ In this walk through, users will create WinForms application that contains Data 
 Create new Windows Forms Project in Visual Studio to display Data Grid with data objects.
 
 ### Adding Control via Designer
-Windows Forms Data Grid (the control) control can be added to the application by dragging it from Toolbox and dropping it in Designer. The required assembly references will be added automatically.
+Windows Forms Data Grid control can be added to the application by dragging it from Toolbox and dropping it in Designer. The required assembly references will be added automatically.
 ![is dragged from toolbox](gettingstarted_images/windowsforms-datagrid-dragged-from-toolbox.png)
 
 ### Adding Control in Code

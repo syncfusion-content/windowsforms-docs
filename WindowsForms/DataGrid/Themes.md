@@ -7,7 +7,7 @@ control: Data Grid
 documentation: ug
 ---
 # Theme in Windows Forms Data Grid
-[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (WinForms Data Grid) offers six built in themes for professional representation as follows.
+[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) offers six built in themes for professional representation as follows.
 
 * Office2016Colorful
 * Office2016White

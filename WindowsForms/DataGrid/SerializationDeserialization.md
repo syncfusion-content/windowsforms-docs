@@ -9,11 +9,11 @@ documentation: ug
 
 # Serialization and Deserialization in Windows Forms Data Grid
 
-[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (WinForms Data Grid) allows you to serialize and deserialize the control settings using [DataContractSerializer](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.datacontractserializer?view=net-5.0).
+[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) allows you to serialize and deserialize the control settings using [DataContractSerializer](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.datacontractserializer?view=net-5.0).
 
 ## Serialization
 
-The Data Grid can be serialized by using [SfDataGrid.Serialize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_Serialize_System_IO_Stream_) method which exports the current Data Grid control properties to an XML file.
+The Data Grid can be serialized by using [SfDataGrid.Serialize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_Serialize_System_IO_Stream_) method which exports the current control properties to an XML file.
 
 {% tabs %}
 {% highlight c# %}
