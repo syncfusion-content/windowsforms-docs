@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Configure Child Controls in Windows Forms GridBagLayout | Syncfusion®
 description: Configure child controls using grid positions, spanning, weights, anchoring, fill behavior, padding, and layout constraints.
@@ -9,7 +9,7 @@ documentation: ug
 
 # Configure Child Controls in Windows Forms LayoutManagers
 
-The `GridBagLayout` is completely configured through the GridBag constraints set for each child component. The number of rows and columns in the virtual grid is also derived from the specified constraints. The constraints for each child component on the GridBagLayout can be specified through designer and programmatically.
+The `GridBagLayout` is completely configured through the GridBag constraints set for each child component. The number of rows and columns in the virtual grid is also derived from the specified constraints. The constraints for each child component on the WinForms GridBagLayout can be specified through designer and programmatically.
 
 ## Through designer
 
@@ -42,7 +42,7 @@ The following screenshot illustrates the following four buttons with non-zero we
 
 ### WeightX and WeightY
 
-The next setting determines the weights for each row and column. The GridBagLayout determines the width and height of the rows based on the preferred size settings of the child components. Then, it allocates the extra horizontal and vertical spaces available between these columns and rows based on their weights. The weight of a row or column is basically the largest weight of all the child components in that row or column.
+The next setting determines the weights for each row and column. The WinForms GridBagLayout determines the width and height of the rows based on the preferred size settings of the child components. Then, it allocates the extra horizontal and vertical spaces available between these columns and rows based on their weights. The weight of a row or column is basically the largest weight of all the child components in that row or column.
 
 <table>
 <tr>
@@ -199,7 +199,7 @@ In code, you can specify constraints through the SetConstraints() method. The Gr
 
 ## Through Code
 
-In the following code, the GridBagLayout constraints can be set for the controls along with the constraint values for Insets, WeightX, WeightY, Anchor, Fill, GridPostX, GridPostY, IPadX, and IPadY.
+In the following code, the WinForms GridBagLayout constraints can be set for the controls along with the constraint values for Insets, WeightX, WeightY, Anchor, Fill, GridPostX, GridPostY, IPadX, and IPadY.
 
 The value of the `GridBagConstraints` can be specified on a child component as shown in the following.
 
@@ -225,9 +225,9 @@ Me.gridBayLayout.SetConstraints(Me.button1, New Syncfusion.Windows.Forms.Tools.G
 
 {% endtabs %}
 
-## Rearranging the controls laid out by GridBagLayout
+## Rearranging the controls laid out by WinForms GridBagLayout
 
-Similar to the FlowLayout and GridLayout Managers, the child controls of the GridBagLayout can also be rearranged by dragging and dropping them at design time.
+Similar to the FlowLayout and GridLayout Managers, the child controls of the WinForms GridBagLayout can also be rearranged by dragging and dropping them at design time.
 
 ![Rearranging child control in designer by dragging child controls](Configuringchildcontrols_images/Configuringchildcontrols_img7.jpeg)
 

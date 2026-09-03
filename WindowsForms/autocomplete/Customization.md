@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Customization in Windows Forms AutoComplete | Syncfusion®
 description: Customization in AutoComplete enables configuring popup appearance, visual styles, sizing, persistence, and dropdown behavior.
@@ -9,16 +9,16 @@ documentation: ug
 
 # Customization in Windows Forms AutoComplete
 
-This section explains about the customization of the AutoComplete component.
+This section explains about the customization of the WinForms Autocomplete component.
 
 ## Item customization
 ### Appearance 
 
-The appearance of the AutoComplete popup window and the items can be customized using the following properties:
+The appearance of the popup window and its items can be customized using the following properties:
 <table>
 <tr>
 <th>
-AutoComplete properties</th><th>
+WinForms Autocomplete properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -90,7 +90,7 @@ Specifies the AutoCompletePopup column header style.</td></tr>
 
 To show or hide the `CloseButton` at the bottom-left of the DropDownContainer, use the [ShowCloseButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_ShowCloseButton) property. The default value of this property is `true`.
 
-N> The AutoComplete dropdown can be closed by calling the [CloseDropDown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_CloseDropDown) method.
+N> The WinForms Autocomplete dropdown can be closed by calling the [CloseDropDown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_CloseDropDown) method.
 
 ### Resize gripper
 
@@ -128,7 +128,7 @@ The properties that can control the height and width of the AutoCompletePopup ar
 <table>
 <tr>
 <th>
-AutoComplete properties</th><th>
+WinForms Autocomplete properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -137,15 +137,15 @@ Specifies whether the height of the dropdown should be adjusted automatically ba
 <tr>
 <td>
 {{ '[AutoPersistentDropDownSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_AutoPersistentDropDownSize)' || markdownify }}</td><td>
-The dropdown size of Autocomplete component is automatically persistent when this property is set to true.</td></tr>
+The dropdown size is automatically saved and restored when this property is set to true.</td></tr>
 <tr>
 <td>
 {{ '[PreferredHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_PreferredHeight)' || markdownify }}</td><td>
-Specifies preferred height for the dropdown displayed by the AutoComplete component when AdjustHeightToItemCount property is false. The default value of this property is 200.</td></tr>
+Specifies the preferred height for the dropdown when the AdjustHeightToItemCount property is false. The default value of this property is 200.</td></tr>
 <tr>
 <td>
 {{ '[PreferredWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_PreferredWidth)' || markdownify }}</td><td>
-Specifies preferred width for the dropdown displayed by the AutoComplete component when AdjustHeightToItemCount property is false. The default value of this property is -1.</td></tr>
+Specifies the preferred width for the dropdown when the AdjustHeightToItemCount property is false. The default value of this property is -1.</td></tr>
 </table>
 
 {% tabs %}
@@ -172,7 +172,7 @@ Me.autoComplete1.PreferredWidth = 300
 
 ## Visual styles 
 
-The built-in themes for professional representation of AutoComplete are as follows.
+The built-in themes for professional representation of WinForms Autocomplete are as follows.
 
 ### Office2019Colorful
 
@@ -335,7 +335,7 @@ Sets the default theme.
 
 ## Persistence
 
-The history list of the AutoComplete component can be saved in the following formats:
+The history list of the WinForms Autocomplete component can be saved in the following formats:
 
 * Binary Format
 * XML Format
@@ -343,11 +343,11 @@ The history list of the AutoComplete component can be saved in the following for
 * MemoryStream
 * PersistState property
 
-The AutoComplete component has a fully built-in serialization feature that provides automatic serialization for the AutoComplete's history list. The serialization mechanism is implemented using the standardized `Syncfusion.Windows.Forms.AppStateSerializer` component, which acts as a central coordinator for all the Essential Tools components and provides options to read or write to different media such as the default isolated storage, XML file, XML stream, binary file, binary stream, and the Windows Registry.
+The WinForms Autocomplete component has a fully built-in serialization feature that provides automatic serialization for its history list. The serialization mechanism is implemented using the standardized `Syncfusion.Windows.Forms.AppStateSerializer` component, which acts as a central coordinator for all the Essential Tools components and provides options to read or write to different media such as the default isolated storage, XML file, XML stream, binary file, binary stream, and the Windows Registry.
 
-### Persisting AutoComplete's data in the default storage
+### Persisting Autocomplete's data in the default storage
 
-The data of the AutoComplete component can be persisted by setting the [AutoSerialize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_AutoSerialize) property to `true`. This specifies whether the AutoComplete component can persist its data. The information is stored in the isolated storage.
+The data of the WinForms Autocomplete component can be persisted by setting the [AutoSerialize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_AutoSerialize) property to `true`. This specifies whether the component can persist its data. The information is stored in the isolated storage.
 
 {% tabs %}
 
@@ -367,7 +367,7 @@ Me.autoComplete1.AutoSerialize = True
 
 ### Persisting in XML file
 
-To save and load the AutoComplete data in XML.
+To save and load the WinForms Autocomplete data in XML.
 
 {% tabs %}
 
@@ -404,7 +404,7 @@ End Sub()
 
 ### Persisting in memory stream
 
-It serializes the data into a memory stream. The following methods are storing and retrieving data in AutoComplete.
+It serializes the data into a memory stream. The following methods are storing and retrieving data in WinForms Autocomplete.
 
 #### Storing state
 

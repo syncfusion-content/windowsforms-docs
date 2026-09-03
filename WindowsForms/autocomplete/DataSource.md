@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: DataSource in Windows Forms AutoComplete | Syncfusion®
 description: DataSource support in AutoComplete enables binding data from multiple sources, managing history items, and configuring dynamic suggestions.
@@ -9,25 +9,25 @@ documentation: ug
 
 # DataSource in Windows Forms AutoComplete
 
-The AutoComplete component supports a variety of data sources such as DataTables, DataSets, or any component that implements interfaces such as `IList`, `IBindingList`, `ITypedList`, and `IListSource`. For assigning a data source to AutoComplete, use the [DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_DataSource) property. This section explains the different types of data binding mechanisms and data settings supported by the AutoComplete component.
+The WinForms Autocomplete component supports a variety of data sources such as DataTables, DataSets, or any component that implements interfaces such as `IList`, `IBindingList`, `ITypedList`, and `IListSource`. For assigning a data source, use the [DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_DataSource) property. This section explains the different types of data binding mechanisms and data settings supported by the component.
 
 ## Data settings
 
-The data for the autocompletion is maintained by the AutoComplete component itself. This is referred to as History Data List mode. The following properties deal with data settings.
+The data for the autocompletion is maintained by the WinForms Autocomplete component itself. This is referred to as History Data List mode. The following properties deal with data settings.
 
 <table>
 <tr>
 <th>
-AutoComplete properties</th><th>
+WinForms Autocomplete properties</th><th>
 Description</th></tr>
 <tr>
 <td>
 CategoryName</td><td>
-Specifies a unique or shared name that can be given to an AutoComplete component, so that it can persist the values under that name. For example, when the CategoryName "URL" is provided for an AutoComplete component on a particular form, all the values persisted by that AutoComplete component are also accessible to other AutoComplete component on others forms or on the same form with the CategoryName "URL". </td></tr>
+Specifies a unique or shared name that can be given to a WinForms Autocomplete component so that it can persist values under that name. For example, when the CategoryName "URL" is provided for a component on a particular form, all the values persisted by it are also accessible to other components on the same form or other forms with the CategoryName "URL". </td></tr>
 <tr>
 <td>
 DataSource</td><td>
-Sets the Datasource to the AutoComplete component. The AutoComplete component automatically picks the "History Data List" mode or "Data source" mode based on the values set for the DataSource property. When the DataSource property is set to NULL (default value is NULL), the component defaults to History Data List mode. The properties `CategoryName`, `AutoAddItem`, and `AutoSerialize` have to be set appropriately for the History Data List mode to work properly.</td></tr>
+Sets the Datasource to the WinForms Autocomplete component.It automatically picks the "History Data List" mode or "Data source" mode based on the values set for the DataSource property. When the DataSource property is set to NULL (default value is NULL), the component defaults to History Data List mode. The properties `CategoryName`, `AutoAddItem`, and `AutoSerialize` have to be set appropriately for the History Data List mode to work properly.</td></tr>
 </table>
 
 {% tabs %}
@@ -121,7 +121,7 @@ Me.textBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.History
 
 ## Custom source
 
-The AutoComplete component allows you to add a set of text using the `String Collection Editor`, which is shown by clicking the `AutoCompleteCustomSource` property in the property window of the editor control. The `AutoCompleteSource` property should be set to `CustomSource` to use the custom items added through the String Collection Editor.
+The WinForms Autocomplete component allows you to add a set of text using the `String Collection Editor`, which is shown by clicking the `AutoCompleteCustomSource` property in the property window of the editor control. The `AutoCompleteSource` property should be set to `CustomSource` to use the custom items added through the String Collection Editor.
 
 ![Windows Forms AutoComplete Customsource datasource](DataSource_images/AutoComplete_Customsource.png) 
 
@@ -152,7 +152,7 @@ The AutoComplete component allows you to add a set of text using the `String Col
 
 ## Binding custom collections
 
-The different custom collections that can be bound to the [DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_DataSource) property of the AutoComplete component are listed as follows.
+The different custom collections that can be bound to the [DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_DataSource) property of the WinForms Autocomplete component are listed as follows.
 
 * BindingList Collection
 * ArrayList Collection
