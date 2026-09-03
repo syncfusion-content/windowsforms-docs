@@ -7,9 +7,9 @@ control: TabbedMDIManager
 documentation: ug
 ---
 
-# Tab groups in Windows Forms TabbedMDI control
+# Tab groups in WinForms TabbedMDI control
 
-TabbedMDIManager supports multiple TabGroups which can be resizable. It allows users to programmatically control and restrict the number and layout of the tab groups and also lets users to associate a form with a specific tab group. This way users can provide a custom tabbed layout for the end users of the TabbedMDI application. The MDI Children can arranged horizontally or vertically.
+WinForms TabbedMDI supports multiple TabGroups which can be resizable. It allows users to programmatically control and restrict the number and layout of the tab groups and also lets users to associate a form with a specific tab group. This way users can provide a custom tabbed layout for the end users of the WinForms TabbedMDI application. The MDI Children can arranged horizontally or vertically.
 
 ![Tab groups](Tab-Groups_images/Tab-Groups_img1.jpeg)
 
@@ -64,7 +64,7 @@ Private TabbedGroupedMDIManager As TabbedMDIManager
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 * Set the form's [IsMdiContainer](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.form.ismdicontainer?view=netframework-4.7.2) property to `true`.
-* Initialize the TabbedMDIManager and set the required properties.
+* Initialize the WinForms TabbedMDI and set the required properties.
 
 {% capture codesnippet3 %}
 {% tabs %}
@@ -122,7 +122,7 @@ End Sub
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-* Attach the TabbedMDIManager to your form and specify the Tab Groups.
+* Attach the WinForms TabbedMDI to your form and specify the Tab Groups.
 
 {% capture codesnippet4 %}
 {% tabs %}
