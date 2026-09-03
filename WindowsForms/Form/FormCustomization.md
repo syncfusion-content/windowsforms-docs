@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Form Customization in Windows Forms Form | Syncfusion®
 description: Form Customization in Form (SfForm) enables configuring icons, borders, shadow effects, and rounded corners for personalized window appearance.
@@ -9,13 +9,13 @@ documentation: ug
 
 # Form Customization in Windows Forms Form (SfForm)
 
-## Form icon
+## WinForms Form icon
 
-A form icon designates the picture that represents the form in the taskbar as well as the icon displayed on the title bar of the form.
+A WinForms Form icon designates the image that represents it in the taskbar and appears on its title bar.
 
-### Changing form icon
+### Changing WinForms Form icon
 
-The form icon displayed on the title bar and task bar can be changed by using the [Icon](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.form.icon?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) property.
+The WinForms Form icon displayed on the title bar and task bar can be changed by using the [Icon](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.form.icon?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -28,9 +28,9 @@ Me.Icon = New Icon("sfIcon.ico")
 
 ![WindowsForms Form shows icon](formcustomization_images/windowsforms-form-shows-icon.png)
 
-### Form icon alignment
+### WinForms Form icon alignment
 
-The form icon can be aligned vertically and horizontally by using the [Style.TitleBar.IconVerticalAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo.html#Syncfusion_WinForms_Controls_Styles_TitleBarStyleInfo_IconVerticalAlignment) and [Style.TitleBar.IconHorizontalAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo.html#Syncfusion_WinForms_Controls_Styles_TitleBarStyleInfo_IconHorizontalAlignment) properties.
+The WinForms Form icon can be aligned vertically and horizontally by using the [Style.TitleBar.IconVerticalAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo.html#Syncfusion_WinForms_Controls_Styles_TitleBarStyleInfo_IconVerticalAlignment) and [Style.TitleBar.IconHorizontalAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo.html#Syncfusion_WinForms_Controls_Styles_TitleBarStyleInfo_IconHorizontalAlignment) properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -45,7 +45,7 @@ Me.Style.TitleBar.IconHorizontalAlignment = HorizontalAlignment.Right
 
 ![WindowsForms Form icon is alignment](formcustomization_images/windowsforms-form-icon-alignment.png)
 
-## Form border
+## WinForms Form border
 
 Appearance of the border can be customized by using the [Style.Border](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.FormVisualStyle.html#Syncfusion_WinForms_Controls_Styles_FormVisualStyle_Border) and [Style.InactiveBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.FormVisualStyle.html#Syncfusion_WinForms_Controls_Styles_FormVisualStyle_InactiveBorder) properties.
 
@@ -70,7 +70,7 @@ Me.Style.InactiveBorder = New Pen(Color.LightGray, 2)
 
 ## Shadow effect
 
-Shadow effect of the form can be customized by using the [Style.ShadowOpacity](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.FormVisualStyle.html#Syncfusion_WinForms_Controls_Styles_FormVisualStyle_ShadowOpacity) and [Style.InactiveShadowOpacity](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.FormVisualStyle.html#Syncfusion_WinForms_Controls_Styles_FormVisualStyle_InactiveShadowOpacity) properties.
+Shadow effect of the WinForms Form can be customized by using the [Style.ShadowOpacity](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.FormVisualStyle.html#Syncfusion_WinForms_Controls_Styles_FormVisualStyle_ShadowOpacity) and [Style.InactiveShadowOpacity](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.FormVisualStyle.html#Syncfusion_WinForms_Controls_Styles_FormVisualStyle_InactiveShadowOpacity) properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -95,9 +95,9 @@ N> Shadow can be disabled by setting the `ShadowOpacity` property as zero.
 
 ## Rounded corner
 
-Rounded corners for `SfForm` can be enabled by using the [AllowRoundedCorners](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfForm.html#Syncfusion_WinForms_Controls_SfForm_AllowRoundedCorners) property. Rounded corners are not supported in OS versions lower than Windows 11. Enabling `AllowRoundedCorners` property will have no effect on those operating systems. 
+Rounded corners for `WinForms Form` can be enabled by using the [AllowRoundedCorners](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfForm.html#Syncfusion_WinForms_Controls_SfForm_AllowRoundedCorners) property. Rounded corners are not supported in OS versions lower than Windows 11. Enabling `AllowRoundedCorners` property will have no effect on those operating systems. 
 
-N> When the rounded corners are enabled, the border and shadow of the Form are drawn by the operating system.
+N> When the rounded corners are enabled, the border and shadow of the WinForms Form are drawn by the operating system.
 
 {% tabs %}
 
