@@ -8,17 +8,17 @@ documentation: ug
 ---
 
 # TabBarSplitterControl in Windows Forms Grid Control
-User can create TabBar Pages with dynamic splitters by using [TabBarSplitterControl](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarSplitterControl.html). When used with a GridControl, it gives a workbook like appearance. User can add more than one [TabBarPage](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarPage.html) and GridControl can be added in each page. This control is helpful when GridControl with formula cells and [Cross-Reference](http://help.syncfusion.com/windowsforms/grid/formula-support#named-ranges) sheets are used. The TabBarSplitterControl comes under the library [Syncfusion.Shared.Base](http://help.syncfusion.com/cr/windowsforms) assembly.
+User can create TabBar Pages with dynamic splitters by using [WinForms Tab Bar Splitter Control](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarSplitterControl.html). When used with a GridControl, it gives a workbook like appearance. User can add more than one [TabBarPage](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarPage.html) and GridControl can be added in each page. This control is helpful when GridControl with formula cells and [Cross-Reference](http://help.syncfusion.com/windowsforms/grid/formula-support#named-ranges) sheets are used. It comes under the library [Syncfusion.Shared.Base](http://help.syncfusion.com/cr/windowsforms) assembly.
 
 ## Adding via Designer
 
-The following steps will explain on how to integrate a GridControl with the TabBarSplitterControl.
+The following steps will explain on how to integrate a GridControl with the WinForms Tab Bar Splitter Control.
 
-1.Drag and Drop the TabBarSplitterControl from the toolbox.
+1.Drag and Drop the WinForms Tab Bar Splitter Control from the toolbox.
 
 ![TabBarSplitterControl_img1](TabBarSplitterControl_images/TabBarSplitterControl_img1.png)
 
-2.Drag the GridControl from toolbox and drop it on the TabBarSplitterControl.
+2.Drag the GridControl from toolbox and drop it on the WinForms Tab Bar Splitter Control.
 
 ![TabBarSplitterControl_img2](TabBarSplitterControl_images/TabBarSplitterControl_img2.png)
 
@@ -36,7 +36,7 @@ It can also be added or removed through the **TabBarPageCollectionEditor** which
 
 ## Adding via Code
 
-Create a new TabBarSplitterControl and add the required number of [TabBarPage](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarPage.html) in this control. Add the existing GridControl in the created `TabBarPage`. Refer the below code on how to initialize a TabBarSplitterControl and how to add `TabBarPage` with GridControl in it.
+Create a new `TabBarSplitterControl` and add the required number of [TabBarPage](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarPage.html) in this control. Add the existing GridControl in the created `TabBarPage`. Refer the below code on how to initialize the control and how to add `TabBarPage` with GridControl in it.
 
 {% tabs %}
 {% highlight c# %}
@@ -81,11 +81,11 @@ tabBarSplitterControl1.Controls.Add(Me.Spent)
 
 ![TabBarSplitterControl_img6](TabBarSplitterControl_images/TabBarSplitterControl_img6.png)
 
-N> To know about TabBarSplitterControl properties and methods, please check the link over [here](http://help.syncfusion.com/windowsforms/splitter/overview).
+N> To know about WinForms Tab Bar Splitter Control properties and methods, please check the link over [here](http://help.syncfusion.com/windowsforms/splitter/overview).
 
 ## Visual Styles
 
-TabBarSplitterControl gives support for adding visual styles similar to that of in GridControl. Visual style can be changed by using the [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarSplitterControl.html#Syncfusion_Windows_Forms_TabBarSplitterControl_Style) property. 
+WinForms Tab Bar Splitter Control gives support for adding visual styles similar to that of in GridControl. Visual style can be changed by using the [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarSplitterControl.html#Syncfusion_Windows_Forms_TabBarSplitterControl_Style) property. 
 
 {% tabs %}
 {% highlight c# %}
@@ -141,7 +141,7 @@ tabBarSplitterControl1.Style = Syncfusion.Windows.Forms.TabBarSplitterStyle.Metr
 
 ![TabBarSplitterControl_img9](TabBarSplitterControl_images/TabBarSplitterControl_img9.png)
 
-For setting the Office 2013 styles theme, make sure to set the [EnableOffice2013Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarSplitterControl.html#Syncfusion_Windows_Forms_TabBarSplitterControl_EnableOffice2013Style) property to `true` and set the TabBarSplitterControl `Style` as `Metro`.
+For setting the Office 2013 styles theme, make sure to set the [EnableOffice2013Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarSplitterControl.html#Syncfusion_Windows_Forms_TabBarSplitterControl_EnableOffice2013Style) property to `true` and set the WinForms Tab Bar Splitter Control `Style` as `Metro`.
 
 {% tabs %}
 {% highlight c# %}
@@ -275,7 +275,7 @@ Me.tabBarSplitterControl1.Style = Syncfusion.Windows.Forms.TabBarSplitterStyle.O
 
 ## Custom Styles
 
-It is possible to apply custom color to the TabBarSplitterControl by setting `Office2007ColorScheme` property as `Managed`. The desired color can be chosen by using the [ApplyManagedColors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Colors.html#Syncfusion_Windows_Forms_Office2007Colors_ApplyManagedColors_System_Windows_Forms_Form_System_Drawing_Color_) method.
+It is possible to apply custom color to the WinForms Tab Bar Splitter Control by setting `Office2007ColorScheme` property as `Managed`. The desired color can be chosen by using the [ApplyManagedColors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Colors.html#Syncfusion_Windows_Forms_Office2007Colors_ApplyManagedColors_System_Windows_Forms_Form_System_Drawing_Color_) method.
 
 {% tabs %}
 {% highlight c# %}

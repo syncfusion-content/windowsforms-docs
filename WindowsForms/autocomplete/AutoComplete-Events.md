@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Events in Windows Forms AutoComplete | Syncfusion®
 description: Events in AutoComplete provide notifications for item selection, matching, dropdown interactions, and customization workflows.
@@ -9,12 +9,12 @@ documentation: ug
 
 # Events in Windows Forms AutoComplete
 
-The events of the AutoComplete component are listed below.
+The events of the WinForms Autocomplete component are listed below.
 
 <table>
 <tr>
 <th>
-AutoComplete events</th><th>
+WinForms Autocomplete events</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -27,19 +27,19 @@ Handles to customize the auto completion.</td></tr>
 <tr>
 <td>
 AutoCompleteItemBrowsed</td><td>
-Handles when you select an item from the list of possible matches when the AutoComplete is set to AutoSuggest.</td></tr>
+Handles when you select an item from the list of possible matches when the AutoSuggest mode is enabled.</td></tr>
 <tr>
 <td>
 AutoCompleteItemSelected Event</td><td>
-Occurs when a new item is selected when the AutoComplete mode is set to AutoSuggest.</td></tr>
+Occurs when a new item is selected when the mode is set to AutoSuggest.</td></tr>
 <tr>
 <td>
 DropDownClosed</td><td>
-Occurs when the AutoComplete dropdown is closed.</td></tr>
+Occurs when the dropdown is closed.</td></tr>
 <tr>
 <td>
 DropDownDisplayed</td><td>
-Occurs when the AutoComplete dropdown is displayed.</td></tr>
+Occurs when the dropdown is displayed.</td></tr>
 <tr>
 <td>
 MatchItem</td><td>
@@ -47,16 +47,16 @@ Provides a custom matching routine for the current value in the editor control.<
 <tr>
 <td>
 PreMatchItem</td><td>
-Handles before the AutoComplete component performs a matching operation for the current text content of the active editor control.</td></tr>
+Handles before a matching operation is performed on the current text content of the active editor control.</td></tr>
 <tr>
 <td> 
 TargetChanging</td><td>
-Occurs when the editor control of the AutoComplete component changes.</td></tr>
+Occurs when the editor control changes.</td></tr>
 </table>
 
 ## AutoCompleteItemSelected event
 
-This event is raised while a new item is selected when the AutoComplete mode is set to `AutoSuggest`. The event handler receives an argument of type `AutoCompleteItemEventArgs`.
+This event is raised while a new item is selected when the WinForms Autocomplete mode is set to `AutoSuggest`. The event handler receives an argument of type `AutoCompleteItemEventArgs`.
 
 
 ## BeforeAddItem Event
@@ -114,7 +114,7 @@ End Sub
 
 ## AutoCompleteItemBrowsed event
 
-This event is raised when selecting an item from the list of possible matches when the AutoComplete is set to `AutoSuggest`. The event handler receives an argument of type `AutoCompleteItemEventArgs`. The event properties associated with the `AutoCompleteItemEventArgs` are as follows.
+This event is raised when selecting an item from the list of possible matches when the WinForms Autocomplete is set to `AutoSuggest`. The event handler receives an argument of type `AutoCompleteItemEventArgs`. The event properties associated with the `AutoCompleteItemEventArgs` are as follows.
 
 <table>
 <tr>
@@ -132,14 +132,14 @@ Specifies whether `SelectedValue` should be applied to the editor control. This 
 <tr>
 <td>
 ItemArray</td><td>
-Returns AutoComplete item as an object array.</td></tr>
+Returns the autocomplete items as an object array.</td></tr>
 <tr>
 <td>
 MatchColumnIndex</td><td>
 Returns the index of the item that was used for matching.</td></tr>
 </table>
 
-When you select an item from the list of possible matches when AutoComplete is set to AutoSuggest, you can display the selected URL in a separate TextBox. The following code sample demonstrates this.
+When you select an item from the list of possible matches in AutoSuggest mode, you can display the selected URL in a separate TextBox. The following code sample demonstrates this.
 
 {% tabs %}
 

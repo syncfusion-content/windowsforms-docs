@@ -19,7 +19,7 @@ Find more details about installing the nuget packages in a Windows Forms applica
 
 ## Creating the project
 
-Create a new Windows Forms project in Visual Studio to display the GridBagLayout with basic functionalities.
+Create a new Windows Forms project in Visual Studio to display the WinForms GridBagLayout with basic functionalities.
 
 ## Through designer
 
