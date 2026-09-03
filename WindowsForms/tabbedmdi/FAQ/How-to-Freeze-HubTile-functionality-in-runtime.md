@@ -7,7 +7,7 @@ control: TabbedMDIPackage
 documentation: ug
 ---
 
-# How to Freeze HubTile Functionality in TabbedMDI
+# How to Freeze HubTile Functionality in WinForms TabbedMDI
 
 You can achieve it by setting HubTileFreeze property to `true`.
 
