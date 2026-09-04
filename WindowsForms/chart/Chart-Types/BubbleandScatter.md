@@ -200,6 +200,23 @@ chartControl.Series.Add(chartSeries)
 
 ![Scatter Chart in Windows Forms](../Chart-Types_images/windowsforms-scatter-chart.png)
 
+### Enable scatter shape
+
+The [EnableScatterShape](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_EnableScatterShape) property controls whether shapes are displayed for the data points in a scatter series. The default value is `true`.
+
+The following code hides the shapes for the scatter series.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].EnableScatterShape = false;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).EnableScatterShape = False
+{% endhighlight %}
+{% endtabs %}
+
+![Scatter Chart in Windows Forms](../Chart-Types_images/windowsforms-scatter-shape.png)
+
 ### Scatter connection type
 
 The [ScatterConnectType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ScatterConnectType) property specifies how the data points in a scatter series are connected. The default value is [None](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ScatterConnectType.html).
