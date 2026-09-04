@@ -50,7 +50,7 @@ MessageBoxAdv.Show(Me,"Save changes?", "File Modified", MessageBoxButtons.YesNo,
 
 ### Office2007
 
-Office2007 Style MessageBox is available in Tools Windows. You can replace the .NET MessageBox with new MessageBox that supports standard color schemes and custom color schemes in Office 2007 style, for consistent look and feel. Custom Icons support is also included in MessageBox. To display the Message Box, call MessageBox.Show method.
+Office2007 Style MessageBox is available in Tools Windows. You can replace the .NET MessageBox with new MessageBox that supports standard color schemes and custom color schemes in Office 2007 style, for consistent look and feel. Custom Icons support is also included in MessageBox. To display the Message Box, call MessageBoxAdv.Show method.
 
 This option helps to set the following various color schemes:
 

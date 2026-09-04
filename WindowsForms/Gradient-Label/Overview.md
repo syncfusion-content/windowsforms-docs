@@ -11,9 +11,9 @@ documentation: ug
 
 The Gradient Label class provides a way to create fancy and appealing labels in your forms.
 
-The Gradient Label class is fully compatible with the Windows Forms label that it derives from and gets most of its uniqueness from the BrushInfo class that is used for the Gradient Label.BackgroundColor property.
+The Gradient Label class is fully compatible with the Windows Forms label that it derives from and gets most of its uniqueness from the BrushInfo class that is used for the GradientLabel.BackgroundColor property.
 
-The Gradient Label.Border3DStyle is another property that can specify the look and feel of the Gradient Label.
+The GradientLabel.Border3DStyle is another property that can specify the look and feel of the Gradient Label.
 
 ![Overview of the Syncfusion Gradient Label](GradientLabel-Images/Overview_img598.jpeg)
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filtering in Windows FormsListView | Syncfusion®
+title: Filtering in Windows Forms ListView | Syncfusion®
 description: Filtering in Windows Forms ListView enables users to display items based on specific criteria, helping organize, search, and manage data efficiently.
 platform: windowsforms
 control: ListView
