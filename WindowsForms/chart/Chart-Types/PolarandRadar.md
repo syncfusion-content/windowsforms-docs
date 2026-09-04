@@ -88,38 +88,6 @@ chartControl.PrimaryXAxis.Range = New MinMaxInfo(0, 360, 45)
 
 ![Polar Chart in Windows Forms](../Chart-Types_images/windowsforms-polar-chart.png)
 
-### Customization options
-
-The following chart series properties are used as customization options for polar chart:
-
-- [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border)
-- [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
-- [DrawSeriesNameInDepth](https://help.syncfusion.com/windowsforms/chart/chart-series#drawseriesnameindepth)
-- [ElementBorders](https://help.syncfusion.com/windowsforms/chart/chart-series#elementborders)
-- [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip)
-- [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font)
-- [ImageIndex](https://help.syncfusion.com/windowsforms/chart/chart-series#imageindex)
-- [Images](https://help.syncfusion.com/windowsforms/chart/chart-series#images)
-- [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior)
-- [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem)
-- [LightAngle](https://help.syncfusion.com/windowsforms/chart/chart-series#lightangle)
-- [LightColor](https://help.syncfusion.com/windowsforms/chart/chart-series#lightcolor)
-- [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name)
-- [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat)
-- [RadarType](https://help.syncfusion.com/windowsforms/chart/chart-series#radartype)
-- [Rotate](https://help.syncfusion.com/windowsforms/chart/chart-series#rotate)
-- [ShadingMode](https://help.syncfusion.com/windowsforms/chart/chart-series#shadingmode)
-- [ShadowInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowinterior)
-- [ShadowOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowoffset)
-- [SmartLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#smartlabels)
-- [Summary](https://help.syncfusion.com/windowsforms/chart/chart-series#summary)
-- [Text](https://help.syncfusion.com/windowsforms/chart/chart-series#text-series)
-- [TextColor](https://help.syncfusion.com/windowsforms/chart/chart-series#textcolor)
-- [TextFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#textformat)
-- [TextOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#textoffset)
-- [TextOrientation](https://help.syncfusion.com/windowsforms/chart/chart-series#textorientation)
-- [Visible](https://help.syncfusion.com/windowsforms/chart/chart-series#visible)
-
 ## Radar chart
 
 Radar chart displays data using radial axes that extend from a central point. Each category is plotted along its own axis, and the data points are connected to form a shape. 
@@ -275,12 +243,15 @@ End Sub
 
 ### Type
 
-The [Type](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartRadarConfigItem_Type) property specifies the type of radar chart to be rendered, with [Area](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarDrawType.html#Syncfusion_Windows_Forms_Chart_ChartRadarDrawType_Area) used as the default value.
+The [Type](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartRadarConfigItem_Type) property specifies how data points are rendered in Polar and Radar charts. The default value is `Area`.
 
-This property supports the following values:
+The supported values are defined in the [ChartRadarDrawType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarDrawType.html) enumeration:
 
-- [Area](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarDrawType.html#Syncfusion_Windows_Forms_Chart_ChartRadarDrawType_Area): Renders the radar chart as a filled area.
-- [Line](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarDrawType.html#Syncfusion_Windows_Forms_Chart_ChartRadarDrawType_Line): Renders the radar chart using connected lines only.
+- [Area](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarDrawType.html#Syncfusion_Windows_Forms_Chart_ChartRadarDrawType_Area): Connects the data points and fills the enclosed region.
+- [Line](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarDrawType.html#Syncfusion_Windows_Forms_Chart_ChartRadarDrawType_Line): Connects the data points without filling the enclosed region.
+- [Symbol](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarDrawType.html#Syncfusion_Windows_Forms_Chart_ChartRadarDrawType_Symbol): Displays a symbol at each data point without connecting the points.
+
+N> The `Type` property applies to both `Polar` and `Radar` charts.
 
 The following code renders the radar chart as a line chart.
 
@@ -318,37 +289,3 @@ chartControl.RadarStyle = ChartRadarAxisStyle.Circle
 {% endtabs %}
 
 ![Radar Axis Style in Windows Forms](../Chart-Types_images/windowsforms-radar-chart-axis-stye.png)
-
-### Customization options
-
-The following chart series properties are used as customization options for radar chart:
-
-- [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border)
-- [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
-- [DrawSeriesNameInDepth](https://help.syncfusion.com/windowsforms/chart/chart-series#drawseriesnameindepth)
-- [ElementBorders](https://help.syncfusion.com/windowsforms/chart/chart-series#elementborders)
-- [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip)
-- [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font)
-- [ImageIndex](https://help.syncfusion.com/windowsforms/chart/chart-series#imageindex)
-- [Images](https://help.syncfusion.com/windowsforms/chart/chart-series#images)
-- [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior)
-- [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem)
-- [LightAngle](https://help.syncfusion.com/windowsforms/chart/chart-series#lightangle)
-- [LightColor](https://help.syncfusion.com/windowsforms/chart/chart-series#lightcolor)
-- [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name)
-- [PhongAlpha](https://help.syncfusion.com/windowsforms/chart/chart-series#phongalpha)
-- [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat)
-- [RadarStyle](https://help.syncfusion.com/windowsforms/chart/chart-series#radarstyle)
-- [RadarType](https://help.syncfusion.com/windowsforms/chart/chart-series#radartype)
-- [Rotate](https://help.syncfusion.com/windowsforms/chart/chart-series#rotate)
-- [ShadingMode](https://help.syncfusion.com/windowsforms/chart/chart-series#shadingmode)
-- [ShadowInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowinterior)
-- [ShadowOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowoffset)
-- [SmartLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#smartlabels)
-- [Summary](https://help.syncfusion.com/windowsforms/chart/chart-series#summary)
-- [Text](https://help.syncfusion.com/windowsforms/chart/chart-series#text-series)
-- [TextColor](https://help.syncfusion.com/windowsforms/chart/chart-series#textcolor)
-- [TextFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#textformat)
-- [TextOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#textoffset)
-- [TextOrientation](https://help.syncfusion.com/windowsforms/chart/chart-series#textorientation)
-- [Visible](https://help.syncfusion.com/windowsforms/chart/chart-series#visible)
