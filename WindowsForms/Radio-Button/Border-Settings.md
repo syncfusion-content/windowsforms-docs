@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Border Settings in Windows Forms RadioButtonAdv | Syncfusion®
-description: Border settings in Windows Forms RadioButtonAdv enable customizing 2D and 3D border styles, border colors, and mouse-over border appearance.
+title: Border Settings in Windows Forms Radio Button | Syncfusion®
+description: Border settings in Windows Forms Radio Button enable customizing 2D and 3D border styles, border colors, and mouse-over border appearance.
 platform: WindowsForms
-control: RadioButtonAdv
+control: Radio Button
 documentation: ug
 ---
 
-# Border Settings in Windows Forms RadioButtonAdv
+# Border Settings in Windows Forms Radio Button
 
-Color and Styles can be applied to the border of the RadioButtonAdv as discussed below.
+Color and Styles can be applied to the border of the Radio Button as discussed below.
 
 <table>
 <tr>
 <th>
-RadioButtonAdv Properties</th><th>
+Radio Button Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -65,7 +65,7 @@ Me.radioButtonAdv1.HotBorderColor = System.Drawing.Color.DarkOrange
 {% endhighlight %}
 {% endtabs %}
 
- ![Windows forms RadioButtonAdv changing the border color](Overview_images/RadioButtonAdv_border.jpeg) 
+ ![Windows forms Radio Button changing the border color](Overview_images/RadioButtonAdv_border.jpeg) 
 
 
- ![Windows forms RadioButtonAdv changing the border color during mouse hover on control](Overview_images/RadioButtonAdv_changeborder.jpeg) 
+ ![Windows forms Radio Button changing the border color during mouse hover on control](Overview_images/RadioButtonAdv_changeborder.jpeg) 

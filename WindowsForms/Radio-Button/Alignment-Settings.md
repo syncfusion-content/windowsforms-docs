@@ -1,25 +1,25 @@
 ---
 layout: post
-title: Alignment Settings in Windows Forms RadioButtonAdv | Syncfusion®
-description: Alignment settings in Windows Forms RadioButtonAdv enable customizing the alignment of text and radio button elements to achieve the desired layout.
+title: Alignment Settings in Windows Forms Radio Button | Syncfusion®
+description: Alignment settings in Windows Forms Radio Button enable customizing the alignment of text and radio button elements to achieve the desired layout.
 platform: WindowsForms
-control: RadioButtonAdv
+control: Radio Button
 documentation: ug
 ---
 
-# Alignment Settings in Windows Forms RadioButtonAdv
+# Alignment Settings in Windows Forms Radio Button
 
-This section discusses the alignment settings of the RadioButtonAdv.
+This section discusses the alignment settings of the Radio Button.
 
 ## Text alignment
 
-Text in the RadioButtonAdv can be aligned to the desired location as given below.
+Text in the Radio Button can be aligned to the desired location as given below.
 
 
 <table>
 <tr>
 <th>
-RadioButtonAdv Properties</th><th>
+Radio Button Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -41,7 +41,7 @@ Me.radioButtonAdv1.TextContentAlignment = System.Drawing.ContentAlignment.Middle
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms RadioButtonAdv changed text alignment](Overview_images/RadioButtonAdv_textalign.jpeg) 
+![Windows forms Radio Button changed text alignment](Overview_images/RadioButtonAdv_textalign.jpeg) 
 
 
 ## RadioButton alignment
@@ -51,7 +51,7 @@ The RadioButton itself can be aligned to any desired location that can be chosen
 <table>
 <tr>
 <th>
-RadioButtonAdv Properties</th><th>
+Radio Button Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -73,4 +73,4 @@ Me.radioButtonAdv1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms RadioButtonAdv changed check aligned](Overview_images/RadioButtonAdv_checkalign.jpeg)
+![Windows forms Radio Button changed check aligned](Overview_images/RadioButtonAdv_checkalign.jpeg)

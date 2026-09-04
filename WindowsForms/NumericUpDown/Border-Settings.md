@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Border Settings in Windows Forms NumericUpDownExt | Syncfusion®
-description: Border settings in Windows Forms NumericUpDownExt enable customizing border styles, colors, sides, and 3D border appearances to enhance control visuals.
+title: Border Settings in Windows Forms NumericUpdown | Syncfusion®
+description: Border settings in Windows Forms NumericUpdown enable customizing border styles, colors, sides, and 3D border appearances to enhance control visuals.
 platform: WindowsForms
-control: NumericUpDownExt
+control: NumericUpdown
 documentation: ug
 ---
 
-# Border Settings in Windows Forms NumericUpDownExt
+# Border Settings in Windows Forms NumericUpdown
 
-This section discusses the Border Settings of the NumericUpDownExt control.
+This section discusses the Border Settings of the NumericUpdown control.
 
-Color and Styles can be applied to the border of the NumericUpDownExt control as discussed below.
+Color and Styles can be applied to the border of the NumericUpdown control as discussed below.
 
 <table>
 <tr>
 <th>
-NumericUpDownExt Properties</th><th>
+NumericUpdown Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -58,12 +58,12 @@ Me.numericUpDownExt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 ![Border-Settings_img1](Border-Settings_images/Border-Settings_img1.png)
 
-We can display a themed border around the NumericUpDownExt control. This can be done using the property given below.
+We can display a themed border around the NumericUpdown control. This can be done using the property given below.
 
 <table>
 <tr>
 <th>
-NumericUpDownExt Property</th><th>
+NumericUpdown Property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -91,7 +91,7 @@ Me.numericUpDownExt1.ThemesEnabled = True
 
 ![Border-Settings_img3](Border-Settings_images/Border-Settings_img3.png)
 
-A sample which demonstrates the Border Settings of NumericUpDownExt control is available in the below sample installation path.
+A sample which demonstrates the Border Settings of NumericUpdown control is available in the below sample installation path.
 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 

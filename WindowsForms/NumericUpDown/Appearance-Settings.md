@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Appearance Settings in Windows Forms NumericUpDownExt | Syncfusion®
-description: Appearance settings in Windows Forms NumericUpDownExt enable customizing colors, borders, fonts, themes, and visual styles to enhance the control appearance.
+title: Appearance Settings in Windows Forms NumericUpdown | Syncfusion®
+description: Appearance settings in Windows Forms NumericUpdown enable customizing colors, borders, fonts, themes, and visual styles to enhance the control appearance.
 
 platform: WindowsForms
-control: NumericUpDownExt
+control: NumericUpdown
 documentation: ug
 ---
 
-# Appearance Settings in Windows Forms NumericUpDownExt
+# Appearance Settings in Windows Forms NumericUpdown
 
 ## Background settings
 
-The Background settings of the NumericUpDownExt control are discussed below.
+The Background settings of the NumericUpdown control are discussed below.
 
 ### Background color
 
@@ -21,7 +21,7 @@ The background color of the control can be set using the properties given below.
 <table>
 <tr>
 <th>
-NumericUpDownExt Property</th><th>
+NumericUpdown Property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -47,7 +47,7 @@ Me.numericUpDownExt1.BackColor = System.Drawing.Color.Aquamarine
 
 ## Foreground settings
 
-The foreground settings of the NumericUpDownExt control are discussed below.
+The foreground settings of the NumericUpdown control are discussed below.
 
 ### Foreground color
 
@@ -56,7 +56,7 @@ The foreground color of the control can be set using the properties given below.
 <table>
 <tr>
 <th>
-NumericUpDownExt Property</th><th>
+NumericUpdown Property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -82,7 +82,7 @@ Me.numericUpDownExt1.ForeColor = System.Drawing.Color.DodgerBlue
 
 ### Applying foreground color to negative values
 
-It is a good behavior in a NumericUpDownExt control to indicate negative values using a separate color. The IntegerTextBox and DoubleTextBox controls also exhibit the same behavior.
+It is a good behavior in a NumericUpdown control to indicate negative values using a separate color. The IntegerTextBox and DoubleTextBox controls also exhibit the same behavior.
 
 ![Appearance-Settings_img3](Appearance-Settings_images/Appearance-Settings_img3.png)
 

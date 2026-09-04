@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection in Windows Forms SfComboBox | Syncfusion®
-description: Selection in Windows Forms SfComboBox enables single and multiple item selection, selected value retrieval, delimiter customization, and selection management.
+title: Selection in Windows Forms ComboBox | Syncfusion®
+description: Selection in Windows Forms ComboBox enables single and multiple item selection, selected value retrieval, delimiter customization, and selection management.
 platform: windowsforms
-control: SfComboBox
+control: ComboBox
 documentation: ug
 ---
 
-# Selection in Windows Forms SfComboBox
+# Selection in Windows Forms ComboBox
 
 The [Windows Forms ComboBox](https://www.syncfusion.com/winforms-ui-controls/combobox) (SfComboBox) allows you to select single or multiple items in the drop-down list. The selection mode can be set by using the [ComboBoxMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_ComboBoxMode) property. 
 
@@ -27,7 +27,7 @@ Index of the selected item can be retrieved by using the [SelectedIndex](https:/
 Value of the selected item can be retrieved by using the [SelectedValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_SelectedValue) property. It returns the property value bind to the [ValueMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_ValueMember) property. If the `ValueMember` is not initialized, it will return the value of the property bind to [DisplayMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_DisplayMember).
 ### Getting the selected item of underlying data object
 
-The selected item of the SfComboBox can be retrieved by using the [SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_SelectedItem) property.
+The selected item of the ComboBox can be retrieved by using the [SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_SelectedItem) property.
 
 ### Events
 
@@ -70,7 +70,7 @@ End Sub
 
 ## Multi-selection
 
-The SfComboBox allows you to select multiple values from the drop-down list. The [WinForms multi-select combo box](https://www.syncfusion.com/winforms-ui-controls/combobox/multiselect-combobox) mode can be enabled by setting the [ComboBoxMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_ComboBoxMode) property as `MultiSelection`.
+The ComboBox allows you to select multiple values from the drop-down list. The [WinForms multi-select combo box](https://www.syncfusion.com/winforms-ui-controls/combobox/multiselect-combobox) mode can be enabled by setting the [ComboBoxMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_ComboBoxMode) property as `MultiSelection`.
 
 {% tabs %}
 {% highlight c# %}
@@ -85,7 +85,7 @@ sfComboBox1.ComboBoxMode = ComboBoxMode.MultiSelection
 
 ### Select all
 
-The SfComboBox support to choose all items in the drop-down list for multiselect combo box by setting the [AllowSelectAll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_AllowSelectAll) property to `true`.
+The ComboBox support to choose all items in the drop-down list for multiselect combo box by setting the [AllowSelectAll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_AllowSelectAll) property to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -100,7 +100,7 @@ sfComboBox1.AllowSelectAll = True
 
 ### Changing the delimiter character to separate selected items
 
-The SfComboBox supports various delimiter characters to separate multiple selected items in the multi selected combo box. The delimiter character can be set by using the [DelimiterChar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_DelimiterChar) property. The default delimiter character is “,”.
+The ComboBox supports various delimiter characters to separate multiple selected items in the multi selected combo box. The delimiter character can be set by using the [DelimiterChar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_DelimiterChar) property. The default delimiter character is “,”.
 
 {% tabs %}
 {% highlight c# %}
@@ -286,7 +286,7 @@ sfComboBox1.ShowClearButton = true;
 
 {% endtabs %}
 
-![WinForms SfComboBox Clear selection](Selection_images/WinForms-SfComboBox-Clear-selection.png)
+![WinForms ComboBox Clear selection](Selection_images/WinForms-SfComboBox-Clear-selection.png)
 
 ### Clear button appearance
 
@@ -307,4 +307,4 @@ sfComboBox1.Style.ClearButtonStyle.HoverForeColor = Color.Yellow;
 
 {% endtabs %}
 
-![WinForms SfComboBox ClearButton style](Selection_images/WinForms-SfComboBox-ClearButton-style.png)
+![WinForms ComboBox ClearButton style](Selection_images/WinForms-SfComboBox-ClearButton-style.png)

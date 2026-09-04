@@ -1,36 +1,36 @@
 ---
 layout: post
-title: Background Settings in Windows Forms RadioButtonAdv | Syncfusion®
-description: Background settings in Windows Forms RadioButtonAdv enable applying gradient backgrounds and configuring start and end colors for customized control appearance.
+title: Background Settings in Windows Forms Radio Button | Syncfusion®
+description: Background settings in Windows Forms Radio Button enable applying gradient backgrounds and configuring start and end colors for customized control appearance.
 platform: WindowsForms
-control: RadioButtonAdv
+control: Radio Button
 documentation: ug
 ---
 
-# Background Settings in Windows Forms RadioButtonAdv
+# Background Settings in Windows Forms Radio Button
 
-The background settings of the RadioButtonAdv are discussed below.
+The background settings of the Radio Button are discussed below.
 
-The RadioButtonAdv can be provided with a gradient background using the properties given below.
+The Radio Button can be provided with a gradient background using the properties given below.
 
 
 <table>
 <tr>
 <th>
-RadioButtonAdv Properties</th><th>
+Radio Button Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
 BackgroundStyle</td><td>
-Sets the background style of the RadioButtonAdv.The options included are as follows.{{ '_HorizontalGradient,_' | markdownify }} {{ '_VerticalGradient and_' | markdownify }} {{ '_Default._' | markdownify }}</td></tr>
+Sets the background style of the Radio Button.The options included are as follows.{{ '_HorizontalGradient,_' | markdownify }} {{ '_VerticalGradient and_' | markdownify }} {{ '_Default._' | markdownify }}</td></tr>
 <tr>
 <td>
 GradientStart</td><td>
-Sets the start color of the gradient of the background of the RadioButtonAdv.</td></tr>
+Sets the start color of the gradient of the background of the Radio Button.</td></tr>
 <tr>
 <td>
 GradientEnd</td><td>
-Sets the end color of the gradient of the background of the RadioButtonAdv.</td></tr>
+Sets the end color of the gradient of the background of the Radio Button.</td></tr>
 </table>
 
 {% tabs %}
@@ -51,7 +51,7 @@ Me.radioButtonAdv1.GradientEnd = System.Drawing.Color.DarkSlateBlue
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms RadioButtonAdv gradient style applied in background](Overview_images/RadioButtonAdv_backgroundstyle.jpeg)
+![Windows forms Radio Button gradient style applied in background](Overview_images/RadioButtonAdv_backgroundstyle.jpeg)
 
 
-N> Gradient background cannot be applied to the RadioButtonAdv when its BackgroundStyle property is set to 'Default'. Also, the background image cannot be displayed with gradient settings.
+N> Gradient background cannot be applied to the Radio Button when its BackgroundStyle property is set to 'Default'. Also, the background image cannot be displayed with gradient settings.

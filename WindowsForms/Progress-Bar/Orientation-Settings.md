@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Orientation Settings in Windows Forms ProgressBarAdv | Syncfusion®
-description: Orientation settings in Windows Forms ProgressBarAdv allow progress indicators to be displayed horizontally or vertically.
+title: Orientation Settings in Windows Forms Progress Bar | Syncfusion®
+description: Orientation settings in Windows Forms Progress Bar allow progress indicators to be displayed horizontally or vertically.
 platform: WindowsForms
-control: ProgressBarAdv
+control: Progress Bar
 documentation: ug
 ---
 
-# Orientation Settings in Windows Forms ProgressBarAdv
+# Orientation Settings in Windows Forms Progress Bar
 
 The direction of display of the [Windows Forms Progress Bar](https://www.syncfusion.com/winforms-ui-controls/progress-bar) (ProgressBarAdv) control can be changed using the property given below.
 
@@ -16,7 +16,7 @@ Property table
 <table>
 <tr>
 <th>
-ProgressBarAdv property</th><th>
+Progress Bar property</th><th>
 Description</th></tr>
 <tr>
 <td>
