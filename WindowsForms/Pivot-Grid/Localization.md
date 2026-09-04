@@ -11,16 +11,16 @@ documentation: ug
 
 Localization is the process of making application multilingual by formatting the content according to the cultures. This involves configuring the application for a specific language. Culture is the combination of language and location. For example, "en-US" is the culture for English language spoken in United States; en-GB is the culture for English language spoken in Great Britain.
 
-Syncfusion<sup>®</sup> components have their own neutral resources and these resources can be localized as per the customer requirement. Pivot grid control can be localized in any of the following ways.
+Syncfusion<sup>®</sup> components have their own neutral resources and these resources can be localized as per the customer requirement. Pivot Grid control can be localized in any of the following ways.
 
 * Using ILocalizationProvider interface
 * Using satellite assemblies
 
 ## Using ILocalizationProvider interface
 
-To localize the pivot grid control, create a class by inheriting [ILocalizationProvider](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ILocalizationProvider.html) interface. The [GetLocalizedString](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ILocalizationProvider.html#Syncfusion_Windows_Forms_ILocalizationProvider_GetLocalizedString_System_Globalization_CultureInfo_System_String_System_Object_) method of this interface need to be implemented to get the equivalent localized strings. The [PivotResourceIdentifiers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotResourceIdentifiers.html) class contains the resource identifiers specific to the pivot grid control.
+To localize the Pivot Grid control, create a class by inheriting [ILocalizationProvider](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ILocalizationProvider.html) interface. The [GetLocalizedString](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ILocalizationProvider.html#Syncfusion_Windows_Forms_ILocalizationProvider_GetLocalizedString_System_Globalization_CultureInfo_System_String_System_Object_) method of this interface need to be implemented to get the equivalent localized strings. The [PivotResourceIdentifiers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotResourceIdentifiers.html) class contains the resource identifiers specific to the control.
 
-Refer to the below code sample to localize the pivot grid control using ILocalizationProvider interface.
+Refer to the below code sample to localize the Pivot Grid control using ILocalizationProvider interface.
 
 {% tabs %}
 
@@ -384,7 +384,7 @@ Resgen SR.txt SR.resources
 
 Refer to the following steps to create a satellite assembly.
 
-1.Open the created resource file (SR.resources) using the resource editor and add the equivalent strings of pivot grid control's string resources for the required culture.
+1.Open the created resource file (SR.resources) using the resource editor and add the equivalent strings of Pivot Grid control's string resources for the required culture.
 
 ![Localization_img2](Localization_images/Localization_img2.png)
 

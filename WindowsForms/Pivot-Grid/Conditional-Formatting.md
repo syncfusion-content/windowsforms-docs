@@ -9,13 +9,13 @@ documentation: ug
 
 # Conditional Formatting in Windows Forms Pivot Grid
 
-Conditional formatting is a process of applying customized styles to the cells of pivot grid based on conditions specified by the users.
+Conditional formatting is a process of applying customized styles to the cells of WinForms Pivot Grid based on conditions specified by the users.
 
 ## Adding conditional formats
 
 Conditional formats can be created by using the instance of [NewRuleConditionalFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.NewRuleConditionalFormat.html) and add it to the [NewRuleCollections](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridNewRuleConditionalFormat.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridNewRuleConditionalFormat_NewRuleCollections) property of [PivotGridNewRuleConditionalFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridNewRuleConditionalFormat.html). Then, the created instance of `PivotGridNewRuleConditionalFormat` needs to be added to the [NewRuleConditionalFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControlBase_NewRuleConditionalFormat) collection.
 
-Refer to the below code sample to add conditional format in the pivot grid control.
+Refer to the below code sample to add conditional format in the Pivot Grid control.
 
 {% tabs %}
 
@@ -45,11 +45,11 @@ Me.pivotGridControl1.TableControl.NewRuleConditionalFormat.Add(newRuleFormat1)
 
 {% endtabs %}
 
-![Conditional-Formatting_img1](Conditional-Formatting_images/Conditional-Formatting_img1.png)
+![Conditional Formatting](Conditional-Formatting_images/Conditional-Formatting_img1.png)
 
 ## Rule types
 
-Following are the rule types that are supported by the pivot grid to apply conditional formats based on value cell ranges or conditions specified for a particular summary element.
+Following are the rule types that are supported by the Pivot Grid to apply conditional formats based on value cell ranges or conditions specified for a particular summary element.
 
 ### Formatting all value cells based on their value range
 
@@ -103,7 +103,7 @@ Me.pivotGridControl1.TableControl.NewRuleConditionalFormat.Add(newRuleFormat1)
 
 {% endtabs %}
 
-![Conditional-Formatting_img2](Conditional-Formatting_images/Conditional-Formatting_img2.png)
+![Formatting value cells by value range](Conditional-Formatting_images/Conditional-Formatting_img2.png)
 
 ### Formatting only value cells based on certain criteria
 
@@ -157,7 +157,7 @@ Me.pivotGridControl1.TableControl.NewRuleConditionalFormat.Add(newRuleFormat1)
 
 {% endtabs %}
 
-![Conditional-Formatting_img3](Conditional-Formatting_images/Conditional-Formatting_img3.png)
+![Formatting cells that meet defined criteria](Conditional-Formatting_images/Conditional-Formatting_img3.png)
 
 ### Formatting top or bottom ranked value cells
 
@@ -201,7 +201,7 @@ Me.pivotGridControl1.TableControl.NewRuleConditionalFormat.Add(newRuleFormat1)
 
 {% endtabs %}
 
-![Conditional-Formatting_img4](Conditional-Formatting_images/Conditional-Formatting_img4.png)
+![Formatting top or bottom ranked values](Conditional-Formatting_images/Conditional-Formatting_img4.png)
 
 ### Formatting only above or below average value cells
 
@@ -243,7 +243,7 @@ Me.pivotGridControl1.TableControl.NewRuleConditionalFormat.Add(newRuleFormat1)
 
 {% endtabs %}
 
-![Conditional-Formatting_img5](Conditional-Formatting_images/Conditional-Formatting_img5.png)
+![Formatting above or below average values](Conditional-Formatting_images/Conditional-Formatting_img5.png)
 
 ### Formatting only unique or duplicate value cells
 
@@ -285,7 +285,7 @@ Me.pivotGridControl1.TableControl.NewRuleConditionalFormat.Add(newRuleFormat1)
 
 {% endtabs %}
 
-![Conditional-Formatting_img6](Conditional-Formatting_images/Conditional-Formatting_img6.png)
+![Formatting unique or duplicate values](Conditional-Formatting_images/Conditional-Formatting_img6.png)
 
 A demo sample is available in the following location.
 

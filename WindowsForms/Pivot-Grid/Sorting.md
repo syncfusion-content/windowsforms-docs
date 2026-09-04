@@ -9,13 +9,13 @@ documentation: ug
 
 # Sorting in Windows Forms Pivot Grid
 
-Pivot grid provides support for sorting which enables users to quickly visualize, organize and understand the data in a better way. Sorting feature also helps to find the data that you want and make more effective decisions ultimately.
+WinForms Pivot Grid provides support for sorting which enables users to quickly visualize, organize and understand the data in a better way. Sorting feature also helps to find the data that you want and make more effective decisions ultimately.
 
-The sorting operation can be performed in the pivot grid control using any of the following ways:
+The sorting operation can be performed in the Pivot Grid control using any of the following ways:
 
 ## Using custom comparer programmatically
 
-By default, the pivot grid control populates the data in the ascending order. This sorting order can be changed by using the [Comparer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base.PivotItem.html#Syncfusion_PivotAnalysis_Base_PivotItem_Comparer) property of pivot item.
+By default, the Pivot Grid control populates the data in the ascending order. This sorting order can be changed by using the [Comparer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base.PivotItem.html#Syncfusion_PivotAnalysis_Base_PivotItem_Comparer) property of pivot item.
 
 {% tabs %}
 
