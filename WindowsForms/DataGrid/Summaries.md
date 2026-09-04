@@ -8,19 +8,19 @@ documentation: ug
 ---
 
 # Summaries in Windows Forms Data Grid
-[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) provides support to display the concise information about the data objects using summaries. SfDataGrid provides below three different types of summary rows.
+[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) provides support to display the concise information about the data objects using summaries. the control provides below three different types of summary rows.
 
-* **Table Summary** – Used to display summary information of table either at top or bottom of SfDataGrid.
+* **Table Summary** – Used to display summary information of table either at top or bottom of Data Grid.
 * **Group Summary** – Used to display summary information of data objects in each group.
 * **Caption Summary** – Used to display summary information in the caption of the group.
 
-![Windows forms datagrid showing the types of summaries](SfDataGrid_Summaries_UG_images/summaries1.png)
+![showing the types of summaries](SfDataGrid_Summaries_UG_images/summaries1.png)
 
 Summary rows are represented by using [GridSummaryRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html) and each `GridSummaryRow` hold summary information of columns in [SummaryColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_SummaryColumns) property. The `SummaryColumns` contains the collection of[GridSummaryColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryColumn.html) which carries the name of column, format and its summary aggregate type.
 
 ## Aggregate Types
-The summary aggregate types can be specified by using [GridSummaryColumn.SummaryType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryColumn.html#Syncfusion_WinForms_DataGrid_GridSummaryColumn_SummaryType) property and use the built-in function in [GridSummaryColumn.Format](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryColumn.html#Syncfusion_WinForms_DataGrid_GridSummaryColumn_Format).
-The following are the list of predefined aggregate types and its built-in functions.
+The summary aggregate types can be specified by using [GridSummaryColumn.SummaryType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryColumn.html#Syncfusion_WinForms_DataGrid_GridSummaryColumn_SummaryType) property and use the built-in function in [GridSummaryColumn.Format](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryColumn.html#Syncfusion_WinForms_DataGrid_GridSummaryColumn_Format). The following are the list of predefined aggregate types and its built-in functions.
+
 
 <table>
 <tr>
@@ -66,16 +66,16 @@ Used for custom summaries
 </table>
 
 ## Table Summary
-The table summary calculates the summary value over all the records. SfDataGrid allows to add any number of table summary rows in top and bottom of SfDataGrid. 
+The table summary calculates the summary value over all the records. Data Grid allows to add any number of table summary rows in top and bottom of the control.
 
 ### Adding Table Summary
-Table summary row can be added in SfDataGrid by adding [GridTableSummaryRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridTableSummaryRow.html) to [SfDataGrid.TableSummaryRows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_TableSummaryRows) collection.
+Table summary row can be added in Data Grid by adding [GridTableSummaryRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridTableSummaryRow.html) to [SfDataGrid.TableSummaryRows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_TableSummaryRows) collection.
 
 ### Displaying Table Summary for Column
 Summary information can  be displayed in the column by setting [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_ShowSummaryInRow) to `false` and defining summary columns. To calculate summary based on column you must specify the below properties,
 
 1. [GridSummaryColumn.MappingName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryColumn.html#Syncfusion_WinForms_DataGrid_GridSummaryColumn_MappingName) – MappingName of the column (Property name of data object).
-2. [GridSummaryColumn.SummaryType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryColumn.html#Syncfusion_WinForms_DataGrid_GridSummaryColumn_SummaryType) – SfDataGrid provides different built-in summary calculation functions for various types.
+2. [GridSummaryColumn.SummaryType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryColumn.html#Syncfusion_WinForms_DataGrid_GridSummaryColumn_SummaryType) – Data Grid provides different built-in summary calculation functions for various types.
 3. [GridSummaryColumn.Format](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryColumn.html#Syncfusion_WinForms_DataGrid_GridSummaryColumn_Format) – Used to define format string for summary based on support function name’s in specified SummaryType.
 In the below code snippet, table summary is defined for `OrderID` column.
 
@@ -114,7 +114,7 @@ Me.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow1)
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid showing table summary for column](SfDataGrid_Summaries_UG_images/summaries2.png)
+![showing table summary for column](SfDataGrid_Summaries_UG_images/summaries2.png)
 
 ### Displaying Table Summary for Row
 Summary information can be displayed in row by setting [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_ShowSummaryInRow) to `true` and defining summary columns. [GridSummaryRow.Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_Title) must set based on [GridSummaryColumn.Name](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryColumn.html#Syncfusion_WinForms_DataGrid_GridSummaryColumn_Name) property to format summary columns values in row.
@@ -155,7 +155,7 @@ Me.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow1)
 {% endhighlight %}
 {% endtabs %}
 
-![Windows form datagrid showing table summary for row](SfDataGrid_Summaries_UG_images/summaries3.png)
+![showing table summary for row](SfDataGrid_Summaries_UG_images/summaries3.png)
 
 N> [GridSummaryRow.Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_Title) must be specified if [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_ShowSummaryInRow) is enabled.
 
@@ -224,11 +224,11 @@ Me.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow2)
 {% endhighlight %}
 {% endtabs %}
 
-![Windows form datagrid showing table summary row at top and bottom](SfDataGrid_Summaries_UG_images/summaries4.png)
+![showing table summary row at top and bottom](SfDataGrid_Summaries_UG_images/summaries4.png)
 
 ### Displaying column summary with title
 
-SfDataGrid supports to show column summary and title summary at the same time. You can show column summary along with title by defining the [GridSummaryRow.Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_Title) and [GridSummaryRow.TitleColumnCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_TitleColumnCount) property along with defining summary columns. Showing column summary along with title can be only supported if [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_ShowSummaryInRow) is disabled.
+Data Grid supports to show column summary and title summary at the same time. You can show column summary along with title by defining the [GridSummaryRow.Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_Title) and [GridSummaryRow.TitleColumnCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_TitleColumnCount) property along with defining summary columns. Showing column summary along with title can be only supported if [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_ShowSummaryInRow) is disabled.
 
 Refer [Displaying table summary for column](https://help.syncfusion.com/windowsforms/datagrid/summaries#displaying-table-summary-for-column) section to know more about how to display table summary columns.
 
@@ -335,7 +335,7 @@ Me.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow2)
 
 The following screenshot illustrates displaying summary columns with title at same time for `TableSummaryRow`.
 
-![Table summary columns with title in windows forms datagrid](SfDataGrid_Summaries_UG_images/summaries23.png)
+![Table summary columns with title](SfDataGrid_Summaries_UG_images/summaries23.png)
 
 #### Limitations
 
@@ -360,7 +360,7 @@ Me.sfDataGrid1.Style.TableSummaryRowStyle.Font = New GridFontInfo(New Font("Aria
 {% endhighlight %}
 {% endtabs %}
 
-![Table summary row appearance customization in windows form datagrid](SfDataGrid_Summaries_UG_images/summaries5.png)
+![Table summary row appearance customization](SfDataGrid_Summaries_UG_images/summaries5.png)
 
 ### Overriding Table Summary Renderer
 [GridTableSummaryCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Renderers.GridTableSummaryCellRenderer.html) is the cell renderer which renders the table summary row. The table summary row appearance and the summary value can be customized with the `GridTableSummaryCellRenderer`.
@@ -428,19 +428,19 @@ Me.sfDataGrid1.CellRenderers.Add("TableSummary", New CustomGridTableSummaryRende
 {% endhighlight %}
 {% endtabs %}
 
-![Custom table summary cell renderer in windows forms datagrid](SfDataGrid_Summaries_UG_images/summaries6.png)
+![Custom table summary cell renderer](SfDataGrid_Summaries_UG_images/summaries6.png)
 
 ## Group Summary
-Group summary values calculated based on the records in the group and the summary information will be displayed at the bottom of each group. The group summary row can be viewed by expanding the corresponding group header. SfDataGrid allows to add any number of group summary rows.
+Group summary values calculated based on the records in the group and the summary information will be displayed at the bottom of each group. The group summary row can be viewed by expanding the corresponding group header. Data Grid allows to add any number of group summary rows.
 
 ### Adding Group Summary
-The group summary rows can be added in SfDataGrid by adding the [GridSummaryRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html) to [SfDataGrid.GroupSummaryRows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_GroupSummaryRows) collection.
+The group summary rows can be added in Data Grid by adding the [GridSummaryRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html) to [SfDataGrid.GroupSummaryRows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_GroupSummaryRows) collection.
 
 ### Displaying Group Summary for Column
 Summary information can be displayed in the column by setting [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_ShowSummaryInRow) to `false` and defining summary columns. To calculate summary based on column you should specify the below properties,
 
 1. [GridSummaryColumn.MappingName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryColumn.html#Syncfusion_WinForms_DataGrid_GridSummaryColumn_MappingName) – MappingName of the column (Property name of data object).
-2. [GridSummaryColumn.SummaryType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryColumn.html#Syncfusion_WinForms_DataGrid_GridSummaryColumn_SummaryType) – SfDataGrid provides different built-in summary calculation functions for various types.
+2. [GridSummaryColumn.SummaryType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryColumn.html#Syncfusion_WinForms_DataGrid_GridSummaryColumn_SummaryType) – Data Grid provides different built-in summary calculation functions for various types.
 3. [GridSummaryColumn.Format](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryColumn.html#Syncfusion_WinForms_DataGrid_GridSummaryColumn_Format) – Used to define format string for summary based on support function name’s in specified SummaryType.
 
 {% tabs %}
@@ -484,7 +484,7 @@ Me.sfDataGrid1.GroupSummaryRows.Add(groupSummaryRow1)
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid showing group summary](SfDataGrid_Summaries_UG_images/summaries7.png)
+![showing group summary](SfDataGrid_Summaries_UG_images/summaries7.png)
 
 ### Displaying Group Summary for Row
 Summary information can be displayed in row by setting [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_ShowSummaryInRow) to `true` and defining summary columns. [GridSummaryRow.Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_Title) should be defined based on [GridSummaryColumn.Name](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_Name) property to format summary columns values in row.
@@ -532,13 +532,13 @@ Me.sfDataGrid1.GroupSummaryRows.Add(groupSummaryRow1)
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid showing display group summary for row](SfDataGrid_Summaries_UG_images/summaries8.png)
+![showing display group summary for row](SfDataGrid_Summaries_UG_images/summaries8.png)
 
 N> [GridSummaryRow.Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_Title) must be specified if [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_ShowSummaryInRow) is enabled.
 
 ### Displaying column summary with title
 
-SfDataGrid supports to show column summary and title summary at the same time. You can show column summary along with title by defining the [GridSummaryRow.Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_Title) and [GridSummaryRow.TitleColumnCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_TitleColumnCount) property along with defining summary columns. Showing column summary along with title can be only supported if [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_ShowSummaryInRow) is disabled.
+Data Grid supports to show column summary and title summary at the same time. You can show column summary along with title by defining the [GridSummaryRow.Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_Title) and [GridSummaryRow.TitleColumnCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_TitleColumnCount) property along with defining summary columns. Showing column summary along with title can be only supported if [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_ShowSummaryInRow) is disabled.
 
 Refer [Displaying group summary for column](https://help.syncfusion.com/windowsforms/datagrid/summaries#displaying-group-summary-for-column) section to know more about how to display group summary columns.
 
@@ -623,7 +623,7 @@ Me.sfDataGrid1.GroupSummaryRows.Add(groupSummaryRow1)
 
 The following screenshot illustrates displaying summary columns with title at same time for `GroupSummaryRow`.
 
-![Group summary columns with title in windows forms datagrid](SfDataGrid_Summaries_UG_images/summaries24.png)
+![Group summary columns with title](SfDataGrid_Summaries_UG_images/summaries24.png)
 
 #### Limitations
 
@@ -646,7 +646,7 @@ Me.sfDataGrid1.Style.GroupSummaryRowStyle.Font = New GridFontInfo(New Font("Aria
 {% endhighlight %}
 {% endtabs %}
 
-![Group summary row Appearance customization in windows forms datagrid](SfDataGrid_Summaries_UG_images/summaries9.png)
+![Group summary row Appearance customization](SfDataGrid_Summaries_UG_images/summaries9.png)
 
 ### Overriding Group Summary Renderer
 [GridGroupSummaryCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Renderers.GridGroupSummaryCellRenderer.html) is the cell renderer which renders the group summary row. The group summary row appearance and the summary value can be customized with the `GridGroupSummaryCellRenderer`.
@@ -714,13 +714,13 @@ Me.sfDataGrid1.CellRenderers.Add("GroupSummary", New CustomGridGroupSummaryRende
 {% endhighlight %}
 {% endtabs %}
 
-![Custom group summary cell renderer in windows forms datagrid](SfDataGrid_Summaries_UG_images/summaries10.png)
+![Custom group summary cell renderer](SfDataGrid_Summaries_UG_images/summaries10.png)
 
 ## Caption Summary
-SfDataGrid provides built-in support for caption summary. The caption summary value calculated based on the records in a group and the summary information will be displayed in the caption of group.
-Below screen shot shows the built-in caption summary of Group.
+Data Grid provides built-in support for caption summary. The caption summary value calculated based on the records in a group and the summary information will be displayed in the caption of group. Below screen shot shows the built-in caption summary of Group.
 
-![Windows forms datagrid showing group caption summary](SfDataGrid_Summaries_UG_images/summaries11.png)
+
+![showing group caption summary](SfDataGrid_Summaries_UG_images/summaries11.png)
 
 ### Formatting Built-in Caption Summary
 The group caption text can be formatted using the [SfDataGrid.GroupCaptionTextFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_GroupCaptionTextFormat) property.
@@ -739,14 +739,14 @@ this.sfDataGrid1.GroupCaptionTextFormat = "{Key} : {ItemsCount}";
 Me.sfDataGrid1.GroupCaptionTextFormat = "{Key} : {ItemsCount}"
 {% endhighlight %}
 {% endtabs %}
-![Custom group summary format in windows forms datagrid](SfDataGrid_Summaries_UG_images/summaries12.png)
+![Custom group summary format](SfDataGrid_Summaries_UG_images/summaries12.png)
 
 ### Displaying Caption Summary for Column
 
-Summary information can be displayed in the column by setting [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_ShowSummaryInRow) to `false` and defining summary columns. To calculate summary based on column the below properties must be specified, 
+Summary information can be displayed in the column by setting [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_ShowSummaryInRow) to `false` and defining summary columns. To calculate summary based on column the below properties must be specified,
 
 1. [GridSummaryColumn.MappingName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryColumn.html#Syncfusion_WinForms_DataGrid_GridSummaryColumn_MappingName) – MappingName of the column (Property name of data object).
-2. [GridSummaryColumn.SummaryType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryColumn.html#Syncfusion_WinForms_DataGrid_GridSummaryColumn_SummaryType) – SfDataGrid provides different built-in summary calculation functions for various types.
+2. [GridSummaryColumn.SummaryType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryColumn.html#Syncfusion_WinForms_DataGrid_GridSummaryColumn_SummaryType) – Data Grid provides different built-in summary calculation functions for various types.
 3. [GridSummaryColumn.Format](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryColumn.html#Syncfusion_WinForms_DataGrid_GridSummaryColumn_Format) – Used to define format string for summary based on support function name’s in specified SummaryType.
 
 {% tabs %}
@@ -804,7 +804,7 @@ Me.sfDataGrid1.CaptionSummaryRow = captionSummaryRow
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid showing group caption summary for column](SfDataGrid_Summaries_UG_images/summaries13.png)
+![showing group caption summary for column](SfDataGrid_Summaries_UG_images/summaries13.png)
 
 ### Displaying Caption Summary for Row
 Summary information can be displayed in row by setting [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_ShowSummaryInRow) to `true` and defining summary columns. [GridSummaryRow.Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_Title) based on [GridSummaryColumn.Name](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_Name) property must be defined to format the summary columns values in row.
@@ -851,11 +851,11 @@ Me.sfDataGrid1.CaptionSummaryRow = captionSummaryRow
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid showing group caption summary for row](SfDataGrid_Summaries_UG_images/summaries14.png)
+![showing group caption summary for row](SfDataGrid_Summaries_UG_images/summaries14.png)
 
 ### Displaying column summary with title
 
-SfDataGrid supports to show column summary and title summary at the same time. You can show column summary along with title by defining the [GridSummaryRow.Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_Title) and [GridSummaryRow.TitleColumnCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_TitleColumnCount) property along with defining summary columns. Showing column summary along with title can be only supported if [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_ShowSummaryInRow) is disabled.
+Data Grid supports to show column summary and title summary at the same time. You can show column summary along with title by defining the [GridSummaryRow.Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_Title) and [GridSummaryRow.TitleColumnCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_TitleColumnCount) property along with defining summary columns. Showing column summary along with title can be only supported if [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_ShowSummaryInRow) is disabled.
 
 Refer [Displaying caption summary for column](https://help.syncfusion.com/windowsforms/datagrid/summaries#displaying-caption-summary-for-column) section to know more about how to display caption summary columns.
 
@@ -942,7 +942,7 @@ Me.sfDataGrid1.CaptionSummaryRow = captionSummaryRow
 
 The following screenshot illustrates displaying summary columns with title at same time for `CaptionSummaryRow`.
 
-![Caption summary columns with title in windows forms datagrid](SfDataGrid_Summaries_UG_images/summaries25.png)
+![Caption summary columns with title](SfDataGrid_Summaries_UG_images/summaries25.png)
 
 #### Limitations
 
@@ -964,7 +964,7 @@ Me.sfDataGrid1.Style.CaptionSummaryRowStyle.Font = New GridFontInfo(New Font("Ar
 {% endhighlight %}
 {% endtabs %}
 
-![Group caption appearance customization in windows forms datagrid](SfDataGrid_Summaries_UG_images/summaries15.png)
+![Group caption appearance customization](SfDataGrid_Summaries_UG_images/summaries15.png)
 
 ### Overriding Caption Summary Renderer
 [GridCaptionSummaryCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Renderers.GridCaptionSummaryCellRenderer.html) is the cell renderer which renders the caption summary row. The caption summary row appearance and the summary value can be customized with the `GridCaptionSummaryCellRender`.
@@ -1038,7 +1038,7 @@ Me.sfDataGrid1.CellRenderers.Add("CaptionSummary", New CustomGridCaptionSummaryR
 {% endhighlight %}
 {% endtabs %}
 
-![Custom group caption summary cell renderer in windows forms datagrid](SfDataGrid_Summaries_UG_images/summaries16.png)
+![Custom group caption summary cell renderer](SfDataGrid_Summaries_UG_images/summaries16.png)
 
 ## On-demand summary calculation for group and caption summary
 
@@ -1103,12 +1103,12 @@ tableSummaryRow1.SummaryColumns.Add(summaryColumn1)
 Me.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow1)
 {% endhighlight %}
 {% endtabs %}
-![Windows forms datagrid showing formatting summaries](SfDataGrid_Summaries_UG_images/summaries17.png)
+![showing formatting summaries](SfDataGrid_Summaries_UG_images/summaries17.png)
 
 ### Formatting Summary Value
 
-The summary value can be formatted by setting the appropriate format after the aggregate function followed by colon(:) in [GridSummaryColumn.Format](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryColumn.html#Syncfusion_WinForms_DataGrid_GridSummaryColumn_Format) property.
-In the below code snippet `UnitPrice` column summary is formatted using `c` format specifier. Refer [here](https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings) to know about how to set different format.
+The summary value can be formatted by setting the appropriate format after the aggregate function followed by colon(:) in [GridSummaryColumn.Format](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryColumn.html#Syncfusion_WinForms_DataGrid_GridSummaryColumn_Format) property. In the below code snippet `UnitPrice` column summary is formatted using `c` format specifier. Refer [here](https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings) to know about how to set different format.
+
 
 {% tabs %}
 {% highlight c# %}
@@ -1140,7 +1140,7 @@ tableSummaryRow1.SummaryColumns.Add(summaryColumn1)
 Me.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow1)
 {% endhighlight %}
 {% endtabs %}
-![Windows forms datagrid showing formatting summary value](SfDataGrid_Summaries_UG_images/summaries18.png)
+![showing formatting summary value](SfDataGrid_Summaries_UG_images/summaries18.png)
 
 ### Displaying Additional Content in Summary
 Additional content can be appended with summary value using [GridSummaryColumn.Format](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryColumn.html#Syncfusion_WinForms_DataGrid_GridSummaryColumn_Format) property.
@@ -1175,7 +1175,7 @@ Me.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow1)
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid showing display additional content with summary value](SfDataGrid_Summaries_UG_images/summaries19.png)
+![showing display additional content with summary value](SfDataGrid_Summaries_UG_images/summaries19.png)
 
 ### Formatting Summary for Row
 The summary value for row can  be formatted by using [GridSummaryRow.Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_Title) when [ShowSummaryInRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_ShowSummaryInRow) set to `true`.
@@ -1225,12 +1225,13 @@ Me.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow1)
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid showing formatting summary for row](SfDataGrid_Summaries_UG_images/summaries20.png)
+![showing formatting summary for row](SfDataGrid_Summaries_UG_images/summaries20.png)
 
 ## Calculate summary for selected rows
 
-SfDataGrid calculates the summaries for all records by default. You can calculate the summaries for selected records by using the [SfDataGrid.SummaryCalculationUnit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SummaryCalculationUnit) or [GridSummaryRow.CalculationUnit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_CalculationUnit) property.
+Data Grid calculates the summaries for all records by default. You can calculate the summaries for selected records by using the [SfDataGrid.SummaryCalculationUnit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SummaryCalculationUnit) or [GridSummaryRow.CalculationUnit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryRow.html#Syncfusion_WinForms_DataGrid_GridSummaryRow_CalculationUnit) property.
 This is applicable for all type of summary rows such as table, caption and group summary.
+
 
 In the below code snippet, the summaries for selected records are calculated for the top positioned `TableSummaryRow` and the summaries for all records are calculated for the bottom positioned `TableSummaryRow`.
 
@@ -1309,7 +1310,7 @@ Me.sfDataGrid.TableSummaryRows.Add(tableSummaryRow2)
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid showing Calculate summaries for selected records](SfDataGrid_Summaries_UG_images/summaries22.png)
+![showing Calculate summaries for selected records](SfDataGrid_Summaries_UG_images/summaries22.png)
 
 N> The `GridSummaryRow.CalculationUnit` takes higher priority than the `SfDataGrid.SummaryCalculationUnit`.
 
@@ -1318,15 +1319,16 @@ N> The `GridSummaryRow.CalculationUnit` takes higher priority than the `SfDataGr
 `SummaryCalculationUnit.SelectedRows` or `SummaryCalculationUnit.Mixed` will not be considered for cell selection.
 
 ## Custom Summaries
-SfDataGrid allows to implement own aggregate functions, when the built-in aggregate functions don’t meet the requirement.
+Data Grid allows to implement own aggregate functions, when the built-in aggregate functions don’t meet the requirement.
 The summary values can be calculated based on custom logic using [GridSummaryColumn.CustomAggregate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridSummaryColumn.html#Syncfusion_WinForms_DataGrid_GridSummaryColumn_CustomAggregate) property.
+
 
 ### Implementing Custom Aggregate
 
 1) Create custom aggregate class by deriving from `ISummaryAggregate` interface.
 
-2) In the `CalculateAggregateFunc` method, the summary must be calculated and assign it to the property.
-In the below code snippet, the Standard Deviation is calculated for quantity of products.
+2) In the `CalculateAggregateFunc` method, the summary must be calculated and assign it to the property. In the below code snippet, the Standard Deviation is calculated for quantity of products.
+
 {% tabs %}
 {% highlight c# %}
 public class CustomAggregate : ISummaryAggregate
@@ -1459,7 +1461,7 @@ Me.sfDataGrid.TableSummaryRows.Add(tableSummaryRow1)
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid showing custom summary](SfDataGrid_Summaries_UG_images/summaries21.png)
+![showing custom summary](SfDataGrid_Summaries_UG_images/summaries21.png)
 
 You can download the custom summaries demo [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Custom_Summaries-1592567908.zip).
 

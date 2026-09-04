@@ -10,7 +10,7 @@ documentation: ug
 
 ## Context Menu
 
-[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) provides an entirely customizable menu to expose the functionality on user interface by using [ContextMenuStrip](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.contextmenustrip?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0). It allows to create context menus for different rows in an efficient manner.
+[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) provides an entirely customizable menu to expose the functionality on user interface by using [ContextMenuStrip](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.contextmenustrip?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0). It allows to create context menus for different rows in an efficient manner.
 
 ### ContextMenu for Records
 
@@ -31,7 +31,7 @@ Me.sfDataGrid1.RecordContextMenu.Items.Add("Paste", Nothing, OnPasteClicked)
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays context menu for the data row](InteractiveFeatures_Images/ContextMenu1.png)
+![displays context menu for the data row](InteractiveFeatures_Images/ContextMenu1.png)
 
 ### ContextMenu for Column Header
 
@@ -54,7 +54,7 @@ Me.sfDataGrid1.ColumnHeaderContextMenu.Items.Add("Show GroupDropArea", Nothing, 
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays context menu for column header](InteractiveFeatures_Images/ContextMenu2.png)
+![displays context menu for column header](InteractiveFeatures_Images/ContextMenu2.png)
 
 ### ContextMenu for RowHeader
 The context menu for the row headers can be set by using [SfDataGrid.RowHeaderContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_RowHeaderContextMenu) property.
@@ -70,7 +70,7 @@ Me.sfDataGrid1.RowHeaderContextMenu.Items.Add("Delete", Nothing, OnDeleteClicked
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays context menu for row header](InteractiveFeatures_Images/ContextMenu3.png)
+![displays context menu for row header](InteractiveFeatures_Images/ContextMenu3.png)
 
 ### ContextMenu for GroupDropArea
 
@@ -93,7 +93,7 @@ Me.sfDataGrid1.GroupDropAreaContextMenu.Items.Add("Clear Groups", Nothing, OnCle
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays context menu for group drop area](InteractiveFeatures_Images/ContextMenu4.png)
+![displays context menu for group drop area](InteractiveFeatures_Images/ContextMenu4.png)
 
 ### ContextMenu for GroupDropAreaItem
 
@@ -114,7 +114,7 @@ Me.sfDataGrid1.GroupDropAreaItemContextMenu.Items.Add("Clear Group", Nothing, On
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays context menu for group drop area item](InteractiveFeatures_Images/ContextMenu5.png)
+![displays context menu for group drop area item](InteractiveFeatures_Images/ContextMenu5.png)
 
 ### ContextMenu for GroupCaptionSummaryRow
 
@@ -132,7 +132,7 @@ Me.sfDataGrid1.GroupCaptionContextMenu.Items.Add("Collapse", Nothing, OnCollapse
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays context menu for group caption](InteractiveFeatures_Images/ContextMenu6.png)
+![displays context menu for group caption](InteractiveFeatures_Images/ContextMenu6.png)
 
 ### ContextMenu for GroupSummaryRow
 
@@ -151,7 +151,7 @@ Me.sfDataGrid1.GroupSummaryContextMenu.Items.Add("Count", Nothing, OnCountClicke
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays context menu for group summary](InteractiveFeatures_Images/ContextMenu7.png)
+![displays context menu for group summary](InteractiveFeatures_Images/ContextMenu7.png)
 
 ### ContextMenu for TableSummaryRow
 
@@ -169,7 +169,7 @@ Me.sfDataGrid1.TableSummaryContextMenu.Items.Add("Count", Nothing, OnCountClicke
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays context menu for table summary](InteractiveFeatures_Images/ContextMenu8.png)
+![displays context menu for table summary](InteractiveFeatures_Images/ContextMenu8.png)
 
 ### Appearance
 
@@ -186,7 +186,7 @@ Me.sfDataGrid1.RecordContextMenu.ForeColor = Color.DarkBlue
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays applied color to context menus](InteractiveFeatures_Images/ContextMenu9.png)
+![displays applied color to context menus](InteractiveFeatures_Images/ContextMenu9.png)
 
 ### Cancel ContextMenu Opening
 
@@ -213,7 +213,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-[ContextMenuOpened](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ContextMenuOpened) event occurs when any context menu is opened in SfDataGrid. This will not occur if `ContextMenuOpening` event is canceled.
+[ContextMenuOpened](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ContextMenuOpened) event occurs when any context menu is opened in Data Grid. This will not occur if `ContextMenuOpening` event is canceled.
 
 ### Customization of Context Menu
 
@@ -248,11 +248,11 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays change the menu items while opening the context menu](InteractiveFeatures_Images/ContextMenu10.png)
+![displays change the menu items while opening the context menu](InteractiveFeatures_Images/ContextMenu10.png)
 
 #### Create a New Column by using ColumnHeaderContextMenu 
 
-SfDataGrid allows to copy a column and paste it in a new column. `ColumnHeaderContextMenu` can be used to provide options for copy column and paste column. The below code example shows how to provide this support.
+Data Grid allows to copy a column and paste it in a new column. `ColumnHeaderContextMenu` can be used to provide options for copy column and paste column. The below code example shows how to provide this support.
 
 {% tabs %}
 {% highlight c# %}
@@ -344,13 +344,13 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays create a new column by using context menu](InteractiveFeatures_Images/ContextMenu11.png)
+![displays create a new column by using context menu](InteractiveFeatures_Images/ContextMenu11.png)
 
-![Windows forms datagrid displays paste the data into new column by using context menu](InteractiveFeatures_Images/ContextMenu12.png)
+![displays paste the data into new column by using context menu](InteractiveFeatures_Images/ContextMenu12.png)
 
 #### Clipboard Options by using RecordContextMenu
 
-The below code example shows how to provide clipboard options for the SfDataGrid by using  `RecordContextMenu`.
+The below code example shows how to provide clipboard options for the Data Grid by using  `RecordContextMenu`.
 
 {% tabs %}
 {% highlight c# %}
@@ -414,15 +414,15 @@ void OnClearFilteringClicked(Object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays clear filtering menu item in context menu](InteractiveFeatures_Images/ContextMenu13.png)
+![displays clear filtering menu item in context menu](InteractiveFeatures_Images/ContextMenu13.png)
 
 ## Column chooser 
 
-Columns visibility in the SfDataGrid can be changed at runtime by using the [ColumnChooserPopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Interactivity.ColumnChooserPopup.html) or [ColumnChooser](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Interactivity.ColumnChooser.html) control. 
+Columns visibility in the Data Grid can be changed at runtime by using the [ColumnChooserPopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Interactivity.ColumnChooserPopup.html) or [ColumnChooser](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Interactivity.ColumnChooser.html) control.
 
 ### Load column chooser pop-up
 
-Column chooser pop-up can be enabled in the application by creating an instance of ColumnChooserPopup when passing SfDataGrid to the constructor. You can display the pop-up by using the Show method. Columns visibility will be changed when clicking `OK` based on the checked state of the checked list box of the column chooser pop-up.
+Column chooser pop-up can be enabled in the application by creating an instance of ColumnChooserPopup when passing Data Grid to the constructor. You can display the pop-up by using the Show method. Columns visibility will be changed when clicking `OK` based on the checked state of the checked list box of the column chooser pop-up.
 
 {% tabs %}
 {% highlight c# %}
@@ -437,7 +437,7 @@ columnChooserPopup.Show()
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays column chooser popup](InteractiveFeatures_Images/ColumnChooser1.png)
+![displays column chooser popup](InteractiveFeatures_Images/ColumnChooser1.png)
 
 ### Load column chooser as control
 
@@ -458,11 +458,11 @@ Me.Controls.Add(columnChooser)
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays column chooser control](InteractiveFeatures_Images/ColumnChooser2.png)
+![displays column chooser control](InteractiveFeatures_Images/ColumnChooser2.png)
 
 ### Appearance customization
 
-Appearance of the column chooser can be customized by accessing the inner controls of the column chooser: CheckedListBox, OKButton, CancelButton, and SearchTextBox. 
+Appearance of the column chooser can be customized by accessing the inner controls of the column chooser: CheckedListBox, OKButton, CancelButton, and SearchTextBox.
 
 You can change the selection backcolor of the checked listbox by setting the style properties.
 
@@ -481,11 +481,11 @@ columnChooserPopup.Show()
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays column chooser appearance](InteractiveFeatures_Images/ColumnChooser3.png)
+![displays column chooser appearance](InteractiveFeatures_Images/ColumnChooser3.png)
 
 ### Loading custom column chooser
 
-By default, the column chooser will be loaded with OK and Cancel buttons. Columns visibility will be applied only by clicking the OK button. You can also change the visibility by clicking the checked list box item. 
+By default, the column chooser will be loaded with OK and Cancel buttons. Columns visibility will be applied only by clicking the OK button. You can also change the visibility by clicking the checked list box item.
 
 #### Creating custom column chooser control
 
@@ -622,13 +622,13 @@ Me.Controls.Add(columnChooser)
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays custom column chooser control](InteractiveFeatures_Images/ColumnChooser4.png)
+![displays custom column chooser control](InteractiveFeatures_Images/ColumnChooser4.png)
 
 You can download the custom column chooser sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomColumnChooser_Sample-1194097955).
 
 ## ToolTip
 
-SfDataGrid provides the support to show the pop-up window that displays the information when the mouse hover on the cells by using [SfToolTip](https://help.syncfusion.com/windowsforms/tooltip/overview). The ToolTip for the SfDataGrid can be enabled by setting the[SfDataGrid.ShowToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ShowToolTip) property to true.
+Data Grid provides the support to show the pop-up window that displays the information when the mouse hover on the cells by using [SfToolTip](https://help.syncfusion.com/windowsforms/tooltip/overview). The ToolTip for the control can be enabled by setting the[SfDataGrid.ShowToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ShowToolTip) property to true.
 
 {% tabs %}
 {% highlight c# %}
@@ -653,7 +653,7 @@ Me.sfDataGrid1.Columns("OrderID").ShowToolTip = True
 N>[GridColumnBase.ShowToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_ShowToolTip) takes higher priority than [SfDataGrid.ShowToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ShowToolTip).
 
 
-![Windows forms datagrid displays tooltip when the mouse hover the cell](InteractiveFeatures_Images/ToolTip1.png)
+![displays tooltip when the mouse hover the cell](InteractiveFeatures_Images/ToolTip1.png)
 
 ### Displaying ToolTip on Header
 
@@ -681,11 +681,11 @@ Me.sfDataGrid1.Columns("OrderID").ShowHeaderToolTip = True
 
 N>[GridColumnBase.ShowHeaderToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_ShowHeaderToolTip) takes higher priority than [SfDataGrid.ShowHeaderToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ShowHeaderToolTip).
 
-![Windows forms datagrid displays tootip when the mouse hover the header](InteractiveFeatures_Images/ToolTip2.png)
+![displays tootip when the mouse hover the header](InteractiveFeatures_Images/ToolTip2.png)
 
 ### Displaying ToolTip Only for the Trimmed Cells
 
-By default, ToolTip will be displayed for all the cells. SfDataGrid provides support to display ToolTip only for the cells that contains trimmed text by setting value for [SfDataGrid.ToolTipOption.ToolTipMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Interactivity.ToolTipOptions.html#Syncfusion_WinForms_DataGrid_Interactivity_ToolTipOptions_ToolTipMode) property as `TrimmedCells`.
+By default, ToolTip will be displayed for all the cells. Data Grid provides support to display ToolTip only for the cells that contains trimmed text by setting value for [SfDataGrid.ToolTipOption.ToolTipMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Interactivity.ToolTipOptions.html#Syncfusion_WinForms_DataGrid_Interactivity_ToolTipOptions_ToolTipMode) property as `TrimmedCells`.
 
 {% tabs %}
 {% highlight c# %}
@@ -696,7 +696,7 @@ Me.sfDataGrid1.ToolTipOption.ToolTipMode = ToolTipMode.TrimmedCells
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays tooltip only for the trimmed cells](InteractiveFeatures_Images/ToolTip3.png)
+![displays tooltip only for the trimmed cells](InteractiveFeatures_Images/ToolTip3.png)
 
 ### Setting ToolTip Delay	
 
@@ -730,7 +730,7 @@ Me.sfDataGrid1.ToolTipOption.AutoPopDelay = 3000
 
 #### Styling
 
-SfDataGrid allows to customize the appearance of the ToolTip through [SfDataGrid.Style.ToolTipStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_ToolTipStyle) property.
+Data Grid allows to customize the appearance of the ToolTip through [SfDataGrid.Style.ToolTipStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_ToolTipStyle) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -747,11 +747,11 @@ Me.sfDataGrid1.Style.ToolTipStyle.BorderColor = Color.DarkBlue
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays the appearance of tooltip](InteractiveFeatures_Images/ToolTip4.png)
+![displays the appearance of tooltip](InteractiveFeatures_Images/ToolTip4.png)
 
 #### Conditional Styling
 
-SfDataGrid allows to customize the appearance of the ToolTip based on conditions through [ToolTipOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ToolTipOpening) event.
+Data Grid allows to customize the appearance of the ToolTip based on conditions through [ToolTipOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ToolTipOpening) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -778,11 +778,11 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays the appearance of the tooltip based on the condition](InteractiveFeatures_Images/ToolTip5.png)
+![displays the appearance of the tooltip based on the condition](InteractiveFeatures_Images/ToolTip5.png)
 
 ### Cancel ToolTip Opening
 
-SfDataGrid allows to cancel displaying the ToolTip for any particular cell/row or column by handling the `ToolTipOpening` event.
+Data Grid allows to cancel displaying the ToolTip for any particular cell/row or column by handling the `ToolTipOpening` event.
 
 {% tabs %}
 {% highlight c# %}
@@ -812,7 +812,7 @@ End Sub
 
 #### Change the Display Text for a Cell
 
-By default, SfDataGrid displays the ToolTip with the cell content as the ToolTip text. The ToolTip text for any particular cell can be changed by handling the `ToolTipOpening` event.
+By default, Data Grid displays the ToolTip with the cell content as the ToolTip text. The ToolTip text for any particular cell can be changed by handling the `ToolTipOpening` event.
 
 {% tabs %}
 {% highlight c# %}
@@ -837,7 +837,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays the tooltip with cell content as the tooltip text](InteractiveFeatures_Images/ToolTip6.png)
+![displays the tooltip with cell content as the tooltip text](InteractiveFeatures_Images/ToolTip6.png)
 
 {% tabs %}
 {% highlight c# %}
@@ -864,7 +864,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays the tooltip with cell content as the tooltip image](InteractiveFeatures_Images/ToolTip7.png)
+![displays the tooltip with cell content as the tooltip image](InteractiveFeatures_Images/ToolTip7.png)
 
 #### Display ToolTip with Beak
 
@@ -890,11 +890,11 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays the tooltip with beak](InteractiveFeatures_Images/ToolTip8.png)
+![displays the tooltip with beak](InteractiveFeatures_Images/ToolTip8.png)
 
 #### Showing ToolTip for empty cells
 
-By default, DataGrid do not show tooltip for empty cells. You can show tooltip for empty cells by handling the `ToolTipOpening` event.
+By default, Data Grid do not show tooltip for empty cells. You can show tooltip for empty cells by handling the `ToolTipOpening` event.
 
 {% tabs %}
 {% highlight c# %}
@@ -919,7 +919,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays the tooltip for a empty cell](InteractiveFeatures_Images/ToolTip9.png)
+![displays the tooltip for a empty cell](InteractiveFeatures_Images/ToolTip9.png)
 
-N> SfToolTip has used for the ToolTip support in the SfDataGrid. Refer [user guide](https://help.syncfusion.com/windowsforms/tooltip/overview) of SfToolTip for more customizations options.
+N> SfToolTip has used for the ToolTip support in the Data Grid. Refer [user guide](https://help.syncfusion.com/windowsforms/tooltip/overview) of SfToolTip for more customizations options.
 
