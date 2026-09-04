@@ -65,7 +65,7 @@ chartControl.Crosshair.Line.Width = 2
 {% endhighlight %}
 {% endtabs %}
 
-![Line customization](../Chart-User-Interactions-Images/crosshair-line.png)
+![Line Customization in Windows Forms Chart](../Chart-User-Interactions-Images/crosshair-line.png)
 
 ## Axis tooltip
 
@@ -110,7 +110,7 @@ chartControl.Crosshair.AxisTooltip.TextColor = Color.White
 
 {% endtabs %}
 
-![Line customization](../Chart-User-Interactions-Images/crosshair-axis-tooltip.png)
+![Axis Tooltip in Windows Forms Chart](../Chart-User-Interactions-Images/crosshair-axis-tooltip.png)
 
 ## Events
 
