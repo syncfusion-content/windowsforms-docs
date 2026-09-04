@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Multiple Columns in Windows Forms MultiColumnComboBox | Syncfusion®
-description: Display and manage multiple columns in the Windows Forms MultiColumnComboBox control for enhanced data presentation and selection.
+title: Multiple Columns in Windows Forms Multicolumn ComboBox | Syncfusion®
+description: Display and manage multiple columns in the Windows Forms Multicolumn ComboBox control for enhanced data presentation and selection.
 platform: WindowsForms
-control: MultiColumnComboBox
+control: Multicolumn ComboBox
 documentation: ug
 ---
 
-# Multiple Columns in Windows Forms MultiColumnComboBox
+# Multiple Columns in Windows Forms Multicolumn ComboBox
 
-MultiColumnComboBox control is a [ComboBoxAdv](https://help.syncfusion.com/windowsforms/classic/combobox/overview) control with multiple columns. Multiple columns will be enabled by default. To disable this, set [MultiColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html#Syncfusion_Windows_Forms_Tools_MultiColumnComboBox_MultiColumn) property to false. We can display the headers for the columns using ShowColumnHeader property. 
+Multicolumn ComboBox control is a ComboBox control with multiple columns. Multiple columns will be enabled by default. To disable this, set [MultiColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html#Syncfusion_Windows_Forms_Tools_MultiColumnComboBox_MultiColumn) property to false. We can display the headers for the columns using ShowColumnHeader property. 
 
 ![Multiple Columns](Overview_images/Overview_img325.jpeg) 
 
-We can bind external data to the MultiColumnComboBox control. Refer [DataBinding](/windowsforms/multicolumn-combobox/data-binding) topic to know more.
+We can bind external data to the Multicolumn ComboBox control. Refer [DataBinding](/windowsforms/multicolumn-combobox/data-binding) topic to know more.
 
 ## Selection color
 
@@ -39,7 +39,7 @@ Me.multiColumnComboBox1.AlphaBlendSelectionColor = Color.LightBlue
 
 ## DropDownWidth
 
-The [DropDownWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ComboDropDown.html#Syncfusion_Windows_Forms_Tools_ComboDropDown_DropDownWidth) property is used to set the width for the DropDown Popup of MultiColumnComboBox. Please find the code for the same:
+The [DropDownWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ComboDropDown.html#Syncfusion_Windows_Forms_Tools_ComboDropDown_DropDownWidth) property is used to set the width for the DropDown Popup of Multicolumn ComboBox. Please find the code for the same:
 
 {% tabs %}
 
@@ -60,11 +60,11 @@ Me.multiColumnComboBox1.DropDownWidth = 240
 
 ![DropDownWidth](Overview_images/Dropdownimage.png) 
 
- Fig 1: This screenshot shows the width sets for the DropDown popup of MultiColumnComboBox
+ Fig 1: This screenshot shows the width sets for the DropDown popup of Multicolumn ComboBox
 
 ## Custom filtering
 
-[MultiColumnCombobox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) supports custom filtering through which filter can be applied to all columns. To enable filtering support, [AllowFiltering](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html#Syncfusion_Windows_Forms_Tools_MultiColumnComboBox_AllowFiltering) property should be set to true.
+Multicolumn Combobox supports custom filtering through which filter can be applied to all columns. To enable filtering support, [AllowFiltering](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html#Syncfusion_Windows_Forms_Tools_MultiColumnComboBox_AllowFiltering) property should be set to true.
  
  {% tabs %}
 
