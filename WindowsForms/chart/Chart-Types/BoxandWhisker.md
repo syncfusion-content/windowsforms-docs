@@ -183,39 +183,3 @@ chartControl.Series(1).ConfigItems.BoxAndWhiskerItem.OutLierWidth = 60
 {% endtabs %}
 
 ![Box And Whisker OutLier Width in Windows Forms](../Chart-Types_images/windowsforms-box-and-whisker-outlier-width.png)
-
-## Customization options
-
-The following chart series properties are used as customization options for box and whisker chart:
-
-- [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border)
-- [ColumnDrawMode](https://help.syncfusion.com/windowsforms/chart/chart-series#columndrawmode)
-- [DisplayShadow](https://help.syncfusion.com/windowsforms/chart/chart-series#displayshadow)
-- [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
-- [ElementBorders](https://help.syncfusion.com/windowsforms/chart/chart-series#elementborders)
-- [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip)
-- [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font)
-- [HighlightInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#highlightinterior)
-- [ImageIndex](https://help.syncfusion.com/windowsforms/chart/chart-series#imageindex)
-- [Images](https://help.syncfusion.com/windowsforms/chart/chart-series#images)
-- [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior)
-- [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem)
-- [LightAngle](https://help.syncfusion.com/windowsforms/chart/chart-series#lightangle)
-- [LightColor](https://help.syncfusion.com/windowsforms/chart/chart-series#lightcolor)
-- [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name)
-- [PhongAlpha](https://help.syncfusion.com/windowsforms/chart/chart-series#phongalpha)
-- [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat)
-- [Rotate](https://help.syncfusion.com/windowsforms/chart/chart-series#rotate)
-- [ShadingMode](https://help.syncfusion.com/windowsforms/chart/chart-series#shadingmode)
-- [ShadowInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowinterior)
-- [ShadowOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowoffset)
-- [SmartLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#smartlabels)
-- [Spacing](https://help.syncfusion.com/windowsforms/chart/chart-series#spacing)
-- [Spacing Between Series](https://help.syncfusion.com/windowsforms/chart/chart-series#spacingbetweenseries)
-- [Summary](https://help.syncfusion.com/windowsforms/chart/chart-series#summary)
-- [Text](https://help.syncfusion.com/windowsforms/chart/chart-series#text-series)
-- [TextColor](https://help.syncfusion.com/windowsforms/chart/chart-series#textcolor)
-- [TextFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#textformat)
-- [TextOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#textoffset)
-- [TextOrientation](https://help.syncfusion.com/windowsforms/chart/chart-series#textorientation)
-- [Visible](https://help.syncfusion.com/windowsforms/chart/chart-series#visible)

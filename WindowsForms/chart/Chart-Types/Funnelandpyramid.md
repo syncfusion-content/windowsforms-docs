@@ -317,35 +317,6 @@ chartControl.Series(0).ConfigItems.PyramidItem.ShowSeriesTitle = True
 
 ![Pyramid Chart in Windows Forms](../Chart-Types_images/windowsforms-pyramid-show-title.png)
 
-### Customization options
-
-The following chart series properties are used as customization options for pyramid chart:
-
-- [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border)
-- [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
-- [DrawSeriesNameInDepth](https://help.syncfusion.com/windowsforms/chart/chart-series#drawseriesnameindepth)
-- [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip)
-- [FigureBase](https://help.syncfusion.com/windowsforms/chart/chart-series#figurebase)
-- [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font)
-- [GapRatio](https://help.syncfusion.com/windowsforms/chart/chart-series#gapratio)
-- [HighlightInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#highlightinterior)
-- [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior)
-- [LabelPlacement](https://help.syncfusion.com/windowsforms/chart/chart-series#labelplacement)
-- [LabelStyle](https://help.syncfusion.com/windowsforms/chart/chart-series#labelstyle)
-- [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem)
-- [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name)
-- [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat)
-- [PyramidMode](https://help.syncfusion.com/windowsforms/chart/chart-series#pyramidmode)
-- [ShowDataBindLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#showdatabindlabels)
-- [SmartLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#smartlabels)
-- [Summary](https://help.syncfusion.com/windowsforms/chart/chart-series#summary)
-- [Text](https://help.syncfusion.com/windowsforms/chart/chart-series#text-series)
-- [TextColor](https://help.syncfusion.com/windowsforms/chart/chart-series#textcolor)
-- [TextFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#textformat)
-- [TextOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#textoffset)
-- [TextOrientation](https://help.syncfusion.com/windowsforms/chart/chart-series#textorientation)
-- [Visible](https://help.syncfusion.com/windowsforms/chart/chart-series#visible)
-
 ## Funnel chart
 
 A funnel chart displays data in a funnel shape, where each section represents a portion of the total value. It is a single-series chart and does not use axes.
@@ -650,32 +621,3 @@ chartControl.Series(0).ConfigItems.FunnelItem.ShowSeriesTitle = True
 {% endtabs %}
 
 ![Funnel Show Series Title in Windows Forms](../Chart-Types_images/windowsforms-trapezoid-funnel-show-series-title.png)
-
-### Customization options
-
-The following chart series properties are used as customization options for funnel chart:
-
-- [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border)
-- [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
-- [DrawSeriesNameInDepth](https://help.syncfusion.com/windowsforms/chart/chart-series#drawseriesnameindepth)
-- [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip)
-- [FigureBase](https://help.syncfusion.com/windowsforms/chart/chart-series#figurebase)
-- [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font)
-- [FunnelMode](https://help.syncfusion.com/windowsforms/chart/chart-series#funnelmode)
-- [GapRatio](https://help.syncfusion.com/windowsforms/chart/chart-series#gapratio)
-- [HighlightInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#highlightinterior)
-- [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior)
-- [LabelPlacement](https://help.syncfusion.com/windowsforms/chart/chart-series#labelplacement)
-- [LabelStyle](https://help.syncfusion.com/windowsforms/chart/chart-series#labelstyle)
-- [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem)
-- [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name)
-- [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat)
-- [ShowDataBindLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#showdatabindlabels)
-- [SmartLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#smartlabels)
-- [Summary](https://help.syncfusion.com/windowsforms/chart/chart-series#summary)
-- [Text](https://help.syncfusion.com/windowsforms/chart/chart-series#text-series)
-- [TextColor](https://help.syncfusion.com/windowsforms/chart/chart-series#textcolor)
-- [TextFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#textformat)
-- [TextOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#textoffset)
-- [TextOrientation](https://help.syncfusion.com/windowsforms/chart/chart-series#textorientation)
-- [Visible](https://help.syncfusion.com/windowsforms/chart/chart-series#visible)

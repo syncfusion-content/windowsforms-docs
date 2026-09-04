@@ -135,36 +135,6 @@ chartControl.Series(0).ConfigItems.BubbleItem.EnablePhongStyle = False
 
 ![Bubble Chart Enable Phong Style in Windows Forms](../Chart-Types_images/windowsforms-bubble-phong-style-chart.png)
 
-### Customization options
-
-The following chart series properties are used as customization options for bubble chart:
-
-- [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border)
-- [BubbleType](https://help.syncfusion.com/windowsforms/chart/chart-series#bubbletype)
-- [DisplayShadow](https://help.syncfusion.com/windowsforms/chart/chart-series#displayshadow)
-- [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
-- [DrawSeriesNameInDepth](https://help.syncfusion.com/windowsforms/chart/chart-series#drawseriesnameindepth)
-- [ElementBorders](https://help.syncfusion.com/windowsforms/chart/chart-series#elementborders)
-- [EnablePhongStyle](https://help.syncfusion.com/windowsforms/chart/chart-series#enablephongstyle)
-- [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip)
-- [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font)
-- [HighlightInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#highlightinterior)
-- [ImageIndex](https://help.syncfusion.com/windowsforms/chart/chart-series#imageindex)
-- [Images](https://help.syncfusion.com/windowsforms/chart/chart-series#images)
-- [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior)
-- [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem)
-- [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name)
-- [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat)
-- [SmartLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#smartlabels)
-- [Spacing Between Series](https://help.syncfusion.com/windowsforms/chart/chart-series#spacingbetweenseries)
-- [Summary](https://help.syncfusion.com/windowsforms/chart/chart-series#summary)
-- [Text](https://help.syncfusion.com/windowsforms/chart/chart-series#text-series)
-- [TextColor](https://help.syncfusion.com/windowsforms/chart/chart-series#textcolor)
-- [TextFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#textformat)
-- [TextOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#textoffset)
-- [TextOrientation](https://help.syncfusion.com/windowsforms/chart/chart-series#textorientation)
-- [Visible](https://help.syncfusion.com/windowsforms/chart/chart-series#visible)
-
 ## Scatter chart
 
 A scatter chart (XY Chart) displays the relationship between two numerical variables by plotting data points on X and Y axes. The points are not connected by lines. 
@@ -230,30 +200,53 @@ chartControl.Series.Add(chartSeries)
 
 ![Scatter Chart in Windows Forms](../Chart-Types_images/windowsforms-scatter-chart.png)
 
-### Customization options
+### Scatter connection type
 
-The following chart series properties are used as customization options for scatter chart:
+The [ScatterConnectType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ScatterConnectType) property specifies how the data points in a scatter series are connected. The default value is [None](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ScatterConnectType.html).
 
-- [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
-- [DrawSeriesNameInDepth](https://help.syncfusion.com/windowsforms/chart/chart-series#drawseriesnameindepth)
-- [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip)
-- [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font)
-- [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior)
-- [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem)
-- [LightAngle](https://help.syncfusion.com/windowsforms/chart/chart-series#lightangle)
-- [LightColor](https://help.syncfusion.com/windowsforms/chart/chart-series#lightcolor)
-- [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name)
-- [PhongAlpha](https://help.syncfusion.com/windowsforms/chart/chart-series#phongalpha)
-- [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat)
-- [ScatterConnectType](https://help.syncfusion.com/windowsforms/chart/chart-series#scatterconnecttype)
-- [ScatterSplineTension](https://help.syncfusion.com/windowsforms/chart/chart-series#scattersplinetension)
-- [SmartLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#smartlabels)
-- [Summary](https://help.syncfusion.com/windowsforms/chart/chart-series#summary)
-- [Text](https://help.syncfusion.com/windowsforms/chart/chart-series#text-series)
-- [TextColor](https://help.syncfusion.com/windowsforms/chart/chart-series#textcolor)
-- [TextFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#textformat)
-- [TextOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#textoffset)
-- [TextOrientation](https://help.syncfusion.com/windowsforms/chart/chart-series#textorientation)
-- [ToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#tooltip)
-- [ToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#tooltipformat)
-- [Visible](https://help.syncfusion.com/windowsforms/chart/chart-series#visible)
+The following values are supported:
+
+- [None](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ScatterConnectType.html): Displays the scatter chart without connecting its data points.
+- [Line](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ScatterConnectType.html): Connects the scatter data points using straight lines.
+- [Spline](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ScatterConnectType.html): Connects the scatter data points using a spline curve.
+
+The following code connects the scatter data points using a spline curve.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ScatterConnectType =
+    ScatterConnectType.Spline;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ScatterConnectType =
+    ScatterConnectType.Spline
+{% endhighlight %}
+{% endtabs %}
+
+![Scatter Connect Type in Windows Forms](../Chart-Types_images/windowsforms-scatter-connect-type.png)
+
+
+### Scatter spline tension
+
+The [ScatterSplineTension](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ScatterSplineTension) property specifies the tension of the spline curve connecting the scatter data points.
+
+N> The [ScatterSplineTension](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ScatterSplineTension) property takes effect when the [ScatterConnectType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ScatterConnectType) property is set to [Spline](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ScatterConnectType.html).
+
+The following code configures the spline connection and its tension.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ScatterConnectType =
+    ScatterConnectType.Spline;
+
+chartControl.Series[0].ScatterSplineTension = 0.5;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ScatterConnectType =
+    ScatterConnectType.Spline
+
+chartControl.Series(0).ScatterSplineTension = 0.5
+{% endhighlight %}
+{% endtabs %}
+
+![Scatter Spline Tensiton in Windows Forms](../Chart-Types_images/windowsforms-scatter-spline-tension.png)
