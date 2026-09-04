@@ -9,9 +9,9 @@ documentation: ug
 
 # Serialization in Windows Forms Grid Control
 
-GridControl provide the support for [serialization](https://learn.microsoft.com/en-us/previous-versions/ms233843(v=vs.140)) and load the serialized grid’s schema information. Serialization is the process of saving the state of an object as a stream of bytes. The reverse of this process is called [de-serialization](https://learn.microsoft.com/en-us/dotnet/standard/serialization/how-to-deserialize-an-object).
+WinForms Grid Control provides the support for [serialization](https://learn.microsoft.com/en-us/previous-versions/ms233843(v=vs.140)) and load the serialized grid’s schema information. Serialization is the process of saving the state of an object as a stream of bytes. The reverse of this process is called [de-serialization](https://learn.microsoft.com/en-us/dotnet/standard/serialization/how-to-deserialize-an-object).
 
-GridControl has the different types of serialization techniques as follows,
+Grid Control has the different types of serialization techniques as follows,
 
 [SOAP](https://learn.microsoft.com/en-us/dotnet/standard/serialization/how-to-serialize-an-object-as-a-soap-encoded-xml-stream) - Helps convert the grid schema information to SOAP format.
 
@@ -59,11 +59,11 @@ Me.gridControl1.Model = GridModel.LoadBinary("GridSchema")
 
 ## XML 
 
-This serialization technique is used to store the data (schema) and Look and feel of the GridControl in to the XML file. This can be applied back to the grid at the time of deserialization.
+This serialization technique is used to store the data (schema) and Look and feel of the Grid Control in to the XML file. This can be applied back to the grid at the time of deserialization.
 
 ### Serialization 
 
-The schema and look and feel of the GridControl can be serialized by using the [SaveXml](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_SaveXml) method. 
+The schema and look and feel of the Grid Control can be serialized by using the [SaveXml](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_SaveXml) method. 
 
 {% tabs %} 
 {% highlight c# %}
@@ -79,7 +79,7 @@ Me.gridControl1.SaveXml("GridSchema")
 
 ### Deserialization 
 
-The [InitializeFromXml](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_InitializeFromXml_System_IO_Stream_) method is used to deserialize the contents of the XML file to restore the schema and look and feel of the GridControl.
+The [InitializeFromXml](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_InitializeFromXml_System_IO_Stream_) method is used to deserialize the contents of the XML file to restore the schema and look and feel of the Grid Control.
 
 {% tabs %} 
 {% highlight c# %}

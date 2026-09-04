@@ -9,7 +9,7 @@ documentation: ug
 ---
 # Zooming in Windows Forms Grid Control
 
-The GridControl allows the user to zoom in or out to the entire grid as well as the individual cells. To have this zooming support in grid, the [Syncfusion.GridHelperClasses.Windows.dll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClassesWindowsAssembly.html) assembly needs to be added into the assembly reference.
+The WinForms Grid Control allows the user to zoom in or out to the entire grid as well as the individual cells. To have this zooming support in grid, the [Syncfusion.GridHelperClasses.Windows.dll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClassesWindowsAssembly.html) assembly needs to be added into the assembly reference.
 
 ## Grid Level Zooming
 
@@ -17,24 +17,24 @@ The grid can be zoomed to the specific percentage by using the [ZoomGrid](https:
 
 {% tabs %}
 {% highlight c# %}
-//Enable zooming in GridControl
+//Enable zooming in Grid Control
 ZoomGrid zoom = new ZoomGrid(this.gridControl1);
 
 //Zoom the grid with the specific percentage
 zoom.zoomGrid("140");
 
-//To get the current zoom size of the GridControl
+//To get the current zoom size of the Grid Control
 int size = zoom.GetCurrentZoomSize(this.gridControl1);
 {% endhighlight %}
 
 {% highlight vb %}
-'Enable zooming in GridControl
+'Enable zooming in Grid Control
 Dim zoom As New ZoomGrid(Me.gridControl1)
 
 'Zoom the grid with the specific percentage
 zoom.zoomGrid("140")
 
-'To get the current zoom size of the GridControl
+'To get the current zoom size of the Grid Control
 Dim size As Integer = zoom.GetCurrentZoomSize(Me.gridControl1)
 {% endhighlight %}
 {% endtabs %}
@@ -48,12 +48,12 @@ This facilitates to display the clicked cell content in a maximized form. This s
 
 {% tabs %}
 {% highlight c# %}
-//To enable cell level zooming in GridControl
+//To enable cell level zooming in Grid Control
 ZoomGrid.ZoomGridControlCell = true;
 {% endhighlight %}
 
 {% highlight vb %}
-'To enable cell level zooming in GridControl
+'To enable cell level zooming in Grid Control
 ZoomGrid.ZoomGridControlCell = True
 {% endhighlight %}
 {% endtabs %}

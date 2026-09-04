@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Set the Number of Rows and Columns in WinForms Grid Control
 
-Dynamically changing the RowCount or ColCount properties while a GridControl is being displayed is an efficient way to add or remove rows and/or columns from a GridControl. Using the designer, set grid’s RowCount and ColCount properties. From code, set these properties after the call to InitializeComponent in the form's constructor (or anytime later in your code after the GridControl has been created). 
+Dynamically changing the RowCount or ColCount properties while a Grid Control is being displayed is an efficient way to add or remove rows and/or columns. Using the designer, set grid’s RowCount and ColCount properties. From code, set these properties after the call to InitializeComponent in the form's constructor (or anytime later in your code after the Control has been created). 
 
 {% tabs %}
 {% highlight c# %}

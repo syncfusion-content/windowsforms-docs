@@ -133,7 +133,7 @@ End Sub
 N> **ClipboardPasted** - This event is to be handled after a paste operation.
 
 ### Clipboard flags
-When the number of rows/columns copied is greater than the number of rows/columns count of the grid, then the grid will automatically add the additional columns/rows according to the copied content. To avoid the unwanted rows/columns to be appended to the GridControl, set the [ClipboardFlags](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCutPasteEventArgs.html#Syncfusion_Windows_Forms_Grid_GridCutPasteEventArgs_ClipboardFlags) as follows,
+When the number of rows/columns copied is greater than the number of rows/columns count of the grid, then the grid will automatically add the additional columns/rows according to the copied content. To avoid the unwanted rows/columns to be appended to the Grid Control, set the [ClipboardFlags](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCutPasteEventArgs.html#Syncfusion_Windows_Forms_Grid_GridCutPasteEventArgs_ClipboardFlags) as follows,
 {% tabs %}
 {% highlight c# %}
 // To Do not append additional rows/columns while pasting .
@@ -145,8 +145,8 @@ Me.gridControl1.CutPaste.ClipboardFlags = Me.gridControl1.CutPaste.ClipboardFlag
 {% endhighlight %}
 {% endtabs %}
 
-### Copy or Paste only cell Text in GridControl
-When the Copy/Paste is done with in the GridControl, it copies the style of the selected range of cells and pastes it to the targeted cells. This can be restricted to copy only the text of the grid cells by setting the `ClipboardFlags` as of follows,
+### Copy or Paste only cell Text in Grid Control
+When the Copy/Paste is done with in the Grid Control, it copies the style of the selected range of cells and pastes it to the targeted cells. This can be restricted to copy only the text of the grid cells by setting the `ClipboardFlags` as of follows,
 {% tabs %}
 {% highlight c# %}
 //Copy only the text of the cell without the styles.
@@ -367,7 +367,7 @@ End Sub
 {% endtabs %}
 
 ## Events 
-GridControl has provide various events to manage the clipboard content while performing cut, paste and copy operations. This section explains on how to customize the clipboard operations using events.
+Grid Control has provide various events to manage the clipboard content while performing cut, paste and copy operations. This section explains on how to customize the clipboard operations using events.
 
 ### Validating the cell value while Pasting
 The cell value can be validated at the time of pasting by using the [PasteCellText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_PasteCellText) event. When the content is invalid, set `e.Cancel` to `true`.

@@ -8,17 +8,17 @@ documentation: ug
 ---
 
 # Real-Time Applications in Windows Forms Grid Control
-GridControl can be used to create many real time application like Gaming Applications, Excel Like UI, Grid Folder Browser, Pivot Grid and much more according to the need of the user.
+WinForms Grid Control can be used to create many real time application like Gaming Applications, Excel Like UI, Grid Folder Browser, Pivot Grid and much more according to the need of the user.
 
 ## Gaming Applications
-Tetris game application can be created by GridControl. In this game the boxes will fall from top, the user need to arrange these boxes in proper order to get the points. This game application makes use of arrow keys to move the blocks and change the block shape. In this game there is option for display the next block and pause the game. It also contain the score board at the bottom.
+Tetris game application can be created by Grid Control. In this game the boxes will fall from top, the user need to arrange these boxes in proper order to get the points. This game application makes use of arrow keys to move the blocks and change the block shape. In this game there is option for display the next block and pause the game. It also contain the score board at the bottom.
 
 ![Real-Time-Applications_img1](Real-Time-Applications_images/Real-Time-Applications_img1.jpeg)
 
 N> A sample demonstrating this feature can be downloaded over [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Essential_Blocks_Demo2062614268.zip). 
 
 ## Excel like UI
-Microsoft Excel-like User Interface can be implemented in GridControl with the help of other controls like [RibbonControl](https://help.syncfusion.com/windowsforms/ribbon/overview), [GridAwareTextBox](https://help.syncfusion.com/windowsforms/grid-control/formulabar) and [TabBarSplitter](https://help.syncfusion.com/windowsforms/tab-splitter-container/overview). It contains the **Name Box** that shows the current selection range and **Formula Bar** supports the formula cell. This **Formula Bar** is made up of the `GridAwareTextBox` control. In the top it has the **Quick Access Toolbar** which contains the necessary tools and other options which are available in the Syncfusion<sup>®</sup> `RibbonControl`. Column header has the column letters and row header has the row numbers which was similar to Excel sheet. It contains the **Sheet Tab** which denotes the number of sheets. In the bottom it has the **Zoom Slider** and **Status Bar** which was similar to that of Excel sheet.
+Microsoft Excel-like User Interface can be implemented in Grid Control with the help of other controls like [RibbonControl](https://help.syncfusion.com/windowsforms/ribbon/overview), [GridAwareTextBox](https://help.syncfusion.com/windowsforms/grid-control/formulabar) and [TabBarSplitter](https://help.syncfusion.com/windowsforms/tab-splitter-container/overview). It contains the **Name Box** that shows the current selection range and **Formula Bar** supports the formula cell. This **Formula Bar** is made up of the `GridAwareTextBox` control. In the top it has the **Quick Access Toolbar** which contains the necessary tools and other options which are available in the Syncfusion<sup>®</sup> `RibbonControl`. Column header has the column letters and row header has the row numbers which was similar to Excel sheet. It contains the **Sheet Tab** which denotes the number of sheets. In the bottom it has the **Zoom Slider** and **Status Bar** which was similar to that of Excel sheet.
 
 ![Real-Time-Applications_img2](Real-Time-Applications_images/Real-Time-Applications_img2.jpeg)
 
@@ -26,7 +26,7 @@ A sample demonstrating this real time application is available under the followi
 **&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Product Showcase\Excel Like UI Demo**
 
 ## Grid Folder Browser
-GridControl can be used to develop a powerful `TreeView` control because of its flexibility. The tree nodes can be created through custom `TreeCell` cell type. The [GridStaticCellModel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStaticCellModel.html) class is inherited to create this cell type. The plus/minus buttons of the tree nodes are selected by using [ImageIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_ImageIndex) property.
+Grid Control can be used to develop a powerful `TreeView` control because of its flexibility. The tree nodes can be created through custom `TreeCell` cell type. The [GridStaticCellModel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStaticCellModel.html) class is inherited to create this cell type. The plus/minus buttons of the tree nodes are selected by using [ImageIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_ImageIndex) property.
 
 The following sample operates grid in virtual mode in order to populate the data dynamically on demand, i.e., when the tree is expanded. [QueryCellInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html), [QueryColCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html) and [QueryRowCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.IGridModelDataProvider.html#Syncfusion_Windows_Forms_Grid_IGridModelDataProvider_QueryRowCount_Syncfusion_Windows_Forms_Grid_GridRowColCountEventArgs_) events must be handled in order to implement virtual grid. These events provide basic information about the number of rows and columns and the values of the data.
 

@@ -15,7 +15,7 @@ Essential Grid provides support to print column and row header and horizontal an
 
 You can print column header using PrintColumnHeader property. 
 
-The following code illustrates how to print column header in GridControl: 
+The following code illustrates how to print column header in Grid Control: 
 
 {% tabs %}
 {% highlight c# %}
@@ -47,7 +47,7 @@ gridDataBoundGrid.PrintColumnHeader = True
 {% endhighlight %}
 {% endtabs %}
 
-The following code illustrates how to print the column header GridGrouping control: 
+The following code illustrates how to print the column header GridGroupingControl: 
 
 {% tabs %}
 {% highlight c# %}
@@ -67,7 +67,7 @@ gridGroupingControl1.PrintColumnHeader = True
 
 You can print row header using PrintRowHeader__property. 
 
-The following code illustrates how to print row header in GridControl: 
+The following code illustrates how to print row header in Grid Control: 
 
 {% tabs %}
 {% highlight c# %}
@@ -99,7 +99,7 @@ gridDataBoundGrid.PrintRowHeader = True
 {% endhighlight %}
 {% endtabs %}
 
-The following code illustrates how to print row header GridGrouping control: 
+The following code illustrates how to print row header GridGroupingControl: 
 
 {% tabs %}
 {% highlight c# %}
@@ -119,7 +119,7 @@ gridGroupingControl1.PrintRowHeader = True
 
 You can print horizontal lines using PrintHorizontalLines property. 
 
-The following code illustrates how to print horizontal lines in GridControl: 
+The following code illustrates how to print horizontal lines in Grid Control: 
 
 {% tabs %}
 {% highlight c# %}
@@ -151,7 +151,7 @@ gridDataBoundGrid.PrintHorizontalLines = True
 {% endhighlight %}
 {% endtabs %}
 
-The following code illustrates how to print horizontal lines GridGrouping control: 
+The following code illustrates how to print horizontal lines GridGroupingControl: 
 
 {% tabs %}
 {% highlight c# %}
@@ -171,7 +171,7 @@ gridGroupingControl1.PrintHorizontalLines = True
 
 You can print vertical lines using PrintVerticalLines__property. 
 
-The following code illustrates how to print vertical lines in GridControl: 
+The following code illustrates how to print vertical lines in Grid Control: 
 
 {% tabs %}
 {% highlight c# %}
@@ -203,7 +203,7 @@ gridDataBoundGrid.PrintVerticalLines = True
 {% endhighlight %}
 {% endtabs %}
 
- The following code illustrates how to print vertical lines GridGrouping control: 
+ The following code illustrates how to print vertical lines GridGroupingControl: 
 
 {% tabs %}
 {% highlight c# %}

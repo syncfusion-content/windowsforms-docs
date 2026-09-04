@@ -27,4 +27,4 @@ Me.gridControl1[2, 2].RadioButtonAlignment = ButtonAlignment.Horizontal
 {% endhighlight  %}
 {% endtabs %}
 
-![Align Radio button in Windows Forms GridControl](How-to-Align-Radio-Buttons_images/How-to-Align-Radio-Buttons_img1.png)
+![Align Radio button](How-to-Align-Radio-Buttons_images/How-to-Align-Radio-Buttons_img1.png)

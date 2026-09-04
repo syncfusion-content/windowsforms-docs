@@ -8,14 +8,14 @@ documentation: ug
 ---
 
 # Find and Replace in Windows Forms Grid Control
-The searching and replacing of text and numbers can be done as like the Find and Replace functionality in the Excel. This can be done by using dialog or programmatically. This feature can be added to the GridControl by including the `Syncfusion.GridHelperClasses.Windows.dll` to the assembly reference. The following classes are used to implement the `Find and Replace` technique in GridControl. 
+The searching and replacing of text and numbers can be done as like the Find and Replace functionality in the Excel. This can be done by using dialog or programmatically. This feature can be added to the Grid Control by including the `Syncfusion.GridHelperClasses.Windows.dll` to the assembly reference. The following classes are used to implement the `Find and Replace` technique in GridControl. 
 
 * [GridFindReplaceDialogSink](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFindReplaceDialogSink.html)<br/>
 * [GridFindReplaceDialog](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFindReplaceDialog.html)
 
 The `GridFindReplaceDialogSink` class is used to perform the `Find and Replace` of text in GridControl. The `GridFindReplaceDialog` is the built-in dialog which shows the options for finding and replacing of the text. If this dialog is used for finding and replacing, there is no need to implement the methods for finding and replacing the text programmatically. 
 
-The below example shows the `Find and Replace` dialog is shown in GridControl,
+The below example shows the `Find and Replace` dialog is shown in Grid Control,
 
 {% tabs %}
 {% highlight c# %}
@@ -84,7 +84,7 @@ Dim frEvents As New GridFindReplaceEventArgs(Me.txtSearchText.Text, "", options,
 {% endtabs %}
 
 ### Find and Replace using Keyboard Shortcut
-The Find and Replace dialog can be shown in GridControl as like Excel while pressing <kbd>CTRL</kbd> + <kbd>F</kbd> shortcut key.  This can be done by using the [CurrentCellKeyDown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_CurrentCellKeyDown) event as like below example,
+The Find and Replace dialog can be shown in Grid Control as like Excel while pressing <kbd>CTRL</kbd> + <kbd>F</kbd> shortcut key.  This can be done by using the [CurrentCellKeyDown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_CurrentCellKeyDown) event as like below example,
 
 {% tabs %}
 {% highlight c# %}
@@ -131,10 +131,10 @@ End Sub
 ![Find-and-Replace_img2](Find-and-Replace_images/Find-and-Replace_img2.jpeg)
 
 ## Programmatic Searching
-The `Find and Replace` of the text in GridControl can be customized or can be used other than the `GridFindReplaceDialog`. The [GridFindReplaceEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFindReplaceEventArgs.html) class provides the options to the `GridFindReplaceDialogSink` to perform the `Find and Replace` programmatically without having dialog.
+The `Find and Replace` of the text in Grid Control can be customized or can be used other than the `GridFindReplaceDialog`. The [GridFindReplaceEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFindReplaceEventArgs.html) class provides the options to the `GridFindReplaceDialogSink` to perform the `Find and Replace` programmatically without having dialog.
 
 ### Find and Find All
-To find first possible match at the earliest based on the search options, use the [Find](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFindReplaceDialogSink.html) method. The below code is used to find the text in GridControl
+To find first possible match at the earliest based on the search options, use the [Find](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFindReplaceDialogSink.html) method. The below code is used to find the text in Grid Control
 
 {% tabs %}
 {% highlight c# %}

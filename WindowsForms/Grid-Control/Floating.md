@@ -67,7 +67,7 @@ Me.gridControl1(6, 4).FloodCell = False
 ![Floating_img2](Floating_images/Floating_img2.jpeg)
 
 ## Finding a Floating Range of a Cell
-The [FloatingCells](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelFloatingCells.html) collection maintains the all the floating ranges of a GridControl. To find a floating range of a cell, [FindRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelFloatingCells.html#Syncfusion_Windows_Forms_Grid_GridModelFloatingCells_FindRange_System_Int32_System_Int32_) method can be used. If the specified cell with row index and column index is inside a floating range, a range will be returned. Otherwise it will return the empty range.
+The [FloatingCells](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelFloatingCells.html) collection maintains the all the floating ranges of a Grid Control. To find a floating range of a cell, [FindRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelFloatingCells.html#Syncfusion_Windows_Forms_Grid_GridModelFloatingCells_FindRange_System_Int32_System_Int32_) method can be used. If the specified cell with row index and column index is inside a floating range, a range will be returned. Otherwise it will return the empty range.
 
 {% tabs %}
 {% highlight c# %}

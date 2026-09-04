@@ -4774,7 +4774,7 @@ ZTEST(array, u0, sigma)
 * **Sigma** is the population (known) standard deviation. If omitted, the sample standard deviation is used.
 
 ## Custom Functions
-GridControl also supports adding custom functions in the function library. This section will explain how to add and remove functions in function library.
+WinForms Grid Control also supports adding custom functions in the function library. This section will explain how to add and remove functions in function library.
 
 ### Add Function
 A custom function can be added into the function library by using the [AddFunction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFormulaEngine.html#Syncfusion_Windows_Forms_Grid_GridFormulaEngine_AddFunction_System_String_Syncfusion_Windows_Forms_Grid_GridFormulaEngine_LibraryFunction_) method but before adding the function it is necessary to create a new formula. The below steps needs to be followed to create and add a custom formula into the function library.
@@ -5085,7 +5085,7 @@ Me.gridControl2(5, 3).Text = "=" & Me.gridControl1.Text & "!C3 + C4"
 
 
 ## Named Ranges
-GridControl supports named ranges along with Grid Formula Engine. Named ranges let the users to set up names for expressions or ranges, and then use these names in formulas. For example, if the name of the range, `B4:B12` is `Expenses`, then the formula `=Sum(Expenses)` can be used instead of `=Sum(B4:B12)`.
+Grid Control supports named ranges along with Grid Formula Engine. Named ranges let the users to set up names for expressions or ranges, and then use these names in formulas. For example, if the name of the range, `B4:B12` is `Expenses`, then the formula `=Sum(Expenses)` can be used instead of `=Sum(B4:B12)`.
 
 For adding the custom name for a particular range, [AddNamedRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFormulaEngine.html#Syncfusion_Windows_Forms_Grid_GridFormulaEngine_AddNamedRange_System_String_System_String_) property under the [GridFormulaEngine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFormulaEngine.html) has to be used. 
 
@@ -5115,7 +5115,7 @@ N> The following sample illustrates the use of Cross Sheet References and Named 
 ![Formula-Support_img1_5](Formula-Support_images/Formula-Support_img1_5.png)
 
 ### Named Range Collection Editor
-GridControl provides **Named Range Collection Editor**, in which it is possible to edit the named ranges. To display the **Named Range Collection Editor** make use of the method.
+Grid Control provides **Named Range Collection Editor**, in which it is possible to edit the named ranges. To display the **Named Range Collection Editor** make use of the method.
 {% tabs %}
 {% highlight c# %}
 GridFormulaCellModel cellModel = this.gridControl1.CellModels["FormulaCell"] as GridFormulaCellModel;

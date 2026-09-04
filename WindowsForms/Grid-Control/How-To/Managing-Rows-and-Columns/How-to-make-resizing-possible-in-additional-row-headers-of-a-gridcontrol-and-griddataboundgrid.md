@@ -9,9 +9,9 @@ documentation: ug
 
 # How to Resize Additional Row Headers in Windows Forms Grid Control
 
-This page explains How to make resizing possible in additional row headers of a GridControl and GridDataBoundGrid and more details.
+This page explains How to make resizing possible in additional row headers of a Grid Control and GridDataBoundGrid and more details.
 
-## How to make resizing possible in additional row headers of a GridControl and GridDataBoundGrid
+## How to make resizing possible in additional row headers of a Grid Control and GridDataBoundGrid
 
 The resizing of additional row headers on the grid can be made possible by setting ResizeColsBehavior flag to Grid.GridResizeCellsBehavior.InsideGrid.
 
