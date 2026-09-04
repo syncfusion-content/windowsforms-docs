@@ -227,6 +227,10 @@ chartControl.Series(0).ConfigItems.ColumnItem.ShadingMode = ChartColumnShadingMo
 
 The [LightAngle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartColumnConfigItem_LightAngle) property specifies the horizontal angle of the light source when the [ShadingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartColumnConfigItem_ShadingMode) property is set to [PhongCylinder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnShadingMode.html#Syncfusion_Windows_Forms_Chart_ChartColumnShadingMode_PhongCylinder). The angle is specified in radians, and the default value is `-Math.PI /4`.
 
+N>
+- The `LightAngle` property also applies to `Column Range`, `Stacking Column`, `Stacking Column 100`, `Bar`, `Box and Whisker`, `Gantt`, `Histogram`, `Tornado`, `Polar`, `Radar`, `Candle`, `HiLo`, and `HiLo Open Close` charts.
+- For `HiLo` and `HiLo Open Close` charts, the `LightAngle` property applies only in 3D mode.
+
 The following code sets the light angle to Math.PI / 2.
 
 {% tabs %}
@@ -247,6 +251,8 @@ chartControl.Series(0).ConfigItems.ColumnItem.LightAngle =
 ### Light color
 
 The [LightColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartColumnConfigItem_LightColor) property specifies the color of the light source when the [ShadingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartColumnConfigItem_ShadingMode) property is set to [PhongCylinder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnShadingMode.html#Syncfusion_Windows_Forms_Chart_ChartColumnShadingMode_PhongCylinder). If no color is specified, `White` is used as the light source color by default.
+
+N> The `LightColor` property also applies to `Bar`, `Box and Whisker`, `Gantt`, `Histogram`, `Tornado`, and `Radar` charts.
 
 The following code example demonstrates how to apply light color.
 
