@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Export in Windows Forms SyntaxEditor | Syncfusion®
-description: Export in Windows Forms SyntaxEditor enables exporting editor content with syntax highlighting to XML, HTML, RTF formats, and bitmap images.
+title: Export in Windows Forms Syntax Editor | Syncfusion®
+description: Export in Windows Forms Syntax Editor enables exporting editor content with syntax highlighting to XML, HTML, RTF formats, and bitmap images.
 platform: WindowsForms
-control: SyntaxEditor
+control: Syntax Editor
 documentation: ug
 ---
 
-# Export in Windows Forms SyntaxEditor
+# Export in Windows Forms Syntax Editor
 
-The EditControl has the ability to export its content with associated syntax highlighting information to XML, HTML, and RTF file formats.
+The Syntax Editor has the ability to export its content with associated syntax highlighting information to XML, HTML, and RTF file formats.
 
 ## Export as XML file
 
@@ -23,14 +23,14 @@ Description</th></tr>
 <tr>
 <td>
 {{ '[SaveAsXML](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SaveAsXML_System_String_)' | markdownify }}</td><td>
-Export the EditControl content into XML format and save it in any desired XML file.</td></tr>
+Export the Syntax Editor content into XML format and save it in any desired XML file.</td></tr>
 </table>
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Export the EditControl contents into XML format and save it into a XML file.
+// Export the Syntax Editor contents into XML format and save it into a XML file.
 
 this.editControl1.SaveAsXML("testXML.xml");
 
@@ -39,7 +39,7 @@ this.editControl1.SaveAsXML("testXML.xml");
 
 {% highlight VB %}
 
-' Export the EditControl contents into XML format and save it into a XML file.
+' Export the Syntax Editor contents into XML format and save it into a XML file.
 
 Me.editControl1.SaveAsXML("testXML.xml")
 
@@ -47,7 +47,7 @@ Me.editControl1.SaveAsXML("testXML.xml")
 
 {% endtabs %}
 
-The EditControl is also capable of providing XML source code for generating documents in the corresponding formats by using the following function.
+The Syntax Editor is also capable of providing XML source code for generating documents in the corresponding formats by using the following function.
 
 <table>
 <tr>
@@ -57,7 +57,7 @@ Description</th></tr>
 <tr>
 <td>
 {{ '[GetTextAsXML](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_GetTextAsXML)' | markdownify }}</td><td>
-Gets the source code to generate XML document for the text in the EditControl.</td></tr>
+Gets the source code to generate XML document for the text in the Syntax Editor.</td></tr>
 </table>
 
 {% tabs %}
@@ -101,14 +101,14 @@ Description</th></tr>
 <tr>
 <td>
 {{ '[SaveAsHTML](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SaveAsHTML_System_String_)' | markdownify }}</td><td>
-Export the EditControl content into HTML format and save it in any desired HTML file.</td></tr>
+Export the Syntax Editor content into HTML format and save it in any desired HTML file.</td></tr>
 </table>
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Export the EditControl contents into HTML format and save it into a HTML file.
+// Export the Syntax Editor contents into HTML format and save it into a HTML file.
 
 this.editControl1.SaveAsHTML("testHTML.html");
 
@@ -117,7 +117,7 @@ this.editControl1.SaveAsHTML("testHTML.html");
 
 {% highlight VB %}
 
-' Export the EditControl contents into HTML format and save it into a HTML file.
+' Export the Syntax Editor contents into HTML format and save it into a HTML file.
 
 Me.editControl1.SaveAsHTML("testHTML.html")
 
@@ -125,7 +125,7 @@ Me.editControl1.SaveAsHTML("testHTML.html")
 
 {% endtabs %}
 
-The EditControl is also capable of providing HTML source code for generating documents in the corresponding formats by using the following function.
+The Syntax Editor is also capable of providing HTML source code for generating documents in the corresponding formats by using the following function.
 
 <table>
 <tr>
@@ -135,7 +135,7 @@ Description</th></tr>
 <tr>
 <td>
 {{ '[GetTextAsHTML](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_GetTextAsHTML)' | markdownify }}</td><td>
-Gets the source code to generate HTML document for the text in the EditControl.</td></tr>
+Gets the source code to generate HTML document for the text in the Syntax Editor.</td></tr>
 </table>
 
 {% tabs %}
@@ -179,14 +179,14 @@ Description</th></tr>
 <tr>
 <td>
 {{ '[SaveAsRTF](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SaveAsRTF_System_String_)' | markdownify }}</td><td>
-Export the EditControl content into RTF format and save it in any desired RTF file.</td></tr>
+Export the Syntax Editor content into RTF format and save it in any desired RTF file.</td></tr>
 </table>
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Export the EditControl contents into RTF format and save it into a RTF file.
+// Export the Syntax Editor contents into RTF format and save it into a RTF file.
 
 this.editControl1.SaveAsRTF("testRTF.rtf");
 
@@ -195,7 +195,7 @@ this.editControl1.SaveAsRTF("testRTF.rtf");
 
 {% highlight VB %}
 
-' Export the EditControl contents into RTF format and save it into a RTF file.
+' Export the Syntax Editor contents into RTF format and save it into a RTF file.
 
 Me.editControl1.SaveAsRTF("testRTF.rtf")
 
@@ -203,7 +203,7 @@ Me.editControl1.SaveAsRTF("testRTF.rtf")
 
 {% endtabs %}
 
-The EditControl is also capable of providing RTF source code for generating documents in the corresponding formats by using the following function.
+The Syntax Editor is also capable of providing RTF source code for generating documents in the corresponding formats by using the following function.
 
 <table>
 <tr>
@@ -213,7 +213,7 @@ Description</th></tr>
 <tr>
 <td>
 {{ '[GetTextAsRTF](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_GetTextAsRTF)' | markdownify }}</td><td>
-Gets the source code to generate RTF document for the text in the EditControl.</td></tr>
+Gets the source code to generate RTF document for the text in the Syntax Editor.</td></tr>
 </table>
 
 {% tabs %}
@@ -250,13 +250,13 @@ C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Wi
 
 ## Bitmap generation
 
-Support to save the EditControl as image by using the [CreateBitmap](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_CreateBitmap) function.
+Support to save the Syntax Editor as image by using the [CreateBitmap](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_CreateBitmap) function.
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Creates bitmap of the EditControl.
+// Creates bitmap of the Syntax Editor.
 
 Bitmap bmp = this.editControl1.CreateBitmap();
 
@@ -265,7 +265,7 @@ Bitmap bmp = this.editControl1.CreateBitmap();
 
 {% highlight VB %}
 
-' Creates bitmap of the EditControl.
+' Creates bitmap of the Syntax Editor.
 
 Dim bmp as Bitmap = Me.editControl1.CreateBitmap()
 
@@ -273,4 +273,4 @@ Dim bmp as Bitmap = Me.editControl1.CreateBitmap()
 
 {% endtabs %}
 
-![Bitmap of syntax editor](Export_images/Export_img1.jpeg)
+![Bitmap of Syntax Editor](Export_images/Export_img1.jpeg)
