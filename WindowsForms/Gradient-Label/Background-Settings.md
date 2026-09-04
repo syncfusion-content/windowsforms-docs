@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Background Settings in Windows Forms GradientLabel | Syncfusion®
-description: Customize the background appearance of the Windows Forms GradientLabel control using gradient colors, styles, and fill settings.
+title: Background Settings in Windows Forms Gradient Label | Syncfusion®
+description: Customize the background appearance of the Windows Forms Gradient Label control using gradient colors, styles, and fill settings.
 platform: WindowsForms
-control: GradientLabel
+control: Gradient Label
 documentation: ug
 ---
 
-# Background Settings in Windows Forms GradientLabel
+# Background Settings in Windows Forms Gradient Label
 
-This section illustrates the background settings of the GradientLabel control.
+This section illustrates the background settings of the Gradient Label control.
 
-The GradientLabel control's background can be customized using the various options provided by the BackgroundColor property given below.
+The Gradient Label control's background can be customized using the various options provided by the BackgroundColor property given below.
 
 <table>
 <tr>
 <th>
-GradientLabel Properties</th><th>
+Gradient Label Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -62,4 +62,4 @@ Me.gradientLabel1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
- ![Windows Forms GradientLabel Image604](GradientLabel-Images/Overview_img604.jpeg)
+ ![Windows Forms Gradient Label Image604](GradientLabel-Images/Overview_img604.jpeg)

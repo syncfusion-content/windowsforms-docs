@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Theming in Windows Forms MessageBoxAdv | Syncfusion®
-description: Theming in Windows Forms MessageBoxAdv enables applying visual styles and appearance customization options to create consistent and modern dialog experiences.
+title: Theming in Windows Forms MessageBox | Syncfusion®
+description: Theming in Windows Forms MessageBox enables applying visual styles and appearance customization options to create consistent and modern dialog experiences.
 platform: WindowsForms
-control: MessageBoxAdv
+control: MessageBox
 documentation: ug
 ---
 
-# Theming in Windows Forms MessageBoxAdv
+# Theming in Windows Forms MessageBox
 
-This section explains the visual styles and customization support in MessageBoxAdv.
+This section explains the visual styles and customization support in MessageBox.
 
 ## Visual Styles
 
-MessageBoxAdv supports different visual styles for its appearance. Some of the available VisualStyles are as follows:
+MessageBox supports different visual styles for its appearance. Some of the available VisualStyles are as follows:
 
 * Default
 * Office2007
@@ -50,7 +50,7 @@ MessageBoxAdv.Show(Me,"Save changes?", "File Modified", MessageBoxButtons.YesNo,
 
 ### Office2007
 
-Office2007 Style MessageBox is available in Tools Windows. You can replace the .NET MessageBox with new MessageBoxAdv that supports standard color schemes and custom color schemes in Office 2007 style, for consistent look and feel. Custom Icons support is also included in MessageBoxAdv. To display the Message Box, call MessageBoxAdv.Show method.
+Office2007 Style MessageBox is available in Tools Windows. You can replace the .NET MessageBox with new MessageBox that supports standard color schemes and custom color schemes in Office 2007 style, for consistent look and feel. Custom Icons support is also included in MessageBox. To display the Message Box, call MessageBox.Show method.
 
 This option helps to set the following various color schemes:
 

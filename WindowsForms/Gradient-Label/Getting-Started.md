@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting Started with Windows Forms GradientLabel | Syncfusion®
-description: Learn how to get started with the Syncfusion® Windows Forms GradientLabel control. Explore setup, features, examples, and customization options.
+title: Getting Started with Windows Forms Gradient Label | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms Gradient Label control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
-control: GradientLabel
+control: Gradient Label
 documentation: ug
 ---
 
-# Getting Started with Windows Forms GradientLabel
+# Getting Started with Windows Forms Gradient Label
 
-This section briefly describes how to create a new Windows Forms project in Visual Studio and add the **GradientLabel** control with its basic functionalities.
+This section briefly describes how to create a new Windows Forms project in Visual Studio and add the **Gradient Label** control with its basic functionalities.
 
 ## Assembly deployment
 
@@ -17,9 +17,9 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 Refer to this [documentation](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to find more details about installing NuGet packages in a Windows Forms application.
 
-## Adding the GradientLabel control via designer
+## Adding the Gradient Label control via designer
 
-The following steps describe how to create a **GradientLabel** control via designer:
+The following steps describe how to create a **Gradient Label** control via designer:
 
 1. Create a new Windows Forms application in Visual Studio.
 
@@ -32,11 +32,11 @@ The following steps describe how to create a **GradientLabel** control via desig
     * Syncfusion.Tools.Base
     * Syncfusion.Tools.Windows
 
-![Drag and drop GradientLabel from toolbox](GradientLabel-Images/Overview_img600.jpeg) 
+![Drag and drop Gradient Label from toolbox](GradientLabel-Images/Overview_img600.jpeg) 
 
-## Adding the GradientLabel control via code
+## Adding the Gradient Label control via code
 
-The following steps describe how to create the **GradientLabel** control programmatically:
+The following steps describe how to create the **Gradient Label** control programmatically:
 
 1. Create a C# or VB application via Visual Studio.
 
@@ -116,4 +116,4 @@ Me.gradientLabel1.ForeColor = System.Drawing.Color.SeaShell
 
 {% endtabs %}
 
-![Windows Forms GradientLabel shows grdient style](GradientLabel-Images\gradientlabel_style.jpeg)
+![Windows Forms Gradient Label shows grdient style](GradientLabel-Images\gradientlabel_style.jpeg)

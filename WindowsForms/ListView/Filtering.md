@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Filtering in Windows Forms SfListView | Syncfusion®
-description: Filtering in Windows Forms SfListView enables users to display items based on specific criteria, helping organize, search, and manage data efficiently.
+title: Filtering in Windows FormsListView | Syncfusion®
+description: Filtering in Windows Forms ListView enables users to display items based on specific criteria, helping organize, search, and manage data efficiently.
 platform: windowsforms
-control: SfListView
+control: ListView
 documentation: ug
 ---
 
-# Filtering in Windows Forms SfListView
-This section explains how to filter the data and its related operations in the SfListView.
+# Filtering in Windows Forms ListView
+This section explains how to filter the data and its related operations in the ListView.
 
 ## Programmatic Filtering
-The SfListView supports to filter the data by setting the [SfListView.View.Filter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_Filter) property. You have to call the [SfListView.View.RefreshFilter()](//help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_RefreshFilter) method after assigning the Filter Property for refreshing the view.
+The ListView supports to filter the data by setting the [SfListView.View.Filter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_Filter) property. You have to call the [SfListView.View.RefreshFilter()](//help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_RefreshFilter) method after assigning the Filter Property for refreshing the view.
 
 The [FilterChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_FilterChanged) event is raised once filtering is applied to the [SfListView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html).                                   
 
@@ -40,7 +40,7 @@ public Boolean CustomFilter(Object obj)
 ![ListView Filtering1](Filtering_images/Filtering_img1.png)
 
 ## Filter based on multiple criteria
-The SfListView allows filtering the items based on multiple criteria.
+The ListView allows filtering the items based on multiple criteria.
 
 {% tabs %}
 {% highlight c# %}
@@ -94,7 +94,7 @@ End Sub
 {% endtabs %}
             
 ## Clear filtering
-The SfListView allows clearing the filters by setting the [View.Filter](//help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~Filter.html) to null and call the [View.RefreshFilter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_RefreshFilter) method.
+The ListView allows clearing the filters by setting the [View.Filter](//help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~Filter.html) to null and call the [View.RefreshFilter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_RefreshFilter) method.
 
 {% tabs %}
 {% highlight c# %}

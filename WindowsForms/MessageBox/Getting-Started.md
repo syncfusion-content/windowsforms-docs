@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Windows Forms MessageBoxAdv | Syncfusion®
-description: Learn how to get started with the Syncfusion® Windows Forms MessageBoxAdv control. Explore setup, features, examples, and customization options.
+title: Getting Started with Windows Forms MessageBox | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms MessageBox control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
-control: MessageBoxAdv
+control: MessageBox
 documentation: ug
 ---
 
-# Getting Started with Windows Forms MessageBoxAdv
+# Getting Started with Windows Forms MessageBox
 
 This section explains how to configure [MessageBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html) control in a Windows Forms application.
 
@@ -19,18 +19,18 @@ Please find more details regarding how to install the nuget packages in windows 
  
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
 
-## Creating simple application with MessageBoxAdv
+## Creating simple application with MessageBox
 
-You can create the Windows Forms application with MessageBoxAdv as follows:
+You can create the Windows Forms application with MessageBox as follows:
 
 1. [Creating the project](#creating-the-project)
-2. [Configure MessageBoxAdv](#configure-messageboxadv)
+2. [Configure MessageBox](#configure-messageboxadv)
 
 ## Creating the project
 
 Create a new Windows Forms project in the Visual Studio to display the MessageBoxAdv.
 
-## Configure MessageBoxAdv
+## Configure MessageBox
 
 To add control manually in C#, follow the given steps:
 
@@ -82,11 +82,11 @@ MessageBoxAdv.Show(this,"Save changes?", "File Modified", MessageBoxButtons.YesN
 
 {% endtabs %}
 
-![MessageBoxAdv in windows forms messagebox](MessageBoxAdv_images/MessageBoxAdv_img32.png)
+![MessageBox in windows forms messagebox](MessageBoxAdv_images/MessageBoxAdv_img32.png)
 
-## Appearance of MessageBoxAdv
+## Appearance of MessageBox
 
-The appearance of the MessageBoxAdv can be customized by using the following properties of the MetroStyleColorTable.
+The appearance of the MessageBox can be customized by using the following properties of the MetroStyleColorTable.
 
 * AbortButtonBackColor
 * CancelButtonBackColor
@@ -105,7 +105,7 @@ The appearance of the MessageBoxAdv can be customized by using the following pro
 
 {% highlight C# %}
 
-//MetroColor table for MessageBoxAdv
+//MetroColor table for MessageBox
 MetroStyleColorTable metroColorTable = new MetroStyleColorTable();
 //Sets the NoButton backColor
 metroColorTable.NoButtonBackColor = Color.Red;
@@ -122,7 +122,7 @@ MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Metro;
 
 {% highlight VB %}
 
-'MetroColor table for MessageBoxAdv
+'MetroColor table for MessageBox
 Dim metroColorTable As New MetroStyleColorTable()
 'Sets the NoButton backColor
 metroColorTable.NoButtonBackColor = Color.Red
@@ -139,4 +139,4 @@ MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Metro
 
 {% endtabs %}
 
-![WindowsForms MessageBoxAdv Appearance](MessageBoxAdv_images/MessageBoxAdv_appearance.png) 
+![WindowsForms MessageBox Appearance](MessageBoxAdv_images/MessageBoxAdv_appearance.png) 

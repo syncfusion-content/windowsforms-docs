@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Item Sizing in Windows Forms SfListView | Syncfusion®
-description: Item sizing in Windows Forms SfListView enables customizing the size of list items to improve content presentation, readability, and layout flexibility.
+title: Item Sizing in Windows Forms ListView | Syncfusion®
+description: Item sizing in Windows Forms ListView enables customizing the size of list items to improve content presentation, readability, and layout flexibility.
 platform: windowsforms
-control: SfListView
+control: ListView
 documentation: ug
 ---
 
-# Item Sizing in Windows Forms SfListView
-This section explains how to customize the item size in the SfListView.
+# Item Sizing in Windows Forms ListView
+This section explains how to customize the item size in the ListView.
 
 ## Customizing item and group height
 Height of an item and the group header can be changed by using the [SfListView.ItemHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_ItemHeight) and [SfListView.GroupHeaderHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_GroupHeaderHeight) properties respectively.
@@ -27,11 +27,11 @@ sfListView1.GroupHeaderHeight = 50
 ![WinForms ListView Item Sizing](Item Sizing_images/ItemSizing_img1.png)
 
 ## Customize item size of an item on-demand
-The SfListView allows customizing the height of an item on-demand by the [SfListView.QueryItemHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_QueryItemHeight) event using the item index. This event is raised whenever items come to view and triggered with [QueryItemHeightEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.Events.QueryItemHeightEventArgs.html).
+The ListView allows customizing the height of an item on-demand by the [SfListView.QueryItemHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_QueryItemHeight) event using the item index. This event is raised whenever items come to view and triggered with [QueryItemHeightEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.Events.QueryItemHeightEventArgs.html).
 
 The SfListView.QueryItemHeight event provides the following properties in their arguments:
 
-*	`ItemIndex`: Identifies a particular item in the SfListView.
+*	`ItemIndex`: Identifies a particular item in the ListView.
 *	`ItemData`: Identifies the underlying data bound to that item.
 *	`ItemHeight`: Identifies the height of the queried item. 
 *	`ItemType`: Identifies the item type of the queried item.
@@ -63,7 +63,7 @@ End Sub
 ![WinForms ListView item size of an item on-demand](Item Sizing_images/ItemSizing_img2.png)
 
 ## Auto fit the items based on content
-The SfListView allows dynamically adjusting size of the items based on the loaded content by defining the [SfListView.AutoFitMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_AutoFitMode) property. The control has two types of auto fit modes as listed as follows:
+The ListView allows dynamically adjusting size of the items based on the loaded content by defining the [SfListView.AutoFitMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_AutoFitMode) property. The control has two types of auto fit modes as listed as follows:
 
 *	`Height`: Auto fits the items based on the content.
 *	`None`: Layouts the items by `SfListView.ItemHeight`.

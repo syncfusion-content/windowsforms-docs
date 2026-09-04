@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Grouping in Windows Forms SfListView | Syncfusion®
-description: Grouping in Windows Forms SfListView enables organizing items into categories, improving data presentation, navigation, and management within lists.
+title: Grouping in Windows Forms ListView | Syncfusion®
+description: Grouping in Windows Forms ListView enables organizing items into categories, improving data presentation, navigation, and management within lists.
 platform: windowsforms
-control: SfListView
+control: ListView
 documentation: ug
 ---
 
-# Grouping in Windows Forms SfListView
+# Grouping in Windows Forms ListView
 A group represents collection of items belongs to a category. When grouping is applied, the data will be organized into different groups based on the key values. Each group is identified by its `Key` by which you can get the underlying data in the group.
 
 ## Programmatic grouping
-The SfListView allows programmatic grouping by defining the [GroupDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.GroupDescriptor.html) object and adding it into the [View.GroupDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_GroupDescriptors) collection. The GroupDescriptor object holds the following properties:
+The ListView allows programmatic grouping by defining the [GroupDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.GroupDescriptor.html) object and adding it into the [View.GroupDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_GroupDescriptors) collection. The GroupDescriptor object holds the following properties:
 
 * `PropertyName`: Describes the name of the property to be grouped.
 * `KeySelector`: Describes selector to return the group key.
@@ -32,7 +32,7 @@ sfListView1.View.GroupDescriptors.Add(New Syncfusion.DataSource.GroupDescriptor(
 ![ListView Grouping1](Grouping_images/Grouping_img1.png)
 
 ## Custom grouping             
-The SfListView supports grouping the items based on custom logic applied to the [SfListView.DataSource.GroupComparer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_GroupComparer) or [GroupDescriptor.Comparer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.GroupDescriptor.html#Syncfusion_DataSource_GroupDescriptor_Comparer) property added to the [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_GroupDescriptors) collection.
+The ListView supports grouping the items based on custom logic applied to the [SfListView.DataSource.GroupComparer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_GroupComparer) or [GroupDescriptor.Comparer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.GroupDescriptor.html#Syncfusion_DataSource_GroupDescriptor_Comparer) property added to the [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_GroupDescriptors) collection.
 In the custom group comparer, all the items present in a group compares each other based on the items count to each group sorted accordingly.
 
 {% tabs %}
@@ -110,7 +110,7 @@ End Class
 ![ListView Grouping2](Grouping_images/Grouping_img2.png)
 
 ## Grouping based on first character
-The SfListView supports grouping the items based on first character of the value assigned to the property name in [GroupDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.GroupDescriptor.html) by using the [KeySelector](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.GroupDescriptor.html#Syncfusion_DataSource_GroupDescriptor_KeySelector).
+The ListView supports grouping the items based on first character of the value assigned to the property name in [GroupDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.GroupDescriptor.html) by using the [KeySelector](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.GroupDescriptor.html#Syncfusion_DataSource_GroupDescriptor_KeySelector).
 
 {% tabs %}
 {% highlight c# %}
@@ -192,7 +192,7 @@ sfListView1.View.GroupDescriptors.Add(New Syncfusion.DataSource.GroupDescriptor(
 ![ListView Grouping5](Grouping_images/Grouping_img5.png)
 
 ## Group Expand and Collapse                 
-By default, the groups will be in expanded state in the SfListView. You can expand or collapse the group at runtime by tapping the group header, the group gets collapse if the group is in expand state and vice-versa.
+By default, the groups will be in expanded state in the ListView. You can expand or collapse the group at runtime by tapping the group header, the group gets collapse if the group is in expand state and vice-versa.
 
 ## Programmatic expand and collapse  
 
