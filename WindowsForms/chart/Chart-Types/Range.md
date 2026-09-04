@@ -77,33 +77,6 @@ profit.Style.Border.Width = 3
 
 ![HiLo Chart in WindowsForms](../Chart-Types_images/windowsforms-hilo-chart.png)
 
-### Customization options
-
-The following chart series properties are used as customization options for hilo chart:
-
-- [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
-- [DrawErrorBars](https://help.syncfusion.com/windowsforms/chart/chart-series#drawerrorbars)
-- [DrawSeriesNameInDepth](https://help.syncfusion.com/windowsforms/chart/chart-series#drawseriesnameindepth)
-- [ErrorBarsSymbolShape](https://help.syncfusion.com/windowsforms/chart/chart-series#errorbarssymbolshape)
-- [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip)
-- [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font)
-- [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior)
-- [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem)
-- [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name)
-- [PhongAlpha](https://help.syncfusion.com/windowsforms/chart/chart-series#phongalpha)
-- [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat)
-- [Rotate](https://help.syncfusion.com/windowsforms/chart/chart-series#rotate)
-- [ShadingMode](https://help.syncfusion.com/windowsforms/chart/chart-series#shadingmode)
-- [SmartLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#smartlabels)
-- [Spacing Between Series](https://help.syncfusion.com/windowsforms/chart/chart-series#spacingbetweenseries)
-- [Summary](https://help.syncfusion.com/windowsforms/chart/chart-series#summary)
-- [Text](https://help.syncfusion.com/windowsforms/chart/chart-series#text-series)
-- [TextColor](https://help.syncfusion.com/windowsforms/chart/chart-series#textcolor)
-- [TextFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#textformat)
-- [TextOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#textoffset)
-- [TextOrientation](https://help.syncfusion.com/windowsforms/chart/chart-series#textorientation)
-- [Visible](https://help.syncfusion.com/windowsforms/chart/chart-series#visible)
-
 ## Range column chart
 
 The range column chart is similar to the column chart, except that each column is rendered over a range. Therefore, the user must specify the starting and ending Y-axis values for each data point.
@@ -158,42 +131,6 @@ chartControl.Series.Add(secondServer)
 {% endtabs %}
 
 ![Range Column Chart in Windows Forms](../Chart-Types_images/windowsforms-column-range-chart.png)
-
-### Customization options
-
-The following chart series properties are used as customization options for range column chart:
-
-- [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border)
-- [ColumnDrawMode](https://help.syncfusion.com/windowsforms/chart/chart-series#columndrawmode)
-- [ColumnFixedWidth](https://help.syncfusion.com/windowsforms/chart/chart-series#columnfixedwidth)
-- [ColumnWidthMode](https://help.syncfusion.com/windowsforms/chart/chart-series#columnwidthmode)
-- [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
-- [DrawSeriesNameInDepth](https://help.syncfusion.com/windowsforms/chart/chart-series#drawseriesnameindepth)
-- [ElementBorders](https://help.syncfusion.com/windowsforms/chart/chart-series#elementborders)
-- [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip)
-- [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font)
-- [ImageIndex](https://help.syncfusion.com/windowsforms/chart/chart-series#imageindex)
-- [Images](https://help.syncfusion.com/windowsforms/chart/chart-series#images)
-- [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior)
-- [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem)
-- [LightAngle](https://help.syncfusion.com/windowsforms/chart/chart-series#lightangle)
-- [LightColor](https://help.syncfusion.com/windowsforms/chart/chart-series#lightcolor)
-- [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name)
-- [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat)
-- [Rotate](https://help.syncfusion.com/windowsforms/chart/chart-series#rotate)
-- [ShadingMode](https://help.syncfusion.com/windowsforms/chart/chart-series#shadingmode)
-- [ShadowInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowinterior)
-- [ShadowOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowoffset)
-- [SmartLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#smartlabels)
-- [Spacing](https://help.syncfusion.com/windowsforms/chart/chart-series#spacing)
-- [Spacing Between Series](https://help.syncfusion.com/windowsforms/chart/chart-series#spacingbetweenseries)
-- [Summary](https://help.syncfusion.com/windowsforms/chart/chart-series#summary)
-- [Text](https://help.syncfusion.com/windowsforms/chart/chart-series#text-series)
-- [TextColor](https://help.syncfusion.com/windowsforms/chart/chart-series#textcolor)
-- [TextFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#textformat)
-- [TextOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#textoffset)
-- [TextOrientation](https://help.syncfusion.com/windowsforms/chart/chart-series#textorientation)
-- [Visible](https://help.syncfusion.com/windowsforms/chart/chart-series#visible)
 
 ## Range area
 
@@ -259,32 +196,3 @@ chartControl.Series(0).ConfigItems.RangeAreaItem.SwapHighLowPoint =
     True
 {% endhighlight %}
 {% endtabs %}
-
-### Customization Options
-
-The following chart series properties are used as customization options for the range area chart:
-
-* [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border)
-* [DisplayShadow](https://help.syncfusion.com/windowsforms/chart/chart-series#displayshadow)
-* [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
-* [DrawSeriesNameInDepth](https://help.syncfusion.com/windowsforms/chart/chart-series#drawseriesnameindepth)
-* [ElementBorders](https://help.syncfusion.com/windowsforms/chart/chart-series#elementborders)
-* [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip)
-* [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font)
-* [HighlightInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#highlightinterior)
-* [ImageIndex](https://help.syncfusion.com/windowsforms/chart/chart-series#imageindex)
-* [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior)
-* [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem)
-* [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name)
-* [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat)
-* [Rotate](https://help.syncfusion.com/windowsforms/chart/chart-series#rotate)
-* [SeriesToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#seriestooltipformat)
-* [SmartLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#smartlabels)
-* [Spacing Between Series](https://help.syncfusion.com/windowsforms/chart/chart-series#spacingbetweenseries)
-* [Summary](https://help.syncfusion.com/windowsforms/chart/chart-series#summary)
-* [Text](https://help.syncfusion.com/windowsforms/chart/chart-series#text-series)
-* [TextColor](https://help.syncfusion.com/windowsforms/chart/chart-series#textcolor)
-* [TextFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#textformat)
-* [TextOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#textoffset)
-* [TextOrientation](https://help.syncfusion.com/windowsforms/chart/chart-series#textorientation)
-* [Visible](https://help.syncfusion.com/windowsforms/chart/chart-series#visible)

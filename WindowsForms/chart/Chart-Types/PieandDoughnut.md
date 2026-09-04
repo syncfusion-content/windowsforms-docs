@@ -13,12 +13,6 @@ documentation: ug
 
 A pie chart displays data as slices of a circle to show how each value contributes to the whole. The X-values represent the categories, while the Y-values determine the size of each slice.
 
-You can also customize the following features for pie chart:
-
-* **Optimize Pie Point Positions**: Small pie slices can be arranged more effectively for better readability using the [OptimizePiePointPositions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_OptimizePiePointPositions) property.
-* **Show Ticks**: Connector lines between slices and labels can be displayed using the [ShowTicks](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ShowTicks) property.
-* **Explode Slices**: Pie and doughnut slices can be separated from the chart to emphasize specific data points using the [ExplodedAll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ExplodedAll), [ExplodedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ExplodedIndex), and [ExplosionOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ExplosionOffset) properties.
-
 The following code example demonstrates how to create a pie Chart.
 
 {% tabs %}
@@ -205,7 +199,7 @@ series.ConfigItems.PieItem.FillMode =
 
 ### Gradient
 
-The [Gradient](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_Gradient) property specifies the gradient colors applied to the pie chart when the [PieType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieType) property is set to [Custom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieType.html#Syncfusion_Windows_Forms_Chart_ChartPieType_Custom). Since the default value is `null`, the Pie chart is rendered without a custom gradient until gradient colors are assigned.
+The [Gradient](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_Gradient) property specifies the gradient colors applied to the pie chart when the [PieType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieType) property is set to [Custom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieType.html#Syncfusion_Windows_Forms_Chart_ChartPieType_Custom). Since the default value is `null`, the pie chart is rendered without a custom gradient until gradient colors are assigned.
 
 {% tabs %}
 {% highlight c# %}
@@ -366,7 +360,10 @@ chartControl.Series(0).ConfigItems.PieItem.PieTilt =
 
 ### Pie with same radius
 
-The [PieWithSameRadius](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieWithSameRadius) property maintains the same pie radius when the [LabelStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_LabelStyle) property is set to [Outside](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAccumulationLabelStyle.html#Syncfusion_Windows_Forms_Chart_ChartAccumulationLabelStyle_Outside) or [OutsideInColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAccumulationLabelStyle.html#Syncfusion_Windows_Forms_Chart_ChartAccumulationLabelStyle_OutsideInColumn).
+The [PieWithSameRadius](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieWithSameRadius) property maintains the same pie radius when the [LabelStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_LabelStyle) property is set to [Outside](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAccumulationLabelStyle.html#Syncfusion_Windows_Forms_Chart_ChartAccumulationLabelStyle_Outside) or [OutsideInColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAccumulationLabelStyle.html#Syncfusion_Windows_Forms_Chart_ChartAccumulationLabelStyle_OutsideInColumn). The default value is `false`.
+
+N>
+The `PieWithSameRadius` property also applies to `Doughnut` charts.
 
 The following code enables the pie chart to maintain the same radius when labels are rendered outside the pie chart.
 
@@ -384,6 +381,9 @@ chartControl.Series(0).ConfigItems.PieItem.PieWithSameRadius = True
 ### Show databind labels
 
 The [ShowDataBindLabels](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_ShowDataBindLabels) property controls whether labels obtained from the bound data source are displayed on the pie segments, with `false` used as the default value.
+
+N>
+The `ShowDataBindLabels` property also applies to `Doughnut` charts.
 
 The following code displays labels from the bound data source on the pie chart segments.
 
@@ -511,7 +511,7 @@ chartControl.Series(0).ConfigItems.PieItem.ShowSeriesTitle = True
 
 ### Height coeficient
 
-When the chart is displayed in 3D mode, the [HeightCoeficient](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_HeightCoeficient) property controls the relative height of the pie Chart. For this property to take effect, [HeightByAreaDepth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_HeightByAreaDepth) must be set to false. Valid values range from 0.1f to 0.5f, and the default value is 0.2f.
+When the chart is displayed in 3D mode, the [HeightCoeficient](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_HeightCoeficient) property controls the relative height of the pie chart. For this property to take effect, [HeightByAreaDepth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_HeightByAreaDepth) must be set to false. Valid values range from `0.1f` to `0.5f`, and the default value is `0.2f`.
 
 The following code explain how to set the height coeficient.
 
@@ -534,55 +534,157 @@ series.ConfigItems.PieItem.HeightCoeficient = 0.1F
 
 ![Height Coefficient in Windows Forms](../Chart-Types_images/windowsforms-chart-height-coefficient.png)
 
-### Customization options
+### Explode all points
 
-The following chart series properties are used as customization options for pie chart:
+The [ExplodedAll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ExplodedAll) property controls whether all segments are separated from the center of a pie chart. The default value is `false`.
 
-- [AngleOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#angleoffset)
-- [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border)
-- [DisplayShadow](https://help.syncfusion.com/windowsforms/chart/chart-series#displayshadow)
-- [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
-- [DoughnutCoefficient](https://help.syncfusion.com/windowsforms/chart/chart-series#doughnutcoefficient)
-- [DrawSeriesNameInDepth](https://help.syncfusion.com/windowsforms/chart/chart-series#drawseriesnameindepth)
-- [ElementBorders](https://help.syncfusion.com/windowsforms/chart/chart-series#elementborders)
-- [ExplodedAll](https://help.syncfusion.com/windowsforms/chart/chart-series#explodedall)
-- [ExplodedIndex](https://help.syncfusion.com/windowsforms/chart/chart-series#explodedindex)
-- [ExplosionOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#explosionoffset)
-- [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip)
-- [FillMode](https://help.syncfusion.com/windowsforms/chart/chart-series#fillmode)
-- [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font)
-- [Gradient](https://help.syncfusion.com/windowsforms/chart/chart-series#gradient)
-- [HeightByAreaDepth](https://help.syncfusion.com/windowsforms/chart/chart-series#heightbyareadepth)
-- [HeightCoefficient](https://help.syncfusion.com/windowsforms/chart/chart-series#heightcoefficient)
-- [HighlightInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#highlightinterior)
-- [InSideRadius](https://help.syncfusion.com/windowsforms/chart/chart-series#insideradius)
-- [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior)
-- [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem)
-- [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name)
-- [OptimizePiePointPositions](https://help.syncfusion.com/windowsforms/chart/chart-series#optimizepiepointpositions)
-- [PieType](https://help.syncfusion.com/windowsforms/chart/chart-series#pietype)
-- [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat)
-- [ShadowInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowinterior)
-- [ShadowOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowoffset)
-- [ShowDataBindLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#showdatabindlabels)
-- [ShowTicks](https://help.syncfusion.com/windowsforms/chart/chart-series#showticks)
-- [SmartLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#smartlabels)
-- [Summary](https://help.syncfusion.com/windowsforms/chart/chart-series#summary)
-- [Text](https://help.syncfusion.com/windowsforms/chart/chart-series#text-series)
-- [TextColor](https://help.syncfusion.com/windowsforms/chart/chart-series#textcolor)
-- [TextFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#textformat)
-- [TextOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#textoffset)
-- [TextOrientation](https://help.syncfusion.com/windowsforms/chart/chart-series#textorientation)
-- [Visible](https://help.syncfusion.com/windowsforms/chart/chart-series#visible)
-- [VisibleAllPies](https://help.syncfusion.com/windowsforms/chart/chart-series#visibleallpies)
+N> The `ExplodedAll` property also applies to `Doughnut` charts.
+
+The following code explodes all segments in the Pie series.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ExplodedAll = true;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ExplodedAll = True
+{% endhighlight %}
+{% endtabs %}
+
+![ExplodeAll in Windows Forms](../Chart-Types_images/windowsforms-pie-exploded-all.png)
+
+### Exploded index
+
+The [ExplodedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ExplodedIndex) property specifies the index of the pie segment to separate from the center. The default value is `-1`, which indicates that no segment is exploded.
+
+N>
+- The `ExplodedIndex` property also applies to `Doughnut` charts.
+- The point index is zero-based. For example, a value of `2` explodes the third segment.
+
+The following code explodes the fourth segment in the Pie series.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ExplodedIndex = 2;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ExplodedIndex = 2
+{% endhighlight %}
+{% endtabs %}
+
+![Exploded Index in Windows Forms](../Chart-Types_images/windowsforms-pie-exploded-index.png)
+
+### Explosion offset
+
+The [ExplosionOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ExplosionOffset) property specifies the distance between an exploded segment and the center of the pie chart as a percentage. The default value is `20f`.
+
+N>
+- The `ExplosionOffset` property also applies to `Doughnut` charts.
+- The explosion offset is applied only when `ExplodedAll` is set to `true` or a valid segment index is assigned to `ExplodedIndex`.
+
+The following code explodes the fourth segment and sets the explosion offset to `30`.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ExplodedAll = true;
+chartControl.Series[0].ExplosionOffset = 30f;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series[0].ExplodedAll = True
+chartControl.Series(0).ExplosionOffset = 30.0F
+{% endhighlight %}
+{% endtabs %}
+
+![Explosion OffSet in Windows Forms](../Chart-Types_images/windowsforms-pie-explosion-offset.png)
+
+### Optimize pie point positions
+
+The [OptimizePiePointPositions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_OptimizePiePointPositions) property controls whether the pie segments are optimized for positioning. The default value is `true`.
+
+The following code enables position optimization for the Pie segments.
+
+{% tabs %}
+{% highlight c# %}
+ChartSeries series = new ChartSeries("Series Name", ChartSeriesType.Pie);
+
+series.Points.Add(0, 20);
+series.Points.Add(1, 28);
+series.Points.Add(2, 23);
+series.Points.Add(3, 10);
+series.Points.Add(4, 12);
+series.Points.Add(5, 3);
+series.Points.Add(6, 2);
+series.ExplodedIndex = 2;
+
+series.OptimizePiePointPositions = false;
+
+chartControl.Series.Add(series);
+{% endhighlight %}
+{% highlight vb %}
+Dim series As New ChartSeries(
+    "Series Name",
+    ChartSeriesType.Pie)
+
+series.Points.Add(0, 20)
+series.Points.Add(1, 28)
+series.Points.Add(2, 23)
+series.Points.Add(3, 10)
+series.Points.Add(4, 12)
+series.Points.Add(5, 3)
+series.Points.Add(6, 2)
+
+series.ExplodedIndex = 2
+series.OptimizePiePointPositions = False
+
+chartControl.Series.Add(series)
+{% endhighlight %}
+{% endtabs %}
+
+![Optimize Pie Point Position in Windows Forms](../Chart-Types_images/windowsforms-pie-optimized-point-positions.png)
+
+### Show ticks
+
+The [ShowTicks](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ShowTicks) property controls whether tick lines are displayed between pie segments and their outside labels. The default value is `false`.
+
+The following code displays tick lines for the pie series.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ShowTicks = false;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ShowTicks = False
+{% endhighlight %}
+{% endtabs %}
+
+![Optimize Pie Point Position in Windows Forms](../Chart-Types_images/windowsforms-pie-show-ticks.png)
+
+### Divide area
+
+The [DivideArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_DivideArea) property specifies whether the available chart area is divided among multiple pie series. The default value is `true`.
+
+The following code displays multiple Pie series without dividing the chart area and arranges the legend items in three rows.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].DivideArea = false;
+chartControl.Legend.RowsCount = 3;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).DivideArea = False
+chartControl.Legend.RowsCount = 3
+{% endhighlight %}
+{% endtabs %}
+
+![Optimize Pie Point Position in Windows Forms](../Chart-Types_images/windowsforms-visible-all-pies.png)
 
 ## Doughnut chart
 
-Doughnut chart is a variation of a pie Chart that displays data as slices in a ring-shaped circle with a hollow center. It is used to show the proportion or percentage contribution of categories to the whole dataset.
+Doughnut chart is a variation of a pie chart that displays data as slices in a ring-shaped circle with a hollow center. It is used to show the proportion or percentage contribution of categories to the whole dataset.
 
 ### Doughnut coeficient
 
-The [DoughnutCoeficient](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_DoughnutCoeficient) property is used to render a pie Chart as a Doughnut Chart. It specifies the size of the hollow center as a fraction of the chart's radius. By default, the value is `0.0`, which renders the chart as a full pie Chart. Valid values range from `0.0` to `0.9`.
+The [DoughnutCoeficient](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_DoughnutCoeficient) property is used to render a pie chart as a Doughnut Chart. It specifies the size of the hollow center as a fraction of the chart's radius. By default, the value is `0.0`, which renders the chart as a full pie chart. Valid values range from `0.0` to `0.9`.
 
 The following code displays doughnut chart using DoughnutCoeficient property.
 {% tabs %}
@@ -599,45 +701,3 @@ series.ConfigItems.PieItem.DoughnutCoeficient = 0.5F
 {% endtabs %}
 
 ![Doughnut Coefficient in Windows Forms](../Chart-Types_images/windowsforms-chart-doughnut-coefficient.png)
-
-### Customization options
-
-The following chart series properties are used as customization options for doughnut chart:
-
-- [AngleOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#angleoffset)
-- [Border](https://help.syncfusion.com/windowsforms/chart/chart-series#border)
-- [DisplayShadow](https://help.syncfusion.com/windowsforms/chart/chart-series#displayshadow)
-- [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
-- [DoughnutCoefficient](https://help.syncfusion.com/windowsforms/chart/chart-series#doughnutcoefficient)
-- [DrawSeriesNameInDepth](https://help.syncfusion.com/windowsforms/chart/chart-series#drawseriesnameindepth)
-- [ElementBorders](https://help.syncfusion.com/windowsforms/chart/chart-series#elementborders)
-- [ExplodedAll](https://help.syncfusion.com/windowsforms/chart/chart-series#explodedall)
-- [ExplodedIndex](https://help.syncfusion.com/windowsforms/chart/chart-series#explodedindex)
-- [ExplosionOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#explosionoffset)
-- [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip)
-- [FillMode](https://help.syncfusion.com/windowsforms/chart/chart-series#fillmode)
-- [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font)
-- [Gradient](https://help.syncfusion.com/windowsforms/chart/chart-series#gradient)
-- [HeightByAreaDepth](https://help.syncfusion.com/windowsforms/chart/chart-series#heightbyareadepth)
-- [HeightCoefficient](https://help.syncfusion.com/windowsforms/chart/chart-series#heightcoefficient)
-- [HighlightInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#highlightinterior)
-- [InSideRadius](https://help.syncfusion.com/windowsforms/chart/chart-series#insideradius)
-- [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior)
-- [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem)
-- [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name)
-- [OptimizePiePointPositions](https://help.syncfusion.com/windowsforms/chart/chart-series#optimizepiepointpositions)
-- [PieType](https://help.syncfusion.com/windowsforms/chart/chart-series#pietype)
-- [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat)
-- [ShadowInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowinterior)
-- [ShadowOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowoffset)
-- [ShowDataBindLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#showdatabindlabels)
-- [ShowTicks](https://help.syncfusion.com/windowsforms/chart/chart-series#showticks)
-- [SmartLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#smartlabels)
-- [Summary](https://help.syncfusion.com/windowsforms/chart/chart-series#summary)
-- [Text](https://help.syncfusion.com/windowsforms/chart/chart-series#text-series)
-- [TextColor](https://help.syncfusion.com/windowsforms/chart/chart-series#textcolor)
-- [TextFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#textformat)
-- [TextOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#textoffset)
-- [TextOrientation](https://help.syncfusion.com/windowsforms/chart/chart-series#textorientation)
-- [Visible](https://help.syncfusion.com/windowsforms/chart/chart-series#visible)
-- [VisibleAllPies](https://help.syncfusion.com/windowsforms/chart/chart-series#visibleallpies)

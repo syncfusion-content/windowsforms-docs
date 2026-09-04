@@ -96,35 +96,138 @@ chartControl.Series(0).ConfigItems.LineItem.DisableLineRegion = True
 {% endhighlight %}
 {% endtabs %}
 
-### Customization options
+### Draw error bars
 
-The following chart series properties are used as customization options for spline line chart:
+The [DrawErrorBars](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_DrawErrorBars) property controls whether error bars are displayed to indicate the uncertainty range of each data point. The default value is `false`.
 
-- [DisplayShadow](https://help.syncfusion.com/windowsforms/chart/chart-series#displayshadow)
-- [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
-- [DrawSeriesNameInDepth](https://help.syncfusion.com/windowsforms/chart/chart-series#drawseriesnameindepth)
-- [ElementBorders](https://help.syncfusion.com/windowsforms/chart/chart-series#elementborders)
-- [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip)
-- [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font)
-- [HighlightInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#highlightinterior)
-- [ImageIndex](https://help.syncfusion.com/windowsforms/chart/chart-series#imageindex)
-- [Images](https://help.syncfusion.com/windowsforms/chart/chart-series#images)
-- [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior)
-- [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem)
-- [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name)
-- [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat)
-- [Rotate](https://help.syncfusion.com/windowsforms/chart/chart-series#rotate)
-- [ShadowInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowinterior)
-- [ShadowOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowoffset)
-- [SmartLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#smartlabels)
-- [Spacing Between Series](https://help.syncfusion.com/windowsforms/chart/chart-series#spacingbetweenseries)
-- [Summary](https://help.syncfusion.com/windowsforms/chart/chart-series#summary)
-- [Text](https://help.syncfusion.com/windowsforms/chart/chart-series#text-series)
-- [TextColor](https://help.syncfusion.com/windowsforms/chart/chart-series#textcolor)
-- [TextFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#textformat)
-- [TextOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#textoffset)
-- [TextOrientation](https://help.syncfusion.com/windowsforms/chart/chart-series#textorientation)
-- [Visible](https://help.syncfusion.com/windowsforms/chart/chart-series#visible)
+N>
+- The second Y-value, `Series.Points[i].YValues[1]`, specifies the error range. For example, a value of `5` indicates an error range of `-5` to `+5` from the primary Y-value.
+- The `DrawErrorBars` property also applies to `Column` and `HiLo` charts.
+
+The following code displays error bars for the Line series.
+
+{% tabs %}
+{% highlight c# %}
+ChartSeries series = new ChartSeries(
+    "Sales",
+    ChartSeriesType.Line);
+
+// The second Y-value indicates the error range.
+series.Points.Add(1, new double[] { 20, 5 });
+series.Points.Add(2, new double[] { 70, 6 });
+series.Points.Add(3, new double[] { 10, 3 });
+series.Points.Add(4, new double[] { 40, 6 });
+
+series.Text = series.Name;
+
+// Displays error bars in the Line series.
+series.ConfigItems.ErrorBars.Enabled = true;
+
+// Adds the series to the chart.
+chartControl.Series.Add(series);
+{% endhighlight %}
+{% highlight vb %}
+' Creates a Line series.
+Dim series As New ChartSeries(
+    "Sales",
+    ChartSeriesType.Line)
+
+' The second Y-value indicates the error range.
+series.Points.Add(1, New Double() {20, 5})
+series.Points.Add(2, New Double() {70, 6})
+series.Points.Add(3, New Double() {10, 3})
+series.Points.Add(4, New Double() {40, 6})
+
+series.Text = series.Name
+
+' Displays error bars in the Line series.
+series.ConfigItems.ErrorBars.Enabled = True
+
+' Adds the series to the chart.
+chartControl.Series.Add(series)
+{% endhighlight %}
+{% endtabs %}
+
+
+![Draw Error Bars in Windows Forms](../Chart-Types_images/windowsforms-column-error-bars.png)
+
+### Rotate
+
+The [Rotate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_Rotate) property controls whether the chart area is rotated. The default value is `false`.
+
+N> The `Rotate` property also applies to `Column`, `Bar`, `Area`, `Spline`, `Step Line`, `Box and Whisker`, `Histogram`, `Polar`, `Radar`, `Bubble`, and `Scatter` charts.
+
+The following code rotates the Line chart.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].Rotate = true;
+chartControl.Series[1].Rotate = true;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).Rotate = True
+chartControl.Series(1).Rotate = True
+{% endhighlight %}
+{% endtabs %}
+
+![Draw Error Bars in Windows Forms](../Chart-Types_images/windowsforms-line-chart-rotate.png)
+
+### Hit test radius
+
+The [HitTestRadius](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStyleInfo.html#Syncfusion_Windows_Forms_Chart_ChartStyleInfo_HitTestRadius) property specifies the radius around a data point that is considered part of the point during hit testing. Increasing the value makes the data point easier to detect during mouse interactions.
+
+N> The `HitTestRadius` property also applies to `Step Line` charts.
+
+The following code sets the hit-test radius and displays a message when the user clicks within the specified radius of a Line chart data point.
+
+{% tabs %}
+{% highlight c# %}
+// Sets the hit-test radius for the first Line series.
+chartControl.Series[0].Style.HitTestRadius = 20f;
+
+// Displays visible symbols at the data points.
+firstServer.Style.Symbol.Shape = ChartSymbolShape.Circle;
+firstServer.Style.Symbol.Size = new Size(8, 8);
+firstServer.Style.Symbol.Color = Color.Black;
+
+// Subscribes to the chart-region click event.
+chartControl.ChartRegionClick += chartControl_ChartRegionClick;
+
+private void chartControl_ChartRegionClick(
+    object sender,
+    ChartRegionMouseEventArgs e)
+{
+    if (e.Region != null && e.Region.IsChartPoint)
+    {
+        MessageBox.Show("Point is hit.");
+    }
+}
+{% endhighlight %}
+{% highlight vb %}
+' Sets the hit-test radius for the first Line series.
+chartControl.Series(0).Style.HitTestRadius = 20.0F
+
+' Displays visible symbols at the data points.
+firstServer.Style.Symbol.Shape = ChartSymbolShape.Circle
+firstServer.Style.Symbol.Size = New Size(8, 8)
+firstServer.Style.Symbol.Color = Color.Black
+
+' Subscribes to the chart-region click event.
+AddHandler chartControl.ChartRegionClick,
+    AddressOf chartControl_ChartRegionClick
+
+Private Sub chartControl_ChartRegionClick(
+    sender As Object,
+    e As ChartRegionMouseEventArgs)
+
+    If e.Region IsNot Nothing AndAlso e.Region.IsChartPoint Then
+        MessageBox.Show("Point is hit.")
+    End If
+End Sub
+{% endhighlight %}
+{% endtabs %}
+
+![Hit Test Radius in Windows Forms](../Chart-Types_images/windowsforms-line-hit-test-radius.png)
 
 ## Rotated spline chart
 
@@ -179,35 +282,6 @@ chartControl.Series.Add(secondServer)
 {% endtabs %}
 
 ![Rotated Chart in Windows Forms](../Chart-Types_images/windowsforms-rotated-spline-chart.png)
-
-### Customization option
-
-The following chart series properties are used as customization options for rotated spline chart:
-
-- [DisplayShadow](https://help.syncfusion.com/windowsforms/chart/chart-series#displayshadow)
-- [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
-- [DrawSeriesNameInDepth](https://help.syncfusion.com/windowsforms/chart/chart-series#drawseriesnameindepth)
-- [ElementBorders](https://help.syncfusion.com/windowsforms/chart/chart-series#elementborders)
-- [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip)
-- [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font)
-- [HighlightInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#highlightinterior)
-- [ImageIndex](https://help.syncfusion.com/windowsforms/chart/chart-series#imageindex)
-- [Images](https://help.syncfusion.com/windowsforms/chart/chart-series#images)
-- [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior)
-- [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem)
-- [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name)
-- [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat)
-- [ShadowInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowinterior)
-- [ShadowOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowoffset)
-- [SmartLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#smartlabels)
-- [Spacing Between Series](https://help.syncfusion.com/windowsforms/chart/chart-series#spacingbetweenseries)
-- [Summary](https://help.syncfusion.com/windowsforms/chart/chart-series#summary)
-- [Text](https://help.syncfusion.com/windowsforms/chart/chart-series#text-series)
-- [TextColor](https://help.syncfusion.com/windowsforms/chart/chart-series#textcolor)
-- [TextFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#textformat)
-- [TextOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#textoffset)
-- [TextOrientation](https://help.syncfusion.com/windowsforms/chart/chart-series#textorientation)
-- [Visible](https://help.syncfusion.com/windowsforms/chart/chart-series#visible)
 
 ## Step line chart
 
@@ -271,6 +345,8 @@ chartControl.Series.Add(secondServer)
 
 The [Inverted](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStepConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartStepConfigItem_Inverted) property specifies whether the step line is rendered in an inverted direction in a step chart, with `false` used as the default value.
 
+N> The `Inverted` property also applies to `Step Area` charts.
+
 The following code enables inverted step-line rendering.
 
 {% tabs %}
@@ -307,35 +383,3 @@ chartControl.Series(0).ConfigItems.StepItem.Inverted = True
 {% endtabs %}
 
 ![Step Line Inverted in Windows Forms](../Chart-Types_images/windowsforms-step-line-inverted.png)
-
-### Customization option
-
-The following chart series properties are used as customization options for step line chart:
-
-- [DisplayShadow](https://help.syncfusion.com/windowsforms/chart/chart-series#displayshadow)
-- [DisplayText](https://help.syncfusion.com/windowsforms/chart/chart-series#displaytext)
-- [DrawSeriesNameInDepth](https://help.syncfusion.com/windowsforms/chart/chart-series#drawseriesnameindepth)
-- [ElementBorders](https://help.syncfusion.com/windowsforms/chart/chart-series#elementborders)
-- [FancyToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#fancytooltip)
-- [Font](https://help.syncfusion.com/windowsforms/chart/chart-series#font)
-- [HighlightInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#highlightinterior)
-- [HitTestRadius](https://help.syncfusion.com/windowsforms/chart/chart-series#hittestradius)
-- [ImageIndex](https://help.syncfusion.com/windowsforms/chart/chart-series#imageindex)
-- [Images](https://help.syncfusion.com/windowsforms/chart/chart-series#images)
-- [Interior](https://help.syncfusion.com/windowsforms/chart/chart-series#interior)
-- [LegendItem](https://help.syncfusion.com/windowsforms/chart/chart-series#legenditem)
-- [Name](https://help.syncfusion.com/windowsforms/chart/chart-series#name)
-- [PointsToolTipFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#pointstooltipformat)
-- [Rotate](https://help.syncfusion.com/windowsforms/chart/chart-series#rotate)
-- [ShadowInterior](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowinterior)
-- [ShadowOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#shadowoffset)
-- [SmartLabels](https://help.syncfusion.com/windowsforms/chart/chart-series#smartlabels)
-- [Spacing Between Series](https://help.syncfusion.com/windowsforms/chart/chart-series#spacingbetweenseries)
-- [StepItem.Inverted](https://help.syncfusion.com/windowsforms/chart/chart-series#stepitem)
-- [Summary](https://help.syncfusion.com/windowsforms/chart/chart-series#summary)
-- [Text](https://help.syncfusion.com/windowsforms/chart/chart-series#text-series)
-- [TextColor](https://help.syncfusion.com/windowsforms/chart/chart-series#textcolor)
-- [TextFormat](https://help.syncfusion.com/windowsforms/chart/chart-series#textformat)
-- [TextOffset](https://help.syncfusion.com/windowsforms/chart/chart-series#textoffset)
-- [TextOrientation](https://help.syncfusion.com/windowsforms/chart/chart-series#textorientation)
-- [Visible](https://help.syncfusion.com/windowsforms/chart/chart-series#visible)
