@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance in Windows Forms WizardControl | Syncfusion®
-description: Customize the appearance of the Windows Forms WizardControl using visual styles, layouts, colors, and UI customization settings.
+title: Appearance in Windows Forms Wizard Control | Syncfusion®
+description: Customize the appearance of the Windows Forms Wizard Control using visual styles, layouts, colors, and UI customization settings.
 platform: windowsforms
-control: Wizard Package 
+control: Wizard Control 
 documentation: ug
 ---
 
-# Appearance in Windows Forms WizardControl
+# Appearance in Windows Forms Wizard Control
 
 This section discusses the various appearance settings of the Wizard controls.
 

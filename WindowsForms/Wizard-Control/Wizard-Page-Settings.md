@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Wizard Page Settings in Windows Forms WizardControl | Syncfusion®
-description: Wizard page settings in Windows Forms WizardControl enable customizing page appearance, foreground and background colors, fonts, and border styles.
+title: Wizard Page Settings in Windows Forms Wizard Control | Syncfusion®
+description: Wizard page settings in Windows Forms Wizard Control enable customizing page appearance, foreground and background colors, fonts, and border styles.
 platform: WindowsForms
-control: Wizard Package 
+control: Wizard Control 
 documentation: ug
 ---
 
-# Wizard Page Settings in Windows Forms WizardControl
+# Wizard Page Settings in Windows Forms Wizard Control
 
 A Wizard Page can include a collection of controls implementing an interactive Wizard interface. The Wizard pages are added to the Wizard Container. You can drag and drop any control into a wizard page. Wizard Control lets you to customize the individual Wizard pages to give a unique functionality for each page.
 
@@ -82,9 +82,9 @@ A sample which demonstrates a Wizard Control with interactive Wizard pages is av
 
 ### Reordering wizard pages
 
-By default, the WizardControl will use the order in which the pages are added to determine the next/previous pages. To reorder the pages, use any one of the following methods.
+By default, the Wizard Control will use the order in which the pages are added to determine the next/previous pages. To reorder the pages, use any one of the following methods.
 
-* Select the WizardControl and choose [WizardPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_WizardPages) property in the Property Editor. This will bring out the collection editor, where you can reorder the pages using Up and Down arrow keys.
+* Select the Wizard Control and choose [WizardPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_WizardPages) property in the Property Editor. This will bring out the collection editor, where you can reorder the pages using Up and Down arrow keys.
 
 ![Reordering wizard pages](Wizard-Package_images/Wizard-Package_img19.jpeg)
 

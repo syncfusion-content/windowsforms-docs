@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Banner Settings in Windows Forms WizardControl | Syncfusion®
-description: Banner settings in Windows Forms WizardControl enable customizing banner panels, title text, descriptions, images, and layout for wizard pages.
+title: Banner Settings in Windows Forms Wizard Control | Syncfusion®
+description: Banner settings in Windows Forms Wizard Control enable customizing banner panels, title text, descriptions, images, and layout for wizard pages.
 platform: WindowsForms
-control: Wizard
+control: Wizard Control
 documentation: ug
 ---
 
-# Banner Settings in Windows Forms WizardControl
+# Banner Settings in Windows Forms Wizard Control
 
 The controls inside the Banner Control include Banner Panel, Title, description and a picture box. The section will walk you through the properties which customizes these controls.
 
@@ -184,5 +184,5 @@ this.label1.ForeColor = System.Drawing.Color.DarkBlue
 
 
 
-N> A WizardControl can have only one page title label and one page description label. We can change only the text of these two labels for individual pages using [WizardPage.Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardPage.html#Syncfusion_Windows_Forms_Tools_WizardPage_Title) and WizardPage.Description properties and not their appearance. Hence Font and ForeColor settings will be similar in all the page.
+N> A Wizard Control can have only one page title label and one page description label. We can change only the text of these two labels for individual pages using [WizardPage.Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardPage.html#Syncfusion_Windows_Forms_Tools_WizardPage_Title) and WizardPage.Description properties and not their appearance. Hence Font and ForeColor settings will be similar in all the page.
 
