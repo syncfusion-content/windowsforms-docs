@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Editing in Windows Forms SyntaxEditor | Syncfusion®
-description: Editing support in Windows Forms SyntaxEditor enables efficient text modification, insertion, deletion, selection, and code management features.
+title: Editing in Windows Forms Syntax Editor | Syncfusion®
+description: Editing support in Windows Forms Syntax Editor enables efficient text modification, insertion, deletion, selection, and code management features.
 platform: WindowsForms
-control: SyntaxEditor
+control: Syntax Editor
 documentation: ug
 ---
 
-# Editing in Windows Forms SyntaxEditor
+# Editing in Windows Forms Syntax Editor
 
 The EditControl allows end users to modify and edit the text documents and source code files. Some of the important features are:
 

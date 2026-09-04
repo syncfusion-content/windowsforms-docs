@@ -1,13 +1,13 @@
 ---
 layout: post
-title: End User Capability in Windows Forms SyntaxEditor | Syncfusion®
-description: End user capabilities in Windows Forms SyntaxEditor include key bindings, find and replace, go-to-line navigation, font settings, and zoom operations.
+title: End User Capability in Windows Forms Syntax Editor | Syncfusion®
+description: End user capabilities in Windows Forms Syntax Editor include key bindings, find and replace, go-to-line navigation, font settings, and zoom operations.
 platform: WindowsForms
 control: Syntax Editor
 documentation: ug
 ---
 
-# End User Capability in Windows Forms SyntaxEditor
+# End User Capability in Windows Forms Syntax Editor
 
 Supports various built-in dialog windows alike Microsoft Visual Studio text editor.
 
@@ -504,11 +504,11 @@ C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Wi
 
 ## Zoom in and Zoom out 
 
-This feature allows users to change the zoom level of SyntaxEditor, which brings either more or fewer line items into the view. By zooming in, users can get a magnified view of the line items, and by zooming out, users can bring more line items into the view.
+This feature allows users to change the zoom level of Syntax Editor, which brings either more or fewer line items into the view. By zooming in, users can get a magnified view of the line items, and by zooming out, users can bring more line items into the view.
 
 ### Enable/Disable zoom in and out functionalities
 
-The [AllowZoom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_AllowZoom) property is used to enable the zoom in and out supports of SyntaxEditor. The default value of the property is false. After the [AllowZoom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_AllowZoom) property has been enabled, the zooming operations can be done through mouse wheel, touch interactions, and programmatic. 
+The [AllowZoom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_AllowZoom) property is used to enable the zoom in and out supports of Syntax Editor. The default value of the property is false. After the [AllowZoom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_AllowZoom) property has been enabled, the zooming operations can be done through mouse wheel, touch interactions, and programmatic. 
 
 ### Zooming operations using MouseWheel and Modifier key
 
@@ -527,7 +527,7 @@ Using touch interactions, zoom in and out operations can be performed. For every
 ZoomFactorChanged and ZoomFactorChanging events are available in Syntax Editor to notify the value changes of ZoomFactor.
 
 #### ZoomFactorChanged Event
-[ZoomFactorChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) event occurs when the ZoomFactor value of SyntaxEditor is changed. The event arguments contain the old and new values of ZoomFactor.
+[ZoomFactorChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) event occurs when the ZoomFactor value of Syntax Editor is changed. The event arguments contain the old and new values of ZoomFactor.
 
 {% tabs %}
 {% highlight C# %}
@@ -554,7 +554,7 @@ Console.WriteLine("Zoom Factor has been changed")
 
 #### ZoomFactorChanging Event
 
-[ZoomFactorChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) event occurs before the ZoomFactor value of SyntaxEditor is changed. The value changing of ZoomFactor is handled by setting e.Cancel to true. 
+[ZoomFactorChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) event occurs before the ZoomFactor value of Syntax Editor is changed. The value changing of ZoomFactor is handled by setting e.Cancel to true. 
 
 {% tabs %}
 {% highlight C# %}

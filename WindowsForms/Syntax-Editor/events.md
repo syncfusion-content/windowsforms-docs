@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events in Windows Forms SyntaxEditor | Syncfusion®
-description: Events in Windows Forms SyntaxEditor provide notifications for editing, IntelliSense, code folding, and printing to support custom editor workflows.
+title: Events in Windows Forms Syntax Editor | Syncfusion®
+description: Events in Windows Forms Syntax Editor provide notifications for editing, IntelliSense, code folding, and printing to support custom editor workflows.
 platform: WindowsForms
-control: SyntaxEditor
+control: Syntax Editor
 documentation: ug
 ---
 
-# Events in Windows Forms SyntaxEditor
+# Events in Windows Forms Syntax Editor
 
 The `EditControl` is a powerful text editor control to create an interactive code editor applications with its unique feature set. It has many efficient features like editing, syntax highlighting, text indentation, intellisense, expand or collapse a block of code, custom language configuration etc. like in Microsoft Visual Studio Editor. It also provides programmatic access for most of the features like editing, intellisense, expand or collapse a block of code, and printing by raising various events.
 

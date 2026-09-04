@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection in Windows Forms TreeNavigator | Syncfusion®
+title: Selection in Windows Forms Tree Navigator | Syncfusion®
 description: Selection in Windows Forms Tree Navigator enables selecting and managing tree items, with events to track selection changes and customize navigation behavior.
 platform: WindowsForms
-control: TreeNavigator 
+control: Tree Navigator 
 documentation: ug
 ---
 
-# Selection in Windows Forms TreeNavigator
+# Selection in Windows Forms Tree Navigator
 
 The selected item of the current hierarchy level is get/set through SelectedItem property.
 

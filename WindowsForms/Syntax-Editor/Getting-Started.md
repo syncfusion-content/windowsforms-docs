@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting Started with Windows Forms SyntaxEditor | Syncfusion®
-description: Learn how to get started with the Syncfusion® Windows Forms SyntaxEditor control. Explore setup, features, examples, and customization options.
+title: Getting Started with Windows Forms Syntax Editor | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms Syntax Editor control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
-control: SyntaxEditor
+control: Syntax Editor
 documentation: ug
 ---
 

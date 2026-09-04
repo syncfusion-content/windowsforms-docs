@@ -1,9 +1,9 @@
 ---
 layout: post
-title: About Syncfusion® Windows Forms SyntaxEditor Control | Syncfusion®
-description: Learn about the introduction and overview of Syncfusion® Windows Forms SyntaxEditor control, including its features, elements, and capabilities.
+title: About Syncfusion® Windows Forms Syntax Editor Control | Syncfusion®
+description: Learn about the introduction and overview of Syncfusion® Windows Forms Syntax Editor control, including its features, elements, and capabilities.
 platform: WindowsForms
-control: SyntaxEditor
+control: Syntax Editor
 documentation: ug
 ---
 
@@ -61,7 +61,7 @@ The [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows
 
 [Split view](https://help.syncfusion.com/windowsforms/syntax-editor/appearance#split-views) - Provides a view-splitting function to split a single document in the EditControl into several views.
 
-[Single line mode](https://help.syncfusion.com/windowsforms/syntax-editor/appearance#single-line-mode) - Supports single-line mode that is rendered just like a regular TextBox. This enables you to have a simple TextBox but with all the syntax highlighting, selection, IntelliPrompt, and other features that make SyntaxEditor great for editing code.
+[Single line mode](https://help.syncfusion.com/windowsforms/syntax-editor/appearance#single-line-mode) - Supports single-line mode that is rendered just like a regular TextBox. This enables you to have a simple TextBox but with all the syntax highlighting, selection, IntelliPrompt, and other features that make Syntax Editor great for editing code.
 
 [File support](https://help.syncfusion.com/windowsforms/syntax-editor/file-operation) - Supports file operations like Create New, Open, and Save.
 

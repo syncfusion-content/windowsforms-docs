@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance in Windows Forms SyntaxEditor | Syncfusion®
-description: Appearance in Windows Forms SyntaxEditor enables customizing colors, text styles, split views, scrollbars, and other visual elements.
+title: Appearance in Windows Forms Syntax Editor | Syncfusion®
+description: Appearance in Windows Forms Syntax Editor enables customizing colors, text styles, split views, scrollbars, and other visual elements.
 platform: WindowsForms
-control: SyntaxEditor
+control: Syntax Editor
 documentation: ug
 ---
 
-# Appearance in Windows Forms SyntaxEditor
+# Appearance in Windows Forms Syntax Editor
 
 Provides exclusive support to customize the background color, text, margin, split views, scrollbar, etc. User can change the background color of the control. It also supports gradient effects by using the [BackgroundColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_BackgroundColor) property.
 

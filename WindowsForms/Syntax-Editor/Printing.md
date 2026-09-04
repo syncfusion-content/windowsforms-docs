@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Printing in Windows Forms SyntaxEditor | Syncfusion®
-description: Printing in Windows Forms SyntaxEditor enables printing code and text content with formatting, supporting clear, organized, and readable output.
+title: Printing in Windows Forms Syntax Editor | Syncfusion®
+description: Printing in Windows Forms Syntax Editor enables printing code and text content with formatting, supporting clear, organized, and readable output.
 platform: WindowsForms
-control: SyntaxEditor
+control: Syntax Editor
 documentation: ug
 ---
 
-# Printing in Windows Forms SyntaxEditor
+# Printing in Windows Forms Syntax Editor
 
 Support to print the data displayed in the EditControl by using the [Print](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_Print) function. It also provides support to display print preview window by calling the [PrintPreview](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_PrintPreview) function.
 

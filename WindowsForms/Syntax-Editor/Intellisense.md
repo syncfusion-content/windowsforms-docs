@@ -1,13 +1,13 @@
 ---
 layout: post
-title: IntelliSense in Windows Forms SyntaxEditor | Syncfusion®
-description: IntelliSense in Windows Forms SyntaxEditor provides code completion, context prompts, and customizable pop-up suggestions to improve coding productivity.
+title: IntelliSense in Windows Forms Syntax Editor | Syncfusion®
+description: IntelliSense in Windows Forms Syntax Editor provides code completion, context prompts, and customizable pop-up suggestions to improve coding productivity.
 platform: WindowsForms
-control: SyntaxEditor
+control: Syntax Editor
 documentation: ug
 ---
 
-# IntelliSense in Windows Forms SyntaxEditor
+# IntelliSense in Windows Forms Syntax Editor
 
 The EditControl provides Intellisense pop-up capabilities to add content easily as in Microsoft Visual Studio text editor.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance in Windows Forms TreeNavigator | Syncfusion®
+title: Appearance in Windows Forms Tree Navigator | Syncfusion®
 description: Appearance customization in Windows Forms Tree Navigator enables applying visual styles, themes, header customization, colors, and display settings.
 platform: WindowsForms
-control: TreeNavigator 
+control: Tree Navigator 
 documentation: ug
 ---
 
-# Appearance in Windows Forms TreeNavigator
+# Appearance in Windows Forms Tree Navigator
 
 ## Style
 
@@ -19,13 +19,13 @@ documentation: ug
 *	Office2016Black
 *	Office2016DarkGray
 
-The visual style can be applied for the TreeNavigator using Style property.
+The visual style can be applied for the Tree Navigator using Style property.
 
 {% tabs %}
 
 {% highlight c# %}
 
-//Set the visual style of the TreeNavigator control.
+//Set the visual style of the Tree Navigator control.
 this.treeNavigator1. Style = Syncfusion.Windows.Forms.Tools.TreeNavigatorStyle.Office2016Colorful; 
 
 {% endhighlight %}
@@ -127,7 +127,7 @@ this.treeNavigator1.ShowHeader = false;
 
 ## Appearance in Windows Forms Tree Navigator
 
-Border color and Thickness of the TreeNavigator can be customized using properties BorderColor and BorderThickness.
+Border color and Thickness of the Tree Navigator can be customized using properties BorderColor and BorderThickness.
 
 The following code example allows you to customize the border color and border thickness.
 
@@ -186,7 +186,7 @@ In Tree Navigator you can customize the tree menu items with the help of propert
 
 *	ItemBackColor – This property is used to set the back color for the tree menu item when it is in normal state. 
 
-Note: This property also available in treenavigator in which it is used to set the backcolor for all the tree menu items present in the treenavigator. However, First priority is given to the TreeMenuItem ItemBackColor. For example: If the TreeMenuItem is set to some backcolor then that color is set to that item irrespective of TreeNavigator ItemBackColor.
+Note: This property also available in tree navigator in which it is used to set the backcolor for all the tree menu items present in the tree navigator. However, First priority is given to the TreeMenuItem ItemBackColor. For example: If the TreeMenuItem is set to some backcolor then that color is set to that item irrespective of Tree Navigator ItemBackColor.
 
 *	ItemHoverColor – This property is used to set the hover color for the tree menu item when it is in hover state.
 *	SelectedColor - This property is used to set the back color for the selected tree menu item.
@@ -199,7 +199,7 @@ The following code example allows you to customize the TreeMenuItem
 
 {% highlight c# %}
 
-//To customize backcolor for all the tree menu items in the treenavigator
+//To customize backcolor for all the tree menu items in the tree navigator
 this.treeNavigator1.ItemBackColor = Color.LightYellow;
 
 //To customize the tree menu item backcolor
@@ -219,7 +219,7 @@ this.treeMenuItem4.SelectedItemForeColor = Color.Blue;
 
 {% highlight vb %}
 
-‘To customize backcolor for all the tree menu items in the treenavigator
+‘To customize backcolor for all the tree menu items in the tree navigator
 Me.treeNavigator1.ItemBackColor = Color.LightYellow
 
 ‘To customize the tree menu item backcolor
