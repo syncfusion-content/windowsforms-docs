@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Serialization in Windows Forms GradientLabel | Syncfusion®
-description: Serialization in Windows Forms GradientLabel enables saving and loading gradient color settings using XML, helping preserve control appearance across sessions.
+title: Serialization in Windows Forms Gradient Label | Syncfusion®
+description: Serialization in Windows Forms Gradient Label enables saving and loading gradient color settings using XML, helping preserve control appearance across sessions.
 platform: WindowsForms
-control: GradientLabel
+control: Gradient Label
 documentation: ug
 ---
 
-# Serialization in Windows Forms GradientLabel
+# Serialization in Windows Forms Gradient Label
 
-We can save and load the background color information in an XML file to persist the color state of a GradientLabel. The XmlSerializer Class can be used for providing serialization support.
+We can save and load the background color information in an XML file to persist the color state of a Gradient Label. The XmlSerializer Class can be used for providing serialization support.
 
 * First include the required namespaces.
 
@@ -72,4 +72,4 @@ End Sub
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }} 
 
- ![Windows Forms GradientLabel Image605](GradientLabel-Images/Overview_img605.jpeg) 
+ ![Windows Forms Gradient Label Image605](GradientLabel-Images/Overview_img605.jpeg) 

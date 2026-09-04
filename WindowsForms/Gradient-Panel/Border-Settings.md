@@ -1,25 +1,25 @@
 ---
 layout: post
-title: Border Settings in Windows Forms GradientPanel | Syncfusion®
-description: Customize the border appearance of the Windows Forms GradientPanel control using border styles, colors, and visual settings.
+title: Border Settings in Windows Forms Gradient Panel | Syncfusion®
+description: Customize the border appearance of the Windows Forms Gradient Panel control using border styles, colors, and visual settings.
 platform: WindowsForms
-control: GradientPanel
+control: Gradient Panel
 documentation: ug
 ---
 
-# Border Settings in Windows Forms GradientPanel
+# Border Settings in Windows Forms Gradient Panel
 
 [Windows Forms Gradient Panel](https://www.syncfusion.com/winforms-ui-controls/gradient-panel) can have 2D and 3D borders. The properties which sets the border style are as follows.
 
 <table>
 <tr>
 <th>
-GradientPanel Property</th><th>
+Gradient Panel Property</th><th>
 Description</th></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Sets the 2D or 3D border for the GradientPanel. The options are,FixedSingle and Fixed3D.</td></tr>
+Sets the 2D or 3D border for the Gradient Panel. The options are,FixedSingle and Fixed3D.</td></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
@@ -66,13 +66,13 @@ Me.gradientPanel1.BorderSides = System.Windows.Forms.Border3DSide.All
 {% endhighlight %}
 {% endtabs %}
 
- ![Windows Forms GradientPanel Image370](GradientPanel-Images/Overview_img370.jpeg) 
+ ![Windows Forms Gradient Panel Image370](GradientPanel-Images/Overview_img370.jpeg) 
 
- ![Windows Forms GradientPanel Image371](GradientPanel-Images/Overview_img371.jpeg) 
+ ![Windows Forms Gradient Panel Image371](GradientPanel-Images/Overview_img371.jpeg) 
 
  {% seealso %}
  
- [GradientPanel Appearance](/windowsforms/GradientPanel/GradientPanel-Appearance)
+ [Gradient Panel Appearance](/windowsforms/GradientPanel/GradientPanel-Appearance)
  
  {% endseealso %}
  

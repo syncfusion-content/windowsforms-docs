@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Button Parameters in Windows Forms MessageBoxAdv | Syncfusion®
-description: Button parameters in Windows Forms MessageBoxAdv enable configuring button options, right-to-left layout, details view, and dialog resizing behavior.
+title: Button Parameters in Windows Forms MessageBox | Syncfusion®
+description: Button parameters in Windows Forms MessageBox enable configuring button options, right-to-left layout, details view, and dialog resizing behavior.
 platform: WindowsForms
-control: MessageBoxAdv
+control: MessageBox
 documentation: ug
 ---
 
-# Button Parameters in Windows Forms MessageBoxAdv
+# Button Parameters in Windows Forms MessageBox
 
 [Show](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html#Syncfusion_Windows_Forms_MessageBoxAdv_Show_System_String_) function helps to display a [MessageBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html). This section explains regarding the parameters available in [Show](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html#Syncfusion_Windows_Forms_MessageBoxAdv_Show_System_String_) function.
 
@@ -55,7 +55,7 @@ MessageBoxAdv.Show(Me, "Save changes?", "File Modified", MessageBoxButtons.OK, M
 
 {% endtabs %}
 
-![WindowsForms MessageBoxAdv Ok](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Ok.jpg) 
+![WindowsForms MessageBox Ok](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Ok.jpg) 
  
 ### Ok Cancel
 
@@ -81,7 +81,7 @@ MessageBoxAdv.Show(Me, "Save changes?", "File Modified", MessageBoxButtons.OKCan
 
 {% endtabs %}
  
- ![WindowsForms MessageBoxAdv Ok Cancel](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Ok-Cancel.jpg) 
+ ![WindowsForms MessageBox Ok Cancel](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Ok-Cancel.jpg) 
 
 ### Yes No
 
@@ -107,7 +107,7 @@ MessageBoxAdv.Show(Me, "Save changes?", "File Modified", MessageBoxButtons.YesNo
 
 {% endtabs %} 
 
-![WindowsForms MessageBoxAdv Yes No](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Yes-No.jpg) 
+![WindowsForms MessageBox Yes No](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Yes-No.jpg) 
 
 ### Yes No Cancel
 
@@ -133,7 +133,7 @@ MessageBoxAdv.Show(Me, "Save changes?", "File Modified", MessageBoxButtons.YesNo
 
 {% endtabs %}
 
-![WindowsForms MessageBoxAdv Yes No Cancel](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Yes-No-Cancel.jpg) 
+![WindowsForms MessageBox Yes No Cancel](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Yes-No-Cancel.jpg) 
  
 ### Retry Cancel
 
@@ -201,7 +201,7 @@ Supports to display wide variety of built-in icons and also empowered with loadi
 * Stop
 * Warning
 
-The following code example illustrates adding `Exclamation` icon in MessageBoxAdv.
+The following code example illustrates adding `Exclamation` icon in MessageBox.
 
 {% tabs %}
 
@@ -223,7 +223,7 @@ MessageBoxAdv.Show(Me, "Save changes?", "Warning", MessageBoxButtons.OKCancel, M
 
 {% endtabs %}
 
-![WindowsForms MessageBoxAdv Icon support](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Icon-support.png)
+![WindowsForms MessageBox Icon support](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Icon-support.png)
 
 The following code example illustrates adding custom icons in [MessageBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html).
 
@@ -247,7 +247,7 @@ MessageBoxAdv.Show(Me, "Save changes?", "Warning", MessageBoxButtons.OKCancel, i
 
 {% endtabs %}
 
-![WindowsForms MessageBoxAdv Custom Icon support](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Custom-Icon-support.jpg)
+![WindowsForms MessageBox Custom Icon support](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Custom-Icon-support.jpg)
 
 ## Right to left support
 
@@ -273,7 +273,7 @@ MessageBoxAdv.Show(Me,"Save changes?", "File Modified", MessageBoxButtons.YesNo,
 
 {% endtabs %}
 
-![WindowsForms MessageBoxAdv Right to left support](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Right-to-left-support.jpg)  
+![WindowsForms MessageBox Right to left support](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Right-to-left-support.jpg)  
 
 ## Details view
 
@@ -297,11 +297,11 @@ MessageBoxAdv.Show(Me, "Save changes?", "Warning", MessageBoxButtons.OKCancel, i
 
 Eg: Detail view 
 
-![WindowsForms MessageBoxAdv Details view support](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Details-view-support.jpg)
+![WindowsForms MessageBox Details view support](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Details-view-support.jpg)
 
 Eg: Collapsed view
 
-![WindowsForms MessageBoxAdv Collapsed view support](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Collapsed-view-support.jpg)
+![WindowsForms MessageBox Collapsed view support](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Collapsed-view-support.jpg)
 
 ## Resizing support
 
@@ -323,6 +323,6 @@ MessageBoxAdv.CanResize = True
 
 {% endtabs %}
 
-![WindowsForms MessageBoxAdv Resizing support](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Resizing-support.png)
+![WindowsForms MessageBox Resizing support](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Resizing-support.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/Messageboxadv-resize-support-in-Winforms)

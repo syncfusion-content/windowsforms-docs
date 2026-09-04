@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Scrollbar Customization in Windows Forms SfListView | Syncfusion®
-description: Scrollbar customization in Windows Forms SfListView enables controlling scrollbar visibility and appearance, improving navigation and user experience.
+title: Scrollbar Customization in Windows Forms ListView | Syncfusion®
+description: Scrollbar customization in Windows Forms ListView enables controlling scrollbar visibility and appearance, improving navigation and user experience.
 platform: windowsforms
-control: SfListView
+control: ListView
 documentation: ug
 ---
 
-# Scrollbar Customization in Windows Forms SfListView
-This section explains how to customize the scrollbar visibility and behavior in the SfListView control.
+# Scrollbar Customization in Windows Forms ListView
+This section explains how to customize the scrollbar visibility and behavior in the ListView control.
 
 ## AutoHideScrollBars
 

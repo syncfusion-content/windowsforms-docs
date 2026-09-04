@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Localization in Windows Forms SfListView | Syncfusion®
-description: Localization support in Windows Forms SfListView enables adapting text, messages, and user interface elements to different languages and regional settings.
+title: Localization in Windows Forms ListView | Syncfusion®
+description: Localization support in Windows Forms ListView enables adapting text, messages, and user interface elements to different languages and regional settings.
 platform: windowsforms
-control: SfListView
+control: ListView
 documentation: ug
 ---
 
-# Localization in Windows Forms SfListView         
-Localization is a process of translating the application resources into different languages for some specific cultures. The SfListView can be localized by adding the resource file. The application culture can be changed by setting `CurrentUICulture` before InitializeComponent method.
+# Localization in Windows Forms ListView         
+Localization is a process of translating the application resources into different languages for some specific cultures. The ListView can be localized by adding the resource file. The application culture can be changed by setting `CurrentUICulture` before InitializeComponent method.
 
 ## Localize at sample level
-To localize the SfListView based on the  [CurrentUICulture](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentuiculture?view=net-5.0) using resource files, follow the steps:
+To localize the ListView based on the  [CurrentUICulture](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentuiculture?view=net-5.0) using resource files, follow the steps:
 
 1) Create a new folder and name it as Resources in your application.
 
-2) Add the default resource file of the SfListView into Resources folder.You can download the Syncfusion.SfListView.WinForms.resx [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ResourceFile1283641291).
+2) Add the default resource file of the ListView into Resources folder.You can download the Syncfusion.SfListView.WinForms.resx [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ResourceFile1283641291).
 
 ![WindowsForms ListView Localization Image1](Localization_images/Localization_img1.png)
                      
@@ -56,7 +56,7 @@ End Sub
 ![WindowsForms ListView Localization Image5](Localization_images/Localization_img5.png)
  
 ## Editing default resource file
-The default resource file can be edited by adding it to Resources folder of the application where the SfListView reads the static texts here.
+The default resource file can be edited by adding it to Resources folder of the application where the ListView reads the static texts here.
 The default resource file can be download from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ResourceFile1283641291).
 
 ![WindowsForms ListView Localization Image6](Localization_images/Localization_img6.png)
@@ -70,7 +70,7 @@ Run the sample.
 ![WindowsForms ListView Localization Image8](Localization_images/Localization_img8.png) 
  
 ## Localize resource file with different assembly or namespace
-By default, the SfListView tries to read the resource file from executing assembly and its default namespace by using the `Assembly.GetExecuteAssembly` method. When the resource file is located at different assembly or namespace, it can be set to the SfListView by using the `SR.SetResources` method.
+By default, the ListView tries to read the resource file from executing assembly and its default namespace by using the `Assembly.GetExecuteAssembly` method. When the resource file is located at different assembly or namespace, it can be set to the ListView by using the `SR.SetResources` method.
 
 {% tabs %}
 {% highlight c# %}
@@ -93,7 +93,7 @@ End Sub
 {% endtabs %}
 
 ## RightToLeft
-Items of the SfListView can be aligned from right to left and vice versa using the following property.
+Items of the ListView can be aligned from right to left and vice versa using the following property.
 
 {% tabs %}
 {% highlight c# %}

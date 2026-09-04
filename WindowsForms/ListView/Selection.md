@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection in Windows Forms SfListView | Syncfusion®
-description: Selection in Windows Forms SfListView supports UI and programmatic item selection, selected item management, hot tracking, and appearance customization.
+title: Selection in Windows Forms ListView | Syncfusion®
+description: Selection in Windows Forms ListView supports UI and programmatic item selection, selected item management, hot tracking, and appearance customization.
 platform: windowsforms
-control: SfListView
+control: ListView
 documentation: ug
 ---
 
-# Selection in Windows Forms SfListView
+# Selection in Windows Forms ListView
 This section explains how to perform selection and its related operations in the [Windows Forms ListView](https://www.syncfusion.com/winforms-ui-controls/listview) (SfListView).
 
 ## UI Selection
@@ -112,7 +112,7 @@ Dim rowIndex As Integer = sfListView.GetRowIndexAtPoint(point)
 {% endtabs %}
 
 ## Hot tracking
-SfListView supports hover selection on item when mouse pointer moves over an item by setting [SfListView.HotTracking](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_HotTracking) as true.
+ListView supports hover selection on item when mouse pointer moves over an item by setting [SfListView.HotTracking](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_HotTracking) as true.
 
 {% tabs %}
 {% highlight c# %}
@@ -126,7 +126,7 @@ sfListView1.HotTracking = true
 ![Enable mouse over effect for items in ListView control for WPF](Selection_images/Selection_img5.png)
  
 ## Appearance
-The SfListView allows you to customize the appearance of the selected items or mouse hover items through [SfListView.Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_Style) property.
+The ListView allows you to customize the appearance of the selected items or mouse hover items through [SfListView.Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_Style) property.
 
 ### Change the background and foreground colors for selection
 The selection background and foreground color can be changed by using the `SfListView.Style.SelectionStyle` property.
