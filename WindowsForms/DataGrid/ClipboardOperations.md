@@ -720,4 +720,4 @@ N> The copied row can be pasted only after initiating the AddNewRow by editing.
 
 ## See also
 
-[How to append the new text in clipboard which is not available in DataGrid(SfDataGrid)](https://support.syncfusion.com/kb/article/9700/how-to-append-the-new-text-in-clipboard-which-is-not-available-in-datagridsfdatagrid)
+[How to append the new text in clipboard which is not available in Data Grid](https://support.syncfusion.com/kb/article/9700/how-to-append-the-new-text-in-clipboard-which-is-not-available-in-datagridsfdatagrid)
