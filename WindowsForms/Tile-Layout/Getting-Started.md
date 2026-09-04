@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Windows Forms TileLayout | Syncfusion®
-description: Learn how to get started with the Syncfusion® Windows Forms TileLayout control. Explore setup, features, examples, and customization options.
+title: Getting Started with Windows Forms Tile Layout | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms Tile Layout control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
-control: TileLayout 
+control: Tile Layout 
 documentation: ug
 ---
 
-# Getting Started with Windows Forms TileLayout 
+# Getting Started with Windows Forms Tile Layout 
 
 This section describes how to add [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html) control in a Windows Forms application and overview of its basic functionalities.
 
@@ -20,7 +20,7 @@ Please find more details regarding how to install the nuget packages in windows 
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
 
 
-## Creating simple application with TileLayout
+## Creating simple application with Tile Layout
 
 You can create the Windows Forms application with [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html) control as follows:
 
@@ -45,7 +45,7 @@ The [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.
 
 ![Search WindowsForms Tile Layout control in toolbox](getting-started_images/windowsforms-tile-layout-toolbox.png)
 
-**Adding LayoutGroup into TileLayout**
+**Adding LayoutGroup into Tile Layout**
 
 [LayoutGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.LayoutGroup.html) can be added through `Groups Collection` in Smart Tags of [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html).
 
@@ -116,7 +116,7 @@ Me.Controls.Add(tileLayout1)
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-**Adding LayoutGroup into TileLayout**
+**Adding LayoutGroup into Tile Layout**
 
 Create an instance of [LayoutGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.LayoutGroup.html) and add it to [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html).
 
@@ -124,7 +124,7 @@ Create an instance of [LayoutGroup](https://help.syncfusion.com/cr/windowsforms/
 
 {% highlight C# %}
 
-// Create instance of TileLayout
+// Create instance of Tile Layout
 LayoutGroup layoutGroup1 = new LayoutGroup();
 LayoutGroup layoutGroup2 = new LayoutGroup();
 
@@ -139,7 +139,7 @@ this.tileLayout1.Controls.Add(this.layoutGroup2);
 
 {% highlight VB %}
 
-' Create instance of TileLayout
+' Create instance of Tile Layout
 Dim layoutGroup1 As New LayoutGroup()
 Dim layoutGroup2 As New LayoutGroup()
 

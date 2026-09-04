@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Layout Customization in Windows Forms TileLayout | Syncfusion®
-description: Layout customization in Windows Forms TileLayout enables configuring alignment, margins, row arrangement, and spacing for flexible tile layouts.
+title: Layout Customization in Windows Forms Tile Layout | Syncfusion®
+description: Layout customization in Windows Forms Tile Layout enables configuring alignment, margins, row arrangement, and spacing for flexible tile layouts.
 platform: WindowsForms
-control: TileLayout 
+control: Tile Layout 
 documentation: ug
 ---
 
 
-# Layout Customization in Windows Forms TileLayout
+# Layout Customization in Windows Forms Tile Layout
 
 ## Alignment
 

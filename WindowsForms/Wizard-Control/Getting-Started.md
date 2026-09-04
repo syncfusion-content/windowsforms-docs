@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Windows Forms WizardControl | Syncfusion®
-description: Learn how to get started with the Syncfusion® Windows Forms WizardControl control. Explore setup, features, examples, and customization options.
+title: Getting Started with Windows Forms Wizard Control | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms Wizard Control control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
-control: Wizard Package 
+control: Wizard Control
 documentation: ug
 ---
 
-# Getting Started with Windows Forms WizardControl
+# Getting Started with Windows Forms Wizard Control
 
 This section describes how to add [WizardControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html) in a Windows Forms application and overview of its basic functionalities.
 
@@ -20,7 +20,7 @@ Please find more details regarding how to install the nuget packages in windows 
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
 
 
-## Creating simple application with WizardControl
+## Creating simple application with Wizard Control
 
 You can create the Windows Forms application with WizardControl control as follows:
 
@@ -115,7 +115,7 @@ Me.Controls.Add(wizardControl1)
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-**Add wizard page into WizardControl**
+**Add wizard page into Wizard Control**
 
 Create an instance of [WizardContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardContainer.html), add it to WizardControl and set it as [WizardPageContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_WizardPageContainer) of WizardControl. WizardControlPages can be added to using [WizardPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_WizardPages) collection property.
 
@@ -195,7 +195,7 @@ Me.wizardControl1.Banner = Me.pictureBox1
 
 **Configure BannerPanel** 
 
-Controls can be added to header of the WizardControl using [BannerPanel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_BannerPanel) property where panel containing the desired controls is added. 
+Controls can be added to header of the Wizard Control using [BannerPanel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_BannerPanel) property where panel containing the desired controls is added. 
 
 
 {% tabs %}

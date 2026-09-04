@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance Settings in Windows Forms TileLayout | Syncfusion®
-description: Appearance settings in Windows Forms TileLayout enable customizing group titles, parent form appearance, and theme background behavior.
+title: Appearance Settings in Windows Forms Tile Layout | Syncfusion®
+description: Appearance settings in Windows Forms Tile Layout enable customizing group titles, parent form appearance, and theme background behavior.
 platform: WindowsForms
-control: TileLayout 
+control: Tile Layout 
 documentation: ug
 ---
 
-# Appearance Settings in Windows Forms TileLayout
+# Appearance Settings in Windows Forms Tile Layout
 
 ## SetParentFormFlat
 
@@ -74,7 +74,7 @@ this.tileLayout1.ShowGroupTitle = true;
 
 {% highlight C# %}
 
-//To apply BackColor of the TileLayout
+//To apply BackColor of the Tile Layout
 
  this.tileLayout1.IgnoreThemeBackground = true;
 
@@ -82,7 +82,7 @@ this.tileLayout1.ShowGroupTitle = true;
 
 {% highlight VB %}
 
-‘To apply BackColor of the TileLayout
+‘To apply BackColor of the Tile Layout
 
  Me.tileLayout1.IgnoreThemeBackground = true
  
@@ -90,4 +90,4 @@ this.tileLayout1.ShowGroupTitle = true;
 
 {% endtabs %}
 
-![TileLayout back color customization](Appearance_images/ThemedBackground.png)
+![Tile Layout back color customization](Appearance_images/ThemedBackground.png)

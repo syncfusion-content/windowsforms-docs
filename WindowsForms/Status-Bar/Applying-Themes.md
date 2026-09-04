@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Applying Themes in Windows Forms StatusBarAdv | Syncfusion®
-description: Applying themes in Windows Forms StatusBarAdv enables a consistent visual appearance across applications using predefined styles.
+title: Applying Themes in Windows Forms Status Bar | Syncfusion®
+description: Applying themes in Windows Forms Status Bar enables a consistent visual appearance across applications using predefined styles.
 platform: WindowsForms
-control: StatusBarAdv
+control: Status Bar
 documentation: ug
 ---
 
-# Applying Themes in Windows Forms StatusBarAdv
+# Applying Themes in Windows Forms Status Bar
 
-The StatusBarAdv control can be provided with a themed look and feel using the properties given below.
+The Status Bar control can be provided with a themed look and feel using the properties given below.
 
 Property Table
 
 <table>
 <tr>
 <th>
-StatusBarAdv Property</th><th>
+Status Bar Property</th><th>
 Description</th></tr>
 <tr>
 <td>

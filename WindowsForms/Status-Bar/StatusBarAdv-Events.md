@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events in Windows Forms StatusBarAdv | Syncfusion®
-description: Events in Windows Forms StatusBarAdv allow applications to respond to status bar actions and customize runtime behavior.
+title: Events in Windows Forms Status Bar | Syncfusion®
+description: Events in Windows Forms Status Bar allow applications to respond to status bar actions and customize runtime behavior.
 platform: WindowsForms
-control: StatusBarAdv
+control: Status Bar
 documentation: ug
 ---
 
-# Events in Windows Forms StatusBarAdv
+# Events in Windows Forms Status Bar
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
@@ -16,7 +16,7 @@ Events Table
 <table>
 <tr>
 <th>
-StatusBarAdv Events</th><th>
+Status Bar Events</th><th>
 Description</th></tr>
 <tr>
 <td>

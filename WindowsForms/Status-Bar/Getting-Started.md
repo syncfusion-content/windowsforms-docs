@@ -1,37 +1,37 @@
 ---
 layout: post
-title: Getting Started with Windows Forms StatusBarAdv | Syncfusion®
-description: Learn how to get started with the Syncfusion® Windows Forms StatusBarAdv control. Explore setup, features, examples, and customization options.
+title: Getting Started with Windows Forms Status Bar | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms Status Bar control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
-control: StatusBarAdv
+control: Status Bar
 documentation: ug
 ---
 
-# Getting Started with Windows Forms StatusBarAdv
+# Getting Started with Windows Forms Status Bar
 
-This section will give a step-by-step procedure to design a StatusBarAdv control through designer and also through programming approach.
+This section will give a step-by-step procedure to design a Status Bar control through designer and also through programming approach.
 
 ## Through designer
 
-To create a StatusBarAdv control through designer,
+To create a Status Bar control through designer,
 
 1. Drag and drop a StatusBarAdv control from the toolbox onto the form.
 
    ![Create Status Bar through designer in WindowsForms application](overview_images/windowsforms-status-bar-designer.jpeg) 
 
-2. Set the desired background for the StatusBarAdv control by setting the desired values for properties that control the background in the properties window.
-3. Drag and drop controls onto the StatusBarAdv control. Add the StatusBarAdvPanel control to it. Set the PanelType property to the desired value, for all the StatusBarAdvPanel controls.
+2. Set the desired background for the Status Bar control by setting the desired values for properties that control the background in the properties window.
+3. Drag and drop controls onto the Status Bar control. Add the StatusBarAdvPanel control to it. Set the PanelType property to the desired value, for all the StatusBarAdvPanel controls.
 4. Build and run the application.
 
    ![Run the application in WindowsForms-Status Bar](overview_images/windowsforms-status-bar-run-application.jpeg) 
    
-N> In .NET Core, the StatusBarAdv control’s Collection Editor displays the title “ControlProxy`1 CollectionEditor” instead of “StatusBarAdvPanel CollectionEditor.”
+N> In .NET Core, the Status Bar control’s Collection Editor displays the title “ControlProxy`1 CollectionEditor” instead of “StatusBarAdvPanel CollectionEditor.”
 This is a known issue and does not affect functionality.
 For more details, see GitHub Issue [#14049](https://github.com/dotnet/winforms/issues/14049)
    
 ## Through code
 
-To create a StatusBarAdv control programmatically,
+To create a Status Bar control programmatically,
 
 1. Open a new Visual C# or VB.NET application in Visual Studio .NET.
 2. Add the Syncfusion.Shared.Base and Syncfusion.Tools.Windows assemblies to your application.
@@ -135,6 +135,6 @@ Me.Controls.Add(Me.statusBarAdv1)
 {% endtabs %}
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}  
-6. Run the application. You will see the StatusBarAdv control docked to the bottom of the form. By default it will be docked to 'Bottom'.
+6. Run the application. You will see the Status Bar control docked to the bottom of the form. By default it will be docked to 'Bottom'.
 
    ![Create Status Bar Through Code](Overview_images/Overview_img62.jpeg) 

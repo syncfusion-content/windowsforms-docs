@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Appearance Settings in Windows Forms StatusBarAdv | Syncfusion®
-description: Appearance settings in Windows Forms StatusBarAdv customize colors, styles, and visual elements to create consistent user interfaces.
+title: Appearance Settings in Windows Forms Status Bar | Syncfusion®
+description: Appearance settings in Windows Forms Status Bar customize colors, styles, and visual elements to create consistent user interfaces.
 platform: WindowsForms
-control: StatusBarAdv
+control: Status Bar
 documentation: ug
 ---
 
-# Appearance Settings in Windows Forms StatusBarAdv
+# Appearance Settings in Windows Forms Status Bar
 
-You can enhance the appearance of the StatusBarAdv control by using the following properties.
+You can enhance the appearance of the Status Bar control by using the following properties.
 
 ## Style
 
-StatusBarAdv supports Office2016 styles such as Office2016Colorful,Office2016White,Office2016Black and Office2016DarkGray.
+Status Bar supports Office2016 styles such as Office2016Colorful,Office2016White,Office2016Black and Office2016DarkGray.
 
 //Sample code for setting "Office2016 Colorful" style for StatusBarAdv
 
@@ -35,14 +35,14 @@ Me.statusBarAdv1.Style = Syncfusion.Windows.Forms.Tools.StatusbarStyle.Office201
 
 ## Background settings
 
-You can customize the StatusBarAdv control's background by using the various options provided in the BackgroundColor property as follows.
+You can customize the Status Bar control's background by using the various options provided in the BackgroundColor property as follows.
 
 Property Table
 
 <table>
 <tr>
 <th>
-StatusBarAdv Property</th><th>
+Status Bar Property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -83,7 +83,7 @@ Specifies the gradient colors.The first entry in this list is same as the BackCo
 <tr>
 <td>
 MetroColor</td><td>
-Gets or sets the Metro color of the StatusBarAdv</td></tr>
+Gets or sets the Metro color of the Status Bar</td></tr>
 <tr>
 <td>
 UseMetroColorAsBorder</td><td>
@@ -124,14 +124,14 @@ Me.statusBarAdv1.UseMetroColorAsBorder = True
 
 ## Sizing grip
 
-A sizing grip can be displayed for the StatusBarAdv control using the property given below.
+A sizing grip can be displayed for the Status Bar control using the property given below.
 
 Property Table
 
 <table>
 <tr>
 <th>
-StatusBarAdv Property</th><th>
+Status Bar Property</th><th>
 Description</th></tr>
 <tr>
 <td>

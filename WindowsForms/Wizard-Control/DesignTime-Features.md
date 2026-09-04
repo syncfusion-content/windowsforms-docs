@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DesignTime Features in Windows Forms WizardControl | Syncfusion®
-description: Use design-time features in the Windows Forms WizardControl to simplify configuration, page management, and UI customization.
+title: DesignTime Features in Windows Forms Wizard Control | Syncfusion®
+description: Use design-time features in the Windows Forms Wizard Control to simplify configuration, page management, and UI customization.
 platform: WindowsForms
-control: Wizard
+control: Wizard Control
 documentation: ug
 ---
 
-# DesignTime Features in Windows Forms WizardControl
+# DesignTime Features in Windows Forms Wizard Control
 
 The below topics are discussed in this particular section.
 

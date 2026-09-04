@@ -1,26 +1,26 @@
 ---
 layout: post
-title: Behavior Settings in Windows Forms StatusBarAdv | Syncfusion®
-description: Behavior settings in Windows Forms StatusBarAdv define runtime functionality and interactions to match application requirements.
+title: Behavior Settings in Windows Forms Status Bar | Syncfusion®
+description: Behavior settings in Windows Forms Status Bar define runtime functionality and interactions to match application requirements.
 platform: WindowsForms
-control: StatusBarAdv
+control: Status Bar
 documentation: ug
 ---
 
-# Behavior Settings in Windows Forms StatusBarAdv
+# Behavior Settings in Windows Forms Status Bar
 
-This section discusses the properties that determine the behavior of the StatusBarAdv control.
+This section discusses the properties that determine the behavior of the Status Bar control.
 
 ## AutoSize settings
 
-This includes the properties that enable auto sizing of the StatusBarAdv control.
+This includes the properties that enable auto sizing of the Status Bar control.
 
 Property Table
 
 <table>
 <tr>
 <td>
-StatusBarAdv Property</td><td>
+Status Bar Property</td><td>
 Description</td></tr>
 <tr>
 <td>
@@ -57,19 +57,19 @@ Me.statusBarAdv1.AutoHeightControls = True
 
 ## AutoHeight settings
 
-The height of the panels can be made to change automatically when the height of the StatusBarAdv control changes. This can be accomplished using the property given below.
+The height of the panels can be made to change automatically when the height of the Status Bar control changes. This can be accomplished using the property given below.
 
 Property Table
 
 <table>
 <tr>
 <td>
-StatusBarAdv Property</td><td>
+Status Bar Property</td><td>
 Description</td></tr>
 <tr>
 <td>
 AutoHeightControls</td><td>
-Determines if the StatusBarAdv will resize the height of the panels according to it's height.The default value will be set to 'True'.</td></tr>
+Determines if the Status Bar will resize the height of the panels according to it's height.The default value will be set to 'True'.</td></tr>
 </table>
 
 {% tabs %}
