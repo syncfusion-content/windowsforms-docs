@@ -76,8 +76,6 @@ The supported values are defined in the [ChartGanttDrawMode](https://help.syncfu
 - [AutoSizeMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartGanttDrawMode.html#Syncfusion_Windows_Forms_Chart_ChartGanttDrawMode_AutoSizeMode): Renders the Gantt bars side by side and automatically adjusts their width based on the available space.
 - [CustomPointWidthMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartGanttDrawMode.html#Syncfusion_Windows_Forms_Chart_ChartGanttDrawMode_CustomPointWidthMode): Renders the Gantt bars as overlapping bars using the configured point width.
 
-N> The [GanttDrawMod](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_GanttDrawMode) property is deprecated. Use [DrawMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartGanttConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartGanttConfigItem_DrawMode) instead.
-
 The following code sets the Gantt drawing mode to `AutoSizeMode`.
 
 {% tabs %}

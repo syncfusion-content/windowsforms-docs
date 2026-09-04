@@ -146,7 +146,7 @@ The available fill modes are:
 - [AllPie](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieFillMode.html#Syncfusion_Windows_Forms_Chart_ChartPieFillMode_AllPie): Applies the gradient colors across the complete pie chart as a single shape.
 - [EveryPie](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieFillMode.html#Syncfusion_Windows_Forms_Chart_ChartPieFillMode_EveryPie): Applies the gradient colors separately to each pie segment.
 
-The following code defines a custom gradient using the `Gradient` property. Set `PieType` to `Custom` to apply the gradient, and set `FillMode` to `EveryPie` to restart the complete gradient separately within each pie segment.
+The following code applies a custom gradient to the pie chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -159,14 +159,12 @@ Color.HotPink,
 Color.MediumVioletRed,
 Color.MediumSeaGreen
 };
-;
 gradient.Positions = new float[]
 {
 0.0f,
 0.5f,
 1.0f
-}
-;
+};
 
 series.ConfigItems.PieItem.Gradient = gradient;
 series.ConfigItems.PieItem.FillMode = ChartPieFillMode.EveryPie;
@@ -245,24 +243,6 @@ series.ConfigItems.PieItem.Gradient = gradient
 
 ![Pie Gradient in Windows Forms](../Chart-Types_images/windowsforms-pie-fill-mode.png)
 
-### Height by area depth
-
-The [HeightByAreaDepth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_HeightByAreaDepth) property controls whether the height of a 3D pie chart is determined by the chart area's [Depth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_Depth) property. By default, this property is set to `false`, and the pie chart height is determined using the [HeightCoefficient](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_HeightCoeficient) property.
-
-The following code configures the pie chart height based on the chart area's depth.
-
-{% tabs %}
-{% highlight c# %}
-chartControl.Series[0].ConfigItems.PieItem.HeightByAreaDepth = true;
-{% endhighlight %}
-{% highlight vb %}
-chartControl.Series(0).ConfigItems.PieItem.HeightByAreaDepth = True
-{% endhighlight %}
-{% endtabs %}
-
-![Pie Height Area Depth in Windows Forms](../Chart-Types_images/windowsforms-pie-chart-height-area-depth.png)
-
-
 ### Label style
 
 The [LabelStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_LabelStyle) property specifies how data labels are displayed relative to the pie chart segments, with [Outside](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAccumulationLabelStyle.html#Syncfusion_Windows_Forms_Chart_ChartAccumulationLabelStyle_Outside) used as the default label style.
@@ -287,76 +267,6 @@ chartControl.Series(0).ConfigItems.PieItem.LabelStyle = ChartAccumulationLabelSt
 {% endtabs %}
 
 ![Pie Label Style in Windows Forms](../Chart-Types_images/windowsforms-pie-angle-labelstyle.png)
-
-### Pie height
-
-The [PieHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieHeight) property specifies the height of an individual pie chart when [MultiplePies](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_MultiplePies) are enabled.
-
-N> [PieHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieHeight) property is applicable when [Series3D](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl) set to `true`.
-
-The following code sets the pie height to `100f`.
-
-{% tabs %}
-{% highlight c# %}
-chartControl.Series[0].ConfigItems.PieItem.PieHeight = 100f;
-{% endhighlight %}
-{% highlight vb %}
-chartControl.Series(0).ConfigItems.PieItem.PieHeight = 100.0F
-{% endhighlight %}
-{% endtabs %}
-
-![Pie Height in Windows Forms](../Chart-Types_images/windowsforms-pie-chart-pie-height.png)
-
-### Pie radius
-
-The [PieRadius](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieRadius) property controls the radius of the pie chart, allowing its rendered size to be adjusted, with `0f` used as the default value.
-
-The following code sets the pie radius to `100f`.
-
-{% tabs %}
-{% highlight c# %}
-chartControl.Series[0].ConfigItems.PieItem.PieRadius = 100f;
-{% endhighlight %}
-{% highlight vb %}
-chartControl.Series(0).ConfigItems.PieItem.PieRadius = 100.0F
-{% endhighlight %}
-{% endtabs %}
-
-![Pie Radius in Windows Forms](../Chart-Types_images/windowsforms-pie-chart-pie-radius.png)
-
-### Pie size
-
-The [PieSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieSize) property specifies the width and height of an individual pie chart when [MultiplePies](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_MultiplePies) is enabled. This property is primarily intended for internal use, with `SizeF.Empty` used as the default value.
-
-The following code sets the pie size to `new SizeF(100f, 80f)`.
-
-{% tabs %}
-{% highlight c# %}
-chartControl.Series[0].ConfigItems.PieItem.PieSize = new SizeF(100f, 80f);
-{% endhighlight %}
-{% highlight vb %}
-chartControl.Series(0).ConfigItems.PieItem.PieSize = New SizeF(100.0F, 80.0F)
-{% endhighlight %}
-{% endtabs %}
-
-![Pie Size in Windows Forms](../Chart-Types_images/windowsforms-pie-chart-height.png)
-
-### Pie tilt
-
-The [PieTilt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieTilt) property specifies the tilt angle of an individual pie chart when [MultiplePies](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_MultiplePies) is enabled, with `0f` used as the default value.
-
-The following code sets the pie tilt angle to `30f`.
-
-{% tabs %}
-{% highlight c# %}
-chartControl.Series[0].ConfigItems.PieItem.PieTilt =
-    30f;
-{% endhighlight %}
-{% highlight vb %}
-chartControl.Series(0).ConfigItems.PieItem.PieTilt =
-    30.0F
-{% endhighlight %}
-{% endtabs %}
 
 ### Pie with same radius
 
@@ -509,6 +419,42 @@ chartControl.Series(0).ConfigItems.PieItem.ShowSeriesTitle = True
 
 ![Pie Show Series Title in Windows Forms](../Chart-Types_images/windowsforms-pie-chart-pie-show-series-title.png)
 
+### Show ticks
+
+The [ShowTicks](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ShowTicks) property controls whether tick lines are displayed between pie segments and their outside labels. The default value is `false`.
+
+The following code displays tick lines for the pie series.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ShowTicks = false;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ShowTicks = False
+{% endhighlight %}
+{% endtabs %}
+
+![Optimize Pie Point Position in Windows Forms](../Chart-Types_images/windowsforms-pie-show-ticks.png)
+
+### Height by area depth
+
+The [HeightByAreaDepth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_HeightByAreaDepth) property controls whether the height of a 3D pie chart is determined by the chart area's [Depth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_Depth) property. By default, this property is set to `false`, and the pie chart height is determined using the [HeightCoefficient](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_HeightCoeficient) property.
+
+The following code configures the pie chart height based on the chart area's depth.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series3D = true;
+chartControl.Series[0].ConfigItems.PieItem.HeightByAreaDepth = true;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series3D = True
+chartControl.Series(0).ConfigItems.PieItem.HeightByAreaDepth = True
+{% endhighlight %}
+{% endtabs %}
+
+![Pie Height Area Depth in Windows Forms](../Chart-Types_images/windowsforms-pie-chart-height-area-depth.png)
+
 ### Height coeficient
 
 When the chart is displayed in 3D mode, the [HeightCoeficient](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_HeightCoeficient) property controls the relative height of the pie chart. For this property to take effect, [HeightByAreaDepth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_HeightByAreaDepth) must be set to false. Valid values range from `0.1f` to `0.5f`, and the default value is `0.2f`.
@@ -533,6 +479,76 @@ series.ConfigItems.PieItem.HeightCoeficient = 0.1F
 {% endtabs %}
 
 ![Height Coefficient in Windows Forms](../Chart-Types_images/windowsforms-chart-height-coefficient.png)
+
+### Pie height
+
+The [PieHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieHeight) property specifies the height of an individual pie chart when [MultiplePies](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_MultiplePies) are enabled.
+
+N> [PieHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieHeight) property is applicable when [Series3D](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl) set to `true`.
+
+The following code sets the pie height to `100f`.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.PieItem.PieHeight = 100f;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.PieItem.PieHeight = 100.0F
+{% endhighlight %}
+{% endtabs %}
+
+![Pie Height in Windows Forms](../Chart-Types_images/windowsforms-pie-chart-pie-height.png)
+
+### Pie radius
+
+The [PieRadius](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieRadius) property controls the radius of the pie chart, allowing its rendered size to be adjusted, with `0f` used as the default value.
+
+The following code sets the pie radius to `100f`.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.PieItem.PieRadius = 100f;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.PieItem.PieRadius = 100.0F
+{% endhighlight %}
+{% endtabs %}
+
+![Pie Radius in Windows Forms](../Chart-Types_images/windowsforms-pie-chart-pie-radius.png)
+
+### Pie size
+
+The [PieSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieSize) property specifies the width and height of an individual pie chart when [MultiplePies](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_MultiplePies) is enabled. This property is primarily intended for internal use, with `SizeF.Empty` used as the default value.
+
+The following code sets the pie size to `new SizeF(100f, 80f)`.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.PieItem.PieSize = new SizeF(100f, 80f);
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.PieItem.PieSize = New SizeF(100.0F, 80.0F)
+{% endhighlight %}
+{% endtabs %}
+
+![Pie Size in Windows Forms](../Chart-Types_images/windowsforms-pie-chart-height.png)
+
+### Pie tilt
+
+The [PieTilt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieTilt) property specifies the tilt angle of an individual pie chart when [MultiplePies](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_MultiplePies) is enabled, with `0f` used as the default value.
+
+The following code sets the pie tilt angle to `30f`.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.PieItem.PieTilt =
+    30f;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.PieItem.PieTilt =
+    30.0F
+{% endhighlight %}
+{% endtabs %}
 
 ### Explode all points
 
@@ -561,7 +577,7 @@ N>
 - The `ExplodedIndex` property also applies to `Doughnut` charts.
 - The point index is zero-based. For example, a value of `2` explodes the third segment.
 
-The following code explodes the fourth segment in the Pie series.
+The following code explodes the third segment in the Pie series.
 
 {% tabs %}
 {% highlight c# %}
@@ -590,7 +606,8 @@ chartControl.Series[0].ExplodedAll = true;
 chartControl.Series[0].ExplosionOffset = 30f;
 {% endhighlight %}
 {% highlight vb %}
-chartControl.Series[0].ExplodedAll = True
+chartControl.Series(0).ExplodedAll = True
+Show more lines
 chartControl.Series(0).ExplosionOffset = 30.0F
 {% endhighlight %}
 {% endtabs %}
@@ -641,23 +658,6 @@ chartControl.Series.Add(series)
 {% endtabs %}
 
 ![Optimize Pie Point Position in Windows Forms](../Chart-Types_images/windowsforms-pie-optimized-point-positions.png)
-
-### Show ticks
-
-The [ShowTicks](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ShowTicks) property controls whether tick lines are displayed between pie segments and their outside labels. The default value is `false`.
-
-The following code displays tick lines for the pie series.
-
-{% tabs %}
-{% highlight c# %}
-chartControl.Series[0].ShowTicks = false;
-{% endhighlight %}
-{% highlight vb %}
-chartControl.Series(0).ShowTicks = False
-{% endhighlight %}
-{% endtabs %}
-
-![Optimize Pie Point Position in Windows Forms](../Chart-Types_images/windowsforms-pie-show-ticks.png)
 
 ### Divide area
 
