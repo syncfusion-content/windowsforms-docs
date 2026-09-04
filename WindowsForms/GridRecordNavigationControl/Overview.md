@@ -9,7 +9,7 @@ documentation: ug
 
 # About Syncfusion® Windows Forms GridRecordNavigationControl
 
-The GridRecordNavigation control allows you to navigate between records by using the Microsoft Access-like navigation bar at the bottom of the grid. It provides built-in support to navigate between the first, last, previous, and next record.
+The GridRecordNavigationControl allows you to navigate between records by using the Microsoft Access-like navigation bar at the bottom of the grid. It provides built-in support to navigate between the first, last, previous, and next record.
 
 ## Key features
 

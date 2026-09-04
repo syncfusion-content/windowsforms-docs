@@ -9,7 +9,7 @@ documentation: ug
 
 # Customizing List control in Windows Forms MultiColumn ListBox
 
-Appearance of the GridList control can be customized by using the following properties:
+Appearance of the MultiColumn ListBox can be customized by using the following properties:
 
 * TransparentBackground: Sets a transparent background for grid cells. If its value is set to true, no background color will be displayed. If its value is set to false, the background will be filled with the chosen color. The value is false by default. Refer to the BackColor property for setting the required background color. 
 
@@ -79,7 +79,7 @@ Me.gridListControl1.Grid.Properties.GridLineColor = Color.Blue
 
 ![Grid Line Color in WinForms MultiColumn ListBox](Customizing-List-control_images/Customizing-List-control_img5.jpeg) 
 
-* BackColor: Allows you to specify the background color for the GridList control. It is mandatory to set the TransparentBackground to false.
+* BackColor: Allows you to specify the background color for the MultiColumn ListBox. It is mandatory to set the TransparentBackground to false.
 
 {% capture codesnippet5 %}
 {% tabs %}
