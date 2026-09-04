@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Save Grid Content in Memory in Windows Forms Grid Control
 
-You can save the contents of a grid in memory rather than writing to a file system. This can be done using SaveSoap or SaveBinary method of GridControl. The below code snippet illustrates how this can be done.
+You can save the contents of a grid in memory rather than writing to a file system. This can be done using SaveSoap or SaveBinary method of Grid Control. The below code snippet illustrates how this can be done.
 
 {% tabs %}
 {% highlight c# %}

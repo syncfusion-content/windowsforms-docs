@@ -11,7 +11,7 @@ documentation: ug
 
 ## Introduction
 
-Add GridSortColumnHeaderCellModel to the GridControl's CellModels collection to include SortColumn HeaderCell. Then assign this as CellType and set tag property to either ListSortDirection.Ascending or ListSortDirection.Descending to show the up and down arrow mark.
+Add GridSortColumnHeaderCellModel to the Grid Control's CellModels collection to include SortColumn HeaderCell. Then assign this as CellType and set tag property to either ListSortDirection.Ascending or ListSortDirection.Descending to show the up and down arrow mark.
 
 ## Example
 
