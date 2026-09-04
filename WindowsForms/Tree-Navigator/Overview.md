@@ -11,7 +11,7 @@ documentation: ug
 
 The Tree Navigator control provides a unique interface that can expand a tree structure in-place without taking up more space on the screen. Items in the control are expanded or collapsed, and you can drill down to sub-items by simply clicking on items in the Tree Navigator. 
 
-![Overview of Syncfusion Tree Navigator](Overview_images/overview.png)
+![Overview of WinForms Tree Navigator](Overview_images/overview.png)
 
 
 ## Key Features

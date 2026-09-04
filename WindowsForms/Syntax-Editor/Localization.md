@@ -9,9 +9,9 @@ documentation: ug
 
 # Localization in Windows Forms Syntax Editor
 
-Localization is the process of translating the application resources into different languages for some specific cultures. The `EditControl` supports complete localization to any desired language of all the dialogs boxes and strings associated with it. It can be localized by using the [ILocalizationProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ILocalizationProvider.html).
+Localization is the process of translating the application resources into different languages for some specific cultures. The Syntax Editor supports complete localization to any desired language of all the dialogs boxes and strings associated with it. It can be localized by using the [ILocalizationProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ILocalizationProvider.html).
 
-Follow the steps to localize the dialog boxes in the EditControl:
+Follow the steps to localize the dialog boxes in the Syntax Editor:
 
 1. Include the required namespaces at the beginning of the file.
 
@@ -100,7 +100,7 @@ Me.Controls.Add(editControl1)
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}  
 
-6. The following code example demonstrates localizing various dialog boxes in the EditControl.
+6. The following code example demonstrates localizing various dialog boxes in the Syntax Editor.
 
 **Find Dialog Box**
 
@@ -261,7 +261,7 @@ End Function
 {% endcapture %}
 {{ codesnippet4 | OrderList_Indent_Level_1 }} 
 
-![Localized find dialog box in syntax editor](Localization-and-Globalization_images\FindDialogLocalization.png)
+![Localized find dialog box in Syntax Editor](Localization-and-Globalization_images\FindDialogLocalization.png)
 
 **Replace Dialog Box**
 
@@ -347,7 +347,7 @@ End Function
 
 {% endtabs %}
 
-![Localized replace dialog box in syntax editor](Localization-and-Globalization_images\ReplaceDialogLocalization.png)
+![Localized replace dialog box in Syntax Editor](Localization-and-Globalization_images\ReplaceDialogLocalization.png)
 
 **GoTo Dialog Box**
 
@@ -409,7 +409,7 @@ End Function
 
 {% endtabs %}
 
-![Localized GoTo dialog box in syntax editor](Localization-and-Globalization_images\GoToDialogLocalization.png)
+![Localized GoTo dialog box in Syntax Editor](Localization-and-Globalization_images\GoToDialogLocalization.png)
 
 **Context Menu**
 
@@ -645,7 +645,7 @@ End Function
 
 {% endtabs %}
 
-![Localized context menu in syntax editor](Localization-and-Globalization_images\ContextMenuLocalization.png)
+![Localized context menu in Syntax Editor](Localization-and-Globalization_images\ContextMenuLocalization.png)
 
-N> Refer to the following sample link that demonstrates the localization support in EditControl:
+N> Refer to the following sample link that demonstrates the localization support in Syntax Editor:
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Localization

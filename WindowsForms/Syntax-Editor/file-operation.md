@@ -13,7 +13,7 @@ Supports all file operations like create new, open, or save.
 
 ## Load file
 
-The [LoadFile](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_LoadFile) function loads the content of any desired file into the EditControl. The function is explained as follows.
+The [LoadFile](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_LoadFile) function loads the content of any desired file into the Syntax Editor. The function is explained as follows.
 
 <table>
 <tr>
@@ -65,7 +65,7 @@ The name of the currently loaded stream in the Edit Control can be get or set by
 
 {% highlight C# %}
 
-// Gets or sets the name of the stream that is currently loaded in the EditControl.
+// Gets or sets the name of the stream that is currently loaded in the Syntax Editor.
 
 this.editControl1.FileOpened = new FileStream("Temp.txt", FileMode.Create);
 
@@ -74,7 +74,7 @@ this.editControl1.FileOpened = new FileStream("Temp.txt", FileMode.Create);
 
 {% highlight VB %}
 
-' Gets or sets the name of the stream that is currently loaded in the EditControl.
+' Gets or sets the name of the stream that is currently loaded in the Syntax Editor.
 
 Me.editControl1.FileOpened = New FileStream("Temp.txt", FileMode.Create)
 
@@ -84,13 +84,13 @@ Me.editControl1.FileOpened = New FileStream("Temp.txt", FileMode.Create)
 
 ### Retrieve loaded file name
 
-By using the [FileName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_FileName) property, you can get or set the name of the currently loaded file in the EditControl.
+By using the [FileName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_FileName) property, you can get or set the name of the currently loaded file in the Syntax Editor.
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Specifies the name of the file loaded in the EditControl.
+// Specifies the name of the file loaded in the Syntax Editor.
 
 this.editControl1.FileName = "Temp.txt";
 
@@ -99,7 +99,7 @@ this.editControl1.FileName = "Temp.txt";
 
 {% highlight VB %}
 
-' Specifies the name of the file loaded in the EditControl.
+' Specifies the name of the file loaded in the Syntax Editor.
 
 Me.editControl1.FileName = "Temp.txt"
 
@@ -109,13 +109,13 @@ Me.editControl1.FileName = "Temp.txt"
 
 ## Load from stream
 
-Content of the EditControl can also be loaded to a particular stream by using the specified encoding and line end style by using the [LoadStream](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_LoadStream_System_IO_Stream_) function.
+Content of the Syntax Editor can also be loaded to a particular stream by using the specified encoding and line end style by using the [LoadStream](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_LoadStream_System_IO_Stream_) function.
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Loads the content of the specified stream into the EditControl.
+// Loads the content of the specified stream into the Syntax Editor.
 
 this.editControl1.LoadStream(streamName);
 
@@ -128,7 +128,7 @@ this.editControl1.LoadStream(streamName, config);
 
 {% highlight VB %}
 
-' Loads the content of the specified stream into the EditControl.
+' Loads the content of the specified stream into the Syntax Editor.
 
 Me.editControl1.LoadStream(streamName)
 
@@ -142,7 +142,7 @@ Me.editControl1.LoadStream(streamName, config)
 
 ## Drop file to load contents
 
-The EditControl provides a complete support for dropped the dragged files by using the `DropAllFiles` and `FileExtension` properties. The properties are explained as follows.
+The Syntax Editor provides a complete support for dropped the dragged files by using the `DropAllFiles` and `FileExtension` properties. The properties are explained as follows.
 
 <table>
 <tr>
@@ -153,22 +153,22 @@ Description</th></tr>
 <td>
 {{ '[DropAllFiles](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_DropAllFiles)' | markdownify }}
 </td><td>
-Specifies whether all files can be dropped onto EditControl or not. If set to `false`, files with extensions contained in FileExtensions can only be dropped.</td></tr>
+Specifies whether all files can be dropped onto Syntax Editor or not. If set to `false`, files with extensions contained in FileExtensions can only be dropped.</td></tr>
 <tr>
 <td>
 {{ '[FileExtensions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_FileExtensions)' | markdownify }}</td><td>
-Specifies the extensions of files that can be dropped to the EditControl.</td></tr>
+Specifies the extensions of files that can be dropped to the Syntax Editor.</td></tr>
 </table>
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Drops all files onto EditControl.
+// Drops all files onto Syntax Editor.
 
 this.editControl1.DropAllFiles = true;
 
-// Specifies the file extensions of files that can be dropped onto EditControl. 
+// Specifies the file extensions of files that can be dropped onto Syntax Editor. 
 
 this.editControl1.FileExtensions = new string[] {".cs", ".sql", ".vb", ".xml"};
 
@@ -177,11 +177,11 @@ this.editControl1.FileExtensions = new string[] {".cs", ".sql", ".vb", ".xml"};
 
 {% highlight VB %}
 
-' Drops all files onto EditControl.
+' Drops all files onto Syntax Editor.
 
 Me.editControl1.DropAllFiles = True
 
-' Specifies the file extensions of files that can be dropped onto EditControl.
+' Specifies the file extensions of files that can be dropped onto Syntax Editor.
 
 Me.editControl1.FileExtensions = New String() {".cs", ".sql", ".vb", ".xml"} 
 
@@ -203,26 +203,26 @@ Specifies whether the drag and drop operations are allowed for the control or no
 <tr>
 <td>
 {{ '[InsertDroppedFileIntoText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_InsertDroppedFileIntoText)' | markdownify }}</td><td>
-Specifies whether the outer file dragged and dropped onto the EditControl should be inserted into the current content. When this property is set to `false`, the current file is closed and the dropped outer file is opened.</td></tr>
+Specifies whether the outer file dragged and dropped onto the Syntax Editor should be inserted into the current content. When this property is set to `false`, the current file is closed and the dropped outer file is opened.</td></tr>
 <tr>
 <td>
 {{ '[ShowFileDropNotification](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowFileDropNotification)' | markdownify }}</td><td>
-Specifies whether the notification message is to be displayed when the outer file is dragged and dropped onto the EditControl.</td></tr>
+Specifies whether the notification message is to be displayed when the outer file is dragged and dropped onto the Syntax Editor.</td></tr>
 </table>
 
 {% tabs %}
 
 {% highlight C# %}
 
-//To set the EditControl that allows to Drag and Dropping files
+//To set the Syntax Editor that allows to Drag and Dropping files
 
 this.editControl1.AllowDrop = true; 
 
-// Specifies whether the outer file dragged and dropped onto the EditControl should be inserted into the current content.
+// Specifies whether the outer file dragged and dropped onto the Syntax Editor should be inserted into the current content.
 
 this.editControl1.InsertDroppedFileIntoText = true;
 
-// To hide the notification message displayed when the outer file is dragged and dropped onto the EditControl.
+// To hide the notification message displayed when the outer file is dragged and dropped onto the Syntax Editor.
 
 this.editControl1.ShowFileDropNotification = false;
 
@@ -235,11 +235,11 @@ this.editControl1.ShowFileDropNotification = false;
 
 Me.editControl1.AllowDrop = True
 
-‘Specifies whether the outer file dragged and dropped onto the EditControl should be inserted into the current content.
+‘Specifies whether the outer file dragged and dropped onto the Syntax Editor should be inserted into the current content.
 
 Me.editControl1.InsertDroppedFileIntoText = True
 
-' To hide the notification message displayed when the outer file is dragged and dropped onto the EditControl.
+' To hide the notification message displayed when the outer file is dragged and dropped onto the Syntax Editor.
 
 Me.editControl1.ShowFileDropNotification = False
 
@@ -249,7 +249,7 @@ Me.editControl1.ShowFileDropNotification = False
 
 ## File modification
 
-By using the [FileModified](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_FileModified) and [IsModified](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_IsModified) properties of the EditControl, you can ensure whether the content of the file was modified or not.
+By using the [FileModified](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_FileModified) and [IsModified](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_IsModified) properties of the Syntax Editor, you can ensure whether the content of the file was modified or not.
 
 {% tabs %}
 
@@ -318,13 +318,13 @@ Me.editControl1.[New](config)
 
 ## Discard changes
 
-The changes made to the content of the EditControl can be discarded by using the [FlushChanges](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_FlushChanges) function.
+The changes made to the content of the Syntax Editor can be discarded by using the [FlushChanges](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_FlushChanges) function.
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Saves changes made to the contents of the EditControl into the current stream.
+// Saves changes made to the contents of the Syntax Editor into the current stream.
 
 this.editControl1.FlushChanges();
 
@@ -333,7 +333,7 @@ this.editControl1.FlushChanges();
 
 {% highlight VB %}
 
-' Saves changes made to the contents of the EditControl into the current stream.
+' Saves changes made to the contents of the Syntax Editor into the current stream.
 
 Me.editControl1.FlushChanges()
 
@@ -343,7 +343,7 @@ Me.editControl1.FlushChanges()
 
 ## Save file
 
-The following functions helps to save a file in the EditControl.
+The following functions helps to save a file in the Syntax Editor.
 
 <table>
 <tr>
@@ -354,11 +354,11 @@ Description</th></tr>
 <td>
 {{ '[SaveFile](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SaveFile_System_String_)' | markdownify }}
 </td><td>
-Saves the content of the EditControl to a specified file.</td></tr>
+Saves the content of the Syntax Editor to a specified file.</td></tr>
 <tr>
 <td>
 {{ '[Save](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_Save)' | markdownify }}</td><td>
-Invokes the Save File dialog box and lets you save the contents of the EditControl to the specified file.</td></tr>
+Invokes the Save File dialog box and lets you save the contents of the Syntax Editor to the specified file.</td></tr>
 <tr>
 <td>
 {{ '[SaveAs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SaveAs)' | markdownify }}</td><td>
@@ -366,7 +366,7 @@ Opens SaveAs dialog and prompts you to enter the name of the file.</td></tr>
 <tr>
 <td>
 {{ '[SaveModified](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SaveModified)' | markdownify }}</td><td>
-Saves the file only if it was modified and prompts for the filename if needed. This is especially useful when the application is about to be closed or a new file is being loaded into the EditControl.</td></tr>
+Saves the file only if it was modified and prompts for the filename if needed. This is especially useful when the application is about to be closed or a new file is being loaded into the Syntax Editor.</td></tr>
 </table>
 
 {% tabs %}
@@ -416,7 +416,7 @@ Me.editControl1.SaveModified()
 
 ### Save as stream
 
-Content of the EditControl can also be saved to a particular stream by using the specified encoding and line end style by using the [SaveStream](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SaveStream_System_IO_Stream_System_Text_Encoding_Syncfusion_IO_NewLineStyle_) function.
+Content of the Syntax Editor can also be saved to a particular stream by using the specified encoding and line end style by using the [SaveStream](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SaveStream_System_IO_Stream_System_Text_Encoding_Syncfusion_IO_NewLineStyle_) function.
 
 {% tabs %}
 
@@ -439,13 +439,13 @@ Me.editControl1.SaveStream(System.IO.Stream.Null , Encoding.BigEndianUnicode, Sy
 
 {% endtabs %}
 
-The changes made to the content of the EditControl can be saved or discarded. The [SaveOnClose](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SaveOnClose) property specifies whether the default Save Changes prompt should be displayed on closing the EditControl or not.
+The changes made to the content of the Syntax Editor can be saved or discarded. The [SaveOnClose](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SaveOnClose) property specifies whether the default Save Changes prompt should be displayed on closing the Syntax Editor or not.
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Disables the default Save Changes prompt that appears when the form hosting EditControl containing unsaved contents is closed.
+// Disables the default Save Changes prompt that appears when the form hosting Syntax Editor containing unsaved contents is closed.
 
 this.editControl1.SaveOnClose = false; 
 
@@ -454,7 +454,7 @@ this.editControl1.SaveOnClose = false;
 
 {% highlight VB %}
 
-' Disables the default Save Changes prompt that appears when the form hosting EditControl containing unsaved contents is closed.
+' Disables the default Save Changes prompt that appears when the form hosting Syntax Editor containing unsaved contents is closed.
 
 Me.editControl1.SaveOnClose = False 
 
@@ -466,7 +466,7 @@ Me.editControl1.SaveOnClose = False
 
 ### Auto Save file on close
 
-When the `SaveOnClose` property is set to `false`, the default Save Changes prompt does not appear. The user should perform some custom Save routine in the Closing event handler of the host form to save the unsaved contents in the EditControl. If not, they will be lost.
+When the `SaveOnClose` property is set to `false`, the default Save Changes prompt does not appear. The user should perform some custom Save routine in the Closing event handler of the host form to save the unsaved contents in the Syntax Editor. If not, they will be lost.
 
 {% tabs %}
 
@@ -520,9 +520,9 @@ End Sub
 
 {% endtabs %}
 
-When the SaveOnClose property is set to `true`, the default Save Changes prompt appears on closing the EditControl without saving the contents. Click Yes to save the changes, No to discard the changes, or Cancel to close the Save Changes prompt.
+When the SaveOnClose property is set to `true`, the default Save Changes prompt appears on closing the Syntax Editor without saving the contents. Click Yes to save the changes, No to discard the changes, or Cancel to close the Save Changes prompt.
 
-The above task can be further customized by handling the Closing event of EditControl. The Closing event is triggered just before a file or stream is closed in the EditControl.
+The above task can be further customized by handling the Closing event of Syntax Editor. The Closing event is triggered just before a file or stream is closed in the Syntax Editor.
 
 {% tabs %}
 
@@ -586,7 +586,7 @@ N> The default value of e.Action is SaveChangesAction.ShowDialog.
 
 ## Insert file
 
-The following functions helps to insert a file in the EditControl.
+The following functions helps to insert a file in the Syntax Editor.
 
 <table>
 <tr>
@@ -637,7 +637,7 @@ Me.editControl1.InsertFile(@"..\\..\\Form2.cs")
 
 ## Close file
 
-The [Close](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_Close) function helps to close the currently opened file or stream and displays the EditControl in the read-only mode until a new file or stream is opened. The function is explained as follows.
+The [Close](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_Close) function helps to close the currently opened file or stream and displays the Syntax Editor in the read-only mode until a new file or stream is opened. The function is explained as follows.
 
 <table>
 <tr>
@@ -654,7 +654,7 @@ Closes the stream and makes the control readonly.</td></tr>
 
 {% highlight C# %}
 
-// Closes the currently open file or stream in the EditControl. 
+// Closes the currently open file or stream in the Syntax Editor. 
 
 this.editControl1.Close(); 
 
@@ -663,7 +663,7 @@ this.editControl1.Close();
 
 {% highlight VB %}
 
-' Closes the currently open file or stream in the EditControl. 
+' Closes the currently open file or stream in the Syntax Editor. 
 
 Me.editControl1.Close()
 

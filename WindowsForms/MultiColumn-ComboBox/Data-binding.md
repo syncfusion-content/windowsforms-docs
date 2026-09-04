@@ -9,11 +9,11 @@ documentation: ug
 
 # Data Binding in Windows Forms Multicolumn ComboBox
 
-Data binding concepts for the [Multicolumn ComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) are discussed in the below topics.
+Data binding concepts for the Multicolumn ComboBox are discussed in the below topics.
 
 ## DataView as data source
 
-We can use the `DataView` as the `DataSource` for [Multicolumn ComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) control. It can be done using the below code snippet.
+We can use the `DataView` as the `DataSource` for [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) control. It can be done using the below code snippet.
 
 {% tabs %}
 {% highlight c# %}
@@ -78,15 +78,13 @@ End Sub
 
 ![DataView as data source](Overview_images/Overview_img326.jpeg) 
 
-
-
 ## Using data adapter
 
-This section deals with data binding in [Multicolumn ComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) using `OleDBDataAdapter`. Follow the steps below. 
+This section deals with data binding in Multicolumn ComboBox using `OleDBDataAdapter`. Follow the steps below. 
 
-* Add a [Multicolumn ComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) control to your form. 
+* Add a [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) control to your form. 
 * Add the appropriate DataAdapter and DataSets for your datasource. 
-* Set the [Multicolumn Combobox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) `Datasource`, `DisplayMember` and `ValueMember` properties. 
+* Set the [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) `Datasource`, `DisplayMember` and `ValueMember` properties. 
 * Alternatively, you can set up the data binding in code, in the form's load event handler as follows.
 
 {% tabs %}
@@ -128,7 +126,7 @@ A sample which demonstrates the OleDbDataAdapter data binding is available in th
 
 ## Populating Multicolumn ComboBox
 
-This section deals with populating [Multicolumn ComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) with typed Dataset as datasource. Follow the steps below :
+This section deals with populating Multicolumn ComboBox with typed Dataset as datasource. Follow the steps below:
 
 1. Open VS .NET IDE and click File -> New -> Project -> Windows Application. 
 2. Right click the project in the Solutions Explorer and click Add -> New Item and Add New Item dialog box will be displayed. 

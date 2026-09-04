@@ -9,17 +9,17 @@ documentation: ug
 
 # About Syncfusion® Windows Forms Syntax Editor Control
 
-The [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) is a powerful text-editor control for creating interactive code-editor applications with a rich feature set. It includes editing, syntax highlighting, text indentation, IntelliSense, expand/collapse of code blocks, and custom language configuration similar to the Microsoft Visual Studio Editor.
+The Syntax Editor is a powerful text-editor control for creating interactive code-editor applications with a rich feature set. It includes editing, syntax highlighting, text indentation, IntelliSense, expand/collapse of code blocks, and custom language configuration similar to the Microsoft Visual Studio Editor.
 
 ## Key features
 
 [Syntax highlighting](https://help.syncfusion.com/windowsforms/syntax-editor/syntax-highlighting) - Provides built-in syntax highlighting and a code-editing experience for popular languages such as C, C#, Delphi, VB, SQL, XML, HTML, Java, VBScript, JScript, PowerShell, and plain text. It also offers fully configurable syntax highlighting for general text editing.
 
-[Custom language support](https://help.syncfusion.com/windowsforms/syntax-editor/syntax-highlighting#custom-language-using-xml) - Supports user-defined language configurations. Custom language configurations can be created easily and applied to the content of the EditControl.
+[Custom language support](https://help.syncfusion.com/windowsforms/syntax-editor/syntax-highlighting#custom-language-using-xml) - Supports user-defined language configurations. Custom language configurations can be created easily and applied to the content of the Syntax Editor.
 
 [Editing support](https://help.syncfusion.com/windowsforms/syntax-editor/editing) - Allows end users to modify and edit text documents and source-code files. This includes clipboard support, unlimited undo and redo, drag and drop, block indent and outdent, and more.
 
-[Code outlining](https://help.syncfusion.com/windowsforms/syntax-editor/text-visualization#outlining) - Sections of code in the outlining blocks can be specified using configuration settings. The EditControl defines different brackets for highlighting different languages.
+[Code outlining](https://help.syncfusion.com/windowsforms/syntax-editor/text-visualization#outlining) - Sections of code in the outlining blocks can be specified using configuration settings. The Syntax Editor defines different brackets for highlighting different languages.
 
 [Clipboard operations](https://help.syncfusion.com/windowsforms/syntax-editor/editing#clipboard-operations) - Provides keyboard and programmatic support to Cut, Copy, and Paste.
 
@@ -37,7 +37,7 @@ The [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows
 
 [Auto correct](https://help.syncfusion.com/windowsforms/syntax-editor/intellisense#auto-correct) - Supports an AutoCorrect option that automatically corrects misspellings and common typos.
 
-[Fully functional context menu](https://help.syncfusion.com/windowsforms/syntax-editor/editing#context-menu-options) - Provides a built-in context menu with options to perform editing operations such as Undo, Redo, Cut, Copy, Paste, Select All, and more. The EditControl also contains options to enable or disable the built-in context menu.
+[Fully functional context menu](https://help.syncfusion.com/windowsforms/syntax-editor/editing#context-menu-options) - Provides a built-in context menu with options to perform editing operations such as Undo, Redo, Cut, Copy, Paste, Select All, and more. The Syntax Editor also contains options to enable or disable the built-in context menu.
 
 [Content dividers](https://help.syncfusion.com/windowsforms/syntax-editor/text-visualization#content-dividers) - Clearly distinguishes content sections with line dividers similar to Visual Basic to improve code readability.
 
@@ -59,7 +59,7 @@ The [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows
 
 [Shortcut keys](https://help.syncfusion.com/windowsforms/syntax-editor/end-user-capability#key-binding) - Provides shortcut key support for all editing and navigation operations.
 
-[Split view](https://help.syncfusion.com/windowsforms/syntax-editor/appearance#split-views) - Provides a view-splitting function to split a single document in the EditControl into several views.
+[Split view](https://help.syncfusion.com/windowsforms/syntax-editor/appearance#split-views) - Provides a view-splitting function to split a single document in the Syntax Editor into several views.
 
 [Single line mode](https://help.syncfusion.com/windowsforms/syntax-editor/appearance#single-line-mode) - Supports single-line mode that is rendered just like a regular TextBox. This enables you to have a simple TextBox but with all the syntax highlighting, selection, IntelliPrompt, and other features that make Syntax Editor great for editing code.
 
@@ -73,4 +73,4 @@ The [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows
 
 [Export](https://help.syncfusion.com/windowsforms/syntax-editor/export) - Supports exporting contents to XML, RTF, and HTML formats.
 
-[Scrolling](https://help.syncfusion.com/windowsforms/syntax-editor/appearance#scrollbar) - Provides extremely smooth scrolling behavior even when large files are loaded in the EditControl.
+[Scrolling](https://help.syncfusion.com/windowsforms/syntax-editor/appearance#scrollbar) - Provides extremely smooth scrolling behavior even when large files are loaded in the Syntax Editor.

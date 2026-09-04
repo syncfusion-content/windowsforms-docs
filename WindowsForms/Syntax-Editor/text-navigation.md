@@ -9,13 +9,13 @@ documentation: ug
 
 # Text Navigation in Windows Forms Syntax Editor
 
-The EditControl offers extensive support for text navigation. You can perform navigation at the character, word, line, page, or entire document levels. This section briefly explains navigation of text in the EditControl.
+The Syntax Editor offers extensive support for text navigation. You can perform navigation at the character, word, line, page, or entire document levels. This section briefly explains navigation of text in the Syntax Editor.
 
-![Syntax editor with navigation options by character, word and line](Text-Navigation_images/Text-Navigation_img1.png)
+![Syntax Editor with navigation options by character, word and line](Text-Navigation_images/Text-Navigation_img1.png)
 
 ## Character based navigation
 
-The following functions enables text navigation in the EditControl in terms of characters or columns.
+The following functions enables text navigation in the Syntax Editor in terms of characters or columns.
 
 <table>
 <tr>
@@ -72,7 +72,7 @@ Me.editControl1.MoveRight()
 
 ## Word based navigation
 
-The following functions enables text navigation in the EditControl in terms of words.
+The following functions enables text navigation in the Syntax Editor in terms of words.
 
 <table>
 <tr>
@@ -112,7 +112,7 @@ Me.editControl1.MoveRightWord()
 
 ## Line based navigation
 
-The following functions enables text navigation in the EditControl in terms of lines.
+The following functions enables text navigation in the Syntax Editor in terms of lines.
 
 <table>
 <tr>
@@ -152,7 +152,7 @@ Me.editControl1.MoveToLineEnd()
 
 ## Page based navigation
 
-The following functions enables text navigation in the EditControl in terms of pages.
+The following functions enables text navigation in the Syntax Editor in terms of pages.
 
 <table>
 <tr>
@@ -217,7 +217,7 @@ Me.editControl1.JumpToIndentBlockEnd()
 
 ## Document based navigation
 
-The following functions enables text navigation in the EditControl in terms of documents.
+The following functions enables text navigation in the Syntax Editor in terms of documents.
 
 <table>
 <tr>
@@ -257,7 +257,7 @@ Me.editControl1.MoveToEnd()
 
 ### Retrieve current word
 
-Retrieves the current word in the EditControl by using the [GetCurrentWord](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_GetCurrentWord) function.
+Retrieves the current word in the Syntax Editor by using the [GetCurrentWord](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_GetCurrentWord) function.
 
 {% tabs %}
 
@@ -278,7 +278,7 @@ Me.WriteLine(this.editControl1.GetCurrentWord().ToString())
 
 ### Retrieve current column index in line
 
-Retrieves the current word column index in the EditControl by using the [GetCurrentWordColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_GetCurrentWordColumn) function and [CurrentColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_CurrentColumn) property.
+Retrieves the current word column index in the Syntax Editor by using the [GetCurrentWordColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_GetCurrentWordColumn) function and [CurrentColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_CurrentColumn) property.
 
 {% tabs %}
 
@@ -303,7 +303,7 @@ Me.WriteLine(this.editControl1.CurrentColumn)
 
 ### Retrieve current line index
 
-Retrieves the current word column index in the EditControl by using the [CurrentLine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_CurrentLine) property.
+Retrieves the current word column index in the Syntax Editor by using the [CurrentLine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_CurrentLine) property.
 
 {% tabs %}
 
@@ -322,14 +322,14 @@ Me.WriteLine(this.editControl1.CurrentLine)
 
 {% endtabs %}
 
-N> Refer to the following sample link that demonstrates the text navigation functionalities in the EditControl:
+N> Refer to the following sample link that demonstrates the text navigation functionalities in the Syntax Editor:
 C:\Users\&lt;User&gt;\AppData\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Text Navigation\Text Navigation
 
 ## Scrolling
 
-The EditControl offers extremely smooth scrolling behavior by using the idle-time processing and dynamic scroll area expansion techniques. The scrolling behavior is smooth even when loading large files though the EditControl scrolls by several hundred lines for a small movement of the scroller.
+The Syntax Editor offers extremely smooth scrolling behavior by using the idle-time processing and dynamic scroll area expansion techniques. The scrolling behavior is smooth even when loading large files though the Syntax Editor scrolls by several hundred lines for a small movement of the scroller.
 
-The scrollers in the EditControl can be optionally shown or hidden by using the following properties.
+The scrollers in the Syntax Editor can be optionally shown or hidden by using the following properties.
 
 <table>
 <tr>
@@ -383,13 +383,13 @@ Me.editControl1.AlwaysShowScrollers = True
 
 {% endtabs %}
 
-Supports scroller events that are raised when the scroll arrows are clicked. The scroller events are used to synchronize the scrolling of multiple EditControls.
+Supports scroller events that are raised when the scroll arrows are clicked. The scroller events are used to synchronize the scrolling of multiple Syntax Editors.
 
-![Horizontal and vertical scrollers in syntax editor](Text-Navigation_images/Text-Navigation_img2.jpg)
+![Horizontal and vertical scrollers in Syntax Editor](Text-Navigation_images/Text-Navigation_img2.jpg)
 
 ### Scroll position and offsets
 
-The scroll position and offsets of the EditControl are set by using the following properties.
+The scroll position and offsets of the Syntax Editor are set by using the following properties.
 
 <table>
 <tr>
@@ -399,7 +399,7 @@ Description</th></tr>
 <tr>
 <td>
 {{ '[ScrollPosition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ScrollPosition)' | markdownify }}</td><td>
-Specifies scroll position of the EditControl.</td></tr>
+Specifies scroll position of the Syntax Editor.</td></tr>
 <tr>
 <td>
 {{ '[ScrollOffsetBottom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ScrollOffsetBottom)' | markdownify }}</td><td>

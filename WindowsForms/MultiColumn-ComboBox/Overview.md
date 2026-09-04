@@ -15,8 +15,6 @@ In this version, the Multicolumn ComboBox can only be populated using data bindi
 
 This combo box automatically shows all the fields in the datasource. You can data bind using the usual DataSource, DisplayMember and ValueMember properties.
 
-
-
 ![Overview of Multicolumn ComboBox](Overview_images/Overview_img323.jpeg) 
 
 ## Choose between different combobox controls

@@ -165,7 +165,7 @@ The following steps allows you to add TreeMenuItem to the Tree Navigator through
    
 ![Adding the Items](Getting-Started_images/ThroughDesigner2.png)
 
-![Tree Navigator Output](Getting-Started_images/Adding_TreeMenuitems.png)
+![WinForms Tree Navigator](Getting-Started_images/Adding_TreeMenuitems.png)
 
 N> In .NET Core, when adding child items to a TreeMenuItem directly from the Visual Studio Properties window, the default Collection Editor opens instead of the expected editor.
 Workaround: Use the main Tree Navigator Collection Editor to add items, then configure the child items as needed. A permanent fix is in progress.

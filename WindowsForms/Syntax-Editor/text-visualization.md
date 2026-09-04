@@ -9,15 +9,15 @@ documentation: ug
 
 # Text Visualization in Windows Forms Syntax Editor
 
-Various text visualization features of EditControl is elaborated under the following topics.
+Various text visualization features of Syntax Editor is elaborated under the following topics.
 
 ## Outlining
 
-Sections of code form outlining blocks can be specified by using the Configuration Settings. The EditControl defines different brackets for highlighting different languages.
+Sections of code form outlining blocks can be specified by using the Configuration Settings. The Syntax Editor defines different brackets for highlighting different languages.
 
 ### Configure outline
 
-Outlining blocks can be specified for code as well as for plain text. By Setting the [ShowOutliningCollapsers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowOutliningCollapsers) property to `true`, you can enable or disable automatic outlining in the EditControl. 
+Outlining blocks can be specified for code as well as for plain text. By Setting the [ShowOutliningCollapsers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowOutliningCollapsers) property to `true`, you can enable or disable automatic outlining in the Syntax Editor. 
 
 {% tabs %}
 
@@ -42,7 +42,7 @@ Me.editControl1.ShowOutliningCollapsers = True
 
 ### Toggle outline visibility
 
-You can toggle the outline visibility in the EditControl by using the following functions.
+You can toggle the outline visibility in the Syntax Editor by using the following functions.
 
 <table>
 <tr>
@@ -173,7 +173,7 @@ Me.editControl1.ExpandAll()
 
 {% endtabs %}
 
-The EditControl supports the following events to handle various outlining operations.
+The Syntax Editor supports the following events to handle various outlining operations.
 
 <table>
 <tr>
@@ -214,11 +214,11 @@ Occurs when CollapseAll the function is called.</td></tr>
 Occurs when ExpandAll the function is called.</td></tr>
 </table>
 
-These events can be canceled and can be used to optionally cancel the outlining collapse and expand operations respectively. They are discussed in detail in the EditControl events section.
+These events can be canceled and can be used to optionally cancel the outlining collapse and expand operations respectively. They are discussed in detail in the Syntax Editor events section.
 
 **Outlining tooltip**
 
-The EditControl provides `Tooltip` support for Outlining. Outlining Tooltip is displayed for each collapsed outlining block. It shows the contents of the collapsed block. The Outlining Tooltip can be optionally shown or hidden by using the [ShowOutliningTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowOutliningTooltip) property in EditControl. Its default value is `true`.
+The Syntax Editor provides `Tooltip` support for Outlining. Outlining Tooltip is displayed for each collapsed outlining block. It shows the contents of the collapsed block. The Outlining Tooltip can be optionally shown or hidden by using the [ShowOutliningTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowOutliningTooltip) property in `EditControl`. Its default value is `true`.
 
 {% tabs %}
 
@@ -241,9 +241,9 @@ Me.editControl1.ShowOutliningTooltip = True
 
 {% endtabs %}
 
-![Collapsible region tooltip in syntax editor](Text-Visualization_images/Text-Visualization_img1.png)
+![Collapsible region tooltip in Syntax Editor](Text-Visualization_images/Text-Visualization_img1.png)
 
-The EditControl supports the following outlining tooltip events.
+The Syntax Editor supports the following outlining tooltip events.
 
 <table>
 <tr>
@@ -308,17 +308,17 @@ End Sub
 
 ## Word wrap
 
-Supports text wrapping to next line when it exceeds the control bounds. WordWrap functionality in the EditControl can be enabled or disabled by using the [WordWrap](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_WordWrap) property. Its default value is `false`. To enable wrapping functionality in the EditControl, turn on its value to `true`.
+Supports text wrapping to next line when it exceeds the control bounds. WordWrap functionality in the Syntax Editor can be enabled or disabled by using the [WordWrap](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_WordWrap) property. Its default value is `false`. To enable wrapping functionality in the Syntax Editor, turn on its value to `true`.
 
 ### Word wrap by bounds
 
-Provides extensive support for different modes of wrapping. Types of available wrapping modes in the EditControl are:
+Provides extensive support for different modes of wrapping. Types of available wrapping modes in the Syntax Editor are:
 
 * Control
 * SpecifiedColumn
 * WordWrapMargin
 
-Provided options wraps the text at boundary between text area and word wrap margin of the EditControl. The area beyond the text area in the EditControl is referred to as the `WordWrapMargin`. Hence, the width of the word wrap margin is the difference between EditControls width and the TextArea width. `Column` mode wraps the text at the edge of the EditControl. SpecifiedColumn mode wraps the text at the specified column specified in the WordWrapColumn property. The default WordWrapMode is `Control`. The following properties are associated with setting the mode of word wrapping.
+Provided options wraps the text at boundary between text area and word wrap margin of the Syntax Editor. The area beyond the text area in the Syntax Editor is referred to as the `WordWrapMargin`. Hence, the width of the word wrap margin is the difference between Syntax Editors width and the TextArea width. `Column` mode wraps the text at the edge of the Syntax Editor. SpecifiedColumn mode wraps the text at the specified column specified in the WordWrapColumn property. The default WordWrapMode is `Control`. The following properties are associated with setting the mode of word wrapping.
 
 <table>
 <tr>
@@ -340,7 +340,7 @@ Specifies the column for wrapping text. Used when WordWrapMode is set to Specifi
 <tr>
 <td>
 {{ '[TextAreaWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_TextAreaWidth)' | markdownify }}</td><td>
-Specifies the width of the text area of the EditControl. The default value is 600.</td></tr>
+Specifies the width of the text area of the Syntax Editor. The default value is 600.</td></tr>
 <tr>
 <td>
 {{ '[WrappedLinesOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_WrappedLinesOffset)' | markdownify }}</td><td>
@@ -363,7 +363,7 @@ this.editControl1.WordWrapColumnMeasuringFont = new System.Drawing.Font("Arial",
 
 this.editControl1.WordWrapColumn = 125;
 
-// Set the width of the EditControl's text area.
+// Set the width of the Syntax Editor's text area.
 
 this.editControl1.TextAreaWidth = 300;
 
@@ -388,7 +388,7 @@ Me.editControl1.WordWrapColumnMeasuringFont = New System.Drawing.Font("Arial", 9
 
 Me.editControl1.WordWrapColumn = 125
 
-' Set the width of the EditControl's text area.
+' Set the width of the Syntax Editor's text area.
 
 Me.editControl1.TextAreaWidth = 300
 
@@ -402,7 +402,7 @@ Me.editControl1.WrappedLinesOffset = 10
 
 ### Word wrap by content
 
-By using the `WordWrapType` property, you can set different types for wrapping words in the EditControl. The two types of word wrapping in the EditControl are: 
+By using the `WordWrapType` property, you can set different types for wrapping words in the Syntax Editor. The two types of word wrapping in the Syntax Editor are: 
 
 * Wrapping by character
 * Wrapping by word
@@ -453,7 +453,7 @@ Me.editControl1.WordWrapType = Syncfusion.Windows.Forms.Edit.Enums.WordWrapType.
 
 {% endtabs %}
 
-![Text wrapped to next line in syntax editor](Text-Visualization_images/Text-Visualization_img15.png)
+![Text wrapped to next line in Syntax Editor](Text-Visualization_images/Text-Visualization_img15.png)
 
 {% tabs %}
 
@@ -484,11 +484,11 @@ Me.editControl1.WordWrapType = Syncfusion.Windows.Forms.Edit.Enums.WordWrapType.
 
 {% endtabs %}
 
-![Word wrapped in syntax editor based on word](Text-Visualization_images/Text-Visualization_img16.png)
+![Word wrapped in Syntax Editor based on word](Text-Visualization_images/Text-Visualization_img16.png)
 
 **WordWrap margin customization**
 
-WordWrap margin can be enabled or disabled by using the [WordWrapMarginVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_WordWrapMarginVisible) property in the EditControl. Its default value is `false`. WordWrap margin of the EditControl can be set and customized by using the following given properties.
+WordWrap margin can be enabled or disabled by using the [WordWrapMarginVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_WordWrapMarginVisible) property in the `EditControl`. Its default value is `false`. WordWrap margin of the Syntax Editor can be set and customized by using the following given properties.
 
 <table>
 <tr>
@@ -554,16 +554,16 @@ Me.editControl1.WordWrapMarginBrush = New Syncfusion.Drawing.BrushInfo(Syncfusio
 
 {% endtabs %}
 
-![Margin for word wrap in syntax editor](Text-Visualization_images/Text-Visualization_img3.png)
+![Margin for word wrap in Syntax Editor](Text-Visualization_images/Text-Visualization_img3.png)
 
 **Line wrapping images**
 
-In the EditControl, it is possible to associate images to indicate line wrapping. This feature can be turned on by setting the [MarkLineWrapping](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_MarkLineWrapping) property to `true`. There are two types of image indicators:
+In the Syntax Editor, it is possible to associate images to indicate line wrapping. This feature can be turned on by setting the [MarkLineWrapping](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_MarkLineWrapping) property to `true`. There are two types of image indicators:
 
 * Images that indicates the line being wrapped. These are displayed at the beginning of the line being wrapped. This can be set by using the [CustomWrappedLinesMarkingImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_CustomWrappedLinesMarkingImage) property.
 * Images that indicates the point at which the line is being wrapped. This can be set by using the [CustomLineWrappingMarkingImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_CustomLineWrappingMarkingImage) property.
 
-The [MarkWrappedLines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_MarkWrappedLines) property in the EditControl is used to indicate whether the wrapped lines should be marked or not.
+The [MarkWrappedLines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_MarkWrappedLines) property in the `EditControl` is used to indicate whether the wrapped lines should be marked or not.
 
 {% tabs %}
 
@@ -610,24 +610,24 @@ Me.editControl1.MarkWrappedLines = True
 
 {% endtabs %}
 
-![Customized line wrapped marker in syntax editor](Text-Visualization_images/Text-Visualization_img4.jpeg)
+![Customized line wrapped marker in Syntax Editor](Text-Visualization_images/Text-Visualization_img4.jpeg)
 
-N> Refer to the following sample link that demonstrates the `WordWrap` functionalities in the EditControl:
+N> Refer to the following sample link that demonstrates the `WordWrap` functionalities in the Syntax Editor:
 C:\Users\&lt;User&gt;\AppData\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Text Operations\Word Wrap
 
 ## Line number
 
-Displays the line number at the start position of line. Line numbers can be automatically assigned to the contents of the EditControl by enabling the [ShowLineNumbers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowLineNumbers) property. Its default value is `true`. The number of lines in the EditControl can be obtained by using the [PhysicalLineCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_PhysicalLineCount) property.
+Displays the line number at the start position of line. Line numbers can be automatically assigned to the contents of the Syntax Editor by enabling the [ShowLineNumbers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowLineNumbers) property. Its default value is `true`. The number of lines in the Syntax Editor can be obtained by using the [PhysicalLineCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_PhysicalLineCount) property.
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Assigning Line Numbers to the contents of the EditControl.
+// Assigning Line Numbers to the contents of the Syntax Editor.
 
 this.editControl1.ShowLineNumbers = true;
 
-// Specifies the number of lines in the EditControl.
+// Specifies the number of lines in the Syntax Editor.
 
 int actualLineCount = this.editControl1.PhysicalLineCount;
 
@@ -636,11 +636,11 @@ int actualLineCount = this.editControl1.PhysicalLineCount;
 
 {% highlight VB %}
 
-' Assigning Line Numbers to the contents of the EditControl.
+' Assigning Line Numbers to the contents of the Syntax Editor.
 
 Me.editControl1.ShowLineNumbers = True
 
-' Specifies the number of lines in the EditControl.
+' Specifies the number of lines in the Syntax Editor.
 
 Dim actualLineCount As Integer = Me.editControl1.PhysicalLineCount
 
@@ -720,7 +720,7 @@ Me.editControl1.SelectOnLineNumberClick = True
 
 {% endtabs %}
 
-![Display line numbers with customized font in syntax editor](Text-Visualization_images/Text-Visualization_img5.jpeg)
+![Display line numbers with customized font in Syntax Editor](Text-Visualization_images/Text-Visualization_img5.jpeg)
 
 ### Custom draw line number
 
@@ -778,7 +778,7 @@ private Sub EditControl1_BeforeLineNumberPaint(ByVal sender As Object, ByVal e A
 
 {% endtabs %}
 
-![Customize line number appearance in syntax editor](Text-Visualization_images/Text-Visualization_img14.png)
+![Customize line number appearance in Syntax Editor](Text-Visualization_images/Text-Visualization_img14.png)
 
 #### Line backcolor
 
@@ -788,7 +788,7 @@ Background format of a line can be customized by using the [SetLineBackColor](ht
 
 {% highlight C# %}
 
-// Register a backcolor format with EditControl.
+// Register a backcolor format with Syntax Editor.
 
 IBackgroundFormat format = this.editControl1.RegisterBackColorFormat(Color.Aquamarine, Color.Beige, System.Drawing.Drawing2D.HatchStyle.Cross, true);
 
@@ -801,7 +801,7 @@ this.editControl1.SetLineBackColor(5, true, format);
 
 {% highlight VB %}
 
-' Register a backcolor format with EditControl.
+' Register a backcolor format with Syntax Editor.
 
 Dim IBackgroundFormat As format = Me.editControl1.RegisterBackColorFormat(Color.Aquamarine, Color.Beige, System.Drawing.Drawing2D.HatchStyle.Cross, True)
 
@@ -821,7 +821,7 @@ Background formats for a line can be defined by using the [IBackgroundFormat](ht
 
 {% highlight C# %}
 
-// Register a backcolor format with EditControl.
+// Register a backcolor format with Syntax Editor.
 
 IBackgroundFormat format = this.editControl1.RegisterBackColorFormat(Color.Aquamarine, Color.Beige, System.Drawing.Drawing2D.HatchStyle.Cross, true);
 
@@ -830,7 +830,7 @@ IBackgroundFormat format = this.editControl1.RegisterBackColorFormat(Color.Aquam
 
 {% highlight VB %}
 
-' Register a backcolor format with EditControl.
+' Register a backcolor format with Syntax Editor.
 
 Dim IBackgroundFormat As format = Me.editControl1.RegisterBackColorFormat(Color.Aquamarine, Color.Beige, System.Drawing.Drawing2D.HatchStyle.Cross, True)
 
@@ -846,7 +846,7 @@ Background format can be customized for the current line by using the [SetSelect
 
 {% highlight C# %}
 
-// Register a backcolor format with EditControl.
+// Register a backcolor format with Syntax Editor.
 
 IBackgroundFormat format = this.editControl1.RegisterBackColorFormat(Color.Aquamarine, Color.Beige, System.Drawing.Drawing2D.HatchStyle.Cross, true);
 
@@ -863,7 +863,7 @@ this.editControl1.SetSelectionBackColor(format);
 
 {% highlight VB %}
 
-' Register a backcolor format with EditControl.
+' Register a backcolor format with Syntax Editor.
 
 Dim IBackgroundFormat As format = Me.editControl1.RegisterBackColorFormat(Color.Aquamarine, Color.Beige, System.Drawing.Drawing2D.HatchStyle.Cross, True)
 
@@ -879,7 +879,7 @@ Me.editControl1.SetSelectionBackColor(format)
 
 {% endtabs %}
 
-![Customized selected text backcolor in syntax editor](Appearance_images/Appearance_img25.jpeg)
+![Customized selected text backcolor in Syntax Editor](Appearance_images/Appearance_img25.jpeg)
 
 ## Remove applied line background color
 
@@ -927,15 +927,15 @@ Me.editControl1.CurrentLineHighlightColor = Color.Orange
 
 {% endtabs %}
 
-![Highlight current line in syntax editor](Text-Visualization_images/Text-Visualization_img6.png)
+![Highlight current line in Syntax Editor](Text-Visualization_images/Text-Visualization_img6.png)
 
 ## Underline
 
-The EditControl allows you to underline any desired text in its contents. 
+The Syntax Editor allows you to underline any desired text in its contents. 
 
 ### Underline formats 
 
-Underlines can be of different styles, colors, and weights with each of them being used to convey a different meaning. You can also specify the weight of the underlines to be single or double. The EditControl supports underlines of the following styles: 
+Underlines can be of different styles, colors, and weights with each of them being used to convey a different meaning. You can also specify the weight of the underlines to be single or double. The Syntax Editor supports underlines of the following styles: 
 
 * Solid 
 * Dot
@@ -1008,11 +1008,11 @@ Me.editControl1.SetUnderline(New Point(1, 1), New Point(8, 8), format)
 
 {% endtabs %}
 
-![Underline text in syntax editor](Text-Visualization_images/Text-Visualization_img17.png)
+![Underline text in Syntax Editor](Text-Visualization_images/Text-Visualization_img17.png)
 
 ### Remove applied underline
 
-You can remove the applied underlining region by using the [RemoveUnderline](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_RemoveUnderline_Syncfusion_Windows_Forms_Edit_Utils_CoordinatePoint_Syncfusion_Windows_Forms_Edit_Utils_CoordinatePoint_) function in the EditControl.
+You can remove the applied underlining region by using the [RemoveUnderline](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_RemoveUnderline_Syncfusion_Windows_Forms_Edit_Utils_CoordinatePoint_Syncfusion_Windows_Forms_Edit_Utils_CoordinatePoint_) function in the Syntax Editor.
 
 {% tabs %}
 
@@ -1053,7 +1053,7 @@ You can also set the underlining from the configuration file.
 
 {% endhighlight %}
 
-![underline error word in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img16.png)
+![underline error word in Syntax Editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img16.png)
 
 ### Strike out
 
@@ -1090,11 +1090,11 @@ Me.editControl1.StrikeThrough(New Point(1, 1), New Point(8, 8), Color.Orange)
 
 To remove the strikethrough line, just call one of the above mentioned functions and specify the Color parameter as Color.Empty.
 
-![Strike out contents in syntax editor](Text-Visualization_images/Text-Visualization_img8.png)
+![Strike out contents in Syntax Editor](Text-Visualization_images/Text-Visualization_img8.png)
 
 ## Bookmark indicators 
 
-The EditControl enables user to locate a section or a line of a document for quick access to any part of the contents. This can be enabled or disabled by using the [ShowIndicatorMargin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowIndicatorMargin) property. Its default value is `true`. To hide the indicator margin turn on its value to `false`. The [MarkerAreaWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_MarkerAreaWidth) property in the EditControl sets the width of marker area.
+The Syntax Editor enables user to locate a section or a line of a document for quick access to any part of the contents. This can be enabled or disabled by using the [ShowIndicatorMargin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowIndicatorMargin) property. Its default value is `true`. To hide the indicator margin turn on its value to `false`. The [MarkerAreaWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_MarkerAreaWidth) property in the `EditControl` sets the width of marker area.
 
 {% tabs %}
 
@@ -1125,7 +1125,7 @@ Me.editControl1.MarkerAreaWidth = 20
 
 {% endtabs %}
 
-You can either display the default bookmark image (like in Visual Studio.NET) or custom indicator by making use of the following functions of the EditControl.
+You can either display the default bookmark image (like in Visual Studio.NET) or custom indicator by making use of the following functions of the Syntax Editor.
 
 <table>
 <tr>
@@ -1215,7 +1215,7 @@ Dim bookmark As IBookmark = Me.EditControl1.BookmarkGet(Me.EditControl1.CurrentL
 
 ### Custom bookmark indicator
 
-The [SetCustomBookmark](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SetCustomBookmark_System_Int32_Syncfusion_Windows_Forms_Edit_BookmarkPaintEventHandler_) function is used to set Bookmarks. It can also be removed by using the [RemoveCustomBookmark](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_RemoveCustomBookmark_System_Int32_Syncfusion_Windows_Forms_Edit_BookmarkPaintEventHandler_) function in the EditControl.
+The [SetCustomBookmark](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SetCustomBookmark_System_Int32_Syncfusion_Windows_Forms_Edit_BookmarkPaintEventHandler_) function is used to set Bookmarks. It can also be removed by using the [RemoveCustomBookmark](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_RemoveCustomBookmark_System_Int32_Syncfusion_Windows_Forms_Edit_BookmarkPaintEventHandler_) function in the Syntax Editor.
 
 Bookmarks can be set by using the `SetCustomBookmark` function which do not respond to the `BookmarkNext` and `BookmarkPrevious` functions automatically. To enable this, set the `UseInBookmarkSearch` property of the custom bookmark to `true`.
 
@@ -1271,7 +1271,7 @@ Dim customBookmark As ICustomBookmark = Me.editControl1.RemoveCustomBookmark(Me.
 
 {% endtabs %}
 
-![Bookmark indicators in syntax editor](Text-Visualization_images/Text-Visualization_img9.png)
+![Bookmark indicators in Syntax Editor](Text-Visualization_images/Text-Visualization_img9.png)
 
 **Setting tooltips for bookmarks**
 
@@ -1307,9 +1307,9 @@ End Sub
 
 {% endtabs %}
 
-![Tooltip for bookmark indicators in syntax editor](Text-Visualization_images/Text-Visualization_img19.png)
+![Tooltip for bookmark indicators in Syntax Editor](Text-Visualization_images/Text-Visualization_img19.png)
 
-Tooltip background and border color can be customized by using the [BookmarkTooltipBackgroundBrush](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_BookmarkTooltipBackgroundBrush) and [BookmarkTooltipBorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_BookmarkTooltipBorderColor) properties in the EditControl.
+Tooltip background and border color can be customized by using the [BookmarkTooltipBackgroundBrush](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_BookmarkTooltipBackgroundBrush) and [BookmarkTooltipBorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_BookmarkTooltipBorderColor) properties in the Syntax Editor.
 
 {% tabs %}
 
@@ -1350,16 +1350,16 @@ Me.editControl1.BookmarkTooltipBorderColor = System.Drawing.Color.Red
 
 ![Customize tooltip background and foreground for bookmark indicator](Text-Visualization_images/Text-Visualization_img20.png)
 
-N> Refer to the following sample link that demonstrates the bookmark functionalities in the EditControl:
+N> Refer to the following sample link that demonstrates the bookmark functionalities in the Syntax Editor:
 C:\Users\&lt;User&gt;\AppData\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Product Showcase\VisualStudioDemo
 
 ## Content dividers
 
-Supports content dividers similar to Visual Studio code editor that clearly distinguish content sections with line dividers to improve the code readability. Content Dividers can be enabled or disabled by using the [ShowContentDividers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowContentDividers) property in the EditControl. Its default value is `true`.
+Supports content dividers similar to Visual Studio code editor that clearly distinguish content sections with line dividers to improve the code readability. Content Dividers can be enabled or disabled by using the [ShowContentDividers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowContentDividers) property in the `EditControl`. Its default value is `true`.
 
-![Content dividers in syntax editor](Text-Visualization_images/Text-Visualization_img11.png)
+![Content dividers in Syntax Editor](Text-Visualization_images/Text-Visualization_img11.png)
 
-This feature can be enabled for sections of the EditControl contents by setting the `ContentDivider` field to  `true` within its lexem definition in the configuration file. 
+This feature can be enabled for sections of the Syntax Editor contents by setting the `ContentDivider` field to  `true` within its lexem definition in the configuration file. 
 
 {% highlight xaml %}
 
@@ -1387,7 +1387,7 @@ This feature can be enabled for sections of the EditControl contents by setting 
 
 {% endhighlight %}
 
-N> Refer to the following sample link that demonstrates the Content dividers functionalities in the EditControl:
+N> Refer to the following sample link that demonstrates the Content dividers functionalities in the Syntax Editor:
 C:\Users\&lt;User&gt;\AppData\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Text Operations\Interactive operations
 
 ## Column guides
@@ -1455,11 +1455,11 @@ Me.editControl1.ColumnGuidesMeasuringFont = New Font("Microsoft Sans Serif",12)
 
 {% endtabs %}
 
-![Column dividers in syntax editor](Text-Visualization_images/Text-Visualization_img12.png)
+![Column dividers in Syntax Editor](Text-Visualization_images/Text-Visualization_img12.png)
 
 ## Bracket highlighting 
 
-The EditControl has one of the most powerful and intelligent bracket highlighting features. If the cursor is positioned on the end curly brace, most editors will match to the open curly brace in the string. On the contrary, the EditControl matches to the open curly brace for the function. The bracket highlighting feature can be turned on by enabling the [ShowIndentationGuidelines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowIndentationGuidelines) or [OnlyHighlightMatchingBraces](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_OnlyHighlightMatchingBraces) property. Setting the OnlyHighlightMatchingBraces property to `true`, enables bracket highlighting whereas the indentation guidelines are not displayed.
+The Syntax Editor has one of the most powerful and intelligent bracket highlighting features. If the cursor is positioned on the end curly brace, most editors will match to the open curly brace in the string. On the contrary, the Syntax Editor matches to the open curly brace for the function. The bracket highlighting feature can be turned on by enabling the [ShowIndentationGuidelines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowIndentationGuidelines) or [OnlyHighlightMatchingBraces](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_OnlyHighlightMatchingBraces) property. Setting the OnlyHighlightMatchingBraces property to `true`, enables bracket highlighting whereas the indentation guidelines are not displayed.
 
 {% tabs %}
 
@@ -1482,4 +1482,4 @@ Me.editControl1.OnlyHighlightMatchingBraces = True
 
 {% endtabs %}
 
-![Bracket highlighting as like visual studio in syntax editor](Text-Visualization_images/Text-Visualization_img13.png)
+![Bracket highlighting as like visual studio in Syntax Editor](Text-Visualization_images/Text-Visualization_img13.png)

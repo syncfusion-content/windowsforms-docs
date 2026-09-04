@@ -39,7 +39,7 @@ Me.treeNavigator1.Style = Syncfusion.Windows.Forms.Tools.TreeNavigatorStyle.Offi
 {% endhighlight %}
 
 {% endtabs %}
-![Colorful](Concept-and-Features_images/Colorful.png)
+![Colorful theme in Tree Navigator](Concept-and-Features_images/Colorful.png)
 
 
 ## Header Customization
@@ -97,7 +97,7 @@ Me.treeNavigator1.Header.TextBounds = new Rectangle(40, 0, 30, 20)
 {% endhighlight %}
 
 {% endtabs %}
-![Header](Concept-and-Features_images/Header.png)
+![Header in Tree Navigator](Concept-and-Features_images/Header.png)
 
 
 The Visibility of the tree navigator header can be hidden by setting ShowHeader property to false.
@@ -122,7 +122,7 @@ this.treeNavigator1.ShowHeader = false;
 
 {% endtabs %}
 
-![Noheader1](Concept-and-Features_images/Noheader1.png)
+![Disable header in Tree Navigator](Concept-and-Features_images/Noheader1.png)
 
 
 ## Appearance in Windows Forms Tree Navigator
@@ -157,7 +157,7 @@ Me.treeNavigator1.BorderColor = Color.Black
 
 {% endtabs %}
 
-![Border](Concept-and-Features_images/Border.png)
+![Border in Tree Navigator](Concept-and-Features_images/Border.png)
 
 ## Margin between TreeMenuItems
 In Tree Navigator you can set the gap between items with the help of PadY property. This property can be set using following code
@@ -179,7 +179,7 @@ ME.treeNavigator1.PadY = 10
 
 {% endtabs %}
 
-![Pady](Concept-and-Features_images/Pady.png)
+![Pady in Tree Navigator](Concept-and-Features_images/Pady.png)
 
 ## Appearance in Windows Forms Tree Navigator
 In Tree Navigator you can customize the tree menu items with the help of properties such as ItemBackColor, ItemHoverColor, SelectedColor, SelectedItemForeColor.
@@ -238,7 +238,7 @@ Me.treeMenuItem4.SelectedItemForeColor = Color.Blue
 
 {% endtabs %}
 
-![TreemenuitemCustomize](Concept-and-Features_images/TreemenuitemCustomize.png)
+![TreemenuitemCustomize in Tree Navigator](Concept-and-Features_images/TreemenuitemCustomize.png)
 
 
 ## Appearance in Windows Forms Tree Navigator
@@ -265,4 +265,4 @@ treeNavigator1.TextAlign = TextAlignment.Center
 {% endhighlight %}
 
 {% endtabs %}
-![TextAlign](Concept-and-Features_images/TextAlign.png)
+![TextAlign in Tree Navigator](Concept-and-Features_images/TextAlign.png)

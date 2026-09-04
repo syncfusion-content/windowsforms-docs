@@ -35,7 +35,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2. Create an instance of Multicolumn ComboBox. Add that instance to the Form.
+2. Create an instance of `MultiColumnComboBox`. Add that instance to the Form.
 
 {% capture codesnippet2 %}​
 {% tabs %}
@@ -58,6 +58,6 @@ Me.Controls.Add(Me.multiColumnComboBox1)
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-After creating Multicolumn ComboBox, you can bound them using data source. Refer [DataBinding](https://help.syncfusion.com/windowsforms/multicolumn-combobox/data-binding).
+After creating `MultiColumnComboBox`, you can bound them using data source. Refer [DataBinding](https://help.syncfusion.com/windowsforms/multicolumn-combobox/data-binding).
 
 

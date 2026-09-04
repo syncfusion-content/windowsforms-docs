@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Windows Forms Syntax Editor
 
-This section explains how to create an interactive code editor application like the Microsoft Visual Studio Editor by using the EditControl.
+This section explains how to create an interactive code editor application like the Microsoft Visual Studio Editor by using the Syntax Editor (EditControl).
 
 ## Assembly deployment
 
@@ -23,7 +23,7 @@ To install via the NuGet Package Manager Console, run:
 Install-Package Syncfusion.Edit.Windows
 ```
 
-## Adding EditControl via designer
+## Adding Syntax Editor via designer
 
 1. Create a new Windows Forms project in Visual Studio.
 
@@ -33,9 +33,9 @@ Install-Package Syncfusion.Edit.Windows
 	* Syncfusion.Tools.Windows
 	* Syncfusion.Edit.Windows
 
-![Windows Forms EditControl drag and drop from toolbox](Getting-Started_images/Getting-Started_img2.png)
+![Windows Forms Syntax Editor drag and drop from toolbox](Getting-Started_images/Getting-Started_img2.png)
 
-## Adding EditControl via code
+## Adding Syntax Editor via code
 
 To add the control manually, follow these steps:
 
@@ -53,26 +53,12 @@ To add the control manually, follow these steps:
 {% tabs %}
 {% highlight C# %}
 
-// Create the EditControl instance.
-
 private Syncfusion.Windows.Forms.Edit.EditControl editControl1;
 
 editControl1 = new Syncfusion.Windows.Forms.Edit.EditControl();
-
-// Set an appropriate size for the EditControl.
-
 editControl1.Size = new Size(50, 50);
-
-// Set the Dock property to the appropriate DockStyle enumeration value if desired.
-
 editControl1.Dock = DockStyle.Fill;
-
-// Set an appropriate BorderStyle to the EditControl instance.
-
 editControl1.BorderStyle = BorderStyle.Fixed3D;
-
-// Adding the edit control to the form.
-
 this.Controls.Add(editControl1);
 
 {% endhighlight %}
@@ -80,26 +66,12 @@ this.Controls.Add(editControl1);
 
 {% highlight VB %}
 
-'Create the EditControl instance.
-
 private editControl1 As Syncfusion.Windows.Forms.Edit.EditControl
 
 editControl1 = New Syncfusion.Windows.Forms.Edit.EditControl()
-
-'Set an appropriate size for the EditControl.
-
 editControl1.Size = New Size(50, 50)
-
-' Set the Dock property to the appropriate DockStyle enumeration value if desired.
-
 editControl1.Dock = DockStyle.Fill
-
-'Set an appropriate BorderStyle to the EditControl instance.
-
 editControl1.BorderStyle = BorderStyle.Fixed3D
-
-' Adding the edit control to the form.
-
 Me.Controls.Add(editControl1)
 
 {% endhighlight %}
@@ -107,11 +79,11 @@ Me.Controls.Add(editControl1)
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }} 
 
-![Windows Forms showing EditControl](Getting-Started_images/Getting-Started_img3.png)
+![Windows Forms showing Syntax Editor](Getting-Started_images/Getting-Started_img3.png)
 
 ## Loading a file into the document
 
-This section explains how to load a file into the EditControl.
+This section explains how to load a file into the Syntax Editor.
 
 {% tabs %}
 
@@ -138,7 +110,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 The [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) offers built-in syntax highlighting for the most commonly used languages and also provides support for configuring a new custom language.
 
-The EditControl has built-in syntax highlighting support for the following languages:
+The Syntax Editor has built-in syntax highlighting support for the following languages:
 
 * C#
 * VB.NET
@@ -173,11 +145,11 @@ Me.editControl1.ApplyConfiguration(KnownLanguages.CSharp)
 
 {% endtabs %}
 
-![Windows Forms EditControl configured for C Sharp language](Getting-Started_images/Getting-Started_img4.png)
+![Windows Forms Syntax Editor configured for C Sharp language](Getting-Started_images/Getting-Started_img4.png)
 
 ## Custom language configuration
 
-The EditControl supports custom language configuration. You can plug in an external XML configuration file that defines a custom language and then apply it with the [Configurator.Open](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_Configurator) and [ApplyConfiguration](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ApplyConfiguration_System_String_) methods.
+The Syntax Editor supports custom language configuration. You can plug in an external XML configuration file that defines a custom language and then apply it with the [Configurator.Open](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_Configurator) and [ApplyConfiguration](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ApplyConfiguration_System_String_) methods.
 
 1. Create a configuration file (for example, `config.xml`) and set its **Copy to Output Directory** property to **Copy if newer**.
 
@@ -214,7 +186,7 @@ The EditControl supports custom language configuration. You can plug in an exter
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }} 
 
-2. Apply the configuration file to the EditControl.
+2. Apply the configuration file to the Syntax Editor.
 
 {% capture codesnippet3 %}
 {% tabs %}
@@ -250,6 +222,6 @@ Me.editControl1.ApplyConfiguration("LISP")
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }} 
 
-![Windows Forms EditControl configured for custom language](Getting-Started_images/Getting-Started_img5.png)
+![Windows Forms Syntax Editor configured for custom language](Getting-Started_images/Getting-Started_img5.png)
 
 N> You can refer to our [WinForms Syntax Editor](https://www.syncfusion.com/winforms-ui-controls/syntax-editor) feature tour page for its unique feature set. You can also explore our [WinForms Syntax Editor example](https://github.com/syncfusion/winforms-demos/tree/master/edit) that shows how to create interactive code-editor applications with syntax highlighting, text indentation, IntelliSense, and more.
