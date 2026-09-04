@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Text Settings in Windows Forms ProgressBarAdv | Syncfusion®
-description: Text settings in Windows Forms ProgressBarAdv enable displaying and formatting progress information using text alignment, shadow, and more options.
+title: Text Settings in Windows Forms Progress Bar | Syncfusion®
+description: Text settings in Windows Forms Progress Bar enable displaying and formatting progress information using text alignment, shadow, and more options.
 platform: WindowsForms
-control: ProgressBarAdv
+control: Progress Bar
 documentation: ug
 ---
 
-# Text Settings in Windows Forms ProgressBarAdv
+# Text Settings in Windows Forms Progress Bar
 
-The below are ProgressBarAdv properties to customize the text and its alignment.
+The below are Progress Bar properties to customize the text and its alignment.
 
 Property table
 
 <table>
 <tr>
 <th>
-ProgressBarAdv property</th><th>
+Progress Bar property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -37,7 +37,7 @@ Indicates the style of the text.</td></tr>
 <tr>
 <td>
 TextVisible</td><td>
-Determines if the text of the ProgressBarAdv is visible.</td></tr>
+Determines if the text of the Progress Bar is visible.</td></tr>
 </table>
 
 {% tabs %}

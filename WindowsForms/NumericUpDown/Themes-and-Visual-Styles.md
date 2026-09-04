@@ -1,24 +1,24 @@
 ---
 layout: post
-title: Themes and Styling in Windows Forms NumericUpDownExt | Syncfusion®
-description: Themes and visual styles in Windows Forms NumericUpDownExt enable applying built-in themes and customized appearances for a consistent user interface.
+title: Themes and Styling in Windows Forms NumericUpdown | Syncfusion®
+description: Themes and visual styles in Windows Forms NumericUpdown enable applying built-in themes and customized appearances for a consistent user interface.
 platform: WindowsForms
-control: NumericUpDownExt
+control: NumericUpdown
 documentation: ug
 ---
 
-# Themes and Styling in Windows Forms NumericUpDownExt
+# Themes and Styling in Windows Forms NumericUpdown
 
-This section discusses themes and visual styles settings of the NumericUpDownExt control.
+This section discusses themes and visual styles settings of the NumericUpdown control.
 
 ## Themes
 
-Themes define the look and feel of the NumericUpDownExt control. They can be set using the property given below.
+Themes define the look and feel of the NumericUpdown control. They can be set using the property given below.
 
 <table>
 <tr>
 <th>
-NumericUpDownExt Property</th><th>
+NumericUpdown Property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -44,17 +44,17 @@ Me.numericUpDownExt1.ThemesEnabled = True
 
 ## Visual styles
 
-Visual Styles enhance the appearance of the NumericUpDownExt control and can be set using the property given below.
+Visual Styles enhance the appearance of the NumericUpdown control and can be set using the property given below.
 
 <table>
 <tr>
 <th>
-NumericUpDownExt Properties</th><th>
+NumericUpdown Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
 VisualStyle</td><td>
-Specifies the visual style of the NumericUpDownExt control. It includes the options given below.Default andOffice2007.</td></tr>
+Specifies the visual style of the NumericUpdown control. It includes the options given below.Default andOffice2007.</td></tr>
 <tr>
 <td>
 ColorScheme</td><td>
@@ -81,7 +81,7 @@ Me.numericUpDownExt1.ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Blue
 
 ![Themes-and-Visual-Styles_img3](Themes-and-Visual-Styles_images/Themes-and-Visual-Styles_img3.png)
 
-When the ColorScheme property is set to 'Managed', the NumericUpDownExt control can be displayed using custom colors supported by the control.
+When the ColorScheme property is set to 'Managed', the NumericUpdown control can be displayed using custom colors supported by the control.
 
 This can be done programmatically as follows.
 
@@ -107,9 +107,9 @@ Office2007Colors.ApplyManagedColors(Me, Color.Orange)
 
 ## Office2016 theme
 
-NumericUpDownExt control supports Office2016 Visual styles such as Office2016Colorful,Office2016White,Office2016Black and Office2016DarkGray.
+NumericUpdown control supports Office2016 Visual styles such as Office2016Colorful,Office2016White,Office2016Black and Office2016DarkGray.
 
-//Sample code for setting "Office2016 Colorful" style for NumericUpDownExt
+//Sample code for setting "Office2016 Colorful" style for NumericUpdown
 
 {% tabs %}
 {% highlight c# %}

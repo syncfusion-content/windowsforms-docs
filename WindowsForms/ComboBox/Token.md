@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Token support in Windows Forms SfComboBox | Syncfusion®
-description: Token support in Windows Forms SfComboBox displays selected items as tokens, enabling intuitive multi-selection, token customization, and item management.
+title: Token support in Windows Forms ComboBox | Syncfusion®
+description: Token support in Windows Forms ComboBox displays selected items as tokens, enabling intuitive multi-selection, token customization, and item management.
 platform: windowsforms
-control: SfComboBox
+control: ComboBox
 documentation: ug
 ---
 
-# Token support in Windows Forms SfComboBox
+# Token support in Windows Forms ComboBox
 
 Token represents the selected item(s) in combobox. The selected items are displayed in rounded-polygon shape with close icon. This option also helps to select multiple items without using check box and remove the token at run time. 
 
@@ -22,7 +22,7 @@ sfComboBox1.EnableToken = True
 {% endhighlight %}
 {% endtabs %}
 
-![Token support enabled in SfComboBox](Token_images/Token_img1.png)
+![Token support enabled in ComboBox](Token_images/Token_img1.png)
 
 The important characteristics of the token support are as follows.
 
@@ -65,7 +65,7 @@ sfComboBox1.Style.TokenStyle.Font = New Font(“Arial”, 10F, FontStyle.Bold)
 
 ## Events Fired When Selecting and Deselecting Tokens 
 
-The [SelectedValueChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_SelectedValueChanged) event is triggered whenever tokens are selected or deselected in the SfComboBox control. This allows users to handle changes in token selections effectively.
+The [SelectedValueChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_SelectedValueChanged) event is triggered whenever tokens are selected or deselected in the ComboBox control. This allows users to handle changes in token selections effectively.
 
 {% tabs %}
 {% highlight c# %}

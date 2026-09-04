@@ -1,28 +1,28 @@
 ---
 layout: post
-title: Foreground Settings in Windows Forms ProgressBarAdv | Syncfusion®
-description: Foreground settings in Windows Forms ProgressBarAdv customize the progress indicator appearance, improving visual clarity.
+title: Foreground Settings in Windows Forms Progress Bar | Syncfusion®
+description: Foreground settings in Windows Forms Progress Bar customize the progress indicator appearance, improving visual clarity.
 platform: WindowsForms
-control: ProgressBarAdv
+control: Progress Bar
 documentation: ug
 ---
 
-# Foreground Settings in Windows Forms ProgressBarAdv
+# Foreground Settings in Windows Forms Progress Bar
 
-This section discusses the foreground settings of the ProgressBarAdv control.
+This section discusses the foreground settings of the Progress Bar control.
 
 ## Foreground segment settings
 
-The foreground segment settings available in the ProgressBarAdv control are explained below.
+The foreground segment settings available in the Progress Bar control are explained below.
 
-The foreground of the ProgressBarAdv can be displayed with a segmented appearance using the property given below.
+The foreground of the Progress Bar can be displayed with a segmented appearance using the property given below.
 
 Property table
 
 <table>
 <tr>
 <th>
-ProgressBarAdv property</th><th>
+Progress Bar property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -60,7 +60,7 @@ Property table
 <table>
 <tr>
 <th>
-ProgressBarAdv property</th><th>
+Progress Bar property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -90,7 +90,7 @@ Me.progressBarAdv1.SegmentWidth = 20
 
 ##  Foreground color settings
 
-This section illustrates the color settings that can be applied to the foreground of the ProgressBarAdv.
+This section illustrates the color settings that can be applied to the foreground of the Progress Bar.
 
 ### Font and fore color settings
 
@@ -101,7 +101,7 @@ Property table
 <table>
 <tr>
 <th>
-ProgressBarAdv property</th><th>
+Progress Bar property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -110,7 +110,7 @@ Specifies the color used to draw the foreground in segment mode and constant mod
 <tr>
 <td>
 FontColor</td><td>
-Specifies the color of the font used to draw the text of the ProgressBarAdv.</td></tr>
+Specifies the color of the font used to draw the text of the Progress Bar.</td></tr>
 </table>
 
 {% tabs %}
@@ -145,7 +145,7 @@ Property table
 <table>
 <tr>
 <th>
-ProgressBarAdv property</th><th>
+Progress Bar property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -187,7 +187,7 @@ Property table
 <table>
 <tr>
 <th>
-ProgressBarAdv property</th><th>
+Progress Bar property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -228,14 +228,14 @@ Me.progressBarAdv1.StretchMultGrad = False
 
 ### Tube color settings
 
-Colors can be set for the foreground tube of the ProgressBarAdv.
+Colors can be set for the foreground tube of the Progress Bar.
 
 Property table
 
 <table>
 <tr>
 <th>
-ProgressBarAdv property</th><th>
+Progress Bar property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -273,7 +273,7 @@ Me.progressBarAdv1.TubeStartColor = System.Drawing.Color.Red
 
 ## Foreground image settings
 
-This section discusses the foreground image settings of ProgressBarAdv.
+This section discusses the foreground image settings of Progress Bar.
 
 When the BackgroundStyle and ProgressStyle are set to the 'Image' style, then the foreground image can be specified using the below given property.
 
@@ -282,7 +282,7 @@ Property table
 <table>
 <tr>
 <th>
-ProgressBarAdv property</th><th>
+Progress Bar property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -319,14 +319,14 @@ Me.progressBarAdv1.StretchImage = True
 
 ## Foreground style settings
 
-The progress style of the ProgressBarAdv control can be set using the properties given below.
+The progress style of the Progress Bar control can be set using the properties given below.
 
 Property table
 
 <table>
 <tr>
 <th>
-ProgressBarAdv property</th><th>
+Progress Bar property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -361,14 +361,14 @@ Me.progressBarAdv1.ProgressFallbackStyle = Syncfusion.Windows.Forms.Tools.Progre
 ![Overview_img19](Overview_images/Overview_img19.jpeg) 
 
 
-The Waiting Gradient Style of the ProgressBarAdv consists of the following properties that can be used to change the appearance and behavior of the style.
+The Waiting Gradient Style of the Progress Bar consists of the following properties that can be used to change the appearance and behavior of the style.
 
 Property table
 
 <table>
 <tr>
 <th>
-ProgressBarAdv property</th><th>
+Progress Bar property</th><th>
 Description</th></tr>
 <tr>
 <td>

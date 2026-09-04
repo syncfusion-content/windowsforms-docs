@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Boundary Value Settings in Windows Forms ProgressBarAdv | Syncfusion®
-description: Boundary value settings in Windows Forms ProgressBarAdv define minimum and maximum values, ensuring accurate progress tracking.
+title: Boundary Value Settings in Windows Forms Progress Bar | Syncfusion®
+description: Boundary value settings in Windows Forms Progress Bar define minimum and maximum values, ensuring accurate progress tracking.
 platform: WindowsForms
-control: ProgressBarAdv
+control: Progress Bar
 documentation: ug
 ---
 
-# Boundary Value Settings in Windows Forms ProgressBarAdv
+# Boundary Value Settings in Windows Forms Progress Bar
 
-The ProgressBarAdv during it's progressive operation indicates a minimum value and a maximum value for the process.
+The Progress Bar during it's progressive operation indicates a minimum value and a maximum value for the process.
 
 It provides the below properties to set the boundary values for the control and also the interval for the progression.
 
@@ -18,16 +18,16 @@ Property table
 <table>
 <tr>
 <th>
-ProgressBarAdv property</th><th>
+Progress Bar property</th><th>
 Description</th></tr>
 <tr>
 <td>
 Minimum</td><td>
-Determines the lower bound of the range of the ProgressBarAdv.</td></tr>
+Determines the lower bound of the range of the Progress Bar.</td></tr>
 <tr>
 <td>
 Maximum</td><td>
-Determines the higher bound of the range of the ProgressBarAdv.</td></tr>
+Determines the higher bound of the range of the Progress Bar.</td></tr>
 <tr>
 <td>
 Value</td><td>
@@ -35,11 +35,11 @@ The current value between the minimum and maximum values.</td></tr>
 <tr>
 <td>
 Step</td><td>
-Determines the amount to increment or decrement the value of the ProgressBarAdv when the Increment() or Decrement() method is called.</td></tr>
+Determines the amount to increment or decrement the value of the Progress Bar when the Increment() or Decrement() method is called.</td></tr>
 </table>
 
 
-Create a ProgressBarAdv and set the below properties to see the changes.
+Create a Progress Bar and set the below properties to see the changes.
 
 {% tabs %}
 

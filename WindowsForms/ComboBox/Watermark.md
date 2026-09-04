@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Watermark in Windows Forms SfComboBox | Syncfusion®
-description: Watermark support in Windows Forms SfComboBox displays placeholder text when no value is selected and allows customization of its appearance.
+title: Watermark in Windows Forms ComboBox | Syncfusion®
+description: Watermark support in Windows Forms ComboBox displays placeholder text when no value is selected and allows customization of its appearance.
 
 platform: windowsforms
-control: SfComboBox
+control: ComboBox
 documentation: ug
 ---
 
-# Watermark in Windows Forms SfComboBox
+# Watermark in Windows Forms ComboBox
  
 ## Null value
 
-Watermark text can be shown in the SfComboBox control by setting the [AllowNull](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_AllowNull) property to `true`. If the value is null and the editor portion of the control is empty, the watermark will be displayed as text in the SfComboBox control. The default value of `AllowNull` is `false`.
+Watermark text can be shown in the ComboBox control by setting the [AllowNull](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_AllowNull) property to `true`. If the value is null and the editor portion of the control is empty, the watermark will be displayed as text in the ComboBox control. The default value of `AllowNull` is `false`.
 
 {% tabs %}
 {% highlight c# %}

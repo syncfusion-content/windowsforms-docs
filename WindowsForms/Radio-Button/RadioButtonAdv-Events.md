@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events in Windows Forms RadioButtonAdv | Syncfusion®
-description: Events in Windows Forms RadioButtonAdv provide notifications when checked states change, enabling responsive handling of selection and group selection changes.
+title: Events in Windows Forms Radio Button | Syncfusion®
+description: Events in Windows Forms Radio Button provide notifications when checked states change, enabling responsive handling of selection and group selection changes.
 platform: WindowsForms
-control: RadioButtonAdv
+control: Radio Button
 documentation: ug
 ---
 
-# Events in Windows Forms RadioButtonAdv
+# Events in Windows Forms Radio Button
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
@@ -16,21 +16,21 @@ Events Table
 <table>
 <tr>
 <th>
-RadioButtonAdv Events</th><th>
+Radio Button Events</th><th>
 Description</th></tr>
 <tr>
 <td>
 CheckChanged</td><td>
-This event is fired when the Checked property of the RadioButtonAdv changes.</td></tr>
+This event is fired when the Checked property of the Radio Button changes.</td></tr>
 <tr>
 <td>
 GroupCheckChanged</td><td>
-This event is fired when the Checked property of the RadioButtonAdv in the group changes.</td></tr>
+This event is fired when the Checked property of the Radio Button in the group changes.</td></tr>
 </table>
 
 ## CheckChanged event
 
-This event is fired when the Checked property of the RadioButtonAdv changes.
+This event is fired when the Checked property of the Radio Button changes.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
@@ -55,7 +55,7 @@ End Sub
 
 ### GroupCheckChanged event
 
-This event is fired when the Checked property of the RadioButtonAdv in the group changes.
+This event is fired when the Checked property of the Radio Button in the group changes.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Drop-Down in Windows Forms SfComboBox | Syncfusion®
-description: Drop-down support in Windows Forms SfComboBox enables customizing item display, resizing behavior, position, width, and drop-down opening and closing actions.
+title: Drop-Down in Windows Forms ComboBox | Syncfusion®
+description: Drop-down support in Windows Forms ComboBox enables customizing item display, resizing behavior, position, width, and drop-down opening and closing actions.
 platform: windowsforms
-control: SfComboBox
+control: ComboBox
 documentation: ug
 ---
 
-# Drop-Down in Windows Forms SfComboBox
+# Drop-Down in Windows Forms ComboBox
 
 ## Setting maximum drop-down items
 
@@ -93,7 +93,7 @@ sfComboBox1.DropDownPosition = Syncfusion.WinForms.Core.Enums.PopupRelativeAlign
 
 {% endtabs %}
 
-![WinForms SfComboBox Dropdown position](DropDown_images/WinForms-SfComboBox-Dropdown-position.png)
+![WinForms ComboBox Dropdown position](DropDown_images/WinForms-SfComboBox-Dropdown-position.png)
 
 ## Customizing drop-down Width
 
@@ -109,11 +109,11 @@ sfComboBox1.DropDownWidth = 500;
 
 {% endtabs %}
 
-![WinForms SfComboBox Dropdown Width](DropDown_images/DropDown_img4.png)
+![WinForms ComboBox Dropdown Width](DropDown_images/DropDown_img4.png)
 
 ## Load custom control in drop-down
 
-SfComboBox allows you to show the header and footer items in drop-down by enabling the [SfComboBox.DropDownListView.ShowHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_ShowHeader) and [SfComboBox.DropDownListView.ShowFooter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_ShowFooter) properties. This also allows you to load a custom control using the [SfComboBox.DropDownListView.HeaderControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_HeaderControl) and [SfComboBox.DropDownListView.FooterControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_FooterControl) properties.
+ComboBox allows you to show the header and footer items in drop-down by enabling the [SfComboBox.DropDownListView.ShowHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_ShowHeader) and [SfComboBox.DropDownListView.ShowFooter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_ShowFooter) properties. This also allows you to load a custom control using the [SfComboBox.DropDownListView.HeaderControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_HeaderControl) and [SfComboBox.DropDownListView.FooterControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_FooterControl) properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -394,4 +394,4 @@ End Class
 
 ## See Also
 
-[How to add separator line in WinForms SfComboBox dropdown items?](https://support.syncfusion.com/kb/article/9947/how-to-add-separator-line-in-winforms-sfcombobox-dropdown-iems)
+[How to add separator line in WinForms ComboBox dropdown items?](https://support.syncfusion.com/kb/article/9947/how-to-add-separator-line-in-winforms-sfcombobox-dropdown-iems)

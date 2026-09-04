@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Filtering in Windows Forms SfComboBox | Syncfusion®
-description: Filtering in Windows Forms SfComboBox enables users to display items based on specific criteria, helping organize, search, and manage data efficiently.
+title: Filtering in Windows Forms ComboBox | Syncfusion®
+description: Filtering in Windows Forms ComboBox enables users to display items based on specific criteria, helping organize, search, and manage data efficiently.
 platform: windowsforms
-control: SfComboBox
+control: ComboBox
 documentation: ug
 ---
 
-# Filtering in Windows Forms SfComboBox
+# Filtering in Windows Forms ComboBox
 
 The [Windows Forms ComboBox](https://www.syncfusion.com/winforms-ui-controls/combobox) (SfComboBox) support you to filter the items by setting the [Filter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_Filter) property of `DropDownListView` to a predicate that will be called for every data item to determine whether the item is visible or not.
 

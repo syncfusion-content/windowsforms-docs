@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Text Settings in Windows Forms RadioButtonAdv | Syncfusion®
-description: Text settings in Windows Forms RadioButtonAdv enable configuring text shadow, shadow color, shadow offset, and text wrapping for enhanced text presentation.
+title: Text Settings in Windows Forms Radio Button | Syncfusion®
+description: Text settings in Windows Forms Radio Button enable configuring text shadow, shadow color, shadow offset, and text wrapping for enhanced text presentation.
 platform: WindowsForms
-control: RadioButtonAdv
+control: Radio Button
 documentation: ug
 ---
 
-# Text Settings in Windows Forms RadioButtonAdv
+# Text Settings in Windows Forms Radio Button
 
-This section discusses the text settings of the RadioButtonAdv.
+This section discusses the text settings of the Radio Button.
 
-Text in the RadioButtonAdv can be shadowed and wrapped as illustrated below.
+Text in the Radio Button can be shadowed and wrapped as illustrated below.
 
 <table>
 <tr>
 <th>
-RadioButtonAdv Properties</th><th>
+Radio Button Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -54,4 +54,4 @@ Me.radioButtonAdv1.ShadowOffset = New System.Drawing.Point(8, 8)
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms RadioButtonAdv TextShadow applied](Overview_images/RadioButtonAdv_textshadow.jpeg)
+![Windows forms Radio Button TextShadow applied](Overview_images/RadioButtonAdv_textshadow.jpeg)

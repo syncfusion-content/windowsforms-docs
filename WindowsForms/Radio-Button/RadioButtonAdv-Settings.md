@@ -1,26 +1,26 @@
 ---
 layout: post
-title: Settings in Windows Forms RadioButtonAdv | Syncfusion®
-description: Settings in Windows Forms RadioButtonAdv enable configuring checked states, values, and control behavior for flexible user interactions.
+title: Settings in Windows Forms Radio Button | Syncfusion®
+description: Settings in Windows Forms Radio Button enable configuring checked states, values, and control behavior for flexible user interactions.
 platform: WindowsForms
-control: RadioButtonAdv
+control: Radio Button
 documentation: ug
 ---
 
-# Settings in Windows Forms RadioButtonAdv
+# Settings in Windows Forms Radio Button
 
-This section discusses the various states of the RadioButtonAdv control and the method of associating values with the states.
+This section discusses the various states of the Radio Button control and the method of associating values with the states.
 
 
-## RadioButtonAdv states
+## Radio Button states
 
-The RadioButtonAdv can be displayed in two different states which have been described below.
+The Radio Button can be displayed in two different states which have been described below.
 
 
 <table>
 <tr>
 <th>
-RadioButtonAdv Property</th><th>
+Radio Button Property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -42,10 +42,10 @@ Me.radioButtonAdv1.Checked = True
 {% endhighlight %}
 {% endtabs %}
 
- ![Windows forms RadioButtonAdv shows various states](Overview_images/RadioButtonAdv_states.jpeg)
+ ![Windows forms Radio Button shows various states](Overview_images/RadioButtonAdv_states.jpeg)
 
 
-## RadioButtonAdv values
+## Radio Button values
 
 This section discusses how values can be associated with the various check states.
 
@@ -55,7 +55,7 @@ Both integer and string values can be associated with the check states as follow
 <table>
 <tr>
 <th>
-RadioButtonAdv Properties</th><th>
+Radio Button Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -76,7 +76,7 @@ Specifies the string value when Unchecked.</td></tr>
 <tr>
 <td>
 IntValue</td><td>
-Gets / sets checked RadioButtonAdv in current container according to the TabIndex.</td></tr>
+Gets / sets checked Radio Button in current container according to the TabIndex.</td></tr>
 </table>
 
 {% tabs %}

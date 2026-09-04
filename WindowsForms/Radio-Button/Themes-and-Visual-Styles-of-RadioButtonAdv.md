@@ -1,30 +1,30 @@
 ---
 layout: post
-title: Themes and Styling in Windows Forms RadioButtonAdv | Syncfusion®
-description: Themes and styling in Windows Forms RadioButtonAdv enable applying visual themes, customizing button appearance, and creating consistent user interfaces.
+title: Themes and Styling in Windows Forms Radio Button | Syncfusion®
+description: Themes and styling in Windows Forms Radio Button enable applying visual themes, customizing button appearance, and creating consistent user interfaces.
 platform: WindowsForms
-control: RadioButtonAdv
+control: Radio Button
 documentation: ug
 ---
 
-# Themes and Styling in Windows Forms RadioButtonAdv
+# Themes and Styling in Windows Forms Radio Button
 
-This section discusses the themes and visual style settings that are supported by the RadioButtonAdv control.
+This section discusses the themes and visual style settings that are supported by the Radio Button control.
 
 ## Themes
 
-The RadioButtonAdv can be provided with a themed appearance using the below given property.
+The Radio Button can be provided with a themed appearance using the below given property.
 
 
 <table>
 <tr>
 <th>
-RadioButtonAdv Property</th><th>
+Radio Button Property</th><th>
 Description</th></tr>
 <tr>
 <td>
 ThemesEnabled</td><td>
-Specifies whether themes are enabled for RadioButtonAdv.</td></tr>
+Specifies whether themes are enabled for Radio Button.</td></tr>
 </table>
 
 {% tabs %}
@@ -50,12 +50,12 @@ The appearance of the CheckBoxAdv control can be customized using the various op
 <table>
 <tr>
 <th>
-RadioButtonAdv Properties</th><th>
+Radio Button Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
 Style</td><td>
-Gets or sets an advanced appearance for the RadioButtonAdv.The options included are as follows.
+Gets or sets an advanced appearance for the Radio Button.The options included are as follows.
 
 * {{ '_Default_' | markdownify }}
 * {{ '_Office2007_' | markdownify }}
@@ -110,4 +110,4 @@ Office2007Colors.ApplyManagedColors(Me, Color.Red)
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms RadioButtonAdv Office2007ColorScheme is set to managed](Overview_images/RadioButtonAdv_customcolors.jpeg) 
+![Windows forms Radio Button Office2007ColorScheme is set to managed](Overview_images/RadioButtonAdv_customcolors.jpeg) 

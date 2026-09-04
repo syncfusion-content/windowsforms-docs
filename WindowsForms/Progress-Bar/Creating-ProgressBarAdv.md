@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Getting Started with Windows Forms ProgressBarAdv | Syncfusion®
-description: Learn how to get started with the Syncfusion® Windows Forms ProgressBarAdv control. Explore setup, features, examples, and customization options.
+title: Getting Started with Windows Forms Progress Bar | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms Progress Bar control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
-control: ProgressBarAdv 
+control: Progress Bar 
 documentation: ug
 ---
-# Getting Started with Windows Forms ProgressBarAdv
+# Getting Started with Windows Forms Progress Bar
 
 This section describes how to add [Windows Forms Progress Bar](https://www.syncfusion.com/winforms-ui-controls/progress-bar) (ProgressBarAdv) control in a Windows Forms application and overview of its basic functionalities.
 
@@ -19,9 +19,9 @@ Please find more details regarding how to install the nuget packages in windows 
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
 
 
-## Creating simple application with ProgressBarAdv
+## Creating simple application with Progress Bar
 
-You can create the Windows Forms application with ProgressBarAdv control as follows:
+You can create the Windows Forms application with Progress Bar control as follows:
 
 1. [Creating project](#creating-the-project)
 2. [Adding control via designer](#adding-control-via-designer)
@@ -103,7 +103,7 @@ Me.Controls.Add(progressBarAdv1)
 
 ## Configure text format
 
-Text format of the ProgressBarAdv can be customized using [TextStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ProgressBarAdv.html#Syncfusion_Windows_Forms_Tools_ProgressBarAdv_TextStyle) property.
+Text format of the Progress Bar can be customized using [TextStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ProgressBarAdv.html#Syncfusion_Windows_Forms_Tools_ProgressBarAdv_TextStyle) property.
 
 **Value** - It represents the current value out of maximum value format.
 

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Behavior Settings in Windows Forms NumericUpDownExt | Syncfusion®
-description: Behavior settings in Windows Forms NumericUpDownExt enable configuring keyboard input, read-only mode, and value selection behavior for numeric editing.
+title: Behavior Settings in Windows Forms NumericUpdown | Syncfusion®
+description: Behavior settings in Windows Forms NumericUpdown enable configuring keyboard input, read-only mode, and value selection behavior for numeric editing.
 platform: WindowsForms
-control: NumericUpDownExt
+control: NumericUpdown
 documentation: ug
 ---
 
-# Behavior Settings in Windows Forms NumericUpDownExt
+# Behavior Settings in Windows Forms NumericUpdown
 
 
-The behavior settings of the NumericUpDownExt control are discussed below.
+The behavior settings of the NumericUpdown control are discussed below.
 
 ## Intercept arrow keys
 
@@ -19,7 +19,7 @@ The arrow keys can be used to select values using the below given property.
 <table>
 <tr>
 <th>
-NumericUpDownExt Property</th><th>
+NumericUpdown Property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -72,12 +72,12 @@ Me.numericUpDownExt1.MaxLength = 32800
 
 ## ReadOnly
 
-The ReadOnly mode can be enabled for the NumericUpDownExt control using the below given property.
+The ReadOnly mode can be enabled for the NumericUpdown control using the below given property.
 
 <table>
 <tr>
 <th>
-NumericUpDownExt Property</th><th>
+NumericUpdown Property</th><th>
 Description</th></tr>
 <tr>
 <td>

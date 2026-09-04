@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Appearance and Settings in Windows Forms RadioButtonAdv | Syncfusion®
-description: Appearance and behavior settings in Windows Forms RadioButtonAdv enable configuring focus indicators, auto sizing, and click event behavior.
+title: Appearance and Settings in Windows Forms Radio Button | Syncfusion®
+description: Appearance and behavior settings in Windows Forms Radio Button enable configuring focus indicators, auto sizing, and click event behavior.
 platform: WindowsForms
-control: RadioButtonAdv
+control: Radio Button
 documentation: ug
 ---
 
-# Appearance and Behavior Settings in Windows Forms RadioButtonAdv
+# Appearance and Behavior Settings in Windows Forms Radio Button
 
-This section discusses the appearance and behavior settings of the RadioButtonAdv control.
+This section discusses the appearance and behavior settings of the Radio Button control.
 
 ## Appearance settings
 
@@ -20,7 +20,7 @@ The focus rectangle can be hidden or made visible using the below given property
 <table>
 <tr>
 <th>
-RadioButtonAdv Property</th><th>
+Radio Button Property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -46,13 +46,13 @@ Me.radioButtonAdv1.DrawFocusRectangle = True
 
 ### AutoHeight
 
-The height of the RadioButtonAdv can be automatically set using the property given below.
+The height of the Radio Button can be automatically set using the property given below.
 
 
 <table>
 <tr>
 <th>
-RadioButtonAdv Property</th><th>
+Radio Button Property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -76,13 +76,13 @@ Me.radioButtonAdv1.AutoHeight = True
 
 ### RaiseEventOnClick
 
-The below given property can be used to fire the OnClick event of the RadioButtonAdv.
+The below given property can be used to fire the OnClick event of the Radio Button.
 
 
 <table>
 <tr>
 <th>
-RadioButtonAdv Property</th><th>
+Radio Button Property</th><th>
 Description</th></tr>
 <tr>
 <td>

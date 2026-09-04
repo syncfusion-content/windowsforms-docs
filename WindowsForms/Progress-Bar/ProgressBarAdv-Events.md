@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events in Windows Forms ProgressBarAdv | Syncfusion®
-description: Events in Windows Forms ProgressBarAdv allow applications to respond to progress updates and customize runtime behavior.
+title: Events in Windows Forms Progress Bar | Syncfusion®
+description: Events in Windows Forms Progress Bar allow applications to respond to progress updates and customize runtime behavior.
 platform: WindowsForms
-control: ProgressBarAdv
+control: Progress Bar
 documentation: ug
 ---
 
-# Events in Windows Forms ProgressBarAdv
+# Events in Windows Forms Progress Bar
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
@@ -16,7 +16,7 @@ Events table
 <table>
 <tr>
 <th>
-ProgressBarAdv events</th><th>
+Progress Bar events</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -25,7 +25,7 @@ This event can be handled to draw a custom waiting render. WaitingCustomRender m
 <tr>
 <td>
 ValueChanged</td><td>
-This event is handled to set the text of the ProgressBarAdv when the value changes.The TextStyle property should be set to 'Custom'.</td></tr>
+This event is handled to set the text of the Progress Bar when the value changes.The TextStyle property should be set to 'Custom'.</td></tr>
 </table>
 
 
@@ -33,7 +33,7 @@ This event is handled to set the text of the ProgressBarAdv when the value chang
 
 The CustomWaitingRender property indicates whether the waiting gradient will be replaced by another custom waiting render which is defaulted to segments. When this property is set to `true`, it enables the custom waiting render behavior which will fire this DrawWaitingCustomRender event.
 
-This event lets you do the desired drawing. If you perform custom drawing, you should specify that to the ProgressBarAdv (so that it does not perform it's default painting), by setting e.Handled = true. If no custom painting is done, then you do not have to set e.Handled value, and the ProgressBarAdv draws it's default segmented waiting gradient. The type of segments are specified through the ProgressFallBackStyle with the options Continuous, Tube, Gradient and System.
+This event lets you do the desired drawing. If you perform custom drawing, you should specify that to the Progress Bar (so that it does not perform it's default painting), by setting e.Handled = true. If no custom painting is done, then you do not have to set e.Handled value, and the Progress Bar draws it's default segmented waiting gradient. The type of segments are specified through the ProgressFallBackStyle with the options Continuous, Tube, Gradient and System.
 
 ### Event data
 
@@ -122,5 +122,5 @@ End Sub
 
 ## ValueChanged event
 
-For information about this event, refer to the How to display custom text on the ProgressBarAdv to indicate the status of the task instead of the percentage completed? topic under the Frequently Asked Questions section.
+For information about this event, refer to the How to display custom text on the Progress Bar to indicate the status of the task instead of the percentage completed? topic under the Frequently Asked Questions section.
 

@@ -1,35 +1,35 @@
 ---
 layout: post
-title: About Syncfusion® Windows Forms RadioButtonAdv Control | Syncfusion®
-description: Learn about introduction of Syncfusion® Essential Studio Windows Forms RadioButtonAdv control and more details.
+title: About Syncfusion® Windows Forms Radio Button Control | Syncfusion®
+description: Learn about introduction of Syncfusion® Essential Studio Windows Forms Radio Button control and more details.
 platform: WindowsForms
-control: RadioButtonAdv
+control: Radio Button
 documentation: ug
 ---
 
-# About Syncfusion® Windows Forms RadioButtonAdv Control
+# About Syncfusion® Windows Forms Radio Button Control
 
-RadioButtonAdv functions similar to the Windows standard RadioButton but it has some additional enhancements. It helps to provide a great look and feel to the RadioButtons. It supports themes, gradient colors, images and shadow text.
+Radio Button functions similar to the Windows standard RadioButton but it has some additional enhancements. It helps to provide a great look and feel to the RadioButtons. It supports themes, gradient colors, images and shadow text.
 
-![Windows forms RadioButtonAdv overview](Overview_images/RadioButtonAdv_overview.jpeg) 
+![Windows forms Radio Button overview](Overview_images/RadioButtonAdv_overview.jpeg) 
 
 
 ## Features
 
-RadioButtonAdv is an advanced RadioButton control and has the following features.
+Radio Button is an advanced RadioButton control and has the following features.
 
-**RadioButtonAdv Settings**: Integer and String values can be associated with each check state of the RadioButtonAdv.
+**Radio Button Settings**: Integer and String values can be associated with each check state of the Radio Button.
 
-**Text Settings**: The text of the RadioButtonAdv control can be shadowed, WrapText, shadow color and offset can also be specified.
+**Text Settings**: The text of the Radio Button control can be shadowed, WrapText, shadow color and offset can also be specified.
 
-**Appearance and Behavior Settings**: Supports customizing the appearance in focus rectangle can be made visible or hidden and height of the RadioButtonAdv can be automatically calculated.
+**Appearance and Behavior Settings**: Supports customizing the appearance in focus rectangle can be made visible or hidden and height of the Radio Button can be automatically calculated.
 
-**Alignment Settings**: Provides support to text and radio button of the RadioButtonAdv control can be aligned to any desired location by the user.
+**Alignment Settings**: Provides support to text and radio button of the Radio Button control can be aligned to any desired location by the user.
 
-**Background Settings**: RadioButtonAdv can be created with custom gradient backgrounds.
+**Background Settings**: Radio Button can be created with custom gradient backgrounds.
 
-**Border Settings**: Provides support to 2D and 3D border styles can be applied to the RadioButtonAdv.
+**Border Settings**: Provides support to 2D and 3D border styles can be applied to the Radio Button.
 
-**Image Settings**: Provides support to set the image for the RadioButtonAdv when it is each check state.
+**Image Settings**: Provides support to set the image for the Radio Button when it is each check state.
 
-**Themes and Visual Styles**: Supports to set of visual styles to customize the look and feel of RadioButtonAdv control.
+**Themes and Visual Styles**: Supports to set of visual styles to customize the look and feel of Radio Button control.
