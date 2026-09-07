@@ -9,7 +9,7 @@ documentation: ug
 
 # SplashScreen Settings in Windows Forms Splash Screen
 
-The following are the splash settings available for the [Windows Forms Splash Screen](https://www.syncfusion.com/winforms-ui-controls/splash-screen) (Splash) Control.
+The following are the splash settings available for the Windows Forms Splash Screen Control.
 
 ## Automatic launching
 
@@ -20,16 +20,16 @@ Property Table
 <table>
 <tr>
 <th>
-SplashControl Property</th><th>
+SplashControl Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
 AutoMode</td><td>
-Specifies if the SplashControl should automatically launch the splash screen.</td></tr>
+Specifies if the `SplashControl` should automatically launch the splash screen.</td></tr>
 <tr>
 <td>
 AutoModeDisableOwner</td><td>
-Specifies if the SplashControl displays modally when in AutoMode.</td></tr>
+Specifies if the `SplashControl` displays modally when in AutoMode.</td></tr>
 <tr>
 <td>
 IsShowing</td><td>
@@ -136,7 +136,7 @@ End Sub
 
 ## Time interval settings
 
-The SplashControl is, by default, a timed display splash screen. The splash screen will be displayed for a specific time period and will then be closed. By default, the value will be set as 5000. User can change this value, run the application and see the difference.
+The Splash Screen is, by default, a timed display splash screen. The splash screen will be displayed for a specific time period and will then be closed. By default, the value will be set as 5000. User can change this value, run the application and see the difference.
 
 Property Table
 

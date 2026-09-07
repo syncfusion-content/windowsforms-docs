@@ -39,7 +39,7 @@ This event is raised when the splash window is closed.</td></tr>
 
 Follow the below steps and use the corresponding events to get the results.
 
-1. Create a SplashControl and a TextBox in a form.
+1. Create a `SplashControl` and a TextBox in a form.
 2. Set the textbox properties and add the textbox to the form as given below.
 
 {% tabs %}
@@ -96,7 +96,7 @@ Me.Controls.Add(this.textBox1);
 
 ## BeforeSplash event
 
-You can handle the BeforeSplash event to process any code just before the splash screen is displayed. For example in the below code, the event logs are recorded and displayed in the textbox.
+You can handle the `BeforeSplash event` to process any code just before the splash screen is displayed. For example in the below code, the event logs are recorded and displayed in the textbox.
 
 ### Event data
 
@@ -166,7 +166,7 @@ Me.splashPanel1.BeforeSplashNotify()
 
 ## SplashDisplayed event
 
-The SplashDisplayed event is raised after the splash screen is displayed on the screen. For example in the below code, the event logs are recorded and displayed in a textbox.
+The `SplashDisplayed` event is raised after the splash screen is displayed on the screen. For example in the below code, the event logs are recorded and displayed in a textbox.
 
 {% tabs %}
 {% highlight c# %}
@@ -213,7 +213,7 @@ Me.splashPanel1.SplashDisplayedNotify()
 
 ## SplashClosing event
 
-The SplashClosing event is raised when the splash screen is closing. For example in the below code, the event logs are recorded and displayed in a textbox.
+The `SplashClosing` event is raised when the splash screen is closing. For example in the below code, the event logs are recorded and displayed in a textbox.
 
 {% tabs %}
 {% highlight c# %}
@@ -260,7 +260,7 @@ Me.splashControl1.SplashClosingNotify()
 
 ## SplashClosed event
 
-The SplashClosed event is raised after the splash screen is closed. For example in the below code, the event logs are recorded and displayed in a textbox.
+The `SplashClosed` event is raised after the splash screen is closed. For example in the below code, the event logs are recorded and displayed in a textbox.
 
 {% tabs %}
 {% highlight c# %}

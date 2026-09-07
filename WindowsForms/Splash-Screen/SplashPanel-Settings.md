@@ -9,16 +9,16 @@ documentation: ug
 
 # SplashPanel Settings in Windows Forms Splash Screen
 
-This section discusses how a SplashPanel control can be displayed as a SplashScreen for the SplashControl.
+This section discusses how a SplashPanel control can be displayed as a Splash Screen.
 
-The SplashControl allows the user to display a SplashPanel control as the splash screen. The following settings can be changed to customize the SplashPanel in the SplashControl.
+The `SplashControl` allows the user to display a SplashPanel control as the splash screen. The following settings can be changed to customize the SplashPanel in the Splash Screen.
 
 Property Table
 
 <table>
 <tr>
 <th>
-SplashControl Property</th><th>
+SplashControl Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -55,15 +55,15 @@ Me.splashControl1.FormIcon = DirectCast((resources.GetObject("splashControl1.For
 
 ## Integrating SplashPanel to SplashControl
 
-A SplashControl allows the user to add an image that is to be displayed in the splash screen. However, the SplashControl also allows the user to add a SplashPanel control which can be customized by the user.
+A `SplashControl` allows the user to add an image that is to be displayed in the splash screen. However, the `SplashControl` also allows the user to add a SplashPanel control which can be customized by the user.
 
 1. Add the required Syncfusion.Windows.Forms.Tools and Syncfusion.Shared.Base assemblies.
-2. Drag and drop a SplashControl form the toolbox onto the form. The SplashControl will be created in the components area of the form.
+2. Drag and drop a `SplashControl` from the toolbox onto the form. The `SplashControl` will be created in the components area of the form.
 3. Drag and drop a SplashPanel control from the toolbox.
 4. Design the SplashPanel with the required controls (You can add any user interface control to the SplashPanel).
 5. Populate the SplashPanel with the SplashControl using the CustomSplashPanel property.
-6. The SplashControl uses the SplashPanel only if the UseCustomSplashPanel property is set to 'True'.
-7. Create a SplashControl and add the below code to the form to customize the SplashPanel and display the SplashPanel as the splash image.
+6. The `SplashControl` uses the SplashPanel only if the UseCustomSplashPanel property is set to 'True'.
+7. Create a `SplashControl` and add the below code to the form to customize the SplashPanel and display the SplashPanel as the splash image.
 
 {% tabs %}
 {% highlight c# %}
@@ -170,4 +170,4 @@ Me.Controls.Add(Me.SplashPanel1)
 {% endhighlight %}
 {% endtabs %}
 
-   ![Overview_images37](Overview_images/Overview_img37.jpeg) 
+![Splash panle setting in WinForms Splash Screen](Overview_images/Overview_img37.jpeg) 

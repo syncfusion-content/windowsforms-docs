@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Windows Forms Splash Screen
 
-This section explains how to add the `SplashControl` in a Windows Forms application and overview of its basic functionalities.
+This section explains how to add the Splash Screen (SplashControl) in a Windows Forms application and overview of its basic functionalities.
 
 ## Assembly deployment
 
@@ -25,7 +25,7 @@ Create a new Windows Forms project in Visual Studio to display the `SplashContro
 
 The `SplashControl` provides full support for the Windows Forms designer.
 
-**Step 1**: Drag and drop the SplashControl from the toolbox onto the form. The Splash Screen will be created in the components area of the form. The following required assembly reference will be added automatically.
+**Step 1**: Drag and drop the `SplashControl` from the toolbox onto the form. The Splash Screen will be created in the components area of the form. The following required assembly reference will be added automatically.
 
          * Syncfusion.Shared.Base.dll
          * Syncfusion.Tools.Windows.dll
@@ -48,11 +48,11 @@ The `SplashControl` provides full support for the Windows Forms designer.
 
    ![Showing Splash Screen at run time in WindowsForms](overview_images/windowsforms-splash-screen-at-run-time.jpeg) 
 
-**Step 8**: You can cancel the SplashControl while it is displaying the splash screen by calling the HideSplash() method.
+**Step 8**: You can cancel the `SplashControl` while it is displaying the splash screen by calling the HideSplash() method.
 
 ## Through code
 
-A SplashControl can be created through code by following the below steps.
+A `SplashControl` can be created through code by following the below steps.
 
 **Step 1**: Create a C# or VB.NET application though Visual Studio.
 

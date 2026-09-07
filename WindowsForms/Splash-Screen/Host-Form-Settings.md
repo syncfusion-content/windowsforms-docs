@@ -16,7 +16,7 @@ Property Table
 <table>
 <tr>
 <th>
-SplashControl Property</th><th>
+SplashControl Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
