@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Getting Started with Windows Forms MultiColumnComboBox | Syncfusion®
-description: Learn how to get started with the Syncfusion® Windows Forms MultiColumnComboBox control. Explore setup, features, examples, and customization options.
+title: Getting Started with Windows Forms Multicolumn ComboBox | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms Multicolumn ComboBox control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
-control: MultiColumnComboBox
+control: Multicolumn ComboBox
 documentation: ug
 ---
 
-# Getting Started with Windows Forms MultiColumnComboBox
+# Getting Started with Windows Forms Multicolumn ComboBox
 
-The MultiColumnComboBox control provides full support for the Windows Forms designer. To use a MultiColumnComboBox control in your application, all you need to do is drag-and-drop the MultiColumnComboBox control from the toolbox onto your form. You can then set any of its properties through the property grid. 
+The Multicolumn ComboBox control provides full support for the Windows Forms designer. To use a Multicolumn ComboBox control in your application, all you need to do is drag-and-drop the Multicolumn ComboBox control from the toolbox onto your form. You can then set any of its properties through the property grid. 
 
-![Windows Forms MultiColumn ComboBox](Overview_images/Overview_img324.jpeg) 
+![Windows Forms Multicolumn ComboBox](Overview_images/Overview_img324.jpeg) 
 
 
-The MultiColumnComboBox can be created programmatically through code as detailed below.
+The Multicolumn ComboBox can be created programmatically through code as detailed below.
 
 1. Include the required namespace.
 
@@ -35,7 +35,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2. Create an instance of MultiColumnComboBox. Add that instance to the Form.
+2. Create an instance of `MultiColumnComboBox`. Add that instance to the Form.
 
 {% capture codesnippet2 %}​
 {% tabs %}
@@ -58,6 +58,6 @@ Me.Controls.Add(Me.multiColumnComboBox1)
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-After creating MultiColumnComboBox, you can bound them using data source. Refer [DataBinding](https://help.syncfusion.com/windowsforms/multicolumn-combobox/data-binding).
+After creating `MultiColumnComboBox`, you can bound them using data source. Refer [DataBinding](https://help.syncfusion.com/windowsforms/multicolumn-combobox/data-binding).
 
 

@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Events in Windows Forms SyntaxEditor | Syncfusion®
-description: Events in Windows Forms SyntaxEditor provide notifications for editing, IntelliSense, code folding, and printing to support custom editor workflows.
+title: Events in Windows Forms Syntax Editor | Syncfusion®
+description: Events in Windows Forms Syntax Editor provide notifications for editing, IntelliSense, code folding, and printing to support custom editor workflows.
 platform: WindowsForms
-control: SyntaxEditor
+control: Syntax Editor
 documentation: ug
 ---
 
-# Events in Windows Forms SyntaxEditor
+# Events in Windows Forms Syntax Editor
 
-The `EditControl` is a powerful text editor control to create an interactive code editor applications with its unique feature set. It has many efficient features like editing, syntax highlighting, text indentation, intellisense, expand or collapse a block of code, custom language configuration etc. like in Microsoft Visual Studio Editor. It also provides programmatic access for most of the features like editing, intellisense, expand or collapse a block of code, and printing by raising various events.
+The Syntax Editor is a powerful text editor control to create an interactive code editor applications with its unique feature set. It has many efficient features like editing, syntax highlighting, text indentation, intellisense, expand or collapse a block of code, custom language configuration etc. like in Microsoft Visual Studio Editor. It also provides programmatic access for most of the features like editing, intellisense, expand or collapse a block of code, and printing by raising various events.
 
-This section discusses various events handled for the EditControl as follows.
+This section discusses various events handled for the Syntax Editor as follows.
 
 ## BeforeLineNumberPaint event
 
-This event will be triggered before the LineNumber gets painted. The LineNumber can be enabled or disabled by using the [ShowLineNumbers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowLineNumbers) property of the EditControl. Its default is `true`. To hide the LineNumber, turn on its value to `false`.
+This event will be triggered before the LineNumber gets painted. The LineNumber can be enabled or disabled by using the [ShowLineNumbers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowLineNumbers) property of the `EditControl`. Its default is `true`. To hide the LineNumber, turn on its value to `false`.
 
 The event handler receives an argument of type [LineNumberPaintEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.LineNumberPaintEventArgs.html). The following LineNumberPaintEventArgs member provides specific information of this event.
 
@@ -38,7 +38,7 @@ Specifies a value for the fore color of LineNumber.</td></tr>
 
 private void EditControl1_BeforeLineNumberPaint(object sender, Syncfusion.Windows.Forms.Edit.LineNumberPaintEventArgs e)
 {
-   // Sets the fore color of LineNumber in EditControl. 
+   // Sets the fore color of LineNumber in Syntax Editor. 
 
     e.ForeColor = Color.Pink;
 }
@@ -52,7 +52,7 @@ private void EditControl1_BeforeLineNumberPaint(object sender, Syncfusion.Window
 
 Private Sub EditControl1_BeforeLineNumberPaint(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Edit.LineNumberPaintEventArgs)
 
-   'Sets the fore color of LineNumber in EditControl. 
+   'Sets the fore color of LineNumber in Syntax Editor. 
 
    e.ForeColor = Color.Pink
 
@@ -64,7 +64,7 @@ End Sub
 
 ## CanUndoRedoChanged event
 
-This event occurs when the `CanUndoRedo` state is changed. The [CanUndo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_CanUndo) and [CanRedo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_CanRedo) properties indicates whether it is possible to undo and redo in the EditControl respectively.
+This event occurs when the `CanUndoRedo` state is changed. The [CanUndo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_CanUndo) and [CanRedo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_CanRedo) properties indicates whether it is possible to undo and redo in the Syntax Editor respectively.
 
 The event handler receives an argument of type EventArgs.
 
@@ -97,7 +97,7 @@ End Sub
 
 ## Closing event
 
-The Closing event is triggered before a file or stream is closed in the EditControl.
+The Closing event is triggered before a file or stream is closed in the Syntax Editor.
 
 {% tabs %}
 
@@ -373,7 +373,7 @@ End Sub
 
 ## ConfigurationChanged event
 
-This event is fired on changing the configuration of the EditControl. The configuration can be set by using the [ApplyConfiguration](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ApplyConfiguration_Syncfusion_Windows_Forms_Edit_Enums_KnownLanguages_) function.
+This event is fired on changing the configuration of the Syntax Editor. The configuration can be set by using the [ApplyConfiguration](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ApplyConfiguration_Syncfusion_Windows_Forms_Edit_Enums_KnownLanguages_) function.
 
 The event handler receives an argument of type [EventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.eventargs?view=net-5.0).
 
@@ -541,7 +541,7 @@ End Sub
 
 ## ContextChoice events
 
-The EditControl provides the following set of events for performing ContextChoice operations:
+The Syntax Editor provides the following set of events for performing ContextChoice operations:
 
     * ContextChoiceBeforeOpen
     * ContextChoiceSelectedTextInsert
@@ -728,7 +728,7 @@ End Sub
 
 ## ContextPrompt events
 
-The EditControl provides the following set of events for performing `ContextPrompt` operations:
+The Syntax Editor provides the following set of events for performing `ContextPrompt` operations:
 
       * ContextPromptBeforeOpen 
       * ContextPromptClose 
@@ -1663,7 +1663,7 @@ This event is discussed in the Printing topic.
 
 ## ReadOnlyChanged event
 
-This event occurs when the [ReadOnly](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ReadOnly) property is changed. The ReadOnly property specifies whether the EditControl is in the read-only mode or not.
+This event occurs when the [ReadOnly](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ReadOnly) property is changed. The ReadOnly property specifies whether the Syntax Editor is in the read-only mode or not.
 
 The event handler receives an argument of type [EventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.eventargs?view=net-5.0).
 
@@ -2037,7 +2037,7 @@ This section discusses the following text events:
 
 ### TextChanged event
 
-This event is fired when the text in the EditControl is changed.
+This event is fired when the text in the Syntax Editor is changed.
 
 The event handler receives an argument of type [EventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.eventargs?view=net-5.0).
 
@@ -2049,7 +2049,7 @@ The event handler receives an argument of type [EventArgs](https://docs.microsof
 
 this.editControl1.TextChanged += new EventHandler(editControl1_TextChanged);
 
-// Set the text of the EditControl.
+// Set the text of the Syntax Editor.
 
 this.editControl1.Text = "Sample Text";
 
@@ -2072,7 +2072,7 @@ private void editControl1_TextChanged(object sender, EventArgs e)
 
 AddHandler Me.editControl1.TextChanged, AddressOf editControl1_TextChanged 
 
-' Set the text of the EditControl.
+' Set the text of the Syntax Editor.
 
 Me.editControl1.Text = "Sample Text"
 
@@ -2131,7 +2131,7 @@ private void editControl1_TextChanging(object sender, Syncfusion.Windows.Forms.E
 
    e.Type = Syncfusion.Windows.Forms.Edit.Enums.TextChange.Deleted;
 
-   // The below statement can be seen in the output window at runtime when the text of the EditControl is deleted.
+   // The below statement can be seen in the output window at runtime when the text of the Syntax Editor is deleted.
 
    Console.WriteLine(" TextChanging event is raised ");
 
@@ -2146,7 +2146,7 @@ Private Sub editControl1_TextChanging(ByVal sender As Object, ByVal e As Syncfus
 
    e.Type = Syncfusion.Windows.Forms.Edit.Enums.TextChange.Deleted
 
-   ' The below statement can be seen in the output window at runtime when the text of the EditControl is deleted. 
+   ' The below statement can be seen in the output window at runtime when the text of the Syntax Editor is deleted. 
 
    Console.WriteLine(" TextChanging event is raised ")
 
@@ -2158,13 +2158,13 @@ End Sub
 
 ### Line Modification events
 
-The line modification events occur whenever a line in the EditControl is subjected to a change by modifying the text of an existing line, inserting a line, or removing a line in the editor.
+The line modification events occur whenever a line in the Syntax Editor is subjected to a change by modifying the text of an existing line, inserting a line, or removing a line in the editor.
 
 The following events are triggered from the control when the editor is modified.
 
 #### Line Changed
 
-The [LineChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) event will be fired when any line is modified in the EditControl.
+The [LineChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) event will be fired when any line is modified in the Syntax Editor.
 
 {% tabs %}
 
@@ -2207,7 +2207,7 @@ End Sub
 
 #### Line Inserted
 
-The [LineInserted](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) event will be fired when a new line is inserted in the EditControl.
+The [LineInserted](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) event will be fired when a new line is inserted in the Syntax Editor.
 
 {% tabs %}
 
@@ -2250,7 +2250,7 @@ End Sub
 
 #### Line Deleted
 
-The [LineDeleted](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) event will be fired when any line is removed from the EditControl.
+The [LineDeleted](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) event will be fired when any line is removed from the Syntax Editor.
 
 {% tabs %}
 
@@ -2455,7 +2455,7 @@ This event is discussed in the User Margin topic.
 
 ### PaintUserMargin event
 
-This event occurs when the user margin has to be painted. The user margin in EditControl can be enabled or disabled by using the [ShowUserMargin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowUserMargin) property. Its default value is `false`. To show the user margin, turn on its value to `true`.
+This event occurs when the user margin has to be painted. The user margin in Syntax Editor can be enabled or disabled by using the [ShowUserMargin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowUserMargin) property. Its default value is `false`. To show the user margin, turn on its value to `true`.
 
 The event handler receives an argument of type [PaintEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.painteventargs?view=net-5.0). The following PaintEventArgs members provide specific information of this event.
 

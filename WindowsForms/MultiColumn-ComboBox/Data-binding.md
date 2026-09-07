@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Data Binding in Windows Forms MultiColumnComboBox | Syncfusion®
-description: Bind data to the Windows Forms MultiColumnComboBox control to display and manage items from various data sources efficiently.
+title: Data Binding in Windows Forms Multicolumn ComboBox | Syncfusion®
+description: Bind data to the Windows Forms Multicolumn ComboBox control to display and manage items from various data sources efficiently.
 platform: WindowsForms
-control: MultiColumnComboBox
+control: Multicolumn ComboBox
 documentation: ug
 ---
 
-# Data Binding in Windows Forms MultiColumnComboBox
+# Data Binding in Windows Forms Multicolumn ComboBox
 
-Data binding concepts for the [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) are discussed in the below topics.
+Data binding concepts for the Multicolumn ComboBox are discussed in the below topics.
 
 ## DataView as data source
 
@@ -78,15 +78,13 @@ End Sub
 
 ![DataView as data source](Overview_images/Overview_img326.jpeg) 
 
-
-
 ## Using data adapter
 
-This section deals with data binding in [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) using `OleDBDataAdapter`. Follow the steps below. 
+This section deals with data binding in Multicolumn ComboBox using `OleDBDataAdapter`. Follow the steps below. 
 
 * Add a [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) control to your form. 
 * Add the appropriate DataAdapter and DataSets for your datasource. 
-* Set the [MultiColumnCombobox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) `Datasource`, `DisplayMember` and `ValueMember` properties. 
+* Set the [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) `Datasource`, `DisplayMember` and `ValueMember` properties. 
 * Alternatively, you can set up the data binding in code, in the form's load event handler as follows.
 
 {% tabs %}
@@ -126,9 +124,9 @@ A sample which demonstrates the OleDbDataAdapter data binding is available in th
 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-## Populating MultiColumnComboBox
+## Populating Multicolumn ComboBox
 
-This section deals with populating [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) with typed Dataset as datasource. Follow the steps below :
+This section deals with populating Multicolumn ComboBox with typed Dataset as datasource. Follow the steps below:
 
 1. Open VS .NET IDE and click File -> New -> Project -> Windows Application. 
 2. Right click the project in the Solutions Explorer and click Add -> New Item and Add New Item dialog box will be displayed. 
@@ -289,8 +287,8 @@ End Sub
 {% endcapture %}
 {{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-![Populating MultiColumnComboBox](Overview_images/Overview_img327.jpeg)
+![Populating Multicolumn ComboBox](Overview_images/Overview_img327.jpeg)
 
 ## See Also
 
-[How to load MultiColumnComboBox dropdown items in on-demand?](https://www.syncfusion.com/forums/154336/how-to-detect-when-user-has-scrolled-to-bottom-of-list-in-order-to-run-query-append-more)
+[How to load Multicolumn ComboBox dropdown items in on-demand?](https://www.syncfusion.com/forums/154336/how-to-detect-when-user-has-scrolled-to-bottom-of-list-in-order-to-run-query-append-more)

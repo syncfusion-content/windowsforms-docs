@@ -1,19 +1,19 @@
 ---
 layout: post
-title: IntelliSense in Windows Forms SyntaxEditor | Syncfusion®
-description: IntelliSense in Windows Forms SyntaxEditor provides code completion, context prompts, and customizable pop-up suggestions to improve coding productivity.
+title: IntelliSense in Windows Forms Syntax Editor | Syncfusion®
+description: IntelliSense in Windows Forms Syntax Editor provides code completion, context prompts, and customizable pop-up suggestions to improve coding productivity.
 platform: WindowsForms
-control: SyntaxEditor
+control: Syntax Editor
 documentation: ug
 ---
 
-# IntelliSense in Windows Forms SyntaxEditor
+# IntelliSense in Windows Forms Syntax Editor
 
-The EditControl provides Intellisense pop-up capabilities to add content easily as in Microsoft Visual Studio text editor.
+The Syntax Editor provides Intellisense pop-up capabilities to add content easily as in Microsoft Visual Studio text editor.
 
 ## Configure intellisense pop-up
 
-The [ContextChoiceController](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController.html) helps to display intellisense pop-up in the EditControl. You can also autocomplete the word by using the UP or DOWN arrow key to choose the Context Choice item and pressing the <kbd>Tab</kbd> key. The ContextChoice pop-up can be dismissed by pressing the <kbd>ESC</kbd> key.
+The [ContextChoiceController](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController.html) helps to display intellisense pop-up in the Syntax Editor. You can also autocomplete the word by using the UP or DOWN arrow key to choose the Context Choice item and pressing the <kbd>Tab</kbd> key. The ContextChoice pop-up can be dismissed by pressing the <kbd>ESC</kbd> key.
 
 ![Intellisense to choose items in WindowsForms Syntax Editor](intellisense-images/windowsforms-syntax-editor-intellisense-to-choose-items.png)
 
@@ -50,7 +50,7 @@ Me.editControl1.AutoCompleteSingleLexem = True
 
 ### Populate intellisense pop-up
 
-ContextChoice list is populated by handling the [ContextChoiceOpen](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) event in the EditControl, and adding items to the items collection associated with the [IContextChoiceController](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController.html) object.
+ContextChoice list is populated by handling the `ContextChoiceOpen` event in the Syntax Editor, and adding items to the items collection associated with the [IContextChoiceController](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController.html) object.
 
 {% tabs %}
 
@@ -92,7 +92,7 @@ End Sub
 
 **Adding custom images to list items**
 
-Custom images can also be added to the ContextChoice list items by indexing them into the images collection of the [IContextChoiceController](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController.html) object associated with the EditControl. 
+Custom images can also be added to the ContextChoice list items by indexing them into the images collection of the [IContextChoiceController](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController.html) object associated with the Syntax Editor. 
 
 {% tabs %}
 
@@ -144,7 +144,7 @@ The tooltip text is specified for each Context Choice list item while adding the
 
 // Specify tooltip text for each Context Choice list item.
 
-controller.Items.Add("LoadFile", "Use this function to open a file in EditControl.", this.editControl1.ContextChoiceController.Images["Image3"]);
+controller.Items.Add("LoadFile", "Use this function to open a file in Syntax Editor.", this.editControl1.ContextChoiceController.Images["Image3"]);
 
 {% endhighlight %}
 
@@ -153,7 +153,7 @@ controller.Items.Add("LoadFile", "Use this function to open a file in EditContro
 
 ' Specify tooltip text for each Context Choice list item.
 
-controller.Items.Add("LoadFile", "Use this function to open a file in EditControl.", Me.editControl1.ContextChoiceController.Images["Image3"])
+controller.Items.Add("LoadFile", "Use this function to open a file in Syntax Editor.", Me.editControl1.ContextChoiceController.Images["Image3"])
 
 {% endhighlight %}
 
@@ -161,7 +161,7 @@ controller.Items.Add("LoadFile", "Use this function to open a file in EditContro
 
 **ContextChoice operations**
 
-The EditControl provides the following set of events for performing Context Choice operations:
+The Syntax Editor provides the following set of events for performing Context Choice operations:
     
 * ContextChoiceBeforeOpen
 * ContextChoiceClose
@@ -359,7 +359,7 @@ End Sub
 
 **Filtering AutoComplete items**
 
-The EditControl provides an option to filter context choice items while typing by using the [FilterAutoCompleteItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_FilterAutoCompleteItems) property.
+The Syntax Editor provides an option to filter context choice items while typing by using the [FilterAutoCompleteItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_FilterAutoCompleteItems) property.
 
 When the FilterAutoCompleteItems property is set to `true`, it filters the item in the AutoComplete Context Choice and the filtered item alone will be visible. When set to `false`, all the items will be visible and the selection will be navigated to the item.
 
@@ -552,7 +552,7 @@ The [ContextChoiceFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.W
 
 ![Font of items in WindowsForms Syntax Editor](intellisense-images/windowsforms-syntax-editor-font-of-items.png)
 
-N> Refer to the following sample link that demonstrates the `Intellisense` functionalities of EditControl:
+N> Refer to the following sample link that demonstrates the `Intellisense` functionalities of Syntax Editor:
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Intellisense Functions\Context Choices
 
 ## Configure context prompt pop-up
@@ -575,7 +575,7 @@ The preceding code has to be placed within the <lexems> section of the configura
 
 ### Populate context prompt 
 
-Context Prompt is populated by handling the [ContextPromptOpen](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) event in EditControl, and adding new prompts by using the AddPrompt function.
+Context Prompt is populated by handling the [ContextPromptOpen](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) event in Syntax Editor, and adding new prompts by using the AddPrompt function.
 
 {% tabs %}
 
@@ -617,7 +617,7 @@ End Sub
 
 **ContextPrompt operations**
 
-The EditControl provides the following set of events for performing Context Prompt operations.
+The Syntax Editor provides the following set of events for performing Context Prompt operations.
 
 <table>
 <tr>
@@ -909,7 +909,7 @@ Me.editControl1.ContextPromptBorderColor = System.Drawing.Color.Pink
 
 ### Size
 
-The [ContextPromptCustomSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ContextPromptCustomSize) helps to customize the size of `ContextPrompt` pop-up window. This behavior can be enabled or hidden by using the [UseCustomSizeContextPrompt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_UseCustomSizeContextPrompt) property in the EditControl.
+The [ContextPromptCustomSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ContextPromptCustomSize) helps to customize the size of `ContextPrompt` pop-up window. This behavior can be enabled or hidden by using the [UseCustomSizeContextPrompt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_UseCustomSizeContextPrompt) property in the `EditControl`.
 
 {% tabs %}
 
@@ -1138,7 +1138,7 @@ End Sub
 
 {% endtabs %}
 
-N> Refer to the following sample link that demonstrates the `ContextPrompt` functionalities of the EditControl:
+N> Refer to the following sample link that demonstrates the `ContextPrompt` functionalities of the Syntax Editor:
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Intellisense Functions\Advanced Intellisense
 
 ## Configure context tooltip
@@ -1147,7 +1147,7 @@ Supports built-in tooltip that appears when the mouse pointer is placed over tex
 
 ![Tooltip for text in WindowsForms Syntax Editor](intellisense-images/windowsforms-syntax-editor-tooltip-for-text.png)
 
-Context tooltip can be populated with additional information on the corresponding lexem by handling the [UpdateContextTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) event in the EditControl.
+Context tooltip can be populated with additional information on the corresponding lexem by handling the [UpdateContextTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) event in the Syntax Editor.
 
 {% tabs %}
 
@@ -1300,7 +1300,7 @@ Me.editControl1.CloseContextTooltip();
 
 {% endtabs %}
 
-N> Refer to the following sample link that demonstrates the `ContextTooltip` behavior in the EditControl:
+N> Refer to the following sample link that demonstrates the `ContextTooltip` behavior in the Syntax Editor:
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Intellisense Functions\Context Tooltip
 
 ## Auto complete

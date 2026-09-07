@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Event Handling in Windows Forms MultiColumnComboBox | Syncfusion®
+title: Event Handling in Windows Forms Multicolumn ComboBox | Syncfusion®
 description: Event handling in Windows Forms MultiColumn ComboBox provides notifications for selection, value, and index changes, enabling customized user interactions.
 platform: WindowsForms
-control: MultiColumnComboBox
+control: Multicolumn ComboBox
 documentation: ug
 ---
 
-# Event Handling in Windows Forms MultiColumnComboBox
+# Event Handling in Windows Forms Multicolumn ComboBox
 
-The events of ComboBoxAdv present in the MultiColumnComboBox.
+The events of ComboBoxAdv present in the Multicolumn ComboBox.
 
 ## Selection events
 
-The MultiColumnComboBox fires different events for the different user interaction scenarios. The occurrence and order of the events are tabulated below: 
+The Multicolumn ComboBox fires different events for the different user interaction scenarios. The occurrence and order of the events are tabulated below: 
 
 
 
@@ -93,8 +93,8 @@ No</td></tr>
 
 You can refer the following topics which gives you an idea on implementing the above events.
 
-* [How to display multiple members in a MultiColumnComboBox?](/windowsforms/multicolumn-combobox/faq/how-to-display-multiple-members-in-a-multicolumncombobox)
-* [How to retrieve the columns other than Display and Value members in a MultiColumnComboBox?](/windowsforms/multicolumn-combobox/faq/how-to-retrieve-the-columns-other-than-display-and-value-members)
+* [How to display multiple members in a Multicolumn ComboBox?](/windowsforms/multicolumn-combobox/faq/how-to-display-multiple-members-in-a-multicolumncombobox)
+* [How to retrieve the columns other than Display and Value members in a Multicolumn ComboBox?](/windowsforms/multicolumn-combobox/faq/how-to-retrieve-the-columns-other-than-display-and-value-members)
 
 ## SelectedValueChanged event
 
@@ -103,7 +103,7 @@ This event is handled when the selected value is changed in the combobox. This s
 
 ### Setting text according to selection
 
-The process of accessing the selected item is a complex one. We need to access DataRowView from the control and then to get the values. Include the below code in the SelectedValueChanged event handler to set the text of MultiColumnComboBox to the text in the first column of the selected row.
+The process of accessing the selected item is a complex one. We need to access DataRowView from the control and then to get the values. Include the below code in the SelectedValueChanged event handler to set the text of Multicolumn ComboBox to the text in the first column of the selected row.
 
 {% tabs %}
 {% highlight c# %}
@@ -140,4 +140,4 @@ End Sub
 
 ## SelectedIndexChanged event
 
-This event is illustrated in [How to retrieve the columns other than Display and Value members in a MultiColumnComboBox?](/windowsforms/multicolumn-combobox/faq/how-to-retrieve-the-columns-other-than-display-and-value-members) topic.
+This event is illustrated in [How to retrieve the columns other than Display and Value members in a Multicolumn ComboBox?](/windowsforms/multicolumn-combobox/faq/how-to-retrieve-the-columns-other-than-display-and-value-members) topic.
