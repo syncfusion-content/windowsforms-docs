@@ -25,7 +25,7 @@ In this walkthrough, you will create a WinForms application that contains the Li
 Create a new Windows Forms project in Visual Studio to display the ListView with data objects.
 
 ### Adding Control via Designer
-The ListView control can be added to the application by dragging it from the toolbox and dropping it in the designer. The required assembly references will be added automatically.
+The `SfListView` control can be added to the application by dragging it from the toolbox and dropping it in the designer. The required assembly references will be added automatically.
 
 ![Drag and drop the ListView control into WF application](GettingStarted_images/GettingStarted_img1.png)
 
@@ -43,7 +43,7 @@ To add control manually, follow the steps:
     *   Syncfusion.SfListView.WinForms
 
 
-2.  Create the ListView control instance and add it to the form.   
+2.  Create the `SfListView` control instance and add it to the form.   
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -191,8 +191,8 @@ End Function
  
 ### Binding to data
 
-To bind the ListView to data, set the [SfListView.DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_DataSource) property to an `IEnumerable` implementation.
-You can bind a property of the underlying data source to display the SfListView by using the [DisplayMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_DisplayMember) property.
+To bind the ListView to data, set the [DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_DataSource) property to an `IEnumerable` implementation.
+You can bind a property of the underlying data source to display the ListView by using the [DisplayMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_DisplayMember) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -210,7 +210,7 @@ sfListView1.DisplayMember = "CountryName"
 ![Data binding in WF ListView Control](GettingStarted_images/GettingStarted_img2.png)
 
 ## Grouping
-The Windows Forms ListView (SfListView) can display its items in groups by using the [SfListView.View.GroupDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_GroupDescriptors) property. Create a [GroupDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.GroupDescriptor.html) for the property to be grouped and add it to the `View.GroupDescriptors` collection.
+The Windows Forms ListView can display its items in groups by using the [SfListView.View.GroupDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_GroupDescriptors) property. Create a [GroupDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.GroupDescriptor.html) for the property to be grouped and add it to the `View.GroupDescriptors` collection.
 
 GroupDescriptor object holds the following properties:
 
@@ -296,7 +296,7 @@ public Boolean CustomFilter(Object obj)
 ![Filtering in WF ListView Control](GettingStarted_images/GettingStarted_img5.png)
 
 ## Selection
-ListView selects an item by setting the [SfListView.SelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectionMode) property to one of `One`, `MultiSimple`, `MultiExtended`, or `None` based on the requirements. Selected item information can be tracked by using the [SfListView.SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedItem), [SfListView.SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedIndex), and [SfListView.SelectedItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedItems) properties.
+ListView selects an item by setting the [SelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectionMode) property to one of `One`, `MultiSimple`, `MultiExtended`, or `None` based on the requirements. Selected item information can be tracked by using the [SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedItem), [SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedIndex), and [SelectedItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedItems) properties.
 
 | SelectionMode | Description |
 | --- | --- |
@@ -305,7 +305,7 @@ ListView selects an item by setting the [SfListView.SelectionMode](https://help.
 | `MultiExtended` | Multiple items can be selected using Ctrl/Shift. |
 | `None` | Selection is disabled. |
 
-The selection operations can be handled with the [SelectionChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectionChanging) and [SelectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectionChanged) events of the SfListView.
+The selection operations can be handled with the [SelectionChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectionChanging) and [SelectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectionChanged) events of the ListView.
 
 {% tabs %}
 {% highlight c# %}

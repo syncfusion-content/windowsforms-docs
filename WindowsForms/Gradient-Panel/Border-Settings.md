@@ -9,12 +9,12 @@ documentation: ug
 
 # Border Settings in Windows Forms Gradient Panel
 
-[Windows Forms Gradient Panel](https://www.syncfusion.com/winforms-ui-controls/gradient-panel) can have 2D and 3D borders. The properties which sets the border style are as follows.
+Windows Forms Gradient Panel can have 2D and 3D borders. The properties which sets the border style are as follows.
 
 <table>
 <tr>
 <th>
-Gradient Panel Property</th><th>
+Gradient Panel Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -66,9 +66,9 @@ Me.gradientPanel1.BorderSides = System.Windows.Forms.Border3DSide.All
 {% endhighlight %}
 {% endtabs %}
 
- ![Windows Forms Gradient Panel Image370](GradientPanel-Images/Overview_img370.jpeg) 
+ ![Windows Forms Gradient Panel with 3D border style ](GradientPanel-Images/Overview_img370.jpeg) 
 
- ![Windows Forms Gradient Panel Image371](GradientPanel-Images/Overview_img371.jpeg) 
+ ![Windows Forms Gradient Panel with 2D border style](GradientPanel-Images/Overview_img371.jpeg) 
 
  {% seealso %}
  

@@ -15,13 +15,13 @@ To localize the ListView based on the  [CurrentUICulture](https://learn.microsof
 
 1) Create a new folder and name it as Resources in your application.
 
-2) Add the default resource file of the ListView into Resources folder.You can download the Syncfusion.SfListView.WinForms.resx [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ResourceFile1283641291).
+2) Add the default resource file of the ListView into Resources folder. You can download the `Syncfusion.SfListView.WinForms.resx` file [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ResourceFile1283641291).
 
 ![WindowsForms ListView Localization Image1](Localization_images/Localization_img1.png)
                      
 3) Right-click on the Resources folder, select Add and then NewItem.
 
-4) In Add New Item wizard, select the Resource File option and name the filename as Syncfusion.SfListView.WinForms.<culture name>.resx. For example, give name as Syncfusion.SfListView.WinForms.de-DE.resx for German culture.The culture name that indicates the name of language and country.
+4) In Add New Item wizard, select the Resource File option and name the filename as `Syncfusion.SfListView.WinForms.<culture name>.resx`. For example, give name as `Syncfusion.SfListView.WinForms.de-DE.resx` for German culture. The culture name that indicates the name of language and country.
 
 ![WindowsForms ListView Localization Image2](Localization_images/Localization_img2.png)	 
 
@@ -29,7 +29,7 @@ To localize the ListView based on the  [CurrentUICulture](https://learn.microsof
 
 ![WindowsForms ListView Localization Image3](Localization_images/Localization_img3.png)
 
-6) Add the Name/Value pair in Resource Designer of Syncfusion. SfListView.WinForms.de-DE.resx file and change its corresponding value to the corresponding culture.
+6) Add the Name/Value pair in Resource Designer of Syncfusion. `SfListView.WinForms.de-DE.resx` file and change its corresponding value to the corresponding culture.
  
  ![WindowsForms ListView Localization Image4](Localization_images/Localization_img4.png)
  
@@ -61,7 +61,7 @@ The default resource file can be download from [here](https://www.syncfusion.com
 
 ![WindowsForms ListView Localization Image6](Localization_images/Localization_img6.png)
 
-Now, change the Name and Value pair in Resource Designer of Syncfusion.SfListView.WinForms.resx file.
+Now, change the Name and Value pair in Resource Designer of `Syncfusion.SfListView.WinForms.resx` file.
 
 ![WindowsForms ListView Localization Image7](Localization_images/Localization_img7.png)
 

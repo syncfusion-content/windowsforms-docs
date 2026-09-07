@@ -62,4 +62,4 @@ Me.gradientLabel1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
- ![Windows Forms Gradient Label Image604](GradientLabel-Images/Overview_img604.jpeg)
+ ![Windows Forms Gradient Label Background settings](GradientLabel-Images/Overview_img604.jpeg)

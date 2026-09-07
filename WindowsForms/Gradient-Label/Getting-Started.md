@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Windows Forms Gradient Label
 
-This section briefly describes how to create a new Windows Forms project in Visual Studio and add the **Gradient Label** control with its basic functionalities.
+This section briefly describes how to create a new Windows Forms project in Visual Studio and add the Gradient Label control with its basic functionalities.
 
 ## Assembly deployment
 
@@ -19,7 +19,7 @@ Refer to this [documentation](https://help.syncfusion.com/windowsforms/installat
 
 ## Adding the Gradient Label control via designer
 
-The following steps describe how to create a **Gradient Label** control via designer:
+The following steps describe how to create a `GradientLabel` control via designer:
 
 1. Create a new Windows Forms application in Visual Studio.
 
@@ -36,7 +36,7 @@ The following steps describe how to create a **Gradient Label** control via desi
 
 ## Adding the Gradient Label control via code
 
-The following steps describe how to create the **Gradient Label** control programmatically:
+The following steps describe how to create the `GradientLabel` control programmatically:
 
 1. Create a C# or VB application via Visual Studio.
 

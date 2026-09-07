@@ -9,7 +9,7 @@ documentation: ug
 
 # Header and Footer in Windows Forms ListView
 
-ListView allows you to show or hide the header and footer items through the [SfListView.ShowHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_ShowHeader) and [SfListView.ShowFooter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_ShowFooter) properties. By default, the header and footer items will stick on the top and bottom of the view.
+ListView allows you to show or hide the header and footer items through the [ShowHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_ShowHeader) and [ShowFooter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_ShowFooter) properties. By default, the header and footer items will stick on the top and bottom of the view.
 
 {% tabs %}
 {% highlight c# %}
@@ -68,7 +68,7 @@ End Sub
 
 ## Header and footer height
 
-The height of the header and footer items can be changed by using the [SfListView.HeaderHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_HeaderHeight) and [SfListView.FooterHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_FooterHeight) properties respectively.
+The height of the header and footer items can be changed by using the [HeaderHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_HeaderHeight) and [FooterHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_FooterHeight) properties respectively.
 
 {% tabs %}
 {% highlight c# %}
@@ -85,7 +85,7 @@ Me.sfListView1.FooterHeight = 30
 
 ## Load custom control in header and footer
 
-ListView allows you to load custom control in the header and footer items by setting the [SfListView.HeaderControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_HeaderControl) and [SfListView.FooterControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_FooterControl) properties.
+ListView allows you to load custom control in the header and footer items by setting the [HeaderControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_HeaderControl) and [FooterControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_FooterControl) properties.
 
 In the following example, custom user control with TextBox is created and loaded in the header. The filtering will be performed for the header item control when typing the text.
 
@@ -349,7 +349,7 @@ End Class
 
 ## Header appearance customization
 
-The header item appearance can be customized by using the [SfListView.Style.HeaderItemStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.Styles.ListViewStyle.html#Syncfusion_WinForms_ListView_Styles_ListViewStyle_HeaderItemStyle) property that contains all the settings for the item appearance customizations.
+The header item appearance can be customized by using the [HeaderItemStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.Styles.ListViewStyle.html#Syncfusion_WinForms_ListView_Styles_ListViewStyle_HeaderItemStyle) property that contains all the settings for the item appearance customizations.
 
 {% tabs %}
 {% highlight c# %}
@@ -370,7 +370,7 @@ sfListView1.Style.HeaderItemStyle.Font = New Font("Segoe UI Semibold", 11)
 
 ## Footer appearance customization
 
-The footer item appearance can be customized by using the [SfListView.Style.FooterItemStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.Styles.ListViewStyle.html#Syncfusion_WinForms_ListView_Styles_ListViewStyle_FooterItemStyle) property that contains all the settings for the item appearance customizations.
+The footer item appearance can be customized by using the [FooterItemStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.Styles.ListViewStyle.html#Syncfusion_WinForms_ListView_Styles_ListViewStyle_FooterItemStyle) property that contains all the settings for the item appearance customizations.
 
 {% tabs %}
 {% highlight c# %}

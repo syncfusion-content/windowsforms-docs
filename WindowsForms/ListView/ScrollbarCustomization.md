@@ -12,7 +12,7 @@ This section explains how to customize the scrollbar visibility and behavior in 
 
 ## AutoHideScrollBars
 
-The `SfListView` allows you to automatically show or hide horizontal and vertical scrollbars using the <a href="https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_AutoHideScrollBars">AutoHideScrollBars</a> property. By default, <a href="https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_AutoHideScrollBars">AutoHideScrollBars</a> is set to true. This property manages scrollbar visibility based on content overflow.
+The ListView allows you to automatically show or hide horizontal and vertical scrollbars using the <a href="https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_AutoHideScrollBars">AutoHideScrollBars</a> property. By default, <a href="https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_AutoHideScrollBars">AutoHideScrollBars</a> is set to true. This property manages scrollbar visibility based on content overflow.
 
 {% tabs %}
 

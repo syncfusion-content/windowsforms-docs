@@ -31,7 +31,7 @@ BorderColor</td><td>
 Sets the color for the 2D border. The BorderColor will be effective only when the BorderStyle property is set to FixedSingle.</td></tr>
 </table>
 
-We can set the border sides for the Gradient Label using the BorderSides property.If BorderSides is set to 'Left', only the left border of Gradient Label will be shown.
+We can set the border sides for the Gradient Label using the BorderSides property. If BorderSides is set to 'Left', only the left border of Gradient Label will be shown.
 
 The Gradient Label replaces the default border style provided for Label classes with the Border3DStyle type in this property. This property uses the Border3DStyle enumeration.
 
@@ -55,4 +55,4 @@ Me.gradientLabel1.BorderColor = Color.Red
 {% endhighlight %}
 {% endtabs %}
 
- ![Windows Forms Gradient Label Image603](GradientLabel-Images/Overview_img603.jpeg)
+ ![Windows Forms Gradient Label Border settings](GradientLabel-Images/Overview_img603.jpeg)

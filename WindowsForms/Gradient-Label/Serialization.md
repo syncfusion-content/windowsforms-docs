@@ -72,4 +72,4 @@ End Sub
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }} 
 
- ![Windows Forms Gradient Label Image605](GradientLabel-Images/Overview_img605.jpeg) 
+ ![Serialization in Windows Forms Gradient Label](GradientLabel-Images/Overview_img605.jpeg) 

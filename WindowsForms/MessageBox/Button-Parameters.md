@@ -14,11 +14,11 @@ documentation: ug
 
 ## Caption bar text
 
-The text to display in the caption bar of the [MessageBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html).
+The text to display in the caption bar of the MessageBox.
 
 ## Text
 
-Represents the text which need to be displayed in the [MessageBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html).
+Represents the text which need to be displayed in the MessageBox.
 
 ## Buttons 
 
@@ -55,7 +55,7 @@ MessageBoxAdv.Show(Me, "Save changes?", "File Modified", MessageBoxButtons.OK, M
 
 {% endtabs %}
 
-![WindowsForms MessageBox Ok](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Ok.jpg) 
+![WindowsForms MessageBox with Ok button](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Ok.jpg) 
  
 ### Ok Cancel
 
@@ -81,7 +81,7 @@ MessageBoxAdv.Show(Me, "Save changes?", "File Modified", MessageBoxButtons.OKCan
 
 {% endtabs %}
  
- ![WindowsForms MessageBox Ok Cancel](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Ok-Cancel.jpg) 
+ ![WindowsForms MessageBox with Ok and Cancel buttons](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Ok-Cancel.jpg) 
 
 ### Yes No
 
@@ -107,7 +107,7 @@ MessageBoxAdv.Show(Me, "Save changes?", "File Modified", MessageBoxButtons.YesNo
 
 {% endtabs %} 
 
-![WindowsForms MessageBox Yes No](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Yes-No.jpg) 
+![WindowsForms MessageBox With Yes and No buttons](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Yes-No.jpg) 
 
 ### Yes No Cancel
 
@@ -133,7 +133,7 @@ MessageBoxAdv.Show(Me, "Save changes?", "File Modified", MessageBoxButtons.YesNo
 
 {% endtabs %}
 
-![WindowsForms MessageBox Yes No Cancel](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Yes-No-Cancel.jpg) 
+![WindowsForms MessageBox with Yes No Cancel buttons](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Yes-No-Cancel.jpg) 
  
 ### Retry Cancel
 
@@ -159,7 +159,7 @@ MessageBoxAdv.Show(Me, "Save changes?", "File Modified", MessageBoxButtons.Retry
 
 {% endtabs %}
 
-![WindowsForms MessageBoxAdv Retry Cancel](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Retry-Cancel.jpg) 
+![WindowsForms MessageBoxAdv with Retry and Cancel buttons](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Retry-Cancel.jpg) 
 
 ### Abort Retry Ignore
 
@@ -185,11 +185,11 @@ MessageBoxAdv.Show(Me, "Save changes?", "File Modified", MessageBoxButtons.Abort
 
 {% endtabs %}
 
-![WindowsForms MessageBoxAdv Abort Retry Ignore](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Abort-Retry-Ignore.jpg) 
+![WindowsForms MessageBoxAdv with Abort Retry Ignore buttons](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Abort-Retry-Ignore.jpg) 
 
 ## Icon 
 
-Supports to display wide variety of built-in icons and also empowered with loading custom icons. The default icons can be displayed in [MessageBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html) by using [MessageBoxIcon](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.messageboxicon?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) Enum and it is listed as follows:
+Supports to display wide variety of built-in icons and also empowered with loading custom icons. The default icons can be displayed in MessageBox by using [MessageBoxIcon](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.messageboxicon?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) Enum and it is listed as follows:
 
 * Asterisk
 * Error
@@ -251,7 +251,7 @@ MessageBoxAdv.Show(Me, "Save changes?", "Warning", MessageBoxButtons.OKCancel, i
 
 ## Right to left support
 
-[MessageBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html) elements can be aligned in right-to-left layout. It is laid out from the right to left when [RightToLeft](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html#Syncfusion_Windows_Forms_MessageBoxAdv_RightToLeft) property is set to true. Its default value is false.
+The MessageBox elements can be aligned in right-to-left layout. It is laid out from the right to left when [RightToLeft](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html#Syncfusion_Windows_Forms_MessageBoxAdv_RightToLeft) property is set to true. Its default value is false.
 
 {% tabs %}
 
@@ -277,7 +277,7 @@ MessageBoxAdv.Show(Me,"Save changes?", "File Modified", MessageBoxButtons.YesNo,
 
 ## Details view
 
-This pane helps to view the detail message about the text shown in the [MessageBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html). It also provide options to show / hide the detail pane.
+This pane helps to view the detail message about the text shown in the MessageBox. It also provide options to show / hide the detail pane.
 
 {% tabs %}
 
@@ -305,7 +305,7 @@ Eg: Collapsed view
 
 ## Resizing support
 
-[MessageBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html) allows you to adjust the size of the control at run time by dragging the gripper at bottom right. It can be achieved by using the [CanResize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html#Syncfusion_Windows_Forms_MessageBoxAdv_CanResize) property. The default value is false.
+The MessageBox allows you to adjust the size of the control at run time by dragging the gripper at bottom right. It can be achieved by using the [CanResize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html#Syncfusion_Windows_Forms_MessageBoxAdv_CanResize) property. The default value is false.
 
 {% tabs %}
 

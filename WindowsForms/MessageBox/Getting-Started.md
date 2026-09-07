@@ -28,7 +28,7 @@ You can create the Windows Forms application with MessageBox as follows:
 
 ## Creating the project
 
-Create a new Windows Forms project in the Visual Studio to display the MessageBoxAdv.
+Create a new Windows Forms project in the Visual Studio to display the `MessageBoxAdv`.
 
 ## Configure MessageBox
 
@@ -56,7 +56,7 @@ Imports Syncfusion.Windows.Forms
 
 {% endtabs %}
 
-**Step3:** Displays the `MessageBoxAdv` by using [MessageBoxAdv.Show](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html#Syncfusion_Windows_Forms_MessageBoxAdv_Show_System_String_) function.
+**Step3:** Displays the `MessageBoxAdv` by using [Show](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html#Syncfusion_Windows_Forms_MessageBoxAdv_Show_System_String_) function.
 
 {% tabs %}
 
@@ -82,7 +82,7 @@ MessageBoxAdv.Show(this,"Save changes?", "File Modified", MessageBoxButtons.YesN
 
 {% endtabs %}
 
-![MessageBox in windows forms messagebox](MessageBoxAdv_images/MessageBoxAdv_img32.png)
+![Windows Forms MessageBox](MessageBoxAdv_images/MessageBoxAdv_img32.png)
 
 ## Appearance of MessageBox
 

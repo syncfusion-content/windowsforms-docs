@@ -13,7 +13,7 @@ This section explains how to filter the data and its related operations in the L
 ## Programmatic Filtering
 The ListView supports to filter the data by setting the [SfListView.View.Filter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_Filter) property. You have to call the [SfListView.View.RefreshFilter()](//help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_RefreshFilter) method after assigning the Filter Property for refreshing the view.
 
-The [FilterChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_FilterChanged) event is raised once filtering is applied to the [SfListView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html).                                   
+The [FilterChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_FilterChanged) event is raised once filtering is applied to the ListView.                                   
 
 {% tabs %}
 {% highlight c# %}
@@ -66,7 +66,8 @@ public Boolean FilterOnMultipleCriteria (Object obj)
 
 ![ListView Filtering2](Filtering_images/Filtering_img2.png)
 
-## Getting the filtered data                                                                                         
+## Getting the filtered data
+
 You can get the filtered items from the view and modify it in the [SfListView.View.FilterChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_FilterChanged) event. When filter is applied, the filtered items are available in the [SfListView.View.DisplayItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_DisplayItems).
 
 {% tabs %}
@@ -91,8 +92,7 @@ Private Sub View_FilterChanged(ByVal sender As Object, ByVal e As NotifyCollecti
    Next item
 End Sub
 {% endhighlight %}
-{% endtabs %}
-            
+{% endtabs %}            
 ## Clear filtering
 The ListView allows clearing the filters by setting the [View.Filter](//help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~Filter.html) to null and call the [View.RefreshFilter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_RefreshFilter) method.
 
