@@ -91,5 +91,4 @@ Me.ratingControl1.ApplyGradientColors = True
 {% endhighlight %}
 
 
-
-![style](Styling_images/Styling_img2.png)
+![Custom style in Windows Forms Rating Control](Styling_images/Styling_img2.png)

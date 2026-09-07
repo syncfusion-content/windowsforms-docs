@@ -14,7 +14,6 @@ The various sections of Status Bar and their descriptions are given below.
 ![Windows Forms Status Bar overview.](overview_images/windows-forms-status-bar-overview.jpeg) 
 
 
-
 ## Status Bar control
 
 This represents the advanced StatusBar with different border and background styles.

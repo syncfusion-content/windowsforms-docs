@@ -63,7 +63,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4. Create an instance of the [Rating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html) control, and add it to the form.
+4. Create an instance of the [RatingControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html), and add it to the form.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -129,5 +129,5 @@ Me.ratingControl1.Shape = Syncfusion.Windows.Forms.Tools.Shapes.Heart
 {% endhighlight %}
 {% endtabs %}
 
-![RatingControls shapes](Getting-Started_images/rating-controls-shapes.png)
+![Windows Forms Rating Control shapes](Getting-Started_images/rating-controls-shapes.png)
 

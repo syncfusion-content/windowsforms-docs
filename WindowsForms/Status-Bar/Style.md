@@ -30,4 +30,4 @@ Me.statusBarAdv1.Style = Syncfusion.Windows.Forms.Tools.StatusbarStyle.Metro
 {% endhighlight %}
 {% endtabs %}
 
-![Overview_img77](Overview_images/Overview_img77.png) 
+![Themes support in Windows Forms Status Bar control](Overview_images/Overview_img77.png) 

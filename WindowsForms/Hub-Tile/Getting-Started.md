@@ -44,7 +44,7 @@ The Hub Tile control can be added to the application by dragging it from the too
 * Syncfusion.Tools.Base.dll
 * Syncfusion.Tools.Windows.dll
 
-![Search hubtile in tool box](Overview_images/GettingStarted-img1.png)
+![Search Hub Tile in tool box](Overview_images/GettingStarted-img1.png)
 
 ![Drag and drop the hub tile control into form](Overview_images/GettingStarted-img4.png)
 
@@ -105,11 +105,11 @@ Me.Controls.Add(hubTile1)
 
 Hub Tile control has following types of tile:
 
-HubTile [DefaultTile] – This tile provides notifications through various transition effects.
+`HubTile` [DefaultTile] – This tile provides notifications through various transition effects.
 
-RotateTile – This tile rotates itself in transition and direction.
+`RotateTile` – This tile rotates itself in transition and direction.
 
-PulsingTile – This tile zooms in and out and translates its image.
+`PulsingTile` – This tile zooms in and out and translates its image.
 
 You can customize the types of tile using [TileType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_TileType) property of Hub Tile Control.
 
@@ -138,15 +138,15 @@ Me.HubTile3.TileType = HubTileType.RotateTile
 
 **Hub Tile**
 
-![HubTile](Overview_images/default-tile.png)
+![Windows Forms Hub Tile](Overview_images/default-tile.png)
 
 **PulsingTile**
 
-![PulsingTile](Overview_images/pulsing-tile.png)
+![Windows Forms Pulsing Tile](Overview_images/pulsing-tile.png)
 
 **RotateTile**
 
-![RotateTile](Overview_images/rotate-tile.png)
+![Windows Forms Rotate Tile](Overview_images/rotate-tile.png)
 
 ## Set header and footer
 
@@ -179,7 +179,7 @@ hubTile1.BackColor = Color.FromArgb(17, 158, 218)
 {% endhighlight %}
 {% endtabs %}
 
-![Hubtile with header and footer text](Overview_images/header-footer-set.png)
+![Hub Tile with header and footer text](Overview_images/header-footer-set.png)
 
 ## Tile image
 
@@ -189,7 +189,7 @@ Background image can be added to Hub Tile through designer as well as through co
 
 Background image can be added to Hub Tile using `ImageSource` property in SmartTag.
 
-![HubTile image added by designer](Overview_images/GettingStarted-img2.png)
+![Hub Tile image added by designer](Overview_images/GettingStarted-img2.png)
 
 **Adding background image manually through code**
 
@@ -211,7 +211,7 @@ Me.hubTile1.ImageSource = ((System.Drawing.Image)(resources.GetObject("hubTile1.
 
 {% endtabs %}
 
-![HubTile image added by code](Overview_images/GettingStarted-img3.png)
+![Hub Tile image added by code](Overview_images/GettingStarted-img3.png)
 
 ## Transition effects
 

@@ -25,7 +25,7 @@ Indicates the StatusBarAdvPanel controls contained in the Status Bar.</td></tr>
 </table>
 
 
-![Overview_img70](Overview_images/Overview_img70.jpeg) 
+![Panels in Windows Forms Status Bar](Overview_images/Overview_img70.jpeg) 
 
 ## Spacing
 
@@ -58,7 +58,7 @@ Me.statusBarAdv1.Spacing = New System.Drawing.Size(5, 5)
 {% endhighlight %}
 {% endtabs %}
 
-![Overview_img71](Overview_images/Overview_img71.jpeg) 
+![Spacing in Windows Forms Status Bar](Overview_images/Overview_img71.jpeg) 
 
 ## Panel size
 
@@ -69,7 +69,7 @@ Property Table
 <table>
 <tr>
 <th>
-StatusBarAdv Property</th><th>
+Status Bar Property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -94,4 +94,4 @@ Me.statusBarAdv1.CustomLayoutBounds = New System.Drawing.Rectangle(5, 2, 100, 20
 {% endhighlight %}
 {% endtabs %}
 
-![Overview_img72](Overview_images/Overview_img72.jpeg) 
+![Panel size in Windows Forms Status Bar](Overview_images/Overview_img72.jpeg) 

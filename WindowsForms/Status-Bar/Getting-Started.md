@@ -15,12 +15,12 @@ This section will give a step-by-step procedure to design a Status Bar control t
 
 To create a Status Bar control through designer,
 
-1. Drag and drop a StatusBarAdv control from the toolbox onto the form.
+1. Drag and drop a `StatusBarAdv` control from the toolbox onto the form.
 
    ![Create Status Bar through designer in WindowsForms application](overview_images/windowsforms-status-bar-designer.jpeg) 
 
-2. Set the desired background for the Status Bar control by setting the desired values for properties that control the background in the properties window.
-3. Drag and drop controls onto the Status Bar control. Add the StatusBarAdvPanel control to it. Set the PanelType property to the desired value, for all the StatusBarAdvPanel controls.
+2. Set the desired background for the `StatusBarAdv` control by setting the desired values for properties that control the background in the properties window.
+3. Drag and drop controls onto the `StatusBarAdv` control. Add the StatusBarAdvPanel control to it. Set the PanelType property to the desired value, for all the StatusBarAdvPanel controls.
 4. Build and run the application.
 
    ![Run the application in WindowsForms-Status Bar](overview_images/windowsforms-status-bar-run-application.jpeg) 
@@ -31,11 +31,11 @@ For more details, see GitHub Issue [#14049](https://github.com/dotnet/winforms/i
    
 ## Through code
 
-To create a Status Bar control programmatically,
+To create a `StatusBarAdv` control programmatically,
 
 1. Open a new Visual C# or VB.NET application in Visual Studio .NET.
 2. Add the Syncfusion.Shared.Base and Syncfusion.Tools.Windows assemblies to your application.
-3. Declare the StatusBarAdv and StatusBarAdvPanel controls.
+3. Declare the `StatusBarAdv` and StatusBarAdvPanel controls.
 
 {% capture codesnippet1 %}​
 {% tabs %}
@@ -137,4 +137,4 @@ Me.Controls.Add(Me.statusBarAdv1)
 {{ codesnippet3 | OrderList_Indent_Level_1 }}  
 6. Run the application. You will see the Status Bar control docked to the bottom of the form. By default it will be docked to 'Bottom'.
 
-   ![Create Status Bar Through Code](Overview_images/Overview_img62.jpeg) 
+![Windows Forms Status Bar control](Overview_images/Overview_img62.jpeg) 

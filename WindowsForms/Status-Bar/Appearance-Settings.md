@@ -42,7 +42,7 @@ Property Table
 <table>
 <tr>
 <th>
-Status Bar Property</th><th>
+Status Bar Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -155,4 +155,4 @@ Me.statusBarAdv1.SizingGrip = True
 
 SizingGrip property when set will display a grip at the bottom right of the control as displayed in the below image.
 
-![Overview_img66](Overview_images/Overview_img66.jpeg) 
+![Sizing grip in Windows Forms Status Bar](Overview_images/Overview_img66.jpeg) 

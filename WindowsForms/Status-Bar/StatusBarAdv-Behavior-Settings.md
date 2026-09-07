@@ -20,7 +20,7 @@ Property Table
 <table>
 <tr>
 <td>
-Status Bar Property</td><td>
+Status Bar Properties</td><td>
 Description</td></tr>
 <tr>
 <td>

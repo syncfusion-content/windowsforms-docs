@@ -10,7 +10,7 @@ documentation: ug
 
 This Tile type resembles the Music and Video Hub Tile in Windows Phone. The image content of Hub Tile can be zoomed in and out randomly.
 
-![PulsingTile](Concept-and-Features_images/Concept-and-Features_img3.png)
+![Windows Forms Pulsing Tile](Concept-and-Features_images/Concept-and-Features_img3.png)
 
 
 {% tabs %}

@@ -18,7 +18,7 @@ Property Table
 <table>
 <tr>
 <th>
-Status Bar Property</th><th>
+Status Bar Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -66,6 +66,6 @@ Me.statusBarAdv1.BorderSides = System.Windows.Forms.Border3DSide.All
 {% endhighlight %}
 {% endtabs %}
 
-![Overview_img68](Overview_images/Overview_img68.jpeg)
+![Border settings in Windows Forms Status Bar](Overview_images/Overview_img68.jpeg)
 
 N> The border of the StatusBarAdvPanels can also be set to enhance the look and feel of the panels. See Border Settings topic under StatusBarAdvPanel.

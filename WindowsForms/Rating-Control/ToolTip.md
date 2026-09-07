@@ -11,7 +11,7 @@ documentation: ug
 
 By enabling [ShowTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html#Syncfusion_Windows_Forms_Tools_RatingControl_ShowTooltip) property, Tooltip is set to Rating control. The Tooltip appearance can be customized at the end-user level.
 
-![ToolTip](ToolTip_images/ToolTip_img1.png)
+![ToolTip support in Windows Forms Rating Control](ToolTip_images/ToolTip_img1.png)
 
 {% tabs %}
 {% highlight c# %}

@@ -47,7 +47,7 @@ Me.wizardControlPage1.Description = "Please enter your Details:"
 
 ### Accessing wizard pages
 
-We can also access the properties of a Wizard Page using SelectedWizardPage property of the WizardControl in the Designer.
+We can also access the properties of a Wizard Page using SelectedWizardPage property of the `WizardControl` in the Designer.
 
 * [SelectedWizardPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_SelectedWizardPage)
 * [WizardPage.LayoutName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardPage.html#Syncfusion_Windows_Forms_Tools_WizardPage_LayoutName)
@@ -96,7 +96,7 @@ By default, the Wizard Control will use the order in which the pages are added t
 
 
 
-* The WizardControlPage has the [NextPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardPage.html#Syncfusion_Windows_Forms_Tools_WizardPage_NextPage) and [PreviousPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardPage.html#Syncfusion_Windows_Forms_Tools_WizardPage_PreviousPage) properties with which you can specify the order of page selection. Users may set these properties in the designer for all the pages. If set, the WizardControl will use that as a cue to determine the new page to be selected at run time.
+* The WizardControlPage has the [NextPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardPage.html#Syncfusion_Windows_Forms_Tools_WizardPage_NextPage) and [PreviousPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardPage.html#Syncfusion_Windows_Forms_Tools_WizardPage_PreviousPage) properties with which you can specify the order of page selection. Users may set these properties in the designer for all the pages. If set, the Wizard Control will use that as a cue to determine the new page to be selected at run time.
 
 {% tabs %}
 
