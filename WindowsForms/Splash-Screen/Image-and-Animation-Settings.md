@@ -1,13 +1,13 @@
 ---
 layout: post
-title: WinForms SplashControl Image and Animation Settings | Syncfusion®
-description: Image and animation settings in Windows Forms SplashControl enable customization of splash images and animation effects for engaging.
+title: WinForms Splash Screen Image and Animation Settings | Syncfusion®
+description: Image and animation settings in Windows Forms Splash Screen enable customization of splash images and animation effects for engaging.
 platform: WindowsForms
-control: SplashControl
+control: Splash Screen
 documentation: ug
 ---
 
-# Image and Animation Settings in Windows Forms SplashControl
+# Image and Animation Settings in Windows Forms Splash Screen
 
 This section demonstrates how to set a splash image and how to display it with animation.
 
