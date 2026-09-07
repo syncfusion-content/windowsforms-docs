@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Data Binding in Windows Forms SfListView | Syncfusion®
-description: Data binding in Windows Forms SfListView enables seamless connection to data sources, allowing efficient display, management, and updates of list data.
+title: Data Binding in Windows Forms ListView | Syncfusion®
+description: Data binding in Windows Forms ListView enables seamless connection to data sources, allowing efficient display, management, and updates of list data.
 platform: windowsforms
-control: SfListView
+control: ListView
 documentation: ug
 ---
 
-# Data Binding in Windows Forms SfListView
-The data source can be bound by using the [SfListView.DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_DataSource) property. The following members controls data binding:
+# Data Binding in Windows Forms ListView
+The data source can be bound by using the [DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_DataSource) property. The following members controls data binding:
 
-* Display Member -  A property of the underlying datasource to display for SfListView. 
+* Display Member -  A property of the underlying datasource to display for ListView. 
 * Value Member - A property to use as the actual value for the items.
 
 {% tabs %}
@@ -56,7 +56,7 @@ End Sub
 
 ### SourceCollectionChanged
 
-The [SourceCollectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_SourceCollectionChanged) event is raised when the source collection is changed, for example, add or remove the collection. The event receives two arguments namely, sender that handles `SfListView.View` object and `NotifyCollectionChangedEventArgs` as object.
+The [SourceCollectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_SourceCollectionChanged) event is raised when the source collection is changed, for example, add or remove the collection. The event receives two arguments namely, sender that handles `View` object and `NotifyCollectionChangedEventArgs` as object.
 
 NotifyCollectionChangedEventArgs has the following properties,
 

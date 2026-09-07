@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events in Windows Forms SplashControl | Syncfusion®
-description: Events in Windows Forms SplashControl allow handling lifecycle actions and user interactions to customize behavior.
+title: Events in Windows Forms Splash Screen | Syncfusion®
+description: Events in Windows Forms Splash Screen allow handling lifecycle actions and user interactions to customize behavior.
 platform: WindowsForms
-control: SplashControl
+control: Splash Screen
 documentation: ug
 ---
 
-# Events in Windows Forms SplashControl
+# Events in Windows Forms Splash Screen
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
@@ -29,7 +29,7 @@ This event is raised after the splash screen is displayed.</td></tr>
 <tr>
 <td>
 SplashClosing</td><td>
-This event is raised before the SplashControl is closed.</td></tr>
+This event is raised before the Splash Screen is closed.</td></tr>
 <tr>
 <td>
 SplashClosed</td><td>
@@ -39,7 +39,7 @@ This event is raised when the splash window is closed.</td></tr>
 
 Follow the below steps and use the corresponding events to get the results.
 
-1. Create a SplashControl and a TextBox in a form.
+1. Create a `SplashControl` and a TextBox in a form.
 2. Set the textbox properties and add the textbox to the form as given below.
 
 {% tabs %}
@@ -96,7 +96,7 @@ Me.Controls.Add(this.textBox1);
 
 ## BeforeSplash event
 
-You can handle the BeforeSplash event to process any code just before the splash screen is displayed. For example in the below code, the event logs are recorded and displayed in the textbox.
+You can handle the `BeforeSplash event` to process any code just before the splash screen is displayed. For example in the below code, the event logs are recorded and displayed in the textbox.
 
 ### Event data
 
@@ -166,7 +166,7 @@ Me.splashPanel1.BeforeSplashNotify()
 
 ## SplashDisplayed event
 
-The SplashDisplayed event is raised after the splash screen is displayed on the screen. For example in the below code, the event logs are recorded and displayed in a textbox.
+The `SplashDisplayed` event is raised after the splash screen is displayed on the screen. For example in the below code, the event logs are recorded and displayed in a textbox.
 
 {% tabs %}
 {% highlight c# %}
@@ -213,7 +213,7 @@ Me.splashPanel1.SplashDisplayedNotify()
 
 ## SplashClosing event
 
-The SplashClosing event is raised when the splash screen is closing. For example in the below code, the event logs are recorded and displayed in a textbox.
+The `SplashClosing` event is raised when the splash screen is closing. For example in the below code, the event logs are recorded and displayed in a textbox.
 
 {% tabs %}
 {% highlight c# %}
@@ -260,7 +260,7 @@ Me.splashControl1.SplashClosingNotify()
 
 ## SplashClosed event
 
-The SplashClosed event is raised after the splash screen is closed. For example in the below code, the event logs are recorded and displayed in a textbox.
+The `SplashClosed` event is raised after the splash screen is closed. For example in the below code, the event logs are recorded and displayed in a textbox.
 
 {% tabs %}
 {% highlight c# %}
