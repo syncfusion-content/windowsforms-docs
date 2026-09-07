@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Key Support in Windows Forms NumericUpDownExt | Syncfusion®
-description: Key support in Windows Forms NumericUpDownExt enables keyboard-based value entry and custom key actions, simplifying input of large numeric values.
+title: Key Support in Windows Forms NumericUpdown | Syncfusion®
+description: Key support in Windows Forms NumericUpdown enables keyboard-based value entry and custom key actions, simplifying input of large numeric values.
 platform: WindowsForms
-control: NumericUpDownExt
+control: NumericUpdown
 documentation: ug
 ---
 
-# Key Support in Windows Forms NumericUpDownExt
+# Key Support in Windows Forms NumericUpdown
 
 Sometimes there may occur some situations for entering large values, like in Mega, Kilo etc. In such situations if you add some sort of keyboard support, it will be very much useful for the you.
 

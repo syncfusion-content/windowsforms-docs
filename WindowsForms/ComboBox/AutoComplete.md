@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Auto Complete in Windows Forms SfComboBox | Syncfusion®
-description: Auto complete in Windows Forms SfComboBox provides suggestion, append, and filtering modes with configurable matching for faster item selection.
+title: Auto Complete in Windows Forms ComboBox | Syncfusion®
+description: Auto complete in Windows Forms ComboBox provides suggestion, append, and filtering modes with configurable matching for faster item selection.
 platform: windowsforms
-control: SfComboBox
+control: ComboBox
 documentation: ug
 ---
 
-# Auto Complete in Windows Forms SfComboBox
+# Auto Complete in Windows Forms ComboBox
 
-Auto complete can be enabled by using the [SfComboBox.AutoCompleteMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_AutoCompleteMode) property. Three different ways to display the suggestions are:
+Auto complete can be enabled by using the [AutoCompleteMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_AutoCompleteMode) property. Three different ways to display the suggestions are:
 
 * Suggest: Displays suggestion in drop-down list.
 * Append: Appends the first suggestion to text.
@@ -34,7 +34,7 @@ sfComboBox1.AutoCompleteMode = AutoCompleteMode.Suggest
 
 ### Append
 
-The closest match will be added to the editor portion of the [WinForms ComboBox](https://www.syncfusion.com/winforms-ui-controls/combobox) (SfComboBox) control with partial string selection in the drop-down list. This mode can be enabled by setting the [AutoCompleteMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_AutoCompleteMode) property as `Append`.
+The closest match will be added to the editor portion of the ComboBox control with partial string selection in the drop-down list. This mode can be enabled by setting the [AutoCompleteMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_AutoCompleteMode) property as `Append`.
 
 {% tabs %}
 {% highlight c# %}
@@ -49,7 +49,7 @@ sfComboBox1.AutoCompleteMode = AutoCompleteMode.Append
 
 ### Suggest append
 
-The closest match will be added in the editor portion of the SfComboBox control with partial string selection. The list of matched items will be displayed in the drop-down list by setting the [AutoCompleteMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_AutoCompleteMode) property as `SuggestAppend`.
+The closest match will be added in the editor portion of the ComboBox control with partial string selection. The list of matched items will be displayed in the drop-down list by setting the [AutoCompleteMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_AutoCompleteMode) property as `SuggestAppend`.
 
 {% tabs %}
 {% highlight c# %}
@@ -94,7 +94,7 @@ sfComboBox1.AutoCompleteSuggestMode = AutoCompleteSuggestMode.Contains
 
 ## Setting delay for auto complete
 
-The SfComboBox provides support to set delay in milliseconds when suggesting matches on auto completion process by using the [AutoCompleteSuggestDelay](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_AutoCompleteSuggestDelay) property. The default suggest delay is 0.
+The ComboBox provides support to set delay in milliseconds when suggesting matches on auto completion process by using the [AutoCompleteSuggestDelay](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_AutoCompleteSuggestDelay) property. The default suggest delay is 0.
 
 {% tabs %}
 {% highlight c# %}

@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Border Settings in Windows Forms ProgressBarAdv | Syncfusion®
-description: Border settings in Windows Forms ProgressBarAdv control the appearance of borders, enhancing visual structure and presentation.
+title: Border Settings in Windows Forms Progress Bar | Syncfusion®
+description: Border settings in Windows Forms Progress Bar control the appearance of borders, enhancing visual structure and presentation.
 platform: WindowsForms
-control: ProgressBarAdv
+control: Progress Bar
 documentation: ug
 ---
 
-# Border Settings in Windows Forms ProgressBarAdv
+# Border Settings in Windows Forms Progress Bar
 
-This section discusses the border settings of the ProgressBarAdv control.
+This section discusses the border settings of the Progress Bar control.
 
 Property table
 
 <table>
 <tr>
 <th>
-ProgressBarAdv property</th><th>
+Progress Bar properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -64,6 +64,6 @@ Me.progressBarAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 {% endtabs %}
 
-![Overview_img23](Overview_images/Overview_img23.jpeg)
+![Border settings in Windows Forms Progress Bar control](Overview_images/Overview_img23.jpeg)
 
 

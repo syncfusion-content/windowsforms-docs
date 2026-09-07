@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Localization in Windows Forms SfComboBox | Syncfusion®
-description: Localization support in Windows Forms SfComboBox enables adapting text, messages, and user interface elements to different languages and regional settings.
+title: Localization in Windows Forms ComboBox | Syncfusion®
+description: Localization support in Windows Forms ComboBox enables adapting text, messages, and user interface elements to different languages and regional settings.
 platform: windowsforms
-control: SfComboBox
+control: ComboBox
 documentation: ug
 ---
 
-# Localization in Windows Forms SfComboBox
+# Localization in Windows Forms ComboBox
 
-Localization is a process of translating the application resources into different languages for some specific cultures. The SfComboBox can be localized by adding the `resource` file. Application culture can be changed by setting the `CurrentUICulture` before `InitializeComponent` method.
+Localization is a process of translating the application resources into different languages for some specific cultures. The ComboBox can be localized by adding the `resource` file. Application culture can be changed by setting the `CurrentUICulture` before `InitializeComponent` method.
 
 ## Localize at sample level
 
-To localize the SfComboBox based on the `CurrentUICulture` by using the resource files, follow the steps:
+To localize the ComboBox based on the `CurrentUICulture` by using the resource files, follow the steps:
 
 1. Create a new folder and name it as Resources in your application.
 2. Add the default resource file of the SfListView into Resources folder. You can download the `Syncfusion.   SfListView.WinForms.resx` [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ResourceFile1283641291).
@@ -54,7 +54,7 @@ End Sub
 
 ## Editing default resource file
 
-The default resource file can be edited by adding it to the Resources folder of the application where SfComboBox reads the static texts here. The default resource file can be downloaded [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ResourceFile1283641291).
+The default resource file can be edited by adding it to the Resources folder of the application where ComboBox reads the static texts here. The default resource file can be downloaded [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ResourceFile1283641291).
 
 ![Default resource file](Localization_images/Localization_img6.png)
 
@@ -96,7 +96,7 @@ End Sub
 
 ## Right to left 
 
-The SfComboBox control elements can be aligned in right-to-left layout. The control can be laid out from right to left when the `RightToLeft` property is set to `Yes`.
+The ComboBox control elements can be aligned in right-to-left layout. The control can be laid out from right to left when the `RightToLeft` property is set to `Yes`.
 
 {% tabs %}
 {% highlight c# %}
@@ -107,4 +107,4 @@ sfComboBox1.RightToLeft = RightToLeft.Yes
 {% endhighlight %}
 {% endtabs %}
 
-![SfComboBox with RightToLeft alignment](Localization_images/Localization_img9.png)
+![ComboBox with RightToLeft alignment](Localization_images/Localization_img9.png)
