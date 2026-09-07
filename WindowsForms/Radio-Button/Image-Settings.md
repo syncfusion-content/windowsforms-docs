@@ -1,29 +1,29 @@
 ---
 layout: post
-title: Image Settings in Windows Forms RadioButtonAdv | Syncfusion®
-description: Image settings in Windows Forms RadioButtonAdv enable displaying custom images for checked, unchecked, and disabled states with configurable sizing.
+title: Image Settings in Windows Forms Radio Button | Syncfusion®
+description: Image settings in Windows Forms Radio Button enable displaying custom images for checked, unchecked, and disabled states with configurable sizing.
 
 platform: WindowsForms
-control: RadioButtonAdv
+control: Radio Button
 documentation: ug
 ---
 
-# Image Settings in Windows Forms RadioButtonAdv
+# Image Settings in Windows Forms Radio Button
 
-The image settings of the RadioButtonAdv control have been discussed in this section.
+The image settings of the Radio Button control have been discussed in this section.
 
-Images can be set to the RadioButtonAdv when it is in the Checked, Unchecked or Indeterminate state. The RadioButtonAdv allows us to set the following properties in order to display images.
+Images can be set to the Radio Button when it is in the Checked, Unchecked or Indeterminate state. The Radio Button allows us to set the following properties in order to display images.
 
 
 <table>
 <tr>
 <th>
-RadioButtonAdv Properties</th><th>
+Radio Button Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
 ImageCheckBox</td><td>
-Indicates whether the RadioButton will be drawn using the images provided.</td></tr>
+Indicates whether the Radio Button will be drawn using the images provided.</td></tr>
 <tr>
 <td>
 ImageCheckBoxSize</td><td>
@@ -31,19 +31,19 @@ Gets or sets the size of the ImageCheckBox.ImageCheckbox property must be set to
 <tr>
 <td>
 CheckedImage</td><td>
-Gets or sets the image used to draw the RadioButton when checked and mouse not over.</td></tr>
+Gets or sets the image used to draw the Radio Button when checked and mouse not over.</td></tr>
 <tr>
 <td>
 UncheckedImage</td><td>
-Gets or sets the image used to draw the RadioButton when unchecked and mouse not over.</td></tr>
+Gets or sets the image used to draw the Radio Button when unchecked and mouse not over.</td></tr>
 <tr>
 <td>
 DisabledImage</td><td>
-Gets or sets the image used to draw the RadioButton when disabled.</td></tr>
+Gets or sets the image used to draw the Radio Button when disabled.</td></tr>
 <tr>
 <td>
 StretchImage</td><td>
-Indicates whether the state images of the RadioButton are stretched.</td></tr>
+Indicates whether the state images of the Radio Button are stretched.</td></tr>
 </table>
 
 N> Before setting the images, make sure the ImageCheckBox property is set to 'True'.
@@ -72,26 +72,26 @@ Me.radioButtonAdv1.StretchImage = False
 {% endhighlight %}
 {% endtabs %}
 
- ![Windows forms RadioButtonAdv image displayed in control when it is in checked](Overview_images/RadioButtonAdv_checkedimage.jpeg)
+ ![Windows forms Radio Button image displayed in control when it is in checked](Overview_images/RadioButtonAdv_checkedimage.jpeg)
 
 ## Images displayed during mouse hover
 
-Images can also be set when the mouse is hovered over the RadioButtonAdv control.
+Images can also be set when the mouse is hovered over the Radio Button control.
 
 
 <table>
 <tr>
 <th>
-RadioButtonAdv Properties</th><th>
+Radio Button Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
 MouseOverCheckedImage</td><td>
-Gets or sets the image used to draw the RadioButton when checked and mouse over.</td></tr>
+Gets or sets the image used to draw the Radio Button when checked and mouse over.</td></tr>
 <tr>
 <td>
 MouseOverUncheckedImage</td><td>
-Gets or sets the image used to draw the RadioButton when unchecked and mouse over.</td></tr>
+Gets or sets the image used to draw the Radio Button when unchecked and mouse over.</td></tr>
 </table>
 
 {% tabs %}
@@ -110,4 +110,4 @@ Me.checkBoxAdv1.MouseOverUncheckedImage = (CType(Resources.GetObject("checkBoxAd
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms RadioButtonAdv image displayed in control when it is in unchecked](Overview_images/RadioButtonAdv_uncheckedimage.jpeg)
+![Windows forms Radio Button image displayed in control when it is in unchecked](Overview_images/RadioButtonAdv_uncheckedimage.jpeg)

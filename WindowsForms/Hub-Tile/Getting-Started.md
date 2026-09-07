@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Windows Forms HubTile | Syncfusion®
-description: Learn how to get started with the Syncfusion® Windows Forms HubTile control. Explore setup, features, examples, and customization options.
+title: Getting Started with Windows Forms Hub Tile | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms Hub Tile control. Explore setup, features, examples, and customization options.
 platform: windowsforms
-control: HubTile
+control: Hub Tile
 documentation: ug
 ---
 
-# Getting Started with Windows Forms HubTile
+# Getting Started with Windows Forms Hub Tile
 
 This section describes how to add `HubTile` control in a Windows Forms application and overview of its basic functionalities.
 
@@ -20,9 +20,9 @@ You can find more details about installing the NuGet packages in a Windows Forms
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
 
 
-## Create a simple application with HubTile
+## Create a simple application with Hub Tile
 
-You can create the Windows Forms application with HubTile control as follows:
+You can create the Windows Forms application with Hub Tile control as follows:
 
 1. [Creating project](#creating-the-project)
 2. [Adding control via designer](#adding-control-via-designer)
@@ -31,11 +31,11 @@ You can create the Windows Forms application with HubTile control as follows:
 
 ### Creating the project
 
-Create a new Windows Forms project in the Visual Studio to display the HubTile with transition effects.
+Create a new Windows Forms project in the Visual Studio to display the Hub Tile with transition effects.
 
 ## Add control via designer
 
-The HubTile control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+The Hub Tile control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
 * Syncfusion.Grid.Base.dll
 * Syncfusion.Grid.Windows.dll
@@ -44,7 +44,7 @@ The HubTile control can be added to the application by dragging it from the tool
 * Syncfusion.Tools.Base.dll
 * Syncfusion.Tools.Windows.dll
 
-![Search hubtile in tool box](Overview_images/GettingStarted-img1.png)
+![Search Hub Tile in tool box](Overview_images/GettingStarted-img1.png)
 
 ![Drag and drop the hub tile control into form](Overview_images/GettingStarted-img4.png)
 
@@ -103,15 +103,15 @@ Me.Controls.Add(hubTile1)
 
 ## Change tile 
 
-HubTile control has following types of tile:
+Hub Tile control has following types of tile:
 
-HubTile [DefaultTile] – This tile provides notifications through various transition effects.
+`HubTile` [DefaultTile] – This tile provides notifications through various transition effects.
 
-RotateTile – This tile rotates itself in transition and direction.
+`RotateTile` – This tile rotates itself in transition and direction.
 
-PulsingTile – This tile zooms in and out and translates its image.
+`PulsingTile` – This tile zooms in and out and translates its image.
 
-You can customize the types of tile using [TileType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_TileType) property of HubTileControl.
+You can customize the types of tile using [TileType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_TileType) property of Hub Tile Control.
 
 {% tabs %}
 {% highlight C# %}
@@ -136,21 +136,21 @@ Me.HubTile3.TileType = HubTileType.RotateTile
 {% endhighlight %}
 {% endtabs %}
 
-**HubTile**
+**Hub Tile**
 
-![HubTile](Overview_images/default-tile.png)
+![Windows Forms Hub Tile](Overview_images/default-tile.png)
 
 **PulsingTile**
 
-![PulsingTile](Overview_images/pulsing-tile.png)
+![Windows Forms Pulsing Tile](Overview_images/pulsing-tile.png)
 
 **RotateTile**
 
-![RotateTile](Overview_images/rotate-tile.png)
+![Windows Forms Rotate Tile](Overview_images/rotate-tile.png)
 
 ## Set header and footer
 
-You can define the header and footer for tile by setting the [Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_Title) and [Footer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_Footer) property of HubTile.
+You can define the header and footer for tile by setting the [Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_Title) and [Footer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_Footer) property of Hub Tile.
 
 {% tabs %}
 {% highlight C# %}
@@ -179,21 +179,21 @@ hubTile1.BackColor = Color.FromArgb(17, 158, 218)
 {% endhighlight %}
 {% endtabs %}
 
-![Hubtile with header and footer text](Overview_images/header-footer-set.png)
+![Hub Tile with header and footer text](Overview_images/header-footer-set.png)
 
 ## Tile image
 
-Background image can be added to HubTile through designer as well as through code.
+Background image can be added to Hub Tile through designer as well as through code.
 
 **Add background image through designer**
 
-Background image can be added to HubTile using `ImageSource` property in SmartTag.
+Background image can be added to Hub Tile using `ImageSource` property in SmartTag.
 
-![HubTile image added by designer](Overview_images/GettingStarted-img2.png)
+![Hub Tile image added by designer](Overview_images/GettingStarted-img2.png)
 
 **Adding background image manually through code**
 
-Background image can be added to HubTile using `ImageSource` property in HubTile class.
+Background image can be added to Hub Tile using `ImageSource` property in HubTile class.
 
 {% tabs %}
 
@@ -211,18 +211,18 @@ Me.hubTile1.ImageSource = ((System.Drawing.Image)(resources.GetObject("hubTile1.
 
 {% endtabs %}
 
-![HubTile image added by code](Overview_images/GettingStarted-img3.png)
+![Hub Tile image added by code](Overview_images/GettingStarted-img3.png)
 
 ## Transition effects
 
-In HubTile, image transition can be performed at specified intervals and in different directions. They include the following transition effects.
+In Hub Tile, image transition can be performed at specified intervals and in different directions. They include the following transition effects.
 
 *   Bottom to Top
 *	Top to Bottom
 *	Left to Right
 *	Right to Left
 
-You can customize the transition direction by setting [SlideTransition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_SlideTransition) properties of HubTile. 
+You can customize the transition direction by setting [SlideTransition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_SlideTransition) properties of Hub Tile. 
 
 {% tabs %}
 {% highlight C# %}

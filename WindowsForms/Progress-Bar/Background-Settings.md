@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Background Settings in Windows Forms ProgressBarAdv | Syncfusion®
-description: Background settings in Windows Forms ProgressBarAdv customize the appearance of the progress area to match application themes.
+title: Background Settings in Windows Forms Progress Bar | Syncfusion®
+description: Background settings in Windows Forms Progress Bar customize the appearance of the progress area to match application themes.
 platform: WindowsForms
-control: ProgressBarAdv
+control: Progress Bar
 documentation: ug
 ---
 
-# Background Settings in Windows Forms ProgressBarAdv
+# Background Settings in Windows Forms Progress Bar
 
-The ProgressBarAdv control consists of various properties to customize the background. These properties and their description are given below.
+The Progress Bar control consists of various properties to customize the background. These properties and their description are given below.
 
 ## Background style
 
@@ -20,7 +20,7 @@ Property table
 <table>
 <tr>
 <th>
-ProgressBarAdv property</th><th>
+Progress Bar property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -149,14 +149,14 @@ N> To display the above styles in different colors the BackGradientStartColor an
 
 ## Background segments
 
-The background of the ProgressBarAdv can be displayed with a segmented appearance using the property given below.
+The background of the Progress Bar can be displayed with a segmented appearance using the property given below.
 
 Property table
 
 <table>
 <tr>
 <th>
-ProgressBarAdv property</th><th>
+Progress Bar property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -184,7 +184,7 @@ Me.progressBarAdv1.BackSegments = True
 
 ## Background color settings
 
-This section illustrates the color settings that can be applied to the background of the ProgressBarAdv.
+This section illustrates the color settings that can be applied to the background of the Progress Bar.
 
 ### Gradient color
 
@@ -195,7 +195,7 @@ Property table
 <table>
 <tr>
 <th>
-ProgressBarAdv property</th><th>
+Progress Bar property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -237,7 +237,7 @@ Property table
 <table>
 <tr>
 <th>
-ProgressBarAdv property</th><th>
+Progress Bar property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -266,14 +266,14 @@ Me.progressBarAdv1.BackMultipleColors = New System.Drawing.Color[] {System.Drawi
 
 ### Tube color
 
-Colors can be set for the background tube of the ProgressBarAdv.
+Colors can be set for the background tube of the Progress Bar.
 
 Property table
 
 <table>
 <tr>
 <th>
-ProgressBarAdv property</th><th>
+Progress Bar property</th><th>
 Description</th></tr>
 <tr>
 <td>

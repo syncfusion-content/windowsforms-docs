@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Alignment Settings in Windows Forms SplashControl | Syncfusion®
-description: Alignment settings in Windows Forms SplashControl determine the positioning of splash content, ensuring clear and organized visual presentation.
+title: Alignment Settings in Windows Forms Splash Screen | Syncfusion®
+description: Alignment settings in Windows Forms Splash Screen determine the positioning of splash content, ensuring clear and organized visual presentation.
 platform: WindowsForms
-control: SplashControl
+control: Splash Screen
 documentation: ug
 ---
 
-# Alignment Settings in Windows Forms SplashControl
+# Alignment Settings in Windows Forms Splash Screen
 
-This section discusses the alignment settings available in SplashControl.
+This section discusses the alignment settings available in Splash Screen.
 
-SplashControl provides options to customize the alignment of the splash image in the desktop. The property that is related to this feature is given below.
+Splash Screen provides options to customize the alignment of the splash image in the desktop. The property that is related to this feature is given below.
 
 Property Table
 

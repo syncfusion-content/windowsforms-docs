@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance in Windows Forms SfComboBox | Syncfusion®
-description: Appearance in Windows Forms SfComboBox enables customizing editor, drop-down, and button visuals with styles, images, themes, and other visual settings.
+title: Appearance in Windows Forms ComboBox | Syncfusion®
+description: Appearance in Windows Forms ComboBox enables customizing editor, drop-down, and button visuals with styles, images, themes, and other visual settings.
 platform: windowsforms
-control: SfComboBox
+control: ComboBox
 documentation: ug
 ---
 
-# Appearance in Windows Forms SfComboBox
+# Appearance in Windows Forms ComboBox
 
 ## Customizing editor appearance
 
@@ -171,23 +171,23 @@ End Sub
 
 ## Themes
 
-Four built-in themes for professional representation of SfComboBox are as follows:
+Four built-in themes for professional representation of ComboBox are as follows:
 
 * Office2016Colorful
 * Office2016White
 * Office2016DarkGray
 * Office2016Black
 
-Themes can be applied to the SfComboBox by using the following steps:
+Themes can be applied to the ComboBox by using the following steps:
 
 1.	Loading theme assembly
 2.	Apply theme
 
 ### Loading theme assembly
 
-The Syncfusion.Office2016Theme.WinForms assembly should be added as a reference to set theme for the SfComboBox in any application.
+The Syncfusion.Office2016Theme.WinForms assembly should be added as a reference to set theme for the ComboBox in any application.
 
-Before applying theme to the SfComboBox, required theme assembly should be loaded.
+Before applying theme to the ComboBox, required theme assembly should be loaded.
 
 {% tabs %}
 {% highlight c# %}
@@ -233,7 +233,7 @@ End Namespace
 
 ### Apply theme
 
-Appearance of the SfComboBox can be changed by using the `ThemeName` property.
+Appearance of the ComboBox can be changed by using the `ThemeName` property.
 
 #### Office2016Colorful
 
