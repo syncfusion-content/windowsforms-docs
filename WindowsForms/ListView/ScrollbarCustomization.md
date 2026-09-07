@@ -12,7 +12,7 @@ This section explains how to customize the scrollbar visibility and behavior in 
 
 ## AutoHideScrollBars
 
-The ListView allows you to automatically show or hide horizontal and vertical scrollbars using the <a href="https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_AutoHideScrollBars">AutoHideScrollBars</a> property. By default, <a href="https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_AutoHideScrollBars">AutoHideScrollBars</a> is set to true. This property manages scrollbar visibility based on content overflow.
+The ListView allows you to automatically show or hide horizontal and vertical scrollbars using the [AutoHideScrollBars](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_AutoHideScrollBars) property. By default, [AutoHideScrollBars](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_AutoHideScrollBars) is set to true. This property manages scrollbar visibility based on content overflow.
 
 {% tabs %}
 
@@ -60,11 +60,11 @@ The ListView allows you to automatically show or hide horizontal and vertical sc
 
 ### HorizontalScrollBarVisible 
 
-The `HorizontalScrollBarVisible` property is used to show or hide the horizontal scrollbar. When <a href="https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_AutoHideScrollBars">AutoHideScrollBars</a> is set to false, the visibility of the horizontal scrollbar will depend on the value of HorizontalScrollBarVisible.
+The `HorizontalScrollBarVisible` property is used to show or hide the horizontal scrollbar. When [AutoHideScrollBars](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_AutoHideScrollBars) is set to false, the visibility of the horizontal scrollbar will depend on the value of HorizontalScrollBarVisible.
 
 ### VerticalScrollBarVisible
 
-The `VerticalScrollBarVisible` property is used to show or hide the horizontal scrollbar. When <a href="https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_AutoHideScrollBars">AutoHideScrollBars</a> is set to false, the visibility of the vertical scrollbar will depend on the value of VerticalScrollBarVisible.
+The `VerticalScrollBarVisible` property is used to show or hide the horizontal scrollbar. When [AutoHideScrollBars](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_AutoHideScrollBars) is set to false, the visibility of the vertical scrollbar will depend on the value of VerticalScrollBarVisible.
 
 {% tabs %}
 
@@ -96,7 +96,7 @@ The `HorizontalScrollIncrement` property allows you to set the multiplier for mo
 
 ### VerticalScrollIncrement
 
-The <a href="https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_VerticalScrollIncrement">VerticalScrollIncrement</a> property allows you to set the multiplier for mouse wheel scrolling during vertical scrolling. Users can customize the increment value for each scroll step of the mouse wheel.
+The [VerticalScrollIncrement](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_VerticalScrollIncrement) property allows you to set the multiplier for mouse wheel scrolling during vertical scrolling. Users can customize the increment value for each scroll step of the mouse wheel.
 
 {% tabs %}
 
