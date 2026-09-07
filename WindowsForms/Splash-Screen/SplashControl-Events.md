@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events in Windows Forms SplashControl | Syncfusion®
-description: Events in Windows Forms SplashControl allow handling lifecycle actions and user interactions to customize behavior.
+title: Events in Windows Forms Splash Screen | Syncfusion®
+description: Events in Windows Forms Splash Screen allow handling lifecycle actions and user interactions to customize behavior.
 platform: WindowsForms
-control: SplashControl
+control: Splash Screen
 documentation: ug
 ---
 
-# Events in Windows Forms SplashControl
+# Events in Windows Forms Splash Screen
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
@@ -29,7 +29,7 @@ This event is raised after the splash screen is displayed.</td></tr>
 <tr>
 <td>
 SplashClosing</td><td>
-This event is raised before the SplashControl is closed.</td></tr>
+This event is raised before the Splash Screen is closed.</td></tr>
 <tr>
 <td>
 SplashClosed</td><td>

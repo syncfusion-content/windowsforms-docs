@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Windows Forms SplashControl | Syncfusion®
-description: Learn how to get started with the Syncfusion® Windows Forms SplashControl. Explore setup, features, examples, and customization options.
+title: Getting Started with Windows Forms Splash Screen | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms Splash Screen. Explore setup, features, examples, and customization options.
 platform: WindowsForms
-control: SplashControl
+control: Splash Screen
 documentation: ug
 ---
 
-# Getting Started with Windows Forms SplashControl
+# Getting Started with Windows Forms Splash Screen
 
 This section explains how to add the `SplashControl` in a Windows Forms application and overview of its basic functionalities.
 
@@ -25,7 +25,7 @@ Create a new Windows Forms project in Visual Studio to display the `SplashContro
 
 The `SplashControl` provides full support for the Windows Forms designer.
 
-**Step 1**: Drag and drop the SplashControl from the toolbox onto the form. The SplashControl will be created in the components area of the form. The following required assembly reference will be added automatically.
+**Step 1**: Drag and drop the SplashControl from the toolbox onto the form. The Splash Screen will be created in the components area of the form. The following required assembly reference will be added automatically.
 
          * Syncfusion.Shared.Base.dll
          * Syncfusion.Tools.Windows.dll
@@ -34,7 +34,7 @@ The `SplashControl` provides full support for the Windows Forms designer.
 
 **Step 2**: Set the SplashImage and the TimerInterval properties through the property grid.
 
-**Step 3**: Set the AutoMode property. This property controls how the SplashControl will be invoked. If the AutoMode property is set to 'True', the SplashControl will automatically launch itself during the parent form's load event.
+**Step 3**: Set the AutoMode property. This property controls how the Splash Screen will be invoked. If the AutoMode property is set to 'True', the Splash Screen will automatically launch itself during the parent form's load event.
 
 **Step 4**: The SplashPanel can also be viewed at design time using the Preview Splash option by clicking the smart tag as shown below.
 
