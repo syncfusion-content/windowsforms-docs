@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Alignment Settings in Windows Forms StatusBarAdv | Syncfusion®
-description: Alignment settings in Windows Forms StatusBarAdv control the positioning of panels and child controls for a clear and organized status bar display.
+title: Alignment Settings in Windows Forms Status Bar | Syncfusion®
+description: Alignment settings in Windows Forms Status Bar control the positioning of panels and child controls for a clear and organized status bar display.
 platform: WindowsForms
-control: StatusBarAdv
+control: Status Bar
 documentation: ug
 ---
 
-# Alignment Settings in Windows Forms StatusBarAdv
+# Alignment Settings in Windows Forms Status Bar
 
-The panels and child controls that are added to the StatusBarAdv control can be aligned according to the needs of the user using the property given below.
+The panels and child controls that are added to the Status Bar control can be aligned according to the needs of the user using the property given below.
 
 Property Table
 
 <table>
 <tr>
 <th>
-StatusBarAdv Property</th><th>
+Status Bar Property</th><th>
 Description</th></tr>
 <tr>
 <td>

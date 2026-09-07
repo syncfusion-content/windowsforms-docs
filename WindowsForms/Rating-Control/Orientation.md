@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Orientation in Windows Forms Rating | Syncfusion®
-description: Orientation support in Windows Forms Rating enables displaying rating items horizontally or vertically to suit different layout requirements.
+title: Orientation in Windows Forms Rating Control | Syncfusion®
+description: Orientation support in Windows Forms Rating Control enables displaying rating items horizontally or vertically to suit different layout requirements.
 platform: WindowsForms
-control: Rating  
+control: Rating Control
 documentation: ug
 ---
 
-# Orientation in Windows Forms Rating
+# Orientation in Windows Forms Rating Control
 
 Control rendering can be done either in a vertical or in a horizontal position using the [Orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html#Syncfusion_Windows_Forms_Tools_RatingControl_Orientation) property. 
 

@@ -1,15 +1,15 @@
 ---
 layout: post
 title: About Syncfusion® Windows Forms Rating Control | Syncfusion®
-description: Learn about the introduction of Syncfusion® Windows Forms Rating, including its essential features, customization options, and capabilities.
+description: Learn about the introduction of Syncfusion® Windows Forms Rating Control, including its essential features, customization options, and capabilities.
 platform: WindowsForms
-control: Rating  
+control: Rating Control
 documentation: ug
 ---
 
 # About Syncfusion® Windows Forms Rating Control
 
-The [Rating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html) control for Windows Forms provides an intuitive rating experience that allows the end users to select a number of stars that represent a rating. Rating control allows users to rate items based on a specified list of options.
+The Rating control for Windows Forms provides an intuitive rating experience that allows the end users to select a number of stars that represent a rating. Rating control allows users to rate items based on a specified list of options.
 
 ![Overview of the Rating Control](Overview_images/Overview_img1.png)
 
