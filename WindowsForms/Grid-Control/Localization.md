@@ -9,11 +9,11 @@ documentation: ug
 
 # Localization in Windows Forms Grid Control
 
-Localization support allows to set the content according to the language or culture of a specific country or region. 
+Localization support in WinForms Grid Control allows to set the content according to the language or culture of a specific country or region. 
 
 ## ILocalization Interface
 
-To localize the content, create a class file and inherit [ILocalizationProvider](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ILocalizationProvider.html) interface to the class. This interface consists of a method [GetLocalizedString](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ILocalizationProvider.html#Syncfusion_Windows_Forms_ILocalizationProvider_GetLocalizedString_System_Globalization_CultureInfo_System_String_System_Object_) which gets the string and localize it. The enum property [GridResourceIdentifiers](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridResourceIdentifiers.html) and [ResourceIdentifiers](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ResourceIdentifiers.html) contains the resource identifiers specific to the GridControl.
+To localize the content, create a class file and inherit [ILocalizationProvider](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ILocalizationProvider.html) interface to the class. This interface consists of a method [GetLocalizedString](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ILocalizationProvider.html#Syncfusion_Windows_Forms_ILocalizationProvider_GetLocalizedString_System_Globalization_CultureInfo_System_String_System_Object_) which gets the string and localize it. The enum property [GridResourceIdentifiers](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridResourceIdentifiers.html) and [ResourceIdentifiers](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ResourceIdentifiers.html) contains the resource identifiers specific to Grid Control.
 The following code will explain how to localize the **Alert Error MessageBox** which will be displayed at the time of cell content validation,
 
 {% tabs %}
@@ -72,7 +72,7 @@ LocalizationProvider.Provider = New Localizer()
 {% endhighlight %}
 {% endtabs %}
 
-Only strings that are been used in GridControl can be localized; other text which are assigned by user (by other methods) needs to be set manually. So, to assign the custom error text for the current cell, make use of the [SetError](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCurrentCell.html#Syncfusion_Windows_Forms_Grid_GridCurrentCell_SetError_System_String_) method in the [CurrentCellValidating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html) event.
+Only strings that are been used in Grid Control can be localized; other text which are assigned by user (by other methods) needs to be set manually. So, to assign the custom error text for the current cell, make use of the [SetError](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCurrentCell.html#Syncfusion_Windows_Forms_Grid_GridCurrentCell_SetError_System_String_) method in the [CurrentCellValidating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html) event.
 
 {% tabs %}
 {% highlight c# %}

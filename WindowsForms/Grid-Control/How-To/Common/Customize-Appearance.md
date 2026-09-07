@@ -15,25 +15,25 @@ Essential Grid provides support to display horizontal and vertical lines and cus
 
 You can display horizontal lined using DisplayHorizontalLines property. 
 
-The following code illustrates how to display horizontal lines in GridControl: 
+The following code illustrates how to display horizontal lines in Grid Control: 
 
 {% tabs %}
 {% highlight c# %}
 
-//The following code illustrates how to customize grid line color in GridControl.
+//The following code illustrates how to customize grid line color in Grid Control.
 gridControl1.DisplayHorizontalLines = true;
 
 //The following code illustrates how to display horizontal lines in GridDataBoundGrid.
 gridDataBoundGrid.DisplayHorizontalLines = true;
 
-//The following code illustrates how to display horizontal lines in GridGrouping control.
+//The following code illustrates how to display horizontal lines in GridGroupingControl.
 gridGroupingControl1.DisplayHorizontalLines = true;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-'The following code illustrates how to customize grid line color in GridControl.
+'The following code illustrates how to customize grid line color in Grid Control.
 gridControl1.DisplayHorizontalLines = True
 
 'The following code illustrates how to display horizontal lines in GridDataBoundGrid. 
@@ -49,12 +49,12 @@ gridGroupingControl1.DisplayHorizontalLines = True
 
 You can display vertical lined using the DisplayVerticalLines__property. 
 
-The following code illustrates how to display vertical lines in GridControl: 
+The following code illustrates how to display vertical lines in Grid Control: 
 
 {% tabs %}
 {% highlight c# %}
 
-//The following code illustrates how to customize grid line color in GridControl:
+//The following code illustrates how to customize grid line color in Grid Control:
 gridControl1.DisplayVerticalLines = true;
 
 //The following code illustrates how to display vertical lines in GridDataBoundGrid: 
@@ -67,7 +67,7 @@ gridGroupingControl1.DisplayVerticalLines = true;
 
 {% highlight vb %}
 
-'The following code illustrates how to customize grid line color in GridControl.
+'The following code illustrates how to customize grid line color in Grid Control.
 gridControl1.DisplayVerticalLines = True
 
 'The following code illustrates how to display vertical lines in GridDataBoundGrid.
@@ -83,12 +83,12 @@ gridGroupingControl1.DisplayVerticalLines = True
 
 You can customize grid line color using _GridLineColor_ property. 
 
-The following code demonstrates how to customize the color of grid lines in the GridControl.
+The following code demonstrates how to customize the color of grid lines in the Grid Control.
 
 {% tabs %}
 {% highlight c# %}
 
-//The following code illustrates how to customize grid line color in GridControl:
+//The following code illustrates how to customize grid line color in Grid Control:
 gridControl1.GridLineColor = Color.Red;
 
 //The following code illustrates how to customize grid line color in GridDataBoundGrid: 
@@ -101,13 +101,13 @@ gridGroupingControl1.GridLineColor = Color.Red;
 
 {% highlight vb %}
 
-'The following code illustrates how to customize grid line color in GridControl.
+'The following code illustrates how to customize grid line color in Grid Control.
 gridControl1.GridLineColor = Color.Red
 
 'The following code illustrates how to customize grid line color in GridDataBoundGrid.
 gridDataBoundGrid.GridLineColor = Color.Red
 
-'The following code illustrates how to customize grid line color in GridGrouping control.
+'The following code illustrates how to customize grid line color in GridGroupingControl.
 gridGroupingControl1.GridLineColor = Color.Red
 
 {% endhighlight %}

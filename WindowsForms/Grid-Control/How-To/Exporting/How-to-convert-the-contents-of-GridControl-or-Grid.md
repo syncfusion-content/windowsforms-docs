@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Convert Grid Content to Excel in Windows Forms Grid Control
 
-The Contents of GridControl and GridDataBoundGrid can be transferred to Excel by using GridToExcel method of GridExcelConverter class. Here is the code snippet.
+The Contents of Grid Control and GridDataBoundGrid can be transferred to Excel by using GridToExcel method of GridExcelConverter class. Here is the code snippet.
 
 {% tabs %}
 {% highlight c# %}

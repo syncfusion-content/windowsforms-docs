@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Style a Header Cell in Windows Forms Grid Control
 
-To make changes to individual cells (header cells or otherwise), use an indexer on GridControl. In a GridControl with default headers, column headers are row zero and row headers are column zero. Given below is the code that will change a column header.
+To make changes to individual cells (header cells or otherwise), use an indexer on Grid Control. With default headers, column headers are row zero and row headers are column zero. Given below is the code that will change a column header.
 
 {% tabs %}
 {% highlight c# %}

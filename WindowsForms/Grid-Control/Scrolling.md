@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Scrolling in Windows Forms Grid Control
-GridControl has provide the built in support for scrolling. This section will explain about types of scrolling and different types of scrollbars available for GridControl.
+WinForms Grid Control has provide the built in support for scrolling. This section will explain about types of scrolling and different types of scrollbars available for the control.
 
 ## Enable Auto Scrolling 
 The auto scrolling can be enabled or disabled for both horizontal and vertical scrollbars by setting the [AutoScrolling](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ScrollControl.html#Syncfusion_Windows_Forms_ScrollControl_AutoScrolling) property to `ScrollBars.Both`. This can also enabled separately for horizontal and vertical scrollbars.
@@ -41,9 +41,9 @@ Me.gridControl1.HScrollPixel = True
 N> In normal scrolling, the hidden rows and columns are considered as existing rows and columns. So that it will takes a long time to scroll the multiple hidden rows/column. Whereas the pixel scrolling will excludes the hidden rows and columns while scrolling the grid and also improve the performance.
 
 ### Optimized Pixel Scrolling
-The pixel scrolling is not optimized for large row scenarios. To optimize the pixel scrolling set create the derived GridControl and override a couple of virtual methods to make it perform well. Also use the binary tree structures to quickly get the row index for an absolute pixel position and vice versa.
+The pixel scrolling is not optimized for large row scenarios. To optimize the pixel scrolling set create the derived Grid Control and override a couple of virtual methods to make it perform well. Also use the binary tree structures to quickly get the row index for an absolute pixel position and vice versa.
 
-1. The following methods are need to be override in the derived GridControl for Optimized Vertical scrolling,
+1. The following methods are need to be override in the derived Grid Control for Optimized Vertical scrolling,
 
 * [RowIndexToVScrollPixelPos](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableControl_RowIndexToVScrollPixelPos_System_Int32_)(int rowIndex)
 * [VScrollPixelPosToRowIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableControl_VScrollPixelPosToRowIndex_System_Int32_System_Int32__System_Int32__)(int pixelPos, out int rowIndex, out int pixelDelta)
@@ -128,16 +128,16 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-2. Assign the New custom control to the GridControl.
+2. Assign the New custom control to the Grid Control.
 
 {% capture codesnippet1 %}​
 {% tabs %}
 {% highlight c# %}
-//Sets the derived GridControl to the grid.
+//Sets the derived Grid Control to the grid.
 this.gridControl1 = new VerticalScrollOptimization.DerivedGridControl();
 {% endhighlight %}
 {% highlight vb %}
-'Sets the derived GridControl to the grid.
+'Sets the derived Grid Control to the grid.
 Me.gridControl1 = New VerticalScrollOptimization.DerivedGridControl()
 {% endhighlight %}
 {% endtabs %}
@@ -161,7 +161,7 @@ Me.gridControl1.VScrollPixel = True
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Scrolling Options
-This topic will discuss about the properties and methods available for scrolling in GridControl. 
+This topic will discuss about the properties and methods available for scrolling in Grid Control. 
 
 ### Setting the Visibility of Scrollbars
 The visibility of the vertical and horizontal scrollbars of the grid can be get/set by using the [VScroll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_VScroll) and [HScroll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_HScroll) properties. It will return `true` while displaying the scrollbars otherwise return false.

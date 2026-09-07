@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Get Grid Data as an Array in Windows Forms Grid Control
 
-Using an indexer to retrieve grid[row, col].CellValue triggers events(like QueryCellInfo). In a GridControl where the data is stored in the grid, you can avoid triggering of these events (which slow things down) by accessing GridData directly. 
+Using an indexer to retrieve grid[row, col].CellValue triggers events(like QueryCellInfo). In a Grid Control where the data is stored in the grid, you can avoid triggering of these events (which slow things down) by accessing GridData directly. 
 
 {% tabs %}
 {% highlight c# %}

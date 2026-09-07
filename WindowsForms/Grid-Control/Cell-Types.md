@@ -9,9 +9,9 @@ documentation: ug
 
 # Cell Types in Windows Forms Grid Control
 
-GridControl allows the inclusion of some special controls in the grid cells. This attribute of a grid cell is referred to as its Cell Type. GridControl supports more than 20 built-in cell types
+Grid Control allows the inclusion of some special controls in the grid cells. This attribute of a grid cell is referred to as its Cell Type. The control supports more than 20 built-in cell types
 
-In GridControl each cell has been created by [GridCellModelBase](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCellModelBase.html) and [GridCellRendererBase](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCellRendererBase.html). `GridCellModelBase` defines the data or model part of a cell type. It holds all the data information of a cell.**Rendering** generally refers to the process of creating a visual representation on a user's screen. `GridCellRendererBase` acts a base class for all the renderer part of the cell type.  
+In Grid Control each cell has been created by [GridCellModelBase](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCellModelBase.html) and [GridCellRendererBase](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCellRendererBase.html). `GridCellModelBase` defines the data or model part of a cell type. It holds all the data information of a cell.**Rendering** generally refers to the process of creating a visual representation on a user's screen. `GridCellRendererBase` acts a base class for all the renderer part of the cell type.  
 
 ## Setting Cell Type for a Cell
 This section will explain on how to add a basic cell type into a grid cell. To add the desired cell type in a cell, the [CellType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_CellType) property can be used. There are two ways to assign cell types, by string format or by using the [GridCellTypeName](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCellTypeName.html) static class which contains all the built-in cell type names in it. 
@@ -34,7 +34,7 @@ Me.gridControl1(2, 2).Description = "Enable"
 ![Cell-Types_img1](Cell-Types_images/Cell-Types_img1.png)
 
 ## TextBox cell type
-TextBox cells are the default cell type of GridControl. TextBox cells displays text and images which can be edited when clicked.
+TextBox cells are the default cell type of Grid Control. TextBox cells displays text and images which can be edited when clicked.
 
 {% tabs %}
 {% highlight c# %}
@@ -108,7 +108,7 @@ gridControl1(2, 2).CellType = "Header"
 ![Cell-Types_img4](Cell-Types_images/Cell-Types_img4.png)
 
 ## Image cell type
-To show an Image in a cell, make use of the **Image** cell type. It can be achieved by setting the `CellType` property as `GridCellTypeName.Image`. Images can be added in GridControl by using the [ImageList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridListControl.html#Syncfusion_Windows_Forms_Grid_GridListControl_ImageList) property. Multiple number of images can be added by using this property. For picking a particular image from the list, make use of the [ImageIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_ImageIndex) property.
+To show an Image in a cell, make use of the **Image** cell type. It can be achieved by setting the `CellType` property as `GridCellTypeName.Image`. Images can be added in Grid Control by using the [ImageList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridListControl.html#Syncfusion_Windows_Forms_Grid_GridListControl_ImageList) property. Multiple number of images can be added by using this property. For picking a particular image from the list, make use of the [ImageIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_ImageIndex) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -484,7 +484,7 @@ Me.gridControl1(3, 1).CellType = "RadioButton"
 ![Cell-Types_img12](Cell-Types_images/Cell-Types_img12.png)
 
 ### Alignment in RadioButton
-GridControl includes support for displaying radio button in both vertical and horizontal order. By default the `RadioButton` cell aligns the buttons in horizontal order. The display of order can be changed by using the RadioButtonAlignment property. 
+Grid Control includes support for displaying radio button in both vertical and horizontal order. By default the `RadioButton` cell aligns the buttons in horizontal order. The display of order can be changed by using the RadioButtonAlignment property. 
 
 {% tabs %}
 {% highlight c# %}
@@ -1022,7 +1022,7 @@ model.AcceptAlphaKeys = False
 {% endtabs %}
 
 ## ProgressBar cell type
-Progress bars are used in applications to provide a visual cue during lengthy operations such as installation, copying, and printing etc. In GridControl progress bar cells can be used in a cell by setting the `CellType` name as `ProgressBar`.
+Progress bars are used in applications to provide a visual cue during lengthy operations such as installation, copying, and printing etc. In Grid Control progress bar cells can be used in a cell by setting the `CellType` name as `ProgressBar`.
 
 The `ProgressBar` property in `GridStyleInfo` class will set all the style properties related to the progress bar. This property will get the value of type [GridProgressBarInfo](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridProgressBarInfo.html) class.
 
@@ -1126,7 +1126,7 @@ Me.gridControl1(6, 2).Description = "Raised Appearance"
 
 ![Cell-Types_img29](Cell-Types_images/Cell-Types_img29.png)
 
-GridControl provides [CellButtonClicked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html) event which gets fired whenever the button is being clicked.
+Grid Control provides [CellButtonClicked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html) event which gets fired whenever the button is being clicked.
 
 {% tabs %}
 {% highlight c# %}
@@ -1186,11 +1186,11 @@ Me.gridControl1.TableStyle.CharacterCasing = CharacterCasing.Upper
 ![Cell-Types_img31](Cell-Types_images/Cell-Types_img31.png)
 
 ## Creating a Custom Cell Type
-Apart from the built in custom cell types given by the GridControl, it is also possible to create an own cell type in GridControl. In GridControl each cell has been created by [GridCellModelBase](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCellModelBase.html) and [GridCellRendererBase](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCellRendererBase.html)
+Apart from the built in custom cell types given by the Grid Control, it is also possible to create an own cell type in GridControl. In the control each cell has been created by [GridCellModelBase](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCellModelBase.html) and [GridCellRendererBase](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCellRendererBase.html)
 
 So every custom cell type also requires a model base class and a renderer base class. The Model class handles the serialization of the control and creates the renderer for the custom control. The renderer class handles the UI requirements of the cell.
 
-To use a custom cell type in a GridControl, it is necessary to register this cell type with the GridControl. In the end of this session you will be able to create a simple custom cell type for the GridControl.
+To use a custom cell type in a Grid Control, it is necessary to register this cell type with the GridControl. In the end of this session you will be able to create a simple custom cell type for the GridControl.
 
 For creating a custom cell type, the below methods has to be followed.
 
@@ -1204,7 +1204,7 @@ For creating any Model base class you have to inherit the [GridCellModelBase](ht
 
 Another major function of this class is to create cell renderer object for the custom cell type. In fact, the only required override in `GridCellModelBase` derived class is the `CreateRenderer` method. In that override, it is possible to create and return `GridCellRendererBase` derived object that would handle the user interactions in new custom cell type.
 
-In general, it is unlikely to derive directly from the base class. Instead of that, override an existing GridControl derived class such as [GridStaticCellModel](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStaticCellModel.html). The following code example illustrates this.
+In general, it is unlikely to derive directly from the base class. Instead of that, override an existing Grid Control derived class such as [GridStaticCellModel](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStaticCellModel.html). The following code example illustrates this.
 
 {% tabs %}
 {% highlight c# %}
@@ -1254,7 +1254,7 @@ End Class
 
 This renderer class will take care of the handling of mouse and keyboard messages, also the UI related changes. It is necessary to override the required methods and properties and modify them as per your needs.
 
-In general, it is unlikely to derive directly from the `GridCellRendererBase` class. Instead of that, override an existing GridControl derived class such as [GridStaticModel](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStaticCellModel.html), [GridGenericControlCellModel](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridGenericControlCellModel.html) etc.
+In general, it is unlikely to derive directly from the `GridCellRendererBase` class. Instead of that, override an existing Grid Control derived class such as [GridStaticModel](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStaticCellModel.html), [GridGenericControlCellModel](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridGenericControlCellModel.html) etc.
 
 {% tabs %}
 {% highlight c# %}
@@ -1564,7 +1564,7 @@ gridControl1.CellModels.Add("LinkLabelCell", New LinkLabelCellModel(gridControl1
 {% endtabs %}
 
 ### Assigning cell types 
-Assign the registered cell type to a GridControl like a normal cell type. The custom cell type `LinkLabelCell` acts as a hyperlink. The link for the LinkLabelCell will be assigned in the [Tag](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_Tag) property of that cell. This cell displays the ordinary text, but on clicking it will relocate to the link given in the Tag.
+Assign the registered cell type to a Grid Control like a normal cell type. The custom cell type `LinkLabelCell` acts as a hyperlink. The link for the LinkLabelCell will be assigned in the [Tag](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_Tag) property of that cell. This cell displays the ordinary text, but on clicking it will relocate to the link given in the Tag.
 {% tabs %}
 {% highlight c# %}
 RegisterCellModel.GridCellType(gridControl1, CustomCellTypes.LinkLabelCell);

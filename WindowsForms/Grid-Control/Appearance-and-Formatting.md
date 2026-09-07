@@ -8,19 +8,19 @@ documentation: ug
 ---
 
 # Appearance and Formatting in Windows Forms Grid Control
-GridControl provides lot of properties and events for customizing the appearance of the grid. This section explains the appearance and formatting available in GridControl. GridControl provides different kinds visual styles, which changes the appearance of the whole grid. To know more about the Visual Styles check the link over [here](https://help.syncfusion.com/windowsforms/grid-control/visual-styles).
+Grid Control provides lot of properties and events for customizing the appearance of the grid. This section explains the appearance and formatting available in  Control. The control provides different kinds visual styles, which changes the appearance of the whole grid. To know more about the Visual Styles check the link over [here](https://help.syncfusion.com/windowsforms/grid-control/visual-styles).
 
 ## Grid control designer
-GridControl has an excellent user friendly design-time support. A GridControl’s edit designer is added to the grid to ease the process of designing GridControl on a cell level. Using the editor, Grid can be modified, saved, and loaded to XML formatted files or to SOAP formatted templates. 
+Grid Control has an excellent user friendly design-time support. A control’s edit designer is added to the grid to ease the process of designing the control on a cell level. Using the editor, Grid can be modified, saved, and loaded to XML formatted files or to SOAP formatted templates. 
 
-Following is the step-by-step procedure to save the GridControl into an XML format
+Following is the step-by-step procedure to save the Grid Control into an XML format
 
 1. Right click the Grid control. A context menu is displayed.
 2. Select `Edit` from the context menu drop-down. 
 
    ![Appearance-and-Formatting_img1](Appearance-and-Formatting_images/Appearance-and-Formatting_img1.jpeg)
 
-3. GridControl Designer window will be opened. In that select the File -> Save to XML option.
+3. Grid Control Designer window will be opened. In that select the File -> Save to XML option.
    
    ![Appearance-and-Formatting_img2](Appearance-and-Formatting_images/Appearance-and-Formatting_img2.jpeg)
 
@@ -28,15 +28,15 @@ Following is the step-by-step procedure to save the GridControl into an XML form
 
 4. A dialog box will be opened. Save the XML file in the desired location.
 
-The cell styles of the Grid can be changed by using the Grid Properties tab and Selected Range tab in the designer which is located at the right side of the GridControl designer. For more information on how to customize the cells using the GridControl designer, check the link over [here](https://help.syncfusion.com/windowsforms/grid-control/populating-data#modifying-cell-styles-through-designer).
+The cell styles of the Grid can be changed by using the Grid Properties tab and Selected Range tab in the designer which is located at the right side of the Grid Control designer. For more information on how to customize the cells using the control designer, check the link over [here](https://help.syncfusion.com/windowsforms/grid-control/populating-data#modifying-cell-styles-through-designer).
 
 N>  The system prompts you to save the changes to the Grid control in the designer if exited without saving.
 
 ## Grid properties
-This section would explain the list of properties that changes the Appearance, Print Styles, and Scroll Bar settings of GridControl.
+This section would explain the list of properties that changes the Appearance, Print Styles, and Scroll Bar settings of Grid Control.
 
 ### Appearance properties
-The properties that mainly affect the appearance of cells in GridControl are listed below.
+The properties that mainly affect the appearance of cells in Grid Control are listed below.
 
 #### Hiding verticalLines
 To display the grid without the vertical lines, set the [DisplayVerticalLines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_DisplayVerticalLines) property to `false`.
@@ -70,7 +70,7 @@ Me.gridControl.DisplayHorizontalLines = False
 ![Appearance-and-Formatting_img4](Appearance-and-Formatting_images/Appearance-and-Formatting_img4.jpeg)
 
 #### Border line color
-The color of vertical and horizontal lines can be set for GridControl by using the [GridLineColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_GridLineColor) property.
+The color of vertical and horizontal lines can be set for Grid Control by using the [GridLineColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_GridLineColor) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -86,7 +86,7 @@ Me.gridControl.GridLineColor = Color.Orange
 ![Appearance-and-Formatting_img5](Appearance-and-Formatting_images/Appearance-and-Formatting_img5.jpeg)
 
 #### Border styles
-The `BorderStyle` for the GridControl can be set by using [DefaultGridBorderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_DefaultGridBorderStyle) property.[GridBorderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridBorderStyle.html) enumeration has provide the following options to set the border style,
+The `BorderStyle` for the Grid Control can be set by using [DefaultGridBorderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_DefaultGridBorderStyle) property.[GridBorderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridBorderStyle.html) enumeration has provide the following options to set the border style,
 
 * DashDot
 * DashDotDot
@@ -111,7 +111,7 @@ Me.gridControl.DefaultGridBorderStyle = GridBorderStyle.DashDotDot
 ![Appearance-and-Formatting_img6](Appearance-and-Formatting_images/Appearance-and-Formatting_img6.jpeg)
 
 #### Setting background image
-The background of the GridControl can be filled with an image by using [BackgroundImage](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backgroundimage?view=windowsdesktop-8.0&viewFallbackFrom=net-5.0) property.
+The background of the Grid Control can be filled with an image by using [BackgroundImage](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backgroundimage?view=windowsdesktop-8.0&viewFallbackFrom=net-5.0) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -137,7 +137,7 @@ Me.gridControl.TransparentBackground = True
 
 ![Appearance-and-Formatting_img7](Appearance-and-Formatting_images/Appearance-and-Formatting_img7.jpeg)
 
-While changing the Background image of GridControl, the [BackgroundImageChanged](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backgroundimagechanged?view=windowsdesktop-8.0&viewFallbackFrom=net-5.0) event will be fired.
+While changing the Background image of Grid Control, the [BackgroundImageChanged](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backgroundimagechanged?view=windowsdesktop-8.0&viewFallbackFrom=net-5.0) event will be fired.
 
 {% tabs %}
 {% highlight c# %}
@@ -187,7 +187,7 @@ Me.gridControl.Properties.ResetBackgroundColor()
 {% endtabs %}
 
 #### Hiding column headers
-The [ColHeaders](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridProperties.html#Syncfusion_Windows_Forms_Grid_GridProperties_ColHeaders) property used to indicate whether the GridControl should display column headers or not. 
+The [ColHeaders](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridProperties.html#Syncfusion_Windows_Forms_Grid_GridProperties_ColHeaders) property used to indicate whether the Grid Control should display column headers or not. 
 
 {% tabs %}
 {% highlight c# %}
@@ -323,23 +323,23 @@ Me.gridControl.Properties.ResizingCellsLinesColor = Color.Red
 ![Appearance-and-Formatting_img16](Appearance-and-Formatting_images/Appearance-and-Formatting_img16.jpeg)
 
 ### Print properties
-GridControl provides lot properties which specifically relates to printing functionality. For enabling the GridControl to the printing mode make use of the Printing property. 
+Grid Control provides lot properties which specifically relates to printing functionality. For enabling the control to the printing mode make use of the Printing property. 
 
 {% tabs %}
 {% highlight c# %}
-// Switches to printing mode of the GridControl.
+// Switches to printing mode of the Grid Control.
 this.gridControl1.Properties.Printing = true;
 {% endhighlight %}
 {% highlight vb %}
-'Switches to printing mode of the GridControl.
+'Switches to printing mode of the Grid Control.
 Me.gridControl1.Properties.Printing = True
 {% endhighlight %}
 {% endtabs %}
 
-The list of print properties available in GridControl can be viewed in the separate topic named Printing. Refer that topic for more detailed explanation on Printing functionality.
+The list of print properties available in Grid Control can be viewed in the separate topic named Printing. Refer that topic for more detailed explanation on Printing functionality.
 
 ### Scroll bar properties
-GridControl provides support to control functionalities and appearance of grid scroll bars. To enable or disable the scrolling make use of the [HScrollBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_HScrollBehavior) and [VScrollBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_VScrollBehavior) properties. It specifies the behavior of the horizontal and vertical scroll bar respectively.[GridScrollbarMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridScrollbarMode.html) enumeration provides list of options to control the scroll bar behavior.
+Grid Control provides support to control functionalities and appearance of grid scroll bars. To enable or disable the scrolling make use of the [HScrollBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_HScrollBehavior) and [VScrollBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_VScrollBehavior) properties. It specifies the behavior of the horizontal and vertical scroll bar respectively.[GridScrollbarMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridScrollbarMode.html) enumeration provides list of options to control the scroll bar behavior.
 
 {% tabs %}
 {% highlight c# %}
@@ -360,10 +360,10 @@ Me.gridControl1.VScrollBehavior = GridScrollbarMode.Disabled
 {% endhighlight %}
 {% endtabs %}
 
-The list of properties related to scroll bar in GridControl can be viewed in the separate topic which comes under Scrolling. 
+The list of properties related to scroll bar in Grid Control can be viewed in the separate topic which comes under Scrolling. 
 
 ## GridFormatCellDialog
-[GridFormatCellDialog](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridFormatCellDialog.html) simulates **Format Cells dialog** feature of Microsoft Excel. It provides numerous formatting options such as Font, Alignment, Background, and Number format, which aid in formatting grid cells dynamically. It is now available as an add-on feature for GridControl. `GridFormatCellDialog` class accepts an instance of the GridControl to be formatted, and exposes the above mentioned formatting options to operate on grid cells that are selected. The `GridFormatCellDialog` class comes under the [Syncfusion.GridHelperClasses](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.html) library.
+[GridFormatCellDialog](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridFormatCellDialog.html) simulates **Format Cells dialog** feature of Microsoft Excel. It provides numerous formatting options such as Font, Alignment, Background, and Number format, which aid in formatting grid cells dynamically. It is now available as an add-on feature for Control. `GridFormatCellDialog` class accepts an instance of the Grid Control to be formatted, and exposes the above mentioned formatting options to operate on grid cells that are selected. The `GridFormatCellDialog` class comes under the [Syncfusion.GridHelperClasses](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.html) library.
 ![Appearance-and-Formatting_img17](Appearance-and-Formatting_images/Appearance-and-Formatting_img17.jpeg)
 
 This `GridFormatCellDialog` can be enabled by instantiating `GridFormatCellDialog` class and invoking its **ShowDialog** method.

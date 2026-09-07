@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Set Cell Properties for Range in Windows Forms Grid Control
 
-Use the GridControl's ChangeCells method by passing it a [GridRangeInfo](/windowsforms/Grid/Cell-Style-Architecture#gridrangeinfo) object to change the appearance of a range of cells. 
+Use the Grid Control's ChangeCells method by passing it a [GridRangeInfo](/windowsforms/Grid/Cell-Style-Architecture#gridrangeinfo) object to change the appearance of a range of cells. 
 
 To set the [BackColor](/windowsforms/grid/cell-style-architecture#backcolor) and TextColor for a range of cells, use the below given code snippet.
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # ToolTip in Windows Forms Grid Control
 
-ToolTip can be added to the individual cells. This allows a user to show more information about the particular cell on mouse hover.
+WinForms Grid Control allows to add ToolTip to the individual cells. This allows a user to show more information about the particular cell on mouse hover.
 
 ![ToolTip_img1](ToolTip_images/ToolTip_img1.png)
 
@@ -139,11 +139,11 @@ The displaying of ToolTip on mouse hover for control can be restricted by settin
 
 {% tabs %}
 {% highlight c# %}
-//Disable the ToolTip for GridControl.
+//Disable the ToolTip for Grid Control.
 this.gridControl1.CellToolTip.Active = false;
 {% endhighlight %}
 {% highlight vb %}
-'Disable the ToolTip for GridControl.
+'Disable the ToolTip for Grid Control.
 Me.gridControl1.CellToolTip.Active = False
 {% endhighlight %}
 {% endtabs %}

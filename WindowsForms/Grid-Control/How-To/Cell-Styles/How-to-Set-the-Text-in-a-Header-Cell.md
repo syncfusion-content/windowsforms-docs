@@ -9,9 +9,9 @@ documentation: ug
 
 # How to Set Header Cell Text in Windows Forms Grid Control
 
-In GridControl, values in header cells are set just as in any other cell. 
+In Grid Control, values in header cells are set just as in any other cell. 
 
-Use an indexer on your GridControl with the row index set to 0.
+Use an indexer on your Grid Control with the row index set to 0.
 
 {% tabs %}
 {% highlight c# %}

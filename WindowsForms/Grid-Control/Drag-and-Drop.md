@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Drag and Drop in Windows Forms Grid Control
 
-GridControl supports drag and drop functionality, which allows to drag and drop values from range of cells within a grid or multiple grids. It is required to set the [AllowDrop](https://learn.microsoft.com/en-us/dotnet/api/system.windows.uielement.allowdrop?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) property to `true` for achieving this support. 
+Grid Control supports drag and drop functionality, which allows to drag and drop values from range of cells within a grid or multiple grids. It is required to set the [AllowDrop](https://learn.microsoft.com/en-us/dotnet/api/system.windows.uielement.allowdrop?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) property to `true` for achieving this support. 
 
 {% tabs %}
 {% highlight c# %}
@@ -30,7 +30,7 @@ Me.gridControl1.AllowDrop = True
 
 ## Drag and Drop between Multiple Grids
 
-It is also possible to drag and drop between the two or more GridControls by enabling the `AllowDrop` property for both of the GridControls.
+It is also possible to drag and drop between the two or more Grid Control's by enabling the `AllowDrop` property for both of the GridControls.
 
 {% tabs %}
 {% highlight c# %}
@@ -58,12 +58,11 @@ Me.gridControl2.AllowDrop = True
 
 ![DragandDrop_img5](DragandDrop_images/DragandDrop_img5.jpeg)
 
-
-N> OLE Drag Drop operation is also possible between GridControl and any other text editors.
+N> OLE Drag Drop operation is also possible between Grid Control and any other text editors.
 
 ## Column ordering
 
-In GridControl, the drag drop functionality is available in between the columns of the Grid. This can be achieved by setting the [ControllerOptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControllerOptions.html#) property as `DragColumnHeader`.
+In Grid Control, the drag drop functionality is available in between the columns of the Grid. This can be achieved by setting the [ControllerOptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControllerOptions.html#) property as `DragColumnHeader`.
 
 {% tabs %}
 {% highlight c# %}
