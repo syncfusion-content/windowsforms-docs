@@ -23,7 +23,7 @@ Description</th></tr>
 <tr>
 <td>
 ImageCheckBox</td><td>
-Indicates whether the RadioButton will be drawn using the images provided.</td></tr>
+Indicates whether the Radio Button will be drawn using the images provided.</td></tr>
 <tr>
 <td>
 ImageCheckBoxSize</td><td>
@@ -31,19 +31,19 @@ Gets or sets the size of the ImageCheckBox.ImageCheckbox property must be set to
 <tr>
 <td>
 CheckedImage</td><td>
-Gets or sets the image used to draw the RadioButton when checked and mouse not over.</td></tr>
+Gets or sets the image used to draw the Radio Button when checked and mouse not over.</td></tr>
 <tr>
 <td>
 UncheckedImage</td><td>
-Gets or sets the image used to draw the RadioButton when unchecked and mouse not over.</td></tr>
+Gets or sets the image used to draw the Radio Button when unchecked and mouse not over.</td></tr>
 <tr>
 <td>
 DisabledImage</td><td>
-Gets or sets the image used to draw the RadioButton when disabled.</td></tr>
+Gets or sets the image used to draw the Radio Button when disabled.</td></tr>
 <tr>
 <td>
 StretchImage</td><td>
-Indicates whether the state images of the RadioButton are stretched.</td></tr>
+Indicates whether the state images of the Radio Button are stretched.</td></tr>
 </table>
 
 N> Before setting the images, make sure the ImageCheckBox property is set to 'True'.
@@ -87,11 +87,11 @@ Description</th></tr>
 <tr>
 <td>
 MouseOverCheckedImage</td><td>
-Gets or sets the image used to draw the RadioButton when checked and mouse over.</td></tr>
+Gets or sets the image used to draw the Radio Button when checked and mouse over.</td></tr>
 <tr>
 <td>
 MouseOverUncheckedImage</td><td>
-Gets or sets the image used to draw the RadioButton when unchecked and mouse over.</td></tr>
+Gets or sets the image used to draw the Radio Button when unchecked and mouse over.</td></tr>
 </table>
 
 {% tabs %}

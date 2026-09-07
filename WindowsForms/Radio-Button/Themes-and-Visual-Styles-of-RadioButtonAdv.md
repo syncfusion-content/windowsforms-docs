@@ -41,7 +41,7 @@ Me.radioButtonAdv1.ThemesEnabled = True
 {% endhighlight %}
 {% endtabs %}
 
- ![Windows forms RadioButtonAdv themes appearance](Overview_images/RadioButtonAdv_themes.jpeg)
+ ![Windows forms Radio Button themes appearance](Overview_images/RadioButtonAdv_themes.jpeg)
 
 ### Visual styles
 
@@ -86,9 +86,9 @@ Me.radioButtonAdv1.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Of
 {% endhighlight %}
 {% endtabs %}
 
- ![Windows forms RadioButtonAdv visual styles](Overview_images/RadioButtonAdv_radioButtonStyle.jpeg) 
+ ![Windows forms Radio Button visual styles](Overview_images/RadioButtonAdv_radioButtonStyle.jpeg) 
 
-When the Office2007ColorScheme property is set to 'Managed', the RadioButton in the RadioButtonAdv can be displayed using custom colors supported by the control.
+When the Office2007ColorScheme property is set to 'Managed', the Radio Button can be displayed using custom colors supported by the control.
 
 This can be done programmatically as follows.
 

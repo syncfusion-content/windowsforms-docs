@@ -9,7 +9,6 @@ documentation: ug
 
 # Behavior Settings in Windows Forms NumericUpdown
 
-
 The behavior settings of the NumericUpdown control are discussed below.
 
 ## Intercept arrow keys
@@ -48,7 +47,7 @@ The maximum length of the text can be set using the property given below.
 <table>
 <tr>
 <th>
-NumericUpDownExt Property</th><th>
+NumericUpdown Property</th><th>
 Description</th></tr>
 <tr>
 <td>

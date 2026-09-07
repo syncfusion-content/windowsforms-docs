@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Windows Forms NumericUpdown
 
-This section briefly describes how to create a new Windows Forms project in Visual Studio and add the **NumericUpdown** control with its basic functionalities.
+This section briefly describes how to create a new Windows Forms project in Visual Studio and add the NumericUpdown control with its basic functionalities.
 
 ## Assembly deployment
 
@@ -32,7 +32,7 @@ Refer to this [documentation](https://help.syncfusion.com/windowsforms/installat
 
 ![Drag and drop NumericUpdown from toolbox](Creating-NumericUpDownExt_images/Creating-NumericUpDownExt_img1.png)
 
-The **NumericUpdown** allows you to display numeric values by clicking the up and down buttons.
+The NumericUpdown control allows you to display numeric values by clicking the up and down buttons.
 
 ![Windows Forms NumericUpDownExt showing numeric values](Creating-NumericUpDownExt_images/Creating-NumericUpDownExt_img2.png)
 
@@ -105,7 +105,7 @@ Me.numericUpDownExt1.Size = New System.Drawing.Size(84, 20)
 
 ## Display settings
 
-The **NumericUpdown** provides the [DecimalPlaces](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumericUpDownExtActionList.html#Syncfusion_Windows_Forms_Tools_NumericUpDownExtActionList_DecimalPlaces) and [ThousandsSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumericUpDownExtActionList.html#Syncfusion_Windows_Forms_Tools_NumericUpDownExtActionList_ThousandsSeparator) properties to set the display characteristics associated with the integer value.
+The NumericUpdown provides the [DecimalPlaces](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumericUpDownExtActionList.html#Syncfusion_Windows_Forms_Tools_NumericUpDownExtActionList_DecimalPlaces) and [ThousandsSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumericUpDownExtActionList.html#Syncfusion_Windows_Forms_Tools_NumericUpDownExtActionList_ThousandsSeparator) properties to set the display characteristics associated with the integer value.
 
 {% tabs %}
 
@@ -129,7 +129,7 @@ Me.numericUpDownExt1.ThousandsSeparator = True
 
 ## Value settings
 
-The **NumericUpdown** provides the following properties to control the integer value:
+The NumericUpdown provides the following properties to control the integer value:
 
 * [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumericUpDownExtActionList.html#Syncfusion_Windows_Forms_Tools_NumericUpDownExtActionList_Value) - Sets the value assigned to the spin box.
 * [Hexadecimal](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumericUpDownExtActionList.html#Syncfusion_Windows_Forms_Tools_NumericUpDownExtActionList_Hexadecimal) - Indicates whether the spin box should display the value it contains in hexadecimal format.

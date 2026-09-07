@@ -44,4 +44,4 @@ Me.numericUpDownExt1.ThousandsSeparator = True
 {% endhighlight %}
 {% endtabs %}
 
-![Display-Settings_img1](Display-Settings_images/Display-Settings_img1.png)
+![Display Settings in Windows Forms NumericUpdown control](Display-Settings_images/Display-Settings_img1.png)

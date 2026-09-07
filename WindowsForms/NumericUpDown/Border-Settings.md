@@ -91,7 +91,3 @@ Me.numericUpDownExt1.ThemesEnabled = True
 
 ![Border-Settings_img3](Border-Settings_images/Border-Settings_img3.png)
 
-A sample which demonstrates the Border Settings of NumericUpdown control is available in the below sample installation path.
-
-…\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
-

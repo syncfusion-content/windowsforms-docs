@@ -2,7 +2,6 @@
 layout: post
 title: Watermark in Windows Forms ComboBox | Syncfusion®
 description: Watermark support in Windows Forms ComboBox displays placeholder text when no value is selected and allows customization of its appearance.
-
 platform: windowsforms
 control: ComboBox
 documentation: ug

@@ -16,7 +16,7 @@ Property table
 <table>
 <tr>
 <th>
-Progress Bar property</th><th>
+Progress Bar properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -64,6 +64,6 @@ Me.progressBarAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 {% endtabs %}
 
-![Overview_img23](Overview_images/Overview_img23.jpeg)
+![Border settings in Windows Forms Progress Bar control](Overview_images/Overview_img23.jpeg)
 
 

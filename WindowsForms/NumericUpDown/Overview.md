@@ -15,7 +15,7 @@ The NumericUpdown control enables XP Themes look and feel for the UpDown contro
 
 ## Key Features
 
-The NumericUpdown is an advanced NumericUpdown control, and it contains the following features:
+The `NumericUpDownExt` is an advanced NumericUpdown control, and it contains the following features:
 
 **Value settings** - Provides options to set the value to be displayed by the NumericUpdown control and increments or decrements the value.
 

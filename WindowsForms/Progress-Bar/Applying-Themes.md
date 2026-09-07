@@ -27,7 +27,7 @@ Me.progressBarAdv1.ThemesEnabled = True
 
 {% endtabs %}
 
-![Overview_img25](Overview_images/Overview_img25.jpeg)
+![Themes support in Windows Forms Progress Bar control](Overview_images/Overview_img25.jpeg)
 
 
 N> Refer to the _Foreground Style Settings_ topic for more information on ProgressStyle property.

@@ -81,7 +81,7 @@ End Sub
 
 ## Customizing drop-down position
 
-The [`SfComboBox`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html) allows to change the position of the dropdown list by using the [`DropDownPosition`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_DropDownPosition) property. The default value is [`PopupRelativeAlignment.Center`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Core.Enums.PopupRelativeAlignment.html).
+The ComboBox allows to change the position of the dropdown list by using the [`DropDownPosition`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_DropDownPosition) property. The default value is [`PopupRelativeAlignment.Center`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Core.Enums.PopupRelativeAlignment.html).
 
 {% tabs %}
 
@@ -97,7 +97,7 @@ sfComboBox1.DropDownPosition = Syncfusion.WinForms.Core.Enums.PopupRelativeAlign
 
 ## Customizing drop-down Width
 
-The [`SfComboBox`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html) control allows you to customize the width of the drop-down list using the DropDownWidth property. If no explicit value is assigned, the drop-down list will use its default width.
+The ComboBox allows you to customize the width of the drop-down list using the DropDownWidth property. If no explicit value is assigned, the drop-down list will use its default width.
 
 {% tabs %}
 

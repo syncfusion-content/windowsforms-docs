@@ -9,7 +9,7 @@ documentation: ug
 
 # Selection in Windows Forms ComboBox
 
-The [Windows Forms ComboBox](https://www.syncfusion.com/winforms-ui-controls/combobox) (SfComboBox) allows you to select single or multiple items in the drop-down list. The selection mode can be set by using the [ComboBoxMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_ComboBoxMode) property. 
+The ComboBox allows you to select single or multiple items in the drop-down list. The selection mode can be set by using the [ComboBoxMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_ComboBoxMode) property. 
 
 Combo box has two different modes:
 
@@ -272,9 +272,9 @@ End Sub
 
 ## Clear selection
 
-The [`SfComboBox`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html) allows to show or hide the clear button by using the [`ShowClearButton`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_ShowClearButton) property. When pressing the clear button it will clear the selected items and editor portion.
+The ComboBox allows to show or hide the clear button by using the [`ShowClearButton`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_ShowClearButton) property. When pressing the clear button it will clear the selected items and editor portion.
 
-N> This clear button will be visible only when the selection or editing takes place inside the SfComboBox.
+N> This clear button will be visible only when the selection or editing takes place inside the ComboBox.
 
 {% tabs %}
 

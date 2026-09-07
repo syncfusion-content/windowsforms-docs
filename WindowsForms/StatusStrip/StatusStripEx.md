@@ -17,7 +17,7 @@ Essential Tools has come up with StatusStrip control which can be added to the b
 
 ### Through designer
 
-The StatusStrip can be added to the form by dragging a StatusStripEx control from the Toolbox. It can be docked to the bottom of the RibbonControlAdv. 
+The StatusStrip can be added to the form by dragging a `StatusStripEx` control from the Toolbox. It can be docked to the bottom of the RibbonControlAdv. 
 
 ![Creating a StatusStrip through designer](StatusStripEx_images/StatusStripEx_img2.jpeg)
 

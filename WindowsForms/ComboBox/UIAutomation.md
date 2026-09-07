@@ -86,11 +86,11 @@ Follow the steps to create a `CodedUITest project` and test the `SfComboBox` app
 
 6. Drag the Crosshairs on to the UI elements in `SfComboBox` application. It shows the available properties of the inner UI elements. 
 
-![SfComboBox_Assertion](CodedUI-Automation-Images/SfComboBox_Assertion.jpg)
+![ComboBox Assertion](CodedUI-Automation-Images/SfComboBox_Assertion.jpg)
 
 7. Record the actions made on UI elements by clicking the `Record` button on `CodedUITestBuilder`.
 
-![SfComboBox_RecordAction](CodedUI-Automation-Images/SfComboBox_RecordAction.jpg)
+![ComboBox Record Action](CodedUI-Automation-Images/SfComboBox_RecordAction.jpg)
 
 8. Then, click the `GenerateCode` icon in `CodedUITestBuilder` to generate a test method. Close the `CodedUITestBuilder` and see the generated code for the ComboBox item changed action.
 

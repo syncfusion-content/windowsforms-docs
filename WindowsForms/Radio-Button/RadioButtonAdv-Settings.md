@@ -25,7 +25,7 @@ Description</th></tr>
 <tr>
 <td>
 Checked</td><td>
-Gets / sets the check state of the RadioButton.</td></tr>
+Gets / sets the check state of the Radio Button.</td></tr>
 </table>
 
 {% tabs %}
@@ -42,7 +42,7 @@ Me.radioButtonAdv1.Checked = True
 {% endhighlight %}
 {% endtabs %}
 
- ![Windows forms Radio Button shows various states](Overview_images/RadioButtonAdv_states.jpeg)
+![Windows forms Radio Button shows various states](Overview_images/RadioButtonAdv_states.jpeg)
 
 
 ## Radio Button values

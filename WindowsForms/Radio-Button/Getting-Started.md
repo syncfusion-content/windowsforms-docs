@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Windows Forms Radio Button
 
-The section briefly describes how to create a new Windows Forms project in Visual Studio and add **"Radio Button"** with it's functionalities.
+The section briefly describes how to create a new Windows Forms project in Visual Studio and add Radio Button control with it's functionalities.
 
 ## Assembly deployment
 
@@ -20,11 +20,11 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 ## Adding a Radio Button control through designer
 
-The **"Radio Button"** control can be added through designer by following steps.
+The Radio Button control can be added through designer by following steps.
 
 **"Step 1"**: Create a new Windows Forms application in Visual Studio.
 
-**Step 2**: The **"Radio Button"** control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically.
+**Step 2**: The `RadioButtonAdv` control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically.
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -35,8 +35,7 @@ The **"Radio Button"** control can be added through designer by following steps.
 
 ![Windows forms Radio Button drag and drop from toolbox](Overview_images/RadioButtonAdv_toolbox.jpeg)
 
-**Step 2**: Set the desired properties for **"Radio Button"** control through the **"Properties"** dialog.
-
+**Step 2**: Set the desired properties for Radio Button control through the **Properties** dialog.
 
 
 ## Adding a Radio Button control through code
@@ -70,7 +69,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 {% endtabs %}
 
-**Step 4**: Create an instance of **"Radio Button"** control.
+**Step 4**: Create an instance of `RadioButtonAdv` control.
 
 {% tabs %}
 {% highlight c# %}
@@ -88,7 +87,7 @@ Me.radioButtonAdv1 = New Syncfusion.Windows.Forms.Tools.RadioButtonAdv()
 {% endhighlight %}
 {% endtabs %}
 
-**Step 5**: Set the following properties for **"Radio Button"** control through by code.
+**Step 5**: Set the following properties for Radio Button control through by code.
 
 {% tabs %}
 {% highlight c# %}

@@ -57,7 +57,7 @@ Description</th></tr>
 <tr>
 <td>
 AutoHeight</td><td>
-Determines if the RadioButton will automatically calculate its height.</td></tr>
+Determines if the Radio Button will automatically calculate its height.</td></tr>
 </table>
 
 {% tabs %}

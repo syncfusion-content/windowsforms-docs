@@ -44,9 +44,9 @@ Me.radioButtonAdv1.TextContentAlignment = System.Drawing.ContentAlignment.Middle
 ![Windows forms Radio Button changed text alignment](Overview_images/RadioButtonAdv_textalign.jpeg) 
 
 
-## RadioButton alignment
+## Radio Button alignment
 
-The RadioButton itself can be aligned to any desired location that can be chosen from the options given in the following property.
+The Radio Button itself can be aligned to any desired location that can be chosen from the options given in the following property.
 
 <table>
 <tr>
@@ -56,7 +56,7 @@ Description</th></tr>
 <tr>
 <td>
 CheckAlign</td><td>
-Indicates the alignment of the RadioButton. The default value is set to 'MiddleLeft'.The options included are as follows.{{ '_TopLeft,_' | markdownify }} {{ '_TopCenter,_' | markdownify }} {{ '_TopRight,_' | markdownify }} {{ '_MiddleLeft,_' | markdownify }} {{ '_MiddleCenter,_' | markdownify }} {{ '_MiddleRight,_' | markdownify }} {{ '_BottomLeft,_' | markdownify }} {{ '_BottomCenter and_' | markdownify }} {{ '_BottomRight._' | markdownify }}</td></tr>
+Indicates the alignment of the Radio Button. The default value is set to 'MiddleLeft'.The options included are as follows.{{ '_TopLeft,_' | markdownify }} {{ '_TopCenter,_' | markdownify }} {{ '_TopRight,_' | markdownify }} {{ '_MiddleLeft,_' | markdownify }} {{ '_MiddleCenter,_' | markdownify }} {{ '_MiddleRight,_' | markdownify }} {{ '_BottomLeft,_' | markdownify }} {{ '_BottomCenter and_' | markdownify }} {{ '_BottomRight._' | markdownify }}</td></tr>
 </table>
 
 {% tabs %}

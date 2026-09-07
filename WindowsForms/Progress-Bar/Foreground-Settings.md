@@ -101,7 +101,7 @@ Property table
 <table>
 <tr>
 <th>
-Progress Bar property</th><th>
+Progress Bar properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -145,7 +145,7 @@ Property table
 <table>
 <tr>
 <th>
-Progress Bar property</th><th>
+Progress Bar properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -187,7 +187,7 @@ Property table
 <table>
 <tr>
 <th>
-Progress Bar property</th><th>
+Progress Bar properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -235,7 +235,7 @@ Property table
 <table>
 <tr>
 <th>
-Progress Bar property</th><th>
+Progress Bar properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -282,7 +282,7 @@ Property table
 <table>
 <tr>
 <th>
-Progress Bar property</th><th>
+Progress Bar properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -326,7 +326,7 @@ Property table
 <table>
 <tr>
 <th>
-Progress Bar property</th><th>
+Progress Bar properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -368,7 +368,7 @@ Property table
 <table>
 <tr>
 <th>
-Progress Bar property</th><th>
+Progress Bar properties</th><th>
 Description</th></tr>
 <tr>
 <td>

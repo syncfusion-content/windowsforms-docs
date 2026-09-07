@@ -26,7 +26,7 @@ sfComboBox1.DropDownListView.ItemHeight = 40
 
 ## Auto fit the items based on content
 
-The [Windows Forms ComboBox](https://www.syncfusion.com/winforms-ui-controls/combobox) (SfComboBox) allows dynamically adjusting size of the items based on the loaded content by defining the [sfComboBox1.DropDownListView.AutoFitMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_AutoFitMode) property. The control has two types of `AutoFitMode` as listed as follows:
+The ComboBox allows dynamically adjusting size of the items based on the loaded content by defining the [AutoFitMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_AutoFitMode) property. The control has two types of `AutoFitMode` as listed as follows:
 
 * Height: Auto fits the items based on the content. It considers height of the item when the orientation is vertical.
 * None: Layouts the items by `ItemHeight`.
@@ -42,9 +42,9 @@ sfComboBox1.DropDownListView.AutoFitMode = AutoFitMode.Height
 
 ## Setting the height conditionally
 
-The ComboBox allows customizing the size of the drop-down item on-demand by the [sfComboBox1.DropDownListView.QueryItemHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html) event using the item index. This event is raised whenever items come to view and triggered with [QueryItemHeightEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.Events.QueryItemHeightEventArgs.html).
+The ComboBox allows customizing the size of the drop-down item on-demand by the [QueryItemHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html) event using the item index. This event is raised whenever items come to view and triggered with [QueryItemHeightEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.Events.QueryItemHeightEventArgs.html).
 
-The `sfComboBox1.DropDownListView.QueryItemHeight` event provides the following properties in their arguments:
+The `QueryItemHeight` event provides the following properties in their arguments:
 
 * `ItemIndex`: Identifies a particular item in the SfListView.
 * `ItemData`: Identifies the underlying data bound to that item.

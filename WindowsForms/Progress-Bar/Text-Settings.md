@@ -16,7 +16,7 @@ Property table
 <table>
 <tr>
 <th>
-Progress Bar property</th><th>
+Progress Bar properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -72,7 +72,7 @@ Me.progressBarAdv1.TextVisible = True
 
 {% endtabs %}
 
-![Overview_img24](Overview_images/Overview_img24.jpeg)
+![Text Settings in Windows Forms Progress Bar](Overview_images/Overview_img24.jpeg)
 
 
 

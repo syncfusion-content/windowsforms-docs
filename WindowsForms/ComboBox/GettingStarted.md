@@ -25,7 +25,7 @@ In this walkthrough, you will create a WinForms application that contains the Co
 Create a new Windows Forms project in Visual Studio to display the ComboBox control.
 
 ### Adding Control via Designer
-The ComboBox control can be added to the application by dragging it from the toolbox and dropping it in the designer. The required assembly references will be added automatically.
+The `SfComboBox` control can be added to the application by dragging it from the toolbox and dropping it in the designer. The required assembly references will be added automatically.
 
 ![GettingStarted_img1](GettingStarted_images/GettingStarted_img1.png)
 
@@ -43,7 +43,7 @@ To add the control manually, follow these steps:
     *   Syncfusion.SfListView.WinForms
 
 
-2. Create the ComboBox control instance and add it to the control collection of the form.
+2. Create the `SfComboBox` control instance and add it to the control collection of the form.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -85,7 +85,7 @@ End Namespace
 
 ### Binding to data
 
-To bind the ComboBox to data, set the [SfComboBox.DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_DataSource) property to an `IEnumerable` implementation. You can bind a property of the underlying data source to display for SfComboBox by using the [DisplayMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_DisplayMember) property, and you can bind a property to use as the actual value for the items by using the [ValueMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_ValueMember) property.
+To bind the ComboBox to data, set the [DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_DataSource) property to an `IEnumerable` implementation. You can bind a property of the underlying data source to display for SfComboBox by using the [DisplayMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_DisplayMember) property, and you can bind a property to use as the actual value for the items by using the [ValueMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_ValueMember) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -118,7 +118,7 @@ sfComboBox1.DataSource = usStates
 
 > When the underlying data is a primitive type such as `string` or `int`, `DisplayMember` and `ValueMember` are not required.
 
-![GettingStarted_img2](GettingStarted_images/GettingStarted_img2.png)
+![Getting started with Windows Forms ComboBox](GettingStarted_images/GettingStarted_img2.png)
 
 ## Auto complete
 Auto complete provides three different ways to display suggestions in the drop-down list.

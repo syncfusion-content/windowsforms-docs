@@ -2,7 +2,6 @@
 layout: post
 title: Sorting in Windows Forms ComboBox | Syncfusion®
 description: Sorting in Windows Forms ComboBox enables arranging data in ascending or descending order using sort descriptors for efficient data organization.
-
 platform: windowsforms
 control: ComboBox
 documentation: ug
@@ -10,7 +9,7 @@ documentation: ug
 
 # Sorting in Windows Forms ComboBox
 
-The [Windows Forms ComboBox](https://www.syncfusion.com/winforms-ui-controls/combobox) (SfComboBox) supports sorting the data either in ascending or descending order by using the [sfComboBox1.DropDownListView.View.SortDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_SortDescriptors) property. 
+The ComboBox supports sorting the data either in ascending or descending order by using the [SortDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_SortDescriptors) property. 
 
 You can sort the data by creating the `SortDescriptor` with required name and direction and add it to the [SortDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_SortDescriptors) property.
 
@@ -31,4 +30,4 @@ sfComboBox1.DropDownListView.View.SortDescriptors.Add(New Syncfusion.DataSource.
 {% endtabs %}
 
 
-![Sorted items of the drop-down](Sorting_images/Sorting_img1.png)
+![Sorted items of the drop-down in Windows Forms ComboBox](Sorting_images/Sorting_img1.png)

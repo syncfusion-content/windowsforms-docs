@@ -9,7 +9,7 @@ documentation: ug
 
 # Auto Complete in Windows Forms ComboBox
 
-Auto complete can be enabled by using the [SfComboBox.AutoCompleteMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_AutoCompleteMode) property. Three different ways to display the suggestions are:
+Auto complete can be enabled by using the [AutoCompleteMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_AutoCompleteMode) property. Three different ways to display the suggestions are:
 
 * Suggest: Displays suggestion in drop-down list.
 * Append: Appends the first suggestion to text.
@@ -34,7 +34,7 @@ sfComboBox1.AutoCompleteMode = AutoCompleteMode.Suggest
 
 ### Append
 
-The closest match will be added to the editor portion of the [WinForms ComboBox](https://www.syncfusion.com/winforms-ui-controls/combobox) (SfComboBox) control with partial string selection in the drop-down list. This mode can be enabled by setting the [AutoCompleteMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_AutoCompleteMode) property as `Append`.
+The closest match will be added to the editor portion of the ComboBox control with partial string selection in the drop-down list. This mode can be enabled by setting the [AutoCompleteMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_AutoCompleteMode) property as `Append`.
 
 {% tabs %}
 {% highlight c# %}

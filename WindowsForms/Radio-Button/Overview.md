@@ -9,14 +9,14 @@ documentation: ug
 
 # About Syncfusion® Windows Forms Radio Button Control
 
-Radio Button functions similar to the Windows standard RadioButton but it has some additional enhancements. It helps to provide a great look and feel to the RadioButtons. It supports themes, gradient colors, images and shadow text.
+The `RadioButtonAdv` control functions similar to the Windows standard RadioButton control but it has some additional enhancements. It helps to provide a great look and feel to the Radio Button. It supports themes, gradient colors, images and shadow text.
 
 ![Windows forms Radio Button overview](Overview_images/RadioButtonAdv_overview.jpeg) 
 
 
 ## Features
 
-Radio Button is an advanced RadioButton control and has the following features.
+`RadioButtonAdv` is an advanced Radio Button control and has the following features.
 
 **Radio Button Settings**: Integer and String values can be associated with each check state of the Radio Button.
 
