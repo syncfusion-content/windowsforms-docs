@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Foreground Settings in Windows Forms GradientLabel | Syncfusion®
-description: Customize the foreground appearance of the Windows Forms GradientLabel control using text colors, styles, and visual settings
+title: Foreground Settings in Windows Forms Gradient Label | Syncfusion®
+description: Customize the foreground appearance of the Windows Forms Gradient Label control using text colors, styles, and visual settings
 platform: WindowsForms
-control: GradientLabel
+control: Gradient Label
 documentation: ug
 ---
 
-# Foreground Settings in Windows Forms GradientLabel
+# Foreground Settings in Windows Forms Gradient Label
 
-This section illustrates the foreground settings of the GradientLabel control.
+This section illustrates the foreground settings of the Gradient Label control.
 
 ## DrawActiveWhenDisabled
 
@@ -18,7 +18,7 @@ Disabled text can be drawn active using the below given property.
 <table>
 <tr>
 <th>
-GradientLabel Property</th><th>
+Gradient Label Property</th><th>
 Description</th></tr>
 <tr>
 <td>
