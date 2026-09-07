@@ -13,7 +13,7 @@ Very often a table will have a column that displays an ID key defined in another
 
 Essential Grid will handle this work for you and it can be done through the designer. For the example discussed below, we use code to handle most of the steps.
 
-In the designer, drag two of the DataBound Grids onto a form. Use one grid to show the foreign key combobox and the other to show the raw data for the primary table. Once the grids are in place, the code, which is given below will create the tables for this sample and then the code in the Form_Load will hook up the foreign key combobox. In our sample, we have set the combobox button to display only the current row.
+In the designer, drag two of the GridDataBoundGrid's onto a form. Use one grid to show the foreign key combobox and the other to show the raw data for the primary table. Once the grids are in place, the code, which is given below will create the tables for this sample and then the code in the Form_Load will hook up the foreign key combobox. In our sample, we have set the combobox button to display only the current row.
 
 {% tabs %}
 {% highlight c# %}

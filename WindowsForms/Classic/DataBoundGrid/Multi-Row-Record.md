@@ -9,7 +9,7 @@ documentation: ug
 
 # Multi-Row Records in Windows Forms GridDataBoundGrid
 
-DataBound Grid has support for displaying a single record in multiple rows. 
+GridDataBoundGrid has support for displaying a single record in multiple rows. 
 
 ![Multi-Row-Record_img1](Multi-Row-Record_images/Multi-Row-Record_img1.jpeg)
 
