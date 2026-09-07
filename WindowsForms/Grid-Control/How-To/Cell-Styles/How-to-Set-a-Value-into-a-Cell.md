@@ -40,7 +40,7 @@ GridControl1(rowIndex, colIndex).CellValue = 3.14159
 {% endhighlight %}
 {% endtabs %}
 
-N> Using an indexer on the Grid Control to set values will trigger several notification events that listeners (and the control itself) can use to monitor its statel. These events may slow things down if you have a lot of data to move into the GridControl. In this case, you can want to employ a technique that will avoid these events.
+N> Using an indexer on the Grid Control to set values will trigger several notification events that listeners (and the control itself) can use to monitor its state. These events may slow things down if you have a lot of data to move into the GridControl. In this case, you can want to employ a technique that will avoid these events.
 
 There are several ways to do this; if your data is in some form supported by GridControl.PopulateValues method, you can use that method to move such data into Grid Control. Another option is to use GridControl.SetCellInfo method by passing its appropriate parameters to avoid the notification events. But, if you are only setting a few values or you need the notification events to be raised, then using an indexer will accomplish this task.
 

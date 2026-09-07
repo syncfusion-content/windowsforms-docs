@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Print a Grid in Windows Forms Grid Control | Syncfusion®
-description: Print a grid in Syncfusion® Windows Forms Grid Control using the GridPrintDocument class and configure print settings through a print dialog.
+title: Print Grid and Set Options in Windows Forms Grid Control | Syncfusion®
+description: Describe printing a grid in Syncfusion® Windows Forms Grid Control using GridPrintDocument class, configure print settings, headers, and lines.
 platform: windowsforms
 control: Grid Control
 documentation: ug
 ---
 
-# How to Print a Grid in Windows Forms Grid Control
+# How to Print Grid and Customize Options in Windows Forms Grid Control
 
 GridPrintDocument class will allow you to [print](http://help.syncfusion.com/windowsforms/grid/virtual-grid#print-preview-and-printing) your grids. Here is a button click event handler that will show you how to use this class.
 
@@ -77,6 +77,216 @@ Private Sub menuItem13_Click(ByVal sender As Object, ByVal e As System.EventArgs
         End Try
     End If
 End Sub 
+
+{% endhighlight %}
+{% endtabs %}
+
+Essential Grid provides support to print column and row header and horizontal and vertical lines. 
+
+## Printing column header
+
+You can print column header using PrintColumnHeader property. 
+
+The following code illustrates how to print column header in Grid Control: 
+
+{% tabs %}
+{% highlight c# %}
+
+gridControl1.PrintColumnHeader = true;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+gridControl1.PrintColumnHeader = True
+
+{% endhighlight %}
+{% endtabs %}
+
+The following code illustrates how to print column header in GridDataBoundGrid: 
+
+{% tabs %}
+{% highlight c# %}
+
+gridDataBoundGrid.PrintColumnHeader = true;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+gridDataBoundGrid.PrintColumnHeader = True
+
+{% endhighlight %}
+{% endtabs %}
+
+The following code illustrates how to print the column header GridGroupingControl: 
+
+{% tabs %}
+{% highlight c# %}
+
+gridGroupingControl1.PrintColumnHeader = true;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+gridGroupingControl1.PrintColumnHeader = True
+
+{% endhighlight %}
+{% endtabs %}
+
+## Printing row header
+
+You can print row header using PrintRowHeader__property. 
+
+The following code illustrates how to print row header in Grid Control: 
+
+{% tabs %}
+{% highlight c# %}
+
+gridControl1.PrintRowHeader = true;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+gridControl1.PrintRowHeader = True
+
+{% endhighlight %}
+{% endtabs %}
+
+The following code illustrates how to print the row header in GridDataBoundGrid: 
+
+{% tabs %}
+{% highlight c# %}
+
+gridDataBoundGrid.PrintRowHeader = true;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+gridDataBoundGrid.PrintRowHeader = True
+
+{% endhighlight %}
+{% endtabs %}
+
+The following code illustrates how to print row header GridGroupingControl: 
+
+{% tabs %}
+{% highlight c# %}
+
+gridGroupingControl1.PrintRowHeader = true;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+gridGroupingControl1.PrintRowHeader = True
+
+{% endhighlight %}
+{% endtabs %}
+
+## Printing horizontal lines
+
+You can print horizontal lines using PrintHorizontalLines property. 
+
+The following code illustrates how to print horizontal lines in Grid Control: 
+
+{% tabs %}
+{% highlight c# %}
+
+gridControl1.PrintHorizontalLines = true; 
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+gridControl1.PrintHorizontalLines = True
+
+{% endhighlight %}
+{% endtabs %}
+
+The following code illustrates how to print horizontal lines in GridDataBoundGrid: 
+
+{% tabs %}
+{% highlight c# %}
+
+gridDataBoundGrid.PrintHorizontalLines = true;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+gridDataBoundGrid.PrintHorizontalLines = True
+
+{% endhighlight %}
+{% endtabs %}
+
+The following code illustrates how to print horizontal lines GridGroupingControl: 
+
+{% tabs %}
+{% highlight c# %}
+
+gridGroupingControl1.PrintHorizontalLines = true;
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+gridGroupingControl1.PrintHorizontalLines = True
+
+{% endhighlight %}
+{% endtabs %}
+
+## Printing vertical lines 
+
+You can print vertical lines using PrintVerticalLines__property. 
+
+The following code illustrates how to print vertical lines in Grid Control: 
+
+{% tabs %}
+{% highlight c# %}
+
+gridControl1.PrintVerticalLines = true;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+gridControl1.PrintVerticalLines = True
+
+{% endhighlight %}
+{% endtabs %}
+
+The following code illustrates how to print vertical lines in GridDataBoundGrid: 
+
+{% tabs %}
+{% highlight c# %}
+
+gridDataBoundGrid.PrintVerticalLines = true;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+gridDataBoundGrid.PrintVerticalLines = True
+
+{% endhighlight %}
+{% endtabs %}
+
+ The following code illustrates how to print vertical lines GridGroupingControl: 
+
+{% tabs %}
+{% highlight c# %}
+
+gridGroupingControl1.PrintVerticalLines = true;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+gridGroupingControl1.PrintVerticalLines = True
 
 {% endhighlight %}
 {% endtabs %}
