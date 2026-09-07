@@ -9,5 +9,5 @@ documentation: ug
 
 # Common in Windows Forms Grid Control
 
-The tasks and solutions discussed in this section apply to either GridControl or GridDataBoundGrid.
+The tasks and solutions discussed in this section apply to either Grid Control or GridDataBoundGrid.
 
