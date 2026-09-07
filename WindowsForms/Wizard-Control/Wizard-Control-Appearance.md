@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Appearance in Windows Forms WizardControl | Syncfusion®
-description: Customize the appearance of the Windows Forms WizardControl using visual styles, layouts, colors, and UI customization settings.
+title: Appearance in Windows Forms Wizard Control | Syncfusion®
+description: Customize the appearance of the Windows Forms Wizard Control using visual styles, layouts, colors, and UI customization settings.
 platform: windowsforms
-control: Wizard Package 
+control: Wizard Control 
 documentation: ug
 ---
 
-# Appearance in Windows Forms WizardControl
+# Appearance in Windows Forms Wizard Control
 
-This section discusses the various appearance settings of the Wizard controls.
+This section discusses the various appearance settings of the Wizard Control.
 
 ## Foreground settings
 
@@ -17,7 +17,7 @@ This section discusses the various appearance settings of the Wizard controls.
 
 The appearance of the text in the Wizard control can be controlled using the [Font](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.font?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_Font) and [ForeColor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.forecolor?view=netframework-4.7.2) properties.
 
-N> These [WizardControl.Font](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.font?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_Font) property will be applied only to the Description text and the Button texts of the Wizard Page. [WizardControl.ForeColor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.forecolor?view=netframework-4.7.2) property will be applied to the Page [Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_Title) and [description](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_Description) text alone. To set Font style for Title and description, see Title and Description Settings topic.
+N> These [Font](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.font?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_Font) property will be applied only to the Description text and the Button texts of the Wizard Page. [ForeColor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.forecolor?view=netframework-4.7.2) property will be applied to the Page [Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_Title) and [description](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_Description) text alone. To set Font style for Title and description, see Title and Description Settings topic.
 
 {% tabs %}
 
@@ -50,7 +50,7 @@ Me.wizardControl1.ForeColor = System.Drawing.Color.DarkBlue
 ![Wizard control foreground](Wizard-Control-Appearance_images/Wizard-Control-Appearance_img2.jpeg) 
 
 
-N> These settings can be overridden by the individual [WizardPage.Font](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.font?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_Font) and [WizardControl.ForeColor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.forecolor?view=netframework-4.7.2) settings.
+N> These settings can be overridden by the individual [Font](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.font?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_Font) and [ForeColor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.forecolor?view=netframework-4.7.2) settings.
 
 The foreground settings for the Button text can be overridden by the [WizardPage.Button.Font](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.font?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_Font) and [WizardPage.Button.ForeColor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.forecolor?view=netframework-4.7.2) settings also. See Button Appearance topic.
 
@@ -187,8 +187,6 @@ Me.wizardControlPage2.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfus
 
 
 ## Border styles
-
-### Wizard control
 
 The various border styles for a Wizard control are as follows.
 
