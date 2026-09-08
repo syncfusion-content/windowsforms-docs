@@ -49,7 +49,26 @@ The [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) 
 To create a node in the WinForms Diagram control:
 
 1. Drag the Diagram control to the windows form.
-2. Press the F7 key to open the *.cs file and enter the following code in the Page_Load function.
+2. Register your trial license key
+ 
+Include your license key in `Program.cs` before initializing any Syncfusion components.
+ 
+{% tabs %}
+ 
+{% highlight C# %}
+ 
+// Register the Syncfusion license
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR_LICENSE_KEY");
+ 
+{% endhighlight %}
+ 
+{% endtabs %}
+
+{% endcolumn %}
+
+{: .installation-step-3}
+{% column %}
+3. Press the F7 key to open the *.cs file and enter the following code in the Page_Load function.
 
 {% capture codesnippet1 %}
 {% tabs %}
