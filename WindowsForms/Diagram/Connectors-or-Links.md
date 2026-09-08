@@ -11,7 +11,7 @@ documentation: ug
 
 ## Decorators
 
-Decorators are arrowheads/endcaps set via the `DecoratorShape` enumeration. Connectors and lines support the following decorator shapes:
+Decorators are arrowheads/end caps set via the `DecoratorShape` enumeration. Connectors and lines support the following decorator shapes:
 
 * Circle
 * CircleCross

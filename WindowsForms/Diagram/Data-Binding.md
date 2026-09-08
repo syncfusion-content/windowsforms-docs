@@ -24,7 +24,7 @@ The following table lists the Binding properties used to map data source fields 
 <tr>
 <td>DefaultNode</td><td>Gets or sets the default node used as a template for each data-bound node.</td><td>Node</td></tr>
 <tr>
-<td>DefaultConnector</td><td>Gets or sets the default conennector.</td><td>ConnectorBase </td></tr>
+<td>DefaultConnector</td><td>Gets or sets the default connector.</td><td>ConnectorBase </td></tr>
 <tr>
 <td>Diagram</td><td>Gets or sets the Diagram.</td><td>Diagram </td></tr>
 <tr>

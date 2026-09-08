@@ -1577,7 +1577,7 @@ diagram1.Controller.Group();</td></tr>
 <tr>
 <td>
 {{'[UnGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controller.html#Syncfusion_Windows_Forms_Diagram_Controller_UnGroup)'| markdownify }}</td><td>
-Ungroups the currently selected group in a diagram.</td><td>
+Ungroup the currently selected group in a diagram.</td><td>
 diagram1.Controller.UnGroup();</td></tr>
 <tr>
 <td>
