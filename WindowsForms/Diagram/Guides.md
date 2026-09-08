@@ -10,17 +10,14 @@ documentation: ug
 
 # Guides in Windows Forms Diagram
 
-Guides for the [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) control are viewable, non printing guidelines used to align a diagram node with other nodes. They provide support to align a diagram node with the boundary, center, or margin of other nodes.
+Guides for the [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) control are viewable, non-printing guidelines used to align a diagram node with other nodes. They provide support to align a diagram node with the boundary, center, or margin of other nodes. Guides are rendered only while dragging or resizing a node; they are not shown in the static diagram view and are not included when the diagram is printed.
 
-You can also change the visual style of Guides by using its LineStyle property.
+You can also change the visual style of the guides by using its LineStyle property.
+
 
 ### Properties
 
-The following table describes the various properties associated with Diagram Guides.
-
-
-
-Guides Properties
+The following table describes the various properties associated with the [Guides](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Guides.html) class:
 
 <table>
 <tr>
@@ -29,62 +26,64 @@ Property Name</th><th>
 Description</th></tr>
 <tr>
 <td>
-Guides</td><td>
-Gets the Diagram Guides.</td></tr>
+{{'[Guides](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controller.html#Syncfusion_Windows_Forms_Diagram_Controller_Guides)'| markdownify }}</td><td>
+Gets the Diagram Guides object.</td></tr>
 <tr>
 <td>
-Enable</td><td>
-Specifies whether to turn on/off Diagram Guides.</td></tr>
+{{'[Enable](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Guides.html#Syncfusion_Windows_Forms_Diagram_Guides_Enable)'| markdownify }}</td><td>
+Enables or disables the diagram guides.</td></tr>
 <tr>
 <td>
-LineStyle</td><td>
-Gets or sets the visual style for Diagram Guides.</td></tr>
+{{'[LineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Guides.html#Syncfusion_Windows_Forms_Diagram_Guides_LineStyle)'| markdownify }}</td><td>
+Gets or sets the visual style for the diagram guides.</td></tr>
 <tr>
 <td>
-Type</td><td>
-Specifies the Guide Type for nodes. The options included are as follows:{{ '_Boundary_' | markdownify }} {{ '_Center_' | markdownify }} {{ '_Margin_' | markdownify }} {{ '_All_' | markdownify }}</td></tr>
+{{'[Type](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Guides.html#Syncfusion_Windows_Forms_Diagram_Guides_Type)'| markdownify }}</td><td>
+Specifies the guide type for nodes. The available {{'[GuideTypes](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.GuideTypes.html)'| markdownify }} options are:{{ '_Boundary_' | markdownify }} {{ '_Center_' | markdownify }} {{ '_Margin_' | markdownify }} {{ '_All_' | markdownify }}. When `Margin` is set, the `Margin` property value is used to draw the margin line between nodes.</td></tr>
 <tr>
 <td>
-Margin</td><td>
-Gets or sets the margin between nodes.</td></tr>
+{{'[Margin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Guides.html#Syncfusion_Windows_Forms_Diagram_Guides_Margin)'| markdownify }}</td><td>
+Gets or sets the margin between nodes, in pixels (float).</td></tr>
 </table>
 
 
-The following code example illustrates how to turn on Guides for Diagram Nodes while dragging or resizing nodes.
+### Enable and Customize Guides
 
+The following code example illustrates how to turn on guides for diagram nodes while dragging or resizing nodes. A Diagram control named `diagram1` must already exist on the form.
 
 {% tabs %}
 {% highlight c# %}
 
-// Turns on Guides in Diagram.
+// Turns on guides in the diagram.
 diagram1.Controller.Guides.Enable = true;
 
-// Shows All Types of Guides.
+// Shows all types of guides.
 diagram1.Controller.Guides.Type = GuideTypes.All;
 
-// Specifies Line Color for Guides.
+// Specifies the line color for guides.
 diagram1.Controller.Guides.LineStyle.LineColor = Color.FromArgb(255, 153, 51);
 
-// Sets the Margin between Nodes.
+// Sets the margin between nodes.
 diagram1.Controller.Guides.Margin = 50;
 
 {% endhighlight %}
 {% highlight vb %}
 
-'Turns on Guides in Diagram.
+'Turns on guides in the diagram.
 diagram1.Controller.Guides.Enable = True
 
-'Shows All Types of Guides.
+'Shows all types of guides.
 diagram1.Controller.Guides.Type = GuideTypes.All
 
-'Specifies Line Color for Guides.
+'Specifies the line color for guides.
 diagram1.Controller.Guides.LineStyle.LineColor = Color.FromArgb(255, 153, 51)
 
-'Sets the Margin between Nodes.
+'Sets the margin between nodes.
 diagram1.Controller.Guides.Margin = 50
 
 {% endhighlight %}
 {% endtabs %}
 
+The following screenshot shows the guides rendered while dragging a node:
 
-![Diagram Guides](Guides_images/Guides_img1.png)
+![Guides in Windows Forms Diagram](Guides_images/Guides_img1.png)
