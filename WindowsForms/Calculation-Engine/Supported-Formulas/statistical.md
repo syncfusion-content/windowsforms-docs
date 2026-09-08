@@ -155,6 +155,38 @@ _BETADIST(x,alpha,beta,[A],[B])_
 
 * If you omit values for A and B, BETADIST uses the standard cumulative beta distribution, so that A = 0 and B = 1.
 
+## BETA.INV
+
+The `BETA.INV` function returns the inverse of the cumulative beta probability density function.
+
+**Syntax**
+
+_BETA.INV(probability,alpha,beta,[A],[B])_
+
+**Where:**  
+
+* probability: A probability associated with the beta distribution.  
+
+* alpha: A parameter of the distribution.  
+
+* beta: A parameter of the distribution.  
+
+* A: A lower bound to the interval of x.  
+
+* B: An upper bound to the interval of x.  
+
+**Remarks**  
+
+* If any argument is non-numeric, BETA.INV returns the `#VALUE!` error value.  
+
+* If alpha ≤ 0 or beta ≤ 0, BETA.INV returns the `#NUM!` error value.  
+
+* If probability ≤ 0 or probability > 1, BETA.INV returns the `#NUM!` error value.
+
+* If A = B, BETA.INV returns the `#NUM!` error value.
+
+* If you omit values for A and B, BETA.INV uses the standard cumulative beta distribution, so that A = 0 and B = 1.
+
 ## BINOMDIST
 
 Returns the individual term binomial distribution probability
@@ -831,6 +863,68 @@ number1, number2, ... are arguments for which you want to calculate the mean.
 * The arguments must be either numbers or names, arrays or references that contain numbers.
 
 * All values must be positive.
+
+## GROUPBY
+
+The `GROUPBY` function creates a summary of data by grouping rows based on specified fields and aggregating values using a supplied function.
+
+**Syntax**
+
+_GROUPBY(row_fields, values, function, [field_headers], [total_depth], [sort_order], [filter_array], [field_relationship])_
+
+**Where:**
+
+* row_fields: A column-oriented array or range that contains the values used to group rows and generate row headers. Multiple columns can be provided for multiple grouping levels.
+
+* values: A column-oriented array or range of data to aggregate. Multiple columns can be provided for multiple aggregations.
+
+* function: An aggregation function (SUM, AVERAGE, COUNT, PERCENTOF, etc.) or a lambda expression that aggregates values. A vector of functions can be provided for multiple aggregations.
+
+* field_headers: A number specifying whether row_fields and values have headers and whether field headers should be returned. Valid values are:
+
+	* Missing or omitted: Automatic detection based on data types (default)
+
+	* 0: No headers
+
+	* 1: Has headers, don't show in results
+
+	* 2: No headers, but generate and show
+
+	* 3: Has headers and show in results
+
+* total_depth: A number determining whether row headers should contain totals. Valid values are:
+
+	* Missing or omitted: Automatic (grand totals and subtotals where possible) (default)
+
+	* 0: No totals
+
+	* 1: Grand totals only
+
+	* 2: Grand totals and subtotals
+
+	* -1: Grand totals at top
+
+	* -2: Grand and subtotals at top
+
+* sort_order: A number or vector of numbers indicating how rows should be sorted. Positive numbers sort in ascending order; negative numbers sort in descending order. Numbers correspond to columns in row_fields followed by columns in values.
+
+* filter_array: A column-oriented 1D array of Booleans indicating whether each row should be included. The array length must match the row_fields length.
+
+* field_relationship: A number specifying the relationship between multiple row_fields columns. Valid values are:
+
+	* 0: Hierarchy (default) - Later columns respect hierarchy of earlier columns
+
+	* 1: Table - Each column sorted independently
+
+**Remarks**
+
+* For subtotals, row_fields must have at least 2 columns.
+
+* When using Hierarchy field_relationship, the sort order of later columns takes into account the hierarchy of earlier columns.
+
+* Subtotals are not supported with Table field_relationship (1) as they require a hierarchical data structure.
+
+* If multiple aggregation functions are provided, the orientation of the vector determines whether they are laid out row-wise or column-wise in the output.
 
 ## HARMEAN
 
@@ -2239,6 +2333,46 @@ _T.INV(probability,deg_freedom)_
 * If deg_freedom is not an integer, it is truncated.
 
 * If deg_freedom < 1, T.INV returns the #NUM! error value.
+
+## T.TEST
+
+The `T.TEST` function returns the probability associated with a Student's t-Test, used to determine if two samples likely come from the same population with an equal mean.
+
+**Syntax**  
+
+_T.TEST(array1, array2, tails, type)_
+
+**Where:**  
+
+* array1: The first data set.  
+
+* array2: The second data set.  
+
+* tails: Specifies the number of distribution tails.
+
+	* 1 - One tailed distribution.
+
+	* 2 - Two tailed distribution.
+
+* type: The kind of t-Test to perform.
+
+	* 1 - Paired.
+
+	* 2 - Two-sample equal variance.
+
+	* 3 - Two-sample unequal variance.
+
+**Remarks**  
+
+* If array1 and array2 have a different number of data points, and type = 1 (paired), `T.TEST` returns the `#N/A` error value.  
+
+* The tails and type arguments are truncated to integers.  
+
+* If tails or type is non-numeric, `T.TEST` returns the `#VALUE!` error.  
+
+* If tails is any value other than 1 or 2, `T.TEST` returns the `#NUM!` error.  
+
+* T.TEST uses the data in array1 and array2 to compute a non-negative t-statistic. If tails=1, T.TEST returns the probability of a higher value of the t-statistic under the assumption that array1 and array2 are samples from populations with the same mean. The value returned by T.TEST when tails=2 is double that returned when tails=1 and corresponds to the probability of a higher absolute value of the t-statistic under the "same population means" assumption.
 
 ## TRIMMEAN
 
