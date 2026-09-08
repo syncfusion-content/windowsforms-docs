@@ -99,8 +99,27 @@ This section depicts the step-by-step procedure to create a Diagram control thro
 To create a Diagram control using the designer:
 
 1. Create a new Windows Forms application.
-2. Open the Designer Form window.
-3. Drag Diagram from the Toolbox window and drop it to the Designer Form window.
+2. Register your trial license key
+ 
+Include your license key in `Program.cs` before initializing any Syncfusion components.
+ 
+{% tabs %}
+ 
+{% highlight C# %}
+ 
+// Register the Syncfusion license
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR_LICENSE_KEY");
+ 
+{% endhighlight %}
+ 
+{% endtabs %}
+
+{% endcolumn %}
+
+{: .installation-step-3}
+{% column %}
+3. Open the Designer Form window.
+4. Drag Diagram from the Toolbox window and drop it to the Designer Form window.
 
 
 
@@ -128,7 +147,26 @@ To create a WinForms Diagram control using code:
    * Syncfusion.Diagram.Base.dll
    * Syncfusion.Diagram.Windows.dll
    * Syncfusion.Shared.Base.dll
-3. Create a WinForms Diagram control  using the following code.
+3. Register your trial license key
+ 
+Include your license key in `Program.cs` before initializing any Syncfusion components.
+ 
+{% tabs %}
+ 
+{% highlight C# %}
+ 
+// Register the Syncfusion license
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR_LICENSE_KEY");
+ 
+{% endhighlight %}
+ 
+{% endtabs %}
+
+{% endcolumn %}
+
+{: .installation-step-3}
+{% column %}
+4. Create a WinForms Diagram control  using the following code.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -177,7 +215,7 @@ diagram.Location = New Point(20, 5)
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4. Add a model to the Diagram control.
+5. Add a model to the Diagram control.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -203,7 +241,7 @@ diagram.Model = model
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-5. Add the Diagram control to the Diagram Form window.
+6. Add the Diagram control to the Diagram Form window.
 
 {% capture codesnippet3 %}
 {% tabs %}
@@ -487,8 +525,27 @@ This section depicts the step-by-step procedure to create a [PaletteGroupBar](ht
 To create a [PaletteGroupBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.html#) control through the designer:
 
 1. Create a new Windows Forms application.
-2. Open the Designer Form window.
-3. Drag [PaletteGroupBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.html#) from Toolbox and drop it to the Designer Form window.
+2. Register your trial license key
+ 
+Include your license key in `Program.cs` before initializing any Syncfusion components.
+ 
+{% tabs %}
+ 
+{% highlight C# %}
+ 
+// Register the Syncfusion license
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR_LICENSE_KEY");
+ 
+{% endhighlight %}
+ 
+{% endtabs %}
+
+{% endcolumn %}
+
+{: .installation-step-3}
+{% column %}
+3. Open the Designer Form window.
+4. Drag [PaletteGroupBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.html#) from Toolbox and drop it to the Designer Form window.
 
 
 
@@ -518,7 +575,26 @@ To create a PaletteGroupBar control using code:
    * Syncfusion.Diagram.Base.dll
    * Syncfusion.Diagram.Windows.dll
    * Syncfusion.Shared.Base.dll
-3. Create a PaletteGroupBar control using the following code.
+3. Register your trial license key
+ 
+Include your license key in `Program.cs` before initializing any Syncfusion components.
+ 
+{% tabs %}
+ 
+{% highlight C# %}
+ 
+// Register the Syncfusion license
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR_LICENSE_KEY");
+ 
+{% endhighlight %}
+ 
+{% endtabs %}
+
+{% endcolumn %}
+
+{: .installation-step-3}
+{% column %}
+4. Create a PaletteGroupBar control using the following code.
 
 {% capture codesnippet4 %}
 {% tabs %}
@@ -586,8 +662,27 @@ This section depicts the step-by-step procedure to create a [PaletteGroupView](h
 To create a [PaletteGroupView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.html#) control using the designer:
 
 1. Create a new Windows Forms application.
-2. Open the Designer Form window.
-3. Drag [PaletteGroupView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.html#) from Toolbox and drop it to the Designer Form window.
+2. Register your trial license key
+ 
+Include your license key in `Program.cs` before initializing any Syncfusion components.
+ 
+{% tabs %}
+ 
+{% highlight C# %}
+ 
+// Register the Syncfusion license
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR_LICENSE_KEY");
+ 
+{% endhighlight %}
+ 
+{% endtabs %}
+
+{% endcolumn %}
+
+{: .installation-step-3}
+{% column %}
+3. Open the Designer Form window.
+4. Drag [PaletteGroupView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.html#) from Toolbox and drop it to the Designer Form window.
 
 
 
@@ -617,7 +712,26 @@ To create a PaletteGroupView control using code:
    * Syncfusion.Diagram.Base.dll
    * Syncfusion.Diagram.Windows.dll
    * Syncfusion.Shared.Base.dll
-3. Create a PaletteGroupView control using the following code.
+3. Register your trial license key
+ 
+Include your license key in `Program.cs` before initializing any Syncfusion components.
+ 
+{% tabs %}
+ 
+{% highlight C# %}
+ 
+// Register the Syncfusion license
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR_LICENSE_KEY");
+ 
+{% endhighlight %}
+ 
+{% endtabs %}
+
+{% endcolumn %}
+
+{: .installation-step-3}
+{% column %}
+4. Create a PaletteGroupView control using the following code.
 
 {% capture codesnippet5 %}
 {% tabs %}
@@ -680,8 +794,27 @@ This section depicts the step-by-step procedure to create an [Overview control](
 To create an Overview control using the designer:
 
 1. Create a new Windows Forms application.
-2. Open the Designer Form window.
-3. Drag [OverviewControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.OverviewControl.html#) from Toolbox and drop it to the Designer Form window.
+2. Register your trial license key
+ 
+Include your license key in `Program.cs` before initializing any Syncfusion components.
+ 
+{% tabs %}
+ 
+{% highlight C# %}
+ 
+// Register the Syncfusion license
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR_LICENSE_KEY");
+ 
+{% endhighlight %}
+ 
+{% endtabs %}
+
+{% endcolumn %}
+
+{: .installation-step-3}
+{% column %}
+3. Open the Designer Form window.
+4. Drag [OverviewControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.OverviewControl.html#) from Toolbox and drop it to the Designer Form window.
 
 
 
@@ -711,7 +844,26 @@ To create an Overview control using code:
    * Syncfusion.Diagram.Base.dll
    * Syncfusion.Diagram.Windows.dll
    * Syncfusion.Shared.Base.dll
-3. Create an Overview control using the following code.
+3. Register your trial license key
+ 
+Include your license key in `Program.cs` before initializing any Syncfusion components.
+ 
+{% tabs %}
+ 
+{% highlight C# %}
+ 
+// Register the Syncfusion license
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR_LICENSE_KEY");
+ 
+{% endhighlight %}
+ 
+{% endtabs %}
+
+{% endcolumn %}
+
+{: .installation-step-3}
+{% column %}
+4. Create an Overview control using the following code.
 
 {% capture codesnippet6 %}
 {% tabs %}
@@ -764,8 +916,27 @@ This section depicts the step-by-step procedure to create a [PropertyEditor](htt
 To create a [PropertyEditor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.PropertyEditor.html#) control using code:
 
 1. Create a new Windows Forms application.
-2. Open the Designer Form window.
-3. Drag [PropertyEditor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.PropertyEditor.html#) from Toolbox and drop it to the Designer Form window.
+2. Register your trial license key
+ 
+Include your license key in `Program.cs` before initializing any Syncfusion components.
+ 
+{% tabs %}
+ 
+{% highlight C# %}
+ 
+// Register the Syncfusion license
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR_LICENSE_KEY");
+ 
+{% endhighlight %}
+ 
+{% endtabs %}
+
+{% endcolumn %}
+
+{: .installation-step-3}
+{% column %}
+3. Open the Designer Form window.
+4. Drag [PropertyEditor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.PropertyEditor.html#) from Toolbox and drop it to the Designer Form window.
 
 
 
@@ -795,7 +966,26 @@ To create a PropertyEditor control using code:
    * Syncfusion.Diagram.Base.dll
    * Syncfusion.Diagram.Windows.dll
    * Syncfusion.Shared.Base.dll
-3. Create a PropertyEditor control using the following code.
+3. Register your trial license key
+ 
+Include your license key in `Program.cs` before initializing any Syncfusion components.
+ 
+{% tabs %}
+ 
+{% highlight C# %}
+ 
+// Register the Syncfusion license
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR_LICENSE_KEY");
+ 
+{% endhighlight %}
+ 
+{% endtabs %}
+
+{% endcolumn %}
+
+{: .installation-step-3}
+{% column %}
+4. Create a PropertyEditor control using the following code.
 
 {% capture codesnippet7 %}
 {% tabs %}
@@ -850,8 +1040,27 @@ This section depicts the step-by-step procedure to create a [DocumentExplorer](h
 To create a [DocumentExplorer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.DocumentExplorer.html#) control using the designer:
 
 1. Create a new Windows Forms application.
-2. Open the Designer Form window.
-3. Drag [DocumentExplorer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.DocumentExplorer.html#) from Toolbox and drop it to the Designer Form window.
+2. Register your trial license key
+ 
+Include your license key in `Program.cs` before initializing any Syncfusion components.
+ 
+{% tabs %}
+ 
+{% highlight C# %}
+ 
+// Register the Syncfusion license
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR_LICENSE_KEY");
+ 
+{% endhighlight %}
+ 
+{% endtabs %}
+
+{% endcolumn %}
+
+{: .installation-step-3}
+{% column %}
+3. Open the Designer Form window.
+4. Drag [DocumentExplorer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.DocumentExplorer.html#) from Toolbox and drop it to the Designer Form window.
 
 
 
@@ -881,7 +1090,26 @@ To create a DocumentExplorer control using code:
    * [Syncfusion.Diagram.Base.dll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Diagram.Base.Wizard.html)
    * [Syncfusion.Diagram.Windows.dll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DiagramWindowsAssembly.html)
    * Syncfusion.Shared.Base.dll
-3. Create a DocumentExplorer control using the following code.
+3. Register your trial license key
+ 
+Include your license key in `Program.cs` before initializing any Syncfusion components.
+ 
+{% tabs %}
+ 
+{% highlight C# %}
+ 
+// Register the Syncfusion license
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR_LICENSE_KEY");
+ 
+{% endhighlight %}
+ 
+{% endtabs %}
+
+{% endcolumn %}
+
+{: .installation-step-3}
+{% column %}
+4. Create a DocumentExplorer control using the following code.
 
 {% capture codesnippet8 %}
 {% tabs %}
