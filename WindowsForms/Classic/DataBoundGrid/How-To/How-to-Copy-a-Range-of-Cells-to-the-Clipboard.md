@@ -18,9 +18,9 @@ You can use CopyTextToClipboard method to copy text from a selected range of cel
 {% tabs %} 
 {% highlight c# %}
 
-//Copies selected range of cells to clipboard in GridControl.
+//Copies selected range of cells to clipboard in Grid Control.
 bool val = this.gridControl1.CutPaste.CopyTextToClipboard(this.gridControl1.Selections.Ranges);
-Console.WriteLine(" Selected Range of cells(GridControl)are in Clipboard. This is"+val);
+Console.WriteLine(" Selected Range of cells(Grid Control)are in Clipboard. This is"+val);
 MessageBox.Show("Data copied");
 
 //Copies selected range of cells to clipboard in GridDataBoundGrid.
@@ -31,9 +31,9 @@ MessageBox.Show("Data copied"); 
 
 {% highlight vb %}
 
-' Copies a selected range of cells to the clipboard in GridControl.
+' Copies a selected range of cells to the clipboard in Grid Control.
 Dim val As Boolean = Me.gridControl1.CutPaste.CopyTextToClipboard(Me.gridControl1.Selections.Ranges)
-Console.WriteLine(" Selected Range of cells(GridControl)are in Clipboard. This is", val)
+Console.WriteLine(" Selected Range of cells(Grid Control)are in Clipboard. This is", val)
 MessageBox.Show("Data copied")
 
 'Copies a selected range of cells to the clipboard in GridDataBoundGrid.

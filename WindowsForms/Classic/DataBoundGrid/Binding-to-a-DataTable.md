@@ -11,7 +11,7 @@ documentation: ug
 
 Binding to a DataTable is a very simple and straight-forward process. After defining DataTable, you must set GridDataBoundGrid.DataSource property to the table. Then you can easily use the Data Tab of your toolbox in Visual Studio to generate DataTables. Here we will add a simple People table using the code to illustrate how you can dynamically create a DataTable. 
 
-Creating a DataTable from code is a two-step process. You must first add DataColumn objects to the DataTable.Columns collection and then you must add DataRow objects to the DataTable.Rows collection. Given below is the code that does this. The code will assume that you have dropped a Grid Data Bound Grid onto the form.
+Creating a DataTable from code is a two-step process. You must first add DataColumn objects to the DataTable.Columns collection and then you must add DataRow objects to the DataTable.Rows collection. Given below is the code that does this. The code will assume that you have dropped a GridDataBoundGrid onto the form.
 
 {% tabs %}
 {% highlight c# %}

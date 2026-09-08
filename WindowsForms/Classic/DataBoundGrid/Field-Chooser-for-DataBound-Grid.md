@@ -75,17 +75,17 @@ fChooser.WireGrid(Me.GridDataBoundGrid1)
 2. When the code runs, the entire grid will open.
 3. Right click on a column header and select the Field Chooser menu item to view _Field Chooser_ dialog.
 
-   ![Windows Forms DataBoundGrid Image1](Field-Chooser-for-DataBound-Grid_images/Field-Chooser-for-DataBound-Grid_img1.png) 
+   ![Field-Chooser Image1](Field-Chooser-for-DataBound-Grid_images/Field-Chooser-for-DataBound-Grid_img1.png) 
 
 
 
 4. This dialog will list all the column names with check boxes adjacent to them.
 
-   ![Windows Forms DataBoundGrid Image2](Field-Chooser-for-DataBound-Grid_images/Field-Chooser-for-DataBound-Grid_img2.png) 
+   ![Field-Chooser Image2](Field-Chooser-for-DataBound-Grid_images/Field-Chooser-for-DataBound-Grid_img2.png) 
 
 
 
 5. Select the checkboxes of the columns you want to be displayed in the grid.
 6. The grid will have only the columns which are selected in the _Field Chooser_ dialog.
 
-   ![Windows Forms DataBoundGrid Image3](Field-Chooser-for-DataBound-Grid_images/Field-Chooser-for-DataBound-Grid_img3.png) 
+   ![Field-Chooser Image3](Field-Chooser-for-DataBound-Grid_images/Field-Chooser-for-DataBound-Grid_img3.png) 
