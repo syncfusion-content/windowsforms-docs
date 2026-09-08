@@ -9,7 +9,7 @@ documentation: ug
 
 # Pivot Columns in Windows Forms Pivot Grid
 
-Pivot columns are defined by using the [PivotItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base.PivotItem.html) object which holds the information needed for columns that appear in the pivot grid control.
+Pivot columns are defined by using the [PivotItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base.PivotItem.html) object which holds the information needed for columns that appear in WinForms Pivot Grid.
 
 ## Defining pivot columns using pivot items
 
@@ -48,7 +48,7 @@ Gets or sets the string you want to append to the pivot item's summary cells.</t
 string</td></tr>
 </table>
 
-Refer to the below code sample for adding pivot column item in the pivot grid control.
+Refer to the below code sample for adding pivot column item in Pivot Grid.
 
 {% tabs %}
 
@@ -76,11 +76,11 @@ Me.pivotGridControl1.PivotColumns.Add(pivotItem)
 
 ## Synchronizing pivot columns
 
-To synchronize the newly added or modified pivot column items with the pivot grid control, the [SynchronizePivotItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControlBase_SynchronizePivotItems_System_Collections_Specialized_NotifyCollectionChangedEventArgs_System_Boolean_) method will be used. This method will be invoked whenever the collection of pivot column items gets changed.
+To synchronize the newly added or modified pivot column items with the Pivot Grid control, the [SynchronizePivotItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControlBase_SynchronizePivotItems_System_Collections_Specialized_NotifyCollectionChangedEventArgs_System_Boolean_) method will be used. This method will be invoked whenever the collection of pivot column items gets changed.
 
 ## Sorting pivot columns
 
-By default, the pivot grid control sorts the column data in ascending order. The sorting order can be changed by defining custom comparer and it needs to be assigned using the [Comparer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base.PivotItem.html#Syncfusion_PivotAnalysis_Base_PivotItem_Comparer) property of corresponding pivot item.
+By default, the Pivot Grid control sorts the column data in ascending order. The sorting order can be changed by defining custom comparer and it needs to be assigned using the [Comparer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base.PivotItem.html#Syncfusion_PivotAnalysis_Base_PivotItem_Comparer) property of corresponding pivot item.
 
 Refer to the below code sample to define comparer for sorting the column data in descending order.
 

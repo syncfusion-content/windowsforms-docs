@@ -16,13 +16,13 @@ documentation: ug
 
 ## Normal layout
 
-Normal layout allows the pivot grid control to display both the row field values and column field values along with computational field values added to it. By default, the normal layout is displayed in pivot grid control.
+Normal layout allows the Pivot Grid control to display both the row field values and column field values along with computational field values added to it. By default, the normal layout is displayed in pivot grid control.
 
 ### Hiding subtotals
 
-This feature allows users to have an abstract view of the data by hiding the subtotal values of pivot grid control. The [ShowSubTotals](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_ShowSubTotals) property of pivot grid control is used to show or hide the subtotals based on the requirement.
+This feature allows users to have an abstract view of the data by hiding the subtotal values of Pivot Grid control. The [ShowSubTotals](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_ShowSubTotals) property of the control is used to show or hide the subtotals based on the requirement.
 
-Refer to the below code sample to hide all the subtotals in the pivot grid.
+Refer to the below code sample to hide all the subtotals in the Pivot Grid.
 
 {% tabs %}
 
@@ -44,9 +44,9 @@ Me.pivotGridControl1.ShowSubTotals = False
 
 ### Hiding grand totals
 
-By default, the pivot grid displays grand total values for both column values and row values. In order to customize the display of grand total in pivot grid, the [ShowGrandTotals](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_ShowGrandTotals) property is used.
+By default, the Pivot Grid displays grand total values for both column values and row values. In order to customize the display of grand total in pivot grid, the [ShowGrandTotals](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_ShowGrandTotals) property is used.
 
-Refer to the below code sample to hide all the grand totals in the pivot grid.
+Refer to the below code sample to hide all the grand totals in the Pivot Grid.
 
 {% tabs %}
 
@@ -68,13 +68,13 @@ Me.pivotGridControl1.ShowGrandTotals = False
 
 ## Flat layout
 
-Flat layout also called as "row pivots only mode", allows the pivot grid control to display only the row field values along with computational field values added to it. In this layout, the pivot grid displays the computational values as column values.
+Flat layout also called as "row pivots only mode", allows the control to display only the row field values along with computational field values added to it. In this layout, the Pivot Grid displays the computational values as column values.
 
 ### Enabling flat layout
 
-The [RowPivotsOnly](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_RowPivotsOnly) property of pivot grid control is used to enable or disable the feature of row pivots only mode or flat layout.
+The [RowPivotsOnly](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_RowPivotsOnly) property of Pivot Grid is used to enable or disable the feature of row pivots only mode or flat layout.
 
-Refer to the below code sample to enable the row pivots only mode in the pivot grid.
+Refer to the below code sample to enable the row pivots only mode in the Pivot Grid.
 
 {% tabs %}
 
@@ -107,11 +107,11 @@ Me.pivotGridControl1.RowPivotsOnly = True
 
 ### Interactive features
 
-Pivot grid control provides support for the following interactive options in row pivots only mode.
+Pivot Grid control provides support for the following interactive options in row pivots only mode.
 
 #### Filtering
 
-Filtering options are available to restrict the display of records in the pivot grid control. This feature enables users to extract a subset of records that meet certain criteria by using the [AllowRowPivotFiltering](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControlBase_AllowFiltering) property.
+Filtering options are available to restrict the display of records in the Pivot Grid control. This feature enables users to extract a subset of records that meet certain criteria by using the [AllowRowPivotFiltering](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControlBase_AllowFiltering) property.
 
 Refer to the below code sample to enable filtering in row pivots only mode.
 
@@ -135,7 +135,7 @@ Me.pivotGridControl1.TableControl.AllowRowPivotFiltering = True
 
 #### Sorting
 
-To sort the calculation columns in pivot grid, the pivot grid provides sorting options in the flat layout. Sorting option can be enabled or disabled using [AllowSort](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_AllowSorting) property of pivot grid.
+To sort the calculation columns in Pivot Grid, the control provides sorting options in the flat layout. Sorting option can be enabled or disabled using [AllowSort](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_AllowSorting) property of the control.
 
 {% tabs %}
 
@@ -159,7 +159,7 @@ Me.pivotGridControl1.AllowSorting = True
 
 The pivot value chooser is the popup used to list all the pivot fields available in the data source while enabling the row pivots only mode. This popup enables users to add or remove pivot fields at run time by checking and unchecking its appropriate check boxes.
 
-To enable this feature programmatically, the [ShowPivotValueChooser](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_ShowPivotValueChooser) property of pivot grid must be set as true.
+To enable this feature programmatically, the [ShowPivotValueChooser](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_ShowPivotValueChooser) property of Pivot Grid must be set as true.
 
 {% tabs %}
 
@@ -177,7 +177,7 @@ Me.pivotGridControl1.ShowPivotValueChooser = True
 
 {% endtabs %}
 
-In order to view the pivot value chooser at run time, right click on any column field's header to open the context menu. Then, click on "Pivot Value Chooser" option to view the pivot fields available in the data source of pivot grid.
+In order to view the pivot value chooser at run time, right click on any column field's header to open the context menu. Then, click on "Pivot Value Chooser" option to view the pivot fields available in the data source of Pivot Grid.
 
 ![Layouts_img6](Layouts_images/Layouts_img6.png)
 

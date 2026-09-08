@@ -9,7 +9,7 @@ documentation: ug
 
 # Pivot Calculations in Windows Forms Pivot Grid
 
-Pivot calculations are defined by using the [PivotComputationInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base.PivotComputationInfo.html) object which holds the information required for defining calculations that appear in the pivot grid control.
+Pivot calculations are defined by using the [PivotComputationInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base.PivotComputationInfo.html) object which holds the information required for defining calculations that appear in the Pivot Grid control.
 
 ## Defining pivot calculations using pivot computation information
 
@@ -17,13 +17,13 @@ To define a pivot calculation item, the following properties of `PivotComputatio
 
 * [FieldName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base.PivotComputationInfo.html#Syncfusion_PivotAnalysis_Base_PivotComputationInfo_FieldName) -
 Specifies the name of the field to be used for pivot calculation.
-* [CalculationName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base.PivotComputationInfo.html#Syncfusion_PivotAnalysis_Base_PivotComputationInfo_CalculationName) - Specifies the name that is to be displayed in the pivot table if more than one calculation is included in the pivot grid.
+* [CalculationName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base.PivotComputationInfo.html#Syncfusion_PivotAnalysis_Base_PivotComputationInfo_CalculationName) - Specifies the name that is to be displayed in the pivot table if more than one calculation is included in the Pivot Grid.
 * [Description](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base.PivotComputationInfo.html#Syncfusion_PivotAnalysis_Base_PivotComputationInfo_Description) -
 Specifies the description content of the calculation.
 * [Format](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base.PivotComputationInfo.html#Syncfusion_PivotAnalysis_Base_PivotComputationInfo_Format) -
 Specifies the format string to be used to formatting the calculation values.
 
-Refer to the below code sample for adding pivot calculation item in the pivot grid control.
+Refer to the below code sample for adding pivot calculation item in the Pivot Grid control.
 
 {% tabs %}
 
@@ -165,7 +165,7 @@ pivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With
 
 ### Expression field calculations
 
-Pivot grid allows to provide expression field for calculations, despite of in-built options provided for calculations such as PercentageOfGrandTotal, PercentageOfRowTotal, RankLargestToSmallest and so on. It can be achieved by setting the calculation type as "Formula" and by specifying the appropriate formula using the [Formula](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base.PivotComputationInfo.html#Syncfusion_PivotAnalysis_Base_PivotComputationInfo_Formula) property of `PivotComputationInfo` object.
+Pivot Grid allows to provide expression field for calculations, despite of in-built options provided for calculations such as PercentageOfGrandTotal, PercentageOfRowTotal, RankLargestToSmallest and so on. It can be achieved by setting the calculation type as "Formula" and by specifying the appropriate formula using the [Formula](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base.PivotComputationInfo.html#Syncfusion_PivotAnalysis_Base_PivotComputationInfo_Formula) property of `PivotComputationInfo` object.
 
 Refer to the following code sample to specify custom formula for calculations.
 
@@ -201,7 +201,7 @@ pivotGridControl1.PivotCalculations.Add(New PivotComputationInfo() With
 
 ## Synchronizing pivot calculations
 
-To synchronize the newly added or modified pivot calculation items with the pivot grid control, the [SynchronizeCalculations](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControlBase_SynchronizeCalculations_System_Collections_Specialized_NotifyCollectionChangedEventArgs_) method will be used. This method will be invoked whenever the collection of pivot calculation item gets changed.
+To synchronize the newly added or modified pivot calculation items with the Pivot Grid control, the [SynchronizeCalculations](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControlBase_SynchronizeCalculations_System_Collections_Specialized_NotifyCollectionChangedEventArgs_) method will be used. This method will be invoked whenever the collection of pivot calculation item gets changed.
 
 ## Pivot computation information dialog
 
