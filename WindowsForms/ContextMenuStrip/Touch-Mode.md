@@ -7,12 +7,12 @@ control: ContextMenuStripEx
 documentation: ug
 ---
 
-# Touch Mode in Windows Forms ContextMenuStrip
+# Touch Mode in WinForms Context Menu Strip
 
-Touch mode is used to access the control easily in touch devices. This option can be enabled using the [`EnableTouchMode`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ContextMenuStripEx.html#Syncfusion_Windows_Forms_Tools_ContextMenuStripEx_EnableTouchMode) property of ContextMenuStripEx control.
+Touch mode is used to access the control easily in touch devices. This option can be enabled using the [`EnableTouchMode`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ContextMenuStripEx.html#Syncfusion_Windows_Forms_Tools_ContextMenuStripEx_EnableTouchMode) property of WinForms Context Menu Strip control.
 
 
-The below code snippet shows how touch mode is enabled in ContextMenuStripEx control.
+The below code snippet shows how touch mode is enabled in WinForms Context Menu Strip control.
 
 {% tabs %}
 {% highlight c# %}
