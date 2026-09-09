@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Windows Forms ButtonEdit
 
-This section briefly describes how to create a new Windows Forms project in Visual Studio and add [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) with it's basic functionalities.
+This section briefly describes how to create a new Windows Forms project in Visual Studio and add [WinForms ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) with it's basic functionalities.
 
 ## Assembly deployment
 
@@ -17,33 +17,33 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 [Check here](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to find more details on how to install nuget packages in Windows Forms application.
 
-## Creating Application with ButtonEdit
-In this walk through, users will create WinForms application that contains [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control.
+## Creating Application with WinForms ButtonEdit
+In this walk through, users will create WinForms application that contains [WinForms ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control.
 
 ### Creating the Project
-Create new Windows Forms Project in Visual Studio to display [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control.
+Create new Windows Forms Project in Visual Studio to display [WinForms ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control.
 
-### Adding a ButtonEdit control through designer
+### Adding a WinForms ButtonEdit control through designer
 
-**Step 1**: Create a new Windows Forms application in Visual Studio. Drag and drop the [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) from toolbox in Form designer window. The [dependent assemblies](https://help.syncfusion.com/windowsforms/control-dependencies#buttonedit) will be added automatically.
+**Step 1**: Create a new Windows Forms application in Visual Studio. Drag and drop the [WinForms ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) from toolbox in Form designer window. The [dependent assemblies](https://help.syncfusion.com/windowsforms/control-dependencies#buttonedit) will be added automatically.
 
 ![ButtonEdit control from toolbox](GettingStarted_images/GettingStarted_img1.png) 
 
-**Step 2**: Set the desired properties for [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control using the **"Properties"** dialog window. 
+**Step 2**: Set the desired properties for [WinForms ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control using the **"Properties"** dialog window. 
 
 ![Showing properties pane customizing ButtonEdit control](GettingStarted_images/GettingStarted_img4.png)
 
-**Step 3**: You can add the child buttons for the [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) using **ButtonEditChildButton Collection Editor"** dialog box.
+**Step 3**: You can add the child buttons for the [WinForms ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) using **ButtonEditChildButton Collection Editor"** dialog box.
 
 ![Showing Button child buttons collection editor](GettingStarted_images/GettingStarted_img5.png)
 
-### Adding ButtonEdit control through Code
+### Adding WinForms ButtonEdit control through Code
 
-In order to add [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control manually, do the below steps,
+In order to add [WinForms ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control manually, do the below steps,
 
 1. Add the required [assembly references](https://help.syncfusion.com/windowsforms/control-dependencies#buttonedit) to the project.
 
-2. Create the [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control instance and add it to the Form.
+2. Create the [WinForms ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control instance and add it to the Form.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -101,9 +101,9 @@ End Sub
 
 ![ButtonEdit added by code](GettingStarted_images/GettingStarted_img2.png)
 
-## Embed the TextBox and ChildButtons in ButtonEdit control
+## Embed the TextBox and ChildButtons in WinForms ButtonEdit control
 
-[ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control is a combination of textbox and buttons. It contains [TextBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html#Syncfusion_Windows_Forms_Tools_ButtonEdit_TextBox) property to embed the instance of the textbox control. Also, we can set different types of textbox such as PercentTextBox, IntegerTextBox, etc. Meanwhile we can add child buttons in [Buttons](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html#Syncfusion_Windows_Forms_Tools_ButtonEdit_Buttons) collection.
+[WinForms ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control is a combination of textbox and buttons. It contains [TextBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html#Syncfusion_Windows_Forms_Tools_ButtonEdit_TextBox) property to embed the instance of the textbox control. Also, we can set different types of textbox such as PercentTextBox, IntegerTextBox, etc. Meanwhile we can add child buttons in [Buttons](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html#Syncfusion_Windows_Forms_Tools_ButtonEdit_Buttons) collection.
 
 {% tabs %}
 

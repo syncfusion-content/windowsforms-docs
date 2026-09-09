@@ -9,7 +9,7 @@ documentation: ug
 
 # About Syncfusion® Windows Forms SplitButton Control
 
-The **"SplitButton"** control is like a combination of control that behaves like a Button and dropdown menu which provide access to create a dropdown button-like interface. Using this control, you can perform different operations with dropdown items as like menu hierarchy. 
+The **"WinForms Split Button"** control is like a combination of control that behaves like a Button and dropdown menu which provide access to create a dropdown button-like interface. Using this control, you can perform different operations with dropdown items as like menu hierarchy. 
 
 ![WindowsForms Split Button Overview](overview_images/windowsforms-split-button-overview.png)
 
@@ -17,7 +17,7 @@ The **"SplitButton"** control is like a combination of control that behaves like
 
 **Button Mode** – Provides two types of mode: Normal and Toggle mode.
 
-**DropDown Item** - Provides support to add new items SplitButton dropdown list.
+**DropDown Item** - Provides support to add new items WinForms Split Button dropdown list.
 
 **DropDown Position** - Provides support to change the dropdown list position.
 
