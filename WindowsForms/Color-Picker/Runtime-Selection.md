@@ -6,9 +6,9 @@ platform: windowsforms
 control: ColorPickerUIAdv
 documentation: ug
 ---
-# Runtime Selection in WinForms color picker
+# Runtime Selection in WinForms Color Picker
 
-The WinForms color picker control at run time provides a Color dialog, using which we can select and add colors to the color groups.
+The WinForms Color Picker control at run time provides a Color dialog, using which we can select and add colors to the color groups.
 
 ![Windows forms ColorPickerUIAdv adding new color at runtime](ColorPickerUIAdv_Images/ColorPickerUIAdv_runtimeselection.jpeg) 
 
