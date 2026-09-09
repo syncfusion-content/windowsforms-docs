@@ -51,13 +51,13 @@ You can drag both Grid Record Navigation control and Grid control (either Grid c
 
    ![Grid-Record-Navigation-Control_images3](Creating-Grid-Record-Navigation-Control_images/Creating-Grid-Record-Navigation-Control_img3.jpeg)
 
-5. Run the application. A GridRecordNavigation control will be created.
+5. Run the application. A GridRecordNavigationControl will be created.
 
    ![Grid-Record-Navigation-Control_images4](Creating-Grid-Record-Navigation-Control_images/Creating-Grid-Record-Navigation-Control_img4.jpeg)
 
 ### Through code
 
-Here is some minimal code necessary to create the GridRecordNavigation control.
+Here is some minimal code necessary to create the GridRecordNavigationControl.
 
 {% tabs %}
 {% highlight c# %}

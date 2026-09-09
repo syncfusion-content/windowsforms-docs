@@ -9,7 +9,7 @@ documentation: ug
 
 # ComboBoxBase in Windows Forms MultiColumn ListBox
 
-The GridList control can be coupled to the ComboBoxBase control by using the ListControl property of ComboBoxBase class. ComboBoxBase is an advanced control provided by Syncfusion that essentially separates edit portion from drop-down portion making. It displays the GridList control as a dropdown i.e. user can drop the GridList control in the drop-down area to get a multi-column drop-down effect.
+The MultiColumn ListBox can be coupled to the ComboBoxBase control by using the ListControl property of ComboBoxBase class. ComboBoxBase is an advanced control provided by Syncfusion that essentially separates edit portion from drop-down portion making. It displays the MultiColumn ListBox as a dropdown i.e. user can drop the control in the drop-down area to get a multi-column drop-down effect.
 
 {% tabs %}
 {% highlight c# %}

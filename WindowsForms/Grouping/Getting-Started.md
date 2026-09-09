@@ -21,7 +21,7 @@ This section illustrates the step-by-step procedure to create the following plat
 
 1. Open Microsoft Visual Studio. Go to File menu and click New Project. In the New Project dialog, select Windows Forms Application template, name the project and click OK. 
 
-   ![WindowsForms Grouping Creating a Windows Application](Getting-Started_images/Getting-Started_img1.jpeg)
+   ![Creating a Windows Application](Getting-Started_images/Getting-Started_img1.jpeg)
 
 
 
@@ -41,7 +41,7 @@ To know how to deploy a web application, refer the _ASP.NET Behind the scenes_ s
 
 
 
-   ![WindowsForms Grouping Creating an ASP.NET Application](Getting-Started_images/Getting-Started_img2.jpeg)
+   ![Creating an ASP.NET Application](Getting-Started_images/Getting-Started_img2.jpeg)
 
 
 
@@ -64,7 +64,7 @@ To know how to deploy a web application, refer the _ASP.NET Behind the scenes_ s
 
 For More Information Refer:
 
-[Deploying Essential<sup>®</sup> Grouping](#deploying-essential-grouping)
+[Deploying](#deploying-essential-Grouping)
 
 ## Deploying Essential<sup>®</sup> Grouping
 

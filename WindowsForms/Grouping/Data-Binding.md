@@ -216,10 +216,10 @@ End Sub
 
 ## Setting a Datasource In the Grouping Engine
 
-Add the following grouping namespace for referring the assemblies deployed in the application.
+Add the following Grouping namespace for referring the assemblies deployed in the application.
 
 
- Refer Deploying Essential<sup>®</sup> Grouping section to know about deploying Essential<sup>®</sup> Grouping.
+ Refer to the Deploying Essential<sup>®</sup> Grouping section for details on deployment.
 
 {% tabs %}
 {% highlight c# %}

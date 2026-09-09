@@ -11,7 +11,7 @@ documentation: ug
 
 ## Data Binding
 
-Data binding used in the web pages that contain interactive components such as forms, calculators, tutorials, and games. Pages are displayed incrementally so that portions of a page can be used even before the entire page has finished downloading. Data binding helps in populating the GridList control with large amounts of data by using the DataSource property that allows the system to acquire data from the Data Source Object (DSO).
+Data binding used in the web pages that contain interactive components such as forms, calculators, tutorials, and games. Pages are displayed incrementally so that portions of a page can be used even before the entire page has finished downloading. Data binding helps in populating the MultiColumn ListBox with large amounts of data by using the DataSource property that allows the system to acquire data from the Data Source Object (DSO).
 
 {% tabs %}
 {% highlight c# %}
