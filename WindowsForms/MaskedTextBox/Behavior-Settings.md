@@ -8,7 +8,7 @@ documentation: ug
 --- 
 # Behavior Settings in Windows Form MaskedTextBox (MaskedEditBox)
 
-The behavior settings of the MaskedEditBox control are discussed below.
+The behavior settings of the WinForms MaskedTextBox control are discussed below.
 
 ### Prompt and padding character settings
 
@@ -108,7 +108,7 @@ Me.maskedEditBox1.MaxLength = 32800
 
 ### ReadOnly
 
-The ReadOnly mode can be enabled for the MaskedEditBox control using the below given property.
+The ReadOnly mode can be enabled for the WinForms MaskedTextBox control using the below given property.
 
 <table>
 <tr>

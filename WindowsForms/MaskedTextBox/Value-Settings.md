@@ -8,7 +8,7 @@ documentation: ug
 --- 
 # Value Settings in MaskedTextBox (MaskedEditBox)
 
-The value settings of the MaskedEditBox control are discussed below.
+The value settings of the WinForms MaskedTextBox control are discussed below.
 
 ## MinValue and MaxValue
 

@@ -8,7 +8,7 @@ documentation: ug
 --- 
 # Applying Themes in Windows Forms MaskedTextBox (MaskedEditBox)
 
-Themes can be applied to the MaskedEditBox control using the property given below.
+Themes can be applied to the WinForms MaskedTextBox control using the property given below.
 
 
 
@@ -24,7 +24,7 @@ Specifies whether or not to use XP themes when BorderStyle property is set to '
 </table>
 
 
-N> Refer_ [Border Settings](/windowsforms/maskededitbox/border-settings) _topic to know about the BorderStyle property.
+N> Refer to the [Border Settings](/windowsforms/maskededitbox/border-settings) topic to know about the BorderStyle property.
 
 {% tabs %}
 

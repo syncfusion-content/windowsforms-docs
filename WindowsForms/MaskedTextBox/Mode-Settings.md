@@ -8,7 +8,7 @@ documentation: ug
 --- 
 # Mode Settings in MaskedTextBox (MaskedEditBox)
 
-This section discusses how to set the different mode to the MaskedEditBox control.
+This section discusses how to set the different mode to the WinForms MaskedTextBox control.
 
 The mode settings for the [MaskedEditBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html) control can be customized by using the [ClipMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html#Syncfusion_Windows_Forms_Tools_MaskedEditBox_ClipMode), [InputMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html#Syncfusion_Windows_Forms_Tools_MaskedEditBox_InputMode) and [UsageMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html#Syncfusion_Windows_Forms_Tools_MaskedEditBox_UsageMode) properties.
 
@@ -20,15 +20,15 @@ Description</th></tr>
 <tr>
 <td>
 ClipMode</td><td>
-Specifies the format of the text that will be returned by the MaskedEdit control. The options included are as follows.{{ '_IncludeLiterals and_' | markdownify }}{{ '_ExcludeLiterals._' | markdownify }}The default value is 'IncludeLiterals'.</td></tr>
+Specifies the format of the text that will be returned by the WinForms MaskedTextBox control. The options included are as follows.{{ '_IncludeLiterals and_' | markdownify }}{{ '_ExcludeLiterals._' | markdownify }}The default value is 'IncludeLiterals'.</td></tr>
 <tr>
 <td>
 InputMode</td><td>
-Specifies the input mode for the MaskedEditBox control. The options included are as follows.{{ '_OvertypeOnly and_' | markdownify }}{{ '_Normal._' | markdownify }}The default value is 'Over typeOnly'.</td></tr>
+Specifies the input mode for the WinForms MaskedTextBox control. The options included are as follows.{{ '_OvertypeOnly and_' | markdownify }}{{ '_Normal._' | markdownify }}The default value is 'Over typeOnly'.</td></tr>
 <tr>
 <td>
 UsageMode</td><td>
-Specifies if the MaskedEditBox control is to behave as a numeric control.</td></tr>
+Specifies if the WinForms MaskedTextBox control is to behave as a numeric control.</td></tr>
 </table>
 
 ## Clip mode
@@ -49,7 +49,7 @@ The [UsageMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.F
 
 ## Normal mode
 
-When the `UsageMode` is set to `Normal`, there is no change in the behavior. This is the default mode for a MaskedEditBox control.
+When the `UsageMode` is set to `Normal`, there is no change in the behavior. This is the default mode for a WinForms MaskedTextBox control.
 
 ## Numeric mode
 

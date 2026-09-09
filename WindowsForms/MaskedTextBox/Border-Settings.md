@@ -8,7 +8,7 @@ documentation: ug
 --- 
 # Border Settings in MaskedTextBox (MaskedEditBox)
 
-The border settings of the MaskedEditBox control are discussed in this section.
+The border settings of the WinForms MaskedTextBox control are discussed in this section.
 
 The border styles for the [MaskedEditBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html) control can be customized using the [Border3DStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_Border3DStyle), [BorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_BorderColor), [BorderSides](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_BorderSides) and [BorderStyle](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.borderstyle?redirectedfrom=MSDN&view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1#System_Windows_Forms_TextBoxBase_BorderStyle) properties.
 
