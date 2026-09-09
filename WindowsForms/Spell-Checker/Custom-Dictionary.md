@@ -7,17 +7,17 @@ control: SpellCheckerAdv
 documentation: ug
 ---
 
-# Custom Dictionary in Windows Forms SpellCheckerAdv
+# Custom Dictionary in WinForms Spell Checker
 
 You can use a default and custom dictionaries to spell check the document based on your need. You can also spell check for any culture and languages using various dictionaries.
 
 ## Default SpellCheck Dictionary
 
-[SpellCheckerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SpellCheckerAdv.html) provides built-in dictionary for `English` language and it provides  suitable suggestion of the error words.
+[WinForms Spell Checker](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SpellCheckerAdv.html) provides built-in dictionary for `English` language and it provides  suitable suggestion of the error words.
 
 ## Load your own dictionaries for any language
 
-You can add your own dictionary to [SpellCheckerAdv.Dictionaries](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SpellCheckerAdv.html#Syncfusion_Windows_Forms_Tools_SpellCheckerAdv_Dictionaries) collection. `SpellCheckerAdv` support 3 standard dictionary file format:
+You can add your own dictionary to [SpellCheckerAdv.Dictionaries](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SpellCheckerAdv.html#Syncfusion_Windows_Forms_Tools_SpellCheckerAdv_Dictionaries) collection. `WinForms Spell Checker` support 3 standard dictionary file format:
 
 * Hunspell
 * Ispell
@@ -42,7 +42,7 @@ You can check spelling mistakes using `Hunspell` dictionary format. This format 
 
 4.Setting the required culture to the `SpellCheckerAdv.Culture` property.
 
-N> The following code snippets shows how to add Hunspell dictionary to the `SpellChecker`. Please refer [Adding SpellCheckerAdv to RichTextBox control](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#configuring-spellcheckeradv-into-richtextbox-control) to know how to configure SpellCheckerAdv.
+N> The following code snippets shows how to add Hunspell dictionary to the `WinForms Spell Checker`. Please refer [Adding WinForms Spell Checker to RichTextBox control](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#configuring-spellcheckeradv-into-richtextbox-control) to know how to configure WinForms Spell Checker.
 
 {% tabs %}
 {% highlight C# %}
@@ -96,7 +96,7 @@ You can check spelling mistakes using `Ispell` dictionary format. This format co
 
 4.Setting the required culture to the `SpellCheckerAdv.Culture` property.
 
-N> The following code snippets only explain the insertion of the Ispell dictionary to the `SpellChecker`. You can get code snippets to add a `SpellChecker`, from [Adding SpellCheckerAdv to RichTextBox control](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#configuring-spellcheckeradv-into-richtextbox-control) topic.
+N> The following code snippets only explain the insertion of the Ispell dictionary to the `WinForms Spell Checker`. You can get code snippets to add a `WinForms Spell Checker`, from [Adding WinForms Spell Checker to RichTextBox control](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#configuring-spellcheckeradv-into-richtextbox-control) topic.
 
 {% tabs %}
 {% highlight C# %}
@@ -150,7 +150,7 @@ You can check spelling mistakes using `OpenOffice` dictionary format. This forma
 
 4.Setting the required culture to the `SpellCheckerAdv.Culture` property.
 
-N> The following code snippets only explain the insertion of the OpenOffice dictionary to the `SpellChecker`. You can get code snippets to add a `SpellChecker`, from [Adding SpellCheckerAdv to RichTextBox control](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#configuring-spellcheckeradv-into-richtextbox-control) topic.
+N> The following code snippets only explain the insertion of the OpenOffice dictionary to the `WinForms Spell Checker`. You can get code snippets to add a `WinForms Spell Checker`, from [Adding WinForms Spell Checker to RichTextBox control](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#configuring-spellcheckeradv-into-richtextbox-control) topic.
 
 {% tabs %}
 {% highlight c# %}
@@ -199,7 +199,7 @@ If you want to add words that is not available in dictionary, you can add it usi
 
 4.Setting the required culture to the `SpellCheckerAdv.Culture` property.
 
-N> The following code snippets only explain the insertion of the custom dictionary to the `SpellChecker`. You can get code snippets to add a `SpellChecker`, from [Adding SpellCheckerAdv to RichTextBox control](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#configuring-spellcheckeradv-into-richtextbox-control) topic.
+N> The following code snippets only explain the insertion of the custom dictionary to the `WinForms Spell Checker`. You can get code snippets to add a `WinForms Spell Checker`, from [Adding WinForms Spell Checker to RichTextBox control](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#configuring-spellcheckeradv-into-richtextbox-control) topic.
 
 {% tabs %}
 {% highlight C# %}

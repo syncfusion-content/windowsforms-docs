@@ -7,9 +7,9 @@ control: BannerTextProvider
 documentation: ug
 ---
 
-# Getting Started with Windows Forms BannerTextProvider
+# Getting Started with WinForms Watermark Text Provider
 
-This section briefly describes how to create a new Windows Forms project in Visual Studio and add [BannerTextProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BannerTextProvider.html) with its basic functionalities.
+This section briefly describes how to create a new Windows Forms project in Visual Studio and add [WinForms Watermark Text Provider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BannerTextProvider.html) with its basic functionalities.
 
 ## Assembly deployment
 
@@ -17,14 +17,14 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 Refer to this [documentation](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to find more details about installing nuget packages in a Windows Forms application.
 
-## Creating Application with BannerTextProvider
-Create new Windows Forms Project in Visual Studio to display watermark for editor controls using [BannerTextProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BannerTextProvider.html) control.
+## Creating Application with WinForms Watermark Text Provider
+Create new Windows Forms Project in Visual Studio to display watermark for editor controls using [WinForms Watermark Text Provider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BannerTextProvider.html) control.
 
-## Adding BannerTextProvider control via designer
+## Adding WinForms Watermark Text Provider control via designer
 
 1. Create a new Windows Forms application using Visual Studio.
 
-2. Add the the [BannerTextProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BannerTextProvider.html) control to an application by dragging it from the toolbox to Form designer window. The [dependent assemblies](https://help.syncfusion.com/windowsforms/control-dependencies#bannertextprovider) will be added automatically.
+2. Add the the [WinForms Watermark Text Provider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BannerTextProvider.html) control to an application by dragging it from the toolbox to Form designer window. The [dependent assemblies](https://help.syncfusion.com/windowsforms/control-dependencies#bannertextprovider) will be added automatically.
 
 ![Drag and drop BannerTextProvider from toolbox](GettingStarted_images/GettingStarted_img1.png) 
 
@@ -34,13 +34,13 @@ Create new Windows Forms Project in Visual Studio to display watermark for edito
 
 ![BannerTextProvider added to TextBoxExt control](GettingStarted_images/GettingStarted_img2.png) 
 
-## Adding BannerTextProvider control via code
+## Adding WinForms Watermark Text Provider control via code
 
-In order to add [BannerTextProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BannerTextProvider.html) control manually, do the below steps,
+In order to add [WinForms Watermark Text Provider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BannerTextProvider.html) control manually, do the below steps,
 
 1. Add the required [assembly references](https://help.syncfusion.com/windowsforms/control-dependencies#bannertextprovider) to the project.
 
-2. Add the required namespace and create the [BannerTextProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BannerTextProvider.html) control instance then add it to the Form.
+2. Add the required namespace and create the [WinForms Watermark Text Provider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BannerTextProvider.html) control instance then add it to the Form.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -151,7 +151,7 @@ bannerTextProvider1.SetBannerText(textBoxExt, bannerTextInfo)
 
 N> Make sure to clear the default value of the [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BannerTextInfo.html#Syncfusion_Windows_Forms_BannerTextInfo_Text) property of the control before setting the banner text.
 
-The [Visible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BannerTextInfo.html#Syncfusion_Windows_Forms_BannerTextInfo_Visible) property allows you to customize visibility of BannerTextProvider control. [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BannerTextInfo.html#Syncfusion_Windows_Forms_BannerTextInfo_Text) and [Color](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BannerTextInfo.html#Syncfusion_Windows_Forms_BannerTextInfo__ctor_System_String_System_Boolean_System_Drawing_Font_System_Drawing_Color_Syncfusion_Windows_Forms_BannerTextMode_) properties allows you to set the watermark text and it's fore color. The [Font](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BannerTextInfo.html#Syncfusion_Windows_Forms_BannerTextInfo__ctor_System_String_System_Boolean_System_Drawing_Font_System_Drawing_Color_Syncfusion_Windows_Forms_BannerTextMode_) property allows to customize the Font of watermark.
+The [Visible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BannerTextInfo.html#Syncfusion_Windows_Forms_BannerTextInfo_Visible) property allows you to customize visibility of WinForms Watermark Text Provider control. [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BannerTextInfo.html#Syncfusion_Windows_Forms_BannerTextInfo_Text) and [Color](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BannerTextInfo.html#Syncfusion_Windows_Forms_BannerTextInfo__ctor_System_String_System_Boolean_System_Drawing_Font_System_Drawing_Color_Syncfusion_Windows_Forms_BannerTextMode_) properties allows you to set the watermark text and it's fore color. The [Font](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BannerTextInfo.html#Syncfusion_Windows_Forms_BannerTextInfo__ctor_System_String_System_Boolean_System_Drawing_Font_System_Drawing_Color_Syncfusion_Windows_Forms_BannerTextMode_) property allows to customize the Font of watermark.
 
 The rendering mode for disappearing the banner text can be customized by using [Mode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BannerTextInfo.html#Syncfusion_Windows_Forms_BannerTextInfo_Mode) property using the following values,
 
@@ -176,9 +176,9 @@ bannerTextProvider1.SetBannerText(textBoxExt, New Syncfusion.Windows.Forms.Banne
  ![Windows Forms BannerTextProvider showing bannertext to TextBoxExt control](Overview_images/Banner_textbox.png) 
 
 
-## Controls which supports BannerText
+## Controls which supports WinForms Watermark Text
 
- [BannerTextProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BannerTextProvider.html) feature can only be used for the following controls only.
+ [WinForms Watermark Text Provider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BannerTextProvider.html) feature can only be used for the following controls only.
 
 * [TextBoxBarItem](https://help.syncfusion.com/windowsforms/popupmenu/baritem-types#textboxbaritem ) (XPMenus)
 * [ComboBoxBarItem](https://help.syncfusion.com/windowsforms/popupmenu/baritem-types#comboboxbaritem ) (XPMenus)

@@ -6,9 +6,9 @@ platform: windowsforms
 control: ColorPickerButton 
 documentation: ug
 ---
-# Customization in Windows Forms ColorPickerButton
+# Customization in WinForms Color Picker DropDown
 
-ColorPickerButton displays the ColorUIControl as its dropdown. ColorPickerButton has properties to customize the ColorUIControl. Refer the [User Guide](/windowsforms/colorui/overview) for ColorUIControl. The size for the dropdown, i.e, ColorUIControl can be set using ColorUISize property.
+WinForms Color Picker DropDown displays the ColorUIControl as its dropdown. It has properties to customize the ColorUIControl. Refer the [User Guide](/windowsforms/colorui/overview) for ColorUIControl. The size for the dropdown, i.e, ColorUIControl can be set using ColorUISize property.
 
 {% tabs %}
 {% highlight c# %}
@@ -28,12 +28,12 @@ Me.colorPickerButton1.ColorUISize = New System.Drawing.Size(250, 280)
 
 ## ColorPicker Appearance
 
-The appearance and behavior of the ColorPickerButton can be controlled using the below properties.
+The appearance and behavior of the WinForms Color Picker DropDown can be controlled using the below properties.
 
 <table>
 <tr>
 <th>
-ColorPickerButton Properties</th><th>
+WinForms Color Picker DropDown Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -65,7 +65,7 @@ Me.colorPickerButton1.SelectedAsText = True
 
 ## Visual Style
 
-The ColorPickerButton control supports visual style such as Office2016White,Office2016Black,Office2016DarkGray,Office2016Colorful,Default and Metro. This style can be set using `Appearance` property.
+The WinForms Color Picker DropDown control supports visual style such as Office2016White,Office2016Black,Office2016DarkGray,Office2016Colorful,Default and Metro. This style can be set using `Appearance` property.
 
 {% tabs %}
 {% highlight c# %}
