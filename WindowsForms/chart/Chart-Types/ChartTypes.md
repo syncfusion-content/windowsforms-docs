@@ -66,12 +66,6 @@ Unlimited</td><td>
 2</td></tr>
 <tr>
 <td>
-Combination Charts</td><td>
-2</td><td>
-Unlimited</td><td>
-1</td></tr>
-<tr>
-<td>
 Funnel Charts</td><td>
 1</td><td>
 1</td><td>

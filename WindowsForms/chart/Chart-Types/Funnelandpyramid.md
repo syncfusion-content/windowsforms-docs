@@ -79,7 +79,7 @@ chartControl.Legend.Visible = False
 
 ### Figure base
 
-The [FigureBase](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPyramidConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPyramidConfigItem_FigureBase) property specifies base shape of the Pyramid chart in 3D mode.
+The [FigureBase](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPyramidConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPyramidConfigItem_FigureBase) property specifies base shape of the pyramid chart in 3D mode.
 
 The available base types are:
 
@@ -90,9 +90,11 @@ The following code displays the pyramid chart with a circular base.
 
 {% tabs %}
 {% highlight c# %}
+chartControl.Series3D = true;
 chartControl.Series[0].ConfigItems.PyramidItem.FigureBase = ChartFigureBase.Circle;
 {% endhighlight %}
 {% highlight vb %}
+chartControl.Series3D = True
 chartControl.Series(0).ConfigItems.PyramidItem.FigureBase = ChartFigureBase.Circle
 {% endhighlight %}
 {% endtabs %}
@@ -413,7 +415,7 @@ The [FunnelMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.
 
 It supports the following values:
 
-- [YIsHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFunnelMode.html#Syncfusion_Windows_Forms_Chart_ChartFunnelMode_YIsHeight): Uses the Y-value to calculate the height of each funnel block. It is the default value of the Funnel mode.
+- [YIsHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFunnelMode.html#Syncfusion_Windows_Forms_Chart_ChartFunnelMode_YIsHeight): Uses the Y-value to calculate the height of each funnel block. It is the default value of the funnel mode.
 - [YIsWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFunnelMode.html#Syncfusion_Windows_Forms_Chart_ChartFunnelMode_YIsWidth): Uses the Y-value to calculate the width of each funnel block.
 
 The following code calculates the width of each funnel block based on its Y-value.

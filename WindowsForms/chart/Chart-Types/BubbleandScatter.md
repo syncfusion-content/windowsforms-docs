@@ -29,16 +29,16 @@ series.Points.Add(90, 35, 4);
 
 chartControl.Series.Add(series);
 
-ChartSeries ChartSeries = new ChartSeries("Technology BBB", ChartSeriesType.Bubble);
-ChartSeries.Text = ChartSeries.Name;
+ChartSeries chartSeries = new ChartSeries("Technology BBB", ChartSeriesType.Bubble);
+chartSeries.Text = ChartSeries.Name;
 
-ChartSeries.Points.Add(10, 18, 4);
-ChartSeries.Points.Add(30, 29, 3);
-ChartSeries.Points.Add(50, 18, 2);
-ChartSeries.Points.Add(70, 24, 4);
-ChartSeries.Points.Add(90, 15, 4);
+chartSeries.Points.Add(10, 18, 4);
+chartSeries.Points.Add(30, 29, 3);
+chartSeries.Points.Add(50, 18, 2);
+chartSeries.Points.Add(70, 24, 4);
+chartSeries.Points.Add(90, 15, 4);
 
-chartControl.Series.Add(ChartSeries);
+chartControl.Series.Add(chartSeries);
 
 {% endhighlight %}
 {% highlight vb %}
@@ -54,23 +54,23 @@ series.Points.Add(90, 35, 4)
 
 chartControl.Series.Add(series)
 
-Dim series2 As New ChartSeries("Technology BBB", ChartSeriesType.Bubble)
-series2.Text = series2.Name
+Dim chartSeries As New ChartSeries("Technology BBB", ChartSeriesType.Bubble)
+chartSeries.Text = series2.Name
 
-series2.Points.Add(10, 18, 4)
-series2.Points.Add(30, 29, 3)
-series2.Points.Add(50, 18, 2)
-series2.Points.Add(70, 24, 4)
-series2.Points.Add(90, 15, 4)
+chartSeries.Points.Add(10, 18, 4)
+chartSeries.Points.Add(30, 29, 3)
+chartSeries.Points.Add(50, 18, 2)
+chartSeries.Points.Add(70, 24, 4)
+chartSeries.Points.Add(90, 15, 4)
 
-chartControl.Series.Add(series2)
+chartControl.Series.Add(chartSeries)
 
 {% endhighlight %}
 {% endtabs %}
 
 ![Bubble Chart in Windows Forms](../Chart-Types_images/windowsforms-bubble-chart.png)
 
-### Min bounds and max bounds
+### Min and max bounds
 
 The size of the bubbles depends on [MinBounds](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBubbleConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartBubbleConfigItem_MinBounds) and [MaxBounds](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBubbleConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartBubbleConfigItem_MaxBounds) of the bubbleItem in series. By default, the minBounds is (20, 20) and MaxBounds is (50, 50), so the width and height of the bubbles lie between 20 and 50.
 
@@ -93,7 +93,7 @@ series.ConfigItems.BubbleItem.MaxBounds = New RectangleF(0, 0, 25, 25)
 {% endhighlight %}
 {% endtabs %}
 
-![Bubble Chart in Windows Forms](../Chart-Types_images/windowsforms-chart-minbounds-and-maxbounds.png)
+![Bubble Min and Max Bounds in Windows Forms](../Chart-Types_images/windowsforms-chart-minbounds-and-maxbounds.png)
 
 ### Bubble type
 
@@ -155,16 +155,15 @@ series.Points.Add(90, 35, 4);
 
 chartControl.Series.Add(series);
 
-ChartSeries ChartSeries = new ChartSeries("Technology BBB", ChartSeriesType.Scatter);
-ChartSeries.Text = ChartSeries.Name;
+ChartSeries chartSeries = new ChartSeries("Technology BBB", ChartSeriesType.Scatter); chartSeries.Text = chartSeries.Name;
 
-ChartSeries.Points.Add(10, 18, 4);
-ChartSeries.Points.Add(30, 29, 3);
-ChartSeries.Points.Add(50, 18, 2);
-ChartSeries.Points.Add(70, 24, 4);
-ChartSeries.Points.Add(90, 15, 4);
+chartSeries.Points.Add(10, 18, 4);
+chartSeries.Points.Add(30, 29, 3);
+chartSeries.Points.Add(50, 18, 2);
+chartSeries.Points.Add(70, 24, 4);
+chartSeries.Points.Add(90, 15, 4);
 
-chartControl.Series.Add(ChartSeries);
+chartControl.Series.Add(chartSeries);
 
 {% endhighlight %}
 {% highlight vb %}
@@ -245,7 +244,7 @@ chartControl.Series(0).ScatterConnectType =
 
 ### Scatter spline tension
 
-The [ScatterSplineTension](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ScatterSplineTension) property specifies the tension of the spline curve connecting the scatter data points.
+The [ScatterSplineTension](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ScatterSplineTension) property specifies the tension of the spline curve connecting the scatter data points. The default value is `0.5`.
 
 N> The [ScatterSplineTension](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ScatterSplineTension) property takes effect when the [ScatterConnectType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ScatterConnectType) property is set to [Spline](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ScatterConnectType.html).
 
@@ -256,13 +255,13 @@ The following code configures the spline connection and its tension.
 chartControl.Series[0].ScatterConnectType =
     ScatterConnectType.Spline;
 
-chartControl.Series[0].ScatterSplineTension = 0.5;
+chartControl.Series[0].ScatterSplineTension = 0.9;
 {% endhighlight %}
 {% highlight vb %}
 chartControl.Series(0).ScatterConnectType =
     ScatterConnectType.Spline
 
-chartControl.Series(0).ScatterSplineTension = 0.5
+chartControl.Series(0).ScatterSplineTension = 0.9
 {% endhighlight %}
 {% endtabs %}
 
