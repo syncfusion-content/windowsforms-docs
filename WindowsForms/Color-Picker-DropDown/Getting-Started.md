@@ -6,9 +6,9 @@ platform: windowsforms
 control: ColorPickerDropDown
 documentation: ug
 ---
-# Getting Started with Windows Forms ColorPickerButton
+# Getting Started with WinForms Color Picker DropDown
 
-This section briefly describes how to create a new Windows Forms project in Visual Studio and add **ColorPickerButton** with it’s basic functionalities.
+This section briefly describes how to create a new Windows Forms project in Visual Studio and add **WinForms Color Picker DropDown** with it’s basic functionalities.
 
 ## Assembly deployment
 
@@ -17,19 +17,19 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 [Refer here](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to find more details on how to install nuget packages in Windows Forms application.
 
 
-## Adding the ColorPickerButton control via designer
+## Adding the WinForms Color Picker DropDown control via designer
 
 1. Create a new Windows Forms application in Visual Studio.
 
-2. The **ColorPickerButton** control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically.
+2. The **WinForms Color Picker DropDown** control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically.
 
    * Syncfusion.Shared.Base
 
 ![Drag and drop ColorPickerButton from toolbox](ColorPickerButton_images/Overview_img247.jpeg) 
 
-## Adding the ColorPickerButton control via code
+## Adding the WinForms Color Picker DropDown control via code
 
-The following steps illustrate how to create an **ColorPickerButton** control programmatically:
+The following steps illustrate how to create an **WinForms Color Picker DropDown** control programmatically:
 
 1. Create a C# or VB application via Visual Studio.
 
@@ -57,7 +57,7 @@ Imports Syncfusion.Windows.Forms
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 
-4. Create an instance of the **ColorPickerButton** control and add it to the form.
+4. Create an instance of the **WinForms Color Picker DropDown** control and add it to the form.
 
 {% capture codesnippet2 %}
 {% tabs %}
