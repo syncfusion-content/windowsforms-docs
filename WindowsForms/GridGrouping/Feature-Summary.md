@@ -141,7 +141,7 @@ Essential<sup>®</sup> GridGroupingControl possesses advanced features such as O
 
 
 
-* Navigation: GridGroupingControlGridGroupingControl includes built-in Navigation and Page Bars that allows users to navigate records with ease.
+* Navigation: GridGroupingControl includes built-in Navigation and Page Bars that allows users to navigate records with ease.
 
  ![Feature-Summary_images17](Feature-Summary_images/Feature-Summary_img17.jpeg) 
 

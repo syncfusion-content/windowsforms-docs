@@ -615,7 +615,7 @@ Me.gridGroupingControl1.GridGroupDropArea.TreeLineColor = Color.Red
 
 #### Aligning the GroupDropArea
 
-By default, GroupDropArea is displayed at the top of the GridGroupingControl. With GroupDropAreaAlignment property, you can align it at the bottom, left, or right of the GridGroupingControl.
+By default, GroupDropArea is displayed at the top of the GridGroupingControl. With GroupDropAreaAlignment property, you can align it at the bottom, left, or right of the control.
 
 
 
@@ -1340,7 +1340,7 @@ End Sub
 
 #### Freezing the Caption Row
 
-GridGroupingControl provides support to freeze Caption Row to make sure it stays visible while scrolling content to the left or right. With FreezeCaption property, you can freeze or unfreeze the Caption Row in the GridGroupingControl. A frozen Caption Cell belongs to the GroupCaptionCell Cell Type. Visual Style of the Caption Cell Type is based on Visual Style of GridGroupingControl. Caption Cell text can be changed according to user requirements.
+GridGroupingControl provides support to freeze Caption Row to make sure it stays visible while scrolling content to the left or right. With FreezeCaption property, you can freeze or unfreeze the Caption Row. A frozen Caption Cell belongs to the GroupCaptionCell Cell Type. Visual Style of the Caption Cell Type is based on Visual Style of GridGroupingControl. Caption Cell text can be changed according to user requirements.
 
 {% tabs %}
 {% highlight C# %} 

@@ -114,7 +114,7 @@ The following screen shot illustrates Foreign Key Relations in the GridGroupingC
 
 ## Grid Field Chooser
 
-You can customize column appearance of a GridGroupingControl by using plug-in utility called Field Chooser. FieldChooser class can be associated with GridGroupingControl to add or remove columns from the grid. The following code example illustrates this.
+You can customize column appearance of a GridGroupingControl by using plug-in utility called Field Chooser. FieldChooser class can be associated with the control to add or remove columns from the grid. The following code example illustrates this.
 
 {% tabs %}
 {% highlight C# %} 
