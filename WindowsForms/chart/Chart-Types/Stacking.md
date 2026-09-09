@@ -40,7 +40,7 @@ chartControl.Series.Add(secondServer);
 {% endhighlight %}
 {% highlight vb %}
 
-// Create chart series and add data points into it.
+' Create chart series and add data points into it.
 Dim firstServer As New ChartSeries("Server 1", ChartSeriesType.StackingColumn)
 firstServer.Points.Add(10, 300)
 firstServer.Points.Add(20, 600)
@@ -61,28 +61,7 @@ chartControl.Series.Add(secondServer)
 {% endhighlight %}
 {% endtabs %}
 
-![Stacking Column Chart in Windows Forms](../Chart-Types_images/windowsforms-stacking-column-series-rendering-order.png)
-
-### Series rendering order
-
-The [ZOrder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ZOrder) property specifies the order in which chart series are rendered. The chart sorts the series based on their `ZOrder` values before rendering.
-
-N> The `ZOrder` property also applies to `Histogram`, `Tornado`, `Box and Whisker`, `Area`, `Polar`, `Radar`, `Bar`, `Column`, `Bubble`, `Candle`, `HiLo`, and `HiLo Open Close` charts.
-
-The following code configures the rendering order of two Gantt series.
-
-{% tabs %}
-{% highlight c# %}
-chartControl.Series[0].ZOrder = 1;
-chartControl.Series[1].ZOrder = 0;
-{% endhighlight %}
-{% highlight vb %}
-chartControl.Series(0).ZOrder = 1
-chartControl.Series(1).ZOrder = 0
-{% endhighlight %}
-{% endtabs %}
-
-![Series rendering order in Windows Forms](../Chart-Types_images/windowsforms-stacking-column-chart.png)
+![Stacking Column Chart in Windows Forms](../Chart-Types_images/windowsforms-stacking-column-chart.png)
 
 ## Stacking column 100 chart
 
@@ -115,7 +94,7 @@ chartControl.Series.Add(secondServer);
 {% endhighlight %}
 {% highlight vb %}
 
-// Create chart series and add data points into it.
+' Create chart series and add data points into it.
 Dim firstServer As New ChartSeries("Server 1", ChartSeriesType.StackingColumn100)
 firstServer.Points.Add(10, 300)
 firstServer.Points.Add(20, 600)

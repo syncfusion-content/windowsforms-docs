@@ -166,8 +166,8 @@ void OnChartControl1_ChartFormatAxisLabel(object sender, ChartFormatAxisLabelEve
 
 Private labels() As String = {"Sales",
         "Administration",
-        "Information \nTechnology",
-        "Customer\n Support",
+        "Information" & vbCrLf & "Technology",
+        "Customer" & vbCrLf & "Support",
         "Development",
         "Marketing"}
 
@@ -251,7 +251,7 @@ The supported values are defined in the [ChartRadarDrawType](https://help.syncfu
 - [Line](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarDrawType.html#Syncfusion_Windows_Forms_Chart_ChartRadarDrawType_Line): Connects the data points without filling the enclosed region.
 - [Symbol](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRadarDrawType.html#Syncfusion_Windows_Forms_Chart_ChartRadarDrawType_Symbol): Displays a symbol at each data point without connecting the points.
 
-N> The `Type` property applies to both `Polar` and `Radar` charts.
+N> The `Type` property also applies to `Polar` charts.
 
 The following code renders the radar chart as a line chart.
 
