@@ -37,7 +37,7 @@ Me.doubleTextBox1.NumberNegativePattern = 2
 {% endhighlight %} 
 {% endtabs %}
 
-## WinForms Double TextBox Value
+## Setting Minimum and Maximum Values in WinForms Double TextBox
 
 The maximum and minimum value of the editable field in WinForms Double TextBox control can be specified using the below properties.
 
