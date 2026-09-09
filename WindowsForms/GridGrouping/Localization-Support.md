@@ -253,7 +253,7 @@ End Function
 
 ## Localization By Using Satellite Assemblies
 
-A Satellite Assembly is a compiled library that contains resources that can be localized. You can use satellite assemblies to create a multilingual application. You can design and deploy your solution to multiple cultures, rather than using hard coding strings into your main application. Satellite assemblies are auto generated, and do not contain any code. Hence, they cannot be executed as the main assembly. Localization processes can be performed by using Satellite Assemblies without recompiling the main assembly. Localization can be applied to Grid, Grid Grouping, and Pivot Grid controls by using Satellite Assemblies. 
+A Satellite Assembly is a compiled library that contains resources that can be localized. You can use satellite assemblies to create a multilingual application. You can design and deploy your solution to multiple cultures, rather than using hard coding strings into your main application. Satellite assemblies are auto generated, and do not contain any code. Hence, they cannot be executed as the main assembly. Localization processes can be performed by using Satellite Assemblies without recompiling the main assembly. Localization can be applied to Grid, GridGroupingControl, and Pivot Grid controls by using Satellite Assemblies. 
 
 ### Creating a Satellite Assembly
 
@@ -313,7 +313,7 @@ The following steps illustrate creating a Satellite Assembly:
 
 
    
-Similarly, you can create satellite assemblies for resource files of Windows Grid, Grid Grouping, and Pivot Grid controls. You can find the resource files for Windows Grid, Grid Grouping, and Pivot Grid controls at the following paths respectively:
+Similarly, you can create satellite assemblies for resource files of Windows Grid, GridGroupingControl, and Pivot Grid controls. You can find the resource files for Windows Grid, GridGroupingControl, and Pivot Grid controls at the following paths respectively:
 
 
 
@@ -325,7 +325,7 @@ Similarly, you can create satellite assemblies for resource files of Windows Gri
 
 
 
-* Grid Grouping
+* GridGroupingControl
 
     <Installed Location>\Syncfusion\EssentialStudio\<Version>\Windows\Grid.Grouping.Windows\
 

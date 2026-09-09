@@ -9,11 +9,11 @@ documentation: ug
 
 # Data Representation in Windows Forms GridGroupingControl
 
-This section deals with different layouts supported by grid grouping control. These layouts help grouping grid to organize data display. For example, if you want to view the data arranged based on values of a specific field, then you can group data columns by the required field.
+This section deals with different layouts supported by GridGroupingControl. These layouts help grouping grid to organize data display. For example, if you want to view the data arranged based on values of a specific field, then you can group data columns by the required field.
 
 ## Grouping
 
-A Group represents a collection of records that belong to a category. Grid Grouping control allows the user to group data by one or more columns. When grouping is applied, data will be organized into a hierarchical structure based on the matching field values. Records having identical values in grouped column will be combined to form a group. Each group is identified by its GroupCaptionSection that can be expanded to bring underlying records into view. GroupCaptionSection carries information about a particular group like group name, number of items(records) in the group, etc. It also contains plus and minus buttons that allow the user to expand or collapse groups individually. By default, a grid table has one group.
+A Group represents a collection of records that belong to a category. GridGroupingControl allows the user to group data by one or more columns. When grouping is applied, data will be organized into a hierarchical structure based on the matching field values. Records having identical values in grouped column will be combined to form a group. Each group is identified by its GroupCaptionSection that can be expanded to bring underlying records into view. GroupCaptionSection carries information about a particular group like group name, number of items(records) in the group, etc. It also contains plus and minus buttons that allow the user to expand or collapse groups individually. By default, a grid table has one group.
 
 ### GroupedColumns Collection
 
@@ -38,7 +38,7 @@ Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add("Title")
 
 The grid below displays data columns from the Employees Table grouped by the values of Title field.
 
- ![Simple Grouping in Data Representation for GridGrouping Control](Data-Representation_images/Data-Representation_img1.jpeg) 
+ ![Simple Grouping in Data Representation](Data-Representation_images/Data-Representation_img1.jpeg) 
 
 
 
@@ -57,7 +57,7 @@ Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add("Title", ListSortDire
 
 The screenshot below reflects this process.
 
- ![Sort Order While Grouping in Data Representation for GridGrouping Control](Data-Representation_images/Data-Representation_img2.jpeg) 
+ ![Sort Order While Grouping in Data Representation](Data-Representation_images/Data-Representation_img2.jpeg) 
 
 
 
@@ -82,9 +82,9 @@ N> For more details, refer to the following browser sample:
 
 ##### Multi Column Grouping
 
-Grid Grouping control provides built-in support to group the data by more than one column. It is as simple as adding the column names to the GroupedColumns collection. With multicolumn grouping, grouping grid organizes data in a hierarchical structure showing groups in different levels. In the image below, you see Employees data grouped by Title and Country columns.
+GridGroupingControl provides built-in support to group the data by more than one column. It is as simple as adding the column names to the GroupedColumns collection. With multicolumn grouping, grouping grid organizes data in a hierarchical structure showing groups in different levels. In the image below, you see Employees data grouped by Title and Country columns.
 
- ![Multi Column Grouping in Data Representation for GridGrouping Control](Data-Representation_images/Data-Representation_img4.jpeg)
+ ![Multi Column Grouping in Data Representation](Data-Representation_images/Data-Representation_img4.jpeg)
 
 
 
@@ -94,11 +94,11 @@ N> For more details, refer to the following browser sample:
 
 ### Grouping Through Designer
 
-Grouping can also be done at design time. After binding dataset to the grouping grid, open TableDescriptor node in property grid of Grid Grouping control. In that, accessing GroupedColumns property will open SortColumnDescriptorCollection Editor. Clicking Add button will add an existing column from the dataset. By using drop down Name, you can change the column by which you want to group table data. You can also specify the sort order for that column by using SortDirection property.
+Grouping can also be done at design time. After binding dataset to the grouping grid, open TableDescriptor node in property grid of GridGroupingControl. In that, accessing GroupedColumns property will open SortColumnDescriptorCollection Editor. Clicking Add button will add an existing column from the dataset. By using drop down Name, you can change the column by which you want to group table data. You can also specify the sort order for that column by using SortDirection property.
 
 The image below depicts this process.
 
- ![Grouping Through Designer in Data Representation for GridGrouping Control](Data-Representation_images/Data-Representation_img6.jpeg) 
+ ![Grouping Through Designer in Data Representation](Data-Representation_images/Data-Representation_img6.jpeg) 
 
 
 
@@ -173,19 +173,19 @@ Me.gridGroupingControl1.ShowGroupDropArea = True
 
 Here are runtime screens showing the effect of setting ShowGroupDropArea property.
 
- ![GroupDropArea Runtime Screens in Data Representation for GridGrouping Control](Data-Representation_images/Data-Representation_img7.jpeg) 
+ ![GroupDropArea Runtime Screens in Data Representation](Data-Representation_images/Data-Representation_img7.jpeg) 
 
 
 
 
 
- ![Drag and Drop the column header with Drop Panelin GridGrouping Control](Data-Representation_images/Data-Representation_img8.jpeg) 
+ ![Drag and Drop the column header with Drop Panelin](Data-Representation_images/Data-Representation_img8.jpeg) 
 
 
 
 
 
- ![visibility control by ShowGroupDropArea property GridGrouping Control](Data-Representation_images/Data-Representation_img9.jpeg) 
+ ![visibility control by ShowGroupDropArea property](Data-Representation_images/Data-Representation_img9.jpeg) 
 
 
 
@@ -195,7 +195,7 @@ Here are runtime screens showing the effect of setting ShowGroupDropArea propert
 
 
 
- ![Drop Panel Enabled Grid Grouping ](Data-Representation_images/Data-Representation_img11.jpeg) 
+ ![Drop Panel Enabled](Data-Representation_images/Data-Representation_img11.jpeg) 
 
 
 
@@ -229,7 +229,7 @@ Me.gridGroupingControl1.AddGroupDropArea("OrderDetails")
 
 Given below is a sample screenshot.
 
- ![Adding GroupDropArea in Data Representation for GridGrouping Control](Data-Representation_images/Data-Representation_img12.jpeg) 
+ ![Adding GroupDropArea in Data Representation](Data-Representation_images/Data-Representation_img12.jpeg) 
 
 
 
@@ -500,13 +500,13 @@ End Sub
 
 4. Here is a sample output.
 
- ![Customizing GroupDropArea in Data Representation for GridGrouping Control](Data-Representation_images/Data-Representation_img13.jpeg) 
+ ![Customizing GroupDropArea in Data Representation](Data-Representation_images/Data-Representation_img13.jpeg) 
 
 
 
 #### Display GroupDropArea in Hierarchy
 
-This feature allows users to display items in GroupDropArea in a hierarchical order. The items will follow a stacked order. Hierarchical grouping enables the following interactive features in GridGrouping control:
+This feature allows users to display items in GroupDropArea in a hierarchical order. The items will follow a stacked order. Hierarchical grouping enables the following interactive features in GridGroupingControl:
 
 * Dynamically remove columns from grouping area.
 * Switch tree line placement between top and bottom of hierarchy levels.
@@ -615,7 +615,7 @@ Me.gridGroupingControl1.GridGroupDropArea.TreeLineColor = Color.Red
 
 #### Aligning the GroupDropArea
 
-By default, GroupDropArea is displayed at the top of the Grid Grouping control. With GroupDropAreaAlignment property, you can align it at the bottom, left, or right of the Grid Grouping control.
+By default, GroupDropArea is displayed at the top of the GridGroupingControl. With GroupDropAreaAlignment property, you can align it at the bottom, left, or right of the control.
 
 
 
@@ -652,30 +652,30 @@ Me.gridGroupingControl1.GroupDropAreaAlignment = GridGroupDropAreaAlignment.Righ
 {% endhighlight %}
 {% endtabs %}
 
-The following screen shot shows GroupDropArea positioned at the top of Grid Grouping control.
+The following screen shot shows GroupDropArea positioned at the top of GridGroupingControl.
 
-![GroupDropArea positioned at the top of Grid Grouping control](Data-Representation_images/Data-Representation_img16.png) 
+![GroupDropArea positioned at the top](Data-Representation_images/Data-Representation_img16.png) 
 
 
 
-The following screen shot shows GroupDropArea positioned at the left of Grid Grouping control.
+The following screen shot shows GroupDropArea positioned at the left of GridGroupingControl.
 
- ![GroupDropArea positioned at the left of Grid Grouping control](Data-Representation_images/Data-Representation_img17.png) 
+ ![GroupDropArea positioned at the left](Data-Representation_images/Data-Representation_img17.png) 
 
  GroupDropArea aligned at the Left
  {:.caption}
 
 
 
-The following screen shot shows GroupDropArea positioned at the bottom of Grid Grouping control.
+The following screen shot shows GroupDropArea positioned at the bottom of GridGroupingControl.
 
-![GroupDropArea positioned at the bottom of Grid Grouping control](Data-Representation_images/Data-Representation_img18.png) 
+![GroupDropArea positioned at the bottom](Data-Representation_images/Data-Representation_img18.png) 
 
 
 
-The following screen shot shows GroupDropArea positioned at the right of Grid Grouping control.
+The following screen shot shows GroupDropArea positioned at the right of GridGroupingControl.
 
- ![GroupDropArea positioned at the right of Grid Grouping control](Data-Representation_images/Data-Representation_img19.png) 
+ ![GroupDropArea positioned at the right](Data-Representation_images/Data-Representation_img19.png) 
 
 
 
@@ -687,7 +687,7 @@ Samples\Grouping\Grouping Demo.
 
 ### GroupByOptions
 
-Grid Grouping control provides a number of options that allows you to control the look and behavior of the groups. You can control the caption text, where and if AddNew row will be displayed and whether captions, headers, footers, preview rows and summaries will be displayed.
+GridGroupingControl provides a number of options that allows you to control the look and behavior of the groups. You can control the caption text, where and if AddNew row will be displayed and whether captions, headers, footers, preview rows and summaries will be displayed.
 
 #### GridGroupOptionsStyleInfo class
 
@@ -813,7 +813,7 @@ You can also set header and footer attributes such as HeaderSectionHeight and Fo
 
 Group headers and footers can be populated by handling QueryCellStyleInfo event wherein you can check Header and Footer cell types and provide the data.
 
-![Group Headers and Footers in Data Presentation for Grid Grouping Control](Data-Representation_images/Data-Representation_img20.jpeg) 
+![Group Headers and Footers in Data Presentation](Data-Representation_images/Data-Representation_img20.jpeg) 
 
 
 
@@ -821,7 +821,7 @@ Group headers and footers can be populated by handling QueryCellStyleInfo event 
 
 GroupPreviewSection is the suitable place when you want to display memo fields or add custom notes for a given group. It can be enabled by setting &lt;GroupOptions&gt;.ShowGroupPreview property to True. You can adjust the size of preview row through TableOptions.GroupPreviewSectionHeight property. QueryCellStyleInfo event can be used to populate preview rows.
 
- ![GroupPreviewRows in Data Presentation for Grid Grouping Control](Data-Representation_images/Data-Representation_img21.jpeg) 
+ ![GroupPreviewRows in Data Presentation](Data-Representation_images/Data-Representation_img21.jpeg) 
 
 
 
@@ -832,7 +832,7 @@ Each group can optionally have an AddNew row where you can provide the values fo
 * &lt;GroupOptions&gt;.ShowAddNewRecordBeforeDetails - adds the AddNew row at the top of a group.
 * &lt;GroupOptions&gt;.ShowAddNewRecordAfterDetails - adds the AddNew row at the bottom of a group.
 
- ![AddNew Records in Data Presentation for Grid Grouping Control](Data-Representation_images/Data-Representation_img22.jpeg) 
+ ![AddNew Records in Data Presentation](Data-Representation_images/Data-Representation_img22.jpeg) 
 
 
 
@@ -843,7 +843,7 @@ This is the first section within a group that provides a caption bar above colum
 * &lt;GroupOptions&gt;.ShowCaption - enables the display of caption section; True by default. 
 * &lt;GroupOptions&gt;.CaptionText - used to get and set caption text.
 
- ![GroupCaptionSection in Data Presentation for Grid Grouping Control](Data-Representation_images/Data-Representation_img23.jpeg) 
+ ![GroupCaptionSection in Data Presentation](Data-Representation_images/Data-Representation_img23.jpeg) 
 
 
 
@@ -893,7 +893,7 @@ Any summary item you add can be included in the CaptionText and you have the opt
 
 Here is a sample implementation that illustrates usage of the above properties.
 
-1. Set up a Grid Grouping control and bind a data source into it.
+1. Set up a GridGroupingControl and bind a data source into it.
 2. Setup the necessary Group Options as required.
 
 {% capture codesnippet4 %}​
@@ -1017,7 +1017,7 @@ Me.gridGroupingControl1.Appearance.GroupPreviewCell.Interior = New BrushInfo(Col
 
 
 
-![Custom Summary Tokens in Data Presentation for Grid Grouping control](Data-Representation_images/Data-Representation_img24.png) 
+![Custom Summary Tokens in Data Presentation](Data-Representation_images/Data-Representation_img24.png) 
 
 
 
@@ -1340,7 +1340,7 @@ End Sub
 
 #### Freezing the Caption Row
 
-Grid Grouping control provides support to freeze Caption Row to make sure it stays visible while scrolling content to the left or right. With FreezeCaption property, you can freeze or unfreeze the Caption Row in the Grid Grouping control. A frozen Caption Cell belongs to the GroupCaptionCell Cell Type. Visual Style of the Caption Cell Type is based on Visual Style of Grid Grouping control. Caption Cell text can be changed according to user requirements.
+GridGroupingControl provides support to freeze Caption Row to make sure it stays visible while scrolling content to the left or right. With FreezeCaption property, you can freeze or unfreeze the Caption Row. A frozen Caption Cell belongs to the GroupCaptionCell Cell Type. Visual Style of the Caption Cell Type is based on Visual Style of GridGroupingControl. Caption Cell text can be changed according to user requirements.
 
 {% tabs %}
 {% highlight C# %} 
@@ -1369,7 +1369,7 @@ To view a sample on Freezing the Caption Row, see &lt;Installed Location&gt;\Syn
 
 ## Sorting
 
-Grid Grouping control allows you to sort table data against one or more columns. The number of columns by which data can be sorted is unlimited. When sorting is applied, grid will rearrange data to match the current sort criteria.
+GridGroupingControl allows you to sort table data against one or more columns. The number of columns by which data can be sorted is unlimited. When sorting is applied, grid will rearrange data to match the current sort criteria.
 
 ### SortedColumns Collection
 
@@ -1381,9 +1381,9 @@ There are multiple ways to sort table data. A simple one is to click the desired
 
 ### Through Designer
 
-At design time, data can be sorted by accessing SortedColumns property under TableDescriptor section in the property grid of Grid Grouping control. This will open SortColumnDescriptorCollection Editor. In that Editor, clicking Add button will add existing columns into the collection. Name and SortDirection in the property window of the editor will let you specify your desired field name to sort and the sort order. The image given below illustrates this process.
+At design time, data can be sorted by accessing SortedColumns property under TableDescriptor section in the property grid of GridGroupingControl. This will open SortColumnDescriptorCollection Editor. In that Editor, clicking Add button will add existing columns into the collection. Name and SortDirection in the property window of the editor will let you specify your desired field name to sort and the sort order. The image given below illustrates this process.
 
- ![Sorting through designer in Data Representation for Grid Grouping Control](Data-Representation_images/Data-Representation_img28.jpeg) 
+ ![Sorting through designer in Data Representation](Data-Representation_images/Data-Representation_img28.jpeg) 
 
 
 
@@ -1419,7 +1419,7 @@ Me.gridGroupingControl1.TableDescriptor.SortedColumns.Add("UnitPrice", ListSortD
 
 Here is a sample output. To indicate sort direction, a sort icon will be displayed in the column headers. When multicolumn sorting is applied, an index number will be displayed in the column headers along with sort icon that facilitates sort order. In the example below, the order of sorting would be ProductName(0), Quantity(1) and then UnitPrice(2). 
 
- ![Programmatic Sorting in Data Representation for Grid Grouping Control](Data-Representation_images/Data-Representation_img29.jpeg) 
+ ![Programmatic Sorting in Data Representation](Data-Representation_images/Data-Representation_img29.jpeg) 
 
 
 
@@ -1429,7 +1429,7 @@ N> For more details, refer to the following browser sample:
 
 #### Sorting By Display Member
 
-Grid Grouping control sorts the grid based on Value member of the grid data, by default. The user can also sort grid data by Display members of foreign-key combo boxes by setting up a foreign-key reference relation between related tables. 
+GridGroupingControl sorts the grid based on Value member of the grid data, by default. The user can also sort grid data by Display members of foreign-key combo boxes by setting up a foreign-key reference relation between related tables. 
 
 N> A foreign-key reference relation allows the user to look up values in a related table using an id column in the main table.
 
@@ -1541,7 +1541,7 @@ td.VisibleColumns.Insert(CustomerColIndex, foreignCustomerColInMainTable)
 
 7. Run the application. The following output is generated.
 
- ![Sorting By Display Member in Data Representation for Grid Grouping Control](Data-Representation_images/Data-Representation_img32.jpeg) 
+ ![Sorting By Display Member in Data Representation](Data-Representation_images/Data-Representation_img32.jpeg) 
 
 
 
@@ -1598,7 +1598,7 @@ _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Gr
 
 ## Summaries
 
-Grid Grouping control allows you to display summaries for each group. Summaries lets you derive additional information from your data like averages, maximums, summations, count, and so on. For instance, you can get number of records, maximum value, etc. They display calculation results in separate display rows. The calculation of summary values is very fast with only O(log2 n) operations (n being the number of records in the table), because of highly optimized balanced tree structures used in the grouping engine.
+GridGroupingControl allows you to display summaries for each group. Summaries lets you derive additional information from your data like averages, maximums, summations, count, and so on. For instance, you can get number of records, maximum value, etc. They display calculation results in separate display rows. The calculation of summary values is very fast with only O(log2 n) operations (n being the number of records in the table), because of highly optimized balanced tree structures used in the grouping engine.
 
 The grouping grid provides the following built-in summary types.
 
@@ -1620,9 +1620,9 @@ It is the SummaryDescriptorCollection that manages summaries for a given table c
 
 ### Summaries Through Designer
 
-Summaries can be set at design time itself through property window of the grid grouping control. In the property window, SummaryRows under TableDescriptor node will let you manage summaries for a grouping grid. Accessing SummaryRows property will the GridSummaryRowDescriptor collection editor. The editor contains a list of properties such as Title, SummaryColumn, Appearance, etc. that allows you to define summaries for the desired columns and to control the appearance of these summaries.
+Summaries can be set at design time itself through property window of the GridGroupingControl. In the property window, SummaryRows under TableDescriptor node will let you manage summaries for a grouping grid. Accessing SummaryRows property will the GridSummaryRowDescriptor collection editor. The editor contains a list of properties such as Title, SummaryColumn, Appearance, etc. that allows you to define summaries for the desired columns and to control the appearance of these summaries.
 
- ![Summaries Through Designer in Data Representation for Grid Grouping Control](Data-Representation_images/Data-Representation_img36.jpeg) 
+ ![Summaries Through Designer in Data Representation](Data-Representation_images/Data-Representation_img36.jpeg) 
 
 
 
@@ -1690,7 +1690,7 @@ Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRowDescriptor)
 
 4. Run the sample. The grid will look like this.
 
- ![Summaries features through code in Data Representation for Grid Grouping Control](Data-Representation_images/Data-Representation_img37.jpeg) 
+ ![Summaries features through code in Data Representation](Data-Representation_images/Data-Representation_img37.jpeg) 
 
 
 
@@ -1735,7 +1735,7 @@ Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRowDescriptor)
 
 Here is a sample screenshot displaying the summaries for the columns wins and losses.
 
- ![Multi Column Summaries in Data Representation for Grid Grouping Control](Data-Representation_images/Data-Representation_img39.jpeg) 
+ ![Multi Column Summaries in Data Representation](Data-Representation_images/Data-Representation_img39.jpeg) 
 
 
 
@@ -1782,7 +1782,7 @@ Given below is a sample screenshot.
 
 
 
- ![Multi Row Summaries in Data Representation for Grid Grouping Control](Data-Representation_images/Data-Representation_img40.jpeg) 
+ ![Multi Row Summaries in Data Representation](Data-Representation_images/Data-Representation_img40.jpeg) 
 
 
 
@@ -1826,7 +1826,7 @@ Me.gridGroupingControl1.GetTableDescriptor("Order Details").SummaryRows.Add(summ
 
 Here is a sample screen shot.
 
-![ Summaries for Nested Tables and Groups in Data Representation for Grid Grouping Control](Data-Representation_images/Data-Representation_img41.jpeg) 
+![ Summaries for Nested Tables and Groups in Data Representation](Data-Representation_images/Data-Representation_img41.jpeg) 
 
 
 
@@ -1836,7 +1836,7 @@ N> For more details, refer to the following browser sample:
 
 ### Summary In Caption
 
-Grid Grouping control provides built-in options to display group summaries for the columns in GroupCaptions instead of creating distinct rows for summaries. It can be easily achieved with few property settings. The table below describes these properties, which can be accessed through GroupOptions.
+GridGroupingControl provides built-in options to display group summaries for the columns in GroupCaptions instead of creating distinct rows for summaries. It can be easily achieved with few property settings. The table below describes these properties, which can be accessed through GroupOptions.
 
 
 
@@ -1958,7 +1958,7 @@ Me.gridGroupingControl1.Appearance.GroupCaptionCell.CellType = "Static"
 
 5. When you run the sample, your grid will look similar to this.
 
- ![create Caption Summaries in Data Presentation for Grid Grouping Control](Data-Representation_images/Data-Representation_img43.jpeg) 
+ ![create Caption Summaries in Data Presentation](Data-Representation_images/Data-Representation_img43.jpeg) 
 
 
 
@@ -1966,7 +1966,7 @@ Me.gridGroupingControl1.Appearance.GroupCaptionCell.CellType = "Static"
 
 Here is another screenshot that shows the grouping grid with Caption Summaries disabled.
 
- ![Disabled Caption Summaries in Data Presentation for Grid Grouping Control](Data-Representation_images/Data-Representation_img44.jpeg) 
+ ![Disabled Caption Summaries in Data Presentation](Data-Representation_images/Data-Representation_img44.jpeg) 
 
 
 
@@ -2058,7 +2058,7 @@ Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(sortColumnDescriptor1
 
 9. When you run the sample, you will see the groups sorted against summary values of Freight. Here is a sample screen shot.
 
- ![Sort By Summary In Caption in Data Presentation for Grid Grouping Control](Data-Representation_images/Data-Representation_img46.jpeg) 
+ ![Sort By Summary In Caption in Data Presentation](Data-Representation_images/Data-Representation_img46.jpeg) 
 
 
 
@@ -2116,7 +2116,7 @@ Saves a list of referenced field names used in the expression. Use semicolon as 
 
 You can add any number of expression fields to the table. The following image depicts this.
 
-![Adding Expression Fields Through Designer in Grid Grouping control](Data-Representation_images/Data-Representation_img48.jpeg) 
+![Adding Expression Fields Through Designer](Data-Representation_images/Data-Representation_img48.jpeg) 
 
 
 
@@ -2150,7 +2150,7 @@ this.gridGroupingControl1.TableDescriptor.ExpressionFields.AddRange(New Syncfusi
 
 The screen shot given below highlights these expression fields.
 
-![Programmatically Adding Expression Fields in Grid Grouping control](Data-Representation_images/Data-Representation_img49.jpeg) 
+![Programmatically Adding Expression Fields](Data-Representation_images/Data-Representation_img49.jpeg) 
 
 
 N> For more details, refer to the following browser sample:
@@ -2204,7 +2204,7 @@ Me.gridGroupingControl1.TableDescriptor.Columns("ExpCol2").Appearance.AnyRecordF
 
 Here is a sample screen shot showing two expression fields ExpCol1 and ExpCol2 where ExpCol2 is referencing ExpCol1.
 
- ![Nested Expression Field in Data Presentation for Grid Grouping Control](Data-Representation_images/Data-Representation_img51.jpeg) 
+ ![Nested Expression Field in Data Presentation](Data-Representation_images/Data-Representation_img51.jpeg) 
 
 
 
@@ -2418,7 +2418,7 @@ Special Characters in Filter Values
 
 To match the special characters like left bracket ([), question mark (?), number sign (#) and asterisk (*), enclose them in square brackets (like [#] for # and  [*] for * etc.,). The right bracket (]) cannot be used within a group to match itself, but it can be used outside a group as an individual character. 
 
-This is illustrated in the example below with our Grid Grouping control.
+This is illustrated in the example below with our GridGroupingControl.
 {% tabs %}
 {% highlight C# %}  
 void Form1_Load(object sender, EventArgs e)
@@ -2566,7 +2566,7 @@ Loop
 
 A filter bar can also be added at design time by setting the above properties through property window of the grouping grid. The designer settings shown below adds the filter for columns CompanyName and ContactTitle.
 
-![Set ShowFilterBar in GridGrouping control through designer](Data-Representation_images/Data-Representation_img57.jpeg) 
+![Set ShowFilterBar in GridGroupingControl through designer](Data-Representation_images/Data-Representation_img57.jpeg) 
 
 
 
@@ -2667,7 +2667,7 @@ N> For more details, refer the following browser sample:
 
 ##### Localization Support for CompareOperatorListBox 
 
-The dynamic filter in the GridGrouping control provides support to customize the display content of the static element. Using this you can localize the static elements in the compare operator list box. 
+The dynamic filter in the GridGroupingControl provides support to customize the display content of the static element. Using this you can localize the static elements in the compare operator list box. 
 
 ###### Use Case Scenarios
 
@@ -2880,7 +2880,7 @@ End Function
 {% endtabs %}
 
 
-![Localization support in Grid Grouping](Data-Representation_images/Data-Representation_img64.png)
+![Localization support](Data-Representation_images/Data-Representation_img64.png)
 
 
 
@@ -2983,7 +2983,7 @@ End Sub
 
 #### Filter By DisplayMember
 
-Grid Grouping control filters data records by the value member of the columns by default. This behavior can be customized to get filters work with display member of the columns. This is accomplished in the Filter By DisplayMember feature.
+GridGroupingControl filters data records by the value member of the columns by default. This behavior can be customized to get filters work with display member of the columns. This is accomplished in the Filter By DisplayMember feature.
 
 ##### Implementation
 
@@ -3132,11 +3132,11 @@ Filters grid displaying records whose specified column hold the values mentioned
 
 ## Relations and Hierarchy
 
-Grid Grouping control can display nested tables in a hierarchy using master-detail configuration. In an hierarchical view, all the tables in the data source are inter-connected via relations. Generally a relation between any two tables can take any of the following forms: 1:1, 1:n, n:1 or n:n.
+GridGroupingControl can display nested tables in a hierarchy using master-detail configuration. In an hierarchical view, all the tables in the data source are inter-connected via relations. Generally a relation between any two tables can take any of the following forms: 1:1, 1:n, n:1 or n:n.
 
 A grouping grid can automatically detect data relations in a dataset for display. By default, Relation is created for each such relation found in dataset. Hence, the data relations defined in a dataset are sufficient enough for the grid to form relations. No additional code is required in this case.
 
-With nested tables, each record in the parent table will have an associated set of records in the child table. Every record in the relation is provided with a +/- button called RecordPlusMinus that can be expanded (as well as collapsed) to bring the underlying records in the child table into view. The number of tables that can be nested with relations using a Grid Grouping control is unlimited.
+With nested tables, each record in the parent table will have an associated set of records in the child table. Every record in the relation is provided with a +/- button called RecordPlusMinus that can be expanded (as well as collapsed) to bring the underlying records in the child table into view. The number of tables that can be nested with relations using a GridGroupingControl is unlimited.
 
 ### Relations Collection
 
