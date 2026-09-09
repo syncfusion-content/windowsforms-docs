@@ -7,9 +7,9 @@ control: SfNumericTextBox
 documentation: ug
 ---
 
-# About Syncfusion® Windows Forms SfNumericTextBox Control
+# About Syncfusion® WinForms Numeric TextBox Control
 
-The **NumericTextBox** control is an advanced text box control that allows you to enter numeric values in a specific format such as numeric, currency, and percent. It also provides support to display value with custom units.
+The **WinForms Numeric TextBox** control is an advanced text box control that allows you to enter numeric values in a specific format such as numeric, currency, and percent. It also provides support to display value with custom units.
 
 ![Overview of SfNumericTextBox](Overview_images/Overview.png)
 
@@ -32,14 +32,14 @@ The **NumericTextBox** control is an advanced text box control that allows you t
 
 Syncfusion WinForms suite comes up with the following different textboxes:
 
-* [SfNumericTextBox](https://www.syncfusion.com/products/windows-forms/numeric-textbox)
+* [WinForms Numeric TextBox](https://www.syncfusion.com/products/windows-forms/numeric-textbox)
 * [CurrencyTextBox](https://help.syncfusion.com/windowsforms/currency-textbox/overview)
 * [PercentTextBox](https://help.syncfusion.com/windowsforms/percent-textbox/overview)
 * [IntegerTextBox](https://help.syncfusion.com/windowsforms/integer-textbox/overview)
 
-### SfNumericTextBox
+### WinForms Numeric TextBox
 
-The [SfNumericTextBox](https://help.syncfusion.com/windowsforms/numeric-textbox/overview) control is an advanced textbox that allows you to enter numeric values in a specific format such as value. The currency or percent value can also be displayed with custom units. Supports hiding trailing zeros and displaying values with custom units.
+The [WinForms Numeric TextBox](https://help.syncfusion.com/windowsforms/numeric-textbox/overview) control is an advanced textbox that allows you to enter numeric values in a specific format such as value. The currency or percent value can also be displayed with custom units. Supports hiding trailing zeros and displaying values with custom units.
 
 ### CurrencyTextBox
 
@@ -53,16 +53,16 @@ The [SfNumericTextBox](https://help.syncfusion.com/windowsforms/numeric-textbox/
 
 [IntegerTextBox](https://help.syncfusion.com/windowsforms/integer-textbox/overview) is derived from the Windows Forms Framework TextBox control. Displays integer data type values alone.
 
-### SfNumericTextBox vs existing numeric textbox controls
+### WinForms Numeric TextBox vs existing numeric textbox controls
 
-Both SfNumericTextBox and existing numeric textbox controls (IntegerTextBox, PercentTextBox, and CurrencyTextBox) are used for the same purpose. But, the SfNumericTextBox control offers rich set of features over existing numeric textbox controls (IntegerTextBox, PercentTextBox, and CurrencyTextBox). To hide by trailing zeros and prefix or suffix and watermark text, use SfNumericTextBox.
+Both SfNumericTextBox and existing numeric textbox controls (IntegerTextBox, PercentTextBox, and CurrencyTextBox) are used for the same purpose. But, the SfNumericTextBox control offers rich set of features over existing numeric textbox controls (IntegerTextBox, PercentTextBox, and CurrencyTextBox). To hide by trailing zeros and prefix or suffix and watermark text, use this control.
 
-The list of some specific API differences between SfNumericTextBox and existing numeric textbox controls (IntegerTextBox, PercentTextBox, and CurrencyTextBox) is as follows.
+The list of some specific API differences between WinForms Numeric TextBox and existing numeric textbox controls (IntegerTextBox, PercentTextBox, and CurrencyTextBox) is as follows.
 
 <table>
 <tr>
 <td>
-{{'**SfNumericTextBox**'| markdownify }}
+{{'**WinForms Numeric TextBox**'| markdownify }}
 </td>
 <td>
 {{'**IntegerTextBox, PercentTextBox and CurrencyTextBox**'| markdownify }}
@@ -172,7 +172,7 @@ sets the color only in zero values.
 </tr>
 </table>
 
-The list of features in SfNumericTextBox over existing numeric textbox controls (IntegerTextBox, PercentTextBox, and CurrencyTextBox) is as follows.
+The list of features in WinForms Numeric TextBox over existing numeric textbox controls (IntegerTextBox, PercentTextBox, and CurrencyTextBox) is as follows.
 
 <table>
 <tr>
@@ -188,7 +188,7 @@ The list of features in SfNumericTextBox over existing numeric textbox controls 
 Different modes
 </td>
 <td>
-Supports specific modes like numeric, currency, and percent. To learn more about different modes in SfNumericTextBox, refer to {{'[here](https://help.syncfusion.com/windowsforms/numeric-textbox/gettingstarted#different-types-of-format-modes)'| markdownify }}.
+Supports specific modes like numeric, currency, and percent. To learn more about different modes in WinForms Numeric TextBox, refer to {{'[here](https://help.syncfusion.com/windowsforms/numeric-textbox/gettingstarted#different-types-of-format-modes)'| markdownify }}.
 </td>
 </tr>
 <tr>
@@ -196,7 +196,7 @@ Supports specific modes like numeric, currency, and percent. To learn more about
 Formatting
 </td>
 <td>
-Formats the value based on the user needs. To learn more about format modes in SfNumericTextBox, refer to {{'[here](https://help.syncfusion.com/windowsforms/numeric-textbox/formatting#formatmode)'| markdownify }}.
+Formats the value based on the user needs. To learn more about format modes in WinForms Numeric TextBox, refer to {{'[here](https://help.syncfusion.com/windowsforms/numeric-textbox/formatting#formatmode)'| markdownify }}.
 </td>
 </tr>
 <tr>
@@ -204,7 +204,7 @@ Formats the value based on the user needs. To learn more about format modes in S
 Hide trailing zeros
 </td>
 <td>
-Hides trailing zeros. To learn more about hiding zeros in SfNumericTextBox, refer to {{'[here](https://help.syncfusion.com/windowsforms/numeric-textbox/formatting#hiding-trailing-zeros)'| markdownify }}.
+Hides trailing zeros. To learn more about hiding zeros in WinForms Numeric TextBox, refer to {{'[here](https://help.syncfusion.com/windowsforms/numeric-textbox/formatting#hiding-trailing-zeros)'| markdownify }}.
 </td>
 </tr>
 <tr>
@@ -212,7 +212,7 @@ Hides trailing zeros. To learn more about hiding zeros in SfNumericTextBox, refe
 Custom units
 </td>
 <td>
-Displays the values with custom units which can be appended prefix or suffix. To learn more about custom units in SfNumericTextBox, refer to {{'[here](https://help.syncfusion.com/windowsforms/numeric-textbox/formatting#prefix-and-suffix)'| markdownify }}.
+Displays the values with custom units which can be appended prefix or suffix. To learn more about custom units in WinForms Numeric TextBox, refer to {{'[here](https://help.syncfusion.com/windowsforms/numeric-textbox/formatting#prefix-and-suffix)'| markdownify }}.
 </td>
 </tr>
 </table>

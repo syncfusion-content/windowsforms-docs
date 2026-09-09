@@ -7,13 +7,13 @@ control: CurrencyTextbox
 documentation: ug
 ---
 
-# Event Handling in Windows Forms CurrencyTextBox
+# Event Handling in WinForms Currency TextBox
 
-CurrencyTextBox fires events when 3D border style is changed, border color is changed, border sides are changed, decimal value property is changed and when Themes enabled property is changed. Also fires event when the input text is invalid.
+WinForms Currency TextBox fires events when 3D border style is changed, border color is changed, border sides are changed, decimal value property is changed and when Themes enabled property is changed. Also fires event when the input text is invalid.
 
 **KeyDown:**
 
-The [KeyDown event](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.keydown?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) occurs when a key is pressed while the control has a focus. The event handler receives an argument of type KeyEventArgs. We can handle this event to add keyboard support to the CurrencyTextBox. Refer [Adding the Key Support for Mega and Kilo](https://help.syncfusion.com/windowsforms/currency-textbox/event-handling#adding-key-support).
+The [KeyDown event](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.keydown?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) occurs when a key is pressed while the control has a focus. The event handler receives an argument of type KeyEventArgs. We can handle this event to add keyboard support to the WinForms Currency TextBox. Refer [Adding the Key Support for Mega and Kilo](https://help.syncfusion.com/windowsforms/currency-textbox/event-handling#adding-key-support).
 
 ValidationError: It occurs when an inappropriate character is encountered. The event handler receives an argument of type ValidationErrorArgs.
 
@@ -116,8 +116,8 @@ So if the user wants to enter 32000, he just needs to enter 32 and then press  '
 
 When invalid text is entered by the user, we can handle ValidationError event to raise an alarm. Follow the steps below.
 
-* Drag the CurrencyTextBox, ErrorProvider control and TextBox onto the form.
-* Handle ValidationError event of CurrencyTextBox.
+* Drag the WinForms Currency TextBox, ErrorProvider control and TextBox onto the form.
+* Handle ValidationError event of WinForms Currency TextBox.
 
 {% tabs %}
 

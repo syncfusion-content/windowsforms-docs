@@ -7,7 +7,7 @@ control: SfNumericTextBox
 documentation: ug
 ---
 
-# Formatting in Windows Forms SfNumericTextBox
+# Formatting in WinForms Numeric TextBox
 
 ## FormatMode
 
@@ -118,7 +118,7 @@ NumberFormatInfo numberFormat = new NumberFormatInfo();
 
 ![Format using number format info](Formatting_images/NumberFormatInfo.png)
 
-N> The Value in the SfNumericTextBox can be parsed by using the [NumberFormatInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html#Syncfusion_WinForms_Input_SfNumericTextBox_NumberFormatInfo) property. If the NumberFormatInfo is not initialized, then the Value will be parsed based on the CurrentUICulture.
+N> The Value in the WinForms Numeric TextBox can be parsed by using the [NumberFormatInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html#Syncfusion_WinForms_Input_SfNumericTextBox_NumberFormatInfo) property. If the NumberFormatInfo is not initialized, then the Value will be parsed based on the CurrentUICulture.
 
 ## Hiding trailing zeros
 
@@ -186,7 +186,7 @@ Me.numericTextBox.Suffix = "inches"
 
 ## WatermarkText
 
-Watermark is the dummy content displayed in the SfNumericTextBox when the value is null. It can be used for giving instruction or guideline to the control. 
+Watermark is the dummy content displayed in the WinForms Numeric TextBox when the value is null. It can be used for giving instruction or guideline to the control. 
 
 {% tabs %}
 

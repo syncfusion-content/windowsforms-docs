@@ -7,9 +7,9 @@ control: SfNumericTextBox
 documentation: ug
 ---
 
-# Validation in Windows Forms SfNumericTextBox
+# Validation in WinForms Numeric TextBox
 
-SfNumericTextBox allows data validation, which enables user to validate the values and notify the errors using the Validating event.
+WinForms Numeric TextBox allows data validation, which enables user to validate the values and notify the errors using the Validating event.
 
 ## ValidationMode
 

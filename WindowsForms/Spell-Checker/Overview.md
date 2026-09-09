@@ -7,9 +7,9 @@ control: SpellCheckerAdv
 documentation: ug
 ---
 
-# About Syncfusion® Windows Forms SpellCheckerAdv Control
+# About Syncfusion® WinForms Spell Checker Control
 
-SpellCheckerAdv control offers Microsoft Office style spell checking capabilities to your Windows Application. This component is completely customizable and can be attached to any text-editing controls. End users can also use it together with the standard Microsoft text-editing controls.
+WinForms Spell Checker control offers Microsoft Office style spell checking capabilities to your Windows Application. This component is completely customizable and can be attached to any text-editing controls. End users can also use it together with the standard Microsoft text-editing controls.
 
 ![Spell Checker dialog to correct error words in WindowsForms application](overview_images/windowsforms-spellchecker-dialog-to-correct-error-words.png)
 
@@ -21,5 +21,5 @@ SpellCheckerAdv control offers Microsoft Office style spell checking capabilitie
 
 * **Ignores special expressions** - Provides options to ignore e-mail, URL, numbers, mixed case words and much more.
 
-* **Visual style** - Provide rich set of visual style to customize the look and feel of SpellCheckerAdv.
+* **Visual style** - Provide rich set of visual style to customize the look and feel of WinForms Spell Checker.
  
