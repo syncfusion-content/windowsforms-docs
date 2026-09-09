@@ -7,9 +7,9 @@ control: BorderLayout
 documentation: ug
 ---
 
-# Getting Started with Windows Forms BorderLayout
+# Getting Started with WinForms Border Layout
 
-This section explains how to add the `BorderLayout` control in a Windows Forms application and overview its basic functionalities.
+This section explains how to add the `WinForms Border Layout` control in a Windows Forms application and overview its basic functionalities.
 
 ## Assembly deployment
 
@@ -19,17 +19,17 @@ Find more details about installing the nuget packages in a Windows Forms applica
 
 ## Creating the project
 
-Create a new Windows Forms project in Visual Studio to display the `BorderLayout` with basic functionalities.
+Create a new Windows Forms project in Visual Studio to display the `WinForms Border Layout` with basic functionalities.
 
-## Adding the BorderLayout control through designer
+## Adding the WinForms Border Layout control through designer
 
-The `BorderLayout` control can be added to an application by dragging it from the toolbox to designer view. The following required assembly reference will be added automatically.
+The `WinForms Border Layout` control can be added to an application by dragging it from the toolbox to designer view. The following required assembly reference will be added automatically.
 
 * Syncfusion.Shared.Base.dll
 
 ![Drag and drop BorderLayout from toolbox](GettingStarted_images/GettingStarted_img1.jpeg)
 
-To add the form as a container control of the `BorderLayout`, click `Yes` in pop up, from which it appears automatically before BorderLayout is added.
+To add the form as a container control of the `WinForms Border Layout`, click `Yes` in pop up, from which it appears automatically before WinForms Border Layout is added.
 
 ![Alert to add BorderLayout to form](GettingStarted_images/GettingStarted_img2.jpeg)
 
@@ -40,9 +40,9 @@ The child controls can be added to layout by dragging it from the toolbox to des
 
 ![Adding controls into BorderLayout](GettingStarted_images/GettingStarted_img3.jpeg)
 
-## Adding the BorderLayout control through code
+## Adding the WinForms Border Layout control through code
 
-The `BorderLayout` control can be created programmatically as described below.
+The `WinForms Border Layout` control can be created programmatically as described below.
 
 **Step 1**: Create a C# or VB.NET application through Visual Studio.
 
@@ -68,7 +68,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-**Step 4**: Create an instance of the `BorderLayout` control, and set container control as form.
+**Step 4**: Create an instance of the `WinForms Border Layout` control, and set container control as form.
 
 {% tabs %}
 {% highlight c# %}
