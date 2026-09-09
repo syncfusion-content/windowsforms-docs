@@ -7,7 +7,7 @@ control: SfNumericTextBox
 documentation: ug
 ---
 
-# Working with Numeric TextBox in WinForms
+# Working with WinForms Numeric TextBox
 
 ## ValueChanged Event
 

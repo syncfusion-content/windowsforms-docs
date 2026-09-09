@@ -9,7 +9,7 @@ documentation: ug
 
 # VisualStyle in WinForms Spell Checker
 
-The WinForms Spell Checker control has rich set of themes for professional representation. You can easily modify the look and feel of the WinForms Spell Checker using the built-in themes.
+The WinForms Spell Checker control has rich set of themes for professional representation. You can easily modify the look and feel of the control using the built-in themes.
 
 It has the below themes.
 
