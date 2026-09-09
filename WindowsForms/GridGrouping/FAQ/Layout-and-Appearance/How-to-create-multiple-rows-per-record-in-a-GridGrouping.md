@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Create Multiple Rows per Record in WinForms GridGroupingControl
 
-This can be done by using ColumnSets property of GridGrouping control.
+This can be done by using ColumnSets property of GridGroupingControl.
 
 {% tabs %}
 {% highlight c# %}

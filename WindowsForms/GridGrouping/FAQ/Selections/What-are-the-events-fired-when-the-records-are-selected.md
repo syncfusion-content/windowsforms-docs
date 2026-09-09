@@ -9,7 +9,7 @@ documentation: ug
 
 # Events Triggered by RecordSelection in WinForms GridGroupingControl
 
-There are two type of selection architectures in a Grid Grouping control. One is designed specifically for Grid Grouping control referred as Record-Based Selection and the other is inherited from GridControlBase named as Model-Based Selection. Depending on the selection type, specific events are triggered:
+There are two type of selection architectures in a GridGroupingControl. One is designed specifically for GridGroupingControl referred as Record-Based Selection and the other is inherited from GridControlBase named as Model-Based Selection. Depending on the selection type, specific events are triggered:
 
 ## Model Based Selection:
 

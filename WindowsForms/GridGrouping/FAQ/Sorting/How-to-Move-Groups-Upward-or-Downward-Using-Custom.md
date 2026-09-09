@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Move Group Using CustomComparer in WinForms GridGroupingControl
 
-To enable moving the groups using custom Comparer in GridGrouping control, an IComparer object and QueryValue event should be handled. The Comparer object allows you to control the movement of groups in GGC. The group moving logic should be implemented in custom Comparer. After customizing the sorting logic through IComparer, the QueryValue event should be applied to make the groups move among its position.
+To enable moving the groups using custom Comparer in GridGroupingControl, an IComparer object and QueryValue event should be handled. The Comparer object allows you to control the movement of groups in GGC. The group moving logic should be implemented in custom Comparer. After customizing the sorting logic through IComparer, the QueryValue event should be applied to make the groups move among its position.
 
 {% tabs %}
 {% highlight c# %}

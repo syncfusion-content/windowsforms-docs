@@ -9,9 +9,9 @@ documentation: ug
 
 # Feature Summary in Windows Forms GridGroupingControl
 
-Essential<sup>®</sup> Grid Grouping control possesses advanced features such as Outlook style grouping and is highly optimized to handle large amount of data. This section lists various features of grid grouping control in brief.
+Essential<sup>®</sup> GridGroupingControl possesses advanced features such as Outlook style grouping and is highly optimized to handle large amount of data. This section lists various features of the control in brief.
 
-* Filter by Display Member: Filter by Display Member is a new addition to Grid Helper Utilities. It allows filtering of grid data by Display Member instead of Value Member. With this feature, filter bar's drop-down lists the display member strings of the filtering column instead of its value member strings. You can use this feature with both Grid Data Bound Grid and Grid Grouping control.
+* Filter by Display Member: Filter by Display Member is a new addition to Grid Helper Utilities. It allows filtering of grid data by Display Member instead of Value Member. With this feature, filter bar's drop-down lists the display member strings of the filtering column instead of its value member strings. You can use this feature with both Grid Data Bound Grid and GridGroupingControl.
 
 
 
@@ -27,7 +27,7 @@ Essential<sup>®</sup> Grid Grouping control possesses advanced features such as
 
 
 
-* Data Binding: The grid grouping control supports variety of data sources used to automatically populate the grid with data. It has full ADO+ support and also allows any component that implements IList, IBindingList, ITypedList, or IListSource interface. It also supports unbound mode.
+* Data Binding: The GridGroupingControl supports variety of data sources used to automatically populate the grid with data. It has full ADO+ support and also allows any component that implements IList, IBindingList, ITypedList, or IListSource interface. It also supports unbound mode.
 
  ![Feature-Summary_images3](Feature-Summary_images/Feature-Summary_img3.jpeg) 
 
@@ -61,14 +61,14 @@ Essential<sup>®</sup> Grid Grouping control possesses advanced features such as
 
 
 
-* Filters: The grid grouping control has in-built support for FilterBar. The filter bar can be used to display a subset of records that satisfies user-defined criteria.
+* Filters: The GridGroupingControl has in-built support for FilterBar. The filter bar can be used to display a subset of records that satisfies user-defined criteria.
 
  ![Feature-Summary_images7](Feature-Summary_images/Feature-Summary_img7.jpeg) 
 
 
 
 
-* Sorting: Grid Grouping control allows you to sort the data against an unlimited number of columns either in ascending or in descending order. When editing is done, the record values will be adjusted automatically to maintain the sorting order.
+* Sorting: GridGroupingControl allows you to sort the data against an unlimited number of columns either in ascending or in descending order. When editing is done, the record values will be adjusted automatically to maintain the sorting order.
 
  ![Feature-Summary_images8](Feature-Summary_images/Feature-Summary_img8.jpeg) 
 
@@ -84,7 +84,7 @@ Essential<sup>®</sup> Grid Grouping control possesses advanced features such as
 
 
 
-* Unbound Fields: Grid Grouping control can have unbound fields with custom values using which you can evaluate the field values at runtime similar to Expression Fields.
+* Unbound Fields: GridGroupingControl can have unbound fields with custom values using which you can evaluate the field values at runtime similar to Expression Fields.
 
 ![Feature-Summary_img10](Feature-Summary_images/Feature-Summary_img10.jpeg) 
 
@@ -115,7 +115,7 @@ Essential<sup>®</sup> Grid Grouping control possesses advanced features such as
 
 
 
-* Multi Row Record: With Grid Grouping control, you can make a single record to span across several rows.
+* Multi Row Record: With GridGroupingControl, you can make a single record to span across several rows.
 
 ![Feature-Summary_img14](Feature-Summary_images/Feature-Summary_img14.jpeg)
 
@@ -123,7 +123,7 @@ Essential<sup>®</sup> Grid Grouping control possesses advanced features such as
 
 
 
-* Designer Support: The Grid Grouping control offers rich design time support to customize the appearance and behavior of various grid elements.
+* Designer Support: The GridGroupingControl offers rich design time support to customize the appearance and behavior of various grid elements.
 
  ![Feature-Summary_images15](Feature-Summary_images/Feature-Summary_img15.jpeg) 
 
@@ -141,7 +141,7 @@ Essential<sup>®</sup> Grid Grouping control possesses advanced features such as
 
 
 
-* Navigation: Grid Grouping control includes built-in Navigation and Page Bars that allows users to navigate records with ease.
+* Navigation: GridGroupingControlGridGroupingControl includes built-in Navigation and Page Bars that allows users to navigate records with ease.
 
  ![Feature-Summary_images17](Feature-Summary_images/Feature-Summary_img17.jpeg) 
 
@@ -149,7 +149,7 @@ Essential<sup>®</sup> Grid Grouping control possesses advanced features such as
 
 
 
-* Optimizations: Grid Grouping control is highly optimized to handle very high refresh and update scenarios. To increase performance, it also supports Virtual Mode.
+* Optimizations: GridGroupingControl is highly optimized to handle very high refresh and update scenarios. To increase performance, it also supports Virtual Mode.
 
 
 
@@ -159,7 +159,7 @@ Essential<sup>®</sup> Grid Grouping control possesses advanced features such as
 
 
 
-* Serialization: The grid schema information can be serialized and deserialized. Grid Grouping control supports several serialization formats such as XML and XLS.
+* Serialization: The grid schema information can be serialized and deserialized. GridGroupingControl supports several serialization formats such as XML and XLS.
 
  ![Feature-Summary_images19](Feature-Summary_images/Feature-Summary_img19.png) 
 
