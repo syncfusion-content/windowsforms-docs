@@ -9,7 +9,7 @@ documentation: ug
 
 # Orientation in Windows Forms Tab Splitter Container
 
-Orientation of the splitter in the TabSplitterContainer control is set using [Orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterContainer.html#Syncfusion_Windows_Forms_Tools_TabSplitterContainer_Orientation) property. Default value is horizontal.
+Orientation of the splitter in the WinForms Tab Splitter Container control is set using the [Orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterContainer.html#Syncfusion_Windows_Forms_Tools_TabSplitterContainer_Orientation) property. The default value is horizontal.
 
 {% tabs %}
 

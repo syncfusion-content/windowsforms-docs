@@ -9,7 +9,7 @@ documentation: ug
 
 # Limitation in Windows Forms Scroll Frame (SfScrollFrame)
 
-## Applicable controls for setting the ScrollFrame
+## Applicable controls for setting the WinForms Scroll Frame
 
 The `SfScrollFrame` can be used for the controls derived from the Microsoft ScrollableControl such as:
 
