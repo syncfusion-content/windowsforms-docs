@@ -145,7 +145,7 @@ this.sfScrollFrame1.HorizontalScrollBar.Style.ThumbDisabledColor = Color.Indigo;
 
 ## Themes
 
-The SfScrollFrame offers six built-in themes for professional representation as follows:
+The WinForms Scroll Frame offers six built-in themes for professional representation as follows:
 
 * Office2016Colorful
 * Office2016White
@@ -154,7 +154,7 @@ The SfScrollFrame offers six built-in themes for professional representation as 
 * Office2019Colorful
 * HighContrastBlack
 
-Themes can be applied to the SfScrollFrame by using the following steps:
+Themes can be applied to the WinForms Scroll Frame by using the following steps:
 
 1. [Load theme assembly](#load-theme-assembly)
 2. [Apply theme](#apply-theme)
@@ -254,7 +254,7 @@ Imports Syncfusion.WinForms.Controls
 
 ### Apply theme
 
-Appearance of the SfScrollFrame can be changed by using the `ThemeName`.
+Appearance of the WinForms Scroll Frame can be changed by using the `ThemeName`.
 
 #### Office2016Colorful
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Splitter Features in Windows Forms TabSplitterContainer
 
-The splitter in the TabSplitterContainer control has in-built options for changing the orientation of the splitter and also to collapse or expand the splitter panes.
+The splitter in the WinForms Tab Splitter Container control has in-built options for changing the orientation of the splitter and also to collapse or expand the splitter panes.
 
 ![Splitter components](Splitter-Components_images/Splitter-Components_img1.jpeg)
 

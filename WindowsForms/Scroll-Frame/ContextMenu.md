@@ -14,7 +14,7 @@ The `SfScrollFrame` supports UI scrolling through the context menu like the Micr
 
 ## Disabling the default context menu for ScrollBar
 
-The default context menu of the SfScrollFrame can be restricted by setting the `Cancel` property of the [ContextMenuShowingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Events.ContextMenuShowingEventArgs.html) to `true` using the `ContextMenuShowing` event.
+The default context menu of the WinForms Scroll Frame can be restricted by setting the `Cancel` property of the [ContextMenuShowingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Events.ContextMenuShowingEventArgs.html) to `true` using the `ContextMenuShowing` event.
 
 N> This is applicable for both the horizontal and vertical scrollbars.
 

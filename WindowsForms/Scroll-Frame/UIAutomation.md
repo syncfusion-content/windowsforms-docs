@@ -11,16 +11,16 @@ documentation: ug
 
 Microsoft UI automation is a new accessibility Framework for Microsoft Windows available on all the operating systems that support Windows Forms. UI automation provides accessibility to most of the UI elements and provides information about the UI element to the end user. You can interact with UI by using automated test scripts. To learn more about UI automation, refer to the [MSDN page](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-overview).
 
-SfScrollFrame supports the following types of UI automations:
+The WinForms Scroll Frame supports the following types of UI automations:
 
 1. Coded UI test
 2. Quick Test Professional
 
 ## Coded UI test
 
-Automated tests that drive your application through its user interface (UI) are known as Coded UI Tests (CUITs). These tests include functional testing of the UI controls. SfScrollFrame supports CUITs Coded UI automation to create automated tests for the inner elements and records the sequence of actions. When dragging the crosshair shown in CodedUITestBuilder on UI elements, it shows the properties of the respective UI elements. The assertion can also be added for each properties of SfScrollFrame.
+Automated tests that drive your application through its user interface (UI) are known as Coded UI Tests (CUITs). These tests include functional testing of the UI controls. The WinForms Scroll Frame supports CUITs Coded UI automation to create automated tests for the inner elements and records the sequence of actions. When dragging the crosshair shown in CodedUITestBuilder on UI elements, it shows the properties of the respective UI elements. The assertion can also be added for each properties of SfScrollFrame.
 
-SfScrollFrame supports the following two levels of CUIT automations:
+The WinForms Scroll Frame supports the following two levels of CUIT automations:
 
 <table>
 <tr>

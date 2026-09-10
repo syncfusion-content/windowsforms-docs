@@ -36,7 +36,7 @@ To add the resx file for the application, follow steps:
 
 ### Editing the default culture resource
 
-You can edit the default resource file by adding it to Resources folder of your application where SfScrollFrame reads the static texts from here. You can download the default resource file from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Core.WinForms-1127975576).
+You can edit the default resource file by adding it to Resources folder of your application where the WinForms Scroll Frame reads the static texts from here. You can download the default resource file from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Core.WinForms-1127975576).
 
 ![WinForms showing the edit the default resource fiel in scrollframe](SfScrollFrame_images/SfScrollFrame_img15.jpg)
 
