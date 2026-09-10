@@ -155,6 +155,56 @@ _BETADIST(x,alpha,beta,[A],[B])_
 
 * If you omit values for A and B, BETADIST uses the standard cumulative beta distribution, so that A = 0 and B = 1.
 
+## BETAINV
+
+The `BETAINV` function returns the inverse of the cumulative beta probability density function.
+
+**Syntax**
+
+_BETAINV(probability,alpha,beta,[A],[B])_
+
+**Where:**  
+
+* probability: A probability associated with the beta distribution.  
+
+* alpha: A parameter of the distribution.  
+
+* beta: A parameter of the distribution.  
+
+* A: A lower bound to the interval of x.  
+
+* B: An upper bound to the interval of x.  
+
+**Remarks**  
+
+* If any argument is non-numeric, BETAINV returns the `#VALUE!` error value.  
+
+* If alpha ≤ 0 or beta ≤ 0, BETAINV returns the `#NUM!` error value.  
+
+* If probability ≤ 0 or probability > 1, BETAINV returns the `#NUM!` error value.
+
+* If A = B, BETAINV returns the `#NUM!` error value.
+
+* If you omit values for A and B, BETAINV uses the standard cumulative beta distribution, so that A = 0 and B = 1.
+
+## BINOMDIST
+
+Returns the individual term binomial distribution probability
+
+**Syntax:**
+
+_BINOMDIST(number_s,trials,probability_s,cumulative)_
+
+**Where:**
+
+* Number_s denotes the number of successes in trials.
+
+* Trials denotes the number of independent trials.
+
+* Probability_s denotes the probability of success on each trial.
+
+* Cumulative denotes a logical value that determines the form of the function. If cumulative is TRUE, then BINOMDIST returns the cumulative distribution function, which is the probability that there are at most number_s successes; if FALSE, it returns the probability mass function, which is the probability that there are number_s successes.
+
 ## BETA.INV
 
 The `BETA.INV` function returns the inverse of the cumulative beta probability density function.
@@ -186,24 +236,6 @@ _BETA.INV(probability,alpha,beta,[A],[B])_
 * If A = B, BETA.INV returns the `#NUM!` error value.
 
 * If you omit values for A and B, BETA.INV uses the standard cumulative beta distribution, so that A = 0 and B = 1.
-
-## BINOMDIST
-
-Returns the individual term binomial distribution probability
-
-**Syntax:**
-
-_BINOMDIST(number_s,trials,probability_s,cumulative)_
-
-**Where:**
-
-* Number_s denotes the number of successes in trials.
-
-* Trials denotes the number of independent trials.
-
-* Probability_s denotes the probability of success on each trial.
-
-* Cumulative denotes a logical value that determines the form of the function. If cumulative is TRUE, then BINOMDIST returns the cumulative distribution function, which is the probability that there are at most number_s successes; if FALSE, it returns the probability mass function, which is the probability that there are number_s successes.
 
 ## BINOM.INV
 
@@ -2334,46 +2366,6 @@ _T.INV(probability,deg_freedom)_
 
 * If deg_freedom < 1, T.INV returns the #NUM! error value.
 
-## T.TEST
-
-The `T.TEST` function returns the probability associated with a Student's t-Test, used to determine if two samples likely come from the same population with an equal mean.
-
-**Syntax**  
-
-_T.TEST(array1, array2, tails, type)_
-
-**Where:**  
-
-* array1: The first data set.  
-
-* array2: The second data set.  
-
-* tails: Specifies the number of distribution tails.
-
-	* 1 - One tailed distribution.
-
-	* 2 - Two tailed distribution.
-
-* type: The kind of t-Test to perform.
-
-	* 1 - Paired.
-
-	* 2 - Two-sample equal variance.
-
-	* 3 - Two-sample unequal variance.
-
-**Remarks**  
-
-* If array1 and array2 have a different number of data points, and type = 1 (paired), `T.TEST` returns the `#N/A` error value.  
-
-* The tails and type arguments are truncated to integers.  
-
-* If tails or type is non-numeric, `T.TEST` returns the `#VALUE!` error.  
-
-* If tails is any value other than 1 or 2, `T.TEST` returns the `#NUM!` error.  
-
-* T.TEST uses the data in array1 and array2 to compute a non-negative t-statistic. If tails=1, T.TEST returns the probability of a higher value of the t-statistic under the assumption that array1 and array2 are samples from populations with the same mean. The value returned by T.TEST when tails=2 is double that returned when tails=1 and corresponds to the probability of a higher absolute value of the t-statistic under the "same population means" assumption.
-
 ## TRIMMEAN
 
 Returns the mean of the interior of a data set. `TRIMMEAN` calculates the mean taken by excluding a percentage of data points from the top and bottom tails of a data set.
@@ -2985,6 +2977,44 @@ The `TINV` function returns the two-tailed inverse of the Student's t-distributi
 * If deg_freedom is not an integer, it is truncated to the nearest integer.  
 
 * If deg_freedom is less than 1, the function `TINV` returns the `#NUM!` error.  
+
+## TTEST
+
+The `TTEST` function returns the probability associated with a Student's t-Test, used to determine if two samples likely come from the same population with an equal mean.
+
+**Syntax**  
+
+_TTEST(array1, array2, tails, type)_
+
+**Where:**  
+
+* array1: The first data set.  
+
+* array2: The second data set.  
+
+* tails: Specifies the number of distribution tails.
+
+	* 1 - One tailed distribution.
+
+	* 2 - Two tailed distribution.
+
+* type: The kind of t-Test to perform.
+
+	* 1 - Paired.
+
+	* 2 - Two-sample equal variance.
+
+	* 3 - Two-sample unequal variance.
+
+**Remarks**  
+
+* If array1 and array2 have a different number of data points, and type = 1 (paired), `TTEST` returns the `#N/A` error value.  
+
+* The tails and type arguments are truncated to integers.  
+
+* If tails or type is non-numeric, `TTEST` returns the `#VALUE!` error.  
+
+* If tails is any value other than 1 or 2, `TTEST` returns the `#NUM!` error.  
 
 ## T.TEST
 
