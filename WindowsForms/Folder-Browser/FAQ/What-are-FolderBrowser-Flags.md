@@ -13,7 +13,7 @@ This page explains about What are Flags in WinForms Folder Browser and more deta
 
 ## What are Flags in WinForms Folder Browser
 
-Flags can be used to set various styles for the WinForms Folder Browser Dialog. Each style has it's own behavior and these styles can be added or removed to get the desired style for the WinForms Folder Browser Dialog.
+Flags can be used to set various styles for the WinForms Folder Browser Dialog. Each style has it's own behavior and these styles can be added or removed to get the desired style for the Dialog.
 
 Look at the below given snippet to apply "RestrictToSubfolders" style and to remove the "ShowTextBox" style for the WinForms Folder Browser Dialog.
 
