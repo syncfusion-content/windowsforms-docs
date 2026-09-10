@@ -11,6 +11,26 @@ documentation: ug
 
 The SfAIAssistView control includes an Input Toolbar feature that exposes quick-action buttons beside the prompt editor. These buttons let users attach files, upload images, record audio, and invoke any custom action before a prompt is sent. The toolbar pairs naturally with the Attachments and Toast Notification features so that the selected media, status, and feedback appear in the same input area.
 
+## Prerequisites
+
+- An `SfAIAssistView` instance has been created and added to the form. See [Getting Started](https://help.syncfusion.com/windowsforms/ai-assistview/getting-started) for setup details.
+- A `ViewModel` is bound to the control via the `Messages` property. See [OpenAI Integration](https://help.syncfusion.com/windowsforms/ai-assistview/open-ai) for a working example of an in-flight bot response that can be canceled.
+- The following `using` directives are included in your file:
+
+{% tabs %}
+
+{% highlight c# %}
+using System;
+using System.Drawing;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Collections.ObjectModel;
+using Syncfusion.WinForms.AIAssistView;
+using System.Windows.Forms;
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Enabling the IsInputToolbarVisible
 
 By default, the Input Toolbar is not displayed. To enable it, set the [IsInputToolbarVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.SfAIAssistView.html#Syncfusion_WinForms_AIAssistView_SfAIAssistView_IsInputToolbarVisible) property to **true**.
@@ -67,33 +87,44 @@ The [InputToolbarItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.W
 
 {% highlight c# %}
 
-using Syncfusion.WinForms.AIAssistView;
-using System.Collections.ObjectModel;
-
-sfaiAssistView1.InputToolbarItems = new ObservableCollection<InputToolbarItem>
+public partial class Form1 : Form
 {
-    new InputToolbarItem
+    ViewModel viewModel;
+
+    public Form1()
     {
-        Name = "Attach",
-        ToolTip = "Attach File",
-        Text = "\U0001F4CE",
-        IsVisible = true
-    },
-    new InputToolbarItem
-    {
-        Name = "ImageUpload",
-        ToolTip = "Upload Image",
-        Text = "\U0001F4CA",
-        IsVisible = true
-    },
-    new InputToolbarItem
-    {
-        Name = "VoiceInput",
-        ToolTip = "Record Audio",
-        Text = "\U0001F3A4",
-        IsVisible = true
+        InitializeComponent();
+        SetupInputToolbar();
     }
-};
+
+    private void SetupInputToolbar()
+    {
+        sfaiAssistView1.InputToolbarItems = new ObservableCollection<InputToolbarItem>
+        {
+            new InputToolbarItem
+            {
+                Name = "Attach",
+                ToolTip = "Attach File",
+                Text = "\U0001F4CE",
+                IsVisible = true
+            },
+            new InputToolbarItem
+            {
+                Name = "ImageUpload",
+                ToolTip = "Upload Image",
+                Text = "\U0001F4CA",
+                IsVisible = true
+            },
+            new InputToolbarItem
+            {
+                Name = "VoiceInput",
+                ToolTip = "Record Audio",
+                Text = "\U0001F3A4",
+                IsVisible = true
+            }
+        };
+    }
+}
 
 {% endhighlight %}
 
@@ -120,11 +151,11 @@ private void OnInputToolbarItemClicked(object sender, InputToolbarItemClickedEve
             break;
 
         case "ImageUpload":
-            DisplayActionPopupOnToolbarClick();
+            //HandleImageUpload();
             break;
 
         case "VoiceInput":
-            //HandleRecordAudio();
+            //HandleVoiceInput();
             break;
     }
 }
@@ -163,6 +194,8 @@ sfaiAssistView1.ActionButtons = new ObservableCollection<ActionButton>
 {% endhighlight %}
 
 {% endtabs %}
+
+![WindowsForms AI AssistView control Input Toolbar Action Buttons](aiassistview_images/windowsforms_aiassistview_inputtoolbar_actionbuttons.png)
 
 ### Action Button Click Event
 
@@ -224,59 +257,114 @@ The following example demonstrates the typical end-to-end flow: building the [Op
 
 {% highlight c# %}
 
-using System.IO;
-using System.Drawing;
-using System.Windows.Forms;
-using Syncfusion.WinForms.AIAssistView;
-
-sfaiAssistView1.Attachments = new ObservableCollection<AttachmentItem>();
-
-private async void HandleAttachFile()
+public partial class Form1 : Form
 {
-    var dialog = new OpenFileDialog
+    ViewModel viewModel;
+
+    public Form1()
     {
-        Filter = "All Files (*.*)|*.*",
-        Multiselect = false,
-        Title = "Select a file to attach"
-    };
+        InitializeComponent();
+        SetupInputToolbar();
+        WireUpEventHandlers();
+    }
 
-    if (dialog.ShowDialog() == DialogResult.OK)
+    private void SetupInputToolbar()
     {
-        var filePath = dialog.FileName;
-        var fi = new FileInfo(filePath);
-
-        // Validate file size (example: max 10 MB)
-        const long MaxFileSize = 10L * 1024 * 1024;
-        if (fi.Length > MaxFileSize)
+        sfaiAssistView1.InputToolbarItems = new ObservableCollection<InputToolbarItem>
         {
-            ShowToastNotification(ToastNotificationStatus.Error,
-                $"File size exceeds 10 MB limit. ({FormatFileSize(fi.Length)})");
-            return;
-        }
-
-        var attachment = new AttachmentItem
-        {
-            FileName = fi.Name,
-            FileSize = FormatFileSize(fi.Length),
-            FileIcon = GetFileIcon(filePath),
-            FilePath = filePath,
-            FileExtension = fi.Extension,
-            FileContent = null,
-            FilePreviewIcon = null
+            new InputToolbarItem
+            {
+                Name = "Attach",
+                ToolTip = "Attach File",
+                Text = "\U0001F4CE",
+                IsVisible = true
+            }
         };
 
-        ShowToastNotification(ToastNotificationStatus.Success,
-            "✅ Uploaded successfully.");
+        sfaiAssistView1.Attachments = new ObservableCollection<AttachmentItem>();
+    }
 
-        sfaiAssistView1.Attachments.Add(attachment);
+    private void WireUpEventHandlers()
+    {
+        // Handle toolbar item clicks
+        sfaiAssistView1.InputToolbarItemClicked += OnInputToolbarItemClicked;
+
+        // Handle action button clicks
+        sfaiAssistView1.ActionButtonClicked += OnActionButtonClicked;
+    }
+
+    private void OnInputToolbarItemClicked(object sender, InputToolbarItemClickedEventArgs args)
+    {
+        var item = args.ToolbarItem;
+
+        switch (item.Name)
+        {
+            case "Attach":
+                HandleAttachFile();
+                break;
+        }
+    }
+
+    private void OnActionButtonClicked(object sender, ActionButtonClickedEventArgs args)
+    {
+        var button = args.ActionButton;
+
+        switch (button.Name)
+        {
+            case "UploadFile":
+                HandleAttachFile();
+                break;
+        }
+    }
+       
+    private async void HandleAttachFile()
+    {
+        var dialog = new OpenFileDialog
+        {
+            Filter = "All Files (*.*)|*.*",
+            Multiselect = false,
+            Title = "Select a file to attach"
+        };
+
+        if (dialog.ShowDialog() == DialogResult.OK)
+        {
+            var filePath = dialog.FileName;
+            var fi = new FileInfo(filePath);
+
+            // Validate file size (example: max 10 MB)
+            const long MaxFileSize = 10L * 1024 * 1024;
+            if (fi.Length > MaxFileSize)
+            {
+                ShowToastNotification(ToastNotificationStatus.Error,
+                    $"File size exceeds 10 MB limit. ({FormatFileSize(fi.Length)})");
+                return;
+            }
+
+            var attachment = new AttachmentItem
+            {
+                FileName = fi.Name,
+                FileSize = FormatFileSize(fi.Length),
+                FileIcon = GetFileIcon(filePath),
+                FilePath = filePath,
+                FileExtension = fi.Extension,
+                FileContent = null,
+                FilePreviewIcon = null
+            };
+
+            ShowToastNotification(ToastNotificationStatus.Success,
+                "✅ Uploaded successfully.");
+
+            sfaiAssistView1.Attachments.Add(attachment);
+        }
     }
 }
+
 
 {% endhighlight %}
 
 {% endtabs %}
 
-### Clearing Attachments After Send
+### Clear Attachments After Sending
 
 Use the [PromptRequest](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.SfAIAssistView.html#Syncfusion_WinForms_AIAssistView_SfAIAssistView_PromptRequest) event to forward the user prompt along with any pending attachments, then clear the [Attachments](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.SfAIAssistView.html#Syncfusion_WinForms_AIAssistView_SfAIAssistView_Attachments) collection so the next prompt starts from an empty input area:
 
@@ -284,12 +372,26 @@ Use the [PromptRequest](https://help.syncfusion.com/cr/windowsforms/Syncfusion.W
 
 {% highlight c# %}
 
-public void Chat_PromptRequest(object sender, PromptRequestEventArgs e)
+public partial class Form1 : Form
 {
-    e.Handled = true;
-    var textMessage = e.Message as TextMessage;
-    viewModel.Chats.Add(textMessage);
-    sfaiAssistView1.Attachments.Clear();
+    ViewModel viewModel;
+
+    public Form1()
+    {
+        InitializeComponent();
+        //PromptRequest event notifies users when a prompt is submitted in the control. It can be used to validate user input 
+        //before processing or trigger custom actions based on the prompt content. The input message and its details 
+        //are passed through the PromptRequestEventArgs. 
+        sfaiAssistView1.PromptRequest += Chat_PromptRequest;
+    }
+
+    public void Chat_PromptRequest(object sender, PromptRequestEventArgs e)
+    {
+        e.Handled = true;
+        var textMessage = e.Message as TextMessage;
+        viewModel.Chats.Add(textMessage);
+        sfaiAssistView1.Attachments.Clear();
+    }
 }
 
 {% endhighlight %}

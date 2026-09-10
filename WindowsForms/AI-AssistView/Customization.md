@@ -29,6 +29,7 @@ using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
+using Syncfusion.WinForms.Forms;
 using Syncfusion.WinForms.AIAssistView;
 
 {% endhighlight %}
