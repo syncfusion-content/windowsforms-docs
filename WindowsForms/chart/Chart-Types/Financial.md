@@ -9,11 +9,11 @@ documentation: ug
 
 # Financial Chart in Windows Forms Charts
 
-## HiLo open close chart
+## OHLC chart
 
-A HiLo Open Close chart displays each data point as a group of horizontal lines and a vertical line representing the `High`, `Low`, `Open`, and `Close` values. 
+A OHLC(Open-High-Low-Close) chart displays each data point as a group of horizontal lines and a vertical line representing the `High`, `Low`, `Open`, and `Close` values. 
 
-The following code example demonstrates how to create a hilo open close chart.
+The following code example demonstrates how to create a OHLC chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -53,26 +53,9 @@ series.Style.Border.Width = 3
 
 ![HiLo Open Close Chart in Windows Forms](../Chart-Types_images/windowsforms-hilo-open-close-chart.png)
 
-### Close tip color
-
-The [CloseTipColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHiLoOpenCloseConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHiLoOpenCloseConfigItem_CloseTipColor) property specifies the color of the tip that represents the closing value in a hilo open close chart, with `Color.Empty` as the default value.
-
-The following code sets the close tip color to `Color.Blue`.
-
-{% tabs %}
-{% highlight c# %}
-chartControl.Series[0].ConfigItems.HiLoOpenCloseItem.CloseTipColor = Color.Blue;
-{% endhighlight %}
-{% highlight vb %}
-chartControl.Series(0).ConfigItems.HiLoOpenCloseItem.CloseTipColor = Color.Blue
-{% endhighlight %}
-{% endtabs %}
-
-![HiLo Open Close Close Tip Color in Windows Forms](../Chart-Types_images/windowsforms-hilo-chart-tip-close.png)
-
 ### Draw mode
 
-The [DrawMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHiLoOpenCloseConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHiLoOpenCloseConfigItem_DrawMode) property specifies whether the open tip, close tip, or both tips are displayed in a hilo open close chart. By default, both tips are displayed using the `Both` draw mode.
+The [DrawMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHiLoOpenCloseConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHiLoOpenCloseConfigItem_DrawMode) property specifies whether the open tip, close tip, or both tips are displayed in a OHLC chart. By default, both tips are displayed using the [Both](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartOpenCloseDrawMode.html#Syncfusion_Windows_Forms_Chart_ChartOpenCloseDrawMode_Both) draw mode.
 
 This property supports the following values:
 
@@ -93,9 +76,26 @@ chartControl.Series(0).ConfigItems.HiLoOpenCloseItem.DrawMode = ChartOpenCloseDr
 
 ![HiLo Open Close Draw Mode in Windows Forms](../Chart-Types_images/windowsforms-hilo-chart-draw-mode.png)
 
+### Close tip color
+
+The [CloseTipColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHiLoOpenCloseConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHiLoOpenCloseConfigItem_CloseTipColor) property specifies the color of the tip that represents the closing value in a OHLC chart, with `Color.Empty` as the default value.
+
+The following code sets the close tip color to `Color.Blue`.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ConfigItems.HiLoOpenCloseItem.CloseTipColor = Color.Blue;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ConfigItems.HiLoOpenCloseItem.CloseTipColor = Color.Blue
+{% endhighlight %}
+{% endtabs %}
+
+![HiLo Open Close Close Tip Color in Windows Forms](../Chart-Types_images/windowsforms-hilo-chart-tip-close.png)
+
 ### Open tip color
 
-The [OpenTipColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHiLoOpenCloseConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHiLoOpenCloseConfigItem_OpenTipColor) property specifies the color of the tip that represents the opening value in a hilo open close chart, with `Color.Empty` used as the default value.
+The [OpenTipColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHiLoOpenCloseConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHiLoOpenCloseConfigItem_OpenTipColor) property specifies the color of the tip that represents the opening value in a OHLC chart, with `Color.Empty` used as the default value.
 
 The following code sets the open tip color to `Color.Blue`.
 
@@ -112,7 +112,7 @@ chartControl.Series(0).ConfigItems.HiLoOpenCloseItem.OpenTipColor = Color.Blue
 
 ## Candle chart
 
-A candle chart displays each data point using a vertical column and a vertical line based on the `High`, `Low`, `Open`, and `Close` values. The vertical line represents the High and Low values, while the column represents the Open and Close values.
+A Candle chart displays each data point using a candle body and a vertical line (wick) based on the `High`, `Low`, `Open`, and `Close` values. The vertical line (wick) represents the `High` and `Low` values, while the candle body represents the `Open` and `Close` values.
 
 The following code example demonstrates how to create a candle Chart.
 
@@ -129,7 +129,6 @@ series.Points.Add(5, 460, 270, 420, 340); // body 80
 
 chartControl.Series.Add(series);
 series.Style.Border.Width = 3;
-
 
 {% endhighlight %}
 {% highlight vb %}
@@ -154,7 +153,7 @@ series.Style.Border.Width = 3
 
 ## Kagi chart
 
-A Kagi chart shows price trends using connected vertical lines. The line continues when the closing price moves in the same direction and reverses when the price reaches a predefined [ReversalAmount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ReversalAmount). Breaking a previous high or low changes the line color to indicate a bullish or bearish pattern. The [PriceUpColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFinancialConfigItem_PriceUpColor) and [PriceDownColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFinancialConfigItem_PriceDownColor) properties control these colors, while the column width represents trend strength.
+Kagi chart shows price trends using connected vertical lines. The line continues when the closing price moves in the same direction and reverses when the price reaches a predefined [ReversalAmount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ReversalAmount). Breaking a previous high or low changes the line color to indicate a bullish or bearish pattern. The [PriceUpColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFinancialConfigItem_PriceUpColor) and [PriceDownColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFinancialConfigItem_PriceDownColor) properties control these colors, while the column width represents trend strength.
 
 The following code example demonstrates how to create a kagi Chart.
 
@@ -164,19 +163,24 @@ The following code example demonstrates how to create a kagi Chart.
 ChartSeries series = new ChartSeries("Stock", ChartSeriesType.Kagi);
 
 series.Points.Add(1, 25);
-series.Points.Add(2, 28);
-series.Points.Add(3, 26);
-series.Points.Add(4, 30);
-series.Points.Add(5, 42); 
-series.Points.Add(6, 35);
-series.Points.Add(7, 29);
-series.Points.Add(8, 36);
-series.Points.Add(9, 27);
-series.Points.Add(10, 31);
+series.Points.Add(2, 30);  // Uptrend
+series.Points.Add(3, 27);  // Reverses, stays Up color
+series.Points.Add(4, 29);  // Below previous high
+series.Points.Add(5, 26);  // New low -> Down color
+series.Points.Add(6, 30);  // New high -> Up color
+series.Points.Add(7, 28);  // Reverses, stays Up color
+series.Points.Add(8, 31);  // New high
+series.Points.Add(9, 29);  // Reverses, stays Up color
+series.Points.Add(10, 42); // New high
+series.Points.Add(11, 29); // Reverses, stays Up color
+series.Points.Add(12, 32); // Below previous high
+series.Points.Add(13, 24); // New low -> Down color
+series.Points.Add(14, 35); // New high -> Up color
 
+series.ReversalAmount = 1;
 series.Style.Border.Width = 3;
-chartControl.Series.Add(series);
 
+chartControl.Series.Add(series);
 {% endhighlight %}
 {% highlight vb %}
 
@@ -202,6 +206,29 @@ chartControl.Series.Add(series)
 {% endtabs %}
 
 ![kagi Chart in Windows Forms](../Chart-Types_images/windowsforms-kagi-chart.png)
+
+### Reversal amount as percentage
+
+The [ReversalIsPercent](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ReversalIsPercent) property specifies whether the `ReversalAmount` value is interpreted as a percentage.
+
+N>
+- The `ReversalIsPercent` property works with the `ReversalAmount` property.
+
+The following code interprets the reversal amount of `5` as a percentage.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ReversalAmount = 3.0;
+chartControl.Series[0].ReversalIsPercent = true;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ReversalAmount = 3.0
+chartControl.Series(0).ReversalIsPercent = True
+{% endhighlight %}
+{% endtabs %}
+
+![ReversalIsPercent in Windows Forms](../Chart-Types_images/windowsforms-kago-ReversalIsPercent.png)
+
 
 ## Point and figure
 
@@ -317,7 +344,7 @@ chartControl.PrimaryXAxis.DateTimeFormat = "MMM/dd"
 
 ### Box height
 
-The [HeightBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_HeightBox) property specifies the height of the boxes in a Point and Figure chart. The default value is `1.0`.
+The [HeightBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_HeightBox) property specifies the height of the boxes in a point and figure chart. The default value is `1.0`.
 
 The following code sets the box height to `3`.
 
@@ -336,7 +363,7 @@ chartControl.Series(0).HeightBox =  3.0
 
 The [PriceDownColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFinancialConfigItem_PriceDownColor) property specifies the color used to indicate a downward price movement. The default value is `Red`.
 
-N> The `PriceDownColor` property also applies to `Kagi`, `Renko`, and `Three Line Break` charts.
+N> The `PriceDownColor` property also applies to `Candle`, `OHLC(Open-High-Low-Close)`, `Kagi`, `Renko`, and `Three Line Break` charts.
 
 The following code sets the price-down color to blue.
 
@@ -355,7 +382,7 @@ chartControl.Series(0).ConfigItems.FinancialItem.PriceDownColor = Color.Blue
 
 The [PriceUpColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFinancialConfigItem_PriceUpColor) property specifies the color used to indicate an upward price movement. The default value is `Green`.
 
-N> The `PriceUpColor` property also applies to `Kagi`, `Renko`, and `Three Line Break` charts.
+N> The `PriceUpColor` property also applies to `Candle`, `OHLC(Open-High-Low-Close)`, `Kagi`, `Renko`, and `Three Line Break` charts.
 
 The following code sets the price-up color to blue.
 
@@ -370,49 +397,9 @@ chartControl.Series(0).ConfigItems.FinancialItem.PriceUpColor = Color.Blue
 
 ![Price Up Color in Windows Forms](../Chart-Types_images/windowsforms-chart-price-up-color.png)
 
-### Reversal amount
-
-The [ReversalAmount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ReversalAmount) property specifies the price change required to reverse the current trend. The default value is `1.0`.
-
-N> The `ReversalAmount` property also applies to `Kagi` and `Renko` charts.
-
-The following code sets the reversal amount for the Renko series to `2`.
-
-{% tabs %}
-{% highlight c# %}
-chartControl.Series[0].ReversalAmount = 2.0;
-{% endhighlight %}
-{% highlight vb %}
-chartControl.Series(0).ReversalAmount = 2.0
-{% endhighlight %}
-{% endtabs %}
-
-![Renko Amount in Windows Forms](../Chart-Types_images/windowsforms-renko-reversal-amount.png)
-
-### Reversal amount as percentage
-
-The [ReversalIsPercent](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ReversalIsPercent) property specifies whether the `ReversalAmount` value is interpreted as a percentage.
-
-N>
-- The `ReversalIsPercent` property works with the `ReversalAmount` property.
-- The `ReversalIsPercent` property also applies to `Kagi` and `Point and Figure` charts.
-
-The following code interprets the reversal amount of `5` as a percentage.
-
-{% tabs %}
-{% highlight c# %}
-chartControl.Series[0].ReversalAmount = 5.0;
-chartControl.Series[0].ReversalIsPercent = true;
-{% endhighlight %}
-{% highlight vb %}
-chartControl.Series(0).ReversalAmount = 5.0
-chartControl.Series(0).ReversalIsPercent = True
-{% endhighlight %}
-{% endtabs %}
-
 ## Renko chart
 
-A Renko chart tracks price movements using equal-sized bricks while filtering out minor price changes. A new brick is added only when the price moves by the specified [ReversalAmount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ReversalAmount), which defaults to 1.
+A renko chart tracks price movements using equal-sized bricks while filtering out minor price changes. A new brick is added only when the price moves by the specified [ReversalAmount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ReversalAmount), which defaults to 1.
 
 The brick color changes when the trend reverses, showing the new trend direction. Use the [PriceUpColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFinancialConfigItem_PriceUpColor) property for bullish trends and the [PriceDownColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFinancialConfigItem_PriceDownColor) property for bearish trends. Renko Charts help identify trends, support levels, and resistance levels.
 
@@ -449,43 +436,66 @@ chartControl.PrimaryYAxis.Format = "$ #";
 {% highlight vb %}
 
 Dim points() As Double = {
-    25.25, 27.75, 29.0, 28.275, 27.75, 27.75, 27.275, 26.25, 25.75, 25.25,
-    26.25, 25.25, 24.5, 25.625, 25.5, 26.625, 26.275, 26.25, 26.875, 27.25,
-    26.875, 26.5, 27.125, 26.275, 25.875, 26.625, 27.125, 26.25, 27.0, 27.25,
-    27.5, 28.5, 29.5, 28.875, 28.5, 29.0, 28.5, 28.5, 29.0, 29.0,
-    40.0, 29.875, 29.875, 28.875, 28.5, 28.25, 28.875, 29.275, 29.275, 29.75,
-    29.5, 29.275, 28.5, 27.75, 27.625, 27.5, 26.5, 25.0, 26.625, 26.0,
-    25.875, 25.0, 25.25, 25.125, 25.05
+25.25, 27.75, 29.0, 28.275, 27.75, 27.75, 27.275, 26.25, 25.75, 25.25,
+26.25, 25.25, 24.5, 25.625, 25.5, 26.625, 26.275, 26.25, 26.875, 27.25,
+26.875, 26.5, 27.125, 26.275, 25.875, 26.625, 27.125, 26.25, 27.0, 27.25,
+27.5, 28.5, 29.5, 28.875, 28.5, 29.0, 28.5, 28.5, 29.0, 29.0,
+40.0, 29.875, 29.875, 28.875, 28.5, 28.25, 28.875, 29.275, 29.275, 29.75,
+29.5, 29.275, 28.5, 27.75, 27.625, 27.5, 26.5, 25.0, 26.625, 26.0,
+25.875, 25.0, 25.25, 25.125, 25.05
 }
 
-Dim date As New DateTime(2004, 1, 1)
+Dim startDate As New DateTime(2004, 1, 1)
 
-Dim series As New ChartSeries("Series")
+Dim series As New ChartSeries("Series", ChartSeriesType.Renko)
 
 For day As Integer = 0 To points.Length - 1
-    series.Points.Add(date.AddDays(day), points(day))
+    series.Points.Add(startDate.AddDays(day), points(day))
 Next
 
-series.Type = ChartSeriesType.Renko
 series.ReversalAmount = 1
 
 chartControl.Series.Add(series)
 
+' Configure the DateTime X-axis.
 chartControl.PrimaryXAxis.ValueType = ChartValueType.DateTime
+chartControl.PrimaryXAxis.RangeType = ChartAxisRangeType.Set
+chartControl.PrimaryXAxis.IntervalType = ChartDateTimeIntervalType.Days
 chartControl.PrimaryXAxis.DateTimeFormat = "MMM/dd"
 
-chartControl.PrimaryXAxis.DateTimeRange = New ChartDateTimeRange( _
-    date, _
-    date.AddDays(60), _
-    10, _
-    ChartDateTimeIntervalType.Days)
+chartControl.PrimaryXAxis.DateTimeRange =
+New ChartDateTimeRange(
+startDate,
+startDate.AddDays(points.Length - 1),
+10,
+ChartDateTimeIntervalType.Days)
 
+' Format Y-axis values as currency.
 chartControl.PrimaryYAxis.Format = "$ #"
 
 {% endhighlight %}
 {% endtabs %}
 
 ![Renko Chart in Windows Forms](../Chart-Types_images/windowsforms-renko-chart.png)
+
+### Reversal amount
+
+The [ReversalAmount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ReversalAmount) property specifies the price change required to reverse the current trend. The default value is `1.0`.
+
+N> The `ReversalAmount` property also applies to `Kagi` and `Point and Figure` charts.
+
+The following code sets the reversal amount for the Renko series to `2`.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].ReversalAmount = 2.0;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).ReversalAmount = 2.0
+{% endhighlight %}
+{% endtabs %}
+
+![Renko Amount in Windows Forms](../Chart-Types_images/windowsforms-renko-reversal-amount.png)
 
 ### Colors mode
 
@@ -496,6 +506,9 @@ The supported values are defined in the [ChartFinancialColorMode](https://help.s
 - [DarkLight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialColorMode.html#Syncfusion_Windows_Forms_Chart_ChartFinancialColorMode_DarkLight): Applies dark and light colors to the financial data points.
 - [Fixed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialColorMode.html#Syncfusion_Windows_Forms_Chart_ChartFinancialColorMode_Fixed): Applies the color specified by the `PriceUpColor` property.
 - [Mixed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialColorMode.html#Syncfusion_Windows_Forms_Chart_ChartFinancialColorMode_Mixed): Combines the original point color with the color specified by the `PriceUpColor` property.
+
+N>
+- The `ColorsMode` property also applies to `Three Line Break` charts.
 
 The following code applies dark and light colors to the Renko chart.
 
@@ -516,7 +529,9 @@ chartControl.Series(0).ConfigItems.FinancialItem.ColorsMode =
 
 The [DarkLightPower](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFinancialConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartFinancialConfigItem_DarkLightPower) property specifies the intensity difference between the dark and light colors used in `DarkLight` color mode. The supported range is `0` to `255`, and the default value is `100`.
 
-N> The `DarkLightPower` property takes effect when `ColorsMode` is set to `DarkLight`.
+N>
+-The `DarkLightPower` property takes effect when `ColorsMode` is set to `DarkLight`.
+- The `DarkLightPower` property also applies to `Three Line Break` charts.
 
 The following code sets the dark-light color intensity to `50`.
 
@@ -524,13 +539,11 @@ The following code sets the dark-light color intensity to `50`.
 {% highlight c# %}
 chartControl.Series[0].ConfigItems.FinancialItem.ColorsMode =
     ChartFinancialColorMode.DarkLight;
-
 chartControl.Series[0].ConfigItems.FinancialItem.DarkLightPower = 50;
 {% endhighlight %}
 {% highlight vb %}
 chartControl.Series(0).ConfigItems.FinancialItem.ColorsMode =
     ChartFinancialColorMode.DarkLight
-
 chartControl.Series(0).ConfigItems.FinancialItem.DarkLightPower = 50
 {% endhighlight %}
 {% endtabs %}
@@ -565,7 +578,6 @@ for (int day = 0; day < points.Length; day++)
 }
 
 series.Type = ChartSeriesType.ThreeLineBreak;
-series.ReversalAmount = 3.0;
 
 chartControl.PrimaryYAxis.Format = "$ #";
 chartControl.PrimaryXAxis.ValueType = ChartValueType.DateTime;
@@ -595,7 +607,6 @@ For day As Integer = 0 To points.Length - 1
 Next
 
 series.Type = ChartSeriesType.ThreeLineBreak
-series.ReversalAmount = 3.0
 
 chartControl.PrimaryYAxis.Format = "$ #"
 
