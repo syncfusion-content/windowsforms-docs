@@ -9,15 +9,27 @@ documentation: ug
 
 # Touch Support in Windows Forms Diagram
 
-Touch support for [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) control helps to create sophisticated diagrams quickly and easily by interacting with Diagram nodes through touch gestures such as Tap, Double Tap, Long Press, Pinch, and more. These touch gestures help you perform actions such as select, label text editing, open the context menu, zoom in, and zoom out.
+Touch support in the [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) control lets users interact with diagram nodes through touch gestures. Users can select nodes, edit label text, open the context menu, and zoom in or out using tap, double tap, long press, pinch, and other gestures.
 
-## Properties
+> Touch gestures are delivered by the `Microsoft.Windows.Forms`-based touch handling in the Syncfusion WinForms Diagram control and are supported on Windows 8.1 and later and on Windows Server 2012 and later. A physical or virtual touch digitizer, or a Windows touch emulator, is required.
 
-The following table describes the property associated with turning on/off touch support in WinForms Diagram control.
+## Supported Gestures
 
+The Diagram control responds to the following touch gestures.
 
+| Gesture | Action |
+| --- | --- |
+| Tap | Selects the touched node. |
+| Double Tap | Begins in-place label editing of the touched node. |
+| Long Press | Opens the context menu for the touched node. |
+| Pinch | Zooms the diagram view in or out around the focal point. |
+| Two-finger Pan | Pans the diagram view. |
 
-Touch support Properties
+## Enabling Touch Support
+
+Use the **TouchMode** property to enable or disable touch support at run time. Add a Diagram control named `diagram1` to a Windows Form before running the following sample.
+
+### Properties
 
 <table>
 <tr>
@@ -27,30 +39,36 @@ Description</th></tr>
 <tr>
 <td>
 TouchMode</td><td>
-Specifies whether to turn on/off touch support in WinForms Diagram control.</td></tr>
+Gets or sets whether touch support is enabled for the WinForms Diagram control. Default value is false.</td></tr>
 </table>
 
 
-The following code example illustrates how to turn on touch support for WinForms Diagram control.
-
+The following code example shows how to enable touch support from the form's load event so that touch gestures are active when the diagram is first displayed.
 
 {% tabs %}
 {% highlight c# %}
 
-// Specifies whether to turn on/off touch mode in Diagram.
-diagram1.TouchMode = true;
+private void Form1_Load(object sender, EventArgs e)
+{
+    // Enable touch gestures (Tap, Double Tap, Long Press, Pinch, etc.) on the diagram.
+    diagram1.TouchMode = true;
+}
 
 {% endhighlight %}
 {% highlight vb %}
 
-' Specifies whether to turn on/off touch mode in Diagram.
-diagram1.TouchMode = True
+Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load
+    ' Enable touch gestures (Tap, Double Tap, Long Press, Pinch, etc.) on the diagram.
+    diagram1.TouchMode = True
+End Sub
 
 {% endhighlight %}
 {% endtabs %}
 
-![Windows Forms Diagram Touch Support](Touch-Support_images/Touch-Support_img1.png)
+To turn off touch support after it has been enabled, set `TouchMode = false`. When `TouchMode` is `false`, the control responds only to mouse input and standard keyboard interactions.
+
+![Touch interaction on a node](Touch-Support_images/Touch-Support_img1.png)
 
 
 
-![Windows Forms Diagram Touch support Properties](Touch-Support_images/Touch-Support_img2.png)
+![Zoom and pan gestures on the diagram view](Touch-Support_images/Touch-Support_img2.png)

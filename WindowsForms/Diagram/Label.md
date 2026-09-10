@@ -10,9 +10,9 @@ documentation: ug
 
 # Label in Windows Forms Diagram
 
-A label is a text object that is attached to a node and is positioned relative to node coordinates. This enables you to format the label text.  You can also customize the appearance of the label. You can bind the node name to the label so that the name will be displayed as the label text. This can be achieved using the _PropertyBinding_ property.
+A label is a text object that is attached to a node and is positioned relative to node coordinates. This enables you to format the label text and customize its appearance. You can also bind the node name to the label so that the name will be displayed as the label text. This can be achieved using the _PropertyBinding_ property.
 
-The following formatting options are supports for the label text:
+The following formatting options are supported for the label text:
 
 * WrapText
 * HorizontalAlignment
@@ -23,17 +23,17 @@ The following formatting options are supports for the label text:
 * NoClip
 * LineLimit
 * FitBlackBox
-* MeasureTrailingSpace
+* MeasureTrailingSpaces
 
-The following options are supports for customizing the appearance of the label.
+The following options are supported for customizing the appearance of the label.
 
 * BackGroundStyle
 * FontColorStyle
 * FontStyle
 
-Use Case Scenarios
+## Use Case Scenarios
 
-When you are drawing a Business Process Flow Diagram, using this support, you can name the node representing the stage. 
+When you are drawing a Business Process Flow Diagram, using this feature, you can name the node representing the stage. 
 
 Tables for Properties and Methods
 
@@ -126,14 +126,14 @@ NA</td></tr>
 <tr>
 <td>
 UpdatePosition</td><td>
-Gets or Sets whether default positioning has to be used.</td><td>
+Gets or sets whether default positioning has to be used.</td><td>
 NA</td><td>
 Boolean </td><td>
 NA</td></tr>
 <tr>
 <td>
 AdjustRotationAngle</td><td>
-Gets or Sets whether the label should remain horizontal on rotation of the node.</td><td>
+Gets or sets whether the label should remain horizontal on rotation of the node.</td><td>
 NA</td><td>
 Boolean </td><td>
 NA</td></tr>
@@ -238,7 +238,7 @@ NA</td></tr>
 <tr>
 <td>
 Constraints</td><td>
-Gets or sets a constraints to define an interact the label. </td><td>
+Gets or sets the constraints that define how the label can be interacted with. </td><td>
 enum</td><td>
 LabelConstraints</td><td>
 NA</td></tr>
@@ -252,7 +252,7 @@ NA</td></tr>
 </table>
 
 
-### Methods
+## Methods
 
 
 <table>
@@ -283,7 +283,7 @@ NA</td></tr>
 </table>
 
 
-#### Adding a Label to an Application 
+### Adding a Label to an Application 
 
 You can create label as illustrated in the following code example:
 
@@ -439,7 +439,7 @@ node.Labels.Add(label)
 
 ## Interaction
 
-Diagram allows label to be interacted by selecting, dragging, rotating, and resizing. By default, the Label interaction is disabled and you can enable this by using the `Constraints` property of the Label. You can also curtail the services of interaction by enabling either selecting, dragging, rotating, or resizing individually with the respective `Constraints` property of the label. The following code illustrates how to enable annotation interaction.
+Diagram allows the label to be interacted with by selecting, dragging, rotating, and resizing. By default, label interaction is disabled, and you can enable it by using the `Constraints` property of the label. You can also curtail the interaction services by enabling selecting, dragging, rotating, or resizing individually with the respective `Constraints` property of the label. The following code illustrates how to enable annotation interaction.
 
 {% tabs %}
 {% highlight c# %}
@@ -480,7 +480,7 @@ rectangle.Labels.Add(label)
 
 label = New Syncfusion.Windows.Forms.Diagram.Label()
 'To set the label constraint as Resize alone...
-label.Constraints = LabelConstraints.Resize| LabelConstraints.Select
+label.Constraints = LabelConstraints.Resize | LabelConstraints.Select
 label.Position = Position.TopLeft
 'lbl.UpdatePosition = true;
 label.Text = "Second"
