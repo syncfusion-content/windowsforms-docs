@@ -15,7 +15,7 @@ Guides for the [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winform
 You can also change the visual style of the guides by using its LineStyle property.
 
 
-### Properties
+## Properties
 
 The following table describes the various properties associated with the [Guides](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Guides.html) class:
 
@@ -47,7 +47,7 @@ Gets or sets the margin between nodes, in pixels (float).</td></tr>
 </table>
 
 
-### Enable and Customize Guides
+## Enable and Customize Guides
 
 The following code example illustrates how to turn on guides for diagram nodes while dragging or resizing nodes. A Diagram control named `diagram1` must already exist on the form.
 

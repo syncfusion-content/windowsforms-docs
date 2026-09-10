@@ -16,7 +16,7 @@ Layers are transparent sheets that can be added to the model to organize diagram
 ![Diagram layers](Layers_images/Layers_img1.png)
 
 
-### Sample Layers
+## Sample Layers
 
 A layer organizes graphical objects into groups that share common default properties and Z-order. Users can add any number of layers to the model and move objects between layers.
 

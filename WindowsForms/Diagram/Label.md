@@ -31,7 +31,7 @@ The following options are supported for customizing the appearance of the label.
 * FontColorStyle
 * FontStyle
 
-### Use Case Scenarios
+## Use Case Scenarios
 
 When you are drawing a Business Process Flow Diagram, using this feature, you can name the node representing the stage. 
 
@@ -252,7 +252,7 @@ NA</td></tr>
 </table>
 
 
-### Methods
+## Methods
 
 
 <table>
@@ -283,7 +283,7 @@ NA</td></tr>
 </table>
 
 
-#### Adding a Label to an Application 
+### Adding a Label to an Application 
 
 You can create label as illustrated in the following code example:
 

@@ -99,7 +99,7 @@ Me.diagram1.Controller.UnGroup()   'Method to ungroup the nodes
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-### Access, Delete, or Remove Child Nodes in a Group
+## Access, Delete, or Remove Child Nodes in a Group
 
 The first step is to check whether the node is a group.
 
@@ -156,7 +156,7 @@ Inserts the specified child node at the specified index.</td></tr>
 </table>
 
 
-The Group class has an int [ChildCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Group.html#Syncfusion_Windows_Forms_Diagram_Group_ChildCount)property that returns the number of child nodes in a group. To delete the first element in a group, use the following code.
+The Group class has an int [ChildCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Group.html#Syncfusion_Windows_Forms_Diagram_Group_ChildCount) property that returns the number of child nodes in a group. To delete the first element in a group, use the following code.
 
 {% tabs %}
 {% highlight c# %}
@@ -192,7 +192,7 @@ Next
 
 ![Access, Delete or Remove the child nodes in a Group](Grouping_images/Grouping_img1.jpeg)
 
-### Positioning a Group's Child Nodes
+## Positioning a Group's Child Nodes
 
 The Diagram group node supports absolute and relative positioning. The group node has an enum property called [GroupNodePosition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Group.html#Syncfusion_Windows_Forms_Diagram_Group_GroupNodePosition) of type [GroupNodePositions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.GroupNodePositions.html) to position its child nodes. GroupNodePositions has two values: Absolute and Relative. The Absolute option places the nodes inside a group based on their actual PinPoint, whereas the Relative option places the nodes based on their default PinPoint. The default value is `Relative`.
 
@@ -228,7 +228,7 @@ group.GroupNodePosition = GroupNodePositions.Absolute
 
 
 
-### Properties
+## Properties
 
 <table>
 <tr>
