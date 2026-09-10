@@ -9,7 +9,7 @@ documentation: ug
 
 # Custom Styling in WinForms Toggle Button
 
-The appearance of the WinForms Toggle Button is customized by using the IToggleButtonRenderer. This interface provides few methods to control painting borders, arrow, and so on. 
+The appearance of the WinForms Toggle Button is customized by using the IToggleButtonRenderer. This interface provides few methods to control painting borders, arrow, and so on.  
 
 To customize the appearance, 
 
