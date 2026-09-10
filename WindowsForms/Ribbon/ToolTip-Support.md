@@ -11,7 +11,7 @@ documentation: ug
 
 ToolTip is a small popup box that appears when the user moves the pointer over an element.
 
-## Adding ToolTip for WinForms Ribbon Controls
+## Adding ToolTip to WinForms Ribbon Control Items
 
 ToolTip can be added to all the WinForms Ribbon Controls through that control property `ToolTipText`, this text will appear in a popup when hovered.   
 

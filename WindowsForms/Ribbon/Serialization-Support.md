@@ -9,7 +9,7 @@ documentation: ug
 
 # Serialization Support in WinForms Ribbon Control
 
-The WinForms Ribbon Control has built-in serialization support to serialize the entire WinForms Ribbon Control state and the details of the layout mode. It also provides support to save and load the Ribbon at any time while the application is running, either with the simplified or normal layout.
+The WinForms Ribbon Control has built-in serialization support to serialize the entire Control state and the details of the layout mode. It also provides support to save and load the Ribbon at any time while the application is running, either with the simplified or normal layout.
 
 ## States which get serialized
 

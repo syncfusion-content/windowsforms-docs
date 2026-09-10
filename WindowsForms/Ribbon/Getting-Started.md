@@ -26,7 +26,7 @@ To add the WinForms Ribbon Control manually through code, follow the below steps
     *	Syncfusion.Shared.Base
     *	Syncfusion.Tools.Windows
 
-2. New ‘WinForms Ribbon Control’ can be added to the forms using the `Controls.Add` method.   Create a new WinForms Ribbon Control and initialize the ribbon and then add it to the Controls using below code.
+2. New ‘WinForms Ribbon Control’ can be added to the forms using the `Controls.Add` method.   Create and initialize the control, and then add it to the Controls using the code below.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -128,7 +128,7 @@ Customize the Tab item using the property grid.
 
 ![Customizing the Tab items](Getting_Started_Images/Getting-Started_img4.jpg)
 
-A new TabItem can be added to the WinForms Ribbon Control programmatically using the `AddMainItem` method. Create a ToolStripTabItem and then add it to the WinForms Ribbon Control using the below method.
+A new TabItem can be added to the WinForms Ribbon Control programmatically using the `AddMainItem` method. Create a ToolStripTabItem and then add it to the Control using the below method.
 
 {% tabs %}
 

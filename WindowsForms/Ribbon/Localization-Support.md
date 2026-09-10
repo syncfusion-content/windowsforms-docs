@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization Support in WinForms Ribbon Control
 
-WinForms Ribbon Control now supports adaptation of its controls and its details to meet different languages and cultural requirements. This involves configuring the WinForms Ribbon Control to a specific language.
+WinForms Ribbon Control now supports adaptation of its controls and its details to meet different languages and cultural requirements. This involves configuring the Control to a specific language.
 
 ## Adding ILocalizationProvider
 

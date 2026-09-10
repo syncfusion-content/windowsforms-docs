@@ -17,7 +17,7 @@ Image shows toolbox on the left side and designer on the right top and controls 
 
 ## AutoLayoutToolStrip
 
-The `AutoLayoutToolStrip` property enables standard size and layout for WinForms Ribbon Control and its items. The default value of the `AutoLayoutToolStrip` is false. The ToolStripItems can be arranged in the WinForms Ribbon Control in the following three different sizes:
+The `AutoLayoutToolStrip` property enables standard size and layout for WinForms Ribbon Control and its items. The default value of the `AutoLayoutToolStrip` is false. The ToolStripItems can be arranged in the Control in the following three different sizes:
 
 **Large:** ToolStripItem’s `DisplayStyle` is ImageAndText and `TextImageRelation` is ImageAboveText/ ImageBelowText.
 
@@ -69,7 +69,7 @@ Me.ribbonControlAdv1.AutoLayoutToolStrip = True
 
 The Smart Tag feature allows you quickly access the most commonly used properties and options and perform tasks without leaving the control’s design surface (resembles a right-pointing arrow).
 
-In WinForms Ribbon Control Smart Tag, the frequently used properties related to the appearance and behavior and links to access documentation and support resources of WinForms Ribbon Control have been added.
+In the Smart Tag of the WinForms Ribbon Control, frequently used properties related to appearance and behavior, along with links to access documentation and support resources, have been added.
 
 
 ![Smart Tag of RibbonControlAdv](Ribbon_Designer_Images/Ribbon-Designer_img2.jpg)

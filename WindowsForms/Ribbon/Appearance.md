@@ -10,7 +10,7 @@ documentation: ug
 # Appearance in WinForms Ribbon Control
 
 The WinForms Ribbon Control ships with several built-in themes such as Office2007, Office2010, Office2013, TouchStyle and Office2016.
-All these themes can be applied with the WinForms Ribbon Control property `RibbonStyle`.
+All these themes can be applied through its `RibbonStyle` property.
 
 ## Apply Visual styles
 
