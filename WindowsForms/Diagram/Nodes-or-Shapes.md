@@ -9,7 +9,7 @@ documentation: ug
 
 # Nodes or Shapes in Windows Forms Diagram
 
-The [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) control supports different kinds of nodes. The following are the nodes that are supported by the WinForms Diagram control:
+The [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) control supports many node types. The following node types are available in the WinForms Diagram control:
 
 * TextNode
 * Shape
@@ -46,10 +46,10 @@ The [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) 
 
 ## Creating a Node in the WinForms Diagram control at Run Time
 
-To create a node in the WinForms Diagram control:
+To create a node in the WinForms Diagram control, add a Diagram control to the Windows Form and handle its load event:
 
 1. Drag the Diagram control to the windows form.
-2. Press the F7 key to open the *.cs file and enter the following code in the Page_Load function.
+2. Press the F7 key to open the *.cs file and enter the following code in the Form1_Load function.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -65,8 +65,8 @@ private void Form1_Load(object sender, EventArgs e)
 {% highlight vb %}
 
 Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
-Dim ellipse As New Syncfusion.Windows.Forms.Diagram.Ellipse(10, 10, 110, 70)
-diagram1.Model.AppendChild(ellipse)
+	Dim ellipse As New Syncfusion.Windows.Forms.Diagram.Ellipse(10, 10, 110, 70)
+	diagram1.Model.AppendChild(ellipse)
 End Sub
 
 {% endhighlight %}
@@ -140,9 +140,6 @@ End Sub
 ![Nodes-or-Shapes_img2](Nodes-or-Shapes_images/Nodes-or-Shapes_img2.jpeg)
 
 
-
-
-
 ### Creating Nodes and Links
 
 The following code example illustrates how to create nodes and links.
@@ -185,7 +182,7 @@ A node's behavior can be customized and modified using the EditStyle collection 
 
 * To prohibit selection, rotation and deletion of nodes, by using AllowSelect, AllowRotate and AllowDelete properties. 
 * To restrict a node's movement along the x or y axis, by using AllowMoveX and AllowMoveY properties.
-* To prevent re-sizing the height and width of the node, by using AllowChangeHeight and AllowChangeWidth and AllowResize properties.
+* To prevent resizing the height and width of the node, by using AllowChangeHeight, AllowChangeWidth, and AllowResize properties.
 
 
 <table>
@@ -221,6 +218,10 @@ Specifies whether or not to rotate the node using the PinPoint. Default value is
 <td>
 AllowSelect</td><td>
 Specifies whether or not to select the node on mouse click. Default value is {{ '_true_' | markdownify }}.</td></tr>
+<tr>
+<td>
+AllowResize</td><td>
+Specifies whether or not to resize the node. Default value is {{ '_true_' | markdownify }}.</td></tr>
 </table>
 
 
@@ -254,11 +255,7 @@ rect.EditStyle.AllowSelect = True
 
 In the above code snippets, the properties are set to the Rectangular node (rect) created through the code.
 
-Behavior Settings
-
-
-
-_Properties_
+### Behavior Settings
 
 <table>
 <tr>
@@ -272,7 +269,7 @@ Specifies whether to maintain the height and width ratio when the node is resize
 <tr>
 <td>
 DefaultHandleEditMode</td><td>
-Specifies the mode in which the node should be handled. The default value for links and lines is Vertex and for all other nodes and polyline the default value is Resize. To move the nodes, DefaultHandleEditMode should be set to Resize. The options provided are as follows.NoneResizeVertex</td></tr>
+Specifies the mode in which the node should be handled. The default value for links and lines is Vertex, and for all other nodes and polyline the default value is Resize. Set DefaultHandleEditMode to Resize to move the nodes. The available values are None, Resize, and Vertex.</td></tr>
 <tr>
 <td>
 Enabled</td><td>
@@ -299,10 +296,9 @@ Programmatically these properties can be set as follows:
 {% highlight c# %}
 
 rect.EditStyle.AspectRatio = true;
-rect.EditStyle.DefaultHandleEditMode =HandleEditMode.Resize;
+rect.EditStyle.DefaultHandleEditMode = HandleEditMode.Resize;
 rect.EditStyle.Enabled = true;
 rect.EditStyle.AllowVertexEdit = true;
-rect.EditStyle.DefaultHandleEditMode =HandleEditMode.Vertex;
 rect.EditStyle.HidePinPoint = true;
 rect.EditStyle.HideRotationHandle = true;
 
@@ -313,7 +309,6 @@ rect.EditStyle.AspectRatio = True
 rect.EditStyle.DefaultHandleEditMode = HandleEditMode.Resize
 rect.EditStyle.Enabled = True
 rect.EditStyle.AllowVertexEdit = True
-rect.EditStyle.DefaultHandleEditMode = HandleEditMode.Vertex
 rect.EditStyle.HidePinPoint = True
 rect.EditStyle.HideRotationHandle = True
 
@@ -327,17 +322,11 @@ In the above code snippets, the properties are set to the Rectangular node (rect
 ![Node-Selections_img1](Nodes-or-Shapes_images/Node-Selections_img1.jpeg)
 
 
-
-
-
 ![Node-Selections_img2](Nodes-or-Shapes_images/Node-Selections_img2.jpeg)
 
 
 
 ![Node-Selections_img3](Nodes-or-Shapes_images/Node-Selections_img3.jpeg)
-
-
-
 
 
 ![Node-Selections_img4](Nodes-or-Shapes_images/Node-Selections_img4.jpeg)
@@ -346,7 +335,7 @@ In the above code snippets, the properties are set to the Rectangular node (rect
 
 ## Dragging, Resizing, and Rotation Styles for Nodes
 
-WinForms Diagram provides dragging, resizing, and rotation styles such as ghost copy, filled rectangle, solid outline, and dashed outline for nodes. These styles provide better visual effects for your diagram and increase the performance speed of the diagram while dragging, rotating, or resizing nodes.
+WinForms Diagram provides dragging, resizing, and rotation styles such as ghost copy, filled rectangle, solid outline, and dashed outline for nodes. These styles improve the visual feedback of your diagram while dragging, rotating, or resizing nodes.
 
 Properties Table
 
