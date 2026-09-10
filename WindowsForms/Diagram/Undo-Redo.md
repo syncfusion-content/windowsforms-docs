@@ -9,54 +9,92 @@ documentation: ug
 
 # Undo / Redo in Windows Forms Diagram
 
-The actions can be recorded into the history manager such that the undo and redo operations can be performed. The recording can be controlled and the undo and redo actions can be performed using the following tools.
+The Diagram control records user actions (such as adding, moving, resizing, or deleting nodes) into the [HistoryManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.HistoryManager.html). The active history manager exposes methods to undo and redo those recorded actions. Recording is enabled by default when a model is created; you can pause and resume recording with `Suspend` and `Resume`.
 
+Before running the samples below, add a Diagram control named `diagram1` to a Windows Form.
 
-
-Undo / Redo Properties
+## History Manager Methods
 
 <table>
 <tr>
 <th>
-History Manager Tool </th><th>
+Method</th><th>
 Description</th></tr>
 <tr>
 <td>
 Undo</td><td>
-Undo the previous action.</td></tr>
+Undoes the most recent recorded action from the undo stack.</td></tr>
 <tr>
 <td>
 Redo</td><td>
-Redo the previous action. Redo action can be performed only after an undo action.</td></tr>
+Redoes the most recent undone action. Redo is only available after Undo has been called.</td></tr>
 <tr>
 <td>
-StartAtomicAction</td><td>
-Stops recording the actions and hence will not be added to the undo history manager.</td></tr>
+StartAtomicAction(string actionName)</td><td>
+Begins an atomic (composite) action. All recorded actions between Start and End are merged into a single undo entry titled <em>actionName</em>.</td></tr>
 <tr>
 <td>
-EndAtomicAction</td><td>
-Cancels the StartAtomicAction process and turns on the recording of actions in the history manager.</td></tr>
+EndAtomicAction()</td><td>
+Ends the atomic action started by `StartAtomicAction` and resumes normal recording of new actions.</td></tr>
 </table>
 
+## Undo and Redo
 
-Programmatically, it is implemented as follows:
-
+Calling **Undo** reverses the most recent recorded action. The action is then pushed onto the redo stack, allowing **Redo** to restore it on the next call.
 
 {% tabs %}
 {% highlight c# %}
 
+// Reverse the most recent recorded action.
 this.diagram1.Model.HistoryManager.Undo();
+
+// Reapply the action that was just undone.
 this.diagram1.Model.HistoryManager.Redo();
+
+{% endhighlight %}
+{% highlight vb %}
+
+' Reverse the most recent recorded action.
+Me.diagram1.Model.HistoryManager.Undo()
+
+' Reapply the action that was just undone.
+Me.diagram1.Model.HistoryManager.Redo()
+
+{% endhighlight %}
+{% endtabs %}
+
+> If `Redo()` is called when the redo stack is empty, the call is a no-op. **Redo** only works after at least one **Undo** has been performed.
+
+## Atomic Actions
+
+Use `StartAtomicAction` and `EndAtomicAction` to group several actions into a single undoable unit. This is useful when a custom command performs multiple changes (for example, while swapping two nodes) and the user expects Undo to restore them together rather than step-by-step.
+
+The atomic action sequence must call `StartAtomicAction` first to begin recording the composite action and then `EndAtomicAction` to commit the unit to the history.
+
+{% tabs %}
+{% highlight c# %}
+
 this.diagram1.Model.HistoryManager.StartAtomicAction("Custom Action");
+
+// Perform the operations you want to group into a single undo entry here.
+Syncfusion.Windows.Forms.Diagram.Rectangle rect =
+    new Syncfusion.Windows.Forms.Diagram.Rectangle(100, 100, 100, 50);
+this.diagram1.Model.AppendChild(rect);
+
 this.diagram1.Model.HistoryManager.EndAtomicAction();
 
 {% endhighlight %}
 {% highlight vb %}
 
-Me.diagram1.Model.HistoryManager.Undo()
-Me.diagram1.Model.HistoryManager.Redo()
 Me.diagram1.Model.HistoryManager.StartAtomicAction("Custom Action")
+
+' Perform the operations you want to group into a single undo entry here.
+Dim rect As New Syncfusion.Windows.Forms.Diagram.Rectangle(100, 100, 100, 50)
+Me.diagram1.Model.AppendChild(rect)
+
 Me.diagram1.Model.HistoryManager.EndAtomicAction()
 
 {% endhighlight %}
 {% endtabs %}
+
+Calling **Undo** after the sample above removes the appended rectangle in a single step labeled "Custom Action".
