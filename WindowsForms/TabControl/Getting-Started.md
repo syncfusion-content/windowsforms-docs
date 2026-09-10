@@ -19,15 +19,15 @@ You can find more details about installing the NuGet packages in a Windows Forms
 
 ### Create a simple application with WinForms TabControl
 
-You can create a Windows Forms application with [WinForms TabControl](https://www.syncfusion.com/winforms-ui-controls/tabcontrol) (WinForms TabControl) using the following steps:
+You can create a Windows Forms application with [WinForms TabControl](https://www.syncfusion.com/winforms-ui-controls/tabcontrol) using the following steps:
 
 ### Create a project
 
-Create a new Windows Forms project in Visual Studio to display the [WinForms TabControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) control with tab pages.
+Create a new Windows Forms project in Visual Studio to display the [WinForms TabControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) with tab pages.
 
 ## Add control through designer
 
-The [WinForms TabControl](https://www.syncfusion.com/winforms-ui-controls/tabcontrol) (WinForms TabControl) control can be added to an application by dragging it from the toolbox to a designer view. The following assembly references are added automatically:
+The [WinForms TabControl](https://www.syncfusion.com/winforms-ui-controls/tabcontrol) can be added to an application by dragging it from the toolbox to a designer view. The following assembly references are added automatically:
 
 * Syncfusion.Grid.Base.dll
 * Syncfusion.Grid.Windows.dll
@@ -136,7 +136,7 @@ tabPageAdv1.Controls.Add(calendar)
 
 ## Tab placement
 
-[WinForms TabControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) (WinForms TabControl) provides an option to display tabs horizontally at the top or bottom and vertically at the left or right by setting the [Alignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_Alignment) property of [WinForms TabControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
+[WinForms TabControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) provides an option to display tabs horizontally at the top or bottom and vertically at the left or right by setting the [Alignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_Alignment) property of [WinForms TabControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
 
 {% tabs %}
 {% highlight C# %}
