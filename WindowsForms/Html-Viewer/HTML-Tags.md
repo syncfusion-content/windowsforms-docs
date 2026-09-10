@@ -9,7 +9,7 @@ documentation: ug
 
 # HTML tags in WinForms HTML Viewer control
 
-This sections details the HTML tags supported by WinForms HTML Viewer. Most of the tags conform to the XHTML standard. Some of the tags support additional functionality implemented through custom attributes. Since WinForms HTML Viewer considers each HTML tag as an XML element, it is recommended to use closing tags for each HTML element at the end. These tags and attributes are also marked and explained in this section.
+This sections details the HTML tags supported by WinForms HTML Viewer. Most of the tags conform to the XHTML standard. Some of the tags support additional functionality implemented through custom attributes. Since the control considers each HTML tag as an XML element, it is recommended to use closing tags for each HTML element at the end. These tags and attributes are also marked and explained in this section.
 
 ## A - Anchor tag
 
@@ -140,7 +140,7 @@ Me.htmluiControl.LoadHTML(@"C:\MyProjects\Acronym\acronym.html")
 
 ## Comment tag
 
-WinForms HTML Viewer control supports the use of HTML Comment tags while developing applications. The Comment tag is used to include a brief description by the developer, which helps the user to understand the code and also helps to edit the code at a later date. Normally the content inside the comment is ignored by the WinForms HTML Viewer control.
+WinForms HTML Viewer control supports the use of HTML Comment tags while developing applications. The Comment tag is used to include a brief description by the developer, which helps the user to understand the code and also helps to edit the code at a later date. Normally the content inside the comment is ignored by the control.
 
 {% tabs %}
 
@@ -186,7 +186,7 @@ Me.htmluiControl.LoadHTML(@"C:\MyProjects\Comment\comment.html")
 
 ## Font style tags
 
-The Font Style tags are used to format the appearance of the specified text when rendered in WinForms HTML Viewer. The following are the font style tags supported in WinForms HTML Viewer:
+The Font Style tags are used to format the appearance of the specified text when rendered in WinForms HTML Viewer. The following are the font style tags supported in the control:
 
 
 
@@ -250,7 +250,7 @@ Me.htmluiControl.LoadHTML(@"C:\MyProjects\FontStyle\fontStyle.html")
 
 ## BODY - Body tag
 
-The Body element defines the body of the HTML document. This is the parent element of all the HTML elements visible in the browser. The contents to be displayed in the WinForms HTML Viewer control are placed inside the body tag. In HTMLUI the body element is considered as the basis for all the elements present in the document. The following code snippet shows the use of a body element in rendering HTML documents in WinForms HTML Viewer control.
+The Body element defines the body of the HTML document. This is the parent element of all the HTML elements visible in the browser. The contents to be displayed in the WinForms HTML Viewer control are placed inside the body tag. In HTMLUI the body element is considered as the basis for all the elements present in the document. The following code snippet shows the use of a body element in rendering HTML documents in the control.
 
 {% tabs %}
 
@@ -448,7 +448,7 @@ Me.htmluiControl.LoadHTML(@"C:\MyProjects\UserInput\form.html")
 
 ## HEAD - Head tag
 
-The Head element contains the information required for processing the document. The contents of the head tag will not be displayed in the WinForms HTML Viewer control. The WinForms HTML Viewer control receives information only through the head element. The following are the information obtained:
+The Head element contains the information required for processing the document. The contents of the head tag will not be displayed in the WinForms HTML Viewer control. The control receives information only through the head element. The following are the information obtained:
 
 
 
@@ -662,7 +662,7 @@ Me.htmluiControl.LoadHTML(@"C:\MyProjects\HTML\htmlElement.html")
 
 ## IMG - Image tag
 
-The Image tag is used to display an image in the WinForms HTML Viewer control. The WinForms HTML Viewer control supports the following attributes for the image element, which can used in developing advanced HTMLUI applications.
+The Image tag is used to display an image in the WinForms HTML Viewer control. The control supports the following attributes for the image element, which can used in developing advanced HTMLUI applications.
 
 
 
@@ -1920,7 +1920,7 @@ Me.htmluiControl.LoadHTML(@"C:\MyProjects\table\th.html")
 
 ## TITLE - Title tag
 
-The Title tag is used to enter a title to the document. The <title> tag is displayed in the title bar of in the WinForms HTML Viewer control, which is present at the top of the control. The title display can be toggled with the help of ShowTitle property of the WinForms HTML Viewer control. This is a bool property, which when set to true displays the title bar over the control. The title tag is inserted in the head section of the document.
+The Title tag is used to enter a title to the document. The <title> tag is displayed in the title bar of in the WinForms HTML Viewer control, which is present at the top of the control. The title display can be toggled with the help of ShowTitle property of the control. This is a bool property, which when set to true displays the title bar over the control. The title tag is inserted in the head section of the document.
 
 {% tabs %}
 

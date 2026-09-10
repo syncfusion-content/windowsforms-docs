@@ -9,7 +9,7 @@ documentation: ug
 
 # Style Sheets CSS in WinForms HTML Viewer control
 
-The support for style sheets is enabled in WinForms HTML Viewer. This lets the user to define styles for HTML elements and decide the appearance of the HTML elements in the application. WinForms HTML Viewer supports three types of style sheets.
+The support for style sheets is enabled in WinForms HTML Viewer. This lets the user to define styles for HTML elements and decide the appearance of the HTML elements in the application. The control supports three types of style sheets.
 
 
 
@@ -298,7 +298,7 @@ htmluiControl.LoadHTML(@"C:\MyProjects\StyleSheets\external.html")
 
 #### Run time
 
-WinForms HTML Viewer is so flexible that the user can define styles for the HTML document at run time. The LoadCSS method of the WinForms HTML Viewer control helps the user to load another CSS file to the current document at run time.
+WinForms HTML Viewer is so flexible that the user can define styles for the HTML document at run time. The LoadCSS method of the control helps the user to load another CSS file to the current document at run time.
 
 {% tabs %}
 

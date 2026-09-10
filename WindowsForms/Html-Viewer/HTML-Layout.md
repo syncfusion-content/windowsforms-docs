@@ -20,7 +20,7 @@ The display purposes involve the functionality similar to Web browsers in displa
 
 WinForms HTML Viewer control can be used in a variety of applications which are common in our day-to-day life.
 
-With WinForms HTML Viewer control's support to images and animated images, Chat applications can be developed. The form based dialog box applications used in the office desks can also be developed at ease by simply changing different HTML documents as per the needs. The other interesting applications that can be developed using WinForms HTML Viewer include games, animations, user blog, and so on.
+With WinForms HTML Viewer control's support to images and animated images, Chat applications can be developed. The form based dialog box applications used in the office desks can also be developed at ease by simply changing different HTML documents as per the needs. The other interesting applications that can be developed using the control include games, animations, user blog, and so on.
 
 The following figure shows a form based dialog that illustrates WinForms HTML Viewer as a Layout Engine.
 

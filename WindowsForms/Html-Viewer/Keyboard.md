@@ -9,7 +9,7 @@ documentation: ug
 
 # Keyboard in WinForms HTML Viewer control
 
-The WinForms HTML Viewer control also supports usage of keyboards for navigating through the links inside a HTML document. Like in popular browsers, WinForms HTML Viewer control uses the TAB key for shifting the focus on the links.
+The WinForms HTML Viewer control also supports usage of keyboards for navigating through the links inside a HTML document. Like in popular browsers, the control uses the TAB key for shifting the focus on the links.
 
 ## WinForms HTML Viewer Keyboard sample
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Scrolling in WinForms HTML Viewer control
 
-The Scroll property of the WinForms HTML Viewer control helps in loading large HTML documents. This scroll property can be set as per the application. Also the WinForms HTML Viewer control allows programmatic scrolling to a particular location or element with its extensive scroll properties support.
+The Scroll property of the WinForms HTML Viewer control helps in loading large HTML documents. This scroll property can be set as per the application. Also the control allows programmatic scrolling to a particular location or element with its extensive scroll properties support.
 
 {% tabs %}
 

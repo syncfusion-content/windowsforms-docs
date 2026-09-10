@@ -85,8 +85,7 @@ End If
 
 {% endtabs %}
 
-Along with printing feature, WinForms HTML Viewer control supports previewing of the document before printing. This following code snippet shows how the print preview feature is enabled in WinForms HTML Viewer.
-
+Along with printing feature, WinForms HTML Viewer control supports previewing of the document before printing. This following code snippet shows how the print preview feature is enabled in the control.
 {% tabs %}
 
 {% highlight C# %}

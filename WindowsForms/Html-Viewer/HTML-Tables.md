@@ -9,7 +9,7 @@ documentation: ug
 
 # HTML Tables in WinForms HTML Viewer
 
-WinForms HTML Viewer has a rich table support that lets the user to decide the table's dimensions and design. The WinForms HTML Viewer table support also comes with different alignments of text within the table. This helps the user in creating advanced and highly structured HTML applications.
+WinForms HTML Viewer has a rich table support that lets the user to decide the table's dimensions and design. Its table support also comes with different alignments of text within the table. This helps the user in creating advanced and highly structured HTML applications.
 
 {% tabs %}
 

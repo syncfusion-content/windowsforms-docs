@@ -9,7 +9,7 @@ documentation: ug
 
 # Element Format in WinForms HTML Viewer
 
-Essential<sup>®</sup> WinForms HTML Viewer supports formatting of not only the entire HTML document as a whole, but also the individual elements. With WinForms HTML Viewer, the user can replace any HTML element into some other format before displaying, in a view to develop advanced user interactivity.
+Essential<sup>®</sup> WinForms HTML Viewer supports formatting of not only the entire HTML document as a whole, but also the individual elements. With the control, the user can replace any HTML element into some other format before displaying, in a view to develop advanced user interactivity.
 
 
 The following snippet shows how a text content can be replaced with an image in a text sequence.

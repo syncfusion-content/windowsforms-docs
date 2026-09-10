@@ -338,7 +338,7 @@ End Sub
 
 ## TitleChanged event
 
-The [TitleChanged event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html) is raised after the Title property of the WinForms HTML Viewer control is changed. The Title value can be set explicitly by the user or it can be extracted from the title tag of the HTML document that is to be loaded into the WinForms HTML Viewer control.
+The [TitleChanged event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html) is raised after the Title property of the WinForms HTML Viewer control is changed. The Title value can be set explicitly by the user or it can be extracted from the title tag of the HTML document that is to be loaded into the control.
 
 The event handler receives its data from the ValueChangedEventArguments. The following properties are associated with the TitleChanged event handling.
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # HTML bookmarks in WinForms HTML Viewer control
 
-Bookmarks feature is enabled in the WinForms HTML Viewer control. This allows the user to switch to particular references in the page when the link is clicked. The WinForms HTML Viewer control has another functionality of referring bookmarks which is, referring them not only in the same page, but also in other pages.
+Bookmarks feature is enabled in the WinForms HTML Viewer control. This allows the user to switch to particular references in the page when the link is clicked. The control has another functionality of referring bookmarks which is, referring them not only in the same page, but also in other pages.
 
 {% tabs %}
 
