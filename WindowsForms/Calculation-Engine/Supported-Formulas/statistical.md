@@ -163,17 +163,17 @@ The `BETAINV` function returns the inverse of the cumulative beta probability de
 
 _BETAINV(probability,alpha,beta,[A],[B])_
 
-**Where:**  
+**Parameters:**  
 
-* probability: A probability associated with the beta distribution.  
+* `probability`: A probability associated with the beta distribution.  
 
-* alpha: A parameter of the distribution.  
+* `alpha`: A parameter of the distribution.  
 
-* beta: A parameter of the distribution.  
+* `beta`: A parameter of the distribution.  
 
-* A: A lower bound to the interval of x.  
+* `A`: A lower bound to the interval of x.  
 
-* B: An upper bound to the interval of x.  
+* `B`: An upper bound to the interval of x.  
 
 **Remarks**  
 
@@ -213,17 +213,17 @@ The `BETA.INV` function returns the inverse of the cumulative beta probability d
 
 _BETA.INV(probability,alpha,beta,[A],[B])_
 
-**Where:**  
+**Parameters:**  
 
-* probability: A probability associated with the beta distribution.  
+* `probability`: A probability associated with the beta distribution.  
 
-* alpha: A parameter of the distribution.  
+* `alpha`: A parameter of the distribution.  
 
-* beta: A parameter of the distribution.  
+* `beta`: A parameter of the distribution.  
 
-* A: A lower bound to the interval of x.  
+* `A`: A lower bound to the interval of x.  
 
-* B: An upper bound to the interval of x.  
+* `B`: An upper bound to the interval of x.  
 
 **Remarks**  
 
@@ -2924,25 +2924,25 @@ The `TTEST` function returns the probability associated with a Student's t-Test,
 
 _TTEST(array1, array2, tails, type)_
 
-**Where:**  
+**Parameters:**  
 
-* array1: The first data set.  
+* `array1`: The first data set.  
 
-* array2: The second data set.  
+* `array2`: The second data set.  
 
-* tails: Specifies the number of distribution tails.
+* `tails`: Specifies the number of distribution tails.
 
-	* 1 - One tailed distribution.
+	* `1`: - One tailed distribution.
 
-	* 2 - Two tailed distribution.
+	* `2`: - Two tailed distribution.
 
-* type: The kind of t-Test to perform.
+* `type`: The kind of t-Test to perform.
 
-	* 1 - Paired.
+	* `1`: - Paired.
 
-	* 2 - Two-sample equal variance.
+	* `2`: - Two-sample equal variance.
 
-	* 3 - Two-sample unequal variance.
+	* `3`: - Two-sample unequal variance.
 
 **Remarks**  
 

@@ -195,7 +195,7 @@ _LET(name1, value1, [name2, value2], ..., calculation)_
 
 
 
-**where:**
+**Parameters:**
 
 
 

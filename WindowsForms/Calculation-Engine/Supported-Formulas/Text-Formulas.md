@@ -111,7 +111,7 @@ _CONCATENATE (text1, text2,...)_
 
 
 
-The `DBCS` function converts half-width (single-byte) letters within a character string to full-width (double-byte) characters.
+The `DBCS` function converts half-width (single-byte) characters in a text string to full-width (double-byte) characters.
 
 
 
@@ -123,11 +123,19 @@ _DBCS(text)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* text is the text or a reference that contains the text you want to convert. If text does not contain any half-width characters, text is not changed.
+* `text`: The text string or a reference to a cell containing the text to be converted. If the specified text does not contain any half-width characters, the original text is returned unchanged.
+
+
+
+**Returns:**
+
+
+
+A text string in which all half-width characters have been converted to their corresponding full-width characters. If no half-width characters are present, the input text remains unchanged.
 
 
 

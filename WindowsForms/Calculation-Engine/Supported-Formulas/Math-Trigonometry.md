@@ -921,49 +921,49 @@ The `GROUPBY` function creates a summary of data by grouping, aggregating, sorti
 
 _GROUPBY(row_fields, values, function, [field_headers], [total_depth], [sort_order], [filter_array], [field_relationship])_
 
-**where:**
+**Parameters:**
 
-* row_fields: A column-oriented array or range that contains the values used to group rows and generate row headers. Multiple columns can be provided for multiple grouping levels.
+* `row_fields`: A column-oriented array or range that contains the values used to group rows and generate row headers. Multiple columns can be provided for multiple grouping levels.
 
-* values: A column-oriented array or range of data to aggregate. Multiple columns can be provided for multiple aggregations.
+* `values`: A column-oriented array or range of data to aggregate. Multiple columns can be provided for multiple aggregations.
 
-* function: An aggregation function (SUM, AVERAGE, COUNT, PERCENTOF, etc.) or a lambda expression that aggregates values. A vector of functions can be provided for multiple aggregations.
+* `function`: An aggregation function (SUM, AVERAGE, COUNT, PERCENTOF, etc.) or a lambda expression that aggregates values. A vector of functions can be provided for multiple aggregations.
 
-* field_headers: A number specifying whether row_fields and values have headers and whether field headers should be returned. Valid values are:
+* `field_headers`: A number specifying whether row_fields and values have headers and whether field headers should be returned. Valid values are:
 
-	* Missing or omitted: Automatic detection based on data types (default)
+	* `Missing or omitted`: Automatic detection based on data types (default)
 
-	* 0: No headers
+	* `0`: No headers
 
-	* 1: Has headers, don't show in results
+	* `1`: Has headers, don't show in results
 
-	* 2: No headers, but generate and show
+	* `2`: No headers, but generate and show
 
-	* 3: Has headers and show in results
+	* `3`: Has headers and show in results
 
-* total_depth: A number determining whether row headers should contain totals. Valid values are:
+* `total_depth`: A number determining whether row headers should contain totals. Valid values are:
 
-	* Missing or omitted: Automatic (grand totals and subtotals where possible) (default)
+	* `Missing or omitted`: Automatic (grand totals and subtotals where possible) (default)
 
-	* 0: No totals
+	* `0`: No totals
 
-	* 1: Grand totals only
+	* `1`: Grand totals only
 
-	* 2: Grand totals and subtotals
+	* `2`: Grand totals and subtotals
 
-	* -1: Grand totals at top
+	* `-1`: Grand totals at top
 
-	* -2: Grand and subtotals at top
+	* `-2`: Grand and subtotals at top
 
-* sort_order: A number or vector of numbers indicating how rows should be sorted. Positive numbers sort in ascending order; negative numbers sort in descending order. Numbers correspond to columns in row_fields followed by columns in values.
+* `sort_order`: A number or vector of numbers indicating how rows should be sorted. Positive numbers sort in ascending order; negative numbers sort in descending order. Numbers correspond to columns in row_fields followed by columns in values.
 
-* filter_array: A column-oriented 1D array of Booleans indicating whether each row should be included. The array length must match the row_fields length.
+* `filter_array`: A column-oriented 1D array of Booleans indicating whether each row should be included. The array length must match the row_fields length.
 
-* field_relationship: A number specifying the relationship between multiple row_fields columns. Valid values are:
+* `field_relationship`: A number specifying the relationship between multiple row_fields columns. Valid values are:
 
-	* 0: Hierarchy (default) - Later columns respect hierarchy of earlier columns
+	* `0`: Hierarchy (default) - Later columns respect hierarchy of earlier columns
 
-	* 1: Table - Each column sorted independently
+	* `1`: Table - Each column sorted independently
 
 **Remarks:**
 
