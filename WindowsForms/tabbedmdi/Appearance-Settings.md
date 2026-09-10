@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance Settings in WinForms TabbedMDI
 
-The variousAppearance Settings for WinForms TabbedMDI are discussed in this section.
+The variousAppearance Settings for WinForms TabbedMDI are discussed in this section.  
 
 ## Foreground settings
 
