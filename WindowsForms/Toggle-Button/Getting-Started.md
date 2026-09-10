@@ -33,7 +33,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 ![Windows Form ToggleButton dependency Assembly reference](Getting-Started_images/Getting-Started_reference.png)
 
-**Step 2**: You can customize the properties of WinForms Toggle Button using the properties panel. Here we have illustrated an example on how to edit the ToggleState property of the WinForms Toggle Button as shown as follows.
+**Step 2**: You can customize the properties of WinForms Toggle Button using the properties panel. Here we have illustrated an example on how to edit the ToggleState property of the Control as shown as follows.
 
 ![Windows Form ToggleButton dependency Assembly reference](Getting-Started_images/ToggleButton_designercustomization.png)
 
@@ -74,7 +74,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 ![Windows Form ToggleButton through designer](Getting-Started_images/ToggleButtonimagereference.png)
    
-**Step 2**:  In Form1.cs, create an instance of **"WinForms Toggle Button"** control and add in to the form. Also you can customize the WinForms Toggle Button properties using the following code.
+**Step 2**:  In Form1.cs, create an instance of **"WinForms Toggle Button"** control and add in to the form. Also you can customize the control properties using the following code.
 {% capture codesnippet2 %}
 {% tabs %}
 

@@ -14,7 +14,7 @@ The appearance of the WinForms Toggle Button is customized by using the IToggleB
 To customize the appearance, 
 
 1. Create a new custom renderer class and implement each of the members defined in IToggleButtonRenderer. 
-2. Assign instance of your custom renderer to the Renderer property of WinForms Toggle Button. By default, WinForms Toggle Button is painted by using its default renderer.
+2. Assign instance of your custom renderer to the Renderer property of WinForms Toggle Button. By default, the control is painted by using its default renderer.
 
 {% tabs %}
 {% highlight c# %}
