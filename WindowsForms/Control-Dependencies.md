@@ -1147,7 +1147,7 @@ Syncfusion.Grouping.Base<br/>
 Syncfusion.XlsIO.Base<br/>
 Syncfusion.Markdown<br/>
 Syncfusion.GridHelperClasses.Windows<br/>
-Syncfusion.Pdf.Base</br>
+Syncfusion.Pdf.Base
 </td>
 <td>
 Syncfusion.GridExport.WinForms
@@ -1225,7 +1225,7 @@ Syncfusion.Compression.Base<br/>
 Syncfusion.Markdown<br/>
 Syncfusion.XlsIO.Base<br/>
 Syncfusion.Pdf.Base<br/>
-Syncfusion.GridHelperClasses.Windows<br/>
+Syncfusion.GridHelperClasses.Windows
 </td>
 <td>
 Syncfusion.GridExport.WinForms
