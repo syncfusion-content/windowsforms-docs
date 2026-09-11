@@ -13,7 +13,7 @@ documentation: ug
 
 A pie chart displays data as slices of a circle to show how each value contributes to the whole. The X-values represent the categories, while the Y-values determine the size of each slice.
 
-The following code example demonstrates how to create a pie Chart.
+The following code example demonstrates how to create a pie chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -39,7 +39,6 @@ series.Style.DisplayText = true;
 series.ConfigItems.PieItem.LabelStyle = ChartAccumulationLabelStyle.OutsideInColumn;
 series.ConfigItems.PieItem.AngleOffset = 60;
 
-series.ExplodedIndex = 3;
 series.ConfigItems.PieItem.PieRadius = 100;
 series.Style.Font.Size = 8.0f;
 
@@ -75,7 +74,6 @@ series.Style.DisplayText = True
 series.ConfigItems.PieItem.LabelStyle = ChartAccumulationLabelStyle.OutsideInColumn
 series.ConfigItems.PieItem.AngleOffset = 60
 
-series.ExplodedIndex = 3
 series.ConfigItems.PieItem.PieRadius = 100
 
 series.Style.Font.Size = 8.0F
@@ -107,12 +105,10 @@ The following code renders the pie chart using the `Bevel` painting style.
 
 {% tabs %}
 {% highlight c# %}
-chartControl.Series[0].ConfigItems.PieItem.PieType =
-    ChartPieType.Bevel;
+chartControl.Series[0].ConfigItems.PieItem.PieType = ChartPieType.Bevel;
 {% endhighlight %}
 {% highlight vb %}
-chartControl.Series(0).ConfigItems.PieItem.PieType =
-    ChartPieType.Bevel
+chartControl.Series(0).ConfigItems.PieItem.PieType = ChartPieType.Bevel
 {% endhighlight %}
 {% endtabs %}
 
@@ -126,12 +122,10 @@ The following code rotates the starting position of the first pie segment by 45 
 
 {% tabs %}
 {% highlight c# %}
-chartControl.Series[0].ConfigItems.PieItem.AngleOffset =
-    45f;
+chartControl.Series[0].ConfigItems.PieItem.AngleOffset = 45f;
 {% endhighlight %}
 {% highlight vb %}
-chartControl.Series(0).ConfigItems.PieItem.AngleOffset =
-    45.0F
+chartControl.Series(0).ConfigItems.PieItem.AngleOffset = 45.0F
 {% endhighlight %}
 {% endtabs %}
 
@@ -155,14 +149,15 @@ ChartPieType.Custom;
 ColorBlend gradient = new ColorBlend();
 gradient.Colors = new Color[]
 {
-Color.HotPink,
-Color.MediumVioletRed,
-Color.MediumSeaGreen
+Color.FromArgb(30, 90, 180),
+Color.FromArgb(70, 150, 220),
+Color.FromArgb(180, 220, 245)
 };
+
 gradient.Positions = new float[]
 {
 0.0f,
-0.5f,
+0.55f,
 1.0f
 };
 
@@ -176,14 +171,14 @@ series.ConfigItems.PieItem.PieType =
 Dim gradient As New ColorBlend()
 
 gradient.Colors = New Color() {
-    Color.HotPink,
-    Color.MediumVioletRed,
-    Color.MediumSeaGreen
+    Color.FromArgb(30, 90, 180),
+    Color.FromArgb(70, 150, 220),
+    Color.FromArgb(180, 220, 245)
 }
 
 gradient.Positions = New Single() {
     0.0F,
-    0.5F,
+    0.55F,
     1.0F
 }
 
@@ -201,21 +196,21 @@ The [Gradient](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Fo
 
 {% tabs %}
 {% highlight c# %}
+
 ColorBlend gradient = new ColorBlend();
 gradient.Colors = new Color[]
 {
-Color.HotPink,
-Color.MediumVioletRed,
-Color.MediumSeaGreen
+Color.FromArgb(30, 90, 180),
+Color.FromArgb(70, 150, 220),
+Color.FromArgb(180, 220, 245)
 };
-;
+
 gradient.Positions = new float[]
 {
 0.0f,
-0.5f,
+0.55f,
 1.0f
-}
-;
+};
 
 series.ConfigItems.PieItem.Gradient = gradient;
 
@@ -225,14 +220,14 @@ series.ConfigItems.PieItem.Gradient = gradient;
 Dim gradient As New ColorBlend()
 
 gradient.Colors = New Color() {
-    Color.HotPink,
-    Color.MediumVioletRed,
-    Color.MediumSeaGreen
+    Color.FromArgb(30, 90, 180),
+    Color.FromArgb(70, 150, 220),
+    Color.FromArgb(180, 220, 245)
 }
 
 gradient.Positions = New Single() {
     0.0F,
-    0.5F,
+    0.55F,
     1.0F
 }
 
@@ -241,7 +236,7 @@ series.ConfigItems.PieItem.Gradient = gradient
 {% endhighlight %}
 {% endtabs %}
 
-![Pie Gradient in Windows Forms](../Chart-Types_images/windowsforms-pie-fill-mode.png)
+![Pie Gradient in Windows Forms](../Chart-Types_images/windowsforms-pie-gradient.png)
 
 ### Label style
 
@@ -440,6 +435,8 @@ chartControl.Series(0).ShowTicks = False
 
 The [HeightByAreaDepth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_HeightByAreaDepth) property controls whether the height of a 3D pie chart is determined by the chart area's [Depth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_Depth) property. By default, this property is set to `false`, and the pie chart height is determined using the [HeightCoefficient](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_HeightCoeficient) property.
 
+N> The HeightByAreaDepth property also applies to `Doughnut` charts.
+
 The following code configures the pie chart height based on the chart area's depth.
 
 {% tabs %}
@@ -463,18 +460,12 @@ The following code explain how to set the height coeficient.
 
 {% tabs %}
 {% highlight c# %}
-
 series.ConfigItems.PieItem.HeightByAreaDepth = false;
-
 series.ConfigItems.PieItem.HeightCoeficient = 0.1f;
-
 {% endhighlight %}
 {% highlight vb %}
-
 series.ConfigItems.PieItem.HeightByAreaDepth = False
-
 series.ConfigItems.PieItem.HeightCoeficient = 0.1F
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -502,6 +493,8 @@ chartControl.Series(0).ConfigItems.PieItem.PieHeight = 100.0F
 ### Pie radius
 
 The [PieRadius](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieRadius) property controls the radius of the pie chart, allowing its rendered size to be adjusted, with `0f` used as the default value.
+
+N> The PieRadius property also applies to `Doughnut` charts.
 
 The following code sets the pie radius to `100f`.
 
@@ -556,7 +549,7 @@ The [ExplodedAll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows
 
 N> The `ExplodedAll` property also applies to `Doughnut` charts.
 
-The following code explodes all segments in the Pie series.
+The following code explodes all segments in the pie series.
 
 {% tabs %}
 {% highlight c# %}
@@ -577,7 +570,7 @@ N>
 - The `ExplodedIndex` property also applies to `Doughnut` charts.
 - The point index is zero-based. For example, a value of `2` explodes the third segment.
 
-The following code explodes the third segment in the Pie series.
+The following code explodes the third segment in the pie series.
 
 {% tabs %}
 {% highlight c# %}
@@ -618,7 +611,7 @@ chartControl.Series(0).ExplosionOffset = 30.0F
 
 The [OptimizePiePointPositions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_OptimizePiePointPositions) property controls whether the pie segments are optimized for positioning. The default value is `true`.
 
-The following code enables position optimization for the Pie segments.
+The following code enables position optimization for the pie segments.
 
 {% tabs %}
 {% highlight c# %}
@@ -661,20 +654,22 @@ chartControl.Series.Add(series)
 
 ### Divide area
 
-The [DivideArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_DivideArea) property specifies whether the available chart area is divided among multiple pie series. The default value is `true`.
+The [DivideArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_DivideArea) property specifies whether the available chart area is divided among multiple pie series. The default value is `true`.
 
 N> [VisibleAllPies](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_VisibleAllPies) property is deprecated. Use the [DivideArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_DivideArea) property instead.
 
-The following code displays multiple Pie series without dividing the chart area and arranges the legend items in three rows.
+The following code displays multiple pie series without dividing the chart area and arranges the legend items in three rows.
 
 {% tabs %}
 {% highlight c# %}
-chartControl.Series[0].DivideArea = false;
+chartControl.ChartArea.DivideArea = false;
 chartControl.Legend.RowsCount = 3;
+chartControl.Legend.Position = ChartDock.Top;
 {% endhighlight %}
 {% highlight vb %}
-chartControl.Series(0).DivideArea = False
+chartControl.ChartArea.DivideArea = False
 chartControl.Legend.RowsCount = 3
+chartControl.Legend.Position = ChartDock.Top
 {% endhighlight %}
 {% endtabs %}
 

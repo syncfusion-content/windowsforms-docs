@@ -69,7 +69,7 @@ chartControl.Series.Add(developmentPhase)
 
 ### Draw mode
 
-The [DrawMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartGanttConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartGanttConfigItem_DrawMode) property specifies how the bars are arranged in a Gantt chart. The default value is [CustomPointWidthMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartGanttDrawMode.html#Syncfusion_Windows_Forms_Chart_ChartGanttDrawMode_CustomPointWidthMode).
+The [DrawMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartGanttConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartGanttConfigItem_DrawMode) property specifies how the bars are arranged in a gantt chart. The default value is [CustomPointWidthMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartGanttDrawMode.html#Syncfusion_Windows_Forms_Chart_ChartGanttDrawMode_CustomPointWidthMode).
 
 The supported values are defined in the [ChartGanttDrawMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartGanttDrawMode.html) enumeration:
 
@@ -82,12 +82,10 @@ The following code sets the Gantt drawing mode to `AutoSizeMode`.
 
 {% tabs %}
 {% highlight c# %}
-chartControl.Series[0].ConfigItems.GanttItem.DrawMode =
-    ChartGanttDrawMode.AutoSizeMode;
+chartControl.Series[0].ConfigItems.GanttItem.DrawMode = ChartGanttDrawMode.AutoSizeMode;
 {% endhighlight %}
 {% highlight vb %}
-chartControl.Series(0).ConfigItems.GanttItem.DrawMode =
-    ChartGanttDrawMode.AutoSizeMode
+chartControl.Series(0).ConfigItems.GanttItem.DrawMode = ChartGanttDrawMode.AutoSizeMode
 {% endhighlight %}
 {% endtabs %}
 
@@ -95,23 +93,20 @@ chartControl.Series(0).ConfigItems.GanttItem.DrawMode =
 
 ### Point width
 
-The [PointWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStyleInfo.html#Syncfusion_Windows_Forms_Chart_ChartStyleInfo_PointWidth) property specifies the width of Gantt data points relative to the available width. The default value is `1f`.
+The [PointWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStyleInfo.html#Syncfusion_Windows_Forms_Chart_ChartStyleInfo_PointWidth) property specifies the width of gantt data points relative to the available width. The default value is `1f`.
 
 N> The [PointWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStyleInfo.html#Syncfusion_Windows_Forms_Chart_ChartStyleInfo_PointWidth)  property is effective when the [DrawMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartGanttConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartGanttConfigItem_DrawMode) property is set to [CustomPointWidthMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartGanttDrawMode.html#Syncfusion_Windows_Forms_Chart_ChartGanttDrawMode_CustomPointWidthMode).
 
-The following code sets the point width for all data points in the Gantt series.
+The following code sets the point width for all data points in the gantt series.
 
 {% tabs %}
 {% highlight c# %}
-chartControl.Series[0].ConfigItems.GanttItem.DrawMode =
-    ChartGanttDrawMode.CustomPointWidthMode;
-
+chartControl.Series[0].ConfigItems.GanttItem.DrawMode = ChartGanttDrawMode.CustomPointWidthMode;
 chartControl.Series[0].Style.PointWidth = 1.2f;
 {% endhighlight %}
 {% highlight vb %}
 chartControl.Series(0).ConfigItems.GanttItem.DrawMode =
     ChartGanttDrawMode.CustomPointWidthMode
-
 chartControl.Series(0).Style.PointWidth = 1.2F
 {% endhighlight %}
 {% endtabs %}
@@ -120,7 +115,7 @@ chartControl.Series(0).Style.PointWidth = 1.2F
 
 ### Related points
 
-The [RelatedPoints](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStyleInfo.html#Syncfusion_Windows_Forms_Chart_ChartStyleInfo_RelatedPoints) property specifies the relationship between data points in a Gantt chart and renders lines connecting the specified points.
+The [RelatedPoints](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStyleInfo.html#Syncfusion_Windows_Forms_Chart_ChartStyleInfo_RelatedPoints) property specifies the relationship between data points in a gantt chart and renders lines connecting the specified points.
 
 The property returns a [ChartRelatedPointInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRelatedPointInfo.html) object that provides the following options:
 
@@ -538,10 +533,6 @@ chartControl.Series(0).ConfigItems.HeatMapItem.ShowLargeLabels =
 ## Tornado chart
 
 The tornado chart displays data points as horizontal bars that extend in different directions based on their values.
-
-The following feature is supported in the tornado chart:
-
-* **Chart Axis Labels**: The axis labels of a chart can be set by handling the [ChartFormatAxisLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ChartFormatAxisLabel) event.
 
 The following code example demonstrates how to create a tornado Chart.
 
