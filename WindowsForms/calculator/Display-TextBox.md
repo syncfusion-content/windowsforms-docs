@@ -55,7 +55,7 @@ Me.calculatorControl1.UseUserOverride = True
 
 {% seealso %}
 
-[How to customize the calculator display text area to use NumberGroupSeparator?](http://help.syncfusion.com/windowsforms/calculator/faq/how-to-customize-the-calculator-display-text-area-to-use-numbergroupseparator)
+[How to customize the calculator display text area to use NumberGroupSeparator?](https://help.syncfusion.com/windowsforms/calculator/faq/how-to-customize-the-calculator-display-text-area-to-use-numbergroupseparator)
 
 {% endseealso %}
  

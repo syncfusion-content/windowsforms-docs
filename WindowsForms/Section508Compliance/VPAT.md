@@ -179,7 +179,7 @@ REMARKS AND EXPLANATION<br/><br/></th></tr>
 <td>
 Section 1194.41 (a) Product Support Documentation provided to end-users is made available in alternate formats upon request at no additional charge.<br/><br/></td><td>
 Supported.<br/><br/></td><td>
-Online <a href="http://help.syncfusion.com" aria-label="Syncfusion Online Documentation">Documentation</a> is available.<br/><br/></td></tr>
+Online <a href="https://help.syncfusion.com" aria-label="Syncfusion Online Documentation">Documentation</a> is available.<br/><br/></td></tr>
 <tr>
 <td>
 Section 1194.41 (b) Accessibility and Compatibility Features. End-users can have access to a description of the accessibility and compatibility features of products in alternate formats or alternate methods upon request at no additional charge.<br/><br/><br/><br/></td><td>

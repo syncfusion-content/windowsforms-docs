@@ -40,7 +40,7 @@ Returns the location of the invalid input within the invalid text.</td></tr>
 </table>
 
 
-It can be handled to raise an alarm to user when invalid text is entered by them. Refer Error Validation[.](http://help.syncfusion.com/windowsforms/tools)
+It can be handled to raise an alarm to user when invalid text is entered by them. Refer Error Validation[.](https://help.syncfusion.com/windowsforms/tools)
 
 ## KeyDown Event
 

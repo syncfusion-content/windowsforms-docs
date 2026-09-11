@@ -16,18 +16,18 @@ The list of events and a detailed explanation about each of them is given in the
 * [Border3DStyleChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html)
 * [BorderColorChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html)
 * [BorderSidesChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html)
-* [BorderStyleChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.borderstylechanged?redirectedfrom=MSDN&view=netframework-4.7.2)
+* [BorderStyleChanged](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.borderstylechanged?redirectedfrom=MSDN&view=netframework-4.7.2)
 * [ClipTextChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html)
 * [DoubleValueChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.PercentTextBox.html)
 * [FormattedTextChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html)
-* [HideSelectionChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.hideselectionchanged?redirectedfrom=MSDN&view=netframework-4.7.2)
+* [HideSelectionChanged](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.hideselectionchanged?redirectedfrom=MSDN&view=netframework-4.7.2)
 * [MinimumSizeChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html)
 * [MaximumSizeChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html)
-* [MultilineChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.multilinechanged?redirectedfrom=MSDN&view=netframework-4.7.2)
-* [ReadOnlyChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.readonlychanged?redirectedfrom=MSDN&view=netframework-4.7.2)
-* [RightToLeftChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.righttoleftchanged?redirectedfrom=MSDN&view=netframework-4.7.2)
+* [MultilineChanged](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.multilinechanged?redirectedfrom=MSDN&view=netframework-4.7.2)
+* [ReadOnlyChanged](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.readonlychanged?redirectedfrom=MSDN&view=netframework-4.7.2)
+* [RightToLeftChanged](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.righttoleftchanged?redirectedfrom=MSDN&view=netframework-4.7.2)
 * [SetNull](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html)
-* [TextAlignChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.textalignchanged?redirectedfrom=MSDN&view=netframework-4.7.2)
+* [TextAlignChanged](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.textalignchanged?redirectedfrom=MSDN&view=netframework-4.7.2)
 * [ThemesEnabledChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html)
 * [ValidationError](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html)
 
@@ -138,7 +138,7 @@ End Sub
 
 ## BorderStyleChanged 
 
-This [BorderStyleChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.borderstylechanged?redirectedfrom=MSDN&view=netframework-4.7.2) event occurs when the [BorderStyle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.borderstyle?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBoxBase_BorderStyle) property is changed. The [BorderStyle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.borderstyle?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBoxBase_BorderStyle) property indicates whether the edit control should have a border.
+This [BorderStyleChanged](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.borderstylechanged?redirectedfrom=MSDN&view=netframework-4.7.2) event occurs when the [BorderStyle](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.borderstyle?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBoxBase_BorderStyle) property is changed. The [BorderStyle](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.borderstyle?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBoxBase_BorderStyle) property indicates whether the edit control should have a border.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
@@ -233,7 +233,7 @@ End Sub
 
 ## HideSelectionChanged 
 
-This [HideSelectionChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.hideselectionchanged?redirectedfrom=MSDN&view=netframework-4.7.2) event occurs when the [HideSelection](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.hideselection?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBoxBase_HideSelection) property is changed. The [HideSelection](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.hideselection?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBoxBase_HideSelection) property indicates that the selection should be hidden when the edit control loses focus.
+This [HideSelectionChanged](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.hideselectionchanged?redirectedfrom=MSDN&view=netframework-4.7.2) event occurs when the [HideSelection](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.hideselection?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBoxBase_HideSelection) property is changed. The [HideSelection](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.hideselection?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBoxBase_HideSelection) property indicates that the selection should be hidden when the edit control loses focus.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
@@ -308,7 +308,7 @@ End Sub
 
 ## MultilineChanged 
 
-This [MultilineChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.multilinechanged?redirectedfrom=MSDN&view=netframework-4.7.2) event occurs when the [Multiline](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.multiline?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBox_Multiline) property is changed. The [Multiline](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.multiline?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBox_Multiline) property controls whether the text of the edit control can span more than one line.
+This [MultilineChanged](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.multilinechanged?redirectedfrom=MSDN&view=netframework-4.7.2) event occurs when the [Multiline](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.multiline?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBox_Multiline) property is changed. The [Multiline](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.multiline?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBox_Multiline) property controls whether the text of the edit control can span more than one line.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
@@ -333,7 +333,7 @@ End Sub
 
 ## ReadOnlyChanged 
 
-This [ReadOnlyChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.readonlychanged?redirectedfrom=MSDN&view=netframework-4.7.2) event occurs when the [ReadOnly](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.readonly?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBoxBase_ReadOnly) property is changed. The [ReadOnly](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.readonly?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBoxBase_ReadOnly) property controls whether the text in the edit control can be changed or not.
+This [ReadOnlyChanged](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.readonlychanged?redirectedfrom=MSDN&view=netframework-4.7.2) event occurs when the [ReadOnly](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.readonly?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBoxBase_ReadOnly) property is changed. The [ReadOnly](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.readonly?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBoxBase_ReadOnly) property controls whether the text in the edit control can be changed or not.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
@@ -358,7 +358,7 @@ End Sub
 
 ## RightToLeftChanged 
 
-This [RightToLeftChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.righttoleftchanged?redirectedfrom=MSDN&view=netframework-4.7.2) event occurs when the [RightToLeft](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html#Syncfusion_Windows_Forms_Tools_NumberTextBoxBase_RightToLeft) property is changed. The [RightToLeft](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html#Syncfusion_Windows_Forms_Tools_NumberTextBoxBase_RightToLeft) property indicates whether the components should be drawn right-to-left for RTL languages.
+This [RightToLeftChanged](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.righttoleftchanged?redirectedfrom=MSDN&view=netframework-4.7.2) event occurs when the [RightToLeft](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html#Syncfusion_Windows_Forms_Tools_NumberTextBoxBase_RightToLeft) property is changed. The [RightToLeft](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html#Syncfusion_Windows_Forms_Tools_NumberTextBoxBase_RightToLeft) property indicates whether the components should be drawn right-to-left for RTL languages.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
@@ -423,7 +423,7 @@ End Sub
 
 ## TextAlignChanged 
 
-This [TextAlignChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.textalignchanged?redirectedfrom=MSDN&view=netframework-4.7.2) event occurs when the [TextAlign](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.textalign?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBox_TextAlign) property is changed. The [TextAlign](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.textalign?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBox_TextAlign) property indicates how the text should be aligned for edit controls.
+This [TextAlignChanged](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.textalignchanged?redirectedfrom=MSDN&view=netframework-4.7.2) event occurs when the [TextAlign](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.textalign?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBox_TextAlign) property is changed. The [TextAlign](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.textalign?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBox_TextAlign) property indicates how the text should be aligned for edit controls.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
@@ -448,7 +448,7 @@ End Sub
 
 ## ThemesEnabledChanged 
 
-This [ThemesEnabledChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html) event occurs when the [ThemesEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_ThemesEnabled) property is changed. The [ThemesEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_ThemesEnabled) property specifies whether or not to use XP Themes when the [BorderStyle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.borderstyle?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBoxBase_BorderStyle) property is set to 'Fixed3D'.
+This [ThemesEnabledChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html) event occurs when the [ThemesEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_ThemesEnabled) property is changed. The [ThemesEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_ThemesEnabled) property specifies whether or not to use XP Themes when the [BorderStyle](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.borderstyle?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBoxBase_BorderStyle) property is set to 'Fixed3D'.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 

@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # TabBarSplitterControl in Windows Forms Grid Control
-User can create TabBar Pages with dynamic splitters by using [TabBarSplitterControl](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarSplitterControl.html). When used with a GridControl, it gives a workbook like appearance. User can add more than one [TabBarPage](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarPage.html) and GridControl can be added in each page. This control is helpful when GridControl with formula cells and [Cross-Reference](http://help.syncfusion.com/windowsforms/grid/formula-support#named-ranges) sheets are used. The TabBarSplitterControl comes under the library [Syncfusion.Shared.Base](http://help.syncfusion.com/cr/windowsforms) assembly.
+User can create TabBar Pages with dynamic splitters by using [TabBarSplitterControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarSplitterControl.html). When used with a GridControl, it gives a workbook like appearance. User can add more than one [TabBarPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarPage.html) and GridControl can be added in each page. This control is helpful when GridControl with formula cells and [Cross-Reference](https://help.syncfusion.com/windowsforms/grid/formula-support#named-ranges) sheets are used. The TabBarSplitterControl comes under the library [Syncfusion.Shared.Base](https://help.syncfusion.com/cr/windowsforms) assembly.
 
 ## Adding via Designer
 
@@ -36,7 +36,7 @@ It can also be added or removed through the **TabBarPageCollectionEditor** which
 
 ## Adding via Code
 
-Create a new TabBarSplitterControl and add the required number of [TabBarPage](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarPage.html) in this control. Add the existing GridControl in the created `TabBarPage`. Refer the below code on how to initialize a TabBarSplitterControl and how to add `TabBarPage` with GridControl in it.
+Create a new TabBarSplitterControl and add the required number of [TabBarPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarPage.html) in this control. Add the existing GridControl in the created `TabBarPage`. Refer the below code on how to initialize a TabBarSplitterControl and how to add `TabBarPage` with GridControl in it.
 
 {% tabs %}
 {% highlight c# %}
@@ -81,7 +81,7 @@ tabBarSplitterControl1.Controls.Add(Me.Spent)
 
 ![TabBarSplitterControl_img6](TabBarSplitterControl_images/TabBarSplitterControl_img6.png)
 
-N> To know about TabBarSplitterControl properties and methods, please check the link over [here](http://help.syncfusion.com/windowsforms/splitter/overview).
+N> To know about TabBarSplitterControl properties and methods, please check the link over [here](https://help.syncfusion.com/windowsforms/splitter/overview).
 
 ## Visual Styles
 

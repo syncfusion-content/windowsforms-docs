@@ -31,7 +31,7 @@ End Sub
 
 ## CalculatorShowing Event
 
-This [CalculatorShowing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyEdit.html) event is raised before the calculator popup is displayed. The Cancel property of this [CancelEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs?redirectedfrom=MSDN&view=netframework-4.7.2) lets  you to cancel the popup display as follows.
+This [CalculatorShowing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyEdit.html) event is raised before the calculator popup is displayed. The Cancel property of this [CancelEventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs?redirectedfrom=MSDN&view=netframework-4.7.2) lets  you to cancel the popup display as follows.
 
 {% tabs %}
 {% highlight c# %}
