@@ -229,64 +229,6 @@ chartControl.Series(0).ConfigItems.ColumnItem.ColumnType =
 
 ![Column Type in Windows Forms Chart](../Chart-Types_images/windowsforms-column-type-chart.png)
 
-### Corner radius
-
-The [CornerRadius](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartColumnConfigItem_CornerRadius) property specifies the horizontal and vertical radii used to render rounded corners for columns. The default value is `SizeF.Empty`, which renders columns without rounded corners.
-
-The following code example demonstrates how to set the corner radius for column chart.
-
-{% tabs %}
-{% highlight c# %}
-chartControl.Series[0].ConfigItems.ColumnItem.CornerRadius = new SizeF(10, 10);
-{% endhighlight %}
-{% highlight vb %}
-chartControl.Series(0).ConfigItems.ColumnItem.CornerRadius = New SizeF(10, 10)
-{% endhighlight %}
-{% endtabs %}
-
-![Column Radius in Windows Forms Chart](../Chart-Types_images/windowsforms-column-corner-radius-chart.png)
-
-### Spacing
-
-The [Spacing](https://help.syncfusion.com/windowsforms/chart/chart-series#spacing) property specifies the space between data points as a percentage of the X-axis interval width. The default value is `30`.
-
-N>
-- The supported value ranges from `10` to `99`. The remaining interval width is used to render the data points and is divided among the series when multiple series are displayed.
-- The `Spacing` property also applies to `Column Range`, `Stacking Column`, `Stacked Column 100`, `Bar`, `Stacking Bar`, `Stacked Bar 100`, `Box and Whisker`, `Gantt`, `Tornado`, `Candle`, `HiLo`, and `HiLo Open Close` charts.
-- The `Spacing` property is not applied when the `ColumnWidthMode` property is set to `FixedWidthMode`.
-
-The following code sets the spacing between columns to `70`.
-
-{% tabs %}
-{% highlight c# %}
-chartControl.Spacing = 70;
-{% endhighlight %}
-{% highlight vb %}
-chartControl.Spacing = 70
-{% endhighlight %}
-{% endtabs %}
-
-![Column Spacing in Windows Forms Chart](../Chart-Types_images/windowsforms-column-spacing.png)
-
-### Spacing between points
-
-The [SpacingBetweenPoints](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_SpacingBetweenPoints) property specifies the spacing between adjacent data points in a series.
-
-N> The `SpacingBetweenPoints` property also applies to `Bar`, `HiLo`, `HiLo Open Close`, `Candle`, `Tornado`, and `Box and Whisker` charts.
-
-The following code sets the spacing between adjacent columns.
-
-{% tabs %}
-{% highlight c# %}
-chartControl.SpacingBetweenPoints = 10;
-{% endhighlight %}
-{% highlight vb %}
-chartControl.SpacingBetweenPoints = 10
-{% endhighlight %}
-{% endtabs %}
-
-![Column Spacing Between Points in Windows Forms Chart](../Chart-Types_images/windowsforms-column-spacing-between-points.png)
-
 ## Bar chart
 
 A bar chart renders data points as horizontal bars to compare values across different categories.
