@@ -27,11 +27,11 @@ _AND(logical1, logical2, ...)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* logical1, logical2 ... are multiple conditions to be tested for `true` or `false`.
+* `logical1, logical2 ...`: Multiple conditions to be tested for `true` or `false`.
 
 
 
@@ -67,11 +67,11 @@ _FALSE(stringvalue)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* stringvalue is to provide an empty string.
+* `stringvalue`: To provide an empty string.
 
 
 
@@ -95,19 +95,19 @@ _IF(logical_test, value_if_true, value_if_false)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* logical_test is any value or expression that can be evaluated to `True` or `False`.
+* `logical_test`: Any value or expression that can be evaluated to `True` or `False`.
 
 
 
-* value_if_true is the value that is returned if a logical_test is `True`.
+* `value_if_true`: The value that is returned if a logical_test is `True`.
 
 
 
-* value_if_false is the value that is returned if a logical_test is `False`.
+* `value_if_false`: The value that is returned if a logical_test is `False`.
 
 
 
@@ -135,19 +135,19 @@ _IFERROR (value, value_error)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* `value` is the required to check the error.
+* `value` (required): To check the error.
 
 
 
-* `value_error` is the required and returns when the value has an error.
+* `value_error` (required): Returns when the value has an error.
 
 
 
-* When the value_error is an empty cell, then the function takes the error value as empty string.  
+* `value_error` (required): When empty cell, then the function takes the error value as empty string.  
 
 
 
@@ -167,15 +167,15 @@ _IFNA (Formula_value, value_if_na)_
 
 
 
-**where:** 
+**Parameters:** 
 
 
 
-* `Formula_value`: This value is required and the argument that is checked for the #N/A error value.
+* `Formula_value` (required): The argument that is checked for the #N/A error value.
 
 
 
-* `value_if_na`: This value is required and the value returned when the formula evaluates to the #N/A error value. 
+* `value_if_na` (required): The value returned when the formula evaluates to the #N/A error value. 
 
 
 
@@ -251,11 +251,11 @@ _NOT(logical)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* logical is a value or expression that can be evaluated to `True` or `False`.
+* `logical`: A value or expression that can be evaluated to `True` or `False`.
 
 
 
@@ -275,11 +275,11 @@ _TRUE(stringvalue)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* stringvalue is to provide an empty string.
+* `stringvalue`: To provide an empty string.
 
 
 
@@ -299,11 +299,11 @@ _OR(logical1, logical2, ...)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* logical1, logical2 ... are conditions to test that can be either `True` or `False`.
+* `logical1, logical2 ...`: Conditions to test that can be either `True` or `False`.
 
 
 
@@ -331,15 +331,15 @@ _XOR (logical_value1, logical_value2…)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* Logical_value1: This is a required value and can be either `true` or `false`, and can be logical values, arrays, or references.
+* `Logical_value1` (required): Can be either `true` or `false`, and can be logical values, arrays, or references.
 
 
 
-* When the given arguments do not have the logical values, `XOR` returns the `#VALUE!` error value.
+* `Logical_value1, logical_value2…` (required): When the given arguments do not have the logical values, `XOR` returns the `#VALUE!` error value.
 
 
 
@@ -359,23 +359,23 @@ _IFS(logical_test1, value_if_true1, [logical_test2, value_if_true2], [logical_te
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* logical_test1 (required): This is the first logical test that evaluates to `TRUE` or `FALSE`.
+* `logical_test1` (required): The first logical test that evaluates to `TRUE` or `FALSE`.
 
 
 
-* value_if_true1 (required): Result to be returned if the first logical test (logical_test1) evaluates to `TRUE`.This Can be empty string.
+* `value_if_true1` (required): Result to be returned if the first logical test (logical_test1) evaluates to `TRUE`. This can be empty string.
 
 
 
-* logical_test2…logical_test127 (optional):This is the second logical test that evaluates to `TRUE` or `FALSE`.
+* `logical_test2…logical_test127` (optional): The second logical test that evaluates to `TRUE` or `FALSE`.
 
 
 
-* value_if_true2…value_if_true127 (optional): Result to be returned if logical_testN evaluates to `TRUE`. Each value_if_trueN corresponds with a condition logical_testN.This Can be empty string.
+* `value_if_true2…value_if_true127` (optional): Result to be returned if logical_testN evaluates to `TRUE`. Each value_if_trueN corresponds with a condition logical_testN. This can be empty string.
 
 
 **Remarks:**
@@ -414,22 +414,22 @@ _SWITCH(expression, value1, result1, [default or value2, result2],…[default or
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* expression(required): The value or expression (number, date or some text) that will be compared against list of values.
+* `expression` (required): The value or expression (number, date or some text) that will be compared against list of values.
 
 
 
-* value1…value126: This is a list of values that will be compared against expression.
+* `value1…value126`: A list of values that will be compared against expression.
 
 
 
-* result1…result126: ResultN is the value to be returned when the corresponding list of values matches expression. ResultN and must be supplied for each corresponding valueN argument.
+* `result1…result126`: The value to be returned when the corresponding list of values matches expression. ResultN must be supplied for each corresponding valueN argument.
 
 
 
-* default (optional):Default is the value to return in case no matches are found when compare the list of values against expression. The Default argument is identified by having no corresponding resultN expression. Default must be the final argument in the function.
+* `default` (optional): The value to return in case no matches are found when compare the list of values against expression. The default argument is identified by having no corresponding resultN expression. Default must be the final argument in the function.
 
 
