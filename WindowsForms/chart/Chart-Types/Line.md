@@ -13,7 +13,7 @@ documentation: ug
 
 A line chart connects data points using straight lines to visualize trends and changes over a continuous range.
 
-The following code example demonstrates how to create a line Chart.
+The following code example demonstrates how to create a line chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -39,7 +39,7 @@ chartControl.Series.Add(secondServer);
 {% endhighlight %}
 {% highlight vb %}
 
-// Create chart series and add data points into it.
+' Create chart series and add data points into it.
 
 Dim firstServer As New ChartSeries("Server 1", ChartSeriesType.Line)
 firstServer.Points.Add(10, 300)
@@ -82,27 +82,57 @@ chartControl.Series(0).ConfigItems.LineItem.DisableLineCap = True
 
 ### Disable line region
 
-The [DisableLineRegion](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLineConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartLineConfigItem_DisableLineRegion) property controls whether the line segments connecting adjacent data points are disabled in line and spline series.
-By default, this property is set to `false`, which renders line segments between data points.
+The [DisableLineRegion](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLineConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartLineConfigItem_DisableLineRegion) property specifies whether interactive regions are generated for the line segments connecting adjacent data points in Line and Spline series. The default value is false. When set to true, the line segments remain visible, but their chart regions are disabled.
 
 The following code example demonstrates how to disable line segments using the DisableLineRegion property.
 
 {% tabs %}
 {% highlight c# %}
 chartControl.Series[0].ConfigItems.LineItem.DisableLineRegion = true;
+chartControl.ChartRegionMouseMove += ChartControl_ChartRegionMouseMove;
+private void ChartControl_ChartRegionMouseMove(
+object sender,
+ChartRegionMouseEventArgs e)
+{
+    if (e.Region != null && e.Region.SeriesIndex >= 0)
+    {
+        Text = "Line region detected";
+        chartControl.Cursor = Cursors.Hand;
+    }
+    else
+    {
+        Text = "No line region";
+        chartControl.Cursor = Cursors.Default;
+    }
+}
 {% endhighlight %}
 {% highlight vb %}
 chartControl.Series(0).ConfigItems.LineItem.DisableLineRegion = True
+chartControl.ChartRegionMouseMove += ChartControl_ChartRegionMouseMove;
+Private Sub ChartControl_ChartRegionMouseMove(
+ByVal sender As Object,
+ByVal e As ChartRegionMouseEventArgs)
+
+    If e.Region IsNot Nothing AndAlso e.Region.SeriesIndex >= 0 Then
+        Me.Text = "Line region detected"
+        chartControl.Cursor = Cursors.Hand
+    Else
+        Me.Text = "No line region"
+        chartControl.Cursor = Cursors.Default
+    End If
+
+End Sub
 {% endhighlight %}
 {% endtabs %}
 
-### Draw error bars
+### Error bars
 
-The [DrawErrorBars](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_DrawErrorBars) property controls whether error bars are displayed to indicate the uncertainty range of each data point. The default value is `false`.
+The [Enabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartErrorBarsConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartErrorBarsConfigItem_Enabled) property controls whether error bars are displayed to indicate the uncertainty range of each data point. The default value is `false`.
 
 N>
 - The second Y-value, `Series.Points[i].YValues[1]`, specifies the error range. For example, a value of `5` indicates an error range of `-5` to `+5` from the primary Y-value.
-- The `DrawErrorBars` property also applies to `Column` and `HiLo` charts.
+- The [Enabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartErrorBarsConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartErrorBarsConfigItem_Enabled) property also applies to `Column` and `HiLo` charts.
+- N> [DrawErrorBars](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_DrawErrorBars) property is deprecated. Use the [Enabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartErrorBarsConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartErrorBarsConfigItem_Enabled) property instead.
 
 The following code displays error bars for the Line series.
 
@@ -150,27 +180,6 @@ chartControl.Series.Add(series)
 
 
 ![Draw Error Bars in Windows Forms](../Chart-Types_images/windowsforms-column-error-bars.png)
-
-### Rotate
-
-The [Rotate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_Rotate) property controls whether the chart area is rotated. The default value is `false`.
-
-N> The `Rotate` property also applies to `Column`, `Bar`, `Area`, `Spline`, `Step Line`, `Box and Whisker`, `Histogram`, `Polar`, `Radar`, `Bubble`, and `Scatter` charts.
-
-The following code rotates the Line chart.
-
-{% tabs %}
-{% highlight c# %}
-chartControl.Series[0].Rotate = true;
-chartControl.Series[1].Rotate = true;
-{% endhighlight %}
-{% highlight vb %}
-chartControl.Series(0).Rotate = True
-chartControl.Series(1).Rotate = True
-{% endhighlight %}
-{% endtabs %}
-
-![Draw Error Bars in Windows Forms](../Chart-Types_images/windowsforms-line-chart-rotate.png)
 
 ### Hit test radius
 

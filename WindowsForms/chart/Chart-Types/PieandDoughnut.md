@@ -663,6 +663,8 @@ chartControl.Series.Add(series)
 
 The [DivideArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_DivideArea) property specifies whether the available chart area is divided among multiple pie series. The default value is `true`.
 
+N> [VisibleAllPies](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_VisibleAllPies) property is deprecated. Use the [DivideArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_DivideArea) property instead.
+
 The following code displays multiple Pie series without dividing the chart area and arranges the legend items in three rows.
 
 {% tabs %}
@@ -685,6 +687,8 @@ Doughnut chart is a variation of a pie chart that displays data as slices in a r
 ### Doughnut coeficient
 
 The [DoughnutCoeficient](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_DoughnutCoeficient) property is used to render a pie chart as a Doughnut Chart. It specifies the size of the hollow center as a fraction of the chart's radius. By default, the value is `0.0`, which renders the chart as a full pie chart. Valid values range from `0.0` to `0.9`.
+
+N> [InSideRadius](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_InSideRadius) property is deprecated. Use the [DoughnutCoeficient](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_DoughnutCoeficient) property instead.
 
 The following code displays doughnut chart using DoughnutCoeficient property.
 {% tabs %}

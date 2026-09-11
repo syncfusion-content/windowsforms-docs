@@ -11,7 +11,7 @@ documentation: ug
 
 A histogram chart displays the frequency distribution of data by grouping values into continuous intervals and representing them with adjacent bars.
 
-The following code example demonstrates how to create a histogram Chart.
+The following code example demonstrates how to create a histogram chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -109,19 +109,19 @@ For i As Integer = 1 To 1
     Next
 
     For j As Integer = 0 To 19
-        histogram.Points.Add(points1(j), 10)
+        histogram.Points.Add(pointOne(j), 10)
     Next
 
     For j As Integer = 0 To 29
-        histogram.Points.Add(points2(j), 10)
+        histogram.Points.Add(pointsTwo(j), 10)
     Next
 
     For j As Integer = 0 To 19
-        histogram.Points.Add(points3(j), 10)
+        histogram.Points.Add(pointsThree(j), 10)
     Next
 
     For j As Integer = 0 To 9
-        histogram.Points.Add(points4(j), 10)
+        histogram.Points.Add(pointsFour(j), 10)
     Next
 
     histogram.Text = histogram.Name
@@ -148,6 +148,8 @@ chartControl.PrimaryYAxis.Range = New MinMaxInfo(0, 50, 10)
 
 The [NumberOfIntervals](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHistogramConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHistogramConfigItem_NumberOfIntervals) property specifies the number of intervals used to group data values in a histogram chart and default value is `10`.
 
+N> [NumberOfHistogramIntervals](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_NumberOfHistogramIntervals) property is deprecated. Use the [NumberOfIntervals](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHistogramConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHistogramConfigItem_NumberOfIntervals) property instead.
+
 The following code sets the number of intervals to `15`.
 
 {% tabs %}
@@ -164,6 +166,8 @@ chartControl.Series(0).ConfigItems.HistogramItem.NumberOfIntervals = 15
 ## Show normal distribution
 
 The [ShowNormalDistribution](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHistogramConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHistogramConfigItem_ShowNormalDistribution) property controls whether a normal distribution curve is displayed on the histogram chart and is set to `false` by default.
+
+N> [DrawHistogramNormalDistribution](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_DrawHistogramNormalDistribution) property is deprecated. Use the [ShowNormalDistribution](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHistogramConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHistogramConfigItem_ShowNormalDistribution) property instead.
 
 The following code displays the normal distribution curve on the histogram chart.
 
@@ -183,6 +187,8 @@ chartControl.Series(0).ConfigItems.HistogramItem.ShowNormalDistribution =
 ## Show data points
 
 The [ShowDataPoints](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHistogramConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHistogramConfigItem_ShowDataPoints) property controls whether data points are displayed on the histogram chart and is set to `true` by default.
+
+N> [ShowHistogramDataPoints](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ShowHistogramDataPoints) property is deprecated. Use the [ShowDataPoints](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHistogramConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHistogramConfigItem_ShowDataPoints) property instead.
 
 The following code hides the data points in the histogram chart.
 
