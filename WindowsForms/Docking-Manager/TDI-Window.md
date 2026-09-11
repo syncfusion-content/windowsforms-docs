@@ -54,6 +54,35 @@ Private Sub DockingManager1_NewDockStateEndLoad(ByVal sender As Object, ByVal e 
 
 ![Dock Window displays context menu](TDI_Window_images/TabbedDocument.png) 
 
+## Document tab icons
+
+The Docking Manager supports displaying icons directly on document tabs. Assign an [ImageList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_ImageList) to the [DockingManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html), set an icon for each document by using the `SetDockIcon` method, and then add the controls as document tabs. This approach displays the icons without accessing the `UseIconsInTabs` property of the `TabbedMDIManager`.
+
+{% tabs %}
+{% highlight C# %}
+
+ImageList imageList = new ImageList
+{
+  ImageSize = new Size(16, 16)
+};
+
+imageList.Images.Add("image1", SystemIcons.Information.ToBitmap());
+imageList.Images.Add("image2", SystemIcons.Warning.ToBitmap());
+
+dockingManager1.ImageList = imageList;
+dockingManager1.HostControl = this;
+dockingManager1.EnableDocumentMode = true;
+
+dockingManager1.SetDockIcon(panel1, 0);
+dockingManager1.SetDockIcon(panel2, 1);
+dockingManager1.DockAsDocument(panel1);
+dockingManager1.DockAsDocument(panel2);
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinForms DockingManager document tab icons](TDI_Window_images/winforms-dockingmanager-document-tab-icons.png)
+
 ## Document window behavior
 
 [SetWindowMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SetWindowMode_System_Windows_Forms_Control_Syncfusion_Windows_Forms_Tools_WindowMode_) function helps to specify the window mode of docking child that defines dockability for specific child in WinForms Docking Control. It decides whether the docking child can be docked as `Tool` window or `Document` window.
