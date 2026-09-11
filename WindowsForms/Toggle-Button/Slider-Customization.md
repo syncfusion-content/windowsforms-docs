@@ -7,9 +7,9 @@ control: ToggleButton
 documentation: ug
 ---
 
-# Slider Customization in Windows Forms ToggleButton
+# Slider Customization in WinForms Toggle Button
 
-In the Toggle Button, the Slider is used to switch between two different states. It can be customized with different colors by using the Color property. The height of the Slider is calculated based on the Control’s Height. The Slider Width is customized by using the Slider.Width property that should not exceed the control’s width.
+In the WinForms Toggle Button, the Slider is used to switch between two different states. It can be customized with different colors by using the Color property. The height of the Slider is calculated based on the Control’s Height. The Slider Width is customized by using the Slider.Width property that should not exceed the control’s width.
 
 {% tabs %}
 {% highlight c# %}

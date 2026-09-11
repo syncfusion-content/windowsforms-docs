@@ -7,9 +7,9 @@ control: EditorsPackage
 documentation: ug
 ---
 
-# How to Databind CheckBoxAdv to Bit in SQL
+# How to Databind WinForms CheckBox to Bit in SQL
 
-The [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) [BoolValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_BoolValue) property can be used to data bind to bit values as illustrated below.
+The [WinForms CheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) [BoolValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_BoolValue) property can be used to data bind to bit values as illustrated below.
 
 {% tabs %}
 {% highlight c# %}
