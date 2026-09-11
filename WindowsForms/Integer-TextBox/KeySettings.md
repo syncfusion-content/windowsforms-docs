@@ -7,7 +7,7 @@ control: Tools
 documentation: ug
 ---
 
-# Key Settings in Windows Forms IntegerTextBox
+# Key Settings in WinForms Integer TextBox
 
 Sometimes there may be some situation for entering large values, like in Mega, Kilo etc., In such situations, if we add some sort of keyboard support, it will be very much useful for the users.
 
@@ -53,7 +53,7 @@ End Sub
 
 ## Shortcut keys
 
-Sometimes there may be some situations for incrementing or decrementing the value in the IntegerTextBox. In such situations, it is better to use shortcut keys.
+Sometimes there may be some situations for incrementing or decrementing the value in the WinForms Integer TextBox. In such situations, it is better to use shortcut keys.
 
 The following implementation will illustrate how this can be achieved. Here we are using Up and Down keys for incrementing and decrementing respectively. We cannot use the '-' key, because it is already reserved to enter the minus sign.
 
