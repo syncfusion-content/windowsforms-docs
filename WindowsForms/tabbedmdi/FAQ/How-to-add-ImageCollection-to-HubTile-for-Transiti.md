@@ -7,7 +7,7 @@ control: TabbedMDIPackage
 documentation: ug
 ---
 
-# How to Add ImageCollection to HubTile in TabbedMDI
+# How to Add ImageCollection to HubTile in WinForms TabbedMDI
 
 You can achieve this requirement using HubTileImageList and ImageListAdv properties.
 

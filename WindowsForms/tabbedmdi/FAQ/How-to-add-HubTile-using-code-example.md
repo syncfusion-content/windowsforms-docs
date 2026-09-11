@@ -7,7 +7,7 @@ control: TabbedMDIPackage
 documentation: ug
 ---
 
-# How to Add HubTile using Code Example in TabbedMDI
+# How to Add HubTile using Code Example in WinForms TabbedMDI
 
 The following section guides you through the steps involved in setting up a simple HubTile layout design through code.
 

@@ -7,9 +7,9 @@ control: TabbedMDIPackage
 documentation: ug
 ---
 
-# How to fix MDIChild Icon in Windows Forms TabbedMDI
+# How to fix MDIChild Icon in Windows Forms WinForms TabbedMDI
 
-The form does not throw an event when the Icon gets updated. So, update the Icon in the TabbedMDIManager manually after updating the Icon in the form, as follows:
+The form does not throw an event when the Icon gets updated. So, update the Icon in the WinForms TabbedMDI manually after updating the Icon in the form, as follows:
 
 {% tabs %}
 

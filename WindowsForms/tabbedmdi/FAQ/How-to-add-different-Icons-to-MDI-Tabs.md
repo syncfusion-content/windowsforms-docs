@@ -7,7 +7,7 @@ control: TabbedMDIPackage
 documentation: ug
 ---
 
-# How to Add Different Icons to MDI Tabs in TabbedMDI
+# How to Add Different Icons to MDI Tabs in WinForms TabbedMDI
 
 This can be done programmatically using the below code snippet.
 

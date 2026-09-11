@@ -7,25 +7,25 @@ control: TabbedMDIManager
 documentation: ug
 ---
 
-# Styles Settings in Windows Forms TabbedMDI
+# Styles Settings in WinForms TabbedMDI
 
-This section discusses about the Style Settings available in TabbedMDIManager control that can be used to create applications that are attractive and appealing to the end-users.
+This section discusses about the Style Settings available in WinForms TabbedMDI control that can be used to create applications that are attractive and appealing to the end-users.
 
 ## Tab styles
 
-TabbedMDI Framework provides the ability to support a number of tab styles. The tabbedMDIManager's [TabStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_TabStyle) property lets users specify the required style for the Tabs.
+TabbedMDI Framework provides the ability to support a number of tab styles. The WinForms TabbedMDI's [TabStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_TabStyle) property lets users specify the required style for the Tabs.
 
 Property table
 
 <table>
 <tr>
 <td>
-TabbedMDIManager property</td><td>
+WinForms TabbedMDI property</td><td>
 Description</td></tr>
 <tr>
 <td>
 TabStyle</td><td>
-Specifies the style for the tabs of the TabbedMDIManager Control. The options include:2D,3D,WorkbookMode,WhidbeyStyle,DockingWhidbeyStyle,DockingWhidbeyBetaStyle,Office2003Style,Office2007Style,OneNoteStyle,OneNoteStyleFlatTabsStyle,InternetExplorer7Style,MetroStyle,Office2016Colorful,Office2016White,Office2016DarkGray and Office2016Black.</td></tr>
+Specifies the style for the tabs of the WinForms TabbedMDI Control. The options include:2D,3D,WorkbookMode,WhidbeyStyle,DockingWhidbeyStyle,DockingWhidbeyBetaStyle,Office2003Style,Office2007Style,OneNoteStyle,OneNoteStyleFlatTabsStyle,InternetExplorer7Style,MetroStyle,Office2016Colorful,Office2016White,Office2016DarkGray and Office2016Black.</td></tr>
 </table>
 
 ## 2D
@@ -505,19 +505,19 @@ Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendere
 
 ## Window styles
 
-The windows in the TabbedMDI Framework can be arranged in four different styles. To set the styles of the windows, the MDIParent form should be detached from the TabbedMDIManager.
+The windows in the TabbedMDI Framework can be arranged in four different styles. To set the styles of the windows, the MDIParent form should be detached from the WinForms TabbedMDI.
 
-N> The DetachFromMdIContainer method is used to detach an MDIParent from the TabbedMDIManager.
+N> The DetachFromMdIContainer method is used to detach an MDIParent from the WinForms TabbedMDI.
 
 <table>
 <tr>
 <th>
-TabbedMDIManager property</th><th>
+WinForms TabbedMDI property</th><th>
 Description</th></tr>
 <tr>
 <td>
 WindowStyle</td><td>
-Specifies the style for the windows of the TabbedMDIManager Control. The options include:TileHorizontal,TileVertical,Cascade andArrangeIcons.</td></tr>
+Specifies the style for the windows of the WinForms TabbedMDI Control. The options include:TileHorizontal,TileVertical,Cascade andArrangeIcons.</td></tr>
 </table>
 
 {% tabs %}

@@ -7,7 +7,7 @@ control: TabbedMDIManager
 documentation: ug
 ---
 
-# Interactive Features in Windows Forms TabbedMDI
+# Interactive Features in WinForms TabbedMDI
 
 This section discusses the Interactive Features of TabControlAdv.
 
@@ -59,11 +59,11 @@ Me.TabbedMDIManager.GetTooltip(doc, "Tooltip for " + doc.Text)
 
 ## Context menu
 
-The TabbedMDI Layout mode enables the default Context Menu that pops-up whenever the user right-clicks on any of the tabs.
+The WinForms TabbedMDI Layout mode enables the default Context Menu that pops-up whenever the user right-clicks on any of the tabs.
 
 The [ContextMenuItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_ContextMenuItem) property is used to select the context menu that should be used along with the default tab context menu when the user right-clicks on a tab.
 
-Below image will reproduce the Context Menu feature available in an MDI application in TabbedMDI mode.
+Below image will reproduce the Context Menu feature available in an MDI application in WinForms TabbedMDI mode.
 
 ![Tab item context menu](Interactive-Features_images/Interactive-Features_img2.jpeg)
 
@@ -71,9 +71,9 @@ Below image will reproduce the Context Menu feature available in an MDI applicat
 
 ## Customize context menu
 
-On right-clicking the tabs in the TabbedMDI layout, a default context menu will appear. This context menu can be customized programmatically to add custom bar items.
+On right-clicking the tabs in the WinForms TabbedMDI layout, a default context menu will appear. This context menu can be customized programmatically to add custom bar items.
 
-* Create a TabbedMDI Layout.
+* Create a WinForms TabbedMDI Layout.
 * Add the below code snippets in the respective places as directed.
 * The below given code will add two bar items to the default context menu.
 

@@ -7,7 +7,7 @@ control: TabbedMDIManager
 documentation: ug
 ---
 
-# Serialization Support in Windows Forms TabbedMDI
+# Serialization Support in WinForms TabbedMDI
 
 The [AppStateSerializer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Runtime.Serialization.AppStateSerializer.html) class is a serialization utility that allows multiple components in an application to access a common disk I/O medium for state persistence. Using the same storage medium for persisting the state information across components, without overlying them together, helps avoid the file clutter that is bound to occur by components using distinct files.
 
@@ -19,7 +19,7 @@ The TabGroupStates can be serialized in,
 * Memory Stream
 * Default Storage Medium (null parameter constructor).
 
-The TabbedMDIManager class uses the [SaveTabGroupState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_SaveTabGroupStates) and [LoadTabGroupState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_LoadTabGroupStates) methods to save and load TabGroupState respectively.
+The WinForms TabbedMDI class uses the [SaveTabGroupState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_SaveTabGroupStates) and [LoadTabGroupState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_LoadTabGroupStates) methods to save and load TabGroupState respectively.
 
 Methods table
 

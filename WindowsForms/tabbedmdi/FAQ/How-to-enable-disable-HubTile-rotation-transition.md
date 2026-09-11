@@ -7,7 +7,7 @@ control: TabbedMDIPackage
 documentation: ug
 ---
 
-# How to Enable or Disable HubTile Rotation in TabbedMDI
+# How to Enable or Disable HubTile Rotation in WinForms TabbedMDI
 
 You can achieve it by setting HubTileTileType property as DefaultType, so that rotation transition will be disabled.
 
