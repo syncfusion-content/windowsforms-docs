@@ -40,7 +40,7 @@ LeftEnd - Left end image is used.<br/>
 RightEnd - Right end image is used.</td></tr>
 </table>
 
-N> You can also specify your own image for the ButtonAdv using Image property and this will effect only when ButtonType is set to Normal. See [Image Settings](http://help.syncfusion.com/windowsforms/buttonadv/imagesettings) to know more.
+N> You can also specify your own image for the ButtonAdv using Image property and this will effect only when ButtonType is set to Normal. See [Image Settings](https://help.syncfusion.com/windowsforms/buttonadv/imagesettings) to know more.
 
 {% tabs %}
 {% highlight c# %}
@@ -97,7 +97,7 @@ SunkenInner and<br/>
 SunkenOuter</td></tr>
 </table>
 
-N> This setting will be effective only for Office2003, OfficeXP and WindowsXP styles set through ButtonAdv.Appearance property. See [Visual Styles](http://help.syncfusion.com/windowsforms/buttonadvappearnce#visual-styles).
+N> This setting will be effective only for Office2003, OfficeXP and WindowsXP styles set through ButtonAdv.Appearance property. See [Visual Styles](https://help.syncfusion.com/windowsforms/buttonadvappearnce#visual-styles).
 
 {% tabs %}
 {% highlight c# %}
@@ -119,7 +119,7 @@ Me.buttonAdv13.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Su
 
 {% seealso %}
 
-[Button Types](http://help.syncfusion.com/windowsforms/buttonadv/buttonadvappearnce#button-types)
+[Button Types](https://help.syncfusion.com/windowsforms/buttonadv/buttonadvappearnce#button-types)
 
  {% endseealso %}
 
@@ -190,7 +190,7 @@ Office2007Colors.ApplyManagedColors(this, Color.LightGreen)
 
 {% seealso %}
 
-[Button Types](#button-types), [Image Settings](http://help.syncfusion.com/windowsforms/buttonadv/imagesettings)
+[Button Types](#button-types), [Image Settings](https://help.syncfusion.com/windowsforms/buttonadv/imagesettings)
 
 {% endseealso %}
 
