@@ -27,11 +27,11 @@ _CHAR(number)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number is the numeric value to retrieve the character.
+* `number`: The numeric value to retrieve the character.
 
 
 
@@ -51,11 +51,11 @@ _CLEAN(Text)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* Text: Required. String or text from which to remove non-printable characters.
+* `Text` (required): String or text from which to remove non-printable characters.
 
 
 
@@ -75,11 +75,11 @@ _CODE(name)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* name is the text for which you want the code of the first character. 
+* `name`: The text for which you want the code of the first character. 
 
 
 
@@ -99,11 +99,11 @@ _CONCATENATE (text1, text2,...)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* text1, text2 ... are text items to be joined into a single text item. The text items can be text strings, numbers, or single-cell references.
+* `text1, text2 ...`: Text items to be joined into a single text item. The text items can be text strings, numbers, or single-cell references.
 
 
 
@@ -155,15 +155,15 @@ _DOLLAR(number, decimal_places)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number is the number you want to convert to text.
+* `number`: The number you want to convert to text.
 
 
 
-* decimal_places is the number of digits in decimal places you want to display. The value is rounded accordingly.
+* `decimal_places`: The number of digits in decimal places you want to display. The value is rounded accordingly.
 
 
 
@@ -183,15 +183,15 @@ _EXACT(value1, value2)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* value1 is the first value you want to compare.
+* `value1`: The first value you want to compare.
 
 
 
-* value2 is the second value you want to compare.
+* `value2`: The second value you want to compare.
 
 
 
@@ -211,19 +211,19 @@ _FIND(text1,text2, num)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* text1 is the text that is to be found.
+* `text1`: The text that is to be found.
 
 
 
-* text2 is the text that contains the found text.
+* `text2`: The text that contains the found text.
 
 
 
-* num specifies the character where to start the search.
+* `num`: Specifies the character where to start the search.
 
 
 
@@ -250,19 +250,19 @@ _FINDB(text1,text2, num)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* text1 is the text to be found.
+* `text1`: The text to be found.
 
 
 
-* text2 is the text that contains the found text.
+* `text2`: The text that contains the found text.
 
 
 
-* num specifies a character, from where the search to be started.
+* `num`: Specifies a character, from where the search to be started.
 
 
 
@@ -290,19 +290,19 @@ _FIXED(number, decimal_places, no_commas)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number is the number you want to round.
+* `number`: The number you want to round.
 
 
 
-* decimal_places is the number of decimal places you want to display in the result.
+* `decimal_places`: The number of decimal places you want to display in the result.
 
 
 
-* no_commas is a logical value. This displays commas when it is set to `false` and does not display commas when it is set to `true`.
+* `no_commas`: A logical value. This displays commas when it is set to `false` and does not display commas when it is set to `true`.
 
 
 
@@ -322,15 +322,15 @@ _LEFT(text, bytes)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* text is a string that contains the characters that you want to return.
+* `text`: A string that contains the characters that you want to return.
 
 
 
-* bytes specify the number of characters
+* `bytes`: Specify the number of characters
 
 
 
@@ -350,11 +350,11 @@ _LEN(name)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* name is the text whose length you want to find. 
+* `name`: The text whose length you want to find. 
 
 
 
@@ -374,11 +374,11 @@ _LOWER(text)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* text is the string you want to convert to lowercase.
+* `text`: The string you want to convert to lowercase.
 
 
 
@@ -398,19 +398,19 @@ _MID(text, startNum, numBytes)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* text is a string that contains the characters that you want to return.
+* `text`: A string that contains the characters that you want to return.
 
 
 
-* startNum is the position of the first character that you want to extract in text.
+* `startNum`: The position of the first character that you want to extract in text.
 
 
 
-* numBytes specifies the number of characters you want in bytes.
+* `numBytes`: Specifies the number of characters you want in bytes.
 
 
 
@@ -430,11 +430,11 @@ _NUMBERVALUE(text)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* text is the text to be converted into a number.
+* `text`: The text to be converted into a number.
 
 
 
@@ -462,11 +462,11 @@ _PROPER(text)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* text is the string which you want to capitalize the first letter.
+* `text`: The string which you want to capitalize the first letter.
 
 
 
@@ -486,23 +486,23 @@ _REPLACE(oldText, startNum, numChars, newText)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* oldText is the text that needs to be replaced.
+* `oldText`: The text that needs to be replaced.
 
 
 
-* startNum is the position of the character in oldText.
+* `startNum`: The position of the character in oldText.
 
 
 
-* numChars is the number of characters needs to be replaced.
+* `numChars`: The number of characters needs to be replaced.
 
 
 
-* newText is the text that replaces the character in old text.
+* `newText`: The text that replaces the character in old text.
 
 
 
@@ -522,15 +522,15 @@ _REPT(string, number)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* string is the text that you want to repeat.
+* `string`: The text that you want to repeat.
 
 
 
-* num is the number of times to repeat the text.
+* `num`: The number of times to repeat the text.
 
 
 
@@ -558,15 +558,15 @@ _RIGHT(string, num)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* string contains the characters you want to return. 
+* `string`: Contains the characters you want to return. 
 
 
 
-* num specifies the number of characters.
+* `num`: Specifies the number of characters.
 
 
 
@@ -586,23 +586,23 @@ _SEARCH(findText,withinText, startNum )_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* findText is the text that you want to find.
+* `findText`: The text that you want to find.
 
 
 
-* withinText is the text in which you want to search findText.
+* `withinText`: The text in which you want to search findText.
 
 
 
-* startNum is the character number in withinText, where you want to start the search.
+* `startNum`: The character number in withinText, where you want to start the search.
 
 
 
-Remark:
+**Remark:**
 
 
 
@@ -626,23 +626,23 @@ _SUBSTITUTE(text, old_text, new_text, instance_num)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* Text is the text or the reference to a cell containing text in which you want to substitute characters.
+* `Text`: The text or the reference to a cell containing text in which you want to substitute characters.
 
 
 
-* Old_text is the text you want to replace.
+* `Old_text`: The text you want to replace.
 
 
 
-* New_text is the text you want to replace old_text with.
+* `New_text`: The text you want to replace old_text with.
 
 
 
-* Instance_num specifies the occurrence of old_text you want to replace with the new_text. When you specify instance_num, only that instance of old_text is replaced. Otherwise, every occurrence of old_text in text is changed to new_text.
+* `Instance_num`: Specifies the occurrence of old_text you want to replace with the new_text. When you specify instance_num, only that instance of old_text is replaced. Otherwise, every occurrence of old_text in text is changed to new_text.
 
 
 
@@ -662,11 +662,11 @@ _T( value )_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* value is a required value to be checked. 
+* `value` (required): A value to be checked. 
 
 
 
@@ -690,15 +690,15 @@ _TEXT(value, format_text)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* value is a numeric value to convert to text.
+* `value`: A numeric value to convert to text.
 
 
 
-* format_text is a format text to apply to the supplied value.
+* `format_text`: A format text to apply to the supplied value.
 
 
 
@@ -718,11 +718,11 @@ _TRIM( text )_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* text is the text value for which you want to remove the leading and the trailing spaces.
+* `text`: The text value for which you want to remove the leading and the trailing spaces.
 
 
 
@@ -742,11 +742,11 @@ _UNICHAR(num)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* num is the Unicode number that represents the character.
+* `num`: The Unicode number that represents the character.
 
 
 
@@ -778,11 +778,11 @@ _UNICODE(text)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* text is the character for which you want the Unicode value.
+* `text`: The character for which you want the Unicode value.
 
 
 
@@ -810,11 +810,11 @@ _UPPER(text )_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* text is the string you want to convert to uppercase.
+* `text`: The string you want to convert to uppercase.
 
 
 
@@ -834,11 +834,11 @@ _VALUE(range)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* range is the string that contains the date or a number.
+* `range`: The string that contains the date or a number.
 
 
 
@@ -858,23 +858,23 @@ _TEXTJOIN(delimiter, ignore_empty, text1, [text2], …)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* delimiter (required): A separator between each text value in the resulting string. Most commonly, you would use a delimiter such as a comma or space character.
+* `delimiter` (required): A separator between each text value in the resulting string. Most commonly, you would use a delimiter such as a comma or space character.
 
 
 
-* ignore_empty (required): If it is `TRUE` ignores the empty values, and `FALSE` includes empty values in the result.
+* `ignore_empty` (required): If it is `TRUE` ignores the empty values, and `FALSE` includes empty values in the result.
 
 
 
-* text1 (required) :First text item to be joined.
+* `text1` (required): First text item to be joined.
 
 
 
-* [text2, ...] (optional): Additional text items to be joined. There can be up to 252 strings that are joined together.
+* `text2, ...` (optional): Additional text items to be joined. There can be up to 252 strings that are joined together.
 
 
 
@@ -902,15 +902,15 @@ _CONCAT(text1, [text2],…)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* text1 (required): It is a first text item to be joined. A string, or array of strings, such as a range of cells.
+* `text1` (required): A first text item to be joined. A string, or array of strings, such as a range of cells.
 
 
 
-* [text2, ...] (optional): Additional text items to be joined. There can be upto 253 text arguments for the text items.
+* `text2, ...` (optional): Additional text items to be joined. There can be upto 253 text arguments for the text items.
 
 
 
@@ -938,15 +938,15 @@ _LEFTB(text, bytes)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* text is a string that contains the characters that you want to return.
+* `text`: A string that contains the characters that you want to return.
 
 
 
-* bytes specify the number of characters
+* `bytes`: Specify the number of characters
 
 
 
@@ -966,15 +966,15 @@ _RIGHTB(string, num_bytes)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* string contains the characters you want to return. 
+* `string`: Contains the characters you want to return. 
 
 
 
-* num_bytes specifies the number of characters based on the number of bytes.
+* `num_bytes`: Specifies the number of characters based on the number of bytes.
 
 
 
@@ -994,19 +994,19 @@ _MIDB(text, startNum, numBytes)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* text is a string that contains the characters that you want to return.
+* `text`: A string that contains the characters that you want to return.
 
 
 
-* startNum is the position of the first character that you want to extract in text.
+* `startNum`: The position of the first character that you want to extract in text.
 
 
 
-* numBytes specifies the number of characters you want in bytes.
+* `numBytes`: Specifies the number of characters you want in bytes.
 
 
 
@@ -1026,11 +1026,11 @@ _LENB(name)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* name is the text whose length you want to find.
+* `name`: The text whose length you want to find.
 
 
 
@@ -1049,23 +1049,23 @@ _REPLACEB(oldText, startNum, num_bytes, newText)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* oldText is the text that needs to be replaced.
+* `oldText`: The text that needs to be replaced.
 
 
 
-* startNum is the position of the character in oldText.
+* `startNum`: The position of the character in oldText.
 
 
 
-* num_bytes is the number of bytes in old_text that you want REPLACEB to replace with new_text.
+* `num_bytes`: The number of bytes in old_text that you want REPLACEB to replace with new_text.
 
 
 
-* newText is the text that replaces the character in old text.
+* `newText`: The text that replaces the character in old text.
 
 
 
@@ -1084,11 +1084,11 @@ _ASC(text)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* The text or a reference to convert to single byte characters. 
+* `text`: The text or a reference to convert to single byte characters. 
 
 
 
@@ -1107,11 +1107,11 @@ _JIS(text)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* The text or a reference that contains the text you want to change. If text does not contain any half-width English letters, text is not changed.
+* `text`: The text or a reference that contains the text you want to change. If text does not contain any half-width English letters, text is not changed.
 
 
 
@@ -1131,19 +1131,19 @@ SEARCHB(findText,withinText, startNum)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* findText  is the the character or sub-string that you want to find.
+* `findText`: The character or sub-string that you want to find.
 
 
 
-* withinText is the text string that in which you want to search findText.
+* `withinText`: The text string that in which you want to search findText.
 
 
 
-* startNum is specifies the position in the within_text string, from which the search should begin.
+* `startNum`: Specifies the position in the within_text string, from which the search should begin.
 
 
 
@@ -1171,19 +1171,19 @@ _UNIQUE(array, [by_col], [exactly_once])_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* array: The range or array from which to return unique values.
+* `array`: The range or array from which to return unique values.
 
 
 
-* [by_col] (Optional): If `TRUE`, compares columns for uniqueness; if `FALSE` or omitted, compares rows.
+* `by_col` (optional): If `TRUE`, compares columns for uniqueness; if `FALSE` or omitted, compares rows.
 
 
 
-* [exactly_once] (Optional): If `TRUE`, returns only values that appear exactly once; if `FALSE` or omitted, returns all distinct values.
+* `exactly_once` (optional): If `TRUE`, returns only values that appear exactly once; if `FALSE` or omitted, returns all distinct values.
 
 
 
@@ -1219,31 +1219,31 @@ _TEXTAFTER(text, delimiter, [instance_num], [match_mode], [match_end], [if_not_f
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* text: The input text to search within.
+* `text`: The input text to search within.
 
 
 
-* delimiter: The text or character after which you want to extract.
+* `delimiter`: The text or character after which you want to extract.
 
 
 
-* [instance_num] (Optional): The instance of the delimiter to search for. Defaults to 1 (first instance).
+* `instance_num` (optional): The instance of the delimiter to search for. Defaults to 1 (first instance).
 
 
 
-* [match_mode] (Optional): Determines if the search is case-sensitive (0 for case-sensitive, 1 for case-insensitive).
+* `match_mode` (optional): Determines if the search is case-sensitive (0 for case-sensitive, 1 for case-insensitive).
 
 
 
-* [match_end] (Optional): If `TRUE`, treats the end of the text as a delimiter.
+* `match_end` (optional): If `TRUE`, treats the end of the text as a delimiter.
 
 
 
-* [if_not_found] (Optional): Value to return if the delimiter is not found. Defaults to `#N/A`.
+* `if_not_found` (optional): Value to return if the delimiter is not found. Defaults to `#N/A`.
 
 
 
@@ -1287,31 +1287,31 @@ _TEXTBEFORE(text, delimiter, [instance_num], [match_mode], [match_end], [if_not_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* text: The input text to search within.
+* `text`: The input text to search within.
 
 
 
-* delimiter: The text or character before which you want to extract.
+* `delimiter`: The text or character before which you want to extract.
 
 
 
-* [instance_num] (Optional): The instance of the delimiter to search for. Defaults to 1 (first instance).
+* `instance_num` (optional): The instance of the delimiter to search for. Defaults to 1 (first instance).
 
 
 
-* [match_mode] (Optional): Case-sensitivity control (0 for case-sensitive, 1 for case-insensitive).
+* `match_mode` (optional): Case-sensitivity control (0 for case-sensitive, 1 for case-insensitive).
 
 
 
-* [match_end] (Optional):  If TRUE, treats the end of the text as a delimiter.
+* `match_end` (optional):  If TRUE, treats the end of the text as a delimiter.
 
 
 
-* [if_not_found] (Optional): Value to return if the delimiter is not found. Defaults to #N/A.
+* `if_not_found` (optional): Value to return if the delimiter is not found. Defaults to #N/A.
 
 
 
@@ -1351,15 +1351,15 @@ _VALUETOTEXT(value, [format])_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* value: The value to return to text.
+* `value`: The value to return to text.
 
 
 
-* [format] (Optional): Determines the format:
+* `format` (optional): Determines the format:
 
 
 
@@ -1405,15 +1405,15 @@ _ARRAYTOTEXT(array, [format])_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* array: The array to convert to text.
+* `array`: The array to convert to text.
 
 
 
-* [format] (Optional): Determines the output format:
+* `format` (optional): Determines the output format:
 
 
 
@@ -1453,15 +1453,15 @@ _TOCOL(array, [ignore], [scan_by_column])_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* array: The array to convert into a column.
+* `array`: The array to convert into a column.
 
 
 
-* [ignore] (Optional): Specifies which values to ignore:
+* `ignore` (optional): Specifies which values to ignore:
 
 
 
@@ -1481,7 +1481,7 @@ _TOCOL(array, [ignore], [scan_by_column])_
 
 
 
-* [scan_by_column] (Optional): If `TRUE`, scans by column instead of by row.
+* `scan_by_column` (optional): If `TRUE`, scans by column instead of by row.
 
 
 **Remarks:**
@@ -1516,15 +1516,15 @@ _TOROW(array, [ignore], [scan_by_column])_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* array: The array to convert into a row.
+* `array`: The array to convert into a row.
 
 
 
-* [ignore] (Optional): Specifies which values to ignore:
+* `ignore` (optional): Specifies which values to ignore:
 
 
 
@@ -1544,7 +1544,7 @@ _TOROW(array, [ignore], [scan_by_column])_
 
 
 
-* [scan_by_column] (Optional): If `TRUE`, scans by column.
+* `scan_by_column` (optional): If `TRUE`, scans by column.
 
 
 
@@ -1580,19 +1580,19 @@ _CHOOSECOLS(array, col_num1, [col_num2], …)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* array: The array containing columns to be selected.
+* `array`: The array containing columns to be selected.
 
 
 
-* col_num1: The index of the first column to return.
+* `col_num1`: The index of the first column to return.
 
 
 
-* [col_num2] (Optional): Additional columns to return.
+* `col_num2` (optional): Additional columns to return.
 
 
 
@@ -1628,19 +1628,19 @@ _CHOOSEROWS(array, row_num1, [row_num2], …)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* array: The array containing the rows to be selected.
+* `array`: The array containing the rows to be selected.
 
 
 
-* row_num1: The index of the first row to return.
+* `row_num1`: The index of the first row to return.
 
 
 
-* [row_num2] (Optional): Additional rows to return.
+* `row_num2` (optional): Additional rows to return.
 
 
 
@@ -1701,23 +1701,23 @@ _SEQUENCE(rows, [columns], [start], [step])_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* rows: The number of rows for the sequence.
+* `rows`: The number of rows for the sequence.
 
 
 
-* [columns] (Optional): The number of columns.
+* `columns` (optional): The number of columns.
 
 
 
-* [start] (Optional): The starting number.
+* `start` (optional): The starting number.
 
 
 
-* [step] (Optional): The increment for each number.
+* `step` (optional): The increment for each number.
 
 
 
@@ -1753,31 +1753,31 @@ _TEXTSPLIT(text, col_delimiter, [row_delimiter], [ignore_empty], [match_mode], [
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* text: The input text to split.
+* `text`: The input text to split.
 
 
 
-* col_delimiter: The delimiter to split the text into columns.
+* `col_delimiter`: The delimiter to split the text into columns.
 
 
 
-* [row_delimiter] (Optional): The delimiter to split the text into rows.
+* `row_delimiter` (optional): The delimiter to split the text into rows.
 
 
 
-* [ignore_empty] (Optional):  If `TRUE`, ignores consecutive delimiters. Defaults to `FALSE`.
+* `ignore_empty` (optional):  If `TRUE`, ignores consecutive delimiters. Defaults to `FALSE`.
 
 
 
-* [match_mode] (Optional): If 1, performs a case-insensitive match. Defaults to 0 (case-sensitive).
+* `match_mode` (optional): If 1, performs a case-insensitive match. Defaults to 0 (case-sensitive).
 
 
 
-* [pad_with] (Optional): The value to use for padding missing elements. Defaults to `#N/A`.
+* `pad_with` (optional): The value to use for padding missing elements. Defaults to `#N/A`.
 
 
 
@@ -1813,19 +1813,19 @@ _TAKE(array, rows, [columns])_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* array: The array from which to take rows or columns.
+* `array`: The array from which to take rows or columns.
 
 
 
-* rows: The number of rows to take. A negative value takes rows from the end of the array.
+* `rows`: The number of rows to take. A negative value takes rows from the end of the array.
 
 
 
-* [columns] (Optional): The number of columns to take. A negative value takes columns from the end of the array.
+* `columns` (optional): The number of columns to take. A negative value takes columns from the end of the array.
 
 
 
@@ -1861,19 +1861,19 @@ _DROP(array, rows, [columns])_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* array: The array from which to drop rows or columns.
+* `array`: The array from which to drop rows or columns.
 
 
 
-* rows: The number of rows to drop. A negative value drops from the end of the array.
+* `rows`: The number of rows to drop. A negative value drops from the end of the array.
 
 
 
-* [columns] (Optional): The number of columns to drop. A negative value drops columns from the end.
+* `columns` (optional): The number of columns to drop. A negative value drops columns from the end.
 
 
 
@@ -1912,23 +1912,23 @@ _EXPAND(array, rows, [columns], [pad_with])_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* array: The array to expand.
+* `array`: The array to expand.
 
 
 
-* rows: The number of rows in the expanded array.
+* `rows`: The number of rows in the expanded array.
 
 
 
-* [columns] (Optional): The number of columns in the expanded array.
+* `columns` (optional): The number of columns in the expanded array.
 
 
 
-* [pad_with] (Optional): The value to pad with if the array is smaller than the target size. Defaults to `#N/A`.
+* `pad_with` (optional): The value to pad with if the array is smaller than the target size. Defaults to `#N/A`.
 
 
 
@@ -1963,19 +1963,19 @@ _WRAPROWS(vector, wrap_count, [pad_with])_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* vector: The row or column of values to wrap.
+* `vector`: The row or column of values to wrap.
 
 
 
-* wrap_count: The maximum number of elements in each row.
+* `wrap_count`: The maximum number of elements in each row.
 
 
 
-* [pad_with] (Optional): The value used to fill in any remaining cells if the array cannot be evenly divided. Defaults to `#N/A`.
+* `pad_with` (optional): The value used to fill in any remaining cells if the array cannot be evenly divided. Defaults to `#N/A`.
 
 
 
@@ -2018,19 +2018,19 @@ _WRAPCOLS(vector, wrap_count, [pad_with])_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* vector: The row or column of values to wrap.
+* `vector`: The row or column of values to wrap.
 
 
 
-* wrap_count: The maximum number of elements in each column.
+* `wrap_count`: The maximum number of elements in each column.
 
 
 
-* [pad_with] (Optional): The value used to fill in any remaining cells if the array cannot be evenly divided. Defaults to `#N/A`.
+* `pad_with` (optional): The value used to fill in any remaining cells if the array cannot be evenly divided. Defaults to `#N/A`.
 
 
 
@@ -2079,23 +2079,23 @@ _SORT(array, [sort_index], [sort_order], [by_col])_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* array: The array or range to sort.
+* `array`: The array or range to sort.
 
 
 
-* [sort_index] (Optional): The index (row or column number) to sort by. Defaults to the first row/column.
+* `sort_index` (optional): The index (row or column number) to sort by. Defaults to the first row/column.
 
 
 
-* [sort_order] (Optional):  1 for ascending (default), -1 for descending.
+* `sort_order` (optional):  1 for ascending (default), -1 for descending.
 
 
 
-* [by_col] (Optional): `FALSE` (default) to sort by rows, or `TRUE` to sort by columns.
+* `by_col` (optional): `FALSE` (default) to sort by rows, or `TRUE` to sort by columns.
 
 
 
@@ -2131,23 +2131,23 @@ _SORTBY(array, by_array1, [sort_order1], [by_array2, sort_order2], …)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* array: The array to sort.
+* `array`: The array to sort.
 
 
 
-* by_array1: The array or range to sort by.
+* `by_array1`: The array or range to sort by.
 
 
 
-* [sort_order1] (Optional): 1 for ascending (default), -1 for descending.
+* `sort_order1` (optional): 1 for ascending (default), -1 for descending.
 
 
 
-* [by_array2], [sort_order2] (Optional): Additional arrays and their sort orders, if needed.
+* `by_array2`, `sort_order2` (optional): Additional arrays and their sort orders, if needed.
 
 
 
@@ -2187,19 +2187,19 @@ _FILTER(array, include, [if_empty])_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* array: The array, or range to filter.
+* `array`: The array, or range to filter.
 
 
 
-* include: A Boolean array (same size as array) that indicates which values to keep.
+* `include`: A Boolean array (same size as array) that indicates which values to keep.
 
 
 
-* [if_empty] (Optional): The value to return if no results match the criteria. Defaults to a `#CALC!` error.
+* `if_empty` (optional): The value to return if no results match the criteria. Defaults to a `#CALC!` error.
 
 
 
@@ -2235,11 +2235,11 @@ _BAHTTEXT(number)_
 
 
 
-**Where:**  
+**Parameters:**  
 
 
 
-* number: A number you want to convert to text. This can be:  
+* `number`: A number you want to convert to text. This can be:  
 
 
 

@@ -25,27 +25,17 @@ _DATE(year, month, day)_
 
 
 
-**where:**
+**Parameters:**
 
+* `year`: The year can be one to four digits. Year is interpreted based on 1900. 
 
+    * When a year is between 0 (zero) and 1899 (inclusive), the value is added to 1900 to calculate the year. For example, Date (102, 11, 12) returns as November 12, 2002 (1900+102). 
 
-* year can be one to four digits. Year is interpreted based on 1900.
+    * When a year is between 1900 and 9999 (inclusive), the value is used as it is, for example, Date(2002,11,12) returns as November 12, 2002.
 
+* `month`: A number representing the month of the year.
 
-
-* When a year is between 0 (zero) and 1899 (inclusive), the value is added to 1900 to calculate the year. For example, Date (102, 11, 12) returns as November 12, 2002 (1900+102).
-
-
-
-* When a year is between 1900 and 9999 (inclusive), the value is used as it is, for example, Date(2002,11,12) returns as November 12, 2002.
-
-
-
-* month is a number representing the month of the year.
-
-
-
-* day is a number representing the day of the month.
+* `day`: A number representing the day of the month.
 
 
 
@@ -64,13 +54,13 @@ The `DATEDIF` function returns the number of days, months or years between two d
 
 _DATEDIF(start_date,end_date,unit)_
 
-**where:**
+**Parameters:**
 
-* start_date denotes a date that represents the first, or starting, date of the period. Dates may be entered as text strings within quotation marks (for example, "2001/1/30"), as serial numbers (for example, 36921, which represents January 30, 2001, if you're using the 1900 date system), or as the results of other formulas or functions (for example, DATEVALUE("2001/1/30")).
+* `start_date`: A date that represents the first, or starting, date of the period. Dates may be entered as text strings within quotation marks (for example, "2001/1/30"), as serial numbers (for example, 36921, which represents January 30, 2001, if you're using the 1900 date system), or as the results of other formulas or functions (for example, DATEVALUE("2001/1/30")).
 
-* end_date denotes a date that represents the last, or ending, date of the period.
+* `end_date`: A date that represents the last, or ending, date of the period.
 
-* unit is the type of information that you want returned:
+* `unit`: The type of information that you want returned:
 
 <table>
 <tr>
@@ -128,11 +118,9 @@ _DATEVALUE(date_text)_
 
 
 
-**where:**
+**Parameters:**
 
-
-
-date_text is the text that represents a date as a formatted string. For example, 11/12/2002 or 12-Nov-2002 are text strings within quotation marks that represent dates. When the year portion of the date_text is omitted, DateValue uses the current year from your computer's built-in clock. The time information in the date_text is ignored.
+* `date_text`: The text that represents a date as a formatted string. For example, 11/12/2002 or 12-Nov-2002 are text strings within quotation marks that represent dates. When the year portion of the date_text is omitted, DateValue uses the current year from your computer's built-in clock. The time information in the date_text is ignored.
 
 
 
@@ -164,11 +152,9 @@ _DAY(serial_number)_
 
 
 
-**where:**
+**Parameters:**
 
-
-
-serial_number is the date of the day you are trying to find. Dates should be entered by using the `Date` function or as results of other formulas or functions. For example, use Date(2002,4,23) for the 23rd day of April, 2002.
+* `serial_number`: The date of the day you are trying to find. Dates should be entered by using the `Date` function or as results of other formulas or functions. For example, use Date(2002,4,23) for the 23rd day of April, 2002.
 
 
 
@@ -188,15 +174,13 @@ _DAYS360(start_date, end_date, method)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* start_date and end_date are the two dates between which you want to know the number of days. When start_date occurs after end_date, `Days360` returns a negative number. Dates should be entered by using the **Date** function or as results of other formulas or functions.
+* `start_date,end_date`: The two dates between which you want to know the number of days. When start_date occurs after end_date, `Days360` returns a negative number. Dates should be entered by using the **Date** function or as results of other formulas or functions.
 
-
-
-* method is a logical value that specifies whether to use the U.S. or European method in the calculation. When method is:
+* `method`: A logical value that specifies whether to use the U.S. or European method in the calculation. When method is:
 
 
 
@@ -224,11 +208,11 @@ _DAYS(endDate, startDate)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-endDate and startDate are the two dates between which you want to know the number of days.
+`endDate,startDate`: The two dates between which you want to know the number of days.
 
 
 
@@ -248,15 +232,11 @@ _EDATE( startDate, Months )_
 
 
 
-**where:**
+**Parameters:**
 
+* `startDate`: The initial date from where to count the number of months.
 
-
-* startDate is the initial date from where to count the number of months. 
-
-
-
-* Months is the number of months to add to (or subtract from) the startDate.
+* `Months`: The number of months to add to (or subtract from) the startDate.
 
 
 
@@ -288,15 +268,11 @@ _EOMONTH(startDate, Months)_
 
 
 
-**where:**
+**Parameters:**
 
+* `startDate`: The initial date.
 
-
-* startDate is the initial date.
-
-
-
-* Months is the number of months to add to (or subtract from) the startDate before returning the last day of the resulting month. 
+* `Months`: The number of months to add to (or subtract from) the startDate before returning the last day of the resulting month. 
 
 
 
@@ -332,11 +308,9 @@ _HOUR(serial_number)_
 
 
 
-**where:**
+**Parameters:**
 
-
-
-serial_number is the time that contains the hour you want to find. Times may be entered as text strings within quotation marks for example, "6:00 PM", as decimal numbers for example, 0.75, that represents 6:00 PM, or as results of other formulas or functions for example, TimeValue"6:00 PM".
+* `serial_number`: The time that contains the hour you want to find. Times may be entered as text strings within quotation marks for example, "6:00 PM", as decimal numbers for example, 0.75, that represents 6:00 PM, or as results of other formulas or functions for example, TimeValue"6:00 PM".
 
 
 
@@ -356,11 +330,9 @@ _ISOWEEKNUM( DateTime)_
 
 
 
-**where:**
+**Parameters:**
 
-
-
-DateTime is used for date and time calculation.
+* `DateTime`: Used for date and time calculation.
 
 
 
@@ -392,11 +364,9 @@ _MINUTE(serial_number)_
 
 
 
-**where:**
+**Parameters:**
 
-
-
-serial_number is the time that contains the minute you want to find. Times may be entered as text strings within quotation marks (for example, "6:00 PM"), as decimal numbers (for example, 0.75, that represents 6:00 PM), or as results of other formulas or functions (for example, TIMEVALUE ("6:00 PM")). 
+* `serial_number`: The time that contains the minute you want to find. Times may be entered as text strings within quotation marks (for example, "6:00 PM"), as decimal numbers (for example, 0.75, that represents 6:00 PM), or as results of other formulas or functions (for example, TIMEVALUE ("6:00 PM")). 
 
 
 
@@ -424,11 +394,9 @@ _MONTH(serial_number)_
 
 
 
-**where:**
+**Parameters:**
 
-
-
-serial_number is the date of the month you are trying to find. Dates should be entered by using the `Date` function or as results of other formulas or functions. For example, use Date(2002,11,12) for the 12th day of November, 2002.
+* `serial_number`: The date of the month you are trying to find. Dates should be entered by using the `Date` function or as results of other formulas or functions. For example, use Date(2002,11,12) for the 12th day of November, 2002.
 
 
 
@@ -456,19 +424,13 @@ _NETWORKDAYS( start_date, end_date, [holidays] )_
 
 
 
-**where:**
+**Parameters:**
 
+* `start_date`: The start of the period to find the working days.
 
+* `end_date`: The end of the period to find the working days.
 
-* start_date: The start of the period to find the working days
-
-
-
-* end_date: The end of the period to find the working days.
-
-
-
-* &#91;holidays&#93;:  An optional argument, which specifies an array of dates that are not to be counted as working days.
+* `holidays`: An optional argument that specifies an array of dates that are not to be counted as working days.
 
 
 
@@ -495,15 +457,11 @@ _NETWORKDAYS.INTL(startDate, endDate)_
 
 
 
-**where:**
+**Parameters:**
 
+* `startDate`: The start of the period where days are counted.
 
-
-* startDate is the start of the period where days are counted.
-
-
-
-* endDate is the end of the period where days are counted.
+* `endDate`: The end of the period where days are counted.
 
 
 
@@ -559,9 +517,9 @@ _SECOND(serial_number)_
 
 
 
-**where:**
+**Parameters:**
 
-serial_number is the time that contains the seconds you want to find.
+* `serial_number`: The time that contains the seconds you want to find.
 
 
 
@@ -587,19 +545,13 @@ _TIME(hour, minute, second)_
 
 
 
-**where:**
+**Parameters:**
 
+* `hour`: A number from 0 (zero) to 23 representing the hour.
 
+* `minute`: A number from 0 to 59 representing the minute.
 
-* hour is a number from 0 (zero) to 23 representing the hour.
-
-
-
-* minute is a number from 0 to 59 representing the minute.
-
-
-
-* second is a number from 0 to 59 representing the second.
+* `second`: A number from 0 to 59 representing the second.
 
 
 
@@ -619,11 +571,9 @@ _TIMEVALUE(time_text)_
 
 
 
-**where:**
+**Parameters:**
 
-
-
-* time_text is a text string that represents a time as a formatted string. For example, "6:45 PM" and "18:45" text strings within quotation marks that represent time.
+* `time_text`: A text string that represents a time as a formatted string. For example, "6:45 PM" and "18:45" text strings within quotation marks that represent time.
 
 
 
@@ -675,15 +625,11 @@ _WEEKDAY(serial_number,return_type)_
 
 
 
-**where:**
+**Parameters:**
 
+* `serial_number`: A sequential number that represents the date of the day you are trying to find. Dates should be entered by using the `Date` function or as results of other formulas or functions. For example, use Date (2008, 5, 23) for the 23rd day of May 2008.
 
-
-* serial_number is a sequential number that represents the date of the day you are trying to find. Dates should be entered by using the `Date` function or as results of other formulas or functions. For example, use Date (2008, 5, 23) for the 23rd day of May 2008.
-
-
-
-* return_type is a number that determines the type of return value.
+* `return_type`: A number that determines the type of return value.
 
 
 
@@ -753,15 +699,11 @@ _WEEKNUM( serialNum, [returnType] )_
 
 
 
-**where:**
+**Parameters:**
 
+* `serialNum`: The date that you want to return the week number for.
 
-
-* serialNum is the date that you want to return the week number for. 
-
-
-
-* [returnType] is an optional argument that specifies which numbering system should be used and which weekday should be treated as the start of the week.
+* `returnType`: An optional argument that specifies which numbering system should be used and which weekday should be treated as the start of the week.
 
 
 
@@ -797,23 +739,15 @@ _WORKDAY.INTL (startDate, days, [weekend], [holidays])_
 
 
 
-**where:**
+**Parameters:**
 
+* `startDate`: The initial date from which to count the number of workdays.
 
+* `days`: Number of workdays to add onto startDate.
 
-* startDate is the initial date from which to count the number of workdays. 
+* `[weekend]`: An optional argument that specifies the weekdays to be counted as weekends.
 
-
-
-* days are number of workdays to add onto startDate. 
-
-
-
-* [weekend] is an optional argument that specifies the weekdays to be counted as weekends. 
-
-
-
-* [holidays] is an optional argument that specifies an array of dates that are not to be counted as working days. 
+* `[holidays]`: An optional argument that specifies an array of dates that are not to be counted as working days. 
 
 
 
@@ -853,19 +787,13 @@ _WORKDAY(startDate, Days, [holidays])_
 
 
 
-**where:**
+**Parameters:**
 
+* `startDate`: The initial date from which to count the number of workdays.
 
+* `Days`: Number of workdays to add onto startDate.
 
-* startDate is the initial date from which to count the number of workdays. 
-
-
-
-* Days are number of workdays to add onto startDate. 
-
-
-
-* [holidays] is an optional argument, which specifies an array of dates that are not to be counted as working days. 
+* `[holidays]`: An optional argument, which specifies an array of dates that are not to be counted as working days. 
 
 
 
@@ -899,11 +827,9 @@ _YEAR(serial_number)_
 
 
 
-**where:** 
+**Parameters:**
 
-
-
-serial_number is the date of the year you want to find. Dates should be entered by using the DATE function or as results of other formulas or functions. For example, use DATE(2002,11,12) for the 12th day of November 2002.
+* `serial_number`: The date of the year you want to find. Dates should be entered by using the DATE function or as results of other formulas or functions. For example, use DATE(2002,11,12) for the 12th day of November 2002.
 
 
 
@@ -932,19 +858,13 @@ _YEARFRAC(start_date, end_date, [basis])_
 
 
 
-**where:** 
+**Parameters:**
 
+* `start_date`: A date that represents the start date.
 
+* `end_date`: A date that represents the end date.
 
-* start_date denotes a date that represents the start date.
-
-
-
-* end_date  denotes a date that represents the end date.
-
-
-
-* basis  denotes the type of day count basis to use.
+* `[basis]`: The type of day count basis to use.
 
 
 
