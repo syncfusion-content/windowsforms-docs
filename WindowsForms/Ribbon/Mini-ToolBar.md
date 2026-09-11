@@ -7,7 +7,7 @@ control: RibbonControlAdv
 documentation: ug
 ---
 
-# Mini ToolBar in Windows Forms Ribbon
+# Mini ToolBar in WinForms Ribbon Control
 
 Essential Tools comes with a MiniToolBar control with a look and feel similar to Microsoft Office 2007. It appears when the user selects and right-clicks on the text. It gives options to customize the selected text. It appears blurred initially, but becomes prominent when the mouse hovers over it.
 
@@ -19,7 +19,7 @@ Drag and drop a MiniToolBar from the toolbox.
 
 ![Mini-ToolBar_img2](Mini_Toolbar_Images/Mini-ToolBar_img2.jpg)
 
-## Assigning to the Control
+## Assigning to the WinForms Ribbon Control
 
 Set the MiniToolBar’s AssociatedControl property to the control to which this is to be associated.
 

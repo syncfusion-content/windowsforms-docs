@@ -7,7 +7,7 @@ control: RibbonControlAdv
 documentation: ug
 ---
 
-# About Syncfusion® Windows Forms Ribbon Control
+# About Syncfusion® WinForms Ribbon Control
 
 The [WinForms Ribbon Control](https://help.syncfusion.com/windowsforms/ribbon/overview) (ribbon menu) accommodates all the tools required for an application in a single, easy-to-navigate user interface like Microsoft Office. Its dynamic resizing, keyboard accessibility, and complete customization options help to organize an application. It provides an application UI like Microsoft Office with a 2007 style that contains an application menu and 2016 style that contains a backstage view.
 
@@ -29,10 +29,10 @@ The [WinForms Ribbon Control](https://help.syncfusion.com/windowsforms/ribbon/ov
 
 **Status Bar** :  Supports placing of StatusBar items at the bottom of the form.
 
-**Serialization** :  Provides the support to save and load the state of RibbonControlAdv.
+**Serialization** :  Provides the support to save and load the state of WinForms Ribbon Control.
 
 **ToolTip** : Supports displaying the information about the specific element and also supports the SuperTooltip, which are used to customize the default look and feel of all tooltips.
 
 **Touch support** : Supports a touch UI with plenty of interaction space. 
 
-**Localization** : Provides the support to localize the content in the Ribbon control which can be formatted according to culture.
+**Localization** : Provides the support to localize the content in the WinForms Ribbon Control which can be formatted according to culture.
