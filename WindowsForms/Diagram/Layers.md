@@ -9,22 +9,20 @@ documentation: ug
 
 # Layers in Windows Forms Diagram
 
-Layers are transparent sheets that can be added to the model and the objects are added to it. Layers allow to categorically arrange a set of nodes onto the [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram).
+Layers are transparent sheets that can be added to the model to organize diagram objects. Layers help arrange a set of nodes on the [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram).
 
 
 
 ![Diagram layers](Layers_images/Layers_img1.png)
 
 
-### Sample Layers
+## Sample Layers
 
-A layer organizes graphical objects into groups that share a common set of default properties and Z-order. Users can add any number of layers to the model and move objects between layers. Objects in a layer have the same Z-order, which can be relatively controlled with respect to other layers. 
+A layer organizes graphical objects into groups that share common default properties and Z-order. Users can add any number of layers to the model and move objects between layers.
 
-Layers are used when the user wants to separate text and links from other nodes. The nodes created can be added to their respective layers. The following code snippet demonstrates the creation of three layers and assigning them to the various nodes.
+Layers are useful when you want to separate text and links from other nodes. The nodes created can be added to their respective layers. One node can be assigned to multiple layers. A node is visible only when all of its assigned layers are visible; if one assigned layer is hidden, the node is not drawn.
 
-Layers are used to group nodes in collections and then show or hide layers with all nodes. One node can be assigned to many layers. Node will be visible, if all layers are visible; even if one layer is hidden, node will not be drawn.
-
-Programmatically layers can be implemented as follows.
+Programmatically, layers can be implemented as follows.
 
 
 {% tabs %}
@@ -95,11 +93,9 @@ sp.Layers.Add(layer3)
 
 ### Adding Layers
 
-Layers can be added to the model through LayersCollectionEditor, which can be opened by selecting the Layers Collection property.
+Layers can be added to the model through the LayersCollectionEditor, which can be opened by selecting the Layers Collection property.
 
-
-
-Layers
+### Layers
 
 <table>
 <tr>
@@ -113,7 +109,7 @@ Indicates whether the layer should be active or not. Default value is false.</td
 <tr>
 <td>
 Name</td><td>
-Indicates whether the unit should be inherited.</td></tr>
+Indicates the name of the layer.</td></tr>
 <tr>
 <td>
 Visible</td><td>
@@ -125,6 +121,33 @@ Indicates whether the objects on the layer should be visible.</td></tr>
 
 To add objects to a layer, that layer must be active. If an object is added to the model, it will be automatically added to that active layer. The layer can be made active only on setting the Enabled property of that layer. 
 
+For example, enable the layer before adding nodes to it:
+
+{% tabs %}
+{% highlight c# %}
+
+Layer layer0 = new Layer();
+diagram1.Model.Layers.Add(layer0);
+layer0.Enabled = true;
+
+CurveNode node = new CurveNode(new PointF[] { new PointF(10, 10), new PointF(40, 40) });
+diagram1.Model.AppendChild(node);
+node.Layers.Add(layer0);
+
+{% endhighlight %}
+{% highlight vb %}
+
+Dim layer0 As New Layer()
+diagram1.Model.Layers.Add(layer0)
+layer0.Enabled = True
+
+Dim node As New CurveNode(New PointF() {New PointF(10, 10), New PointF(40, 40)})
+diagram1.Model.AppendChild(node)
+node.Layers.Add(layer0)
+
+{% endhighlight %}
+{% endtabs %}
+
 The objects can be added to more than one layer by setting the Enabled property of all the layers to which it is added.
 
 To add an object only to a single layer, make sure that only a single layer is enabled at a time.
@@ -133,7 +156,7 @@ To add an object only to a single layer, make sure that only a single layer is e
 
 ## Object Visibility 
 
-The visibility of the layer can be handled to control the visibility of all the objects on that layer.
+The visibility of the layer can be handled to control the visibility of all the objects on that layer. Use Enabled to activate a layer and Visible to show or hide the layer contents.
 
 
 {% tabs %}
@@ -143,7 +166,6 @@ Layer layer0 = new Layer();
 this.diagram1.Model.Layers.Add(layer0);
 layer0.Enabled = true;
 layer0.Visible = true;
-layer1.Visible = true;
 
 {% endhighlight %}
 {% highlight vb %}
@@ -152,7 +174,6 @@ Dim layer0 As New Layer()
 Me.diagram1.Model.Layers.Add(layer0)
 layer0.Enabled = True
 layer0.Visible = True
-layer1.Visible = True
 
 {% endhighlight %}
 {% endtabs %}

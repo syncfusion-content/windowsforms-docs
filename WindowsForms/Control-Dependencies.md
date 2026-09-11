@@ -1115,10 +1115,10 @@ Syncfusion.Shared.Base
 </tr>
 <tr>
 <td>
-Syncfusion.Grid.Base<br/>
 Syncfusion.Grid.Windows<br/>
 Syncfusion.Shared.Base<br/>
-Syncfusion.Shared.Windows
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Telemetry
 </td>
 <td>
 Syncfusion.Grid.Windows
@@ -1127,7 +1127,7 @@ Syncfusion.Grid.Windows
 </table>
 
 ### Exporting GridControl to Excel, PDF and CSV
-For exporting grid contents to Excel, pdf or CSV, the following references needs to be added in your application.
+For exporting grid contents to Excel, PDF or CSV, the following references needs to be added in your application.
 
 <table>
 <tr>
@@ -1141,7 +1141,13 @@ For exporting grid contents to Excel, pdf or CSV, the following references needs
 <tr>
 <td>
 Syncfusion.GridConverter.Windows<br/>
-Syncfusion.XlsIO.Base
+Syncfusion.Compression.Base<br/>
+Syncfusion.Grid.Grouping.Windows<br/>
+Syncfusion.Grouping.Base<br/>
+Syncfusion.XlsIO.Base<br/>
+Syncfusion.Markdown<br/>
+Syncfusion.GridHelperClasses.Windows<br/>
+Syncfusion.Pdf.Base
 </td>
 <td>
 Syncfusion.GridExport.WinForms
@@ -1162,10 +1168,10 @@ Syncfusion.GridExport.WinForms
 </tr>
 <tr>
 <td>
-Syncfusion.Grid.Base<br/>
 Syncfusion.Grid.Windows<br/>
 Syncfusion.Shared.Base<br/>
-Syncfusion.Shared.Windows
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Telemetry
 </td>
 <td>
 Syncfusion.Grid.Windows
@@ -1187,13 +1193,12 @@ Syncfusion.Grid.Windows
 </tr>
 <tr>
 <td>
-Syncfusion.Grid.Base<br/>
 Syncfusion.Grid.Windows<br/>
 Syncfusion.Shared.Base<br/>
 Syncfusion.Shared.Windows<br/>
-Syncfusion.Grid.Grouping.Base<br/>
 Syncfusion.Grid.Grouping.Windows<br/>
-Syncfusion.Grouping.Base
+Syncfusion.Grouping.Base<br/>
+Syncfusion.Telemetry
 </td>
 <td>
 Syncfusion.Grid.Grouping.Windows
@@ -1202,7 +1207,7 @@ Syncfusion.Grid.Grouping.Windows
 </table>
 
 ### Exporting GridGroupingControl to Excel, PDF and CSV
-For exporting grid contents to Excel, pdf or CSV, the following references needs to be added in your application.
+For exporting grid contents to Excel, PDF or CSV, the following references needs to be added in your application.
 
 <table>
 <tr>
@@ -1216,7 +1221,11 @@ For exporting grid contents to Excel, pdf or CSV, the following references needs
 <tr>
 <td>
 Syncfusion.GridConverter.Windows<br/>
-Syncfusion.XlsIO.Base
+Syncfusion.Compression.Base<br/>
+Syncfusion.Markdown<br/>
+Syncfusion.XlsIO.Base<br/>
+Syncfusion.Pdf.Base<br/>
+Syncfusion.GridHelperClasses.Windows
 </td>
 <td>
 Syncfusion.GridExport.WinForms
@@ -1258,10 +1267,10 @@ Syncfusion.Shared.Base
 </tr>
 <tr>
 <td>
-Syncfusion.Grid.Base<br/>
 Syncfusion.Grid.Windows<br/>
 Syncfusion.Shared.Base<br/>
-Syncfusion.Shared.Windows
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Telemetry
 </td>
 <td>
 Syncfusion.Grid.Windows
@@ -1282,7 +1291,11 @@ Syncfusion.Grid.Windows
 </tr>
 <tr>
 <td>
-Syncfusion.Grid.Base<br/>Syncfusion.Grid.Windows<br/>Syncfusion.Shared.Base<br/>Syncfusion.Shared.Windows<br/></td>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Telemetry
+</td>
 <td>
 Syncfusion.Grid.Windows
 </td>
@@ -1323,7 +1336,11 @@ Syncfusion.Shared.Base
 </tr>
 <tr>
 <td>
-Syncfusion.Grouping.Base<br/>Syncfusion.Grouping.Windows<br/>Syncfusion.Shared.Base<br/>Syncfusion.Shared.Windows<br/></td>
+Syncfusion.Grouping.Base<br/>
+Syncfusion.Grouping.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows
+</td>
 <td>
 Syncfusion.Grouping.Windows
 </td>
@@ -2048,14 +2065,14 @@ Syncfusion.PivotTableExport.WinForms
 </tr>
 <tr>
 <td>
-Syncfusion.Grid.Base<br/>
+Syncfusion.PivotAnalysis.Windows<br/>
 Syncfusion.Grid.Windows<br/>
 Syncfusion.Linq.Base<br/>
 Syncfusion.PivotAnalysis.Base<br/>
 Syncfusion.Shared.Base<br/>
 Syncfusion.Shared.Windows<br/>
-Syncfusion.Tools.Windows
-
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Telemetry
 </td>
 <td>
 Syncfusion.PivotTable.WinForms
@@ -2063,7 +2080,8 @@ Syncfusion.PivotTable.WinForms
 </tr>
 </table>
 
-### Exporting PivotGrid to Excel, PDF and CSV
+### Exporting PivotGrid to Excel, PDF, Word and CSV
+For exporting grid contents to Excel, PDF, Word or CSV, the following references needs to be added in your application.
 
 <table>
 <tr>
@@ -2077,7 +2095,13 @@ Syncfusion.PivotTable.WinForms
 <tr>
 <td>
 Syncfusion.PivotConverter.Windows<br/>
-Syncfusion.XlsIO.Base
+Syncfusion.Compression.Base<br/>
+Syncfusion.DocIO.Base<br/>
+Syncfusion.OfficeChart.Base<br/>
+Syncfusion.Pdf.Base<br/>
+Syncfusion.PivotChart.Windows<br/>
+Syncfusion.XlsIO.Base<br/>
+Syncfusion.Markdown
 
 </td>
 <td>
@@ -2570,7 +2594,10 @@ Syncfusion.Core.WinForms<br/>
 Syncfusion.SfInput.WinForms<br/>
 Syncfusion.SfListView.WinForms<br/>
 Syncfusion.Data.WinForms<br/>
-Syncfusion.GridCommon.WinForms
+Syncfusion.GridCommon.WinForms<br/>
+Syncfusion.DataSource.WinForms<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Telemetry
 </td>
 <td>
 Syncfusion.SfDataGrid.WinForms
@@ -2579,7 +2606,7 @@ Syncfusion.SfDataGrid.WinForms
 </table>
 
 ### Exporting SfDataGrid to Excel, PDF and CSV
-For exporting grid contents to Excel, pdf or CSV, the following references needs to be added in your application.
+For exporting grid contents to Excel, PDF or CSV, the following references needs to be added in your application.
 
 <table>
 <tr>
@@ -2593,8 +2620,10 @@ For exporting grid contents to Excel, pdf or CSV, the following references needs
 <tr>
 <td>
 Syncfusion.SfDataGridConverter.WinForms<br/>
+Syncfusion.Compression.Base<br/>
 Syncfusion.XlsIO.Base<br/>
-Syncfusion.Pdf.Base
+Syncfusion.Pdf.Base<br/>
+Syncfusion.Markdown
 </td>
 <td>
 Syncfusion.DataGridExport.WinForms

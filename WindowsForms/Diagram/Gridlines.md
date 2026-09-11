@@ -9,19 +9,19 @@ documentation: ug
 
 # Diagram Grid in Windows Forms Diagram
 
-The [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) grid is drawn with evenly spaced points that provides a visual guidance to the user.  
+The [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) grid is drawn with evenly spaced points that provides visual guidance to the user.  
 
-#### Behavior
+## Behavior
 
-Draws a matrix of evenly spaced points in the view, and provides snap to the grid calculations.
+Draws a matrix of evenly spaced points in the view, and provides snap-to-grid calculations.
 
-#### Class Reference
+## Class Reference
 
-It is a property of Diagram.View class and its return type is _Syncfusion.Windows.Forms.Diagram.LayoutGrid_.
+It is a property of the Diagram.View class, and its return type is _Syncfusion.Windows.Forms.Diagram.LayoutGrid_.
 
 
 
-_Diagram Grid Properties_
+### Diagram Grid Properties
 
 <table>
 <tr>
@@ -47,7 +47,7 @@ Style used for dashed lines. It accepts System.Drawing.Drawing2D.DashStyle value
 <tr>
 <td>
 GridStyle</td><td>
-Gets or sets the appearance of the grid. It is GridStyle enumerator type value.</td></tr>
+Gets or sets the appearance of the grid. It accepts a GridStyle enumeration value.</td></tr>
 <tr>
 <td>
 HorizontalSpacing</td><td>
@@ -59,7 +59,7 @@ Indicates minimum spacing between grid points in device units. It accepts Float 
 <tr>
 <td>
 SnapToGrid</td><td>
-Adjust the node with nearest grid point. Specifies whether the snap to grid feature is enabled. It accepts Boolean value (true or false).</td></tr>
+Adjusts a node to the nearest grid point. Specifies whether the snap to grid feature is enabled. It accepts Boolean value (true or false).</td></tr>
 <tr>
 <td>
 VerticalSpacing</td><td>

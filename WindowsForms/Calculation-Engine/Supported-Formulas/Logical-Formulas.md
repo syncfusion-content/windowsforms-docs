@@ -179,6 +179,62 @@ _IFNA (Formula_value, value_if_na)_
 
 
 
+## LET
+
+
+
+The `LET` function assigns names to calculation results, which allows storing intermediate calculations, values, or define names inside a formula. This helps make formulas more readable and easier to maintain by breaking complex calculations into named parts.
+
+
+
+**Syntax:**
+
+
+
+_LET(name1, value1, [name2, value2], ..., calculation)_
+
+
+
+**Parameters:**
+
+
+
+* `name1` (required): The name to assign to the first value. Must be a valid name and not conflict with existing names in the workbook.
+
+
+
+* `value1` (required): The value or expression that the name is assigned to.
+
+
+
+* `name2, value2` (optional): Additional name-value pairs. You can define up to 126 name-value pairs in a single LET function.
+
+
+
+* `calculation` (required): The formula that uses the names defined in the LET function.
+
+
+
+**Remarks:**
+
+
+
+* Names defined in LET are local to that formula and cannot be used outside of it.
+
+
+
+* Names must follow Excel naming rules: they must start with a letter or underscore, and can contain letters, numbers, and underscores.
+
+
+
+* The same name cannot be defined more than once in a single LET function.
+
+
+
+* LET function helps improve formula performance by calculating values only once instead of multiple times in a complex formula.
+
+
+
 ## NOT
 
 
