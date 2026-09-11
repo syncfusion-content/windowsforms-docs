@@ -7,9 +7,9 @@ control: HTMLUI
 documentation: ug
 ---
 
-# Loading HTML in Windows Forms HTMLUI
+# Loading HTML in WinForms HTML Viewer
 
-HTML documents available at various resources can be easily loaded into the HTMLUI control. Some of the resources from where the HTML documents can be loaded are as follows.
+HTML documents available at various resources can be easily loaded into the WinForms HTML Viewer control. Some of the resources from where the HTML documents can be loaded are as follows.
 
 
 
@@ -21,7 +21,7 @@ HTML documents available at various resources can be easily loaded into the HTML
 
 
 
-An HTML document can be loaded into the HTMLUI control in two ways.
+An HTML document can be loaded into the WinForms HTML Viewer control in two ways.
 
 ## Loading as a startup document
 
@@ -32,7 +32,7 @@ There may be situations where the HTML document is to be loaded initially at sta
 
 
 
-Using the Properties window involves specifying the location of the Startup HTML file in the [StartupDocument](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html#Syncfusion_Windows_Forms_HTMLUI_HTMLUIControl_StartupDocument) property available within the properties window for the HTMLUI control or by clicking the link Load from file shown at the bottom of the properties window.
+Using the Properties window involves specifying the location of the Startup HTML file in the [StartupDocument](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html#Syncfusion_Windows_Forms_HTMLUI_HTMLUIControl_StartupDocument) property available within the properties window for the WinForms HTML Viewer control or by clicking the link Load from file shown at the bottom of the properties window.
 
 ![Set the location of startup html file](Loading-HTML_images/Loading-HTML_img1.png)
 
@@ -81,7 +81,7 @@ End Sub
 
 ### Startup file sample
 
-This sample demonstrates the implementation of Startup Document by using HTML file in HTMLUI.
+This sample demonstrates the implementation of Startup Document by using HTML file in WinForms HTML Viewer.
 
 ![Startup file loaded in HTMLUIControl](Loading-HTML_images/Loading-HTML_img3.jpeg)
 
@@ -109,7 +109,7 @@ The various ways of loading the document during the runtime from various resourc
 
 ### Loading the file from disk
 
-The HTML file that is located in the user's disk can be loaded into the HTMLUIControl. It is loaded by specifying the location of the file in the disk.
+The HTML file that is located in the user's disk can be loaded into the WinForms HTML Viewer Control. It is loaded by specifying the location of the file in the disk.
 
 {% tabs %}
 
@@ -145,7 +145,7 @@ Me.HtmluiControl1.LoadHTML(path)
 
 #### Load file from disk sample
 
-This sample demonstrates the implementation of Loading a file from Disk by using HTMLUI.
+This sample demonstrates the implementation of Loading a file from Disk by using WinForms HTML Viewer.
 
 ![Disk document loaded in HTMLUIContrl](Loading-HTML_images/Loading-HTML_img5.jpeg)
 
@@ -159,7 +159,7 @@ _…\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\HTMLUI.Windo
 
 ### As links from one HTML document to another
 
-The HTMLUI supports Link property. Links in HTML code are easily invoked in HTMLUI Control. The main document that contains links to other documents is loaded into the HTMLUI control. The linked document is loaded by clicking the respective link in the main document.
+The WinForms HTML Viewer supports Link property. Links in HTML code are easily invoked in the control. The main document that contains links to other documents is loaded into the control. The linked document is loaded by clicking the respective link in the main document.
 
 {% tabs %}
 
@@ -246,7 +246,7 @@ The following image shows file links that link to another HTML Document.
 
 #### File links sample
 
-This sample demonstrates how HTML files can be linked from one document to another by using HTMLUI.
+This sample demonstrates how HTML files can be linked from one document to another by using WinForms HTML Viewer.
 
 
 
@@ -262,7 +262,7 @@ _…\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\HTMLUI.Windo
 
 ### Loading the file from URI
 
-HTML contents can also be loaded from the URI (Uniform Resource Identifier). This is a great advantage of HTMLUI that it can be used for browsing purposes like popular web browsers.
+HTML contents can also be loaded from the URI (Uniform Resource Identifier). This is a great advantage of WinForms HTML Viewer that it can be used for browsing purposes like popular web browsers.
 
 {% tabs %}
 
@@ -296,7 +296,7 @@ A new URI has to be declared in the code with the path from which the URI has to
 
 ### Loading HTML which is in the form of text
 
-The HTML code sometimes can be directly written and stored as a string. The HTML code available in the form of string is loaded into the HTMLUI Control by using the LoadFromString method and the HTML contents will be displayed in the HTMLUI control.
+The HTML code sometimes can be directly written and stored as a string. The HTML code available in the form of string is loaded into the WinForms HTML Viewer Control by using the LoadFromString method and the HTML contents will be displayed in the control.
 
 {% tabs %}
 
@@ -356,7 +356,7 @@ Me.HtmluiControl1.LoadFromString(htmlCode)
 
 ### Load the file from resource
 
-The HTML file can be loaded as an Embedded Resource in the HTMLUI control. The procedure to be followed for making an HTML file as an embedded resource is discussed below.
+The HTML file can be loaded as an Embedded Resource in the WinForms HTML Viewer control. The procedure to be followed for making an HTML file as an embedded resource is discussed below.
 
 
 
@@ -458,7 +458,7 @@ The following image shows file loaded from an embedded resource.
 
 #### Load resource file sample
 
-This sample demonstrates the implementation of Loading Embedded Resource Files by using HTMLUI.
+This sample demonstrates the implementation of Loading Embedded Resource Files by using WinForms HTML Viewer.
 
 ![File loaded from embedded resource](Loading-HTML_images/Loading-HTML_img13.jpeg)
 

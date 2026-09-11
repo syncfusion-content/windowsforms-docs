@@ -7,9 +7,9 @@ control: HTMLUI
 documentation: ug
 ---
 
-# Scripting in Windows Forms HTMLUI control
+# Scripting in WinForms HTML Viewer control
 
-Essential<sup>®</sup> HTMLUI has extensive support to Scripts. Scripting involves creating self-contained documents. The concept behind this is to make the interface easier just by loading different HTML documents that contain the logic in themselves.
+Essential<sup>®</sup> WinForms HTML Viewer has extensive support to Scripts. Scripting involves creating self-contained documents. The concept behind this is to make the interface easier just by loading different HTML documents that contain the logic in themselves.
 
 {% tabs %}
 
@@ -101,9 +101,9 @@ script.UserControl.CustomControl.Text = "This is a sample for scripting";
 
 {% endtabs %}
 
-## HTMLUIScripting sample
+## WinForms HTML Viewer Scripting sample
 
-This sample illustrates the support of self-contained HTML documents in HTMLUI.
+This sample illustrates the support of self-contained HTML documents in WinForms HTML Viewer.
 
 ![Scripting_img1](Scripting_images/Scripting_img1.jpeg)
 

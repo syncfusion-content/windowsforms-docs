@@ -7,7 +7,7 @@ control: HTMLUI
 documentation: ug
 ---
 
-# Element Events in Windows Forms HTMLUI
+# Element Events in WinForms HTML Viewer
 
 Each HTML element in an HTML document is made to support events, such asClick, DoubleClick, MouseMove, KeyPress, and so on just like the Windows Forms controls.
 
@@ -150,7 +150,7 @@ End Sub
 
 {% endtabs %}
 
-Another important feature of the HTMLUI is its Bubbling Event architecture. With this architecture, a single common event handler defined for a particular event of the parent can be used for all the Child Elements bound to that parent while executing the same event.
+Another important feature of the WinForms HTML Viewer is its Bubbling Event architecture. With this architecture, a single common event handler defined for a particular event of the parent can be used for all the Child Elements bound to that parent while executing the same event.
 
 
 {% tabs %}
@@ -285,9 +285,9 @@ End Sub
 
 {% endtabs %}
 
-## HTMLUI bubbling events sample
+## WinForms HTML Viewer bubbling events sample
 
-This sample demonstrates the implementation of Bubbling Event architecture in HTMLUI.
+This sample demonstrates the implementation of Bubbling Event architecture in WinForms HTML Viewer.
 
 ![Element-Events_img1](Element-Events_images/Element-Events_img1.jpeg)
 
@@ -301,7 +301,7 @@ By default, this sample can be found under the following location:
 
 ...\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\HTMLUI.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-## HTMLUI element events sample
+## WinForms HTML Viewer element events sample
 
 This sample shows how element events are handled for creating effective user interfaces.
 

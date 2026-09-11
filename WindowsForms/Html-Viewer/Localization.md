@@ -7,16 +7,16 @@ control: HTMLUI
 documentation: ug
 ---
 
-# Localization in Windows Forms HTMLUI
+# Localization in WinForms HTML Viewer
 
-Localization is the process of making application multilingual by formatting the content according to the cultures. HTMLUIControl can be localized in any Languages, based on application requirement by following below steps.
+Localization is the process of making application multilingual by formatting the content according to the cultures. WinForms HTML Viewer Control can be localized in any Languages, based on application requirement by following below steps.
 
 Step 1: Need to initialize the [LocalizationProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.LocalizationProvider.html) class, inherited from the ILocalizationProvider interface, before the InitializeComponent call in the constructor of an application.
 
-Step 2: It will add the [GetLocalizedString](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCellModelBase.html#Syncfusion_Windows_Forms_Grid_GridCellModelBase_GetLocalizedString_System_String_) function in the LocalizationProvider class. It is needed to provide the Localization content, for the required components used in HTMLUIControl.
+Step 2: It will add the [GetLocalizedString](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCellModelBase.html#Syncfusion_Windows_Forms_Grid_GridCellModelBase_GetLocalizedString_System_String_) function in the LocalizationProvider class. It is needed to provide the Localization content, for the required components used in WinForms HTML Viewer Control.
 
 For example:
-Here, HTMLUIControl is localized in German Language.
+Here, WinForms HTML Viewer Control is localized in German Language.
 
 {% tabs %}
 
