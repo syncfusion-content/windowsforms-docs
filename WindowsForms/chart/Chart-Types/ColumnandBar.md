@@ -100,7 +100,7 @@ The supported values are defined in the [ChartColumnWidthMode](https://help.sync
 - [FixedWidthMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnWidthMode.html#Syncfusion_Windows_Forms_Chart_ChartColumnWidthMode_FixedWidthMode): Uses `Series.Points[i].YValues[1]` as the column width in pixels. If `Series.Points[i].YValues[1]` is not specified, the chart automatically calculates the width to fill the available space between columns.
 - [RelativeWidthMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnWidthMode.html#Syncfusion_Windows_Forms_Chart_ChartColumnWidthMode_RelativeWidthMode): Uses `Series.Points[i].YValues[1]` as the column width in units of the X-axis range.
 
-N> The `ColumnWidthMode` property also applies to `Column Range`, `Stacking Column`, `Stacked Column 100`, `Box and Whisker`, and `Candle charts`.
+N> The `ColumnWidthMode` property also applies to `Column Range`, `Bar`, `Stacking Bar`, `Stacked Bar 100`, `Stacking Column`, `Stacked Column 100`, `Box and Whisker`, and `Candle charts`.
 
 
 The following code sets ColumnWidthMode to FixedWidthMode and defines individual column widths for each data point using YValues[1].
@@ -166,7 +166,7 @@ chartControl.Series.Add(secondServer)
 The [ColumnFixedWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ColumnFixedWidth) property specifies the width of each column in pixels when the [ColumnWidthMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ColumnWidthMode) property is set to [FixedWidthMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColumnWidthMode.html#Syncfusion_Windows_Forms_Chart_ChartColumnWidthMode_FixedWidthMode). The default value is `20`.
 
 N>
-- The `ColumnFixedWidth` property also applies to `Column Range`, `Stacking Column`, `Stacked Column 100`, `Box and Whisker`, and `Candle charts`.
+- The `ColumnFixedWidth` property also applies to `Column Range`, `Bar`, `Stacking Bar`, `Stacked Bar 100`, `Stacking Column`, `Stacked Column 100`, `Box and Whisker`, and `Candle charts`.
 - If both the second Y-value and `ColumnFixedWidth` are specified, the second Y-value takes higher priority.
 
 The following code example demonstrates how to set a fixed width for chart columns.
