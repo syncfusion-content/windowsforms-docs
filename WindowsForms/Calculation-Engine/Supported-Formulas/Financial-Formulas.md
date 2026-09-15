@@ -983,7 +983,7 @@ _COUPPCD(settlement, maturity, frequency, [basis])_
 
 * `basis` (optional): The day count basis to use (default is 0: US (NASD) 30/360):
 
-  * `0 or omi`tted`: US (NASD) 30/360
+  * `0 or omitted`: US (NASD) 30/360
 
   * `1`: Actual/actual
 
@@ -1707,7 +1707,7 @@ The `PRICE` function returns the price per $100 face value of a security that pa
 
 * `basis` (optional): The type of day count basis to use:
 
-  * `0 or omi`tted`: US (NASD) 30/360
+  * `0 or omitted`: US (NASD) 30/360
 
   * `1`: Actual/actual
 
