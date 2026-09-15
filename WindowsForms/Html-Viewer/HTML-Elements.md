@@ -7,9 +7,9 @@ control: HTMLUI
 documentation: ug
 ---
 
-# HTML Elements in Windows Forms HTMLUI
+# HTML Elements in WinForms HTML Viewer
 
-HTMLUI supports various elements in an HTML document for rendering and presenting them to the user and also allows the user to dynamically access the elements to produce rich, customized user interfaces. Each HTML element defines properties and methods which can be used for customization.
+WinForms HTML Viewer supports various elements in an HTML document for rendering and presenting them to the user and also allows the user to dynamically access the elements to produce rich, customized user interfaces. Each HTML element defines properties and methods which can be used for customization.
 
 The property [SupportedEvents](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.AElementImpl.html#Syncfusion_Windows_Forms_HTMLUI_AElementImpl_SupportedEvents) and the method [MergeSupportedEvents](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.INPUTElementImpl.html#Syncfusion_Windows_Forms_HTMLUI_INPUTElementImpl_MergeSupportedEvents_System_String___) are common to most HTML elements.
 
@@ -111,7 +111,7 @@ MessageBox.Show("After Merging:" + Me.txt.SupportedEvents.Length.ToString())
 
 ## Element types
 
-The following are the various HTML elements supported by Essential<sup>®</sup> HTMLUI.
+The following are the various HTML elements supported by Essential<sup>®</sup> WinForms HTML Viewer.
 
 
 
@@ -228,7 +228,7 @@ The B element is responsible for formatting the specified text in bold style. Th
 
 ## BODY element
 
-The BODY element forms the main section in the HTMLUI because this element contains all the other elements and details regarding their position and properties. The [BODYElementImpl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.BODYElementImpl.html) class contains the properties and methods for this element.
+The BODY element forms the main section in the WinForms HTML Viewer because this element contains all the other elements and details regarding their position and properties. The [BODYElementImpl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.BODYElementImpl.html) class contains the properties and methods for this element.
 
 ## BR - Break element
 
@@ -436,7 +436,7 @@ Me.txt.UserControl.CustomControl.Text = "This is a textBox"
 
 ## LI - List element
 
-The LIST element is used to define a list item. The [LIElementImpl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.LIElementImpl.html) class is used to determine the properties and methods for this element. There are two types of lists that are supported by HTMLUI.
+The LIST element is used to define a list item. The [LIElementImpl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.LIElementImpl.html) class is used to determine the properties and methods for this element. There are two types of lists that are supported by WinForms HTML Viewer.
 
 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How To Get an Object For the Control | Syncfusion®
-description: Learn how to how To Get an Object For the Control in Syncfusion Windows Forms Html Viewer (HTMLUI) control.
+description: Learn how to Get an Object For the Control in Syncfusion Windows Forms Html Viewer (HTMLUI) control.
 platform: windowsforms
 control: HTMLUIControl
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # How To Get an Object For the Control
 
-You can make use of the [GetControlByElement](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.InputHTML.html#Syncfusion_Windows_Forms_HTMLUI_InputHTML_GetControlByElement_Syncfusion_Windows_Forms_HTMLUI_IHTMLElement_) method of the InputHTML Interface to get an object for the control present in an HTML element in the HTMLUI control. If the HTML element does not contain any control in it, it returns a null value, by default.
+You can make use of the [GetControlByElement](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.InputHTML.html#Syncfusion_Windows_Forms_HTMLUI_InputHTML_GetControlByElement_Syncfusion_Windows_Forms_HTMLUI_IHTMLElement_) method of the InputHTML Interface to get an object for the control present in an HTML element in the WinForms HTML Viewer control. If the HTML element does not contain any control in it, it returns a null value, by default.
 
 {% tabs %}
 
