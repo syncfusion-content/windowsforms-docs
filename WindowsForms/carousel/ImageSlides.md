@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: ImageSlides in Windows Forms Carousel | Syncfusion®
 description: ImageSlides support enables displaying images in Carousel using image collections, image lists, and file-based sources.
@@ -9,7 +9,7 @@ documentation: ug
 
 # ImageSlides in Windows Forms Carousel
 
-[ImageSlides](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Carousel.html#Syncfusion_Windows_Forms_Tools_Carousel_ImageSlides) is a dedicative property for adding and displaying images in the Carousel control, and it also provides several customization options.
+[ImageSlides](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Carousel.html#Syncfusion_Windows_Forms_Tools_Carousel_ImageSlides) is a dedicative property for adding and displaying images in the WinForms Carousel control, and it also provides several customization options.
 
 {% tabs %}
 
@@ -27,9 +27,9 @@ Me.carousel1.ImageSlides = True
 
 {% endtabs %}
 
-## Adding images to the carousel control
+## Adding images to the WinForms Carousel control
 
-You can add images to the Carousel control only when the [ImageSlides](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Carousel.html#Syncfusion_Windows_Forms_Tools_Carousel_ImageSlides) property is `true`. You can populate images in three different ways:
+You can add images to the WinForms Carousel control only when the [ImageSlides](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Carousel.html#Syncfusion_Windows_Forms_Tools_Carousel_ImageSlides) property is `true`. You can populate images in three different ways:
 
 * Through a collection named [ImageListCollection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Carousel.html#Syncfusion_Windows_Forms_Tools_Carousel_ImageListCollection).
 * Through [image lists](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Carousel.html#Syncfusion_Windows_Forms_Tools_Carousel_ImageList).

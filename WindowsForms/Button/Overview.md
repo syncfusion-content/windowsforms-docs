@@ -9,11 +9,11 @@ documentation: ug
 
 # About Syncfusion® Windows Forms Button (SfButton) Control
 
-The SfButton is an advanced button control capable of displaying text and image with various customizations. It provide options to customize the text, image, border, and appearance in all states of the button.
+The WinForms Button is an advanced button control capable of displaying text and image with various customizations. It provide options to customize the text, image, border, and appearance in all states of the button.
 
 ## Key Features
 
-Following are the key features of the SfButton:
+Following are the key features of the WinForms Button:
 
 * Appearance: Supports customizing the appearance in all button states (hover, pressed, focused, and disabled states).
 
@@ -21,7 +21,7 @@ Following are the key features of the SfButton:
 
 * Background image: Supports displaying the image in the background of the button.
 
-* Rich text:  Supports displaying the rich text inside the SfButton.
+* Rich text:  Supports displaying the rich text inside the WinForms Button.
 
 * Wrap text and trimming: Supports wrapping and trimming the button text.
 
@@ -31,42 +31,42 @@ Following are the key features of the SfButton:
 
 Syncfusion<sup>®</sup> WinForms suite comes up with the following different buttons:
 
-* [SfButton](https://www.syncfusion.com/winforms-ui-controls/button)
+* [WinForms Button](https://www.syncfusion.com/winforms-ui-controls/button)
 * [ButtonAdv](https://help.syncfusion.com/wpf/button/overview)
-* [ButtonEdit](https://www.syncfusion.com/winforms-ui-controls/buttonedit)
-* [ToggleButton](https://www.syncfusion.com/winforms-ui-controls/toggle-button)
-* [SplitButton](https://www.syncfusion.com/winforms-ui-controls/split-button)
+* [WinForms ButtonEdit](https://www.syncfusion.com/winforms-ui-controls/buttonedit)
+* [WinForms Toggle Button](https://www.syncfusion.com/winforms-ui-controls/toggle-button)
+* [WinForms Split Button](https://www.syncfusion.com/winforms-ui-controls/split-button)
 
-### SfButton
+### WinForms Button
 
-[SfButton](https://help.syncfusion.com/windowsforms/button/overview) is an advanced button control capable of displaying text and image with various customizations. This provides options to customize the text, image, border, and appearance in all states of the button.
+[WinForms Button](https://help.syncfusion.com/windowsforms/button/overview) is an advanced button control capable of displaying text and image with various customizations. This provides options to customize the text, image, border, and appearance in all states of the button.
 
 ### ButtonAdv
 
 [ButtonAdv](https://help.syncfusion.com/windowsforms/classic/button/overview) is an advanced button control capable of displaying images with different alignments and various border styles. This can be configured in any predefined [ButtonTypes](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ButtonAdv.html#Syncfusion_Windows_Forms_ButtonAdv_ButtonType) such as Calculator, Up, Down, and so on. This can also afford XP or Office style.
 
-### ButtonEdit
+### WinForms ButtonEdit
 
-The [Button Edit](https://help.syncfusion.com/windowsforms/buttonedit/overview) control embeds a text box control with collection of button controls that can be customized to create many commonly used interfaces such as file or folder browser or drop-down text control. You can also implement file picker and folder browser.
+The [WinForms ButtonEdit](https://help.syncfusion.com/windowsforms/buttonedit/overview) control embeds a text box control with collection of button controls that can be customized to create many commonly used interfaces such as file or folder browser or drop-down text control. You can also implement file picker and folder browser.
 
-### ToggleButton
+### WinForms Toggle Button
 
-The [ToggleButton](https://help.syncfusion.com/windowsforms/toggle-button/overview) control allows you to toggle between two states (active and inactive) opposite to each other in terms of behavior.
+The [WinForms Toggle Button](https://help.syncfusion.com/windowsforms/toggle-button/overview) control allows you to toggle between two states (active and inactive) opposite to each other in terms of behavior.
 
-### SplitButton
+### WinForms Split Button
 
-The [SplitButton](https://help.syncfusion.com/windowsforms/split-button/overview) control allows you to create drop-down button-like interface that is a combination of regular button and drop-down list. You can use this control when you need a single control with multiple options. For example, you can use this control to create a button to set font and list available in the font family of drop-down list.
+The [WinForms Split Button](https://help.syncfusion.com/windowsforms/split-button/overview) control allows you to create drop-down button-like interface that is a combination of regular button and drop-down list. You can use this control when you need a single control with multiple options. For example, you can use this control to create a button to set font and list available in the font family of drop-down list.
 
-### SfButton vs ButtonAdv
+### WinForms Button vs ButtonAdv
 
-Both SfButton and ButtonAdv controls are used for same purposes. But, the SfButton control offers rich set of features over ButtonAdv. To customize the appearance of all button states, use the SfButton control. To use the predefined button types such as Calculator, Up, Down, and so on, use the ButtonAdv control. Comparatively, the performance of SfButton control is better than ButtonAdv control.
+Both WinForms Button and ButtonAdv controls are used for same purposes. But, the WinForms Button control offers rich set of features over ButtonAdv. To customize the appearance of all button states, use the WinForms Button control. To use the predefined button types such as Calculator, Up, Down, and so on, use the ButtonAdv control. Comparatively, the performance of WinForms Button control is better than ButtonAdv control.
 
-You can see some of the specific API differences between ButtonAdv and SfButton as follows.
+You can see some of the specific API differences between ButtonAdv and WinForms Button as follows.
 
 <table>
 <tr>
 <td>
-{{'**SfButton**'| markdownify }}
+{{'**WinForms Button**'| markdownify }}
 </td>
 <td>
 {{'**ButtonAdv**'| markdownify }}
@@ -176,7 +176,7 @@ Applies visual styles for button.
 </tr>
 </table>
 
-The following list of features are in SfButton over ButtonAdv.
+The following list of features are in WinForms Button over ButtonAdv.
 
 <table>
 <tr>
@@ -211,7 +211,7 @@ Loads the {{'[GIF](https://help.syncfusion.com/windowsforms/button/appearance#an
 Rich text
 </td>
 <td>
-Displays the rich text inside SfButton by enabling the {{'[AllowRichText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_AllowRichText)'| markdownify }} property. This can be added to the {{'[Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_Text)'| markdownify }} property.
+Displays the rich text inside WinForms Button by enabling the {{'[AllowRichText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_AllowRichText)'| markdownify }} property. This can be added to the {{'[Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_Text)'| markdownify }} property.
 
 </td>
 </tr>
@@ -229,7 +229,7 @@ Adjusts space between image and text. Refer to {{'[here](https://help.syncfusion
 Wrap Text
 </td>
 <td>
-Wraps the text by using the {{'[WrapText](https://help.syncfusion.com/windowsforms/button/button-content#wrapping-the-text)'| markdownify }} property in SfButton.
+Wraps the text by using the {{'[WrapText](https://help.syncfusion.com/windowsforms/button/button-content#wrapping-the-text)'| markdownify }} property in WinForms Button.
 
 </td>
 </tr>
