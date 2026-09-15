@@ -509,4 +509,4 @@ chartControl.Series(0).ConfigItems.StepItem.Inverted = True
 ![Step Line Inverted in Windows Forms](../Chart-Types_images/windowsforms-step-line-inverted.png)
 
 ## See also
-- [How to display errorbars in WinForms Chart](https://support.syncfusion.com/kb/article/1185/how-to-display-errorbars-in-winforms-chart)
+- [How to display error bars in WinForms Chart](https://support.syncfusion.com/kb/article/1185/how-to-display-errorbars-in-winforms-chart)
