@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: MDI Customization in Windows Forms Form control | Syncfusion®
 description: MDI Customization in Form (SfForm) supports creating MDI applications, managing child forms, customizing appearance, and handling active windows.
@@ -9,7 +9,7 @@ documentation: ug
 
 # MDI Customization in Windows Forms Form (SfForm)
 
-Multiple Document Interface (MDI) applications allow displaying multiple documents (or forms) in an application at the same time. An MDI parent is a form that contains MDI child windows, which are the sub-windows. A form can be changed to an MDI parent by enabling the [IsMDIContainer](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.form.ismdicontainer?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) property.
+Multiple Document Interface (MDI) applications allow displaying multiple documents (or forms) in an application at the same time. An MDI parent is a form that contains MDI child windows, which are the sub-windows. A WinForms Form can be changed to an MDI parent by enabling the [IsMDIContainer](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.form.ismdicontainer?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) property.
 
 ## Adding MDI child form
 

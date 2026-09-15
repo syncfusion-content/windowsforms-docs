@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Themes in Windows Forms Form control | Syncfusion®
 description: Themes in Form (SfForm) provide built-in visual styles and theme management options to customize the appearance of application windows.
@@ -9,7 +9,7 @@ documentation: ug
 
 # Themes in Windows Forms Form (SfForm)
 
-[Windows Forms Form](https://www.syncfusion.com/winforms-ui-controls/form) (SfForm) offers the following six built-in themes for professional representation:
+[Windows Forms Form](https://www.syncfusion.com/winforms-ui-controls/form) (WinForms Form) offers the following six built-in themes for professional representation:
 
 * Office2016Colorful
 * Office2016White
@@ -18,14 +18,14 @@ documentation: ug
 * Office2019Colorful
 * HighContrastBlack
 
-Themes can be applied to `SfForm` by following these steps:
+Themes can be applied to `WinForms Form` by following these steps:
 
 * `Load theme assembly`
 * `Apply theme`
 
 ## Load theme assembly
 
-To set a theme for `SfForm`, the following assemblies should be added as references in any application.
+To set a theme for `WinForms Form`, the following assemblies should be added as references in any application.
 
 <table>
 <tr>
@@ -65,7 +65,7 @@ HighContrastBlack
 </tr>
 </table>
 
-Before applying a theme to `SfForm`, the required theme assembly should be loaded.
+Before applying a theme to `WinForms Form`, the required theme assembly should be loaded.
 
 {% tabs %}
 {% highlight c# %}
@@ -114,7 +114,7 @@ End Class
 
 ## Apply theme
 
-The appearance of `SfForm` can be changed using the [ThemeName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfForm.html#Syncfusion_WinForms_Controls_SfForm_ThemeName) property of `SfForm`.
+The appearance of `WinForms Form` can be changed using the [ThemeName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfForm.html#Syncfusion_WinForms_Controls_SfForm_ThemeName) property.
 
 ### Office2016Colorful
 

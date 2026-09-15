@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Configure Color Schemes in Windows Forms Office2007Form | Syncfusion®
 description: Color schemes support Office-inspired themes, managed colors, Aero theme integration, and background color customization.
@@ -9,7 +9,7 @@ documentation: ug
 
 # Configure Color Schemes in Windows Forms Office2007Form
 
-Office2007Form supports following office color schemes which can be edited through the `ColorScheme` property.
+WinForms Office 2007 Form supports following office color schemes which can be edited through the `ColorScheme` property.
 
 * Blue
 * Silver
@@ -70,9 +70,9 @@ Office2007Colors.ApplyManagedColors(this, Color.DarkMagenta);
 ![Winforms showing colorscheme managed applied in office2007form](Color-Schemes_images/Managed.png)
 
 
-## Background color for Office2007Form
+## Background color for WinForms Office 2007 Form
 
-The background color of the Office2007Form can be same, as the color scheme applied to the Form. `UseOffice2007SchemeBackColor` property has to be `true`, to make this effective.
+The background color of the WinForms Office 2007 Form can be same, as the color scheme applied to the Form. `UseOffice2007SchemeBackColor` property has to be `true`, to make this effective.
 
 {% tabs %}
 
@@ -94,9 +94,9 @@ Me.UseOffice2007SchemeBackColor = True
 
 ## Applying color schemes
 
-Office2007Form now have the ability to apply or not to apply AeroTheme on Forms with a glassy effect. This can be done by [ApplyAeroTheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Form.html#Syncfusion_Windows_Forms_Office2007Form_ApplyAeroTheme) property.
+WinForms Office 2007 Form now have the ability to apply or not to apply AeroTheme on Forms with a glassy effect. This can be done by [ApplyAeroTheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Form.html#Syncfusion_Windows_Forms_Office2007Form_ApplyAeroTheme) property.
 
-AeroTheme support is available for Office2007Form when used in Vista machine. Earlier, ColorSchemes cannot be applied to Office2007Form when AeroTheme was enabled. Now ColorSchemes can be applied by disabling AeroTheme on Office2007Form.
+AeroTheme support is available for WinForms Office 2007 Form on Vista machines. Previously, ColorSchemes could not be applied when AeroTheme was enabled. Now, ColorSchemes can be applied by disabling AeroTheme.
 
 {% tabs %}
 

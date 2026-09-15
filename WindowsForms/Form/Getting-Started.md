@@ -13,9 +13,9 @@ documentation: ug
 
 Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sfform) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. 
 
-## Converting Standard Form into SfForm
+## Converting Standard Form into SfForm (WinForms Form)
 
-The default form can be changed into SfForm by the following steps:
+The default form can be changed into SfForm (WinForms Form) by the following steps:
 
 **Step 1:** Create a new Windows Forms Application in Visual Studio.
 
@@ -38,7 +38,7 @@ Imports Syncfusion.WinForms.Controls
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-**Step 4:** Change the base class of your form from `System.Windows.Forms.Form` to `SfForm`.
+**Step 4:** Change the base class of your form from `System.Windows.Forms.Form` to `SfForm (WinForms Form)`.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -68,7 +68,7 @@ End Class
 
 ## Title Bar Customization
 
-By default, the SfForm loads with the default appearance, which can be customized by using the [TitleBarStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo.html) property. It contains all the settings for the appearance of the title bar.
+By default, the WinForms Form loads with the default appearance, which can be customized by using the [TitleBarStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo.html) property. It contains all the settings for the appearance of the title bar.
 
 
 {% tabs %}
@@ -119,7 +119,7 @@ Me.Style.TitleBar.MinimizeButtonPressedBackColor = Color.Gray
 
 ## Border Customization
 
-The borders of the form can be customized by using the [Style.Border](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.FormVisualStyle.html#Syncfusion_WinForms_Controls_Styles_FormVisualStyle_Border) and [Style.InactiveBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.FormVisualStyle.html#Syncfusion_WinForms_Controls_Styles_FormVisualStyle_InactiveBorder) properties.
+The borders of the WinForms Form can be customized by using the [Style.Border](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.FormVisualStyle.html#Syncfusion_WinForms_Controls_Styles_FormVisualStyle_Border) and [Style.InactiveBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.FormVisualStyle.html#Syncfusion_WinForms_Controls_Styles_FormVisualStyle_InactiveBorder) properties.
 
 
 {% tabs %}
@@ -138,7 +138,7 @@ Me.Style.InactiveBorder = New Pen(Color.Gray, 5)
 
 ## Loading User Control to the Title Bar
 
-You can load any user control to the title bar of the SfForm instead of the title bar text by using the [TitleBarTextControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfForm.html#Syncfusion_WinForms_Controls_SfForm_TitleBarTextControl) property.
+You can load any user control to the title bar of the WinForms Form instead of the title bar text by using the [TitleBarTextControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfForm.html#Syncfusion_WinForms_Controls_SfForm_TitleBarTextControl) property.
 
 
 {% tabs %}

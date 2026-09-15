@@ -9,11 +9,11 @@ documentation: ug
 
 # About Syncfusion® Windows Forms SfForm Control
 
-The `SfForm` is a window control for completely customizing the appearance of a form and loading a custom user interface in the title bar.
+The `WinForms Form` is a window control for completely customizing the appearance of a form and loading a custom user interface in the title bar.
 
 ## Key Features
 
-The key features of the SfForm are as follows:
+The key features of the WinForms Form are as follows:
 
 * `Title bar customization`: Customizes the appearance of the title bar and loads a user control into the title bar.
 
@@ -24,35 +24,35 @@ The key features of the SfForm are as follows:
 
 Syncfusion<sup>®</sup> WinForms suite comes up with the following different forms:
 
-* [SfForm](https://www.syncfusion.com/winforms-ui-controls/form)
-* [MetroForm](https://www.syncfusion.com/winforms-ui-controls/metroform)
-* [Office2007Form](https://www.syncfusion.com/winforms-ui-controls/office2007form)
+* [WinForms Form](https://www.syncfusion.com/winforms-ui-controls/form)
+* [WinForms MetroForm](https://www.syncfusion.com/winforms-ui-controls/metroform)
+* [WinForms Office2007Form](https://www.syncfusion.com/winforms-ui-controls/office2007form)
 
-### SfForm
+### WinForms Form
 
-The [SfForm](https://help.syncfusion.com/windowsforms/form/overview) window control allows you to completely customize its appearance. It supports loading a custom user interface in the title bar, adding MDI child forms, and customizing the appearance of child forms.
+The [WinForms Form](https://help.syncfusion.com/windowsforms/form/overview) window control allows you to completely customize its appearance. It supports loading a custom user interface in the title bar, adding MDI child forms, and customizing the appearance of child forms.
 
-### MetroForm
+### WinForms MetroForm
 
-[MetroForm](https://help.syncfusion.com/windowsforms/metro-form/overview) is used to create a customizable window for the end user's application. It supports various built-in skins and lets the user control its behavior and appearance.
+[WinForms MetroForm](https://help.syncfusion.com/windowsforms/metro-form/overview) is used to create a customizable window for the end user's application. It supports various built-in skins and lets the user control its behavior and appearance.
 
-### Office2007Form
+### WinForms Office2007Form
 
-[Office2007Form](https://help.syncfusion.com/windowsforms/office2007form/overview) is an advanced standard form that offers a Microsoft Office2007 like UI and appearance. It supports various built-in color schemes and customization options to control its behavior and appearance.
+[WinForms Office2007Form](https://help.syncfusion.com/windowsforms/office2007form/overview) is an advanced standard form that offers a Microsoft Office2007 like UI and appearance. It supports various built-in color schemes and customization options to control its behavior and appearance.
 
-### SfForm vs MetroForm
+### WinForms Form vs WinForms MetroForm
 
-Both SfForm and MetroForm controls are used for the same purpose. However, the SfForm control offers a rich set of features over MetroForm. For caption images and labels, use MetroForm. For custom user controls in the title bar and customizing the appearance of the form and MDI forms, use SfForm.
+Both WinForms Form and WinForms MetroForm controls are used for the same purpose. However, the WinForms Form control offers a rich set of features over WinForms MetroForm. For caption images and labels, use WinForms MetroForm. For custom user controls in the title bar and customizing the appearance of the form and MDI forms, use WinForms Form.
 
-The list of some specific API differences between SfForm and MetroForm are as follows.
+The list of some specific API differences between WinForms Form and WinForms MetroForm are as follows.
 
 <table>
 <tr>
 <td>
-{{'**SfForm**'| markdownify }}
+{{'**WinForms Form**'| markdownify }}
 </td>
 <td>
-{{'**MetroForm**'| markdownify }}
+{{'**WinForms MetroForm**'| markdownify }}
 </td>
 <td>
 {{'**Description**'| markdownify }}
@@ -116,7 +116,7 @@ Displays the icon that can be aligned horizontally or vertically.
 </tr>
 </table>
 
-The list of features in SfForm over MetroForm are as follows.
+The list of features in WinForms Form over WinForms MetroForm are as follows.
 
 <table>
 <tr>
@@ -132,7 +132,7 @@ The list of features in SfForm over MetroForm are as follows.
 Loading UserControl to TitleBar
 </td>
 <td>
-Loads any user control in the title bar instead of text by using the {{'[TitleBarTextControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfForm.html#Syncfusion_WinForms_Controls_SfForm_TitleBarTextControl)'| markdownify }} property. Size of the user control should be set properly to fit the control within the title bar. To learn more about loading user control to TitleBar in SfForm, refer to {{'[here](https://help.syncfusion.com/windowsforms/form/titlebar#loading-user-control-to-the-title-bar)'| markdownify }}.
+Loads any user control in the title bar instead of text by using the {{'[TitleBarTextControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfForm.html#Syncfusion_WinForms_Controls_SfForm_TitleBarTextControl)'| markdownify }} property. Size of the user control should be set properly to fit the control within the title bar. To learn more about loading user control to TitleBar in WinForms Form, refer to {{'[here](https://help.syncfusion.com/windowsforms/form/titlebar#loading-user-control-to-the-title-bar)'| markdownify }}.
 
 </td>
 </tr>
@@ -141,7 +141,7 @@ Loads any user control in the title bar instead of text by using the {{'[TitleBa
 Border customization
 </td>
 <td>
-Sets the active and inactive border colors by using the {{'[Style.Border](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.FormVisualStyle.html#Syncfusion_WinForms_Controls_Styles_FormVisualStyle_Border)'| markdownify}} and {{'[Style.InActiveBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.FormVisualStyle.html#Syncfusion_WinForms_Controls_Styles_FormVisualStyle_InactiveBorder)'| markdownify }} properties. To learn more about border customization in SfForm, refer to {{'[here](https://help.syncfusion.com/windowsforms/form/formcustomization#form-border)'| markdownify }}.
+Sets the active and inactive border colors by using the {{'[Style.Border](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.FormVisualStyle.html#Syncfusion_WinForms_Controls_Styles_FormVisualStyle_Border)'| markdownify}} and {{'[Style.InActiveBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.FormVisualStyle.html#Syncfusion_WinForms_Controls_Styles_FormVisualStyle_InactiveBorder)'| markdownify }} properties. To learn more about border customization in WinForms Form, refer to {{'[here](https://help.syncfusion.com/windowsforms/form/formcustomization#form-border)'| markdownify }}.
 
 </td>
 </tr>
@@ -150,7 +150,7 @@ Sets the active and inactive border colors by using the {{'[Style.Border](https:
 Rich text formatting
 </td>
 <td>
-Displays the rich text inside the title bar by enabling the {{'[AllowRichText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo.html#Syncfusion_WinForms_Controls_Styles_TitleBarStyleInfo_AllowRichText)'| markdownify }} property. To learn more about rich text formatting in SfForm, refer to {{'[here](https://help.syncfusion.com/windowsforms/form/titlebar#rich-text-formatting)'| markdownify}}.
+Displays the rich text inside the title bar by enabling the {{'[AllowRichText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo.html#Syncfusion_WinForms_Controls_Styles_TitleBarStyleInfo_AllowRichText)'| markdownify }} property. To learn more about rich text formatting in WinForms Form, refer to {{'[here](https://help.syncfusion.com/windowsforms/form/titlebar#rich-text-formatting)'| markdownify}}.
 
 </td>
 </tr>
