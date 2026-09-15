@@ -335,8 +335,7 @@ public partial class Form1 : Form
             const long MaxFileSize = 10L * 1024 * 1024;
             if (fi.Length > MaxFileSize)
             {
-                ShowToastNotification(ToastNotificationStatus.Error,
-                    $"File size exceeds 10 MB limit. ({FormatFileSize(fi.Length)})");
+                ShowToastOptions(ToastSeverity.Error, $"File size exceeds 10 MB limit. ({FormatFileSize(fi.Length)})");
                 return;
             }
 
@@ -351,8 +350,7 @@ public partial class Form1 : Form
                 FilePreviewIcon = null
             };
 
-            ShowToastNotification(ToastNotificationStatus.Success,
-                "✅ Uploaded successfully.");
+            ShowToastOptions(ToastSeverity.Success, "Uploades successfully.");
 
             sfaiAssistView1.Attachments.Add(attachment);
         }
@@ -387,6 +385,8 @@ public partial class Form1 : Form
 
     public void Chat_PromptRequest(object sender, PromptRequestEventArgs e)
     {
+        // Attachment handling could be added here if needed.
+        // For example, you might retrieve the attachment and pass its content as a message to the AI.
         e.Handled = true;
         var textMessage = e.Message as TextMessage;
         viewModel.Chats.Add(textMessage);
@@ -415,15 +415,13 @@ Use toast notifications to confirm upload outcomes, surface validation errors, o
 
 {% highlight c# %}
 
-private void ShowToastNotification(ToastNotificationStatus status, string message)
+private void ShowToastOptions(ToastSeverity status, string message)
 {
-    sfaiAssistView1.Notification = new ToastNotificationItem
+    sfaiAssistView1.ShowNotification(new ToastOptions
     {
-        Status = status,
-        Message = message,
-        CreatedAt = DateTime.Now,
-        Icon = null
-    };
+        Severity = status,
+        Message = message
+    });
 }
 
 {% endhighlight %}
