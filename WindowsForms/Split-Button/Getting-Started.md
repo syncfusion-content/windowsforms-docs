@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Windows Forms SplitButton
 
-This section briefly describes how to create a new Windows Forms project in Visual Studio and add **"SplitButton"** with it's basic functionalities.
+This section briefly describes how to create a new Windows Forms project in Visual Studio and add **"WinForms Split Button"** with it's basic functionalities.
 
 ## Assembly deployment
 
@@ -17,9 +17,9 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 [Check here](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to find more details on how to install nuget packages in Windows Forms application. 
 
-## Adding a SplitButton control through designer
+## Adding a WinForms Split Button control through designer
 
-**Step 1**: Create a new Windows Forms application in Visual Studio. Drag and drop the SplitButton from toolbox into form design view. The following dependent assemblies will be added automatically.
+**Step 1**: Create a new Windows Forms application in Visual Studio. Drag and drop the WinForms Split Button from toolbox into form design view. The following dependent assemblies will be added automatically.
 
         * Syncfusion.Grid.Base
         * Syncfusion.Grid.Windows
@@ -32,7 +32,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 ![WindowsForms Split Button dependency assembly reference](getting-started_images/windowsforms-split-button-dependecy-assembly-reference.png)
 
-**Step 2**: Set the desired properties for **"SplitButton"** control using the **"Properties"** dialog window. Similarly you can add the items for the SplitButton dropdown using **"DropDownItem"** property. Here, we have illustrated a simple example, in which we are adding countries names as dropdown items to the control.
+**Step 2**: Set the desired properties for **"WinForms Split Button"** control using the **"Properties"** dialog window. Similarly you can add the items for the WinForms Split Button dropdown using **"DropDownItem"** property. Here, we have illustrated a simple example, in which we are adding countries names as dropdown items to the control.
 
 ![WindowsForms Split Button properties pane](getting-started_images/windowsforms-split-button-properties-pane.png)
 
@@ -45,7 +45,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 ![WindowsForms Split Button through designer](getting-started_images/windowsforms-split-button-through-designer.png)
 
 
-## Adding a SplitButton control through code
+## Adding a WinForms Split Button control through code
 
 **Step 1**: Create a new Windows Forms application in Visual Studio. Add the following required assembly references and namespace to the project.  
 
@@ -78,7 +78,7 @@ Imports Syncfusion.Windows.Forms.Tools
 ![WindowsForms Split Button adding through code](getting-started_images/windowsforms-split-button-adding-through-code.png)
 
 
-**Step 2**: In Form1.cs, create an instance of **"SplitButton"** control and add in to the form. Also you can customize the SplitButton properties using the following code.
+**Step 2**: In Form1.cs, create an instance of **"WinForms Split Button"** control and add in to the form. Also you can customize the WinForms Split Button properties using the following code.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -128,7 +128,7 @@ End Sub
 
 ### Adding and removing item to dropdown list
 
-In SplitButton, we can add or remove items using **Add** and **Remove** methods of the **DropDownItems** **SplitButtonItemsCollection** property. The following code illustrates how to add and remove items in SplitButton.
+In WinForms Split Button, we can add or remove items using **Add** and **Remove** methods of the **DropDownItems** **SplitButtonItemsCollection** property. The following code illustrates how to add and remove items in WinForms Split Button.
 
 {% tabs %}
 

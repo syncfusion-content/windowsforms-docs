@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Appearance Customization in Windows Forms Split Button | Syncfusion
 description: Appearance customization supports visual styles, custom rendering, and personalized dropdown item styling for SplitButton.
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Visual style
 
-SplitButton supports visual style such as Office2016White,Office2016Black,Office2016DarkGray,Office2016Colorful,Default and Metro
+WinForms Split Button supports visual style such as Office2016White,Office2016Black,Office2016DarkGray,Office2016Colorful,Default and Metro
 
 This style can be set using Style property
 
@@ -31,9 +31,9 @@ Me.splitButton1.Style = Syncfusion.Windows.Forms.Tools.SplitButtonVisualStyle.Of
 
 ![splitbutton colorfultheme](Appearance-Customization_images/splitbutton-colorfultheme.png)
 
-## Customization of SplitButton
+## Customization of WinForms Split Button
 
-You can customize appearance of the SplitButton using the ISplitButtonRenderer. This interface provides few methods to controlling painting borders, arrow and so on. To customize the appearance, create new custom renderer class and implement each of the members declared in ISplitButtonRenderer. And assign instance of your custom renderer to the Renderer property of SplitButton. By default, SplitButton will be painted using its default renderer.
+You can customize appearance of the WinForms Split Button using the ISplitButtonRenderer. This interface provides few methods to controlling painting borders, arrow and so on. To customize the appearance, create new custom renderer class and implement each of the members declared in ISplitButtonRenderer. And assign instance of your custom renderer to the Renderer property of WinForms Split Button. By default, WinForms Split Button will be painted using its default renderer.
 
 The following code illustrates how to implement the ISplitButtonRenderer interface:
 
@@ -198,9 +198,9 @@ End Class
 
 ![Appearance-Customization1](Appearance-Customization_images/Appearance-Customization_img1.png)
 
-* Customizing the SplitButton DropDownItems appearance
+* Customizing the WinForms Split Button DropDownItems appearance
 
-You can customize the appearance of the SplitButton DropDown Items by using the DropDownRenderer. By using this property, you can customize the appearance of the DropDownItems.
+You can customize the appearance of the WinForms Split Button DropDown Items by using the DropDownRenderer. By using this property, you can customize the appearance of the DropDownItems.
 
 Refer the following code examples.
 
