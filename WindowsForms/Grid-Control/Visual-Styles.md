@@ -7,7 +7,7 @@ control: Grid Control
 documentation: ug
 ---
 # Visual Styles in Windows Forms Grid Control
-The GridControl can be displayed with the different themes by using the [GridVisualStyles](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_GridVisualStyles) property. The following themes are available for GridControl,
+WinForms Grid Control can be displayed with the different themes by using the [GridVisualStyles](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_GridVisualStyles) property. The following themes are available for the control,
 
 * Office2003
 * Office2007Blue
@@ -36,11 +36,11 @@ Me.gridControl1.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Off
 
 ![Visual-Syles_img1](Visual-Syles_images/Visual-Syles_img1.jpeg)
 
-N> To apply the enhanced themes to the GridControl, set [EnableLegacyStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableModel.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableModel_EnableLegacyStyle) property to `false`. 
-The change of visual styles can be handled by using the [ThemesChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html) event. It will be fired while changing the [GridVisualStyles](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_GridVisualStyles) of the GridControl.
+N> To apply the enhanced themes to the Grid Control, set [EnableLegacyStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableModel.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableModel_EnableLegacyStyle) property to `false`. 
+The change of visual styles can be handled by using the [ThemesChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html) event. It will be fired while changing the [GridVisualStyles](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_GridVisualStyles) of the Grid Control.
 
 ## Enabling Visual Styles   
-In GridControl, themes can be enabled by setting the [ThemesEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_ThemesEnabled) property value as `true`. By default the grid will be loaded with the `SystemTheme`.
+In Grid Control, themes can be enabled by setting the [ThemesEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_ThemesEnabled) property value as `true`. By default the grid will be loaded with the `SystemTheme`.
 {% tabs %}
 {% highlight c# %}
 //To apply other visual styles except SystemTheme
@@ -66,13 +66,13 @@ Me.gridControl1.Model.EnableGridListControlInComboBox = False
 {% endtabs %}
 
 ## Modifying Metro Colors
-Custom colors can be applied to the metro theme by using the [SetMetroStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_SetMetroStyle_Syncfusion_Windows_Forms_GridMetroColors_) method. It can be used to change the colors of Mouse hover, pressed and clicked colors of the Headers and the embedded cell controls of the GridControl.
+Custom colors can be applied to the metro theme by using the [SetMetroStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_SetMetroStyle_Syncfusion_Windows_Forms_GridMetroColors_) method. It can be used to change the colors of Mouse hover, pressed and clicked colors of the Headers and the embedded cell controls of the Grid Control.
 {% tabs %}
 {% highlight c# %}
 //Create GridMetroColors object for customizing the metro visual style
 GridMetroColors metroColor = new GridMetroColors();
 
-//Set custom colors to Metro Headers of the GridControl
+//Set custom colors to Metro Headers of the Grid Control
 metroColor.HeaderColor.NormalColor = Color.Pink;
 metroColor.HeaderColor.HoverColor = Color.Orange;
 metroColor.HeaderColor.PressedColor = Color.GhostWhite;
@@ -91,7 +91,7 @@ this.gridControl1.SetMetroStyle(metroColor);
 'Create GridMetroColors object for customizing the metro visual style
 Dim metroColor As New GridMetroColors()
 
-'Set custom colors to Metro Headers of the GridControl
+'Set custom colors to Metro Headers of the Grid Control
 metroColor.HeaderColor.NormalColor = Color.Pink
 metroColor.HeaderColor.HoverColor = Color.Orange
 metroColor.HeaderColor.PressedColor = Color.GhostWhite
@@ -133,13 +133,13 @@ N> The scrollbar customization is briefly discussed in the [Scrolling](http://he
 
 ## Modifying Office2016 colors
 
-Custom colors can be applied to the metro theme by using the [SetOffice2016ThemeStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_SetOffice2016ThemeStyle_Syncfusion_Windows_Forms_GridVisualStyles_Syncfusion_Windows_Forms_GridOffice2016ThemeColors_) method. It can be used to change the colors of Mouse hover, pressed, and clicked colors of the headers and the embedded cell controls of the GridControl.
+Custom colors can be applied to the metro theme by using the [SetOffice2016ThemeStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_SetOffice2016ThemeStyle_Syncfusion_Windows_Forms_GridVisualStyles_Syncfusion_Windows_Forms_GridOffice2016ThemeColors_) method. It can be used to change the colors of Mouse hover, pressed, and clicked colors of the headers and the embedded cell controls of the Grid Control.
 
 {% tabs %}
 {% highlight c# %}
 //Create GridOffice2016ThemeColors object for customizing the Office2016 visual style
 GridOffice2016ThemeColors style = new GridOffice2016ThemeColors();
-//Set custom colors to Office2016 Headers of the GridControl
+//Set custom colors to Office2016 Headers of the Grid Control
 style.HeaderColor.NormalColor = Color.Bisque;
 style.HeaderColor.HoverColor = Color.MediumPurple;
 style.CheckBoxColor.BackColor = Color.Brown;
@@ -153,7 +153,7 @@ this.gridControl1.SetOffice2016ThemeStyle(GridVisualStyles.Office2016Colorful, s
 {% highlight vb %}
 'Create GridOffice2016ThemeColors object for customizing the Office2016 visual style
 Dim style As New GridOffice2016ThemeColors()
-'Set custom colors to Office2016Headers of the GridControl
+'Set custom colors to Office2016Headers of the Grid Control
 style.HeaderColor.NormalColor = Color.Bisque
 style.HeaderColor.HoverColor = Color.MediumPurple
 style.CheckBoxColor.BackColor = Color.Brown
@@ -193,21 +193,21 @@ The scrollbars of the Office2016 visual style can be customized by setting any o
 
 ![Visual-Syles_img7](Visual-Syles_images/Visual-Syles_img7.jpeg)
 
-### Apply Skins to the GridControl
+### Apply Skins to the Grid Control
 The more advanced themes along with the basic themes defined by GridVisualStyles can be added to the grid by using the [GridSkins](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridSkins.html). It is available as an add-on feature in the [GridHelperClasses](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.html) library. `GridSkins` depict the custom skin of `GridVisualStyles`. Currently, it comes with Vista skin that makes the grid components appear in vista-like look and feel. This can be set to the grid by using the [ApplySkin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridSkins.html#Syncfusion_GridHelperClasses_GridSkins_ApplySkin_Syncfusion_Windows_Forms_Grid_GridModel_Syncfusion_GridHelperClasses_Skins_) method.
 {% tabs %}
 {% highlight c# %}
-//Apply skin to the GridControl
+//Apply skin to the Grid Control
 GridSkins.ApplySkin(this.gridControl1.Model, Skins.Vista);
 {% endhighlight %}
 {% highlight vb %}
-'Apply skin to the GridControl
+'Apply skin to the Grid Control
 GridSkins.ApplySkin(Me.gridControl1.Model, Skins.Vista)
 {% endhighlight %}
 {% endtabs %}
 
 ## Skin Manager
-Theme can also be applied to the GridControl by using [SetVisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.IContextMenuProvider.html#Syncfusion_Windows_Forms_IContextMenuProvider_SetVisualStyle_Syncfusion_Windows_Forms_VisualStyle_) method of [SkinManager](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.SkinManager.html).
+Theme can also be applied to the Grid Control by using [SetVisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.IContextMenuProvider.html#Syncfusion_Windows_Forms_IContextMenuProvider_SetVisualStyle_Syncfusion_Windows_Forms_VisualStyle_) method of [SkinManager](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.SkinManager.html).
 {% tabs %}
 {% highlight c# %}
 
@@ -222,7 +222,7 @@ SkinManager.SetVisualStyle(Me.gridControl1, VisualTheme.Office2010Blue)
 {% endhighlight %}
 {% endtabs %}
 
-The [SkinManager](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.SkinManager.html) provides the supports for all the [VisualTheme](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.VisualTheme.html) available in GridControl. It is also used to apply the same visual style for all the Syncfusion<sup>®</sup> controls in the form.
+The [SkinManager](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.SkinManager.html) provides the supports for all the [VisualTheme](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.VisualTheme.html) available in Grid Control. It is also used to apply the same visual style for all the Syncfusion<sup>®</sup> controls in the form.
 
 {% tabs %}
 {% highlight c# %}
@@ -238,7 +238,7 @@ SkinManager.SetVisualStyle(Me, VisualTheme.Office2010Blue)
 ![Visual-Syles_img4](Visual-Syles_images/Visual-Syles_img4.jpeg)
 
 ## Customizing Visual Styles
-All the elements of the GridControl’s appearance can be customized. This section will explain about the customization of the themes using [IVisualStylesDrawing](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.IVisualStylesDrawing.html). 
+All the elements of the Grid Control’s appearance can be customized. This section will explain about the customization of the themes using [IVisualStylesDrawing](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.IVisualStylesDrawing.html). 
 
 ### Customization Using IVisualStylesDrawing
 The grid can be applied with the [custom visual styles](https://www.syncfusion.com/kb/760/how-can-i-create-the-custom-themes-and-apply-to-the-gridcontrol) by implementing the [IVisualStylesDrawing](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.IVisualStylesDrawing.html) interface. This interface provides the list of methods for drawing the icons and header colors of the grid.
@@ -334,12 +334,12 @@ End Class
 For applying the customized theme settings to grid, `GridVisualStyles.Custom` option should be set to `GridVisualStyles` property. After that, the `CustomTheme` class can be assigned to [GridVisualStyleDrawing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_GridVisualStylesDrawing) property.
 {% tabs %}
 {% highlight c# %}
-//Adding custom visual styles to the GridControl
+//Adding custom visual styles to the Grid Control
 this.gridControl1.GridVisualStyles = GridVisualStyles.Custom;
 this.gridControl1.Model.Options.GridVisualStylesDrawing = new CustomThemes(GridVisualStyles.Custom);
 {% endhighlight %}
 {% highlight vb %}
-'Adding custom visual styles to the GridControl
+'Adding custom visual styles to the Grid Control
 Me.gridControl1.GridVisualStyles = GridVisualStyles.Custom
 Me.gridControl1.Model.Options.GridVisualStylesDrawing = New CustomThemes(GridVisualStyles.Custom)
 {% endhighlight %}

@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Enhanced Cell Types in Windows Forms Grid Control
-GridControl supports more than 10 built in custom cell types. All the related cell types will be found in the [CustomCellTypes](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.CustomCellTypes.html) enum which can be found in [Syncfusion.GridHelperClasses.Windows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.html) library.
+Grid Control supports more than 10 built in custom cell types. All the related cell types will be found in the [CustomCellTypes](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.CustomCellTypes.html) enum which can be found in [Syncfusion.GridHelperClasses.Windows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.html) library.
 
 ## Registering custom cell types
 Before adding any custom cell type, initially it is needed to register that particular custom cell type in the GridControl. For achieving this make use of the static method [GridCellType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.RegisterCellModel.html#Syncfusion_GridHelperClasses_RegisterCellModel_GridCellType_Syncfusion_Windows_Forms_Grid_GridControl_Syncfusion_GridHelperClasses_CustomCellTypes_) which is available under the [RegisterCellModel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.RegisterCellModel.html) class.
@@ -21,7 +21,7 @@ RegisterCellModel.GridCellType(gridControl1, CustomCellTypes.PercentTextBox);
 RegisterCellModel.GridCellType(gridControl1, CustomCellTypes.PercentTextBox)
 {% endhighlight %}
 {% endtabs %}
-N> For using any Custom Cell type, register that particular cell type to the GridControl by using the above method. The above code shows how to register a `PercentTextBox` custom cell type to a GridControl.
+N> For using any Custom Cell type, register that particular cell type to the Grid Control by using the above method. The above code shows how to register a `PercentTextBox` custom cell type to a GridControl.
 
 ## ButtonEdit cell type
 Initially register the `ButtonEdit` cell type to the GridControl. For setting a cell to `ButtonEdit` cell type assign the `CellType` property as [CustomCellTypes.ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.CustomCellTypes.html). Convert to string while assigning because the `CellType` is of type [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0).
@@ -391,9 +391,9 @@ sp.FloatNumericUpDownProperties.DecimalPlaces = 1
 ![Cell-Types_img38](Cell-Types_images/Cell-Types_img38.png)
 
 ## GridInCell cell type
-`GridInCell` cell type provide covered range of cells which embeds a GridControl i.e.., a GridControl within a cell of a GridControl.
+`GridInCell` cell type provide covered range of cells which embeds a Grid Control i.e.., a control within a cell of a GridControl.
 
-Add a GridControl in this cell by using the `Control` property. The size of this GridControl will be calculated by the range of that particular cell. Styles and other properties can be added to this control within this range. While initializing the grid, create an instance with [CellEmbeddedGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.CellEmbeddedGrid.html)**.** The following code will explain this.
+Add a Grid Control in this cell by using the `Control` property. The size of this the control will be calculated by the range of that particular cell. Styles and other properties can be added to this control within this range. While initializing the grid, create an instance with [CellEmbeddedGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.CellEmbeddedGrid.html)**.** The following code will explain this.
 
 {% tabs %}
 {% highlight c# %}

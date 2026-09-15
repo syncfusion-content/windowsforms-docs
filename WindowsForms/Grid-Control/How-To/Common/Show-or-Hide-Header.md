@@ -15,7 +15,7 @@ You can show or hide row and column headers using _ShowColumnHeaders_and_ShowRow
 
 To show column header set ShowColumnHeaders property to true. 
 
-The following code illustrates how to show column header in GridControl: 
+The following code illustrates how to show column header in Grid Control: 
 
 {% tabs %}
 {% highlight c# %}
@@ -47,7 +47,7 @@ gridDataBoundGrid.ShowColumnHeaders = True
 {% endhighlight %}
 {% endtabs %}
 
-The following code illustrates how to show column header in GridGrouping control: 
+The following code illustrates how to show column header in GridGroupingControl: 
 
 {% tabs %}
 {% highlight c# %}
@@ -67,7 +67,7 @@ gridGroupingControl1.ShowColumnHeaders = True
 
 To show the row header, set ShowRowHeaders property to true. 
 
-The following code illustrates how to show row header in GridControl: 
+The following code illustrates how to show row header in Grid Control: 
 
 {% tabs %}
 {% highlight c# %}
@@ -100,7 +100,7 @@ gridDataBoundGrid.ShowRowHeaders = True
 {% endtabs %}
 
 
-The following code illustrates how to show the row header in GridGrouping control:
+The following code illustrates how to show the row header in GridGroupingControl:
 
 {% tabs %}
 {% highlight c# %} 

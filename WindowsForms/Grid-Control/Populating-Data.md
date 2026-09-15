@@ -9,9 +9,9 @@ documentation: ug
 ---
 # Populating Data in Windows Forms Grid Control
 
-There are two ways to populate data into a Grid Control. One way is to move the data directly into the GridControl and let the underlying grid manage the data. Another method is to use GridControl in a virtual mode whereby need to handle certain events to provide data to the grid whenever it is in demand.
+There are two ways to populate data into a Grid Control. One way is to move the data directly into the control and let the underlying grid manage the data. Another method is to use the control in a virtual mode whereby need to handle certain events to provide data to the grid whenever it is in demand.
 
-The virtual method for providing data to a GridControl will be discussed in [Virtual Grid](https://help.syncfusion.com/windowsforms/grid-control/virtual-grid) section with more details. This section will walk through the different method used to store data directly into the GridControl’s internal storage. 
+The virtual method for providing data to a Grid Control will be discussed in [Virtual Grid](https://help.syncfusion.com/windowsforms/grid-control/virtual-grid) section with more details. This section will walk through the different method used to store data directly into the control’s internal storage. 
 
 ## Indexer Technique
 
@@ -56,9 +56,9 @@ N> The Undo/Redo support of the grid needs to be turned off so that initial popu
 
 ## PopulateValues Method
 
-GridControl has [PopulateValues](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_PopulateValues_Syncfusion_Windows_Forms_Grid_GridRangeInfo_System_Object_) method to overcome the looping of data through cell by cell. This method is used to pass a range of cells of type [GridRangeInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridRangeInfo.html) and data source of type `object`. 
+Grid Control has [PopulateValues](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_PopulateValues_Syncfusion_Windows_Forms_Grid_GridRangeInfo_System_Object_) method to overcome the looping of data through cell by cell. This method is used to pass a range of cells of type [GridRangeInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridRangeInfo.html) and data source of type `object`. 
 
-On using the `PopulateValues` method, data values are just been copied from your data source and placed into the GridControl. Hence it is an entirely different concept of binding a grid to a data source which can be achieved only in [GridGroupingControl](https://help.syncfusion.com/windowsforms/gridgrouping/getting-started). 
+On using the `PopulateValues` method, data values are just been copied from your data source and placed into the Grid Control. Hence it is an entirely different concept of binding a grid to a data source which can be achieved only in [GridGroupingControl](https://help.syncfusion.com/windowsforms/gridgrouping/getting-started). 
 
 {% tabs %}
 {% highlight c# %}

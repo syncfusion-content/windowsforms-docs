@@ -8,12 +8,12 @@ documentation: ug
 ---
 
 # Cell Navigation in Windows Forms Grid Control
-This section explains about the cell navigation in GridControl using <kbd>Tab</kbd>, <kbd>Enter</kbd>, arrow keys and other combination of keys. 
+This section explains about the cell navigation in Grid Control using <kbd>Tab</kbd>, <kbd>Enter</kbd>, arrow keys and other combination of keys. 
 
-The navigation of cells can be identified through the selection of the [CurrentCell](https://help.syncfusion.com/windowsforms/grid-control/editing) or the range of cells. The [selection](https://help.syncfusion.com/windowsforms/grid-control/selection) will be changed according to the selection mode set for the GridControl such as [range selection](https://help.syncfusion.com/windowsforms/grid-control/selection#range-selection) and [record selection](https://help.syncfusion.com/windowsforms/grid-control/selection#record-selection). 
+The navigation of cells can be identified through the selection of the [CurrentCell](https://help.syncfusion.com/windowsforms/grid-control/editing) or the range of cells. The [selection](https://help.syncfusion.com/windowsforms/grid-control/selection) will be changed according to the selection mode set for the Grid Control such as [range selection](https://help.syncfusion.com/windowsforms/grid-control/selection#range-selection) and [record selection](https://help.syncfusion.com/windowsforms/grid-control/selection#record-selection). 
 
 ## Navigation using Keyboard Keys
-The GridControl provides support for all the standard navigation using keyboard. The current cell of the grid can be navigated by using the up, down, left and right arrow keys of the keyboard. 
+The Grid Control provides support for all the standard navigation using keyboard. The current cell of the grid can be navigated by using the up, down, left and right arrow keys of the keyboard. 
 
 Other navigation keys such as Page Up, Page Down will be used to navigate to the top and bottom row of the view layout of the grid. 
 The <kbd>Shift</kbd>+ Arrow Keys combination is used to include the next cell to the selection at the given direction.
@@ -21,7 +21,7 @@ The <kbd>Ctrl</kbd>+ Arrow keys combination is used to navigate the current cell
 The <kbd>Ctrl</kbd>+<kbd>Home</kbd> and <kbd>Ctrl</kbd>+<kbd>End</kbd> key combinations are used to move the current cell selection to the TopLeft and BottomRight cells of the GridControl.
 
 ## Navigation of Cells using Mouse
-The GridControl provides the support for navigating the cells using the mouse click. The CurrentCell selection can be navigated to the desired cell by clicking on it. This default option of the grid can be restricted by using the [ControllerOptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelOptions.html#Syncfusion_Windows_Forms_Grid_GridModelOptions_ControllerOptions) property.
+The Grid Control provides the support for navigating the cells using the mouse click. The CurrentCell selection can be navigated to the desired cell by clicking on it. This default option of the grid can be restricted by using the [ControllerOptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelOptions.html#Syncfusion_Windows_Forms_Grid_GridModelOptions_ControllerOptions) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -71,7 +71,7 @@ End Sub
 {% endtabs %}
 
 ## Setting TAB key behavior 
-The cell navigation using <kbd>TAB</kbd> key can be enabled in GridControl by setting the [WantTabKey](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_WantTabKey) property to `true`.
+The cell navigation using <kbd>TAB</kbd> key can be enabled in Grid Control by setting the [WantTabKey](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_WantTabKey) property to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -91,7 +91,7 @@ Me.gridControl.WantTabKey = False
 {% endtabs %}
 
 ### Handling the TAB key to navigate within grid 
-The [WantTabKeyInPreProcessMessage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_WantTabKeyInPreProcessMessage) property is used to indicate whether the GridControl should handle <kbd>TAB</kbd> keys to move the focus either cells or controls. If it is `true` then it will make sure that no other control on a form can override the <kbd>TAB</kbd> key behavior of this control. 
+The [WantTabKeyInPreProcessMessage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_WantTabKeyInPreProcessMessage) property is used to indicate whether the Grid Control should handle <kbd>TAB</kbd> keys to move the focus either cells or controls. If it is `true` then it will make sure that no other control on a form can override the <kbd>TAB</kbd> key behavior of this control. 
 
 {% tabs %}
 {% highlight c# %}
@@ -105,7 +105,7 @@ Me.gridControl.WantTabKeyInPreProcessMessage = True
 {% endtabs %}
 
 ## Setting the TAB index 
-The [TabIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ScrollControl.html#Syncfusion_Windows_Forms_ScrollControl_TabIndex) property is used to set the tab order of the GridControl while using the <kbd>TAB</kbd> key navigations. 
+The [TabIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ScrollControl.html#Syncfusion_Windows_Forms_ScrollControl_TabIndex) property is used to set the tab order of the Grid Control while using the <kbd>TAB</kbd> key navigations. 
 
 {% tabs %}
 {% highlight c# %}
@@ -118,7 +118,7 @@ Me.gridControl.TabIndex = 4
 {% endhighlight %}
 {% endtabs %}
 
-N> The Changing of `TabIndex` in GridControl can be notified by using the [TabIndexChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ScrollControl.html#Syncfusion_Windows_Forms_ScrollControl_TabIndex) event.
+N> The Changing of `TabIndex` in Grid Control can be notified by using the [TabIndexChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ScrollControl.html#Syncfusion_Windows_Forms_ScrollControl_TabIndex) event.
 
 ### Avoid setting focus using TAB key for a particular control
 The focus for particular control using <kbd>TAB</kbd> key can be restricted by using [TabStop](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.tabstop?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) property.
@@ -135,7 +135,7 @@ Me.gridControl.TabStop = False
 {% endtabs %}
 
 ### Releasing TAB focus from Grid
-When setting the [ActiveControl](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.icontainercontrol.activecontrol?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) of the form as GridControl, the focus will not move from the grid to other controls in the form using the <kbd>TAB</kbd> key. This difficulty can be overcome by setting `WantTabKey` property to `false` after setting the `ActiveControl`. This helps to navigate other controls in the form.
+When setting the [ActiveControl](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.icontainercontrol.activecontrol?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) of the form as Grid Control, the focus will not move from the grid to other controls in the form using the <kbd>TAB</kbd> key. This difficulty can be overcome by setting `WantTabKey` property to `false` after setting the `ActiveControl`. This helps to navigate other controls in the form.
 
 {% tabs %}
 {% highlight c# %}
@@ -165,7 +165,7 @@ Me.gridControl.WantEscapeKey = False
 {% endtabs %}
 
 ## Disabling Enter key 
-The <kbd>Enter</kbd> Key can be used to navigate the cells in GridControl when it’s not in editing mode. This can be disabled by setting the [WantEnterKey](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_WantEnterKey) property to `false`.
+The <kbd>Enter</kbd> Key can be used to navigate the cells in Grid Control when it’s not in editing mode. This can be disabled by setting the [WantEnterKey](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_WantEnterKey) property to `false`.
 {% tabs %}
 {% highlight c# %}
 //To avoid the Enter key.

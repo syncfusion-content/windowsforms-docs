@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Swap Rows and Columns in Windows Forms Grid Control
 
-This can be done in GridControl by handling virtual events QueryCellInfo, SaveCellInfo, QueryRowCount, QueryColCount. Here GridControl.Data property is used.
+This can be done in Grid Control by handling virtual events QueryCellInfo, SaveCellInfo, QueryRowCount, QueryColCount. Here GridControl.Data property is used.
 
 {% tabs %}
 {% highlight c# %}

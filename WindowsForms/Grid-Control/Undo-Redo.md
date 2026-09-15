@@ -9,13 +9,13 @@ documentation: ug
 ---
 # Undo Redo in Windows Forms Grid Control
 
-GridControl gives support for Undo/Redo functionality. GridControl keeps a track on all the operations undergone, in a particular class [GridModelCommandManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelCommandManager.html). The Undo/Redo operations can be done by using commands, methods and keyboard shortcuts. 
+WinForms Grid Control gives support for Undo/Redo functionality. The control keeps a track on all the operations undergone, in a particular class [GridModelCommandManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelCommandManager.html). The Undo/Redo operations can be done by using commands, methods and keyboard shortcuts. 
 
 ## Basic Commands
 
-GridControl has [GridModelCommandManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelCommandManager.html) class that implements support for the Undo/Redo commands in a grid. If an operation in a GridControl is done then the changes made will get tracked and stored in stack structures which will be stored in this class.
+Grid Control has [GridModelCommandManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelCommandManager.html) class that implements support for the Undo/Redo commands in a grid. If an operation in the control is done then the changes made will get tracked and stored in stack structures which will be stored in this class.
 
-GridControl has a property [CommandStack](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_CommandStack) which will return a reference to [GridModelCommandManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelCommandManager.html). Undo/Redo operations can be enabled/disabled through this property.
+Grid Control has a property [CommandStack](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_CommandStack) which will return a reference to [GridModelCommandManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelCommandManager.html). Undo/Redo operations can be enabled/disabled through this property.
 
 {% tabs %}
 
@@ -40,7 +40,7 @@ Me.gridControl1.CommandStack.Enabled = False
 
 ### Undo
 
-The undo operation can be done in GridControl by using the [CommandStack.Undo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelCommandManager.html#Syncfusion_Windows_Forms_Grid_GridModelCommandManager_Undo) method. By default, GridControl also give support for undoing the actions using keyboard shortcuts. Use <kbd>Ctrl</kbd>+<kbd>Z</kbd> combination for Undo operation to happen.
+The undo operation can be done in Grid Control by using the [CommandStack.Undo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelCommandManager.html#Syncfusion_Windows_Forms_Grid_GridModelCommandManager_Undo) method. By default, the control also give support for undoing the actions using keyboard shortcuts. Use <kbd>Ctrl</kbd>+<kbd>Z</kbd> combination for Undo operation to happen.
 
 {% tabs %}
 
@@ -111,7 +111,7 @@ After starting the transaction using the above method, do the list of changes in
 
 #### CommitTrans
 
-[CommandStack.CommitTrans](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelCommandManager.html#Syncfusion_Windows_Forms_Grid_GridModelCommandManager_CommitTrans) method will denote the GridControl to stop the transaction and to save all the changes in one transaction. Then this single transaction will be stored in stack.
+[CommandStack.CommitTrans](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelCommandManager.html#Syncfusion_Windows_Forms_Grid_GridModelCommandManager_CommitTrans) method will denote the Grid Control to stop the transaction and to save all the changes in one transaction. Then this single transaction will be stored in stack.
 
 {% tabs %}
 
@@ -257,7 +257,7 @@ End Class
 {% endtabs %}
 
 
-After creating the class, add the transaction to the GridControl by using the [CommandStack.Push](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelCommandManager.html#Syncfusion_Windows_Forms_Grid_GridModelCommandManager_Push_Syncfusion_ComponentModel_SyncfusionCommand_) method. Call this method to necessary places in which the users need to make the Undo/Redo operations.
+After creating the class, add the transaction to the Grid Control by using the [CommandStack.Push](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelCommandManager.html#Syncfusion_Windows_Forms_Grid_GridModelCommandManager_Push_Syncfusion_ComponentModel_SyncfusionCommand_) method. Call this method to necessary places in which the users need to make the Undo/Redo operations.
 
 {% tabs %}
 

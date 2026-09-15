@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Selection in Windows Forms Grid Control
 
-The selection is the process of highlighting. This section will explain about the types of selection available for GridControl and its usability’s. 
+The selection is the process of highlighting. This section will explain about the types of selection available for WinForms Grid Control and its usability’s. 
 
 ## Range Selection
 
@@ -50,7 +50,7 @@ Me.gridControl1.ListBoxSelectionMode = SelectionMode.MultiSimple
 
 ## Adding Selection
 
-In the GridControl the selections are maintained in the [SelectedRanges](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_SelectedRanges) collection. To add the selection for particular range of cells, add the range into the `SelectedRanges` collection. 
+In the Grid Control the selections are maintained in the [SelectedRanges](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_SelectedRanges) collection. To add the selection for particular range of cells, add the range into the `SelectedRanges` collection. 
 
 {% tabs %}
 {% highlight c# %}
@@ -83,7 +83,7 @@ Me.gridControl1.Selections.Add(GridRangeInfo.Cells(2, 2, 5, 4))
 
 ### Adding Multiple Selected Ranges
 
-To have the multiple selected ranges in the GirdControl, add the list of ranges into the [GridRangeInfoList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridRangeInfoList.html) collection. 
+To have the multiple selected ranges in the Grid Control, add the list of ranges into the [GridRangeInfoList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridRangeInfoList.html) collection. 
 
 {% tabs %}
 {% highlight c# %}
@@ -116,12 +116,12 @@ To clear all the selections from the grid, use the [Selections.Clear](https://he
 
 {% tabs %}
 {% highlight c# %}
-//To clear the selections from the GridControl
+//To clear the selections from the Grid Control
 this.gridControl1.Selections.Clear();
 {% endhighlight %}
 
 {% highlight vb %}
-'To clear the selections from the GridControl
+'To clear the selections from the Grid Control
 Me.gridControl1.Selections.Clear()
 {% endhighlight %}
 {% endtabs %}

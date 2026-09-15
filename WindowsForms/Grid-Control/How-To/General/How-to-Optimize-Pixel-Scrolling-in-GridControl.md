@@ -9,11 +9,11 @@ documentation: ug
 
 # How to Optimize Pixel Scrolling in Windows Forms Grid Control
 
-The grid's base class pixel scrolling is not optimized for large row scenarios. In the derived GridControl, you will have to override a couple of virtual methods to make it perform well and use binary tree structures to quickly get the row index for an absolute pixel position and vice versa.
+The grid's base class pixel scrolling is not optimized for large row scenarios. In the derived Grid Control, you will have to override a couple of virtual methods to make it perform well and use binary tree structures to quickly get the row index for an absolute pixel position and vice versa.
 
 Follow the steps that are given below to do this.
 
-1. To Create Custom derived GridControl and to override the following methods for Optimized Vertical scrolling.
+1. To Create Custom derived Grid Control and to override the following methods for Optimized Vertical scrolling.
 
    * RowIndexToVScrollPixelPos(int rowIndex)
    * VScrollPixelPosToRowIndex(int pixelPos, out int rowIndex, out int pixelDelta)
@@ -109,18 +109,18 @@ End Class
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2. Assign the new custom control to the GridControl.
+2. Assign the new custom control to the Grid Control.
 {% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 				
-//Sets the derived GridControl to the grid.
+//Sets the derived Grid Control to the grid.
 this.gridControl1 = new VerticalScrollOptimization.DerivedGridControl();
 {% endhighlight %}
 
 {% highlight vb %}
 
-'Sets the derived GridControl to the grid.
+'Sets the derived Grid Control to the grid.
 Me.GridControl1 = New VerticalScrollOptimization.DerivedGridControl
 {% endhighlight %} 
 {% endtabs %}

@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Editing in Windows Forms Grid Control
 
-GridControl provides editing support for normal cells and also for all the cell types that are existing in it accordingly. For changing the editing behavior make use of the [ActivateCurrentCellBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_ActivateCurrentCellBehavior) property. This property will decide whether to edit the cells using single click or double click or disable editing.
+Grid Control provides editing support for normal cells and also for all the cell types that are existing in it accordingly. For changing the editing behavior make use of the [ActivateCurrentCellBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_ActivateCurrentCellBehavior) property. This property will decide whether to edit the cells using single click or double click or disable editing.
 
 {% tabs %}
 {% highlight c# %}
@@ -109,7 +109,7 @@ Editing can be enabled or disabled by using the [ReadOnly](https://help.syncfusi
 
 ### Enabling Read Only for entire Grid
 
-To enable/disable the editing for the entire GridControl, make use of the [ReadOnly](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_ReadOnly) property.
+To enable/disable the editing for the entire Grid Control, make use of the [ReadOnly](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_ReadOnly) property.
 
 {% tabs %}
 {% highlight c# %}

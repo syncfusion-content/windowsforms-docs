@@ -9,8 +9,8 @@ documentation: ug
 
 # Cell Style Architecture in Windows Forms Grid Control
 
-GridControl can be thought of as a rectangular table of grid cells. Each cell contains distinct information and can be displayed independently of other cells. 
-GridControl uses [GridStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html) objects to store state information about the appearance of a grid cell. So attributes like Font, BackColor, CellValue and CellType are all reflected in a single GridStyleInfo object. This section explains how to access and use the GridStyleInfo objects.
+Grid Control can be thought of as a rectangular table of grid cells. Each cell contains distinct information and can be displayed independently of other cells. 
+The control uses [GridStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html) objects to store state information about the appearance of a grid cell. So attributes like Font, BackColor, CellValue and CellType are all reflected in a single GridStyleInfo object. This section explains how to access and use the GridStyleInfo objects.
 
 ## GridStyleInfo Properties
 
@@ -32,11 +32,11 @@ Me.gridControl1(3, 3).BackColor = Color.LightCoral
 Me.gridControl1(4, 4).BackColor = Color.LightPink
 {% endhighlight %}
 
-{% endtabs %} ![BackColor in WinForms Grid](CellStyles_images/CellStyles_img1.png)
+{% endtabs %} ![BackColor](CellStyles_images/CellStyles_img1.png)
 
 ### Font
 
-[Font](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_Font) property of the `GridStyleInfo` class specifies the font for the text displayed in the cell. In GridControl [GridFontInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFontInfo.html) class acts as a wrapper class for the standard [System.Drawing.Font](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.font?view=dotnet-plat-ext-7.0&viewFallbackFrom=net-5.0) class. The `GridFontInfo` class has special static members that easily modify font property members.
+[Font](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_Font) property of the `GridStyleInfo` class specifies the font for the text displayed in the cell. In Grid Control [GridFontInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFontInfo.html) class acts as a wrapper class for the standard [System.Drawing.Font](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.font?view=dotnet-plat-ext-7.0&viewFallbackFrom=net-5.0) class. The `GridFontInfo` class has special static members that easily modify font property members.
 {% tabs %}
 {% highlight c# %}
 GridFontInfo fontSize = new GridFontInfo();
@@ -60,7 +60,7 @@ Me.gridControl1(3, 3).Font.Strikeout = True
 
 {% endtabs %}
 
-![Font in WinForms Grid](CellStyles_images/CellStyles_img2.png)
+![Font](CellStyles_images/CellStyles_img2.png)
 
 ### Text and CellValue
 
@@ -81,7 +81,7 @@ obj = "Essential Grid"
 Me.gridControl1(3,2).CellValue = obj
 {% endhighlight %}
 
-{% endtabs %} ![Text and CellValue in WinForms Grid](CellStyles_images/CellStyles_img3.png)
+{% endtabs %} ![Text and CellValue](CellStyles_images/CellStyles_img3.png)
 
 ### ImageList
 
@@ -116,7 +116,7 @@ Me.gridControl1(3, 2).ImageIndex = 1
 
 {% endtabs %}
 
-![ImageList in WinForms Grid](CellStyles_images/CellStyles_img4.png)
+![ImageList](CellStyles_images/CellStyles_img4.png)
 
 ### Interior
 
@@ -135,11 +135,11 @@ gridControl1(3, 2).Interior = New BrushInfo(PatternStyle.DashedHorizontal, Color
 
 {% endtabs %}
 
-![Interior Styles in WinForms Grid](CellStyles_images/CellStyles_img5.png)
+![Interior Styles](CellStyles_images/CellStyles_img5.png)
 
 ### TextColor
 
-[TextColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_TextColor) property is used to change the color of the cell text in GridControl.
+[TextColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_TextColor) property is used to change the color of the cell text in Grid Control.
 
 {% tabs %}
 {% highlight c# %}
@@ -154,7 +154,7 @@ gridControl1(2, 2).TextColor = Color.Red
 
 {% endtabs %}
 
-![TextColor in WinForms Grid](CellStyles_images/CellStyles_img6.png)
+![TextColor](CellStyles_images/CellStyles_img6.png)
 
 ### Borders
 
@@ -172,7 +172,7 @@ gridControl1(2, 2).Borders.All = New GridBorder(GridBorderStyle.Solid, Color.Red
 {% endhighlight %}
 {% endtabs %}
 
-![Borders in Cell Style Architecture for WinForms Grid](CellStyles_images/CellStyles_img7.png)
+![Borders in Cell Style Architecture](CellStyles_images/CellStyles_img7.png)
 
 ### Orientation
 
@@ -190,7 +190,7 @@ gridControl1(2, 2).Font.Orientation = 180
 
 {% endtabs %}
 
-![Orientation in Cell Style Architecture for WinForms Grid](CellStyles_images/CellStyles_img8.png)
+![Orientation in Cell Style Architecture](CellStyles_images/CellStyles_img8.png)
 
 ### Format
 
@@ -208,7 +208,7 @@ Me.gridControl1(2, 2).Format = "C"
 
 {% endtabs %}
 
-![Format in Cell Style Architecture for WinForms Grid](CellStyles_images/CellStyles_img9.png)
+![Format in Cell Style Architecture](CellStyles_images/CellStyles_img9.png)
 
 ### CellTipText
 
@@ -231,12 +231,12 @@ Me.gridControl1(2, 2).CellTipText = "TipText for cell 2,2"
 
 {% endtabs %}
 
-![CellTipText in Cell Style Architecture for WinForms Grid](CellStyles_images/CellStyles_img10.png)
+![CellTipText in Cell Style Architecture](CellStyles_images/CellStyles_img10.png)
 
 ## BaseStyles
 
 [BaseStyles](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_BaseStyle) is one of the parent-type style which is used to customize the cell’s appearance. BaseStyles are `GridStyleInfo` objects which can be associated with an arbitrary collection of cells. 
-Base styles that used in GridControl are,
+Base styles that used in Grid Control are,
 
 1. [Standard](#standard)
 
@@ -248,9 +248,9 @@ Base styles that used in GridControl are,
 
 ### BaseStyles editor
 
-To work with `BaseStyles` from within the Visual Studio designer, make use of the Edit base styles verb that appears at the bottom of the GridControl’s property grid.
+To work with `BaseStyles` from within the Visual Studio designer, make use of the Edit base styles verb that appears at the bottom of the Grid Control’s property grid.
 
-![BaseStyles in Cell Style Architecture for WinForms Grid](CellStyles_images/CellStyles_img11.png)
+![BaseStyles in Cell Style Architecture](CellStyles_images/CellStyles_img11.png)
 
 When `Edit base styles` verb is clicked, then `GridBaseStyleCollectionEditor` dialog box will be displayed. This editor dialog box can be used to edit existing `BaseStyles` or add new ones.
 
@@ -260,7 +260,7 @@ N> It is also possible to add a new BaseStyle or remove an existing BaseStyle us
 
 ### Standard
 
-The Standard base style can be used to make changes to all the cells in GridControl, except for the header cells.
+The Standard base style can be used to make changes to all the cells in Grid Control, except for the header cells.
 
 {% tabs %}
 {% highlight c# %}
@@ -273,7 +273,7 @@ gridControl1.BaseStylesMap("Standard").StyleInfo.BackColor = Color.Aqua
 
 {% endtabs %}
 
-![Standard BaseStyle Editor in Cell Style Architecture for WinForms Grid](CellStyles_images/CellStyles_img13.png)
+![Standard BaseStyle Editor in Cell Style Architecture](CellStyles_images/CellStyles_img13.png)
 
 ### Header
 
@@ -290,7 +290,7 @@ gridControl1.BaseStylesMap("Header").StyleInfo.TextColor = Color.Red
 
 {% endtabs %}
 
-![Header BaseStyle Editor in Cell Style Architecture for WinForms Grid](CellStyles_images/CellStyles_img14.png)
+![Header BaseStyle Editor in Cell Style Architecture](CellStyles_images/CellStyles_img14.png)
 
 ### Column Header
 
@@ -306,7 +306,7 @@ gridControl1.BaseStylesMap("Column Header").StyleInfo.TextColor = Color.DarkGree
 
 {% endtabs %}
 
-![Column Header BaseStyle Editor in Cell Style Architecture for WinForms Grid](CellStyles_images/CellStyles_img15.png)
+![Column Header BaseStyle Editor in Cell Style Architecture](CellStyles_images/CellStyles_img15.png)
 
 ### Row Header
 
@@ -322,11 +322,11 @@ gridControl1.BaseStylesMap("Row Header").StyleInfo.TextColor = Color.Orange
 
 {% endtabs %}
 
-![Row Header BaseStyle Editor in Cell Style Architecture for WinForms Grid](CellStyles_images/CellStyles_img16.png)
+![Row Header BaseStyle Editor in Cell Style Architecture](CellStyles_images/CellStyles_img16.png)
 
 ### Custom BaseStyles
 
-Custom BaseStyles can be defined in GridControl by using the [GridBaseStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridBaseStyle.html). After defining a BaseStyle, it has to be added to the [BaseStylesMap](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridBaseStylesMap.html) so that it can be accessed in `GridStyleInfo` objects. Assign the defined base style to the desired cells by using the [BaseStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_BaseStyle) property in the `GridStyleInfo`.
+Custom BaseStyles can be defined in Grid Control by using the [GridBaseStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridBaseStyle.html). After defining a BaseStyle, it has to be added to the [BaseStylesMap](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridBaseStylesMap.html) so that it can be accessed in `GridStyleInfo` objects. Assign the defined base style to the desired cells by using the [BaseStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_BaseStyle) property in the `GridStyleInfo`.
 
 {% tabs %}
 {% highlight c# %}
@@ -355,7 +355,7 @@ gridControl1(3, 2).BaseStyle = "BaseStyleTest"
 
 {% endtabs %} 
 
-![Custom BaseStyle Editor in Cell Style Architecture for WinForms Grid](CellStyles_images/CellStyles_img17.png)
+![Custom BaseStyle Editor in Cell Style Architecture](CellStyles_images/CellStyles_img17.png)
 
 ## Assigning Styles in Cells
 
@@ -363,7 +363,7 @@ In this section let’s discuss on some of the ways that can be used to assign t
 
 ### ChangeCells method
 
-For assigning the `GridStyleInfo` objects for a range of cells, make use of the [ChangeCells](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_ChangeCells_Syncfusion_Windows_Forms_Grid_GridRangeInfo_Syncfusion_Windows_Forms_Grid_GridStyleInfo_)()method. This overloaded method accepts `GridRangeInfo` and `GridStyleInfo` objects. [GridRangeInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridRangeInfo.html) class specifies a range of cells in GridControl.
+For assigning the `GridStyleInfo` objects for a range of cells, make use of the [ChangeCells](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_ChangeCells_Syncfusion_Windows_Forms_Grid_GridRangeInfo_Syncfusion_Windows_Forms_Grid_GridStyleInfo_)()method. This overloaded method accepts `GridRangeInfo` and `GridStyleInfo` objects. [GridRangeInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridRangeInfo.html) class specifies a range of cells in Grid Control.
 The ChangeCells method depends on the [StyleModifyType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Styles.StyleModifyType.html) parameter. This modify type defines the style operations. Default modify type is `StyleModifyType.Override`.
 
 {% tabs %}
@@ -405,7 +405,7 @@ style.Font.Italic = True
 Me.gridControl1.ChangeCells(GridRangeInfo.Cells(3, 2, 4, 3), style, StyleModifyType.Override)
 {% endhighlight %}
 
-{% endtabs %}![ChangeCells method in Cell Style Architecture for WinForms Grid](CellStyles_images/CellStyles_img18.png)
+{% endtabs %}![ChangeCells method in Cell Style Architecture](CellStyles_images/CellStyles_img18.png)
 
 ### Table Styles
 
@@ -450,7 +450,7 @@ style.Font.Italic = True
 Me.gridControl1.TableStyle = style
 {% endhighlight %}
 
-{% endtabs %}![Table Styles in Cell Style Architecture for WinForms Grid](CellStyles_images/CellStyles_img19.png)
+{% endtabs %}![Table Styles in Cell Style Architecture](CellStyles_images/CellStyles_img19.png)
 
 ### Row Styles
 
@@ -499,7 +499,7 @@ Me.gridControl1.RowStyles(4) = style
 
 {% endtabs %}
 
-![Row Styles in Cell Style Architecture for WinForms Grid](CellStyles_images/CellStyles_img20.png)
+![Row Styles in Cell Style Architecture](CellStyles_images/CellStyles_img20.png)
 
 ### Column Styles
 
@@ -546,7 +546,7 @@ Me.gridControl1.ColStyles(3) = style
 Me.gridControl1.ColStyles(4) = style
 {% endhighlight %}
 
-{% endtabs %}![Column Styles in Cell Style Architecture for WinForms Grid](CellStyles_images/CellStyles_img21.png)
+{% endtabs %}![Column Styles in Cell Style Architecture](CellStyles_images/CellStyles_img21.png)
 
 ## Removing styles
 

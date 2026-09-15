@@ -15,18 +15,18 @@ The record navigation control can be added throw the designer as well as the cod
 N> The [GridGroupingControl](https://help.syncfusion.com/windowsforms/gridgrouping/navigation-bar) has the built-in support for Record Navigation control.
 
 ### Through Designer
-It can be drag and drop from the Toolbox window from the designer along with the GridControl. The step-by-step procedure to create GridRecordNavigationControl through designer is given below,
+It can be drag and drop from the Toolbox window from the designer along with the WinForms Grid Control. The step-by-step procedure to create GridRecordNavigationControl through designer is given below,
 
 1. Drag and drop the GridRecordNavigationControl from the toolbox on the form.
 2. Size and position in the proper place.
    
    ![Record-Navigation-Control_img1](Record-Navigation-Control_images/Record-Navigation-Control_img1.jpeg)
 
-3. Drag the GridControl from toolbox and drop it on the GridRecordNavigationControl properly which was shown in below screenshot.
+3. Drag the Grid Control from toolbox and drop it on the GridRecordNavigationControl properly which was shown in below screenshot.
    
    ![Record-Navigation-Control_img2](Record-Navigation-Control_images/Record-Navigation-Control_img2.jpeg)
 
-4. Populate the GridControl with data.
+4. Populate the Grid Control with data.
 
    ![Record-Navigation-Control_img3](Record-Navigation-Control_images/Record-Navigation-Control_img3.jpeg)
 
@@ -35,7 +35,7 @@ It can be drag and drop from the Toolbox window from the designer along with the
    ![Record-Navigation-Control_img4](Record-Navigation-Control_images/Record-Navigation-Control_img4.jpeg)
 
 ### Through Code
-The GridRecordNavigationControl can also be programmatically added to the GridControl.
+The GridRecordNavigationControl can also be programmatically added to the Grid Control.
 
 {% tabs %}
 {% highlight c# %}
@@ -49,7 +49,7 @@ this.recordNavigationControl1.NavigationBarWidth = 237;
 this.recordNavigationControl1.Size = new System.Drawing.Size(520, 256);
 this.recordNavigationControl1.SplitBars = Syncfusion.Windows.Forms.DynamicSplitBars.Both;
 
-//Create the GridControl.
+//Create the Grid Control.
 GridControl gridControl1 = new Syncfusion.Windows.Forms.Grid.GridControl();
 
 this.gridControl1.ColCount = 6;
@@ -73,7 +73,7 @@ Me.recordNavigationControl1.NavigationBarWidth = 237
 Me.recordNavigationControl1.Size = New System.Drawing.Size(520, 256)
 Me.recordNavigationControl1.SplitBars = Syncfusion.Windows.Forms.DynamicSplitBars.Both
 
-'Create the GridControl.
+'Create the Grid Control.
 Dim gridControl1 As GridControl = New Syncfusion.Windows.Forms.Grid.GridControl()
 
 Me.gridControl1.ColCount = 6

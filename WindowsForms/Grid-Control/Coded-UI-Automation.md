@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Coded UI Automation in Windows Forms Grid Control
-The GridControl can be automated with Coded UI testing automation. Using Visual Studio Premium, Visual Studio Ultimate or Visual Studio Enterprise, user can create a coded UI Test Project which will be used to test and automate the UI of the GridControl. The validation can be done at grid level or cell level.
+The Grid Control can be automated with Coded UI testing automation. Using Visual Studio Premium, Visual Studio Ultimate or Visual Studio Enterprise, user can create a coded UI Test Project which will be used to test and automate the UI of the GridControl. The validation can be done at grid level or cell level.
 
 Levels of Microsoft Coded UI Test (CUIT) support,
 
@@ -36,7 +36,7 @@ A `Coded UI Test Project` needs to be created for testing the application. The f
 
 4. Then run the sample application which needs to be automated.
 
-The GridControl supports Coded UI as the two ways,
+The Grid Control supports Coded UI as the two ways,
 
 * In-built support
 * External plugin
@@ -49,12 +49,12 @@ The **Coded UI Test** performs action on the user interface (UI) controls and ve
    
    ![Coded-UI-Automation_img4](Coded-UI-Automation_images/Coded-UI-Automation_img4.jpeg)
 
-3. The GridControl or Cell will be highlighted with a rectangular bounds like below,
+3. The Grid Control or Cell will be highlighted with a rectangular bounds like below,
    
    ![Coded-UI-Automation_img5](Coded-UI-Automation_images/Coded-UI-Automation_img5.jpeg)
 
-### Assertion of GridControl
-For asserting the GridControl, the whole grid will be highlighted with that rectangular bounds.  After assertion, the properties related to GridControl will be displayed in **Coded UI Test Builder**.
+### Assertion of Grid Control
+For asserting the Grid Control, the whole grid will be highlighted with that rectangular bounds.  After assertion, the properties related to the control will be displayed in **Coded UI Test Builder**.
 
 ![Coded-UI-Automation_img6](Coded-UI-Automation_images/Coded-UI-Automation_img6.jpeg)
 
@@ -69,7 +69,7 @@ For asserting the merged cell, the merged range will be treated as a single cell
 ![Coded-UI-Automation_img8](Coded-UI-Automation_images/Coded-UI-Automation_img8.jpeg)
 
 ## Record and Playback
-The GridControl lets you record the automation and play back those automated actions whenever application needs to be tested. 
+The Grid Control lets you record the automation and play back those automated actions whenever application needs to be tested. 
 
 ### Recording
 The following steps are used to record and playback the application,
@@ -106,7 +106,7 @@ The recorded automation codes can be played back. The following steps are used t
 ![Coded-UI-Automation_img14](Coded-UI-Automation_images/Coded-UI-Automation_img14.jpeg)
 
 ## In-built support
-The GridControl supports automated UI testing with Coded UI technology without any external plugin. In this technique, the grid will be detected as an **MSAA** object and the automation code will be generated based on MSAA technology element.  
+The Grid Control supports automated UI testing with Coded UI technology without any external plugin. In this technique, the grid will be detected as an **MSAA** object and the automation code will be generated based on MSAA technology element.  
 
 ### System requirements
 The following IDEs and .NET frameworks are supported for automating the GridControl.
@@ -143,9 +143,9 @@ Me.gridControl1.AccessibilityEnabled = True
 {% endtabs %}
 
 ### Assertion
-The GridControl lets you test the user application by asserting the properties which are displayed in the **Coded UI Test Builder**. The grid and the cell bounds will be asserted as an `MSAA` object and the properties will be displayed based on cell types.
+The Grid Control lets you test the user application by asserting the properties which are displayed in the **Coded UI Test Builder**. The grid and the cell bounds will be asserted as an `MSAA` object and the properties will be displayed based on cell types.
 
-For example, TextBox cell will be asserted as `WinText` MSAA control, CheckBox cell will be asserted as `WinCheckBox` MSAA control. The GridControl will be detected as `WinWindow` MSAA control.
+For example, TextBox cell will be asserted as `WinText` MSAA control, CheckBox cell will be asserted as `WinCheckBox` MSAA control. The Grid Control will be detected as `WinWindow` MSAA control.
 
 The following table provides the information about the cell types and its equivalent MSAA control on asserting,
 <table>
@@ -223,14 +223,14 @@ The below example shows the properties that are displayed in the Coded UI test b
 N> The properties will be displayed based on the respective **MSAA** control properties. 
 
 ### Getting cell values
-As GridControl and cell are asserted like **MSAA** control, a value of a cell will be displayed in the `HelpText` property. 
+As Grid Control and cell are asserted like **MSAA** control, a value of a cell will be displayed in the `HelpText` property. 
 
 The below example shows the checkbox is asserted and the checked state of the check box is displayed in `HelpText` property,
 
 ![Coded-UI-Automation_img16](Coded-UI-Automation_images/Coded-UI-Automation_img16.jpeg)
 
 ### Finding a Cell and Getting the Cell Value
-To find a cell in the GridControl, `SearchProperties` property can be used and to get the cell value, `GetPropertyValue` method can be used. The corresponding cell name has to be given for searching the control. 
+To find a cell in the Grid Control, `SearchProperties` property can be used and to get the cell value, `GetPropertyValue` method can be used. The corresponding cell name has to be given for searching the control. 
 {% tabs %}
 {% highlight c# %}
 [TestMethod]
@@ -262,7 +262,7 @@ The below example shows the getting of a cell value from grid,
 ![Coded-UI-Automation_img17](Coded-UI-Automation_images/Coded-UI-Automation_img17.jpeg)
 
 ### Highlighting a Cell
-To highlight a cell in GridControl, `DrawHighlight` method of corresponding `UITestControl` can be used.
+To highlight a cell in Grid Control, `DrawHighlight` method of corresponding `UITestControl` can be used.
 {% tabs %}
 {% highlight c# %}
 [TestMethod]
@@ -294,7 +294,7 @@ The below example shows the highlighting of a cell,
 ![Coded-UI-Automation_img18](Coded-UI-Automation_images/Coded-UI-Automation_img18.jpeg)
 
 ### Highlighting a Grid
-To highlight a GridControl, `DrawHighlight` method of corresponding `UITestControl` can be used.
+To highlight a Grid Control, `DrawHighlight` method of corresponding `UITestControl` can be used.
 {% tabs %}
 {% highlight c# %}
 [TestMethod]
@@ -322,7 +322,7 @@ The below example shows the highlighting of grid,
 ![Coded-UI-Automation_img19](Coded-UI-Automation_images/Coded-UI-Automation_img19.jpeg)
 
 ## External Plugin
-The GridControl also provides Coded UI support via external plugin. In this technique, the grid will be detected as `SyncControl` technology instead of detecting as `MSAA` object. The properties will be displayed based on the inner control of the asserted cell or grid. 
+The Grid Control also provides Coded UI support via external plugin. In this technique, the grid will be detected as `SyncControl` technology instead of detecting as `MSAA` object. The properties will be displayed based on the inner control of the asserted cell or grid. 
 
 ### System Requirements
 The following IDEs and .NET frameworks are supported for automating the GridControl.
@@ -402,11 +402,11 @@ End Class
 {% endtabs %}
 
 ### Assertion
-The GridControl can be detected as `Table` control type and Cell can be detected as `Cell` control type with custom rich properties. 
+The Grid Control can be detected as `Table` control type and Cell can be detected as `Cell` control type with custom rich properties. 
 
-The following table provides the details about the list of properties that will be displayed for GridControl and Cell,
+The following table provides the details about the list of properties that will be displayed for Grid Control and Cell,
 
-#### Asserting a GridControl
+#### Asserting a Grid Control
 <table>
 <tr>
 <th>
@@ -427,7 +427,7 @@ Description
 RowCount
 </td>
 <td>
-Indicates the number of rows in the GridControl
+Indicates the number of rows in the Grid Control
 </td>
 </tr>
 <tr>
@@ -438,7 +438,7 @@ Indicates the number of rows in the GridControl
 ColCount
 </td>
 <td>
-Indicates the number of columns in the GridControl
+Indicates the number of columns in the control
 </td>
 </tr>
 <tr>
@@ -449,7 +449,7 @@ Indicates the number of columns in the GridControl
 CurrentCell
 </td>
 <td>
-Indicates the current cell in the GridControl
+Indicates the current cell in the control
 </td>
 </tr>
 <tr>
@@ -460,7 +460,7 @@ Indicates the current cell in the GridControl
 SelectedRanges
 </td>
 <td>
-Indicates the range of selected cells in the GridControl
+Indicates the range of selected cells in the control
 </td>
 </tr>
 </table>
@@ -617,7 +617,7 @@ Indicates the dropdown style behavior of a cell if it is combobox cell.
 </table>
 
 ### Finding a Cell and Getting the Cell Value
-To find a cell in the GridControl, `SearchProperties` property can be used and to get a cell value, the `GetPropertyValue` method can be used. The corresponding control type, RowIndex and columnIndex has to be given for searching the control.
+To find a cell in the Grid Control, `SearchProperties` property can be used and to get a cell value, the `GetPropertyValue` method can be used. The corresponding control type, RowIndex and columnIndex has to be given for searching the control.
 
 {% tabs %}
 {% highlight c# %}
@@ -655,7 +655,7 @@ The below example shows the getting of a cell value from grid,
 ![Coded-UI-Automation_img21](Coded-UI-Automation_images/Coded-UI-Automation_img21.jpeg)
 
 ### Highlighting a Cell
-To highlight a cell in GridControl, the GridControl has to be searched with the needed searching properties and `DrawHighlight` method of corresponding `UITestControl` can be used.
+To highlight a cell in Grid Control, the control has to be searched with the needed searching properties and `DrawHighlight` method of corresponding `UITestControl` can be used.
 {% tabs %}
 {% highlight c# %}
 [TestMethod]
@@ -692,7 +692,7 @@ The below example shows the highlighting of a cell,
 ![Coded-UI-Automation_img22](Coded-UI-Automation_images/Coded-UI-Automation_img22.jpeg)
 
 ### Highlighting a Grid
-To highlight a GridControl, the GridControl has to be searched with the needed searching properties and `DrawHighlight` method of corresponding `UITestControl` can be used. 
+To highlight a Grid Control, the control has to be searched with the needed searching properties and `DrawHighlight` method of corresponding `UITestControl` can be used. 
 {% tabs %}
 {% highlight c# %}
 [TestMethod]

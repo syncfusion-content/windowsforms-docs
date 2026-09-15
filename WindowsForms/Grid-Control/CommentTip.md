@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Comment Tip in Windows Forms Grid Control
-GridControl provides the default support for adding the Excel-like comment tip to the individual cells. This allows a user to show more information about the particular cell on mouse hover. 
+Grid Control provides the default support for adding the Excel-like comment tip to the individual cells. This allows a user to show more information about the particular cell on mouse hover. 
 A user can customize an appearance of the comment tip window and comment indicator of the individual cells. The user can also add the images to the comment tip window.
 ![CommentTip_img1](CommentTip_images/CommentTip_img1.png)
 

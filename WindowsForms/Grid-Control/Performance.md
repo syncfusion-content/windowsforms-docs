@@ -11,7 +11,7 @@ documentation: ug
 [WinForms Grid Control](https://www.syncfusion.com/winforms-ui-controls/grid-control) has an extremely high performance standard. It can handle high frequency updates and work with large amounts of data without its performance being affected.
 
 ## High Frequency Real Time Updates
-GridControl supports frequent updates that occur in random cells across the grid while keeping CPU usage to a minimum level.
+Grid Control supports frequent updates that occur in random cells across the grid while keeping CPU usage to a minimum level.
 
 Let’s consider an example, in which a timer, changes the value of cells in short intervals. This example draws cell changes directly to the graphics context instead of performing an Invalidate. It shows user text using GDI instead of GDI+ and also shows how to optimize updates for inserting and removing rows. User can start multiple instances without slowing down the machine and can confirm the same by viewing Task Manager CPU usage while the sample runs. 
 ![Performance_img1](Performance_images/Performance_img1.png)
@@ -20,14 +20,14 @@ A sample demonstrating this feature is available under the following sample inst
 **&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Performance\Trader Grid Test Demo**
 
 ## Data Handling
-GridControl can support large amount of data without a performance hit.
+Grid Control can support large amount of data without a performance hit.
 
-The example explained here will step you through following three ways of populating the GridControl. The first technique just loops through cells and uses an indexer on the GridControl to set the values. The second uses `PopulateValues` method that optimally places data from a data source into a grid range. The third technique uses the GridControl in a virtual manner.
+The example explained here will step you through following three ways of populating the Grid Control. The first technique just loops through cells and uses an indexer on the control to set the values. The second uses `PopulateValues` method that optimally places data from a data source into a grid range. The third technique uses the control in a virtual manner.
 
 User can specify the size of the grid that is to be populated and then can try all the three methods to compare the performance. However, the .NET Framework JIT slows the first population owing to one-time **jitting** of the code.
 
 ### Using Indexer
-This technique loops through the cells and uses an indexer on the GridControl to set values.
+This technique loops through the cells and uses an indexer on the Grid Control to set values.
 {% tabs %}
 {% highlight c# %}
 for (int i = 0; i < this.numberOfArrayRows; ++i)
@@ -60,7 +60,7 @@ gridControl1.Model.PopulateValues(GridRangeInfo .Cells(top, left, bottom, right)
 N> To know more about PopulateValues method, refer the link over [here](https://help.syncfusion.com/windowsforms/grid-control/populating-data#populatevalues-method).
 
 ### Implementing Virtual Mode
-Three events need to be handled in order to implement a virtual mode in GridControl. They perform the following actions:
+Three events need to be handled in order to implement a virtual mode in Grid Control. They perform the following actions:
 
 [QueryRowCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html) - Determine number of rows<br/>
 [QueryColCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html) - Determine number of columns<br/>
@@ -125,7 +125,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-N> To know about the Virtual mode in GridControl, refer the link over [here](https://help.syncfusion.com/windowsforms/grid-control/virtual-grid).
+N> To know about the Virtual mode in Grid Control, refer the link over [here](https://help.syncfusion.com/windowsforms/grid-control/virtual-grid).
 
 ![Performance_img2](Performance_images/Performance_img2.png)
 
@@ -133,15 +133,15 @@ A sample demonstrating this feature is available under the following sample inst
 ***&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Virtual Grid\Grid Population Demo\\***
 
 ## Scrolling
-GridControl provides smooth scrolling support for large number of data. If GridControl contains a large number of rows then some optimizations has to be done to tweak the performance. In GridControl it is necessary to override a couple of virtual methods to make it perform well and use binary tree structures to quickly get the row index for an absolute pixel position and the other way around.
+Grid Control provides smooth scrolling support for large number of data. If the control contains a large number of rows then some optimizations has to be done to tweak the performance. In the control it is necessary to override a couple of virtual methods to make it perform well and use binary tree structures to quickly get the row index for an absolute pixel position and the other way around.
 
-Create a custom derived GridControl and override the following methods for optimizing the vertical scrolling.
+Create a custom derived Grid Control and override the following methods for optimizing the vertical scrolling.
 
 * [RowIndexToVScrollPixelPos](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_RowIndexToVScrollPixelPos_System_Int32_)<br/>
 * [VScrollPixelPosToRowIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_VScrollPixelPosToRowIndex_System_Int32_System_Int32__System_Int32__)<br/>
 * [GetVScrollPixelHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_GetVScrollPixelHeight)<br/>
 
-Refer the below code on how to increase the vertical pixel scrolling of GridControl for large number of rows.
+Refer the below code on how to increase the vertical pixel scrolling of Grid Control for large number of rows.
 
 {% tabs %}
 {% highlight c# %}
@@ -244,7 +244,7 @@ Me.gridControl1.VScrollPixel = True
 
 For sample and other information, refer the KB article over [here](https://www.syncfusion.com/kb/663/how-to-optimize-pixel-scrolling-in-the-winforms-gridcontrol).
 
-GridControl provides a property named [UseOldHiddenScrollLogic](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_UseOldHiddenScrollLogic) which increases the performance while scrolling when huge number of rows are hidden. If this property is set to true then it will switch back to the old logic for scrolling while rows or columns are hidden.
+Grid Control provides a property named [UseOldHiddenScrollLogic](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_UseOldHiddenScrollLogic) which increases the performance while scrolling when huge number of rows are hidden. If this property is set to true then it will switch back to the old logic for scrolling while rows or columns are hidden.
 
 {% tabs %}
 {% highlight c# %}
@@ -260,7 +260,7 @@ GridControlBase.UseOldHiddenScrollLogic = True
 N> There is a separate topic named Scrolling which explains all the properties and methods about scrolling. Refer that topic for more information on scrolling.
 
 ## Exporting
-GridControl provides a rich set of options for exporting data to Microsoft Excel file formats, word, PDF, CSV with proficient performance. Exporting performance can be improved, if styles for the grid is not been exported. This can be achieved by setting the [ExportStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridExcelConverterBase.html#Syncfusion_GridExcelConverter_GridExcelConverterBase_ExportStyle) property as `false`.
+Grid Control provides a rich set of options for exporting data to Microsoft Excel file formats, word, PDF, CSV with proficient performance. Exporting performance can be improved, if styles for the grid is not been exported. This can be achieved by setting the [ExportStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridExcelConverterBase.html#Syncfusion_GridExcelConverter_GridExcelConverterBase_ExportStyle) property as `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -276,7 +276,7 @@ converter.ExportStyle = False
 N> To know more on how to export and other properties, methods related to it please refer our Exporting topic.
 
 ## Importing
-GridControl gives support for importing the Microsoft Excel contents with smooth performance. To optimize the importing process, GridControl provides virtual importing support. Virtual importing will import the data from excel sheet only when on demand. This technique is the efficient way to import the Excel sheet to GridControl when it is needed. And also, importing performance can be significantly improved if styles and borders have been restricted while importing. 
+Grid Control gives support for importing the Microsoft Excel contents with smooth performance. To optimize the importing process, the control provides virtual importing support. Virtual importing will import the data from excel sheet only when on demand. This technique is the efficient way to import the Excel sheet to the control when it is needed. And also, importing performance can be significantly improved if styles and borders have been restricted while importing. 
 
 {% tabs %}
 {% highlight c# %}
