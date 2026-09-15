@@ -13,7 +13,7 @@ You can bind an ArrayList that holds objects with public properties. Given below
 
 1. We first define an object called Person with two public properties: FirstName and LastName.
 2. We then create an ArrayList holding a collection of these objects.
-3. To bind this ArrayList to Grid Data Bound Grid, we set the grid's DataSource property after dropping Grid Data Bound Grid onto the form.
+3. To bind this ArrayList to GridDataBoundGrid, we set the grid's DataSource property after dropping control onto the form.
 
 Given below is the code sample for this.
 

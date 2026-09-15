@@ -15,7 +15,7 @@ This section illustrates the following topics.
 
 ## Nested Drop-down Grids
 
-Nested Drop-down grids are used to represent multi-level data in a grid. For example, if a bank wants to load all the accounts of an enrolled user in grid control for a financial project, and some of the accounts have sub accounts with options to be selected under each sub account, which need to be loaded/ shown as a sub element to that account, Nested Drop-down grids can be used to represent data. Data can be distributed in parent (primary) grid, child grid, and so on. Grid Data Bound Grid control can display hierarchical data using Nested Drop-down grids.
+Nested Drop-down grids are used to represent multi-level data in a grid. For example, if a bank wants to load all the accounts of an enrolled user in grid control for a financial project, and some of the accounts have sub accounts with options to be selected under each sub account, which need to be loaded/ shown as a sub element to that account, Nested Drop-down grids can be used to represent data. Data can be distributed in parent (primary) grid, child grid, and so on. GridDataBoundGrid control can display hierarchical data using Nested Drop-down grids.
 
 ### Example
 
@@ -79,7 +79,7 @@ A sample demonstrating this feature is available under the following sample inst
 
 ## Multiple Nested Relations
 
-Grid Data Bound Grid control supports multiple nested relations. A relation can be added in the data source and the data source can be set to GridDataBoundGrid. Then the name of the relation can be passed through Grid.Binder.AddRelation function to show a hierarchical pattern.
+GridDataBoundGrid control supports multiple nested relations. A relation can be added in the data source and the data source can be set to the control. Then the name of the relation can be passed through Grid.Binder.AddRelation function to show a hierarchical pattern.
 
 ### Example
 
@@ -105,7 +105,7 @@ A sample demonstrating this feature is available under the following sample inst
 
 ## Hierarchical Grid with Tree Lines
 
-Grid Data Bound Grid supports display of hierarchical grid with tree lines. This can be achieved by setting the ShowTreeLines property to _true_. 
+GridDataBoundGrid supports display of hierarchical grid with tree lines. This can be achieved by setting the ShowTreeLines property to _true_. 
 
 {% tabs %}
 {% highlight c# %}
@@ -129,9 +129,9 @@ A sample demonstrating this feature is available under the following sample inst
 ## ExpandAll and CollapseAll Methods
 
 1. ExpandAll
-1. Using this method will enable the user to view expanded nodes in DataBound Grid, i.e., the parent, child and subsequent sub level nodes.
+1. Using this method will enable the user to view expanded nodes in DataBoundGrid, i.e., the parent, child and subsequent sub level nodes.
 
-   The following code illustrates how to set this method for DataBound Grid:
+   The following code illustrates how to set this method for DataBoundGrid:
 
 {% tabs %}
 {% highlight c# %}
@@ -142,14 +142,14 @@ Me.gridDataBoundGrid1.ExpandAll()
 {% endhighlight %}
 {% endtabs %}
 
-   ![Windows Forms Data-Relations Image4](Data-Relations_images/Data-Relations_img4.jpeg)
+   ![Data-Relations Image4](Data-Relations_images/Data-Relations_img4.jpeg)
 
 
 
 2. CollapseAll
-3. Using this method will enable the user to view collapsed nodes in DataBound Grid, i.e., only the parent node can be viewed with its corresponding expansion icon.
+3. Using this method will enable the user to view collapsed nodes in DataBoundGrid, i.e., only the parent node can be viewed with its corresponding expansion icon.
 
-   The following code illustrates how to set this method for DataBound Grid:
+   The following code illustrates how to set this method for DataBoundGrid:
 
 {% tabs %}
 {% highlight c# %}
@@ -159,4 +159,4 @@ Me.gridDataBoundGrid1.ExpandAll()
 Me.gridDataBoundGrid1.CollapseAll()
 {% endhighlight %}
 {% endtabs %}
-   ![Windows Forms Data-Relations Image5](Data-Relations_images/Data-Relations_img5.jpeg) 
+   ![Data-Relations Image5](Data-Relations_images/Data-Relations_img5.jpeg) 

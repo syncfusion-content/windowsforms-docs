@@ -19,7 +19,7 @@ Here is a screen shot showing you Master-Detail grid pair using Northwind Custom
 
 
 
-Here is the code that implements this Master-Detail form. In the designer, two DataAdapters (one for each table), Customers and Orders are added to the form. A DataSet will be generated as well. Two DataBound Grids are also positioned on the form. The Form_Load event listed below will set up all the data binding between DataSet that is holding the two tables and the two grids. 
+Here is the code that implements this Master-Detail form. In the designer, two DataAdapters (one for each table), Customers and Orders are added to the form. A DataSet will be generated as well. Two GridDataBoundGrid's are also positioned on the form. The Form_Load event listed below will set up all the data binding between DataSet that is holding the two tables and the two grids. 
 
 {% tabs %}
 {% highlight c# %}

@@ -9,7 +9,7 @@ documentation: ug
 
 # Accessing Values in Windows Forms GridDataBoundGrid 
 
-To access values in the Grid Data Bound Grid, use the indexer and retrieve the value from the GridStyleInfo object. 
+To access values in the GridDataBoundGrid, use the indexer and retrieve the value from the GridStyleInfo object. 
 
 {% tabs %}
 {% highlight c# %}

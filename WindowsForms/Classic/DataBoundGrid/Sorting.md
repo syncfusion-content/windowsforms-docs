@@ -9,7 +9,7 @@ documentation: ug
 
 # Sorting in Windows Forms GridDataBoundGrid
 
-Sorting feature available in DataBound Grid control allows the user to arrange items in a sequence and/or in different sets. SortBehavior property under the control allows you to sort a column in a data bound grid when the column header cell is clicked. Implementation of this property will rearrange the cell data in the clicked column. This property can be set using either a code or designer. By default, it is set to perform sorting on double-click. GridSortBehavior is an enumeration that defines the sorting behavior options/values.
+Sorting feature available in GridDataBoundGrid control allows the user to arrange items in a sequence and/or in different sets. SortBehavior property under the control allows you to sort a column in a data bound grid when the column header cell is clicked. Implementation of this property will rearrange the cell data in the clicked column. This property can be set using either a code or designer. By default, it is set to perform sorting on double-click. GridSortBehavior is an enumeration that defines the sorting behavior options/values.
 
 Following is the list of options/values that can be assigned to SortBehavior property:
 
@@ -32,11 +32,11 @@ Me.gridDataBoundGrid1.SortBehavior = GridSortBehavior.SingleClick
 
 ## Sort by DisplayMember
 
-By default, sorting is done in DataBound Grid through IBindingList.
+By default, sorting is done in GridDataBoundGrid through IBindingList.
 
 N> IBindingList interface provides features required to support both complex and simple scenarios when binding to a data source.
 
-Sort method relies on the data source for the grid and by default sorting is done based on the value members present in the data source and not based on display member. We can implement Sort By DisplayMember feature in Data Bound Grid. The code for foreign key column can be added to the View of the data table so that the sort behavior can be redirected to use foreign key column linked to the combo box column when the user sorts combo box column.
+Sort method relies on the data source for the grid and by default sorting is done based on the value members present in the data source and not based on display member. We can implement Sort By DisplayMember feature in GridDataBoundGrid. The code for foreign key column can be added to the View of the data table so that the sort behavior can be redirected to use foreign key column linked to the combo box column when the user sorts combo box column.
 
 ### Example
 

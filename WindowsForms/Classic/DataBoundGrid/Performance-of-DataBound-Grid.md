@@ -9,7 +9,7 @@ documentation: ug
 
 # Performance in Windows Forms GridDataBoundGrid
 
-Essential DataBound Grid can handle large amount of data without a performance hit.
+Essential GridDataBoundGrid can handle large amount of data without a performance hit.
 
 ![Performance-of-DataBound-Grid_img1](Performance-of-DataBound-Grid_images/Performance-of-DataBound-Grid_img1.png) 
 

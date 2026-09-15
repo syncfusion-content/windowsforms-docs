@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Windows Forms GridDataBoundGrid Control
 
-This section will provide step-by-step procedure to create Grid DataBound Grid through designer and through programmatic approach in a .NET application.
+This section will provide step-by-step procedure to create GridDataBoundGrid through designer and through programmatic approach in a .NET application.
 
 ## Assembly Deployment
 
@@ -19,11 +19,11 @@ Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-de
 
 ### Through Designer
 
-In this lesson, you will learn how to use Forms Designer to create an Essential DataBound Grid. You can rely on the designer to generate all the codes necessary except for two lines: one that fills the ADO.NET adapter and one that updates the database when you are done.
+In this lesson, you will learn how to use Forms Designer to create an Essential GridDataBoundGrid. You can rely on the designer to generate all the codes necessary except for two lines: one that fills the ADO.NET adapter and one that updates the database when you are done.
 
-#### Basic DataBound Grid
+#### Basic GridDataBoundGrid
 
-In this part, you will learn how to use the designer to place DataBound Grid on a form. 
+In this part, you will learn how to use the designer to place GridDataBoundGrid on a form. 
 
 1. In Visual Studio .NET, use the File -> Menu option to create a new Windows Application project, naming it DBGridTutorial.
 
@@ -85,7 +85,7 @@ Click Next to confirm the Query you selected.
 
 Click Finish. Your design surface will look similar to this.
 
- ![Windows Forms Getting-Started Image8](Getting-Started_images/Getting-Started_img8.jpeg) 
+ ![Getting-Started Image8](Getting-Started_images/Getting-Started_img8.jpeg) 
 
 
 
@@ -99,15 +99,15 @@ Next you will need to generate a dataset from the SQLDataAdapter. Right-click sq
 
 Press OK to add DataSet11 object next to sqlConnection1 under the design surface.
 
-From the toolbox, drag Grid Data Bound Grid control to your form. Size and position it and add a button labeled Update to your form.
+From the toolbox, drag GridDataBoundGrid control to your form. Size and position it and add a button labeled Update to your form.
 
- ![Windows Forms Getting-Started Image10](Getting-Started_images/Getting-Started_img10.jpeg) 
-
-
+ ![Getting-Started Image10](Getting-Started_images/Getting-Started_img10.jpeg) 
 
 
 
-Click DataBound Grid to display its properties in PropertyGrid. Set these properties.
+
+
+Click GridDataBoundGrid to display its properties in PropertyGrid. Set these properties.
 
 
 
@@ -153,9 +153,9 @@ Now when you click Update button, it will post the changes made back to your dat
 
 #### Applying special column formats
 
-GridBoundColumn collection property of DataBound Grid is used to set column properties. This collection will let you control columns displayed and their order. For each column that you want displayed, add a Grid Bound Column. In this Grid Bound Column, you must set MappingName property; the other properties such as HeaderText and Style are optional. Under the Style property, you will have access to normal GridStyleInfo properties that you can apply to this column such as BackColor, CellType and Font.
+GridBoundColumn collection property of GridDataBoundGrid is used to set column properties. This collection will let you control columns displayed and their order. For each column that you want displayed, add a Grid Bound Column. In this Grid Bound Column, you must set MappingName property; the other properties such as HeaderText and Style are optional. Under the Style property, you will have access to normal GridStyleInfo properties that you can apply to this column such as BackColor, CellType and Font.
 
- ![Windows Forms Getting-Started Image11](Getting-Started_images/Getting-Started_img11.jpeg) 
+ ![Getting-Started Image11](Getting-Started_images/Getting-Started_img11.jpeg) 
 
 
 
@@ -167,7 +167,7 @@ GridBoundColumn collection property of DataBound Grid is used to set column prop
 
    Click Add button to add a grid bound column, and then set MappingName property of that grid bound column to _ProductName_.
 
-   ![Windows Forms Getting-Started Image12](Getting-Started_images/Getting-Started_img12.jpeg) 
+   ![Getting-Started Image12](Getting-Started_images/Getting-Started_img12.jpeg) 
 
 
 
@@ -175,7 +175,7 @@ GridBoundColumn collection property of DataBound Grid is used to set column prop
 
    Select StyleInfo property and set BackColor for the column as shown in the following screen shot.
 
-   ![Windows Forms Getting-Started Image13](Getting-Started_images/Getting-Started_img13.jpeg) 
+   ![Getting-Started Image13](Getting-Started_images/Getting-Started_img13.jpeg) 
 
 
 
@@ -187,7 +187,7 @@ GridBoundColumn collection property of DataBound Grid is used to set column prop
 
 
 
-Compile and run the project to see formatted Grid Data Bound Grid. In the following screen shot, you will be able to see the grid with columns specified and in the order that you specified them. Notice that the 'UnitPrice' column shows the price in specified currency format.
+Compile and run the project to see formatted GridDataBoundGrid. In the following screen shot, you will be able to see the grid with columns specified and in the order that you specified them. Notice that the 'UnitPrice' column shows the price in specified currency format.
 
 ![Getting-Started_img15](Getting-Started_images/Getting-Started_img15.jpeg) 
 
@@ -197,7 +197,7 @@ Compile and run the project to see formatted Grid Data Bound Grid. In the follow
 
 ### Through Code
 
-Here are some code samples that will create a DataTable and bind it a to Grid Data Bound Grid. Once you have a DataTable object populated you can use the GridDataBoundGrid.DataSource property to implement the binding.
+Here are some code samples that will create a DataTable and bind it a to GridDataBoundGrid. Once you have a DataTable object populated you can use the GridDataBoundGrid.DataSource property to implement the binding.
 
 {% tabs %}
 {% highlight c# %}

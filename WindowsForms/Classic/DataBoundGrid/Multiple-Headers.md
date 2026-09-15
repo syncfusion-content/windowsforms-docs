@@ -9,7 +9,7 @@ documentation: ug
 
 # Multiple Headers in Windows Forms GridDataBoundGrid
 
-Grid Data Bound Grid supports display of multiple row and column headers. Additional row headers can be added along side the existing header by setting Model.Rows.HeaderCount and additional column headers can be added below the existing column header by setting the Model.Cols.HeaderCount property.
+GridDataBoundGrid supports display of multiple row and column headers. Additional row headers can be added along side the existing header by setting Model.Rows.HeaderCount and additional column headers can be added below the existing column header by setting the Model.Cols.HeaderCount property.
 
 The following code example illustrates how to display multiple row and column headers.
 

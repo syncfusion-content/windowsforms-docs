@@ -9,7 +9,7 @@ documentation: ug
 
 # Events in Windows Forms GridDataBoundGrid
 
-The important events in Grid control and DataBound Grid are as follows.
+The important events in Grid control and DataBoundGrid are as follows.
 
 ## Current Cell Related Events
 

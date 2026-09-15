@@ -9,11 +9,11 @@ documentation: ug
 
 # Sort by DisplayMember in Windows Forms GridDataBoundGrid
 
-By default, sorting is done in DataBound Grid through IBindingList.
+By default, sorting is done in GridDataBoundGrid through IBindingList.
 
 N> IBindingList interface provides features required to support both complex and simple scenarios when binding to a data source.
 
-Sort method relies on the data source for the grid and by default sorting is done based on the value members present in the data source and not based on display member. We can implement Sort By DisplayMember feature in Data Bound Grid. The code for foreign key column can be added to the View of the data table so that the sort behavior can be redirected to use foreign key column linked to the combo box column when the user sorts combo box column.
+Sort method relies on the data source for the grid and by default sorting is done based on the value members present in the data source and not based on display member. We can implement Sort By DisplayMember feature in GridDataBoundGrid. The code for foreign key column can be added to the View of the data table so that the sort behavior can be redirected to use foreign key column linked to the combo box column when the user sorts combo box column.
 
 ## Example
 

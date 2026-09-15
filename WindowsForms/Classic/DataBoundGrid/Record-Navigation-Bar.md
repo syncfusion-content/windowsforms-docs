@@ -9,7 +9,7 @@ documentation: ug
 
 # Record Navigation Bar in Windows Forms GridDataBoundGrid
 
-It is possible to display DataBound Grid within Grid Record Navigation control. This combination will give you a look similar to Microsoft Access.
+It is possible to display GridDataBoundGrid within Grid Record Navigation control. This combination will give you a look similar to Microsoft Access.
 
 ![Record-Navigation-Bar_img1](Record-Navigation-Bar_images/Record-Navigation-Bar_img1.jpeg)
 
@@ -21,7 +21,7 @@ N> For more details, refer to the following browser sample:
 
 ## Example
 
-The following sample displays DataBound Grid within Grid Record Navigation control. This sample was created using the designer. 
+The following sample displays GridDataBoundGrid within Grid Record Navigation control. This sample was created using the designer. 
 
 1. Step 1: Create an SqlDataAdapter and connect to the Customers table of Northwind database. 
 
@@ -31,22 +31,22 @@ The following sample displays DataBound Grid within Grid Record Navigation contr
 
 2. Step 2: Drag Grid Record Navigation control onto the form.
 
-   ![Windows Forms Record-Navigation-Bar Image4](Record-Navigation-Bar_images/Record-Navigation-Bar_img4.png) 
+   ![Record-Navigation-Bar Image4](Record-Navigation-Bar_images/Record-Navigation-Bar_img4.png) 
 
 
 
 
 
-3. Step 3: Drag Grid DataBound Grid onto the Grid Record Navigation control.
+3. Step 3: Drag GridDataBoundGrid onto the Grid Record Navigation control.
 
-   ![Windows Forms Record-Navigation-Bar Image5](Record-Navigation-Bar_images/Record-Navigation-Bar_img5.png) 
+   ![Record-Navigation-Bar Image5](Record-Navigation-Bar_images/Record-Navigation-Bar_img5.png) 
 
 
 
    N> Records can be displayed by typing in the NavigationBar.
 
-   ![Windows Forms Record-Navigation-Bar Image7](Record-Navigation-Bar_images/Record-Navigation-Bar_img7.jpeg) 
+   ![Record-Navigation-Bar Image7](Record-Navigation-Bar_images/Record-Navigation-Bar_img7.jpeg) 
 
 
-DataBound Grid is displayed within Grid Record Navigation control.
+GridDataBoundGrid is displayed within Grid Record Navigation control.
 

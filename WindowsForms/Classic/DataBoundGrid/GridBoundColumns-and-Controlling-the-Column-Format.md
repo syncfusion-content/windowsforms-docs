@@ -9,7 +9,7 @@ documentation: ug
 
 # GridBoundColumns in Windows Forms GridDataBoundGrid
 
-To control properties of a column in your Grid DataBound Grid, you must use GridBoundColumn class object. You can also explicitly add GridBoundColumn object to GridDataBoundGrid.GridBoundColumns collection for each column that you want to see in the grid or you can let GridDataBoundGrid.Binder class generate these columns for you. 
+To control properties of a column in your GridDataBoundGrid, you must use GridBoundColumn class object. You can also explicitly add GridBoundColumn object to GridDataBoundGrid.GridBoundColumns collection for each column that you want to see in the grid or you can let GridDataBoundGrid.Binder class generate these columns for you. 
 
 Here are the code samples that will explicitly add GridBoundColumns. Note that you can add these GridBoundColumns at design-time provided you properly set MappingName property for each column.
 
