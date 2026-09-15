@@ -21,3 +21,4 @@ SfTabbedForm provides the following key features:
 * Customizes the appearance of the tabs.
 * Customizes the appearance of the title bar.
 * Provides smooth scrolling experience even when tabs overflow into the tab panel.
+* Supports set of visual styles to customize the look and feel of SfTabbedForm control.
