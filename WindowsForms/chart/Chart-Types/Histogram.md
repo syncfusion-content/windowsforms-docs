@@ -202,3 +202,7 @@ chartControl.Series(0).ConfigItems.HistogramItem.ShowDataPoints = False
 {% endtabs %}
 
 ![Histogram Show Number Distribution in Windows Forms](../Chart-Types_images/windowsforms-histogram-show-data-points.png)
+
+## See Also
+
+-[How to enable or disable data points in a WinForms HistogramSeries](https://support.syncfusion.com/kb/article/8291/how-to-enable-or-disable-data-points-in-a-winforms-histogramseries)

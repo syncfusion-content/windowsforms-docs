@@ -13,7 +13,7 @@ documentation: ug
 
 A hilo chart is a financial chart commonly used to display the trading range of a stock or other data over a period. It uses two Y-values `High` and `Low` to represent the maximum and minimum values, making it easy to visualize value ranges and fluctuations.
 
-The following code example demonstrates how to create a hilo Chart.
+The following code example demonstrates how to create a hilo chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -81,7 +81,7 @@ profit.Style.Border.Width = 3
 
 The range column chart is similar to the column chart, except that each column is rendered over a range. Therefore, the user must specify the starting and ending Y-axis values for each data point.
 
-The following code example demonstrates how to create a range column Chart.
+The following code example demonstrates how to create a range column chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -136,11 +136,7 @@ chartControl.Series.Add(secondServer)
 
 A range area chart is similar to an area chart, but it requires two Y-values for each X-value: a start (lower bound) and an end (upper bound). The chart fills the area between these two values, making it easy to visualize the range of data for each point.
 
-You can also customize the following feature for range area charts:
-
-* **Chart Custom Points**: Chart custom points are used to set custom points in a series using the [ChartCustomPoint](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartCustomPoint.html) class.
-
-The following code example demonstrates how to create a range area Chart.
+The following code example demonstrates how to create a range area chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -182,7 +178,7 @@ chartControl.Series.Add(series)
 
 ### Swap high low point
 
-The [SwapHighLowPoint](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRangeAreaConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartRangeAreaConfigItem_SwapHighLowPoint) property controls whether the High and Low values are automatically swapped in a range area chart when the Low value is greater than the High value.
+The [SwapHighLowPoint](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRangeAreaConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartRangeAreaConfigItem_SwapHighLowPoint) property controls whether the High and Low values are automatically swapped in a range area chart when the low value is greater than the high value.
 
 The following code enables automatic swapping of High and Low values.
 
