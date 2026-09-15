@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Input Toolbar in Windows Forms AI AssistView control | Syncfusion
-description: Learn about the Input Toolbar feature in the AI AssistView control that allows users to attach files, upload images, record audio, and trigger custom input actions before sending a prompt.
+description: Learn about the Input Toolbar in AI AssistView, enabling file attachments, image uploads, and custom actions before prompts.
 platform: windowsforms
 control: SfAIAssistView
 documentation: ug
