@@ -11,7 +11,7 @@ documentation: ug
 
 ## Resizing Heights of Individual Rows in Grid
 
-Grid Grouping control does not support resizing heights of individual rows in the grid. This feature has been newly added and can be implemented by initializing an instance of the AllowResizingIndividualRows class to GridEngineFactory in the Form's constructor of your Windows application. The following code examples illustrate how to do this.
+GridGroupingControl does not support resizing heights of individual rows in the grid. This feature has been newly added and can be implemented by initializing an instance of the AllowResizingIndividualRows class to GridEngineFactory in the Form's constructor of your Windows application. The following code examples illustrate how to do this.
 
 {% tabs %}
 {% highlight C# %}  
@@ -32,7 +32,7 @@ The following screen shot illustrates how the heights of individual rows in the 
 
 ## Grid Dynamic Filter
 
-GridDynamicFilter class is used to wire a custom filter bar to the Grid Grouping control by replacing the default filter bar. The existing filter bar logic is extended to make the filter easy to use. This feature displays filtered results as you type each character.
+GridDynamicFilter class is used to wire a custom filter bar to the GridGroupingControl by replacing the default filter bar. The existing filter bar logic is extended to make the filter easy to use. This feature displays filtered results as you type each character.
 
 The new filter bar adds two cell buttons, Filter button and Clear Filter button, inside every filter bar cell. The Filter button is used to display a list of available Compare Operators in a drop down. The selected operator will then be associated with the value present in the filter bar cell to form a filter string. Clear Filter button, as its name indicates, clears the record filters of the respective column. This button will be displayed for a filter bar cell only when that particular cell is in focus.
 
@@ -47,7 +47,7 @@ GridEngineFactory.Factory = New Syncfusion.GridHelperClasses.AllowResizingIndivi
  {% endhighlight %}
 {% endtabs %}
 
-The following screen shot illustrates Grid Grouping control with filter drop down.
+The following screen shot illustrates GridGroupingControl with filter drop down.
 
  ![Grid-Helper-Classes_images2](Grid-Helper-Classes_images/Grid-Helper-Classes_img2.jpeg) 
 
@@ -104,9 +104,9 @@ GridForeignKeyHelper.SetupForeignTableLookUp(gridGroupingControl1, "Country", co
 {% endhighlight %}
 {% endtabs %}
 
-N> * The first argument in this method is an instance of Grid Grouping control.* The second argument is the column name of the Parent table's Value Member.* The third argument is the name of the Foreign table.* The fourth argument is the column name of Child table's Value Member.* The fifth argument is the column name of Child tables's Display Member.
+N> * The first argument in this method is an instance of GridGroupingControl.* The second argument is the column name of the Parent table's Value Member.* The third argument is the name of the Foreign table.* The fourth argument is the column name of Child table's Value Member.* The fifth argument is the column name of Child tables's Display Member.
 
-The following screen shot illustrates Foreign Key Relations in the Grid Grouping control.
+The following screen shot illustrates Foreign Key Relations in the GridGroupingControl.
 
  ![Grid-Helper-Classes_images6](Grid-Helper-Classes_images/Grid-Helper-Classes_img6.jpeg) 
 
@@ -114,7 +114,7 @@ The following screen shot illustrates Foreign Key Relations in the Grid Grouping
 
 ## Grid Field Chooser
 
-You can customize column appearance of a Grid Grouping control by using plug-in utility called Field Chooser. FieldChooser class can be associated with Grid Grouping control to add or remove columns from the grid. The following code example illustrates this.
+You can customize column appearance of a GridGroupingControl by using plug-in utility called Field Chooser. FieldChooser class can be associated with the control to add or remove columns from the grid. The following code example illustrates this.
 
 {% tabs %}
 {% highlight C# %} 
@@ -125,7 +125,7 @@ Dim fieldChooser As New FieldChooser(Me.gridGroupingControl1)
 {% endhighlight %}
 {% endtabs %}
 
-Following screen shot shows Grid Grouping control with the Field dialog box.
+Following screen shot shows GridGroupingControl with the Field dialog box.
 
  ![Grid-Helper-Classes_images7](Grid-Helper-Classes_images/Grid-Helper-Classes_img7.jpeg) 
 
@@ -133,7 +133,7 @@ Following screen shot shows Grid Grouping control with the Field dialog box.
 
 
 
-To add or remove columns by using Field Chooser, right-click column header and select Field Chooser menu item to view Field dialog box. This dialog box lists all the column names with check boxes. You can select or clear check boxes to add or remove respective columns from Grid Grouping control.
+To add or remove columns by using Field Chooser, right-click column header and select Field Chooser menu item to view Field dialog box. This dialog box lists all the column names with check boxes. You can select or clear check boxes to add or remove respective columns from GridGroupingControl.
 
 A sample demonstration of Grid Field Chooser feature is available in the following sample installation path.
 
@@ -141,7 +141,7 @@ _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Gr
 
 ## Filtering By Display Member
 
-This topic elaborates on filtering columns in the Grid Data Bound Grid and Grid Grouping controls by their display member.
+This topic elaborates on filtering columns in the Grid Data Bound Grid and GridGroupingControls by their display member.
 
 ### Filtering Columns in Grid Data Bound Grid
 
@@ -172,11 +172,11 @@ Following screen shot illustrates how to filter a column in the Grid Data Bound 
 
 
 
-### Filtering Columns in Grid Grouping Control
+### Filtering Columns in GridGroupingControl
 
-GroupingGridFilterBarExt class provides support to filter a column in the Grid Grouping control by its display member instead of value member. This is accomplished by implementing a custom filter bar cell by replacing the default filter bar cell.
+GroupingGridFilterBarExt class provides support to filter a column in the GridGroupingControl by its display member instead of value member. This is accomplished by implementing a custom filter bar cell by replacing the default filter bar cell.
 
-Following code example illustrates how to wire the GroupingGridFilterBarExt to the Grid Grouping control. 
+Following code example illustrates how to wire the GroupingGridFilterBarExt to the GridGroupingControl. 
 
 {% tabs %}
 {% highlight C# %}  
@@ -193,7 +193,7 @@ Me.gGCFilter.WireGrid(Me.gridGroupingControl1)
 {% endhighlight %}
 {% endtabs %}
 
-Following screen shot illustrates how to filter a column in the Grid Grouping control by its display member.
+Following screen shot illustrates how to filter a column in the GridGroupingControl by its display member.
  ![Grid-Helper-Classes_images9](Grid-Helper-Classes_images/Grid-Helper-Classes_img9.jpeg) 
 
 
@@ -372,7 +372,7 @@ this.filter.WireGrid(gridGroupingControl1);
 AllowFilterByColor
 
 
-You can enable FilterByColor functionality in GridExcelFilter by setting AllowFilterByColor property. GridExcelFilter calculates the colors available in the collection of the Grid Grouping control and displays any five colors from the collection in a drop-down. You can view the other available colors by clicking the “_More Cell Colors/More Font Colors”_ option in the drop-down menu.
+You can enable FilterByColor functionality in GridExcelFilter by setting AllowFilterByColor property. GridExcelFilter calculates the colors available in the collection of the GridGroupingControl and displays any five colors from the collection in a drop-down. You can view the other available colors by clicking the “_More Cell Colors/More Font Colors”_ option in the drop-down menu.
 
 The following screen shots show the list of available colors when FilerByColor property is enabled in GridGroupingControl.
 

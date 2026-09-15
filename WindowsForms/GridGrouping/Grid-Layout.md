@@ -820,7 +820,7 @@ Me.gridGroupingControl1.TableModel.Cols.FreezeRange(1, 3)
 {% endtabs %}
 
 ### Freezing the Caption Row
-GridGroupingControl provides support to freeze caption row to make sure it stays visible while scrolling content to the left or right. With [FreezeCaption](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_FreezeCaption) property, you can freeze or unfreeze the caption row in the Grid Grouping control.
+GridGroupingControl provides support to freeze caption row to make sure it stays visible while scrolling content to the left or right. With [FreezeCaption](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_FreezeCaption) property, you can freeze or unfreeze the caption row in the GridGroupingControl.
 
 {% tabs %}
 {% highlight c# %}

@@ -27,7 +27,7 @@ Describes whether to show the Navigation Bar.</td></tr>
 ShowRecordPreviewRow</td><td>
 Indicates whether the nested table has preview row.</td></tr>
 </table>
-The following code example illustrates how to make use of Journal control using GridGrouping controls.
+The following code example illustrates how to make use of Journal control using GridGroupingControls.
 
 {% tabs %}
 {% highlight C# %}

@@ -19,7 +19,7 @@ Custom Grouping can be achieved by adding a custom Categorizer object to SortCol
 
 Say you have a column with values for 0 to 50, and you want to have them grouped so that values less than 10 are in one group, values 10-20 are in another, values 20-30 in another, and so on. The following code example illustrates how to achieve this by using Custom Categorizer.
 
-1. Create a datasource and bind it to a grid grouping control.
+1. Create a datasource and bind it to a GridGroupingControl.
 {% capture codesnippet1 %}
 {% tabs %}
 {% highlight C# %}  
@@ -350,7 +350,7 @@ Given below is a sample screen shot.
 
 ## Custom Sorting
 
-Custom Sorting allows you to implement custom sorting logic when the standard sorting techniques do not meet your needs. To support custom sorting in Grid Grouping control, the user needs to add an IComparer object and handle one event. The Comparer object allows you to control how the sorting is done on the column. This is the place where you can define your own sorting logic. After customizing the sorting logic through IComparer, you can make grouping grid use this special IComparer by handling an event.
+Custom Sorting allows you to implement custom sorting logic when the standard sorting techniques do not meet your needs. To support custom sorting in GridGroupingControl, the user needs to add an IComparer object and handle one event. The Comparer object allows you to control how the sorting is done on the column. This is the place where you can define your own sorting logic. After customizing the sorting logic through IComparer, you can make grouping grid use this special IComparer by handling an event.
 
 ### Example
 
@@ -358,7 +358,7 @@ Consider a scenario where one of the data columns of your datasource consists of
 
 The example illustrates this process in a step-by-step manner.
 
-1. Setup a datasource and bind it to a grid grouping control.
+1. Setup a datasource and bind it to a GridGroupingControl.
 {% capture codesnippet5 %}
 {% tabs %}
 {% highlight C# %}  
@@ -519,10 +519,10 @@ private string specialDateColName = "Col3";
 
 private DateComparer specialDateComparer = new DateComparer();
 
-//Sets up support for custom sort on Grid Grouping control.
+//Sets up support for custom sort on GridGroupingControl.
 this.gridGroupingControl1.TableDescriptor.SortedColumns.Changing += new ListPropertyChangedEventHandler(SortedColumns_Changing);
 
-//Makes the Grid Grouping control use special IComparer.
+//Makes the GridGroupingControl use special IComparer.
 void SortedColumns_Changing(object sender, ListPropertyChangedEventArgs e)
 {
     SortColumnDescriptor sortColumnDescriptor = e.Item as SortColumnDescriptor;
@@ -539,10 +539,10 @@ Private specialDateColName As String = "Col3"
 
 Private specialDateComparer As DateComparer = New DateComparer()
 
-'Sets up support for custom sort on Grid Grouping control.
+'Sets up support for custom sort on GridGroupingControl.
 AddHandler gridGroupingControl1.TableDescriptor.SortedColumns.Changing, AddressOf SortedColumns_Changing
 
-'Makes the Grid Grouping control use special IComparer.
+'Makes the GridGroupingControl use special IComparer.
 
 Private Sub SortedColumns_Changing(ByVal sender As Object, ByVal e As ListPropertyChangedEventArgs)
 Dim sortColumnDescriptor As SortColumnDescriptor = CType(IIf(TypeOf e.Item Is SortColumnDescriptor, e.Item, Nothing), SortColumnDescriptor)

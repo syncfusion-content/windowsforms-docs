@@ -270,7 +270,7 @@ The Grid will be populated as follows,
 &lt;Installed_Location&gt;\Syncfusion\EssentialStudio[Version_Number]\Windows\Grid.Grouping.Windows\Samples\Data Sources\Array List Demo
 
 ### Binding IBindingList Collection
-This section demonstrates implementation of `IBindingList` and how to bind this list to GridGrouping control. As `IBindingList` derives from `IList`, it requires the implementation of all the members of the `IList`, `ICollection` and `IEnumerable` interfaces.
+This section demonstrates implementation of `IBindingList` and how to bind this list to GridGroupingControl. As `IBindingList` derives from `IList`, it requires the implementation of all the members of the `IList`, `ICollection` and `IEnumerable` interfaces.
 
 #### Benefits
 The benefit of using `IBindingList` includes support for change notifications when the list is modified. It does have `ListChanged` event, which will be fired upon any data change. If the collection supports changes, it should also support firing `ListChanged` event when the collection changes. To indicate that, the collection should return true from `SupportsChangeNotification` property. Hence when items are added or removed from the collection, the grouping grid will be notified of these changes and will update itself automatically.
@@ -512,7 +512,7 @@ Since the collection knows the type of object, it does not need to type cast ite
 While writing the code to manage collection items, user can perform any other operation on the items that are being written into and read from the collection.
 
 ### Collection Base
-Strongly Typed collection can be created by inheriting from the `System.Collections.CollectionBase` class. `CollectionBase` class implements IList, IListSource, and IEnumerable. These interfaces enable the users to implement methods and properties that support binding, enumerating, and looping using ForEach construct. The result is that your strongly typed collections can be bound directly to our grid grouping control as data source.
+Strongly Typed collection can be created by inheriting from the `System.Collections.CollectionBase` class. `CollectionBase` class implements IList, IListSource, and IEnumerable. These interfaces enable the users to implement methods and properties that support binding, enumerating, and looping using ForEach construct. The result is that your strongly typed collections can be bound directly to our GridGroupingControl as data source.
 
 1. Create a class Product whose instances represent the records and properties represent the record fields.
 

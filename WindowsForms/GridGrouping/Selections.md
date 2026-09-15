@@ -9,11 +9,11 @@ documentation: ug
 
 # Selections in Windows Forms GridGroupingControl
 
-There are two type of selection architectures in a Grid Grouping control. One is designed specifically for Grid Grouping control referred as Record-Based Selection and the other is inherited from GridControlBase named as Model-Based Selection. 
+There are two type of selection architectures in a GridGroupingControl. One is designed specifically for control referred as Record-Based Selection and the other is inherited from GridControlBase named as Model-Based Selection. 
 
-If you use the Record-Based selection functionality, then whole records are selected and these selections function properly with nested tables, sorting, and so on. If you choose the inherited selection capability, you will be able to select cell ranges, but the selections will have no knowledge of nested tables, grouping, or sorting, and thus is limited in Grid Grouping control. 
+If you use the Record-Based selection functionality, then whole records are selected and these selections function properly with nested tables, sorting, and so on. If you choose the inherited selection capability, you will be able to select cell ranges, but the selections will have no knowledge of nested tables, grouping, or sorting, and thus is limited in GridGroupingControl. 
 
-To use the Grid Grouping control record selections, you must set AllowSelections to None and then set ListBoxSelectionMode to something other than None. To use inherited selection capability, set AllowSelections to something other than None.
+To use the GridGroupingControl record selections, you must set AllowSelections to None and then set ListBoxSelectionMode to something other than None. To use inherited selection capability, set AllowSelections to something other than None.
 
 ## Model Based Selection
 
@@ -123,7 +123,7 @@ N> For more details, refer to the following browser sample:
 
 This type of selection mechanism allows selection in terms of record. It is not cell based. This selection mode is specifically designed for a Grouping Grid and hence it is aware of nested tables, nested groups, and the like. Any selection that is record based affects Table.SelectedRecords collection. 
 
-Grid Grouping control offers three types of record based selections, which together are called ListBoxSelection Modes. To enable record based selection, you need to set ListBoxSelectionMode property to a value other than None. Once a listbox selection is enabled, it automatically turns off the model based selection by assigning None to AllowSelection property.
+GridGroupingControl offers three types of record based selections, which together are called ListBoxSelection Modes. To enable record based selection, you need to set ListBoxSelectionMode property to a value other than None. Once a listbox selection is enabled, it automatically turns off the model based selection by assigning None to AllowSelection property.
 
 Following code example illustrates the different types of record based selections.
 
@@ -379,7 +379,7 @@ Disables the cell selection.</td></tr>
 
 Follow the steps below to create a sample that shows the above selections.
 
-1. Create a grid grouping control and bind it to any data table. This example uses the grouping grid that has been bound to the Statistics Table from Northwind.MDB.
+1. Create a GridGroupingControl and bind it to any data table. This example uses the grouping grid that has been bound to the Statistics Table from Northwind.MDB.
 
 2. Setup the designer to add options for different selection types. Add six radio buttons to the form to enable selection options Cell Only, Row Only, Column Only, Row and Column, Default and None.
 

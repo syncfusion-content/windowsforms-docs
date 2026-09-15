@@ -10,7 +10,7 @@ documentation: ug
 
 # About Syncfusion® Windows Forms GridGroupingControl
 
-The grid grouping control is a very powerful data grid with built-in support for hierarchical grouping, filtering, multicolumn sorting, summaries, and binding various data source types. Its unique UI and data virtualization architecture provides instant scrolling capabilities, display millions of records, and handle real-time data updates with less CPU usage.
+The GridGroupingControl is a very powerful data grid with built-in support for hierarchical grouping, filtering, multicolumn sorting, summaries, and binding various data source types. Its unique UI and data virtualization architecture provides instant scrolling capabilities, display millions of records, and handle real-time data updates with less CPU usage.
 
 ## Key features
 

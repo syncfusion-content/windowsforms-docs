@@ -358,7 +358,7 @@ End Class
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2. Create another class (`VirtualList`) by implementing[IList](https://learn.microsoft.com/en-us/dotnet/api/system.collections.ilist?view=net-5.0) and [ITypedList](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedlist?view=net-5.0) interfaces. This class represents your collection that serves as data source for grid grouping control. Refer to CustomCollections under the DataBinding topic to know how to implement these interfaces.
+2. Create another class (`VirtualList`) by implementing[IList](https://learn.microsoft.com/en-us/dotnet/api/system.collections.ilist?view=net-5.0) and [ITypedList](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedlist?view=net-5.0) interfaces. This class represents your collection that serves as data source for GridGroupingControl. Refer to CustomCollections under the DataBinding topic to know how to implement these interfaces.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -624,7 +624,7 @@ End Class
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-3. Add a button and ListBox to the main form. Clicking the button will create a grid grouping control and load it with Virtual List. ListBox serves as Log Window wherein user will display the log messages like time elapsed for loading the grid, list of optimizations applied, and so on. The form will be look like the one below at design time.
+3. Add a button and ListBox to the main form. Clicking the button will create a GridGroupingControl and load it with Virtual List. ListBox serves as Log Window wherein user will display the log messages like time elapsed for loading the grid, list of optimizations applied, and so on. The form will be look like the one below at design time.
 ![Performance_img2](Performance_images/Performance_img2.png)
 
 4. Set up a new engine and specify the optimizations settings required.
@@ -729,7 +729,7 @@ private void LoadGridLoadGrid_Click(object sender, EventArgs e)
     int time = Environment.TickCount;
     Cursor.Current = Cursors.WaitCursor;
 
-    //Loads a Grid Grouping control with a new engine.
+    //Loads a GridGroupingControl with a new engine.
     gridGroupingControl1 = new GridGroupingControl();
     gridGroupingControl1.BackColor = System.Drawing.SystemColors.Window;
     gridGroupingControl1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -760,7 +760,7 @@ Private Sub LoadGridLoadGrid_Click(ByVal sender As Object, ByVal e As EventArgs)
     Dim time As Integer = Environment.TickCount
     Cursor.Current = Cursors.WaitCursor
 
-    'Loads a Grid Grouping control with a new engine.
+    'Loads a GridGroupingControl with a new engine.
     gridGroupingControl1 = New GridGroupingControl()
     gridGroupingControl1.BackColor = System.Drawing.SystemColors.Window
     gridGroupingControl1.Dock = System.Windows.Forms.DockStyle.Fill
@@ -788,7 +788,7 @@ End Sub
 {% endcapture %}
 {{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-7. Handle `PropertyChanging` event to display log for every property that is being changed in the grid. This will be raised when you group or sort the grid grouping control and hence you could track the results of these operations (especially the current optimizations) here.
+7. Handle `PropertyChanging` event to display log for every property that is being changed in the grid. This will be raised when you group or sort the GridGroupingControl and hence you could track the results of these operations (especially the current optimizations) here.
 
 {% capture codesnippet6 %}
 {% tabs %}
@@ -1354,7 +1354,7 @@ End Class
 {% endcapture %}
 {{ codesnippet8 | OrderList_Indent_Level_1 }}
 
-3. A Grid Grouping control is setup with options to display the summary cells in caption and enable the optimizations required. Use `InvalidateAll` option for `InsertRemoveBehavior` and `SortPositionChangedBehavior` properties when many records change sort position for a short time. Use `ScrollWithImmediateUpdate` if `ScrollWindow` should be called to minimize painting when sort position of limited number of records is changed. GridGroupingControl will be detached from `CurrencyManager`, and then access the list directly to solely rely on `ListChanged` events.
+3. A GridGroupingControl is setup with options to display the summary cells in caption and enable the optimizations required. Use `InvalidateAll` option for `InsertRemoveBehavior` and `SortPositionChangedBehavior` properties when many records change sort position for a short time. Use `ScrollWithImmediateUpdate` if `ScrollWindow` should be called to minimize painting when sort position of limited number of records is changed. GridGroupingControl will be detached from `CurrencyManager`, and then access the list directly to solely rely on `ListChanged` events.
 
 {% capture codesnippet9 %}​
 {% tabs %}
@@ -1772,7 +1772,7 @@ This section discusses an example that will use to make high frequency updates i
 `ReferencedFields` property is very user interactive option and provides options to test the performance of the grid by enabling or disabling grouping, sorting, and filtering in the midst of heavy updates. It also allows you to change the timer frequency that controls the throughput i.e., the number of updates per unit time. At run time, you can also vary the amount of time the changes are highlighted.
 
 ### Implementation
-This example demonstrates the frequent updates that occur in random cells across the grid grouping control, while keeping the CPU usage at minimum level. A timer changes cells in short intervals, inserts and removes rows. When you run the sample you also need to open up the Task Manager to notice the CPU usage while the sample runs. You should be able to start up multiple instances without slowing down your machine.
+This example demonstrates the frequent updates that occur in random cells across the GridGroupingControl, while keeping the CPU usage at minimum level. A timer changes cells in short intervals, inserts and removes rows. When you run the sample you also need to open up the Task Manager to notice the CPU usage while the sample runs. You should be able to start up multiple instances without slowing down your machine.
 
 **Sample Location:**<br/>
 &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\Grid.Grouping.Windows\Samples\Performance\Grouping Trader Grid Test Demo
@@ -2285,7 +2285,7 @@ End Sub
 {% endcapture %}
 {{ codesnippet18 | OrderList_Indent_Level_1 }}
 
-6. Two `TrackBar` controls are used to change the frequencies of the Timer and `BlinkTime`. The frequencies that are set by the end user are integrated into the grid grouping control in their respective `TrackBarScroll` event handlers.
+6. Two `TrackBar` controls are used to change the frequencies of the Timer and `BlinkTime`. The frequencies that are set by the end user are integrated into the GridGroupingControl in their respective `TrackBarScroll` event handlers.
 {% capture codesnippet19 %}​
 {% tabs %}
 {% highlight c# %}
@@ -2356,7 +2356,7 @@ Given below is a sample screen shot. While running the sample, apply grouping, s
 ![Performance_img5](Performance_images/Performance_img5.png)
 
 ## Grouping Performance
-This section focuses on a sample that lets you check the performance of the grid grouping control by toggling various options that can affect the speed of the grid. The different options include Sort and Categorize the records, calculating maximum column width, custom sorting and multi-threading (in case if a multiprocessor system is available).
+This section focuses on a sample that lets you check the performance of the GridGroupingControl by toggling various options that can affect the speed of the grid. The different options include Sort and Categorize the records, calculating maximum column width, custom sorting and multi-threading (in case if a multiprocessor system is available).
 
 ### Implementation
 The grouping performance is implemented in the following sample

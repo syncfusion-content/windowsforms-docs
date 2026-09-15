@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Remove HiddenColumns from FieldChooser in WinForms GridGrouping
 
-To remove hidden columns from Grid Grouping Field Chooser, you need to bypass original column collection in the Field Chooser with a cloned GridColumnDescriptorCollection. The following steps illustrate how to do this:
+To remove hidden columns from GridGroupingControl Field Chooser, you need to bypass original column collection in the Field Chooser with a cloned GridColumnDescriptorCollection. The following steps illustrate how to do this:
 
 1. Get the collection of the visible columns, which are removed from the column collection.
 2. Create a cloned column collection GridColumnDescriptorCollection from theTable Descriptor.
