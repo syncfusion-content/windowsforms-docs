@@ -7,9 +7,9 @@ control: TabbedMDIManager
 documentation: ug
 ---
 
-# About Syncfusion® Windows Forms TabbedMDI Control
+# About Syncfusion® WinForms TabbedMDI Control
 
-The [TabbedMDIManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html) control provides a new TabbedMDI layout mode as an alternative to the default Cascade and Tiled modes like Visual Studio .NET IDE. It offers tabbed groups support that allows the end users to create multiple document interface (MDI) applications to display one or more tabbed windows in the MDI client area and complete customization option for the control. If an application contains more than one MDI tabbed group, the groups are separated by splitters. With a single function call, you can switch between `TabbedMDI` and `RegularMDI` layout modes.
+The [WinForms TabbedMDI](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html) control provides a new TabbedMDI layout mode as an alternative to the default Cascade and Tiled modes like Visual Studio .NET IDE. It offers tabbed groups support that allows the end users to create multiple document interface (MDI) applications to display one or more tabbed windows in the MDI client area and complete customization option for the control. If an application contains more than one MDI tabbed group, the groups are separated by splitters. With a single function call, you can switch between `TabbedMDI` and `RegularMDI` layout modes.
 
 ![Tabbed MDI forms for Windows Forms](Overview_images/TabbedMDIManager.png)
 
@@ -27,7 +27,7 @@ The [TabbedMDIManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Wi
 
 **MDI List** - Provides options to retrieve a list of MDIChild forms in the application, and also provides the MenuItem or ToolStrip MenuItem to the list that should be added can be specified.
 
-**Button support** - Provides options to display the close button individually for each tab. It also provides options to enable or disable [DropDown](/windowsforms/tabbedmdi/button-settings#dropdown-button) and [Close buttons](/windowsforms/tabbedmdi/button-settings#close-button) in TabbedMDIManager. 
+**Button support** - Provides options to display the close button individually for each tab. It also provides options to enable or disable [DropDown](/windowsforms/tabbedmdi/button-settings#dropdown-button) and [Close buttons](/windowsforms/tabbedmdi/button-settings#close-button) in WinForms TabbedMDI. 
 
 **ToolTip** - Provides options to show or hide tooltip when the mouse pointer is placed over the tabs.
 

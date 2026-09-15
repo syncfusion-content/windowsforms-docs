@@ -7,7 +7,7 @@ control: TabbedMDIManager
 documentation: ug
 ---
 
-# TabbedMDIManager Events in Windows Forms TabbedMDI
+# Events in WinForms TabbedMDI
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
@@ -16,12 +16,12 @@ Events table
 <table>
 <tr>
 <th>
- TabbedMDIManager events</th><th>
+ WinForms TabbedMDI events</th><th>
 Description</th></tr>
 <tr>
 <td>
 BeforeMDIChildAdded event</td><td>
-This event is handled before an MDI child is added to the TabbedMDIManager.</td></tr>
+This event is handled before an MDI child is added to the WinForms TabbedMDI.</td></tr>
 <tr>
 <td>
 BeforeDropDownPopup event</td><td>
@@ -46,7 +46,7 @@ This event is handled to notify that the locked MDI client area is being unlocke
 
 ## BeforeMDIChildAdded event
 
-This [BeforeMDIChildAdded event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html) occurs before an MDIChild is added to the TabbedMDIManager.
+This [BeforeMDIChildAdded event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html) occurs before an MDIChild is added to the WinForms TabbedMDI.
 
 {% tabs %}
 

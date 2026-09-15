@@ -7,13 +7,13 @@ control: TabbedMDIManager
 documentation: ug
 ---
 
-# Button Settings in Windows Forms TabbedMDI
+# Button Settings in WinForms TabbedMDI
 
-This section discusses about the various buttons available in TabbedMDIManager control and their customization.
+This section discusses about the various buttons available in WinForms TabbedMDI control and their customization.
 
 ## Drop-down button
 
-The MDIChild windows in a TabbedMDI window can be displayed in the form of a drop-down by enabling the [DropDownButtonVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_DropDownButtonVisible) property.
+The MDIChild windows in a WinForms TabbedMDI window can be displayed in the form of a drop-down by enabling the [DropDownButtonVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_DropDownButtonVisible) property.
 
 {% tabs %}
 
@@ -196,7 +196,7 @@ Me.tabbedMDIManager.CloseOnMiddleButtonClick = True
 
 ## Support to show or hide close button for individual tabs
 
-Essential<sup>®</sup> Tools for Windows Forms now provides support to show or hide close button of the individual tabs in TabbedMDI Manager.
+Essential<sup>®</sup> Tools for Windows Forms now provides support to show or hide close button of the individual tabs in WinForms TabbedMDI.
 
 ### Use case scenarios
 

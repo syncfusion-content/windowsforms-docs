@@ -7,7 +7,7 @@ control: TabbedMDIManager
 documentation: ug
 ---
 
-# How to Browse MDI Children in Windows Forms TabbedMDI
+# How to Browse MDI Children in Windows Forms WinForms TabbedMDI
 
 You should not use the MDIContainer form’s [MDIChildren](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_MdiChildren) property to browse through the MDIChildren. This is because the TabbedMDI Framework introduces some additional MDIChildren into your MDIContainer that are not part of your application logic.
 
