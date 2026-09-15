@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Configure GridLayout in Windows Forms | Syncfusion®
 description: GridLayout configuration supports rows, columns, spacing, layout participation settings, and rearranging child controls.
@@ -18,7 +18,7 @@ The `GridLayout` simply divides the available space into a number of rows and co
 <table>
 <tr>
 <th>
-GridLayout property</th><th>
+WinForms Grid Layout property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -61,7 +61,7 @@ The horizontal and vertical gaps between the child controls can be set using the
 <table>
 <tr>
 <th>
-GridLayout property</th><th>
+WinForms Grid Layout property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -97,11 +97,11 @@ Me.gridLayout1.VGap=10
 
 ## Configuring child controls
 
-The following settings can be used to configure the child controls of the GridLayout manager.
+The following settings can be used to configure the child controls of the WinForms Grid Layout manager.
 
 ### ParticipateInLayout
 
-To prevent a child control from being laid out using the GridLayout manager, use the following property.
+To prevent a child control from being laid out using the WinForms Grid Layout manager, use the following property.
 
 <table>
 <tr>
@@ -111,7 +111,7 @@ Description</th></tr>
 <tr>
 <td>
 ParticipateInLayout</td><td>
-Specifies whether the child control should participate in the GridLayout. The default value is set to `true`.</td></tr>
+Specifies whether the child control should participate in the WinForms Grid Layout. The default value is set to `true`.</td></tr>
 </table>
 
 The methods associated with the above properties are given in the following table.
@@ -131,7 +131,7 @@ SetParticipateInLayout</td><td>
 Adds or removes the specified control from the layout list.</td></tr>
 </table>
 
-The following code is used to add or remove the control from the GridLayout list programmatically.
+The following code is used to add or remove the control from the WinForms Grid Layout list programmatically.
 
 {% tabs %}
 
@@ -149,9 +149,9 @@ Me.gridLayout1.SetParticipateInLayout(Me.button1,False)
 
 {% endtabs %}
 
-## Rearranging the controls laid out by GridLayout
+## Rearranging the controls laid out by WinForms Grid Layout
 
-The child controls of the GridLayout can be rearranged by dragging and dropping them at design time.
+The child controls of the WinForms Grid Layout can be rearranged by dragging and dropping them at design time.
 
 ![Rearranging the controls of GridLayout in designer by drag and drop](ConfiguringGridLayout_images/ConfiguringGridLayout_img2.jpeg)
 

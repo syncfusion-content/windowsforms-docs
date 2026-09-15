@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: MultiColumn Dropdown in Windows Forms AutoComplete | Syncfusion®
 description: MultiColumn Dropdown support in AutoComplete enables displaying multiple data fields, images, and configurable matching columns.
@@ -9,15 +9,15 @@ documentation: ug
 
 # MultiColumn Dropdown in Windows Forms AutoComplete
 
-The AutoComplete allows you to display multiple columns of information. The columns can be configured using the following properties:
+The WinForms Autocomplete allows you to display multiple columns of information. The columns can be configured using the following properties:
 
 ## Columns
 
-The [Columns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_Columns) property specifies a collection of columns in the AutoComplete dropdown when the AutoCompleteModes enumerator value is AutoSuggest. Each column is represented by an AutoCompleteDataColumnInfo object. This class includes a definition for specifying whether the column is the matching column or the image column.
+The [Columns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_Columns) property specifies a collection of columns in the WinForms Autocomplete dropdown when the AutoCompleteModes enumerator value is AutoSuggest. Each column is represented by an AutoCompleteDataColumnInfo object. This class includes a definition for specifying whether the column is the matching column or the image column.
 
 ### Column configuration
 
-The information needed for setting the attributes of a column in the drop-down list of the AutoComplete is handled using [AutoCompleteDataColumnInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoCompleteDataColumnInfo.html). It specifies the appearance and behavior of each column that should be visible. The AutoCompleteDataColumnInfo properties are as follows.
+The information needed for setting the attributes of a column in the drop-down list of the WinForms Autocomplete is handled using [AutoCompleteDataColumnInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoCompleteDataColumnInfo.html). It specifies the appearance and behavior of each column that should be visible. The AutoCompleteDataColumnInfo properties are as follows.
 
 <table>
 <tr>
@@ -49,9 +49,9 @@ Shows or hides the column at run time.</td></tr>
 
 ## Showing image in column
 
-You can add a drop-down item with image to the AutoComplete popup.
+You can add a drop-down item with image to the WinForms Autocomplete popup.
 
-An image list should be set to the [ImageList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_ImageList) property of AutoComplete component, and the [ImageColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoCompleteDataColumnInfo.html#Syncfusion_Windows_Forms_Tools_AutoCompleteDataColumnInfo_ImageColumn) property should be set to `true` for displaying images in the column. Specify the item text and the image index in the [AddHistoryItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_AddHistoryItem_System_String_) method.
+An image list should be set to the [ImageList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_ImageList) property of WinForms Autocomplete component, and the [ImageColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoCompleteDataColumnInfo.html#Syncfusion_Windows_Forms_Tools_AutoCompleteDataColumnInfo_ImageColumn) property should be set to `true` for displaying images in the column. Specify the item text and the image index in the [AddHistoryItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_AddHistoryItem_System_String_) method.
 
 {% tabs %}
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Windows Forms AutoComplete
 
-This section provides a quick overview for working with the [AutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html) in Windows Forms.
+This section provides a quick overview for working with the [WinForms Autocomplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html) in Windows Forms.
 
 ## Assembly deployment
 
@@ -17,7 +17,7 @@ Refer to the [Control dependencies](https://help.syncfusion.com/windowsforms/con
 
 Refer to this [documentation](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to find more details about installing NuGet packages in a Windows Forms application.
 
-## Creating Application with AutoComplete
+## Creating Application with WinForms Autocomplete
 
 In this walk through, users will create a WinForms application that contains the [AutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html) control.
 
@@ -45,8 +45,7 @@ Create a new Windows Forms project in Visual Studio to display the [AutoComplete
     * Syncfusion.Tools.Base
     * Syncfusion.Tools.Windows
 
-2. Add the required namespace and create an instance of the [AutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html) and `TextBox` controls, then call `SetAutoComplete` to enable AutoComplete on the `TextBox`.
-
+2. Add the required namespace and create an instance of the [AutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html) and `TextBox` controls, then call `SetAutoComplete` to attach the WinForms Autocomplete control to the `TextBox`.
 {% capture codesnippet1 %}
 {% tabs %}
 {% highlight C# %}
@@ -77,7 +76,7 @@ End Sub
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-## Enable AutoComplete functionality for TextBox control
+## Enable WinForms Autocomplete functionality for TextBox control
 
 ### Enabling via designer
 
@@ -117,7 +116,7 @@ End Sub
 
 ## Creating Datasource for Sample Application
 
-The [AutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html) component supports a variety of data sources such as DataTables, DataSets, or any component that implements interfaces like `IList`, `IBindingList`, `ITypedList`, or `IListSource`. For assigning a data source to AutoComplete, use the [DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_DataSource) property.
+The [AutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html) component supports a variety of data sources such as DataTables, DataSets, or any component that implements interfaces like `IList`, `IBindingList`, `ITypedList`, or `IListSource`. For assigning a data source, use the [DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_DataSource) property.
 
 {% tabs %}
 {% highlight C# %}
