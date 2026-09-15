@@ -21,14 +21,15 @@ Me.sfDataGrid1.DataSource = collection.OrdersListDetails
 {% endhighlight %}
 {% endtabs %}
 
-If the data source implements [INotifyCollectionChanged](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged?view=net-5.0) interface, then SfDataGrid control will automatically refresh the UI when item is added, removed or while list cleared.
-When an item is added/removed in [ObservableCollection](https://learn.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?view=net-5.0), SfDataGrid automatically refresh the UI as `ObservableCollection` implements `INotifyCollectionChanged`. But when an item is added/removed in [List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-5.0), SfDataGrid will not refresh the UI automatically.
+If the data source implements [INotifyCollectionChanged](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged?view=net-5.0) interface, then Data Grid control will automatically refresh the UI when item is added, removed or while list cleared. 
+When an item is added/removed in [ObservableCollection](https://learn.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?view=net-5.0), the control automatically refresh the UI as `ObservableCollection` implements `INotifyCollectionChanged`. But when an item is added/removed in [List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-5.0), the control will not refresh the UI automatically.
+
 
 ## Binding to IEnumerable
-SfDataGrid control supports to bind any collection that implements the [IEnumerable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.ienumerable?view=net-5.0) interface. All the data operations such as sorting, grouping, filtering, summaries are supported when binding collection derived from `IEnumerable`.
+Data Grid control supports to bind any collection that implements the [IEnumerable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.ienumerable?view=net-5.0) interface. All the data operations such as sorting, grouping, filtering, summaries are supported when binding collection derived from `IEnumerable`.
 
 ## Binding with DataTable
-SfDataGrid control supports to bind the DataTable. SfDataGrid control automatically refresh the UI when binding DataTable as `DataSource` when rows are added, removed or cleared.
+Data Grid control supports to bind the DataTable. It automatically refresh the UI when binding DataTable as `DataSource` when rows are added, removed or cleared.
 
 {% tabs %}
 {% highlight c# %}
@@ -41,7 +42,7 @@ Me.sfDataGrid1.DataSource = dataTable
 {% endhighlight %}
 {% endtabs %}
 
-Below are the limitations when binding DataTable as `DataSource` to SfDataGrid.
+Below are the limitations when binding DataTable as `DataSource` to Data Grid.
 
 * Custom sorting is not supported.
 * [SfDataGrid.View.Filter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Data.DataTableCollectionViewWrapper.html) is not supported.
@@ -50,10 +51,10 @@ Below are the limitations when binding DataTable as `DataSource` to SfDataGrid.
 * [GridUnboundColumn.Expression](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridUnboundColumn.html#Syncfusion_WinForms_DataGrid_GridUnboundColumn_Expression) is not supported. This can be achieved by using the [DataColumn](https://learn.microsoft.com/en-us/dotnet/api/system.data.datacolumn?view=net-5.0) of DataTable by setting [DataColumn.Expression](https://learn.microsoft.com/en-us/dotnet/api/system.data.datacolumn.expression?view=net-5.0) property.
 * [SfDataGrid.LiveDataUpdateMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_LiveDataUpdateMode) is not supported.
 
-![SfDatagrid bounded with data table itemsSource in windowsforms](DataBinding_images/DataBinding_img1.jpeg)
+![bounded with data table itemsSource](DataBinding_images/DataBinding_img1.jpeg)
 
 ## Binding to XML Data
-SfDataGrid can be bound to data from XML files. This can be achieved by using the [DataSet](https://learn.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-5.0) object which provides the necessary methods that is used to read XML data into dataset. After loading the data, the SfDataGrid can be bind to this dataset by setting data binding properties such as `DataSource` and `DataMember` to the dataset and table name respectively. It is also possible to save the changes back to XML file.
+Data Grid can be bound to data from XML files. This can be achieved by using the [DataSet](https://learn.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-5.0) object which provides the necessary methods that is used to read XML data into dataset. After loading the data, the control can be bind to this dataset by setting data binding properties such as `DataSource` and `DataMember` to the dataset and table name respectively. It is also possible to save the changes back to XML file.
 
 {% tabs %}
 {% highlight c# %}
@@ -67,10 +68,10 @@ dataSet.ReadXml("..\\..\\Data\\Datasource.xml")
 Me.sfDataGrid1.DataSource = dataSet.Tables(0)
 {% endhighlight %}
 {% endtabs %}
-![SfDataGrid bounded with DataSet itemsSource in WinForms](DataBinding_images/DataBinding_img2.jpeg)
+![bounded with DataSet itemsSource](DataBinding_images/DataBinding_img2.jpeg)
 
 ## Binding Complex Properties
-SfDataGrid control provides support to bind complex property to its columns. To bind the complex property to [GridColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumn.html), set the complex property path to [MappingName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_MappingName).
+Data Grid control provides support to bind complex property to its columns. To bind the complex property to [GridColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumn.html), set the complex property path to [MappingName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_MappingName).
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.Columns.Add(new GridTextColumn() { MappingName = "EmployeeComplexModel.EmployeeName", HeaderText = "Employee Name" });
@@ -83,10 +84,10 @@ Me.sfDataGrid1.Columns.Add(New GridTextColumn() With {.MappingName = "EmployeeCo
 All the data operations (sorting, grouping, filtering and etc.) are supported when binding complex property.
 
 ### Limitations when Binding Complex Property
-* SfDataGrid doesn’t support [LiveDataUpdateMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_LiveDataUpdateMode) – [AllowDataShaping](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_LiveDataUpdateMode) and [AllowSummaryUpdate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_LiveDataUpdateMode).
+* Data Grid doesn’t support [LiveDataUpdateMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_LiveDataUpdateMode) – [AllowDataShaping](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_LiveDataUpdateMode) and [AllowSummaryUpdate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_LiveDataUpdateMode).
 
 ## Binding Indexer Properties
-SfDataGrid control provides support to bind an indexer property to its columns. To bind an indexer property to `GridColumn`, set the indexer property path to `MappingName`.
+Data Grid control provides support to bind an indexer property to its columns. To bind an indexer property to `GridColumn`, set the indexer property path to `MappingName`.
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.Columns.Add(new GridTextColumn() { MappingName = "EmployeeDetails[0].Title", HeaderText = "Title" });
@@ -96,17 +97,19 @@ Me.sfDataGrid1.Columns.Add(New GridTextColumn() With {.MappingName = "EmployeeDe
 {% endhighlight %}
 {% endtabs %}
 
-All the data operations (sorting, grouping, filtering and etc.) are supported when binding indexer property. 
+All the data operations (sorting, grouping, filtering and etc.) are supported when binding indexer property.
 
 ### Limitations when Binding Indexer Property
-* SfDataGrid doesn’t support [LiveDataUpdateMode ](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_LiveDataUpdateMode)– [AllowDataShaping](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_LiveDataUpdateMode) and [AllowSummaryUpdate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_LiveDataUpdateMode).
+* Data Grid doesn’t support [LiveDataUpdateMode ](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_LiveDataUpdateMode)– [AllowDataShaping](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_LiveDataUpdateMode) and [AllowSummaryUpdate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_LiveDataUpdateMode).
 
 ## Events
 
 ### DataSourceChanged
 [SfDataGrid.DataSourceChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event occurs when the data source is changed by using `DataSource` property.
-This event receives two arguments namely sender that handles SfDataGrid and [DataSourceChangedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.DataSourceChangedEventArgs.html) as objects.
+This event receives two arguments namely sender that handles Data Grid and [DataSourceChangedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.DataSourceChangedEventArgs.html) as objects.
 The `DataSourceChangedEventArgs` object contains the following properties:
+
+
 
 * [OldValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.DataSourceChangedEventArgs.html#Syncfusion_WinForms_DataGrid_Events_DataSourceChangedEventArgs_OldValue) - Gets the value of old data source
 * [NewValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.DataSourceChangedEventArgs.html#Syncfusion_WinForms_DataGrid_Events_DataSourceChangedEventArgs_NewValue)  - Get the value of new data source
@@ -114,11 +117,11 @@ The `DataSourceChangedEventArgs` object contains the following properties:
 * [NewView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.DataSourceChangedEventArgs.html#Syncfusion_WinForms_DataGrid_Events_DataSourceChangedEventArgs_NewView) – Gets the new view of the data grid.
 
 ## View
-SfDataGrid has the [View](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_View) property of type [ICollectionViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.ICollectionViewAdv.html) interface that implements [IEditableCollectionView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.IEditableCollectionView.html) interface. `View` is responsible for maintaining and manipulating the data and other advanced operations like Sorting, Grouping, Filtering etc.
-When binding Collection to `DataSource` property of SfDataGrid, then `View` will be created and maintains the operations on data such as Grouping, Filtering, Sorting, Insert, Delete, and Modification.
+Data Grid has the [View](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_View) property of type [ICollectionViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.ICollectionViewAdv.html) interface that implements [IEditableCollectionView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.IEditableCollectionView.html) interface. `View` is responsible for maintaining and manipulating the data and other advanced operations like Sorting, Grouping, Filtering etc.
+When binding Collection to `DataSource` property of the control, then `View` will be created and maintains the operations on data such as Grouping, Filtering, Sorting, Insert, Delete, and Modification.
 Following are some important properties that can be used for various purposes.
 
-N> SfDataGrid creates different types of views derived from `ICollectionViewAdv` interface based on `DataSource`.
+N> Data Grid creates different types of views derived from `ICollectionViewAdv` interface based on `DataSource`.
 
 <table>
 <tr>
@@ -140,7 +143,7 @@ Records
 RecordsList
 </td>
 <td>
-Maintains the Records that are displayed in View when SfDataGrid is not Grouped.
+Maintains the Records that are displayed in View when Data Grid is not Grouped.
 </td>
 </tr>
 <tr>
@@ -151,7 +154,7 @@ TopLevelGroup
 TopLevelGroup
 </td>
 <td>
-Maintains the Group information when SfDataGrid is Grouped.
+Maintains the Group information when Data Grid is Grouped.
 </td>
 </tr>
 <tr>
@@ -162,7 +165,7 @@ TopLevelGroup.DisplayElements
 GroupDisplayElements
 </td>
 <td>
-Maintains the Records and Group information that are displayed in View when SfDataGrid is Grouped.
+Maintains the Records and Group information that are displayed in View when Data Grid is Grouped.
 </td>
 </tr>
 <tr>
@@ -228,7 +231,7 @@ TableSummaryRows
 ObservableCollection&lt;ISummaryRow&gt;
 </td>
 <td>
-Maintains the TableSummaryRows collection information. 
+Maintains the TableSummaryRows collection information.
 </td>
 </tr>
 <tr>
@@ -239,7 +242,7 @@ SummaryRows
 ObservableCollection&lt;ISummaryRow&gt;
 </td>
 <td>
-Maintains the SummaryRows collection information. 
+Maintains the SummaryRows collection information.
 </td>
 </tr>
 <tr>
@@ -263,13 +266,13 @@ The following events are associated with `View`.
 * SourceCollectionChanged
 
 #### RecordPropertyChanged
-[RecordPropertyChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.ICollectionViewAdv.html) event is raised when the DataModel property value is changed, if the DataModel implements the [INotifyPropertyChanged](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?view=net-5.0) interface. The event receives with two arguments namely sender that handles the DataModel and [PropertyChangedEventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.propertychangedeventargs?view=net-5.0) as object.
-`PropertyChangedEventArgs` has below property,
+[RecordPropertyChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.ICollectionViewAdv.html) event is raised when the DataModel property value is changed, if the DataModel implements the [INotifyPropertyChanged](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?view=net-5.0) interface. The event receives with two arguments namely sender that handles the DataModel and [PropertyChangedEventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.propertychangedeventargs?view=net-5.0) as object. `PropertyChangedEventArgs` has below property,
+
 * [PropertyName](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.propertychangedeventargs.propertyname?view=net-5.0) – It denotes the PropertyName of the changed value.
 
 #### CollectionChanged 
-[CollectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.CollectionViewAdv.html) event is raised whenever that is some change in Records / DisplayElements collection. The event receives two arguments namely sender that handles View object and [NotifyCollectionChangedEventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.propertychangedeventargs?redirectedfrom=MSDN&view=netframework-4.8) as object.
-`NotifyCollectionChangedEventArgs` has below properties,
+[CollectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.CollectionViewAdv.html) event is raised whenever that is some change in Records / DisplayElements collection. The event receives two arguments namely sender that handles View object and [NotifyCollectionChangedEventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.propertychangedeventargs?redirectedfrom=MSDN&view=netframework-4.8) as object. `NotifyCollectionChangedEventArgs` has below properties,
+
 * [Action](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.action?redirectedfrom=MSDN&view=netframework-4.8#System_Collections_Specialized_NotifyCollectionChangedEventArgs_Action) - It contains the current action. (i.e.) Add, Remove, Move, Replace, Reset.
 
 * [NewItems](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newitems?redirectedfrom=MSDN&view=netframework-4.8#System_Collections_Specialized_NotifyCollectionChangedEventArgs_NewItems) - It contains the list of new items involved in the change.
@@ -281,8 +284,8 @@ The following events are associated with `View`.
 * [OldStartingIndex](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.oldstartingindex?redirectedfrom=MSDN&view=netframework-4.8#System_Collections_Specialized_NotifyCollectionChangedEventArgs_OldStartingIndex) - It contains the index at which the Action occurred.
 
 #### SourceCollectionChanged
-[SourceCollectionChanged ](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.ICollectionViewAdv.html)event is raised when source collection is changed for example add or remove the collection. The event receives two arguments namely sender that handles [QueryableCollectionViewWrapper](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Data.QueryableCollectionViewWrapper.html) object and [NotifyCollectionChangedEventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs?view=net-5.0) as object.
-`NotifyCollectionChangedEventArgs` has below properties,
+[SourceCollectionChanged ](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.ICollectionViewAdv.html)event is raised when source collection is changed for example add or remove the collection. The event receives two arguments namely sender that handles [QueryableCollectionViewWrapper](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Data.QueryableCollectionViewWrapper.html) object and [NotifyCollectionChangedEventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs?view=net-5.0) as object. `NotifyCollectionChangedEventArgs` has below properties,
+
 * [Action](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.action?view=net-5.0) - It contains the current action. (i.e.) Add, Remove, Move, Replace and Reset.
 
 * [NewItems](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newitems?view=net-5.0) - It contains the list of new items involved in the change.
@@ -321,12 +324,12 @@ When BeginInit method is called it suspends all the updates until EndInit method
 </tr>
 </table>
 
-N>`View` has properties that already defined in SfDataGrid. It recommended setting those properties via SfDataGrid.
+N>`View` has properties that already defined in Data Grid. It recommended setting those properties via the control.
 
 ## Binding Data from ADO .NET Entity Framework
-SfDataGrid control supports to bind data from ADO.NET Entity Framework. This walk-through describe about binding data from ADO.NET Entity Framework and save back the changes to the database.
+Data Grid control supports to bind data from ADO.NET Entity Framework. This walk-through describe about binding data from ADO.NET Entity Framework and save back the changes to the database.
 **References:**
-[https://learn.microsoft.com/en-us/ef/ef6/fundamentals/databinding/winforms](https://learn.microsoft.com/en-us/ef/ef6/fundamentals/databinding/winforms) 
+[https://learn.microsoft.com/en-us/ef/ef6/fundamentals/databinding/winforms](https://learn.microsoft.com/en-us/ef/ef6/fundamentals/databinding/winforms)
 
 ### Defining Data Model using Entity Framework 4.0
 To create Data Model using Entity Framework in Windows Forms application, follow the below steps.
@@ -356,7 +359,7 @@ To create Data Model using Entity Framework in Windows Forms application, follow
 ![To show the entity diagram of database](DataBinding_images/DataBinding_img7.jpeg)
 
 ### Loading Data from Entity Framework Data Service
-The data from the defined entity model can be loaded as a data source to the SfDataGrid by loading the **Order Details** table by the created entity for the **Northwnd** database.
+The data from the defined entity model can be loaded as a data source to the Data Grid by loading the **Order Details** table by the created entity for the **Northwnd** database.
 
 {% tabs %}
 {% highlight c# %}
@@ -369,13 +372,13 @@ Me.sfDataGrid1.DataSource = northWind.Order_Details
 {% endhighlight %}
 {% endtabs %}
 
-Now, run the application. The following screenshot shows the SfDataGrid control populated with data from Entity Framework data service.
+Now, run the application. The following screenshot shows the Data Grid control populated with data from Entity Framework data service.
 
 
-![SfDataGrid bounded with Entity framework model in windowsforms](DataBinding_images/DataBinding_img8.jpeg)
+![bounded with Entity framework model](DataBinding_images/DataBinding_img8.jpeg)
 
 ## Binding Data from LINQ to SQL
-SfDataGrid control supports to bind data from LINQ to SQL. This walkthrough, describes about binding data from LINQ to SQL and save back the changes to the Database.
+Data Grid control supports to bind data from LINQ to SQL. This walkthrough, describes about binding data from LINQ to SQL and save back the changes to the Database.
 
 ### Adding Data Model using LINQ to SQL
 To create data model using LINQ to SQL in WF project follow the below steps.
@@ -383,7 +386,7 @@ To create data model using LINQ to SQL in WF project follow the below steps.
 2. The Add New Item wizard appears, Select **LINQ to SQL Classes** from the **Visual C#**.
 3. Name the file as **Northwind** and then select **Add** option to add the **Northwind.dbml** in the project.
 
-![Choose the data  model from LINQ to SQL from the visual studio](DataBinding_images/DataBinding_img9.jpeg)
+![Choose the data model from LINQ to SQL from the visual studio](DataBinding_images/DataBinding_img9.jpeg)
 
 4. Once the **Northwind.dbml** is added in the project, then the design view is opened.
 
@@ -411,7 +414,7 @@ To create data model using LINQ to SQL in WF project follow the below steps.
 
 ### Loading Data from LINQ to SQL Classes
 
-The data from the defined data model of the LINQ to SQL classes can be loaded as a data source to the SfDataGrid by loading the **Shippers** table by the created data context for the **Northwnd** database.
+The data from the defined data model of the LINQ to SQL classes can be loaded as a data source to the Data Grid by loading the **Shippers** table by the created data context for the **Northwnd** database.
 
 {% tabs %}
 {% highlight c# %}
@@ -423,14 +426,14 @@ Dim northWindDataContext As New NorthwindDataContext()
 Me.sfDataGrid1.DataSource = northWindDataContext.Shippers
 {% endhighlight %}
 {% endtabs %}
-![SfDataGrid with LinQ to SQL in windowsforms](DataBinding_images/DataBinding_img15.jpeg)
+![with LinQ to SQL](DataBinding_images/DataBinding_img15.jpeg)
 
 ## Binding Data from ADO.NET
-SfDataGrid control supports to load the data using ADO.NET. This walk-through, describe about binding data from ADO.NET service
+Data Grid control supports to load the data using ADO.NET. This walk-through, describe about binding data from ADO.NET service
 
 ### Connecting Application to Databases
-To connect SQL database to WinForms application, refer the below MSDN link or follow the below steps,
-[https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)) 
+To connect SQL database to WinForms application, refer the below MSDN link or follow the below steps, [https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90))
+
 
 1. Select the **Connect to Database** option from the **Tools** menu.
 
@@ -483,10 +486,10 @@ Me.sfDataGrid1.DataSource = dataSet.Tables("Suppliers")
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-![SfDataGrid bounded with SQL Client in windowsforms](DataBinding_images/DataBinding_img20.jpeg)
+![bounded with SQL Client](DataBinding_images/DataBinding_img20.jpeg)
 
 ## Binding Data from Microsoft Access
-SfDataGrid control supports to bind data from Microsoft Access database. This section describes about how to bind the data from Microsoft Access database to SfDataGrid.
+Data Grid control supports to bind data from Microsoft Access database. This section describes about how to bind the data from Microsoft Access database to the control.
 
 ### Importing Microsoft Access Database
 To load the data from Microsoft Access database, follow the below steps.
@@ -552,5 +555,5 @@ Me.sfDataGrid1.DataSource = employeeDataSet.Tables(“Employees”)
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![SfDataGrid bounded with MS Access in windowsforms](DataBinding_images/DataBinding_img26.jpeg)
-N> You can also explore our [WinForms DataGrid example](https://github.com/syncfusion/winforms-demos/tree/master/datagrid) that shows how to render the DataGrid in Windows Forms.
+![bounded with MS Access](DataBinding_images/DataBinding_img26.jpeg)
+N> You can also explore our [WinForms DataGrid example](https://github.com/syncfusion/winforms-demos/tree/master/datagrid) that shows how to render the Data Grid in Windows Forms.

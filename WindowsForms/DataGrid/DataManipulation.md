@@ -10,7 +10,7 @@ documentation: ug
 
 # Data Manipulation in Windows Forms Data Grid
 
-[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) listens and responds to the manipulation operations such as add, delete and data update (property change) at runtime. DataGrid refresh the sorting, filtering, grouping and summaries based on [SfDataGrid.LiveDataUpdateMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_LiveDataUpdateMode) property.
+[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) listens and responds to the manipulation operations such as add, delete and data update (property change) at runtime. the control refresh the sorting, filtering, grouping and summaries based on [SfDataGrid.LiveDataUpdateMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_LiveDataUpdateMode) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -204,7 +204,7 @@ Updated
 Updated
 </td>
 <td>
-Updated 
+Updated
 </td>
 </tr>
 <tr>
@@ -212,7 +212,7 @@ Updated
 {{'**Grouping**'| markdownify }}
 </td>
 <td>
-Updated 
+Updated
 </td>
 <td>
 Updated
@@ -259,8 +259,9 @@ Updated
 
 
 ## AddNewRow
-SfDataGrid provides built-in row (called AddNewRow) to add new records to underlying collection. AddNewRow can be enabled by specifying the position where it should be displayed by setting [SfDataGrid.AddNewRowPosition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AddNewRowPosition) property.
-When start editing in AddNewRow, the SfDataGrid control creates an instance for the underlying data object and adds it to underlying collection when editing completed.
+Data Grid provides built-in row (called AddNewRow) to add new records to underlying collection. AddNewRow can be enabled by specifying the position where it should be displayed by setting [SfDataGrid.AddNewRowPosition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AddNewRowPosition) property.
+When start editing in AddNewRow, the Data Grid control creates an instance for the underlying data object and adds it to underlying collection when editing completed.
+
 
 N> The underlying data object must be defined with default constructor. Otherwise, create instance of data object by handling [AddNewRowInitiating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
 
@@ -272,10 +273,10 @@ N> The underlying data object must be defined with default constructor. Otherwis
  sfDataGrid.AddNewRowPosition = RowPosition.Top
 {% endhighlight %}
 {% endtabs %}
-![Windows forms datagrid showing addnewrow at top](DataManipulation_images/AddNewRow_img1.png)
+![showing addnewrow at top](DataManipulation_images/AddNewRow_img1.png)
 
 ### Placing AddNewRow at Various Positions
-SfDataGrid allows to add the AddNewRow at either top or fixed top or bottom or fixed bottom by setting the `AddNewRowPosition` property.
+Data Grid allows to add the AddNewRow at either top or fixed top or bottom or fixed bottom by setting the `AddNewRowPosition` property.
 {% tabs %}
 {% highlight c# %}
  sfDataGrid.AddNewRowPosition = RowPosition.FixedBottom;
@@ -284,9 +285,9 @@ SfDataGrid allows to add the AddNewRow at either top or fixed top or bottom or f
  sfDataGrid.AddNewRowPosition = RowPosition.FixedBottom
 {% endhighlight %}
 {% endtabs %}
-![Windows forms datagrid showing addnewrow at bottom](DataManipulation_images/AddNewRow_img2.png)
+![showing addnewrow at bottom](DataManipulation_images/AddNewRow_img2.png)
 
-SfDataGrid allows to check whether the specified row index is AddNewRow index, by using [SfDataGrid.IsAddNewRowIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.DataGridIndexResolver.html#Syncfusion_WinForms_DataGrid_DataGridIndexResolver_IsAddNewRowIndex_Syncfusion_WinForms_DataGrid_SfDataGrid_System_Int32_)  helper method.
+Data Grid allows to check whether the specified row index is AddNewRow index, by using [SfDataGrid.IsAddNewRowIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.DataGridIndexResolver.html#Syncfusion_WinForms_DataGrid_DataGridIndexResolver_IsAddNewRowIndex_Syncfusion_WinForms_DataGrid_SfDataGrid_System_Int32_)  helper method.
 {% tabs %}
 {% highlight c# %}
 sfDataGrid.IsAddNewRowIndex(1);
@@ -297,7 +298,7 @@ sfDataGrid.IsAddNewRowIndex(1)
 {% endtabs %}
 
 ### Customize the Newly Added Row Position
-SfDataGrid adds new data item from AddNewRow at the end of collection. When data operations (sorting, grouping) performed, the new item added based on data operations. The newly added data item position can be customized by setting [NewItemPlaceholderPosition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_NewItemPlaceholderPosition) property.
+Data Grid adds new data item from AddNewRow at the end of collection. When data operations (sorting, grouping) performed, the new item added based on data operations. The newly added data item position can be customized by setting [NewItemPlaceholderPosition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_NewItemPlaceholderPosition) property.
 {% tabs %}
 {% highlight c# %}
 sfDataGrid.NewItemPlaceholderPosition = Syncfusion.Data.NewItemPlaceholderPosition.AtBeginning;
@@ -308,7 +309,7 @@ sfDataGrid.NewItemPlaceholderPosition = Syncfusion.Data.NewItemPlaceholderPositi
 {% endtabs %}
 
 ### Initializing Default Values for AddNewRow
-SfDataGrid allows to set the default values for AddNewRow while initiating, through [AddNewRowInitiatingEventArgs.NewObject](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.AddNewRowInitiatingEventArgs.html#Syncfusion_WinForms_DataGrid_Events_AddNewRowInitiatingEventArgs_NewObject) property in `AddNewRowInitiating` event.
+Data Grid allows to set the default values for AddNewRow while initiating, through [AddNewRowInitiatingEventArgs.NewObject](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.AddNewRowInitiatingEventArgs.html#Syncfusion_WinForms_DataGrid_Events_AddNewRowInitiatingEventArgs_NewObject) property in `AddNewRowInitiating` event.
 
 {% tabs %}
 {% highlight c# %}
@@ -329,7 +330,7 @@ Private Sub dataGrid_AddNewRowInitiating(ByVal sender As Object, ByVal args As A
 End Sub
 {% endhighlight %}
 {% endtabs %}
-![Windows forms datagrid showing the values for addnewrow](DataManipulation_images/AddNewRow_img7.png)
+![showing the values for addnewrow](DataManipulation_images/AddNewRow_img7.png)
 
 ### Validating the AddNewRow
 The data in AddNewRow can validate like other data rows through built-in validation or custom validation. Here, AddNewRow is validated using [RowValidating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event by setting [RowValidatingEventArgs.IsValid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.RowValidatingEventArgs.html#Syncfusion_WinForms_DataGrid_Events_RowValidatingEventArgs_IsValid) to false which doesn’t allow users to commit the AddNewRow until the validation gets succeeded.
@@ -365,7 +366,7 @@ Private Sub dataGrid_RowValidating(ByVal sender As Object, ByVal args As RowVali
 End Sub
 {% endhighlight %}
 {% endtabs %}
-![Windows forms datagrid showing validate the cell in addnewrow](DataManipulation_images/AddNewRow_img3.png)
+![showing validate the cell in addnewrow](DataManipulation_images/AddNewRow_img3.png)
 
 Similarly, the cells can validate in AddNewRow by using the[CurrentCellValidating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
 
@@ -403,7 +404,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid showing adding empty records](DataManipulation_images/AddNewRow_img8.png)
+![showing adding empty records](DataManipulation_images/AddNewRow_img8.png)
 
 ### Update cell values based on selected value in the GridComboBoxCell
 
@@ -452,14 +453,14 @@ Me.sfDataGrid.AddNewRowText = "Click to add new row"
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid showing customized addnewrow text ](DataManipulation_images/AddNewRow_img10.png)
+![showing customized addnewrow text](DataManipulation_images/AddNewRow_img10.png)
 
 ### Customizing AddNewRow Text using Default Resource File
-SfDataGrid allows to customize the watermark text of AddNewRow by changing value of AddNewRowText in Resource Designer. To customize the AddNewRowText, add the default `Syncfusion.SfDataGrid.WinForms.resx` file in **Resources** folder and then customize the value of AddNewRowText.
+Data Grid allows to customize the watermark text of AddNewRow by changing value of AddNewRowText in Resource Designer. To customize the AddNewRowText, add the default `Syncfusion.SfDataGrid.WinForms.resx` file in **Resources** folder and then customize the value of AddNewRowText.
 
-![Addnewrow resx file customiztion in windows forms datagrid](DataManipulation_images/AddNewRow_img4.png)
+![Addnewrow resx file customiztion](DataManipulation_images/AddNewRow_img4.png)
 
-![windows forms datagrid showing lozalized addnewrow string](DataManipulation_images/AddNewRow_img5.png)
+![showing lozalized addnewrow string](DataManipulation_images/AddNewRow_img5.png)
 
 ### Appearance
 The appearance of the AddNewRow can be customized by setting the [AddNewRowStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_AddNewRowStyle).
@@ -474,11 +475,11 @@ Me.sfDataGrid.Style.AddNewRowStyle.TextColor = Color.White
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid showing customized addnewrow text color and backcolor](DataManipulation_images/AddNewRow_img6.png)
+![showing customized addnewrow text color and backcolor](DataManipulation_images/AddNewRow_img6.png)
 
 ### Adding a new row programmatically
 
-Programmatically, a new row can be added to the SfDataGrid.
+Programmatically, a new row can be added to the Data Grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -497,8 +498,8 @@ orderInfoCollection.OrdersListDetails.Add(orderInfo)
 {% endhighlight %}
 {% endtabs %}
 
-#### To add a new row when DataGrid bound to ObservableCollection
-You can add the new row programmatically from a `ObservableCollection` to the SfDataGrid by creating a new row in the `SfDataGrid.View` and set required value for that row.
+#### To add a new row when Data Grid bound to ObservableCollection
+You can add the new row programmatically from a `ObservableCollection` to the Data Grid by creating a new row in the `SfDataGrid.View` and set required value for that row.
 
 {% tabs %}
 {% highlight c# %}
@@ -544,8 +545,8 @@ orderInfo.ContactNumber = 909093455
 {% endhighlight %}
 {% endtabs %}
 
-#### To add a new row when DataGrid bound to DataTable
-You can add the new row programmatically from a `DataTable` to the SfDataGrid by creating a new row in the `SfDataGrid.View` and set required value for that row.
+#### To add a new row when Data Grid bound to DataTable
+You can add the new row programmatically from a `DataTable` to the Data Grid by creating a new row in the `SfDataGrid.View` and set required value for that row.
 
 {% tabs %}
 {% highlight c# %}
@@ -597,7 +598,7 @@ You can download sample [here](https://github.com/SyncfusionExamples/how-to-add-
 You can enable the AddNewRow in DetailsViewDataGrid using the [GridViewDefinition.DataGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridViewDefinition.html#Syncfusion_WinForms_DataGrid_GridViewDefinition__ctor) property.
 
 #### Enabling AddNewRow when manually defining relations
-For manually defined relations, the `AddNewRowPosition` can be directly initialized to the datagrid of the defined `GridViewDefinition`.
+For manually defined relations, the `AddNewRowPosition` can be directly initialized to the Data Grid of the defined `GridViewDefinition`.
 
 {% tabs %}
 {% highlight c# %}
@@ -638,10 +639,10 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Winforms datagrid showing AddNewRow Support in Master-Details View](DataManipulation_images/AddNewRow_img9.png)
+![showing AddNewRow Support in Master-Details View](DataManipulation_images/AddNewRow_img9.png)
 
 ## Delete Row
-SfDataGrid provides built-in support to delete the selected records in user interface (UI) by pressing <kbd>Delete</kbd> key. The deleting support can be enabled by setting the [SfDataGrid.AllowDeleting](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowDeleting) property to true. `AllowDeleting` is only supported when `SelectionUnit` is `Row`.
+Data Grid provides built-in support to delete the selected records in user interface (UI) by pressing <kbd>Delete</kbd> key. The deleting support can be enabled by setting the [SfDataGrid.AllowDeleting](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowDeleting) property to true. `AllowDeleting` is only supported when `SelectionUnit` is `Row`.
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid.AllowDeleting = true;
@@ -652,7 +653,7 @@ Me.sfDataGrid.AllowDeleting = True
 {% endtabs %}
 
 ### Delete the Selected Records through Code
-The selected records can be deleted by using the [DeleteSelectedRecords](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_DeleteSelectedRecords) method in SfDataGrid. This method is only supported when `SelectionUnit` is `Row`.
+The selected records can be deleted by using the [DeleteSelectedRecords](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_DeleteSelectedRecords) method in Data Grid. This method is only supported when `SelectionUnit` is `Row`.
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid.DeleteSelectedRecords();
@@ -665,7 +666,7 @@ Me.sfDataGrid.DeleteSelectedRecords()
 ### Customizing the Delete Operations
 
 #### Conditionally Deleting Records
-[RecordDeleting](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event occurs when the record is being deleted from SfDataGrid. The record deletion can be cancel by using the [RecordDeletingEventArgs.Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) of `RecordDeleting` event. The certain records can be skipped when deleting more than one record by removing items from [RecordDeletingEventArgs.Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.RecordDeletingEventArgs.html#Syncfusion_WinForms_DataGrid_Events_RecordDeletingEventArgs_Items).
+[RecordDeleting](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event occurs when the record is being deleted from Data Grid. The record deletion can be cancel by using the [RecordDeletingEventArgs.Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) of `RecordDeleting` event. The certain records can be skipped when deleting more than one record by removing items from [RecordDeletingEventArgs.Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.RecordDeletingEventArgs.html#Syncfusion_WinForms_DataGrid_Events_RecordDeletingEventArgs_Items).
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid.RecordDeleting += dataGrid_RecordDeleting;
@@ -718,7 +719,7 @@ End Sub
 
 ### Deleting a row programmatically
 
-Programmatically, a row can be deleted from the SfDataGrid. The following code shows how to delete particular row based on the values.
+Programmatically, a row can be deleted from the Data Grid. The following code shows how to delete particular row based on the values.
 
 {% tabs %}
 {% highlight c# %}
