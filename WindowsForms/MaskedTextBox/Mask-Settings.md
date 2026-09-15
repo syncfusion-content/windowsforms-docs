@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Mask Settings in MaskedTextBox (MaskedEditBox)
 
-This section deals with the mask settings of MaskedEditBox control.
+This section deals with the mask settings of WinForms MaskedTextBox control.
 
 The format or behavior for the [MaskedEditBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html) control is defined through the property given below.
 
@@ -34,7 +34,7 @@ Literal characters give visual cues about the type of data being used. Mask char
 
 In the above Mask, all the non # characters are Literal characters and the #’s are Mask characters.
 
-The MaskedEditBox control supports the following masks.
+The WinForms MaskedTextBox control supports the following masks.
 
 
 

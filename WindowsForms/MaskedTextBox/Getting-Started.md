@@ -16,9 +16,9 @@ Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/con
 
 Refer to this [documentation](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to find more details about installing NuGet packages in a Windows Forms application.
 
-## Adding the MaskedEditBox control via designer
+## Adding the WinForms MaskedTextBox control via designer
 
-The following steps describe how to create the **MaskedEditBox** control via designer:
+The following steps describe how to create the **WinForms MaskedTextBox** control via designer:
 
 1. Create a new Windows Forms application in Visual Studio.
 
@@ -28,7 +28,7 @@ The following steps describe how to create the **MaskedEditBox** control via des
 
 ![Drag and drop MaskedEditBox from toolbox](MaskedEditBox-images/WF-maskededitbox-toolbox.png)
 
-3. Set the symbols in the [Mask](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html#Syncfusion_Windows_Forms_Tools_MaskedEditBox_Mask) property for the control. This property controls the behavior of control at run time.
+3. Set the symbols in the [Mask](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html#Syncfusion_Windows_Forms_Tools_MaskedEditBox_Mask) property of the control. This property controls the behavior of the control at run time.
 
 ![Mask format of Windows Forms MaskedEditBox](MaskedEditBox-images/MarkedEditBox_mask.png)
 
@@ -36,9 +36,9 @@ If no mask is specified, the control will behave the same as a standard Windows 
 
 ![Windows Forms MaskedEditBox showing default textbox](MaskedEditBox-images/MarkedEditBox_edittextbox.png)
 
-## Adding the MaskedEditBox control via code
+## Adding the WinForms MaskedTextBox control via code
 
-The following steps describe how to create the **MaskedEditBox** control programmatically:
+The following steps describe how to create the **WinForms MaskedTextBox** control programmatically:
 
 1. Create a C# or VB application via Visual Studio.
 
@@ -98,7 +98,7 @@ You can set some common symbols for the [Mask](https://help.syncfusion.com/cr/wi
 
 N> The **#** symbol allows numeric entry only in that position.
 
-Examples of some common masks are,
+Examples of some common masks:
 
 <table>
 <tr>
@@ -108,7 +108,7 @@ Usage</th></tr>
 <tr>
 <td>
 ###-##-####</td><td>
-US Social security number mask( the '-' symbol is literal). Example 222-22-2222.</td></tr>
+US Social security number mask (the '-' symbol is literal). Example 222-22-2222.</td></tr>
 <tr>
 <td>
 (###) ### ####</td><td>
@@ -124,7 +124,7 @@ Short time mask. Example 12:24.</td></tr>
 <tr>
 <td>
 >?<????????????</td><td>
-First name or last name. The first letter is uppercase, and the other all letters are lowercase. Example: Syncfusion.</td></tr>
+First name or last name. The first letter is uppercase, and all other letters are lowercase. Example: Syncfusion.</td></tr>
 </table>
 
 {% tabs %}

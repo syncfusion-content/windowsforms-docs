@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Display Settings in MaskedTextBox (MaskedEditBox)
 
-This section discusses the display settings of the [MaskedEditBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html) control.
+This section discusses the display settings of the WinForms MaskedTextBox control.
 
 ## Separators
 
@@ -43,7 +43,7 @@ For example, if you want to display the user data in date time format say mm/dd/
 
 We can change the default separators used. If you want to display the date time as 'mm-dd-yy', change the DateSeparator property from '/' to '-'.
 
-Similarly other separators can be used.
+Similarly, other separators can be used.
 
 {% tabs %}
 
@@ -83,7 +83,7 @@ Me.maskedEditBox1.TimeSeparator = ":"C
 
 ## Cursor position
 
-You can set the cursor position of the MaskedEditBox control by using [PositionAt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html#Syncfusion_Windows_Forms_Tools_MaskedEditBox_PositionAt) and [PositionAtDecimal](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html#Syncfusion_Windows_Forms_Tools_MaskedEditBox_PositionAtDecimal) properties.
+You can set the cursor position of the WinForms MaskedTextBox control by using the [PositionAt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html#Syncfusion_Windows_Forms_Tools_MaskedEditBox_PositionAt) and [PositionAtDecimal](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html#Syncfusion_Windows_Forms_Tools_MaskedEditBox_PositionAtDecimal) properties.
 
 <table>
 <tr>
@@ -136,7 +136,7 @@ Specifies the data groups that can be used for splitting up the text.</td></tr>
 </table>
 
 
-The [DataGroups](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html#Syncfusion_Windows_Forms_Tools_MaskedEditBox_DataGroups) property of the MaskedEditBox defines a virtual grouping of the mask value. Each group is defined by a [MaskedEditDataGroupInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditDataGroupInfoCollection.html#Syncfusion_Windows_Forms_Tools_MaskedEditDataGroupInfoCollection_Add_Syncfusion_Windows_Forms_Tools_MaskedEditDataGroupInfo_) object (the DataGroups property is a collection of these objects).
+The [DataGroups](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html#Syncfusion_Windows_Forms_Tools_MaskedEditBox_DataGroups) property of the WinForms MaskedTextBox defines a virtual grouping of the mask value. Each group is defined by a [MaskedEditDataGroupInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditDataGroupInfoCollection.html#Syncfusion_Windows_Forms_Tools_MaskedEditDataGroupInfoCollection_Add_Syncfusion_Windows_Forms_Tools_MaskedEditDataGroupInfo_) object (the DataGroups property is a collection of these objects).
 
 A data group is defined by its `GroupLength` property. For example, if the mask is given as follows,
 

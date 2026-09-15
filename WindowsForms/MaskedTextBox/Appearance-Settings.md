@@ -10,7 +10,7 @@ documentation: ug
 
 ## Background settings
 
-The background settings of the MaskedEditBox control are discussed below.
+The background settings of the WinForms MaskedTextBox control are discussed below.
 
 ### Background color
 
@@ -46,7 +46,7 @@ Me.maskedEditBox1.BackColor = System.Drawing.Color.PaleGoldenrod
 ![Set the background color to WF MaskedEditBox](MaskedEditBox-images/MarkedEditBox-img15.png)
 
 
-You can also reset the background color for MaskedEditBox control by using the [ResetBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html#Syncfusion_Windows_Forms_Tools_MaskedEditBox_ResetBackColor) method.
+You can also reset the background color for the WinForms MaskedTextBox control by using the [ResetBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html#Syncfusion_Windows_Forms_Tools_MaskedEditBox_ResetBackColor) method.
 
 <table>
 <tr>
@@ -61,11 +61,11 @@ Resets the BackColor property to its default value.</td></tr>
 
 ## Foreground settings
 
-The foreground settings of the MaskedEditBox control are discussed below.
+The foreground settings of the WinForms MaskedTextBox control are discussed below.
 
 ### Foreground color
 
-You can set the foreground color for MaskedEditBox Control by using the [ForeColor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.forecolor?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_ForeColor) property.
+You can set the foreground color for WinForms MaskedTextBox Control by using the [ForeColor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.forecolor?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_ForeColor) property.
 
 <table>
 <tr>
@@ -99,7 +99,7 @@ Me.maskedEditBox1.ForeColor = System.Drawing.Color.DarkMagenta
 
 ## Visual style
 
-You can set the visual style to the MaskedEditBox control by using [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_Style) property.
+You can set the visual style to the WinForms MaskedTextBox control by using [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_Style) property.
 
 {% tabs %}
 

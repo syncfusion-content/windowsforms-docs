@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Culture Settings in Windows Forms MaskedTextBox (MaskedEditBox)
 
-This section discusses the culture settings of the MaskedEditBox control.
+This section discusses the culture settings of the WinForms MaskedTextBox control.
 
 <table>
 <tr>
