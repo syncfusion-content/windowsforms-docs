@@ -143,27 +143,60 @@ chartControl.Series[0].Style.ToolTip = "Series Tooltip"
 
 ## Tooltip appearance
 
-The [Tooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Tooltip) property provides options to customize the appearance of chart tooltips. By default, the property is initialized with a [ChartTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.UI.Xaml.Charts.ChartTooltip.html) instance.
+The [Tooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Tooltip) property provides options to customize the appearance of chart tooltips. By default, this property is initialized with a new [ChartTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTooltip.html) instance.
 
-The following code example demonstrates how to customize chart tooltips.
+The `ChartTooltip` class provides the following properties to customize the tooltip appearance:
+
+- [BackgroundColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTooltip.html#Syncfusion_Windows_Forms_Chart_ChartTooltip_BackgroundColor): Specifies the background color of the tooltip using a `BrushInfo` object.
+- [BackgroundImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTooltip.html#Syncfusion_Windows_Forms_Chart_ChartTooltip_BackgroundImage): Specifies the background image of the tooltip.
+- [BorderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTooltip.html#Syncfusion_Windows_Forms_Chart_ChartTooltip_BorderStyle): Specifies the border style of the tooltip.
+- [Font](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTooltip.html#Syncfusion_Windows_Forms_Chart_ChartTooltip_Font): Specifies the font used to display the tooltip text.
+- [ForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTooltip.html#Syncfusion_Windows_Forms_Chart_ChartTooltip_ForeColor): Specifies the color of the tooltip text.
+- [Padding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTooltip.html#Syncfusion_Windows_Forms_Chart_ChartTooltip_Padding): Specifies the space between the tooltip content and its border.
+
+N> Set the `ShowToolTips` property to `true` to display chart tooltips.
+
+The following code example demonstrates how to customize the appearance of chart tooltips.
 
 {% tabs %}
 {% highlight c# %}
 
-chartControl.Tooltip.BackgroundColor = new BrushInfo(Color.White);
-chartControl.Tooltip.BorderStyle = BorderStyle.FixedSingle;
-chartControl.Tooltip.ForeColor = Color.Black;
-chartControl.Tooltip.Font = new Font("Segoe UI", 10);
-chartControl.Tooltip.Padding = new Padding(4);
+chartControl.ShowToolTips = true;
+
+chartControl.Tooltip.BackgroundColor =
+    new BrushInfo(Color.White);
+
+chartControl.Tooltip.BorderStyle =
+    BorderStyle.FixedSingle;
+
+chartControl.Tooltip.ForeColor =
+    Color.Black;
+
+chartControl.Tooltip.Font =
+    new Font("Segoe UI", 10);
+
+chartControl.Tooltip.Padding =
+    new Padding(4);
 
 {% endhighlight %}
 {% highlight vb %}
 
-chartControl.Tooltip.BackgroundColor = New BrushInfo(Color.White)
-chartControl.Tooltip.BorderStyle = BorderStyle.FixedSingle
-chartControl.Tooltip.ForeColor = Color.Black
-chartControl.Tooltip.Font = New Font("Segoe UI", 10)
-chartControl.Tooltip.Padding = New Padding(4)
+chartControl.ShowToolTips = True
+
+chartControl.Tooltip.BackgroundColor =
+    New BrushInfo(Color.White)
+
+chartControl.Tooltip.BorderStyle =
+    BorderStyle.FixedSingle
+
+chartControl.Tooltip.ForeColor =
+    Color.Black
+
+chartControl.Tooltip.Font =
+    New Font("Segoe UI", 10)
+
+chartControl.Tooltip.Padding =
+    New Padding(4)
 
 {% endhighlight %}
 {% endtabs %}
@@ -187,7 +220,7 @@ The following properties are available in the `ChartFancyToolTipInfo` class to c
 - [Spacing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo.html#Syncfusion_Windows_Forms_Chart_ChartFancyToolTipInfo_Spacing): Specifies the spacing between the tooltip text and its border.
 - [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo.html#Syncfusion_Windows_Forms_Chart_ChartFancyToolTipInfo_Style): Specifies the marker style of the fancy tooltip.
 - [Symbol](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo.html#Syncfusion_Windows_Forms_Chart_ChartFancyToolTipInfo_Symbol): Specifies the symbol shape used in the fancy tooltip.
-- [SymbolColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo.html#Syncfusion_Windows_Forms_Chart_ChartFancyToolTipInfo_SymbolColor): Specifies the inner color of the fancy tooltip symbol.
+- [SymbolColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo.html#Syncfusion_Windows_Forms_Chart_ChartFancyToolTipInfo_SymbolColor): Specifies the inner color of the fancy tooltip symbol. This property is obsolete.
 - [SymbolSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo.html#Syncfusion_Windows_Forms_Chart_ChartFancyToolTipInfo_SymbolSize): Specifies the size of the fancy tooltip symbol.
 - [ToTarget](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo.html#Syncfusion_Windows_Forms_Chart_ChartFancyToolTipInfo_ToTarget): Specifies the distance between the fancy tooltip and its target.
 - [Visible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo.html#Syncfusion_Windows_Forms_Chart_ChartFancyToolTipInfo_Visible): Controls whether the fancy tooltip is displayed.
