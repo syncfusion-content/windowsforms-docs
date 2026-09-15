@@ -42,7 +42,7 @@ chartControl.PrimaryYAxis.ShowCrosshairTooltip = True
 {% endhighlight %}
 {% endtabs %}
 
-![Crosshair Visible in Windows Forms Chart](../Chart-User-Interactions-Images/crosshair-visible.png)
+![Crosshair Visible in Windows Forms Chart](../Chart-User-Interactions_Images/crosshair-visible.png)
 
 ## Line
 
@@ -65,7 +65,7 @@ chartControl.Crosshair.Line.Width = 2
 {% endhighlight %}
 {% endtabs %}
 
-![Line Customization in Windows Forms Chart](../Chart-User-Interactions-Images/crosshair-line.png)
+![Line Customization in Windows Forms Chart](../Chart-User-Interactions_Images/crosshair-line.png)
 
 ## Axis tooltip
 
@@ -110,7 +110,7 @@ chartControl.Crosshair.AxisTooltip.TextColor = Color.White
 
 {% endtabs %}
 
-![Axis Tooltip in Windows Forms Chart](../Chart-User-Interactions-Images/crosshair-axis-tooltip.png)
+![Axis Tooltip in Windows Forms Chart](../Chart-User-Interactions_Images/crosshair-axis-tooltip.png)
 
 ## Events
 

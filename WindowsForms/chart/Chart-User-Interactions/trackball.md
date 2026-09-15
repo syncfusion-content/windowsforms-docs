@@ -26,7 +26,7 @@ chartControl.Trackball.Visible = True
 {% endhighlight %}
 {% endtabs %}
 
-![Trackball Visible in Windows Forms Chart](../Chart-User-Interactions-Images/trackball-visible.png)
+![Trackball Visible in Windows Forms Chart](../Chart-User-Interactions_Images/trackball-visible.png)
 
 ## Display mode
 
@@ -48,7 +48,7 @@ chartControl.Trackball.DisplayMode = TrackballTooltipDisplayMode.Float
 {% endhighlight %}
 {% endtabs %}
 
-![Trackball Display Mode in Windows Forms Chart](../Chart-User-Interactions-Images/trackball-displaymode.png)
+![Trackball Display Mode in Windows Forms Chart](../Chart-User-Interactions_Images/trackball-displaymode.png)
 
 ## Line
 
@@ -86,7 +86,7 @@ chartControl.Trackball.Line.Width = 2
 {% endhighlight %}
 {% endtabs %}
 
-![Trackball Line in Windows Forms Chart](../Chart-User-Interactions-Images/trackball-line.png)
+![Trackball Line in Windows Forms Chart](../Chart-User-Interactions_Images/trackball-line.png)
 
 ## Symbol
 
@@ -137,7 +137,7 @@ chartControl.Trackball.Symbol.Border.Width = 2
 {% endhighlight %}
 {% endtabs %}
 
-![Trackball Symbol in Windows Forms Chart](../Chart-User-Interactions-Images/trackball-symbol.png)
+![Trackball Symbol in Windows Forms Chart](../Chart-User-Interactions_Images/trackball-symbol.png)
 
 ## Tooltip
 
@@ -198,7 +198,7 @@ chartControl.Trackball.Tooltip.TextColor = Color.White
 {% endhighlight %}
 {% endtabs %}
 
-![Trackball Tooltip in Windows Forms Chart](../Chart-User-Interactions-Images/trackball-tooltip.png)
+![Trackball Tooltip in Windows Forms Chart](../Chart-User-Interactions_Images/trackball-tooltip.png)
 
 ## Axis tooltip
 
@@ -236,7 +236,7 @@ chartControl.Trackball.AxisTooltip.TextColor = Color.Black
 {% endhighlight %}
 {% endtabs %}
 
-![Trackball Axis Tooltip in Windows Forms Chart](../Chart-User-Interactions-Images/trackball-axis-tooltip.png)
+![Trackball Axis Tooltip in Windows Forms Chart](../Chart-User-Interactions_Images/trackball-axis-tooltip.png)
 
 ## Events
 

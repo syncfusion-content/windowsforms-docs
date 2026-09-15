@@ -24,7 +24,7 @@ chartControl.ShowToolTips = True
 {% endhighlight %}
 {% endtabs %}
 
-![Tooltip in Windows Forms Chart](../Chart-User-Interactions-Images/tooltip-visible.png)
+![Tooltip in Windows Forms Chart](../Chart-User-Interactions_Images/tooltip-visible.png)
 
 ## Chart tooltip
 
@@ -39,7 +39,7 @@ chartControl.ChartToolTip = "Sales chart"
 {% endhighlight %}
 {% endtabs %}
 
-![Chart tooltip](../Chart-User-Interactions-Images/chart-tooltip.png)
+![Chart tooltip](../Chart-User-Interactions_Images/chart-tooltip.png)
 
 ## Chart area tooltip
 
@@ -54,7 +54,7 @@ chartControl.ChartArea.ChartAreaToolTip = "Sales data area"
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Area Tooltip in Windows Forms Chart](../Chart-User-Interactions-Images/chart-area-tooltip.png)
+![Chart Area Tooltip in Windows Forms Chart](../Chart-User-Interactions_Images/chart-area-tooltip.png)
 
 ## Series tooltip format
 
@@ -101,7 +101,7 @@ chartControl.Series(0).PointsToolTipFormat = "{0} - X: {3}, Y: {4}"
 {% endhighlight %}
 {% endtabs %}
 
-![Point Tooltip Format in Windows Forms Chart](../Chart-User-Interactions-Images/tooltip-series-point.png)
+![Point Tooltip Format in Windows Forms Chart](../Chart-User-Interactions_Images/tooltip-series-point.png)
 
 ### Tooltip format
 
@@ -120,7 +120,7 @@ chartControl.Series(0).ToolTipFormat = "Y = {0}"
 {% endhighlight %}
 {% endtabs %}
 
-![Series Tooltip Format in Windows Forms Chart](../Chart-User-Interactions-Images/tooltip-series-format.png)
+![Series Tooltip Format in Windows Forms Chart](../Chart-User-Interactions_Images/tooltip-series-format.png)
 
 ### Series tooltip
 
@@ -139,7 +139,7 @@ chartControl.Series[0].Style.ToolTip = "Series Tooltip"
 {% endhighlight %}
 {% endtabs %}
 
-![Series Tooltip in Windows Forms Chart](../Chart-User-Interactions-Images/series-tooltip.png)
+![Series Tooltip in Windows Forms Chart](../Chart-User-Interactions_Images/series-tooltip.png)
 
 ## Tooltip appearance
 
@@ -168,7 +168,7 @@ chartControl.Tooltip.Padding = New Padding(4)
 {% endhighlight %}
 {% endtabs %}
 
-![Tooltip Appearance in Windows Forms Chart](../Chart-User-Interactions-Images/tooltip-appearance.png)
+![Tooltip Appearance in Windows Forms Chart](../Chart-User-Interactions_Images/tooltip-appearance.png)
 
 ## Fancy tooltip
 
@@ -217,7 +217,7 @@ chartControl.Series(0).FancyToolTip.Border.Width = 1
 {% endhighlight %}
 {% endtabs %}
 
-![Fancy tooltip in Windows Forms Chart](../Chart-User-Interactions-Images/fancy-tooltip.png)
+![Fancy tooltip in Windows Forms Chart](../Chart-User-Interactions_Images/fancy-tooltip.png)
 
 ## See also
 

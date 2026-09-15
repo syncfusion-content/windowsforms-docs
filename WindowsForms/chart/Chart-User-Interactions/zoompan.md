@@ -66,7 +66,7 @@ chartControl.Zooming.Border.DashStyle = DashStyle.Solid
 {% endhighlight %}
 {% endtabs %}
 
-![Zoom area border in Windows Forms Chart](../Chart-User-Interactions-Images/zoom_border.png)
+![Zoom area border in Windows Forms Chart](../Chart-User-Interactions_Images/zoom_border.png)
 
 ### Zoom area interior
 
@@ -93,7 +93,7 @@ chartControl.Zooming.Interior = New BrushInfo(
 {% endhighlight %}
 {% endtabs %}
 
-![Zoom area interior in Windows Forms Chart](../Chart-User-Interactions-Images/zoom-area-interior.png)
+![Zoom area interior in Windows Forms Chart](../Chart-User-Interactions_Images/zoom-area-interior.png)
 
 ## Programmatic zooming
 
@@ -118,7 +118,7 @@ chartControl.ZoomFactorY = 0.5
 {% endhighlight %}
 {% endtabs %}
 
-![Zoom area interior in Windows Forms Chart](../Chart-User-Interactions-Images/zoom-factor.png)
+![Zoom area interior in Windows Forms Chart](../Chart-User-Interactions_Images/zoom-factor.png)
 
 ### Zoom position
 
@@ -143,7 +143,7 @@ chartControl.ZoomPositionY = 0.40
 {% endhighlight %}
 {% endtabs %}
 
-![Zoom position in Windows Forms Chart](../Chart-User-Interactions-Images/zoom-position.png)
+![Zoom position in Windows Forms Chart](../Chart-User-Interactions_Images/zoom-position.png)
 
 ### Axis level zooming
 
@@ -174,7 +174,7 @@ chartControl.PrimaryYAxis.ZoomPosition = 0.4
 {% endtabs %}
 {% endhighlight %}
 
-![Zoom Axis in Windows Forms Chart](../Chart-User-Interactions-Images/zoom-position.png)
+![Zoom Axis in Windows Forms Chart](../Chart-User-Interactions_Images/zoom-position.png)
 
 ### Minimum zoom factor
 
@@ -195,7 +195,7 @@ chartControl.MinZoomFactorY = 0.7
 {% endhighlight %}
 {% endtabs %}
 
-![Min Zoom Factor in Windows Forms Chart](../Chart-User-Interactions-Images/min-zoom-factor.png)
+![Min Zoom Factor in Windows Forms Chart](../Chart-User-Interactions_Images/min-zoom-factor.png)
 
 ### Zoom out increment
 
@@ -212,7 +212,7 @@ chartControl.ZoomOutIncrement = 0.5
 {% endhighlight %}
 {% endtabs %}
 
-![Zoom Out Increment in Windows Forms Chart](../Chart-User-Interactions-Images/zoom-out-increment.png)
+![Zoom Out Increment in Windows Forms Chart](../Chart-User-Interactions_Images/zoom-out-increment.png)
 
 ## Keyboard zooming and navigation
 
@@ -278,11 +278,11 @@ chartControl.ZoomType = ZoomType.Selection
 
 **Illustrates the Selection of Chart Region for Zooming**
 
-![Chart before zooming](../Chart-User-Interactions-Images/zoom_selection_1.png)
+![Chart before zooming](../Chart-User-Interactions_Images/zoom_selection_1.png)
 
 **Displays the Zoomed Region of the chart**
 
-![Chart after zooming](../Chart-User-Interactions-Images/zoom_selection_2.png)
+![Chart after zooming](../Chart-User-Interactions_Images/zoom_selection_2.png)
 
 ## Show scroll bars
 
@@ -299,7 +299,7 @@ chartControl.ShowScrollBars = False
 {% endhighlight %}
 {% endtabs %}
 
-![Zoom Show Scroll Bars in Windows Forms Chart](../Chart-User-Interactions-Images/zoom_selection_2.png)
+![Zoom Show Scroll Bars in Windows Forms Chart](../Chart-User-Interactions_Images/zoom_selection_2.png)
 
 ## Scroll precision
 
@@ -367,7 +367,7 @@ chartControl.PrimaryYAxis.ZoomActions = ChartZoomingAction.Panning
 {% endhighlight %}
 {% endtabs %}
 
-![Panning in Windows Forms Chart](../Chart-User-Interactions-Images/panning.png)
+![Panning in Windows Forms Chart](../Chart-User-Interactions_Images/panning.png)
 
 ## Reset on double-click
 
@@ -413,7 +413,7 @@ chartControl.PrimaryXAxis.SmartDateZoomDayLevelLabelFormat = "dd MM/yy HH.00"
 {% endhighlight %}
 {% endtabs %}
 
-![Zoom Format Label in Windows Forms Chart](../Chart-User-Interactions-Images/zoom-data-time.png){height:"350", width="350"}
+![Zoom Format Label in Windows Forms Chart](../Chart-User-Interactions_Images/zoom-data-time.png){height:"350", width="350"}
 
 ## Zoom events
 
