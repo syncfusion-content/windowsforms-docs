@@ -15,9 +15,9 @@ Refer to the [Control dependencies](https://help.syncfusion.com/windowsforms/con
 
 Click [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install nuget packages in a Windows Forms application.
 
-## Adding TabSplitterContainer control via designer
+## Adding WinForms Tab Splitter Container control via designer
 
-1. Create a new Windows Forms project in Visual Studio to display the TabSplitterContainer control.
+1. Create a new Windows Forms project in Visual Studio to display the WinForms Tab Splitter Container control.
 
 2. The [TabSplitterContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterContainer.html) control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
@@ -32,11 +32,11 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/ins
 
 ### Add tab pages
 
-Add pages to [TabSplitterContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterContainer.html) by clicking the **Add primary page** and **Add secondary page** from Smart Tags of TabSplitterContainer.
+Add pages to [TabSplitterContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterContainer.html) by clicking the **Add primary page** and **Add secondary page** from Smart Tags of WinForms Tab Splitter Container.
 
 ![TabSplitterContainer control added by designer](GettingStarted-images/wf-tabsplitter-container-tabpage.png)
 
-## Adding TabSplitterContainer control via code
+## Adding WinForms Tab Splitter Container control via code
 
 To add the control manually in C#, follow the given steps:
 
@@ -91,7 +91,7 @@ Me.Controls.Add(tabSplitterContainer1)
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-5. Add tab pages into the control. First, create an instance of the required pages, and add primary and secondary pages to TabSplitterContainer using the [PrimaryPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterContainer.html#Syncfusion_Windows_Forms_Tools_TabSplitterContainer_PrimaryPages) and [SecondaryPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterContainer.html#Syncfusion_Windows_Forms_Tools_TabSplitterContainer_SecondaryPages) collections, respectively.
+5. Add tab pages into the control. First, create an instance of the required pages, and add primary and secondary pages to WinForms Tab Splitter Container using the [PrimaryPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterContainer.html#Syncfusion_Windows_Forms_Tools_TabSplitterContainer_PrimaryPages) and [SecondaryPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterContainer.html#Syncfusion_Windows_Forms_Tools_TabSplitterContainer_SecondaryPages) collections, respectively.
 
 {% capture codesnippet3 %}​
 {% tabs %}
@@ -197,7 +197,7 @@ Me.tabSplitterPage1.Controls.Add(autoLabel2)
 
 ## Tab orientation
 
-The TabSplitterContainer can be oriented horizontally or vertically using the [Orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterContainer.html#Syncfusion_Windows_Forms_Tools_TabSplitterContainer_Orientation) property.
+The WinForms Tab Splitter Container can be oriented horizontally or vertically using the [Orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterContainer.html#Syncfusion_Windows_Forms_Tools_TabSplitterContainer_Orientation) property.
 
 {% tabs %}
 {% highlight C# %}

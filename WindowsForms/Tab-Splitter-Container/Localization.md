@@ -9,14 +9,14 @@ documentation: ug
 
 # Localization in Windows Forms Tab Splitter Container
 
-Localization is the process of making application multilingual by formatting the content according to the cultures. TabSplitterContainer control can be localized in any Languages, based on application requirement by following below steps.
+Localization is the process of making an application multilingual by formatting the content according to the cultures. The WinForms Tab Splitter Container control can be localized in any language based on the application requirement by following below steps.
 
 Step 1: Need to initialize the LocalizationProvider class, inherited from the [ILocalizationProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ILocalizationProvider.html) interface, before the InitializeComponent call in the constructor of an application.
 
-Step 2: It will add the [GetLocalizedString](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ILocalizationProvider.html#Syncfusion_Windows_Forms_ILocalizationProvider_GetLocalizedString_System_Globalization_CultureInfo_System_String_System_Object_) function in the [LocalizationProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.LocalizationProvider.html) class. It is needed to provide the Localization content, for the required components used in TabSplitterContainer control.
+Step 2: It will add the [GetLocalizedString](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ILocalizationProvider.html#Syncfusion_Windows_Forms_ILocalizationProvider_GetLocalizedString_System_Globalization_CultureInfo_System_String_System_Object_) function in the [LocalizationProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.LocalizationProvider.html) class. It is needed to provide the Localization content, for the required components used in the WinForms Tab Splitter Container control.
 
 For example:
-Here, TabSplitterContainer control is localized in German Language.
+Here, the WinForms Tab Splitter Container control is localized in German Language.
 
 {% tabs %}
 
