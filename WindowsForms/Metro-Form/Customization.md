@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Customization in Windows Forms Metro Form | Syncfusion®
 description: Customization in MetroForm enables caption labels, images, styling, button customization, and caption bar interactions.
@@ -12,7 +12,7 @@ documentation: ug
 
 ## Caption label
 
-Caption label can be added to the MetroForm through designer or code.
+Caption label can be added to the WinForms MetroForm through designer or code.
 
 ### Through designer
 
@@ -28,7 +28,7 @@ Caption label can be added to the MetroForm through designer or code.
 
 ### Through code
 
-The following code sample shows how to add a Label to the MetroForm.
+The following code sample shows how to add a Label to the WinForms MetroForm.
 
 {% tabs %}
 
@@ -72,7 +72,7 @@ Me.CaptionLabels.Add(captionLabel1)
 
 ## Caption images
 
-Caption images can be added to the MetroForm through the designer or code.
+Caption images can be added to the WinForms MetroForm through the designer or code.
 
 ### Through designer
 
@@ -93,7 +93,7 @@ Caption images can be added to the MetroForm through the designer or code.
 
 ### Through code
 
-The following code sample shows how to add an image to the caption bar of the MetroForm.
+The following code sample shows how to add an image to the caption bar of the WinForms MetroForm.
 
 {% tabs %}
 

@@ -7,15 +7,15 @@ control: SfTabbedForm
 documentation: ug
 ---
 
-# Getting Started with Windows Forms Tabbed Form (SfTabbedForm)
+# Getting Started with Windows Forms Tabbed Form
 
 ## Assembly deployment
 
 Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sftabbedform) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
 
-## Converting standard form into SfTabbedForm
+## Converting standard form into WinForms Tabbed Form
 
-The default form can be changed into `SfTabbedForm` by following the given steps:
+The default form can be changed into `WinForms Tabbed Form` by following the given steps:
 
 1. Create a new Windows Forms application in Visual Studio and refer to the `Syncfusion.Tools.WinForms` assembly.
 
@@ -58,9 +58,9 @@ End Class
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-## Loading TabbedFormControl to TabbedForm
+## Loading TabbedFormControl to WinForms Tabbed Form
 
-The `TabbedFormControl` provides the tabbed user interface to the `TabbedForm`. The `TabbedFormControl` should be added to the form to have the tabbed user interface. The control can be loaded to form using the following code.
+The `TabbedFormControl` provides the tabbed user interface to the `Tabbed Form`. The `TabbedFormControl` should be added to the form to have the tabbed user interface. The control can be loaded to form using the following code.
 
 {% tabs %}
 {% highlight c# %}
@@ -76,7 +76,7 @@ Me.TabbedFormControl = tabbedFormControl
 {% endtabs %}
 
 
-## Adding tabs to TabbedForm
+## Adding tabs to WinForms Tabbed Form
 
 To add tabs to form, create an instance of [TabPageAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabPageAdv.html) and add it to the tabs collection of the `TabbedFormControl`.
 
@@ -110,7 +110,7 @@ Me.TabbedFormControl = tabbedFormControl
 
 ## Show tabs below the title bar
 
-By default, the tabs will be extended to title bar. To avoid extending the tabs into title bar, disable the `SfTabbedForm.ExtendTabsToTitleBar` property.
+By default, the tabs will be extended to title bar. To avoid extending the tabs into title bar, disable the [SfTabbedForm.ExtendTabsToTitleBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SfTabbedForm.html#Syncfusion_Windows_Forms_Tools_SfTabbedForm_ExtendTabsToTitleBar) property.
 
 {% tabs %}
 {% highlight c# %}

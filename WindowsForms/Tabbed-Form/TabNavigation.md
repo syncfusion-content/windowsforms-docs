@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Tab Navigation in Windows Forms Tabbed Form | Syncfusion®
 description: Tab navigation provides built-in navigation buttons, overflow handling, and events for managing tab navigation actions.
@@ -9,7 +9,7 @@ documentation: ug
 
 # Tab Navigation in Windows Forms Tabbed Form (SfTabbedForm)
 
-Tabbed Form consists of a set of built-in navigation buttons such as first tab, last tab, and drop-down, which are used to navigate through the [TabPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_TabPages). The navigation controls can be added to the tabbed form using the [TabbedFormControl.TabPrimitiveMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabPrimitiveMode.html) property.
+WinForms Tabbed Form consists of a set of built-in navigation buttons such as first tab, last tab, and drop-down, which are used to navigate through the [TabPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_TabPages). The navigation controls can be added to the WinForms Tabbed Form using the [TabbedFormControl.TabPrimitiveMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabPrimitiveMode.html) property.
 
 {% tabs %}
 {% highlight c# %}
