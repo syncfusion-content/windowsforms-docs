@@ -7,9 +7,9 @@ control: Editors Package
 documentation: ug
 ---
 
-# Size Settings in Windows Forms PercentTextBox
+# Size Settings in WinForms Percent TextBox
 
-The size of the PercentTextBox control can be set according to the needs of the user using the properties discussed below.
+The size of the WinForms Percent TextBox control can be set according to the needs of the user using the properties discussed below.
 
 * [MaximumSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_MaximumSize)
 * [MinimumSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_MinimumSize)

@@ -7,11 +7,11 @@ control: Editors Package
 documentation: ug
 ---
 
-# Appearance Settings in Windows Forms PercentTextBox
+# Appearance Settings in WinForms Percent TextBox
 
 ## Background settings
 
-The Background settings of the PercentTextBox control are discussed below.
+The Background settings of the WinForms Percent TextBox control are discussed below.
 
 ### Background color
 
@@ -46,7 +46,7 @@ The methods associated with the above properties are given below.
 
 ## Foreground settings
 
-The Foreground settings of the PercentTextBox control are discussed below.
+The Foreground settings of the WinForms Percent TextBox control are discussed below.
 
 ### Foreground color
 
@@ -85,8 +85,8 @@ The methods associated with the above properties are given below.
 
 ## Visual style
 
-Please refer the [TextBoxExt Visual style](/windowsforms/TextBoxExt/Appearance-Settings) to set themes for PercentTextBox.
+Please refer the [TextBoxExt Visual style](/windowsforms/TextBoxExt/Appearance-Settings) to set themes for WinForms Percent TextBox.
 
-A sample which demonstrates the Foreground Settings of PercentTextBox control is available in the below sample installation path.
+A sample which demonstrates the Foreground Settings of WinForms Percent TextBox control is available in the below sample installation path.
 
 …\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo

@@ -7,13 +7,13 @@ control: Tools
 documentation: ug
 ---
 
-# Behavior Settings in Windows Forms IntegerTextBox
+# Behavior Settings in WinForms Integer TextBox
 
-The behavior settings of the IntegerTextBox control are discussed below.
+The behavior settings of the WinForms Integer TextBox control are discussed below.
 
 ## Negative key settings
 
-The integer value of the IntegerTextBox can be reset or changed to a negative value using the properties given below.
+The integer value of the WinForms Integer TextBox can be reset or changed to a negative value using the properties given below.
 
 * [DeleteSelectionOnNegative](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumericTextBox.html#Syncfusion_Windows_Forms_Tools_NumericTextBox_DeleteSelectionOnNegative)
 * [NegativeInputPendingOnSelectAll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html#Syncfusion_Windows_Forms_Tools_NumberTextBoxBase_NegativeInputPendingOnSelectAll)

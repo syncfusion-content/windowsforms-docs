@@ -7,11 +7,11 @@ control: Editors Package
 documentation: ug
 ---
 
-# Text Settings in Windows Forms PercentTextBox
+# Text Settings in WinForms Percent TextBox
 
-This section discusses the text settings of the PercentTextBox control.
+This section discusses the text settings of the WinForms Percent TextBox control.
 
-The text associated with the PercentTextBox control can be set and customized using the below given settings.
+The text associated with the WinForms Percent TextBox control can be set and customized using the below given settings.
 
 * [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.PercentTextBox.html#Syncfusion_Windows_Forms_Tools_PercentTextBox_Text)
 * [CharacterCasing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_CharacterCasing)
@@ -66,7 +66,7 @@ The methods associated with the above properties are given below.
 
 ## Multiline Text Settings
 
-The text settings of the PercentTextBox control can be customized to display multiline text using the below given properties.
+The text settings of the WinForms Percent TextBox control can be customized to display multiline text using the below given properties.
 
 * [Multiline](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.multiline?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBox_Multiline)
 * [Lines](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.lines?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBoxBase_Lines)
@@ -162,7 +162,7 @@ Me.percentTextBox1.ShowOverflowIndicatorToolTip = True
 
 ## Banner text support
 
-The PercentTextBox control can display banner text in the text field, at run time. A BannerTextProvider Component should be available for this purpose. Also, We need to set [AllowNull](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.PercentTextBox.html#Syncfusion_Windows_Forms_Tools_PercentTextBox_AllowNull), [NullString](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html#Syncfusion_Windows_Forms_Tools_NumberTextBoxBase_NullString) and [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.PercentTextBox.html#Syncfusion_Windows_Forms_Tools_PercentTextBox_Text) properties as below to make this feature effective.
+The WinForms Percent TextBox control can display banner text in the text field, at run time. A BannerTextProvider Component should be available for this purpose. Also, We need to set [AllowNull](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.PercentTextBox.html#Syncfusion_Windows_Forms_Tools_PercentTextBox_AllowNull), [NullString](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html#Syncfusion_Windows_Forms_Tools_NumberTextBoxBase_NullString) and [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.PercentTextBox.html#Syncfusion_Windows_Forms_Tools_PercentTextBox_Text) properties as below to make this feature effective.
 
 {% tabs %}
 {% highlight C# %}
@@ -177,6 +177,6 @@ Me.percentTextBox1.Text = ""
 {% endhighlight %}
 {% endtabs %}
 
-A sample which demonstrates the Text, Text Align and Overflow Indicator features of the PercentTextBox control is available in the below sample installation path.
+A sample which demonstrates the Text, Text Align and Overflow Indicator features of the WinForms Percent TextBox control is available in the below sample installation path.
 
 …\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo
