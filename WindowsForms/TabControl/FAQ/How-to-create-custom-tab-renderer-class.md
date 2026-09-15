@@ -7,17 +7,17 @@ control: TabsPackage
 documentation: ug
 ---
 
-# How to Create Custom Tab Renderer Class in TabControlAdv
+# How to Create Custom Tab Renderer Class in WinForms TabControl
 
 'ITabRenderer' interface (or derive from TabRendererBase, a base implementation of ITabRenderer), could be implemented to gain more control over the display of Tabs.
 
-The Renderer property returns the current 'Syncfusion.Windows.Forms.Tools.ITabRenderer' used by the TabControlAdv to render the TabPanel.
+The Renderer property returns the current 'Syncfusion.Windows.Forms.Tools.ITabRenderer' used by the WinForms TabControl to render the TabPanel.
 
 ![Custom ITabRenderer rendering TabControlAdv](How-to-create-custom-tab-renderer-class_images/How-to-create-custom-tab-renderer-class_img1.jpeg)
 
 
 
-Once you have a Custom ITabRenderer implementation, you can, if necessary, make it available to the TabControlAdv at design-time. To do so, 
+Once you have a Custom ITabRenderer implementation, you can, if necessary, make it available to the WinForms TabControl at design-time. To do so, 
 
 1. First select the Add Custom Tabs entry in the drop-down list that pops-up from the TabStyle property editor. This will insert a new `DesignTimeTabTypeLoader` component into your forms designer.
 
