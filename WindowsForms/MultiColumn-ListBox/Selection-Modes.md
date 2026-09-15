@@ -11,7 +11,7 @@ documentation: ug
 
 ## Selection modes
 
-Selection behavior of the GridList control can be specified by using the SelectionMode property. There are three types of selection behaviors:
+Selection behavior of the MultiColumn ListBox can be specified by using the SelectionMode property. There are three types of selection behaviors:
 
 * One: Selects only one item.
 * MultiSimple: Selects multiple items.

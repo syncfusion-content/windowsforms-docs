@@ -66,7 +66,7 @@ A demo of this feature is available in the following location:
 
 _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Selection\Record Range Selection Demo_
 
-## Adding navigation Bar to the RecordNavigationControl
+## Adding navigation Bar to the GridRecordNavigationControl
 
 Follow the steps to add navigation bar:
 

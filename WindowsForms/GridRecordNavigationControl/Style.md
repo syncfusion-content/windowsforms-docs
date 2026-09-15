@@ -9,7 +9,7 @@ documentation: ug
 
 # Style in Windows Forms GridRecordNavigationControl
 
-The RecordNavigationControl supports Visual Styles like Default, Metro, and Office2016 by using the Style property. 
+The GridRecordNavigationControl supports Visual Styles like Default, Metro, and Office2016 by using the Style property. 
 
 {% tabs %}
 {% highlight c# %}

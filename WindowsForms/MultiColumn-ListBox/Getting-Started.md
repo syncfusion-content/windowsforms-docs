@@ -14,7 +14,7 @@ This section explains creating a simple application with [WinForms MultiColumn L
 ## Assembly Deployment
 Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#gridlistcontrol) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. 
 
-The following assemblies should be added as reference to use the GridListControl in any application.
+The following assemblies should be added as reference to use the MultiColumn ListBox in any application.
 
 <table>
 <tr>
@@ -24,16 +24,16 @@ Description<br/><br/></th></tr>
 <tr>
 <td>
 {{'[Syncfusion.Grid.Windows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.html)'| markdownify }}<br/><br/></td><td>
-Contains classes that handles all UI operations, fundamentals, and base classes of the GridListControl.<br/><br/></td></tr>
+Contains classes that handles all UI operations, fundamentals, and base classes of the MultiColumn ListBox.<br/><br/></td></tr>
 <tr>
 <td>
 {{'[Syncfusion.Shared.Base](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.html)'| markdownify }}<br/><br/></td><td>
-Contains the style related properties and various editor controls used in the GridListControl.<br/><br/></td></tr>
+Contains the style related properties and various editor controls used in the MultiColumn ListBox.<br/><br/></td></tr>
 </table>
 
-## Creating application with GridListControl
+## Creating application with MultiColumn ListBox
 
-This section provides step-by-step procedure to create a GridList control through designer and programmatic approach in a .NET application.
+This section provides step-by-step procedure to create a MultiColumn ListBox through designer and programmatic approach in a .NET application.
 
 ### Through designer
 
@@ -56,7 +56,7 @@ Drag the control onto the form, size it and set the desired properties if the da
    ![Drag the GridListControl Object from Toolbox](Creating-Grid-List-Control_images/Creating-Grid-List-Control_img4.jpeg) 
 
 5. Size and position it.
-6. Go to the Properties dialog of this GridList control and set the DataSource property of this control to an appropriate object.
+6. Go to the Properties dialog of this MultiColumn ListBox and set the DataSource property of this control to an appropriate object.
 
    ![set the DataSource property](Creating-Grid-List-Control_images/Creating-Grid-List-Control_img5.jpeg) 
 
@@ -68,7 +68,7 @@ This designer-created data source is available to use as the data source member 
 
 ### Through code
 
-The GridList control sample that ships with Essential Grid does not use the designer. It creates an ArrayList of objects that serves as a data source for the GridList control. Each state object has a LongName, ShortName, and ImageIndex properties that can be displayed in the list control.  
+The MultiColumn ListBox sample that ships with Essential Grid does not use the designer. It creates an ArrayList of objects that serves as a data source for the control. Each state object has a LongName, ShortName, and ImageIndex properties that can be displayed in the list control.  
 
 For the complete implementation details, refer to the sample in the following installation path:
 
@@ -109,4 +109,4 @@ gridListBox1.FillLastColumn = True
 
 ## Selection
 
-Selection for the GridListControl can be enabled by using the SelectionMode property. The `GridListControl` supports three types of selection behaviors based on the [SelectionMode](https://help.syncfusion.com/windowsforms/multicolumn-listbox/data-binding-and-selection-modes) option. The SelectionBehaviors can be specified to one for selecting single row or multi-simple to select many rows.
+Selection for the MultiColumn ListBox can be enabled by using the SelectionMode property. The control supports three types of selection behaviors based on the [SelectionMode](https://help.syncfusion.com/windowsforms/multicolumn-listbox/data-binding-and-selection-modes) option. The SelectionBehaviors can be specified to one for selecting single row or multi-simple to select many rows.
