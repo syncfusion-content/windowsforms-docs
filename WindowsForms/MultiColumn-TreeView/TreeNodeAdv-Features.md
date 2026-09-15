@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: TreeNodeAdv Features in WinForms MultiColumn TreeView | Syncfusion®
 description: TreeNodeAdv features include checkboxes, option buttons, label editing, custom controls, and primitive customization.
@@ -16,12 +16,12 @@ Option button allows the user to select only one node from all nodes.
 
 **Property Table**
 
-*MultiColumnTreeView Properties*
+*WinForms MultiColumn TreeView Properties*
 
 <table>
 <tr>
 <th>
-MultiColumnTreeView Property</th><th>
+WinForms MultiColumn TreeView Property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -87,12 +87,12 @@ The `InteractiveCheckBoxes` property indicates whether the state of the parent n
 
 **Property Table**
 
-*MultiColumnTreeView Properties*
+*WinForms MultiColumn TreeView Properties*
 
 <table>
 <tr>
 <th>
-MultiColumnTreeView Property</th><th>
+WinForms MultiColumn TreeView Property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -156,7 +156,7 @@ Me.multiColumnTreeView1.Nodes(0).Checked = True
 
 **Tristate CheckBox Settings**
 
-In the MultiColumnTreeView, the partial checking of the child nodes is supported. They are Checked State, Unchecked State, and Intermediate State.
+In the WinForms MultiColumn TreeView, the partial checking of the child nodes is supported. They are Checked State, Unchecked State, and Intermediate State.
 The `CheckColor` and `CheckState` properties are used to set the color and the state of the check mark of the selected node. The options for the `CheckState` property are `Checked`, `Unchecked`, and `Indeterminate`.
 
 *Property Table*
@@ -226,7 +226,7 @@ Me.multiColumnTreeView1.LabelEdit = True
 
 ## Primitives
 	
-The MultiColumnTreeView control supports a set of primitive collections, that can be set through the Primitives Collection Editor available with each node in the MultiColumnTreeView controls.
+The WinForms MultiColumn TreeView control supports a set of primitive collections, that can be set through the Primitives Collection Editor available with each node in the WinForms MultiColumn TreeView controls.
 
 The types of primitives available are LabelPrimitive, LeftImagePrimitive, RightImagePrimitive, CheckBoxPrimitive, OptionButtonPrimitive and CustomControlPrimitive.
 

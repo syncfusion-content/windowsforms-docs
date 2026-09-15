@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: MultiColumnTreeView Features in MultiColumn TreeView | Syncfusion®
 description: MultiColumnTreeView features include multi-selection, keyboard search, auto-sizing, undo-redo support, tooltips, and performance optimization.
@@ -9,7 +9,7 @@ documentation: ug
 
 # MultiColumnTreeView Features in Windows Forms MultiColumn TreeView
 
-MultiColumnTreeView contains following features,
+WinForms MultiColumn TreeView contains following features,
 
 ## NodeSelection
 
@@ -41,7 +41,7 @@ Me.MultiColumnTreeView1.SelectionMode = Syncfusion.Windows.Forms.Tools.MultiColu
 
 ![MultiColumnTreeView-Features_img1](MultiColumntreeView-Features_Images/MultiColumnTreeView-Features_img1.jpg)
 
-`SelectedNode` property gets the node value when the user selects a node in the MulticolumnTreeView.
+`SelectedNode` property gets the node value when the user selects a node in the WinForms MultiColumn TreeView.
 This property will be useful when the Selection Mode is Single.
 
 `SelectedNode` can also be used to set a node as selected.
@@ -62,7 +62,7 @@ Me.MultiColumnTreeView1.SelectedNode = Me.MultiColumnTreeView1.Nodes(0).Nodes(1)
 
 {% endtabs %}
 
-`SelectedNodes` is used to get the nodes selected in MultiColumnTreeView, it can be used in all  selection modes .
+`SelectedNodes` is used to get the nodes selected in WinForms MultiColumn TreeView, it can be used in all  selection modes .
 
 
 `ActiveNode` is the node that is being active, it allows to get or set a node as ActiveNode at an instance.
@@ -85,7 +85,7 @@ Me.MultiColumnTreeView1.ActiveNode = Me.MultiColumnTreeView1.Nodes(4).Nodes(1)
 
 ## Keyboard-Based and Mouse-Based Selection
 
-Mouse-based selection allows the user to select the nodes using a mouse drag. Simply click on any area in MultiColumnTreeView and drag. All the nodes available in the drag region will be selected.
+Mouse-based selection allows the user to select the nodes using a mouse drag. Simply click on any area in WinForms MultiColumn TreeView and drag. All the nodes available in the drag region will be selected.
 Use the property `AllowMouseBasedSelection` to select nodes using the mouse.
 
 {% tabs %}
@@ -106,7 +106,7 @@ Me.MultiColumnTreeView1.AllowMouseBasedSelection = True
 
 ![MultiColumnTreeView-Features_img2](MultiColumntreeView-Features_Images/MultiColumnTreeView-Features_img2.jpg)
 
-MultiColumnTreeView supports searching for nodes using the keyboard. Tap any letter on the keyboard and MultiColumnTreeView will show the node starting with that letter. Keep tapping the same letter to cycle through all the nodes starting with it.
+WinForms MultiColumn TreeView supports node searching through keyboard input. Press a letter key to navigate to the first node that starts with that letter. Press the same key repeatedly to cycle through all nodes that begin with the entered letter.
 
 {% tabs %}
 
@@ -126,7 +126,7 @@ Me.MultiColumnTreeView1.AllowKeyboardSearch = True
 
 ## Auto Size for Columns
 
-MultiColumnTreeView supports calculating the width of nodes and sub-items based on the width of the text and images they contain, and assigns the largest node width to its column.
+WinForms MultiColumn TreeView supports calculating the width of nodes and sub-items based on the width of the text and images they contain, and assigns the largest node width to its column.
 
 This is controlled by the `AutoSizeMode` property, which has the following options:
 
@@ -164,7 +164,7 @@ Actions can be recorded in the history manager so that Undo and Redo operations 
 <table>
 <tr>
 <th>
-MultiColumnTreeView  Property</th><th>
+WinForms MultiColumn TreeView  Property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -261,7 +261,7 @@ ToolTip is a special control which automatically appears as a popup when a node 
 
 ## Performance
 
-The MultiColumnTreeView performance can be improved with the following properties and methods.
+The WinForms MultiColumn TreeView performance can be improved with the following properties and methods.
 
 ### SuspendExpandRecalculate
 
@@ -286,7 +286,7 @@ Me.multiColumnTreeView1.SuspendExpandRecalculate = True
 <table>
 <tr>
 <th>
-MultiColumnTreeView Methods</th><th>
+WinForms MultiColumn TreeView Methods</th><th>
 Description</th></tr>
 <tr>
 <td>

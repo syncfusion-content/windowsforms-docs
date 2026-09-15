@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Style Architecture in Windows Forms MultiColumn TreeView | Syncfusion®
 description: Style Architecture enables hierarchical style inheritance and customization for nodes, columns, subitems, and tree levels.
@@ -9,7 +9,7 @@ documentation: ug
 
 # Style Architecture in Windows Forms MultiColumn TreeView
 
-The tree control employs an extensive Styles Architecture, that let users specify node styles globally, specifically for a class of nodes. This is possible by using a style information instance for each class of nodes, represented by a `MultiColumnTreeView.TreeNodeAdvStyleInfo`. Users will notice that for some of these classes of nodes, the style needs to be declared with a name at the tree level and stored in the tree's BaseStyles hash table.
+The tree control employs an extensive Styles Architecture, that let users specify node styles globally, specifically for a class of nodes. This is possible by using a style information instance for each class of nodes, represented by a WinForms MultiColumn TreeView's `TreeNodeAdvStyleInfo`. Users will notice that for some of these classes of nodes, the style needs to be declared with a name at the tree level and stored in the tree's BaseStyles hash table.
 
 As illustrated below, implicit style inheritance is enforced by the Framework, while explicit style inheritance can be set up by the programmer. For all styles, explicit inheritance precedes implicit inheritance.
 
@@ -23,7 +23,7 @@ When a style is not set in a style info object, it inherits the style from the p
 
 *	Node Level Styles: The Framework also lets you specify a style for all nodes at a level in the tree hierarchy, the top-most level being 1. Refer Node Level Style for setting node level style settings.
 
-*	Standard Style or Global Style: A standard, global style is exposed by the MultiColumnTreeView control to be applied on all the nodes in the tree. Refer Standard Style for setting style in a Tree level.
+*	Standard Style or Global Style: A standard, global style is exposed by the WinForms MultiColumn TreeView control to be applied on all the nodes in the tree. Refer Standard Style for setting style in a Tree level.
 
 *	Column Style: This lets you specify the styles for the columns.
 
@@ -36,7 +36,7 @@ Any StyleInfo instance can also inherit explicitly from a specific named StyleIn
 <table>
 <tr>
 <th>
-MultiColumnTreeView Property</th><th>
+WinForms MultiColumn TreeView Property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -44,14 +44,14 @@ BaseStyle</td><td>
 Indicates the base style of the nodes.</td></tr>
 </table>
 
-StandardStyle is the default style for the nodes. It can be edited using MultiColumnTreeView.StandardStyle property. It can also be edited through BaseStyles Collection Editor dialog.
+StandardStyle is the default style for the nodes. It can be edited using WinForms MultiColumn TreeView's StandardStyle property. It can also be edited through BaseStyles Collection Editor dialog.
 
-The MultiColumnTreeView control provides the below default styles which can be edited through BaseStyles Collection Editor also. In BaseStyle Collection Editor, StandardColumnStyle represents Standard - Column, StandardStyle represents Standard Styles and StandardSubItemStyle represents Standard - SubItem. User can customize these styles and apply to specific nodes through Nodes Collection Editor.
+The WinForms MultiColumn TreeView control provides the below default styles which can be edited through BaseStyles Collection Editor also. In BaseStyle Collection Editor, StandardColumnStyle represents Standard - Column, StandardStyle represents Standard Styles and StandardSubItemStyle represents Standard - SubItem. User can customize these styles and apply to specific nodes through Nodes Collection Editor.
 
 <table>
 <tr>
 <th>
-MultiColumnTreeView Property</th><th>
+WinForms MultiColumn TreeView Property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -69,10 +69,10 @@ Indicates the style that all the sub items will inherit from.</td></tr>
 
 ## StandardStyle
 
-Setting a common style for all the nodes in the MultiColumnTreeView.
+Setting a common style for all the nodes in the WinForms MultiColumn TreeView.
 
 You can modify the background for all the children of a parent node by editing the `StandardStyle` property.
-The following image displays a gradient style for all the columns of the MultiColumnTreeView control.
+The following image displays a gradient style for all the columns of the WinForms MultiColumn TreeView control.
 
 ### StandardStyle Settings
 
@@ -234,7 +234,7 @@ Specifies the sort type of the node.</td></tr>
 
 Image showing three Standard styles for Nodes, SubItem, and Column.
 
-The following image displays a gradient style for all the columns of the MultiColumnTreeView control by changing the properties of the Standard Style.
+The following image displays a gradient style for all the columns of the WinForms MultiColumn TreeView control by changing the properties of the Standard Style.
 
 ![Style-Architecture_img9](Style-Architecture_Images/Style-Architecture_img9.jpg)
 
@@ -411,7 +411,7 @@ Specifies the sort type of the node.</td></tr>
 ## Node Level Style
 
 Setting a common style for all the nodes at a level.
-MultiColumnTreeView lets you add node level styles using the BaseStyles Collection Editor. By default, this style is applied to all nodes in Level 1 for `NodeLevel1` style, Level 2 for `NodeLevel2` style, and so on.
+WinForms MultiColumn TreeView lets you add node level styles using the BaseStyles Collection Editor. By default, this style is applied to all nodes in Level 1 for `NodeLevel1` style, Level 2 for `NodeLevel2` style, and so on.
 You can apply this style to any node by using the `TreeNodeAdv.BaseStyle` property for a node. Refer to the Style Settings table in Node Specific Style.
 
 ![Style-Architecture_img3](Style-Architecture_Images/Style-Architecture_img3.jpg)
@@ -420,7 +420,7 @@ You can apply this style to any node by using the `TreeNodeAdv.BaseStyle` proper
 
 ## Column Style
 
-Standard - Column style is the default style that will be applied to all the columns of the MultiColumnTreeView control. The style settings can be edited by the user.
+Standard - Column style is the default style that will be applied to all the columns of the WinForms MultiColumn TreeView control. The style settings can be edited by the user.
 
 ### Column Style Properties
 

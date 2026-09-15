@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: MDI Child Forms in Windows Forms Menu | Syncfusion
 description: MDI Child Forms support menu merging, toolbar integration, child form management, and customizable merge behavior.
@@ -12,7 +12,7 @@ documentation: ug
 >**Important**
 Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion license key in your Windows Forms application to use our components.
 
-This section illustrates how to create MDI Child forms using the ChildFrameBarManager control.
+This section illustrates how to create MDI Child forms using the WinForms ChildFrame Bar Manager control.
 
 ## Assembly deployment
 
@@ -23,7 +23,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 To create an MDI parent form and an MDI child form, follow the steps below:
 
 1. Set up an MDIParent form by setting Form.IsMdIContainer property to true.
-2. Add menu items, 'Open' and 'Exit', under File menu bar using MainFrameBarManager. You can refer [this topic](https://help.syncfusion.com/windowsforms/menus/adding-menu-items-via-code) to add menu items to the menu.
+2. Add menu items, 'Open' and 'Exit', under File menu bar using WinForms MainFrame Bar Manager. You can refer [this topic](https://help.syncfusion.com/windowsforms/menus/adding-menu-items-via-code) to add menu items to the menu.
 
    ![Menu item with simple menu items](MDI-Child-Forms-images/form_with_menu_items.jpeg)
 
@@ -31,7 +31,7 @@ To create an MDI parent form and an MDI child form, follow the steps below:
 
    ![Child form with controls](MDI-Child-Forms-images/MDI_child_form.jpeg)
 
-4. Drag-and-Drop ChildFrameBarManager to the child form and add necessary menu items. Adding menu items to ChildFrameBarManager is similar to MainFrameBarManager. You can refer [this topic](https://help.syncfusion.com/windowsforms/menus/adding-menu-items-via-designer) to add menu items to the menu.
+4. Drag-and-Drop WinForms ChildFrame Bar Manager to the child form and add necessary menu items. Adding menu items to WinForms ChildFrame Bar Manager is similar to WinForms MainFrame Bar Manager. You can refer [this topic](https://help.syncfusion.com/windowsforms/menus/adding-menu-items-via-designer) to add menu items to the menu.
 
    ![Child form with menu items](MDI-Child-Forms-images/child_form_with_menu_items.jpeg)
 
@@ -39,10 +39,10 @@ To create an MDI parent form and an MDI child form, follow the steps below:
 
 The XP Menus Framework goes to a great extent to support associating menus and toolbars for MDIChild forms. It helps users to create custom menu items and toolbars for child forms and handle menu events right within the child form. Without this support, users would have to handle menu click events in their main form and delegate them to the appropriate child forms with drawn-out casting and run-time checks, and would also have to manually control menu and toolbar visibility based on the active MDI child forms.
 
-Once an MDI child form is associated with a `ChildFrameBarManager`, the XP Menus Framework merges the menus and toolbars of the child form with those of the main form. There are two ways in which MDI merging can happen.
+Once an MDI child form is associated with a `WinForms ChildFrame Bar Manager`, the XP Menus Framework merges the menus and toolbars of the child form with those of the main form. There are two ways in which MDI merging can happen.
 
 * Auto Merging - The Framework will automatically merge the menus of the child forms with those of the main form when a new instance of the child type is parented by the MDIParent. This merging will be undone when all instances of that child type are closed. This is the default behavior.
-* Explicit Merging - Explicitly merging the child types when the application loads will provide a completely merged menu/toolbar structure to the end users at all times. This merged state will stay unaffected throughout the lifetime of the application (whether or not there are instances of the child types currently loaded). Note that the merged `BarItem`s of the MDI child forms are displayed in the runtime customization dialog only, and will not be visible in the parent form's menus or toolbars until an actual instance of the child form is loaded. This is the behavior exhibited in VS .NET. You can explicitly merge child types by registering the child form types with the `MainFrameBarManager`, as follows.
+* Explicit Merging - Explicitly merging the child types when the application loads will provide a completely merged menu/toolbar structure to the end users at all times. This merged state will stay unaffected throughout the lifetime of the application (whether or not there are instances of the child types currently loaded). Note that the merged `BarItem`s of the MDI child forms are displayed in the runtime customization dialog only, and will not be visible in the parent form's menus or toolbars until an actual instance of the child form is loaded. This is the behavior exhibited in VS .NET. You can explicitly merge child types by registering the child form types with the `WinForms MainFrame Bar Manager`, as follows.
 
 N> Here the child forms created in the above example is being used.
 
@@ -62,7 +62,7 @@ Me.mainFrameBarManager1.RegisterMdiChildTypes(New Type() {GetType(TextEditorForm
 
 {% endtabs %}
 
-The MainFrameBarManager will then create an instance of these form types and obtain the main menu and toolbars, associated with these child form types. 
+The WinForms MainFrame Bar Manager will then create an instance of these form types and obtain the main menu and toolbars, associated with these child form types. 
 
 The following applies to the explicit merging scenario only:
 
