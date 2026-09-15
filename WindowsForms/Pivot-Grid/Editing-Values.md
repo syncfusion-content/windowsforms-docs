@@ -13,9 +13,9 @@ documentation: ug
 
 ## Editing value cells
 
-Value cells can be edited by enabling the [EnableValueEditing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_EnableValueEditing) property of pivot grid control. While handling the editing operations, the modified values will be calculated and automatically reflected in the total cell values.
+Value cells can be edited by enabling the [EnableValueEditing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_EnableValueEditing) property of Pivot Grid. While handling the editing operations, the modified values will be calculated and automatically reflected in the total cell values.
 
-Refer to the below code sample to enable editing in total cells of pivot grid.
+Refer to the below code sample to enable editing in total cells of Pivot Grid.
 
 {% tabs %}
 
@@ -39,7 +39,7 @@ Me.pivotGrid1.EnableValueEditing = True
 
 Values of total cells can also be edited by using the [AllowEditingOfTotalCells](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotEditingManager.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotEditingManager_AllowEditingOfTotalCells) property of [EditManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_EditManager).
 
-Refer to the below code sample to enable editing in total cells of pivot grid.
+Refer to the below code sample to enable editing in total cells of Pivot Grid.
 
 {% tabs %}
 

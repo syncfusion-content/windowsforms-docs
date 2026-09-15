@@ -9,17 +9,17 @@ documentation: ug
 
 # Data Exploration in Windows Forms Pivot Grid
 
-Pivot grid provides support for drill down and drill up to visualize the pivot information in both abstract and detailed views. The row headers and column headers can be expanded or collapsed programmatically to explore the pivot data.
+WinForms Pivot Grid provides support for drill down and drill up to visualize the pivot information in both abstract and detailed views. The row headers and column headers can be expanded or collapsed programmatically to explore the pivot data.
 
 ## Collapsing headers
 
-By default, the pivot grid control loads the data by expanding all the row headers and column headers. To collapse either all the headers or specific headers, built-in methods are available in pivot grid.
+By default, the Pivot Grid control loads the data by expanding all the row headers and column headers. To collapse either all the headers or specific headers, built-in methods are available in pivot grid.
 
 ### Collapsing all headers
 
 Both the row and column headers can be collapsed simultaneously by using the [CollapseAllGroups](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControlBase_CollapseAllGroups) method.
 
-Refer to the below code sample to collapse all the headers including row headers and column headers.
+Refer to the below code sample to collapse all the headers including row and column headers.
 
 {% tabs %}
 
@@ -187,7 +187,7 @@ Me.pivotGridControl1.TableControl.CollapseColumn(pivotColumns)
 
 ## Expanding headers
 
-Pivot grid supports to drill down the pivot item with the help of row headers and column headers. To expand either all the headers or specific headers, built-in methods are available in pivot grid.
+Pivot Grid supports to drill down the pivot item with the help of row headers and column headers. To expand either all the headers or specific headers, built-in methods are available in the control.
 
 ### Expanding all headers
 
