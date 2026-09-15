@@ -15,11 +15,11 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 Click [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install nuget packages in Windows Forms application.
 
-## Add RangeSlider control via designer
+## Add WinForms Range Slider control via designer
 
-1. Create a new Windows Forms project in Visual Studio to display the RangeSlider control with dual thumb and highlight the selected range.
+1. Create a new Windows Forms project in Visual Studio to display the WinForms Range Slider control with dual thumb and highlight the selected range.
 
-2. The [RangeSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html) control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
+2. The [WinForms Range Slider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html) control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -30,7 +30,7 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/ins
 
 ![Windows Forms range slider control added by designer](Getting-Started_images/wf-range-slider-control-added-by-designer.png) 
 
-## Add RangeSlider control via code
+## Add WinForms Range Slider control via code
 
 To add the control manually in C#, follow the given steps:
 
@@ -66,7 +66,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4. Create an instance of [RangeSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html), and add it to the form.
+4. Create an instance of [WinForms Range Slider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html), and add it to the form.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -95,7 +95,7 @@ Me.Controls.Add(rangeSlider1)
 
 ## Minimum and maximum values
 
-You can set the minimum and maximum values programmatically using the [SliderMin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html#Syncfusion_Windows_Forms_Tools_RangeSlider_SliderMin) and [SliderMax](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html#Syncfusion_Windows_Forms_Tools_RangeSlider_SliderMax) properties of RangeSlider.
+You can set the minimum and maximum values programmatically using the [SliderMin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html#Syncfusion_Windows_Forms_Tools_RangeSlider_SliderMin) and [SliderMax](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html#Syncfusion_Windows_Forms_Tools_RangeSlider_SliderMax) properties of WinForms Range Slider.
 
 {% tabs %}
 {% highlight C# %}
@@ -118,7 +118,7 @@ rangeSlider1.SliderMax = 7
 
 ## Horizontal and vertical orientations
 
-You can change the layout of range slider to horizontal or vertical by setting the [orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html#Syncfusion_Windows_Forms_Tools_RangeSlider_Orientation) property of RangeSlider.
+You can change the layout of WinForms Range Slider to horizontal or vertical by setting the [orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html#Syncfusion_Windows_Forms_Tools_RangeSlider_Orientation) property.
 
 {% tabs %}
 {% highlight C# %}

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Style in Windows Forms Navigation Drawer | Syncfusion®
 description: Style settings provide built-in themes including Office 2016 variants and default styles for customizing NavigationDrawer appearance.
@@ -9,7 +9,7 @@ documentation: ug
 
 # Style in Windows Forms Navigation Drawer
 
-[Windows Forms Navigation Drawer](https://www.syncfusion.com/winforms-ui-controls/navigation-drawer) control has rich set of themes for professional representation. You can easily modify the look and feel of the NavigationDrawer using the built-in themes.
+[WinForms Navigation Drawer](https://www.syncfusion.com/winforms-ui-controls/navigation-drawer) control has rich set of themes for professional representation. You can easily modify its look and feel using the built-in themes.
 
 It has the below themes.
 
@@ -23,7 +23,7 @@ It has the below themes.
 
     •	Office2016Black
 
-The following code example allows you to set the [style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_Style) for the NavigationDrawer.
+The following code example allows you to set the [style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_Style) for the WinForms Navigation Drawer.
 
 ## Default
 

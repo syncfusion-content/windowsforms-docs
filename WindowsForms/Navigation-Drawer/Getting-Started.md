@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Getting Started with Windows Forms NavigationDrawer
 
-This section explains how to display the items and adjust the image positions using [Windows Forms NavigationDrawer](https://www.syncfusion.com/winforms-ui-controls/navigation-drawer) control.
+This section explains how to display the items and adjust the image positions using [WinForms Navigation Drawer](https://www.syncfusion.com/winforms-ui-controls/navigation-drawer) control.
 
 ## Assembly deployment
 
@@ -18,17 +18,17 @@ You can find more details about installing the NuGet packages in a Windows Forms
  
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
 
-## Create a simple application with NavigationDrawer
+## Create a simple application with WinForms Navigation Drawer
 
-In this walk through, user will create a Windows Forms application that contains [NavigationDrawer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html) control.
+In this walk through, user will create a Windows Forms application that contains [WinForms Navigation Drawer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html) control.
 
 ## Create a project
 
-Create a new Windows Forms project in Visual Studio to display the NavigationDrawer control with its sliding panel at different sides.
+Create a new Windows Forms project in Visual Studio to display the WinForms Navigation Drawer control with its sliding panel at different sides.
 
 ## Adding control via designer
 
-The `NavigationDrawer` control can be added to an application by dragging it from the toolbox and dropping it in designer. The following assembly references will be added automatically.
+The `WinForms Navigation Drawer` control can be added to an application by dragging it from the toolbox and dropping it in designer. The following assembly references will be added automatically.
 
 * Syncfusion.Grid.Base.dll
 * Syncfusion.Grid.Windows.dll
@@ -39,9 +39,9 @@ The `NavigationDrawer` control can be added to an application by dragging it fro
 
 ![wf navigation drawer control added by designer](Getting-Started_images/wf-navigation-drawer-control-added-by-designer.png) 
 
-**Add items to NavigationDrawer**
+**Add items to WinForms Navigation Drawer**
 
-The header and menu items can be added to drawer using the [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_Items) collection in smart tags of NavigationDrawer.
+The header and menu items can be added to drawer using the [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_Items) collection in smart tags of WinForms Navigation Drawer.
 
 ![wf navigation drawer items added by designer](Getting-Started_images/wf-navigation-drawer-control-items-added-by-designer.png)
 
@@ -72,7 +72,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-3. Create a NavigationDrawer instance, and add it to the window.
+3. Create a NavigationDrawer (WinForms Navigation Drawer) instance, and add it to the window.
 
 {% capture codesnippet2 %}​
 {% tabs %}
@@ -104,9 +104,9 @@ Me.navigationDrawer1.DrawerHeight = Me.Height
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-5. Add header to the NavigationDrawer.
+5. Add header to the WinForms Navigation Drawer.
 
- Create a [DrawerHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawerHeader.html) instance, and add it to the [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_Items) collection in NavigationDrawer.
+ Create a [DrawerHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawerHeader.html) instance, and add it to the [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_Items) collection in WinForms Navigation Drawer.
 
 {% capture codesnippet4 %}​
 {% tabs %}
@@ -124,9 +124,9 @@ Me.navigationDrawer1.Items.Add(Me.drawerHeader1)
 
  ![wf navigation drawer header item added](Getting-Started_images/wf-navigation-drawer-header-added-by-code.png)
 
-6. Add MenuItems to NavigationDrawer.
+6. Add MenuItems to WinForms Navigation Drawer.
 
-Create a [DrawerMenuItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawerMenuItem.html) instance, and add it to the [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_Items) collection in the NavigationDrawer class.
+Create a [DrawerMenuItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawerMenuItem.html) instance, and add it to the [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_Items) collection in the NavigationDrawer (WinForms Navigation Drawer) class.
 
 
 {% tabs %}
@@ -161,9 +161,9 @@ Me.navigationDrawer1.Items.Add(Me.drawerMenuItem4)
 
 ## Sidebar placement
 
-You can change the sliding position of the NavigationDrawer control by using [Position](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_Position) property.
+You can change the sliding position of the WinForms Navigation Drawer control by using [Position](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_Position) property.
 
-The sliding position options of the NavigationDrawer is given below,
+The sliding position options of the WinForms Navigation Drawer is given below,
  
 * **Left**– Slides from left direction.
 * **Right**– Slides from right direction.
@@ -206,7 +206,7 @@ Me.navigationDrawer1.Position = SlidePosition.Left
  
 ## Setting image to an item
 
-The `NavigationDrawer` allows setting image to each menu item using [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawerMenuItem.html#Syncfusion_Windows_Forms_Tools_DrawerMenuItem_Image) property.
+The `WinForms Navigation Drawer` allows setting image to each menu item using [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawerMenuItem.html#Syncfusion_Windows_Forms_Tools_DrawerMenuItem_Image) property.
 
 {% tabs %}
 {% highlight C# %}
@@ -240,4 +240,4 @@ Me.drawerMenuItem1.TextImageRelation = TextImageRelation.TextBeforeImage
 
 ![Setting TextImageRelation to an item](Getting-Started_images/positioning_text_and_image.png)
 
-N> You can also explore our [WinForms Navigation Drawer example](https://github.com/syncfusion/winforms-demos/tree/master/navigation/NavigationDrawer) that shows you how to render and configure the navigation drawer.
+N> You can also explore our [WinForms Navigation Drawer example](https://github.com/syncfusion/winforms-demos/tree/master/navigation/NavigationDrawer) that shows you how to render and configure the WinForms Navigation Drawer control.
