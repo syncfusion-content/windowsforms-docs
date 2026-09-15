@@ -407,7 +407,7 @@ End Sub
 
 ## ReadOnlyChanged
 
-This event occurs when the [ReadOnly](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.readonly?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_ReadOnly) property is changed. The `ReadOnly` property controls whether the text in the edit control can be changed or not.
+This event occurs when the [ReadOnly](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.readonly?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_ReadOnly) property is changed. The `ReadOnly` property controls whether the text in the edit control can be changed or not.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 

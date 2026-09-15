@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Print a Grid in Windows Forms Grid Control
 
-GridPrintDocument class will allow you to [print](http://help.syncfusion.com/windowsforms/grid/virtual-grid#print-preview-and-printing) your grids. Here is a button click event handler that will show you how to use this class.
+GridPrintDocument class will allow you to [print](https://help.syncfusion.com/windowsforms/grid/virtual-grid#print-preview-and-printing) your grids. Here is a button click event handler that will show you how to use this class.
 
 {% tabs %}
 {% highlight c# %}

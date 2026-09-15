@@ -148,6 +148,6 @@ Me.dateTimePickerAdv1.CalendarSizeToFit = False
 
 {% seealso %}
 
-[Calendar Value](http://help.syncfusion.com/windowsforms/calendar/calendar-value)
+[Calendar Value](https://help.syncfusion.com/windowsforms/calendar/calendar-value)
 
 {% endseealso %}

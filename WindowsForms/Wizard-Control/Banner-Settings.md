@@ -107,7 +107,7 @@ Me.wizardControl1.AutoLayoutTitle = True
 
 ### Title text
 
-The font style and the fore color for the Title text can be edited through [Label.Font](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.font?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_Font) and [Label.ForeColor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.forecolor?view=netframework-4.7.2) property.
+The font style and the fore color for the Title text can be edited through [Label.Font](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.font?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_Font) and [Label.ForeColor](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.forecolor?view=netframework-4.7.2) property.
 
 ![Title text](Wizard-Package_images/Wizard-Package_img11.jpeg)
 
@@ -147,8 +147,8 @@ this.label1.ForeColor = System.Drawing.Color.DarkBlue;
 
 The appearance of the description text for a wizard control can be edited using the description label properties.
 
-* [Font](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.font?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_Font)
-* [ForeColor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.forecolor?view=netframework-4.7.2)
+* [Font](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.font?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_Font)
+* [ForeColor](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.forecolor?view=netframework-4.7.2)
 
 ![Description text](Wizard-Package_images/Wizard-Package_img13.jpeg)
 

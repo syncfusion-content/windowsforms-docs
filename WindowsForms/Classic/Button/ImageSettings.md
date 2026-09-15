@@ -84,7 +84,7 @@ TextAboveImage.</td></tr>
 
 ![Overview_img73](Overview_images/Overview_img73.jpeg) 
 
-N> The Image settings will be effective only when [ButtonType](http://help.syncfusion.com/windowsforms/buttonadv/buttonadvappearnce#button-types) is set to Normal.
+N> The Image settings will be effective only when [ButtonType](https://help.syncfusion.com/windowsforms/buttonadv/buttonadvappearnce#button-types) is set to Normal.
 
 {% tabs %}
 {% highlight c# %}

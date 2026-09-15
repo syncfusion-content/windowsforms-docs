@@ -182,7 +182,7 @@ This section deals with creating a custom popup window for the DateTimePickerAdv
 
 ### Creating a Custom Popup Window for DateTimePickerAdv
 
-Follow the below steps to add a Windows [MonthCalendar](https://docs.microsoft.com/en-us/dotnet/framework/winforms/controls/monthcalendar-control-windows-forms) control as the Popup for the [DateTimePickerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html), using [PopupControlContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html).
+Follow the below steps to add a Windows [MonthCalendar](https://learn.microsoft.com/en-us/dotnet/framework/winforms/controls/monthcalendar-control-windows-forms) control as the Popup for the [DateTimePickerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html), using [PopupControlContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html).
 
 1. Drag a DateTimePickerAdv, PopupControlContainer and a button onto the form designer from the toolbox. 
 
