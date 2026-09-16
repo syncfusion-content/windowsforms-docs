@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Localization in Windows Forms MessageBox | Syncfusion®
 description: Localization in Windows Forms MessageBox enables displaying dialog content, button text, and messages in different languages and regional settings.

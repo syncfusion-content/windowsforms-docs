@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Host Form Settings in Windows Forms Splash Screen | Syncfusion®
 description: Host form settings in Windows Forms Splash Screen configure how the splash screen interacts with and appears alongside its parent form.

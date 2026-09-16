@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Display DateTimePickerAdv programmatically | Syncfusion
 description: Learn how to display the calendar of Syncfusion Windows Forms DateTimePickerAdv (Classic) on a button click using DisplayCalendar method and more.

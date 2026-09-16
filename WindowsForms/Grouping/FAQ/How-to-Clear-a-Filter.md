@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: How to Clear Filtering in Windows Forms Grouping | Syncfusion®
 description: Clear filters in Syncfusion® Windows Forms Grouping control by removing all filters or specific filter conditions from the RecordFilters collection.

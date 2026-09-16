@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Banner Settings in Windows Forms Wizard Control | Syncfusion®
 description: Banner settings in Windows Forms Wizard Control enable customizing banner panels, title text, descriptions, images, and layout for wizard pages.

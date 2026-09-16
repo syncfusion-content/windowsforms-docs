@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: About Syncfusion® Windows Forms Progress Bar Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms Progress Bar control and explore its features and more details.

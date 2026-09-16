@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Text Settings in Windows Forms Progress Bar | Syncfusion®
 description: Text settings in Windows Forms Progress Bar enable displaying and formatting progress information using text alignment, shadow, and more options.

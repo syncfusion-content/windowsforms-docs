@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Events in Windows Forms Splash Screen | Syncfusion®
 description: Events in Windows Forms Splash Screen allow handling lifecycle actions and user interactions to customize behavior.

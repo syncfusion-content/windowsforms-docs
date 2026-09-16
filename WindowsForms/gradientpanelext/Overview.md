@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: About Syncfusion Windows Forms GradientPanelExt Control | Syncfusion® 
 description: Learn about the introduction of Syncfusion®  Essential Studio Windows Forms GradientPanelExt control and its key features and customization options.

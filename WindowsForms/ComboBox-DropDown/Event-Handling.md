@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Event Handling in Windows Forms ComboDropDown | Syncfusion®
 description: Event handling in Windows Forms ComboDropDown enables responding to user interactions through control events such as DropDown and Popup.

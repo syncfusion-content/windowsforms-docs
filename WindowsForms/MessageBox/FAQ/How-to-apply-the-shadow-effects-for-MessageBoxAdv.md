@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: How to add shadow effects in MessageBoxAdv | Syncfusion®
 description: Shadow effects in Windows Forms MessageBoxAdv enhance dialog appearance by adding visual depth, creating a modern and engaging user experience.

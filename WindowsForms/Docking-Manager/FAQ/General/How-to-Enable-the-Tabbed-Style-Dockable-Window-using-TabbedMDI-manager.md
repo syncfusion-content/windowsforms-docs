@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: How to enable tabbed in Windows Forms Docking Manager | Syncfusion®
 description: Learn how to enable the tabbed style dockable window using TabbedMDI manager in Syncfusion Windows Forms Docking Manager.

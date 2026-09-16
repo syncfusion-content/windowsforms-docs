@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Themes in Windows Forms StatusBarAdvPanel | Syncfusion®
 description: Themes in Windows Forms StatusBarAdvPanel provide consistent visual styles, helping applications maintain a unified appearance.

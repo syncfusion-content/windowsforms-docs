@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Events in Windows Forms Progress Bar | Syncfusion®
 description: Events in Windows Forms Progress Bar allow applications to respond to progress updates and customize runtime behavior.

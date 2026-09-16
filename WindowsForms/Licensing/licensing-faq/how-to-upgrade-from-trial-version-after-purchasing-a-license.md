@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: How to upgrade from trial version in Windows Forms | Syncfusion®
 description: Upgrade from trial version to licensed version of Syncfusion® Windows Forms after purchasing a license.

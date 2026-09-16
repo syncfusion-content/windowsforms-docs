@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Configuring the swfconfig File in Windows Forms UFT | Syncfusion®
 description: Learn about configuring the swfconfig file for Syncfusion® Essential Studio Windows Forms UFT with step-by-step guide.

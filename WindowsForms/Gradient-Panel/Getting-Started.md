@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Getting Started with Windows Forms Gradient Panel | Syncfusion®
 description: Learn how to get started with the Syncfusion® Windows Forms Gradient Panel control. Explore setup, features, examples, and customization options.

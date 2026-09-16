@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Button Parameters in Windows Forms MessageBox | Syncfusion®
 description: Button parameters in Windows Forms MessageBox enable configuring button options, right-to-left layout, details view, and dialog resizing behavior.

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Selection in Windows Forms Tree Navigator | Syncfusion®
 description: Selection in Windows Forms Tree Navigator enables selecting and managing tree items, with events to track selection changes and customize navigation behavior.

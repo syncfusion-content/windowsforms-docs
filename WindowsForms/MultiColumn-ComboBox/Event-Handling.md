@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Event Handling in Windows Forms Multicolumn ComboBox | Syncfusion®
 description: Event handling in Windows Forms MultiColumn ComboBox provides notifications for selection, value, and index changes, enabling customized user interactions.

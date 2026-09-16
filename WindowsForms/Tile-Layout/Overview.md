@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: About Syncfusion® Windows Forms Tile Layout Control | Syncfusion®
 description: Learn about introduction of Syncfusion® Essential Studio Windows Forms Tile Layout control and more details.

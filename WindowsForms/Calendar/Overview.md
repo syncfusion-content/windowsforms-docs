@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: About Syncfusion Windows Forms Calendar Control | Syncfusion
 description: Learn about introduction of Syncfusion Essential Studio Windows Forms Calendar control, its key features, calendar functionality, and more details.

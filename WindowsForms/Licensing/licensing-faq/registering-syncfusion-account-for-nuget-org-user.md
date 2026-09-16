@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Register Account for NuGet.org Users in Windows Forms | Syncfusion®
 description: Register Syncfusion® account for direct NuGet.org users to obtain trial license key for Windows Forms.

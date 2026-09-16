@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Access Record or Field Values in Windows Forms Grouping | Syncfusion®
 description: Access record or field values in Syncfusion® Windows Forms Grouping control using the Records collection, filtered records, and field retrieval methods.

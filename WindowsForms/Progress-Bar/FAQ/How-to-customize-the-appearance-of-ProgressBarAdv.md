@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: How to customize the appearance of ProgressBarAdv | Syncfusion
 description: How to customize the appearance of Syncfusion Essential Studio ProgressBarAdv control, its elements and more details.

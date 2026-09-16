@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: How to Add a New Data Row at Runtime in AutoComplete | Syncfusion
 description: Add new data rows at runtime in Syncfusion® Windows Forms AutoComplete control by updating the data source and internal table data.

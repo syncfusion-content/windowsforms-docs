@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: ToolTip in Windows Forms StatusBarAdvPanel | Syncfusion®
 description: ToolTip in Windows Forms StatusBarAdvPanel displays contextual information, improving usability and user guidance.

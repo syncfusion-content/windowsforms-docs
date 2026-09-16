@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Alignment Settings in Windows Forms Splash Screen | Syncfusion®
 description: Alignment settings in Windows Forms Splash Screen determine the positioning of splash content, ensuring clear and organized visual presentation.

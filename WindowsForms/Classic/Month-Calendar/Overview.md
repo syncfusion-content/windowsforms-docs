@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: About Syncfusion Windows Forms MonthCalendarAdv Control | Syncfusion
 description: Learn about introduction of Syncfusion Essential Studio Windows Forms MonthCalendarAdv control and more details.

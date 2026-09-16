@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Getting Started with Windows Forms DateTimePicker | Syncfusion
 description: Learn how to get started with the Syncfusion Windows Forms DateTimePicker control. Explore setup, features, examples, and customization options.

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: About Syncfusion® Windows Forms ButtonAdv Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms ButtonAdv(Classic) control and more details.

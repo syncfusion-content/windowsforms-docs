@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: How to Sort a Collection in Windows Forms Grouping | Syncfusion®
 description: Sort a collection in the Syncfusion® Windows Forms Grouping control by adding columns to the SortedColumns collection for organized data ordering.

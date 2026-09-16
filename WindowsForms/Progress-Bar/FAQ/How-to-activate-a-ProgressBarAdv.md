@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: How-to-activate-a-ProgressBarAdv | WindowsForms | Syncfusion
 description: how to activate a progressbaradv

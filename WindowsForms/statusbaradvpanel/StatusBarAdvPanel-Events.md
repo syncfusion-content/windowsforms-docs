@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Events in Windows Forms StatusBarAdvPanel | Syncfusion®
 description: Events in Windows Forms StatusBarAdvPanel enable applications to respond to panel actions and customize runtime behavior.

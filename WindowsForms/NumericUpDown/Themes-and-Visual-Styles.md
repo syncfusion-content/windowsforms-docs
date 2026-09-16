@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Themes and Styling in Windows Forms NumericUpdown | Syncfusion®
 description: Themes and visual styles in Windows Forms NumericUpdown enable applying built-in themes and customized appearances for a consistent user interface.

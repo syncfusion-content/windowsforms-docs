@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Border Settings in Windows Forms StatusBarAdvPanel | Syncfusion®
 description: Border settings in Windows Forms StatusBarAdvPanel customize panel borders, enhancing visual separation and interface structure.

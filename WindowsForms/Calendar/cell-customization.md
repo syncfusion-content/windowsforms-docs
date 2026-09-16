@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Cell Customization in Windows Forms Calendar | Syncfusion
 description: Learn how to customize calendar cells to highlight special dates and enhance visual appearance in Windows Forms Calendar control.

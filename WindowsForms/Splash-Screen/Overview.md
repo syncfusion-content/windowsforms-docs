@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: About Syncfusion® Windows Forms Splash Screen | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms Splash Screen and explore its features and more details.

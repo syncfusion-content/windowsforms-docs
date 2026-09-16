@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: MultiSelectionCombobox in Windows Forms | Syncfusion
 description: Learn about How to Bind a External Data Source support in Syncfusion Windows Forms MultiSelectionComboBox control and more details.

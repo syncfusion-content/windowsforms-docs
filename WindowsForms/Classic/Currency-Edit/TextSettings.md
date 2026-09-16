@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Text Settings in Windows Forms CurrencyEdit | Syncfusion®
 description: Text settings in Windows Forms CurrencyEdit control enable customization of text alignment, textbox behavior, calculator value transfer, and value handling.

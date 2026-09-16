@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Alignment Settings in Windows Forms Status Bar | Syncfusion®
 description: Alignment settings in Windows Forms Status Bar control the positioning of panels and child controls for a clear and organized status bar display.
