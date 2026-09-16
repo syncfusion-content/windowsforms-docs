@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Check and Uncheck Bar Items in Windows Forms PopupMenu | Syncfusion®
 description: Checked bar items indicate selection states and allow users to identify and toggle commands within popup menus.

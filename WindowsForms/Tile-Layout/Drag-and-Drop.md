@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Drag and Drop in Windows Forms Tile Layout | Syncfusion®
 description: Drag and drop in Windows Forms Tile Layout enables moving and rearranging tile items within or across layout groups at runtime.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: RTL in Windows Forms Popup | Syncfusion®
 description: RTL support enables displaying popup content in right-to-left layouts for regional and language-specific requirements.

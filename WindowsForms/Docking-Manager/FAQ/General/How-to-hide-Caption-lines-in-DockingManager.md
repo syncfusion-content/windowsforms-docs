@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: How to hide caption lines in Docking Manager | Syncfusion®
 description: Learn how to hide caption lines in Syncfusion Windows Forms Docking Manager control using available properties.

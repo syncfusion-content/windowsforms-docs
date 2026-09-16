@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: How to Embed Controls Using Templates in GroupBar | Syncfusion
 description: Embed controls dynamically in Syncfusion® Windows Forms GroupBar control using templates, custom content, and control integration features.

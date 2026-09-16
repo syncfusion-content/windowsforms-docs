@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: How to enable/disable HubTile rotation | WindowsForms | Syncfusion
 description: How to enable / disable HubTile rotation transition in runtime

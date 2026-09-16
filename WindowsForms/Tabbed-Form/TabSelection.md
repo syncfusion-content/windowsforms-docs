@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Tab Selection in Windows Forms Tabbed Form | Syncfusion®
 description: Tab selection supports programmatic tab activation and events for controlling and monitoring tab selection changes.

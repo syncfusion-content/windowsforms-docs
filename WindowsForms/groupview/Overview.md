@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: About Syncfusion® Windows Forms GroupView Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms GroupView control and more details.

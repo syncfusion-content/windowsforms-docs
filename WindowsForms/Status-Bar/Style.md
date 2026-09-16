@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Style in Windows Forms Status Bar | Syncfusion®
 description: Style in Windows Forms Status Bar enables customization of visual elements and appearance settings to match application design requirements.

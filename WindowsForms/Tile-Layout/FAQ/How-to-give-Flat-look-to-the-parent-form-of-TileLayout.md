@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Flat look to the parent form of TileLayout | WindowsForms | Syncfusion
 description: How to give Flat look to the parent form of TileLayout

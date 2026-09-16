@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Events in Windows Forms SplitContainer | Syncfusion®
 description: Events provide notifications when splitters move or are being moved, enabling runtime layout and resize handling.

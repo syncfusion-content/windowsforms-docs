@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Limitations in Windows Forms UFT | Syncfusion®
 description: Learn about known limitations in Syncfusion® Essential Studio Windows Forms UFT testing framework and controls.

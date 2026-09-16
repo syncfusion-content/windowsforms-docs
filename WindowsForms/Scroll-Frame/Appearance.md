@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Appearance in Windows Forms Scroll Frame | Syncfusion®
 description: Appearance customization supports scrollbar styling, thumb sizing, arrow button settings, disabled states, and built-in themes.

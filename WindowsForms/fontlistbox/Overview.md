@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: About Syncfusion® Windows Forms FontListBox Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms FontListBox control and its features, customization, and usage options.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Navigate to current date in DateTimePickerAdv | Syncfusion
 description: Learn how to navigate to current date in Syncfusion Windows Forms DateTimePickerAdv (Classic) using NavigateToCurrentDate method and more.

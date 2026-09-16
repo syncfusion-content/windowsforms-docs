@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: How to Retrieve Summary Values in Windows Forms Grouping | Syncfusion®
 description: Retrieve summary values in Syncfusion® Windows Forms Grouping control for top-level and grouped records using summary objects and aggregate calculations.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Appearance and Settings in Windows Forms Radio Button | Syncfusion®
 description: Appearance and behavior settings in Windows Forms Radio Button enable configuring focus indicators, auto sizing, and click event behavior.

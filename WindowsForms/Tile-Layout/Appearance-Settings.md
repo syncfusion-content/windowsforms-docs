@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Appearance Settings in Windows Forms Tile Layout | Syncfusion®
 description: Appearance settings in Windows Forms Tile Layout enable customizing group titles, parent form appearance, and theme background behavior.

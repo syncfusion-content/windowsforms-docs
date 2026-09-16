@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Identify current selected date at run time | Syncfusion
 description: Learn how to identify the current selected date in Syncfusion Windows Forms MonthCalendarAdv (Classic) using the DateSelected event and more.

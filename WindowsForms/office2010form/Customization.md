@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Office2010Form Customization in Windows Forms | Syncfusion®
 description: Customization options include caption alignment, fonts, colors, help button support, RTL layouts, and rounded corners.

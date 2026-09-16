@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: How to Add Expression Fields in Windows Forms Grouping | Syncfusion®
 description: Add expression fields in Syncfusion® Windows Forms Grouping control to create calculated values using existing fields and custom expressions.

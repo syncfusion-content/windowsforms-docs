@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: ToolTip in Windows Forms Rating Control | Syncfusion®
 description: ToolTip support in Windows Forms Rating Control enables displaying and formatting tooltip content, helping users understand rating values during interaction.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: How-to-know-whether-the-image-on-the-left-side-Right-side-of-the-node's-text-was-clicked | WindowsForms | Syncfusion
 description: how to know whether the image on the left side / right side of the node's text was clicked

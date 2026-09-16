@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: About Syncfusion® Windows Forms Syntax Editor Control | Syncfusion®
 description: Learn about the introduction and overview of Syncfusion® Windows Forms Syntax Editor control, including its features, elements, and capabilities.

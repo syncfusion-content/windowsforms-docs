@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Events in Windows Forms Navigation Drawer | Syncfusion®
 description: Navigation Drawer events provide notifications for opening, closing, opened, and closed states during drawer transitions.

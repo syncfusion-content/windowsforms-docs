@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Featured Samples in Windows Forms | Syncfusion®
 description: Learn how to run offline samples and explore Syncfusion® Essential Studio Windows Forms controls and components locally.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: DesignTime Features in Windows Forms ButtonAdv | Syncfusion®
 description: Design-time features provide Smart Tag support for configuring text alignment, styles, visual themes, and button collections.

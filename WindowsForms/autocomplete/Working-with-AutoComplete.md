@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Working with Windows Forms AutoComplete | Syncfusion®
 description: Working with AutoComplete covers matching modes, suggestion behavior, history management, data integration, and popup customization.

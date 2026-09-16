@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: IntelliSense in Windows Forms Syntax Editor | Syncfusion®
 description: IntelliSense in Windows Forms Syntax Editor provides code completion, context prompts, and customizable pop-up suggestions to improve coding productivity.

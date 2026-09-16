@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Text Navigation in Windows Forms Syntax Editor | Syncfusion®
 description: Text navigation in Windows Forms Syntax Editor enables movement by character, word, line, page, block, and document levels for efficient code navigation.

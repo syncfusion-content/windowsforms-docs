@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Events in Windows Forms CurrencyEdit | Syncfusion®
 description: Learn about events in Syncfusion® Windows Forms CurrencyEdit control, including CalculatorClosing, CalculatorShowing, and DecimalValueChanged events.

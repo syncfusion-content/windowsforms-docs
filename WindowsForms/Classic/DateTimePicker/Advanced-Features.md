@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Advanced Features in Windows Forms DateTimePickerAdv | Syncfusion
 description: Learn about the advanced features support in Syncfusion Windows Forms DateTimePickerAdv control and more details.

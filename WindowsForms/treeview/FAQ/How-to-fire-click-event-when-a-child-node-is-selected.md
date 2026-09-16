@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Child-node-AfterSelect-event | WindowsForms | Syncfusion
 description: Occurs after a TreeViewAdv node and it's Child Node is selected. IsSelected property can used to check whether the respective node or Child Node is selected. 

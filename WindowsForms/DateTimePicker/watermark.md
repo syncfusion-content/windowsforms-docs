@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Watermark in Windows Forms DateTimePicker | Syncfusion
 description: Learn how to set watermark text in Windows Forms DateTimePicker control for null values and better user experience.

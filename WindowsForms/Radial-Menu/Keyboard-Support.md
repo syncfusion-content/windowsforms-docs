@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Keyboard Support in Windows Forms RadialMenu | Syncfusion®
 description: Keyboard support enables key tips, SuperAccelerator integration, shortcut access, and customizable accelerator appearance.

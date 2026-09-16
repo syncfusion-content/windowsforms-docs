@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Getting Started with Windows Forms Rating Control| Syncfusion®
 description: Learn how to get started with the Syncfusion® Windows Forms Rating Control. Explore setup, features, examples, and customization options.

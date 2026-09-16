@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Calculator Settings in Windows Forms CurrencyEdit | Syncfusion®
 description: Learn about calculator settings in Syncfusion® Windows Forms CurrencyEdit control, including calculator layout, alignment, visibility, and close actions.

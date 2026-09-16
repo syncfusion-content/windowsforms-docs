@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Text Settings in Windows Forms StatusBarAdvPanel | Syncfusion®
 description: Text settings in Windows Forms StatusBarAdvPanel control the display, formatting, and alignment of panel text content.

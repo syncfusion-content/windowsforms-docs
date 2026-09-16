@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Installation Errors in Windows Forms | Syncfusion®
 description: Learn about common installation errors and their solutions when installing Syncfusion® Windows Forms components and offline installer.

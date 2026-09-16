@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Getting Started with Windows Forms Office2007 Form | Syncfusion®
 description: Learn how to get started with the Syncfusion® Windows Forms Office2007 Form control. Explore setup, features, examples, and customization options.

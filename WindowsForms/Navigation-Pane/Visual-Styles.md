@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Visual Styles in Windows Forms Navigation Pane | Syncfusion®
 description: Visual styles provide Office, Metro, and Office 2016 themes with configurable color schemes for Navigation Pane controls.

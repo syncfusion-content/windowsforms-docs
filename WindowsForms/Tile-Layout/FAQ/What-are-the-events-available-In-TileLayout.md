@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: What are the events available in WinForms Tile Layout | Syncfusion
 description: Learn about What are the events available in Syncfusion Windows Forms Tile Layout control, its elements and more details.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Scrolling Support in Windows Forms Popup | Syncfusion®
 description: Scrolling support includes automatic scrollbars, configurable scroll regions, and enhanced navigation for popup content.

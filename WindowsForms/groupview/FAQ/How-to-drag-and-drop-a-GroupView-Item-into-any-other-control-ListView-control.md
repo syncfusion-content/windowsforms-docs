@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Drag and drop a GroupViewItem | WindowsForms | Syncfusion
 description: Frequently Asked Questions

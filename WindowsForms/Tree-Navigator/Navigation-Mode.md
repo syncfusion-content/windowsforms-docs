@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Navigation Mode in Windows Forms Tree Navigator | Syncfusion®
 description: Navigation mode in Windows Forms Tree Navigator enables navigating between parent and child items using default and extended navigation modes.

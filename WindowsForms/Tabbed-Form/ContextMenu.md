@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Context Menu in Windows Forms Tabbed Form | Syncfusion®
 description: Context menu support enables tab-specific actions such as close, close all except current tab, and close tabs to the right.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: About Syncfusion® Windows Forms GroupBar Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms GroupBar control and more details.

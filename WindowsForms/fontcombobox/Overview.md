@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: About Syncfusion® Windows Forms FontComboBox Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms FontComboBox control and its features, customization, and usage options.

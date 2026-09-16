@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Performance in Windows Forms TreeView | Syncfusion®
 description: Performance optimization includes virtualization, deferred recalculation, batch updates, and efficient node loading.

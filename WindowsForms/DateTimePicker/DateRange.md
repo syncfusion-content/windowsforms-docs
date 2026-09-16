@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Date Range in Windows Forms DateTimePicker | Syncfusion
 description: Learn how to restrict date and time selection within a specified range in Windows Forms DateTimePicker.

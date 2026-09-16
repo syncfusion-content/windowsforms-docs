@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: How to access the default panel of a SplashControl | WindowsForms | Syncfusion
 description: How to access the default panel of a SplashControl

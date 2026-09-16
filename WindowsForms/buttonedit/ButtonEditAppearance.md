@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Appearance in Windows Forms ButtonEdit | Syncfusion®
 description: ButtonEdit Appearance supports customizing styles, colors, borders, sizing, themes, and text presentation for ButtonEdit controls.

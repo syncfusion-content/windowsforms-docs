@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: How to upgrade Syncfusion® WinForms components | Syncfusion®
 description: Learn how to upgrade Syncfusion® WinForms components to the latest version using Visual Studio extensions.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: About Windows Forms MultiSelectionComboBox Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms MultiSelectionComboBox control and its key features.

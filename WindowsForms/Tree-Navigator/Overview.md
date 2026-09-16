@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: About Syncfusion® Windows Forms Tree Navigator Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms Tree Navigator control and its features, customization, and navigation capabilities.

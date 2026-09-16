@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Digital Gauge in Windows Forms Gauge | Syncfusion®
 description: Digital gauge in the Windows Forms displays numeric values in a digital format and supports customization of appearance and display settings.

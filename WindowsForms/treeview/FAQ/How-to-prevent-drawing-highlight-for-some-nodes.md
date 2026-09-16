@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: How-to-prevent-drawing-highlight-for-some-nodes | WindowsForms | Syncfusion
 description: how to prevent drawing highlight for some nodes

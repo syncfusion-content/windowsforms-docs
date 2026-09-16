@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: About Syncfusion® Windows Forms ComboDropDown Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms ComboDropDown control and more details.

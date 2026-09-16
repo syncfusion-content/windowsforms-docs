@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Shape Element in Windows Forms Rating Control | Syncfusion®
 description: Shape elements in Windows Forms Rating Control enable displaying ratings using built-in shapes such as star, circle, triangle, heart, diamond, and kite.

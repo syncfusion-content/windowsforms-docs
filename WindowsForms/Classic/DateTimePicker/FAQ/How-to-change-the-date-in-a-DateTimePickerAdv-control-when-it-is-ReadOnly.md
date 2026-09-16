@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: How to change date in ReadOnly DateTimePickerAdv | Syncfusion
 description: Learn how to change the date in Syncfusion Windows Forms DateTimePickerAdv (Classic) when ReadOnly via ReadOnlyValueChange property and more.

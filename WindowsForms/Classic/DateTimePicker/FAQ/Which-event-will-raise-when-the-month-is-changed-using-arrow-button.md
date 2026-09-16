@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Event raised on month change via arrow button | Syncfusion
 description: Learn which event is raised when the month in Syncfusion Windows Forms DateTimePickerAdv (Classic) is changed using the arrow button and more.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: About Syncfusion® Windows Forms StatusBarAdvPanel | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms StatusBarAdvPanel control and explore its features and more details.

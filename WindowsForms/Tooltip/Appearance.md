@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Appearance in Windows Forms Tooltip | Syncfusion®
 description: Appearance customization supports borders, gradients, separators, themes, shadows, RTL layouts, and tooltip styling.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Appearance Settings in Windows Forms NumericUpdown | Syncfusion®
 description: Appearance settings in Windows Forms NumericUpdown enable customizing colors, borders, fonts, themes, and visual styles to enhance the control appearance.

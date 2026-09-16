@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: How to set dock ability in Windows Forms Docking Manager | Syncfusion®
 description: Learn how to get or set the dock ability for a control in Syncfusion Windows Forms Docking Manager control.

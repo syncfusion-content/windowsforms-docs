@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Styles Architecture in Windows Forms TreeView | Syncfusion®
 description: Styles Architecture provides hierarchical style inheritance, global styling, node-level styling, and custom styles.

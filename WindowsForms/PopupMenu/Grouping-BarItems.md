@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Grouping Bar Items in Windows Forms PopupMenu | Syncfusion®
 description: Grouping bar items organizes related commands using separators and grouping methods to improve menu structure.

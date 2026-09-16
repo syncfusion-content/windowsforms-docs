@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: About Syncfusion® Windows Forms NumericUpdown Control | Syncfusion®
 description: Learn about introduction of Syncfusion® Essential Studio Windows Forms NumericUpdown control and more details.

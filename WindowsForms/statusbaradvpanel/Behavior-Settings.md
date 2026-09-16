@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Behavior Settings in Windows Forms StatusBarAdvPanel | Syncfusion®
 description: Behavior settings in Windows Forms StatusBarAdvPanel define panel interactions and runtime functionality to meet application requirements.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Slide Direction in Windows Forms SplashPanel | Syncfusion®
 description: Slide direction in Windows Forms SplashPanel defines how the panel enters and exits the view, enabling smooth and visually appealing transitions.
