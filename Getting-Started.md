@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Windows Forms Spell Checker control | Syncfusion
 description: Learn here about getting started with Syncfusion Windows Forms Spell Checker (SpellCheckerAdv) control, its elements and more details.
-platform: WindowsForms
+platform: windowsforms 
 control: SpellCheckerAdv
 documentation: ug
 ---
