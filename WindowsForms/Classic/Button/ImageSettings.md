@@ -2,7 +2,7 @@
 layout: post
 title: Image Settings in Windows Forms ButtonAdv | Syncfusion®
 description: Image settings support background images, image lists, alignment options, image indexes, and text-image positioning.
-platform: WindowsForms
+platform: windowsforms
 control: Tools	1
 documentation: ug
 ---

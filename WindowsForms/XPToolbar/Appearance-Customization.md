@@ -2,7 +2,7 @@
 layout: post
 title: Appearance in Windows Forms XPToolBar | Syncfusion®
 description: Appearance customization supports background colors, images, fonts, sizing, foreground colors, and item visibility settings.
-platform: WindowsForms
+platform: windowsforms
 control: XPToolBar
 documentation: ug
 ---

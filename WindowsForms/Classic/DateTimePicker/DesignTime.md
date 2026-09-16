@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Design Time Features in Windows Forms DateTimePickerAdv | Syncfusion
 description: Learn about design time features in Syncfusion Windows Forms DateTimePickerAdv control and how to use them effectively.
-platform: WindowsForms
+platform: windowsforms
 control: DateTimePickerAdv 
 documentation: ug
 ---

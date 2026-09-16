@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: SuperToolTip programmatically | WindowsForms | Syncfusion
 description: Learn about How to get or set a programmatically support in Syncfusion Windows Forms SuperToolTip(Classic) control and more details.
-platform: WindowsForms
+platform: windowsforms
 control: Frequently Asked Questions
 documentation: ug
 ---

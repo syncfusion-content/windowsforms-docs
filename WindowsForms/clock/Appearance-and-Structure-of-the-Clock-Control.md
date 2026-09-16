@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Appearance and Structure in Windows Forms Clock | Syncfusion
 description: Learn about the appearance and structure of Windows Forms Clock control components and customization.
-platform: WindowsForms
+platform: windowsforms
 control: Clock
 documentation: ug
 ---

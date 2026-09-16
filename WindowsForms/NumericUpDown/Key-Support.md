@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Key Support in Windows Forms NumericUpdown | Syncfusion®
 description: Key support in Windows Forms NumericUpdown enables keyboard-based value entry and custom key actions, simplifying input of large numeric values.
-platform: WindowsForms
+platform: windowsforms
 control: NumericUpdown
 documentation: ug
 ---

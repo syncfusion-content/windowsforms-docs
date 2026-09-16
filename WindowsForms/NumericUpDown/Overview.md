@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: About Syncfusion® Windows Forms NumericUpdown Control | Syncfusion®
 description: Learn about introduction of Syncfusion® Essential Studio Windows Forms NumericUpdown control and more details.
-platform: WindowsForms
+platform: windowsforms
 control: NumericUpdown
 documentation: ug
 ---

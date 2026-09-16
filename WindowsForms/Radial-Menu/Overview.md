@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: About Syncfusion® Windows Forms RadialMenu Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms RadialMenu control and more details.
-platform: WindowsForms
+platform: windowsforms
 control: RadialMenu 
 documentation: ug
 ---

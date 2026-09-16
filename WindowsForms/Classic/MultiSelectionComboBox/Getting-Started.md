@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Getting Started with WinForms MultiSelectionComboBox | Syncfusion®
 description: Learn how to get started with the Syncfusion® Windows Forms MultiSelectionComboBox control. Explore setup, features, examples, and customization options.
-platform: WindowsForms
+platform: windowsforms
 control: MultiSelectionComboBox
 documentation: ug
 ---

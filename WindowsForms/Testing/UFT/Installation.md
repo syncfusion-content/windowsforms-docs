@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Installation in Windows Forms QTP/UFT | Syncfusion®
 description: Learn about installation of Syncfusion® Essential Studio Windows Forms QTP/UFT add-on and step-by-step setup process.
-platform: WindowsForms
+platform: windowsforms
 control: Testing
 documentation: ug
 ---

@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: How to Add Custom Calculations in Windows Forms Grouping | Syncfusion®
 description: Add custom calculations to expression fields in Syncfusion® Windows Forms Grouping control by registering custom functions and implementing calculation logic.
-platform: WindowsForms
+platform: windowsforms
 control: Grouping
 documentation: ug
 ---

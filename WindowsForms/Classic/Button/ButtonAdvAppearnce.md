@@ -2,7 +2,7 @@
 layout: post
 title: Appearance in Windows Forms ButtonAdv | Syncfusion®
 description: ButtonAdv appearance settings support button types, border styles, themes, custom colors, text formatting, and visual customization.
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---

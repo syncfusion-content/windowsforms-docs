@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Events implemented in the Windows Forms SplitterControl | Syncfusion
 description: Learn about What are the events implemented in Syncfusion Windows Forms Splitter control, its elements and more details.
-platform: WindowsForms
+platform: windowsforms
 control: Splitter
 documentation: ug
 ---

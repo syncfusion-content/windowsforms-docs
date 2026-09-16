@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Formula Support in Windows Forms Grid Control | Syncfusion®
 description: Formula support in Grid Control enables Excel-like calculations, built-in functions, cell references, formula evaluation, and custom formula integration.
-platform: WindowsForms
+platform: windowsforms
 control: Grid Control
 documentation: ug
 ---

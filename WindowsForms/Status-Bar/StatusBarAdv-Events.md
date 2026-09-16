@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Events in Windows Forms Status Bar | Syncfusion®
 description: Events in Windows Forms Status Bar allow applications to respond to status bar actions and customize runtime behavior.
-platform: WindowsForms
+platform: windowsforms
 control: Status Bar
 documentation: ug
 ---

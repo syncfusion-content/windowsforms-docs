@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Visual Styles in Windows Forms FontComboBox | Syncfusion®
 description: Visual styles in Windows Forms FontComboBox enable applying built-in themes and color schemes to customize the control appearance and user experience.
-platform: WindowsForms
+platform: windowsforms
 control: FontComboBox
 documentation: ug
 ---

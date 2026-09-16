@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Events in Windows Forms NumericUpdown | Syncfusion®
 description: NumericUpdown events in Windows Forms provide notifications for property, value, appearance, and theme changes, enabling custom event handling.
-platform: WindowsForms
+platform: windowsforms
 control: NumericUpdown
 documentation: ug
 ---

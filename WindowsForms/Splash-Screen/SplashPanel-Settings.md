@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: SplashPanel Settings in Windows Forms Splash Screen | Syncfusion®
 description: SplashPanel settings in Windows Forms Splash Screen configure panel appearance, layout, and runtime display behavior.
-platform: WindowsForms
+platform: windowsforms
 control: Splash Screen
 documentation: ug
 ---

@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: VisualItem in MultiSelectionCombobox in Windows Forms | Syncfusion
 description: Learn about How to Detect When VisualItemCollection is Modified in Syncfusion Windows Forms MultiSelectionComboBox control and more.
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---

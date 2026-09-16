@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Styling in Windows Forms Rating Control | Syncfusion®
 description: Styling in Windows Forms Rating Control enables applying built-in visual styles and custom themes to personalize rating item appearance and presentation.
-platform: WindowsForms
+platform: windowsforms
 control: Rating Control 
 documentation: ug
 ---

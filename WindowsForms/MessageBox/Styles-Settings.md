@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Theming in Windows Forms MessageBox | Syncfusion®
 description: Theming in Windows Forms MessageBox enables applying visual styles and appearance customization options to create consistent and modern dialog experiences.
-platform: WindowsForms
+platform: windowsforms
 control: MessageBox
 documentation: ug
 ---

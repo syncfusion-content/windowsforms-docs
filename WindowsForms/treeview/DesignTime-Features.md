@@ -2,7 +2,7 @@
 layout: post
 title: DesignTime Features in Windows Forms TreeView | Syncfusion®
 description: Design-time features provide smart tags, node editors, property configuration, and node management shortcuts.
-platform: WindowsForms
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---

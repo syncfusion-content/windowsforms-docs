@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Events in Windows Forms Radio Button | Syncfusion®
 description: Events in Windows Forms Radio Button provide notifications when checked states change, enabling responsive handling of selection and group selection changes.
-platform: WindowsForms
+platform: windowsforms
 control: Radio Button
 documentation: ug
 ---

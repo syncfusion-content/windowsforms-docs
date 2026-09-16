@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Runtime Features in Windows Forms DateTimePickerAdv | Syncfusion
 description: Learn about runtime features in Syncfusion Windows Forms DateTimePickerAdv control and more details.
-platform: WindowsForms
+platform: windowsforms
 control: EditorPackage 
 documentation: ug
 ---

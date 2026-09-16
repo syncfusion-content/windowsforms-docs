@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Appearance in Windows Forms Multicolumn ComboBox | Syncfusion®
 description: Customize the appearance of the Windows Forms Multicolumn ComboBox control using styles, colors, columns, and display settings.
-platform: WindowsForms
+platform: windowsforms
 control: Multicolumn ComboBox
 documentation: ug
 ---

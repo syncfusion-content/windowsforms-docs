@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: How to Clear Grouping in Windows Forms Grouping | Syncfusion®
 description: Clear grouping in Syncfusion® Windows Forms Grouping control by removing all grouped columns or specific grouping criteria dynamically.
-platform: WindowsForms
+platform: windowsforms
 control: Grouping
 documentation: ug
 ---

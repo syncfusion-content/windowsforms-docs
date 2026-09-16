@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Change the days displayed in the calendar in WindowsForms | Syncfusion
 description: Learn how to change the days displayed in the calendar in Syncfusion Windows Forms MonthCalendarAdv (Classic) control using PrepareViewStyleInfo event and more.
-platform: WindowsForms
+platform: windowsforms
 control: CalendarDateTime
 documentation: ug
 ---

@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: About Syncfusion® Windows Forms TreeView Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms TreeView control and more details.
-platform: WindowsForms
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---

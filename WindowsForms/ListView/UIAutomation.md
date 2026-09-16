@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: UI Automation in Windows Forms ListView | Syncfusion®
 description: UI automation in Windows Forms ListView enables accessibility support and automated UI testing through frameworks such as Coded UI Test and QTP.
-platform: WindowsForms
+platform: windowsforms
 control: ListView
 documentation: ug
 ---

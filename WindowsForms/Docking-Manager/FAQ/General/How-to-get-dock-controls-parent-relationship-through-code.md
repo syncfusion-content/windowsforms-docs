@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: How to get hierarchy in Windows Forms Docking Manager | Syncfusion®
 description: Learn how to get dock controls parent relationship through code in Syncfusion Windows Forms Docking Manager.
-platform: WindowsForms
+platform: windowsforms
 control: DockingManager
 documentation: ug
 ---

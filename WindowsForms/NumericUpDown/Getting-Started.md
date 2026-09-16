@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Getting Started with Windows Forms NumericUpdown | Syncfusion®
 description: Learn how to get started with the Syncfusion® Windows Forms NumericUpdown control. Explore setup, features, examples, and customization options.
-platform: WindowsForms
+platform: windowsforms
 control: NumericUpdown
 documentation: ug
 ---

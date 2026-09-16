@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Record and Run Tests in Windows Forms UFT | Syncfusion®
 description: Learn how to create, record and run tests with Syncfusion® Essential Studio Windows Forms UFT for testing controls.
-platform: WindowsForms
+platform: windowsforms
 control: Testing
 documentation: ug
 ---

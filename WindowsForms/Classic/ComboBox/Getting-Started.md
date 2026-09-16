@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Getting Started with Windows Forms ComboBoxAdv(Classic) | Syncfusion®
 description: Learn how to get started with the Syncfusion® Windows Forms ComboBoxAdv(Classic) control. Explore setup, features, examples, and customization options.
-platform: WindowsForms
+platform: windowsforms
 control: ComboBoxAdv
 documentation: ug
 ---

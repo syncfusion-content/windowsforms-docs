@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Text Visualization in Windows Forms Syntax Editor | Syncfusion®
 description: Text visualization in Windows Forms Syntax Editor enhances code readability through syntax highlighting, line formatting, and visual text presentation features.
-platform: WindowsForms
+platform: windowsforms
 control: Syntax Editor
 documentation: ug
 ---

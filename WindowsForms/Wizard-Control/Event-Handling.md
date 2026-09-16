@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Event Handling in Windows Forms Wizard Control | Syncfusion®
 description: Handle events in the Windows Forms Wizard Control to respond to page navigation, user actions, and wizard workflow changes.
-platform: WindowsForms
+platform: windowsforms
 control: Wizard Control
 documentation: ug
 ---

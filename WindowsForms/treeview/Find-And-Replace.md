@@ -2,7 +2,7 @@
 layout: post
 title: Find and Replace in Windows Forms TreeView | Syncfusion®
 description: Find and Replace supports searching, highlighting, navigating, and replacing node text across tree hierarchies.
-platform: WindowsForms
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---

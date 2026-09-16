@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Border Settings in Windows Forms Radio Button | Syncfusion®
 description: Border settings in Windows Forms Radio Button enable customizing 2D and 3D border styles, border colors, and mouse-over border appearance.
-platform: WindowsForms
+platform: windowsforms
 control: Radio Button
 documentation: ug
 ---

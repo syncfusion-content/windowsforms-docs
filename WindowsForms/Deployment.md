@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Deployment in Windows Forms | Syncfusion®
 description: Learn about assembly deployment methods for Syncfusion® Essential Studio Windows Forms controls / components.
-platform: WindowsForms
+platform: windowsforms
 control: Deployment
 documentation: ug
 ---

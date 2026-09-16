@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Syncfusion® WinForms MCP Server | Syncfusion®
 description: Learn how to configure and use Syncfusion® WinForms MCP server for intelligent code generation, documentation, and troubleshooting in WindowsForms apps.
-platform: WindowsForms
+platform: windowsforms
 control: Getting started with Syncfusion® WinForms MCP Server
 documentation: ug
 ---

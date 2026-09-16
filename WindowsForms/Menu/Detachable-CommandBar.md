@@ -2,7 +2,7 @@
 layout: post
 title: Detachable Command bar in Windows Forms Menu | Syncfusion
 description: Detachable Command Bars enable creating floating or dockable command bars and integrating them with menu layouts.
-platform: WindowsForms
+platform: windowsforms
 control: MainFrameBarManager 
 documentation: ug
 ---

@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: FlowLayout in Windows Forms Layout Managers Package | Syncfusion®
 description: FlowLayout allows user to arranges the items in horizontal or vertical flow direction. Supports reverse flow direction.
-platform: WindowsForms
+platform: windowsforms
 control: Layout Managers Package
 documentation: ug
 ---

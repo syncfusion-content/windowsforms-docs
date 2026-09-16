@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Themes and Styling in Windows Forms Radio Button | Syncfusion®
 description: Themes and styling in Windows Forms Radio Button enable applying visual themes, customizing button appearance, and creating consistent user interfaces.
-platform: WindowsForms
+platform: windowsforms
 control: Radio Button
 documentation: ug
 ---

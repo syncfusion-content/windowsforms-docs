@@ -2,7 +2,7 @@
 layout: post
 title: Themes in Windows Forms XPToolBar | Syncfusion®
 description: Themes support provides Office, Visual Studio, Metro, and other built-in visual styles for XPToolBar appearance.
-platform: WindowsForms
+platform: windowsforms
 control: XPToolBar
 documentation: ug
 ---

@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Layout Settings in Windows Forms NumericUpdown | Syncfusion®
 description: Layout settings in Windows Forms NumericUpdown enable configuring minimum and maximum control sizes to support flexible layout design.
-platform: WindowsForms
+platform: windowsforms
 control: NumericUpdown
 documentation: ug
 ---

@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Runtime Features in Windows Forms MonthCalendarAdv | Syncfusion
 description: Learn about runtime features in Syncfusion Windows Forms MonthCalendarAdv control, including date selection range.
-platform: WindowsForms
+platform: windowsforms
 control: CalendarDateTime
 documentation: ug
 ---

@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Editing in Windows Forms Syntax Editor | Syncfusion®
 description: Editing support in Windows Forms Syntax Editor enables efficient text modification, insertion, deletion, selection, and code management features.
-platform: WindowsForms
+platform: windowsforms
 control: Syntax Editor
 documentation: ug
 ---

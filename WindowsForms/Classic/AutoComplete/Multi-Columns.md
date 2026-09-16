@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Multi Columns in Windows Forms xptoolbar control | Syncfusion
 description: Learn about Multi Columns support in Syncfusion Windows Forms ComboBoxAutoComplete(Classic) control and more details.
-platform: WindowsForms
+platform: windowsforms
 control: ComboBoxAutoComplete
 documentation: ug
 ---

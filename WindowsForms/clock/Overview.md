@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: About Syncfusion Windows Forms Clock Control | Syncfusion
 description: Learn about introduction of Syncfusion Essential Studio Windows Forms Clock control, its key features, clock functionality, and more details.
-platform: WindowsForms
+platform: windowsforms
 control: Clock-Control-for-Windows-Forms
 documentation: ug
 ---

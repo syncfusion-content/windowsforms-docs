@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Customize diagonal columns appearance in WindowsForms | Syncfusion
 description: Learn how to customize the appearance of the diagonal columns in Syncfusion Windows Forms MonthCalendarAdv (Classic) using DateCellQueryInfo event and more.
-platform: WindowsForms
+platform: windowsforms
 control: CalendarDateTime
 documentation: ug
 ---

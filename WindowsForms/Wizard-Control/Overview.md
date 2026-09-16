@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: About Syncfusion® Windows Forms Wizard Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms Wizard Control and its features, customization, and usage options.
-platform: WindowsForms
+platform: windowsforms
 control: Wizard Control 
 documentation: ug
 ---

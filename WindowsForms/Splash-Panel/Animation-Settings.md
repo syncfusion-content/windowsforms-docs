@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Animation Settings in Windows Forms SplashPanel | Syncfusion®
 description: Animation settings in Windows Forms SplashPanel control the visual effects and transitions displayed when the splash panel appears or closes.
-platform: WindowsForms
+platform: windowsforms
 control: SplashPanel
 documentation: ug
 ---

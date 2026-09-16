@@ -2,7 +2,7 @@
 layout: post
 title: BarItem Types in Windows Forms XPToolBar | Syncfusion®
 description: BarItem Types include menu items, drop-downs, combo boxes, text boxes, lists, labels, and toolbar management items.
-platform: WindowsForms
+platform: windowsforms
 control: XPToolBar
 documentation: ug
 ---

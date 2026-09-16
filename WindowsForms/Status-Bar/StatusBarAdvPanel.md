@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: StatusBarAdvPanel in Windows Forms Status Bar | Syncfusion®
 description: StatusBarAdvPanel in Windows Forms Status Bar enables flexible content display and customization within status bar layouts.
-platform: WindowsForms
+platform: windowsforms
 control: Status Bar
 documentation: ug
 ---

@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: How to Bind a Datasource to Windows Forms Grouping | Syncfusion®
 description: Bind a datasource to Syncfusion® Windows Forms Grouping control using an IList object to group, sort, and summarize records efficiently.
-platform: WindowsForms
+platform: windowsforms
 control: Grouping
 documentation: ug
 ---

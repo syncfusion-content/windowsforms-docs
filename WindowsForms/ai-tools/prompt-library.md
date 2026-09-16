@@ -1,9 +1,9 @@
----
+﻿---
 layout: post
 title: Syncfusion® AI Coding Assistant Prompt Library | Syncfusion®
 description: Explore the AI Coding Assistant PromptLibrary to enhance WinForms development productivity with code generation, configuration examples and contextual guidance.
 control: Syncfusion® AI Coding Assistant Prompt Library
-platform: WindowsForms
+platform: windowsforms
 documentation: ug
 ---
 

@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: How to identify ButtonAdv is in pressed state or not | Syncfusion
 description: Learn about How to Identify a ButtonAdv Control is in Pressed State or Not in Syncfusion Windows Forms ButtonAdv control and more.
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

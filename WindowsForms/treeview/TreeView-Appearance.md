@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: TreeView-Appearance | WindowsForms | Syncfusion®
 description: Learn here about Treeview Appearance of Syncfusion® Windows Forms TreeView control, its elements and more details.
-platform: WindowsForms
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---

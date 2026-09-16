@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Linear Gauge in Windows Forms Gauge | Syncfusion®
 description: Linear gauge in the Windows Forms Gauge displays values on a linear scale and supports customization of appearance and measurement settings.
-platform: WindowsForms
+platform: windowsforms
 control: Gauge
 documentation: ug
 ---

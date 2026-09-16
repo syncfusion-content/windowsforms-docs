@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Browse Buttons in Windows Forms Wizard Control | Syncfusion®
 description: Customize browse buttons in the Windows Forms Wizard Control to manage page navigation and improve the wizard user experience.
-platform: WindowsForms
+platform: windowsforms
 control: Wizard Control
 documentation: ug
 ---

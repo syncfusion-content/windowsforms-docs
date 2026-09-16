@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: About Syncfusion® Windows Forms Gauge Control | Syncfusion®
 description: Learn about the introduction of Syncfusion Essential Studio® Windows Forms Gauge control, its features, capabilities, and more details.
-platform: WindowsForms
+platform: windowsforms
 control: Gauge
 documentation: ug
 ---

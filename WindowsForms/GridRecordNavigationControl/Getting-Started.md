@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Getting Started with Windows Forms GridRecordNavigation | Syncfusion®
 description: Learn how to get started with the Syncfusion® Windows Forms GridRecordNavigationControl. Explore setup, navigation features, and implementation examples.
-platform: WindowsForms
+platform: windowsforms
 control: GridRecordNavigationControl
 documentation: ug
 ---

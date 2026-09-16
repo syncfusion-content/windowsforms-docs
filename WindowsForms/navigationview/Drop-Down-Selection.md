@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Drop Down Selection in Windows Forms NavigationView | Syncfusion®
 description: Learn about Drop Down Selection support in Syncfusion® Windows Forms NavigationView control and more details.
-platform: WindowsForms
+platform: windowsforms
 control: Navigation View 
 documentation: ug
 ---

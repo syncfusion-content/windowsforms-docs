@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: About Syncfusion® Windows Forms MetroForm Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms MetroForm control and more details.
-platform: WindowsForms
+platform: windowsforms
 control: MetroForm
 documentation: ug
 ---

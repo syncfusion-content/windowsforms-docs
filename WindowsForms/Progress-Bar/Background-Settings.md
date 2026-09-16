@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Background Settings in Windows Forms Progress Bar | Syncfusion®
 description: Background settings in Windows Forms Progress Bar customize the appearance of the progress area to match application themes.
-platform: WindowsForms
+platform: windowsforms
 control: Progress Bar
 documentation: ug
 ---

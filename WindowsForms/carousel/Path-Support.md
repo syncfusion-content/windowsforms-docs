@@ -2,7 +2,7 @@
 layout: post
 title: Path Support in Windows Forms Carousel | Syncfusion®
 description: Path Support enables arranging Carousel items in elliptical, orbital, oval, and linear layouts for different visual effects.
-platform: WindowsForms
+platform: windowsforms
 control: Carousel
 documentation: ug
 ---

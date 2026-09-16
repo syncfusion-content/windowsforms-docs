@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: About Syncfusion® Windows Forms CurrencyEdit Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms CurrencyEdit control, its features, formatting options, and calculator support.
-platform: WindowsForms
+platform: windowsforms
 control: CurrencyEdit
 documentation: ug
 ---

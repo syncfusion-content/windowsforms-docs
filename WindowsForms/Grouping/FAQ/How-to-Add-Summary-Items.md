@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: How to Add Summary Items in Windows Forms Grouping | Syncfusion®
 description: Add summary items in Syncfusion® Windows Forms Grouping control to calculate aggregate values such as sum, average, minimum, and maximum for data fields.
-platform: WindowsForms
+platform: windowsforms
 control: Grouping
 documentation: ug
 ---

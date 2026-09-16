@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: NIST MBARK Compatibility in Windows Forms | Syncfusion®
 description: Learn about Syncfusion® Windows Forms component compatibility with NIST MBARK Framework for biometric applications.
-platform: WindowsForms
+platform: windowsforms
 control: Introduction
 documentation: ug
 ---

@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: About Syncfusion Windows Forms DateTimePickerAdv Control | Syncfusion
 description: Learn about introduction of Syncfusion Essential Studio Windows Forms DateTimePickerAdv control and more details.
-platform: WindowsForms
+platform: windowsforms
 control: DateTimePicker
 documentation: ug
 ---

@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: How to add the child node using parent key | WindowsForms | Syncfusion
 description: How to add the childnode in parent node using the parent key column in Syncfusion Windows Forms TreeViewAdv control.
-platform: WindowsForms
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---

@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: How to Group a Collection in Windows Forms Grouping | Syncfusion®
 description: Group a collection in the Syncfusion® Windows Forms Grouping control by adding columns to the GroupedColumns collection for organized data presentation.
-platform: WindowsForms
+platform: windowsforms
 control: Grouping
 documentation: ug
 ---

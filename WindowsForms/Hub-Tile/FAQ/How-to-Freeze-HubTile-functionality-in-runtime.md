@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: How to Freeze HubTile animation | WindowsForms | Syncfusion
 description: How to Freeze HubTile functionality in runtime
-platform: WindowsForms
+platform: windowsforms
 control: HubTile
 documentation: ug
 --- 

@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Visual Styles in Windows Forms DateTimePickerAdv | Syncfusion
 description: Learn about visual styles in Syncfusion Windows Forms DateTimePickerAdv control and how to use them effectively.
-platform: WindowsForms
+platform: windowsforms
 control: DateTimePicker
 documentation: ug
 ---

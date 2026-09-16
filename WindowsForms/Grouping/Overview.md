@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: About Syncfusion® Windows Forms Grouping Control | Syncfusion®
 description: Learn about overview of Syncfusion® Essential Studio Windows Forms Grouping control, its features and more details.
-platform: WindowsForms
+platform: windowsforms
 control: Grouping
 documentation: ug
 ---

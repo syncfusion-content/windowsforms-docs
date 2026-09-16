@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Calendar Appearance in Windows Forms MonthCalendarAdv | Syncfusion
 description: Learn about calendar appearance in Syncfusion Windows Forms MonthCalendarAdv control and more details.
-platform: WindowsForms
+platform: windowsforms
 control: CalendarDateTime
 documentation: ug
 ---

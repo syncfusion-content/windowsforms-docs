@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: About Syncfusion® Windows Forms Gradient Label Control | Syncfusion® 
 description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms Gradient Label control and its key features and customization options.
-platform: WindowsForms
+platform: windowsforms
 control: Gradient Label
 documentation: ug
 ---

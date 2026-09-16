@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Themes and Styles in Windows Forms ComboDropDown | Syncfusion® 
 description: Customize the appearance of the Windows Forms ComboDropDown control using built-in themes and styling options to create visually consistent applications.
-platform: WindowsForms
+platform: windowsforms
 control: ComboDropDown
 documentation: ug
 ---

@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Appearance in Windows Forms Calendar | Syncfusion
 description: Learn about appearance customization options in Windows Forms Calendar control for styling and theming.
-platform: WindowsForms
+platform: windowsforms
 control: SfCalendar
 documentation: ug
 ---

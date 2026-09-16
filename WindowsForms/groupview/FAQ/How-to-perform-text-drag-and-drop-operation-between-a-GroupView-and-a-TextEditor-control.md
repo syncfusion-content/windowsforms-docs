@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Drag-and-drop operation | WindowsForms | Syncfusion
 description: Frequently Asked Questions
-platform: WindowsForms
+platform: windowsforms
 control: GroupView
 documentation: ug
 ---

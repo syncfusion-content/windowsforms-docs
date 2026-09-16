@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Alignment Settings in Windows Forms StatusBarAdvPanel | Syncfusion®
 description: Alignment settings in Windows Forms StatusBarAdvPanel control the positioning of panel content, ensuring clear and organized status bar layouts.
-platform: WindowsForms
+platform: windowsforms
 control: StatusBarAdvPanel
 documentation: ug
 ---

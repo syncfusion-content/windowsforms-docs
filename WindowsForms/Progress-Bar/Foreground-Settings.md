@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Foreground Settings in Windows Forms Progress Bar | Syncfusion®
 description: Foreground settings in Windows Forms Progress Bar customize the progress indicator appearance, improving visual clarity.
-platform: WindowsForms
+platform: windowsforms
 control: Progress Bar
 documentation: ug
 ---

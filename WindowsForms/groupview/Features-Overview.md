@@ -2,7 +2,7 @@
 layout: post
 title: Features Overview of Windows Forms GroupView | Syncfusion®
 description: Learn about the features of the Syncfusion® Windows Forms GroupView control, including appearance settings, drag-and-drop, scrolling, and themes.
-platform: WindowsForms
+platform: windowsforms
 control: GroupView
 documentation: ug
 ---

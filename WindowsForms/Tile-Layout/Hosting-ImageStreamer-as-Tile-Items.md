@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Hosting ImageStreamer in WinForms Tile Layout | Syncfusion®
 description: Hosting ImageStreamer as tile items in Windows Forms Tile Layout enables displaying image collections with slideshow, navigation, and image transition settings.
-platform: WindowsForms
+platform: windowsforms
 control: Tile Layout 
 documentation: ug
 ---

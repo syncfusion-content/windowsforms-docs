@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Printing in Windows Forms Syntax Editor | Syncfusion®
 description: Printing in Windows Forms Syntax Editor enables printing code and text content with formatting, supporting clear, organized, and readable output.
-platform: WindowsForms
+platform: windowsforms
 control: Syntax Editor
 documentation: ug
 ---

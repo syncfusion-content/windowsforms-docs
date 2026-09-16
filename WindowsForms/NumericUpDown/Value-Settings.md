@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Value Settings in Windows Forms NumericUpdown | Syncfusion®
 description: Value settings in Windows Forms NumericUpdown enable configuring numeric values, increments, limits, and hexadecimal display options.
-platform: WindowsForms
+platform: windowsforms
 control: NumericUpdown
 documentation: ug
 ---

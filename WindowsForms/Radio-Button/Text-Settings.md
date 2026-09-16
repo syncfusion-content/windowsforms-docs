@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Text Settings in Windows Forms Radio Button | Syncfusion®
 description: Text settings in Windows Forms Radio Button enable configuring text shadow, shadow color, shadow offset, and text wrapping for enhanced text presentation.
-platform: WindowsForms
+platform: windowsforms
 control: Radio Button
 documentation: ug
 ---

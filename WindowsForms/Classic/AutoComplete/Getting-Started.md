@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Getting Started with Windows Forms ComboBoxAutoComplete | Syncfusion®
 description: Get started with the Syncfusion® Windows Forms ComboBoxAutoComplete (Classic) control and learn its setup and customization.
-platform: WindowsForms
+platform: windowsforms
 control: ComboBoxAutoComplete
 documentation: ug
 ---

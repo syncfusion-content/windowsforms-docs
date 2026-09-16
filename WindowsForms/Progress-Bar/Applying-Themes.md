@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Applying Themes in Windows Forms Progress Bar | Syncfusion®
 description: Applying themes in Windows Forms Progress Bar enables a consistent visual appearance by using predefined styles across applications.
-platform: WindowsForms
+platform: windowsforms
 control: Progress Bar
 documentation: ug
 ---

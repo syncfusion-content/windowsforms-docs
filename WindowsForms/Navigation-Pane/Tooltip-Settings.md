@@ -2,7 +2,7 @@
 layout: post
 title: Tooltip Settings in Windows Forms Navigation Pane | Syncfusion®
 description: Tooltip settings allow customizing navigation pane, expand button, and minimize button tooltip text.
-platform: WindowsForms
+platform: windowsforms
 control: GroupBar
 documentation: ug
 ---

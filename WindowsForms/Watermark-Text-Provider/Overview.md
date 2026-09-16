@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: About Windows Forms BannerTextProvider Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Windows Forms BannerTextProvider control, its watermark features, text modes, and customization options.
-platform: WindowsForms
+platform: windowsforms
 control: BannerTextProvider
 documentation: ug
 ---
