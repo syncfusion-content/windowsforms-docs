@@ -37,7 +37,7 @@ Me.dateTimePickerAdv1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfus
 
 {% endtabs %}
 
-![DateTimePickerAdv back color customization](Calendar_Images/Overview_img207.jpeg) 
+![Windows Forms DateTimePickerAdv back color customization](Calendar_Images/Overview_img207.jpeg) 
 
 ## Background Image
 

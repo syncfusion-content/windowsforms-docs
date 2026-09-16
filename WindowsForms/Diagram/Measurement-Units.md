@@ -9,7 +9,7 @@ documentation: ug
 
 # Measurement Units in Windows Forms Diagram
 
-The [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) control provides a multiple logical unit of measurement option. The following are the measurement units that are supported by the WinForms Diagram control.
+The [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) control provides multiple logical measurement units. The following measurement units are supported by the WinForms Diagram control.
 
 * Pixel
 * Point
@@ -37,34 +37,35 @@ Description</th></tr>
 <tr>
 <td>
 MeasurementUnits </td><td>
-Specifies whether to get or set the Measurement unit for the Model. The default value is Pixel.</td></tr>
+Gets or sets the measurement unit for the model. The default value is Pixel.</td></tr>
+<tr>
 <td>
 CustomUnitValue </td><td>
-Specifies whether to set the Custom Measurement unit value for the model, if the MeasurementUnits is set to Custom. The default value is 0.5.</td></tr>
+Gets or sets the custom measurement unit value for the model when MeasurementUnits is set to Custom. The default value is 0.5.</td></tr>
 </table>
 
-The following code example illustrates to set measurement unit for the diagram.
+The following code example illustrates how to set the measurement unit for the diagram. Initialize the diagram instance before setting the model value.
 
 {% tabs %}
 
 {% highlight c# %}
 
- diagram1.Model.MeasurementUnits = MeasureUnits.Point;
+diagram1.Model.MeasurementUnits = MeasureUnits.Point;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
- diagram1.Model.MeasurementUnits = MeasureUnits.Pixel
-	
+diagram1.Model.MeasurementUnits = MeasureUnits.Point
+
 {% endhighlight %}
 
 {% endtabs %}
 
-## Custom Measurement unit
+## Custom measurement unit
 
-The MeasureUnits contain constant values to apply in our [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram). So, you can use MeasureUnits.Custom to set the customized unit and specify the Custom Measurement unit value by using the Syncfusion.Windows.Forms.Diagram.Model.CustomUnitValue property.   
-The following code example illustrates how to set custom measurement unit for the WinForms Diagram control.
+The MeasureUnits enumeration contains constant values to apply in our [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram). Use MeasureUnits.Custom to set a customized unit and specify the custom measurement unit value by using the Syncfusion.Windows.Forms.Diagram.Model.CustomUnitValue property.
+The following code example illustrates how to set a custom measurement unit for the WinForms Diagram control. Initialize the diagram instance before setting the model values.
  
 {% tabs %}
 
@@ -79,7 +80,7 @@ this.diagram1.Model.CustomUnitValue = 0.25f;
 
 Me.diagram1.Model.MeasurementUnits = MeasureUnits.Custom
 Me.diagram1.Model.CustomUnitValue = 0.25f
-	
+
 {% endhighlight %}
 
 {% endtabs %}

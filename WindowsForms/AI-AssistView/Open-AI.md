@@ -1,13 +1,13 @@
 ---
 layout: post
-title: 	OpenAI Integration in Windows Forms SfAIAssistView | Syncfusion
-description: Connect the Syncfusion Windows Forms SfAIAssistView control with OpenAI for intelligent chat and response generation.
+title: 	OpenAI Integration in Windows Forms AI AssistView | Syncfusion
+description: Connect the Syncfusion Windows Forms AI AssistView control with OpenAI for intelligent chat and response generation.
 platform: windowsforms
 control: SfAIAssistView
 documentation: ug
 ---
 
-# OpenAI Integration in Windows Forms SfAIAssistView
+# OpenAI Integration in Windows Forms AI AssistView
 
 This section explains how to connect the AI AssistView with OpenAI.
 

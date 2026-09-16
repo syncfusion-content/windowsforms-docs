@@ -166,7 +166,7 @@ Me.monthCalendarAdv1.ThemedEnabledScrollButtons = True
 
 {% endtabs %}
 
-![Themes for MonthCalendarAdv](CalendarDateTime_images/Overview_img139.jpeg)
+![Themes for Windows Forms MonthCalendarAdv](CalendarDateTime_images/Overview_img139.jpeg)
 
 
 

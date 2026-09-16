@@ -9,13 +9,13 @@ documentation: ug
 
 # Layout Management in Windows Forms Diagram
 
-Different Layout Manager are discussed under the following section:
+Different layout managers are discussed in the following sections:
 
 ## Manual Layout
 
-The various types of Layout Managers that are supported by the [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) control to align nodes are as follows.
+The layout managers supported by the [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) control to align nodes are as follows.
 
-Some common Layout Manager settings are discussed in the below topic.
+Some common layout manager settings are discussed in the following topic.
 
 * Layout Manager Settings
 
@@ -23,9 +23,9 @@ Some common Layout Manager settings are discussed in the below topic.
 
 ### Table Layout Manager
 
-The TableLayoutManager class can be used to arrange various objects in columns and rows in a table format. The TableTreeLayoutManager arranges nodes in a Table layout, positioning the nodes in a rectangular grid of cells, with each node spanning over a single table cell. The TableTreeLayoutManager is used when tabular relationships need to be depicted. The various properties of the TableTreeLayoutManager are listed below.
+The TableLayoutManager class can be used to arrange objects in columns and rows in a table format. It positions nodes in a rectangular grid of cells, with each node spanning a single table cell. This layout is useful when tabular relationships need to be depicted.
 
-The model and the number of rows and column values are passed as parameters to the TableLayoutManager class. The parameters and properties involved with the TableLayoutManager are listed in the below table.
+The model and the number of rows and column values are passed as parameters to the TableLayoutManager class. The parameters and properties involved with the TableLayoutManager are listed in the table below.
 
 
 
@@ -71,7 +71,7 @@ Programmatically, the table layout manager instance should be created with the r
 {% tabs %}
 {% highlight c# %}
 
-TableLayoutManager lLayout=new TableLayoutManager(this.diagram1.Model, 7, 7);
+TableLayoutManager tlLayout = new TableLayoutManager(this.diagram1.Model, 7, 7);
 tlLayout.VerticalSpacing = 20;
 tlLayout.HorizontalSpacing = 20;
 tlLayout.CellSizeMode = CellSizeMode.EqualToMaxNode;
@@ -91,7 +91,7 @@ documentExplorer1.ShowNodeToolTips = true;
 {% endhighlight %}
 {% highlight vb %}
 
-Dim lLayout As TableLayoutManager = New TableLayoutManager(Me.diagram1.Model, 7, 7)
+Dim tlLayout As New TableLayoutManager(Me.diagram1.Model, 7, 7)
 tlLayout.VerticalSpacing = 20
 tlLayout.HorizontalSpacing = 20
 tlLayout.CellSizeMode = CellSizeMode.EqualToMaxNode
@@ -171,9 +171,9 @@ diagram1.LayoutManager.UpdateLayout(null);
 {% endhighlight %}
 {% highlight vb %}
 
-DirectedTreeLayoutManager directedLayout = new  DirectedTreeLayoutManager(diagram1.Model,0, 20, 20);
-diagram1.LayoutManager = directedLayout;
-diagram1.LayoutManager.UpdateLayout(null);
+Dim directedLayout As New DirectedTreeLayoutManager(Me.diagram1.Model, 0, 20, 20)
+Me.diagram1.LayoutManager = directedLayout
+Me.diagram1.LayoutManager.UpdateLayout(Nothing)
 
 {% endhighlight %}
 {% endtabs %}
@@ -211,7 +211,7 @@ The Radial Tree Layout Manager is a specialization of the Directed Tree Layout M
 
 
 
-The following parameters need should be specified for the RadialTreeLayoutManager.
+The following parameters should be specified for the RadialTreeLayoutManager.
 
 
 <table>
@@ -244,8 +244,8 @@ Programmatically, the radial tree layout manager instance is created with the re
 {% tabs %}
 {% highlight c# %}
 
-RadialTreeLayoutManager radialLayout= new RadialTreeLayoutManager(model1, 0, 20, 20);
-this.diagram1.LayoutManager=radialLayout; 
+RadialTreeLayoutManager radialLayout = new RadialTreeLayoutManager(this.diagram1.Model, 0, 20, 20);
+this.diagram1.LayoutManager = radialLayout;
 this.diagram1.LayoutManager.UpdateLayout(null);
 
 {% endhighlight %}
@@ -276,7 +276,7 @@ Sample Diagram is as follows.
 
 The Symmetric layout manager arranges all the nodes in a symmetric fashion using the vertical input distance, which specifies the distance between the nodes.
 
-The Model and Vertical Distance values are passed as parameters to the SymmetricLayoutManager class. The parameters and properties of Symmetric Layout Manager is listed below.
+The model and vertical distance values are passed as parameters to the SymmetricLayoutManager class. The parameters and properties of the Symmetric Layout Manager are listed below.
 
 
 <table>
@@ -349,7 +349,7 @@ Sample Diagrams are as follows.
 
 ## Hierarchical Layout Manager
 
-Hierarchical layout manager arranges the nodes in a hierarchical fashion depending on the parent-child relationship. Unlike the directed layout, more than one parent item can be defined for a child.
+Hierarchical layout manager arranges the nodes in a hierarchical fashion based on the parent-child relationship. Unlike the directed layout, more than one parent item can be defined for a child.
 
 The parameters to be passed for the HierarchicalLayoutManager class are as follows: 
 
@@ -543,7 +543,7 @@ End Sub
 
 ## OrgChart Layout Manager  
 
-Event arranges all the nodes in parent-child relationship with the new OrgLineConnector that connects the nodes to get the OrgLayout appearance. The OrgLineConnector is specially designed for connecting the nodes in OrgChartLayoutManager.
+The OrgChart Layout Manager arranges nodes in a parent-child relationship using the OrgLineConnector to produce an OrgLayout appearance. The OrgLineConnector is specially designed for connecting nodes in OrgChartLayoutManager.
 
 
 <table>
@@ -558,7 +558,7 @@ Represents the model of the diagram, which is displayed as an OrgLayout.</td></t
 <tr>
 <td>
 RotationDirection</td><td>
-Gets / sets the layout directions. There are four major directions, which are as follows:BottomToTopLeftToRightRightToLeftTopToBottom</td></tr>
+Gets / sets the layout directions. The available directions are BottomToTop, LeftToRight, RightToLeft, and TopToBottom.</td></tr>
 <tr>
 <td>
 HorizontalSpacing</td><td>
@@ -648,7 +648,7 @@ manager.TopMargin = 50
 {% endhighlight %}
 {% endtabs %}
 
-### Improving performance
+### Improving Performance
 
 The performance of most of the WinForms Diagram Layout Managers is now improved to a great extent. The time taken for laying out a diagram, using a Layout Manager can now be reduced by setting the ImprovePerformance property to _true_.
 
@@ -723,7 +723,7 @@ Me.diagram1.LayoutManager.UpdateLayout(Nothing)
 {% endhighlight %}
 {% endtabs %}
 
-Examples and tuning
+### Examples and Tuning
 
 Tune `MaximumIteration`, `RepulsionStrength`, and `AttractionStrength` to achieve the desired spacing and stability for your dataset. Start with the sample values and adjust while observing layout quality and runtime.
 

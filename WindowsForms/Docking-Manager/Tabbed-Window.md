@@ -7,13 +7,13 @@ control: DockingManager
 documentation: ug
 ---
 
-# Tabbed Window in Windows Forms Docking Manager
+# Tabbed Window in WinForms Docking Control
 
 Allows end users to group dock or float windows in tabs. Dock hints let you dock a window over or beside an already docked window. The appearance of tabs and panels in a group of dock or float windows can be fully customized.
 
 ## Tabbed to Another Window Programmatically
 
-The docking manager provides a [DockControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_DockControl_System_Windows_Forms_Control_System_Windows_Forms_Control_Syncfusion_Windows_Forms_Tools_DockingStyle_System_Int32_) function that helps to dock a panel at the required side using the [DockingStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingStyle.html) argument.
+The WinForms Docking Control provides a [DockControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_DockControl_System_Windows_Forms_Control_System_Windows_Forms_Control_Syncfusion_Windows_Forms_Tools_DockingStyle_System_Int32_) function that helps to dock a panel at the required side using the [DockingStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingStyle.html) argument.
 
 The DockingStyle tabbed option is used to tab a panel with another panel. The tabbing windows should be aware of the parent control name. Set the `Output` window parent as `SolutionExplorer` to tab it on the `SolutionExplorer` window.
 
@@ -57,13 +57,13 @@ The child window can be arranged as tabbed windows by using either of the follow
 
 ### Tabbed at run time
 
-The docking manager allows you to drag and drop the docked controls at run time using different DragProviderStyle. This style displays a dock hint, which allows to decide whether you can drop the control in that location.
+The WinForms Docking Control allows you to drag and drop the docked controls at run time using different DragProviderStyle. This style displays a dock hint, which allows to decide whether you can drop the control in that location.
 
 ![Tabbed_Window_img1](Tabbed_Window_images/Tabbed_Window_img1.png)
 
 ### Tabbed at design time
 
-The docked controls can be tabbed in the designer by dragging into another. The docking manager allows to tab the controls using different `DragProviderStyle`.
+The docked controls can be tabbed in the designer by dragging into another. The WinForms Docking Control allows to tab the controls using different `DragProviderStyle`.
 
 ![Tabbed_Window_img8](Tabbed_Window_images/Tabbed_Window_img8.png)
 
@@ -113,7 +113,7 @@ Me.dockingManager1.DockTabAlignment = Syncfusion.Windows.Forms.Tools.DockTabAlig
 
 ## Prevent tabbing
 
-You can restrict the specific [DockAbility](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockAbility.html) of child window when it is moved to the client area in the docking manager. This can be achieved by [SetDockAbility](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SetDockAbility_System_Windows_Forms_Control_Syncfusion_Windows_Forms_Tools_DockAbility_) function. Here, the tabbed, left, right, and bottom ability have been restricted.
+You can restrict the specific [DockAbility](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockAbility.html) of child window when it is moved to the client area in the WinForms Docking Control. This can be achieved by [SetDockAbility](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SetDockAbility_System_Windows_Forms_Control_Syncfusion_Windows_Forms_Tools_DockAbility_) function. Here, the tabbed, left, right, and bottom ability have been restricted.
 
 {% tabs %}
 
@@ -136,7 +136,7 @@ Me.dockingManager1.SetDockAbility(panel1, Syncfusion.Windows.Forms.Tools.DockAbi
 
 ## Tab reordering
 
-The docking manager allows to reorder the tab by selecting and dragging to the desired index in `DockTabControl`. Tabs reordering behavior can be enabled or disabled by using the [AllowTabsMoving](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_AllowTabsMoving) property.
+The WinForms Docking Control allows to reorder the tab by selecting and dragging to the desired index in `DockTabControl`. Tabs reordering behavior can be enabled or disabled by using the [AllowTabsMoving](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_AllowTabsMoving) property.
 
 {% tabs %}
 
@@ -190,7 +190,7 @@ Me.dockingManager1.ShowDockTabScrollButton = true
 
 ## Change tab index by programmatically
 
-By using the [SetTabPosition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SetTabPosition_System_Windows_Forms_Control_System_Int32_) function of docking manager, you can set the tab position of the control, which is passed as its argument.
+By using the [SetTabPosition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SetTabPosition_System_Windows_Forms_Control_System_Int32_) function of WinForms Docking Control, you can set the tab position of the control, which is passed as its argument.
 
 {% tabs %}
 
@@ -238,7 +238,7 @@ Me.dockingManager1.GetTabPosition(panel1)
 
 ## Identify the tabbed state for control
 
-The [IsTabbed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_IsTabbed_System_Windows_Forms_Control_) function of docking manager returns `true` if the control is in tabbed state and returns `false` if the control is in other states.
+The [IsTabbed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_IsTabbed_System_Windows_Forms_Control_) function of WinForms Docking Control returns `true` if the control is in tabbed state and returns `false` if the control is in other states.
 
 {% tabs %}
 
@@ -258,7 +258,7 @@ Me.DockingManager1.IsTabbed(this.panel1)
 
 ## Check two controls in same tab group
 
-The [IsSameTabbedGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_IsSameTabbedGroup_System_Windows_Forms_Control_System_Windows_Forms_Control_) function of docking manager is used to determine whether the two tabbed controls are belong to the same tab group.
+The [IsSameTabbedGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_IsSameTabbedGroup_System_Windows_Forms_Control_System_Windows_Forms_Control_) function of WinForms Docking Control is used to determine whether the two tabbed controls are belong to the same tab group.
 
 {% tabs %}
 

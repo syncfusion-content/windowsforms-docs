@@ -165,7 +165,7 @@ Me.dateTimeEdit.ShowDropDown = false
 
 ## Customize up-down appearance
 
-The ForeColor of up-down icon in the `SfDateTimeEdit` can be customized by the following `Style` properties. The following `style` properties of the SfDateTimeEdit can be used to change the color of up-down icon in different states:
+The ForeColor of up-down icon in the `Windows Forms DateTimePicker` can be customized by the following `Style` properties. The following `style` properties of the SfDateTimeEdit can be used to change the color of up-down icon in different states:
 
 * UpDownForeColor - To change the foreground color of up-down icon in DateTimeEdit.
 * UpDownHoverForeColor - To change the foreground color of up-down icon in mouse hover state.
@@ -406,7 +406,7 @@ Me.dateTimeEdit.ThemeName = "Office2016Colorful"
 
 {% endtabs %}
 
-![SfDateTimeEdit Office2016Colorful appearance](appearance-images/Office2016Colorful.png)
+![Windows Forms DateTimePicker Office2016Colorful appearance](appearance-images/Office2016Colorful.png)
 
 #### Office2016White
 
@@ -434,7 +434,7 @@ Me.dateTimeEdit.ThemeName = "Office2016White"
 
 {% endtabs %}
 
-![SfDateTimeEdit Office2016White appearance](appearance-images/Office2016White.png)
+![Windows Forms DateTimePicker Office2016White appearance](appearance-images/Office2016White.png)
 
 #### Office2016DarkGray
 
@@ -462,7 +462,7 @@ Me.dateTimeEdit.ThemeName = "Office2016DarkGray"
 
 {% endtabs %}
 
-![SfDateTimeEdit Office2016DarkGray appearance](appearance-images/Office2016DarkGray.png)
+![Windows Forms DateTimePicker Office2016DarkGray appearance](appearance-images/Office2016DarkGray.png)
 
 #### Office2016Black
 
@@ -490,6 +490,6 @@ Me.dateTimeEdit.ThemeName = "Office2016Black"
 
 {% endtabs %}
 
-![SfDateTimeEdit Office2016Black appearance](appearance-images/Office2016Black.png)
+![Windows Forms DateTimePicker Office2016Black appearance](appearance-images/Office2016Black.png)
 
 

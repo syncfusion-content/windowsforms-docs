@@ -13,15 +13,13 @@ This section elaborates on the following:
 
 ## Diagram Events
 
-[DiagramViewerEventSink](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DiagramViewerEventSink.html#) class contains the events specific to the [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram). The various events that can be invoked using this class are discussed in the following topics.
+[DiagramViewerEventSink](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DiagramViewerEventSink.html#) class exposes the events specific to the WinForms Diagram control. The various events that can be invoked using this class are discussed in the following topics.
 
 ### Node Collection Events
 
-This topic discusses the events that are fired while adding or removing the node to or from the node collection. The below table discusses all the available node collection events.
+This topic discusses the events that are fired while adding or removing a node to or from the node collection. The below table discusses all the available node collection events.
 
-
-
-Node Collection Events
+#### Node Collection Events Table
 
 <table>
 <tr>
@@ -39,11 +37,7 @@ Triggered when the node collection is edited.</td></tr>
 </table>
 
 
-EventArgs members can be accessed using the following members.
-
-
-
-Properties
+#### Node Collection EventArgs Members
 
 <table>
 <tr>
@@ -85,13 +79,19 @@ Inside the [NodeCollectionChanged](https://help.syncfusion.com/cr/windowsforms/S
 
 private void Form1_Load(object sender, EventArgs e)
 {
-	((DiagramViewerEventSink)diagram1.EventSink).NodeCollectionChanged += new CollectionExEventHandler(Form1_NodeCollectionChanged)((DiagramViewerEventSink)diagram1.EventSink).NodeCollectionChanging += new CollectionExEventHandler(Form1_NodeCollectionChanging);
+	((DiagramViewerEventSink)diagram1.EventSink).NodeCollectionChanged += new CollectionExEventHandler(Form1_NodeCollectionChanged);
+	((DiagramViewerEventSink)diagram1.EventSink).NodeCollectionChanging += new CollectionExEventHandler(Form1_NodeCollectionChanging);
 	RectangleF rect = new RectangleF(100, 100, 100, 100);
 	RichTextNode richText = new RichTextNode("", rect);
 	richText.Text = "Rich text box";
 	NodeCollection nodeStack = new NodeCollection();
 	nodeStack.Add(richText);
 	MessageBox.Show(nodeStack.Count.ToString());
+}
+
+private void Form1_NodeCollectionChanged(CollectionExEventArgs e)
+{
+	MessageBox.Show("NodeCollectionChanged event fired");
 }
 
 private void Form1_NodeCollectionChanging(CollectionExEventArgs e)
@@ -103,23 +103,28 @@ private void Form1_NodeCollectionChanging(CollectionExEventArgs e)
 {% highlight vb %}
 
 Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
-DirectCast(diagram1.EventSink, DiagramViewerEventSink).NodeCollectionChanged += New CollectionExEventHandler(Form1_NodeCollectionChanged)(DirectCast(diagram1.EventSink, DiagramViewerEventSink)).NodeCollectionChanging += New CollectionExEventHandler(Form1_NodeCollectionChanging)
-Dim rect As New RectangleF(100, 100, 100, 100)
-Dim richText As New RichTextNode("", rect)
-richText.Text = "Rich text box"
-Dim nodeStack As New NodeCollection()
-nodeStack.Add(richText)
-MessageBox.Show(nodeStack.Count.ToString())
+	AddHandler DirectCast(diagram1.EventSink, DiagramViewerEventSink).NodeCollectionChanged, AddressOf Form1_NodeCollectionChanged
+	AddHandler DirectCast(diagram1.EventSink, DiagramViewerEventSink).NodeCollectionChanging, AddressOf Form1_NodeCollectionChanging
+	Dim rect As New RectangleF(100, 100, 100, 100)
+	Dim richText As New RichTextNode("", rect)
+	richText.Text = "Rich text box"
+	Dim nodeStack As New NodeCollection()
+	nodeStack.Add(richText)
+	MessageBox.Show(nodeStack.Count.ToString())
+End Sub
+
+Private Sub Form1_NodeCollectionChanged(ByVal e As CollectionExEventArgs)
+	MessageBox.Show("NodeCollectionChanged event fired")
 End Sub
 
 Private Sub Form1_NodeCollectionChanging(ByVal e As CollectionExEventArgs)
-MessageBox.Show("NodeCollectionChanging event fired")
+	MessageBox.Show("NodeCollectionChanging event fired")
 End Sub
 
 {% endhighlight %}
 {% endtabs %}
 
-Sample diagrams are as follows,
+The sample diagrams are as follows,
 
 
 
@@ -135,11 +140,9 @@ Sample diagrams are as follows,
 
 ### Node Mouse Events
 
-This topic discusses the events that are raised when mouse entering or leaving the node. The below table discusses all the available node mouse events.
+This topic discusses the events that are raised when the mouse enters or leaves a node. The below table discusses all the available node mouse events.
 
-
-
-Node Mouse Events
+#### Node Mouse Events Table
 
 <table>
 <tr>
@@ -149,28 +152,22 @@ Description</th></tr>
 <tr>
 <td>
 {{'[NodeClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ViewerEventSink.html)'| markdownify }}</td><td>
-Triggered when mouse clicked on the node.</td></tr>
+Triggered when the mouse is clicked on the node.</td></tr>
 <tr>
 <td>
 {{'[NodeDoubleClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ViewerEventSink.html)'| markdownify }}</td><td>
-Triggered when mouse double clicked on the node.</td></tr>
+Triggered when the mouse is double-clicked on the node.</td></tr>
 <tr>
 <td>
 {{'[NodeMouseEnter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ViewerEventSink.html)'| markdownify }}</td><td>
-Triggered when mouse enter into the node.</td></tr>
+Triggered when the mouse enters a node.</td></tr>
 <tr>
 <td>
 {{'[NodeMouseLeave](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ViewerEventSink.html)'| markdownify }}</td><td>
-Triggered when mouse leaves the node.</td></tr>
+Triggered when the mouse leaves the node.</td></tr>
 </table>
 
-
-
-EventArgs members can be accessed using the following members.
-
-
-
-Properties
+#### NodeMouse EventArgs Members
 
 <table>
 <tr>
@@ -250,13 +247,11 @@ End Sub
 
 ### Tool Events
 
-The below events gets fired while activating or deactivating the UI tools ([Zoom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ZoomTool.html), [Pan](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.PanTool.html), [Select](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.SelectTool.html) etc) in the diagram.
+The below events get fired while activating or deactivating the UI tools ([Zoom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ZoomTool.html), [Pan](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.PanTool.html), [Select](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.SelectTool.html) etc) in the diagram.
 
 The below table shows all the Tool Events.
 
-
-
-Tool Events
+#### Tool Events Table
 
 <table>
 <tr>
@@ -266,12 +261,14 @@ Description</th></tr>
 <tr>
 <td>
 {{'[ToolActivated](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DiagramViewerEventSink.html)'| markdownify }}</td><td>
-Triggered when UI tool is activated.</td></tr>
+Triggered when a UI tool is activated.</td></tr>
 <tr>
 <td>
 {{'[ToolDeactivated](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DiagramViewerEventSink.html)'| markdownify }}</td><td>
-Triggered when UI tool is deactivated.</td></tr>
+Triggered when a UI tool is deactivated.</td></tr>
 </table>
+
+#### Tool EventArgs Members
 
 
 Data can be retrieved or set using the following members.
@@ -354,9 +351,7 @@ The [Origin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Form
 
 [Origin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.View.html#Syncfusion_Windows_Forms_Diagram_View_Origin) events are as follows,
 
-
-
-Origin Events
+#### Origin Events Table
 
 <table>
 <tr>
@@ -369,12 +364,7 @@ Description</th></tr>
 Triggered when the origin is changed.</td></tr>
 </table>
 
-
-Data can be retrieved or set by using the following members.
-
-
-
-Members
+#### Origin EventArgs Members
 
 <table>
 <tr>
@@ -485,13 +475,13 @@ Sample diagrams are as follows.
 ![Event-Handlers_img6](Event-Handlers_images/Event-Handlers_img6.jpeg)
 
 
-### Magnification Event 
+#### Magnification Event
 
 When the control is zoomed in or out, the magnification events will be fired displaying the old and new magnification factors.
 
 [Magnification](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.View.html#Syncfusion_Windows_Forms_Diagram_View_Magnification) Events are as follows,
 
-Magnification Events
+#### Magnification Events Table
 
 <table>
 <tr>
@@ -501,15 +491,10 @@ Description</th></tr>
 <tr>
 <td>
 {{'[MagnificationChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ViewerEventSink.html)'| markdownify }}</td><td>
-Fired when magnification value is changed.</td></tr>
+Fired when the magnification value is changed.</td></tr>
 </table>
 
-
-Data can be retrieved or set using the following members.
-
-
-
-Member properties
+#### Magnification EventArgs Members
 
 <table>
 <tr>
@@ -534,7 +519,6 @@ private void Form1_Load(object sender, EventArgs e)
 ((DiagramViewerEventSink)diagram1.EventSink).MagnificationChanged += new ViewMagnificationEventHandler(Form1_MagnificationChanged);
 }
 
-[EventHandlerPriorityAttribute(true)]
 private void Form1_MagnificationChanged(ViewMagnificationEventArgs evtArgs)
 {
 MessageBox.Show("Old Factor: " + evtArgs.OriginalMagnification.ToString() + "New Factor: " + evtArgs.NewMagnification.ToString());
@@ -570,11 +554,11 @@ Sample diagrams are as follows,
 
 ### Editor Events
 
-WinForms Diagram control provides support to notify users when the text in the [Text Editor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DiagramController.html#Syncfusion_Windows_Forms_Diagram_DiagramController_TextEditor) and Label Editor are changed. The following table lists the Editor events associated with WinForms Diagram control .
+The WinForms Diagram control provides support to notify users when the text in the [Text Editor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DiagramController.html#Syncfusion_Windows_Forms_Diagram_DiagramController_TextEditor) and label editor are changed. The following table lists the Editor events associated with the WinForms Diagram control.
 
+N> The text editor is activated when a node label is double-clicked at runtime; the label editor is invoked through in-place editing on a selected label.
 
-
-Editor Events
+#### Editor Events Table
 
 <table>
 <tr>
@@ -638,11 +622,11 @@ void TextEditor_TextEditingCompleted(object sender, Syncfusion.Windows.Forms.Dia
 {% endhighlight %}
 {% highlight vb %}
 
-Private Sub Form1_Load(sender As Object, e As EventArgs)    
-diagram1.Controller.TextEditor.TextChanged += New EventHandler(AddressOf TextEditor_TextChanged)
-diagram1.Controller.InPlaceEditor.LabelTextChanged += New EventHandler(AddressOf InPlaceEditor_LabelTextChanged)        
-diagram1.Controller.TextEditor.KeyDown += New EventHandler(AddressOf TextEditor_KeyDown)
-diagram1.Controller.TextEditor.TextEditingCompleted += New EventHandler(AddressOf TextEditor_TextEditingCompleted)    
+Private Sub Form1_Load(sender As Object, e As EventArgs)
+AddHandler diagram1.Controller.TextEditor.TextChanged, AddressOf TextEditor_TextChanged
+AddHandler diagram1.Controller.InPlaceEditor.LabelTextChanged, AddressOf InPlaceEditor_LabelTextChanged
+AddHandler diagram1.Controller.TextEditor.KeyDown, AddressOf TextEditor_KeyDown
+AddHandler diagram1.Controller.TextEditor.TextEditingCompleted, AddressOf TextEditor_TextEditingCompleted
 End Sub
 
 Private Sub TextEditor_TextChanged(sender As Object, e As EventArgs)
@@ -664,15 +648,17 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-### Model Events
+## Model Events
 
 [DocumentEventSink](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DocumentEventSink.html#) class contains the events specific to the document. The various events that can be invoked using this class are discussed in the following topics.
 
-#### Vertex Events
+N> A model's `EventSink` property (e.g., `model1.EventSink`) is an instance of `DocumentEventSink`, so the events below are subscribed through the model's `EventSink`.
+
+### Vertex Events
 
 Vertex Events are as follows,
 
-Vertex Events
+#### Vertex Events Table
 
 <table>
 <tr>
@@ -689,12 +675,7 @@ Gets fired after the vertex of the node has been changed.</td></tr>
 Gets fired when the vertex of the node is changed.</td></tr>
 </table>
 
-
-Data can be retrieved or set using the following members.
-
-
-
-Description
+#### Vertex EventArgs Members
 
 <table>
 <tr>
@@ -717,10 +698,6 @@ Returns the node's name by which the node was  affected.</td></tr>
 <td>
 {{'[VertexIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.VertexChangedEventArgs.html#Syncfusion_Windows_Forms_Diagram_VertexChangedEventArgs_VertexIndex)'| markdownify }}</td><td>
 Returns the index of the current vertex.</td></tr>
-<tr>
-<td>
-Vertex EventArgs Member</td><td>
-Description</td></tr>
 <tr>
 <td>
 {{'[VertexLocation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.VertexChangedEventArgs.html#Syncfusion_Windows_Forms_Diagram_VertexChangedEventArgs_VertexLocation)'| markdownify }}</td><td>
@@ -793,13 +770,11 @@ Sample diagrams are as follows,
 
 
 
-#### PinPoint Events
+### PinPoint Events
 
- When changing the node's location, the pinpoint of the node will be reset. The below table contains pinpoint events and descriptions. 
+When changing the node's location, the pinpoint of the node will be reset. The below table contains pinpoint events and descriptions.
 
-
-
-Pinpoint Events
+#### PinPoint Events Table
 
 <table>
 <tr>
@@ -824,12 +799,7 @@ Triggered after the pinpoint is repositioned.</td></tr>
 Triggered when the pinpoint is moved.</td></tr>
 </table>
 
-
-Data can be retrieved or set using the following members.
-
-
-
-Members
+#### PinPoint / PinPointOffset EventArgs Members
 
 <table>
 <tr>
@@ -944,15 +914,13 @@ Sample diagrams are as follows,
 
 
 
-#### Rotation Events
+### Rotation Events
 
-When the control is rotated horizontally or vertically, the rotation events will be fired displaying the rotation offsets.
+When a node is rotated, the rotation events will be fired displaying the rotation offsets.
 
 The below table discusses the available rotation events with descriptions.
 
-
-
-Rotation Events
+#### Rotation Events Table
 
 <table>
 <tr>
@@ -962,11 +930,11 @@ Description</th></tr>
 <tr>
 <td>
 {{'[FlipChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DocumentEventSink.html)'| markdownify }}</td><td>
-Triggered after the node is rotated using Flip property.</td></tr>
+Triggered after the node is flipped using the Flip property.</td></tr>
 <tr>
 <td>
 {{'[FlipChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DocumentEventSink.html)'| markdownify }}</td><td>
-Triggered when the node is rotated using Flip property.</td></tr>
+Triggered when the node is flipped using the Flip property.</td></tr>
 <tr>
 <td>
 {{'[RotationChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DocumentEventSink.html)'| markdownify }}</td><td>
@@ -977,12 +945,7 @@ Triggered after the node is rotated.</td></tr>
 Triggered on rotating the node in any direction.</td></tr>
 </table>
 
-
-Data can be retrieved or set using the following members.
-
-
-
-Members
+#### Rotation EventArgs Members
 
 <table>
 <tr>
@@ -999,8 +962,28 @@ Returns the node's name by which the node was affected.</td></tr>
 Returns the angle by which the node was rotated.</td></tr>
 </table>
 
+#### RotationChanging EventArgs Members
 
-Flip EventArgs Member
+<table>
+<tr>
+<th>
+RotationChanging EventArgs Member</th><th>
+Description</th></tr>
+<tr>
+<td>
+Cancel</td><td>
+Cancels the RotationChanged event from being fired.</td></tr>
+<tr>
+<td>
+NodeAffected</td><td>
+Returns the node's name by which the node was affected.</td></tr>
+<tr>
+<td>
+RotationOffset</td><td>
+Returns the angle by which the node is being rotated.</td></tr>
+</table>
+
+#### Flip EventArgs Members
 
 <table>
 <tr>
@@ -1014,7 +997,7 @@ Cancels the FlipChanging event.</td></tr>
 <tr>
 <td>
 {{'[FlipAxis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.FlipChangedEventArgs.html#Syncfusion_Windows_Forms_Diagram_FlipChangedEventArgs__ctor_Syncfusion_Windows_Forms_Diagram_Node_Syncfusion_Windows_Forms_Diagram_FlipAxis_System_Boolean_)'| markdownify }}</td><td>
-Returns the axis around which the node was rotated.</td></tr>
+Returns the axis around which the node was flipped.</td></tr>
 <tr>
 <td>
 {{'[FlipValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.FlipChangedEventArgs.html#Syncfusion_Windows_Forms_Diagram_FlipChangedEventArgs_FlipValue)'| markdownify }}</td><td>
@@ -1045,7 +1028,7 @@ public void Form1_Load(object sender, EventArgs e)
 	circle.FillStyle.Type = FillStyleType.LinearGradient;
 	circle.FillStyle.ForeColor = Color.AliceBlue;
 	circle.ShadowStyle.Visible = true;
-	model4.AppendChild(circle);
+	model1.AppendChild(circle);
 }
 
 void Form1_RotationChanged(RotationChangedEventArgs evtArgs)
@@ -1080,7 +1063,7 @@ circle.Name = "Circle"
 circle.FillStyle.Type = FillStyleType.LinearGradient
 circle.FillStyle.ForeColor = Color.AliceBlue
 circle.ShadowStyle.Visible = True
-model4.AppendChild(circle)
+model1.AppendChild(circle)
 End Sub
 
 Private Sub Form1_RotationChanged(ByVal evtArgs As RotationChangedEventArgs)
@@ -1126,13 +1109,11 @@ Sample diagrams are as follows:
 
 
 
-#### Z-Order Events
+### Z-Order Events
 
 When the node order is changed from front-to-back or back-to-front, the Z-order value gets changed and triggers the Z-order events listed in the below table.
 
-
-
-Z-order events
+#### Z-Order Events Table
 
 <table>
 <tr>
@@ -1149,12 +1130,7 @@ Gets fired after the Z-order value is changed.</td></tr>
 Gets fired when the Z-order of the node is changed.</td></tr>
 </table>
 
-
-Data can be retrieved / set by using the following members.
-
-
-
-Members
+#### Z-Order EventArgs Members
 
 <table>
 <tr>
@@ -1168,7 +1144,7 @@ Cancels the Z-order changing event.</td></tr>
 <tr>
 <td>
 {{'[ChangeType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ZOrderChangedEventArgs.html#Syncfusion_Windows_Forms_Diagram_ZOrderChangedEventArgs_ChangeType)'| markdownify }}</td><td>
-It returns the following possible values,* Front-whether the controller bring the node to the front* Back-whether the controller send the node to the back</td></tr>
+It returns the following possible values,* Front - whether the controller brings the node to the front* Back - whether the controller sends the node to the back</td></tr>
 <tr>
 <td>
 {{'[NodeAffected](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ZOrderChangedEventArgs.html#Syncfusion_Windows_Forms_Diagram_ZOrderChangedEventArgs_NodeAffected)'| markdownify }}</td><td>
@@ -1237,15 +1213,13 @@ Sample diagram are as follows:
 
 
 
-#### Connections And Ports Events
+### Connections And Ports Events
 
-The below events gets fired while the connection is created between two nodes.
+The below events get fired while the connection is created between two nodes.
 
 The below table explains the [Connections](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ConnectionPoint.html#Syncfusion_Windows_Forms_Diagram_ConnectionPoint_Connections) and [Ports](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Node.html#Syncfusion_Windows_Forms_Diagram_Node_Ports) events.
 
-
-
-Connections and Ports Events
+#### Connections And Ports Events Table
 
 <table>
 <tr>
@@ -1262,12 +1236,7 @@ Triggered after the connection is changed.</td></tr>
 Triggered when ports are added or changed.</td></tr>
 </table>
 
-
-Data can be retrieved or set using the following members.
-
-
-
-Members
+#### Connection And Port EventArgs Members
 
 <table>
 <tr>
@@ -1297,13 +1266,10 @@ Returns the zero-based index into the collection on which the event occurred.</t
 <tr>
 <td>
 {{'[Owner](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.CollectionExEventArgs.html#Syncfusion_Windows_Forms_Diagram_CollectionExEventArgs_Owner)'| markdownify }}</td><td>
-Returns the owner object. This is a read-only boolean value.</td></tr>
+Returns the owner object.</td></tr>
 </table>
 
-
-Connection Events
-
-
+##### Connection Events
 
 Programmatically, the Connection Event is handled as follows.
 
@@ -1353,7 +1319,7 @@ Sample diagram is as follows.
 
 
 
-Ports Events
+##### Ports Events
 
 Programmatically, the events are handled as follows.
 
@@ -1395,15 +1361,13 @@ Sample diagram is as follows.
 
 
 
-#### Property Events
+### Property Events
 
-Each node has different properties (Name,Color,Size etc). The below events are handled when changing these properties.
+Each node has different properties (Name, Color, Size etc). The below events are handled when changing these properties.
 
 Property Events are as follows.
 
-
-
-Property Events
+#### Property Events Table
 
 <table>
 <tr>
@@ -1420,12 +1384,7 @@ Triggered after the property of any node is changed.</td></tr>
 Triggered when the property value is changed.</td></tr>
 </table>
 
-
-Data can be retrieved or set using the following members.
-
-
-
-Members
+#### PropertyChanging EventArgs Members
 
 <table>
 <tr>
@@ -1450,8 +1409,9 @@ Returns the container for the property.</td></tr>
 Returns name of the property whose value is changed.</td></tr>
 </table>
 
+N> The `PropertyChangingEventArgs` does not expose an `OldValue` member; only `NewValue` is available. To compare the previous value, read it from the node before the change is committed.
 
-Members
+#### PropertyChanged EventArgs Members
 
 <table>
 <tr>
@@ -1489,7 +1449,7 @@ private void Form1_PropertyChanged(Syncfusion.Windows.Forms.Diagram.PropertyChan
 
 private void Form1_PropertyChanging(Syncfusion.Windows.Forms.Diagram.PropertyChangingEventArgs eprop)
 {
-	MessageBox.Show("PropertyChanging event is fired" + "\n" + "Property Name: " + eprop.PropertyName + "\n" + "new 				Value: " + eprop.NewValue);
+	MessageBox.Show("PropertyChanging event is fired" + "\n" + "Property Name: " + eprop.PropertyName + "\n" + "New Value: " + eprop.NewValue);
 }
 
 {% endhighlight %}
@@ -1505,7 +1465,7 @@ MessageBox.Show(("PropertyChanged event is fired" & vbLf & "Property Name: ") + 
 End Sub
 
 Private Sub Form1_PropertyChanging(ByVal eprop As Syncfusion.Windows.Forms.Diagram.PropertyChangingEventArgs)
-MessageBox.Show((("PropertyChanging event is fired" & vbLf & "Property Name: ") + eprop.PropertyName & vbLf & "new " & vbTab & vbTab & vbTab & vbTab & "Value: ") + eprop.NewValue)
+MessageBox.Show((("PropertyChanging event is fired" & vbLf & "Property Name: ") + eprop.PropertyName & vbLf & "New Value: ") + eprop.NewValue)
 End Sub
 
 {% endhighlight %}
@@ -1525,15 +1485,13 @@ Sample diagrams are as follows.
 
 
 
-#### Labels And Layers Events
+### Labels And Layers Events
 
 The below mentioned events are fired, when adding or removing the labels and layers to or from the diagram.
 
 The following table shows the label events:
 
-
-
-Labels And Layers Events
+#### Labels And Layers Events Table
 
 <table>
 <tr>
@@ -1550,8 +1508,7 @@ Triggered when labels are added.</td></tr>
 Triggered when layers are added to the model.</td></tr>
 </table>
 
-
-Data can be retrieved or set using the following members.
+#### Label / Layers EventArgs Members
 
 <table>
 <tr>
@@ -1584,8 +1541,7 @@ Returns the zero-based index into the collection on which the event occurred.</t
 Returns the owner object.</td></tr>
 </table>
 
-
-Label Events
+##### Label Events
 
 Whenever labels are added to the label collection, this event will be triggered.
 
@@ -1619,7 +1575,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-Layers Events
+##### Layers Events
 
 Programmatically, the events are written as follows:
 

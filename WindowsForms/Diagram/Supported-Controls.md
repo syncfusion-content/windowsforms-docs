@@ -9,21 +9,18 @@ documentation: ug
 
 # Supported Controls in Windows Forms Diagram
 
-The controls supported by WinForms Diagram are as follows.
-
-The controls associated with the [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) control are illustrated in the following image.
-
-
+The controls associated with the [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) control are illustrated in the following image. Each control can be added to a Windows Form from the Visual Studio .NET toolbox after the Syncfusion WinForms package is referenced.
 
 ![Overvies of Supported Controls](Supported-Controls_images/Supported-Controls_img1.png)
 
 
-## Overview Control 
+## Overview Control
 
-Overview Control provides a perspective view of a diagram model, and allows users to dynamically pan and zoom the diagrams. The control features a view port window that can be moved and / or resized using the mouse to modify the diagrams' origin and magnification properties at run-time.
+The Overview Control provides a perspective view of a diagram model, and allows users to dynamically pan and zoom the diagram. The control features a viewport window that can be moved and/or resized using the mouse to modify the diagram's origin and magnification at run time.
 
-The important property of the Overview Control is the Diagram property. The following are the list of properties of the Overview control.
+The most important property of the Overview Control is **Diagram**, which binds the overview to the target diagram.
 
+### Properties
 
 <table>
 <tr>
@@ -33,44 +30,26 @@ Description</th></tr>
 <tr>
 <td>
 BackColor</td><td>
-Background color of the component.</td></tr>
-<tr>
-<td>
-AllowDrop</td><td>
-Gets or sets a value indicating whether the control can accept the data that the user can drops on it.</td></tr>
+Gets or sets the background color of the overview. Default value is the system control color.</td></tr>
 <tr>
 <td>
 BackgroundImage</td><td>
-Background image of the component.</td></tr>
+Gets or sets the background image of the overview.</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Sets the border style for the component. It can be FixedSingle, Fixed3D or None.</td></tr>
-<tr>
-<td>
-Controls</td><td>
-Indicates the collection of control within the component.</td></tr>
-<tr>
-<td>
-Enabled</td><td>
-Indicates if the control is enabled.</td></tr>
-<tr>
-<td>
-Dock</td><td>
-Indicates which control borders are docked to its parent control and determine how the control is resized with its parent.</td></tr>
+Gets or sets the border style. Valid values are FixedSingle, Fixed3D, or None.</td></tr>
 <tr>
 <td>
 Diagram</td><td>
-Sets the corresponding diagram to the Overview Control.</td></tr>
-<tr>
-<td>
-Visible</td><td>
-Sets the visibility of the control.</td></tr>
+Gets or sets the diagram that the overview control renders. This is the primary binding property.</td></tr>
 </table>
 
+### Standard WinForms properties
 
-The important events of Overview Control are listed below with their corresponding descriptions.
+The overview also inherits the standard `System.Windows.Forms.Control` properties: `Enabled`, `Visible`, `Dock`, `Anchor`, `AllowDrop`, `BackColor`, `Controls`, `Location`, `Size`, `TabIndex`, `BackgroundImage`, and `ForeColor`.
 
+### Events
 
 <table>
 <tr>
@@ -79,67 +58,38 @@ Event</th><th>
 Description</th></tr>
 <tr>
 <td>
-Click</td><td>
-Occurs when the component is clicked.</td></tr>
+ViewPortBoundsChanged</td><td>
+Occurs after the viewport bounds have changed.</td></tr>
 <tr>
 <td>
-DoubleClick</td><td>
-Occurs when the component is double-clicked.</td></tr>
-<tr>
-<td>
-ViewPortBoundsChanged </td><td>
-Occurs when the controls viewport bounds is changed.</td></tr>
-<tr>
-<td>
-ViewPortBoundsChanging Event</td><td>
-Occurs when the controls viewport bounds is changing.</td></tr>
+ViewPortBoundsChanging</td><td>
+Occurs when the viewport bounds are about to change. Cancellable.</td></tr>
 </table>
 
+The standard `Click`, `DoubleClick`, `MouseDown`, `MouseUp`, and `MouseMove` events are also inherited from `System.Windows.Forms.Control`.
 
-Programmatically, the properties can be set as follows.
 
-
+Programmatically, the properties can be set as follows. Add a Diagram control named `diagram1` and an Overview Control named `overviewControl1` to the form before running this sample.
 
 {% highlight c# %}
 
-
-
 overviewControl1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-
 overviewControl1.Diagram = diagram1;
-
 overviewControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-
-overviewControl1.ForeColor = System.Drawing.Color.Red;
-
 overviewControl1.Location = new System.Drawing.Point(0, 377);
-
 overviewControl1.Name = "overviewControl";
-
 overviewControl1.Size = new System.Drawing.Size(200, 100);
-
 overviewControl1.TabIndex = 1;
-
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-
-
 overviewControl1.BackColor = System.Drawing.SystemColors.AppWorkspace
-
 overviewControl1.Diagram = diagram1
-
 overviewControl1.Dock = System.Windows.Forms.DockStyle.Bottom
-
-overviewControl1.ForeColor = System.Drawing.Color.Red
-
 overviewControl1.Location = New System.Drawing.Point(0, 377)
-
 overviewControl1.Name = "overviewControl"
-
 overviewControl1.Size = New System.Drawing.Size(200, 100)
-
 overviewControl1.TabIndex = 1
 
 {% endhighlight %}
@@ -148,17 +98,13 @@ overviewControl1.TabIndex = 1
 
 
 
-## Palette Groupbar And GroupView
+## PaletteGroupBar and GroupView
 
-The Palette Groupbar control provides a way for users to drag-and-drop the symbols onto a diagram. It is based on the WinForms Tools GroupBar control. Each symbol palette loaded in the PaletteGroupBar occupies a panel that can be selected by a bar button. The bar button is labeled with the name of the symbol palette. The symbols in the palette are shown as icons that can be dragged and dropped onto the diagram. This control allows users to add symbols to a palette, and save or load the palette whenever necessary. It provides a way to classify and maintain the symbols.
+The **PaletteGroupBar** control provides a way for users to drag and drop the symbols onto a diagram. It is based on the WinForms Tools GroupBar control. Each symbol palette loaded in the PaletteGroupBar occupies a panel that can be selected by a bar button. The bar button is labeled with the name of the symbol palette. The symbols in the palette are shown as icons that can be dragged and dropped onto the diagram. This control allows users to add symbols to a palette, and save or load the palette whenever necessary. It provides a way to classify and maintain the symbols.
 
-The PaletteGroupView control provides an easy way to serialize a symbol palette to and from the resource file of a form. At the design-time, users can attach a symbol palette to a PaletteGroupView control in a form. Selecting the PaletteGroupView, and clicking the Palette property in the Visual Studio .NET properties window, opens a standard Open File dialog, which allows the user to select a symbol palette file that has been created using the Symbol Designer.
+The **PaletteGroupView** control provides an easy way to serialize a symbol palette to and from the resource file of a form. At design time, you can attach a symbol palette to a PaletteGroupView control on a form. Selecting the PaletteGroupView and clicking the **Palette** property in the Visual Studio .NET properties window opens a standard Open File dialog that allows the user to select a symbol palette file created using the Symbol Designer.
 
-The properties of the PaletteGroupBar and GroupView with their descriptions are given in the below table.
-
-
-
-_PaletteGroupBar and GroupView_
+### Properties
 
 <table>
 <tr>
@@ -168,155 +114,150 @@ Description</th></tr>
 <tr>
 <td>
 BackColor</td><td>
-Sets the background color of the component.</td></tr>
+Gets or sets the background color of the control.</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Sets the border style to FixedSingle, Fixed3D or None.</td></tr>
+Gets or sets the border style. Valid values are FixedSingle, Fixed3D, or None.</td></tr>
 <tr>
 <td>
 Collapsed</td><td>
-Indicates whether the GroupBar is collapsed.</td></tr>
+Gets or sets whether the GroupBar is collapsed.</td></tr>
 <tr>
 <td>
 CollapsedText</td><td>
-Sets the text for the collapsed client area of the GroupBar.</td></tr>
+Gets or sets the text shown for the collapsed client area of the GroupBar.</td></tr>
 <tr>
 <td>
 CollapsedWidth</td><td>
-Specifies the width of the collapsed GroupBar.</td></tr>
+Gets or sets the width of the collapsed GroupBar in pixels.</td></tr>
 <tr>
 <td>
 CollapseImage</td><td>
-Image of the collapsed button in the expanded state.</td></tr>
+Gets or sets the image shown for the expand button.</td></tr>
 <tr>
 <td>
 DrawClientBorder</td><td>
-Indicates whether border is drawn around the GroupBar's client window.</td></tr>
+Gets or sets whether a border is drawn around the GroupBar's client window.</td></tr>
 <tr>
 <td>
 ExpandImage</td><td>
-Sets image of the collapse button.</td></tr>
+Gets or sets the image shown for the collapse button.</td></tr>
 <tr>
 <td>
 FlatLook</td><td>
-Indicates whether control is displayed with a flat look.</td></tr>
+Gets or sets whether the control is displayed with a flat look.</td></tr>
 <tr>
 <td>
 Font</td><td>
-Sets font style for text in the control.</td></tr>
+Gets or sets the font used for text in the control.</td></tr>
 <tr>
 <td>
 ForeColor</td><td>
-Sets fore color of the display text in the component.</td></tr>
+Gets or sets the foreground color of the display text.</td></tr>
 <tr>
 <td>
 GroupBarItemCursor</td><td>
-Cursor that is to be displayed when the mouse pointer is over the GroupBarItems.</td></tr>
+Gets or sets the cursor displayed when the mouse pointer is over a GroupBar item.</td></tr>
 <tr>
 <td>
 Office2007Theme</td><td>
-Sets the (blue, black or silver) office theme used for drawing the control.</td></tr>
+Gets or sets the Office 2007 theme color (blue, black, or silver) used to draw the control.</td></tr>
 <tr>
 <td>
 PopupClientSize</td><td>
-Sets the initial size of the pop-up for GroupBar client.</td></tr>
+Gets or sets the initial size of the pop-up for the GroupBar client.</td></tr>
 <tr>
 <td>
 PopupResizeMode</td><td>
-Gets / sets the pop-up resize mode.</td></tr>
+Gets or sets the pop-up resize mode.</td></tr>
 <tr>
 <td>
 ShowPopupGripper</td><td>
-Boolean value indicating whether to show GroupBarItem's popup gripper.</td></tr>
+Gets or sets whether a gripper is shown on the pop-up.</td></tr>
 <tr>
 <td>
 Text</td><td>
-Text associated with the control.</td></tr>
+Gets or sets the caption text of the control.</td></tr>
 <tr>
 <td>
 TextAlign</td><td>
-Alignment of the text set through Text property.</td></tr>
+Gets or sets the alignment of the caption text.</td></tr>
 <tr>
 <td>
 ThemesEnabled</td><td>
-Specifies whether control should be themed.</td></tr>
+Gets or sets the Office 2003 / 2007 themes. Use VisualStyle to apply the theme. Default value is true.</td></tr>
 <tr>
 <td>
 VisualStyle</td><td>
-Visual style for drawing the control. Styles are Default, OfficeXP, Office2003, VS2005 and Office2007.</td></tr>
+Gets or sets the visual style used to draw the control. Valid values are Default, OfficeXP, Office2003, VS2005, and Office2007.</td></tr>
 <tr>
 <td>
 AllowCollapse</td><td>
-Indicates whether GroupBar can be collapsed.</td></tr>
+Gets or sets whether the GroupBar can be collapsed.</td></tr>
 <tr>
 <td>
 AnimatedSelection</td><td>
-Indicates whether animated selection is enabled.</td></tr>
+Gets or sets whether an animated selection indicator is shown.</td></tr>
 <tr>
 <td>
 BarHighlight</td><td>
-Indicates whether GroupBar item is highlighted on mouse hovering over a GroupBar Item.</td></tr>
+Gets or sets whether a GroupBar item is highlighted when the mouse hovers over it.</td></tr>
 <tr>
 <td>
 EditMode</td><td>
-This property determines whether the symbols from the palette can be dragged and dropped onto the Diagram.</td></tr>
-<tr>
-<td>
-Enabled</td><td>
-Indicates whether component is enabled.</td></tr>
+Gets or sets whether symbols from the palette can be dragged and dropped onto the diagram.</td></tr>
 <tr>
 <td>
 ExpandButtonToolTip</td><td>
-Sets tooltip for Collapse button, when the control is collapsed.</td></tr>
+Gets or sets the tooltip shown for the expand button when the control is collapsed.</td></tr>
 <tr>
 <td>
 GroupBarItemHeight</td><td>
-Height of the GroupBarItems.</td></tr>
+Gets or sets the height of the GroupBar items in pixels.</td></tr>
 <tr>
 <td>
 MinimizeButtonToolTip</td><td>
-ToolTip for collapse button when control is expanded.</td></tr>
+Gets or sets the tooltip shown for the collapse button when the control is expanded.</td></tr>
 <tr>
 <td>
 NavigationPaneToolTip</td><td>
-ToolTip for navigation pane.</td></tr>
+Gets or sets the tooltip shown for the navigation pane.</td></tr>
 <tr>
 <td>
 PopupAutoClose</td><td>
-Indicates whether pop-up is closed after clicking an item.</td></tr>
+Gets or sets whether the pop-up closes automatically after a click.</td></tr>
 <tr>
 <td>
 SelectedItem</td><td>
-Index of the selected GroupBarItem.</td></tr>
+Gets or sets the index of the selected GroupBar item.</td></tr>
 <tr>
 <td>
 StackedMode</td><td>
-Indicates whether GroupBarItem is stacked.</td></tr>
+Gets or sets whether GroupBar items are stacked.</td></tr>
 <tr>
 <td>
-Visible </td><td>
-Sets the visibility of the GroupBar control.</td></tr>
+Visible</td><td>
+Gets or sets whether the control is visible.</td></tr>
 <tr>
 <td>
 GroupBarItems</td><td>
-GroupBarItem collection in the control.</td></tr>
+Gets or sets the GroupBarItem collection owned by the control.</td></tr>
 <tr>
 <td>
 ShowChevron</td><td>
-Indicates if chevron button of the navigation panel should be displayed when required.</td></tr>
+Gets or sets whether a chevron button is shown on the navigation panel when needed.</td></tr>
 <tr>
 <td>
 ShowItemImageInHeader</td><td>
-Gets / sets a value indicating whether the selected item's image is shown in the header in Stacked GroupBar.</td></tr>
+Gets or sets whether the selected item's image is shown in the header when StackedMode is enabled.</td></tr>
 <tr>
 <td>
 Palette</td><td>
-Indicates the loaded palette is in palette view.</td></tr>
+Gets or sets the loaded palette file for the palette view.</td></tr>
 </table>
 
-
-_PaletteGroupBar and GroupView_
+### Methods
 
 <table>
 <tr>
@@ -326,11 +267,14 @@ Description</th></tr>
 <tr>
 <td>
 LoadPalette</td><td>
-Loads given Symbol Palette to the PaletteGroupView.</td></tr>
+Loads a Symbol Palette file (.edp, .vss, .vsx, .vsd, or .vdx) into the PaletteGroupView.</td></tr>
+<tr>
+<td>
+AddPalette</td><td>Adds a SymbolPalette object to the PaletteGroupBar at run time.</td></tr>
 </table>
 
 
-The important events of the PaletteGroupBar and GroupView with their descriptions are given in the below table.
+### Events
 
 <table>
 <tr>
@@ -339,272 +283,178 @@ Event</th><th>
 Description</th></tr>
 <tr>
 <td>
-Click</td><td>
-Occurs when component is clicked.</td></tr>
-<tr>
-<td>
-DoubleClick</td><td>
-Occurs when the component is double-clicked.</td></tr>
-<tr>
-<td>
-GroupViewItemHighlighted </td><td>
-Event fired when an item in the GroupView control is highlighted.</td></tr>
+GroupViewItemHighlighted</td><td>
+Occurs when an item in the GroupView control is highlighted.</td></tr>
 <tr>
 <td>
 GroupViewItemSelected</td><td>
-Event fired when an item in the GroupView control is selected.</td></tr>
+Occurs when an item in the GroupView control is selected.</td></tr>
 <tr>
 <td>
 GroupViewItemReordered</td><td>
-Event fired after the GroupView control items have been reordered by a drag–and–drop operation.</td></tr>
+Occurs after items in the GroupView control have been reordered by a drag-and-drop operation.</td></tr>
 <tr>
 <td>
 GroupViewItemRenamed</td><td>
-Event fired after an in-place rename operation.</td></tr>
+Occurs after an in-place rename operation.</td></tr>
 <tr>
 <td>
-ShowContextMenu Event</td><td>
-Event fired when the right mouse button is clicked over the control.</td></tr>
+ShowContextMenu</td><td>
+Occurs when the right mouse button is clicked on the control.</td></tr>
 </table>
 
+The standard `Click`, `DoubleClick`, and other `Control` events are also inherited.
 
-Programmatically, the properties can be set as follows.
 
-
+The following code example shows how to set up the PaletteGroupBar, PaletteGroupView, and load palettes into them. Add a `PaletteGroupBar` named `paletteGroupBar1`, two `PaletteGroupView` controls named `paletteGroupView1` and `paletteGroupView2`, and two `GroupBarItem` objects named `groupBarItem1` and `groupBarItem2` to the form before running this sample. Update the file paths to match the location of the Syncfusion sample data on your machine.
 
 {% highlight c# %}
 
-
-
 paletteGroupBar1.AllowDrop = true;
-
 paletteGroupBar1.Controls.Add(paletteGroupView1);
-
 paletteGroupBar1.Controls.Add(paletteGroupView2);
-
 paletteGroupBar1.Dock = System.Windows.Forms.DockStyle.Left;
-
 paletteGroupBar1.EditMode = false;
-
-paletteGroupBar1.GroupBarItems.AddRange(new Syncfusion.Windows.Forms.Tools.GroupBarItem[] 								{ groupBarItem1, groupBarItem2 });
-
-
-
-
-
+paletteGroupBar1.GroupBarItems.AddRange(
+    new Syncfusion.Windows.Forms.Tools.GroupBarItem[] { groupBarItem1, groupBarItem2 });
 paletteGroupBar1.Location = new System.Drawing.Point(0, 0);
-
 paletteGroupBar1.Name = "paletteGroupBar1";
-
 paletteGroupBar1.SelectedItem = 1;
-
 paletteGroupBar1.Size = new System.Drawing.Size(114, 477);
-
 paletteGroupBar1.TabIndex = 1;
-
 paletteGroupBar1.Text = "Symbol Palette";
 
-
-
 groupBarItem1.Client = paletteGroupView1;
-
 groupBarItem1.Text = "Basic Shapes";
-
 groupBarItem2.Client = paletteGroupView2;
-
 groupBarItem2.Text = "ElectricalSymbols";
 
 paletteGroupView1.ButtonView = true;
-
 paletteGroupView1.Location = new System.Drawing.Point(2, 24);
-
 paletteGroupView1.Name = "paletteGroupView1";
-
 paletteGroupView1.Size = new System.Drawing.Size(71, 0);
-
 paletteGroupView1.TabIndex = 0;
-
-
-
 paletteGroupView1.Text = "paletteGroupView1";
 
-
-
-paletteGroupView1.LoadPalette
-
-(@"..\..\..\..\..\..\..\..\..\Common\Data\Diagram\BasicShapes.edp");
-
-
-
-
-paletteGroupView2.LoadPalette
-
-(@"..\..\..\..\..\..\..\..\..\Common\Data\Diagram\ElectricalSymbols.edp");
+paletteGroupView1.LoadPalette(@"..\..\..\..\..\..\..\..\..\Common\Data\Diagram\BasicShapes.edp");
+paletteGroupView2.LoadPalette(@"..\..\..\..\..\..\..\..\..\Common\Data\Diagram\ElectricalSymbols.edp");
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-
-
 paletteGroupBar1.AllowDrop = True
-
 paletteGroupBar1.Controls.Add(paletteGroupView1)
-
 paletteGroupBar1.Controls.Add(paletteGroupView2)
-
 paletteGroupBar1.Dock = System.Windows.Forms.DockStyle.Left
-
 paletteGroupBar1.EditMode = False
-
 paletteGroupBar1.GroupBarItems.AddRange(New Syncfusion.Windows.Forms.Tools.GroupBarItem() {groupBarItem1, groupBarItem2})
-
-
-
-
-
 paletteGroupBar1.Location = New System.Drawing.Point(0, 0)
-
 paletteGroupBar1.Name = "paletteGroupBar1"
-
 paletteGroupBar1.SelectedItem = 1
-
 paletteGroupBar1.Size = New System.Drawing.Size(114, 477)
-
 paletteGroupBar1.TabIndex = 1
-
 paletteGroupBar1.Text = "Symbol Palette"
 
-
-
 groupBarItem1.Client = paletteGroupView1
-
 groupBarItem1.Text = "Basic Shapes"
-
 groupBarItem2.Client = paletteGroupView2
-
 groupBarItem2.Text = "ElectricalSymbols"
 
 paletteGroupView1.ButtonView = True
-
 paletteGroupView1.Location = New System.Drawing.Point(2, 24)
-
 paletteGroupView1.Name = "paletteGroupView1"
-
 paletteGroupView1.Size = New System.Drawing.Size(71, 0)
-
 paletteGroupView1.TabIndex = 0
-
-
-
 paletteGroupView1.Text = "paletteGroupView1"
 
-
-
 paletteGroupView1.LoadPalette("..\..\..\..\..\..\..\..\..\Common\Data\Diagram\BasicShapes.edp")
-
-
-
-
-
 paletteGroupView2.LoadPalette("..\..\..\..\..\..\..\..\..\Common\Data\Diagram\ElectricalSymbols.edp")
 
 {% endhighlight %}
 
-### Dynamically add Symbol Palette into PaletteGroupBar 
+### Dynamically adding a Symbol Palette into PaletteGroupBar
 
-You can add Symbol Palettes into PaletteGroupBar by means of deserializing the palette (*.edp) file dynamically. The PaletteGroupBar control supports PaletteGroupBar1.AddPalette() method in order to add a palette into the PaletteGroupBar.
+You can add Symbol Palettes into a `PaletteGroupBar` at run time by deserializing the palette (*.edp) file. The `PaletteGroupBar.AddPalette()` method lets you append a deserialized `SymbolPalette` instance to the bar.
 
-Follow the steps given below for adding symbol palette into PaletteGroupBar:
+Before running the code below:
 
-1. Add OpenFileDialog control into form.
-2. Set the Filter property of OpenFileDialog as,
-3. WinForms Diagram Palettes|*.edp|Visio Stencils|*.vss; *.vsx|Visio Drawings(Shapes only)|*.vsd; *.vdx|All files|*.*
-4. Add the following lines of code to your button click event.
+1. Add an `OpenFileDialog` control named `openPaletteDialog` to the form.
+2. Set its `Filter` property to the following value (paste this as a single string):
+   `WinForms Diagram Palettes|*.edp|Visio Stencils|*.vss; *.vsx|Visio Drawings (Shapes only)|*.vsd; *.vdx|All files|*.*`
+3. Add a button whose click handler runs the code below. Add using directives for `System.IO`, `System.Runtime.Serialization.Formatters.Binary`, and `System.Text.RegularExpressions` if they are not already present.
 
-
-{% capture codesnippet1 %}
 {% highlight c# %}
 
-
-
-if (openPaletteDialog.ShowDialog(this) == DialogResult.OK)
+private void buttonLoadPalette_Click(object sender, EventArgs e)
 {
-    SymbolPalette curSymbolPalette;
-    FileStream iStream;
+    if (openPaletteDialog.ShowDialog(this) != DialogResult.OK)
+        return;
+
+    SymbolPalette curSymbolPalette = null;
     string strFileName = openPaletteDialog.FileName;
-    RegexOptions options = RegexOptions.IgnoreCase | RegexOptions.RightToLeft;
-    Match match = Regex.Match(strFileName, ".vss|.vsx|.vsd|.vdx", options);
+    Match match = Regex.Match(strFileName, ".vss|.vsx|.vsd|.vdx",
+                              RegexOptions.IgnoreCase | RegexOptions.RightToLeft);
     if (match.Success)
     {
         VisioStencilConverter converter = new VisioStencilConverter(strFileName, this);
         converter.ShowProgressDialog = true;
         curSymbolPalette = converter.Convert();
         if (curSymbolPalette != null)
-        PaletteGroupBar1.AddPalette(curSymbolPalette);
+            paletteGroupBar1.AddPalette(curSymbolPalette);
     }
     else
     {
-    try
-    {
-        iStream = new FileStream(strFileName, FileMode.Open, FileAccess.Read);
-        // Deserialize  the Binary format
-        IFormatter formatter = new BinaryFormatter();
-        AppDomain.CurrentDomain.AssemblyResolve +=
-                new ResolveEventHandler(DiagramBaseAssembly.AssemblyResolver);
-        curSymbolPalette = (SymbolPalette)formatter.Deserialize(iStream);
-        PaletteGroupBar1.AddPalette(curSymbolPalette);
-    }
-    catch (Exception se)
-    {
-        MessageBox.Show(this, se.Message);
-    }
-    finally
-    {
-        iStream.Close();
-    }
+        using (FileStream iStream = new FileStream(strFileName, FileMode.Open, FileAccess.Read))
+        {
+            try
+            {
+                IFormatter formatter = new BinaryFormatter();
+                AppDomain.CurrentDomain.AssemblyResolve +=
+                    new ResolveEventHandler(DiagramBaseAssembly.AssemblyResolver);
+                curSymbolPalette = (SymbolPalette)formatter.Deserialize(iStream);
+                paletteGroupBar1.AddPalette(curSymbolPalette);
+            }
+            catch (Exception se)
+            {
+                MessageBox.Show(this, se.Message);
+            }
+        }
     }
 }
 
 {% endhighlight %}
-{% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-### Saving the active Palette
+### Saving the Active Palette
 
-You can save the current active palette of PaletteGroupBar window by means of serializing the palette (.edp) file. The PaletteGroupBar.CurrentSymbolPalette property returns the currently selected symbol palette.
+You can save the currently active palette of the `PaletteGroupBar` window by serializing it as a `.edp` file. The `PaletteGroupBar.CurrentSymbolPalette` property returns the selected palette.
 
-Follow the steps given below for saving current symbol palette.
+Before running the code below:
 
-1. Add SaveFileDialog control into form.
-2. Set the Filter property of SaveFileDialog as
+1. Add a `SaveFileDialog` control named `savePaletteDialog` to the form.
+2. Set its `Filter` property to: `WinForms Diagram Palettes|*.edp|All files|*.*`
+3. Add a button whose click handler calls the code below. Add `using System.IO;` and `using System.Runtime.Serialization.Formatters.Binary;` if they are not present.
 
-   WinForms Diagram Palettes|*.edp|All files|*.*
-
-3. Add the following lines of code to your button click event. 
-
-
-{% capture codesnippet2 %}
 {% highlight c# %}
 
-
-
-if (savePaletteDialog.ShowDialog(this) == DialogResult.OK)
+private void buttonSavePalette_Click(object sender, EventArgs e)
 {
-    SymbolPalette symbolPalette = PaletteGroupBar1.CurrentSymbolPalette;
+    if (savePaletteDialog.ShowDialog(this) != DialogResult.OK)
+        return;
+
+    SymbolPalette symbolPalette = paletteGroupBar1.CurrentSymbolPalette;
     string strSavePath = savePaletteDialog.FileName;
     if (symbolPalette != null)
     {
-        FileStream fStream = new FileStream(strSavePath, FileMode.OpenOrCreate, FileAccess.Write);
-        BinaryFormatter formatter = new BinaryFormatter();
-        formatter.Serialize(fStream, symbolPalette);
-        fStream.Close();
+        using (FileStream fStream = new FileStream(strSavePath, FileMode.OpenOrCreate, FileAccess.Write))
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            formatter.Serialize(fStream, symbolPalette);
+        }
     }
 }
 
 {% endhighlight %}
-{% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![Palette Groupbar And GroupView](Supported-Controls_images/Supported-Controls_img3.jpeg)
 
@@ -1058,10 +908,9 @@ private void documentExplorer1_AfterSelect(object sender,TreeViewEventArgs e)
 
 ## Property Editor
 
-The Property Editor in WinForms Diagram displays properties of the currently selected object(s) in the diagram. It is a Windows Forms control that can be added to the Visual Studio .NET toolbox. It also allows the users to set or modify various properties of the objects or the model. The Property Editor provides an easy interface, to set and view various property settings. 
+The Property Editor in WinForms Diagram displays properties of the currently selected object(s) in the diagram. It is a Windows Forms control that can be added to the Visual Studio .NET toolbox that allows users to set or modify properties of the selected object or the model. The Property Editor provides an easy interface for setting and viewing property values.
 
-The following table lists the properties of the Property Editor. The important property of the Property Editor is the Diagram property.
-
+Add a Diagram control named `diagram1` and a Property Editor named `propertyEditor1` to the form before running the samples below.
 
 <table>
 <tr>
@@ -1070,56 +919,35 @@ Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-Diagram </td><td>
-It contains a reference to the diagram that this property editor is attached to. The property editor receives events from the diagram when the current selection changes. It updates the currently displayed object in the property editor.</td></tr>
-<tr>
-<td>
-Product Name</td><td>
-Gets the product name of the assembly containing the control.</td></tr>
-<tr>
-<td>
-ProductVersion</td><td>
-Gets the version of the assembly containing the control.</td></tr>
+Diagram</td><td>
+Gets or sets the diagram that this property editor is attached to. The property editor receives events from the diagram when the current selection changes and updates the object displayed in the grid.</td></tr>
 <tr>
 <td>
 PropertyGrid</td><td>
-Gets the reference to the PropertyGrid object contained by this property editor.</td></tr>
+Gets the reference to the underlying `System.Windows.Forms.PropertyGrid` for advanced styling.</td></tr>
 <tr>
 <td>
 ShowCombo</td><td>
-Determines if combo box is visible.</td></tr>
+Gets or sets whether the toolbar combo list is visible on top of the grid. Default value is true.</td></tr>
 </table>
 
+> `ProductName` and `ProductVersion` are read-only properties inherited from `System.Windows.Forms.Control` and cannot be set in the property editor.
 
-Programmatically, the properties can be set as follows.
-
-
+The following code example shows how to style the Property Editor. Add `using System.Drawing;` if it is not already present.
 
 {% highlight c# %}
 
-
-
-this.propertyEditor.PropertyGrid.BackColor = System.Drawing.Color.FromArgb((( System.Byte)(227)), ((System.Byte)(239)),((System.Byte)(255)));
-
-this.propertyEditor.PropertyGrid.CommandsBackColor = System.Drawing.Color.FromArgb(((System.Byte)(227)),((System.Byte)(239)),((System.Byte)(255)));
-
-this.propertyEditor.PropertyGrid.CommandsForeColor= System.Drawing.Color.MidnightBlue;
-
-this.propertyEditor.PropertyGrid.Font = new System.Drawing.Font("Arial", 8.25F,System.Drawing.FontStyle.Regular,System.Drawing.GraphicsUnit.Point,(System.Byte)(0)));
-
-this.propertyEditor.PropertyGrid.HelpBackColor = System.Drawing.Color.FromArgb(((System.Byte)(227)),((System.Byte)239)), ((System.Byte)(255)));
-
-this.propertyEditor.PropertyGrid.HelpForeColor = System.Drawing.Color.MidnightBlue;  					     
-
-this.propertyEditor.PropertyGrid.LineColor = System.Drawing.Color.FromArgb((( System.Byte)(185)), ((System.Byte)(216)), ((System.Byte)(255)));
-
-this.propertyEditor.PropertyGrid.ViewBackColor = System.Drawing.Color.FromArgb(((System.Byte)(227)), (( System.Byte)(239)), ((System.Byte)(255)));
-
-this.propertyEditor.PropertyGrid.ViewForeColor= System.Drawing.Color.MidnightBlue;
-
-this.propertyEditor.ShowCombo = true;
-
-this.propertyEditor.Diagram = diagram1;
+this.propertyEditor1.PropertyGrid.BackColor = Color.FromArgb(227, 239, 255);
+this.propertyEditor1.PropertyGrid.CommandsBackColor = Color.FromArgb(227, 239, 255);
+this.propertyEditor1.PropertyGrid.CommandsForeColor = Color.MidnightBlue;
+this.propertyEditor1.PropertyGrid.Font = new Font("Arial", 8.25f, FontStyle.Regular, GraphicsUnit.Point);
+this.propertyEditor1.PropertyGrid.HelpBackColor = Color.FromArgb(227, 239, 255);
+this.propertyEditor1.PropertyGrid.HelpForeColor = Color.MidnightBlue;
+this.propertyEditor1.PropertyGrid.LineColor = Color.FromArgb(185, 216, 255);
+this.propertyEditor1.PropertyGrid.ViewBackColor = Color.FromArgb(227, 239, 255);
+this.propertyEditor1.PropertyGrid.ViewForeColor = Color.MidnightBlue;
+this.propertyEditor1.ShowCombo = true;
+this.propertyEditor1.Diagram = diagram1;
 
 {% endhighlight %}
 

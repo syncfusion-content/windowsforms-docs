@@ -7,11 +7,11 @@ control: FlowLayout
 documentation: ug
 ---
 
-# Configure Child Controls in Windows Forms FlowLayout
+# Configure Child Controls in WinForms Flow Layout
 
-## Constraints on FlowLayout
+## Constraints on WinForms Flow Layout
 
-Constrained FlowLayout is typically used when creating resizable data entry forms filled with text boxes, check boxes, and so on. During design time, the constraints can be specified for each child control through its extended constraints on the flowLayout property. The constraints in FlowLayout are described as follows.
+Constrained WinForms Flow Layout is typically used when creating resizable data entry forms filled with text boxes, check boxes, and so on. During design time, the constraints can be specified for each child control through its extended constraints on the WinForms Flow Layout property. The constraints in WinForms Flow Layout are described as follows.
 
 ### Setting the constraints through designer
 
@@ -168,9 +168,9 @@ When resizing to a smaller width, two rows are created.
 
 ![New rows created on demand while resize container](Configuringchildcontrols_images/Configuringchildcontrols_img4.jpeg)
 
-## Enabling constrained FlowLayout on a container
+## Enabling constrained WinForms Flow Layout on a container
 
-This section explains how the constrained FlowLayout can be used to improve complex form layout logic.
+This section explains how the constrained WinForms Flow Layout can be used to improve complex form layout logic.
 
 For example, create a ‘User Info entry’ panel with auto labels, text boxes, and combobox to allow users to enter personal information. This container panel should also be capable of handling different widths by repositioning and resizing the child controls appropriately.
 
@@ -349,9 +349,9 @@ Me.autoLabel6.Text = "Zip"
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-3. Now, add the FlowLayout component, and set the panel to its container control. The FlowLayout will layout the controls in an order, in which they were added to the panel. Use the Bring To Front and Send To Back design time options to move the controls to the front or back to the layout order.
+3. Now, add the WinForms Flow Layout component, and set the panel to its container control. It will layout the controls in an order, in which they were added to the panel. Use the Bring To Front and Send To Back design time options to move the controls to the front or back to the layout order.
 
-N> The FlowLayout treats each control and its auto label pair as a single unit during layout.
+N> The WinForms Flow Layout treats each control and its auto label pair as a single unit during layout.
 
 {% capture codesnippet3 %}
 {% tabs %}

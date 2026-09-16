@@ -9,7 +9,7 @@ documentation: ug
 
 
 
-# How to find tab group in Windows Forms Docking Manager
+# How to find tab group in WinForms Docking Control
 
 To determine whether two controls are in same tabbed group `IsSameTabbedGroup` method can be used.
 

@@ -7,7 +7,7 @@ control: CurrencyEdit
 documentation: ug
 ---
 
-# Getting Started with Windows Forms CurrencyEdit
+# Getting Started with WinForms CurrencyEdit
 
 ## Assembly deployment
 
@@ -15,11 +15,11 @@ Refer to the [Control dependencies](https://help.syncfusion.com/windowsforms/con
 
 Click [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install nuget packages in a Windows Forms application.
 
-## Adding the CurrencyEdit control via designer
+## Adding the WinForms CurrencyEdit control via designer
 
 1. Create a new Windows Forms project in Visual Studio.
 
-2. The [CurrencyEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyEdit.html) control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
+2. The [WinForms CurrencyEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyEdit.html) control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
     * Syncfusion.Tools.Base
     * Syncfusion.Tools.Windows
@@ -30,7 +30,7 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/ins
 
 ![Currency Edit control added by designer in WindowsForms](overview_images/windowsforms-currency-edit-control-added-designer.png) 
 
-## Adding CurrencyEdit control via code
+## Adding WinForms CurrencyEdit control via code
 
 To add the control manually in C#, follow the given steps:
 
@@ -63,7 +63,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4. Create an instance of the [CurrencyEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyEdit.html) control, and add it to form.
+4. Create an instance of the [WinForms CurrencyEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyEdit.html) control, and add it to form.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -115,7 +115,7 @@ currencyEdit1.TextBox.Culture = New System.Globalization.CultureInfo("ksh-DE")
 
 ## Show or hide the drop-down calculator
 
-You can show or hide the calculator button in the CurrencyEdit control by setting the [ShowCalculator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyEdit.html#Syncfusion_Windows_Forms_Tools_CurrencyEdit_ShowCalculator) property.
+You can show or hide the calculator button in the WinForms CurrencyEdit control by setting the [ShowCalculator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyEdit.html#Syncfusion_Windows_Forms_Tools_CurrencyEdit_ShowCalculator) property.
 
 {% tabs %}
 {% highlight C# %}

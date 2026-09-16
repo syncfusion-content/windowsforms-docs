@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Syncfusion Windows Forms SfAIAssistView Control | Syncfusion
-description: 	Learn about introduction of Syncfusion Essential Studio Windows Forms SfAIAssistView control and more details.
+title: About Syncfusion Windows Forms AI AssistView Control | Syncfusion
+description: 	Learn about introduction of Syncfusion Essential Studio Windows Forms AI AssistView control and more details.
 platform: windowsforms
 control: SfAIAssistView
 documentation: ug

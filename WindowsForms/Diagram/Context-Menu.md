@@ -15,31 +15,29 @@ The [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) 
 
 All available tools for the WinForms Diagram control such as File options, Edit options, Action options, Layout, Connectors, and Shapes are listed in the built-in context menu. 
 
-Use Case Scenarios
+### Use Case Scenarios
 
 This feature enables easy access of frequently used options. 
 
-Properties_
+### Properties
 
 <table>
 <tr>
 <th>
 Property </th><th>
 Description </th><th>
-Type </th><th>
 Data Type </th><th>
-Reference links </th></tr>
+Default Value </th></tr>
 <tr>
 <td>
 {{'[DefaultContextMenuEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DiagramProperties.html#Syncfusion_Windows_Forms_Diagram_DiagramProperties_DefaultContextMenuEnabled)'| markdownify }}</td><td>
-Used to enable default context menu. </td><td>
-NA </td><td>
+Used to enable or disable the default context menu. </td><td>
 Boolean  </td><td>
-NA </td></tr>
+true</td></tr>
 </table>
 
 
-Enabling Default Context Menu
+### Enabling Default Context Menu
 
 You can enable the default context menu using the [_DefaultContextMenuEnabled_](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DiagramProperties.html#Syncfusion_Windows_Forms_Diagram_DiagramProperties_DefaultContextMenuEnabled) property.
 
@@ -80,7 +78,7 @@ diagram1.DefaultContextMenuEnabled = False
 {% endhighlight %}
 {% endtabs %}
 
-Sample Link
+### Sample Link
 
 To view a sample:
 
@@ -90,17 +88,17 @@ To view a sample:
 
 ## Conditionally show or hide context menu items at run time
 
-You can conditionally show or hide context menu items at run time. In this, you can make a custom context menu by clearing the default context menu items.The following code example illustrates how to create the context menu item based on diagram elements selection.
+You can conditionally show or hide context menu items at run time. In this, you can make a custom context menu by clearing the default context menu items. The following code example illustrates how to create the context menu item based on diagram elements selection.
 
 The following code example illustrates how to define those.
 
 {% tabs %}
 {% highlight c# %}
 
-//Used to clear the default contextmenu items
+//Used to clear the default context menu items
 diagram1.ContextMenuStrip.Items.Clear();
 
-//To initalize custom menus for diagram context menu items
+//To initialize custom menus for diagram context menu items
 System.Windows.Forms.ToolStripMenuItem fillToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 System.Windows.Forms.ToolStripMenuItem blueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 System.Windows.Forms.ToolStripMenuItem strokeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -124,11 +122,12 @@ strokeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStri
 strokeToolStripMenuItem.Name = "strokeToolStripMenuItem";
 strokeToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
 strokeToolStripMenuItem.Text = "Stroke";
-this.diagram1.ContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {fillToolStripMenuItem,        strokeToolStripMenuItem});
+this.diagram1.ContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {fillToolStripMenuItem, strokeToolStripMenuItem});
 
 //To register NodeMouseEnter event to diagram controller
 diagram1.EventSink.NodeMouseEnter += EventSink_NodeMouseEnter;
 
+// NodeMouseEnter handler - show/hide context menu item based on selected objects (define at class scope)
 private void EventSink_NodeMouseEnter(NodeMouseEventArgs evtArgs)
 {
     //To show/hide context menu item based on selected objects in diagram
@@ -137,13 +136,70 @@ private void EventSink_NodeMouseEnter(NodeMouseEventArgs evtArgs)
         diagram1.ContextMenuStrip.Items[0].Visible = true;
         diagram1.ContextMenuStrip.Items[1].Visible = false;
     }
-    if (evtArgs.Node is ConnectorBase)
+    else if (evtArgs.Node is ConnectorBase)
     {
         diagram1.ContextMenuStrip.Items[0].Visible = false;
         diagram1.ContextMenuStrip.Items[1].Visible = true;
-
     }
 }
-        
+
+{% endhighlight %}
+{% highlight vb %}
+
+'Used to clear the default context menu items
+diagram1.ContextMenuStrip.Items.Clear()
+
+'To initialize custom menus for diagram context menu items
+Dim fillToolStripMenuItem As New System.Windows.Forms.ToolStripMenuItem()
+Dim blueToolStripMenuItem As New System.Windows.Forms.ToolStripMenuItem()
+Dim strokeToolStripMenuItem As New System.Windows.Forms.ToolStripMenuItem()
+Dim blueToolStripMenuItem1 As New System.Windows.Forms.ToolStripMenuItem()
+
+fillToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {blueToolStripMenuItem})
+
+'adding properties to the items
+fillToolStripMenuItem.Name = "fillToolStripMenuItem"
+fillToolStripMenuItem.Size = New System.Drawing.Size(210, 24)
+fillToolStripMenuItem.Text = "Fill"
+blueToolStripMenuItem.Name = "blueToolStripMenuItem"
+blueToolStripMenuItem.Size = New System.Drawing.Size(121, 26)
+blueToolStripMenuItem.Text = "Blue"
+AddHandler blueToolStripMenuItem.Click, AddressOf blueToolStripMenuItem_Click
+blueToolStripMenuItem1.Name = "blueToolStripMenuItem1"
+blueToolStripMenuItem1.Size = New System.Drawing.Size(121, 26)
+blueToolStripMenuItem1.Text = "Blue"
+AddHandler blueToolStripMenuItem1.Click, AddressOf blueToolStripMenuItem1_Click
+strokeToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {blueToolStripMenuItem1})
+strokeToolStripMenuItem.Name = "strokeToolStripMenuItem"
+strokeToolStripMenuItem.Size = New System.Drawing.Size(210, 24)
+strokeToolStripMenuItem.Text = "Stroke"
+Me.diagram1.ContextMenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {fillToolStripMenuItem, strokeToolStripMenuItem})
+
+'To register NodeMouseEnter event to diagram controller
+AddHandler diagram1.EventSink.NodeMouseEnter, AddressOf EventSink_NodeMouseEnter
+
+' Event handler for the Blue fill menu item (define at class scope)
+Private Sub blueToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
+    ' Apply the blue fill to the selected node here
+End Sub
+
+' Event handler for the Blue stroke menu item (define at class scope)
+Private Sub blueToolStripMenuItem1_Click(ByVal sender As Object, ByVal e As EventArgs)
+    ' Apply the blue stroke to the selected node here
+End Sub
+
+' NodeMouseEnter handler - show/hide context menu item based on selected objects (define at class scope)
+Private Sub EventSink_NodeMouseEnter(ByVal evtArgs As NodeMouseEventArgs)
+    'To show/hide context menu item based on selected objects in diagram
+    If TypeOf evtArgs.Node Is Node Then
+        diagram1.ContextMenuStrip.Items(0).Visible = True
+        diagram1.ContextMenuStrip.Items(1).Visible = False
+    ElseIf TypeOf evtArgs.Node Is ConnectorBase Then
+        diagram1.ContextMenuStrip.Items(0).Visible = False
+        diagram1.ContextMenuStrip.Items(1).Visible = True
+    End If
+End Sub
+
 {% endhighlight %}
 {% endtabs %}
+

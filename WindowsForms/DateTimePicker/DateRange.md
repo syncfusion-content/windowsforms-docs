@@ -29,7 +29,7 @@ The [MinDateTime](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForm
 
 The [MaxDateTime](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_MaxDateTime) helps you to restrict the DateTime value that is set greater than the specific DateTime value. If the `Value` of SfDateTimeEdit is greater than `MaxDateTime`, then the `Value` property will be reset to MaxDateTime. The `MaxDateTime` should be greater than `MinDateTime` of the SfDateTimeEdit. When the MaxDateTime is set, if the `MinDateTime` property is greater than the new `MaxDateTime`, then the MinDateTime will be reset to the MaxDateTime.
 
-Sometimes, the value should be restricted in between some particular date range. For example, consider a project for the hotel reservation system. The “In DateTime” has to be lesser than the “Out DateTime” and vice versa. So “In DateTime” has to be set as minimum DateTime and “Out DateTime” has to be set as maximum DateTime in the `SfDateTimeEdit` control.
+Sometimes, the value should be restricted in between some particular date range. For example, consider a project for the hotel reservation system. The “In DateTime” has to be lesser than the “Out DateTime” and vice versa. So “In DateTime” has to be set as minimum DateTime and “Out DateTime” has to be set as maximum DateTime in the `Windows Forms DateTimePicker` control.
 
 {% tabs %}
 
@@ -69,7 +69,7 @@ dateTimeEdit.MaxDateTime = New DateTime(2018, 2, 22)
 
 ## Detect the value change
 
-The [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_Value) property is used to set the current selected DateTime of the `SfDateTimeEdit`. The value change can be detected by handling the [ValueChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html) event.
+The [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_Value) property is used to set the current selected DateTime of the `Windows Forms DateTimePicker`. The value change can be detected by handling the [ValueChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html) event.
 
 {% tabs %}
 
