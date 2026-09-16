@@ -2,7 +2,7 @@
 layout: post
 title: Globalization in Windows Forms Calendar | Syncfusion
 description: Learn about globalization and localization support in Windows Forms Calendar control for multiple cultures.
-platform: WindowsForms
+platform: windowsforms
 control: SfCalendar
 documentation: ug
 ---

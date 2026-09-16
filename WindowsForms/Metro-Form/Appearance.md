@@ -2,7 +2,7 @@
 layout: post
 title: Appearance in Windows Forms Metro Form | Syncfusion®
 description: Appearance customization supports border styling, caption bar settings, icon alignment, colors, and rounded corners.
-platform: WindowsForms
+platform: windowsforms
 control: MetroForm
 documentation: ug
 ---

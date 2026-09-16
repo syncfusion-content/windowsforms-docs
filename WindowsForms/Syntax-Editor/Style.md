@@ -2,7 +2,7 @@
 layout: post
 title: Style in Windows Forms Syntax Editor | Syncfusion®
 description: Style support in Windows Forms Syntax Editor enables applying built-in themes and visual styles to customize the editor's appearance and user experience.
-platform: WindowsForms
+platform: windowsforms
 control: Syntax Editor
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: UI Automation in Windows Forms Scroll Frame | Syncfusion®
 description: UI automation support includes Coded UI testing, accessibility integration, automated interaction, and UFT/QTP compatibility.
-platform: WindowsForms
+platform: windowsforms
 control: SfScrollFrame
 documentation: ug
 ---

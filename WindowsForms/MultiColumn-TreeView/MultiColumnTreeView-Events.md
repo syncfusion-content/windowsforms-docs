@@ -2,7 +2,7 @@
 layout: post
 title: Events in Windows Forms MultiColumn TreeView | Syncfusion®
 description: Events provide notifications for node painting, selection, editing, expansion, scrolling, column interactions, and checkbox actions.
-platform: WindowsForms
+platform: windowsforms
 control: MultiColumnTreeView
 documentation: ug
 ---

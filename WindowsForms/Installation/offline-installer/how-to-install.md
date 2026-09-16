@@ -2,7 +2,7 @@
 layout: post
 title: How to install Windows Forms offline installer | Syncfusion®
 description: Learn to install Syncfusion® Windows Forms offline installer after downloading from Syncfusion® website easily.
-platform: WindowsForms
+platform: windowsforms
 control: Installation and Deployment
 documentation: ug
 

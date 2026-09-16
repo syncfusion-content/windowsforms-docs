@@ -2,7 +2,7 @@
 layout: post
 title: Slider Customization in Windows Forms Radial Slider | Syncfusion®
 description: Slider customization supports background, circle, needle, and text styling, along with themes and visual customization options.
-platform: WindowsForms
+platform: windowsforms
 control: RadialSlider 
 documentation: ug
 ---

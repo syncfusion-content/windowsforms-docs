@@ -2,7 +2,7 @@
 layout: post
 title: TextBox and DropDown Settings in ComboBoxAdv(Classic) | Syncfusion®
 description: TextBox and DropDown settings in Windows Forms ComboBoxAdv(Classic) to control appearance, behavior, text editing, and user interactions.
-platform: WindowsForms
+platform: windowsforms
 control: ComboBoxAdv
 documentation: ug
 ---

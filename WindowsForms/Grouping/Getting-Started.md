@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Windows Forms Grouping | Syncfusion®
 description: Learn how to get started with the Syncfusion® Windows Forms Grouping control. Explore setup, features, examples, and customization options.
-platform: WindowsForms
+platform: windowsforms
 control: Grouping
 documentation: ug
 ---

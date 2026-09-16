@@ -2,7 +2,7 @@
 layout: post
 title: Customization in Windows Forms Metro Form | Syncfusion®
 description: Customization in MetroForm enables caption labels, images, styling, button customization, and caption bar interactions.
-platform: WindowsForms
+platform: windowsforms
 control: MetroForm
 documentation: ug
 ---

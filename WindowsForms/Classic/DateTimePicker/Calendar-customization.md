@@ -2,7 +2,7 @@
 layout: post
 title: Calendar Customization in Windows Forms DateTimePickerAdv | Syncfusion
 description: Learn about calendar customization in Syncfusion Windows Forms DateTimePickerAdv control and more details.
-platform: WindowsForms
+platform: windowsforms
 control: DateTimePickerAdv
 documentation: ug
 ---

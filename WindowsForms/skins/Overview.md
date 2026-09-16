@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion® Windows Forms SkinManager Control | Syncfusion®
 description: Learn about introduction of Syncfusion® Essential Studio Windows Forms SkinManager and more details.
-platform: WindowsForms
+platform: windowsforms
 control: SkinManager 
 documentation: ug
 ---

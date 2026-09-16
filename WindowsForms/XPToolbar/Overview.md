@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion® Windows Forms XPToolBar Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms XPToolBar control and more details.
-platform: WindowsForms
+platform: windowsforms
 control: XPToolBar
 documentation: ug
 ---

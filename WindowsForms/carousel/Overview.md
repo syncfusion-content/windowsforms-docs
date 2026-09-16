@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion® Windows Forms Carousel Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms Carousel control and more details.
-platform: WindowsForms
+platform: windowsforms
 control: Carousel
 documentation: ug
 ---

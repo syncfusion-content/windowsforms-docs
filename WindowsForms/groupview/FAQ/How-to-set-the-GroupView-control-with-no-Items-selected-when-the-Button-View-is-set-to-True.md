@@ -2,7 +2,7 @@
 layout: post
 title: GroupView control with no items selected | WindowsForms | Syncfusion
 description: Frequently Asked Questions
-platform: WindowsForms
+platform: windowsforms
 control: GroupView
 documentation: ug
 ---

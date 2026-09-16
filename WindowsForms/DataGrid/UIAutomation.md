@@ -2,7 +2,7 @@
 layout: post
 title: UI Automation in Windows Forms Data Grid | Syncfusion®
 description: UI Automation in Data Grid provides accessibility support, automation peers, and UI automation capabilities for testing and assistive technologies.
-platform: WindowsForms
+platform: windowsforms
 control: Data Grid 
 documentation: ug
 ---

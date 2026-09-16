@@ -2,7 +2,7 @@
 layout: post
 title: Styling and Customization in Windows Forms Radial Menu | Syncfusion®
 description: Styling and customization options include drill regions, outer rims, arc spacing, display styles, and image sizing.
-platform: WindowsForms
+platform: windowsforms
 control: RadialMenu 
 documentation: ug
 ---

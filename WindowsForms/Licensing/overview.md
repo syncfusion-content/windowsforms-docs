@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion® Windows Forms Licensing | Syncfusion®
 description: Learn about introduction of Syncfusion® Essential Studio Windows Forms product licensing and more details.
-platform: WindowsForms
+platform: windowsforms
 control: Essential Studio
 documentation: ug
 ---

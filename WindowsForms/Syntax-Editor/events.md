@@ -2,7 +2,7 @@
 layout: post
 title: Events in Windows Forms Syntax Editor | Syncfusion®
 description: Events in Windows Forms Syntax Editor provide notifications for editing, IntelliSense, code folding, and printing to support custom editor workflows.
-platform: WindowsForms
+platform: windowsforms
 control: Syntax Editor
 documentation: ug
 ---

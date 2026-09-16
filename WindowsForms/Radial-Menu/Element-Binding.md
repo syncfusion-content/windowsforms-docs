@@ -2,7 +2,7 @@
 layout: post
 title: Element Binding in Windows Forms Radial Menu | Syncfusion®
 description: Element binding supports menu item population, image management, state persistence, ordering, and specialized radial elements.
-platform: WindowsForms
+platform: windowsforms
 control: RadialMenu
 documentation: ug
 ---

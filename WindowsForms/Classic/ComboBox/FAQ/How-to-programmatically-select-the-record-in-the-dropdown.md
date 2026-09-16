@@ -2,7 +2,7 @@
 layout: post
 title: How to programmatically select the record in the Dropdown | Syncfusion
 description: Learn about How to Programmatically Select the Record in the Dropdown that Matches the Text Typed in Comboboxadv support in Windows Forms ComboBoxAdv and more.
-platform: WindowsForms
+platform: windowsforms
 control: ComboBoxAdv
 documentation: ug
 ---

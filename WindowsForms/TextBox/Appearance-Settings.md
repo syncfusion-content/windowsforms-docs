@@ -2,7 +2,7 @@
 layout: post
 title: Appearance Settings in Windows Forms TextBox | Syncfusion®
 description: Appearance settings enable customizing background colors, foreground colors, and visual styles for TextBoxExt.
-platform: WindowsForms
+platform: windowsforms
 control: TextBoxExt
 documentation: ug
 ---

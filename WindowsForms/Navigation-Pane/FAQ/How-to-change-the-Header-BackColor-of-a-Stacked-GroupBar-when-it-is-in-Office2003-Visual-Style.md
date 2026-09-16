@@ -2,7 +2,7 @@
 layout: post
 title: How to Change Header BackColor in Windows Forms GroupBar | Syncfusion®
 description: Change the header BackColor in Syncfusion® Windows Forms GroupBar control when using Office 2003 visual style, stacked mode, and more.
-platform: WindowsForms
+platform: windowsforms
 control: GroupBar
 documentation: ug
 ---

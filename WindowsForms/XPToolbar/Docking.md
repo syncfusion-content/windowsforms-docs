@@ -2,7 +2,7 @@
 layout: post
 title: Docking in Windows Forms XPToolBar | Syncfusion®
 description: Docking support enables positioning XPToolBar on the top, bottom, left, right, fill, or custom regions of a form.
-platform: WindowsForms
+platform: windowsforms
 control: XPToolBar
 documentation: ug
 ---

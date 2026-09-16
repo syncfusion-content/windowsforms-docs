@@ -2,7 +2,7 @@
 layout: post
 title: Layout group location | WindowsForms | Syncfusion
 description: How to set Layout Group location in TileLayout
-platform: WindowsForms
+platform: windowsforms
 control: TileLayout 
 documentation: ug
 ---

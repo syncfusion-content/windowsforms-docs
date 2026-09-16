@@ -2,7 +2,7 @@
 layout: post
 title: MDI Child Forms in Windows Forms Menu | Syncfusion
 description: MDI Child Forms support menu merging, toolbar integration, child form management, and customizable merge behavior.
-platform: WindowsForms
+platform: windowsforms
 control: ChildFrameBarManager 
 documentation: ug
 ---

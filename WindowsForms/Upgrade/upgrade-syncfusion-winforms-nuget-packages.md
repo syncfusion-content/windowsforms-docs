@@ -2,7 +2,7 @@
 layout: post
 title: Syncfusion® WinForms NuGet package upgrades | Syncfusion®
 description: Learn to upgrade Syncfusion® WinForms NuGet packages to the latest version using NuGet manager and package manager UI.
-platform: WindowsForms
+platform: windowsforms
 control: Essential Studio
 documentation: ug
 ---

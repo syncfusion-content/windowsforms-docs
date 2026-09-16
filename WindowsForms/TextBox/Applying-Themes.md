@@ -2,7 +2,7 @@
 layout: post
 title: Applying Themes in Windows Forms TextBox | Syncfusion®
 description: Applying themes enables XP theme support and modern visual themes for customizing TextBoxExt appearance.
-platform: WindowsForms
+platform: windowsforms
 control: EditorsPackage
 documentation: ug
 ---
