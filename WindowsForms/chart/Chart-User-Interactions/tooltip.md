@@ -207,6 +207,8 @@ chartControl.Tooltip.Padding =
 
 The [FancyToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_FancyToolTip) property provides options to customize the fancy tooltip displayed when the mouse pointer hovers over a data point. By default, the property is initialized with a [ChartFancyToolTipInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo.html) instance.
 
+N> For a better fancy tooltip experience, set the [ShowToolTips](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ShowToolTips) property to `false` to hide the standard tooltip.
+
 The following properties are available in the `ChartFancyToolTipInfo` class to customize the appearance of the fancy tooltip:
 
 - [Alignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo.html#Syncfusion_Windows_Forms_Chart_ChartFancyToolTipInfo_Alignment): Indicates the alignment of the marker relative to the fancy tooltip.
