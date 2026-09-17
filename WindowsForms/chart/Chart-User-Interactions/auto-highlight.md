@@ -11,7 +11,7 @@ documentation: ug
 
 The [AutoHighlight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_AutoHighlight) property specifies whether a data point is automatically highlighted when the pointer hovers over it. The default value is `false`.
 
-N> Automatic highlighting requires chart-region detection. Ensure that the [CalcRegions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_CalcRegions) property is set to `true`. [CalcRegions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_CalcRegions) specifies whether the chart calculates interactive regions used for features such as ToolTips, AutoHighlight, and region hit-testing. Disable it when these features are not needed to improve performance. It is default value is `true`.
+N> Automatic highlighting requires chart-region detection. Ensure that the [CalcRegions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_CalcRegions) property is set to `true`. [CalcRegions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_CalcRegions) specifies whether the chart calculates interactive regions used for features such as ToolTips, AutoHighlight, and region hit-testing. It is default value is `true`.
 
 The following code enables automatic highlighting.
 

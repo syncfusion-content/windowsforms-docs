@@ -145,7 +145,7 @@ chartControl.Series[0].Style.ToolTip = "Series Tooltip"
 
 The [Tooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Tooltip) property provides options to customize the appearance of chart tooltips. By default, this property is initialized with a new [ChartTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTooltip.html) instance.
 
-The `ChartTooltip` class provides the following properties to customize the tooltip appearance:
+The [ChartTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTooltip.html) class provides the following properties to customize the tooltip appearance:
 
 - [BackgroundColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTooltip.html#Syncfusion_Windows_Forms_Chart_ChartTooltip_BackgroundColor): Specifies the background color of the tooltip using a `BrushInfo` object.
 - [BackgroundImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTooltip.html#Syncfusion_Windows_Forms_Chart_ChartTooltip_BackgroundImage): Specifies the background image of the tooltip.
@@ -154,7 +154,7 @@ The `ChartTooltip` class provides the following properties to customize the tool
 - [ForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTooltip.html#Syncfusion_Windows_Forms_Chart_ChartTooltip_ForeColor): Specifies the color of the tooltip text.
 - [Padding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTooltip.html#Syncfusion_Windows_Forms_Chart_ChartTooltip_Padding): Specifies the space between the tooltip content and its border.
 
-N> Set the `ShowToolTips` property to `true` to display chart tooltips.
+N> Set the [ShowToolTips](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ShowToolTips) property to `true` to display chart tooltips.
 
 The following code example demonstrates how to customize the appearance of chart tooltips.
 
@@ -209,7 +209,7 @@ The [FancyToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Window
 
 N> For a better fancy tooltip experience, set the [ShowToolTips](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ShowToolTips) property to `false` to hide the standard tooltip.
 
-The following properties are available in the `ChartFancyToolTipInfo` class to customize the appearance of the fancy tooltip:
+The following properties are available in the [ChartFancyToolTipInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo.html) class to customize the appearance of the fancy tooltip:
 
 - [Alignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo.html#Syncfusion_Windows_Forms_Chart_ChartFancyToolTipInfo_Alignment): Indicates the alignment of the marker relative to the fancy tooltip.
 - [Angle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo.html#Syncfusion_Windows_Forms_Chart_ChartFancyToolTipInfo_Angle): Specifies the angle of the arrow in the fancy tooltip.

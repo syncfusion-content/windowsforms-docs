@@ -21,25 +21,6 @@ The toolbar provides built-in commands for interacting with the Windows Forms Ch
 - Toggle 3D style of the Chart.
 - Toggle Legend Appearance.
 
-## Show toolbar
-
-The [ShowToolbar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ShowToolbar) property controls whether the toolbar is displayed in the chart. The default value is `false`.
-
-The following code example displays the chart toolbar.
-
-{% tabs %}
-{% highlight c# %}
-chartControl.ShowToolbar = true;
-{% endhighlight %}
-{% highlight vb %}
-chartControl.ShowToolbar = True
-{% endhighlight %}
-{% endtabs %}
-
-![Toolbar in Windows Forms Chart](../Chart-User-Interactions_Images/toolbar.png)
-
-## Built-in toolbar items
-
 The toolbar commands and their functionalities are described below.
 
 <table>
@@ -108,8 +89,8 @@ This toolbar command is used to see a print preview of the Chart.</td></tr>
 This command is used to toggle the 3D mode of the chart.</td></tr>
 <tr>
 <td>
-Toggle Legend Appearance</td><td>
-{{'[ChartToolBarShowLegendItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartToolBarShowLegendItem.html)'| markdownify }}
+{{'[Toggle Legend Appearance](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartCommands.html#Syncfusion_Windows_Forms_Chart_ChartCommands_ShowLegend)</td><td>
+'[ChartToolBarShowLegendItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartToolBarShowLegendItem.html)'| markdownify }}
 </td><td>
 This command is used to toggle the legend appearance.</td></tr>
 <tr>
@@ -120,11 +101,28 @@ Splitter</td><td>
 This item provides a logical split between the collection of commands.</td></tr>
 </table>
 
+## Show toolbar
+
+The [ShowToolbar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ShowToolbar) property controls whether the toolbar is displayed in the chart. The default value is `false`.
+
+The following code example displays the chart toolbar.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.ShowToolbar = true;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.ShowToolbar = True
+{% endhighlight %}
+{% endtabs %}
+
+![Toolbar in Windows Forms Chart](../Chart-User-Interactions_Images/toolbar.png)
+
 ## Toolbar position and layout
 
 The following properties control the position and layout of the toolbar:
 
-- [Position](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartToolBarInfo.html#Syncfusion_Windows_Forms_Chart_ChartToolBarInfo_Position): Specifies the toolbar docking position. The default value is [Top]. The supported [ChartDock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartDock.html) values are:
+- [Position](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartToolBarInfo.html#Syncfusion_Windows_Forms_Chart_ChartToolBarInfo_Position): Specifies the toolbar docking position. The default value is [Top](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartDock.html#Syncfusion_Windows_Forms_Chart_ChartDock_Top). The supported [ChartDock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartDock.html) values are:
     - [Top](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartDock.html#Syncfusion_Windows_Forms_Chart_ChartDock_Top): Docks the toolbar to the top of the chart.
     - [Bottom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartDock.html#Syncfusion_Windows_Forms_Chart_ChartDock_Bottom): Docks the toolbar to the bottom of the chart.
     - [Left](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartDock.html#Syncfusion_Windows_Forms_Chart_ChartDock_Left): Docks the toolbar to the left side of the chart.
@@ -137,7 +135,7 @@ The following properties control the position and layout of the toolbar:
 - [Orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartToolBarInfo.html#Syncfusion_Windows_Forms_Chart_ChartToolBarInfo_Orientation): Specifies the direction in which the toolbar items are arranged. The default value is [Horizontal](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartOrientation.html#Syncfusion_Windows_Forms_Chart_ChartOrientation_Horizontal). The supported [ChartOrientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartOrientation.html) values are:
     - [Horizontal](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartOrientation.html#Syncfusion_Windows_Forms_Chart_ChartOrientation_Horizontal): Arranges the toolbar items horizontally.
     - [Vertical](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartOrientation.html#Syncfusion_Windows_Forms_Chart_ChartOrientation_Vertical): Arranges the toolbar items vertically.
-- [Location](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartToolBarInfo.html#Syncfusion_Windows_Forms_Chart_ChartToolBarInfo_Location): Specifies the location of the toolbar.
+- [Location](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartToolBarInfo.html#Syncfusion_Windows_Forms_Chart_ChartToolBarInfo_Location): Specifies the location of the toolbar. The default value is `Point.Empty`.
 - [AutoSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartToolBarInfo.html#Syncfusion_Windows_Forms_Chart_ChartToolBarInfo_AutoSize): Controls whether the toolbar is resized automatically. he default value is `true`.
 - [Size](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartToolBarInfo.html#Syncfusion_Windows_Forms_Chart_ChartToolBarInfo_Size): Specifies the size of the toolbar. This property is applied when [AutoSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartToolBarInfo.html#Syncfusion_Windows_Forms_Chart_ChartToolBarInfo_AutoSize) is set to `false`.
 
@@ -200,7 +198,7 @@ chartControl.ToolBar.Header = 15
 
 The following properties customize the appearance of the toolbar:
 
-- [BackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartToolBarInfo.html#Syncfusion_Windows_Forms_Chart_ChartToolBarInfo_BackColor): Specifies the background color of the toolbar.
+- [BackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartToolBarInfo.html#Syncfusion_Windows_Forms_Chart_ChartToolBarInfo_BackColor): Specifies the background color of the toolbar. The default value is `Color.Empty`.
 - [Border](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartToolBarInfo.html#Syncfusion_Windows_Forms_Chart_ChartToolBarInfo_Border): Gets the line settings used to draw the toolbar border. By default, this property is initialized with a new [LineInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.LineInfo.html) instance.
 - [ShowBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartToolBarInfo.html#Syncfusion_Windows_Forms_Chart_ChartToolBarInfo_ShowBorder): Controls whether the toolbar border is displayed. The default value is `true`.
 
@@ -488,6 +486,8 @@ The [IncludeInExportedChart](https://help.syncfusion.com/cr/windowsforms/Syncfus
 
 The [ShowToolbarInImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ShowToolbarInImage) property controls whether the toolbar is displayed when the chart is saved as an image.
 
+n> You can display or hide a toolbar while printing a Chart. See Printing And Print Preview topic for more details.
+
 The following code example includes the toolbar in an exported chart image.
 
 {% tabs %}
@@ -501,6 +501,8 @@ chartControl.ShowToolbarInImage = False
 {% endhighlight %}
 {% endtabs %}
 
-## See Also
+## See also
 
 - [How to work with WinForms Chart ToolBars](https://support.syncfusion.com/kb/article/1168/how-to-work-with-winforms-chart-toolbars)
+- [How to copy the chart to clipboard](https://support.syncfusion.com/kb/article/8319/how-to-copy-the-chart-to-clipboard)
+- [How to customize toolbar items in WinForms Chart control](https://support.syncfusion.com/kb/article/1171/how-to-customize-toolbar-items-in-winforms-chart-control)

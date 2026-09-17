@@ -92,7 +92,7 @@ chartControl.Trackball.Line.Width = 2
 
 The [Symbol](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTrackball.html#Syncfusion_Windows_Forms_Chart_ChartTrackball_Symbol) property provides options to customize the marker used to highlight the closest data point. By default, the property is initialized with a new instance of the [ChartSymbolInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSymbolInfo.html) class.
 
-The `ChartSymbolInfo` class contains the following properties:
+The [ChartSymbolInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSymbolInfo.html) class contains the following properties:
 
 - [Border](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSymbolInfo.html#Syncfusion_Windows_Forms_Chart_ChartSymbolInfo_Border): Provides options to customize the border of the symbol.
 - [Color](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSymbolInfo.html#Syncfusion_Windows_Forms_Chart_ChartSymbolInfo_Color): Specifies the color of the symbol.
@@ -143,7 +143,7 @@ chartControl.Trackball.Symbol.Border.Width = 2
 
 The [Tooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTrackball.html#Syncfusion_Windows_Forms_Chart_ChartTrackball_Tooltip) property provides options to customize the appearance and content of the trackball tooltip. By default, the property is initialized with a new instance of the [TrackballTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.TrackballTooltip.html) class.
 
-The `TrackballTooltip` class contains the following properties:
+The [TrackballTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.TrackballTooltip.html) class contains the following properties:
 
 - [Border](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.TrackballTooltip.html#Syncfusion_Windows_Forms_Chart_TrackballTooltip_Border): Provides options to customize the tooltip border, including its color, width, and style.
 - [CornerRadius](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.TrackballTooltip.html#Syncfusion_Windows_Forms_Chart_TrackballTooltip_CornerRadius): Specifies the corner radius of the trackball tooltip.

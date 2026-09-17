@@ -56,7 +56,7 @@ The [InteractiveCursorOrientation](https://help.syncfusion.com/cr/windowsforms/S
 - [Horizontal](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.InteractiveCursorOrientation.html#Syncfusion_Windows_Forms_Chart_InteractiveCursorOrientation_Horizontal): Displays only the horizontal cursor line.
 - [Vertical](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.InteractiveCursorOrientation.html#Syncfusion_Windows_Forms_Chart_InteractiveCursorOrientation_Vertical): Displays only the vertical cursor line.
 
-The following code displays both cursor lines.
+The following code displays only the horizontal cursor line.
 
 {% tabs %}
 {% highlight c# %}
@@ -86,13 +86,13 @@ The following code applies different colors to the horizontal and vertical curso
 {% tabs %}
 {% highlight c# %}
 
-interactiveCursor.HorizontalCursorColor = Color.DarkViolet;
+interactiveCursor.HorizontalCursorColor = Color.Green;
 interactiveCursor.VerticalCursorColor = Color.Blue;
 
 {% endhighlight %}
 {% highlight vb %}
 
-interactiveCursor.HorizontalCursorColor = Color.DodgerBlue
+interactiveCursor.HorizontalCursorColor = Color.Green
 interactiveCursor.VerticalCursorColor = Color.Blue
 
 {% endhighlight %}
@@ -102,7 +102,7 @@ interactiveCursor.VerticalCursorColor = Color.Blue
 
 ## Move cursor within the chart area
 
-The [MoveToChartArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html) property specifies whether the cursor can move within the chart area.
+The [MoveToChartArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor_MoveToChartArea) property specifies whether the cursor can move within the chart area. The default value is `false`
 
 The following code allows the interactive cursor to move within the chart area.
 
@@ -119,11 +119,15 @@ interactiveCursor.MoveToChartArea = True
 {% endhighlight %}
 {% endtabs %}
 
+![Interactive Cursor move to Chart Area in Windows Forms Chart](../Chart-User-Interactions_Images/interactive-cursor-move-to-chart-area.png)
+
 ## Snap cursor to data points
 
-The [SnapToPoints](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html) property specifies whether the cursor moves to the closest series data point after the mouse is released.
+The [SnapToPoints](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor_SnapToPoints) property specifies whether the cursor moves to the closest series data point after the mouse is released. The default value is `true`
 
-The following code enables snapping to the closest data point.
+N> To snap the cursor to the closest data point while moving within the chart area, set [MoveToChartArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html) to `true`, specify an [XInterval](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor_XInterval) value greater than zero, and enable [SnapToPoints](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor_SnapToPoints).
+
+The following code disables snapping to the closest data point.
 
 {% tabs %}
 {% highlight c# %}
@@ -138,57 +142,61 @@ interactiveCursor.SnapToPoints = False
 {% endhighlight %}
 {% endtabs %}
 
+![Interactive Cursor snap to Points in Windows Forms Chart](../Chart-User-Interactions_Images/interactive-cursor-snap-to-points.png)
+
 ## Cursor intervals
 
-The `XInterval` and `YInterval` properties specify the movement intervals of the interactive cursor.
+The [XInterval](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor_XInterval) and [YInterval](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor_YInterval) properties specify the movement intervals of the interactive cursor.
 
-- `XInterval`: Specifies the movement interval along the X-axis.
-- `YInterval`: Specifies the movement interval along the Y-axis.
+- [XInterval](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor_XInterval): Specifies the movement interval along the X-axis. The default value is `0`.
+- [YInterval](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor_YInterval): Specifies the movement interval along the Y-axis. The default value is `0`.
+
+N> When [MoveToChartArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor_MoveToChartArea) is enabled, set [XInterval](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor_XInterval) to a value greater than zero to control movement along the X-axis. Set [YInterval](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor_YInterval) only when movement along the Y-axis must also be controlled.
 
 The following code configures the cursor movement intervals.
 
 {% tabs %}
 {% highlight c# %}
 
-interactiveCursor.XInterval = 1;
-interactiveCursor.YInterval = 10;
+interactiveCursor.XInterval = 2;
+interactiveCursor.YInterval = 50;
 
 {% endhighlight %}
 {% highlight vb %}
 
-interactiveCursor.XInterval = 1
-interactiveCursor.YInterval = 10
+interactiveCursor.XInterval = 2
+interactiveCursor.YInterval = 50
 
 {% endhighlight %}
 {% endtabs %}
+
+![Interactive Cursor snap to Points in Windows Forms Chart](../Chart-User-Interactions_Images/interactive-cursor-intervals.png)
 
 ## Display point symbol
 
-The [ShowPointSymbol](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html) property specifies whether a symbol is displayed at the data point tracked by the cursor.
+The [ShowPointSymbol](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html) property specifies whether a symbol is displayed at the data point tracked by the cursor. The default value is `true`.
 
-The following code displays the point symbol.
+The following code hides the point symbol.
 
 {% tabs %}
 {% highlight c# %}
-
-interactiveCursor.ShowPointSymbol = true;
-
+interactiveCursor.ShowPointSymbol = false;
 {% endhighlight %}
 {% highlight vb %}
-
-interactiveCursor.ShowPointSymbol = True
-
+interactiveCursor.ShowPointSymbol = False
 {% endhighlight %}
 {% endtabs %}
+
+![Interactive Cursor snap to Points in Windows Forms Chart](../Chart-User-Interactions_Images/interactive-cursor-point-symbol.png)
 
 ## Cursor position and location
 
 The following properties provide information about the cursor position:
 
-- `XPosition`: Gets or sets the horizontal position of the cursor.
-- `YPosition`: Gets or sets the vertical position of the cursor.
-- `LineLocation`: Gets or sets the cursor-line location.
-- `Location`: Gets the current location of the interactive cursor.
+- [XPosition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor_XPosition): Gets or sets the horizontal position of the cursor. The default value is `0`.
+- [YPosition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor_YPosition): Gets or sets the vertical position of the cursor. The default value is `0`.
+- [LineLocation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor_LineLocation): Gets or sets the cursor-line location. The default value is `PointF.Empty`.
+- [Location](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor_Location): Gets the current location of the interactive cursor.
 
 The following code sets the horizontal and vertical cursor positions.
 
@@ -207,21 +215,43 @@ interactiveCursor.YPosition = 150
 {% endhighlight %}
 {% endtabs %}
 
+![Interactive Cursor Positions in Windows Forms Chart](../Chart-User-Interactions_Images/interactive-cursor-position.png)
+
+
+## Redraw cursor lines
+
+The [LineRedraw](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html) property specifies whether the cursor lines must be redrawn when the cursor location changes. The default value is `false`.
+
+The following code enables cursor-line redrawing.
+
+{% tabs %}
+{% highlight c# %}
+
+interactiveCursor.LineRedraw = true;
+
+{% endhighlight %}
+{% highlight vb %}
+
+interactiveCursor.LineRedraw = True
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Tracked series and point
 
 The following read-only properties provide information about the data tracked by the cursor:
 
-- `Series`: Gets the series associated with the interactive cursor.
-- `Point`: Gets the data point currently tracked by the cursor.
+- [Series](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor_Series): Gets the series associated with the interactive cursor.
+- [Point](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor_Point): Gets the data point currently tracked by the cursor.
 
 ## Move cursor programmatically
 
-The `HorizontalMove` method moves the vertical cursor line along the X-axis.
+The [HorizontalMove](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor_VerticalMove_System_Boolean_) method moves the vertical cursor line along the X-axis.
 
 - `HorizontalMove(true)`: Moves the cursor to the next data point on the right.
 - `HorizontalMove(false)`: Moves the cursor to the next data point on the left.
 
-The `VerticalMove` method moves the horizontal cursor line along the Y-axis.
+The [VerticalMove](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor_VerticalMove_System_Boolean_) method moves the horizontal cursor line along the Y-axis.
 
 - `VerticalMove(true)`: Moves the cursor to the next data point above.
 - `VerticalMove(false)`: Moves the cursor to the next data point below.
@@ -270,10 +300,12 @@ These methods return the index of the closest data point or `-1` when no nearby 
 
 ## Find the closest data point
 
-The `GetClosestXPoint` and `GetClosestYPoint` methods return the index of the data point closest to a specified axis value without requiring directional movement.
+The [GetClosestXPoint](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor_GetClosestXPoint_System_Double_) and [GetClosestYPoint](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor_GetClosestYPoint_System_Double_) methods return the index of the data point closest to a specified axis value without requiring directional movement.
 
-- `GetClosestXPoint`: Finds the data point closest to the specified X value.
-- `GetClosestYPoint`: Finds the data point closest to the specified Y value.
+- [GetClosestXPoint](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor_GetClosestXPoint_System_Double_): Finds the data point closest to the specified X value.
+- [GetClosestYPoint](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor_GetClosestYPoint_System_Double_): Finds the data point closest to the specified Y value.
+
+The following code retrieves the indexes of the data points closest to the specified X and Y values.
 
 {% tabs %}
 {% highlight c# %}
@@ -300,10 +332,12 @@ These methods return `-1` when no nearby data point is found.
 
 ## Check a location near the cursor
 
-The `IsXLocation` and `IsYLocation` methods determine whether a specified screen point is near the current cursor position.
+The [IsXLocation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor_IsXLocation_System_Drawing_Point_) and [IsYLocation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor_IsYLocation_System_Drawing_Point_) methods determine whether a specified point is near the current cursor lines.
 
-- `IsXLocation`: Returns `true` when the X-coordinate is within three pixels of the cursor.
-- `IsYLocation`: Returns `true` when the Y-coordinate is within three pixels of the cursor.
+- [IsXLocation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor_IsXLocation_System_Drawing_Point_): Returns `true` when the point is near the vertical cursor line.
+- [IsYLocation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor_IsYLocation_System_Drawing_Point_): Returns `true` when the point is near the horizontal cursor line.
+
+The following code checks whether the current pointer location is near the vertical or horizontal cursor line.
 
 {% tabs %}
 {% highlight c# %}
@@ -332,26 +366,52 @@ Dim nearHorizontalCursor As Boolean =
 {% endhighlight %}
 {% endtabs %}
 
-## Redraw cursor lines
+## Manage interactive cursors
 
-The [LineRedraw](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html) property specifies whether the cursor lines must be redrawn when the cursor location changes.
+The [InteractiveCursors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_InteractiveCursors) property provides access to the [ChartAreaCursorCollection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAreaCursorCollection.html). This collection can be used to add, access, insert, or remove interactive cursors.
+
+The following code adds, retrieves, and removes an interactive cursor.
 
 {% tabs %}
 {% highlight c# %}
 
-interactiveCursor.LineRedraw = true;
+chartControl.ChartArea.InteractiveCursors.Add(interactiveCursor);
+
+if (chartControl.ChartArea.InteractiveCursors.Count > 0)
+{
+    ChartInteractiveCursor firstCursor =
+        chartControl.ChartArea.InteractiveCursors[0];
+}
+
+chartControl.ChartArea.InteractiveCursors.Remove(
+    interactiveCursor);
 
 {% endhighlight %}
 {% highlight vb %}
 
-interactiveCursor.LineRedraw = True
+chartControl.ChartArea.InteractiveCursors.Add(
+    interactiveCursor)
+
+If chartControl.ChartArea.InteractiveCursors.Count > 0 Then
+
+    Dim firstCursor As ChartInteractiveCursor =
+        chartControl.ChartArea.InteractiveCursors(0)
+
+End If
+
+chartControl.ChartArea.InteractiveCursors.Remove(
+    interactiveCursor)
 
 {% endhighlight %}
 {% endtabs %}
 
+![Interactive Cursor Collections in Windows Forms Chart](../Chart-User-Interactions_Images/interactive-cursor-collections.png)
+
 ## Detect cursor changes
 
-The `Changed` event occurs when an interactive cursor property changes.
+The [Changed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor_Changed) event occurs when the interactive cursor state changes. Use the [Point](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor_Point) property in the event handler to retrieve the currently tracked data point.
+
+The following code retrieves the data point tracked by the cursor when its state changes.
 
 {% tabs %}
 {% highlight c# %}
@@ -390,121 +450,6 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## Manage interactive cursors
-
-The `ChartArea.Cursors` property provides access to the `ChartAreaCursorCollection`. This collection can be used to add, access, insert, or remove interactive cursors.
-
-The following code adds, retrieves, and removes an interactive cursor.
-
-{% tabs %}
-{% highlight c# %}
-
-chartControl.ChartArea.Cursors.Add(interactiveCursor);
-
-ChartInteractiveCursor firstCursor =
-    chartControl.ChartArea.Cursors[0];
-
-chartControl.ChartArea.Cursors.Remove(
-    interactiveCursor);
-
-{% endhighlight %}
-{% highlight vb %}
-
-chartControl.ChartArea.Cursors.Add(interactiveCursor)
-
-Dim firstCursor As ChartInteractiveCursor =
-    chartControl.ChartArea.Cursors(0)
-
-chartControl.ChartArea.Cursors.Remove(
-    interactiveCursor)
-
-{% endhighlight %}
-{% endtabs %}
-
-## Complete example
-
-The following code creates a Line series and configures an interactive cursor to track its data points.
-
-{% tabs %}
-{% highlight c# %}
-
-ChartSeries series = new ChartSeries(
-    "Sales",
-    ChartSeriesType.Line);
-
-series.Points.Add(1, 20);
-series.Points.Add(2, 45);
-series.Points.Add(3, 30);
-series.Points.Add(4, 70);
-series.Points.Add(5, 50);
-
-chartControl.Series.Add(series);
-
-ChartInteractiveCursor interactiveCursor =
-    new ChartInteractiveCursor(series);
-
-interactiveCursor.CursorOrientation =
-    InteractiveCursorOrientation.Both;
-
-interactiveCursor.HorizontalCursorColor =
-    Color.DodgerBlue;
-
-interactiveCursor.VerticalCursorColor =
-    Color.Crimson;
-
-interactiveCursor.MoveToChartArea = true;
-interactiveCursor.SnapToPoints = true;
-interactiveCursor.ShowPointSymbol = true;
-interactiveCursor.XInterval = 1;
-interactiveCursor.YInterval = 10;
-
-chartControl.ChartArea.Cursors.Add(
-    interactiveCursor);
-
-{% endhighlight %}
-{% highlight vb %}
-
-Dim series As New ChartSeries(
-    "Sales",
-    ChartSeriesType.Line)
-
-series.Points.Add(1, 20)
-series.Points.Add(2, 45)
-series.Points.Add(3, 30)
-series.Points.Add(4, 70)
-series.Points.Add(5, 50)
-
-chartControl.Series.Add(series)
-
-Dim interactiveCursor As New ChartInteractiveCursor(
-    series)
-
-interactiveCursor.CursorOrientation =
-    InteractiveCursorOrientation.Both
-
-interactiveCursor.HorizontalCursorColor =
-    Color.DodgerBlue
-
-interactiveCursor.VerticalCursorColor =
-    Color.Crimson
-
-interactiveCursor.MoveToChartArea = True
-interactiveCursor.SnapToPoints = True
-interactiveCursor.ShowPointSymbol = True
-interactiveCursor.XInterval = 1
-interactiveCursor.YInterval = 10
-
-chartControl.ChartArea.Cursors.Add(
-    interactiveCursor)
-
-{% endhighlight %}
-{% endtabs %}
-
 ## See also
 
 - [How to implement interactive cursor in WinForms Chart?](https://support.syncfusion.com/kb/article/1053/how-to-implement-interactive-cursor-in-winforms-chart)
-- [How to display the X and Y values while doing MouseMove on the chart?](https://support.syncfusion.com/kb/article/1077/how-to-display-the-x-and-y-values-while-doing-mousemove-on-the-chart)
-- [How to trigger the ChartRegionEvents in the WinForms Chart?](https://support.syncfusion.com/kb/article/1194/how-to-trigger-the-chartregionevents-in-the-winforms-chart)
-- [How to display WinForms Chart tooltips?](https://support.syncfusion.com/kb/article/1178/how-to-display-winforms-chart-tooltips)
-- [How to add and customize symbols in WinForms Chart?](https://support.syncfusion.com/kb/article/1123/how-to-add-and-customize-symbols-in-winforms-chart)
-- [How to set custom points in WinForms Chart?](https://support.syncfusion.com/kb/article/1186/how-to-set-custom-points-in-winforms-chart)

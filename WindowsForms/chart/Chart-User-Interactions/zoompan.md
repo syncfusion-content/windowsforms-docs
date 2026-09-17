@@ -34,7 +34,7 @@ chartControl.EnableYZooming = True
 
 The [Zooming](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Zooming) property provides access to the appearance settings of the interactive zoom-selection area. By default, the property is initialized with a new instance of the [ChartZooming](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartZooming.html) class.
 
-The `ChartZooming` class provides the [Border](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartZooming.html#Syncfusion_Windows_Forms_Chart_ChartZooming_Border), [Interior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartZooming.html#Syncfusion_Windows_Forms_Chart_ChartZooming_Interior), [Opacity](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartZooming.html#Syncfusion_Windows_Forms_Chart_ChartZooming_Opacity), and [ShowBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartZooming.html#Syncfusion_Windows_Forms_Chart_ChartZooming_ShowBorder) properties to customize the zoom-selection area.
+The [ChartZooming](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartZooming.html) class provides the [Border](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartZooming.html#Syncfusion_Windows_Forms_Chart_ChartZooming_Border), [Interior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartZooming.html#Syncfusion_Windows_Forms_Chart_ChartZooming_Interior), [Opacity](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartZooming.html#Syncfusion_Windows_Forms_Chart_ChartZooming_Opacity), and [ShowBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartZooming.html#Syncfusion_Windows_Forms_Chart_ChartZooming_ShowBorder) properties to customize the zoom-selection area.
 
 ### Zoom area border
 
@@ -124,7 +124,7 @@ chartControl.ZoomFactorY = 0.5
 
 The [ZoomPositionX](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ZoomPositionX) and [ZoomPositionY](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ZoomPositionY) properties specify which portion of the horizontal and vertical ranges is displayed after zooming. The default value of both properties is `0.0`.
 
-N> Set the corresponding zoom factor using the `ZoomFactorX` and `ZoomFactorY` properties before setting the zoom position. The zoom position does not take effect when the zoom factor is `1.0`.
+N> Set the corresponding zoom factor using the [ZoomFactorX](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ZoomFactorX) and [ZoomFactorY](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ZoomFactorY) properties before setting the zoom position. The zoom position does not take effect when the zoom factor is `1.0`.
 
 The following code example demonstrates how to set the zoom position.
 
@@ -151,7 +151,7 @@ The [ZoomFactor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.
 
 The [VisibleRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_VisibleRange) property gets the range currently visible on the axis, while the [ZoomedRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_ZoomedRange) property gets the range displayed after zooming. Both are get-only properties and are updated automatically when the zoom factor or zoom position changes.
 
-N> The `ZoomFactorX` and `ZoomFactorY` properties apply to the primary X and Y axes, respectively. Use the `ZoomFactor` property of an individual `ChartAxis` to configure the zoom factor of an additional axis.
+N> The [ZoomFactorX](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ZoomFactorX) and [ZoomFactorY](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ZoomFactorY) properties apply to the primary X and Y axes, respectively. Use the [ZoomFactor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart__ChartAxis_ZoomFactor) property of an individual [ChartAxis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html) to configure the zoom factor of an additional axis.
 
 The following code example sets the zoom factor and position directly on the primary axes.
 
@@ -180,7 +180,7 @@ chartControl.PrimaryYAxis.ZoomPosition = 0.4
 
 The [MinZoomFactorX](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_MinZoomFactorX) and [MinZoomFactorY](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_MinZoomFactorY) properties restrict the zoom-in level on the horizontal and vertical axes. The default value of both properties is `0.01`.
 
-N> The minimum zoom factor ranges from `0` to `1`. A value closer to `0` allows a higher zoom level, while a value of `1` prevents zooming. Set the corresponding zoom factor using the `ZoomFactorX` and `ZoomFactorY` properties for the minimum zoom factor to take effect.
+N> The minimum zoom factor ranges from `0` to `1`. A value closer to `0` allows a higher zoom level, while a value of `1` prevents zooming. Set the corresponding zoom factor using the [ZoomFactorX](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ZoomFactorX) and [ZoomFactorY](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ZoomFactorY) properties for the minimum zoom factor to take effect.
 
 The following code example sets the minimum zoom factor to `0.7`.
 
@@ -257,7 +257,7 @@ chartControl.ZoomCancel = Keys.Escape
 
 ## Zoom type
 
-The [ZoomType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ZoomType) property specifies how users zoom the chart. The default zoom type is `Selection`.
+The [ZoomType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ZoomType) property specifies how users zoom the chart. The default zoom type is [Selection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ZoomType.html#Syncfusion_Windows_Forms_Chart_ZoomType_Selection).
 
 The `ZoomType` property supports the following values:
 
@@ -428,3 +428,4 @@ The following events notify changes to the visible chart range during zooming:
 - [How to enable zooming with scrollbars in WinForms Chart](https://support.syncfusion.com/kb/article/4129/how-to-enable-zooming-with-scrollbars-in-syncfusion-winforms-chart)
 - [How to implement zooming with keyboard shortcuts in WinForms Chart](https://support.syncfusion.com/kb/article/3871/how-to-implement-zooming-with-keyboard-shortcuts-in-winforms-chart)
  - [How to display the scrollbar even after clicking the reset button in a WinForms Chart](https://support.syncfusion.com/kb/article/6700/how-to-display-the-scrollbar-even-after-clicking-the-reset-button-in-a-winforms-chart)
+- [How to implement datetime values in a WinForms Chart](https://support.syncfusion.com/kb/article/1071/how-to-implement-datetime-values-in-a-winforms-chart)
