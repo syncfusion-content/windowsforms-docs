@@ -53,7 +53,7 @@ Me.gridControl1.ThemesEnabled = True
 {% endtabs %}
 
 ## Applying Skin for ComboBox Cell
-There will be no themes applied to the ComboBox cell by default. If you want to enable the theme, set [EnableGridListControlInComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_EnableGridListControlInComboBox)  property to false. It will add the [GridListControl](https://help.syncfusion.com/windowsforms/gridlist/creating-grid-list-control) to the ComboBox drop down and the visual style of the grid will be applied. 
+There will be no themes applied to the ComboBox cell by default. If you want to enable the theme, set [EnableGridListControlInComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_EnableGridListControlInComboBox)  property to false. It will add the [GridListControl](https://help.syncfusion.com/windowsforms/multicolumn-listbox/getting-started#creating-application-with-gridlistcontrol) to the ComboBox drop down and the visual style of the grid will be applied. 
 {% tabs %}
 {% highlight c# %}
 // To Use GridComboBoxCellModel in Grid
@@ -129,7 +129,7 @@ Me.gridControl1.MetroColorTable.ThumbNormal = Color.Blue
 {% endtabs %}
 ![Visual-Syles_img3](Visual-Syles_images/Visual-Syles_img3.jpeg)
 
-N> The scrollbar customization is briefly discussed in the [Scrolling](https://help.syncfusion.com/windowsforms/grid/scrolling) section.
+N> The scrollbar customization is briefly discussed in the [Scrolling](https://help.syncfusion.com/windowsforms/grid-control/scrolling) section.
 
 ## Modifying Office2016 colors
 
@@ -241,7 +241,7 @@ SkinManager.SetVisualStyle(Me, VisualTheme.Office2010Blue)
 All the elements of the GridControl’s appearance can be customized. This section will explain about the customization of the themes using [IVisualStylesDrawing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.IVisualStylesDrawing.html). 
 
 ### Customization Using IVisualStylesDrawing
-The grid can be applied with the [custom visual styles](https://www.syncfusion.com/kb/760/how-can-i-create-the-custom-themes-and-apply-to-the-gridcontrol) by implementing the [IVisualStylesDrawing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.IVisualStylesDrawing.html) interface. This interface provides the list of methods for drawing the icons and header colors of the grid.
+The grid can be applied with the [custom visual styles](https://support.syncfusion.com/kb/article/1732/how-to-create-the-custom-themes-and-apply-to-the-winforms-gridcontrol) by implementing the [IVisualStylesDrawing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.IVisualStylesDrawing.html) interface. This interface provides the list of methods for drawing the icons and header colors of the grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -349,7 +349,7 @@ Me.gridControl1.Model.Options.GridVisualStylesDrawing = New CustomThemes(GridVis
 
 The following KB demonstrates the same with the sample,
 
-[https://www.syncfusion.com/kb/760/how-can-i-create-the-custom-themes-and-apply-to-the-gridcontrol](https://www.syncfusion.com/kb/760/how-can-i-create-the-custom-themes-and-apply-to-the-gridcontrol) 
+[https://support.syncfusion.com/kb/article/1732/how-to-create-the-custom-themes-and-apply-to-the-winforms-gridcontrol](https://support.syncfusion.com/kb/article/1732/how-to-create-the-custom-themes-and-apply-to-the-winforms-gridcontrol) 
 
 N> Each theme can be customized by deriving their `GridVisualStylesDrawing` class. 
 N> Ex:[GridVisualStylesOffice2007Black](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.GridVisualStylesOffice2007Black.html) 

@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # TabBarSplitterControl in Windows Forms Grid Control
-User can create TabBar Pages with dynamic splitters by using [TabBarSplitterControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarSplitterControl.html). When used with a GridControl, it gives a workbook like appearance. User can add more than one [TabBarPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarPage.html) and GridControl can be added in each page. This control is helpful when GridControl with formula cells and [Cross-Reference](https://help.syncfusion.com/windowsforms/grid/formula-support#named-ranges) sheets are used. The TabBarSplitterControl comes under the library [Syncfusion.Shared.Base](https://help.syncfusion.com/cr/windowsforms) assembly.
+User can create TabBar Pages with dynamic splitters by using [TabBarSplitterControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarSplitterControl.html). When used with a GridControl, it gives a workbook like appearance. User can add more than one [TabBarPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarPage.html) and GridControl can be added in each page. This control is helpful when GridControl with formula cells and [Cross-Reference](https://help.syncfusion.com/windowsforms/grid-control/formula-support) sheets are used. The TabBarSplitterControl comes under the library [Syncfusion.Shared.Base](https://help.syncfusion.com/cr/windowsforms) assembly.
 
 ## Adding via Designer
 

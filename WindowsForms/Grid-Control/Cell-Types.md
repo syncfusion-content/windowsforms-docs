@@ -456,7 +456,7 @@ Me.gridControl1(0, 4).ChoiceList = items
 
 {% endhighlight %}
 {% endtabs %}
-N> To know more details and sample, refer the KB link over [here](https://support.syncfusion.com/kb/article/1738/how-to-insert-a-combobox-in-a-header-cell-of-a-grid-in-winforms-gridcontrol).
+N> To know more details and sample, refer the KB link over [here](https://support.syncfusion.com/kb/article/1738/how-to-insert-a-combobox-in-a-header-cell-in-winforms-datagrid).
 
 ### RadioButton cell type
 `RadioButton` cell type displays a radio button in a grid cell. The choices of radio button are mutually exclusive. Like combobox, radio button values can be populated by using the `ChoiceList` or `DataSource` property.
@@ -851,7 +851,7 @@ Me.gridControl1(2, 2) = currencyStyle
 ![Cell-Types_img24](Cell-Types_images/Cell-Types_img24.png)
 
 ## Formula cell type
-`FormulaCell` cell type adds algebraic formulas to a cell that depends on other cells. The cell value should be a well-formed formula starting with an `=` and the `CellType` property set to `FormulaCell`. If a formula cell does not begin with an `=`, the cell is treated as a text box cell. For details, refer the topic [Formula Support](https://help.syncfusion.com/windowsforms/grid/formula-support).
+`FormulaCell` cell type adds algebraic formulas to a cell that depends on other cells. The cell value should be a well-formed formula starting with an `=` and the `CellType` property set to `FormulaCell`. If a formula cell does not begin with an `=`, the cell is treated as a text box cell. For details, refer the topic [Formula Support](https://help.syncfusion.com/windowsforms/grid-control/formula-support).
 
 {% tabs %}
 {% highlight c# %}

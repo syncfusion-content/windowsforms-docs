@@ -415,6 +415,6 @@ The color schemes can be modified by applying and customizing the theme colors.
 
 {% seealso %}
 
-[Theming](https://help.syncfusion.com/windowsforms/menus/Theming)
+[Theming](https://help.syncfusion.com/windowsforms/menu/theming)
 
 {% endseealso %}

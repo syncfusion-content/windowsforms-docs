@@ -7,7 +7,7 @@ control: Grid Control
 documentation: ug
 ---
 # Clipboard Support in Windows Forms Grid Control
-All the clipboard operations such as cut, copy and paste are supported in GridControl. The [GridModelCutPaste](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelCutPaste_methods.html) class manages the cut, copy and paste operations of the GridControl. This class can be accessed from a grid with the [Model.CutPaste](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_CutPaste) property. It will provide the list of properties and methods for performing the clipboard operation.
+All the clipboard operations such as cut, copy and paste are supported in GridControl. The [GridModelCutPaste](https://help.syncfusion.com/cr/windowsforms) class manages the cut, copy and paste operations of the GridControl. This class can be accessed from a grid with the [Model.CutPaste](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_CutPaste) property. It will provide the list of properties and methods for performing the clipboard operation.
 
 ## Copy 
 The selected range of cells or data can be copied to the Clipboard by using the [Copy](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelCutPaste.html#Syncfusion_Windows_Forms_Grid_GridModelCutPaste_Copy) method. The keyboard keys <kbd>Ctrl</kbd> +<kbd> C</kbd> combination is used to perform the Copy operation.
@@ -271,7 +271,7 @@ Me.gridControl1.CutPaste.CutRange(range, False)
 ![CopyPaste_img2](CopyPaste_images/CopyPaste_img2.jpeg)
 
 N> If the cell have integer data type, it will became null during the cut operation. The integer data type does not accept the null values therefore it will throws the “InvalidOperationException was unhandled, Rollback without BeginTrans” exception. This exception can be avoided by setting the nullable data type to the cells. For example, The `int` data type is need to be changed to `int?`.
-N> [https://support.syncfusion.com/kb/article/4811/how-to-resolve-an-exception-in-cut-operation-on-the-number-datatype-such-as-integer-cells](https://support.syncfusion.com/kb/article/4811/how-to-resolve-an-exception-in-cut-operation-on-the-number-datatype-such-as-integer-cells) 
+N> [https://support.syncfusion.com/kb/article/4811/how-to-resolve-an-exception-in-cut-operation-on-the-number-datatype-such-as-integer-cells-in-winforms-gridgroupingcontrol](https://support.syncfusion.com/kb/article/4811/how-to-resolve-an-exception-in-cut-operation-on-the-number-datatype-such-as-integer-cells-in-winforms-gridgroupingcontrol) 
 
 ## Disabling Cut, Copy, and Paste
 The Clipboard Cut, Copy and Paste operations of the grid can be disabled by setting the [ClipboardFlags](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCutPasteEventArgs.html#Syncfusion_Windows_Forms_Grid_GridCutPasteEventArgs_ClipboardFlags) value as `GridDragDropFlags.Disabled`.

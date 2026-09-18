@@ -9,4 +9,4 @@ documentation: ug
 
 # How to Show a Popup for Windows Forms RichTextBox
 
-Please refer [`Getting Started`](https://help.syncfusion.com/windowsforms/popupcontrolcontainer/getting-started) section for PopupControlContainer as the Pop-up for a RichTextBox Control. 
+Please refer [`Getting Started`](https://help.syncfusion.com/windowsforms/popup/getting-started) section for PopupControlContainer as the Pop-up for a RichTextBox Control. 

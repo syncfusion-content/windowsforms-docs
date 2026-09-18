@@ -115,4 +115,4 @@ End Sub
 
 Sample link:
 
-[http://www.syncfusion.com/uploads/redirect.aspx?&team=support&file=I68039-490391191.zip](http://www.syncfusion.com/uploads/redirect.aspx?&team=support&file=I68039-490391191.zip)
+[https://www.syncfusion.com/uploads/support/user/uploads/i68039-490391191.zip](https://www.syncfusion.com/uploads/support/user/uploads/i68039-490391191.zip)

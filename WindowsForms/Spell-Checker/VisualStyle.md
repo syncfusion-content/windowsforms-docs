@@ -166,4 +166,4 @@ Me.spellCheckerAdv1.VisualStyle = Syncfusion.Windows.Forms.Tools.SpellCheckerAdv
 ![Office2016 Black Theme appearance in SpellCheckerAdv](VisualStyle_images/VisualStyle_img6.png)
 
 
-N> Refer to the following sample [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SpellCheckerAdv_Demo-2092294700.zip) that demonstrates the Visual Style support in WinForms Spell Checker.
+N> Refer to the following sample [link](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/SpellCheckerAdv_Demo-2092294700.zip?AWSAccessKeyId=AKIAWH6GYCX3XVMXIRHP&Expires=1789628706&Signature=022zcjU%2B0KfaDwJo9SvVSNPsxBk%3D) that demonstrates the Visual Style support in WinForms Spell Checker.

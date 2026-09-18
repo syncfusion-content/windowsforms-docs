@@ -49,7 +49,7 @@ Me.gridGroupingControl1.TableControl.VScrollBehavior = GridScrollbarMode.Disable
 
 ![Scrolling_img1](Scrolling_images/Scrolling_img1.png)
 
-Properties and methods related to scrolling has been already explained in our GridControl topic under the section [Scrolling](https://help.syncfusion.com/windowsforms/grid/scrolling). You can check that link for more information on Scrolling.
+Properties and methods related to scrolling has been already explained in our GridControl topic under the section [Scrolling](https://help.syncfusion.com/windowsforms/grid-control/scrolling). You can check that link for more information on Scrolling.
 
 ## Programmatic Scrolling
 It is possible to scroll programmatically in GridGroupingControl by using the [ScrollCellInView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_ScrollCellInView_Syncfusion_Windows_Forms_Grid_GridRangeInfo_) method. You can directly pass the row and column index in this method or you can pass a range of cells using the [GridRangeInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridRangeInfo.html) class.
@@ -256,6 +256,6 @@ this.scrollersFrame1.AttachedTo =this.gridGroupingControl1.TableControl;
 Me.scrollersFrame1.AttachedTo = Me. gridGroupingControl1.TableControl
 {% endhighlight %}
 {% endtabs %}
-N> For more information regarding the custom scrolling and its styles, refer the GridControl topic under the section [Custom Scrolling](https://help.syncfusion.com/windowsforms/grid/scrolling#custom-scrollbar). 
+N> For more information regarding the custom scrolling and its styles, refer the GridControl topic under the section [Custom Scrolling](https://help.syncfusion.com/windowsforms/grid-control/scrolling). 
 
 ![Scrolling_img8](Scrolling_images/Scrolling_img8.png)

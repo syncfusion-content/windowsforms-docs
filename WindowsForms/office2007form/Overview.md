@@ -22,4 +22,4 @@ The `Office2007Form` is an advanced standard Form that offers Microsoft Office20
 
 ## Choose between different form controls
  
-You can refer to the different form controls [here](https://help.syncfusion.com/windowsforms/sfform/overview#choose-between-different-form-controls). 
+You can refer to the different form controls [here](https://help.syncfusion.com/windowsforms/form/overview). 
