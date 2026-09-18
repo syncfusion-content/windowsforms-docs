@@ -1,19 +1,19 @@
 ---
 layout: post
 title: Context-menu in Windows Forms Chart control | Syncfusion®
-description: Context menu in the Windows Forms Chart provides built-in menus for performing chart operations such as zooming, changing chart types, and switching between 2D and 3D views.
+description: Context menus in the Windows Forms Chart provide built-in commands for zooming, changing chart types, and switching between 2D and 3D views.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-## Context menu
+# Context menu
 
 The Windows Forms Chart provides built-in context menus for the chart area, chart series, and legend items. This context menu will let the user change the chart type on a series, enable zooming, switch between 2D and 3D modes and so on.
 
-The [ShowContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ShowContextMenu) property specifies whether the chart-area and series context menus are available. By default it is `false`, so enable the showcontextmenu by set to true.
+The [ShowContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ShowContextMenu) property specifies whether the chart-area and series context menus are available. By default it is `false`, so enable the show context menu by set to true.
 
-### Chart context menu
+## Chart context menu
 
 The [DisplayChartContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_DisplayChartContextMenu) property specifies whether the built-in context menu is displayed when users right-click the chart area. The default value is `true`.
 
@@ -36,7 +36,7 @@ chartControl.DisplayChartContextMenu = True
 
 ![Display Context Menu in Windows Forms Chart](../Chart-User-Interactions_Images/display-chart-context-menu.png)
 
-### Series context menu
+## Series context menu
 
 The [DisplaySeriesContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_DisplaySeriesContextMenu) property specifies whether the built-in context menu is displayed when users right-click a chart series. The default value is `true`
 
@@ -61,7 +61,7 @@ chartControl.DisplaySeriesContextMenu = True
 
 ![Series Context Menu in Windows Forms Chart](../Chart-User-Interactions_Images/series-chart-context-menu.png)
 
-### Legend context menu
+## Legend context menu
 
 The [ShowContextMenuInLegend](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ShowContextMenuInLegend) property specifies whether a context menu is displayed when users right-click a legend item. The default value is `false`.
 
@@ -86,7 +86,7 @@ chartControl.ShowContextMenuInLegend = True
 
 ![Legend Context Menu in Windows Forms Chart](../Chart-User-Interactions_Images/legend-chart-context-menu.png)
 
-### Access the chart context menu
+## Access the chart context menu
 
 The [ChartContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ChartContextMenu) property gets the built-in context menu associated with the ChartControl. This is a read-only property.
 
@@ -113,7 +113,7 @@ chartControl.ChartContextMenu.Show(
 {% endhighlight %}
 {% endtabs %}
 
-### Access the series context menu
+## Access the series context menu
 
 The [SeriesContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_SeriesContextMenu) property gets the built-in context menu associated with chart series. This is a read-only property.
 
@@ -143,7 +143,7 @@ chartControl.SeriesContextMenu.Show(
 {% endhighlight %}
 {% endtabs %}
 
-### Customize context-menu items
+## Customize context-menu items
 
 The [ChartContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartContextMenu.html) and [SeriesContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_SeriesContextMenu) classes inherit from [ContextMenuStrip](https://learn.microsoft.com/en-us/dotnet/desktop/winforms/controls/contextmenustrip-control-overview). Therefore, custom menu items can be added through their `Items` collections.
 
