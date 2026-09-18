@@ -103,7 +103,7 @@ chartControl.Series(0).PointsToolTipFormat = "{0} - X: {3}, Y: {4}"
 
 ![Point Tooltip Format in Windows Forms Chart](../Chart-User-Interactions_Images/tooltip-series-point.png)
 
-### Tooltip format
+## Tooltip format
 
 The [ToolTipFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStyleInfo.html#Syncfusion_Windows_Forms_Chart_ChartStyleInfo_ToolTipFormat) property specifies the tooltip format associated with a series or an individual data point. The default value is an `Empty`.
 
@@ -122,7 +122,7 @@ chartControl.Series(0).ToolTipFormat = "Y = {0}"
 
 ![Series Tooltip Format in Windows Forms Chart](../Chart-User-Interactions_Images/tooltip-series-format.png)
 
-### Series tooltip
+## Series tooltip
 
 The [ToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStyleInfo.html#Syncfusion_Windows_Forms_Chart_ChartStyleInfo_ToolTip) property of the series style specifies the tooltip text displayed for the corresponding series. The default value is an `Empty`.
 
