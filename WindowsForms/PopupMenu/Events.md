@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Events in Windows Forms PopupMenu | Syncfusion®
 description: PopupMenu events provide notifications before display, after display, menu collapse, and parent bar item changes.

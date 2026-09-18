@@ -2,7 +2,7 @@
 layout: post
 title: Data Settings in Windows Forms ComboBoxAdv(Classic) | Syncfusion®
 description: Data Settings in the Windows Forms ComboBoxAdv(Classic) control enable data binding, item management, and value display customization.
-platform: WindowsForms
+platform: windowsforms
 control: ComboBoxAdv
 documentation: ug
 ---

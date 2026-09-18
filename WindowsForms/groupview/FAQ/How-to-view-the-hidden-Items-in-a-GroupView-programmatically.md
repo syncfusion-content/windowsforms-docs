@@ -2,7 +2,7 @@
 layout: post
 title: View the hidden group view items | WindowsForms | Syncfusion
 description: Frequently Asked Questions
-platform: WindowsForms
+platform: windowsforms
 control: GroupView
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: How-to-programmatically-select-a-node-in-a-TreeViewAdv-Control | WindowsForms | Syncfusion
 description: how to programmatically select a node in a treeviewadv control
-platform: WindowsForms
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---

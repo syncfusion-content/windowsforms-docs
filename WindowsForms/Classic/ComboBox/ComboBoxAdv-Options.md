@@ -2,7 +2,7 @@
 layout: post
 title: TextBox and DropDown Settings in ComboBoxAdv(Classic) | Syncfusion®
 description: TextBox and DropDown settings in Windows Forms ComboBoxAdv(Classic) to control appearance, behavior, text editing, and user interactions.
-platform: WindowsForms
+platform: windowsforms
 control: ComboBoxAdv
 documentation: ug
 ---
@@ -205,7 +205,7 @@ Me.comboBoxAdv1.MaxLength = 32766
 
 ### Banner Text Support
 
-You can set banner text for the ComboBoxAdv control. Refer to [BannerTextProvider Component](http://help.syncfusion.com/ug/windows%20forms/documents/bannertextsupport.htm) topic for more details.
+You can set banner text for the ComboBoxAdv control. Refer to [BannerTextProvider Component](https://help.syncfusion.com/windowsforms/) topic for more details.
 
 
 

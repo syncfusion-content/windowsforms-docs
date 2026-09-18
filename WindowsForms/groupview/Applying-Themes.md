@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
 title: Apply Themes in Windows Forms GroupView | Syncfusion®
 description: Applying themes enables XP-themed rendering and visual style customization for improving GroupView appearance.
-platform: WindowsForms
+platform: windowsforms
 control: GroupView
 documentation: ug
 ---

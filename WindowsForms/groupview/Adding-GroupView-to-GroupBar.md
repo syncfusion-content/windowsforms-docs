@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
 title: Add a GroupView to a GroupBar in Windows Forms | Syncfusion®
 description: Learn how to integrate GroupView controls within GroupBar items and create Visual Studio-style navigation interfaces.
-platform: WindowsForms
+platform: windowsforms
 control: GroupView
 documentation: ug
 ---

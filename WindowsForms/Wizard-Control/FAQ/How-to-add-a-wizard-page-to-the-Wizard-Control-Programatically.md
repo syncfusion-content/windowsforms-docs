@@ -2,7 +2,7 @@
 layout: post
 title: How to add a wizard page programmatically | WindowsForms | Syncfusion
 description: How to add a wizard page in Syncfusion Essential Studio WindowsForms Wizard Control, its elements, and more.
-platform: WindowsForms
+platform: windowsforms
 control: Wizard
 documentation: ug
 ---

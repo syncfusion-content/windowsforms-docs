@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
 title: StackedGroupBar in Windows Forms Navigation Pane | Syncfusion®
 description: StackedGroupBar enables displaying navigation items in a stacked layout with customizable header visibility.
-platform: WindowsForms
+platform: windowsforms
 control: GroupBar
 documentation: ug
 ---

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Appearance in Windows Forms ButtonEdit | Syncfusion®
 description: ButtonEdit Appearance supports customizing styles, colors, borders, sizing, themes, and text presentation for ButtonEdit controls.
@@ -13,7 +13,7 @@ A [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Fo
 
 {% seealso %}
 
-[TextBox Settings for ButtonEdit](/windowsforms/buttonedit/textboxsettingsforbuttonedit), [Child Button Customization](http://help.syncfusion.com/windowsforms/buttonedit/textboxsettingsforbuttonedit)
+[TextBox Settings for ButtonEdit](/windowsforms/buttonedit/textboxsettingsforbuttonedit), [Child Button Customization](https://help.syncfusion.com/windowsforms/buttonedit/textboxsettingsforbuttonedit)
 
 {% endseealso %}
 
@@ -240,6 +240,6 @@ N> This case setting can be overridden by TextBox.CharacterCasing property.
 
 {% seealso %}
 
-[TextBox Settings for ButtonEdit](/windowsforms/buttonedit/textboxsettingsforbuttonedit), [Child Button Customization](http://help.syncfusion.com/windowsforms/buttonedit/textboxsettingsforbuttonedit)
+[TextBox Settings for ButtonEdit](/windowsforms/buttonedit/textboxsettingsforbuttonedit), [Child Button Customization](https://help.syncfusion.com/windowsforms/buttonedit/textboxsettingsforbuttonedit)
 
 {% endseealso %}

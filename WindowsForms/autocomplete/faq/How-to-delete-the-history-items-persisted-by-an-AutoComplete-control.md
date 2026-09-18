@@ -2,7 +2,7 @@
 layout: post
 title: How to Delete History Items in AutoComplete | Syncfusion
 description: Delete persisted history items in Syncfusion® Windows Forms AutoComplete control using the ResetHistory method and manage stored entries.
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
 title: Office2007Form Customization in Windows Forms | Syncfusion®
 description: Customization options include caption alignment, fonts, colors, help button support, RTL layouts, and rounded corners.
-platform: WindowsForms
+platform: windowsforms
 control: Office2007 Form
 documentation: ug
 ---

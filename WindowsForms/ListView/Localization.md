@@ -15,7 +15,7 @@ To localize the ListView based on the  [CurrentUICulture](https://learn.microsof
 
 1) Create a new folder and name it as Resources in your application.
 
-2) Add the default resource file of the ListView into Resources folder. You can download the `Syncfusion.SfListView.WinForms.resx` file [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ResourceFile1283641291).
+2) Add the default resource file of the ListView into Resources folder. You can download the `Syncfusion.SfListView.WinForms.resx` file [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/ResourceFile1283641291.zip?AWSAccessKeyId=AKIAWH6GYCX3XVMXIRHP&Expires=1789628582&Signature=5hYdkaLNHFD%2FPHoKop7Ax7XJWO8%3D).
 
 ![WindowsForms ListView Localization Image1](Localization_images/Localization_img1.png)
                      
@@ -57,7 +57,7 @@ End Sub
  
 ## Editing default resource file
 The default resource file can be edited by adding it to Resources folder of the application where the ListView reads the static texts here.
-The default resource file can be download from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ResourceFile1283641291).
+The default resource file can be download from [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/ResourceFile1283641291.zip?AWSAccessKeyId=AKIAWH6GYCX3XVMXIRHP&Expires=1789628582&Signature=5hYdkaLNHFD%2FPHoKop7Ax7XJWO8%3D).
 
 ![WindowsForms ListView Localization Image6](Localization_images/Localization_img6.png)
 

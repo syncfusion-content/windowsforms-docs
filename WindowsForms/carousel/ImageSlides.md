@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
 title: ImageSlides in Windows Forms Carousel | Syncfusion®
 description: ImageSlides support enables displaying images in Carousel using image collections, image lists, and file-based sources.
-platform: WindowsForms
+platform: windowsforms
 control: Carousel
 documentation: ug
 ---

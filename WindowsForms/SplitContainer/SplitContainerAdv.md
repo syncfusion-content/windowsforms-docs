@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Customization in Windows Forms SplitContainer | Syncfusion®
 description: Customization options include panel behavior, splitter settings, collapsing panels, appearance customization, borders, and visual styles.

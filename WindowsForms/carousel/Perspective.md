@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
 title: Perspective in Windows Forms Carousel | Syncfusion®
 description: Perspective support allows enlarging or shrinking the Carousel view to control the depth and appearance of displayed items.
-platform: WindowsForms
+platform: windowsforms
 control: Carousel
 documentation: ug
 ---

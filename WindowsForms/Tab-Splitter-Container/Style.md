@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Style in Windows Forms Tab Splitter Container | Syncfusion®
 description: Style settings provide Default and Office 2016 themes for customizing the appearance of TabSplitterContainer controls.

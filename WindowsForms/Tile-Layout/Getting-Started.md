@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Windows Forms Tile Layout | Syncfusion®
 description: Learn how to get started with the Syncfusion® Windows Forms Tile Layout control. Explore setup, features, examples, and customization options.
-platform: WindowsForms
+platform: windowsforms
 control: Tile Layout 
 documentation: ug
 ---

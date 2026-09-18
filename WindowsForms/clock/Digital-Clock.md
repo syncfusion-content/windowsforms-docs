@@ -2,7 +2,7 @@
 layout: post
 title: Digital Clock in Windows Forms Clock | Syncfusion
 description: Learn about digital clock functionality in Windows Forms Clock control for displaying time as digital text.
-platform: WindowsForms
+platform: windowsforms
 control: Clock
 documentation: ug
 ---

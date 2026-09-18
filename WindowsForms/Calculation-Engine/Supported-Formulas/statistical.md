@@ -316,7 +316,7 @@ _CHIINV(probability,deg_freedom)_
 
 ## CONFIDENCE.NORM
 
-The `Confidence.Norm` function uses [Normal Distribution](http://en.wikipedia.org/wiki/Normal_distribution) to calculate a confidence value that can be used to construct the confidence interval for a population mean, for a supplied probability, and sample size.
+The `Confidence.Norm` function uses [Normal Distribution](https://en.wikipedia.org/wiki/Normal_distribution) to calculate a confidence value that can be used to construct the confidence interval for a population mean, for a supplied probability, and sample size.
 
 **Syntax:**
 
@@ -391,7 +391,7 @@ _CHISQ.INV(probability,degFreedom)_
 
 ## CHISQ.INV.RT
 
-The `Chisq.Inv.Rt` function calculates the inverse of the right-tailed probability of the [chi-square distribution](http://en.wikipedia.org/wiki/Chi-square_distribution).
+The `Chisq.Inv.Rt` function calculates the inverse of the right-tailed probability of the [chi-square distribution](https://en.wikipedia.org/wiki/Chi-square_distribution).
 
 **Syntax:**
 
@@ -411,7 +411,7 @@ _CHISQ.INV.RT(probability, degFreedom)_
 
 ## CHISQ.DIST.RT
 
-The `Chisq.Dist.Rt` function calculates the right-tailed probability of the [chi-square distribution](http://en.wikipedia.org/wiki/Chi-square_distribution).
+The `Chisq.Dist.Rt` function calculates the right-tailed probability of the [chi-square distribution](https://en.wikipedia.org/wiki/Chi-square_distribution).
 
 **Syntax:**
 

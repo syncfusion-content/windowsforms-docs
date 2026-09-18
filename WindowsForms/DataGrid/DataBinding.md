@@ -342,7 +342,7 @@ To create Data Model using Entity Framework in Windows Forms application, follow
 
 ![Choose the model contents from visual studio](DataBinding_images/DataBinding_img4.jpeg)
 
-5. In the **Choose Your Data Connection**, select **Northwind** database from the drop-down list for data connection. To configure/modify connection, refer: [How to: Create Connections to SQL Server Databases](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)).
+5. In the **Choose Your Data Connection**, select **Northwind** database from the drop-down list for data connection. To configure/modify connection, refer: [How to: Create Connections to SQL Server Databases](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90))).
 
 ![Choose the Northwind database from visual studio](DataBinding_images/DataBinding_img5.jpeg)
 
@@ -430,7 +430,7 @@ SfDataGrid control supports to load the data using ADO.NET. This walk-through, d
 
 ### Connecting Application to Databases
 To connect SQL database to WinForms application, refer the below MSDN link or follow the below steps,
-[https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)) 
+[https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90))](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90))) 
 
 1. Select the **Connect to Database** option from the **Tools** menu.
 

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Splitter BackColor in Windows Forms TabSplitterContainer | Syncfusion®
 description: Customize the splitter background color to match application themes and enhance TabSplitterContainer appearance.

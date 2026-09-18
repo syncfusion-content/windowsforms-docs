@@ -117,7 +117,7 @@ MessageBox.Show("MergedRange for cell(5,2) is " & range1.Info.ToString() & Const
 {% endhighlight %}
 {% endtabs %}
 
-N> The merged range of a cell can also be get by using [GetSpannedRangeInfo](https://help.syncfusion.com/windowsforms/grid/managing-the-rows-and-columns#finding-covered-range-floating-range-or-merged-range-of-a-cell) method.
+N> The merged range of a cell can also be get by using [GetSpannedRangeInfo](https://help.syncfusion.com/windowsforms/grid-control/managing-the-rows-and-columns) method.
 
 ![Cell-Merging_img4](Cell-Merging_images/Cell-Merging_img4.png)
 

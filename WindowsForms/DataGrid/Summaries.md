@@ -1461,10 +1461,10 @@ Me.sfDataGrid.TableSummaryRows.Add(tableSummaryRow1)
 
 ![Windows forms datagrid showing custom summary](SfDataGrid_Summaries_UG_images/summaries21.png)
 
-You can download the custom summaries demo [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Custom_Summaries-1592567908.zip).
+You can download the custom summaries demo [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/Custom_Summaries-1592567908.zip?AWSAccessKeyId=AKIAWH6GYCX3XVMXIRHP&Expires=1789628112&Signature=7Y4Umtz2Nq9waTcsZpXHd3uJGM4%3D).
 
 ## See also
 
-[How to show the total summary value in DateTime format using custom aggregate in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/8530/how-to-show-the-total-summary-value-in-datetime-format-using-custom-aggregate-in-winforms)
+[How to show the total summary value in DateTime format using custom aggregate in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/8530/how-to-show-the-total-summary-value-in-datetime-format-using-custom-aggregate-in-winforms-datagrid)
 
-[How to calculate the summary value based on other column summary value in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/7893/how-to-calculate-the-summary-value-based-on-other-column-summary-value-in-winforms-datagrid)
+[How to calculate the summary value based on other column summary value in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/7893/how-to-calculate-the-summary-value-based-on-other-column-summary-value-in-winforms-datagrid-sfdatagrid)

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Style in Windows Forms Splitter | Syncfusion
 description: Style settings provide Default and Metro themes for customizing the appearance of SplitterControl components.

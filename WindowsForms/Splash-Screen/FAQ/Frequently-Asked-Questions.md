@@ -2,7 +2,7 @@
 layout: post
 title: Frequently-Asked-Questions | WindowsForms | Syncfusion
 description: frequently asked questions
-platform: WindowsForms
+platform: windowsforms
 control: Notification Package 
 documentation: ug
 ---

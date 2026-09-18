@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
 title: Keyboard Shortcuts in Windows Forms XPToolBar | Syncfusion®
 description: Keyboard shortcuts enable executing bar item actions through shortcut keys and displaying custom shortcut text.
-platform: WindowsForms
+platform: windowsforms
 control: XPToolBar
 documentation: ug
 ---

@@ -827,7 +827,7 @@ public class CustomSelectionController : RowSelectionController
 
 ![Selection using custom selection controller in windows forms datagrid](Selection_images/selection12.png)
 
-Samples Link: [SelectAllRows ](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Select_all_the_default_rows1173780600.zip)
+Samples Link: [SelectAllRows ](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/Select_all_the_default_rows1173780600.zip?AWSAccessKeyId=AKIAWH6GYCX3XVMXIRHP&Expires=1789628062&Signature=0vXBkTodYn3nW%2B7o%2FNUUJair0ow%3D)
 
 ### Change Enter key behavior
 
@@ -1025,12 +1025,12 @@ Me.sfDataGrid1.Style.CurrentCellStyle.BorderThickness = GridBorderWeight.Thick
 
 ## See also
 
-[How to select the entire column in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/8623/how-to-select-the-entire-column-in-winforms-datagrid-sfdatagrid)
+[How to select the entire column in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/8623/how-to-select-the-entire-column-in-winforms-datagrid)
 
 [How to change the Enter key behavior in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/8625/how-to-change-the-enter-key-behavior-in-winforms-datagrid-sfdatagrid)
 
 [How to skip selection for summary rows in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/8461/how-to-skip-selection-for-summary-rows-in-winforms-datagrid-sfdatagrid)
 
-[How to search and select record in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/8552/how-to-search-and-select-record-in-winforms-datagrid-sfdatagrid)
+[How to search and select record in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/8552/how-to-search-and-select-record-in-winforms-datagrid)
 
-[How to scroll to a specific record programmatically in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/8531/how-to-scroll-to-a-specific-record-programmatically-in-winforms-datagrid-sfdatagrid)
+[How to scroll to a specific record programmatically in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/8531/how-to-scroll-to-a-specific-record-programmatically-in-winforms-datagrid)

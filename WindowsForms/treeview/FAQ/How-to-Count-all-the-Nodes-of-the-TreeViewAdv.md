@@ -2,7 +2,7 @@
 layout: post
 title: How-to-Count-all-the-Nodes-of-the-TreeViewAdv | WindowsForms | Syncfusion
 description: how to count all the nodes of the treeviewadv
-platform: WindowsForms
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---

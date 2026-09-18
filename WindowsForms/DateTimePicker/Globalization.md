@@ -2,7 +2,7 @@
 layout: post
 title: Globalization in Windows Forms DateTimePicker | Syncfusion
 description: Learn about globalization and localization support in Windows Forms DateTimePicker for multiple cultures.
-platform: WindowsForms
+platform: windowsforms
 control: SfDateTimeEdit
 documentation: ug
 ---

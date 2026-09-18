@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Interactive Features in Windows Forms Range Slider | Syncfusion®
 description: Interactive features support range selection, tick customization, orientation, channel styling, thumb settings, and event handling.

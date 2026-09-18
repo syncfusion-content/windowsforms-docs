@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Splitter Behavior in Windows Forms Splitter | Syncfusion®
 description: Learn about splitter behavior in the Syncfusion® Windows Forms Splitter control, including row and column split bars for flexible layouts.

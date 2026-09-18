@@ -16,7 +16,7 @@ Localization is a process of translating the application resources into differen
 To localize the ComboBox based on the `CurrentUICulture` by using the resource files, follow the steps:
 
 1. Create a new folder and name it as Resources in your application.
-2. Add the default resource file of the SfListView into Resources folder. You can download the `Syncfusion.   SfListView.WinForms.resx` [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ResourceFile1283641291).
+2. Add the default resource file of the SfListView into Resources folder. You can download the `Syncfusion.   SfListView.WinForms.resx` [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/ResourceFile1283641291.zip?AWSAccessKeyId=AKIAWH6GYCX3XVMXIRHP&Expires=1789627906&Signature=JJ7OeIF2XDooHBYKizBrOYYu%2BVA%3D).
 
   ![Folder in which the resource file to be added](Localization_images/Localization_img1.png)
 3. Right click on the Resources folder, select Add then NewItem.
@@ -54,7 +54,7 @@ End Sub
 
 ## Editing default resource file
 
-The default resource file can be edited by adding it to the Resources folder of the application where ComboBox reads the static texts here. The default resource file can be downloaded [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ResourceFile1283641291).
+The default resource file can be edited by adding it to the Resources folder of the application where ComboBox reads the static texts here. The default resource file can be downloaded [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/ResourceFile1283641291.zip?AWSAccessKeyId=AKIAWH6GYCX3XVMXIRHP&Expires=1789627907&Signature=hTv3oJdZc6R%2FKpM4km%2Fk8Hxcp2U%3D).
 
 ![Default resource file](Localization_images/Localization_img6.png)
 

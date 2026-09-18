@@ -15,7 +15,7 @@ Tetris game application can be created by GridControl. In this game the boxes wi
 
 ![Real-Time-Applications_img1](Real-Time-Applications_images/Real-Time-Applications_img1.jpeg)
 
-N> A sample demonstrating this feature can be downloaded over [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Essential_Blocks_Demo2062614268.zip). 
+N> A sample demonstrating this feature can be downloaded over [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/Essential_Blocks_Demo2062614268.zip?AWSAccessKeyId=AKIAWH6GYCX3XVMXIRHP&Expires=1789628386&Signature=B%2F959KcsCHanQQvzkks59IuE5q8%3D). 
 
 ## Excel like UI
 Microsoft Excel-like User Interface can be implemented in GridControl with the help of other controls like [RibbonControl](https://help.syncfusion.com/windowsforms/ribbon/overview), [GridAwareTextBox](https://help.syncfusion.com/windowsforms/grid-control/formulabar) and [TabBarSplitter](https://help.syncfusion.com/windowsforms/tab-splitter-container/overview). It contains the **Name Box** that shows the current selection range and **Formula Bar** supports the formula cell. This **Formula Bar** is made up of the `GridAwareTextBox` control. In the top it has the **Quick Access Toolbar** which contains the necessary tools and other options which are available in the Syncfusion<sup>®</sup> `RibbonControl`. Column header has the column letters and row header has the row numbers which was similar to Excel sheet. It contains the **Sheet Tab** which denotes the number of sheets. In the bottom it has the **Zoom Slider** and **Status Bar** which was similar to that of Excel sheet.

@@ -34,5 +34,5 @@ Me.Controls.Add(elementHost)
 
 ## Sample
 
-[http://www.syncfusion.com/downloads/support/directtrac/123689/UCSpreadsheet-2033317448.zip](http://www.syncfusion.com/downloads/support/directtrac/123689/UCSpreadsheet-2033317448.zip)
+[https://files2.syncfusion.com/login?ReturnUrl=%2Fdtsupport%2Fdirecttrac%2F123689%2FUCSpreadsheet-2033317448.zip](https://files2.syncfusion.com/login?ReturnUrl=%2Fdtsupport%2Fdirecttrac%2F123689%2FUCSpreadsheet-2033317448.zip)
 

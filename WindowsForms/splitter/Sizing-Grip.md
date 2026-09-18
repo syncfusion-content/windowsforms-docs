@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Sizing Grip in Windows Forms Splitter | Syncfusion®
 description: Sizing grip settings allow showing or hiding the resize grip in SplitterControl for enhanced layout interaction.

@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
 title: How to Add Space Between Text and Icons in GroupBar | Syncfusion
 description: Add spacing between text and icons in Syncfusion® Windows Forms GroupBar control using the GroupBarItem padding settings and more.
-platform: WindowsForms
+platform: windowsforms
 control: GroupBar
 documentation: ug
 ---

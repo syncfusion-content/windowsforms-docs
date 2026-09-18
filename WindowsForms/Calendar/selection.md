@@ -2,7 +2,7 @@
 layout: post
 title: Selection in Windows Forms Calendar | Syncfusion
 description: Learn how to select single or multiple dates in Windows Forms Calendar control with various selection modes and configurations.
-platform: WindowsForms
+platform: windowsforms
 control: SfCalendar
 documentation: ug
 ---

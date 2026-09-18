@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion® Windows Forms Radio Button Control | Syncfusion®
 description: Learn about introduction of Syncfusion® Essential Studio Windows Forms Radio Button control and more details.
-platform: WindowsForms
+platform: windowsforms
 control: Radio Button
 documentation: ug
 ---

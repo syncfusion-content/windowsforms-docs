@@ -2,7 +2,7 @@
 layout: post
 title: Customizing Sections in Windows Forms MonthCalendarAdv | Syncfusion
 description: Learn about customizing sections of calendar in Syncfusion Windows Forms MonthCalendarAdv control and more details.
-platform: WindowsForms
+platform: windowsforms
 control: CalendarDateTime 
 documentation: ug
 ---

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: TextBoxSettings in Windows Forms ButtonEdit | Syncfusion®
 description: TextBox settings for ButtonEdit allow replacing the embedded text box and configuring selection, visibility, and sizing behavior.

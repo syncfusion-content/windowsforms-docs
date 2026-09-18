@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: ToolTip Content in Windows Forms Tooltip | Syncfusion®
 description: ToolTip content supports multiple items, images, custom controls, spacing, alignment, and content layout customization.

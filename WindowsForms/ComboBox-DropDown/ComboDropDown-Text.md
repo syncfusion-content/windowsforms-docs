@@ -2,7 +2,7 @@
 layout: post
 title: Text Settings in Windows Forms ComboDropDown | Syncfusion®
 description: Text settings in Windows Forms ComboDropDown enable configuring character casing, numeric input, read-only mode, and autocomplete behavior.
-platform: WindowsForms
+platform: windowsforms
 control: ComboDropDown
 documentation: ug
 ---

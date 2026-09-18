@@ -2,7 +2,7 @@
 layout: post
 title: Events in Windows Forms DateTimePickerAdv | Syncfusion
 description: Learn about events support in Syncfusion Windows Forms DateTimePickerAdv control, including ValueChanged and more.
-platform: WindowsForms
+platform: windowsforms
 control: DateTimePickerAdv 
 documentation: ug
 ---

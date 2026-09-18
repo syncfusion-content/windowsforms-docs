@@ -3,7 +3,7 @@ layout: post
 title: Image Settings in Windows Forms Radio Button | Syncfusion®
 description: Image settings in Windows Forms Radio Button enable displaying custom images for checked, unchecked, and disabled states with configurable sizing.
 
-platform: WindowsForms
+platform: windowsforms
 control: Radio Button
 documentation: ug
 ---

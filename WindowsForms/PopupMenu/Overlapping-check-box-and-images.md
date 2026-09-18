@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: CheckBox and Image Overlap in Windows Forms PopupMenu | Syncfusion®
 description: Configure OverlapCheckBoxImageBounds to control how checked states and images are rendered in Windows Forms PopupMenu items.

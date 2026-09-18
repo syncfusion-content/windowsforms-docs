@@ -2,7 +2,7 @@
 layout: post
 title: Behavior Settings in Windows Forms NumericUpdown | Syncfusion®
 description: Behavior settings in Windows Forms NumericUpdown enable configuring keyboard input, read-only mode, and value selection behavior for numeric editing.
-platform: WindowsForms
+platform: windowsforms
 control: NumericUpdown
 documentation: ug
 ---

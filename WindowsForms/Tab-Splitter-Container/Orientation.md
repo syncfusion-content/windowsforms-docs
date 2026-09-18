@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Orientation in Windows Forms Tab Splitter Container | Syncfusion®
 description: Orientation settings allow configuring the splitter layout horizontally or vertically to suit different document viewing scenarios.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Scroll Settings in Windows Forms XPTaskPane | Syncfusion®
 description: Scroll settings enable vertical scrolling, automatic page navigation, and configurable scrolling speed for task pages.

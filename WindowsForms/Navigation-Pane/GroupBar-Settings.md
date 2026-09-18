@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
 title: GroupBar Settings in Windows Forms | Syncfusion®
 description: GroupBar settings support integrated scrolling, stacked navigation panes, collapse options, and navigation pane customization.
-platform: WindowsForms
+platform: windowsforms
 control: GroupBar
 documentation: ug
 ---
