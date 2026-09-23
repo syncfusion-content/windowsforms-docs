@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Windows Forms Carousel
 
-This section briefly describes how to create a Windows Forms project in Visual Studio and add the **Carousel** control with its basic functionalities. The Carousel control is a circular conveyor used for displaying and rotating the custom controls or image objects.
+This section briefly describes how to create a Windows Forms project in Visual Studio and add the **WinForms Carousel** control with its basic functionalities. The WinForms Carousel control is a circular conveyor used for displaying and rotating the custom controls or image objects.
 
 ## Assembly deployment
 
@@ -17,9 +17,9 @@ Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/con
 
 Refer to this [documentation](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to find more details about installing NuGet packages in an application.
 
-## Adding Carousel control via designer
+## Adding WinForms Carousel control via designer
 
-The following steps describe how to create a **Carousel** control via designer.
+The following steps describe how to create a **WinForms Carousel** control via designer.
 
 1. Create a new Windows Forms application in Visual Studio.
 
@@ -34,9 +34,9 @@ The following steps describe how to create a **Carousel** control via designer.
 
 ![Search Carousel control in toolbox](Getting-Started_images/Carousel_Toolbox1.png) 
 
-## Adding Carousel control via code
+## Adding WinForms Carousel control via code
 
-The following steps describe how to create a **Carousel** control programmatically:
+The following steps describe how to create a **WinForms Carousel** control programmatically:
 
 1. Create a C# or VB application via Visual Studio.
 
@@ -68,7 +68,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4. Create an instance of the [Carousel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Carousel.html) control, and then add it to the form.
+4. Create an instance of the [WinForms Carousel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Carousel.html) control, and then add it to the form.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -89,9 +89,9 @@ Me.Controls.Add(carousel1)
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-## Adding controls into Carousel
+## Adding controls into WinForms Carousel
 
-You can load custom controls in Carousel, and it needs to be added into the [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Carousel.html#Syncfusion_Windows_Forms_Tools_Carousel_Items) collection property in Carousel class.
+You can load custom controls in WinForms Carousel, and it needs to be added into the [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Carousel.html#Syncfusion_Windows_Forms_Tools_Carousel_Items) collection property in Carousel class.
 
 {% tabs %}
 
@@ -197,9 +197,9 @@ carousel1.Items.Add(buttonAdv6)
 
 ![Button controls added in Carousel through code](Getting-Started_images/Carousel_item.gif) 
 
-## Adding images into Carousel
+## Adding images into WinForms Carousel
 
-You can load images in Carousel, it needs to added into [ImageListCollection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Carousel.html#Syncfusion_Windows_Forms_Tools_Carousel_ImageListCollection) property in Carousel class.
+You can load images in WinForms Carousel, it needs to added into [ImageListCollection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Carousel.html#Syncfusion_Windows_Forms_Tools_Carousel_ImageListCollection) property in Carousel class.
 
 {% tabs %}
 

@@ -13,19 +13,19 @@ documentation: ug
 
 Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sfbutton) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. 
 
-## Adding SfButton into a Form
+## Adding WinForms Button into a Form
 
-This section describes how to add the SfButton to a form.
+This section describes how to add the WinForms Button to a form.
 
 ### Through Designer
 
-To add the SfButton to form, drag and drop the SfButton from the toolbox to the surface of the form designer.
+To add the WinForms Button to form, drag and drop the WinForms Button from the toolbox to the surface of the form designer.
 
 ![SfButton_img1](SfButton_images/SfButton_img1.jpeg)
 
 ### Through Code
 
-To programmatically add the SfButton to form, create a new instance of the SfButton and add it to the form the Controls collection.
+To programmatically add the WinForms Button to form, create a new instance of the WinForms Button and add it to the form the Controls collection.
 
 
 {% tabs %}
@@ -46,12 +46,12 @@ this.Controls.Add(sfButton1);
 {% endhighlight %}
 {% endtabs %}
 
-## Performing Action on the SfButton Click
+## Performing Action on the WinForms Button Click
 
-The SfButton allows adding the click event in two ways:
+The WinForms Button allows adding the click event in two ways:
 
-1. Adding the click event by double clicking the SfButton in designer.
-2. Programmatically raises the clicking event of the SfButton.
+1. Adding the click event by double clicking the WinForms Button in designer.
+2. Programmatically raises the clicking event of the WinForms Button.
 
 {% capture codesnippet1 %}
 {% tabs %}

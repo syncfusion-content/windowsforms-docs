@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Button Content in Windows Forms Button control | Syncfusion®
 description: Button Content in SfButton supports rich text, text wrapping, ellipsis, content alignment, and automatic sizing.
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Adding Rich Text
 
-The rich text can be displayed inside the SfButton by enabling the [AllowRichText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_AllowRichText) property and the proper rich text can be added in the [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_Text) property.
+The rich text can be displayed inside the WinForms Button by enabling the [AllowRichText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_AllowRichText) property and the proper rich text can be added in the [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_Text) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -31,7 +31,7 @@ this.sfButton1.Text = "{\\rtf1\\ansi\\deff0{\\colortbl;\\red0\\green0\\blue0;\\r
 
 ## Wrapping the Text
 
-The text can be wrapped in the SfButton by setting the [AllowWrapText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_AllowWrapText) property to true.
+The text can be wrapped in the WinForms Button by setting the [AllowWrapText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_AllowWrapText) property to true.
 
 {% tabs %}
 {% highlight c# %}
@@ -46,11 +46,11 @@ sfButton1.AllowWrapText = true;
 
 ![SfButton_img7](SfButton_images/SfButton_img7.jpeg)
 
-**Note**: If the AutoSize property is enabled, the SfButton does not allow you to wrap the text.
+**Note**: If the AutoSize property is enabled, the WinForms Button does not allow you to wrap the text.
 
 ## Trimming and Showing Ellipsis Character
 
-The ellipsis character can be shown inside the SfButton by enabling the [AllowEllipsis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_AutoEllipsis) property.
+The ellipsis character can be shown inside the WinForms Button by enabling the [AllowEllipsis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_AutoEllipsis) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -62,11 +62,11 @@ sfButton1.AutoEllipsis = true;
 
 ![SfButton_img8](SfButton_images/SfButton_img8.jpeg)
 
-**Note**: The SfButton will trim the characters only when disabling the AutoSize property and text length should be greater than the button width.
+**Note**: The WinForms Button will trim the characters only when disabling the AutoSize property and text length should be greater than the button width.
 
-## Auto Fit the SfButton
+## Auto Fit the WinForms Button
 
-The SfButton allows auto fitting the size based on the content by setting the [AutoSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_AutoSize) property to true.
+The WinForms Button allows auto fitting the size based on the content by setting the [AutoSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_AutoSize) property to true.
 
 {% tabs %}
 {% highlight c# %}
@@ -77,7 +77,7 @@ sfButton1.AutoSize = true;
 
 ## Content Alignment
 
-This section describes how to change the text and image alignment inside the SfButton.
+This section describes how to change the text and image alignment inside the WinForms Button.
 
 ### Text
 
