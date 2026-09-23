@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Drag and Drop in Windows Forms TreeView | Syncfusion®
 description: Drag-and-drop support enables node movement, drag feedback, drop validation, highlighting, and selection management.
@@ -265,7 +265,7 @@ The below image indicates dragging of "Brazil" node.
 
 ## Selection Settings While Drag Drop
 
-While performing a drag and drop operation, when a node is selected and dragged, the node will be drawn with a dotted rectangle, when it loses focus. This feature is enabled by setting the `KeepDottedSelection` property of the TreeViewAdv to true.
+While performing a drag and drop operation, when a node is selected and dragged, the node will be drawn with a dotted rectangle, when it loses focus. This feature is enabled by setting the `KeepDottedSelection` property of the WinForms TreeView to true.
 
 The semi-transparent image which is drawn besides the cursor, during the drag and drop operation, can be displayed at a distance from the mouse cursor, by enabling the KeepDragCapturePoint property.
 
@@ -276,7 +276,7 @@ The semi-transparent image that is drawn, can be hidden or shown using the `Show
 <table>
 <tr>
 <th>
-treeViewAdv Property</th><th>
+WinForms TreeView Property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -299,7 +299,7 @@ To cancel the selection or editing, use `CancelMode` and `CancelEditMode` method
 <table>
 <tr>
 <th>
-treeViewAdv methods</th><th>
+WinForms TreeView methods</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -324,12 +324,12 @@ The `FullRowSelect` property allows you to specify if the entire row of the sele
 <table>
 <tr>
 <th>
-TreeViewAdv Property</th><th>
+WinForms TreeView Property</th><th>
 Description</th></tr>
 <tr>
 <td>
 FullRowSelect</td><td>
-Specifies whether the whole row of a treeview needs to be selected on selecting a node of that row.</td></tr>
+Specifies whether the whole row of a WinForms TreeView needs to be selected on selecting a node of that row.</td></tr>
 </table>
 
 <b>Method Table</b>
@@ -337,7 +337,7 @@ Specifies whether the whole row of a treeview needs to be selected on selecting 
 <table>
 <tr>
 <th>
-TreeViewAdv Method</th><th>
+WinForms TreeView Method</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -363,7 +363,7 @@ Me.treeViewAdv1.GetHeightOfRows(1, 2)
 
 ## Highlighting Drag and Drop
 
-Drag drop operation in the TreeView can display a highlighted line during dragging. TreeView uses a helper class, i.e., `TreeViewAdvDragHighlightTracker` for this purpose. This keeps track of the highlighted node and also provides the destination where the user had decided to drop. It also allows validation whether to drag / drop a node to another node or not. We need to use the tracker class for this purpose.
+Drag drop operation in the WinForms TreeView can display a highlighted line during dragging. It uses a helper class, i.e., `TreeViewAdvDragHighlightTracker` for this purpose. This keeps track of the highlighted node and also provides the destination where the user had decided to drop. It also allows validation whether to drag / drop a node to another node or not. We need to use the tracker class for this purpose.
 
 {% tabs %}
 {% highlight c# %}
@@ -467,7 +467,7 @@ This can be done using TreeViewAdvDragHighlightTracker.QueryDragInsertInfo event
 <table>
 <tr>
 <th>
-TreeViewAdv Property</th><th>
+WinForms TreeView Property</th><th>
 Description</th></tr>
 <tr>
 <td>
