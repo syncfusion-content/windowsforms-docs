@@ -11,7 +11,7 @@ documentation: ug
 
 ## Stacking column chart
 
-Stacking column chart are similar to regular column charts, except that the Y values are stacked on top of each other in the order of the series. This helps visualize how each part contributes to the whole.
+[Stacked Column Chart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeriesType.html#Syncfusion_Windows_Forms_Chart_ChartSeriesType_StackingColumn) represents data values in a stacked format, where the columns are stacked on top of each other to indicate the cumulative value of the data points.
 
 The following code example demonstrates how to create a stacking column chart.
 
@@ -65,7 +65,7 @@ chartControl.Series.Add(secondServer)
 
 ## Stacking column 100 chart
 
-A Stacking column 100 chart is similar to a stacking column chart, except that the stacked values in each column always add up to 100%.
+[StackedColumn100 Chart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeriesType.html#Syncfusion_Windows_Forms_Chart_ChartSeriesType_StackingColumn100) is a type of stacked chart used to display the proportion of different categories within a single column. The columns are stacked on top of each other, and the cumulative proportion of each column always comes adds up to 100%
 
 The following code example demonstrates how to create a stacking column 100 Chart.
 
@@ -119,7 +119,7 @@ chartControl.Series.Add(secondServer)
 
 ## Stacking bar chart
 
-Stacking bar chart are similar to regular bar chart, but the Y values are stacked on top of each other in the specified series order. This helps visualize the relationship of parts to a whole. 
+[Stacking Bar Chart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeriesType.html#Syncfusion_Windows_Forms_Chart_ChartSeriesType_StackingBar) displays multiple data series as horizontally stacked segments within each bar. This helps visualize the contribution of each series to the total value. When only one series is displayed, the chart resembles a standard Bar Chart.
 
 The following code example demonstrates how to create a stacking bar chart.
 
@@ -169,9 +169,9 @@ chartControl.Series.Add(secondServer)
 
 ![Stacking Bar Chart in Windows Forms](../Chart-Types_images/windowsforms-stacking-bar-chart.png)
 
-## Stacking bar100 chart
+## Stacking bar 100 chart
 
-A stacking bar 100 chart is similar to a stacking bar chart, except that the stacked values in each bar always add up to 100%.
+[StackingBar100 Chart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeriesType.html#Syncfusion_Windows_Forms_Chart_ChartSeriesType_StackingBar100) is a type of stacked chart used to display the proportion of different categories within a single bar. The bars are stacked horizontally, and the cumulative proportion of each stacked element always adds up to 100%.
 
 The following code example demonstrates how to create a stacking bar 100 Chart.
 
@@ -223,7 +223,7 @@ chartControl.Series.Add(secondServer)
 
 ## Stacking area chart
 
-A stacking area chart is similar to a standard area chart, but the areas of each series are stacked on top of one another in a specified order.
+[Stacked Area Chart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeriesType.html#Syncfusion_Windows_Forms_Chart_ChartSeriesType_StackingArea) enables users to visually represent data points stacked on top of each other, where the total height indicates the cumulative value of the data points.
 
 The following code example demonstrates how to create a stacking area chart.
 
@@ -275,9 +275,9 @@ chartControl.Series.Add(secondServer)
 
 ![Stacking Area Chart in Windows Forms](../Chart-Types_images/windowsforms-stacking-area-chart.png)
 
-## Stacking area100 chart
+## Stacking area 100 chart
 
-Stacking area 100 chart displays multiple data series as stacked areas, ensuring the cumulative proportion of each element always totals 100%. 
+[Stacked Area Chart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeriesType.html#Syncfusion_Windows_Forms_Chart_ChartSeriesType_StackingArea100) enables users to visually represent data points vertically, one above the other, where the cumulative proportion at each point always adds up to 100%. 
 
 The following code example demonstrates how to create a stacking area 100 Chart.
 
