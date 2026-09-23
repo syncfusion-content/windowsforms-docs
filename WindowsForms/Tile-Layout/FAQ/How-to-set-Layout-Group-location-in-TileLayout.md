@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Layout group location | WindowsForms | Syncfusion
-description: How to set Layout Group location in TileLayout
+description: Learn how to set and customize the Layout Group location in a TileLayout control to organize tiles effectively in Windows Forms.
 platform: windowsforms
 control: TileLayout 
 documentation: ug

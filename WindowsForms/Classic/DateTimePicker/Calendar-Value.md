@@ -33,6 +33,6 @@ Me.dateTimePickerAdv1.MinValue = New System.DateTime(2007, 1, 1, 0, 0, 0, 0)
 
 {% seealso %}
 
-[Customizing the Calendar](https://help.syncfusion.com/scheduler-sdk/winforms/calendar/customizing-the-calendar)
+[Customizing the Calendar](https://help.syncfusion.com/windowsforms/classic/datetimepicker/calendar-customization)
 
 {% endseealso %}

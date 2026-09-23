@@ -827,7 +827,7 @@ public class CustomSelectionController : RowSelectionController
 
 ![Selection using custom selection controller in windows forms datagrid](Selection_images/selection12.png)
 
-Samples Link: [SelectAllRows ](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/Select_all_the_default_rows1173780600.zip?AWSAccessKeyId=AKIAWH6GYCX3XVMXIRHP&Expires=1789628062&Signature=0vXBkTodYn3nW%2B7o%2FNUUJair0ow%3D)
+Samples Link: [SelectAllRows ](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/Select_all_the_default_rows1173780600.zip)
 
 ### Change Enter key behavior
 

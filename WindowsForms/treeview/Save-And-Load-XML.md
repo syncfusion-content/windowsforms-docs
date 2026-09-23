@@ -206,4 +206,4 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-You can download the sample [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/TREEVI~1932187720.zip?AWSAccessKeyId=AKIAWH6GYCX3XVMXIRHP&Expires=1789628860&Signature=MEzwcHXsy%2FOPVJri5BR4XOE%2Bo%2BY%3D).
+You can download the sample [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/TREEVI~1932187720.zip).

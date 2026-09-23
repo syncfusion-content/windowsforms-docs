@@ -435,7 +435,7 @@ Private )
 {% endtabs %}
 
 Download sample from below location,
-**Sample** - [Custom Grouping](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/Custom_Grouping640245417.zip?AWSAccessKeyId=AKIAWH6GYCX3XVMXIRHP&Expires=1789628005&Signature=8nIFuoPpkjT1XN76zn3Yp7YZVgk%3D#)
+**Sample** - [Custom Grouping](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/Custom_Grouping640245417.zip)
 
 
 ### Cancel Expanding of Groups

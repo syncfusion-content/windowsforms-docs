@@ -1542,7 +1542,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[QUARTILE.EXC](https://support.microsoft.com/en-us/excel/quartile-exc-function)'| markdownify }}
+<td>{{'[QUARTILE.EXC](https://support.microsoft.com/en-us/excel/functions/quartile-exc-function)'| markdownify }}
 </td></tr>
 <tr>
 <td>{{'[QUARTILE.INC](/windowsforms/calculation-engine/supported-formulas/statistical#quartileinc)'| markdownify }}</td>
@@ -1681,7 +1681,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[T.DIST](https://support.microsoft.com/en-us/office/t-dist-function-4329459f-ae91-48c2-bba8-1ead1c6c21b2)'| markdownify }}</td></tr>
+<td>{{'[T.DIST](https://support.microsoft.com/en-us/excel/functions/t-dist-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[T.INV](/windowsforms/calculation-engine/supported-formulas/statistical#tinv)'| markdownify }}</td>
 <td>yes</td>
@@ -1689,7 +1689,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[T.INV](https://support.microsoft.com/en-us/office/t-inv-function-2908272b-4e61-4942-9df9-a25fec9b0e2e)'| markdownify }}</td></tr>
+<td>{{'[T.INV](https://support.microsoft.com/en-us/excel/functions/t-inv-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[TRIMMEAN](/windowsforms/calculation-engine/supported-formulas/statistical#trimmean)'| markdownify }}</td>
 <td>yes</td>
@@ -1831,7 +1831,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[BITAND](https://support.microsoft.com/en-us/office/bitand-function-8a2be3d7-91c3-4b48-9517-64548008563a)'| markdownify }}</td></tr>
+<td>{{'[BITAND](https://support.microsoft.com/en-us/excel/functions/bitand-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[BITLSHIFT](/windowsforms/calculation-engine/supported-formulas/engineering#bitlshift)'| markdownify }}</td>
 <td>yes</td>
@@ -1871,7 +1871,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[COMPLEX](https://support.microsoft.com/en-us/office/complex-function-f0b8f3a9-51cc-4d6d-86fb-3a9362fa4128)'| markdownify }}</td></tr>
+<td>{{'[COMPLEX](https://support.microsoft.com/en-us/excel/functions/complex-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[CONVERT](/windowsforms/calculation-engine/supported-formulas/engineering#convert)'| markdownify }}</td>
 <td>yes</td>
@@ -1887,7 +1887,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[DEC2BIN](https://support.microsoft.com/en-us/office/dec2bin-function-0f63dd0e-5d1a-42d8-b511-5bf5c6d43838)'| markdownify }}</td></tr>
+<td>{{'[DEC2BIN](https://support.microsoft.com/en-us/excel/functions/dec2bin-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[DEC2OCT](/windowsforms/calculation-engine/supported-formulas/engineering#dec2oct)'| markdownify }}</td>
 <td>yes</td>
@@ -1903,7 +1903,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[DEC2HEX](https://support.microsoft.com/en-us/office/dec2hex-function-6344ee8b-b6b5-4c6a-a672-f64666704619)'| markdownify }}</td></tr>
+<td>{{'[DEC2HEX](https://support.microsoft.com/en-us/excel/functions/dec2hex-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[DELTA](/windowsforms/calculation-engine/supported-formulas/engineering#delta)'| markdownify }}</td>
 <td>yes</td>
@@ -1911,7 +1911,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[DELTA](https://support.microsoft.com/en-us/office/delta-function-2f763672-c959-4e07-ac33-fe03220ba432)'| markdownify }}</td></tr>
+<td>{{'[DELTA](https://support.microsoft.com/en-us/excel/functions/delta-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[ERF](/windowsforms/calculation-engine/supported-formulas/engineering#erf)'| markdownify }}</td>
 <td>yes</td>
@@ -1963,7 +1963,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[HEX2BIN](https://support.microsoft.com/en-us/office/hex2bin-function-a13aafaa-5737-4920-8424-643e581828c1)'| markdownify }}</td></tr>
+<td>{{'[HEX2BIN](https://support.microsoft.com/en-us/excel/functions/hex2bin-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[HEX2OCT](/windowsforms/calculation-engine/supported-formulas/engineering#hex2oct)'| markdownify }}</td>
 <td>yes</td>
@@ -1979,7 +1979,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[HEX2DEC](https://support.microsoft.com/en-us/office/hex2dec-function-8c8c3155-9f37-45a5-a3ee-ee5379ef106e)'| markdownify }}</td></tr>
+<td>{{'[HEX2DEC](https://support.microsoft.com/en-us/excel/functions/hex2dec-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[IMABS](/windowsforms/calculation-engine/supported-formulas/engineering#imabs)'| markdownify }}</td>
 <td>yes</td>
@@ -2157,7 +2157,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[IMSUB](https://support.microsoft.com/en-us/office/imsub-function-2e404b4d-4935-4e85-9f52-cb08b9a45054)'| markdownify }}</td></tr>
+<td>{{'[IMSUB](https://support.microsoft.com/en-us/excel/functions/imsub-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[IMSQRT](/windowsforms/calculation-engine/supported-formulas/engineering#imsqrt)'| markdownify }}</td>
 <td>yes</td>
@@ -2298,7 +2298,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[ISOWEEKNUM](https://support.microsoft.com/en-us/office/isoweeknum-function-1c2d0afe-d25b-4ab1-8894-8d0520e90e0e)'| markdownify }}</td>
+<td>{{'[ISOWEEKNUM](https://support.microsoft.com/en-us/excel/functions/isoweeknum-function)'| markdownify }}</td>
 </tr>
 <tr>
 <td>{{'[MINUTE](/windowsforms/calculation-engine/supported-formulas/date-time#minute)'| markdownify }}</td>
@@ -2307,7 +2307,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[MINUTE](https://support.microsoft.com/en-us/office/minute-function-af728df0-05c4-4b07-9eed-a84801a60589)'| markdownify }}</td></tr>
+<td>{{'[MINUTE](https://support.microsoft.com/en-us/excel/functions/minute-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[MONTH](/windowsforms/calculation-engine/supported-formulas/date-time#month)'| markdownify }}</td>
 <td>yes</td>
@@ -2364,7 +2364,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[TIMEVALUE](https://support.microsoft.com/en-us/office/timevalue-function-0b615c12-33d8-4431-bf3d-f3eb6d186645)'| markdownify }}</td>
+<td>{{'[TIMEVALUE](https://support.microsoft.com/en-us/excel/functions/timevalue-function)'| markdownify }}</td>
 </tr>
 <tr>
 <td>{{'[TODAY](/windowsforms/calculation-engine/supported-formulas/date-time#today)'| markdownify }}</td>
@@ -2427,7 +2427,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[ASC](https://support.microsoft.com/en-us/office/asc-function-0b6abf1c-c663-4004-a964-ebc00b723266)'| markdownify }}</td></tr>
+<td>{{'[ASC](https://support.microsoft.com/en-us/excel/functions/asc-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[CHAR](/windowsforms/calculation-engine/supported-formulas/text-formulas#char)'| markdownify }}</td>
 <td>yes</td>
@@ -2451,7 +2451,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[CODE](https://support.microsoft.com/en-us/office/code-function-c32b692b-2ed0-4a04-bdd9-75640144b928)'| markdownify }}</td></tr>
+<td>{{'[CODE](https://support.microsoft.com/en-us/excel/functions/code-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[CONCAT](/windowsforms/calculation-engine/supported-formulas/text-formulas#concat)'| markdownify }}</td>
 <td>yes</td>
@@ -2501,7 +2501,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[FIXED](https://support.microsoft.com/en-us/office/fixed-function-ffd5723c-324c-45e9-8b96-e41be2a8274a)'| markdownify }}</td></tr>
+<td>{{'[FIXED](https://support.microsoft.com/en-us/excel/functions/fixed-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[JIS](/windowsforms/calculation-engine/supported-formulas/text-formulas#jis)'| markdownify }}</td>
 <td>yes</td>
@@ -2549,7 +2549,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[LOWER](https://support.microsoft.com/en-us/office/lower-function-3f21df02-a80c-44b2-afaf-81358f9fdeb4)'| markdownify }}</td></tr>
+<td>{{'[LOWER](https://support.microsoft.com/en-us/excel/functions/lower-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[MID](/windowsforms/calculation-engine/supported-formulas/text-formulas#mid)'| markdownify }}</td>
 <td>yes</td>
@@ -2608,7 +2608,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[REPT](https://support.microsoft.com/en-us/office/rept-function-04c4d778-e712-43b4-9c15-d656582bb061)'| markdownify }}</td></tr>
+<td>{{'[REPT](https://support.microsoft.com/en-us/excel/functions/rept-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[RIGHT](/windowsforms/calculation-engine/supported-formulas/text-formulas#right)'| markdownify }}</td>
 <td>yes</td>
@@ -2660,7 +2660,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[T](https://support.microsoft.com/en-us/office/t-function-fb83aeec-45e7-4924-af95-53e073541228)'| markdownify }}</td></tr>
+<td>{{'[T](https://support.microsoft.com/en-us/excel/functions/t-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[TEXT](/windowsforms/calculation-engine/supported-formulas/text-formulas#text)'| markdownify }}</td>
 <td>yes</td>
@@ -2761,7 +2761,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[FALSE](https://support.microsoft.com/en-us/office/false-function-2d58dfa5-9c03-4259-bf8f-f0ae14346904)'| markdownify }}</td></tr>
+<td>{{'[FALSE](https://support.microsoft.com/en-us/excel/functions/false-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[IFERROR](/windowsforms/calculation-engine/supported-formulas/logical-formulas#iferror)'| markdownify }}</td>
 <td>yes</td>
@@ -2785,7 +2785,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[NOT](https://support.microsoft.com/en-us/article/not-function-9cfc6011-a054-40c7-a140-cd4ba2d87d771)'| markdownify }}</td></tr>
+<td>{{'[NOT](https://support.microsoft.com/en-us/excel/functions/not-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[SWITCH](/windowsforms/calculation-engine/supported-formulas/logical-formulas#switch)'| markdownify }}</td>
 <td>yes</td>
@@ -2809,7 +2809,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[XOR](https://support.microsoft.com/en-us/office/xor-function-1548d4c2-5e47-4f77-9a92-0533bba14f37)'| markdownify }}</td></tr>
+<td>{{'[XOR](https://support.microsoft.com/en-us/excel/functions/xor-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[OR](/windowsforms/calculation-engine/supported-formulas/logical-formulas#or)'| markdownify }}</td>
 <td>yes</td>
@@ -2846,7 +2846,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[AREAS](https://support.microsoft.com/en-us/office/areas-function-8392ba32-7a41-43b3-96b0-3695d2ec6152)'| markdownify }}</td></tr>
+<td>{{'[AREAS](https://support.microsoft.com/en-us/excel/functions/areas-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[CHOOSE](/windowsforms/calculation-engine/supported-formulas/lookup-and-reference#choose)'| markdownify }}</td>
 <td>yes</td>
@@ -2870,7 +2870,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[COLUMNS](https://support.microsoft.com/en-us/office/columns-function-4e8e7b4e-e603-43e8-b177-956088fa48ca)'| markdownify }}</td></tr>
+<td>{{'[COLUMNS](https://support.microsoft.com/en-us/excel/functions/columns-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[FORMULATEXT](/windowsforms/calculation-engine/supported-formulas/lookup-and-reference#formulatext)'| markdownify }}</td>
 <td>yes</td>
@@ -2959,7 +2959,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[ROWS](https://support.microsoft.com/en-us/office/rows-function-b592593e-3fc2-47f2-bec1-bda493811597)'| markdownify }}</td></tr>
+<td>{{'[ROWS](https://support.microsoft.com/en-us/excel/functions/rows-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[SHEET](/windowsforms/calculation-engine/supported-formulas/information-formulas#sheet)'| markdownify }}</td>
 <td>yes</td>
@@ -2975,7 +2975,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[SHEETS](https://support.microsoft.com/en-us/office/sheets-function-770515eb-e1e8-45ce-8066-b557e5e4b80b)'| markdownify }}</td></tr>
+<td>{{'[SHEETS](https://support.microsoft.com/en-us/excel/functions/sheets-function)'| markdownify }}</td></tr>
 </table>
 
 ## Information Function
@@ -3004,7 +3004,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[ERROR.TYPE](https://support.microsoft.com/en-us/office/error-type-function-10958677-7c8d-44f7-ae77-b9a9ee6eefaa)'| markdownify }}</td>
+<td>{{'[ERROR.TYPE](https://support.microsoft.com/en-us/excel/functions/error-type-function)'| markdownify }}</td>
 </tr>
 <tr>
 <td>{{'[ISBLANK](/windowsforms/calculation-engine/supported-formulas/information-formulas#isblank)'| markdownify }}</td>
@@ -3069,7 +3069,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[INFO](https://support.microsoft.com/en-us/office/info-function-725f259a-0e4b-49b3-8b52-58815c69acae)'| markdownify }}</td></tr>
+<td>{{'[INFO](https://support.microsoft.com/en-us/excel/functions/info-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[ISFORMULA](/windowsforms/calculation-engine/supported-formulas/information-formulas#isformula)'| markdownify }}</td>
 <td>yes</td>
@@ -3093,7 +3093,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[ISEVEN](https://support.microsoft.com/en-us/office/iseven-function-aa15929a-d77b-4fbb-92f4-2f479af55356)'| markdownify }}</td></tr>
+<td>{{'[ISEVEN](https://support.microsoft.com/en-us/excel/functions/iseven-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[ISREF](/windowsforms/calculation-engine/supported-formulas/information-formulas#isref)'| markdownify }}</td>
 <td>yes</td>
@@ -3118,7 +3118,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[N](https://support.microsoft.com/en-us/office/n-function-a624cad1-3635-4208-b54a-29733d1278c9)'| markdownify }}</td></tr>
+<td>{{'[N](https://support.microsoft.com/en-us/excel/functions/n-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[NA](/windowsforms/calculation-engine/supported-formulas/information-formulas#na)'| markdownify }}</td>
 <td>yes</td>
@@ -3126,7 +3126,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[NA](https://support.microsoft.com/en-us/office/na-function-5469c2d1-a90c-4fb5-9bbc-64bd9bb6b47c)'| markdownify }}</td></tr>
+<td>{{'[NA](https://support.microsoft.com/en-us/excel/functions/na-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[TYPE](/windowsforms/calculation-engine/supported-formulas/information-formulas#type)'| markdownify }}</td>
 <td>yes</td>
@@ -3134,7 +3134,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[TYPE](https://support.microsoft.com/en-us/office/type-function-45b4e688-4bc3-48b3-a105-ffa892995899)'| markdownify }}</td></tr>
+<td>{{'[TYPE](https://support.microsoft.com/en-us/excel/functions/type-function)'| markdownify }}</td></tr>
 </table>
 
 ## Web Function
@@ -3155,7 +3155,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>-</td>
 <td>-</td>
-<td>{{'[EncodeURL](https://support.microsoft.com/en-us/office/encodeurl-function-07c7fb90-7c60-4bff-8687-fac50fe33d0e)'| markdownify }}</td>
+<td>{{'[EncodeURL](https://support.microsoft.com/en-us/excel/functions/encodeurl-function)'| markdownify }}</td>
 </tr>
 <tr>
 <td>{{'[WEBSERVICE](/windowsforms/calculation-engine/supported-formulas/web-formulas#webservice)'| markdownify }}</td>
@@ -3164,7 +3164,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>-</td>
 <td>-</td>
-<td>{{'[WEBSERVICE](https://support.microsoft.com/en-us/office/webservice-function-0546a35a-ecc6-4739-aed7-c0b7ce1562c4)'| markdownify }}
+<td>{{'[WEBSERVICE](https://support.microsoft.com/en-us/excel/functions/webservice-function)'| markdownify }}
 </td></tr>
 <tr>
 <td>{{'[FILTERXML](/windowsforms/calculation-engine/supported-formulas/web-formulas#filterxml)'| markdownify }}</td>
@@ -3173,7 +3173,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>-</td>
 <td>-</td>
-<td>{{'[FILTERXML](https://support.microsoft.com/en-us/office/filterxml-function-4df72efc-11ec-4951-86f5-c1374812f5b7)'| markdownify }}</td>
+<td>{{'[FILTERXML](https://support.microsoft.com/en-us/excel/functions/filterxml-function)'| markdownify }}</td>
 </tr>
 </table>
 
@@ -3195,7 +3195,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[ACCRINT](https://support.microsoft.com/en-us/office/accrint-function-fe45d089-6722-4fb3-9379-e1f911d8dc74)'| markdownify }}</td></tr>
+<td>{{'[ACCRINT](https://support.microsoft.com/en-us/excel/functions/accrint-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[CUMIPMT](/windowsforms/calculation-engine/supported-formulas/financial-formulas#cumipmt)'| markdownify }}</td>
 <td>yes</td>
@@ -3203,7 +3203,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[CUMIPMT](https://support.microsoft.com/en-us/office/cumipmt-function-61067bb0-9016-427d-b95b-1a752af0e606)'| markdownify }}</td></tr>
+<td>{{'[CUMIPMT](https://support.microsoft.com/en-us/excel/functions/cumipmt-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[CUMPRINC](/windowsforms/calculation-engine/supported-formulas/financial-formulas#cumprinc)'| markdownify }}</td>
 <td>yes</td>
@@ -3211,7 +3211,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[CUMPRINC](https://support.microsoft.com/en-us/office/cumprinc-function-94a4516d-bd65-41a1-bc16-053a6af4c04d)'| markdownify }}</td></tr>
+<td>{{'[CUMPRINC](https://support.microsoft.com/en-us/excel/functions/cumprinc-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[EFFECT](/windowsforms/calculation-engine/supported-formulas/financial-formulas#effect)'| markdownify }}</td>
 <td>yes</td>
@@ -3219,7 +3219,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[EFFECT](https://support.microsoft.com/en-us/office/effect-function-910d4e4c-79e2-4009-95e6-507e04f11bc4)'| markdownify }}</td></tr>
+<td>{{'[EFFECT]https://support.microsoft.com/en-us/excel/functions/effect-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[DB](/windowsforms/calculation-engine/supported-formulas/financial-formulas#db)'| markdownify }}</td>
 <td>yes</td>
@@ -3227,7 +3227,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[DB](https://support.microsoft.com/en-us/office/db-function-354e7d28-5f93-4ff1-8a52-eb4ee549d9d7)'| markdownify }}</td></tr>
+<td>{{'[DB](https://support.microsoft.com/en-us/excel/functions/db-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[DDB](/windowsforms/calculation-engine/supported-formulas/financial-formulas#ddb)'| markdownify }}</td>
 <td>yes</td>
@@ -3251,7 +3251,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[DOLLAR](https://support.microsoft.com/en-us/office/dollar-function-a6cd05d9-9740-4ad3-a469-8109d18ff611)'| markdownify }}</td></tr>
+<td>{{'[DOLLAR](https://support.microsoft.com/en-us/excel/functions/dollar-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[DOLLARFR](/windowsforms/calculation-engine/supported-formulas/financial-formulas#dollarfr)'| markdownify }}</td>
 <td>yes</td>
@@ -3267,7 +3267,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[DURATION](https://support.microsoft.com/en-us/office/duration-function-b254ea57-eadc-4602-a86a-c8e369334038)'| markdownify }}</td></tr>
+<td>{{'[DURATION](https://support.microsoft.com/en-us/excel/functions/duration-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[FV](/windowsforms/calculation-engine/supported-formulas/financial-formulas#fv)'| markdownify }}</td>
 <td>yes</td>
@@ -3283,7 +3283,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[FVSCHEDULE](https://support.microsoft.com/en-us/office/fvschedule-function-bec29522-bd87-4082-bab9-a241f3fb251d)'| markdownify }}
+<td>{{'[FVSCHEDULE](https://support.microsoft.com/en-us/excel/functions/fvschedule-function)'| markdownify }}
 </td></tr>
 <tr>
 <td>{{'[IPMT](/windowsforms/calculation-engine/supported-formulas/financial-formulas#ipmt)'| markdownify }}</td>
@@ -3292,7 +3292,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[IPMT](https://support.microsoft.com/en-us/office/ipmt-function-5cce0ad6-8402-4a41-8d29-61a0b054cb6f)'| markdownify }}</td></tr>
+<td>{{'[IPMT](https://support.microsoft.com/en-us/excel/functions/ipmt-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[INRATE](/windowsforms/calculation-engine/supported-formulas/financial-formulas#intrate)'| markdownify }}</td>
 <td>yes</td>
@@ -3324,7 +3324,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[MIRR](https://support.microsoft.com/en-us/office/mirr-function-b020f038-7492-4fb4-93c1-35c345b53524)'| markdownify }}</td></tr>
+<td>{{'[MIRR](https://support.microsoft.com/en-us/excel/functions/mirr-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[NPER](/windowsforms/calculation-engine/supported-formulas/financial-formulas#nper)'| markdownify }}</td>
 <td>yes</td>
@@ -3332,7 +3332,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[NPER](https://support.microsoft.com/en-us/office/nper-function-240535b5-6653-4d2d-bfcf-b6a38151d815)'| markdownify }}</td></tr>
+<td>{{'[NPER](https://support.microsoft.com/en-us/excel/functions/nper-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[NPV](/windowsforms/calculation-engine/supported-formulas/financial-formulas#npv)'| markdownify }}</td>
 <td>yes</td>
@@ -3356,7 +3356,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[PPMT](https://support.microsoft.com/en-us/office/ppmt-function-c370d9e3-7749-4ca4-beea-b06c6ac95e1b)'| markdownify }}</td></tr>
+<td>{{'[PPMT](https://support.microsoft.com/en-us/excel/functions/ppmt-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[PV](/windowsforms/calculation-engine/supported-formulas/financial-formulas#pv)'| markdownify }}</td>
 <td>yes</td>

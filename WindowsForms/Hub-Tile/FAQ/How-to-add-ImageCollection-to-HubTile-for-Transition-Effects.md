@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to add ImageCollection to HubTile | WindowsForms | Syncfusion
-description: How to add ImageCollection to HubTile for Transition Effects
+description: Learn how to add an ImageCollection to a HubTile control and create smooth transition effects in Windows Forms applications.
 platform: windowsforms
 control: HubTile
 documentation: ug
@@ -13,7 +13,7 @@ You can achieve this requirement using HubTile [ImageList](https://help.syncfusi
 
 This is configured either through code or form designer.
 
-#### Through code
+## Through code
 
 {% tabs %}
 {% highlight C# %}  
@@ -26,7 +26,7 @@ Me.HubTile1.ImageList = Me.ImageList
 {% endhighlight %}
 {% endtabs %}
 
-#### Through designer
+## Through designer
 
 The following screenshot displays the [ImageListAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_ImageListAdv) property.
 

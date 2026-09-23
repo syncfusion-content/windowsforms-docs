@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to enable/disable HubTile rotation | WindowsForms | Syncfusion
-description: How to enable / disable HubTile rotation transition in runtime
+description: Learn how to enable or disable HubTile rotation transitions at runtime and control tile animation behavior in Windows Forms.
 platform: windowsforms
 control: HubTile
 documentation: ug

@@ -1461,7 +1461,7 @@ Me.sfDataGrid.TableSummaryRows.Add(tableSummaryRow1)
 
 ![Windows forms datagrid showing custom summary](SfDataGrid_Summaries_UG_images/summaries21.png)
 
-You can download the custom summaries demo [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/Custom_Summaries-1592567908.zip?AWSAccessKeyId=AKIAWH6GYCX3XVMXIRHP&Expires=1789628112&Signature=7Y4Umtz2Nq9waTcsZpXHd3uJGM4%3D).
+You can download the custom summaries demo [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/Custom_Summaries-1592567908.zip).
 
 ## See also
 

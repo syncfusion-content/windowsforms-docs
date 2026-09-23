@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How-to-add-Grid-Control-inside-the-SplitterControl | WindowsForms | Syncfusion
-description: how to add grid control inside the splittercontrol
+title: How-to-add-Grid-Control-inside-the-SplitterControl | WindowsForms
+description: Learn how to add and host a GridControl inside a SplitterControl using code and create resizable layouts in Windows Forms applications.
 platform: windowsforms
 control: Splitter
 documentation: ug

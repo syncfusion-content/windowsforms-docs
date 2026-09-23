@@ -21,7 +21,7 @@ I> The Syncfusion® WinForms menu option is available from v17.1.0.32.
 
 Syncfusion® provides the following support in Visual Studio:
 
-1.	[Create Project](https://help.syncfusion.com/windowsforms/visual-studio-integration/create-project): Creates the Syncfusion® WinForms application by adding the required Syncfusion® assemblies and forms.
+1.	[Create Project](https://help.syncfusion.com/windowsforms/visual-studio-integration/template-studio): Creates the Syncfusion® WinForms application by adding the required Syncfusion® assemblies and forms.
 2.	[Item Template](https://help.syncfusion.com/windowsforms/visual-studio-integration/item-template): Adds predefined Syncfusion® items (Forms) and the required Syncfusion® assemblies to the WinForms application.
 3.	[Add References](https://help.syncfusion.com/windowsforms/visual-studio-integration/add-references): Adds the required Syncfusion® assembly to the Windows project reference based on the selected control(s).
 4.	[Toolbox](https://help.syncfusion.com/windowsforms/visual-studio-integration/toolbox-configuration): Configures the Syncfusion® controls in the Visual Studio .NET toolbox.
