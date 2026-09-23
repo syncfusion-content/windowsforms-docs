@@ -9,7 +9,7 @@ documentation: ug
 
 
 
-# How to float control in Windows Forms Docking Manager
+# How to float control in WinForms Docking Control
 
 The `FloatControl` method enables the end users to float a particular control. Using this method, we can float a single control even if it is tabbed with many controls.
 

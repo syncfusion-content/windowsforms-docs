@@ -9,7 +9,7 @@ documentation: ug
 
 # How to set a color palette for Windows Forms Pivot Chart
 
-A custom color palette can be specified in the PivotChart by using the [CustomPalette](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_CustomPalette) color collection.
+A custom color palette can be specified in the WinForms Pivot Chart by using the [CustomPalette](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_CustomPalette) color collection.
 
 {% tabs %}
 

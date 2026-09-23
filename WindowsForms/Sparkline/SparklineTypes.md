@@ -7,7 +7,7 @@ control: Sparkline
 documentation: ug
 ---
 
-# Types in Windows Forms Sparkline
+# Types in WinForms Sparkline
 
 The Sparkline control supports three types of sparklines, and the sparkline control must be bound to a data source by using the [Source](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.SparkLine.html#Syncfusion_Windows_Forms_Chart_SparkLine_Source) property. It supports a variety of data sources such as DataTable and any component that implements the interfaces IEnumerable, ICollection, and IList.
 
@@ -17,7 +17,7 @@ The Sparkline control supports three types of sparklines, and the sparkline cont
 
 ## Drawing Line Sparkline in an Application
 
-The Line type of sparkline represents a set of data points connected by a line. The sparkline type can be changed by using the [Type](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.SparkLine.html#Syncfusion_Windows_Forms_Chart_SparkLine_Type) property.
+The Line type of WinForms Sparkline represents a set of data points connected by a line. The WinForms Sparkline type can be changed by using the [Type](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.SparkLine.html#Syncfusion_Windows_Forms_Chart_SparkLine_Type) property.
 
 Refer to the following code samples to draw the line sparkline.
 
@@ -81,7 +81,7 @@ Me.sparkLine1.Type = SparkLine.SparkLineType.Column
 
 ## Drawing WinLoss Sparkline in an Application
 
-The WinLoss type of sparkline is similar to the Column type, but all columns have equal length for data points. The vertical column direction represents the negative or positive value. The [SparkLineType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.SparkLineType.html) enum is used to set the WinLoss type.
+The WinLoss type of WinForms Sparkline is similar to the Column type, but all columns have equal length for data points. The vertical column direction represents the negative or positive value. The [SparkLineType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.SparkLineType.html) enum is used to set the WinLoss type.
 
 Refer to the following code samples to draw the WinLoss sparkline:
 
@@ -89,7 +89,7 @@ Refer to the following code samples to draw the WinLoss sparkline:
 
 {% highlight c# %}
 
-//Set Sparkline points to Source property
+//Set WinForms Sparkline points to Source property
 this.sparkLine1.Source = new double[] { 30, -20, 80, 20, 40, -50, -30, 70, -40, 50 };
 
 //Set WinLoss type sparkline

@@ -7,9 +7,9 @@ control: ContextMenuStripEx
 documentation: ug
 ---
 
-# Themes in Windows Forms ContextMenuStrip
+# Themes in WinForms Context Menu Strip
 
-Theming is the process of applying rich look and feel to visual elements of a control. The [`Style`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ContextMenuStripEx.html#Syncfusion_Windows_Forms_Tools_ContextMenuStripEx_Style) property is used to set the visual style of ContextMenuStripEx control. This control provides the following theming options:
+Theming is the process of applying rich look and feel to visual elements of a control. The [`Style`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ContextMenuStripEx.html#Syncfusion_Windows_Forms_Tools_ContextMenuStripEx_Style) property is used to set the visual style of WinForms Context Menu Strip control. This control provides the following theming options:
 
 * Default
 * Metro

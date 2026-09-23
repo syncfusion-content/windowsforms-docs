@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance in Windows Forms TreeNavigator | Syncfusion®
+title: Appearance in Windows Forms Tree Navigator | Syncfusion®
 description: Appearance customization in Windows Forms Tree Navigator enables applying visual styles, themes, header customization, colors, and display settings.
 platform: WindowsForms
-control: TreeNavigator 
+control: Tree Navigator 
 documentation: ug
 ---
 
-# Appearance in Windows Forms TreeNavigator
+# Appearance in Windows Forms Tree Navigator
 
 ## Style
 
@@ -19,13 +19,13 @@ documentation: ug
 *	Office2016Black
 *	Office2016DarkGray
 
-The visual style can be applied for the TreeNavigator using Style property.
+The visual style can be applied for the Tree Navigator using Style property.
 
 {% tabs %}
 
 {% highlight c# %}
 
-//Set the visual style of the TreeNavigator control.
+//Set the visual style of the Tree Navigator control.
 this.treeNavigator1. Style = Syncfusion.Windows.Forms.Tools.TreeNavigatorStyle.Office2016Colorful; 
 
 {% endhighlight %}
@@ -39,7 +39,7 @@ Me.treeNavigator1.Style = Syncfusion.Windows.Forms.Tools.TreeNavigatorStyle.Offi
 {% endhighlight %}
 
 {% endtabs %}
-![Colorful](Concept-and-Features_images/Colorful.png)
+![Colorful theme in Tree Navigator](Concept-and-Features_images/Colorful.png)
 
 
 ## Header Customization
@@ -97,7 +97,7 @@ Me.treeNavigator1.Header.TextBounds = new Rectangle(40, 0, 30, 20)
 {% endhighlight %}
 
 {% endtabs %}
-![Header](Concept-and-Features_images/Header.png)
+![Header in Tree Navigator](Concept-and-Features_images/Header.png)
 
 
 The Visibility of the tree navigator header can be hidden by setting ShowHeader property to false.
@@ -122,12 +122,12 @@ this.treeNavigator1.ShowHeader = false;
 
 {% endtabs %}
 
-![Noheader1](Concept-and-Features_images/Noheader1.png)
+![Disable header in Tree Navigator](Concept-and-Features_images/Noheader1.png)
 
 
 ## Appearance in Windows Forms Tree Navigator
 
-Border color and Thickness of the TreeNavigator can be customized using properties BorderColor and BorderThickness.
+Border color and Thickness of the Tree Navigator can be customized using properties BorderColor and BorderThickness.
 
 The following code example allows you to customize the border color and border thickness.
 
@@ -157,7 +157,7 @@ Me.treeNavigator1.BorderColor = Color.Black
 
 {% endtabs %}
 
-![Border](Concept-and-Features_images/Border.png)
+![Border in Tree Navigator](Concept-and-Features_images/Border.png)
 
 ## Margin between TreeMenuItems
 In Tree Navigator you can set the gap between items with the help of PadY property. This property can be set using following code
@@ -179,14 +179,14 @@ ME.treeNavigator1.PadY = 10
 
 {% endtabs %}
 
-![Pady](Concept-and-Features_images/Pady.png)
+![Pady in Tree Navigator](Concept-and-Features_images/Pady.png)
 
 ## Appearance in Windows Forms Tree Navigator
 In Tree Navigator you can customize the tree menu items with the help of properties such as ItemBackColor, ItemHoverColor, SelectedColor, SelectedItemForeColor.
 
 *	ItemBackColor – This property is used to set the back color for the tree menu item when it is in normal state. 
 
-Note: This property also available in treenavigator in which it is used to set the backcolor for all the tree menu items present in the treenavigator. However, First priority is given to the TreeMenuItem ItemBackColor. For example: If the TreeMenuItem is set to some backcolor then that color is set to that item irrespective of TreeNavigator ItemBackColor.
+Note: This property also available in tree navigator in which it is used to set the backcolor for all the tree menu items present in the tree navigator. However, First priority is given to the TreeMenuItem ItemBackColor. For example: If the TreeMenuItem is set to some backcolor then that color is set to that item irrespective of Tree Navigator ItemBackColor.
 
 *	ItemHoverColor – This property is used to set the hover color for the tree menu item when it is in hover state.
 *	SelectedColor - This property is used to set the back color for the selected tree menu item.
@@ -199,7 +199,7 @@ The following code example allows you to customize the TreeMenuItem
 
 {% highlight c# %}
 
-//To customize backcolor for all the tree menu items in the treenavigator
+//To customize backcolor for all the tree menu items in the tree navigator
 this.treeNavigator1.ItemBackColor = Color.LightYellow;
 
 //To customize the tree menu item backcolor
@@ -219,7 +219,7 @@ this.treeMenuItem4.SelectedItemForeColor = Color.Blue;
 
 {% highlight vb %}
 
-‘To customize backcolor for all the tree menu items in the treenavigator
+‘To customize backcolor for all the tree menu items in the tree navigator
 Me.treeNavigator1.ItemBackColor = Color.LightYellow
 
 ‘To customize the tree menu item backcolor
@@ -238,7 +238,7 @@ Me.treeMenuItem4.SelectedItemForeColor = Color.Blue
 
 {% endtabs %}
 
-![TreemenuitemCustomize](Concept-and-Features_images/TreemenuitemCustomize.png)
+![TreemenuitemCustomize in Tree Navigator](Concept-and-Features_images/TreemenuitemCustomize.png)
 
 
 ## Appearance in Windows Forms Tree Navigator
@@ -265,4 +265,4 @@ treeNavigator1.TextAlign = TextAlignment.Center
 {% endhighlight %}
 
 {% endtabs %}
-![TextAlign](Concept-and-Features_images/TextAlign.png)
+![TextAlign in Tree Navigator](Concept-and-Features_images/TextAlign.png)

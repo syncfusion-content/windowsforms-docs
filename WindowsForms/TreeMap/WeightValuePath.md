@@ -7,7 +7,7 @@ control: TreeMap
 documentation: ug
 ---
 
-# Weight Value Path in Windows Forms TreeMap
+# Weight Value Path in WinForms TreeMap
 
 The [`WeightValuePath`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TreeMap.TreeMap.html#Syncfusion_Windows_Forms_TreeMap_TreeMap_WeightValuePath) of the tree map control is a path to a field on the source object that serves as the "weight" of the object. 
 

@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# How to find closing in Windows Forms Docking Manager
+# How to find closing in WinForms Docking Control
 
 This can be achieved by using the DockVisibilityChanged event which occurs after a control's DockVisibility state has changed.
 The Control member of this event gets the control which is undergoing the visibility change.

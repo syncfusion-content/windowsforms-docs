@@ -7,13 +7,13 @@ control: DockingManager
 documentation: ug
 ---
 
-# Floating Window in Windows Forms Docking Manager
+# Floating Window in WinForms Docking Control
 
-DockPanels can be floated by clicking and dragging the the panel header using mouse interaction. Floating window can be dragged over any place in the screen. Docking hints will be displayed while dragging the floating window over the docking manager or any other dock panels.
+DockPanels can be floated by clicking and dragging the the panel header using mouse interaction. Floating window can be dragged over any place in the screen. Docking hints will be displayed while dragging the floating window over the WinForms Docking Control or any other dock panels.
 
 ## Enabling/disabling the float functionality
 
-By default, all dock panels can be floated in the docking manager. The `DockingManager` provides option to restrict users for creating float windows. The [DisallowFloating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_DisallowFloating) property helps to enable or disable the floating functionality. The default value of this property is `false`. You can restrict the creation of float window by setting the value of DisallowFloating property to `true`. The dock panel will be docked again at the existing position when dragging it to create a float window when the `DisallowFloating` property is set to `true`.
+By default, all dock panels can be floated in the WinForms Docking Control. The `WinForms Docking Control` provides option to restrict users for creating float windows. The [DisallowFloating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_DisallowFloating) property helps to enable or disable the floating functionality. The default value of this property is `false`. You can restrict the creation of float window by setting the value of DisallowFloating property to `true`. The dock panel will be docked again at the existing position when dragging it to create a float window when the `DisallowFloating` property is set to `true`.
 
 {% tabs %}
 
@@ -63,7 +63,7 @@ Me.dockingManager1.SetAllowFloating(panel1, False)
 
 ## Changing dock state to float by programmatically
 
-The docking manager provides option to float the particular control programmatically by using [FloatControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_FloatControl_System_Windows_Forms_Control_System_Drawing_Rectangle_) function. Using this function, you can float a single control even if it is tabbed with many controls.
+The WinForms Docking Control provides option to float the particular control programmatically by using [FloatControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_FloatControl_System_Windows_Forms_Control_System_Drawing_Rectangle_) function. Using this function, you can float a single control even if it is tabbed with many controls.
 
 {% tabs %}
 
@@ -102,7 +102,7 @@ The docked window can be moved to `Float` state by clicking its caption and drag
 
 ### Double-click on caption
 
-The dock panels state can be changed from dock to float and vice-versa by double-clicking the caption in docking manager by default. The docking manager provides option to disable this functionality by setting the [EnableDoubleClickOnCaption](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_EnableDoubleClickOnCaption) property to `false`.
+The dock panels state can be changed from dock to float and vice-versa by double-clicking the caption in WinForms Docking Control by default. The WinForms Docking Control provides option to disable this functionality by setting the [EnableDoubleClickOnCaption](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_EnableDoubleClickOnCaption) property to `false`.
 
 {% tabs %}
 
@@ -127,7 +127,7 @@ Me.dockingManager1.EnableDoubleClickOnCaption = False
 
 ## Maximize float window
 
-In docking manager, you can maximize the float window by double-clicking its caption bar.
+In WinForms Docking Control, you can maximize the float window by double-clicking its caption bar.
 
 ### Maximize the float window on double-click caption
 
@@ -235,7 +235,7 @@ AddHandler dockingManager1.OnCaptionDoubleClick, AddressOf dockingManager1_OnCap
 
 ## Restrict to dock on specific sides
 
-Users can restrict the specific [DockAbility](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockAbility.html) of child window when it is moved to the client area in docking manager by using the [SetOuterDockAbility](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SetOuterDockAbility_System_Windows_Forms_Control_Syncfusion_Windows_Forms_Tools_DockAbility_) function. Here, the right, left, tabbed, and fill dock ability have been restricted.
+Users can restrict the specific [DockAbility](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockAbility.html) of child window when it is moved to the client area in WinForms Docking Control by using the [SetOuterDockAbility](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SetOuterDockAbility_System_Windows_Forms_Control_Syncfusion_Windows_Forms_Tools_DockAbility_) function. Here, the right, left, tabbed, and fill dock ability have been restricted.
 
 {% tabs %}
 
@@ -258,7 +258,7 @@ Me.dockingManager1.SetOuterDockAbility(panel1, Syncfusion.Windows.Forms.Tools.Do
 
 ## Show custom buttons in float window
 
-The docking manager provides support to add custom buttons to the caption bar when an item is in floating state. To enable custom button for caption bar while floating, set the [ShowCustomButtonsInFloating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_ShowCustomButtonsInFloating) property to `true`.
+The WinForms Docking Control provides support to add custom buttons to the caption bar when an item is in floating state. To enable custom button for caption bar while floating, set the [ShowCustomButtonsInFloating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_ShowCustomButtonsInFloating) property to `true`.
 
 {% tabs %}
 
@@ -283,7 +283,7 @@ N> This feature is not applicable for VS2005 (default) Visual Style.
 
 ## Change border size of float window
 
-The border thickness of the float window can be changed using the  [MetroBorderWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_MetroBorderWidth) property. The default value of this property is `one`. This property is applicable only if the Visual Style of the docking manager is `Metro`.
+The border thickness of the float window can be changed using the  [MetroBorderWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_MetroBorderWidth) property. The default value of this property is `one`. This property is applicable only if the Visual Style of the WinForms Docking Control is `Metro`.
 
 {% tabs %}
 
@@ -310,7 +310,7 @@ FloatWindow location can be changed by drag and drop through the mouse interacti
 
 ### Change location programmatically
 
-The docking manager provides option to change the FloatWindow location by programmatically. To position the FloatWindow at the desired location with the required rectangle bounds, call [FloatControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_FloatControl_System_Windows_Forms_Control_System_Drawing_Rectangle_) function of the docking manager.
+The WinForms Docking Control provides option to change the FloatWindow location by programmatically. To position the FloatWindow at the desired location with the required rectangle bounds, call [FloatControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_FloatControl_System_Windows_Forms_Control_System_Drawing_Rectangle_) function of the WinForms Docking Control.
 
 {% tabs %}
 
@@ -366,7 +366,7 @@ Me.DockingManager1.ForwardMenuShortcuts=True
 
 ## Restricting re-dock float window
 
-By default, the docking manager allows panel to change its state to any state. To maintain some panels to be in float state always, the docking manager provides a way using the `SetFloatOnly` function. This helps to set the specified window in float state always. The window cannot be docked again.
+By default, the WinForms Docking Control allows panel to change its state to any state. To maintain some panels to be in float state always, the WinForms Docking Control provides a way using the `SetFloatOnly` function. This helps to set the specified window in float state always. The window cannot be docked again.
 
 The [GetFloatOnly](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_GetFloatOnly_System_Windows_Forms_Control_) function helps to get the information whether the specified window is always in float state or not.
 

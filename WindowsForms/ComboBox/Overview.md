@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Syncfusion® Windows Forms SfComboBox Control | Syncfusion®
-description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms SfComboBox control, including data binding, selection, and other key features.
+title: About Syncfusion® Windows Forms ComboBox Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms ComboBox control, including data binding, selection, and other key features.
 platform: windowsforms
-control: SfComboBox
+control: ComboBox
 documentation: ug
 ---
 
-# About Syncfusion® Windows Forms SfComboBox Control
+# About Syncfusion® Windows Forms ComboBox Control
 
 [WinForms ComboBox](https://www.syncfusion.com/winforms-ui-controls/combobox) is a text box component that allows a user to type a value or choose an option from a list of predefined options. It has several out-of-the-box features such as data binding, filtering, UI customization, accessibility, and more.
 
@@ -19,7 +19,7 @@ Key features are:
 * Select all items: Supports choosing all items in a multi-select combo box.
 * Watermark: Helps to prompt users by providing additional hints about the data that should be entered into the text box.
 * Tooltip: Support to show the tooltip when selecting multiple values in the multi-select combo box.
-* Styling: Supports customizing styles and appearance of the SfComboBox control.
+* Styling: Supports customizing styles and appearance of the ComboBox control.
 * Pop-up resizing: Supports resizing the drop-down container using a resize gripper placed at the bottom of the pop-up control.
 * Accessibility: Supports various accessibility features to make applications available to a wide variety of users.
 * Theme: Supports several built-in Office 2016 themes.
@@ -29,13 +29,13 @@ Key features are:
 
 The Syncfusion WinForms suite comes with the following ComboBox controls:
 
-* [SfComboBox](https://www.syncfusion.com/winforms-ui-controls/combobox)
+* [ComboBox](https://www.syncfusion.com/winforms-ui-controls/combobox)
 * [ComboBoxAdv](https://help.syncfusion.com/windowsforms/classic/combobox/overview)
 * [MultiSelectionComboBox](https://www.syncfusion.com/winforms-ui-controls/combobox/multiselect-combobox)
 * [ComboBoxAutoComplete](https://help.syncfusion.com/windowsforms/classic/autocomplete/overview)
 * [MultiColumnComboBox](https://help.syncfusion.com/windowsforms/multicolumn-combobox/overview)
 
-### SfComboBox
+### ComboBox
 
 The [SfComboBox](https://help.syncfusion.com/windowsforms/combobox/overview) textbox component allows the users to type a value or choose an option from a list of predefined options. It has several out-of-box features such as data binding, filtering, UI customization, accessibility, and more.
 
@@ -55,16 +55,16 @@ The [ComboBoxAutoComplete](https://help.syncfusion.com/windowsforms/classic/auto
 
 The [MultiColumnComboBox](https://help.syncfusion.com/windowsforms/multicolumn-combobox/overview) advanced ComboBox control has the capability to show multiple columns in the drop-down list. You can also display headers for the multiple columns.
 
-### SfComboBox vs MultiSelectionComboBox vs ComboBoxAdv
+### ComboBox vs MultiSelectionComboBox vs ComboBoxAdv
 
-The SfComboBox, MultiSelectionComboBox, and ComboBoxAdv controls are used for the same purpose. But, the SfComboBox control offers rich set of features over ComboBoxAdv and MultiSelectionComboBox. For data binding, autocompletion, multiple items selection, UI customization, watermark text, loading custom UI control in drop-down, accessibility, etc., use SfComboBox. Comparatively, SfComboBox has all required features from the ComboBoxAdv, MultiSelectionComboBox, and ComboBoxAutoComplete controls.
+The ComboBox, MultiSelectionComboBox, and ComboBoxAdv controls are used for the same purpose. But, the ComboBox control offers rich set of features over ComboBoxAdv and MultiSelectionComboBox. For data binding, autocompletion, multiple items selection, UI customization, watermark text, loading custom UI control in drop-down, accessibility, etc., use SfComboBox. Comparatively, ComboBox has all required features from the ComboBoxAdv, MultiSelectionComboBox, and ComboBoxAutoComplete controls.
 
-The list of some specific API differences between SfComboBox, MultiSelectionComboBox, and ComboBoxAdv are as follows.
+The list of some specific API differences between ComboBox, MultiSelectionComboBox, and ComboBoxAdv are as follows.
 
 <table>
 <tr>
 <td>
-{{'**SfComboBox**'| markdownify }}
+{{'**ComboBox**'| markdownify }}
 </td>
 <td>
 {{'**MultiSelectionComboBox**'| markdownify }}
@@ -190,7 +190,7 @@ Applies visual styles.
 </tr>
 </table>
 
-The list of features in SfComboBox over ComboBoxAdv and MultiSelectionComboBox are as follows.
+The list of features in ComboBox over ComboBoxAdv and MultiSelectionComboBox are as follows.
 
 <table>
 <tr>

@@ -259,7 +259,7 @@ Me.chartControl1.PrimaryXAxis.ValueType = ChartValueType.Category
 {% endcapture %}
 {{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-## Apply skins to ChartControl
+## Apply skins to WinForms Chart
 
 To improve the appearance of chart, apply **Metro skin** to [ChartControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html) as follows.
 

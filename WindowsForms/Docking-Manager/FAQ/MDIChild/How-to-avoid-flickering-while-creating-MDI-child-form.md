@@ -7,7 +7,7 @@ control: DockingManager
 documentation: ug
 ---
 
-# How to stop MDI flicker in Windows Forms Docking Manager
+# How to stop MDI flicker in WinForms Docking Control
 
 Flickering can occur when creating and docking MDI child forms due to frequent redraws and layout updates. This can be avoided by calling the below methods.
 
