@@ -11,7 +11,7 @@ documentation: ug
 
 ## Pie chart
 
-A pie chart displays data as slices of a circle to show how each value contributes to the whole. The X-values represent the categories, while the Y-values determine the size of each slice.
+[Pie Chart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeriesType.html#Syncfusion_Windows_Forms_Chart_ChartSeriesType_Pie) displays data as slices of a circle to show how each value contributes to the whole. The X-values represent the categories, while the Y-values determine the size of each slice.
 
 The following code example demonstrates how to create a pie chart.
 
@@ -194,6 +194,8 @@ series.ConfigItems.PieItem.FillMode =
 
 The [Gradient](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_Gradient) property specifies the gradient colors applied to the pie chart when the [PieType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieType) property is set to [Custom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieType.html#Syncfusion_Windows_Forms_Chart_ChartPieType_Custom). Since the default value is `null`, the pie chart is rendered without a custom gradient until gradient colors are assigned.
 
+The following code creates a three-color gradient and applies the gradient to the pie chart.
+
 {% tabs %}
 {% highlight c# %}
 
@@ -268,7 +270,7 @@ chartControl.Series(0).ConfigItems.PieItem.LabelStyle = ChartAccumulationLabelSt
 The [PieWithSameRadius](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieWithSameRadius) property maintains the same pie radius when the [LabelStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_LabelStyle) property is set to [Outside](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAccumulationLabelStyle.html#Syncfusion_Windows_Forms_Chart_ChartAccumulationLabelStyle_Outside) or [OutsideInColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAccumulationLabelStyle.html#Syncfusion_Windows_Forms_Chart_ChartAccumulationLabelStyle_OutsideInColumn). The default value is `false`.
 
 N>
-The `PieWithSameRadius` property also applies to `Doughnut` charts.
+The [PieWithSameRadius](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieWithSameRadius) property also applies to `Doughnut` charts.
 
 The following code enables the pie chart to maintain the same radius when labels are rendered outside the pie chart.
 
@@ -288,7 +290,7 @@ chartControl.Series(0).ConfigItems.PieItem.PieWithSameRadius = True
 The [ShowDataBindLabels](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_ShowDataBindLabels) property controls whether labels obtained from the bound data source are displayed on the pie segments, with `false` used as the default value.
 
 N>
-The `ShowDataBindLabels` property also applies to `Doughnut` charts.
+The [ShowDataBindLabels](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_ShowDataBindLabels) property also applies to `Doughnut` charts.
 
 The following code displays labels from the bound data source on the pie chart segments.
 
@@ -435,7 +437,7 @@ chartControl.Series(0).ShowTicks = False
 
 The [HeightByAreaDepth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_HeightByAreaDepth) property controls whether the height of a 3D pie chart is determined by the chart area's [Depth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_Depth) property. By default, this property is set to `false`, and the pie chart height is determined using the [HeightCoefficient](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_HeightCoeficient) property.
 
-N> The HeightByAreaDepth property also applies to `Doughnut` charts.
+N> The [HeightByAreaDepth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_HeightByAreaDepth) property also applies to `Doughnut` charts.
 
 The following code configures the pie chart height based on the chart area's depth.
 
@@ -494,7 +496,7 @@ chartControl.Series(0).ConfigItems.PieItem.PieHeight = 100.0F
 
 The [PieRadius](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieRadius) property controls the radius of the pie chart, allowing its rendered size to be adjusted, with `0f` used as the default value.
 
-N> The PieRadius property also applies to `Doughnut` charts.
+N> The [PieRadius](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieRadius) property also applies to `Doughnut` charts.
 
 The following code sets the pie radius to `100f`.
 
@@ -526,28 +528,11 @@ chartControl.Series(0).ConfigItems.PieItem.PieSize = New SizeF(100.0F, 80.0F)
 
 ![Pie Size in Windows Forms](../Chart-Types_images/windowsforms-pie-chart-height.png)
 
-### Pie tilt
-
-The [PieTilt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_PieTilt) property specifies the tilt angle of an individual pie chart when [MultiplePies](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_MultiplePies) is enabled, with `0f` used as the default value.
-
-The following code sets the pie tilt angle to `30f`.
-
-{% tabs %}
-{% highlight c# %}
-chartControl.Series[0].ConfigItems.PieItem.PieTilt =
-    30f;
-{% endhighlight %}
-{% highlight vb %}
-chartControl.Series(0).ConfigItems.PieItem.PieTilt =
-    30.0F
-{% endhighlight %}
-{% endtabs %}
-
 ### Explode all points
 
 The [ExplodedAll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ExplodedAll) property controls whether all segments are separated from the center of a pie chart. The default value is `false`.
 
-N> The `ExplodedAll` property also applies to `Doughnut` charts.
+N> The [ExplodedAll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ExplodedAll) property also applies to `Doughnut` charts.
 
 The following code explodes all segments in the pie series.
 
@@ -567,7 +552,7 @@ chartControl.Series(0).ExplodedAll = True
 The [ExplodedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ExplodedIndex) property specifies the index of the pie segment to separate from the center. The default value is `-1`, which indicates that no segment is exploded.
 
 N>
-- The `ExplodedIndex` property also applies to `Doughnut` charts.
+- The [ExplodedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ExplodedIndex) property also applies to `Doughnut` charts.
 - The point index is zero-based. For example, a value of `2` explodes the third segment.
 
 The following code explodes the third segment in the pie series.
@@ -588,8 +573,8 @@ chartControl.Series(0).ExplodedIndex = 2
 The [ExplosionOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ExplosionOffset) property specifies the distance between an exploded segment and the center of the pie chart as a percentage. The default value is `20f`.
 
 N>
-- The `ExplosionOffset` property also applies to `Doughnut` charts.
-- The explosion offset is applied only when `ExplodedAll` is set to `true` or a valid segment index is assigned to `ExplodedIndex`.
+- The [ExplosionOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ExplosionOffset) property also applies to `Doughnut` charts.
+- The explosion offset is applied only when [ExplodedAll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ExplodedAll) is set to `true` or a valid segment index is assigned to [ExplodedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_ExplodedIndex).
 
 The following code explodes the fourth segment and sets the explosion offset to `30`.
 

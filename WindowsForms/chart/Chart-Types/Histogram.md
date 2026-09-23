@@ -9,7 +9,7 @@ documentation: ug
 
 # Histogram Chart in Windows Forms Charts
 
-A histogram chart displays the frequency distribution of data by grouping values into continuous intervals and representing them with adjacent bars.
+[Histogram Chart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeriesType.html#Syncfusion_Windows_Forms_Chart_ChartSeriesType_Histogram) displays the frequency distribution of data by grouping values into continuous intervals and representing them with adjacent bars.
 
 The following code example demonstrates how to create a histogram chart.
 
