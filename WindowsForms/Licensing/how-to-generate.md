@@ -1,43 +1,43 @@
 ---
 layout: post
-title: Overview of Syncfusion license generation - Syncfusion
-description: Learn here about how to generate Syncfusion Windows Forms license key for syncfusion Windows Forms application for license validation.
+title: How to generate license key in Windows Forms | Syncfusion®
+description: Generate Syncfusion® Windows Forms license key for license validation in Windows Forms applications.
 platform: WindowsForms
 control: Essential Studio
 documentation: ug
 ---
 
 
-# Generate Syncfusion Windows Forms License key
+# How to generate license key in Windows Forms
 
-License keys for Windows Forms can be generated from the [License & Downloads](https://syncfusion.com/account/downloads) or [Trail & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) section from your Syncfusion account. 
+License keys for Windows Forms can be generated from the [License & Downloads](https://www.syncfusion.com/account/downloads) or [Trial & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) section from your Syncfusion account.
 
 ![Get License Key](licensing-images/generate-license.png)
 
 I> * Syncfusion license keys are **version and platform specific**, refer to the [KB](https://support.syncfusion.com/kb/article/7898/how-to-generate-license-key-for-licensed-products) to generate the license key for the required version and platform.
 * Refer this [KB](https://support.syncfusion.com/kb/article/7865/which-version-syncfusion-license-key-should-i-use-in-my-application) to know about which version of the Syncfusion license key should be used in the application.
 
-## Claim License key
+## Claim License Key
 
-Syncfusion License keys can also be generated from the **"Claim License Key"** page based on the trial or valid license associated with your Syncfusion account.
+Syncfusion license keys can also be generated from the **"Claim License Key"** page based on the trial or valid license associated with your Syncfusion account.
 
 You can get the license key, based on license availability in your Syncfusion account.
 
 ### Active License
 
-If you have a Syncfusion account associated with valid license, license key will be generated from claim license key page.
+If you have a Syncfusion account associated with a valid license, the license key will be generated from the claim license key page.
 
 ![Active License](licensing-images/active-license.png)
 
 ### Active Trial
 
-If you have a Syncfusion account associated with valid trial license, license key will be generated from claim license key page with expiry date.
+If you have a Syncfusion account associated with a valid trial license, the license key will be generated from the claim license key page with an expiry date.
 
 ![Active Trial](licensing-images/active-trial.png)
 
 ### Expired License
 
-If you have a Syncfusion account with an expired license, your license subscription must be renewed in order to obtain a valid license key for the latest Essential Studio version. Meanwhile, a temporary license key with a 5-day validity period will be generated.
+If you have a Syncfusion account with an expired license, your license subscription must be renewed to obtain a valid license key for the latest Essential Studio version. Meanwhile, a temporary license key with a 5-day validity period will be generated.
 
 ![Expired License](licensing-images/expired-license.png)
 
@@ -49,4 +49,4 @@ If the Syncfusion account is not associated with a trial, license, or expired tr
 
 ## See Also
 
-* [How to Register Syncfusion License Key in Windows Forms Application?](https://github.com/syncfusion-content/windowsforms-docs/blob/master/WindowsForms/Licensing/how-to-register-in-an-application.md)
+* [How to Register Syncfusion License Key in Windows Forms Application?](https://help.syncfusion.com/windowsforms/licensing/how-to-register-in-an-application)

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: About Windows Forms AutoLabel control | Syncfusion
-description: Learn about introduction of Syncfusion Essential Studio Windows Forms AutoLabel control and more details.
+title: About Syncfusion® Windows Forms AutoLabel Control | Syncfusion®
+description: Learn about introduction of Syncfusion® Essential Studio Windows Forms AutoLabel control and more details.
 platform: WindowsForms
 control: AutoLabel
 documentation: ug
 ---
 
 
-# Windows Forms AutoLabel Overview
+# About Syncfusion Windows Forms AutoLabel Control
 
 The **AutoLabel** control is a Label-inspired control that lets you pair a label with any other control. Once paired, the AutoLabel is automatically repositioned as the labeled control's position changes.
 

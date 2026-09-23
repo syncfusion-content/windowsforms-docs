@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Simplified Layout in Windows Forms Ribbon control | Syncfusion®
-description: Learn about Simplified Layout support in Syncfusion® Windows Forms Ribbon (RibbonControlAdv) control and more details.
+title: Simplified Layout in Windows Forms Ribbon | Syncfusion®
+description: The Simplified Layout in Ribbon displays commonly used commands in a single line interface, allowing more screen space for content.
 platform: windowsforms
 control: RibbonControlAdv
 documentation: ug
 ---
-# Simplified Layout in Windows Forms Ribbon (RibbonControlAdv)
+# Simplified Layout in Windows Forms Ribbon
 
- The RibbonControlAdv is available in simplified layout which is designed to display the most commonly used Ribbon commands in a single line interface, allowing more screen space for compact viewing of the content. For the best user experience, the other Ribbon commands are located under the overflow menu. It also provides option to switch back and forth between the simplified and the normal layout using the minimize button.
+ The RibbonControlAdv is available in a simplified layout which is designed to display the most commonly used Ribbon commands in a single line interface, allowing more screen space for compact viewing of the content. For the best user experience, the other Ribbon commands are located under the overflow menu. It also provides an option to switch back and forth between the simplified and the normal layout using the minimize button.
 
  The [`LayoutMode`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html#Syncfusion_Windows_Forms_Tools_RibbonControlAdv_LayoutMode) enumeration property provides an option to load the Ribbon control in simplified layout. It contains the following options like:
 

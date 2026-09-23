@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Record Navigation Bar in Windows Forms xptoolbar control | Syncfusion
-description: Learn about Record Navigation Bar support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
+title: Record Navigation Bar in Windows Forms GridDataBoundGrid | Syncfusion®
+description: Navigate records efficiently in the Syncfusion® WinForms GridDataBoundGrid using the Record Navigation Bar for quick access and data browsing.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 
-# Record Navigation Bar in Windows Forms GridDataBoundGrid(Classic)
+# Record Navigation Bar in Windows Forms GridDataBoundGrid
 
 It is possible to display DataBound Grid within Grid Record Navigation control. This combination will give you a look similar to Microsoft Access.
 
@@ -19,7 +19,7 @@ N> For more details, refer to the following browser sample:
 
 **_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Product Showcase\Record Navigation Data Bound Grid Demo_**
 
-### Example
+## Example
 
 The following sample displays DataBound Grid within Grid Record Navigation control. This sample was created using the designer. 
 

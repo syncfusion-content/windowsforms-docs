@@ -1,13 +1,13 @@
 ---
 layout: post
-title: CheckBoxAdv Events in Windows Forms CheckBox control | Syncfusion®
-description: Learn about CheckBoxAdv Events support in Syncfusion® Windows Forms CheckBox (CheckBoxAdv) control and more details.
+title: CheckBoxAdv Events in Windows Forms CheckBoxAdv | Syncfusion®
+description: Learn about CheckBoxAdv Events support in Syncfusion Windows Forms CheckBoxAdv control and more details.
 platform: windowsforms
 control: EditorsPackage
 documentation: ug
 ---
 
-# CheckBoxAdv Events in Windows Forms CheckBox (CheckBoxAdv)
+# CheckBoxAdv Events in Windows Forms CheckBoxAdv
 
 This section gives detailed explanation about the [CheckStateChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) and [CheckedChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) events in [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control.
 

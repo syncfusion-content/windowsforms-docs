@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Windows Forms FontComboBox | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms FontComboBox control, its elements, and more details.
+title: Getting Started with Windows Forms FontComboBox | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms FontComboBox control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
 control: FontComboBox
 documentation: ug

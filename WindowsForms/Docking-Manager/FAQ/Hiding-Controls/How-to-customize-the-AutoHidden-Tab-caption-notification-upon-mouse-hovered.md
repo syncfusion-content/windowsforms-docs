@@ -1,16 +1,16 @@
 ---
 layout: post
-title: How to customize the AutoHidden Tab caption notification upon mouse hovered | WindowsForms | Syncfusion®
-description: How to customize the AutoHidden Tab caption notification upon mouse hovered
+title: How to customize tab in Windows Forms Docking Manager | Syncfusion®
+description: Learn how to customize the AutoHidden tab caption notification upon mouse hover in Syncfusion Windows Forms Docking Manager.
 platform: windowsforms
 control: DockingManager
 documentation: ug
 ---
 
 
-# How to customize the AutoHidden Tab caption notification upon mouse hovered?
+# How to customize tab in WinForms Docking Control
 
-In DockingManager, by default the width of the AutoHidden Tab can be adjusted for notification purpose upon mouse hovered on it.
+In WinForms Docking Control, by default the width of the AutoHidden Tab can be adjusted for notification purpose upon mouse hovered on it.
 
 This can be achieved by using the `EnableAutoAdjustCaption` property.
 

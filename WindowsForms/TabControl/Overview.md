@@ -1,15 +1,15 @@
 ---
 layout: post
-title: About Windows Forms TabControl control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® Windows Forms TabControl (TabControlAdv) control, its elements and more details.
+title: About Syncfusion® Windows Forms TabControlAdv Control | Syncfusion®
+description: Learn here all about introduction of Syncfusion Windows Forms TabControlAdv control, its elements and more details.
 platform: windowsforms
-control: TabControlAdv 
+control: TabControlAdv
 documentation: ug
 ---
 
-# Windows Forms TabControl (TabControlAdv) Overview
+# About Syncfusion® Windows Forms TabControlAdv Control
 
-The [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) is an advanced form of standard TabControl that enables an end-user to arrange visual content in a compacted and organized form in less space. It has many efficient features like standard TabControl, along with plenty of appearance customization and configuration capabilities. 
+The [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) is an advanced form of the standard TabControl that enables an end-user to arrange visual content in a compacted and organized form in less space. It includes all standard TabControl features, plus extensive appearance and configuration options.
 
 ![TabControlAdv for Windows Forms with multiline and reorder support](Overview_images/Overview.png)
 
@@ -24,4 +24,4 @@ The [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windo
 * **ToolTip** - Provides options to show / hide ToolTip when the mouse pointer is placed over the tabs.
 * **Styling** - Supports for wide variety of built-in themes like 2D, 3D, Metro, Office themes, OneNoteStyle, InternetExplorer7 and much more.
 * **Serialization** - Provides serialization support to save and load the tab states. 
-* **Scrolling** - Provides extremely a smooth scrolling behavior even when tabs overflow onto the tab panel.
+* **Scrolling** - Provides an extremely smooth scrolling behavior even when tabs overflow onto the tab panel.

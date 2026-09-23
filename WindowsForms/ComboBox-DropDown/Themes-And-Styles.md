@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Themes-And-Styles | WindowsForms | Syncfusion
-description: Learn here all about Themes and Styles support in Syncfusion Windows Forms ComboBox DropDown (ComboDropDown) control and more.
+title: Themes and Styles in Windows Forms ComboDropDown | Syncfusion® 
+description: Customize the appearance of the Windows Forms ComboDropDown control using built-in themes and styling options to create visually consistent applications.
 platform: WindowsForms
 control: ComboDropDown
 documentation: ug
 ---
 
-# Themes and Styles in Windows Forms ComboBox DropDown (ComboDropDown)
+# Themes and Styles in Windows Forms ComboDropDown
 
 The below given properties enhances the look and feel of the ComboDropDown.
 

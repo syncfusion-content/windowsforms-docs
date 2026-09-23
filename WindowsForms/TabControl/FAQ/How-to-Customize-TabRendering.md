@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Customize-TabRendering | WindowsForms | Syncfusion®
-description: how to customize tabrendering
+title: How to Customize TabRendering in TabControlAdv | Syncfusion®
+description: Learn how to customize tab rendering in Syncfusion Windows Forms TabControlAdv control, its elements and more details.
 platform: windowsforms
 control: TabsPackage
 documentation: ug
 ---
 
-# How to Customize TabRendering?
+# How to Customize TabRendering in TabControlAdv
 
 The simplest way to customize TabDrawing is to handle the [DrawItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) event. A departure from the normal is the TabControlAdv's ability to let you selectively draw portions of the tab. For this purpose, TabDrawing is classified into three portions:Background,Border and Interior (text and image). The event args lets you delegate drawing of one or more portions of the tab to the default drawing code while custom drawing the other portions of the tab.
 

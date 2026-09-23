@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Cell Types in Windows Forms GridGrouping control | Syncfusion®
-description: Learn about Cell Types support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
-platform: WindowsForms
-control: GridGrouping
+title: Cell Types in Windows Forms GridGroupingControl | Syncfusion®
+description: The cell types feature in GridGroupingControl supports built-in, enhanced, and custom cell types to extend editing, display, and interaction capabilities.
+platform: windowsforms
+control: GridGroupingControl
 documentation: ug
 ---
 
-# Cell Types in Windows Forms GridGrouping Control
+# Cell Types in Windows Forms GridGroupingControl
 GridGroupingControl allows the inclusion of some special controls in the grid cells. This attribute of a grid cell is referred to as its Cell Type. This section explains about the built in cell types and how to create a custom cell types in GridGroupingControl.
 In grid each cell has been created by using [GridCellModelBase](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCellModelBase.html#) and [GridCellRendererBase](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCellRendererBase.html#) class. `GridCellModelBase` defines the data or model part of a cell type. It holds all the data information of a cell. Rendering generally refers to the process of creating a visual representation on a user's screen. `GridCellRendererBase` acts a base class for all the renderer part of the cell type.
 

@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Localization in Windows Forms MessageBox control | Syncfusion
-description: Learn here all about the localization feature of Syncfusion Windows Forms MessageBox (MessageBoxAdv) control and more.
+title: Localization in Windows Forms MessageBox | Syncfusion®
+description: Localization in Windows Forms MessageBox enables displaying dialog content, button text, and messages in different languages and regional settings.
 platform: WindowsForms
-control: MessageBoxAdv
+control: MessageBox
 documentation: ug
 ---
 
-# Localization in Windows Forms MessageBox (MessageBoxAdv)
+# Localization in Windows Forms MessageBox
 
-Localization is the process of translating the application resources into different language for the specific cultures. MessageBoxAdv control can be localized in any Languages, based on application requirement by following below steps.
+Localization is the process of translating the application resources into different language for the specific cultures. MessageBox control can be localized in any Languages, based on application requirement by following below steps.
 
-The following steps helps to localize the text in MessageBoxAdv:
+The following steps helps to localize the text in MessageBox:
 
 **Step 1:** Include the required namespaces at the beginning of the file.
 
@@ -49,10 +49,10 @@ LocalizationProvider.Provider = New Localizer()
 
 {% endtabs %}  
 
-**Step 3:** Add the GetLocalizedString function in the [LocalizationProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.LocalizationProvider.html) class in which provide the Localization content, for the required components used in MessageBoxAdv.
+**Step 3:** Add the GetLocalizedString function in the [LocalizationProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.LocalizationProvider.html) class in which provide the Localization content, for the required components used in MessageBox.
 
 For example:
-Here, MessageBoxAdv is localized in German Language.
+Here, MessageBox is localized in German Language.
 
 {% tabs %}
 

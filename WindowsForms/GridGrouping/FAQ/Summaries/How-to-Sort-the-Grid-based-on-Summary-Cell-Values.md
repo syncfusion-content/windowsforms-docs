@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Sort-the-Grid-based-on-Summary-Cell-Values | Windows Forms | Syncfusion
-description: how to sort the grid based on summary cell values 
+title: Sort SummaryValues in WinForms GridGroupingControl | Syncfusion®
+description: Sort the grid based on summary cell values in Syncfusion® WinForms GridGroupingControl, its group summary sorting, grouped data, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Sort the Grid based on Summary Cell Values 
+# How to Sort Grid by Summary Values in WinForms GridGroupingControl
 
 While sorting, the grid rearranges data to match current sort criteria, but it excludes the summary cells. To perform sorting based on summary cell values, it should be passed as an argument in the “SetGroupSummarySortOrder” method. 
 

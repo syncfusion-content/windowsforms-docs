@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-find-value-maximum-value-and-minimum-value- | Windows Forms | Syncfusion
-description: how to find value, maximum value and minimum value of the data points
+title: How to find data points value in Windows Forms Chart | Syncfusion®
+description: Learn how to find values, maximum values, and minimum values of data points in a Windows Forms Chart series.
 platform: windowsforms
 control: chart
 documentation: ug
 ---
 
-# How to find value, maximum value and minimum value of the data points
+# How to find data points value in Windows Forms Chart
 
 Essential® Chart has FindValue, FindMaximumValue and FindMinimumValue methods that can return the corresponding chart data point values depending upon the parameter(s) passed to these methods.
 

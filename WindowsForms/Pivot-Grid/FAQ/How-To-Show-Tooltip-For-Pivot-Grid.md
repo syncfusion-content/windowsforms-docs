@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to show Tooltip for PivotGrid | Windows Forms | Syncfusion
-description: How to show tooltip for pivot grid
+title: How to Show Tooltip in Windows Forms Pivot Grid | Syncfusion®
+description: Show tooltip in Syncfusion® Windows Forms Pivot Grid control for cells including headers, values, summaries, and customize using CellTipText property.
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
 ---
 
-# How to Show Tooltip for Pivot Grid
+# How to Show Tooltip in Windows Forms Pivot Grid
 
 The pivot grid control provides support to enable or disable the tooltip for individual cells that include column header cells, row header cells, value cell cells, summary cells and summary header cells.
 

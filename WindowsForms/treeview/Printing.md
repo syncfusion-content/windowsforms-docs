@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Printing in Windows Forms TreeView control | Syncfusion®
-description: Learn about Printing support in Syncfusion® Windows Forms TreeView control, its elements and more details.
+title: Printing in Windows Forms TreeView | Syncfusion®
+description: Printing support enables exporting and previewing TreeViewAdv content using printable tree documents.
 platform: WindowsForms
 control: TreeView 
 documentation: ug

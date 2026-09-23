@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Individual floating controls properties | WindowsForms | Syncfusion®
-description: Learn here about How to get individual floating controls properties with Syncfusion® Essential Studio® Windows Forms DockingManager Control
+title: How to get float info in Windows Forms Docking Manager | Syncfusion®
+description: Learn how to get individual floating controls properties in Syncfusion Windows Forms Docking Manager control.
 platform: windowsforms
 control: DockingManager
 documentation: ug
 ---
 
-# How to get individual floating controls properties?
+# How to get float info in WinForms Docking Control
 
 To get the x,y coordinates of the control if it is in floating state,
 
-1. Add a list view and a docking manager to your form.
+1. Add a list view and a WinForms Docking Control to your form.
 2. Enable the list view as a dock control.
 
 {% capture codesnippet1 %}

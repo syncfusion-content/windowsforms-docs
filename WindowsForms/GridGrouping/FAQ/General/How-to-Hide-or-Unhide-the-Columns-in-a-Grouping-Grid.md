@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Hide-or-Unhide-the-Columns-in-a-Grouping-Gr | Windows Forms | Syncfusion
-description: how to hide or unhide the columns in a grouping grid
+title: Hide or Unhide Columns in WinForms GridGroupingControl | Syncfusion®
+description: Hide or unhide columns in Syncfusion® Windows Forms GridGroupingControl, its visible column management, column display settings, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Hide or Unhide the Columns in a Grouping Grid
+# How to Hide or Unhide Columns in WinForms GridGroupingControl
 
 The TableDescriptor object has VisibleColumns collection that you can use to control the columns that are visible. You can hide or unhide columns using the following code.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Slider Customization in Windows Forms Toggle Button | Syncfusion®
-description: Learn about Slider Customization support in Syncfusion® Windows Forms Toggle Button control and more details.
+title: Slider Customization in Windows Forms ToggleButton | Syncfusion®
+description: Learn about Slider Customization support in Syncfusion Windows Forms ToggleButton control and more details.
 platform: windowsforms
 control: ToggleButton 
 documentation: ug
 ---
 
-# Slider Customization in Windows Forms Toggle Button
+# Slider Customization in Windows Forms ToggleButton
 
 In the Toggle Button, the Slider is used to switch between two different states. It can be customized with different colors by using the Color property. The height of the Slider is calculated based on the Control’s Height. The Slider Width is customized by using the Slider.Width property that should not exceed the control’s width.
 

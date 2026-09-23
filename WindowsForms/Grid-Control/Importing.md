@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Importing in Windows Forms Grid Control | Syncfusion®
-description: Learn about Importing support in Syncfusion® Windows Forms Grid Control, its elements and more details.
+description: Import Excel data into Grid Control with support for styles, formatting, virtual loading, customized import behavior, and high-performance data conversion.
 platform: windowsforms
-control: GridControl
+control: Grid Control
 documentation: ug
 ---
 
@@ -86,12 +86,12 @@ void excelConverter_QueryImportExportCellInfo(object sender, GridImportExportCel
 {% endhighlight %}
 {% highlight vb %}
 Private excelConverter As New GridExcelConverterControl()
-Private excelConverter.QueryImportExportCellInfo += New GridImportExportCellInfoEventHandler(AddressOf excelConverter_QueryImportExportCellInfo)
+AddHandler excelConverter.QueryImportExportCellInfo, New GridImportExportCellInfoEventHandler(AddressOf excelConverter_QueryImportExportCellInfo)
 
 'Import the content of Excel to the Grid
 excelConverter.ExcelToGrid("Sample.xls", Me.gridControl1.Model)
 
-void excelConverter_QueryImportExportCellInfo(Object sender, GridImportExportCellInfoEventArgs e)
+Private Sub excelConverter_QueryImportExportCellInfo(ByVal sender As Object, ByVal e As GridImportExportCellInfoEventArgs)
  
  ' Checking whether it is Importing action
    If e.Action = GridConverterAction.Import Then

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Individual Docked control's Properties | WindowsForms | Syncfusion®
-description: Learn here about How to Get the Individual Docked control's Properties with Syncfusion® Essential Studio® Windows Forms DockingManager Control
+title: How to get properties in Windows Forms Docking Manager | Syncfusion®
+description: Learn how to get the individual docked controls properties in Syncfusion Windows Forms Docking Manager control.
 platform: windowsforms
 control: DockingManager
 documentation: ug
 ---
 
-# How to get the individual Docked control's properties?
+# How to get properties in WinForms Docking Control
 
 To check whether a control is floating or docked, you could use the code snippet given below.
 
@@ -29,9 +29,9 @@ Me.dockingManager1.IsFloating(this.listBox1);
 
 {% endtabs %}
 
-### To get the Dock location
+## To get the Dock location
 
-1. Add a list view and a docking manager in your form.
+1. Add a list view and a WinForms Docking Control in your form.
 2. Enable the list view as a docked control.
 
 {% capture codesnippet1 %}

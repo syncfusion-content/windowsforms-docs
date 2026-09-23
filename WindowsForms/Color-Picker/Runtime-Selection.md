@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Runtime Selection in Windows Forms Color Picker control | Syncfusion®
-description: Learn about Runtime Selection support in Syncfusion® Windows Forms Color Picker (ColorPickerUIAdv) control and more details.
+title: Runtime Selection in Windows Forms ColorPickerUIAdv | Syncfusion®
+description: Learn about Runtime Selection support in Syncfusion Windows Forms Color Picker (ColorPickerUIAdv) control and more details.
 platform: windowsforms
 control: ColorPickerUIAdv
 documentation: ug
 ---
-# Runtime Selection in Windows Forms Color Picker (ColorPickerUIAdv)
+# Runtime Selection in WinForms Color Picker
 
-The ColorPickerUIAdv control at run time provides a Color dialog, using which we can select and add colors to the color groups.
+The WinForms Color Picker control at run time provides a Color dialog, using which we can select and add colors to the color groups.
 
 ![Windows forms ColorPickerUIAdv adding new color at runtime](ColorPickerUIAdv_Images/ColorPickerUIAdv_runtimeselection.jpeg) 
 

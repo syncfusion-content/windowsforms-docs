@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Filtering in WinForms DataGrid Control | Syncfusion®
-description: Learn here all about filtering the data (Excel-like filter) support in Syncfusion® WinForms DataGrid control, its elements and more details.
+title: Filtering in Windows Forms Data Grid | Syncfusion®
+description: Filtering in Data Grid supports Excel-like filtering, custom filter conditions, and data analysis for efficient record retrieval and management.
 platform: windowsforms
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Filtering with Windows Forms DataGrid
+# Filtering in Windows Forms Data Grid
 Filtering is the process of retrieving the values from the collection which satisfy the specified condition. In the [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) the filtering can be applied though the UI as well as the programmatic filters. 
 
 ## Programmatic Filtering
@@ -260,7 +260,7 @@ sfDataGrid1.Columns("OrderID").FilterPopupMode = FilterPopupMode.Both
 {% endtabs %}
 
 ### Changing Filter UI using Event
-The column `FilterPopupMode` can also be changed by using the [FilterPopupShowing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event. This even will be raised on opening the filter popup.
+The column `FilterPopupMode` can also be changed by using the [FilterPopupShowing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event. This event will be raised on opening the filter popup.
 
 {% tabs %}
 {% highlight c# %}
@@ -362,7 +362,7 @@ After filtering, both records having the same OrderDate display value will be di
 ![Filtering Based on Display Text](Filtering_images/Filtering_img10.png)
 
 ## Advanced Filtering
-Advanced filter UI provides multiple filter options to filter the data easily. Filter menu options are loaded based on advanced filter type by automatically detecting the underlying date type.
+Advanced filter UI provides multiple filter options to filter the data easily. Filter menu options are loaded based on advanced filter type by automatically detecting the underlying data type.
 Below are the built-in filter types supported.
 
 * **Text Filters** – Loads various menu options to filter the display text effectively.

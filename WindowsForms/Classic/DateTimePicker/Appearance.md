@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Appearance in Windows Forms xptoolbar control | Syncfusion
-description: Learn about Appearance support in Syncfusion Windows Forms DateTimePickerAdv(Classic) control and more details.
+title: Appearance in Windows Forms DateTimePickerAdv | Syncfusion
+description: Learn about the appearance customization in Syncfusion Windows Forms DateTimePickerAdv control and more details.
 platform: WindowsForms
 control: DateTimePickerAdv
 documentation: ug
 ---
-# Appearance in Windows Forms DateTimePickerAdv(Classic)
+
+# Appearance in Windows Forms DateTimePickerAdv
 
 This below topics discusses the background and border settings for the DateTimePickerAdv control.
 
@@ -36,7 +37,7 @@ Me.dateTimePickerAdv1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfus
 
 {% endtabs %}
 
-![DateTimePickerAdv back color customization](Calendar_Images/Overview_img207.jpeg) 
+![Windows Forms DateTimePickerAdv back color customization](Calendar_Images/Overview_img207.jpeg) 
 
 ## Background Image
 

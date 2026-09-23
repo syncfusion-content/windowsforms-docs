@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Advanced Features in Windows Forms xptoolbar control | Syncfusion
-description: Learn about Advanced Features support in Syncfusion Windows Forms ComboBoxAdv(Classic) control and more details.
+title: Advanced Features in Windows Forms ComboBoxAdv(Classic) | Syncfusion®
+description: Advanced features in the Windows Forms ComboBoxAdv(Classic) control enhance customization, functionality, and user interaction capabilities.
 platform: WindowsForms
 control: ComboBoxAdv
 documentation: ug
@@ -51,7 +51,7 @@ Me.comboBoxAdv1.MatchFirstCharacterOnly = True
 {% endhighlight %}
 {% endtabs %}
 
-![Autocomplete Support](Overview_images/Overview_img305.png)
+![Autocomplete Support](Overview_images/windowsforms-combobox-auto-complete-support.png)
 
 ## Data Binding
 
@@ -133,5 +133,5 @@ Me.comboBoxAdv1.DisplayMember = "place"
 {% endhighlight %}
 {% endtabs %}
 
-![Data Binding support ](Overview_images/Overview_img306.png) 
+![Data Binding support ](Overview_images/windowsforms-combobox-data-binding-support.png) 
 

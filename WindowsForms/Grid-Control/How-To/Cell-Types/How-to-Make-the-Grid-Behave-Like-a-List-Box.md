@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Make the Grid Behave Like a List Box | Windows Forms | Syncfusion
-description: Learn here all about how to make the grid behave like a list box of Syncfusion Windows Forms GridControl control and more.
+title: Make Grid Act Like ListBox in Windows Forms Grid Control | Syncfusion®
+description: Make the Grid behave like a list box in Syncfusion® Windows Forms Grid Control using row selection and current cell activation settings and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to make the Grid behave like a list box in WinForms GridControl
+# How to Make Grid Behave Like a List Box in Windows Forms Grid Control
 
 You need to do two things to make the grid work like a list box. You must set grid.ListBoxSelectionMode property to make the grid select the whole row when you click a cell or move the current cell with arrow keys. This will highlight the entire row except for the current cell. If your grid is to be non-editable, you must highlight the current cell as well as handle CurrentCellActivating event.
 

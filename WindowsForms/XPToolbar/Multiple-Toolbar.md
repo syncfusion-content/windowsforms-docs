@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Multiple Toolbar in Windows Forms xptoolbar control | Syncfusion
-description: Learn about Multiple Toolbar support in Syncfusion Windows Forms xptoolbar (XPToolbar) control and more details.
+title: Multiple Toolbar in Windows Forms XPToolBar | Syncfusion®
+description: Multiple Toolbar support enables arranging and managing multiple toolbars with menus, commands, and toolbar items.
 platform: WindowsForms
 control: XPToolBar
 documentation: ug
 ---
 
-# Multiple Toolbar in Windows Forms xp toolbar (XPToolbar)
+# Multiple Toolbar in Windows Forms XPToolBar
 
 We can add different layers of toolbar either on-after-the-other or one-below-the-other. The below code snippet will explain how to add multiple toolbar in an application.
 

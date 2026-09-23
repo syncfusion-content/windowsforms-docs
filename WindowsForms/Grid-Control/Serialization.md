@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Serialization in Windows Forms Grid Control | Syncfusion®
-description: Learn about Serialization support in Syncfusion® Windows Forms Grid Control, its elements and more details.
+description: The serialization feature in Grid Control saves and restores grid schemas, data, and appearance using Binary, XML, and SOAP formats.
 platform: windowsforms
-control: GridControl
+control: Grid Control
 documentation: ug
 ---
 

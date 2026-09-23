@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Calendar control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms Calendar (SfCalendar) control and more details.
+title: Getting Started with Windows Forms Calendar | Syncfusion
+description: Learn how to get started with the Syncfusion Windows Forms Calendar control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
 control: SfCalendar 
 documentation: ug
 ---
 
-# Getting Started with Windows Forms Calendar (SfCalendar)
+# Getting Started with Windows Forms Calendar
 
 This section briefly describes how to create a new Windows Forms project in Visual Studio and add the [WinForms Calendar](https://www.syncfusion.com/winforms-ui-controls/calendar) (SfCalendar) control with its basic functionalities.
 
@@ -17,9 +17,9 @@ Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/con
 
 Refer to this [documentation](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to find more details about installing NuGet packages in a Windows Forms application.
  
-## Adding the SfCalendar control via designer
+## Adding the Windows Forms Calendar control via designer
 
-The following steps describe how to create an WinForms Calendar (SfCalendar) control via designer.
+The following steps describe how to create a WinForms Calendar (SfCalendar) control via designer.
 
 1. Create a new Windows Forms application in Visual Studio.
 
@@ -31,9 +31,9 @@ The following steps describe how to create an WinForms Calendar (SfCalendar) con
 
 ![Drag and drop the sfcalendar to form](getting-started-images/gettingstarted.png) 
 
-## Adding the SfCalendar control via code
+## Adding the Windows Forms Calendar control via code
 
-The following steps describe how to create an WinForms Calendar (SfCalendar) control programmatically:
+The following steps describe how to create a WinForms Calendar (SfCalendar) control programmatically:
 
 1. Create a C# or VB application via Visual Studio.
 
@@ -64,12 +64,13 @@ Imports Syncfusion.WinForms.Input
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4. Create an instance of the [WinForms Calendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html) (SfCalendar) control instance, and then add it to the form.
+4. Create an instance of the [WinForms Calendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html) (SfCalendar) control, and add it to the Form.
 
 {% capture codesnippet2 %}​
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 SfCalendar calendar = new SfCalendar();
 
@@ -78,6 +79,7 @@ this.Controls.Add(calendar);
 {% endhighlight %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 Dim calendar As SfCalendar = New SfCalendar
 
@@ -96,12 +98,14 @@ At run time, a particular date should be focused or selected using the `Selected
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 calendar.SelectedDate = new System.DateTime(2019, 08, 12);
 
 {% endhighlight %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 calendar.SelectedDate = New System.DateTime(2019, 08, 12)
 
@@ -109,7 +113,7 @@ calendar.SelectedDate = New System.DateTime(2019, 08, 12)
 
 {% endtabs %}
 
-![Select the date in WF SfCalendar](Getting-Started-images/selecteddate.png)
+![Select the date in Windows Forms Calendar](Getting-Started-images/selecteddate.png)
 
 ### Selection change event
 
@@ -118,6 +122,7 @@ The WinForms Calendar (SfCalendar) control notifies the date changes using the `
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 // Invoking selection changing event
 calendar.SelectionChanging += Calendar_SelectionChanging;
@@ -143,12 +148,13 @@ private void Calendar_SelectionChanged(Syncfusion.WinForms.Input.SfCalendar send
 {% endhighlight %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 ' Invoking selection changing event
-Private calendar.SelectionChanging += AddressOf Calendar_SelectionChanging
+AddHandler calendar.SelectionChanging, AddressOf Calendar_SelectionChanging
 
 ' Invoking selection changed event
-Private calendar.SelectionChanged += AddressOf Calendar_SelectionChanged
+AddHandler calendar.SelectionChanged, AddressOf Calendar_SelectionChanged
 
 ' Occurs before the selected date is changed in Calendar.
 Private Sub Calendar_SelectionChanging(ByVal sender As Syncfusion.WinForms.Input.SfCalendar, ByVal e As Syncfusion.WinForms.Input.Events.SelectionChangingEventArgs)
@@ -170,15 +176,16 @@ End Sub
 
 ## Date range
 
-The [WinForms Calendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html) (SfCalendar) prevents users from selecting dates within specified minimum and maximum ranges. To specify a range, set the start date and end date to the [MinDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_MinDate) and [MaxDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_MaxDate) properties, respectively.
+The [WinForms Calendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html) (SfCalendar) prevents users from selecting dates outside the specified minimum and maximum range. To specify a range, set the start date and end date to the [MinDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_MinDate) and [MaxDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_MaxDate) properties, respectively.
 
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 // Setting the minimum and maximum dates
 
-Syncfusion.WinForms.Input.SfCalendar calendar = new Syncfusion.WinForms.Input.SfCalendar();
+SfCalendar calendar = new SfCalendar();
 this.Controls.Add(calendar);
 
 calendar.SelectedDate = new DateTime(2018, 1, 17);
@@ -188,10 +195,11 @@ calendar.MaxDate = new DateTime(2018, 1, 25);
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 ' Setting the minimum and maximum dates
 
-Dim calendar As Syncfusion.WinForms.Input.SfCalendar = New Syncfusion.WinForms.Input.SfCalendar
+Dim calendar As SfCalendar = New SfCalendar
 Me.Controls.Add(calendar)
 
 calendar.SelectedDate = New DateTime(2018, 1, 17)
@@ -202,7 +210,7 @@ calendar.MaxDate = New DateTime(2018, 1, 25)
 
 {% endtabs %} 
 
-![Windows Forms SfCalendar showing selected date with in range](appearance-images/minmax.png)
+![Windows Forms Calendar showing selected date with in range](appearance-images/minmax.png)
 
 ## Blackout dates
 
@@ -211,6 +219,7 @@ calendar.MaxDate = New DateTime(2018, 1, 25)
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 //Setting the blackout dates
 
@@ -224,6 +233,7 @@ calendar.BlackoutDates.Add(new System.DateTime(2018, 1, 20));
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 'Setting the Blackout Dates
 
@@ -238,7 +248,7 @@ calendar.BlackoutDates.Add(New System.DateTime(2018, 1, 20))
 
 {% endtabs %} 
 
-![Windows Forms SfCalendar showing BlackOutDates](getting-started-images/blackoutdates.png)
+![Windows Forms Calendar showing BlackOutDates](getting-started-images/blackoutdates.png)
 
 ## Special dates
 
@@ -249,6 +259,7 @@ The following code sample demonstrates how to add special dates to the calendar.
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 SpecialDate specialDate1 = new SpecialDate();
 List<SpecialDate> SpecialDates = new List<SpecialDate>();  
@@ -257,7 +268,7 @@ specialDate1.BackColor = System.Drawing.Color.White;
 specialDate1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 specialDate1.ForeColor = System.Drawing.Color.Magenta;
 specialDate1.Image = Properties.Resources.icons_Womens_day;
-specialDate1.Description = "Army Day";
+specialDate1.Description = "International Women's Day";
 specialDate1.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
 specialDate1.IsDateVisible = false;
 specialDate1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -269,6 +280,7 @@ calendar.SpecialDates = SpecialDates;
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 Dim specialDate1 As New SpecialDate()
 Dim SpecialDates As New List(Of SpecialDate)()
@@ -277,7 +289,7 @@ specialDate1.BackColor = System.Drawing.Color.White
 specialDate1.Font = New System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, (CByte(0)))
 specialDate1.ForeColor = System.Drawing.Color.Magenta
 specialDate1.Image = My.Resources.icons_Womens_day
-specialDate1.Description = "Army Day"
+specialDate1.Description = "International Women's Day"
 specialDate1.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter
 specialDate1.IsDateVisible = False
 specialDate1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -290,7 +302,7 @@ calendar.SpecialDates = SpecialDates
 
 {% endtabs %}  
 
-![Windows Forms SfCalendar showing special date](cell-customization-images/specialdates.png)
+![Windows Forms Calendar showing special date](cell-customization-images/specialdates.png)
 
 ## Allow multiple selection
 
@@ -299,6 +311,7 @@ The WinForms Calendar (SfCalendar) control allows you to select multiple dates b
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 // Setting to Allow Multiple Selection
 calendar.AllowMultipleSelection = true;
@@ -306,6 +319,7 @@ calendar.AllowMultipleSelection = true;
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 ' Setting to Allow Multiple Selection
 calendar.AllowMultipleSelection = True
@@ -314,7 +328,7 @@ calendar.AllowMultipleSelection = True
 
 {% endtabs %} 
 
-![Windows Forms SfCalendar showing multiple date selection](getting-started-images/multiselection.png)
+![Windows Forms Calendar showing multiple date selection](getting-started-images/multiselection.png)
 
 ## Configure first day of week
 
@@ -323,6 +337,7 @@ The first day of a week can be changed by setting the [FirstDayOfWeek](https://h
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 //Setting the First Day Of Week
 calendar.FirstDayOfWeek = DayOfWeek.Monday;
@@ -330,9 +345,10 @@ calendar.FirstDayOfWeek = DayOfWeek.Monday;
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 'Setting the First Day Of Week
-Me.SfCalendar1.FirstDayOfWeek = DayOfWeek.Monday
+calendar.FirstDayOfWeek = DayOfWeek.Monday
 
 {% endhighlight  %}
 
@@ -347,22 +363,24 @@ The week number of current week in a year can be shown in the calendar control b
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
-// Setting the Minimum and Maximum date
+// Setting the ShowWeekNumber
 calendar.ShowWeekNumber = true;
 
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
-' Setting the Minimum and Maximum date
+' Setting the ShowWeekNumber
 calendar.ShowWeekNumber = True
 
 {% endhighlight  %}
 
 {% endtabs %} 
 
-![SfCalendar shows week number](appearance-images/showweeknumber.png)
+![Windows Forms Calendar shows week number](appearance-images/showweeknumber.png)
 
 ## Configure the calculation of week number based on culture
 
@@ -371,6 +389,7 @@ You can get the current week number in WinForms Calendar (SfCalendar) control by
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.WinForms.Input;
 
 SfCalendar sfCalendar1 = new SfCalendar();
 CultureInfo info = new CultureInfo("en-EN");
@@ -380,6 +399,7 @@ sfCalendar1.Culture = info;
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.WinForms.Input
 
 Dim sfCalendar1 As SfCalendar = New SfCalendar()
 Dim info As CultureInfo = New CultureInfo("en-EN")
