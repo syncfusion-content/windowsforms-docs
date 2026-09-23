@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: Localization in Windows Forms Tab Splitter Container | Syncfusion®
-description: Learn about Localization support in Syncfusion® Windows Forms Tab Splitter Container control and more details.
+description: Localization support enables displaying TabSplitterContainer content and UI elements in different languages and cultures.
 platform: windowsforms
 control: TabSplitterContainer
 documentation: ug

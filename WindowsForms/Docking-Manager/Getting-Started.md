@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Windows Forms Docking Manager | Syncfusion®
-description: Learn here about getting started with Syncfusion® Windows Forms Docking Manager control, its elements, and more.
+description: Learn how to get started with the Syncfusion Windows Forms Docking Manager control. Explore setup, features, examples, and customization options.
 platform: windowsforms
 control: DockingManager 
 documentation: ug
@@ -497,4 +497,4 @@ Me.dockingManager.LoadDockState(serializer, this.listBox1)
 
 {% endtabs %}
 
-N> You can explore our [WinForms Docking Manager example](https://github.com/syncfusion/winforms-demos/tree/master/edit) that shows how to render the Docking Manager in Windows Forms.
+N> You can explore our [WinForms Docking Manager example](https://github.com/syncfusion/winforms-demos) that shows how to render the Docking Manager in Windows Forms.

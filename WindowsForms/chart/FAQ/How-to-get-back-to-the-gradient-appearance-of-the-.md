@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-get-back-to-the-gradient-appearance-of-the- | Windows Forms | Syncfusion
-description: how to get back to the gradient appearance of the chart series
+title: How to restore gradient in Windows Forms Chart | Syncfusion®
+description: Learn how to restore the gradient appearance of a chart series in a Windows Forms Chart and apply gradient styling to data points.
 platform: windowsforms
 control: chart
 documentation: ug
 ---
 
-# How to get back to the gradient appearance of the Chart Series
+# How to restore gradient in Windows Forms Chart
 
 The default appearance of the chart series is as shown in the image below.
 

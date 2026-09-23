@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Formula Support in Windows Forms Grid Control | Syncfusion®
-description: Learn about Formula Support support in Syncfusion® Windows Forms Grid Control, its elements and more details.
+description: Formula support in Grid Control enables Excel-like calculations, built-in functions, cell references, formula evaluation, and custom formula integration.
 platform: WindowsForms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
@@ -815,7 +815,7 @@ CHITEST(actual_range, expected_range)
 
 ### CHOOSE
 The `CHOOSE` function returns the value from a range of values on a specific index.
-##### Syntax:
+#### Syntax:
 CHOOSE(index, value array)
 
 #### Where:

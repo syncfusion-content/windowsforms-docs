@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tree Map Legend in Windows Forms TreeMap control | Syncfusion®
-description: Learn about Tree Map Legend support in Syncfusion® Windows Forms TreeMap control, its elements and more details.
+title: Legend in Windows Forms TreeMap | Syncfusion®
+description: Legend in the Windows Forms TreeMap explains color mappings and data categories, supporting customization of content and appearance.
 platform: windowsforms
 control: TreeMap 
 documentation: ug
 ---
 
-# Tree Map Legend in Windows Forms TreeMap
+# Legend in Windows Forms TreeMap
 
 The tree map legend is used to demonstrate the color value of the leaf nodes. This legend may be appropriate only for tree maps whose leaf nodes are colored by using the RangeBrushColorMapping. 
 

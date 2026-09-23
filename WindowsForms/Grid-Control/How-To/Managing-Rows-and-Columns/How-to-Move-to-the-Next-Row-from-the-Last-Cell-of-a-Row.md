@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Move the Next Row from the Last Cell in Grid Control | Syncfusion
-description: How to move to the next row from the last cell of a row in Syncfusion Windows Forms Grid control, and more.
+title: Move to the Next Row in Windows Forms Grid Control | Syncfusion®
+description: Move to the next row from the last cell in Syncfusion® Windows Forms Grid Control using the WrapCellBehavior property and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to move to the next row from the last cell of a row
+# How to Move to the Next Row in Windows Forms Grid Control
 
 Set the WrapCellBehavior property to wrap a row when the Tab or Enter key is pressed.
 

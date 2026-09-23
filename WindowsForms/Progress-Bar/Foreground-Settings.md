@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Foreground Settings in Windows Forms Progress Bar control | Syncfusion
-description: Learn about Foreground Settings support in Syncfusion Windows Forms Progress Bar (ProgressBarAdv) control and more details.
+title: Foreground Settings in Windows Forms ProgressBarAdv | Syncfusion®
+description: Foreground settings in Windows Forms ProgressBarAdv customize the progress indicator appearance, improving visual clarity.
 platform: WindowsForms
 control: ProgressBarAdv
 documentation: ug
 ---
 
-# Foreground Settings in Windows Forms Progress Bar (ProgressBarAdv)
+# Foreground Settings in Windows Forms ProgressBarAdv
 
 This section discusses the foreground settings of the ProgressBarAdv control.
 

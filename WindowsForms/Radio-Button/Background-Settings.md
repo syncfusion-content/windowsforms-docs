@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Background Settings in Windows Forms Radio Button control | Syncfusion
-description: Learn about Background Settings support in Syncfusion Windows Forms Radio Button (RadioButtonAdv) control and more details.
+title: Background Settings in Windows Forms RadioButtonAdv | Syncfusion®
+description: Background settings in Windows Forms RadioButtonAdv enable applying gradient backgrounds and configuring start and end colors for customized control appearance.
 platform: WindowsForms
 control: RadioButtonAdv
 documentation: ug
 ---
 
-# Background Settings in Windows Forms Radio Button (RadioButtonAdv)
+# Background Settings in Windows Forms RadioButtonAdv
 
 The background settings of the RadioButtonAdv are discussed below.
 

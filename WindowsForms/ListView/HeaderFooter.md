@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Header and footer in WinForms Listview  | Syncfusion
-description: Learn here all about Header and Footer support in Syncfusion WinForms Listview (SfListView) control,its element, and more.
+title: Header and Footer in Windows Forms SfListView | Syncfusion®
+description: Header and footer support in Windows Forms SfListView allows displaying text, images, custom controls, and summaries with customizable layouts.
 platform: windowsforms
 control: SfListView
 documentation: ug
 ---
 
-# Header and Footer in WinForms Listview 
+# Header and Footer in Windows Forms SfListView
 
 SfListView allows you to show or hide the header and footer items through the [SfListView.ShowHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_ShowHeader) and [SfListView.ShowFooter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_ShowFooter) properties. By default, the header and footer items will stick on the top and bottom of the view.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Touch Support in Windows Forms Pivot Grid control | Syncfusion®
-description: Learn about Touch Support support in Syncfusion® Windows Forms Pivot Grid control, its elements and more details.
+title: Touch Support in Windows Forms Pivot Grid | Syncfusion®
+description: Enable touch support in Syncfusion® Windows Forms Pivot Grid control for scrolling, swiping, gestures, and Excel-like cell selection with indicators.
 platform: WindowsForms
 control: Pivot Grid
 documentation: ug

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Column Header in Windows Forms DataBoundGrid | Syncfusion
-description: Learn about How to Include an Icon in The Column Header support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
+title: Show Icon in Column Header in WinForms GridDataBoundGrid | Syncfusion®
+description: Display icons in column headers of Syncfusion® WinForms GridDataBoundGrid by configuring header cell styles and assigning images through PrepareViewStyleInfo.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 
-# Column Header in Windows Forms DataBoundGrid
+# Include an Icon in the Column Header in WinForms GridDataBoundGrid
 
 This page explains How to Include an Icon in the Column Header and more details.
 

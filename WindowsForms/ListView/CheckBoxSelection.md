@@ -1,13 +1,13 @@
 ---
 layout: post
-title: CheckBox SelectionMode in Windows Forms ListView | Syncfusion
-description: This section explains about the CheckBox SelectionMode support in Syncfusion ListView (SfListView) control, and more.
+title: CheckBox Selection Mode in Windows Forms SfListView | Syncfusion®
+description: CheckBox selection mode in Windows Forms SfListView enables users to select items using check boxes, supporting efficient multi-item selection and management.
 platform: windowsforms
 control: SfListView
 documentation: ug
 ---
 
-# Check Box Selection in Windows Forms ListView (SfListView)
+# CheckBox Selection Mode in Windows Forms SfListView
 The [Windows Forms ListView](https://www.syncfusion.com/winforms-ui-controls/listview) (SfListView) supports loading the checkBox to each item that allows the user to check or uncheck the corresponding item. You can display the check box in each item by setting the [SfListView.ShowCheckBoxes](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_ShowCheckBoxes) property to true.
 
 {% tabs %}

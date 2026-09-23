@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance Settings in Windows Forms Tile Layout control | Syncfusion
-description: Learn about Appearance Settings support in Syncfusion Windows Forms Tile Layout control and more details.
+title: Appearance Settings in Windows Forms TileLayout | Syncfusion®
+description: Appearance settings in Windows Forms TileLayout enable customizing group titles, parent form appearance, and theme background behavior.
 platform: WindowsForms
 control: TileLayout 
 documentation: ug
 ---
 
-# Appearance Settings in Windows Forms Tile Layout
+# Appearance Settings in Windows Forms TileLayout
 
 ## SetParentFormFlat
 

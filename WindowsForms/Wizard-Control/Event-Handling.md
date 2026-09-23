@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Event Handling in Windows Forms Wizard | Syncfusion
-description: Learn about Event Handling support in Syncfusion Windows Forms Wizard Control, its elements and more details.
+title: Event Handling in Windows Forms WizardControl | Syncfusion®
+description: Handle events in the Windows Forms WizardControl to respond to page navigation, user actions, and wizard workflow changes.
 platform: WindowsForms
 control: Wizard
 documentation: ug
 ---
 
-# Event Handling in Windows Forms Wizard
+# Event Handling in Windows Forms WizardControl
 
 This section comprises the below events:
 
-#### Wizard control events
+## Wizard control events
 
 The events available for Wizard control and the methods which raises these events are listed in the below tables.
 
@@ -33,7 +33,7 @@ The events available for Wizard control and the methods which raises these event
 
 This [BannerControlLocationChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html) event is discussed in How to Cancel the AutoLayout of the Banner panel controls.
 
-#### Wizard page events
+### Wizard page events
 
 The events available for the Wizard Page and the methods which raises these events are listed in the below tables.
 

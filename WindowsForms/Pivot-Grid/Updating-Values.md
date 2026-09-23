@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Updating Values in Windows Forms Pivot Grid control | Syncfusion®
-description: Learn about Updating Values support in Syncfusion® Windows Forms Pivot Grid control and more details.
+title: Updating Values in Windows Forms Pivot Grid | Syncfusion®
+description: Update values in Syncfusion® Windows Forms Pivot Grid control in real time with EnableUpdating and ThrottleUpdateRate for efficient performance.
 platform: windowsforms
 control: Pivot Grid
 documentation: ug

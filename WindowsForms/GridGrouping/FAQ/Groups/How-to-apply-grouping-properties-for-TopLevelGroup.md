@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-apply-grouping-properties-for-TopLevelGroup | Windows Forms | Syncfusion
-description: how to apply grouping properties for toplevelgroups
+title: TopLevel GroupProperties in WinForms GridGroupingControl | Syncfusion®
+description: Apply grouping properties for TopLevelGroups in Syncfusion® WinForms GridGroupingControl, its top-level group options, captions, footers, filter bars, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Apply Grouping Properties for TopLevelGroups
+# How to Apply TopLevel Group Properties in WinForms GridGroupingControl
 
 Grouping properties for TopLevelGroups can be applied using the code snippet below.
 

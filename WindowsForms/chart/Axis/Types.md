@@ -37,6 +37,8 @@ Me.chartControl1.PrimaryYAxis.ValueType = ChartValueType.Double
 {% endhighlight %}
 {% endtabs %}
 
+![Doubleaxis in Windows Forms Chart](Axis_Images/ChartTypes_Double.png)
+
 ### Interval
 
 The axis interval can be customized using the [DesiredIntervals](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_DesiredIntervals) property. By default, the interval is automatically calculated based on the minimum and maximum values of the provided data.
@@ -44,16 +46,18 @@ The axis interval can be customized using the [DesiredIntervals](https://help.sy
 {% tabs %}
 {% highlight c# %}
 
-this.chartControl1.PrimaryYAxis.DesiredIntervals = 5;
+this.chartControl1.PrimaryYAxis.DesiredIntervals = 3;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Me.chartControl1.PrimaryYAxis.DesiredIntervals = 5
+Me.chartControl1.PrimaryYAxis.DesiredIntervals = 3
 
 {% endhighlight %}
 {% endtabs %}
+
+![Doubleaxis in Windows Forms Chart](Axis_Images/ChartTypes_Double_Interval.png)
 
 ### Customizing the Range
 
@@ -63,17 +67,61 @@ The [Range](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms
 {% highlight c# %}
 
 this.chartControl1.PrimaryYAxis.RangeType = ChartAxisRangeType.Set;
-this.chartControl1.PrimaryYAxis.Range = new MinMaxInfo(0, 500, 50);
+this.chartControl1.PrimaryYAxis.Range = new MinMaxInfo(0, 100, 20);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
 Me.chartControl1.PrimaryYAxis.RangeType = ChartAxisRangeType.Set
-Me.chartControl1.PrimaryYAxis.Range = New MinMaxInfo(0, 500, 50)
+Me.chartControl1.PrimaryYAxis.Range = New MinMaxInfo(0, 100, 20)
 
 {% endhighlight %}
 {% endtabs %}
+
+![Doubleaxis in Windows Forms Chart](Axis_Images/ChartTypes_Double_Range.png)
+
+### Indexed X Values
+
+By default points in a series are plotted against their x and y values. However in some cases the x values are meaningless, they simply represent categories, and you do not want to plot the points against such x values. Such an x-axis that ignores the x-values and simply uses the positional value of a point in a series is said to be indexed. Enable this using the [Indexed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Indexed) property.
+
+The following code snippet and screenshot shows a line chart that is not-indexed.
+
+{% tabs %}
+{% highlight c# %}
+
+this.chartControl1.Indexed = false;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.chartControl1.Indexed = False
+
+{% endhighlight %}
+{% endtabs %}
+
+![Chart Axes](Axis_Images/Chart-Axes_img1.jpeg)
+
+The following code snippet and screenshot shows a line chart that is indexed.
+
+{% tabs %}
+{% highlight c# %}
+
+this.chartControl1.Indexed = true;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.chartControl1.Indexed = True
+
+{% endhighlight %}
+{% endtabs %}
+
+![Chart Axes](Axis_Images/Chart-Axes_img2.jpeg)   
+
+N> Indexing is supported only on the X-axis.
 
 ## Category Axis
 
@@ -97,95 +145,33 @@ Me.chartControl1.PrimaryXAxis.ValueType = ChartValueType.Category
 
 ![Category axis in Windows Forms Chart](Axis_Images/Chart-Axes_img39.png)
 
-### Indexed X Values
-
-By default points in a series are plotted against their x and y values. However in some cases the x values are meaningless, they simply represent categories, and you do not want to plot the points against such x values. Such an x-axis that ignores the x-values and simply uses the positional value of a point in a series is said to be indexed. Enable this using the [Indexed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Indexed) property.
-
-In the figure below, the first chart shows a line chart that is not-indexed while the second chart shows a line chart whose x-axis is indexed. 
-
-![Chart Axes](Axis_Images/Chart-Axes_img1.jpeg)
-
-![Chart Axes](Axis_Images/Chart-Axes_img2.jpeg)   
-
-N> Indexing is supported only on the X-axis.
-
-{% tabs %}
-{% highlight c# %}
-
-this.chartControl1.Indexed = true;
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-Me.chartControl1.Indexed = True
-
-{% endhighlight %}
-{% endtabs %}
-
-### Interval
-
-By default, the category axis labels are displayed with a fixed interval of 1. This can be customized using the [DesiredIntervals](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_DesiredIntervals) property.
-
-{% tabs %}
-{% highlight c# %}
-
-this.chartControl1.PrimaryXAxis.DesiredIntervals = 2;
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-Me.chartControl1.PrimaryXAxis.DesiredIntervals = 2
-
-{% endhighlight %}
-{% endtabs %}
-
 ## DateTime Axis
 
-The DateTime axis is used to plot DateTime values along the axis. It is widely used in financial and time-series charts. Set the [ValueType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_ValueType) property to `DateTime` to enable this axis.
+The DateTime axis is used to plot date time values along the axis. It is widely used in financial and time-series charts. Set the [ValueType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_ValueType) property to `DateTime` to enable this axis.
 
 {% tabs %}
 {% highlight c# %}
 
 this.chartControl1.PrimaryXAxis.ValueType = ChartValueType.DateTime;
-this.chartControl1.PrimaryXAxis.DateTimeFormat = "MMM-yy";
+this.chartControl1.PrimaryXAxis.DateTimeFormat = "MMM-dd";
 
 {% endhighlight %}
 
 {% highlight vb %}
 
 Me.chartControl1.PrimaryXAxis.ValueType = ChartValueType.DateTime
-Me.chartControl1.PrimaryXAxis.DateTimeFormat = "MMM-yy"
+Me.chartControl1.PrimaryXAxis.DateTimeFormat = "MMM-dd"
 
 {% endhighlight %}
 {% endtabs %}
 
-### Interval
-
-In the DateTime axis, the interval can be customized using the [DesiredIntervals](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_DesiredIntervals) and [DateTimeInterval](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_IntervalType) properties. For example, setting DesiredIntervals to 6 and IntervalType to Months will use 6 months as the interval.
-
-{% tabs %}
-{% highlight c# %}
-
-this.chartControl1.PrimaryXAxis.ValueType = ChartValueType.DateTime;
-this.chartControl1.PrimaryXAxis.DateTimeInterval = ChartDateTimeIntervalType.Months;
-this.chartControl1.PrimaryXAxis.DesiredIntervals = 6;
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-Me.chartControl1.PrimaryXAxis.ValueType = ChartValueType.DateTime
-Me.chartControl1.PrimaryXAxis.DateTimeInterval = ChartDateTimeIntervalType.Months
-Me.chartControl1.PrimaryXAxis.DesiredIntervals = 6
-
-{% endhighlight %}
-{% endtabs %}
+![Chart Axes](Axis_Images/ChartTypes_DateTimeAxis.png)  
 
 ### Customizing the Range
 
 The [DateTimeRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_DateTimeRange) property is used to set the minimum and maximum date-time values for the axis range. Set [RangeType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_RangeType) to `Set` to apply a custom range.
+
+The interval can be customized using the interval and [ChartDateTimeIntervalType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartDateTimeIntervalType.html) properties. For example, setting interval to 3 and IntervalType to Months will use 3 months as the interval.
 
 {% tabs %}
 {% highlight c# %}
@@ -193,7 +179,7 @@ The [DateTimeRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windo
 this.chartControl1.PrimaryXAxis.RangeType = ChartAxisRangeType.Set;
 this.chartControl1.PrimaryXAxis.ValueType = ChartValueType.DateTime;
 this.chartControl1.PrimaryXAxis.DateTimeRange = new ChartDateTimeRange(
-    new DateTime(2024, 1, 1), new DateTime(2024, 12, 31), 1, ChartDateTimeIntervalType.Months);
+    new DateTime(2025, 1, 1), new DateTime(2025, 12, 31), 3, ChartDateTimeIntervalType.Months);
 
 {% endhighlight %}
 
@@ -202,10 +188,12 @@ this.chartControl1.PrimaryXAxis.DateTimeRange = new ChartDateTimeRange(
 Me.chartControl1.PrimaryXAxis.RangeType = ChartAxisRangeType.Set
 Me.chartControl1.PrimaryXAxis.ValueType = ChartValueType.DateTime
 Me.chartControl1.PrimaryXAxis.DateTimeRange = New ChartDateTimeRange(
-    New DateTime(2024, 1, 1), New DateTime(2024, 12, 31), 1, ChartDateTimeIntervalType.Months)
+    New DateTime(2025, 1, 1), New DateTime(2025, 12, 31), 3, ChartDateTimeIntervalType.Months)
 
 {% endhighlight %}
 {% endtabs %}
+
+![Chart Axes](Axis_Images/ChartTypes_DateTimeAxis_Range.png) 
 
 ## Logarithmic Axis
 
@@ -225,45 +213,7 @@ Me.chartControl1.PrimaryYAxis.ValueType = ChartValueType.Logarithmic
 {% endhighlight %}
 {% endtabs %}
 
-### Interval
-
-The axis interval can be customized using the [DesiredIntervals](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_DesiredIntervals) property. By default, the interval is calculated based on the minimum and maximum values of the provided data.
-
-{% tabs %}
-{% highlight c# %}
-
-this.chartControl1.PrimaryYAxis.ValueType = ChartValueType.Logarithmic;
-this.chartControl1.PrimaryYAxis.DesiredIntervals = 5;
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-Me.chartControl1.PrimaryYAxis.ValueType = ChartValueType.Logarithmic
-Me.chartControl1.PrimaryYAxis.DesiredIntervals = 5
-
-{% endhighlight %}
-{% endtabs %}
-
-#### Customizing the Range
-
-The range of the logarithmic axis can be customized using the [Range](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_Range) property. By default, the range is automatically calculated to align with the provided data.
-
-{% tabs %}
-{% highlight c# %}
-
-this.chartControl1.PrimaryYAxis.RangeType = ChartAxisRangeType.Set;
-this.chartControl1.PrimaryYAxis.Range = new MinMaxInfo(100, 100000, 10);
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-Me.chartControl1.PrimaryYAxis.RangeType = ChartAxisRangeType.Set
-Me.chartControl1.PrimaryYAxis.Range = New MinMaxInfo(100, 100000, 10)
-
-{% endhighlight %}
-{% endtabs %}
+![Chart Axes](Axis_Images/ChartTypes_LogAxis.png) 
 
 ### Customizing the Logarithmic Base
 
@@ -284,6 +234,10 @@ Me.chartControl1.PrimaryYAxis.LogBase = 2
 
 {% endhighlight %}
 {% endtabs %}
+
+![Chart Axes](Axis_Images/LogAxis_LogBase.png) 
+
+N> The [DesiredIntervals](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_DesiredIntervals) property is supported only for axes with Double and DateTime value types.
 
 ## Custom Axis
 
@@ -341,6 +295,8 @@ Me.chartControl1.PrimaryXAxis.Labels.Add(New ChartAxisLabel(
 {% endhighlight %}
 {% endtabs %}
 
+![Chart Axes](Axis_Images/CustomAxis.png)
+
 ## Axis Positioning
 
 ### Inverted Axis
@@ -363,11 +319,11 @@ Me.chartControl1.PrimaryYAxis.Inversed = True
 {% endhighlight %}
 {% endtabs %}
 
-![Inverted axis in Windows Forms Chart](Axis_Images/Chart-Axes_img4.jpeg)
+![Inverted axis in Windows Forms Chart](Axis_Images/Inverted_Axis_Column.png)
 
 ### Opposed Axis
 
-By default, the X-axis is rendered at the bottom and the Y-axis is rendered on the left. Setting the [OpposedPosition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_OpposedPosition) property to `true` moves the axis to the opposite side — the X-axis appears at the top and the Y-axis appears on the right.
+By default, the X-axis is rendered at the bottom and the Y-axis is rendered on the left. Setting the [OpposedPosition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_OpposedPosition) property to `true` moves the axis to the opposite side, the X-axis appears at the top and the Y-axis appears on the right.
 
 {% tabs %}
 {% highlight c# %}
@@ -583,28 +539,6 @@ Use the following properties to customize how the axis origin is calculated and 
 - **OffsetDate** - Allows specifying a DateTime offset using an interval unit such as days, months, or years.
 - **DateTimeIntervalOffsetType** - Defines the interval unit for OffsetDate (Days, Months, Weeks, Hours, etc.).
 - **RangePaddingType** - Determines how padding is applied between the data points and the axis boundary.
-
-{% tabs %}
-{% highlight c# %}
-
-this.chartControl1.PrimaryYAxis.PreferZero = true;
-this.chartControl1.PrimaryYAxis.ForceZero = false;
-this.chartControl1.PrimaryYAxis.CustomOrigin = true;
-this.chartControl1.PrimaryYAxis.Origin = 10;
-this.chartControl1.PrimaryYAxis.RangePaddingType = ChartRangePaddingType.Round;
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-Me.chartControl1.PrimaryYAxis.PreferZero = True
-Me.chartControl1.PrimaryYAxis.ForceZero = False
-Me.chartControl1.PrimaryYAxis.CustomOrigin = True
-Me.chartControl1.PrimaryYAxis.Origin = 10
-Me.chartControl1.PrimaryYAxis.RangePaddingType = ChartRangePaddingType.Round
-
-{% endhighlight %}
-{% endtabs %}
 
 N> These settings let you fine-tune how the axis range and intervals are calculated and displayed.
 

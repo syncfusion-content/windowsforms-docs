@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Windows Forms Wizard Control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms Wizard Control, its elements and more details.
+title: About Syncfusion® Windows Forms WizardControl | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms WizardControl and its features, customization, and usage options.
 platform: WindowsForms
 control: WizardControl 
 documentation: ug
 ---
 
-# Windows Forms Wizard Control (Wizard) Overview
+# About Syncfusion® Windows Forms WizardControl
 
 The [WizardControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html) is a rich interactive and customizable interface that holds many pages together that helps to break up a complex task and guides the end user through a set of simple procedures to perform or to obtain data that are categorically divided in every page. It also provides the user, the ability to browse between these pages using the ‘browsing’ buttons.
 

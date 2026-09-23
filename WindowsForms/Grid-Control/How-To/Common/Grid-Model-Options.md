@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grid-Model-Options in Windows Forms GridControl | Syncfusion
-description: Learn here all about the grid model options support of Syncfusion Windows Forms GridControl and more.
+title: Grid Model Options in Windows Forms Grid Control | Syncfusion®
+description: Learn about Grid Model Options in Syncfusion® Windows Forms Grid Control, including current cell behavior, scrolling, selection colors, borders, and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# Grid Model Options in Windows Forms GridControl
+# Grid Model Options in Windows Forms Grid Control
 
 This section provides information on how to write syntax for the following GridModel Options:
 

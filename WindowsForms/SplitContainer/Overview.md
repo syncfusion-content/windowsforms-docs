@@ -1,14 +1,14 @@
 ---
 layout: post
-title: About Windows Forms SplitContainer control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® Windows Forms SplitContainer (SplitContainerAdv) control, its elements and more details.
+title: About Syncfusion® Windows Forms SplitContainer Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms SplitContainer (SplitContainerAdv) control and more details.
 platform: windowsforms
 control: Editors Package
 documentation: ug
 ---
 
 
-# Windows Forms SplitContainer (SplitContainerAdv) Overview
+# About Syncfusion® Windows Forms SplitContainer Control
 
 [SplitContainerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html) is a container control which allows you to add controls into panels ([Panel1](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html#Syncfusion_Windows_Forms_Tools_SplitContainerAdv_Panel1) and [Panel2](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html#Syncfusion_Windows_Forms_Tools_SplitContainerAdv_Panel2)) to a form, separated by splitters. 
 

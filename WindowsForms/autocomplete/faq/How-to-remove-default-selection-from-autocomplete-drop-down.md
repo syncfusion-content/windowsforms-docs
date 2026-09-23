@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: How to remove default selection from AutoComplete dropdown | WindowsForms | Syncfusion
-description: How to remove default selection from AutoComplete dropdown
+title: How to Remove Default Selection in AutoComplete | Syncfusion
+description: Remove the default selection from a Syncfusion® Windows Forms AutoComplete dropdown using event handling and selection settings.
 platform: WindowsForms
 control: Tools
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 
 
-# How to remove default selection from AutoComplete dropdown?
+# How to Remove the Default Selection from AutoComplete Dropdown
 
 To remove the default selection in AutoComplete dropdown, set SelectedIndex property to _-1_ inside the DropdownDisplayed event of the AutoComplete control as follows.
 

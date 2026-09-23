@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Windows Forms Radial Slider control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms Radial Slider control, its elements and more details.
+title: About Syncfusion® Windows Forms RadialSlider Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms RadialSlider control and more details.
 platform: WindowsForms
 control: RadialSlider 
 documentation: ug
 ---
 
-# Windows Forms Radial Slider Overview
+# About Syncfusion® Windows Forms RadialSlider Control
 
 The [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html) control is an advanced control, and it is capable of calculating the sequence value with the sequence circle sector. It contains additional features such as different visual styles, and it supports to modify the minimum and maximum values.
 

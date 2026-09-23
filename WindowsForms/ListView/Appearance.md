@@ -1,13 +1,12 @@
 ---
 layout: post
-title: Appearance
-description: This section explains about the Appearance support in SfListView.
-platform: windowsforms
+title: Appearance in Windows Forms SfListView | Syncfusion®
+description: Appearance in Windows Forms SfListView enables customizing specific items, groups, and visual elements with various styling options.
 control: SfListView
 documentation: ug
 ---
 
-# Appearance
+# Appearance in Windows Forms SfListView
 SfListView allows to customize the appearance of selected items through the [SfListView.Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_Style) property that contains all the settings for Item and Items Group appearance customizations.
 
 ## Customizing item appearance
@@ -28,7 +27,7 @@ sfListView1.Style.ItemStyle.Font = New Font("Segoe UI", 10)
 {% endhighlight %}
 {% endtabs %}
          
-![](Appearance_images/Appearance_img1.png)        
+![SfListView item customization](Appearance_images/Appearance_img1.png)       
                              
 ## Customizing items group appearance
 The items group appearance can be customized by using the `SfListView.Style.GroupItemStyle` property that contains all the settings for the items group appearance customization.
@@ -48,7 +47,7 @@ sfListView1.Style.GroupItemStyle.Font = New Font("Segoe UI", 12)
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearance_images/Appearance_img2.png)
+![SfListView items group customization](Appearance_images/Appearance_img2.png)
 
 ## Conditional styling
 The SfListView allows the items customization by using [SfListView.DrawItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_DrawItem) event.
@@ -76,7 +75,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearance_images/Appearance_img3.png)
+![SfListView with conditional styling](Appearance_images/Appearance_img3.png)
 
 ## Adding image to an item
 The SfListView allows adding image to each item by using the [SfListView.DrawItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_DrawItem) event. An image can be set to an item by using the `Image` property.
@@ -136,7 +135,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearance_images/Appearance_img4.png)
+![SfListView items with custom image](Appearance_images/Appearance_img4.png)
 
 ## Themes
 
@@ -198,7 +197,7 @@ sfListView1.ThemeName = "Office2016Colorful"
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearance_images/Appearance_img5.png)
+![SfListView with Office2016Colorful theme](Appearance_images/Appearance_img5.png)
 
 #### Office2016White
 This option helps to set the Office2016White Theme.
@@ -212,7 +211,7 @@ sfListView1.ThemeName = "Office2016White"
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearance_images/Appearance_img6.png)
+![SfListView with Office2016White theme](Appearance_images/Appearance_img6.png)
  
 #### Office2016DarkGray
 This option helps to set the Office2016DarkGray Theme.
@@ -226,7 +225,7 @@ sfListView1.ThemeName = "Office2016DarkGray"
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearance_images/Appearance_img7.png)
+![SfListView with Office2016DarkGray theme](Appearance_images/Appearance_img7.png)
 
 #### Office2016Black
 This option helps to set the Office2016Black Theme.
@@ -240,4 +239,4 @@ sfListView1.ThemeName = "Office2016Black"
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearance_images/Appearance_img8.png)
+![SfListView with Office2016Black theme](Appearance_images/Appearance_img8.png)

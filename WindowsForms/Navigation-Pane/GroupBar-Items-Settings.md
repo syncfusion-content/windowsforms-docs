@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: GroupBar Items Settings in Windows Forms Navigation Pane | Syncfusion
-description: Learn about GroupBar Items Settings support in Syncfusion Windows Forms Navigation Pane (GroupBar) control and more details.
+title: GroupBar Items Settings in Windows Forms | Syncfusion®
+description: GroupBar item settings support text alignment, images, highlighting, popups, renaming, and hosting child controls.
 platform: WindowsForms
 control: GroupBar
 documentation: ug

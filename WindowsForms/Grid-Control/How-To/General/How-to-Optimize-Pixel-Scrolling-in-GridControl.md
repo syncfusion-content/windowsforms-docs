@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Optimize-Pixel-Scrolling-in-GridControl | Windows Forms | Syncfusion
-description: Learn here all about how to optimize pixel scrolling in gridcontrol using Syncfusion Windows Forms and more.
+title: Optimize Pixel Scrolling in Windows Forms Grid Control | Syncfusion®
+description: Optimize pixel scrolling in Syncfusion® Windows Forms Grid Control by using a custom derived grid control and enabling efficient vertical scrolling.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to optimize pixel scrolling in GridControl
+# How to Optimize Pixel Scrolling in Windows Forms Grid Control
 
 The grid's base class pixel scrolling is not optimized for large row scenarios. In the derived GridControl, you will have to override a couple of virtual methods to make it perform well and use binary tree structures to quickly get the row index for an absolute pixel position and vice versa.
 

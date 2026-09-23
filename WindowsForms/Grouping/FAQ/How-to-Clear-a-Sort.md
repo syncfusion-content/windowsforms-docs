@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to Clear a Sort | WindowsForms | Syncfusion
-description: How to Clear a Sort
+title: How to Clear Sorting in Windows Forms Grouping | Syncfusion®
+description: Clear sorting in Syncfusion® Windows Forms Grouping control by removing all sorted columns or specific sorting settings from the data view.
 platform: WindowsForms
 control: Grouping
 documentation: ug
 ---
 
-# How to Clear Sorting
+# How to Clear Sorting in Windows Forms Grouping
 
 To clear all sorts, call the groupingEngine.TableDescriptor.SortedColumns.Clear method.
 

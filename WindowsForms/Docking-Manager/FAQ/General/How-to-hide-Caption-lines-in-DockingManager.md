@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to hide Caption lines in DockingManager | WindowsForms | Syncfusion®
-description: How to hide Caption lines in DockingManager
+title: How to hide caption lines in Docking Manager | Syncfusion®
+description: Learn how to hide caption lines in Syncfusion Windows Forms Docking Manager control using available properties.
 platform: WindowsForms
 control: DockingManager
 documentation: ug
 ---
 
-# How to hide caption lines in DockingManager?
+# How to hide caption lines in Docking Manager
 
 Caption lines which is displayed in Metro style can be hidden by disabling the `ShowMetroCaptionDottedLines` property.
 

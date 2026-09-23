@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to Insert an Unbound CheckBox Column | Windows Forms | Syncfusion
-description: Learn about How to Insert an Unbound Checkbox Column support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
+title: Unbound CheckBox Column in WinForms GridDataBoundGrid | Syncfusion®
+description: Insert an unbound CheckBox column in Syncfusion® WinForms GridDataBoundGrid and manage its values using QueryCellInfo and SaveCellInfo events.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 
-# How to Insert an Unbound CheckBox Column
+# How to Insert an Unbound CheckBox Column in WinForms GridDataBoundGrid
 
 This page explains How to Insert an Unbound CheckBox Column and more details.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Chart Appearance in Windows Forms Chart control | Syncfusion
-description: Learn about Chart Appearance support in Syncfusion Essential Studio® Windows Forms Chart control and more details.
+title: Appearance in Windows Forms Chart | Syncfusion®
+description: Appearance in the Windows Forms Chart enables customization of chart visuals, colors, styles, and display settings.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Chart Appearance in Windows Forms Chart
+# Appearance in Windows Forms Chart
 
 The following topics under this section discusses about various properties that are used to customize the appearance of the chart.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Hide a Row or Column in Windows Forms Grid Control | Syncfusion
-description: Learn here about how to hide a row or column in Syncfusion Essential Studio Windows Forms Grid Control, and more.
+title: Hide Rows and Columns in Windows Forms Grid Control | Syncfusion®
+description: Hide rows and columns in Syncfusion® Windows Forms Grid Control using row and column hidden collections and range-based visibility settings and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to hide a row or column in Windows Forms Grid Control
+# How to Hide a Row or Column in Windows Forms Grid Control
 
 You can hide rows and columns using grid.Model.Rows.Hidden collection and grid.Model.Cols.Hidden collection. You can hide or show a range of columns or rows using grid.Model.HideCols.SetRange or grid.Model.HideRows.SetRange.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Applying Themes in Windows Forms Progress Bar control | Syncfusion
-description: Learn about Applying Themes support in Syncfusion Windows Forms Progress Bar (ProgressBarAdv) control and more details.
+title: Applying Themes in Windows Forms ProgressBarAdv | Syncfusion®
+description: Applying themes in Windows Forms ProgressBarAdv enables a consistent visual appearance by using predefined styles across applications.
 platform: WindowsForms
 control: ProgressBarAdv
 documentation: ug
 ---
 
-# Applying Themes in Windows Forms Progress Bar (ProgressBarAdv)
+# Applying Themes in Windows Forms ProgressBarAdv
 
 The ProgressBarAdv control can now be themed by enabling the ThemesEnabled property.
 

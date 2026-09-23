@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Image Settings in Windows Forms CheckBox control | Syncfusion®
-description: Learn about Image Settings support in Syncfusion® Windows Forms CheckBox (CheckBoxAdv) control and more details.
+title: Image Settings in Windows Forms CheckBoxAdv | Syncfusion®
+description: Learn about Image Settings support in Syncfusion Windows Forms CheckBoxAdv control and more details.
 platform: windowsforms
 control: EditorsPackage
 documentation: ug
 ---
 
-# Image Settings in Windows Forms CheckBox (CheckBoxAdv)
+# Image Settings in Windows Forms CheckBoxAdv
 
 You can set the images to the [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) when it is in the Checked, Unchecked or Indeterminate state using [ImageCheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_ImageCheckBox),[ImageCheckBoxSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_ImageCheckBoxSize),[CheckedImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_CheckedImage),[UncheckedImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_UncheckedImage),[IndeterminateImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_IndeterminateImage),[DisabledImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_DisabledImage) and [StretchImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_StretchImage) properties.
 

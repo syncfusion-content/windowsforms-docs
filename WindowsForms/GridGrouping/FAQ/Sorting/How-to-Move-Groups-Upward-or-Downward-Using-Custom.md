@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Move-Groups-Upward-or-Downward-Using-Custom | Windows Forms | Syncfusion
-description: how to move groups upward or downward using custom comparer
+title: Custom Comparer in WinForms GridGroupingControl | Syncfusion®
+description: Move groups upward or downward using a custom comparer in Syncfusion® WinForms GridGroupingControl, its group sorting, custom comparison logic, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Move Groups Upward or Downward Using Custom Comparer
+# How to Move Group Using CustomComparer in WinForms GridGroupingControl
 
 To enable moving the groups using custom Comparer in GridGrouping control, an IComparer object and QueryValue event should be handled. The Comparer object allows you to control the movement of groups in GGC. The group moving logic should be implemented in custom Comparer. After customizing the sorting logic through IComparer, the QueryValue event should be applied to make the groups move among its position.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Background Settings in Windows Forms Progress Bar control | Syncfusion
-description: Learn about Background Settings support in Syncfusion Windows Forms Progress Bar (ProgressBarAdv) control and more details.
+title: Background Settings in Windows Forms ProgressBarAdv | Syncfusion®
+description: Background settings in Windows Forms ProgressBarAdv customize the appearance of the progress area to match application themes.
 platform: WindowsForms
 control: ProgressBarAdv
 documentation: ug
 ---
 
-# Background Settings in Windows Forms Progress Bar (ProgressBarAdv)
+# Background Settings in Windows Forms ProgressBarAdv
 
 The ProgressBarAdv control consists of various properties to customize the background. These properties and their description are given below.
 

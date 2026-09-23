@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to prevent tabbed docking | WindowsForms | Syncfusion®
-description: How to prevent tabbed docking
+title: How to prevent tabbed docking in Docking Manager | Syncfusion®
+description: Learn how to prevent tabbed docking in Syncfusion Windows Forms Docking Manager control for docked controls.
 platform: windowsforms
 control: DockingManager
 documentation: ug
 ---
 
-# How to prevent tabbed docking?
+# How to prevent tabbed docking in Docking Manager
 
 DockAllow event will be handled when a docking window is dragged over a potential dock target. In other words, whenever the user tries to dock a docked control to another docked control, this event will be raised. This lets you decide whether to allow tabbing or not. Giving arg.Cancel to `true` cancels the docking operation.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: SplashPanel Settings in Windows Forms Splash Screen | Syncfusion
-description: Learn about SplashPanel Settings support in Syncfusion Windows Forms Splash Screen (Splash) control and more details.
+title: SplashPanel Settings in Windows Forms SplashControl | Syncfusion®
+description: SplashPanel settings in Windows Forms SplashControl configure panel appearance, layout, and runtime display behavior.
 platform: WindowsForms
 control: SplashControl
 documentation: ug
 ---
 
-# SplashPanel Settings in Windows Forms Splash Screen (Splash)
+# SplashPanel Settings in Windows Forms SplashControl
 
 This section discusses how a SplashPanel control can be displayed as a SplashScreen for the SplashControl.
 

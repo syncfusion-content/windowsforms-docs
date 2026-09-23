@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Concepts and Features in Windows Forms Navigation Drawer | Syncfusion
-description: Learn about Concepts and Features support in Syncfusion Windows Forms Navigation Drawer control and more details.
+title: Features in Windows Forms Navigation Drawer | Syncfusion®
+description: Navigation Drawer features include content and drawer views, transitions, positioning options, animations, and drawer toggling.
 platform: WindowsForms
 control: NavigationDrawer 
 documentation: ug
 ---
 
-# Concepts and Features in Windows Forms Navigation Drawer
+# Features in Windows Forms Navigation Drawer
 
 ## ContentView
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dynamic Properties in Windows Forms Diagram control | Syncfusion®
-description: Learn about Dynamic Properties support in Syncfusion® Windows Forms Diagram control and more details.
+title: Dynamic Properties in Windows Forms Diagram | Syncfusion®
+description: Add and manage dynamic properties for nodes and connectors in the Syncfusion® Windows Forms Diagram control using the PropertyBag collection.
 platform: windowsforms
 control: Diagram
 documentation: ug
@@ -14,7 +14,7 @@ This feature lets the user add additional properties or data to the nodes and co
 
 The node’s [PropertyBag](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Node.html#Syncfusion_Windows_Forms_Diagram_Node_PropertyBag) property, which is a key value pair, is used to add, edit, and remove the additional properties or data and can be serialized when saving the diagram.
 
-The [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) has built-in UI dialogs to add, edit, and remove the dynamic properties. 
+The [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) has built-in UI dialogs to add, edit, and remove the dynamic properties. 
 
 Use Case Scenario:
 
