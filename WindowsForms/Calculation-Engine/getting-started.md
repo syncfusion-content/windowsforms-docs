@@ -36,7 +36,7 @@ WPF, Windows Forms, ASP. NET
 Syncfusion.Calculate.Base
 </td>
 <td>
-<a href="https://www.nuget.org/packages/Syncfusion.Calculate.Base/">[Syncfusion.Calculate.Base.nupkg]</a>
+<a href="https://www.nuget.org/packages/Syncfusion.Calculate.Base/" aria-label="Download Syncfusion Calculate Base NuGet package">[Syncfusion.Calculate.Base.nupkg]</a>
 </td>
 </tr>
 <tr>
@@ -47,7 +47,7 @@ Universal Windows Platform
 Syncfusion.Calculate.UWP
 </td>
 <td>
-<a href="https://www.nuget.org/packages/Syncfusion.Calculate.UWP/">[Syncfusion.Calculate.UWP.nupkg]</a>
+<a href="https://www.nuget.org/packages/Syncfusion.Calculate.UWP/" aria-label="Download Syncfusion Calculate UWP NuGet package">[Syncfusion.Calculate.UWP.nupkg]</a>
 </td>
 </tr>
 <tr>
@@ -58,7 +58,7 @@ Xamarin.Forms
 Syncfusion.Calculate.Portable<br/>
 </td>
 <td>
-<a href="https://www.nuget.org/packages/Syncfusion.Xamarin.Calculate/">[Syncfusion.Xamarin.Calculate.nupkg]</a>
+<a href="https://www.nuget.org/packages/Syncfusion.Xamarin.Calculate/" aria-label="Download Syncfusion Xamarin Calculate NuGet package">[Syncfusion.Xamarin.Calculate.nupkg]</a>
 </td>
 </tr>
 <tr>
@@ -69,7 +69,7 @@ Xamarin.Android
 Syncfusion.Calculate.Android<br/>
 </td>
 <td>
-<a href="https://www.nuget.org/packages/Syncfusion.Xamarin.Calculate/">[Syncfusion.Xamarin.Calculate.nupkg]</a>
+<a href="https://www.nuget.org/packages/Syncfusion.Xamarin.Calculate/" aria-label="Download Syncfusion Xamarin Calculate NuGet package">[Syncfusion.Xamarin.Calculate.nupkg]</a>
 </td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ Xamarin.iOS
 Syncfusion.Calculate.iOS<br/>
 </td>
 <td>
-<a href="https://www.nuget.org/packages/Syncfusion.Xamarin.Calculate/">[Syncfusion.Xamarin.Calculate.nupkg]</a>
+<a href="https://www.nuget.org/packages/Syncfusion.Xamarin.Calculate/" aria-label="Download Syncfusion Xamarin Calculate NuGet package">>[Syncfusion.Xamarin.Calculate.nupkg]</a>
 </td>
 </tr>
 <tr>
@@ -91,7 +91,7 @@ Syncfusion.Calculate.iOS<br/>
 Syncfusion.Calculate.Base<br/>
 </td>
 <td>
-<a href="https://www.nuget.org/packages/Syncfusion.Calculate.Base/">[Syncfusion.Calculate.Base.nupkg]</a>
+<a href="https://www.nuget.org/packages/Syncfusion.Calculate.Base/" aria-label="Download Syncfusion Calculate Base NuGet package">[Syncfusion.Calculate.Base.nupkg]</a>
 </td>
 </tr>
 </tbody>

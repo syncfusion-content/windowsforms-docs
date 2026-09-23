@@ -9,11 +9,11 @@ documentation: ug
 
 # Events Implemented in MultiSelectionCombobox in Windows Forms
 
-### SelectedItemCollectionChanged
+## SelectedItemCollectionChanged
 
 This event is triggered once SelectedItems collection is modified in MultiSelectionComboBox.
 
-#### Event arguments
+### Event arguments
 
 
 
@@ -60,11 +60,11 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-### VisualItemCollectionChanged
+## VisualItemCollectionChanged
 
 This event is triggered once VisualItem collection is modified in MultiSelectionComboBox.
 
-#### Event arguments
+### Event arguments
 
 
 
@@ -111,11 +111,11 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-### AutoSizeModeChanged
+## AutoSizeModeChanged
 
 This event is triggered once AutoSizeMode is modified in MultiSelectionComboBox.
 
-#### Event arguments
+### Event arguments
 
 
 

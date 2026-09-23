@@ -97,7 +97,7 @@ SunkenInner and<br/>
 SunkenOuter</td></tr>
 </table>
 
-N> This setting will be effective only for Office2003, OfficeXP and WindowsXP styles set through ButtonAdv.Appearance property. See [Visual Styles](https://help.syncfusion.com/windowsforms/).
+N> This setting will be effective only for Office2003, OfficeXP and WindowsXP styles set through ButtonAdv.Appearance property. See [Visual Styles](https://help.syncfusion.com/windowsforms/overview#visual-styles).
 
 {% tabs %}
 {% highlight c# %}

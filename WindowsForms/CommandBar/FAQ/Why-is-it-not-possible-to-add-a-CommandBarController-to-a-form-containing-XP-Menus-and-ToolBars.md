@@ -7,7 +7,7 @@ control: CommandBars package
 documentation: ug
 ---
 
-# Why is it not possible to add a CommandBarController to a form containing XP Menus and ToolBars?
+# Why CommandBarController Cannot Be Added to XP Menu Forms?
 
 The CommandBars Framework should be used only with the standard .NET Menus/ToolBars and not with the Essential Tools XP Menus. This is because the XP Menus designer infrastructure will freeze the .NET environment.
 

@@ -205,7 +205,7 @@ Me.comboBoxAdv1.MaxLength = 32766
 
 ### Banner Text Support
 
-You can set banner text for the ComboBoxAdv control. Refer to [BannerTextProvider Component](https://help.syncfusion.com/windowsforms/) topic for more details.
+You can set banner text for the ComboBoxAdv control. Refer to [BannerTextProvider Component](https://help.syncfusion.com/windowsforms/overview) topic for more details.
 
 
 
