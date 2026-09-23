@@ -199,7 +199,7 @@ chartControl.Series(0).DrawColumnSeparatingLines = True
 {% endhighlight %}
 {% endtabs %}
 
-![Column separating lines in Windows Forms Chart](/Chart-Types_images/windowsforms-column-separating-lines.png)
+![Column separating lines in Windows Forms Chart](../Chart-Types_images/windowsforms-column-separating-lines.png)
 
 ### Column type
 
