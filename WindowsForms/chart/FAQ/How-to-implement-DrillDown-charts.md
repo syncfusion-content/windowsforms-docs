@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-implement-DrillDown-charts | Windows Forms | Syncfusion
-description: how to implement drilldown charts
+title: How to implement drilldown in Windows Forms Chart | Syncfusion®
+description: Learn how to implement drilldown charts in a Windows Forms Chart and navigate between chart levels to view detailed data.
 platform: windowsforms
 control: chart
 documentation: ug
 ---
 
-# How to implement DrillDown charts
+# How to implement drilldown in Windows Forms Chart
 
 DrillDown charts can essentially be implemented by listening to the click events in the chart and either replacing the current visible chart with another chart that has drill-down information or reinitializing the chart with new drill-down information.
 

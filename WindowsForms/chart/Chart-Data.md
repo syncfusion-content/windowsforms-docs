@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Populating Data in Windows Forms Chart control | Syncfusion
-description: Learn about Populating Data support in Syncfusion Essential Studio® Windows Forms Chart control and more details.
+title: Populating Data in Windows Forms Chart | Syncfusion®
+description: Populating Data in the Windows Forms Chart enables binding and displaying data from various sources for chart visualization.
 platform: windowsforms
 control: Chart
 documentation: ug

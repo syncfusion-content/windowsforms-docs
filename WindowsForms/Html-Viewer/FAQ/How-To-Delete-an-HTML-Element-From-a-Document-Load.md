@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-delete-an-HTML-Element | WindowsForms | Syncfusion®
-description: how to delete an html element from a document loaded into the htmlui control at run-time?
-platform: WindowsForms
+title: How to delete an HTML Element | Syncfusion®
+description: Learn how to how to delete an HTML Element in Syncfusion Windows Forms Html Viewer (HTMLUI) control.
+platform: windowsforms
 control: HTMLUIControl
 documentation: ug
 ---
 
-# How to delete an HTML element from a document loaded into the HTMLUI control at run-time?
+# How to delete an HTML Element
 
 The HTML elements loaded in the HTMLUI control are collected in the IHTMLElementsCollection. You can make use of the Remove method of the [IHTMLElementsCollection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.IHTMLElementsCollection.html) Interface to remove an element from the current collection, and the Refresh method to redraw the HTMLUI control with changes updated in the current document.
 

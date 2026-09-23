@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to use UserControls as TabbedMDIManager’s children | WindowsForms | Syncfusion®
-description: How to use UserControls as TabbedMDIManager’s children
+title: How to use TabbedMDI in Windows Forms Docking Manager | Syncfusion®
+description: Learn how to use UserControls as TabbedMDI Manager children in Syncfusion Windows Forms Docking Manager control with examples.
 platform: windowsforms
 control: DockingManager
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 
 
 
-# How to use UserControls as TabbedMDIManager’s children?
+# How to use TabbedMDI in Windows Forms Docking Manager
 
  Normally TabbedMDI is used in MDI applications where the child forms are the children that get tabbed. But, we could also use TabbedMDI with UserControls as children and that are also dockable. The sample attached here shows how the UserControls can be used as TabbedMDI children in association with the DockingManager.
 
@@ -82,5 +82,5 @@ Me.dockingManager1.SetAsMDIChild(Me.userControl31,True)
 {% endtabs %}
 
 
-![](MDIChild_images/MDIChild_img2.jpeg) 
+![UserControls displayed as MDI tabs in Docking Manager](MDIChild_images/MDIChild_img2.jpeg) 
 

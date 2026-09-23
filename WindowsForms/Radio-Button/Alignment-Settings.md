@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Alignment Settings in Windows Forms Radio Button control | Syncfusion
-description: Learn about Alignment Settings support in Syncfusion Windows Forms Radio Button (RadioButtonAdv) control and more details.
+title: Alignment Settings in Windows Forms RadioButtonAdv | Syncfusion®
+description: Alignment settings in Windows Forms RadioButtonAdv enable customizing the alignment of text and radio button elements to achieve the desired layout.
 platform: WindowsForms
 control: RadioButtonAdv
 documentation: ug
 ---
 
-# Alignment Settings in Windows Forms Radio Button (RadioButtonAdv)
+# Alignment Settings in Windows Forms RadioButtonAdv
 
 This section discusses the alignment settings of the RadioButtonAdv.
 

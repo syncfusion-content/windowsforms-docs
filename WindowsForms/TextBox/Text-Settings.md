@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Text Settings in Windows Forms TextBox control | Syncfusion
-description: Learn about Text Settings support in Syncfusion Windows Forms TextBox (TextBoxExt) control and more details.
+title: Text Settings in Windows Forms TextBox | Syncfusion®
+description: Text settings support text formatting, alignment, casing, multiline input, overflow indicators, and tooltip customization.
 platform: WindowsForms
 control: TextBoxExt
 documentation: ug

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: StatusBarAdvPanel in Windows Forms Status Bar control | Syncfusion
-description: Learn about StatusBarAdvPanel support in Syncfusion Windows Forms Status Bar (StatusBarAdv) control and more details.
+title: StatusBarAdvPanel in Windows Forms StatusBarAdv | Syncfusion®
+description: StatusBarAdvPanel in Windows Forms StatusBarAdv enables flexible content display and customization within status bar layouts.
 platform: WindowsForms
 control: StatusBarAdv
 documentation: ug
 ---
 
-# StatusBarAdvPanel in Windows Forms Status Bar (StatusBarAdv)
+# StatusBarAdvPanel in Windows Forms StatusBarAdv
 
 StatusBarAdvPanels can also be added to the StatusBarAdv control using the Panels property. On clicking the Panels property, the StatusBarAdvPanel Collection Editor pops up. Using this window, the user can add any number of panels to the control and customize them according to their requirements.
 

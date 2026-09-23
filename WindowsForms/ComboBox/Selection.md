@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection in Windows Forms ComboBox control | Syncfusion
-description: Learn about Selection support in Syncfusion Windows Forms ComboBox (SfComboBox) control and more details.
+title: Selection in Windows Forms SfComboBox | Syncfusion®
+description: Selection in Windows Forms SfComboBox enables single and multiple item selection, selected value retrieval, delimiter customization, and selection management.
 platform: windowsforms
 control: SfComboBox
 documentation: ug
 ---
 
-# Selection in Windows Forms ComboBox (SfComboBox)
+# Selection in Windows Forms SfComboBox
 
 The [Windows Forms ComboBox](https://www.syncfusion.com/winforms-ui-controls/combobox) (SfComboBox) allows you to select single or multiple items in the drop-down list. The selection mode can be set by using the [ComboBoxMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_ComboBoxMode) property. 
 

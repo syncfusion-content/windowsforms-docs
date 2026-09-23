@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How To Change the Color Of the LineConnector Diagram | Syncfusion®
-description: how to change the color of the lineconnector when activating the linetool in Windows Forms Diagram control, its elements and more details. 
+title: How to change the color of Lines in WinForms Diagram | Syncfusion®
+description: Learn how to change the LineConnector color when activating the LineTool in the Syncfusion® Windows Forms Diagram control using custom tool logic.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# How To Change the Color Of the LineConnector Diagram
+# How to Change the Color of Connector in Windows Forms Diagram
 
 This page explains about How To Change the Color Of the LineConnector When Activating the LineTool and more details.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ExportToExcel in SfDataGrid | Syncfusion®
-description: Learn about exporting datagrid to excel support in Syncfusion® WinForms DataGrid (SfDataGrid) control and more details.
+title: Export To Excel in Windows Forms Data Grid | Syncfusion®
+description: Export To Excel in Data Grid supports exporting records with customization options, formatting, and styles for efficient spreadsheet generation.
 platform: windowsforms
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Export to Excel in WinForms DataGrid (SfDataGrid)
-SfDataGrid provides support to export data to excel. It also provides support for grouping, filtering, sorting, paging, unbound rows and stacked headers while exporting.
+# Export To Excel in Windows Forms Data Grid
+[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) provides support to export data to excel. It also provides support for grouping, filtering, sorting, paging, unbound rows and stacked headers while exporting.
 The following assemblies needs to be added for exporting to excel.
 
 * [Syncfusion.SfDataGridConverter.WinForms](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.html)
@@ -516,7 +516,7 @@ System.Diagnostics.Process.Start("Sample.png")
 {% endhighlight %}
 {% endtabs %}
 
-## Import form Excel to SfDataGrid
+## Import from Excel to SfDataGrid
 The DataSource of the SfDataGrid can be imported from the excel sheet by using the [IWorkSheet.ExportDataTable](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.IWorksheet.html#Syncfusion_XlsIO_IWorksheet_ExportDataTable_Syncfusion_XlsIO_IRange_Syncfusion_XlsIO_ExcelExportDataTableOptions_) method. This method will convert the excel data into the DataTable.
 {% tabs %}
 {% highlight c# %}
@@ -948,7 +948,7 @@ workBook.SaveAs("Sample.xlsx")
 
 ![Windows forms datagrid displays applied colors in specific range to exported excel](ExportToExcel_images/ExportToExcel_img9.jpeg)
 
-#### Exporting Multiple SfDataGrid to Single Excel Sheet
+### Exporting Multiple SfDataGrid to Single Excel Sheet
 The multiple grids can also be exported to the same worksheet by using the `UsedRange.CopyTo` method.
 {% tabs %}
 {% highlight c# %}

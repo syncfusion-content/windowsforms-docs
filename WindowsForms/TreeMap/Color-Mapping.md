@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Color Mapping in Windows Forms TreeMap control | Syncfusion®
-description: Learn about Color Mapping support in Syncfusion® Windows Forms TreeMap control, its elements and more details.
+title: Color Mapping in Windows Forms TreeMap | Syncfusion®
+description: Color mapping in the Windows Forms TreeMap enables visualization of data values using colors, supporting customized and meaningful data representation.
 platform: windowsforms
 control: TreeMap 
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Color Mapping in Windows Forms TreeMap
 
-Color mapping is categorized into the following four different types:
+Color mapping is categorized into the following four types:
 
 * UniColorMapping
 * RangeBrushColorMapping
@@ -193,7 +193,7 @@ this.TreeMap1.LeafColorMapping = desaturationColorMapping;
 
 ## Palette color mapping
 
-The leaf nodes can be colored using the brushes listed in the [`Colors`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TreeMap.PaletteColorMapping.html#Syncfusion_Windows_Forms_TreeMap_PaletteColorMapping_Colors) collection of PaletteColorMapping.
+The leaf nodes can be colored using the brushes specified in the [`Colors`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TreeMap.PaletteColorMapping.html#Syncfusion_Windows_Forms_TreeMap_PaletteColorMapping_Colors) collection of PaletteColorMapping.
 
 #### Code sample
 

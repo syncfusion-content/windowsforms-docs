@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Theming in Windows Forms MessageBox control | Syncfusion
-description: Learn here all about theming feature of Syncfusion Windows Forms MessageBox (MessageBoxAdv) control and more.
+title: Theming in Windows Forms MessageBoxAdv | Syncfusion®
+description: Theming in Windows Forms MessageBoxAdv enables applying visual styles and appearance customization options to create consistent and modern dialog experiences.
 platform: WindowsForms
 control: MessageBoxAdv
 documentation: ug
 ---
 
-# Style settings in Windows Forms MessageBox (MessageBoxAdv)
+# Theming in Windows Forms MessageBoxAdv
 
 This section explains the visual styles and customization support in MessageBoxAdv.
 

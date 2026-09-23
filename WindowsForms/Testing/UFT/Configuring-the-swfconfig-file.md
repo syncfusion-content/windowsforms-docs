@@ -1,13 +1,13 @@
 ---
 layout: post
-title: QTP/UFT for Syncfusion Essential WindowsForms
-description: Learn here all about Configuring the swfconfig file for QTP/UFT of the Syncfusion Windows Forms control and more. 
+title: Configuring the swfconfig File in Windows Forms UFT | Syncfusion®
+description: Learn about configuring the swfconfig file for Syncfusion® Essential Studio Windows Forms UFT with step-by-step guide.
 platform: WindowsForms
 control: Testing
 documentation: ug
 ---
 
-# Configuring the swfconfig file
+# Configuring the swfconfig File in Syncfusion® Windows Forms UFT
 
 An XML file in QTP called swfconfig is the configuration file located at (Installed location of Essential QuickTest Professional)\Config&lt;version-2.0 or 3.5 or 4.0 or 4.5 or 4.5.1 0r 4.6&gt;\swfconfig, that contains all the mapping information for QTP to recognize Syncfusion controls. Using the swfconfig utility, you can easily configure the swfconfig.xml file in HP QTP/UFT.
 

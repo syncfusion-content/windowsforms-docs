@@ -7,11 +7,11 @@ control: Chart
 documentation: ug
 ---
 
-# Chart Tick Lines in Windows Forms Chart
+# Chart tick lines in Windows Forms Chart
 
 ## Major ticks
 
-Major ticks are rendered automatically at the intersection of an axis with the interval grid lines. 
+Major ticks are the primary tick marks displayed at major interval positions on an axis to indicate the main scale values.
 
 ### Customization
 
@@ -21,13 +21,13 @@ The following properties allow you to customize the appearance and behavior of t
 - [TickColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_TickColor) - Color of the tick mark.
 - [TickLabelGridPadding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_TickLabelGridPadding) - The padding between the tick mark in the axis and the label, by default it is 5.
 - [TickDrawingOperationMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_TickDrawingOperationMode) - Defines the number of ticks to render while zooming.
-NumberOfIntervalsFixed - When you zoom, the number of visible intervals will be constant. So, as you zoom in, the total number of intervals will increase.
-IntervalFixed - The number of intervals will be constant. So, as you zoom in, fewer intervals will be visible at a time.
+`NumberOfIntervalsFixed` - When you zoom, the number of visible intervals will be constant. So, as you zoom in, the total number of intervals will increase.
+`IntervalFixed` - The number of intervals will be constant. So, as you zoom in, fewer intervals will be visible at a time.
 
 {% tabs %}
 {% highlight c# %}
 
-this.chartControl1.PrimaryXAxis.TickSize = new Size(3,3);
+this.chartControl1.PrimaryXAxis.TickSize = new Size(4,7);
 this.chartControl1.PrimaryXAxis.TickColor = Color.DarkOrange;
 this.chartControl1.PrimaryXAxis.TickLabelGridPadding = 8F;
 
@@ -35,7 +35,7 @@ this.chartControl1.PrimaryXAxis.TickLabelGridPadding = 8F;
 
 {% highlight vb %}
 
-Me.chartControl1.PrimaryXAxis.TickSize = new Size(3,3)
+Me.chartControl1.PrimaryXAxis.TickSize = new Size(4,7)
 Me.chartControl1.PrimaryXAxis.TickColor = Color.DarkOrange
 Me.chartControl1.PrimaryXAxis.TickLabelGridPadding = 8F
 
@@ -44,9 +44,9 @@ Me.chartControl1.PrimaryXAxis.TickLabelGridPadding = 8F
 
 ![Chart Axes](Axis_Images/Chart-Axes_img24.jpeg)
 
-### Minor Ticks
+## Minor ticks
 
-Minor ticks are tick marks displayed between major ticks. They are not rendered by default.
+Minor ticks are smaller tick marks displayed between major ticks to provide additional scale divisions and improve readability.
 
 ### Customization
 

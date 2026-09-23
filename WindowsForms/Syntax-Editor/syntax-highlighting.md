@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syntax Highlighting in Windows Forms Syntax Editor | Syncfusion
-description: Learn about Syntax Highlighting support in Syncfusion Windows Forms Syntax Editor control and more details.
+title: Syntax Highlighting in Windows Forms SyntaxEditor | Syncfusion®
+description: Syntax highlighting in Windows Forms SyntaxEditor provides color-coded formatting for programming languages, improving code readability and editing efficiency.
 platform: windowsforms
 control: SyntaxEditor
 documentation: ug
 ---
 
-# Syntax Highlighting in Windows Forms Syntax Editor
+# Syntax Highlighting in Windows Forms SyntaxEditor
 
 Provides built-in syntax highlighting support for popular languages like C#, VB.NET, XML, HTML, Java, SQL, PowerShell, C, JavaScript, VBScript, and Delphi.
 

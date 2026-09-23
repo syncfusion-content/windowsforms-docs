@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Context Menu in GridControl
-description: how to show contextmenu in the center of currentcell or selected cells irrespective of the mouse click
+title: Show Context Menu in Windows Forms Grid Control | Syncfusion®
+description: Show a context menu at the center of the current or selected cells in Syncfusion® Windows Forms Grid Control using mouse events and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to show ContextMenu in the center of CurrentCell or Selected Cells Irrespective of the Mouse click
+# How to Show Context Menu in Windows Forms Grid Control
 
 This can be achieved by handling Grid's MouseDown event. In the event handler, the center location of the current cell or the selected range is calculated and the context menu is shown after moving the cursor to the center point. Below is the code snippet.
 

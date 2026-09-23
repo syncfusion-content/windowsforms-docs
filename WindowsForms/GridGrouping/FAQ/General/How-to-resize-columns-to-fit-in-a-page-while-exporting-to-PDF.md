@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to resize columns to fit in a page while exporting to PDF | Windows Forms | Syncfusion
-description: how to resize columns to fit in a page while exporting to pdf
+title: Resize Columns to Fit in WinForms GridGroupingControl | Syncfusion®
+description: Resize columns to fit a page while exporting to PDF in Syncfusion® WinForms GridGroupingControl, its PDF export settings, page fitting, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Resize Columns to Fit in a Page while Exporting to PDF
+# How to Resize Columns to Fit a Page in WinForms GridGroupingControl
 
 To resize columns to fit in a page, you can use property ExportRange of GridPDFConverter. The property is used to set number of rows to be exported in a page. The ExportToPdfWithMerge method is used to export the grid.
 

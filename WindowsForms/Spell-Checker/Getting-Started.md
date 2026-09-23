@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Spell Checker | Syncfusion®
-description: Learn here about getting started with Syncfusion® Windows Forms Spell Checker (SpellCheckerAdv) control, its elements and more details.
+title: Getting Started with Windows Forms SpellCheckerAdv | Syncfusion®
+description: Walks through setting up Syncfusion Windows Forms SpellCheckerAdv control, including elements and basic configuration.
 platform: windowsforms
 control: SpellCheckerAdv
 documentation: ug
 ---
 
-# Getting Started with Windows Forms Spell Checker (SpellCheckerAdv)
+# Getting Started with Windows Forms SpellCheckerAdv
 
 This section describes how to add a [SpellCheckerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SpellCheckerAdv.html) control in a Windows Forms application and overview of its basic functionalities.
 

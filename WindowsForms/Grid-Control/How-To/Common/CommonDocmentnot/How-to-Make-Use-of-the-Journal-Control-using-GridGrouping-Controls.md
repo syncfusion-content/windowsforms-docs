@@ -92,7 +92,7 @@ Me.gridGroupingControl1.TableOptions.ShowRecordPreviewRow = Not Me.gridGroupingC
 
 
 
-Private Me.gridGroupingControl1.QueryCellStyleInfo += New Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellStyleInfoEventHandler(AddressOf gridGroupingControl1_QueryCellStyleInfo)
+AddHandler Me.gridGroupingControl1.QueryCellStyleInfo, New Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellStyleInfoEventHandler(AddressOf gridGroupingControl1_QueryCellStyleInfo)
 
 
 

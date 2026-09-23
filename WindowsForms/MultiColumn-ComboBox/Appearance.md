@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Appearance | WindowsForms | Syncfusion
-description: This section deals with explain about the appearance in MultiColumnComboBox control on Windows Forms platform
+title: Appearance in Windows Forms MultiColumnComboBox | Syncfusion®
+description: Customize the appearance of the Windows Forms MultiColumnComboBox control using styles, colors, columns, and display settings.
 platform: WindowsForms
-control: Editors Package
+control: MultiColumnComboBox
 documentation: ug
 ---
 

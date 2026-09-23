@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Exporting in GridControl
-description: how to export cellcommenttips to excel using gridexcelconvertercontrol
+title: Export CellComment to Excel in WinForms Grid Control | Syncfusion®
+description: Export CellCommentTips to Excel in Syncfusion® Windows Forms Grid Control using GridExcelConverterControl and the QueryImportExportCellInfo event and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to export CellCommentTips to Excel using GridExcelConverterControl
+# How to Export CellCommentTips to Excel in Windows Forms Grid Control
 
 You can achieve this by handling QueryImportExportCellInfo event handler. In the event, check GridExcelTipStyleProperties for ExcelTip properties and accordingly add the comment to the IRange.
 

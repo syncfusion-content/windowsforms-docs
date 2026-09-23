@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization in Windows Forms Spell Checker control | Syncfusion®
-description: Learn about Customization support in Syncfusion® Windows Forms Spell Checker (SpellCheckerAdv) control and more details.
+title: Customization in Windows Forms SpellCheckerAdv | Syncfusion®
+description: Describes customization options for Syncfusion Windows Forms SpellCheckerAdv control, including UI and behavior configuration.
 platform: windowsforms
 control: SpellCheckerAdv
 documentation: ug
 ---
 
-# Customization in Windows Forms Spell Checker (SpellCheckerAdv)
+# Customization in Windows Forms SpellCheckerAdv
 
 SpellCheckerAdv allows customizing options to add misspelled words from the input text to the error list.
 

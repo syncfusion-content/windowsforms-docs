@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Filtering in Windows Forms ListView Control | Syncfusion
-description: This section explains about the Filtering support in Syncfusion Windows Forms ListView (SfListView) Control, its elements, and more.
+title: Filtering in Windows Forms SfListView | Syncfusion®
+description: Filtering in Windows Forms SfListView enables users to display items based on specific criteria, helping organize, search, and manage data efficiently.
 platform: windowsforms
 control: SfListView
 documentation: ug
 ---
 
-# Filtering in Windows Forms ListView
+# Filtering in Windows Forms SfListView
 This section explains how to filter the data and its related operations in the SfListView.
 
 ## Programmatic Filtering

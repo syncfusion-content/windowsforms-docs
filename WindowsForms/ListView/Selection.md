@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection in Windows-Forms ListView Control | Syncfusion
-description: Learn here all about selection feature of Syncfusion Windows Forms ListView (SfListView) control and more.
+title: Selection in Windows Forms SfListView | Syncfusion®
+description: Selection in Windows Forms SfListView supports UI and programmatic item selection, selected item management, hot tracking, and appearance customization.
 platform: windowsforms
 control: SfListView
 documentation: ug
 ---
 
-# Selection in Windows Forms ListView (SfListView)
+# Selection in Windows Forms SfListView
 This section explains how to perform selection and its related operations in the [Windows Forms ListView](https://www.syncfusion.com/winforms-ui-controls/listview) (SfListView).
 
 ## UI Selection

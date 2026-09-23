@@ -1,14 +1,14 @@
 ---
 layout: post
-title: FilterRow | DataGrid Control for Windows Forms | Syncfusion®
-description: This section explains about the filter row feature and it's customization in datagrid control for windows forms
+title: Filter Row in Windows Forms Data Grid | Syncfusion®
+description: Filter Row in Data Grid provides row-based filtering with customizable filter options, enabling quick and efficient data searching.
 platform: windowsforms
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# FilterRow in Windows Forms DataGrid (SfDataGrid)
-SfDataGrid provides built-in row (called FilterRow) to filter the records. This FilterRow can be enabled by specifying the position where it should be displayed by setting [SfDataGrid.FilterRowPosition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_FilterRowPosition) property.
+# Filter Row in Windows Forms Data Grid
+[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) provides built-in row (called FilterRow) to filter the records. This FilterRow can be enabled by specifying the position where it should be displayed by setting [SfDataGrid.FilterRowPosition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_FilterRowPosition) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -129,7 +129,7 @@ Filters the Boolean values.
 DateTime
 </td>
 <td>
-SfDataTimeEdit
+SfDateTimeEdit
 </td>
 <td>
 FilterRowDateTimeCellRenderer
@@ -280,7 +280,7 @@ Always Equals or Not Equal filter condition will be applied based on the selecte
 ![WindowsForms DataGrid showing filterrow with textbox editor options](filterrow_images/windowsforms-datagrid-filterrow-with-textbox-editor-options.png)
 
 ## Filtering null Values 
-The null values of the columns can be filtered by using the filter row options such as Null and Not Null. This options is enabled by default for all the filter row editors. To disable the null filter options from the filter options list, use the [AllowBlankFilters](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_AllowBlankFilters) property of the GridColumn. The default value of this property is `true`.
+The null values of the columns can be filtered by using the filter row options such as Null and Not Null. These options are enabled by default for all the filter row editors. To disable the null filter options from the filter options list, use the [AllowBlankFilters](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_AllowBlankFilters) property of the GridColumn. The default value of this property is `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -600,7 +600,7 @@ public class FilterRowMultiSelectComboBoxCellRendererExt : FilterRowMultiSelectC
     /// </summary>
     /// <param name="filterPredicate">FilterPredicates for a column</param>
     /// <param name="filterValue">FilterValue for a column</param>
-    /// <returns>Returns trow whether the column having the filter value other wise return false.</returns>
+    /// <returns>Returns true whether the column having the filter value; otherwise, returns false.</returns>
     private bool NeedToAdd(ObservableCollection<FilterPredicate> filterPredicate, string filterValue)
     {
         bool needToAdd = false;
@@ -778,7 +778,7 @@ Public Class FilterRowMultiSelectComboBoxCellRendererExt
 	''' </summary>
 	''' <param name="filterPredicate">FilterPredicates for a column</param>
 	''' <param name="filterValue">FilterValue for a column</param>
-	''' <returns>Returns trow whether the column having the filter value other wise return false.</returns>
+	''' <returns>Returns true whether the column having the filter value; otherwise, returns false.</returns>
 	Private Function NeedToAdd(ByVal filterPredicate As ObservableCollection(Of FilterPredicate), ByVal filterValue As String) As Boolean
 'INSTANT VB NOTE: The local variable needToAdd was renamed since Visual Basic will not allow local variables with the same name as their enclosing function or property:
 		Dim needToAdd_Renamed As Boolean = False

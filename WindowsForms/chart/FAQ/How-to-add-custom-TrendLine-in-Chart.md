@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-add-custom-TrendLine-in-Chart | Windows Forms | Syncfusion
-description: how to add custom trendline in chart
+title: How to add a custom trendline in Windows Forms Chart | Syncfusion®
+description: Learn how to add a custom trendline in the Windows Forms Chart to analyze and visualize data trends.
 platform: windowsforms
 control: chart
 documentation: ug
 ---
 
-# How to add custom TrendLine in Chart
+# How to add a custom trendline in Windows Forms Chart
 
 TrendLines are used to draw lines in the ChartArea. They can be added to the chart using the TrendLineAdder class. 
 

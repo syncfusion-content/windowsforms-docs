@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Hub Tile control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms Hub Tile control, its elements and more details.
-platform: WindowsForms
+title: Getting Started with Windows Forms HubTile | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms HubTile control. Explore setup, features, examples, and customization options.
+platform: windowsforms
 control: HubTile
 documentation: ug
 ---
 
-# Getting Started with Windows Forms Hub Tile
+# Getting Started with Windows Forms HubTile
 
 This section describes how to add `HubTile` control in a Windows Forms application and overview of its basic functionalities.
 

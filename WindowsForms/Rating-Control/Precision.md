@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Precision in Windows Forms Rating Control control | Syncfusion
-description: Learn about Precision support in Syncfusion Windows Forms Rating Control (Rating) control and more details.
+title: Precision in Windows Forms Rating | Syncfusion®
+description: Precision in Windows Forms Rating enables standard, half rating values, allowing accurate and flexible rating input based on application needs.
 platform: WindowsForms
 control: Rating  
 documentation: ug
 ---
 
-# Precision in Windows Forms Rating Control (Rating)
+# Precision in Windows Forms Rating
 
 In Rating, [Precision](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html#Syncfusion_Windows_Forms_Tools_RatingControl_Precision) can be set either as Standard or as Half, based on user requirement.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Windows Forms Splitter control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms Splitter control, its elements and more details.
+title: About Syncfusion® Windows Forms Splitter Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms Splitter control and more details.
 platform: windowsforms
 control: Splitter  
 documentation: ug
 ---
 
-# Windows Forms Splitter Overview
+# About Syncfusion® Windows Forms Splitter Control
 
 SplitterControl is a container control that enables end user to embed Grid and show multiple views of the same grid by using its Splitter. This enables viewing more than one copy of a worksheet and scrolling through each pane of the worksheet independently. The Splitter can be scrolled by placing the mouse pointer over it, holding down the left mouse button, and dragging it to the required position. It can be split horizontally and vertically.
 

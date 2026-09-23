@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-prevent-reordering-of-Tab-Pages | WindowsForms | Syncfusion®
-description: how to prevent reordering of tab pages in tabbedmdimanager control
+title: How to Prevent Reordering of Tab Pages in TabbedMDI | Syncfusion®
+description: Learn how to prevent reordering of tab pages in Syncfusion Windows Forms TabbedMDI control, its elements and more details.
 platform: windowsforms
 control: TabbedMDIManager
 documentation: ug
 ---
 
-# How to prevent reordering of tab pages in TabbedMDIManager control
+# How to Prevent Reordering of Tab Pages in TabbedMDI
 
 The reordering of tab pages can be prevented by implementing the below code snippet. For this derive a class from TabbedMDIManager and override the MDITabPanel property and set the [UserMoveTabs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_UserMoveTabs) property of MDITabPanel to `true`.
 

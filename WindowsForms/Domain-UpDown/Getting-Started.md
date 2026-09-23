@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Domain UpDown | Syncfusion®
-description: Learn here about getting started with Syncfusion® Windows Forms Domain UpDown (DomainUpdownExt) control, its elements, and more.
+title: Getting Started with Windows Forms DomainUpdownExt | Syncfusion®
+description: Learn here about getting started with Syncfusion Windows Forms DomainUpdownExt control, its elements, and more.
 platform: windowsforms
 control: DomainUpdownExt 
 documentation: ug
 ---
 
-# Getting Started with Windows Forms Domain UpDown (DomainUpdownExt)
+# Getting Started with Windows Forms DomainUpdownExt
 
 ## Assembly deployment
 

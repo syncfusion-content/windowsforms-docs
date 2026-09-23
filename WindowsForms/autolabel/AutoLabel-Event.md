@@ -1,12 +1,12 @@
 ---
 layout: post
-title: AutoLabel Event in Windows Forms AutoLabel control | Syncfusion
-description: Learn about AutoLabel Event support in Syncfusion Essential Studio Windows Forms AutoLabel control and more details.
+title: Event in Windows Forms AutoLabel | Syncfusion®
+description: Events in Windows Forms AutoLabel notify applications when properties such as LabeledControl, Gap, and Position change at runtime.
 platform: WindowsForms
 control: AutoLabel
 documentation: ug
 ---
-# AutoLabel Event in Windows Forms AutoLabel
+# Event in Windows Forms AutoLabel
 
 A detailed explanation about the PropertyChanged event is given in the following section.
 
