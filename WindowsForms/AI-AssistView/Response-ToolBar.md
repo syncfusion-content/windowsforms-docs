@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Response Toolbar in Windows Forms SfAIAssistView | Syncfusion
+title: Response Toolbar in Windows Forms AI AssistView | Syncfusion
 description: Interact with bot responses using copy, regenerate, like, and custom action buttons in the Response Toolbar.
 platform: windowsforms
 control: SfAIAssistView
 documentation: ug
 ---
 
-# 	Response Toolbar in Windows Forms SfAIAssistView
+# 	Response Toolbar in Windows Forms AI AssistView
 
 The [`SfAIAssistView`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.SfAIAssistView.html) control includes a **Response Toolbar** feature that allows users to perform actions on bot responses by clicking action buttons. This feature provides an interactive way for users to engage with AI responses through copy, regenerate, like, and other custom actions.
 
 ## Prerequisites
 
-- An `SfAIAssistView` instance has been created and added to the form. See [Getting Started](https://help.syncfusion.com/windowsforms/ai-assistview/getting-started) for setup details.
+- `SfAIAssistView` has been created and added to your form. See [Getting Started](https://help.syncfusion.com/windowsforms/ai-assistview/getting-started) for setup details.
 - A `ViewModel` with a `Chats` collection bound to the control's `Messages` property. See [Getting Started](https://help.syncfusion.com/windowsforms/ai-assistview/getting-started#bind-messages).
 - A `TextMessage`-based message exists in the bound collection so that toolbar items can be retrieved or hidden.
 - The following `using` directives are included in your file:
@@ -44,7 +44,7 @@ sfAIAssistView1.IsResponseToolBarVisible = true;
 {% endhighlight %}
 
 {% endtabs %}
-![WindowsForms AI AssistView control Response Toolbar](aiassistview_images/windowsforms_aiassistview_responsetoolbar.png)
+![Windows Forms AI AssistView control Response Toolbar](aiassistview_images/windowsforms_aiassistview_responsetoolbar.png)
 
 
 ## Response Toolbar Items
@@ -61,7 +61,7 @@ The Response Toolbar supports the following action buttons:
 
 ## Response Toolbar Item Click Event
 
-The `SfAIAssistView` control provides the `ResponseToolBarItemClicked` event. This is triggered when a user clicks any toolbar action button. You can handle these actions to perform specific operations based on the toolbar item clicked.
+The control provides the `ResponseToolBarItemClicked` event. This is triggered when a user clicks any toolbar action button. You can handle these actions to perform specific operations based on the toolbar item clicked.
 
 ### Event Args
 

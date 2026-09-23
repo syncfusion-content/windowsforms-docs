@@ -7,9 +7,9 @@ control: ContextMenuStripEx
 documentation: ug
 ---
 
-# Trigger Menu Items in Windows Forms ContextMenuStrip
+# Trigger Menu Items in WinForms Context Menu Strip
 
-On selection, the context menu item functionality is handled through the [`Click`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripitem.click?view=netframework-4.7.2) event for further operations.
+On selection, the WinForms Context Menu Strip item functionality is handled through the [`Click`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripitem.click?view=netframework-4.7.2) event for further operations.
 
 > **NOTE**     
 > Menu items can also be operated through keyboard shortcuts. The [`Click`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripitem.click?view=netframework-4.7.2) event will be invoked when pressing the shortcut keys.

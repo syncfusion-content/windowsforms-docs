@@ -7,13 +7,13 @@ control: DockingManager
 documentation: ug
 ---
 
-# Serialization in Windows Forms Docking Manager
+# Serialization in WinForms Docking Control
 
-State persistence is the combined process of serialization and deserialization. Docking manager provides built-in state persistence functionality to save and load the layout. Layout of the dock panels hold the state, side, position, and visibility of each child. This layout information can be stored in isolated storage, an XML, or binary file.  
+State persistence is the combined process of serialization and deserialization. WinForms Docking Control provides built-in state persistence functionality to save and load the layout. Layout of the dock panels hold the state, side, position, and visibility of each child. This layout information can be stored in isolated storage, an XML, or binary file.  
 
 ## Auto serialization
 
-Docking manager supports AutoSave that allows to persist its state automatically. To enable this functionality, set the [PersistState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_PersistState) property to `true`. The default value of the PersistState property is `false`.
+WinForms Docking Control supports AutoSave that allows to persist its state automatically. To enable this functionality, set the [PersistState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_PersistState) property to `true`. The default value of the PersistState property is `false`.
 
 {% tabs %}
 
@@ -33,11 +33,11 @@ Me.dockingManager1.PersistState = True
 
 ## Persisting dock state in default storage
 
-Docking manager saves the dock state in an isolated storage format while WindowClosing.    
+WinForms Docking Control saves the dock state in an isolated storage format while WindowClosing.    
 
 ### Save state
 
-To save the AutoPersist state of docking manager, call the [SaveDockState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SaveDockState) function in its closing event. 
+To save the AutoPersist state of WinForms Docking Control, call the [SaveDockState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SaveDockState) function in its closing event. 
 
 <table>
 <tr>
@@ -87,7 +87,7 @@ Me.dockingManager1.SaveDockState(serializer, this.listBox1)
 
 ### Load state
 
-To load the AutoPersist state of the docking manager, call the [LoadDockState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_LoadDockState) function in its loaded event.
+To load the AutoPersist state of the WinForms Docking Control, call the [LoadDockState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_LoadDockState) function in its loaded event.
 
 <table>
 <tr>
@@ -136,7 +136,7 @@ Me.dockingManager1.LoadDockState(serializer, Me.listBox1)
 
 ## Serialize dock state as XML
 
-When the docking manager [PersistState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_PersistState) property is set, it saves the dock state into default persistence medium ‘IsolatedStorage’. To store the dock state to some other medium like XML, it can be done as follows:
+When the WinForms Docking Control [PersistState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_PersistState) property is set, it saves the dock state into default persistence medium ‘IsolatedStorage’. To store the dock state to some other medium like XML, it can be done as follows:
 
 {% tabs %}
 
@@ -385,7 +385,7 @@ Console.Write("Serialized controls :" + Me.dockingManager1.GetSerializedControls
 
 ## Serialization or de-serialization for a particular control
 
-In the `docking manager`, you can perform serialization or de-serialization for a particular control by using its functions such as [SaveDockState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SaveDockState) and [LoadDockState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_LoadDockState).
+In the `WinForms Docking Control`, you can perform serialization or de-serialization for a particular control by using its functions such as [SaveDockState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SaveDockState) and [LoadDockState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_LoadDockState).
 
 {% tabs %}
 
@@ -443,15 +443,15 @@ Me.dockingManager1.LoadDesignerDockState()
 
 ## Restore to current state
 
-When the `DockingManager` load a saved layout using the [LoadDockState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_LoadDockState) method, the process may fail if an error occurs during deserialization. In such cases, the saved layout is not applied, and the current docking layout remains unchanged to ensure a consistent user experience.
+When the `WinForms Docking Control` load a saved layout using the [LoadDockState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_LoadDockState) method, the process may fail if an error occurs during deserialization. In such cases, the saved layout is not applied, and the current docking layout remains unchanged to ensure a consistent user experience.
 
 The LoadDockState method returns `true` when the layout is successfully loaded and applied. If loading fails, the method returns `false`, and no changes are made to the existing layout.
 
 ## Serialize dynamically added children
 
-By default, the docking manager cannot deserialize its saved layout properly, when its child collection is modified after the DockState is saved.
+By default, the WinForms Docking Control cannot deserialize its saved layout properly, when its child collection is modified after the DockState is saved.
 
-Since the docking manager state persistence feature is implemented in such a way that it matches the child collection of saved layout with current layout internally and loads properly when the children collection remains same. It results in improper layout when any child collection changes dynamically.
+Since the WinForms Docking Control state persistence feature is implemented in such a way that it matches the child collection of saved layout with current layout internally and loads properly when the children collection remains same. It results in improper layout when any child collection changes dynamically.
 
-N> Docking State persistence will be applied to active Docking Children. So it must to load dynamically added controls into DockingManager before applying Deserialization process.<br/> Find the sample with serialization support in the following location. 
+N> Docking State persistence will be applied to active Docking Children. So it must to load dynamically added controls into WinForms Docking Control before applying Deserialization process.<br/> Find the sample with serialization support in the following location. 
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Docking Manager\StatePersistence

@@ -10,32 +10,29 @@ documentation: ug
 
 # Scrolling in Windows Forms Diagram
 
-The interactive features like scrolling, zooming and panning support are discussed in this section:
+This section describes the scrolling features supported by the [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) control. Before running the samples below, add a Diagram control named `diagram1` to a Windows Form.
 
-### Scroll Support
+## Scroll Support
 
-The horizontal and vertical scrollbars can be displayed or hidden by handling the HScroll and VScroll properties.
-
-Scroll Support
+The horizontal and vertical scrollbars can be shown or hidden by setting the **HScroll** and **VScroll** properties, which are inherited from `System.Windows.Forms.ScrollableControl`.
 
 <table>
 <tr>
 <th>
-Properties</th><th>
+Property</th><th>
 Description</th></tr>
 <tr>
 <td>
 HScroll</td><td>
-Specifies whether to display the horizontal scroll bar.</td></tr>
+Gets or sets whether the horizontal scrollbar is visible. Default value is true.</td></tr>
 <tr>
 <td>
 VScroll</td><td>
-Specifies whether to display the vertical scroll bar.</td></tr>
+Gets or sets whether the vertical scrollbar is visible. Default value is true.</td></tr>
 </table>
 
 
-Programmatically, these properties can be set as follows.
-
+The following code example shows how to ensure both scrollbars are visible.
 
 {% tabs %}
 {% highlight c# %}
@@ -58,14 +55,11 @@ Sample diagram is as follows,
 
 ![Scrolling_img1](Scrolling_images/Scrolling_img1.jpeg)
 
+## Scroll Settings
 
-ScrollGranularity determines the level of granularity for scrolling. The value of this property must be greater than 0. This value is multiplied by virtual size of the view in order to get the scroll range. For example, if the virtual size of the view is 100x50 and this property is set to 0.5f, then the horizontal scroll range is set to 0.50 and the vertical scroll range is set to 0.25.
+The following additional properties control scrolling granularity, mouse wheel behavior, IntelliMouse panning, and the underlying horizontal scrollbar settings. The **ScrollGranularity** property determines the level of granularity for scrolling. The value of this property must be greater than 0. This value is multiplied by the virtual size of the view to determine the scroll range. For example, if the virtual size of the view is 100x50 and this property is set to 0.5f, then the horizontal scroll range is set to 50 and the vertical scroll range is set to 25.
 
-SmoothMouseWheelScrolling specifies whether the control should perform one scroll command (faster) or if it should perform multiple scroll commands with smaller increments (smoother) when user rolls mouse wheel.
-
-
-
-Properties
+**SmoothMouseWheelScrolling** specifies whether the control should perform one scroll command (faster) or multiple scroll commands with smaller increments (smoother) when the user rolls the mouse wheel.
 
 <table>
 <tr>
@@ -75,30 +69,29 @@ Description</th></tr>
 <tr>
 <td>
 EnableIntelliMouse</td><td>
-Toggles support for Intelli-Mouse panning. When the user presses the middle-mouse button and drags the mouse, the window will scroll.</td></tr>
+Gets or sets whether IntelliMouse panning is enabled. When the user holds the middle-mouse button and drags, the view scrolls. Default value is false.</td></tr>
 <tr>
 <td>
 ScrollGranularity</td><td>
-Specifies the level of granularity for scrolling. This value is to scale the scroll range of the scrollbars.</td></tr>
+Gets or sets the multiplier used to scale the scroll range of the scrollbars. The value must be greater than 0. Default value is 1.</td></tr>
 <tr>
 <td>
 SmoothMouseWheelScrolling</td><td>
-Specifies whether the control should perform one scroll command (faster) or if it should perform multiple scroll commands with smaller increments (smoother) when user rolls mouse wheel.</td></tr>
+Gets or sets whether the control performs one scroll command (faster) or multiple smaller scroll commands (smoother) when the user rolls the mouse wheel. Default value is false.</td></tr>
 <tr>
 <td>
 HScrollBar</td><td>
-Returns a reference to an object with horizontal scrollbar settings of the control.</td></tr>
+Returns an object that exposes horizontal scrollbar settings of the control, such as SmallChange and LargeChange.</td></tr>
 </table>
 
 
-Programmatically these properties can be set as follows.
-
+The following code example illustrates how to set these properties.
 
 {% tabs %}
 {% highlight c# %}
 
 this.diagram1.EnableIntelliMouse = true;
-this.diagram1.ScrollGranularity = .9F;
+this.diagram1.ScrollGranularity = 0.9f;
 this.diagram1.SmoothMouseWheelScrolling = false;
 this.diagram1.HScrollBar.SmallChange = 200;
 
@@ -106,7 +99,7 @@ this.diagram1.HScrollBar.SmallChange = 200;
 {% highlight vb %}
 
 Me.diagram1.EnableIntelliMouse = True
-Me.diagram1.ScrollGranularity = .9F
+Me.diagram1.ScrollGranularity = 0.9F
 Me.diagram1.SmoothMouseWheelScrolling = False
 Me.diagram1.HScrollBar.SmallChange = 200
 
@@ -117,23 +110,33 @@ Me.diagram1.HScrollBar.SmallChange = 200
 ![Scrolling_img2](Scrolling_images/Scrolling_img2.jpeg)
 
 
+## Scrollable Area
+
+The **ScrollVirtualBounds** property determines the bounds of the scrollable area. This sets the Diagram control's virtual space (the gray area around the control). You can collapse this area so only the diagram's working area is visible.
+
+<table>
+<tr>
+<th>
+Property</th><th>
+Description</th></tr>
+<tr>
+<td>
+ScrollVirtualBounds</td><td>
+Gets or sets the bounds of the scrollable virtual area as a `RectangleF`. Set this to `RectangleF.Empty` or a zero-sized rectangle to hide the virtual space.</td></tr>
+</table>
 
 
-
-#### Scrollable Area
-
-Diagram has ScrollVirtualBounds property, which determines the bounds of the scrollable area. This sets the Diagram control's virtual space i.e, gray area around the control. Sometimes, we may need to remove that area and use Diagram control area alone.
-
+The following code example shows how to remove the virtual scrolling area.
 
 {% tabs %}
 {% highlight c# %}
-	
-	this.diagram1.ScrollVirtualBounds = new RectangleF(0, 0, 0, 0);
+
+this.diagram1.ScrollVirtualBounds = new RectangleF(0, 0, 0, 0);
 
 {% endhighlight %}
 {% highlight vb %}
 
-	Me.diagram1.ScrollVirtualBounds = New RectangleF(0, 0, 0, 0)
+Me.diagram1.ScrollVirtualBounds = New RectangleF(0, 0, 0, 0)
 
 {% endhighlight %}
 {% endtabs %}
@@ -141,16 +144,9 @@ Diagram has ScrollVirtualBounds property, which determines the bounds of the scr
 ![Scrolling_img3](Scrolling_images/Scrolling_img3.jpeg)
 
 
+## Scroll Behavior
 
-
-
-#### Scroll Behavior
-
-Scrolling behavior can be controlled by setting the AccelerateScrolling property.
-
-
-
-Scroll Behavior
+Scrolling behavior can be controlled by setting the **AccelerateScrolling** property.
 
 <table>
 <tr>
@@ -160,16 +156,16 @@ Description</th></tr>
 <tr>
 <td>
 AccelerateScrolling</td><td>
-Specifies the scrolling behavior. The options included are as follows:* None* Default* Fast* Immediate</td></tr>
+Gets or sets the scrolling acceleration behavior. The available values are:
+<ul><li>None</li><li>Default</li><li>Fast</li><li>Immediate</li></ul></td></tr>
 <tr>
 <td>
-<br>AllowIncreaseSmallChange</td><td>
-Specifies if the scroll control can increase the ScrollBar.SmallChange property during accelerated scrolling.</td></tr>
+AllowIncreaseSmallChange</td><td>
+Gets or sets whether the scroll control can increase the ScrollBar.SmallChange property during accelerated scrolling. Default value is true.</td></tr>
 </table>
 
 
-Here, setting the AccelerateScrolling to Fast, will increase the scroll speed when the horizontal or vertical thumb is pressed continuously.
-
+Setting **AccelerateScrolling** to **Fast** increases the scroll speed when the horizontal or vertical thumb is pressed continuously.
 
 {% tabs %}
 {% highlight c# %}
@@ -186,11 +182,9 @@ Me.diagram1.AllowIncreaseSmallChange = True
 {% endhighlight %}
 {% endtabs %}
 
-#### ThumbTrack
+## ThumbTrack
 
-The HorizontalThumbTrack and VerticalThumbTrack properties allows to handle whether the scroll bar thumb should be used for scrolling.
-
-ThumbTrack
+The **HorizontalThumbTrack** and **VerticalThumbTrack** properties control whether the control scrolls while the user drags the scrollbar thumb.
 
 <table>
 <tr>
@@ -200,16 +194,15 @@ Description</th></tr>
 <tr>
 <td>
 HorizontalThumbTrack</td><td>
-Specifies if the control should scroll while the user is dragging a horizontal scrollbar thumb.</td></tr>
+Gets or sets whether the control scrolls while the user drags the horizontal scrollbar thumb. Default value is true.</td></tr>
 <tr>
 <td>
 VerticalThumbTrack</td><td>
-Specifies if the control should scroll while the user is dragging a vertical scrollbar thumb.</td></tr>
+Gets or sets whether the control scrolls while the user drags the vertical scrollbar thumb. Default value is true.</td></tr>
 </table>
 
 
-Programmatically, these properties can be set as follows.
-
+The following code example illustrates how to enable live thumb tracking.
 
 {% tabs %}
 {% highlight c# %}
@@ -226,61 +219,52 @@ Me.diagram1.VerticalThumbTrack = True
 {% endhighlight %}
 {% endtabs %}
 
-#### ScrollTips
+## ScrollTips
 
-ScrollTips can be enabled or disabled for horizontal and vertical scroll bars individually by setting the HorizontalScrollTips and VerticalScrollTips properties.
-
-The format in which the ScrollTip should be displayed can be specified using the ScrollTipFormat property. The default format is 'Position{0}'.
-
-
-
-ScrollTips
+ScrollTips can be enabled or disabled for the horizontal and vertical scrollbars individually by setting the **HorizontalScrollTips** and **VerticalScrollTips** properties. The format of the ScrollTip can be customized using the **ScrollTipFormat** property. The default format is `"Position{0}"`, where `{0}` is replaced with the current offset value.
 
 <table>
 <tr>
 <th>
-Properties</th><th>
+Property</th><th>
 Description</th></tr>
 <tr>
 <td>
 HorizontalScrollTips</td><td>
-Specifies whether to display the horizontal scroll bar.</td></tr>
+Gets or sets whether a tooltip that shows the current horizontal offset is displayed while the user scrolls. Default value is false.</td></tr>
 <tr>
 <td>
 VerticalScrollTips</td><td>
-Specifies whether to display the vertical scroll bar.</td></tr>
+Gets or sets whether a tooltip that shows the current vertical offset is displayed while the user scrolls. Default value is false.</td></tr>
 <tr>
 <td>
 ScrollTipFormat</td><td>
-Specifies the format for the ScrollTip to be displayed.</td></tr>
+Gets or sets the format string used for the ScrollTip. Use `{0}` as the placeholder for the current offset value. Default value is "Position{0}".</td></tr>
 </table>
 
 
-Programmatically these properties can be set as follows.
-
+The following code example illustrates how to enable scroll tips and customize the format.
 
 {% tabs %}
 {% highlight c# %}
 
-	this.diagram1.HorizontalScrollTips = true;
-	this.diagram1.VerticalScrollTips = true;
-	this.diagram1.ScrollTipFormat = "Offset{0}";
+this.diagram1.HorizontalScrollTips = true;
+this.diagram1.VerticalScrollTips = true;
+this.diagram1.ScrollTipFormat = "Offset{0}";
 
 {% endhighlight %}
 {% highlight vb %}
 
-	Me.diagram1.HorizontalScrollTips = True
-	Me.diagram1.VerticalScrollTips = True
-	Me.diagram1.ScrollTipFormat = "Offset{0}"
+Me.diagram1.HorizontalScrollTips = True
+Me.diagram1.VerticalScrollTips = True
+Me.diagram1.ScrollTipFormat = "Offset{0}"
 
 {% endhighlight %}
 {% endtabs %}
 
-#### Using Splitter control
+## Using Splitter Control
 
-When splitter control is used and one or more diagram controls are added, setting the FillSplitterPane docks the diagram control inside the splitter control and fills the entire space.
-
-Splitter
+When the **Windows Forms Splitter** control is used and one or more diagram controls are added to its panels, setting the **FillSplitterPane** property docks the diagram control inside the splitter and makes it fill the entire available space.
 
 <table>
 <tr>
@@ -290,22 +274,21 @@ Description</th></tr>
 <tr>
 <td>
 FillSplitterPane</td><td>
-Specifies whether to fill the splitter control with diagram.</td></tr>
+Gets or sets whether the Diagram control fills its parent splitter pane. Default value is false.</td></tr>
 </table>
 
 
-Programmatically these properties can be set as follows.
-
+The following code example shows how to enable fill behavior when the diagram is hosted in a splitter.
 
 {% tabs %}
 {% highlight c# %}
 
-	this.diagram1.FillSplitterPane = true;
+this.diagram1.FillSplitterPane = true;
 
 {% endhighlight %}
 {% highlight vb %}
 
-	Me.diagram1.FillSplitterPane = True
+Me.diagram1.FillSplitterPane = True
 
 {% endhighlight %}
 {% endtabs %}

@@ -1,26 +1,26 @@
 ---
 layout: post
-title: UI Automation in Windows Forms SfListView | Syncfusion®
-description: UI automation in Windows Forms SfListView enables accessibility support and automated UI testing through frameworks such as Coded UI Test and QTP.
+title: UI Automation in Windows Forms ListView | Syncfusion®
+description: UI automation in Windows Forms ListView enables accessibility support and automated UI testing through frameworks such as Coded UI Test and QTP.
 platform: WindowsForms
-control: SfListView
+control: ListView
 documentation: ug
 ---
 
-# UI Automation in Windows Forms SfListView
+# UI Automation in Windows Forms ListView
 
 Microsoft UI automation is a new accessibility Framework for Microsoft Windows available on all the operating systems that support Windows Forms. UI automation provides accessibility to most of the UI elements and provides information about the UI element to the end user. You can interact with UI by using automated test scripts. To learn more about UI Automation, refer to the [MSDN page](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-overview).
 
-SfListView supports the following types of UI automations:
+ListView supports the following types of UI automations:
 
 1. Coded UI test
 2. Quick Test Professional
 
 ## Coded UI test
 
-Automated tests that drive your application through its user interface (UI) are known as Coded UI Tests (CUITs). These tests include functional testing of the UI controls. SfListView supports CUITs Coded UI automation to create automated tests for the inner elements and records the sequence of actions. When dragging the crosshair shown in CodedUITestBuilder on UI elements, it shows the properties of the respective UI elements. The assertion can also be added for each properties of SfListView.
+Automated tests that drive your application through its user interface (UI) are known as Coded UI Tests (CUITs). These tests include functional testing of the UI controls. ListView supports CUITs Coded UI automation to create automated tests for the inner elements and records the sequence of actions. When dragging the crosshair shown in CodedUITestBuilder on UI elements, it shows the properties of the respective UI elements. The assertion can also be added for each properties of ListView.
 
-SfListView supports the following two levels of CUIT automations.
+ListView supports the following two levels of CUIT automations.
 
 <table>
 <tr>
@@ -50,7 +50,7 @@ Coded UI provides support only in Visual Studio Ultimate and Premium. For more i
 
 ### Enable assertion
 
-The Coded UI support for SfListView can be enabled using the `AccessibilityEnabled` property.
+The Coded UI support for ListView can be enabled using the `AccessibilityEnabled` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -104,4 +104,4 @@ Follow the steps to create a `CodedUITest project` and test the `SfListView` app
 
 ## QTP
 
-Refer to the [UFT/QTP](/windowsforms/testing/uft/supported-controls-and-methods#sflistview) testing to test the UI with SfListView.
+Refer to the [UFT/QTP](/windowsforms/testing/uft/supported-controls-and-methods#sflistview) testing to test the UI with ListView.

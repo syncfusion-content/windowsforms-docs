@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Chart Grid Lines in Windows Forms Chart control | Syncfusion
 description: Learn about Chart Grid Lines support in Syncfusion Essential Studio Windows Forms Chart control and more details.

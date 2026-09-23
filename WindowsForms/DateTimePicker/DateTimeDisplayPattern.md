@@ -9,11 +9,11 @@ documentation: ug
 
 # Display Pattern in Windows Forms DateTimePicker
 
-The [DateTimePattern](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_DateTimePattern) helps you to specify the date-time display pattern for the SfDateTimeEdit. The display format of the date in the `SfDateTimeEdit` control can be customized by the pattern and custom display pattern properties.
+The [DateTimePattern](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_DateTimePattern) helps you to specify the date-time display pattern for the SfDateTimeEdit. The display format of the date in the `Windows Forms DateTimePicker` control can be customized by the pattern and custom display pattern properties.
 
 ## DateTime format
 
-The `SfDateTimeEdit` control supports the following DateTime format: 
+The `Windows Forms DateTimePicker` control supports the following DateTime format: 
 
 * LongDate
 * LongTime
@@ -65,7 +65,7 @@ dateTimeEdit.DateTimePattern = DateTimePattern.LongDate
 
 ## Custom display pattern
 
-The custom pattern can be displayed in the `SfDateTimeEdit` control by using the [Format](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_Format) property. Refer to the following list to create the custom format for the `SfDateTimeEdit`:
+The custom pattern can be displayed in the `Windows Forms DateTimePicker` control by using the [Format](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_Format) property. Refer to the following list to create the custom format for the `Windows Forms DateTimePicker`:
 
 * d: Day of the month.
 * ddd: Abbreviated day of the week name.

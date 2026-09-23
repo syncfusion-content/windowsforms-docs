@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# How to get hierarchy in Windows Forms Docking Manager
+# How to get hierarchy in WinForms Docking Control
 
 This can be done using the below code snippet.
 

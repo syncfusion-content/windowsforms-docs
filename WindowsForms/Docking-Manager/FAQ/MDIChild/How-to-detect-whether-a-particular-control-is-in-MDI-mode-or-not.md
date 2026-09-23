@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# How to detect MDI mode in Windows Forms Docking Manager
+# How to detect MDI mode in WinForms Docking Control
 
 
 `IsMDIMode` method lets you detect whether the specified control is in MDI child mode or not. The return value will be `true` if the control is in MDI mode, else value will be `false`.

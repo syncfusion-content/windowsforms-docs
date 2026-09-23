@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syntax Highlighting in Windows Forms SyntaxEditor | Syncfusion®
-description: Syntax highlighting in Windows Forms SyntaxEditor provides color-coded formatting for programming languages, improving code readability and editing efficiency.
+title: Syntax Highlighting in Windows Forms Syntax Editor | Syncfusion®
+description: Syntax highlighting in Windows Forms Syntax Editor provides color-coded formatting for programming languages, improving code readability and editing efficiency.
 platform: windowsforms
-control: SyntaxEditor
+control: Syntax Editor
 documentation: ug
 ---
 
-# Syntax Highlighting in Windows Forms SyntaxEditor
+# Syntax Highlighting in Windows Forms Syntax Editor
 
 Provides built-in syntax highlighting support for popular languages like C#, VB.NET, XML, HTML, Java, SQL, PowerShell, C, JavaScript, VBScript, and Delphi.
 
@@ -39,13 +39,13 @@ Me.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLang
 {% endtabs %}
 
 
-The [LoadFile](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_LoadFile) function in the EditControl helps to load the content of any desired file into the EditControl instead of typing the code in it.
+The [LoadFile](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_LoadFile) function in the Syntax Editor helps to load the content of any desired file into the Syntax Editor instead of typing the code in it.
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
+// Loading the files into Syntax Editor by passing the file name as parameter to the LoadFile function.
 
 this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\FileName.cs");
 
@@ -54,7 +54,7 @@ this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @
 
 {% highlight VB %}
 
-` Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
+` Loading the files into Syntax Editor by passing the file name as parameter to the LoadFile function.
 
 Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\FileName.cs")
 
@@ -62,7 +62,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 {% endtabs %}
 
-![Built-in CSharp syntax highlighting in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img3.png)
+![Built-in CSharp syntax highlighting in Syntax Editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img3.png)
 
 **Delphi** 
 
@@ -74,7 +74,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 this.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.Delphi);
 
-// Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
+// Loading the files into Syntax Editor by passing the file name as parameter to the LoadFile function.
 
 this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\DelphiSource.pas");
 
@@ -87,7 +87,7 @@ this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @
 
 Me.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.Delphi)
 
-` Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
+` Loading the files into Syntax Editor by passing the file name as parameter to the LoadFile function.
 
 Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\DelphiSource.pas")
 
@@ -95,7 +95,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 {% endtabs %}
 
-![Built-in delphi syntax highlighting in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img4.png)
+![Built-in delphi syntax highlighting in Syntax Editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img4.png)
 
 **XML** 
 
@@ -107,7 +107,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 this.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.XML);
 
-// Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
+// Loading the files into Syntax Editor by passing the file name as parameter to the LoadFile function.
 
 this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\XMLSource.xml");
 
@@ -120,7 +120,7 @@ this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @
 
 Me.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.XML)
 
-` Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
+` Loading the files into Syntax Editor by passing the file name as parameter to the LoadFile function.
 
 Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\XMLSource.xml")
 
@@ -128,7 +128,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 {% endtabs %}
 
-![XML syntax highlighting in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img5.png)
+![XML syntax highlighting in Syntax Editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img5.png)
 
 **HTML** 
 
@@ -140,7 +140,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 this.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.HTML);
 
-// Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
+// Loading the files into Syntax Editor by passing the file name as parameter to the LoadFile function.
 
 this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\HTMLSource.html");
 
@@ -153,7 +153,7 @@ this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @
 
 Me.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.HTML)
 
-` Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
+` Loading the files into Syntax Editor by passing the file name as parameter to the LoadFile function.
 
 Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\HTMLSource.html")
 
@@ -161,7 +161,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 {% endtabs %}
 
-![HTML syntax highlighting in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img6.png)
+![HTML syntax highlighting in Syntax Editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img6.png)
 
 **VB.NET** 
 
@@ -173,7 +173,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 this.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.VBNET);
 
-// Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
+// Loading the files into Syntax Editor by passing the file name as parameter to the LoadFile function.
 
 this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\VBSource.vb");
 
@@ -186,7 +186,7 @@ this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @
 
 Me.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.VBNET)
 
-` Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
+` Loading the files into Syntax Editor by passing the file name as parameter to the LoadFile function.
 
 Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\VBSource.vb")
 
@@ -194,7 +194,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 {% endtabs %}
 
-![Visual Basic syntax highlighting in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img7.png)
+![Visual Basic syntax highlighting in Syntax Editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img7.png)
 
 **SQL** 
 
@@ -206,7 +206,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 this.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.SQL);
 
-// Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
+// Loading the files into Syntax Editor by passing the file name as parameter to the LoadFile function.
 
 this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\SQLSource.sql");
 
@@ -219,7 +219,7 @@ this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @
 
 Me.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.SQL)
 
-` Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
+` Loading the files into Syntax Editor by passing the file name as parameter to the LoadFile function.
 
 Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\SQLSource.sql")
 
@@ -227,7 +227,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 {% endtabs %}
 
-![SQL syntax highlighting in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img8.png)
+![SQL syntax highlighting in Syntax Editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img8.png)
 
 **Java** 
 
@@ -239,7 +239,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 this.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.Java);
 
-// Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
+// Loading the files into Syntax Editor by passing the file name as parameter to the LoadFile function.
 
 this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\JavaSource.Java");
 
@@ -252,7 +252,7 @@ this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @
 
 Me.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.Java)
 
-` Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
+` Loading the files into Syntax Editor by passing the file name as parameter to the LoadFile function.
 
 Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\JavaSource.Java")
 
@@ -260,7 +260,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 {% endtabs %}
 
-![Java syntax highlighting in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img9.png)
+![Java syntax highlighting in Syntax Editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img9.png)
 
 **VBScript** 
 
@@ -272,7 +272,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 this.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.VBScript);
 
-// Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
+// Loading the files into Syntax Editor by passing the file name as parameter to the LoadFile function.
 
 this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\VBScriptSource.vb");
 
@@ -285,7 +285,7 @@ this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @
 
 Me.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.VBScript)
 
-` Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
+` Loading the files into Syntax Editor by passing the file name as parameter to the LoadFile function.
 
 Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\VBScriptSource.vb")
 
@@ -293,7 +293,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 {% endtabs %}
 
-![VB Script syntax highlighting in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img10.png)
+![VB Script syntax highlighting in Syntax Editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img10.png)
 
 **JScript** 
 
@@ -305,7 +305,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 this.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.JScript);
 
-// Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
+// Loading the files into Syntax Editor by passing the file name as parameter to the LoadFile function.
 
 this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\JScriptSource.js");
 
@@ -318,7 +318,7 @@ this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @
 
 Me.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.JScript)
 
-` Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
+` Loading the files into Syntax Editor by passing the file name as parameter to the LoadFile function.
 
 Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\JScriptSource.js")
 
@@ -326,7 +326,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 {% endtabs %}
 
-![JScript syntax highlighting in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img11.png)
+![JScript syntax highlighting in Syntax Editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img11.png)
 
 **PowerShell** 
 
@@ -338,7 +338,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 this.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.PowerShell);
 
-// Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
+// Loading the files into Syntax Editor by passing the file name as parameter to the LoadFile function.
 
 this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\PowerShell.ps1");
 
@@ -351,7 +351,7 @@ this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @
 
 Me.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.PowerShell)
 
-` Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
+` Loading the files into Syntax Editor by passing the file name as parameter to the LoadFile function.
 
 Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\PowerShell.ps1")
 
@@ -359,18 +359,18 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 {% endtabs %}
 
-![PowerShell syntax highlighting in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img12.png)
+![PowerShell syntax highlighting in Syntax Editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img12.png)
 
-N> Refer to the following sample link that demonstrates the `SyntaxHighlighting` functionalities of the EditControl:
+N> Refer to the following sample link that demonstrates the `SyntaxHighlighting` functionalities of the Syntax Editor:
 C:\Users\&lt;User&gt;\AppData\Syncfusion\EssentialStudio\Version Number\\Windows\Edit.Windows\Samples\Syntax Highlighting\Syntax Coloring
 
 ## Customize built-in language settings
 
-The EditControl provides support to customize the built-in language configuration settings.
+The Syntax Editor provides support to customize the built-in language configuration settings.
 
 ### Initialize the configuration language
 
-In the EditControl, languages should be configured in XML file named Config.xml. 
+In the Syntax Editor, languages should be configured in XML file named Config.xml. 
 
 Name of the language must be set by using the name attribute of the `ConfigLanguage` tag attribute. When the language is case insensitive, you should set the `CaseInsensitive` attribute to `true`.
 
@@ -406,7 +406,7 @@ It contains a list of definitions of the formats that can be used later in lexem
 
 {% endhighlight %}
 
-![User defined custom code highlighting in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img23.png)
+![User defined custom code highlighting in Syntax Editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img23.png)
 
 ### Font color
 
@@ -478,9 +478,9 @@ Collapsable region can be customized by adding the desired lexem with attributes
 
 {% endhighlight %}
 
-This code example works only when the [ShowOutliningCollapsers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowOutliningCollapsers) property in EditControl is `true`.
+This code example works only when the [ShowOutliningCollapsers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowOutliningCollapsers) property in `EditControl` is `true`.
 
-![Outlining collapsers in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img30.png)
+![Outlining collapsers in Syntax Editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img30.png)
 
 ### Keyword 
 
@@ -516,7 +516,7 @@ Custom operators can be added or existing operators can be customized in built-i
 
 {% endhighlight %}
 
-![Highlight operators in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img29.png)
+![Highlight operators in Syntax Editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img29.png)
  
 ### Regex
 
@@ -542,7 +542,7 @@ For example, to customize the strings ends with !, set the regex property of `Is
 
 {% endhighlight %}
 
-![Highlight by regular expression in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img32.png)
+![Highlight by regular expression in Syntax Editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img32.png)
 
 #### Error words highlighting
 
@@ -565,7 +565,7 @@ Error lexems can be added to the language by declaring a format names Error. It 
 
 {% endhighlight %}
 
-![Highlight error word in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img16.png)
+![Highlight error word in Syntax Editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img16.png)
 
 ### Splits
 
@@ -589,7 +589,7 @@ Splits helps to configure two different words as single. For example, consider #
 
 {% endhighlight %}
 
-![Highlight regions in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img31.png)
+![Highlight regions in Syntax Editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img31.png)
 
 ### Auto replace triggers
 
@@ -628,9 +628,9 @@ Me.editControl1.UseAutoreplaceTriggers = True
 
 {% endtabs %}
 
-![Autocorrect the word in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img41.png)
+![Autocorrect the word in Syntax Editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img41.png)
 
-N> To enable this feature, set the `TriggersActivators` property of ConfigLanguage tag attribute and the `UseAutoreplaceTriggers` property of EditControl should be set to `true`.
+N> To enable this feature, set the `TriggersActivators` property of ConfigLanguage tag attribute and the `UseAutoreplaceTriggers` property of `EditControl` should be set to `true`.
 
 ### File extension
 
@@ -642,9 +642,9 @@ Extensions contain a list of extensions associated with that particular language
 </extensions>
 {% endhighlight %}
 
-### Apply custom configuration in EditControl
+### Apply custom configuration in Syntax Editor
 
-The following code examples helps you to configure the configuration file in the EditControl.
+The following code examples helps you to configure the configuration file in the Syntax Editor.
 
 {% tabs %}
 
@@ -681,11 +681,11 @@ Me.editControl1.ApplyConfiguration("C#")
 
 ## Custom language using XML
 
-The EditControl provides supports for custom language configuration. You can plug-in an external configuration file that defines a custom language to the EditControl by using the [Configurator.Open](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_Configurator) and [ApplyConfiguration](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ApplyConfiguration_Syncfusion_Windows_Forms_Edit_Enums_KnownLanguages_) functions.
+The Syntax Editor provides supports for custom language configuration. You can plug-in an external configuration file that defines a custom language to the Syntax Editor by using the [Configurator.Open](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_Configurator) and [ApplyConfiguration](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ApplyConfiguration_Syncfusion_Windows_Forms_Edit_Enums_KnownLanguages_) functions.
 
 ### Initialize the configuration language.
 
-In the EditControl, languages should be configured in XML file named Config.xml. 
+In the Syntax Editor, languages should be configured in XML file named Config.xml. 
 
 Name of the language must be set by using the name attribute of the `ConfigLanguage` tag attribute. When the language is case insensitive, you should set the `CaseInsensitive` attribute to `true`.
 
@@ -721,7 +721,7 @@ It contains a list of definitions of the formats that can be used later in lexem
 
 {% endhighlight %}
 
-![Custom formatted text in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img24.png)
+![Custom formatted text in Syntax Editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img24.png)
 
 ### Font color
 
@@ -735,7 +735,7 @@ Font color of any format in the specified language can be customized by using th
 
 {% endhighlight %}
 
-![Customized font color in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img33.png)
+![Customized font color in Syntax Editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img33.png)
 
 ### Lexem
 
@@ -757,7 +757,7 @@ Lexem contains rules for parsing the text. `Type` and `FormatName` attributes of
 
 {% endhighlight %}
 
-![Format the text by user defind language in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img34.png)
+![Format the text by user defind language in Syntax Editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img34.png)
 
 For non-complex lexems, you can specify `ContinueBlock` and `EndBlock` attributes.
 
@@ -796,9 +796,9 @@ Collapsable region can be customized by adding the desired lexem with attributes
 
 {% endhighlight %}
 
-This code example works only when the [ShowOutliningCollapsers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowOutliningCollapsers) property in the EditControl is `true`.
+This code example works only when the [ShowOutliningCollapsers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowOutliningCollapsers) property in the `EditControl` is `true`.
 
-![Collapsible region in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img39.png)
+![Collapsible region in Syntax Editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img39.png)
 
 
 ### Keyword 
@@ -817,7 +817,7 @@ Custom keywords can be added or existing keywords can be customized in built-in 
  
 {% endhighlight %}
 
-![Highlight the keywords in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img36.png)
+![Highlight the keywords in Syntax Editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img36.png)
 
 ### Operator
 
@@ -835,7 +835,7 @@ Custom operators can be added or existing operators can be customized in built-i
 
 {% endhighlight %}
 
-![Highlight the operators in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img35.png)
+![Highlight the operators in Syntax Editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img35.png)
  
 ### Regex
 
@@ -861,7 +861,7 @@ For example, to customize the strings that ends with !, set the regex property o
 
 {% endhighlight %}
 
-![Highlight the words by regular expression in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img37.png)
+![Highlight the words by regular expression in Syntax Editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img37.png)
 
 #### Error words highlighting
 
@@ -881,7 +881,7 @@ Error lexems can be added to the language by declaring a format names Error and 
 
 {% endhighlight %}
 
-![Highlight the error words in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img40.png)
+![Highlight the error words in Syntax Editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img40.png)
 
 ### Splits
 
@@ -903,7 +903,7 @@ Splits helps to configure two different words as a single. For example, consider
 
 {% endhighlight %}
 
-![Highlight the keywords in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img38.png)
+![Highlight the keywords in Syntax Editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img38.png)
 
 ### Auto replace triggers
 
@@ -940,9 +940,9 @@ Me.editControl1.UseAutoreplaceTriggers = True
 
 {% endtabs %}
 
-![Autocorrect the words in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img42.png)
+![Autocorrect the words in Syntax Editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img42.png)
 
-N> To enable this feature, set the `TriggersActivators` property of ConfigLanguage tag attribute and the `UseAutoreplaceTriggers` property of the EditControl should be set to `true`.
+N> To enable this feature, set the `TriggersActivators` property of ConfigLanguage tag attribute and the `UseAutoreplaceTriggers` property of the `EditControl` should be set to `true`.
 
 ### File extension
 
@@ -958,7 +958,7 @@ Extensions contain a list of extensions associated with that particular language
 
 ### Multiple language configuration
 
-The EditControl supports multiple language configuration helps to configure one or more languages in single language configuration.
+The Syntax Editor supports multiple language configuration helps to configure one or more languages in single language configuration.
 
 {% highlight xaml %}
 
@@ -996,12 +996,12 @@ The EditControl supports multiple language configuration helps to configure one 
 
 {% endhighlight %}
 
-![Highlight words in syntax editor with multiple language](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img25.png)
+![Highlight words in Syntax Editor with multiple language](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img25.png)
 
-N> Refer to the following sample link that demonstrates the Custom language configuration in the EditControl:
+N> Refer to the following sample link that demonstrates the Custom language configuration in the Syntax Editor:
 C:\Users\&lt;User&gt;\AppData\Syncfusion\EssentialStudio\Version Number\\Windows\Edit.Windows\Samples\Syntax Highlighting\Syntax Coloring
 
-### Apply custom configuration in EditControl
+### Apply custom configuration in Syntax Editor
 
 {% tabs %}
 
@@ -1036,22 +1036,22 @@ Me.editControl1.ApplyConfiguration("C++")
 
 {% endtabs %}
 
-N> Refer to the following sample link that demonstrates the Custom language configuration in the EditControl:
+N> Refer to the following sample link that demonstrates the Custom language configuration in the Syntax Editor:
 C:\Users\&lt;User&gt;\AppData\Syncfusion\EssentialStudio\Version Number\\Windows\Edit.Windows\Samples\Syntax Highlighting\Custom Config
 
 ## Configure custom language using code
 
-The EditControl also offers extensive support to create configuration settings programmatically. This provides greater flexibility so that users can dynamically modify configuration settings of the currently loaded configuration. The following procedure will walks through the entire process of creating configuration settings programmatically.
+The Syntax Editor also offers extensive support to create configuration settings programmatically. This provides greater flexibility so that users can dynamically modify configuration settings of the currently loaded configuration. The following procedure will walks through the entire process of creating configuration settings programmatically.
 
-### Add new configuration language to EditControl
+### Add new configuration language to Syntax Editor
 
-A new configuration language can be added to the EditControl by using the [CreateLanguageConfiguration](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.Implementation.Config.Config.html#Syncfusion_Windows_Forms_Edit_Implementation_Config_Config_CreateLanguageConfiguration_System_String_) function of [Config](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.Implementation.Config.Config.html) class. Once the new configuration language is created, apply it to the contents of EditControl by using the [ApplyConfiguration](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ApplyConfiguration_Syncfusion_Windows_Forms_Edit_Enums_KnownLanguages_) function.
+A new configuration language can be added to the Syntax Editor by using the [CreateLanguageConfiguration](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.Implementation.Config.Config.html#Syncfusion_Windows_Forms_Edit_Implementation_Config_Config_CreateLanguageConfiguration_System_String_) function of [Config](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.Implementation.Config.Config.html) class. Once the new configuration language is created, apply it to the contents of Syntax Editor by using the [ApplyConfiguration](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ApplyConfiguration_Syncfusion_Windows_Forms_Edit_Enums_KnownLanguages_) function.
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Create a new configuration language and apply the same to the contents of the EditControl.
+// Create a new configuration language and apply the same to the contents of the Syntax Editor.
 
 IConfigLanguage currentConfigLanguage = this.editControl1.Configurator.CreateLanguageConfiguration("New");
 
@@ -1062,7 +1062,7 @@ this.editControl1.ApplyConfiguration(currentConfigLanguage);
 
 {% highlight VB %}
 
-' Create a new configuration language and apply the same to the contents of the EditControl.
+' Create a new configuration language and apply the same to the contents of the Syntax Editor.
 
 Dim currentConfigLanguage As IConfigLanguage = Me.editControl1.Configurator.CreateLanguageConfiguration("New")
 
@@ -1074,7 +1074,7 @@ Me.editControl1.ApplyConfiguration(currentConfigLanguage)
 
 ### Format configuration
 
-Create a custom format object by using the [Language.Add](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.Interfaces.IFormatManager.html#Syncfusion_Windows_Forms_Edit_Interfaces_IFormatManager_Add_System_String_) function in the EditControl and defines its attributes.
+Create a custom format object by using the [Language.Add](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.Interfaces.IFormatManager.html#Syncfusion_Windows_Forms_Edit_Interfaces_IFormatManager_Add_System_String_) function in the Syntax Editor and defines its attributes.
 
 {% tabs %}
 
@@ -1134,7 +1134,7 @@ formatMethod.Font = new Font("Garamond", 17)
 
 {% endtabs %}
 
-![Customized font in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img17.png)
+![Customized font in Syntax Editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img17.png)
 
 ### Lexem configuration
 
@@ -1167,7 +1167,7 @@ Me.editControl1.Language.Lexems.Add(stuff)
 
 ### Keywords configuration
 
-Create a custom format object named `keyword` by using the [Language.Add](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.Interfaces.IFormatManager.html#Syncfusion_Windows_Forms_Edit_Interfaces_IFormatManager_Add_System_String_) function in the EditControl.
+Create a custom format object named `keyword` by using the [Language.Add](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.Interfaces.IFormatManager.html#Syncfusion_Windows_Forms_Edit_Interfaces_IFormatManager_Add_System_String_) function in the Syntax Editor.
 
 {% tabs %}
 
@@ -1230,11 +1230,11 @@ Me.editControl1.Language.Lexems.Add(cons)
 
 {% endtabs %}
 
-![Highlight keywords in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img19.png)
+![Highlight keywords in Syntax Editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img19.png)
 
 ### Operators configuration
 
-Create a custom format object named `Operators` by using the [Language.Add](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.Interfaces.IFormatManager.html#Syncfusion_Windows_Forms_Edit_Interfaces_IFormatManager_Add_System_String_) function in the EditControl.
+Create a custom format object named `Operators` by using the [Language.Add](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.Interfaces.IFormatManager.html#Syncfusion_Windows_Forms_Edit_Interfaces_IFormatManager_Add_System_String_) function in the Syntax Editor.
 
 {% tabs %}
 
@@ -1293,7 +1293,7 @@ Me.editControl1.Language.Lexems.Add(Symbol)
 
 {% endtabs %}
 
-![Highlight operators in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img20.png)
+![Highlight operators in Syntax Editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img20.png)
 
 ### Regex configuration
 
@@ -1336,7 +1336,7 @@ formatMethod.BorderColor = Color.Green
 
 {% endtabs %}
 
-![Highlighting keywords in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img18.png)
+![Highlighting keywords in Syntax Editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img18.png)
 
 #### Error words highlighting
 
@@ -1387,7 +1387,7 @@ Dim Error As ISnippetFormat = Me.editControl1.Language.Add("Error")
 
 {% endtabs %}
 
-![Highlighting error words in syntax editor by underline](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img22.png)
+![Highlighting error words in Syntax Editor by underline](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img22.png)
 
 ### Splits configuration
 
@@ -1397,7 +1397,7 @@ Splits helps to configure two different words as single. For example, consider #
 
 {% highlight C# %}
 
-// Adding the necessary split definitions to the current language's Splits collection. Split configuration should be initialized before applying new language configuration to EditControl.
+// Adding the necessary split definitions to the current language's Splits collection. Split configuration should be initialized before applying new language configuration to Syntax Editor.
 
 Split split = new Split();
 
@@ -1425,7 +1425,7 @@ this.editControl1.Language.Lexems.Add(region);
 
 {% highlight VB %}
 
-' Adding the necessary split definitions to the current language's Splits collection. Split configuration should be initialized before applying new language configuration to EditControl.
+' Adding the necessary split definitions to the current language's Splits collection. Split configuration should be initialized before applying new language configuration to Syntax Editor.
 
 Dim split As  Split  = new Split()
 
@@ -1452,7 +1452,7 @@ Me.editControl1.Language.Lexems.Add(region)
 
 {% endtabs %}
 
-![Highlight regions in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img44.png)
+![Highlight regions in Syntax Editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img44.png)
 
 ### Auto replace triggers
 
@@ -1491,9 +1491,9 @@ language.TriggersActivators = New Char() { "."c }
 
 {% endtabs %}
 
-![Autocorrect error word in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img43.png)
+![Autocorrect error word in Syntax Editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img43.png)
 
-N> To enable this feature, we must set the `TriggersActivators` property of ConfigLanguage tag attribute and `UseAutoreplaceTriggers` property of EditControl should be set to `true`.
+N> To enable this feature, we must set the `TriggersActivators` property of ConfigLanguage tag attribute and `UseAutoreplaceTriggers` property of `EditControl` should be set to `true`.
 
 ### File extension
 
@@ -1522,7 +1522,7 @@ Me.editControl1.Language.Extensions.Add("lisp")
 
 ### Multiple language configuration
 
-The EditControl supports multiple language configuration helps to configure one or more languages in single language configuration.
+The Syntax Editor supports multiple language configuration helps to configure one or more languages in single language configuration.
 
 {% tabs %}
 
@@ -1763,7 +1763,7 @@ The EditControl supports multiple language configuration helps to configure one 
 
 {% endtabs %}
 
-![Highlight syntax editor content with multiple language](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img25.png)
+![Highlight Syntax Editor content with multiple language](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img25.png)
 
 ### Invoking newly added configuration language
 
@@ -1863,4 +1863,4 @@ End If
 
 ## See Also
 
-[How to programmatically configure syntax highlighting in WinForms SyntaxEditor?](https://support.syncfusion.com/kb/article/9735/how-to-programmatically-configure-syntax-highlighting-in-winforms-syntaxeditor)
+[How to programmatically configure syntax highlighting in WinForms Syntax Editor?](https://support.syncfusion.com/kb/article/9735/how-to-programmatically-configure-syntax-highlighting-in-winforms-syntaxeditor)

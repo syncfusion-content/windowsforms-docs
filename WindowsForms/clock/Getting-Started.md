@@ -22,7 +22,7 @@ In this walkthrough, users will create a WinForms application that contains [Clo
 ### Creating the Project
 Create a new Windows Forms project in Visual Studio to display [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html) with data objects.
 
-### Adding Clock control via designer
+### Adding Windows Forms Clock control via designer
 
 1. Create a new Windows Forms project in Visual Studio.
 
@@ -37,7 +37,7 @@ Create a new Windows Forms project in Visual Studio to display [Clock](https://h
 
 ![WindowsForms Clock control added by designer](getting-started_images/windowsforms-clock-control-added-by-designer.png) 
 
-### Adding Clock control via code
+### Adding Windows Forms Clock control via code
 
 To add the control manually in C#, follow the given steps:
 

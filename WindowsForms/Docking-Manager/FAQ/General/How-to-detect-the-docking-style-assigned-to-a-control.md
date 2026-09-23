@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# How to detect style in Windows Forms Docking Manager
+# How to detect style in WinForms Docking Control
 
 Docking style which is assigned to the control can be detect at run time, using `GetDockingStyle` method.
 

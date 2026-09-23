@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Rating | Syncfusion®
-description: Learn how to get started with the Syncfusion® Windows Forms Rating. Explore setup, features, examples, and customization options.
+title: Getting Started with Windows Forms Rating Control| Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms Rating Control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
-control: Rating  
+control: Rating Control
 documentation: ug
 ---
 
-# Getting Started with Windows Forms Rating
+# Getting Started with Windows Forms Rating Control
 
 ## Assembly deployment
 
@@ -63,7 +63,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4. Create an instance of the [Rating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html) control, and add it to the form.
+4. Create an instance of the [RatingControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html), and add it to the form.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -105,7 +105,7 @@ ratingControl2.Value = 3
 
 ![Windows Forms Rating control shows rating value](Getting-Started_images/Rating_value.png)
 
-## Built-in shapes for rating
+## Built-in shapes for Rating Control
 
 The following six predefined shapes are available in the Rating Control for customization:
 
@@ -116,7 +116,7 @@ The following six predefined shapes are available in the Rating Control for cust
 * Diamond
 * Kite
 
-You can customize the shapes of the RatingControl using the [Shape](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html#Syncfusion_Windows_Forms_Tools_RatingControl_Shape) property. 
+You can customize the shapes of the Rating Control using the [Shape](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html#Syncfusion_Windows_Forms_Tools_RatingControl_Shape) property. 
 
 {% tabs %}
 {% highlight C# %}
@@ -129,5 +129,5 @@ Me.ratingControl1.Shape = Syncfusion.Windows.Forms.Tools.Shapes.Heart
 {% endhighlight %}
 {% endtabs %}
 
-![RatingControls shapes](Getting-Started_images/rating-controls-shapes.png)
+![Windows Forms Rating Control shapes](Getting-Started_images/rating-controls-shapes.png)
 

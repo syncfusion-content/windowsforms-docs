@@ -7,7 +7,7 @@ control: DomainUpdownExt
 documentation: ug
 ---
 
-# How to Browse Values in Windows Forms DomainUpdownExt
+# How to Browse Values in WinForms DomainUpDownExt
 
 We can programmatically browse through the previous and the next values, of the current value, by calling [UpButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DomainUpDownExt.html#Syncfusion_Windows_Forms_Tools_DomainUpDownExt_UpButton) and [DownButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DomainUpDownExt.html#Syncfusion_Windows_Forms_Tools_DomainUpDownExt_DownButton) methods.
 

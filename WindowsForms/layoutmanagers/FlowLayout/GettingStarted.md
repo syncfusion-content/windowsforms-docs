@@ -7,9 +7,9 @@ control: FlowLayout
 documentation: ug
 ---
 
-# Getting Started with Windows Forms FlowLayout
+# Getting Started with WinForms Flow Layout
 
-This section explains how to add the FlowLayout control in a Windows Forms application and overview its basic functionalities.
+This section explains how to add the WinForms Flow Layout control in a Windows Forms application and overview its basic functionalities.
 
 ## Assembly deployment
 
@@ -17,17 +17,17 @@ Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/con
 
 Refer to this [documentation](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to find more details about installing NuGet packages in a Windows Forms application.
 
-## Adding the FlowLayout control via designer
+## Adding the WinForms Flow Layout control via designer
 
 1. Create a new Windows Forms application via designer.
 
-2. Add the [FlowLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.FlowLayout.html) control to an application by dragging it from the toolbox to design view. The following assembly will be added automatically:
+2. Add the [WinForms Flow Layout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.FlowLayout.html) control to an application by dragging it from the toolbox to design view. The following assembly will be added automatically:
 
     * Syncfusion.Shared.Base
 
 ![Drag and drop flow layout from toolbox](GettingStarted_images/GettingStarted_img1.jpeg)
 
-3. To add the form as a container control of the FlowLayout, click **Yes** in a popup, from which it appears automatically when FlowLayout is added.
+3. To add the form as a container control of the WinForms Flow Layout, click **Yes** in a popup, from which it appears automatically when WinForms Flow Layout is added.
 
 ![Alert message to add Flow layout as container control of form](GettingStarted_images/GettingStarted_img2.jpeg)
 
@@ -37,7 +37,7 @@ The child controls can be added to layout by dragging it from the toolbox to des
 
 ![Adding child controls to flow layout](GettingStarted_images/GettingStarted_img3.jpeg)
 
-## Adding the FlowLayout control via code
+## Adding the WinForms Flow Layout control via code
 
 To add control manually in C#, follow the given steps:
 
@@ -68,7 +68,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4. Create a **FlowLayout** control instance, and then set `ContainerControl` as form.
+4. Create a **WinForms Flow Layout** control instance, and then set `ContainerControl` as form.
 
 {% capture codesnippet2 %}
 {% tabs %}

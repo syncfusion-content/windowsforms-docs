@@ -7,7 +7,7 @@ control: DockingManager
 documentation: ug
 ---
 
-# How to hide caption lines in Docking Manager
+# How to hide caption lines in WinForms Docking Control
 
 Caption lines which is displayed in Metro style can be hidden by disabling the `ShowMetroCaptionDottedLines` property.
 

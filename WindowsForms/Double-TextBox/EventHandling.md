@@ -6,7 +6,7 @@ platform: windowsforms
 control: DoubleTextBox
 documentation: ug
 ---
-# Event Handling in Windows Forms DoubleTextBox
+# Event Handling in WinForms Double TextBox
 
 ## DoubleValueChanged Event
 
@@ -28,7 +28,7 @@ End Sub
 
 ## Enabling Fixed Change using Shortcut Keys
 
-Sometimes there may occur situations for incrementing or decrementing the value in DoubleTextBox. In such situations it is better to use shortcut keys. The following implementation will give you an idea on how to achieve this. Here the Up and Down keys are used for incrementing and decrementing respectively. We cannot use '-' because it is already reserved to enter the minus sign.
+Sometimes there may occur situations for incrementing or decrementing the value in WinForms WinForms Double TextBox. In such situations it is better to use shortcut keys. The following implementation will give you an idea on how to achieve this. Here the Up and Down keys are used for incrementing and decrementing respectively. We cannot use '-' because it is already reserved to enter the minus sign.
 
 {% tabs %}
 {% highlight C# %}  

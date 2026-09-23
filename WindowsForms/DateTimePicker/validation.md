@@ -9,7 +9,7 @@ documentation: ug
 
 # Validation in Windows Forms DateTimePicker
 
-The `SfDateTimeEdit` control validates the DateTime value when the <kbd>Enter</kbd> key is pressed, when the control loses its focus, or when a date is picked from the drop-down calendar.
+The `Windows Forms DateTimePicker` control validates the DateTime value when the <kbd>Enter</kbd> key is pressed, when the control loses its focus, or when a date is picked from the drop-down calendar.
 
 
 ## Validation reset option

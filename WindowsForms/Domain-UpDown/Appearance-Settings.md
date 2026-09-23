@@ -6,11 +6,11 @@ platform: windowsforms
 control: DomainUpdownExt 
 documentation: ug
 ---
-# Appearance Settings in Windows Forms DomainUpdownExt
+# Appearance Settings in WinForms DomainUpDownExt
 
-This section discusses the border styles and back color that can be applied for DomainUpDownExt control.
+This section discusses the border styles and back color that can be applied for WinForms DomainUpDownExt control.
 
-The below table lists the appearance properties of DomainUpDownExt control.
+The below table lists the appearance properties of WinForms DomainUpDownExt control.
 
 * [BorderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DomainUpDownExt.html#Syncfusion_Windows_Forms_Tools_DomainUpDownExt_BorderStyle)
 * [Border3DStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DomainUpDownExt.html#Syncfusion_Windows_Forms_Tools_DomainUpDownExt_Border3DStyle)

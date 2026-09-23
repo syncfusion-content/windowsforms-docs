@@ -9,14 +9,14 @@ documentation: ug
 
 
 
-# How to get the docking group details in Docking Manager
+# How to get the docking group details in WinForms Docking Control
 
-There is no concept of 'group' in Docking Manager and a tabbed group is just an intermediate state. However, if necessary, this can be determined by first ascertaining that the control is in a tabbed docking group, getting hold of the DockTabController, it’s DockTab and then iterating the DockTabPages. The DockHostClient member of each DockTabPage will reference the DockHostController that is associated with it. Once the controller is available, we can get the control through the HostControl property of DockHostController and use the control’s Controls[0] indexer to get the actual dockable control.
+There is no concept of 'group' in WinForms Docking Control and a tabbed group is just an intermediate state. However, if necessary, this can be determined by first ascertaining that the control is in a tabbed docking group, getting hold of the DockTabController, it’s DockTab and then iterating the DockTabPages. The DockHostClient member of each DockTabPage will reference the DockHostController that is associated with it. Once the controller is available, we can get the control through the HostControl property of DockHostController and use the control’s Controls[0] indexer to get the actual dockable control.
 
 Follow the given steps to get the docking group.
 
-1. Add three listbox, a button, and a docking manager to the form.
-2. Set the EnableDocking on Docking Manager property to `true`.
+1. Add three listbox, a button, and a WinForms Docking Control to the form.
+2. Set the EnableDocking on WinForms Docking Control property to `true`.
 3. Add the namespace Syncfusion.Windows.Forms.Tools in your application.
    
 {% capture codesnippet1 %}   

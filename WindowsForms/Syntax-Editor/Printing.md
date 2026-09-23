@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Printing in Windows Forms SyntaxEditor | Syncfusion®
-description: Printing in Windows Forms SyntaxEditor enables printing code and text content with formatting, supporting clear, organized, and readable output.
+title: Printing in Windows Forms Syntax Editor | Syncfusion®
+description: Printing in Windows Forms Syntax Editor enables printing code and text content with formatting, supporting clear, organized, and readable output.
 platform: WindowsForms
-control: SyntaxEditor
+control: Syntax Editor
 documentation: ug
 ---
 
-# Printing in Windows Forms SyntaxEditor
+# Printing in Windows Forms Syntax Editor
 
-Support to print the data displayed in the EditControl by using the [Print](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_Print) function. It also provides support to display print preview window by calling the [PrintPreview](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_PrintPreview) function.
+Support to print the data displayed in the Syntax Editor by using the [Print](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_Print) function. It also provides support to display print preview window by calling the [PrintPreview](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_PrintPreview) function.
 
 {% tabs %}
 
@@ -32,9 +32,9 @@ Me.editControl1.Print()
 
 {% endtabs %}
 
-![Print dialog in syntax editor](Printing_images/Printing_img1.jpeg)
+![Print dialog in Syntax Editor](Printing_images/Printing_img1.jpeg)
 
-In brief, the printing functionality of the EditControl supports the following features:
+In brief, the printing functionality of the Syntax Editor supports the following features:
 
 * Print preview
 * Custom header and footer text
@@ -51,13 +51,13 @@ In brief, the printing functionality of the EditControl supports the following f
 
 ## Print preview
 
-Use the [PrintPreview](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_PrintPreview) function to view the content of the EditControl before printing it.
+Use the [PrintPreview](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_PrintPreview) function to view the content of the Syntax Editor before printing it.
 
 {% tabs %}
 
 {% highlight C# %}
 
-// View the contents of the EditControl before printing.
+// View the contents of the Syntax Editor before printing.
 
 this.editControl1.PrintPreview();
 
@@ -66,7 +66,7 @@ this.editControl1.PrintPreview();
 
 {% highlight VB %}
 
-' View the contents of the EditControl before printing.
+' View the contents of the Syntax Editor before printing.
 
 Me.editControl1.PrintPreview()
 
@@ -74,11 +74,11 @@ Me.editControl1.PrintPreview()
 
 {% endtabs %}
 
-![Print preview of content in syntax editor](Printing_images/Printing_img2.jpeg)
+![Print preview of content in Syntax Editor](Printing_images/Printing_img2.jpeg)
 
 ## Specifying printing options
 
-The EditControl provides various printing option like Visual Studio Code Editor. By using the `PrintCurrentPage` function, you can print the current page in the EditControl.
+The Syntax Editor provides various printing option like Visual Studio Code Editor. By using the `PrintCurrentPage` function, you can print the current page in the Syntax Editor.
 
 <table>
 <tr>
@@ -154,7 +154,7 @@ Provides a way to display additional content on the top (header) or bottom (foot
 
 ### Printing document name and page number
 
-The EditControl allows you to specify the desired text in the header and footer by handling the [PrintHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_PrintHeader) and [PrintFooter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_PrintFooter) events. The default text in the header and footer is the fully qualified path of the file including the file name and page number respectively. The [PrintDocumentName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_PrintDocumentName) and [PrintPageNumber](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_PrintPageNumber) properties are used to enable or disable the name of the document and page number while printing.
+The Syntax Editor allows you to specify the desired text in the header and footer by handling the [PrintHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_PrintHeader) and [PrintFooter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_PrintFooter) events. The default text in the header and footer is the fully qualified path of the file including the file name and page number respectively. The [PrintDocumentName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_PrintDocumentName) and [PrintPageNumber](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_PrintPageNumber) properties are used to enable or disable the name of the document and page number while printing.
 
 {% tabs %}
 
@@ -207,11 +207,11 @@ End Sub
 
 The following image shows a typical page with a header and footer in Print Preview mode.
 
-![Print preview of content with header and footer in syntax editor](Printing_images/Printing_img3.jpeg)
+![Print preview of content with header and footer in Syntax Editor](Printing_images/Printing_img3.jpeg)
 
 ### Show or hide page border
 
-The PageBorder can be shown or hidden while printing the document. The [SetPageBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SetPageBorder_Syncfusion_Windows_Forms_Edit_Enums_FrameBorderStyle_System_Drawing_Color_) function is used to display page borders for the EditControl. You can also hide the page borders by using the [RemovePageBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_RemovePageBorder) of the EditControl.
+The PageBorder can be shown or hidden while printing the document. The [SetPageBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SetPageBorder_Syncfusion_Windows_Forms_Edit_Enums_FrameBorderStyle_System_Drawing_Color_) function is used to display page borders for the Syntax Editor. You can also hide the page borders by using the [RemovePageBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_RemovePageBorder) of the Syntax Editor.
 
 {% tabs %}
 
@@ -242,5 +242,5 @@ Me.editControl1.RemovePageBorder()
 
 {% endtabs %}
 
-N> Refer to the following sample link that demonstrates the `Printing` functionalities in the EditControl:
+N> Refer to the following sample link that demonstrates the `Printing` functionalities in the Syntax Editor:
 C:\Users\&lt;User&gt;\AppData\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Printing

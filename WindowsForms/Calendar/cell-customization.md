@@ -9,7 +9,7 @@ documentation: ug
 
 # Cell Customization in Windows Forms Calendar
 
-`SfCalendar` cells can be customized for mentioning some special or important days. 
+`Windows Forms Calendar` cells can be customized for mentioning some special or important days. 
 
 ## Special dates
 

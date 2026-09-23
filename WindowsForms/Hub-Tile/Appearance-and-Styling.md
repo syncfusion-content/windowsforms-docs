@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Appearance and Styling in Windows Forms HubTile | Syncfusion®
-description: Appearance and styling in Windows Forms HubTile allow customization of colors, layouts, animations, and visual elements to match application themes.
+title: Appearance and Styling in Windows Forms Hub Tile | Syncfusion®
+description: Appearance and styling in Windows Forms Hub Tile allow customization of colors, layouts, animations, and visual elements to match application themes.
 platform: windowsforms
-control: HubTile
+control: Hub Tile
 documentation: ug
 ---
 
-# Appearance and Styling in Windows Forms HubTile
+# Appearance and Styling in Windows Forms Hub Tile
 
 ## Banner visibility
 
-HubTile provides support to render Banner similar to Windows 8 live tiles.
+Hub Tile provides support to render Banner similar to Windows 8 live tiles.
 
 ![Banner visibility](Concept-and-Features_images/Concept-and-Features_img6.png)
 
@@ -30,7 +30,7 @@ N> Banner visibility customization is applicable only for DefaultTile type.
 
 ## Banner text customization
 
-In HubTile, information in the form of text can be displayed in Banner.
+In Hub Tile, information in the form of text can be displayed in Banner.
 
 {% tabs %}
 {% highlight C# %} 
@@ -89,7 +89,7 @@ N> [BannerColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.
 
 ## Selection marker
 
-HubTile provides selection marker support similar to Windows 8 Start screen tile.
+Hub Tile provides selection marker support similar to Windows 8 Start screen tile.
 
 ![Selection marker](Concept-and-Features_images/Concept-and-Features_img13.png)
 
@@ -108,7 +108,7 @@ N> Selection Marker is applicable only for DefaultTile type.
 
 ## Selection marker border color
 
-In HubTile, Selection Marker Border color can be customized using the [SelectionMarkerColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_SelectionMarkerColor).
+In Hub Tile, Selection Marker Border color can be customized using the [SelectionMarkerColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_SelectionMarkerColor).
 
 {% tabs %}
 {% highlight C# %} 
@@ -123,9 +123,9 @@ N> [SelectionMarkerColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion
 
 ## Hovered border color
 
-In HubTile, border highlight is rendered once it is focused. Its appearance can be customized using the [HoveredBorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_HoveredBorderColor) property.
+In Hub Tile, border highlight is rendered once it is focused. Its appearance can be customized using the [HoveredBorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_HoveredBorderColor) property.
 
-The following code example demonstrates how you can customize the border color of HubTile on mouse hovering.
+The following code example demonstrates how you can customize the border color of Hub Tile on mouse hovering.
 
 {% tabs %}
 {% highlight C# %} 
@@ -149,7 +149,7 @@ Me.HubTile1.EnableHoverColor= True
 
 ## Expand on hover
 
-HubTile can be expanded once it is focused. It can be enabled by using the [ExpandOnHover](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_ExpandOnHover) property.
+Hub Tile can be expanded once it is focused. It can be enabled by using the [ExpandOnHover](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_ExpandOnHover) property.
 
 {% tabs %}
 {% highlight C# %} 
