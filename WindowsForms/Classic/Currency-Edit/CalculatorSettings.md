@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Calculator Settings in Windows Forms ContextMenuStrip | Syncfusion
-description: Learn about Calculator Settings support in Syncfusion Windows Forms CurrencyEdit control and more details.
+title: Calculator Settings in Windows Forms CurrencyEdit | Syncfusion®
+description: Learn about calculator settings in Syncfusion® Windows Forms CurrencyEdit control, including calculator layout, alignment, visibility, and close actions.
 platform: WindowsForms
 control: CurrencyEdit
 documentation: ug
 ---
 
-# Calculator Settings in Windows Forms CurrencyEdit
+# Calculator Settings in WinForms CurrencyEdit
 
-A [CurrencyEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyEdit.html) control has a text field and a Calculator button, pressing which will open a Calculator control. The below image illustrates the same.
+A [WinForms CurrencyEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyEdit.html) control has a text field and a Calculator button, pressing which will open a Calculator control. The below image illustrates the same.
 
 ![Calculator](Overview_images/Overview_img416.png) 
 

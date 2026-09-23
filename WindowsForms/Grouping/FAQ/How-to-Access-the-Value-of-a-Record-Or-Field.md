@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to Access the Value of a Record Or Field | WindowsForms | Syncfusion
-description: How to Access the Value of a Record Or Field
+title: Access Record or Field Values in Windows Forms Grouping | Syncfusion®
+description: Access record or field values in Syncfusion® Windows Forms Grouping control using the Records collection, filtered records, and field retrieval methods.
 platform: WindowsForms
 control: Grouping
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 
 
-# How to Access the Value of a Record or Field
+# How to Access the Value of a Record or Field in Windows Forms Grouping
 
 The groupingEngine.Table.Records property will allow you to access the records (items) in your IList and particular fields (properties) in the records.
 

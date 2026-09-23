@@ -7,13 +7,13 @@ control: Chart
 documentation: ug
 ---
 
-# Axis Padding in Windows Forms Chart
+# Axis padding in Windows Forms Chart
 
-## Point Offset
+## Point offset
 
-Leave extra space between the axis and the first plotted point to improve readability and avoid clipped markers at the chart border.
+Point offset adds extra space between the chart boundary at the first data point. This helps improve readability and prevents data markers from appearing too close to the chart edges.
 
-- [PointOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_PointOffset) - Specifies the offset as a fraction of an interval (for example, `0.1` leaves 10% of an interval)
+- [PointOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_PointOffset) - Specifies the amount of spacing to add as a fraction of the axis interval. For example, a value of 0.1 adds spacing equal to 10% of the interval at the first data point of the axis.
 
 {% tabs %}
 {% highlight c# %}

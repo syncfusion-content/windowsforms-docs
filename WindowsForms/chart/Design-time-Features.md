@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Design Time Features in Windows Forms Chart control | Syncfusion
-description: Learn about Design Time Features support in Syncfusion® Windows Forms Chart control and more details.
+title: Design Time Features in Windows Forms Chart | Syncfusion®
+description: Design time features in the Windows Forms Chart enable chart configuration, customization, and data setup through visual design tools.
 platform: windowsforms
 control: Chart
 documentation: ug
@@ -301,7 +301,7 @@ Essential® Chart provides support to load the saved [Chart Template](https://he
 * Selecting the **Load Template** from the context menu at the design time.
 * By clicking the **Load Template** designer verb in the Visual Studio property browser. 
 
-[ChartTemplate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTemplate.html) has static method to load the template data programmatically. We need to pass the ChartControl which will be applied with the loaded template data.
+[ChartTemplate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTemplate.html) has static method to load the template data programmatically. We need to pass the WinForms Chart which will be applied with the loaded template data.
 
 ### Saving chart series data
 

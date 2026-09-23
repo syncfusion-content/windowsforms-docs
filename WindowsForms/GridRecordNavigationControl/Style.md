@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Style in Windows Forms GridRecordNavigationControl | Syncfusion®
-description: Learn about Style support in Syncfusion® Windows Forms GridRecordNavigationControl, its elements and more details.
+description: The style feature in GridRecordNavigationControl supports Default, Metro, and Office 2016 themes to customize its appearance.
 platform: windowsforms
-control: GridRecordNavigation
+control: GridRecordNavigationControl
 documentation: ug
 ---
 

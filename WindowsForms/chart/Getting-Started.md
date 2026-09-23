@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Chart Control | Syncfusion
-description: Learn here all about getting started with Syncfusion Essential® Windows Forms Chart control, its elements and more details.
+title: Getting Started with Windows Forms Chart | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms Chart control. Explore setup, configuration, chart types, and customization options.
 platform: windowsforms
 control: Chart
 documentation: ug
@@ -259,7 +259,7 @@ Me.chartControl1.PrimaryXAxis.ValueType = ChartValueType.Category
 {% endcapture %}
 {{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-## Apply skins to ChartControl
+## Apply skins to WinForms Chart
 
 To improve the appearance of chart, apply **Metro skin** to [ChartControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html) as follows.
 

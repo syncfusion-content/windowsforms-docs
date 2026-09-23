@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Populating Data in Windows Forms Grid Control | Syncfusion®
-description: Learn about Populating Data support in Syncfusion® Windows Forms Grid Control, its elements and more details.
+description: Populate data in Grid Control using indexers, PopulateValues, virtual mode, and cell styles to efficiently display and customize grid content.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 
 ---

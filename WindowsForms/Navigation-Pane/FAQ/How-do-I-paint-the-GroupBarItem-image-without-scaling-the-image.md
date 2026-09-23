@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: GroupBarItem image in Windows Forms Navigation Pane | Syncfusion
-description: Learn about How do I paint the GroupBarItem image without scaling the image support in Syncfusion Windows Forms Navigation Pane control and more details.
+title: How to Paint a GroupBarItem Image in GroupBar | Syncfusion
+description: Paint a GroupBarItem image without scaling in Syncfusion® Windows Forms GroupBar control by overriding image rendering methods and more.
 platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---
 
-# GroupBarItem image in Windows Forms Navigation Pane
+# How to Paint a GroupBarItem Image in Windows Forms GroupBar
 
 This page explains GroupBarItem image in Windows Forms Navigation Pane and more details.
 

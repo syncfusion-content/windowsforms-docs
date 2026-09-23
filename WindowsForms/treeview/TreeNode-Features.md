@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: TreeNode-Features | WindowsForms | Syncfusion®
-description: Learn here about TreeNode features of Syncfusion® Windows Forms TreeView control, its elements and more details.
+title: TreeNode Features in Windows Forms | Syncfusion®
+description: TreeNode features include primitives, images, checkboxes, option buttons, custom controls, and node state customization.
 platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
 
-# TreeNode Features in WinForms TreeView (SfTreeView)
+# TreeNode Features in WinForms TreeView (TreeViewAdv)
 
 This section discusses the following topics.
 

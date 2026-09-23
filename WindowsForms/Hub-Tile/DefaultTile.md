@@ -1,9 +1,9 @@
 ---
 layout: post
-title: DefaultTile in Windows Forms Hub Tile control | Syncfusion
-description: Learn about DefaultTile support in Syncfusion Windows Forms Hub Tile control, its elements and more details.
-platform: WindowsForms
-control: HubTile
+title: DefaultTile in Windows Forms Hub Tile | Syncfusion®
+description: DefaultTile in Windows Forms Hub Tile displays content in a standard tile layout, providing a simple and effective presentation style.
+platform: windowsforms
+control: Hub Tile
 documentation: ug
 ---
 # DefaultTile in Windows Forms Hub Tile
@@ -57,14 +57,14 @@ Me.HubTile1.ImageSource  = Me.ImageListAdv1.Images(0)
  
 ## Transition effects
 
-In HubTile, image transition can be performed at specified intervals and in different directions just like the Windows 8 live tiles. They include the following transition effects.
+In Hub Tile, image transition can be performed at specified intervals and in different directions just like the Windows 8 live tiles. They include the following transition effects.
 
 * Bottom-to-Top
 * Top-to-Bottom
 * Left-to-Right
 * Right-to-Left
 
-HubTile image transition direction can be modified using the [SlideTransition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_SlideTransition) property.
+Hub Tile image transition direction can be modified using the [SlideTransition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_SlideTransition) property.
 
 
 {% tabs %}
@@ -98,7 +98,7 @@ Me.HubTile1.SlideTransition = TransitionDirection.LeftToRight
 
 ## Transition speed
 
-In HubTile, image transition speed can be increased or decreased by using [ImageTransitionSpeed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_ImageTransitionSpeed) property.
+In Hub Tile, image transition speed can be increased or decreased by using [ImageTransitionSpeed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_ImageTransitionSpeed) property.
 
 {% tabs %}
 

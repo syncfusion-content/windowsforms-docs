@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Calendar customization in Windows Forms xptoolbar control | Syncfusion
-description: Learn about Calendar customization support in Syncfusion Windows Forms DateTimePickerAdv(Classic) control and more details.
+title: Calendar Customization in Windows Forms DateTimePickerAdv | Syncfusion
+description: Learn about calendar customization in Syncfusion Windows Forms DateTimePickerAdv control and more details.
 platform: WindowsForms
 control: DateTimePickerAdv
 documentation: ug
 ---
-# Calendar customization in Windows Forms DateTimePickerAdv(Classic)
+
+# Calendar Customization in Windows Forms DateTimePickerAdv
 
 DateTimePickerAdv control has properties which can improve the look and feel of the popup calendar. This section discusses various appearance settings available for the calendar.
 
@@ -82,7 +83,7 @@ Me.dateTimePickerAdv1.CalendarTitleBackColor = System.Drawing.Color.Wheat
 
 {% endtabs %}
 
-![DateTimePickerAdv background customization](Calendar_Images/Overview_img203.jpeg) 
+![Windows Forms DateTimePickerAdv background customization](Calendar_Images/Overview_img203.jpeg) 
 
 ## Foreground Settings
 
@@ -115,7 +116,7 @@ Me.dateTimePickerAdv1.CalendarTrailingForeColor = System.Drawing.Color.Blue
 
 {% endtabs %}
 
-![DateTimePickerAdv foreground customization](Calendar_Images/Overview_img204.jpeg) 
+![Windows Forms DateTimePickerAdv foreground customization](Calendar_Images/Overview_img204.jpeg) 
 _CalendarFont = "Italic"; TrailingForeColor = "Blue"_
 
 ## Calendar Size

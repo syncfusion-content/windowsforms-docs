@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to delete the history items persisted by AutoComplete | WindowsForms | Syncfusion
-description: How to delete the history items persisted by AutoComplete
+title: How to Delete History Items in AutoComplete | Syncfusion
+description: Delete persisted history items in Syncfusion® Windows Forms AutoComplete control using the ResetHistory method and manage stored entries.
 platform: WindowsForms
 control: Tools
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 
 
-# How to delete the history items persisted by AutoComplete?
+# How to Delete History Items in Windows Forms AutoComplete
 
 You can delete the history items persisted by the AutoComplete control by calling the AutoComplete.ResetHistory() method.
 

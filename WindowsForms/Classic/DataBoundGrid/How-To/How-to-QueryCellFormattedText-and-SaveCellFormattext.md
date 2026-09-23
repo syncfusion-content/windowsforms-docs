@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Format the Text in Windows Forms GridDataBoundGrid | Syncfusion
-description: Learn about How to Format the Text support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
+title: How to format text in Windows Forms GridDataBoundGrid | Syncfusion®
+description: Format cell values for display and save in original format by QueryCellFormattedText and SaveCellFormattedText events in Syncfusion® WinForms GridDataBoundGrid.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 
-# Format the Text in Windows Forms GridDataBoundGrid
+# How to format text in Windows Forms GridDataBoundGrid
 
 This page explains How to Format the Text in Windows Forms and more details.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Why-does-the-call-to-ApplicationDoEvents-never-returns-while-updating-the-Grid-using-BeginUpdate-method | Windows Forms | Syncfusion
-description: why does the call to application.doevents never returns while updating the grid using beginupdate() method
+title: Use Application.DoEvents with Windows Forms Grid Control | Syncfusion®
+description: Use Application.DoEvents safely with Syncfusion® Windows Forms Grid Control during BeginUpdate operations to avoid update loops and UI refresh issues.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# Why does the call to Application.DoEvents never returns while updating the Grid using BeginUpdate() method
+# How to Use Application.DoEvents with Windows Forms Grid Control
 
 If the Grid is performing a time-consuming task, BeginUpdate() and EndUpdate() methods will be used to ensure the updates correctly reflected in the grid. 
 

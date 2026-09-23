@@ -1,15 +1,15 @@
 ---
 layout: post
-title: About Windows Forms Hub Tile control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms Hub Tile control, its elements and more details.
-platform: WindowsForms
-control: HubTile
+title: About Syncfusion® Windows Forms Hub Tile Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms Hub Tile control and explore its features and more details.
+platform: windowsforms
+control: Hub Tile
 documentation: ug
 ---
 
-# Windows Forms Hub Tile Overview
+# About Syncfusion® Windows Forms Hub Tile Control
 
-HubTile is a content control that functions as live tiles in an application for user interface. Its content updates are shown by a variety of animations, similar to the live tile updates of Windows 8 and Windows Phone. A HubTile can have an image, title, body and footer for updation in the tile.
+Hub Tile is a content control that functions as live tiles in an application for user interface. Its content updates are shown by a variety of animations, similar to the live tile updates of Windows 8 and Windows Phone. A Hub Tile can have an image, title, body and footer for updation in the tile.
 
  ![loadimage](Overview_images/Overview_img1.png)
  

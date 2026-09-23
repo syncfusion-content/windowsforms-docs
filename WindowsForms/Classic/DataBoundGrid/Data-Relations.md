@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Relations in Windows Forms xptoolbar control | Syncfusion
-description: Learn about Data Relations support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
+title: Data Relations in Windows Forms GridDataBoundGrid | Syncfusion®
+description: Display hierarchical data in the Syncfusion® WinForms GridDataBoundGrid using nested relations, drop-down grids, tree lines, and expand/collapse features.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 
-# Data Relations in Windows Forms GridDataBoundGrid(Classic)
+# Data Relations in Windows Forms GridDataBoundGrid
 
 
 

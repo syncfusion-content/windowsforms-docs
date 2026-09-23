@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Style | WindowsForms | Syncfusion
-description: Learn here all about the visual style feature of Syncfusion Windows Forms FontListBox control and more.
+title: Style in Windows Forms FontListBox | Syncfusion®
+description: Customize the style of the Windows Forms FontListBox control using appearance settings, visual elements, and font display options.
 platform: WindowsForms
 control: FontListBox
 documentation: ug
 ---
 
-# Visual Style in Windows Forms FontListBox
+# Style in Windows Forms FontListBox
 
 The style for FontListBox can be set using VisualStyle property. 
 The visual style includes

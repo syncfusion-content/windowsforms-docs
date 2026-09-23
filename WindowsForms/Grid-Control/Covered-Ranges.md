@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Covered Ranges in Windows Forms Grid Control | Syncfusion®
-description: Learn about Covered Ranges support in Syncfusion® Windows Forms Grid Control, its elements and more details.
-platform: WindowsForms
-control: GridControl
+description: Covered ranges in Grid Control allow merging cells, managing covered ranges, querying ranges, finding merged cells, and customizing cell layouts.
+platform: windowsforms
+control: Grid Control
 documentation: ug
 ---
 
@@ -51,7 +51,7 @@ void gridControl1_QueryCoveredRange(object sender, GridQueryCoveredRangeEventArg
 {% endhighlight %}
 {% highlight vb %}
 'Triggering the QueryCoveredRange event.
-Private Me.gridControl1.QueryCoveredRange += New GridQueryCoveredRangeEventHandler(AddressOf gridControl1_QueryCoveredRange)
+AddHandler Me.gridControl1.QueryCoveredRange, New GridQueryCoveredRangeEventHandler(AddressOf gridControl1_QueryCoveredRange)
 
 Private Sub gridControl1_QueryCoveredRange(ByVal sender As Object, ByVal e As GridQueryCoveredRangeEventArgs)
 
@@ -124,7 +124,7 @@ The `CoveredRanges` from the GridControl can be cleared by using the [Clear](htt
 this.gridControl1.CoveredRanges.Clear();
 {% endhighlight %}
 {% highlight vb %}
-'Clearing CoveredRange from GridControl.
-this.gridControl1.CoveredRanges.Clear();
+'Clearing CoveredRange from GridControl.
+Me.gridControl1.CoveredRanges.Clear()
 {% endhighlight %}
 {% endtabs %}

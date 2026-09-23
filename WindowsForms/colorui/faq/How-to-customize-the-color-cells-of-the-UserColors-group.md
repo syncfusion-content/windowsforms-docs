@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Color cells of UserColors group | WindowsForms | Syncfusion®
-description: How to customize the color cells of the UserColors group in Syncfusion® Essential Studio® Windows Forms ColorUI control and more details.
+title: How to Customize UserColors Group Cells in ColorUI | Syncfusion®
+description: Learn how to customize the color cells of the UserColors group in Syncfusion Windows Forms ColorUI control, its elements and more details.
 platform: windowsforms
 control: ColorUI
 documentation: ug
 ---
-# How to Customize the Color Cells of the UserColors Group
+# How to Customize UserColors Group Cells in ColorUI
 
 Color cells of the UserGroup panel in a ColorUIControl, can be customized using the below code. We can use UserColors and UserCustomColor for this purpose.
 

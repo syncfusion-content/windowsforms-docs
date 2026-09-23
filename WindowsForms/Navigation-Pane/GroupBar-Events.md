@@ -1,12 +1,12 @@
----
+﻿---
 layout: post
-title: GroupBar Events in Windows Forms Navigation Pane control | Syncfusion
-description: Learn about GroupBar Events support in Syncfusion Windows Forms Navigation Pane (GroupBar) control and more details.
+title: Events in Windows Forms Navigation Pane | Syncfusion®
+description: GroupBar events provide notifications for item selection, renaming, navigation actions, context menus, and custom rendering.
 platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---
-# GroupBar Events in Windows Forms Navigation Pane (GroupBar)
+# Events in Windows Forms Navigation Pane (GroupBar)
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 

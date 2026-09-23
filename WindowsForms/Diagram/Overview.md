@@ -1,21 +1,21 @@
 ---
 layout: post
-title: About Windows Forms Diagram control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® Windows Forms Diagram control, its elements, and more details.
+title: About Syncfusion® Windows Forms Diagram Control | Syncfusion®
+description: Learn about the introduction, key features, compatibility, and documentation of the Syncfusion® Windows Forms Diagram control.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# Windows Forms Diagram Overview
+# About Syncfusion® Windows Forms Diagram Control
 
-This section covers information on [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) control, its key features, and prerequisites to use the control, its compatibility with various OS and browsers and finally the documentation details complimentary with the product. It comprises the following sub sections:
+This section covers information on the [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) control, its key features, prerequisites for using the control, compatibility with supported operating systems and browsers, and the documentation included with the product. It comprises the following subsections:
 
-## Introduction To Essential® Diagram
+## Introduction to WinForms Diagram Control
 
-Essential® Diagram is an extensible and high-performance .NET Diagramming Framework for Windows Applications. It can be used for developing Microsoft Visio-like interactive graphics and diagramming applications. It stores graphical objects in a node graph and renders those objects onto the screen. Essential® Diagram supports both vector and raster graphics on the drawing surface.
+WinForms Diagram is an extensible and high-performance .NET Diagramming Framework for Windows applications. It can be used for developing Microsoft Visio-like interactive graphics and diagramming applications. It stores graphical objects in a node graph and renders those objects onto the screen. WinForms Diagram supports both vector and raster graphics on the drawing surface.
 
-Essential® Diagram lets users create interactive diagrams easily using the Diagram Builder utility included with the Diagram. It explicitly lays out diagram objects, or allows our built-in layout managers to handle the job, making complex layout diagrams a snap. Using the Symbol Designer utility, you can create domain or business specific symbols by using custom shapes and images.
+WinForms Diagram lets users create interactive diagrams easily using the Diagram Builder utility included with the Diagram. It explicitly lays out diagram objects, or allows our built-in layout managers to handle the job, making complex layout diagrams a snap. Using the Symbol Designer utility, you can create domain or business specific symbols by using custom shapes and images.
 
 
 ![Overview of WindowsForms Diagram](overview_images/windowsforms-diagram-overview.png)
@@ -24,36 +24,38 @@ Essential® Diagram lets users create interactive diagrams easily using the Diag
 
 ### Key Features
 
-Some of the key features of Essential® Diagram are listed below.
+Some of the key features of WinForms Diagram are listed below.
 
-* Essential® Diagram supports Matrix Transformations likeTranslate (Move), Rotate and Scale.
+* WinForms Diagram supports matrix transformations like Translate (Move), Rotate, and Scale.
 * Shape nodes are the graphical objects that can be drawn on the diagram area by activating one of several drawing tools such as the RectangleTool, RoundRectTool, EllipseTool, LineTool, PolylineTool, OrthogonalLineTool, BezierTool, CurveTool, ArcTool and PolygonTool.
 * DecoratorShape can be added at the head and tail of Connectors. The shapes include arrows, circles, diamonds, crosses, squares and custom decorators.
-* Essential® Diagram supports rendering TextNodes and RichTextNodes, and offers full text formatting through sufficient properties. Text editing and text rotation are also supported.
-* Zooming, scrolling, and panning are supported and can be achieved using sufficient interactive diagram tools.
+* WinForms Diagram supports rendering TextNodes and RichTextNodes, and offers text formatting through available properties. Text editing and text rotation are also supported.
+* Zooming, scrolling, and panning are supported and can be achieved using the available interactive diagram tools.
 * Automatic Line Routing and Line Bridging: while a link is drawn between two nodes and if any other node is found in between them, the line will be automatically re-routed around those nodes.
-* The PrintDialog class enables the user to set the printer to be used, and allows to define the pages and the number of copies to be printed. 
+* The PrintDialog class enables the user to set the printer to be used and define the pages and number of copies to be printed.
 * The PrintPreviewDialog class provides an overview of how the document will appear when printed, which is invoked using the ShowDialog method.
-* PaletteGroupBar control is a WinForm control that can be added to the Visual Studio .NET toolbox. It has the following capabilities:
-* It displays list of symbols in a symbol palette as icons 
-* It allows user to drag symbols onto diagrams 
-* It supports multiple symbol palettes at a time 
-* It has a user interface similar to Microsoft Outlook bar 
-* It is implemented based on the Syncfusion® GroupBar and GroupView controls
+* PaletteGroupBar control is a Windows Forms control that can be added to the Visual Studio .NET toolbox. It has the following capabilities:
+	* It displays a list of symbols in a symbol palette as icons.
+	* It allows users to drag symbols onto diagrams.
+	* It supports multiple symbol palettes at a time.
+	* It has a user interface similar to the Microsoft Outlook bar.
+	* It is implemented based on the Syncfusion® GroupBar and GroupView controls.
 
 #### User Guide Organization
 
-The product comes with numerous samples as well as an extensive documentation to guide you. This User Guide provides detailed information on the features and functionalities of the Tools controls. It is organized into the following sections:
+The product comes with numerous samples as well as extensive documentation to guide you. This User Guide provides detailed information on the features and functionalities of the controls. It is organized into the following sections:
 
 * Overview - This section gives a brief introduction to our product and its key features.
 * Installation and Deployment - This section elaborates on the install location of the samples, license etc.
 * What's New - This section lists the new features implemented for every release.
-* Getting Started - This section guides you on getting started with Windows application, controls etc.
-* Concepts and Features - The features of Essential® Diagram are illustrated with use case scenarios, code examples and screen shots under this section.
+* Getting Started - This section guides you on getting started with Windows applications and controls.
+* Concepts and Features - The features of WinForms Diagram are illustrated with use case scenarios, code examples and screen shots under this section.
 
 #### Document Conventions
 
 The conventions listed below will help you to quickly identify the important sections of information, while using the content:
+
+Use Note for important information, Tip for helpful guidance, and Additional Information for related details.
 
 <table>
 <tr>
@@ -91,11 +93,11 @@ Represents additional information on the topic</td></tr>
 
 ## Prerequisites and Compatibility
 
-This section covers the requirements mandatory for using Essential® Diagram control. It also lists operating systems and browsers compatible with the product.
+This section covers the requirements mandatory for using WinForms Diagram control. It also lists operating systems and browsers compatible with the product.
 
 ### Prerequisites
 
-The prerequisites details are listed below:
+The prerequisite details are listed below. Install the product before using the control.
 
 
 <table>
@@ -106,7 +108,7 @@ Development Environments</td><td>
 <tr>
 <td>
 <ul> 
-<li>Visual Studio 2015 or higher</li><li> Borland Delphi for .NET</li><li>SharpCode</li></ul></td><td>
+<li>Visual Studio 2015 or higher</li><li> Borland Delphi for .NET</li><li>SharpDevelop</li></ul></td><td>
 <ul><li> .NET 4.6.2</li><li> .NET 4.0</li></ul></td></tr>
 </table>
 
@@ -127,7 +129,7 @@ Operating Systems</th></tr>
 ## Documentation
 
 
-Syncfusion® provides the following documentation segments to provide all necessary information for using Essential® Diagram control in Windows application in an efficient manner.
+Syncfusion® provides the following documentation segments to provide all necessary information for using WinForms Diagram control in Windows application in an efficient manner.
 
 <table>
 <tr>
@@ -145,13 +147,19 @@ Release Notes</td><td>
 <tr>
 <td>
 User Guide (this document)</td><td>
-Online{{ '<https://help.syncfusion.com/windowsforms/diagram/overview>' | markdownify }} (Navigate to the Diagram for Windows Forms User Guide.)> ![User Guide](Overview_images/Overview_img5.jpeg)
+Online {{ '<https://help.syncfusion.com/cr/windowsforms/Syncfusion.html>' | markdownify }} (Navigate to the Diagram for Windows Forms User Guide.)
 
-{{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
+![User Guide](Overview_images/Overview_img5.jpeg)
+
+_Note: Click Download as PDF to access a PDF version._
+
+Installed Documentation: Dashboard -> Documentation -> Installed Documentation.</td></tr>
 <tr>
 <td>
 Class Reference</td><td>
-Online{{ '<https://help.syncfusion.com/cr/windowsforms/Syncfusion.html>' | markdownify }} (Navigate to the Windows Forms User Guide. Select {{ '_Diagram_' | markdownify }} in the second text box, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
+Online {{ '<https://help.syncfusion.com/cr/windowsforms/Syncfusion.html>' | markdownify }} (Navigate to the Windows Forms User Guide. Select _Diagram_ in the second text box, and then click the Class Reference link found in the upper right section of the page.)
+
+Installed Documentation: Dashboard -> Documentation -> Installed Documentation.</td></tr>
 </table>
 
-N> You can refer to our [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) control feature tour page for its groundbreaking feature representations. You can also explore our [WinForms Diagram example](https://github.com/syncfusion/winforms-demos/tree/master/diagram) that shows you how to render and configure the Diagram.
+N> You can refer to our [WinForms Diagram](https://www.syncfusion.com/diagram-sdk/winforms-diagram) control feature tour page for its feature overview. You can also explore our [WinForms Diagram example](https://github.com/syncfusion/winforms-demos/tree/master/diagram) to see how to render and configure the Diagram.

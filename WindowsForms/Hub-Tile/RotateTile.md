@@ -1,9 +1,9 @@
 ---
 layout: post
-title: RotateTile in Windows Forms Hub Tile control | Syncfusion
-description: Learn about RotateTile support in Syncfusion Windows Forms Hub Tile control, its elements and more details.
-platform: WindowsForms
-control: HubTile
+title: RotateTile in Windows Forms Hub Tile | Syncfusion®
+description: RotateTile in Windows Forms Hub Tile presents content through rotating tile transitions, creating dynamic and engaging visual experiences.
+platform: windowsforms
+control: Hub Tile
 documentation: ug
 ---
 # RotateTile in Windows Forms Hub Tile
@@ -55,7 +55,7 @@ Me.HubTile1.RotationTransition = TileFlipDirection.Vertical
 
 ## Transition speed
 
-In HubTile, rotation speed can be increased or decreased by the [RotationTransitionSpeed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_RotationTransitionSpeed) property.
+In Hub Tile, rotation speed can be increased or decreased by the [RotationTransitionSpeed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_RotationTransitionSpeed) property.
 
 {% tabs %}
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Appearance in Windows Forms Numeric TextBox control | Syncfusion®
-description: Learn about Appearance support in Syncfusion® Windows Forms Numeric TextBox (SfNumericTextBox) control and more details.
+title: Appearance in Windows Forms SfNumericTextBox | Syncfusion®
+description: Learn about Appearance support in Syncfusion Windows Forms Numeric TextBox (SfNumericTextBox) control and more details.
 platform: windowsforms
 control: SfNumericTextBox
 documentation: ug
 ---
 
-# Fore color for positive, negative and zero color
+# Appearance in WinForms Numeric TextBox
 
-SfNumericTextBox UI can be customized with the following properties. It helps in differentiating the values easily.
+WinForms Numeric TextBox UI can be customized with the following properties. It helps in differentiating the values easily.
 
 *	[NegativeForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.Styles.NumericTextBoxVisualStyle.html#Syncfusion_WinForms_Input_Styles_NumericTextBoxVisualStyle_NegativeForeColor) – Assign the foreground color to the control, when Value is negative.
 *	[PositiveForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.Styles.NumericTextBoxVisualStyle.html#Syncfusion_WinForms_Input_Styles_NumericTextBoxVisualStyle_PositiveForeColor) - Assign the foreground color to the control, when Value is positive.

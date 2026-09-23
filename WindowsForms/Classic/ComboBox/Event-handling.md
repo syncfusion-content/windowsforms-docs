@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Event Handling in Windows Forms xptoolbar control | Syncfusion
-description: Learn about Event Handling support in Syncfusion Windows Forms ComboBoxAdv(Classic) control and more details.
+title: Event Handling in Windows Forms ComboBoxAdv(Classic) | Syncfusion®
+description: Event handling in the Windows Forms ComboBoxAdv(Classic) control enables responses to user actions, selection changes, and input interactions.
 platform: WindowsForms
 control: ComboBoxAdv
 documentation: ug
 ---
 
-#  Event Handling in Windows Forms xp toolbar
+# Event Handling in Windows Forms ComboBoxAdv(Classic)
 
 ## Selection Events
 

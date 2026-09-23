@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Advanced-Features in WinForms CurrencyTextbox Control | Syncfusion®
-description: Learn here all about advanced features of Syncfusion® WinForms Currency Textbox (CurrencyTextbox) control and more.
+title: Advanced Features in Windows Forms CurrencyTextBox | Syncfusion®
+description: Learn here all about advanced features of Syncfusion WinForms CurrencyTextbox (CurrencyTextbox) control and more.
 platform: windowsforms
 control: CurrencyTextbox
 documentation: ug
 ---
 
-# Advanced Features in Windows Forms Currency Textbox (CurrencyTextbox)
+# Advanced Features in WinForms Currency TextBox
 
 ## Clipboard Support
 
-The CurrencyTextBox control also provides support for clipboard operations that are compatible with currency data. The [ClipMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html#Syncfusion_Windows_Forms_Tools_NumberTextBoxBase_ClipMode) property specifies if formatting characters are to be copied to the clipboard.
+The WinForms Currency TextBox control also provides support for clipboard operations that are compatible with currency data. The [ClipMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html#Syncfusion_Windows_Forms_Tools_NumberTextBoxBase_ClipMode) property specifies if formatting characters are to be copied to the clipboard.
 
 {% tabs %}
 
@@ -65,7 +65,7 @@ Me.currencyTextBox1.ShowOverflowIndicatorToolTip = True
 
 ## Globalization
 
-The CurrencyTextBox class is globalization aware and uses [System.Globalization.CultureInfo](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo?view=netframework-4.7.2) for locale-specific information. You can set the control's culture to any installed culture through its [culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html#Syncfusion_Windows_Forms_Tools_NumberTextBoxBase_Culture) property.
+The WinForms Currency TextBox class is globalization aware and uses [System.Globalization.CultureInfo](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo?view=netframework-4.7.2) for locale-specific information. You can set the control's culture to any installed culture through its [culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html#Syncfusion_Windows_Forms_Tools_NumberTextBoxBase_Culture) property.
 
 * [Culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html#Syncfusion_Windows_Forms_Tools_NumberTextBoxBase_Culture)
 * [CurrentCultureRefresh](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html#Syncfusion_Windows_Forms_Tools_NumberTextBoxBase_CurrentCultureRefresh)
@@ -108,7 +108,7 @@ Me.currencyTextBox1.SpecialCultureValue = Syncfusion.Windows.Forms.Tools.Special
 <table>
 <tr>
 <td>
-{{ '**CurrencyTextBox Properties**' | markdownify }}</td><td>
+{{ '**WinForms Currency TextBox Properties**' | markdownify }}</td><td>
 {{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>

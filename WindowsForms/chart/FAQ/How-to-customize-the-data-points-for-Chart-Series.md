@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customize data points for Chart Series | WinForms | Syncfusion
-description: This document describes how to customize the data points for rendering the chart series in the windows forms chart control.
+title: How to customize data points in Windows Forms Chart | Syncfusion®
+description: Learn how to customize data points in a Windows Forms Chart series to control the appearance and rendering of chart data.
 platform: windowsforms
 control: chart
 documentation: ug
 ---
 
-# How to customize the data points for Chart Series
+# How to customize data points in Windows Forms Chart
 
 You can customize the data points by exposing the IChartSeriesModel interface to the series. The default Series store is an implementation of the IChartSeriesModel. By implementing this interface, we can set it as the underlying data.
 

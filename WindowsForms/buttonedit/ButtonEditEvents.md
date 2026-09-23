@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: ButtonEditEvents in Windows Forms ButtonEdit control | Syncfusion®
-description: Learn about ButtonEditEvents support in Syncfusion® Windows Forms ButtonEdit control and more details.
+title: Events in Windows Forms ButtonEdit | Syncfusion®
+description: ButtonEdit events provide notifications for child button interactions, border changes, and custom event handling scenarios.
 platform: windowsforms
 control: Tools
 documentation: ug
 ---
 
-# ButtonEditEvents in Windows Forms ButtonEdit
+# Events in Windows Forms ButtonEdit
 
 The [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) events are discussed in the below sections.
 

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Customization in Windows Forms MultiColumn TreeView | Syncfusion
-description: Learn about Styling and Customization support in Syncfusion Windows Forms MultiSelectionComboBox control and more details.
+title: Styling and Customization in MultiSelectionComboBox | Syncfusion®
+description: Customize styling and appearance in the Windows Forms MultiSelectionComboBox control using visual, layout, and display options.
 platform: WindowsForms
-control: Editors Package
+control: MultiSelectionComboBox
 documentation: ug
 ---
 
