@@ -108,7 +108,7 @@ End Sub
 {% endhighlight  %}
 {% endtabs %} 
 
-N> Download sample demo from [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/ArrayListBinding854674391.zip?AWSAccessKeyId=AKIAWH6GYCX3XVMXIRHP&Expires=1789627873&Signature=FZbRpdscjiuPPtNB1LfwHL%2FGVc0%3D).
+N> Download sample demo from [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/ArrayListBinding854674391.zip).
 
 ## ArrayList Class with IBindingList Support
 

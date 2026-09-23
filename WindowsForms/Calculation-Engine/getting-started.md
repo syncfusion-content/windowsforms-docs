@@ -294,7 +294,7 @@ The simplest way to use Essential Calculate is through an instance of its [CalcQ
 
 For more information regarding calculating with `CalcQuickBase`, refer [here](https://help.syncfusion.com/windowsforms/calculation-engine/working-with-calcquick)
 
-N> Please find the sample which uses `CalcQuickBase` class for computations, [CalcQuick_Sample](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/CalcQuickBaseWFSample1022512026.zip?AWSAccessKeyId=AKIAWH6GYCX3XVMXIRHP&Expires=1789627720&Signature=gSO1RCfpFDv6jZK7NQTKd2EXm7E%3D)
+N> Please find the sample which uses `CalcQuickBase` class for computations, [CalcQuick_Sample](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/CalcQuickBaseWFSample1022512026.zip)
 
 ### ICalcData
 
@@ -304,7 +304,7 @@ of `ICalcData` interface is used to get and set the values of the variables at r
 
 For more information regarding calculating with `ICalcData`, refer [here](https://help.syncfusion.com/windowsforms/calculation-engine/working-with-icalcdata)
 
-N> Please find the sample which uses `ICalcData` interface for computations, [ICalcData_Sample](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/ICalcDataWFSample101764257.zip?AWSAccessKeyId=AKIAWH6GYCX3XVMXIRHP&Expires=1789627720&Signature=2Oa7UfCKR8t36Hiyb%2F2FewF9Wrc%3D)
+N> Please find the sample which uses `ICalcData` interface for computations, [ICalcData_Sample](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/ICalcDataWFSample101764257.zip)
 
 ## Cross Sheet Reference
 
