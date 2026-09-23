@@ -9,7 +9,7 @@ documentation: ug
 
 # Style in Windows Forms Tab Splitter Container
 
-TabSplitterContainer offers various built in themes for its professional representation as follows
+The WinForms Tab Splitter Container offers various built-in themes for its professional representation as follows
 
     •	Default
 
