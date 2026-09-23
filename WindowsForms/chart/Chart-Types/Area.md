@@ -11,7 +11,7 @@ documentation: ug
  
 ## Area chart
 
-An area chart renders data points as connected line segments and fills the area between the line and the horizontal axis with a specified color.
+[Area Chart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeriesType.html#Syncfusion_Windows_Forms_Chart_ChartSeriesType_Area) renders data points as connected line segments and fills the area between the line and the horizontal axis with a specified color.
 
 The following code example demonstrates how to create an area chart.
 
@@ -48,7 +48,7 @@ chartControl.Series.Add(firstServer)
 
 ## Step area chart
 
-A step area chart is similar to a standard area chart, but instead of connecting data points with straight lines, it uses horizontal and vertical lines to create a step-like pattern between values.
+[Step Area](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeriesType.html#Syncfusion_Windows_Forms_Chart_ChartSeriesType_StepArea) chart is similar to a standard area chart, but instead of connecting data points with straight lines, it uses horizontal and vertical lines to create a step-like pattern between values.
 
 The following code example demonstrates how to create a step area chart.
 

@@ -11,7 +11,7 @@ documentation: ug
 
 ## Pyramid chart
 
-A pyramid chart displays data in a triangular shape divided into sections, where the width of each section represents its corresponding value.
+[Pyramid Chart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeriesType.html#Syncfusion_Windows_Forms_Chart_ChartSeriesType_Pyramid) displays data in a triangular shape divided into sections, where the width of each section represents its corresponding value.
 
 The following code example demonstrates how to create a pyramid chart.
 
@@ -321,7 +321,7 @@ chartControl.Series(0).ConfigItems.PyramidItem.ShowSeriesTitle = True
 
 ## Funnel chart
 
-A funnel chart displays data in a funnel shape, where each section represents a portion of the total value. It is a single-series chart and does not use axes.
+[Funnel Chart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeriesType.html#Syncfusion_Windows_Forms_Chart_ChartSeriesType_Funnel) displays data in a funnel shape, where each section represents a portion of the total value. It is a single-series chart and does not use axes.
 
 The following code example demonstrates how to create a funnel chart.
 

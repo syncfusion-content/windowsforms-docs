@@ -11,9 +11,9 @@ documentation: ug
 
 ## Column chart
 
-A column chart renders discrete vertical rectangles for the given data points.
+[Column Chart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeriesType.html#Syncfusion_Windows_Forms_Chart_ChartSeriesType_Column) renders discrete vertical rectangles for the given data points.
 
-The following code example demonstrates how to create a column Chart.
+The following code example demonstrates how to create a column chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -231,7 +231,7 @@ chartControl.Series(0).ConfigItems.ColumnItem.ColumnType =
 
 ## Bar chart
 
-A bar chart renders data points as horizontal bars to compare values across different categories.
+[Bar Chart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeriesType.html#Syncfusion_Windows_Forms_Chart_ChartSeriesType_Bar) renders data points as horizontal bars to compare values across different categories.
 
 The following code shows how to define a bar chart in ChartControl.
 

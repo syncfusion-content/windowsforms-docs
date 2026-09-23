@@ -11,9 +11,9 @@ documentation: ug
 
 ## Bubble chart
 
-A bubble chart is an extension of a scatter chart that displays three variables. The X and Y coordinates determine the position of each data point, while the size of the bubble represents a third value. 
+[Bubble Chart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeriesType.html#Syncfusion_Windows_Forms_Chart_ChartSeriesType_Bubble) is an extension of a scatter chart that displays three variables. The X and Y coordinates determine the position of each data point, while the size of the bubble represents a third value. 
 
-The following code example demonstrates how to create a bubble Chart.
+The following code example demonstrates how to create a bubble chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -120,7 +120,7 @@ ChartBubbleType.Square
 
 ### Enable phong style 
 
-The [EnablePhongStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBubbleConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartBubbleConfigItem_EnablePhongStyle) property specifies whether Phong-style shading is applied to bubble chart elements. The default value is `true`, which renders bubbles with a three-dimensional lighting effect.
+The [EnablePhongStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBubbleConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartBubbleConfigItem_EnablePhongStyle) property controls whether light and shadow effects are applied to bubbles. When set to `true`, bubbles appear rounded and three-dimensional. When set to `false`, bubbles have a flat appearance. The default value is `true`.
 
 The following code example demonstrates how to disable Phong-style shading for bubble chart elements.
 
@@ -137,9 +137,9 @@ chartControl.Series(0).ConfigItems.BubbleItem.EnablePhongStyle = False
 
 ## Scatter chart
 
-A scatter chart (XY Chart) displays the relationship between two numerical variables by plotting data points on X and Y axes. The points are not connected by lines. 
+[Scatter chart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeriesType.html#Syncfusion_Windows_Forms_Chart_ChartSeriesType_Scatter) displays the relationship between two numerical variables by plotting data points on X and Y axes. The points are not connected by lines. 
 
-The following code example demonstrates how to create a scatter Chart.
+The following code example demonstrates how to create a scatter chart.
 
 {% tabs %}
 {% highlight c# %}

@@ -9,11 +9,11 @@ documentation: ug
 
 # Spline Chart in Windows Forms Charts
 
-## Spline
+## Spline chart
 
-A spline chart is similar to a line chart, but it connects data points using smooth curves instead of straight lines.
+[Spline Chart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeriesType.html#Syncfusion_Windows_Forms_Chart_ChartSeriesType_Spline) is similar to a line chart, but it connects data points using smooth curves instead of straight lines.
 
-The following code example demonstrates how to create a spline line Chart.
+The following code example demonstrates how to create a spline line chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -65,7 +65,7 @@ chartControl.Series.Add(secondServer)
 
 ## Spline area chart
 
-A spline area chart connects data points using smooth curves and fills the area below the curve with a specified color.
+[SplineArea Chart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeriesType.html#Syncfusion_Windows_Forms_Chart_ChartSeriesType_SplineArea) connects data points using smooth curves and fills the area below the curve with a specified color.
 
 The following code example demonstrates how to create a spline area chart.
 
