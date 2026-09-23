@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Features | Windows Forms | Syncfusion®
-description: Learn here all about DataBinding of Syncfusion® Essential Studio® Windows Forms TreeMap control, its elements, and more.
+title: Data Binding in Windows Forms TreeMap | Syncfusion®
+description: Data binding in the Windows Forms TreeMap enables visualization of hierarchical data through grouping, mapping, and interactive data representation.
 platform: windowsforms
 control: TreeMap
 documentation: ug
 ---
 
-# DataBinding in Windows Forms TreeMap control
+# Data Binding in Windows Forms TreeMap
 
 TreeMap control supports Data Binding and it can be achieved using ItemsSource property.
 

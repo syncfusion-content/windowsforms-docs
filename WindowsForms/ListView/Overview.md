@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Windows Forms ListView control | Syncfusion 
-description: This section explains about the listview control for windows forms and it's important key features such as data binding, selection and etc
+title: About Syncfusion® Windows Forms SfListView Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms SfListView control, including data binding, selection, and other key features.
 platform: windowsforms
 control: SfListView
 documentation: ug
 ---
 
-# Windows Forms ListView (SfListView) Overview
+# About Syncfusion® Windows Forms SfListView Control
 
 The list view control allows user to select an item or multiple items from a list-like interface. The data can be sorted, grouped, and filtered with ease.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Wizard Page Settings in Windows Forms Wizard | Syncfusion
-description: Learn about Wizard Page Settings support in Syncfusion Windows Forms Wizard Control, its elements and more details.
+title: Wizard Page Settings in Windows Forms WizardControl | Syncfusion®
+description: Wizard page settings in Windows Forms WizardControl enable customizing page appearance, foreground and background colors, fonts, and border styles.
 platform: WindowsForms
 control: Wizard Package 
 documentation: ug
 ---
 
-# Wizard Page Settings in Windows Forms Wizard
+# Wizard Page Settings in Windows Forms WizardControl
 
 A Wizard Page can include a collection of controls implementing an interactive Wizard interface. The Wizard pages are added to the Wizard Container. You can drag and drop any control into a wizard page. Wizard Control lets you to customize the individual Wizard pages to give a unique functionality for each page.
 

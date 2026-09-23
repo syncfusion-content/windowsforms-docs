@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Windows Forms NumericUpDown control | Syncfusion
-description: Learn here all about Overview support in Syncfusion Windows Forms NumericUpDown (NumericUpDownExt) control, its elements and more details.
+title: About Syncfusion® Windows Forms NumericUpDownExt Control | Syncfusion®
+description: Learn about introduction of Syncfusion® Essential Studio Windows Forms NumericUpDownExt control and more details.
 platform: WindowsForms
 control: NumericUpDownExt
 documentation: ug
 ---
 
-# Windows Forms NumericUpDown (NumericUpDownExt) Overview
+# About Syncfusion® Windows Forms NumericUpDownExt Control
 
 The NumericUpDownExt control enables XP Themes look and feel for the UpDown controls that are missing in the corresponding .NET control.
 

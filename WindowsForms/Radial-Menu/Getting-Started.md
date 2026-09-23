@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Radial Menu | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms Radial Menu control, its elements and more details.
+title: Getting Started with Windows Forms RadialMenu | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms RadialMenu control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
 control: RadialMenu
 documentation: ug
 ---
 
-# Getting Started with Windows Forms Radial Menu
+# Getting Started with Windows Forms RadialMenu
 
 >**Important**
 Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion license key in your Windows Forms application to use our components.

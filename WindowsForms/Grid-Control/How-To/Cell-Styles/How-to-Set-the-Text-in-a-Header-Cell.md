@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to set the text in a header cell in GridControl | Syncfusion
-description: Learn here all about how to set the text in a header cell in Gridcontrol of Syncfusion Windows Forms Gridcontrol and more.
+title: How to Set Header Cell Text in WinForms Grid Control | Syncfusion®
+description: Set the text in a header cell in Syncfusion® Windows Forms Grid Control using header cell properties and customize header content and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to set the text in a header cell Windows Forms GridControl
+# How to Set Header Cell Text in Windows Forms Grid Control
 
 In GridControl, values in header cells are set just as in any other cell. 
 

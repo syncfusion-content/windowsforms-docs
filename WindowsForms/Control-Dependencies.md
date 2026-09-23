@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Control dependencies | Windows Forms | Syncfusion®
-description: Learn here about Control Dependencies with Syncfusion® Windows Forms control, its elements and more details.
+title: Control Dependencies in Windows Forms | Syncfusion®
+description: Learn about control dependencies, assembly references, and NuGet packages for Syncfusion® Windows Forms controls.
 platform: windowsforms
 control: Introduction
 documentation: ug
 ---
 
-
-# Windows Forms Control Dependencies
+# Control Dependencies in Windows Forms
 
 This section lists needed assembly or NuGet references to use any control in the  application. You can refer to the [deployment section](https://help.syncfusion.com/windowsforms/deployment) to know assembly installation location and [NuGet packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) section to know how to add NuGet reference.
  
@@ -1150,7 +1149,7 @@ Syncfusion.GridExport.WinForms
 </tr>
 </table>
 
-## GridDataBoundGrid(Classic)
+## GridDataBoundGrid (Classic)
 
 <table>
 <tr>

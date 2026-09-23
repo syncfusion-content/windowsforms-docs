@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Hosting-Controls | WindowsForms | Syncfusion®
-description: Learn here all about Hosting Controls support in Syncfusion® Windows Forms CommandBar (CommandBars) control and more.
+title: Hosting Controls in Windows Forms CommandBar | Syncfusion®
+description: Hosting controls in CommandBar supports integrating popup menus, XP toolbars, and custom controls within command bars.
 platform: windowsforms
 control: CommandBar
 documentation: ug

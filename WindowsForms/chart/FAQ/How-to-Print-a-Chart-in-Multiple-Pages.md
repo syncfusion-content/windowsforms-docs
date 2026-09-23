@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Print-a-Chart-in-Multiple-Pages | Windows Forms | Syncfusion
-description: how to print a chart in multiple pages 
+title: How to print a charts in Windows Forms Chart | Syncfusion®
+description: Learn how to print a Windows Forms Chart on multiple pages and configure chart printing across page boundaries.
 platform: windowsforms
 control: chart
 documentation: ug
 ---
 
-# How to Print a Chart in Multiple Pages 
+# How to print multiple charts in Windows Forms Chart
 
 To print a Chart in multiple page, use the PrintPage event to specify the range of X and Y axis. Specify the minimum and maximum value in the _Range_ property of the axis you want to divide. Set the HasMorePages__property to true in the events before specifying the range values and set this to false after chart default maximum value. The following code illustrates this: 
 

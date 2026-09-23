@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to find nearest port when mouse hover on the node | Syncfusion®
-description: This page explains about when mouse hover on the node, how to find the nearest port and establish the connection to the port.
+title: How to highlight the nearest port in WinForms Diagram | Syncfusion®
+description: Learn how to find and highlight the nearest connection point while hovering over nodes in the Syncfusion® Windows Forms Diagram control.
 platform: WindowsForms
 control: Diagram
 documentation: ug
 ---
 
-# How to find the nearest ConnectionPoint when mouse hover on the node
+# How to Find and Highlight the Nearest Port in Windows Forms Diagram
 
 By default, when hover over the Diagram nodes, the CentralPort will be highlighted and establish connection to the node. If you disabled the CentralPort, then highlight the ConnectionPoint (which is currently under in the mouse pointer) to establish the connection.
 

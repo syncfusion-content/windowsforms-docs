@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Border Settings in Windows Forms Status Bar control | Syncfusion
-description: Learn about Border Settings support in Syncfusion Windows Forms Status Bar (StatusBarAdv) control and more details.
+title: Border Settings in Windows Forms StatusBarAdv | Syncfusion®
+description: Border settings in Windows Forms StatusBarAdv customize border appearance, improving visual structure and content separation.
 platform: WindowsForms
 control: StatusBarAdv
 documentation: ug
 ---
 
-# Border Settings in Windows Forms Status Bar (StatusBarAdv)
+# Border Settings in Windows Forms StatusBarAdv
 
 This section illustrates the border settings available for the StatusBarAdv control.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WinForms MessageBox control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms MessageBox (MessageBoxAdv) control, its elements, and more.
+title: Getting Started with Windows Forms MessageBoxAdv | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms MessageBoxAdv control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
 control: MessageBoxAdv
 documentation: ug
 ---
 
-# Getting Started with Windows Forms MessageBox (MessageBoxAdv)
+# Getting Started with Windows Forms MessageBoxAdv
 
 This section explains how to configure [MessageBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html) control in a Windows Forms application.
 

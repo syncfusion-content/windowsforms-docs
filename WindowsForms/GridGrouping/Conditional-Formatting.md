@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Conditional Formatting in Windows Forms GridGrouping | Syncfusion®
-description: Learn about Conditional Formatting support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
+title: Conditional Formatting in WinForms GridGroupingControl | Syncfusion®
+description: The conditional formatting feature in GridGroupingControl enables applying custom styles, data bars, and dynamic formatting based on expressions and rules.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# Conditional Formatting in Windows Forms GridGrouping
+# Conditional Formatting in Windows Forms GridGroupingControl
 GridGroupingControl provides built-in support for Conditional Formatting. It is used to format grid cells based on a certain conditions. The conditional formatting can be added to the GridGroupingControl by defining the [GridConditionalFormatDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridConditionalFormatDescriptor.html). This descriptor is used to specify the filter criteria for the cells and the style to be applied for filtered cells.  
 
 The following steps are used to add the conditional formatting through the editor,

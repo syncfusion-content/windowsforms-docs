@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Hold the Row Selection After the Cell Deactivated in Grid | Syncfusion
-description: How to hold the row selection after the cell is deactivated in Syncfusion Windows Forms Grid Control, and more.
+title: Hold Row Selection in Windows Forms Grid Control | Syncfusion®
+description: Hold row selection after a cell is deactivated in Syncfusion® Windows Forms Grid Control using the SelectionChanging event and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to hold the row selection after the cell is deactivated
+# How to Hold Row Selection in Windows Forms Grid Control
 
 Essential Grid enables you to hold the selection after the cell is deactivated. To hold the selection, cancel SelectionChanging event, when e.Reason is MouseDown or Clear. 
 

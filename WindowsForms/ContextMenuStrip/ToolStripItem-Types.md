@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ToolStripItems | Windows Forms | Syncfusion®
+title: ToolStripItem Types in Windows Forms ContextMenuStrip | Syncfusion®
 description: ToolStripItems like MenuItem,TextBox,ComboBox and Separator can be added as menu items to the ContextMenuStripEx control.
 platform: windowsforms
 control: ContextMenuStripEx
 documentation: ug
 ---
 
-# ToolStripItem Types in WinForms ContextMenuStrip (ContextMenuStripEx)
+# ToolStripItem Types in Windows Forms ContextMenuStrip
 
 The following are the ToolStripItems which can be added as menu items to the ContextMenuStripEx control.
 

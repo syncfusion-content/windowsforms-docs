@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Advanced features in Windows Forms xptoolbar control | Syncfusion
-description: Learn about Advanced features support in Syncfusion Windows Forms DateTimePickerAdv(Classic) control and more details.
+title: Advanced Features in Windows Forms DateTimePickerAdv | Syncfusion
+description: Learn about the advanced features support in Syncfusion Windows Forms DateTimePickerAdv control and more details.
 platform: WindowsForms
 control: DateTimePickerAdv
 documentation: ug
 ---
-# Advanced features in Windows Forms DateTimePickerAdv(Classic)
+
+# Advanced Features in Windows Forms DateTimePickerAdv
 
 This section covers the below topics:
 

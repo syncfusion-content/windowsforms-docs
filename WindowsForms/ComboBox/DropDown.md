@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Drop-Down in Windows Forms ComboBox control | Syncfusion
-description: Learn about Drop-Down support in Syncfusion Windows Forms ComboBox (SfComboBox) control and more details.
+title: Drop-Down in Windows Forms SfComboBox | Syncfusion®
+description: Drop-down support in Windows Forms SfComboBox enables customizing item display, resizing behavior, position, width, and drop-down opening and closing actions.
 platform: windowsforms
 control: SfComboBox
 documentation: ug
 ---
 
-# Drop-Down in Windows Forms ComboBox (SfComboBox)
+# Drop-Down in Windows Forms SfComboBox
 
 ## Setting maximum drop-down items
 

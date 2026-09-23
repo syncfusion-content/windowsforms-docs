@@ -1,13 +1,13 @@
 ---
 layout: post
-title: End User Capability in Windows Forms Syntax Editor | Syncfusion
-description: Learn about End User Capability support in Syncfusion Windows Forms Syntax Editor control, its elements and more details.
+title: End User Capability in Windows Forms SyntaxEditor | Syncfusion®
+description: End user capabilities in Windows Forms SyntaxEditor include key bindings, find and replace, go-to-line navigation, font settings, and zoom operations.
 platform: WindowsForms
 control: Syntax Editor
 documentation: ug
 ---
 
-# End User Capability in Windows Forms Syntax Editor
+# End User Capability in Windows Forms SyntaxEditor
 
 Supports various built-in dialog windows alike Microsoft Visual Studio text editor.
 

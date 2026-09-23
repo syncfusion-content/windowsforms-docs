@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Alignment Settings in Windows Forms NumericUpDown control | Syncfusion
-description: Learn about Alignment Settings support in Syncfusion Windows Forms NumericUpDown (NumericUpDownExt) control and more details.
+title: Alignment Settings in Windows Forms NumericUpDownExt | Syncfusion®
+description: Alignment settings in Windows Forms NumericUpDownExt enable customizing the alignment of numeric values for improved readability and appearance.
 platform: WindowsForms
-control: EditorsPackage
+control: NumericUpDownExt
 documentation: ug
 ---
 
-# Alignment Settings in Windows Forms NumericUpDown (NumericUpDownExt)
+# Alignment Settings in Windows Forms NumericUpDownExt
 
 This section discusses the Alignment settings of the NumericUpDownExt control.
 

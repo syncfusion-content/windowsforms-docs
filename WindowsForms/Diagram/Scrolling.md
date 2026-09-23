@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Scrolling in Windows Forms Diagram control | Syncfusion®
-description: Learn about Scrolling support in Syncfusion® Windows Forms Diagram control, its elements and more details.
+title: Scrolling in Windows Forms Diagram | Syncfusion®
+description: Configure scrolling behavior in the Syncfusion® Windows Forms Diagram control with scrollbars, virtual bounds, thumb tracking, and scroll tips.
 platform: windowsforms
 control: Diagram
 documentation: ug

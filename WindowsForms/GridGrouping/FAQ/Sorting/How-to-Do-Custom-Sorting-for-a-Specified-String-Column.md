@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Do-Custom-Sorting-for-a-Specified-String-Co | Windows Forms | Syncfusion
-description: how to do custom sorting for a specified string column
+title: Custom Sorting in WinForms GridGroupingControl | Syncfusion®
+description: Do custom sorting for a specified string column in Syncfusion® WinForms GridGroupingControl, its custom comparer implementation, sorting behavior, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to do Custom Sorting for a Specified String Column
+# How to Do Custom Sorting in WinForms GridGroupingControl
 
 You can customize the sorting and set the rows with an empty string to the last. This can be done by making use of the Compare method of IComparer Class. You can write your custom code for the Compare() method where you can set the empty string rows as last. This can be achieved by finding the length of the string in the compare() method and canceling its sorting thereby pushing the empty strings at the last.
 

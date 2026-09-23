@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Automatic Control Sizing in WinForms MultiColumn TreeView | Syncfusion
-description: Learn about Automatic Control Sizing support in Syncfusion Windows Forms MultiSelectionComboBox control and more details.
+title: Automatic Control Sizing in MultiSelectionComboBox | Syncfusion®
+description: Configure automatic control sizing in the Windows Forms MultiSelectionComboBox control to adjust its size based on content and layout requirements.
 platform: WindowsForms
-control: Editors Package
+control: MultiSelectionComboBox
 documentation: ug
 ---
 

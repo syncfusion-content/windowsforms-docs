@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ToolTip Support in Windows Forms TreeMap control | Syncfusion®
-description: Learn about ToolTip Support in Syncfusion® Windows Forms TreeMap control, its elements and more details.
+title: Tooltip Support in Windows Forms TreeMap | Syncfusion®
+description: Tooltip support in the Windows Forms TreeMap displays additional information for data items and supports customization of content and appearance.
 platform: windowsforms
 control: TreeMap 
 documentation: ug
 ---
 
-# ToolTip Support in Windows Forms TreeMap
+# Tooltip Support in Windows Forms TreeMap
 
 Tooltip shows additional information on the tree map control. Visibility of tooltip can be controlled using the [`IsToolTipVisible`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TreeMap.TreeMap.html#Syncfusion_Windows_Forms_TreeMap_TreeMap_IsTootTipVisible) property. The format of the tooltip header and item can be customized using the [`HeaderToolTipInfo`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TreeMap.TreeMap.html#Syncfusion_Windows_Forms_TreeMap_TreeMap_HeaderToolTipInfo) and [`ItemToolTipInfo`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TreeMap.TreeMap.html#Syncfusion_Windows_Forms_TreeMap_TreeMap_ItemToolTipInfo) properties.
 
@@ -18,20 +18,28 @@ Tooltip shows additional information on the tree map control. Visibility of tool
 {% highlight c# %}
 
 ToolTipInfo itemInfoHead = new ToolTipInfo();
-
 itemInfoHead.ToolTipHeaderPattern = "&lt;b&gt;{Label}&lt;/b&gt;";
-
 itemInfoHead.ToolTipContentPattern = "Growth \t  :  {Growth} % ";
-
 TreeMap1.HeaderToolTipInfo = itemInfoHead;
 
 ToolTipInfo itemInfo = new ToolTipInfo();
-
 itemInfo.ToolTipHeaderPattern = "&lt;b&gt;{Country}&lt;/b&gt;";
-
 itemInfo.ToolTipContentPattern = "Growth \t      :  {Growth} %  \nPopulation   :  {StrPopulation}  ";
+TreeMap1.ItemToolTipInfo = itemInfo;
 
-TreeMap1.ItemToolTipInfo = itemInfo; 
+{% endhighlight %}
+
+{% highlight vb %}
+
+Dim itemInfoHead As New ToolTipInfo()
+itemInfoHead.ToolTipHeaderPattern = "&lt;b&gt;{Label}&lt;/b&gt;"
+itemInfoHead.ToolTipContentPattern = "Growth \t  :  {Growth} % "
+TreeMap1.HeaderToolTipInfo = itemInfoHead
+
+Dim itemInfo As New ToolTipInfo()
+itemInfo.ToolTipHeaderPattern = "&lt;b&gt;{Country}&lt;/b&gt;"
+itemInfo.ToolTipContentPattern = "Growth \t      :  {Growth} %  \nPopulation   :  {StrPopulation}  "
+TreeMap1.ItemToolTipInfo = itemInfo
 
 {% endhighlight %}
 

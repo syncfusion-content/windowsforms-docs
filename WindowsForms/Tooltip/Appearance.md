@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Appearance in Windows Forms Tooltip control | Syncfusion®
-description: Learn about Appearance support in Syncfusion® Windows Forms Tooltip (SfToolTip) control and more details.
+title: Appearance in Windows Forms Tooltip | Syncfusion®
+description: Appearance customization supports borders, gradients, separators, themes, shadows, RTL layouts, and tooltip styling.
 platform: windowsforms
 control: SfToolTip
 documentation: ug

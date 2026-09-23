@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Border Settings in Windows Forms Progress Bar control | Syncfusion
-description: Learn about Border Settings support in Syncfusion Windows Forms Progress Bar (ProgressBarAdv) control and more details.
+title: Border Settings in Windows Forms ProgressBarAdv | Syncfusion®
+description: Border settings in Windows Forms ProgressBarAdv control the appearance of borders, enhancing visual structure and presentation.
 platform: WindowsForms
 control: ProgressBarAdv
 documentation: ug
 ---
 
-# Border Settings in Windows Forms Progress Bar (ProgressBarAdv)
+# Border Settings in Windows Forms ProgressBarAdv
 
 This section discusses the border settings of the ProgressBarAdv control.
 

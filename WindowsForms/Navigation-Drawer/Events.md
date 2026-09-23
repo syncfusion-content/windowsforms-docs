@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Events in Windows Forms Navigation Drawer control | Syncfusion
-description: Learn about Events support in Syncfusion Windows Forms Navigation Drawer control, its elements and more details.
+title: Events in Windows Forms Navigation Drawer | Syncfusion®
+description: Navigation Drawer events provide notifications for opening, closing, opened, and closed states during drawer transitions.
 platform: WindowsForms
 control: NavigationDrawer 
 documentation: ug

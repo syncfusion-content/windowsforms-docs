@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Helpers in WinForms DataGrid control | Syncfusion®
-description: Learn about helpers such as get the actual row index irrespective of grouping and so on in Syncfusion® WinForms DataGrid (SfDataGrid) control and more details.
+title: Helpers in Windows Forms Data Grid | Syncfusion®
+description: Helpers in Data Grid provides helper classes and methods to customize grid behavior, access grid elements, and simplify development tasks.
 platform: windowsforms
-control: SfDataGrid 
+control: Data Grid 
 documentation: ug
 ---
 
-# Helpers in Windows Forms DataGrid (SfDataGrid) 
+# Helpers in Windows Forms Data Grid
 
 ## IndexResolver
 
-SfDataGrid has [DataGridIndexResolver](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.DataGridIndexResolver.html) static class present in [Syncfusion.WinForms.DataGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.html) namespace that has some extension methods used to Resolve from row or column index to record or visible column index and `vice versa`. 
+[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) has [DataGridIndexResolver](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.DataGridIndexResolver.html) static class present in [Syncfusion.WinForms.DataGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.html) namespace that has some extension methods used to Resolve from row or column index to record or visible column index and `vice versa`. 
 
 ## Example: You can find the record index from row index using ResolveToRecordIndex method.
 

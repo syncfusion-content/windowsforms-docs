@@ -1,13 +1,13 @@
 ---
 layout: post
-title: File Operation in Windows Forms Syntax Editor control | Syncfusion
-description: Learn about File Operation support in Syncfusion Windows Forms Syntax Editor control and more details.
+title: File Operation in Windows Forms SyntaxEditor | Syncfusion®
+description: File operations in Windows Forms SyntaxEditor enable loading, creating, modifying, saving, and inserting files, supporting efficient file management workflows.
 platform: WindowsForms
 control: SyntaxEditor
 documentation: ug
 ---
 
-# File Operation in Windows Forms Syntax Editor
+# File Operation in Windows Forms SyntaxEditor
 
 Supports all file operations like create new, open, or save.
 

@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Header Settings in Windows Forms xptaskpane control | Syncfusion®
-description: Learn about Header Settings support in Syncfusion® Windows Forms xptaskpane (XPTaskPane) control and more details.
+title: Header Settings in Windows Forms XPTaskPane | Syncfusion®
+description: Header settings support customizing navigation buttons, menu visibility, toolbar items, and header images in XPTaskPane.
 platform: windowsforms
 control: XPTaskPane
 documentation: ug
 ---
 
-# Header Settings in Windows Forms xp task pane (XPTaskPane)
+# Header Settings in Windows Forms XPTaskPane
 
 ## Setting visibility of the ToolBar items
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Get-New-Form-Window-in-Front-of-an-Active-W | Windows Forms | Syncfusion
-description: how to get new form window in front of an active window while double clicking a cell
+title: New Form Window in Front of WinForms GridGroupingControl | Syncfusion®
+description: Get a new form window in front of the active window in Syncfusion® Windows Forms GridGroupingControl, its cell double-click handling, focus behavior, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Get New Form Window in Front of an Active Window while Double Clicking a Cell
+# How to Get a New Form Window in Front of WinForms GridGroupingControl
 
 To display a new form window while double clicking a cell, TableControlCellDoubleClick event is handled. window.BringToFront() method is used to bring the new window in front of the active window, but this is effective only if FocusOnMouseDown property is set to false.
 

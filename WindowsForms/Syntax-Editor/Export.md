@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Export in Windows Forms Syntax Editor control | Syncfusion
-description: Learn about Export support in Syncfusion Windows Forms Syntax Editor control, its elements and more details.
+title: Export in Windows Forms SyntaxEditor | Syncfusion®
+description: Export in Windows Forms SyntaxEditor enables exporting editor content with syntax highlighting to XML, HTML, RTF formats, and bitmap images.
 platform: WindowsForms
 control: SyntaxEditor
 documentation: ug
 ---
 
-# Export in Windows Forms Syntax Editor
+# Export in Windows Forms SyntaxEditor
 
 The EditControl has the ability to export its content with associated syntax highlighting information to XML, HTML, and RTF file formats.
 

@@ -1,18 +1,13 @@
 ---
 layout: post
-title: How To Protect Links From User Selection  Manipulation | Syncfusion®
-description: Learn how to prevent users from selecting or manipulating links by using the EditStyle class to set the Enabled property to false, ensuring protection.
-
-
-
-
-
+title: How to protect links from selection in WinForms Diagram | Syncfusion®
+description: Learn how to protect links from user selection and manipulation in the Syncfusion® Windows Forms Diagram control using the EditStyle class.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# How To Protect Links From User Selection / Manipulation
+# How to Protect Links from User Selection in Windows Forms Diagram
 
 You can protect links from user selection / manipulation by making use of the EditStyle class. By setting the Enabled property of the EditStyle class to _false_, you can disable the selection of a node link.
 
