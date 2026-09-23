@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion® Windows Forms Office2007 Form Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms Office2007 Form control and more details.
-platform: WindowsForms
+platform: windowsforms
 control: Office2007 Form
 documentation: ug
 ---
@@ -22,4 +22,4 @@ The `Office2007Form` is an advanced standard Form that offers Microsoft Office20
 
 ## Choose between different form controls
  
-You can refer to the different form controls [here](https://help.syncfusion.com/windowsforms/sfform/overview#choose-between-different-form-controls). 
+You can refer to the different form controls [here](https://help.syncfusion.com/windowsforms/form/overview). 

@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
 title: Appearance Customization in Windows Forms Menu | Syncfusion
 description: Appearance customization supports menu images, paint styles, grouping, customization dialogs, and toolbar visual settings.
-platform: WindowsForms
+platform: windowsforms
 control: MainFrameBarManager 
 documentation: ug
 ---
@@ -415,6 +415,6 @@ The color schemes can be modified by applying and customizing the theme colors.
 
 {% seealso %}
 
-[Theming](https://help.syncfusion.com/windowsforms/menus/Theming)
+[Theming](https://help.syncfusion.com/windowsforms/menu/theming)
 
 {% endseealso %}

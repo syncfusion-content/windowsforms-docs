@@ -2,7 +2,7 @@
 layout: post
 title: Calendar Value in Windows Forms DateTimePickerAdv | Syncfusion
 description: Learn about calendar value support in Syncfusion Windows Forms DateTimePickerAdv control and more details.
-platform: WindowsForms
+platform: windowsforms
 control: DateTimePickerAdv
 documentation: ug
 ---
@@ -33,6 +33,6 @@ Me.dateTimePickerAdv1.MinValue = New System.DateTime(2007, 1, 1, 0, 0, 0, 0)
 
 {% seealso %}
 
-[Customizing the Calendar](http://help.syncfusion.com/windowsforms/calendar/customizing-the-calendar)
+[Customizing the Calendar](https://help.syncfusion.com/windowsforms/classic/datetimepicker/calendar-customization)
 
 {% endseealso %}

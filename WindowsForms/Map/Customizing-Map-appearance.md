@@ -18,7 +18,7 @@ The maps control provides two types of color mapping:
 
 ## Equal color mapping
 
-It is used to differentiate the shape's fill based on its underlying value and color using the [`Value`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Maps.EqualColorMapping.html#Syncfusion_Windows_Forms_Maps_EqualColorMapping_Value) and [`Color`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Maps.ColorMapping.html#Syncfusion_Windows_Forms_Maps_ColorMapping_Color) properties.
+It is used to differentiate the shape's fill based on its underlying value and color using the [`Value`](https://help.syncfusion.com/cr/windowsforms) and [`Color`](https://help.syncfusion.com/cr/windowsforms) properties.
 
 {% tabs %}
 
@@ -122,7 +122,7 @@ End Class
 
 ## Range color mapping
 
-The range color mapping is used to differentiate the shape's fill based on its underlying value and color ranges. The [`From`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Maps.RangeColorMapping.html#Syncfusion_Windows_Forms_Maps_RangeColorMapping_From) and [`To`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Maps.RangeColorMapping.html#Syncfusion_Windows_Forms_Maps_RangeColorMapping_To) properties define the value ranges, and the [`Color`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Maps.ColorMapping.html#Syncfusion_Windows_Forms_Maps_ColorMapping_Color) property defines the equivalent color.
+The range color mapping is used to differentiate the shape's fill based on its underlying value and color ranges. The [`From`](https://help.syncfusion.com/cr/windowsforms) and [`To`](https://help.syncfusion.com/cr/windowsforms) properties define the value ranges, and the [`Color`](https://help.syncfusion.com/cr/windowsforms) property defines the equivalent color.
 
 {% tabs %}
 

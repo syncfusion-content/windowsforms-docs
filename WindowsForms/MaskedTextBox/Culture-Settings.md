@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Culture Settings in Windows Forms MaskedTextBox Control | Syncfusion®
 description: Culture settings in MaskedTextBox (MaskedEditBox) support culture-specific formatting, user overrides, and internationalized numeric display.

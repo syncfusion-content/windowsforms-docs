@@ -2,7 +2,7 @@
 layout: post
 title: About Windows Forms ComboBoxBase Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms ComboBoxBase control and its key features and customization options.
-platform: WindowsForms
+platform: windowsforms
 control: ComboBoxBase
 documentation: ug
 ---

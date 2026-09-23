@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Windows Forms Gradient Label | Syncfusion®
 description: Learn how to get started with the Syncfusion® Windows Forms Gradient Label control. Explore setup, features, examples, and customization options.
-platform: WindowsForms
+platform: windowsforms
 control: Gradient Label
 documentation: ug
 ---

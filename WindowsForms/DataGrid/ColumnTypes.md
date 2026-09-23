@@ -2781,10 +2781,10 @@ Here, a rating column has been created as a custom column. The sample for this c
 
 [How to suspend the PING sound when perform the Tab operation in DataGrid(SfDataGrid)](https://support.syncfusion.com/kb/article/9701/how-to-suspend-the-ping-sound-when-perform-the-tab-operation-in-datagridsfdatagrid)
 
-[How to differentiate combobox column from other columns in non-editable display mode in WinForms DataGrid](https://support.syncfusion.com/kb/article/8682/how-to-differentiate-combobox-column-from-other-columns-in-non-editable-display-mode-in)
+[How to differentiate combobox column from other columns in non-editable display mode in WinForms DataGrid](https://support.syncfusion.com/kb/article/8682/how-to-differentiate-combobox-column-from-other-columns-in-winforms-datagrid)
 
-[How to change value of other columns while changing the value in a combobox column in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/8686/how-to-change-value-of-other-columns-while-changing-the-value-in-a-combobox-column-in)
+[How to change value of other columns while changing the value in a combobox column in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/8686/how-to-change-value-of-other-columns-while-changing-the-value-in-a-combobox-column-in-winforms-datagrid-sfdatagrid)
 
-[How to set checkbox value based on the value change on another checkbox column in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/8624/how-to-set-checkbox-value-based-on-the-value-change-on-another-checkbox-column-in-winforms)
+[How to set checkbox value based on the value change on another checkbox column in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/8624/how-to-set-checkbox-value-based-on-the-value-change-on-another-checkbox-column-in-winforms-datagrid-sfdatagrid)
 
 [How to change the ValidationMode of the GridNumericColumn in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/8276/how-to-change-the-validationmode-of-the-gridnumericcolumn-in-winforms-datagrid-sfdatagrid)

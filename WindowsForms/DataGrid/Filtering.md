@@ -906,7 +906,7 @@ End Sub
 
 ![Retain the frozen row data in the view by managing the FilterPredicates event](Filtering_images/Filtering_img24.png)
 
-Download [Sample location](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Sample1392776176).
+Download [Sample location](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/Sample1392776176.zip).
 
 
 ## Appearance

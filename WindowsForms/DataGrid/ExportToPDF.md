@@ -36,7 +36,7 @@ document.Save("Sample.pdf")
 {% endhighlight %}
 {% endtabs %}
 
-N> SfDataGrid exports data to PDF file by using[Essential<sup>®</sup> PDF](https://help.syncfusion.com/file-formats/pdf/overview). You can refer [PDF documentation](https://help.syncfusion.com/file-formats/pdf/working-with-document) for manipulating.
+N> SfDataGrid exports data to PDF file by using[Essential<sup>®</sup> PDF](https://help.syncfusion.com/document-processing/pdf/pdf-library/net/overview). You can refer [PDF documentation](https://help.syncfusion.com/document-processing/pdf/pdf-library/net/working-with-document) for manipulating.
 
 ## Exporting Options
 Exporting operation can be customized by passing [PdfExportingOptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.PdfExportingOptions.html) instance as argument to `ExportToPdf` and `ExportToPdfGrid` method.
@@ -783,7 +783,7 @@ End Sub
 
 ## See also
 
-[How to add page numbers to the exported pdf document in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/8054/how-to-add-page-numbers-to-the-exported-pdf-document-in-winforms-datagrid-sfdatagrid)
+[How to add page numbers to the exported pdf document in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/8054/how-to-add-page-numbers-to-the-exported-pdf-in-winforms-datagrid)
 
 [How to print the WinForms DataGrid (SfDataGrid) control](https://support.syncfusion.com/kb/article/8036/how-to-print-the-winforms-datagrid-sfdatagrid-control)
 

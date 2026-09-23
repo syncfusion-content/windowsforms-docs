@@ -45,7 +45,7 @@ N> The GridControl does not allow to perform the touch zoom in or out operations
 
 ## Touch Selection
 The touch selection support as like Excel can be enabled by setting the `EnableTouchMode` property to `true` and also the Excel-like selection frame and Excel-like current cell options needs to be enabled to enable the touch selection support.
-To enable Excel-like selection frame in the grid, the [ExcelLikeSelectionFrame](https://help.syncfusion.com/windowsforms/grid/ms-excel-like-features#excel-like-selection-frame) property can be used and to have the Excel-like current cell in the grid, set the [ExcelLikeCurrentCell](https://help.syncfusion.com/windowsforms/grid/ms-excel-like-features#excel-like-current-cell) property to `true`.
+To enable Excel-like selection frame in the grid, the [ExcelLikeSelectionFrame](https://help.syncfusion.com/windowsforms/grid-control/ms-excel-like-features) property can be used and to have the Excel-like current cell in the grid, set the [ExcelLikeCurrentCell](https://help.syncfusion.com/windowsforms/grid-control/ms-excel-like-features) property to `true`.
 {% tabs %}
 {% highlight c# %}
 //Enable the Excel like selection frame to the GridControl

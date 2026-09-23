@@ -15,7 +15,7 @@ ADO.NET is an object-oriented set of libraries which is used to interact with di
 
 The widely used data providers are,
 
-[Ole Db Data Provider](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ms709836(v=vs.85))- Data Sources that expose an OLEDB interface, i.e. Access or Excel.
+[Ole Db Data Provider](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ms709836(v=vs.85)))- Data Sources that expose an OLEDB interface, i.e. Access or Excel.
 [SQL Data Provider](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0)- For interacting with Microsoft SQL Server.
 
 ### ADO.Net Objects and its usages

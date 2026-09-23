@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
 title: LoadOnDemand in Windows Forms TreeView | Syncfusion®
 description: Load On Demand in TreeViewAdv improves performance by creating and loading child nodes only when parent nodes are expanded.
-platform: WindowsForms
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---
@@ -43,11 +43,11 @@ GetPath</td><td>
 Method which is used to derive the path string for a specific node.</td></tr>
 </table>
 
-### Retrieving Node Path
+## Retrieving Node Path
 
 In the `BeforeExpand` event the user can retrieve the path string for a specific node using the TreeNodeAdv.GetPath method where the user can also specify the separator.
 
-The vital thing in this sample is that the `TreeViewAdv.AddSeparatorAtEnd` property must be set to True to add a “\” character at the end of the path of the node, when calling the `Node.GetPath` method.
+The vital thing in this sample is that the `TreeViewAdv.AddSeparatorAtEnd` property must be set to True to add a "\" character at the end of the path of the node, when calling the `Node.GetPath` method.
 
 {% tabs %}
 {% highlight c# %}

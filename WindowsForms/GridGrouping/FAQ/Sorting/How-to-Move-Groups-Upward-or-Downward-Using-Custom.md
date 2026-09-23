@@ -123,5 +123,5 @@ End Sub
 
 Refer to the following sample file for more details.
 
-[http://www.syncfusion.com/downloads/Support/DirectTrac/98850/Demo%20(2)539070983.zip](http://www.syncfusion.com/downloads/Support/DirectTrac/98850/Demo%20(2)539070983.zip)
+[https://files2.syncfusion.com/login?ReturnUrl=%2Fdtsupport%2Fdirecttrac%2F98850%2FDemo%2520(2.png)539070983.zip](https://files2.syncfusion.com/login?ReturnUrl=%2Fdtsupport%2Fdirecttrac%2F98850%2FDemo%2520(2.png)539070983.zip)
 

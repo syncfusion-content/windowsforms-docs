@@ -1,8 +1,8 @@
 ---
 layout: post
-title: What-are-all-the-customization-options-available-i | WindowsForms | Syncfusion
-description: what are all the customization options available in messageboxadv?
-platform: WindowsForms
+title: Available Customization Options in MessageBox
+description: Learn how to customize MessageBoxAdv using properties for themes, caption alignment, shadows, styles, and display behavior.
+platform: windowsforms
 control: Frequently Asked Questions
 documentation: ug
 ---

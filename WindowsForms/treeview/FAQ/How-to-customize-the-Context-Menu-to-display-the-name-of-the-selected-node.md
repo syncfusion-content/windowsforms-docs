@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-customize-the-Context-Menu-to-display-the-name-of-the-selected-node-when-right-clicked-on-it | WindowsForms | Syncfusion
-description: how to customize the context menu to display the name of the selected node when right clicked on it
-platform: WindowsForms
+title: Display Selected Node Name in Context Menu | WindowsForms
+description: Learn how to customize a TreeViewAdv context menu to display the name of the selected node when users right-click a node.
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---
 
-# How to customize the Context Menu to Display the Name of the Selected Node when Right Clicked on it
+# Display Selected Node Name in the Context Menu
 
 The user could customize the context menu to display the name of the selected node when right-clicked on the SelectedNode by handling the MouseDown Event handler in the following way. The user have to get the right click point of the SelectedNode. Then if the SelectedNode is not equal to null, then a new menu item is created and added, such that the item displays the SelectedNode's text name. For displaying only the SelectedNode text at a time when right clicked, the menu items must be cleared.
 

@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
 title: Image Settings in Windows Forms ButtonAdv | Syncfusion®
 description: Image settings support background images, image lists, alignment options, image indexes, and text-image positioning.
-platform: WindowsForms
+platform: windowsforms
 control: Tools	1
 documentation: ug
 ---
@@ -84,7 +84,7 @@ TextAboveImage.</td></tr>
 
 ![Overview_img73](Overview_images/Overview_img73.jpeg) 
 
-N> The Image settings will be effective only when [ButtonType](http://help.syncfusion.com/windowsforms/buttonadv/buttonadvappearnce#button-types) is set to Normal.
+N> The Image settings will be effective only when [ButtonType](https://help.syncfusion.com/windowsforms/classic/button/buttonadvappearnce) is set to Normal.
 
 {% tabs %}
 {% highlight c# %}

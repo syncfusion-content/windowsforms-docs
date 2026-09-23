@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
 title: Configure Color Schemes in Windows Forms Office2010Form | Syncfusion®
 description: Color schemes support Office-inspired themes, managed colors, Aero theme integration, and background color customization.
-platform: WindowsForms
+platform: windowsforms
 control: Office2010 Form
 documentation: ug
 ---

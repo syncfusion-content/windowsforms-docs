@@ -2,7 +2,7 @@
 layout: post
 title: Section 508 Compliance in Windows Forms | Syncfusion®
 description: Section 508 VPAT documentation for Windows Forms. Review accessibility compliance features including keyboard support and assistive technology.
-platform: WindowsForms
+platform: windowsforms
 control: General
 documentation: ug
 ---
@@ -179,7 +179,7 @@ REMARKS AND EXPLANATION<br/><br/></th></tr>
 <td>
 Section 1194.41 (a) Product Support Documentation provided to end-users is made available in alternate formats upon request at no additional charge.<br/><br/></td><td>
 Supported.<br/><br/></td><td>
-Online <a href="http://help.syncfusion.com" aria-label="Syncfusion Online Documentation">Documentation</a> is available.<br/><br/></td></tr>
+Online <a href="https://help.syncfusion.com" aria-label="Syncfusion Online Documentation">Documentation</a> is available.<br/><br/></td></tr>
 <tr>
 <td>
 Section 1194.41 (b) Accessibility and Compatibility Features. End-users can have access to a description of the accessibility and compatibility features of products in alternate formats or alternate methods upon request at no additional charge.<br/><br/><br/><br/></td><td>
@@ -189,6 +189,6 @@ Essential Studio Windows Forms controls are accessible.<br/><br/></td></tr>
 <td>
 1194.41 (c) Support Services for products can accommodate the communication needs of end-users with disabilities.<br/><br/><br/><br/></td><td>
 Supported.<br/><br/></td><td>
-Online support <a href="https://support.syncfusion.com/create" aria-label="Create Support Incidents">Incidents</a> and <a href="https://www.syncfusion.com/support/directtrac/forums" aria-label="Visit Syncfusion Support Forums">Forums</a> are available.<br/><br/></td></tr>
+Online support <a href="https://support.syncfusion.com/id/login?ReturnUrl=%2Fid%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3D14da53e04d2dad770eccf8471c640eee%26scope%3Dopenid%2520profile%2520customer.ai.integration.api%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fsupport.syncfusion.com%252Fcallback%26state%3DCfDJ8D92Ug1RcnNGuQTi4UsS9BaX_YNsYpaIJMldKRZEb3Z0_dloh9Ncz_z9X_9drfKX613vXI-k5waPhrN2Cy2NdwDStBOJ2jZTbPTrcVsjpR23NRh4PSSo2zcDnvbBubdGBkcvwDnR5p3gMDnPCsTPAdeq_xCU6VY9aPddPYuQJOcRHhc925WH82w-_tHhXSCcWAZ2QHq3HM-ixnRpdsXKP4041ermxtrfE5BRrpGrPD_tKDuUfV8KutC1krfJRIAyuA" aria-label="Create Support Incidents">Incidents</a> and <a href="https://www.syncfusion.com/Account/Login?ReturnUrl=%2fsupport%2fdirecttrac%2fforums" aria-label="Visit Syncfusion Support Forums">Forums</a> are available.<br/><br/></td></tr>
 </table>
 Syncfusion does not promise that the information provided in this document is error-free, or that any error is corrected, or that your use of the information provides specific results. The document and its contents are delivered on an “as-is” basis. All information provided is subject to change without prior notice. Syncfusion disclaims all warranties, express, or implied, including any warranty of accuracy, non-infringement, merchantability, and fitness for a particular purpose.

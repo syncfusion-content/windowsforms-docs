@@ -1,8 +1,8 @@
 ---
 layout: post
 title: HubTile selection mark | WindowsForms | Syncfusion
-description: How to detect whether the HubTile is selection marked or not
-platform: WindowsForms
+description: Learn how to detect whether a HubTile control is selection marked and determine its selection state in Windows Forms.
+platform: windowsforms
 control: HubTile
 documentation: ug
 --- 

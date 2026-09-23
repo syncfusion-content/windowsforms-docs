@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Splitter Features in Windows Forms TabSplitterContainer | Syncfusion®
 description: Splitter components include primary and secondary pages, swap controls, orientation buttons, and pane expand or collapse functionality.

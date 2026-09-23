@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
 title: Context Menu in Windows Forms Scroll Frame | Syncfusion®
 description: Context menu support enables scrolling commands, custom menus, additional menu items, and context menu customization.
-platform: WindowsForms
+platform: windowsforms
 control: SfScrollFrame
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Navigation in Windows Forms Calendar | Syncfusion
 description: Learn how to navigate between months and years in Windows Forms Calendar control with keyboard and mouse support.
-platform: WindowsForms
+platform: windowsforms
 control: SfCalendar
 documentation: ug
 ---

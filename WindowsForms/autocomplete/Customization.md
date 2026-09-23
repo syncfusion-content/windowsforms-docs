@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
 title: Customization in Windows Forms AutoComplete | Syncfusion®
 description: Customization in AutoComplete enables configuring popup appearance, visual styles, sizing, persistence, and dropdown behavior.
-platform: WindowsForms
+platform: windowsforms
 control: AutoComplete
 documentation: ug
 ---

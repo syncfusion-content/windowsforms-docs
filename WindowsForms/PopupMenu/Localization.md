@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Localization in Windows Forms PopupMenu | Syncfusion®
 description: Localization support enables displaying popup menu content in different languages and cultures for global applications.

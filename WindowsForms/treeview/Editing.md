@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
 title: Editing in Windows Forms TreeView | Syncfusion®
 description: Editing support enables adding, deleting, renaming, and synchronizing tree nodes with bound data sources.
-platform: WindowsForms
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---

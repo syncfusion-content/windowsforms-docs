@@ -1,8 +1,8 @@
 ---
 layout: post
 title: How-to-activate-a-ProgressBarAdv | WindowsForms | Syncfusion
-description: how to activate a progressbaradv
-platform: WindowsForms
+description: Learn how to activate a ProgressBarAdv control and update its progress state programmatically in Windows Forms.
+platform: windowsforms
 control: Notification Package 
 documentation: ug
 ---

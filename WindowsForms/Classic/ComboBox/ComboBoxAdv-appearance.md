@@ -2,7 +2,7 @@
 layout: post
 title: Appearance in Windows Forms ComboBoxAdv(Classic) | Syncfusion®
 description: Appearance in the Windows Forms ComboBoxAdv(Classic) control enable customization of styles, colors, and visual elements.
-platform: WindowsForms
+platform: windowsforms
 control: ComboBoxAdv
 documentation: ug
 ---

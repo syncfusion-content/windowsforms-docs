@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
 title: Events in Windows Forms GroupView | Syncfusion®
 description: GroupView events provide notifications for item selection, highlighting, renaming, reordering, context menus, and double-click actions.
-platform: WindowsForms
+platform: windowsforms
 control: GroupView
 documentation: ug
 ---

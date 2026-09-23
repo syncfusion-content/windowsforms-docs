@@ -2,7 +2,7 @@
 layout: post
 title: Features in Windows Forms StatusBarAdvPanel | Syncfusion®
 description: Explore the key features of Windows Forms StatusBarAdvPanel, including customizable content, styling options, and layout flexibility.
-platform: WindowsForms
+platform: windowsforms
 control: StatusBarAdvPanel
 documentation: ug
 ---

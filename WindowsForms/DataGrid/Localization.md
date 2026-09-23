@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Localization in Windows Forms Data Grid
-Localization is the process of translating the application resources into different language for the specific cultures. The [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) can be localized by adding [resource](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/aa992030(v=vs.100)) file. Application culture can be changed by setting [CurrentUICulture ](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentuiculture?view=net-5.0)before `InitializeComponent` method.
+Localization is the process of translating the application resources into different language for the specific cultures. The [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) can be localized by adding [resource](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/aa992030(v=vs.100))) file. Application culture can be changed by setting [CurrentUICulture ](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentuiculture?view=net-5.0)before `InitializeComponent` method.
 
 ## Localize at Sample Level
 To localize the SfDataGrid based on `CurrentUICulture` using resource files, follow the below steps.
@@ -16,7 +16,7 @@ To localize the SfDataGrid based on `CurrentUICulture` using resource files, fol
 
 1) Create new folder and named as Resources in your application.
 
-2) Add the default resource file of SfDataGrid into Resources folder. You can download the `Syncfusion.SfDataGrid.WinForms.resx` [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfDataGrid.WinForms53748004.zip).
+2) Add the default resource file of SfDataGrid into Resources folder. You can download the `Syncfusion.SfDataGrid.WinForms.resx` [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/Syncfusion.SfDataGrid.WinForms53748004.zip).
 
 ![Added default resource file of winforms datagrid shown in solution explorer](Localization_images/Localization_img1.png) 
 
@@ -59,12 +59,12 @@ End Sub
 
 To localize the `Select All` string in the CheckListBox of the FilterControl, include the resource file of SfListView to the sample using the previously specified steps, like in SfDataGrid.
 
-The default resource file of SfListView can be download from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ResourceFile1283641291). Refer to the [localization](https://help.syncfusion.com/windowsforms/listview/localization) section in SfListView.
+The default resource file of SfListView can be download from [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/ResourceFile1283641291.zip). Refer to the [localization](https://help.syncfusion.com/windowsforms/listview/localization) section in SfListView.
 
 ![Filter control of winforms datagrid localized with modified resources](Localization_images/Localization_img9.png)
 
 ## Editing Default Resource File
-The default resource file can be edited by adding it to Resources folder of the application where SfDataGrid reads the static texts from here. The default resource file can be download from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfDataGrid.WinForms53748004.zip).
+The default resource file can be edited by adding it to Resources folder of the application where SfDataGrid reads the static texts from here. The default resource file can be download from [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/Syncfusion.SfDataGrid.WinForms53748004.zip).
 
 ![Added default resource file of winforms datagrid shown in solution explorer](Localization_images/Localization_img6.png)
 

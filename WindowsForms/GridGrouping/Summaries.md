@@ -18,12 +18,12 @@ Summaries are used to derive additional information from the data like average, 
 * DoubleVector (statistical methods: Median, Min, Max, 25% Quartile, 75% Quartile)
 * Custom (Custom Summaries)
 
-Summaries can be set at design time itself through the property window of the GridGroupingControl. In the property window, access the [SummaryRows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableDescriptor_SummaryRows) property under [TableDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.TableDescriptor.html) node. It will open the[GridSummaryRowDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridSummaryRowDescriptorCollection.html) collection editor. This editor contains a list of properties such as Title, SummaryColumn, Appearance, etc. which are used to define summaries for the desired columns and to control the appearance of these summaries.
+Summaries can be set at design time itself through the property window of the GridGroupingControl. In the property window, access the [SummaryRows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableDescriptor_SummaryRows) property under [TableDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.TableDescriptor.html) node. It will open the[GridSummaryRowDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridSummaryRowDescriptorCollection.html) collection editor. This editor contains a list of properties such as Title, SummaryColumn, Appearance, etc. which are used to define summaries for the desired columns and to control the appearance of these summaries.
 
 ![Summaries_img1](Summaries_images/Summaries_img1.png)
 
 ## Adding Summaries Programmatically 
-The summaries can be added to the GridGroupingControl by defining the [GridSummaryColumnDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridSummaryColumnDescriptor.html) and [GridSummaryRowsDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridSummaryRowDescriptor.html). In the `GridSummaryColumnDescriptor`, set the summary type, format and appearance of the summaries for the particular field and add it to the `GridSummaryRowDescriptor`. This descriptor is need to be added to the `TableDescriptor.SummaryRows` collection. It will create the summary row at the bottom of the GridGroupingControl to display the summary value.
+The summaries can be added to the GridGroupingControl by defining the [GridSummaryColumnDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridSummaryColumnDescriptor.html) and [GridSummaryRowsDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridSummaryRowDescriptor.html). In the `GridSummaryColumnDescriptor`, set the summary type, format and appearance of the summaries for the particular field and add it to the `GridSummaryRowDescriptor`. This descriptor is need to be added to the `TableDescriptor.SummaryRows` collection. It will create the summary row at the bottom of the GridGroupingControl to display the summary value.
 
 The summary can be added to a particular column using the steps given below,
 
@@ -335,7 +335,7 @@ Me.gridGroupingControl1.TableDescriptor.ChildGroupOptions.ShowSummaries = False
 {% endcapture %}
 {{ codesnippet9 | OrderList_Indent_Level_1 }}
 
-3. Create[SortColumnDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SortColumnDescriptor.html) for the field `ShipCountry`. Change default group order by using [SetGroupSummarySortOrder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SortColumnDescriptor.html#Syncfusion_Grouping_SortColumnDescriptor_SetGroupSummarySortOrder_System_String_System_String_) method with its parameters conveying summary name and property in the summary. Then group the grid against this column.
+3. Create[SortColumnDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SortColumnDescriptor.html) for the field `ShipCountry`. Change default group order by using [SetGroupSummarySortOrder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SortColumnDescriptor.html#Syncfusion_Grouping_SortColumnDescriptor_SetGroupSummarySortOrder_System_String_System_String_) method with its parameters conveying summary name and property in the summary. Then group the grid against this column.
 
 {% capture codesnippet10 %}​
 {% tabs %}
@@ -525,7 +525,7 @@ End Sub
 ![Summaries_img9](Summaries_images/Summaries_img9.png)
 
 ## Custom Summaries 
-The Custom summaries can be easily added to the GridGroupingControl. This can be achieved by deriving the class from the [SummaryBase](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SummaryBase.html) and override the methods of it. After overriding need to set the custom `CreateSummaryMethod` to the [QueryCustomSummary](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html) event of the GridGroupingControl.
+The Custom summaries can be easily added to the GridGroupingControl. This can be achieved by deriving the class from the [SummaryBase](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SummaryBase.html) and override the methods of it. After overriding need to set the custom `CreateSummaryMethod` to the [QueryCustomSummary](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html) event of the GridGroupingControl.
 
 {% tabs %}
 {% highlight c# %}
@@ -684,7 +684,7 @@ summaryDescriptor1.SummaryType = SummaryType.Custom
 Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(New GridSummaryRowDescriptor("Row 1", "Total", summaryDescriptor1))
 {% endhighlight %}
 {% endtabs %}
-Set the custom summary value to the GridGroupingControl using the `QueryCustomSummary` event of the [GridSummaryRowDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridSummaryRowDescriptor.html).
+Set the custom summary value to the GridGroupingControl using the `QueryCustomSummary` event of the [GridSummaryRowDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridSummaryRowDescriptor.html).
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.QueryCustomSummary += new GridQueryCustomSummaryEventHandler(gridGroupingControl1_QueryCustomSummary);

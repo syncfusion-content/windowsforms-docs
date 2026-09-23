@@ -1,15 +1,15 @@
 ---
 layout: post
-title: How to display the scrollbars always, irrespective of the number of items | WindowsForms | Syncfusion
-description: How to display the scrollbars always, irrespective of the number of items
-platform: WindowsForms
+title: How to display the scrollbars always, Regardless of the number of items | WindowsForms | Syncfusion
+description: Learn how to display scrollbars at all times in the FontListBox control, regardless of the number of items available.
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---
 
 
 
-# How to Display the Scrollbars Always, Irrespective of the Number of Items
+# How to Display the Scrollbars Always, Regardless of the Number of Items
 
 The scrollbar can be always made visible, irrespective of the number of items, present in it, by setting ScrollAlwaysVisible property to true. 
 

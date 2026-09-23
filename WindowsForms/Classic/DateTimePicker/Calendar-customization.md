@@ -2,7 +2,7 @@
 layout: post
 title: Calendar Customization in Windows Forms DateTimePickerAdv | Syncfusion
 description: Learn about calendar customization in Syncfusion Windows Forms DateTimePickerAdv control and more details.
-platform: WindowsForms
+platform: windowsforms
 control: DateTimePickerAdv
 documentation: ug
 ---
@@ -148,6 +148,6 @@ Me.dateTimePickerAdv1.CalendarSizeToFit = False
 
 {% seealso %}
 
-[Calendar Value](http://help.syncfusion.com/windowsforms/calendar/calendar-value)
+[Calendar Value](https://help.syncfusion.com/windowsforms/classic/datetimepicker/calendar-value)
 
 {% endseealso %}

@@ -2,7 +2,7 @@
 layout: post
 title: How-to-show-custom-help-text-for-each-TreeViewAdv-node | WindowsForms | Syncfusion
 description: how to show custom help text for each treeviewadv node
-platform: WindowsForms
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---

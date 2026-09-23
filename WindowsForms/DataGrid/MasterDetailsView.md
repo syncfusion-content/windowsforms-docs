@@ -2269,7 +2269,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-You can get the sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Parent_ChildResizing-459909318).
+You can get the sample [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/Parent_ChildResizing-459909318.zip).
 
 N> To display the parent and DetailsViewDataGrid in the same line, set the DetailsViewPadding as Zero for top, bottom, right sides and the expander column width as left, because we have started rendering the grid inside the Expander column itself.
 
@@ -2880,4 +2880,4 @@ Limitations are:
 
 [How to collapse the details view datagrid inside the Groups in DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/9772/how-to-collapse-the-details-view-datagrid-inside-the-groups-in-datagrid)
 
-[How to apply alternate backcolor for the rows in both parent and child grid in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/9045/how-to-apply-alternate-backcolor-for-the-rows-in-both-parent-and-child-grid-in-winforms)
+[How to apply alternate backcolor for the rows in both parent and child grid in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/9045/how-to-apply-alternate-backcolor-for-the-rows-in-both-parent-and-child-grid-in-winforms-datagrid-sfdatagrid)

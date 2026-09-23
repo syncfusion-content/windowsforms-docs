@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
 title: Mode Settings in Windows Forms MaskedTextBox | Syncfusion®
 description: Mode settings in MaskedEditBox configure clipboard behavior, input handling, and numeric data entry modes.
-platform: WindowsForms
+platform: windowsforms
 control: MaskedEditBox
 documentation: ug
 --- 

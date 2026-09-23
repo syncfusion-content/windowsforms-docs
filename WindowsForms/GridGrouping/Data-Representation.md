@@ -2499,7 +2499,7 @@ End Function
 {% endhighlight %}
 {% endtabs %}
 
-N> The 'Like' operator here is implemented similar to the ‘Like’ operator in VB.NET, where “#” character is considered as a character in patterns. Refer http://msdn.microsoft.com/en-us/library/swf8kaxw.aspx for detailed information.
+N> The 'Like' operator here is implemented similar to the ‘Like’ operator in VB.NET, where “#” character is considered as a character in patterns. Refer https://learn.microsoft.com/en-us/dotnet/visual-basic/language-reference/operators/like-operator?redirectedfrom=MSDN for detailed information.
 
 Clearing Filters
 

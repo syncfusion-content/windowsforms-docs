@@ -2,7 +2,7 @@
 layout: post
 title: Styling and Customization in MultiSelectionComboBox | Syncfusion®
 description: Customize styling and appearance in the Windows Forms MultiSelectionComboBox control using visual, layout, and display options.
-platform: WindowsForms
+platform: windowsforms
 control: MultiSelectionComboBox
 documentation: ug
 ---

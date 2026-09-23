@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Host a ComboBoxBase Control in Windows Forms Popup | Syncfusion®
 description: Learn how to host ComboBoxBase controls within PopupControlContainer while maintaining popup state and focus behavior.

@@ -2,7 +2,7 @@
 layout: post
 title: Alignment Settings in Windows Forms NumericUpdown | Syncfusion®
 description: Alignment settings in Windows Forms NumericUpdown enable customizing the alignment of numeric values for improved readability and appearance.
-platform: WindowsForms
+platform: windowsforms
 control: NumericUpdown
 documentation: ug
 ---

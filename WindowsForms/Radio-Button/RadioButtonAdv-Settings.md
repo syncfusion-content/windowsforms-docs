@@ -2,7 +2,7 @@
 layout: post
 title: Settings in Windows Forms Radio Button | Syncfusion®
 description: Settings in Windows Forms Radio Button enable configuring checked states, values, and control behavior for flexible user interactions.
-platform: WindowsForms
+platform: windowsforms
 control: Radio Button
 documentation: ug
 ---

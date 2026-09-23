@@ -1,8 +1,8 @@
 ---
 layout: post
 title: How-to-Set-AutoScrolling-In-TreeViewAdv-During-Dragdrop | WindowsForms | Syncfusion
-description: how to set autoscrolling in treeviewadv during dragdrop
-platform: WindowsForms
+description: Learn how to enable AutoScrolling in a TreeViewAdv control during drag-and-drop operations and improve node navigation.
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---

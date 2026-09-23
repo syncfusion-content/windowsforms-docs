@@ -2,7 +2,7 @@
 layout: post
 title: DateTime Editing in Windows Forms DateTimePicker | Syncfusion
 description: Learn about datetime editing modes in Windows Forms DateTimePicker control for text and mask editing.
-platform: WindowsForms
+platform: windowsforms
 control: SfDateTimeEdit
 documentation: ug
 ---

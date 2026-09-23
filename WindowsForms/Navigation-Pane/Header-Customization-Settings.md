@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
 title: Header Customization in Windows Form Navigation Pane | Syncfusion®
 description: Header customization settings support modifying header height, fonts, colors, and visual appearance of navigation items.
-platform: WindowsForms
+platform: windowsforms
 control: GroupBar
 documentation: ug
 ---

@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
 title: Adding Menu Items via Designer in Windows Forms  Menu | Syncfusion
 description: Learn how to create menus through the designer and add bars, menu items, drop-downs, combo boxes, and toolbar items.
-platform: WindowsForms
+platform: windowsforms
 control: Menus Package 
 documentation: ug
 ---

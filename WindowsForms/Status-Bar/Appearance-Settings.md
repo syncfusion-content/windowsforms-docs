@@ -2,7 +2,7 @@
 layout: post
 title: Appearance Settings in Windows Forms Status Bar | Syncfusion®
 description: Appearance settings in Windows Forms Status Bar customize colors, styles, and visual elements to create consistent user interfaces.
-platform: WindowsForms
+platform: windowsforms
 control: Status Bar
 documentation: ug
 ---
