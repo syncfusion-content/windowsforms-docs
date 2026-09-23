@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Chart Axis Lines in Windows Forms Chart control | Syncfusion
 description: Learn about Axis Lines support in Syncfusion Essential Studio® Windows Forms Chart control and more details.
@@ -13,7 +13,7 @@ documentation: ug
 
 The axis line can be customized using the `LineType` property of the axis. The `LineType` property supports the following customization options: `ForeColor`, `DashStyle`, `Width`, and `BackColor`.
 
-### Forecolor
+### Fore color
 
 The foreground color of the axis line can be set using the [ForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.LineInfo.html#Syncfusion_Windows_Forms_Chart_LineInfo_ForeColor) property.
 

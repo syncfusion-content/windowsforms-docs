@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Axis types in Windows Forms Chart control | Syncfusion
-description: Learn here all about axis types and its features in Syncfusion® Windows Forms Chart control.
+description: Learn about the different axis types available in the Syncfusion® Windows Forms Chart control and how to use them to visualize data effectively
 platform: windowsforms
 control: Chart
 documentation: ug
