@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Selection in Windows Forms Tree Navigator control | Syncfusion
-description: Learn about Selection support in Syncfusion Windows Forms Tree Navigator control, its elements and more details.
+title: Selection in Windows Forms Tree Navigator | Syncfusion®
+description: Selection in Windows Forms Tree Navigator enables selecting and managing tree items, with events to track selection changes and customize navigation behavior.
 platform: WindowsForms
-control: TreeNavigator 
+control: Tree Navigator 
 documentation: ug
 ---
 
@@ -17,7 +17,7 @@ The following code examples allow you to set the SelectedItem.
 
 {% highlight c# %}
 
-//To set the selected item in the Tree navigator.
+//To set the selected item in the Tree Navigator.
 
 this.treeNavigator1.SelectedItem = treeMenuItem3;
 
@@ -25,7 +25,7 @@ this.treeNavigator1.SelectedItem = treeMenuItem3;
 
 {% highlight vb %}
 
-‘To set the selected item in the Tree navigator.
+‘To set the selected item in the Tree Navigator.
 
 Me.treeNavigator1.SelectedItem = treeMenuItem3
 

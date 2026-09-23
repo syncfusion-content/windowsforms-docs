@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Appearance of the Metro Form | Syncfusion®
-description: This section explains about the UI Appearance and styles of MetroForm for Syncfusion® Essential® Windows Forms
+title: Appearance in Windows Forms Metro Form | Syncfusion®
+description: Appearance customization supports border styling, caption bar settings, icon alignment, colors, and rounded corners.
 platform: WindowsForms
 control: MetroForm
 documentation: ug
@@ -77,7 +77,7 @@ Me.CaptionBarHeight = 40
 
 ### Retain the caption bar height on maximized mode
 
-By Default, the height of the caption bar will be reduced when the form is in maximized state. It can be retained same in both normal and maximized state by setting the property [MetroForm.CaptionBarHeightMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MetroForm.html#Syncfusion_Windows_Forms_MetroForm_CaptionBarHeightMode) as `SameAlwaysOnMaximize`.
+By default, the height of the caption bar is reduced when the form is in the maximized state. The same height can be retained in both normal and maximized state by setting the [MetroForm.CaptionBarHeightMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MetroForm.html#Syncfusion_Windows_Forms_MetroForm_CaptionBarHeightMode) property to `SameAlwaysOnMaximize`.
 
 {% tabs %}
 

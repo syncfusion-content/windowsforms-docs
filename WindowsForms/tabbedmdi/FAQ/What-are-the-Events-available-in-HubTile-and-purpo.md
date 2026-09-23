@@ -1,13 +1,13 @@
 ---
 layout: post
-title: What-are-the-Events-available-in-HubTile-and-purpo | WindowsForms | Syncfusion®
-description: what are the events available in hubtile and purpose of the events?
-platform: wpf
+title: Events available in Windows Forms HubTile | Syncfusion®
+description: Learn about the events available in Syncfusion Windows Forms HubTile control such as BeforeTransition and TransitionCompleted.
+platform: windowsforms
 control: TabbedMDIPackage
 documentation: ug
 ---
 
-# What are the events available in HubTile and purpose of the events?
+# Events available in Windows Forms HubTile
 
 The Events available in HubTile are as follows,
 

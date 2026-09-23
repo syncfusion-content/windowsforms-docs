@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Display custom tooltip over Histogram Chart | WinForms | Syncfusion
-description: Learn here how to display custom tooltip over histogram chart columns of Syncfusion® WindowsForms Chart (Sfchart) control and more.
+title: How to display custom tooltips in Windows Forms Chart | Syncfusion®
+description: Learn how to display custom tooltips for columns in a Windows Forms Histogram Chart and customize tooltip content for data points.
 platform: windowsforms
 control: chart
 documentation: ug
 ---
 
-# How to display custom tooltip over Histogram Chart columns
+# How to display custom tooltips in Windows Forms Chart
 
 On Setting ShowTooltip property to true, the series name will be displayed as tooltip on the histogram chart columns by default. You can also set custom tooltip by handling ChartRegionMouseMove event as follows.
 

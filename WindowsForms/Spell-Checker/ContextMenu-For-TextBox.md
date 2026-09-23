@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Context-Menu-For-TextBox | WindowsForms | Syncfusion®
-description: context menu for textbox
+title: ContextMenu for TextBox in Windows Forms SpellCheckerAdv | Syncfusion®
+description: Learn how to add Microsoft Office-style context menu suggestions to the TextBox control in Syncfusion Windows Forms SpellCheckerAdv control.
 platform: windowsforms
 control: SpellCheckerAdv
 documentation: ug
 ---
 
-# Context menu for TextBox
+# ContextMenu for TextBox in WinForms Spell Checker
 
-SpellCheckerAdv offers Microsoft Office application like context menu suggestions and helps user to correct spell errors by choosing correct option from the listed suggestions.
+WinForms Spell Checker offers Microsoft Office application like context menu suggestions and helps user to correct spell errors by choosing correct option from the listed suggestions.
 
 
 The following steps helps to add context menu support in the TextBox control through code.
@@ -18,7 +18,7 @@ The following steps helps to add context menu support in the TextBox control thr
 1) Create a Windows Forms project in Visual Studio.
 
 
-2) Inherit ISpellCheckerAdvEditorTools interface of SpellCheckerAdv and Initialize all the methods and properties in interface.
+2) Inherit ISpellCheckerAdvEditorTools interface of WinForms Spell Checker and Initialize all the methods and properties in interface.
 
 {% tabs %}
 
@@ -183,7 +183,7 @@ Me.spellCheckerAdv1.PerformSpellCheckUsingContextMenu(SpellEditor)
 
 {% endtabs %}
 
- ![](ContextMenu_images/ContextMenu.png)
+ ![Context menu suggestions for spelling corrections](ContextMenu_images/ContextMenu.png)
 
 
 

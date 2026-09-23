@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Windows Forms ComboBoxBase control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms ComboBoxBase control and more details.
+title: About Windows Forms ComboBoxBase Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms ComboBoxBase control and its key features and customization options.
 platform: WindowsForms
 control: ComboBoxBase
 documentation: ug
 ---
 
-#  Windows Forms ComboBoxBase Overview
+# About Syncfusion® Windows Forms ComboBoxBase Control
 
 The flexible ComboBoxBase control is an alternative to the standard combo box control. It separates the edit portion from the drop-down list portion thereby making this architecture powerful and flexible. However, due to this separation, the object model of this control is different from that of the combo box. 
 

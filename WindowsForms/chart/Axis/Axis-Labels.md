@@ -7,45 +7,64 @@ control: Chart
 documentation: ug
 ---
 
-# Axis Labels in Windows Forms Chart
+# Axis labels in Windows Forms Chart
 
 This guide covers the comprehensive customization and configuration of axis labels in the Windows Forms Chart control. Axis labels are the text values displayed along the chart axes that identify data points, categories, or values.
 
-## Customizing Axis Labels
+## Customizing axis labels
 
 By default, the label texts are automatically determined based on the axis data points and the generated intervals. 
 
 If you want to hide the axis label, you can set the [IsVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_IsVisible) property to `false` in chart [PrimaryXAxis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_PrimaryXAxis) and [PrimaryYAxis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_PrimaryYAxis).
 
-### Formatting Numeric and Date Values
+### Formatting numeric and date values
 
 Format your axis labels to display numbers and dates in a specific way, improving readability and clarity. Use the **Format** property for numeric values and **DateTimeFormat** property for date-time values to control how data is presented on the axis.
 
 - [Format](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_Format) - Specifies the format for double values using standard numeric format strings (e.g., "C" for currency, "P" for percentage)
 - [DateTimeFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_DateTimeFormat) - Specifies the format for DateTime values using date/time format strings (e.g., "MMM" for abbreviated month, "yyyy" for year)
 
+The following code snippet and screenshot show an numeric axis configured with `Format`.
+
 {% tabs %}
 {% highlight c# %}
 
-//Settings datetime format to X axis
-this.chartControl1.PrimaryXAxis.DateTimeFormat = "MMM";
-
-//Settings format to Y axis
+// Setting format to Y axis
 this.chartControl1.PrimaryYAxis.ValueType = ChartValueType.Double;
 this.chartControl1.PrimaryYAxis.Format = "C";
 
 {% endhighlight %}
 {% highlight vb %}
 
-'Settings datetime format to X axis
-Me.chartControl1.PrimaryXAxis.DateTimeFormat = "MMM"
-
-'Settings format to Y axis
+'Setting format to Y axis
 Me.chartControl1.PrimaryYAxis.ValueType = ChartValueType.Double
 Me.chartControl1.PrimaryYAxis.Format = "C"
 
 {% endhighlight %}
 {% endtabs %}
+
+![Chart Axes](Axis_Images/NumericAxis_Format.png)
+
+The following code snippet and screenshot show an date time axis configured with `DateTimeFormat`.
+
+{% tabs %}
+{% highlight c# %}
+
+// Setting datetime format to X axis
+this.chartControl1.PrimaryXAxis.ValueType = ChartValueType.DateTime;
+this.chartControl1.PrimaryXAxis.DateTimeFormat = "MMM";
+
+{% endhighlight %}
+{% highlight vb %}
+
+'Setting datetime format to X axis
+Me.chartControl1.PrimaryYAxis.ValueType = ChartValueType.DateTime
+Me.chartControl1.PrimaryXAxis.DateTimeFormat = "MMM"
+
+{% endhighlight %}
+{% endtabs %}
+
+![Chart Axes](Axis_Images/DateTimeAxis_Format.png)
 
 ### Customize label appearance
 
@@ -57,7 +76,7 @@ Enhance the visual presentation of axis labels by customizing their color and fo
 {% tabs %}
 {% highlight c# %}
 
-//Setting ForeColor and Font to axes labels
+// Setting ForeColor and Font to axes labels
 this.chartControl1.PrimaryXAxis.ForeColor = System.Drawing.Color.Navy;
 this.chartControl1.PrimaryXAxis.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
 
@@ -78,7 +97,9 @@ Me.chartControl1.PrimaryYAxis.Font = New System.Drawing.Font("Arial", 9F, System
 {% endhighlight %}
 {% endtabs %}
 
-### Positioning and Rotating Labels
+![Chart Axes](Axis_Images/Axis_Label_Customize.png)
+
+### Positioning and rotating labels
 
 Control how axis labels are aligned and rotated within the chart. Use alignment options to position labels (left, center, or right) and enable label rotation to prevent overlap when space is limited.
 
@@ -89,13 +110,13 @@ Control how axis labels are aligned and rotated within the chart. Use alignment 
 {% tabs %}
 {% highlight c# %}
 
-//Label property settings for X-Axis
+// Label property settings for X-Axis
 this.chartControl1.PrimaryXAxis.LabelAlignment = System.Drawing.StringAlignment.Center;
 this.chartControl1.PrimaryXAxis.LabelRotate = true;
 this.chartControl1.PrimaryXAxis.LabelRotateAngle = 45;
 
-//Label property settings for Y-Axis
-this.chartControl1.PrimaryYAxis.LabelAlignment = System.Drawing.StringAlignment.Far;
+// Label property settings for Y-Axis
+this.chartControl1.PrimaryYAxis.LabelAlignment = System.Drawing.StringAlignment.Center;
 
 {% endhighlight %}
 
@@ -107,36 +128,12 @@ Me.chartControl1.PrimaryXAxis.LabelRotate = True
 Me.chartControl1.PrimaryXAxis.LabelRotateAngle = 45
 
 'Label property settings for Y-Axis
-Me.chartControl1.PrimaryYAxis.LabelAlignment = System.Drawing.StringAlignment.Far
+Me.chartControl1.PrimaryYAxis.LabelAlignment = System.Drawing.StringAlignment.Center
 
 {% endhighlight %}
 {% endtabs %}
 
-### Auto-Scaling Labels
-
-Enable responsive label sizing that automatically adjusts text size when the chart is resized. This ensures labels remain proportional and readable at any chart dimension.
-
-- [ScaleLabels](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_ScaleLabels) - When set to `true`, labels automatically resize to match chart dimensions
-
-{% tabs %}
-{% highlight c# %}
-
-//Enable auto-scaling for labels
-this.chartControl1.PrimaryXAxis.ScaleLabels = true;
-this.chartControl1.PrimaryYAxis.ScaleLabels = true;
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-'Enable auto-scaling for labels
-Me.chartControl1.PrimaryXAxis.ScaleLabels = True
-Me.chartControl1.PrimaryYAxis.ScaleLabels = True
-
-{% endhighlight %}
-{% endtabs %}
-
-![Chart Axes](Chart-Axes_images/Chart-Axes_img14.jpeg)
+![Chart Axes](Axis_Images/Axis_Label_Position.png)
 
 ## Customizing Label Text
 
@@ -220,7 +217,7 @@ Dynamically modify label text before rendering by handling the [FormatLabel](htt
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img15.jpeg)
+![Chart Axes](Axis_Images/Chart-Axes_img15.jpeg)
 
 ### Custom Labels
 
@@ -262,7 +259,7 @@ Me.chartControl1.PrimaryXAxis.Labels.Add(New ChartAxisLabel("Q2 Mid Point", Colo
 
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img16.jpeg)
+![Chart Axes](Axis_Images/Chart-Axes_img16.jpeg)
 
 #### Formatted Text
 
@@ -286,9 +283,6 @@ this.chartControl1.PrimaryXAxis.Labels.Add(new ChartAxisLabel("", Color.Maroon, 
 'Setting drawing mode
 Me.chartControl1.PrimaryXAxis.TickLabelsDrawingMode = ChartAxisTickLabelDrawingMode.UserMode
 
-'Clearing all the default labels
-Me.chartControl1.PrimaryXAxis.Labels.Clear()
-
 'Adding new labels with formatted text
 Me.chartControl1.PrimaryXAxis.Labels.Add(New ChartAxisLabel("", Color.Maroon, New Font("Arial", 9F, System.Drawing.FontStyle.Bold), New DateTime(2007, 2, 15), "", "M", ChartValueType.DateTime))
 
@@ -298,7 +292,7 @@ Me.chartControl1.PrimaryXAxis.Labels.Add(New ChartAxisLabel("", Color.Maroon, Ne
 
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img17.jpeg)
+![Chart Axes](Axis_Images/Chart-Axes_img17.jpeg)
 
 ## Handling Overlapping Labels
 
@@ -331,6 +325,8 @@ Me.chartControl1.PrimaryXAxis.HidePartialLabels = True
 {% endhighlight %}
 {% endtabs %}
 
+![Chart Axes](Axis_Images/Axis_Label_Intersection.png)
+
 ### Edge label drawing
 
 Handle labels at the edges of an axis that might be partially clipped. Use the `EdgeLabelsDrawingMode` property to control how edge labels are positioned and displayed.
@@ -340,7 +336,7 @@ Handle labels at the edges of an axis that might be partially clipped. Use the `
   - `Shift` - Shifts labels to be within interval boundaries
   - `ClippingProtection` - Uses intelligent logic to prevent clipping
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img18.png)
+![Chart Axes](Axis_Images/Chart-Axes_img18.png)
 
 ## Grouping Labels
 
@@ -391,7 +387,7 @@ Me.chartControl1.PrimaryXAxis.DrawTickLabelGrid = True
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img19.jpeg)
+![Chart Axes](Axis_Images/Chart-Axes_img19.jpeg)
 
 ## Rounding Label Values
 
@@ -422,7 +418,7 @@ Me.chartControl1.PrimaryYAxis.RoundingPlaces = 3;
 
 The following screenshot illustrates a chart whose y-axis labels rendered with three decimal places.
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img42.png)
+![Chart Axes](Axis_Images/Chart-Axes_img42.png)
 
 ## Positioning Labels by Index or Position
 
@@ -474,7 +470,7 @@ chart.PrimaryXAxis.CustomLabelsParameter = ChartCustomLabelsParameter.Position;
 
 The following screenshot illustrates a chart whose x-axis labels rendered with CustomLabelsParameter as position.
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img43.png)
+![Chart Axes](Axis_Images/Chart-Axes_img43.png)
 
 ## Positioning Axis Labels
 
@@ -510,7 +506,7 @@ Me.chartControl1.PrimaryXAxis.AxisLabelPlacement = ChartPlacement.Inside
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img37.png)
+![Chart Axes](Axis_Images/Chart-Axes_img37.png)
 
 ### Positioning individual labels dynamically
 
@@ -610,4 +606,4 @@ End Sub
 
 The following screenshot illustrates the customization options for individual label positions on the y-axis to the right or left side based on the y value of the data points. If the export value is positive, the label is rendered to the left side of the axis, and if it is negative, the label is rendered on the right side of the axis.
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img38.png)
+![Chart Axes](Axis_Images/Chart-Axes_img38.png)

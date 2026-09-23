@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-enable--disable-HubTile-rotation-transition | WindowsForms | Syncfusion®
-description:  how to enable / disable hubtile rotation transition in runtime?
-platform: wpf
+title: How to Enable or Disable HubTile Rotation in TabbedMDI | Syncfusion®
+description: Learn how to enable or disable HubTile rotation at runtime in Syncfusion Windows Forms TabbedMDI control, its elements and more details.
+platform: windowsforms
 control: TabbedMDIPackage
 documentation: ug
 ---
 
-#  How to enable/disable HubTile rotation transition in runtime?
+# How to Enable or Disable HubTile Rotation in TabbedMDI
 
 You can achieve it by setting HubTileTileType property as DefaultType, so that rotation transition will be disabled.
 

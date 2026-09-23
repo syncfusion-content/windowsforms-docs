@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to change the appearance of a single header cell | Syncfusion
-description: Learn here all about how to change the appearance of a single header cell of Syncfusion Windows Forms Gridcontrol and more.
+title: How to Style a Header Cell in Windows Forms Grid Control | Syncfusion®
+description: Customize a header cell in Syncfusion® Windows Forms Grid Control by changing its font, text color, orientation, and displayed text and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to change the appearance of a single header cell
+# How to Style a Header Cell in Windows Forms Grid Control
 
 To make changes to individual cells (header cells or otherwise), use an indexer on GridControl. In a GridControl with default headers, column headers are row zero and row headers are column zero. Given below is the code that will change a column header.
 

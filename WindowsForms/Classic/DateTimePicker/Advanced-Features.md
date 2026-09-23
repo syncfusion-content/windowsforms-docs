@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Advanced features in Windows Forms xptoolbar control | Syncfusion
-description: Learn about Advanced features support in Syncfusion Windows Forms DateTimePickerAdv(Classic) control and more details.
+title: Advanced Features in Windows Forms DateTimePickerAdv | Syncfusion
+description: Learn about the advanced features support in Syncfusion Windows Forms DateTimePickerAdv control and more details.
 platform: WindowsForms
 control: DateTimePickerAdv
 documentation: ug
 ---
-# Advanced features in Windows Forms DateTimePickerAdv(Classic)
+
+# Advanced Features in Windows Forms DateTimePickerAdv
 
 This section covers the below topics:
 
@@ -116,7 +117,7 @@ dateTimePickerAdv1.Focus()
 
 5. Run the application. Select a data in the datagrid and DateTimePicker will display the corresponding date value (The DateTimePickerAdv is bound to the datasource using BindableValue property as datasource contains Null value. Selecting in the datagrid will automatically position the datasource to the related row which will update the DateTimePickerAdv with the appropriate data).
 
-![DateTimePicker calendar](Calendar_Images/Overview_img219.jpeg) 
+![Windows Forms DateTimePickerAdv calendar](Calendar_Images/Overview_img219.jpeg) 
 
 A sample which demonstrates this feature is available in the below sample installation path.
 

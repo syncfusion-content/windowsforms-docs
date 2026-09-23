@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Events in Windows Forms Color Picker control | Syncfusion®
-description: Learn about Events support in Syncfusion® Windows Forms Color Picker (ColorPickerUIAdv) control and more details.
+title: Events in Windows Forms ColorPickerUIAdv | Syncfusion®
+description: Learn about Events support in Syncfusion Windows Forms Color Picker (ColorPickerUIAdv) control and more details.
 platform: windowsforms
 control: ColorPickerUIAdv 
 documentation: ug
 ---
-# Events in Windows Forms Color Picker (ColorPickerUIAdv)
+# Events in WinForms Color Picker
 
 ## Picked Event
 
-This event is raised every time a color is picked in the ColorPickerUIAdv control. The event handler receives an argument of type ColorPickedEventArgs. The event property provided by ColorPickedEventArgs argument is as follows.
+This event is raised every time a color is picked in the WinForms Color Picker control. The event handler receives an argument of type ColorPickedEventArgs. The event property provided by ColorPickedEventArgs argument is as follows.
 
 <table>
 <tr>

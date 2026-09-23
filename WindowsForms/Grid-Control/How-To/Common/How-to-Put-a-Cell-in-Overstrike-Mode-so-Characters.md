@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Put-a-Cell-in-Overstrike-Mode-so-Characters | Windows Forms | Syncfusion
-description: how to put a cell in overstrike mode so characters get replaced instead of inserted as you type
+title: Enable Overstrike Mode in Windows Forms Grid Control | Syncfusion®
+description: Enable overstrike mode in Syncfusion® Windows Forms Grid Control to replace existing characters while typing instead of inserting new characters and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to put a cell in overstrike mode so characters get replaced instead of inserted as you type
+# How to Enable Overstrike Mode in Windows Forms Grid Control
 
 This can be achieved by using TextBox.SelectionLength property of GridTextBoxCellRenderer in CurrentCellKeyPress event. The idea to achieve this is by selecting one character when a key is pressed, and also neglecting the Backspace key.
 

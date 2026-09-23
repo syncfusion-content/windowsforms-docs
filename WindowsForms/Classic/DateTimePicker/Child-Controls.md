@@ -1,16 +1,17 @@
 ---
 layout: post
-title: Child Controls in Windows Forms xptoolbar control | Syncfusion
-description: Learn about Child Controls support in Syncfusion Windows Forms DateTimePickerAdv(Classic) control and more details.
+title: Child Controls in Windows Forms DateTimePickerAdv | Syncfusion
+description: Learn about child controls in Syncfusion Windows Forms DateTimePickerAdv control, including UpDown and DropDown buttons.
 platform: WindowsForms
 control: DateTimePicker
 documentation: ug
 ---
-# Child Controls in Windows Forms DateTimePickerAdv(Classic)
+
+# Child Controls in Windows Forms DateTimePickerAdv
 
 DateTimePickerAdv has child controls like DropDown, Updown arrows, checkbox. This section discusses the properties which controls the appearance and behavior of these controls.
 
-![DateTimePickerAdv child controls](DateTimePicker_images/Overview_img183.jpeg)
+![Windows Forms DateTimePickerAdv child controls](DateTimePicker_images/Overview_img183.jpeg)
 
 ## UpDown and DropDown buttons
 
@@ -325,7 +326,7 @@ Me.dateTimePickerAdv5.CustomFormat = "dd - MM - yyyy"
 
 {% endtabs %}
 
-![DateTimePickerAdv formats](DateTimePicker_images/Overview_img196.jpeg) 
+![Windows Forms DateTimePickerAdv formats](DateTimePicker_images/Overview_img196.jpeg) 
 
 
 
@@ -351,7 +352,7 @@ Me.dateTimePickerAdv1.Spacing = 5
 
 {% endtabs %}
 
-![DateTimePickerAdv spacing](DateTimePicker_images/Overview_img197.jpeg) 
+![Windows Forms DateTimePickerAdv spacing](DateTimePicker_images/Overview_img197.jpeg) 
 
 
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Navigation Drawer | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms Navigation Drawer control, its elements, and more.
+title: Getting Started with Windows Forms NavigationDrawer | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms NavigationDrawer control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
 control: NavigationDrawer
 documentation: ug
 ---
-# Getting Started with Windows Forms Navigation Drawer
+# Getting Started with Windows Forms NavigationDrawer
 
 This section explains how to display the items and adjust the image positions using [Windows Forms NavigationDrawer](https://www.syncfusion.com/winforms-ui-controls/navigation-drawer) control.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-align-summary-cells-in-GridGroupingControl | Windows Forms | Syncfusion
-description: how to align summary cells in gridgroupingcontrol
+title: Align Summary Cells in WinForms GridGroupingControl | Syncfusion®
+description: Align summary cells in Syncfusion® WinForms GridGroupingControl, its summary column appearance, horizontal alignment settings, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Align Summary Cells in GridGroupingControl
+# How to Align Summary Cells in WinForms GridGroupingControl
 
 You can align summary cells of GridGroupingControl by making use of Horizontal Alignment property, as shown below.
 

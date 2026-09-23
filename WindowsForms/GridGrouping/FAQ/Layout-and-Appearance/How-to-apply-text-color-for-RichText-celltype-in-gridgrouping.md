@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-apply-text-color-for-RichText-celltype-in-G | Windows Forms | Syncfusion
-description: how to apply text color for richtext celltype in gridgroupingcontrol
+title: Text Color for RichText in WinForms GridGroupingControl | Syncfusion®
+description: Apply text color for RichText CellType in Syncfusion® WinForms GridGroupingControl, its cell styling, RichText formatting, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Apply Text Color for RichText CellType in GridGroupingControl
+# How to Apply Text Color for RichText in WinForms GridGroupingControl
 
 You can use QueryCellStyleInfo event to provide styles for the cells in GridGroupingControl. This provides GridStyleInfo object for a cell on demand. QueryCellStyleInfo is triggered every time a request is made to access style information for a cell. You can do any type of cell formatting with this event. You can apply style settings for a given CellType using TableCellIdentity.TableCellType property on the instances of GridTableCellStyleInfoEventArgs.
 

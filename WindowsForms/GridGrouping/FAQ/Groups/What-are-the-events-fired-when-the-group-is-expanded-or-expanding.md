@@ -1,13 +1,13 @@
 ---
 layout: post
-title: What-are-the-events-fired-when-the-group-is-expand | Windows Forms | Syncfusion
-description: what are the events fired when the group is expanded / expanding?
+title: Group Expanding Event in WinForms GridGroupingControl | Syncfusion®
+description: The events triggered during group expanding in Syncfusion® WinForms GridGroupingControl, its group state changes, records, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# What are the Events Fired when the Group is Expanded or Expanding
+# What Events Trigger in Group Expanding in WinForms GridGroupingControl
 
 Following are the events fired when the group is expanding or expanded.
 

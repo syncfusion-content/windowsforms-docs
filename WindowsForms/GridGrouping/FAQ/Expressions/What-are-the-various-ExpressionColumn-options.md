@@ -1,13 +1,13 @@
 ---
 layout: post
-title: What-are-the-various-ExpressionColumn-options | Windows Forms | Syncfusion
-description: what are the various expressioncolumn options
+title: ExpressionColumn Options in WinForms GridGroupingControl | Syncfusion®
+description: Explore ExpressionColumn options in Syncfusion® Windows Forms GridGroupingControl, its operators, output types, calculated fields, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# What are the Various ExpressionColumn Options
+# How to Use ExpressionColumn Options in WinForms GridGroupingControl
 
 The following code illustrates various expression column options.
 

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Visual Styles in Windows Forms Grid Control | Syncfusion®
-description: Learn about Visual Styles support in Syncfusion® Windows Forms Grid Control, its elements and more details.
+description: The visual styles feature in Grid Control enables customizable themes, skins, and color schemes to create a modern and consistent grid appearance.
 platform: windowsforms
-control: GridControl
+control: Grid Control
 documentation: ug
 ---
 # Visual Styles in Windows Forms Grid Control

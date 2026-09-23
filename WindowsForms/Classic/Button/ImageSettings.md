@@ -1,12 +1,12 @@
----
+﻿---
 layout: post
-title: ImageSettings in Windows Forms xptoolbar control | Syncfusion
-description: Learn about ImageSettings support in Syncfusion Windows Forms ButtonAdv(Classic) control and more details.
+title: Image Settings in Windows Forms ButtonAdv | Syncfusion®
+description: Image settings support background images, image lists, alignment options, image indexes, and text-image positioning.
 platform: WindowsForms
-control: Tools
+control: Tools	1
 documentation: ug
 ---
-# ImageSettings in Windows Forms ButtonAdv(Classic)
+# Image Settings in Windows Forms ButtonAdv(Classic)
 
 ButtonAdv supports two types of images. They are,
 

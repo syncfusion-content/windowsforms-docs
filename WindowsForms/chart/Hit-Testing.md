@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Hit Testing in Windows Forms Chart control | Syncfusion
-description: Learn about Hit Testing support in Syncfusion Essential Studio® Windows Forms Chart control and more details.
+title: Hit Testing in Windows Forms Chart | Syncfusion®
+description: Hit testing in the Windows Forms Chart identifies chart elements at specific coordinates and supports interactive chart analysis.
 platform: windowsforms
 control: Chart
 documentation: ug
@@ -45,7 +45,7 @@ private void chartControl_MouseMove(object sender,System.Windows.Forms.MouseEven
 
 {% highlight vb %}
 
-' ChartControl mouse move event.
+' WinForms Chart mouse move event.
 
 Private Sub chartControl_MouseMove(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs)
 

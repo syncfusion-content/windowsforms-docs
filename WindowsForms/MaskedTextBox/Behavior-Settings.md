@@ -1,12 +1,12 @@
----
+﻿---
 layout: post
-title: Behavior Settings | WindowsForms | Syncfusion®
-description: Learn here about the Syncfusion® Windows Forms MaskedEditBox control behavior settings and its features.
+title: Behavior Settings in Windows Forms MaskedTextBox | Syncfusion®
+description: Behavior settings in MaskedEditBox control prompt characters, padding characters, maximum length, and read-only behavior.
 platform: windowsforms
 control: MaskedEditBox
 documentation: ug
 --- 
-# Behavior Settings in MaskedEditBox
+# Behavior Settings in Windows Form MaskedTextBox (MaskedEditBox)
 
 The behavior settings of the MaskedEditBox control are discussed below.
 

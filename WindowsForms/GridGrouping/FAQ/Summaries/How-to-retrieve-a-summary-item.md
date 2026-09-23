@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-retrieve-a-summary-item | Windows Forms | Syncfusion
-description: how to retrieve a summary item
+title: Retrieve a Summary Item in WinForms GridGroupingControl | Syncfusion®
+description: Retrieve a summary item in Syncfusion® WinForms GridGroupingControl, its summary text, summary descriptors, aggregate values, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Retrieve a Summary Item
+# How to Retrieve a Summary Item in WinForms GridGroupingControl
 
 The following code shows how to retrieve a summary item.
 

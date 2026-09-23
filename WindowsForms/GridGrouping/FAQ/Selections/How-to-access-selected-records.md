@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-access-selected-records | Windows Forms | Syncfusion
-description: how to access selected records
+title: Access Selected Records in WinForms GridGroupingControl | Syncfusion®
+description: Access selected records in Syncfusion® WinForms GridGroupingControl, its selected record collection, record retrieval, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Access Selected Records
+# How to Access Selected Records in WinForms GridGroupingControl
 
 The selected records can be accessed using the code snippet below.
 

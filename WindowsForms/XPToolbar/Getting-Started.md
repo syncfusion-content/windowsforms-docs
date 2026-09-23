@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Windows Forms xptoolbar control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms xptoolbar (XPToolbar) control, its elements, and more.
+title: Getting Started with Windows Forms XPToolBar | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms XPToolBar control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
 control: XPToolBar
 documentation: ug
 ---
 
-# Getting Started with Windows Forms xp toolbar (XPToolbar)
+# Getting Started with Windows Forms XPToolBar
 
 >**Important**
 Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion license key in your Windows Forms application to use our components.

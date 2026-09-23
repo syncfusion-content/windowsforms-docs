@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Floating in Windows Forms Grid Control | Syncfusion®
-description: Learn about Floating support in Syncfusion® Windows Forms Grid Control, its elements and more details.
-platform: WindowsForms
-control: GridControl
+description: Floating support in Grid Control lets content flow across adjacent empty cells, manage floating ranges, prevent flooding, and control evaluation.
+platform: windowsforms
+control: Grid Control
 documentation: ug
 ---
 

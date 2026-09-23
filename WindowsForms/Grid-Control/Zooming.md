@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Zooming in Windows Forms Grid Control | Syncfusion®
-description: Learn about Zooming support in Syncfusion® Essential Studio® Windows Forms Grid Control, its elements and more details.
+description: The zooming feature in Grid Control enables users to zoom the entire grid or individual cells for improved visibility and data viewing.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 
 ---

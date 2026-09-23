@@ -1,13 +1,13 @@
 ---
 layout: post
-title: GridDataBoundGrid | Windows Forms | Syncfusion
-description: Learn about How to Achieve Numeric Column Sorting in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
+title: How to sort numeric column in WinForms GridDataBoundGrid | Syncfusion®
+description: Learn how to implement numeric column sorting in the Syncfusion® Windows Forms GridDataBoundGrid using custom IComparer implementations.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 
-# Grid data bound in Windows Forms GridDataBoundGrid(Classic)
+# How to achieve numeric column sorting in WinForms  GridDataBoundGrid
 
 This page explains How to achieve Numeric Column Sorting in GridDataBoundGrid and more details.
 
@@ -78,7 +78,7 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-#### Sample Link
+## Sample Link
 
 To view a sample on this, see [Numeric Column Sorting](http://www.syncfusion.com/downloads/Support/DirectTrac/72524/GridDataBoundGridCustomSorting1509447642-1313190486.zip).
 
