@@ -7,7 +7,7 @@ control: DockingManager
 documentation: ug
 ---
 
-# How to check floating in Windows Forms Docking Manager
+# How to check floating in WinForms Docking Control
 
 This can be achieved by calling `IsFloating` method.
 

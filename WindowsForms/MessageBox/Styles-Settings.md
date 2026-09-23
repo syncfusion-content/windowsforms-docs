@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Theming in Windows Forms MessageBoxAdv | Syncfusion®
-description: Theming in Windows Forms MessageBoxAdv enables applying visual styles and appearance customization options to create consistent and modern dialog experiences.
+title: Theming in Windows Forms MessageBox | Syncfusion®
+description: Theming in Windows Forms MessageBox enables applying visual styles and appearance customization options to create consistent and modern dialog experiences.
 platform: WindowsForms
-control: MessageBoxAdv
+control: MessageBox
 documentation: ug
 ---
 
-# Theming in Windows Forms MessageBoxAdv
+# Theming in Windows Forms MessageBox
 
-This section explains the visual styles and customization support in MessageBoxAdv.
+This section explains the visual styles and customization support in MessageBox.
 
 ## Visual Styles
 
-MessageBoxAdv supports different visual styles for its appearance. Some of the available VisualStyles are as follows:
+MessageBox supports different visual styles for its appearance. Some of the available VisualStyles are as follows:
 
 * Default
 * Office2007
@@ -50,7 +50,7 @@ MessageBoxAdv.Show(Me,"Save changes?", "File Modified", MessageBoxButtons.YesNo,
 
 ### Office2007
 
-Office2007 Style MessageBox is available in Tools Windows. You can replace the .NET MessageBox with new MessageBoxAdv that supports standard color schemes and custom color schemes in Office 2007 style, for consistent look and feel. Custom Icons support is also included in MessageBoxAdv. To display the Message Box, call MessageBoxAdv.Show method.
+Office2007 Style MessageBox is available in Tools Windows. You can replace the .NET MessageBox with new MessageBox that supports standard color schemes and custom color schemes in Office 2007 style, for consistent look and feel. Custom Icons support is also included in MessageBox. To display the Message Box, call MessageBoxAdv.Show method.
 
 This option helps to set the following various color schemes:
 
@@ -83,7 +83,7 @@ MessageBoxAdv.Show(Me,"Save changes?", "File Modified", MessageBoxButtons.YesNo,
 
 {% endtabs %}
 
-![office2007 in Windows Forms MessageBox](MessageBoxAdv_images/MessageBoxAdv_img3.jpg) 
+![Office2007 theme in Windows Forms MessageBox](MessageBoxAdv_images/MessageBoxAdv_img3.jpg) 
  
 #### Blue
 
@@ -109,7 +109,7 @@ MessageBoxAdv.Show(Me,"Save changes?", "File Modified", MessageBoxButtons.YesNo,
 
 {% endtabs %}
 
-![ Blue Color theme in Office2007 theme](MessageBoxAdv_images/MessageBoxAdv_img4.jpg) 
+![Blue Color theme in Office2007 theme](MessageBoxAdv_images/MessageBoxAdv_img4.jpg) 
 
 #### Silver
 
@@ -329,12 +329,12 @@ MessageBoxAdv.Show(Me,"Save changes?", "File Modified", MessageBoxButtons.YesNo,
 
 #### Customization
 
-In MessageBoxAdv, [MetroColorTable](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html#Syncfusion_Windows_Forms_MessageBoxAdv_MetroColorTable) is implemented for color customization of buttons and caption while applying Metro style in MessageBoxAdv. MessageBoxAdv can be customized by using the following properties:
+In MessageBox, [MetroColorTable](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html#Syncfusion_Windows_Forms_MessageBoxAdv_MetroColorTable) is implemented for color customization of buttons and caption while applying Metro style in MessageBox. MessageBox can be customized by using the following properties:
 
 <table>
 <tr>
 <th>
-MetroStyleColorTable property</th><th>
+MetroStyleColorTable Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -486,7 +486,7 @@ MessageBoxAdv.Show(Me,"Save changes?", "File Modified", MessageBoxButtons.YesNo,
 
 {% endtabs %}
 
-![DarkGrey theme in Office2013](MessageBoxAdv_images/MessageBoxAdv_img11.jpg) 
+![DarkGrey theme in Office2013 for WinForms MessageBox](MessageBoxAdv_images/MessageBoxAdv_img11.jpg) 
 
 #### LightGray
 
@@ -516,7 +516,7 @@ MessageBoxAdv.Show(Me,"Save changes?", "File Modified", MessageBoxButtons.YesNo,
 
 {% endtabs %}
  
-![LightGray theme in Office2013](MessageBoxAdv_images/MessageBoxAdv_img12.jpg) 
+![LightGray theme in Office2013 for WinForms MessageBox](MessageBoxAdv_images/MessageBoxAdv_img12.jpg) 
 
 #### White theme
 
@@ -546,7 +546,7 @@ MessageBoxAdv.Show(Me,"Save changes?", "File Modified", MessageBoxButtons.YesNo,
 
 {% endtabs %}
 
-![white theme in Office2013](MessageBoxAdv_images/MessageBoxAdv_img13.jpg) 
+![White theme in Office2013 for WinForms MessageBox](MessageBoxAdv_images/MessageBoxAdv_img13.jpg) 
 
 #### Office2016
 
@@ -584,7 +584,7 @@ MessageBoxAdv.Show(Me,"Save changes?", "File Modified", MessageBoxButtons.YesNo,
 
 {% endtabs %}
 
-![Colorful theme in Office2016](MessageBoxAdv_images/MessageBoxAdv_img14.jpg) 
+![Colorful theme in Office2016 for WinForms MessageBox](MessageBoxAdv_images/MessageBoxAdv_img14.jpg) 
 
 #### White
 
@@ -614,7 +614,7 @@ MessageBoxAdv.Show(Me,"Save changes?", "File Modified", MessageBoxButtons.YesNo,
 
 {% endtabs %}
  
-![White theme in Office2016](MessageBoxAdv_images/MessageBoxAdv_img16.jpg) 
+![White theme in Office2016 for WinForms MessageBox](MessageBoxAdv_images/MessageBoxAdv_img16.jpg) 
 
 #### DarkGray
 
@@ -644,4 +644,4 @@ MessageBoxAdv.Show(Me,"Save changes?", "File Modified", MessageBoxButtons.YesNo,
 
 {% endtabs %}
 
-![DarkGray theme in Office2016](MessageBoxAdv_images/MessageBoxAdv_img15.jpg) 
+![DarkGray theme in Office2016 for WinForms MessageBox](MessageBoxAdv_images/MessageBoxAdv_img15.jpg) 

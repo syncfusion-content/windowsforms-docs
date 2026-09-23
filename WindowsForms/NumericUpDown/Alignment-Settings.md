@@ -1,24 +1,24 @@
 ---
 layout: post
-title: Alignment Settings in Windows Forms NumericUpDownExt | Syncfusion®
-description: Alignment settings in Windows Forms NumericUpDownExt enable customizing the alignment of numeric values for improved readability and appearance.
+title: Alignment Settings in Windows Forms NumericUpdown | Syncfusion®
+description: Alignment settings in Windows Forms NumericUpdown enable customizing the alignment of numeric values for improved readability and appearance.
 platform: WindowsForms
-control: NumericUpDownExt
+control: NumericUpdown
 documentation: ug
 ---
 
-# Alignment Settings in Windows Forms NumericUpDownExt
+# Alignment Settings in Windows Forms NumericUpdown
 
-This section discusses the Alignment settings of the NumericUpDownExt control.
+This section discusses the Alignment settings of the NumericUpdown control.
 
 ## Text alignment
 
-The text of the NumericUpDownExt control can be aligned using the below given property.
+The text of the NumericUpdown control can be aligned using the below given property.
 
 <table>
 <tr>
 <th>
-NumericUpDownExt Property</th><th>
+NumericUpdown Property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -49,7 +49,7 @@ The alignment of the up and down buttons can be set using the property given bel
 <table>
 <tr>
 <th>
-NumericUpDownExt Property</th><th>
+NumericUpdown Property</th><th>
 Description</th></tr>
 <tr>
 <td>

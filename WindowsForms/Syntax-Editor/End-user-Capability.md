@@ -1,13 +1,13 @@
 ---
 layout: post
-title: End User Capability in Windows Forms SyntaxEditor | Syncfusion®
-description: End user capabilities in Windows Forms SyntaxEditor include key bindings, find and replace, go-to-line navigation, font settings, and zoom operations.
+title: End User Capability in Windows Forms Syntax Editor | Syncfusion®
+description: End user capabilities in Windows Forms Syntax Editor include key bindings, find and replace, go-to-line navigation, font settings, and zoom operations.
 platform: WindowsForms
 control: Syntax Editor
 documentation: ug
 ---
 
-# End User Capability in Windows Forms SyntaxEditor
+# End User Capability in Windows Forms Syntax Editor
 
 Supports various built-in dialog windows alike Microsoft Visual Studio text editor.
 
@@ -22,7 +22,7 @@ This can be done in the designer using the Keys Binding dialog as illustrated in
    3. Press the desired key or key combination.
    4. Now, click the Assign button to assign this keystroke combination as the shortcut for that particular standard command. Click OK.
 
-The [KeyBinder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_KeyBinder) property is used to get the key binder. The [KeyBindingProcessor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_KeyBindingProcessor) property is used to get or set the key binding processor. The Editor Keys Binding dialog is invoked by using the [ShowKeysBindingEditor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowKeysBindingEditor) function in the EditControl.
+The [KeyBinder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_KeyBinder) property is used to get the key binder. The [KeyBindingProcessor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_KeyBindingProcessor) property is used to get or set the key binding processor. The Editor Keys Binding dialog is invoked by using the [ShowKeysBindingEditor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowKeysBindingEditor) function in the `EditControl`.
 
 ![Displays Key binding dialog](End-user-Capability_images/End-user-Capability_img1.png)
 
@@ -53,11 +53,11 @@ Me.editControl1.ShowFindDialog()
 
 ![Displays Find dialog](End-user-Capability_images/End-user-Capability_img2.png)
 
-The EditControl now enables you to create a new Find Dialog by inheriting the Find Dialog by changing the properties. It triggers the events of the buttons such as Find, Mark All, and Close. You can also easily localize the captions of the controls in the Find Dialog.
+The Syntax Editor now enables you to create a new Find Dialog by inheriting the Find Dialog by changing the properties. It triggers the events of the buttons such as Find, Mark All, and Close. You can also easily localize the captions of the controls in the Find Dialog.
 
 **Enhanced Find Dialog**
 
-The EditControl Find Dialog is enhanced with an alert message box when find reaches the starting point of the search again. In search option, select Current Selection, click OK in the alert message box, then the search area is selected again automatically as in VS editor.
+The Syntax Editor Find Dialog is enhanced with an alert message box when find reaches the starting point of the search again. In search option, select Current Selection, click OK in the alert message box, then the search area is selected again automatically as in VS editor.
 
 ![Displays Find dialog with alert message box](End-user-Capability_images/End-user-Capability_img3.jpeg)
 
@@ -373,7 +373,7 @@ Me.editControl1.ReplaceAll(" Drag-and-drop", "Drag and drop")
 
 The [ReplaceHistory](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ReplaceHistory) property is used to add or remove items from the replace history in the Replace dialog box. Similarly, the [ReplaceSearchHistory](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ReplaceSearchHistory) property is used to add or remove items from the find history in the Replace dialog box.
 
-N> Refer to the following sample link that demonstrates the Find and Replace functionalities of EditControl:
+N> Refer to the following sample link that demonstrates the Find and Replace functionalities of Syntax Editor:
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Interactive Features\Find and Replace
 
 ## GoTo line
@@ -454,11 +454,11 @@ Supports customization of fonts through the configuration file and `FormatsCusto
 
 {% endhighlight %} 
 
-The EditControl supports font customization at runtime through the use of [frmFormatsConfig](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.Dialogs.frmFormatsConfig.html) dialog box which consists of three smaller controls like ControlFormatSettings, ControlFormatsList, and ControlLanguageSelector.
+The Syntax Editor supports font customization at runtime through the use of [frmFormatsConfig](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.Dialogs.frmFormatsConfig.html) dialog box which consists of three smaller controls like ControlFormatSettings, ControlFormatsList, and ControlLanguageSelector.
 
 * `ControlFormatSettings`: Contains the actual controls to customize all the rendering settings of the selected format including font settings. 
 * `ControlFormatsList`: Consists of the list of currently existing formats in the configuration file. It also provides support to create new formats or delete the existing ones. 
-* `ControlLanguageSelector`: Contains a ComboBox that has the list of configuration languages supported by the EditControl. The list gets updated when a new configuration language is added or an existing one is removed. 
+* `ControlLanguageSelector`: Contains a ComboBox that has the list of configuration languages supported by the Syntax Editor. The list gets updated when a new configuration language is added or an existing one is removed. 
 
 {% tabs %}
 
@@ -499,16 +499,16 @@ this.editControl1.ShowFormatsCustomizationDialog();
 
 ![Display Font configuration dialog to customize the font settings](End-user-Capability_images/End-user-Capability_img7.jpg)
 
-N> Refer to the following sample link that demonstrates the customization of font in EditControl:
+N> Refer to the following sample link that demonstrates the customization of font in Syntax Editor:
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Interactive Features\Font Customization
 
 ## Zoom in and Zoom out 
 
-This feature allows users to change the zoom level of SyntaxEditor, which brings either more or fewer line items into the view. By zooming in, users can get a magnified view of the line items, and by zooming out, users can bring more line items into the view.
+This feature allows users to change the zoom level of Syntax Editor, which brings either more or fewer line items into the view. By zooming in, users can get a magnified view of the line items, and by zooming out, users can bring more line items into the view.
 
 ### Enable/Disable zoom in and out functionalities
 
-The [AllowZoom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_AllowZoom) property is used to enable the zoom in and out supports of SyntaxEditor. The default value of the property is false. After the [AllowZoom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_AllowZoom) property has been enabled, the zooming operations can be done through mouse wheel, touch interactions, and programmatic. 
+The [AllowZoom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_AllowZoom) property is used to enable the zoom in and out supports of Syntax Editor. The default value of the property is false. After the [AllowZoom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_AllowZoom) property has been enabled, the zooming operations can be done through mouse wheel, touch interactions, and programmatic. 
 
 ### Zooming operations using MouseWheel and Modifier key
 
@@ -527,7 +527,7 @@ Using touch interactions, zoom in and out operations can be performed. For every
 ZoomFactorChanged and ZoomFactorChanging events are available in Syntax Editor to notify the value changes of ZoomFactor.
 
 #### ZoomFactorChanged Event
-[ZoomFactorChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) event occurs when the ZoomFactor value of SyntaxEditor is changed. The event arguments contain the old and new values of ZoomFactor.
+[ZoomFactorChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) event occurs when the ZoomFactor value of Syntax Editor is changed. The event arguments contain the old and new values of ZoomFactor.
 
 {% tabs %}
 {% highlight C# %}
@@ -554,7 +554,7 @@ Console.WriteLine("Zoom Factor has been changed")
 
 #### ZoomFactorChanging Event
 
-[ZoomFactorChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) event occurs before the ZoomFactor value of SyntaxEditor is changed. The value changing of ZoomFactor is handled by setting e.Cancel to true. 
+[ZoomFactorChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) event occurs before the ZoomFactor value of Syntax Editor is changed. The value changing of ZoomFactor is handled by setting e.Cancel to true. 
 
 {% tabs %}
 {% highlight C# %}

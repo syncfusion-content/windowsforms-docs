@@ -46,7 +46,7 @@ You can create the Windows Forms application with the [DigitalGauge](https://hel
 
 ### Creating the project
 
-Create a new Windows Forms project in Visual Studio to display the DigitalGauge with basic functionalities.
+Create a new Windows Forms project in Visual Studio to display the WinForms Digital Gauge with basic functionalities.
 
 ## Add control via designer
 

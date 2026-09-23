@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Filtering in Windows Forms SfComboBox | Syncfusion®
-description: Filtering in Windows Forms SfComboBox enables users to display items based on specific criteria, helping organize, search, and manage data efficiently.
+title: Filtering in Windows Forms ComboBox | Syncfusion®
+description: Filtering in Windows Forms ComboBox enables users to display items based on specific criteria, helping organize, search, and manage data efficiently.
 platform: windowsforms
-control: SfComboBox
+control: ComboBox
 documentation: ug
 ---
 
-# Filtering in Windows Forms SfComboBox
+# Filtering in Windows Forms ComboBox
 
-The [Windows Forms ComboBox](https://www.syncfusion.com/winforms-ui-controls/combobox) (SfComboBox) support you to filter the items by setting the [Filter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_Filter) property of `DropDownListView` to a predicate that will be called for every data item to determine whether the item is visible or not.
+The ComboBox support you to filter the items by setting the [Filter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_Filter) property of `DropDownListView` to a predicate that will be called for every data item to determine whether the item is visible or not.
 
 N> The [RefreshFilter()](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_RefreshFilter) method should be called after the filter predicate set.
 
@@ -197,6 +197,6 @@ N> The [RefreshFilter()](https://help.syncfusion.com/cr/windowsforms/Syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
-![Filtering_img1](Filtering_images/Filtering_img1.png)
+![Filtering support in Windows Forms ComboBox](Filtering_images/Filtering_img1.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/How-to-filter-the-dropdown-items-in-Winforms-SfComboBox) 

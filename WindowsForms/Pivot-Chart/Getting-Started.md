@@ -351,14 +351,14 @@ Finally, run the application to obtain the following output.
 
 {% highlight c# %}
 
-//Updates the PivotChart series values whenever the data gets changed in the underlying data source.
+//Updates the WinForms Pivot Chart series values whenever the data gets changed in the underlying data source.
 this.pivotChart1.EnableUpdating = true;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-'Updates the PivotChart series values whenever the data gets changed in the underlying data source.
+'Updates the WinForms Pivot Chart series values whenever the data gets changed in the underlying data source.
 Me.pivotChart1.EnableUpdating = True
 
 {% endhighlight %}

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance in Windows Forms SyntaxEditor | Syncfusion®
-description: Appearance in Windows Forms SyntaxEditor enables customizing colors, text styles, split views, scrollbars, and other visual elements.
+title: Appearance in Windows Forms Syntax Editor | Syncfusion®
+description: Appearance in Windows Forms Syntax Editor enables customizing colors, text styles, split views, scrollbars, and other visual elements.
 platform: WindowsForms
-control: SyntaxEditor
+control: Syntax Editor
 documentation: ug
 ---
 
-# Appearance in Windows Forms SyntaxEditor
+# Appearance in Windows Forms Syntax Editor
 
 Provides exclusive support to customize the background color, text, margin, split views, scrollbar, etc. User can change the background color of the control. It also supports gradient effects by using the [BackgroundColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_BackgroundColor) property.
 
@@ -30,13 +30,13 @@ Me.editControl1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Dr
 
 ![Gradient background syntax editor](Appearance_images/Appearance_img1.jpg)
 
-The customization features of the [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) are discussed in the following topics.
+The customization features of the Syntax Editor are discussed in the following topics.
 
 ## Split views
 
 Provides built-in support for horizontal and vertical splitters which display a single document in several views with horizontal and vertical orientations. It allows users to work in different areas of a document at the same time. 
 
-A maximum of four split views are supported. The [SplitFourQuadrants](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SplitFourQuadrants) function is used to split the EditControl into four equal parts. However, you can also limit the user to perform either a horizontal or vertical split, only if you wish to support two views instead of four.
+A maximum of four split views are supported. The [SplitFourQuadrants](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SplitFourQuadrants) function is used to split the Syntax Editor into four equal parts. However, you can also limit the user to perform either a horizontal or vertical split, only if you wish to support two views instead of four.
 
 {% tabs %}
 
@@ -59,7 +59,7 @@ Me.editControl1.SplitFourQuadrants()
 
 ### Orientation
 
-Split view can be oriented in both horizontal and vertical directions by using the [SplitHorizontally](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SplitHorizontally) and [SplitVertically](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SplitVertically) functions of the EditControl.
+Split view can be oriented in both horizontal and vertical directions by using the [SplitHorizontally](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SplitHorizontally) and [SplitVertically](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SplitVertically) functions of the Syntax Editor.
 
 {% tabs %}
 
@@ -102,11 +102,11 @@ Me.editControl1.SplitVertically()
 
 ## Customize split views
 
-In the EditControl, user can customize the splitter background color and disables the splitter. 
+In the Syntax Editor, user can customize the splitter background color and disables the splitter. 
 
 ### Show horizontal splitter
 
-The horizontal splitters can be enabled or disabled by setting the [ShowHorizontalSplitters](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowHorizontalSplitters) property in the EditControl.
+The horizontal splitters can be enabled or disabled by setting the [ShowHorizontalSplitters](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowHorizontalSplitters) property in the `EditControl`.
 
 {% tabs %}
 
@@ -131,7 +131,7 @@ Me.editControl1.ShowHorizontalSplitters = False
 
 ### Show vertical splitter
 
-The vertical splitters can be enabled or disabled by setting the [ShowVerticalSplitters](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowVerticalSplitters) property in the EditControl.
+The vertical splitters can be enabled or disabled by setting the [ShowVerticalSplitters](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowVerticalSplitters) property in the `EditControl`.
 
 {% tabs %}
 
@@ -156,7 +156,7 @@ Me.editControl1.ShowVerticalSplitters = False
 
 ### Splitter background color 
 
-The [SplitterBackgroundBrush](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SplitterBackgroundBrush) property helps to customize the background color of horizontal or vertical splitter in the EditControl.
+The [SplitterBackgroundBrush](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SplitterBackgroundBrush) property helps to customize the background color of horizontal or vertical splitter in the Syntax Editor.
 
 {% tabs %}
 
@@ -183,7 +183,7 @@ Me.editControl1.SplitterBackgroundBrush = Brushes.Red
 
 ### Splitter position
 
-In the EditControl, horizontal and vertical splitters positions can be set by using the following properties.
+In the Syntax Editor, horizontal and vertical splitters positions can be set by using the following properties.
 
 <table>
 <tr>
@@ -229,12 +229,12 @@ Me.editControl1.BottomVerticalSplitterPosition = 260
 
 {% endtabs %}
 
-N> Refer to the following sample link that demonstrates the `SplitView` functionalities of EditControl:
+N> Refer to the following sample link that demonstrates the `SplitView` functionalities of Syntax Editor:
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Styles\Split Views
 
 ## Single line mode
 
-Supports single line mode that renders like regular TextBox. The EditControl can be operated in a simple text box with syntax highlighting, editing, clipboard operations, etc. by setting the [SingleLineMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SingleLineMode) property to `true`. The default value is `false`.
+Supports single line mode that renders like regular TextBox. The Syntax Editor can be operated in a simple text box with syntax highlighting, editing, clipboard operations, etc. by setting the [SingleLineMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SingleLineMode) property to `true`. The default value is `false`.
 
 {% tabs %}
 
@@ -253,11 +253,11 @@ Me.editControl1.SingleLineMode = True
 
 {% endtabs %}
 
-N> The SingleLineMode is intended to use when the EditControl contains small amount of text data in it. Using it in a scenario where the EditControl has huge file loaded into it, may lead to poor performance.
+N> The SingleLineMode is intended to use when the Syntax Editor contains small amount of text data in it. Using it in a scenario where the Syntax Editor has huge file loaded into it, may lead to poor performance.
 
 ![Single line syntax editor](Appearance_images/Appearance_img4.jpg)
 
-N> Refer to the following sample link that demonstrates the `SingleLineMode` behavior of EditControl:
+N> Refer to the following sample link that demonstrates the `SingleLineMode` behavior of Syntax Editor:
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Styles\Single Line Mode
 
 ## Right-to-left (RTL) support 
@@ -283,7 +283,7 @@ Me.editControl1.RenderRightToLeft = True
 
 **Use case scenarios**
 
-With RTL support, you can use the EditControl to render the content in Right-To-left layout for languages such as Arabic.
+With RTL support, you can use the Syntax Editor to render the content in Right-To-left layout for languages such as Arabic.
 
 ![Right to left syntax editor](Appearance_images/Appearance_img5.jpg)
 
@@ -293,7 +293,7 @@ Supports rendering the content in Right-To-Left (RTL) layout by pressing <kbd>RS
 
 ## Customize text appearance
 
-In the EditControl, you can customize the text color and its border. 
+In the Syntax Editor, you can customize the text color and its border. 
 
 ### Text color
 
@@ -303,7 +303,7 @@ The [SetTextColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Window
 
 {% highlight C# %}
 
-// Set the color of the text for the EditControl.
+// Set the color of the text for the Syntax Editor.
 
 this.editControl1.SetTextColor(new Point(1, 1), new Point(8, 8), Color.Orange);
 
@@ -312,7 +312,7 @@ this.editControl1.SetTextColor(new Point(1, 1), new Point(8, 8), Color.Orange);
 
 {% highlight VB %}
 
-' Set the color of the text for the EditControl.
+' Set the color of the text for the Syntax Editor.
 
 Me.editControl1.SetTextColor(New Point(1, 1), New Point(8, 8), Color.Orange)
 
@@ -324,7 +324,7 @@ Me.editControl1.SetTextColor(New Point(1, 1), New Point(8, 8), Color.Orange)
 
 ### Text border
 
-The [SetTextBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SetTextBorder_Syncfusion_Windows_Forms_Edit_Utils_CoordinatePoint_Syncfusion_Windows_Forms_Edit_Utils_CoordinatePoint_System_Drawing_Color_Syncfusion_Windows_Forms_Edit_Enums_FrameBorderStyle_Syncfusion_Windows_Forms_Edit_Enums_BorderWeight_) function in the EditControl helps to set the border. Simultaneously, you can remove border of the text by using the [RemoveTextBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_RemoveTextBorder_Syncfusion_Windows_Forms_Edit_Utils_CoordinatePoint_Syncfusion_Windows_Forms_Edit_Utils_CoordinatePoint_) function. The following table explains regarding the parameter values used in these functions.
+The [SetTextBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SetTextBorder_Syncfusion_Windows_Forms_Edit_Utils_CoordinatePoint_Syncfusion_Windows_Forms_Edit_Utils_CoordinatePoint_System_Drawing_Color_Syncfusion_Windows_Forms_Edit_Enums_FrameBorderStyle_Syncfusion_Windows_Forms_Edit_Enums_BorderWeight_) function in the `EditControl` helps to set the border. Simultaneously, you can remove border of the text by using the [RemoveTextBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_RemoveTextBorder_Syncfusion_Windows_Forms_Edit_Utils_CoordinatePoint_Syncfusion_Windows_Forms_Edit_Utils_CoordinatePoint_) function. The following table explains regarding the parameter values used in these functions.
 
 <table>
 <tr>
@@ -366,7 +366,7 @@ Me.editControl1.SetTextBorder(New Point(1, 1), New Point(3, 3), Color.Red, Frame
 
 ## User margin
 
-Displays additional information regarding the contents in the EditControl. Information can also be displayed in line-by-line basis. 
+Displays additional information regarding the contents in the Syntax Editor. Information can also be displayed in line-by-line basis. 
 
 ### User margin visibility
 
@@ -433,7 +433,7 @@ Me.editControl1.UserMarginPlacement = Syncfusion.Windows.Forms.Edit.Enums.Margin
 
 {% endtabs %}
 
-The following properties can be used to set the background color, text color, and border color of the user margin in the EditControl.
+The following properties can be used to set the background color, text color, and border color of the user margin in the Syntax Editor.
 
 <table>
 <tr>
@@ -481,7 +481,7 @@ Me.editControl1.UserMarginTextColor = Color.Green
 
 #### How to add custom text in user margin
 
-It is possible to set custom text in the user margin in line-by-line basis by handling the [DrawUserMarginText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) event of the EditControl. Moreover, it is also possible to customize the font settings for the text of the user margin.
+It is possible to set custom text in the user margin in line-by-line basis by handling the `DrawUserMarginText` event of the Syntax Editor. Moreover, it is also possible to customize the font settings for the text of the user margin.
 
 {% tabs %}
 
@@ -541,7 +541,7 @@ End Sub
 
 ## Selection margin
 
-Selection margin is a thin vertical strip along the left side of the EditControl to select the content of the entire line in the EditControl by simply clicking on the corresponding selection margin area of the line. 
+Selection margin is a thin vertical strip along the left side of the Syntax Editor to select the content of the entire line in the Syntax Editor by simply clicking on the corresponding selection margin area of the line. 
 
 ### Selection margin visibility
 
@@ -622,7 +622,7 @@ Provides an extensive support of indicator margin for the purpose of displaying 
 
 ### Indicator margin visibility
 
-Indicator margin can be enabled or disabled by using the [ShowIndicatorMargin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowIndicatorMargin) property. The default value is `true`. To hide the indicator margin, turn on its value to `false`. The [MarkerAreaWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_MarkerAreaWidth) property in the EditControl sets width of the marker area.
+Indicator margin can be enabled or disabled by using the [ShowIndicatorMargin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowIndicatorMargin) property. The default value is `true`. To hide the indicator margin, turn on its value to `false`. The [MarkerAreaWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_MarkerAreaWidth) property in the `EditControl` sets width of the marker area.
 
 {% tabs %}
 
@@ -657,7 +657,7 @@ Me.editControl1.MarkerAreaWidth = 50
 
 ### Customize the appearance of indicator margin
 
-The [IndicatorMarginBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_IndicatorMarginBackColor) property helps to customize the background color of indicator margin in the EditControl.
+The [IndicatorMarginBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_IndicatorMarginBackColor) property helps to customize the background color of indicator margin in the Syntax Editor.
 
 {% tabs %}
 
@@ -680,7 +680,7 @@ Me.editControl1.IndicatorMarginBackColor = Color.Red
 
 ## Selection color customization
 
-The EditControl provides an option to change the back color of the selected range of text. The [SetBackgroundColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SetBackgroundColor_Syncfusion_Windows_Forms_Edit_Utils_CoordinatePoint_Syncfusion_Windows_Forms_Edit_Utils_CoordinatePoint_System_Drawing_Color_) function in the EditControl is used to set the background color for a specified range of text.
+The Syntax Editor provides an option to change the back color of the selected range of text. The [SetBackgroundColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SetBackgroundColor_Syncfusion_Windows_Forms_Edit_Utils_CoordinatePoint_Syncfusion_Windows_Forms_Edit_Utils_CoordinatePoint_System_Drawing_Color_) function in the Syntax Editor is used to set the background color for a specified range of text.
 
 {% tabs %}
 
@@ -701,16 +701,16 @@ Me.editControl1.SetBackgroundColor(New Point(1, 1), New Point(9, 9), Color.Alice
 
 ### Set up background for individual line or selected block of text
 
-The EditControl also allows setting custom background color for individual lines as well as for selected block of text. You can set any desired background to a particular line or block of selection as explained as follows:
+The Syntax Editor also allows setting custom background color for individual lines as well as for selected block of text. You can set any desired background to a particular line or block of selection as explained as follows:
 
-* Register a back color format with the EditControl by using its [RegisterBackColorFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_RegisterBackColorFormat_System_Drawing_Color_System_Drawing_Color_) function with appropriate values for BackgroundColor, ForegroundColor, and HatchStyle parameters.
+* Register a back color format with the Syntax Editor by using its [RegisterBackColorFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_RegisterBackColorFormat_System_Drawing_Color_System_Drawing_Color_) function with appropriate values for BackgroundColor, ForegroundColor, and HatchStyle parameters.
 * Set the background color to the entire line or the selected text by using the [SetLineBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SetLineBackColor_System_Int32_System_Boolean_Syncfusion_Windows_Forms_Edit_Interfaces_IBackgroundFormat_) or [SetSelectionBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SetSelectionBackColor_Syncfusion_Windows_Forms_Edit_Interfaces_IBackgroundFormat_) functions respectively.
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Register a backcolor format with EditControl.
+// Register a backcolor format with Syntax Editor.
 
 IBackgroundFormat format = this.editControl1.RegisterBackColorFormat(Color.Aquamarine, Color.Beige, System.Drawing.Drawing2D.HatchStyle.Cross, true);
 
@@ -727,7 +727,7 @@ this.editControl1.SetSelectionBackColor(format);
 
 {% highlight VB %}
 
-' Register a backcolor format with EditControl.
+' Register a backcolor format with Syntax Editor.
 
 Dim IBackgroundFormat As format = Me.editControl1.RegisterBackColorFormat(Color.Aquamarine, Color.Beige, System.Drawing.Drawing2D.HatchStyle.Cross, True)
 
@@ -747,7 +747,7 @@ Me.editControl1.SetSelectionBackColor(format)
 
 #### Remove applied background for individual line or selected block of text
 
-By using the [RemoveLineBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_RemoveLineBackColor_System_Int32_) and [RemoveSelectionBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_RemoveSelectionBackColor) functions in the EditControl, you can remove the background color for individual lines or selected blocks of text. 
+By using the [RemoveLineBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_RemoveLineBackColor_System_Int32_) and [RemoveSelectionBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_RemoveSelectionBackColor) functions in the `EditControl`, you can remove the background color for individual lines or selected blocks of text. 
 
 {% tabs %}
 
@@ -903,7 +903,7 @@ Me.editControl1.StatusBarSettings.GripVisibility = Syncfusion.Windows.Forms.Edit
 
 #### Visual styles
 
-The EditControl status bar supports different visual styles for its appearance. Some of the available visual styles are:
+The Syntax Editor status bar supports different visual styles for its appearance. Some of the available visual styles are:
 
 * Default
 * Metro
@@ -1204,7 +1204,7 @@ Me.editControl1.StatusBarSettings.Offcie2010ColorScheme = Office2010Theme.Manage
 
 ![Office2010 customized theme status bar for syntax editor](Appearance_images/Appearance_img22.png)
 
-N> Refer to the following sample link that demonstrates the `StatusBar` functionalities of EditControl:
+N> Refer to the following sample link that demonstrates the `StatusBar` functionalities of Syntax Editor:
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Interactive Features\StatusBar
 
 ## ScrollBar 
@@ -1268,7 +1268,7 @@ Me.editControl1.ScrollbarTopButtons.AddRange(New System.Windows.Forms.Control() 
 
 ### Customize the scrollbar visibility
 
-By using the [AlwaysShowScrollers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_AlwaysShowScrollers) property in the EditControl, you can enable or disable the scroll bar.
+By using the [AlwaysShowScrollers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_AlwaysShowScrollers) property in the `EditControl`, you can enable or disable the scroll bar.
 
 {% tabs %}
 
@@ -1289,13 +1289,13 @@ Me.editControl1.AlwaysShowScrollers = False
 
 ### Types of scrolling mode
 
-Various types of scrolling modes in the EditControl are as follows:
+Various types of scrolling modes in the Syntax Editor are as follows:
 
 * Immediate: Scrolls the control to the new value immediately.
 * Deferred: Scrolls the control when thumb track is completed.
 * Pixel: Scrolls line by line.
 
-The [VScrollMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_VScrollMode) property helps to set various types of scrolling modes in the EditControl by using the [ScrollMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.ScrollMode.html) enumerator.
+The [VScrollMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_VScrollMode) property helps to set various types of scrolling modes in the Syntax Editor by using the [ScrollMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.ScrollMode.html) enumerator.
 
 {% tabs %}
 
@@ -1320,7 +1320,7 @@ Me.editControl1.VScrollMode = Syncfusion.Windows.Forms.Edit.ScrollMode.Pixel
 
 ### Customize the appearance of scrollbar
 
-Provides Office 2007 appearance to scroll bars by setting the [ScrollVisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ScrollVisualStyle) property to Office2007. It supports all the three Office 2007 color schemes (Black, Blue, and Silver) by using the [ScrollColorScheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ScrollColorScheme) property. Custom colors can also be applied to the scroll bars of the EditControl by setting the ScrollColorScheme property to Managed.
+Provides Office 2007 appearance to scroll bars by setting the [ScrollVisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ScrollVisualStyle) property to Office2007. It supports all the three Office 2007 color schemes (Black, Blue, and Silver) by using the [ScrollColorScheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ScrollColorScheme) property. Custom colors can also be applied to the scroll bars of the Syntax Editor by setting the ScrollColorScheme property to Managed.
 
 {% tabs %}
 
@@ -1355,13 +1355,13 @@ Syncfusion.Windows.Forms.Office2007Colors.ApplyManagedColors(Me, Color.Green)
 
 {% endtabs %}
 
-The following illustration shows the EditControl with custom color (green) set for the scroll bars.
+The following illustration shows the Syntax Editor with custom color (green) set for the scroll bars.
 
 ![Horizontal and vertical scrollbar for syntax editor](Appearance_images/Appearance_img23.jpg)
 
 ## Append code snippets
 
-Supports an advanced feature of VS 2005 like Code Snippets. It is also used to load or save VS.NET 2005-compatible XML snippets. Code Snippets are inserted into the EditControl by the following procedure:
+Supports an advanced feature of VS 2005 like Code Snippets. It is also used to load or save VS.NET 2005-compatible XML snippets. Code Snippets are inserted into the Syntax Editor by the following procedure:
 
 1. Type the snippet name. For example, "do".
 2. Press the CTRL + ' combination.
@@ -1371,10 +1371,10 @@ Supports an advanced feature of VS 2005 like Code Snippets. It is also used to l
 
 The code snippets allows you to input the data to the highlighted fields.
 
-Code Snippets can also be inserted into the EditControl by using the static `Extract` function of the `CodeSnippetsExtractor` class implemented in the demo sample. Extract function takes the following two parameters:
+Code Snippets can also be inserted into the Syntax Editor by using the static `Extract` function of the `CodeSnippetsExtractor` class implemented in the demo sample. Extract function takes the following two parameters:
 
 1. Path of the folder containing the code snippets.
-2. Instance of the EditControl into which the extracted code snippet should be inserted.
+2. Instance of the `EditControl` into which the extracted code snippet should be inserted.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -1393,7 +1393,7 @@ CodeSnippetsExtractor.Extract(Path, editControl1)
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }} 
 
-Code Snippets are added to the current language of the EditControl by using the following function.
+Code Snippets are added to the current language of the `EditControl` by using the following function.
 
 <table>
 <tr>
@@ -1424,7 +1424,7 @@ Me.editControl1.AddCodeSnippet(String title, ArrayList literals, String code)
 
 {% endtabs %}
 
-The code snippets can also be contained in containers and displayed in the pop-up of the snippets. The static `Extract` function of the `CodeSnippetsExtractor` class is used to extract and fill the container object. The container object can be added to the [SnippetsContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.Interfaces.IConfigLanguage.html#Syncfusion_Windows_Forms_Edit_Interfaces_IConfigLanguage_SnippetsContainer) of the EditControl by using the [AddContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.Utils.CodeSnippets.CodeSnippetsContainer.html#Syncfusion_Windows_Forms_Edit_Utils_CodeSnippets_CodeSnippetsContainer_AddContainer_Syncfusion_Windows_Forms_Edit_Utils_CodeSnippets_CodeSnippetsContainer_) function. 
+The code snippets can also be contained in containers and displayed in the pop-up of the snippets. The static `Extract` function of the `CodeSnippetsExtractor` class is used to extract and fill the container object. The container object can be added to the [SnippetsContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.Interfaces.IConfigLanguage.html#Syncfusion_Windows_Forms_Edit_Interfaces_IConfigLanguage_SnippetsContainer) of the `EditControl` by using the [AddContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.Utils.CodeSnippets.CodeSnippetsContainer.html#Syncfusion_Windows_Forms_Edit_Utils_CodeSnippets_CodeSnippetsContainer_AddContainer_Syncfusion_Windows_Forms_Edit_Utils_CodeSnippets_CodeSnippetsContainer_) function. 
 
 {% tabs %}
 
@@ -1534,7 +1534,7 @@ Me.editControl1.ShowCodeSnippets()
 
 **Border settings**
 
-Border can be set for the active code snippets by using the [DrawCodeSnippetBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_DrawCodeSnippetBorder) property in the EditControl. You can set the size of CodeSnippet pop-up window by using the [CodeSnipptSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_CodeSnipptSize) property in the EditControl.
+Border can be set for the active code snippets by using the [DrawCodeSnippetBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_DrawCodeSnippetBorder) property in the `EditControl`. You can set the size of CodeSnippet pop-up window by using the [CodeSnipptSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_CodeSnipptSize) property in the `EditControl`.
 
 {% tabs %}
 
@@ -1553,7 +1553,7 @@ Me.editControl1.DrawCodeSnippetBorder = True
 
 {% endtabs %}
 
-N> Refer to the following sample link that demonstrates the `CodeSnippets` functionalities of EditControl:
+N> Refer to the following sample link that demonstrates the `CodeSnippets` functionalities of Syntax Editor:
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Intellisense Functions\Code Snippets
 
 ## Customize cursor appearance
@@ -1583,7 +1583,7 @@ Me.editControl1.Cursor = Me.currentCursor
 
 ## Suspend and resume painting
 
-Painting of the EditControl can be suspended by using the [Suspend](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SuspendPainting) function call. Painting can be resumed by using the [Resume](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ResumePainting) function call. Suspend and Resume functions internally call the `Interop` and `LockWindowUpdate` functions to suspend and resume painting of the EditControl.
+Painting of the Syntax Editor can be suspended by using the [Suspend](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SuspendPainting) function call. Painting can be resumed by using the [Resume](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ResumePainting) function call. Suspend and Resume functions internally call the `Interop` and `LockWindowUpdate` functions to suspend and resume painting of the Syntax Editor.
 
 {% tabs %}
 

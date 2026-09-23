@@ -6,9 +6,9 @@ platform: windowsforms
 control: DomainUpdownExt 
 documentation: ug
 ---
-# DomainUpdownExt Events in Windows Forms DomainUpdownExt
+# Events in WinForms DomainUpDownExt
 
-This section describes the events of DomainUpDownExt control.
+This section describes the events of WinForms DomainUpDownExt control.
 
 * [ThemeChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DomainUpDownExt.html)
 * [SpinOrientationChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DomainUpDownExt.html)

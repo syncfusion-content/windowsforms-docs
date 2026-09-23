@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Selection in Windows Forms SfListView | Syncfusion®
-description: Selection in Windows Forms SfListView supports UI and programmatic item selection, selected item management, hot tracking, and appearance customization.
+title: Selection in Windows Forms ListView | Syncfusion®
+description: Selection in Windows Forms ListView supports UI and programmatic item selection, selected item management, hot tracking, and appearance customization.
 platform: windowsforms
-control: SfListView
+control: ListView
 documentation: ug
 ---
 
-# Selection in Windows Forms SfListView
-This section explains how to perform selection and its related operations in the [Windows Forms ListView](https://www.syncfusion.com/winforms-ui-controls/listview) (SfListView).
+# Selection in Windows Forms ListView
+This section explains how to perform selection and its related operations in the Windows Forms ListView.
 
 ## UI Selection
 The control has different selection modes to perform selection operations as listed as follows:
 
 *	None: Disables selection.
-*	One: Selects single item. When clicking the selected item, selection will not be cleared. This is the default value of the [SfListView.SelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectionMode).
+*	One: Selects single item. When clicking the selected item, selection will not be cleared. This is the default value of the [SelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectionMode).
 *	MultiSimple: Selects more than one item. Selection is not cleared when selecting more than one item. When clicking the selected item, the selection gets cleared.
 *	MultiExtended: Selects more than one item by dragging the items. You can also select multiple items by holding the Ctrl key.
 	
@@ -31,9 +31,9 @@ sfListView1.SelectionMode = SelectionMode.MultiSimple
 ![Multiple selection in ListView control for windows forms](Selection_images/Selection_img1.png)
  
 ## Programmatic Selection
-When the [SfListView.SelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectionMode) is other than None, the item or items in the SfListView can be selected by using the [SfListView.SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedItem) or [SfListView.SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedIndex) property or by adding items to the [SfListView.SelectedItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedItems) property based on the [SfListView.SelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectionMode).
+When the [SelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectionMode) is other than None, the item or items in the ListView can be selected by using the [SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedItem) or [SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedIndex) property or by adding items to the [SelectedItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedItems) property based on the [SelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectionMode).
 
-When the selection mode is `One`, programmatically selects an item by setting the underlying object to the [SfListView.SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedItem) or [SfListView.SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedIndex) property.
+When the selection mode is `One`, programmatically selects an item by setting the underlying object to the [SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedItem) or [SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedIndex) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -84,7 +84,7 @@ Next item
 
 ### Get selected items
 
-The Windows Forms ListView (SfListView) gets all the selected items through the [SfListView.SelectedItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedItems) property and gets single item by using the [SfListView.SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedItem) or [SfListView.SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedIndex) property.                              
+The Windows Forms ListView gets all the selected items through the [SelectedItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedItems) property and gets single item by using the [SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedItem) or [SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedIndex) property.                              
 
 ### Clear selected items
 
@@ -100,7 +100,7 @@ sfListView1.SelectedItems.Clear()
 {% endtabs %}
 
 ### Getting row index
-Windows Forms ListView (SfListView) allows you to get item row index based on provided point. You can use the [GetRowIndexAtPoint](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_GetRowIndexAtPoint_System_Drawing_Point_) method to get a row index based on the bounds value.
+The Windows Forms ListView allows you to get item row index based on provided point. You can use the [GetRowIndexAtPoint](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_GetRowIndexAtPoint_System_Drawing_Point_) method to get a row index based on the bounds value.
 
 {% tabs %}
 {% highlight c# %}
@@ -112,7 +112,7 @@ Dim rowIndex As Integer = sfListView.GetRowIndexAtPoint(point)
 {% endtabs %}
 
 ## Hot tracking
-SfListView supports hover selection on item when mouse pointer moves over an item by setting [SfListView.HotTracking](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_HotTracking) as true.
+ListView supports hover selection on item when mouse pointer moves over an item by setting [HotTracking](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_HotTracking) as true.
 
 {% tabs %}
 {% highlight c# %}
@@ -126,7 +126,7 @@ sfListView1.HotTracking = true
 ![Enable mouse over effect for items in ListView control for WPF](Selection_images/Selection_img5.png)
  
 ## Appearance
-The SfListView allows you to customize the appearance of the selected items or mouse hover items through [SfListView.Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_Style) property.
+The ListView allows you to customize the appearance of the selected items or mouse hover items through [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_Style) property.
 
 ### Change the background and foreground colors for selection
 The selection background and foreground color can be changed by using the `SfListView.Style.SelectionStyle` property.
@@ -227,7 +227,7 @@ End Sub
 {% endtabs %}
 
 ## Disables selection on a particular item
-The selection of a particular set of items can be disabled based on the [SfListView.SelectedItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedItems) of the underlying collections.
+The selection of a particular set of items can be disabled based on the [SelectedItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedItems) of the underlying collections.
 
 {% tabs %}
 {% highlight c# %}

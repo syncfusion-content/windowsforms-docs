@@ -8,9 +8,9 @@ documentation: ug
 ---
 
 
-# How to customize tab in Windows Forms Docking Manager
+# How to customize tab in WinForms Docking Control
 
-In DockingManager, by default the width of the AutoHidden Tab can be adjusted for notification purpose upon mouse hovered on it.
+In WinForms Docking Control, by default the width of the AutoHidden Tab can be adjusted for notification purpose upon mouse hovered on it.
 
 This can be achieved by using the `EnableAutoAdjustCaption` property.
 

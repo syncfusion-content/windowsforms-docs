@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events in Windows Forms SfAIAssistView | Syncfusion
-description: Learn about event support in the Syncfusion Windows Forms SfAIAssistView control and how to handle events.
+title: Events in Windows Forms AI AssistView | Syncfusion
+description: Learn about event support in the Syncfusion Windows Forms AI AssistView control and how to handle events.
 platform: windowsforms
 control: SfAIAssistView
 documentation: ug
 ---
 
-# Events in Windows Forms SfAIAssistView
+# Events in Windows Forms AI AssistView
 
 The following events are supported by the [SfAIAssistView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.SfAIAssistView.html) control:
 
@@ -37,7 +37,7 @@ using Syncfusion.WinForms.AIAssistView;
 
 [PromptRequest](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.SfAIAssistView.html#Syncfusion_WinForms_AIAssistView_SfAIAssistView_PromptRequest) event notifies users when a prompt is submitted in the control. It can be used to validate user input before processing or trigger custom actions based on the prompt content. The input message and its details are passed through the [PromptRequestEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.PromptRequestEventArgs.html). This argument provides the following details:
 
-- `Message`: Represents the input message value of the AIAssistView (typically a `TextMessage`).
+- `Message`: Represents the input message value of the AI AssistView (typically a `TextMessage`).
 - `Handled`: Boolean value indicating whether the input message in the Messages collection has been handled by the event. Set this to `true` to prevent the default handling of the message.
 
 {% tabs %}

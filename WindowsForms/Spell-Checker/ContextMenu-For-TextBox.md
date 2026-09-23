@@ -7,9 +7,9 @@ control: SpellCheckerAdv
 documentation: ug
 ---
 
-# ContextMenu for TextBox in Windows Forms SpellCheckerAdv
+# ContextMenu for TextBox in WinForms Spell Checker
 
-SpellCheckerAdv offers Microsoft Office application like context menu suggestions and helps user to correct spell errors by choosing correct option from the listed suggestions.
+WinForms Spell Checker offers Microsoft Office application like context menu suggestions and helps user to correct spell errors by choosing correct option from the listed suggestions.
 
 
 The following steps helps to add context menu support in the TextBox control through code.
@@ -18,7 +18,7 @@ The following steps helps to add context menu support in the TextBox control thr
 1) Create a Windows Forms project in Visual Studio.
 
 
-2) Inherit ISpellCheckerAdvEditorTools interface of SpellCheckerAdv and Initialize all the methods and properties in interface.
+2) Inherit ISpellCheckerAdvEditorTools interface of WinForms Spell Checker and Initialize all the methods and properties in interface.
 
 {% tabs %}
 

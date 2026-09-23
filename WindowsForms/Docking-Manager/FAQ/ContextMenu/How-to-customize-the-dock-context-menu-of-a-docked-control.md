@@ -7,9 +7,9 @@ control: DockingManager
 documentation: ug
 ---
 
-# How to edit dock menu in Windows Forms Docking Manager
+# How to edit dock menu in WinForms Docking Control
 
-ContextMenu of the Docked controls can be customized using DockContextMenu event in DockingManager.The DockContextMenu event is fired when the mouse is right-clicked over a docking window's caption.
+ContextMenu of the Docked controls can be customized using DockContextMenu event in WinForms Docking Control.The DockContextMenu event is fired when the mouse is right-clicked over a docking window's caption.
 
 The DockContextMenuEventArgs allows us to,
 
