@@ -1,7 +1,6 @@
 ---
 layout: post
-title: Nodes or Shapes in Windows Forms Diagram | Syncfusion®
-description: Create, customize, and manage nodes and shapes in the Syncfusion® Windows Forms Diagram control with editing, styling, and interaction support.
+title: Nodes or Shapes in Windows Forms Diagram | Syncfusion®appliesto: UI Component Suite, Diagram SDKdescription: Create, customize, and manage nodes and shapes in the Syncfusion® Windows Forms Diagram control with editing, styling, and interaction support.
 platform: windowsforms
 control: Diagram
 documentation: ug

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Search in Windows Forms Data Grid | Syncfusion®
+appliesto: UI Component Suite, Grid SDK
 description: Search in Data Grid enables efficient record searching, result navigation, and customizable search operations through the built-in SearchController.
 platform: windowsforms
 control: Data Grid

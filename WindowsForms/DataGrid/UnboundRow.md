@@ -1,7 +1,6 @@
 ---
 layout: post
-title: Unbound Rows in Windows Forms Data Grid | Syncfusion®
-description: Unbound Rows in Data Grid display custom rows for calculations, summaries, and additional information independent of the data source.
+title: Unbound Rows in Windows Forms Data Grid | Syncfusion®appliesto: UI Component Suite, Grid SDKdescription: Unbound Rows in Data Grid display custom rows for calculations, summaries, and additional information independent of the data source.
 platform: windowsforms
 control: Data Grid
 documentation: ug

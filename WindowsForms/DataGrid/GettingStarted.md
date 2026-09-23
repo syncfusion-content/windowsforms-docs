@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Getting Started with Windows Forms Data Grid | Syncfusion®
+appliesto: UI Component Suite, Grid SDK
 canonical_url: "https://www.syncfusion.com/winforms-ui-controls/datagrid"
 description: Learn how to get started with the Syncfusion® Windows Forms Data Grid control. Explore setup, features, examples, and customization options.
 platform: windowsforms

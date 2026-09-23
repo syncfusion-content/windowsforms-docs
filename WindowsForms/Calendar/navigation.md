@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Navigation in Windows Forms Calendar | Syncfusion
+appliesto: UI Component Suite, Scheduler SDK
 description: Learn how to navigate between months and years in Windows Forms Calendar control with keyboard and mouse support.
 platform: WindowsForms
 control: SfCalendar

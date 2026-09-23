@@ -1,7 +1,6 @@
 ---
 layout: post
-title: About Syncfusion® Windows Forms Pivot Chart Control | Syncfusion®
-description: Learn about the introduction of Syncfusion Essential Studio® Windows Forms Pivot Chart control, its features, capabilities, and more details.
+title: About Syncfusion® Windows Forms Pivot Chart Control | Syncfusion®appliesto: UI Component Suite, Chart SDKdescription: Learn about the introduction of Syncfusion Essential Studio® Windows Forms Pivot Chart control, its features, capabilities, and more details.
 platform: windowsforms
 control: PivotChart
 documentation: ug

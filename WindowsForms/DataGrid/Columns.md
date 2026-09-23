@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Columns in Windows Forms Data Grid | Syncfusion®
+appliesto: UI Component Suite, Grid SDK
 description: Columns in Data Grid support auto-generation, customization, resizing, drag-and-drop, stacked headers, and sizing for flexible data display.
 platform: windowsforms
 control: Data Grid

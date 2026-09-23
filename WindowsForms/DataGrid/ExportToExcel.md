@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Export To Excel in Windows Forms Data Grid | Syncfusion®
+appliesto: UI Component Suite, Grid SDK
 description: Export To Excel in Data Grid supports exporting records with customization options, formatting, and styles for efficient spreadsheet generation.
 platform: windowsforms
 control: Data Grid

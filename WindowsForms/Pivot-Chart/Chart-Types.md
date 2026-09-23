@@ -1,7 +1,6 @@
 ---
 layout: post
-title: Types in Windows Forms Pivot Chart | Syncfusion®
-description: Types in the Windows Forms Pivot Chart provide multiple visualization options for presenting and analyzing summarized data effectively.
+title: Types in Windows Forms Pivot Chart | Syncfusion®appliesto: UI Component Suite, Chart SDKdescription: Types in the Windows Forms Pivot Chart provide multiple visualization options for presenting and analyzing summarized data effectively.
 platform: windowsforms
 control: PivotChart
 documentation: ug

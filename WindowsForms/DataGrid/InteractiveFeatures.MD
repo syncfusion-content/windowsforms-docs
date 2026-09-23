@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Interactive Features in Windows Forms Data Grid | Syncfusion®
+appliesto: UI Component Suite, Grid SDK
 description: Interactive features in Data Grid provide context menus, column chooser, tooltips, and customization options for enhanced user interaction.
 platform: windowsforms
 control: Data Grid

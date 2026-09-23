@@ -5,6 +5,7 @@ description: Series in the Windows Forms Chart represent data points and support
 platform: windowsforms
 control: Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Series in Windows Forms Chart

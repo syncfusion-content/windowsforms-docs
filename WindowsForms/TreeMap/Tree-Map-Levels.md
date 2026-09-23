@@ -1,7 +1,6 @@
 ---
 layout: post
-title: Levels in Windows Forms TreeMap | Syncfusion®
-description: Levels in the Windows Forms TreeMap organize hierarchical data into multiple levels, enabling structured visualization and data analysis.
+title: Levels in Windows Forms TreeMap | Syncfusion®appliesto: UI Component Suite, Chart SDKdescription: Levels in the Windows Forms TreeMap organize hierarchical data into multiple levels, enabling structured visualization and data analysis.
 platform: windowsforms
 control: TreeMap 
 documentation: ug

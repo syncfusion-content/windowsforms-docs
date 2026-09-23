@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Summaries in Windows Forms Data Grid | Syncfusion®
+appliesto: UI Component Suite, Grid SDK
 description: Summaries in Data Grid support table and group summaries, custom calculations, and data aggregation for meaningful insights and analysis.
 platform: windowsforms
 control: Data Grid

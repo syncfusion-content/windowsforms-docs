@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Color Mapping in Windows Forms TreeMap | Syncfusion®
+appliesto: UI Component Suite, Chart SDK
 description: Color mapping in the Windows Forms TreeMap enables visualization of data values using colors, supporting customized and meaningful data representation.
 platform: windowsforms
 control: TreeMap 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Summaries in Windows Forms Pivot Grid | Syncfusion®
+appliesto: UI Component Suite, Grid SDK
 description: Define summaries in Syncfusion® Windows Forms Pivot Grid control using built-in summary types or custom logic with SummaryBase for calculation values.
 platform: windowsforms
 control: Pivot Grid

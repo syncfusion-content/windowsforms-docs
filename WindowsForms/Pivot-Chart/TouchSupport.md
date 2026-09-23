@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Touch Support in Windows Forms Pivot Chart | Syncfusion®
+appliesto: UI Component Suite, Chart SDK
 description: Touch support in the Windows Forms Pivot Chart enables touch-based interaction for navigating, exploring, and analyzing chart data.
 platform: windowsforms
 control: PivotChart

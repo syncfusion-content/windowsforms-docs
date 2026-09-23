@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Appearance in Windows Forms Smith Chart | Syncfusion®
+appliesto: UI Component Suite, Chart SDK
 description: Appearance in the Windows Forms Smith Chart enables customization of chart visuals, colors, series styles, and display settings.
 platform: windowsforms
 control: SfSmithChart

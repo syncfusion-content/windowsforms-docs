@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Date Range in Windows Forms DateTimePicker | Syncfusion
+appliesto: UI Component Suite, Scheduler SDK
 description: Learn how to restrict date and time selection within a specified range in Windows Forms DateTimePicker.
 platform: WindowsForms
 control: SfDateTimeEdit

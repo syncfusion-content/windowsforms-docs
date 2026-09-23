@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Pivot Calculations in Windows Forms Pivot Grid | Syncfusion®
+appliesto: UI Component Suite, Grid SDK
 description: Define pivot calculations in Syncfusion® Windows Forms Pivot Grid control using PivotComputationInfo with formatting, formulas, types, and synchronization.
 platform: windowsforms
 control: Pivot Grid

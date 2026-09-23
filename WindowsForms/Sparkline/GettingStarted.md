@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Getting Started with Windows Forms Sparkline | Syncfusion®
+appliesto: UI Component Suite, Chart SDK
 description: Learn how to get started with the Syncfusion® Windows Forms Sparkline control. Explore setup, data binding, features, and customization options.
 platform: windowsforms
 control: Sparkline

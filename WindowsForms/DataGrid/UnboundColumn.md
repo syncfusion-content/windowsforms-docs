@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Unbound Column in Windows Forms Data Grid | Syncfusion®
+appliesto: UI Component Suite, Grid SDK
 description: Unbound Column in Data Grid displays calculated or custom values that are not directly bound to the underlying data source.
 platform: windowsforms
 control: Data Grid

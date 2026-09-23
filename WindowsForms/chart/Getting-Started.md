@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Getting Started with Windows Forms Chart | Syncfusion®
+appliesto: UI Component Suite, Chart SDK
 description: Learn how to get started with the Syncfusion® Windows Forms Chart control. Explore setup, configuration, chart types, and customization options.
 platform: windowsforms
 control: Chart

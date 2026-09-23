@@ -1,7 +1,6 @@
 ---
 layout: post
-title: Bubble Markers in Windows Forms Maps | Syncfusion®
-description: Bubble markers in the Windows Forms Maps visualize bound data values and support customization of size, color, and appearance.
+title: Bubble Markers in Windows Forms Maps | Syncfusion®appliesto: UI Component Suite, Chart SDKdescription: Bubble markers in the Windows Forms Maps visualize bound data values and support customization of size, color, and appearance.
 platform: windowsforms
 control: Maps
 documentation: ug

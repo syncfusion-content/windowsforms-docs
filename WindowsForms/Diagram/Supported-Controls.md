@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Supported Controls in Windows Forms Diagram | Syncfusion®
+appliesto: UI Component Suite, Diagram SDK
 description: Explore supported controls in the Syncfusion® Windows Forms Diagram control, including Overview, Property Editor, Document Explorer, and Symbol Palette.
 platform: windowsforms
 control: Diagram

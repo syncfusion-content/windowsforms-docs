@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Editing in Windows Forms Data Grid | Syncfusion®
+appliesto: UI Component Suite, Grid SDK
 description: Editing in Data Grid supports cell and record editing, customizable edit modes, event-based validation, and programmatic data updates.
 platform: windowsforms
 control: Data Grid

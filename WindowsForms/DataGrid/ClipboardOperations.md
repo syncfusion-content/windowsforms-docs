@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Clipboard Operations in Windows Forms Data Grid | Syncfusion®
+appliesto: UI Component Suite, Grid SDK
 description: Clipboard Operations in Data Grid enables copy, cut, and paste actions with configurable settings, events, and custom clipboard behavior.
 platform: windowsforms
 control: Data Grid

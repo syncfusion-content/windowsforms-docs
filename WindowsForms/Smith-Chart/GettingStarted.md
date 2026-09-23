@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Getting Started with Windows Forms Smith Chart | Syncfusion®
+appliesto: UI Component Suite, Chart SDK
 description: Learn how to get started with the Syncfusion® Windows Forms Smith Chart control. Explore setup, configuration, features, and customization options.
 platform: windowsforms
 control: SfSmithChart

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Orientation in Windows Forms Bullet Graph | Syncfusion®
+appliesto: UI Component Suite, Chart SDK
 description: Orientation in the Windows Forms Bullet Graph controls the layout direction, supporting horizontal and vertical rendering for different visualization needs.
 platform: windowsforms
 control: Bullet Graph

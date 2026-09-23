@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Rows in Windows Forms Data Grid | Syncfusion®
+appliesto: UI Component Suite, Grid SDK
 description: Rows in Data Grid support row headers, header customization, frozen rows and columns, row styling, and record management features.
 platform: windowsforms
 control: Data Grid

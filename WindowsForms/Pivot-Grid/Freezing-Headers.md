@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Freezing Headers in Windows Forms Pivot Grid | Syncfusion®
+appliesto: UI Component Suite, Grid SDK
 description: Keep row and column headers visible in Syncfusion® Windows Forms Pivot Grid control by enabling frozen headers for easier navigation in large datasets.
 platform: windowsforms
 control: Pivot Grid

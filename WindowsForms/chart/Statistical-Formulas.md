@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Statistical Formulas in Windows Forms Chart | Syncfusion®
+appliesto: UI Component Suite, Chart SDK
 description: Statistical formulas in the Windows Forms Chart provide calculations for trend analysis, forecasting, and statistical data visualization.
 platform: windowsforms
 control: Chart

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Design Time Features in Windows Forms Chart | Syncfusion®
+appliesto: UI Component Suite, Chart SDK
 description: Design time features in the Windows Forms Chart enable chart configuration, customization, and data setup through visual design tools.
 platform: windowsforms
 control: Chart

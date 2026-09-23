@@ -6,6 +6,7 @@ description: Learn about the overview of Syncfusion® Essential Studio Windows F
 platform: windowsforms
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # About Syncfusion® Windows Forms Data Grid Control

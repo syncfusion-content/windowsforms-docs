@@ -1,6 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® Windows Forms Sparkline Control | Syncfusion®
+appliesto: UI Component Suite, Chart SDK
 description: Learn about the introduction of Syncfusion Essential Studio® Windows Forms Sparkline control, its features, capabilities, and more details.
 platform: windowsforms
 control: Sparkline

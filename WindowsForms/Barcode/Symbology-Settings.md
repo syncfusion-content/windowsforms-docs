@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Symbology Settings in Windows Forms Barcode | Syncfusion®
+appliesto: UI Component Suite, Chart SDK
 description: Symbology settings in the Windows Forms Barcode enable customization of barcode encoding options, validation rules, and barcode-specific properties.
 platform: windowsforms
 control: SfBarcode

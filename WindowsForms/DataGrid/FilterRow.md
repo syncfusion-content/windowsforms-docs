@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Filter Row in Windows Forms Data Grid | Syncfusion®
+appliesto: UI Component Suite, Grid SDK
 description: Filter Row in Data Grid provides row-based filtering with customizable filter options, enabling quick and efficient data searching.
 platform: windowsforms
 control: Data Grid

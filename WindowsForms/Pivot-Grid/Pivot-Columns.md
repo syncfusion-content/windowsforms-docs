@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Pivot Columns in Windows Forms Pivot Grid | Syncfusion®
+appliesto: UI Component Suite, Grid SDK
 description: Define and manage pivot columns in Syncfusion® Windows Forms Pivot Grid control using PivotItem with support for synchronization, sorting, and formatting.
 platform: windowsforms
 control: Pivot Grid

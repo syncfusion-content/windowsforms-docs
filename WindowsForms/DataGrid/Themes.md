@@ -1,7 +1,6 @@
 ---
 layout: post
-title: Theme in Windows Forms Data Grid | Syncfusion®
-description: Theme support in Data Grid allows applying built-in themes, loading theme assemblies, and customizing visual appearance for a consistent UI.
+title: Theme in Windows Forms Data Grid | Syncfusion®appliesto: UI Component Suite, Grid SDKdescription: Theme support in Data Grid allows applying built-in themes, loading theme assemblies, and customizing visual appearance for a consistent UI.
 platform: windowsforms
 control: Data Grid
 documentation: ug

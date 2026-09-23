@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Printing in Windows Forms Pivot Grid | Syncfusion®
+appliesto: UI Component Suite, Grid SDK
 description: Print Syncfusion® Windows Forms Pivot Grid control with support for preview, headers, footers, landscape or portrait views, and customizable events.
 platform: windowsforms
 control: Pivot Grid

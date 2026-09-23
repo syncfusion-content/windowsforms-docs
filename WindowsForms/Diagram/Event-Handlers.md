@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Event Handlers in Windows Forms Diagram | Syncfusion®
+appliesto: UI Component Suite, Diagram SDK
 description: Handle diagram, node, tool, property, connection, and model events in the Syncfusion® Windows Forms Diagram control for interactive applications.
 platform: windowsforms
 control: Diagram

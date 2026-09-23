@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Legend in Windows Forms Smith Chart | Syncfusion®
+appliesto: UI Component Suite, Chart SDK
 description: Legend in the Windows Forms Smith Chart identifies data series and chart elements, supporting customization, positioning, and display options.
 platform: windowsforms
 control: SfSmithChart

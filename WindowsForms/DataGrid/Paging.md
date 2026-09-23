@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Paging in Windows Forms Data Grid | Syncfusion®
+appliesto: UI Component Suite, Grid SDK
 description: Paging in Data Grid supports data pagination, page navigation, and efficient viewing of large datasets through organized page-wise records.
 platform: windowsforms
 control: Data Grid

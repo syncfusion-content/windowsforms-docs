@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Column Types in Windows Forms Data Grid | Syncfusion®
+appliesto: UI Component Suite, Grid SDK
 description: Column types in Data Grid support displaying and editing text, numeric, date, checkbox, image, hyperlink, and other data formats.
 platform: windowsforms
 control: Data Grid

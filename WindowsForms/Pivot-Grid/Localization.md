@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Localization in Windows Forms Pivot Grid | Syncfusion®
+appliesto: UI Component Suite, Grid SDK
 description: Localize Syncfusion® Windows Forms Pivot Grid control using ILocalizationProvider or satellite assemblies to support multiple cultures and languages.
 platform: windowsforms
 control: Pivot Grid

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Hyperlink Cells in Windows Forms Pivot Grid | Syncfusion®
+appliesto: UI Component Suite, Grid SDK
 description: Enable hyperlink cells in Syncfusion® Windows Forms Pivot Grid control to access detailed information from row, column, summary, or value cells.
 platform: windowsforms
 control: Pivot Grid

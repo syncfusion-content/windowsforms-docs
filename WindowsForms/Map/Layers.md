@@ -1,7 +1,6 @@
 ---
 layout: post
-title: Layer Types in Windows Forms Maps | Syncfusion®
-description: Layer types in the Windows Forms Maps support imagery and shape layers for visualizing geographic data and map information.
+title: Layer Types in Windows Forms Maps | Syncfusion®appliesto: UI Component Suite, Chart SDKdescription: Layer types in the Windows Forms Maps support imagery and shape layers for visualizing geographic data and map information.
 platform: windowsforms
 control: Maps
 documentation: ug

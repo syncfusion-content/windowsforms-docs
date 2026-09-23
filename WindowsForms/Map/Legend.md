@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Legend in Windows Forms Maps | Syncfusion®
+appliesto: UI Component Suite, Chart SDK
 description: legend in the Windows Forms Maps explains symbols, colors, and data categories, helping users interpret geographic information.
 platform: windowsforms
 control: Maps

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Label in Windows Forms Diagram | Syncfusion®
+appliesto: UI Component Suite, Diagram SDK
 description: Create, format, position, and customize labels in the Syncfusion® Windows Forms Diagram control with support for styling and interaction.
 platform: windowsforms
 control: Diagram

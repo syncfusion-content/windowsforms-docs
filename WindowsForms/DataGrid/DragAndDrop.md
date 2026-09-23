@@ -1,7 +1,6 @@
 ---
 layout: post
-title: Drag and Drop in Windows Forms Data Grid | Syncfusion®
-description: Drag and Drop in Data Grid supports row and column reordering, enabling flexible data organization and intuitive user interactions.
+title: Drag and Drop in Windows Forms Data Grid | Syncfusion®appliesto: UI Component Suite, Grid SDKdescription: Drag and Drop in Data Grid supports row and column reordering, enabling flexible data organization and intuitive user interactions.
 platform: windowsforms
 control: Data Grid
 documentation: ug

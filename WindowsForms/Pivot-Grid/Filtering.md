@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Filtering in Windows Forms Pivot Grid | Syncfusion®
+appliesto: UI Component Suite, Grid SDK
 description: Apply filtering in Syncfusion® Windows Forms Pivot Grid control to refine data views using filter expressions or grouping bar with multiple conditions.
 platform: windowsforms
 control: Pivot Grid

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Scale Label Settings in Windows Forms Bullet Graph | Syncfusion®
+appliesto: UI Component Suite, Chart SDK
 description: Scale label settings in the Windows Forms Bullet Graph enable customization of label content, formatting, positioning, and appearance.
 platform: windowsforms
 control: Bullet Graph

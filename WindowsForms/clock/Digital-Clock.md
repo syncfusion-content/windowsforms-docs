@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Digital Clock in Windows Forms Clock | Syncfusion
+appliesto: UI Component Suite, Scheduler SDK
 description: Learn about digital clock functionality in Windows Forms Clock control for displaying time as digital text.
 platform: WindowsForms
 control: Clock

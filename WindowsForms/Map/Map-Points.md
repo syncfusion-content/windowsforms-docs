@@ -1,7 +1,6 @@
 ---
 layout: post
-title: Points in Windows Forms Maps | Syncfusion®
-description: Points in the Windows Forms Maps display location-based data and support customization of markers, labels, and visual appearance.
+title: Points in Windows Forms Maps | Syncfusion®appliesto: UI Component Suite, Chart SDKdescription: Points in the Windows Forms Maps display location-based data and support customization of markers, labels, and visual appearance.
 platform: windowsforms
 control: Maps
 documentation: ug

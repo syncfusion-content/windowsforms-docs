@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Getting Started with Windows Forms Bullet Graph | Syncfusion®
+appliesto: UI Component Suite, Chart SDK
 description: Learn how to get started with the Syncfusion® Windows Forms Bullet Graph control. Explore setup, features, elements, and customization options.
 platform: windowsforms
 control: Bullet Graph

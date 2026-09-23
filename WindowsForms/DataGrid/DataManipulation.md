@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Data Manipulation in Windows Forms Data Grid | Syncfusion®
+appliesto: UI Component Suite, Grid SDK
 description: Data manipulation in Data Grid supports editing, updating, adding, deleting, and managing records efficiently through built-in data operations.
 platform: windowsforms
 control: Data Grid

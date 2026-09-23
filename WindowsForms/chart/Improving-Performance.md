@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Improving Performance in Windows Forms Chart | Syncfusion®
+appliesto: UI Component Suite, Chart SDK
 description: Improving performance in the Windows Forms Chart enables efficient rendering, faster updates, and better handling of large data volumes.
 platform: windowsforms
 control: Chart
