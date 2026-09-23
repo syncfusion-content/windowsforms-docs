@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Copy and Paste Nodes in Windows Forms Diagram
 
-The following code snippet illustrates how you can copy / paste nodes (symbol, shape, or link) in Essential® Diagram.
+The following code snippet illustrates how you can copy / paste nodes (symbol, shape, or link) in WinForms Diagram.
 
 {% tabs %}
 

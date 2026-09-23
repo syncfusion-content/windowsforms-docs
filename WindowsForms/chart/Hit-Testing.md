@@ -45,7 +45,7 @@ private void chartControl_MouseMove(object sender,System.Windows.Forms.MouseEven
 
 {% highlight vb %}
 
-' ChartControl mouse move event.
+' WinForms Chart mouse move event.
 
 Private Sub chartControl_MouseMove(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs)
 

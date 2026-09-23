@@ -7,9 +7,9 @@ control: Bullet Graph
 documentation: ug
 ---
 
-# Getting Started with Windows Forms Bullet Graph
+# Getting Started with WinForms Bullet Graph
 
-The Bullet Graph is composed of a quantitative scale, qualitative ranges, a featured measure, and a comparative measure. The main purpose of the Bullet Graph is described using the caption. The quantitative scale of the Bullet Graph includes ticks and labels. The view of the Bullet Graph is changed by setting the [Orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_Orientation) property.
+The WinForms Bullet Graph is composed of a quantitative scale, qualitative ranges, a featured measure, and a comparative measure. The main purpose of the WinForms Bullet Graph is described using the caption. The quantitative scale of the WinForms Bullet Graph includes ticks and labels. The view of the WinForms Bullet Graph is changed by setting the [Orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_Orientation) property.
 
 ## Assembly deployment
 
@@ -19,17 +19,17 @@ For more details on how to install NuGet packages in a Windows Forms application
 
 [How to install NuGet packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
 
-## Create the Bullet Graph Programmatically
+## Create the WinForms Bullet Graph Programmatically
 
 * Assembly information
 
-The Bullet Graph is available in the following assembly.
+The WinForms Bullet Graph is available in the following assembly.
 
 Assembly: Syncfusion.BulletGraph.Windows
 
 * Namespace
 
-The Bullet Graph is available in the following namespace.
+The WinForms Bullet Graph is available in the following namespace.
 
 Namespace: Syncfusion.Windows.Forms.BulletGraph
 
@@ -84,15 +84,15 @@ Namespace: Syncfusion.Windows.Forms.BulletGraph
    {% endhighlight %}
    {% endtabs %}
 
-4. Run the application to view the Bullet Graph.
+4. Run the application to view the WinForms Bullet Graph.
 
    ![WinForms Bullet Graph control output](Getting-Started_images/Getting-Started_img2.png)
 
-## Create the Bullet Graph using Syncfusion<sup>®</sup> Reference Manager
+## Create the WinForms Bullet Graph using Syncfusion<sup>®</sup> Reference Manager
 
 The Syncfusion<sup>®</sup> Reference Manager is used to add Syncfusion<sup>®</sup> tools.
 
-To add a Bullet Graph control, refer to the following steps:
+To add a WinForms Bullet Graph control, refer to the following steps:
 
 1. Create a simple Windows Forms application using Visual Studio.
 
@@ -106,11 +106,11 @@ To add a Bullet Graph control, refer to the following steps:
 
    ![WinForms Bullet Graph Reference Manager wizard](Getting-Started_images/Getting-Started_img5.png)
 
-4. Search for the Bullet Graph using the search box and select the Bullet Graph control. Click Done to add the selected Bullet Graph control.
+4. Search for the WinForms Bullet Graph using the search box and select the Bullet Graph control. Click Done to add the selected Bullet Graph control.
 
    ![WinForms Bullet Graph Reference Manager search](Getting-Started_images/Getting-Started_img6.png)
 
-5. The Bullet Graph assemblies are automatically added to the project after clicking OK.
+5. The WinForms Bullet Graph assemblies are automatically added to the project after clicking OK.
 
    ![WinForms Bullet Graph Reference Manager assemblies](Getting-Started_images/Getting-Started_img7.png)
 

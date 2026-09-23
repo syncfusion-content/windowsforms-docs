@@ -7,9 +7,9 @@ control: DockingManager
 documentation: ug
 ---
 
-# Docking Events in Windows Forms Docking Manager
+# Docking Events in WinForms Docking Control
 
-The `DockingManager` provides a functionality for creating and working with enhanced docking windows. This supports attaching to a host form border, dragging and docking to different edges within the form, dragged off the host form, and floated as an individual top-level window. The Docking Framework allows any child control to be made on a form in a fully qualified docking window. The docking manager provides programmatic access to create an interaction between these dockable windows and other complex features such as multiple docking levels, nested docking, tabbed docking, tear-off tabs, auto hide mode, state persistence etc., by raising several events.
+The `WinForms Docking Control` provides a functionality for creating and working with enhanced docking windows. This supports attaching to a host form border, dragging and docking to different edges within the form, dragged off the host form, and floated as an individual top-level window. The Docking Framework allows any child control to be made on a form in a fully qualified docking window. The WinForms Docking Control provides programmatic access to create an interaction between these dockable windows and other complex features such as multiple docking levels, nested docking, tabbed docking, tear-off tabs, auto hide mode, state persistence etc., by raising several events.
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
@@ -108,7 +108,7 @@ Occurs when the ImageList property is changed.</td></tr>
 <tr>
 <td>
 {{ '[InitializeControlOnLoad](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html)' | markdownify }}</td><td>
-The InitializeControlOnLoad event occurs when the docking manager is not able to locate a control during a LoadDockState call.</td></tr>
+The InitializeControlOnLoad event occurs when the WinForms Docking Control is not able to locate a control during a LoadDockState call.</td></tr>
 <tr>
 <td>
 {{ '[NewDockStateBeginLoad](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html)' | markdownify }}</td><td>
@@ -140,11 +140,11 @@ The TabGroupCreated event occurs after creating a new document tab group. </td><
 <tr>
 <td>
 {{ '[TransferredToManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html)' | markdownify }}</td><td>
-The TransferredToManager event occurs after a dockable control that belongs to some other docking manager has been transferred to the docking layout hosted by this docking manager.</td></tr>
+The TransferredToManager event occurs after a dockable control that belongs to some other WinForms Docking Control has been transferred to the docking layout hosted by this WinForms Docking Control.</td></tr>
 <tr>
 <td>
 {{ '[TransferringFromManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html)' | markdownify }}</td><td>
-The TransferringFromManager event occurs when a dockable control hosted by this docking manager is transferred to the docking layout hosted by some other docking manager.</td></tr>
+The TransferringFromManager event occurs when a dockable control hosted by this WinForms Docking Control is transferred to the docking layout hosted by some other WinForms Docking Control.</td></tr>
 </table>
 
 ## Docking
@@ -762,7 +762,7 @@ End Sub
 
 ## Notify maximize dock control
 
-[ControlMaximizing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) and [ControlMaximized](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) events of docking manager get triggered while maximizing the docked control.
+[ControlMaximizing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) and [ControlMaximized](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) events of WinForms Docking Control get triggered while maximizing the docked control.
 
 ### ControlMaximizing event
 
@@ -884,7 +884,7 @@ End Sub
 
 The [ControlRestored](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event gets fired after the docked control is restored to its original position. This event can give the previous state of the control using the PreviousSizeState property of the handler.
 
-#### Event data
+### Event data
 
 The event handler receives an argument of [ControlRestoredEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ControlRestoredEventArgs.html) type containing data related to this event. The following ControlRestoredEventArgs members provide information specific to this event.
 
@@ -1117,7 +1117,7 @@ Gets a value that indicates the old state of dock child.</td></tr>
 <tr>
 <td>
 {{ '[Handled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockStateChangeEventArgs.html#Syncfusion_Windows_Forms_Tools_DockStateChangeEventArgs_Handled)' | markdownify }}</td><td>
-Gets or sets a value that decides whether to handle the dock state changes in DockingManager.</td></tr>
+Gets or sets a value that decides whether to handle the dock state changes in WinForms Docking Control.</td></tr>
 </table>
 
 {% tabs %}
@@ -1367,15 +1367,15 @@ End Sub
 
 You can restrict the docking sides of the dragged window by handling the [PreviewDockHints](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event and setting the dockable sides to the [DockAbility](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.PreviewDockHintsEventArgs.html#Syncfusion_Windows_Forms_Tools_PreviewDockHintsEventArgs__ctor_System_Windows_Forms_Control_System_Windows_Forms_Control_Syncfusion_Windows_Forms_Tools_DockAbility_System_Boolean_) property . You can also allow the particular target window to restrict it's sides to dock the dragged window. This event invoked before displaying the dock hints when drag the windows. 
 
-The [PreviewDockHintsEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.PreviewDockHintsEventArgs.html) provides the following event data for the `PreviewDockHints` event in `DockingManager`.
+The [PreviewDockHintsEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.PreviewDockHintsEventArgs.html) provides the following event data for the `PreviewDockHints` event in `WinForms Docking Control`.
 
 * [DockAbility](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.PreviewDockHintsEventArgs.html#Syncfusion_Windows_Forms_Tools_PreviewDockHintsEventArgs__ctor_System_Windows_Forms_Control_System_Windows_Forms_Control_Syncfusion_Windows_Forms_Tools_DockAbility_System_Boolean_) : Gets or sets the dockability to decide the visibility of dock hints on mouse hover the target window.  
 
-* [DraggingSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.PreviewDockHintsEventArgs.html#Syncfusion_Windows_Forms_Tools_PreviewDockHintsEventArgs_DraggingSource) : Gets or sets the dragging element of DockingManager that raises the PreviewDockHints event.
+* [DraggingSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.PreviewDockHintsEventArgs.html#Syncfusion_Windows_Forms_Tools_PreviewDockHintsEventArgs_DraggingSource) : Gets or sets the dragging element of WinForms Docking Control that raises the PreviewDockHints event.
 
-* [DraggingTarget](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.PreviewDockHintsEventArgs.html#Syncfusion_Windows_Forms_Tools_PreviewDockHintsEventArgs_DraggingTarget) : Gets or sets the target element in which the dragging window of DockingManager to be docked.  
+* [DraggingTarget](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.PreviewDockHintsEventArgs.html#Syncfusion_Windows_Forms_Tools_PreviewDockHintsEventArgs_DraggingTarget) : Gets or sets the target element in which the dragging window of WinForms Docking Control to be docked.  
 
-* [IsOuterDockHints](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.PreviewDockHintsEventArgs.html#Syncfusion_Windows_Forms_Tools_PreviewDockHintsEventArgs_IsOuterDockHints) : Gets values that specify PreviewDockHints occurred for inner dockability or outer dockability of dragging child in DockingManager.  
+* [IsOuterDockHints](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.PreviewDockHintsEventArgs.html#Syncfusion_Windows_Forms_Tools_PreviewDockHintsEventArgs_IsOuterDockHints) : Gets values that specify PreviewDockHints occurred for inner dockability or outer dockability of dragging child in WinForms Docking Control.  
 
 {% tabs %}
 
@@ -1408,7 +1408,7 @@ End Sub
 
 ## TabGroupCreating event
 
-The [TabGroupCreating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event occurs before creating a new document tab group. The `TabGroupCreatingEventArgs` provides the following event data for the `TabGroupCreating` event of docking manager. 
+The [TabGroupCreating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event occurs before creating a new document tab group. The `TabGroupCreatingEventArgs` provides the following event data for the `TabGroupCreating` event of WinForms Docking Control. 
 
 * TargetItem : Gets the target item which added as new document tab group.
 
@@ -1448,13 +1448,13 @@ Private Sub DockingManager1_TabGroupCreating1(ByVal sender As Object, ByVal arg 
 
 ## TabGroupCreated event
 
-The [TabGroupCreated](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event occurs after creating a new document tab group. The `TabGroupCreatedEventArgs` provides the following event data for the `TabGroupCreated` event of docking manager. You can customize the appearance and behavior of document tab groups using the tab group instance provided by the `TabGroupCreated `event.
+The [TabGroupCreated](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event occurs after creating a new document tab group. The `TabGroupCreatedEventArgs` provides the following event data for the `TabGroupCreated` event of WinForms Docking Control. You can customize the appearance and behavior of document tab groups using the tab group instance provided by the `TabGroupCreated `event.
 
 * CurrentTabGroup : Gets the current document tab group of tab item that triggers tab group creation.
 
 * PreviousTabGroup : Gets the previous document tab group of tab item that triggers tab group creation.
 
-* TabGroups : Gets the collections of document tab groups in docking manager.
+* TabGroups : Gets the collections of document tab groups in WinForms Docking Control.
 
 * TargetItem : Gets the target item added as a new document tab group.
 
@@ -1713,7 +1713,7 @@ private void dockingManager1_DragFeedbackStart(object sender, System.EventArgs e
 
    Console.WriteLine("DragFeedbackStart Event has been ");
 
-   //The following code is used to display all control names which are in the DockingManager.
+   //The following code is used to display all control names which are in the WinForms Docking Control.
 
    Syncfusion.Windows.Forms.Tools.DockingManager ctrl = sender as Syncfusion.Windows.Forms.Tools.DockingManager;
 
@@ -1804,7 +1804,7 @@ This section discusses the following LinkedManager events:
 
 ### TransferredToManager event
 
-The [TransferredToManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event occurs when the dockable control that previously belonged to some other docking manager has been transferred to the docking layout hosted by the current docking manager.
+The [TransferredToManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) The event occurs when the dockable control that previously belonged elsewhere has been transferred to the docking layout hosted by the current WinForms Docking Control.
 
 #### Event data
 
@@ -1827,7 +1827,7 @@ Gets the control that is undergoing the transfer process.</td></tr>
 
 // A docking window is being transferred from one docking layout to another.
 
-// Update the control's DockingManager reference.
+// Update the control's WinForms Docking Control reference.
 
 protected void DockingManager_TransferredToManager(object sender, TransferManagerEventArgs args)
 
@@ -1872,7 +1872,7 @@ End Sub
 
 ### TransferringFromManager event
 
-The [TransferringFromManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event will be raised when a dockable control hosted by the docking manager is transferred to the docking layout hosted by some other docking manager.
+The [TransferringFromManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event will be raised when a dockable control hosted by the WinForms Docking Control is transferred to the docking layout hosted by some other WinForms Docking Control.
 
 #### Event data
 
@@ -1893,7 +1893,7 @@ Gets the control that is undergoing the transfer process.</td></tr>
 
 {% highlight C# %}
 
-//The TransferringFromManager event occurs when a dockable control hosted by this DockingManager is transferred to the docking layout hosted by some other DockingManager.
+//The TransferringFromManager event occurs when a dockable control hosted by this WinForms Docking Control is transferred to the docking layout hosted by some other WinForms Docking Control.
 
 protected void DockingManager_TransferringFromManager(object sender, TransferManagerEventArgs args)
 
@@ -1918,7 +1918,7 @@ protected void DockingManager_TransferringFromManager(object sender, TransferMan
 
 {% highlight VB %}
 
-'The `TransferringFromManager` event occurs when a dockable control hosted by this DockingManager is transferred to the docking layout hosted by some other DockingManager.
+'The `TransferringFromManager` event occurs when a dockable control hosted by this WinForms Docking Control is transferred to the docking layout hosted by some other WinForms Docking Control.
 
 Protected Sub DockingManager_TransferringFromManager(ByVal sender As Object, ByVal args As TransferManagerEventArgs)
 
@@ -1940,7 +1940,7 @@ End Sub
 
 ## InitializeControlOnLoad event
 
-The [InitializeControlOnLoad](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event occurs when the docking manager is not able to locate a control during the [LoadDockState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_LoadDockState) call.
+The [InitializeControlOnLoad](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event occurs when the WinForms Docking Control is not able to locate a control during the [LoadDockState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_LoadDockState) call.
 
 ### Event data
 

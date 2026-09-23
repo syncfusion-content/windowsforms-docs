@@ -7,7 +7,7 @@ control: TreeMap
 documentation: ug
 ---
 
-# Legend in Windows Forms TreeMap
+# Legend in WinForms TreeMap
 
 The tree map legend is used to demonstrate the color value of the leaf nodes. This legend may be appropriate only for tree maps whose leaf nodes are colored by using the RangeBrushColorMapping. 
 
@@ -15,7 +15,7 @@ The icon shapes of the legend items can be set using the [`LegendType`](https://
 
 Legend can be positioned at the left, right, top, or bottom of the tree map control using the [`LegendPosition`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TreeMap.LegendSettings.html#Syncfusion_Windows_Forms_TreeMap_LegendSettings_LegendPosition) property.
 
-#### Code sample
+## Code sample
 
 {% tabs %}
 

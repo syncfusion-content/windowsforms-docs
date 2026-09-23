@@ -1,31 +1,31 @@
 ---
 layout: post
-title: StatusBarAdvPanel in Windows Forms StatusBarAdv | Syncfusion®
-description: StatusBarAdvPanel in Windows Forms StatusBarAdv enables flexible content display and customization within status bar layouts.
+title: StatusBarAdvPanel in Windows Forms Status Bar | Syncfusion®
+description: StatusBarAdvPanel in Windows Forms Status Bar enables flexible content display and customization within status bar layouts.
 platform: WindowsForms
-control: StatusBarAdv
+control: Status Bar
 documentation: ug
 ---
 
-# StatusBarAdvPanel in Windows Forms StatusBarAdv
+# StatusBarAdvPanel in Windows Forms Status Bar
 
-StatusBarAdvPanels can also be added to the StatusBarAdv control using the Panels property. On clicking the Panels property, the StatusBarAdvPanel Collection Editor pops up. Using this window, the user can add any number of panels to the control and customize them according to their requirements.
+StatusBarAdvPanels can also be added to the Status Bar control using the Panels property. On clicking the Panels property, the StatusBarAdvPanel Collection Editor pops up. Using this window, the user can add any number of panels to the control and customize them according to their requirements.
 
 Property Table
 
 <table>
 <tr>
 <th>
-StatusBarAdv Property</th><th>
+Status Bar Property</th><th>
 Description</th></tr>
 <tr>
 <td>
 Panels</td><td>
-Indicates the StatusBarAdvPanel controls contained in the StatusBarAdv.</td></tr>
+Indicates the StatusBarAdvPanel controls contained in the Status Bar.</td></tr>
 </table>
 
 
-![Overview_img70](Overview_images/Overview_img70.jpeg) 
+![Panels in Windows Forms Status Bar](Overview_images/Overview_img70.jpeg) 
 
 ## Spacing
 
@@ -36,7 +36,7 @@ Property Table
 <table>
 <tr>
 <th>
-StatusBarAdv Property</th><th>
+Status Bar Property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -58,7 +58,7 @@ Me.statusBarAdv1.Spacing = New System.Drawing.Size(5, 5)
 {% endhighlight %}
 {% endtabs %}
 
-![Overview_img71](Overview_images/Overview_img71.jpeg) 
+![Spacing in Windows Forms Status Bar](Overview_images/Overview_img71.jpeg) 
 
 ## Panel size
 
@@ -69,7 +69,7 @@ Property Table
 <table>
 <tr>
 <th>
-StatusBarAdv Property</th><th>
+Status Bar Property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -94,4 +94,4 @@ Me.statusBarAdv1.CustomLayoutBounds = New System.Drawing.Rectangle(5, 2, 100, 20
 {% endhighlight %}
 {% endtabs %}
 
-![Overview_img72](Overview_images/Overview_img72.jpeg) 
+![Panel size in Windows Forms Status Bar](Overview_images/Overview_img72.jpeg) 

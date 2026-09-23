@@ -41,7 +41,7 @@ calendar.Culture = New CultureInfo("he-IL")
 
 ## Localization
 
-The `SfCalendar` control allows you to localize the static text used in the calendar footer such as today button and none button contents based on application requirement. The following steps are used to override the default resource files from the application resource files and change the static text:
+The `Windows Forms Calendar` control allows you to localize the static text used in the calendar footer such as today button and none button contents based on application requirement. The following steps are used to override the default resource files from the application resource files and change the static text:
 
 * **Step 1**: Add the Resources folder to the application.    
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Editing in Windows Forms SyntaxEditor | Syncfusion®
-description: Editing support in Windows Forms SyntaxEditor enables efficient text modification, insertion, deletion, selection, and code management features.
+title: Editing in Windows Forms Syntax Editor | Syncfusion®
+description: Editing support in Windows Forms Syntax Editor enables efficient text modification, insertion, deletion, selection, and code management features.
 platform: WindowsForms
-control: SyntaxEditor
+control: Syntax Editor
 documentation: ug
 ---
 
-# Editing in Windows Forms SyntaxEditor
+# Editing in Windows Forms Syntax Editor
 
-The EditControl allows end users to modify and edit the text documents and source code files. Some of the important features are:
+The Syntax Editor allows end users to modify and edit the text documents and source code files. Some of the important features are:
 
 * Clipboard operations such as cut, copy, and paste operations.
 * Undo and redo with grouping actions.
@@ -26,11 +26,11 @@ The following section explains the above listed features.
 
 ## Clipboard operations
 
-The EditControl provides keyboard and context menu support to cut, copy, and paste. It stores the data in clipboard for cut and copy operations and retrieves the data from clipboard for paste operation.
+The Syntax Editor provides keyboard and context menu support to cut, copy, and paste. It stores the data in clipboard for cut and copy operations and retrieves the data from clipboard for paste operation.
 
 ### Keyboard and mouse actions
 
-The keyboard shortcuts for performing cut, copy, or paste operation in the EditControl are done by using respective commands mentioned in the following table.
+The keyboard shortcuts for performing cut, copy, or paste operation in the Syntax Editor are done by using respective commands mentioned in the following table.
 
 <table>
 <tr>
@@ -53,7 +53,7 @@ CTRL+X, SHIFT+DEL</td></tr>
 
 ### Programmatic clipboard options
 
-Provides extensive support to cut, copy, or paste the text data programmatically. The following functions and properties in the EditControl facilitates these clipboard operations.
+Provides extensive support to cut, copy, or paste the text data programmatically. The following functions and properties in the Syntax Editor facilitates these clipboard operations.
 
 <table>
 <tr>
@@ -67,15 +67,15 @@ Copies the selected text content into the clipboard.</td></tr>
 <tr>
 <td>
 {{ '[Cut](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_Cut)' | markdownify }}</td><td>
-Cuts the selected text content from the EditControl and maintains it in clipboard.</td></tr>
+Cuts the selected text content from the Syntax Editor and maintains it in clipboard.</td></tr>
 <tr>
 <td>
 {{ '[Paste](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_Paste)' | markdownify }}</td><td>
-Retrieves the copied content from clipboard and pastes it into the EditControl.</td></tr>
+Retrieves the copied content from clipboard and pastes it into the Syntax Editor.</td></tr>
 <tr>
 <td>
 {{ '[ClearClipboard](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ClearClipboard)' | markdownify }}</td><td>
-Clears all content in the clipboard associated with EditControl. This is generally used immediately after the application loads to clear any junk from the previous clipboard operation.</td></tr>
+Clears all content in the clipboard associated with Syntax Editor. This is generally used immediately after the application loads to clear any junk from the previous clipboard operation.</td></tr>
 </table>
 
 <table>
@@ -86,15 +86,15 @@ Description</th></tr>
 <tr>
 <td>
 {{ '[CanCopy](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_CanCopy)' | markdownify }}</td><td>
-Indicates whether it is possible to perform copy operation or not in the EditControl.</td></tr>
+Indicates whether it is possible to perform copy operation or not in the Syntax Editor.</td></tr>
 <tr>
 <td>
 {{ '[CanCut](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_CanCut)' | markdownify }}</td><td>
-Indicates whether it is possible to perform cut operation or not in the EditControl.</td></tr>
+Indicates whether it is possible to perform cut operation or not in the Syntax Editor.</td></tr>
 <tr>
 <td>
 {{ '[CanPaste](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_CanCut)' | markdownify }}</td><td>
-Indicates whether it is possible to perform paste operation or not in the EditControl.</td></tr>
+Indicates whether it is possible to perform paste operation or not in the Syntax Editor.</td></tr>
 </table>
 
 {% tabs %}
@@ -105,27 +105,27 @@ Indicates whether it is possible to perform paste operation or not in the EditCo
 
 this.editControl1.Copy();
 
-// Cuts the selected text contents from EditControl and maintains it in the clipboard.
+// Cuts the selected text contents from Syntax Editor and maintains it in the clipboard.
 
 this.editControl1.Cut();
 
-// Retrieves copied contents from the clipboard and pastes it into EditControl.
+// Retrieves copied contents from the clipboard and pastes it into Syntax Editor.
 
 this.editControl1.Paste();
 
-// Indicates whether it is possible to perform copy operation in EditControl.
+// Indicates whether it is possible to perform copy operation in Syntax Editor.
 
 bool canCopy = this.editControl1.CanCopy;
 
-// Indicates whether it is possible to perform cut operation in EditControl.
+// Indicates whether it is possible to perform cut operation in Syntax Editor.
 
 bool canCut = this.editControl1.CanCut;
 
-// Indicates whether it is possible to perform paste operation in EditControl.
+// Indicates whether it is possible to perform paste operation in Syntax Editor.
 
 bool canPaste = this.editControl1.CanPaste;
 
-// Clears all contents in the clipboard associated with EditControl.
+// Clears all contents in the clipboard associated with Syntax Editor.
 
 this.editControl1.ClearClipboard();
 
@@ -138,27 +138,27 @@ this.editControl1.ClearClipboard();
 
 Me.editControl1.Copy()
 
-' Cuts the selected text contents from EditControl and maintains it in the clipboard. 
+' Cuts the selected text contents from Syntax Editor and maintains it in the clipboard. 
 
 Me.editControl1.Cut()
 
-' Retrieves copied contents from the clipboard and pastes it into EditControl.
+' Retrieves copied contents from the clipboard and pastes it into Syntax Editor.
 
 Me.editControl1.Paste()
 
-' Indicates whether it is possible to perform copy operation in EditControl.
+' Indicates whether it is possible to perform copy operation in Syntax Editor.
 
 Dim canCopy as bool = Me.editControl1.CanCopy
 
-' Indicates whether it is possible to perform cut operation in EditControl.
+' Indicates whether it is possible to perform cut operation in Syntax Editor.
 
 Dim canCut as bool = Me.editControl1.CanCut
 
-' Indicates whether it is possible to perform paste operation in EditControl.
+' Indicates whether it is possible to perform paste operation in Syntax Editor.
 
 Dim canPaste as bool = Me.editControl1.CanPaste
 
-' Clears all contents in the clipboard associated with EditControl.
+' Clears all contents in the clipboard associated with Syntax Editor.
 
 Me.editControl1.ClearClipboard()
 
@@ -166,7 +166,7 @@ Me.editControl1.ClearClipboard()
 
 {% endtabs %}
 
-![Editing operation in syntax editor](Editing-Features_images/Editing-Features_img1.png)
+![Editing operation in Syntax Editor](Editing-Features_images/Editing-Features_img1.png)
 
 ### Cryptography 
 
@@ -184,7 +184,7 @@ Follow the steps to enable FIPS in your machine:
 
 #### Purpose of EnableMD5 in clipboard operations
 
-When FIPS is enabled, clipboard operations of the EditControl are affected due to the usage MD5 algorithm. To avoid this before enabling FIPS, you must disable the EditControl MD5 algorithm by setting the [EnableMD5](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_EnableMD5) property to `false`.
+When FIPS is enabled, clipboard operations of the Syntax Editor are affected due to the usage MD5 algorithm. To avoid this before enabling FIPS, you must disable the Syntax Editor MD5 algorithm by setting the [EnableMD5](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_EnableMD5) property to `false`.
 
 {% tabs %}
 
@@ -205,7 +205,7 @@ Me.editControl1.EnableMD5 = False
 
 ## Undo and redo
 
-Provides keyboard and context menu support for undo and redo operations that erases last change in a document and reinsert it. The [CanUndo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_CanUndo) and [CanRedo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_CanRedo) properties gets a flag that determines whether the undo and redo operations can be performed in the EditControl. 
+Provides keyboard and context menu support for undo and redo operations that erases last change in a document and reinsert it. The [CanUndo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_CanUndo) and [CanRedo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_CanRedo) properties gets a flag that determines whether the undo and redo operations can be performed in the Syntax Editor. 
 
 <table>
 <tr>
@@ -226,12 +226,12 @@ Performs redo (CTRL+Y) operation.</td></tr>
 
 {% highlight C# %}
 
-// Indicates whether it is possible to Undo in the EditControl. 
+// Indicates whether it is possible to Undo in the Syntax Editor. 
 
 bool canUndo = this.editControl1.CanUndo;
 
 
-// Indicates whether it is possible to Redo in the EditControl. 
+// Indicates whether it is possible to Redo in the Syntax Editor. 
 
 bool canRedo = this.editControl1.CanRedo;
 
@@ -240,12 +240,12 @@ bool canRedo = this.editControl1.CanRedo;
 
 {% highlight VB %}
 
-' Indicates whether it is possible to Undo in the EditControl.
+' Indicates whether it is possible to Undo in the Syntax Editor.
 
 Dim canUndo as bool = Me.editControl1.CanUndo
 
 
-' Indicates whether it is possible to Redo in the EditControl.
+' Indicates whether it is possible to Redo in the Syntax Editor.
 
 Dim canRedo as bool = Me.editControl1.CanRedo
 
@@ -253,11 +253,11 @@ Dim canRedo as bool = Me.editControl1.CanRedo
 
 {% endtabs %}
 
-![Undo and redo operation in syntax editor](Editing-Features_images/Editing-Features_img2.png)
+![Undo and redo operation in Syntax Editor](Editing-Features_images/Editing-Features_img2.png)
 
 ### Grouping actions
 
-Grouping actions allows you to specify a set of actions as groups for undo or redo purpose. When an action group is created and a set of actions is added to it, the entire set is considered as one entity. This implies that set of actions can be performed or undone by using the `Redo` or `Undo` function call. You can use the UndoGroupOpen, UndoGroupClose, and UndoGroupCancel functions to programmatically manipulate the undo or redo action grouping. Grouping is enabled by using the `GroupUndo` property of the EditControl. It specifies whether grouping should be enabled or disabled for undo or redo action or not.
+Grouping actions allows you to specify a set of actions as groups for undo or redo purpose. When an action group is created and a set of actions is added to it, the entire set is considered as one entity. This implies that set of actions can be performed or undone by using the `Redo` or `Undo` function call. You can use the UndoGroupOpen, UndoGroupClose, and UndoGroupCancel functions to programmatically manipulate the undo or redo action grouping. Grouping is enabled by using the `GroupUndo` property of the `EditControl`. It specifies whether grouping should be enabled or disabled for undo or redo action or not.
 
 <table>
 <tr>
@@ -348,7 +348,7 @@ Me.editControl1.UndoGroupClose()
 
 ### Reset undo redo buffer
 
-[ResetUndoInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ResetUndoInfo) function in the EditControl helps to reset undo and redo operations. The following table explains this function.
+[ResetUndoInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ResetUndoInfo) function in the `EditControl` helps to reset undo and redo operations. The following table explains this function.
 
 <table>
 <tr>
@@ -386,7 +386,7 @@ Me.editControl1.ResetUndoInfo()
 
 ### Discard undo redo buffer
 
-You can discard an already opened action group by invoking [UndoGroupCancel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_UndoGroupCancel) function in the EditControl.
+You can discard an already opened action group by invoking [UndoGroupCancel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_UndoGroupCancel) function in the `EditControl`.
 
 {% tabs %}
    
@@ -409,12 +409,12 @@ Me.editControl1.UndoGroupCancel()
 
 {% endtabs %}
 
-N> Refer to the following sample link that demonstrates the clipboard operations functionalities of the EditControl:
+N> Refer to the following sample link that demonstrates the clipboard operations functionalities of the Syntax Editor:
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\\Windows\Edit.Windows\Samples\Text Operations\Clipboard Operations
 
 ## Selection modes 
 
-The EditControl supports normal selection and rectangular block selection to select the rectangular portion of text instead of whole line like Visual Studio code editor.
+The Syntax Editor supports normal selection and rectangular block selection to select the rectangular portion of text instead of whole line like Visual Studio code editor.
 
 ### Default  
 
@@ -441,17 +441,17 @@ Me.editControl1.SelectionMode = Syncfusion.Windows.Forms.Edit.SelectionModes.Def
 
 {% endtabs %}   
    
-![Select content in syntax editor](Editing-Features_images/Editing-Features_img3.png)
+![Select content in Syntax Editor](Editing-Features_images/Editing-Features_img3.png)
 
 ### Programmatic selection
 
-[SelectAll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SelectAll), [StartSelection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_StartSelection), and [StopSelection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_StopSelection) functions helps to programmatically select text in the EditControl.
+[SelectAll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SelectAll), [StartSelection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_StartSelection), and [StopSelection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_StopSelection) functions helps to programmatically select text in the Syntax Editor.
 
 {% tabs %}
    
 {% highlight C# %}
 
-// Selects all text in EditControl.
+// Selects all text in Syntax Editor.
 
 this.editControl1.SelectAll();
 
@@ -460,7 +460,7 @@ this.editControl1.SelectAll();
 
 {% highlight VB %}
 
-' Selects all text in EditControl.
+' Selects all text in Syntax Editor.
 
 Me.editControl1.SelectAll()
 
@@ -468,9 +468,9 @@ Me.editControl1.SelectAll()
 
 {% endtabs %}
 
-![Select all the content in syntax editor](Editing-Features_images/Editing-Features_img20.png)
+![Select all the content in Syntax Editor](Editing-Features_images/Editing-Features_img20.png)
 
-The following code snippet demonstrates how to select the text using `StartSelection` and `StopSelection` functions in the EditControl.
+The following code snippet demonstrates how to select the text using `StartSelection` and `StopSelection` functions in the Syntax Editor.
 
 {% tabs %}
 
@@ -491,7 +491,7 @@ Me.editControl1.StopSelection(20, 20)
 
 {% endtabs %}
 
-![Select content from specific row and column position of lines in syntax editor](Editing-Features_images/Editing-Features_img23.png)
+![Select content from specific row and column position of lines in Syntax Editor](Editing-Features_images/Editing-Features_img23.png)
      
 ### Block   
 
@@ -518,17 +518,17 @@ Me.editControl1.SelectionMode = Syncfusion.Windows.Forms.Edit.SelectionModes.Blo
 
 {% endtabs %}
 
-![Select block of contents in syntax editor](Editing-Features_images/Editing-Features_img4.png)
+![Select block of contents in Syntax Editor](Editing-Features_images/Editing-Features_img4.png)
 
 ## Text handling
 
-The EditControl offers support for text manipulation operations like appending, deleting, and inserting multiple lines of the text.
+The Syntax Editor offers support for text manipulation operations like appending, deleting, and inserting multiple lines of the text.
 
-![Append text in syntax editor](Editing-Features_images/Editing-Features_img5.jpeg)
+![Append text in Syntax Editor](Editing-Features_images/Editing-Features_img5.jpeg)
 
 ### Total number of lines
 
-The [PhysicalLineCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_PhysicalLineCount) property helps to find the total number of lines loaded in the EditControl.
+The [PhysicalLineCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_PhysicalLineCount) property helps to find the total number of lines loaded in the Syntax Editor.
 
 {% tabs %}
 
@@ -549,7 +549,7 @@ Console.WriteLine(Me.editControl1.PhysicalLineCount)
 
 ### Visible number of lines 
 
-The [VisibleLineCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_VisibleLineCount) property helps to find visible number of lines in the EditControl. It excludes lines in the collapsed block region. 
+The [VisibleLineCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_VisibleLineCount) property helps to find visible number of lines in the Syntax Editor. It excludes lines in the collapsed block region. 
 
 {% tabs %}
 
@@ -570,7 +570,7 @@ Console.WriteLine(Me.editControl1.VisibleLineCount)
 
 ### Append text
 
-Text can be appended to the EditControl by using the following function.
+Text can be appended to the Syntax Editor by using the following function.
 
 <table>
 <tr>
@@ -580,14 +580,14 @@ Description</th></tr>
 <tr>
 <td>
 {{ '[AppendText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_AppendText_System_String_)' | markdownify }}</td><td>
-Appends specified text to the end of the existing contents of the EditControl.</td></tr>
+Appends specified text to the end of the existing contents of the Syntax Editor.</td></tr>
 </table>
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Appends the given string to the end of the text in EditControl.
+// Appends the given string to the end of the text in Syntax Editor.
 
 this.editControl1.AppendText(" text to be appended ");
 
@@ -596,7 +596,7 @@ this.editControl1.AppendText(" text to be appended ");
 
 {% highlight VB %}
 
-' Appends the given string to the end of the text in the EditControl.
+' Appends the given string to the end of the text in the Syntax Editor.
 
 Me.editControl1.AppendText(" text to be appended ")
 
@@ -606,7 +606,7 @@ Me.editControl1.AppendText(" text to be appended ")
 
 ### Insert text
 
-Insert mode can be enabled in the EditControl by setting the [InsertMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_InsertMode) property. Its default value is `true`. Text can be inserted anywhere inside the EditControl by using the [InsertText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_InsertText_System_Int32_System_Int32_System_String_) function. The mode of the <kbd>INSERT</kbd> key can be toggled by using the [ToggleInsertMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ToggleInsertMode) function in the EditControl.
+Insert mode can be enabled in the Syntax Editor by setting the [InsertMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_InsertMode) property. Its default value is `true`. Text can be inserted anywhere inside the Syntax Editor by using the [InsertText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_InsertText_System_Int32_System_Int32_System_String_) function. The mode of the <kbd>INSERT</kbd> key can be toggled by using the [ToggleInsertMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ToggleInsertMode) function in the `EditControl`.
 
 {% tabs %}
 
@@ -649,14 +649,14 @@ Description</th></tr>
 <tr>
 <td>
 Lines</td><td>
-Lets you to specify multiple lines of text to the EditControl in the form of a string array. This feature is similar to the one in .NET RichTextBox control.</td></tr>
+Lets you to specify multiple lines of text to the Syntax Editor in the form of a string array. This feature is similar to the one in .NET RichTextBox control.</td></tr>
 </table>
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Specifies multiple lines of text to the EditControl in the form of a string array.
+// Specifies multiple lines of text to the Syntax Editor in the form of a string array.
 
 this.editControl1.Lines = new string[] {" first line ", " second line ", " third line "};
 
@@ -665,7 +665,7 @@ this.editControl1.Lines = new string[] {" first line ", " second line ", " t
 
 {% highlight VB %}
 
-// Specifies multiple lines of text to the EditControl in the form of a string array.
+// Specifies multiple lines of text to the Syntax Editor in the form of a string array.
 
 Me.editControl1.Lines = new string[] {" first line ", " second line ", " third line "}
 
@@ -693,7 +693,7 @@ Specifies whether inserting text should be allowed at the beginning of the reado
 <tr>
 <td>
 {{ '[InsertDroppedFileIntoText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_InsertDroppedFileIntoText)' | markdownify }}</td><td>
-Specifies whether the outer file dragged and dropped onto the EditControl should be inserted into the current content. When this property is set to `false`, the current file is closed, and the dropped outer file is opened.</td></tr>
+Specifies whether the outer file dragged and dropped onto the Syntax Editor should be inserted into the current content. When this property is set to `false`, the current file is closed, and the dropped outer file is opened.</td></tr>
 <tr>
 <td>
 {{ '[RespectTabStopsOnInsertingText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_RespectTabStopsOnInsertingText)' | markdownify }}</td><td>
@@ -701,7 +701,7 @@ Specifies whether the tab stops should be valued on inserting blocks of the text
 <tr>
 <td>
 {{ '[ShowFileDropNotification](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowFileDropNotification)' | markdownify }}</td><td>
-Specifies whether the notification message is to be displayed when the outer file is dragged and dropped onto the EditControl or not.</td></tr>
+Specifies whether the notification message is to be displayed when the outer file is dragged and dropped onto the Syntax Editor or not.</td></tr>
 </table>
 
 {% tabs %}
@@ -712,15 +712,15 @@ Specifies whether the notification message is to be displayed when the outer fil
 
 this.editControl1.AllowInsertBeforeReadonlyNewLine = true;
 
-//To set the EditControl that allows to Drag and Dropping files
+//To set the Syntax Editor that allows to Drag and Dropping files
 
 this.editControl1.AllowDrop = true; 
 
-// Specifies whether the outer file dragged and dropped onto the EditControl should be inserted into the current content.
+// Specifies whether the outer file dragged and dropped onto the Syntax Editor should be inserted into the current content.
 
 this.editControl1.InsertDroppedFileIntoText = true;
 
-// To hide the notification message displayed when the outer file is dragged and dropped onto the EditControl.
+// To hide the notification message displayed when the outer file is dragged and dropped onto the Syntax Editor.
 
 this.editControl1.ShowFileDropNotification = false;
 
@@ -737,11 +737,11 @@ Me.editControl1.AllowInsertBeforeReadonlyNewLine = True
 
 Me.editControl1.AllowDrop = True
 
-‘Specifies whether the outer file dragged and dropped onto the EditControl should be inserted into the current content.
+‘Specifies whether the outer file dragged and dropped onto the Syntax Editor should be inserted into the current content.
 
 Me.editControl1.InsertDroppedFileIntoText = True
 
-' To hide the notification message displayed when the outer file is dragged and dropped onto the EditControl.
+' To hide the notification message displayed when the outer file is dragged and dropped onto the Syntax Editor.
 
 Me.editControl1.ShowFileDropNotification = False
 
@@ -751,7 +751,7 @@ Me.editControl1.ShowFileDropNotification = False
 
 ### Delete text
 
-Text can be deleted in the EditControl by using the following functions.
+Text can be deleted in the Syntax Editor by using the following functions.
 
 <table>
 <tr>
@@ -846,14 +846,14 @@ Me.editControl1.DeleteText(Me.editControl1.Selection.Top, Me.editControl1.Select
 
 {% endtabs %}
 
-N> Refer to the following sample link that demonstrates the above `Text Handling` functionalities of EditControl:
+N> Refer to the following sample link that demonstrates the above `Text Handling` functionalities of Syntax Editor:
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Interactive Features\TextInteractions
 
 ## Indent or outdent
 
 Indentation support helps to format the source code to improve readability. By pressing <kbd>TAB</kbd> or <kbd>SPACE</kbd> key, the appropriate number of tabs or spaces will be added to the beginning of each line in the selected block. Similarly, when the <kbd>SHIFT+TAB</kbd> keys combination is pressed, the added tabs or spaces gets removed.
 
-You can also set the tab size to the desired number of spaces by using the [TabSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_TabSize) property in the EditControl. By default, the TabSize property value is set to 2.
+You can also set the tab size to the desired number of spaces by using the [TabSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_TabSize) property in the `EditControl`. By default, the TabSize property value is set to 2.
 
 {% tabs %}
 
@@ -876,7 +876,7 @@ Me.editControl1.TabSize = n
 
 {% endtabs %}
 
-The following functions are used to indent and outdent text in the EditControl.
+The following functions are used to indent and outdent text in the Syntax Editor.
 
 <table>
 <tr>
@@ -949,7 +949,7 @@ Me.editControl1.OutdentSelection()
 
 ### Default indentation
 
-Indentation guidelines are vertical lines to connect the matching brackets. This feature can be enabled or disabled by setting the [ShowIndentationGuidelines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowIndentationGuidelines) property. Its default value is `true`. To hide the indentation guidelines in the EditControl, turned off to `false`. The indent guideline for the current region can also be set by using the [ShowIndentGuideline](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowIndentGuideline) function.
+Indentation guidelines are vertical lines to connect the matching brackets. This feature can be enabled or disabled by setting the [ShowIndentationGuidelines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowIndentationGuidelines) property. Its default value is `true`. To hide the indentation guidelines in the Syntax Editor, turned off to `false`. The indent guideline for the current region can also be set by using the [ShowIndentGuideline](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowIndentGuideline) function.
 
 {% tabs %}
 
@@ -1015,7 +1015,7 @@ Me.editControl1.JumpToIndentBlockEnd()
 
 ### Auto indentation
 
-Provides advanced text indentation support to suit the requirements of the user. The properties given in the following table can be used to customize the auto indentation settings of the EditControl.
+Provides advanced text indentation support to suit the requirements of the user. The properties given in the following table can be used to customize the auto indentation settings of the Syntax Editor.
 
 <table>
 <tr>
@@ -1055,11 +1055,11 @@ Me.editControl1.AutoIndentMode = Syncfusion.Windows.Forms.Edit.Enums.AutoIndentM
 
 If Enter is pressed when the AutoIndentMode is set to None, the text is not indented.
 
-![Create new line with no indent in syntax editor](Editing-Features_images/Editing-Features_img6.png)
+![Create new line with no indent in Syntax Editor](Editing-Features_images/Editing-Features_img6.png)
 
 When the AutoIndentMode is set to Smart, the next line is indented by one TabSize from the first column of the previous line on pressing Enter.
 
-![Create new line with tab size indent in syntax editor](Editing-Features_images/Editing-Features_img7.png)
+![Create new line with tab size indent in Syntax Editor](Editing-Features_images/Editing-Features_img7.png)
 
 When the AutoIndentMode is set to Block, the next line begins at the same column as the previous line on pressing the ENTER key.
 
@@ -1067,7 +1067,7 @@ When the AutoIndentMode is set to Block, the next line begins at the same column
 
 **Lexem support for AutoIndent block mode**
 
-In the EditControl, the [EnableSmartInBlockIndent](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_EnableSmartInBlockIndent) property ensures the AutoIndent Block mode with respect to the lexem’s config.indent. With this property, the Block mode will work like Smart mode for conditional statements.
+In the Syntax Editor, the [EnableSmartInBlockIndent](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_EnableSmartInBlockIndent) property ensures the AutoIndent Block mode with respect to the lexem’s config.indent. With this property, the Block mode will work like Smart mode for conditional statements.
 
 When this property is enabled, the lines will be aligned to the position of the previous indented line. The lines will begin at the original start position if disabled. The property is explained in the following table.
 
@@ -1183,7 +1183,7 @@ Me.editControl1.ShowIndentationBlockBorders = True
 
 {% endtabs %}
 
-![Customized indent borders in syntax editor](Editing-Features_images/Editing-Features_img9.png)
+![Customized indent borders in Syntax Editor](Editing-Features_images/Editing-Features_img9.png)
 
 ## Commands
 
@@ -1191,7 +1191,7 @@ Provides extensive support for various commands same as Visual Studio code edito
 
 ### Default key commands
 
-The keyboard shortcuts for the commands in the EditControl are listed as follows.
+The keyboard shortcuts for the commands in the Syntax Editor are listed as follows.
 
 <table>
 <tr>
@@ -1365,11 +1365,11 @@ Show context choice</td><td>
 CTRL+SPACEBAR</td></tr>
 </table>
 
-The parent form of the EditControl can be closed while pressing Esc key when setting the [AcceptsEscape](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_AcceptsEscape) property to `false`. Its default is `true`. This operation is performed only when the parent form contains `Cancel` button.
+The parent form of the Syntax Editor can be closed while pressing Esc key when setting the [AcceptsEscape](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_AcceptsEscape) property to `false`. Its default is `true`. This operation is performed only when the parent form contains `Cancel` button.
 
 ### Performing user-defined action for default command
 
-By using the [RegisteringDefaultKeyBindings](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) and [ProcessCommand](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Utils.KeyBinding.IKeyCommand.html) events, you can perform user-defined action for the default command. The following table contains the default command and respective string to use while adding it to commands in the EditControl.
+By using the [RegisteringDefaultKeyBindings](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) and [ProcessCommand](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Utils.KeyBinding.IKeyCommand.html) events, you can perform user-defined action for the default command. The following table contains the default command and respective string to use while adding it to commands in the Syntax Editor.
 
 <table>
 <tr>
@@ -1538,7 +1538,7 @@ Editor.ContextChoice</td></tr>
 
 this.editControl1.RegisteringDefaultKeyBindings += new EventHandler(EditControl1_RegisteringDefaultKeyBindings);
 
-// Performing some actions using the ProcessCommandEventHandler events while opening a new file in EditControl.
+// Performing some actions using the ProcessCommandEventHandler events while opening a new file in Syntax Editor.
 
 private void this.EditControl1_RegisteringDefaultKeyBindings(object sender, EventArgs e)
 {
@@ -1563,7 +1563,7 @@ private void Command_Open()
 
 AddHandler Me.editControl1.RegisteringDefaultKeyBindings, AddressOf EditControl1_RegisteringDefaultKeyBindings
 
-// Performing some actions using the ProcessCommandEventHandler events while opening a new file in EditControl.
+// Performing some actions using the ProcessCommandEventHandler events while opening a new file in Syntax Editor.
 
 Private  Sub Me.editControl1_RegisteringDefaultKeyBindings(ByVal sender As Object, ByVal e As EventArgs)
 
@@ -1625,7 +1625,7 @@ End Sub
 
 ## Accept tab 
 
-Provides support to insert the `TAB` character in the EditControl instead of moving the focus to the next control in the tab order while pressing <kbd>TAB</kbd> key. This functionalities can be enabled only when the [UseTabs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_UseTabs) property is `true`.
+Provides support to insert the `TAB` character in the Syntax Editor instead of moving the focus to the next control in the tab order while pressing <kbd>TAB</kbd> key. This functionalities can be enabled only when the [UseTabs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_UseTabs) property is `true`.
 
 <table>
 <tr>
@@ -1721,13 +1721,13 @@ Me.editControl1.RemoveTabsFromSelection()
 
 ### Keep tab character
 
-The [TransferFocusOnTab](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_TransferFocusOnTab) property allows you to specify whether the EditControl should process TAB key as a text input or transfer focus to the next control (by the order of TabIndex property value) on the form or the user control that hosts the EditControl.
+The [TransferFocusOnTab](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_TransferFocusOnTab) property allows you to specify whether the Syntax Editor should process TAB key as a text input or transfer focus to the next control (by the order of TabIndex property value) on the form or the user control that hosts the Syntax Editor.
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Insert tabs into the EditControl as text input. 
+// Insert tabs into the Syntax Editor as text input. 
 
 this.editControl1.TransferFocusOnTab = false;
 
@@ -1740,7 +1740,7 @@ this.editControl1.TransferFocusOnTab = true;
 
 {% highlight VB %}
 
-' Insert tabs into the EditControl as text input.
+' Insert tabs into the Syntax Editor as text input.
 
 this.editControl1.TransferFocusOnTab = False
 
@@ -1754,7 +1754,7 @@ this.editControl1.TransferFocusOnTab = True
 
 ### Change tab character size
 
-The [TabSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_TabSize) property helps to insert the number of spaces when pressing the TAB key. This functionality is enabled only when the [UseTabs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_UseTabs) property in the EditControl is `true`.
+The [TabSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_TabSize) property helps to insert the number of spaces when pressing the TAB key. This functionality is enabled only when the [UseTabs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_UseTabs) property in the `EditControl` is `true`.
 
 {% tabs %}
 
@@ -1783,9 +1783,9 @@ Provides a built-in context menu options to perform editing operations like undo
 
 ### Default context menu options 
 
-Context menu is enabled by using the [editControl1.ContextMenuManager.Enabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.Implementation.ContextMenuManager.html#Syncfusion_Windows_Forms_Edit_Implementation_ContextMenuManager_Enabled) property. The ContextMenu can be enabled or disabled by using the [ContextMenuEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ContextMenuEnabled) property in EditControl. Its default value is `true`. 
+Context menu is enabled by using the [editControl1.ContextMenuManager.Enabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.Implementation.ContextMenuManager.html#Syncfusion_Windows_Forms_Edit_Implementation_ContextMenuManager_Enabled) property. The ContextMenu can be enabled or disabled by using the [ContextMenuEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ContextMenuEnabled) property in `EditControl`. Its default value is `true`. 
 
-![Context menu option for edit and file operation in syntax editor](Editing-Features_images/Editing-Features_img10.png)
+![Context menu option for edit and file operation in Syntax Editor](Editing-Features_images/Editing-Features_img10.png)
 
 Set the appearance of the context menu by specifying the desired ContextMenuProvider.
 
@@ -1820,7 +1820,7 @@ Me.editControl1.ContextMenuManager.ContextMenuProvider = New Syncfusion.Windows.
 
 ### Remove default context menu
 
-By using the [MenuFill](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) event in EditControl, you can remove the default context menu items. 
+By using the [MenuFill](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) event in `EditControl`, you can remove the default context menu items. 
 
 {% tabs %}
 
@@ -1898,7 +1898,7 @@ Context menu item can be disabled by using the `SetContextMenuItemEnabled` funct
 
 {% endtabs %}
 
-![Disable edit opeartions in context menu of syntax editor](Editing-Features_images/Editing-Features_img21.png)
+![Disable edit opeartions in context menu of Syntax Editor](Editing-Features_images/Editing-Features_img21.png)
 
 ### Change shortcut key for context menu options
 
@@ -2048,11 +2048,11 @@ End Sub
 
 {% endtabs %}
 
-![Add user defined custom menu item in context menu of syntax editor](Editing-Features_images/Editing-Features_img11.png)
+![Add user defined custom menu item in context menu of Syntax Editor](Editing-Features_images/Editing-Features_img11.png)
 
 ## Line modification marker
 
-The EditControl tracks the changed lines by displaying markers at the beginning of modified or inserted lines after the last file save operation. Changed lines marking feature can be enabled by setting the [MarkChangedLines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_MarkChangedLines) property to `true`. To enable this functionality in the EditControl, the [ShowSelectionMargin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowSelectionMargin) property should also be enabled.
+The Syntax Editor tracks the changed lines by displaying markers at the beginning of modified or inserted lines after the last file save operation. Changed lines marking feature can be enabled by setting the [MarkChangedLines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_MarkChangedLines) property to `true`. To enable this functionality in the Syntax Editor, the [ShowSelectionMargin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowSelectionMargin) property should also be enabled.
 
 {% tabs %}
 
@@ -2079,7 +2079,7 @@ Me.editControl1.ShowSelectionMargin = true
 
 ### Modified line marker color
 
-The [ChangedLinesMarkingLineColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ChangedLinesMarkingLineColor) property helps to customize the color for changed lines in the EditControl.
+The [ChangedLinesMarkingLineColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ChangedLinesMarkingLineColor) property helps to customize the color for changed lines in the Syntax Editor.
 
 {% tabs %}
 
@@ -2098,11 +2098,11 @@ Me.editControl1.ChangedLinesMarkingLineColor = Color.Red
 
 {% endtabs %}
 
-![Modified lines marked with red color in syntax editor](Editing-Features_images/Editing-Features_img18.png)
+![Modified lines marked with red color in Syntax Editor](Editing-Features_images/Editing-Features_img18.png)
 
 ### Saved line marker color
 
-The [SavedLinesMarkingLineColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SavedLinesMarkingLineColor) property helps to customize the color for saved lines in the EditControl.
+The [SavedLinesMarkingLineColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SavedLinesMarkingLineColor) property helps to customize the color for saved lines in the Syntax Editor.
 
 {% tabs %}
 
@@ -2121,7 +2121,7 @@ Me.editControl1.SavedLinesMarkingLineColor = Color.Orange
 
 {% endtabs %}
 
-![Modified lines which saved already marked with orange color in syntax editor](Editing-Features_images/Editing-Features_img19.png)
+![Modified lines which saved already marked with orange color in Syntax Editor](Editing-Features_images/Editing-Features_img19.png)
 
 ## Comment out lines
 
@@ -2402,7 +2402,7 @@ namespace Edit_demos
 
 ## Space indicators
 
-The EditControl has the ability to indicate whitespace in its contents with default indicators explained as follows:
+The Syntax Editor has the ability to indicate whitespace in its contents with default indicators explained as follows:
 
 1. Single spaces are indicated by using dots.
 2. Tabs are indicated by using right arrows.
@@ -2454,7 +2454,7 @@ Me.editControl1.ToggleShowingWhiteSpaces()
 
 {% endtabs %}
 
-![Showing white spaces in syntax editor](Editing-Features_images/Editing-Features_img13.png)
+![Showing white spaces in Syntax Editor](Editing-Features_images/Editing-Features_img13.png)
 
 **Showing or hiding indicators**
 
@@ -2576,15 +2576,15 @@ Me.editControl1.WhiteSpaceIndicators.SpaceChar = "s"
 
 {% endtabs %}
 
-![Indicate new line, space, tab with user defined characters in syntax editor](Editing-Features_images/Editing-Features_img22.png)
+![Indicate new line, space, tab with user defined characters in Syntax Editor](Editing-Features_images/Editing-Features_img22.png)
 
 ## Unicode
 
 `Unicode` is a standard used to encode all the languages of the world in computers. All Unicode text is saved in UTF-8 format by default. It also supports other text encoding formats specified in the System.Text.Encoding class like ASCII, UTF7, UTF8, and BigEndianUnicode.
 
-The following screenshot illustrates the use of Chinese, Arabic, Hindi, Russian, and Greek text in the EditControl.
+The following screenshot illustrates the use of Chinese, Arabic, Hindi, Russian, and Greek text in the Syntax Editor.
 
-![Encode the text of syntax editor with unicode](Editing-Features_images/Editing-Features_img14.jpeg)
+![Encode the text of Syntax Editor with unicode](Editing-Features_images/Editing-Features_img14.jpeg)
 
-N> Refer to the following sample link that demonstrates the `Unicode` support in EditControl:
+N> Refer to the following sample link that demonstrates the `Unicode` support in Syntax Editor:
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Text Operations\Unicode

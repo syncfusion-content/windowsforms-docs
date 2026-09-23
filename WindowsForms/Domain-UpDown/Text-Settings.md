@@ -6,9 +6,9 @@ platform: windowsforms
 control: DomainUpdownExt 
 documentation: ug
 ---
-# Text Settings in Windows Forms DomainUpdownExt
+# Text Settings in WinForms DomainUpDownExt
 
-The text for the DomainUpDownExt control can be specified in String Collection Editor. This section discusses the properties which deals with this text.
+The text for the WinForms DomainUpDownExt control can be specified in String Collection Editor. This section discusses the properties which deals with this text.
 
 * [Items](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.domainupdown.items?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_DomainUpDown_Items)
 * [TextAlign](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.updownbase.textalign?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_UpDownBase_TextAlign)

@@ -9,7 +9,7 @@ documentation: ug
 
 # How to display only the chart area in Windows Forms Chart
 
-This can be achieved by setting the Legend.Visible property of ChartControl to False, ElementsSpacing property of ChartControl to Zero_,_ and__Text property of ChartControl to an Empty String.
+This can be achieved by setting the Legend.Visible property of WinForms Chart to False, ElementsSpacing property to Zero_,_ and__Text property of to an Empty String.
 
 {% tabs %}
 

@@ -10,9 +10,9 @@ documentation: ug
 
 
 
-# How to use TabbedMDI in Windows Forms Docking Manager
+# How to use TabbedMDI in WinForms Docking Control
 
- Normally TabbedMDI is used in MDI applications where the child forms are the children that get tabbed. But, we could also use TabbedMDI with UserControls as children and that are also dockable. The sample attached here shows how the UserControls can be used as TabbedMDI children in association with the DockingManager.
+ Normally TabbedMDI is used in MDI applications where the child forms are the children that get tabbed. But, we could also use TabbedMDI with UserControls as children and that are also dockable. The sample attached here shows how the UserControls can be used as TabbedMDI children in association with the WinForms Docking Control.
 
 
 

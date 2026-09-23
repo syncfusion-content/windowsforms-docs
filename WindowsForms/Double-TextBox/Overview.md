@@ -6,11 +6,11 @@ platform: windowsforms
 control: DoubleTextBox
 documentation: ug
 ---
-# About Syncfusion® Windows Forms DoubleTextBox Control
+# About Syncfusion® WinForms Double TextBox Control
 
-The DoubleTextBox is a text box-derived control that can display double data type values.
+The WinForms Double TextBox is a text box-derived control that can display double data type values.
 
-The DoubleTextBox is derived from Windows Forms Framework text box control. The DoubleTextBox supports display and collection of double values. It handles user keyboard input and double formatting and uses the globalization features of the .NET platform to provide locale specific formatting.
+It is derived from Windows Forms Framework text box control. It supports display and collection of double values. It handles user keyboard input and double formatting and uses the globalization features of the .NET platform to provide locale specific formatting.
 
 
 ![Overview of DoubleTextBox](DoubleTextBox-images/DoubleTextBox_img1.png)

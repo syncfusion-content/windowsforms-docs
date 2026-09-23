@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Windows Forms MonthCalendarAdv
 
-This section describes how to add a `MonthCalendarAdv` control in a Windows Forms application and overview of its basic functionalities.
+This section describes how to add a `Windows Forms MonthCalendarAdv` control in a Windows Forms application and overview of its basic functionalities.
 
 ## Assembly deployment
 
@@ -79,7 +79,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-**Step 3** : Create `MonthCalendarAdv` control instance and add it to the form.
+**Step 3** : Create `Windows Forms MonthCalendarAdv` control instance and add it to the form.
 
 {% tabs %}
 
@@ -105,7 +105,7 @@ Me.Controls.Add(monthCalendarAdv1)
 
 {% endtabs %}
 
-![MonthCalendarAdv control](CalendarDateTime_images/MonthCalenderAdv-img2.png) 
+![Windows Forms MonthCalendarAdv control](CalendarDateTime_images/MonthCalenderAdv-img2.png) 
 
 ## Configure to allow multiple selection
 
