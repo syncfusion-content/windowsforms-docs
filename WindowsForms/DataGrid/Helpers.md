@@ -5,6 +5,7 @@ description: Helpers in Data Grid provides helper classes and methods to customi
 platform: windowsforms
 control: Data Grid 
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Helpers in Windows Forms Data Grid

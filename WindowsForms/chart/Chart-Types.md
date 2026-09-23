@@ -5,6 +5,7 @@ description: Types in the Windows Forms Chart provide multiple visualization opt
 platform: windowsforms
 control: Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Types in Windows Forms Chart

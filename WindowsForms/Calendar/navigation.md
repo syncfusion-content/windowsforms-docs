@@ -5,6 +5,7 @@ description: Learn how to navigate between months and years in Windows Forms Cal
 platform: WindowsForms
 control: SfCalendar
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Navigation in Windows Forms Calendar

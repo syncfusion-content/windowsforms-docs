@@ -5,6 +5,7 @@ description: Data virtualization in Data Grid enables efficient loading, scrolli
 platform: windowsforms
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Data Virtualization in Windows Forms Data Grid

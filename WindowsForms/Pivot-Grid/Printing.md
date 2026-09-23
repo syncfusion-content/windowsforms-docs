@@ -5,6 +5,7 @@ description: Print Syncfusion® Windows Forms Pivot Grid control with support fo
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Printing in Windows Forms Pivot Grid

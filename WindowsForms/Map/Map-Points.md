@@ -5,6 +5,7 @@ description: Points in the Windows Forms Maps display location-based data and su
 platform: windowsforms
 control: Maps
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Points in Windows Forms Maps

@@ -5,6 +5,7 @@ description: Configure measurement units in the Syncfusion® Windows Forms Diagr
 platform: WindowsForms
 control: Diagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Measurement Units in Windows Forms Diagram

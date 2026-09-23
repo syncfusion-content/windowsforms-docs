@@ -5,6 +5,7 @@ description: Preview rows in Data Grid display additional record details within 
 platform: windowsforms
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Preview Rows in Windows Forms Data Grid

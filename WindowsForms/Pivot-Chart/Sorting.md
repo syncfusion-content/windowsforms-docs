@@ -5,6 +5,7 @@ description: Sorting in the Windows Forms Pivot Chart enables data to be arrange
 platform: windowsforms
 control: PivotChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Sorting in Windows Forms Pivot Chart

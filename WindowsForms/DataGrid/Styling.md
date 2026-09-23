@@ -5,6 +5,7 @@ description: Styles in Data Grid support customizing grid appearance, cell and r
 platform: windowsforms
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Styles in Windows Forms Data Grid

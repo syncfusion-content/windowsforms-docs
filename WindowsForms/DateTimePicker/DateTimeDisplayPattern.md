@@ -5,6 +5,7 @@ description: Learn how to customize the date time display pattern in Windows For
 platform: WindowsForms
 control: SfDateTimeEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Display Pattern in Windows Forms DateTimePicker

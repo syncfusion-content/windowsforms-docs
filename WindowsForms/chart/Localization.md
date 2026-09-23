@@ -5,6 +5,7 @@ description: Localization in the Windows Forms Chart enables chart content and u
 platform: windowsforms
 control: Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Localization in Windows Forms Chart

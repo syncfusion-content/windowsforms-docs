@@ -5,6 +5,7 @@ description: Enable touch interactions in the Syncfusion® Windows Forms Diagram
 platform: windowsforms
 control: Diagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Touch Support in Windows Forms Diagram

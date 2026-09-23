@@ -5,6 +5,7 @@ description: Learn about keyboard and mouse navigation in Windows Forms DateTime
 platform: WindowsForms
 control: SfDateTimeEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Navigation in Windows Forms DateTimePicker
