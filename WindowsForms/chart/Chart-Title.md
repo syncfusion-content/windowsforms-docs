@@ -1,9 +1,11 @@
 ---
 layout: post
-title: Title in Windows Forms Chart | Syncfusion®appliesto: UI Component Suite, Chart SDKdescription: Title in the Windows Forms Chart displays descriptive text for charts and supports customization of content, alignment, and appearance.
+title: Title in Windows Forms Chart | Syncfusion®
+description: Title in the Windows Forms Chart displays descriptive text for charts and supports customization of content, alignment, and appearance.
 platform: windowsforms
 control: Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Title in Windows Forms Chart

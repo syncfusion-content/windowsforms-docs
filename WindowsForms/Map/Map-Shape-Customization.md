@@ -1,9 +1,11 @@
 ---
 layout: post
-title: Shape Customization in Windows Forms Maps | SyncfusionÂ®appliesto: UI Component Suite, Chart SDKdescription: Shape customization in the Windows Forms Maps enables customization of shape appearance, colors, borders, and visual styles.
+title: Shape Customization in Windows Forms Maps | Syncfusion®
+description: Shape customization in the Windows Forms Maps enables customization of shape appearance, colors, borders, and visual styles.
 platform: windowsforms
 control: Maps
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Shape Customization in Windows Forms Maps

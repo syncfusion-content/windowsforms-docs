@@ -1,9 +1,11 @@
 ---
 layout: post
-title: User Interactions in Windows Forms Maps | Syncfusion®appliesto: UI Component Suite, Chart SDKdescription: User interactions in the Windows Forms Maps enable zooming, panning, selection, and interactive exploration of map data and elements.
+title: User Interactions in Windows Forms Maps | Syncfusion®
+description: User interactions in the Windows Forms Maps enable zooming, panning, selection, and interactive exploration of map data and elements.
 platform: windowsforms
 control: Maps
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # User Interactions in Windows Forms Maps

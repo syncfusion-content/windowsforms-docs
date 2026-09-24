@@ -1,9 +1,11 @@
 ---
 layout: post
-title: Merge Cells in Windows Forms Data Grid | Syncfusion®appliesto: UI Component Suite, Grid SDKdescription: Merge cells in Data Grid combines adjacent cells with matching values, enhancing data presentation, readability, and visual organization.
+title: Merge Cells in Windows Forms Data Grid | Syncfusion®
+description: Merge cells in Data Grid combines adjacent cells with matching values, enhancing data presentation, readability, and visual organization.
 platform: windowsforms
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Merge Cells in Windows Forms Data Grid

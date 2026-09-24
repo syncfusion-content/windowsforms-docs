@@ -1,9 +1,11 @@
 ---
 layout: post
-title: Undo / Redo in Windows Forms Diagram | Syncfusion®appliesto: UI Component Suite, Diagram SDKdescription: Manage undo and redo operations in the Syncfusion® Windows Forms Diagram control using the History Manager and atomic actions.
+title: Undo / Redo in Windows Forms Diagram | Syncfusion®
+description: Manage undo and redo operations in the Syncfusion® Windows Forms Diagram control using the History Manager and atomic actions.
 platform: windowsforms
 control: Diagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Undo / Redo in Windows Forms Diagram

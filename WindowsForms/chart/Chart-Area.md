@@ -1,9 +1,11 @@
 ---
 layout: post
-title: Area in Windows Forms Chart | Syncfusion®appliesto: UI Component Suite, Chart SDKdescription: Area in the Windows Forms Chart defines the plotting region and supports customization of axes, series, and visual elements.
+title: Area in Windows Forms Chart | Syncfusion®
+description: Area in the Windows Forms Chart defines the plotting region and supports customization of axes, series, and visual elements.
 platform: windowsforms
 control: Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Area in Windows Forms Chart

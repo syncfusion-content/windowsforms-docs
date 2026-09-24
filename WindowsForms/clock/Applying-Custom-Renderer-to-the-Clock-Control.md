@@ -1,9 +1,11 @@
 ---
 layout: post
-title: Custom Renderer in Windows Forms Clock | Syncfusionappliesto: UI Component Suite, Scheduler SDKdescription: Learn how to apply custom renderer to Windows Forms Clock control for advanced customization and personalized appearance.
+title: Custom Renderer in Windows Forms Clock | Syncfusion
+description: Learn how to apply custom renderer to Windows Forms Clock control for advanced customization and personalized appearance.
 platform: WindowsForms
 control: Clock
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Custom Renderer in Windows Forms Clock

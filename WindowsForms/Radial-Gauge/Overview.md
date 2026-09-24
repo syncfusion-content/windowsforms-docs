@@ -1,9 +1,11 @@
 ---
 layout: post
-title: About Syncfusion® Windows Forms Gauge Control | Syncfusion®appliesto: UI Component Suite, Chart SDKdescription: Learn about the introduction of Syncfusion Essential Studio® Windows Forms Gauge control, its features, capabilities, and more details.
+title: About Syncfusion® Windows Forms Gauge Control | Syncfusion®
+description: Learn about the introduction of Syncfusion Essential Studio® Windows Forms Gauge control, its features, capabilities, and more details.
 platform: WindowsForms
 control: Gauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # About Syncfusion® Windows Forms Gauge Control

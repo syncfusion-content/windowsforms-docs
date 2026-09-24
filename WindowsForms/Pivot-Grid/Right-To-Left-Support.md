@@ -1,9 +1,11 @@
 ---
 layout: post
-title: Right to Left Support in Windows Forms Pivot Grid | Syncfusion®appliesto: UI Component Suite, Grid SDKdescription: Enable right-to-left layout in Syncfusion® Windows Forms Pivot Grid control to support Middle Eastern languages like Arabic and Hebrew for localization.
+title: Right to Left Support in Windows Forms Pivot Grid | Syncfusion®
+description: Enable right-to-left layout in Syncfusion® Windows Forms Pivot Grid control to support Middle Eastern languages like Arabic and Hebrew for localization.
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Right to Left Support in Windows Forms Pivot Grid
