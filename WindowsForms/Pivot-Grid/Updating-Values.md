@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Updating Values in Windows Forms Pivot Grid | Syncfusion®
-appliesto: UI Component Suite, Grid SDK
 description: Update values in Syncfusion® Windows Forms Pivot Grid control in real time with EnableUpdating and ThrottleUpdateRate for efficient performance.
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Updating Values in Windows Forms Pivot Grid

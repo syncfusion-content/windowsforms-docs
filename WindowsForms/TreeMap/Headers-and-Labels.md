@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Headers and Labels in Windows Forms TreeMap | Syncfusion®
-appliesto: UI Component Suite, Chart SDK
 description: Headers and labels in the Windows Forms TreeMap enable customization of text content, formatting, and display for hierarchical data visualization.
 platform: windowsforms
 control: TreeMap 
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Headers and Labels in WinForms TreeMap

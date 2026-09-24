@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Cell Selection in Windows Forms Pivot Grid | Syncfusion®
-appliesto: UI Component Suite, Grid SDK
 description: Enable cell selection in Syncfusion® Windows Forms Pivot Grid control with Excel-like frames, multi-cell selection, and customizable borders.
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Cell Selection in Windows Forms Pivot Grid

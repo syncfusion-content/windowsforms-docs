@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Export To PDF in Windows Forms Data Grid | Syncfusion®
-appliesto: UI Component Suite, Grid SDK
 description: Export To PDF in Data Grid supports exporting records with customization options, formatting, styles, and layout settings for PDF documents.
 platform: windowsforms
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Export To PDF in Windows Forms Data Grid

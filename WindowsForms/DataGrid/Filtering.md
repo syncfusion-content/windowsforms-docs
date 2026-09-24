@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Filtering in Windows Forms Data Grid | Syncfusion®
-appliesto: UI Component Suite, Grid SDK
 description: Filtering in Data Grid supports Excel-like filtering, custom filter conditions, and data analysis for efficient record retrieval and management.
 platform: windowsforms
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Filtering in Windows Forms Data Grid

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Scrolling in Windows Forms Diagram | Syncfusion®
-appliesto: UI Component Suite, Diagram SDK
 description: Configure scrolling behavior in the Syncfusion® Windows Forms Diagram control with scrollbars, virtual bounds, thumb tracking, and scroll tips.
 platform: windowsforms
 control: Diagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Getting Started with Windows Forms TreeMap | Syncfusion®
-appliesto: UI Component Suite, Chart SDK
 description: Learn how to get started with the Syncfusion® Windows Forms TreeMap control. Explore setup, data binding, features, and customization options.
 platform: windowsforms
 control: TreeMap 
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Getting Started with WinForms TreeMap

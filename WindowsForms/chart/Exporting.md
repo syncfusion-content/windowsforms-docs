@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Exporting in Windows Forms Chart | Syncfusion®
-appliesto: UI Component Suite, Chart SDK
 description: Exporting in the Windows Forms Chart enables chart data and visuals to be saved in supported formats for sharing, reporting, and analysis.
 platform: windowsforms
 control: Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Exporting in Windows Forms Chart

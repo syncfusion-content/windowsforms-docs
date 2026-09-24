@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Data Validation in Windows Forms Data Grid | Syncfusion®
-appliesto: UI Component Suite, Grid SDK
 description: Data validation in Data Grid supports validation rules, input checking, and error notifications to ensure accurate and reliable data entry.
 platform: windowsforms
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Data Validation in Windows Forms Data Grid

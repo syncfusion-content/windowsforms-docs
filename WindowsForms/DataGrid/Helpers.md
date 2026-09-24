@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Helpers in Windows Forms Data Grid | Syncfusion®
-appliesto: UI Component Suite, Grid SDK
 description: Helpers in Data Grid provides helper classes and methods to customize grid behavior, access grid elements, and simplify development tasks.
 platform: windowsforms
 control: Data Grid 
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Helpers in Windows Forms Data Grid

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Grouping in Windows Forms Data Grid | Syncfusion®
-appliesto: UI Component Suite, Grid SDK
 description: Grouping in Data Grid organizes and displays data in groups to improve readability, navigation, and data analysis.
 platform: windowsforms
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Grouping in Windows Forms Data Grid

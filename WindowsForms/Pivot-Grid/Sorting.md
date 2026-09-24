@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Sorting in Windows Forms Pivot Grid | Syncfusion®
-appliesto: UI Component Suite, Grid SDK
 description: Sorting in Syncfusion® Windows Forms Pivot Grid control helps users organize and analyze data efficiently using custom comparers or grouping bar.
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Sorting in Windows Forms Pivot Grid

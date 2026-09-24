@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Data Virtualization in Windows Forms Data Grid | Syncfusion®
-appliesto: UI Component Suite, Grid SDK
 description: Data virtualization in Data Grid enables efficient loading, scrolling, and rendering of large datasets for improved performance and responsiveness.
 platform: windowsforms
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Data Virtualization in Windows Forms Data Grid
