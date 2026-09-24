@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Selection in Windows Forms Data Grid | Syncfusion®
+appliesto: UI Component Suite, Grid SDK
 description: Selection in Data Grid supports row, cell, and multiple selection modes with customizable behaviors for efficient data interaction and navigation.
 platform: windowsforms
 control: Data Grid
 documentation: ug
-appliesto: UI Component Suite, Grid SDK
 ---
 
 # Selection in Windows Forms Data Grid

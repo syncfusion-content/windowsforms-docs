@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Theming in Windows Forms Pivot Grid | Syncfusion®
+appliesto: UI Component Suite, Grid SDK
 description: Apply built-in themes in Syncfusion® Windows Forms Pivot Grid control using GridVisualStyles with support for Metro, Office styles, and customization.
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
-appliesto: UI Component Suite, Grid SDK
 ---
 
 # Theming in Windows Forms Pivot Grid

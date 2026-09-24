@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Zoom and Pan in Windows Forms Diagram | Syncfusion®
+appliesto: UI Component Suite, Diagram SDK
 description: Zoom and pan diagram content in the Syncfusion® Windows Forms Diagram control with interactive zoom tools, magnification settings, and panning support.
 platform: windowsforms
 control: Diagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 

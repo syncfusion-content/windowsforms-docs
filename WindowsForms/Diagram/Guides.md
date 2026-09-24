@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Guides in Windows Forms Diagram | Syncfusion®
+appliesto: UI Component Suite, Diagram SDK
 description: Align diagram nodes with visual guides in the Syncfusion® Windows Forms Diagram control using boundary, center, and margin guides.
 platform: windowsforms
 control: Diagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 

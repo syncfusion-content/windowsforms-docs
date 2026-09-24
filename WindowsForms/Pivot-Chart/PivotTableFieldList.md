@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Table Field List in Windows Forms Pivot Chart | SyncfusionÂ®
+title: Table Field List in Windows Forms Pivot Chart | Syncfusion®
 description: Table field list in the Windows Forms Pivot Chart enables interactive selection, arrangement, and filtering of pivot fields for data analysis.
 platform: windowsforms
 control: PivotChart

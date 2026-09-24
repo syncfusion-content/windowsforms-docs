@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exporting in Windows Forms Pivot Chart | SyncfusionÂ®
+title: Exporting in Windows Forms Pivot Chart | Syncfusion®
 description: Exporting in the Windows Forms Pivot Chart enables chart data and visuals to be saved in supported formats for sharing, reporting, and analysis.
 platform: windowsforms
 control: PivotChart

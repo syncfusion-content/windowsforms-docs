@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Data Exploration in Windows Forms Pivot Grid | Syncfusion®
+appliesto: UI Component Suite, Grid SDK
 description: Explore data in Syncfusion® Windows Forms Pivot Grid control with drill down and drill up support, expanding or collapsing headers programmatically.
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
-appliesto: UI Component Suite, Grid SDK
 ---
 
 # Data Exploration in Windows Forms Pivot Grid

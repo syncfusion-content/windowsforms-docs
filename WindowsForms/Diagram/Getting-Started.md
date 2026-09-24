@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Getting Started with Windows Forms Diagram | Syncfusion®
+appliesto: UI Component Suite, Diagram SDK
 description: Learn how to get started with the Syncfusion® Windows Forms Diagram control. Explore setup, controls, features, examples, and customization options.
 platform: windowsforms
 control: Diagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Getting Started with Windows Forms Diagram

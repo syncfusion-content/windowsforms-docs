@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Sorting in Windows Forms Data Grid | Syncfusion®
+appliesto: UI Component Suite, Grid SDK
 description: Sorting in Data Grid supports single and multiple column sorting, custom sort logic, and flexible data organization for improved analysis.
 platform: windowsforms
 control: Data Grid
 documentation: ug
-appliesto: UI Component Suite, Grid SDK
 ---
 
 # Sorting in Windows Forms Data Grid

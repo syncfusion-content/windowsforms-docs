@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Getting Started with Windows Forms Maps | Syncfusion®
+appliesto: UI Component Suite, Chart SDK
 description: Learn how to get started with the Syncfusion® Windows Forms Maps control. Explore setup, configuration, map layers, and customization options.
 platform: windowsforms
 control: Maps
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Getting Started with Windows Forms Maps

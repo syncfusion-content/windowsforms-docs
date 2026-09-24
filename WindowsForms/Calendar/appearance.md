@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Appearance in Windows Forms Calendar | Syncfusion
+appliesto: UI Component Suite, Scheduler SDK
 description: Learn about appearance customization options in Windows Forms Calendar control for styling and theming.
 platform: WindowsForms
 control: SfCalendar
 documentation: ug
-appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Appearance in Windows Forms Calendar

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Ports and Connections in Windows Forms Diagram | Syncfusion®
+appliesto: UI Component Suite, Diagram SDK
 description: Create and customize ports and connections in the Syncfusion® Windows Forms Diagram control with support of connection points, port styles, and linking options.
 platform: windowsforms
 control: Diagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 

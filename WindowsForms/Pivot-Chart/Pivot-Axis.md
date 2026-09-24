@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Axis in Windows Forms Pivot Chart | SyncfusionÂ®
+title: Axis in Windows Forms Pivot Chart | Syncfusion®
 description: Axis in the Windows Forms Pivot Chart defines data grouping, categories, and hierarchical levels for data visualization and analysis.
 platform: windowsforms
 control: PivotChart

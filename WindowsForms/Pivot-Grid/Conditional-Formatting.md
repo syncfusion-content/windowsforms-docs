@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Conditional Formatting in Windows Forms Pivot Grid | Syncfusion®
+appliesto: UI Component Suite, Grid SDK
 description: Apply conditional formatting in Syncfusion® Windows Forms Pivot Grid control to style cells dynamically based on rules, ranges, and conditions.
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
-appliesto: UI Component Suite, Grid SDK
 ---
 
 # Conditional Formatting in Windows Forms Pivot Grid

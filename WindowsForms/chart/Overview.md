@@ -1,11 +1,11 @@
 ---
 layout: post
 title: About Syncfusion® Windows Forms Chart Control | Syncfusion®
+appliesto: UI Component Suite, Chart SDK
 description: Learn about the introduction of Syncfusion Essential Studio® Windows Forms Chart control, its features, capabilities, and more details.
 platform: windowsforms
 control: Chart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # About Syncfusion® Windows Forms Chart Control

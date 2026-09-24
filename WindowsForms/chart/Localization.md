@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Localization in Windows Forms Chart | Syncfusion®
+appliesto: UI Component Suite, Chart SDK
 description: Localization in the Windows Forms Chart enables chart content and user interface elements to be displayed in different languages and regional settings.
 platform: windowsforms
 control: Chart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Localization in Windows Forms Chart

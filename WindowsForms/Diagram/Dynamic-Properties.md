@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Dynamic Properties in Windows Forms Diagram | Syncfusion®
+appliesto: UI Component Suite, Diagram SDK
 description: Add and manage dynamic properties for nodes and connectors in the Syncfusion® Windows Forms Diagram control using the PropertyBag collection.
 platform: windowsforms
 control: Diagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 

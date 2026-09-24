@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Getting Started with Windows Forms Pivot Chart | Syncfusion®
+appliesto: UI Component Suite, Chart SDK
 description: Learn how to get started with the Syncfusion® Windows Forms Pivot Chart control. Explore setup, configuration, features, and customization options.
 platform: windowsforms
 control: PivotChart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Getting Started with Windows Forms Pivot Chart

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Rendering Mode in Windows Forms Smith Chart | Syncfusion®
+appliesto: UI Component Suite, Chart SDK
 description: Rendering mode in the Windows Forms Smith Chart controls how chart elements are rendered, supporting optimized visualization and performance.
 platform: windowsforms
 control: SfSmithChart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 # Rendering Mode in Windows Forms Smith Chart
 

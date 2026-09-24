@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styles in Windows Forms Data Grid | SyncfusionÂ®
+title: Styles in Windows Forms Data Grid | Syncfusion®
 description: Styles in Data Grid support customizing grid appearance, cell and row styles, themes, and visual elements for enhanced user experience.
 platform: windowsforms
 control: Data Grid

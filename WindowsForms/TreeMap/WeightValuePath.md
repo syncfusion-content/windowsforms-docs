@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Weight Value Path in Windows Forms TreeMap | Syncfusion®
+appliesto: UI Component Suite, Chart SDK
 description: Weight value path in the Windows Forms TreeMap maps data values to item sizes, enabling proportional visualization of hierarchical data.
 platform: windowsforms
-control: TreeMap
+control: TreeMap 
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Weight Value Path in WinForms TreeMap

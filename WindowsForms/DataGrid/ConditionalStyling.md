@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Conditional Styling in Windows Forms Data Grid | Syncfusion®
+appliesto: UI Component Suite, Grid SDK
 description: Conditional styling in Data Grid customizes cell and row appearance based on specific conditions, improving data visualization and readability.
 platform: windowsforms
 control: Data Grid
 documentation: ug
-appliesto: UI Component Suite, Grid SDK
 ---
 
 # Conditional Styling in Windows Forms Data Grid

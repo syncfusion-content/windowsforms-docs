@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Preview Rows in Windows Forms Data Grid | Syncfusion®
+appliesto: UI Component Suite, Grid SDK
 description: Preview rows in Data Grid display additional record details within rows, offering customizable layouts and enhanced data visibility.
 platform: windowsforms
 control: Data Grid
 documentation: ug
-appliesto: UI Component Suite, Grid SDK
 ---
 
 # Preview Rows in Windows Forms Data Grid

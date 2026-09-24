@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Data Binding in Windows Forms Pivot Grid | Syncfusion®
+appliesto: UI Component Suite, Grid SDK
 description: Bind IEnumerable lists or data tables to Syncfusion® Windows Forms Pivot Grid control with refresh support and events for dynamic data updates.
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
-appliesto: UI Component Suite, Grid SDK
 ---
 
 # Data Binding in Windows Forms Pivot Grid

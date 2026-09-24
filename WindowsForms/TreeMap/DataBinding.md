@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Data Binding in Windows Forms TreeMap | Syncfusion®
+appliesto: UI Component Suite, Chart SDK
 description: Data binding in the Windows Forms TreeMap enables visualization of hierarchical data through grouping, mapping, and interactive data representation.
 platform: windowsforms
 control: TreeMap
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Data Binding in WinForms TreeMap

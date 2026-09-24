@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Getting Started with Windows Forms Barcode | Syncfusion®
+appliesto: UI Component Suite, Chart SDK
 description: Learn how to get started with the Syncfusion® Windows Forms Barcode control. Explore setup, configuration, barcode generation, and customization options.
 platform: windowsforms
 control: SfBarcode
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 # Getting Started with Windows Forms Barcode
 This section provides a quick overview for working with the [Barcode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Barcode.SfBarcode.html) for WinForms.

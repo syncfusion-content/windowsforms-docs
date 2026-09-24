@@ -1,11 +1,11 @@
 ---
 layout: post
 title: About Syncfusion® Windows Forms Smith Chart Control | Syncfusion®
+appliesto: UI Component Suite, Chart SDK
 description: Learn about the introduction of Syncfusion Essential Studio® Windows Forms Smith Chart control, its features, capabilities, and more details.
 platform: windowsforms
 control: SfSmithChart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 # About Syncfusion® Windows Forms Smith Chart Control
 

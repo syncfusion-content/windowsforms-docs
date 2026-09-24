@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Data Binding in Windows Forms Data Grid | Syncfusion®
+appliesto: UI Component Suite, Grid SDK
 description: Data binding in Data Grid supports connecting to various data sources, enabling efficient data management, display, and synchronization.
 platform: windowsforms
 control: Data Grid
 documentation: ug
-appliesto: UI Component Suite, Grid SDK
 ---
 
 # Data Binding in Windows Forms Data Grid

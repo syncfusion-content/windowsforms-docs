@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Appearance in Windows Forms DateTimePicker | Syncfusion
+appliesto: UI Component Suite, Scheduler SDK
 description: Learn about appearance customization options in Windows Forms DateTimePicker control for styling and visual customization.
 platform: WindowsForms
 control: SfDateTimeEdit
 documentation: ug
-appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Appearance in Windows Forms DateTimePicker

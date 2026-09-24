@@ -1,11 +1,11 @@
 ---
 layout: post
 title: About Syncfusion® Windows Forms Data Grid Control| Syncfusion®
+canonical_url: "https://www.syncfusion.com/winforms-ui-controls/datagrid"
 description: Learn about the overview of Syncfusion® Essential Studio Windows Forms Data Grid Control, its features and more details.
 platform: windowsforms
 control: Data Grid
 documentation: ug
-canonical_url: "https://www.syncfusion.com/winforms-ui-controls/datagrid"
 appliesto: UI Component Suite, Grid SDK
 ---
 
