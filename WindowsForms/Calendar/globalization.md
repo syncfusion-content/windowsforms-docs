@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Globalization in Windows Forms Calendar | Syncfusion
-appliesto: UI Component Suite, Scheduler SDK
 description: Learn about globalization and localization support in Windows Forms Calendar control for multiple cultures.
 platform: WindowsForms
 control: SfCalendar
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Globalization in Windows Forms Calendar
