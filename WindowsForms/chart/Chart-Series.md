@@ -8371,7 +8371,7 @@ You can set the co-ordinates (XValue and the YValue property), symbols and their
 
 ![Chart Series](Chart-Series_images/Chart-Series_img149.jpeg)
 
-#### Programmatically
+### Programmatically
 
 * Creating and Customizing the Custom Point.
 

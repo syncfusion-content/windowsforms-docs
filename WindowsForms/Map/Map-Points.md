@@ -13,7 +13,7 @@ appliesto: UI Component Suite, Chart SDK
 [`Points`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Maps.ShapeFileRecord.html#Syncfusion_Windows_Forms_Maps_ShapeFileRecord_Points) are one of the record types in the shape file layer. Points are used to specify the specific point in the map. For example, they are used to specify the capital of countries. Points in the shape file are given as latitude and longitude coordinates. Those points should be converted as map points. 
 
 
-### Code sample
+## Code sample
 
 {% tabs %}
 
