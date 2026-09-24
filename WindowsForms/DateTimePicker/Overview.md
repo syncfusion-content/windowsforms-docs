@@ -1,8 +1,8 @@
 ---
 layout: post
 title: About Syncfusion Windows Forms DateTimePicker Control | Syncfusion
-platform: WindowsForms
 description: Learn about the Syncfusion Essential Studio Windows Forms DateTimePicker control, its features, date and time editing, and customization options.
+platform: WindowsForms
 control: SfDateTimeEdit
 documentation: ug
 appliesto: UI Component Suite, Scheduler SDK

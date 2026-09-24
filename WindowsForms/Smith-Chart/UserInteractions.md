@@ -1,11 +1,11 @@
 ---
 layout: post
 title: User Interactions in Windows Forms Smith Chart | Syncfusion®
-appliesto: UI Component Suite, Chart SDK
 description: User interactions in the Windows Forms Smith Chart enable selection, tooltips, and interactive exploration of chart data and elements.
 platform: windowsforms
 control: SfSmithChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 # User Interactions in Windows Forms Smith Chart
 

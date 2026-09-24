@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Tooltip Support in Windows Forms TreeMap | Syncfusion®
+title: Tooltip Support in Windows Forms TreeMap | SyncfusionÂ®
 description: Tooltip support in the Windows Forms TreeMap displays additional information for data items and supports customization of content and appearance.
 platform: windowsforms
-control: TreeMap 
+control: TreeMap
 documentation: ug
 appliesto: UI Component Suite, Chart SDK
 ---

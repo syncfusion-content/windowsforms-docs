@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Axes in Windows Forms Smith Chart | Syncfusion®
-appliesto: UI Component Suite, Chart SDK
 description: Axes in the Windows Forms Smith Chart define chart coordinates, scales, labels, and grid lines for accurate data visualization.
 platform: windowsforms
 control: SfSmithChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 # Axes in Windows Forms Smith Chart
 

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: About Syncfusion® Windows Forms TreeMap Control | Syncfusion®
-appliesto: UI Component Suite, Chart SDK
 description: Learn about the introduction of Syncfusion Essential Studio® Windows Forms TreeMap control, its features, capabilities, and more details.
 platform: windowsforms
-control: TreeMap 
+control: TreeMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # About Syncfusion® WinForms TreeMap Control

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customization in Windows Forms Barcode | Syncfusion®
+title: Customization in Windows Forms Barcode | SyncfusionÂ®
 description: Customization in the Windows Forms Barcode enables configuration of barcode appearance, size, colors, text display, and styling options.
 platform: windowsforms
 control: SfBarcode

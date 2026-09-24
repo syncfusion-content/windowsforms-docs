@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Row Height Customization in Windows Forms Data Grid | Syncfusion®
-appliesto: UI Component Suite, Grid SDK
 description: Row Height Customization in Data Grid customizes row heights dynamically to improve data display, readability, and user experience.
 platform: windowsforms
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Row Height Customization in Windows Forms Data Grid

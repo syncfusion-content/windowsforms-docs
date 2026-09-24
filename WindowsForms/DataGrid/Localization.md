@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Localization in Windows Forms Data Grid | Syncfusion®
-appliesto: UI Component Suite, Grid SDK
 description: Localization in Data Grid supports customizing default strings, messages, and interface text to provide a localized user experience.
 platform: windowsforms
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Localization in Windows Forms Data Grid

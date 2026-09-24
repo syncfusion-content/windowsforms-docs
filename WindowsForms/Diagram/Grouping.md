@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Grouping in Windows Forms Diagram | Syncfusion®
-appliesto: UI Component Suite, Diagram SDK
 description: Group, ungroup, and manage multiple nodes in the Syncfusion® Windows Forms Diagram control with support for child node positioning.
 platform: windowsforms
 control: Diagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 

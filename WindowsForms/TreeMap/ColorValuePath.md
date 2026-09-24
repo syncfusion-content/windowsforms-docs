@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Color Value Path in Windows Forms TreeMap | Syncfusion®
-appliesto: UI Component Suite, Chart SDK
 description: Color value path in the Windows Forms TreeMap maps data values to colors, enabling customized visualization and meaningful representation of data.
 platform: windowsforms
-control: TreeMap 
+control: TreeMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Color Value Path in WinForms TreeMap

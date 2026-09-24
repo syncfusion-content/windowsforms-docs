@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Grouping Bar in Windows Forms Pivot Grid | Syncfusion®
-appliesto: UI Component Suite, Grid SDK
 description: Manage fields in Syncfusion® Windows Forms Pivot Grid control using the grouping bar to filter, sort, reorder, and remove items interactively.
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Grouping Bar in Windows Forms Pivot Grid
