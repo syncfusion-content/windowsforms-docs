@@ -11,9 +11,9 @@ documentation: ug
 
 ## Gantt chart
 
-A gantt chart displays tasks or project phases as horizontal bars along a timeline. The position and length of each bar show when a task starts and how long it lasts.
+[Gantt Chart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeriesType.html#Syncfusion_Windows_Forms_Chart_ChartSeriesType_Gantt) displays tasks or project phases as horizontal bars along a timeline. The position and length of each bar show when a task starts and how long it lasts.
 
-The following code example demonstrates how to create a gantt Chart.
+The following code example demonstrates how to create a gantt chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -113,48 +113,9 @@ chartControl.Series(0).Style.PointWidth = 1.2F
 
 ![Gantt Point Width in Windows Forms](../Chart-Types_images/windowsforms-gantt-point-width.png)
 
-### Related points
-
-The [RelatedPoints](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStyleInfo.html#Syncfusion_Windows_Forms_Chart_ChartStyleInfo_RelatedPoints) property specifies the relationship between data points in a gantt chart and renders lines connecting the specified points.
-
-The property returns a [ChartRelatedPointInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRelatedPointInfo.html) object that provides the following options:
-
-- `Color`: Specifies the color of the connecting line. The default value is the control text color.
-- `Alignment`: Specifies the pen alignment of the connecting line. The default value is `Center`.
-- `Points`: Specifies the indices of the data points to connect. The default value is `null`.
-- `Count`: Gets the number of related points. The default value is `0`.
-- `DashStyle`: Specifies the dash style of the connecting line. The default value is `Solid`.
-- `DashPattern`: Specifies a custom dash pattern using a float array. The default value is `null`.
-- `Width`: Specifies the width of the connecting line. The default value is `5.0f`.
-
-N> The `RelatedPoints` property applies only to Gantt charts and can be configured for a series or an individual data point.
-
-The following code connects the first Gantt data point to the second and third data points.
-
-{% tabs %}
-{% highlight c# %}
-ChartRelatedPointInfo relatedPoints =
-    chartControl.Series[0].Styles[0].RelatedPoints;
-
-relatedPoints.Points = new int[] { 1, 2 };
-relatedPoints.Color = Color.Red;
-relatedPoints.DashStyle = DashStyle.Solid;
-relatedPoints.Width = 3.0f;
-{% endhighlight %}
-{% highlight vb %}
-Dim relatedPoints As ChartRelatedPointInfo =
-    chartControl.Series(0).Styles(0).RelatedPoints
-
-relatedPoints.Points = New Integer() {1, 2}
-relatedPoints.Color = Color.Red
-relatedPoints.DashStyle = DashStyle.Solid
-relatedPoints.Width = 3.0F
-{% endhighlight %}
-{% endtabs %}
-
 ## HeatMap chart
 
-A heat map chart is a graphical representation of data where the values taken by a variable in two-dimensional map are represented as colors.
+[Heatmap Chart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeriesType.html#Syncfusion_Windows_Forms_Chart_ChartSeriesType_HeatMap) is a graphical representation of data where the values taken by a variable in two-dimensional map are represented as colors.
 
 The following code example demonstrates how to create a heat map chart.
 
@@ -494,23 +455,6 @@ chartControl.Series(0).ConfigItems.HeatMapItem.MaximumCharacters = 3
 
 ![HeatMap Label Truncation in Windows Forms](../Chart-Types_images/windowsforms-heat-map-maximum-character.png)
 
-### Minimum font size
-
-The [MinimumFontSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_MinimumFontSize) property specifies the minimum font size used when heat map labels are automatically resized, with `6f` as its default value.
-
-The following code sets the minimum label font size to **8f**.
-
-{% tabs %}
-{% highlight c# %}
-chartControl.Series[0].ConfigItems.HeatMapItem.MinimumFontSize =
-    8f;
-{% endhighlight %}
-{% highlight vb %}
-chartControl.Series(0).ConfigItems.HeatMapItem.MinimumFontSize =
-    8.0F
-{% endhighlight %}
-{% endtabs %}
-
 ### Show large labels
 
 The [ShowLargeLabels](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartHeatMapConfigItem_ShowLargeLabels) property specifies whether labels that exceed the available display area are displayed, with `false` as its default value.
@@ -532,9 +476,9 @@ chartControl.Series(0).ConfigItems.HeatMapItem.ShowLargeLabels =
 
 ## Tornado chart
 
-The tornado chart displays data points as horizontal bars that extend in different directions based on their values.
+[Tornado Chart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeriesType.html#Syncfusion_Windows_Forms_Chart_ChartSeriesType_Tornado) displays data points as horizontal bars that extend in different directions based on their values.
 
-The following code example demonstrates how to create a tornado Chart.
+The following code example demonstrates how to create a tornado chart.
 
 {% tabs %}
 {% highlight c# %}

@@ -11,7 +11,7 @@ documentation: ug
 
 ## Line chart
 
-A line chart connects data points using straight lines to visualize trends and changes over a continuous range.
+[Line Chart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeriesType.html#Syncfusion_Windows_Forms_Chart_ChartSeriesType_Line) connects data points using straight lines to visualize trends and changes over a continuous range.
 
 The following code example demonstrates how to create a line chart.
 
@@ -355,7 +355,7 @@ End Sub
 
 ## Rotated spline chart
 
-The rotated spline chart is similar to an ordinary spline chart. The only difference is that, it would be rotated. It plots one or several series of data, and joins each series by smooth, rotated spline curves instead of straight lines.
+[Rotated Spline Chart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeriesType.html#Syncfusion_Windows_Forms_Chart_ChartSeriesType_RotatedSpline) is similar to an ordinary spline chart. The only difference is that, it would be rotated. It plots one or several series of data, and joins each series by smooth, rotated spline curves instead of straight lines.
 
 The following code example demonstrates how to create a rotated spline line chart.
 
@@ -409,7 +409,7 @@ chartControl.Series.Add(secondServer)
 
 ## Step line chart
 
-A step line chart use horizontal and vertical lines to connect data points resulting in a step like progression.
+[StepLine Chart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeriesType.html#Syncfusion_Windows_Forms_Chart_ChartSeriesType_StepLine) use horizontal and vertical lines to connect data points resulting in a step like progression.
 
 The following code example demonstrates how to create a step line chart.
 

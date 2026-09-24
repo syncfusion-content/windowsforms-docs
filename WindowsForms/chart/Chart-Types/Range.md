@@ -11,7 +11,7 @@ documentation: ug
 
 ## HiLo chart
 
-A hilo chart is a financial chart commonly used to display the trading range of a stock or other data over a period. It uses two Y-values `High` and `Low` to represent the maximum and minimum values, making it easy to visualize value ranges and fluctuations.
+[Hilo Chart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeriesType.html#Syncfusion_Windows_Forms_Chart_ChartSeriesType_HiLo) is a financial chart commonly used to display the trading range of a stock or other data over a period. It uses two Y-values `High` and `Low` to represent the maximum and minimum values, making it easy to visualize value ranges and fluctuations.
 
 The following code example demonstrates how to create a hilo chart.
 
@@ -79,7 +79,7 @@ profit.Style.Border.Width = 3
 
 ## Range column chart
 
-The range column chart is similar to the column chart, except that each column is rendered over a range. Therefore, the user must specify the starting and ending Y-axis values for each data point.
+[Range Column Chart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeriesType.html#Syncfusion_Windows_Forms_Chart_ChartSeriesType_ColumnRange) visualizes each data point as a vertical column, with the column height representing the difference between its lowest and highest values.
 
 The following code example demonstrates how to create a range column chart.
 
@@ -132,9 +132,9 @@ chartControl.Series.Add(secondServer)
 
 ![Range Column Chart in Windows Forms](../Chart-Types_images/windowsforms-column-range-chart.png)
 
-## Range area
+## Range area chart
 
-A range area chart is similar to an area chart, but it requires two Y-values for each X-value: a start (lower bound) and an end (upper bound). The chart fills the area between these two values, making it easy to visualize the range of data for each point.
+[RangeArea Chart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeriesType.html#Syncfusion_Windows_Forms_Chart_ChartSeriesType_RangeArea) displays the relationship between two variables by filling the area between the upper and lower bounds. It is useful for visualizing value ranges over time, such as price ranges or upper and lower limits.
 
 The following code example demonstrates how to create a range area chart.
 
@@ -175,20 +175,3 @@ chartControl.Series.Add(series)
 {% endtabs %}
 
 ![Range Area Chart in Windows Forms](../Chart-Types_images/windowsforms-range-area-chart.png)
-
-### Swap high low point
-
-The [SwapHighLowPoint](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRangeAreaConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartRangeAreaConfigItem_SwapHighLowPoint) property controls whether the High and Low values are automatically swapped in a range area chart when the low value is greater than the high value.
-
-The following code enables automatic swapping of High and Low values.
-
-{% tabs %}
-{% highlight c# %}
-chartControl.Series[0].ConfigItems.RangeAreaItem.SwapHighLowPoint =
-    true;
-{% endhighlight %}
-{% highlight vb %}
-chartControl.Series(0).ConfigItems.RangeAreaItem.SwapHighLowPoint =
-    True
-{% endhighlight %}
-{% endtabs %}
