@@ -5,6 +5,7 @@ description: Interactive features in Data Grid provide context menus, column cho
 platform: windowsforms
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 # Interactive Features in Windows Forms Data Grid
 

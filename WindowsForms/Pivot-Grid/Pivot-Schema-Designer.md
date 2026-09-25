@@ -5,6 +5,7 @@ description: Pivot Schema Designer in Syncfusion® Windows Forms Pivot Grid cont
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Pivot Schema Designer in Windows Forms Pivot Grid

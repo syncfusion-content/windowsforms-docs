@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Display Pattern in Windows Forms DateTimePicker | Syncfusion
+title: Display Pattern in Windows Forms DateTimePicker | Syncfusion®
 description: Learn how to customize the date time display pattern in Windows Forms DateTimePicker control to match your requirements.
 platform: WindowsForms
 control: SfDateTimeEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Display Pattern in Windows Forms DateTimePicker

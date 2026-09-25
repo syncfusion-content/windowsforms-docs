@@ -5,6 +5,7 @@ description: Grouping bar in the Windows Forms Pivot Chart enables interactive o
 platform: windowsforms
 control: PivotChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Grouping Bar in Windows Forms Pivot Chart

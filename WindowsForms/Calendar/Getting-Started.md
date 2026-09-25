@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion Windows Forms Calendar
 platform: WindowsForms
 control: SfCalendar 
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Getting Started with Windows Forms Calendar

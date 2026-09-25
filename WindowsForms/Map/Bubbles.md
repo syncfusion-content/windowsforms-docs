@@ -5,6 +5,7 @@ description: Bubble markers in the Windows Forms Maps visualize bound data value
 platform: windowsforms
 control: Maps
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Bubble Markers in Windows Forms Maps

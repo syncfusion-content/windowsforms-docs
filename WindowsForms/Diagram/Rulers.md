@@ -5,6 +5,7 @@ description: Display and customize horizontal and vertical rulers in the Syncfus
 platform: windowsforms
 control: Diagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Rulers in Windows Forms Diagram

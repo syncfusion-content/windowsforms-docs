@@ -5,6 +5,7 @@ description: Appearance in the Windows Forms Smith Chart enables customization o
 platform: windowsforms
 control: SfSmithChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 # Appearance in Windows Forms Smith Chart
 

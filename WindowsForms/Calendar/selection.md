@@ -5,6 +5,7 @@ description: Learn how to select single or multiple dates in Windows Forms Calen
 platform: WindowsForms
 control: SfCalendar
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Selection in Windows Forms Calendar

@@ -5,6 +5,7 @@ description: Learn about date and time value validation in Windows Forms DateTim
 platform: WindowsForms
 control: SfDateTimeEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Validation in Windows Forms DateTimePicker

@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® Windows Forms Maps c
 platform: windowsforms
 control: Maps
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Getting Started with Windows Forms Maps

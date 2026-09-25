@@ -5,6 +5,7 @@ description: Merge cells in Data Grid combines adjacent cells with matching valu
 platform: windowsforms
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Merge Cells in Windows Forms Data Grid
