@@ -5,6 +5,7 @@ description: Series in the Windows Forms Smith Chart display data using plotted 
 platform: windowsforms
 control: SfSmithChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 # Series in Windows Forms Smith Chart
 

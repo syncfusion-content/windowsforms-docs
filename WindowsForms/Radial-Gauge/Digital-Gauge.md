@@ -5,6 +5,7 @@ description: Digital gauge in the Windows Forms displays numeric values in a dig
 platform: WindowsForms
 control: Gauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Digital Gauge in Windows Forms Gauge

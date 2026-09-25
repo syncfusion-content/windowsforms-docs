@@ -5,6 +5,7 @@ description: Localization in Data Grid supports customizing default strings, mes
 platform: windowsforms
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Localization in Windows Forms Data Grid

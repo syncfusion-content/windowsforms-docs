@@ -5,6 +5,7 @@ description: Learn about context menu support in the Syncfusion® Windows Forms 
 platform: windowsforms
 control: Diagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Context Menu in Windows Forms Diagram

@@ -5,6 +5,7 @@ description: Marker customization in the Windows Forms Sparkline enables customi
 platform: windowsforms
 control: Sparkline
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Marker Customization in WinForms Sparkline

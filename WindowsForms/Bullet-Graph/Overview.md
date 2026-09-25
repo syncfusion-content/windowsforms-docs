@@ -5,6 +5,7 @@ description: Learn about the introduction of Syncfusion Essential Studio® Windo
 platform: windowsforms
 control: Bullet Graph
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # About Syncfusion® WinForms Bullet Graph Control

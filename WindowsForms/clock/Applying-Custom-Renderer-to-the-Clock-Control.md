@@ -5,6 +5,7 @@ description: Learn how to apply custom renderer to Windows Forms Clock control f
 platform: WindowsForms
 control: Clock
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Custom Renderer in Windows Forms Clock

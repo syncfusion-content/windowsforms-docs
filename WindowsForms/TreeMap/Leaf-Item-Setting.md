@@ -5,6 +5,7 @@ description: Leaf item settings in the Windows Forms TreeMap enable customizatio
 platform: windowsforms
 control: TreeMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Leaf Item Settings in WinForms TreeMap

@@ -5,6 +5,7 @@ description: UI Automation in Data Grid provides accessibility support, automati
 platform: WindowsForms
 control: Data Grid 
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # UI Automation in Windows Forms Data Grid

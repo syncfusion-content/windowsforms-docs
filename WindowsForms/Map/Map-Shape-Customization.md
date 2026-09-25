@@ -5,6 +5,7 @@ description: Shape customization in the Windows Forms Maps enables customization
 platform: windowsforms
 control: Maps
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Shape Customization in Windows Forms Maps

@@ -5,6 +5,7 @@ description: Legend in the Windows Forms Chart identifies data series and chart 
 platform: windowsforms
 control: Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Legend in Windows Forms Chart
