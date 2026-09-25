@@ -5,11 +5,12 @@ description: Populating Data in the Windows Forms Chart enables binding and disp
 platform: windowsforms
 control: Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Populating Data in Windows Forms Chart
 
-### Built-in Support for data-binding
+## Built-in Support for data-binding
 
 Essential® Chart has built-in support for binding to DataTables, DataSets, DataViews or any implementation of IListSource, IBindingList or ITypedList.
 

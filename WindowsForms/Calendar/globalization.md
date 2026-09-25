@@ -5,6 +5,7 @@ description: Learn about globalization and localization support in Windows Forms
 platform: WindowsForms
 control: SfCalendar
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Globalization in Windows Forms Calendar

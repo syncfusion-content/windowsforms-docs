@@ -5,6 +5,7 @@ description: Define and manage pivot rows in Syncfusion® Windows Forms Pivot Gr
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Pivot Rows in Windows Forms Pivot Grid

@@ -5,6 +5,7 @@ description: Enable touch support in Syncfusion® Windows Forms Pivot Grid contr
 platform: WindowsForms
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Touch Support in Windows Forms Pivot Grid

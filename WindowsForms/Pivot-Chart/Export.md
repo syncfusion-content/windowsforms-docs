@@ -5,6 +5,7 @@ description: Exporting in the Windows Forms Pivot Chart enables chart data and v
 platform: windowsforms
 control: PivotChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Exporting in Windows Forms Pivot Chart

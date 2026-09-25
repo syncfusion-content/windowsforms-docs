@@ -5,6 +5,7 @@ description: Series in the Windows Forms Chart represent data points and support
 platform: windowsforms
 control: Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Series in Windows Forms Chart
@@ -8370,7 +8371,7 @@ You can set the co-ordinates (XValue and the YValue property), symbols and their
 
 ![Chart Series](Chart-Series_images/Chart-Series_img149.jpeg)
 
-#### Programmatically
+### Programmatically
 
 * Creating and Customizing the Custom Point.
 

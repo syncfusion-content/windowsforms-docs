@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® Windows Forms Diagra
 platform: windowsforms
 control: Diagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Getting Started with Windows Forms Diagram

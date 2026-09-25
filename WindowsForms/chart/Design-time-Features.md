@@ -5,6 +5,7 @@ description: Design time features in the Windows Forms Chart enable chart config
 platform: windowsforms
 control: Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Design Time Features in Windows Forms Chart

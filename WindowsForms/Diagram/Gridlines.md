@@ -5,6 +5,7 @@ description: Customize diagram grid appearance and enable snap-to-grid behavior 
 platform: windowsforms
 control: Diagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Diagram Grid in Windows Forms Diagram

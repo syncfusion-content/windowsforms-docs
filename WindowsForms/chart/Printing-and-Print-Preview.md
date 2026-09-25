@@ -5,6 +5,7 @@ description: Printing in the Windows Forms Chart enables chart content to be pri
 platform: windowsforms
 control: Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Printing in Windows Forms Chart

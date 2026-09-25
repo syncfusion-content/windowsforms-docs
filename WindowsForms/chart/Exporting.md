@@ -5,6 +5,7 @@ description: Exporting in the Windows Forms Chart enables chart data and visuals
 platform: windowsforms
 control: Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Exporting in Windows Forms Chart

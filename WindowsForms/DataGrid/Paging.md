@@ -5,6 +5,7 @@ description: Paging in Data Grid supports data pagination, page navigation, and 
 platform: windowsforms
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Paging in Windows Forms Data Grid

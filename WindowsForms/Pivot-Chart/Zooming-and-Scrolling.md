@@ -5,6 +5,7 @@ description: Zooming and scrolling in the Windows Forms Pivot Chart enable inter
 platform: windowsforms
 control: PivotChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Zooming and Scrolling in Windows Forms Pivot Chart
