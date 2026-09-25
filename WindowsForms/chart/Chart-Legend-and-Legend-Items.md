@@ -78,7 +78,7 @@ chartControl.Legend.Visible = False
 
 ### Series legend item visibility
 
-The [LegendItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_LegendItem) property provides access to the legend item associated with a chart series. The `Visible` property of the legend item controls whether the legend is displayed without hiding the corresponding series.
+The [LegendItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_LegendItem) property provides access to the legend item associated with a chart series. The `Visible` property of the legend item controls whether the legend is displayed without hiding the corresponding series. The default value is `true`.
 
 The following code example hides the legend item associated with the series.
 
@@ -106,17 +106,12 @@ The following code example hides the second auto-generated legend item.
 {% tabs %}
 {% highlight c# %}
 
-if (chartControl.Legend.Items.Length > 0)
-{
-    chartControl.Legend.Items[1].Visible = false;
-}
+chartControl.Legend.Items[1].Visible = false;
 
 {% endhighlight %}
 {% highlight vb %}
 
-If chartControl.Legend.Items.Length > 0 Then
-    chartControl.Legend.Items(1).Visible = False
-End If
+chartControl.Legend.Items(1).Visible = False
 
 {% endhighlight %}
 {% endtabs %}
