@@ -1,15 +1,15 @@
 ---
 layout: post
 title: How To Load HTML Into the HTMLUI Control | Syncfusion®
-description: Learn how to how To Load HTML Into the HTMLUI Control in Syncfusion Windows Forms Html Viewer (HTMLUI) control.
+description: Learn how to Load HTML Into the HTMLUI Control in Syncfusion Windows Forms Html Viewer (HTMLUI) control.
 platform: windowsforms
 control: HTMLUIControl
 documentation: ug
 ---
 
-#  How to load HTML into the HTMLUI control
+#  How to load HTML into the WinForms HTML Viewer control
 
-You can make use of the [GetControlByElement](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.InputHTML.html#Syncfusion_Windows_Forms_HTMLUI_InputHTML_GetControlByElement_Syncfusion_Windows_Forms_HTMLUI_IHTMLElement_) method of the InputHTML Interface to get an object for the control present in an HTML element in the HTMLUI control. If the HTML element does not contain any control in it, it returns a null value, by default.
+You can make use of the [GetControlByElement](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.InputHTML.html#Syncfusion_Windows_Forms_HTMLUI_InputHTML_GetControlByElement_Syncfusion_Windows_Forms_HTMLUI_IHTMLElement_) method of the InputHTML Interface to get an object for the control present in an HTML element in the WinForms HTML Viewer control. If the HTML element does not contain any control in it, it returns a null value, by default.
 
 {% tabs %}
 
@@ -100,7 +100,7 @@ An HTML document can be loaded at startup by two ways:
 
 
 
-Using the Properties window, involves specifying the location of the startup HTML file by using the StartupDocument property of the HTMLUI control. The link shown at the bottom of the Properties window can also be used for the same purpose.
+Using the Properties window, involves specifying the location of the startup HTML file by using the StartupDocument property of the WinForms HTML Viewer control. The link shown at the bottom of the Properties window can also be used for the same purpose.
 
 ![Startup document](FAQ_images/Frequently-Asked-Questions_img3.jpeg)
 
@@ -150,7 +150,7 @@ HTML documents can also be loaded at run time. For example, in a file link where
 
 The various ways of loading the document at run time from various resources are:
 
-To load the file from disk into the HTMLUI, the following code snippet can be used.
+To load the file from disk into the WinForms HTML Viewer, the following code snippet can be used.
 
 {% tabs %}
 
@@ -180,7 +180,7 @@ Me.HtmluiControl1.LoadHTML(path)
 
 {% endtabs %}
 
-The above snippet can also be used to load HTML documents which are linked to the specified HTML documents, as links are easily invoked in HTMLUI.
+The above snippet can also be used to load HTML documents which are linked to the specified HTML documents, as links are easily invoked in WinForms HTML Viewer.
 
 To load a file from the URI, the following code snippet can be used.
 

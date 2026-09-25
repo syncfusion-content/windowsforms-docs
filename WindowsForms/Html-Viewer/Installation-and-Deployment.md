@@ -7,7 +7,7 @@ control: HTMLUI
 documentation: ug
 ---
 
-# Installation and Deployment in Windows Forms HTMLUI
+# Installation and Deployment in WinForms HTML Viewer
 
 This section covers information on the install location, samples, licensing, patches update and updation of the recent version of Essential Studio<sup>®</sup>. It comprises the following subsections:
 
@@ -39,7 +39,7 @@ This section covers the location of the installed samples and describes the proc
 
 ### Sample installation location
 
-The Essential<sup>®</sup> HTMLUI Windows Forms samples are installed in the following location.
+The Essential<sup>®</sup> WinForms HTML Viewer samples are installed in the following location.
 
 
 
@@ -93,7 +93,7 @@ N> You can view the samples in any of the following three ways:
 
 Source Code Location
 
-The source code for HTMLUI Windows is available at the following default location:
+The source code for WinForms HTML Viewer is available at the following default location:
 
 
 
@@ -103,27 +103,27 @@ The source code for HTMLUI Windows is available at the following default locatio
 
 ## Deployment requirements
 
-This section illustrates the deployment requirements for using Essential<sup>®</sup> HTMLUI in the following topics:
+This section illustrates the deployment requirements for using Essential<sup>®</sup> WinForms HTML Viewer in the following topics:
 
 
 
 ### Toolbox entries
 
-Essential<sup>®</sup> HTMLUI places the following control into your Visual Studio .NET toolbox, from where you can drag each control onto a form and start working with it.
+Essential<sup>®</sup> WinForms HTML Viewer places the following control into your Visual Studio .NET toolbox, from where you can drag each control onto a form and start working with it.
 
 
 
-* HTMLUIControl
+* WinForms HTML Viewer Control
 
 
 
 ### Assemblies
 
-While deploying an application that references a Syncfusion<sup>®</sup> Essential<sup>®</sup> HTMLUI assembly, the following dependencies must be included in the distribution.
+While deploying an application that references a Syncfusion<sup>®</sup> Essential<sup>®</sup> WinForms HTML Viewer assembly, the following dependencies must be included in the distribution.
 
 
 
-Windows Forms – HTMLUI
+WinForms - HTML Viewer
 
 
 
@@ -135,4 +135,4 @@ Windows Forms – HTMLUI
 * Syncfusion.MIME.Base.dll
 
 
- Syncfusion.HTMLUI.Base.dll depends on Syncfusion.MIME.Base.dll. So this needs to be included in the deployment of any application which uses HTMLUI.
+ Syncfusion.HTMLUI.Base.dll depends on Syncfusion.MIME.Base.dll. So this needs to be included in the deployment of any application which uses WinForms HTML Viewer.
