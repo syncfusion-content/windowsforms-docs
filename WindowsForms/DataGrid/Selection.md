@@ -5,6 +5,7 @@ description: Selection in Data Grid supports row, cell, and multiple selection m
 platform: windowsforms
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Selection in Windows Forms Data Grid

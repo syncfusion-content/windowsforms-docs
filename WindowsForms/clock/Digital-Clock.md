@@ -5,6 +5,7 @@ description: Learn about digital clock functionality in Windows Forms Clock cont
 platform: WindowsForms
 control: Clock
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Digital Clock in Windows Forms Clock

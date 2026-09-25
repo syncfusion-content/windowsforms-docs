@@ -5,6 +5,7 @@ description: Statistical formulas in the Windows Forms Chart provide calculation
 platform: windowsforms
 control: Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Statistical Formulas in Windows Forms Chart

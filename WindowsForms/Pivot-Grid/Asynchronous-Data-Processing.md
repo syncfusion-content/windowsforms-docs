@@ -5,6 +5,7 @@ description: Enable asynchronous data processing in Syncfusion® Windows Forms P
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Asynchronous Data Processing in WinForms Pivot Grid

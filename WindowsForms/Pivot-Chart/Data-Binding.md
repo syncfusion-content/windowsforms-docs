@@ -5,6 +5,7 @@ description: Data binding in the Windows Forms Pivot Chart connects data sources
 platform: windowsforms
 control: PivotChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Data Binding in Windows Forms Pivot Chart

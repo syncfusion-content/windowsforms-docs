@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion Windows Forms Clock co
 platform: WindowsForms
 control: Clock
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Getting Started with Windows Forms Clock

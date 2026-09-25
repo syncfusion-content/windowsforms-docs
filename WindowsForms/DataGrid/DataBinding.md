@@ -5,6 +5,7 @@ description: Data binding in Data Grid supports connecting to various data sourc
 platform: windowsforms
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Data Binding in Windows Forms Data Grid

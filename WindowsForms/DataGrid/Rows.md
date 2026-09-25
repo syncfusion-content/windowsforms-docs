@@ -5,6 +5,7 @@ description: Rows in Data Grid support row headers, header customization, frozen
 platform: windowsforms
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Rows in Windows Forms Data Grid

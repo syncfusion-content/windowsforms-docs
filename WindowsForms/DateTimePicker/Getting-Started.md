@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion Windows Forms DateTime
 platform: WindowsForms
 control: SfDateTimeEdit 
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Getting Started with Windows Forms DateTimePicker

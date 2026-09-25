@@ -5,6 +5,7 @@ description: User interactions in the Windows Forms Smith Chart enable selection
 platform: windowsforms
 control: SfSmithChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 # User Interactions in Windows Forms Smith Chart
 

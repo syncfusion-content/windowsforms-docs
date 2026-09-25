@@ -5,6 +5,7 @@ description: Theme support in Data Grid allows applying built-in themes, loading
 platform: windowsforms
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 # Theme in Windows Forms Data Grid
 [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) offers six built in themes for professional representation as follows.

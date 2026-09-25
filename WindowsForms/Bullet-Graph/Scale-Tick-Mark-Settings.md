@@ -5,6 +5,7 @@ description: Scale tick mark settings in the Windows Forms Bullet Graph enable c
 platform: windowsforms
 control: Bullet Graph
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Scale Tick Mark Settings in WinForms Bullet Graph
