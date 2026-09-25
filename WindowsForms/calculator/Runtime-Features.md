@@ -7,13 +7,13 @@ control: Calculator
 documentation: ug
 ---
 
-# RunTime Features in Windows Forms Calculator
+# RunTime Features in WinForms Calculator
 
 This section elaborated keyboard support for the control.
 
 ## Keyboard Support
 
-Essential<sup>®</sup> Tools [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) does the functionality of a normal calculator, using the Mouse or Keyboard, at run time. The control provides Keyboard equivalents for the Calculator buttons. They are listed in the below table.
+Essential<sup>®</sup> Tools [WinForms Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) does the functionality of a normal calculator, using the Mouse or Keyboard, at run time. The control provides Keyboard equivalents for the Calculator buttons. They are listed in the below table.
 
 
 <table>
@@ -45,17 +45,17 @@ CTRL+L</td></tr>
 <tr>
 <td>
 7</td><td>
-Puts this number in the calculator display.</td><td>
+Puts this number in the WinForms Calculator display.</td><td>
 7</td></tr>
 <tr>
 <td>
 8</td><td>
-Puts this number in the calculator display.</td><td>
+Puts this number in the WinForms Calculator display.</td><td>
 8</td></tr>
 <tr>
 <td>
 9</td><td>
-Puts this number in the calculator display.</td><td>
+Puts this number in the WinForms Calculator display.</td><td>
 9</td></tr>
 <tr>
 <td>
@@ -75,17 +75,17 @@ CTRL+R</td></tr>
 <tr>
 <td>
 4</td><td>
-Puts this number in the calculator display.</td><td>
+Puts this number in the WinForms Calculator display.</td><td>
 4</td></tr>
 <tr>
 <td>
 5</td><td>
-Puts this number in the calculator display.</td><td>
+Puts this number in the WinForms Calculator display.</td><td>
 5</td></tr>
 <tr>
 <td>
 6</td><td>
-Puts this number in the calculator display.</td><td>
+Puts this number in the WinForms Calculator display.</td><td>
 6</td></tr>
 <tr>
 <td>
@@ -105,17 +105,17 @@ CTRL+M</td></tr>
 <tr>
 <td>
 1</td><td>
-Puts this number in the calculator display.</td><td>
+Puts this number in the WinForms Calculator display.</td><td>
 1</td></tr>
 <tr>
 <td>
 2</td><td>
-Puts this number in the calculator display.</td><td>
+Puts this number in the WinForms Calculator display.</td><td>
 2</td></tr>
 <tr>
 <td>
 3</td><td>
-Puts this number in the calculator display.</td><td>
+Puts this number in the WinForms Calculator display.</td><td>
 3</td></tr>
 <tr>
 <td>
