@@ -7,7 +7,7 @@ control: RibbonControlAdv
 documentation: ug
 ---
 
-# Quick Access Toolbar in Windows Forms Ribbon
+# Quick Access Toolbar in WinForms Ribbon Control
 
 `QuickAccessToolBar`**(QAT)** is a customizable bar that provides one click access to the most important and frequently used items.
 
@@ -47,7 +47,7 @@ Item will be added to the Quick Access Toolbar.
 
 ### Add Items through Customize Window
 
-Items can be added to the QuickAccessToolbar by clicking `Edit quick items` in the smart tag of the RibbonControlAdv. This opens Customize Quick Access Toolbar Dialog which displays the existing tool strip items. You can add the required items to the Quick Access Toolbar.
+Items can be added to the QuickAccessToolbar by clicking `Edit quick items` in the smart tag of the WinForms Ribbon Control. This opens Customize Quick Access Toolbar Dialog which displays the existing tool strip items. You can add the required items to the Quick Access Toolbar.
 
 ![Shows the customize window for QAT](Quick_Access_Toolbar_Images/Quick-Access-Toolbar_img3.jpg)
 
@@ -131,7 +131,7 @@ Added the boldButton and fontColorSplitButton in QAT
 
 ## Add items to QAT in simplified layout
 
-The RibbonControlAdv allows to add items to the Quick Access Toolbar (QAT) with the help of the QAT window or through the context menu shortcut. Items added during normal or simplified layout will always be visible even when switching between layouts. To know more about the simplified layout, refer [here](https://help.syncfusion.com/windowsforms/ribbon/simplifiedlayout).
+The WinForms Ribbon Control allows to add items to the Quick Access Toolbar (QAT) with the help of the QAT window or through the context menu shortcut. Items added during normal or simplified layout will always be visible even when switching between layouts. To know more about the simplified layout, refer [here](https://help.syncfusion.com/windowsforms/ribbon/simplifiedlayout).
 
 ## Removing QAT Item
 

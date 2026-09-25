@@ -6,11 +6,11 @@ platform: windowsforms
 control: RibbonControlAdv
 documentation: ug
 ---
-# Simplified Layout in Windows Forms Ribbon
+# Simplified Layout in WinForms Ribbon Control
 
- The RibbonControlAdv is available in a simplified layout which is designed to display the most commonly used Ribbon commands in a single line interface, allowing more screen space for compact viewing of the content. For the best user experience, the other Ribbon commands are located under the overflow menu. It also provides an option to switch back and forth between the simplified and the normal layout using the minimize button.
+ The WinForms Ribbon Control is available in a simplified layout which is designed to display the most commonly used Ribbon commands in a single line interface, allowing more screen space for compact viewing of the content. For the best user experience, the other Ribbon commands are located under the overflow menu. It also provides an option to switch back and forth between the simplified and the normal layout using the minimize button.
 
- The [`LayoutMode`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html#Syncfusion_Windows_Forms_Tools_RibbonControlAdv_LayoutMode) enumeration property provides an option to load the Ribbon control in simplified layout. It contains the following options like:
+ The [`LayoutMode`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html#Syncfusion_Windows_Forms_Tools_RibbonControlAdv_LayoutMode) enumeration property provides an option to load the WinForms Ribbon Control in simplified layout. It contains the following options like:
 
  * **Normal** - The Ribbon items are arranged in the standard layout. This is the default value.
  * **Simplified** - The Ribbon items are arranged in the simplified layout.
@@ -32,7 +32,7 @@ documentation: ug
 
 ## Switching between simplified and normal layouts
 
- The RibbonControlAdv allows to switch between simplified and normal layouts at runtime using the Ribbon minimize button located in the lower right corner of the Ribbon. To enable this option, set the [`EnableSimplifiedLayoutMode`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html#Syncfusion_Windows_Forms_Tools_RibbonControlAdv_EnableSimplifiedLayoutMode) property to **True**. By default, its value is **False**.
+ The WinForms Ribbon Control allows to switch between simplified and normal layouts at runtime using the Ribbon minimize button located in the lower right corner of the Ribbon. To enable this option, set the [`EnableSimplifiedLayoutMode`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html#Syncfusion_Windows_Forms_Tools_RibbonControlAdv_EnableSimplifiedLayoutMode) property to **True**. By default, its value is **False**.
 
  {% tabs %}
 
@@ -120,7 +120,7 @@ documentation: ug
 
  {% endtabs %}
 
- The following screenshot shows the simplified layout within the Ribbon control.
+ The following screenshot shows the simplified layout within the WinForms Ribbon Control.
 
  ![Setting item location using DisplayMode for Simplified layout](SimplifiedLayout_images/RibbonSimplifiedLayout.png)
  
@@ -128,7 +128,7 @@ N> View [sample](https://github.com/SyncfusionExamples/How-to-customize-the-simp
 
 ## Customizing the Ribbon during runtime through the QAT window
 
- The RibbonControlAdv allows to customize the Ribbon and Ribbon items through the QAT window, where user can add the Ribbon items to a new [`ToolStripTabItem`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ToolStripTabItem.html) or [`ToolStripEx`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ToolStripEx.html). The newly added [`ToolStripTabItem`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ToolStripTabItem.html) or [`ToolStripEx`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ToolStripEx.html) will only be visible in the respective layout in which items were added originally. In the below example, the [`LayoutMode`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html#Syncfusion_Windows_Forms_Tools_RibbonControlAdv_LayoutMode) is set as **"Simplified"** and a new [`ToolStripTabItem`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ToolStripTabItem.html) named *Folder* is created and added using the QAT window. This tab will now be visible only in the simplified layout and not in the normal layout which is the default behavior.
+ The WinForms Ribbon Control allows to customize the Ribbon and Ribbon items through the QAT window, where user can add the Ribbon items to a new [`ToolStripTabItem`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ToolStripTabItem.html) or [`ToolStripEx`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ToolStripEx.html). The newly added [`ToolStripTabItem`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ToolStripTabItem.html) or [`ToolStripEx`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ToolStripEx.html) will only be visible in the respective layout in which items were added originally. In the below example, the [`LayoutMode`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html#Syncfusion_Windows_Forms_Tools_RibbonControlAdv_LayoutMode) is set as **"Simplified"** and a new [`ToolStripTabItem`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ToolStripTabItem.html) named *Folder* is created and added using the QAT window. This tab will now be visible only in the simplified layout and not in the normal layout which is the default behavior.
  
  ![Customizing Ribbon at runtime at Normal layout](SimplifiedLayout_images/QATItems_NormalLayout.png)
  *Normal layout*
@@ -136,7 +136,7 @@ N> View [sample](https://github.com/SyncfusionExamples/How-to-customize-the-simp
  ![Customizing Ribbon at runtime at Simplified layout](SimplifiedLayout_images/QATItems_SimplifiedLayout.png)
  *Simplified layout*
 
- In the meantime, the RibbonControlAdv also allows to add items to the Quick Access Toolbar (QAT) with the help of the QAT window or through the context menu shortcut. Items added during normal or simplified layout will always be visible even when switching between layouts. In the below example, the [`LayoutMode`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html#Syncfusion_Windows_Forms_Tools_RibbonControlAdv_LayoutMode) is set as **"Simplified"** and the *Paste* item is added to the QAT through the context menu. This item will now be constantly visible in both normal and simplified layouts. 
+ In the meantime, the WinForms Ribbon Control also allows to add items to the Quick Access Toolbar (QAT) with the help of the QAT window or through the context menu shortcut. Items added during normal or simplified layout will always be visible even when switching between layouts. In the below example, the [`LayoutMode`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html#Syncfusion_Windows_Forms_Tools_RibbonControlAdv_LayoutMode) is set as **"Simplified"** and the *Paste* item is added to the QAT through the context menu. This item will now be constantly visible in both normal and simplified layouts. 
 
   ![Customizing Ribbon at runtime at Normal layout](SimplifiedLayout_images/QATItemsThroughContext_NormalLayout.png)
  *Normal layout*
@@ -147,7 +147,7 @@ N> View [sample](https://github.com/SyncfusionExamples/How-to-customize-the-simp
 
 ## Resizing Ribbon in simplified layout
 
- While re-sizing the RibbonControlAdv, when the width of the window decreases and touches the last positioned item in the Ribbon, the appropriate item will be moved inside the overflow menu automatically. The same behavior will continue for each item when the window is resized continuously.
+ While re-sizing the WinForms Ribbon Control, when the width of the window decreases and touches the last positioned item in the Ribbon, the appropriate item will be moved inside the overflow menu automatically. The same behavior will continue for each item when the window is resized continuously.
 
  ![Resizing ribbon window in run time](SimplifiedLayout_images/ResizingWindow-SimplifiedLayout.gif)
 

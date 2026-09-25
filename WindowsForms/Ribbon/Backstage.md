@@ -7,9 +7,9 @@ control: RibbonControlAdv
 documentation: ug
 ---
 
-# Backstage in Windows Forms Ribbon
+# Backstage in WinForms Ribbon Control
 
-The Ribbon Backstage will appear when the user clicks on the Menu button. It lets users perform actions for the whole document such as Save, Save As and Print. It can also be used to show the recent changes in the document or to close the application.
+The WinForms Ribbon Control Backstage will appear when the user clicks on the Menu button. It lets users perform actions for the whole document such as Save, Save As and Print. It can also be used to show the recent changes in the document or to close the application.
 
 Backstage structure will have two areas, left side which contain all the items in backstage panel and the right side which shows content of the BackstageTab.
 
@@ -169,7 +169,7 @@ Separator can be added through Smart tag as explained in adding backstage button
 
 ## Add Header Image
 
-Header image can be added to the Ribbon with the property `RibbonHeaderImage`. There are several inbuilt images that can be used for Header.
+Header image can be added to the WinForms Ribbon Control with the property `RibbonHeaderImage`. There are several inbuilt images that can be used for Header.
 
 {% tabs %}
 
@@ -191,7 +191,7 @@ Me.ribbonControlAdv1.RibbonHeaderImage = RibbonHeaderImage.Lines
 
 ![WindowsForms Ribbon Header image with BackStage](BackStage_Images/WindowsForms-Ribbon-Header-image-with-BackStage.jpg)
 
-To set custom image to the Ribbon header, set an image to the property `CustomRibbonHeaderImage`.
+To set custom image to the WinForms Ribbon Control header, set an image to the property `CustomRibbonHeaderImage`.
 
 {% tabs %}
 
@@ -236,7 +236,7 @@ Me.backStage1.BackStagePanelWidth = 200
 
 ## Restrict BackStage Opening
 
-To restrict from opening Backstage, change the Ribbon property `MenuButtonEnabled` as false.
+To restrict from opening Backstage, change the WinForms Ribbon Control property `MenuButtonEnabled` as false.
 
 {% tabs %}
 
@@ -257,13 +257,13 @@ Me.ribbonControlAdv1.MenuButtonEnabled = False
 
 ## Menu Button
 
-The file tab located at left end of the ribbon is the menu button, it is used to open backstage at run time.
+The file tab located at left end of the WinForms Ribbon Control is the menu button, it is used to open backstage at run time.
 
 ![WindowsForms Ribbon BackStage MenuButton](BackStage_Images/WindowsForms-Ribbon-BackStage-MenuButton.jpg)
 
 ### Menu Button Text
 
-By default, the text for this button will be File, it can be changed with the ribbon property `MenuButtonText`.
+By default, the text for this button will be File, it can be changed with the WinForms Ribbon Control property `MenuButtonText`.
 
 {% tabs %}
 
@@ -283,7 +283,7 @@ Me.ribbonControlAdv1.MenuButtonText = "Menu"
 
 ### Menu Button Width
 
-To change the width of menu button, use the ribbon property `MenuButtonWidth`.
+To change the width of menu button, use the WinForms Ribbon Control property `MenuButtonWidth`.
 
 {% tabs %}
 
@@ -388,7 +388,7 @@ this.ribbonControlAdv1.Office2013ColorTable = office2013ColorTable;
 
 ### Menu Button Color
 
-To change the menu button color, use the ribbon property `MenuColor`.
+To change the menu button color, use the WinForms Ribbon Control property `MenuColor`.
 
 {% tabs %}
 
