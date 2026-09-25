@@ -7,20 +7,20 @@ control: EditorsPackage
 documentation: ug
 ---
 
-# Appearance and Behavior in Windows Forms CheckBoxAdv
+# Appearance and Behavior in WinForms CheckBox
 
-This section discusses the appearance and behavior settings of the [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control.
+This section discusses the appearance and behavior settings of the [WinForms CheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control.
 
 ## Appearance Settings
 
 ### DrawFocusRectangle
 
-You can show or hide the focus rectangle of [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control using  [DrawFocusRectangle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_DrawFocusRectangle) property.
+You can show or hide the focus rectangle of [WinForms CheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control using  [DrawFocusRectangle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_DrawFocusRectangle) property.
 
 <table>
 <tr>
 <th>
-CheckBoxAdv Property</th><th>
+WinForms CheckBox Property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -46,21 +46,21 @@ Me.checkBoxAdv1.DrawFocusRectangle = True
 
 ## Behavior Settings
 
-The behavior of the [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control can be customized using [AutoHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_AutoHeight), [ReadOnlyMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_ReadOnlyMode) and [TriState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_Tristate) properties.
+The behavior of the [WinForms CheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control can be customized using [AutoHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_AutoHeight), [ReadOnlyMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_ReadOnlyMode) and [TriState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_Tristate) properties.
 
 <table>
 <tr>
 <th>
-CheckBoxAdv Properties</th><th>
+WinForms CheckBox Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
 AutoHeight</td><td>
-Determines if the CheckBoxAdv will automatically calculate its height.</td></tr>
+Determines if the WinForms CheckBox will automatically calculate its height.</td></tr>
 <tr>
 <td>
 ReadOnlyMode</td><td>
-Specifies the Read Only Mode of the CheckBoxAdv.</td></tr>
+Specifies the Read Only Mode of the WinForms CheckBox.</td></tr>
 <tr>
 <td>
 Tristate</td><td>

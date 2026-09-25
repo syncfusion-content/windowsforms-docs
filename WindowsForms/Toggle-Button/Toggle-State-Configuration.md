@@ -7,9 +7,9 @@ control: ToggleButton
 documentation: ug
 ---
 
-# Configure Toggle States in Windows Forms ToggleButton
+# Configure Toggle States in WinForms Toggle Button
 
-Toggle Button is configured with two states (Active and Inactive) contrasting each other. Toggling can be handled at runtime either through mouse click or through space key.
+WinForms Toggle Button is configured with two states (Active and Inactive) contrasting each other. Toggling can be handled at runtime either through mouse click or through space key.
 
 ![different togglestates of togglebutton](Toggle-State-Configuration_images/Toggle-State-Configuration_img1.png)
 
@@ -33,7 +33,7 @@ Me.ToggleButton1.ToggleState = ToggleButtonState.Active
 
 ## Active state
 
-In the Toggle Button, active state is represented uniquely through its styling properties: BackColor, BorderColor, ForeColor, and HoverColor.
+In the WinForms Toggle Button, active state is represented uniquely through its styling properties: BackColor, BorderColor, ForeColor, and HoverColor.
 
 {% tabs %}
 {% highlight c# %}
