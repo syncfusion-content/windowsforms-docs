@@ -415,62 +415,72 @@ The following code example displays an icon based on the series type.
 
 {% tabs %}
 {% highlight c# %}
-chartControl.Legend.RepresentationType =
-    ChartLegendRepresentationType.SeriesType;
+chartControl.Legend.RepresentationType =  ChartLegendRepresentationType.SeriesType;
 {% endhighlight %}
 {% highlight vb %}
-chartControl.Legend.RepresentationType =
-    ChartLegendRepresentationType.SeriesType
+chartControl.Legend.RepresentationType = ChartLegendRepresentationType.SeriesType
 {% endhighlight %}
 {% endtabs %}
+
+![Legend RepresentationType in Windows Forms Chart](Chart-Legend-and-Legend-Items_images/legend-series-icon.png)
 
 ### Series symbol
 
 The [ShowSymbol](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_ShowSymbol) property controls whether the symbol used for series data points is displayed in the legend. The default value is `false`.
+
+N> To show the series symbol set the [RepresentationType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_RepresentationType) to [None](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendRepresentationType.html#Syncfusion_Windows_Forms_Chart_ChartLegendRepresentationType_None)
 
 The following code example displays the series symbol in the legend.
 
 {% tabs %}
 {% highlight c# %}
 chartControl.Legend.ShowSymbol = true;
+chartControl.Series[0].Style.Symbol.Shape = ChartSymbolShape.Diamond;
+chartControl.Series[0].Style.Symbol.Color = Color.Red;
+chartControl.Series[0].Style.Symbol.Size = new Size(7, 7);
+chartControl.Legend.RepresentationType = ChartLegendRepresentationType.None;
 {% endhighlight %}
 {% highlight vb %}
 chartControl.Legend.ShowSymbol = True
+chartControl.Series(0).Style.Symbol.Shape = ChartSymbolShape.Diamond
+chartControl.Series(0).Style.Symbol.Color = Color.Red
+chartControl.Series(0).Style.Symbol.Size = New Size(7, 7)
+chartControl.Legend.RepresentationType = ChartLegendRepresentationType.None
 {% endhighlight %}
 {% endtabs %}
 
-N\> When `ShowSymbol` is enabled, the series data-point symbol is used as the legend icon and can override other representation settings.
+![Legend Series Symbol in Windows Forms Chart](Chart-Legend-and-Legend-Items_images/legend-series-symbol.png)
 
 ### Custom representation icon
 
-The `RepresentationType` property supports the following `ChartLegendRepresentationType` values:
+The [RepresentationType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_RepresentationType) property supports the following [ChartLegendRepresentationType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendRepresentationType.html) values:
 
-- `Circle`
-- `Cross`
-- `Diamond`
-- `Hexagon`
-- `InvertedTriangle`
-- `Line`
-- `None`
-- `Pentagon`
-- `Rectangle`
-- `SeriesImage`
-- `SeriesType`
-- `StraightLine`
-- `Triangle`
+- [Circle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendRepresentationType.html#Syncfusion_Windows_Forms_Chart_ChartLegendRepresentationType_Circle)
+- [Cross](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendRepresentationType.html#Syncfusion_Windows_Forms_Chart_ChartLegendRepresentationType_Cross)
+- [Diamond](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendRepresentationType.html#Syncfusion_Windows_Forms_Chart_ChartLegendRepresentationType_Diamond)
+- [Hexagon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendRepresentationType.html#Syncfusion_Windows_Forms_Chart_ChartLegendRepresentationType_Hexagon)
+- [InvertedTriangle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendRepresentationType.html#Syncfusion_Windows_Forms_Chart_ChartLegendRepresentationType_InvertedTriangle)
+- [Line](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendRepresentationType.html#Syncfusion_Windows_Forms_Chart_ChartLegendRepresentationType_Line)
+- [None](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendRepresentationType.html#Syncfusion_Windows_Forms_Chart_ChartLegendRepresentationType_None)
+- [Pentagon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendRepresentationType.html#Syncfusion_Windows_Forms_Chart_ChartLegendRepresentationType_Pentagon)
+- [Rectangle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendRepresentationType.html#Syncfusion_Windows_Forms_Chart_ChartLegendRepresentationType_Rectangle)
+- [SeriesImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendRepresentationType.html#Syncfusion_Windows_Forms_Chart_ChartLegendRepresentationType_SeriesImage)
+- [SeriesType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendRepresentationType.html#Syncfusion_Windows_Forms_Chart_ChartLegendRepresentationType_SeriesType)
+- [StraightLine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendRepresentationType.html#Syncfusion_Windows_Forms_Chart_ChartLegendRepresentationType_StraightLine)
+- [Triangle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendRepresentationType.html#Syncfusion_Windows_Forms_Chart_ChartLegendRepresentationType_Triangle)
 
 The following code example displays a diamond representation.
 
 {% tabs %}
 {% highlight c# %}
-chartControl.Legend.RepresentationType =
-    ChartLegendRepresentationType.Diamond;
+chartControl.Legend.RepresentationType = ChartLegendRepresentationType.Diamond;
 {% endhighlight %}
 {% highlight vb %}
-chartControl.Legend.RepresentationType =
-    ChartLegendRepresentationType.Diamond
+chartControl.Legend.RepresentationType = ChartLegendRepresentationType.Diamond
 {% endhighlight %}
 {% endtabs %}
+
+![Legend RepresentationType in Windows Forms Chart](Chart-Legend-and-Legend-Items_images/legend-representation-type.png)
 
 ### More symbol shapes
 
@@ -480,24 +490,20 @@ The following code example displays a pentagon symbol.
 
 {% tabs %}
 {% highlight c# %}
-ChartLegendItem item = new ChartLegendItem("Sales");
-item.ItemStyle.ShowSymbol = true;
-item.ItemStyle.Symbol.Shape = ChartSymbolShape.Pentagon;
-item.ItemStyle.Symbol.Size = new Size(15, 15);
-item.ItemStyle.Symbol.Color = Color.RoyalBlue;
-
-chartControl.Legend.CustomItems = new ChartLegendItem[] { item };
+chartControl.Legend.ShowSymbol = true;
+chartControl.Legend.Items[0].Symbol.Shape = ChartSymbolShape.Triangle;
+chartControl.Legend.Items[0].Symbol.Size = new Size(11, 11);
+chartControl.Legend.Items[0].Symbol.Color = Color.Yellow;
 {% endhighlight %}
 {% highlight vb %}
-Dim item As New ChartLegendItem("Sales")
-item.ItemStyle.ShowSymbol = True
-item.ItemStyle.Symbol.Shape = ChartSymbolShape.Pentagon
-item.ItemStyle.Symbol.Size = New Size(15, 15)
-item.ItemStyle.Symbol.Color = Color.RoyalBlue
-
-chartControl.Legend.CustomItems = New ChartLegendItem() {item}
+chartControl.Legend.ShowSymbol = True
+chartControl.Legend.Items(0).Symbol.Shape = ChartSymbolShape.Triangle
+chartControl.Legend.Items(0).Symbol.Size = New Size(11, 11)
+chartControl.Legend.Items(0).Symbol.Color = Color.Yellow
 {% endhighlight %}
 {% endtabs %}
+
+![Legend More Symbol Shapes in Windows Forms Chart](Chart-Legend-and-Legend-Items_images/legend-more-symbol-shape.png)
 
 ### Custom images
 
@@ -513,42 +519,37 @@ The following code example applies an image directly to a legend item.
 
 {% tabs %}
 {% highlight c# %}
-ChartLegendItem item = new ChartLegendItem("Target");
-item.Image = Image.FromFile("target.png");
-item.ShowIcon = true;
-item.RepresentationSize = new Size(20, 20);
-item.IconAlignment = LeftRightAlignment.Left;
-
-chartControl.Legend.CustomItems = new ChartLegendItem[] { item };
+chartControl.Legend.Items[0].Image = Image.FromFile(@"D:\UG\cloud-server.png");
+chartControl.Legend.Items[0].RepresentationSize = new Size(20, 20);
+chartControl.Legend.Items[0].IconAlignment = LeftRightAlignment.Right;
 {% endhighlight %}
 {% highlight vb %}
-Dim item As New ChartLegendItem("Target")
-item.Image = Image.FromFile("target.png")
-item.ShowIcon = True
-item.RepresentationSize = New Size(20, 20)
-item.IconAlignment = LeftRightAlignment.Left
+chartControl.Legend.Items(0).Image = Image.FromFile(@"D:\UG\cloud-server.png")
+chartControl.Legend.Items(0).RepresentationSize = New Size(20, 20)
+chartControl.Legend.Items(0).IconAlignment = LeftRightAlignment.Right
 
 chartControl.Legend.CustomItems = New ChartLegendItem() {item}
 {% endhighlight %}
 {% endtabs %}
 
+![Legend Custom Images in Windows Forms Chart](Chart-Legend-and-Legend-Items_images/legend-custom-images.png)
+
 ### Hiding icons
 
-Set the `ShowIcon` property to `false` to hide an individual legend-item icon. The `ChartLegendRepresentationType.None` value can be used to disable the common legend representation where supported.
+Icons for legend items can be hidden in any of the following ways:
 
 The following code example hides the icon of the first legend item.
 
 {% tabs %}
 {% highlight c# %}
-if (chartControl.Legend.Items.Length > 0)
-{
-    chartControl.Legend.Items[0].ShowIcon = false;
-}
+chartControl.Legend.RepresentationType = ChartLegendRepresentationType.None;
+chartControl.Legend.Items[0].ShowIcon = false;
+chartControl1.Legend.Items[0].Type = ChartLegendItemType.None;
 {% endhighlight %}
 {% highlight vb %}
-If chartControl.Legend.Items.Length > 0 Then
-    chartControl.Legend.Items(0).ShowIcon = False
-End If
+chartControl.Legend.RepresentationType = ChartLegendRepresentationType.None
+chartControl.Legend.Items(0).ShowIcon = False
+chartControl.Legend.Items(0).Type = ChartLegendItemType.None
 {% endhighlight %}
 {% endtabs %}
 
@@ -577,6 +578,8 @@ chartControl.Legend.BackInterior = New BrushInfo(
 {% endhighlight %}
 {% endtabs %}
 
+![Legend Background in Windows Forms Chart](Chart-Legend-and-Legend-Items_images/legend-background.png)
+
 ### Legend border
 
 The [ShowBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_ShowBorder) property controls whether the legend border is displayed. The [Border](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_Border) property gets the `LineInfo` used to draw the border.
@@ -600,7 +603,9 @@ chartControl.Legend.Border.DashStyle = DashStyle.Solid
 {% endhighlight %}
 {% endtabs %}
 
-### Legend-item shadow
+![Legend Border in Windows Forms Chart](Chart-Legend-and-Legend-Items_images/legend-border.png)
+
+### Legend item shadow
 
 The following properties apply a common shadow to all legend items:
 
@@ -623,129 +628,32 @@ chartControl.Legend.ItemsShadowOffset = New Size(2, 2)
 {% endhighlight %}
 {% endtabs %}
 
-## Adding custom legends
+![Legend Item Shadow in Windows Forms Chart](Chart-Legend-and-Legend-Items_images/legend-shadhow-offset.png)
 
-Additional [ChartLegend](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html) instances can be added when separate legends are required for different series. Assign the legend name to the series [LegendName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_LegendName) property.
+## Customization of custom legends
 
-The following code example creates two legends and associates a series with each legend.
+You can add custom legends to the chart through the Legends list as follows:
 
-{% tabs %}
-{% highlight c# %}
-chartControl.Legend.Visible = false;
-chartControl.LegendsPlacement = ChartPlacement.Outside;
-
-ChartLegend salesLegend = new ChartLegend(chartControl);
-salesLegend.Name = "Sales";
-salesLegend.Position = ChartDock.Top;
-
-ChartLegend targetLegend = new ChartLegend(chartControl);
-targetLegend.Name = "Target";
-targetLegend.Position = ChartDock.Bottom;
-
-salesSeries.LegendName = "Sales";
-targetSeries.LegendName = "Target";
-
-chartControl.Legends.Add(salesLegend);
-chartControl.Legends.Add(targetLegend);
-{% endhighlight %}
-{% highlight vb %}
-chartControl.Legend.Visible = False
-chartControl.LegendsPlacement = ChartPlacement.Outside
-
-Dim salesLegend As New ChartLegend(chartControl)
-salesLegend.Name = "Sales"
-salesLegend.Position = ChartDock.Top
-
-Dim targetLegend As New ChartLegend(chartControl)
-targetLegend.Name = "Target"
-targetLegend.Position = ChartDock.Bottom
-
-salesSeries.LegendName = "Sales"
-targetSeries.LegendName = "Target"
-
-chartControl.Legends.Add(salesLegend)
-chartControl.Legends.Add(targetLegend)
-{% endhighlight %}
-{% endtabs %}
-
-## Adding custom legend items
-
-The [ChartLegendItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendItem.html) class creates legend items that are not generated from chart series. Assign the items to the [CustomItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_CustomItems) property.
-
-The following code example adds two custom legend items.
+N> The [SetDefSizeForCustom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_SetDefSizeForCustom) property is obsolete.
 
 {% tabs %}
 {% highlight c# %}
-ChartLegendItem plannedItem = new ChartLegendItem("Planned");
-plannedItem.Interior = new BrushInfo(Color.SteelBlue);
-
-ChartLegendItem actualItem = new ChartLegendItem("Actual");
-actualItem.Interior = new BrushInfo(Color.Orange);
-
-chartControl.Legend.CustomItems = new ChartLegendItem[]
-{
-    plannedItem,
-    actualItem
-};
+ChartLegend legend2 = new ChartLegend(chartControl1);
+legend2.Name = "MyLegend";
+chartControl1.Legends.Add(legend2);
 {% endhighlight %}
 {% highlight vb %}
-Dim plannedItem As New ChartLegendItem("Planned")
-plannedItem.Interior = New BrushInfo(Color.SteelBlue)
-
-Dim actualItem As New ChartLegendItem("Actual")
-actualItem.Interior = New BrushInfo(Color.Orange)
-
-chartControl.Legend.CustomItems = New ChartLegendItem() {
-    plannedItem,
-    actualItem
-}
+Dim legend2 As New ChartLegend(chartControl)
+legend2.Name = "MyLegend"
+chartControl.Legends.Add(legend2)
 {% endhighlight %}
 {% endtabs %}
 
 ## Customization of custom legend item
 
-The following `ChartLegendItem` properties customize an individual custom legend item:
+The [ChartLegendItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendItem.html) class creates legend items that are not generated from chart series. Assign the items to the [CustomItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_CustomItems) property.
 
-- `Text`, `TextColor`, `TextLines`, and `Font`
-- `Interior`, `Border`, and `BorderColor`
-- `ShowIcon`, `Image`, `ImageList`, and `ImageIndex`
-- `ShowSymbol`, `Symbol`, and `RepresentationSize`
-- `Visible`, `VisibleCheckBox`, and `IsChecked`
-- `ShowShadow`, `ShadowColor`, and `ShadowOffset`
-- `IconAlignment`, `Spacing`, and `ItemStyle`
-
-The following code example customizes the appearance of a custom legend item.
-
-{% tabs %}
-{% highlight c# %}
-ChartLegendItem item = new ChartLegendItem("Target");
-item.ItemStyle.Interior = new BrushInfo(Color.LightBlue);
-item.ItemStyle.BorderColor = Color.DarkBlue;
-item.ItemStyle.TextColor = Color.Navy;
-item.ItemStyle.Font = new Font("Segoe UI", 9, FontStyle.Bold);
-item.ItemStyle.ShowSymbol = true;
-item.ItemStyle.Symbol.Shape = ChartSymbolShape.Diamond;
-item.ShowShadow = true;
-item.ShadowColor = Color.Gray;
-
-chartControl.Legend.CustomItems = new ChartLegendItem[] { item };
-{% endhighlight %}
-{% highlight vb %}
-Dim item As New ChartLegendItem("Target")
-item.ItemStyle.Interior = New BrushInfo(Color.LightBlue)
-item.ItemStyle.BorderColor = Color.DarkBlue
-item.ItemStyle.TextColor = Color.Navy
-item.ItemStyle.Font = New Font("Segoe UI", 9, FontStyle.Bold)
-item.ItemStyle.ShowSymbol = True
-item.ItemStyle.Symbol.Shape = ChartSymbolShape.Diamond
-item.ShowShadow = True
-item.ShadowColor = Color.Gray
-
-chartControl.Legend.CustomItems = New ChartLegendItem() {item}
-{% endhighlight %}
-{% endtabs %}
-
-N\> The `SetDefSizeForCustom` property is obsolete. Do not use it in new applications.
+N> For more information about customizing a [Custom Legend Item](https://support.syncfusion.com/kb/article/1228/how-to-customize-chart-legend-items-in-winforms-chart) base article.
 
 ## Customizing items through event
 
@@ -777,27 +685,6 @@ AddHandler chartControl.Legend.FilterItems,
 
 AddHandler chartControl.Legend.MinSize,
     AddressOf Legend_MinSize
-{% endhighlight %}
-{% endtabs %}
-
-## Changing legend properties at run time
-
-Legend appearance, position, layout, items, and visibility can be changed at run time. Use the [Refresh](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_Refresh) method when an immediate visual update is required.
-
-The following code example changes legend properties at run time.
-
-{% tabs %}
-{% highlight c# %}
-chartControl.Legend.Position = ChartDock.Right;
-chartControl.Legend.BackColor = Color.AliceBlue;
-chartControl.Legend.ShowBorder = true;
-chartControl.Legend.Refresh();
-{% endhighlight %}
-{% highlight vb %}
-chartControl.Legend.Position = ChartDock.Right
-chartControl.Legend.BackColor = Color.AliceBlue
-chartControl.Legend.ShowBorder = True
-chartControl.Legend.Refresh()
 {% endhighlight %}
 {% endtabs %}
 
