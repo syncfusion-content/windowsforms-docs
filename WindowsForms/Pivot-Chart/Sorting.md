@@ -77,9 +77,9 @@ There are two events available in both `SortedAxis` and `SortedLegends` of the p
 <th>S.No</th><th>Event name</th><th>Details</th><th>Event arguments</th>
 </tr>
 <tr>
-<td>1</td><td>Changing</td><td>Occurs before a property in a nested element or the collection is changed.</td><td><a href="https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotItemSortingEventArgs.html" aria-label="PivotItemSortingEventArgs">PivotItemSortingEventArgs</a></td>
+<td>1</td><td>Changing</td><td>Occurs before a property in a nested element or the collection is changed.</td><td><a href="https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotItemSortingEventArgs.html" aria-label="PivotItemSortingEventArgs documentation">PivotItemSortingEventArgs</a></td>
 </tr>
-<tr><td>2</td><td>Changed</td><td>Occurs after a property in a nested element or the collection is changed.</td><td><a href="https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotItemSortedEventArgs.html" aria-label="PivotItemSortedEventArgs">PivotItemSortedEventArgs</a></td>
+<tr><td>2</td><td>Changed</td><td>Occurs after a property in a nested element or the collection is changed.</td><td><a href="https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotItemSortedEventArgs.html" aria-label="PivotItemSortedEventArgs documentation">PivotItemSortedEventArgs</a></td>
 </tr>
 </table>
 

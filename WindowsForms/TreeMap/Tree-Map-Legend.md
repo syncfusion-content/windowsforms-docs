@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Legend in Windows Forms TreeMap | Syncfusion®
+title: Legend in Windows Forms TreeMap | SyncfusionÂ®
 description: Legend in the Windows Forms TreeMap explains color mappings and data categories, supporting customization of content and appearance.
 platform: windowsforms
 control: TreeMap 
