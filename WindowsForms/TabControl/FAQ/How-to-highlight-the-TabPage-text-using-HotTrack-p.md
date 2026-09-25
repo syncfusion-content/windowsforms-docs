@@ -7,9 +7,9 @@ control: TabsPackage
 documentation: ug
 ---
 
-# How to Highlight TabPage Text in TabControlAdv
+# How to Highlight TabPage Text in WinForms TabControl
 
-The TabPage text can be highlighted using the [HotTrack](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_HotTrack) property of the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) when the mouse hovers over it. This can be enabled programmatically using the code snippet given below.
+The TabPage text can be highlighted using the [HotTrack](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_HotTrack) property of the [WinForms TabControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) when the mouse hovers over it. This can be enabled programmatically using the code snippet given below.
 
 {% tabs %}
 

@@ -7,17 +7,17 @@ control: TabControlAdv
 documentation: ug
 ---
 
-# Appearance Settings in Windows Forms TabControlAdv
+# Appearance Settings in WinForms TabControl
 
-The various appearance settings for [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) are discussed in this section. 
+The various appearance settings for [WinForms TabControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) are discussed in this section. 
 
 ## Background settings
 
-This section discusses the various Background Settings available in [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
+This section discusses the various Background Settings available in [WinForms TabControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
 
 ### BackgroundImage settings
 
-The Essential<sup>®</sup> [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) provides the following options to customize the images:
+The Essential<sup>®</sup> [WinForms TabControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) provides the following options to customize the images:
 
 * Images inside the TabItems.
 * Images outside the TabBounds.
@@ -57,11 +57,11 @@ Me.tabPageAdv1.ImageIndex = 0
 
 #### Images outside the TabBounds
 
-[TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) has images that are set outside the TabBounds.
+[WinForms TabControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) has images that are set outside the TabBounds.
 
 ![Images outside the TabBounds](Appearance-Settings_images/Appearance-Settings_img2.jpeg)
 
-To move the image outside the TabBounds, set the [ImageOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html), [AdjustTopGap](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_AdjustTopGap), [LevelTextAndImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_LevelTextAndImage), [ItemSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_ItemSize) properties of TabControlAdv.
+To move the image outside the TabBounds, set the [ImageOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html), [AdjustTopGap](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_AdjustTopGap), [LevelTextAndImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_LevelTextAndImage), [ItemSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_ItemSize) properties of WinForms TabControl.
 
 #### Background image for TabPages
 
@@ -113,7 +113,7 @@ Me.tabPageAdv1.DisableInactivePageImage = True
 
 ### Color customization
 
-The look and feel of the TabControlAdv can be customized using the [ActiveTabColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_ActiveTabColor), [InActiveTabColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_InactiveTabColor) and [TabPanelBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_TabPanelBackColor) properties.
+The look and feel of the WinForms TabControl can be customized using the [ActiveTabColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_ActiveTabColor), [InActiveTabColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_InactiveTabColor) and [TabPanelBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_TabPanelBackColor) properties.
 
 **BackColor settings for the TabItems**
 
@@ -161,11 +161,11 @@ Me.tabPageAdv1.TabBackColor = System.Drawing.Color.Pink
 
 ## Foreground settings
 
-This section discusses the various Foreground Settings available in [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
+This section discusses the various Foreground Settings available in [WinForms TabControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
 
 ### Font settings
 
-The font settings for the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) can be controlled through [Font](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_Font) and [ActiveTabFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_ActiveTabFont) properties.
+The font settings for the [WinForms TabControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) can be controlled through [Font](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_Font) and [ActiveTabFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_ActiveTabFont) properties.
 
 {% tabs %}
 
@@ -249,7 +249,7 @@ Me.tabPageAdv1.TabForeColor = System.Drawing.Color.Sienna
 
 ## Border settings
 
-This section discusses the border settings available for the TabControlAdv. Set the [BorderVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_BorderVisible) property to `true` to display the control border. Default value is `false`.
+This section discusses the border settings available for the WinForms TabControl. Set the [BorderVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_BorderVisible) property to `true` to display the control border. Default value is `false`.
 
 {% tabs %}
 
