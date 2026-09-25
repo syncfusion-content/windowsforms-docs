@@ -7,7 +7,7 @@ control: TabbedMDIManager
 documentation: ug
 ---
 
-# How to Add MDI Child from Another MDI Child in TabbedMDI
+# How to Add MDI Child from Another MDI Child in WinForms TabbedMDI
 
 You should set the [MDIParent](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_MdiParent) of the new child form as follows:
 

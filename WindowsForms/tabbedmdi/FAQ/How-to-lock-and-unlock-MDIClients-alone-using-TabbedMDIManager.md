@@ -7,9 +7,9 @@ control: TabbedMDIManager
 documentation: ug
 ---
 
-# How to Lock and Unlock MDI Clients in TabbedMDI
+# How to Lock and Unlock MDI Clients in WinForms TabbedMDI
 
-TabbedMDIManager has [LockMDIClientUpdate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_LockMDIClientUpdate) and [UnLockMDIClientUpdate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_UnLockMDIClientUpdate) methods to lock and unlock the MDIClients from updating.
+WinForms TabbedMDI has [LockMDIClientUpdate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_LockMDIClientUpdate) and [UnLockMDIClientUpdate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_UnLockMDIClientUpdate) methods to lock and unlock the MDIClients from updating.
 
 Methods table
 

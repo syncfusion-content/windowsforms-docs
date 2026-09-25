@@ -7,9 +7,9 @@ control: TabbedMDIManager
 documentation: ug
 ---
 
-# Customize Tab Distance in Windows Forms TabbedMDI
+# Customize Tab Distance in WinForms TabbedMDI
 
-The height between the Tab and the Control can be set using the [BottomBorderHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabHost.html#Syncfusion_Windows_Forms_Tools_TabHost_BottomBorderHeight) property of the TabHost. This property can be accessed by overriding the TabbedMDIManager as shown in the code snippet.
+The height between the Tab and the Control can be set using the [BottomBorderHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabHost.html#Syncfusion_Windows_Forms_Tools_TabHost_BottomBorderHeight) property of the TabHost. This property can be accessed by overriding the WinForms TabbedMDI as shown in the code snippet.
 
 ![Customize the distance between the Tab and the Control](Customize-the-Distance-between-the-Tab-and-the-Con_images/Customize-the-Distance-between-the-Tab-and-the-Con_img1.png)
 
