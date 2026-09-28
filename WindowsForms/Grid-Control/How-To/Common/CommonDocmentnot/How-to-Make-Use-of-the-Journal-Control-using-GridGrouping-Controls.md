@@ -109,7 +109,7 @@ End If
 End Sub
 {% endhighlight  %}
 
-![](General_images/General_img1.png)
+![Journal control with GridGrouping control](General_images/General_img1.png)
 
 
 
