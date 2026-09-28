@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Button Click and Cursor Position in TreeViewAdv | WindowsForms | Syncfusion
+title: Button Click and Cursor in TreeViewAdv | WindowsForms | Syncfusion
 description: Learn how to synchronize a button click event with cursor positioning on a TreeViewAdv node by using node coordinates programmatically.
 platform: windowsforms
 control: TreeView 

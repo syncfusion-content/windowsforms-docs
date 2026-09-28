@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TreeViewAdv Arrow Key Navigation in Edit Mode | WindowsForms | Syncfusion
+title: Arrow Key Navigation in TreeViewAdv | WindowsForms | Syncfusion
 description: Learn how to scroll through the TreeViewAdv control using the Up and Down arrow keys while editing node text in Windows Forms.
 platform: windowsforms
 control: TreeView 
