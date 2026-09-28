@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Retrieve Columns Other Than Display and Value Members
+title: Retrieve Columns Beyond Display and Value Members | WindowsForms | Syncfusion
 description: Learn how to retrieve column values other than the DisplayMember and ValueMember fields in a MultiColumnComboBox control.
 platform: windowsforms
 control: Editors Package

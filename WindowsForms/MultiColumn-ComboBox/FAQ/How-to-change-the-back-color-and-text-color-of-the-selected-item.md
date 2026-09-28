@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to change the back color and text color of the selected item
+title: Change Selected Item Back and Text Colors | WindowsForms | Syncfusion
 description: Learn how to customize the background and text colors of selected items in the MultiColumn ComboBox control in Windows Forms.
 platform: windowsforms
 control: Editors Package

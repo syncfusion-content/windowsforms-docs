@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-remove-current-selection-in-ComboDropDown-control | WindowsForms
+title: Remove Selection in ComboDropDown | WindowsForms | Syncfusion
 description: Learn how to remove the current selection in the ComboDropDown control and reset the selected item in Windows Forms.
 platform: windowsforms
 control: Editors Package
