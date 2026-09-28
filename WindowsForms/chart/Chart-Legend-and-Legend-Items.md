@@ -277,11 +277,7 @@ item.Font = New Font("Segoe UI", 9, FontStyle.Bold)
 
 ![Legend Item text customization in Windows Forms Chart](Chart-Legend-and-Legend-Items_images/legend-item-text-customization.png)
 
-## Placement
-
-The placement, position, alignment, orientation, and floating behavior of the legend can be configured independently.
-
-### Legends placement
+## Legends placement
 
 The [LegendsPlacement](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_LegendsPlacement) property specifies whether legends are displayed inside or outside the chart area.
 
@@ -298,7 +294,7 @@ chartControl.LegendsPlacement = ChartPlacement.Outside
 
 ![Legends Placement in Windows Forms Chart](Chart-Legend-and-Legend-Items_images/legends-placement.png)
 
-### Docking position
+## Docking position
 
 The [Position](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_Position) property specifies the docking position of the legend. By default [Right](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartDock.html#Syncfusion_Windows_Forms_Chart_ChartDock_Right) is applied.
 
@@ -323,7 +319,7 @@ chartControl.Legend.Position = ChartDock.Top
 
 ![Legends Docking Position in Windows Forms Chart](Chart-Legend-and-Legend-Items_images/legend-docking-position.png)
 
-### Legend alignment
+## Legend alignment
 
 The [LegendAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_LegendAlignment) property specifies the alignment of the legend. The default value is [Center](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAlignment.html).
 
@@ -346,7 +342,7 @@ chartControl.Legend.LegendAlignment = ChartAlignment.Far
 
 ![Legends Alignment in Windows Forms Chart](Chart-Legend-and-Legend-Items_images/legend-alignment.png)
 
-### Floating legend
+## Floating legend
 
 The following properties customize a floating legend:
 
@@ -369,16 +365,23 @@ chartControl.Legend.Location = New Point(100, 80)
 
 ![Floating Legend in Windows Forms Chart](Chart-Legend-and-Legend-Items_images/floating-legend.png)
 
-### Legend item layout
+## Legend item layout
 
 The following properties control how legend items are arranged:
 
-- [RowsCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_RowsCount): Specifies the number of rows. The default value is `1`.
-- [ColumnsCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_ColumnsCount): Specifies the number of columns. The default value is `1`.
+- [RowsCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_RowsCount): Specifies the number of rows for the legend. The default value is `1`.
+- [ColumnsCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_ColumnsCount): Specifies the number of columns for the legend. The default value is `1`.
 - [Spacing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_Spacing): Specifies the spacing between the content and the legend border. The default value is `4`.
-- [ItemsAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_ItemsAlignment): Specifies the alignment of legend items. The default value is `StringAlignment.Near`.
-- [ItemsTextAligment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_ItemsTextAligment): Specifies the vertical alignment of item text. The default value is `VerticalAlignment.Center`.
-- [ItemsSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_ItemsSize): Specifies the default size of legend items.
+- [ItemsAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_ItemsAlignment): Specifies the alignment of legend items. The default value is `StringAlignment.Near`. It support the following values:
+    - Near
+    - Center
+    - Far
+- [ItemsTextAligment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_ItemsTextAligment): Specifies the vertical alignment of item text. The default value is [Center](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.VerticalAlignment.html#Syncfusion_Windows_Forms_Chart_VerticalAlignment_Center).
+The following vertical alignment options are supported:
+    - [Top](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.VerticalAlignment.html#Syncfusion_Windows_Forms_Chart_VerticalAlignment_Top) - Aligns the legend item text to the top of the legend item area.
+    - [Center](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.VerticalAlignment.html#Syncfusion_Windows_Forms_Chart_VerticalAlignment_Center) - Centers the legend item text vertically within the legend item area.
+    - [Bottom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.VerticalAlignment.html#Syncfusion_Windows_Forms_Chart_VerticalAlignment_Bottom) - Aligns the legend item text to the bottom of the legend item area.
+- [ItemsSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_ItemsSize): Specifies the default size of legend item rectangle. The specified size is ignored if it is insufficient to render the legend item text.
 
 The following code example customizes the legend item layout.
 
@@ -386,7 +389,6 @@ The following code example customizes the legend item layout.
 {% highlight c# %}
 chartControl.Legend.RowsCount = 2;
 chartControl.Legend.ColumnsCount = 2;
-chartControl.Legend.Spacing = 9;
 chartControl.Legend.ItemsAlignment = StringAlignment.Near;
 chartControl.Legend.ItemsTextAligment = VerticalAlignment.Center;
 chartControl.Legend.ItemsSize = new Size(20, 20);
@@ -394,7 +396,6 @@ chartControl.Legend.ItemsSize = new Size(20, 20);
 {% highlight vb %}
 chartControl.Legend.RowsCount = 2
 chartControl.Legend.ColumnsCount = 2
-chartControl.Legend.Spacing = 9
 chartControl.Legend.ItemsAlignment = StringAlignment.Near
 chartControl.Legend.ItemsTextAligment = VerticalAlignment.Center
 chartControl.Legend.ItemsSize = New Size(20, 20)
@@ -453,8 +454,9 @@ chartControl.Legend.RepresentationType = ChartLegendRepresentationType.None
 
 ### Custom representation icon
 
-The [RepresentationType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_RepresentationType) property supports the following [ChartLegendRepresentationType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendRepresentationType.html) values:
+The [RepresentationType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_RepresentationType) property controls how chart series are represented in the legend. By default, legend items are represented using the series type [SeriesType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendRepresentationType.html#Syncfusion_Windows_Forms_Chart_ChartLegendRepresentationType_SeriesType).
 
+The RepresentationType property supports the following [ChartLegendRepresentationType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendRepresentationType.html) values:
 - [Circle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendRepresentationType.html#Syncfusion_Windows_Forms_Chart_ChartLegendRepresentationType_Circle)
 - [Cross](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendRepresentationType.html#Syncfusion_Windows_Forms_Chart_ChartLegendRepresentationType_Cross)
 - [Diamond](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendRepresentationType.html#Syncfusion_Windows_Forms_Chart_ChartLegendRepresentationType_Diamond)
@@ -486,7 +488,7 @@ chartControl.Legend.RepresentationType = ChartLegendRepresentationType.Diamond
 
 The [Symbol](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendItem.html#Syncfusion_Windows_Forms_Chart_ChartLegendItem_Symbol) and [ItemStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendItem.html#Syncfusion_Windows_Forms_Chart_ChartLegendItem_ItemStyle) properties customize the shape, size, and color of an individual item symbol.
 
-The following code example displays a pentagon symbol.
+The following code example displays a triangle symbol.
 
 {% tabs %}
 {% highlight c# %}
@@ -519,12 +521,12 @@ The following code example applies an image directly to a legend item.
 
 {% tabs %}
 {% highlight c# %}
-chartControl.Legend.Items[0].Image = Image.FromFile(@"D:\UG\cloud-server.png");
+chartControl.Legend.Items[0].Image = Image.FromFile(@"D:\winforms\cloud-server.png");
 chartControl.Legend.Items[0].RepresentationSize = new Size(20, 20);
 chartControl.Legend.Items[0].IconAlignment = LeftRightAlignment.Right;
 {% endhighlight %}
 {% highlight vb %}
-chartControl.Legend.Items(0).Image = Image.FromFile(@"D:\UG\cloud-server.png")
+chartControl.Legend.Items(0).Image = Image.FromFile(@"D:\winforms\cloud-server.png")
 chartControl.Legend.Items(0).RepresentationSize = New Size(20, 20)
 chartControl.Legend.Items(0).IconAlignment = LeftRightAlignment.Right
 
@@ -669,22 +671,123 @@ The following code example registers the legend-item customization events.
 {% tabs %}
 {% highlight c# %}
 chartControl.Legend.DrawItem += Legend_DrawItem;
-chartControl.Legend.DrawItemText += Legend_DrawItemText;
-chartControl.Legend.FilterItems += Legend_FilterItems;
-chartControl.Legend.MinSize += Legend_MinSize;
+private void Legend_DrawItem(object sender, ChartLegendDrawItemEventArgs e)
+{
+    Rectangle symbolRect = new Rectangle(
+        e.Bounds.X,
+        e.Bounds.Y + 2,
+        12,
+        12);
+
+    e.Graphics.FillRectangle(Brushes.RoyalBlue, symbolRect);
+    e.Graphics.DrawRectangle(Pens.Black, symbolRect);
+
+    e.Handled = true;
+}
 {% endhighlight %}
+
 {% highlight vb %}
-AddHandler chartControl.Legend.DrawItem,
-    AddressOf Legend_DrawItem
+' DrawItem Event
+AddHandler chartControl.Legend.DrawItem, AddressOf Legend_DrawItem
+ 
+Private Sub Legend_DrawItem(ByVal sender As Object, ByVal e As ChartLegendDrawItemEventArgs)
+ 
+Dim symbolRect As New Rectangle(
+e.Bounds.X,
+e.Bounds.Y + 2,
+12,
+12)
+ 
+e.Graphics.FillRectangle(Brushes.RoyalBlue, symbolRect)
+e.Graphics.DrawRectangle(Pens.Black, symbolRect)
+ 
+e.Handled = True
+ 
+End Sub
+{% endhighlight %}
 
-AddHandler chartControl.Legend.DrawItemText,
-    AddressOf Legend_DrawItemText
+{% highlight c# %}
+chartControl.Legend.DrawItemText += Legend_DrawItemText;
 
-AddHandler chartControl.Legend.FilterItems,
-    AddressOf Legend_FilterItems
+private void Legend_DrawItemText(object sender, ChartLegendDrawItemTextEventArgs e)
+{
+    e.Graphics.DrawString(
+        e.Text,
+        new Font("Segoe UI", 9, FontStyle.Bold),
+        Brushes.DarkBlue,
+        e.TextRect);
 
-AddHandler chartControl.Legend.MinSize,
-    AddressOf Legend_MinSize
+    e.Handled = true;
+}
+{% endhighlight %}
+
+{% highlight vb %}
+' DrawItemText Event
+AddHandler chartControl.Legend.DrawItemText, AddressOf Legend_DrawItemText
+ 
+Private Sub Legend_DrawItemText(ByVal sender As Object, ByVal e As ChartLegendDrawItemTextEventArgs)
+ 
+e.Graphics.DrawString(
+e.Text,
+New Font("Segoe UI", 9, FontStyle.Bold),
+Brushes.DarkBlue,
+e.TextRect)
+ 
+e.Handled = True
+ 
+End Sub
+{% endhighlight %}
+
+{% highlight c# %}
+chartControl.Legend.FilterItems += Legend_FilterItems;
+
+private void Legend_FilterItems(object sender, ChartLegendFilterItemsEventArgs e)
+{
+    for (int i = e.Items.Count - 1; i >= 0; i--)
+    {
+        if (e.Items[i].Text == "Series2")
+        {
+            e.Items.RemoveAt(i);
+        }
+    }
+}
+{% endhighlight %}
+
+{% highlight vb %}
+' FilterItems Event
+AddHandler chartControl.Legend.FilterItems, AddressOf Legend_FilterItems
+ 
+Private Sub Legend_FilterItems(ByVal sender As Object, ByVal e As ChartLegendFilterItemsEventArgs)
+ 
+For i As Integer = e.Items.Count - 1 To 0 Step -1
+ 
+If e.Items(i).Text = "Series2" Then
+e.Items.RemoveAt(i)
+End If
+ 
+Next
+ 
+End Sub
+{% endhighlight %}
+
+{% highlight c# %}
+chartControl.Legend.MinSize += Legend_MinSize;
+
+private void Legend_MinSize(object sender, ChartLegendMinSizeEventArgs e)
+{
+    Size size = e.Size
+}
+{% endhighlight %}
+
+{% highlight vb %}
+' MinSize Event
+AddHandler chartControl.Legend.MinSize, AddressOf Legend_MinSize
+ 
+Private Sub Legend_MinSize(ByVal sender As Object, ByVal e As ChartLegendMinSizeEventArgs)
+ 
+Dim size As Size = e.Size
+ 
+End Sub
 {% endhighlight %}
 {% endtabs %}
 
@@ -716,10 +819,6 @@ If item IsNot Nothing Then
 End If
 {% endhighlight %}
 {% endtabs %}
-
-## Legend size
-
-The [GetMinSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html) method calculates the minimum size required to display all legend items. Use the `MinSize` event when the calculated minimum size must be customized.
 
 ## See also
 

@@ -9,11 +9,11 @@ documentation: ug
 
 # Strip Lines in Windows Forms Chart
 
-A strip line is a horizontal or vertical band rendered in the chart background to highlight a specific area of interest. Strip lines are commonly used to indicate threshold ranges, target zones, maintenance periods, or special intervals on an axis. The `ChartStripLine` class is used to create and customize strip lines. 【1-04ca55】【2-9164d2】
+A strip line is a horizontal or vertical band rendered in the chart background to highlight a specific area of interest. Strip lines are commonly used to indicate threshold ranges, target zones, maintenance periods, or special intervals on an axis. The `ChartStripLine` class is used to create and customize strip lines.
 
 ## Defining a strip line
 
-The `ChartStripLine` class specifies the appearance and behavior of a strip line. Strip lines are added through the axis `StripLines` collection. 【1-04ca55】【2-9164d2】
+The `ChartStripLine` class specifies the appearance and behavior of a strip line. Strip lines are added through the axis `StripLines` collection.
 
 The following code example creates and adds a strip line to the primary X-axis.
 
@@ -53,7 +53,7 @@ chartControl.PrimaryXAxis.StripLines.Add(
 
 ### Enabled
 
-The `Enabled` property controls whether the strip line is displayed. 【1-04ca55】
+The `Enabled` property controls whether the strip line is displayed.
 
 The following code example enables a strip line.
 
@@ -76,7 +76,7 @@ stripLine.Enabled = True
 
 ### Vertical
 
-The `Vertical` property specifies whether the strip line is displayed vertically or horizontally. 【2-9164d2】
+The `Vertical` property specifies whether the strip line is displayed vertically or horizontally.
 
 - `true`: Displays a vertical strip line.
 - `false`: Displays a horizontal strip line.
@@ -102,11 +102,11 @@ stripLine.Vertical = True
 
 ### Start
 
-The `Start` property specifies the starting position of the strip line. 【1-04ca55】
+The `Start` property specifies the starting position of the strip line.
 
 ### End
 
-The `End` property specifies the ending position of the strip line. 【1-04ca55】
+The `End` property specifies the ending position of the strip line.
 
 The following code example defines a strip line between positions `2` and `3`.
 
@@ -131,7 +131,7 @@ stripLine.End = 3
 
 ### Width
 
-The `Width` property specifies the width of the strip-line region. 【2-9164d2】
+The `Width` property specifies the width of the strip-line region.
 
 The following code example sets the strip-line width.
 
@@ -150,7 +150,7 @@ stripLine.Width = 0.5
 
 ### FixedWidth
 
-The `FixedWidth` property specifies the fixed width of each strip line. The value represents an actual axis value rather than the distance between chart points. 【1-04ca55】
+The `FixedWidth` property specifies the fixed width of each strip line. The value represents an actual axis value rather than the distance between chart points.
 
 {% tabs %}
 {% highlight c# %}
@@ -171,7 +171,7 @@ stripLine.FixedWidth = 10
 
 ### StartAtAxisPosition
 
-The `StartAtAxisPosition` property specifies whether the strip line starts at the beginning of the axis range. 【1-04ca55】
+The `StartAtAxisPosition` property specifies whether the strip line starts at the beginning of the axis range. 
 
 {% tabs %}
 {% highlight c# %}
@@ -188,7 +188,7 @@ stripLine.StartAtAxisPosition = True
 
 ### Offset
 
-The `Offset` property specifies the strip-line offset when the axis contains numeric values. 【1-04ca55】
+The `Offset` property specifies the strip-line offset when the axis contains numeric values.
 
 {% tabs %}
 {% highlight c# %}
@@ -205,7 +205,7 @@ stripLine.Offset = 2
 
 ### DateOffset
 
-The `DateOffset` property specifies the strip-line offset when the axis contains `DateTime` values. 【1-04ca55】
+The `DateOffset` property specifies the strip-line offset when the axis contains `DateTime` values.
 
 {% tabs %}
 {% highlight c# %}
@@ -228,7 +228,7 @@ stripLine.DateOffset =
 
 ### Period
 
-The `Period` property specifies the interval between repeated strip lines. 【1-04ca55】
+The `Period` property specifies the interval between repeated strip lines.
 
 {% tabs %}
 {% highlight c# %}
@@ -245,7 +245,7 @@ stripLine.Period = 5
 
 ### PeriodDate
 
-The `PeriodDate` property specifies the interval between repeated strip lines for `DateTime` axes. 【1-04ca55】
+The `PeriodDate` property specifies the interval between repeated strip lines for `DateTime` axes.
 
 {% tabs %}
 {% highlight c# %}
@@ -268,7 +268,7 @@ stripLine.PeriodDate =
 
 ### Interior
 
-The `Interior` property specifies the brush used to fill the strip line. 【1-04ca55】【2-9164d2】
+The `Interior` property specifies the brush used to fill the strip line.
 
 {% tabs %}
 {% highlight c# %}
@@ -293,7 +293,7 @@ stripLine.Interior =
 
 ### BackImage
 
-The `BackImage` property specifies the image displayed within the strip line background. 【1-04ca55】
+The `BackImage` property specifies the image displayed within the strip line background.
 
 {% tabs %}
 {% highlight c# %}
@@ -316,19 +316,19 @@ stripLine.BackImage =
 
 ### Text
 
-The `Text` property specifies the text displayed inside the strip line. 【2-9164d2】【3-63a532】
+The `Text` property specifies the text displayed inside the strip line.
 
 ### TextColor
 
-The `TextColor` property specifies the strip-line text color. 【2-9164d2】【3-63a532】
+The `TextColor` property specifies the strip-line text color.
 
 ### TextAlignment
 
-The `TextAlignment` property specifies the strip-line text alignment. 【2-9164d2】
+The `TextAlignment` property specifies the strip-line text alignment.
 
 ### Font
 
-The `Font` property specifies the font used to render the strip-line text. 【1-04ca55】
+The `Font` property specifies the font used to render the strip-line text.
 
 The following code example displays text inside a strip line.
 
@@ -365,11 +365,11 @@ stripLine.Font =
 
 ### StartDate
 
-The `StartDate` property specifies the date from which the strip line starts. 【1-04ca55】
+The `StartDate` property specifies the date from which the strip line starts.
 
 ### EndDate
 
-The `EndDate` property specifies the date at which the strip line ends. 【1-04ca55】
+The `EndDate` property specifies the date at which the strip line ends.
 
 {% tabs %}
 {% highlight c# %}
