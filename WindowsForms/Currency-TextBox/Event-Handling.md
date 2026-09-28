@@ -40,7 +40,7 @@ Returns the location of the invalid input within the invalid text.</td></tr>
 </table>
 
 
-It can be handled to raise an alarm to user when invalid text is entered by them. Refer [Error Validation](https://help.syncfusion.com/windowsforms/currency-textbox/event-handling#error-validation).
+It can be handled to raise an alarm to user when invalid text is entered by them. Refer Error Validation[.](https://help.syncfusion.com/windowsforms/)
 
 ## KeyDown Event
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hide an Unnecessary Column from Multiple Columns | WindowsForms | Syncfusion
+title: How-to-hide-an-unnecessary-column-from-the-multiple-columns 
 description: Learn how to hide specific columns in a MultiColumnComboBox control using GridColHidden and display only the required data.
 platform: windowsforms
 control: Editors Package

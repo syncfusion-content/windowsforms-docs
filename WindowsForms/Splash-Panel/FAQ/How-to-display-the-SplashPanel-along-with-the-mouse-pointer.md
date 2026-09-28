@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Display SplashPanel with Mouse Pointer | WindowsForms | Syncfusion
+title: Display SplashPanel Along with Mouse Pointer | WindowsForms
 description: Learn how to display a SplashPanel along with the mouse pointer and maintain pointer visibility in Windows Forms.
 platform: windowsforms
 control: Notification Package 
