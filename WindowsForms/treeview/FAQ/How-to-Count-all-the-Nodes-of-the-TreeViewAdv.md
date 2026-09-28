@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Count-all-the-Nodes-of-the-TreeViewAdv | WindowsForms
+title: How to Count All the Nodes of TreeViewAdv | WindowsForms | Syncfusion
 description: Learn how to count all nodes in a TreeViewAdv control using the GetNodeCount method, including child nodes and subtrees.
 platform: windowsforms
 control: TreeView 

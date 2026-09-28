@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-limit-the-characters-that-the-user-type-for-editing-the-treenodeadv-using-labeledit | WindowsForms | Syncfusion
-description: how to limit the characters, that the user type for editing the treenodeadv using labeledit
+title: Limit Characters While Editing TreeNodeAdv | WindowsForms | Syncfusion
+description: Learn how to limit the number of characters users can enter while editing a TreeNodeAdv node using the LabelEdit feature in Windows Forms.
 platform: windowsforms
 control: TreeView 
 documentation: ug
 ---
 
-# How to Limit the Characters that the User Type for Editing the TreeNodeAdv using LabelEdit
+# How to Limit Characters While Editing TreeNodeAdv Using LabelEdit
 
 This can be done using the below code snippet.
 

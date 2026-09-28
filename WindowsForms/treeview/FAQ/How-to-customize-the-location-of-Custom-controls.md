@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize Custom Control Locations in TreeNodeAdv
+title: Custom Control Locations in TreeNodeAdv | WindowsForms | Syncfusion
 description: Learn how to customize the location of custom controls added to TreeNodeAdv elements and control their placement in Windows Forms.
 platform: windowsforms
 control: TreeView 

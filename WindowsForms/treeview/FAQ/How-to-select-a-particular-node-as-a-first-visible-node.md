@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How-to-select-a-particular-node-as-a-first-visible-node | WindowsForms | Syncfusion
-description: how to select a particular node as a first visible node
+title: Select a Node as the First Visible Node | WindowsForms | Syncfusion
+description: Learn how to select a particular node as the first visible node in TreeViewAdv and control node visibility in Windows Forms.
 platform: windowsforms
 control: TreeView 
 documentation: ug
