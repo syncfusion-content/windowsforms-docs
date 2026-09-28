@@ -14,7 +14,7 @@ This section will give you a brief description on how to use the ProgressBarAdv 
 1. Drag and drop a ProgressBarAdv onto your form.
 2. Add a Timer and a Button to the form. By default, the Timer will be disabled.
 
-   ![](Overview_images/Overview_img27.jpeg) 
+   ![ProgressBarAdv with Timer and Button controls](Overview_images/Overview_img27.jpeg) 
 
 
 3. Double-click the timer and add the below given code in the timer_Tick event.
@@ -96,7 +96,7 @@ This section will give you a brief description on how to use the ProgressBarAdv 
 
 5. Run the application.
 
-   ![](Overview_images/Overview_img28.jpeg) 
+   ![ProgressBarAdv displaying the updated progress value](Overview_images/Overview_img28.jpeg) 
 
 
 
