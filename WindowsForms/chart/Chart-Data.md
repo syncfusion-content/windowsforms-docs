@@ -9,7 +9,7 @@ documentation: ug
 
 # Populating Data in Windows Forms Chart
 
-### Built-in Support for data-binding
+## Built-in Support for data-binding
 
 Essential® Chart has built-in support for binding to DataTables, DataSets, DataViews or any implementation of IListSource, IBindingList or ITypedList.
 
@@ -17,7 +17,7 @@ The [ChartSeries](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows
 
 There is however no DESIGN-TIME support for data binding. This has to be setup in code.
 
-### Data binding via custom interfaces
+## Data binding via custom interfaces
 
 There is also more flexible support for implementing custom data models by implementing specific interfaces. Using this approach you can query and provide data for the chart much more flexibly and from any kind of data store.
 

@@ -72,13 +72,37 @@ Me.pivotChart1.SortedLegends.Add(New PivotSortDescriptor("State"))
 There are two events available in both `SortedAxis` and `SortedLegends` of the pivot chart to handle or notify the sorting operation.
 
 <table>
-<tr>
-<th>S.No</th><th>Event name</th><th>Details</th><th>Event arguments</th>
-</tr>
-<tr>
-<td>1</td><td>Changing</td><td>Occurs before a property in a nested element or the collection is changed.</td><td><a href="https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotItemSortingEventArgs.html">PivotItemSortingEventArgs</a></td>
-</tr>
-<tr><td>2</td><td>Changed</td><td>Occurs after a property in a nested element or the collection is changed.</td><td><a href="https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotItemSortedEventArgs.html">PivotItemSortedEventArgs</a></td>
-</tr>
+    <tr>
+        <th>S.No</th>
+        <th>Event name</th>
+        <th>Details</th>
+        <th>Event arguments</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Changing</td>
+        <td>Occurs before a property in a nested element or the collection is changed.</td>
+        <td>
+            <a href="https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotItemSortingEventArgs.html"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="PivotItemSortingEventArgs API documentation">
+                PivotItemSortingEventArgs
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Changed</td>
+        <td>Occurs after a property in a nested element or the collection is changed.</td>
+        <td>
+            <a href="https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotItemSortedEventArgs.html"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="PivotItemSortedEventArgs API documentation">
+                PivotItemSortedEventArgs
+            </a>
+        </td>
+    </tr>
 </table>
 

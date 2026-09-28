@@ -737,7 +737,7 @@ You could then use another series to represent the completed portion of the diff
 
 ![Chart Types](Chart-Types_images/windowsforms-gantt-chart.jpeg)
 
-#### Chart Details
+### Chart Details
 
 Number of Y values per point - 2 (1st is beginning value and the 2nd is the ending value).
 
@@ -1717,7 +1717,7 @@ For ex: if we have to display the range of temperature per day in a chart, Range
 
 ![Range area chart in WindowsForms](chart-types_images/windowsforms-range-area-chart.jpeg)
 
-#### Chart Details
+### Chart Details
 
 Number of Y values per point - 2.
 
@@ -2791,7 +2791,7 @@ A Pie Chart renders y values as slices in a pie. These slices are rendered in pr
 
 ![Pie chart in WindowsForms](chart-types_images/windowsforms-pie-chart.jpeg)
 
-#### Chart Details
+### Chart Details
 
 Number of Y values per point - 1.
 
@@ -3064,7 +3064,7 @@ One can change an existing chart to a combination chart by selecting the data se
 
 ![Combination chart in WindowsForms](chart-types_images/windowsforms-combination-chart.jpeg)
 
-#### Chart Details
+### Chart Details
 
 Number of Series - One or More.
 
@@ -3141,7 +3141,7 @@ A heat map chart is a graphical representation of data where the values taken by
 
 ![Heat map charts in WindowsForms](chart-types_images/windowsforms-heat-map-charts.jpeg)
 
-#### Chart Details
+### Chart Details
 
 Number of Y values per point - 2.
 

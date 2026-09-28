@@ -13,7 +13,7 @@ documentation: ug
 
 Essential® Chart now supports localization; built-in resource files for specific languages can be easily added.  Context menu items, exception messages, and some of the toolbar items can be localized.
 
-### Use Case Scenario
+## Use Case Scenario
 
 This enables you to localize any part of the chart that has static strings in it.
 
@@ -76,7 +76,7 @@ Me.chartControl1.Localize=”de-DE”
 
 ![Chart Localization](Localization_images/Localization_img5.png)
 
-### Sample Link
+## Sample Link
 
 To view a sample,
 
