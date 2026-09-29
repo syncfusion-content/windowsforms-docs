@@ -18,15 +18,17 @@ The following code example displays the default chart title.
 {% tabs %}
 {% highlight c# %}
 
-chartControl.Title.Text = "Chart Title";
+chartControl.Text = "Chart Title";
 
 {% endhighlight %}
 {% highlight vb %}
 
-chartControl.Title.Text = "Chart Title"
+chartControl.Text = "Chart Title"
 
 {% endhighlight %}
 {% endtabs %}
+
+![Chart Title in Windows Forms Chart](Chart-Appearance_images/chart_title.png)
 
 ## Multiple titles
 
@@ -53,24 +55,28 @@ chartControl.Titles.Add(chartTitle)
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple Chart titles in Windows Forms Chart](Chart-Appearance_images/multiple_chart_title.png)
+![Multiple Chart Titles in Windows Forms Chart](Chart-Appearance_images/multiple_chart_title.png)
 
 ## Title visibility
 
 The [Visible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTitle.html#Syncfusion_Windows_Forms_Chart_ChartTitle_Visible) property controls whether a chart title is displayed.
 
+The following code example hides the chart title.
+
 {% tabs %}
 {% highlight c# %}
 
-chartTitle.Visible = true;
+chartTitle.Visible = false;
 
 {% endhighlight %}
 {% highlight vb %}
 
-chartTitle.Visible = True
+chartTitle.Visible = False
 
 {% endhighlight %}
 {% endtabs %}
+
+![Chart Title Visible in Windows Forms Chart](Chart-Appearance_images/title_visible.png)
 
 ## Title alignment
 
@@ -95,7 +101,7 @@ chartControl.Title.Alignment = ChartAlignment.Near
 {% endhighlight %}
 {% endtabs %}
 
-![Chart titles alignment in Windows Forms Chart](Chart-Appearance_images/chart_alignment.png)
+![Chart Title Alignment in Windows Forms Chart](Chart-Appearance_images/chart_title_alignment.png)
 
 ## Title position
 
@@ -121,84 +127,85 @@ chartControl.Title.Position = ChartDock.Left
 {% endhighlight %}
 {% endtabs %}
 
-![Chart title position in Windows Forms Chart](Chart-Appearance_images/chart_position.png)
+![Chart Title Position in Windows Forms Chart](Chart-Appearance_images/chart_title_position.png)
 
 ## Floating title
 
-Set the `Position` property to `ChartDock.Floating` and use the [Location](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTitle.html#Syncfusion_Windows_Forms_Chart_ChartTitle_Location) property to place a title at a custom location.
+Set the [Position](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTitle.html#Syncfusion_Windows_Forms_Chart_ChartTitle_Position) property to [Floating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartDock.html#Syncfusion_Windows_Forms_Chart_ChartDock_Floating) and use the [Location](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTitle.html#Syncfusion_Windows_Forms_Chart_ChartTitle_Location) property to place a title at a custom location.
+
+The following code example displays the chart title at the location (150, 20).
 
 {% tabs %}
 {% highlight c# %}
 
 chartTitle.Position = ChartDock.Floating;
-chartTitle.Location = new Point(200, 20);
+chartTitle.Location = new Point(150, 20);
 
 {% endhighlight %}
 {% highlight vb %}
 
 chartTitle.Position = ChartDock.Floating
-chartTitle.Location = New Point(200, 20)
+chartTitle.Location = New Point(150, 20)
 
 {% endhighlight %}
 {% endtabs %}
+
+![Chart Title Location in Windows Forms Chart](Chart-Appearance_images/chart_title_location.png)
 
 ## Customizing the title
 
 The following properties customize the appearance and layout of a chart title:
 
-- [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTitle.html#Syncfusion_Windows_Forms_Chart_ChartTitle_Text): Specifies the title text.
-- [Font](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTitle.html#Syncfusion_Windows_Forms_Chart_ChartTitle_Font): Specifies the font family, size, and style of the title text.
-- `ForeColor`: Specifies the title text color.
+- [Font](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTitle.html#Syncfusion_Windows_Forms_Chart_ChartTitle_Font): Specifies the font family, size, and style of the title text. The default value is **Verdana, 14 pt, Regular**.
+- [ForeColor](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.forecolor?view=windowsdesktop-10.0#system-windows-forms-control-forecolor): Specifies the title text color. The default value is `Color.Black`.
 - [BackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTitle.html#Syncfusion_Windows_Forms_Chart_ChartTitle_BackColor): Specifies the title background color. The default value is `Color.Transparent`.
 - [Margin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTitle.html#Syncfusion_Windows_Forms_Chart_ChartTitle_Margin): Specifies the margin around the title text. The default value is `4`.
-- [AutoSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTitle.html#Syncfusion_Windows_Forms_Chart_ChartTitle_AutoSize): Specifies whether the title size is calculated automatically based on its text.
-- [Size](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTitle.html#Syncfusion_Windows_Forms_Chart_ChartTitle_Size): Specifies the height and width of the title when a custom size is required.
-- [Orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTitle.html#Syncfusion_Windows_Forms_Chart_ChartTitle_Orientation): Specifies the orientation of the title.
-- [ShowBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTitle.html#Syncfusion_Windows_Forms_Chart_ChartTitle_ShowBorder): Controls whether the title border is displayed.
-- [Border](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTitle.html#Syncfusion_Windows_Forms_Chart_ChartTitle_Border): Returns the `LineInfo` object used to customize the title border.
+- [AutoSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTitle.html#Syncfusion_Windows_Forms_Chart_ChartTitle_AutoSize): Specifies whether the title size is calculated automatically based on its text. The default value is `true`.
+- [Size](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTitle.html#Syncfusion_Windows_Forms_Chart_ChartTitle_Size): Specifies the height and width of the title when a custom size is required. When AutoSize is set to true, the title size is calculated automatically based on its text.
+- [Orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTitle.html#Syncfusion_Windows_Forms_Chart_ChartTitle_Orientation): Specifies the orientation of the title. The default value is [Horizontal](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartOrientation.html#Syncfusion_Windows_Forms_Chart_ChartOrientation_Horizontal). The supported values are:
+    - [Horizontal](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartOrientation.html#Syncfusion_Windows_Forms_Chart_ChartOrientation_Horizontal): Displays the title horizontally.
+    - [Vertical](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartOrientation.html#Syncfusion_Windows_Forms_Chart_ChartOrientation_Vertical): Displays the title vertically.
+- [ShowBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTitle.html#Syncfusion_Windows_Forms_Chart_ChartTitle_ShowBorder): Controls whether the title border is displayed. The default value is `false`.
+- [Border](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTitle.html#Syncfusion_Windows_Forms_Chart_ChartTitle_Border): Returns the [LineInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.LineInfo.html) object used to customize the title border. This property is read-only.
+
+N> The [Orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTitle.html#Syncfusion_Windows_Forms_Chart_ChartTitle_Orientation) property is applicable only when the title [Position](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTitle.html#Syncfusion_Windows_Forms_Chart_ChartTitle_Position) is set to [Floating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartDock.html#Syncfusion_Windows_Forms_Chart_ChartDock_Floating).
 
 The following code example customizes the chart title.
 
 {% tabs %}
 {% highlight c# %}
 
-chartTitle.Font = new Font(
-    "Segoe UI",
-    14,
-    FontStyle.Bold);
+chartControl.Title.ForeColor = Color.Red;
+chartControl.Title.BackColor = Color.LightGoldenrodYellow;
+chartControl.Title.Margin = 6;
+chartControl.Title.AutoSize = false;
+chartControl.Title.Orientation = ChartOrientation.Horizontal;
 
-chartTitle.ForeColor = Color.DarkBlue;
-chartTitle.BackColor = Color.LightBlue;
-chartTitle.Margin = 8;
-chartTitle.AutoSize = true;
-chartTitle.Orientation = ChartOrientation.Horizontal;
-
-chartTitle.ShowBorder = true;
-chartTitle.Border.Color = Color.DarkBlue;
-chartTitle.Border.Width = 2;
-chartTitle.Border.DashStyle = DashStyle.Solid;
+chartControl.Title.ShowBorder = true;
+chartControl.Title.Border.ForeColor = Color.DarkBlue;
+chartControl.Title.Border.Width = 2;
+chartControl.Title.Border.DashStyle = DashStyle.Dash;
+chartControl.Title.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold);
 
 {% endhighlight %}
 {% highlight vb %}
 
-chartTitle.Font = New Font(
-    "Segoe UI",
-    14,
-    FontStyle.Bold)
+chartControl.Title.ForeColor = Color.Red
+chartControl.Title.BackColor = Color.LightGoldenrodYellow
+chartControl.Title.Margin = 6
+chartControl.Title.AutoSize = False
+chartControl.Title.Orientation = ChartOrientation.Horizontal
 
-chartTitle.ForeColor = Color.DarkBlue
-chartTitle.BackColor = Color.LightBlue
-chartTitle.Margin = 8
-chartTitle.AutoSize = True
-chartTitle.Orientation = ChartOrientation.Horizontal
-
-chartTitle.ShowBorder = True
-chartTitle.Border.Color = Color.DarkBlue
-chartTitle.Border.Width = 2
-chartTitle.Border.DashStyle = DashStyle.Solid
+chartControl.Title.ShowBorder = True
+chartControl.Title.Border.ForeColor = Color.DarkBlue
+chartControl.Title.Border.Width = 2
+chartControl.Title.Border.DashStyle = DashStyle.Dash
+chartControl.Title.Font = New System.Drawing.Font("Candara", 12.0F, System.Drawing.FontStyle.Bold)
 
 {% endhighlight %}
 {% endtabs %}
+
+![Chart title customization in Windows Forms Chart](Chart-Appearance_images/title_customization.png)
 
 ## See also
 

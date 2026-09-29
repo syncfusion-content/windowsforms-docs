@@ -442,7 +442,7 @@ End Sub
 - [How to host WPF Chart control in Windows Forms project](https://support.syncfusion.com/kb/article/18893/how-to-host-wpf-chart-control-in-windows-forms-project-)
 - [How to create a chart in VB .NET Windows Forms](https://support.syncfusion.com/kb/article/9641/how-to-create-a-chart-in-vb-net-windows-forms)
 - [How to create a real-time chart in WF](https://support.syncfusion.com/kb/article/8266/how-to-create-a-real-time-chart-in-wf)
-- [How to add data to the Chartcontrol in WinForms Chart](https://support.syncfusion.com/kb/article/1254/how-to-add-data-to-the-chartcontrol-in-winforms-chart)
+- [How to add data to the Chart control in WinForms Chart](https://support.syncfusion.com/kb/article/1254/how-to-add-data-to-the-chartcontrol-in-winforms-chart)
 - [How to specify a chart type in Syncfusion Winforms Chart control](https://support.syncfusion.com/kb/article/1250/how-to-specify-a-chart-type-in-syncfusion-winforms-chart-control)
 
 

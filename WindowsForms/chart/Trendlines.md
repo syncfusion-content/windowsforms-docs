@@ -62,8 +62,6 @@ chartControl.Series.Add(series)
 {% endhighlight %}
 {% endtabs %}
 
-![Trendline in Windows Forms Chart](../Chart-Series_Images/trendline.png)
-
 ## Trendline name
 
 The [Name](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.Trendline.html#Syncfusion_Windows_Forms_Chart_Trendline_Name) property specifies the name of the trendline. The default value is `Trendline`.
