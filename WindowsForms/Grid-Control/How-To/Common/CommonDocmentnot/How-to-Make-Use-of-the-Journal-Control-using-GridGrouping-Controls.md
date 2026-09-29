@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Use Journal Control with GridGrouping Controls
+title: How to Use Journal Control with GridGrouping Controls | Syncfusion
 description: Learn how to use the Journal Control with GridGrouping controls to track, record, and manage data changes in Windows Forms.
 platform: windowsforms
 control: GridGrouping
@@ -110,9 +110,3 @@ End Sub
 {% endhighlight  %}
 
 ![Journal control with GridGrouping control](General_images/General_img1.png)
-
-
-
-Sample link:
-
-[https://www.syncfusion.com/uploads/support/user/uploads/i68039-490391191.zip](https://www.syncfusion.com/uploads/support/user/uploads/i68039-490391191.zip)
