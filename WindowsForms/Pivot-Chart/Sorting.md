@@ -85,7 +85,6 @@ There are two events available in both `SortedAxis` and `SortedLegends` of the p
         <td>
             <a href="https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotItemSortingEventArgs.html"
                target="_blank"
-               rel="noopener noreferrer"
                aria-label="PivotItemSortingEventArgs API documentation">
                 PivotItemSortingEventArgs
             </a>
@@ -98,7 +97,6 @@ There are two events available in both `SortedAxis` and `SortedLegends` of the p
         <td>
             <a href="https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotItemSortedEventArgs.html"
                target="_blank"
-               rel="noopener noreferrer"
                aria-label="PivotItemSortedEventArgs API documentation">
                 PivotItemSortedEventArgs
             </a>
