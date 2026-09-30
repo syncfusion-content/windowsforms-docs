@@ -321,7 +321,7 @@ chartControl.CustomPalette = New Color() {Color.LightGreen, Color.LightBlue, Col
 
 ## Border and margins
 
-The chart provides properties for customizing the chart-area border, shadow, chart-area margins, plot-area margins, and spacing between elements.
+The chart provides properties for customizing the chart-area border, shadow, chart-area margins, plot-area margins, and spacing between elements. 
 
 ### Chart area border
 
@@ -420,7 +420,7 @@ chartControl.ShadowWidth = 7
 
 ### Chart Area Margins
 
-The [ChartAreaMargins](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ChartAreaMargins) property specifies the space between the chart area border and the chartplot area.
+The [ChartAreaMargins](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ChartAreaMargins) property specifies the space between the chart area border and the chartplot area. By default, the margin is set to 10 pixels on all four sides.
 
 The following code example applies a margin of `20` pixels to all sides of the chart area.
 
@@ -441,7 +441,7 @@ chartControl.ChartAreaMargins = New Syncfusion.Windows.Forms.Chart.ChartMargins(
 
 ### Spacing between elements
 
-The [Spacing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Spacing) property specifies the spacing between chart elements. A larger value increases the gap between elements.
+The [Spacing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Spacing) property specifies the spacing between chart elements. A larger value increases the gap between elements. The default value is `30f`.
 
 {% tabs %}
 {% highlight c# %}
@@ -477,7 +477,6 @@ The following properties are used to configure the title text, position, alignme
     - `Near`
     - `Center`
     - `Far`
-- [Font](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Font): Specifies the font style of the chart title.
 - [ForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ForeColor): Specifies the foreground color of the chart title.
 
 The following code example customizes the chart title text, position, alignment, font, and foreground color.
@@ -499,107 +498,245 @@ chartControl.TextPosition = ChartTextPosition.Top
 
 ## Custom Drawing
 
-Custom drawing can be used when the built-in appearance properties do not provide the required visual output. Draw custom content during the relevant chart paint event and use the event graphics context to render the required shapes or text.
+Custom drawing allows you to render custom graphics in the chart area when the built-in appearance features are not sufficient. Handle the [ChartAreaPaint](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ChartAreaPaint) event to perform custom drawing. This event is raised both during chart rendering and when the chart is exported to image formats, SVG, and other outputs. 
 
-> **NOTE**
->
-> Use custom drawing only for visuals that cannot be achieved through the standard chart appearance properties.
+Use this event instead of the standard `Paint` event to ensure custom graphics are included in exported charts.
+
+The following code demonstrates custom drawing in the chart using the ChartAreaPaint event.
+
+{% tabs %}
+{% highlight c# %}
+
+chartControl.ChartAreaPaint += ChartControl_ChartAreaPaint;
+private void ChartControl_ChartAreaPaint(object sender, PaintEventArgs e)
+{
+    // Get the right end of the X-axis.
+    Point ptX = this.chartControl.ChartArea.GetPointByValue(new ChartPoint( chartControl.PrimaryXAxis.Range.Max, chartControl.PrimaryYAxis.Range.Min));
+
+    // Draw arrow at the end of X-axis.
+    PointF ptX1 = new PointF(ptX.X - 7, ptX.Y - 4);
+    PointF ptX2 = new PointF(ptX.X, ptX.Y);
+    PointF ptX3 = new PointF(ptX.X - 7, ptX.Y + 4);
+
+    e.Graphics.FillPolygon(Brushes.Black, new PointF[] { ptX1, ptX2, ptX3 });
+
+    // Get the top end of the Y-axis.
+    Point ptY = chartControl.ChartArea.GetPointByValue(new ChartPoint(chartControl.PrimaryXAxis.Range.Min, chartControl.PrimaryYAxis.Range.Max));
+
+    // Draw arrow at the top of Y-axis.
+    PointF ptY1 = new PointF(ptY.X - 4, ptY.Y + 7);
+    PointF ptY2 = new PointF(ptY.X, ptY.Y);
+    PointF ptY3 = new PointF(ptY.X + 4, ptY.Y + 7);
+
+    e.Graphics.FillPolygon(Brushes.Black, new PointF[] { ptY1, ptY2, ptY3 });
+
+    // Draw diagonal line.
+    e.Graphics.DrawLine(Pens.Gray, ptY.X, ptX.Y, ptX.X, ptY.Y);
+
+    // Draw custom points.
+    DrawPoint(e.Graphics, 500, 500, "Point1");
+    DrawPoint(e.Graphics, 1000, 400, "Point2");
+    DrawPoint(e.Graphics, 1800, 430, "Point3");
+    DrawPoint(e.Graphics, 2500, 450, "Point4");
+    DrawPoint(e.Graphics, 2200, 350, "Point5");
+}
+
+private void DrawPoint(Graphics graphics, double x, double y, string text)
+{
+    Point pt = chartControl.ChartArea.GetPointByValue(new ChartPoint(x, y));
+
+    // Draw marker.
+    Rectangle markerBounds = new Rectangle(pt.X - 4, pt.Y - 4, 8, 8);
+
+    graphics.FillEllipse(Brushes.Peru, markerBounds);
+    graphics.DrawEllipse(Pens.SaddleBrown, markerBounds);
+
+    // Draw text below the marker.
+    SizeF textSize = graphics.MeasureString(text, this.Font);
+
+    graphics.DrawString(text, this.Font, Brushes.Black,  pt.X - (textSize.Width / 2), pt.Y + 8);
+}
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+AddHandler chartControl.ChartAreaPaint, AddressOf ChartControl_ChartAreaPaint
+
+Private Sub ChartControl_ChartAreaPaint(ByVal sender As Object, ByVal e As PaintEventArgs)
+
+    ' Get the right end of the X-axis.
+    Dim ptX As Point = chartControl.ChartArea.GetPointByValue(
+        New ChartPoint( chartControl.PrimaryXAxis.Range.Max, chartControl.PrimaryYAxis.Range.Min))
+
+    ' Draw arrow at the end of X-axis.
+    Dim ptX1 As New PointF(ptX.X - 7, ptX.Y - 4)
+    Dim ptX2 As New PointF(ptX.X, ptX.Y)
+    Dim ptX3 As New PointF(ptX.X - 7, ptX.Y + 4)
+
+    e.Graphics.FillPolygon(Brushes.Black, New PointF() {ptX1, ptX2, ptX3})
+
+    ' Get the top end of the Y-axis.
+    Dim ptY As Point = chartControl.ChartArea.GetPointByValue(
+        New ChartPoint(chartControl.PrimaryXAxis.Range.Min, chartControl.PrimaryYAxis.Range.Max))
+
+    ' Draw arrow at the top of Y-axis.
+    Dim ptY1 As New PointF(ptY.X - 4, ptY.Y + 7)
+    Dim ptY2 As New PointF(ptY.X, ptY.Y)
+    Dim ptY3 As New PointF(ptY.X + 4, ptY.Y + 7)
+
+    e.Graphics.FillPolygon(Brushes.Black, New PointF() {ptY1, ptY2, ptY3})
+
+    ' Draw diagonal line.
+    e.Graphics.DrawLine(Pens.Gray, ptY.X, ptX.Y, ptX.X, ptY.Y)
+
+    ' Draw custom points.
+    DrawPoint(e.Graphics, 500, 500, "Point1")
+    DrawPoint(e.Graphics, 1000, 400, "Point2")
+    DrawPoint(e.Graphics, 1800, 430, "Point3")
+    DrawPoint(e.Graphics, 2500, 450, "Point4")
+    DrawPoint(e.Graphics, 2200, 350, "Point5")
+
+End Sub
+
+Private Sub DrawPoint(ByVal graphics As Graphics, ByVal x As Double, ByVal y As Double, ByVal text As String)
+
+    Dim pt As Point = chartControl.ChartArea.GetPointByValue(New ChartPoint(x, y))
+
+    ' Draw marker.
+    Dim markerBounds As New Rectangle(pt.X - 4, pt.Y - 4, 8, 8)
+
+    graphics.FillEllipse(Brushes.Peru, markerBounds)
+    graphics.DrawEllipse(Pens.SaddleBrown, markerBounds)
+
+    ' Draw text below the marker.
+    Dim textSize As SizeF = graphics.MeasureString(text, Me.Font)
+
+    graphics.DrawString(text, Me.Font, Brushes.Black, pt.X - (textSize.Width / 2.0F), pt.Y + 8)
+
+End Sub
+
+{% endhighlight %}
+{% endtabs %}
+
+![Chart custom drawing in Windows Forms Chart](/Chart-Appearance_images/chart-custom-drawing.png)
 
 ## Watermark support
 
-The `Watermark` property provides options for displaying text or an image in the chart area.
+[ChartControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html) provides watermark support through the [Watermark](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_Watermark) property, which allows you to display text, an image, or both within the chart area.
 
 The following properties customize the watermark:
 
-- `Text`: Specifies the watermark text.
-- `Image`: Specifies the watermark image.
-- `ImageSize`: Specifies the watermark image size.
-- `Font`: Specifies the watermark font.
-- `TextColor`: Specifies the watermark text color.
-- `Opacity`: Specifies the watermark opacity.
-- `Margin`: Specifies the space around the watermark.
-- `HorizontalAlignment`: Specifies the horizontal alignment.
-- `VerticalAlignment`: Specifies the vertical alignment.
-- `ZOrder`: Specifies whether the watermark is displayed above or below chart content.
+- [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartWatermark.html#Syncfusion_Windows_Forms_Chart_ChartWatermark_Text): Specifies the watermark text. The default value is an empty string.
+- [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartWatermark.html#Syncfusion_Windows_Forms_Chart_ChartWatermark_Image): Specifies the watermark image. The default value is `null`.
+- [ImageSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartWatermark.html#Syncfusion_Windows_Forms_Chart_ChartWatermark_ImageSize): Specifies the watermark image size. The default value is `null`.
+- [Font](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartWatermark.html#Syncfusion_Windows_Forms_Chart_ChartWatermark_Font): Specifies the watermark font. 
+- [TextColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartWatermark.html#Syncfusion_Windows_Forms_Chart_ChartWatermark_TextColor): Specifies the watermark text color. By default, the watermark uses the charts [ForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ForeColor) value.
+- [Opacity](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartWatermark.html#Syncfusion_Windows_Forms_Chart_ChartWatermark_Opacity): Specifies the watermark opacity. The default value is `60`.
+- [Margin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartWatermark.html#Syncfusion_Windows_Forms_Chart_ChartWatermark_Margin): Specifies the space around the watermark. The default value is `10, 10, 10, 10`.
+- [HorizontalAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartWatermark.html#Syncfusion_Windows_Forms_Chart_ChartWatermark_HorizontalAlignment): Specifies the horizontal alignment. The default value is [ChartAlignment.Near](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAlignment.html#Syncfusion_Windows_Forms_Chart_ChartAlignment_Near).
+- [VerticalAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartWatermark.html#Syncfusion_Windows_Forms_Chart_ChartWatermark_VerticalAlignment): Specifies the vertical alignment. The default value is [ChartAlignment.Near](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAlignment.html#Syncfusion_Windows_Forms_Chart_ChartAlignment_Near).
+- [ZOrder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartWatermark.html#Syncfusion_Windows_Forms_Chart_ChartWatermark_ZOrder): Specifies whether the watermark is displayed above or below chart content. The default value is [Over](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartWaterMarkOrder.html#Syncfusion_Windows_Forms_Chart_ChartWaterMarkOrder_Over).The available values are:
+    - [Behind](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartWaterMarkOrder.html#Syncfusion_Windows_Forms_Chart_ChartWaterMarkOrder_Behind): Displays the watermark behind the chart content.
+    - [Over](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartWaterMarkOrder.html#Syncfusion_Windows_Forms_Chart_ChartWaterMarkOrder_Over): Displays the watermark over the chart content.
+
+The following code example demonstrates how to add and customize an image watermark in the chart area.
 
 {% tabs %}
 {% highlight c# %}
 
-chartControl.Watermark.Text = "CONFIDENTIAL";
-chartControl.Watermark.Font = new Font(
-    "Segoe UI",
-    24,
-    FontStyle.Bold);
-chartControl.Watermark.TextColor = Color.Gray;
-chartControl.Watermark.Opacity = 40;
-chartControl.Watermark.HorizontalAlignment =
-    ChartAlignment.Center;
-chartControl.Watermark.VerticalAlignment =
-    ChartAlignment.Center;
+chartControl.ChartArea.Watermark.Image = System.Drawing.Image.FromFile(@"Resources\carsales.png");
+chartControl.ChartArea.Watermark.Opacity = 60;
+chartControl.ChartArea.Watermark.HorizontalAlignment = ChartAlignment.Center;
+chartControl.ChartArea.Watermark.VerticalAlignment = ChartAlignment.Center;
+chartControl.ChartArea.Watermark.ZOrder = ChartWaterMarkOrder.Behind;
 
 {% endhighlight %}
 {% highlight vb %}
 
-chartControl.Watermark.Text = "CONFIDENTIAL"
-chartControl.Watermark.Font = New Font(
-    "Segoe UI",
-    24,
-    FontStyle.Bold)
-chartControl.Watermark.TextColor = Color.Gray
-chartControl.Watermark.Opacity = 40
-chartControl.Watermark.HorizontalAlignment =
-    ChartAlignment.Center
-chartControl.Watermark.VerticalAlignment =
-    ChartAlignment.Center
-
+chartControl.ChartArea.Watermark.Image = System.Drawing.Image.FromFile("Resources\carsales.png")
+chartControl.ChartArea.Watermark.Opacity = 60
+chartControl.ChartArea.Watermark.HorizontalAlignment = ChartAlignment.Center
+chartControl.ChartArea.Watermark.VerticalAlignment = ChartAlignment.Center
+chartControl.ChartArea.Watermark.ZOrder = ChartWaterMarkOrder.Behind
 {% endhighlight %}
 {% endtabs %}
+
+![Chart watermark in Windows Forms Chart](/Chart-Appearance_images/chart-watermark.png)
 
 ## Interlaced grid background
 
-The `InterlacedGrid` property enables alternate grid-band shading. The `InterlacedGridInterior` property customizes the interlaced-grid background.
+The [InterlacedGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_InterlacedGrid) property enables alternating background bands between grid lines. By default, this property is set to `false`.
+
+The [InterlacedGridInterior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_InterlacedGridInterior) property customizes the appearance of these interlaced bands by setting their background fill. The default value is `Color.LightGray`.
 
 {% tabs %}
 {% highlight c# %}
 
+chartControl.PrimaryXAxis.InterlacedGrid = true;
+chartControl.PrimaryXAxis.InterlacedGridInterior = new Syncfusion.Drawing.BrushInfo( Color.FromArgb(166, 184, 200));
+
+// Enable interlaced grid for Y-axis.
 chartControl.PrimaryYAxis.InterlacedGrid = true;
-chartControl.PrimaryYAxis.InterlacedGridInterior =
-    new BrushInfo(Color.AliceBlue);
+chartControl.PrimaryYAxis.InterlacedGridInterior = new Syncfusion.Drawing.BrushInfo(Color.FromArgb(124, 144, 179));
 
 {% endhighlight %}
 {% highlight vb %}
 
+chartControl.PrimaryXAxis.InterlacedGrid = True
+chartControl.PrimaryXAxis.InterlacedGridInterior = New Syncfusion.Drawing.BrushInfo(Color.FromArgb(166, 184, 200))
+
 chartControl.PrimaryYAxis.InterlacedGrid = True
-chartControl.PrimaryYAxis.InterlacedGridInterior =
-    New BrushInfo(Color.AliceBlue)
+chartControl.PrimaryYAxis.InterlacedGridInterior = New Syncfusion.Drawing.BrushInfo(Color.FromArgb(124, 144, 179))
 
 {% endhighlight %}
 {% endtabs %}
 
-## Minor grid lines
-
-Minor grid lines divide the interval between major grid lines into smaller sections. Configure the minor-grid properties of the required axis to control their visibility and appearance.
-
-> **NOTE**
->
-> Minor-grid behavior depends on the axis type and interval configuration.
+![Chart Interlaced Grid in Windows Forms Chart](/Chart-Appearance_images/chart-interlaced-grid.png)
 
 ## Chart skins
 
-The `Skins` property applies a built-in visual style to the chart control. A skin provides a coordinated appearance for the chart background, plot area, axes, legend, and series.
+[ChartControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html) allows users to customize its appearance by applying pre defined visual styles. The [Skins](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Skins) property applies a built in visual style to the chart.
+
+The Skins property supports the following values:
+
+- [Almond](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.Skins.html#Syncfusion_Windows_Forms_Chart_Skins_Almond)
+- [Blend](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.Skins.html#Syncfusion_Windows_Forms_Chart_Skins_Blend)
+- [Blueberry](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.Skins.html#Syncfusion_Windows_Forms_Chart_Skins_Blueberry)
+- [Marble](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.Skins.html#Syncfusion_Windows_Forms_Chart_Skins_Marble)
+- [Metro](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.Skins.html#Syncfusion_Windows_Forms_Chart_Skins_Metro)
+- [Midnight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.Skins.html#Syncfusion_Windows_Forms_Chart_Skins_Midnight)
+- [Monochrome](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.Skins.html#Syncfusion_Windows_Forms_Chart_Skins_Monochrome)
+- [None](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.Skins.html#Syncfusion_Windows_Forms_Chart_Skins_None)
+- [Office2007Black](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.Skins.html#Syncfusion_Windows_Forms_Chart_Skins_Office2007Black)
+- [Office2007Blue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.Skins.html#Syncfusion_Windows_Forms_Chart_Skins_Office2007Blue)
+- [Office2007Silver](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.Skins.html#Syncfusion_Windows_Forms_Chart_Skins_Office2007Silver)
+- [Office2016Black](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.Skins.html#Syncfusion_Windows_Forms_Chart_Skins_Office2016Black)
+- [Office2016Colorful](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.Skins.html#Syncfusion_Windows_Forms_Chart_Skins_Office2016Colorful)
+- [Office2016DarkGray](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.Skins.html#Syncfusion_Windows_Forms_Chart_Skins_Office2016DarkGray)
+- [Office2016White](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.Skins.html#Syncfusion_Windows_Forms_Chart_Skins_Office2016White)
+- [Olive](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.Skins.html#Syncfusion_Windows_Forms_Chart_Skins_Olive)
+- [Sandune](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.Skins.html#Syncfusion_Windows_Forms_Chart_Skins_Sandune)
+- [Turquoise](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.Skins.html#Syncfusion_Windows_Forms_Chart_Skins_Turquoise)
+- [Vista](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.Skins.html#Syncfusion_Windows_Forms_Chart_Skins_Vista)
+- [VS2010](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.Skins.html#Syncfusion_Windows_Forms_Chart_Skins_VS2010)
+
+The following code explain how to set Skins in ChartControl.
 
 {% tabs %}
 {% highlight c# %}
 
-chartControl.Skins = Skins.Metro;
+chartControl.Skins = Skins.Almond;
 
 {% endhighlight %}
 {% highlight vb %}
 
-chartControl.Skins = Skins.Metro
+chartControl.Skins = Skins.Almond
 
 {% endhighlight %}
 {% endtabs %}
+
+![Chart Skins in Windows Forms Chart](/Chart-Appearance_images/chart-skins.png)
 
 ## See also
 
