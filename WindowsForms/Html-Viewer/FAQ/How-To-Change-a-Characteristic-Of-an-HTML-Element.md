@@ -7,11 +7,11 @@ control: HTMLUIControl
 documentation: ug
 ---
 
-# How to Change HTML Element Characteristic in Html Viewer
+# How to Change HTML Element Characteristic in WinForms HTML Viewer
 
-The characteristic of an element can be easily changed in the PreRenderDocument event of the HTMLUI control.
+The characteristic of an element can be easily changed in the PreRenderDocument event of the WinForms HTML Viewer control.
 
-The [PreRenderDocument](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html) event is raised when the elements in the HTML document are created in the HTMLUI control, but their size and location are not calculated yet.
+The [PreRenderDocument](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html) event is raised when the elements in the HTML document are created in the WinForms HTML Viewer control, but their size and location are not calculated yet.
 
 {% tabs %}
 

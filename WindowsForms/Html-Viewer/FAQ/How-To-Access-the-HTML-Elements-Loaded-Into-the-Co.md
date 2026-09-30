@@ -1,15 +1,15 @@
 ---
 layout: post
-title: How To Access the HTML Elements Loaded Into the Co | Syncfusion®
-description: Learn how to how To Access the HTML Elements Loaded Into the Co in Syncfusion Windows Forms Html Viewer (HTMLUI) control.
+title: How To Access the HTML Elements Loaded Into the Control | Syncfusion®
+description: Learn how to Access the HTML Elements Loaded Into the Control in Syncfusion Windows Forms Html Viewer (HTMLUI) control.
 platform: windowsforms
 control: HTML UI
 documentation: ug
 ---
 
-# How To Access the HTML Elements Loaded Into the Co
+# How To Access the HTML Elements Loaded Into the Control
 
-The HTML elements are accessed in HTMLUI for developing advanced UIs. The HTML elements are collected in a collection class. When the Hashtable is used as a collection class, it stores the HTML elements with a key, specific for each element.
+The HTML elements are accessed in WinForms HTML Viewer for developing advanced UIs. The HTML elements are collected in a collection class. When the Hashtable is used as a collection class, it stores the HTML elements with a key, specific for each element.
 
 These elements are then assigned to the code variables. The Code Variables are the objects of the classes that are responsible for the functionality of the tag elements. These classes contain the definitions for the properties, methods and events for the tag elements. These variables will be used in accessing the HTML elements inside the code.
 
