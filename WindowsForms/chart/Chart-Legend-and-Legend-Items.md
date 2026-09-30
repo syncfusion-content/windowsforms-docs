@@ -274,6 +274,7 @@ The following properties customize an individual legend item label:
     - [Top](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.VerticalAlignment.html#Syncfusion_Windows_Forms_Chart_VerticalAlignment_Top): Aligns the text at the top of the legend item.
     - [Center](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.VerticalAlignment.html#Syncfusion_Windows_Forms_Chart_VerticalAlignment_Center): Aligns the text at the center of the legend item.
     - [Bottom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.VerticalAlignment.html#Syncfusion_Windows_Forms_Chart_VerticalAlignment_Bottom): Aligns the text at the bottom of the legend item.
+- [Children](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendItem.html#Syncfusion_Windows_Forms_Chart_ChartLegendItem_Children): Returns the collection of child items associated with the legend item. This property is read-only, but items can be added to or removed from the returned collection.
 
 The following code example customizes the first legend item label.
 
@@ -293,6 +294,64 @@ item.Font = New Font("Segoe UI", 9, FontStyle.Bold)
 {% endtabs %}
 
 ![Legend Item text customization in Windows Forms Chart](Chart-Legend-and-Legend-Items_images/legend-item-text-customization.png)
+
+## Legend item appearance
+
+The following properties customize the appearance and spacing of an individual legend item:
+
+- [Interior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendItem.html#Syncfusion_Windows_Forms_Chart_ChartLegendItem_Interior): Specifies the brush used to fill the rectangular representation area of the legend item. The default value is `Color.White`;
+- [Font](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendItem.html#Syncfusion_Windows_Forms_Chart_ChartLegendItem_Font): Specifies the font used to render the legend item text. The default value is `null`
+- [Spacing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendItem.html#Syncfusion_Windows_Forms_Chart_ChartLegendItem_Spacing): Specifies the spacing around the legend item content. The default value is 0.
+- [TextAligment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendItem.html#Syncfusion_Windows_Forms_Chart_ChartLegendItem_TextAligment): Specifies the vertical alignment of the legend-item text. The default value is [Center](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.VerticalAlignment.html#Syncfusion_Windows_Forms_Chart_VerticalAlignment_Center). The supported values are:
+    - [Top](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.VerticalAlignment.html#Syncfusion_Windows_Forms_Chart_VerticalAlignment_Top): Aligns the text at the top of the legend item.
+    - [Center](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.VerticalAlignment.html#Syncfusion_Windows_Forms_Chart_VerticalAlignment_Center): Aligns the text at the center of the legend item.
+    - [Bottom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.VerticalAlignment.html#Syncfusion_Windows_Forms_Chart_VerticalAlignment_Bottom): Aligns the text at the bottom of the legend item.
+
+The following code example customizes the appearance of the legend item.
+
+{% tabs %}
+{% highlight c# %}
+ChartLegendItem item = new ChartLegendItem();
+item.Interior = new BrushInfo(Color.LightYellow);
+item.Font = new Font(  "Segoe UI", 9, FontStyle.Bold);
+item.Spacing = 20;
+item.TextAligment = VerticalAlignment.Center;
+{% endhighlight %}
+{% highlight vb %}
+Dim item As New ChartLegendItem()
+item.Interior = New BrushInfo(Color.LightYellow)
+item.Font = New Font("Segoe UI", 9, FontStyle.Bold)
+item.Spacing = 20
+item.TextAligment = VerticalAlignment.Center
+{% endhighlight %}
+{% endtabs %}
+
+![Legend Item appearance in Windows Forms Chart](Chart-Legend-and-Legend-Items_images/legend-item-appearance.png)
+
+## Legend item shadow appearance
+
+The following properties customize the shadow of an individual legend item:
+
+- [ShowShadow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendItem.html#Syncfusion_Windows_Forms_Chart_ChartLegendItem_ShowShadow): Controls whether a shadow is displayed for the legend item. The default value is `false`.
+- [ShadowColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendItem.html#Syncfusion_Windows_Forms_Chart_ChartLegendItem_ShadowColor): Specifies the shadow color. The default value is `Color.Gray`.
+- [ShadowOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendItem.html#Syncfusion_Windows_Forms_Chart_ChartLegendItem_ShadowOffset): Specifies the horizontal and vertical shadow offset. The default value is `new Size(2,2)`;
+
+The following code example applies a shadow to the legend item.
+
+{% tabs %}
+{% highlight c# %}
+item.ShowShadow = true;
+item.ShadowColor = Color.Gray;
+item.ShadowOffset = new Size(2, 2);
+{% endhighlight %}
+{% highlight vb %}
+item.ShowShadow = True
+item.ShadowColor = Color.Gray
+item.ShadowOffset = New Size(2, 2)
+{% endhighlight %}
+{% endtabs %}
+
+![Legend Item shadow in Windows Forms Chart](Chart-Legend-and-Legend-Items_images/legend-item-shadow.png)
 
 ## Legends placement
 
@@ -446,6 +505,23 @@ chartControl.Legend.RepresentationType = ChartLegendRepresentationType.SeriesTyp
 
 ![Legend RepresentationType in Windows Forms Chart](Chart-Legend-and-Legend-Items_images/legend-series-icon.png)
 
+### Draw series icon
+
+The [DrawSeriesIcon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeriesLegendItem.html#Syncfusion_Windows_Forms_Chart_ChartSeriesLegendItem_DrawSeriesIcon) property controls whether an automatically generated series legend item displays an icon representing its series type. The default value is `true`.
+
+The following code example disables the series type icon for the first automatically generated legend item.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Series[0].LegendItem.DrawSeriesIcon = false;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Series(0).LegendItem.DrawSeriesIcon = False
+{% endhighlight %}
+{% endtabs %}
+
+![Legend Series Draw Icon in Windows Forms Chart](Chart-Legend-and-Legend-Items_images/legend-item-series-icon.png)
+
 ### Series symbol
 
 The [ShowSymbol](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_ShowSymbol) property controls whether the symbol used for series data points is displayed in the legend. The default value is `false`.
@@ -528,6 +604,45 @@ chartControl.Legend.Items(0).Symbol.Color = Color.Yellow
 
 ![Legend More Symbol Shapes in Windows Forms Chart](Chart-Legend-and-Legend-Items_images/legend-more-symbol-shape.png)
 
+### Legend item symbol and type
+
+The following properties control the symbol rendered for an individual legend item:
+
+- [ShowSymbol](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendItem.html#Syncfusion_Windows_Forms_Chart_ChartLegendItem_ShowSymbol): Controls whether the legend item symbol is displayed. The default value is `false`.
+- [Type](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendItem.html#Syncfusion_Windows_Forms_Chart_ChartLegendItem_Type): Specifies the representation rendered in the icon area. The default value is [Rectangle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendItemType.html#Syncfusion_Windows_Forms_Chart_ChartLegendItemType_Rectangle).
+The supported [ChartLegendItemType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendItemType.html) values are
+    - [Area](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendItemType.html#Syncfusion_Windows_Forms_Chart_ChartLegendItemType_Area)
+    - [Circle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendItemType.html#Syncfusion_Windows_Forms_Chart_ChartLegendItemType_Circle)
+    - [Cross](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendItemType.html#Syncfusion_Windows_Forms_Chart_ChartLegendItemType_Cross)
+    - [Diamond](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendItemType.html#Syncfusion_Windows_Forms_Chart_ChartLegendItemType_Diamond)
+    - [Hexagon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendItemType.html#Syncfusion_Windows_Forms_Chart_ChartLegendItemType_Hexagon)
+    - [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendItemType.html#Syncfusion_Windows_Forms_Chart_ChartLegendItemType_Image)
+    - [InvertedTriangle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendItemType.html#Syncfusion_Windows_Forms_Chart_ChartLegendItemType_InvertedTriangle)
+    - [Line](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendItemType.html#Syncfusion_Windows_Forms_Chart_ChartLegendItemType_Line)
+    - [None](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendItemType.html#Syncfusion_Windows_Forms_Chart_ChartLegendItemType_None)
+    - [Pentagon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendItemType.html#Syncfusion_Windows_Forms_Chart_ChartLegendItemType_Pentagon)
+    - [PieSlice](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendItemType.html#Syncfusion_Windows_Forms_Chart_ChartLegendItemType_PieSlice)
+    - [Rectangle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendItemType.html#Syncfusion_Windows_Forms_Chart_ChartLegendItemType_Rectangle)
+    - [Spline](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendItemType.html#Syncfusion_Windows_Forms_Chart_ChartLegendItemType_Spline)
+    - [SplineArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendItemType.html#Syncfusion_Windows_Forms_Chart_ChartLegendItemType_SplineArea)
+    - [StraightLine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendItemType.html#Syncfusion_Windows_Forms_Chart_ChartLegendItemType_StraightLine)
+    - [Triangle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendItemType.html#Syncfusion_Windows_Forms_Chart_ChartLegendItemType_Triangle).
+
+The following code example displays a circular symbol for the legend item.
+
+{% tabs %}
+{% highlight c# %}
+item.ShowSymbol = true;
+item.Type = ChartLegendItemType.Circle;
+{% endhighlight %}
+{% highlight vb %}
+item.ShowSymbol = True
+item.Type = ChartLegendItemType.Circle
+{% endhighlight %}
+{% endtabs %}
+
+![Legend Item Symbol type in Windows Forms Chart](Chart-Legend-and-Legend-Items_images/legend-item-symbol.png)
+
 ### Custom images
 
 The following properties customize an image-based legend item:
@@ -597,6 +712,26 @@ chartControl.Legend.BackInterior = New BrushInfo(GradientStyle.Vertical, Color.W
 
 ![Legend Background in Windows Forms Chart](Chart-Legend-and-Legend-Items_images/legend-background.png)
 
+### Legend background image
+
+The following properties customize the legend background image:
+
+`BackgroundImage`: Specifies the image displayed in the legend background.
+`BackgroundImageLayout`: Specifies how the image is arranged within the legend. The supported values are `None`, `Tile`, `Center`, `Stretch`, and `Zoom`.
+
+The following code example displays a background image in the default legend using the `Zoom` layout.
+
+{% tabs %}
+{% highlight c# %}
+chartControl.Legend.BackgroundImage = Image.FromFile(@"D:\winforms\cloud-server.png");
+chartControl.Legend.BackgroundImageLayout = ImageLayout.Zoom;
+{% endhighlight %}
+{% highlight vb %}
+chartControl.Legend.BackgroundImage = Image.FromFile("D:\winforms\cloud-server.png")
+chartControl.Legend.BackgroundImageLayout = ImageLayout.Zoom
+{% endhighlight %}
+{% endtabs %}
+
 ### Legend border
 
 The [ShowBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_ShowBorder) property controls whether the legend border is displayed. The default value is `false`.The [Border](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_Border) property gets the [LineInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.LineInfo.html) used to draw the border.
@@ -622,7 +757,7 @@ chartControl.Legend.Border.DashStyle = DashStyle.Solid
 
 ![Legend Border in Windows Forms Chart](Chart-Legend-and-Legend-Items_images/legend-border.png)
 
-### Legend item shadow
+### Legend shadow
 
 The following properties apply a common shadow to all legend items:
 
