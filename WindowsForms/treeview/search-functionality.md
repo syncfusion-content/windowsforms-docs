@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Search-functionality in Windows Forms TreeView | Syncfusion®
 description: Search functionality provides find-and-replace operations, search navigation, filtering options, and search events.

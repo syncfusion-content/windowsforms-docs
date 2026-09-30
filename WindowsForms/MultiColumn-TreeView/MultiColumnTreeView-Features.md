@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: MultiColumnTreeView Features in MultiColumn TreeView | Syncfusion®
 description: MultiColumnTreeView features include multi-selection, keyboard search, auto-sizing, undo-redo support, tooltips, and performance optimization.

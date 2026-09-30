@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Appearance Settings in Windows Forms MaskedTextBox | Syncfusion®
 description: Appearance settings in MaskedEditBox enable customizing background, foreground, and visual styles for input controls.

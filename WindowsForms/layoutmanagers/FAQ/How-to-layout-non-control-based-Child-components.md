@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: How to Layout Non-Control Components in LayoutManagers | Syncfusion
 description: Layout non-control-based child components in Syncfusion® Windows Forms Layout Managers using LayoutItemBase, custom components, and more.

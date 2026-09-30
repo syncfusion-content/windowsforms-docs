@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Touch Interactions in Windows Forms Carousel | Syncfusion®
 description: Touch Interactions support pan, flick, pinch, and stretch gestures for navigating and adjusting Carousel content.

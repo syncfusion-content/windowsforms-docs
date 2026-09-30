@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Style Architecture in Windows Forms MultiColumn TreeView | Syncfusion®
 description: Style Architecture enables hierarchical style inheritance and customization for nodes, columns, subitems, and tree levels.

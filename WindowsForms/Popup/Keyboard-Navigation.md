@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Keyboard Navigation in Windows Forms Popup | Syncfusion®
 description: Keyboard navigation supports dialog key handling, popup closing through keyboard shortcuts, and customizable key processing.

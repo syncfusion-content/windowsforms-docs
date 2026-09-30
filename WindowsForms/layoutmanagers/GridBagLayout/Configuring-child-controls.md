@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Configure Child Controls in Windows Forms GridBagLayout | Syncfusion®
 description: Configure child controls using grid positions, spanning, weights, anchoring, fill behavior, padding, and layout constraints.

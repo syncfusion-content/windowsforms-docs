@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Themes in Windows Forms Menu | Syncfusion
 description: Themes in Menu control support Office, Visual Studio, Metro, and customizable color schemes for menu appearance.

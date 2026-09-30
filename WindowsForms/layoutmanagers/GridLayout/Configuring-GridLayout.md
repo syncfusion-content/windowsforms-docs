@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Configure GridLayout in Windows Forms | Syncfusion®
 description: GridLayout configuration supports rows, columns, spacing, layout participation settings, and rearranging child controls.

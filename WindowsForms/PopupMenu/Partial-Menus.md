@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Partial Menus in Windows Forms PopupMenu | Syncfusion®
 description: Partial menus prioritize frequently used commands while temporarily hiding less-used items to reduce menu clutter.

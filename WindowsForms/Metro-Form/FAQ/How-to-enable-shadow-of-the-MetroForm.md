@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: How to Enable Shadow in Windows Forms MetroForm | Syncfusion®
 description: Enable or disable shadow effects in Syncfusion® Windows Forms MetroForm using the DropShadow property, appearance settings, and more.

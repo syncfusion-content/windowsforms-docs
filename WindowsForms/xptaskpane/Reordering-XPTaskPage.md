@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Reordering XPTaskPage in Windows Forms XPTaskPane | Syncfusion®
 description: Reordering XPTaskPage explains page sequencing, navigation order, and managing next and previous pages at design time and runtime.
