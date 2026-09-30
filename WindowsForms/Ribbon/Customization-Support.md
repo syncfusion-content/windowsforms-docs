@@ -7,9 +7,9 @@ control: RibbonControlAdv
 documentation: ug
 ---
 
-# Customization Support in Windows Forms Ribbon
+# Customization Support in WinForms Ribbon Control
 
-RibbonControlAdv lets you customize the Ribbon and Quick Access Toolbar with the support to add and remove different items to the QAT, add new tabs, and change the location of existing tabs and items in the ribbon.
+WinForms Ribbon Control lets you customize the Ribbon and Quick Access Toolbar with the support to add and remove different items to the QAT, add new tabs, and change the location of existing tabs and items in the ribbon.
 
 ## QAT customization
 
@@ -19,7 +19,7 @@ For customization of QAT, please refer to `Quick Access Toolbar`.
 
 ### Accessing Customize Window
 
-RibbonControlAdv Tab and TabItems can customized in run time using Ribbon Customization window. Ribbon Customization window can be opened by right clicking on the Ribbon or by clicking the dropdown button in Quick Access Toolbar and selecting `Customize the Ribbon`.
+WinForms Ribbon Control Tab and TabItems can customized in run time using Ribbon Customization window. Ribbon Customization window can be opened by right clicking on the Ribbon or by clicking the dropdown button in Quick Access Toolbar and selecting `Customize the Ribbon`.
 
 ![Accessing Customize Ribbon Window](Customization_Support_iImages/Customization-Support_img1.jpg)
 
@@ -76,7 +76,7 @@ Me.ribbonControlAdv1.EnableRibbonCustomization = False
 
 ## Customizing Ribbon in simplified layout
 
-The RibbonControlAdv allows to customize the Ribbon and Ribbon items through the QAT window, where user can add the Ribbon items to a new [`ToolStripTabItem`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ToolStripTabItem.html) or [`ToolStripEx`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ToolStripEx.html). The newly added [`ToolStripTabItem`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ToolStripTabItem.html) or [`ToolStripEx`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ToolStripEx.html) will only be visible in the respective layout in which items were added originally. To know more about the simplified layout, refer [here](https://help.syncfusion.com/windowsforms/ribbon/simplifiedlayout).
+The WinForms Ribbon Control allows to customize the Ribbon and Ribbon items through the QAT window, where user can add the Ribbon items to a new [`ToolStripTabItem`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ToolStripTabItem.html) or [`ToolStripEx`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ToolStripEx.html). The newly added [`ToolStripTabItem`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ToolStripTabItem.html) or [`ToolStripEx`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ToolStripEx.html) will only be visible in the respective layout in which items were added originally. To know more about the simplified layout, refer [here](https://help.syncfusion.com/windowsforms/ribbon/simplifiedlayout).
 
 ## Customize System Button
 
