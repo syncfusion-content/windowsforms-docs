@@ -5,7 +5,6 @@ description: Explore data in Syncfusion® Windows Forms Pivot Grid control with 
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
-appliesto: UI Component Suite, Grid SDK
 ---
 
 # Data Exploration in Windows Forms Pivot Grid

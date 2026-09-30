@@ -2,7 +2,7 @@
 layout: post
 title: SplashScreen Settings in Windows Forms Splash Screen | Syncfusion®
 description: SplashScreen settings in Windows Forms Splash Screen define the appearance, behavior, and display options of splash screens.
-platform: WindowsForms
+platform: windowsforms
 control: Splash Screen
 documentation: ug
 ---

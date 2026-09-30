@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-use-NET-tooltip-control-to-show-tooltip-text | WindowsForms | Syncfusion
-description: how to use .net tooltip control to show tooltip text for nodes in treeviewadv
-platform: WindowsForms
+title: Use .NET ToolTip Control for Tooltip Text | WindowsForms | Syncfusion
+description: Learn how to use the .NET ToolTip control to display tooltip text for TreeViewAdv nodes and provide additional information in Windows Forms.
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---
 
-# How to Use .NET Tooltip Control to Show Tooltip Text for Nodes in TreeViewAdv
+# How to Use .NET Tooltip Control for TreeViewAdv Nodes
 
 This can be achieved by using SetToolTip method in MouseHover event of the TreeViewAdv. 
 

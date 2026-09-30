@@ -5,7 +5,6 @@ description: Define and manage pivot columns in Syncfusion® Windows Forms Pivot
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
-appliesto: UI Component Suite, Grid SDK
 ---
 
 # Pivot Columns in Windows Forms Pivot Grid

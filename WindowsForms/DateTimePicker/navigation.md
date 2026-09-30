@@ -2,10 +2,9 @@
 layout: post
 title: Navigation in Windows Forms DateTimePicker | Syncfusion
 description: Learn about keyboard and mouse navigation in Windows Forms DateTimePicker control for efficient date and time selection.
-platform: WindowsForms
+platform: windowsforms
 control: SfDateTimeEdit
 documentation: ug
-appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Navigation in Windows Forms DateTimePicker

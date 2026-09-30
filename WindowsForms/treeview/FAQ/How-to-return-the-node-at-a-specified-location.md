@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-return-the-node-at-a-specified-location | WindowsForms | Syncfusion
-description: how to return the node at a specified location
-platform: WindowsForms
+title: Return Node at a Specified Location | WindowsForms | Syncfusion
+description: Learn how to return a node at a specified location in TreeViewAdv and retrieve node information based on coordinates in Windows Forms.
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---

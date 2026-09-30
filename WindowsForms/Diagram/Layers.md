@@ -5,7 +5,6 @@ description: Organize diagram elements with layers in the Syncfusion® Windows F
 platform: windowsforms
 control: Diagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Layers in Windows Forms Diagram

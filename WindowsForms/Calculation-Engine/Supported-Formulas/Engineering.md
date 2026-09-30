@@ -28,11 +28,15 @@ _BESSELI(X, N)_
 
 
 
-**Parameters:**
+**where:**
 
-* `X`: The value at which the function is to be evaluated.
 
-* `N`: The positive integer, representing the order of the function. If the N value is represented as decimal, it is truncated as integer.
+
+* X is the value at which the function is to be evaluated.
+
+
+
+* N is the positive integer, representing the order of the function. If the N value is represented as decimal, it is truncated as integer.
 
 
 
@@ -64,11 +68,15 @@ _BESSELJ( X, N )_
 
 
 
-**Parameters:**
+**where:**
 
-* `X`: The value at which the function is to be evaluated.
 
-* `N`: The order of the Bessel function and it must be a positive number.
+
+* X is the value at which the function is to be evaluated.
+
+
+
+* N is the order of the Bessel function and it must be a positive number.
 
 
 
@@ -100,11 +108,15 @@ _BESSELK( X, N )_
 
 
 
-**Parameters:**
+**where:**
 
-* `X`: The value at which the function is to be evaluated.
 
-* `N`: The positive integer which denotes the order of the modified Bessel function.
+
+* X is the value at which the function is to be evaluated.
+
+
+
+* N is the positive integer which denotes the order of the modified Bessel function.
 
 
 
@@ -136,11 +148,15 @@ _BESSELY( X, N )_
 
 
 
-**Parameters:**
+**where:**
 
-* `X`: The value at which the function is to be evaluated.
 
-* `N`: The positive integer which denotes the order of the Bessel function.
+
+* X is the value at which the function is to be evaluated.
+
+
+
+* N is the positive integer which denotes the order of the Bessel function.
 
 
 
@@ -172,11 +188,15 @@ _BIN2OCT(num, places)_
 
 
 
-**Parameters:**
+**where:**
 
-* `num`: The decimal integer you want to convert.
 
-* `places`: The number of characters to use.
+
+* num is the decimal integer you want to convert. 
+
+
+
+* places is the number of characters to use.
 
 
 
@@ -196,11 +216,15 @@ _BIN2HEX(num places)_
 
 
 
-**Parameters:**
+**where:**
 
-* `num`: The decimal integer you want to convert.
 
-* `places`: The number of characters to use.
+
+* num is the decimal integer you want to convert. 
+
+
+
+* places is the number of characters to use.
 
 
 
@@ -232,9 +256,10 @@ _BIN2DEC(num)_
 
 
 
-**Parameters:**
+**where:**
 
-* `num`: The binary number that you want to convert.
+
+num is the binary number that you want to convert.
 
 
 
@@ -257,11 +282,10 @@ _BITAND(num1,num2)_
 
 
 
-**Parameters:**
+**Where:**
 
-* `num1`: The first number in decimal format.
 
-* `num2`: The second number in decimal format.
+num1 and num2 should be in decimal format.
 
 
 
@@ -293,11 +317,15 @@ _BITLSHIFT(num1,num2)_
 
 
 
-**Parameters:**
+**Where:**
 
-* `num1`: Must be an integer greater than or equal to 0.
 
-* `num2`: Must be an integer.
+
+* num1 must be an integer greater than or equal to 0.
+
+
+
+* Num2 must be an integer.
 
 
 
@@ -329,11 +357,11 @@ _BITOR(num1, num2)_
 
 
 
-**Parameters:**
+**Where:**
 
-* `num1`: The first number in decimal format.
 
-* `num2`: The second number in decimal format.
+
+num1 and num2 should be in decimal format.
 
 
 
@@ -362,11 +390,12 @@ _BITRSHIFT(num1,num2)_
 
 
 
-**Parameters:**
+**Where:**
 
-* `num1`: Must be an integer greater than or equal to 0.
 
-* `num2`: Must be an integer.
+* num1 must be an integer greater than or equal to 0.
+
+* Num2 must be an integer.
 
 **Remarks:**
 
@@ -383,11 +412,9 @@ The `BITXOR` function returns bitwise `XOR` of two numbers.
 _BITXOR(num1, num2)_
 
 
-**Parameters:**
+**Where:**
 
-* `num1`: The first number in decimal format.
-
-* `num2`: The second number in decimal format.
+num1 and num2 should be in decimal format.
 
 **Remarks:**
 
@@ -404,11 +431,11 @@ The `DEC2BIN` function converts a decimal number into a binary number.
 _DEC2BIN(num,places)_ 
 
 
-**Parameters:**
+**where:**
 
-* `num`: The decimal integer you want to convert.
+* num is the decimal integer you want to convert. 
 
-* `places`: The number of characters to use.
+* places is the number of characters to use.
 
 **Remarks:**
 
@@ -430,11 +457,14 @@ The `DEC2OCT` function converts a decimal number into an octal number.
 
 _DEC2OCT(num, places)_ 
 
-**Parameters:**
+**where:**
 
-* `num`: The decimal integer you want to convert.
 
-* `places`: The number of characters to use.
+* num is the decimal integer you want to convert. 
+
+
+
+* places is the number of characters to use.
 
 
 
@@ -457,11 +487,10 @@ The `DEC2HEX` function converts a a decimal number to hexadecimal
 
 _DEC2HEX(number, [places])_
 
-**Parameters:**
+**Where:**
 
-* `number`: The decimal integer you want to convert. If number is negative, places is ignored and DEC2HEX returns a 10-character (40-bit) hexadecimal number in which the most significant bit is the sign bit. The remaining 39 bits are magnitude bits. Negative numbers are represented using two's-complement notation.
-
-* `places`: The number of characters to use. If places is omitted, DEC2HEX uses the minimum number of characters necessary. Places is useful for padding the return value with leading 0s (zeros).
+* number denotes the decimal integer you want to convert. If number is negative, places is ignored and DEC2HEX returns a 10-character (40-bit) hexadecimal number in which the most significant bit is the sign bit. The remaining 39 bits are magnitude bits. Negative numbers are represented using two's-complement notation.
+* places denotes the number of characters to use. If places is omitted, DEC2HEX uses the minimum number of characters necessary. Places is useful for padding the return value with leading 0s (zeros).
 
 **Remarks:**
 
@@ -480,11 +509,10 @@ The `OCT2BIN` function Converts octal number to binary.
 
 _OCT2BIN(number, [places])_
 
-**Parameters:**
+**Where:**
 
-* `number`: The octal number you want to convert. Number may not contain more than 10 characters. The most significant bit of number is the sign bit. The remaining 29 bits are magnitude bits. Negative numbers are represented using two's-complement notation.
-
-* `places`: The number of characters to use. If places is omitted, OCT2BIN uses the minimum number of characters necessary. Places is useful for padding the return value with leading 0s (zeros).
+* number denotes the octal number you want to convert. Number may not contain more than 10 characters. The most significant bit of number is the sign bit. The remaining 29 bits are magnitude bits. Negative numbers are represented using two's-complement notation.
+* places denotes. the number of characters to use. If places is omitted, OCT2BIN uses the minimum number of characters necessary. Places is useful for padding the return value with leading 0s (zeros).
 
 **Remarks:**
 
@@ -498,9 +526,9 @@ The `OCT2DEC` function Converts octal number to a decimal.
 
 _OCT2DEC(number)_
 
-**Parameters:**
+**Where:** 
 
-* `number`: The octal number you want to convert. Number may not contain more than 10 octal characters (30 bits). The most significant bit of number is the sign bit. The remaining 29 bits are magnitude bits. Negative numbers are represented using two's-complement notation.
+number denotes the octal number you want to convert. Number may not contain more than 10 octal characters (30 bits). The most significant bit of number is the sign bit. The remaining 29 bits are magnitude bits. Negative numbers are represented using two's-complement notation.
 
 **Remark:**
 
@@ -514,11 +542,11 @@ The `OCT2HEX` function Converts octal number to hexadecimal.
 
 _OCT2HEX(number, [places])_
 
-**Parameters:**
+**Where:**
 
-* `number`: The octal number you want to convert. Number may not contain more than 10 octal characters (30 bits). The most significant bit of number is the sign bit. The remaining 29 bits are magnitude bits. Negative numbers are represented using two's-complement notation.
+* number denotes the octal number you want to convert. Number may not contain more than 10 octal characters (30 bits). The most significant bit of number is the sign bit. The remaining 29 bits are magnitude bits. Negative numbers are represented using two's-complement notation.
 
-* `places`: The number of characters to use. If places is omitted, OCT2HEX uses the minimum number of characters necessary. Places is useful for padding the return value with leading 0s (zeros).
+* places denotes the number of characters to use. If places is omitted, OCT2HEX uses the minimum number of characters necessary. Places is useful for padding the return value with leading 0s (zeros).
 
 **Remark:**
 
@@ -539,11 +567,11 @@ The `HEX2BIN` function converts a hexadecimal number into a binary number.
 _HEX2BIN(num, places)_ 
 
 
-**Parameters:**
+**where:**
 
-* `num`: The decimal integer you want to convert.
+* num is the decimal integer you want to convert. 
 
-* `places`: The number of characters to use.
+* places is the number of characters to use.
 
 
 **Remarks:**
@@ -560,9 +588,9 @@ The `HEX2DEC` function Converts a hexadecimal number to a decimal
 
 _HEX2DEC(number)_
 
-**Parameters:**
+**Where:**
 
-* `number`: The hexadecimal number you want to convert. Number cannot contain more than 10 characters (40 bits). The most significant bit of number is the sign bit. The remaining 39 bits are magnitude bits. Negative numbers are represented using two's-complement notation.
+Number denotes the hexadecimal number you want to convert. Number cannot contain more than 10 characters (40 bits). The most significant bit of number is the sign bit. The remaining 39 bits are magnitude bits. Negative numbers are represented using two's-complement notation.
 
 **Remark**
 
@@ -579,11 +607,11 @@ _HEX2OCT(num, places)_
 
 
 
-**Parameters:**
+**where:**
 
-* `num`: The hexadecimal integer you want to convert.
+* num is the hexadecimal integer you want to convert. 
 
-* `places`: The number of characters to use.
+* places is the number of characters to use.
 
 **Remarks:**
 
@@ -599,9 +627,9 @@ The `IMABS` function returns the absolute value (the modulus) of a complex numbe
 
 _IMABS(inumber)_
 
-**Parameters:**
+**Where:**
 
-* `inumber`: A complex number for which you want the absolute value.
+inumber denotes a complex number for which you want the absolute value.
 
 ## IMAGINARY
 
@@ -612,9 +640,9 @@ The `IMAGINARY` function returns the imaginary coefficient of a complex number.
 
 _IMAGINARY(inumber)_
 
-**Parameters:**
+**Where:**
 
-* `inumber`: A complex number for which you want the imaginary coefficient.
+inumber denotes a complex number for which you want the imaginary coefficient.
 
 **Remark:**
 
@@ -628,9 +656,9 @@ The function `IMREAL` function returns the real coefficient of a complex number.
 
 _IMREAL(inumber)_
 
-**Parameters:**
+**Where:**
 
-* `inumber`: A complex number for which you want the real coefficient.
+inumber denotes a complex number for which you want the real coefficient.
 
 **Remark:**
 
@@ -645,13 +673,13 @@ The function `COMPLEX` converts user-supplied real and imaginary coefficients in
 
 COMPLEX(real_num, i_num, [suffix])
 
-**Parameters:**
+**Where:**
 
-* `real_num`: The real coefficient of the complex number.
+* real_num denotes the real coefficient of the complex number.
 
-* `i_num`: The imaginary coefficient of the complex number.
+* i_num denotes the imaginary coefficient of the complex number.
 
-* `suffix`: The suffix for the imaginary component of the complex number. If omitted, suffix is assumed to be "i".
+* suffix denotes the suffix for the imaginary component of the complex number. If omitted, suffix is assumed to be "i".
 
 
 ## IMSUM
@@ -663,9 +691,9 @@ The function `IMSUM` calculates the sum of two complex numbers
 
 _IMSUM(inumber1, [inumber2], ...)_
 
-**Parameters:**
+**Where:**
 
-`Inumber1, [inumber2], ...`: Inumber1 is required, subsequent numbers are not. 1 to 255 complex numbers to add.
+Inumber1, [inumber2], ...    Inumber1 is  subsequent numbers are not. 1 to 255 complex numbers to add.
 
 ## IMSUB
 
@@ -675,11 +703,11 @@ The function `IMSUB` subtracts two complex numbers
 
 _IMSUB(inumber1, inumber2)_
 
-**Parameters:**
+**Where:**
 
-* `inumber1`: The complex number from which to subtract inumber2.
+* Inumber1 denotes the complex number from which to subtract inumber2.
 
-* `inumber2`: The complex number to subtract from inumber1.
+* Inumber2 denotes the complex number to subtract from inumber1.
 
 
 ## IMPRODUCT
@@ -690,9 +718,9 @@ The function `IMPRODUCT` returns the product of up to 255 supplied complex numbe
 
 IMPRODUCT(inumber1, [inumber2], ...)
 
-**Parameters:**
+**Where:**
 
-`inumber1, [inumber2], …`: Inumber1 is required, subsequent inumber are not. 1 to 255 complex numbers to multiply.
+inumber1, [inumber2], …     Inumber1 is required, subsequent inumber are not. 1 to 255 complex numbers to multiply.
 
 
 ## IMDIV
@@ -703,11 +731,11 @@ The function `IMDIV` returns the quotient of two supplied complex numbers.
 
 IMDIV(inumber1, inumber2)
 
-**Parameters:**
+**Where:**
 
-* `inumber1`: The complex numerator or dividend.
+* inumber1 denotes the complex numerator or dividend.
 
-* `inumber2`: The complex denominator or divisor.
+* inumber2 denotes the complex denominator or divisor.
 
 
 ## IMCONJUGATE
@@ -718,9 +746,9 @@ The function `IMCONJUGATE` returns the complex conjugate of a complex number.
 
 _IMCONJUGATE(inumber)_
 
-**Parameters:**
+**Where:**
 
-* `inumber`: A complex number for which you want the conjugate.
+inumber denotes a complex number for which you want the conjugate.
 
 
 ## IMSQRT
@@ -731,9 +759,9 @@ The function `IMSQRT` returns the square root of a complex number.
 
 _IMSQRT(inumber)_
 
-**Parameters:**
+**Where:**
 
-* `inumber`: A complex number for which you want the square root.
+inumber denotes a complex number for which you want the square root.
 
 
 ## IMARGUMENT
@@ -744,9 +772,9 @@ The function `IMARGUMENT` returns the argument Θ (an angle expressed in radians
 
 _IMARGUMENT(inumber)_
 
-**Parameters:**
+**Where:**
 
-* `inumber`: A complex number for which you want the argument (Theta).
+inumber denotes a complex number for which you want the argument  Theta ..
 
 ## IMSIN
 
@@ -755,9 +783,9 @@ The function `IMSIN` returns the sine of a complex number.
 **Syntax:**
 _IMSIN(inumber)_
 
-**Parameters:**
+**Where:**
 
-* `inumber`: A complex number for which you want the sine.
+inumber denotes a complex number for which you want the sine.
 
 
 ## IMCSC
@@ -768,9 +796,9 @@ The function `IMCSC` returns the cosecant of a complex number
 
 _IMCSC(inumber)_
 
-**Parameters:**
+**Where:**
 
-* `inumber`: A complex number for which you want the cosecant.
+inumber denotes a complex number for which you want the cosecant.
 
 **Remarks:**
 
@@ -789,9 +817,9 @@ The function `IMCOS` returns the cosine of a complex number
 _IMCOS(inumber)_
 
 
-**Parameters:**
+**Where:**
 
-* `inumber`: A complex number for which you want the cosine.
+inumber denotes a complex number for which you want the cosine.
 
 
 ## IMSEC
@@ -801,9 +829,9 @@ The function `IMSEC` returns the secant of a complex number.
 **Syntax:**
 _IMSEC(inumber)_
 
-**Parameters:**
+**Where:**
 
-* `inumber`: A complex number for which you want the secant.
+inumber denotes ACOT complex number for which you want the secant.
 
 **Remark:**
 
@@ -816,9 +844,9 @@ The function `IMTAN` returns the tangent of a complex number.
 **Syntax:**
 _IMTAN(inumber)_
 
-**Parameters:**
+**Where:**
 
-* `inumber`: A complex number for which you want the tangent.
+inumber denotes a complex number for which you want the tangent.
 
 **Remarks:**
 
@@ -836,9 +864,9 @@ The function `IMCOT` returns the cotangent of a complex number.
 _
 IMCOT(inumber)_
 
-**Parameters:**
+**Where:**
 
-* `inumber`: A complex number for which you want the cotangent.
+inumber denotes a complex number for which you want the cotangent.
 
 **Remarks:**
 
@@ -856,9 +884,9 @@ The function `IMSINH` returns the hyperbolic sine of a complex number.
 
 _IMSINH(inumber)_
 
-**Parameters:**
+**Where:**
 
-* `inumber`: A complex number for which you want the hyperbolic sine.
+inumber denotes a complex number for which you want the hyperbolic sine.
 
 **Remarks:**
 
@@ -875,9 +903,8 @@ The function `IMCSCH` returns the hyperbolic cosecant of a complex number.
 **Syntax:**
 _IMCSCH(inumber)_
 
-**Parameters:**
-
-* `inumber`: A complex number for which you want the hyperbolic cosecant.
+**Where:**
+inumber denotes a complex number for which you want the hyperbolic cosecant
 
 **Remarks:**
 
@@ -894,9 +921,9 @@ The function `IMCOSH `returns the hyperbolic cosine of a complex number.
 **Syntax:**
 _IMCOSH(inumber)_
 
-**Parameters:**
+**Where:**
 
-* `inumber`: A complex number for which you want the hyperbolic cosine.
+inumber denotes complex number for which you want the hyperbolic cosine.
 
 **Remarks:**
 
@@ -915,9 +942,9 @@ The function `IMSECH` returns the hyperbolic secant of a complex number.
 
 _IMSECH(inumber)_
 
-**Parameters:**
+**Where:**
 
-* `inumber`: A complex number for which you want the hyperbolic secant.
+inumber denotes a complex number for which you want the hyperbolic secant.
 
 **Remarks:**
 
@@ -935,9 +962,9 @@ The function `IMLOG10` returns the base-10 logarithm of a complex number.
 
 _IMLOG10(inumber)_
 
-**Parameters:**
+**Where:**
+inumber denotes a complex number for which you want the common logarithm.
 
-* `inumber`: A complex number for which you want the common logarithm.
 
 ## IMLOG2
 
@@ -947,9 +974,9 @@ The function `IMLOG2` returns the base-2 logarithm of a complex number.
 
 _IMLOG2(inumber)_
 
-**Parameters:**
+**Where:**
 
-* `inumber`: A complex number for which you want the base-2 logarithm.
+inumber denotes a complex number for which you want the base-2 logarithm.
 
 ## IMLN
 
@@ -959,9 +986,9 @@ The function `IMLN` returns the natural logarithm of a complex number.
 
 _IMLN(inumber)_
 
-**Parameters:**
+**Where:**
 
-* `inumber`: A complex number for which you want the natural logarithm.
+inumber denotes a complex number for which you want the natural logarithm.
 
 ## IMEXP
 
@@ -972,9 +999,9 @@ The function `IMEXP` returns the exponential of a complex number.
 
 _IMEXP(inumber)_
 
-**Parameters:**
+**Where:**
 
-* `inumber`: A complex number for which you want the exponential.
+inumber denotes a complex number for which you want the exponential.
 
 
 ## IMPOWER
@@ -985,11 +1012,11 @@ The function `IMPOWER` calculates a complex number raised to a supplied power
 
 IMPOWER(inumber, number)
 
-**Parameters:**
+**Where:**
 
-* `inumber`: A complex number you want to raise to a power.
+* inumber denotes a complex number you want to raise to a power.
 
-* `number`: The power to which you want to raise the complex number.
+* number denotes a the power to which you want to raise the complex number.
 
 ## GESTEP
 
@@ -999,11 +1026,11 @@ The function `GESTEP` tests whether a number is greater than a supplied threshol
 
 _GESTEP(number, [step])_
 
-**Parameters:**
+**Where:**
 
-* `number`: The value to test against step.
+* number is the value to test against step.
 
-* `step`: The threshold value. If you omit a value for step, GESTEP uses zero.
+* step denotes the threshold value. If you omit a value for step, GESTEP uses zero.
 
 **Remark:**
 
@@ -1018,11 +1045,11 @@ The function `DELTA` tests whether two supplied numbers are equal
 
 _DELTA(number1, [number2])_
 
-**Parameters:**
+**Where:**
 
-* `number1`: The first number.
+* number1 is the first number.
 
-* `number2`: The second number. If omitted, number2 is assumed to be zero.
+* number2 is the second number. If omitted, number2 is assumed to be zero.
 
 **Remarks:**
 
@@ -1038,11 +1065,11 @@ The function `ERF` returns the error function integrated between two supplied li
 
 _ERF(lower_limit,[upper_limit])_
 
-**Parameters:**
+**Where:**
 
-* `lower_limit`: The lower bound for integrating ERF.
+* lower_limit denotes the lower bound for integrating ERF.
 
-* `upper_limit`: The upper bound for integrating ERF. If omitted, ERF integrates between zero and lower_limit.
+* upper_limit denotes the upper bound for integrating ERF. If omitted, ERF integrates between zero and lower_limit.
 
 **Remarks:**
 
@@ -1059,9 +1086,9 @@ The function `ERF.PRECISE` returns the error function integrated between 0 and a
 
 _ERF.PRECISE(x)_
 
-**Parameters:**
+**Where:**
 
-* `x`: The lower bound for integrating ERF.PRECISE.
+x denotes the lower bound for integrating ERF.PRECISE.
 
 **Remark:**
 
@@ -1076,9 +1103,9 @@ The function `ERFC.PRECISE` returns the complementary error function integrated 
 
 _ERFC.PRECISE(x)_
 
-**Parameters:**
+**Where:**
 
-* `x`: The lower bound for integrating ERFC.PRECISE.
+x denotes the lower bound for integrating ERFC.PRECISE.
 
 **Remarks:**
 
@@ -1092,13 +1119,13 @@ The function `CONVERT` converts a number from one measurement system to another
 
 _CONVERT(number,from_unit,to_unit)_
 
-**Parameters:**
+**Where:**
 
-* `number`: The value in from_units to convert.
+* number is the value in from_units to convert.
 
-* `from_unit`: The units for number.
+* from_unit is the units for number.
 
-* `to_unit`: The units for the result. CONVERT accepts the following text values (in quotation marks) for from_unit and to_unit.
+* to_unit is the units for the result. CONVERT accepts the following text values (in quotation marks) for from_unit and to_unit.
 
 ## ERFC
 
@@ -1108,9 +1135,9 @@ The function `ERFC` returns the complementary Error Function integrated between 
 
 _ERFC(x)_
 
-**Parameters:**
+**Where:**
 
-* `x`: The lower limit for ERFC integration.
+* X : The lower limit for ERFC integration.
 
 **Remarks:**
 

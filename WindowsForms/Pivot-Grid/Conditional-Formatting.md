@@ -5,7 +5,6 @@ description: Apply conditional formatting in Syncfusion® Windows Forms Pivot Gr
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
-appliesto: UI Component Suite, Grid SDK
 ---
 
 # Conditional Formatting in Windows Forms Pivot Grid

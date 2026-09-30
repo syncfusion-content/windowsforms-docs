@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Windows Forms ScrollersFrame | Syncfusion®
 description: Learn how to get started with the Syncfusion® Windows Forms ScrollersFrame control. Explore setup, features, examples, and customization options.
-platform: WindowsForms
+platform: windowsforms
 control: ScrollersFrame
 documentation: ug
 ---

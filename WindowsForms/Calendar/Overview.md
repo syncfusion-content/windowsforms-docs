@@ -2,10 +2,9 @@
 layout: post
 title: About Syncfusion Windows Forms Calendar Control | Syncfusion
 description: Learn about introduction of Syncfusion Essential Studio Windows Forms Calendar control, its key features, calendar functionality, and more details.
-platform: WindowsForms
+platform: windowsforms
 control: SfCalendar
 documentation: ug
-appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # About Syncfusion Windows Forms Calendar Control

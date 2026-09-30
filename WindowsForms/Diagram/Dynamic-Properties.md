@@ -5,7 +5,6 @@ description: Add and manage dynamic properties for nodes and connectors in the S
 platform: windowsforms
 control: Diagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 

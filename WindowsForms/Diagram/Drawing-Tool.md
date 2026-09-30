@@ -5,7 +5,6 @@ description: Draw connectors dynamically in the Syncfusion® Windows Forms Diagr
 platform: windowsforms
 control: Diagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 

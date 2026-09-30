@@ -5,7 +5,6 @@ description: Weight value path in the Windows Forms TreeMap maps data values to 
 platform: windowsforms
 control: TreeMap 
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Weight Value Path in WinForms TreeMap

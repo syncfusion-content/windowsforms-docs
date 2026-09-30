@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-expand-or-collapse-all-the-child-nodes-of-a-particular-node | WindowsForms | Syncfusion
-description: how to expand or collapse all the child nodes of a particular node
-platform: WindowsForms
+title: Expand or Collapse All Child Nodes | WindowsForms | Syncfusion
+description: Learn how to expand or collapse all child nodes of a particular node in TreeViewAdv and manage the node hierarchy in Windows Forms.
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---

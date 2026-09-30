@@ -5,7 +5,6 @@ description: Search in Data Grid enables efficient record searching, result navi
 platform: windowsforms
 control: Data Grid
 documentation: ug
-appliesto: UI Component Suite, Grid SDK
 ---
 
 # Search in Windows Forms Data Grid
@@ -303,4 +302,4 @@ End Class
 
 ## See also
 
-[How to search and select record in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/8552/how-to-search-and-select-record-in-winforms-datagrid-sfdatagrid)
+[How to search and select record in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/8552/how-to-search-and-select-record-in-winforms-datagrid)

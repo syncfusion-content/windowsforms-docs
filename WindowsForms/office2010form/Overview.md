@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion® Windows Forms Office2010 Form Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms Office2010 Form control and more details.
-platform: WindowsForms
+platform: windowsforms
 control: Office2010 Form
 documentation: ug
 ---

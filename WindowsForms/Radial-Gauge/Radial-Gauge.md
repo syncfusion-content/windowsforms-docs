@@ -2,10 +2,9 @@
 layout: post
 title: Radial Gauge in Windows Forms Gauge | Syncfusion®
 description: Radial gauge in the Windows Forms Gauge displays values on a circular scale and supports customization of appearance, ranges, and indicators.
-platform: WindowsForms
+platform: windowsforms
 control: Gauge
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Radial Gauge in Windows Forms Gauge

@@ -5,7 +5,6 @@ description: Improving performance in the Windows Forms Chart enables efficient 
 platform: windowsforms
 control: Chart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Improving Performance in Windows Forms Chart

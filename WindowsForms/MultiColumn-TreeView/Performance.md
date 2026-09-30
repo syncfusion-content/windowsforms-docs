@@ -2,7 +2,7 @@
 layout: post
 title: Performance in Windows Forms MultiColumn TreeView | Syncfusion®
 description: Performance optimization techniques include deferred recalculation, batch updates, and efficient node population.
-platform: WindowsForms
+platform: windowsforms
 control: MultiColumnTreeView
 documentation: ug
 ---

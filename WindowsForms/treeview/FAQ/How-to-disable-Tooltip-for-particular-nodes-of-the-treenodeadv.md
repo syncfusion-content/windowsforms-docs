@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to-disable-Tooltip-for-particular-nodes-of-the-TreenodeAdv | WindowsForms | Syncfusion
-description: how to disable tooltip for particular nodes of the treenodeadv
-platform: WindowsForms
+title: Disable Tooltip for TreeNodeAdv Nodes | WindowsForms | Syncfusion
+description: Learn how to disable tooltips for particular nodes in TreeNodeAdv and customize tooltip visibility for specific nodes in Windows Forms.
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---

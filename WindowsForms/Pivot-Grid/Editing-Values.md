@@ -5,7 +5,6 @@ description: Edit values in Syncfusion® Windows Forms Pivot Grid control to mod
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
-appliesto: UI Component Suite, Grid SDK
 ---
 
 # Editing Values in Windows Forms Pivot Grid

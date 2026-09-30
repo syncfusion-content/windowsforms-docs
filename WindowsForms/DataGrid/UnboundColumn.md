@@ -5,7 +5,6 @@ description: Unbound Column in Data Grid displays calculated or custom values th
 platform: windowsforms
 control: Data Grid
 documentation: ug
-appliesto: UI Component Suite, Grid SDK
 ---
 
 

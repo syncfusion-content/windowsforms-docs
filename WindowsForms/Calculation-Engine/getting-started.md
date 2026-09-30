@@ -36,7 +36,7 @@ WPF, Windows Forms, ASP. NET
 Syncfusion.Calculate.Base
 </td>
 <td>
-<a href="https://www.nuget.org/packages/Syncfusion.Calculate.Base/">[Syncfusion.Calculate.Base.nupkg]</a>
+<a href="https://www.nuget.org/packages/Syncfusion.Calculate.Base/" aria-label="Download Syncfusion Calculate Base NuGet package">[Syncfusion.Calculate.Base.nupkg]</a>
 </td>
 </tr>
 <tr>
@@ -47,7 +47,7 @@ Universal Windows Platform
 Syncfusion.Calculate.UWP
 </td>
 <td>
-<a href="https://www.nuget.org/packages/Syncfusion.Calculate.UWP/">[Syncfusion.Calculate.UWP.nupkg]</a>
+<a href="https://www.nuget.org/packages/Syncfusion.Calculate.UWP/" aria-label="Download Syncfusion Calculate UWP NuGet package">[Syncfusion.Calculate.UWP.nupkg]</a>
 </td>
 </tr>
 <tr>
@@ -58,7 +58,7 @@ Xamarin.Forms
 Syncfusion.Calculate.Portable<br/>
 </td>
 <td>
-<a href="https://www.nuget.org/packages/Syncfusion.Xamarin.Calculate/">[Syncfusion.Xamarin.Calculate.nupkg]</a>
+<a href="https://www.nuget.org/packages/Syncfusion.Xamarin.Calculate/" aria-label="Download Syncfusion Xamarin Calculate NuGet package">[Syncfusion.Xamarin.Calculate.nupkg]</a>
 </td>
 </tr>
 <tr>
@@ -69,7 +69,7 @@ Xamarin.Android
 Syncfusion.Calculate.Android<br/>
 </td>
 <td>
-<a href="https://www.nuget.org/packages/Syncfusion.Xamarin.Calculate/">[Syncfusion.Xamarin.Calculate.nupkg]</a>
+<a href="https://www.nuget.org/packages/Syncfusion.Xamarin.Calculate/" aria-label="Download Syncfusion Xamarin Calculate NuGet package">[Syncfusion.Xamarin.Calculate.nupkg]</a>
 </td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ Xamarin.iOS
 Syncfusion.Calculate.iOS<br/>
 </td>
 <td>
-<a href="https://www.nuget.org/packages/Syncfusion.Xamarin.Calculate/">[Syncfusion.Xamarin.Calculate.nupkg]</a>
+<a href="https://www.nuget.org/packages/Syncfusion.Xamarin.Calculate/" aria-label="Download Syncfusion Xamarin Calculate NuGet package">>[Syncfusion.Xamarin.Calculate.nupkg]</a>
 </td>
 </tr>
 <tr>
@@ -91,7 +91,7 @@ Syncfusion.Calculate.iOS<br/>
 Syncfusion.Calculate.Base<br/>
 </td>
 <td>
-<a href="https://www.nuget.org/packages/Syncfusion.Calculate.Base/">[Syncfusion.Calculate.Base.nupkg]</a>
+<a href="https://www.nuget.org/packages/Syncfusion.Calculate.Base/" aria-label="Download Syncfusion Calculate Base NuGet package">[Syncfusion.Calculate.Base.nupkg]</a>
 </td>
 </tr>
 </tbody>
@@ -294,7 +294,7 @@ The simplest way to use Essential Calculate is through an instance of its [CalcQ
 
 For more information regarding calculating with `CalcQuickBase`, refer [here](https://help.syncfusion.com/windowsforms/calculation-engine/working-with-calcquick)
 
-N> Please find the sample which uses `CalcQuickBase` class for computations, [CalcQuick_Sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/CalcQuickBaseWFSample1022512026)
+N> Please find the sample which uses `CalcQuickBase` class for computations, [CalcQuick_Sample](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/CalcQuickBaseWFSample1022512026.zip)
 
 ### ICalcData
 
@@ -304,7 +304,7 @@ of `ICalcData` interface is used to get and set the values of the variables at r
 
 For more information regarding calculating with `ICalcData`, refer [here](https://help.syncfusion.com/windowsforms/calculation-engine/working-with-icalcdata)
 
-N> Please find the sample which uses `ICalcData` interface for computations, [ICalcData_Sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ICalcDataWFSample101764257)
+N> Please find the sample which uses `ICalcData` interface for computations, [ICalcData_Sample](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/ICalcDataWFSample101764257.zip)
 
 ## Cross Sheet Reference
 

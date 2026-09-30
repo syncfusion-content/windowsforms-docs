@@ -5,7 +5,6 @@ description: Localization in the Windows Forms Chart enables chart content and u
 platform: windowsforms
 control: Chart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Localization in Windows Forms Chart
@@ -77,7 +76,7 @@ Me.chartControl1.Localize=”de-DE”
 
 ![Chart Localization](Localization_images/Localization_img5.png)
 
-### Sample Link
+## Sample Link
 
 To view a sample,
 

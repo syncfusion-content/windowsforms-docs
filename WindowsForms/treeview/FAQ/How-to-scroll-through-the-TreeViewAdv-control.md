@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-scroll-through-the-TreeViewAdv-control-using-up-down-arrow-keys-while-in-edit-mode | WindowsForms | Syncfusion
-description: how to scroll through the treeviewadv control using up / down arrow keys while in edit mode
-platform: WindowsForms
+title: Arrow Key Navigation in TreeViewAdv | WindowsForms | Syncfusion
+description: Learn how to scroll through the TreeViewAdv control using the Up and Down arrow keys while editing node text in Windows Forms.
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---
 
-# How to scroll through the TreeViewAdv control using up / down arrow keys while in edit mode
+# How to Use Up and Down Arrow Keys in TreeViewAdv Edit Mode
 
 The user could navigate through the nodes in the TreeViewAdv control using the keyboard while in editing mode, by using the following code snippet.
 

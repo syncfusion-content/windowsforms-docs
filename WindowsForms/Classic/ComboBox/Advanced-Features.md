@@ -2,7 +2,7 @@
 layout: post
 title: Advanced Features in Windows Forms ComboBoxAdv(Classic) | Syncfusion®
 description: Advanced features in the Windows Forms ComboBoxAdv(Classic) control enhance customization, functionality, and user interaction capabilities.
-platform: WindowsForms
+platform: windowsforms
 control: ComboBoxAdv
 documentation: ug
 ---

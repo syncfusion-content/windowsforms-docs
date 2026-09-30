@@ -5,7 +5,6 @@ description: Explore supported controls in the Syncfusion® Windows Forms Diagra
 platform: windowsforms
 control: Diagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Supported Controls in Windows Forms Diagram

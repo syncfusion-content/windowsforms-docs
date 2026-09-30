@@ -5,7 +5,6 @@ description: Update values in Syncfusion® Windows Forms Pivot Grid control in r
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
-appliesto: UI Component Suite, Grid SDK
 ---
 
 # Updating Values in Windows Forms Pivot Grid

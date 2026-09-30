@@ -1,11 +1,10 @@
 ---
 layout: post
-title: Right to Left Support in Windows Forms DateTimePicker | Syncfusion®
+title: Right to Left Support in Windows Forms DateTimePicker | Syncfusion
 description: Learn how to enable right-to-left layout in Windows Forms DateTimePicker control for international language support.
-platform: WindowsForms
+platform: windowsforms
 control: SfDateTimeEdit
 documentation: ug
-appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Right to Left Support in Windows Forms DateTimePicker

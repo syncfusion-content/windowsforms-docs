@@ -5,7 +5,6 @@ description: Orientation in the Windows Forms Bullet Graph controls the layout d
 platform: windowsforms
 control: Bullet Graph
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Orientation in WinForms Bullet Graph

@@ -2,7 +2,7 @@
 layout: post
 title: How to cancel the AutoLayout | WindowsForms | Syncfusion
 description: How to cancel the autolayout of Syncfusion Essential Studio WindowsForms Wizard Control, its elements, and more.
-platform: WindowsForms
+platform: windowsforms
 control: Wizard
 documentation: ug
 ---

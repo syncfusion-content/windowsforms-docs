@@ -1,8 +1,8 @@
 ---
 layout: post
 title: ImageStreamDirection in TileLayout | WindowsForms | Syncfusion
-description: How to set the ImageStreamDirection in TileLayout
-platform: WindowsForms
+description: Learn how to set the ImageStreamDirection property in TileLayout and control image streaming behavior in Windows Forms.
+platform: windowsforms
 control: TileLayout 
 documentation: ug
 ---

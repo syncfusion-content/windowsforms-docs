@@ -2,7 +2,7 @@
 layout: post
 title: Supported Controls and Methods in Windows Forms UFT | Syncfusion®
 description: Learn about supported controls and methods for Syncfusion® Essential Studio Windows Forms UFT testing framework.
-platform: WindowsForms
+platform: windowsforms
 control: Testing
 documentation: ug
 ---

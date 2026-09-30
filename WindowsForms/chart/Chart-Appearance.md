@@ -5,7 +5,6 @@ description: Appearance in the Windows Forms Chart enables customization of char
 platform: windowsforms
 control: Chart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Appearance in Windows Forms Chart

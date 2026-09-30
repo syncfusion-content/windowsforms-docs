@@ -178,7 +178,7 @@ background-color:transparent!important;
   </tr>
   <tr>
     <td> <a id="anchor" aria-label="Get started with Barcode" href="https://help.syncfusion.com/windowsforms/barcode/getting-started">Barcode</a> </td>
-    <td> <a id="anchor" aria-label="Get started with PDF Viewer" href="https://help.syncfusion.com/windowsforms/pdf-viewer/getting-started">PDF Viewer</a> </td>
+    <td> <a id="anchor" aria-label="Get started with PDF Viewer" href="https://help.syncfusion.com/document-processing/pdf/pdf-viewer/winforms/getting-started">PDF Viewer</a> </td>
     <td> <a id="anchor" aria-label="Get started with ToolBar" href="https://help.syncfusion.com/windowsforms/xptoolbar/getting-started">ToolBar</a> </td>
     <td> <a id="anchor" aria-label="Get started with TrackBar" href="https://help.syncfusion.com/windowsforms/trackbar/getting-started">TrackBar</a> </td>
   </tr>
@@ -226,7 +226,7 @@ background-color:transparent!important;
   </tr>
   <tr>
     <td> <a id="anchor" aria-label="Get started with Tabbed Form" href="https://help.syncfusion.com/windowsforms/tabbed-form/getting-started">Tabbed Form</a> </td>
-    <td> <a id="anchor" aria-label="Learn more about PowerPoint" href="https://help.syncfusion.com/file-formats/presentation/getting-started">PowerPoint</a> </td>
+    <td> <a id="anchor" aria-label="Learn more about PowerPoint" href="https://help.syncfusion.com/document-processing/powerpoint/powerpoint-library/net/getting-started">PowerPoint</a> </td>
     <td> <a id="anchor" aria-label="Get started with ButtonEdit" href="https://help.syncfusion.com/windowsforms/buttonedit/getting-started">ButtonEdit</a> </td>
     <td> <a id="anchor" aria-label="Learn more about Predictive Analytics" href="https://help.syncfusion.com/predictive-analytics/pmml-execution-engine/overview">Predictive Analytics</a></td>
   </tr>
@@ -269,7 +269,7 @@ background-color:transparent!important;
   <tr>
     <td> <a id="anchor" aria-label="Get started with Office 2007 Form" href="https://help.syncfusion.com/windowsforms/office2007form/getting-started">Office 2007 Form</a> </td>
     <td> <a id="anchor" aria-label="Get started with AutoLabel" href="https://help.syncfusion.com/windowsforms/autolabel/getting-started">AutoLabel</a> </td>
-    <td> <a id="anchor" aria-label="Get started with Scheduler" href="https://help.syncfusion.com/windowsforms/scheduler/getting-started">Scheduler</a> </td>
+    <td> <a id="anchor" aria-label="Get started with Scheduler" href="https://help.syncfusion.com/scheduler-sdk/winforms/schedule/getting-started">Scheduler</a> </td>
     <td> <a id="anchor" aria-label="Get started with Grouping" href="https://help.syncfusion.com/windowsforms/grouping/getting-started">Grouping</a> </td>
   </tr>
   <tr>

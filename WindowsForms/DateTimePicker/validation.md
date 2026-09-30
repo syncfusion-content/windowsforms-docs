@@ -2,10 +2,9 @@
 layout: post
 title: Validation in Windows Forms DateTimePicker | Syncfusion
 description: Learn about date and time value validation in Windows Forms DateTimePicker control to ensure correct data entry.
-platform: WindowsForms
+platform: windowsforms
 control: SfDateTimeEdit
 documentation: ug
-appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Validation in Windows Forms DateTimePicker

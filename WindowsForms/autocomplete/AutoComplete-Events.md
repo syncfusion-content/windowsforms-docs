@@ -2,7 +2,7 @@
 layout: post
 title: Events in Windows Forms AutoComplete | Syncfusion®
 description: Events in AutoComplete provide notifications for item selection, matching, dropdown interactions, and customization workflows.
-platform: WindowsForms
+platform: windowsforms
 control: AutoComplete
 documentation: ug
 ---

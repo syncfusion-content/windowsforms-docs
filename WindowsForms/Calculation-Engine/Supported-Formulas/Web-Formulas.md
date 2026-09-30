@@ -27,11 +27,11 @@ _ENCODEURL(name)_
 
 
 
-**Parameters:**
+**where:**
 
 
 
-* `name`: A string that is to be URL encoded.
+* name denotes a string that is to be URL encoded.
 
 
 
@@ -51,11 +51,11 @@ _WEBSERVICE(url)_
 
 
 
-**Parameters:**
+**where:**
 
 
 
-* `url`: The URL of the web service to be called.
+* url of the web service to be called.
 
 
 
@@ -74,15 +74,15 @@ _FILTERXML(xml, xpath)_
 
 
 
-**Parameters:**
+**where:**
 
 
 
-* `xml`: A string in valid XML format.
+* xml is a string in valid XML format.
 
 
 
-* `xpath`: A string in standard XPath format.
+* xpath is a string in standard XPath format.
 
 
 

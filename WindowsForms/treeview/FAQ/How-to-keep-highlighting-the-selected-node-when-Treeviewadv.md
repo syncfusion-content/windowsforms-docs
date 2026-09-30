@@ -2,7 +2,7 @@
 layout: post
 title: Keep-highlighting-selected-node | WindowsForms | Syncfusion
 description: how to keep highlighting the selected node when treeviewadv loses focus by using the HideSelection property
-platform: WindowsForms
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---

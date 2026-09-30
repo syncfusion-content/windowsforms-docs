@@ -5,7 +5,6 @@ description: Caption settings in the Windows Forms Bullet Graph enable customiza
 platform: windowsforms
 control: Bullet Graph
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 

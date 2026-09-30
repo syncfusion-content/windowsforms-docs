@@ -5,7 +5,6 @@ description: Bind IEnumerable lists or data tables to Syncfusion® Windows Forms
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
-appliesto: UI Component Suite, Grid SDK
 ---
 
 # Data Binding in Windows Forms Pivot Grid

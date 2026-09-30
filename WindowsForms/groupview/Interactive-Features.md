@@ -2,7 +2,7 @@
 layout: post
 title: Interactive Features in Windows Forms GroupView | Syncfusion®
 description: Interactive features support button-view selection, selection highlighting, tooltips, and enhanced user interaction behaviors.
-platform: WindowsForms
+platform: windowsforms
 control: GroupView
 documentation: ug
 ---

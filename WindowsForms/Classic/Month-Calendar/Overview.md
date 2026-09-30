@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion Windows Forms MonthCalendarAdv Control | Syncfusion
 description: Learn about introduction of Syncfusion Essential Studio Windows Forms MonthCalendarAdv control and more details.
-platform: WindowsForms
+platform: windowsforms
 control: CalendarDateTime
 documentation: ug
 ---

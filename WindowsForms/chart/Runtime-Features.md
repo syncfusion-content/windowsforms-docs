@@ -5,7 +5,6 @@ description: User interactions in the Windows Forms Chart enable selection, zoom
 platform: windowsforms
 control: Chart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # User Interactions in Windows Forms Chart

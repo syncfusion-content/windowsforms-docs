@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion® Windows Forms UFT Component | Syncfusion®
 description: Learn about introduction of Syncfusion® Essential Studio Windows Forms UFT component and more details.
-platform: WindowsForms
+platform: windowsforms
 control: Testing
 documentation: ug
 ---

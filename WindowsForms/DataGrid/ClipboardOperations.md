@@ -5,7 +5,6 @@ description: Clipboard Operations in Data Grid enables copy, cut, and paste acti
 platform: windowsforms
 control: Data Grid
 documentation: ug
-appliesto: UI Component Suite, Grid SDK
 ---
 
 # Clipboard Operations in Windows Forms Data Grid
@@ -714,7 +713,7 @@ End Class
 {% endtabs %}
 
 Download sample from below location,
-[Sample location](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Sample1502467420)
+[Sample location](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/Sample1502467420.zip)
 
 N> The copied row can be pasted only after initiating the AddNewRow by editing.
 

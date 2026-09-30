@@ -5,7 +5,6 @@ description: Editing in Data Grid supports cell and record editing, customizable
 platform: windowsforms
 control: Data Grid
 documentation: ug
-appliesto: UI Component Suite, Grid SDK
 ---
 
 # Editing in Windows Forms Data Grid
@@ -269,4 +268,4 @@ N> View sample in [GitHub](https://github.com/SyncfusionExamples/windows-forms-e
 
 ## See also
 
-[How to show on screen keyboard in tablet device while editing a cell in WinForms DataGrid](https://www.syncfusion.com/kb/9906)
+[How to show on screen keyboard in tablet device while editing a cell in WinForms DataGrid](https://support.syncfusion.com/kb/article/8781/how-to-show-onscreen-keyboard-while-editing-a-cell-in-winforms-datagrid)
