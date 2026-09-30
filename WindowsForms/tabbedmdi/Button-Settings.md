@@ -11,7 +11,7 @@ documentation: ug
 
 This section discusses about the various buttons available in WinForms TabbedMDI control and their customization.
 
-## Drop-down button
+## Drop-down button 
 
 The MDIChild windows in a WinForms TabbedMDI window can be displayed in the form of a drop-down by enabling the [DropDownButtonVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_DropDownButtonVisible) property.
 
