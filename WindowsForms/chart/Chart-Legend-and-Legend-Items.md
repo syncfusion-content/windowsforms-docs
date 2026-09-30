@@ -30,6 +30,29 @@ chartControl.Legend.Position = ChartDock.Top
 
 ![Legend in Windows Forms Chart](Chart-Legend-and-Legend-Items_images/legend.png)
 
+## Chart legend item
+
+A legend item is represented by the [ChartLegendItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendItem.html) class.
+
+### Default series legend items
+
+Each [ChartSeries](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html) is associated with a [ChartLegendItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendItem.html), which is automatically displayed in the default [ChartLegend](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html).
+ 
+To display the series in a custom legend, set the [LegendName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_LegendName) property to the name of the target legend.
+ 
+The following code example associates a series with a custom legend.
+
+{% tabs %}
+{% highlight c# %}
+//Specifies the custom ChartLegend with which this series' legend item should be associated with
+series1.LegendName = "MyLegend";
+{% endhighlight %}
+{% highlight vb %}
+'Specifies the custom ChartLegend with which this series' legend item should be associated with
+series1.LegendName = "MyLegend"
+{% endhighlight %}
+{% endtabs %}
+
 ## Legend visibility
 
 The visibility of the default legend, a legend instance, a series legend item, and an chart legend item can be controlled independently.
@@ -144,7 +167,7 @@ The legend supports checkbox-based visibility control for all series or individu
 
 ### Legend checkbox visibility
 
-The [VisibleCheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_VisibleCheckBox) property controls whether checkboxes are displayed for all legend items in the legend. The default value is `false`.
+The [VisibleCheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_VisibleCheckBox) property controls whether checkboxes are displayed for all legend items in the legend. If this checkbox is unchecked, the corresponding series will disappear from the chart plot. The default value is `false`.
 
 The following code example displays checkboxes for all legend items.
 
@@ -363,7 +386,7 @@ chartControl.Legend.Location = New Point(100, 80)
 
 ![Floating Legend in Windows Forms Chart](Chart-Legend-and-Legend-Items_images/floating-legend.png)
 
-## Legend item layout
+## Legend layout
 
 The following properties control how legend items are arranged:
 
@@ -559,7 +582,7 @@ The legend background, border, and item shadows can be customized independently.
 
 ### Legend background
 
-The [BackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_BackColor) property specifies a solid legend background. The default value is `Color.Transparent`. The [BackInterior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_BackInterior) property accepts a `BrushInfo` and supports solid or gradient backgrounds. By default, no custom brush is applied, and the legend uses its `BackColor` setting for rendering.
+The [BackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_BackColor) property specifies a solid legend background. The default value is `Color.Transparent`. The [BackInterior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_BackInterior) property accepts a `BrushInfo` and supports solid or gradient backgrounds. By default, no custom brush is applied, and the legend uses its [BackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_BackColor) setting for rendering.
 
 The following code example applies a vertical gradient background.
 
@@ -576,7 +599,7 @@ chartControl.Legend.BackInterior = New BrushInfo(GradientStyle.Vertical, Color.W
 
 ### Legend border
 
-The [ShowBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_ShowBorder) property controls whether the legend border is displayed. The default value is `true`.The [Border](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_Border) property gets the [LineInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.LineInfo.html) used to draw the border.
+The [ShowBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_ShowBorder) property controls whether the legend border is displayed. The default value is `false`.The [Border](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_Border) property gets the [LineInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.LineInfo.html) used to draw the border.
 
 N> The [Border](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_Border) property is get-only. Customize its individual line settings directly.
 
@@ -626,15 +649,48 @@ chartControl.Legend.ItemsShadowOffset = New Size(2, 2)
 
 ## Adding custom legends
 
-You can add custom legends to the chart through the Legends list as follows:
+You can add custom legends to the chart through the [Legends](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Legends) list as follows:
 
 N> The [SetDefSizeForCustom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_SetDefSizeForCustom) property is obsolete. For more information about customizing custom legend, refer to the [Custom Legend](https://support.syncfusion.com/kb/article/1067/how-to-create-multiple-legends-for-a-chart-control-in-winforms) KB article.
+
+{% tabs %}
+{% highlight c# %}
+// Changing the position of the default legend
+ChartLegend legend2 = new ChartLegend(chartControl);
+legend2.Name = "MyLegend";
+chartControl.Legends.Add(legend2);
+{% endhighlight %}
+{% highlight vb %}
+Dim legend2 As New ChartLegend()
+legend2.Name = "MyLegend"
+chartControl.Legends.Add(legend2)
+{% endhighlight %}
+{% endtabs %}
 
 ## Adding custom legend item
 
 The [ChartLegendItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegendItem.html) class creates legend items that are not generated from chart series. Assign the items to the [CustomItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_CustomItems) property.
 
 N> For more information about customizing a [Custom Legend Item](https://support.syncfusion.com/kb/article/1228/how-to-customize-chart-legend-items-in-winforms-chart) base article.
+
+{% tabs %}
+{% highlight c# %}
+ChartLegendItem legendItem = new ChartLegendItem();
+legendItem.ItemStyle.ShowSymbol = true;
+legendItem.ItemStyle.Symbol.Shape = ChartSymbolShape.Circle;
+legendItem.ItemStyle.Symbol.Color = Color.Blue;
+legendItem.Text = "Legend Item";
+chartControl.Legends[0].CustomItems = new ChartLegendItem[] { legendItem };
+{% endhighlight %}
+{% highlight vb %}
+Dim legendItem As New ChartLegendItem()
+legendItem.ItemStyle.ShowSymbol = True
+legendItem.ItemStyle.Symbol.Shape = ChartSymbolShape.Circle
+legendItem.ItemStyle.Symbol.Color = Color.Blue
+legendItem.Text = "Legend Item"
+chartControl.Legends(0).CustomItems = New ChartLegendItem() {legendItem}
+{% endhighlight %}
+{% endtabs %}
 
 ## Customizing items through event
 
@@ -738,6 +794,12 @@ Private Sub Legend_MinSize(ByVal sender As Object, ByVal e As ChartLegendMinSize
 End Sub
 {% endhighlight %}
 {% endtabs %}
+
+## Changing legend properties at run time
+
+The legend appearance can be customized at run time. Double-click the legend text to open the Legend Properties dialog box, where you can modify the legend settings and apply the changes to the chart.
+
+![Legend run time in Windows Forms Chart](Chart-Legend-and-Legend-Items_images/legend-runtime.png){height:"350", width="350"}
 
 ## See also
 

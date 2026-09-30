@@ -429,7 +429,7 @@ To bind a database table to the [ChartControl](https://help.syncfusion.com/cr/wi
 
 ![Chart Data](Chart-Data_images/Chart-Data_img16.png)
 
-2.To map database columns to the X and Y values of the selected series, use the **X Value** and **Y Value** value boxs, as shown in the following screenshots.
+2.To map database columns to the X and Y values of the selected series, use the **X Value** and **Y Value** value boxes, as shown in the following screenshots.
 
 ![Chart Data](Chart-Data_images/Chart-Data_img17.png)
 
