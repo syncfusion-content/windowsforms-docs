@@ -7,16 +7,16 @@ control: Toggle Button
 documentation: ug
 ---
 
-# Events available in Windows Forms ToggleButton
+# Events available in WinForms Toggle Button
 
-The following listed events are available in Toggle Button.
+The following listed events are available in WinForms Toggle Button.
 
 * ToggleStateChanging
 * ToggleStateChanged
 
 ## ToggleStateChanging 
 
-This event is triggered in Toggle Button when its state is changing.
+This event is triggered in WinForms Toggle Button when its state is changing.
 
 ### Event data
 
@@ -54,7 +54,7 @@ End Sub
 
 ## ToggleStateChanged 
 
-This event is triggered in Toggle Button after its value is changed. 
+This event is triggered in WinForms Toggle Button after its value is changed. 
 
 ### Event data
 
@@ -66,7 +66,7 @@ Description</th></tr>
 <tr>
 <td>
 ToggleState</td><td>
-Returns the current state of the ToggleButton.</td></tr>
+Returns the current state of the WinForms Toggle Button.</td></tr>
 </table>
 
 {% tabs %}
