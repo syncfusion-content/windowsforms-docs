@@ -43,7 +43,7 @@ GetPath</td><td>
 Method which is used to derive the path string for a specific node.</td></tr>
 </table>
 
-### Retrieving Node Path
+## Retrieving Node Path
 
 In the `BeforeExpand` event the user can retrieve the path string for a specific node using the TreeNodeAdv.GetPath method where the user can also specify the separator.
 

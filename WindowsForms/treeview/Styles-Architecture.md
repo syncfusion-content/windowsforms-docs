@@ -15,7 +15,7 @@ As illustrated below, implicit style inheritance is enforced by the Framework wh
 ![StyleArchitecture_img1](StyleArchitecture_images/StyleArchitecture_img1.jpeg)
 
 
-### Implicit Style Inheritance
+## Implicit Style Inheritance
 
 When a style is not set in a style info object, it inherits the style from the previous level and so on until it reaches the default global style on top of the hierarchy. This is called implicit style inheritance and is illustrated below.
 
@@ -29,7 +29,7 @@ The different levels in the above hierarchy are,
 
 * <b>Standard Style or Global Style</b>: A standard, global style is exposed by the TreeViewAdv control to be applied on all the nodes in the tree. Refer Standard Style for setting style in a Tree level.
 
-### Explicit Style Inheritance
+## Explicit Style Inheritance
 
 Any StyleInfo instance can also inherit explicitly from a specific named StyleInfo object. This can be done using the BaseStyle property of the TreeNodeAdvStyleInfo type. As noted previously, such named styles should be available in the tree control's BaseStyles Collection Editor. You can also add custom styles using this editor.
 

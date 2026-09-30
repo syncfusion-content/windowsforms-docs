@@ -69,7 +69,7 @@ dialog.ReplaceAll ("India", TreeViewSearchOption.MatchWholeText, TreeViewSearchR
 {% endhighlight %}
 {% endtabs %}
 
-##### Events
+## Events
 
 OnNodeBeforeFind Event
 
