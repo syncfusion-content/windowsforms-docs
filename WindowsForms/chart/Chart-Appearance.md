@@ -152,30 +152,32 @@ The [Palette](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.For
 
 The Windows Forms Chart provides the following predefined palettes:
 
-- `Almond`
-- `Default`
-- `DefaultAlpha`
-- `DefaultOld`
-- `DefaultOldAlpha`
-- `EarthTone`
-- `Analog`
-- `Colorful`
-- `Nature`
-- `Pastel`
-- `Triad`
-- `WarmCold`
-- `GrayScale`
-- `SkyBlueStyle`
-- `RedYellowStyle`
-- `GreenYellowStyle`
-- `PinkVioletStyle`
-- `Metro`
-- `Office2016`
-- `Custom`
+- [Almond](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColorPalette.html#Syncfusion_Windows_Forms_Chart_ChartColorPalette_Almond)
+- [Default](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColorPalette.html#Syncfusion_Windows_Forms_Chart_ChartColorPalette_Default)
+- [DefaultAlpha](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColorPalette.html#Syncfusion_Windows_Forms_Chart_ChartColorPalette_DefaultAlpha)
+- [DefaultOld](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColorPalette.html#Syncfusion_Windows_Forms_Chart_ChartColorPalette_DefaultOld)
+- [DefaultOldAlpha](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColorPalette.html#Syncfusion_Windows_Forms_Chart_ChartColorPalette_DefaultOldAlpha)
+- [EarthTone](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColorPalette.html#Syncfusion_Windows_Forms_Chart_ChartColorPalette_EarthTone)
+- [Analog](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColorPalette.html#Syncfusion_Windows_Forms_Chart_ChartColorPalette_Analog)
+- [Colorful](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColorPalette.html#Syncfusion_Windows_Forms_Chart_ChartColorPalette_Colorful)
+- [Nature](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColorPalette.html#Syncfusion_Windows_Forms_Chart_ChartColorPalette_Nature)
+- [Pastel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColorPalette.html#Syncfusion_Windows_Forms_Chart_ChartColorPalette_Pastel)
+- [Triad](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColorPalette.html#Syncfusion_Windows_Forms_Chart_ChartColorPalette_Triad)
+- [WarmCold](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColorPalette.html#Syncfusion_Windows_Forms_Chart_ChartColorPalette_WarmCold)
+- [GrayScale](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColorPalette.html#Syncfusion_Windows_Forms_Chart_ChartColorPalette_GrayScale)
+- [SkyBlueStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColorPalette.html#Syncfusion_Windows_Forms_Chart_ChartColorPalette_SkyBlueStyle)
+- [RedYellowStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColorPalette.html#Syncfusion_Windows_Forms_Chart_ChartColorPalette_RedYellowStyle)
+- [GreenYellowStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColorPalette.html#Syncfusion_Windows_Forms_Chart_ChartColorPalette_GreenYellowStyle)
+- [PinkVioletStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColorPalette.html#Syncfusion_Windows_Forms_Chart_ChartColorPalette_PinkVioletStyle)
+- [Metro](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColorPalette.html#Syncfusion_Windows_Forms_Chart_ChartColorPalette_Metro)
+- [Office2016](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColorPalette.html#Syncfusion_Windows_Forms_Chart_ChartColorPalette_Office2016)
+- [Custom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColorPalette.html#Syncfusion_Windows_Forms_Chart_ChartColorPalette_Custom)
 
 ### Applying palette to series
 
-The chart color model applies palette colors to series automatically. An individual series color can still be overridden through its `Interior` property.
+Each palette applies a predefined set of colors to the chart series in a predefined order.
+
+The following code example applies the [Metro](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColorPalette.html#Syncfusion_Windows_Forms_Chart_ChartColorPalette_Metro) palette to the chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -194,7 +196,7 @@ chartControl.Palette = ChartColorPalette.Metro
 
 ### Applying custom color to segment
 
-You can set the individual color for each segment of the series by using the Interior property of series styles collection.
+You can set the individual color for each segment of the series by using the [Interior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStyleInfo.html#Syncfusion_Windows_Forms_Chart_ChartStyleInfo_Interior) property of series styles collection.
 
 The following code example shows you how to set the custom color for the chart series.
 
@@ -331,7 +333,6 @@ The following properties customize the chart-area border:
     - `Fixed3D`: Displays a three-dimensional border.
 - [BorderWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_BorderWidth): Specifies the width of the chart area border. The default value is `1`.
 
-
 **BorderAppearance**
 
 The chart control border can be customized using the following properties:
@@ -355,6 +356,8 @@ The supported values are:
     - [Sunken](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBorderSkinStyle.html#Syncfusion_Windows_Forms_Chart_ChartBorderSkinStyle_Sunken)
 - [FrameThickness](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBorderInfo.html#Syncfusion_Windows_Forms_Chart_ChartBorderInfo_FrameThickness): Specifies the thickness of the chart border frame. This property is applicable only when [SkinStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBorderInfo.html#Syncfusion_Windows_Forms_Chart_ChartBorderInfo_SkinStyle) is set to [Frame](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBorderSkinStyle.html#Syncfusion_Windows_Forms_Chart_ChartBorderSkinStyle_Frame). By default, the framework defined thickness is used.
 - [Interior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBorderInfo.html#Syncfusion_Windows_Forms_Chart_ChartBorderInfo_Interior): Specifies the interior color of the chart border. This property is applicable only when [SkinStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBorderInfo.html#Syncfusion_Windows_Forms_Chart_ChartBorderInfo_SkinStyle) is set to [Sunken](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBorderSkinStyle.html#Syncfusion_Windows_Forms_Chart_ChartBorderSkinStyle_Sunken), [Etched](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBorderSkinStyle.html#Syncfusion_Windows_Forms_Chart_ChartBorderSkinStyle_Etched), or [Raised](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartBorderSkinStyle.html#Syncfusion_Windows_Forms_Chart_ChartBorderSkinStyle_Raised). By default, no custom interior brush is applied.
+
+The following code example customizes the chart-area border and the overall chart border appearance.
 
 {% tabs %}
 {% highlight c# %}
@@ -385,7 +388,6 @@ chartControl.BorderAppearance.SkinStyle = Syncfusion.Windows.Forms.Chart.ChartBo
 {% endhighlight %}
 {% endtabs %}
 
-
 ![Chart Area Border appearance in Windows Forms Chart](/Chart-Appearance_images/chart-area-border.png)
 
 ### Chart Area shadow
@@ -397,6 +399,7 @@ The following properties customize the shadow displayed around the chart area:
 - [ShadowWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ShadowWidth): Specifies the width of the chart area shadow. The default value is `5`.
 
 The following code example displays a shadow around the chart area and customizes its appearance.
+
 {% tabs %}
 {% highlight c# %}
 
@@ -417,58 +420,43 @@ chartControl.ShadowWidth = 7
 
 ### Chart Area Margins
 
-The `ChartAreaMargins` property specifies the space between the chart border and the chart area.
+The [ChartAreaMargins](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ChartAreaMargins) property specifies the space between the chart area border and the chartplot area.
+
+The following code example applies a margin of `20` pixels to all sides of the chart area.
 
 {% tabs %}
 {% highlight c# %}
 
-chartControl.ChartAreaMargins =
-    new ChartMargins(10, 10, 10, 10);
+chartControl.ChartAreaMargins = new Syncfusion.Windows.Forms.Chart.ChartMargins(20, 20, 20, 20);
 
 {% endhighlight %}
 {% highlight vb %}
 
-chartControl.ChartAreaMargins =
-    New ChartMargins(10, 10, 10, 10)
+chartControl.ChartAreaMargins = New Syncfusion.Windows.Forms.Chart.ChartMargins(20, 20, 20, 20)
 
 {% endhighlight %}
 {% endtabs %}
 
-### Chart plot area margins
-
-The `AdjustPlotAreaMargins` property controls whether plot-area margins are calculated automatically. Use this property when edge labels or other chart elements require additional plot-area space.
-
-{% tabs %}
-{% highlight c# %}
-
-chartControl.ChartArea.AdjustPlotAreaMargins =
-    ChartSetMode.AutoSet;
-
-{% endhighlight %}
-{% highlight vb %}
-
-chartControl.ChartArea.AdjustPlotAreaMargins =
-    ChartSetMode.AutoSet
-
-{% endhighlight %}
-{% endtabs %}
+![Chart Area Border Margin in Windows Forms Chart](/Chart-Appearance_images/chart-area-margin.png)
 
 ### Spacing between elements
 
-The `Spacing` property specifies the spacing between chart series or data-point elements. A larger value increases the gap between elements.
+The [Spacing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Spacing) property specifies the spacing between chart elements. A larger value increases the gap between elements.
 
 {% tabs %}
 {% highlight c# %}
 
-chartControl.Spacing = 20;
+chartControl.Spacing = 50;
 
 {% endhighlight %}
 {% highlight vb %}
 
-chartControl.Spacing = 20
+chartControl.Spacing = 50
 
 {% endhighlight %}
 {% endtabs %}
+
+![Chart Area Spacing in Windows Forms Chart](/Chart-Appearance_images/chart-spacing.png)
 
 ## Foreground settings
 
@@ -476,32 +464,38 @@ Foreground settings customize text and other foreground elements displayed by th
 
 ### Chart title
 
-Use the default `Title` object to customize the chart-title text, font, foreground color, background color, and border.
+The [ChartControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html) provides properties for displaying and customizing the chart title.
+
+The following properties are used to configure the title text, position, alignment, and appearance: 
+- [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Text): Specifies the chart title. By default, no title text is displayed.
+- [TextPosition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_TextPosition): Specifies the position of the chart title. The supported values are:
+    - [Top](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTextPosition.html#Syncfusion_Windows_Forms_Chart_ChartTextPosition_Top)
+    - [Bottom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTextPosition.html#Syncfusion_Windows_Forms_Chart_ChartTextPosition_Bottom)
+    - [Left](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTextPosition.html#Syncfusion_Windows_Forms_Chart_ChartTextPosition_Left)
+    - [Right](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTextPosition.html#Syncfusion_Windows_Forms_Chart_ChartTextPosition_Right)
+- [TextAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_TextAlignment): Specifies the alignment of the chart title relative to the chart borders. The supported values are:
+    - `Near`
+    - `Center`
+    - `Far`
+- [Font](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Font): Specifies the font style of the chart title.
+- [ForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ForeColor): Specifies the foreground color of the chart title.
+
+The following code example customizes the chart title text, position, alignment, font, and foreground color.
 
 {% tabs %}
 {% highlight c# %}
-
-chartControl.Title.Text = "Sales Analysis";
-chartControl.Title.Visible = true;
-chartControl.Title.Font = new Font(
-    "Segoe UI",
-    14,
-    FontStyle.Bold);
-chartControl.Title.ForeColor = Color.DarkBlue;
-
+chartControl.Text = "Illustrates Foreground Settings";
+chartControl.ForeColor = System.Drawing.Color.DarkBlue;
+chartControl.TextPosition = ChartTextPosition.Top;
 {% endhighlight %}
 {% highlight vb %}
-
-chartControl.Title.Text = "Sales Analysis"
-chartControl.Title.Visible = True
-chartControl.Title.Font = New Font(
-    "Segoe UI",
-    14,
-    FontStyle.Bold)
-chartControl.Title.ForeColor = Color.DarkBlue
-
+chartControl.Text = "Illustrates Foreground Settings"
+chartControl.ForeColor = System.Drawing.Color.DarkBlue
+chartControl.TextPosition = ChartTextPosition.Top
 {% endhighlight %}
 {% endtabs %}
+
+![Chart foreground settings in Windows Forms Chart](/Chart-Appearance_images/chart-foreground-settings.png)
 
 ## Custom Drawing
 
