@@ -88,63 +88,58 @@ The [BackgroundImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Win
 {% tabs %}
 {% highlight c# %}
 
-chartControl.BackgroundImage =
-    Image.FromFile("Images\\chart-background.png");
-chartControl.BackgroundImageLayout =
-    ImageLayout.Stretch;
+chartControl.BackgroundImage = System.Drawing.Image.FromFile(@"D:\winforms\cloud.jpg");
+chartControl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 
 {% endhighlight %}
 {% highlight vb %}
 
-chartControl.BackgroundImage =
-    Image.FromFile("Images\\chart-background.png")
-chartControl.BackgroundImageLayout =
-    ImageLayout.Stretch
+chartcontrol.BackgroundImage = System.Drawing.Image.FromFile("D:\winforms\cloud.jpg")
+chartcontrol.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
 
 {% endhighlight %}
 {% endtabs %}
+
+![Chart background in Windows Forms Chart](/Chart-Appearance_images/chart-background.png)
 
 ### ChartArea background image
 
-The `ChartArea.BackImage` property displays an image in the chart area.
+The [ChartAreaBackImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ChartAreaBackImage) property displays an image in the chart area. By default, the value is `null`.
 
 {% tabs %}
 {% highlight c# %}
 
-chartControl.ChartArea.BackImage =
-    Image.FromFile("Images\\plot-background.png");
+chartControl.ChartAreaBackImage = System.Drawing.Image.FromFile(@"D:\winforms\cloud.jpg");
+
 
 {% endhighlight %}
 {% highlight vb %}
 
-chartControl.ChartArea.BackImage =
-    Image.FromFile("Images\\plot-background.png")
+chartcontrol.ChartAreaBackImage = System.Drawing.Image.FromFile("D:\winforms\cloud.jpg")
 
 {% endhighlight %}
 {% endtabs %}
+
+![Chart Area background in Windows Forms Chart](/Chart-Appearance_images/chart-area-background.png)
 
 ### Chart Interior Background image
 
-Use `ChartInterior` with a texture brush to display an image within the chart interior.
+Use [ChartInteriorBackImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ChartInteriorBackImage) with a texture brush to display an image within the chart interior. By default, this property is set to `null`.
 
 {% tabs %}
 {% highlight c# %}
 
-Image interiorImage =
-    Image.FromFile("Images\\chart-interior.png");
-chartControl.ChartInterior =
-    new BrushInfo(interiorImage);
+chartControl.ChartInteriorBackImage = System.Drawing.Image.FromFile(@"D:\winforms\image.jpg");
 
 {% endhighlight %}
 {% highlight vb %}
 
-Dim interiorImage As Image =
-    Image.FromFile("Images\\chart-interior.png")
-chartControl.ChartInterior =
-    New BrushInfo(interiorImage)
+chartcontrol.ChartInteriorBackImage = System.Drawing.Image.FromFile("D:\winforms\image.jpg")
 
 {% endhighlight %}
 {% endtabs %}
+
+![Chart Interior background in Windows Forms Chart](/Chart-Appearance_images/chart-interior-background-image.png)
 
 ## Palettes
 
