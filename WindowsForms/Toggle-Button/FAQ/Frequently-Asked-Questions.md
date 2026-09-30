@@ -7,5 +7,5 @@ control: ToggleButton
 documentation: ug
 ---
 
-# FAQ in Windows Forms Toggle Button
+# FAQ in WinForms Toggle Button
 

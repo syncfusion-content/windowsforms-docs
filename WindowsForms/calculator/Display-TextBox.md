@@ -7,9 +7,9 @@ control: Calculator
 documentation: ug
 ---
 
-# Display TextBox in Windows Forms Calculator
+# Display TextBox in WinForms Calculator
 
-The [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) has a display text area on its top corner, which displays all the digits and the calculations performed on the calculator. This display area is displayed by default. To hide this display area, set the [ShowDisplayArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_ShowDisplayArea) property to false. 
+The [WinForms Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) has a display text area on its top corner, which displays all the digits and the calculations performed on the calculator. This display area is displayed by default. To hide this display area, set the [ShowDisplayArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_ShowDisplayArea) property to false. 
 
 The below properties controls the behavior of the display area.
 
@@ -55,7 +55,7 @@ Me.calculatorControl1.UseUserOverride = True
 
 {% seealso %}
 
-[How to customize the calculator display text area to use NumberGroupSeparator?](http://help.syncfusion.com/windowsforms/calculator/faq/how-to-customize-the-calculator-display-text-area-to-use-numbergroupseparator)
+[How to customize the WinForms Calculator display text area to use NumberGroupSeparator?](http://help.syncfusion.com/windowsforms/calculator/faq/how-to-customize-the-calculator-display-text-area-to-use-numbergroupseparator)
 
 {% endseealso %}
  

@@ -7,7 +7,7 @@ control: TabsPackage
 documentation: ug
 ---
 
-# How to Prevent Tabs Realignment in TabControlAdv
+# How to Prevent Tabs Realignment in WinForms TabControl
 
 We will be making this a property based feature in a future version. For now, derive from our base TabControlExt class and do the following.
 

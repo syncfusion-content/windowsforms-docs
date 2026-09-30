@@ -7,7 +7,7 @@ control: Tools
 documentation: ug
 ---
 
-# Style Settings in Windows Forms FolderBrowser
+# Style Settings in WinForms Folder Browser
 
 The various options of the [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.FolderBrowser.html#Syncfusion_Windows_Forms_FolderBrowser_Style) property are described below.
 
@@ -21,7 +21,7 @@ The various options of the [Style](https://help.syncfusion.com/cr/windowsforms/S
 * AllowUrls - Displays URLs. 'NewDialogStyle' and 'BrowseForEverything' must be set along with this flag.
 * ShowAdministrativeShares - Displays administrative shares existing on the remote system.
 * ShowShares - Displays shareable resources existing on the remote system.
-* ShowTextBox - Displays textbox in the FolderBrowser Dialog.
+* ShowTextBox - Displays textbox in the WinForms Folder Browser Dialog.
 * StatusText - Includes status area in the dialog box. StatusText can be specified in the FolderBrowserCallBack event handler. This style does not apply to 'NewDialogStyle'.
 * UAHint - Adds an usage hint to the folder dialog. It can be applied only with 'NewDialogStyle'.
 * Validate - Typing invalid name in the textbox triggers FolderBrowserCallBack event.
@@ -52,6 +52,6 @@ Me.folderBrowser1.Style = Syncfusion.Windows.Forms.FolderBrowserStyles.ShowTextB
 
 
 
-A sample which demonstrates the Style Settings of FolderBrowser is available in the below sample installation path.
+A sample which demonstrates the Style Settings of WinForms Folder Browser is available in the below sample installation path.
 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_

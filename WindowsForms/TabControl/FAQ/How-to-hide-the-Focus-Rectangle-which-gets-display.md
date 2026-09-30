@@ -7,7 +7,7 @@ control: TabsPackage
 documentation: ug
 ---
 
-# How to Hide Focus Rectangle in TabControlAdv
+# How to Hide Focus Rectangle in WinForms TabControl
 
 The focus rectangle can be hidden by setting the [FocusOnTabClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_FocusOnTabClick) property to `false`. This can be done programmatically using the code snippet given below.
 
