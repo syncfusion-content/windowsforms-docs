@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Rotate Always in Windows Forms Carousel | Syncfusion®
 description: Rotate Always enables Carousel items to rotate continuously, creating an automated and interactive browsing experience.

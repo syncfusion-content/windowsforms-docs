@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Text Settings in Windows Forms TextBox | Syncfusion®
 description: Text settings support text formatting, alignment, casing, multiline input, overflow indicators, and tooltip customization.

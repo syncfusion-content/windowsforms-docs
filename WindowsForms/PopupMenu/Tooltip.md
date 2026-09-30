@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Tooltip in Windows Forms PopupMenu Control | Syncfusion®
 description: Tooltip support displays contextual information for bar items and allows custom tooltip text for menu commands.

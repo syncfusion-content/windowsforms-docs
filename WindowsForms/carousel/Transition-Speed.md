@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Transition Speed in Windows Forms Carousel | Syncfusion®
 description: Transition Speed controls the rotation speed of Carousel items, enabling smooth and customizable animation effects.

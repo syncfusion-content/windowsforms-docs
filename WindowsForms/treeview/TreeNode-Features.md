@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: TreeNode Features in Windows Forms | Syncfusion®
 description: TreeNode features include primitives, images, checkboxes, option buttons, custom controls, and node state customization.

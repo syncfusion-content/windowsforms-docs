@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Image Settings in Windows Forms XPTaskBar | Syncfusion®
 description: Image settings support displaying images in task box headers and task items using image lists and image indexes.

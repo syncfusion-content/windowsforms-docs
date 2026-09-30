@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Trigger Bar Item in Windows Forms PopupMenu Control | Syncfusion®
 description: Trigger bar items using click events and keyboard shortcuts to execute commands and handle menu interactions.

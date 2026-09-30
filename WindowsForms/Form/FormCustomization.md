@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Form Customization in Windows Forms Form | Syncfusion®
 description: Form Customization in Form (SfForm) enables configuring icons, borders, shadow effects, and rounded corners for personalized window appearance.
