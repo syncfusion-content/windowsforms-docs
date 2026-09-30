@@ -7,9 +7,9 @@ control: TabsPackage
 documentation: ug
 ---
 
-# How to Programmatically Select a Tab in TabControlAdv
+# How to Programmatically Select a Tab in WinForms TabControl
 
-To programmatically select a specific tab in the `TabControlAdv`, you can use the `SelectedIndex` property or the `SelectedTab` property.
+To programmatically select a specific tab in the `WinForms TabControl`, you can use the `SelectedIndex` property or the `SelectedTab` property.
 
 {% tabs %}
 
