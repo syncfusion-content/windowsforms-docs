@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How To Access All the Child Elements | Syncfusion®
-description: Learn how to how To Access All the Child Elements in Syncfusion Windows Forms Html Viewer (HTMLUI) control.
+description: Learn how to Access All the Child Elements in Syncfusion Windows Forms Html Viewer (HTMLUI) control.
 platform: windowsforms
 control: HTMLUIControl
 documentation: ug

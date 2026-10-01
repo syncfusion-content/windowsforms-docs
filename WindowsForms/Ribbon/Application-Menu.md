@@ -7,14 +7,14 @@ control: RibbonControlAdv
 documentation: ug
 ---
 
-# Application Menu in Windows Forms Ribbon
+# Application Menu in WinForms Ribbon Control
 
-The RibbonControlAdv has the Office menu button at the top left corner of the form. Controls can be added to the panels of the Office menu dropdown through the designer, without writing any code.
+The WinForms Ribbon Control has the Office menu button at the top left corner of the form. Controls can be added to the panels of the Office menu dropdown through the designer, without writing any code.
 
 ## Open ApplicationMenu
 
 When the OfficeMenuButton is clicked, Application will be displayed. This dropdown can be customized through designer as well as through code.
-RibbonControlAdv lets you add customized ToolStrip items in the OfficeMenu button dropdown with the help of the menu panels.
+WinForms Ribbon Control lets you add customized ToolStrip items in the OfficeMenu button dropdown with the help of the menu panels.
 
 The panels are:
 
@@ -44,7 +44,7 @@ System panel will be located below the Aux and Main panel and items can be added
 
 ## Restrict Application Menu Opening
 
-To restrict application menu from opening, set the ribbon property [MenuButtonEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html#Syncfusion_Windows_Forms_Tools_RibbonControlAdv_MenuButtonEnabled) as `false`.
+To restrict application menu from opening, set the WinForms Ribbon Control property [MenuButtonEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html#Syncfusion_Windows_Forms_Tools_RibbonControlAdv_MenuButtonEnabled) as `false`.
 
 {% tabs %}
 
@@ -64,7 +64,7 @@ Me.ribbonControlAdv1.MenuButtonEnabled = False
 
 ## Minimize the menu bar panel
 
-You can hide or minimize the menu bar panel by setting the [MinimizePanel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html#Syncfusion_Windows_Forms_Tools_RibbonControlAdv_MinimizePanel) property to `true` in the RibbonControlAdv. The default value is `false`.
+You can hide or minimize the menu bar panel by setting the [MinimizePanel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html#Syncfusion_Windows_Forms_Tools_RibbonControlAdv_MinimizePanel) property to `true` in the WinForms Ribbon Control. The default value is `false`.
 
 {% tabs %}
 

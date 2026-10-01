@@ -7,13 +7,13 @@ control: TabControlAdv
 documentation: ug
 ---
 
-# Styles Settings in Windows Forms TabControlAdv
+# Styles Settings in WinForms TabControl
 
-This section discusses the various Style Settings available in [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
+This section discusses the various Style Settings available in [WinForms TabControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
 
 ## TabStyles
 
-[TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) provides options to customize the [TabStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_TabStyle) settings. Styles can be set through [TabStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_TabStyle) property.
+[WinForms TabControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) provides options to customize the [TabStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_TabStyle) settings. Styles can be set through [TabStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_TabStyle) property.
 
 ### 2D
 
@@ -519,7 +519,7 @@ Me.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererOf
 
 ## Custom color schemes
 
-Custom colors can also be applied to the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html). 
+Custom colors can also be applied to the [WinForms TabControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html). 
 
 {% tabs %}
 
@@ -560,8 +560,8 @@ The [SizeMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Fo
 
 * In Normal mode, the size of each tab depends on the text and image settings of the tab.
 * In Fixed mode, the size of each tab is the same as the value specified in the ItemSize property.
-* In ShrinkToFit mode, the width of each tab is shrunk so that all the tabs are visible (this is only applicable to the TabControlAdv in single-line mode). 
-* In FillToRight mode, the width of each tab is sized so that each row of tabs occupies the entire width of the ContainerControl (this is only applicable to TabControlAdv with more than one row).
+* In ShrinkToFit mode, the width of each tab is shrunk so that all the tabs are visible (this is only applicable to the WinForms TabControl in single-line mode). 
+* In FillToRight mode, the width of each tab is sized so that each row of tabs occupies the entire width of the ContainerControl (this is only applicable to WinForms TabControl with more than one row).
 
 {% tabs %}
 
