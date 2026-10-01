@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Clear current selection in ComboDropDown | WindowsForms | Syncfusion
-description: how to remove the current selection in combodropdown control.
+description: Learn how to remove or clear the current selection in a ComboDropDown control in WindowsForms using Syncfusion, ensuring a clean reset of user choices.
 platform: windowsforms
 control: ComboDropDown
 documentation: ug

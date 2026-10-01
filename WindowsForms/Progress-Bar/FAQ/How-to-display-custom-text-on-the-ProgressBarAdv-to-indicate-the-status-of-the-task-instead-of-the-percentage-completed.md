@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom text instead of percentage in ProgressBarAdv | WindowsForms | Syncfusion
+title: Custom text in ProgressBarAdv | Syncfusion
 description: how to display custom text on the progressbaradv to indicate the status of the task instead of the percentage completed
 platform: windowsforms
 control: Progress Bar 

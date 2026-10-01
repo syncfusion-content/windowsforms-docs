@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize selected item colors in ComboDropDown | WindowsForms | Syncfusion
+title: Selected item color customization | WindowsForms | Syncfusion
 description: Learn how to customize the background and text colors of selected items in the MultiColumn ComboBox control in Windows Forms.
 platform: windowsforms
 control: Multicolumn ComboBox
