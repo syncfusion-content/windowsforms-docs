@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-# Chart Appearance
+# Chart Appearance in Windows Forms Chart
 
 The Windows Forms Chart allows you to customize the colors, images, palettes, borders, margins, titles, watermarks, grids, and skins used to render the chart.
 
@@ -56,7 +56,7 @@ chartControl.ChartArea.BackInterior = New Syncfusion.Drawing.BrushInfo(System.Dr
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Area Back Interior in Windows Forms Chart](/Chart-Appearance_images/chart_area_backinterior.png)
+![Chart Area Back Interior in Windows Forms Chart](Chart-Appearance_images/chart_area_backinterior.png)
 
 ### Inside the Chart Area
 
@@ -75,7 +75,7 @@ chartControl.ChartInterior = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Interior in Windows Forms Chart](/Chart-Appearance_images/chart_interior.png)
+![Chart Interior in Windows Forms Chart](Chart-Appearance_images/chart_interior.png)
 
 ## Background Image
 
@@ -100,7 +100,7 @@ chartcontrol.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
 {% endhighlight %}
 {% endtabs %}
 
-![Chart background in Windows Forms Chart](/Chart-Appearance_images/chart-background.png)
+![Chart background in Windows Forms Chart](Chart-Appearance_images/chart-background.jpeg)
 
 ### ChartArea background image
 
@@ -120,7 +120,7 @@ chartcontrol.ChartAreaBackImage = System.Drawing.Image.FromFile("D:\winforms\clo
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Area background in Windows Forms Chart](/Chart-Appearance_images/chart-area-background.png)
+![Chart Area background in Windows Forms Chart](Chart-Appearance_images/chart-area-background.jpeg)
 
 ### Chart Interior Background image
 
@@ -139,7 +139,7 @@ chartcontrol.ChartInteriorBackImage = System.Drawing.Image.FromFile("D:\winforms
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Interior background in Windows Forms Chart](/Chart-Appearance_images/chart-interior-background-image.png)
+![Chart Interior background in Windows Forms Chart](Chart-Appearance_images/chart-interior-background-image.png)
 
 ## Palettes
 
@@ -187,7 +187,7 @@ chartControl.Palette = ChartColorPalette.Metro
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Palatte in Windows Forms Chart](/Chart-Appearance_images/chart_appearance_palatte.png)
+![Chart Palatte in Windows Forms Chart](Chart-Appearance_images/chart_appearance_palatte.png)
 
 ### Applying custom color to segment
 
@@ -265,7 +265,7 @@ chartControl.Series.Add(chartSeries);
 
 {% endhighlight %}
 
-![Chart Custom segement color in Windows Forms Chart](/Chart-Appearance_images/custom_segment_color.png)
+![Chart Custom segement color in Windows Forms Chart](Chart-Appearance_images/custom_segment_color.png)
 
 ### Getting chart palette colors
 
@@ -311,7 +311,7 @@ chartControl.CustomPalette = New Color() {Color.LightGreen, Color.LightBlue, Col
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Custom Palatte in Windows Forms Chart](/Chart-Appearance_images/chart_appearance_custom_palatte.png)
+![Chart Custom Palatte in Windows Forms Chart](Chart-Appearance_images/chart_appearance_custom_palatte.png)
 
 
 ## Border and margins
@@ -383,7 +383,7 @@ chartControl.BorderAppearance.SkinStyle = Syncfusion.Windows.Forms.Chart.ChartBo
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Area Border appearance in Windows Forms Chart](/Chart-Appearance_images/chart-area-border.png)
+![Chart Area Border appearance in Windows Forms Chart](Chart-Appearance_images/chart-area-border.png)
 
 ### Chart Area shadow
 
@@ -411,11 +411,11 @@ chartControl.ShadowWidth = 7
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Area Border Shadow in Windows Forms Chart](/Chart-Appearance_images/chart_area_border_shadow.png)
+![Chart Area Border Shadow in Windows Forms Chart](Chart-Appearance_images/chart_area_border_shadow.png)
 
 ### Chart Area Margins
 
-The [ChartAreaMargins](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ChartAreaMargins) property specifies the space between the chart area border and the chartplot area. By default, the margin is set to 10 pixels on all four sides.
+The [ChartAreaMargins](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ChartAreaMargins) property specifies the space between the chart area border and the chart plot area. By default, the margin is set to 10 pixels on all four sides.
 
 The following code example applies a margin of `20` pixels to all sides of the chart area.
 
@@ -432,7 +432,7 @@ chartControl.ChartAreaMargins = New Syncfusion.Windows.Forms.Chart.ChartMargins(
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Area Border Margin in Windows Forms Chart](/Chart-Appearance_images/chart-area-margin.png)
+![Chart Area Border Margin in Windows Forms Chart](Chart-Appearance_images/chart-area-margin.png)
 
 ### Spacing between elements
 
@@ -451,7 +451,7 @@ chartControl.Spacing = 50
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Area Spacing in Windows Forms Chart](/Chart-Appearance_images/chart-spacing.png)
+![Chart Area Spacing in Windows Forms Chart](Chart-Appearance_images/chart-spacing.png)
 
 ## Foreground settings
 
@@ -489,7 +489,7 @@ chartControl.TextPosition = ChartTextPosition.Top
 {% endhighlight %}
 {% endtabs %}
 
-![Chart foreground settings in Windows Forms Chart](/Chart-Appearance_images/chart-foreground-settings.png)
+![Chart foreground settings in Windows Forms Chart](Chart-Appearance_images/chart-foreground-settings.png)
 
 ## Custom Drawing
 
@@ -614,7 +614,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Chart custom drawing in Windows Forms Chart](/Chart-Appearance_images/chart-custom-drawing.png)
+![Chart custom drawing in Windows Forms Chart](Chart-Appearance_images/chart-custom-drawing.png)
 
 ## Watermark support
 
@@ -657,7 +657,7 @@ chartControl.ChartArea.Watermark.ZOrder = ChartWaterMarkOrder.Behind
 {% endhighlight %}
 {% endtabs %}
 
-![Chart watermark in Windows Forms Chart](/Chart-Appearance_images/chart-watermark.png)
+![Chart watermark in Windows Forms Chart](Chart-Appearance_images/chart-watermark.png)
 
 ## Interlaced grid background
 
@@ -687,7 +687,7 @@ chartControl.PrimaryYAxis.InterlacedGridInterior = New Syncfusion.Drawing.BrushI
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Interlaced Grid in Windows Forms Chart](/Chart-Appearance_images/chart-interlaced-grid.png)
+![Chart Interlaced Grid in Windows Forms Chart](Chart-Appearance_images/chart-interlaced-grid.png)
 
 ## Chart skins
 
@@ -731,7 +731,7 @@ chartControl.Skins = Skins.Almond
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Skins in Windows Forms Chart](/Chart-Appearance_images/chart-skins.png)
+![Chart Skins in Windows Forms Chart](Chart-Appearance_images/chart-skins.png)
 
 ## See also
 
