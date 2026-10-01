@@ -9,42 +9,30 @@ documentation: ug
 
 # Exporting in Windows Forms Chart
 
-Essential® Chart has built-in support for exporting the chart control into various image formats. Also, using our complementary products like Essential® **XlsIO, DocIO and PDF** you can also export the chart image into **Excel, Word Doc and PDF** documents.
+The Windows Forms Chart control supports exporting chart content to various formats, including images, Word, PDF, Grid, Excel, and CSV. Use Syncfusion DocIO, PDF, Grid, and XlsIO libraries to export to the corresponding formats.
 
-## Exporting as an Image
+## Exporting as an image
 
-The chart image can easily be exported as an image file in several different formats.
+Use the [SaveImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_SaveImage_System_String_) method to export the chart to an image file. The image format is determined by the extension specified in the file name.
 
-{% tabs %}  
-
+{% tabs %}
 {% highlight c# %}
 
 private string fileName;
-
 fileName = Application.StartupPath + "\\chartExport";
-
 fileName = fileName + ".gif";
-
-this.chartControl1.SaveImage(fileName);
-
+this.chartControl.SaveImage(fileName);
 // Launches the file. 
-
 System.Diagnostics.Process.Start(exportFileName);
 
 {% endhighlight %}
-
 {% highlight vb %}
 
 Private fileName As String
-
 fileName = Application.StartupPath + "\chartExport"
-
 fileName = fileName + ".gif"
-
-Me.chartControl1.SaveImage(fileName)
-
+Me.chartControl.SaveImage(fileName)
 ' Launches the file. 
-
 System.Diagnostics.Process.Start(exportFileName)
 
 {% endhighlight %}
@@ -95,67 +83,51 @@ SVG (Scalable Vector Graphics)</td></tr>
 Post Script</td></tr>
 </table>
 
-N> If the specified extension is none of the above, then the chart is exported as a bitmap.
+N> If the specified extension is none of the above, the chart is exported as a bitmap. At runtime, the chart can also be saved using the save option in the Chart Toolbar.
 
-During runtime, the Chart control can be saved as a file using the Chart Toolbar save option.
+### Editable text support for EPS images
 
-**Editable Text Support for EPS Images**
+Set the [EditableText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ToPostScript.html#Syncfusion_Windows_Forms_Chart_ToPostScript_EditableText) property of the [ToPostScript](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ToPostScript.html) class to `true` to export an EPS image with editable text.
 
-The Chart control can export an EPS image with editable text by setting the [EditableText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ToPostScript.html#Syncfusion_Windows_Forms_Chart_ToPostScript_EditableText) property to true. 
-
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
 ToPostScript toPostScript = new ToPostScript();
-
 toPostScript.EditableText = true;
-
-using(Graphics g = toPostScript.GetRealGraphics(this.chartControl1.Size))
-
-            {
-
-                this.chartControl1.Draw(g, this.chartControl1.Size);
-
-                g.Dispose();
-
-                toPostScript.Save("EditableTextChart.eps");
-
-          }
-
+using(Graphics g = toPostScript.GetRealGraphics(this.chartControl.Size))
+{
+    this.chartControl.Draw(g, this.chartControl.Size);
+    g.Dispose();
+    toPostScript.Save("EditableTextChart.eps");
+}
 
 {% endhighlight %}
 
 {% highlight vb %}
 
 Dim toPostScript As New ToPostScript()
-
 toPostScript.EditableText = True
-
-Using g As Graphics = toPostScript.GetRealGraphics(Me.chartControl1.Size)
-
-         Me.chartControl1.Draw(g, Me.chartControl1.Size)
-
-         g.Dispose();
-
-         toPostScript.Save("EditableTextChart.eps")
-
+Using g As Graphics = toPostScript.GetRealGraphics(Me.chartControl.Size)
+    Me.chartControl.Draw(g, Me.chartControl.Size)
+    g.Dispose();
+    toPostScript.Save("EditableTextChart.eps")
 End Using
 
 {% endhighlight %}
 {% endtabs %}
- 
-The figure below shows the chart EPS image text editing in Adobe Illustrator.
 
-![Chart Export](Exporting_images/Exporting_img1.png)
+The following image illustrates the chart EPS image text editing in Adobe Illustrator.
 
-N> Chart wrapping and formatting will not be possible in the EPS image by enabling this property.
+![Chart exported as an EPS image](Exporting_images/Exporting_img1.png)
 
-## Exporting to Word Doc
+N> Enabling [EditableText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ToPostScript.html#Syncfusion_Windows_Forms_Chart_ToPostScript_EditableText) property does not support chart text wrapping and formatting in the exported EPS image.
 
-The chart control can be exported to a Word doc file as an image using Essential® DocIO. The chart control provides APIs to convert it to an image, while DocIO lets you insert this image into a Word Document file programmatically.
+## Exporting to word doc
 
-![Chart Export](Exporting_images/Exporting_img3.jpeg)
+Use Syncfusion DocIO to export the chart to a Word document as an image. The chart control provides APIs to convert it to an image, while DocIO lets you insert this image into a Word Document file programmatically.
+
+![Chart exported to a Word document](Exporting_images/Exporting_img3.jpeg)
 
 Given below are the steps that will guide you through this process.
 
@@ -169,7 +141,6 @@ Given below are the steps that will guide you through this process.
 {% highlight c# %}
 
 using Syncfusion.DocIO;
-
 using Syncfusion.DocIO.DLS;
 
 {% endhighlight %}
@@ -177,7 +148,6 @@ using Syncfusion.DocIO.DLS;
 {% highlight vb %}
 
 Imports Syncfusion.DocIO
-
 Imports Syncfusion.DocIO.DLS
 
 {% endhighlight %}
@@ -194,45 +164,25 @@ Imports Syncfusion.DocIO.DLS
 {% highlight C# %}
 
 string fileName=Application.StartupPath+"\\chartExport";
-
 string exportFileName = fileName + ".doc";
-
 string file = fileName + ".gif";
-
-this.chartControl1.SaveImage(file);
-
+this.chartControl.SaveImage(file);
 // Create a new document.
-
 WordDocument document = new WordDocument();
-
 // Adding a new section to the document.
-
 IWSection section = document.AddSection();
-
 // Adding a paragraph to the section.
-
 IWParagraph paragraph = section.AddParagraph();                                                
-
 // Writing text.
-
 paragraph.AppendText( "Essential Chart" );
-
 // Adding a new paragraph.                
-
 paragraph = section.AddParagraph();
-
 paragraph.ParagraphFormat.HorizontalAlignment = Syncfusion.DLS.HorizontalAlignment.Center;
-
 // Inserting chart.
-
 paragraph.AppendPicture( Image.FromFile(file));
-
 // Save the Document to disk.
-
 document.Save(exportFileName , Syncfusion.DocIO.FormatType.Doc );
-		
 // Launches the file.                         
-
 System.Diagnostics.Process.Start(exportFileName);
 
 {% endhighlight %}
@@ -240,45 +190,25 @@ System.Diagnostics.Process.Start(exportFileName);
 {% highlight vb %}
 
 Dim fileName As String =Application.StartupPath & "\chartExport"
-
 Dim exportFileName As String = fileName & ".doc"
-
 Dim file As String = fileName & ".gif"
-
-Me.chartControl1.SaveImage(file)
-
+Me.chartControl.SaveImage(file)
 ' Create a new document.
-
 Dim document As WordDocument = New WordDocument()
-
 ' Adding a new section to the document.
-
 Dim section As IWSection = document.AddSection()
-
 ' Adding a paragraph to the section.
-
 Dim paragraph As IWParagraph = section.AddParagraph()
-
 ' Writing text.
-
 paragraph.AppendText("Essential Chart")
-
 ' Adding a new paragraph.                
-
 paragraph = section.AddParagraph()
-
 paragraph.ParagraphFormat.HorizontalAlignment = Syncfusion.DLS.HorizontalAlignment.Center
-
 ' Inserting chart.
-
 paragraph.AppendPicture(Image.FromFile(file))
-
 ' Save the Document to disk.
-
 document.Save(exportFileName, Syncfusion.DocIO.FormatType.Doc)
-
 ' Launches the file.                         
-
 System.Diagnostics.Process.Start(exportFileName)
 
 {% endhighlight %}
@@ -287,15 +217,11 @@ System.Diagnostics.Process.Start(exportFileName)
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-A sample demonstrating the above is available in our installation at the following location:
+## Exporting to grid
 
-&lt;Install Location&gt;\Syncfusion\EssentialStudio\<Install version>\Windows\Chart.Windows\Samples\Export\Chart Export Data
+Use Syncfusion Grid to display the exported chart image in a grid cell. The chart control provides APIs to convert it to an image, while the Grid will let you insert this image into any specific cell.
 
-## Exporting to Grid
-
-The chart control can be exported into a grid cell (in Essential® Grid) as an image using Essential® Grid. The chart control provides APIs to convert it to an image, while the Grid will let you insert this image into any specific cell.
-
-![Chart Export](Exporting_images/Exporting_img4.jpeg)
+![Chart exported to a Grid cell](Exporting_images/Exporting_img4.jpeg)
 
 The steps that are given below will guide you through the process.
 
@@ -333,68 +259,39 @@ Imports Syncfusion.Windows.Forms.Grid
 {% highlight c# %}
 
 // Creates a new instance of the ImageList class.
-
 ImageList image = new ImageList();
-
 // Adds the image to the Image collection of the ImageList.
-
 image.Images.Add(Image.FromFile(this.Name));
-
 // Specify the size of the image.
-
 image.ImageSize = new Size(256, 256);
-
 // Set the imageList of the cell.
-
-this.gridControl1[1,1].ImageList = image;
-
+this.gridControl[1,1].ImageList = image;
 // Specify the index for the image to be displayed.
-
-this.gridControl1[1, 1].ImageIndex = 0;
-
+this.gridControl[1, 1].ImageIndex = 0;
 // Specify the row and column height of the cell.
-
-this.gridControl1.RowHeights[1] = 300;
-
-this.gridControl1.ColWidths[1] = 300;
-
+this.gridControl.RowHeights[1] = 300;
+this.gridControl.ColWidths[1] = 300;
 // Specify the image size mode.
-
-this.gridControl1[1, 1].ImageSizeMode = GridImageSizeMode.CenterImage;
-
+this.gridControl[1, 1].ImageSizeMode = GridImageSizeMode.CenterImage;
 {% endhighlight %}
 
 {% highlight vb %}
 
 ' Creates a new instance of the ImageList class.
-
 Dim image As ImageList = New ImageList()
-
 ' Adds the image to the Image collection of the ImageList.
-
 image.Images.Add(Image.FromFile(Me.Name))
-
 ' Specify the size of the image.
-
 image.ImageSize = New Size(256, 256)
-
 ' Set the imageList of the cell.
-
-Me.gridControl1(1,1).ImageList = image
-
+Me.gridControl(1,1).ImageList = image
 ' Specify the index for the image to be displayed.
-
-Me.gridControl1(1, 1).ImageIndex = 0
-
+Me.gridControl(1, 1).ImageIndex = 0
 ' Specify the row and column height of the cell.
-
-Me.gridControl1.RowHeights(1) = 300
-
-Me.gridControl1.ColWidths(1) = 300
-
+Me.gridControl.RowHeights(1) = 300
+Me.gridControl.ColWidths(1) = 300
 ' Specify the image size mode.
-
-Me.gridControl1(1, 1).ImageSizeMode = GridImageSizeMode.CenterImage
+Me.gridControl(1, 1).ImageSizeMode = GridImageSizeMode.CenterImage
 
 {% endhighlight %}
 
@@ -410,66 +307,43 @@ Me.gridControl1(1, 1).ImageSizeMode = GridImageSizeMode.CenterImage
 {% highlight C# %}
 
 private Form2 gridForm;
-
 this.gridForm= new Form2();
-
 string fileName=Application.StartupPath+"\\chartExport";
-
 string file = fileName + ".gif";
-
 if(!System.IO.File.Exists(file))
-
-this.chartControl1.SaveImage(file);
-
+this.chartControl.SaveImage(file);
 // Specify the filename as the name of the form.
-
 gridForm.Name = file;
-
 // Shows the form with grid control with the chart exported.
-
 gridForm.ShowDialog();
-
 {% endhighlight %}
 
 {% highlight vb %}
 
 Private gridForm As Form2
-
 Me.gridForm= New Form2()
-
 Dim fileName As String =Application.StartupPath & "\chartExport"
-
 Dim file As String = fileName & ".gif"
-
 If (Not System.IO.File.Exists(file)) Then
-
-Me.chartControl1.SaveImage(file)
-
+Me.chartControl.SaveImage(file)
 End If
-
 ' Specify the filename as the name of the form.
-
 gridForm.Name = file
-
 ' Shows the form with grid control with the chart exported.
-
 gridForm.ShowDialog()
-
 {% endhighlight %}
 
 {% endtabs %}
 {% endcapture %}
 {{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-A sample demonstrating the above is available in our installation at the following location.
+## Exporting to excel
 
-&lt;Install Location&gt;\Syncfusion\EssentialStudio\<Install version>\Windows\Chart.Windows\Samples\Export\Chart Export Data
+Use Syncfusion XlsIO to export chart data to an Excel workbook and create an Excel chart from the exported data.
 
-## Exporting to Excel
+![Chart data exported to Excel](Exporting_images/Exporting_img5.jpeg)
 
-Essential® Chart data can be exported into an Excel document and an Excel chart can be created to use the above data using Essential® XlsIO. Though there is no built-in support for this, this can be easily implemented with a very intuitive XlsIO API.
-
-![Chart Export](Exporting_images/Exporting_img5.jpeg)
+Add the `Syncfusion.XlsIO` namespace.
 
 Given below are the steps that will guide you through this process.
 
@@ -504,133 +378,71 @@ Imports Syncfusion.XlsIO
 {% highlight c# %}
 
 string exportFileName = Application.StartupPath+"\\chartExport" + ".xls";                                    
-
 // A new workbook with a worksheet should be created.
-
 IWorkbook chartBook = ExcelUtils.CreateWorkbook(1);
-
 IWorksheet sheet = chartBook.Worksheets[0];
-
 // Fill the worksheet with chart data.
-
 for(int i=1;i<=5;i++)
-
 {
-
-	sheet.Range[i,1].Number = this.chartControl1.Series[0].Points[i-1].X;
-
-	sheet.Range[i,2].Number = this.chartControl1.Series[0].Points[i-1].YValues[0];
-
+	sheet.Range[i,1].Number = this.chartControl.Series[0].Points[i-1].X;
+	sheet.Range[i,2].Number = this.chartControl.Series[0].Points[i-1].YValues[0];
 }
-
 // Create a chart worksheet.
-
 IChart chart = chartBook.Charts.Add("Essential Chart");
-
 // Specify the title of the Chart.
-
 chart.ChartTitle = "Essential Chart";
-
 // Initialize a new series instance and add it to the series collection of the chart.
-
 IChartSerie series = chart.Series.Add();
-
 // Specify the chart type of the series.
-
 series.SerieType = ExcelChartType.Column_Clustered;
-
 // Specify the name of the series. This will be displayed as the text of the legend.
-
 series.Name = "Sample Series";
-
 // Specify the value ranges for the series.
-
 series.Values = sheet.Range["B1:B5"];
-
 // Specify the Category labels for the series.
-
 series.CategoryLabels = sheet.Range["A1:A5"];
-
 // Make the chart as active sheet.
-
 chart.Activate();
-
 // Save the Chart book.
-
 chartBook.SaveAs(exportFileName);
-
 chartBook.Close();
-
 ExcelUtils.Close();
-
 // Launches the file.
-
 System.Diagnostics.Process.Start(exportFileName);
-
 {% endhighlight %}
 
 {% highlight vb %}
 
 Dim exportFileName As String = Application.StartupPath & "\chartExport" & ".xls"
-
 ' A new workbook with a worksheet should be created.
-
 Dim chartBook As IWorkbook = ExcelUtils.CreateWorkbook(1)
-
 Dim sheet As IWorksheet = chartBook.Worksheets(0)
-
 ' Fill the worksheet with chart data.
-
 For i As Integer = 1 To 5
-
-sheet.Range(i,1).Number = Me.chartControl1.Series(0).Points(i-1).X
-
-sheet.Range(i,2).Number = Me.chartControl1.Series(0).Points(i-1).YValues(0)
-
+sheet.Range(i,1).Number = Me.chartControl.Series(0).Points(i-1).X
+sheet.Range(i,2).Number = Me.chartControl.Series(0).Points(i-1).YValues(0)
 Next i
-
 ' Create a chart worksheet.
-
 Dim chart As IChart = chartBook.Charts.Add("Essential Chart")
-	
 ' Specify the title of the Chart.
-
 chart.ChartTitle = "Essential Chart"
-
 ' Initialize a new series instance and add it to the series collection of the chart.
-
 Dim series As IChartSerie = chart.Series.Add()
-
 ' Specify the chart type of the series.
-
 series.SerieType = ExcelChartType.Column_Clustered
-
 ' Specify the name of the series. This will be displayed as the text of the legend.
-
 series.Name = "Sample Series"
-
 ' Specify the value ranges for the series.
-
 series.Values = sheet.Range("B1:B5")
-
 ' Specify the Category labels for the series.
-
 series.CategoryLabels = sheet.Range("A1:A5")
-
 ' Make the chart as active sheet.
-
 chart.Activate()
-
 ' Save the Chart book.
-
 chartBook.SaveAs(exportFileName)
-
 chartBook.Close()
-
 ExcelUtils.Close()
-
 ' Launches the file. 
-
 System.Diagnostics.Process.Start(exportFileName)
 
 {% endhighlight %}
@@ -639,17 +451,11 @@ System.Diagnostics.Process.Start(exportFileName)
 {% endcapture %}
 {{ codesnippet7 | OrderList_Indent_Level_1 }}
 
-### Sample
-
-A sample demonstrating the above functionality is available in our installation at the following <location class=""></location>
-
-&lt;Install Location&gt;\Syncfusion\EssentialStudio\<Install version>\Windows\Chart.Windows\Samples\Export\Chart Export Data
-
 ## Exporting to PDF
 
-The chart control can be exported into a PDF file as an image using Essential® PDF. The chart control provides APIs to convert it to an image, while Essential® PDF lets you insert this image into a Word Document file programmatically.
+Use Syncfusion PDF to export the chart to a PDF document as an image. The chart control provides APIs to convert it to an image, while Syncfusion PDF lets you insert this image into a Word Document file programmatically.
 
-![Chart Export](Exporting_images/Exporting_img6.jpeg)
+![Chart exported to a PDF document](Exporting_images/Exporting_img6.jpeg)
 
 1. Add the **Syncfusion.Pdf.Base and Syncfusion.Pdf.Windows** assemblies.
 
@@ -661,7 +467,6 @@ The chart control can be exported into a PDF file as an image using Essential® 
 {% highlight C# %}
 		
 using Syncfusion.Pdf;
-
 using Syncfusion.Pdf.Graphics;
    
 {% endhighlight %}
@@ -669,7 +474,6 @@ using Syncfusion.Pdf.Graphics;
 {% highlight vb %}
 
 Imports Syncfusion.Pdf
-
 Imports Syncfusion.Pdf.Graphics
 
 {% endhighlight %}
@@ -686,31 +490,18 @@ Imports Syncfusion.Pdf.Graphics
 {% highlight C# %}
 		
 string fileName=Application.StartupPath+"\\chartExport";
-
 string exportFileName = fileName + ".pdf";
-
 string file = fileName + ".gif";
-
-this.chartControl1.SaveImage(file);
-
+this.chartControl.SaveImage(file);
 //Create a PDF document
-
 PdfDocument pdfDoc = new PdfDocument();
-
 //Add a page to the empty PDF document
-
 pdfDoc.Pages.Add();                   
-
 //Draw chart image in the first page
-
 pdfDoc.Pages[0].Graphics.DrawImage(PdfImage.FromFile(file), new PointF(10, 30));
-
 //Save the PDF Document to disk.
-
 pdfDoc.Save(exportFileName);
-
 // Launches the file.                         
-
 System.Diagnostics.Process.Start(exportFileName);
 
 {% endhighlight %}
@@ -718,31 +509,18 @@ System.Diagnostics.Process.Start(exportFileName);
 {% highlight vb %}
 
 Dim fileName As String = Application.StartupPath & "\chartExport"
-
 Dim exportFileName As String = fileName & ".pdf"
-
 Dim file As String = fileName & ".gif"
-
-Me.chartControl1.SaveImage(file)
-
+Me.chartControl.SaveImage(file)
 'Create a PDF document
-
 Dim pdfDoc As PdfDocument = New PdfDocument()
-
 'Add a page to the empty PDF document
-
 pdfDoc.Pages.Add()
-
 'Draw chart image in the first page
-
 pdfDoc.Pages(0).Graphics.DrawImage(PdfImage.FromFile(file), New PointF(10, 30))
-
 'Save the PDF Document to disk.
-
 pdfDoc.Save(exportFileName)
-
 ' Launches the file.                         
-
 System.Diagnostics.Process.Start(exportFileName)
 
 {% endhighlight %}
@@ -751,7 +529,6 @@ System.Diagnostics.Process.Start(exportFileName)
 {% endcapture %}
 {{ codesnippet9 | OrderList_Indent_Level_1 }}
 
-A sample demonstrating the above is available in our installation at the following location.
+## See also
 
-&lt;Install Location&gt;>\Syncfusion\EssentialStudio\<Install version>\Windows\Chart.Windows\Samples\Export\Chart Export Data
-
+- [How to export a chart into various formats in WinForms?](https://support.syncfusion.com/kb/article/4126/how-to-export-a-chart-into-various-formats-in-winforms)
