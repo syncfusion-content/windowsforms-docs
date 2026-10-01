@@ -9,7 +9,7 @@ documentation: ug
 
 # Exporting in Windows Forms Chart
 
-The Windows Forms Chart control provides built-in support for exporting a chart to various image formats. Chart content can also be exported to Word, Grid, Excel, and PDF using Syncfusion DocIO, Grid, XlsIO, and PDF libraries.
+The Windows Forms Chart control supports exporting chart content to various formats, including images, Word, PDF, Grid, Excel, and CSV. Use Syncfusion DocIO, PDF, Grid, and XlsIO libraries to export to the corresponding formats.
 
 ## Exporting as an image
 
