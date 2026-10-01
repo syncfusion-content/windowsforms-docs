@@ -7,7 +7,7 @@ control: Tools
 documentation: ug
 ---
 
-# Getting Started with Windows Forms IntegerTextBox
+# Getting Started with WinForms Integer TextBox
 
 ## Assembly deployment
 
@@ -17,17 +17,17 @@ You can find more details about installing the NuGet packages in a Windows Forms
 
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
 
-### Create a simple application with IntegerTextBox
+### Create a simple application with WinForms Integer TextBox
 
-You can create a Windows Forms application with IntegerTextBox using the following steps:
+You can create a Windows Forms application with WinForms Integer TextBox using the following steps:
 
 ### Create a project
 
-Create a new Windows Forms project in Visual Studio to display the IntegerTextBox control.
+Create a new Windows Forms project in Visual Studio to display the WinForms Integer TextBox control.
 
 ## Add control through designer
 
-The IntegerTextBox control can be added to an application by dragging it from the toolbox to a designer view. The **Syncfusion.Shared.Base** assembly reference will be added automatically:
+The WinForms Integer TextBox control can be added to an application by dragging it from the toolbox to a designer view. The **Syncfusion.Shared.Base** assembly reference will be added automatically:
 
 ![IntegerTextBox control added by designer](Overview_images/wf-integer-text-box-control-added-designer.png) 
 
@@ -52,7 +52,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 
-3. Create an IntegerTextBox instance, and add it to the window.
+3. Create an WinForms Integer TextBox instance, and add it to the window.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -72,7 +72,7 @@ Me.Controls.Add(integerTextBox1)
 
 ## Maximum and minimum value constraints
 
-You can set the maximum and minimum values using the [MaxValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IntegerTextBox.html#Syncfusion_Windows_Forms_Tools_IntegerTextBox_MaxValue) and [MinValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IntegerTextBox.html#Syncfusion_Windows_Forms_Tools_IntegerTextBox_MinValue) properties of IntegerTextBox.
+You can set the maximum and minimum values using the [MaxValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IntegerTextBox.html#Syncfusion_Windows_Forms_Tools_IntegerTextBox_MaxValue) and [MinValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IntegerTextBox.html#Syncfusion_Windows_Forms_Tools_IntegerTextBox_MinValue) properties of WinForms Integer TextBox.
 
 {% tabs %}
 {% highlight C# %}
@@ -87,7 +87,7 @@ Me.integerTextBox1.MinValue = -9223372036854775808
 
 ## Number format
 
-You can display the numbers in custom format using the [NumberGroupSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumericTextBox.html#Syncfusion_Windows_Forms_Tools_NumericTextBox_NumberGroupSeparator) and [NumberGroupSizes](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumericTextBox.html#Syncfusion_Windows_Forms_Tools_NumericTextBox_NumberGroupSizes) properties of IntegerTextBox.
+You can display the numbers in custom format using the [NumberGroupSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumericTextBox.html#Syncfusion_Windows_Forms_Tools_NumericTextBox_NumberGroupSeparator) and [NumberGroupSizes](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumericTextBox.html#Syncfusion_Windows_Forms_Tools_NumericTextBox_NumberGroupSizes) properties of WinForms Integer TextBox.
 
 {% tabs %}
 {% highlight C# %}

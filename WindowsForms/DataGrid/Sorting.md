@@ -5,6 +5,7 @@ description: Sorting in Data Grid supports single and multiple column sorting, c
 platform: windowsforms
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Sorting in Windows Forms Data Grid

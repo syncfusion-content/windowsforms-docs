@@ -5,6 +5,7 @@ description: Radial gauge in the Windows Forms Gauge displays values on a circul
 platform: WindowsForms
 control: Gauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Radial Gauge in Windows Forms Gauge

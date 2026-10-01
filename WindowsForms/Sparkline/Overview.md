@@ -5,6 +5,7 @@ description: Learn about the introduction of Syncfusion Essential Studio® Windo
 platform: windowsforms
 control: Sparkline
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # About Syncfusion® WinForms Sparkline Control

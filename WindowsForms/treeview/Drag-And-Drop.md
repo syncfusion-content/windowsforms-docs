@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Drag and Drop in Windows Forms TreeView | Syncfusion®
 description: Drag-and-drop support enables node movement, drag feedback, drop validation, highlighting, and selection management.

@@ -5,6 +5,7 @@ description: Sorting in Syncfusion® Windows Forms Pivot Grid control helps user
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Sorting in Windows Forms Pivot Grid

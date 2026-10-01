@@ -5,6 +5,7 @@ description: Filtering in Data Grid supports Excel-like filtering, custom filter
 platform: windowsforms
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Filtering in Windows Forms Data Grid

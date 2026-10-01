@@ -5,6 +5,7 @@ description: Export data from Syncfusion® Windows Forms Pivot Grid control to E
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Exporting in Windows Forms Pivot Grid

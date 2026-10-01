@@ -5,6 +5,7 @@ description: Levels in the Windows Forms TreeMap organize hierarchical data into
 platform: windowsforms
 control: TreeMap 
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Levels in WinForms TreeMap

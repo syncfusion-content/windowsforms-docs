@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Events in Windows Forms Popup | Syncfusion®
 description: Popup events provide notifications before showing, after showing, and during popup closing for customization and data handling.

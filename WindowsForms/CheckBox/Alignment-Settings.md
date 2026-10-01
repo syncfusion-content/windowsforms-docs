@@ -7,18 +7,18 @@ control: EditorsPackage
 documentation: ug
 ---
 
-# Alignment Settings in Windows Forms CheckBoxAdv
+# Alignment Settings in WinForms CheckBox
 
-This section discusses the alignment settings of the [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control.
+This section discusses the alignment settings of the [WinForms CheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control.
 
 ## Text Alignment
 
-Text alignment of [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) can be changed by using the [TextContentAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_TextContentAlignment) property with TopLeft, TopCenter, TopRight, MiddleLeft, MiddleCenter, MiddleRight, BottomLeft, BottomCenter and BottomRight  as options.
+Text alignment of [WinForms CheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) can be changed by using the [TextContentAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_TextContentAlignment) property with TopLeft, TopCenter, TopRight, MiddleLeft, MiddleCenter, MiddleRight, BottomLeft, BottomCenter and BottomRight  as options.
 
 <table>
 <tr>
 <th>
-CheckBoxAdv Properties</th><th>
+WinForms CheckBox Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -44,12 +44,12 @@ Me.checkBoxAdv1.TextContentAlignment = System.Drawing.ContentAlignment.MiddleCen
 
 ## CheckBox Alignment
 
-The CheckBox alignment of [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) can be changed to any desired location using [CheckAlign](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_CheckAlign) property with TopLeft, TopCenter, TopRight, MiddleLeft, MiddleCenter, MiddleRight, BottomLeft, BottomCenter and BottomRight as options.
+The CheckBox alignment of [WinForms CheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) can be changed to any desired location using [CheckAlign](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_CheckAlign) property with TopLeft, TopCenter, TopRight, MiddleLeft, MiddleCenter, MiddleRight, BottomLeft, BottomCenter and BottomRight as options.
 
 <table>
 <tr>
 <th>
-CheckBoxAdv Properties</th><th>
+WinForms CheckBox Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -76,5 +76,5 @@ Me.checkBoxAdv1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
 
 {% seealso %}
 
-[Text Settings](https://help.syncfusion.com/windowsforms/checkbox/text-settings), [CheckBoxAdv Settings](https://help.syncfusion.com/windowsforms/checkbox/checkboxadv-settings)
+[Text Settings](https://help.syncfusion.com/windowsforms/checkbox/text-settings), [WinForms CheckBox Settings](https://help.syncfusion.com/windowsforms/checkbox/checkboxadv-settings)
 {% endseealso %}

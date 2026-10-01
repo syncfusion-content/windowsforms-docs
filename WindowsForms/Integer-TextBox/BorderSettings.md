@@ -7,9 +7,9 @@ control: Tools
 documentation: ug
 ---
 
-# Border Settings in Windows Forms IntegerTextBox
+# Border Settings in WinForms Integer TextBox
 
-Color and styles can be applied to the border of the IntegerTextBox control using the below properties.
+Color and styles can be applied to the border of the WinForms Integer TextBox control using the below properties.
 
 * [Border3DStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_Border3DStyle)
 * [BorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_BorderColor)
@@ -33,6 +33,6 @@ Me.integerTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 ![Border style](Overview_images/Overview_img458.png) 
 
-A sample which demonstrates the Border Settings of IntegerTextBox control is available in the below sample installation path.
+A sample which demonstrates the Border Settings of WinForms Integer TextBox control is available in the below sample installation path.
 
 …\System Drive:\Users\Username\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Editor Controls\Editor Controls\CS

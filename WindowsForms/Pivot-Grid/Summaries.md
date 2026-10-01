@@ -5,6 +5,7 @@ description: Define summaries in Syncfusion® Windows Forms Pivot Grid control u
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Summaries in Windows Forms Pivot Grid

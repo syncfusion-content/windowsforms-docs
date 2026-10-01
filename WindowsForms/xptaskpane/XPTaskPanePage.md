@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: XPTaskPanePage in Windows Forms XPTaskPane | Syncfusion®
 description: XPTaskPanePage supports page titles, layout management, border customization, fonts, colors, and page-level appearance settings.

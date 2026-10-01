@@ -5,6 +5,7 @@ description: Serialize and deserialize settings in Syncfusion® Windows Forms Pi
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 # Serialization and Deserialization in Windows Forms Pivot Grid
 

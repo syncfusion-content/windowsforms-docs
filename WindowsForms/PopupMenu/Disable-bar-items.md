@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Disable Bar Items in Windows Forms PopupMenu | Syncfusion®
 description: Disable bar items to restrict unavailable commands and control user interaction within popup menu interfaces.

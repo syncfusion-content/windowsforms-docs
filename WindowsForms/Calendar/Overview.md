@@ -5,6 +5,7 @@ description: Learn about introduction of Syncfusion Essential Studio Windows For
 platform: WindowsForms
 control: SfCalendar
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # About Syncfusion Windows Forms Calendar Control

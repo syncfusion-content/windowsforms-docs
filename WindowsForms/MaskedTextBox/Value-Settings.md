@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Value Settings in Windows Forms MaskedTextBox | Syncfusion®
 description: Value settings in MaskedEditBox allow restricting input through configurable minimum and maximum value limits.

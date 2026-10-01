@@ -5,6 +5,7 @@ description: Customization in the Windows Forms Barcode enables configuration of
 platform: windowsforms
 control: SfBarcode
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Customization in Windows Forms Barcode

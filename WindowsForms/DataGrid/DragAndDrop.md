@@ -5,6 +5,7 @@ description: Drag and Drop in Data Grid supports row and column reordering, enab
 platform: windowsforms
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Drag and Drop in Windows Forms Data Grid

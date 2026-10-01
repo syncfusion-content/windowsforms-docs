@@ -5,6 +5,7 @@ description: Range settings in the Windows Forms Bullet Graph enable configurati
 platform: windowsforms
 control: Bullet Graph
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Range Settings in WinForms Bullet Graph

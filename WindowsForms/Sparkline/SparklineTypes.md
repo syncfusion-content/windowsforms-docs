@@ -5,6 +5,7 @@ description: Types in the Windows Forms Sparkline provide multiple chart styles 
 platform: windowsforms
 control: Sparkline
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Types in WinForms Sparkline

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: How to Enable Shadow in Windows Forms Office2010Form | Syncfusion®
 description: Enable or disable shadow effects in Syncfusion® Windows Forms Office2010Form using the DropShadow property, appearance settings, and more.

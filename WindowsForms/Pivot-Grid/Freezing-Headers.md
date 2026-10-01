@@ -5,6 +5,7 @@ description: Keep row and column headers visible in Syncfusion® Windows Forms P
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Freezing Headers in Windows Forms Pivot Grid

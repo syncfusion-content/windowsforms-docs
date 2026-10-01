@@ -5,6 +5,7 @@ description: Conditional styling in Data Grid customizes cell and row appearance
 platform: windowsforms
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Conditional Styling in Windows Forms Data Grid

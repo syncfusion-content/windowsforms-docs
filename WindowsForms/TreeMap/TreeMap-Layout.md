@@ -5,6 +5,7 @@ description: Layout in the Windows Forms TreeMap controls how hierarchical data 
 platform: windowsforms
 control: TreeMap 
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Layout in WinForms TreeMap

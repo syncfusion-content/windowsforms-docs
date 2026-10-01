@@ -5,6 +5,7 @@ description: Export To Excel in Data Grid supports exporting records with custom
 platform: windowsforms
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Export To Excel in Windows Forms Data Grid

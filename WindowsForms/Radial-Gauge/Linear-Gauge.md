@@ -5,6 +5,7 @@ description: Linear gauge in the Windows Forms Gauge displays values on a linear
 platform: WindowsForms
 control: Gauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Linear Gauge in Windows Forms Gauge

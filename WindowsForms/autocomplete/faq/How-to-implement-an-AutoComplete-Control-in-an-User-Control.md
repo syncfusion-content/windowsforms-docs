@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: How to Implement AutoComplete in a User Control | Syncfusion
 description: Implement AutoComplete in a Syncfusion® Windows Forms User Control by configuring the parent form and data source settings.

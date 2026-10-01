@@ -5,6 +5,7 @@ description: Grouping in Data Grid organizes and displays data in groups to impr
 platform: windowsforms
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Grouping in Windows Forms Data Grid

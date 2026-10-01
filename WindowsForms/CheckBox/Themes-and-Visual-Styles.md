@@ -7,23 +7,23 @@ control: EditorsPackage
 documentation: ug
 ---
 
-# Themes and Visual Styles in Windows Forms CheckBoxAdv
+# Themes and Visual Styles in WinForms CheckBox
 
-This section discusses the themes and visual style settings supported by the [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control.
+This section discusses the themes and visual style settings supported by the [WinForms CheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control.
 
 ## Themes
 
-Themes can be applied to [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control by enabling the [ThemesEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ThemedControl.html#Syncfusion_Windows_Forms_ThemedControl_ThemesEnabled) property.
+Themes can be applied to [WinForms CheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control by enabling the [ThemesEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ThemedControl.html#Syncfusion_Windows_Forms_ThemedControl_ThemesEnabled) property.
 
 <table>
 <tr>
 <th>
-CheckBoxAdv Property</th><th>
+WinForms CheckBox Property</th><th>
 Description</th></tr>
 <tr>
 <td>
 ThemesEnabled</td><td>
-Specifies whether themes are enabled for CheckBoxAdv.</td></tr>
+Specifies whether themes are enabled for WinForms CheckBox.</td></tr>
 </table>
 
 {% tabs %}
@@ -44,17 +44,17 @@ Me.checkBoxAdv1.ThemesEnabled = True
 
 ## Visual Styles
 
-The appearance of the [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control can be customized using the [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_Style), [Office2007ColorScheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_Office2007ColorScheme) and [Office2010ColorScheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_Office2010ColorScheme) properties.
+The appearance of the [WinForms CheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control can be customized using the [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_Style), [Office2007ColorScheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_Office2007ColorScheme) and [Office2010ColorScheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_Office2010ColorScheme) properties.
 
 <table>
 <tr>
 <th>
-CheckBoxAdv Properties</th><th>
+WinForms CheckBox Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
 Style</td><td>
-Gets or sets an advanced appearance for the CheckBoxAdv.The options included are as follows, Default, Office2007, Metro, Office2016Colorful, Office2016White, Office2016Black, Office2016DarkGray
+Gets or sets an advanced appearance for the WinForms CheckBox.The options included are as follows, Default, Office2007, Metro, Office2016Colorful, Office2016White, Office2016Black, Office2016DarkGray
 
 </td></tr>
 <tr>
@@ -83,7 +83,7 @@ Me.checkBoxAdv1.Style = Syncfusion.Windows.Forms.Tools.CheckBoxAdvStyle.Office20
 
 ![Windows forms CheckBoxAdv visualstyles](Overview_images/CheckBoxAdv_visualstyle.jpeg) 
 
-When the Office2007ColorScheme property is set to 'Managed', the CheckBox in the CheckBoxAdv can be displayed using custom colors supported by the control.
+When the Office2007ColorScheme property is set to 'Managed', the WinForms CheckBox can be displayed using custom colors supported by the control.
 
 {% tabs %}
 {% highlight c# %}

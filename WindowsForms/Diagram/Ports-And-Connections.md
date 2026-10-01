@@ -5,6 +5,7 @@ description: Create and customize ports and connections in the Syncfusion® Wind
 platform: windowsforms
 control: Diagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 

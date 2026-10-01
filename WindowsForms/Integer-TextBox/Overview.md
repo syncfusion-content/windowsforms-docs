@@ -7,9 +7,9 @@ control: Tools
 documentation: ug
 ---
 
-# About Syncfusion® Windows Forms IntegerTextBox Control
+# About Syncfusion® WinForms Integer TextBox Control
 
-The IntegerTextBox is derived from the Windows Forms Framework TextBox control and can display integer data type values. It exhibits properties similar to that of the CurrencyTextBox.
+The WinForms Integer TextBox is derived from the Windows Forms Framework TextBox control and can display integer data type values. It exhibits properties similar to that of the CurrencyTextBox.
 
 ![Overview of Syncfusion IntegerTextBox](Overview_images/Overview_img438.png) 
 

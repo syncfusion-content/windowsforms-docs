@@ -5,6 +5,7 @@ description: Data validation in Data Grid supports validation rules, input check
 platform: windowsforms
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Data Validation in Windows Forms Data Grid

@@ -7,7 +7,7 @@ control: TabbedMDIPackage
 documentation: ug
 ---
 
-# How to Apply Office2007 Themes in TabbedMDI
+# How to Apply Office2007 Themes in WinForms TabbedMDI
 
 You can apply [Office2007ColorScheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_Office2007ColorScheme) when TabControl is added as follows.
 

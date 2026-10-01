@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Auto Close in Windows Forms Popup | Syncfusion®
 description: Auto close support hides popups when users click outside the container and provides options to customize closing behavior.

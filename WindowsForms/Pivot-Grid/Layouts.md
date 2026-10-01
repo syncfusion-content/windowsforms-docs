@@ -5,6 +5,7 @@ description: Configure layouts in Syncfusion® Windows Forms Pivot Grid control 
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Layouts in Windows Forms Pivot Grid

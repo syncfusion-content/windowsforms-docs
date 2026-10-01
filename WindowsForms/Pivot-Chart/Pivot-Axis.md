@@ -5,6 +5,7 @@ description: Axis in the Windows Forms Pivot Chart defines data grouping, catego
 platform: windowsforms
 control: PivotChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Axis in Windows Forms Pivot Chart

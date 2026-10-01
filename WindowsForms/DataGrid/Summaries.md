@@ -5,6 +5,7 @@ description: Summaries in Data Grid support table and group summaries, custom ca
 platform: windowsforms
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Summaries in Windows Forms Data Grid

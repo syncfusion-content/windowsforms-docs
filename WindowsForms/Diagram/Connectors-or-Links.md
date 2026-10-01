@@ -5,6 +5,7 @@ description: Learn about connectors and links in the Syncfusion® Windows Forms 
 platform: windowsforms
 control: Diagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Connectors or Links in Windows Forms Diagram

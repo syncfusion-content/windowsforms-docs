@@ -5,6 +5,7 @@ description: Enable right-to-left layout in Syncfusion® Windows Forms Pivot Gri
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Right to Left Support in Windows Forms Pivot Grid

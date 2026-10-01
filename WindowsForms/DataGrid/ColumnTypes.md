@@ -5,6 +5,7 @@ description: Column types in Data Grid support displaying and editing text, nume
 platform: windowsforms
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Column Types in Windows Forms Data Grid

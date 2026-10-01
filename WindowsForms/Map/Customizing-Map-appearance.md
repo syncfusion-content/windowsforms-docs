@@ -5,6 +5,7 @@ description: Color mapping in the Windows Forms Maps visualizes data using color
 platform: windowsforms
 control: Maps
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Color Mapping in Windows Forms Maps

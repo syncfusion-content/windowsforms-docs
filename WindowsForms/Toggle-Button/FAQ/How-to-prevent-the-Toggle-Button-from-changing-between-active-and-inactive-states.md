@@ -7,7 +7,7 @@ control: ToggleButton
 documentation: ug
 ---
 
-# How to Prevent Toggle Button State Change
+# How to Prevent WinForms Toggle Button State Change
 
 You have to subscribe to the ToggleStateChanging event and cancel the change. The following code example explains the same.
 

@@ -5,6 +5,7 @@ description: Learn how to restrict date and time selection within a specified ra
 platform: WindowsForms
 control: SfDateTimeEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Date Range in Windows Forms DateTimePicker

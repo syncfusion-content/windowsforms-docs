@@ -7,11 +7,11 @@ control: Tools
 documentation: ug
 ---
 
-# Appearance Settings in Windows Forms IntegerTextBox
+# Appearance Settings in WinForms Integer TextBox
 
 ## Background settings
 
-The background settings of the IntegerTextBox control are discussed below.
+The background settings of the WinForms Integer TextBox control are discussed below.
 
 ### Background color
 
@@ -46,7 +46,7 @@ The methods associated with the above properties are given below.
 
 ## Foreground settings
 
-The foreground settings of the IntegerTextBox control are discussed below.
+The foreground settings of the WinForms Integer TextBox control are discussed below.
 
 ### Foreground color
 
@@ -93,8 +93,8 @@ The methods associated with the above properties are given below.
 
 ## Visual style
 
-Please refer the [TextBoxExt Visual style](/windowsforms/TextBoxExt/Appearance-Settings) to set themes for IntegerTextBox.
+Please refer the [TextBoxExt Visual style](/windowsforms/TextBoxExt/Appearance-Settings) to set themes for WinForms Integer TextBox.
 
-A sample which demonstrates the Foreground Settings of IntegerTextBox control is available in the below sample installation path.
+A sample which demonstrates the Foreground Settings of WinForms Integer TextBox control is available in the below sample installation path.
 
 …\System Drive:\Users\Username\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Editor Controls\Editor Controls\CS

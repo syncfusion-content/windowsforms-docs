@@ -5,6 +5,7 @@ description: Learn about introduction of Syncfusion® Essential Studio Windows F
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # About Syncfusion Windows Forms Pivot Grid Control

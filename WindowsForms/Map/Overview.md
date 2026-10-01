@@ -5,6 +5,7 @@ description: Learn about the introduction of Syncfusion Essential Studio® Windo
 platform: windowsforms
 control: Maps
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # About Syncfusion® Windows Forms Maps Control

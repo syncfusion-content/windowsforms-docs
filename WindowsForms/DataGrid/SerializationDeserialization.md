@@ -5,6 +5,7 @@ description: Serialization in Data Grid supports saving and restoring grid setti
 platform: windowsforms
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Serialization and Deserialization in Windows Forms Data Grid

@@ -7,7 +7,7 @@ control: HTML UI
 documentation: ug
 ---
 
-# How to Add an Attribute to HTML Element in Html Viewer
+# How to Add an Attribute to HTML Element in WinForms HTML Viewer
 
 You can add an attribute to an HTML element using the Add method of the Attributes property, as shown in the following code snippet.
 

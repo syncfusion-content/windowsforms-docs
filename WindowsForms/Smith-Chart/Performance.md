@@ -5,6 +5,7 @@ description: Performance in the Windows Forms Smith Chart enables efficient rend
 platform: windowsforms
 control: SfSmithChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Performance in Windows Forms Smith Chart

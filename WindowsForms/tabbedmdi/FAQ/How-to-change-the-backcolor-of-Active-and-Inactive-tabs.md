@@ -7,7 +7,7 @@ control: TabbedMDIManager
 documentation: ug
 ---
 
-# How to Change Backcolor of Tabs in TabbedMDI
+# How to Change Backcolor of Tabs in WinForms TabbedMDI
 
 You can change the tab back color for active tabs and inactive tabs using [ActiveTabColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_ActiveTabColor) and [InactiveTabColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_InactiveTabColor) properties. The following code snippet illustrates this.
 

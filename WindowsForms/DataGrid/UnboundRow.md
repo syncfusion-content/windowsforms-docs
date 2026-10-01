@@ -5,6 +5,7 @@ description: Unbound Rows in Data Grid display custom rows for calculations, sum
 platform: windowsforms
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Unbound Rows in Windows Forms Data Grid

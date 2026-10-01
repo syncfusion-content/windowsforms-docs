@@ -5,7 +5,7 @@ description: Data manipulation in Data Grid supports editing, updating, adding, 
 platform: windowsforms
 control: Data Grid
 documentation: ug
-
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Data Manipulation in Windows Forms Data Grid
