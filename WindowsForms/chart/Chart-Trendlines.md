@@ -52,7 +52,7 @@ Me.chartcontrol.Series(0).Trendlines.Add(trendline)
 
 ## Trendline type
 
-Winforms Charts supports the following type of trendlines.
+WinForms Charts supports the following type of trendlines.
 
 The supported [TrendlineType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.TrendlineType.html) values are:
 
