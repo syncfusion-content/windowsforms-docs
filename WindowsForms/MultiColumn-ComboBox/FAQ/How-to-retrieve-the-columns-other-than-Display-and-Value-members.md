@@ -1,12 +1,11 @@
 ---
 layout: post
-title:  How to retrieve the columns other than Display and Value members in a MultiColumnComboBox | WindowsForms | Syncfusion
+title:  Retrieve non-display columns in MultiColumnComboBox | WindowsForms | Syncfusion
 description:  How to retrieve the columns other than Display and Value members in a MultiColumnComboBox
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
-
 
 # How to Retrieve the Columns other than Display and Value Members in a MultiColumnComboBox
 
