@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Available Customization Options in MessageBox
+title: Available customization options | WindowsForms | Syncfusion
 description: Learn how to customize MessageBoxAdv using properties for themes, caption alignment, shadows, styles, and display behavior.
 platform: windowsforms
 control: Frequently Asked Questions
