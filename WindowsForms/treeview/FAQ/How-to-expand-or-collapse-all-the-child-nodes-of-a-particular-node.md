@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Expand or Collapse All Child Nodes | WindowsForms | Syncfusion
-description: Learn how to expand or collapse all child nodes of a particular node in TreeViewAdv and manage the node hierarchy in Windows Forms.
+title: How to Expand or Collapse Nodes in WinForms TreeViewAdv | Syncfusion
+description: Expand or collapse all child nodes of a particular node in Syncfusion® Windows Forms TreeViewAdv control and manage node hierarchy.
 platform: windowsforms
 control: TreeView 
 documentation: ug
 ---
 
-# How to Expand or Collapse all the Child Nodes of a Particular Node
+# How to Expand or Collapse Nodes in WinForms TreeViewAdv
 
 All the treeview nodes can be collapsed by calling the TreeViewAdv.CollapseAll method. For individual nodes, call Node.Collapse method.
 

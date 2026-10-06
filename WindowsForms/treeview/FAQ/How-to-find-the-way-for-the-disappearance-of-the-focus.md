@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Hide Focus Rectangle on Focus Loss | WindowsForms | Syncfusion
-description: how to find the way for the disappearance of the focus rectangle if the focus is lost in the treeviewadv
+title: How to Hide Focus Rectangle in Windows Forms TreeView | Syncfusion
+description: Hide the focus rectangle when focus is lost in Syncfusion® Windows Forms TreeViewAdv control by setting OwnerDrawNodes property.
 platform: windowsforms
 control: TreeView 
 documentation: ug
 ---
 
-# How to Hide the Focus Rectangle When TreeViewAdv Loses Focus
+# How to Hide Focus Rectangle in Windows Forms TreeViewAdv
 
 This can be done by setting e.Active to false in BeforeNodePaint Event Handler.
 

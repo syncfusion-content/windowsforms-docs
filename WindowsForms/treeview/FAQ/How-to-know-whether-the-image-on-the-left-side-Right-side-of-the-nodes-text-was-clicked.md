@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Detect Left or Right Node Image Clicks | WindowsForms | Syncfusion
-description: Learn how to detect whether the image displayed on the left or right side of a TreeNodeAdv text was clicked in Windows Forms.
+title: How to Detect Node Image Clicks in WinForms TreeViewAdv | Syncfusion
+description: Detect whether the image on the left or right side of the node's text was clicked in Syncfusion® Windows Forms TreeViewAdv control.
 platform: windowsforms
 control: TreeView 
 documentation: ug
 ---
 
-# How to Determine Whether the Left or Right Node Image Was Clicked 
+# How to Detect Node Image Clicks in WinForms TreeViewAdv 
 
 This can be done using the below code snippet.
 
