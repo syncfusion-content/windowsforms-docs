@@ -2479,22 +2479,6 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[EXACT](https://support.microsoft.com/en-us/excel/functions/exact-function)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[FIND](/windowsforms/calculation-engine/supported-formulas/text-formulas#find)'| markdownify }}</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>{{'[FIND](https://support.microsoft.com/en-us/excel/functions/find-findb-functions)'| markdownify }}</td></tr>
-<tr>
-<td>{{'[FINDB](/windowsforms/calculation-engine/supported-formulas/text-formulas#findB)'| markdownify }}</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>{{'[FINDB](https://support.microsoft.com/en-us/excel/functions/find-findb-functions)'| markdownify }}</td></tr>
-<tr>
 <td>{{'[FIXED](/windowsforms/calculation-engine/supported-formulas/text-formulas#fixed)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
@@ -2535,14 +2519,6 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[LEN](https://support.microsoft.com/en-us/excel/functions/len-function)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[LENB](/windowsforms/calculation-engine/supported-formulas/text-formulas#lenb)'| markdownify }}</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>{{'[LENB](https://support.microsoft.com/en-us/excel/functions/len-function)'| markdownify }}</td></tr>
-<tr>
 <td>{{'[LOWER](/windowsforms/calculation-engine/supported-formulas/text-formulas#lower)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
@@ -2557,15 +2533,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[MID](https://support.microsoft.com/en-us/excel/functions/mid-midb-functions)'| markdownify }}</td></tr>
-<tr>
-<td>{{'[MIDB](/windowsforms/calculation-engine/supported-formulas/text-formulas#midb)'| markdownify }}</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>{{'[MIDB](https://support.microsoft.com/en-us/excel/functions/mid-function)'| markdownify }}</td></tr>
+<td>{{'[MID](https://support.microsoft.com/en-us/excel/functions/mid-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[NUMBERVALUE](/windowsforms/calculation-engine/supported-formulas/text-formulas#numbervalue)'| markdownify }}</td>
 <td>yes</td>
@@ -2593,14 +2561,6 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[REPLACE](https://support.microsoft.com/en-us/excel/functions/replace-function)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[REPLACEB](/windowsforms/calculation-engine/supported-formulas/text-formulas#REPLACEB)'| markdownify }}</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>{{'[REPLACEB](https://support.microsoft.com/en-us/excel/functions/replace-function)'| markdownify }}
-</td></tr>
 <tr>
 <td>{{'[REPT](/windowsforms/calculation-engine/supported-formulas/text-formulas#rept)'| markdownify }}</td>
 <td>yes</td>
@@ -2618,15 +2578,6 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[RIGHT](https://support.microsoft.com/en-us/excel/functions/right-function)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[RIGHTB](/windowsforms/calculation-engine/supported-formulas/text-formulas#rightb)'| markdownify }}</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>{{'[RIGHTB](https://support.microsoft.com/en-us/excel/functions/right-function)'| markdownify }}</td>
-</tr>
-<tr>
 <td>{{'[SEARCH](/windowsforms/calculation-engine/supported-formulas/text-formulas#search)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
@@ -2634,15 +2585,6 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>{{'[SEARCH](https://support.microsoft.com/en-us/excel/functions/search-function)'| markdownify }}</td>
-</tr>
-<tr>
-<td>{{'[SEARCHB](/windowsforms/calculation-engine/supported-formulas/text-formulas#searchb)'| markdownify }}</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>{{'[SEARCHB](https://support.microsoft.com/en-us/excel/functions/search-function)'| markdownify }}</td>
 </tr>
 <tr>
 <td>{{'[SUBSTITUTE](/windowsforms/calculation-engine/supported-formulas/text-formulas#substitute)'| markdownify }}</td>
