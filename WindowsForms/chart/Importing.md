@@ -49,3 +49,4 @@ Use ADO.NET or Entity Framework to retrieve data from a database and store it in
 ## See Also
 
 - [How to import data from various formats to WinForms Chart](https://support.syncfusion.com/kb/article/4125/how-to-import-data-from-various-formats-to-winforms-chart)
+- [How do I use Essential Chart to visualize data from Essential Grid](https://support.syncfusion.com/kb/article/1189/how-do-i-use-essential-chart-to-visualize-data-from-essential-grid)

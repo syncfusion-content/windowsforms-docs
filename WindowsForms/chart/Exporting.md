@@ -530,6 +530,102 @@ System.Diagnostics.Process.Start(exportFileName)
 {% endcapture %}
 {{ codesnippet9 | OrderList_Indent_Level_1 }}
 
+## Exporting to CSV
+
+Chart data can easily be exported to a CSV file by retrieving the X and Y values from the chart series and writing them in a comma separated format.
+
+The following code example demonstrates how to export chart data to a CSV file.
+
+{% tabs %}
+  
+{% highlight C# %}
+string fileName = Application.StartupPath + "\\chartExport";
+string csvContent = String.Empty, csvLine = String.Empty;
+string comma = ",";
+string exportFileName = fileName + ".csv";
+
+foreach (ChartSeries series in this.chartControl.Series)
+{
+    string seriesName = series.Name;
+    int pointCount = series.Points.Count;
+    string seriesType = series.Type.ToString();
+
+    for (int p = 0; p < pointCount; p++)
+    {
+        ChartPoint point = series.Points[p];
+
+        string yvaluescsv = String.Empty;
+        int count = point.YValues.Length;
+        for (int i = 0; i < count; i++)
+        {
+            yvaluescsv += point.YValues[i];
+            if (i != count - 1)
+                yvaluescsv += comma;
+        }
+
+        //The format of the csv can be given here.
+        //csvLine = seriesName + "-" + seriesType + comma + point.X + comma + yvaluescsv;
+
+        csvLine = point.X + comma + yvaluescsv;
+        csvContent += csvLine + "\n";
+    }
+}
+
+//Initializes the stream to write the contents in a file.
+System.IO.StreamWriter file = new System.IO.StreamWriter(exportFileName);
+file.WriteLine(csvContent);
+file.Close();
+
+System.Diagnostics.Process.Start(exportFileName);
+
+{% endhighlight %}
+  
+{% highlight vb %}
+
+Dim fileName As String = Application.StartupPath & "\chartExport"
+Dim csvContent As String = String.Empty
+Dim csvLine As String = String.Empty
+Dim comma As String = ","
+Dim exportFileName As String = fileName & ".csv"
+
+For Each series As ChartSeries In Me.chartControl.Series
+    Dim seriesName As String = series.Name
+    Dim pointCount As Integer = series.Points.Count
+    Dim seriesType As String = series.Type.ToString()
+
+    For p As Integer = 0 To pointCount - 1
+        Dim point As ChartPoint = series.Points(p)
+
+        Dim yvaluescsv As String = String.Empty
+        Dim count As Integer = point.YValues.Length
+
+        For i As Integer = 0 To count - 1
+            yvaluescsv &= point.YValues(i)
+
+            If i <> count - 1 Then
+                yvaluescsv &= comma
+            End If
+        Next
+
+        ' The format of the CSV can be specified here.
+        ' csvLine = seriesName & "-" & seriesType & comma & point.X & comma & yvaluescsv
+
+        csvLine = point.X & comma & yvaluescsv
+        csvContent &= csvLine & Environment.NewLine
+    Next
+Next
+
+' Initializes the stream to write the contents to a file.
+Dim file As New System.IO.StreamWriter(exportFileName)
+file.WriteLine(csvContent)
+file.Close()
+
+System.Diagnostics.Process.Start(exportFileName)
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## See also
 
 - [How to export a chart into various formats in WinForms?](https://support.syncfusion.com/kb/article/4126/how-to-export-a-chart-into-various-formats-in-winforms)
