@@ -1,7 +1,7 @@
 ---
 layout: post
-title: CommandBarController Not Allowed with XP Menus | WindowsForms | Syncfusion
-description: Why is it not possible to add a CommandBarController to a form containing XP Menus and ToolBars
+title: Cannot Add CommandBarController to XP Menus | WindowsForms | Syncfusion
+description: Explains why a CommandBarController cannot be added to a Windows Forms application that contains XP Menus and ToolBars, and discusses the related limitation
 platform: windowsforms
 control: CommandBars package
 documentation: ug
