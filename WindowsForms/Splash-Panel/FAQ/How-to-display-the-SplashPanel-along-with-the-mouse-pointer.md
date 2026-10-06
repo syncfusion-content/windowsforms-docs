@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Display SplashPanel with mouse pointer | WindowsForms | Syncfusion
-description: Learn how to display the SplashPanel along with the mouse pointer in Syncfusion WindowsForms by setting DesktopAlignment to Custom and using ShowSplash with pointer position.
+description: Learn how to show the SplashPanel with the mouse pointer in Syncfusion WindowsForms by setting DesktopAlignment to Custom and using ShowSplash.
 platform: windowsforms
 control: SplashPanel
 documentation: ug
