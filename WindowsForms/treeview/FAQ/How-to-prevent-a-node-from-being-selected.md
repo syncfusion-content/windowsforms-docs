@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-prevent-a-node-from-being-selected | WindowsForms | Syncfusion
-description: Learn how to prevent a node from being selected in TreeViewAdv and control node selection behavior in Windows Forms.
+title: How to Prevent a Node from Being Selected in TreeViewAdv | Syncfusion
+description: Learn how to prevent a node from being selected in Syncfusion® Windows Forms TreeViewAdv control and control node selection behavior.
 platform: windowsforms
 control: TreeView 
 documentation: ug
 ---
 
-# How to Prevent a Node from being Selected
+# How to Prevent a Node from Being Selected in TreeViewAdv
 
 This can be done using BeforeSelect event.
 

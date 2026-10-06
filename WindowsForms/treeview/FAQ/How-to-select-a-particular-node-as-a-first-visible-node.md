@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Select a Node as the First Visible Node | WindowsForms | Syncfusion
-description: Learn how to select a particular node as the first visible node in TreeViewAdv and control node visibility in Windows Forms.
+title: How to Select the First Visible Node in WinForms | Syncfusion
+description: Learn how to select a first visible node in Syncfusion® Windows Forms TreeViewAdv control and keep a particular node visible by scrolling it into view.
 platform: windowsforms
 control: TreeView 
 documentation: ug
 ---
 
-# How to Select a Particular Node as a First Visible Node
+# How to Select a First Visible Node in Windows Forms TreeViewAdv
 
 This can be done by using the code snippet given below. This will allow the user to make a particular node as the first visible node. The EnsureVisibleSelectedNode property will help the user to bring the invisible node into a visible state by scrolling the ScrollBar to the SelectedNode, if necessary.
 

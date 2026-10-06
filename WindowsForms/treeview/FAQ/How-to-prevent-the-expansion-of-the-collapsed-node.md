@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Prevent Expansion of Collapsed Nodes | WindowsForms | Syncfusion
-description: Learn how to prevent collapsed nodes from expanding when they are double-clicked and control node expansion behavior in TreeViewAdv.
+title: How to Prevent Node Expansion in Windows Forms TreeViewAdv | Syncfusion
+description: Learn how to prevent collapsed nodes from expanding when they are double-clicked in Syncfusion® Windows Forms TreeViewAdv control.
 platform: windowsforms
 control: TreeView 
 documentation: ug
 ---
 
-# How to Prevent Collapsed Nodes from Expanding on Double-Click
+# How to Prevent Collapsed Nodes from Expanding in Windows Forms TreeViewAdv
 
 BeforeExpand event should be handled to prevent the expansion of the collapsed nodes when it is double-clicked.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Return Node at a Specified Location | WindowsForms | Syncfusion
-description: Learn how to return a node at a specified location in TreeViewAdv and retrieve node information based on coordinates in Windows Forms.
+title: How to Get a Node at a Location in Windows Forms TreeViewAdv | Syncfusion
+description: Learn how to return a node at a specified location in Syncfusion® Windows Forms TreeViewAdv control using GetNodeAtPoint and GetNodeAtPointEx.
 platform: windowsforms
 control: TreeView 
 documentation: ug
 ---
 
-# How to Return the Node at a Specified Location
+# How to Return a Node at a Specified Location in Windows Forms TreeViewAdv
 
 GetNodeAtPoint method will get or returns the node at the specified location. There are three overloads for this method. This method can be called inside DragOver event. The parameters are as follows. To return the node at the specified point, GetNodeAtPointEx method can be called.
 

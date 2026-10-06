@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Scroll-A-Node-Into-View | WindowsForms | Syncfusion
-description: Learn how to scroll a node into view in a TreeViewAdv control and ensure selected nodes are visible in Windows Forms.
+title: How to Scroll a Node Into View in Windows Forms TreeViewAdv | Syncfusion
+description: Learn how to scroll a node into view in Syncfusion® Windows Forms TreeViewAdv control by using BringIntoView and EnsureVisible methods.
 platform: windowsforms
 control: TreeView 
 documentation: ug
 ---
 
-# How to Scroll A Node Into View
+# How to Scroll a Node Into View in Windows Forms TreeViewAdv
 
 This section illustrates how a particular node can be scrolled into view if it is hidden because its parent is hidden or because the scrollbar has scrolled it out of view.
 

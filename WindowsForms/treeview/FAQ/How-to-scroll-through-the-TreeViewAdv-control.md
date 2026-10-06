@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scroll Through TreeViewAdv Control | WindowsForms | Syncfusion
+title: How to Scroll Through TreeViewAdv Control in Windows Forms | Syncfusion
 description: Learn how to scroll through the TreeViewAdv control using the Up and Down arrow keys while a node is in edit mode in Windows Forms.
 platform: windowsforms
 control: TreeView 
