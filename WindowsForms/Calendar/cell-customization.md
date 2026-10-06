@@ -5,6 +5,7 @@ description: Learn how to customize calendar cells to highlight special dates an
 platform: windowsforms
 control: SfCalendar
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Cell Customization in Windows Forms Calendar

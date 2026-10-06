@@ -5,6 +5,7 @@ description: Learn about appearance customization options in Windows Forms DateT
 platform: windowsforms
 control: SfDateTimeEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Appearance in Windows Forms DateTimePicker

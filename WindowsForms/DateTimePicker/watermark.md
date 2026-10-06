@@ -5,6 +5,7 @@ description: Learn how to set watermark text in Windows Forms DateTimePicker con
 platform: windowsforms
 control: SfDateTimeEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Watermark in Windows Forms DateTimePicker

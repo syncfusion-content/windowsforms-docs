@@ -5,6 +5,7 @@ description: Learn about appearance customization options in Windows Forms Calen
 platform: windowsforms
 control: SfCalendar
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Appearance in Windows Forms Calendar

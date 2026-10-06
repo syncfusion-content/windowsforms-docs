@@ -5,6 +5,7 @@ description: Learn about datetime editing modes in Windows Forms DateTimePicker 
 platform: windowsforms
 control: SfDateTimeEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # DateTime Editing in Windows Forms DateTimePicker
