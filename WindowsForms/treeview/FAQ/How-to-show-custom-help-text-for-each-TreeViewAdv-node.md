@@ -7,7 +7,7 @@ control: TreeView
 documentation: ug
 ---
 
-# How to Show Custom Help Text for Each TreeViewAdv Node in Windows Forms
+# How to Show Custom Help Text for TreeViewAdv Nodes in WinForms
 
 Custom help text can be shown using TreeNodeAdv.HelpText property.
 

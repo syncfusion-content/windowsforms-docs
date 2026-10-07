@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Customize Context Menu in Windows Forms TreeViewAdv | Syncfusion
+title: How to Customize Context Menu in WinForms TreeViewAdv | Syncfusion
 description: Customize context menu to display the name of the selected node in Syncfusion® Windows Forms TreeViewAdv control when right-clicked.
 platform: windowsforms
 control: TreeView 
