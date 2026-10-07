@@ -473,8 +473,6 @@ For more details, refer to [How to bind a data source to a WinForms Chart using 
 
 ### Bind chart with a binding source in code behind
 
-### Bind chart with a binding source in code
-
 Binding a chart to a `BindingSource` in code is similar to binding an `IEnumerable` data source. The following steps demonstrate how to bind a `BindingSource` to a [ChartSeries](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html).
 
 **Step-1:**
@@ -486,14 +484,14 @@ Create a [ChartDataBindModel](https://help.syncfusion.com/cr/windowsforms/Syncfu
 {% highlight c# %}
 
 //Using BindingSource as data source to the ChartDataBindModel
- ChartDataBindModel model = new ChartDataBindModel(MyBindingSource);
+ChartDataBindModel model = new ChartDataBindModel(MyBindingSource);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
 'Using BindingSource as data source to the ChartDataBindModel
-     Dim model As New ChartDataBindModel(MyBindingSource)
+Dim model As New ChartDataBindModel(MyBindingSource)
 
 {% endhighlight %}
 {% endtabs %}
@@ -506,21 +504,15 @@ Provide a field name in binding source as value to the [XName](https://help.sync
 
 {% highlight c# %}
 
-//Using BindingSource as data source to the ChartDataBindModel
-ChartDataBindModel model = new ChartDataBindModel(MyBindingSource);
 //Mapping XName to a field in BindingSource object
-
 model.XName = "Field1";
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-'Using BindingSource as data source to the ChartDataBindModel
-      Dim model As New ChartDataBindModel(MyBindingSource)
-'Mapping XName and YNames to the fields in BindingSource object
-
-      model.XName = "Field1"
+'Mapping XName to the field in BindingSource object
+model.XName = "Field1"
 
 {% endhighlight %}
 {% endtabs %}
@@ -535,26 +527,15 @@ As this example uses a pie chart, a single field name is sufficient for the YNam
 
 {% highlight c# %}
 
-//Using BindingSource as data source to the ChartDataBindModel
-ChartDataBindModel model = new ChartDataBindModel(MyBindingSource);
-//Mapping XName to a field in BindingSource object
-model.XName = "Field1";
-
 //Mapping YNames to a field in BindingSource object
-
 model.YNames = new string[] { "Field2" };
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-'Using BindingSource as data source to the ChartDataBindModel
-     Dim model As New ChartDataBindModel(MyBindingSource)
-'Mapping XName and YNames to the fields in BindingSource object
-      model.XName = "Field1"
-
 'Mapping YNames to a field in BindingSource object
-      model.YNames = New String() {"Field2"}
+model.YNames = New String() {"Field2"}
 
 {% endhighlight %}
 {% endtabs %}
@@ -567,36 +548,21 @@ Set [ChartDataBindModel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.
 
 {% highlight c# %}
 
-//Using BindingSource as data source to the ChartDataBindModel
-ChartDataBindModel model = new ChartDataBindModel(MyBindingSource);
-//Mapping XName to a field in BindingSource object
-model.XName = "Field1";
-
-//Mapping YNames to a field in BindingSource object
-model.YNames = new string[] { "Field2" };
-
+//Bind ChartDataBindModel object with Series
+series.SeriesModel = model;
 {% endhighlight %}
 
 {% highlight vb %}
 
-'Using BindingSource as data source to the ChartDataBindModel
-      Dim model As New ChartDataBindModel(MyBindingSource)
-
-'Mapping XName to a field in BindingSource object
-      model.XName = "Field1"
-
-'Mapping YNames to a field in BindingSource object
-      model.YNames = New String() {"Field2"}
-
 'Bind ChartDataBindModel object with Series
-      series.SeriesModel = model
+series.SeriesModel = model
 
 {% endhighlight %}
 {% endtabs %}
 
 The following screenshot displays a Chart bounded with binding source in code behind.
 
-![Chart Data](Chart-Data_images/Chart-Data_img29.png)
+![Chart Data](Chart-Data_images/chart-data-binding-source-code-behind.png)
 
 ## Data manipulation
 
