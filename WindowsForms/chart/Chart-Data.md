@@ -22,88 +22,83 @@ N> One important reason to use either of these approaches is to improve performa
 
 ## Binding a dataset to the chart
 
-The following code example demonstrates how to bind a custom `DataSet` to a [ChartSeries](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html) using the `ChartDataBindModel` class. The `ID` column is used for the X values, the `Population` column is used for the Y values, and the `City` column is displayed as custom X-axis labels through the `ChartDataBindAxisLabelModel` class. A `DataSet` can also be replaced with a `DataTable` or `DataView`.
+The following code example demonstrates how a custom `DataSet` can be bound to a [ChartSeries](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html) to provide data points and to a [ChartAxis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html) to display axis labels. A `DataSet` can also be replaced with a `DataTable` or `DataView`.
 
-The following image illustrates the DataSet structure used for chart binding.
+![Chart Data](Chart-Data_images/Chart-Data_img2.jpeg)
 
 {% tabs %}
 
 {% highlight c# %}
-//Custom Dataset bound to the Demographics table
-DataSet dataSet1 = new DataSet("DataSet1");
-DataTable demographicsTable = new DataTable("Demographics");
-demographicsTable.Columns.Add("ID", typeof(int));
-demographicsTable.Columns.Add("City", typeof(string));
-demographicsTable.Columns.Add("Population", typeof(int));
-demographicsTable.Rows.Add(1, "Chennai", 8000000);
-demographicsTable.Rows.Add(2, "Mumbai", 12400000);
-demographicsTable.Rows.Add(3, "Delhi", 11000000);
-demographicsTable.Rows.Add(4, "Bangalore", 8500000);
-demographicsTable.Rows.Add(5, "Hyderabad", 6800000);
-demographicsTable.Rows.Add(6, "Kolkata", 4500000);
-dataSet1.Tables.Add(demographicsTable);
-ChartDataBindModel model = new ChartDataBindModel(dataSet1, "Demographics");
 
-//Column that contains the X values
+ChartDataBindModel model = null;
+ChartDataBindAxisLabelModel xAxisLabelModel = null;
+
+// A custom DataSet bound to the Demographics table.
+
+private ChartAccessDataBind.DataSet1 dataSet11;
+this.oleDbDataAdapter.Fill(this.dataSet11.Demographics);
+model = new ChartDataBindModel(this.dataSet11,"Demographics");
+
+// The column that contains the X values.
+
 model.XName = "ID";
 
-//Column that contains the Y values
-model.YNames = new string[] { "Population" };
+// The columns that contain the Y values.
 
-//Configure the chart series
-ChartSeries series = new ChartSeries("Data Bound Series");
-series.Type = ChartSeriesType.Line;
+model.YNames = new string[]{"Population"};
+ChartSeries series = new ChartSeries ("Data Bound Series");
+series.Text = series.Name;
 series.SeriesModel = model;
+series.Style.TextColor = Color.White;
+series.Style.Font.Bold = true;
 this.chartControl.Series.Add(series);
 
+this.xAxisLabelModel = new ChartDataBindAxisLabelModel(this.dataSet11,"Demographics");
 
-//The columns that has the label values corresponding X values
-ChartDataBindAxisLabelModel xAxisLabelModel = new ChartDataBindAxisLabelModel(dataSet1, "Demographics");
-xAxisLabelModel.LabelName = "City";
-this.chartControl.PrimaryXAxis.LabelsImpl = xAxisLabelModel;
+// The columns that has the label values for the corresponding X values.
+
+this.xAxisLabelModel.LabelName = "City";
+this.chartControl.PrimaryXAxis.LabelsImpl = this.xAxisLabelModel;
 this.chartControl.PrimaryXAxis.ValueType = ChartValueType.Custom;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-'Custom Dataset bound to Demographics tables
-Dim dataset As New DataSet("Dataset1")
-Dim demographicstable As New DataTable("Demographics")
-demographicstable.Columns.Add("ID", GetType(Integer))
-demographicstable.Columns.Add("City", GetType(String))
-demographicstable.Columns.Add("Population", GetType(Integer))
-demographicstable.Rows.Add(1, "Chennai", 8000000)
-demographicstable.Rows.Add(2, "Mumbai", 12400000)
-demographicstable.Rows.Add(3, "Delhi", 11000000)
-demographicstable.Rows.Add(4, "Bangalore", 8500000)
-demographicstable.Rows.Add(5, "Hyderabad", 6800000)
-demographicstable.Rows.Add(6, "Kolkata", 4500000)
-dataset.Tables.Add(demographicstable)
-Dim model As New ChartDataBindModel(dataset, "Demographics")
+Dim model As ChartDataBindModel = Nothing
+Dim xAxisLabelModel As ChartDataBindAxisLabelModel = Nothing
 
-'Column that contains the X values
+' A custom DataSet bound to the Demographics table
+
+Private dataSet11 As ChartAccessDataBind.DataSet1
+Me.oleDbDataAdapter.Fill(Me.dataSet11.Demographics)
+model = New ChartDataBindModel(Me.dataSet11,"Demographics")
+
+' The column that contains the X values.
+
 model.XName = "ID"
+' The columns that contain the Y values.
 
-'Column that contains the Y values
-model.YNames = New String() {"Population"}
-
-'Configure the chart series
-Dim series As ChartSeries = New ChartSeries("Data Bound Series")
-series.Type = ChartSeriesType.Line
+model.YNames = New String(){"Population"}
+Dim series As New ChartSeries("Data Bound Series")
+series.Text = series.Name
 series.SeriesModel = model
-chartControl.Series.Add(series)
+series.Style.TextColor = Color.White
+series.Style.Font.Bold = True
+Me.chartControl.Series.Add(series)
 
-'The columns that has the label values corresponding X values
-Dim xaxislabelmodel = New ChartDataBindAxisLabelModel(dataset, "Demographics")
-xaxislabelmodel.LabelName = "City"
-chartControl.PrimaryXAxis.LabelsImpl = xaxislabelmodel
-chartControl.PrimaryXAxis.ValueType = ChartValueType.Custom
+Me.xAxisLabelModel = New ChartDataBindAxisLabelModel(Me.dataSet11,"Demographics")
+
+' The columns that has the label values for the corresponding X values.
+
+Me.xAxisLabelModel.LabelName = "City"
+Me.chartControl.PrimaryXAxis.LabelsImpl = Me.xAxisLabelModel
+Me.chartControl.PrimaryXAxis.ValueType = ChartValueType.Custom
 
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Data](Chart-Data_images/chart-bind-dataset.png){height:"350", width="350"}
+![Chart Data](Chart-Data_images/Chart-Data_img3.jpeg)
 
 ## Implementing custom data binding interfaces
 
@@ -161,42 +156,51 @@ public class ArrayModel : IChartSeriesModel
 
 {% highlight vb %}
 
-Public Class ArrayModel
-    Implements IChartSeriesModel
+' Custom Model
 
-    Private data() As Double
+Public Class ArrayModel Implements IChartSeriesModel
 
-    Public Sub New(ByVal data() As Double)
-        Me.data = data
-    End Sub
+   Private data() As Double
 
-    ' Returns the number of points in this series.
-    Public ReadOnly Property Count() As Integer _
-        Implements IChartSeriesModel.Count
+   Public  Sub New(ByVal data() As Double)
+         Me.data = data
+
+   End Sub
+
+   ' Returns the number of points in this series.
+
+   Public ReadOnly Property Count() As Integer
+
         Get
-            Return Me.data.Length
+           Return Me.data.GetLength(0)
         End Get
-    End Property
 
-    'Public Function GetY(ByVal xIndex As Integer) As Double() _
-    '    Implements IChartSeriesModel.GetY
-    Public Function GetY(ByVal xIndex As Integer) As Double() _
-        Implements IChartSeriesModel.GetY
-        Return New Double() {data(xIndex)}
-    End Function
+   End Property
 
-    Public Function GetX(ByVal xIndex As Integer) As Double _
-        Implements IChartSeriesModel.GetX
-        Return xIndex
-    End Function
+   ' Returns the Y value of the series at the specified point index.
 
-    Public Function GetEmpty(ByVal index As Integer) As Boolean _
-        Implements IChartSeriesModel.GetEmpty
-        Return False
-    End Function
+   Public Double() GetY(Integer xIndex)
+      Return New Double(){data(xIndex)}
 
-    Public Event Changed As ListChangedEventHandler _
-        Implements IChartSeriesModel.Changed
+   End Function
+
+ ' Returns the X value of the series at the specified point index.
+
+   Public Double GetX(Integer xIndex)
+      Return xIndex
+
+   End Function
+
+   ' Indicates whether a specified point index has a value which can be plotted.
+
+   Public Function GetEmpty(ByVal index As Integer) As Boolean
+      Return False
+
+   End Function
+
+   ' Event that should be raised by any implementation of this interface if data that it holds changes. This will cause the chart to be updated accordingly. We don't raise this event in our implementation as our data will be static.
+
+   Public event ListChangedEventHandler Changed
 
 End Class
 
@@ -210,25 +214,27 @@ End Class
 {% highlight c# %}
 
 //Creating series data and binding to the array model
-ChartSeries series = new ChartSeries("Series");
-series.SeriesModel = new ChartLegendSample.ArrayModel(new double[] { 22, 24, 32, 12, 18 });
-series.Type = ChartSeriesType.Bar;
-this.chartControl.Series.Add(series);
+
+ChartSeries series1 = new ChartSeries("Series 1");
+series1.SeriesIndexedModelImpl = new ArrayModel(new double[]{22,24,32,12,18});
+series1.Type = ChartSeriesType.Bar;
+this.chartControl.Series.Add(series1);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
 'Creating series data and binding to the array model
-Dim series As New ChartSeries("Series")
-series.SeriesModel = New ArrayModel(New Double() {22, 24, 32, 12, 18})
-series.Type = ChartSeriesType.Bar
-Me.chartControl.Series.Add(series)
+
+Dim series1 As New ChartSeries("Series 1")
+series1.SeriesIndexedModelImpl = New ArrayModel(New Double(){22,24,32,12,18})
+series1.Type = ChartSeriesType.Bar
+Me.chartControl.Series.Add(series1)
 
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Data](Chart-Data_images/chart-custom-databinding-interface.png)
+![Chart Data](Chart-Data_images/Chart-Data_img4.jpeg)
 
 ### Indexed data
 
@@ -300,13 +306,6 @@ Class PopulationData
 
     End Property
 
-    Public Sub New(ByVal city As String, ByVal population As Double)
-        Me.City = city
-        Me.Population = population
-    End Sub
-
-End Class
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -328,11 +327,13 @@ ChartSeries series = new ChartSeries("Populations");
 ChartDataBindModel dataSeriesModel = new ChartDataBindModel(populations);
 
 // If ChartDataBindModel.XName is empty or null, X value is index of point.
+
 //Here I have assigned the property name Population as Y axis name and ChartDataBindModel automatically detects the Population property and will bind the data from it.
 
 dataSeriesModel.YNames = new string[] { "Population" };
 
 //Binding the ChartDataBindModel with the Series. This is the best practice for binding with the large amount of data since it will reduce the performance issue of Chart rendering and manipulating data.
+
 series.SeriesModel = dataSeriesModel;
 
 //Since we have specified YNames only for the DataBind model, it will take the data source is non indexed model and it will ignore the X axis values. We need to assign the X axis values what we need to show on X axis by ChartDataBindAxisLabelModel separately. 
@@ -340,7 +341,6 @@ series.SeriesModel = dataSeriesModel;
 ChartDataBindAxisLabelModel dataLabelsModel = new ChartDataBindAxisLabelModel(populations);
 dataLabelsModel.LabelName = "City";
 chartControl.Series.Add(series);
-chartControl.PrimaryXAxis.ValueType = ChartValueType.Custom;
 chartControl.PrimaryXAxis.LabelsImpl = dataLabelsModel;
 
 {% endhighlight %}
@@ -348,83 +348,99 @@ chartControl.PrimaryXAxis.LabelsImpl = dataLabelsModel;
 {% highlight vb %}
 
 Dim populations As New ArrayList()
-populations.Add(New PopulationData("New York", 13))
-populations.Add(New PopulationData("Houston", 6))
-populations.Add(New PopulationData("Tokyo", 17))
-populations.Add(New PopulationData("London", 15))
-populations.Add(New PopulationData("Los Angeles", 11))
+populations.Add(New PopulationData("New York", 13)) 
+populations.Add(New PopulationData("Houston", 6)) 
+populations.Add(New PopulationData("Tokyo", 17)) 
+populations.Add(New PopulationData("London", 15)) 
+populations.Add(New PopulationData("Los Angeles", 11)) 
 Dim series As New ChartSeries("Populations")
 Dim dataSeriesModel As New ChartDataBindModel(populations)
 
-'If ChartDataBindModel.XName is empty or null, X value is index of point. 
+‘If ChartDataBindModel.XName is empty or null, X value is index of point. 
+
 'Here I have assigned the property name Population as Y axis name and ChartDataBindModel automatically detects the Population property and will bind the data from it. 
-dataSeriesModel.YNames = New String() {"Population"}
+
+dataSeriesModel.YNames = New String() {"Population"} 
+
 'Binding the ChartDataBindModel with the Series. This is the best practice for binding with the large amount of data since it will reduce the performance issue of Chart rendering and manipulating data. 
 
-series.SeriesModel = dataSeriesModel
+series.SeriesModel = dataSeriesModel 
+
 'Since we have specified YNames only for the DataBind model, it will take the data source is non indexed model and it will ignore the X axis values. We need to assign the X axis values what we need to show on X axis by ChartDataBindAxisLabelModel separately. 
 
 Dim dataLabelsModel As New ChartDataBindAxisLabelModel(populations)
-dataLabelsModel.LabelName = "City"
-chartControl.Series.Add(series)
-chartControl.PrimaryXAxis.ValueType = ChartValueType.Custom
-chartControl.PrimaryXAxis.LabelsImpl = dataLabelsModel
+dataLabelsModel.LabelName = "City" 
+chartControl.Series.Add(series) 
+chartControl.PrimaryXAxis.LabelsImpl = dataLabelsModel 
 
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Data](Chart-Data_images/chart-data-arraylist.png)
+![Chart Data](Chart-Data_images/Chart-Data_img5.jpeg)
 
 ## Data binding in chart through chart wizard
 
-The Chart Wizard allows you to bind a data source to the Windows Forms Chart control and configure the chart at design time.
+The Chart Wizard provides design-time support for configuring chart data binding.
 
-Follow these steps to add the Chart control and prepare the design-time data schema:
+To bind a database table to the [ChartControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html), follow these steps:
 
-**Step-1:** Open the Windows Forms project in Visual Studio.
+1. Open the **Chart Wizard**, select **Series**, and then navigate to the **Data Source** tab as shown image.
 
-**Step-2:** Open the **Toolbox**, expand **Syncfusion Windows Forms**, and drag the **ChartControl** onto the form.
+![Chart Data](Chart-Data_images/Chart-Data_img6.png)
 
-**Step-3:** Select the Chart control, click the **Smart Tag (►)**, and choose **Chart Wizard**.
+2. Select a chart data source from the drop-down list. All data sources available in the form are displayed. If no data source is available, select **New BindingSource**.
+   
+![Chart Data](Chart-Data_images/Chart-Data_img7.png)
 
-![Chart Wizard](Chart-Data_images/chart_wizard.png){height:"350", width:"350"}
+3. In the **Data Source Configuration Wizard**, select **Database** as the data source type, and then click **Next**.
 
-**Step-4:** Open the **Toolbox** and drag a **BindingSource** component onto the form. The component appears in the component tray as `bindingSource1`.
+![Chart Data](Chart-Data_images/Chart-Data_img8.jpeg)
 
-![Chart Binding Source at Design](Chart-Data_images/chart-binding-source-design.png){height:"350", width="350"}
+4. Then click **New Connection**.
 
-**Step-5:** Open the **Project** menu and select **Add New Item**. In the **Add New Item** dialog, select **DataSet**, name it `DataSet1.xsd`, and click **Add**. The DataSet provides the design-time schema required by the Chart Wizard to identify the X and Y fields.
+![Chart Data](Chart-Data_images/Chart-Data_img9.jpeg)
 
-![Chart dataset at Design](Chart-Data_images/chart-dataset-design.png){height:"350", width="350"}
+5. In the **Choose Data Source** dialog box, select either **Microsoft SQL Server** or **Microsoft Access**, and then click **Continue** button.
+   
+![Chart Data](Chart-Data_images/Chart-Data_img10.jpeg)
 
-**Step-6:** Open `DataSet1.xsd` in the DataSet Designer. Right-click the designer surface, choose **Add**, and select **DataTable**.
+6. In the **Add Connection** dialog box, browse to the database file, and then click **OK**.
 
-**Step-7:** Right-click the DataTable, choose **Add**, and select **Column**. Create `Month` as a `string` column and `Sales` as an `int` column.
+![Chart Data](Chart-Data_images/Chart-Data_img11.jpeg)
 
-![Chart datatable at Design](Chart-Data_images/chart-datatable-design.png){height:"350", width="350"}
+7. Return to the **Data Source Configuration Wizard** and click **Next**.
+   
+![Chart Data](Chart-Data_images/Chart-Data_img12.jpeg)
 
-N> The Chart Wizard is available only in **.NET Framework** projects and is not supported in **.NET Core** WinForms applications.
+8. Select the required table and columns from the available tables and views, and then click **Finish**.
 
-## Binding the table data with chartseries
+![Chart Data](Chart-Data_images/Chart-Data_img13.jpeg)
+   
+9. Return to the **Chart Wizard**, and then select the database from the **Data Source** list, as shown in the following image.
 
-After creating the DataTable, connect it to the BindingSource and select the data source in the Chart Wizard.
+![Chart Data](Chart-Data_images/Chart-Data_img14.png)
+   
+10. The selected table is displayed and is ready to be mapped to the chart series.
 
-**Step-1:** Right-click `bindingSource1` in the component tray and select **Properties**.
+![Chart Data](Chart-Data_images/Chart-Data_img15.png)
 
-**Step-2:** In the **Properties** window, open the **DataSource** property, expand **Form1 List Instances**, and select `dataSet1`.
+## Binding the table data with chart series
 
-**Step-3:** Open the **DataMember** property and select `DataTable1`. The BindingSource now exposes the `Month` and `Sales` fields to the Chart Wizard.
-![Map dataset to bindingsource](Chart-Data_images/chart-bindingsource-dataset.png){height:"350", width="350"}
+1. In the Chart Wizard, click the **Series Data** option. Then, select the series from the **Series Data** box to configure the data binding for that series.
 
-**Step-4:** Select `chartControl1`, click the **Smart Tag (►)**, and choose **Chart Wizard**.
+![Chart Data](Chart-Data_images/Chart-Data_img16.png)
 
-**Step-5:** In the Chart Wizard, select **Series**, and then open the **Data Source** tab.
+2.To map database columns to the X and Y values of the selected series, use the **X Value** and **Y Value** value boxes, as shown in the following screenshots.
 
-**Step-6:** Select `bindingSource1` from the **Data Source** list. The data grid displays the `Month` and `Sales` fields exposed by the BindingSource.
+![Chart Data](Chart-Data_images/Chart-Data_img17.png)
 
-N> If the form does not contain a BindingSource, only the **[None]** and **[New BindingSource...]** options are displayed in the Chart Wizard's Data Source list.
+![Chart Data](Chart-Data_images/Chart-Data_img18.png)
 
-![Chart data source](Chart-Data_images/chart-data-source.png){height:"350", width="350"}
+3. Click **Finish** to apply the data-binding settings to the chart.
+
+The following image illustrates a chart bound to custom data.
+
+![Chart Data](Chart-Data_images/Chart-Data_img19.jpeg)
 
 ## Binding chart with a binding source
 
@@ -432,44 +448,42 @@ You can bind the Chart with a BindingSource in either designer or code behind.
 
 ### Bind chart with a binding source in designer
 
-After selecting the BindingSource as the chart data source, map its fields to the required chart series.
+Follow the steps to bind the Chart with a BindingSource by using the Chart Wizard during design time.
 
-**Step-1:** In the Chart Wizard, open the **Series Data** tab.
+**Step-1:** Open the **Chart Wizard**  in designer. Chart wizard can be opened either by right-clicking the [ChartControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html) and choosing the Chart Wizard option in context menu or by clicking **Chart Wizard** option in smart tag of the Chart control. Chart wizard appears as follows.
 
-**Step-2:** Select the required series, such as `Default0`.
+![Chart Data](Chart-Data_images/Chart-Data_img20.png)
 
-**Step-3:** Select `Month` from the **X Value** list and `Sales` from the **Y Value** list.
+![Chart Data](Chart-Data_images/Chart-Data_img21.png)
 
-**Step-4:** Select the required chart type, such as Line or Column. You can also modify the series name in this tab.
+**Step-2:** In the **Chart Wizard**, click the **Series** button and open the **Data Source** tab.
+![Chart Data](Chart-Data_images/Chart-Data_img22.png)
 
-![Map chart series data](Chart-Data_images/chart-series-data.png){height:"350", width="350"}
+**Step-3:** The combo box displays all the available binding sources in the Form. Choose the binding source for Chart from the binding sources available in the combo box.
 
-***Step-5:** To add data points through the Chart Wizard, open the **Add points to series** tab under **Series**.
+N> If the form does not contain a `BindingSource`, only the **[None]** and **[New BindingSource...]** options are available in the list.
 
-**Step-6:** Select `Default0` from the **Add Points** list, and then click **Edit points** to open the ChartPoint Collection Editor.
+![Chart Data](Chart-Data_images/Chart-Data_img24.png)
 
-**Step-7:** In the ChartPoint Collection Editor, click **Add** and select the newly added point from the **Members** list.
+Here, MyBindingSource is a binding source present in the form.
 
-**Step-8:** Specify the required values:
+![Chart Data](Chart-Data_images/Chart-Data_img25.png)
 
-- Set **X** to the required X value.
-- Set **YValues** to the required Y value.
+**Step-4:**
 
-**Step-9:** Repeat these steps to add the remaining data points, and then click **OK** to close the editor.
+Click **Series Data** tab to map the binding source fields with X and Y values of the Chart. Select a series in the combo box and other fields in this tab are enabled.
 
-**Step-10:** Return to the Chart Wizard, click **Apply**, and then click **Finish**.
+![Chart Data](Chart-Data_images/Chart-Data_img26.png)
 
-![Map chart data points](Chart-Data_images/chart-data-point.png){height:"350", width="350"}
+**Step-5:**
 
-The following image illustrates the pie chart configured in the Chart Wizard at design time.
+In the X Value combo box, choose the field that should be bound with the X value of series. Similarly, in Y Value combo box, choose the field that should be bound with the Y value of the series and click **Finish** button. 
 
-![Pie chart at design time](Chart-Data_images/pie-chart-design-time.png){height:"350", width="350"}
+N> You can also change series Type and Name here.
 
-The following image illustrates the pie chart displayed when the application runs.
+![Chart Data](Chart-Data_images/Chart-Data_img28.png)
 
-![Pie chart at run time](Chart-Data_images/pie-chart-run-time.png){height:"350", width="350"}
-
-For more details, refer to [How to bind a data source to a WinForms Chart using the Chart Wizard](https://support.syncfusion.com/kb/article/6867/how-to-bind-a-data-source-to-a-winforms-chart-using-the-chart-wizard).
+Designer displays default chart with random values but you can see the series bounded with binding source after running the application.
 
 ### Bind chart with a binding source in code behind
 
@@ -626,7 +640,3 @@ N> For a complete real-time chart example, refer to the **Chart Recorder** sampl
 
 ## See also
 - [How to create a real-time chart in WF](https://support.syncfusion.com/kb/article/8266/how-to-create-a-real-time-chart-in-wf)
-- [How do I use Essential Chart to visualize data from Essential Grid](https://support.syncfusion.com/kb/article/1189/how-do-i-use-essential-chart-to-visualize-data-from-essential-grid)
-- [How to bind a data source to a WinForms Chart using the chart wizard](https://support.syncfusion.com/kb/article/6867/how-to-bind-a-data-source-to-a-winforms-chart-using-the-chart-wizard)
-- [How to bind a dataset from a database to the WinForms Chart](https://support.syncfusion.com/kb/article/1182/how-to-bind-a-dataset-from-a-database-to-the-winforms-chart)
-- [How to I set Custom Databinding in Chart](https://support.syncfusion.com/kb/article/1180/how-to-i-set-custom-databinding-in-chart)
