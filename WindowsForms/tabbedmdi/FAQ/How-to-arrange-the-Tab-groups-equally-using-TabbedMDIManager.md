@@ -7,9 +7,9 @@ control: TabbedMDIManager
 documentation: ug
 ---
 
-# How to Arrange Tab Groups Equally in TabbedMDI
+# How to Arrange Tab Groups Equally in WinForms TabbedMDI
 
-TabbedMDIManager has [AdjustTabGroupWeightsEqually](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_AdjustTabGroupWeightsEqually) method to arrange the Tab groups equally.
+WinForms TabbedMDI has [AdjustTabGroupWeightsEqually](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_AdjustTabGroupWeightsEqually) method to arrange the Tab groups equally.
 
 Method table
 

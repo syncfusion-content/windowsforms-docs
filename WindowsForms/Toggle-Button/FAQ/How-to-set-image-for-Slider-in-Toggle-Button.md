@@ -7,7 +7,7 @@ control: Toggle Button
 documentation: ug
 ---
 
-# How to Set Image for Slider in ToggleButton
+# How to Set Image for Slider in WinForms Toggle Button
 
 You can set the image through the Image property. Following code example illustrates the same.
 
