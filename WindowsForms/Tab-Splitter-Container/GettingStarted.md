@@ -103,45 +103,44 @@ TabSplitterPage tabSplitterPage2 = new TabSplitterPage();
 
 public Form1()
 {
-InitializeComponent();
-tabSplitterPage1.Text = "XAML";
-tabSplitterPage2.Text = "Design";
+    InitializeComponent();
+    tabSplitterPage1.Text = "XAML";
+    tabSplitterPage2.Text = "Design";
 
-// Set back color.
-tabSplitterPage1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-tabSplitterPage2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+    // Set back color.
+    tabSplitterPage1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+    tabSplitterPage2.BackColor = System.Drawing.SystemColors.ControlLightLight;
 
-//Set size to tabsplittercontainer
-tabSplitterContainer1.Size = new System.Drawing.Size(443, 315);
+    // Set size to TabSplitterContainer.
+    tabSplitterContainer1.Size = new System.Drawing.Size(443, 315);
 
-// Add it to TabSplitterContainer.
-tabSplitterContainer1.PrimaryPages.AddRange(new TabSplitterPage[] { tabSplitterPage1});
-tabSplitterContainer1.SecondaryPages.AddRange(new TabSplitterPage[] { tabSplitterPage2 });
-
+    // Add it to TabSplitterContainer.
+    tabSplitterContainer1.PrimaryPages.AddRange(new TabSplitterPage[] { tabSplitterPage1});
+    tabSplitterContainer1.SecondaryPages.AddRange(new TabSplitterPage[] { tabSplitterPage2 });
 }
 
 {% endhighlight %}
 {% highlight VB %}
 
-' Create an instance of Tab splitter page
+' Create an instance of the Tab splitter page.
 Dim tabSplitterPage1 As New TabSplitterPage()
 Dim tabSplitterPage2 As New TabSplitterPage()
 
 Public Sub New()
-InitializeComponent()
-tabSplitterPage1.Text = "XAML"
-tabSplitterPage2.Text = "Design"
+    InitializeComponent()
+    tabSplitterPage1.Text = "XAML"
+    tabSplitterPage2.Text = "Design"
 
-' Set back color.
-tabSplitterPage1.BackColor = System.Drawing.SystemColors.ControlLightLight
-tabSplitterPage2.BackColor = System.Drawing.SystemColors.ControlLightLight
+    ' Set back color.
+    tabSplitterPage1.BackColor = System.Drawing.SystemColors.ControlLightLight
+    tabSplitterPage2.BackColor = System.Drawing.SystemColors.ControlLightLight
 
-'Set size to tabsplittercontainer
-tabSplitterContainer1.Size = New System.Drawing.Size(443, 315)
+    ' Set size to TabSplitterContainer.
+    tabSplitterContainer1.Size = New System.Drawing.Size(443, 315)
 
-' Adding it to TabSplitterContainer
-tabSplitterContainer1.PrimaryPages.AddRange(New TabSplitterPage() { tabSplitterPage1 })
-tabSplitterContainer1.SecondaryPages.AddRange(New TabSplitterPage() { tabSplitterPage2 })
+    ' Add it to TabSplitterContainer.
+    tabSplitterContainer1.PrimaryPages.AddRange(New TabSplitterPage() { tabSplitterPage1 })
+    tabSplitterContainer1.SecondaryPages.AddRange(New TabSplitterPage() { tabSplitterPage2 })
 End Sub
 
 {% endhighlight %}
@@ -218,7 +217,7 @@ tabSplitterContainer1.Orientation = System.Windows.Forms.Orientation.Vertical
 
 **Vertical**
 
-![TabSplitterContainer horizontal orientation](GettingStarted-images/wf-tabsplitter-vertical-orientation.png)
+![TabSplitterContainer vertical orientation](GettingStarted-images/wf-tabsplitter-vertical-orientation.png)
 
 **Horizontal**
 
@@ -235,7 +234,7 @@ this.tabSplitterContainer1.Swapped = true;
 {% endhighlight  %}
 {% highlight VB %}
 ' Swapping tab groups.
-Me.tabSplitterContainer1. Swapped = True
+Me.tabSplitterContainer1.Swapped = True
 {% endhighlight  %}
 {% endtabs %} 
 
@@ -256,4 +255,4 @@ Me.tabSplitterContainer1.Collapsed = True
 {% endhighlight  %}
 {% endtabs %} 
 
-![TabSplitterContainer supports swaps the tab groups](GettingStarted-images/tabsplitter-collapse-tab-groups.png)
+![TabSplitterContainer supports collapsing the tab groups](GettingStarted-images/tabsplitter-collapse-tab-groups.png)

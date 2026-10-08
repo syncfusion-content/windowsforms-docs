@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Sizing Grip in Windows Forms Splitter | Syncfusion®
 description: Sizing grip settings allow showing or hiding the resize grip in SplitterControl for enhanced layout interaction.
@@ -9,7 +9,7 @@ documentation: ug
 
 # Sizing Grip in Windows Forms Splitter
 
-The Sizing Grip appearance is customized by using ShowSizeGrip property in SplitterControl.
+The Sizing Grip appearance is customized by using the `ShowSizeGrip` property in the SplitterControl.
 
 {% tabs %}
 
@@ -23,7 +23,7 @@ this.splitterControl1.ShowSizeGrip = true;
 
 {% highlight VB %}
 
-Me.splitterControl1.ShowSizeGrip = False
+Me.splitterControl1.ShowSizeGrip = True
 
 {% endhighlight %}
 
