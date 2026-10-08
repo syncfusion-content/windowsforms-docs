@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Element Binding in Windows Forms Radial Menu | Syncfusion®
 description: Element binding supports menu item population, image management, state persistence, ordering, and specialized radial elements.
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Menu items
 
-Radial Menu Items is populated with the business object collection. This section explains how to create a Radial Menu that shows the list of Application commands.
+Radial Menu items are populated with the business object collection. This section explains how to create a Radial Menu that shows the list of application commands.
 
 ### Slice count
 
@@ -23,15 +23,13 @@ Slice Count functionality is used to define the maximum number of menu items (sl
 
 // Allocate space for number of items
 
-this.radialMenu1.WedgeCount = 8; 
+this.radialMenu1.WedgeCount = 8;
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-
-
-‘ Allocate space for number of items
+' Allocate space for number of items
 
 Me.radialMenu1.WedgeCount = 8
 
@@ -59,8 +57,8 @@ this.radialMenu1.MenuVisibility = true;
 
 {% highlight VB %}
 
-‘Display Menus initially.
-Me.RadialMenu1.MenuVisibility = True
+' Display Menus initially.
+Me.radialMenu1.MenuVisibility = True
 
 {% endhighlight %}
 
@@ -84,7 +82,7 @@ this.radialMenu1.PersistPreviousState = true;
 
 {% highlight VB %}
 
-‘Retain the old state of the Radial Menu while loading.
+' Retain the old state of the Radial Menu while loading.
 
 Me.radialMenu1.PersistPreviousState = True
 
@@ -110,7 +108,7 @@ Following code example illustrates the Custom Images.
 
 {% highlight VB %}
 
-‘Custom images configured to Radial Menu.
+' Custom images configured to Radial Menu.
 
 Me.radialMenu1.ImageList = Me.imageListAdv1
 
@@ -126,7 +124,7 @@ Menu items in Radial Menu are arranged based on their respective indices. You ca
 
 {% highlight C# %}
 
-// Menu Items will be arranged in Index based.
+// Menu items will be arranged in Index based order
 
 this.radialMenu1.UseIndexBasedOrder= true; 
 
@@ -135,9 +133,9 @@ this.radialMenu1.UseIndexBasedOrder= true;
 {% highlight VB %}
 
 
-‘Menu Items will be arranged in Index based.
+' Menu items will be arranged in Index based order
 
-Me.radialMenu1.UseIndexBasedOrder= true
+Me.radialMenu1.UseIndexBasedOrder= True
 
 {% endhighlight %}
 
@@ -180,20 +178,20 @@ this.radialColorPalette1.Text = "Color";
 
 {% highlight VB %}
 
-‘ Creates Radial Color Palette
+' Creates Radial Color Palette
 
 Dim radialColorPalette1 As Syncfusion.Windows.Forms.Tools.RadialColorPalette
 
 Me.radialColorPalette1 = New Syncfusion.Windows.Forms.Tools.RadialColorPalette
 
-‘Image index
+' Image index
 
 Me.radialColorPalette1.ImageIndex = 0
 
 
 Me.radialColorPalette1.Text = "Color"
 
-‘Image collection configured to Radial Menu.
+' Image collection configured to Radial Menu.
 
 Me.radialMenu1.ImageList = Me.imageListAdv1
 
@@ -236,7 +234,7 @@ this.radialFontListBox1.Text = "Font";
 
 {% highlight VB %}
 
-‘ Creates Radial Font List Box
+' Creates Radial Font List Box
 
 Dim radialFontListBox1 As Syncfusion.Windows.Forms.Tools.RadialFontListBox
 
@@ -244,7 +242,7 @@ Me.radialFontListBox1 = New Syncfusion.Windows.Forms.Tools.RadialFontListBox
 
 
 
-‘Image index
+' Image index
 
 
 
@@ -254,7 +252,7 @@ Me.radialFontListBox1.ImageIndex = 3
 
 Me.radialFontListBox1.Text = "Font"
 
-‘Image collection configured to Radial Menu.
+' Image collection configured to Radial Menu.
 
 Me.radialMenu1.ImageList = Me.imageListAdv1
 
@@ -277,13 +275,13 @@ Radial Menu Slider is configured in Radial Menu with minimum and maximum value.
 
 {% highlight C# %}
 
-//Creates Radial Menu Slider
+// Creates Radial Menu Slider
 
 Syncfusion.Windows.Forms.Tools.RadialMenuSlider radialMenuSlider1;
 
 this.radialMenuSlider1 = new Syncfusion.Windows.Forms.Tools.RadialMenuSlider();
 
-//Image index
+// Image index
 
 this.radialMenuSlider1.ImageIndex = 5;
 
@@ -303,7 +301,7 @@ this.radialMenuSlider1.Text = "Size";
 
 {% highlight VB %}
 
-‘Creates Radial Menu Slider
+' Creates Radial Menu Slider
 
 Dim radialMenuSlider1 As Syncfusion.Windows.Forms.Tools.RadialMenuSlider
 
@@ -311,7 +309,7 @@ Me.radialMenuSlider1 = New Syncfusion.Windows.Forms.Tools.RadialMenuSlider
 
 
 
-‘Image index
+' Image index
 
 
 
@@ -325,7 +323,7 @@ Me.radialMenuSlider1.MinimumValue = 8
 
 Me.radialMenuSlider1.Text = "Size"
 
-‘Image Collection configured to Radial Menu.
+' Image collection configured to Radial Menu.
 
 Me.radialMenu1.ImageList = Me.imageListAdv1
 

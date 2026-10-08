@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Interactive Features in Windows Forms Range Slider | Syncfusion®
 description: Interactive features support range selection, tick customization, orientation, channel styling, thumb settings, and event handling.
@@ -30,7 +30,7 @@ This section discusses the concepts of Range Slider in the below topics:
 
 ## Setting channel color
 
-You can set the required color for the channel over which the slider moves using [ChannelColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html#Syncfusion_Windows_Forms_Tools_RangeSlider_ChannelColor) property. It contains the highlight when a range is selected. In the following example, the channel color is set to Gray.
+You can set the required color for the channel over which the slider moves using the [ChannelColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html#Syncfusion_Windows_Forms_Tools_RangeSlider_ChannelColor) property. It contains the highlight when a range is selected. In the following example, the channel color is set to DarkGray.
 
 {% tabs %}
 
@@ -43,8 +43,6 @@ rangeSlider.ChannelColor = Color.DarkGray;
 {% endhighlight %}
 
 {% endtabs %}
-
-Output
 
 ![channel color](Interactive-Features_images/Interactive-Features_img1.jpeg)
 
@@ -112,7 +110,7 @@ You can set the required height of the channel over which the slider moves using
 
 ## Setting range color
 
-You can set the required color for a range in the slider using the [RangeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html#Syncfusion_Windows_Forms_Tools_RangeSlider_RangeColor) property. The selected range is highlighted with color chosen. In the following example, the range color is set to Green.
+You can set the required color for a range in the slider using the [RangeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html#Syncfusion_Windows_Forms_Tools_RangeSlider_RangeColor) property. The selected range is highlighted with color chosen. In the following example, the range color is set to DarkGreen.
 
 {% tabs %}
 
@@ -143,7 +141,7 @@ The position of the thumbs on the RangeSlider can be reversed by setting the [Ri
 
    {% highlight C# %}
 
-		rangeSlider.RightToLeft=RightToLeft.No;
+		rangeSlider.RightToLeft = RightToLeft.No;
 
    {% endhighlight %}
 
@@ -169,7 +167,7 @@ The position of the thumbs on the RangeSlider can be reversed by setting the [Ri
 
 
 
-		rangeSlider.RightToLeft=RightToLeft.Yes;
+		rangeSlider.RightToLeft = RightToLeft.Yes;
 
    {% endhighlight %}
 
@@ -215,7 +213,7 @@ You can set the required size for the slider using the [SliderSize](https://help
 
 
 
-2. When the slider is set to 11,18.
+2. When the slider is set to 11, 18.
 
    {% capture codesnippet6 %}
    {% tabs %}
@@ -243,7 +241,7 @@ You can set the required size for the slider using the [SliderSize](https://help
 
 ## Setting thumb color
 
-You can set the required color for the both the thumbs on the Channel using the [ThumbColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html#Syncfusion_Windows_Forms_Tools_RangeSlider_ThumbColor) property.
+You can set the required color for both the thumbs on the channel using the [ThumbColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html#Syncfusion_Windows_Forms_Tools_RangeSlider_ThumbColor) property.
 
 In the following example, the thumb is set to Teal.
 
@@ -256,8 +254,6 @@ In the following example, the thumb is set to Teal.
 {% endhighlight %}
 
 {% endtabs %}
-
-Background Settings
 
 ![thumb color](Interactive-Features_images/Interactive-Features_img17.jpeg)
 
@@ -278,12 +274,12 @@ Ticks are indicators placed at regular intervals on the slider for a range defin
 
    {% highlight C# %}
 
-		rangeSlider.ShowTicks = True;
+		rangeSlider.ShowTicks = true;
 
    {% endhighlight %}
    
    {% endtabs %}
-    {% endcapture %}
+   {% endcapture %}
    {{ codesnippet7 | OrderList_Indent_Level_1 }}
 
 
@@ -306,7 +302,7 @@ Ticks are indicators placed at regular intervals on the slider for a range defin
 
 
 
-		rangeSlider.ShowTicks = False;
+		rangeSlider.ShowTicks = false;
 
    {% endhighlight %}
 
@@ -325,7 +321,7 @@ Ticks are indicators placed at regular intervals on the slider for a range defin
 
 ## Setting tick frequency
 
-The ticks can be placed at required intervals by setting the [TickFrequency](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html#Syncfusion_Windows_Forms_Tools_RangeSlider_TickFrequency) property to required number. For example, if the range is set from 0-100, where minimum is set to 0 and maximum is set to 100, and the [TickFrequency](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html#Syncfusion_Windows_Forms_Tools_RangeSlider_TickFrequency) is set to 20, then Ticks will be placed at positions 0,20,40,..,100.
+The ticks can be placed at required intervals by setting the [TickFrequency](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html#Syncfusion_Windows_Forms_Tools_RangeSlider_TickFrequency) property to required number. For example, if the range is set from 0 to 100, where minimum is set to 0 and maximum is set to 100, and the [TickFrequency](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html#Syncfusion_Windows_Forms_Tools_RangeSlider_TickFrequency) is set to 20, then ticks will be placed at positions 0, 20, 40, ..., 100.
 
 {% tabs %}
 
@@ -356,7 +352,7 @@ The layout of the range slider can be defined using the [Orientation](https://he
 
    {% highlight C# %}
 
-		rangeSlider.Orientation=Orientation.Horizontal;
+		rangeSlider.Orientation = Orientation.Horizontal;
 
    {% endhighlight %}
 
@@ -375,7 +371,7 @@ The layout of the range slider can be defined using the [Orientation](https://he
 
 
 
-2. When Orientation is set to vertical.
+2. When Orientation is set to Vertical.
 
    {% capture codesnippet10 %}
    {% tabs %}
@@ -384,7 +380,7 @@ The layout of the range slider can be defined using the [Orientation](https://he
 
 
 
-		rangeSlider.Orientation=Orientation.Vertical;
+		rangeSlider.Orientation = Orientation.Vertical;
 
    {% endhighlight %}
 
@@ -399,12 +395,13 @@ The layout of the range slider can be defined using the [Orientation](https://he
 ![Vertical orientation](Interactive-Features_images/Interactive-Features_img28.jpeg)
 
 
+## Displaying labels
 
 ## Setting SliderMin and SliderMax
 
-This position of the right and left thumb can be set using the [SliderMin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html#Syncfusion_Windows_Forms_Tools_RangeSlider_SliderMin) and [SliderMax](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html#Syncfusion_Windows_Forms_Tools_RangeSlider_SliderMax) properties.
+The position of the left and right thumbs can be set using the [SliderMin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html#Syncfusion_Windows_Forms_Tools_RangeSlider_SliderMin) and [SliderMax](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html#Syncfusion_Windows_Forms_Tools_RangeSlider_SliderMax) properties. The value of `SliderMin` should always be less than or equal to the value of `SliderMax`, and both values should fall within the bounds set by the [Minimum](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html#Syncfusion_Windows_Forms_Tools_RangeSlider_Minimum) and [Maximum](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html#Syncfusion_Windows_Forms_Tools_RangeSlider_Maximum) properties.
 
-In the following example, the position of the right and left thumbs is set to 7,2.
+In the following example, the position of the left thumb is set to 2 and the right thumb is set to 7.
 
 {% tabs %}
 
@@ -433,7 +430,7 @@ rangeSlider.SliderMin = 2;
 
 These properties specify the [Minimum](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html#Syncfusion_Windows_Forms_Tools_RangeSlider_Minimum) and [Maximum](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html#Syncfusion_Windows_Forms_Tools_RangeSlider_Maximum) bounds of the RangeSlider control till which the channel extends.
 
-In the following example the maximum bound is set to 10.
+In the following example, the minimum bound is set to 0 and the maximum bound is set to 20.
 
 {% tabs %}
 
