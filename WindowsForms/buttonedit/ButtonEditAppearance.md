@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: ButtonEditAppearance in Windows Forms ButtonEdit control | Syncfusion®
 description: Learn about ButtonEditAppearance support in Syncfusion® Windows Forms ButtonEdit control and more details.

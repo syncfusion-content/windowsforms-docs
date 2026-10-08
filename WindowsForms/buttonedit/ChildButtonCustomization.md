@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: ChildButtonCustomization in Windows Forms Tools control | Syncfusion®
 description: Learn about ChildButtonCustomization support in Syncfusion® Windows Forms ButtonEdit control and more details.

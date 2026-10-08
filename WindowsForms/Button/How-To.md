@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: How To | WindowsForms | Syncfusion®
 description: Learn here about How To questions of Syncfusion® Essential Studio® Windows Forms SfButton control, its elements and more.

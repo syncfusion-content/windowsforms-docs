@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: ButtonEditEvents in Windows Forms ButtonEdit control | Syncfusion®
 description: Learn about ButtonEditEvents support in Syncfusion® Windows Forms ButtonEdit control and more details.

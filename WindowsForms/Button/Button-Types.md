@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Button Types in Windows Forms Button control | Syncfusion®
 description: Learn about Button Types support in Syncfusion® Windows Forms Button (SfButton) control and more details.

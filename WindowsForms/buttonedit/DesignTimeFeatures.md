@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: DesignTimeFeatures in Windows Forms ButtonEdit control | Syncfusion®
 description: Learn about DesignTimeFeatures support in Syncfusion® Windows Forms ButtonEdit control and more details.
