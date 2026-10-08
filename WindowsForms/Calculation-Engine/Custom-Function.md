@@ -10,7 +10,7 @@ documentation: ug
 # Custom Function in Windows Forms Calculation Engine (Calculate)
 
 Essential Calculate holds many functions from statistics, finance and mathematics, along with other general purpose functions. There are
-more than 400+ entries in the library. Also, it is easy to add the own calculations with custom functions.
+more than 400 entries in the library. You can also add your own calculations with custom functions.
 
 ## LibraryFunction
 
@@ -18,7 +18,7 @@ A property which holds the collection of library functions in Essential Calculat
 
 ## Add Custom Function
 
-Adding a custom function to the Formula Library in Essential Calculate is a two step process. The first step is to write a method that actually does the calculation work for your
+Adding a custom function to the Formula Library in Essential Calculate is a two-step process. The first step is to write a method that actually does the calculation work for your
 custom function. The second step is to register this method with the [CalcEngine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html). So, when the `CalcEngine` object is a member of an application, the additional
 function methods can be added to the application and then these methods should be registered with the `CalcEngine` object after the object is created.
 
@@ -52,8 +52,8 @@ public string CustomMin(string args)
 
 ### Register the method with CalcEngine
 
-The second step for adding the own formula is to register the custom method with the `CalcEngine` object. This is done with the help of [AddFunction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html#Syncfusion_Calculate_CalcEngine_AddFunction_System_String_Syncfusion_Calculate_CalcEngine_LibraryFunction_) method of `CalcEngine` which accepts the string that is used when you refer the function, and the second argument is a delegate for method name. The only requirement here is that the function name should 
-start with an alpha character and should only contain alpha-numeric characters. Additionally, the string cannot be the name of any existing library function.
+The second step for adding your custom formula is to register the custom method with the `CalcEngine` object. This is done with the help of the [AddFunction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html#Syncfusion_Calculate_CalcEngine_AddFunction_System_String_Syncfusion_Calculate_CalcEngine_LibraryFunction_) method of `CalcEngine`. The first argument is the name used to refer to the function, and the second argument is a `LibraryFunction` delegate wrapping the method. The only requirement here is that the function name should 
+start with an alphabetic character and should only contain alpha-numeric characters. Additionally, the string cannot be the name of any existing library function.
 
 {% tabs %}
 {% highlight c# %}
@@ -71,7 +71,7 @@ engine.AddFunction("CheckMin", new LibraryFunction(CustomMin));
 
 ### Compute the Custom Function
 
-To compute the custom formula, you need to pass the registered custom formula in `PareAndComputeFormula` method of `CalcEngine`.
+To compute the custom formula, pass the registered custom function name to the `ParseAndComputeFormula` method of `CalcEngine`.
 
 {% tabs %}
 {% highlight c# %}
@@ -93,7 +93,7 @@ var r = engine.ParseAndComputeFormula("=CustomMin(A1,B1,C1)");
 
 ## Remove Custom Function
 
-To remove a single function from the Function Library, use [RemoveFunction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html#Syncfusion_Calculate_CalcEngine_RemoveFunction_System_String_) method of `CalcEngine`, passing a formula name as the string that references this function and to remove all functions, you can clear the hash table that holds them by using the `Clear` method of `LibraryFunction`.
+To remove a single function from the Function Library, use the [RemoveFunction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html#Syncfusion_Calculate_CalcEngine_RemoveFunction_System_String_) method of `CalcEngine`, passing the function's registered name as the string argument. To remove all functions, clear the hash table that holds them by using the `Clear` method of the `LibraryFunctions` collection.
 
 {% tabs %}
 {% highlight c# %}
@@ -124,6 +124,6 @@ engine.AddFunction("Minimum", new LibraryFunction(CustomMin));
 {% endtabs %}
 
 
-T> Removing unused functions from the Function Library, **reduces the memory usage and speeds up parsing** as well. Also, if you are only 
-using a selected few Library functions, you may want to remove the unused ones. This can be done using the `Clear` method of `LibraryFunction`.
-and after clearing all functions, you can add few functions that will be used often by using `AddFunction` method of `CalcEngine`.
+T> Removing unused functions from the Function Library also **reduces memory usage and speeds up parsing**. If you are only 
+using a selected few library functions, you may want to remove the unused ones. This can be done using the `Clear` method of the `LibraryFunctions` collection.
+After clearing all functions, you can add a few functions that will be used often by using the `AddFunction` method of `CalcEngine`.

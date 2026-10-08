@@ -102,7 +102,7 @@ _DB(cost, salvage, life, period, [month])_
 
 ## DDB
 
-Calculates the depreciation of an asset for a specified period, using the fixed-declining balance method.
+Calculates the depreciation of an asset for a specified period, using the double-declining balance method.
 
 **Syntax:**
 
@@ -595,7 +595,7 @@ _ACCRINTM(issue, settlement, rate, par, [basis])_
 ## IPMT
 
 
-The `IMPT` calculates the interest payment, during a specific period of a loan or investment that is paid in constant periodic payments, with a constant interest rate.
+The `IPMT` calculates the interest payment, during a specific period of a loan or investment that is paid in constant periodic payments, with a constant interest rate.
 
 **Syntax:**
 

@@ -55,7 +55,7 @@ _AND(logical1, logical2, ...)_
 
 
 
-The `False` function returns the logical value for the `false`.
+The `FALSE` function returns the logical value `FALSE`.
 
 
 
@@ -63,7 +63,7 @@ The `False` function returns the logical value for the `false`.
 
 
 
-_FALSE(stringvalue)_
+_FALSE()_
 
 
 
@@ -71,7 +71,7 @@ _FALSE(stringvalue)_
 
 
 
-* `stringvalue`: To provide an empty string.
+* This function takes no arguments.
 
 
 
@@ -263,7 +263,7 @@ _NOT(logical)_
 
 
 
-The `True` function returns the logical value for `True`.
+The `TRUE` function returns the logical value `TRUE`.
 
 
 
@@ -271,7 +271,7 @@ The `True` function returns the logical value for `True`.
 
 
 
-_TRUE(stringvalue)_
+_TRUE()_
 
 
 
@@ -279,7 +279,7 @@ _TRUE(stringvalue)_
 
 
 
-* `stringvalue`: To provide an empty string.
+* This function takes no arguments.
 
 
 
@@ -287,7 +287,7 @@ _TRUE(stringvalue)_
 
 
 
-Returns `True` when any argument is `True` returns `False` when all arguments are `False`.
+Returns `TRUE` when any argument is `TRUE`, and returns `FALSE` when all arguments are `FALSE`.
 
 
 
@@ -335,11 +335,11 @@ _XOR (logical_value1, logical_value2…)_
 
 
 
-* `Logical_value1` (required): Can be either `true` or `false`, and can be logical values, arrays, or references.
+* `logical_value1` (required): Can be either `TRUE` or `FALSE`, and can be logical values, arrays, or references.
 
 
 
-* `Logical_value1, logical_value2…` (required): When the given arguments do not have the logical values, `XOR` returns the `#VALUE!` error value.
+* `logical_value2…` (optional): Additional values that can be `TRUE` or `FALSE`. When the given arguments do not have logical values, `XOR` returns the `#VALUE!` error value.
 
 
 
@@ -347,7 +347,7 @@ _XOR (logical_value1, logical_value2…)_
 
 
 
-The `IFS` function runs multiple test, and returns a value that corresponds to the first TRUE condition. `IFS` can take the place of multiple nested IF statements, and is allows shorter, easier to read formulas.It used to test multiple conditions and return first true result.
+The `IFS` function runs multiple tests and returns a value that corresponds to the first `TRUE` condition. `IFS` can take the place of multiple nested `IF` statements, and allows shorter, easier-to-read formulas. It is used to test multiple conditions and return the first true result.
 
 
 
@@ -382,7 +382,7 @@ _IFS(logical_test1, value_if_true1, [logical_test2, value_if_true2], [logical_te
 
 
 
-* To specify a default result, enter `TRUE` for your final logical_test argument. If none of the other conditions are met `TRUE`, the corresponding value will be returned. 
+* To specify a default result, enter `TRUE` for your final `logical_test` argument. If none of the other conditions evaluates to `TRUE`, the corresponding value will be returned. 
 
 
 
@@ -394,7 +394,7 @@ _IFS(logical_test1, value_if_true1, [logical_test2, value_if_true2], [logical_te
 
 
 
-*  If no `TRUE` value found, this function returns `#N/A` error message.
+* If no `TRUE` condition is found, this function returns the `#N/A` error value.
 
 
 
@@ -402,7 +402,7 @@ _IFS(logical_test1, value_if_true1, [logical_test2, value_if_true2], [logical_te
 
 
 
-The `SWITCH` function compares one value against a list of values, and returns the result corresponding to the first match.It return default value when there is no match found.
+The `SWITCH` function compares one value against a list of values, and returns the result corresponding to the first match. It returns a default value when no match is found.
 
 
 

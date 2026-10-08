@@ -9,14 +9,14 @@ documentation: ug
 
 # Working with XlsIO in Windows Forms Calculation Engine
 
-Essential XIsIO provides an Excel-like Automation-type support without having Microsoft Excel installed on the host system.This means that you can use this library 
+Essential XlsIO provides an Excel-like Automation-type support without having Microsoft Excel installed on the host system. This means that you can use this library 
 to read and write an XLS file and hold its contents in memory. But you cannot perform actual computations on the contents of the XLS file. Hence Essential Calculate
-is integrated with Essential XlsIO, to calculate formulas entered at runtime without any additional references or packages.
+is integrated with Essential XlsIO to calculate formulas entered at runtime without any additional references or packages.
 
 ## Open a Workbook using XlsIO
 
-To open a workbook using XIsIO, instantiate the [ExcelEngine](https://help.syncfusion.com/cr/file-formats/Syncfusion.XlsIO.ExcelEngine.html) to initialize the application object for creating or manipulating Excel documents. To open an existing workbook,
-use the [Open](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.IWorkbooks.html#Syncfusion_XlsIO_IWorkbooks_Open_System_IO_Stream_) methods of [IWorkbook](http://help.syncfusion.com/cr/file-formats/Syncfusion.XlsIO.IWorkbook.html) interface.
+To open a workbook using XlsIO, instantiate the [ExcelEngine](https://help.syncfusion.com/cr/file-formats/Syncfusion.XlsIO.ExcelEngine.html) to initialize the application object for creating or manipulating Excel documents. To open an existing workbook,
+use the [Open](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.IWorkbooks.html#Syncfusion_XlsIO_IWorkbooks_Open_System_IO_Stream_) methods of [IWorkbook](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.IWorkbook.html) interface.
 
 {% tabs %}
 {% highlight c# %}
@@ -34,8 +34,8 @@ IWorkbook workbook = excelEngine.Excel.Workbooks.Open(@"..\..\Data\Sample.xlsx")
 
 ## Enable and Disable Calculations in XlsIO
 
-To perform calculation in an Excel workbook, it is recommended to invoke [EnableSheetCalculations](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.IWorksheet.html#Syncfusion_XlsIO_IWorksheet_EnableSheetCalculations) method of [IWorksheet](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.IWorksheet.html). Enabling this method will initialize
-[CalcEngine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.IWorksheet.html#Syncfusion_XlsIO_IWorksheet_CalcEngine) objects and retrieves calculated values of formulas in a worksheet.
+To perform calculations in an Excel workbook, it is recommended to invoke [EnableSheetCalculations](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.IWorksheet.html#Syncfusion_XlsIO_IWorksheet_EnableSheetCalculations) method of [IWorksheet](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.IWorksheet.html). Enabling this method will initialize
+[CalcEngine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.IWorksheet.html#Syncfusion_XlsIO_IWorksheet_CalcEngine) objects and retrieve calculated values of formulas in a worksheet.
 
 On completion of worksheet calculation, it is also recommended to invoke [DisableSheetCalculations](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.IWorksheet.html#Syncfusion_XlsIO_IWorksheet_DisableSheetCalculations) method of `IWorksheet`. 
 This will dispose all the `CalcEngine` objects.
@@ -79,11 +79,11 @@ sheet.DisableSheetCalculations();
 
 ## Set and Compute the values at runtime in the Worksheet
 
-At runtime, user can set the values in the particular `IWorksheet` by indexing the worksheet with the sheet name or id
-and then use the appropriate row and column indexes. Invoking [UpdateCalcID](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html#Syncfusion_Calculate_CalcEngine_UpdateCalcID) and [PullUpdatedValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html#Syncfusion_Calculate_CalcEngine_PullUpdatedValue_System_Int32_System_Int32_System_Int32_) method of `CalcEngine` 
+At runtime, the user can set the values in a particular `IWorksheet` by indexing the worksheet with the sheet name or id
+and then use the appropriate row and column indexes. Invoking [UpdateCalcID](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html#Syncfusion_Calculate_CalcEngine_UpdateCalcID) and [PullUpdatedValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html#Syncfusion_Calculate_CalcEngine_PullUpdatedValue_System_Int32_System_Int32_System_Int32_) methods of `CalcEngine` 
 guarantees the current/updated values in the workbook.
 
-[CalculatingSuspended](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html#Syncfusion_Calculate_CalcEngine_CalculatingSuspended) method of `CalcEngine`  is to suspend calculations while a series of changes are made to dependent cells 
+[CalculatingSuspended](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html#Syncfusion_Calculate_CalcEngine_CalculatingSuspended) property of `CalcEngine` is used to suspend calculations while a series of changes are made to dependent cells 
 either by the user or programmatically. When the changes are complete, set this property to False.
 
 {% tabs %}
@@ -128,7 +128,7 @@ sheet.CalcEngine.CalculatingSuspended = false;
 
 ## To compute particular cell in the worksheet
 
-To compute particular cell in the worksheet, use [ParseAndComputeFormula](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html#Syncfusion_Calculate_CalcEngine_ParseAndComputeFormula_System_String_) method of `CalcEngine`. For more details regarding 
+To compute a particular cell in the worksheet, use the [ParseAndComputeFormula](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html#Syncfusion_Calculate_CalcEngine_ParseAndComputeFormula_System_String_) method of `CalcEngine`. For more details regarding 
 `ParseAndComputeFormula` method, refer [here](https://help.syncfusion.com/windowsforms/calculation-engine/parse-and-compute#parse-formula).
 
 {% tabs %}
@@ -153,27 +153,27 @@ sheet.CalcEngine.ParseAndComputeFormula(sheet["C5"].Formula);
 
 ## Ambiguity Issue 
 
-If the Calculate.Base and XlsIO.Base references are added in the same application, it will throw conflict errors. Since Calculate.Base is already integrated with XlsIO. Hence, if XlsIO.Base reference has been included in the application, 
-there is no need to add Calculate.Base reference explicitly. The calculate references get reflected in the XlsIO.Base permanently.  
+If the Calculate.Base and XlsIO.Base references are added in the same application, it will throw conflict errors. Since Calculate.Base is already integrated with XlsIO, if XlsIO.Base reference has been included in the application, 
+there is no need to add the Calculate.Base reference explicitly. The Calculate references get reflected in the XlsIO.Base permanently.  
 
-But if you want both the references in your project, you can use `extern alias` to differentiate the namespaces.
+But if you want both references in your project, you can use `extern alias` to differentiate the namespaces.
 For your reference, please find the MSDN [link](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/extern-alias) regarding
 `extern alias`.
 
 ## Table Formulas
 
-A table is a collection of data about a specific topic that is stored in rows and columns. These tables are defined with a name and `CalcEngine` supports these table format.
+A table is a collection of data about a specific topic that is stored in rows and columns. These tables are defined with a name, and `CalcEngine` supports these table formats.
 
-For Example: =SUM(Table1[[#All],[Column1]:[Column2]])
+For example, `=SUM(Table1[[#All],[Column1]:[Column2]])`.
 
-A table needs to be defined with the following protocols,
+A table needs to be defined with the following protocols:
 
-* All table, column, and special item specifiers must be enclosed in matching brackets [ ]
-* Expression cannot be used with these brackets. Column headers should be a text strings.
+* All table, column, and special item specifiers must be enclosed in matching brackets [ ].
+* Expressions cannot be used within these brackets. Column headers should be text strings.
 * The special characters such as comma ,, colon :, period ., left bracket [ , right bracket ], pound sign #, single quotation mark ', double quotation mark ", 
-  left brace {, right brace }, dollar sign $, caret ^, ampersand &, asterisk *, plus sign +, equal sign =, minus sign -, greater than symbol >,  less than symbol <, and division sign / can be used.
+  left brace {, right brace }, dollar sign $, caret ^, ampersand &, asterisk *, plus sign +, equal sign =, minus sign -, greater than symbol >, less than symbol <, and division sign / can be used.
 
-These table are converted into cell ranges and then it will be evaluated. The data from one row can also be taken with this table structure.
+These tables are converted into cell ranges and then evaluated. The data from one row can also be retrieved with this table structure.
 
 {% tabs %}
 {% highlight c# %}

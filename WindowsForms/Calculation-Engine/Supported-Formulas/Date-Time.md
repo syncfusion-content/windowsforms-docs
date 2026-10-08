@@ -97,7 +97,7 @@ The difference between the days of start_date and end_date. The years of the dat
 
 * If the Start_date is greater than the End_date, the result will be #NUM!.
 
-* Dates are stored as sequential serial numbers so they can be used in calculations. By default, December 31, 1899 is serial number 1, and January 1, 2008 is serial number 39448 because it is 39,448 days after January 1, 1900.
+* Dates are stored as sequential serial numbers so they can be used in calculations. By default, January 1, 1900 is serial number 1, and January 1, 2008 is serial number 39448 because it is 39,448 days after January 1, 1900.
 
 * The DATEDIF function is useful in formulas where you need to calculate an age.
 
@@ -310,7 +310,7 @@ _HOUR(serial_number)_
 
 **Parameters:**
 
-* `serial_number`: The time that contains the hour you want to find. Times may be entered as text strings within quotation marks for example, "6:00 PM", as decimal numbers for example, 0.75, that represents 6:00 PM, or as results of other formulas or functions for example, TimeValue"6:00 PM".
+* `serial_number`: The time that contains the hour you want to find. Times may be entered as text strings within quotation marks for example, "6:00 PM", as decimal numbers for example, 0.75, that represents 6:00 PM, or as results of other formulas or functions for example, TIMEVALUE("6:00 PM").
 
 
 
@@ -437,7 +437,7 @@ _NETWORKDAYS( start_date, end_date, [holidays] )_
 **Remarks:**
 
 
-• If any argument is not a valid date, NETWORKDAYS returns the `#VALUE!` error value.
+* If any argument is not a valid date, NETWORKDAYS returns the `#VALUE!` error value.
 
 
 
@@ -477,7 +477,7 @@ _NETWORKDAYS.INTL(startDate, endDate)_
 
 
 
-The `Now` function returns the serial number of the current date and time. 
+The `NOW` function returns the serial number of the current date and time. 
 
 
 
@@ -505,7 +505,7 @@ _NOW( )_
 
 
 
-Returns the seconds of a time value. The `Second` is given as an integer in the range 0 (zero) to 59.
+The `SECOND` function returns the seconds of a time value. The `Second` is given as an integer in the range 0 (zero) to 59.
 
 
 
@@ -533,7 +533,7 @@ Time values are a portion of a date value and are represented by a decimal numbe
 
 
 
-Returns the decimal number for a particular time. The decimal number returned by `Time` is a value ranging from 0 (zero) to 0.99999999, representing the times from 0:00:00 (12:00:00 A.M.) to 23:59:59 (11:59:59 P.M.).
+The `TIME` function returns the decimal number for a particular time. The decimal number returned by `TIME` is a value ranging from 0 (zero) to 0.99999999, representing the times from 0:00:00 (12:00:00 A.M.) to 23:59:59 (11:59:59 P.M.).
 
 
 
@@ -589,7 +589,7 @@ Date information in time_text is ignored.
 
 
 
-The `Today` function returns the serial number of the current date. The serial number is the number of days since Jan 1, 1900.
+The `TODAY` function returns the serial number of the current date. The serial number is the number of days since Jan 1, 1900.
 
 
 
@@ -815,7 +815,7 @@ _WORKDAY(startDate, Days, [holidays])_
 
 
 
-The `Year` function returns the year corresponding to a date. The year is returned as an integer in the range 1900-9999.
+The `YEAR` function returns the year corresponding to a date. The year is returned as an integer in the range 1900-9999.
 
 
 
@@ -872,15 +872,15 @@ _YEARFRAC(start_date, end_date, [basis])_
 
 
 
-* excel stores dates as sequential serial numbers so they can be used in calculations. By default, January 1, 1900 is serial number 1, and January 1, 2018 is serial number 43101 because it is 43,101 days after January 1, 1900.
+* The Calculation Engine stores dates as sequential serial numbers so they can be used in calculations. By default, January 1, 1900 is serial number 1, and January 1, 2018 is serial number 43101 because it is 43,101 days after January 1, 1900.
 
 
-* all arguments are truncated to integers.
-
-
-
-* start_date or end_date are not valid dates, it returns the #VALUE! error value.
+* All arguments are truncated to integers.
 
 
 
-basis < 0 or if basis > 4, it returns the #NUM! error value.
+* If start_date or end_date is not a valid date, it returns the #VALUE! error value.
+
+
+
+If basis < 0 or if basis > 4, it returns the #NUM! error value.

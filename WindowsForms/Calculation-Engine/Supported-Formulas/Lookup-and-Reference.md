@@ -41,7 +41,7 @@ _AREAS(reference)_
 
 **Parameters:**
 
-* `reference`: An input argument. 
+* `reference`: The reference or range.
 
 ## CHOOSE
 
@@ -59,7 +59,7 @@ _CHOOSE(index, valuearray)_
 
 ## COLUMN
 
-The `Column` function returns the column index of the provided column in range.
+The `Column` function returns the column index of the provided range.
 
 **Syntax:**
 
@@ -67,7 +67,7 @@ _COLUMN(range)_
 
 **Parameters:**
 
-* `range`: Provides the column in range.
+* `range`: The target range.
 
 ## COLUMNS
 
@@ -79,7 +79,7 @@ _COLUMNS(array)_
 
 **Parameters:**
 
-* `array`: The range of the number of columns. 
+* `array`: The range of columns to count.
 
 ## FORMULATEXT
 
@@ -123,7 +123,7 @@ _HLOOKUP(lookup_value, table_array, row_index_num, range_lookup)_
 
 * `row_index_num`: The row number in `table_array` from which the matching value returns. A `row_index_num` of 1 returns the first row value in `table_array` , a **row_index_num** of 2 returns the second row value in **table_array**, and so on.
 
-* `range_lookup`: A logical value that specifies whether you want `HLookup` to find an exact match or an approximate match. When `True` or omitted, an approximate match is returned. In other words, when an exact match is not found, the next largest value that is lesser than the `lookup_value` is returned. (This requires your lookup values to be sorted.) when `False`, `HLookup` finds an exact match
+* `range_lookup`: A logical value that specifies whether you want `HLookup` to find an exact match or an approximate match. When `True` or omitted, an approximate match is returned. In other words, when an exact match is not found, the next largest value that is less than the `lookup_value` is returned. (This requires your lookup values to be sorted.) when `False`, `HLookup` finds an exact match
 
 ## HYPERLINK
 
@@ -149,7 +149,7 @@ _INDEX(range,row,col)_
 
 **Parameters:**
 
-* `range`: A string to mention the specific range.
+* `range`: A range to mention the specific range.
 
 * `row`: The integer that indicates the specific row index.
 
@@ -157,7 +157,7 @@ _INDEX(range,row,col)_
 
 ## INDIRECT
 
-The `Indirect` function returns the reference as a string instead of providing the content or range within it.
+The `Indirect` function returns the reference specified by a text string.
 
 **Syntax:**
 
@@ -235,17 +235,17 @@ _TRANSPOSE(array)_
 
 ## VLOOKUP
 
-Looks up a supplied value in the first column of a table, and returns the corresponding value from another column.
+The `Vlookup` function looks up a value in the first column of a table and returns a value from another column.
 
 **Syntax:**
 
-_VLOOKUP (value, table, col_index, [range_lookup])_
+_VLOOKUP (value, table_array, col_index, [range_lookup])_
 
 **Parameters:**
 
 * `value`: The value to look for in the first column of a table.
 
-* `table`: The table from which to retrieve a value.
+* `table_array`: The table from which to retrieve a value.
 
 * `col_index`: The column in the table from which to retrieve a value.
 
@@ -265,7 +265,7 @@ _MATCH(lookup_value, lookup_array, [match_type])_
 
 * `lookup_array`: The range of cells being searched.
 
-* `match_type`: The number -1, 0, or 1. The match_type argument specifies how Excel matches lookup_value with values in lookup_array. The default value for this argument is 1.
+* `match_type`: The number -1, 0, or 1. The match_type argument specifies how the Calculate engine matches `lookup_value` with values in `lookup_array`. The default value for this argument is 1.
 
 ## ROW
 

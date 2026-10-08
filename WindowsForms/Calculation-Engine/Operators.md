@@ -9,8 +9,7 @@ documentation: ug
 
 # Operators in Windows Forms Calculation Engine (Calculate)
 
-The calculation type of an equation will be specified by operators. These operators will be prioritized 
-in a default order for calculating the equation.
+Operators define the calculation type. The engine evaluates them in a default order of precedence.
 
 ## Arithmetic Operators
 
@@ -31,7 +30,7 @@ Addition</td><td>
 <td>
 -  (minus sign - unary) </td><td>
 Negation</td><td>
-- 5</td></tr>
+-5</td></tr>
 <tr>
 <td>
 -  (minus sign - binary)</td><td>
@@ -63,7 +62,7 @@ If you use a well-formed logical expression in a larger calculation, True evalua
 <tr>
 <th>
 Logical operator</th><th>
-denotation</th><th>
+Description</th><th>
 Example</th></tr>
 <tr>
 <td>
@@ -97,21 +96,21 @@ Not equal</td><td>
 C2 <>10</td></tr>
 </table>
 
-## Text concatenation operator (Binary literal operator)
+## Text Concatenation Operator (Binary Literal Operator)
 
 Two or more text strings can be concatenated into one text using this operator. 
 
 <table>
 <tr>
 <th>
-Logical operator</th><th>
-denotation</th><th>
+Binary Literal operator</th><th>
+Description</th><th>
 Example</th></tr>
 <tr>
 <td>
 & (ampersand)</td><td>
 Concatenation</td><td>
-“Hello” & “World”</td></tr>
+"Hello" & "World"</td></tr>
 </table>
 
 ## Operator precedence
@@ -119,15 +118,17 @@ Concatenation</td><td>
 All operations are subjected to the following hierarchy of operations. The level 1 operations are done first, followed by level 2, and so on. Within the same level, the operations are performed from 
 left to right in the order where they are encountered during the parsing of the formula.
 
-1. (Unary Minus)
+1. Unary minus (-)
 
-2. /
+2. ^
 
-3. + -
+3. * /
 
-4. < >= <= >= <>
+4. + -
 
-5. & (Concatenation)
+5. <, >, <=, >=, <>
+
+6. & (Concatenation)
 
 When the default operators’ precedence need to be changed, then the parentheses will be used to explicitly indicate the operation order.
 
@@ -158,16 +159,15 @@ Computed Value</th></tr>
 
 ## Equal Sign, the Formula Character
 
-To indicate that a particular string should be treated as a formula, user must start the string with a special character, `FormulaCharacter`("="). This property is static, so you can change the formula character within your code. 
-It's default value is the equal sign, (=).
+The default value of `FormulaCharacter` is the equal sign, (=). To indicate that a particular string should be treated as a formula, user must start the string with a special character, `FormulaCharacter`("="). This property is static, so you can change the formula character within your code. 
 
-In general, in order for Essential Calculate to recognize a string as containing a formula; the string is required to start with the [FormulaCharacter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html#Syncfusion_Calculate_CalcEngine_FormulaCharacter). 
-There is one exception though, if you explicitly call a [CalcEngine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html) Parse method like `ParseFormula` or `ParseAndComputeFormula`, including the formula character as the first character in the passed string, is optional.
+In general, in order for Essential Calculate to recognize a string as containing a formula, the string must start with the [FormulaCharacter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html#Syncfusion_Calculate_CalcEngine_FormulaCharacter). 
+There is one exception though, if you explicitly call a [CalcEngine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html) Parse method like `ParseFormula` or `ParseAndComputeFormula`, the formula character is optional as the first character in the passed string.
 
 ## Square Brackets, indexers in CalcQuickBase class
 
 If you are using a [CalcQuickBase](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcQuickBase.html) object to add calculation support to your business object, then you must use strings as indexers on the `CalcQuickBase` instance to get and set values.
-To register the strings in `CalcQuickBase`, it must be enclosed within square brackets "[ ]". Eg. [A]. These registered variable names are indexer keys.
+To register the strings in `CalcQuickBase`, they must be enclosed within square brackets "[ ]". Eg. [A]. These registered variable names are indexer keys.
 
 {% tabs %}
 {% highlight c# %}

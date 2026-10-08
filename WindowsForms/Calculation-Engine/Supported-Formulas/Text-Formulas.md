@@ -338,7 +338,7 @@ _LEFT(text, bytes)_
 
 
 
-The `Len` function returns the number
+The `Len` function returns the number of characters
 
 
 
@@ -538,7 +538,7 @@ _REPT(string, number)_
 
 
 
-* Blank text-occurs when number is zero.
+* Returns blank text when number is zero.
 
 
 
@@ -650,7 +650,7 @@ _SUBSTITUTE(text, old_text, new_text, instance_num)_
 
 
 
-The `T` function tests whether the given value is a text or not. When the given value is a text, then it returns the given text. Otherwise, the function returns as an empty text string.
+The `T` function tests whether the given value is a text or not. When the given value is a text, then it returns the given text. Otherwise, the function returns an empty text string.
 
 
 
@@ -670,7 +670,7 @@ _T( value )_
 
 
 
-* When the value is not a number or logical value, then the function returns as an empty string.
+* When the value is not text, then the function returns an empty string.
 
 
 
@@ -758,7 +758,7 @@ _UNICHAR(num)_
 
 
 
-* `#VALUE!`-occurs when num falls outside the allowable range, when number is zero.
+* `#VALUE!`-occurs when num falls outside the allowable range or is zero.
 
 
 
@@ -822,7 +822,7 @@ _UPPER(text )_
 
 
 
-The `Value` function computes the date or a string that contains the number, and converts it into number format.
+The `Value` function converts a string that contains the number into number format.
 
 
 
@@ -918,7 +918,7 @@ _CONCAT(text1, [text2],…)_
 
 
 
-* If the result string exceeds cell limit (32767 characters), TEXTJOIN returns the `#VALUE!` error.
+* If the result string exceeds cell limit (32767 characters), CONCAT returns the `#VALUE!` error.
 
 
 
@@ -1073,7 +1073,7 @@ _REPLACEB(oldText, startNum, num_bytes, newText)_
 
 
 
-The `ASC ` function used to converts full-width (double-byte) characters to half-width (single-byte) characters.
+The `ASC` function converts full-width (double-byte) characters to half-width (single-byte) characters.
 
 
 **Syntax:**
@@ -1255,7 +1255,7 @@ _TEXTAFTER(text, delimiter, [instance_num], [match_mode], [match_end], [if_not_f
 
 
 
-* If [instance_num] equal to 0 or greater than the length of text, a `#VALUE!` error returned.
+* If [instance_num] equal to 0 or greater than the length of text, a `#VALUE!` error is returned.
 
 
 
@@ -1390,7 +1390,7 @@ _VALUETOTEXT(value, [format])_
 
 
 
-The `ARRAYTOTEXT` function function converts an array into text.
+The `ARRAYTOTEXT` function converts an array into text.
 
 
 <<<<<<< HEAD

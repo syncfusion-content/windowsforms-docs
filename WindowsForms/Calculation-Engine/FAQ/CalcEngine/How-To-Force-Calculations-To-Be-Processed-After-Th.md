@@ -47,7 +47,7 @@ engine.RecalculateRange(RangeInfo.Cells(1, 1, nRows + 1, nCols + 1), data);
 
 {% endhighlight %}
 
-{% highlight vbnet%}
+{% highlight vbnet %}
 
 
 
@@ -83,7 +83,7 @@ engine.CalculatingSuspended = False
 
 ' Calls RecalculateRange so any formulas in the data can be computed.
 
-engine.RecalculateRange(RangeInfo.Cells(1, 1, nRows + 1, nCols + 1), Data)
+engine.RecalculateRange(RangeInfo.Cells(1, 1, nRows + 1, nCols + 1), data)
 
 {% endhighlight %}
 
