@@ -9,138 +9,215 @@ documentation: ug
 
 # Getting Started with Windows Forms ComboBoxAdv(Classic)
 
+This section describes how to add the ComboBoxAdv control to a Windows Forms application and configure its commonly used settings.
 
-This section briefly describes how to design a ComboBoxAdv Control in a Windows Forms Application.
+* [Adding ComboBoxAdv via designer](#adding-comboboxadv-via-designer)
+* [Configuring the ComboBoxAdv Control](#configuring-the-comboboxadv-control)
+* [Adding ComboBoxAdv via code](#adding-comboboxadv-via-code)
 
-* Adding a ComboBoxAdv Control 
-* Configuring the ComboBoxAdv Control
+## Assembly deployment
 
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#comboboxadv) section for the list of assemblies or the NuGet package details that must be referenced to use the control in any application.
 
-## Adding ComboBoxAdv Control
+Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install NuGet packages in a Windows Forms application.
 
-* Create a new Windows Forms Application Project in VS IDE through New Project Wizard.
-* Drag and drop the ComboBoxAdv control in the Form from Toolbox.
+To install via the NuGet Package Manager Console, run:
 
+```
+Install-Package Syncfusion.Tools.Windows
+```
 
+## Adding ComboBoxAdv via designer
 
-![Overview of WindowsForms ComboBox](overview_images/windowsforms-combobox-overview.png) 
+1. Create a new **Windows Forms Application** project in Visual Studio using the New Project dialog.
+2. Add the required assembly references to the project:
 
+    * `Syncfusion.Tools.Windows.dll`
+    * `Syncfusion.Shared.Base.dll`
+3. Open the Toolbox and locate the **ComboBoxAdv** control under the **Syncfusion Windows Forms** tab.
+4. Drag the ComboBoxAdv control from the Toolbox onto the Form.
 
+![Overview of Windows Forms ComboBoxAdv control](overview_images/windowsforms-combobox-overview.png)
 
-## Configuring ComboBoxAdv Control
+## Configuring the ComboBoxAdv control
 
-The most commonly used settings of the ComboBoxAdv control can be configured either through Designer using the Smart tag or through the Properties window or through code.
+The most commonly used settings of the ComboBoxAdv control can be configured through the Smart tag, the Properties window, or in code.
 
+![Configuring ComboBoxAdv control in Windows Forms](overview_images/windowsforms-combobox-configuring.png)
 
+Typical settings include:
 
-![Configuring ComboBox in WindowsForms](overview_images/windowsforms-combobox-configuring.png) 
+| Setting | Property | Where to configure |
+| --- | --- | --- |
+| Visual style | `Style` | Properties window / code |
+| Drop-down behavior | `DropDownStyle` | Properties window / code |
+| Data source | `DataSource`, `DisplayMember`, `ValueMember` | Properties window / code |
+| Item height | `ItemHeight` | Properties window / code |
+| Watermark text | `Watermark` | Properties window / code |
 
+For the full list of options, see [ComboBoxAdv Options](ComboBoxAdv-Options.md) and [ComboBoxAdv Appearance](ComboBoxAdv-appearance.md).
 
+## Adding ComboBoxAdv via code
 
-To add ComboBoxAdv Control to a Windows Forms Application through code behind, follow the given steps.
+To add the ComboBoxAdv control programmatically, follow these steps.
 
-1. Include the namespaces “Syncfusion.Windows.Forms” and “Syncfusion.Windows.Forms.Tools”.
+1. Add the following assembly references to the project:
 
-{% capture codesnippet1 %}​
+    * `Syncfusion.Tools.Windows.dll`
+    * `Syncfusion.Shared.Base.dll`
+
+2. To initialize the control in code, perform the following in order:
+
+    1. Add the required namespaces at the top of the file:
+
+        {% capture codesnippet_ns %}
+        {% tabs %}
+
+        {% highlight c# %}
+        using Syncfusion.Windows.Forms;
+        using Syncfusion.Windows.Forms.Tools;
+        {% endhighlight %}
+
+        {% highlight vb %}
+        Imports Syncfusion.Windows.Forms
+        Imports Syncfusion.Windows.Forms.Tools
+        {% endhighlight %}
+
+        {% endtabs %}
+        {% endcapture %}
+        {{ codesnippet_ns | OrderList_Indent_Level_2 }}
+
+    2. Inside the Form's constructor (after `InitializeComponent()` in designer-based projects), declare the `comboBoxAdv1` field and create its instance:
+
+        {% capture codesnippet_ctor %}
+        {% tabs %}
+        {% highlight c# %}
+
+        public Form1()
+        {
+            InitializeComponent();
+            // Inside the Form class
+            this.comboBoxAdv1 = new Syncfusion.Windows.Forms.Tools.ComboBoxAdv();
+        }
+
+        {% endhighlight %}
+        {% highlight vb %}
+
+        Public Sub New()
+            InitializeComponent()
+            ' Inside the Form class
+            Me.comboBoxAdv1 = New Syncfusion.Windows.Forms.Tools.ComboBoxAdv()
+        End Sub
+
+        {% endhighlight %}
+        {% endtabs %}
+        {% endcapture %}
+        {{ codesnippet_ctor | OrderList_Indent_Level_2 }}
+
+    3. Add items to the control using the `Items.Add` method:
+
+        {% capture codesnippet_items %}
+        {% tabs %}
+        {% highlight c# %}
+
+        this.comboBoxAdv1.Items.Add("Item1");
+        this.comboBoxAdv1.Items.Add("Item2");
+        this.comboBoxAdv1.Items.Add("Item3");
+
+        {% endhighlight %}
+        {% highlight vb %}
+
+        Me.comboBoxAdv1.Items.Add("Item1")
+        Me.comboBoxAdv1.Items.Add("Item2")
+        Me.comboBoxAdv1.Items.Add("Item3")
+
+        {% endhighlight %}
+        {% endtabs %}
+        {% endcapture %}
+        {{ codesnippet_items | OrderList_Indent_Level_2 }}
+
+    4. Add the control to the form by appending it to the `Controls` collection:
+
+        {% capture codesnippet_add %}
+        {% tabs %}
+        {% highlight c# %}
+
+        this.Controls.Add(this.comboBoxAdv1);
+
+        {% endhighlight %}
+        {% highlight vb %}
+
+        Me.Controls.Add(Me.comboBoxAdv1)
+
+        {% endhighlight %}
+        {% endtabs %}
+        {% endcapture %}
+        {{ codesnippet_add | OrderList_Indent_Level_2 }}
+
+### Complete code example
+
+The following combined C# and VB.NET sample shows all of the steps above in a single, runnable example.
+
+{% capture codesnippet1 %}
 {% tabs %}
-
 {% highlight c# %}
 
-//Namespaces.
-using Syncfusion.Windows.Forms.Tools;
-using Syncfusion.Windows.Forms;
+using Syncfusion.Windows.Forms;
+using Syncfusion.Windows.Forms.Tools;
+
+// Inside the Form class
+public partial class Form1 : Form
+{
+    private Syncfusion.Windows.Forms.Tools.ComboBoxAdv comboBoxAdv1;
+
+    public Form1()
+    {
+        InitializeComponent();
+        this.comboBoxAdv1 = new ComboBoxAdv();
+        this.comboBoxAdv1.Name = "comboBoxAdv1";
+        this.comboBoxAdv1.Location = new System.Drawing.Point(20, 20);
+        this.comboBoxAdv1.Size = new System.Drawing.Size(200, 25);
+
+        // Add items to ComboBoxAdv (any object can be added; ToString() is used for display)
+        this.comboBoxAdv1.Items.Add("Item1");
+        this.comboBoxAdv1.Items.Add("Item2");
+        this.comboBoxAdv1.Items.Add("Item3");
+
+        this.Controls.Add(this.comboBoxAdv1);
+    }
+}
 
 {% endhighlight %}
-
 {% highlight vb %}
 
-'Namespaces.
-Imports Syncfusion.Windows.Forms
-Imports Syncfusion.Windows.Forms.Tools
+Imports Syncfusion.Windows.Forms
+Imports Syncfusion.Windows.Forms.Tools
+
+Public Partial Class Form1
+    Inherits System.Windows.Forms.Form
+
+    Private WithEvents comboBoxAdv1 As Syncfusion.Windows.Forms.Tools.ComboBoxAdv
+
+    Public Sub New()
+        InitializeComponent()
+
+        Me.comboBoxAdv1 = New ComboBoxAdv()
+        Me.comboBoxAdv1.Name = "comboBoxAdv1"
+        Me.comboBoxAdv1.Location = New System.Drawing.Point(20, 20)
+        Me.comboBoxAdv1.Size = New System.Drawing.Size(200, 25)
+
+        ' Add items to ComboBoxAdv (any object can be added; ToString() is used for display)
+        Me.comboBoxAdv1.Items.Add("Item1")
+        Me.comboBoxAdv1.Items.Add("Item2")
+        Me.comboBoxAdv1.Items.Add("Item3")
+
+        Me.Controls.Add(Me.comboBoxAdv1)
+    End Sub
+End Class
 
 {% endhighlight %}
-
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
+{{ codesnippet1 | OrderList_Indent_Level_2 }}
 
-2. Create an instance of the ComboBoxAdv control and add it to the Form.
-
-{% capture codesnippet2 %}​
-{% tabs %}
-
-{% highlight c# %}
-  
-//Creates ComboBoxAdv instance.
-private Syncfusion.Windows.Forms.Tools.ComboBoxAdv comboBoxAdv1;
-this.comboBoxAdv1 = new ComboBoxAdv();
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-'Creates ComboBoxAdv instance.
-Private comboBoxAdv1 As Syncfusion.Windows.Forms.Tools.ComboBoxAdv
-Me.comboBoxAdv1 = New ComboBoxAdv()
-
-{% endhighlight %}
-
-{% endtabs %}
-{% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
-
-3. Items can be added to ComboBoxAdv through String Collection Editor as it was done in Windows ComboBox control.
-
-{% capture codesnippet3 %}​
-{% tabs %}
-
-{% highlight c# %}
-
-//Adding items to ComboBoxAdv
-this.comboBoxAdv1.Items.Add(100);
-this.comboBoxAdv1.Items.Add(200);
-this.comboBoxAdv1.Items.Add(300);
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-'Adding items to ComboBoxAdv
-Me.comboBoxAdv1.Items.Add(100)
-Me.comboBoxAdv1.Items.Add(200)
-Me.comboBoxAdv1.Items.Add(300)
-
-{% endhighlight %}
-
-{% endtabs %}
-{% endcapture %}
-{{ codesnippet3 | OrderList_Indent_Level_1 }}
-
-4. Finally add ComboBoxAdv to the form.
-
-{% capture codesnippet4 %}​
-{% tabs %}
-
-{% highlight c# %}
-
-//Adding ComboBoxAdv to form
-
-this.Controls.Add(this.comboBoxAdv1);
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-'Adding ComboBoxAdv to form
-
-Me.Controls.Add(Me.comboBoxAdv1)
-
-{% endhighlight %}
-
-{% endtabs %}
-{% endcapture %}
-{{ codesnippet4 | OrderList_Indent_Level_1 }}
-
-
-![Adding ComboBox to form in WindowsForms](overview_images/windowsforms-combobox-add-form.png)
-
+![Adding the ComboBoxAdv control to a Windows Forms form](overview_images/windowsforms-combobox-add-form.png)
