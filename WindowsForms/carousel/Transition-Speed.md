@@ -9,7 +9,7 @@ documentation: ug
 
 # Transition Speed in Windows Forms Carousel
 
-The [TransitionSpeed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Carousel.html#Syncfusion_Windows_Forms_Tools_Carousel_TransitionSpeed) property enables the items in the control to be rotated at a user defined speed.
+The [TransitionSpeed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Carousel.html#Syncfusion_Windows_Forms_Tools_Carousel_TransitionSpeed) property enables the items in the control to be rotated at a user-defined speed. It accepts float values, and the default value of this property is `1f`. A higher value results in faster rotation of the carousel items.
 
 {% tabs %}
 {% highlight C# %}
@@ -25,3 +25,8 @@ Me.carousel1.TransitionSpeed = 2f
 {% endhighlight %}
 
 {% endtabs %}
+
+## Related links
+
+* [Rotate Always](https://help.syncfusion.com/windowsforms/carousel/rotate-always)
+* [Perspective](https://help.syncfusion.com/windowsforms/carousel/perspective)

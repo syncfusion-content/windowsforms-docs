@@ -8,15 +8,17 @@ documentation: ug
 ---
 # Getting Started with Windows Forms XPTaskBar
 
-This section describes how to add `XPTaskBar` control in a Windows Forms application and overview of its basic functionalities.
+This section describes how to add the `XPTaskBar` control in a Windows Forms application and gives an overview of its basic functionalities.
 
 ## Assembly deployment
 
 Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#xptaskbar) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
  
-Please find more details regarding how to install the nuget packages in windows form application in the below link:
+Please find more details regarding how to install the NuGet packages in Windows Forms application in the below link:
  
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
+[How to install NuGet packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
+
+To generate the license validated application, refer to the [licensing](https://help.syncfusion.com/windowsforms/licensing/overview) documentation.
 
 
 ## Creating simple application with XPTaskBar
@@ -29,7 +31,7 @@ You can create the Windows Forms application with XPTaskBar control as follows:
 
 ### Creating the project
 
-Create a new Windows Forms project in the Visual Studio to display the XPTaskBar with  functionalities.
+Create a new Windows Forms project in the Visual Studio to display the XPTaskBar with its functionalities.
 
 ## Adding control via designer
 
@@ -69,7 +71,7 @@ To add control manually in C#, follow the given steps:
         * Syncfusion.Tools.Base.dll
         * Syncfusion.Tools.Windows.dll
 
-**Step 2** -Include the namespaces **Syncfusion.Windows.Forms.Tools**.
+**Step 2** - Include the namespace **Syncfusion.Windows.Forms.Tools**.
 
 {% capture codesnippet1 %}​
 {% tabs %}
@@ -117,7 +119,7 @@ Me.Controls.Add(xpTaskBar1)
 
 **Adding XPTaskBarBox**
 
-Create an instance for `XPTaskBarBox` class and add it to XPTaskBar's controls collection.
+Create an instance of the `XPTaskBarBox` class and add it to the XPTaskBar's controls collection.
 
 {% tabs %}
 
@@ -132,8 +134,8 @@ this.xpTaskBarBox2.Text = "xpTaskBarBox2";
 this.xpTaskBarBox3.Text = "xpTaskBarBox3";
 
 this.xpTaskBar1.Controls.Add(this.xpTaskBarBox1);
-this.xpTaskBar2.Controls.Add(this.xpTaskBarBox2);
-this.xpTaskBar3.Controls.Add(this.xpTaskBarBox3);
+this.xpTaskBar1.Controls.Add(this.xpTaskBarBox2);
+this.xpTaskBar1.Controls.Add(this.xpTaskBarBox3);
 
 {% endhighlight %}
 
@@ -148,8 +150,8 @@ Me.xpTaskBarBox2.Text = "xpTaskBarBox2"
 Me.xpTaskBarBox3.Text = "xpTaskBarBox3"
 
 Me.xpTaskBar1.Controls.Add(Me.xpTaskBarBox1)
-Me.xpTaskBar2.Controls.Add(Me.xpTaskBarBox2)
-Me.xpTaskBar3.Controls.Add(Me.xpTaskBarBox3)
+Me.xpTaskBar1.Controls.Add(Me.xpTaskBarBox2)
+Me.xpTaskBar1.Controls.Add(Me.xpTaskBarBox3)
 
 {% endhighlight %}
 
@@ -159,7 +161,7 @@ Me.xpTaskBar3.Controls.Add(Me.xpTaskBarBox3)
 
 **Adding XPTaskBarItems**
 
-XPTaskBarItems can be added to XPTaskBarBox using `Items` collection in XPTaskBarBox class.
+XPTaskBarItems can be added to XPTaskBarBox using `Items` collection in XPTaskBarBox class. The [XPTaskBarItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarItem.html) constructor used below takes the item name, highlight color, image index and display text as arguments, in that order.
 
 {% tabs %}
 

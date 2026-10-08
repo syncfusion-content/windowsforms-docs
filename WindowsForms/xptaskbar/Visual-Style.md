@@ -8,23 +8,23 @@ documentation: ug
 ---
 # Visual Style in Windows Forms XPTaskBar
 
- XPTaskBar offers various built in themes for its professional representation as follows
+XPTaskBar offers various built-in themes for its professional representation as follows.
 
-    •	Default
+* Default
 
-    •	Office2007
+* Office2007
 
-    •	Office2010
+* Office2010
 
-    •	Metro
+* Metro
 
-    •	Office2016Colorful
+* Office2016Colorful
 
-    •	Office2016White
+* Office2016White
 
-    •	Office2016DarkGray
+* Office2016DarkGray
 
-    •	Office2016Black
+* Office2016Black
 
 You can set the above themes using the [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBar.html#Syncfusion_Windows_Forms_Tools_XPTaskBar_Style) property.
 
@@ -108,8 +108,7 @@ Me.xpTaskBar1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.B
 
 **Custom colors**
 
-We can also apply custom colors to the XPTaskBar control by setting Office2007ColorScheme to "_Managed_", and specifying the 
-custom color through the ApplyManagedColors method as follows.
+We can also apply custom colors to the XPTaskBar control by setting Office2007ColorScheme to "_Managed_", and specifying the custom color through the ApplyManagedColors method of the `Syncfusion.Windows.Forms.Office2007Colors` class as follows.
 
 {% tabs %}
 

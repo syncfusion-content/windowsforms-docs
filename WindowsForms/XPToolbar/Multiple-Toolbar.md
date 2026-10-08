@@ -9,7 +9,10 @@ documentation: ug
 
 # Multiple Toolbar in Windows Forms XPToolBar
 
-We can add different layers of toolbar either on-after-the-other or one-below-the-other. The below code snippet will explain how to add multiple toolbar in an application.
+We can add different layers of toolbar either one-after-the-other or one-below-the-other. The below code snippet will explain how to add multiple toolbars in an application.
+
+>**NOTE**:
+Before trying the below code, ensure the dependent assemblies and the XPToolBar control setup as shown in the [Getting Started](https://help.syncfusion.com/windowsforms/xptoolbar/getting-started) documentation. The example below adds three XPToolBar controls inside a panel, each docked to the top of the panel so that the toolbars are stacked one below the other.
 
 {% tabs %}
 {% highlight C# %}
