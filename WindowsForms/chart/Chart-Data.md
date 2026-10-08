@@ -404,7 +404,7 @@ Follow these steps to add the Chart control and prepare the design-time data sch
 
 N> The Chart Wizard is available only in **.NET Framework** projects and is not supported in **.NET Core** WinForms applications.
 
-## Binding the table data with chartseries
+## Binding the table data with chart series
 
 After creating the DataTable, connect it to the BindingSource and select the data source in the Chart Wizard.
 
@@ -575,11 +575,19 @@ The following images demonstrate stock transaction data grouped by symbol to cal
 
 ![Chart Data](Data-Manipulation_images/Data-Manipulation_img1.png)
 
+A sample application that illustrates grouping and filtering support is distributed with Essential® Chart and can be found at:
+
+**Sample Location:** &lt;sample installation location&gt;\Syncfusion\EssentialStudio\Version Number\Windows\chart\Data Binding\Chart Grouping
+
 ### Essential® grid interaction
 
 Essential® Chart provides integration with Essential® Grid through a shared data model. The grid can also serve as a data source for the chart, allowing selected grid columns to be mapped automatically to chart series. The following image illustrates a chart created from grid data.
 
 ![Chart Data](Data-Manipulation_images/Data-Manipulation_img2.png)
+
+A sample application that illustrates chart and grid integration is distributed with Essential® Chart and can be found at:
+
+**Sample Location:** "&lt;sample installation location&gt;\Syncfusion\EssentialStudio\Version Number\Windows\chart\Embed Custom Control"
 
 ## Real time
 
@@ -587,11 +595,13 @@ Essential® Chart is optimized for visualizing large volumes of real-time data a
 
 Real-time updates can be achieved by updating the chart data points and, when required, adjusting the chart axis ranges. Although new data points can be added through the [ChartSeries.Points](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_Points) collection, using a custom data model is recommended for better performance in real-time scenarios.
 
-N> For a complete real-time chart example, refer to the **Chart Recorder** sample included with the Essential® Chart installation.
+A sample application that illustrates real time data usage which is distributed along with the Essential® Chart installation and can be found at:
+
+**Sample Location:** "&lt;sample installation location&gt;\Syncfusion\EssentialStudio\Version Number\Windows\chart\Real Time\Chart Recorder"
 
 ## See also
 - [How to create a real-time chart in WF](https://support.syncfusion.com/kb/article/8266/how-to-create-a-real-time-chart-in-wf)
 - [How do I use Essential Chart to visualize data from Essential Grid](https://support.syncfusion.com/kb/article/1189/how-do-i-use-essential-chart-to-visualize-data-from-essential-grid)
 - [How to bind a data source to a WinForms Chart using the chart wizard](https://support.syncfusion.com/kb/article/6867/how-to-bind-a-data-source-to-a-winforms-chart-using-the-chart-wizard)
 - [How to bind a dataset from a database to the WinForms Chart](https://support.syncfusion.com/kb/article/1182/how-to-bind-a-dataset-from-a-database-to-the-winforms-chart)
-- [How to I set Custom Databinding in Chart](https://support.syncfusion.com/kb/article/1180/how-to-i-set-custom-databinding-in-chart)
+- [How to I set Custom Data binding in Chart](https://support.syncfusion.com/kb/article/1180/how-to-i-set-custom-databinding-in-chart)
