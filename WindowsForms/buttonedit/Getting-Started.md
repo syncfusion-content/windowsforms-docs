@@ -9,19 +9,19 @@ documentation: ug
 
 # Getting Started with Windows Forms ButtonEdit
 
-This section briefly describes how to create a new Windows Forms project in Visual Studio and add [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) with it's basic functionalities.
+This section briefly describes how to create a new Windows Forms project in Visual Studio and add [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) with its basic functionalities.
 
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#buttonedit) section to get the list of assemblies or NuGet package details which needs to be added as reference to use the control in any application.
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#buttonedit) section to get the list of assemblies or NuGet package details which need to be added as reference to use the control in any application.
 
-[Check here](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to find more details on how to install nuget packages in Windows Forms application.
+[Check here](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to find more details on how to install NuGet packages in a Windows Forms application.
 
-## Creating Application with ButtonEdit
-In this walk through, users will create WinForms application that contains [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control.
+## Creating an Application with ButtonEdit
+In this walkthrough, you will create a WinForms application that contains the [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control.
 
 ### Creating the Project
-Create new Windows Forms Project in Visual Studio to display [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control.
+Create a new Windows Forms project in Visual Studio to display the [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control.
 
 ### Adding a ButtonEdit control through designer
 
@@ -84,7 +84,7 @@ public Form1()
 Public Sub New()
 
     InitializeComponent()
-    Dim ButtonEdit As buttonEdit = New ButtonEdit()
+    Dim buttonEdit As New ButtonEdit()
     buttonEdit.Location = New System.Drawing.Point(367, 135)
     buttonEdit.Name = "buttonEdit1"
     buttonEdit.Text = buttonEdit.Name
@@ -184,7 +184,7 @@ Public Sub New()
 
 End Sub
 
-{% endhighlight vb %}
+{% endhighlight %}
 
 {% endtabs %}
 

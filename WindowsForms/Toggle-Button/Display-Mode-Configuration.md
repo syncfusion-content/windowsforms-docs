@@ -9,7 +9,7 @@ documentation: ug
 
 # Display Mode Configuration in Windows Forms Toggle Button
 
-Toggle Button is set to display either text or image through its DisplayMode property.
+WinForms Toggle Button is set to display either text or image through its `DisplayMode` property.
 
 {% tabs %}
 {% highlight c# %}

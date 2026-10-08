@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Appearance in Windows Forms Button control | Syncfusion®
 description: Learn about Appearance support in Syncfusion® Windows Forms Button (SfButton) control and more details.
@@ -43,7 +43,7 @@ sfButton1.Style.GradientBrush = new BrushInfo(GradientStyle.ForwardDiagonal, Col
 
 ### Background Image
 
-The background of the SfButton can be filled with image by initialize the BackgroundImage property. The background image layout can be changed by initializing any one of ImageLayout enumeration value to BackgroundImageLayout property.
+The background of the SfButton can be filled with image by initializing the BackgroundImage property. The background image layout can be changed by initializing any one of the ImageLayout enumeration value to the BackgroundImageLayout property.
 
 {% tabs %}
 {% highlight c# %}
@@ -61,11 +61,11 @@ this.sfButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
 
 ## Customizing Appearance based on Button State
 
-The SfButton provide options to customize the appearance based on the button state.
+The SfButton provides options to customize the appearance based on the button state.
 
-### Backcolor and Fore Color
+### BackColor and Fore Color
 
-The backcolor and fore color of the SfButton in hover state can be changed by using the [HoverBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.ButtonVisualStyle.html#Syncfusion_WinForms_Controls_Styles_ButtonVisualStyle_HoverBackColor) and [HoverForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.ButtonVisualStyle.html#Syncfusion_WinForms_Controls_Styles_ButtonVisualStyle_HoverForeColor) properties. Like the hover state, you can customize in pressed state, focused state, normal state, and disable state of the SfButton.
+The back color and fore color of the SfButton in hover state can be changed by using the [HoverBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.ButtonVisualStyle.html#Syncfusion_WinForms_Controls_Styles_ButtonVisualStyle_HoverBackColor) and [HoverForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.ButtonVisualStyle.html#Syncfusion_WinForms_Controls_Styles_ButtonVisualStyle_HoverForeColor) properties. Like the hover state, you can customize in pressed state, focused state, normal state, and disabled state of the SfButton.
 
 {% tabs %}
 {% highlight c# %}
@@ -127,7 +127,7 @@ The border can be changed based on the button state by using the [Border](https:
 {% tabs %}
 {% highlight c# %}
 //Initialize the hover border
-sfButton6.Style.HoverBorder = new Pen(Color.DarkGray, 2);
+sfButton1.Style.HoverBorder = new Pen(Color.DarkGray, 2);
 {% endhighlight %}
 {% endtabs %}
 
@@ -135,7 +135,7 @@ sfButton6.Style.HoverBorder = new Pen(Color.DarkGray, 2);
 
 ## Animating the Image
 
-The animation image (.gif image) can be displayed in the SfButton by enabling the [AllowImageAnimation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_AllowImageAnimation) property and initialize the animation image to the [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_Image) property.
+The animation image (.gif image) can be displayed in the SfButton by enabling the [AllowImageAnimation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_AllowImageAnimation) property and initializing the animation image to the [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_Image) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -151,11 +151,11 @@ sfButton1.Style.Image = Image.FromFile(@"..\..\Data\animationImage.gif");
 
 ![Windows Forms Button animating the image](SfButton_images/windows-forms-button-animating-image.jpeg)
 
-**Note**: The SfButton does not allow you to animate the image, if the animated image set as FocusedImage, HoverImage, or PressedImage so, to show the animation image inside the button, initialize the animation image (gif image) using the Image property.
+**Note**: The SfButton will not animate the image if the animated image is set as FocusedImage, HoverImage, or PressedImage. To show the animation image inside the button, initialize the animation image (gif image) using the Image property.
 
 ## Show or Hide Focus Rectangle
 
-A thin dotted rectangular frame can be drawn inside the SfButton when it got focus. This feature can be enabled by setting the [FocusRectangleVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_FocusRectangleVisible) property to true.
+A thin dotted rectangular frame can be drawn inside the SfButton when it gets focus. This feature can be enabled by setting the [FocusRectangleVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_FocusRectangleVisible) property to true.
 
 {% tabs %}
 {% highlight c# %}
@@ -193,7 +193,7 @@ sfButton1.Paint += sfButton1_Paint;
 {% highlight c# %}
 private void sfButton1_Paint(object sender, PaintEventArgs e)
 {
-    //Rounded rectangle corder radius. The radius must be less than 10.
+    //Rounded rectangle corner radius. The radius must be less than 10.
     int radius = 5;
     e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
     Rectangle rect = new Rectangle(
@@ -272,7 +272,7 @@ Refer to the following sample shows how to implement the rounded rectangle in th
 
 > Note: [View sample in GitHub](https://github.com/SyncfusionExamples/How-to-customize-appearance-of-sfbutton)
 
-**Note**: When using the previous implementation to draw the rounded rectangle, the border customization properties like Border, HoverBorder, PressedBorder, FocusedBorder, and DisabledBorder does not work.
+**Note**: When using the previous implementation to draw the rounded rectangle, the border customization properties like Border, HoverBorder, PressedBorder, FocusedBorder, and DisabledBorder do not work.
 
 ## Themes
 
@@ -292,7 +292,7 @@ Themes can be applied to the SfButton by using the following steps:
 
 The Syncfusion.Office2016Theme.WinForms assembly should be added as reference to set theme for the SfButton in any application.
 
-Before applying theme to the SfButton, required theme assembly should be loaded. 
+Before applying theme to the SfButton, the required theme assembly should be loaded. 
 
 {% tabs %}
 

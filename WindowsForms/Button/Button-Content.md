@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Button Content in Windows Forms Button control | Syncfusion®
 description: Learn about Button Content support in Syncfusion® Windows Forms Button (SfButton) control and more details.
@@ -16,7 +16,7 @@ The rich text can be displayed inside the SfButton by enabling the [AllowRichTex
 {% tabs %}
 {% highlight c# %}
 //Enable the rich text support
-this.sfButton1.AllowRichText = true
+this.sfButton1.AllowRichText = true;
 
 //Adding the rich text value.
 this.sfButton1.Text = "{\\rtf1\\ansi\\deff0{\\colortbl;\\red0\\green0\\blue0;\\red255\\green0\\blue0;}" +
@@ -50,7 +50,7 @@ sfButton1.AllowWrapText = true;
 
 ## Trimming and Showing Ellipsis Character
 
-The ellipsis character can be shown inside the SfButton by enabling the [AllowEllipsis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_AutoEllipsis) property.
+The ellipsis character can be shown inside the SfButton by enabling the [AutoEllipsis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_AutoEllipsis) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -62,7 +62,7 @@ sfButton1.AutoEllipsis = true;
 
 ![SfButton_img8](SfButton_images/SfButton_img8.jpeg)
 
-**Note**: The SfButton will trim the characters only when disabling the AutoSize property and text length should be greater than the button width.
+**Note**: The SfButton will trim the characters only when the AutoSize property is disabled and the text length is greater than the width that the button can display.
 
 ## Auto Fit the SfButton
 
@@ -81,7 +81,7 @@ This section describes how to change the text and image alignment inside the SfB
 
 ### Text
 
-The text alignment can be changed by initializing any one of the ContentAlignment enumeration value to the TextAlign property.
+The text alignment can be changed by initializing any one of the ContentAlignment enumeration value to the [TextAlign](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_TextAlign) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -93,7 +93,7 @@ sfButton1.TextAlign = ContentAlignment.TopCenter;
 
 ### Image
 
-The image alignment can be changed by initializing any one of the ContentAlignment enumeration value to the ImageAlign property.
+The image alignment can be changed by initializing any one of the ContentAlignment enumeration value to the [ImageAlign](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_ImageAlign) property.
 
 {% tabs %}
 {% highlight c# %}

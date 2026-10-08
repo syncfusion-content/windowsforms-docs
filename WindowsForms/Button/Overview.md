@@ -9,7 +9,7 @@ documentation: ug
 
 # Windows Forms Button (SfButton) Overview
 
-The SfButton is an advanced button control capable of displaying text and image with various customizations. It provide options to customize the text, image, border, and appearance in all states of the button.
+The SfButton is an advanced button control capable of displaying text and image with various customizations. It provides options to customize the text, image, border, and appearance in all states of the button.
 
 ## Key Features
 
@@ -21,7 +21,7 @@ Following are the key features of the SfButton:
 
 * Background image: Supports displaying the image in the background of the button.
 
-* Rich text:  Supports displaying the rich text inside the SfButton.
+* Rich text: Supports displaying the rich text inside the SfButton.
 
 * Wrap text and trimming: Supports wrapping and trimming the button text.
 
@@ -57,9 +57,9 @@ The [ToggleButton](https://help.syncfusion.com/windowsforms/toggle-button/overvi
 
 The [SplitButton](https://help.syncfusion.com/windowsforms/split-button/overview) control allows you to create drop-down button-like interface that is a combination of regular button and drop-down list. You can use this control when you need a single control with multiple options. For example, you can use this control to create a button to set font and list available in the font family of drop-down list.
 
-### SfButton vs ButtonAdv
+## SfButton vs ButtonAdv
 
-Both SfButton and ButtonAdv controls are used for same purposes. But, the SfButton control offers rich set of features over ButtonAdv. To customize the appearance of all button states, use the SfButton control. To use the predefined button types such as Calculator, Up, Down, and so on, use the ButtonAdv control. Comparatively, the performance of SfButton control is better than ButtonAdv control.
+Both the SfButton and ButtonAdv controls are used for the same purposes. But, the SfButton control offers a rich set of features over ButtonAdv. To customize the appearance of all button states, use the SfButton control. To use the predefined button types such as Calculator, Up, Down, and so on, use the ButtonAdv control. Comparatively, the performance of the SfButton control is better than the ButtonAdv control.
 
 You can see some of the specific API differences between ButtonAdv and SfButton as follows.
 
@@ -193,7 +193,7 @@ The following list of features are in SfButton over ButtonAdv.
 Appearance customization
 </td>
 <td>
-Changes the {{'[appearance](https://help.syncfusion.com/windowsforms/button/appearance#customizing-appearance-based-on-button-state)'| markdownify }} such as back color, fore color, border, and image in all button states (hover, pressed, focus and disable states).
+Changes the {{'[appearance](https://help.syncfusion.com/windowsforms/button/appearance#customizing-appearance-based-on-button-state)'| markdownify }} such as back color, fore color, border, and image in all button states (hover, pressed, focused, and disabled states).
 
 </td>
 </tr>
@@ -229,7 +229,7 @@ Adjusts space between image and text. Refer to {{'[here](https://help.syncfusion
 Wrap Text
 </td>
 <td>
-Wraps the text by using the {{'[WrapText](https://help.syncfusion.com/windowsforms/button/button-content#wrapping-the-text)'| markdownify }} property in SfButton.
+Wraps the text by using the {{'[AllowWrapText](https://help.syncfusion.com/windowsforms/button/button-content#wrapping-the-text)'| markdownify }} property in SfButton.
 
 </td>
 </tr>
@@ -238,7 +238,7 @@ Wraps the text by using the {{'[WrapText](https://help.syncfusion.com/windowsfor
 Text Trimming
 </td>
 <td>
-Trims the text by using the {{'[AllowEllipse](https://help.syncfusion.com/windowsforms/button/button-content#trimming-and-showing-ellipsis-character)'| markdownify }} property.
+Trims the text by using the {{'[AutoEllipsis](https://help.syncfusion.com/windowsforms/button/button-content#trimming-and-showing-ellipsis-character)'| markdownify }} property.
 
 </td>
 </tr>

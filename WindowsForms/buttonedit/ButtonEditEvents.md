@@ -1,9 +1,9 @@
----
+﻿---
 layout: post
 title: ButtonEditEvents in Windows Forms ButtonEdit control | Syncfusion®
 description: Learn about ButtonEditEvents support in Syncfusion® Windows Forms ButtonEdit control and more details.
 platform: windowsforms
-control: Tools
+control: ButtonEdit
 documentation: ug
 ---
 
@@ -13,7 +13,7 @@ The [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.
 
 ## ButtonClicked Event
 
-[ButtonClicked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) event is raised whenever [ButtonEditChildButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEditChildButton.html) control is clicked. It allows you to get the child button that is clicked. 
+[ButtonClicked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html#Syncfusion_Windows_Forms_Tools_ButtonEdit_ButtonClicked) event is raised whenever [ButtonEditChildButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEditChildButton.html) control is clicked. It allows you to get the child button that is clicked.
 
 {% tabs %}
 {% highlight c# %}
@@ -28,7 +28,7 @@ private void ButtonEdit_ButtonClicked(object sender, ButtonClickedEventArgs args
 
 {% highlight vb %}
 
-buttonEdit.ButtonClicked += ButtonEdit_ButtonClicked
+AddHandler buttonEdit.ButtonClicked, AddressOf ButtonEdit_ButtonClicked
 Private Sub ButtonEdit_ButtonClicked(ByVal sender As Object, ByVal args As ButtonClickedEventArgs)
     args.ClickedButton.ButtonAlign = ButtonAlignment.Left
 End Sub
@@ -38,7 +38,7 @@ End Sub
 
 ## Border Events
 
-The [Border3DStyleChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) and [BorderSidesChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) events are raised whenever [Border3DStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html#Syncfusion_Windows_Forms_Tools_ButtonEdit_Border3DStyle) and [BorderSides](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html#Syncfusion_Windows_Forms_Tools_ButtonEdit_BorderSides) properties values are changed in [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control.
+The [Border3DStyleChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html#Syncfusion_Windows_Forms_Tools_ButtonEdit_Border3DStyleChanged) and [BorderSidesChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html#Syncfusion_Windows_Forms_Tools_ButtonEdit_BorderSidesChanged) events are raised whenever [Border3DStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html#Syncfusion_Windows_Forms_Tools_ButtonEdit_Border3DStyle) and [BorderSides](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html#Syncfusion_Windows_Forms_Tools_ButtonEdit_BorderSides) property values are changed in [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control.
 
 <table>
 <tr>
@@ -60,11 +60,11 @@ Raised when BorderSides property of ButtonEdit control is changed.</td></tr>
 
 private void buttonEdit1_Border3DStyleChanged(object sender, EventArgs e)
 {
-    Console.WriteLine("3D border styles is changed");            
+    Console.WriteLine("3D border style is changed");            
 }
 private void buttonEdit1_BorderSidesChanged(object sender, EventArgs e)
 {
-    Console.WriteLine(" Border sides is changed");           
+    Console.WriteLine("Border sides is changed");           
 }
 
 {% endhighlight %}
@@ -72,10 +72,10 @@ private void buttonEdit1_BorderSidesChanged(object sender, EventArgs e)
 {% highlight vb %}
 
 Private Sub buttonEdit1_Border3DStyleChanged(ByVal sender As Object, ByVal e As EventArgs)
-Console.WriteLine("3D border styles is changed")
+Console.WriteLine("3D border style is changed")
 End Sub
 Private Sub buttonEdit1_BorderSidesChanged(ByVal sender As Object, ByVal e As EventArgs)
-Console.WriteLine(" Border sides is changed")
+Console.WriteLine("Border sides is changed")
 End Sub
 
 {% endhighlight %}
@@ -83,7 +83,7 @@ End Sub
 
 ## ButtonEditChildButton Events
 
-The below table list the events that are available for the [ButtonEditChildButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEditChildButton.html) control.
+The below table lists the events that are available for the [ButtonEditChildButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEditChildButton.html) control.
 
 <table>
 <tr>
@@ -126,12 +126,12 @@ Raised when BackColor property of the ButtonEdit control is changed. This event 
 
 ## Click Event
 
-You can display CalendarPopup on [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) Child button click event. It can be done using the below steps.
+You can display a CalendarPopup on the [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) child button click event. It can be done using the below steps.
 
-1. Drag and drop TableLayoutPanel and add ButtonEdit control on first row and resize to its fit.
+1. Drag and drop a TableLayoutPanel and add the ButtonEdit control on the first row, and resize it to fit.
 2. Remove unwanted columns in TableLayoutPanel.
 3. Create an instance of [CalendarPopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalendarPopup.html) and [MonthCalendarAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html) control and add MonthCalendarAdv in CalendarPopup.
-4. Add the CalendarPopup control in second row.
+4. Add the CalendarPopup control in the second row.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -182,15 +182,15 @@ Public Partial Class Form1
         .Visible = False,
         .Dock = DockStyle.Fill
     }
-    Private monthCalendarAdv As MonthCalendarAdv = New MonthCalendarAdv()
+    Private monthCalendarAdv As New MonthCalendarAdv()
 
     Public Sub New()
         InitializeComponent()
-        childButton.Click += ChildButton_Click
+        AddHandler childButton.Click, AddressOf ChildButton_Click
         calendarPopup.Controls.Add(monthCalendarAdv)
         buttonEdit1.Buttons.Add(childButton)
         tableLayoutPanel1.Controls.Add(calendarPopup, 0, 1)
-        monthCalendarAdv.DateSelected += MonthCalendarAdv_DateSelected
+        AddHandler monthCalendarAdv.DateSelected, AddressOf MonthCalendarAdv_DateSelected
     End Sub
 End Class
 
@@ -200,7 +200,7 @@ End Class
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-5. Handle the Click event of buttonEditChildButton1 to display the Calendar as follows.
+5. Handle the Click event of the child button to display the Calendar as follows.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -223,7 +223,7 @@ End Sub
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-6. The event DateSelected can also be handled to display the selected date in the textbox of ButtonEdit control.
+6. The `DateSelected` event can also be handled to display the selected date in the textbox of the ButtonEdit control.
    
 {% capture codesnippet3 %}
 {% tabs %}

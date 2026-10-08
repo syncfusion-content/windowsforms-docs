@@ -3,7 +3,7 @@ layout: post
 title: About Windows Forms ButtonEdit control | Syncfusion®
 description: Learn about introduction of Syncfusion® Essential Studio® Windows Forms ButtonEdit control and more details.
 platform: windowsforms
-control: Tools
+control: ButtonEdit
 documentation: ug
 ---
 
@@ -16,12 +16,12 @@ The [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.
 
 ## Key Features
 
-* **RightToLeft** - Support right to left layout.
+* **RightToLeft** - Support for right-to-left layout.
 
-* **ButtonTypes** - Provides different set of buttons. The types are, Normal, Calculator, Currency, Up, Down, ComboXPDown, Left, Right and etc..
+* **ButtonTypes** - Provides different types of buttons: Normal, Calculator, Currency, Up, Down, ComboXPDown, Left, Right etc.
 
-* **Image Settings** - Supports set of an image for the child buttons.
+* **Image Settings** - Supports setting an image for the child buttons.
 
-* **Appearance** - Supports wide variety of built-in themes and also has ability to customize all elements in control with respect to control state.
+* **Appearance** - Supports a wide variety of built-in themes and also has the ability to customize all elements in the control with respect to the control state.
 
-* **Themes** - Supports set of visual styles to customize the look and feel of ButtonEdit control.
+* **Themes** - Supports a set of visual styles to customize the look and feel of the ButtonEdit control.

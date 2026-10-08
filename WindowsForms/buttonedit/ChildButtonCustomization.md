@@ -1,15 +1,15 @@
----
+﻿---
 layout: post
 title: ChildButtonCustomization in Windows Forms Tools control | Syncfusion®
 description: Learn about ChildButtonCustomization support in Syncfusion® Windows Forms ButtonEdit control and more details.
 platform: WindowsForms
-control: Tools
+control: ButtonEdit
 documentation: ug
 ---
 
 # ChildButtonCustomization in Windows Forms ButtonEdit
 
-The child buttons in a [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control are normal windows button, but supports additional features within ButtonEdit control.
+The child buttons in a [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control are normal Windows buttons, but supports additional features within the ButtonEdit control.
 
 ## Button Types and Border Styles
 
@@ -53,14 +53,14 @@ N> This setting will be effective only for Office2003, OfficeXP and WindowsXP st
 {% tabs %}
 {% highlight c# %}
 
-//Sample code for setting "Bump" Border Style for BorderEdit Child Button
+//Sample code for setting "Bump" Border Style for ButtonEdit Child Button
 this.buttonEditChildButton1.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-'Sample code for setting "Bump" Border Style for BorderEdit Child Button
+'Sample code for setting "Bump" Border Style for ButtonEdit Child Button
 Me.buttonEditChildButton1.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump
 
 {% endhighlight %}
@@ -76,7 +76,7 @@ Me.buttonEditChildButton1.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBor
 
 ## Button Alignment
 
-You can align the child buttons inside the [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control is set through [ButtonAlign](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEditChildButton.html#Syncfusion_Windows_Forms_Tools_ButtonEditChildButton_ButtonAlign) property.
+The alignment of child buttons inside the [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control is set through the [ButtonAlign](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEditChildButton.html#Syncfusion_Windows_Forms_Tools_ButtonEditChildButton_ButtonAlign) property.
 
 <table>
 <tr>
@@ -151,7 +151,7 @@ Sets the relative location of the image to the text in the button.</td></tr>
 {% tabs %}
 {% highlight c# %}
 
-this.buttonEditChildButton1.Image = ((System.Drawing.Image)(resources.GetObject("buttonEditChildButton2.Image")));
+this.buttonEditChildButton1.Image = ((System.Drawing.Image)(resources.GetObject("buttonEditChildButton1.Image")));
 this.buttonEditChildButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 this.buttonEditChildButton1.Text = "Browse";
 this.buttonEditChildButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -162,7 +162,7 @@ this.buttonEditChildButton1.PreferredWidth = 64;
 
 {% highlight vb %}
 
-Me.buttonEditChildButton1.Image = DirectCast((resources.GetObject("buttonEditChildButton2.Image")), System.Drawing.Image)
+Me.buttonEditChildButton1.Image = DirectCast((resources.GetObject("buttonEditChildButton1.Image")), System.Drawing.Image)
 Me.buttonEditChildButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
 Me.buttonEditChildButton1.Text = "Browse"
 Me.buttonEditChildButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -237,7 +237,7 @@ Specifies the office2010 color scheme.</td></tr>
 
 </table>
 
-N> Visual style of a child buttons is inherited from the visual style of it's parent [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control. You can override those settings using the above properties.
+N> The visual style of child buttons is inherited from the visual style of its parent [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control. You can override those settings using the above properties.
 
 ## Focusing the Child Button at Runtime
 
@@ -280,15 +280,15 @@ the button will not be visible.</td></tr>
 </table>
 
 {% tabs %}
-{%highlight c#%}
+{% highlight c# %}
 
 this.buttonEdit1.HideButton(0, false);
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vb%}
+{% highlight vb %}
 
 Me.buttonEdit1.HideButton(0, False)
 
-{%endhighlight%}
+{% endhighlight %}
 {% endtabs %}
