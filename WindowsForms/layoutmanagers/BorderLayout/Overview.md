@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: About Syncfusion® Windows Forms BorderLayout Control | Syncfusion®
 description: Learn about the introduction of Syncfusion Essential Studio Windows Forms BorderLayout control and more details.
@@ -9,11 +9,11 @@ documentation: ug
 
 # About Syncfusion® WinForms Border Layout Control
 
-`WinForms Border Layout` is a layout manager. It allows users arrange and layout the child controls along the borders to the center like .NET framework’s built-in docking support.
+`WinForms Border Layout` is a layout manager. It allows users to arrange and lay out the child controls along the borders to the center, like the .NET framework's built-in docking support.
 
-![Layout manager to dock controls at different sides](overview_images/overview_img1.jpeg)
+![WinForms BorderLayout arranging child controls along the North, South, East, West, and Center regions of the form](overview_images/overview_img1.jpeg)
 
-N> `WinForms Border Layout` does not arrange the child components automatically like other layout managers.
+>**NOTE**: `WinForms Border Layout` does not arrange the child components automatically like other layout managers.
 
 ## Key features
 

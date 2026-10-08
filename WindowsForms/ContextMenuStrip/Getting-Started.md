@@ -16,7 +16,7 @@ This section provides a quick overview for working with the **WinForms Context M
 
 ## Dependent Assemblies
 
-The following assemblies needs to be added as reference to use the control in any application.
+The following assemblies need to be added as references to use the control in any application.
 
 * Syncfusion.Tools.Windows
 * Syncfusion.Grid.Base
@@ -24,59 +24,60 @@ The following assemblies needs to be added as reference to use the control in an
 * Syncfusion.Shared.Base
 * Syncfusion.Shared.Windows
 * Syncfusion.Tools.Base
+* Syncfusion.Licensing (required for license validation starting with v16.2.0.x)
 
 ## Adding a WinForms Context Menu Strip through designer
 
-The [WinForms Context Menu Strip](https://www.syncfusion.com/winforms-ui-controls/contextmenustrip) (ContextMenuStripEx) control can be added through designer by following the below steps.
+The [WinForms Context Menu Strip](https://www.syncfusion.com/winforms-ui-controls/contextmenustrip) (ContextMenuStripEx) control can be added through the designer by following the steps below.
 
-1. Drag and drop the WinForms Context Menu Strip control from the toolbox (under the section "Syncfusion<sup>®</sup> Windows **Visual Studio Version** Toolbox **Essential Studio<sup>®</sup> Version**") into the designer page.
+1. Drag and drop the WinForms Context Menu Strip control from the toolbox (under the section **Syncfusion<sup>®</sup> Windows Forms {Visual Studio Version} Toolbox {Essential Studio Version}**) into the designer page. Replace `{Visual Studio Version}` and `{Essential Studio Version}` with the versions installed on your machine (for example, **Visual Studio 2022 Toolbox 22.1.36**).
 
    ![Adding a Context Menu](GettingStarted_Images/ContextMenuStripEx1.png)
 
 2. Now the WinForms Context Menu Strip control will be successfully added into the application along with the required dependent assemblies.
 
-   ![Adding a Context Menu](GettingStarted_Images/ContextMenuStripEx2.png)
+   ![Context Menu Strip added to the designer surface](GettingStarted_Images/ContextMenuStripEx2.png)
 
-3. Click **Type Here** for adding the items. On clicking, it will display different type of ToolStripItems, using this user can add the items as per their need.
+3. Click **Type Here** to add items. On clicking, it will display different types of ToolStripItems, using which the user can add items as per their need.
 
-   ![Populating Context Menu](GettingStarted_Images/ContextMenuStripEx3.png)
+   ![Type Here area showing the list of available ToolStripItem types](GettingStarted_Images/ContextMenuStripEx3.png)
 
-4. Items can also be added by choosing **Edit Items** under **Property** option and then select the ToolStripItems from the **Items Collection Editor**.
+4. Items can also be added by choosing **Edit Items** under the **Properties** smart tag and then selecting the ToolStripItems from the **Items Collection Editor**.
 
-   ![Populating Context Menu](GettingStarted_Images/ContextMenuStripEx4.png)
+   ![Edit Items option in the Properties smart tag](GettingStarted_Images/ContextMenuStripEx4.png)
 
-   ![Populating Context Menu](GettingStarted_Images/ContextMenuStripEx5.png)
+   ![Items Collection Editor for the Context Menu Strip](GettingStarted_Images/ContextMenuStripEx5.png)
 
-5. Once item is added, we can set the image by right-clicking on the particular item in the designer and select **Properties**. Now, in the **Properties** panel, under **Appearance > Image** we need to browse the respective image.
+5. Once the item is added, we can set the image by right-clicking on the particular item in the designer and selecting **Properties**. Now, in the **Properties** panel, under **Appearance > Image** we can browse to the respective image.
 
-   ![Image](GettingStarted_Images/ContextMenuStripEx8.png)
+   ![Image property of a menu item in the Properties panel](GettingStarted_Images/ContextMenuStripEx8.png)
 
-   ![Image](GettingStarted_Images/ContextMenuStripEx9.png)
+   ![Image file picker for the menu item](GettingStarted_Images/ContextMenuStripEx9.png)
 
-6. Similarly, we can set the text for menu item in the **Properties** panel, under **Appearance > Text** section.
+6. Similarly, we can set the text for a menu item in the **Properties** panel, under the **Appearance > Text** section.
 
-   ![Text](GettingStarted_Images/ContextMenuStripEx10.png)
+   ![Text property of a menu item in the Properties panel](GettingStarted_Images/ContextMenuStripEx10.png)
 
-7. To associate the WinForms Context Menu Strip to a control we need to drag and drop any control of your choice to the application. In this illustration, we have used "RichTextBox".
+7. To associate the WinForms Context Menu Strip to a control we need to drag and drop a control of your choice onto the form. In this illustration, we have used a **RichTextBox**.
 
    >**NOTE**:
-   To associate the WinForms Context Menu Strip control, you can choose any type of control like RichTextBox, Button, Label, TextBox, MaskedTextBox etc...
+   To associate the WinForms Context Menu Strip control, you can choose any type of control like RichTextBox, Button, Label, TextBox, MaskedTextBox, etc.
 
-   ![Associating Context Menu](GettingStarted_Images/TextBox.png)
+   ![RichTextBox dropped onto the form](GettingStarted_Images/TextBox.png)
 
-8. **Right-click** on the RichTextBox control in the designer and select **Properties**. Now, in the **Properties** panel, under **Behavior > WinForms Context Menu Strip** we need to assign the respective context menu.
+8. **Right-click** on the RichTextBox control in the designer and select **Properties**. Now, in the **Properties** panel, under **Behavior > ContextMenuStrip** we need to assign the respective context menu.
 
-   ![Associating Context Menu](GettingStarted_Images/ContextMenuStripEx6.png)
+   ![Behavior section of the Properties panel showing the ContextMenuStrip property](GettingStarted_Images/ContextMenuStripEx6.png)
 
-   ![Associating Context Menu](GettingStarted_Images/ContextMenuStripEx7.png)
+   ![Assigning the ContextMenuStrip to the RichTextBox](GettingStarted_Images/ContextMenuStripEx7.png)
 
 9. Finally, we have populated the WinForms Context Menu Strip control successfully.
 
-   ![ContextMenuStripEx](GettingStarted_Images/Associate.png)         
+   ![Context Menu Strip associated with the RichTextBox at runtime](GettingStarted_Images/Associate.png)         
 
 ## Adding a context menu through code
 
-The WinForms Context Menu Strip control can be added through code by following the below steps.
+The WinForms Context Menu Strip control can be added through code by following the steps below.
 
 1. Add the following dependency assembly references to the project.
 
@@ -88,10 +89,23 @@ The WinForms Context Menu Strip control can be added through code by following t
    * Syncfusion.Tools.Base.dll
    * Syncfusion.Licensing.dll
 
-   You can get these assemblies by browsing to the default assembly location.
-{System Drive}: \Program Files (x86) \ Syncfusion\Essential Studio\ {Platform} \ {Build Version Number} \ precompiledassemblies \ {Framework Version Number}
+   You can get these assemblies by browsing to the default assembly location:
+   `{System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\{Platform}\{Build Version Number}\precompiledassemblies\{Framework Version Number}`
 
-2. The below code snippets adds a WinForms Context Menu Strip control to the application.
+   For example: `C:\Program Files (x86)\Syncfusion\Essential Studio\Windows\22.1.36\precompiledassemblies\net472`
+
+2. Add the following `using` (C#) / `Imports` (VB) directive at the top of the code file:
+
+   {% tabs %}
+   {% highlight C# %}
+   using Syncfusion.Windows.Forms.Tools;
+   {% endhighlight %}
+   {% highlight vb %}
+   Imports Syncfusion.Windows.Forms.Tools
+   {% endhighlight %}
+   {% endtabs %}
+
+3. The below code snippets add a WinForms Context Menu Strip control to the application and wire up a `Click` handler to one of the menu items.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -111,17 +125,29 @@ this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
 this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
 this.richTextBox1 = new System.Windows.Forms.RichTextBox();
 
-//Associate the context menu
+//Configure the menu items
 this.toolStripMenuItem1.Image = System.Drawing.Image.FromFile(@"..\..\..\new.png");
 this.toolStripMenuItem2.Image = System.Drawing.Image.FromFile(@"..\..\..\copy.png");
 this.toolStripMenuItem3.Image = System.Drawing.Image.FromFile(@"..\..\..\cut.png");
 this.toolStripMenuItem1.Text = "New";
 this.toolStripMenuItem2.Text = "Copy";
 this.toolStripMenuItem3.Text = "Cut";
-this.contextMenuStripEx.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {this.toolStripMenuItem1,this.toolStripMenuItem2,this.toolStripMenuItem3,});
-this.contextMenuStripEx.ResumeLayout(false);
+this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+
+//Populate the context menu and associate it with the RichTextBox
+this.contextMenuStripEx.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+    this.toolStripMenuItem1,
+    this.toolStripMenuItem2,
+    this.toolStripMenuItem3
+});
 this.richTextBox1.ContextMenuStrip = this.contextMenuStripEx;
 this.Controls.Add(this.richTextBox1);
+
+//Sample click handler
+private void toolStripMenuItem1_Click(object sender, System.EventArgs e)
+{
+    MessageBox.Show("New was clicked.");
+}
 
 {% endhighlight %}
 
@@ -141,17 +167,28 @@ Me.toolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
 Me.toolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
 Me.richTextBox1 = New System.Windows.Forms.RichTextBox()
 
-'Associate the context menu
+'Configure the menu items
 Me.toolStripMenuItem1.Image = System.Drawing.Image.FromFile("..\..\..\new.png")
 Me.toolStripMenuItem2.Image = System.Drawing.Image.FromFile("..\..\..\copy.png")
 Me.toolStripMenuItem3.Image = System.Drawing.Image.FromFile("..\..\..\cut.png")
 Me.toolStripMenuItem1.Text = "New"
 Me.toolStripMenuItem2.Text = "Copy"
 Me.toolStripMenuItem3.Text = "Cut"
-Me.contextMenuStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.toolStripMenuItem1,Me.toolStripMenuItem2,Me.toolStripMenuItem3})
-Me.contextMenuStripEx.ResumeLayout(False)
+AddHandler toolStripMenuItem1.Click, AddressOf toolStripMenuItem1_Click
+
+'Populate the context menu and associate it with the RichTextBox
+Me.contextMenuStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() { _
+    Me.toolStripMenuItem1, _
+    Me.toolStripMenuItem2, _
+    Me.toolStripMenuItem3 _
+})
 Me.richTextBox1.ContextMenuStrip = Me.contextMenuStripEx
 Me.Controls.Add(Me.richTextBox1)
+
+'Sample click handler
+Private Sub toolStripMenuItem1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+    MessageBox.Show("New was clicked.")
+End Sub
 
 {% endhighlight %}
 {% endtabs %}
@@ -159,13 +196,22 @@ Me.Controls.Add(Me.richTextBox1)
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 
-![Add a Context Menu](GettingStarted_Images/Associate.png)
+![Context Menu Strip displayed when right-clicking the RichTextBox](GettingStarted_Images/Associate.png)
 
 ## Adding a WinForms Context Menu Strip through NuGet package
 
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#contextmenustripex) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
+1. Right-click your project in **Solution Explorer** and choose **Manage NuGet Packages…**.
+2. Search for the Syncfusion WinForms NuGet packages listed in the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#contextmenustripex) section and install them. The required packages are:
+   * `Syncfusion.Tools.Windows`
+   * `Syncfusion.Grid.Base`
+   * `Syncfusion.Grid.Windows`
+   * `Syncfusion.Shared.Base`
+   * `Syncfusion.Shared.Windows`
+   * `Syncfusion.Tools.Base`
+   * `Syncfusion.Licensing` (for license validation starting with v16.2.0.x)
+3. Add the `using Syncfusion.Windows.Forms.Tools;` / `Imports Syncfusion.Windows.Forms.Tools` directive and follow the code in the [Adding a context menu through code](#adding-a-context-menu-through-code) section to instantiate and configure the control.
 
-Find more details regarding how to install the NuGet packages in WinForms application in the following link: [Steps to install NuGet packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages).
+For more information on installing NuGet packages in a WinForms application, see [Steps to install NuGet packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages).
 
 
 

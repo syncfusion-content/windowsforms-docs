@@ -14,18 +14,18 @@ documentation: ug
 [CalculatorClosing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyEdit.html) event is handled when the calculator is closing after the specified button is clicked.
 
 {% tabs %}
-{% highlight C# %}
-private void currencyEdit1_CalculatorClosing(object sender, CalculatorClosingEventArgs e)
+{% highlight c# %}
+private void currencyEdit1_CalculatorClosing(object sender, CalculatorClosingEventArgs e)
 {
-    // This prints the final calculated value before closing.
-    MessageBox.Show("The calculated Value is" + e.FinalValue.ToString());
+    // This prints the final calculated value before closing.
+    MessageBox.Show("The calculated Value is" + e.FinalValue.ToString());
 }
 {% endhighlight %}
 {% highlight VB %}
-Private Sub currencyEdit1_CalculatorClosing(ByVal sender As Object, ByVal e AsCalculatorClosingEventArgs)
-    ' This prints the final calculated value before closing.
-    MessageBox.Show("The calculated Value is" + e.FinalValue.ToString())
-End Sub
+Private Sub currencyEdit1_CalculatorClosing(ByVal sender As Object, ByVal e As CalculatorClosingEventArgs)
+    ' This prints the final calculated value before closing.
+    MessageBox.Show("The calculated Value is" + e.FinalValue.ToString())
+End Sub
 {% endhighlight %}
 {% endtabs %}
 
@@ -35,17 +35,17 @@ This [CalculatorShowing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.
 
 {% tabs %}
 {% highlight c# %}
-private void currencyEdit1_CalculatorShowing(object sender, CancelEventArgs e)
+private void currencyEdit1_CalculatorShowing(object sender, CancelEventArgs e)
 {
-    //Cancels the calculator popup.
-    e.Cancel = true;
+    //Cancels the calculator popup.
+    e.Cancel = true;
 }
 {% endhighlight %}
 {% highlight VB %}
-Private Sub currencyEdit1_CalculatorShowing(ByVal sender As Object, ByVal e As CancelEventArgs)
-    'Cancels the calculator popup.
-     e.Cancel = True
-End Sub
+Private Sub currencyEdit1_CalculatorShowing(ByVal sender As Object, ByVal e As CancelEventArgs)
+    'Cancels the calculator popup.
+     e.Cancel = True
+End Sub
 {% endhighlight %}
 {% endtabs %}
 
@@ -54,15 +54,15 @@ End Sub
 This [DecimalValueChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyEdit.html) event is raised when [DecimalValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyEdit.html#Syncfusion_Windows_Forms_Tools_CurrencyEdit_DecimalValue) property is changed.
 
 {% tabs %}
-{% highlight C# %}
-private void currencyEdit1_DecimalValueChanged(object sender, EventArgs e)
+{% highlight c# %}
+private void currencyEdit1_DecimalValueChanged(object sender, EventArgs e)
 {
-    MessageBox.Show("Decimal Value is Changed");
+    MessageBox.Show("Decimal Value is Changed");
 }
 {% endhighlight %}
 {% highlight VB %}
-Private Sub currencyEdit1_DecimalValueChanged(ByVal sender As Object, ByVal e As EventArgs)
-    MessageBox.Show("Decimal Value is Changed")
-End Sub
+Private Sub currencyEdit1_DecimalValueChanged(ByVal sender As Object, ByVal e As EventArgs)
+    MessageBox.Show("Decimal Value is Changed")
+End Sub
 {% endhighlight %}
 {% endtabs %}

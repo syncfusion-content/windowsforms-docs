@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Getting Started with Windows Forms DomainUpdownExt | Syncfusion®
-description: Learn here about getting started with Syncfusion Windows Forms DomainUpdownExt control, its elements, and more.
+description: Learn how to get started with the Syncfusion Windows Forms DomainUpdownExt control, including assembly deployment, designer and code-based setup, and adding items.
 platform: windowsforms
-control: DomainUpdownExt 
+control: DomainUpdownExt
 documentation: ug
 ---
 
@@ -11,9 +11,9 @@ documentation: ug
 
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#domainupdownext) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application. 
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#domainupdownext) section to get the list of assemblies or the NuGet package that needs to be added as a reference to use the control in any application.
 
-You can find more details about installing the NuGet package in a Windows Forms application in the following link: 
+You can find more details about installing the NuGet package in a Windows Forms application in the following link:
 
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
 
@@ -27,7 +27,7 @@ Create a new Windows Forms project in Visual Studio to display the WinForms Doma
 
 ## Add control through designer
 
-The WinForms DomainUpDownExt control can be added to an application by dragging it from the toolbox to a designer view. The following required assembly references will be added automatically to the project:
+The WinForms DomainUpDownExt control can be added to an application by dragging it from the toolbox to the designer view. The following required assembly references will be added automatically to the project:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -36,7 +36,7 @@ The WinForms DomainUpDownExt control can be added to an application by dragging 
 * Syncfusion.Tools.Base 
 * Syncfusion.Tools.Windows
 
-![WindowsForms Domain Up Down control added by designer](getting-started_images/windowsforms-domain-up-down-added-by-designer.png) 
+![WinForms DomainUpDownExt control added to a form via the designer](getting-started_images/windowsforms-domain-up-down-added-by-designer.png)
 
 ## Add control manually in code
 
@@ -51,15 +51,15 @@ To add the control manually in C#, follow the given steps:
     * Syncfusion.Tools.Base 
     * Syncfusion.Tools.Windows
 
-2. Include the WinForms DomainUpDownExt control namespace **Syncfusion.Windows.Forms.Tools;**.
+2. Include the WinForms DomainUpDownExt control namespace **Syncfusion.Windows.Forms.Tools**.
 
 {% capture codesnippet1 %}
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 using Syncfusion.Windows.Forms.Tools;
 {% endhighlight %}
 {% highlight VB %}
-Imports Syncfusion.Windows.Forms.Tools
+Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
@@ -69,8 +69,8 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% capture codesnippet2 %}
 {% tabs %}
-{% highlight C# %}
-DomainUpDownExt domainUpDownExt1=new DomainUpDownExt();
+{% highlight c# %}
+DomainUpDownExt domainUpDownExt1 = new DomainUpDownExt();
 this.Controls.Add(domainUpDownExt1);
 {% endhighlight %}
 {% highlight VB %}
@@ -83,10 +83,10 @@ Me.Controls.Add(domainUpDownExt1)
 
 ## Adding items
 
-You can add items in WinForms DomainUpDownExt control using Items.Add method. 
+You can add items to the WinForms DomainUpDownExt control using the `Items.Add` method.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 // Add items.
 this.domainUpDownExt1.Items.Add("One");
 this.domainUpDownExt1.Items.Add("Two");
@@ -104,4 +104,4 @@ Me.domainUpDownExt1.Items.Add("Five")
 {% endhighlight %}
 {% endtabs %}
 
-![Adding items in WindowsForms Domain Up Down](getting-started_images/windowsforms-domain-up-down-adding-items.png) 
+![Items added to the WinForms DomainUpDownExt control](getting-started_images/windowsforms-domain-up-down-adding-items.png) 

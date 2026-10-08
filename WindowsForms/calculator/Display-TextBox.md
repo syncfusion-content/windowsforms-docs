@@ -9,13 +9,13 @@ documentation: ug
 
 # Display TextBox in WinForms Calculator
 
-The [WinForms Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) has a display text area on its top corner, which displays all the digits and the calculations performed on the calculator. This display area is displayed by default. To hide this display area, set the [ShowDisplayArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_ShowDisplayArea) property to false. 
+The [WinForms Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) has a display text area at the top, which shows all the digits and the calculations performed on the calculator. This display area is shown by default. To hide it, set the [ShowDisplayArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_ShowDisplayArea) property to `false`.
 
-The below properties controls the behavior of the display area.
+The following properties control the behavior of the display area:
 
-* [DisplayTextAlign](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_DisplayTextAlign)
-* [Font](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_Font)
-* [DoubleValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_DoubleValue)
+* [DisplayTextAlign](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_DisplayTextAlign) - Sets the horizontal alignment (left, right, or center) of the display text.
+* [Font](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_Font) - Sets the font used in the display area.
+* [DoubleValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_DoubleValue) - Gets or sets the numeric value shown in the display area.
 
 {% tabs %}
 {% highlight C# %}
@@ -30,15 +30,15 @@ Me.calculatorControl1.Font = New System.Drawing.Font("Verdana", 8.25F, System.Dr
 {% endhighlight %}
 {% endtabs %}
 
-![Calculator control value](Overview_images/Overview_img113.jpeg) 
+![Calculator display area with left-aligned text and a custom font](Overview_images/Overview_img113.jpeg)
 
 ## TextBox Value
 
-The behavior of the TextBox value can be controlled using the below properties.
+The behavior of the TextBox value can be controlled using the following properties:
 
-* [Culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_Culture)
-* [RepeatAssignAction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_RepeatAssignAction)
-* [UseUserOverride](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_UseUserOverride)
+* [Culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_Culture) - Sets the culture used to format numbers (for example, decimal separator).
+* [RepeatAssignAction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_RepeatAssignAction) - When `true`, pressing **=** repeatedly reapplies the last operation to the current value.
+* [UseUserOverride](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_UseUserOverride) - When `true`, uses the user's regional overrides for number formatting.
 
 {% tabs %}
 {% highlight C# %}

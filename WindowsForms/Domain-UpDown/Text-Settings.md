@@ -1,14 +1,15 @@
 ---
 layout: post
 title: Text Settings in Windows Forms DomainUpdownExt | Syncfusion®
-description: Learn about Text Settings support in Syncfusion Windows Forms DomainUpdownExt control and more details.
+description: Learn about text settings in Syncfusion Windows Forms DomainUpdownExt control, including Items collection, TextAlign, and MaxLength properties.
 platform: windowsforms
-control: DomainUpdownExt 
+control: DomainUpdownExt
 documentation: ug
 ---
+
 # Text Settings in WinForms DomainUpDownExt
 
-The text for the WinForms DomainUpDownExt control can be specified in String Collection Editor. This section discusses the properties which deals with this text.
+The text for the WinForms DomainUpDownExt control can be specified in the String Collection Editor. This section discusses the properties that deal with this text.
 
 * [Items](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.domainupdown.items?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_DomainUpDown_Items)
 * [TextAlign](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.updownbase.textalign?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_UpDownBase_TextAlign)
@@ -17,19 +18,19 @@ The text for the WinForms DomainUpDownExt control can be specified in String Col
 {% tabs %}
 {% highlight c# %}
 
-this.domainUpDownExt2.Items.Add("Six");
+this.domainUpDownExt1.Items.Add("Six");
 this.domainUpDownExt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-this.domainUpDownExt2.MaxLength = 32768;
+this.domainUpDownExt1.MaxLength = 32767;
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight vb %}
 
-Me.domainUpDownExt2.Items.Add("Six")
+Me.domainUpDownExt1.Items.Add("Six")
 Me.domainUpDownExt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-Me.domainUpDownExt2.MaxLength = 32768
+Me.domainUpDownExt1.MaxLength = 32767
 
 {% endhighlight %}
 {% endtabs %}
 
-![Text settings](DomainUpdownExt_images/Overview_img423.png) 
+![Text settings applied to the WinForms DomainUpDownExt control](DomainUpdownExt_images/Overview_img423.png) 

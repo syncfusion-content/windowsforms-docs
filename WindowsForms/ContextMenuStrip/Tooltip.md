@@ -9,7 +9,9 @@ documentation: ug
 
 # Tooltip in WinForms Context Menu Strip
 
-Tooltip is nothing but a hint, showing short format or customized text about the menu item, when mouse hover on it. It can be enabled using the [`ShowItemToolTips`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstrip.showitemtooltips?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStrip_ShowItemToolTips) property. The [`ToolTipText`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripitem.tooltiptext?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripItem_ToolTipText) property is used to set the short format or customized text for each menu item.
+A tooltip is a short hint that shows customized text about a menu item when the mouse hovers over it. It can be enabled using the [`ShowItemToolTips`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstrip.showitemtooltips?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStrip_ShowItemToolTips) property. The [`ToolTipText`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripitem.tooltiptext?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripItem_ToolTipText) property sets the short hint text for each menu item.
+
+The following example assumes that `contextMenuStripEx`, `toolStripMenuItem1`, `toolStripTextBox1`, and `toolStripComboBox1` have already been declared and added to the context menu strip.
 
 
 The below code snippet will explain how to set tooltip for WinForms Context Menu Strip items.
@@ -34,7 +36,7 @@ Me.toolStripComboBox1.ToolTipText = "Used to provide a collection of items"
 {% endhighlight %}
 {% endtabs %}
 
-![Tooltip](Tooltip_Images/Tooltip1.png)
+![Tooltip displayed for a menu item on hover](Tooltip_Images/Tooltip1.png)
 
 ## Auto Tooltip
 
@@ -61,4 +63,4 @@ Me.toolStripComboBox1.AutoToolTip = True
 {% endhighlight %}
 {% endtabs %}
 
-![Auto Tooltip](Tooltip_Images/Tooltip2.png)
+![Auto tooltip displaying the menu item's text on hover](Tooltip_Images/Tooltip2.png)

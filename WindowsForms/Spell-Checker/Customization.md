@@ -13,7 +13,7 @@ WinForms Spell Checker allows customizing options to add misspelled words from t
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 SpellCheckerAdv checker = new SpellCheckerAdv();
 
@@ -79,7 +79,7 @@ WinForms Spell Checker provides support to get suggestion list by passing the wr
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.spellCheckerAdv1.GetSuggestions("Textboxx");
 
