@@ -7,9 +7,11 @@ control: Calculate
 documentation: ug
 ---
 
-# How To Enter Vectors Of Numbers Into CalcQuickBase?
+# How to Enter Vectors of Numbers into CalcQuickBase?
 
 Some formulas, like Intercept, require you to enter the parameters as vectors of numbers. Other formulas, like Sum, accept number vectors as parameter arguments. To use such formulas through a CalcQuickBase object, you must enter the numbers by enclosing them in braces. The following code illustrates this.
+
+**C#**
 
 {% highlight c# %}
 
@@ -28,6 +30,8 @@ CalcQuickBase["known_X"] = "{6,5,11,7,5}";
 this.textBox1.Text = CalcQuickBase.ParseAndCompute("Intercept([known_Y],[known_X])");
 
 {% endhighlight %}
+
+**VB.NET**
 
 {% highlight vbnet %}
 

@@ -537,7 +537,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[SECH](https://support.office.com/en-us/article/sech-function-e05a789f-5ff7-4d7f-984a-5edb9b09556f)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[SERIESSUM](/windowsforms/calculate/supported-formulas#seriessum)'| markdownify }}</td>
+<td>{{'[SERIESSUM](/windowsforms/calculation-engine/supported-formulas/math-trigonometry#seriessum)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -580,7 +580,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[SQRTPI](https://support.office.com/en-us/article/sqrtpi-function-1fb4e63f-9b51-46d6-ad68-b3e7a8b519b4)'| markdownify }}</td>
 </tr>
 <tr>
-<td>{{'[PI](/windowsforms/calculate/supported-formulas#pi)'| markdownify }}</td>
+<td>{{'[PI](/windowsforms/calculation-engine/supported-formulas/math-trigonometry#pi)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -896,7 +896,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[COCOVARIANCE.P](https://support.microsoft.com/en-us/office/covariance-p-function-6f0e1e6d-956d-4e4b-9943-cfef0bf9edfc)'| markdownify }}
+<td>{{'[COVARIANCE.P](https://support.microsoft.com/en-us/office/covariance-p-function-6f0e1e6d-956d-4e4b-9943-cfef0bf9edfc)'| markdownify }}
 </td></tr>
 <tr>
 <td>{{'[COVARIANCE.S](/windowsforms/calculation-engine/supported-formulas/statistical#covariances)'| markdownify }}</td>
@@ -905,7 +905,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[COCOVARIANCE.S](https://support.microsoft.com/en-us/office/covariance-s-function-0a539b74-7371-42aa-a18f-1f5320314977)'| markdownify }}
+<td>{{'[COVARIANCE.S](https://support.microsoft.com/en-us/office/covariance-s-function-0a539b74-7371-42aa-a18f-1f5320314977)'| markdownify }}
 </td></tr>
 <tr>
 <td>{{'[CHISQ.INV](/windowsforms/calculation-engine/supported-formulas/statistical#chisqinv)'| markdownify }}</td>
@@ -1989,13 +1989,13 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[IMABS](https://support.office.com/en-us/article/imabs-function-b31e73c6-d90c-4062-90bc-8eb351d765a1)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[IMARQUMENT](/windowsforms/calculation-engine/supported-formulas/engineering#imargument)'| markdownify }}</td>
+<td>{{'[IMARGUMENT](/windowsforms/calculation-engine/supported-formulas/engineering#imargument)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[IMARQUMENT](https://support.office.com/en-us/article/imargument-function-eed37ec1-23b3-4f59-b9f3-d340358a034a)'| markdownify }}
+<td>{{'[IMARGUMENT](https://support.office.com/en-us/article/imargument-function-eed37ec1-23b3-4f59-b9f3-d340358a034a)'| markdownify }}
 </td></tr>
 <tr>
 <td>{{'[IMAGINARY](/windowsforms/calculation-engine/supported-formulas/engineering#imaginary)'| markdownify }}</td>

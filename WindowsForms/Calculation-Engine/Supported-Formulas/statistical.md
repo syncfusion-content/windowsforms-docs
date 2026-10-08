@@ -334,7 +334,7 @@ _CONFIDENCE.NORM(alpha,stdev,size)_
 
 * `#VALUE!` occurs when any argument is non-numeric.
 
-* `#NUM!` occurs when alpha and stdev is lesser than or equal to zero or when alpha is greater than or equal to zero.
+* `#NUM!` occurs when alpha and stdev is lesser than or equal to zero or when alpha is greater than or equal to one.
 
 * `#DIV/0!` occurs when the size is equal to one.
 
@@ -427,9 +427,7 @@ _CHISQ.DIST.RT(x,degFreedom)_
 
 * `#VALUE!` occurs when either argument is non-numeric.
 
-* `#VALUE!` occurs when any argument is non-numeric.
-
-* `#NUM!` occurs when f degFreedom < 1 or degFreedom >10^10.
+* `#NUM!` occurs when if degFreedom < 1 or degFreedom >10^10.
 
 ## CHISQ.DIST
 
@@ -451,7 +449,7 @@ _CHISQ.DIST(x,degFreedom,cumulative)_
 
 * `#VALUE!` - occurs if any argument is non-numeric.
 
-* `#NUM!` - occurs if x is negative and if f degFreedom < 1 or degFreedom >10^10.
+* `#NUM!` - occurs if x is negative and if if degFreedom < 1 or degFreedom >10^10.
 
 ## CONFIDENCE
 
@@ -718,7 +716,7 @@ _F.DIST(x,degFreedom1,degFreedom2,cumulative)_
 
 * `#VALUE!` occurs when any argument is non-numeric.
 
-* `#NUM!` occurs when x is negative, when degFreedom1< 1 and when degFreedom1< 1
+* `#NUM!` occurs when x is negative, when degFreedom1< 1 and when degFreedom2< 1
 
 ## F.DIST.RT
 
@@ -1101,23 +1099,23 @@ The `Gamma.Inv` function returns the inverse of the Gamma Distribution.
 
 **Syntax:**
 
-_GAMMA.INV(x,y,z,cumulative)_
+_GAMMA.INV(probability,alpha,beta)_
 
 **Parameters:**
 
-* `x`: The value that evaluates the function.
+* `probability`: The probability associated with the gamma distribution.
 
-* `y`: A distribution parameter.
+* `alpha`: A parameter of the distribution.
 
-* `z`: A distribution parameter.
-
-* `cumulative`: A logical value that indicates which form of the exponential function to provide.
+* `beta`: A parameter of the distribution. If beta = 1, GAMMA.INV returns the standard gamma distribution.
 
 **Remarks:**
 
-* `#NUM!` occurs when x is lesser than zero, when z is equal to or lesser than zero and occurs when alpha is equal to or lesser than zero. 
+* If any argument is text, GAMMA.INV returns the #VALUE! error value.
 
-* `#VALUE!` occurs when x or y or z is non-numeric.
+* If probability < 0 or probability > 1, GAMMA.INV returns the #NUM! error value.
+
+* If alpha ≤ 0 or if beta ≤ 0, GAMMA.INV returns the #NUM! error value.
 
 ## GAMMA.DIST
 
@@ -1480,7 +1478,7 @@ Returns a vertical array of the most frequently occurring values in an array or 
 
 **Syntax:**
 
-_MODE.MULT((number1,[number2],...)_
+_MODE.MULT(number1,[number2],...)_
 
 **Parameters:**
 
@@ -1825,7 +1823,7 @@ Returns the Poisson distribution
 
 **Syntax:**
 
-_POISSON(x,mean,cumulative))_
+_POISSON(x,mean,cumulative)_
 
 **Parameters:**
 
@@ -2127,7 +2125,7 @@ The `Standardize` returns a normalized value from a distribution characterized b
 
 **Syntax:**
 
-_Standardize(x, mean, standard_dev))
+_Standardize(x, mean, standard_dev)_
 
 **Parameters:**
 
@@ -2227,7 +2225,7 @@ _STDEV.S(number1,[number2],...])_
 
 * Arguments can either be numbers or names, arrays, or references that contain numbers.
 
-* The standard deviation is calculated by using the **n** method.
+* The standard deviation is calculated by using the **n-1** method.
 
 * Arguments that are error values or text that cannot be translated into numbers cause errors.
 
@@ -2621,7 +2619,7 @@ _BETA.DIST(x,alpha,beta,cumulative,[A],[B])_
 
 **Syntax:**
 
-_LINEST(known_y's, [known_x's], [const], [stats]))_ 
+_LINEST(known_y's, [known_x's], [const], [stats])_
 
 **Parameters:**
 

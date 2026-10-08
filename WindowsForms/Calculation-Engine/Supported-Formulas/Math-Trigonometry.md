@@ -147,7 +147,7 @@ _ARABIC( romannumeral )_
 
 
 
-* Value zero occurs when an empty string is given as an input.
+* Returns 0 when the input is an empty string.
 
 
 
@@ -882,7 +882,7 @@ _FACT(number)_
 
 
 
-`FactDouble` function returns the double factorial of a given value. The given value is an integer value.
+The `FACTDOUBLE` function returns the double factorial of a given value. The given value must be an integer.
 
 
 
@@ -1021,7 +1021,7 @@ _LN(number)_
 
 
 
-* `number`: The positive real number for which, you want the natural logarithm.
+* `number`: The positive real number for which you want the natural logarithm.
 
 
 
@@ -1053,7 +1053,7 @@ _LOG(number, base)_
 
 
 
-* `number`: The positive real number for which, you want the logarithm.
+* `number`: The positive real number for which you want the logarithm.
 
 
 
@@ -1081,7 +1081,7 @@ _LOG10(number)_
 
 
 
-* `number`: The positive real number for which, you want the base-10 logarithm.
+* `number`: The positive real number for which you want the base-10 logarithm.
 
 
 
@@ -1165,7 +1165,7 @@ _MOD(number, divisor)_
 
 
 
-* Returns `#DIV!` error when the divisor is zero.
+* Returns the `#DIV/0!` error when the divisor is zero.
 
 
 
@@ -1257,7 +1257,7 @@ _RADIANS(angle)_
 
 
 
-* `angle`: An angle in degree which is to be converted into radian.
+* `angle`: An angle in degrees which is to be converted into radians.
 
 
 
@@ -1381,7 +1381,7 @@ _SINH(number)_
 
 
 
-The `Sec` function returns the secant of an angle.
+The `SEC` function returns the secant of an angle.
 
 
 
@@ -1780,7 +1780,7 @@ _SUMIF(range, criteria, sum_range)_
 
 
 
-* `criteria`: The criteria in the form of a number, expression, or text that defines the cells to be added. For example, criteria can be expressed as ">32" or some other logical expression.
+* `criteria`: The criteria in the form of a number, expression, or text that defines the cells to be added. For example, criteria can be expressed as `">32"` or some other logical expression.
 
 
 
@@ -1896,7 +1896,7 @@ _TRUNC( number, [num_digits] )_
 
 
 
-The `IsText` function returns a Boolean value after determining that the provided value is a string.
+The `ISTEXT` function returns a Boolean value indicating whether the provided value is a string.
 
 
 
@@ -1920,7 +1920,7 @@ _ISTEXT(text)_
 
 
 
-THe `SINGN` function returns the sign of the supplied numerical argument. Returns 1 if the number is positive, zero (0) if the number is 0, and -1 if the number is negative.
+The `SIGN` function returns the sign of the supplied numerical argument. Returns 1 if the number is positive, 0 if the number is zero, and -1 if the number is negative.
 
 
 
@@ -1944,7 +1944,7 @@ _SIGN(number)_
 
 
 
-THe `TANH` function calculate the hyperbolic tangent of a supplied number.
+The `TANH` function calculates the hyperbolic tangent of a supplied number.
 
 
 
@@ -1968,7 +1968,7 @@ _TANH(number)_
 
 
 
-THe `Sumsq` function returns the sum of the squares of a series of values.
+The `SUMSQ` function returns the sum of the squares of a series of values.
 
 
 
@@ -2011,7 +2011,7 @@ _SUMSQ(number1, [number2], ...)_
 
 
 
-THe `SUMX2MY2` function calculate the sum of the difference of squares between two arrays.
+The `SUMX2MY2` function calculates the sum of the difference of squares between two arrays.
 
 
 
@@ -2053,7 +2053,7 @@ _SUMX2MY2(array_x, array_y)_
 
 
 
-THe `Sumx2py2` function returns the sum of squares of corresponding values in two arrays and returns the sum of the results.
+The `SUMX2PY2` function returns the sum of squares of corresponding values in two arrays and returns the sum of the results.
 
 
 
@@ -2095,7 +2095,7 @@ _SUMX2PY2(array_x, array_y)_
 
 
 
-THe `SUMXMY2` function returns the sum of squares of differences of corresponding values in two arrays and returns the sum of the results.
+The `SUMXMY2` function returns the sum of squares of differences of corresponding values in two arrays and returns the sum of the results.
 
 
 
@@ -2137,7 +2137,7 @@ _SUMXMY2(array_x, array_y)_
 
 
 
-THe `MULTINOMIAL` function calculates the ratio of the factorial of a sum of values to the product of factorials of those values.
+The `MULTINOMIAL` function calculates the ratio of the factorial of a sum of values to the product of factorials of those values.
 
 
 
@@ -2160,10 +2160,10 @@ _MULTINOMIAL(number1, [number2], ...)_
 
 
 
-* The argument is non-numeric, it returns the `#VALUE!` error message
+* Returns the `#VALUE!` error if any argument is non-numeric.
 
 
-* The argument is less than zero, it returns the `#NUM!` error message.
+* Returns the `#NUM!` error if any argument is less than zero.
 
 
 
@@ -2171,7 +2171,7 @@ _MULTINOMIAL(number1, [number2], ...)_
 
 
 
-THe `MROUND` function rounds a number up or down, depending on the nearest multiple of given number.
+The `MROUND` function rounds a number up or down, depending on the nearest multiple of given number.
 
 
 
@@ -2199,7 +2199,7 @@ _MROUND(number, multiple)_
 
 
 
-* it rounds up, away from zero, if the remainder of dividing number by multiple is greater than or equal to half the value of multiple.
+* Rounds up, away from zero, if the remainder of dividing number by multiple is greater than or equal to half the value of multiple.
 
 
 * The arguments (Number and Multiple) must have the same sign. If not, it returns a `#NUM!` error message.
@@ -2210,7 +2210,7 @@ _MROUND(number, multiple)_
 
 
 
-THe `RANDBETWEEN` function returns a random integer number between given numbers. A new random integer number is returned each time when worksheet is recalculated.
+The `RANDBETWEEN` function returns a random integer number between given numbers. A new random integer number is returned each time when worksheet is recalculated.
 
 
 
@@ -2238,7 +2238,7 @@ _RANDBETWEEN(bottom, top)_
 
 
 
-THe `SQRTPI` function returns the square root of a given number multiplied by the mathematical constant, π.
+The `SQRTPI` function returns the square root of a given number multiplied by the mathematical constant, π.
 
 
 
@@ -2270,7 +2270,7 @@ _SQRTPI(number)_
 
 
 
-THe `QUOTIENT` function calculates the integer portion of a division. This function is used to discard the remainder of a division.
+The `QUOTIENT` function calculates the integer portion of a division. This function is used to discard the remainder of a division.
 
 
 
@@ -2306,7 +2306,7 @@ _QUOTIENT(numerator, denominator)_
 
 
 
-THe `GCD` function returns the greatest common divisor of two or more integers. The greatest common divisor is the largest integer that that goes into all given numbers without a remainder.
+The `GCD` function returns the greatest common divisor of two or more integers. The greatest common divisor is the largest integer that goes into all given numbers without a remainder.
 
 
 
@@ -2350,7 +2350,7 @@ _GCD(number1, [number2], ...)_
 
 
 
-THe `LCM ` function returns the least common multiple of integers. The least common multiple is the smallest positive integer that is a multiple of all given numbers.
+The `LCM` function returns the least common multiple of integers. The least common multiple is the smallest positive integer that is a multiple of all given numbers.
 
 
 
@@ -2386,7 +2386,7 @@ _LCM(number1, [number2], ...)_
 
 
 
-THe `ROMAN` function converts an Arabic numeral to roman numeral as text.
+The `ROMAN` function converts an Arabic numeral to roman numeral as text.
 
 
 
@@ -2426,7 +2426,7 @@ _ROMAN(number, [form])_
 
 
 
-THe `SUMIFS` function sum all numbers in a range of cells, based on a single or multiple criteria.
+The `SUMIFS` function sums all numbers in a range of cells, based on a single or multiple criteria.
 
 
 
@@ -2462,7 +2462,7 @@ _SUMIFS(sum_range, criteria_range1, criteria1, [criteria_range2, criteria2], ...
 
 
 
-THe `MDETERM` function returns the matrix determinant of a given array.
+The `MDETERM` function returns the matrix determinant of a given array.
 
 
 
@@ -2486,7 +2486,7 @@ _MDETERM(array)_
 
 
 
-THe `MINVERSE` function calculate the inverse of a square matrix of a given array.
+The `MINVERSE` function calculates the inverse of a square matrix of a given array.
 
 
 
@@ -2514,11 +2514,11 @@ _MINVERSE(array)_
 
 
 
-* The cells in array are empty or contain text, it returns a `#VALUE!` error message
+* Returns the `#VALUE!` error if any cell in array is empty or contains text.
 
 
 
-* It returns a `#VALUE!` error message if array does not have an equal number of rows and columns.
+* Returns the `#VALUE!` error if array does not have an equal number of rows and columns.
 
 
 
@@ -2526,7 +2526,7 @@ _MINVERSE(array)_
 
 
 
-THe `MUNIT` function calculates the unit matrix for the specified dimension.
+The `MUNIT` function calculates the unit matrix for the specified dimension.
 
 
 
@@ -2550,7 +2550,7 @@ _MUNIT(dimension)_
 
 
 
-* The argument (dimension) is a value that’s equal to or smaller than zero (0), it returns the `#VALUE!` error value.
+* Returns the `#VALUE!` error if dimension is less than or equal to zero.
 
 
 
@@ -2558,7 +2558,7 @@ _MUNIT(dimension)_
 
 
 
-THe `SERIESSUM` function returns the sum of a power series.
+The `SERIESSUM` function returns the sum of a power series.
 
 
 
@@ -2608,13 +2608,6 @@ The `XLOOKUP` function allows you to search for a value in a range and return a 
 
 For example, you can look up the price of an item by its ID or find an employee's name by their employee ID.   
 
-<<<<<<< HEAD
-
-=======
- 
->>>>>>> 664175cf483e78a9bac155018dbdc92b8216b891
-
-**Syntax:**
 
 
 
@@ -2664,11 +2657,6 @@ _XLOOKUP(lookup_value, lookup_array, return_array, [if_not_found], [match_mode],
 
 * `search_mode` (optional): Specifies the search order:
 
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 664175cf483e78a9bac155018dbdc92b8216b891
   * 1 - Search from the first item (default).  
 
 
@@ -2771,20 +2759,8 @@ _XMATCH(lookup_value, lookup_array, [match_mode], [search_mode])_
 
   * 2 - Binary search in ascending order (data must be sorted).  
 
-<<<<<<< HEAD
-
-=======
-  
->>>>>>> 664175cf483e78a9bac155018dbdc92b8216b891
-
   * -2 - Binary search in descending order (data must be sorted).
 
-
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> 664175cf483e78a9bac155018dbdc92b8216b891
 **Remarks:**
 
 
@@ -2850,11 +2826,6 @@ _FLOOR.MATH(number, significance, mode)_
 
 ## FLOOR.PRECISE
 
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 664175cf483e78a9bac155018dbdc92b8216b891
 The `FLOOR.PRECISE` function rounds a number down to the nearest integer or a specified multiple of significance, regardless of the sign.
 
 
@@ -2877,11 +2848,6 @@ _FLOOR.PRECISE(number, [significance])_
 
 * `significance` (optional): The multiple to which the number should be rounded. Defaults to 1.
 
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 664175cf483e78a9bac155018dbdc92b8216b891
 **Remarks:**
 
 
@@ -2940,11 +2906,6 @@ _ISO.CEILING(number, [significance])_
 
 ## CEILING.PRECISE
 
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 664175cf483e78a9bac155018dbdc92b8216b891
 The `CEILING.PRECISE` function rounds a number up to the nearest integer or a specified multiple of significance. Like ISO.CEILING, it always rounds up regardless of whether the number is positive or negative. If the number or significance is zero, it returns zero.
 
 
@@ -2971,11 +2932,6 @@ _CEILING.PRECISE(number, [significance])_
 
 **Remarks:**
 
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 664175cf483e78a9bac155018dbdc92b8216b891
 * `CEILING.PRECISE` uses the absolute value of the multiple, ensuring that the function rounds up regardless of the signs of the number or significance.
 
 
@@ -3010,11 +2966,6 @@ _HSTACK(array1, [array2], ...)_
 
 **Remarks:**
 
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 664175cf483e78a9bac155018dbdc92b8216b891
 * `HSTACK` returns an array where each input array is appended in a column-wise fashion.
 
 
@@ -3115,7 +3066,7 @@ _PHIL(x)_
 
 
 
-* If x of an invalid data type, `PHI` will return the `#VALUE!` error. 
+* If x is of an invalid data type, `PHI` will return the `#VALUE!` error. 
 
 
 

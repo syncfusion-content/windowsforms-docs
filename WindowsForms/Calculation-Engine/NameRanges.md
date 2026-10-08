@@ -9,18 +9,18 @@ documentation: ug
 
 # Named Ranges in Windows Forms Calculation Engine (Calculate)
 
-Defining a name for cell, range of cells, formulas, constants or tables is called Named Ranges. By using names, users can easily identify the purpose of cell references 
-also make the formulas much easier to understand and maintain.
+Defining a name for a cell, range of cells, formulas, constants, or tables is called a Named Range. By using names, users can easily identify the purpose of cell references and make the formulas much easier to understand and maintain.
 
-For example, the name can be defined for the cell range of "A1:D1" as "SUMRANGE".
+For example, a name can be assigned to the cell range "A1:D1" as "SUMRANGE".
 
 ## Syntax to define a name
 
-* The name can be started with a letter or underscore(_). Also, it must not be a single letter.
-* The name must not be equal to cell references. For example: A1
-* No space must be included and the name cannot be empty string.
+* A name must start with a letter or underscore (_).
+* A name must not be a single letter.
+* A name must not equal a cell reference (for example, A1).
+* A name must not contain spaces and cannot be an empty string.
 * A name can contain up to 255 characters.
-* The names will be case-insensitive. Thus it does not distinguish between uppercase and lowercase characters.
+* Names are case-insensitive and do not distinguish between uppercase and lowercase characters.
 
 ## Add Named Ranges
 
@@ -57,7 +57,7 @@ CalcData calcData = new CalcData();
 
 CalcEngine engine = new CalcEngine(calcData);
 
-//Removing the range from NamedRange's collection,
+//Removing the range from the NamedRanges collection,
 engine.RemoveNamedRange("GROUPCELLS");
 
 {% endhighlight %}
@@ -65,7 +65,7 @@ engine.RemoveNamedRange("GROUPCELLS");
 
 ## Manage Named Ranges
 
-The names are maintained in a collection called [NamedRanges](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html#Syncfusion_Calculate_CalcEngine_NamedRanges). Also, the ranges of particular name can be changed or replaced using this collection.
+The names are maintained in a collection called [NamedRanges](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html#Syncfusion_Calculate_CalcEngine_NamedRanges). The range of a particular named range can also be changed or replaced using this collection.
 
 {% tabs %}
 {% highlight c# %}
@@ -75,13 +75,13 @@ CalcData calcData = new CalcData();
 
 CalcEngine engine = new CalcEngine(calcData);
 
-//Total name ranges count,
+//Get the total count of named ranges,
 int count = engine.NamedRanges.Count;
 
-//Changing the range of particular named range,
+//Changing the range of a particular named range,
 engine.NamedRanges["GROUPCELLS"] = "A3:A8";
 
 {% endhighlight %}
 {% endtabs %}
 
-Download Calculation with NamedRange demo from [GitHub](https://github.com/SyncfusionExamples/calculate-named-ranges-example)
+Download the [Calculation with NamedRange demo on GitHub](https://github.com/SyncfusionExamples/calculate-named-ranges-example).

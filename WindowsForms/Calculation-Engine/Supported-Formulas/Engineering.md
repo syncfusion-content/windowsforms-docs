@@ -174,7 +174,7 @@ _BIN2OCT(num, places)_
 
 **Parameters:**
 
-* `num`: The decimal integer you want to convert.
+* `num`: The binary number you want to convert.
 
 * `places`: The number of characters to use.
 
@@ -192,13 +192,13 @@ The `BIN2HEX` function converts a binary number into a hexadecimal.
 
 
 
-_BIN2HEX(num places)_ 
+_BIN2HEX(num, places)_ 
 
 
 
 **Parameters:**
 
-* `num`: The decimal integer you want to convert.
+* `num`: The binary number you want to convert.
 
 * `places`: The number of characters to use.
 
@@ -541,14 +541,14 @@ _HEX2BIN(num, places)_
 
 **Parameters:**
 
-* `num`: The decimal integer you want to convert.
+* `num`: The hexadecimal integer you want to convert.
 
 * `places`: The number of characters to use.
 
 
 **Remarks:**
 
-* `#NUM!` occurs when number is not a valid binary number and when places is negative.
+* `#NUM!` occurs when number is not a valid hexadecimal number and when places is negative.
 
 * `#VALUE!` occurs when places is non-numeric.
 
@@ -643,7 +643,7 @@ The function `COMPLEX` converts user-supplied real and imaginary coefficients in
 
 **Syntax:**
 
-COMPLEX(real_num, i_num, [suffix])
+_COMPLEX(real_num, i_num, [suffix])_
 
 **Parameters:**
 
@@ -688,7 +688,7 @@ The function `IMPRODUCT` returns the product of up to 255 supplied complex numbe
 
 **Syntax:**
 
-IMPRODUCT(inumber1, [inumber2], ...)
+_IMPRODUCT(inumber1, [inumber2], ...)_
 
 **Parameters:**
 
@@ -701,7 +701,7 @@ The function `IMDIV` returns the quotient of two supplied complex numbers.
 
 **Syntax:**
 
-IMDIV(inumber1, inumber2)
+_IMDIV(inumber1, inumber2)_
 
 **Parameters:**
 
@@ -833,8 +833,8 @@ _IMTAN(inumber)_
 The function `IMCOT` returns the cotangent of a complex number.
 
 **Syntax:**
-_
-IMCOT(inumber)_
+
+_IMCOT(inumber)_
 
 **Parameters:**
 
@@ -889,7 +889,7 @@ _IMCSCH(inumber)_
 
 ## IMCOSH
 
-The function `IMCOSH `returns the hyperbolic cosine of a complex number.
+The function `IMCOSH` returns the hyperbolic cosine of a complex number.
 
 **Syntax:**
 _IMCOSH(inumber)_
@@ -983,7 +983,7 @@ The function `IMPOWER` calculates a complex number raised to a supplied power
 
 **Syntax:**
 
-IMPOWER(inumber, number)
+_IMPOWER(inumber, number)_
 
 **Parameters:**
 

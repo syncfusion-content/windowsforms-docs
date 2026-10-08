@@ -10,7 +10,7 @@ documentation: ug
 # Working with CalcEngine in Windows Forms Calculation Engine
 
 [CalcEngine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html) encapsulates the code required to parse and compute the formulas. It manages several library functions, hash tables for Essential Calculate.  
-All the data's in `CalcEngine` is assumed to be part of a rectangular array reference through cell coordinates.
+All the data in `CalcEngine` is assumed to be part of a rectangular array reference through cell coordinates.
 
 ## Computation using CalcEngine
 
@@ -39,8 +39,8 @@ string result = engine.ParseAndComputeFormula(formula);
 
 //Computing In-Built formulas,
 
-string formula = “SUM (4,5,6)”;
-string result = engine.ParseAndComputeFormula(formula);
+string formula1 = "SUM(4,5,6)";
+string result1 = engine.ParseAndComputeFormula(formula1);
 
 {% endhighlight %}
 {% endtabs %}
@@ -64,8 +64,8 @@ string result = calcQuick.Engine.ParseAndComputeFormula(formula);
 
 //Computing In-Built formulas,
 
-string formula = “SUM (4,5,6)”;
-string result = calcQuick.Engine.ParseAndComputeFormula(formula);
+string formula1 = "SUM(4,5,6)";
+string result1 = calcQuick.Engine.ParseAndComputeFormula(formula1);
 
 {% endhighlight %}
 {% endtabs %}
@@ -132,7 +132,7 @@ CalcEngine engine = new CalcEngine(calcData);
 engine.ExcelLikeComputations = true;
 
 //Computing the DATE formula similar to excel,
-string formula = “DATE(2004,5,6)”;
+string formula = "DATE(2004,5,6)";
 
 string result = engine.ParseAndComputeFormula(formula);
 
@@ -192,7 +192,7 @@ repeated calculations.
 ### CheckDanglingStack
 
 While computing certain formulas, Essential Calculate ignores the dangling value in the calculation stack and returns the computed value.
-If you want this situation flagged as a invalid formula, then set [CheckDanglingStack](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html#Syncfusion_Calculate_CalcEngine_CheckDanglingStack) property to true. The default value is false for backward compatibility purpose.
+If you want this situation flagged as an invalid formula, then set [CheckDanglingStack](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html#Syncfusion_Calculate_CalcEngine_CheckDanglingStack) property to true. The default value is false for backward compatibility purpose.
 
 ### ForceRefreshCall
 
@@ -214,7 +214,7 @@ If you want to preserve the leading zeros in [GetValueFromArg](https://help.sync
 CalcData calcData = new CalcData();
 
 //Assign a value with leading zeros to "A1" cell,
-calcData.SetValueRowCol(04510, 1, 1);
+calcData.SetValueRowCol("04510", 1, 1);
 
 CalcEngine engine = new CalcEngine(calcData);
 
@@ -222,7 +222,7 @@ CalcEngine engine = new CalcEngine(calcData);
 engine.GetValueFromArgPreserveLeadingZeros = true;
 
 //Returns the result with leading zeros,
-string result = engine.GetValueFromArg("A1")
+string result = engine.GetValueFromArg("A1");
 
 {% endhighlight %}
 {% endtabs %}
@@ -312,7 +312,7 @@ CalcEngine engine = new CalcEngine(calcData);
 
 engine.SupportLogicalOperators = true;
 
-string result = engine.ParseAndComputeFormula(“=IF("C"="S "OR" C"="C",1,2)”);
+string result = engine.ParseAndComputeFormula("=IF(\"C\"=\"S\" OR \"C\"=\"C\",1,2)");
 
 {% endhighlight %}
 {% endtabs %}
@@ -344,7 +344,7 @@ engine.RegisterGridAsSheet("Sheet2", calcData1, i);
 
 engine.SupportsSheetRanges = true;
 
-string result = engine.ParseAndComputeFormula(“=SUM(sheet1!B1:B4,sheet2!B1:B4)”);
+string result = engine.ParseAndComputeFormula("=SUM(sheet1!B1:B4,sheet2!B1:B4)");
 
 {% endhighlight %}
 {% endtabs %}
@@ -445,7 +445,7 @@ calcData.SetValueRowCol("=SUM(B1,B2,B3)", 1, 4);
 CalcEngine engine = new CalcEngine(calcData);
 
 //Passing the cell reference,
-string result = engine.GetValueFromParentObject("D1")
+string result = engine.GetValueFromParentObject("D1");
 
 //Passing the row/column index,
 string result = engine.GetValueFromParentObject(1, 4);

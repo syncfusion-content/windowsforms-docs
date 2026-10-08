@@ -15,7 +15,7 @@ documentation: ug
 
 
 
-Returns the number of cells containing numbers in a field of a list or database that satisfy specified conditions
+Returns the number of cells containing numbers in a field of a list or database that satisfy specified conditions.
 
 
 
@@ -40,7 +40,7 @@ _DCOUNT(database, field, criteria)_
 ## DCOUNTA
 
 
-Returns the number of non-blank cells in a field of a list or database, that satisfy specified conditions.
+Returns the number of non-blank cells in a field of a list or database that satisfy specified conditions.
 
 
 
@@ -66,7 +66,7 @@ _DCOUNTA(database, field, criteria)_
 
 
 
-Calculates the average of values in a field of a list or database, that satisfy specified conditions.
+Calculates the average of values in a field of a list or database that satisfy specified conditions.
 
 
 
@@ -92,7 +92,7 @@ _DAVERAGE(database, field, criteria)_
 
 
 
-Returns a single value from a field of a list or database, that satisfy specified conditions.
+Returns a single value from a field of a list or database that satisfy specified conditions.
 
 
 
@@ -114,7 +114,7 @@ _DGET(database, field, criteria)_
 
 ## DMAX
 
-Returns the maximum value from a field of a list or database, that satisfy specified conditions
+Returns the maximum value from a field of a list or database that satisfy specified conditions.
 
 **Syntax:**
 
@@ -141,7 +141,7 @@ _DMAX(database, field, criteria)_
 
 ## DMIN
 
-Returns the minimum value from a field of a list or database, that satisfy specified conditions
+Returns the minimum value from a field of a list or database that satisfy specified conditions.
 
 **Syntax:**
 
@@ -167,7 +167,7 @@ _DMIN(database, field, criteria)_
 
 ## DPRODUCT
 
-Multiplies the values in the field(column) of records in a list or database that match the conditions you specify
+Multiplies the values in the field(column) of records in a list or database that match the conditions you specify.
 
 **Syntax:**
 
@@ -193,7 +193,7 @@ _DPRODUCT(database, field, criteria)_
 
 ## DSTDEVP
 
-Calculates the standard deviation (based on an entire population) of values in a field of a list or database, that satisfy specified conditions
+Calculates the standard deviation (based on an entire population) of values in a field of a list or database that satisfy specified conditions.
 
 **Syntax:**
 
@@ -217,9 +217,9 @@ _DSTDEVP(database, field, criteria)_
 
 * To perform an operation on an entire column in a database, enter a blank line below the column labels in the criteria range.
 
-## DSTEV
+## DSTDEV
 
-Calculates the standard deviation (based on a sample of a population) of values in a field of a list or database, that satisfy specified conditions
+Calculates the standard deviation (based on a sample of a population) of values in a field of a list or database that satisfy specified conditions.
 
 **Syntax:**
 
@@ -245,7 +245,7 @@ _DSTDEV(database, field, criteria)_
 
 ## DSUM
 
-Adds the numbers in the field (column) of records in a list or database that match the conditions you specify
+Adds the numbers in the field (column) of records in a list or database that match the conditions you specify.
 
 **Syntax:**
 
@@ -271,7 +271,7 @@ _DSUM(database, field, criteria)_
 
 ## DVAR
 
-Calculates the variance (based on a sample of a population) of values in a field of a list or database, that satisfy specified conditions.
+Calculates the variance (based on a sample of a population) of values in a field of a list or database that satisfy specified conditions.
 
 **Syntax:**
 
@@ -299,7 +299,7 @@ _DVAR(database, field, criteria)_
 
 ## DVARP
 
-Calculates the variance (based on an entire population) of values in a field of a list or database, that satisfy specified conditions.
+Calculates the variance (based on an entire population) of values in a field of a list or database that satisfy specified conditions.
 
 **Syntax:**
 
