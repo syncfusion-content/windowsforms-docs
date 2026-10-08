@@ -600,8 +600,12 @@ A sample application that illustrates real time data usage which is distributed 
 **Sample Location:** "&lt;sample installation location&gt;\Syncfusion\EssentialStudio\Version Number\Windows\chart\Real Time\Chart Recorder"
 
 ## See also
+
 - [How to create a real-time chart in WF](https://support.syncfusion.com/kb/article/8266/how-to-create-a-real-time-chart-in-wf)
 - [How do I use Essential Chart to visualize data from Essential Grid](https://support.syncfusion.com/kb/article/1189/how-do-i-use-essential-chart-to-visualize-data-from-essential-grid)
 - [How to bind a data source to a WinForms Chart using the chart wizard](https://support.syncfusion.com/kb/article/6867/how-to-bind-a-data-source-to-a-winforms-chart-using-the-chart-wizard)
 - [How to bind a dataset from a database to the WinForms Chart](https://support.syncfusion.com/kb/article/1182/how-to-bind-a-dataset-from-a-database-to-the-winforms-chart)
 - [How to I set Custom Data binding in Chart](https://support.syncfusion.com/kb/article/1180/how-to-i-set-custom-databinding-in-chart)
+- [How to customize data points in Windows Forms Chart](https://help.syncfusion.com/windowsforms/chart/faq/how-to-customize-the-data-points-for-chart-series)
+- [How to filter data points in Windows Forms Chart](https://help.syncfusion.com/windowsforms/chart/faq/how-to-filter-particular-set-of-data-points-in-the)
+- [How do I filter particular set of data points in the WinForms Chart series](https://support.syncfusion.com/kb/article/1197/how-do-i-filter-particular-set-of-data-points-in-the-winforms-chart-series)

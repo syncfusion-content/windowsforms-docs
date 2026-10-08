@@ -9,356 +9,146 @@ documentation: ug
 
 # Chart Area in Windows Forms Chart
 
-The [ChartArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html) represents the plotting region in which the chart axes, series, and other elements are rendered. This section explains the configurable properties, read-only information, and area-related methods of `ChartArea`.
+The [ChartArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html) is the rectangular plotting region in which the chart displays its axes and series.
 
-## Location and Size
+## Axis Spacing
 
-Use `Location` and `Size` to specify the position and dimensions of the chart area. Use `MinSize` to define its minimum size.
+The [AxisSpacing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_AxisSpacing) property is useful when multiple axes are rendered on the same side of the chart area. By default, 2 pixels of spacing is applied between adjacent axes. Increasing the value adds more separation between them.
 
-{% tabs %}
-{% highlight c# %}
-this.chartControl1.ChartArea.Location = new Point(20, 20);
-this.chartControl1.ChartArea.Size = new Size(500, 300);
-this.chartControl1.ChartArea.MinSize = new SizeF(300, 200);
-{% endhighlight %}
-{% highlight vb %}
-Me.chartControl1.ChartArea.Location = New Point(20, 20)
-Me.chartControl1.ChartArea.Size = New Size(500, 300)
-Me.chartControl1.ChartArea.MinSize = New SizeF(300, 200)
-{% endhighlight %}
-{% endtabs %}
-
-The following get-only properties provide calculated information about the chart-area position and size:
-
-* `Left` and `Top` return the coordinates of the upper-left edge.
-* `Right` and `Bottom` return the coordinates of the lower-right edge.
-* `Center` returns the center point.
-
-The `Width` and `Height` properties can also be used to set the individual dimensions of the chart area.
+The following code adds `30` pixels of horizontal and vertical spacing between axes.
 
 {% tabs %}
 {% highlight c# %}
-this.chartControl1.ChartArea.Width = 500;
-this.chartControl1.ChartArea.Height = 300;
+this.chartControl.ChartArea.AxisSpacing = new SizeF(30, 30);
 {% endhighlight %}
 {% highlight vb %}
-Me.chartControl1.ChartArea.Width = 500
-Me.chartControl1.ChartArea.Height = 300
+Me.chartControl.ChartArea.AxisSpacing = New SizeF(30, 30)
 {% endhighlight %}
 {% endtabs %}
 
-## Chart Area Margins
+![Chart Area Axis Spacing in Windows Forms Chart](/Chart-Area_images/chart-area-axis-spacing.png)
 
-Use `ChartAreaMargins` to specify margins for the complete chart area. Use `ChartPlotAreaMargins` to specify plot-area margins without including the axis-label dimensions. Both properties support negative values.
+## Full stack maximum
+
+The [FullStackMax](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_FullStackMax) property defines the total value represented by a complete stack in full-stacking chart types. Its default value is `100`, causing the stacked segments to be calculated against a total value of 100.
+
+The following code sets the full-stack maximum to `80`.
 
 {% tabs %}
 {% highlight c# %}
-this.chartControl1.ChartArea.ChartAreaMargins =
-    new ChartMargins(10, 10, 10, 10);
-this.chartControl1.ChartArea.ChartPlotAreaMargins =
-    new ChartMargins(5, 5, 5, 5);
+chartControl.ChartArea.FullStackMax = 80;
 {% endhighlight %}
 {% highlight vb %}
-Me.chartControl1.ChartArea.ChartAreaMargins =
-    New ChartMargins(10, 10, 10, 10)
-Me.chartControl1.ChartArea.ChartPlotAreaMargins =
-    New ChartMargins(5, 5, 5, 5)
+chartControl.ChartArea.FullStackMax = 80
 {% endhighlight %}
 {% endtabs %}
 
-## Bounds and Client Area
+![Chart Area FullStack Max in Windows Forms Chart](/Chart-Area_images/chart-area-fullstack-max.png)
 
-Use `BoundsByAxes` to specify whether axis-label dimensions are considered when calculating the rendering bounds. Use `ClientRectangle` to specify the rectangle occupied by the chart area in client coordinates.
+## Dividing the chart area
+
+Use [DivideArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_DivideArea) property divides a single chart area into equal sections for displaying Pie, Funnel, or Pyramid series separately. By default, the chart area is not divided.
+
+Enabling [DivideArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_DivideArea) allows you to:
+- Display the corresponding series name as the title of each section.
+- Retrieve the bounds of an individual section.
+- Render Pie series with the same radius.
+
+N> [VisibleAllPies](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_VisibleAllPies) property is deprecated. Use the [DivideArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_DivideArea) property instead. When [DivideArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_DivideArea) is enabled, the `ShowSeriesTitle` property can display the title of each series in its corresponding section.
+
+The following code divides the chart area for the supported series.
 
 {% tabs %}
 {% highlight c# %}
-this.chartControl1.ChartArea.BoundsByAxes = true;
-this.chartControl1.ChartArea.ClientRectangle =
-    new Rectangle(20, 20, 500, 300);
+chartControl.ChartArea.DivideArea = true;
 {% endhighlight %}
 {% highlight vb %}
-Me.chartControl1.ChartArea.BoundsByAxes = True
-Me.chartControl1.ChartArea.ClientRectangle =
-    New Rectangle(20, 20, 500, 300)
+chartControl.ChartArea.DivideArea = True
 {% endhighlight %}
 {% endtabs %}
 
-`RenderGlobalBounds` is a get-only property that returns the rectangle used to render the chart area in global coordinates.
+![Chart DivideArea in Windows Forms Chart](/Chart-Area_images/chart-area-dividearea.png)
 
-## Axis Spacing and Layout
+### Displaying series titles
 
-Use `AxisSpacing` to specify the spacing between multiple axes rendered on the same side. Use `YAxesLayoutMode` to specify how multiple Y-axes are arranged.
+The series name can be displayed as the title of its corresponding section in a divided chart area. This helps identify the Pie, Funnel, or Pyramid series rendered in each section.
+
+Use the [ShowSeriesTitle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPieConfigItem.html#Syncfusion_Windows_Forms_Chart_ChartPieConfigItem_ShowSeriesTitle) property of the respective series configuration to display the series title.
 
 {% tabs %}
 {% highlight c# %}
-this.chartControl1.ChartArea.AxisSpacing = new SizeF(10, 10);
-this.chartControl1.ChartArea.YAxesLayoutMode =
-    ChartAxesLayoutMode.Stacking;
+
+// Displays the series title for a Pie series.
+series.ConfigItems.PieItem.ShowSeriesTitle = true;
+// Displays the series title for a Funnel series.
+series.ConfigItems.FunnelItem.ShowSeriesTitle = true;
+// Displays the series title for a Pyramid series.
+series.ConfigItems.PyramidItem.ShowSeriesTitle = true;
+
 {% endhighlight %}
 {% highlight vb %}
-Me.chartControl1.ChartArea.AxisSpacing = New SizeF(10, 10)
-Me.chartControl1.ChartArea.YAxesLayoutMode =
-    ChartAxesLayoutMode.Stacking
+
+' Displays the series title for a Pie series.
+series.ConfigItems.PieItem.ShowSeriesTitle = True
+' Displays the series title for a Funnel series.
+series.ConfigItems.FunnelItem.ShowSeriesTitle = True
+' Displays the series title for a Pyramid series.
+series.ConfigItems.PyramidItem.ShowSeriesTitle = True
+
 {% endhighlight %}
 {% endtabs %}
 
-The following get-only properties provide axis information:
+### Retrieving series bounds
 
-* `Axes` returns the collection of axes associated with the chart area. Additional axes can be added or removed, but the primary axes cannot be removed.
-* `PrimaryXAxis` returns the primary horizontal axis.
-* `PrimaryYAxis` returns the primary vertical axis.
-* `AxesInfoBar` returns information about the axes bar representation.
-* `XLayouts` and `YLayouts` return the X- and Y-axis layout definitions.
+The [GetSeriesBounds](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_GetSeriesBounds_Syncfusion_Windows_Forms_Chart_ChartSeries_) method returns the rectangular bounds occupied by a series in the divided chart area.
 
-> **Note:** `XLayouts` and `YLayouts` are internal infrastructure properties that are hidden from the designer and IntelliSense. They should not normally be modified directly.
-
-## Chart Area Tooltip
-
-Use `ChartAreaToolTip` to display tooltip text for the chart area.
+The following code draws a border around every series section in the divided chart area.
 
 {% tabs %}
 {% highlight c# %}
-this.chartControl1.ChartArea.ChartAreaToolTip = "Chart plotting area";
+private void chartControl_ChartAreaPaint(object sender, PaintEventArgs e)
+{
+    using (Pen borderPen = new Pen(Color.DimGray, 1))
+    {
+        foreach (ChartSeries series in this.chartControl.Series)
+        {
+            RectangleF seriesBounds = this.chartControl.ChartArea.GetSeriesBounds(series);
+            e.Graphics.DrawRectangle(borderPen, seriesBounds.X, seriesBounds.Y, seriesBounds.Width, seriesBounds.Height);
+        }
+    }
+}
 {% endhighlight %}
 {% highlight vb %}
-Me.chartControl1.ChartArea.ChartAreaToolTip = "Chart plotting area"
+Private Sub chartControl_ChartAreaPaint(sender As Object, e As PaintEventArgs)
+    Using borderPen As New Pen(Color.DimGray, 1)
+        For Each series As ChartSeries In Me.chartControl.Series
+            Dim seriesBounds As RectangleF = Me.chartControl.ChartArea.GetSeriesBounds(series)
+            e.Graphics.DrawRectangle(borderPen, seriesBounds.X, seriesBounds.Y, seriesBounds.Width, seriesBounds.Height)
+        Next
+    End Using
+End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## Cursor State
+![Chart DivideArea bounds in Windows Forms Chart](/Chart-Area_images/chart-divide-area-bounds.png)
 
-Use `CursorLocation` to specify the cursor location in the chart area. Use `CursorReDraw` to specify whether the cursor must be redrawn.
+## Retrieving the Axes Associated with a Series
+
+The [GetXAxis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_GetXAxis_Syncfusion_Windows_Forms_Chart_ChartSeries_) and [GetYAxis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_GetYAxis_Syncfusion_Windows_Forms_Chart_ChartSeries_) methods retrieve the X-axis and Y-axis associated with a specified series. These methods are useful when a chart contains multiple axes and you need to determine which axes are being used by a particular series.
 
 {% tabs %}
 {% highlight c# %}
-this.chartControl1.ChartArea.CursorLocation = new Point(100, 100);
-this.chartControl1.ChartArea.CursorReDraw = true;
+ChartSeries series = this.chartControl.Series[0];
+ChartAxis xAxis = this.chartControl.ChartArea.GetXAxis(series);
+ChartAxis yAxis = this.chartControl.ChartArea.GetYAxis(series);
 {% endhighlight %}
 {% highlight vb %}
-Me.chartControl1.ChartArea.CursorLocation = New Point(100, 100)
-Me.chartControl1.ChartArea.CursorReDraw = True
+Dim series As ChartSeries = Me.chartControl.Series(0)
+Dim xAxis As ChartAxis = Me.chartControl.ChartArea.GetXAxis(series)
+Dim yAxis As ChartAxis = Me.chartControl.ChartArea.GetYAxis(series)
 {% endhighlight %}
 {% endtabs %}
 
-## Indexed Data and Empty-Point Gaps
+## See also
 
-Use `IsIndexed` to specify whether the chart area contains indexed data. Set `IsAllowGap` to `true` to display gaps for empty points in indexed data.
-
-{% tabs %}
-{% highlight c# %}
-this.chartControl1.ChartArea.IsIndexed = true;
-this.chartControl1.ChartArea.IsAllowGap = true;
-{% endhighlight %}
-{% highlight vb %}
-Me.chartControl1.ChartArea.IsIndexed = True
-Me.chartControl1.ChartArea.IsAllowGap = True
-{% endhighlight %}
-{% endtabs %}
-
-## Full-Stack Maximum
-
-Use `FullStackMax` to specify the maximum value used by full-stacking chart types.
-
-{% tabs %}
-{% highlight c# %}
-this.chartControl1.ChartArea.FullStackMax = 100;
-{% endhighlight %}
-{% highlight vb %}
-Me.chartControl1.ChartArea.FullStackMax = 100
-{% endhighlight %}
-{% endtabs %}
-
-## Partial Axis Labels
-
-Use `HidePartialLabels` to hide axis labels that are partially visible in the chart area.
-
-{% tabs %}
-{% highlight c# %}
-this.chartControl1.ChartArea.HidePartialLabels = true;
-{% endhighlight %}
-{% highlight vb %}
-Me.chartControl1.ChartArea.HidePartialLabels = True
-{% endhighlight %}
-{% endtabs %}
-
-## Multiple Pie Series
-
-Use `MultiplePies` to render multiple Pie series in the same chart area.
-
-{% tabs %}
-{% highlight c# %}
-this.chartControl1.ChartArea.MultiplePies = true;
-{% endhighlight %}
-{% highlight vb %}
-Me.chartControl1.ChartArea.MultiplePies = True
-{% endhighlight %}
-{% endtabs %}
-
-## Rendering State
-
-Use `NeedRedraw` to indicate that the chart-area representation must be redrawn. Use `ReDrawAxes` to render axis labels whenever the chart is updated. Use `UpdateClientBounds` to control whether the client bounds are updated.
-
-{% tabs %}
-{% highlight c# %}
-this.chartControl1.ChartArea.NeedRedraw = true;
-this.chartControl1.ChartArea.ReDrawAxes = true;
-this.chartControl1.ChartArea.UpdateClientBounds = true;
-{% endhighlight %}
-{% highlight vb %}
-Me.chartControl1.ChartArea.NeedRedraw = True
-Me.chartControl1.ChartArea.ReDrawAxes = True
-Me.chartControl1.ChartArea.UpdateClientBounds = True
-{% endhighlight %}
-{% endtabs %}
-
-### Text Rendering Quality
-
-Use `TextRenderingHint` to specify the text-rendering quality. Its default value is `AntiAlias`.
-
-{% tabs %}
-{% highlight c# %}
-this.chartControl1.ChartArea.TextRenderingHint =
-    TextRenderingHint.AntiAlias;
-{% endhighlight %}
-{% highlight vb %}
-Me.chartControl1.ChartArea.TextRenderingHint =
-    TextRenderingHint.AntiAlias
-{% endhighlight %}
-{% endtabs %}
-
-### Legacy Appearance
-
-Use `LegacyAppearance` to specify whether the chart area uses the legacy appearance.
-
-{% tabs %}
-{% highlight c# %}
-this.chartControl1.ChartArea.LegacyAppearance = true;
-{% endhighlight %}
-{% highlight vb %}
-Me.chartControl1.ChartArea.LegacyAppearance = True
-{% endhighlight %}
-{% endtabs %}
-
-## Axis Requirements
-
-Use `RequireAxes` to specify whether axes are required for the chart types rendered in the chart area. Use `RequireInvertedAxes` to specify whether inverted axes are required.
-
-{% tabs %}
-{% highlight c# %}
-this.chartControl1.ChartArea.RequireAxes = true;
-this.chartControl1.ChartArea.RequireInvertedAxes = false;
-{% endhighlight %}
-{% highlight vb %}
-Me.chartControl1.ChartArea.RequireAxes = True
-Me.chartControl1.ChartArea.RequireInvertedAxes = False
-{% endhighlight %}
-{% endtabs %}
-
-## Read-Only Chart Area Information
-
-The following get-only properties expose chart-area information and do not require assignment examples:
-
-* `Chart` returns the chart that owns the chart area.
-* `ChartRegions` returns the rendered chart regions.
-* `CustomPoints` returns the collection of custom points rendered in the chart area.
-* `SeriesParameters` returns the parameters used while rendering chart series.
-
-## Obsolete Properties
-
-`AxesSideBySide` is obsolete. Use `XAxesLayoutMode` and `YAxesLayoutMode` to arrange multiple axes.
-
-{% tabs %}
-{% highlight c# %}
-this.chartControl1.ChartArea.XAxesLayoutMode =
-    ChartAxesLayoutMode.Stacking;
-this.chartControl1.ChartArea.YAxesLayoutMode =
-    ChartAxesLayoutMode.Stacking;
-{% endhighlight %}
-{% highlight vb %}
-Me.chartControl1.ChartArea.XAxesLayoutMode =
-    ChartAxesLayoutMode.Stacking
-Me.chartControl1.ChartArea.YAxesLayoutMode =
-    ChartAxesLayoutMode.Stacking
-{% endhighlight %}
-{% endtabs %}
-
-N> `RotateCenter` is also obsolete but is excluded because it applies to 3D rendering.
-
-## Chart Area Methods
-
-The following methods are directly useful for working with chart-area axes, regions, bounds, and cursor symbols. Drawing, measuring, disposal, internal appearance, zoom calculation, and 3D transformation methods are not covered here.
-
-### Get the Rectangle Between Two Axes
-
-Use `GetAxesRect` to retrieve the rectangle that encompasses two specified axes.
-
-{% tabs %}
-{% highlight c# %}
-RectangleF axesRectangle = ChartArea.GetAxesRect(
-    this.chartControl1.PrimaryXAxis,
-    this.chartControl1.PrimaryYAxis);
-{% endhighlight %}
-{% highlight vb %}
-Dim axesRectangle As RectangleF = ChartArea.GetAxesRect(
-    Me.chartControl1.PrimaryXAxis,
-    Me.chartControl1.PrimaryYAxis)
-{% endhighlight %}
-{% endtabs %}
-
-### Get a Chart Region
-
-Use `GetChartRegion` to retrieve a rendered chart region by its index.
-
-{% tabs %}
-{% highlight c# %}
-ChartRegion region = this.chartControl1.ChartArea.GetChartRegion(0);
-{% endhighlight %}
-{% highlight vb %}
-Dim region As ChartRegion = Me.chartControl1.ChartArea.GetChartRegion(0)
-{% endhighlight %}
-{% endtabs %}
-
-### Get Bounds Based on Axes
-
-Use `GetFrontBoundByAxes` to retrieve the front bounds calculated from the chart axes. Pass `true` to include all axes.
-
-{% tabs %}
-{% highlight c# %}
-RectangleF frontBounds =
-    this.chartControl1.ChartArea.GetFrontBoundByAxes(true);
-{% endhighlight %}
-{% highlight vb %}
-Dim frontBounds As RectangleF =
-    Me.chartControl1.ChartArea.GetFrontBoundByAxes(True)
-{% endhighlight %}
-{% endtabs %}
-
-### Get the Axes Associated with a Series
-
-Use `GetXAxis` and `GetYAxis` to retrieve the X- and Y-axes associated with a chart series.
-
-{% tabs %}
-{% highlight c# %}
-ChartAxis xAxis = this.chartControl1.ChartArea.GetXAxis(series);
-ChartAxis yAxis = this.chartControl1.ChartArea.GetYAxis(series);
-{% endhighlight %}
-{% highlight vb %}
-Dim xAxis As ChartAxis = Me.chartControl1.ChartArea.GetXAxis(series)
-Dim yAxis As ChartAxis = Me.chartControl1.ChartArea.GetYAxis(series)
-{% endhighlight %}
-{% endtabs %}
-
-### Set the Cursor Symbol
-
-Use `SetSeriesSymbolForCursor` to set a custom symbol for series points when the interactive cursor moves over the chart area.
-
-{% tabs %}
-{% highlight c# %}
-ChartSymbolInfo symbolInfo = new ChartSymbolInfo();
-this.chartControl1.ChartArea.SetSeriesSymbolForCursor(symbolInfo);
-{% endhighlight %}
-{% highlight vb %}
-Dim symbolInfo As New ChartSymbolInfo()
-Me.chartControl1.ChartArea.SetSeriesSymbolForCursor(symbolInfo)
-{% endhighlight %}
-{% endtabs %}
+- [How to display only the chart area in Windows Forms Chart](https://help.syncfusion.com/windowsforms/chart/faq/how-to-display-the-chart-area-alone)

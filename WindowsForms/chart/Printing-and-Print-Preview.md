@@ -123,3 +123,4 @@ chartControl.PrintDocument.PrintToolBar = True
 - [How do I print a Chart in WinForms](https://support.syncfusion.com/kb/article/4023/how-do-i-print-a-chart-in-winforms)
 - [How do I set the color to print a WinForms Chart](https://support.syncfusion.com/kb/article/4128/how-do-i-set-the-color-to-print-a-winforms-chart)
 - [How to print multiple charts in Windows Forms Chart](https://help.syncfusion.com/windowsforms/chart/faq/how-to-print-a-chart-in-multiple-pages)
+- [How to copy the chart to clipboard](https://support.syncfusion.com/kb/article/8319/how-to-copy-the-chart-to-clipboard)

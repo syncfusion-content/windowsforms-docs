@@ -628,3 +628,5 @@ System.Diagnostics.Process.Start(exportFileName)
 ## See also
 
 - [How to export a chart into various formats in WinForms?](https://support.syncfusion.com/kb/article/4126/how-to-export-a-chart-into-various-formats-in-winforms)
+- [How to export chart points to CSV in Windows Forms Chart](https://help.syncfusion.com/windowsforms/chart/faq/how-to-export-the-chart-points-into-a-csv-file)
+- [How to save the chart template without getting a popup in WF Chart](https://support.syncfusion.com/kb/article/10318/how-to-save-the-chart-template-without-getting-a-popup--in-wf-chart)

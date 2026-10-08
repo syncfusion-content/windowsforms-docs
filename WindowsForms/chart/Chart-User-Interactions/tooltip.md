@@ -260,3 +260,4 @@ chartControl.Series(0).FancyToolTip.Border.Width = 1
 - [How to display tooltips in WinForms Chart](https://support.syncfusion.com/kb/article/1178/how-to-display-winforms-chart-tooltips)
 - [How to display fancy tooltips in WinForms Chart](https://support.syncfusion.com/kb/article/1176/how-to-display-fancytooltips-in-winforms-chart)
 - [How to format tooltips in WinForms Chart series?](https://support.syncfusion.com/kb/article/1226/how-to-format-tooltips-in-winforms-chart-series)
+- [How to display custom tooltips in Windows Forms Chart](https://help.syncfusion.com/windowsforms/chart/faq/how-to-display-custom-tooltip-over-histogram-chart)

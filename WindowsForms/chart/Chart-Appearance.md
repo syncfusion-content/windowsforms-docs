@@ -733,8 +733,36 @@ chartControl.Skins = Skins.Almond
 
 ![Chart Skins in Windows Forms Chart](Chart-Appearance_images/chart-skins.png)
 
+## Text rendering quality
+
+The [TextRenderingHint](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_TextRenderingHint) property controls the quality used to render text in the chart. Higher-quality settings produce smoother text, while lower-quality settings can improve rendering performance.
+
+n> The Chart Area of [TextRenderingHint](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_TextRenderingHint) property is obsolete. Use the [TextRenderingHint](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_TextRenderingHint) property to configure the text-rendering quality of the chart.
+
+The following code sets the text-rendering quality to `SingleBitPerPixelGridFit`.
+
+{% tabs %}
+{% highlight c# %}
+this.chartControl.TextRenderingHint = TextRenderingHint.SingleBitPerPixelGridFit;
+{% endhighlight %}
+{% highlight vb %}
+Me.chartControl.TextRenderingHint = TextRenderingHint.SingleBitPerPixelGridFit
+{% endhighlight %}
+{% endtabs %}
+
+![Chart Text render quality in Windows Forms Chart](Chart-Appearance_images/chart-text-render-quality.png)
+
 ## See also
 
 - [How to customize the appearance of chart axes in WinForms Chart](https://support.syncfusion.com/kb/article/1066/how-to-customize-the-appearance-of-chart-axes-in-winforms-chart)
 - [How to display an image as the background of the chart area in WinForms Chart](https://support.syncfusion.com/kb/article/1075/how-to-display-an-image-as-the-background-of-the-chartarea-in-winforms-chart)
 - [How to customize background and foreground settings in WinForms Chart](https://support.syncfusion.com/kb/article/1198/how-to-customize-background-and-foreground-settings-in-winforms-chart)
+- [How to add an image to Windows Forms Chart Area](https://help.syncfusion.com/windowsforms/chart/faq/how-to-add-an-image-on-chart-area)
+- [How to restore gradient in Windows Forms Chart](https://help.syncfusion.com/windowsforms/chart/faq/how-to-get-back-to-the-gradient-appearance-of-the-)
+- [How to set a color palette in Windows Forms Chart](https://help.syncfusion.com/windowsforms/chart/faq/how-to-set-the-color-palette-for-a-chart)
+- [How to customize series borders in Winforms Chart](https://support.syncfusion.com/kb/article/8952/how-to-customize-series-borders-in-winforms-chart)
+- [How to display an image as the background of the chartarea in WinForms Chart?](https://support.syncfusion.com/kb/article/1075/how-to-display-an-image-as-the-background-of-the-chartarea-in-winforms-chart)
+- [How to set a custom border for chart series elements in WinForms Chart](https://support.syncfusion.com/kb/article/1078/how-to-set-a-custom-border-for-chart-series-elements-in-winforms-chart)
+- [How to set the Interior color for the Chart and the Chart series](https://support.syncfusion.com/kb/article/1080/how-to-set-the-interior-color-for-the-chart-and-the-chart-series)
+- [How to display images for data points in a WinForms Chart](https://support.syncfusion.com/kb/article/1085/how-to-display-images-for-data-points-in-a-winforms-chart)
+- [How to set a border for the chart area in WinForms Chart](https://support.syncfusion.com/kb/article/1188/how-to-set-a-border-for-the-chart-area-in-winforms-chart)
