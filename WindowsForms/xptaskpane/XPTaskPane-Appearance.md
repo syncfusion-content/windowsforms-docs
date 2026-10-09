@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Appearance in Windows Forms XPTaskPane | Syncfusion®
 description: XPTaskPane appearance customization supports fonts, colors, visual styles, Office themes, and custom color schemes.

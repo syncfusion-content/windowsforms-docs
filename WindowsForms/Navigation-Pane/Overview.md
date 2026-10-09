@@ -1,12 +1,12 @@
 ---
 layout: post
 title: About Syncfusion® Windows Forms GroupBar Control | Syncfusion®
-description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms GroupBar control and more details.
+description: Learn about the features, capabilities, and usage of the Syncfusion® Windows Forms GroupBar control.
 platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---
-# About Syncfusion® Windows Forms GroupBar Control
+# About Syncfusion® Windows Forms GroupBar(Navigation Pane) Control
 
 The `GroupBar` control provides a navigation UI similar to Microsoft Outlook. It has a container to host controls within it. Use it to host a categorized collection of items and custom controls. The GroupBar control is also known as the Navigation Pane control.
 
@@ -16,7 +16,7 @@ The `GroupBar` control provides a navigation UI similar to Microsoft Outlook. It
 
 * **Image settings**: Provides options to display Large images or Icons on the header of the GroupBar as well as Stacked GroupBar.
 
-* **Localization**: Provides localization support for all elements in GroupBar into any desired language. For more details, refer to the [Localization](https://help.syncfusion.com/windowsforms/navigation-pane/localization) documentation.
+* **Localization**: Provides localization support for all elements in GroupBar into any desired language.
 
 * **Stacked GroupBar**: Provides options to display GroupBarItems in a Stack like fashion. Stacked GroupBar provides a Navigation Pane that can be viewed at the bottom of the GroupBar. For more details, refer to the [StackedGroupBar](https://help.syncfusion.com/windowsforms/navigation-pane/stackedgroupbar) documentation.
 

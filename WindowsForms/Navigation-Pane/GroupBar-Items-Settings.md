@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: GroupBar Items Settings in Windows Forms | Syncfusion®
 description: GroupBar item settings support text alignment, images, highlighting, popups, renaming, and hosting child controls.

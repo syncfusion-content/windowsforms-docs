@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: GroupView Settings in Windows Forms GroupView Control | Syncfusion®
 description: GroupView settings support appearance customization, drag-and-drop behavior, spacing configuration, and integrated scrolling.
@@ -109,8 +109,6 @@ Me.groupView1.ItemYSpacing = 10
 {% endhighlight %}
 
 {% endtabs %}
-
- {% endtabs %}
 
  ![Spacing](Overview_images/Overview_img58.jpeg) 
  

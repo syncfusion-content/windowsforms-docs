@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Image Settings in Windows Forms GroupView | Syncfusion®
 description: Image settings support large and small images, image highlighting, spacing configuration, and customizable image offsets.
