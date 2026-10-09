@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Behavior Settings in Windows Forms MaskedTextBox | Syncfusion®
 description: Behavior settings in MaskedEditBox control prompt characters, padding characters, maximum length, and read-only behavior.
@@ -10,7 +10,7 @@ documentation: ug
 
 The behavior settings of the MaskedEditBox control are discussed below.
 
-### Prompt and padding character settings
+## Prompt and padding character settings
 
 The [MaskedEditBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html) control allows you to add prompt characters in the input.
 

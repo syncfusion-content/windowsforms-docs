@@ -14,7 +14,7 @@ NavigationView allows setting the maximum number of items to be displayed on its
 The `BarPopupEventArgs` provides the following members:
 
 * **CurrentBar** - Gets the Bar for which the pop-up is being displayed.
-* **Cancel** - Gets or sets a value indicating whether the pop-up should be cancelled.
+* **Cancel** - Gets or sets a value indicating whether the pop-up should be cancel.
 * **MaximumItemsToDisplay** - Gets or sets the maximum number of items to display in the pop-up.
 
 {% tabs %}
