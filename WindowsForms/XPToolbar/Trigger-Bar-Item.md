@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Trigger Bar Item in Windows Forms XPToolBar | Syncfusion®
 description: Trigger Bar Item support explains handling bar item click events and executing actions using mouse or keyboard input.

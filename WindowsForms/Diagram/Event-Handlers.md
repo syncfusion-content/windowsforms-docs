@@ -5,6 +5,7 @@ description: Handle diagram, node, tool, property, connection, and model events 
 platform: windowsforms
 control: Diagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Event Handlers in Windows Forms Diagram

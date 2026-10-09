@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Display Settings in Windows Forms MaskedTextBox | Syncfusion®
 description: Display settings in MaskedEditBox support separators, cursor positioning, data grouping, and password-style input display.

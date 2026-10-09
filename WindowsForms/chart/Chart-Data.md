@@ -5,6 +5,7 @@ description: Populating Data in the Windows Forms Chart enables binding and disp
 platform: windowsforms
 control: Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Populating Data in Windows Forms Chart

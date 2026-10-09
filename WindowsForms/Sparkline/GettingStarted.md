@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® Windows Forms Sparkl
 platform: windowsforms
 control: Sparkline
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Getting Started with WinForms Sparkline

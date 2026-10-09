@@ -5,6 +5,7 @@ description: Learn about data binding in the Syncfusion® Windows Forms Diagram 
 platform: windowsforms
 control: Diagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Data Binding in Windows Forms Diagram

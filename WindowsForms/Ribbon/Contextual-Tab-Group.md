@@ -7,7 +7,7 @@ control: RibbonControlAdv
 documentation: ug
 ---
 
-# Contextual Tab Group in Windows Forms Ribbon
+# Contextual Tab Group in WinForms Ribbon Control
 
 Use a contextual tab to display a collection of commands that are relevant only when users select an object type, they are displayed only when a particular object type is selected.
 
@@ -15,11 +15,11 @@ Use a contextual tab to display a collection of commands that are relevant only 
 
 ### Through Designer 
 
-*	Click the `TabGroup` property of the RibbonControlAdv, TabGroup collection editor is opened. Add the tab group using the editor
+*	Click the `TabGroup` property of the WinForms Ribbon Control, TabGroup collection editor is opened. Add the tab group using the editor
 
 ![Creating Context Tab Group through designer](Contextual_Tab_Group_Images/Contextual-Tab-Group_img1.jpg)
 
-*	Now create a ToolStripTabItem using the smart tag of the Ribbon.
+*	Now create a ToolStripTabItem using the smart tag of the WinForms Ribbon Control.
 
 *	Click the `TabGroup` property in the ToolStripTabItem and select the tab group from the available list.
 

@@ -5,6 +5,7 @@ description: Symbology settings in the Windows Forms Barcode enable customizatio
 platform: windowsforms
 control: SfBarcode
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Symbology Settings in Windows Forms Barcode

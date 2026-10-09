@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® Windows Forms Chart 
 platform: windowsforms
 control: Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Getting Started with Windows Forms Chart

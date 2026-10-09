@@ -7,11 +7,11 @@ control: Tools
 documentation: ug
 ---
 
-# Text Settings in Windows Forms IntegerTextBox
+# Text Settings in WinForms Integer TextBox
 
-This section discusses the text settings of the IntegerTextBox control.
+This section discusses the text settings of the WinForms Integer TextBox control.
 
-The text associated with the IntegerTextBox control can be set and customized using the below given settings.
+The text associated with the WinForms Integer TextBox control can be set and customized using the below given settings.
 
 * [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IntegerTextBox.html#Syncfusion_Windows_Forms_Tools_IntegerTextBox_Text)
 * [TextAlign](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.textalign?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBox_TextAlign)
@@ -116,6 +116,6 @@ Me.integerTextBox1.ShowOverflowIndicatorToolTip = True
 
 ![Over flow indicator tooltip text](Overview_images/Overview_img452.png)
 
-A Sample which demonstrates the Text, Text Align and Overflow Indicator features of the IntegerTextBox control is available in the below sample installation path.
+A Sample which demonstrates the Text, Text Align and Overflow Indicator features of the WinForms Integer TextBox control is available in the below sample installation path.
 
 …\System Drive:\Users\Username\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Editor Controls\Editor Controls\CS

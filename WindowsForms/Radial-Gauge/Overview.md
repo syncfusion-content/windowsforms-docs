@@ -5,6 +5,7 @@ description: Learn about the introduction of Syncfusion Essential Studio® Windo
 platform: WindowsForms
 control: Gauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # About Syncfusion® Windows Forms Gauge Control

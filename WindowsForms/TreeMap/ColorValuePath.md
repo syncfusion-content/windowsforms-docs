@@ -5,6 +5,7 @@ description: Color value path in the Windows Forms TreeMap maps data values to c
 platform: windowsforms
 control: TreeMap 
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Color Value Path in WinForms TreeMap

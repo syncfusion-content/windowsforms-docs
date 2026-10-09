@@ -5,6 +5,7 @@ description: 	Arrange diagram nodes automatically using table, tree, hierarchica
 platform: windowsforms
 control: Diagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Layout Management in Windows Forms Diagram

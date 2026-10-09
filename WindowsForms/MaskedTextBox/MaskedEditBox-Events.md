@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Events in Windows Forms MaskedTextBox | Syncfusion®
 description: MaskedEditBox events provide notifications for mask validation, text changes, border updates, and control state changes.

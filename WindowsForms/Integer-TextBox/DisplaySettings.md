@@ -7,11 +7,11 @@ control: Tools
 documentation: ug
 ---
 
-# Display Settings in Windows Forms IntegerTextBox
+# Display Settings in WinForms Integer TextBox
 
-This section discusses the display settings of the IntegerTextBox control.
+This section discusses the display settings of the WinForms Integer TextBox control.
 
-The IntegerTextBox provides a list of properties to set the display characteristics associated with the integer value.
+It provides a list of properties to set the display characteristics associated with the integer value.
 
 * [NumberGroupSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumericTextBox.html#Syncfusion_Windows_Forms_Tools_NumericTextBox_NumberGroupSeparator)
 * [NumberGroupSizes](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumericTextBox.html#Syncfusion_Windows_Forms_Tools_NumericTextBox_NumberGroupSizes)
@@ -39,13 +39,13 @@ Me.integerTextBox1.NegativeSign = "-"
 ![Display setting](Overview_images/Overview_img442.png) 
 
 
-A Sample which demonstrates the Display Settings of IntegerTextBox control is available in the below sample installation path.
+A Sample which demonstrates the Display Settings of WinForms Integer TextBox control is available in the below sample installation path.
 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
 ## Value settings
 
-The various values of the IntegerTextBox control and their settings are given below.
+The various values of the WinForms Integer TextBox control and their settings are given below.
 
 * [IntegerValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IntegerTextBox.html#Syncfusion_Windows_Forms_Tools_IntegerTextBox_IntegerValue)
 * [DefaultValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html#Syncfusion_Windows_Forms_Tools_NumberTextBoxBase_DefaultValue)
@@ -69,7 +69,7 @@ Me.integerTextBox1.BindableValue = 777
 
 ## Null value settings
 
-There are various settings that can be applied to the IntegerTextBox control when the value of the control is set to 'Null'. These settings are illustrated below.
+There are various settings that can be applied to the WinForms Integer TextBox control when the value of the control is set to 'Null'. These settings are illustrated below.
 
 * [NullString](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html#Syncfusion_Windows_Forms_Tools_NumberTextBoxBase_NullString)
 * [NullFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html#Syncfusion_Windows_Forms_Tools_NumberTextBoxBase_NullFormat)
@@ -92,7 +92,7 @@ Me.integerTextBox1. AllowNull = True
 
 ## Min and max value settings
 
-The minimum and maximum values of the IntegerTextBox can be set using the below given properties.
+The minimum and maximum values of the WinForms Integer TextBox can be set using the below given properties.
 
 * [MaxValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IntegerTextBox.html#Syncfusion_Windows_Forms_Tools_IntegerTextBox_MaxValue)
 * [MinValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IntegerTextBox.html#Syncfusion_Windows_Forms_Tools_IntegerTextBox_MinValue)

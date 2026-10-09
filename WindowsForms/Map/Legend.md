@@ -5,6 +5,7 @@ description: legend in the Windows Forms Maps explains symbols, colors, and data
 platform: windowsforms
 control: Maps
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Legend in Windows Forms Maps

@@ -5,6 +5,7 @@ description: Hit testing in the Windows Forms Chart identifies chart elements at
 platform: windowsforms
 control: Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Hit Testing in Windows Forms Chart

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Splitter Position in Tab Splitter Container | Syncfusion®
 description: Splitter position settings allow adjusting and controlling the divider location at design time and runtime.
