@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Localization in Windows Forms Scroll Frame | Syncfusion®
 description: Localization support enables translating scrollbar context menu content using resource files and culture-specific settings.
@@ -9,23 +9,23 @@ documentation: ug
 
 # Localization in Windows Forms Scroll Frame (SfScrollFrame)
 
-Localization is the process of translating the application resources into different language for the specific cultures. You can localize the default context menu of the scrollbars by adding resource file. Application culture can be changed by setting the CurrentUICulture before InitializeComponent() method.
+Localization is the process of translating the application resources into different languages for specific cultures. You can localize the default context menu of the scrollbars by adding a resource file. The application culture can be changed by setting the `CurrentUICulture` before the InitializeComponent() method.
 
-## Adding Resx file to application
+## Adding resource file to application
 
-To add the resx file for the application, follow steps:
+To add the resx file for the application, follow these steps:
 
 1. Create new folder and named as Resources in your application.
 
-2. Add the default resource file of `SfScrollFrame` into Resources folder. You can download the Syncfusion.Core.WinForms.resx [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Core.WinForms-1127975576).
+2. Add the default resource file of `SfScrollFrame` into the Resources folder. You can download the Syncfusion.Core.WinForms.resx [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Core.WinForms-1127975576).
 ![WinForms showing add the default resource file in scrollframe](SfScrollFrame_images/SfScrollFrame_img10.jpg)
 
-3. Right-click on the Resources folder, select Add and then NewItem. 
+3. Right-click on the Resources folder, select Add and then New Item. 
 
-4. In Add New Item wizard, select the Resource File option and name the filename as Syncfusion.Core.WinForms.&lt;culture name&gt;.resx. For example, you have to give name as Syncfusion.Core.WinForms.de-DE.resx for German culture. 
+4. In the Add New Item wizard, select the Resource File option and name the file as Syncfusion.Core.WinForms.&lt;culture name&gt;.resx. For example, you have to give the name as Syncfusion.Core.WinForms.de-DE.resx for German culture. 
 
-5. The culture name indicates the name of language and country
-![WinForms showing the resoure file name new added in scrollframe](SfScrollFrame_images/SfScrollFrame_img11.jpg) 
+5. The culture name indicates the name of the language and country.
+![WinForms showing the resource file name newly added in scrollframe](SfScrollFrame_images/SfScrollFrame_img11.jpg) 
 
 6. Now, select Add option to add the resource file in Resources folder.<br>
 ![WinForms showing the different resource file added in scrollframe ](SfScrollFrame_images/SfScrollFrame_img12.jpg)
@@ -36,17 +36,17 @@ To add the resx file for the application, follow steps:
 
 ### Editing the default culture resource
 
-You can edit the default resource file by adding it to Resources folder of your application where SfScrollFrame reads the static texts from here. You can download the default resource file from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Core.WinForms-1127975576).
+You can edit the default resource file by adding it to the Resources folder of your application, where the SfScrollFrame reads the static texts from. You can download the default resource file from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Core.WinForms-1127975576).
 
-![WinForms showing the edit the default resource fiel in scrollframe](SfScrollFrame_images/SfScrollFrame_img15.jpg)
+![WinForms showing the edit the default resource file in scrollframe](SfScrollFrame_images/SfScrollFrame_img15.jpg)
 
 ![Winforms showing the add name or value in resource file in scrollframe](SfScrollFrame_images/SfScrollFrame_img16.jpg)
 
 ![Winforms showing the applied the localization in scrollframe](SfScrollFrame_images/SfScrollFrame_img17.jpg)
 
-### Localize when the resource file present in different assembly or different namespace
+### Localize when the resource file is present in a different assembly or a different namespace
 
-If resource (.resx) files are added into different assembly other than start up application, call the `SetResources` method of `LocalizationResource` follows.
+If resource (.resx) files are added into different assembly other than start up application, call the `SetResources` method of `LocalizationResourceBase` follows.
 
 {% tabs %}
 {% highlight c# %}

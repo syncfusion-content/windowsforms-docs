@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Auto Close in Windows Forms Popup | Syncfusion®
 description: Auto close support hides popups when users click outside the container and provides options to customize closing behavior.
@@ -19,10 +19,10 @@ The Popup of a RichTextBox, on a button click should be closed only when the tex
 this.popupControlContainer2.IgnoreMouseMessages = true;
 private void RichTextBox1_Click1(object sender, EventArgs e)
 {
-    this.popupControlContainer2.ShowPopup(new Point(700,600));
+    this.popupControlContainer1.ShowPopup(new Point(700, 600));
     if (this.richTextBox1.Text != "")
     {
-        this.popupControlContainer2.HidePopup(Syncfusion.Windows.Forms.PopupCloseType.Done);
+        this.popupControlContainer1.HidePopup(Syncfusion.Windows.Forms.PopupCloseType.Done);
     }
 }
 
@@ -32,9 +32,9 @@ private void RichTextBox1_Click1(object sender, EventArgs e)
 
 Me.popupControlContainer2.IgnoreMouseMessages = True
 private void RichTextBox1_Click1(Object sender, EventArgs e)
-	Me.popupControlContainer2.ShowPopup(New Point(700,600))
+	Me.popupControlContainer1.ShowPopup(New Point(700,600))
 	If Me.richTextBox1.Text <> "" Then
-		Me.popupControlContainer2.HidePopup(Syncfusion.Windows.Forms.PopupCloseType.Done)
+		Me.popupControlContainer1.HidePopup(Syncfusion.Windows.Forms.PopupCloseType.Done)
 	End If
 
 {% endhighlight %}
@@ -46,10 +46,10 @@ We can hide the popup using [`HidePopup`](https://help.syncfusion.com/cr/windows
 * Canceled
 * Deactivated
 
-**Done** : To hide the popup with the changes applied to the control, we need to set [`PopupCloseType`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupCloseType.html) as `Done`.
+**Done** : To hide the popup with the changes applied to the control, set [`PopupCloseType`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupCloseType.html) to `Done`.
 
-**Canceled** : To cancel the changes, [`PopupCloseType`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupCloseType.html) should be set to `Canceled`. 
+**Canceled** : To cancel the changes, set [`PopupCloseType`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupCloseType.html) to `Canceled`. 
 
-**Deactivated** : Setting [`PopupCloseType`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupCloseType.html) to `Deactivated` will deactivate the popup when the user clicks in different application.
+**Deactivated** : Setting [`PopupCloseType`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupCloseType.html) to `Deactivated` deactivates the popup when the user clicks in a different application.
 
 

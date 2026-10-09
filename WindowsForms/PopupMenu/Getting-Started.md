@@ -38,42 +38,42 @@ The PopupMenu control can be added through designer by following the below steps
 
    ![Adding the PopupMenu](GettingStarted_Images/PopupMenu1.png)
 
-3. The popup menu needs to be associated with a default parent bar item in order to fill it with bar items. Right-clicking on **PopupMenu** control and select **Add Default ParentBarItem...** option. You can also add the default parent bar item by selecting the **Add Default ParentBarItem...** option from the **Smart tag** menu.
+3. The popup menu needs to be associated with a default parent bar item in order to fill it with bar items. Right-click on the **PopupMenu** control and select **Add Default ParentBarItem...** option. You can also add the default parent bar item by selecting the **Add Default ParentBarItem...** option from the **Smart tag** menu.
 
    ![Adding the PopupMenu](GettingStarted_Images/PopupMenu2.png)
 
    ![Adding the PopupMenu](GettingStarted_Images/PopupMenu3.png)
 
-4. Once **Default ParentBarItem** is added, we can add the items by right-clicking on the control in the designer and select **Properties**. Now, in the **Properties** panel, under **Misc > ParentBarItem > Items** we need to choose the items by using **BarItem Collection Editor**.
+4. After the **Default ParentBarItem** is added, add the items by right-clicking on the control in the designer and selecting **Properties**. Now, in the **Properties** panel, under **Misc > ParentBarItem > Items** choose the items by using the **BarItem Collection Editor**.
 
    ![Adding the PopupMenu](GettingStarted_Images/PopupMenu4.png)
 
    ![Adding the PopupMenu](GettingStarted_Images/PopupMenu5.png)
 
-5. In BarItem Collection Editor window, click on down arrow of **Add** button. It will display different types of bar items. Using this, user can add appropriate bar item as per the need.
+5. In the **BarItem Collection Editor** window, click on the down arrow of the **Add** button. It will display different types of bar items. Using this, the user can add the appropriate bar item as per the need.
 
    ![Adding the PopupMenu](GettingStarted_Images/PopupMenu6.png)
 
-6. In this illustration we have added **BarItem**. Similarly, we can add ParentBarItem, DropDownBarItem, ComboBoxBarItem, ListBarItem, StaticBarItem and TextBoxBarItem.
+6. In this illustration, the **BarItem** has been added. Similarly, the ParentBarItem, DropDownBarItem, ComboBoxBarItem, ListBarItem, StaticBarItem and TextBoxBarItem can be added.
 
-7. Once items are added, we can select particular item in **BarItem Collection Editor** window and set text under **Appearance > Text** section.
+7. After an item is added, select the particular item in the **BarItem Collection Editor** window and set the text under the **Appearance > Text** section.
 
    ![Adding the PopupMenu](GettingStarted_Images/PopupMenu7.png)
 
-   Similarly, we can add image under **Appearance > Image** section.
+   Similarly, the image can be added under the **Appearance > Image** section.
 
    ![Adding the PopupMenu](GettingStarted_Images/PopupMenu8.png)
 
-8. On complete populating of popup menu, drag and drop the **PopupMenusManager** container inside which the popup menu will be hosted for display.
+8. After the popup menu is populated, drag and drop the **PopupMenusManager** container inside which the popup menu will be hosted for display.
 
    ![Associating the PopupMenu](GettingStarted_Images/PopupMenu9.png)
 
    ![Associating the PopupMenu](GettingStarted_Images/PopupMenu14.png)
 
-9. Now we are going to associate the popup menu control with an appropriate control. In this example, we illustrate the scenario with "RichTextBox" control.
+9. Now the popup menu control should be associated with an appropriate control. In this example, the scenario is illustrated with the **RichTextBox** control.
 
    >**NOTE**:
-   To associate the PopupMenu control, you can choose any type of control like RichTextBox, Button, Label, TextBox, MaskedTextBox etc... of your choice.  
+   To associate the PopupMenu control, you can choose any type of control like RichTextBox, Button, Label, TextBox, MaskedTextBox etc., of your choice.  
 
    ![Associating the PopupMenu](GettingStarted_Images/PopupMenu10.png)
 
@@ -83,7 +83,7 @@ The PopupMenu control can be added through designer by following the below steps
 
    ![Associating the PopupMenu](GettingStarted_Images/PopupMenu12.png)
 
- Now, bar items are successfully associate with the PopupMenu control.
+ Now, the popup menu is successfully associated with the RichTextBox control.
 
    ![Associating the PopupMenu](GettingStarted_Images/PopupMenu13.png)  
 
@@ -102,8 +102,8 @@ The PopupMenu control can be added through code by following the below steps.
    * Syncfusion.Licensing.dll
    * Syncfusion.SpellChecker.Base.dll
 
-   > NOTE: You can get these assemblies by browsing to the default assembly location.
-{System Drive}: \Program Files (x86) \ Syncfusion\Essential Studio\ {Platform} \ {Build Version Number} \ precompiledassemblies \ {Framework Version Number}
+   > NOTE: You can get these assemblies by browsing to the default assembly location:
+   `{System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\{Platform}\{Build Version Number}\precompiledassemblies\{Framework Version Number}`
 
 2. The below code snippets adds a PopupMenu control to the application.
 

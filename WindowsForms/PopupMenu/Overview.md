@@ -9,7 +9,7 @@ documentation: ug
 
 # About Syncfusion® Windows Forms PopupMenu Control
 
-Popup menu represents a context menu, that will be hidden by default and shows over any control when user performs click operation. The menu holds important and frequently used commands for better access. 
+The Popup menu represents a context menu that is hidden by default and is shown over any control when the user performs a right-click operation. The menu holds important and frequently used commands for better access.
 
 ## Key Features
 
@@ -19,7 +19,7 @@ Popup menu represents a context menu, that will be hidden by default and shows o
 
 * **Multi-level Menu Items** - Allows to add submenu items or child items down the level in the popup menu.
 
-* **Grouping Bar Items** - Allows to add separator between a collection of bar items which are relevant to one another.
+* **Grouping Bar Items** - Allows to add a separator between a collection of bar items that are relevant to one another.
 
 * **Checked/Unchecked** - Indicating whether a check mark appears before the text of the selected bar item.
 
@@ -27,6 +27,6 @@ Popup menu represents a context menu, that will be hidden by default and shows o
 
 * **Keyboard Shortcuts & Mnemonics** - The bar items can be selected through keyboard operation and support to add mnemonic text.
 
-* **Tooltip** - Provides options to set tooltip for each BarItem.
+* **Tooltip** - Provides options to set a tooltip for each BarItem.
 
 * **Themes** - Supports set of visual styles to customize the look and feel of PopupMenu control.

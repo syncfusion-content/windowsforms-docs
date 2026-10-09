@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Multi Level Menu Items in Windows Forms PopupMenu | Syncfusion®
 description: Multi-level menu items support hierarchical menus, nested commands, and child menu structures within popup menus.
@@ -14,7 +14,7 @@ Multi-level menu items refer to creating and adding submenu or child items to th
 {% tabs %}
 {% highlight c# %}
 
-//Declaration
+// Declaration
 private Syncfusion.Windows.Forms.Tools.XPMenus.PopupMenu popupMenu1;
 private Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem parentBarItem1;
 private Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem parentBarItem2;
@@ -33,7 +33,7 @@ private Syncfusion.Windows.Forms.Tools.XPMenus.BarItem barItem4;
 private Syncfusion.Windows.Forms.Tools.XPMenus.BarItem barItem5;
 private Syncfusion.Windows.Forms.Tools.XPMenus.BarItem barItem6;
 
-//Initializing
+// Initializing
 this.popupMenu1 = new Syncfusion.Windows.Forms.Tools.XPMenus.PopupMenu(this.components);
 this.parentBarItem1 = new Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem();
 this.parentBarItem2 = new Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem();
@@ -146,8 +146,8 @@ this.staticBarItem1.Text = "StaticBarItem";
 // textBoxBarItem1
 this.textBoxBarItem1.SizeToFit = true;
 this.textBoxBarItem1.Text = "Font";
-this.textBoxBarItem1.TextBoxValue = "Segue UI";
-this.textBoxBarItem1.Value = "Segue UI";
+this.textBoxBarItem1.TextBoxValue = "Segoe UI";
+this.textBoxBarItem1.Value = "Segoe UI";
 
 // richTextBox1
 this.richTextBox1.Location = new System.Drawing.Point(76, 66);
@@ -168,7 +168,7 @@ this.ResumeLayout(false);
 
 {% highlight vb %}
 
-'Declaration
+' Declaration
 Private popupMenu1 As Syncfusion.Windows.Forms.Tools.XPMenus.PopupMenu
 Private parentBarItem1 As Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem
 Private parentBarItem2 As Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem
@@ -187,7 +187,7 @@ Private barItem4 As Syncfusion.Windows.Forms.Tools.XPMenus.BarItem
 Private barItem5 As Syncfusion.Windows.Forms.Tools.XPMenus.BarItem
 Private barItem6 As Syncfusion.Windows.Forms.Tools.XPMenus.BarItem
 
-'Initializing
+' Initializing
 Me.popupMenu1 = New Syncfusion.Windows.Forms.Tools.XPMenus.PopupMenu(Me.components)
 Me.parentBarItem1 = New Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem()
 Me.parentBarItem2 = New Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem()
@@ -300,8 +300,8 @@ Me.staticBarItem1.Text = "StaticBarItem"
 ' textBoxBarItem1
 Me.textBoxBarItem1.SizeToFit = True
 Me.textBoxBarItem1.Text = "Font"
-Me.textBoxBarItem1.TextBoxValue = "Segue UI"
-Me.textBoxBarItem1.Value = "Segue UI"
+Me.textBoxBarItem1.TextBoxValue = "Segoe UI"
+Me.textBoxBarItem1.Value = "Segoe UI"
 
 ' richTextBox1
 Me.richTextBox1.Location = New System.Drawing.Point(76, 66)
