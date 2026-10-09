@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® Windows Forms SfNumericTextBox Control | Syncfusion®
-description: Learn here all about introduction of Syncfusion Windows Forms Numeric TextBox (SfNumericTextBox) control and more details.
+description: Learn about the introduction of the Syncfusion Windows Forms Numeric TextBox (SfNumericTextBox) control, its key features, mode options, and comparison with legacy numeric textbox controls.
 platform: windowsforms
 control: SfNumericTextBox
 documentation: ug
@@ -15,17 +15,17 @@ The **WinForms Numeric TextBox** control is an advanced text box control that al
 
 ## Key Features
 
-**Different modes** - Supports specific modes such as numeric, currency, and percent.
+* **Different modes** - Supports specific modes such as numeric, currency, and percent.
 
-**Value range support** - Allows us to define and validate the value based on minimum and maximum values.
+* **Value range support** - Allows you to define and validate the value based on minimum and maximum values.
 
-**Formatting** - Supports to format the value as users need.
+* **Formatting** - Supports formatting the value as needed.
 
-**Hide trailing zeros** - Supports hiding trailing zeros.
+* **Hide trailing zeros** - Supports hiding trailing zeros.
 
-**Watermark** - Supports to display watermark text when value is null.
+* **Watermark** - Supports displaying watermark text when the value is null.
 
-**Custom units** - Supports to display values with custom units that can be appended as prefix or suffix.
+* **Custom units** - Supports displaying values with custom units that can be appended as prefix or suffix.
 
 
 ## Choose between different textbox controls
@@ -39,25 +39,25 @@ Syncfusion WinForms suite comes up with the following different textboxes:
 
 ### WinForms Numeric TextBox
 
-The [WinForms Numeric TextBox](https://help.syncfusion.com/windowsforms/numeric-textbox/overview) control is an advanced textbox that allows you to enter numeric values in a specific format such as value. The currency or percent value can also be displayed with custom units. Supports hiding trailing zeros and displaying values with custom units.
+The [WinForms Numeric TextBox](https://help.syncfusion.com/windowsforms/numeric-textbox/overview) control is an advanced textbox that allows you to enter numeric values in a specific format. The currency or percent value can also be displayed with custom units. It supports hiding trailing zeros and displaying values with custom units.
 
 ### CurrencyTextBox
 
-[CurrencyTextBox](https://help.syncfusion.com/windowsforms/currency-textbox/overview) is a textbox-derived control that implements all functionalities to format currency input and validation. Provides support for clipboard operations that are compatible with currency data.
+[CurrencyTextBox](https://help.syncfusion.com/windowsforms/currency-textbox/overview) is a textbox-derived control that implements all functionalities to format currency input and validation. It provides support for clipboard operations that are compatible with currency data.
 
 ### PercentTextBox
 
-[PercentTextBox](https://help.syncfusion.com/windowsforms/percent-textbox/overview) is a textbox-derived control that can display double data type values in percentage. It supports display and collection of percentage values.
+[PercentTextBox](https://help.syncfusion.com/windowsforms/percent-textbox/overview) is a textbox-derived control that can display `double` data type values as percentages. It supports display and collection of percentage values.
 
 ### IntegerTextBox
 
-[IntegerTextBox](https://help.syncfusion.com/windowsforms/integer-textbox/overview) is derived from the Windows Forms Framework TextBox control. Displays integer data type values alone.
+[IntegerTextBox](https://help.syncfusion.com/windowsforms/integer-textbox/overview) is derived from the Windows Forms Framework `TextBox` control. It displays integer data type values alone.
 
 ### WinForms Numeric TextBox vs existing numeric textbox controls
 
-Both SfNumericTextBox and existing numeric textbox controls (IntegerTextBox, PercentTextBox, and CurrencyTextBox) are used for the same purpose. But, the SfNumericTextBox control offers rich set of features over existing numeric textbox controls (IntegerTextBox, PercentTextBox, and CurrencyTextBox). To hide by trailing zeros and prefix or suffix and watermark text, use this control.
+Both SfNumericTextBox and the existing numeric textbox controls (IntegerTextBox, PercentTextBox, and CurrencyTextBox) are used for the same purpose. However, the SfNumericTextBox control offers a rich set of features over the existing numeric textbox controls (IntegerTextBox, PercentTextBox, and CurrencyTextBox). To hide trailing zeros, add a prefix or suffix, or display watermark text, use this control.
 
-The list of some specific API differences between WinForms Numeric TextBox and existing numeric textbox controls (IntegerTextBox, PercentTextBox, and CurrencyTextBox) is as follows.
+The list of specific API differences between the WinForms Numeric TextBox and the existing numeric textbox controls (IntegerTextBox, PercentTextBox, and CurrencyTextBox) is as follows.
 
 <table>
 <tr>
@@ -172,7 +172,7 @@ sets the color only in zero values.
 </tr>
 </table>
 
-The list of features in WinForms Numeric TextBox over existing numeric textbox controls (IntegerTextBox, PercentTextBox, and CurrencyTextBox) is as follows.
+The list of features in WinForms Numeric TextBox over the existing numeric textbox controls (IntegerTextBox, PercentTextBox, and CurrencyTextBox) is as follows.
 
 <table>
 <tr>

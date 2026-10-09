@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to delete an HTML Element | Syncfusion®
-description: Learn how to how to delete an HTML Element in Syncfusion Windows Forms Html Viewer (HTMLUI) control.
+description: Learn how to deleting an HTML element from a document loaded in the WinForms HTML Viewer control.
 platform: windowsforms
 control: HTMLUIControl
 documentation: ug
@@ -41,7 +41,7 @@ The following HTML document contains a textbox and a button element. The followi
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 

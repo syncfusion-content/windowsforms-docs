@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Style Sheets CSS in Windows Forms HTMLUI control | Syncfusion®
-description: Learn about Style Sheets CSS support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
+description: Learn about using external, internal, and inline CSS style sheets to customize the appearance of HTML content in the WinForms HTML Viewer control.
 platform: windowsforms
 control: HTMLUI
 documentation: ug
@@ -53,7 +53,7 @@ HTMLUI also supports updation of styles to the HTML document at run time. This c
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -118,7 +118,7 @@ Inline style applied to a paragraph.
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -176,7 +176,7 @@ File name and location: C:\MyProjects\StyleSheets\internal.html
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -278,7 +278,7 @@ This type of setting is carried out in the document at design time. It is used i
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -302,7 +302,7 @@ WinForms HTML Viewer is so flexible that the user can define styles for the HTML
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -372,7 +372,7 @@ File name and location: C:\MyProjects\StyleSheets\NameClass.html
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -430,7 +430,7 @@ File name and location: C:\MyProjects\StyleSheets\idClass.html
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 

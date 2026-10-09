@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® Windows Forms HTMLUI Control | Syncfusion®
-description: Learn here all about introduction of Syncfusion Windows Forms Html Viewer (HTMLUI) control, its elements and more details.
+description: Learn about the introduction of the Syncfusion Windows Forms HTML Viewer (HTMLUI) control, its key features, and its element, bookmark, table, and localization support.
 platform: windowsforms
 control: HTMLUI
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # About Syncfusion® WinForms HTML Viewer Control
 
-WinForms HTML Viewer Control helps to render the Hyper Text Markup Language (HTML). Its functionality is similar to a web browser used for display purposes. Like popular web browsers, the control comes with advanced options to work with web-related functionalities like navigating through a history of documents, selection and much more.
+WinForms HTML Viewer Control helps render Hyper Text Markup Language (HTML). Its functionality is similar to a web browser used for display purposes. Like popular web browsers, the control comes with advanced options to work with web-related functionalities such as navigating through a history of documents, selection, and much more.
 
 
 ## Key features
@@ -20,15 +20,15 @@ WinForms HTML Viewer Control helps to render the Hyper Text Markup Language (HTM
 
 * **Element binding** -  Supports numerous elements in an HTML document for rendering and presenting them.
 
-* **Bookmarks** - Supports Bookmarks which helps to switch particular references in the page when the link is clicked
+* **Bookmarks** - Supports bookmarks, which help to switch to particular references on the page when the link is clicked.
 
-* **Style sheets** - Supports style sheets such as External, Internal and Inline to customize the appearance.
+* **Style sheets** - Supports style sheets such as external, internal, and inline to customize the appearance.
 
 * **HTML table** - Provides options to load Table in required dimensions.
 
-* **Exporting** - Provides option to export contents in required formats.
+* **Exporting** - Provides the option to export contents in required formats.
 
-* **Printing** - Provides options to Print preview and Print the loaded contents.
+* **Printing** - Provides options to print preview and print the loaded contents.
 
 * **Localization** - Provides localization support for all elements into any desired language.
 

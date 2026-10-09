@@ -1,19 +1,19 @@
 ---
 layout: post
 title: How to fix MDIChild Icon in Windows Forms TabbedMDI | Syncfusion®
-description: Learn why the Icon does not represent the MDIChild in Syncfusion Windows Forms TabbedMDIManager and how to update the icon manually.
+description: Learn why the icon does not represent the MDIChild form in the Syncfusion Windows Forms TabbedMDI control and how to update the icon manually.
 platform: windowsforms
-control: TabbedMDIPackage
+control: TabbedMDIManager
 documentation: ug
 ---
 
-# How to fix MDIChild Icon in Windows Forms WinForms TabbedMDI
+# How to fix MDIChild Icon in Windows Forms TabbedMDI
 
 The form does not throw an event when the Icon gets updated. So, update the Icon in the WinForms TabbedMDI manually after updating the Icon in the form, as follows:
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 // Get the tab control corresponding to your form in the TabbedMDIManager. 

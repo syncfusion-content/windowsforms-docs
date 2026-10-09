@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Tab Text in Windows Forms ColorUI | Syncfusion®
-description: Learn about Tab Text support in Syncfusion Windows Forms ColorUI control, its features, and more details.
+description: Learn about tab text customization in the Syncfusion Windows Forms ColorUI control, including setting custom names for the Custom, Standard, System, and User color group tabs.
 platform: windowsforms
 control: ColorUI
 documentation: ug
 ---
 # Tab Text in Windows Forms ColorUI
 
-The default tab text of the ColorGroups can be set using the below properties.
+The default tab text of the color groups can be set using the following properties.
 
 <table>
 <tr>
@@ -18,19 +18,19 @@ Description</th></tr>
 <tr>
 <td>
 CustomTabName</td><td>
-Set the text displayed on the custom colors tab. The tab name can be reset using ResetCustomTabName() method.</td></tr>
+Sets the text displayed on the Custom Colors tab. The tab name can be reset using the `ResetCustomTabName()` method.</td></tr>
 <tr>
 <td>
 StandardTabName</td><td>
-Set the text displayed on the Standard colors tab.The tab name can be reset using ResetStandardTabName() method.</td></tr>
+Sets the text displayed on the Standard Colors tab. The tab name can be reset using the `ResetStandardTabName()` method.</td></tr>
 <tr>
 <td>
 SystemTabName</td><td>
-Set the text displayed on the System colors tab.The tab name can be reset using ResetSystemTabName() method.</td></tr>
+Sets the text displayed on the System Colors tab. The tab name can be reset using the `ResetSystemTabName()` method.</td></tr>
 <tr>
 <td>
 UserTabName</td><td>
-Set the text displayed on the User colors tab.The tab name can be reset using ResetUserTabName() method.</td></tr>
+Sets the text displayed on the User Colors tab. The tab name can be reset using the `ResetUserTabName()` method.</td></tr>
 </table>
 
 {% tabs %}
@@ -41,7 +41,7 @@ this.colorUIControl1.SystemTabName = "System Colors";
 this.colorUIControl1.UserTabName = "User Defined";
 this.colorUIControl1.CustomTabName = "Palettes";
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight vb %}
 
@@ -50,9 +50,9 @@ Me.colorUIControl1.SystemTabName = "System Colors"
 Me.colorUIControl1.UserTabName = "User Defined"
 Me.colorUIControl1.CustomTabName = "Palettes"
 
-{% endhighlight  %}
+{% endhighlight %}
 {% endtabs %}
 
-![Overview_img234](ColorUI_images/Overview_img234.jpeg)
+![WinForms ColorUI showing custom tab names for the color groups](ColorUI_images/Overview_img234.jpeg)
 
-N> We can also change the font style of the tab text using ColorUIControl.Font property.
+>**NOTE**: The font style of the tab text can also be changed using the `ColorUIControl.Font` property.

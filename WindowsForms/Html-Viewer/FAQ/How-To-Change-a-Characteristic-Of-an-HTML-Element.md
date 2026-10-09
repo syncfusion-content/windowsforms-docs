@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Change HTML Element Characteristic in Html Viewer | Syncfusion®
-description: Learn how to change a Characteristic of an HTML Element in Syncfusion Windows Forms Html Viewer control, its elements and more details.
+description: Learn how to changing a characteristic of an HTML element such as color, font, or style in the WinForms HTML Viewer control.
 platform: windowsforms
 control: HTMLUIControl
 documentation: ug
@@ -49,7 +49,7 @@ The following snippet shows how an image reference is changed for a page in the 
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 

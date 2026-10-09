@@ -1,27 +1,27 @@
 ---
 layout: post
 title: How to Add ColorUI Control to a Popup Menu in ColorUI | Syncfusion®
-description: Learn how to add a ColorUI Control to a popup menu in Syncfusion Windows Forms ColorUI control, its elements and more details.
+description: Learn how to add a ColorUI control to a popup menu in the Syncfusion Windows Forms ColorUI control by hosting the control inside a PopupControlContainer triggered from a Panel.
 platform: windowsforms
 control: ColorUI
 documentation: ug
 ---
 # How to Add ColorUI Control to a Popup Menu in ColorUI
 
-To add ColorUIControl to a PopupMenu, we need to use PopupMenu, PopupControlContainer. Follow the below steps to add a ColorUIControl to a popup menu.
+To add a ColorUIControl to a `PopupMenu`, you need to use a `PopupMenu` and a `PopupControlContainer`. Follow the steps below to add a ColorUIControl to a popup menu.
 
-1. Drag and drop a ColorUIControl, a PopupMenu control, a PopupControlContainer control, a label control and a Panel control onto the form. Place the ColorUIControl inside the PopupControlContainer and the label inside the panel control.
-2. Right click PopupMenu and select 'Add Default ParentBarItem" from the verbs. 
+1. Drag and drop a `ColorUIControl`, a `PopupMenu` control, a `PopupControlContainer` control, a `Label` control, and a `Panel` control onto the form. Place the `ColorUIControl` inside the `PopupControlContainer` and the `Label` inside the `Panel` control.
 
-   ![ColorUIControl placed inside PopupControlContainer](FAQ_images/Overview_img240.jpeg)
+2. Right-click the `PopupMenu` and select **Add Default ParentBarItem** from the verbs.
 
-3. In the property grid of PopupMenu, expand ParentBarItem, then add a DropDownBarItem to the ParentBarItem using BarItem Collection Editor. Also set the PopupControlContainer as the DropDownBarItem's PopupControlContainer as shown in the image below.
+   ![ColorUIControl placed inside a PopupControlContainer on the form designer](FAQ_images/Overview_img240.jpeg)
 
-   ![DropDownBarItem added to ParentBarItem in PopupMenu](FAQ_images/Overview_img241.jpeg)
+3. In the property grid of the `PopupMenu`, expand `ParentBarItem`, then add a `DropDownBarItem` to the `ParentBarItem` using the BarItem Collection Editor. Also, set the `PopupControlContainer` as the `DropDownBarItem`'s `PopupControlContainer`, as shown in the image below.
 
-4. In the MouseUp event of the Panel control call the PopupMenu.Show method.
+   ![DropDownBarItem added to ParentBarItem in the PopupMenu editor](FAQ_images/Overview_img241.jpeg)
 
-{% capture codesnippet1 %}
+4. In the `MouseUp` event of the `Panel` control, call the `PopupMenu.Show` method.
+
 {% tabs %}
 {% highlight c# %}
 
@@ -40,9 +40,8 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-   ![PopupMenu shown on the Panel control](FAQ_images/Overview_img242.jpeg)
 
-N> You can close the popup whenever a color is selected at run time. This is done using ColorUIControl.ColorSelected Event.
+   ![PopupMenu shown on the Panel control with the ColorUI dropdown](FAQ_images/Overview_img242.jpeg)
+
+>**NOTE**: You can close the popup whenever a color is selected at runtime. This is done using the `ColorUIControl.ColorSelected` event.

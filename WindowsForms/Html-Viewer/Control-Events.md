@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Control Events in Windows Forms HTMLUI | Syncfusion®
-description: Learn about Control Events support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
+description: Learn about control events raised by the WinForms HTML Viewer control, including LoadFinished and UnLoad events, and the related event data.
 platform: windowsforms
 control: HTMLUI
 documentation: ug
@@ -39,7 +39,7 @@ This [LinkClicked event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -72,7 +72,7 @@ private void htmluiControl1_LinkClicked(object sender, Syncfusion.Windows.Forms.
 
 ' Event that is to be raised after the hyperlink was clicked and before the hyperlink tries to load 
 
-' a new resource. 
+' a new resource. 
 
 Me.HtmluiControl1.LinkClicked += New Syncfusion.Windows.Forms.HTMLUI.LinkForwardEventHandler(Me.htmluiControl1_LinkClicked)
 
@@ -98,7 +98,7 @@ This [LoadStarted event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -144,7 +144,7 @@ This [LoadFinished event](https://help.syncfusion.com/cr/windowsforms/Syncfusion
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -194,7 +194,7 @@ This [LoadError event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Wi
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -240,7 +240,7 @@ This [PreRenderDocument event](https://help.syncfusion.com/cr/windowsforms/Syncf
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -296,7 +296,7 @@ This [ShowTitleChanged event](https://help.syncfusion.com/cr/windowsforms/Syncfu
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -349,7 +349,7 @@ The event handler receives its data from the ValueChangedEventArguments. The fol
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -389,13 +389,13 @@ End Sub
 
 ## Border3DStyleChanged event
 
-This [Border3DStyleChanged event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html) is handled when the value of the Border3DStyle property is changed. The Border3DStyle property indicates the style of the 3D border.
+This [Border3DStyleChanged event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html) is handled when the value of the Border3DStyle property is changed. The Border3DStyle property indicates the style of the 3D border.
 
-The event handler receives an argument of type EventArgs.
+The event handler receives an argument of type EventArgs.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -415,7 +415,7 @@ this.htmluiControl1.Border3DStyleChanged+= new System.EventHandler(htmluiControl
 
 
 
-private void htmluiControl1_Border3DStyleChanged(object sender, EventArgs e)
+private void htmluiControl1_Border3DStyleChanged(object sender, EventArgs e)
 
 {
 
@@ -443,17 +443,17 @@ Me.htmluiControl1.Border3DStyle = System.Windows.Forms.Border3DStyle.Bump
 
 'Handle the Border3DStyleChanged event.
 
-AddHandler Me.htmluiControl1.Border3DStyleChanged, AddressOf htmluiControl1_Border3DStyleChanged
+AddHandler Me.htmluiControl1.Border3DStyleChanged, AddressOf htmluiControl1_Border3DStyleChanged
 
 
 
- Private Sub htmluiControl1_Border3DStyleChanged(ByVal sender As Object, ByVal e As EventArgs) Handles HtmluiControl1.Border3DStyleChanged
+ Private Sub htmluiControl1_Border3DStyleChanged(ByVal sender As Object, ByVal e As EventArgs) Handles HtmluiControl1.Border3DStyleChanged
 
-    ' The following line is displayed in the output window at runtime, when this event is fired.
+    ' The following line is displayed in the output window at runtime, when this event is fired.
 
-   Console.WriteLine(" Border3DStyleChanged event is raised ")
+   Console.WriteLine(" Border3DStyleChanged event is raised ")
 
-End Sub
+End Sub
 
 {% endhighlight %}
 
@@ -461,13 +461,13 @@ End Sub
 
 ## BorderColorChanged event
 
-This [BorderColorChanged event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html) is handled when the value of the BorderColor property is changed. The BorderColor property indicates the color of the 2D border.
+This [BorderColorChanged event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html) is handled when the value of the BorderColor property is changed. The BorderColor property indicates the color of the 2D border.
 
-The event handler receives an argument of type EventArgs.
+The event handler receives an argument of type EventArgs.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -487,7 +487,7 @@ this.htmluiControl1.BorderColorChanged += new System.EventHandler(this.htmluiCon
 
 
 
-private void htmluiControl1_BorderColorChanged(object sender, EventArgs e)
+private void htmluiControl1_BorderColorChanged(object sender, EventArgs e)
 
 {
 
@@ -515,17 +515,17 @@ Me.htmluiControl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 'Handle the BorderColorChanged event.
 
-AddHandler Me.htmluiControl1.BorderColorChanged, AddressOf htmluiControl1_BorderColorChanged
+AddHandler Me.htmluiControl1.BorderColorChanged, AddressOf htmluiControl1_BorderColorChanged
 
 
 
-Private Sub htmluiControl1_BorderColorChanged(ByVal sender As Object, ByVal e As EventArgs)
+Private Sub htmluiControl1_BorderColorChanged(ByVal sender As Object, ByVal e As EventArgs)
 
     ' The following line is displayed in the output window at runtime, when this event is fired.
 
     Console.WriteLine(" BorderColorChanged event is raised ")
 
-End Sub
+End Sub
 
 {% endhighlight %}
 
@@ -533,13 +533,13 @@ End Sub
 
 ## BorderSingleChanged event
 
-This [BorderSingleChanged event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html) is handled, when the value of the BorderSingle property is changed. The BorderSingle property indicates the 2D border style.
+This [BorderSingleChanged event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html) is handled, when the value of the BorderSingle property is changed. The BorderSingle property indicates the 2D border style.
 
-The event handler receives an argument of type EventArgs.
+The event handler receives an argument of type EventArgs.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -559,7 +559,7 @@ this.htmluiControl1.BorderSingleChanged+=newEventHandler(htmluiControl1_BorderSi
 
 
 
-private void htmluiControl1_BorderSingleChanged(object sender, EventArgs e)
+private void htmluiControl1_BorderSingleChanged(object sender, EventArgs e)
 
 {
 
@@ -587,17 +587,17 @@ Me.htmluiControl1.BorderSingle = System.Windows.Forms.ButtonBorderStyle.Dotted
 
 'Handle the BorderSingleChanged event.
 
-AddHandler Me.htmluiControl1.BorderSingleChanged, AddressOf htmluiControl1_BorderSingleChanged
+AddHandler Me.htmluiControl1.BorderSingleChanged, AddressOf htmluiControl1_BorderSingleChanged
 
 
 
-Private Sub htmluiControl1_BorderSingleChanged(ByVal sender As Object, ByVal e As EventArgs)
+Private Sub htmluiControl1_BorderSingleChanged(ByVal sender As Object, ByVal e As EventArgs)
 
-    'The following line is displayed in the output window at runtime.
+    'The following line is displayed in the output window at runtime.
 
-   Console.WriteLine(" BorderSingleChanged event is raised ")
+   Console.WriteLine(" BorderSingleChanged event is raised ")
 
-End Sub
+End Sub
 
 {% endhighlight %}
 
@@ -605,13 +605,13 @@ End Sub
 
 ## BorderSidesChanged event
 
-This [BorderSidesChanged event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html) is fired, when the value of the BorderSides property is changed. The BorderSides property indicates the border sides of the panel.
+This [BorderSidesChanged event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html) is fired, when the value of the BorderSides property is changed. The BorderSides property indicates the border sides of the panel.
 
-The event handler receives an argument of type EventArgs.
+The event handler receives an argument of type EventArgs.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -627,7 +627,7 @@ this.htmluiControl1.BorderSidesChanged+=newEventHandler(htmluiControl1_BorderSid
 
 
 
-private void htmluiControl1_BorderSidesChanged(object sender, EventArgs e)
+private void htmluiControl1_BorderSidesChanged(object sender, EventArgs e)
 
 {
 
@@ -651,17 +651,17 @@ Me.htmluiControl1.BorderSides = System.Windows.Forms.Border3DSide.Top
 
 'Handle the BorderSidesChanged event.
 
-AddHandler Me.htmluiControl1.BorderSidesChanged, AddressOf htmluiControl1_BorderSidesChanged
+AddHandler Me.htmluiControl1.BorderSidesChanged, AddressOf htmluiControl1_BorderSidesChanged
 
 
 
-Private Sub htmluiControl1_BorderSidesChanged(ByVal sender As Object, ByVal e As EventArgs)
+Private Sub htmluiControl1_BorderSidesChanged(ByVal sender As Object, ByVal e As EventArgs)
 
     'The following line is displayed in the output window at runtime.
 
-   Console.WriteLine(" BorderSidesChanged event is raised ")
+   Console.WriteLine(" BorderSidesChanged event is raised ")
 
-End Sub
+End Sub
 
 {% endhighlight %}
 
@@ -669,13 +669,13 @@ End Sub
 
 ## BorderStyleChanged event
 
-This [BorderStyleChanged event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html) is fired when the value of the BorderStyle property is changed. The BorderStyle property indicates whether the panel should have a border.
+This [BorderStyleChanged event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html) is fired when the value of the BorderStyle property is changed. The BorderStyle property indicates whether the panel should have a border.
 
-The event handler receives an argument of type EventArgs.
+The event handler receives an argument of type EventArgs.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -691,7 +691,7 @@ this.htmluiControl1.BorderStyleChanged+=new EventHandler(htmluiControl1_BorderSt
 
 
 
-private void htmluiControl1_BorderStyleChanged(object sender, EventArgs e)
+private void htmluiControl1_BorderStyleChanged(object sender, EventArgs e)
 
 {
 
@@ -715,17 +715,17 @@ Me.htmluiControl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 'Handle the BorderStyleChanged event.
 
-AddHandler Me.htmluiControl1.BorderStyleChanged, AddressOf htmluiControl1_BorderStyleChanged
+AddHandler Me.htmluiControl1.BorderStyleChanged, AddressOf htmluiControl1_BorderStyleChanged
 
 
 
-Private Sub htmluiControl1_BorderStyleChanged(ByVal sender As Object, ByVal e As EventArgs)
+Private Sub htmluiControl1_BorderStyleChanged(ByVal sender As Object, ByVal e As EventArgs)
 
-    'The following line is displayed in the output window at runtime, when this event is fired.
+    'The following line is displayed in the output window at runtime, when this event is fired.
 
-   Console.WriteLine(" BorderStyleChanged event is raised ")
+   Console.WriteLine(" BorderStyleChanged event is raised ")
 
-End Sub
+End Sub
 
 {% endhighlight %}
 

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: TabbedMDIManager Events in Windows Forms TabbedMDI | Syncfusion®
-description: Learn about TabbedMDIManager Events support in Syncfusion Windows Forms TabbedMDI control and more details.
+description: Learn about the events available in the Syncfusion Windows Forms TabbedMDI control such as BeforeMDIChildAdded, BeforeDropDownPopup, and TabControlAdded.
 platform: windowsforms
-control: TabbedMDIManager 
+control: TabbedMDIManager
 documentation: ug
 ---
 
@@ -50,7 +50,7 @@ This [BeforeMDIChildAdded event](https://help.syncfusion.com/cr/windowsforms/Syn
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -58,7 +58,7 @@ private void tabbedMDIManager1_BeforeMDIChildAdded(object sender, MDIChildAddCan
 
 {
 
-MessageBox.Show(args.NewControl.ToString() + "is added!");
+MessageBox.Show(e.NewControl.ToString() + " is added!");
 
 }
 
@@ -70,7 +70,7 @@ MessageBox.Show(args.NewControl.ToString() + "is added!");
 
 Private Sub tabbedMDIManager1_BeforeMDIChildAdded(ByVal sender As Object, ByVal e As MDIChildAddCancelEventArgs)
 
-MessageBox.Show(args.NewControl.ToString() + "is added!")
+MessageBox.Show(e.NewControl.ToString() + " is added!")
 
 End Sub
 
@@ -92,7 +92,7 @@ This [TabControlAdding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.W
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -126,7 +126,7 @@ This [TabControlRemoved](https://help.syncfusion.com/cr/windowsforms/Syncfusion.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -162,7 +162,7 @@ This [UnLockingMdIClient](https://help.syncfusion.com/cr/windowsforms/Syncfusion
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 

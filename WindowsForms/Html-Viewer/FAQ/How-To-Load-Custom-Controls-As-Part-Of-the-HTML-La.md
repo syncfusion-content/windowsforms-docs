@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How To Load Custom Controls As Part Of the HTML Layout | Syncfusion®
-description: Learn how to Load Custom Controls As Part Of the HTML Layout in Syncfusion Windows Forms Html Viewer (HTMLUI) control.
+description: Learn how to loading custom .NET controls as part of the HTML layout in the WinForms HTML Viewer control.
 platform: windowsforms
 control: HTML UI
 documentation: ug
@@ -91,7 +91,7 @@ The CustomControlBase implements the base functionality of the Windows Forms con
 
 
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -121,7 +121,7 @@ BaseElement maskedEditTextBoxElement1 = tab["maskedEditTextBox1"] as BaseElement
 
 
 
-    // Here the base functionality of the 'this.maskedEditBox1' is implemented to the'maskedEditTextBoxElement1'. 
+    // Here the base functionality of the 'this.maskedEditBox1' is implemented to the'maskedEditTextBoxElement1'. 
 
 new CustomControlBase( maskedEditTextBoxElement1, this.maskedEditBox1  ); 
 

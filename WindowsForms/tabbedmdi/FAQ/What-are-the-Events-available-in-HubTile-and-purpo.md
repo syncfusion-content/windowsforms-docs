@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Events available in Windows Forms HubTile | Syncfusion®
-description: Learn about the events available in Syncfusion Windows Forms HubTile control such as BeforeTransition and TransitionCompleted.
+description: Learn about the events available in the HubTile control used within the Syncfusion Windows Forms TabbedMDI control, such as BeforeTransition and TransitionCompleted.
 platform: windowsforms
-control: TabbedMDIPackage
+control: TabbedMDIManager
 documentation: ug
 ---
 
@@ -56,9 +56,9 @@ This property returns the image transition direction of HubTile.</td></tr>
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
-    private void HubTile1_BeforeTransition(object sender, BeforeTransitionEventArgs e)
+    private void HubTile1_BeforeTransition(object sender, BeforeTransitionEventArgs e)
 
         {
 
@@ -131,9 +131,9 @@ This property returns the image transition direction of HubTile.</td></tr>
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
-   private void HubTile1_TransitionCompleted (object sender, TransitionCompletedEventArgs e)
+   private void HubTile1_TransitionCompleted (object sender, TransitionCompletedEventArgs e)
 
    {
 
@@ -190,7 +190,7 @@ This returns whether HubTile is selection marked or not.</td></tr>
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 private void HubTile1_HubTileSelectionMarked(object sender, SelectionMarkedEventArgs e)
 
@@ -231,7 +231,7 @@ Members table
 <table>
 <tr>
 <th>
- Members</th><th>
+ Members</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -245,9 +245,9 @@ This returns the HubTile  PulseDuration.</td></tr>
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
-     private void HubTile1_ZoomCompleted(object sender, ZoomCompletedEventArgs e)
+     private void HubTile1_ZoomCompleted(object sender, ZoomCompletedEventArgs e)
 
         {
 
@@ -281,7 +281,7 @@ This Event raises when HubTile Title, Body, Footer, Banner Text are changed.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 

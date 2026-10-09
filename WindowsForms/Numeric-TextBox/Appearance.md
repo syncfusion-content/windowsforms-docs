@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in Windows Forms SfNumericTextBox | Syncfusion®
-description: Learn about Appearance support in Syncfusion Windows Forms Numeric TextBox (SfNumericTextBox) control and more details.
+description: Learn about appearance customization in the Syncfusion Windows Forms Numeric TextBox (SfNumericTextBox) control, including positive, negative, zero, watermark, and border colors.
 platform: windowsforms
 control: SfNumericTextBox
 documentation: ug
@@ -9,15 +9,15 @@ documentation: ug
 
 # Appearance in WinForms Numeric TextBox
 
-WinForms Numeric TextBox UI can be customized with the following properties. It helps in differentiating the values easily.
+WinForms Numeric TextBox UI can be customized with the following properties, which help in differentiating the values easily.
 
-*	[NegativeForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.Styles.NumericTextBoxVisualStyle.html#Syncfusion_WinForms_Input_Styles_NumericTextBoxVisualStyle_NegativeForeColor) – Assign the foreground color to the control, when Value is negative.
-*	[PositiveForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.Styles.NumericTextBoxVisualStyle.html#Syncfusion_WinForms_Input_Styles_NumericTextBoxVisualStyle_PositiveForeColor) - Assign the foreground color to the control, when Value is positive.
-*	[ZeroForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.Styles.NumericTextBoxVisualStyle.html#Syncfusion_WinForms_Input_Styles_NumericTextBoxVisualStyle_ZeroForeColor) - Assign the foreground color to the control, when Value is zero.
+* [NegativeForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.Styles.NumericTextBoxVisualStyle.html#Syncfusion_WinForms_Input_Styles_NumericTextBoxVisualStyle_NegativeForeColor) – Assign the foreground color to the control, when the value is negative.
+* [PositiveForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.Styles.NumericTextBoxVisualStyle.html#Syncfusion_WinForms_Input_Styles_NumericTextBoxVisualStyle_PositiveForeColor) - Assign the foreground color to the control, when the value is positive.
+* [ZeroForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.Styles.NumericTextBoxVisualStyle.html#Syncfusion_WinForms_Input_Styles_NumericTextBoxVisualStyle_ZeroForeColor) - Assign the foreground color to the control, when the value is zero.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.numericTextBox.Style.PositiveForeColor = Color.Green;
 this.numericTextBox.Style.NegativeForeColor = Color.Red;
@@ -35,15 +35,15 @@ Me.numericTextBox.Style.ZeroForeColor = Color.Blue
 
 {% endtabs %}
 
-![Fore color customization](Appearance_images/ForeColor.png)
+![Fore color customization for the WinForms Numeric TextBox](Appearance_images/ForeColor.png)
 
 ## WatermarkForeColor
 
-Assign the fore color to the watermark text using the [WatermarkForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.Styles.NumericTextBoxVisualStyle.html#Syncfusion_WinForms_Input_Styles_NumericTextBoxVisualStyle_WatermarkForeColor) property. The Watermark text will be displayed in the control when the Value is null.
+Assign the fore color to the watermark text using the [WatermarkForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.Styles.NumericTextBoxVisualStyle.html#Syncfusion_WinForms_Input_Styles_NumericTextBoxVisualStyle_WatermarkForeColor) property. The watermark text will be displayed in the control when the value is null.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.numericTextBox.Style.WatermarkForeColor = Color.IndianRed;
 
@@ -57,24 +57,24 @@ Me.numericTextBox.Style.WatermarkForeColor = Color.IndianRed
 
 {% endtabs %}
 
-![Watermark fore customization](Appearance_images/Watermark.png)
+![Watermark fore color customization for the WinForms Numeric TextBox](Appearance_images/Watermark.png)
 
 ## BorderColor
 
-We can customize the UI of the control by changing border color in different states like Focus, Disabled and mouse hover. The properties available to customize are
+You can customize the UI of the control by changing the border color in different states such as focus, disabled, and mouse hover. The properties available to customize are:
 
-*	[BorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.Styles.NumericTextBoxVisualStyle.html#Syncfusion_WinForms_Input_Styles_NumericTextBoxVisualStyle_BorderColor)- Assign the border color to the control.
-*	[FocusBorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.Styles.NumericTextBoxVisualStyle.html#Syncfusion_WinForms_Input_Styles_NumericTextBoxVisualStyle_FocusBorderColor)  - Assign the border color to the control, when the control gets its focus.
-*	[HoverBorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.Styles.NumericTextBoxVisualStyle.html#Syncfusion_WinForms_Input_Styles_NumericTextBoxVisualStyle_HoverBorderColor) - Assign the border color to the control, when the mouse is hover on it.
-*   [DisabledBorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.Styles.NumericTextBoxVisualStyle.html#Syncfusion_WinForms_Input_Styles_NumericTextBoxVisualStyle_DisabledBorderColor) - Assign the border color to the control, when the control gets disabled.
+* [BorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.Styles.NumericTextBoxVisualStyle.html#Syncfusion_WinForms_Input_Styles_NumericTextBoxVisualStyle_BorderColor)- Assign the border color to the control.
+* [FocusBorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.Styles.NumericTextBoxVisualStyle.html#Syncfusion_WinForms_Input_Styles_NumericTextBoxVisualStyle_FocusBorderColor)  - Assign the border color to the control, when the control gets its focus.
+* [HoverBorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.Styles.NumericTextBoxVisualStyle.html#Syncfusion_WinForms_Input_Styles_NumericTextBoxVisualStyle_HoverBorderColor) - Assign the border color to the control, when the mouse is hovering over it.
+* [DisabledBorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.Styles.NumericTextBoxVisualStyle.html#Syncfusion_WinForms_Input_Styles_NumericTextBoxVisualStyle_DisabledBorderColor) - Assign the border color to the control, when the control gets disabled.
 
-> Note :
+> **NOTE**:
 >
-> BorderColor, FocusBorderColor, DisabledBorderColor and HoverBorderColor will be applied only when BorderStyle property set as “FixedSingle”. 
+> The `BorderColor`, `FocusBorderColor`, `DisabledBorderColor`, and `HoverBorderColor` properties will be applied only when the `BorderStyle` property is set to “FixedSingle”.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.numericTextBox.Style.BorderColor = ColorTranslator.FromHtml("#ababab");
 this.numericTextBox.Style.FocusBorderColor = SystemColors.MenuHighlight;
@@ -92,4 +92,4 @@ Me.numericTextBox.Style.HoverBorderColor = ColorTranslator.FromHtml("#e5c365")
 
 {% endtabs %}
 
-![Border color customization](Appearance_images/BorderColor.png)
+![Border color customization for the WinForms Numeric TextBox](Appearance_images/BorderColor.png)

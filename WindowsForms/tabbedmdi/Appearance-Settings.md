@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Appearance Settings in Windows Forms TabbedMDI | Syncfusion®
-description: Learn about Appearance Settings support in Syncfusion Windows Forms TabbedMDI control and more details.
+description: Learn how to customize the appearance of tabs, icons, themes, and colors in the Syncfusion Windows Forms TabbedMDI control.
 platform: windowsforms
-control: TabbedMDIPackage 
+control: TabbedMDIManager
 documentation: ug
 ---
 
 # Appearance Settings in WinForms TabbedMDI
 
-The variousAppearance Settings for WinForms TabbedMDI are discussed in this section.  
+The various appearance settings for WinForms TabbedMDI are discussed in this section.  
 
 ## Foreground settings
 
@@ -23,7 +23,7 @@ The text of the tabs can be set by directly setting the Text property of the for
 
 #### Icon settings
 
-The below properties controls the appearance and behavior of the icon settings.
+The properties below control the appearance and behavior of the icon settings.
 
 Property table
 
@@ -48,7 +48,7 @@ The size of the image or icon that you want to add to the tabs can be set using 
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.Text = "Tabbed MDI Demo (Syncfusion Inc.)";
 
@@ -84,7 +84,7 @@ The WinForms TabbedMDI Control can be themed by enabling the ThemesEnabled prope
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.tabbedMDIManager1.ThemesEnabled = true;
 
@@ -110,7 +110,7 @@ This option helps to customize the active tab back color.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.tabbedMDIManager.ActiveTabBackColor = Color.Red;
 
@@ -133,7 +133,7 @@ This option helps to customize the inactive tab back color.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.tabbedMDIManager.TabBackColor = Color.Green;
 
@@ -156,7 +156,7 @@ This option helps to customize the active tab fore color.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.tabbedMDIManager.ActiveTabForeColor = Color.Yellow;
 
@@ -179,7 +179,7 @@ This option helps to customize the inactive tab fore color.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.tabbedMDIManager.TabForeColor = Color.Violet;
 
@@ -202,7 +202,7 @@ This option helps to customize the background color of tab panel.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.tabbedMDIManager.TabPanelBackColor = Color.LightGreen;
 
@@ -225,7 +225,7 @@ This option helps to customize the active tab font.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.tabbedMDIManager.ActiveTabFont = new Font("Algerian", 10);
 
@@ -234,7 +234,7 @@ this.tabbedMDIManager.ActiveTabFont = new Font("Algerian", 10);
 
 {% highlight VB %}
 
-Me.tabbedMDIManager.ActiveTabFont = new Font("Algerian", 10)
+Me.tabbedMDIManager.ActiveTabFont = New Font("Algerian", 10)
 
 {% endhighlight %}
 
@@ -248,7 +248,7 @@ This property helps to customize the inactive tab font.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.tabbedMDIManager.TabFont = new Font("Arial Black", 10);
 
@@ -257,7 +257,7 @@ this.tabbedMDIManager.TabFont = new Font("Arial Black", 10);
 
 {% highlight VB %}
 
-Me.tabbedMDIManager.TabFont = new Font("Arial Black", 10)
+Me.tabbedMDIManager.TabFont = New Font("Arial Black", 10)
 
 {% endhighlight %}
 
@@ -271,7 +271,7 @@ This property helps to customize bottom line in tab panel.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.tabbedMDIManager.TabPanelBorderColor = Color.Orange;
 

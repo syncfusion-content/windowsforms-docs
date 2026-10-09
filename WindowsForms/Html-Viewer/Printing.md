@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Printing in Windows Forms HTMLUI control | Syncfusion®
-description: Learn about Printing support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
+description: Learn about print previewing and printing the contents of the WinForms HTML Viewer control.
 platform: windowsforms
 control: HTMLUI
 documentation: ug
@@ -13,7 +13,7 @@ The WinForms HTML Viewer control supports printing that helps the user in develo
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -88,7 +88,7 @@ End If
 Along with printing feature, WinForms HTML Viewer control supports previewing of the document before printing. This following code snippet shows how the print preview feature is enabled in the control.
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -118,7 +118,7 @@ private void PrintPreViewButton_Click(object sender, System.EventArgs e)
 
 
 
-' Document Initialization 
+' Document Initialization 
 
 Private Sub PrintPreViewButton_Click(ByVal sender As Object, ByVal e As System.EventArgs)
 

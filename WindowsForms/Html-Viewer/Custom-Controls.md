@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Custom Controls in Windows Forms HTMLUI control | Syncfusion®
-description: Learn about Custom Controls support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
+description: Learn about loading and rendering custom controls within an HTML document using the WinForms HTML Viewer control.
 platform: windowsforms
 control: HTMLUI
 documentation: ug
@@ -57,7 +57,7 @@ The CustomControlBase implements the base functionality of the Windows Forms con
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 

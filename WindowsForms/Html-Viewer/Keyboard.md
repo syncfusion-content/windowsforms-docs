@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Keyboard in Windows Forms HTMLUI control | Syncfusion®
-description: Learn about Keyboard support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
+description: Learn about keyboard interaction and shortcut support in the WinForms HTML Viewer control.
 platform: WindowsForms
 control: HTMLUI
 documentation: ug

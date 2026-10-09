@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Lock and Unlock MDI Clients in TabbedMDI | Syncfusion®
-description: Learn how to lock and unlock MDIClients in Syncfusion Windows Forms TabbedMDI control, its elements and more details.
+description: Learn how to lock and unlock the MDI client area in the Syncfusion Windows Forms TabbedMDI control using the LockMDIClientUpdate and UnLockMDIClientUpdate methods.
 platform: windowsforms
 control: TabbedMDIManager
 documentation: ug
@@ -30,7 +30,7 @@ Unlocks the MDIClients alone</td></tr>
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 

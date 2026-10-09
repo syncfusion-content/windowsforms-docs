@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How To Access the HTML Elements Loaded Into the Control | Syncfusion®
-description: Learn how to Access the HTML Elements Loaded Into the Control in Syncfusion Windows Forms Html Viewer (HTMLUI) control.
+description: Learn how to accessing HTML elements loaded into the WinForms HTML Viewer control using element collections and queries.
 platform: windowsforms
 control: HTML UI
 documentation: ug
@@ -39,7 +39,7 @@ The following code snippet illustrates accessing the HTML elements from the abov
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 

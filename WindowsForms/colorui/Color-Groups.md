@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Color Groups in Windows Forms ColorUI | Syncfusion®
-description: Learn about Color Groups support in Syncfusion Windows Forms ColorUI control, its elements and more details.
+description: Learn about color groups in the Syncfusion Windows Forms ColorUI control, including built-in groups, custom user groups, and the ColorGroups property configuration.
 platform: windowsforms
 control: ColorUI
 documentation: ug
@@ -29,7 +29,7 @@ this.colorUIControl1.ColorGroups = ((Syncfusion.Windows.Forms.ColorUIGroups)((Sy
 
 Me.colorUIControl1.ColorGroups = DirectCast(((Syncfusion.Windows.Forms.ColorUIGroups.CustomColors Or Syncfusion.Windows.Forms.ColorUIGroups.StandardColors)), Syncfusion.Windows.Forms.ColorUIGroups) 
 
-{% endhighlight  %}
+{% endhighlight %}
 {% endtabs %}
 
 ![Overview_img230](ColorUI_images/Overview_img230.jpeg)
@@ -43,18 +43,18 @@ ColorGroups property also let you add user groups in addition to the standard gr
 
 this.colorUIControl1.ColorGroups = ((Syncfusion.Windows.Forms.ColorUIGroups)(((Syncfusion.Windows.Forms.ColorUIGroups.CustomColors | Syncfusion.Windows.Forms.ColorUIGroups.StandardColors)| Syncfusion.Windows.Forms.ColorUIGroups.UserColors)));
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight vb %}
 
 Me.colorUIControl1.ColorGroups = DirectCast((((Syncfusion.Windows.Forms.ColorUIGroups.CustomColors Or  Syncfusion.Windows.Forms.ColorUIGroups.StandardColors) Or Syncfusion.Windows.Forms.ColorUIGroups.UserColors)),  Syncfusion.Windows.Forms.ColorUIGroups) 
 
-{% endhighlight  %}
+{% endhighlight %}
 {% endtabs %}
 
 ![Overview_img231](ColorUI_images/Overview_img231.jpeg) 
 
-N> We can add custom text for the tabs of the Color groups. See [Tab Text] (/windowsforms/ColorUI/Tab-Text)for details.
+>**NOTE**: We can add custom text for the tabs of the Color groups. See [Tab Text] (/windowsforms/ColorUI/Tab-Text)for details.
 
-N> The Custom Color Panels and User Color Panels can be stretched according to the size of the control. Refer_ ColorUIControl Appearance _for details.
+>**NOTE**: The Custom Color Panels and User Color Panels can be stretched according to the size of the control. Refer_ ColorUIControl Appearance _for details.
 

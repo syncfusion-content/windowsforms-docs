@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How To Toggle HTML Element Visibility in HTMLUI Control| Syncfusion®
-description: Learn how to Toggle the Visibility Of an HTML Element in the HTMLUI control at run-time in Syncfusion Windows Forms Html Viewer (HTMLUI) control.
+description: Learn how to toggling the visibility of an HTML element in the WinForms HTML Viewer control at runtime.
 platform: windowsforms
 control: HTML UI
 documentation: ug
@@ -49,7 +49,7 @@ The following code snippet shows how the visibility of an element is toggled on 
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
