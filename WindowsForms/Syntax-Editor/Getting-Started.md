@@ -3,13 +3,13 @@ layout: post
 title: Getting Started with Windows Forms Syntax Editor | Syncfusion®
 description: Learn how to get started with the Syncfusion® Windows Forms Syntax Editor control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
-control: Syntax Editor
+control: SyntaxEditor
 documentation: ug
 ---
 
 # Getting Started with Windows Forms Syntax Editor
 
-This section explains how to create an interactive code editor application like the Microsoft Visual Studio Editor by using the Syntax Editor (EditControl).
+This section explains how to use the EditControl to build a code editor similar to the Visual Studio Editor.
 
 ## Assembly deployment
 
@@ -23,19 +23,19 @@ To install via the NuGet Package Manager Console, run:
 Install-Package Syncfusion.Edit.Windows
 ```
 
-## Adding Syntax Editor via designer
+## Adding EditControl via designer
 
 1. Create a new Windows Forms project in Visual Studio.
 
 2. Add the [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) to the application by dragging it from the toolbox to the designer surface. The following dependent assemblies are added automatically:
 
-	* Syncfusion.Shared.Base
-	* Syncfusion.Tools.Windows
 	* Syncfusion.Edit.Windows
+	* Syncfusion.Tools.Windows
+	* Syncfusion.Shared.Base
 
-![Windows Forms Syntax Editor drag and drop from toolbox](Getting-Started_images/Getting-Started_img2.png)
+![Windows Forms EditControl drag and drop from toolbox](Getting-Started_images/Getting-Started_img2.png)
 
-## Adding Syntax Editor via code
+## Adding EditControl via code
 
 To add the control manually, follow these steps:
 
@@ -43,9 +43,9 @@ To add the control manually, follow these steps:
 
 2. Add the following assembly references to the project:
 
-	* Syncfusion.Shared.Base
-	* Syncfusion.Tools.Windows
 	* Syncfusion.Edit.Windows
+	* Syncfusion.Tools.Windows
+	* Syncfusion.Shared.Base
 
 3. Create an instance of the [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) and add it to the form.
 
@@ -53,54 +53,74 @@ To add the control manually, follow these steps:
 {% tabs %}
 {% highlight C# %}
 
-private Syncfusion.Windows.Forms.Edit.EditControl editControl1;
+using System.Drawing;
+using System.Windows.Forms;
+using Syncfusion.Windows.Forms.Edit;
 
-editControl1 = new Syncfusion.Windows.Forms.Edit.EditControl();
-editControl1.Size = new Size(50, 50);
-editControl1.Dock = DockStyle.Fill;
-editControl1.BorderStyle = BorderStyle.Fixed3D;
-this.Controls.Add(editControl1);
+namespace Winforms_Sample_Framework
+{
+    public partial class Form1 : Form
+    {
+        private EditControl editControl1;
+        public Form1()
+        {
+            InitializeComponent();
+            editControl1 = new EditControl();
+            editControl1.Size = new Size(50, 50);
+            editControl1.Dock = DockStyle.Fill;
+            editControl1.BorderStyle = BorderStyle.Fixed3D;
+            this.Controls.Add(editControl1);
+        }
+    }
+}
 
 {% endhighlight %}
 
-
 {% highlight VB %}
 
-private editControl1 As Syncfusion.Windows.Forms.Edit.EditControl
+Imports System.Windows.Forms
+Imports Syncfusion.Windows.Forms.Edit
 
-editControl1 = New Syncfusion.Windows.Forms.Edit.EditControl()
-editControl1.Size = New Size(50, 50)
-editControl1.Dock = DockStyle.Fill
-editControl1.BorderStyle = BorderStyle.Fixed3D
-Me.Controls.Add(editControl1)
+Public Class Form1
+    Inherits Form
+
+    Private editControl1 As EditControl
+    Public Sub New()
+        InitializeComponent()
+        editControl1 = New Syncfusion.Windows.Forms.Edit.EditControl()
+        editControl1.Size = New Size(50, 50)
+        editControl1.Dock = DockStyle.Fill
+        editControl1.BorderStyle = BorderStyle.Fixed3D
+        Me.Controls.Add(editControl1)
+    End Sub
+End Class
 
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }} 
 
-![Windows Forms showing Syntax Editor](Getting-Started_images/Getting-Started_img3.png)
+![Windows Forms showing EditControl](Getting-Started_images/Getting-Started_img3.png)
 
 ## Loading a file into the document
 
-This section explains how to load a file into the Syntax Editor.
+This section explains how to load a file into the EditControl.
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Loading the files into edit control by passing the file name as parameter to the LoadFile function.
+// Load the file into the EditControl by passing the file path to the LoadFile method.
 
 this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\FileName.cs");
 
 {% endhighlight %}
 
-
 {% highlight VB %}
 
-` Loading the files into edit control by passing the file name as parameter to the LoadFile function.
+' Load the file into the EditControl by passing the file path to the LoadFile function.
 
-Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\FileName.cs")
+Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + "\..\..\FileName.cs")
 
 {% endhighlight %}
 
@@ -110,7 +130,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 The [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) offers built-in syntax highlighting for the most commonly used languages and also provides support for configuring a new custom language.
 
-The Syntax Editor has built-in syntax highlighting support for the following languages:
+The EditControl has built-in syntax highlighting support for the following languages:
 
 * C#
 * VB.NET
@@ -134,10 +154,9 @@ this.editControl1.ApplyConfiguration(KnownLanguages.CSharp);
 
 {% endhighlight %}
 
-
 {% highlight VB %}
 
-' Apply the built-in configuration for a known language.
+'Apply the built-in configuration for a known language.
 
 Me.editControl1.ApplyConfiguration(KnownLanguages.CSharp)
 
@@ -145,16 +164,16 @@ Me.editControl1.ApplyConfiguration(KnownLanguages.CSharp)
 
 {% endtabs %}
 
-![Windows Forms Syntax Editor configured for C Sharp language](Getting-Started_images/Getting-Started_img4.png)
+![Windows Forms EditControl configured for C Sharp language](Getting-Started_images/Getting-Started_img4.png)
 
 ## Custom language configuration
 
-The Syntax Editor supports custom language configuration. You can plug in an external XML configuration file that defines a custom language and then apply it with the [Configurator.Open](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_Configurator) and [ApplyConfiguration](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ApplyConfiguration_System_String_) methods.
+The EditControl supports custom language configuration. You can plug in an external XML file that defines the new language and then apply it with the [Configurator.Open](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_Configurator) and [ApplyConfiguration](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ApplyConfiguration_System_String_) methods.
 
 1. Create a configuration file (for example, `config.xml`) and set its **Copy to Output Directory** property to **Copy if newer**.
 
 {% capture codesnippet2 %}
-{% highlight xaml %}
+{% highlight xml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
 <ArrayOfConfigLanguage>
@@ -182,46 +201,90 @@ The Syntax Editor supports custom language configuration. You can plug in an ext
 		</splits>
 	</ConfigLanguage>
 </ArrayOfConfigLanguage>
+
 {% endhighlight %}
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }} 
 
-2. Apply the configuration file to the Syntax Editor.
+2. Add a sample file `Sample.lsp` to the project root and set its **Copy to Output Directory** property to **Copy if newer**.
+
+{% capture codesnippet_sample_lsp %}
+{% highlight lisp %}
+
+#Region "Collapsible Region"
+
+(car '(rose violet daisy buttercup))
+(cdr '(rose violet daisy buttercup))
+(cons 'pine '(fir oak maple))
+
+#End Region
+
+{% endhighlight %}
+{% endcapture %}
+{{ codesnippet_sample_lsp | OrderList_Indent_Level_1 }}
+
+3. Apply the configuration file to the EditControl.
 
 {% capture codesnippet3 %}
 {% tabs %}
 {% highlight C# %}
 
-private string configFile = Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\config.xml";
+using Syncfusion.Windows.Forms.Edit;
+using System.Drawing;
+using System.IO;
+using System.Windows.Forms;
 
-// Plug in an external configuration file.
-
-this.editControl1.Configurator.Open(configFile);
-
-// Apply the configuration defined in the configuration file.
-
-this.editControl1.ApplyConfiguration("LISP");
+namespace Winforms_Sample_Framework
+{
+    public partial class Form1 : Form
+    {
+        private EditControl editControl1;
+        private string configFile = Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\config.xml";
+        public Form1()
+        {
+            InitializeComponent();
+            editControl1 = new EditControl();
+            editControl1.Size = new Size(50, 50);
+            editControl1.Dock = DockStyle.Fill;
+            editControl1.BorderStyle = BorderStyle.Fixed3D;
+            this.editControl1.Configurator.Open(configFile);
+            this.editControl1.ApplyConfiguration("LISP");
+            this.editControl1.LoadFile("Sample.lsp");
+            this.Controls.Add(editControl1);
+        }
+    }
+}
 
 {% endhighlight %}
 
-
 {% highlight VB %}
 
-private string configFile = Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\config.xml";
+Imports System.IO
+Imports Syncfusion.Windows.Forms.Edit
 
-' Plug in an external configuration file.
+Public Class Form1
+    Inherits Form
 
-Me.editControl1.Configurator.Open(configFile)
-
-' Apply the configuration defined in the configuration file.
-
-Me.editControl1.ApplyConfiguration("LISP")
+    Private editControl1 As EditControl
+    Private configFile As String = Path.GetDirectoryName(Application.ExecutablePath) + "\..\..\config.xml"
+    Public Sub New()
+        InitializeComponent()
+        editControl1 = New EditControl()
+        editControl1.Size = New Size(50, 50)
+        editControl1.Dock = DockStyle.Fill
+        editControl1.BorderStyle = BorderStyle.Fixed3D
+        Me.editControl1.Configurator.Open(configFile)
+        Me.editControl1.ApplyConfiguration("LISP")
+        Me.editControl1.LoadFile("Sample.lsp")
+        Me.Controls.Add(editControl1)
+    End Sub
+End Class
 
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }} 
 
-![Windows Forms Syntax Editor configured for custom language](Getting-Started_images/Getting-Started_img5.png)
+![Windows Forms EditControl configured for custom language](Getting-Started_images/Getting-Started_img5.png)
 
 N> You can refer to our [WinForms Syntax Editor](https://www.syncfusion.com/winforms-ui-controls/syntax-editor) feature tour page for its unique feature set. You can also explore our [WinForms Syntax Editor example](https://github.com/syncfusion/winforms-demos/tree/master/edit) that shows how to create interactive code-editor applications with syntax highlighting, text indentation, IntelliSense, and more.
