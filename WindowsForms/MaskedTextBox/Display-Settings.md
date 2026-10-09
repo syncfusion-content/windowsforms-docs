@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Display Settings in Windows Forms MaskedTextBox | Syncfusion®
 description: Display settings in MaskedEditBox support separators, cursor positioning, data grouping, and password-style input display.
@@ -6,9 +6,9 @@ platform: windowsforms
 control: MaskedEditBox
 documentation: ug
 ---
-# Display Settings in MaskedTextBox (MaskedEditBox)
+# Display Settings in Windows Forms MaskedTextBox (MaskedEditBox)
 
-This section discusses the display settings of the [MaskedEditBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html) control.
+This section discusses the display settings of the [MaskedEditBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html) control. The `maskedEditBox1` instance used in the examples below is assumed to be created as shown in the [Getting Started](https://help.syncfusion.com/windowsforms/maskedtextbox/getting-started) documentation.
 
 ## Separators
 
@@ -39,7 +39,7 @@ Specifies the character to use when a time separator position is specified.The d
 </table>
 
 
-For example, if you want to display the user data in date time format say mm/dd/yy, the mask character should be '##/##/##'.
+For example, if you want to display the user data in date-time format such as `mm/dd/yy`, the mask character should be `##/##/##`. The user does not need to type separators at run time because the control inserts them based on the configured separator properties.
 
 We can change the default separators used. If you want to display the date time as 'mm-dd-yy', change the DateSeparator property from '/' to '-'.
 
