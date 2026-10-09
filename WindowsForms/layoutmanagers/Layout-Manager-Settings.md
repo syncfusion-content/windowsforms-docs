@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Layout Manager Settings in Windows Forms LayoutManagers
 
-The settings that are common to all the Layout Manager's have been discussed in this section.
+The settings that are common to all the Layout Managers have been discussed in this section.
 
 ## Behavior settings
 
@@ -120,7 +120,7 @@ Me.borderLayout1.CustomLayoutBounds = New System.Drawing.Rectangle(0, 0, 0, 0)
 
 {% endtabs %}
 
-N> When you specify the custom layout bounds and the Container is resizable, you should also set the AutoLayout property to 'False' and set a new custom layout Note: The layout is done within the Container's client rectangle, even if the Container has a scrollable display rectangle.
+N> When you specify the custom layout bounds and the Container is resizable, you should also set the AutoLayout property to 'False' and set a new custom layout. The layout is done within the Container's client rectangle, even if the Container has a scrollable display rectangle.
 
 ## Margin settings
 
@@ -141,11 +141,11 @@ TopMargin</td><td>
 Gets/sets the top margin between the client rectangle and the layout rectangle.</td></tr>
 <tr>
 <td>
-HortNearMargin</td><td>
+HorzNearMargin</td><td>
 Gets/sets the left margin between the client rectangle and the layout rectangle.</td></tr>
 <tr>
 <td>
-HortFarMargin</td><td>
+HorzFarMargin</td><td>
 Gets/sets the right margin between the client rectangle and the layout rectangle.</td></tr>
 <tr>
 <td>
@@ -203,7 +203,7 @@ The Child control settings for the Layout Managers are given below.
 
 ### Preferred size
 
-The Layout Managers usually layout the components based on their preferred sizes. But a .NET control does not provide information regarding it's preferred size. To overcome this, a PreferredSize extended property is provided for each Child control at design time.
+The Layout Managers usually layout the components based on their preferred sizes. But a .NET control does not provide information regarding its preferred size. To overcome this, a PreferredSize extended property is provided for each Child control at design time.
 
 In code, you can perform the same using the methods given below.
 
