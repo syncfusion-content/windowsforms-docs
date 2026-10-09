@@ -1,7 +1,7 @@
-﻿---
+---
 layout: post
 title: Configure Color Schemes in Windows Forms Office2007Form | Syncfusion®
-description: Color schemes support Office-inspired themes, managed colors, Aero theme integration, and background color customization.
+description: Color schemes support Office-inspired themes, managed colors, Aero theme support, and background color customization.
 platform: WindowsForms
 control: Office2007 Form
 documentation: ug
@@ -9,29 +9,40 @@ documentation: ug
 
 # Configure Color Schemes in Windows Forms Office2007Form
 
-Office2007Form supports following office color schemes which can be edited through the `ColorScheme` property.
+Office2007Form supports the following Office color schemes, which can be edited through the [ColorScheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Form.html#Syncfusion_Windows_Forms_Office2007Form_ColorScheme) property.
 
 * Blue
 * Silver
 * Black
 * Managed
 
+## Table of contents
 
-![Winforms showing how to apply colorscheme in office2007form](Color-Schemes_images/Color-Schemes_img1.png)
+* [Apply a built-in color scheme](#apply-a-built-in-color-scheme)
+* [Managed color scheme](#managed-color-scheme)
+* [Background color for Office2007Form](#background-color-for-office2007form)
+* [Applying color schemes](#applying-color-schemes)
+* [See also](#see-also)
+
+Ensure the `Syncfusion.Windows.Forms` namespace is imported (see [Getting Started](Getting-Started.md)).
+
+## Apply a built-in color scheme
+
+![WinForms Office2007Form overview showing the color scheme options](Color-Schemes_images/Color-Schemes_img1.png)
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
-//To set Blue color scheme
+// To set the Blue color scheme
 
 this.ColorScheme = Office2007Theme.Blue;
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vb %}
 
-'To set Blue color scheme
+' To set the Blue color scheme
 
 Me.ColorScheme = Office2007Theme.Blue
 
@@ -39,50 +50,51 @@ Me.ColorScheme = Office2007Theme.Blue
 
 {% endtabs %}
 
-![Winforms showing colorscheme blue applied in office2007form](Color-Schemes_images/Color-Schemes_img2.png)
+![WinForms Office2007Form with the Blue color scheme applied](Color-Schemes_images/Color-Schemes_img2.png)
 
-To apply the Managed color scheme `ApplyManagedColors` function is used as in the below code snippet.
+## Managed color scheme
+
+To apply the `Managed` color scheme, the [`ApplyManagedColors`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Colors.html#Syncfusion_Windows_Forms_Office2007Colors_ApplyManagedColors_System_Windows_Forms_Form_System_Drawing_Color_) method is used, as in the following code snippet. The first argument must be the owner `Form`.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
-//To set Managed color scheme.
+// To set the Managed color scheme
 
-this.ColorScheme = Office2010Theme.Managed;
+this.ColorScheme = Office2007Theme.Managed;
 
 Office2007Colors.ApplyManagedColors(this, Color.DarkMagenta);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vb %}
 
-'To set Managed color scheme.
+' To set the Managed color scheme
 
-Me.ColorScheme = Office2010Theme.Managed
+Me.ColorScheme = Office2007Theme.Managed
 
-Office2007Colors.ApplyManagedColors(this, Color.DarkMagenta);
+Office2007Colors.ApplyManagedColors(Me, Color.DarkMagenta)
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Winforms showing colorscheme managed applied in office2007form](Color-Schemes_images/Managed.png)
-
+![WinForms Office2007Form with the Managed color scheme applied](Color-Schemes_images/Managed.png)
 
 ## Background color for Office2007Form
 
-The background color of the Office2007Form can be same, as the color scheme applied to the Form. `UseOffice2007SchemeBackColor` property has to be `true`, to make this effective.
+The background color of the Office2007Form can match the color scheme applied to the form. Set the [`UseOffice2007SchemeBackColor`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Form.html#Syncfusion_Windows_Forms_Office2007Form_UseOffice2007SchemeBackColor) property to `true` to make this effective.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.UseOffice2007SchemeBackColor = true;
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vb %}
 
 Me.UseOffice2007SchemeBackColor = True
 
@@ -90,30 +102,38 @@ Me.UseOffice2007SchemeBackColor = True
 
 {% endtabs %}
 
-![Winforms showing background color applied in office2007form](Color-Schemes_images/Color-Schemes_img3.png)
+![WinForms Office2007Form with the Office 2007 scheme color applied to the form background](Color-Schemes_images/Color-Schemes_img3.png)
 
 ## Applying color schemes
 
-Office2007Form now have the ability to apply or not to apply AeroTheme on Forms with a glassy effect. This can be done by [ApplyAeroTheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Form.html#Syncfusion_Windows_Forms_Office2007Form_ApplyAeroTheme) property.
+Office2007Form can apply or skip the Aero theme on forms with a glassy effect. This is controlled by the [`ApplyAeroTheme`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Form.html#Syncfusion_Windows_Forms_Office2007Form_ApplyAeroTheme) property.
 
-AeroTheme support is available for Office2007Form when used in Vista machine. Earlier, ColorSchemes cannot be applied to Office2007Form when AeroTheme was enabled. Now ColorSchemes can be applied by disabling AeroTheme on Office2007Form.
+Aero theme support is available for Office2007Form when used on a Vista machine (or later). Earlier, color schemes could not be applied to Office2007Form when Aero theme was enabled. Now color schemes can be applied by disabling Aero theme on Office2007Form.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
-// Disables Aero Theme on Office2007Form.
+// Disables Aero theme on Office2007Form.
 
 this.ApplyAeroTheme = false;
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vb %}
 
-‘Disables Aero Theme on Office2007Form.
+' Disables Aero theme on Office2007Form.
 
-Me.ApplyAeroTheme = false;
+Me.ApplyAeroTheme = False
 
 {% endhighlight %}
 
 {% endtabs %}
+
+## See also
+
+* [About the Office2007Form control](Overview.md)
+* [Getting Started with Windows Forms Office2007 Form](Getting-Started.md)
+* [Office2007Form Customization in Windows Forms](Customization.md)
+* [How to Enable Shadow in Windows Forms Office2007Form](FAQ/How-to-enable-shadow-of-the-Office2007Form.md)
+* [Office2007Form API reference](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Form.html)
