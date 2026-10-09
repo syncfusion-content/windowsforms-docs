@@ -17,7 +17,7 @@ You can find more details about installing the NuGet packages in a Windows Forms
 
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
 
-### Create a simple application with TrackBarEx
+## Create a simple application with PopupControlContainer
 
 You can create a Windows Forms application with [PopupControlContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html) using the following steps:
 
@@ -44,7 +44,7 @@ The PopupControlContainer control can be added through designer by following the
 
 ![Adding rich text box control to the PopupControlContainer](GettingStarted_Images/PopupControl4.png)
 
-4. Associate the [RichTextBox](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.richtextbox?view=netframework-4.7.2) instance in the Properties panel of PopupControlContainer under the [ParentControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html#Syncfusion_Windows_Forms_PopupControlContainer_ParentControl).
+4. Associate the [RichTextBox](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.richtextbox?view=netframework-4.7.2) instance in the Properties panel of PopupControlContainer under the [ParentControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html#Syncfusion_Windows_Forms_PopupControlContainer_ParentControl).
 
 ![Selecting properties of PopupControlContainer](GettingStarted_Images/PopupControl5.png)
 
@@ -110,7 +110,7 @@ this.richTextBox1 = new System.Windows.Forms.RichTextBox();
 // popupControlContainer1
 this.popupControlContainer1.Controls.Add(this.button1);
 this.popupControlContainer1.Location = new System.Drawing.Point(33, 58);
-this.popupControlContainer1.Name = "popupControlContainer2";
+this.popupControlContainer1.Name = "popupControlContainer1";
 this.popupControlContainer1.ParentControl = this.richTextBox1;
 this.popupControlContainer1.Size = new System.Drawing.Size(200, 100);
 
@@ -124,7 +124,7 @@ this.button1.Text = "PopupControlContainer";
 this.richTextBox1.Location = new System.Drawing.Point(12, 12);
 this.richTextBox1.Name = "richTextBox1";
 this.richTextBox1.Size = new System.Drawing.Size(100, 96);
-this.richTextBox1.Click += RichTextBox1_Click1;
+this.richTextBox1.Click += RichTextBox1_Click;
 
 // Form1
 this.ClientSize = new System.Drawing.Size(282, 253);
@@ -132,7 +132,7 @@ this.Controls.Add(this.richTextBox1);
 this.Name = "Form1";
 this.Text = "Form1";   
 
-private void RichTextBox1_Click1(object sender, EventArgs e)
+private void RichTextBox1_Click(object sender, EventArgs e)
 {
     this.popupControlContainer1.ShowPopup(Point.Empty);
 }
@@ -152,7 +152,7 @@ Me.richTextBox1 = New System.Windows.Forms.RichTextBox()
 ' popupControlContainer1
 Me.popupControlContainer1.Controls.Add(Me.button1)
 Me.popupControlContainer1.Location = New System.Drawing.Point(33, 58)
-Me.popupControlContainer1.Name = "popupControlContainer2"
+Me.popupControlContainer1.Name = "popupControlContainer1"
 Me.popupControlContainer1.ParentControl = Me.richTextBox1
 Me.popupControlContainer1.Size = New System.Drawing.Size(200, 100)
 
@@ -166,7 +166,7 @@ Me.button1.Text = "PopupControlContainer"
 Me.richTextBox1.Location = New System.Drawing.Point(12, 12)
 Me.richTextBox1.Name = "richTextBox1"
 Me.richTextBox1.Size = New System.Drawing.Size(100, 96)
-Me.richTextBox1.Click += RichTextBox1_Click1
+AddHandler Me.richTextBox1.Click, AddressOf RichTextBox1_Click
 
 ' Form1
 Me.ClientSize = New System.Drawing.Size(282, 253)
@@ -174,9 +174,10 @@ Me.Controls.Add(Me.richTextBox1)
 Me.Name = "Form1"
 Me.Text = "Form1"
 
-Private Sub RichTextBox1_Click1(ByVal sender As Object, ByVal e As EventArgs)
+Private Sub RichTextBox1_Click(ByVal sender As Object, ByVal e As EventArgs)
     Me.popupControlContainer1.ShowPopup(Point.Empty)
 End Sub
+
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}

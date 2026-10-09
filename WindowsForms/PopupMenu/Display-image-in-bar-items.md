@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Display Image in Bar Items in Windows Forms PopupMenu | Syncfusion®
 description: Display images in bar items using enabled, disabled, and highlighted states to improve menu recognition and usability.
@@ -9,10 +9,10 @@ documentation: ug
 
 # Display Image in Bar Items in Windows Forms PopupMenu
 
-Displaying an image besides each bar item helps users to easily identify the operation through iconic representation and also to improve the visual appearance of the popup menu. Images can associated with a bar item depending upon its state either it is enabled, disabled, highlighted upon it.
+Displaying an image beside each bar item helps users to easily identify the operation through iconic representation and also improves the visual appearance of the popup menu. Images can be associated with a bar item depending upon its state, i.e., enabled, disabled, or highlighted.
 
 >**NOTE**    
-In this illustration we have set image for **BarItem**. Similarly, we have to set for ParentBarItem, DropDownBarItem, ComboBoxBarItem, ListBarItem, StaticBarItem and TextBoxBarItem.
+In this illustration, the image has been set for the **BarItem**. Similarly, this has to be set for ParentBarItem, DropDownBarItem, ComboBoxBarItem, ListBarItem, StaticBarItem and TextBoxBarItem.
 
 
 ## Adding enable state images
@@ -39,10 +39,10 @@ Me.barItem4.Image = New ImageExt(System.Drawing.Image.FromFile("..\..\..\PasteIc
 
 ## Adding disabled state images
 
-When a bar item is in disabled state, it's appropriate image can be also be disabled using the [`DisabledImage`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_DisabledImage) property.
+When a bar item is in a disabled state, its appropriate image can also be disabled using the [`DisabledImage`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_DisabledImage) property.
 
 
-The following code snippet illustrates how to add disabled image for bar item.
+The following code snippet illustrates how to add a disabled image for a bar item.
 
 {% tabs %}
 {% highlight c# %}
@@ -63,9 +63,9 @@ Me.barItem4.DisabledImage = New ImageExt(System.Drawing.Image.FromFile("..\..\..
 
 ## Adding highlighted state images
 
-When a bar item is selected or highlighted, it's appropriate image can also be highlighted using the [`HighlightedImage`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_HighlightedImage) property. 
+When a bar item is selected or highlighted, its appropriate image can also be highlighted using the [`HighlightedImage`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_HighlightedImage) property. 
 
-The following code snippet illustrates how to set highlighted image for a bar item.
+The following code snippet illustrates how to set a highlighted image for a bar item.
 
 {% tabs %}
 {% highlight c# %}

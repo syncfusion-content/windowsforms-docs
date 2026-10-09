@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Events in Windows Forms PopupMenu | Syncfusion®
 description: PopupMenu events provide notifications before display, after display, menu collapse, and parent bar item changes.
@@ -22,7 +22,7 @@ The [`BeforePopup`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windo
 
 ## Collapse
 
-The [`Collapse`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.PopupMenu.html#Syncfusion_Windows_Forms_Tools_XPMenus_PopupMenu_Collapse) event will be invoked when popup menu is closed.
+The [`Collapse`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.PopupMenu.html#Syncfusion_Windows_Forms_Tools_XPMenus_PopupMenu_Collapse) event will be invoked when the popup menu is closed.
 
 ## ParentBarItemChanged
 
@@ -30,7 +30,7 @@ The [`ParentBarItemChanged`](https://help.syncfusion.com/cr/windowsforms/Syncfus
 
 ## Popup
 
-The [`Popup`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.PopupMenu.html#Syncfusion_Windows_Forms_Tools_XPMenus_PopupMenu_Popup) event will be invoked after menu is displayed.
+The [`Popup`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.PopupMenu.html#Syncfusion_Windows_Forms_Tools_XPMenus_PopupMenu_Popup) event will be invoked after the menu is displayed.
 
 
 
