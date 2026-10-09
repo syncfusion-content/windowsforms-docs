@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with Windows Forms NavigationView | Syncfusion®
 description: Learn how to get started with the Syncfusion® Windows Forms NavigationView control. Explore setup, features, examples, and customization options.
 platform: windowsforms
-control: NavigationView 
+control: NavigationView
 documentation: ug
 ---
 # Getting Started with Windows Forms NavigationView
@@ -14,15 +14,22 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 You can find more details about installing the NuGet packages in a Windows Forms application in the following link:
  
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
+[How to install NuGet packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
+
+To generate the license validated application, refer to the [licensing](https://help.syncfusion.com/windowsforms/licensing/overview) documentation.
 
 ## Create a simple application with NavigationView
 
-You can create a Windows Forms application with NavigationView control using the following steps:
+You can create a Windows Forms application with the NavigationView control using the following steps:
+
+1. [Create a project](#create-a-project)
+2. [Add control via designer](#add-control-via-designer)
+3. [Add control manually using code](#add-control-manually-using-code)
+4. [Add breadcrumb nodes](#add-breadcrumb-nodes)
 
 ## Create a project
 
-Create a new Windows Forms project in Visual Studio to display the NavigationView control with breadcrumbs nodes.
+Create a new Windows Forms project in Visual Studio to display the NavigationView control with its breadcrumb nodes.
 
 ## Add control via designer
 
@@ -125,7 +132,7 @@ bar4.Text = "Local Disk(E:)"
 ' Adding root Bars
 Me.navigationView1.Bars.AddRange(New Bar[] { bar1 })
 ' Adding child Bars
-bar1.Bars.AddRange(New Bar[] {bar2, bar3, bar4})
+bar1.Bars.AddRange(New Bar() {bar2, bar3, bar4})
 
 ' Set selected Bar 
 Me.navigationView1.SelectedBar = bar1
@@ -136,6 +143,19 @@ Me.navigationView1.SelectedBar = bar1
 
 ## Edit mode
 
-Selected path of navigation view can be changed by editing the text with valid navigation path.
+The selected path of the NavigationView can be changed by editing the text with a valid navigation path. The user can switch to edit mode by clicking the text area of the NavigationView and typing a new path. The `BeginEdit` method can also be used to programmatically enter edit mode.
+
+{% tabs %}
+{% highlight C# %}
+
+this.navigationView1.BeginEdit();
+
+{% endhighlight %}
+{% highlight VB %}
+
+Me.navigationView1.BeginEdit()
+
+{% endhighlight %}
+{% endtabs %}
 
 ![wf navigation path can be edit](Getting-Started_images/wf-navigation-view-control-edit-mode.png)

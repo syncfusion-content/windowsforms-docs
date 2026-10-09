@@ -3,7 +3,7 @@ layout: post
 title: Features in Windows Forms Navigation Drawer | Syncfusion®
 description: Navigation Drawer features include content and drawer views, transitions, positioning options, animations, and drawer toggling.
 platform: WindowsForms
-control: NavigationDrawer 
+control: NavigationDrawer
 documentation: ug
 ---
 
@@ -23,11 +23,11 @@ RichTextBox richTextBox = new RichTextBox();
 
 //Specifies the Text
 
-this.richTextBox.Text = "Content View" + "\n" + "\n" + "This is Navigation Drawer content View";
+richTextBox.Text = "Content View" + "\n" + "\n" + "This is Navigation Drawer content View";
 
 //Add RichTextBox into the NavigationDrawer Container Control.
 
-this.navigationDrawer1.ContentViewContainer.Controls.Add(richTextbox);
+this.navigationDrawer1.ContentViewContainer.Controls.Add(richTextBox);
 
 {% endhighlight %}
 
@@ -35,15 +35,15 @@ this.navigationDrawer1.ContentViewContainer.Controls.Add(richTextbox);
 
 'Creates RichTextBox instance.
 
-Dim richTextbox As New RichTextBox()
+Dim richTextBox As New RichTextBox()
 
 'Specifies the Text
 
-Me.richTextBox.Text = ("Content View" + ("" & vbLf + ("" & vbLf + "This is Navigation Drawer content View")))
+richTextBox.Text = "Content View" & vbLf & vbLf & "This is Navigation Drawer content View"
 
 'Add RichTextBox into the NavigationDrawer Container Control.
 
-Me.navigationDrawer1.ContentViewContainer.Controls.Add(richTextbox)
+Me.navigationDrawer1.ContentViewContainer.Controls.Add(richTextBox)
 
 {% endhighlight %}
 
@@ -54,13 +54,13 @@ Me.navigationDrawer1.ContentViewContainer.Controls.Add(richTextbox)
 
 ## DrawerView
 
-DrawerView is a container, that will be displayed upon selection on top, along and below with the Content view section. This will contain below sections.
+DrawerView is a container that is displayed on top, alongside, or below the Content view section. This will contain the sections below.
 
 ![DrawerView](Concepts-And-Features_images/navigationdrawer_img2.png)
 
 ### Default color customization
 
-The default color of item can be customized by using [DefaultColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawerMenuItem.html#Syncfusion_Windows_Forms_Tools_DrawerMenuItem_DefaultColor) property of [DrawerMenuItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawerMenuItem.html). The backcolor of the item will be updated based on the value of [DefaultColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawerMenuItem.html#Syncfusion_Windows_Forms_Tools_DrawerMenuItem_DefaultColor).
+The default color of an item can be customized by using the [DefaultColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawerMenuItem.html#Syncfusion_Windows_Forms_Tools_DrawerMenuItem_DefaultColor) property of [DrawerMenuItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawerMenuItem.html). The back color of the item is updated based on the value of [DefaultColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawerMenuItem.html#Syncfusion_Windows_Forms_Tools_DrawerMenuItem_DefaultColor). The [BackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawerMenuItem.html) and [HoverColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawerMenuItem.html) properties control the back color at rest and on mouse hover, respectively.
 
 {% tabs %}
 
@@ -104,7 +104,7 @@ This support specifies the animations for the DrawerView panel. [Transition](htt
 
 ### SlideOnTop
 
-That draws the Drawer Content on top of the Content view content.
+This draws the Drawer Content on top of the Content view content.
 
 {% tabs %}
 
@@ -160,7 +160,7 @@ Me.navigationDrawer1.Transition = Transition.Push
 
 ### Reveal
 
-In this [transition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_Transition), the Drawer content section will be stable and the content view section will be moved to reveal the drawer content.
+In this [transition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_Transition), the Drawer content section remains stable and the content view section moves to reveal the drawer content.
 
 {% tabs %}
 
@@ -168,7 +168,7 @@ In this [transition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Wind
 
 //Adds Transition property into NavigationDrawer
 
-this.navigationDrawer1.Transition = Transition.Push;
+this.navigationDrawer1.Transition = Transition.Reveal;
 
 {% endhighlight %}
 
@@ -176,7 +176,7 @@ this.navigationDrawer1.Transition = Transition.Push;
 
 'Adds Transition property into NavigationDrawer
 
-Me.navigationDrawer1.Transition = Transition.Push
+Me.navigationDrawer1.Transition = Transition.Reveal
 
 {% endhighlight %}
 
@@ -208,9 +208,9 @@ this.navigationDrawer1.Position = Position.Left;
 
 {% highlight VB %}
 
-'Adds Transition property into NavigationDrawer
+'Adds Position property into the NavigationDrawer
 
-Me.navigationDrawer1.Transition = Transition.Push
+Me.navigationDrawer1.Position = Position.Left
 
 {% endhighlight %}
 
@@ -235,21 +235,21 @@ Me.navigationDrawer1.Transition = Transition.Push
 
 ## Animation duration
 
-The [AnimationDuration](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_AnimationDuration) property helps to specify TimeSpan value, by which the DrawerContent can be brought to view.
- 
+The [AnimationDuration](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_AnimationDuration) property specifies the TimeSpan value by which the DrawerContent can be brought into view. Values are specified as milliseconds.
+
 {% tabs %}
 
 {% highlight C# %}
 
-//Sets AnimationDuration for the NavigationDrawer
+//Sets AnimationDuration for the NavigationDrawer (in milliseconds)
 
- this.navigationDrawer1.AnimationDuration = 100;
+this.navigationDrawer1.AnimationDuration = 100;
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-'Sets AnimationDuration for the NavigationDrawer
+'Sets AnimationDuration for the NavigationDrawer (in milliseconds)
 
 Me.navigationDrawer1.AnimationDuration = 100
 
@@ -259,7 +259,7 @@ Me.navigationDrawer1.AnimationDuration = 100
 
 ## Toggle drawer
 
-The [ToggleDrawer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_ToggleDrawer().html) method helps to toggle between Sliding Panel visibility.
+The [ToggleDrawer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_ToggleDrawer().html) method toggles the sliding panel visibility.
 
 {% tabs %}
 

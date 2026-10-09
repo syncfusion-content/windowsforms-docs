@@ -3,7 +3,7 @@ layout: post
 title: Appearance Customization in Windows Forms Split Button | Syncfusion
 description: Appearance customization supports visual styles, custom rendering, and personalized dropdown item styling for SplitButton.
 platform: WindowsForms
-control: SplitButton 
+control: SplitButton
 documentation: ug
 ---
 
@@ -44,6 +44,7 @@ public class CustomRenderer : ISplitButtonRenderer
 {
     private SplitButton splitButton;
     #region ISplitButtonRenderer Members
+
     public void DrawText(PaintEventArgs e, string text, Font font, Color color, int width, int height, int split)
     {
         SolidBrush brush = new SolidBrush(color);
@@ -92,7 +93,6 @@ public class CustomRenderer : ISplitButtonRenderer
         buttoninner.Dispose();
         innercolor.Dispose();
         arrowinner.Dispose();
-        arrowinner.Dispose();
         outercolor.Dispose();
     }
     public void DrawArrow(int left, int top, int width, int height, PaintEventArgs e, Color ArrowColor)
@@ -102,7 +102,7 @@ public class CustomRenderer : ISplitButtonRenderer
         Rectangle imageRect = new Rectangle(left + 4, top + 14, width - 9, height - 28);
         e.Graphics.DrawImage(arrowImage, imageRect);
     }
-    #end region
+    #endregion
     #region ISplitButtonRenderer Members
     public SplitButton SplitButton
     {
@@ -115,8 +115,11 @@ public class CustomRenderer : ISplitButtonRenderer
             splitButton = value;
         }
     }
-    #end region
+    #endregion
 }
+
+// Assign the custom renderer to the SplitButton.
+splitButton1.Renderer = new CustomRenderer(splitButton1);
 
 {% endhighlight %}
 
@@ -170,7 +173,6 @@ e.Graphics.DrawLine(outercolor_Renamed, New Point(1, 0), New Point(1, 1))
 buttoninner_Renamed.Dispose()
 innercolor_Renamed.Dispose()
 arrowinner_Renamed.Dispose()
-arrowinner_Renamed.Dispose()
 outercolor_Renamed.Dispose()
 End Sub
 Public Sub DrawArrow(ByVal left As Integer, ByVal top As Integer, ByVal width As Integer, ByVal height As Integer, ByVal e As PaintEventArgs, ByVal ArrowColor As Color)
@@ -193,6 +195,8 @@ End Property
 #End Region
 End Class
 
+' Assign the custom renderer to the SplitButton.
+splitButton1.Renderer = New CustomRenderer(splitButton1)
 {% endhighlight %}
 {% endtabs %}
 

@@ -8,9 +8,7 @@ documentation: ug
 --- 
 # Applying Themes in Windows Forms MaskedTextBox (MaskedEditBox)
 
-Themes can be applied to the MaskedEditBox control using the property given below.
-
-
+Themes can be applied to the MaskedEditBox control using the property given below. The default value of `ThemesEnabled` is `false`.
 
 <table>
 <tr>
@@ -20,11 +18,12 @@ Description</th></tr>
 <tr>
 <td>
 ThemesEnabled</td><td>
-Specifies whether or not to use XP themes when BorderStyle property is set to 'Fixed3D'.</td></tr>
+Specifies whether or not to use XP themes when the BorderStyle property is set to `Fixed3D`.</td></tr>
 </table>
 
 
-N> Refer_ [Border Settings](/windowsforms/maskededitbox/border-settings) _topic to know about the BorderStyle property.
+>**NOTE**:
+Refer to the [Border Settings](https://help.syncfusion.com/windowsforms/maskedtextbox/border-settings) documentation for more information about the BorderStyle property.
 
 {% tabs %}
 
