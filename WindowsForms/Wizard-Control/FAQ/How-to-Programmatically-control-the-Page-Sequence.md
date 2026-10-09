@@ -2,7 +2,7 @@
 layout: post
 title: Programmatically control the page sequence | WindowsForms | Syncfusion
 description: How to programmatically control the page sequence in Syncfusion Essential Studio WindowsForms Wizard Control, its elements, and more.
-platform: WindowsForms
+platform: windowsforms
 control: Wizard
 documentation: ug
 ---

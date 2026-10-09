@@ -5,7 +5,6 @@ description: Color mapping in the Windows Forms TreeMap enables visualization of
 platform: windowsforms
 control: TreeMap 
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Color Mapping in WinForms TreeMap

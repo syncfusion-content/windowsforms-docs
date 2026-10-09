@@ -2,7 +2,7 @@
 layout: post
 title: Appearance in Windows Forms TreeView | Syncfusion®
 description: Appearance customization supports borders, colors, themes, gradients, selection styles, and custom node rendering.
-platform: WindowsForms
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---

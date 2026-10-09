@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-programmatically-select-a-node-in-a-TreeViewAdv-Control | WindowsForms | Syncfusion
-description: how to programmatically select a node in a treeviewadv control
-platform: WindowsForms
+title: How to Select a Node Programmatically in TreeViewAdv | Syncfusion
+description: Learn how to programmatically select a node in Syncfusion® Windows Forms TreeViewAdv control by setting the SelectedNode property.
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---
 
-# How to programmatically select a Node in a TreeViewAdv control
+# How to Programmatically Select a Node in Windows Forms TreeViewAdv
  
 In TreeViewAdv, Node can be selected programmatically using SelectedNode property.
  

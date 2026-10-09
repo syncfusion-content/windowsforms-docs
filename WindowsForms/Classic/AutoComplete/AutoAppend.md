@@ -2,7 +2,7 @@
 layout: post
 title: AutoAppend in Windows Forms xptoolbar control | Syncfusion
 description: Learn about AutoAppend support in Syncfusion Windows Forms ComboBoxAutoComplete(Classic) control and more details.
-platform: WindowsForms
+platform: windowsforms
 control: ComboBoxAutoComplete
 documentation: ug
 ---

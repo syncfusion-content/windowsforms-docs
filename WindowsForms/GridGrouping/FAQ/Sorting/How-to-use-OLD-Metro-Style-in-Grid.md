@@ -29,7 +29,7 @@ The following code example illustrates how to add the Old Metro Style in Grid co
 
  You can download the sample that uses a Old metro style in the Grid from the following location.
 
-[http://www.syncfusion.com/downloads/support/directtrac/119651/OldMetroStyle1845477900.zip](http://www.syncfusion.com/downloads/support/directtrac/119651/OldMetroStyle1845477900.zip)
+[https://files2.syncfusion.com/login?ReturnUrl=%2Fdtsupport%2Fdirecttrac%2F119651%2FOldMetroStyle1845477900.zip](https://files2.syncfusion.com/login?ReturnUrl=%2Fdtsupport%2Fdirecttrac%2F119651%2FOldMetroStyle1845477900.zip)
 
 The following screen shot shows a new metro theme in Grid.
 

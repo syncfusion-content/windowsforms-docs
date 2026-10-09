@@ -5,7 +5,6 @@ description: Events in the Windows Forms Chart enable handling user interactions
 platform: windowsforms
 control: Chart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Events in Windows Forms Chart

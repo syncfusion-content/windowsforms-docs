@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion® Windows Forms Status Bar Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms Status Bar control and explore its features and more details.
-platform: WindowsForms
+platform: windowsforms
 control: Status Bar
 documentation: ug
 ---

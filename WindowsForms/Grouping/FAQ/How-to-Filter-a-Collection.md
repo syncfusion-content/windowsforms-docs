@@ -2,7 +2,7 @@
 layout: post
 title: How to Filter a Collection in Windows Forms Grouping | Syncfusion®
 description: Filter collections in Syncfusion® Windows Forms Grouping control by applying RecordFilterDescriptor expressions to display matching records.
-platform: WindowsForms
+platform: windowsforms
 control: Grouping
 documentation: ug
 ---

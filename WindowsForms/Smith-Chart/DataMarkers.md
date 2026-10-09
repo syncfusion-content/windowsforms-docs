@@ -5,7 +5,6 @@ description: Data markers in the Windows Forms Smith Chart highlight data points
 platform: windowsforms
 control: SfSmithChart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 # Data Markers in Windows Forms Smith Chart
 

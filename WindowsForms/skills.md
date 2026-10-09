@@ -42,7 +42,7 @@ Before installing Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms
 
 ## Installation
 
-Install [Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms components skills](https://github.com/syncfusion/winforms-ui-components-skills.git) using the Skills CLI. Users can also explore available skills from the [marketplace](https://www.skills.sh/syncfusion).
+Install [Syncfusion<sup style="font-size:70%">&reg;</sup> Windows Forms components skills](https://github.com/syncfusion/winforms-ui-components-skills) using the Skills CLI. Users can also explore available skills from the [marketplace](https://www.skills.sh/syncfusion).
 
 ### Install all skills
 
@@ -125,7 +125,7 @@ Choose your installation scope (project-level or global), then confirm to comple
 {% endhighlight %}
 {% endtabs %}
 
-This registers the Syncfusion<sup style="font-size:70%">&reg;</sup> skill pack so your AI assistant can automatically load it in supported IDEs such as [Code Studio](https://help.syncfusion.com/code-studio/reference/configure-properties/skills), [Visual Studio Code](https://code.visualstudio.com/docs/agent-customization/agent-skills), and [Cursor](https://cursor.com/docs/skills). After installation, restart your IDE (or use the **Reload Window** command) so the IDE can detect the newly added skill files.
+This registers the Syncfusion<sup style="font-size:70%">&reg;</sup> skill pack so your AI assistant can automatically load it in supported IDEs such as [Code Studio](https://help.syncfusion.com/code-studio/customization/skills), [Visual Studio Code](https://code.visualstudio.com/docs/agent-customization/agent-skills), and [Cursor](https://cursor.com/docs/skills). After installation, restart your IDE (or use the **Reload Window** command) so the IDE can detect the newly added skill files.
 
 To learn more about the Skills CLI, refer [here](https://www.skills.sh/docs). 
 

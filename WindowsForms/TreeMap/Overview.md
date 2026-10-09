@@ -5,7 +5,6 @@ description: Learn about the introduction of Syncfusion Essential Studio® Windo
 platform: windowsforms
 control: TreeMap 
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # About Syncfusion® WinForms TreeMap Control

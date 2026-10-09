@@ -2,7 +2,7 @@
 layout: post
 title: How to highlight the nearest port in WinForms Diagram | Syncfusion®
 description: Learn how to find and highlight the nearest connection point while hovering over nodes in the Syncfusion® Windows Forms Diagram control.
-platform: WindowsForms
+platform: windowsforms
 control: Diagram
 documentation: ug
 ---
@@ -15,7 +15,7 @@ Now, you can customize the DiagramController class and override the GetConnectio
 
 The following code example illustrates to highlight and establishing the connection with the nearest ConnectionPoint while hovering the node.
 
-### Establish the connection with nearest ConnectionPoint
+## Establish the connection with nearest ConnectionPoint
 
 You should customize the DiagramController class in your application. Refer to the following code example for customizing the DiagramController class.
  

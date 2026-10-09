@@ -2,7 +2,7 @@
 layout: post
 title: How to Save and Restore State Information in GroupBar | Syncfusion
 description: Save and restore state information in Syncfusion® Windows Forms GroupBar control using AppStateSerializer methods and more.
-platform: WindowsForms
+platform: windowsforms
 control: GroupBar
 documentation: ug
 --- 

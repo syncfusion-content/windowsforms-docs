@@ -1,14 +1,14 @@
 ---
 layout: post
 title: GroupView control with no items selected | WindowsForms | Syncfusion
-description: Frequently Asked Questions
-platform: WindowsForms
+description: Learn how to configure the GroupView control so that no items are selected when Button View is enabled in Windows Forms applications.
+platform: windowsforms
 control: GroupView
 documentation: ug
 ---
-# How to set the GroupView control with no items selected when the button view is set to true?
+# Set No Item Selection When GroupView Button View Is Enabled
 
-When ButtonView is set to `true`, the user cannot set the selected index to -1 to make it as not selected. As an alternative, set the Button View to `false` as a default and in the GroupView's [MouseDown](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.mousedown?redirectedfrom=MSDN&view=netframework-4.7.2) event or [GroupViewItemSelected](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html) event, set the Button View to `true`.
+When ButtonView is set to `true`, the user cannot set the selected index to -1 to make it as not selected. As an alternative, set the Button View to `false` as a default and in the GroupView's [MouseDown](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.mousedown?redirectedfrom=MSDN&view=netframework-4.7.2) event or [GroupViewItemSelected](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html) event, set the Button View to `true`.
 
 {% tabs %}
 

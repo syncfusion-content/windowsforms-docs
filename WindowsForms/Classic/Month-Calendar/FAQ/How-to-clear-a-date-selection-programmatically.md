@@ -2,7 +2,7 @@
 layout: post
 title: Clear a date selection programmatically in WindowsForms | Syncfusion
 description: Learn how to clear a date selection programmatically in Syncfusion Windows Forms MonthCalendarAdv (Classic) control using the ClearSelection method and more.
-platform: WindowsForms
+platform: windowsforms
 control: CalendarDateTime
 documentation: ug
 ---

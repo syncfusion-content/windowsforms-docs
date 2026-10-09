@@ -5,7 +5,6 @@ description: User interactions in the Windows Forms Maps enable zooming, panning
 platform: windowsforms
 control: Maps
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # User Interactions in Windows Forms Maps
@@ -141,7 +140,7 @@ Each shape in a map can be either selected or unselected when interacted with sh
 1. Single selection
 2. Multiple selection
 
-The selected map shapes are differentiated by their fill. The [`SelectedShapeColor`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Maps.ShapeSetting.html#Syncfusion_Windows_Forms_Maps_ShapeSetting_SelectedShapeColor) of ShapeSetting is used to fill the selected shape.
+The selected map shapes are differentiated by their fill. The [`SelectedShapeColor`](https://help.syncfusion.com/cr/windowsforms) of ShapeSetting is used to fill the selected shape.
 
 All selected shapes are available in the [`SelectedMapShapes`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Maps.Maps.html#Syncfusion_Windows_Forms_Maps_Maps_SelectedMapShapes) of ShapeFileLayer.
 

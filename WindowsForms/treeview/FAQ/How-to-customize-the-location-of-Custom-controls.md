@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-customize-the-location-of-Custom-controls-added-in-the-TreeNodeAdv | WindowsForms | Syncfusion
-description: how to customize the location of custom controls added in the treenodeadv?
-platform: WindowsForms
+title: How to Customize Custom Controls Location in TreeViewAdv | Syncfusion
+description: Customize the location of custom controls added in Syncfusion® Windows Forms TreeViewAdv control and more.
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---
 
-# How to Customize the Location of Custom Controls Added in the TreeNodeAdv
+# How to Customize Custom Controls Location in TreeViewAdv
 
 TreeNodesAdv hold controls like combo box, Calendar, Chart etc.,by using its Custom Controls feature. In the TreeNodeAdv, this custom control location can be customized by using its CustomControlLocation property. Refer to the following code examples.
 

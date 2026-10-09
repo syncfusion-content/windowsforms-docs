@@ -2,7 +2,7 @@
 layout: post
 title: Style in Windows Forms Radial Menu | Syncfusion®
 description: Style settings provide Office 2016 and default themes for customizing the visual appearance of RadialMenu controls.
-platform: WindowsForms
+platform: windowsforms
 control: RadialMenu 
 documentation: ug
 ---

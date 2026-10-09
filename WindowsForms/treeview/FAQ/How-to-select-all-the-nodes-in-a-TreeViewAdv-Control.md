@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to select all the nodes in a TreeViewAdv | Syncfusion
-description: how to select all the nodes in Syncfusion Windows Forms TreeView control, its elements and more details.
-platform: WindowsForms
+title: How to Select All Nodes in Windows Forms TreeViewAdv | Syncfusion
+description: Learn how to select all nodes in Syncfusion® Windows Forms TreeViewAdv control by recursively traversing and adding the nodes.
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---
 
-# How to Select all the Nodes in a TreeViewAdv Control
+# How to Select All Nodes in Windows Forms TreeViewAdv
 
 You could select all the nodes in the TreeViewAdv control by recursively traversing through all the child nodes under each of the parent nodes at the top level as shown in the code below.
 

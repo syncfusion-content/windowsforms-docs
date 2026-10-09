@@ -2,7 +2,7 @@
 layout: post
 title: Applying Themes in Windows Forms Status Bar | Syncfusion®
 description: Applying themes in Windows Forms Status Bar enables a consistent visual appearance across applications using predefined styles.
-platform: WindowsForms
+platform: windowsforms
 control: Status Bar
 documentation: ug
 ---

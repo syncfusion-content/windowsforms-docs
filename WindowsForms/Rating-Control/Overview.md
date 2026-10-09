@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion® Windows Forms Rating Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Windows Forms Rating Control, including its essential features, customization options, and capabilities.
-platform: WindowsForms
+platform: windowsforms
 control: Rating Control
 documentation: ug
 ---

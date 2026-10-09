@@ -156,5 +156,5 @@ Existing grid specific APIs can be used to retrieve enough information without u
 Fully Supported<br/><br/></td><td>
 Essential<sup>®</sup> Grid controls provide functionality that conforms to these criteria.<br/><br/></td></tr>
 </table>
-For more information on accessibility features of Syncfusion<sup>®</sup> products, visit Syncfusion’s accessibility web site at <http://www.syncfusion.com/accessibility>.
+For more information on accessibility features of Syncfusion<sup>®</sup> products, visit Syncfusion’s accessibility web site at <https://www.syncfusion.com/pages/accessibility/>.
 

@@ -5,7 +5,6 @@ description: Legend in the Windows Forms Smith Chart identifies data series and 
 platform: windowsforms
 control: SfSmithChart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 # Legend in Windows Forms Smith Chart
 

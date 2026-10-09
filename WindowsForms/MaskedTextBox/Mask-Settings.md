@@ -2,7 +2,7 @@
 layout: post
 title: Mask Settings in Windows Forms MaskedTextBox | Syncfusion®
 description: Mask settings in MaskedEditBox define input formats using mask characters, literals, and validation patterns.
-platform: WindowsForms
+platform: windowsforms
 control: MaskedEditBox
 documentation: ug
 ---

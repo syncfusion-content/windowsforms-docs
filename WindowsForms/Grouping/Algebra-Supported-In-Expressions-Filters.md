@@ -2,7 +2,7 @@
 layout: post
 title: Algebraic Expressions Filter in Windows Forms Grouping | Syncfusion®
 description: Expression filters in Grouping support algebraic operations, logical expressions, comparison operators, special filter operators, and custom functions.
-platform: WindowsForms
+platform: windowsforms
 control: Grouping
 documentation: ug
 ---

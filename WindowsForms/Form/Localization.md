@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Localization in Windows Forms Form (SfForm)
-Localization is the process of translating the application resources into different languages for specific cultures. The SfForm can be localized by adding a [resource](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/aa992030(v=vs.100)) file. The application culture can be changed by setting the [CurrentUICulture](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentuiculture?view=net-5.0) before the `InitializeComponent` method.
+Localization is the process of translating the application resources into different languages for specific cultures. The SfForm can be localized by adding a [resource](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/aa992030(v=vs.100))) file. The application culture can be changed by setting the [CurrentUICulture](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentuiculture?view=net-5.0) before the `InitializeComponent` method.
 
 ## Localize at Sample Level
 To localize the SfForm based on `CurrentUICulture` using resource files, follow the steps below.

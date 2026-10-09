@@ -2,7 +2,7 @@
 layout: post
 title: Event raised on date change in DateTimePickerAdv | Syncfusion
 description: Learn which event is raised when the date in Syncfusion Windows Forms DateTimePickerAdv (Classic) is changed using the keys or mouse and more.
-platform: WindowsForms
+platform: windowsforms
 control: Calendar
 documentation: ug
 ---
