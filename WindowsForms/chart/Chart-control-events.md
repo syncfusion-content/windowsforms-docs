@@ -56,23 +56,25 @@ The following code example demonstrates how to handle the `ChartRegionDoubleClic
 
 {% tabs %}
 {% highlight c# %}
+
+private Label regionInfoLabel;
 this.chartControl.ChartRegionDoubleClick += chartControl_ChartRegionDoubleClick;
 
-private void chartControl_ChartRegionDoubleClick(
-    object sender, ChartRegionMouseEventArgs e)
+private void chartControl_ChartRegionDoubleClick(object sender, ChartRegionMouseEventArgs e)
 {
-if (this.chartRegionDoubleClick.Checked)
+    if (e.Region.IsChartPoint)
     {
-        if (e.Region.SeriesIndex == 0)
-        {
-            OutputText(String.Format("Double Click over Series 1 Column {0} Point : {1}", e.Region.PointIndex,e.Point));
-            ShowChartRegion("ChartSeries");
-        }
-        else
-        {
-            OutputText(String.Format("Double Click over {0}", e.Region.Description.ToString()));
-            ShowChartRegion(e.Region.Description.ToString());
-        }
+        int seriesIndex = e.Region.SeriesIndex;
+        int pointIndex = e.Region.PointIndex;
+
+        ChartSeries series = chartControl.Series[seriesIndex];
+        ChartPoint point = series.Points[pointIndex];
+
+        regionInfoLabel.Text = string.Format("Double-clicked series: {0}, point index: {1}, " + "X value: {2}, Y value: {3}", series.Name, pointIndex, point.X, point.YValues[0]);
+    }
+    else
+    {
+        regionInfoLabel.Text = string.Format("Double-clicked region: {0}, location: {1}", e.Region.Description.ToString(), e.Point);
     }
 }
 
@@ -88,30 +90,34 @@ private void chartControl_ChartRegionMouseDown(object sender, ChartRegionMouseEv
 
 {% endhighlight %}
 {% highlight vb %}
+Private regionInfoLabel As Label
 
 'ChartRegionDoubleClick Event
-AddHandler Me.chartControl.ChartRegionDoubleClick, AddressOf chartControl_ChartRegionDoubleClick
+AddHandler chartControl.ChartRegionDoubleClick, AddressOf chartControl_ChartRegionDoubleClick
 
 Private Sub chartControl_ChartRegionDoubleClick(ByVal sender As Object, ByVal e As ChartRegionMouseEventArgs)
-    If Me.chartRegionDoubleClick.Checked Then
-        If e.Region.SeriesIndex = 0 Then
-            OutputText([String].Format("Double Click over Series 1 Column {0} Point : {1}", e.Region.PointIndex, e.Point))
-            ShowChartRegion("ChartSeries")
-        Else
-            OutputText([String].Format("Double Click over {0}", e.Region.Description.ToString()))
-            ShowChartRegion(e.Region.Description.ToString())
-        End If
+    If e.Region.IsChartPoint Then
+        Dim seriesIndex As Integer = e.Region.SeriesIndex
+        Dim pointIndex As Integer = e.Region.PointIndex
+
+        Dim series As ChartSeries = chartControl.Series(seriesIndex)
+        Dim point As ChartPoint = series.Points(pointIndex)
+
+        regionInfoLabel.Text = String.Format("Double-clicked series: {0}, point index: {1}, X value: {2}, Y value: {3}", series.Name, pointIndex, point.X, point.YValues(0))
+    Else
+        regionInfoLabel.Text = String.Format("Double-clicked region: {0}, location: {1}", e.Region.Description.ToString(), e.Point)
     End If
 End Sub
 
 'Usage of Button property in ChartRegionMouseDown Event
-AddHandler Me.chartControl.ChartRegionMouseDown, AddressOf chartControl_ChartRegionMouseDown
+AddHandler chartControl.ChartRegionMouseDown, AddressOf chartControl_ChartRegionMouseDown
 
 Private Sub chartControl_ChartRegionMouseDown(ByVal sender As Object, ByVal e As ChartRegionMouseEventArgs)
-      If e.Button = MouseButtons.Right Then
-        Console.WriteLine("Chart Region Mouse Down:="+e.Point.ToString())
+    If e.Button = MouseButtons.Right Then
+        Console.WriteLine("Chart region mouse down: " & e.Point.ToString())
     End If
 End Sub
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -195,8 +201,7 @@ private void chartControl_SeriesIncompatible(object sender, EventArgs e)
 }
 {% endhighlight %}
 {% highlight vb %}
-AddHandler Me.chartControl.SeriesIncompatible,
-    AddressOf chartControl_SeriesIncompatible
+AddHandler Me.chartControl.SeriesIncompatible, AddressOf chartControl_SeriesIncompatible
 
 Private Sub chartControl_SeriesIncompatible(ByVal sender As Object, ByVal e As EventArgs)
     Console.WriteLine("An incompatible series combination was detected.")
@@ -236,7 +241,7 @@ The following code example changes the background color before the chart area is
 
 {% tabs %}
 {% highlight c# %}
-this.chartControl.PreChartAreaPaint += new System.Windows.Forms.PaintEventHandler(this.chartControl1_PreChartAreaPaint);;
+this.chartControl.PreChartAreaPaint += new System.Windows.Forms.PaintEventHandler(this.chartControl_PreChartAreaPaint);;
 
 private void chartControl_PreChartAreaPaint(object sender, PaintEventArgs e)
 {
