@@ -1,9 +1,9 @@
 ---
 layout: post
 title: UserControls as Tabs in Windows Forms TabbedMDI | Syncfusion®
-description: Learn about UserControls as Tabs support in Syncfusion Windows Forms TabbedMDI control and more details.
+description: Learn how to use user controls as dockable tabs in the Syncfusion Windows Forms TabbedMDI control with the docking manager.
 platform: windowsforms
-control: TabbedMDIPackage 
+control: TabbedMDIManager
 documentation: ug
 ---
 
@@ -15,13 +15,13 @@ Add a UserControl to the form and initialize it inside the parent form. Add a Do
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 UserControl userControl = new UserControl();
 
 userControl.Parent = this;
 
-// Dock the user contro1 to the form. 
+// Dock the user control to the form.
 
 this.dockingManager1.DockControl(userControl, this, Syncfusion.Windows.Forms.Tools.DockingStyle.Tabbed, 200);
 
@@ -40,7 +40,7 @@ Dim userControl As New UserControl()
 
 userControl.Parent = Me 
 
-' Dock the user contro1 to the form. 
+' Dock the user control to the form.
 
 Me.dockingManager1.DockControl(userControl, Me, Syncfusion.Windows.Forms.Tools.DockingStyle.Tabbed, 200) 
 

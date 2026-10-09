@@ -57,28 +57,28 @@ To add control manually in C#, follow the given steps:
 
 **Step 1** : Add the following required assembly references to the project:
 
-        * Syncfusion.Tools.Base.dll
-        * Syncfusion.Tools.Windows.dll
-        * Syncfusion.Shared.Base.dll
-        * Syncfusion.Shared.Windows.dll
-        * Syncfusion.SpellChecker.Base.dll
-        * Syncfusion.Grid.Base.dll
-        * Syncfusion.Grid.Windows.dll
+* Syncfusion.Tools.Base.dll
+* Syncfusion.Tools.Windows.dll
+* Syncfusion.Shared.Base.dll
+* Syncfusion.Shared.Windows.dll
+* Syncfusion.SpellChecker.Base.dll
+* Syncfusion.Grid.Base.dll
+* Syncfusion.Grid.Windows.dll
 
 **Step 2** : Include the namespaces **Syncfusion.Windows.Forms.Tools**.
 
 {% capture codesnippet1 %}
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
-using Syncfusion.Windows.Forms.Tools;
+using Syncfusion.Windows.Forms.Tools;
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-Imports Syncfusion.Windows.Forms.Tools
+Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight %}
 
@@ -91,7 +91,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% capture codesnippet2 %}
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 SpellCheckerAdv spellCheckerAdv1 = new SpellCheckerAdv();
 
@@ -114,7 +114,7 @@ Dim spellCheckerAdv1 As SpellCheckerAdv = New SpellCheckerAdv
 {% capture codesnippet3 %}
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
   class TextBoxSpellEditor : ISpellCheckerAdvEditorTools
     {
@@ -271,7 +271,7 @@ End Class
 {% capture codesnippet4 %}​
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 RichTextBox richTextBox1 = new RichTextBox();
 Button button1 = new Button();
@@ -308,7 +308,7 @@ Me.Controls.Add(Me.richTextBox1)
 {% capture codesnippet5 %}​
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 TextBoxSpellEditor TextEditor = new TextBoxSpellEditor(this.richTextBox1);
 
@@ -333,7 +333,7 @@ Me.spellCheckerAdv1.PerformSpellCheckForControl(TextEditor)
 {% capture codesnippet6 %}​
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 private void buttonAdv1_Click(object sender, EventArgs e)
 {
@@ -358,11 +358,11 @@ End Sub
 
 ## Applying dictionary
 
-WinForms Spell Checker provide built-in dictionary whose Path can be set using [DictionaryPath](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SpellCheckerAdv.html#Syncfusion_Windows_Forms_Tools_SpellCheckerAdv_DictionaryPath) property in it.
+WinForms Spell Checker provides a built-in dictionary whose path can be set using the [DictionaryPath](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SpellCheckerAdv.html#Syncfusion_Windows_Forms_Tools_SpellCheckerAdv_DictionaryPath) property.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.spellCheckerAdv1.DictionaryPath = "Syncfusion_en_us.dic";
 
@@ -386,22 +386,21 @@ The following dictionary types are used for spell-checking,
  * Ispell
  * OpenOffice
 
- N> Refer the [Load your own dictionaries for any language]
-(https://help.syncfusion.com/windowsforms/spell-checker/custom-dictionary#load-your-own-dictionaries-for-any-language) page to know more about how to add and use the Dictionary for any culture to an application.
+>**NOTE**: Refer the [Load your own dictionaries for any language](https://help.syncfusion.com/windowsforms/spell-checker/custom-dictionary#load-your-own-dictionaries-for-any-language) page to know about how to add and use the Dictionary for any culture in an application.
 
 ## Add custom words to dictionary
 
-If you want to add words that is not available in existing dictionary, you can add it using `CustomDictionary`. This dictionary does not has a grammar file, it accepts only dictionary file that contains a list of words. Users can also add words to this custom dictionary by clicking `Add to Dictionary` button available in dialog or context menu.
+If you want to add words that are not available in an existing dictionary, you can add them using `CustomDictionary`. This dictionary does not have a grammar file; it accepts only a dictionary file that contains a list of words. Users can also add words to this custom dictionary by clicking the `Add to Dictionary` button available in the dialog or context menu.
 
-N> Refer the [Adding Custom Dictionary](https://help.syncfusion.com/wpf/spellchecker/custom-dictionary-support#adding-custom-dictionary) page to know more about how to add and use the custom dictionary to an application.
+>**NOTE**: Refer to the [Custom Dictionary](https://help.syncfusion.com/windowsforms/spell-checker/custom-dictionary#adding-custom-dictionary) page to know about how to add and use the custom dictionary in an application.
 
 ## Configuring VisualStyle
 
-Look and feel of the WinForms Spell Checker can be customize using [VisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SpellCheckerAdv.html#Syncfusion_Windows_Forms_Tools_SpellCheckerAdv_VisualStyle) property.
+The look and feel of the WinForms Spell Checker can be customized using the [VisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SpellCheckerAdv.html#Syncfusion_Windows_Forms_Tools_SpellCheckerAdv_VisualStyle) property.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.spellCheckerAdv1.VisualStyle = SpellCheckerAdvStyle.Office2016Colorful;
 

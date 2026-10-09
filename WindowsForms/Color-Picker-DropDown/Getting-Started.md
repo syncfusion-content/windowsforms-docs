@@ -1,43 +1,43 @@
 ---
 layout: post
 title: Getting Started with Windows Forms ColorPickerButton | Syncfusion®
-description: Learn here about getting started with Syncfusion Windows Forms Color Picker DropDown (ColorPickerButton) control, its elements, and more.
+description: Learn how to get started with the Syncfusion Windows Forms ColorPickerButton control, including setup, configuration, and color selection.
 platform: windowsforms
-control: ColorPickerDropDown
+control: ColorPickerButton
 documentation: ug
 ---
 # Getting Started with WinForms Color Picker DropDown
 
-This section briefly describes how to create a new Windows Forms project in Visual Studio and add **WinForms Color Picker DropDown** with it’s basic functionalities.
+This section briefly describes how to create a new Windows Forms project in Visual Studio and add a **WinForms Color Picker DropDown** with its basic functionalities.
 
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#colorpickerbutton) section to get the list of assemblies or NuGet package details which needs to be added as reference to use the control in any application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#colorpickerbutton) section to get the list of assemblies or NuGet package details that need to be added as a reference to use the control in any application.
 
-[Refer here](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to find more details on how to install nuget packages in Windows Forms application.
+[Refer here](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to find more details on how to install NuGet packages in a Windows Forms application.
 
 
 ## Adding the WinForms Color Picker DropDown control via designer
 
 1. Create a new Windows Forms application in Visual Studio.
 
-2. The **WinForms Color Picker DropDown** control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically.
+2. The **WinForms Color Picker DropDown** control can be added to an application by dragging it from the toolbox to the design view. The following dependent assembly will be added automatically:
 
-   * Syncfusion.Shared.Base
+* Syncfusion.Shared.Base
 
-![Drag and drop ColorPickerButton from toolbox](ColorPickerButton_images/Overview_img247.jpeg) 
+![WinForms ColorPickerButton being dragged and dropped from the toolbox onto the form](ColorPickerButton_images/Overview_img247.jpeg)
 
 ## Adding the WinForms Color Picker DropDown control via code
 
-The following steps illustrate how to create an **WinForms Color Picker DropDown** control programmatically:
+The following steps illustrate how to create a **WinForms Color Picker DropDown** control programmatically:
 
 1. Create a C# or VB application via Visual Studio.
 
 2. Add the following assembly reference to the project.
 
-   * Syncfusion.Shared.Base
+* Syncfusion.Shared.Base
 
-3. Include the required namespace.
+3. Include the required namespace `Syncfusion.Windows.Forms`.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -55,7 +55,6 @@ Imports Syncfusion.Windows.Forms
 {% endtabs %}
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
-
 
 4. Create an instance of the **WinForms Color Picker DropDown** control and add it to the form.
 
@@ -82,28 +81,27 @@ Me.Controls.Add(Me.colorPickerButton1)
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
+5. Clicking this button at runtime displays the ColorUIControl.
 
-5. Clicking this button at runtime will display the ColorUIControl.
-
-   ![Windows Forms ColorPickerButton showing with ColorUI](ColorPickerButton_images/Overview_img248.jpeg) 
+![WinForms ColorPickerButton showing the ColorUI dropdown when clicked](ColorPickerButton_images/Overview_img248.jpeg)
 
 ## Select a color and group
 
-At run time a particular color group tab should be focused or selected by using `SelectedColorGroup` property.
+At runtime, a particular color group tab can be focused or selected using the `SelectedColorGroup` property.
 
-The options are as follows,
+The available options are:
 
-* SystemColors
-* StandardColors
-* CustomColors
-* UserColors
-* None (Default)
+* `SystemColors`
+* `StandardColors`
+* `CustomColors`
+* `UserColors`
+* `None` (default)
 
-Use `SelectedColor` property to specify the initially selected color.
+Use the `SelectedColor` property to specify the initially selected color.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.colorPickerButton1.SelectedColor = System.Drawing.Color.OrangeRed;
 this.colorPickerButton1.SelectedColorGroup = Syncfusion.Windows.Forms.ColorUISelectedGroup.StandardColors;
@@ -119,7 +117,7 @@ Me.colorPickerButton1.SelectedColorGroup = Syncfusion.Windows.Forms.ColorUISelec
 
 {% endtabs %}
 
-![Windows Forms ColorPickerButton showing selected colors and groups](ColorPickerButton_images/ColorPickerButton_selectedcolors.png)
+![WinForms ColorPickerButton showing the selected color and the StandardColors group](ColorPickerButton_images/ColorPickerButton_selectedcolors.png)
 
 {% seealso %}
  

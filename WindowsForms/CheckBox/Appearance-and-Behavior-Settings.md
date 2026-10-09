@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Appearance and Behavior in Windows Forms CheckBoxAdv | Syncfusion®
-description: Learn about Appearance and Behavior Settings support in Syncfusion Windows Forms CheckBoxAdv control and more details.
+description: Learn about appearance and behavior settings in the Syncfusion Windows Forms CheckBoxAdv control, including focus, sizing, state, and read-only options.
 platform: windowsforms
-control: EditorsPackage
+control: CheckBoxAdv
 documentation: ug
 ---
 
@@ -15,7 +15,7 @@ This section discusses the appearance and behavior settings of the [WinForms Che
 
 ### DrawFocusRectangle
 
-You can show or hide the focus rectangle of [WinForms CheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control using  [DrawFocusRectangle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_DrawFocusRectangle) property.
+You can show or hide the focus rectangle of the [WinForms CheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control using the [DrawFocusRectangle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_DrawFocusRectangle) property.
 
 <table>
 <tr>
@@ -25,7 +25,7 @@ Description</th></tr>
 <tr>
 <td>
 DrawFocusRectangle</td><td>
-Determines if the focus rectangle is visible when it gets the focus. The default value is set to 'True'.</td></tr>
+Determines whether the focus rectangle is visible when the control gets the focus. The default value is set to `True`.</td></tr>
 </table>
 
 {% tabs %}
@@ -42,11 +42,11 @@ Me.checkBoxAdv1.DrawFocusRectangle = True
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms CheckBoxAdv drawFocusRectangle is enabled or diabled](Overview_images/CheckBoxAdv_focus.jpeg)
+![WinForms CheckBoxAdv with the focus rectangle enabled or disabled](Overview_images/CheckBoxAdv_focus.jpeg)
 
 ## Behavior Settings
 
-The behavior of the [WinForms CheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control can be customized using [AutoHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_AutoHeight), [ReadOnlyMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_ReadOnlyMode) and [TriState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_Tristate) properties.
+The behavior of the [WinForms CheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control can be customized using the [AutoHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_AutoHeight), [ReadOnlyMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_ReadOnlyMode), and [Tristate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_Tristate) properties.
 
 <table>
 <tr>

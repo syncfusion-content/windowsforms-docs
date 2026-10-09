@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Text Settings in Windows Forms CheckBoxAdv | Syncfusion®
-description: Learn about Text Settings support in Syncfusion Windows Forms CheckBoxAdv control, its features and more details.
+description: Learn about text settings in the Syncfusion Windows Forms CheckBoxAdv control, including TextShadow, ShadowColor, ShadowOffset, and WrapText properties.
 platform: windowsforms
-control: EditorsPackage
+control: CheckBoxAdv
 documentation: ug
 ---
 
@@ -11,7 +11,7 @@ documentation: ug
 
 This section discusses the text settings of the [WinForms CheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html).
 
-Text in the WinForms CheckBox can be shadowed and wrapped by using [TextShadow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_TextShadow), [ShadowColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_ShadowColor), [ShadowOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_ShadowOffset) and [WrapText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_WrapText) properties.
+Text in the WinForms CheckBox can be shadowed and wrapped by using the [TextShadow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_TextShadow), [ShadowColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_ShadowColor), [ShadowOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_ShadowOffset), and [WrapText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_WrapText) properties.
 
 <table>
 <tr>
@@ -56,14 +56,13 @@ Me.checkBoxAdv1.WrapText = True
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms CheckBoxAdv TextShadow applied](Overview_images/CheckBoxAdv_shadow.jpeg)
+![WinForms CheckBoxAdv with TextShadow applied](Overview_images/CheckBoxAdv_shadow.jpeg)
 
-![Windows forms CheckBoxAdv WrapText applied](Overview_images/CheckBoxAdv_wraptext.jpeg)
-
+![WinForms CheckBoxAdv with WrapText applied](Overview_images/CheckBoxAdv_wraptext.jpeg)
 
 {% seealso %}
 
-[Windows Forms CheckBox Alignment Settings](http://help.syncfusion.com/windowsforms/checkboxadv/alignment-settings)
+[Alignment Settings](https://help.syncfusion.com/windowsforms/checkbox/alignment-settings)
 
 {% endseealso %}
 

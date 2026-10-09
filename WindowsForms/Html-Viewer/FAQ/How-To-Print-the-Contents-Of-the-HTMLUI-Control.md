@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Print Contents of HTMLUI Control in Html Viewer | Syncfusion®
-description: Learn how to print the Contents of the HTMLUI Control in Syncfusion Windows Forms Html Viewer control, its elements and more details.
+description: Learn how to printing the contents of the WinForms HTML Viewer control with the print preview dialog.
 platform: windowsforms
 control: HTMLUIControl
 documentation: ug
@@ -13,7 +13,7 @@ The document available in the WinForms HTML Viewer control can be printed with t
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -35,7 +35,7 @@ pd.Print();
 
 
 
-'  represents printing support in the HTMLUI control
+'  represents printing support in the HTMLUI control
 
 Private pd As HTMLUIPrintDocument
 

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: How to Freeze HubTile Functionality in TabbedMDI | Syncfusion®
-description: Learn how to freeze HubTile functionality at runtime in Syncfusion Windows Forms TabbedMDI control, its elements and more details.
+description: Learn how to freeze the HubTile functionality at runtime in the Syncfusion Windows Forms TabbedMDI control using the IsFrozen property.
 platform: windowsforms
-control: TabbedMDIPackage
+control: TabbedMDIManager
 documentation: ug
 ---
 
@@ -17,7 +17,7 @@ Property table
 <tr>
 <th>
 Property</th><th>
-Description</td></tr>
+Description</th></tr>
 <tr>
 <td>
 IsFrozen</td><td>
@@ -26,7 +26,7 @@ This property disables HubTile notification functionality.</td></tr>
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.HubTile1.IsFrozen = true;
 

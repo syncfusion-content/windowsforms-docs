@@ -1,9 +1,9 @@
 ---
 layout: post
 title: About Syncfusion® Windows Forms ToggleButton Control | Syncfusion®
-description: Learn about the introduction of Syncfusion Essential Studio Windows Forms ToggleButton control and more details.
+description: Learn about the Syncfusion Windows Forms ToggleButton control, its key features, display modes, and customization options.
 platform: windowsforms
-control: ToggleButton 
+control: ToggleButton
 documentation: ug
 ---
 
@@ -16,8 +16,8 @@ WinForms Toggle Button control for Windows Forms allows you to toggle between tw
 
 ## Key features
 
-    .Configurable Toggle States- Two states with contrasting behavior are configured as required like IN/OUT, ON/OFF, etc. 
+* **Configurable toggle states** - Two states with contrasting behavior can be configured as required (e.g., IN/OUT, ON/OFF).
 
-    .Display Mode- Supported to display either text or image over buttons to represent the states.
+* **Display mode** - Supports displaying either text or an image over the button to represent the states.
 
-    .Custom Renderer- Allows the end-user to apply custom styles at application level.
+* **Custom renderer** - Allows the end user to apply custom styles at the application level.

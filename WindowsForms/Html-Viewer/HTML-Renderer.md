@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HTML Renderer in Windows Forms HTMLUI control | Syncfusion®
-description: Learn about HTML Renderer support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
+description: Learn about customizing the HTML renderer in the WinForms HTML Viewer control, including element rendering, events, and visualization.
 platform: windowsforms
 control: HTMLUI
 documentation: ug
@@ -13,7 +13,7 @@ As the WinForms HTML Viewer control supports rendering of web pages, it can be u
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -47,7 +47,7 @@ Also the ability of the WinForms HTML Viewer control to load from strings can be
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 

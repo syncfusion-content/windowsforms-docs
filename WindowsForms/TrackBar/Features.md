@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Features in Windows Forms TrackBarEx | Syncfusion®
-description: Learn about Features support in Syncfusion Windows Forms TrackBarEx control, its features and more details.
+description: Learn about the features of the Syncfusion Windows Forms TrackBarEx control, including styling, orientation, and value configuration.
 platform: windowsforms
-control: RibbonControlAdv 
+control: TrackBarEx
 documentation: ug
 ---
 
@@ -15,7 +15,7 @@ Various Features and Customization options are discussed in the following topics
 
 ## Button, Slider and Channel Settings 
 
-The properties which controls the size of various components of the WinForms TrackBar are as follows.
+The properties that control the size of various components of the WinForms TrackBar are listed below.
 
 <table>
 <tr>
@@ -42,7 +42,7 @@ Gets or sets height of the channel. Default value is 4.</td></tr>
 
 ## Button Appearance
 
-The below properties will let you control the appearance of the Increase, Decrease and slider buttons.
+The following properties let you control the appearance of the Increase, Decrease, and slider buttons.
 
 
 <table>
@@ -81,7 +81,7 @@ this.trackBarEx1.PushedButtonEndColor = System.Drawing.Color.OrangeRed;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.trackBarEx1.ShowButtons = True 
 
@@ -117,7 +117,7 @@ this.trackBarEx1.TrackBarGradientStart = System.Drawing.Color.MintCream;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.trackBarEx1.TrackBarGradientEnd = System.Drawing.Color.CadetBlue
 
@@ -135,7 +135,7 @@ this.trackBarEx1.Transparent = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.trackBarEx1.Transparent = True
 
@@ -159,7 +159,7 @@ this.trackBarEx1.Orientation = Orientation.Horizontal;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'To set the control to be vertically oriented
 
@@ -176,7 +176,7 @@ Me.trackBarEx1.Orientation = Orientation.Horizontal
 
 ## WinForms TrackBar Value
 
-The WinForms TrackBar control slides between the minimum and maximum values, which are specified in Minimum and Maximum properties. The properties with description are listed in the below table.
+The WinForms TrackBar control slides between the minimum and maximum values, which are specified using the `Minimum` and `Maximum` properties. These properties are described in the following table.
 
 
 <table>
@@ -227,7 +227,7 @@ this.trackBarEx1.TimerInterval = 50;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.trackBarEx1.Minimum = 10
 
@@ -243,7 +243,7 @@ Me.trackBarEx1.TimerInterval = 50
 
 {% endhighlight %}
 
-Following are the methods for the WinForms TrackBar control which gives the respective results based on SmallChange and LargeChange properties.
+The following methods let you change the value of the WinForms TrackBar based on the `SmallChange` and `LargeChange` properties.
 
 
 <table>
@@ -272,7 +272,7 @@ Increases the value by small change specified in SmallChange property. </td></tr
 
 ## WinForms TrackBar Event
 
-Scroll event of the WinForms TrackBar will be handled whenever the user moves the slider.
+The `Scroll` event of the WinForms TrackBar is raised whenever the user moves the slider.
 
 {% highlight c# %}
 
@@ -286,7 +286,7 @@ private void trackBarEx1_Scroll(object sender, EventArgs e)
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Private Sub trackBarEx1_Scroll(ByVal sender As Object, ByVal e As EventArgs)
 

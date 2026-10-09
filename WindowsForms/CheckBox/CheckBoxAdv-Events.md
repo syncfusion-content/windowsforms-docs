@@ -1,15 +1,15 @@
 ---
 layout: post
 title: CheckBoxAdv Events in Windows Forms CheckBoxAdv | Syncfusion®
-description: Learn about CheckBoxAdv Events support in Syncfusion Windows Forms CheckBoxAdv control and more details.
+description: Learn about the WinForms CheckBoxAdv events, including CheckStateChanged and CheckedChanged, and how to handle them in C# and VB.
 platform: windowsforms
-control: EditorsPackage
+control: CheckBoxAdv
 documentation: ug
 ---
 
 # Events in WinForms CheckBox
 
-This section gives detailed explanation about the [CheckStateChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) and [CheckedChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) events in [WinForms CheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control.
+This section gives a detailed explanation about the [CheckStateChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_CheckStateChanged) and [CheckedChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_CheckedChanged) events in the [WinForms CheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control.
 
 <table>
 <tr>
@@ -43,7 +43,7 @@ private void checkBoxAdv1_CheckStateChanged(object sender, EventArgs e)
 {% highlight vb %}
 
 Private Sub checkBoxAdv1_CheckStateChanged(ByVal sender As Object, ByVal e As EventArgs)
-Console.WriteLine(" CheckStateChanged event is raised")
+    Console.WriteLine("CheckStateChanged event is raised")
 End Sub
 
 {% endhighlight %}
@@ -51,30 +51,30 @@ End Sub
 
 ## CheckedChanged Event
 
-This event is raised when the [Checked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_Checked) property is changed and this property changes automatically when the [CheckState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_CheckState) property is changed.
+This event is raised when the [Checked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_Checked) property is changed and this property changes automatically when the [CheckState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_CheckState) property is changed.
 
 {% tabs %}
 {% highlight c# %}
 
 private void checkBoxAdv1_CheckedChanged(object sender, EventArgs e)
 {
-    if (!checkBoxAdv1.Checked)
+    if (!this.checkBoxAdv1.Checked)
         MessageBox.Show("Checkbox Unchecked");
     else
-        MessageBox.Show("Checkbox checked");
+        MessageBox.Show("Checkbox Checked");
 }
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Private Sub checkBoxAdv1_CheckedChanged(ByVal sender As Object, ByVal e As EventArgs)
-If Not checkBoxAdv1.Checked Then
-MessageBox.Show("Checkbox checked”)
-Else
-MessageBox.Show("Checkbox checked”)
-End If
-End Sub
+Private Sub checkBoxAdv1_CheckedChanged(ByVal sender As Object, ByVal e As EventArgs)
+    If Not Me.checkBoxAdv1.Checked Then
+        MessageBox.Show("Checkbox Unchecked")
+    Else
+        MessageBox.Show("Checkbox Checked")
+    End If
+End Sub
 
 {% endhighlight %}
 {% endtabs %}

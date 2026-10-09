@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scripting in Windows Forms HTMLUI control | Syncfusion®
-description: Learn about Scripting support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
+description: Learn about scripting support in the WinForms HTML Viewer control for handling JavaScript and event-driven interactions within HTML content.
 platform: windowsforms
 control: HTMLUI
 documentation: ug
@@ -81,7 +81,7 @@ script = tab["txt"] as INPUTElementImpl;
 
 
 
-// User control property sets the user control instance for the particular input element declared by the user
+// User control property sets the user control instance for the particular input element declared by the user
 
 script.UserControl.CustomControl.Text = "This is a sample for scripting";
 

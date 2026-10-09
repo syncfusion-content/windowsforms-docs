@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HTML Elements in Windows Forms HTMLUI | Syncfusion®
-description: Learn about HTML Elements support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
+description: Learn about the HTML elements supported by the WinForms HTML Viewer control, including images, input, anchor, and form elements.
 platform: windowsforms
 control: HTMLUI
 documentation: ug
@@ -21,7 +21,7 @@ This property returns an array of events supporting the element.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -59,7 +59,7 @@ The MergeSupportedEvents method is used to merge the standard and special events
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -178,7 +178,7 @@ The A element is used in creating links to another document or in creating bookm
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -242,7 +242,7 @@ The BR element is used for inserting a line break after a particular line. This 
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -352,7 +352,7 @@ The IMG element is used in defining and applying an image in the document wherev
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -398,7 +398,7 @@ The INPUT element is used for getting input from the user. It can be a text box,
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -459,7 +459,7 @@ The LINK element is used to define links to other documents, style sheets, and s
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -523,7 +523,7 @@ The SCRIPT element is used to define scripts to the HTML document. This makes th
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -561,7 +561,7 @@ Private Me.label1.Text = Constants.vbLf & "Script(IsVisible):" & Me.script.IsVis
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -593,7 +593,7 @@ The SELECT element is used to define a drop-down list. The user can specify the 
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -651,7 +651,7 @@ The STYLE element is used to implement custom style in a document. It occurs ins
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -702,7 +702,7 @@ The TABLE element is used to create tables in a document. The table element cont
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -752,7 +752,7 @@ The TEXTAREA element is used to define a multiline textbox, allowing the user to
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -799,7 +799,7 @@ The TR element is used to create rows inside a table. The [TRElementImpl](https:
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 

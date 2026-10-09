@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Tab Groups in Windows Forms TabbedMDI control | Syncfusion®
-description: Learn about Tab Groups support in Syncfusion Windows Forms TabbedMDI control, its elements and more details.
+description: Learn about tab groups in the Syncfusion Windows Forms TabbedMDI control, including arrangement and customization options.
 platform: windowsforms
-control: TabbedMDIManager 
+control: TabbedMDIManager
 documentation: ug
 ---
 
 # Tab groups in WinForms TabbedMDI control
 
-WinForms TabbedMDI supports multiple TabGroups which can be resizable. It allows users to programmatically control and restrict the number and layout of the tab groups and also lets users to associate a form with a specific tab group. This way users can provide a custom tabbed layout for the end users of the control's application. The MDI Children can arranged horizontally or vertically.
+WinForms TabbedMDI supports multiple TabGroups which can be resizable. It allows users to programmatically control and restrict the number and layout of the tab groups and also lets users to associate a form with a specific tab group. This way users can provide a custom tabbed layout for the end users of the control's application. The MDI children can be arranged horizontally or vertically.
 
 ![Tab groups](Tab-Groups_images/Tab-Groups_img1.jpeg)
 
@@ -19,14 +19,13 @@ The below topics will guide you on how to create tab groups and set borders for 
 
 ## Creating tab groups
 
-* To the application add Tools.Windows and Shared.Base Syncfusion<sup>®</sup> assemblies.
+* Add the `Syncfusion.Tools.Windows` and `Syncfusion.Shared.Base` assemblies to the application.
 * Add 2 more forms and rename them as TabGroup1_Form and TabGroup2_Form. (The application now contains three forms (i.e.) Form1, TabGroup1_Form and TabGroup2_Form).
 * In Form1, add the namespace Syncfusion.Windows.Forms.Tools.
 
-{% capture codesnippet1 %}
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 Using Syncfusion.Windows.Forms.Tools;
 
@@ -39,37 +38,33 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
+
 
 * Declare the TabbedMDIManager in your form.
 
-{% capture codesnippet2 %}
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
-Private TabbedGroupedMDIManager tabbedMDIManager;
+private TabbedGroupedMDIManager tabbedMDIManager;
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-Private TabbedGroupedMDIManager As TabbedMDIManager 
+Private tabbedMDIManager As TabbedGroupedMDIManager
 
 {% endhighlight %}
 
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
+
 
 * Set the form's [IsMdiContainer](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.form.ismdicontainer?view=netframework-4.7.2) property to `true`.
 * Initialize the WinForms TabbedMDI and set the required properties.
 
-{% capture codesnippet3 %}
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 public Form1()
 
@@ -119,15 +114,13 @@ End Sub
 {% endhighlight %}
 
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet3 | OrderList_Indent_Level_1 }}
+
 
 * Attach the WinForms TabbedMDI to your form and specify the Tab Groups.
 
-{% capture codesnippet4 %}
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -166,15 +159,13 @@ End Sub
 {% endhighlight %}
 
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet4 | OrderList_Indent_Level_1 }}
+
 
 * Add 2 bar items (or buttons can also be used) to add the tab groups. In the barItem_click event, add the below given code.
 
-{% capture codesnippet5 %}
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -221,8 +212,7 @@ this.tabbedMDIManager.TabbedGroups["TabGroup2"].AddForm(form);
 Private Sub barItem1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles barItem1.Click
 
 Dim form As TabGroup1_Form = New TabGroup1_Form
-
-Form.Text = "TabGroup1_Child1"
+form.Text = "TabGroup1_Child1"
 
 ' Add the TabGroup1_Form to a specific group.
 
@@ -235,8 +225,7 @@ End Sub
 Private Sub barItem2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles barItem2.Click
 
 Dim form As TabGroup2_Form = New TabGroup2_Form
-
-Form.Text = "TabGroup2_Child2"
+form.Text = "TabGroup2_Child2"
 
 ' Add the TabGroup2_Form to a specific group.
 
@@ -247,8 +236,7 @@ End Sub
 {% endhighlight %}
 
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet5 | OrderList_Indent_Level_1 }}
+
 
 
 ![Tab groups created by code](Tab-Groups_images/Tab-Groups_img2.jpeg)
@@ -299,7 +287,7 @@ To set the Border Color of the borders that appear under the MDI tabs, we can us
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -331,7 +319,7 @@ To set the Border Height of the borders, we can use the [BottomBorderHeight](htt
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 

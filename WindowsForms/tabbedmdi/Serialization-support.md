@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Serialization Support in Windows Forms TabbedMDI | Syncfusion®
-description: Learn about Serialization Support in Syncfusion Windows Forms TabbedMDI control, its elements and more details.
+description: Learn about serialization support in the Syncfusion Windows Forms TabbedMDI control for saving and loading tab group state across sessions.
 platform: windowsforms
 control: TabbedMDIManager 
 documentation: ug
@@ -45,11 +45,11 @@ Clears the state of the saved tab group.</td></tr>
 
 Make sure to call PersistNow method when you are done with writing into the serializer.
 
-N> The [LoadTabGroupStates](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_LoadTabGroupStates().html) and [SaveTabGroupStates](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_SaveTabGroupStates().html) methods get called automatically when you enable/disable TabbedMDI.
+>**NOTE**: The [LoadTabGroupStates](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_LoadTabGroupStates) and [SaveTabGroupStates](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_SaveTabGroupStates) methods get called automatically when you enable/disable TabbedMDI.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -102,7 +102,7 @@ The [AppStateSerializer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -133,7 +133,7 @@ To serialize in Binary Format, use the below code.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -183,7 +183,7 @@ To serialize in Isolated Storage, use the below code.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -233,7 +233,7 @@ To serialize in Memory Stream, use the below code.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -271,7 +271,7 @@ Dim ms As MemoryStream = New MemoryStream()
 
 Dim serializer As AppStateSerializer = New AppStateSerializer(SerializeMode.BinaryFmtStream, ms)
 
-Me.tabbedMdiManager.SaveDockState(serializer)
+Me.tabbedMdiManager.SaveTabGroupStates(serializer)
 
 serializer.PersistNow()
 
