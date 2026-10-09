@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Style in Windows Forms Splitter | Syncfusion
 description: Style settings provide Default and Metro themes for customizing the appearance of SplitterControl components.
@@ -9,7 +9,7 @@ documentation: ug
 
 # Style in Windows Forms Splitter
 
-SplitterControl supports visual styles such as Default and Metro. The styles can be set by using Style property.
+The SplitterControl supports visual styles such as Default and Metro. The styles can be set by using the `Style` property.
 
 * Default
 * Metro
@@ -32,4 +32,4 @@ Me.splitterControl1.Style = Syncfusion.Windows.Forms.Appearance.Metro
 {% endtabs %}
 
 
- ![Concept-and-Features_images1](Concept-and-Features_images/Concept-and-Features_img1.png)
+ ![Splitter Control with Metro style](Concept-and-Features_images/Concept-and-Features_img1.png)

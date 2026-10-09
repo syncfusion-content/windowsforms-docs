@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Splitter BackColor in Windows Forms TabSplitterContainer | Syncfusion®
 description: Customize the splitter background color to match application themes and enhance TabSplitterContainer appearance.
@@ -9,13 +9,13 @@ documentation: ug
 
 # Splitter BackColor Customization in Windows Forms TabSplitterContainer
 
-TabSplitterContainer now supports customizing the back color of the Splitter to match the theme of the application using the newly added property [SplitterBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterContainer.html#Syncfusion_Windows_Forms_Tools_TabSplitterContainer_SplitterBackColor). Earlier this was not made possible.
+TabSplitterContainer supports customizing the back color of the Splitter to match the theme of the application using the [SplitterBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterContainer.html#Syncfusion_Windows_Forms_Tools_TabSplitterContainer_SplitterBackColor) property.
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Set Custom Color to The TabSplitterContainer.
+// Set custom color to the TabSplitterContainer.
 
 this.tabSplitterContainer1.SplitterBackColor = Color.Blue;
 
@@ -23,7 +23,7 @@ this.tabSplitterContainer1.SplitterBackColor = Color.Blue;
 
 {% highlight VB %}
 
-‘Set Custom Color to The TabSplitterContainer.
+' Set custom color to the TabSplitterContainer.
 
 Me.tabSplitterContainer1.SplitterBackColor = Color.Blue
 
