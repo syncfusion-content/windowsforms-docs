@@ -14,10 +14,10 @@ The behavior of the XPTaskBar can be controlled using the properties given below
 
 This section discusses the behavior settings of the XPTaskBar.
 
-* [AllowDrop](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.allowdrop?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_AllowDrop)
-* [AutoPersistStates](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBar.html#Syncfusion_Windows_Forms_Tools_XPTaskBar_AutoPersistStates)
-* [VerticalLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBar.html#Syncfusion_Windows_Forms_Tools_XPTaskBar_VerticalLayout)
-* [ColWidthOnHorizontalAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBar.html#Syncfusion_Windows_Forms_Tools_XPTaskBar_ColWidthOnHorizontalAlignment)
+* [AllowDrop](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.allowdrop) - Enables drag-and-drop on the XPTaskBar control.
+* [AutoPersistStates](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBar.html#Syncfusion_Windows_Forms_Tools_XPTaskBar_AutoPersistStates) - Persists the collapsed/expanded states of the XPTaskBarBoxes. Persisting states requires the `AppStateSerializer` configuration.
+* [VerticalLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBar.html#Syncfusion_Windows_Forms_Tools_XPTaskBar_VerticalLayout) - Arranges the XPTaskBarBoxes vertically (default) or horizontally.
+* [ColWidthOnHorizontalAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBar.html#Syncfusion_Windows_Forms_Tools_XPTaskBar_ColWidthOnHorizontalAlignment) - Specifies the column width of the XPTaskBarBoxes in the horizontal layout mode.
 
 {% tabs %}
 
@@ -58,11 +58,11 @@ Me.xpTaskBar1.VerticalLayout = True
 
 Vertical scrollbar will be automatically added to the XPTaskBar when the TaskBar Boxes are placed outside the TaskBar's client area, provided the XPTaskBar is in the Vertical Layout mode.
 
-In the Horizontal Layout mode, the horizontal scrollbar appears on setting the [ColWidthOnHorizontalLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBar.html#Syncfusion_Windows_Forms_Tools_XPTaskBar_ColWidthOnHorizontalAlignment) property to large values.
+In the Horizontal Layout mode, the horizontal scrollbar appears on setting the [ColWidthOnHorizontalAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBar.html#Syncfusion_Windows_Forms_Tools_XPTaskBar_ColWidthOnHorizontalAlignment) property to large values.
 
-* [AutoScroll](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.scrollablecontrol.autoscroll?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ScrollableControl_AutoScroll)
-* [AutoScrollMargin](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.scrollablecontrol.autoscrollmargin?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ScrollableControl_AutoScrollMargin)
-* [AutoScrollMinSize](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.scrollablecontrol.autoscrollminsize?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ScrollableControl_AutoScrollMinSize)
+* [AutoScroll](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.scrollablecontrol.autoscroll)
+* [AutoScrollMargin](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.scrollablecontrol.autoscrollmargin)
+* [AutoScrollMinSize](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.scrollablecontrol.autoscrollminsize)
 
 {% tabs %}
 

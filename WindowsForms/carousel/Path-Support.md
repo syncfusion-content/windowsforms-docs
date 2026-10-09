@@ -17,6 +17,8 @@ The Carousel control supports arranging items in the following paths:
 * Oval
 * Linear
 
+The carousel instance used in the following examples is created as shown in the [Getting Started](https://help.syncfusion.com/windowsforms/carousel/getting-started) documentation.
+
 ## Default
 
 
