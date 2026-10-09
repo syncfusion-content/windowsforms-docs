@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: Header Customization in Windows Form Navigation Pane | Syncfusion®
+title: Header Customization in Windows Forms Navigation Pane | Syncfusion®
 description: Header customization settings support modifying header height, fonts, colors, and visual appearance of navigation items.
 platform: WindowsForms
 control: GroupBar
@@ -10,7 +10,7 @@ documentation: ug
 
 ## Header height and font settings
 
-The [GroupBarItemHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_GroupBarItemHeight) and [Font](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.font?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_Font) properties can be used to change the height and font of the header of the GroupBar Items.
+The [GroupBarItemHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_GroupBarItemHeight) and [Font](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.font) properties can be used to change the height and font of the header of the GroupBar Items.
 
 {% tabs %}
 
@@ -34,7 +34,7 @@ Me.groupBar1.Font = New System.Drawing.Font("Verdana", 9F, System.Drawing.FontSt
 
 {% endtabs %}
 
-![GroupBar font customizaion](Overview_images/Overview_img29.jpeg) 
+![GroupBar font customization](Overview_images/Overview_img29.jpeg) 
 
 ![GroupBar header height customization](Overview_images/Overview_img30.jpeg)
 
@@ -55,9 +55,9 @@ this.groupBar1.HeaderForeColor = System.Drawing.Color.Silver;
 
 {% highlight VB %} 
 
-Me.groupBar1.HeaderBackColor = System.Drawing.Color.Red
+Me.groupBar1.HeaderBackColor = System.Drawing.Color.LavenderBlush
 
-Me.groupBar1.HeaderForeColor = System.Drawing.Color.Maroon
+Me.groupBar1.HeaderForeColor = System.Drawing.Color.Silver
 
 {% endhighlight %}
 

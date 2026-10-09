@@ -8,7 +8,10 @@ documentation: ug
 ---
 # Events in Windows Forms GroupView
 
-The list of events and a detailed explanation about each of them is given in the following sections.
+The list of events and a detailed explanation about each of them are given in the following sections.
+
+>**NOTE**:
+In the event handler examples below, `listView1` (or `Me.ListView1`) refers to a `ListView` control used in the demo application to log event output, and `groupWinForms` refers to the GroupView instance used in the demo. The `groupView1` instance is assumed to be created as shown in the [Getting Started](https://help.syncfusion.com/windowsforms/groupview/getting-started) documentation.
 
 * [GroupViewItemHighlighted](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html)
 * [GroupViewItemRenamed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html)
@@ -29,9 +32,11 @@ The event handler receives an argument of type EventArgs.
 
 //Handle the GroupViewItemHighlighted event.
 
-this.groupView1.GroupViewItemHighlighted+=new EventHandler(groupView1_GroupViewItemHighlighted);
+this.groupView1.GroupViewItemHighlighted += new EventHandler(groupView1_GroupViewItemHighlighted);
 
+{% endhighlight %}
 
+{% highlight C# %}
 
 private void groupView1_GroupViewItemHighlighted(object sender, EventArgs e)
 
@@ -53,7 +58,9 @@ this.groupView1.HighlightItemColor = System.Drawing.Color.AliceBlue;
 
 AddHandler Me.groupView1.GroupViewItemHighlighted, AddressOf groupView1_GroupViewItemHighlighted 
 
+{% endhighlight %}
 
+{% highlight VB %}
 
 Private Sub groupView1_GroupViewItemHighlighted(ByVal sender As Object, ByVal e As EventArgs)
 
@@ -76,7 +83,7 @@ The [GroupViewItemRenamed](https://help.syncfusion.com/cr/windowsforms/Syncfusio
 
 The event handler receives an argument of type GroupItemRenamedEventArgs. The event properties associated with the GroupItemRenamedEventArgs are as follows.
 
-
+**Members table**
 
 <table>
 <tr>
@@ -85,16 +92,12 @@ Members</th><th>
 Description</th></tr>
 <tr>
 <td>
-BackgroundBrush</td><td>
-Gets/sets the brush that will be used to draw the specified bounds.</td></tr>
+NewLabel</td><td>
+Gets/sets the new label of the renamed GroupView Item.</td></tr>
 <tr>
 <td>
-Bounds</td><td>
-Returns the bounds for which a brush is requested.</td></tr>
-<tr>
-<td>
-Item</td><td>
-Returns the index of the GroupBar Item being drawn.</td></tr>
+OldLabel</td><td>
+Gets/sets the old label of the renamed GroupView Item.</td></tr>
 </table>
 
 {% tabs %}
@@ -107,7 +110,7 @@ private void groupWinForms_GroupViewItemRenamed(object obj, Syncfusion.Windows.F
 
 {
 
-ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {"GroupViewItemRenamed", "Old Label: " +arg.OldLabel + " New Label: " +arg.NewLabel});
+ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {"GroupViewItemRenamed", "Old Label: " + arg.OldLabel + " New Label: " + arg.NewLabel});
 
 this.listView1.Items.Add(listViewItem1);
 
@@ -119,11 +122,11 @@ this.listView1.Items.Add(listViewItem1);
 
 {% highlight VB %}
 
-// This event occurs when a GroupView Item in the GroupView is renamed.
+' This event occurs when a GroupView Item in the GroupView is renamed.
 
 Private Sub groupWinForms_GroupViewItemRenamed(ByVal obj As Object, ByVal arg As Syncfusion.Windows.Forms.Tools.GroupItemRenamedEventArgs) Handles groupWinForms.GroupViewItemRenamed
 
-Dim listViewItem1 As ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"GroupViewItemRenamed", "Old Label: " + arg.OldLabel & " New Label: " + arg.NewLabel})
+Dim listViewItem1 As ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"GroupViewItemRenamed", "Old Label: " & arg.OldLabel & " New Label: " & arg.NewLabel})
 
 Me.ListView1.Items.Add(listViewItem1)
 
@@ -134,7 +137,7 @@ End Sub
 
 {% endtabs %}
 
-## GroupViewItemReordered event
+## GroupViewItemsReordered event
 
 The [GroupViewItemsReordered](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html) event occurs when a GroupView Item in the GroupView control is reordered.
 
@@ -303,7 +306,7 @@ menu.Show(this.grp, this.grp.PointToClient(Cursor.Position));
 
 {% highlight VB %} 
 
-// Handler for the GroupBar.ShowContextMenu event.
+' Handler for the GroupBar.ShowContextMenu event.
 
 Private Sub groupVS_ShowContextMenu(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles groupVStudio.ShowContextMenu
 
@@ -315,13 +318,13 @@ menu.ParentBarItem = New Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem()
 
 
 
-Private grp As Syncfusion.Windows.Forms.Tools.GroupBar = CType(IIf(TypeOf sender Is GroupBar, sender, Nothing), GroupBar)
+Dim grp As Syncfusion.Windows.Forms.Tools.GroupBar = CType(IIf(TypeOf sender Is GroupBar, sender, Nothing), GroupBar)
 
 
 
 Dim tab As BarItem = New BarItem("Add New Tab", New EventHandler(Me.TabVSMenuAddNewTab))
 
-tab.Tag = Me.grp
+tab.Tag = grp
 
 menu.ParentBarItem.Items.Add(tab)
 
@@ -329,7 +332,7 @@ menu.ParentBarItem.Items.Add(tab)
 
 Dim delete As BarItem = New BarItem("Delete Tab", New EventHandler(Me.TabMenuRemoveGroup))
 
-delete.Tag = Me.grp
+delete.Tag = grp
 
 menu.ParentBarItem.Items.Add(delete)
 
@@ -337,9 +340,9 @@ menu.ParentBarItem.Items.Add(delete)
 
 ' If the mouse click occurred over a GroupBarItem then get that item's client control and update the menu with client specific menu items.
 
-If Me.grp.ContextMenuItem &lt;&gt; -1 Then
+If grp.ContextMenuItem <> -1 Then
 
-Dim view As GroupView =  Me.grp.GroupBarItems(Me.grp.ContextMenuItem).Client as GroupView 
+Dim view As GroupView = TryCast(grp.GroupBarItems(grp.ContextMenuItem).Client, GroupView) 
 
 Dim move As BarItem = New BarItem("Move &Up", New EventHandler(Me.TabVSMenuMoveUpDown))
 
@@ -353,7 +356,7 @@ End If
 
 ' Finally invoke the XPMenus.PopupMenu.Show() method to display the context menu.
 
-menu.Show(Me.grp, Me.grp.PointToClient(Cursor.Position))
+menu.Show(grp, grp.PointToClient(Cursor.Position))
 
 End Sub
 
@@ -447,7 +450,7 @@ End If
 
 ' Show the context menu using the Cursor.Position value for the location.
 
-menu.Show(Me.groupWinForms, Me.gcWinForms.PointToClient(Cursor.Position))
+menu.Show(Me.groupWinForms, Me.groupWinForms.PointToClient(Cursor.Position))
 
 End Sub
 

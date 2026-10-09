@@ -8,16 +8,17 @@ documentation: ug
 ---
 # Getting Started with Windows Forms XPTaskPane
 
-This section describes how to add [XPTaskPane](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskPane.html) control in a Windows Forms application and overview of its basic functionalities.
+This section describes how to add [XPTaskPane](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskPane.html) control in a Windows Forms application and gives an overview of its basic functionalities.
 
 ## Assembly deployment
 
 Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#xptaskpane) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
  
-Please find more details regarding how to install the nuget packages in windows form application in the below link:
+Please find more details regarding how to install the NuGet packages in a Windows Forms application in the below link:
  
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
+[How to install NuGet packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
 
+To generate the license validated application, refer to the [licensing](https://help.syncfusion.com/windowsforms/licensing/overview) documentation.
 
 ## Creating simple application with XPTaskPane
 
@@ -29,9 +30,9 @@ You can create the Windows Forms application with [XPTaskPane](https://help.sync
 
 ### Creating the project
 
-Create a new Windows Forms project in the Visual Studio to display the [XPTaskPane](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskPane.html) with functionalities.
+Create a new Windows Forms project in Visual Studio to display the [XPTaskPane](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskPane.html) with its functionalities.
 
-## Adding control via Form designer
+## Adding control via designer
 
 The [XPTaskPane](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskPane.html) control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
@@ -46,7 +47,7 @@ The [XPTaskPane](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.
 
 **Adding TaskPane pages**
 
-To add pages into XPTaskPane, Click on [Add Page](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Wizard.html#Syncfusion_Windows_Forms_Tools_Wizard_AddPage_Syncfusion_Windows_Forms_Tools_WizardPage_) in Smart Tags of [XPTaskPane](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskPane.html) in designer view. On dropping [XPTaskPane](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskPane.html), [WizardContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardContainer.html) will be automatically added as [TaskPanePageContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskPane.html#Syncfusion_Windows_Forms_Tools_XPTaskPane_TaskPanePageContainer).
+To add pages into XPTaskPane, click on **Add Page** in the Smart Tags of [XPTaskPane](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskPane.html) in designer view. On dropping [XPTaskPane](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskPane.html), [WizardContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardContainer.html) will be automatically added as [TaskPanePageContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskPane.html#Syncfusion_Windows_Forms_Tools_XPTaskPane_TaskPanePageContainer).
 
 ![Task pages added by designer](Creating-a-Simple-XPTaskPane_images/XPTaskPane-img2.png)
 
@@ -112,7 +113,7 @@ Me.Controls.Add(xpTaskPane1)
 
 **Adding WizardContainer as TaskPanePageContainer**
 
-To added pages into [XPTaskPane](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskPane.html), it is necessary to added a Container control for TaskPanePage. Here [WizardContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardContainer.html) is added as [TaskPanePageContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskPane.html#Syncfusion_Windows_Forms_Tools_XPTaskPane_TaskPanePageContainer).
+To add pages into [XPTaskPane](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskPane.html), it is necessary to add a container control for the TaskPanePage. Here [WizardContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardContainer.html) is added as [TaskPanePageContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskPane.html#Syncfusion_Windows_Forms_Tools_XPTaskPane_TaskPanePageContainer).
 
 {% tabs %}
 
@@ -120,9 +121,9 @@ To added pages into [XPTaskPane](https://help.syncfusion.com/cr/windowsforms/Syn
 
 WizardContainer wizardContainer1 = new WizardContainer();
 
-this.xpTaskPane1.Controls.Add(this.wizardContainer1);
+this.xpTaskPane1.Controls.Add(wizardContainer1);
 
-this.xpTaskPane1.TaskPanePageContainer = this.wizardContainer1;
+this.xpTaskPane1.TaskPanePageContainer = wizardContainer1;
 
 {% endhighlight %}
 
@@ -130,9 +131,9 @@ this.xpTaskPane1.TaskPanePageContainer = this.wizardContainer1;
 
 Dim wizardContainer1 As WizardContainer = New WizardContainer()
 
-Me.xpTaskPane1.Controls.Add(Me.wizardContainer1);
+Me.xpTaskPane1.Controls.Add(wizardContainer1)
 
-Me.xpTaskPane1.TaskPanePageContainer = Me.wizardContainer1;
+Me.xpTaskPane1.TaskPanePageContainer = wizardContainer1
 
 {% endhighlight %}
 
@@ -149,12 +150,12 @@ Create an instance of [XPTaskPage](https://help.syncfusion.com/cr/windowsforms/S
 
 XPTaskPage xpTaskPage1 = new XPTaskPage();
 
-this.xpTaskPage1.Title = "New Page";
+xpTaskPage1.Title = "New Page";
 
-this.wizardContainer1.Controls.Add(this.xpTaskPage1);
+wizardContainer1.Controls.Add(xpTaskPage1);
 
 this.xpTaskPane1.TaskPages = new XPTaskPage[] {
-        this.xpTaskPage1};
+        xpTaskPage1};
 
 {% endhighlight %}
 
@@ -162,12 +163,36 @@ this.xpTaskPane1.TaskPages = new XPTaskPage[] {
 
 Dim xpTaskPage1 As XPTaskPage = New XPTaskPage()
 
-Me.xpTaskPage1.Title = "New Page"
+xpTaskPage1.Title = "New Page"
 
-Me.wizardContainer1.Controls.Add(me.xpTaskPage1)
+wizardContainer1.Controls.Add(xpTaskPage1)
 
-Me.xpTaskPane1.TaskPages = New XPTaskPage[] {
-        Me.xpTaskPage1};
+Me.xpTaskPane1.TaskPages = New XPTaskPage() {
+        xpTaskPage1}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Child controls such as buttons, labels, etc., can be added to each page using its `Controls` collection as shown below.
+
+{% tabs %}
+
+{% highlight C# %}
+
+System.Windows.Forms.Button button1 = new System.Windows.Forms.Button();
+button1.Text = "Click Me";
+
+xpTaskPage1.Controls.Add(button1);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim button1 As New System.Windows.Forms.Button()
+button1.Text = "Click Me"
+
+xpTaskPage1.Controls.Add(button1)
 
 {% endhighlight %}
 

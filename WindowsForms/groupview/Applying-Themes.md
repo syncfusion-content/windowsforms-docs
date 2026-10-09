@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Apply Themes in Windows Forms GroupView
 
-The Themes Enabled property specifies whether XP Themes should be used for drawing the control. Themes can be enabled by setting the [ThemesEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_ThemesEnabled) property of GroupView to `true`.
+The `ThemesEnabled` property specifies whether XP Themes should be used for drawing the control. Themes can be enabled by setting the [ThemesEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_ThemesEnabled) property of GroupView to `true`. The default value of this property is `false`, and XP themes require a themed operating system to be rendered.
 
 {% tabs %}
 

@@ -8,15 +8,15 @@ documentation: ug
 ---
 # GroupView Items Settings in Windows Forms GroupView
 
-This section discusses the various settings that can be applied to the GroupView Items of the GroupView control.
+This section discusses the various settings that can be applied to the GroupView Items of the GroupView control. The `groupView1` instance used in the examples below is assumed to be created with items as shown in the [Getting Started](https://help.syncfusion.com/windowsforms/groupview/getting-started) documentation.
 
 ## Text settings
 
-This section describes the text alignment options available for GroupView.
+This section describes the text highlighting, offset, formatting and renaming options available for the GroupView.
 
 ### Text highlighting
 
-The GroupView control provides highlighting of text when the mouse is over the GroupView Item. This can be activated by setting the [HighlightText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_HighlightText) property to 'True'.
+The GroupView control provides highlighting of text when the mouse is over the GroupView Item. This can be activated by setting the [HighlightText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_HighlightText) property to `true`. The default value of this property is `false`.
 
 {% tabs %}
 
@@ -47,9 +47,10 @@ The following properties are used to set the text offset for the GroupView Items
 * [HighlightTextOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_HighlightTextOffset)
 * [SelectedHighlightTextOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_SelectedHighlightTextOffset)
 * [SelectingTextOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_SelectingTextOffset)
-* [SelectedTextOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_SelectedImageOffset)
+* [SelectedTextOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_SelectedTextOffset)
 
-N> [HighlightText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_HighlightText) property must be set to 'True' in all the cases.
+>**NOTE**:
+[HighlightText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_HighlightText) property must be set to `true` in all the cases.
 
 {% tabs %}
 
@@ -102,7 +103,7 @@ The methods associated with these properties are given below.
 
 ### Text formatting
 
-The following table lists the text formatting properties of GroupView Control.
+The following properties list the text formatting properties of the GroupView control.
 
 * [TextSpacing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_TextSpacing)
 * [TextUnderline](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_TextUnderline)
@@ -166,6 +167,8 @@ Me.groupView1.InplaceRenameItem(index)
 
 {% endtabs %}
 
+The in-place renaming operation can be canceled using the method given below.
+
 <table>
 <tr>
 <th>
@@ -188,13 +191,14 @@ The color for highlighting Items and text during mouse hover can be specified us
 * [HighlightItemColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_HighlightItemColor)
 * [HighlightTextColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_HighlightTextColor)
 
-N> [HighlightText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_HighlightText) property must be set to 'True' in both the cases.
+>**NOTE**:
+[HighlightText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_HighlightText) property must be set to `true` in both the cases.
 
 {% tabs %}
 
 {% highlight C# %}
 
-this.groupView1.HighlightItemColor = System.Drawing.Color.LavendarBlush;
+this.groupView1.HighlightItemColor = System.Drawing.Color.LavenderBlush;
 
 this.groupView1.HighlightTextColor = System.Drawing.Color.Purple;
 
@@ -204,7 +208,7 @@ this.groupView1.HighlightTextColor = System.Drawing.Color.Purple;
 
 {% highlight VB %}
 
-Me.groupView1.HighlightItemColor = System.Drawing.Color.LavendarBlush
+Me.groupView1.HighlightItemColor = System.Drawing.Color.LavenderBlush
 
 Me.groupView1.HighlightTextColor = System.Drawing.Color.Purple
 
@@ -225,24 +229,25 @@ The following table lists the methods related to the above properties.
 
 The color for highlighting selected Items and text can be specified using the properties given below.
 
-[SelectedHighlightItemColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_SelectedHighlightItemColor)
-[SelectedHighlightTextColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_SelectedHighlightTextColor)
-[SelectedItemColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_SelectedItemColor)
-[SelectedTextColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_SelectedTextColor)
-[SelectingItemColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_SelectingItemColor)
-[SelectingTextColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_SelectingTextColor)
+* [SelectedHighlightItemColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_SelectedHighlightItemColor)
+* [SelectedHighlightTextColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_SelectedHighlightTextColor)
+* [SelectedItemColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_SelectedItemColor)
+* [SelectedTextColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_SelectedTextColor)
+* [SelectingItemColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_SelectingItemColor)
+* [SelectingTextColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_SelectingTextColor)
 
-N> [HighlightText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_HighlightText) property must be set to 'True' in all the cases.
+>**NOTE**:
+[HighlightText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_HighlightText) property must be set to `true` in all the cases.
 
 {% tabs %}
 
 {% highlight C# %}
 
-this.groupView1.SelectedHighlightItemColor = System.Drawing.Color.LightBlue;
+this.groupView1.SelectedHighlightItemColor = System.Drawing.Color.LightSkyBlue;
 
 this.groupView1.SelectedHighlightTextColor = System.Drawing.Color.Crimson;
 
-this.groupView1.SelectedItemColor = System.Drawing.Color.LightGreen;
+this.groupView1.SelectedItemColor = System.Drawing.Color.PaleGreen;
 
 this.groupView1.SelectedTextColor = System.Drawing.Color.Blue;
 
@@ -255,11 +260,11 @@ this.groupView1.SelectingTextColor = System.Drawing.Color.Red;
 
 {% highlight VB %} 
 
-Me.groupView1.SelectedHighlightItemColor = System.Drawing.Color.LightBlue
+Me.groupView1.SelectedHighlightItemColor = System.Drawing.Color.LightSkyBlue
 
 Me.groupView1.SelectedHighlightTextColor = System.Drawing.Color.Crimson
 
-Me.groupView1.SelectedItemColor = System.Drawing.Color.LightGreen
+Me.groupView1.SelectedItemColor = System.Drawing.Color.PaleGreen
 
 Me.groupView1.SelectedTextColor = System.Drawing.Color.Blue
 
@@ -280,18 +285,18 @@ Me.groupView1.SelectingTextColor = System.Drawing.Color.Red
  ![Highlighting selected items and text](Overview_images/Overview_img73.jpeg) 
 
 
-The following table lists the methods related to the above properties.
+The following methods are related to the above properties.
 
-[ResetSelectedHighlightItemColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_ResetSelectedHighlightItemColor)
-[ResetSelectedHighlightTextColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_ResetSelectedHighlightTextColor)
-[ResetSelectedItemColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_ResetSelectedItemColor)
-[ResetSelectedTextColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_ResetSelectedTextColor)
-[ResetSelectingItemColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_ResetSelectingItemColor)
-[ResetSelectingTextColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_ResetSelectingTextColor)
+* [ResetSelectedHighlightItemColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_ResetSelectedHighlightItemColor)
+* [ResetSelectedHighlightTextColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_ResetSelectedHighlightTextColor)
+* [ResetSelectedItemColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_ResetSelectedItemColor)
+* [ResetSelectedTextColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_ResetSelectedTextColor)
+* [ResetSelectingItemColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_ResetSelectingItemColor)
+* [ResetSelectingTextColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_ResetSelectingTextColor)
 
 ## Orientation settings for GroupView item
 
-The following table lists the properties related to the orientation of GroupView Items.
+The following properties control the orientation of the GroupView Items.
 
 * [FlowView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_FlowView)
 * [FlowViewItemTextLength](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_FlowViewItemTextLength)
@@ -328,9 +333,9 @@ Me.groupView1.Orientation = Syncfusion.Windows.Forms.Tools.GroupViewOrientation.
 
 {% endtabs %}
 
-The GroupView Items in the GroupView control can be arranged in the horizontal and vertical direction, with or without displaying text. FlowView property displays the GroupView Items with images and without text.
+The GroupView Items in the GroupView control can be arranged in horizontal or vertical directions, with or without displaying text. The FlowView property displays the GroupView Items with images and without text.
 
-If you want to show the GroupView Item's text in the FlowView mode then set the ShowFlowViewItemText property to 'True'. You can also control the length of the GroupView Item's text in the FlowView mode using the FlowViewItemTextLength property.
+If you want to show the GroupView Item's text in the FlowView mode, then set the ShowFlowViewItemText property to `true`. You can also control the length of the GroupView Item's text in the FlowView mode using the FlowViewItemTextLength property.
 
 ![Orientation settings for GroupView item](Overview_images/Overview_img74.jpeg) 
 
