@@ -19,7 +19,7 @@ Refer to this [documentation](https://help.syncfusion.com/windowsforms/visual-st
 
 ## Adding the RadialSlider control via designer
 
-The following steps describe how to create an **RadialSlider** control via the designer.
+The following steps describe how to create a **RadialSlider** control via the designer.
 
 1. Create a new Windows Forms application in Visual Studio.
 
@@ -119,7 +119,7 @@ radialSlider1.Value = 50;
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 radialSlider1.MinimumValue = 50
 radialSlider1.MaximumValue = 100
@@ -133,7 +133,7 @@ radialSlider1.Value = 50
 
 ## Slider Value Changed Event
 
-You can get the current slider value using the [ValueChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html) event.
+You can get the current slider value by handling the [ValueChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html) event.
 
 {% tabs %}
 
@@ -174,7 +174,7 @@ radialSlider1.SliderDivision = 5;
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 Me.radialSlider1.SliderDivision = 5
 
@@ -234,7 +234,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winf
 
 The **RadialSlider** supports two different styles to its appearance using the [SliderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html#Syncfusion_Windows_Forms_Tools_RadialSlider_SliderStyle) property.
 
-* **Default** - Renders the slider control with two hollow circles and a small circle as center with its dividend ticks.
+* **Default** - Renders the slider control with two hollow circles and a small circle at the center with its dividend ticks.
 
 * **Frame** - Paints the background of the slider control with an HQ frame.
 
@@ -246,7 +246,7 @@ radialSlider1.SliderStyle = Syncfusion.Windows.Forms.Tools.SliderStyles.Frame;
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 radialSlider1.SliderStyle = Syncfusion.Windows.Forms.Tools.SliderStyles.Frame
 
@@ -266,7 +266,7 @@ radialSlider1.ShowOuterCircle = true;
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 Me.radialSlider1.ShowOuterCircle = True
 

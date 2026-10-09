@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Keyboard Support in Windows Forms RadialMenu | Syncfusion®
 description: Keyboard support enables key tips, SuperAccelerator integration, shortcut access, and customizable accelerator appearance.
@@ -15,7 +15,7 @@ The RadialMenu control supports key tips for radial menu items, letting users qu
 
 Follow the steps below to add the [`SuperAccelerator`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SuperAccelerator.html)
 
-1. Drag-and-drop the `SuperAccelerator` on your form or creating the `SuperAccelerator` instance through code.
+1. Drag-and-drop the `SuperAccelerator` on your form or create the `SuperAccelerator` instance through code.
 
 ![Keyboard-Support_img2](Keyboard-Support_images/Keyboard-Support_img2.jpg)
 
@@ -49,18 +49,18 @@ Follow the steps below to add the [`SuperAccelerator`](https://help.syncfusion.c
 
 {% endtabs %}
 
-3. To accelerate the item’s click event at run time, Press the ALT key. All the specified accelerator strings will be displayed below the items.
+3. To accelerate the item's click event at run time, Press the ALT key. All the specified accelerator strings will be displayed below the items.
 
 ![Keyboard-Support_img1](Keyboard-Support_images/Keyboard-Support_img1.jpg)
 
-4. Press the string in the keyboard and the corresponding item’s click event will be triggered. (Eg. If the accelerator string of Copy is X key, Press ALT key. Once all the accelerator strings are displayed, press X key the Copy item event will be triggered.)
+4. Press the key on the keyboard and the corresponding item's click event will be triggered. (Eg. If the accelerator string of Copy is X key, Press the ALT key. Once all the accelerator strings are displayed, Press the X key Copy item event will be triggered.)
 
 
 > Note: Do not set same string value to multiple radial menu items.
 
 ## SuperAccelerator appearance
 
-This section discusses the appearance settings of a `SuperAccelerator`. customizing a `SuperAccelerator` using a property of [`BackColor`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SuperAccelerator.html#Syncfusion_Windows_Forms_Tools_SuperAccelerator_BackColor),[`Font`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SuperAccelerator.html#Syncfusion_Windows_Forms_Tools_SuperAccelerator_Font) and [`ForeColor`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SuperAccelerator.html#Syncfusion_Windows_Forms_Tools_SuperAccelerator_ForeColor).
+This section discusses the appearance settings of a `SuperAccelerator`. Customize a `SuperAccelerator` using the properties [`BackColor`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SuperAccelerator.html#Syncfusion_Windows_Forms_Tools_SuperAccelerator_BackColor),[`Font`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SuperAccelerator.html#Syncfusion_Windows_Forms_Tools_SuperAccelerator_Font) and [`ForeColor`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SuperAccelerator.html#Syncfusion_Windows_Forms_Tools_SuperAccelerator_ForeColor).
 
 {% tabs %}
 
@@ -76,7 +76,7 @@ this.superAccelerator1.Font = new System.Drawing.Font("Arial", 8F, FontStyle.Ita
 
 ### Style
 
-SuperAccelerator supports visual styles such as Default, Office2016. The style can be set using `Appearance` property.
+SuperAccelerator supports visual styles such as Default and Office2016. The style can be set using the `Appearance` property.
 
 *	Default
 *	Advanced

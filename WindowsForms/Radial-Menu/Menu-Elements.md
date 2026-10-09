@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Menu Elements in Windows Forms Radial Menu | Syncfusion®
 description: Menu elements include radial menu items, check modes, grouping, color palettes, font lists, sliders, and center icons.
@@ -15,9 +15,9 @@ Radial Menu items are populated with the business object collection. Each menu i
 
 ### Check mode
 
-The CheckMode of a Radial Menu Item is defined with the following options:
+The [CheckMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialMenuItem.html#Syncfusion_Windows_Forms_Tools_RadialMenuItem_CheckMode) of a Radial Menu Item is defined with the following options:
 
-* None - When the CheckMode is set to None, item can not be checked.
+* None - When the CheckMode is set to None, item cannot be checked.
 * CheckBox - When the CheckMode is set to CheckBox, you can check more than one item in the same level.
 * RadioButton - When the CheckMode is set to RadioButton, you can check only one item in the same level.
 
@@ -98,7 +98,7 @@ Me.radialMenuItem3.CheckMode = CheckMode.Option
 
 ## Icon
 
-The Icon property of Radial Menu is used to customize the icon displayed in the center of Radial Menu circle. Icon is not displayed if it is not loaded.
+The `Icon` property of Radial Menu is used to customize the icon displayed in the center of the Radial Menu circle. The icon is not displayed if the property is not loaded.
 
 ![Icon](Menu-Elements_images/Menu-Elements_img5.png)
 
