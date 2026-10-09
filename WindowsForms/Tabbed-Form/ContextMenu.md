@@ -59,7 +59,7 @@ End Sub
 
 ## Customize context menu in tabs like web browser
 
-The context menu can be customized when opening the context menu by handling the [ContextMenuOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SfTabbedFormControl.html#Syncfusion_Windows_Forms_Tools_SfTabbedFormControl_ContextMenuOpening) event. The following code example demonstrates how to provide context menu in tabs like web browser using the [TabContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SfTabbedFormControl.html#Syncfusion_Windows_Forms_Tools_SfTabbedFormControl_TabContextMenu) property.
+The context menu can be customized when opening the context menu by handling the [ContextMenuOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SfTabbedFormControl.html#Syncfusion_Windows_Forms_Tools_SfTabbedFormControl_ContextMenuOpening) event. The following code example demonstrates how to provide a context menu similar to a web browser using the [TabContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SfTabbedFormControl.html#Syncfusion_Windows_Forms_Tools_SfTabbedFormControl_TabContextMenu) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -187,14 +187,12 @@ Public Sub New()
 
 	Me.TabbedFormControl = tabbedFormControl
 
-'	#Region "Context Menu Customization"
 	Dim tabContextMenu As New ContextMenuStrip()
 	tabContextMenu.Items.Add("Close", Nothing, AddressOf OnCloseMenuClicked)
 	tabContextMenu.Items.Add("Close all but this", Nothing, AddressOf OnCloseAllMenuClicked)
 	tabContextMenu.Items.Add("Close tabs to the right", Nothing, AddressOf OnCloseTabsToRightMenuClicked)
 	tabbedFormControl.TabContextMenu = tabContextMenu
 	AddHandler tabbedFormControl.ContextMenuOpening, AddressOf TabbedFormControl_ContextMenuOpening
-'	#End Region
 End Sub
 #End Region
 
@@ -233,7 +231,6 @@ Private Sub OnCloseMenuClicked(ByVal sender As Object, ByVal e As EventArgs)
 End Sub
 
 ''' <summary>
-''' /// <summary>
 ''' Occurs when Close All But This Menu item is clicked.
 ''' </summary>
 Private Sub OnCloseAllMenuClicked(ByVal sender As Object, ByVal e As EventArgs)
@@ -251,7 +248,6 @@ Private Sub OnCloseAllMenuClicked(ByVal sender As Object, ByVal e As EventArgs)
 End Sub
 
 ''' <summary>
-''' /// <summary>
 ''' Occurs when Close Right To This Menu item is clicked.
 ''' </summary>
 Private Sub OnCloseTabsToRightMenuClicked(ByVal sender As Object, ByVal e As EventArgs)
@@ -271,6 +267,14 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Winforms showing the contextmenu in tabbed form](ContextMenu_Images/ContextMenu_Images_img1.png)
+![WinForms TabbedForm showing the customized Close, Close all but this, and Close tabs to the right context menu items](ContextMenu_Images/ContextMenu_Images_img1.png)
 
-You can download the sample from following link: [Sample](https://github.com/syncfusion/winforms-demos/tree/ba27b6748fa0723dcd42906ee58cb0e944291e51/dialogs/SfForm/TabbedForm/CS)
+You can download the sample from the following link: [TabbedForm Sample](https://github.com/syncfusion/winforms-demos/tree/ba27b6748fa0723dcd42906ee58cb0e944291e51/dialogs/SfForm/TabbedForm/CS)
+
+## See also
+
+* [About the SfTabbedForm control](Overview.md)
+* [Getting Started with Windows Forms TabbedForm](Getting-Started.md)
+* [Tab Selection in Windows Forms TabbedForm](TabSelection.md)
+* [Drag and drop tabs in Windows Forms TabbedForm](Draganddroptabs.md)
+* [Tab Navigation in Windows Forms TabbedForm](TabNavigation.md)
