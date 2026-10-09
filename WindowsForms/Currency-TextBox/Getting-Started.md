@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Getting Started with Windows Forms CurrencyTextBox | Syncfusion®
 description: Learn here about getting started with Syncfusion Windows Forms CurrencyTextBox control, its elements and more.

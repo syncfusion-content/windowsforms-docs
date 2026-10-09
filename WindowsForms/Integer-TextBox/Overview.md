@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: About Syncfusion® Windows Forms IntegerTextBox Control | Syncfusion®
 description: Learn here all about introduction of Syncfusion Windows Forms IntegerTextBox (Integertextbox) control, its elements and more details.

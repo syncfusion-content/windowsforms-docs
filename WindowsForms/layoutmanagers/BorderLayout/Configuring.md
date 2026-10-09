@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Configuring BorderLayout in Windows Forms BorderLayout | Syncfusion®
 description: Learn about Configuring BorderLayout support in Syncfusion Windows Forms LayoutManagers control and more details.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Text Settings in Windows Forms IntegerTextBox | Syncfusion®
 description: Learn about Text Settings support in Syncfusion Windows Forms IntegerTextBox (Integertextbox) control and more details.

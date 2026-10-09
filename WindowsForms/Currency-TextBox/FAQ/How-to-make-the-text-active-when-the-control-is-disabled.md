@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: How to activate text in Windows Forms CurrencyTextBox | Syncfusion®
 description: Learn how to keep the text active and visible in Syncfusion Windows Forms CurrencyTextBox control when the control is disabled using the ShowTextBox property.

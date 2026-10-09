@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Key Settings in Windows Forms IntegerTextBox | Syncfusion®
 description: Learn about Key Settings support in Syncfusion Windows Forms IntegerTextBox (Integertextbox) control and more details.

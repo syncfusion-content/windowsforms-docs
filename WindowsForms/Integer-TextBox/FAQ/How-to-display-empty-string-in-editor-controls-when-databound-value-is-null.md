@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: How to Show Empty String in IntegerTextBox | Syncfusion®
 description: Learn how to show an empty string when the databound value is null in Syncfusion Windows Forms IntegerTextBox control, its elements and more details.

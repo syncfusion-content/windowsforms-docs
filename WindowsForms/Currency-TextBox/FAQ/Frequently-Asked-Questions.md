@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: FAQ in Windows Forms Currency TextBox | Syncfusion®
 description: Find frequently asked questions and answers about Syncfusion Windows Forms CurrencyTextBox control, its features, behavior, and common usage scenarios.
