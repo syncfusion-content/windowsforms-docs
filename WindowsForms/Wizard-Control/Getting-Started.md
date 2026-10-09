@@ -143,7 +143,7 @@ Me.Controls.Add(Me.wizardControl1)
 
 [WizardControlPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html) can be added to the [WizardPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_WizardPages) array property of the WizardControl. The optional [WizardPageContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_WizardPageContainer) / [WizardContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardContainer.html) model is the underlying mechanism but is not required for the typical scenario.
 
-To avoid a `System.NullReferenceException` thrown by the wizard's `ReInitialise` step during initialization, configure all properties and assign the `WizardPages` array inside the `Form1` constructor after `InitializeComponent()`.
+To avoid a `System.NullReferenceException` thrown by the wizard's `ReInitialize` step during initialization, configure all properties and assign the `WizardPages` array inside the `Form1` constructor after `InitializeComponent()`.
 
 {% tabs %}
 {% highlight C# %}
