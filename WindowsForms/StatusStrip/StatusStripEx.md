@@ -1,47 +1,96 @@
 ---
 layout: post
-title: Getting Started with Windows Forms StatusStrip | Syncfusion®
-description: StatusStrip in Windows Forms provides a customizable status bar with support for status items, visual styles, layout customization, and user interaction.
+title: Getting Started with Windows Forms StatusStripEx | Syncfusion®
+description: StatusStripEx in Windows Forms provides a customizable status bar with support for status items, visual styles, layout customization, and user interaction.
 platform: windowsforms
-control: StatusStrip 
+control: StatusStripEx
 documentation: ug
 ---
 
-# Getting Started with Windows Forms StatusStrip
+# Getting Started with Windows Forms StatusStripEx
 
-Essential Tools has come up with StatusStrip control which can be added to the bottom of the Ribbon. It can hold controls like TrackBarEx, ProgressBar, StatusStripButtons, and so on.
+Essential Tools provides the StatusStripEx control, which can be added to the bottom of the Ribbon. It can host controls such as TrackBarEx, ProgressBar, StatusStripButton, and so on.
 
 ![WindowsForms Status Strip added to bottom of the ribbon](statusstripex_images/windowsforms-status-strip-added-to-bottom-of-the-ribbon.jpeg)
 
-## Creating a StatusStrip
+## Assembly deployment
+
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#statusstripex) section to get the list of assemblies or the details of NuGet package that need to be added as reference to use the control in any application.
+
+Refer to this [documentation](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to find more details about installing NuGet packages in a Windows Forms application.
+
+You can also add the required assemblies as references from the Package Manager Console using the following PowerShell command:
+
+```powershell
+Install-Package Syncfusion.Tools.Windows
+```
+
+## Creating a StatusStripEx
 
 ### Through designer
 
-The StatusStrip can be added to the form by dragging a `StatusStripEx` control from the Toolbox. It can be docked to the bottom of the RibbonControlAdv. 
+1. Create a new Windows Forms application in Visual Studio.
 
-![Creating a StatusStrip through designer](StatusStripEx_images/StatusStripEx_img2.jpeg)
+2. Add the **StatusStripEx** control to an application by dragging it from the toolbox to the design view. The following dependent assemblies will be added automatically:
 
+    * Syncfusion.Grid.Base
+    * Syncfusion.Grid.Windows
+    * Syncfusion.Shared.Base
+    * Syncfusion.Shared.Windows
+    * Syncfusion.Tools.Base
+    * Syncfusion.Tools.Windows
 
-Dock the StatusStrip control to the bottom using Dock property.
+The StatusStripEx can be docked to the bottom of the RibbonControlAdv.
 
-![Docked the StatusStrip to bottom](StatusStripEx_images/StatusStripEx_img3.jpeg)
+![Creating a StatusStripEx through designer](StatusStripEx_images/StatusStripEx_img2.jpeg)
 
-### Adding items to the StatusStrip
+Dock the StatusStripEx control to the bottom using Dock property.
 
-Access the Items property of the control, to open the Items Collection Editor. Use this editor to add customized StatusControl items. The Editor will let you modify the look and feel of the items using the properties provided on it right side.
+![Docked the StatusStripEx to bottom](StatusStripEx_images/StatusStripEx_img3.jpeg)
 
-![Adding items to the StatusStrip](StatusStripEx_images/StatusStripEx_img4.png) 
+### Adding items to the StatusStripEx
 
-N> A shortcut to add the ToolStripStatus Items is through Tasks Window. See Smart Tag options to know more.
+Access the **Items** property of the control to open the Items Collection Editor. Use this editor to add customized StatusControl items. The editor lets you modify the look and feel of the items using the properties provided on its right side.
+
+![Adding items to the StatusStripEx](StatusStripEx_images/StatusStripEx_img4.png)
+
+N> A shortcut to add the ToolStripStatus items is through the Tasks window. See [Smart Tag options](#smart-tag-options) to know more.
 
 ### Through code
 
-StatusStrip can be created programmatically using the code below. This code snippet adds a ToolStripStatus Label to the StatusStrip control.
+The following steps describe how to create a StatusStripEx control programmatically:
+
+1. Create a C# or VB application via Visual Studio.
+
+2. Add the following assembly references to the project:
+
+    * Syncfusion.Grid.Base
+    * Syncfusion.Grid.Windows
+    * Syncfusion.Shared.Base
+    * Syncfusion.Shared.Windows
+    * Syncfusion.Tools.Base
+    * Syncfusion.Tools.Windows
+
+3. Include the required namespace.
 
 {% tabs %}
 {% highlight c# %}
 
 using Syncfusion.Windows.Forms.Tools;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Imports Syncfusion.Windows.Forms.Tools
+
+{% endhighlight %}
+{% endtabs %}
+
+4. Create an instance of the StatusStripEx control and add it to **Form1**. This code snippet adds a ToolStripStatusLabel to the StatusStripEx control.
+
+{% tabs %}
+{% highlight c# %}
 
 //Declaring the StatusStripEx and ToolStripStatusLabel
 private Syncfusion.Windows.Forms.Tools.StatusStripEx statusStripEx1;
@@ -77,96 +126,132 @@ Me.toolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
 Me.statusStripEx1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.toolStripStatusLabel1}) 
 Me.Controls.Add(Me.statusStripEx1)
 
-'Docking the StatusStripEx to Bottom'
+'Docking the StatusStripEx to Bottom
 Me.statusStripEx1.Dock = Syncfusion.Windows.Forms.Tools.DockStyleEx.Bottom
 
 {% endhighlight %}
 {% endtabs %}
 
-## StatusStrip Items
+## StatusStripEx Items
 
-The `StatusStripEx` control has two types of items.
+The `StatusStripEx` control has two types of items:
 
 * StatusControl items
-
 * Notification items
 
 ### StatusControl items
 
-The StatusControl items is placed to right side of the StatusStrip when added. The StatusControl items are listed below,
-	
+StatusControl items are placed on the right side of the StatusStripEx when added. The available StatusControl items are listed below:
+
 * StatusLabel
 * ProgressBar
 * DropDownButton
 * SplitButton
 
-### Notification items 
+### Notification items
 
-The Notification items is placed to left side of the StatusStrip when added. The Notification items are listed below,
+Notification items are placed on the left side of the StatusStripEx when added. The available Notification items are listed below:
 
 * StatusStripLabel
 * StatusStripProgressBar
 * StatusStripDropDownButton
 * StatusStripSplitButton
 
-N> StatusControl items and Notification items are same type of items. For example, If you select StatusStripLabel, it will be added to the left side of StatusStrip. Similarly, if you select StatusLabel, it will be added to the right side of StatusStrip.
+N> StatusControl items and Notification items are the same types of items. For example, if you select **StatusStripLabel**, it is added to the left side of the StatusStripEx. Similarly, if you select **StatusLabel**, it is added to the right side of the StatusStripEx.
 
 ## Smart tag options
 
-Clicking the Smart Tag of the StatusStrip, displays the below Tasks window. This window lets you add ToolStripStatus Items.
+Clicking the Smart Tag of the StatusStripEx displays the following Tasks window. This window lets you add ToolStripStatus items.
 
-![Smart tag options available in StatusStrip](StatusStripEx_images/StatusStripEx_img6.jpeg)
+![Smart tag options available in StatusStripEx](StatusStripEx_images/StatusStripEx_img6.jpeg)
 
-The options are,
+The available options are:
 
-* Dock - Provides docking options for StatusStrip control.
+* **Dock** - Provides docking options for the StatusStripEx control.
 
 ### StatusControl items
 
 <table>
+<tr>
 <th>Methods</th>
 <th>Description</th>
-<tr><td>Add StatusLabel</td><td>Represents that adds a status label item.</td></tr>
-<tr><td>Add ProgressBar</td><td>Represents that adds a ProgressBar item.</td></tr>
-<tr><td>Add DropDownButton</td><td>Represents that adds a dropdown button item.</td></tr>
-<tr><td>Add SplitButton</td><td>Represents that adds a split button item.</td></tr>
-<tr><td>Add PanelItem</td><td>Represents that adds a Panel item.</td></tr>
-<tr><td>Add TrackBarItem</td><td>Represents that adds a TrackBar item.</td></tr>
+</tr>
+<tr>
+<td>Add StatusLabel</td>
+<td>Adds a status label item.</td>
+</tr>
+<tr>
+<td>Add ProgressBar</td>
+<td>Adds a ProgressBar item.</td>
+</tr>
+<tr>
+<td>Add DropDownButton</td>
+<td>Adds a DropDownButton item.</td>
+</tr>
+<tr>
+<td>Add SplitButton</td>
+<td>Adds a SplitButton item.</td>
+</tr>
+<tr>
+<td>Add PanelItem</td>
+<td>Adds a Panel item.</td>
+</tr>
+<tr>
+<td>Add TrackBarItem</td>
+<td>Adds a TrackBar item.</td>
+</tr>
 </table>
 
-
-### Notifications items
+### Notification items
 
 <table>
+<tr>
 <th>Methods</th>
 <th>Description</th>
-<tr><td>Add StatusStripButton</td><td>Represents that adds a Button item.</td></tr>
-<tr><td>Add StatusStripLabel</td><td>Represents that adds status strip label item.</td></tr>
-<tr><td>Add StatusStrip ProgressBar</td><td>Represents that adds progressbar to the status bar</td></tr>
-<tr><td>Add StatusStrip DropDownButton</td><td>Represents that adds dropdown button to the status bar.</td></tr>
-<tr><td>Add StatusStrip SplitButton</td><td>Represents that adds split button to the status bar.</td></tr>
-<tr><td>Add StatusStrip PanelItem</td><td>Represents that adds panel item to the status bar.</td></tr>
+</tr>
+<tr>
+<td>Add StatusStripButton</td>
+<td>Adds a StatusStripButton item.</td>
+</tr>
+<tr>
+<td>Add StatusStripLabel</td>
+<td>Adds a StatusStripLabel item.</td>
+</tr>
+<tr>
+<td>Add StatusStripProgressBar</td>
+<td>Adds a ProgressBar item to the status bar.</td>
+</tr>
+<tr>
+<td>Add StatusStripDropDownButton</td>
+<td>Adds a DropDownButton item to the status bar.</td>
+</tr>
+<tr>
+<td>Add StatusStripSplitButton</td>
+<td>Adds a SplitButton item to the status bar.</td>
+</tr>
+<tr>
+<td>Add StatusStripPanelItem</td>
+<td>Adds a Panel item to the status bar.</td>
+</tr>
 </table>
-
 
 ## SizingGrip settings
 
-The StatusStrip control has a sizing grip at its bottom right corner. This sizing grip can be shown or hidden using SizingGrip property. The below properties controls the appearance of the sizing grip.
-
+The StatusStripEx control has a sizing grip at its bottom-right corner. This sizing grip can be shown or hidden using the **SizingGrip** property. The following properties control the appearance of the sizing grip.
 
 <table>
 <tr>
-<th>
-Property</th><th>
-Description</th></tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
 <tr>
-<td>
-GripStyle</td><td>
-Specifies the style of the sizing grip.</td></tr>
+<td>GripStyle</td>
+<td>Specifies the style of the sizing grip.</td>
+</tr>
 <tr>
-<td>
-GripMargin</td><td>
-Gets or sets the margin for the sizing grip.</td></tr>
+<td>GripMargin</td>
+<td>Gets or sets the margin for the sizing grip.</td>
+</tr>
 </table>
 
 {% tabs %}
@@ -187,11 +272,9 @@ Me.statusStripEx1.GripMargin = New Padding(5)
 {% endhighlight %}
 {% endtabs %}
 
-## ColorSchemes for StatusStrip
+## ColorSchemes for StatusStripEx
 
-StatusStrip supports all the three color schemes, i.e., Silver, Blue and Black schemes of Office2007. It can be changed using OfficeColorScheme property.
-
-Tooltips
+StatusStripEx supports all three color schemes of Office2007: Silver, Blue, and Black. The scheme can be changed using the **OfficeColorScheme** property.
 
 {% tabs %}
 {% highlight c# %}
@@ -213,12 +296,11 @@ Me.statusStripEx1.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx
 
 ![Black color scheme for WindowsForms Status Strip](statusstripex_images/windowsforms-status-strip-black-color-scheme.jpeg)
 
-
 ### Visual style
 
-StatusStrip control supports Office2016 Visual styles such as Office2016Colorful,Office2016White,Office2016Black and Office2016DarkGray.
+StatusStripEx control supports Office2016 visual styles such as `Office2016Colorful`, `Office2016White`, `Office2016Black`, and `Office2016DarkGray`.
 
-//Sample code for setting "Office2016 Colorful" style for StatusStripEx
+The following code sample demonstrates how to set the "Office2016 Colorful" style for StatusStripEx.
 
 {% tabs %}
 {% highlight c# %}
@@ -234,12 +316,11 @@ Me.statusStripEx1.VisualStyle = Syncfusion.Windows.Forms.Tools.StatusStripExStyl
 {% endhighlight %}
 {% endtabs %}
 
-![Visual style for StatusStrip](StatusStripEx_images/StatusStripEx_img11.png)
-
+![Visual style for StatusStripEx](StatusStripEx_images/StatusStripEx_img11.png)
 
 ### Custom colors
 
-We can also apply custom colors to the StatusStrip by setting OfficeColorScheme to "Managed" and specifying the custom color through the ApplyManagedColors method as follows.
+You can also apply custom colors to the StatusStripEx by setting **OfficeColorScheme** to "Managed" and specifying the custom color through the **ApplyManagedColors** method as follows.
 
 {% tabs %}
 {% highlight c# %}
@@ -259,9 +340,9 @@ Office2007Colors.ApplyManagedColors(Me, Color.DarkGreen)
 
 ![Custom colors for WindowsForms Status Strip](statusstripex_images/windowsforms-status-strip-custom-color.jpeg)
 
-## Custom context Menu
+## Custom context menu
 
-It is possible to customize the status bar context menu that displays in StatusStrip, to look like Word2007. This can be done by setting StatusString property of NotificationItems like StatusStrip Button, StatusStripLabel, so on.
+It is possible to customize the status bar context menu that displays in StatusStripEx to look like Word2007. This can be done by setting the **StatusString** property of Notification items such as StatusStripButton, StatusStripLabel, and so on.
 
 {% tabs %}
 {% highlight c# %}
