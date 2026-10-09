@@ -30,7 +30,16 @@ To create a NavigationView control, follow the given steps.
 
 To create a NavigationView control programmatically, follow the given steps.
 
-3. Include the Tools Windows namespace to the .cs/.vb file.
+1. Add the following required assembly references to the project:
+
+    * Syncfusion.Grid.Base.dll
+    * Syncfusion.Grid.Windows.dll
+    * Syncfusion.Shared.Base.dll
+    * Syncfusion.Shared.Windows.dll
+    * Syncfusion.Tools.Base.dll
+    * Syncfusion.Tools.Windows.dll
+
+2. Include the `Syncfusion.Windows.Forms.Tools` namespace to the .cs/.vb file.
 
     {% tabs %}
 
@@ -48,7 +57,7 @@ To create a NavigationView control programmatically, follow the given steps.
 
 	 {% endtabs %}
 
-4. Create an instance of the NavigationView control and add Parent Bars and Child Bars to it.
+3. Create an instance of the NavigationView control and add Parent Bars and Child Bars to it. The example below also uses a `System.Windows.Forms.ImageList` named `imageList1` initialized with the desired images.
 
   	{% tabs %}
 

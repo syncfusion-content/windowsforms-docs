@@ -8,13 +8,15 @@ documentation: ug
 ---
 # Getting Started with Windows Forms MaskedTextBox (MaskedEditBox)
 
-This section briefly describes how to create a new Windows Forms project in Visual Studio and how to add the [WinForms MaskedTextBox](https://www.syncfusion.com/winforms-ui-controls/maskedtextbox) control with its basic functionalities.
+This section briefly describes how to create a new Windows Forms project in Visual Studio and how to add the [WinForms MaskedTextBox](https://www.syncfusion.com/winforms-ui-controls/maskedtextbox) control and use its basic functionalities.
 
 ## Assembly deployment
 
 Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#maskededitbox) section to get the list of assemblies or details of NuGet package that needs to be added as a reference to use the control in any application.
 
 Refer to this [documentation](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to find more details about installing NuGet packages in a Windows Forms application.
+
+To generate the license validated application, refer to the [licensing](https://help.syncfusion.com/windowsforms/licensing/overview) documentation.
 
 ## Adding the MaskedEditBox control via designer
 
@@ -96,7 +98,8 @@ Me.Controls.Add(Me.maskedEditBox1)
 
 You can set some common symbols for the [Mask](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html#Syncfusion_Windows_Forms_Tools_MaskedEditBox_Mask) property. For example, the symbols are set as "##:##".
 
-N> The **#** symbol allows numeric entry only in that position.
+>**NOTE**:
+The **#** symbol allows numeric entry only in that position. The `>` character converts the following characters to uppercase, and `<` converts them to lowercase, until the next case-conversion symbol or end of the mask.
 
 Examples of some common masks are,
 
@@ -141,7 +144,7 @@ this.maskedEditBox1.Location = new System.Drawing.Point(70, 29);
 
 ' The mask string.
 Me.maskedEditBox1.Mask = ">?<???? ??????"
-Me.maskedEditBox1.Location = New System.Drawing.Point(70, 29);
+Me.maskedEditBox1.Location = New System.Drawing.Point(70, 29)
 
 {% endhighlight %}
 

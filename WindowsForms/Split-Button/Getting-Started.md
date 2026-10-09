@@ -9,13 +9,15 @@ documentation: ug
 
 # Getting Started with Windows Forms SplitButton
 
-This section briefly describes how to create a new Windows Forms project in Visual Studio and add **"SplitButton"** with it's basic functionalities.
+This section briefly describes how to create a new Windows Forms project in Visual Studio and add the SplitButton control with its basic functionalities.
 
 ## Assembly deployment
 
 Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#splitbutton) section to get the list of assemblies or NuGet package details which needs to be added as reference to use the control in any application.
 
-[Check here](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to find more details on how to install nuget packages in Windows Forms application. 
+[Check here](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to find more details on how to install NuGet packages in a Windows Forms application. 
+
+To generate the license validated application, refer to the [licensing](https://help.syncfusion.com/windowsforms/licensing/overview) documentation.
 
 ## Adding a SplitButton control through designer
 
@@ -28,11 +30,11 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
         * Syncfusion.Tools.Base
         * Syncfusion.Tools.Windows
 
-![WindowsForms Split Button drag and drop from toolbox](getting-Started_images/windowsforms-split-button-drag-and-drop-from-toolbox.png)
+![WindowsForms Split Button drag and drop from toolbox](getting-started_images/windowsforms-split-button-drag-and-drop-from-toolbox.png)
 
 ![WindowsForms Split Button dependency assembly reference](getting-started_images/windowsforms-split-button-dependecy-assembly-reference.png)
 
-**Step 2**: Set the desired properties for **"SplitButton"** control using the **"Properties"** dialog window. Similarly you can add the items for the SplitButton dropdown using **"DropDownItem"** property. Here, we have illustrated a simple example, in which we are adding countries names as dropdown items to the control.
+**Step 2**: Set the desired properties for the SplitButton control using the **Properties** dialog window. Similarly, you can add items for the SplitButton dropdown using the **DropDownItem** property. Here, we have illustrated a simple example in which we are adding country names as dropdown items to the control.
 
 ![WindowsForms Split Button properties pane](getting-started_images/windowsforms-split-button-properties-pane.png)
 
@@ -61,7 +63,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 {% highlight C#%}
 
-Using Syncfusion.Windows.Forms.Tools
+using Syncfusion.Windows.Forms.Tools;
 
 {% endhighlight %}
 
@@ -78,7 +80,7 @@ Imports Syncfusion.Windows.Forms.Tools
 ![WindowsForms Split Button adding through code](getting-started_images/windowsforms-split-button-adding-through-code.png)
 
 
-**Step 2**: In Form1.cs, create an instance of **"SplitButton"** control and add in to the form. Also you can customize the SplitButton properties using the following code.
+**Step 2**: In Form1.cs (or Form1.vb), create an instance of the SplitButton control and add it to the form. You can also customize the SplitButton properties using the following code.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -126,7 +128,7 @@ End Sub
 ![WindowsForms Split Button through code](getting-started_images/windowsforms-split-button-through-code.png)
 
 
-### Adding and removing item to dropdown list
+### Adding and removing items in the dropdown list
 
 In SplitButton, we can add or remove items using **Add** and **Remove** methods of the **DropDownItems** **SplitButtonItemsCollection** property. The following code illustrates how to add and remove items in SplitButton.
 
@@ -150,7 +152,7 @@ In SplitButton, we can add or remove items using **Add** and **Remove** methods 
             Splitbutton = new SplitButton();
             SplitButton Splitbutton = new SplitButton();
             Splitbutton.Click += Splitbutton_Click;
-            Splitbutton.Location = new System.Drawing.Point(236, 115);         
+            Splitbutton.Location = new System.Drawing.Point(236, 115);
             Splitbutton.Name = "splitButton1";
             Splitbutton.Size = new System.Drawing.Size(154, 61);
             Splitbutton.Text = "SplitButton";
@@ -207,10 +209,10 @@ In SplitButton, we can add or remove items using **Add** and **Remove** methods 
             this.Controls.Add(Splitbutton);
         }
 
-        private void Splitbutton_Click1(object sender, EventArgs e)
+        private void Splitbutton_Click(object sender, EventArgs e)
         {
             // Removing item from SplitButton DropDown
-            Splitbutton.DropDownItems.Remove(this.toolstripitem2);
+            Splitbutton.DropDownItems.Remove(this.toolStripItem2);
         }   
 }
 
@@ -238,7 +240,6 @@ Public Partial Class Form1
         Splitbutton.Size = New System.Drawing.Size(154, 61)
         Splitbutton.Text = "SplitButton"
         Splitbutton.ThemeName = "Office2019Colorful"
-           
 
         'toolstripitem1   
 
@@ -285,9 +286,9 @@ Public Partial Class Form1
         Me.Controls.Add(Splitbutton)
     End Sub
 
-    Private Sub Splitbutton_Click1(ByVal sender As Object, ByVal e As EventArgs)
+    Private Sub Splitbutton_Click(ByVal sender As Object, ByVal e As EventArgs)
         'Removing item from SplitButton DropDown
-        Splitbutton.DropDownItems.Remove(Me.toolstripitem2)
+        Splitbutton.DropDownItems.Remove(Me.toolStripItem2)
     End Sub
 End Class
 

@@ -7,17 +7,23 @@ control: Navigation View
 documentation: ug
 ---
 
-# Customizable number of Items on Popup in Windows Forms NavigationView
+# Customizable Number of Items on Popup in Windows Forms NavigationView
 
-Navigation View now allows setting the maximum number of items to be displayed on its pop-up and has an option to cancel the pop-up. [BarPopUp](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationView.html) event can be used to achieve this.
+NavigationView allows setting the maximum number of items to be displayed on its pop-up and provides an option to cancel the pop-up. The [BarPopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationView.html) event can be used to achieve this.
+
+The `BarPopupEventArgs` provides the following members:
+
+* **CurrentBar** - Gets the Bar for which the pop-up is being displayed.
+* **Cancel** - Gets or sets a value indicating whether the pop-up should be cancelled.
+* **MaximumItemsToDisplay** - Gets or sets the maximum number of items to display in the pop-up.
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Sets the maximum items to be displayed.
+// Handle the BarPopup event.
 
-Private this.navigationView1.BarPopup += new EventHandler<Syncfusion.Windows.Forms.Tools.BarPopupEventArgs>(navigationView1_BarPopup)
+this.navigationView1.BarPopup += new EventHandler<Syncfusion.Windows.Forms.Tools.BarPopupEventArgs>(navigationView1_BarPopup);
 
 private void navigationView1_BarPopup(object sender, Syncfusion.Windows.Forms.Tools.BarPopupEventArgs e)
 
@@ -53,9 +59,9 @@ e.MaximumItemsToDisplay = 5;
 
 {% highlight VB %}
 
-‘Sets the maximum Items to be displayed.
+' Handle the BarPopup event.
 
-Private Me.navigationView1.BarPopup += New EventHandler(Of Syncfusion.Windows.Forms.Tools.BarPopupEventArgs)(AddressOf navigationView1_BarPopup)
+AddHandler Me.navigationView1.BarPopup, AddressOf navigationView1_BarPopup
 
 Private Sub navigationView1_BarPopup(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Tools.BarPopupEventArgs)
 

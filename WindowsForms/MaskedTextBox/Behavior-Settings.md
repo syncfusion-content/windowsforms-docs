@@ -6,7 +6,7 @@ platform: windowsforms
 control: MaskedEditBox
 documentation: ug
 --- 
-# Behavior Settings in Windows Form MaskedTextBox (MaskedEditBox)
+# Behavior Settings in Windows Forms MaskedTextBox (MaskedEditBox)
 
 The behavior settings of the MaskedEditBox control are discussed below.
 
@@ -55,7 +55,7 @@ Gets / sets the integer version of the PassivePromptCharacter.</td></tr>
 {% highlight C# %}  
 
 this.maskedEditBox1.AllowPrompt = true;
-this.maskedEditBox.PaddingCharacterInt = 0;
+this.maskedEditBox1.PaddingCharacterInt = 0;
 this.maskedEditBox1.PromptCharacterInt = 37;
 this.maskedEditBox1.PassivePromptCharacterInt = 47;
 
@@ -64,7 +64,7 @@ this.maskedEditBox1.PassivePromptCharacterInt = 47;
 {% highlight VB %} 
 
 Me.maskedEditBox1.AllowPrompt = True
-Me.maskedEditBox.PaddingCharacterInt = 0
+Me.maskedEditBox1.PaddingCharacterInt = 0
 Me.maskedEditBox1.PromptCharacterInt = 37
 Me.maskedEditBox1.PassivePromptCharacterInt = 47
 
@@ -72,7 +72,8 @@ Me.maskedEditBox1.PassivePromptCharacterInt = 47
 
 {% endtabs %}
 
-N> We can trim the additional spaces present in the mask by setting the PaddingCharacterInt property to '0'.
+>**NOTE**:
+We can trim the additional spaces present in the mask by setting the `PaddingCharacterInt` property to `0` (zero character).
 
 ### MaxLength
 
@@ -87,7 +88,7 @@ Description</td></tr>
 <tr>
 <td>
 MaxLength</td><td>
-Specifies the maximum number of characters that can be entered into the edit control. The default value is set to '32767'.</td></tr>
+Specifies the maximum number of characters that can be entered into the edit control. The default value is `32767`.</td></tr>
 </table>
 
 {%tabs %}

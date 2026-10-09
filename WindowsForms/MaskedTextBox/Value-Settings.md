@@ -6,7 +6,7 @@ platform: windowsforms
 control: MaskedEditBox
 documentation: ug
 --- 
-# Value Settings in MaskedTextBox (MaskedEditBox)
+# Value Settings in Windows Forms MaskedTextBox (MaskedEditBox)
 
 The value settings of the MaskedEditBox control are discussed below.
 
@@ -42,11 +42,14 @@ this.maskedEditBox1.MaxValue = new decimal(new int[] {100, 0, 0, 0});
 
 {% endhighlight %}
 
-{% highlight VB %} 
+{% highlight VB %}
 
-Me.maskedEditBox1.MinValue = New Decimal(New Integer() {50, 0, 0, 0})
-Me.maskedEditBox1.MaxValue = New Decimal(New Integer() {100, 0, 0, 0})
+Me.maskedEditBox1.MinValue = New Decimal(New Integer() {50, 0, 0, 0})
+Me.maskedEditBox1.MaxValue = New Decimal(New Integer() {100, 0, 0, 0})
 
 {% endhighlight %}
 
 {% endtabs %}
+
+>**NOTE**:
+The `MinValue` and `MaxValue` properties apply to numeric masks only. The example above restricts user input to a value between 50 and 100.
