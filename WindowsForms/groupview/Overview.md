@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Syncfusion® Windows Forms GroupView Control | Syncfusion®
+title: About the Syncfusion® Windows Forms GroupView Control | Syncfusion®
 description: Learn about the features, functionality, and customization options of the Syncfusion® Windows Forms GroupView control.
 platform: WindowsForms
 control: GroupView

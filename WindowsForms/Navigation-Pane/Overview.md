@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Syncfusion® Windows Forms GroupBar Control | Syncfusion®
+title: About the Syncfusion® Windows Forms GroupBar Control | Syncfusion®
 description: Learn about the features, capabilities, and usage of the Syncfusion® Windows Forms GroupBar control.
 platform: WindowsForms
 control: GroupBar
