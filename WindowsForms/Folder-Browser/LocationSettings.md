@@ -15,7 +15,7 @@ The WinForms Folder Browser allows the user to specify the location from which b
 
 * [StartLocation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.FolderBrowser.html#Syncfusion_Windows_Forms_FolderBrowser_StartLocation) - Sets the well-known root folder from which browsing should start (for example, `MyComputer`, `Desktop`, `CustomStartLocation`).
 * [CustomStartLocation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.FolderBrowser.html#Syncfusion_Windows_Forms_FolderBrowser_CustomStartLocation) - Sets the path used when `StartLocation` is set to `CustomStartLocation`.
-* [SelectLocation](https://help.syncfusion.com/cr/windowsforms/Syncfusion/Syncfusion.Windows.Forms.FolderBrowser.html#Syncfusion_Windows_Forms_FolderBrowser_SelectLocation) - Automatically scrolls to and highlights the specified path when the dialog opens.
+* [SelectLocation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.FolderBrowser.html#Syncfusion_Windows_Forms_FolderBrowser_SelectLocation) - Automatically scrolls to and highlights the specified path when the dialog opens.
 * [DirectoryPath](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.FolderBrowser.html#Syncfusion_Windows_Forms_FolderBrowser_DirectoryPath) - Gets the final path selected by the user.
 
 >**Note**: For the [SelectLocation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.FolderBrowser.html#Syncfusion_Windows_Forms_FolderBrowser_SelectLocation) property to take effect, the [StartLocation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.FolderBrowser.html#Syncfusion_Windows_Forms_FolderBrowser_StartLocation) property must be set to `CustomStartLocation`.

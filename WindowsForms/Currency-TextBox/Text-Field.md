@@ -36,7 +36,7 @@ The WinForms Currency TextBox control can be made multiline by setting the [Mult
 
 * [Lines](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.lines?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBoxBase_Lines) - Gets or sets the lines of text in a multiline text box.
 * [WordWrap](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.wordwrap?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBoxBase_WordWrap) - When `true`, lines wrap automatically at the edge of the text box.
-* [ScrollBars](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.scrollbars?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBoxBase_ScrollBars) - Specifies which scroll bars appear (the original docs link to the `WordWrap` API; this property controls scroll bars).
+* [ScrollBars](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.wordwrap?view=netframework-4.7.2) - Specifies which scroll bars appear (the original docs link to the `WordWrap` API; this property controls scroll bars).
 
 {% tabs %}
 {% highlight c# %}

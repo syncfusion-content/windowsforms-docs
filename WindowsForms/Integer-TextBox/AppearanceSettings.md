@@ -93,7 +93,7 @@ The methods associated with the above properties are:
 
 ## Visual style
 
-Please refer to the [TextBoxExt Visual Style](https://help.syncfusion.com/windowsforms/textboxext/appearance) page to set themes for the WinForms Integer TextBox.
+Please refer to the [TextBoxExt Visual Style](https://help.syncfusion.com/windowsforms/textboxext/overview) page to set themes for the WinForms Integer TextBox.
 
 A sample that demonstrates the Foreground Settings of the WinForms Integer TextBox control is available at the following sample installation path:
 

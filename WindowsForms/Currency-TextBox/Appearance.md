@@ -78,4 +78,4 @@ Me.currencyTextBox1.ZeroColor = System.Drawing.Color.DarkOrange
 
 ## Visual Style
 
-Please refer to the [TextBoxExt Visual Style](https://help.syncfusion.com/windowsforms/textboxext/appearance) page to set themes for the WinForms Currency TextBox.
+Please refer to the [TextBoxExt Visual Style](https://help.syncfusion.com/windowsforms/textboxext/overview) page to set themes for the WinForms Currency TextBox.
