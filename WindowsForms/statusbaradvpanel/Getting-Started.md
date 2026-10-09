@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | Windows Forms statusbaradvpanel | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms statusbaradvpanel (StatusBarAdvPanel) control and more details.
+title: Getting Started with Windows Forms StatusBarAdvPanel | Syncfusion®
+description: Learn here about getting started with Syncfusion® Windows Forms StatusBarAdvPanel control and more details.
 platform: WindowsForms
 control: StatusBarAdvPanel
 documentation: ug
 ---
 
-# Getting Started with Windows Forms statusbaradvpanel
+# Getting Started with Windows Forms StatusBarAdvPanel
 
 * [Assembly deployment](#assembly-deployment)
 * [Through designer](#through-designer)
