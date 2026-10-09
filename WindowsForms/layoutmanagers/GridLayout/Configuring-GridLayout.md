@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Configure GridLayout in Windows Forms | Syncfusion®
 description: GridLayout configuration supports rows, columns, spacing, layout participation settings, and rearranging child controls.
@@ -9,7 +9,7 @@ documentation: ug
 
 # Configure GridLayout in Windows Forms LayoutManagers
 
-The configuration settings for `GridLayout` have been given in this section.
+The configuration settings for `GridLayout` are described in this section.
 
 ## Rows and columns
 
@@ -32,7 +32,7 @@ Specifies the number of columns in the grid.</td></tr>
 
 The `Rows` property usually dictates the number of columns (overriding the columns property setting) based on the number of child controls unless the Rows property is set to ‘Null’ or less, so the `Columns` property will dictate the number of rows.
 
-The following code snippet demonstrates how to arrange the child controls in one column and two rows.
+The following code example arranges the child controls in one column and two rows.
 
 {% tabs %}
 
@@ -56,7 +56,7 @@ Me.gridLayout1.Columns = 1
 
 ### HGap and VGap
 
-The horizontal and vertical gaps between the child controls can be set using the following properties.
+The horizontal and vertical gaps between child controls can be set using the following properties.
 
 <table>
 <tr>
@@ -77,17 +77,17 @@ Specifies the vertical spacing between the layout border and the components.</td
 
 {% highlight c# %}
 
-this.gridLayout1.HGap=10;
+this.gridLayout1.HGap = 10;
 
-this.gridLayout1.VGap=10;
+this.gridLayout1.VGap = 10;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Me.gridLayout1.HGap=10
+Me.gridLayout1.HGap = 10
 
-Me.gridLayout1.VGap=10
+Me.gridLayout1.VGap = 10
 
 {% endhighlight %}
 
@@ -97,7 +97,7 @@ Me.gridLayout1.VGap=10
 
 ## Configuring child controls
 
-The following settings can be used to configure the child controls of the GridLayout manager.
+The following settings can be used to configure the child controls of the `GridLayout` manager.
 
 ### ParticipateInLayout
 
@@ -137,13 +137,13 @@ The following code is used to add or remove the control from the GridLayout list
 
 {% highlight c# %}
 
-this.gridLayout1.SetParticipateInLayout(this.button1,false);
+this.gridLayout1.SetParticipateInLayout(this.button1, false);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Me.gridLayout1.SetParticipateInLayout(Me.button1,False)
+Me.gridLayout1.SetParticipateInLayout(Me.button1, False)
 
 {% endhighlight %}
 
@@ -151,7 +151,7 @@ Me.gridLayout1.SetParticipateInLayout(Me.button1,False)
 
 ## Rearranging the controls laid out by GridLayout
 
-The child controls of the GridLayout can be rearranged by dragging and dropping them at design time.
+The child controls of the `GridLayout` can be rearranged by dragging and dropping them at design time.
 
 ![Rearranging the controls of GridLayout in designer by drag and drop](ConfiguringGridLayout_images/ConfiguringGridLayout_img2.jpeg)
 

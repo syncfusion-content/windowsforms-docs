@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Configure Child Controls in Windows Forms GridBagLayout | Syncfusion®
 description: Configure child controls using grid positions, spanning, weights, anchoring, fill behavior, padding, and layout constraints.
@@ -7,19 +7,19 @@ control: GridBagLayout
 documentation: ug
 ---
 
-# Configure Child Controls in Windows Forms LayoutManagers
+# Configure GridBagLayout in Windows Forms LayoutManagers
 
 The `GridBagLayout` is completely configured through the GridBag constraints set for each child component. The number of rows and columns in the virtual grid is also derived from the specified constraints. The constraints for each child component on the GridBagLayout can be specified through designer and programmatically.
 
 ## Through designer
 
-This section explains how to set the `GridBagLayout` constraints to the controls in designer view.
+This section explains how to set `GridBagLayout` constraints for controls in the designer.
 
 ### GridPostX and GridPostY
 
-The primary objective in setting the constraint for a child control is usually to determine in which cell it should be laid out.
+The primary objective in setting a child control constraint is to determine the cell in which it should be laid out.
 
-N> Multiple child controls can occupy a same cell potentially by overlapping each other.
+N> Multiple child controls can occupy the same cell and may overlap each other.
 
 <table>
 <tr>

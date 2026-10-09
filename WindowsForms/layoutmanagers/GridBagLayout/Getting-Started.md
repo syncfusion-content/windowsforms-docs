@@ -43,13 +43,13 @@ The child controls can be added to the layout by dragging it from the toolbox to
 
 ## Through code
 
-To add the control manually in C#, follow the given steps:
+To add the control programmatically, follow these steps:
 
-**Step 1**: Create a C# or VB application through Visual Studio.
+**Step 1**: Create a C# or VB.NET application in Visual Studio.
 
 **Step 2**: Add the following required assembly reference to the project: 
 
-	Syncfusion.Shared.Base.dll
+    Syncfusion.Shared.Base.dll
 
 **Step 3**: Include the required namespace.
 
@@ -57,7 +57,7 @@ To add the control manually in C#, follow the given steps:
 
 {% highlight c# %}
 
-using Syncfusion.Windows.Forms.Tools
+using Syncfusion.Windows.Forms.Tools;
 
 {% endhighlight %}
 
@@ -69,7 +69,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-**Step 4**: Create a `GridBagLayout` control instance, and set `ContainerControl` as form.
+**Step 4**: Create a `GridBagLayout` control instance and set the `ContainerControl` to the form.
 
 {% tabs %}
 
@@ -103,29 +103,29 @@ ButtonAdv buttonAdv1 = new ButtonAdv();
 ButtonAdv buttonAdv2 = new ButtonAdv();
 ButtonAdv buttonAdv3 = new ButtonAdv();
 
-this.buttonAdv1.Text = "buttonAdv1";
-this.buttonAdv2.Text = "buttonAdv2";
-this.buttonAdv3.Text = "buttonAdv3";
+buttonAdv1.Text = "buttonAdv1";
+buttonAdv2.Text = "buttonAdv2";
+buttonAdv3.Text = "buttonAdv3";
 
-this.Controls.Add(this.buttonAdv1);
-this.Controls.Add(this.buttonAdv2);
-this.Controls.Add(this.buttonAdv3);
+this.Controls.Add(buttonAdv1);
+this.Controls.Add(buttonAdv2);
+this.Controls.Add(buttonAdv3);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
 Dim buttonAdv1 As ButtonAdv = New ButtonAdv()
-Dim buttonAdv3 As ButtonAdv = New ButtonAdv()
+Dim buttonAdv2 As ButtonAdv = New ButtonAdv()
 Dim buttonAdv3 As ButtonAdv = New ButtonAdv()
 
-Me.buttonAdv1.Text = "buttonAdv1"
-Me.buttonAdv2.Text = "buttonAdv2"
-Me.buttonAdv3.Text = "buttonAdv3"
+buttonAdv1.Text = "buttonAdv1"
+buttonAdv2.Text = "buttonAdv2"
+buttonAdv3.Text = "buttonAdv3"
 
-Me.Controls.Add(this.buttonAdv1)
-Me.Controls.Add(this.buttonAdv2)
-Me.Controls.Add(this.buttonAdv3)
+Me.Controls.Add(buttonAdv1)
+Me.Controls.Add(buttonAdv2)
+Me.Controls.Add(buttonAdv3)
 
 {% endhighlight %}
 

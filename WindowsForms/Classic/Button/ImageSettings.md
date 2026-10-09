@@ -1,29 +1,29 @@
-﻿---
+---
 layout: post
 title: Image Settings in Windows Forms ButtonAdv | Syncfusion®
 description: Image settings support background images, image lists, alignment options, image indexes, and text-image positioning.
 platform: WindowsForms
-control: Tools	1
+control: ButtonAdv
 documentation: ug
 ---
 # Image Settings in Windows Forms ButtonAdv(Classic)
 
-ButtonAdv supports two types of images. They are,
+`ButtonAdv` supports two image types:
 
 * BackgroundImage
 * Image
 
 ## BackgroundImage
 
-BackgroundImage is the image used as the Background for the control, which is set using the BackgroundImage property. This BackgroundImage can be laid in various manner with the BackgroundImageLayout property.
+`BackgroundImage` is the image used as the background for the control and is set using the `BackgroundImage` property. This image can be laid out in different ways using `BackgroundImageLayout`.
 
  ![Windows Forms Tools Overview Image71](Overview_images/Overview_img71.jpeg)
 
 ## Image
 
-Image that will be displayed on the control.
+This is the image displayed on the control.
 
-![Overview_img73](Overview_images/Overview_img73.jpeg) 
+![Overview_img73](Overview_images/Overview_img73.jpeg)
 
 
 The Images can be added to the ButtonAdv control in two ways. Either Image property can be used or the below properties.
@@ -61,15 +61,15 @@ Sets the text for the ButtonAdv.</td></tr>
 <tr>
 <td>
 TextAlign</td><td>
-Sets the alignment of the text in the control.  The options are,<br/>
+Sets the alignment of the text in the control. The options are:<br/>
 TopLeft,<br/>
 TopCenter,<br/>
-TopRight<br/>
+TopRight,<br/>
 MiddleLeft,<br/>
 MiddleCenter,<br/>
 MiddleRight,<br/>
 BottomLeft,<br/>
-BottomCenter and<br/>
+BottomCenter,<br/>
 BottomRight.</td></tr>
 <tr>
 <td>
