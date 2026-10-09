@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Events in Windows Forms Navigation Pane | Syncfusion®
 description: GroupBar events provide notifications for item selection, renaming, navigation actions, context menus, and custom rendering.
@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Events in Windows Forms Navigation Pane (GroupBar)
 
-The list of events and a detailed explanation about each of them is given in the following sections.
+The list of events supported by the GroupBar control is given below. For detailed information about each event, refer to the linked API reference.
 
 * [GroupBarItemAdded](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_GroupBarItemAdded)
 * [GroupBarItemRemoved](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_GroupBarItemRemoved)

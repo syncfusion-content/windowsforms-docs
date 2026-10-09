@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Interactive Features in Windows Forms GroupView | Syncfusion®
 description: Interactive features support button-view selection, selection highlighting, tooltips, and enhanced user interaction behaviors.
@@ -8,9 +8,9 @@ documentation: ug
 ---
 # Interactive Features in Windows Forms GroupView
 
-User can determine whether the particular GroupView Item is selected or not using the ButtonView and [ClipSelectionBounds](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_ClipSelectionBounds) properties. [ButtonView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_ButtonView) displays the selected GroupView Item in the pressed state.
+[ButtonView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_ButtonView) displays the selected GroupView Item in the pressed state, and [ClipSelectionBounds](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_ClipSelectionBounds) clips the selection highlight to the bounds of the selected GroupView Item, displaying a border around it.
 
-[ButtonView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_ButtonView) can be enabled in the GroupView control at design-time by setting the [SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_SelectedItem) property to integer values which in turn represents the GroupView Item. [ClipSelectionBounds](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_ClipSelectionBounds) displays a white border around the selected GroupView Item.
+The selected item can be specified at design-time or run-time by setting the [SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_SelectedItem) property to integer values which in turn represents the GroupView Item.
 
 {% tabs %}
 
@@ -41,7 +41,7 @@ Me.groupView1.ClipSelectionBounds = True
  
 ## ToolTips
 
-The [ToolTipText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupViewItem.html#Syncfusion_Windows_Forms_Tools_GroupViewItem_ToolTipText) property of the GroupView control can be used to set the text of the tooltip. The [ShowToolTips](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_ShowToolTips) property must be set to `true` in order to make the tooltip visible.
+The [ToolTipText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupViewItem.html#Syncfusion_Windows_Forms_Tools_GroupViewItem_ToolTipText) property of the GroupView Item can be used to set the text of the tooltip. The [ShowToolTips](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_ShowToolTips) property must be set to `true` in order to make the tooltip visible.
 
 {% tabs %}
 

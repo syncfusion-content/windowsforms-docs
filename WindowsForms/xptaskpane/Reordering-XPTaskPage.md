@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Reordering XPTaskPage in Windows Forms XPTaskPane | Syncfusion®
 description: Reordering XPTaskPage explains page sequencing, navigation order, and managing next and previous pages at design time and runtime.
@@ -7,9 +7,9 @@ control: XPTaskPane
 documentation: ug
 ---
 
-# Reordering-XPTaskPage in Windows Forms XPTaskPane
+# Reordering XPTaskPage in Windows Forms XPTaskPane
 
-When the end user adds a page to the XPTaskPane control, the order of the page is decided, as the page is added. They can be reordered using any one of the below methods in the designer.
+When the end user adds a page to the XPTaskPane control, the order of the page is decided as the page is added. They can be reordered using any one of the below methods in the designer.
 
 * Through XPTaskPage Collection Editor.
 
@@ -33,9 +33,9 @@ When the end user adds a page to the XPTaskPane control, the order of the page i
 
 ## Page order at RunTime
 
-XPTaskPage allows you to set the next or the previous page to the currently selected page through the NextPage and PreviousPage properties.
+XPTaskPage allows you to set the next or the previous page to the currently selected page through the NextPage and PreviousPage properties. In this example, `xpTaskPage1`, `xpTaskPage2`, and `xpTaskPage3` refer to the pages already added to the XPTaskPane as shown in the [Getting Started](https://help.syncfusion.com/windowsforms/xptaskpane/creating-a-simple-xptaskpane) documentation.
 
-Property table
+**Property table**
 
 <table>
 <tr>
@@ -45,15 +45,16 @@ Description</th></tr>
 <tr>
 <td>
 NextPage</td><td>
-It sets the next page for XP TaskPane.</td></tr>
+It sets the next page for the XPTaskPane.</td></tr>
 <tr>
 <td>
 PreviousPage</td><td>
-It sets the previous page for XP TaskPane.</td></tr>
+It sets the previous page for the XPTaskPane.</td></tr>
 </table>
 
 
-N> The TaskPane follows this order at run time.
+>**NOTE**:
+The TaskPane follows this order at run time.
 
 {% tabs %}
 

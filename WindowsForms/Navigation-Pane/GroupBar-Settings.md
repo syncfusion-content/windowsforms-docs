@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: GroupBar Settings in Windows Forms | Syncfusion®
 description: GroupBar settings support integrated scrolling, stacked navigation panes, collapse options, and navigation pane customization.
@@ -49,7 +49,7 @@ The following are the properties available for GroupBar Items when the GroupBar 
 
 {% highlight C# %}  
 
-// StackeMode set to true.
+// StackedMode set to true.
 
 this.groupBarItem1.InNavigationPane = true;
 
@@ -62,17 +62,20 @@ this.groupBarItem1.NavigationPaneImage = ((System.Drawing.Image)(resources.GetOb
 
 {% highlight VB %}
 
-' StackeMode set to true.
+' StackedMode set to true.
 
 Me.groupBarItem1.InNavigationPane = True
 
-Me.groupBarItem1.NavigationPaneIcon = DirectCast((Resources.GetObject("groupBarItem1.NavigationPaneIcon")), System.Drawing.Icon)
+Me.groupBarItem1.NavigationPaneIcon = DirectCast((resources.GetObject("groupBarItem1.NavigationPaneIcon")), System.Drawing.Icon)
 
-Me.groupBarItem1.NavigationPaneImage = DirectCast((Resources.GetObject("groupBarItem1.NavigationPaneImage")), System.Drawing.Image)
+Me.groupBarItem1.NavigationPaneImage = DirectCast((resources.GetObject("groupBarItem1.NavigationPaneImage")), System.Drawing.Image)
 
 {% endhighlight %}
 
 {% endtabs %}
+
+>**NOTE**:
+The `resources` variable refers to a `System.ComponentModel.ComponentResourceManager` instance used to load images and icons embedded in the application's resources. Alternatively, you can load them directly using `System.Drawing.Image.FromFile` or `System.Drawing.Icon.FromHandle`.
 
 If you want to display an icon or image for the GroupBar Item displayed in the GroupBar's navigation pane, set the [InNavigationPane](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBarItem.html#Syncfusion_Windows_Forms_Tools_GroupBarItem_InNavigationPane) property to `true` and associate icons or images with the [NavigationPaneIcon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBarItem.html#Syncfusion_Windows_Forms_Tools_GroupBarItem_NavigationPaneIcon) and [NavigationPaneImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBarItem.html#Syncfusion_Windows_Forms_Tools_GroupBarItem_NavigationPaneImage) 
 properties respectively.
@@ -80,12 +83,13 @@ properties respectively.
  ![Stacked group bar](Overview_images/Overview_img12.jpeg) 
 
 
-Stacked GroupBar Item automatically shows the Chevron, which can be made invisible by setting the [ShowChevron](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_ShowChevron) property to `false`.
+Stacked GroupBar Item automatically shows the Chevron, which can be made invisible by setting the [ShowChevron](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_ShowChevron) property to `false`. The default value of `ShowChevron` is `true`.
 
 ![Navigation buttons](Overview_images/Overview_img13.jpeg)
 
 
-N> You should set [LargeImageMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBarItem.html#Syncfusion_Windows_Forms_Tools_GroupBarItem_LargeImageMode) of GroupBarItem to `true` to display the item images in the GroupBar's navigation pane.
+>**NOTE**:
+You should set [LargeImageMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBarItem.html#Syncfusion_Windows_Forms_Tools_GroupBarItem_LargeImageMode) of GroupBarItem to `true` to display the item images in the GroupBar's navigation pane.
 
 ### Navigation pane
 
@@ -96,7 +100,7 @@ You can set the navigation pane button width and height by using [NavigationPane
 {% highlight C# %}  
 
 
-// StackeMode set to true.
+// StackedMode set to true.
 
 this.groupBar1.NavigationPaneButtonWidth = 25;
 
@@ -107,7 +111,7 @@ this.groupBar1.NavigationPaneHeight = 35;
 
 {% highlight VB %} 
 
-' StackeMode set to true.
+' StackedMode set to true.
 
 Me.groupBar1.NavigationPaneButtonWidth = 25
 
@@ -117,7 +121,7 @@ Me.groupBar1.NavigationPaneHeight = 35
 
 {% endtabs %}
 
-The Navigation Pane is displayed when the GroupBar is in the Stacked Mode. It's height and width can be adjusted by setting the [NavigationPaneButtonWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_NavigationPaneButtonWidth) and [NavigationPaneHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_NavigationPaneHeight) properties to integer values.
+The Navigation Pane is displayed when the GroupBar is in the Stacked Mode. It's height and width can be adjusted by setting the [NavigationPaneButtonWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_NavigationPaneButtonWidth) and [NavigationPaneHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_NavigationPaneHeight) properties to integer values. The default values of `NavigationPaneButtonWidth` and `NavigationPaneHeight` are `0` and `-1` respectively.
 
  ![Navigation pane](Overview_images/Overview_img15.jpeg)
  
@@ -125,9 +129,10 @@ The Navigation Pane is displayed when the GroupBar is in the Stacked Mode. It's 
  
 ## Collapse/expand settings
 
-This section discusses settings of a groupbar in its collapsed state.
+This section discusses settings of the GroupBar in its collapsed state. The default value of `AllowCollapse` is `true`, `Collapsed` is `false`, and `CollapsedWidth` is `0`.
 
-N> [AllowCollapse](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_AllowCollapse) property should be set to `true` to effect the below settings.
+>**NOTE**:
+[AllowCollapse](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_AllowCollapse) property should be set to `true` to effect the below settings.
  
 * [Collapsed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_Collapsed)
 * [CollapsedText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_CollapsedText)
@@ -157,7 +162,7 @@ Me.groupBar1.Collapsed = True
 
 Me.groupBar1.CollapsedText = "Navigation Pane"
 
-this.groupBar1.CollapsedWidth = 45;
+Me.groupBar1.CollapsedWidth = 45
 
 {% endhighlight %}
 
