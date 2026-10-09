@@ -22,4 +22,4 @@ Me.folderBrowser1.Description = "Recent Documents"
 {% endhighlight %}
 {% endtabs %}
 
-![Folder Browser dialog showing the custom description text "Recent Documents"](Overview_images/Overview_img412.jpeg)
+![Folder Browser dialog with custom description text](Overview_images/Overview_img412.jpeg)

@@ -84,7 +84,7 @@ Me.integerTextBox1.AllowNull = True
 {% endhighlight %}
 {% endtabs %}
 
-![WinForms Integer TextBox with the NullString "Null Value" displayed when the value is null](Overview_images/Overview_img444.png)
+![Integer TextBox displaying Null Value](Overview_images/Overview_img444.png)
 
 ## Min and max value settings
 

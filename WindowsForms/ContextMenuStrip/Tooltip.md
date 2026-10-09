@@ -63,4 +63,4 @@ Me.toolStripComboBox1.AutoToolTip = True
 {% endhighlight %}
 {% endtabs %}
 
-![Auto tooltip displaying the menu item's text on hover](Tooltip_Images/Tooltip2.png)
+![Auto tooltip displaying menu text on hover](Tooltip_Images/Tooltip2.png)

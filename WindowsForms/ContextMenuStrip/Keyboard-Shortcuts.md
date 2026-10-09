@@ -35,7 +35,7 @@ Me.toolStripMenuItem1.ShortcutKeys = (CType((System.Windows.Forms.Keys.Control O
 {% endhighlight %}
 {% endtabs %}
 
-![Shortcut key (Ctrl+N) displayed beside the menu item](Shortcut_Images/Shortcut.png)
+![Shortcut key displayed beside the menu item](Shortcut_Images/Shortcut.png)
 
 **ShortcutKeyDisplayString**: User can also specify custom text in place of the keyboard shortcuts region using the [`ShortcutKeyDisplayString`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripmenuitem.shortcutkeydisplaystring?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripMenuItem_ShortcutKeyDisplayString) property. When `ShortcutKeyDisplayString` is set, it takes precedence over the text that would otherwise be derived from the `ShortcutKeys` value.
 

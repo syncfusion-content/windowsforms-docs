@@ -753,7 +753,7 @@ Me.flowLayout1.AutoHeight = True
 
 The AutoLabel control is a label-derived control that lets you pair a label with any other control. Once paired, the AutoLabel will be automatically repositioned as the labeled control's position changes.
 
-![WinForms AutoLabel control repositioned automatically based on the labeled control's resize](FlowLayout_images/FlowLayout_img20.jpeg)
+![WinForms AutoLabel repositioned when associated control is resized](FlowLayout_images/FlowLayout_img20.jpeg)
 
 The AutoLabel control can be positioned relative to the top, left, bottom, or right of the labeled control. It can also be positioned at a custom distance from the labeled control specified via its `DX` and `DY` properties. When using relative positioning, you can also specify the gap between the label and the control.
 

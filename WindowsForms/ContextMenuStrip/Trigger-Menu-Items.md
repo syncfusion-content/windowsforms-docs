@@ -62,6 +62,6 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Context Menu Strip showing a clicked menu item's action](Trigger_Images/Trigger.png)
+![Context Menu Strip showing menu item action](Trigger_Images/Trigger.png)
 
 

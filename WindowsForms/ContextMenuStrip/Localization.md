@@ -44,4 +44,4 @@ Application.Run(new Form1());
 
 **French Culture**
 
-![Context Menu Strip with French (fr-FR) localized text](Localization_Images/FR.png)
+![Context Menu Strip with French localized text](Localization_Images/FR.png)

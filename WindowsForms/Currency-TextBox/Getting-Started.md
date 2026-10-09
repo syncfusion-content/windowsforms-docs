@@ -102,7 +102,7 @@ Me.currencyTextBox1.CurrencySymbol = "€"
 {% endhighlight %}
 {% endtabs %}
 
-![WinForms Currency TextBox showing the custom Euro currency symbol](Overview_images/wf-currency-text-box-control-currency-symbol.png)
+![WinForms Currency TextBox showing the custom Euro currency symbol](Overview_images/wf-currency-text-box-control-currency-sympol.png)
 
 ## Number format
 
