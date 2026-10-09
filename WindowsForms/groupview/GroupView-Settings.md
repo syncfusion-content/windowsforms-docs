@@ -12,7 +12,7 @@ This section discusses the various settings that can be applied to define the lo
 
 ## Appearance settings
 
-The following table describes the properties that enhance the appearance of the GroupView control.
+The following properties enhance the appearance of the GroupView control. The default value of `FlatLook` is `false` and the default `BorderStyle` is `Fixed3D`.
 
 * [FlatLook](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_FlatLook)
 * [BorderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_BorderStyle)
@@ -51,7 +51,7 @@ We can specify the border style for the GroupView control using the [BorderStyle
 
 ## Behavior settings
 
-This section discusses the properties that determine the behavior of the GroupView control.
+This section discusses the properties that determine the behavior of the GroupView control. The default values of `AllowDragDrop` and `AllowDragAnyObject` are `false`.
 
 ### Drag-and-drop effect
 
@@ -110,20 +110,22 @@ Me.groupView1.ItemYSpacing = 10
 
 {% endtabs %}
 
+ {% endtabs %}
+
  ![Spacing](Overview_images/Overview_img58.jpeg) 
  
- GroupBar with ItemXSpacing = "5" and ItemYSpacing = '"10"
+ GroupView with ItemXSpacing = "5" and ItemYSpacing = "10"
  {:.caption}
  
 ## Scroll settings
 
-We can specify scrolling for the GroupBar control to view the set of GroupView Items back and forth. This can be achieved by setting the [IntegratedScrolling](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_IntegratedScrolling) property to `true`.
+We can specify scrolling for the GroupView control to view the set of GroupView Items back and forth. This can be achieved by setting the [IntegratedScrolling](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_IntegratedScrolling) property to `true`. The default value of this property is `false`.
 
 {% tabs %}
 
 {% highlight C# %}  
 
-this.groupView2.IntegratedScrolling = False;
+this.groupView1.IntegratedScrolling = true;
 
 {% endhighlight %}
 
@@ -131,7 +133,7 @@ this.groupView2.IntegratedScrolling = False;
 
 {% highlight VB %}
 
-Me.groupView1.IntegratedScrolling = False
+Me.groupView1.IntegratedScrolling = True
 
 {% endhighlight %}
 

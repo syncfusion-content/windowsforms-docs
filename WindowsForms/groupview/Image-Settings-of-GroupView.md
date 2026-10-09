@@ -13,7 +13,8 @@ This section describes the image options available for GroupView.
 To add images to the GroupView, ImageList control must be added to the form with images. ImageList control containing large or small images can be set using the properties given below.
 
 
-N> If the application requirements deem that the GroupView will always display the same-sized image, then it is sufficient to assign just one ImageList. For the VS.NET toolbox interface, the GroupView will use only a single 16*16-sized small image list.
+>**NOTE**:
+If the application requirements deem that the GroupView will always display the same-sized image, then it is sufficient to assign just one ImageList. For the VS.NET toolbox interface, the GroupView will use only one single 16*16-sized small image list.
 
 * [LargeImageList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_LargeImageList)
 * [SmallImageView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_SmallImageView)
@@ -45,7 +46,8 @@ Me.groupView1.SmallImageList = Me.imageList1
  
  {% endtabs %}
 
-N> Setting Image list component to the above properties will not actually associate the images with the GroupView Item. We need to set the ImageIndex of the images to the GroupView Item through the GroupViewItems Collection editor.
+>**NOTE**:
+Setting an ImageList component to the above properties will not actually associate the images with the GroupView Item. We need to set the ImageIndex of the images to the GroupView Item through the GroupViewItems Collection Editor.
 
  ![Image settings of GroupView](Overview_images/Overview_img79.jpeg) 
 
@@ -87,7 +89,8 @@ The following properties are used to set the image offset for the GroupView Item
 * [SelectedHighlightImageOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_SelectedHighlightImageOffset)
 * [HighlightImageOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_HighlightImageOffset)
 
-N> [HighlightImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_HighlightImage) property must be set to `true` in all the cases.
+>**NOTE**:
+[HighlightImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_HighlightImage) property must be set to `true` in all the cases.
 
 {% tabs %}
 

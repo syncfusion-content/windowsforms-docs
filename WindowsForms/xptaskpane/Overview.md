@@ -9,7 +9,7 @@ documentation: ug
 
 # About Syncfusion® Windows Forms XPTaskPane Control
 
-[XPTaskPane](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskPane.html) is an Microsoft Office XP TaskPane inspired container control helps to host a number of [XPTaskPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskPage.html), which the user can browse using a dropdown menu and the arrow buttons in task pane's header portion. 
+[XPTaskPane](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskPane.html) is a Microsoft Office XP TaskPane inspired container control that helps to host a number of [XPTaskPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskPage.html), which the user can browse using a dropdown menu and the arrow buttons in the task pane's header portion. 
 
 ![Microsoft Office XP TaskPane inspired container](Overview_images/XPtaskPane_img1.png)
 
@@ -19,15 +19,19 @@ documentation: ug
 
 * **User interface properties** - Provides options to create child controls representing the different segments of the XPTaskPane and also exposes them in the designer to let users customize it.
 
-* **Add / Remove pages** - Provides options to add or remove pages either through verbs or through TaskPages property settings.
+* **Add / Remove pages** - Provides options to add or remove pages either through verbs or through TaskPages property settings. For more details, refer to the [Getting Started](https://help.syncfusion.com/windowsforms/xptaskpane/creating-a-simple-xptaskpane) documentation.
 
-* **Navigation** - Provides options to navigate through pages at design-time by selecting Previous page and Next page verbs or using arrow keys in the XPTaskPage Collection Editor.
+* **Navigation** - Provides options to navigate through pages at design-time by selecting Previous page and Next page verbs or using arrow keys in the XPTaskPage Collection Editor. For more details, refer to the [Reordering XPTaskPage](https://help.syncfusion.com/windowsforms/xptaskpane/reordering-xptaskpage) documentation.
 
-* **Page sequencing** - Provides options to reorder the pages through 'Bring to front' and 'Send to back' verbs or by using XPTaskPage Collection Editor.
+* **Page sequencing** - Provides options to reorder the pages through 'Bring to front' and 'Send to back' verbs or by using XPTaskPage Collection Editor. For more details, refer to the [Reordering XPTaskPage](https://help.syncfusion.com/windowsforms/xptaskpane/reordering-xptaskpage) documentation.
 
-* **Visual style** - Support rich set of built-in themes like Office, Metro and much more.
+* **Visual style** - Supports a rich set of built-in themes like Office, Metro and much more. For more details, refer to the [Appearance](https://help.syncfusion.com/windowsforms/xptaskpane/xptaskpane-appearance) documentation.
 
+## See also
 
+* [Header Settings](https://help.syncfusion.com/windowsforms/xptaskpane/header-settings)
+* [Scroll Settings](https://help.syncfusion.com/windowsforms/xptaskpane/scroll-settings)
+* [XPTaskPanePage](https://help.syncfusion.com/windowsforms/xptaskpane/xptaskpanepage)
 
 
 
