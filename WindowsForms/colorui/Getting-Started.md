@@ -92,7 +92,6 @@ Me.Controls.Add(Me.colorUIControl1)
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-   ![ColorUIControl](ColorUI_images/ColorUI_design.png)
 ![WinForms ColorUIControl placed on a form](ColorUI_images/ColorUI_design.png)
 
 ## Select a color and group
