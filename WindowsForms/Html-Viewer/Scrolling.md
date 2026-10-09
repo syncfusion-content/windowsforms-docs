@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scrolling in Windows Forms HTMLUI control | Syncfusion®
-description: Learn about scrollbar behavior and scrolling options in the WinForms HTML Viewer control.
+description: Learn about scrolling behavior and scrollbar customization options in the Syncfusion Windows Forms HTML Viewer control.
 platform: windowsforms
 control: HTMLUI
 documentation: ug

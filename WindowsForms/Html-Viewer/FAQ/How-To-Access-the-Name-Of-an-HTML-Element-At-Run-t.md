@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How To Access the Name Of an HTML Element At Run time | Syncfusion®
-description: Learn how to accessing the name of an HTML element at runtime in the WinForms HTML Viewer control.
+description: Learn how to access the name of an HTML element at runtime using the Syncfusion Windows Forms HTML Viewer control.
 platform: windowsforms
 control: HTML UI
 documentation: ug

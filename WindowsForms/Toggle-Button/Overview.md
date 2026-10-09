@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® Windows Forms ToggleButton Control | Syncfusion®
-description: Learn about the introduction of the Syncfusion Essential Studio Windows Forms ToggleButton control, its key features, configurable toggle states, display modes, and custom renderer support.
+description: Learn about the Syncfusion Windows Forms ToggleButton control, its key features, display modes, and customization options.
 platform: windowsforms
 control: ToggleButton
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Windows Forms CheckBoxAdv | Syncfusion®
-description: Learn how to get started with the Syncfusion Windows Forms CheckBoxAdv control, including assembly deployment, designer and code-based setup, and the CheckState property.
+description: Learn how to get started with the Syncfusion Windows Forms CheckBoxAdv control, including setup, configuration, and state management basics.
 platform: windowsforms
 control: CheckBoxAdv
 documentation: ug

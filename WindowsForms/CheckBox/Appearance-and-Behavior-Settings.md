@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance and Behavior in Windows Forms CheckBoxAdv | Syncfusion®
-description: Learn about appearance and behavior settings in the Syncfusion Windows Forms CheckBoxAdv control, including DrawFocusRectangle, AutoHeight, ReadOnlyMode, and Tristate properties.
+description: Learn about appearance and behavior settings in the Syncfusion Windows Forms CheckBoxAdv control, including focus, sizing, state management, and read-only options.
 platform: windowsforms
 control: CheckBoxAdv
 documentation: ug

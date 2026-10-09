@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Windows Forms ColorPickerUIAdv | Syncfusion®
-description: Learn how to get started with the Syncfusion Windows Forms Color Picker (ColorPickerUIAdv) control, including assembly deployment, designer and code-based setup, and selecting a color at runtime.
+description: Learn how to get started with the Syncfusion Windows Forms ColorPickerUIAdv control, including setup, configuration, and color selection.
 platform: windowsforms
 control: ColorPickerUIAdv
 documentation: ug

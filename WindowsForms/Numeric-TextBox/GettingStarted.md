@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Windows Forms SfNumericTextBox | Syncfusion®
-description: Learn how to get started with the Syncfusion Windows Forms Numeric TextBox (SfNumericTextBox) control, including designer and code-based setup, formatting, watermark, range validation, and custom units.
+description: Learn how to get started with the Syncfusion Windows Forms Numeric TextBox control, including setup, validation, and formatting.
 platform: windowsforms
 control: SfNumericTextBox
 documentation: ug

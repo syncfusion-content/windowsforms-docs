@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DomainUpDownExt Events in Windows Forms DomainUpdownExt | Syncfusion®
-description: Learn about the events supported by the Syncfusion Windows Forms DomainUpdownExt control, including ThemeChanged, SpinOrientationChanged, BorderSidesChanged, BorderColorChanged, and Border3DStyleChanged.
+description: Learn about the events supported by the Syncfusion Windows Forms DomainUpDownExt control and how to respond to appearance and behavior changes.
 platform: windowsforms
 control: DomainUpdownExt
 documentation: ug

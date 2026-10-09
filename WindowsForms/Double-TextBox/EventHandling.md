@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Event Handling in Windows Forms DoubleTextBox | Syncfusion®
-description: Learn about the WinForms DoubleTextBox events, including DoubleValueChanged and a KeyDown handler for incrementing and decrementing the value with the Up and Down keys.
+description: Learn about event handling in the Syncfusion Windows Forms DoubleTextBox control, including value changes and keyboard interactions.
 platform: windowsforms
 control: DoubleTextBox
 documentation: ug

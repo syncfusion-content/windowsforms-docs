@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® Windows Forms ColorPickerButton | Syncfusion®
-description: Learn about the introduction of the Syncfusion Windows Forms ColorPickerButton (Color Picker DropDown) control, its key features, and integration with the ColorUI dropdown.
+description: Learn about the Syncfusion Windows Forms ColorPickerButton control, its key features, color selection capabilities, and ColorUI integration.
 platform: windowsforms
 control: ColorPickerButton
 documentation: ug

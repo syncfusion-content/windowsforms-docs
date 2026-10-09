@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance Settings in Windows Forms DomainUpdownExt | Syncfusion®
-description: Learn about appearance settings in Syncfusion Windows Forms DomainUpdownExt control, including border styles, border sides, themed borders, and back color properties.
+description: Learn about appearance settings in the Syncfusion Windows Forms DomainUpDownExt control, including border customization, themed styling, and color options.
 platform: windowsforms
 control: DomainUpdownExt
 documentation: ug

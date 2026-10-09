@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Features in Windows Forms TrackBarEx | Syncfusion®
-description: Learn about features and customization options in the Syncfusion Windows Forms TrackBarEx control, including button settings, slider styling, orientation, and value configuration.
+description: Learn about the features of the Syncfusion Windows Forms TrackBarEx control, including styling, orientation, and value configuration.
 platform: windowsforms
 control: TrackBarEx
 documentation: ug

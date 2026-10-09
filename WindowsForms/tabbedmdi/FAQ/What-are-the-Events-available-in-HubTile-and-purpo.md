@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events available in Windows Forms HubTile | Syncfusion®
-description: Learn about the events available in the HubTile control used within the Syncfusion Windows Forms TabbedMDI control, such as BeforeTransition and TransitionCompleted.
+description: Learn about the events available in the HubTile control used with the Syncfusion Windows Forms TabbedMDI control.
 platform: windowsforms
 control: TabbedMDIManager
 documentation: ug

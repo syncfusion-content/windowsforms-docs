@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Runtime Selection in Windows Forms ColorPickerUIAdv | Syncfusion®
-description: Learn about runtime selection in the Syncfusion Windows Forms Color Picker (ColorPickerUIAdv) control, including the Automatic button color and the Automatic button height.
+description: Learn about runtime color selection in the Syncfusion Windows Forms ColorPickerUIAdv control, including automatic color options and button settings.
 platform: windowsforms
 control: ColorPickerUIAdv
 documentation: ug

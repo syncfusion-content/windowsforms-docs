@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CheckBoxAdv Settings in Windows Forms CheckBoxAdv | Syncfusion®
-description: Learn about the WinForms CheckBoxAdv settings, including the CheckState and Checked properties, the CheckedInt/CheckedString/IndeterminateInt/IndeterminateString/UncheckedInt/UncheckedString values, and the StringValue/BoolValue/IntValue for data binding.
+description: Learn about CheckBoxAdv settings in WinForms, including check states, value handling, data binding support, and state configuration options.
 platform: windowsforms
 control: CheckBoxAdv
 documentation: ug

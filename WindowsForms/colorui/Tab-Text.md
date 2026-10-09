@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tab Text in Windows Forms ColorUI | Syncfusion®
-description: Learn about tab text customization in the Syncfusion Windows Forms ColorUI control, including setting custom names for the Custom, Standard, System, and User color group tabs.
+description: Learn about customizing tab text in the Syncfusion Windows Forms ColorUI control for different color group categories.
 platform: windowsforms
 control: ColorUI
 documentation: ug

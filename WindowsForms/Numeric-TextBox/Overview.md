@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® Windows Forms SfNumericTextBox Control | Syncfusion®
-description: Learn about the introduction of the Syncfusion Windows Forms Numeric TextBox (SfNumericTextBox) control, its key features, mode options, and comparison with legacy numeric textbox controls.
+description: Learn about the Syncfusion Windows Forms Numeric TextBox control, its key features, input modes, and validation capabilities.
 platform: windowsforms
 control: SfNumericTextBox
 documentation: ug

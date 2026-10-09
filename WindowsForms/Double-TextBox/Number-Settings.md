@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Number Settings in Windows Forms DoubleTextBox | Syncfusion®
-description: Learn about number settings in the Syncfusion Windows Forms DoubleTextBox control, including DoubleValue, NumberDecimalDigits/Separator/Group, NumberNegativePattern, Min/Max value constraints, banner text, culture, and trailing zero hiding.
+description: Learn about number settings in the Syncfusion Windows Forms DoubleTextBox control, including formatting, validation, and culture support.
 platform: windowsforms
 control: DoubleTextBox
 documentation: ug

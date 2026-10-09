@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Image Settings in Windows Forms CheckBoxAdv | Syncfusion®
-description: Learn about image settings in the Syncfusion Windows Forms CheckBoxAdv control, including ImageCheckBox, CheckedImage, UncheckedImage, IndeterminateImage, DisabledImage, and the corresponding MouseOver images.
+description: Learn about image customization in the Syncfusion Windows Forms CheckBoxAdv control, including images for different states and user interactions.
 platform: windowsforms
 control: CheckBoxAdv
 documentation: ug

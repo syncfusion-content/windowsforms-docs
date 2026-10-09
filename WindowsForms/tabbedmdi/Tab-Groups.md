@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tab Groups in Windows Forms TabbedMDI control | Syncfusion®
-description: Learn about tab groups in the Syncfusion Windows Forms TabbedMDI control, how to create and arrange them horizontally or vertically, and how to customize their borders.
+description: Learn about tab groups in the Syncfusion Windows Forms TabbedMDI control, including arrangement and customization options.
 platform: windowsforms
 control: TabbedMDIManager
 documentation: ug

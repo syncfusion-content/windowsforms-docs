@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MHT Formats in Windows Forms HTMLUI | Syncfusion®
-description: Learn about loading and saving MHT (MHTML) format documents in the WinForms HTML Viewer control.
+description: Learn about loading, viewing, and saving MHT documents using the Syncfusion Windows Forms HTML Viewer control.
 platform: windowsforms
 control: HTMLUI
 documentation: ug

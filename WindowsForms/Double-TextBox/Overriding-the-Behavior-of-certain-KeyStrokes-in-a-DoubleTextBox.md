@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overriding Behavior in Windows Forms DoubleTextBox | Syncfusion®
-description: Learn how to override the behavior of certain keystrokes in the Syncfusion Windows Forms DoubleTextBox control by subclassing and overriding the HandleSubtractKey method.
+description: Learn how to customize keystroke behavior in the Syncfusion Windows Forms DoubleTextBox control through method overriding.
 platform: windowsforms
 control: DoubleTextBox
 documentation: ug

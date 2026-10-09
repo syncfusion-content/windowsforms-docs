@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® Windows Forms ColorUI Control | Syncfusion®
-description: Learn about the introduction of the Syncfusion Windows Forms ColorUI control, its key features, the four color groups, and integration with the ColorPickerButton dropdown.
+description: Learn about the Syncfusion Windows Forms ColorUI control, its key features, color groups, and integration capabilities.
 platform: windowsforms
 control: ColorUI
 documentation: ug

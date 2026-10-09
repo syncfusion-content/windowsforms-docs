@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Formatting in Windows Forms SfNumericTextBox | Syncfusion®
-description: Learn about formatting options in the Syncfusion Windows Forms Numeric TextBox (SfNumericTextBox) control, including FormatMode, NumberFormatInfo, hiding trailing zeros, prefix/suffix, and watermark text.
+description: Learn about formatting options in the Syncfusion Windows Forms Numeric TextBox control, including formats, prefixes, and suffixes.
 platform: windowsforms
 control: SfNumericTextBox
 documentation: ug

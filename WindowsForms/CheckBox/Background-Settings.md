@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Background Settings in Windows Forms CheckBoxAdv | Syncfusion®
-description: Learn about background settings in the Syncfusion Windows Forms CheckBoxAdv control, including BackgroundStyle, GradientStart, and GradientEnd properties for gradient backgrounds.
+description: Learn about background customization in the Syncfusion Windows Forms CheckBoxAdv control, including styles, colors, and gradient background settings.
 platform: windowsforms
 control: CheckBoxAdv
 documentation: ug

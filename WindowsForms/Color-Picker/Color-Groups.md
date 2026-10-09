@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Color Groups in Windows Forms ColorPickerUIAdv | Syncfusion®
-description: Learn about color groups in the Syncfusion Windows Forms Color Picker (ColorPickerUIAdv) control, including default and custom groups, color items, and item spacing.
+description: Learn about color groups in the Syncfusion Windows Forms ColorPickerUIAdv control, including built-in groups, custom groups, and color organization options.
 platform: windowsforms
 control: ColorPickerUIAdv
 documentation: ug

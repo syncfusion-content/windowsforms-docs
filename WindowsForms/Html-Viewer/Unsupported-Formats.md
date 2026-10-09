@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Unsupported Formats in Windows Forms HTMLUI | Syncfusion®
-description: Learn about the HTML and CSS features that are not supported by the WinForms HTML Viewer control.
+description: Learn about unsupported HTML and CSS features in the Syncfusion Windows Forms HTML Viewer control and related limitations.
 platform: windowsforms
 control: HTMLUI
 documentation: ug

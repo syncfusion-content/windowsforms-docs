@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in Windows Forms SfNumericTextBox | Syncfusion®
-description: Learn about appearance customization in the Syncfusion Windows Forms Numeric TextBox (SfNumericTextBox) control, including positive, negative, zero, watermark, and border colors.
+description: Learn about appearance customization in the Syncfusion Windows Forms Numeric TextBox control, including colors and visual elements.
 platform: windowsforms
 control: SfNumericTextBox
 documentation: ug

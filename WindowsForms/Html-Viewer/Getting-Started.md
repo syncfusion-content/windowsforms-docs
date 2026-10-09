@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Windows Forms HTMLUI | Syncfusion®
-description: Learn how to get started with the Syncfusion Windows Forms HTML Viewer (HTMLUI) control, including assembly deployment, designer and code-based setup, and loading an HTML file.
+description: Learn how to get started with the Syncfusion Windows Forms HTML Viewer control, including setup and loading HTML content.
 platform: windowsforms
 control: HTMLUI
 documentation: ug

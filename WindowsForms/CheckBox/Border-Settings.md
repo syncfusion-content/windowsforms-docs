@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Border Settings in Windows Forms CheckBoxAdv | Syncfusion®
-description: Learn about border settings in the Syncfusion Windows Forms CheckBoxAdv control, including Border3DStyle, BorderColor, BorderSingle, BorderStyle, and HotBorderColor properties.
+description: Learn about border customization in the Syncfusion Windows Forms CheckBoxAdv control, including styles, colors, and interactive border settings.
 platform: windowsforms
 control: CheckBoxAdv
 documentation: ug

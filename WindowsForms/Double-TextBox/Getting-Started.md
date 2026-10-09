@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Windows Forms DoubleTextBox | Syncfusion®
-description: Learn how to get started with the Syncfusion Windows Forms DoubleTextBox control, including assembly deployment, designer and code-based setup, max/min constraints, and number format customization.
+description: Learn how to get started with the Syncfusion Windows Forms DoubleTextBox control, including setup, value constraints, and formatting.
 platform: windowsforms
 control: DoubleTextBox
 documentation: ug

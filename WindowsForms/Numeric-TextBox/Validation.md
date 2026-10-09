@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Validation in Windows Forms SfNumericTextBox | Syncfusion®
-description: Learn about validation in the Syncfusion Windows Forms Numeric TextBox (SfNumericTextBox) control, including ValidationMode, ValueChangeMode, and LostFocusValidation.
+description: Learn about validation options in the Syncfusion Windows Forms Numeric TextBox control, including validation and value update modes.
 platform: windowsforms
 control: SfNumericTextBox
 documentation: ug

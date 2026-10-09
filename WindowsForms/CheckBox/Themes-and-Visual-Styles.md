@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Themes and Visual Styles in Windows Forms CheckBoxAdv | Syncfusion®
-description: Learn about themes and visual styles in the Syncfusion Windows Forms CheckBoxAdv control, including ThemesEnabled, Style, Office2007ColorScheme, Office2010ColorScheme, and custom color support.
+description: Learn about themes and visual styles in the Syncfusion Windows Forms CheckBoxAdv control, including built-in themes and color customization.
 platform: windowsforms
 control: CheckBoxAdv
 documentation: ug

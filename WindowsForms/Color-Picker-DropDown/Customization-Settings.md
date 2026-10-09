@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in Windows Forms ColorPickerButton | Syncfusion®
-description: Learn about customization settings in the Syncfusion Windows Forms ColorPickerButton (Color Picker DropDown) control, including ColorUI size, color picker appearance, and visual style.
+description: Learn about customization settings in the Syncfusion Windows Forms ColorPickerButton control, including sizing, appearance, and visual styles.
 platform: windowsforms
 control: ColorPickerButton
 documentation: ug

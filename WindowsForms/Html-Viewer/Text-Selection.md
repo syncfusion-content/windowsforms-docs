@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Text Selection in Windows Forms HTMLUI | Syncfusion®
-description: Learn about text selection behavior and customization in the WinForms HTML Viewer control.
+description: Learn about text selection features and customization options available in the Syncfusion Windows Forms HTML Viewer control.
 platform: windowsforms
 control: HTMLUI
 documentation: ug

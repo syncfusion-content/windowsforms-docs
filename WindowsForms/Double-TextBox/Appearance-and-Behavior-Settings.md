@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance and Behavior in Windows Forms DoubleTextBox | Syncfusion®
-description: Learn about appearance and behavior settings for the Syncfusion Windows Forms DoubleTextBox control, including border style, color, visual style, keyboard support, overflow indicator, globalization, and active-when-disabled.
+description: Learn about appearance and behavior settings in the Syncfusion Windows Forms DoubleTextBox control, including styling and keyboard support.
 platform: windowsforms
 control: DoubleTextBox
 documentation: ug

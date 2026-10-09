@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® Windows Forms HTMLUI Control | Syncfusion®
-description: Learn about the introduction of the Syncfusion Windows Forms HTML Viewer (HTMLUI) control, its key features, and its element, bookmark, table, and localization support.
+description: Learn about the Syncfusion Windows Forms HTML Viewer control, its key features, HTML rendering capabilities, and customization support.
 platform: windowsforms
 control: HTMLUI
 documentation: ug

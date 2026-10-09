@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® Windows Forms CheckBoxAdv Control | Syncfusion®
-description: Learn about the Syncfusion Windows Forms CheckBoxAdv control, its advanced features for text, alignment, appearance, behavior, background, border, image, and theme customization, and data binding support.
+description: Learn about the Syncfusion Windows Forms CheckBoxAdv control, its key features, customization options, and data binding capabilities.
 platform: windowsforms
 control: CheckBoxAdv
 documentation: ug

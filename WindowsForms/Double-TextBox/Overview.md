@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® Windows Forms DoubleTextBox Control | Syncfusion®
-description: Learn about the Syncfusion Windows Forms DoubleTextBox control, a text box-derived control for displaying and collecting double data type values with locale-specific formatting.
+description: Learn about the Syncfusion Windows Forms DoubleTextBox control, its features for numeric input, formatting, and validation support.
 platform: windowsforms
 control: DoubleTextBox
 documentation: ug

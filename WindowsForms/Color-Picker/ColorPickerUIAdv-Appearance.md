@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in Windows Forms ColorPickerUIAdv | Syncfusion®
-description: Learn about appearance customization in the Syncfusion Windows Forms Color Picker (ColorPickerUIAdv) control, including visual styles, Office2007 color schemes, custom colors, and border settings.
+description: Learn about appearance customization in the Syncfusion Windows Forms ColorPickerUIAdv control, including themes, colors, and visual styling options.
 platform: windowsforms
 control: ColorPickerUIAdv
 documentation: ug

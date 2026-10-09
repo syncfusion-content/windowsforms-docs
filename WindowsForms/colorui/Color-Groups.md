@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Color Groups in Windows Forms ColorUI | Syncfusion®
-description: Learn about color groups in the Syncfusion Windows Forms ColorUI control, including built-in groups, custom user groups, and the ColorGroups property configuration.
+description: Learn about color groups in the Syncfusion Windows Forms ColorUI control, including built-in groups and custom color collections.
 platform: windowsforms
 control: ColorUI
 documentation: ug
