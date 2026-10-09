@@ -26,7 +26,7 @@ Me.chartControl.ChartArea.AxisSpacing = New SizeF(30, 30)
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Area Axis Spacing in Windows Forms Chart](/Chart-Area_images/chart-area-axis-spacing.png)
+![Chart Area Axis Spacing in Windows Forms Chart](Chart-Area_images/chart-area-axis-spacing.png)
 
 ## Full stack maximum
 
@@ -43,7 +43,7 @@ chartControl.ChartArea.FullStackMax = 80
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Area FullStack Max in Windows Forms Chart](/Chart-Area_images/chart-area-fullstack-max.png)
+![Chart Area FullStack Max in Windows Forms Chart](Chart-Area_images/chart-area-fullstack-max.png)
 
 ## Dividing the chart area
 
@@ -67,7 +67,7 @@ chartControl.ChartArea.DivideArea = True
 {% endhighlight %}
 {% endtabs %}
 
-![Chart DivideArea in Windows Forms Chart](/Chart-Area_images/chart-area-dividearea.png)
+![Chart DivideArea in Windows Forms Chart](Chart-Area_images/chart-area-dividearea.png)
 
 ### Displaying series titles
 
@@ -130,7 +130,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Chart DivideArea bounds in Windows Forms Chart](/Chart-Area_images/chart-divide-area-bounds.png)
+![Chart DivideArea bounds in Windows Forms Chart](Chart-Area_images/chart-divide-area-bounds.png)
 
 ## Retrieving the Axes Associated with a Series
 

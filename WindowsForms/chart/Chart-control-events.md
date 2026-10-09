@@ -35,7 +35,7 @@ The [Region](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Form
 The [ChartRegion](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegion.html) object provides the following properties:
 
 - [Description](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegion.html#Syncfusion_Windows_Forms_Chart_ChartRegion_Description) - Gets the description of the chart region.
-- [Type](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegion.html#Syncfusion_Windows_Forms_Chart_ChartRegion_Type) - Gets the type of chart region, such as a series point, horizontal axis label, vertical axis label, or custom region. It support the following values:
+- [Type](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegion.html#Syncfusion_Windows_Forms_Chart_ChartRegion_Type) - Gets the type of chart region. It support the following values:
   - [Axis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegionType.html#Syncfusion_Windows_Forms_Chart_ChartRegionType_Axis) 
   - [CalloutLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegionType.html#Syncfusion_Windows_Forms_Chart_ChartRegionType_CalloutLabel)
   - [ChartCustom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegionType.html#Syncfusion_Windows_Forms_Chart_ChartRegionType_ChartCustom)
@@ -52,7 +52,7 @@ The [ChartRegion](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows
 
 N> The [SeriesIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegion.html#Syncfusion_Windows_Forms_Chart_ChartRegion_SeriesIndex) and [PointIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegion.html#Syncfusion_Windows_Forms_Chart_ChartRegion_PointIndex) properties are applicable when the region [Type](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegion.html#Syncfusion_Windows_Forms_Chart_ChartRegion_Type) is `SeriesPoint`.
 
-The following code example demonstrates how to handle the `ChartRegionDoubleClick` and `ChartRegionMouseDown` events.
+The following code example demonstrates how to handle the [ChartRegionDoubleClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ChartRegionDoubleClick) and [ChartRegionMouseDown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ChartRegionMouseDown) events.
 
 {% tabs %}
 {% highlight c# %}
@@ -125,7 +125,7 @@ End Sub
 
 The [VisibleRangeChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_VisibleRangeChanged) event is raised when the visible range of the chart changes during zooming.
 
-The following code example demonstrates how to handle the `VisibleRangeChanged` event.
+The following code example demonstrates how to handle the [VisibleRangeChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_VisibleRangeChanged) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -189,7 +189,7 @@ End Sub
 
 The [SeriesIncompatible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_SeriesIncompatible) event is raised when the Chart control detects that one or more series cannot be rendered together because their chart types or configurations are incompatible.
 
-The following code example demonstrates how to handle the `SeriesIncompatible` event.
+The following code example demonstrates how to handle the [SeriesIncompatible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_SeriesIncompatible) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -213,7 +213,7 @@ End Sub
 
 The [LayoutCompleted](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_LayoutCompleted) event is raised when the chart is resized or re-rendered. This event is useful for rendering custom images or positioning custom controls over the chart after the layout is completed.
 
-The following code example demonstrates how to handle the `LayoutCompleted` event.
+The following code example demonstrates how to handle the [LayoutCompleted](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_LayoutCompleted) event.
 
 {% tabs %}
 {% highlight c# %}
