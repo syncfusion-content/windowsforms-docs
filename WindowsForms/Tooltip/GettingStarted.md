@@ -11,7 +11,7 @@ documentation: ug
 
 ## Assembly Deployment
 
-The following list of assemblies should be added as reference to use the SfToolTip component in any application:
+The following list of assemblies (or the equivalent `Syncfusion.SfToolTip.WinForms` NuGet package) should be added as reference to use the SfToolTip component in any application:
 
 <table>
 <tr>
@@ -24,11 +24,31 @@ The following list of assemblies should be added as reference to use the SfToolT
 </tr>
 <tr>
 <td>
-<br/>Syncfusion.Core.WinForms<br/></td><td>
-<br/>Syncfusion.Core.WinForms assembly contains the theme related classes for the Syncfusion<sup>®</sup> controls and basic components like SfScrollFrame, SfButton, SfForm and SfSkinManager.<br/></td></tr>
+Syncfusion.Core.WinForms
+</td>
+<td>
+Contains the theme-related classes for the Syncfusion<sup>®</sup> controls and basic components like SfScrollFrame, SfButton, SfForm, and SfSkinManager.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.SfToolTip.WinForms
+</td>
+<td>
+Contains the SfToolTip, ToolTipInfo, and ToolTipItem classes.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base
+</td>
+<td>
+Contains the shared base classes used by the SfToolTip component.
+</td>
+</tr>
 </table>
 
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sftooltip) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. 
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sftooltip) section to get the full list of assemblies or the NuGet package that needs to be added as reference to use the control in any application.
 
 ## Setting the SfToolTip to a Control
 
@@ -39,8 +59,8 @@ This section describes how to add the `SfToolTip` to a Control.
 #### Setting using Text
 
 1) Drag and drop the `SfToolTip` to the form.
-2) When the `SfToolTip` component is added to a form, an extended property will be added to the properties of the controls in the form.
-3) Provide the ToolTip text in the extended property for text. (ToolTip on SfToolTip1)
+2) When the `SfToolTip` component is added to a form, an extended property (`ToolTip on sfToolTip1`) is added to the Properties window for every control on the form.
+3) Select the target control (e.g., `button1`), then enter the tooltip text in the extended `ToolTip on sfToolTip1` property.
 
 ![Shown the tooltip control addded through designer in winforms tooltip](SfToolTip_images/SfToolTip_img1.jpeg)
 
@@ -51,11 +71,9 @@ This section describes how to add the `SfToolTip` to a Control.
 SfToolTip sfToolTip1 = new SfToolTip(this.components);
 Button button1 = new System.Windows.Forms.Button();
 
-// 
-
+//
 // button1
-
-// 
+//
 this.button1.Location = new System.Drawing.Point(62, 74);
 this.button1.Name = "button1";
 this.button1.Size = new System.Drawing.Size(84, 28);
@@ -83,7 +101,8 @@ The provided ToolTip text will be configured for the control and will be shown w
 
 ![Shown the tooltip editor customize the tooltipitems for the control in winforms tooltip](SfToolTip_images/SfToolTip_img4.jpeg)
 
-5) Add one or more `ToolTipItem` to the collection and customize the `ToolTipItem` if needed. 
+5) Add one or more `ToolTipItem` to the collection and customize the `ToolTipItem` if needed.
+6) Click **OK** in both the collection editor and the `SfToolTip` editor to apply the changes.
 
 ![Shown the more items tooltip collection and customize in winforms tooltip](SfToolTip_images/SfToolTip_img5.jpeg)
 
@@ -97,11 +116,9 @@ ToolTipItem toolTipItem2 = new ToolTipItem();
 SfToolTip sfToolTip1 = new SfToolTip(this.components);
 Button button1 = new System.Windows.Forms.Button();
 
-// 
-
+//
 // button1
-
-// 
+//
 this.button1.Location = new System.Drawing.Point(62, 74);
 this.button1.Name = "button1";
 this.button1.Size = new System.Drawing.Size(84, 28);
@@ -130,8 +147,9 @@ The `SfToolTip` can be set to the control with tooltip text by using the [SetToo
 
 {% tabs %}
 {% highlight c# %}
+// Assumes a Button named button1 already exists on the form.
 SfToolTip sfToolTip1 = new SfToolTip();
-sfToolTip1.SetToolTip(this.button1, " The ToolTip information of the Button control.");
+sfToolTip1.SetToolTip(this.button1, "The ToolTip information of the Button control.");
 
 {% endhighlight %}
 {% endtabs %}
@@ -145,13 +163,12 @@ The `SfToolTip` can be set to the control with set of tooltip information by usi
 
 {% tabs %}
 {% highlight c# %}
+// Assumes a Button named button1 already exists on the form.
 SfToolTip sfToolTip1 = new SfToolTip();
 ToolTipInfo toolTipInfo1 = new ToolTipInfo();
 ToolTipItem toolTipItem1 = new ToolTipItem();
-
 toolTipItem1.Text = "ToolTipItem 1 Text";
 ToolTipItem toolTipItem2 = new ToolTipItem();
-
 toolTipItem2.Text = "ToolTipItem 2 Text";
 toolTipInfo1.Items.AddRange(new ToolTipItem[] { toolTipItem1, toolTipItem2 });
 sfToolTip1.SetToolTipInfo(this.button1, toolTipInfo1);
@@ -205,7 +222,7 @@ private void Button3_Click(object sender, EventArgs e)
 // Shows the ToolTipInfo in  cursor position.
 this.sfToolTip1.Show(toolTipInfo);
 }
-
+The `Show` method has additional overloads that accept a target `Control` and a `Point` to position the tooltip relative to a specific control. See the [Show method](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.SfToolTip.html#Syncfusion_Windows_Forms_SfToolTip_Show_Syncfusion_WinForms_Controls_ToolTipInfo_) for the full list of overloads.
 {% endhighlight %}
 {% endtabs %}
 
@@ -230,7 +247,7 @@ The following properties can be used to set the ToolTip delay time:
 
 ### InitialDelay
 
-The [InitialDelay](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.SfToolTip.html#Syncfusion_Windows_Forms_SfToolTip_InitialDelay) property enables you to shorten or lengthen the time that the `SfToolTip` waits before displaying a ToolTip. Default value is 0.
+The [InitialDelay](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.SfToolTip.html#Syncfusion_Windows_Forms_SfToolTip_InitialDelay) property enables you to shorten or lengthen the time (in milliseconds) that the `SfToolTip` waits before displaying a ToolTip. Default value is 0.
 
 {% tabs %}
 {% highlight c# %}
@@ -243,7 +260,7 @@ sfToolTip1.InitialDelay = 1000;
 
 ### AutoPopDelay
 
-The [AutoPopDelay](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.SfToolTip.html#Syncfusion_Windows_Forms_SfToolTip_AutoPopDelay) property enables you to shorten or lengthen the time duration that the tooltip is displayed when the mouse pointer is on a control. Default value is 5000.
+The [AutoPopDelay](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.SfToolTip.html#Syncfusion_Windows_Forms_SfToolTip_AutoPopDelay) property enables you to shorten or lengthen the duration (in milliseconds) the tooltip is displayed when the mouse pointer is on a control. Default value is 5000.
 
 {% tabs %}
 {% highlight c# %}
