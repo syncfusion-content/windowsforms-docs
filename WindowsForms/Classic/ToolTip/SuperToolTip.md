@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: SuperToolTip in Windows Forms xptoolbar control | Syncfusion
 description: Learn about SuperToolTip support in Syncfusion Windows Forms SuperToolTip(Classic) control and more details.
@@ -391,7 +391,7 @@ Text given in the `Text` property will be considered as an HTML string and displ
 
 The `Size` property sets the size of the header, body, and footer item. The `Size` property is enabled only when `RenderHtml` is set to `true`.
 
-Common CSS properties and the standard text-formatting HTML tags are supported. For a complete list of supported tags, see the [HTML Renderer documentation](https://help.syncfusion.com/windowsforms/htmlui/rendering-html).
+Common CSS properties and the standard text-formatting HTML tags are supported.
 
 ![Render Html tags to SuperToolTip](SuperToolTip_images/SuperToolTip_img12.jpeg)
 
@@ -504,7 +504,9 @@ N> You can also set the tooltip using the `SetToolTip` method.
 
 ## Supporting SuperTooltip for .NET controls embedded in MFC containers
 
-The SuperToolTip can be displayed for a .NET user control that is hosted inside an MFC dialog. This support is provided at the source level; for sample integration code, see the [Syncfusion Windows Forms sample browser](https://www.syncfusion.com/demos/windows-forms) under the **MFC Interop** category.
+SupperTooltip can be displayed in the User Control embedded in the MFC Dialog.
+
+N> Support has been given in source level.
 
 ![Supporting SuperTooltip for MFC containers](SuperToolTip_images/SuperToolTip_img16.jpeg)
 

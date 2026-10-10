@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Working with SfToolTip in Windows Forms Tooltip | Syncfusion®
 description: Learn how to manage tooltip text, customize display behavior, control positioning, and draw custom tooltip content.
