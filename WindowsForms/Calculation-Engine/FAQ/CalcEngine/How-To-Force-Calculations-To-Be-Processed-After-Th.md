@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-To-Force-Calculations-To-Be-Processed-After-Th | Windows Forms | Syncfusion
-description: how to force calculations to be processed after they have been suspended?
+title: How To Force Calculations After They Have Been Suspended | Syncfusion
+description: Learn how to force calculations to be processed after they have been suspended in Windows Forms Calculation Engine using RecalculateRange.
 platform: windowsforms
 control: Calculate
 documentation: ug
 ---
 
-# How To Force Calculations To Be Processed After They Have Been Suspended?
+# How To Force Calculations After They Have Been Suspended?
 
 The following code illustrates how to force calculations to be processed after Engine.CalculatingSuspended has been flipped back to true.
 

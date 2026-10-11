@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How-To-Enter-Vectors-Of-Numbers-Into-CalcQuickBase | Windows Forms | Syncfusion
-description: how to enter vectors of numbers into calcquickbase?
+title: How-to-Enter-Vectors-into-CalcQuickBase | Windows Forms | Syncfusion
+description: Learn how to enter number vectors into CalcQuickBase using braces, with C# and VB.NET code examples.
 platform: windowsforms
 control: Calculate
 documentation: ug

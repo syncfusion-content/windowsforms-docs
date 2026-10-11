@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How-To-Read-an-XLS-File-Into-Essential-Calculate | Windows Forms | Syncfusion
-description: How to read an XLS file into Essential Calculate?
+title: How to Read an XLS File in Essential Calculate | WinForms | Syncfusion
+description: Read an XLS file in Essential Calculate using Essential XlsIO, the Excel-independent automation API.
 platform: windowsforms
 control: Calculate
 documentation: ug

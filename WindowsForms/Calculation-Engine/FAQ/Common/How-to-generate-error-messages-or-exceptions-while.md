@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to generate error messages or exceptions while performing string-related calculations? | Windows Forms | Syncfusion
-description: how to generate error messages or exceptions while performing string-related calculations?
+title: How to Generate Errors for String Calculations | Syncfusion
+description: Learn how to generate error messages or exceptions while performing string-related calculations using the CalcEngine control.
 platform: windowsforms
 control: Calculate
 documentation: ug
 ---
 
-# How to generate error messages or exceptions while performing string-related calculations?
+# How to Generate Error Messages for String-Related Calculations?
 
 Normally the CalcEngine will not display an invalid error message or exception while performing mathematical operations with string or text. To generate an invalid error message or exception, the TreatStringsAsZero property must be set to _false_.
 
