@@ -1871,7 +1871,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[COMPLEX](https://support.microsoft.com/en-us/office/complex-function-f0b8f3a9-51cc-4d6d-86fb-3a9362fa4128)'| markdownify }}</td></tr>
+<td>{{'[COMPLEX](https://support.office.com/en-us/article/complex-function-f0b8f3a9-51cc-4d6d-86fb-3a9362fa4128)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[CONVERT](/windowsforms/calculation-engine/supported-formulas/engineering#convert)'| markdownify }}</td>
 <td>yes</td>
@@ -1903,7 +1903,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[DEC2HEX](https://support.microsoft.com/en-us/office/dec2hex-function-6344ee8b-b6b5-4c6a-a672-f64666704619)'| markdownify }}</td></tr>
+<td>{{'[DEC2HEX](https://support.office.com/en-us/article/dec2hex-function-6344ee8b-b6b5-4c6a-a672-f64666704619)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[DELTA](/windowsforms/calculation-engine/supported-formulas/engineering#delta)'| markdownify }}</td>
 <td>yes</td>
@@ -1911,7 +1911,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[DELTA](https://support.microsoft.com/en-us/office/delta-function-2f763672-c959-4e07-ac33-fe03220ba432)'| markdownify }}</td></tr>
+<td>{{'[DELTA](https://support.office.com/en-us/article/delta-function-2f763672-c959-4e07-ac33-fe03220ba432)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[ERF](/windowsforms/calculation-engine/supported-formulas/engineering#erf)'| markdownify }}</td>
 <td>yes</td>
@@ -2348,7 +2348,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[SECOND](https://support.microsoft.com/en-us/office/second-function-740d1cfc-553c-4099-b668-80eaa24e8af1)'| markdownify }}</td></tr>
+<td>{{'[SECOND](https://support.office.com/en-us/article/second-function-740d1cfc-553c-4099-b668-80eaa24e8af1)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[TIME](/windowsforms/calculation-engine/supported-formulas/date-time#time)'| markdownify }}</td>
 <td>yes</td>
