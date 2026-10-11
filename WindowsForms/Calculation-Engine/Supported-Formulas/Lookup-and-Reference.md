@@ -235,7 +235,7 @@ _TRANSPOSE(array)_
 
 ## VLOOKUP
 
-The `Vlookup` function looks up a value in the first column of a table and returns a value from another column.
+The `VLOOKUP` function looks up a value in the first column of a table and returns a value from another column.
 
 **Syntax:**
 

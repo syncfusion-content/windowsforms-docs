@@ -7,7 +7,7 @@ control: Calculate
 documentation: ug
 ---
 
-# Windows Forms Calculation Engine (Calculate)
+# Windows Forms Calculation Engine (Calculate) Overview
 
 Essential Calculate is a native .NET class library that enables parsing and computing expressions and formulas with 400+ predefined functions. It can be used in any .NET environment, including C#, VB.NET and managed C++ code.
 It is a non-UI component that provides a full-fledged object model that facilitates formula calculation support without dependency on Microsoft Office COM libraries.
