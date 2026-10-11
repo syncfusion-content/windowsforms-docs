@@ -1665,7 +1665,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[STDEVPA](https://support.microsoft.com/en-us/excel/functions/stdevpa-function)'| markdownify }}</td></tr>
+<td>{{'[STDEVPA](https://support.office.com/en-us/article/stdevpa-function-5578d4d6-455a-4308-9991-d405afe2c28c)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[STEYX](/windowsforms/calculation-engine/supported-formulas/statistical#steyx)'| markdownify }}</td>
 <td>yes</td>
@@ -2660,7 +2660,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[T](https://support.microsoft.com/en-us/office/t-function-fb83aeec-45e7-4924-af95-53e073541228)'| markdownify }}</td></tr>
+<td>{{'[T](https://support.office.com/en-us/article/t-function-fb83aeec-45e7-4924-af95-53e073541228)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[TEXT](/windowsforms/calculation-engine/supported-formulas/text-formulas#text)'| markdownify }}</td>
 <td>yes</td>
@@ -3267,7 +3267,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[DURATION](https://support.microsoft.com/en-us/office/duration-function-b254ea57-eadc-4602-a86a-c8e369334038)'| markdownify }}</td></tr>
+<td>{{'[DURATION](https://support.office.com/en-us/article/duration-function-b254ea57-eadc-4602-a86a-c8e369334038)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[FV](/windowsforms/calculation-engine/supported-formulas/financial-formulas#fv)'| markdownify }}</td>
 <td>yes</td>
@@ -3292,7 +3292,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[IPMT](https://support.microsoft.com/en-us/office/ipmt-function-5cce0ad6-8402-4a41-8d29-61a0b054cb6f)'| markdownify }}</td></tr>
+<td>{{'[IPMT](https://support.office.com/en-us/article/ipmt-function-5cce0ad6-8402-4a41-8d29-61a0b054cb6f)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[INRATE](/windowsforms/calculation-engine/supported-formulas/financial-formulas#inrate)'| markdownify }}</td>
 <td>yes</td>
