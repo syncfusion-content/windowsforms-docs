@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: How To | WindowsForms | Syncfusion®
 description: How-to topics for SfButton explain using buttons as form accept or cancel buttons and displaying tooltips on mouse hover.

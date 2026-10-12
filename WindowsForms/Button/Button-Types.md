@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Button Types in Windows Forms Button control | Syncfusion®
 description: Button Types in SfButton support text, image, and icon buttons with customizable layouts, sizing, and spacing options.

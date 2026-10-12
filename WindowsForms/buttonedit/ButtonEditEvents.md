@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Events in Windows Forms ButtonEdit | Syncfusion®
 description: ButtonEdit events provide notifications for child button interactions, border changes, and custom event handling scenarios.
