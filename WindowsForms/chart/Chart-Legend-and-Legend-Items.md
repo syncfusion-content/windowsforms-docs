@@ -946,3 +946,4 @@ The legend appearance can be customized at run time. Double-click the legend tex
 - [How to customize the order of the legend in a WinForms Chart](https://support.syncfusion.com/kb/article/1050/how-to-customize-the-order-of-the-legend-in-a-winforms-chart)
 - [How to add custom legend items to the legend instead of automated legend items](https://support.syncfusion.com/kb/article/1169/how-to-add-custom-legend-items-to-the-legend-instead-of-automated-legend-items)
 - [How to specify the position of a floating legend in WinForms Chart](https://support.syncfusion.com/kb/article/1260/how-to-specify-the-position-of-a-floating-legend-in-winforms-chart)
+- [How to position a floating legend in Windows Forms Chart](https://help.syncfusion.com/windowsforms/chart/faq/how-to-specify-the-position-for-a-floating-legend)
