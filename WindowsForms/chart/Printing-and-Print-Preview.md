@@ -12,7 +12,7 @@ appliesto: UI Component Suite, Chart SDK
 
 The Windows Forms Chart control supports printing that enables you to print the chart.
 
-## Print Preview
+## Print preview
 
 The chart exposes a [PrintDocument](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_PrintDocument) property that can be assigned to a `.NET PrintPreviewDialog` to preview the chart before printing.
 
@@ -88,7 +88,7 @@ Me.chartControl.PrintColorMode = ChartPrintColorMode.GrayScale
 {% endhighlight %}
 {% endtabs %}
 
-## Automatic GrayScale Handling
+## Automatic grayscale handling
 
 Setting GrayScale print mode for the chart lets you print the chart in a gray scale and when multiple series are printed in this case, chart data points are automatically rendered with a patterned brush to differentiate the different series as shown in the image below.
 
@@ -98,7 +98,7 @@ A sample illustrating the printing features is available in the below location.
 
 &lt;Install Location&gt;\Syncfusion\EssentialStudio\<Install version>\Windows\chart\Print\Chart Print
 
-## Displaying ToolBar while printing
+## Displaying toolbar while printing
 
 [ShowToolBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ShowToolbar) property should be set to true to display a toolbar in the Chart. You can show or hide the toolbar while printing a Chart using [PrintToolBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPrintDocument.html#Syncfusion_Windows_Forms_Chart_ChartPrintDocument_PrintToolBar) property. 
 

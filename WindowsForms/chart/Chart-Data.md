@@ -375,7 +375,7 @@ chartControl.PrimaryXAxis.LabelsImpl = dataLabelsModel
 
 ![Chart Data](Chart-Data_images/chart-data-arraylist.png)
 
-## Data binding in chart through chart wizard
+## Bind a data source to a WinForms chart using the chart wizard
 
 The Chart Wizard allows you to bind a data source to the Windows Forms Chart control and configure the chart at design time.
 

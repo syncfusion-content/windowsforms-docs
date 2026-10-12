@@ -55,7 +55,7 @@ The following image illustrates the chart UI localized using the specified cultu
 
 ![Localized Windows Forms Chart](Localization_images/Localization_img5.png)
 
-## Sample Link
+### Sample link
 
 To view a sample,
 
