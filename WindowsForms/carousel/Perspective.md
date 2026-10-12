@@ -26,9 +26,3 @@ Me.carousel1.Perspective = 4f;
 {% endhighlight %}
 
 {% endtabs %}
-
-## Related links
-
-* [Rotate Always](https://help.syncfusion.com/windowsforms/carousel/rotate-always)
-* [Transition Speed](https://help.syncfusion.com/windowsforms/carousel/transition-speed)
-

@@ -40,27 +40,27 @@ Color</td></tr>
 <tr>
 <td>
 <a href="https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Carousel.html#Syncfusion_Windows_Forms_Tools_Carousel_CarouselPath">CarouselPath</a></td><td>
-Arranges the carousel items in the desired path such as Default, Orbital, Oval, or Linear. For more details, refer to the <a href="https://help.syncfusion.com/windowsforms/carousel/path-support">Path Support</a> documentation.</td><td>
+Arranges the carousel items in the desired path such as Default, Orbital, Oval, or Linear.</td><td>
 CarouselPath</td></tr>
 <tr>
 <td>
 <a href="https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Carousel.html#Syncfusion_Windows_Forms_Tools_Carousel_Perspective">Perspective</a></td><td>
-Increases or decreases the size of the elliptical view of the control. For more details, refer to the <a href="https://help.syncfusion.com/windowsforms/carousel/perspective">Perspective</a> documentation.</td><td>
+Increases or decreases the size of the elliptical view of the control.</td><td>
 float</td></tr>
 <tr>
 <td>
 <a href="https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Carousel.html#Syncfusion_Windows_Forms_Tools_Carousel_RotateAlways">RotateAlways</a></td><td>
-Enables the items in the control to rotate continuously. For more details, refer to the <a href="https://help.syncfusion.com/windowsforms/carousel/rotate-always">Rotate Always</a> documentation.</td><td>
+Enables the items in the control to rotate continuously.</td><td>
 bool</td></tr>
 <tr>
 <td>
 <a href="https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Carousel.html#Syncfusion_Windows_Forms_Tools_Carousel_TransitionSpeed">TransitionSpeed</a></td><td>
-Rotates the items in the control at a user-defined speed. For more details, refer to the <a href="https://help.syncfusion.com/windowsforms/carousel/transition-speed">Transition Speed</a> documentation.</td><td>
+Rotates the items in the control at a user-defined speed.</td><td>
 float</td></tr>
 <tr>
 <td>
 <a href="https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Carousel.html#Syncfusion_Windows_Forms_Tools_Carousel_ImageSlides">ImageSlides</a></td><td>
-Enables adding and displaying images in the Carousel control. For more details, refer to the <a href="https://help.syncfusion.com/windowsforms/carousel/imageslides">ImageSlides</a> documentation.</td><td>
+Enables adding and displaying images in the Carousel control.</td><td>
 bool</td></tr>
 <tr>
 <td>

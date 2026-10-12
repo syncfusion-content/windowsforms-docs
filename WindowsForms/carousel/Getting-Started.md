@@ -17,8 +17,6 @@ Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/con
 
 Refer to this [documentation](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to find more details about installing NuGet packages in an application.
 
-To generate the license validated application, refer to the [licensing](https://help.syncfusion.com/windowsforms/licensing/overview) documentation.
-
 ## Adding Carousel control via designer
 
 The following steps describe how to create a **Carousel** control via designer.
@@ -93,7 +91,7 @@ Me.Controls.Add(carousel1)
 
 ## Adding controls into Carousel
 
-You can load custom controls in Carousel, and they need to be added into the [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Carousel.html#Syncfusion_Windows_Forms_Tools_Carousel_Items) collection property in Carousel class. The controls must also be added to the Carousel's `Controls` collection so that they are rendered on the form. The following example uses the [ButtonAdv](https://help.syncfusion.com/windowsforms/buttonadv/overview) control, which is available in the `Syncfusion.Windows.Forms.Tools` namespace.
+You can load custom controls in Carousel, and they need to be added into the [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Carousel.html#Syncfusion_Windows_Forms_Tools_Carousel_Items) collection property in Carousel class. The controls must also be added to the Carousel's `Controls` collection so that they are rendered on the form. The following example uses the [ButtonAdv](https://help.syncfusion.com/windowsforms/buttonadv/overview) control.
 
 {% tabs %}
 
@@ -147,8 +145,6 @@ carousel1.Items.Add(buttonAdv6);
 {% endhighlight %}
 {% endtabs %}
 
-The carousel instance used in the above example is created as shown in the [adding Carousel control via code](#adding-carousel-control-via-code) section.
-
 {% highlight VB %}
 
 'Initialization
@@ -199,8 +195,6 @@ carousel1.Items.Add(buttonAdv6)
 {% endhighlight %}
 
 {% endtabs %}
-
-The carousel instance used in the above example is created as shown in the [adding Carousel control via code](#adding-carousel-control-via-code) section.
 
 ![Button controls added in Carousel through code](Getting-Started_images/Carousel_item.gif) 
 

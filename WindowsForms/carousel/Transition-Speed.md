@@ -26,7 +26,3 @@ Me.carousel1.TransitionSpeed = 2f
 
 {% endtabs %}
 
-## Related links
-
-* [Rotate Always](https://help.syncfusion.com/windowsforms/carousel/rotate-always)
-* [Perspective](https://help.syncfusion.com/windowsforms/carousel/perspective)
