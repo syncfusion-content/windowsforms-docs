@@ -637,29 +637,6 @@ chartControl.Series.Add(series)
 
 ![Optimize Pie Point Position in Windows Forms](../Chart-Types_images/windowsforms-pie-optimized-point-positions.png)
 
-### Divide area
-
-The [DivideArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_DivideArea) property specifies whether the available chart area is divided among multiple pie series. The default value is `true`.
-
-N> [VisibleAllPies](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_VisibleAllPies) property is deprecated. Use the [DivideArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_DivideArea) property instead.
-
-The following code displays multiple pie series without dividing the chart area and arranges the legend items in three rows.
-
-{% tabs %}
-{% highlight c# %}
-chartControl.ChartArea.DivideArea = false;
-chartControl.Legend.RowsCount = 3;
-chartControl.Legend.Position = ChartDock.Top;
-{% endhighlight %}
-{% highlight vb %}
-chartControl.ChartArea.DivideArea = False
-chartControl.Legend.RowsCount = 3
-chartControl.Legend.Position = ChartDock.Top
-{% endhighlight %}
-{% endtabs %}
-
-![Optimize Pie Point Position in Windows Forms](../Chart-Types_images/windowsforms-visible-all-pies.png)
-
 ## Doughnut chart
 
 Doughnut chart is a variation of a pie chart that displays data as slices in a ring-shaped circle with a hollow center. It is used to show the proportion or percentage contribution of categories to the whole dataset.
@@ -685,3 +662,7 @@ series.ConfigItems.PieItem.DoughnutCoeficient = 0.5F
 {% endtabs %}
 
 ![Doughnut Coefficient in Windows Forms](../Chart-Types_images/windowsforms-chart-doughnut-coefficient.png)
+
+## See also
+
+- [How to add a view at the center hole of WinForms Donut Charts](https://support.syncfusion.com/kb/article/11030/how-to-add-a-view-at-the-center-hole-of-winforms-donut-charts)
