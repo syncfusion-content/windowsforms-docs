@@ -11,12 +11,6 @@ documentation: ug
 
 A [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control is a combination of controls with textbox and buttons. The ButtonEdit control supports properties which controls the appearance and behavior of the control.
 
-{% seealso %}
-
-[TextBox Settings for ButtonEdit](/windowsforms/buttonedit/textboxsettingsforbuttonedit), [Child Button Customization](/windowsforms/buttonedit/childbuttoncustomization)
-
-{% endseealso %}
-
 ## Style Settings
 
 The ButtonEdit control can be customized in the following ways,
@@ -240,6 +234,6 @@ N> This case setting can be overridden by TextBox.CharacterCasing property.
 
 {% seealso %}
 
-[TextBox Settings for ButtonEdit](/windowsforms/buttonedit/textboxsettingsforbuttonedit), [Child Button Customization](/windowsforms/buttonedit/childbuttoncustomization)
+[TextBox Settings for ButtonEdit](http://help.syncfusion.com/windowsforms/buttonedit/textboxsettingsforbuttonedit), [Child Button Customization](https://help.syncfusion.com/windowsforms/buttonedit/childbuttoncustomization)
 
 {% endseealso %}
