@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-set-style-properties-of-a-nested-table | Windows Forms | Syncfusion
-description: how to set style properties of a nested table
+title: Set NestedTable Styles in WinForms GridGroupingControl | Syncfusion®
+description: Set style properties for nested tables in Syncfusion® WinForms GridGroupingControl, its table descriptors, cell appearance customization, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Set Style Properties of a Nested Table
+# How to Set NestedTable Styles in WinForms GridGroupingControl
 
 This can be done using the code below.
 

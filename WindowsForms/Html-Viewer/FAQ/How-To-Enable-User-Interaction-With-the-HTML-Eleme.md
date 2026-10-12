@@ -1,21 +1,21 @@
 ---
 layout: post
-title: How To Enable User Interaction With the HTML Elements | Syncfusion®
-description: how to enable user interaction with the html elements in Syncfusion® Windows Forms HTML UI control and more details.
-platform: WindowsForms
+title: How to Enable HTML Element Interaction | Syncfusion®
+description: Learn how to enable user interaction with the HTML elements in Syncfusion Windows Forms Html Viewer control, its elements and more details.
+platform: windowsforms
 control: HTML UI
 documentation: ug
 ---
 
-# How To Enable User Interaction With the HTML
+# How to Enable HTML Element Interaction
 
 This page explains How To Enable User Interaction With the HTML Elements and more details.
 
-## How to enable user interaction with the HTML elements
+## How To Enable User Interaction With the HTML elements
 
-The HTMLUI control supports a rich set of interactivity with the elements displayed. The HTML elements in the HTML document are accessed with the object variables of the respective classes.
+The WinForms HTML Viewer control supports a rich set of interactivity with the elements displayed. The HTML elements in the HTML document are accessed with the object variables of the respective classes.
 
-HTMLUI control gives a free hand to the user in deciding each and every factor of the element's display. Some include selecting the position of the control, attaching the attributes at run time, attaching events with the element, changing the text inside it at run time, and so on.
+WinForms HTML Viewer control gives a free hand to the user in deciding each and every factor of the element's display. Some include selecting the position of the control, attaching the attributes at run time, attaching events with the element, changing the text inside it at run time, and so on.
 
 The following snippet shows how the elements interact with each other on the execution of their respective events.
 
@@ -181,7 +181,7 @@ End Sub
 
 {% endtabs %}
 
-The button and the div elements are obtained. Events are declared for both the elements, and on clicking the button, the text inside the div element changes. When the text inside the div element is changed, an image element is appended to the div element. This shows how interactivity can be handled in HTMLUI.
+The button and the div elements are obtained. Events are declared for both the elements, and on clicking the button, the text inside the div element changes. When the text inside the div element is changed, an image element is appended to the div element. This shows how interactivity can be handled in WinForms HTML Viewer.
 
 
 

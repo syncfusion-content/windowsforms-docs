@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Chart Types in Windows Forms Pivot Chart control | Syncfusion
-description: Learn about Chart Types support in Syncfusion® Windows Forms Pivot Chart control, its elements and more details.
+title: Types in Windows Forms Pivot Chart | Syncfusion®
+description: Types in the Windows Forms Pivot Chart provide multiple visualization options for presenting and analyzing summarized data effectively.
 platform: windowsforms
 control: PivotChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
-# Chart Types in Windows Forms Pivot Chart
+# Types in Windows Forms Pivot Chart
 
 The pivot chart is rendered through different chart types based on the requirement. You can easily switch between different chart types dynamically. Fields bound to the chart are automatically transformed to target chart types.
 

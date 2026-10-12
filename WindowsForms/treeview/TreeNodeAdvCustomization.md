@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: TreeNodeAdv Customization in Windows Forms TreeView | Syncfusion®
-description: Learn about TreeNodeAdv Customization support in Syncfusion® Windows Forms TreeView control and more details.
+description: TreeNodeAdv customization supports images, checkboxes, option buttons, custom controls, editing, and advanced node selection.
 platform: WindowsForms
 control: TreeView 
 documentation: ug

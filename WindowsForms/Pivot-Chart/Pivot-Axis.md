@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Pivot Axis in Windows Forms Pivot Chart control | Syncfusion
-description: Learn about Pivot Axis support in Syncfusion® Windows Forms Pivot Chart control, its elements and more details.
+title: Axis in Windows Forms Pivot Chart | Syncfusion®
+description: Axis in the Windows Forms Pivot Chart defines data grouping, categories, and hierarchical levels for data visualization and analysis.
 platform: windowsforms
 control: PivotChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
-# Pivot Axis in Windows Forms Pivot Chart
+# Axis in Windows Forms Pivot Chart
 
 Axis is used to locate data points in the chart area. Generally, two axes are required along each direction to locate a data point in the chart, i.e., horizontal and vertical. The pivot charts typically have two axes to measure and categorize data.
 
@@ -77,7 +78,7 @@ Me.pivotChart1.ChartControl.PrimaryYAxis.TitleFont = New Font("Arial", 14)
 
 ![WinForms PivotChart with axis title](Pivot-Axis_images/PivotAxes_image1.png)
 
-*PivotChart displays the axis with title*
+*WinForms Pivot Chart displays the axis with title*
 
 ## Grid line style
 
@@ -150,7 +151,7 @@ Me.chartControl1.PrimaryYAxis.GridLineType.Width = 2F
 
 ![WinForms PivotChart with customized grid line style](Pivot-Axis_images/PivotAxes_image2.png)
 
-*PivotChart with customized style*
+*WinForms Pivot Chart with customized style*
 
 ## Show/Hide axis
 

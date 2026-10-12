@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Access-Corresponding-Parent-Tables-Row-from | Windows Forms | Syncfusion
-description: how to access corresponding parent table's row from the child
+title: Access Parent Table Row in WinForms GridGroupingControl | Syncfusion®
+description: Access the corresponding parent table row from a child table in Syncfusion® Windows Forms GridGroupingControl, its nested tables, records, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Access Corresponding Parent Table's Row from the Child
+# How to Access Parent Table Row in Windows Forms GridGroupingControl
 
 Get the table's current element. Then cast this element to GridNestedTable. You can now access the parent table for the current element. This is a recursive process. 
 

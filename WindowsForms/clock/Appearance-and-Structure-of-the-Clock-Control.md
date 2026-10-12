@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Appearance and Structure of the Clock in Windows Forms | Syncfusion
-description: Learn about Appearance and Structure of the Clock Control support in Syncfusion Windows Forms Clock control and more details.
+title: Appearance and Structure in Windows Forms Clock | Syncfusion
+description: Learn about the appearance and structure of Windows Forms Clock control components and customization.
 platform: WindowsForms
-control: Clock-Control-for-Windows-Forms
+control: Clock
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
-#  Appearance and structure of the Clock control
+# Appearance and Structure in Windows Forms Clock
 
 ## Color setting
 
@@ -103,7 +104,6 @@ Me.clock1.MinuteThickness = 4
 ![Customization of hands thickness](Overview_images/Overview_img96.png) 
 
 
-
 ### Enable and disable properties
 
 The [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html) control allows you to enable or disable AM/PM, second hand, minute line, and border.
@@ -164,9 +164,7 @@ Me.clock1.IsTransparent = True
 
 ![Transparent support](Overview_images/Overview_img98.png)
 
-
-
-### How to show a fixed time in the Clock control
+### How to show a fixed time in the Windows Forms Clock control
 
 The [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html) control usually displays the current time on the machine where it is hosted. To freeze the clock to display a fixed time, the Boolean property [StopTimer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html#Syncfusion_Windows_Forms_Tools_Clock_StopTimer) can be used. Then, using the Clock control's [Now](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html#Syncfusion_Windows_Forms_Tools_Clock_Now) property, the desired time can be displayed; otherwise, the default time will be shown.
 

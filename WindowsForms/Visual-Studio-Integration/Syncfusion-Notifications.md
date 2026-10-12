@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Notifications | WinForms | Syncfusion
-description: For displaying the notifications about trial and newer version update information for Syncfusion applications.
+title: Notifications in Windows Forms | Syncfusion®
+description: Syncfusion® Notifications display informative messages about trial applications, NuGet package updates, and new Essential Studio releases.
 platform: extension
 control: Visual Studio Extensions
 documentation: ug
 ---
 
-# Syncfusion® Notifications
+# Notifications in Windows Forms
 
 Syncfusion<sup>®</sup> enhances the user experience in Windows Forms applications through informative notification messages. These notifications include alerts for trial applications using Syncfusion<sup>®</sup> trial assemblies, updates on the availability of the latest Syncfusion<sup>®</sup> NuGet packages, and announcements of new Essential Studio<sup>®</sup> releases. By keeping developers informed, Syncfusion<sup>®</sup> ensures they stay up to date with the latest features and enhancements.
 
@@ -15,19 +15,11 @@ N> The Syncfusion® Notification feature is available from Essential Studio® v2
 
 ## Notification Configuration
 
-The Syncfusion<sup>®</sup> Options page allows you to configure notification settings. Each notification can be toggled **on** (true) or **off** (false). Toggling a notification off suppresses that notification at runtime, while leaving the others active.
+The Syncfusion® Options page allows you to configure notification settings. Customize trial and newer version notifications with a simple true or false toggle.
 
-To configure a notification:
+It can be accessed by clicking **Tools > Options > Syncfusion > WinForms**.
 
-1. Open Visual Studio.
-2. Navigate to **Tools → Options → Syncfusion → WinForms**.
-3. Locate the notification to disable.
-4. Set its value to **False** to disable the notification or **True** to enable it.
-5. Click **OK**.
-
-The toggles are per-user settings stored in the Visual Studio profile, and they persist across Visual Studio upgrades on the same machine.
-
-![Syncfusion® WinForms Options page listing the notification toggles](images/winforms-optionPage.png)
+![Option Page](images/winforms-optionPage.png)
 
 ## Notification Types
 

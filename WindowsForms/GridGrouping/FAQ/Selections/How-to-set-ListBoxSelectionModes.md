@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-set-ListBoxSelectionModes | Windows Forms | Syncfusion
-description: how to set listboxselectionmodes
+title: ListBoxSelectionModes in WinForms GridGroupingControl | Syncfusion®
+description: Set ListBoxSelectionModes in Syncfusion® WinForms GridGroupingControl, its single and multiple record selection behavior, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Set ListBoxSelectionModes
+# How to Set ListBoxSelectionModes in WinForms GridGroupingControl
 
 To set ListBoxSelectionModes property that determines the selection behavior, use the following code.
 

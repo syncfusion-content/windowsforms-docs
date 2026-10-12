@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Button Caption in Windows Forms Split Button control | Syncfusion
-description: Learn about Button Caption support in Syncfusion Windows Forms Split Button control and more details.
+title: Button Caption in Windows Forms Split Button | Syncfusion
+description: Button Caption support allows setting custom button text and updating captions based on selected dropdown items.
 platform: WindowsForms
 control: SplitButton 
 documentation: ug

@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Form Customization in Windows Forms Form control | Syncfusion®
-description: Learn about Form Customization support in Syncfusion® Windows Forms Form (SfForm) control and more details.
+title: Form Customization in Windows Forms Form | Syncfusion®
+description: Form Customization in Form (SfForm) enables configuring icons, borders, shadow effects, and rounded corners for personalized window appearance.
 platform: WindowsForms
 control: SfForm
 documentation: ug

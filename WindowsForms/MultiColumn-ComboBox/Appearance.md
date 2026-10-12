@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance | WindowsForms | Syncfusion
-description: This section deals with explain about the appearance in MultiColumnComboBox control on Windows Forms platform
+title: Appearance in Windows Forms Multicolumn ComboBox | Syncfusion®
+description: Customize the appearance of the Windows Forms Multicolumn ComboBox control using styles, colors, columns, and display settings.
 platform: WindowsForms
-control: Editors Package
+control: Multicolumn ComboBox
 documentation: ug
 ---
 
-# Appearance in Windows Forms MultiColumnComboBox
+# Appearance in Windows Forms Multicolumn ComboBox
 
 Visual styles for the [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) control can be specified using [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html#Syncfusion_Windows_Forms_Tools_MultiColumnComboBox_Style) property. The various styles are,
 
@@ -42,7 +42,7 @@ Me.multiColumnComboBox1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office20
 
 ![Appearance](Overview_images/Overview_img329.jpeg) 
 
- Code snippet for setting "Office2016Colorful" style for [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html)
+ Code snippet for setting "Office2016Colorful" style for [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) control.
 
 {% tabs %}
 {% highlight c# %}
@@ -82,4 +82,4 @@ Office2007Colors.ApplyManagedColors(Me, Color.Orchid)
 
 ## See Also
 
-[How to change WinForms MultiColumnComboBox row colors?](https://www.syncfusion.com/forums/152520/how-to-change-winforms-multicolumncombobox-row-colors)
+[How to change WinForms Multicolumn ComboBox row colors?](https://www.syncfusion.com/forums/152520/how-to-change-winforms-multicolumncombobox-row-colors)

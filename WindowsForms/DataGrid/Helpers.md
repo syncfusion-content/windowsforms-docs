@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Helpers in WinForms DataGrid control | Syncfusion®
-description: Learn about helpers such as get the actual row index irrespective of grouping and so on in Syncfusion® WinForms DataGrid (SfDataGrid) control and more details.
+title: Helpers in Windows Forms Data Grid | Syncfusion®
+description: Helpers in Data Grid provides helper classes and methods to customize grid behavior, access grid elements, and simplify development tasks.
 platform: windowsforms
-control: SfDataGrid 
+control: Data Grid 
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
-# Helpers in Windows Forms DataGrid (SfDataGrid) 
+# Helpers in Windows Forms Data Grid
 
 ## IndexResolver
 

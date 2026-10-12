@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | Windows Forms MultiColumn ListBox | Syncfusion
-description: This section explains on how to add a GridListControl in an application and some of the basic functionalities of it.
+title: Getting Started with Windows Forms MultiColumn ListBox | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms MultiColumn ListBox control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
-control: GridListControl
+control: MultiColumn ListBox
 documentation: ug
 ---
 
-# Getting Started in Windows Forms MultiColumn ListBox (GridListControl)
+# Getting Started with Windows Forms MultiColumn ListBox
 
 This section explains creating a simple application with [WinForms MultiColumn ListBox](https://www.syncfusion.com/winforms-ui-controls/multicolumn-listbox) Control and its functionalities.
 

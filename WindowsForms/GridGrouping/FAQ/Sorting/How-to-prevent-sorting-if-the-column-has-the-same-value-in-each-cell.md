@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-prevent-sorting-if-the-column-has-the-same- | Windows Forms | Syncfusion
-description: how to prevent sorting if the column has the same value in each cell
+title: Prevent Sorting in WinForms GridGroupingControl | Syncfusion®
+description: Prevent sorting when a column contains the same values in Syncfusion® WinForms GridGroupingControl, its sorting behavior, filter choices, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Prevent Sorting if the Column has the Same Value in Each Cell
+# How to Prevent Sorting in WinForms GridGroupingControl
 
 To prevent sorting column with same cell values, the choices are obtained through ‘GetFilterBarChoices()’ method from the filter bar cell model. This retrieves the unique values of the respective column. ‘OptimizeFilterPerformance’ property can also be enabled to get these choices.
 

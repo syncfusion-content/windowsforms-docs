@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Getting Started with Windows Forms TreeMap control | Syncfusion®
-description: Learn here about getting started with Syncfusion® Windows Forms TreeMap control, its elements and more details.
+title: Getting Started with Windows Forms TreeMap | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms TreeMap control. Explore setup, data binding, features, and customization options.
 platform: windowsforms
 control: TreeMap 
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
-# Getting Started with Windows Forms TreeMap
+# Getting Started with WinForms TreeMap
 
-TreeMaps are a growing trend in data visualization. They display hierarchical information in a series of clustered rectangles, which together represent a whole. Each box's size represents a quantity. TreeMaps can also use color to represent values, and colors are often used to categorize the boxes within the TreeMap.
+WinForms TreeMaps are a growing trend in data visualization. They display hierarchical information in a series of clustered rectangles, which together represent a whole. Each box's size represents a quantity. WinForms TreeMaps can also use color to represent values, and colors are often used to categorize the boxes within the WinForms TreeMap.
 
 ## Assembly deployment
 
@@ -127,7 +128,7 @@ Imports Syncfusion.Windows.Forms.TreeMap
 
 {% endtabs %}
 
-### Step 5: Configure TreeMap Properties
+### Step 5: Configure WinForms TreeMap Properties
 
 Configure the TreeMap control by setting the data source and key properties such as `WeightValuePath` and `ColorValuePath`. The levels of the TreeMap control can be categorized into two types: flat and hierarchical, which are used to define the levels of the data collection.
 

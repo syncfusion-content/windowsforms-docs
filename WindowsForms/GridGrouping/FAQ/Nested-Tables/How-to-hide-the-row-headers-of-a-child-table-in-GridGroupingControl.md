@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-hide-the-row-headers-of-a-child-table-in-Gr | Windows Forms | Syncfusion
-description: how to hide the row headers of a child table in gridgroupingcontrol
+title: Child Table Row Headers in WinForms GridGroupingControl | Syncfusion®
+description: Hide row headers of a child table in Syncfusion® WinForms GridGroupingControl, its child table customization, column sizing, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Hide the Row Headers of a Child Table in GridGroupingControl
+# How to Hide Child Table Row Headers in WinForms GridGroupingControl
 
 You can do this by accessing the Child Table of GridGroupingControl using GridTableModel. Then handle QueryColWidth event handler of the Child Table and hide the Row Header (which is column zero) by setting the Size property to _Zero_.
 

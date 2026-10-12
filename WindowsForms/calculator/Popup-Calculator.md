@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Popup-CalculatorControl | WindowsForms | Syncfusion®
-description: Learn here all about the Syncfusion® Essential Studio® Windows Forms popup calculatorControl, its elements, and more.
+title: Popup Calculator in Windows Forms Calculator | Syncfusion®
+description: Learn here all about the Syncfusion Essential Studio® Windows Forms Popup Calculator control, its elements, and more.
 platform: windowsforms
 control: Calculator
 documentation: ug
 ---
 
-# Pop-Up CalculatorControl
+# Popup Calculator in WinForms Calculator
 
-The [PopupCalculator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.PopupCalculator.html) class can be used to display a popup [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html). This class can be created programmatically. 
+The [PopupCalculator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.PopupCalculator.html) class can be used to display a popup [WinForms Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html). This class can be created programmatically. 
 
-The [PopupCalculator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.PopupCalculator.html) control lets you embed a [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) object to a button for example. Drop the button onto the form and add the following code snippet.
+The [PopupCalculator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.PopupCalculator.html) control lets you embed a [WinForms Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) object to a button for example. Drop the button onto the form and add the following code snippet.
 
 {% tabs %}
 {% highlight C# %}

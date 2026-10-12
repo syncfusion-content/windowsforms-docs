@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-provide-input-data-of-DateTime-type | Windows Forms | Syncfusion
-description: how to provide input data of datetime type
+title: How to Provide DateTime Input Data in Chart | Syncfusion®
+description: Learn how to provide DateTime input data in a Windows Forms Chart and display date-based values for chart visualization.
 platform: windowsforms
 control: chart
 documentation: ug
 ---
 
-# How to provide input data of DateTime type
+# How to provide datetime input data in Windows Forms Chart
 
 The Start Date and Time can be expressed using an instance of the DateTime class. If you want to add days, the AddDays() method can be used along with that instance. AddHours() and AddMinutes() can be used for adding any number of hours and minutes.
 

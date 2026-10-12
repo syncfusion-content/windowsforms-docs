@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Appearance Settings in Windows Forms TabbedMDI control | Syncfusion®
-description: Learn about Appearance Settings support in Syncfusion® Windows Forms TabbedMDI control and more details.
+title: Appearance Settings in Windows Forms TabbedMDI | Syncfusion®
+description: Learn about Appearance Settings support in Syncfusion Windows Forms TabbedMDI control and more details.
 platform: windowsforms
 control: TabbedMDIPackage 
 documentation: ug
 ---
 
-# Appearance Settings in Windows Forms TabbedMDI
+# Appearance Settings in WinForms TabbedMDI
 
-The variousAppearance Settings for TabbedMDIManager are discussed in this section.
+The variousAppearance Settings for WinForms TabbedMDI are discussed in this section.  
 
 ## Foreground settings
 
@@ -30,7 +30,7 @@ Property table
 <table>
 <tr>
 <th>
- TabbedMDIManager property</th><th>
+ WinForms TabbedMDI property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -80,7 +80,7 @@ Me.TabbedMDIManager1.ImageSize = New System.Drawing.Size(20, 20)
 
 ## Applying themes
 
-The TabbedMDIManager Control can be themed by enabling the ThemesEnabled property.
+The WinForms TabbedMDI Control can be themed by enabling the ThemesEnabled property.
 
 {% tabs %}
 
@@ -102,9 +102,9 @@ Me.tabbedMDIManager1.ThemesEnabled = True
 
 ## Customization
 
-TabbedMDIManager provides complete support for customizing the active and inactive tabs back color, fore color, and font.
+WinForms TabbedMDI provides complete support for customizing the active and inactive tabs back color, fore color, and font.
 
-#### ActiveTabBackColor
+### ActiveTabBackColor
 
 This option helps to customize the active tab back color.
 

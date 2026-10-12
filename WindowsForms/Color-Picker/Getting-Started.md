@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Color Picker | Syncfusion®
-description: Learn here about getting started with Syncfusion® Windows Forms Color Picker (ColorPickerUIAdv) control, its elements, and more.
+title: Getting Started with Windows Forms ColorPickerUIAdv | Syncfusion®
+description: Learn here about getting started with Syncfusion Windows Forms Color Picker (ColorPickerUIAdv) control, its elements, and more.
 platform: windowsforms
 control: ColorPickerUIAdv
 documentation: ug
 ---
-# Getting Started with Windows Forms Color Picker (ColorPickerUIAdv)
+# Getting Started with WinForms Color Picker
 
-This section briefly describes how to create a new Windows Forms project in Visual Studio and add **ColorPickerUIAdv** with its basic functionalities.
+This section briefly describes how to create a new Windows Forms project in Visual Studio and add **WinForms Color Picker** with its basic functionalities.
 
 
 ## Assembly deployment
@@ -17,11 +17,11 @@ Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/con
 
 Click [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install nuget packages in Windows Forms application.
 
-## Adding the ColorPickerUIAdv control via designer
+## Adding the WinForms Color Picker control via designer
 
 1. Create a new Windows Forms application in Visual Studio.
 
-2. The [ColorPickerUIAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ColorPickerUIAdv.html) control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
+2. The [WinForms Color Picker](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ColorPickerUIAdv.html) control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
 
    * Syncfusion.Grid.Base
    * Syncfusion.Grid.Windows
@@ -34,7 +34,7 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/ins
 ![Windows forms ColorPickerUIAdv drag and drop from toolbox](ColorPickerUIAdv_Images/ColorPickerUIAdv_toolbox.jpeg) 
 
 
-## Adding the ColorPickerUIAdv control via code
+## Adding the WinForms Color Picker control via code
 
 It can be added programmatically by performing the following steps.
 
@@ -68,7 +68,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4. Create an instance of [ColorPickerUIAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ColorPickerUIAdv.html), and add it to the form.
+4. Create an instance of [WinForms Color Picker](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ColorPickerUIAdv.html), and add it to the form.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -117,4 +117,3 @@ Me.colorPickerUIAdv1.SelectedColor = System.Drawing.Color.White
 {% endtabs %}
 
 ![Windows Forms ColorPickerUIAdv showing selected color](ColorPickerUIAdv_Images/ColorPickerUIAdv_colorselection.png)
-

@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Pivot Chart | Syncfusion
-description: Learn here about getting started with Syncfusion® Windows Forms Pivot Chart control, its elements and more details.
+title: Getting Started with Windows Forms Pivot Chart | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms Pivot Chart control. Explore setup, configuration, features, and customization options.
 platform: windowsforms
 control: PivotChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Getting Started with Windows Forms Pivot Chart
@@ -351,14 +352,14 @@ Finally, run the application to obtain the following output.
 
 {% highlight c# %}
 
-//Updates the PivotChart series values whenever the data gets changed in the underlying data source.
+//Updates the WinForms Pivot Chart series values whenever the data gets changed in the underlying data source.
 this.pivotChart1.EnableUpdating = true;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-'Updates the PivotChart series values whenever the data gets changed in the underlying data source.
+'Updates the WinForms Pivot Chart series values whenever the data gets changed in the underlying data source.
 Me.pivotChart1.EnableUpdating = True
 
 {% endhighlight %}

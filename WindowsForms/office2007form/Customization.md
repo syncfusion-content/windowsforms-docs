@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Customization in Windows Forms Office2007Form control | Syncfusion®
-description: Learn about Customization support in Syncfusion® Windows Forms Office2007Form control and more details.
+title: Office2007Form Customization in Windows Forms | Syncfusion®
+description: Customization options include caption alignment, fonts, colors, help button support, RTL layouts, and rounded corners.
 platform: WindowsForms
 control: Office2007 Form
 documentation: ug
 ---
 
-# Customization in Windows Forms Office2007Form
+# Office2007Form Customization in Windows Forms
 
 The Form caption can be aligned to the left, right or center by using the [CaptionAlign](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Form.html#Syncfusion_Windows_Forms_Office2007Form_CaptionAlign) property.
 

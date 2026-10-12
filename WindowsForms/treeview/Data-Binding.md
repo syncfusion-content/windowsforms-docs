@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Data Binding in Windows Forms TreeView control | Syncfusion®
-description: Learn about Data Binding support in Syncfusion® Windows Forms TreeView control, its elements and more details.
+title: Data Binding in Windows Forms TreeView | Syncfusion®
+description: Data binding supports self-referencing, relational, and object-relational data sources with hierarchical node generation.
 platform: WindowsForms
 control: TreeView 
 documentation: ug
@@ -94,7 +94,7 @@ treeViewAdv1.DataSource = Table_1
 {% endtabs %}
 
 N>
-1)	Root nodes are parentless (for example, see the **"North America"** node in the image above). All root nodes must have their parent member values (**TreeViewAdv.ParentMember**) set to the **TreeViewAdv.SelfRelationRootValue** property. If the property is not specified, you may notice an empty TreeViewAdv. To avoid this, we recommend that you always set the parent member values to TreeViewAdv.SelfRelationRootValue for root nodes.
+1)	Root nodes do not have parent nodes (for example, see the **"North America"** node in the image above). All root nodes must have their parent member values (**TreeViewAdv.ParentMember**) set to the **TreeViewAdv.SelfRelationRootValue** property. If the property is not specified, you may notice an empty TreeViewAdv. To avoid this, we recommend that you always set the parent member values to TreeViewAdv.SelfRelationRootValue for root nodes.
 2)	You must specify the **TreeViewAdv.DisplayMember**, **TreeViewAdv.ParentMember**, and **TreeViewAdv.ChildMember** properties to populate the TreeViewAdv.
 
 ## Binding to Data Relations

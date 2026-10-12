@@ -1,15 +1,15 @@
 ---
 layout: post
-title: HTML Renderer in Windows Forms Html Viewer control | Syncfusion®
-description: Learn about HTML Renderer support in Syncfusion® Windows Forms Html Viewer (HTMLUI) control and more details.
+title: HTML Renderer in Windows Forms HTMLUI control | Syncfusion®
+description: Learn about HTML Renderer support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
 platform: windowsforms
-control: HTML UI
+control: HTMLUI
 documentation: ug
 ---
 
-#  HTML renderer in Windows Forms Html Viewer control
+# HTML renderer in WinForms HTML Viewer control
 
-As the HTMLUI control supports rendering of web pages, it can be used like a light-weight web browser for compact applications that include links to references.
+As the WinForms HTML Viewer control supports rendering of web pages, it can be used like a light-weight web browser for compact applications that include links to references.
 
 {% tabs %}
 
@@ -43,7 +43,7 @@ HtmluiControl1.LoadHTML(uri)
 
 {% endtabs %}
 
-Also the ability of the HTMLUI control to load from strings can be used in creating HTML editors for tutorial applications.
+Also the ability of the WinForms HTML Viewer control to load from strings can be used in creating HTML editors for tutorial applications.
 
 {% tabs %}
 
@@ -79,7 +79,7 @@ Me.HtmluiControl1.LoadFromString(htmlString)
 
 {% endtabs %}
 
-The following figure shows an HTML Editor rendered using HTMLUI.
+The following figure shows an HTML Editor rendered using WinForms HTML Viewer.
 
 
 
@@ -87,9 +87,9 @@ The following figure shows an HTML Editor rendered using HTMLUI.
 
 
 
-## HTMLUI browser sample
+## WinForms HTML Viewer browser sample
 
-This sample demonstrates the implementation of a Web Browser in HTMLUI.
+This sample demonstrates the implementation of a Web Browser in WinForms HTML Viewer.
 
 
 
@@ -105,9 +105,9 @@ By default, this sample can be found under the following location:
 
 
 
-## HTMLUI editor sample
+## WinForms HTML Viewer editor sample
 
-This sample demonstrates the implementation of HTML Editors in HTMLUI.
+This sample demonstrates the implementation of HTML Editors in WinForms HTML Viewer.
 
 
 
@@ -120,4 +120,3 @@ This sample demonstrates the implementation of HTML Editors in HTMLUI.
 By default, this sample can be found under the following location:
 
 ...\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\HTMLUI.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
-

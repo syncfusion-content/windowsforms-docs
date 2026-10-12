@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Performance in Windows Forms Smith Chart control | Syncfusion®
-description: Learn about Performance support in Syncfusion® Windows Forms Smith Chart (SfSmithChart) control and more details.
+title: Performance in Windows Forms Smith Chart | Syncfusion®
+description: Performance in the Windows Forms Smith Chart enables efficient rendering and interaction for visualizing large volumes of chart data.
 platform: windowsforms
 control: SfSmithChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
-# Performance in Windows Forms Smith Chart (SfSmithChart)
+# Performance in Windows Forms Smith Chart
 
-The performance of the SfSmithChart can be improved by using the following methods.
+The performance of the WinForms Smith Chart can be improved by using the following methods.
 
 ## Begin update and end update
 
@@ -18,7 +19,7 @@ Encapsulate your "data points" adding code within [`BeginUpdate`](https://help.s
 <table>
 <tr>
 <th>
-SfSmithChart performance Methods</th><th>
+WinForms Smith Chart performance Methods</th><th>
 Description</th></tr>
 <tr>
 <td>

@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: Find and Replace in Windows Forms MultiColumn TreeView | Syncfusion®
-description: Learn about Find and Replace support in Syncfusion® Windows Forms MultiColumn TreeView control and more details.
+description: Find and Replace supports searching, highlighting, navigating, and replacing node text across tree nodes.
 platform: WindowsForms
 control: MultiColumnTreeView
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Event Handling in Windows Forms ComboBoxBase control | Syncfusion
-description: Learn about Event Handling support in Syncfusion Windows Forms ComboBoxBase control and more details.
+title: Event Handling in Windows Forms ComboBoxBase | Syncfusion®
+description: Event handling in Windows Forms ComboBoxBase provides notifications for selection changes, dropdown actions, and enabling customized behavior.
 platform: WindowsForms
 control: ComboBoxBase
 documentation: ug

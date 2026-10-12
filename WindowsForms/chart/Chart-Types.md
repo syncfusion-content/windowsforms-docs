@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Chart Types in Windows Forms Chart control | Syncfusion
-description: Learn about Chart Types support in Syncfusion Essential Studio® Windows Forms Chart control and more details.
+title: Types in Windows Forms Chart | Syncfusion®
+description: Types in the Windows Forms Chart provide multiple visualization options for presenting, comparing, and analyzing data effectively.
 platform: windowsforms
 control: Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
-# Chart Types in Windows Forms Chart
+# Types in Windows Forms Chart
 
 Essential® Chart includes a comprehensive set of more than 35 Chart types for all your business needs. Each one is highly and easily configurable with built-in support for creating stunning visual effects.
 
@@ -737,7 +738,7 @@ You could then use another series to represent the completed portion of the diff
 
 ![Chart Types](Chart-Types_images/windowsforms-gantt-chart.jpeg)
 
-#### Chart Details
+### Chart Details
 
 Number of Y values per point - 2 (1st is beginning value and the 2nd is the ending value).
 
@@ -1717,7 +1718,7 @@ For ex: if we have to display the range of temperature per day in a chart, Range
 
 ![Range area chart in WindowsForms](chart-types_images/windowsforms-range-area-chart.jpeg)
 
-#### Chart Details
+### Chart Details
 
 Number of Y values per point - 2.
 
@@ -2791,7 +2792,7 @@ A Pie Chart renders y values as slices in a pie. These slices are rendered in pr
 
 ![Pie chart in WindowsForms](chart-types_images/windowsforms-pie-chart.jpeg)
 
-#### Chart Details
+### Chart Details
 
 Number of Y values per point - 1.
 
@@ -3064,7 +3065,7 @@ One can change an existing chart to a combination chart by selecting the data se
 
 ![Combination chart in WindowsForms](chart-types_images/windowsforms-combination-chart.jpeg)
 
-#### Chart Details
+### Chart Details
 
 Number of Series - One or More.
 
@@ -3141,7 +3142,7 @@ A heat map chart is a graphical representation of data where the values taken by
 
 ![Heat map charts in WindowsForms](chart-types_images/windowsforms-heat-map-charts.jpeg)
 
-#### Chart Details
+### Chart Details
 
 Number of Y values per point - 2.
 

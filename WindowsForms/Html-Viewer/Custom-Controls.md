@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Custom Controls in Windows Forms Html Viewer control | Syncfusion®
-description: Learn about Custom Controls support in Syncfusion® Windows Forms Html Viewer (HTMLUI) control and more details.
+title: Custom Controls in Windows Forms HTMLUI control | Syncfusion®
+description: Learn about Custom Controls support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
 platform: windowsforms
-control: HTML UI
+control: HTMLUI
 documentation: ug
 ---
 
-#  Custom controls in Windows Forms Html Viewer control
+# Custom controls in WinForms HTML Viewer control
 
 The Custom Controls are not standard HTML elements but user-defined controls that are created for improving the application's richness and productivity.
 
@@ -49,7 +49,7 @@ NumericUpDown:<CUSTOM class="NumericUpDown" assembly="System.Windows.Forms"></CU
 
 {% endtabs %}
 
-The custom controls defined in the HTML document are interfaced with their equivalent Windows Forms control with the help of the PreRenderDocument event. The PreRenderDocument event occurs at a time when the HTML document is being loaded into the HTMLUI control, but the elements are not yet positioned.
+The custom controls defined in the HTML document are interfaced with their equivalent Windows Forms control with the help of the PreRenderDocument event. The PreRenderDocument event occurs at a time when the HTML document is being loaded into the WinForms HTML Viewer control, but the elements are not yet positioned.
 
 The HTML elements are loaded into an hash table with an equivalent id as their key. An equivalent Base class object, here BaseElement class, is defined to link the HTML elements stored in the hash table with the help of the key associated with the element. The BaseElement is the Base class for all HTML elements. All HTML tag elements inherit this class.
 
@@ -121,7 +121,7 @@ End Sub
 
 {% endtabs %}
 
-The following image illustrates three custom controls created using HTMLUI.
+The following image illustrates three custom controls created using WinForms HTML Viewer.
 
 
 
@@ -131,7 +131,7 @@ The following image illustrates three custom controls created using HTMLUI.
 
 ## Custom controls sample
 
-This sample demonstrates the implementation of Custom Controls by using HTMLUI.
+This sample demonstrates the implementation of Custom Controls by using WinForms HTML Viewer.
 
 ![Custom-Controls_img2](Custom-Controls_images/Custom-Controls_img2.jpeg)
 
@@ -142,4 +142,3 @@ This sample demonstrates the implementation of Custom Controls by using HTMLUI.
 By default, this sample can be found under the following location:
 
 ...\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\HTMLUI.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
-

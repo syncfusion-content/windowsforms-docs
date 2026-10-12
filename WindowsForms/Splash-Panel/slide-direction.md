@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Slide Direction in Windows Forms Splash Panel control | Syncfusion
-description: Learn about Slide Direction support in Syncfusion Windows Forms Splash Panel control and more details.
+title: Slide Direction in Windows Forms SplashPanel | Syncfusion®
+description: Slide direction in Windows Forms SplashPanel defines how the panel enters and exits the view, enabling smooth and visually appealing transitions.
 platform: WindowsForms
 control: SplashPanel
 documentation: ug
 ---
 
-# Slide Direction in Windows Forms Splash Panel
+# Slide Direction in Windows Forms SplashPanel
 
 ## Transition settings
 

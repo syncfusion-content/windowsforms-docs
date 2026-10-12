@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Upgrade Syncfusion WinForms NuGet packages to the latest version
-description: Learn here about the how to upgrade Syncfusion WinForms NuGet packages to the latest version using the NuGet manager and package manager UI.
+title: Syncfusion® WinForms NuGet package upgrades | Syncfusion®
+description: Learn to upgrade Syncfusion® WinForms NuGet packages to the latest version using NuGet manager and package manager UI.
 platform: WindowsForms
 control: Essential Studio
 documentation: ug
 ---
 
-# Upgrading Syncfusion WinForms NuGet packages to the latest version
+# Syncfusion® WinForms NuGet package upgrades
 
 Every three months, Syncfusion releases new volumes with interesting new features. For this volume, there will be weekly NuGet releases and a service pack. Syncfusion WinForms NuGet packages are released on a weekly basis to address critical issue fixes.
 
@@ -35,7 +35,7 @@ The NuGet **Package Manager UI** in Visual Studio allows you to easily install, 
 
     ![Select multiple Syncfusion NuGet packages for upgrade](images/MultipleNuGetUpgrade.png)
 
-4. After the upgrade, perform a **Clean** and then **Rebuild** of the solution. Verify the upgraded version in the `.csproj`/`.vbproj` file or in the **Installed** tab of the NuGet Package Manager.
+4. After the upgrade, perform a **Clean** and then **Rebuild** of the solution. Verify the upgraded version in the `.csproj` file or in the **Installed** tab of the NuGet Package Manager.
 
 ## Upgrade NuGet packages through .NET CLI
 
@@ -78,4 +78,4 @@ The **Package Manager Console** saves NuGet packages upgrade time since you don'
 
 4. The NuGet package manager will update the Syncfusion WinForms NuGet package as well as its dependencies. When the update is complete, the console shows the updated package version.
 
-5. After the upgrade, perform a **Clean** and then **Rebuild** of the solution. Verify the upgraded version in the **Installed** tab of the NuGet Package Manager or in the `.csproj`/`.vbproj` file.
+5. After the upgrade, perform a **Clean** and then **Rebuild** of the solution. Verify the upgraded version in the **Installed** tab of the NuGet Package Manager or in the `.csproj` file.

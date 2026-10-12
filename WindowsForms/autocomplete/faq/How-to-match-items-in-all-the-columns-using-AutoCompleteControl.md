@@ -1,17 +1,13 @@
----
+﻿---
 layout: post
-title: How to match items in all the columns using AutoComplete control | WindowsForms | Syncfusion
-description: How to match items in all the columns using AutoComplete control
+title: How to Match Items Across Columns in AutoComplete | Syncfusion
+description: Match items across multiple columns in Syncfusion® Windows Forms AutoComplete control using MultiSuggest and MultiSuggestExtended modes.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-
-
-
-
-# How to match items in all the columns using AutoComplete control?
+# How to Match Items Across Columns in Windows Forms AutoComplete
 
 
 Matching items in multiple columns is possible using the AutoComplete control. You can set the AutoCompleteModes to MultiSuggest or MultiExtended mode for this.

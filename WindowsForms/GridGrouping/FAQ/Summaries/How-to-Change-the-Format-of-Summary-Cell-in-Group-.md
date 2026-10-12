@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Change-the-Format-of-Summary-Cell-in-Group- | Windows Forms | Syncfusion
-description: how to change the format of summary cell in group caption
+title: Summary Cell Format in WinForms GridGroupingControl | Syncfusion®
+description: Change the format of summary cells in group captions in Syncfusion® WinForms GridGroupingControl, its summary formatting, display text customization, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Change the Format of Summary Cell in Group Caption
+# How to Change Summary Cell Format in WinForms GridGroupingControl
 
 To change summary cell’s format, TableControlDrawCellDisplayText event is handled. Using DisplayText property the desired format can be applied to the summary cell.
 

@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Events in Windows Forms SplitContainer control | Syncfusion®
-description: Learn about Events support in Syncfusion® Windows Forms SplitContainer (SplitContainerAdv) control and more details.
+title: Events in Windows Forms SplitContainer | Syncfusion®
+description: Events provide notifications when splitters move or are being moved, enabling runtime layout and resize handling.
 platform: windowsforms
 control: Editors Package
 documentation: ug

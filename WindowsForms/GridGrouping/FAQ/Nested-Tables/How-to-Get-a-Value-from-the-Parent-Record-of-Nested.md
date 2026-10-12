@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Get-a-Value-from-the-Parent-Record-of-Neste | Windows Forms | Syncfusion
-description: how to get a value from the parent record of nested table when the dropdown list is clicked
+title: Get Parent Record Value in WinForms GridGroupingControl | Syncfusion®
+description: Get a value from the parent record of a nested table in Syncfusion® WinForms GridGroupingControl, its nested tables, parent records, dropdown handling.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Get a Value from the Parent Record of Nested Table when the Dropdown List is Clicked
+# How to Get Parent Record Value in WinForms GridGroupingControl
 
 Through the nested table's ParentRecord.GetValue() method, the value of the parent record of nested table can be retrieved when we are in the nested table. In QueryCellStyleInfo event, the parent record's value is retrieved as an object. With the object, the sources of the nested tables are changed. The code for QueryCellStyleInfo event is as follows.
 

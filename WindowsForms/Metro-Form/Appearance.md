@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Appearance of the Metro Form | Syncfusion®
-description: This section explains about the UI Appearance and styles of MetroForm for Syncfusion® Essential® Windows Forms
+title: Appearance in Windows Forms Metro Form | Syncfusion®
+description: Appearance customization supports border styling, caption bar settings, icon alignment, colors, and rounded corners.
 platform: WindowsForms
 control: MetroForm
 documentation: ug

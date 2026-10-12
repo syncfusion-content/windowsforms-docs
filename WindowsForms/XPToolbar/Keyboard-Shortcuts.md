@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Keyboard Shortcuts in Windows Forms xptoolbar control | Syncfusion
-description: Learn about Keyboard Shortcuts support in Syncfusion Windows Forms xptoolbar (XPToolbar) control and more details.
+title: Keyboard Shortcuts in Windows Forms XPToolBar | Syncfusion®
+description: Keyboard shortcuts enable executing bar item actions through shortcut keys and displaying custom shortcut text.
 platform: WindowsForms
 control: XPToolBar
 documentation: ug
 ---
 
-# Keyboard Shortcuts in Windows Forms xp toolbar (XPToolbar)
+# Keyboard Shortcuts in Windows Forms XPToolBar
 
 The bar items can be selected through keyboard operation by specifying the shortcuts via the [`Shortcut`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem__ctor_System_String_System_EventHandler_System_Windows_Forms_Shortcut_) property of each item.
 

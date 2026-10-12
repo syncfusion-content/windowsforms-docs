@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Representation in Windows Forms GridGrouping | Syncfusion®
-description: Learn about Data Representation support in Syncfusion® Essential Studio® Windows Forms GridGrouping control and more.
+title: Data Representation in Windows Forms GridGroupingControl | Syncfusion®
+description: Data representation in GridGroupingControl supports organizing, displaying, grouping, and summarizing data efficiently.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# Data Representation in Windows Forms GridGrouping
+# Data Representation in Windows Forms GridGroupingControl
 
 This section deals with different layouts supported by grid grouping control. These layouts help grouping grid to organize data display. For example, if you want to view the data arranged based on values of a specific field, then you can group data columns by the required field.
 
@@ -1371,7 +1371,7 @@ To view a sample on Freezing the Caption Row, see &lt;Installed Location&gt;\Syn
 
 Grid Grouping control allows you to sort table data against one or more columns. The number of columns by which data can be sorted is unlimited. When sorting is applied, grid will rearrange data to match the current sort criteria.
 
-#### SortedColumns Collection
+### SortedColumns Collection
 
 SortedColumns collection defines the sort order for records within groups. Multiple entries can be added with the first entry having precedence while sorting records. The properties and methods in this collection lets you manage elements in the collection. The collection can be viewed as a set of SortColumnDescriptors, one for every column against which the data is sorted. SortColumnDescriptor of a field contains details like the name of a field, sort direction, and optionally a custom comparer and categorization object. The custom comparer and categorizer will allow you to customize sorting.
 

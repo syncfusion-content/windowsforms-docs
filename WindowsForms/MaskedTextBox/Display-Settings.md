@@ -1,12 +1,12 @@
----
+﻿---
 layout: post
-title: Display Settings | WindowsForms | Syncfusion®
-description: Learn here about how to set the display settings of the Syncfusion® Windows Forms MaskedEditBox control.
+title: Display Settings in Windows Forms MaskedTextBox | Syncfusion®
+description: Display settings in MaskedEditBox support separators, cursor positioning, data grouping, and password-style input display.
 platform: windowsforms
 control: MaskedEditBox
 documentation: ug
 ---
-# Display Settings in MaskedEditBox
+# Display Settings in MaskedTextBox (MaskedEditBox)
 
 This section discusses the display settings of the [MaskedEditBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html) control.
 

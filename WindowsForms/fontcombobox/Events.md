@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Events in Windows Forms FontComboBox control | Syncfusion
-description: Learn about Events support in Syncfusion Windows Forms FontComboBox control, its elements and more details.
+title: Events in Windows Forms FontComboBox | Syncfusion®
+description: Events in Windows Forms FontComboBox provide notifications for font selection and index changes, enabling customized handling of user interactions.
 platform: WindowsForms
-control: Editors Package
+control: FontComboBox
 documentation: ug
 ---
 

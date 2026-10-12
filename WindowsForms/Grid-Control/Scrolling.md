@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Scrolling in Windows Forms Grid Control | Syncfusion®
-description: Learn about Scrolling support in Syncfusion® Windows Forms Grid Control, its elements and more details.
+description: The scrolling feature in Grid Control provides pixel scrolling, scroll tips, shared scrollbars, custom styles, and flexible scrolling behavior.
 platform: windowsforms
-control: GridControl
+control: Grid Control
 documentation: ug
 ---
 

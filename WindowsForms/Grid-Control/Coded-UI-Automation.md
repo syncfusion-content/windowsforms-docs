@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Coded UI Automation in Windows Forms Grid Control | Syncfusion®
-description: Learn about Coded UI Automation support in Syncfusion® Windows Forms Grid Control, its elements and more details.
+description: Coded UI automation in Grid Control enables UI testing, recording, playback, assertions, cell validation, and automated interaction support.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 

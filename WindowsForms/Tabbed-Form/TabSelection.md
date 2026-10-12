@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Tab Selection in Windows Forms Tabbed Form control | Syncfusion®
-description: Learn about Tab Selection support in Syncfusion® Windows Forms Tabbed Form (SfTabbedForm) control and more details.
+title: Tab Selection in Windows Forms Tabbed Form | Syncfusion®
+description: Tab selection supports programmatic tab activation and events for controlling and monitoring tab selection changes.
 platform: WindowsForms
 control: SfTabbedForm
 documentation: ug

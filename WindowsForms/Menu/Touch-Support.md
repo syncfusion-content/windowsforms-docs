@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Touch support in Windows Forms Menus Control | Syncfusion
-description: Learn here all about the touch support feature of Syncfusion Windows Forms Menu (Menus) control and more.
+title: Touch support in Windows Forms Menu | Syncfusion
+description: Touch support enables touch-friendly menu interaction, automatic scaling, gesture selection, and context menu access.
 platform: WindowsForms
 control: MainFrameBarManager 
 documentation: ug

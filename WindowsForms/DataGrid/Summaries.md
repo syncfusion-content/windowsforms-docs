@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Summaries | DataGrid Control for Windows Forms | Syncfusion®
-description: This section explains about the summaries feature and it's customization in datagrid control for windows forms
+title: Summaries in Windows Forms Data Grid | Syncfusion®
+description: Summaries in Data Grid support table and group summaries, custom calculations, and data aggregation for meaningful insights and analysis.
 platform: windowsforms
-control: SfDataGrid
+control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
-# Summaries in Windows Forms DataGrid (SfDataGrid)
+# Summaries in Windows Forms Data Grid
 [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) provides support to display the concise information about the data objects using summaries. SfDataGrid provides below three different types of summary rows.
 
 * **Table Summary** – Used to display summary information of table either at top or bottom of SfDataGrid.

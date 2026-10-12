@@ -1,19 +1,24 @@
 ---
 layout: post
-title: Typing Indicator in Windows Forms AI AssistView control | Syncfusion
-description: Learn about the typing indicator feature displayed in the AI AssistView control while the AI processes or generates a response.
+title: Typing Indicator in Windows Forms AI AssistView | Syncfusion
+description: Display a typing indicator while the AI processes or generates a response in the Syncfusion Windows Forms AI AssistView.
 platform: windowsforms
 control: SfAIAssistView
 documentation: ug
 ---
 
-# Typing Indicator in Windows Forms AI AssistView
+# 	Typing Indicator in Windows Forms AI AssistView
 
 Use the [`TypingIndicator`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.SfAIAssistView.html#Syncfusion_WinForms_AIAssistView_SfAIAssistView_TypingIndicator) property to show a typing indicator while the AI is processing or generating a response, giving users real-time feedback and enhancing conversational flow.
 
 The `TypingIndicator` shows an animation representing the AI or user typing a message. The indicator is shown when the [`ShowTypingIndicator`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.SfAIAssistView.html#Syncfusion_WinForms_AIAssistView_SfAIAssistView_ShowTypingIndicator) property is set to `true`.
 
- following `using` directives are included in your file:
+## Prerequisites
+
+- **Required package:** [Syncfusion.SfAIAssistView.WinForms](https://www.nuget.org/packages/Syncfusion.SfAIAssistView.WinForms) NuGet package.
+- A `ViewModel` with `Chats`, `ShowTypingIndicator`, and `CurrentUser` properties exists. See [Getting Started](https://help.syncfusion.com/windowsforms/ai-assistview/getting-started) for setup details.
+- A bot avatar image is added to the project at `Asset\AI_Assist.png`.
+- The following `using` directives are included in your file:
 
 {% tabs %}
 
@@ -26,8 +31,6 @@ using Syncfusion.WinForms.AIAssistView;
 {% endhighlight %}
 
 {% endtabs %}
-
-N> A `ViewModel` class with a `Chats` collection, `ShowTypingIndicator`, `Suggestion`, and `CurrentUser` properties exists. Refer to the [Getting Started](https://help.syncfusion.com/windowsforms/ai-assistview/getting-started) page for setup details.
 
 ## Configuring the Typing Indicator
 
@@ -64,4 +67,12 @@ public partial class Form1 : Form
 
 {% endtabs %}
 
-![WindowsForms AI AssistView control typing indicator](aiassistview_images/windowsforms_aiassistview_typing_indicator.gif)
+![Windows Forms AI AssistView control typing indicator](aiassistview_images/windowsforms_aiassistview_typing_indicator.gif)
+
+## Troubleshooting
+
+| Issue | Possible Cause | Resolution |
+|-------|----------------|------------|
+| The indicator never appears | `ShowTypingIndicator` is not bound, or the bound property is not set to `true`. | Ensure `ShowTypingIndicator = true` is set in the `ViewModel` and the property is bound. |
+| `FileNotFoundException` for `AI_Assist.png` | The bot avatar image is missing from the project. | Add `AI_Assist.png` to the project's `Asset` folder, or update the path. |
+| The indicator shows the wrong avatar/name | `TypingIndicator.Author` is not set. | Assign an `Author` to `TypingIndicator.Author` before the control is shown. |

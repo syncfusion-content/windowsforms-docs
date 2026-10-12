@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Value Settings in Windows Forms Percent TextBox control | Syncfusion®
-description: Learn about Value Settings support in Syncfusion® Windows Forms Percent TextBox control and more details.
+title: Value Settings in Windows Forms PercentTextBox | Syncfusion®
+description: Learn about Value Settings support in Syncfusion Windows Forms PercentTextBox control and more details.
 platform: windowsforms
 control: Editors Package
 documentation: ug
 ---
 
-# Value Settings in Windows Forms Percent TextBox
+# Value Settings in WinForms Percent TextBox
 
-The various values of the PercentTextBox control and their settings are given below.
+The various values of the WinForms Percent TextBox control and their settings are given below.
 
 * [PercentValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.PercentTextBox.html#Syncfusion_Windows_Forms_Tools_PercentTextBox_PercentValue)
 * [DefaultValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html#Syncfusion_Windows_Forms_Tools_NumberTextBoxBase_DefaultValue)
@@ -38,7 +38,7 @@ Me.percentTextBox1.DoubleValue = 0.05
 
 ## Null value settings
 
-There are various settings that can be applied to the PercentTextBox control, when the value of the control is set to 'Null'. These settings are illustrated below.
+There are various settings that can be applied to the WinForms Percent TextBox control, when the value of the control is set to 'Null'. These settings are illustrated below.
 
 * [AllowNull](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.PercentTextBox.html#Syncfusion_Windows_Forms_Tools_PercentTextBox_AllowNull)
 * [NullString](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html#Syncfusion_Windows_Forms_Tools_NumberTextBoxBase_NullString)

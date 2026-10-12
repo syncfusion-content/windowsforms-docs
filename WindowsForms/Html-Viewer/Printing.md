@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Printing in Windows Forms Html Viewer control | Syncfusion®
-description: Learn about Printing support in Syncfusion® Windows Forms Html Viewer (HTMLUI) control and more details.
+title: Printing in Windows Forms HTMLUI control | Syncfusion®
+description: Learn about Printing support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
 platform: windowsforms
-control: HTML UI
+control: HTMLUI
 documentation: ug
 ---
 
-#  Printing in Windows Forms Html Viewer control
+# Printing in WinForms HTML Viewer control
 
-The HTMLUI control supports printing that helps the user in developing a hard copy of the document displayed in the HTMLUI control. Also the Print Preview feature lets the user to preview the page before being printed, and change the page according to the requirements.
+The WinForms HTML Viewer control supports printing that helps the user in developing a hard copy of the document displayed in it. Also the Print Preview feature lets the user to preview the page before being printed, and change the page according to the requirements.
 
 {% tabs %}
 
@@ -85,8 +85,7 @@ End If
 
 {% endtabs %}
 
-Along with printing feature, HTMLUI control supports previewing of the document before printing. This following code snippet shows how the print preview feature is enabled in HTMLUI.
-
+Along with printing feature, WinForms HTML Viewer control supports previewing of the document before printing. This following code snippet shows how the print preview feature is enabled in the control.
 {% tabs %}
 
 {% highlight C# %}
@@ -141,15 +140,15 @@ End Sub
 
 {% endtabs %}
 
-The following figure shows the Print preview page that appears when the corresponding button is clicked. This illustrates the Printing feature in HTMLUI.
+The following figure shows the Print preview page that appears when the corresponding button is clicked. This illustrates the Printing feature in WinForms HTML Viewer.
 
 ![Printing_img1](Printing_images/Printing_img1.png)
 
 
 
-## HTMLUIPrinting sample
+## WinForms HTML Viewer Printing sample
 
-This sample shows how an HTML document available in the HTMLUI can be printed.
+This sample shows how an HTML document available in the WinForms HTML Viewer can be printed.
 
 ![Printing_img2](Printing_images/Printing_img2.jpeg)
 
@@ -160,4 +159,3 @@ This sample shows how an HTML document available in the HTMLUI can be printed.
 By default, this sample can be found under the following location:
 
 ...\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\HTMLUI.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
-

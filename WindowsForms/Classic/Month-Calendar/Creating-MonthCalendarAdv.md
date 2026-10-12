@@ -1,14 +1,15 @@
 ---
 layout: post
-title: Getting Started in Windows Forms xptoolbar control | Syncfusion
-description: Learn about Getting Started support in Syncfusion Windows Forms MonthCalendarAdv(Classic) control and more details.
+title: Getting Started with Windows Forms MonthCalendarAdv | Syncfusion
+description: Learn how to get started with the Syncfusion Windows Forms MonthCalendarAdv control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
 control: MonthCalendarAdv
 documentation: ug
 ---
-# Getting Started in Windows Forms MonthCalendarAdv(Classic)
 
-This section describes how to add a `MonthCalendarAdv` control in a Windows Forms application and overview of its basic functionalities.
+# Getting Started with Windows Forms MonthCalendarAdv
+
+This section describes how to add a `Windows Forms MonthCalendarAdv` control in a Windows Forms application and overview of its basic functionalities.
 
 ## Assembly deployment
 
@@ -78,7 +79,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-**Step 3** : Create `MonthCalendarAdv` control instance and add it to the form.
+**Step 3** : Create `Windows Forms MonthCalendarAdv` control instance and add it to the form.
 
 {% tabs %}
 
@@ -104,7 +105,7 @@ Me.Controls.Add(monthCalendarAdv1)
 
 {% endtabs %}
 
-![MonthCalendarAdv control](CalendarDateTime_images/MonthCalenderAdv-img2.png) 
+![Windows Forms MonthCalendarAdv control](CalendarDateTime_images/MonthCalenderAdv-img2.png) 
 
 ## Configure to allow multiple selection
 

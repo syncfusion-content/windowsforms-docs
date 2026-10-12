@@ -1,15 +1,15 @@
 ---
 layout: post
-title: About Windows Forms ContextMenuStrip control | Syncfusion
-description: Learn here all about introduction of Syncfusion Essential Studio Windows Forms CurrencyEdit control and more details.
+title: About Syncfusion® Windows Forms CurrencyEdit Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms CurrencyEdit control, its features, formatting options, and calculator support.
 platform: WindowsForms
 control: CurrencyEdit
 documentation: ug
 ---
 
-# Windows Forms CurrencyEdit Overview
+# About Syncfusion® WinForms CurrencyEdit Control
 
-The [CurrencyEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyEdit.html) control embeds a CurrencyTextBox control and a button to provide a drop-down calculator to enable calculations with the contents of the CurrencyTextBox. The CurrencyEdit control provides an easy way to collect and display the currency data.
+The [WinForms CurrencyEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyEdit.html) control embeds a CurrencyTextBox control and a button to provide a drop-down calculator to enable calculations with the contents of the CurrencyTextBox. The WinForms CurrencyEdit control provides an easy way to collect and display the currency data.
 
 ![Overview of Currency Edit in WindowsForms](overview_images/windowsforms-currency-edit-overview.png) 
 

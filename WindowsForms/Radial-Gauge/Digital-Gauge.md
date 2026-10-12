@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Digital Gauge in Windows Forms Radial Gauge control | Syncfusion
-description: Learn about Digital Gauge support in Syncfusion Windows Forms Radial Gauge (Gauge) control and more details.
+title: Digital Gauge in Windows Forms Gauge | Syncfusion®
+description: Digital gauge in the Windows Forms displays numeric values in a digital format and supports customization of appearance and display settings.
 platform: WindowsForms
 control: Gauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
-# Digital Gauge in Windows Forms Radial Gauge (Gauge)
+# Digital Gauge in Windows Forms Gauge
 
 [DigitalGauge](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) control is used to display alphanumeric characters in digital (LED display) mode. It is used to display a range of values that uses characters in combination with numbers.
 
@@ -46,7 +47,7 @@ You can create the Windows Forms application with the [DigitalGauge](https://hel
 
 ### Creating the project
 
-Create a new Windows Forms project in Visual Studio to display the DigitalGauge with basic functionalities.
+Create a new Windows Forms project in Visual Studio to display the WinForms Digital Gauge with basic functionalities.
 
 ## Add control via designer
 

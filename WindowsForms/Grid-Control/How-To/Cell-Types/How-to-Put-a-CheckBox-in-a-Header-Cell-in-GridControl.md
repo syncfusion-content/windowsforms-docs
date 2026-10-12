@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to put a checkbox in a header cell in gridcontrol | Syncfusion
-description: Learn here all about how to put a checkbox in a header cell of Syncfusion Windows Forms GridControl control and more. 
+title: Header CheckBox in Windows Forms Grid Control | Syncfusion®
+description: Put a CheckBox in a header cell in Syncfusion® Windows Forms Grid Control using CheckBox cell types, cell events, and value settings and more. 
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to put a CheckBox in a header Cell in Windows Forms GridControl
+# How to Put a CheckBox in a Header Cell in Windows Forms Grid Control
 
 To place a CheckBox in GridControl, you must set CellType to CheckBox and assign string values for CheckedValue and UncheckedValue in the CheckBoxOptions property. The value of CheckBox will be stored to a particular cell in the GridControl. When the CheckBox is clicked, CheckBoxClick event gets triggered. To place a CheckBox in GridDataBoundGrid, two events have to be implemented: QueryCellInfo event, which is used to set the style properties and SaveCellInfo event, which is used to save the cell's value. The value of the CheckBox cannot be stored in GridDataBoundGrid, so any data type or collection can be used to store the value. CheckBoxClick event gets triggered when the CheckBox is clicked.
 

@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Chart Series in Windows Forms Chart control | Syncfusion
-description: Learn about Chart Series support in Syncfusion Essential Studio® Windows Forms Chart control and more details.
+title: Series in Windows Forms Chart | Syncfusion®
+description: Series in the Windows Forms Chart represent data points and support customization of appearance, data binding, and visualization.
 platform: windowsforms
 control: Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
-# Chart Series in Windows Forms Chart
+# Series in Windows Forms Chart
 
 Provide data for the [Windows Forms chart](https://www.syncfusion.com/winforms-ui-controls/chart) through the ChartSeries. ChartSeries acts as a wrapper around data that is to be displayed, and associates styles with the data. The data that is to be displayed is contained in either the IChartSeriesModel or the IEditableChartSeriesModel implementation. The style used to display the points is stored in a contained implementation of IChartSeriesStylesModel.
 
@@ -8370,7 +8371,7 @@ You can set the co-ordinates (XValue and the YValue property), symbols and their
 
 ![Chart Series](Chart-Series_images/Chart-Series_img149.jpeg)
 
-#### Programmatically
+### Programmatically
 
 * Creating and Customizing the Custom Point.
 

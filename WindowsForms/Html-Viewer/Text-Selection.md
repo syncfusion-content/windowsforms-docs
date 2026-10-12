@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Text Selection in Windows Forms Html Viewer control | Syncfusion®
-description: Learn about Text Selection support in Syncfusion® Windows Forms Html Viewer (HTMLUI) control and more details.
+title: Text Selection in Windows Forms HTMLUI | Syncfusion®
+description: Learn about Text Selection support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
 platform: windowsforms
-control: HTMLUIControl
+control: HTMLUI
 documentation: ug
 ---
 
-# Text Selection in Windows Forms Html Viewer (HTMLUI)
+# Text Selection in WinForms HTML Viewer
 
-An interesting feature of the HTMLUI control is its ability to access the selected text. This feature helps the user to select required texts available in the HTMLUI control and use the selected text in the applications. The [SelectedText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html#Syncfusion_Windows_Forms_HTMLUI_HTMLUIControl_SelectedText) property of the HTMLUI control is used for this purpose.
+An interesting feature of the WinForms HTML Viewer control is its ability to access the selected text. This feature helps the user to select required texts available in the control and use the selected text in the applications. The [SelectedText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html#Syncfusion_Windows_Forms_HTMLUI_HTMLUIControl_SelectedText) property of the control is used for this purpose.
 
 
 {% tabs %}
@@ -36,9 +36,9 @@ Me.label1.Text = Me.HtmluiControl1.SelectedText
 
 {% endtabs %}
 
-### CopyTextToClipBoard
+## CopyTextToClipBoard
 
-The HTMLUI control allows the user to copy the text selected in the HTMLUI control to the Clipboard, and paste it in other applications. The following code snippet shows how this feature is implemented with the HTMLUI control.
+The WinForms HTML Viewer control allows the user to copy the text selected in the control to the Clipboard, and paste it in other applications. The following code snippet shows how this feature is implemented with the control.
 
 {% tabs %}
 
@@ -80,9 +80,9 @@ End If
 
 {% endtabs %}
 
-## HTMLUITextSelection sample
+## WinForms HTML Viewer TextSelection sample
 
-This sample demonstrates the support for Text Selection in HTMLUI.
+This sample demonstrates the support for Text Selection in WinForms HTML Viewer.
 
 
 
@@ -95,6 +95,5 @@ This sample demonstrates the support for Text Selection in HTMLUI.
 By default, this sample can be found under the following location:
 
 ...\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\HTMLUI.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
-
 
 

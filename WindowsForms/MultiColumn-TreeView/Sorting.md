@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Sorting in Windows Forms MultiColumn TreeView control | Syncfusion®
-description: Learn about Sorting support in Syncfusion® Windows Forms MultiColumn TreeView control and more details.
+title: Sorting in Windows Forms MultiColumn TreeView | Syncfusion®
+description: Sorting supports ordering nodes by text, checkbox, or tag values with customizable comparison options.
 platform: WindowsForms
 control: MultiColumnTreeView
 documentation: ug

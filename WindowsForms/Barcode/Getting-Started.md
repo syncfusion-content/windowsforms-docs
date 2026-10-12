@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Barcode control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential Studio Windows Forms Barcode control and more.
+title: Getting Started with Windows Forms Barcode | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms Barcode control. Explore setup, configuration, barcode generation, and customization options.
 platform: windowsforms
 control: SfBarcode
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 # Getting Started with Windows Forms Barcode
 This section provides a quick overview for working with the [Barcode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Barcode.SfBarcode.html) for WinForms.
@@ -18,11 +19,11 @@ Namespace: Syncfusion.Windows.Forms.Barcode
 Assembly: Syncfusion.SfBarcode.Windows
 {% endhighlight %}
 
-## Creating an application with SfBarcode
+## Creating an application with WinForms Barcode
 In this walkthrough, you will create a WinForms application that contains the [SfBarcode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Barcode.SfBarcode.html) control.
 
 ### Creating the project
-Create a new Windows Forms Project in Visual Studio to display the SfBarcode.
+Create a new Windows Forms Project in Visual Studio to display the WinForms Barcode.
 
 ### Adding control via Designer
 The SfBarcode control can be added to the application by dragging it from the Toolbox and dropping it in the Designer. The required assembly references will be added automatically.

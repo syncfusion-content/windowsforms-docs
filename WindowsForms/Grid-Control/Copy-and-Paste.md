@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Clipboard Support in Windows Forms Grid Control | Syncfusion®
-description: Learn about Clipboard Support support in Syncfusion® Windows Forms Grid Control, its elements and more details.
+description: Clipboard support in Grid Control enables cut, copy, paste, clipboard events, range operations, cell validation, and customization of clipboard behavior.
 platform: windowsforms
-control: GridControl
+control: Grid Control
 documentation: ug
 ---
 # Clipboard Support in Windows Forms Grid Control

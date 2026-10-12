@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Getting Started with Windows Forms RadialMenu | Syncfusion
-description: Learn about Keyboard Support in Syncfusion Windows Forms RadialMenu (RadialMenu) control and more details.
+title: Keyboard Support in Windows Forms RadialMenu | Syncfusion®
+description: Keyboard support enables key tips, SuperAccelerator integration, shortcut access, and customizable accelerator appearance.
 platform: WindowsForms
 control: RadialMenu
 documentation: ug

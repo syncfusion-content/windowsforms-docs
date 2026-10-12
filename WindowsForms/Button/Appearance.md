@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: Appearance in Windows Forms Button control | Syncfusion®
-description: Learn about Appearance support in Syncfusion® Windows Forms Button (SfButton) control and more details.
+description: Appearance in SfButton enables customizing backgrounds, borders, images, themes, and visual states for enhanced button styling.
 platform: windowsforms
 control: SfButton
 documentation: ug

@@ -27,11 +27,11 @@ _ABS(number)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number is the real number for which you want the absolute value.
+* `number`: The real number for which you want the absolute value.
 
 
 
@@ -55,11 +55,11 @@ _ACOT(number) or DEGREES ACOT(number)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number that is the cotangent of the angle. This must be a real number.
+* `number`: The cotangent of the angle. This must be a real number.
 
 
 
@@ -91,11 +91,11 @@ _ACOTH(number)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number that is to be converted into cotangent.
+* `number`: Number that is to be converted into cotangent.
 
 
 
@@ -127,11 +127,11 @@ _ARABIC( romannumeral )_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* romannumeral is the text given by you to convert it into Arabic numeral.
+* `romannumeral`: The text given by you to convert it into Arabic numeral.
 
 
 
@@ -167,11 +167,11 @@ _ACOS(number)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number is the cosine of the angle that you want and must be between -1 and 1.
+* `number`: The cosine of the angle that you want and must be between -1 and 1.
 
 
 
@@ -191,11 +191,11 @@ _ACOSH(number)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number is any real number that is greater than or equal to 1.
+* `number`: Any real number that is greater than or equal to 1.
 
 
 
@@ -215,11 +215,11 @@ _ASIN(number)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number is the sine of the angle that you want and must be between -1 and 1.
+* `number`: The sine of the angle that you want and must be between -1 and 1.
 
 
 
@@ -241,11 +241,11 @@ _ASINH(number)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number is any real number which is to be converted.
+* `number`: Any real number which is to be converted.
  
 
 
@@ -265,11 +265,11 @@ _ATAN(number)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number is the tangent of the angle that you want.
+* `number`: The tangent of the angle that you want.
 
 
 
@@ -289,15 +289,15 @@ _ATAN2(x_num,y_num)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* x_num is the X coordinate of the point.
+* `x_num`: The X coordinate of the point.
 
 
 
-* y_num is the Y coordinate of the point.
+* `y_num`: The Y coordinate of the point.
 
 
 
@@ -329,11 +329,11 @@ _ATANH(number)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number is any real number that must be greater than or equal to -1 and lesser than or equal to 1.
+* `number`: Any real number that must be greater than or equal to -1 and lesser than or equal to 1.
 
 
 
@@ -353,19 +353,19 @@ _BASE(number, radix, [min_length])_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number is the real number which is to be converted. It must be greater than or equal to 0 and lesser than or equal to 2^53.
+* `number`: The real number which is to be converted. It must be greater than or equal to 0 and lesser than or equal to 2^53.
 
 
 
-* radix is the base radix which is to convert a number into base. The value of radix must be greater than or equal to 2 and lesser than or equal to 36.
+* `radix`: The base radix which is to convert a number into base. The value of radix must be greater than or equal to 2 and lesser than or equal to 36.
 
 
 
-* min_length is the minimum length of the returned string. It is optional and must be greater than or equal to 0.
+* `min_length` (optional): The minimum length of the returned string. It must be greater than or equal to 0.
 
 
 
@@ -405,15 +405,15 @@ _COMBIN(number, number_chosen)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number is the number of items.
+* `number`: The number of items.
 
 
 
-* number_chosen is the number of items in each combination.
+* `number_chosen`: The number of items in each combination.
 
 
 
@@ -449,11 +449,11 @@ _COT(number)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number-angle radians to get the cotangent value.
+* `number`: Angle radians to get the cotangent value.
 
 
 
@@ -484,11 +484,11 @@ _COTH(number)_
 
 
 
-**Where:**
+**Parameters:**
 
 
 
-* number - angle radians to get the hyperbolic cotangent value.
+* `number`: Angle radians to get the hyperbolic cotangent value.
 
 
 
@@ -520,11 +520,11 @@ _CSC(number)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number-angle radians to get the cosecant value.
+* `number`: Angle radians to get the cosecant value.
 
 
 
@@ -556,11 +556,11 @@ _CSCH(number)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number-angle radians to get the hyperbolic cosecant value.
+* `number`: Angle radians to get the hyperbolic cosecant value.
 
 
 
@@ -592,11 +592,11 @@ _COS(number)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number is the angle in radians for which you want the cosine.
+* `number`: The angle in radians for which you want the cosine.
 
 
 
@@ -616,11 +616,11 @@ _COSH(number)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number is any real number for which you want to find the hyperbolic cosine.
+* `number`: Any real number for which you want to find the hyperbolic cosine.
 
 
 
@@ -642,15 +642,15 @@ _COMBINA(number1, number2)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number1 is total number of items.
+* `number1`: Total number of items.
 
 
 
-* number2 is total number of items to be chosen.
+* `number2`: Total number of items to be chosen.
 
 
 
@@ -682,15 +682,15 @@ _CEILING(number, significance)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number is the value you want to round off.
+* `number`: The value you want to round off.
 
 
 
-* significance is the multiple to which you want to round.
+* `significance`: The multiple to which you want to round.
 
 
 
@@ -722,19 +722,19 @@ _CEILING(number, [significance],  [mode])_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number-number that is rounded up to a multiple of significance.
+* `number`: Number that is rounded up to a multiple of significance.
 
 
 
-* significance-multiple to which the number is rounded.
+* `significance`: Multiple to which the number is rounded.
 
 
 
-* mode is for negative numbers; it controls whether the number is rounded toward or away from zero.
+* `mode`: For negative numbers; it controls whether the number is rounded toward or away from zero.
 
 
 
@@ -754,15 +754,15 @@ _DECIMAL(text, radix)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* text is a string.
+* `text`: A string.
 
 
 
-* radix is an integer.
+* `radix`: An integer.
 
 
 
@@ -790,11 +790,11 @@ _DEGREES(angle)_
 
 
 
-**where:** 
+**Parameters:**
 
 
 
-* angle is the angle in radians that you want to convert.
+* `angle`: The angle in radians that you want to convert.
 
 
 
@@ -814,11 +814,11 @@ _EVEN(number)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number is the value that is to be rounded.
+* `number`: The value that is to be rounded.
 
 
 
@@ -846,11 +846,11 @@ _EXP(number)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number is the exponent applied to the base e.
+* `number`: The exponent applied to the base e.
 
 
 
@@ -870,11 +870,11 @@ _FACT(number)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number is the non-negative number for which you want the factorial of. If the number is not an integer, it is truncated.
+* `number`: The non-negative number for which you want the factorial of. If the number is not an integer, it is truncated.
 
 
 
@@ -894,11 +894,11 @@ _FACTDOUBLE (number)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number-This value is required.
+* `number`: This value is required.
 
 
 
@@ -911,6 +911,69 @@ _FACTDOUBLE (number)_
 
 
 * `#VALUE!` Occurs when any of the given argument is non-numeric
+
+
+## GROUPBY
+
+The `GROUPBY` function creates a summary of data by grouping, aggregating, sorting, and filtering values based on the specified fields, and returns the aggregated results.
+
+**Syntax:**
+
+_GROUPBY(row_fields, values, function, [field_headers], [total_depth], [sort_order], [filter_array], [field_relationship])_
+
+**Parameters:**
+
+* `row_fields`: A column-oriented array or range that contains the values used to group rows and generate row headers. Multiple columns can be provided for multiple grouping levels.
+
+* `values`: A column-oriented array or range of data to aggregate. Multiple columns can be provided for multiple aggregations.
+
+* `function`: An aggregation function (SUM, AVERAGE, COUNT, PERCENTOF, etc.) or a lambda expression that aggregates values. A vector of functions can be provided for multiple aggregations.
+
+* `field_headers`: A number specifying whether row_fields and values have headers and whether field headers should be returned. Valid values are:
+
+	* `Missing or omitted`: Automatic detection based on data types (default)
+
+	* `0`: No headers
+
+	* `1`: Has headers, don't show in results
+
+	* `2`: No headers, but generate and show
+
+	* `3`: Has headers and show in results
+
+* `total_depth`: A number determining whether row headers should contain totals. Valid values are:
+
+	* `Missing or omitted`: Automatic (grand totals and subtotals where possible) (default)
+
+	* `0`: No totals
+
+	* `1`: Grand totals only
+
+	* `2`: Grand totals and subtotals
+
+	* `-1`: Grand totals at top
+
+	* `-2`: Grand and subtotals at top
+
+* `sort_order`: A number or vector of numbers indicating how rows should be sorted. Positive numbers sort in ascending order; negative numbers sort in descending order. Numbers correspond to columns in row_fields followed by columns in values.
+
+* `filter_array`: A column-oriented 1D array of Booleans indicating whether each row should be included. The array length must match the row_fields length.
+
+* `field_relationship`: A number specifying the relationship between multiple row_fields columns. Valid values are:
+
+	* `0`: Hierarchy (default) - Later columns respect hierarchy of earlier columns
+
+	* `1`: Table - Each column sorted independently
+
+**Remarks:**
+
+* For subtotals, row_fields must have at least 2 columns.
+
+* When using Hierarchy field_relationship, the sort order of later columns takes into account the hierarchy of earlier columns.
+
+* Subtotals are not supported with Table field_relationship (1) as they require a hierarchical data structure.
+
+* If multiple aggregation functions are provided, the orientation of the vector determines whether they are laid out row-wise or column-wise in the output.
 
 
 
@@ -930,11 +993,11 @@ _INT(number)_
 
 
 
-**where:** 
+**Parameters:**
 
 
 
-* number is the real number that you want to round down to an integer.
+* `number`: The real number that you want to round down to an integer.
 
 
 
@@ -954,11 +1017,11 @@ _LN(number)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number is the positive real number for which, you want the natural logarithm.
+* `number`: The positive real number for which, you want the natural logarithm.
 
 
 
@@ -986,15 +1049,15 @@ _LOG(number, base)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number is the positive real number for which, you want the logarithm.
+* `number`: The positive real number for which, you want the logarithm.
 
 
 
-* base is the base of the logarithm. If base is omitted, it is assumed to be 10.
+* `base`: The base of the logarithm. If base is omitted, it is assumed to be 10.
 
 
 
@@ -1014,11 +1077,11 @@ _LOG10(number)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number is the positive real number for which, you want the base-10 logarithm.
+* `number`: The positive real number for which, you want the base-10 logarithm.
 
 
 
@@ -1038,11 +1101,11 @@ _MMULT(array1, array2)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* array1, array 2 are required arrays that needs to be multiplied.
+* `array1`, `array2`: Required arrays that needs to be multiplied.
 
 
 
@@ -1086,15 +1149,15 @@ _MOD(number, divisor)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number is an integer to be divided.
+* `number`: An integer to be divided.
 
 
 
-* divisor is an integer by which to divide.
+* `divisor`: An integer by which to divide.
 
 
 
@@ -1126,11 +1189,11 @@ _ODD(number)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number is a value to be rounded.
+* `number`: A value to be rounded.
 
 
 
@@ -1162,15 +1225,15 @@ _POWER(number, power)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number is the base number. It can be any real number.
+* `number`: The base number. It can be any real number.
 
 
 
-* power is the exponent to which the base number is raised.
+* `power`: The exponent to which the base number is raised.
 
 
 
@@ -1190,11 +1253,11 @@ _RADIANS(angle)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* angle is an angle in degree which is to be converted into radian.
+* `angle`: An angle in degree which is to be converted into radian.
 
 
 
@@ -1242,11 +1305,11 @@ _SECH(number)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number is the angle in radians to calculate the hyperbolic secant.
+* `number`: The angle in radians to calculate the hyperbolic secant.
 
 
 
@@ -1282,11 +1345,11 @@ _SIN(number)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number is the angle in radians for which you want the sine.
+* `number`: The angle in radians for which you want the sine.
 
 
 
@@ -1306,11 +1369,11 @@ _SINH(number)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number is any real number.
+* `number`: Any real number.
 
 
 
@@ -1330,11 +1393,11 @@ _SEC(number)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number-angle radians to get the secant value.
+* `number`: Angle radians to get the secant value.
 
 
 
@@ -1366,11 +1429,11 @@ _SUBTOTAL (function_Number, ref1, (ref2)...)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* A function_Number is required. This specifies which function to use for calculating subtotals within a list. Here is the list of functions supported by Syncfusion:
+* `function_Number` (required): This specifies which function to use for calculating subtotals within a list. Here is the list of functions supported by Syncfusion:
 
 
 
@@ -1472,11 +1535,11 @@ VAR</td></tr>
 
 
 
-* ref1-The first named range that is used for the subtotal. This value is required.
+* `ref1`: The first named range that is used for the subtotal. This value is required.
 
 
 
-* ref2-This value is optional.
+* `ref2`: This value is optional.
 
 
 
@@ -1512,11 +1575,11 @@ _PRODUCT(number1, number2, ...)_
 
 
 
-**where:** 
+**Parameters:**
 
 
 
-* number1, number2, ... are numbers that you want to multiply.
+* `number1, number2, ...`: Numbers that you want to multiply.
 
 
 
@@ -1629,15 +1692,15 @@ _ROUNDDOWN(number, num_digits)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number is any real number that you want rounded down.
+* `number`: Any real number that you want rounded down.
 
 
 
-* num_digits is the number of digits to which you want to round number.
+* `num_digits`: The number of digits to which you want to round number.
 
 
 
@@ -1677,11 +1740,11 @@ _SQRT(number)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number is the number for which you want the square root.
+* `number`: The number for which you want the square root.
 
 
 
@@ -1709,19 +1772,19 @@ _SUMIF(range, criteria, sum_range)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* range is the range of cells you want evaluated.
+* `range`: The range of cells you want evaluated.
 
 
 
-* criteria is the criteria in the form of a number, expression, or text that defines the cells to be added. For example, criteria can be expressed as ">32" or some other logical expression.
+* `criteria`: The criteria in the form of a number, expression, or text that defines the cells to be added. For example, criteria can be expressed as ">32" or some other logical expression.
 
 
 
-* Sum_range is the actual cells to sum.
+* `sum_range`: The actual cells to sum.
 
 
 
@@ -1753,15 +1816,15 @@ _SUMPRODUCT(array1, [array2], [array3], ...)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* array1 is an argument whose components you want to multiply and then add.
+* `array1`: An argument whose components you want to multiply and then add.
 
 
 
-* array2, array3… are array arguments 2 to 255 whose components you want to multiply and then add.
+* `array2, array3…`: Array arguments 2 to 255 whose components you want to multiply and then add.
 
 
 
@@ -1793,11 +1856,11 @@ _TAN(number)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number is the tangent of the angle that you want.
+* `number`: The tangent of the angle that you want.
 
 
 
@@ -1817,15 +1880,15 @@ _TRUNC( number, [num_digits] )_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number is the initial number that is truncated.
+* `number`: The initial number that is truncated.
 
 
 
-* [num_digits] is an optional argument that specifies the number of decimal places to truncate the supplied number to. The default value is 0.
+* `num_digits` (optional): Specifies the number of decimal places to truncate the supplied number to. The default value is 0.
 
 
 
@@ -1845,11 +1908,11 @@ _ISTEXT(text)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* text is the value you want to test if it is a string or not.
+* `text`: The value you want to test if it is a string or not.
 
 
 
@@ -1869,11 +1932,11 @@ _SIGN(number)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number is any real number to get the sign.
+* `number`: Any real number to get the sign.
 
 
 
@@ -1893,11 +1956,11 @@ _TANH(number)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number is any real number that you want to calculate the hyperbolic tangent. 
+* `number`: Any real number that you want to calculate the hyperbolic tangent. 
 
 
 
@@ -1917,11 +1980,11 @@ _SUMSQ(number1, [number2], ...)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* Number1, number2, ...  : Number1 is required, subsequent numbers are optional. A series of numeric values that are to be squared and then summed together.
+* `number1, number2, ...`: Number1 is required, subsequent numbers are optional. A series of numeric values that are to be squared and then summed together.
 
 
 
@@ -1960,15 +2023,15 @@ _SUMX2MY2(array_x, array_y)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* Array_x :The first array or range of values used in the calculation.
+* `array_x`: The first array or range of values used in the calculation.
 
 
 
-* Array_y  :The second array or range of values used in the calculation.
+* `array_y`: The second array or range of values used in the calculation.
 
 
 
@@ -2002,15 +2065,15 @@ _SUMX2PY2(array_x, array_y)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* Array_x :The first array or range of values used in the calculation.
+* `array_x`: The first array or range of values used in the calculation.
 
 
 
-* Array_y  :The second array or range of values used in the calculation.
+* `array_y`: The second array or range of values used in the calculation.
 
 
 
@@ -2044,15 +2107,15 @@ _SUMXMY2(array_x, array_y)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* Array_x :The first array or range of values used in the calculation.
+* `array_x`: The first array or range of values used in the calculation.
 
 
 
-* Array_y  :The second array or range of values used in the calculation.
+* `array_y`: The second array or range of values used in the calculation.
 
 
 
@@ -2086,12 +2149,11 @@ _MULTINOMIAL(number1, [number2], ...)_
 
 
 
-**where:**
+**Parameters:**
 
 
  
-* Number1, number2, ... :   Number1 is required, subsequent numbers are optional. This is one or more arguments which you want to calculate the
-multinomial.
+* `number1, number2, ...`: Number1 is required, subsequent numbers are optional. This is one or more arguments which you want to calculate the multinomial.
 
 
 **Remarks:**
@@ -2121,15 +2183,15 @@ _MROUND(number, multiple)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* Number  :  The value hat should be rounded.
+* `number`: The value that should be rounded.
 
 
 
-* Multiple : The multiple to to use when round a number.
+* `multiple`: The multiple to use when round a number.
 
 
 
@@ -2160,15 +2222,15 @@ _RANDBETWEEN(bottom, top)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* Bottom   : The smallest integer value that the function will return.
+* `bottom`: The smallest integer value that the function will return.
 
 
 
-* Top   :  The largest integer value that the function will return.
+* `top`: The largest integer value that the function will return.
 
 
 
@@ -2188,11 +2250,11 @@ _SQRTPI(number)_
 
 
 
-**where:**
+**Parameters:**
 
 
   
-* Number : The number is the positive numeric value that you want to multiplied by pi.
+* `number`: The positive numeric value that you want to multiplied by pi.
 
 
 
@@ -2220,15 +2282,15 @@ _QUOTIENT(numerator, denominator)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* Numerator     : This is a number.The dividend  value.
+* `numerator`: This is a number. The dividend value.
 
 
 
-* Denominator   :This is a number.The divisor value.
+* `denominator`: This is a number. The divisor value.
 
 
 
@@ -2256,11 +2318,11 @@ _GCD(number1, [number2], ...)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* Number1, number2, ...    Number1 is required, subsequent numbers are optional. 1 to 255 values.
+* `number1, [number2], ...`: Number1 is required, subsequent numbers are optional. 1 to 255 values.
 
 
 
@@ -2300,11 +2362,11 @@ _LCM(number1, [number2], ...)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* Number1, number2, ...    Number1 is required, subsequent numbers are optional. The argument(numbers) are upto 255 numeric values for which you want to calculate the least common multiple. If any value is not an integer, it is truncated.
+* `number1, number2, ...`: Number1 is required, subsequent numbers are optional. The argument(numbers) are upto 255 numeric values for which you want to calculate the least common multiple. If any value is not an integer, it is truncated.
 
 
 
@@ -2336,15 +2398,15 @@ _ROMAN(number, [form])_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* Number :   The Arabic numeral you want to convert to Roman numeral.
+* `number`: The Arabic numeral you want to convert to Roman numeral.
 
 
 
-* Form (Optional) :A number specifying the type of roman numeral you want.
+* `form` (optional): A number specifying the type of roman numeral you want.
 
 
 
@@ -2376,23 +2438,23 @@ _SUMIFS(sum_range, criteria_range1, criteria1, [criteria_range2, criteria2], ...
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* Sum_range     :   The range of cells to sum.
+* `sum_range`: The range of cells to sum.
 
 
 
-* Criteria_range1 :The first range(Criteria_range1) to evaluate.
+* `criteria_range1`: The first range(Criteria_range1) to evaluate.
 
 
 
-* Criteria1  : It used to find which cells to add. Criteria1 is applied against Criteria_range1 .  
+* `criteria1`: It used to find which cells to add. Criteria1 is applied against Criteria_range1.
 
 
 
-Criteria_range2, criteria2, …(optional)::The first range(Criteria_range2) to evaluate.Additional ranges and their associated criteria. 
+* `criteria_range2, criteria2, …` (optional): The first range(Criteria_range2) to evaluate. Additional ranges and their associated criteria. 
 
 
 
@@ -2412,11 +2474,11 @@ _MDETERM(array)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* Array  : The array argument is an array of numeric values  A numeric array with an equal number of rows and columns.
+* `array`: The array argument is an array of numeric values. A numeric array with an equal number of rows and columns.
 
 
 
@@ -2436,11 +2498,11 @@ _MINVERSE(array)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* Array  :  the array argument is an array of values representing a square matrix A numeric array with an equal number of rows and columns.
+* `array`: The array argument is an array of values representing a square matrix. A numeric array with an equal number of rows and columns.
 
 
 
@@ -2476,11 +2538,11 @@ _MUNIT(dimension)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* Dimension is an integer value that specifies the dimension of the unit matrix. It returns an array. The dimension has to be greater than zero.
+* `dimension`: An integer value that specifies the dimension of the unit matrix. It returns an array. The dimension has to be greater than zero.
 
 
 
@@ -2508,23 +2570,23 @@ _SERIESSUM(x, n, m, coefficients)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* X :The input value to the power series.
+* `x`: The input value to the power series.
 
 
 
-* N :The first power to which you want to raise x.
+* `n`: The first power to which you want to raise x.
 
 
 
-* M:The step by which to increase n for each term in the series.
+* `m`: The step by which to increase n for each term in the series.
 
 
 
-* Coefficients : An array of coefficients that multiplied by each successive power of x. The number of values in coefficients determines the number of terms in the power series.   
+* `coefficients`: An array of coefficients that multiplied by each successive power of x. The number of values in coefficients determines the number of terms in the power series.   
 
 
 
@@ -2560,27 +2622,27 @@ _XLOOKUP(lookup_value, lookup_array, return_array, [if_not_found], [match_mode],
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* lookup_value: The value to search for. If omitted, `XLOOKUP` returns blank cells in lookup_array.  
+* `lookup_value`: The value to search for. If omitted, `XLOOKUP` returns blank cells in lookup_array.  
 
 
 
-* lookup_array: The range or array to search for lookup_value.
+* `lookup_array`: The range or array to search for lookup_value.
 
 
 
-* return_array: The range or array from which to return a corresponding value.
+* `return_array`: The range or array from which to return a corresponding value.
 
 
 
-* [if_not_found] (Optional):  The value to return if no match is found. If omitted, `#N/A` is returned.   
+* `if_not_found` (optional): The value to return if no match is found. If omitted, `#N/A` is returned.   
 
 
 
-* [match_mode] (Optional): Specifies the match type:   
+* `match_mode` (optional): Specifies the match type:   
 
 
 
@@ -2600,7 +2662,7 @@ _XLOOKUP(lookup_value, lookup_array, return_array, [if_not_found], [match_mode],
 
 
 
-* [search_mode] (Optional): Specifies the search order:
+* `search_mode` (optional): Specifies the search order:
 
 
 <<<<<<< HEAD
@@ -2663,19 +2725,19 @@ _XMATCH(lookup_value, lookup_array, [match_mode], [search_mode])_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* lookup_value: The value to search for.  
+* `lookup_value`: The value to search for.  
 
 
 
-* lookup_array: The array or range to search.   
+* `lookup_array`: The array or range to search.   
 
 
 
-* [match_mode] (Optional): Specifies the match type:   
+* `[match_mode]` (optional): Specifies the match type:   
 
 
 
@@ -2695,7 +2757,7 @@ _XMATCH(lookup_value, lookup_array, [match_mode], [search_mode])_
 
 
 
-* [search_mode] (Optional): Specifies the search order:   
+* `[search_mode]` (optional): Specifies the search order:   
 
 
 
@@ -2750,19 +2812,19 @@ _FLOOR.MATH(number, significance, mode)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number: The number to be rounded down.
+* `number`: The number to be rounded down.
 
 
 
-* significance (Optional):  The multiple to which to round down. Defaults to 1.
+* `significance` (optional): The multiple to which to round down. Defaults to 1.
 
 
 
-* mode (Optional): Controls rounding of negative numbers. If omitted, negative numbers are rounded away from zero.
+* `mode` (optional): Controls rounding of negative numbers. If omitted, negative numbers are rounded away from zero.
 
 
 
@@ -2805,15 +2867,15 @@ _FLOOR.PRECISE(number, [significance])_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number: The number to be rounded down.
+* `number`: The number to be rounded down.
 
 
 
-* significance (Optional): The multiple to which the number should be rounded. Defaults to 1.
+* `significance` (optional): The multiple to which the number should be rounded. Defaults to 1.
 
 
 <<<<<<< HEAD
@@ -2852,15 +2914,15 @@ _ISO.CEILING(number, [significance])_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number: The value to be rounded up.
+* `number`: The value to be rounded up.
 
 
 
-* significance (Optional): The multiple to which number is to be rounded. If omitted, it defaults to 1.
+* `significance` (optional): The multiple to which number is to be rounded. If omitted, it defaults to 1.
 
 
 
@@ -2895,15 +2957,15 @@ _CEILING.PRECISE(number, [significance])_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* number: The value to be rounded up.
+* `number`: The value to be rounded up.
 
 
 
-* significance (Optional): The multiple to which the number is rounded. If omitted, it defaults to 1.
+* `significance` (optional): The multiple to which the number is rounded. If omitted, it defaults to 1.
 
 
 
@@ -2938,11 +3000,11 @@ _HSTACK(array1, [array2], ...)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* array: The arrays to be appended horizontally.
+* `array`: The arrays to be appended horizontally.
 
 
 
@@ -2989,11 +3051,11 @@ _VSTACK(array1, [array2], ...)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* array: The arrays to be appended vertically.
+* `array`: The arrays to be appended vertically.
 
 
 
@@ -3037,11 +3099,11 @@ _PHIL(x)_
 
 
 
-**where:**
+**Parameters:**
 
 
 
-* x: The number for which the  probability density is calculated.
+* `x`: The number for which the probability density is calculated.
 
 
 
@@ -3073,23 +3135,23 @@ The `EUROCONVERT` function converts a currency between the Euro and member curre
 
 
 
-**Where:**
+**Parameters:**
 
 
 
-* number: The currency value you want to convert, or a reference to a cell containing the value.
+* `number`: The currency value you want to convert, or a reference to a cell containing the value.
 
 
 
-* source: A three-letter string, or reference to a cell containing the string, corresponding to the ISO (International Organization for Standardization) code for the source currency. 
+* `source`: A three-letter string, or reference to a cell containing the string, corresponding to the ISO (International Organization for Standardization) code for the source currency. 
 
 
 
-* target: A three-letter string, or reference to a cell containing the string, corresponding to the ISO (International Organization for Standardization) code of the target currency.
+* `target`: A three-letter string, or reference to a cell containing the string, corresponding to the ISO (International Organization for Standardization) code of the target currency.
 
 
 
-* full_precision: A logical value that specifies how to display the result:
+* `full_precision`: A logical value that specifies how to display the result:
 
 
 
@@ -3101,7 +3163,7 @@ The `EUROCONVERT` function converts a currency between the Euro and member curre
 
 
 
-* triangulation_precision: An integer (greater than or equal to 3) that specifies the number of significant digits for the intermediate Euro value when converting between two Euro member currencies.
+* `triangulation_precision`: An integer (greater than or equal to 3) that specifies the number of significant digits for the intermediate Euro value when converting between two Euro member currencies.
 
 
 

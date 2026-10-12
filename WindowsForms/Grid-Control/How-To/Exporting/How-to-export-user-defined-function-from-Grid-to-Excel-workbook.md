@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Exporting in GridControl | WinForms | Syncfusion
-description: This section describes how to export user-defined function from grid to excel workbook in WindowsForms platform.
+title: Export User-Defined Functions to Excel in Grid Control | Syncfusion®
+description: Export user-defined functions from Syncfusion® Windows Forms Grid Control to Excel workbooks using GridExcelConverterControl and custom Excel add-ins and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to export user-defined function from Grid to Excel workbook
+# Export User-Defined Functions to Excel in Windows Forms Grid Control
 
 To export user-defined formula library function from Grid to Excel:
 
 1. Create an Excel Add-In file (*.xla) including the user-defined function as illustrated in the following link: [https://docs.microsoft.com/en-us/previous-versions/office/developer/office-xp/aa140990(v=office.10)](https://docs.microsoft.com/en-us/previous-versions/office/developer/office-xp/aa140990(v=office.10)).
 2. Now, bind add-in file path and custom method name with GridExcelConverterControl through AddCustomFunction method.
 
-### Creating the XLA File
+## Creating the XLA File
 
 To create an XLA file in Excel:
 

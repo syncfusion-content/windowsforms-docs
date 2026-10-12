@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Keyboard Navigation in Windows Forms Popup control | Syncfusion®
-description: Learn about Keyboard Navigation support in Syncfusion® Windows Forms Popup (PopupControlContainer) control and more details.
+title: Keyboard Navigation in Windows Forms Popup | Syncfusion®
+description: Keyboard navigation supports dialog key handling, popup closing through keyboard shortcuts, and customizable key processing.
 platform: windowsforms
 control: PopupControlContainer
 documentation: ug

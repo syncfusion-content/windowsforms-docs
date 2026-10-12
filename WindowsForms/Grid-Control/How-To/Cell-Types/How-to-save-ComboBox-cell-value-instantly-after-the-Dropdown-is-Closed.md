@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Save ComboBox cell value instantly after dropdown closed | Syncfusion
-description: Learn here all about how to save combobox cell value instantly after the dropdown is closed of Syncfusion Windows Forms GridControl control and more.
+title: Save ComboBox Value in Windows Forms Grid Control | Syncfusion®
+description: Save a ComboBox cell value instantly after the dropdown closes in Syncfusion® Windows Forms Grid Control using cell editing events and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to save ComboBox cell value instantly after the dropdown is closed
+# How to Save ComboBox Value in Windows Forms Grid Control
 
 To save ComboBox cell value immediately after the dropdown is closed; SaveCellInfo event must be triggered. To initiate SaveCellInfo event, EndEdit() has to be called. Also, in the CurrentCellCloseDropDown event CurrentCell.EndEdit() is called.
 

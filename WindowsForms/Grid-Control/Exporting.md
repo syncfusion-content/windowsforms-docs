@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Exporting in Windows Forms Grid Control | Syncfusion®
-description: Learn about Exporting support in Syncfusion® Windows Forms Grid Control, its elements and more details.
+description: Export Grid Control data to Excel, PDF, Word, CSV, and HTML with support for formatting, ranges, headers, footers, and export customization.
 platform: windowsforms
-control: GridControl
+control: Grid Control
 documentation: ug
 ---
 

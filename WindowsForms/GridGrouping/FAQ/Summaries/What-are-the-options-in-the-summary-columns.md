@@ -1,13 +1,13 @@
 ---
 layout: post
-title: What-are-the-options-in-the-summary-columns | Windows Forms | Syncfusion
-description: what are the options in the summary columns
+title: Summary Column Options in WinForms GridGroupingControl | Syncfusion®
+description: The available options in summary columns in Syncfusion® WinForms GridGroupingControl, its summary settings, filtering behavior, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# What are the Options in the Summary Columns
+# What Are the Summary Column Options in WinForms GridGroupingControl
 
 The options in the summary columns are illustrated using the code below.
 

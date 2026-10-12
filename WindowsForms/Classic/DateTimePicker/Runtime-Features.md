@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Runtime Features in Windows Forms xptoolbar control | Syncfusion
-description: Learn about Runtime Features support in Syncfusion Windows Forms DateTimePickerAdv(Classic) control and more details.
+title: Runtime Features in Windows Forms DateTimePickerAdv | Syncfusion
+description: Learn about runtime features in Syncfusion Windows Forms DateTimePickerAdv control and more details.
 platform: WindowsForms
 control: EditorPackage 
 documentation: ug
 ---
-# Runtime Features in Windows Forms DateTimePickerAdv(Classic)
+
+# Runtime Features in Windows Forms DateTimePickerAdv
 
 This section covers the below topics:
 

@@ -1,12 +1,13 @@
 ---
 layout: post
-title: RunTime Features in Windows Forms xptoolbar control | Syncfusion
-description: Learn about RunTime Features support in Syncfusion Windows Forms MonthCalendarAdv(Classic) control and more details.
+title: Runtime Features in Windows Forms MonthCalendarAdv | Syncfusion
+description: Learn about runtime features in Syncfusion Windows Forms MonthCalendarAdv control, including date selection range.
 platform: WindowsForms
 control: CalendarDateTime
 documentation: ug
 ---
-# RunTime Features in Windows Forms MonthCalendarAdv(Classic)
+
+# Runtime Features in Windows Forms MonthCalendarAdv
 
 ## Selecting a date
 

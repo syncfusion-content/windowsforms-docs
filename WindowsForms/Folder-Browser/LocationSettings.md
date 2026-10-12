@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Location Settings in Windows Forms Folder Browser control | Syncfusion®
-description: Learn about Location Settings support in Syncfusion® Windows Forms Folder Browser control and more details.
+title: Location Settings in Windows Forms FolderBrowser | Syncfusion®
+description: Learn about Location Settings support in Syncfusion Windows Forms FolderBrowser control and more details.
 platform: windowsforms
 control: Tools
 documentation: ug
 ---
 
-# Location Settings in Windows Forms Folder Browser
+# Location Settings in WinForms Folder Browser
 
-This section deals with the location settings of the FolderBrowser control.
+This section deals with the location settings of the WinForms Folder Browser control.
 
-The FolderBrowser allows the user to provide the location from which browsing should start. It also provides various options from which the root folder for browsing can be selected. The following properties illustrate this.
+The WinForms Folder Browser allows the user to provide the location from which browsing should start. It also provides various options from which the root folder for browsing can be selected. The following properties illustrate this.
 
 * [StartLocation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.FolderBrowser.html#Syncfusion_Windows_Forms_FolderBrowser_StartLocation)
 * [CustomStartLocation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.FolderBrowser.html#Syncfusion_Windows_Forms_FolderBrowser_CustomStartLocation)
@@ -62,6 +62,6 @@ Me.folderBrowser1.SelectLocation = "C:\\Program Files\\Syncfusion\\Essential Stu
  ![Location settings](Overview_images/Overview_img410.jpeg) 
  
  
-A Sample which demonstrates the Location Settings of FolderBrowser is available in the below sample installation path.
+A Sample which demonstrates the Location Settings of WinForms Folder Browser is available in the below sample installation path.
 
 ..My Documents\Syncfusion\EssentialStudio\_Version Number_\Windows\Tools.Windows\Samples\2.0\Editors Package\FolderBrowserDemo

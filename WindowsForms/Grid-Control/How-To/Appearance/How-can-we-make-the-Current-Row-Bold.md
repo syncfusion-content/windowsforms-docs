@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How can we make the current row Bold | Windows Forms | Syncfusion
-description: Learn here all about how can we make the current row bold of Syncfusion Windows Forms GridControl and more.
+title: How to Bold Current Row in WinForms Grid Control | Syncfusion®
+description: Bold the current row in Syncfusion® Windows Forms Grid Control using events to dynamically update row styles based on the active cell and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How can we make the current row Bold in Windows Forms GridControl
+# How to Bold Current Row in Windows Forms Grid Control
 
 To make the current row bold, use the below code sample.
 

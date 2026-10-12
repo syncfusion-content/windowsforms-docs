@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Display image in bar items in Windows Forms PopupMenu | Syncfusion®
-description: Learn about Display image in bar items support in Syncfusion® Windows Forms PopupMenu control and more details.
+title: Display Image in Bar Items in Windows Forms PopupMenu | Syncfusion®
+description: Display images in bar items using enabled, disabled, and highlighted states to improve menu recognition and usability.
 platform: windowsforms
 control: PopupMenu
 documentation: ug
 ---
 
-# Display image in bar items in Windows Forms PopupMenu
+# Display Image in Bar Items in Windows Forms PopupMenu
 
 Displaying an image besides each bar item helps users to easily identify the operation through iconic representation and also to improve the visual appearance of the popup menu. Images can associated with a bar item depending upon its state either it is enabled, disabled, highlighted upon it.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Behavior Settings in Windows Forms statusbaradvpanel | Syncfusion
-description: Learn about Behavior Settings support in Syncfusion Windows Forms statusbaradvpanel (StatusBarAdvPanel) control and more details.
+title: Behavior Settings in Windows Forms StatusBarAdvPanel | Syncfusion®
+description: Behavior settings in Windows Forms StatusBarAdvPanel define panel interactions and runtime functionality to meet application requirements.
 platform: WindowsForms
 control: StatusBarAdvPanel
 documentation: ug
 ---
 
-# Behavior Settings in Windows Forms statusbaradvpanel
+# Behavior Settings in Windows Forms StatusBarAdvPanel
 
 ## Panel types
 

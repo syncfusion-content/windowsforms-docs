@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Windows Forms xptoolbar control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms ButtonAdv(Classic) control and more details.
+title: About Syncfusion® Windows Forms ButtonAdv Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms ButtonAdv(Classic) control and more details.
 platform: WindowsForms
 control: ButtonAdv
 documentation: ug
 ---
 
-# Windows Forms ButtonAdv(Classic) Overview
+# About Syncfusion® Windows Forms ButtonAdv (Classic)
 
 ButtonAdv is an advanced button control capable of displaying  images with different alignments and various border styles. It contains some additional feature to the standard Windows Forms Button. It can be configured into any of the predefined ButtonTypes such as Calculator, Up, Down, and so on. Also it can afford the XP or Office styles.
 

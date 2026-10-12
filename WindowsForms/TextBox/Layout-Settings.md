@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Layout Settings in Windows Forms TextBox control | Syncfusion
-description: Learn about Layout Settings support in Syncfusion Windows Forms TextBox (TextBoxExt) control and more details.
+title: Layout Settings in Windows Forms TextBox | Syncfusion®
+description: Layout settings in TextBoxExt provide options to configure minimum and maximum control sizes and layout behavior.
 platform: WindowsForms
 control: TextBoxExt
 documentation: ug

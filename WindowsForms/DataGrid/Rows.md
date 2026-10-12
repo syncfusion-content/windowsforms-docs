@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Rows in WinForms DataGrid Control | Syncfusion®
-description: This section explains about the rows related customization such as row header, header row, freeze panes in datagrid control for windows forms
+title: Rows in Windows Forms Data Grid | Syncfusion®
+description: Rows in Data Grid support row headers, header customization, frozen rows and columns, row styling, and record management features.
 platform: windowsforms
-control: SfDataGrid
+control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
-# Rows in Windows Forms DataGrid (SfDataGrid)
+# Rows in Windows Forms Data Grid
 
 ## Row Header
 

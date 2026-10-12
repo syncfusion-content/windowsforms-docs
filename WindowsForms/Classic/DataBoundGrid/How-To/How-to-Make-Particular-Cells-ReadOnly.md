@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to Make Particular Cells ReadOnly | Windows Forms | Syncfusion
-description: Learn about How to Make Particular Cells Readonly support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
+title: Set Cells Read-Only in WinForms GridDataBoundGrid | Syncfusion®
+description: Make specific cells read-only in Syncfusion® WinForms GridDataBoundGrid by setting the ReadOnly property in the QueryCellInfo event.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 
-# How to Make Particular Cells ReadOnly in Windows Forms
+# How to Make Particular Cells Read-Only in WinForms GridDataBoundGrid
 
 This page explains How to Make Particular Cells ReadOnly and more details.
 

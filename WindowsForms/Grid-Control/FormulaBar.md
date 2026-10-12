@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Formula Bar in Windows Forms Grid Control | Syncfusion®
-description: Learn about Formula Bar support in Syncfusion® Windows Forms Grid Control, its elements and more details.
+description: Formula bar support in Grid Control lets users view and edit cell values and formulas, enable autosuggestions, customize appearance, and use multiline editing.
 platform: windowsforms
-control: GridControl
+control: Grid Control
 documentation: ug
 
 ---

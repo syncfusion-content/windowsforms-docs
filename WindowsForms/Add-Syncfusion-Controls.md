@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Steps to add Syncfusion® Essential® Windows Forms controls 
-description: Learn here about Steps to Add Syncfusion® controls support in Syncfusion® Essential® Windows Forms, and more.
+title: Add Syncfusion® Controls in Windows Forms | Syncfusion®
+description: Learn steps to add Syncfusion® controls to your Windows Forms applications through Designer, Code-Behind, Project Templates, and Item Templates.
 platform: windowsforms
 control: Introduction
 documentation: ug
 ---
 
-# Add Windows Forms Syncfusion<sup>®</sup> Controls 
+# Add Syncfusion® Controls in Windows Forms 
 
 The Syncfusion<sup>®</sup> Windows Forms controls can be added in a Visual Studio projects by using either of the following ways,
 

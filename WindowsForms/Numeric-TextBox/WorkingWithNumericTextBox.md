@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Working with NumericTextBox in WinForms Numeric TextBox | Syncfusion®
-description: Learn about Working with NumericTextBox support in Syncfusion® Windows Forms Numeric TextBox (SfNumericTextBox) control and more details.
+title: Working with SfNumericTextBox in Windows Forms | Syncfusion®
+description: Learn about Working with NumericTextBox support in Syncfusion Windows Forms Numeric TextBox (SfNumericTextBox) control and more details.
 platform: windowsforms
 control: SfNumericTextBox
 documentation: ug
 ---
 
-# Working with NumericTextBox in Windows Forms Numeric TextBox
+# Working with WinForms Numeric TextBox
 
 ## ValueChanged Event
 
-This [ValueChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html) event triggers when the value of the SfNumericTextBox is changed. The Value will be changed according to the ValueChangedMode property.
+This [ValueChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html) event triggers when the value of the WinForms Numeric TextBox is changed. The Value will be changed according to the ValueChangedMode property.
 
 ## Event Data
 
@@ -33,7 +33,7 @@ Value changed Event
 OldValue
 </td>
 <td>
-This property returns the last Value of the SfNumericTextBox
+This property returns the last Value of the WinForms Numeric TextBox
 </td>
 </tr>
 <tr>
@@ -41,7 +41,7 @@ This property returns the last Value of the SfNumericTextBox
 NewValue
 </td>
 <td>
-This property returns the new Value of the SfNumericTextBox
+This property returns the new Value of the WinForms Numeric TextBox
 </td>
 </tr>
 </table>

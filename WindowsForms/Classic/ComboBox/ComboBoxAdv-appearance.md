@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ComboBoxAdv Appearance in Windows Forms xptoolbar control | Syncfusion
-description: Learn about ComboBoxAdv Appearance support in Syncfusion Windows Forms ComboBoxAdv(Classic) control and more details.
+title: Appearance in Windows Forms ComboBoxAdv(Classic) | Syncfusion®
+description: Appearance in the Windows Forms ComboBoxAdv(Classic) control enable customization of styles, colors, and visual elements.
 platform: WindowsForms
 control: ComboBoxAdv
 documentation: ug
 ---
 
-# ComboBoxAdv Appearance in Windows Forms ComboBoxAdv(Classic)
+# Appearance in Windows Forms ComboBoxAdv(Classic)
 
 This section discusses the below topics. 
 

@@ -1,17 +1,18 @@
 ---
 layout: post
-title: Range Settings in Windows Forms Bullet Graph control | Syncfusion®
-description: Learn about Range Settings support in Syncfusion® Windows Forms Bullet Graph control and more details.
+title: Range Settings in Windows Forms Bullet Graph | Syncfusion®
+description: Range settings in the Windows Forms Bullet Graph enable configuration of qualitative ranges to visualize performance levels and target thresholds.
 platform: windowsforms
 control: Bullet Graph
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
-# Range Settings in Windows Forms Bullet Graph
+# Range Settings in WinForms Bullet Graph
 
-Ranges for a Bullet Graph are a collection of qualitative ranges. A qualitative range is a visual element that ends at a specified [RangeEnd](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.QualitativeRange.html#Syncfusion_Windows_Forms_BulletGraph_QualitativeRange_RangeEnd) at the start of the previous range's RangeEnd. The qualitative ranges are arranged according to each RangeEnd value.
+Ranges for a WinForms Bullet Graph are a collection of qualitative ranges. A qualitative range is a visual element that ends at a specified [RangeEnd](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.QualitativeRange.html#Syncfusion_Windows_Forms_BulletGraph_QualitativeRange_RangeEnd) at the start of the previous range's RangeEnd. The qualitative ranges are arranged according to each RangeEnd value.
 
-### Customizing Range:
+## Customizing Range:
 
 The width of the ranges is customized by setting the [QualitativeRangesSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_QualitativeRangesSize) property. By changing the [RangeStroke](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.QualitativeRange.html#Syncfusion_Windows_Forms_BulletGraph_QualitativeRange_RangeStroke) of the qualitative range, the stroke of the range is customized. By setting the [RangeOpacity](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.QualitativeRange.html#Syncfusion_Windows_Forms_BulletGraph_QualitativeRange_RangeOpacity) of the qualitative range, the opacity of the range is modified.
 
@@ -43,7 +44,7 @@ Me.Controls.Add(bullet)
 
 ![WinForms Bullet Graph range customization](Features_images/Features_img7.png)
 
-### Binding RangeStroke to Ticks and Labels:
+## Binding RangeStroke to Ticks and Labels:
 
 By setting [BindRangeStrokeToLabels](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_BindRangeStrokeToLabels), the stroke of the labels is set related to the stroke of the specified ranges. Similarly, by setting [BindRangeStrokeToTicks](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_BindRangeStrokeToTicks), the stroke of the ticks is set related to the stroke of the specified ranges.
 

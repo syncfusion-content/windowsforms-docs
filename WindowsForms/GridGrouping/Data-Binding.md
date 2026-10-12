@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Binding in Windows Forms GridGrouping control | Syncfusion®
-description: Learn about Data Binding support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
+title: Data Representation in Windows Forms GridGroupingControl | Syncfusion®
+description: The data representation feature in GridGroupingControl enables displaying, organizing, and visualizing bound data in a flexible tabular format.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# Data Binding in Windows Forms GridGrouping control
+# Data Representation in Windows Forms GridGroupingControl
 To display data in GridGroupingControl, it must be bound to the data source. GridGroupingControl supports variety of data sources such as [DataTables](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-5.0), [DataSets](https://learn.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-5.0), or any component that implements interface [IList](https://learn.microsoft.com/en-us/dotnet/api/system.collections.ilist?view=net-5.0), [IBindingList](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.bindinglist-1?view=net-5.0), [ITypedList](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedlist?view=net-5.0), or [IListSource](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ilistsource?view=net-5.0). The data source can have multiple nested tables, which will be displayed hierarchically by GridGroupingControl. This section explains about the different types of data binding mechanisms supported by GridGroupingControl.
 
 ## Data binding using ADO.NET

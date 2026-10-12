@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to change the look of a cell's border in GridControl | Syncfusion
-description: Learn here all about how to change the look of a cell's border of Syncfusion Windows Forms Gridcontrol and more.
+title: How to Customize CellBorder in WinForms Grid Control | Syncfusion®
+description: Change the look of a cell border in Syncfusion® Windows Forms Grid Control using border styles, colors, weights, and margin settings and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to change the look of a cell's border
+# How to Customize a Cell Border in Windows Forms Grid Control
 
 Use the Borders property of [GridStyleInfo](/windowsforms/Grid/Cell-Style-Architecture#gridstyleinfo-class-overview) to change the style and the appearance of the grid cells border. Each border side of the cell can be configured individually with GridBorder value. There is a BorderMargins property to control margins on all four sides. 
 

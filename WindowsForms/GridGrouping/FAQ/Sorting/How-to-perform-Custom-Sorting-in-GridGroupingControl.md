@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-perform-Custom-Sorting-in-GridGroupingContr | Windows Forms | Syncfusion
-description: how to perform custom sorting in gridgroupingcontrol
+title: Perform Custom Sorting in WinForms GridGroupingControl | Syncfusion®
+description: Perform custom sorting in Syncfusion® WinForms GridGroupingControl, its sorting customization, column sorting behavior, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Perform Custom Sorting in GridGroupingControl
+# How to Perform Custom Sorting in WinForms GridGroupingControl
 
 To use custom sorting in GridGroupingControl, you need to disable default sorting using the TableControlQueryAllowSortColumn and the TableControlCellClick events. 
 

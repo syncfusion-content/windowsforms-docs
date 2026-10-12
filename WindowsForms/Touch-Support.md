@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Touch support for Syncfusion® Windows Forms controls
-description: Learn here about the touch supports for Syncfusion® Essential Studio® Windows Forms controls and touch Gestures.
+title: Touch Support in Windows Forms controls | Syncfusion®
+description: Learn about touch support and gesture capabilities for Syncfusion® Windows Forms controls and their interactions.
 platform: windowsforms
 control: General
 documentation: ug
 ---
 
-# Touch Support in Windows Forms controls
+# Touch Support in Syncfusion® Windows Forms controls
 
 ## Gesture
 

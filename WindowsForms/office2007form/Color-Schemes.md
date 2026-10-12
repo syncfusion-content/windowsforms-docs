@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Color Schemes in Windows Forms Office2007Form control | Syncfusion®
-description: Learn about Color Schemes support in Syncfusion® Windows Forms Office2007Form control and more details.
+title: Configure Color Schemes in Windows Forms Office2007Form | Syncfusion®
+description: Color schemes support Office-inspired themes, managed colors, Aero theme integration, and background color customization.
 platform: WindowsForms
 control: Office2007 Form
 documentation: ug
 ---
 
-# Color Schemes in Windows Forms Office2007Form
+# Configure Color Schemes in Windows Forms Office2007Form
 
 Office2007Form supports following office color schemes which can be edited through the `ColorScheme` property.
 

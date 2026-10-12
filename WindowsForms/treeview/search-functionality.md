@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: search-functionality | WindowsForms | Syncfusion®
-description: Learn here about search functionality of Syncfusion® Windows Forms TreeView control, its elements and more details.
+title: Search-functionality in Windows Forms TreeView | Syncfusion®
+description: Search functionality provides find-and-replace operations, search navigation, filtering options, and search events.
 platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
 
-# Search Functionality in WinForms TreeView(SfTreeView)
+# Search Functionality in WinForms TreeView (TreeViewAdv)
 
 This document describes how to use the built-in search and replace feature of the TreeViewAdv control. The find and replace feature enables users to search and replace a specific tree node present in the TreeViewAdv control. You can implement the fastest Find and Replace functionality in the TreeViewAdv control by using the TreeViewAdvFindReplaceDialog class. This class provides the methods that are necessary to perform a find and replace operation.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Capture-Mouse-and-Key-Events-When-the-Text-box-cell-is-in-an-active-state | Windows Forms | Syncfusion
-description: how to capture mouse and key events when the text box cell is in an active state
+title: Capture Mouse, Key Events in Windows Forms Grid Control | Syncfusion®
+description: Capture mouse and key events when a TextBox cell is active in Syncfusion® Windows Forms Grid Control using cell renderer events and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to capture Mouse and Key events when the text box cell is in an active state
+# How to Capture Mouse and Key Events in Windows Forms Grid Control
 
 The embedded text box control gets the mouse actions while the text box is active. You can subscribe to the embedded text box's events inside a cell by accessing it through the cell's renderer. 
 

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Advanced Features in Windows Forms MultiColumn TreeView | Syncfusion
-description: Learn about Advanced Features support in Syncfusion Windows Forms MultiSelectionComboBox control and more details.
+title: Advanced Features in WinForms MultiSelectionComboBox | Syncfusion®
+description: Explore advanced features in the Windows Forms MultiSelectionComboBox control to enhance selection, display, and user interaction capabilities.
 platform: WindowsForms
-control: Editors Package
+control: MultiSelectionComboBox
 documentation: ug
 ---
 

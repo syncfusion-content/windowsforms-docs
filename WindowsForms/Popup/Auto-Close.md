@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Auto Close  in Windows Forms Popup control | Syncfusion®
-description: Learn about Auto Close  support in Syncfusion® Windows Forms Popup (PopupControlContainer) control and more details.
+title: Auto Close in Windows Forms Popup | Syncfusion®
+description: Auto close support hides popups when users click outside the container and provides options to customize closing behavior.
 platform: windowsforms
 control: PopupControlContainer
 documentation: ug
 ---
 
-# Auto Close  in Windows Forms Popup (PopupControlContainer)
+# Auto Close in Windows Forms Popup (PopupControlContainer)
 
 The auto close option allows to close the pop-up container, when user clicks anywhere outside the control. To control this default behavior, i.e, to display the popup even if there are any mouse actions, set [`IgnoreMouseMessages`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html#Syncfusion_Windows_Forms_PopupControlContainer_IgnoreMouseMessages) property to `true`.
 

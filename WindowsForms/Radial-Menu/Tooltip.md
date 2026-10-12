@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Tooltip in Windows Forms RadialMenu control | Syncfusion
-description: Learn about Tooltip support in Syncfusion Windows Forms RadialMenu (RadialMenu) control and more details.
+title: Tooltip in Windows Forms RadialMenu | Syncfusion®
+description: Tooltip support displays contextual information for radial menu items when users hover over menu elements.
 platform: WindowsForms
 control: RadialMenu
 documentation: ug

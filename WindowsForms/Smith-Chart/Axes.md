@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Axes in Windows Forms Smith Chart control | Syncfusion®
-description: Learn about Axes support in Syncfusion® Windows Forms Smith Chart (SfSmithChart) control and more details.
+title: Axes in Windows Forms Smith Chart | Syncfusion®
+description: Axes in the Windows Forms Smith Chart define chart coordinates, scales, labels, and grid lines for accurate data visualization.
 platform: windowsforms
 control: SfSmithChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
-# Axes in Windows Forms Smith Chart (SfSmithChart)
+# Axes in Windows Forms Smith Chart
 
 The Smith chart supports the following two axes for plotting:
 

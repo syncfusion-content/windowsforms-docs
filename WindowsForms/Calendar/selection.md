@@ -1,23 +1,24 @@
 ---
 layout: post
-title: Selection in Windows Forms Calendar control | Syncfusion
-description: Learn about Selection support in Syncfusion Windows Forms Calendar (SfCalendar) control and more details.
+title: Selection in Windows Forms Calendar | Syncfusion
+description: Learn how to select single or multiple dates in Windows Forms Calendar control with various selection modes and configurations.
 platform: WindowsForms
 control: SfCalendar
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
-# Selection in Windows Forms Calendar (SfCalendar)
+# Selection in Windows Forms Calendar
 
 The SfCalendar allows you to select one or more dates. The selected date in the calendar can be changed by the mouse, keyboard, and touch interaction.
 
 ## Change selection
 
-The `SfCalendar` control allows you to change the selection by clicking a specific date. 
+The `Windows Forms Calendar` control allows you to change the selection by clicking a specific date. 
 
 ### Change selection through keyboard
 
-The selected date of the `SfCalendar` control can be changed by the keyboard. `Up/Down` and `Left/Right` arrow keys help you to change the selection according to the keyboard interaction. 
+The selected date of the `Windows Forms Calendar` control can be changed by the keyboard. `Up/Down` and `Left/Right` arrow keys help you to change the selection according to the keyboard interaction. 
 
 ### Change selection programmatically
 

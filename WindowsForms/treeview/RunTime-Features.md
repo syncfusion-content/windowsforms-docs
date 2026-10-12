@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: RunTime-Features | WindowsForms | Syncfusion®
-description: Learn here about RunTime features of Syncfusion® Windows Forms TreeView control, its elements and more details.
+title: RunTime Features in Windows Forms TreeView | Syncfusion®
+description: Runtime features include context menus, scrolling, hot tracking, tooltips, and node editing capabilities.
 platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
 
-# RunTime Features in WinForms TreeView(SfTreeView)
+# RunTime Features in WinForms TreeView (TreeViewAdv)
 
 This section will walk you through the following runtime features of TreeViewAdv Control.
 

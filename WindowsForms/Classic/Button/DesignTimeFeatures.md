@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: DesignTime in Windows Forms xptoolbar control | Syncfusion
-description: Learn about DesignTime support in Syncfusion Windows Forms ButtonAdv(Classic) control and more details.
+title: DesignTime Features in Windows Forms ButtonAdv | Syncfusion®
+description: Design-time features provide Smart Tag support for configuring text alignment, styles, visual themes, and button collections.
 platform: WindowsForms
 control: Tools
 documentation: ug

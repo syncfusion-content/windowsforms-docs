@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to align radio buttons in Windows Forms GridControl | Syncfusion
-description: Learn here all about how to align radio buttons of Syncfusion Windows Forms GridControl control and more.
+title: How to Align Radio Buttons in Windows Forms Grid Control | Syncfusion®
+description: Align radio buttons in Syncfusion® Windows Forms Grid Control using the RadioButtonAlignment property to display buttons in vertical, horizontal order and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to align radio buttons in Windows Forms GridControl
+# How to Align Radio Buttons in Windows Forms Grid Control
 
 The Windows Forms Grid control includes support for displaying radio button of the RadioButton cell type in both vertical and horizontal order. By default, RadioButton cell aligns the buttons in horizontal order. The display order can be changed using RadioButtonAlignment property.
 

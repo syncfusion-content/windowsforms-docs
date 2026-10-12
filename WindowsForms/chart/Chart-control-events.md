@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Events in Windows Forms Chart control | Syncfusion
-description: Learn about Events support in Syncfusion Essential Studio® Windows Forms Chart control and more details.
+title: Events in Windows Forms Chart | Syncfusion®
+description: Events in the Windows Forms Chart enable handling user interactions, chart actions, and custom event-driven behavior.
 platform: windowsforms
 control: Chart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Events in Windows Forms Chart

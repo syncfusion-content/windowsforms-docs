@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-To-Release-Tab-Focus-from-Grid | Windows Forms | Syncfusion
-description: how to release tab focus from grid
+title: Release Tab Focus from WinForms GridGroupingControl | Syncfusion®
+description: Release tab focus from Syncfusion® WinForms GridGroupingControl, its keyboard navigation behavior, focus management, and more.
 platform: windowsforms
-control: Grid
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Release Tab Focus from Grid
+# How to Release Tab Focus from WinForms GridGroupingControl
 
 When you set ActiveControl variable to Grid__control, focus will be on Grid control. This may not allow you to navigate to other controls in the form. To overcome this difficulty, set ActiveControl to Grid control. Then set WantTabKey property to false. This helps you navigate to other controls in the form.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Serialization in Windows Forms GridGrouping control | Syncfusion®
-description: Learn about Serialization support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
-platform: WindowsForms
-control: GridGrouping
+title: Serialization in Windows Forms GridGroupingControl | Syncfusion®
+description: Serialization in Windows Forms GridGroupingControl supports XML serialization, schema persistence, look and feel settings, and GridExcelFilter serialization.
+platform: windowsforms
+control: GridGroupingControl
 documentation: ug
 ---
 
-# Serialization in Windows Forms GridGrouping control
+# Serialization in Windows Forms GridGroupingControl
 Serialization is the process of saving the state of an object into a stream of bytes for further use. The reverse of this process called Deserialization. This section will explain about the different types of serialization techniques available for the GridGroupingControl. 
 
 ## XML Serialization 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: About Windows Forms Navigation Pane control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms Navigation Pane (GroupBar) control, its elements and more details.
+title: About Syncfusion® Windows Forms GroupBar Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms GroupBar control and more details.
 platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---
-# Windows Forms Navigation Pane (GroupBar) Overview
+# About Syncfusion® Windows Forms GroupBar Control
 
 The `GroupBar` control provides a navigation UI similar to Microsoft Outlook. It has a container to host controls within it. Use it to host a categorized collection of items and custom controls.
 

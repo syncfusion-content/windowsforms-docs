@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-freeze-specified-columns | Windows Forms | Syncfusion
-description: how to freeze specified columns
+title: Freeze Specified Columns in WinForms GridGroupingControl | Syncfusion®
+description: Freeze specified columns in Syncfusion® WinForms GridGroupingControl, its column freezing functionality, freeze ranges, scrolling behavior, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Freeze Specified Columns
+# How to Freeze Specified Columns in WinForms GridGroupingControl
 
 You can freeze Specified columns by making use of the code given below.
 

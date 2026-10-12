@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-get-the-row-position-of-AddNewRecord-in-Gri | Windows Forms | Syncfusion
-description: how to get the row position of addnewrecord in gridgroupingcontrol
+title: AddNewRecord RowPosition in WinForms GridGroupingControl | Syncfusion®
+description: Get the row position of AddNewRecord in Syncfusion® WinForms GridGroupingControl, its record change handling, filtered records, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Get the Row Position of AddNewRecord in GridGroupingControl
+# How to Get AddNewRecord RowPosition in WinForms GridGroupingControl
 
 You can get the row index of AddNewRecord using SourceListRecordChanged event handler. In the event handler, you can check e.Action property and get row position from FilteredRecordsCollection.
 

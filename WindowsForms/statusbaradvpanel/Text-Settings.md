@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Text Settings in Windows Forms statusbaradvpanel control | Syncfusion
-description: Learn about Text Settings support in Syncfusion Windows Forms statusbaradvpanel (StatusBarAdvPanel) control and more details.
+title: Text Settings in Windows Forms StatusBarAdvPanel | Syncfusion®
+description: Text settings in Windows Forms StatusBarAdvPanel control the display, formatting, and alignment of panel text content.
 platform: WindowsForms
 control: StatusBarAdvPanel
 documentation: ug
 ---
 
-# Text Settings in Windows Forms statusbaradvpanel (StatusBarAdvPanel)
+# Text Settings in Windows Forms StatusBarAdvPanel
 
 StatusBarAdvPanel has several text settings which will be discussed in this section.
 

@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Keyboard support in Windows Forms Menus Control | Syncfusion
-description: Learn here all about Keyboard support feature of Syncfusion Windows Forms Menu (Menus) control and more.
+title: Keyboard support in Windows Forms Menu | Syncfusion
+description: Keyboard support enables menu navigation through shortcuts, access keys, mnemonic text, and keyboard interactions.
 platform: WindowsForms
 control: MainFrameBarManager 
 documentation: ug

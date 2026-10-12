@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Keyboard and Mouse interaction | SfDateTimeEdit | Syncfusion
-description: SfDateTimeEdit control provides functionality for navigation and value changes through the keyboard and mouse interaction.
+title: Navigation in Windows Forms DateTimePicker | Syncfusion
+description: Learn about keyboard and mouse navigation in Windows Forms DateTimePicker control for efficient date and time selection.
 platform: WindowsForms
 control: SfDateTimeEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
-# Navigation in Windows Forms DateTimePicker (SfDateTimeEdit)
+# Navigation in Windows Forms DateTimePicker
 
 The `SfDateTimeEdit` provides navigation and `Value` changes through the keyboard and mouse interaction in mask mode of the `DateTimeEditingMode`, and also provides free style text editing support for date and time information. The `SfDateTimeEdit` allows you to change the [SelectedField](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_SelectedField) by using <kbd>Right</kbd> and <kbd>Left</kbd> arrows through keyboard interaction and this can be restricted by setting the [InterceptArrowKeys](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_InterceptArrowKeys) to `false`.
 
@@ -67,7 +68,7 @@ In `Mask` edit mode, the `Value` of `SfDateTimeEdit` can be changed through <kbd
 
 In `Mask` edit mode, the `Value` of `SfDateTimeEdit` can be changed through up and down buttons. To make the DateTimeEdit an up-down control, set the `ShowUpDown` to `true`, and the DateTimeEdit control can be used as up-down only when the `DateTimeEditingMode` is `Mask`. The SfDateTimeEdit spins the value of [SelectedField](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_SelectedField) (month, day, year, hour, second, and minute) to one step up or down based on the up and down buttons press. The `SelectedField` of SfDateTimeEdit provides the information about FieldType and FieldValue. The `FieldType` of SelectedField in the SfDateTimeEdit indicates the type of selected `DateTimeField`, and the `FieldValue` of SelectedField in the SfDateTimeEdit provides the text in the selected `DateTimeField`.
 
-The `SfDateTimeEdit` allows you to change the `Value` by mouse wheel action. But this mouse wheel changing of value can be applicable only in mask mode `DateTimeEditing`. This value change by mouse wheel can be restricted by setting the [AllowValueChangeOnMouseWheel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_AllowValueChangeOnMouseWheel) to `false`.
+The `Windows Forms DateTimePicker` allows you to change the `Value` by mouse wheel action. But this mouse wheel changing of value can be applicable only in mask mode `DateTimeEditing`. This value change by mouse wheel can be restricted by setting the [AllowValueChangeOnMouseWheel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_AllowValueChangeOnMouseWheel) to `false`.
 
 {% tabs %}
 

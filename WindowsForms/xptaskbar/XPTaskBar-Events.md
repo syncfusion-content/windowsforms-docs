@@ -1,12 +1,12 @@
----
+﻿---
 layout: post
-title: XPTaskBar Events in Windows Forms xptaskbar control | Syncfusion®
-description: Learn about XPTaskBar Events support in Syncfusion® Windows Forms xptaskbar (XPTaskBar) control and more details.
+title: Events in Windows Forms XPTaskBar | Syncfusion®
+description: XPTaskBar events provide notifications for animations, item clicks, state changes, sizing updates, and custom drawing.
 platform: windowsforms
 control: XPTaskBar
 documentation: ug
 ---
-# XPTaskBar Events in Windows Forms xp taskbar (XPTaskBar)
+# Events in Windows Forms XPTaskBar
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 

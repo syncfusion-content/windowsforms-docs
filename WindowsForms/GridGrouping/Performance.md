@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Performance in Windows Forms GridGrouping control | Syncfusion®
-description: Learn about Performance support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
-platform: WindowsForms
-control: GridGrouping
+title: Performance in Windows Forms GridGroupingControl | Syncfusion®
+description: Performance in Windows Forms GridGroupingControl improves memory usage, virtual mode, high-frequency updates, grouping efficiency, and rendering speed.
+platform: windowsforms
+control: GridGroupingControl
 documentation: ug
 ---
 
-# Performance in Windows Forms GridGrouping control
+# Performance in Windows Forms GridGroupingControl
 GridGroupingControl has an extremely high performance standard. It can handle very high frequency updates and refresh scenarios. It also offers complete support for Virtual Mode wherein data will be loaded only on demand. Using some of the optimization properties, user can have the grid work with large amounts of data without a performance hit.
 
 All the properties that affects grid performance are wrapped into a category named `Optimization`.

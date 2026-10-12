@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Feature Summary in Windows Forms GridGrouping control | Syncfusion®
-description: Learn about Feature Summary support in Syncfusion® Windows Forms GridGrouping control, its elements and more details.
+title: Feature Summary in Windows Forms GridGroupingControl | Syncfusion®
+description: Explore GridGroupingControl features including grouping, sorting, filtering, summaries, expression fields, data binding, virtualization, and customization.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# Feature Summary in Windows Forms GridGrouping control
+# Feature Summary in Windows Forms GridGroupingControl
 
 Essential<sup>®</sup> Grid Grouping control possesses advanced features such as Outlook style grouping and is highly optimized to handle large amount of data. This section lists various features of grid grouping control in brief.
 

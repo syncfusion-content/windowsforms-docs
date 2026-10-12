@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Popup Calculator in Windows Forms Calculator control | Syncfusion®
-description: Learn about Popup Calculator support in Syncfusion® Windows Forms Calculator control and more details.
+title: Popup Calculator in Windows Forms Calculator | Syncfusion®
+description: Learn about Popup Calculator support in Syncfusion Windows Forms Calculator control and more details.
 platform: windowsforms
 control: Editors Package
 documentation: ug
 ---
 
-# Popup Calculator in Windows Forms Calculator
+# Popup Calculator in WinForms Calculator
 
-The PopupCalculator class can be used to display a popup Calculator control. This class can be created programmatically. 
+The PopupCalculator class can be used to display a popup WinForms Calculator control. This class can be created programmatically. 
 
-The PopupCalculator control lets you embed a Calculator control object to a button for example. Drop the button onto the form and add the following code snippet.
+The PopupCalculator control lets you embed a WinForms Calculator control object to a button for example. Drop the button onto the form and add the following code snippet.
 
 {% highlight c# %}
 

@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Tooltip in Windows Forms PopupMenu control | Syncfusion®
-description: Learn about Tooltip support in Syncfusion® Windows Forms PopupMenu control, its elements and more details.
+title: Tooltip in Windows Forms PopupMenu Control | Syncfusion®
+description: Tooltip support displays contextual information for bar items and allows custom tooltip text for menu commands.
 platform: windowsforms
 control: PopupMenu
 documentation: ug

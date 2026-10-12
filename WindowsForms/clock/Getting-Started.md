@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Clock control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential Studio Windows Forms Clock control, its elements and more details.
+title: Getting Started with Windows Forms Clock | Syncfusion
+description: Learn how to get started with the Syncfusion Windows Forms Clock control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
 control: Clock
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Getting Started with Windows Forms Clock
@@ -22,7 +23,7 @@ In this walkthrough, users will create a WinForms application that contains [Clo
 ### Creating the Project
 Create a new Windows Forms project in Visual Studio to display [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html) with data objects.
 
-### Adding Clock control via designer
+### Adding Windows Forms Clock control via designer
 
 1. Create a new Windows Forms project in Visual Studio.
 
@@ -37,7 +38,7 @@ Create a new Windows Forms project in Visual Studio to display [Clock](https://h
 
 ![WindowsForms Clock control added by designer](getting-started_images/windowsforms-clock-control-added-by-designer.png) 
 
-### Adding Clock control via code
+### Adding Windows Forms Clock control via code
 
 To add the control manually in C#, follow the given steps:
 

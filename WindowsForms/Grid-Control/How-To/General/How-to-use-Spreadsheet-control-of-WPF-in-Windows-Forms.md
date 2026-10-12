@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-use-Spreadsheet-control-of-WPF-in-Windows-F | Windows Forms | Syncfusion
-description: how to use spreadsheet control of wpf in windows forms?
+title: Use WPF Spreadsheet Control in WinForms Grid Control | Syncfusion®
+description: Use the Syncfusion® WPF Spreadsheet control in a Windows Forms application by hosting it in an ElementHost container and integrating WPF features.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to use Spreadsheet control of WPF in Windows Forms
+# How to Use WPF Spreadsheet in Windows Forms Grid Control
 
 You can host that WPF component in Windows Forms through ElementHost container. This support is provided by Microsoft for hosting WPF controls in Windows Forms application. Refer to the following code and sample for more information
 

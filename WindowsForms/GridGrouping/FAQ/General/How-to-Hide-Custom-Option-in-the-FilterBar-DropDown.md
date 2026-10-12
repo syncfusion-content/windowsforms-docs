@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Hide-Custom-Option-in-the-FilterBar-DropDow | Windows Forms | Syncfusion
-description: how to hide custom option in the filterbar dropdown
+title: Hide Custom Option in WinForms GridGroupingControl | Syncfusion®
+description: Hide the Custom option in the FilterBar DropDown in Syncfusion® Windows Forms GridGroupingControl, its filter customization, cell models, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Hide Custom Option in the FilterBar DropDown
+# How to Hide Custom Option in FilterBar in WinForms GridGroupingControl
 
 To achieve this, you need to implement custom FilterBar cell deriving CellModel/CellRenderer from GridTableFilterBarCellModel/GridTableFilterBarCellRenderer.
 

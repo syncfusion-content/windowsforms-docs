@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Virtual Grid in Windows Forms Grid Control | Syncfusion®
-description: Learn about Virtual Grid support in Syncfusion® Windows Forms Grid Control, its elements and more details.
+description: The Virtual Grid feature in Grid Control displays large datasets efficiently using on-demand data loading, virtual events, and dynamic cell rendering.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 
 ---

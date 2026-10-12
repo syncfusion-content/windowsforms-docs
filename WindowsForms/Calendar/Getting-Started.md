@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Calendar control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms Calendar (SfCalendar) control and more details.
+title: Getting Started with Windows Forms Calendar | Syncfusion
+description: Learn how to get started with the Syncfusion Windows Forms Calendar control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
 control: SfCalendar 
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
-# Getting Started with Windows Forms Calendar (SfCalendar)
+# Getting Started with Windows Forms Calendar
 
 This section briefly describes how to create a new Windows Forms project in Visual Studio and add the [WinForms Calendar](https://www.syncfusion.com/winforms-ui-controls/calendar) (SfCalendar) control with its basic functionalities.
 
@@ -17,7 +18,7 @@ Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/con
 
 Refer to this [documentation](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to find more details about installing NuGet packages in a Windows Forms application.
  
-## Adding the SfCalendar control via designer
+## Adding the Windows Forms Calendar control via designer
 
 The following steps describe how to create a WinForms Calendar (SfCalendar) control via designer.
 
@@ -31,7 +32,7 @@ The following steps describe how to create a WinForms Calendar (SfCalendar) cont
 
 ![Drag and drop the sfcalendar to form](getting-started-images/gettingstarted.png) 
 
-## Adding the SfCalendar control via code
+## Adding the Windows Forms Calendar control via code
 
 The following steps describe how to create a WinForms Calendar (SfCalendar) control programmatically:
 
@@ -113,7 +114,7 @@ calendar.SelectedDate = New System.DateTime(2019, 08, 12)
 
 {% endtabs %}
 
-![Select the date in WF SfCalendar](Getting-Started-images/selecteddate.png)
+![Select the date in Windows Forms Calendar](Getting-Started-images/selecteddate.png)
 
 ### Selection change event
 
@@ -210,7 +211,7 @@ calendar.MaxDate = New DateTime(2018, 1, 25)
 
 {% endtabs %} 
 
-![Windows Forms SfCalendar showing selected date with in range](appearance-images/minmax.png)
+![Windows Forms Calendar showing selected date with in range](appearance-images/minmax.png)
 
 ## Blackout dates
 
@@ -248,7 +249,7 @@ calendar.BlackoutDates.Add(New System.DateTime(2018, 1, 20))
 
 {% endtabs %} 
 
-![Windows Forms SfCalendar showing BlackOutDates](getting-started-images/blackoutdates.png)
+![Windows Forms Calendar showing BlackOutDates](getting-started-images/blackoutdates.png)
 
 ## Special dates
 
@@ -302,7 +303,7 @@ calendar.SpecialDates = SpecialDates
 
 {% endtabs %}  
 
-![Windows Forms SfCalendar showing special date](cell-customization-images/specialdates.png)
+![Windows Forms Calendar showing special date](cell-customization-images/specialdates.png)
 
 ## Allow multiple selection
 
@@ -328,7 +329,7 @@ calendar.AllowMultipleSelection = True
 
 {% endtabs %} 
 
-![Windows Forms SfCalendar showing multiple date selection](getting-started-images/multiselection.png)
+![Windows Forms Calendar showing multiple date selection](getting-started-images/multiselection.png)
 
 ## Configure first day of week
 
@@ -380,7 +381,7 @@ calendar.ShowWeekNumber = True
 
 {% endtabs %} 
 
-![SfCalendar shows week number](appearance-images/showweeknumber.png)
+![Windows Forms Calendar shows week number](appearance-images/showweeknumber.png)
 
 ## Configure the calculation of week number based on culture
 

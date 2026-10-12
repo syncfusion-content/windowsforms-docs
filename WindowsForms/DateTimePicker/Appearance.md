@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Customization of SfDateTimeEdit | Windows Forms | Syncfusion
-description: Customize the visibility of UpDown Button, Key Navigation Support and DropDown Popup alignment support
-platform: windowsforms
+title: Appearance in Windows Forms DateTimePicker | Syncfusion
+description: Learn about appearance customization options in Windows Forms DateTimePicker control for styling and visual customization.
+platform: WindowsForms
 control: SfDateTimeEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
-# Customization of DateTimeEdit
+# Appearance in Windows Forms DateTimePicker
 
 The appearance of each and every part in the DateTimeEdit can be customized. The SfDateTimeEdit allows you to customize the drop-down icon, calendar, and up-down buttons by using [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_Style) properties.
 
@@ -165,7 +166,7 @@ Me.dateTimeEdit.ShowDropDown = false
 
 ## Customize up-down appearance
 
-The ForeColor of up-down icon in the `SfDateTimeEdit` can be customized by the following `Style` properties. The following `style` properties of the SfDateTimeEdit can be used to change the color of up-down icon in different states:
+The ForeColor of up-down icon in the `Windows Forms DateTimePicker` can be customized by the following `Style` properties. The following `style` properties of the SfDateTimeEdit can be used to change the color of up-down icon in different states:
 
 * UpDownForeColor - To change the foreground color of up-down icon in DateTimeEdit.
 * UpDownHoverForeColor - To change the foreground color of up-down icon in mouse hover state.
@@ -406,7 +407,7 @@ Me.dateTimeEdit.ThemeName = "Office2016Colorful"
 
 {% endtabs %}
 
-![SfDateTimeEdit Office2016Colorful appearance](appearance-images/Office2016Colorful.png)
+![Windows Forms DateTimePicker Office2016Colorful appearance](appearance-images/Office2016Colorful.png)
 
 #### Office2016White
 
@@ -434,7 +435,7 @@ Me.dateTimeEdit.ThemeName = "Office2016White"
 
 {% endtabs %}
 
-![SfDateTimeEdit Office2016White appearance](appearance-images/Office2016White.png)
+![Windows Forms DateTimePicker Office2016White appearance](appearance-images/Office2016White.png)
 
 #### Office2016DarkGray
 
@@ -462,7 +463,7 @@ Me.dateTimeEdit.ThemeName = "Office2016DarkGray"
 
 {% endtabs %}
 
-![SfDateTimeEdit Office2016DarkGray appearance](appearance-images/Office2016DarkGray.png)
+![Windows Forms DateTimePicker Office2016DarkGray appearance](appearance-images/Office2016DarkGray.png)
 
 #### Office2016Black
 
@@ -490,6 +491,6 @@ Me.dateTimeEdit.ThemeName = "Office2016Black"
 
 {% endtabs %}
 
-![SfDateTimeEdit Office2016Black appearance](appearance-images/Office2016Black.png)
+![Windows Forms DateTimePicker Office2016Black appearance](appearance-images/Office2016Black.png)
 
 

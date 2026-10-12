@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Customization in Windows Forms SplitContainer control | Syncfusion®
-description: Learn about Customization support in Syncfusion® Windows Forms SplitContainer (SplitContainerAdv) control and more details.
+title: Customization in Windows Forms SplitContainer | Syncfusion®
+description: Customization options include panel behavior, splitter settings, collapsing panels, appearance customization, borders, and visual styles.
 platform: windowsforms
 control: Editors Package
 documentation: ug

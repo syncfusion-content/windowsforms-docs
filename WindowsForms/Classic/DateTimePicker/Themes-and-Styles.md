@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Themes and Styles in Windows Forms xptoolbar control | Syncfusion
-description: Learn about Themes and Styles support in Syncfusion Windows Forms DateTimePickerAdv(Classic) control and more details.
+title: Themes and Styles in Windows Forms DateTimePickerAdv | Syncfusion
+description: Learn about themes and styles in Syncfusion Windows Forms DateTimePickerAdv control and more details.
 platform: WindowsForms
 control: Calendar
 documentation: ug
 ---
-# Themes and Styles in Windows Forms DateTimePickerAdv(Classic)
+
+# Themes and Styles in Windows Forms DateTimePickerAdv
 
 ## Themes
 

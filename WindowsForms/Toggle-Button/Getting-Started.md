@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Toggle Button | Syncfusion®
-description: Learn here about getting started with Syncfusion® Windows Forms Toggle Button control, its elements and more details.
+title: Getting Started with Windows Forms ToggleButton | Syncfusion®
+description: Learn how to get started with the Syncfusion Windows Forms ToggleButton control. Explore setup, features, examples, and customization options.
 platform: windowsforms
 control: ToggleButton 
 documentation: ug
 ---
 
-# Getting Started with Windows Forms Toggle Button
+# Getting Started with WinForms Toggle Button
 
-This section briefly describes how to create a new Windows Forms project in Visual Studio and add [ToggleButton](https://www.syncfusion.com/winforms-ui-controls/toggle-button) with it's basic functionalities.
+This section briefly describes how to create a new Windows Forms project in Visual Studio and add [WinForms Toggle Button](https://www.syncfusion.com/winforms-ui-controls/toggle-button) with it's basic functionalities.
 
 ## Assembly deployment
 
@@ -18,9 +18,9 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 [Check here](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to find more details on how to install NuGet packages in Windows Forms application.
 
 
-## Adding a WinForms ToggleButton control through designer
+## Adding a WinForms Toggle Button control through designer
 
-**Step 1**: Create a new Windows Forms application in Visual Studio. Drag and drop the ToggleButton from toolbox into form design view. The following dependent assemblies will be added automatically.
+**Step 1**: Create a new Windows Forms application in Visual Studio. Drag and drop the WinForms Toggle Button from toolbox into form design view. The following dependent assemblies will be added automatically.
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -33,7 +33,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 ![Windows Form ToggleButton dependency Assembly reference](Getting-Started_images/Getting-Started_reference.png)
 
-**Step 2**: You can customize the properties of ToggleButton using the properties panel. Here we have illustrated an example on how to edit the ToggleState property of the ToggleButton as shown as follows.
+**Step 2**: You can customize the properties of WinForms Toggle Button using the properties panel. Here we have illustrated an example on how to edit the ToggleState property of the Control as shown as follows.
 
 ![Windows Form ToggleButton dependency Assembly reference](Getting-Started_images/ToggleButton_designercustomization.png)
 
@@ -42,7 +42,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 ![Windows Form ToggleButton through designer](Getting-Started_images/ToggleButton_throughdesigner1.png)
 
 
-## Adding a WinForms ToggleButton control through code
+## Adding a WinForms Toggle Button control through code
 
 **Step 1**: Create a new Windows Forms application in Visual Studio. Add the following required assembly references and namespace to the project.
 
@@ -73,7 +73,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![Windows Form ToggleButton through designer](Getting-Started_images/ToggleButtonimagereference.png)
-   
+
 **Step 2**: In Form1.cs, create an instance of **Toggle Button** control and add in to the form. Also you can customize the control properties using the following code.
 {% capture codesnippet2 %}
 {% tabs %}

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: OpenAI in Windows Forms AI AssistView control | Syncfusion
-description: Learn about how to connect the AI AssistView control with OpenAI and chat gpt conversation experience.
+title: 	OpenAI Integration in Windows Forms AI AssistView | Syncfusion
+description: Connect the Syncfusion Windows Forms AI AssistView control with OpenAI for intelligent chat and response generation.
 platform: windowsforms
 control: SfAIAssistView
 documentation: ug
 ---
 
-# OpenAI Connection for AI AssistView
+# OpenAI Integration in Windows Forms AI AssistView
 
 This section explains how to connect the AI AssistView with OpenAI.
 
@@ -27,6 +27,8 @@ The following configuration values are required to connect with OpenAI or Azure 
 - **OpenAIApiKey**: A string variable where you should add your valid OpenAI API key.
 - **OpenAIModel**: A string variable representing the OpenAI language model you want to use.
 - **ApiEndpoint**: A string variable representing the URL endpoint of the OpenAI API. For Azure OpenAI, this is the endpoint of your Azure OpenAI resource (the default value `https://openai.azure.com` is the Azure OpenAI endpoint, not the public OpenAI endpoint).
+
+> **Security Note:** Avoid storing API keys in source code in production. Use environment variables, `secrets.json`, or a secure key vault.
 
 {% tabs %}
 
@@ -154,8 +156,6 @@ public class ViewModel : INotifyPropertyChanged
         private const string OpenAIModel = "gpt-4o-mini";
         private const string ApiEndpoint = "https://openai.azure.com";
 
-        public string Response { get; set; }
-
         public async Task Initialize()
         {
             var builder = Kernel.CreateBuilder();
@@ -218,6 +218,16 @@ public partial class Form1 : Form
 
 {% endtabs %}
 
-![WindowsForms AI AssistView control open ai](aiassistview_images/windowsforms_aiassistview_openai.gif)
+![Windows Forms AI AssistView control open ai](aiassistview_images/windowsforms_aiassistview_openai.gif)
 
-N> You can also explore our [WinForms AIAssistView example demos](https://github.com/syncfusion/winforms-demos/tree/master/assistview).
+N> You can also explore our [Windows Forms AI AssistView example demos](https://github.com/syncfusion/winforms-demos/tree/master/assistview).
+
+## Troubleshooting
+
+| Issue | Possible Cause | Resolution |
+|-------|----------------|------------|
+| `401 Unauthorized` from OpenAI | The API key is empty or invalid. | Verify `OpenAIApiKey` is set to a valid key from the OpenAI/Azure portal. |
+| `Kernel` cannot be created | Missing `Microsoft.SemanticKernel` package reference. | Install the [Microsoft.SemanticKernel](https://www.nuget.org/packages/Microsoft.SemanticKernel) NuGet package. |
+| No bot response is added to `Chats` | The submitted message's `Author.Name` does not match `CurrentUser.Name`. | Ensure the user is bound via `viewModel.CurrentUser = sfAIAssistView1.User;` so the comparison succeeds. |
+| `Image.FromFile` throws `FileNotFoundException` | The bot avatar image is missing at the referenced path. | Add `AI_Assist.png` to the project's `Asset` folder. |
+

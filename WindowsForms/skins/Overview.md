@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Windows Forms skins control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms skins (SkinManager) control, its elements and more details.
+title: About Syncfusion® Windows Forms SkinManager Control | Syncfusion®
+description: Learn about introduction of Syncfusion® Essential Studio Windows Forms SkinManager and more details.
 platform: WindowsForms
 control: SkinManager 
 documentation: ug
 ---
 
-# Windows Forms skins (SkinManager) Overview
+# About Syncfusion® Windows Forms SkinManager 
 
 The WinForms Skin Manager library provides support to set a theme for all Syncfusion controls in an entire application to maintain a common user interface appearance. It provides support for the following themes.
 

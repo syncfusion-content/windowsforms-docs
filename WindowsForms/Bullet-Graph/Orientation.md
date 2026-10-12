@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Orientation in Windows Forms Bullet Graph control | Syncfusion®
-description: Learn about Orientation support in Syncfusion® Essential Studio® Windows Forms Bullet Graph control and more details.
+title: Orientation in Windows Forms Bullet Graph | Syncfusion®
+description: Orientation in the Windows Forms Bullet Graph controls the layout direction, supporting horizontal and vertical rendering for different visualization needs.
 platform: windowsforms
 control: Bullet Graph
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
-# Orientation in Windows Forms Bullet Graph
+# Orientation in WinForms Bullet Graph
 
-The view of the Bullet Graph is changed by setting the [Orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_Orientation) property. The quantitative scale contains two major components: ticks and labels. The length of the quantitative scale is customized by using the [QuantitativeScaleLength](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_QuantitativeScaleLength) property. The direction of the quantitative scale is customized by using the [FlowDirection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_FlowDirection) property. It is either Forward or Backward.
+The view of the WinForms Bullet Graph is changed by setting the [Orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_Orientation) property. The quantitative scale contains two major components: ticks and labels. The length of the quantitative scale is customized by using the [QuantitativeScaleLength](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_QuantitativeScaleLength) property. The direction of the quantitative scale is customized by using the [FlowDirection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BulletGraph.BulletGraph.html#Syncfusion_Windows_Forms_BulletGraph_BulletGraph_FlowDirection) property. It is either Forward or Backward.
 
 {% tabs %}
 {% highlight c# %}

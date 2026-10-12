@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Headers and Labels in Windows Forms TreeMap control | Syncfusion®
-description: Learn about Headers and Labels support in Syncfusion® Windows Forms TreeMap control and more details.
+title: Headers and Labels in Windows Forms TreeMap | Syncfusion®
+description: Headers and labels in the Windows Forms TreeMap enable customization of text content, formatting, and display for hierarchical data visualization.
 platform: windowsforms
 control: TreeMap 
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
-# Headers and Labels in Windows Forms TreeMap
+# Headers and Labels in WinForms TreeMap
 
 Labels and headers in a tree map can be customized using the following properties available in the tree map control:
 
@@ -18,7 +19,7 @@ Labels and headers in a tree map can be customized using the following propertie
 * [`LabelBorderThickness`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TreeMap.TreeMap.html#Syncfusion_Windows_Forms_TreeMap_TreeMap_LabelBorderThickness)
 * [`HeaderBrush`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TreeMap.TreeMap.html#Syncfusion_Windows_Forms_TreeMap_TreeMap_HeaderBrush)
 
-#### Code sample
+## Code sample
 
 {% tabs %}
 

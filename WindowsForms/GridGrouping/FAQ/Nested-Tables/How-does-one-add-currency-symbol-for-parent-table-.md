@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-does-one-add-currency-symbol-for-parent-table- | Windows Forms | Syncfusion
-description: how does one add currency symbol for parent table and child table
+title: Currency Symbol in WinForms GridGroupingControl | Syncfusion®
+description: Add currency symbols for parent and child tables in Syncfusion® WinForms GridGroupingControl, its currency formatting, table relations, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How does one add currency symbol for parent table and child table
+# How to Add Currency Symbol in WinForms GridGroupingControl
 
 You can set the currency symbol for both Parent and Child through GridColumnDescriptor object. Parent tables have it by default. For the Child table setting, you will need to get GridColumnDescriptor for each Child table through recursion. AccessChild()method is handled recursively to set the currency symbol for Grandchild tables, using relations of GridGroupingControl.
 

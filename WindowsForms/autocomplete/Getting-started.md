@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Windows Forms AutoComplete | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms AutoComplete control, its elements, and more.
+title: Getting Started with Windows Forms AutoComplete | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms AutoComplete control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
 control: AutoComplete
 documentation: ug

@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Sorting in Windows Forms TreeView control | Syncfusion®
-description: Learn about Sorting support in Syncfusion® Windows Forms TreeView control, its elements and more details.
+title: Sorting in Windows Forms TreeView | Syncfusion®
+description: Sorting supports ordering nodes by text, checkbox, or tag values with customizable comparison options.
 platform: WindowsForms
 control: TreeView 
 documentation: ug

@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Drag and Drop in Windows Forms DataGrid | Syncfusion®
-description: This section explains about the drag and drop support in SfDataGrid. It can be enabled by setting AllowDraggingRows, AllowDraggingColumns and AllowDrop to true.
+title: Drag and Drop in Windows Forms Data Grid | Syncfusion®
+description: Drag and Drop in Data Grid supports row and column reordering, enabling flexible data organization and intuitive user interactions.
 platform: windowsforms
-control: SfDataGrid
+control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
-# Drag and Drop in WinForms DataGrid (SfDataGrid)
+# Drag and Drop in Windows Forms Data Grid
 
 ## Column Drag and Drop
 [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) allow end-users to rearrange the columns by drag and drop the column headers by setting [SfDataGrid.AllowDraggingColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowDraggingColumns) to true.

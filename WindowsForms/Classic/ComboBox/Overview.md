@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Windows Forms ComboBoxAdv control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms ComboBoxAdv (Classic) control and more details.
+title: About Windows Forms ComboBoxAdv(Classic) Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms ComboBoxAdv(Classic) control and its key features.
 platform: windowsforms
 control: ComboBoxAdv
 documentation: ug
 ---
 
-# Windows Forms ComboBoxAdv(Classic) Overview
+# About Syncfusion® Windows Forms ComboBoxAdv(Classic) Control
 
 ComboBoxAdv is an advanced combo box control that provides a similar object model as the Framework of the ComboBox control, with a lot of additional features. ComboBoxAdv is inherited from ComboBoxBaseDataBound, derived from [ComboBoxBase](/windowsforms/comboboxbase/overview) control.
 
@@ -15,7 +15,7 @@ Based on the ComboBoxBase control, the ComboBoxAdv pre-binds a list box in its d
 
 
 
-![Overview of ComboBox control in WindowsForms](overview_images/windowsforms-conbobox-overview.png) 
+![Overview of ComboBox control in WindowsForms](overview_images/windowsforms-combobox-overview.png) 
 
 
 

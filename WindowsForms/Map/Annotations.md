@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Annotations in Windows-Forms Map Control | Syncfusion®
-description: Learn here all about the annotations feature of Syncfusion® Windows Forms Map (Maps) control and more.
+title: Annotations in Windows Forms Maps | Syncfusion®
+description: Annotations in the Windows Forms Maps display custom content at specific locations and support flexible positioning and appearance customization.
 platform: windowsforms
 control: Maps
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
-# Annotations in Windows Forms Map (Maps)
+# Annotations in Windows Forms Maps
 
 Annotations are used to add messages on the map. In Maps control, annotations are denoted using the following major properties:
 
@@ -17,8 +18,7 @@ Annotations are used to add messages on the map. In Maps control, annotations ar
 
 3. [`Latitude`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Maps.Annotation.html#Syncfusion_Windows_Forms_Maps_Annotation_Latitude) and [`Longitude`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Maps.Annotation.html#Syncfusion_Windows_Forms_Maps_Annotation_Longitude): Position the annotations anywhere on the map based on latitude and longitude, which are string types, used to set coordinates of the MapAnnotation in the form of latitude and longitude.
 
-
-### Code sample:
+## Code sample
 
 {% tabs %}
 

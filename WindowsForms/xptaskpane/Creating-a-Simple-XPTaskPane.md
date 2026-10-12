@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Getting Started in Windows Forms xptaskpane control | Syncfusion®
-description: Learn about Getting Started support in Syncfusion® Windows Forms xptaskpane (XPTaskPane) control and more details.
+title: Getting Started with Windows Forms XPTaskPane | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms XPTaskPane control. Explore setup, features, examples, and customization options.
 platform: windowsforms
 control: XPTaskPane
 documentation: ug
 ---
-# Getting Started in Windows Forms xp task pane (XPTaskPane)
+# Getting Started with Windows Forms XPTaskPane
 
 This section describes how to add [XPTaskPane](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskPane.html) control in a Windows Forms application and overview of its basic functionalities.
 

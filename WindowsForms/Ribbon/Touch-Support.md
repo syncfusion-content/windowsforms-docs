@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Touch Support in Windows Forms Ribbon control | Syncfusion®
-description: Learn about Touch Support in Syncfusion® Windows Forms Ribbon (RibbonControlAdv) control and more details.
+title: Touch Support in Windows Forms Ribbon | Syncfusion®
+description: Touch support in Ribbon provides a touch UI with plenty of interaction space, making it easy to access elements on touch devices.
 platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# Touch Support in Windows Forms Ribbon (RibbonControlAdv)
+# Touch Support in WinForms Ribbon Control
 
-RibbonControlAdv has touch support and provides a Touch UI that makes it easy to access the elements in the Ribbon.
+WinForms Ribbon Control has touch support and provides a Touch UI that makes it easy to access the elements in the Ribbon.
 
 ## Enable Touch Style
 
-You can control touch mode settings of RibbonControlAdv control using the following property.
+You can control touch mode settings of WinForms Ribbon Control control using the following property.
 
 <table>
 <tr>
@@ -25,7 +25,7 @@ Description<br/><br/></th></tr>
 <td>
 RibbonTouchModeEnabled<br/><br/></td><td>
 Boolean<br/><br/></td><td>
-Enabling the RibbonTouchModeEnabled property in RibbonControlAdv, increases the size according to Microsoft touch mode size. Disabling the property retains its original size.<br/><br/></td></tr>
+Enabling the RibbonTouchModeEnabled property in WinForms Ribbon Control, increases the size according to Microsoft touch mode size. Disabling the property retains its original size.<br/><br/></td></tr>
 </table>
 
 {% tabs %}

@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: How To | WindowsForms | Syncfusion®
-description: Learn here about How To questions of Syncfusion® Essential Studio® Windows Forms SfButton control, its elements and more.
+description: How-to topics for SfButton explain using buttons as form accept or cancel buttons and displaying tooltips on mouse hover.
 platform: windowsforms
 control: SfButton
 documentation: ug

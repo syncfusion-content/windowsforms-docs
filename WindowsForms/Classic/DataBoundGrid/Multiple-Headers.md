@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Multiple Headers in Windows Forms xptoolbar control | Syncfusion
-description: Learn about Multiple Headers support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
+title: Multiple Headers in Windows Forms GridDataBoundGrid | Syncfusion®
+description: Display multiple row and column headers in the Syncfusion® WinForms GridDataBoundGrid to organize data and enhance header presentation.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 
-# Multiple Headers in Windows Forms GridDataBoundGrid(Classic)
+# Multiple Headers in Windows Forms GridDataBoundGrid
 
 Grid Data Bound Grid supports display of multiple row and column headers. Additional row headers can be added along side the existing header by setting Model.Rows.HeaderCount and additional column headers can be added below the existing column header by setting the Model.Cols.HeaderCount property.
 

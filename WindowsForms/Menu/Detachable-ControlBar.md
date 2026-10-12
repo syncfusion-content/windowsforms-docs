@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Detachable Control bar in Windows Forms Menus Control | Syncfusion
-description: Learn here all about the Control bar feature of Syncfusion Windows Forms Menu (Menus) control and more.
+title: Detachable Control bar in Windows Forms Menu | Syncfusion
+description: Detachable Control Bars support hosting custom controls in dockable or floating containers within menu layouts.
 platform: WindowsForms
 control: MainFrameBarManager 
 documentation: ug

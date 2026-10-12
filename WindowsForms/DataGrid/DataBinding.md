@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Data binding in WinForms DataGrid Control | Syncfusion®
-description: Learn here all about data binding support in Syncfusion® WinForms DataGrid control,its elements and more details.
+title: Data Binding in Windows Forms Data Grid | Syncfusion®
+description: Data binding in Data Grid supports connecting to various data sources, enabling efficient data management, display, and synchronization.
 platform: windowsforms
-control: SfDataGrid
+control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
-# Data Binding in Windows Forms DataGrid (SfDataGrid)
+# Data Binding in Windows Forms Data Grid
 [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) control is designed to display the bounded data in a tabular format. The data binding can be achieved by assigning the data sources to [SfDataGrid.DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_DataSource) property.
 
 {% tabs %}

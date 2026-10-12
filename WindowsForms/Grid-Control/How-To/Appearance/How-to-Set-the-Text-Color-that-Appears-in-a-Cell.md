@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to set the text color that appears in a cell | Syncfusion
-description: Learn here all about how to set the text color that appears in a cell of Syncfusion Windows Forms Gridcontrol and more.
+title: How to Set Cell Text Color in Windows Forms Grid Control | Syncfusion®
+description: Set the text color that appears in a cell in Syncfusion® Windows Forms Grid Control using cell style settings and customize text appearance and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to set the text color that appears in a cell
+# How to Set Cell Text Color in Windows Forms Grid Control
 
 Harnessing the ability to customize text color to your application allows you endless possibilities. Use the TextColor property of cells style and set it to color value.
 

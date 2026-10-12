@@ -1,15 +1,15 @@
 ---
 layout: post
-title: How-to-Add-Conditional-Formatting-to-Rows in GridControl | Syncfusion
-description: Learn here all about how to add conditional formatting to rows of Syncfusion Windows Forms GridControl and more.
+title: Add Conditional Formatting in Windows Forms Grid Control | Syncfusion®
+description: Add conditional formatting to rows in Syncfusion® Windows Forms Grid Control using the PrepareViewStyleInfo event and custom style conditions and more.
 platform: windowsforms
-control: Grid
+control: Grid Control
 documentation: ug
 ---
 
-# How to Add Conditional Formatting to Rows in Windows Forms GridControl
+# How to Add Conditional Formatting to Rows in WinForms Grid Control
 
-### Introduction
+## Introduction
 
 Say you want to color a row if the value in column 2 is larger than 10 (or any logical condition that you can evaluate). You can do something like this by using PrepareViewStyleInfo event. This event is raised immediately prior to the cell being drawn and gives you a chance to modify GridStyleInfo object that determines the appearance of the cell. Since you want to affect a visual change on the whole row when a single cell value is modified, you will need to tell the grid to redraw the whole row when the current cell moves instead of just redrawing affected cells. You can use the same technique to conditionally format columns or cells.
 

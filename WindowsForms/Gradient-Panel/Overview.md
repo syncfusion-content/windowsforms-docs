@@ -1,17 +1,17 @@
 ---
 layout: post
-title: About Windows Forms Gradient Panel control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms Gradient Panel control and more details.
+title: About Syncfusion Windows Forms Gradient Panel Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms Gradient Panel control and its key features and customization options.
 platform: WindowsForms
-control: GradientPanel
+control: Gradient Panel
 documentation: ug
 ---
 
-# Windows Forms Gradient Panel Overview
+# About Syncfusion® Windows Forms Gradient Panel Control
 
-The GradientPanel is a panel-derived control that acts as a container for other controls. It is used to group a collection of controls, and it has the ability to have a custom background gradient using an array of colors. 
+The Gradient Panel is a panel-derived control that acts as a container for other controls. It is used to group a collection of controls, and it has the ability to have a custom background gradient using an array of colors. 
 
-![Overview of Syncfusion GradientPanel](GradientPanel-Images/Overview.png)
+![Overview of Syncfusion Gradient Panel](GradientPanel-Images/Overview.png)
 
 ## Key features
 

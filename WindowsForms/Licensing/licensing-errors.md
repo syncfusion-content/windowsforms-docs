@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion licensing errors - Syncfusion 
-description: Learn here about Syncfusion common licensing errors which appears on license validation in Syncfusion Windows Forms applications.
+title: Licensing Errors in Windows Forms | Syncfusion®
+description: Learn more about Syncfusion® licensing errors and find effective solutions for Windows Forms license validation issues
 platform: windowsforms
 control: Essential Studio
 documentation: ug
 ---
 
-# Syncfusion Licensing Errors
+# Licensing Errors in Windows Forms
 
 A licensing error pop-up is displayed with various messages under different circumstances. Here are some ways to resolve different issues.
 

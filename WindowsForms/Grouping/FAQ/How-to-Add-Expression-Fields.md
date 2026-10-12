@@ -1,14 +1,14 @@
 ---
 layout: post
-title: How to Add Expression Fields | WindowsForms | Syncfusion
-description: How to Add Expression Fields
+title: How to Add Expression Fields in Windows Forms Grouping | Syncfusion®
+description: Add expression fields in Syncfusion® Windows Forms Grouping control to create calculated values using existing fields and custom expressions.
 platform: WindowsForms
 control: Grouping
 documentation: ug
 ---
 
 
-# How to Add Expression Fields
+# How to Add Expression Fields in Windows Forms Grouping
 To add an expression field to the data in the Grouping Engine, you must first create an instance of an ExpressionFieldDescriptor and add it to the ExpressionFields collection in the TableDescriptor. The ExpressionFieldDescriptor will allow you to specify a string that holds an algebraic expression using any of the other fields that are in the record.
 
 The following code snippet illustrates this.

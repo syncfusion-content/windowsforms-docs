@@ -1,12 +1,12 @@
----
+﻿---
 layout: post
-title: Appearance Settings | WindowsForms | Syncfusion®
-description: Learn here about how to set the different appearance of the Syncfusion® Windows Forms MaskedEditBox control.
+title: Appearance Settings in Windows Forms MaskedTextBox | Syncfusion®
+description: Appearance settings in MaskedEditBox enable customizing background, foreground, and visual styles for input controls.
 platform: windowsforms
 control: MaskedEditBox
 documentation: ug
 --- 
-# Appearance Settings in MaskedEditBox
+# Appearance Settings in Windows Forms MaskedTextBox (MaskedEditBox)
 
 ## Background settings
 

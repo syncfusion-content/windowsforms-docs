@@ -1,17 +1,17 @@
----
+﻿---
 layout: post
-title: Localization in Windows Forms Scroll Frame control | Syncfusion®
-description: Learn about Localization support in Syncfusion® Windows Forms Scroll Frame (SfScrollFrame) control and more details.
+title: Localization in Windows Forms Scroll Frame | Syncfusion®
+description: Localization support enables translating scrollbar context menu content using resource files and culture-specific settings.
 platform: WindowsForms
 control: SfScrollFrame
 documentation: ug
 ---
 
-## Localization
+# Localization in Windows Forms Scroll Frame (SfScrollFrame)
 
 Localization is the process of translating the application resources into different language for the specific cultures. You can localize the default context menu of the scrollbars by adding resource file. Application culture can be changed by setting the CurrentUICulture before InitializeComponent() method.
 
-### Adding Resx file to application
+## Adding Resx file to application
 
 To add the resx file for the application, follow steps:
 

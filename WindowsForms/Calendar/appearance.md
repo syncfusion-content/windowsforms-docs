@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Appearance in Windows Forms Calendar control | Syncfusion
-description: Learn about Appearance support in Syncfusion Windows Forms Calendar (SfCalendar) control and more details.
+title: Appearance in Windows Forms Calendar | Syncfusion
+description: Learn about appearance customization options in Windows Forms Calendar control for styling and theming.
 platform: WindowsForms
 control: SfCalendar
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
-# Appearance in Windows Forms Calendar (SfCalendar)
+# Appearance in Windows Forms Calendar
 
 This section explains how to customize the appearance of header, footer, and cells in the calendar by using [style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_Style) properties.
 
@@ -92,7 +93,7 @@ calendar.Style.Header.DayNamesFont = New System.Drawing.Font("Calibri", 11.25!, 
 
 {% endtabs %} 
 
-![SfCalendar header customization](appearance-images/headercustomizations.png)
+![Windows Forms Calendar header customization](appearance-images/headercustomizations.png)
 
 ## Customize navigation buttons
 
@@ -158,7 +159,7 @@ calendar.DownArrowImage = Image.FromFile("DownArrow.png")
 
 {% endtabs %} 
 
-![Navigation button color customization](appearance-images/navigationcolor.png)
+![Windows Forms Calendar Navigation button color customization](appearance-images/navigationcolor.png)
 
 ### Visibility of navigation buttons
 
@@ -186,7 +187,7 @@ calendar.ShowNavigationButton = false
 
 {% endtabs %}
 
-![Hide the navigation buttons](appearance-images/navigationbuttons.png)
+![Windows Forms Calendar Hide the navigation buttons](appearance-images/navigationbuttons.png)
 
 ### Navigation buttons alignment
 
@@ -214,7 +215,7 @@ calendar.NavigationButtonAlignment = Syncfusion.WinForms.Input.Enums.NavigationB
 
 {% endtabs %}
 
-![Navigation buttons alignment](appearance-images/navbuttonalignleft.png)
+![Windows Forms Calendar Navigation buttons alignment](appearance-images/navbuttonalignleft.png)
 
 {% tabs %}
 
@@ -238,7 +239,7 @@ calendar.NavigationButtonAlignment = Syncfusion.WinForms.Input.Enums.NavigationB
 
 {% endtabs %}
 
-![Both navigation buttons alignment](appearance-images/navbuttonalignboth.png)
+![Windows Forms Calendar Both navigation buttons alignment](appearance-images/navbuttonalignboth.png)
 
 ## Customize footer appearance
 
@@ -301,7 +302,7 @@ calendar.Style.Footer.HoverForeColor = Color.SpringGreen
 
 {% endtabs %} 
 
-![Footer customization](appearance-images/footercustomizations.png)
+![Windows Forms Calendar Footer customization](appearance-images/footercustomizations.png)
 
 ## Customize cell appearance
 
@@ -442,7 +443,7 @@ calendar.Style.Cell.SelectedCellFont = New System.Drawing.Font("Calibri", 11.25!
 
 {% endtabs %} 
 
-![Cell appearance](appearance-images/cellcustomization.png)
+![Windows Forms Calendar Cell appearance](appearance-images/cellcustomization.png)
 
 ## Themes
 
@@ -651,7 +652,7 @@ calendar.TrailingDatesVisible = False
 
 {% endtabs %}
 
-![Hide trailing dates](appearance-images/inactivedaysfalse.png)
+![Windows Forms Calendar Hide trailing dates](appearance-images/inactivedaysfalse.png)
 
 ## Abbreviating day names
 
@@ -679,11 +680,11 @@ calendar.ShowAbbreviatedDayNames = false
 
 {% endtabs %}
 
-![Abbreviating day names](appearance-images/abbreviateddaynames.png)
+![Windows Forms Calendar Abbreviating day names](appearance-images/abbreviateddaynames.png)
 
 ## Right-to-left
 
-`SfCalendar` control elements can be aligned in right-to-left layout. The `SfCalendar` control is laid out from the right to left when the `RightToLeft` value is set to `Yes`. The following code example illustrates the same:
+`Windows Forms Calendar` control elements can be aligned in right-to-left layout. The `Windows Forms Calendar` control is laid out from the right to left when the `RightToLeft` value is set to `Yes`. The following code example illustrates the same:
 
 {% tabs %}
 
@@ -707,7 +708,7 @@ calendar.RightToLeft = RightToLeft.Yes
 
 {% endtabs %}
 
-![Right to left support](appearance-images/righttoleft.png)
+![Windows Forms Calendar Right to left support](appearance-images/righttoleft.png)
 
 ## Highlight today cell 
 
@@ -735,7 +736,7 @@ calendar.HighlightTodayCell = true
 
 {% endtabs %}
 
-![Highlight today cell](appearance-images/todaycell.png)
+![Windows Forms Calendar Highlight today cell](appearance-images/todaycell.png)
 
 ### Customize today cell appearance
 
@@ -776,7 +777,7 @@ calendar.ShowNone = false
 
 {% endtabs %}
 
-![Show today button](appearance-images/showtoday.png)
+![Windows Forms Calendar Show today button](appearance-images/showtoday.png)
 
 {% tabs %}
 
@@ -804,7 +805,7 @@ calendar.ShowToday = false
 
 {% endtabs %}
 
-![show none button](appearance-images/shownone.png)
+![Windows Forms Calendar show none button](appearance-images/shownone.png)
 
 ## Customize splitter appearance
 
@@ -856,4 +857,4 @@ calendar.Style.VerticalSplitterColor = Color.Green
 
 {% endtabs %}
 
-![Customize splitter appearance](appearance-images/splittercolor.png)
+![Windows Forms Calendar Customize splitter appearance](appearance-images/splittercolor.png)

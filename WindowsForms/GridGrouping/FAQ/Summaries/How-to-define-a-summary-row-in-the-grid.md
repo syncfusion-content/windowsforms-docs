@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-define-a-summary-row-in-the-grid | Windows Forms | Syncfusion
-description: how to define a summary row in the grid
+title: Define a Summary Row in WinForms GridGroupingControl | Syncfusion®
+description: Define a summary row in Syncfusion® WinForms GridGroupingControl, its summary row descriptors, summary columns, aggregate calculations, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Define a Summary Row in the Grid
+# How to Define a Summary Row in WinForms GridGroupingControl
 
 This can be done using the code below.
 

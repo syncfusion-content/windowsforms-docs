@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Folderbrowser Callback Event in WinForms Folder Browser | Syncfusion®
-description: Learn about Folderbrowser Callback Event support in Syncfusion® Windows Forms Folder Browser control and more details.
+title: Browser Callback Event in Windows Forms FolderBrowser | Syncfusion®
+description: Learn about Folderbrowser Callback Event support in Syncfusion Windows Forms FolderBrowser control and more details.
 platform: windowsforms
 control: Tools
 documentation: ug
 ---
 
-# Folder browser Callback Event in Windows Forms Folder Browser
+# Browser Callback Event in WinForms Folder Browser
 
-The [FolderBrowserCallback event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.FolderBrowser.html) occurs when an event within the folder browser dialog triggers a call to the validation callback. The event handler receives an argument of type [FolderBrowserCallbackEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.FolderBrowserCallbackEventArgs.html).
+The [FolderBrowserCallback event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.FolderBrowser.html) occurs when an event within the WinForms Folder Browser dialog triggers a call to the validation callback. The event handler receives an argument of type [FolderBrowserCallbackEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.FolderBrowserCallbackEventArgs.html).
 
 The following [FolderBrowserCallbackEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.FolderBrowserCallbackEventArgs.html) members provide information specific to this event.
 
@@ -26,7 +26,7 @@ Specifies whether the dialog is either dismissed or retained depending upon this
 <tr>
 <td>
 FolderBrowserCallbackSetState</td><td>
-Gets/sets the Folder Browser dialog's state.</td></tr>
+Gets/sets the WinForms Folder Browser dialog's state.</td></tr>
 <tr>
 <td>
 BrowseCallbackText</td><td>

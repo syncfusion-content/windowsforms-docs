@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Carousel control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential Studio Windows Forms Carousel control and more details.
+title: Getting Started with Windows Forms Carousel | Syncfusion®
+description: Learn how to get started with the Syncfusion® Windows Forms Carousel control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
 control: Carousel
 documentation: ug

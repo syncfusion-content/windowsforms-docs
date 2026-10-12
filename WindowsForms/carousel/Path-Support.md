@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Path Support in Windows Forms Carousel control | Syncfusion
-description: Learn about Path Support support in Syncfusion Essential Studio Windows Forms Carousel control and more details.
+title: Path Support in Windows Forms Carousel | Syncfusion®
+description: Path Support enables arranging Carousel items in elliptical, orbital, oval, and linear layouts for different visual effects.
 platform: WindowsForms
 control: Carousel
 documentation: ug

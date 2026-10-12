@@ -1,13 +1,13 @@
 ---
 layout: post
-title: High DPI support | Windows Forms | Syncfusion
-description: This section explains about how the high DPI support provides for our Syncfusion Windows Forms controls.
+title: High DPI Support in Windows Forms | Syncfusion®
+description: Learn about High DPI support and DPI-aware applications for Syncfusion® Windows Forms controls and components.
 platform: WindowsForms
 control: General
 documentation: ug
 ---
 
-# High DPI Support in Windows Forms Controls
+# High DPI Support in Syncfusion® Windows Forms controls
 
 DPI stands for Dots Per Inch is the number of pixels or points rendered in one inch on the interface. The high DPI displays are displayed with an increased number of pixel density compared to the default or standard DPI screen.
 
@@ -253,18 +253,18 @@ buttonAdv1.Image = imageListAdv1.Images(0)
 
 9. Run the application and the image for the ButtonAdv will be displayed as per the image set for different DPI scaling as shown below.
 
-#### 100 DPI Scaling
+**100 DPI Scaling**
 
 ![Adding images and index](HighDPI_images/DPI_100.png)
 
-#### 125 Scaling
+**125 DPI Scaling**
 
 ![Adding images and index](HighDPI_images/DPI_125.png)
 
-#### 150 Scaling 
+**150 DPI Scaling**
 
 ![Adding images and index](HighDPI_images/DPI_150.png)
 
-#### 200 Scaling
+**200 DPI Scaling**
 
 ![Adding images and index](HighDPI_images/DPI_200.png)

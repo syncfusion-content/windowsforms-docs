@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Display Settings in Windows Forms Percent TextBox control | Syncfusion®
-description: Learn about Display Settings support in Syncfusion® Windows Forms Percent TextBox control and more details.
+title: Display Settings in Windows Forms PercentTextBox | Syncfusion®
+description: Learn about Display Settings support in Syncfusion Windows Forms PercentTextBox control and more details.
 platform: windowsforms
 control: Editors Package
 documentation: ug
 ---
 
-# Display Settings in Windows Forms Percent TextBox
+# Display Settings in WinForms Percent TextBox
 
-This section discusses the display settings of the PercentTextBox control.
+This section discusses the display settings of the WinForms Percent TextBox control.
 
-The PercentTextBox provides a list of properties to set the display characteristics of the percentage.
+The WinForms Percent TextBox provides a list of properties to set the display characteristics of the percentage.
 
 * [PercentDecimalDigits](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.PercentTextBox.html#Syncfusion_Windows_Forms_Tools_PercentTextBox_PercentDecimalDigits)
 * [PercentDecimalSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.PercentTextBox.html#Syncfusion_Windows_Forms_Tools_PercentTextBox_PercentDecimalSeparator)
@@ -51,6 +51,6 @@ The following screen shot illustrates the above settings.
 
 ![Percent text box format](PercentTextBox-Images/Overview_img465.png) 
 
-A sample which demonstrates the Display Settings of PercentTextBox control is available in the below sample installation path.
+A sample which demonstrates the Display Settings of WinForms Percent TextBox control is available in the below sample installation path.
 
 …\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Binding to an Arraylist in Windows Forms xptoolbar | Syncfusion
-description: Learn about Binding to an Arraylist support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
+title: Binding to an ArrayList in WinForms GridDataBoundGrid | Syncfusion®
+description: Bind an ArrayList containing business objects to the Syncfusion® Windows Forms GridDataBoundGrid control and display data through public object properties.
 platform: windowsforms
-control: DataBoundGrid
+control: GridDataBoundGrid
 documentation: ug
 ---
 
-# Binding to an Array list in Windows Forms GridDataBoundGrid(Classic)
+# Binding to an ArrayList in Windows Forms GridDataBoundGrid
 
 You can bind an ArrayList that holds objects with public properties. Given below is an example, which substantiates this point.
 

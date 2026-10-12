@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: Button Content in Windows Forms Button control | Syncfusion®
-description: Learn about Button Content support in Syncfusion® Windows Forms Button (SfButton) control and more details.
+description: Button Content in SfButton supports rich text, text wrapping, ellipsis, content alignment, and automatic sizing.
 platform: windowsforms
 control: SfButton
 documentation: ug

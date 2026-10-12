@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to Add Summary Items | WindowsForms | Syncfusion
-description: How to Add Summary Items
+title: How to Add Summary Items in Windows Forms Grouping | Syncfusion®
+description: Add summary items in Syncfusion® Windows Forms Grouping control to calculate aggregate values such as sum, average, minimum, and maximum for data fields.
 platform: WindowsForms
 control: Grouping
 documentation: ug
 ---
 
-# How to Add Summary Items
+# How to Add Summary Items in Windows Forms Grouping
 Essential Grouping lets you summarize data by adding SummaryDescriptor objects to the schema information stored in the Engine.TableDescriptor.Summaries collection. You can have multiple summaries by adding several SummaryDescriptors.
 
 {% tabs %}

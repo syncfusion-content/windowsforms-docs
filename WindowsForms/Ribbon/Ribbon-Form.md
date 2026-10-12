@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Ribbon Form in Windows Forms Ribbon control | Syncfusion®
-description: Learn about Ribbon Form support in Syncfusion® Windows Forms Ribbon (RibbonControlAdv) control and more details.
+title: Ribbon Form in Windows Forms Ribbon | Syncfusion®
+description: The Ribbon Form is an extension of the standard form that enables different visual styles for the ribbon with a Microsoft Office look.
 platform: windowsforms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# Ribbon Form in Windows Forms Ribbon (RibbonControlAdv)
+# Ribbon Form in WinForms Ribbon Control
 
-`RibbonForm` is an extension of the standard form that enables different visual styles for the ribbon and gives its controls a look and feel similar to Microsoft Office.
+`RibbonForm` is an extension of the standard form that enables different visual styles for the WinForms Ribbon Control and gives its controls a look and feel similar to Microsoft Office.
 
 ## Appearance Settings
 
@@ -33,7 +33,7 @@ Specifies the Aero theme of the Ribbon form. </td></tr>
 <tr>
 <td>
 Font</td><td>
-Gets or sets the RibbonControlAdv Font.</td></tr>
+Gets or sets the WinForms Ribbon Control Font.</td></tr>
 </table>
 
 {% tabs %}
@@ -63,7 +63,7 @@ Me.EnableAeroTheme = True
 
 {% endtabs %}
 
-`Appearance` property can be used to remove the form title bar and replace it with the RibbonControlAdv built-in system buttons.
+`Appearance` property can be used to remove the form title bar and replace it with the WinForms Ribbon Control built-in system buttons.
 
 *	Normal
 

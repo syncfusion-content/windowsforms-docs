@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Browse Buttons in Windows Forms Wizard | Syncfusion
-description: Learn about Browse Buttons support in Syncfusion Windows Forms Wizard Control, its elements and more details.
+title: Browse Buttons in Windows Forms Wizard Control | Syncfusion®
+description: Customize browse buttons in the Windows Forms Wizard Control to manage page navigation and improve the wizard user experience.
 platform: WindowsForms
-control: Wizard
+control: Wizard Control
 documentation: ug
 ---
 
-# Browse Buttons in Windows Forms Wizard
+# Browse Buttons in Windows Forms Wizard Control
 
 The default buttons which are available for the Wizard control are Back, Next, Cancel, and Help. The Next and the Back buttons facilitate users to navigate between wizard pages.
 
 N> You can navigate between the pages at Design Time also. See Page Navigation at Design time topic for more details.
 
-### Button visibility
+## Button visibility
 
 By default, all the buttons are visible for all the Wizard pages. To change their visibility, use the below properties in individual pages.
 
@@ -298,9 +298,7 @@ this.wizardControl1.CancelButton.FlatAppearance.MouseOverBackColor = System.Draw
 
 ![Button appearance](Wizard-Package_images/Wizard-Package_img26.jpeg)
 
-
-
-N> You can access the properties of CancelButton, FinishButton, HelpButton and NextButton using [WizardControl.CancelButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_CancelButton), [WizardControl.FinishButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_FinishButton), [WizardControl.HelpButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_HelpButton) and [WizardControl.NextButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_NextButton) properties respectively.
+N> You can access the properties of CancelButton, FinishButton, HelpButton and NextButton using [CancelButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_CancelButton), [FinishButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_FinishButton), [HelpButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_HelpButton) and [NextButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_NextButton) properties respectively.
 
 ![Button appearance](Wizard-Package_images/Wizard-Package_img28.jpeg)
 

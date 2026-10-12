@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to Retrieve Summary Item Values | WindowsForms | Syncfusion
-description: How to Retrieve Summary Item Values
+title: How to Retrieve Summary Values in Windows Forms Grouping | Syncfusion®
+description: Retrieve summary values in Syncfusion® Windows Forms Grouping control for top-level and grouped records using summary objects and aggregate calculations.
 platform: WindowsForms
 control: Grouping
 documentation: ug
 ---
 
-# How to Retrieve Summary Item Values
+# How to Retrieve Summary Values in Windows Forms Grouping
 
 Summaries are calculated on groups of records. The TopLevelGroup is the collection of all records in the IList data source. If you have added additional grouping through the groupingEngine.TableDescriptor.GroupedColumns.Add, then in addition to the top level group, there will be additional groups available to you. Each group will have an associated summary value. So to retrieve a summary value, you need to specify the group associated with the summary.
 

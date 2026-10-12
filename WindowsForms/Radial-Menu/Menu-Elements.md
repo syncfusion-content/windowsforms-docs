@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Menu Elements in Windows Forms Radial Menu control | Syncfusion
-description: Learn about Menu Elements support in Syncfusion Windows Forms Radial Menu control, its elements and more details.
+title: Menu Elements in Windows Forms Radial Menu | Syncfusion®
+description: Menu elements include radial menu items, check modes, grouping, color palettes, font lists, sliders, and center icons.
 platform: WindowsForms
 control: RadialMenu
 documentation: ug

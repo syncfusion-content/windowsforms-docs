@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Themes in Windows Forms PopupMenu control | Syncfusion®
-description: Learn about Themes support in Syncfusion® Windows Forms PopupMenu control, its elements and more details.
+title: Themes in Windows Forms PopupMenu | Syncfusion®
+description: Themes provide Office, Visual Studio, Metro, and modern visual styles for customizing PopupMenu appearance.
 platform: windowsforms
 control: PopupMenu
 documentation: ug

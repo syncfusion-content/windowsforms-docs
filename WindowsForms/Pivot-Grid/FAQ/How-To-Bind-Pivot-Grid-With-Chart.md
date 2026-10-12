@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to bind PivotGrid with chart | Windows Forms | Syncfusion
-description: How to bind pivot grid with chart
+title: How to Bind Pivot Grid with Chart in Windows Forms | Syncfusion®
+description: Bind Pivot Grid with Chart in Syncfusion® Windows Forms control using PivotGridChartHelper, customize chart styles, and persist series type at runtime.
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
 ---
 
-# How to Bind Pivot Grid with Chart
+# How to Bind Pivot Grid with Chart in Windows Forms Pivot Grid
 
 The [PivotGridChartHelper](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.PivotGridChartHelper.html) class acts as an interface to bind the values of pivot grid control with the chart control. Based on selected ranges or values of the pivot grid control, the chart control is rendered. To achieve this support, the [WireGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.PivotGridChartHelper.html#Syncfusion_GridHelperClasses_PivotGridChartHelper_WireGrid_Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_Syncfusion_Windows_Forms_Chart_ChartControl_) method of the PivotGridChartHelper class should be used.
 

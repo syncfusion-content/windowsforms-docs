@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion license validation in CI services - Syncfusion
-description: Learn how to register the Syncfusion license key for your Syncfusion application and validate it in CI services.
+title: CI License Validation in Windows Forms | Syncfusion®
+description: Validate Syncfusion® license key in CI services for Windows Forms applications during deployment process.
 platform: windowsforms
 control: Essential Studio
 documentation: ug
@@ -18,7 +18,7 @@ documentation: ug
 </style>
 
 
-# Syncfusion License Key Validation in CI Services
+# CI License Validation in Windows Forms
 
 Syncfusion license key validation in CI services ensures that Syncfusion Essential Studio components are properly licensed during CI processes. Validating the license key at the CI level can prevent licensing errors during deployment. Set up the CI process to fail when the license key validation fails by surfacing a non-zero exit code from the validation script.
 

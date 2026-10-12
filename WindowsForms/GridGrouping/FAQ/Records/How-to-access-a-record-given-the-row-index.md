@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-access-a-record-given-the-row-index | Windows Forms | Syncfusion
-description: how to access a record given the row index
+title: Access a Record in WinForms GridGroupingControl | Syncfusion®
+description: Access a record by row index in Syncfusion® WinForms GridGroupingControl, its display elements, parent records, row mapping, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Access a Record Given the Row Index
+# How to Access a Record by Row Index in WinForms GridGroupingControl
 
 This can be done using the following code snippet.
 

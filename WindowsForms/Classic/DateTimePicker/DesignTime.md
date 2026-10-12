@@ -1,12 +1,13 @@
 ---
 layout: post
-title: DesignTime Features | WindowsForms | Syncfusion
-description: Learn here about how to use the design time features in the Windows Forms DateTimePickerAdv control.
+title: Design Time Features in Windows Forms DateTimePickerAdv | Syncfusion
+description: Learn about design time features in Syncfusion Windows Forms DateTimePickerAdv control and how to use them effectively.
 platform: WindowsForms
 control: DateTimePickerAdv 
 documentation: ug
 ---
-# DesignTime Features of Windows Forms DateTimePickerAdv control
+
+# Design Time Features in Windows Forms DateTimePickerAdv
 
 In the designer, DateTimePickerAdv control has shortcut for some property settings in its Task Window. Task Window is opened through the control's smart tag option.
 

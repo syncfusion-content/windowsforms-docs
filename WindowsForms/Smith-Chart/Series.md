@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Series in Windows Forms Smith Chart control | Syncfusion®
-description: Learn about Series support in Syncfusion® Windows Forms Smith Chart (SfSmithChart) control and more details.
+title: Series in Windows Forms Smith Chart | Syncfusion®
+description: Series in the Windows Forms Smith Chart display data using plotted points and lines, supporting customization of appearance and visualization.
 platform: windowsforms
 control: SfSmithChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
-# Series in Windows Forms Smith Chart (SfSmithChart)
+# Series in Windows Forms Smith Chart
 
 Chart series is the visual representation of given data. The following APIs are used for generating the series.
 

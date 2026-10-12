@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Color Groups in Windows Forms Color Picker control | Syncfusion®
-description: Learn about Color Groups support in Syncfusion® Windows Forms Color Picker (ColorPickerUIAdv) control and more details.
+title: Color Groups in Windows Forms ColorPickerUIAdv | Syncfusion®
+description: Learn about Color Groups support in Syncfusion Windows Forms Color Picker (ColorPickerUIAdv) control and more details.
 platform: windowsforms
 control: ColorPickerUIAdv
 documentation: ug
 ---
-# Color Groups in Windows Forms Color Picker (ColorPickerUIAdv)
+# Color Groups in WinForms Color Picker
 
-The default color groups available for ColorPickerUIAdv control are listed in the below table.
+The default color groups available for WinForms Color Picker control are listed in the below table.
 
 <table>
 <tr>
 <th>
-ColorPickerUIAdv Color Groups</th><th>
+Color Groups in WinForms Color Picker</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -47,7 +47,7 @@ The sections of a color group is illustrated in the below image.
 
 ## Custom Color Groups
 
-Custom Color Groups can be added to ColorPickerUIAdv control using CustomGroups property. This property invokes ColorUIAdvGroup Collection Editor and lets you to add custom user groups.
+Custom Color Groups can be added to WinForms Color Picker control using CustomGroups property. This property invokes ColorUIAdvGroup Collection Editor and lets you to add custom user groups.
 
 ![Windows forms ColorPickerUIAdv custom color groups added](ColorPickerUIAdv_Images/ColorPickerUIAdv_customgroups.jpeg) 
 
@@ -95,7 +95,7 @@ The below properties lets you add color items and sub items.
 <table>
 <tr>
 <th>
-ColorPickerUIAdv Properties</th><th>
+WinForms Color Picker Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -173,7 +173,7 @@ Me.colorPickerUIAdv1.ColorItemSize = New System.Drawing.Size(20, 20)
 
 ### Spacing Between Color Items
 
-HorizontalItemsSpacing and VerticalItemsSpacing properties of ColorPickerUIAdv control can be used to set the horizontal and vertical spacing between the color items respectively. Default value of these properties are 4 and 0 respectively.
+HorizontalItemsSpacing and VerticalItemsSpacing properties of WinForms Color Picker control can be used to set the horizontal and vertical spacing between the color items respectively. Default value of these properties are 4 and 0 respectively.
 
 {% tabs %}
 {% highlight c# %}
@@ -221,7 +221,7 @@ Sets the name of the color group, i.e, the header text.</td></tr>
 <table>
 <tr>
 <th>
-ColorPickerUIAdv Property</th><th>
+WinForms Color Picker Property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -268,4 +268,3 @@ Me.colorPickerUIAdv1.Font = New System.Drawing.Font("Microsoft Sans Serif",9F, S
 {% endtabs %}
 
 ![Windows forms ColorPickerUIAdv set alignment of the color group headers](ColorPickerUIAdv_Images/ColorPickerUIAdv_textalign.jpeg) 
-

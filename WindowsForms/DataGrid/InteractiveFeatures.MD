@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Interactive Features in Windows Forms DataGrid | Syncfusion®
-description: Learn about Interactive Features support in Syncfusion® Windows Forms DataGrid (SfDataGrid) control and more.
+title: Interactive Features in Windows Forms Data Grid | Syncfusion®
+description: Interactive features in Data Grid provide context menus, column chooser, tooltips, and customization options for enhanced user interaction.
 platform: windowsforms
-control: SfDataGrid
+control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
-# Interactive Features in Windows Forms DataGrid (SfDataGrid)
+# Interactive Features in Windows Forms Data Grid
 
 ## Context Menu
 

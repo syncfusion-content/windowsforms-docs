@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Appearance in Windows Forms Smith Chart control | Syncfusion®
-description: Learn about Appearance support in Syncfusion® Windows Forms Smith Chart (SfSmithChart) control and more details.
+title: Appearance in Windows Forms Smith Chart | Syncfusion®
+description: Appearance in the Windows Forms Smith Chart enables customization of chart visuals, colors, series styles, and display settings.
 platform: windowsforms
 control: SfSmithChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
-# Appearance in Windows Forms Smith Chart (SfSmithChart)
+# Appearance in Windows Forms Smith Chart
 
 ## Chart palette
 

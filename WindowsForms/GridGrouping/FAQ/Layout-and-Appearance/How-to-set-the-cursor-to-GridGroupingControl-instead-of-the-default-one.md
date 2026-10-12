@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-set-the-cursor-to-GridGroupingControl-inste | Windows Forms | Syncfusion
-description: how to set the cursor to gridgroupingcontrol instead of the default one
+title: Set the Cursor in WinForms GridGroupingControl | Syncfusion®
+description: Set the cursor in Syncfusion® WinForms GridGroupingControl, its cursor customization, cell cursor events, user interaction, and more.
 platform: windowsforms
-control: GridGrouping
+control: GridGroupingControl
 documentation: ug
 ---
 
-# How to Set The Cursor to GridGroupingControl instead of the Default One
+# How to Set the Cursor in WinForms GridGroupingControl
 
 You need to handle TableControlCellCursor event of GridGroupingControl and set the required cursor to the e.Inner.Cursor property.
 
