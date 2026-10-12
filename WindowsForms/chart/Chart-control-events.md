@@ -122,7 +122,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## VisibleRangeChanged
+## Visible range changed event
 
 The [VisibleRangeChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_VisibleRangeChanged) event is raised when the visible range of the chart changes during zooming.
 
@@ -146,7 +146,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## PrepareStyle
+## Prepare style event
 
 The [PrepareStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_PrepareStyle) event is raised before a series point is rendered. Use the event arguments to customize the style of an individual data point.
 
@@ -186,7 +186,7 @@ End Sub
 
 ![Chart events](Chart-control-events_images/Chart-control-events_img1.jpeg)
 
-## SeriesIncompatible
+## Series incompatible event
 
 The [SeriesIncompatible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_SeriesIncompatible) event is raised when the Chart control detects that one or more series cannot be rendered together because their chart types or configurations are incompatible.
 
@@ -210,7 +210,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## LayoutCompleted
+## Layout completed event
 
 The [LayoutCompleted](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_LayoutCompleted) event is raised when the chart is resized or re-rendered. This event is useful for rendering custom images or positioning custom controls over the chart after the layout is completed.
 
@@ -234,7 +234,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## PreChartAreaPaint event
+## PreChart area paint event
 
 The [PreChartAreaPaint](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_PreChartAreaPaint) event is raised before the chart area is painted.
 

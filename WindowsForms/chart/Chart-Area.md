@@ -133,7 +133,7 @@ End Sub
 
 ![Chart DivideArea bounds in Windows Forms Chart](Chart-Area_images/chart-divide-area-bounds.png)
 
-## Retrieving the Axes Associated with a Series
+## Retrieving the axes associated with a series
 
 The [GetXAxis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_GetXAxis_Syncfusion_Windows_Forms_Chart_ChartSeries_) and [GetYAxis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_GetYAxis_Syncfusion_Windows_Forms_Chart_ChartSeries_) methods retrieve the X-axis and Y-axis associated with a specified series. These methods are useful when a chart contains multiple axes and you need to determine which axes are being used by a particular series.
 
