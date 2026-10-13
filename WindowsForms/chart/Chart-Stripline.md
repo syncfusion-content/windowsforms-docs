@@ -246,7 +246,7 @@ stripLine.Font = New Font("Segoe UI", 10, FontStyle.Bold)
 
 Multiple strip lines can be added to the same axis to highlight different ranges.
 
-The following code explain how to add the mutiple striplines.
+The following code explain how to add the multiple striplines.
 
 {% tabs %}
 {% highlight c# %}
