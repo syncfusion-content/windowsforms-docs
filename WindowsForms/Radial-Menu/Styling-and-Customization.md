@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Styling and Customization in Windows Forms Radial Menu | Syncfusion®
 description: Styling and customization options include drill regions, outer rims, arc spacing, display styles, and image sizing.
@@ -47,7 +47,7 @@ Me.RadialMenu1.OuterArcColor = Color.Black
 {% highlight C# %}
 
 // DrillDown hover color
-this.radialMenu1.OuterArcHighLightedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));</td></tr>
+this.radialMenu1.OuterArcHighLightedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 
 {% endhighlight %}
 
@@ -98,7 +98,7 @@ this.radialMenu1.RimBackground = Color.Blue;
 
 ## Thickness
 
-The Thickness of the outer edge is set using the following code example.
+The thickness of the outer edge is set using the following code example.
 
 {% tabs %}
 
@@ -160,7 +160,7 @@ Me.RadialMenu1.OuterArcGap = 50
 
 ## Display style
 
-The Display style of Radial Menu items is customized using different options. They are
+The Display style of Radial Menu items is customized using different options. They are:
 
 * text above the image
 * text below the image
@@ -180,7 +180,7 @@ The Display style of Radial Menu items is customized using different options. Th
 
 'Display style of the text and image.
 
-Me.radialMenu1.DisplayStyle = Syncfusion.Windows.Forms.Tools.DisplayStyle. ImageAboveText
+Me.radialMenu1.DisplayStyle = Syncfusion.Windows.Forms.Tools.DisplayStyle.ImageAboveText
 
 {% endhighlight %}
 
@@ -208,7 +208,7 @@ RadialMenuItem radialMenuItem4 = new RadialMenuItem();
 RadialMenuItem radialMenuItem5 = new RadialMenuItem();
 RadialMenuItem radialMenuItem6 = new RadialMenuItem();
 
-this.radialMenu.Style =RadialMenuStyle.Office2016Colorful;
+this.radialMenu.Style = RadialMenuStyle.Office2016Colorful;
 this.radialMenu.DisplayStyle = DisplayStyle.ImageAboveText;
 this.radialMenu.WedgeCount = 4;
 
@@ -262,7 +262,7 @@ RadialMenuItem radialMenuItem4 = new RadialMenuItem();
 RadialMenuItem radialMenuItem5 = new RadialMenuItem();
 RadialMenuItem radialMenuItem6 = new RadialMenuItem();
 
-this.radialMenu.Style =RadialMenuStyle.Office2016Colorful;
+this.radialMenu.Style = RadialMenuStyle.Office2016Colorful;
 this.radialMenu.DisplayStyle = DisplayStyle.ImageAboveText;
 this.radialMenu.WedgeCount = 4;
 
@@ -282,7 +282,6 @@ this.radialMenu.Items.Add(this.radialMenuItem1);
 this.radialMenu.Items.Add(this.radialMenuItem2);
 this.radialMenu.Items.Add(this.radialMenuItem3);
 this.radialMenu.Items.Add(this.radialMenuItem4);
-this.radialMenu.Items.Add(this.radialMenuItem5);
 
 // Customize the image size of individual radialMenu item
 this.radialMenuItem3.ImageSize = new Size(44, 44);

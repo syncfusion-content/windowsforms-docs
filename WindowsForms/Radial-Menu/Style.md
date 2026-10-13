@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Style in Windows Forms Radial Menu | Syncfusion®
 description: Style settings provide Office 2016 and default themes for customizing the visual appearance of RadialMenu controls.
@@ -8,19 +8,15 @@ documentation: ug
 ---
 # Style in Windows Forms Radial Menu
 
-The RadialMenu control has rich set of themes for professional representation. You can easily modify the look and feel of the RadialMenu using the built-in themes using the [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialMenu.html#Syncfusion_Windows_Forms_Tools_RadialMenu_Style) property of RadialMenu.
+The RadialMenu control has a rich set of themes for professional representation. You can easily modify the look and feel of the RadialMenu using the built-in themes using the [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialMenu.html#Syncfusion_Windows_Forms_Tools_RadialMenu_Style) property of RadialMenu.
 
 It has the below themes.
 
-    •	Default
-
-    •	Office2016Colorful
-
-    •	Office2016White
-
-    •	Office2016DarkGray
-
-    •	Office2016Black
+* Default
+* Office2016Colorful
+* Office2016White
+* Office2016DarkGray
+* Office2016Black
 
 The following code example allows you to set the style for the RadialMenu.
 

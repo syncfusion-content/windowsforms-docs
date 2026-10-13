@@ -9,16 +9,16 @@ documentation: ug
 
 # About Syncfusion® Windows Forms RangeSlider Control
 
-The [RangeSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html) is a flexible UI component that allows value-range selection. It lets the user select from a range of values by moving  thumb controls along a Track.
+The [RangeSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html) is a flexible UI component that allows value-range selection. It lets the user select from a range of values by moving thumb controls along a Track.
 
 ![Range Slider for Windows Forms](Getting-Started_images/Overview.png) 
 
 ## Key features
 
-**Color customization** - Provides options to customize Channel, Thumb and selected range colors.
+**Color customization** - Provides options to customize channel, thumb, and selected range colors.
 
-**Orientation** - Provides option to set vertical and horizontal orientation.
+**Orientation** - Provides options to set vertical and horizontal orientation.
 
-**Value settings** - Provides options to set minimum and maximum value of RangeSlider.
+**Value settings** - Provides options to set minimum and maximum value of the RangeSlider.
 
-**Visual style** - Provides rich set of visual styles to customize the look and feel of RangeSlider.
+**Visual style** - Provides a rich set of visual styles to customize the look and feel of the RangeSlider.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Styles Settings in Windows Forms Range Slider | Syncfusion®
 description: Style settings provide Metro, Office 2016, and default themes for customizing the visual appearance of RangeSlider controls.
@@ -38,7 +38,7 @@ this.rangeSlider.VisualStyle = RangeSlider.RangeSliderStyle.Default;
 
 Me.rangeSlider.VisualStyle = RangeSlider.RangeSliderStyle.Default
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -62,9 +62,9 @@ this.rangeSlider.VisualStyle = RangeSlider.RangeSliderStyle.Metro;
 
 'Metro
 
-Me.rangeSlider.VisualStyle = RangeSlider.RangeSliderStyle.Metro;
+Me.rangeSlider.VisualStyle = RangeSlider.RangeSliderStyle.Metro
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -90,7 +90,7 @@ this.rangeSlider.VisualStyle = RangeSlider.RangeSliderStyle.Office2016Colorful;
 
 Me.rangeSlider.VisualStyle = RangeSlider.RangeSliderStyle.Office2016Colorful
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -116,7 +116,7 @@ this.rangeSlider.VisualStyle = RangeSlider.RangeSliderStyle.Office2016White;
 
 Me.rangeSlider.VisualStyle = RangeSlider.RangeSliderStyle.Office2016White
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -132,7 +132,7 @@ This option helps to set the Office2016DarkGray theme.
 
 // Office2016DarkGray
 
- this.rangeSlider.VisualStyle = RangeSlider.RangeSliderStyle.Office2016DarkGray;
+this.rangeSlider.VisualStyle = RangeSlider.RangeSliderStyle.Office2016DarkGray;
 
 {% endhighlight %}
 
@@ -142,7 +142,7 @@ This option helps to set the Office2016DarkGray theme.
 
 Me.rangeSlider.VisualStyle = RangeSlider.RangeSliderStyle.Office2016DarkGray
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -168,7 +168,7 @@ this.rangeSlider.VisualStyle = RangeSlider.RangeSliderStyle.Office2016Black;
 
 Me.rangeSlider.VisualStyle = RangeSlider.RangeSliderStyle.Office2016Black
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
