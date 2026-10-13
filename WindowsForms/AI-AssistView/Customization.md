@@ -275,33 +275,33 @@ public partial class Form1 : Form
 
 ## AvatarStyle Customization in Windows Forms AI AssistView
 
-The SfAIAssistView control uses avatars to visually represent participants in a conversation — the bot authored by the application, the user sending prompts, and the assistant speaking through the banner. The `AvatarStyle` class centralizes every visual aspect of these avatars so you can mix images, initials, themed character glyphs, and custom shapes without changing layout code. Combined with the [`AvatarSize`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.AvatarSize.html), [`AvatarShape`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.AvatarShape.html), and [`AvatarCharacterType`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.AvatarCharacterType.html) enums, the same API covers the hero banner at the top of the chat, the first bot greeting, and every message exchanged during the conversation.
+The SfAIAssistView control uses avatars to visually represent participants in a conversation — the bot authored by the application, the user sending prompts, and the assistant speaking through the banner. The `AvatarStyle` class centralizes every visual aspect of these avatars so you can mix images, initials, themed character glyphs, and custom shapes without changing layout code. Combined with the [`AvatarSize`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Shared.AvatarSize.html), [`AvatarShape`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Shared.AvatarShape.html), and [`AvatarCharacterType`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Shared.AvatarContentType.html) enums, the same API covers the hero banner at the top of the chat, the first bot greeting, and every message exchanged during the conversation.
 
 ### Customization Using AvatarStyle
 
-The [AvatarStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.AvatarStyle.html) class is a strongly typed container for every avatar appearance setting. Apply a single instance to the banner, an [Author](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.Author.html) belonging to a chat message, or the [TypingIndicator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.SfAIAssistView.html#Syncfusion_WinForms_AIAssistView_SfAIAssistView_TypingIndicator) — the rest of the control observes the same property contract.
+The [AvatarStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.AvatarStyle.html) class is a strongly typed container for every avatar appearance setting. Apply a single instance to the banner, an [Author](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.Author.html) belonging to a chat message, or the [TypingIndicator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.SfAIAssistView.html#Syncfusion_WinForms_AIAssistView_SfAIAssistView_TypingIndicator) — the rest of the control observes the same property contract.
 
 | Property | Type | Description |
 |----------|------|-------------|
-| [AvatarContent](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.AvatarStyle.html#Syncfusion_WinForms_AIAssistView_AvatarStyle_AvatarContent) | `AvatarContentType` | Selects the rendering source — custom image, theme-driven default, initials, or a themed character glyph. |
+| [AvatarContent](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.AvatarContentType.html) | `AvatarContentType` | Selects the rendering source — custom image, theme-driven default, initials, or a themed character glyph. |
 | [AvatarImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.AvatarStyle.html#Syncfusion_WinForms_AIAssistView_AvatarStyle_AvatarImage) | `Image` | The image rendered when `AvatarContent` is `AvatarContentType.CustomImage`. |
 | [AvatarName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.AvatarStyle.html#Syncfusion_WinForms_AIAssistView_AvatarStyle_AvatarName) | `string` | Display name used to derive initials when `AvatarContent` is `AvatarContentType.Initials`. |
-| [AvatarCharacterType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.AvatarStyle.html#Syncfusion_WinForms_AIAssistView_AvatarStyle_AvatarCharacterType) | `AvatarCharacterType` | Themed character glyph rendered when `AvatarContent` is `AvatarContentType.AvatarCharacter`. |
-| [AvatarInitialsType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.AvatarStyle.html#Syncfusion_WinForms_AIAssistView_AvatarStyle_AvatarInitialsType) | `AvatarInitialsType` | Controls whether the avatar shows one or two characters when `AvatarContent` is `AvatarContentType.Initials`. |
+| [AvatarCharacterType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.AvatarCharacter.html) | `AvatarCharacterType` | Themed character glyph rendered when `AvatarContent` is `AvatarContentType.AvatarCharacter`. |
+| [AvatarInitialsType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.AvatarInitialsType.html) | `AvatarInitialsType` | Controls whether the avatar shows one or two characters when `AvatarContent` is `AvatarContentType.Initials`. |
 | [AvatarBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.AvatarStyle.html#Syncfusion_WinForms_AIAssistView_AvatarStyle_AvatarBackColor) | `Color` | Background fill used when rendering initials or themed character glyphs. |
 | [AvatarForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.AvatarStyle.html#Syncfusion_WinForms_AIAssistView_AvatarStyle_AvatarForeColor) | `Color` | Color used to draw the initials or themed character glyph on top of the background. |
 | [AvatarShape](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.AvatarStyle.html#Syncfusion_WinForms_AIAssistView_AvatarStyle_AvatarShape) | `AvatarShape` | The geometric shape of the avatar (Circle, Square, or Custom with a configurable corner radius). |
 | [CornerRadius](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.AvatarStyle.html#Syncfusion_WinForms_AIAssistView_AvatarStyle_CornerRadius) | `int` | Corner radius in pixels applied when `AvatarShape` is `AvatarShape.Custom`. Ignored for the preset shapes. |
-| [AvatarSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.AvatarStyle.html#Syncfusion_WinForms_AIAssistView_AvatarStyle_AvatarSize) | `AvatarSize` | The relative size bucket of the avatar (ExtraSmall, Small, Medium, Large, ExtraLarge). |
+| [AvatarSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.AvatarSize.html) | `AvatarSize` | The relative size bucket of the avatar (ExtraSmall, Small, Medium, Large, ExtraLarge). |
 
 #### AvatarContentType Enum
 
 | Member | Description |
 |--------|-------------|
-| `Default` | Resolves the rendering source based on what is supplied — falls back to the themed character glyph when no image or name is set. |
-| `CustomImage` | Renders `AvatarImage` inside the avatar shape. |
-| `Initials` | Renders characters derived from `AvatarName` using `AvatarInitialsType`. |
-| `AvatarCharacter` | Renders a theme-driven character glyph defined by `AvatarCharacterType`. |
+| [Default](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.AvatarContentType.html#Syncfusion_Windows_Forms_AvatarContentType_Default) | Resolves the rendering source based on what is supplied — falls back to the themed character glyph when no image or name is set. |
+| [CustomImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.AvatarContentType.html#Syncfusion_Windows_Forms_AvatarContentType_CustomImage) | Renders `AvatarImage` inside the avatar shape. |
+| [Initials](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.AvatarContentType.html#Syncfusion_Windows_Forms_AvatarContentType_Initials) | Renders characters derived from `AvatarName` using `AvatarInitialsType`. |
+| [AvatarCharacter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.AvatarContentType.html#Syncfusion_Windows_Forms_AvatarContentType_AvatarCharacter) | Renders a theme-driven character glyph defined by `AvatarCharacterType`. |
 
 #### AvatarCharacterType Enum
 
@@ -311,32 +311,32 @@ AvatarCharacterType is an enumeration that defines themed character glyphs, avai
 
 | Member | Description |
 |--------|-------------|
-| `SingleCharacter` | Renders the first letter of `AvatarName` (default — useful for short names like "Bot"). |
-| `TwoCharacter` | Renders the first two letters (useful for full names such as "Finley James" → "FJ"). |
+| [SingleCharacter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.AvatarInitialsType.html#Syncfusion_Windows_Forms_AvatarInitialsType_SingleCharacter) | Renders the first letter of `AvatarName` (default — useful for short names like "Bot"). |
+| [TwoCharacter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.AvatarInitialsType.html#Syncfusion_Windows_Forms_AvatarInitialsType_DoubleCharacter) | Renders the first two letters (useful for full names such as "Finley James" → "FJ"). |
 
 #### AvatarShape Enum
 
 | Member | Description |
 |--------|-------------|
-| `Circle` | Circular avatar (default). |
-| `Square` | Square avatar (sharp corners). |
-| `Custom` | Use this shape together with [`CornerRadius`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.AvatarStyle.html#Syncfusion_WinForms_AIAssistView_AvatarStyle_CornerRadius) to control the corner radius in pixels. |
+| [Circle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.AvatarShape.html#Syncfusion_Windows_Forms_AvatarShape_Circle) | Circular avatar (default). |
+| [Square](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.AvatarShape.html#Syncfusion_Windows_Forms_AvatarShape_Square) | Square avatar (sharp corners). |
+| [Custom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.AvatarShape.html#Syncfusion_Windows_Forms_AvatarShape_Custom) | Use this shape together with [`CornerRadius`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.AvatarStyle.html#Syncfusion_WinForms_AIAssistView_AvatarStyle_CornerRadius) to control the corner radius in pixels. |
 
 #### AvatarSize Enum
 
 | Member | Description |
 |--------|-------------|
-| `ExtraSmall` | Tiniest size bucket (18 px), typically for inline/compact rows. |
-| `Small` | Compact avatar (24 px). |
-| `Medium` | Standard message avatar (32 px). |
-| `Large` | Used in prominent headers. |
-| `ExtraLarge` | Hero-size avatar reserved for the banner. |
+| [ExtraSmall](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.AvatarSize.html#Syncfusion_Windows_Forms_AvatarSize_ExtraSmall) | Tiniest size bucket (18 px), typically for inline/compact rows. |
+| [Small](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.AvatarSize.html#Syncfusion_Windows_Forms_AvatarSize_Small) | Compact avatar (24 px). |
+| [Medium](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.AvatarSize.html#Syncfusion_Windows_Forms_AvatarSize_Medium) | Standard message avatar (32 px). |
+| [Large](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.AvatarSize.html#Syncfusion_Windows_Forms_AvatarSize_Large) | Used in prominent headers. |
+| [ExtraLarge](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.AvatarSize.html#Syncfusion_Windows_Forms_AvatarSize_ExtraLarge) | Hero-size avatar reserved for the banner. |
 
 ### Customizing the Banner Avatar
 
 The banner at the top of the chat is the very first visual cue your users receive. Configure it with [BannerStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.BannerStyle.html) (which carries an embedded `ImageSize` and inset for the avatar) and [SetBannerView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.SfAIAssistView.html#Syncfusion_WinForms_AIAssistView_SfAIAssistView_SetBannerView_System_String_System_String_System_Drawing_Image_Syncfusion_WinForms_AIAssistView_BannerStyle_).
 
-The banner can render either an actual `Image` (passed as the third argument to `SetBannerView`) or an `AvatarStyle` driven placeholder configured on `BannerStyle.AvatarStyle`. Pair `ImageSize` with the corresponding `AvatarSize` to keep the hero aligned with the chat avatars.
+The banner can render either an actual `Image` (passed as the third argument to `SetBannerView`) or an [AvatarStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.AvatarStyle.html) driven placeholder configured on `BannerStyle.AvatarStyle`. Pair `ImageSize` with the corresponding `AvatarSize` to keep the hero aligned with the chat avatars.
 
 The `BannerStyle.AvatarStyle` property accepts a fully configured [`AvatarStyle`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.AvatarStyle.html) instance so you can drive the banner avatar together with title/subtitle colors and fonts from one place. The control forwards the same `AvatarShape`, `AvatarSize`, `CornerRadius`, `AvatarContent`, and `AvatarBackColor` / `AvatarForeColor` settings used on chat avatars so the hero stays visually consistent.
 
@@ -517,7 +517,7 @@ private void SetupChatCollectionAvatars()
 
 ### Avatar Shape and Corner Radius
 
-`AvatarShape` exposes two preset shapes — `Circle` and `Square` — plus the `Custom` shape. Use `Custom` together with `CornerRadius` to control the rounding in pixels. The shape and border follow the same code path in every chat row, so setting them once on the `AvatarStyle` propagates to every message from the author.
+[AvatarShape](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.AvatarShape.html) exposes two preset shapes — `Circle` and `Square` — plus the `Custom` shape. Use `Custom` together with `CornerRadius` to control the rounding in pixels. The shape and border follow the same code path in every chat row, so setting them once on the [AvatarStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.AvatarStyle.html) propagates to every message from the author.
 wo preset shapes — `Circle` and `
 {% tabs %}
 
