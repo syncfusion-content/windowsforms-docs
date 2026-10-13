@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About the Syncfusion® Windows Forms XPTaskBar Control | Syncfusion®
-description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms XPTaskBar control and its features.
+title: About Syncfusion® Windows Forms XPTaskBar Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms XPTaskBar control and more details.
 platform: windowsforms
 control: XPTaskBar
 documentation: ug
