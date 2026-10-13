@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Check and Uncheck Bar Items in Windows Forms PopupMenu | Syncfusion®
 description: Checked bar items indicate selection states and allow users to identify and toggle commands within popup menus.
@@ -9,10 +9,10 @@ documentation: ug
 
 # Check and Uncheck Bar Items in Windows Forms PopupMenu
 
-This support will help users to easily acknowledge the selected bar item by using the check mark. The [`Checked`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_Checked) property indicates whether a check mark should appear before the text of the bar item. On runtime, user can toggle the state manually through the [`Click`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_Click) event of the bar item.
+This support helps users to easily acknowledge the selected bar item by using the check mark. The [`Checked`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_Checked) property indicates whether a check mark should appear before the text of the bar item. At runtime, the state can be toggled manually through the [`Click`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_Click) event of the bar item.
 
 >**NOTE**        
-In this illustration we have used **ParentBarItem**. Similarly, we have to set for BarItem, DropDownBarItem,ComboBoxBarItem, ListBarItem, StaticBarItem and TextBoxBarItem.
+In this illustration, the **ParentBarItem** has been used. Similarly, this has to be set for BarItem, DropDownBarItem, ComboBoxBarItem, ListBarItem, StaticBarItem and TextBoxBarItem.
 
 
 The below code snippet will explain the checked state of the bar item.

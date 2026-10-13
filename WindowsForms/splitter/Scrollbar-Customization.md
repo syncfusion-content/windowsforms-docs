@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Scrollbar Customization in Windows Forms Splitter | Syncfusion®
 description: Customize SplitterControl scrollbars with Office and Metro styles to match application appearance and user preferences.
@@ -9,7 +9,7 @@ documentation: ug
 
 # Scrollbar Customization in Windows Forms Splitter
 
-The appearance of the SplitterControl scrollbar can be customized by using the GridOfficeScrollBars property. The scrollbar can be customized to get the following style look and feel.
+The appearance of the SplitterControl scrollbar can be customized by using the `GridOfficeScrollBars` property. The scrollbar can be customized to get the following style look and feel.
 
 * Office2007
 * Office2010
@@ -21,17 +21,17 @@ The appearance of the SplitterControl scrollbar can be customized by using the G
 
 {% highlight C# %}
 
-//Customizes the Scrollbar.
+// Customizes the Scrollbar.
 
-this.splitterControl1.GridOfficeScrollBars= OfficeScrollBars.Office2007;
+this.splitterControl1.GridOfficeScrollBars = OfficeScrollBars.Office2007;
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-'Customizes the Scrollbar
+' Customizes the Scrollbar.
 
-Me.splitterControl1.GridOfficeScrollBars= OfficeScrollBars.Office2007
+Me.splitterControl1.GridOfficeScrollBars = OfficeScrollBars.Office2007
 
 {% endhighlight %}
 

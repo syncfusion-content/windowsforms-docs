@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Customization in Windows Forms SplitContainer | Syncfusion®
 description: Customization options include panel behavior, splitter settings, collapsing panels, appearance customization, borders, and visual styles.
@@ -23,7 +23,7 @@ A sample which demonstrates the Windows Forms SplitContainer (SplitContainerAdv)
 
 ## Panel settings
 
-This section discusses about various properties available for the SplitContainerAdv to control the behavior of the panels. The panels has properties and events similar to Window's Panel control, to change its appearance.
+This section discusses about various properties available for the SplitContainerAdv to control the behavior of the panels. The panels have properties and events similar to Window's Panel control, to change its appearance.
 
 ### Panel orientation
 
@@ -64,7 +64,7 @@ While resizing the control at design time or at run time, we can make one panel 
 
 
 
-this.SplitContainerAdv1.FixedPanel = Syncfusion.Windows.Forms.Tools.Enums.FixedPanel.Panel1
+this.splitContainerAdv1.FixedPanel = Syncfusion.Windows.Forms.Tools.Enums.FixedPanel.Panel1;
 {% endhighlight %}
 
 
@@ -74,7 +74,7 @@ this.SplitContainerAdv1.FixedPanel = Syncfusion.Windows.Forms.Tools.Enums.FixedP
 
 
 
-Me.SplitContainerAdv1.FixedPanel = Syncfusion.Windows.Forms.Tools.Enums.FixedPanel.Panel1
+Me.splitContainerAdv1.FixedPanel = Syncfusion.Windows.Forms.Tools.Enums.FixedPanel.Panel1
 {% endhighlight %}
 
 {% endtabs %}
@@ -112,9 +112,9 @@ this.splitContainerAdv1.TogglePanelOn = Syncfusion.Windows.Forms.Tools.TogglePan
 
 
 
-Me.SplitContainerAdv1.Panel1Collapsed = True
+Me.splitContainerAdv1.Panel1Collapsed = True
 
-Me.SplitContainerAdv1.Panel2Collapsed = False
+Me.splitContainerAdv1.Panel2Collapsed = False
 
 Me.splitContainerAdv1.PanelToBeCollapsed = Syncfusion.Windows.Forms.Tools.CollapsedPanel.Panel1
 
@@ -169,13 +169,13 @@ The below table describes the properties to control the behavior of the splitter
 
 
 
-this.SplitContainerAdv1.IsSplitterFixed = true;
+this.splitContainerAdv1.IsSplitterFixed = true;
 
-this.splitContainerAdv1.SplitterDistance = 25
+this.splitContainerAdv1.SplitterDistance = 25;
 
-this.splitContainerAdv1.SplitterIncrement = 5
+this.splitContainerAdv1.SplitterIncrement = 5;
 
-this.splitContainerAdv1.SplitterWidth = 20
+this.splitContainerAdv1.SplitterWidth = 20;
 {% endhighlight %}
 
 
@@ -185,7 +185,7 @@ this.splitContainerAdv1.SplitterWidth = 20
 
 
 
-Me.SplitContainerAdv1.IsSplitterFixed = True
+Me.splitContainerAdv1.IsSplitterFixed = True
 
 Me.splitContainerAdv1.SplitterDistance = 25
 
@@ -207,7 +207,7 @@ SplitContainerAdv control supports various appearance settings for the Thumbnail
 * [ExpandFill](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html#Syncfusion_Windows_Forms_Tools_SplitContainerAdv_ExpandFill)
 * [ExpandLine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html#Syncfusion_Windows_Forms_Tools_SplitContainerAdv_ExpandLine)
 * [GripDark](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html#Syncfusion_Windows_Forms_Tools_SplitContainerAdv_GripDark)
-* [GridLight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html#Syncfusion_Windows_Forms_Tools_SplitContainerAdv_GripLight)
+* [GripLight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html#Syncfusion_Windows_Forms_Tools_SplitContainerAdv_GripLight)
 
 {% tabs %}
 
@@ -215,13 +215,13 @@ SplitContainerAdv control supports various appearance settings for the Thumbnail
 
 
 
-this.splitContainerAdv2.ExpandFill = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.AliceBlue);
+this.splitContainerAdv1.ExpandFill = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.AliceBlue);
 
-this.splitContainerAdv2.ExpandLine = System.Drawing.Color.Red;
+this.splitContainerAdv1.ExpandLine = System.Drawing.Color.Red;
 
-this.splitContainerAdv2.GripDark = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.Wheat);
+this.splitContainerAdv1.GripDark = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.Wheat);
 
-this.splitContainerAdv2.GripLight = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.Crimson);
+this.splitContainerAdv1.GripLight = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.Crimson);
 {% endhighlight %}
 
 
@@ -231,13 +231,13 @@ this.splitContainerAdv2.GripLight = new Syncfusion.Drawing.BrushInfo(System.Draw
 {% highlight VB %}
 
 
-Me.splitContainerAdv2.ExpandFill = New Syncfusion.Drawing.BrushInfo(System.Drawing.Color.AliceBlue)
+Me.splitContainerAdv1.ExpandFill = New Syncfusion.Drawing.BrushInfo(System.Drawing.Color.AliceBlue)
 
-Me.splitContainerAdv2.ExpandLine = System.Drawing.Color.Red
+Me.splitContainerAdv1.ExpandLine = System.Drawing.Color.Red
 
-Me.splitContainerAdv2.GripDark = New Syncfusion.Drawing.BrushInfo(System.Drawing.Color.Wheat)
+Me.splitContainerAdv1.GripDark = New Syncfusion.Drawing.BrushInfo(System.Drawing.Color.Wheat)
 
-Me.splitContainerAdv2.GripLight = New Syncfusion.Drawing.BrushInfo(System.Drawing.Color.Crimson)
+Me.splitContainerAdv1.GripLight = New Syncfusion.Drawing.BrushInfo(System.Drawing.Color.Crimson)
 {% endhighlight %}
 
 {% endtabs %}
@@ -245,15 +245,15 @@ Me.splitContainerAdv2.GripLight = New Syncfusion.Drawing.BrushInfo(System.Drawin
  ![Thumbnail arrow and grip settings](SplitContainerAdv-Images/Overview_img398.jpeg)
 
 
-#### RunTime appearance
+### RunTime appearance
 
 The properties to control the appearance of the thumbnail arrows, and grip, while mouse hovering at runtime, are as follows.
 
-* [BackgroundColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html#Syncfusion_Windows_Forms_Tools_SplitContainerAdv_BackgroundColor)
-* [HotExpandFill](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html#Syncfusion_Windows_Forms_Tools_SplitContainerAdv_ExpandFill)
-* [HotExpandLine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html#Syncfusion_Windows_Forms_Tools_SplitContainerAdv_ExpandLine)
+* [HotBackgroundColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html#Syncfusion_Windows_Forms_Tools_SplitContainerAdv_HotBackgroundColor)
+* [HotExpandFill](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html#Syncfusion_Windows_Forms_Tools_SplitContainerAdv_HotExpandFill)
+* [HotExpandLine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html#Syncfusion_Windows_Forms_Tools_SplitContainerAdv_HotExpandLine)
 * [HotGripDark](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html#Syncfusion_Windows_Forms_Tools_SplitContainerAdv_HotGripDark)
-* [HotGridLight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html#Syncfusion_Windows_Forms_Tools_SplitContainerAdv_HotGripLight)
+* [HotGripLight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html#Syncfusion_Windows_Forms_Tools_SplitContainerAdv_HotGripLight)
 
 {% tabs %}
 
@@ -262,15 +262,15 @@ The properties to control the appearance of the thumbnail arrows, and grip, whil
 
 
 
-this.splitContainerAdv2.HotBackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Horizontal, System.Drawing.Color.SandyBrown, System.Drawing.Color.AntiqueWhite);
+this.splitContainerAdv1.HotBackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Horizontal, System.Drawing.Color.SandyBrown, System.Drawing.Color.AntiqueWhite);
 
-this.splitContainerAdv2.HotExpandFill = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.Red);
+this.splitContainerAdv1.HotExpandFill = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.Red);
 
-this.splitContainerAdv2.HotExpandLine = System.Drawing.Color.DeepPink;
+this.splitContainerAdv1.HotExpandLine = System.Drawing.Color.DeepPink;
 
-this.splitContainerAdv2.HotGripDark = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.MistyRose);
+this.splitContainerAdv1.HotGripDark = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.MistyRose);
 
-this.splitContainerAdv2.HotGripLight = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.Purple);
+this.splitContainerAdv1.HotGripLight = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.Purple);
 
 {% endhighlight %}
 
@@ -280,15 +280,15 @@ this.splitContainerAdv2.HotGripLight = new Syncfusion.Drawing.BrushInfo(System.D
 
 
 
-Me.splitContainerAdv2.HotBackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Horizontal, System.Drawing.Color.SandyBrown, System.Drawing.Color.AntiqueWhite) 
+Me.splitContainerAdv1.HotBackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Horizontal, System.Drawing.Color.SandyBrown, System.Drawing.Color.AntiqueWhite) 
 
-Me.splitContainerAdv2.HotExpandFill = New Syncfusion.Drawing.BrushInfo(System.Drawing.Color.Red) 
+Me.splitContainerAdv1.HotExpandFill = New Syncfusion.Drawing.BrushInfo(System.Drawing.Color.Red) 
 
-Me.splitContainerAdv2.HotExpandLine = System.Drawing.Color.DeepPink 
+Me.splitContainerAdv1.HotExpandLine = System.Drawing.Color.DeepPink 
 
-Me.splitContainerAdv2.HotGripDark = New Syncfusion.Drawing.BrushInfo(System.Drawing.Color.MistyRose) 
+Me.splitContainerAdv1.HotGripDark = New Syncfusion.Drawing.BrushInfo(System.Drawing.Color.MistyRose) 
 
-Me.splitContainerAdv2.HotGripLight = New Syncfusion.Drawing.BrushInfo(System.Drawing.Color.Purple)
+Me.splitContainerAdv1.HotGripLight = New Syncfusion.Drawing.BrushInfo(System.Drawing.Color.Purple)
 {% endhighlight %}
 
 {% endtabs %}
@@ -305,9 +305,9 @@ This section discusses the properties which controls the appearance of the Split
 
 The below properties describes the background settings.
 
-* [BackgroundImage](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backgroundimage?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_BackgroundImage)
-* [BackgroundImageLayout](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backgroundimagelayout?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_BackgroundImageLayout)
-* [BackColor](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backcolor?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_BackColor)
+* [BackgroundImage](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backgroundimage)
+* [BackgroundImageLayout](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backgroundimagelayout)
+* [BackColor](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backcolor)
 * [BackgroundColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html#Syncfusion_Windows_Forms_Tools_SplitContainerAdv_BackgroundColor)
 
 > Note: The above properties can be overridden by SplitContainerAdv.Panel properties.
@@ -344,8 +344,8 @@ Me.splitContainerAdv1.Panel2.BackColor = System.Drawing.Color.AliceBlue
 
 The below properties describes the foreground settings.
 
-* [Font](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.font?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_Font)
-* [ForeColor](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.forecolor?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_ForeColor)
+* [Font](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.font)
+* [ForeColor](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.forecolor)
 
 {% tabs %}
 

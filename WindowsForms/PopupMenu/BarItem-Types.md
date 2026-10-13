@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: BarItem Types in Windows Forms PopupMenu | Syncfusion®
 description: BarItem types include standard items, parent items, drop-downs, combo boxes, list items, text boxes, and static items.
@@ -9,7 +9,7 @@ documentation: ug
 
 # BarItem Types in Windows Forms PopupMenu
 
-The various types of BarItems supported by PopupMenu are,
+The various types of BarItems supported by the PopupMenu are:
 
 * BarItem
 * ParentBarItem
@@ -30,39 +30,39 @@ Please refer ["Getting Started"](https://help.syncfusion.com/windowsforms/popupm
 
 ## ParentBarItem
 
-The ParentBarItem is a type of bar item which acts a parent control for sub-menu or itself holds child menu items for a popup menu. It can be used when a sub-menu needs to be added for a popup menu.
+The ParentBarItem is a type of bar item which acts as a parent control for a sub-menu, or itself holds child menu items for a popup menu. It can be used when a sub-menu needs to be added for a popup menu.
 
 ### Adding ParentBarItem through designer
 
-1. Right-clicking on **PopupMenu** control and select **Add Default ParentBarItem...** option. You can also add the default parent bar item by selecting the **Add Default ParentBarItem...** option from the **Smart tag** menu.
+1. Right-click on the **PopupMenu** control and select the **Add Default ParentBarItem...** option. You can also add the default parent bar item by selecting the **Add Default ParentBarItem...** option from the **Smart tag** menu.
 
    ![ParentBarItem](GettingStarted_Images/PopupMenu2.png)
 
    ![ParentBarItem](GettingStarted_Images/PopupMenu3.png)
 
-2. Once **Default ParentBarItem** is added, we can add the parent bar item by right-clicking on the control in the designer and select **Properties**. Now, in the **Properties** panel, under **Misc > ParentBarItem > Items** select the parent bar item from the **BarItem Collection Editor**.
+2. After the **Default ParentBarItem** is added, add the parent bar item by right-clicking on the control in the designer and selecting **Properties**. Now, in the **Properties** panel, under **Misc > ParentBarItem > Items**, select the parent bar item from the **BarItem Collection Editor**.
 
    ![ParentBarItem](GettingStarted_Images/PopupMenu4.png)
 
    ![ParentBarItem](GettingStarted_Images/PopupMenu5.png)
 
-3. In BarItem Collection Editor window, click on down arrow of **Add** button. It will display different types of bar items. Using this, user can add appropriate bar items as per their need.
+3. In the **BarItem Collection Editor** window, click on the down arrow of the **Add** button. It will display different types of bar items. Using this, the user can add the appropriate bar items as per the need.
 
    ![ParentBarItem](MenuItems_Images/ParentBarItem.png)
 
-4. Once item is added, we can select particular item in **BarItem Collection Editor** window and set text under **Appearance > Text** section.
+4. After an item is added, select the particular item in the **BarItem Collection Editor** window and set the text under the **Appearance > Text** section.
 
    ![ParentBarItem](MenuItems_Images/ParentBarItem1.png)
 
-5. Similarly, we can add the sub menu items in **BarItem Collection Editor** window under **Misc > Items** section.
+5. Similarly, the sub-menu items can be added in the **BarItem Collection Editor** window under the **Misc > Items** section.
 
    ![ParentBarItem](MenuItems_Images/ParentBarItem2.png)
 
-6. Once sub menu item is added, we can select particular item in **BarItem Collection Editor** window and set text under **Appearance > Text** section.
+6. After a sub-menu item is added, select the particular item in the **BarItem Collection Editor** window and set the text under the **Appearance > Text** section.
 
    ![ParentBarItem](MenuItems_Images/ParentBarItem3.png)
 
-7. Similarly, we can add the image under **Appearance > Image** section.
+7. Similarly, the image can be added under the **Appearance > Image** section.
 
    ![ParentBarItem](MenuItems_Images/ParentBarItem4.png)
 
@@ -203,37 +203,37 @@ Me.ResumeLayout(False)
 
 ## DropDownBarItem
 
-DropDownBarItem represents submenu that will appear as popup when clicked on it.
+The DropDownBarItem represents a submenu that will appear as a popup when it is clicked.
 
 ### Adding DropDownBarItem through designer
 
-1. Right-clicking on **PopupMenu** control and select **Add Default ParentBarItem...** option. You can also add the default parent bar item by selecting the **Add Default ParentBarItem...** option from the **Smart tag** menu.
+1. Right-click on the **PopupMenu** control and select the **Add Default ParentBarItem...** option. You can also add the default parent bar item by selecting the **Add Default ParentBarItem...** option from the **Smart tag** menu.
 
    ![DropDownBarItem](GettingStarted_Images/PopupMenu2.png)
 
    ![DropDownBarItem](GettingStarted_Images/PopupMenu3.png)
 
-2. Once **Default ParentBarItem** is added, we can add the dropdown bar item by right-clicking on the control in the designer and select **Properties**. Now, in the **Properties** panel, under **Misc > ParentBarItem > Items** select the dropdown bar item from the **BarItem Collection Editor**.
+2. After the **Default ParentBarItem** is added, add the dropdown bar item by right-clicking on the control in the designer and selecting **Properties**. Now, in the **Properties** panel, under **Misc > ParentBarItem > Items**, select the dropdown bar item from the **BarItem Collection Editor**.
 
    ![DropDownBarItem](GettingStarted_Images/PopupMenu4.png)
 
    ![DropDownBarItem](GettingStarted_Images/PopupMenu5.png)
 
-3. In BarItem Collection Editor window, click on down arrow of **Add** button. It will display different types of bar items. Using this, user can add appropriate bar items as per their need.
+3. In the **BarItem Collection Editor** window, click on the down arrow of the **Add** button. It will display different types of bar items. Using this, the user can add the appropriate bar items as per the need.
 
    ![DropDownBarItem](MenuItems_Images/DropDownBarItem.png)
 
-4. Once item is added, we can select particular item in **BarItem Collection Editor** window and set text under **Appearance > Text** section.
+4. After an item is added, select the particular item in the **BarItem Collection Editor** window and set the text under the **Appearance > Text** section.
 
    ![DropDownBarItem](MenuItems_Images/DropDownBarItem1.png)
 
-5. To add sub menu items as popup of **DropDownBarItem** we need to drag and drop **PopupControlContainer** to the application and associate this by using **PopupControlContainer** property of DropDownBarItem.
+5. To add sub menu items as a popup of the **DropDownBarItem**, drag and drop a [PopupControlContainer](https://help.syncfusion.com/windowsforms/popupcontrolcontainer/overview) to the application and associate it by using the **PopupControlContainer** property of the DropDownBarItem.
 
    ![DropDownBarItem](MenuItems_Images/DropDownBarItem2.png)
 
    ![DropDownBarItem](MenuItems_Images/DropDownBarItem3.png)
 
-6. Drag and drop any controls like Button, Label, TextBox, Colorpicker etc... in the **PopupControlContainer**. In this illustration, we have used **ColorPickerUIAdv**.
+6. Drag and drop any controls like Button, Label, TextBox, ColorPicker, etc., in the **PopupControlContainer**. In this illustration, the **ColorPickerUIAdv** has been used.
 
    ![DropDownBarItem](MenuItems_Images/DropDownBarItem4.png)
 
@@ -408,37 +408,37 @@ Me.ResumeLayout(False)
 
 ## ComboBoxBarItem
 
-The ComboBoxBarItem is a type of bar item, which behaves like combo box control in PopupMenu.
+The ComboBoxBarItem is a type of bar item which behaves like a combo box control in the PopupMenu.
 
 ### Adding ComboBoxBarItem through designer
 
-1. Right-clicking on **PopupMenu** control and select **Add Default ParentBarItem...** option. You can also add the default parent bar item by selecting the **Add Default ParentBarItem...** option from the **Smart tag** menu.
+1. Right-click on the **PopupMenu** control and select the **Add Default ParentBarItem...** option. You can also add the default parent bar item by selecting the **Add Default ParentBarItem...** option from the **Smart tag** menu.
 
    ![ComboBoxBarItem](GettingStarted_Images/PopupMenu2.png)
 
    ![ComboBoxBarItem](GettingStarted_Images/PopupMenu3.png)
 
-2. Once **Default ParentBarItem** is added, we can add the combobox bar item by right-clicking on the control in the designer and select **Properties**. Now, in the **Properties** panel, under **Misc > ParentBarItem > Items** select the combobox bar item from the **BarItem Collection Editor**.
+2. After the **Default ParentBarItem** is added, add the combobox bar item by right-clicking on the control in the designer and selecting **Properties**. Now, in the **Properties** panel, under **Misc > ParentBarItem > Items**, select the combobox bar item from the **BarItem Collection Editor**.
 
    ![ComboBoxBarItem](GettingStarted_Images/PopupMenu4.png)
 
    ![ComboBoxBarItem](GettingStarted_Images/PopupMenu5.png)
 
-3. In BarItem Collection Editor window, click on down arrow of **Add** button. It will display different types of bar items. Using this, user can add appropriate bar items as per their need.
+3. In the **BarItem Collection Editor** window, click on the down arrow of the **Add** button. It will display different types of bar items. Using this, the user can add the appropriate bar items as per the need.
 
    ![ComboBoxBarItem](MenuItems_Images/ComboBoxBarItem.png)
 
-4. Once item is added, we can select particular item in **BarItem Collection Editor** window and set text under **Data > TextBoxValue** section.
+4. After an item is added, select the particular item in the **BarItem Collection Editor** window and set the text under the **Data > TextBoxValue** section.
 
    ![ComboBoxBarItem](MenuItems_Images/ComboBoxBarItem1.png)
 
-5. Similarly, we can add items collections in **properties** panel, under **Data > ChoiceList** by using **String Collection Editor**.
+5. Similarly, the items collection can be added in the **Properties** panel, under **Data > ChoiceList**, by using the **String Collection Editor**.
 
    ![ComboBoxBarItem](MenuItems_Images/ComboBoxBarItem2.png)
 
    ![ComboBoxBarItem](MenuItems_Images/ComboBoxBarItem3.png)
 
-6. Finally, we have add the ComboBoxBarItem in PopupMenu control successfully.
+6. Finally, the ComboBoxBarItem has been successfully added to the PopupMenu control.
 
    ![ComboBoxBarItem](MenuItems_Images/ComboBoxBarItem4.png)
 
@@ -535,37 +535,37 @@ Me.ResumeLayout(False)
 
 ## ListBarItem
 
-The ListBarItem is a type of bar item, which behaves like list control. 
+The ListBarItem is a type of bar item which behaves like a list control.
 
 ### Adding ListBarItem through designer
 
-1. Right-clicking on **PopupMenu** control and select **Add Default ParentBarItem...** option. You can also add the default parent bar item by selecting the **Add Default ParentBarItem...** option from the **Smart tag** menu.
+1. Right-click on the **PopupMenu** control and select the **Add Default ParentBarItem...** option. You can also add the default parent bar item by selecting the **Add Default ParentBarItem...** option from the **Smart tag** menu.
 
    ![ListBarItem](GettingStarted_Images/PopupMenu2.png)
 
    ![ListBarItem](GettingStarted_Images/PopupMenu3.png)
 
-2. Once **Default ParentBarItem** is added, we can add the ListBarItem by right-clicking on the control in the designer and select **Properties**. Now, in the **Properties** panel, under **Misc > ParentBarItem > Items** select the ListBarItem from the **BarItem Collection Editor**.
+2. After the **Default ParentBarItem** is added, add the ListBarItem by right-clicking on the control in the designer and selecting **Properties**. Now, in the **Properties** panel, under **Misc > ParentBarItem > Items**, select the ListBarItem from the **BarItem Collection Editor**.
 
    ![ListBarItem](GettingStarted_Images/PopupMenu4.png)
 
    ![ListBarItem](GettingStarted_Images/PopupMenu5.png)
 
-3. In BarItem Collection Editor window, click on down arrow of **Add** button. It will display different types of bar items. Using this, user can add appropriate bar items as per their need.
+3. In the **BarItem Collection Editor** window, click on the down arrow of the **Add** button. It will display different types of bar items. Using this, the user can add the appropriate bar items as per the need.
 
    ![ListBarItem](MenuItems_Images/ListBarItem.png)
 
-4. Once item is added, we can select particular item in **BarItem Collection Editor** window and set text under **Appearance > Text** section.
+4. After an item is added, select the particular item in the **BarItem Collection Editor** window and set the text under the **Appearance > Text** section.
 
    ![ListBarItem](MenuItems_Images/ListBarItem1.png)
 
-5. Similarly, we can add child items in **properties** panel, under **Data > ChildCaptions** by using **String Collection Editor**.
+5. Similarly, the child items can be added in the **Properties** panel, under **Data > ChildCaptions**, by using the **String Collection Editor**.
 
    ![ListBarItem](MenuItems_Images/ListBarItem2.png)
 
    ![ListBarItem](MenuItems_Images/ListBarItem3.png)
 
-6. Finally, we have add the ListBarItem in PopupMenu control successfully.
+6. Finally, the ListBarItem has been successfully added to the PopupMenu control.
 
    ![ListBarItem](MenuItems_Images/ListBarItem4.png)
 
@@ -662,31 +662,31 @@ Me.ResumeLayout(False)
 
 ## StaticBarItem
 
-StaticBarItem represents a BarItem that could be used as a label for an adjacent BarItem.
+The StaticBarItem represents a BarItem that can be used as a label for an adjacent BarItem.
 
 ### Adding StaticBarItem through designer
 
-1. Right-clicking on **PopupMenu** control and select **Add Default ParentBarItem...** option. You can also add the default parent bar item by selecting the **Add Default ParentBarItem...** option from the **Smart tag** menu.
+1. Right-click on the **PopupMenu** control and select the **Add Default ParentBarItem...** option. You can also add the default parent bar item by selecting the **Add Default ParentBarItem...** option from the **Smart tag** menu.
 
    ![StaticBarItem](GettingStarted_Images/PopupMenu2.png)
 
    ![StaticBarItem](GettingStarted_Images/PopupMenu3.png)
 
-2. Once **Default ParentBarItem** is added, we can add the StaticBarItem by right-clicking on the control in the designer and select **Properties**. Now, in the **Properties** panel, under **Misc > ParentBarItem > Items** select the StaticBarItem from the **BarItem Collection Editor**.
+2. After the **Default ParentBarItem** is added, add the StaticBarItem by right-clicking on the control in the designer and selecting **Properties**. Now, in the **Properties** panel, under **Misc > ParentBarItem > Items**, select the StaticBarItem from the **BarItem Collection Editor**.
 
    ![StaticBarItem](GettingStarted_Images/PopupMenu4.png)
 
    ![StaticBarItem](GettingStarted_Images/PopupMenu5.png)
 
-3. In BarItem Collection Editor window, click on down arrow of **Add** button. It will display different types of bar items. Using this, user can add appropriate bar items as per their need.
+3. In the **BarItem Collection Editor** window, click on the down arrow of the **Add** button. It will display different types of bar items. Using this, the user can add the appropriate bar items as per the need.
 
    ![StaticBarItem](MenuItems_Images/StaticBarItem.png)
 
-4. Once item is added, we can select particular item in **BarItem Collection Editor** window and set text under **Appearance > Text** section.
+4. After an item is added, select the particular item in the **BarItem Collection Editor** window and set the text under the **Appearance > Text** section.
 
    ![StaticBarItem](MenuItems_Images/StaticBarItem1.png)
 
-5. Finally, we have add the StaticBarItem in PopupMenu control successfully.
+5. Finally, the StaticBarItem has been successfully added to the PopupMenu control.
 
    ![StaticBarItem](MenuItems_Images/StaticBarItem2.png)
 
@@ -781,23 +781,23 @@ Me.ResumeLayout(False)
 
 ## TextBoxBarItem
 
-TextBoxBarItem is used to provides the TextBox functionality in the **PopupMenu** control.
+The TextBoxBarItem is used to provide TextBox functionality in the **PopupMenu** control.
 
 ### Adding TextBoxBarItem through designer
 
-1. Right-clicking on **PopupMenu** control and select **Add Default ParentBarItem...** option. You can also add the default parent bar item by selecting the **Add Default ParentBarItem...** option from the **Smart tag** menu.
+1. Right-click on the **PopupMenu** control and select the **Add Default ParentBarItem...** option. You can also add the default parent bar item by selecting the **Add Default ParentBarItem...** option from the **Smart tag** menu.
 
    ![TextBoxBarItem](GettingStarted_Images/PopupMenu2.png)
 
    ![TextBoxBarItem](GettingStarted_Images/PopupMenu3.png)
 
-2. Once **Default ParentBarItem** is added, we can add the TextBoxBarItem by right-clicking on the control in the designer and select **Properties**. Now, in the **Properties** panel, under **Misc > ParentBarItem > Items** select the TextBoxBarItem from the **BarItem Collection Editor**.
+2. After the **Default ParentBarItem** is added, add the TextBoxBarItem by right-clicking on the control in the designer and selecting **Properties**. Now, in the **Properties** panel, under **Misc > ParentBarItem > Items**, select the TextBoxBarItem from the **BarItem Collection Editor**.
 
    ![TextBoxBarItem](GettingStarted_Images/PopupMenu4.png)
 
    ![TextBoxBarItem](GettingStarted_Images/PopupMenu5.png)
 
-3. In BarItem Collection Editor window, click on down arrow of **Add** button. It will display different types of bar items. Using this, user can add appropriate bar items as per their need.
+3. In the **BarItem Collection Editor** window, click on the down arrow of the **Add** button. It will display different types of bar items. Using this, the user can add the appropriate bar items as per the need.
 
    ![TextBoxBarItem](MenuItems_Images/TextBoxBarItem.png)
 
@@ -805,7 +805,7 @@ TextBoxBarItem is used to provides the TextBox functionality in the **PopupMenu*
 
    ![TextBoxBarItem](MenuItems_Images/TextBoxBarItem1.png)
 
-5. Finally, we have add the TextBoxBarItem in PopupMenu control successfully.
+5. Finally, the TextBoxBarItem has been successfully added to the PopupMenu control.
 
    ![TextBoxBarItem](MenuItems_Images/TextBoxBarItem2.png)
 

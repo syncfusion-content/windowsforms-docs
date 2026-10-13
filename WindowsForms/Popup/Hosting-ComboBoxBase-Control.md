@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Host a ComboBoxBase Control in Windows Forms Popup | Syncfusion®
 description: Learn how to host ComboBoxBase controls within PopupControlContainer while maintaining popup state and focus behavior.
@@ -9,9 +9,9 @@ documentation: ug
 
 # Host a ComboBoxBase Control in Windows Forms Popup
 
-We can place the ComboBoxBase control within PopupControlContainer such that the PopupControlContainer does not close when the ComboBoxBase's Popup is displayed.
+The ComboBoxBase control can be placed within a PopupControlContainer such that the PopupControlContainer does not close when the ComboBoxBase's popup is displayed.
 
-User can do this by deriving from the PopupControlContainer, overriding the OnPopup method, and setting the focus to the derived control. This will ensure that the derived PopupControlContainer does not lose focus and close prematurely.
+This can be done by deriving from the PopupControlContainer, overriding the OnPopup method, and setting the focus to the derived control. This will ensure that the derived PopupControlContainer does not lose focus and close prematurely.
 
 {% tabs %}
 {% highlight C# %}
@@ -52,17 +52,17 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-It is also necessary to specify the parent-child relationship between the ComboBoxBase’s pop-up and the PopupControlContainer. This can be done by handling the ComboBoxBase’s [`DropDown`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ComboDropDown.html#Syncfusion_Windows_Forms_Tools_ComboDropDown_DropDown) event as shown in the code sample below.
+It is also necessary to specify the parent-child relationship between the ComboBoxBase's pop-up and the PopupControlContainer. This can be done by handling the ComboBoxBase's [`DropDown`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ComboDropDown.html#Syncfusion_Windows_Forms_Tools_ComboDropDown_DropDown) event as shown in the code sample below.
 
 {% tabs %}
 {% highlight C# %}
 
-//Declaration
+// Declaration
 private Syncfusion.Windows.Forms.PopupControlContainer popupControlContainer1;
 private Syncfusion.Windows.Forms.Tools.ComboBoxBase comboBoxBase1;
 private System.Windows.Forms.RichTextBox richTextBox1;
 
-//Initializing
+// Initializing
 this.popupControlContainer1 = new Syncfusion.Windows.Forms.PopupControlContainer(this.components);
 this.comboBoxBase1 = new Syncfusion.Windows.Forms.Tools.ComboBoxBase();
 this.richTextBox1 = new System.Windows.Forms.RichTextBox();
@@ -100,8 +100,8 @@ private void RichTextBox1_Click(object sender, EventArgs e)
 
 private void ComboBoxBase1_DropDown(object sender, System.EventArgs e)
 {
-    /* Setup the relationship between the ComboBoxBase’s dropdown and it's parent         
-    PopupControlContainer, so that the pop-up will not close when the ComboBoxBase’s     
+    /* Setup the relationship between the ComboBoxBase's dropdown and its parent         
+    PopupControlContainer, so that the pop-up will not close when the ComboBoxBase's     
     dropdown is shown */
     this.comboBoxBase1.PopupContainer.PopupParent = this.popupControlContainer1;
     this.popupControlContainer1.CurrentPopupChild = this.comboBoxBase1.PopupContainer;
@@ -111,12 +111,12 @@ private void ComboBoxBase1_DropDown(object sender, System.EventArgs e)
 
 {% highlight vb %}
 
-'Declaration
+' Declaration
 Private popupControlContainer1 As Syncfusion.Windows.Forms.PopupControlContainer
 Private comboBoxBase1 As Syncfusion.Windows.Forms.Tools.ComboBoxBase
 Private richTextBox1 As System.Windows.Forms.RichTextBox
 
-'Initializing
+' Initializing
 Me.popupControlContainer1 = New Syncfusion.Windows.Forms.PopupControlContainer(Me.components)
 Me.comboBoxBase1 = New Syncfusion.Windows.Forms.Tools.ComboBoxBase()
 Me.richTextBox1 = New System.Windows.Forms.RichTextBox()
@@ -150,10 +150,10 @@ Me.Text = "Form1"
 private void RichTextBox1_Click(Object sender, EventArgs e)
    Me.popupControlContainer1.ShowPopup(Point.Empty)
 
-private void ComboBoxBase1_DropDown(Object sender, System.EventArgs e)
-'     Setup the relationship between the ComboBoxBase’s dropdown and it's parent         
-'    PopupControlContainer, so that the pop-up will not close when the ComboBoxBase’s     
-'    dropdown is shown 
+Private Sub ComboBoxBase1_DropDown(ByVal sender As Object, ByVal e As System.EventArgs)
+	' Setup the relationship between the ComboBoxBase's dropdown and its parent         
+	' PopupControlContainer, so that the pop-up will not close when the ComboBoxBase's     
+	' dropdown is shown 
 	Me.comboBoxBase1.PopupContainer.PopupParent = Me.popupControlContainer1
 	Me.popupControlContainer1.CurrentPopupChild = Me.comboBoxBase1.PopupContainer
 
