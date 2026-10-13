@@ -406,9 +406,8 @@ Use toast notifications to confirm upload outcomes, surface validation errors, o
 
 | Property | Description |
 |----------|-------------|
-| Status | Severity of the notification. Use [ToastNotificationStatus.Info](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.AIAssistView.ToastNotificationStatus.html), Success, Warning, or Error. |
+| Status | Severity of the notification. Use ToastNotificationStatus.Info, Success, Warning, or Error. |
 | Message | Message text rendered in the toast. |
-| CreatedAt | Timestamp of the notification. |
 | Icon | Optional status icon. Set to null to use the default themed icon for the chosen Status. |
 
 {% tabs %}
