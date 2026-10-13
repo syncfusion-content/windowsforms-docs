@@ -391,4 +391,3 @@ The AutoComplete popup can be shown programmatically by setting the parent contr
 {% endtabs %}
 
 ![Windows Forms AutoComplete programmatical popup open](WorkingwithAutoComplete_images/AutoComplete_Openpopup.png)
-
