@@ -11,9 +11,6 @@ documentation: ug
 
 XPTaskPane has a TaskPanePageContainer which hosts the Task pages. Any number of controls can be added to the Task pages and can be customized. Properties that control the appearance of the Task pages are discussed in this section.
 
->**NOTE**:
-The `xpTaskPage1` instance used in the examples below is assumed to be created and added to the XPTaskPane as shown in the [Getting Started](https://help.syncfusion.com/windowsforms/xptaskpane/creating-a-simple-xptaskpane) documentation.
-
 ## Page title and layout name
 
 The title text for an XPTaskPage can be edited using XPTaskPage.Title property.

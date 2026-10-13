@@ -9,8 +9,6 @@ documentation: ug
 
 # Header Settings in Windows Forms XPTaskPane
 
-The `xpTaskPane1` instance used in the examples below is assumed to be created as shown in the [Getting Started](https://help.syncfusion.com/windowsforms/xptaskpane/creating-a-simple-xptaskpane) documentation.
-
 ## Setting visibility of the ToolBar items
 
 The header section by default has four toolbar items: left and right navigating buttons at the top left corner of the TaskPane Header, and the DropDownMenu and Close Button at the top right corner of the TaskPane Header.
@@ -175,11 +173,6 @@ Sets the image to be displayed in DropDownMenu item.</td></tr>
 
 this.xpTaskPane1.HeaderMenuItem.ImageIndex = 1;
 
-//Alternatively, set a custom image for the DropDownMenu item
-
-this.xpTaskPane1.HeaderMenuItem.Image = System.Drawing.Image.FromFile(@"..\..\..\menu.png");
-
-
 {% endhighlight %}
 
 {% highlight VB %}
@@ -190,16 +183,11 @@ this.xpTaskPane1.HeaderMenuItem.Image = System.Drawing.Image.FromFile(@"..\..\..
 
 Me.xpTaskPane1.HeaderMenuItem.ImageIndex = 1
 
-'Alternatively, set a custom image for the DropDownMenu item
-
-Me.xpTaskPane1.HeaderMenuItem.Image = System.Drawing.Image.FromFile("..\..\..\menu.png")
-
 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![Header-Settings_img4](Header-Settings_images/Header-Settings_img4.jpeg)
-
 
 

@@ -10,9 +10,6 @@ documentation: ug
 
 The list of events and a detailed explanation about each of them are given in the following sections.
 
->**NOTE**:
-In the event handler examples below, `listView1` (or `Me.ListView1`) refers to a `ListView` control used in the demo application to log event output, and `groupWinForms` refers to the GroupView instance used in the demo. The `groupView1` instance is assumed to be created as shown in the [Getting Started](https://help.syncfusion.com/windowsforms/groupview/getting-started) documentation.
-
 * [GroupViewItemHighlighted](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html)
 * [GroupViewItemRenamed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html)
 * [GroupViewItemSelected](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html)
@@ -83,7 +80,7 @@ The [GroupViewItemRenamed](https://help.syncfusion.com/cr/windowsforms/Syncfusio
 
 The event handler receives an argument of type GroupItemRenamedEventArgs. The event properties associated with the GroupItemRenamedEventArgs are as follows.
 
-**Members table**
+
 
 <table>
 <tr>
@@ -92,12 +89,16 @@ Members</th><th>
 Description</th></tr>
 <tr>
 <td>
-NewLabel</td><td>
-Gets/sets the new label of the renamed GroupView Item.</td></tr>
+BackgroundBrush</td><td>
+Gets/sets the brush that will be used to draw the specified bounds.</td></tr>
 <tr>
 <td>
-OldLabel</td><td>
-Gets/sets the old label of the renamed GroupView Item.</td></tr>
+Bounds</td><td>
+Returns the bounds for which a brush is requested.</td></tr>
+<tr>
+<td>
+Item</td><td>
+Returns the index of the GroupBar Item being drawn.</td></tr>
 </table>
 
 {% tabs %}

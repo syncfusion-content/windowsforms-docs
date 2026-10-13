@@ -179,7 +179,7 @@ Me.groupBar1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Silver
 
 **Managed**
 
-This option helps to apply the custom colors to the GroupBar by setting Office2007Theme to 'Managed' and specifying the custom color through the `ApplyManagedColors` method of the `Syncfusion.Windows.Forms.Office2007Colors` class as follows.
+This option helps to apply the custom colors to the GroupBar by setting Office2007Theme to 'Managed' and specifying the custom color through the `ApplyManagedColors` method as follows.
 
 {% tabs %}
 
@@ -332,7 +332,7 @@ Me.groupBar1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.Silver
 
 **Managed**
 
-This option helps to apply the custom colors to the GroupBar by setting Office2010Theme to 'Managed' and specifying the custom color through the `ApplyManagedColors` method of the `Syncfusion.Windows.Forms.Office2010Colors` class as follows.
+This option helps to apply the custom colors to the GroupBar by setting Office2010Theme to 'Managed' and specifying the custom color through the `ApplyManagedColors` method as follows.
 
 {% tabs %}
 

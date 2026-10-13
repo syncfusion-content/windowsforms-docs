@@ -16,8 +16,6 @@ Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/con
 
 Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install NuGet packages in a Windows Forms application.
 
-To generate the license validated application, refer to the [licensing](https://help.syncfusion.com/windowsforms/licensing/overview) documentation.
-
 ## Adding GroupView control via designer
 
 1. Create a new Windows Forms project in Visual Studio.
@@ -123,9 +121,6 @@ Me.groupView1.FlatLook = True
 
 To add images to the GroupView, ImageList control must be added to the form with images.
 
->**NOTE**:
-The `resources` variable used below refers to a `System.ComponentModel.ComponentResourceManager` instance used to load images embedded in the application's resources. Alternatively, you can add images directly using `imageList1.Images.Add(System.Drawing.Image.FromFile(@"..\..\..\image.png"));`.
-
 {% tabs %}
 {% highlight C# %}
 
@@ -165,8 +160,6 @@ groupView1.SmallImageView = True
 {% endtabs %}
 
 ![Windows Forms GroupView showing added images](GettingStarted_images/GroupView_images.png)
-
-For more details on large images, refer to the [Image Settings](https://help.syncfusion.com/windowsforms/groupview/image-settings-of-groupview) documentation.
 
 ## Selected item
 

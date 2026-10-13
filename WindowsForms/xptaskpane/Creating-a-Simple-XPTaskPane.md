@@ -18,7 +18,6 @@ Please find more details regarding how to install the NuGet packages in a Window
  
 [How to install NuGet packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
 
-To generate the license validated application, refer to the [licensing](https://help.syncfusion.com/windowsforms/licensing/overview) documentation.
 
 ## Creating simple application with XPTaskPane
 
@@ -169,30 +168,6 @@ wizardContainer1.Controls.Add(xpTaskPage1)
 
 Me.xpTaskPane1.TaskPages = New XPTaskPage() {
         xpTaskPage1}
-
-{% endhighlight %}
-
-{% endtabs %}
-
-Child controls such as buttons, labels, etc., can be added to each page using its `Controls` collection as shown below.
-
-{% tabs %}
-
-{% highlight C# %}
-
-System.Windows.Forms.Button button1 = new System.Windows.Forms.Button();
-button1.Text = "Click Me";
-
-xpTaskPage1.Controls.Add(button1);
-
-{% endhighlight %}
-
-{% highlight VB %}
-
-Dim button1 As New System.Windows.Forms.Button()
-button1.Text = "Click Me"
-
-xpTaskPage1.Controls.Add(button1)
 
 {% endhighlight %}
 

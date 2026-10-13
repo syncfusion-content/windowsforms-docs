@@ -17,16 +17,9 @@ You can find more details about installing the NuGet package in a Windows Forms 
  
 [How to install NuGet packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
 
-To generate the license validated application, refer to the [licensing](https://help.syncfusion.com/windowsforms/licensing/overview) documentation.
-
 ## Create a simple application with GroupBar
 
 You can create a Windows Forms application with the GroupBar control using the following steps:
-
-1. [Create a project](#create-a-project)
-2. [Add control through designer](#add-control-through-designer)
-3. [Add control manually in code](#add-control-manually-in-code)
-4. [Add group bar items](#add-group-bar-items)
 
 ## Create a project
 
@@ -76,7 +69,7 @@ Me.Controls.Add(groupBar1)
 
 ## Add group bar items
 
-You can add the group bar items inside the GroupBar control using the [GroupBarItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_GroupBarItems) collection property. Images can also be set for the items using their [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBarItem.html#Syncfusion_Windows_Forms_Tools_GroupBarItem_Image) property. For more details, refer to the [GroupBar Items Settings](https://help.syncfusion.com/windowsforms/navigation-pane/groupbar-items-settings) documentation.
+You can add the group bar items inside the GroupBar control using the [GroupBarItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_GroupBarItems) collection property.
 
 {% tabs %}
 {% highlight C# %}
@@ -119,6 +112,14 @@ You can add child items to GroupBarItems in the GroupBar by using the [GroupView
 
 {% tabs %}
 {% highlight C# %}
+
+GroupBarItem groupBarItem0 = new GroupBarItem();
+GroupBarItem groupBarItem1 = new GroupBarItem();
+GroupBarItem groupBarItem2 = new GroupBarItem();
+
+this.groupBarItem0.Text = "Windows Forms";
+this.groupBarItem1.Text = "Component";
+this.groupBarItem2.Text = "General";
 
 GroupView groupView0 = new GroupView();
 groupView0.Name = "Windows Forms";
@@ -173,42 +174,50 @@ groupBarItem2});
 
 {% endhighlight %}
 {% highlight VB %}
+Dim groupBarItem0 As GroupBarItem = New GroupBarItem()
+Dim groupBarItem1 As GroupBarItem = New GroupBarItem()
+Dim groupBarItem2 As GroupBarItem = New GroupBarItem()
+
+Me.groupBarItem0.Text = "Windows Forms"
+Me.groupBarItem1.Text = "Component"
+Me.groupBarItem2.Text = "General"
+
 Dim groupView0 As GroupView = New GroupView()
 groupView0.Name = "Windows Forms"
 groupView0.GroupViewItems.AddRange(New GroupViewItem() 
 {
-    New GroupViewItem("Grid", 11, True, Nothing, "Grid"),
-    New GroupViewItem("Data Visualization", 11, True, Nothing, "FileSystemWatcher"),
-    New GroupViewItem("Editor", 11, True, Nothing, "EventLog"),
-    New GroupViewItem("Navigation", 11, True, Nothing, "DirectoryEntry"),
-    New GroupViewItem("Notification", 11, True, Nothing, "DirectorySearcher"),
-    New GroupViewItem("MessageQueue", 11, True, Nothing, "MessageQueue")
+    New GroupViewItem("Grid", 11, true, null, "Grid"),
+    New GroupViewItem("Data Visualization", 11, true, null, "FileSystemWatcher"),
+    New GroupViewItem("Editor", 11, true, null, "EventLog"),
+    New GroupViewItem("Navigation", 11, true, null, "DirectoryEntry"),
+    New GroupViewItem("Notification", 11, true, null, "DirectorySearcher"),
+    New GroupViewItem("MessageQueue", 11, true, null, "MessageQueue")
 })
 
 Dim groupView1 As GroupView = New GroupView()
 groupView1.Name = "Component"
 groupView1.GroupViewItems.AddRange(New GroupViewItem() 
 {
-    New GroupViewItem("Pointer", 11, True, Nothing, "Pointer"),
-    New GroupViewItem("FileSystemWatcher", 22, True, Nothing, "FileSystemWatcher"),
-    New GroupViewItem("EventLog", 23, True, Nothing, "EventLog"),
-    New GroupViewItem("DirectoryEntry", 24, True, Nothing, "DirectoryEntry"),
-    New GroupViewItem("DirectorySearcher", 25, True, Nothing, "DirectorySearcher"),
-    New GroupViewItem("MessageQueue", 26, True, Nothing, "MessageQueue")
+    New GroupViewItem("Pointer", 11, true, null, "Pointer"),
+    New GroupViewItem("FileSystemWatcher", 22, true, null, "FileSystemWatcher"),
+    New GroupViewItem("EventLog", 23, true, null, "EventLog"),
+    New GroupViewItem("DirectoryEntry", 24, true, null, "DirectoryEntry"),
+    New GroupViewItem("DirectorySearcher", 25, true, null, "DirectorySearcher"),
+    New GroupViewItem("MessageQueue", 26, true, null, "MessageQueue")
 })
 
 Dim groupView2 As GroupView = New GroupView()
 groupView2.Name = "General"
 groupView2.GroupViewItems.AddRange(New GroupViewItem() 
 {
-    New GroupViewItem("Pointer", 11, True, Nothing, "Pointer"),
-    New GroupViewItem("Label", 12, True, Nothing, "Label"),
-    New GroupViewItem("LinkLabel", 13, True, Nothing, "LinkLabel"),
-    New GroupViewItem("Button", 14, True, Nothing, "Button"),
-    New GroupViewItem("TextBox", 15, True, Nothing, "TextBox"),
-    New GroupViewItem("MainMenu", 16, True, Nothing, "MainMenu"),
-    New GroupViewItem("CheckBox", 17, True, Nothing, "CheckBox"),
-    New GroupViewItem("RadioButton", 18, True, Nothing, "RadioButton")
+    New GroupViewItem("Pointer", 11, true, null, "Pointer"),
+    New GroupViewItem("Label", 12, true, null, "Label"),
+    New GroupViewItem("LinkLabel", 13, true, null, "LinkLabel"),
+    New GroupViewItem("Button", 14, true, null, "Button"),
+    New GroupViewItem("TextBox", 15, true, null, "TextBox"),
+    New GroupViewItem("MainMenu", 16, true, null, "MainMenu"),
+    New GroupViewItem("CheckBox", 17, true, null, "CheckBox"),
+    New GroupViewItem("RadioButton", 18, true, null, "RadioButton")
 })
 
 groupBarItem0.Client = groupView0
@@ -219,16 +228,13 @@ Me.groupBar1.Controls.Add(groupView0)
 Me.groupBar1.Controls.Add(groupView1)
 Me.groupBar1.Controls.Add(groupView2)
 
-Me.groupBar1.GroupBarItems.AddRange(New GroupBarItem() {
+Me.groupBar1.GroupBarItems.AddRange(new GroupBarItem[] {
             groupBarItem0,
             groupBarItem1,
             groupBarItem2})
 
 {% endhighlight %}
 {% endtabs %}
-
->**NOTE**:
-The `groupBarItem0`, `groupBarItem1`, and `groupBarItem2` instances used above are created as shown in the [add group bar items](#add-group-bar-items) section.
 
 ![WinForms GroupBar control with group bar items](Getting-Started_images/winforms-groupbar-control-with-group-bar-items.png)
 

@@ -13,10 +13,10 @@ documentation: ug
 
 ### XPTaskPane foreground
 
-Font style and fore color of the Task pages can be set using [Font](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.font) and [ForeColor](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.forecolor) properties of the XPTaskPane.
+Font style and fore color of the Task pages can be set using [Font](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.font?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_Font) and [ForeColor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.forecolor?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_ForeColor) properties of the XPTaskPane.
 
 >**NOTE**:
-These settings can be overridden by individual [XPTaskPage.Font](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.font) and [XPTaskPage.ForeColor](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.forecolor) properties.
+These settings can be overridden by individual [XPTaskPage.Font](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.font?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_Font) and [XPTaskPage.ForeColor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.forecolor?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_ForeColor) properties.
 
 {% tabs %}
 
@@ -74,7 +74,7 @@ Me.xpTaskPane1.HeaderLabel.ForeColor = System.Drawing.Color.Navy
 
 ## Visual styles
 
-The visual appearance of the XPTaskPane can be defined by the [XPTaskPane.VisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskPane.html#Syncfusion_Windows_Forms_Tools_XPTaskPane_VisualStyle) property. It supports _OfficeXP_ and _Office2007_ styles, which provide a more polished user interface. The `VisualStyle` type is available in the `Syncfusion.Windows.Forms` namespace.
+The visual appearance of the XPTaskPane can be defined by the [XPTaskPane.VisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskPane.html#Syncfusion_Windows_Forms_Tools_XPTaskPane_VisualStyle) property. It supports _OfficeXP_ and _Office2007_ styles, which provide a more polished user interface.
 
 The following code example sets the Office2007 style:
 
@@ -170,7 +170,7 @@ Me.xpTaskPane1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.
 
 ### Custom colors
 
-We can also apply custom colors to the XPTaskPane by setting [Office2007ColorScheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskPane.html#Syncfusion_Windows_Forms_Tools_XPTaskPane_Office2007ColorScheme) to "Managed" and specifying the custom color through the `ApplyManagedColors` method of the `Syncfusion.Windows.Forms.Office2007Colors` class as follows.
+We can also apply custom colors to the XPTaskPane by setting [Office2007ColorScheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskPane.html#Syncfusion_Windows_Forms_Tools_XPTaskPane_Office2007ColorScheme) to "Managed" and specifying the custom color through the `ApplyManagedColors` method as follows.
 
 {% tabs %}
 

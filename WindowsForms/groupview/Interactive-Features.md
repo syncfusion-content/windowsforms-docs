@@ -8,9 +8,9 @@ documentation: ug
 ---
 # Interactive Features in Windows Forms GroupView
 
-[ButtonView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_ButtonView) displays the selected GroupView Item in the pressed state, and [ClipSelectionBounds](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_ClipSelectionBounds) clips the selection highlight to the bounds of the selected GroupView Item, displaying a border around it.
+User can determine whether the particular GroupView Item is selected or not using the ButtonView and [ClipSelectionBounds](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_ClipSelectionBounds) properties. [ButtonView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_ButtonView) displays the selected GroupView Item in the pressed state.
 
-The selected item can be specified at design-time or run-time by setting the [SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_SelectedItem) property to integer values which in turn represents the GroupView Item.
+[ButtonView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_ButtonView) can be enabled in the GroupView control at design-time by setting the [SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_SelectedItem) property to integer values which in turn represents the GroupView Item. [ClipSelectionBounds](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_ClipSelectionBounds) displays a white border around the selected GroupView Item.
 
 {% tabs %}
 

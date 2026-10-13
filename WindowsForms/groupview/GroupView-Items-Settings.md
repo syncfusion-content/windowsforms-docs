@@ -8,7 +8,7 @@ documentation: ug
 ---
 # GroupView Items Settings in Windows Forms GroupView
 
-This section discusses the various settings that can be applied to the GroupView Items of the GroupView control. The `groupView1` instance used in the examples below is assumed to be created with items as shown in the [Getting Started](https://help.syncfusion.com/windowsforms/groupview/getting-started) documentation.
+This section discusses the various settings that can be applied to the GroupView Items of the GroupView control.
 
 ## Text settings
 
@@ -16,7 +16,7 @@ This section describes the text highlighting, offset, formatting and renaming op
 
 ### Text highlighting
 
-The GroupView control provides highlighting of text when the mouse is over the GroupView Item. This can be activated by setting the [HighlightText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_HighlightText) property to `true`. The default value of this property is `false`.
+The GroupView control provides highlighting of text when the mouse is over the GroupView Item. This can be activated by setting the [HighlightText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_HighlightText) property to `true`.
 
 {% tabs %}
 

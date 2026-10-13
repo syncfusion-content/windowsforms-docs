@@ -33,7 +33,7 @@ When the end user adds a page to the XPTaskPane control, the order of the page i
 
 ## Page order at RunTime
 
-XPTaskPage allows you to set the next or the previous page to the currently selected page through the NextPage and PreviousPage properties. In this example, `xpTaskPage1`, `xpTaskPage2`, and `xpTaskPage3` refer to the pages already added to the XPTaskPane as shown in the [Getting Started](https://help.syncfusion.com/windowsforms/xptaskpane/creating-a-simple-xptaskpane) documentation.
+XPTaskPage allows you to set the next or the previous page to the currently selected page through the NextPage and PreviousPage properties.
 
 **Property table**
 

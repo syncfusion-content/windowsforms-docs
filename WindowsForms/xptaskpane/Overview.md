@@ -19,20 +19,12 @@ documentation: ug
 
 * **User interface properties** - Provides options to create child controls representing the different segments of the XPTaskPane and also exposes them in the designer to let users customize it.
 
-* **Add / Remove pages** - Provides options to add or remove pages either through verbs or through TaskPages property settings. For more details, refer to the [Getting Started](https://help.syncfusion.com/windowsforms/xptaskpane/creating-a-simple-xptaskpane) documentation.
+* **Add / Remove pages** - Provides options to add or remove pages either through verbs or through TaskPages property settings.
 
-* **Navigation** - Provides options to navigate through pages at design-time by selecting Previous page and Next page verbs or using arrow keys in the XPTaskPage Collection Editor. For more details, refer to the [Reordering XPTaskPage](https://help.syncfusion.com/windowsforms/xptaskpane/reordering-xptaskpage) documentation.
+* **Navigation** - Provides options to navigate through pages at design-time by selecting Previous page and Next page verbs or using arrow keys in the XPTaskPage Collection Editor.
 
-* **Page sequencing** - Provides options to reorder the pages through 'Bring to front' and 'Send to back' verbs or by using XPTaskPage Collection Editor. For more details, refer to the [Reordering XPTaskPage](https://help.syncfusion.com/windowsforms/xptaskpane/reordering-xptaskpage) documentation.
+* **Page sequencing** - Provides options to reorder the pages through 'Bring to front' and 'Send to back' verbs or by using XPTaskPage Collection Editor.
 
-* **Visual style** - Supports a rich set of built-in themes like Office, Metro and much more. For more details, refer to the [Appearance](https://help.syncfusion.com/windowsforms/xptaskpane/xptaskpane-appearance) documentation.
-
-## See also
-
-* [Header Settings](https://help.syncfusion.com/windowsforms/xptaskpane/header-settings)
-* [Scroll Settings](https://help.syncfusion.com/windowsforms/xptaskpane/scroll-settings)
-* [XPTaskPanePage](https://help.syncfusion.com/windowsforms/xptaskpane/xptaskpanepage)
-
-
+* **Visual style** - Supports a rich set of built-in themes like Office, Metro and much more.
 
 

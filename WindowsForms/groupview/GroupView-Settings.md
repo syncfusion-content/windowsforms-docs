@@ -12,7 +12,7 @@ This section discusses the various settings that can be applied to define the lo
 
 ## Appearance settings
 
-The following properties enhance the appearance of the GroupView control. The default value of `FlatLook` is `false` and the default `BorderStyle` is `Fixed3D`.
+The following properties enhance the appearance of the GroupView control.
 
 * [FlatLook](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_FlatLook)
 * [BorderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_BorderStyle)
@@ -51,7 +51,7 @@ We can specify the border style for the GroupView control using the [BorderStyle
 
 ## Behavior settings
 
-This section discusses the properties that determine the behavior of the GroupView control. The default values of `AllowDragDrop` and `AllowDragAnyObject` are `false`.
+This section discusses the properties that determine the behavior of the GroupView control.
 
 ### Drag-and-drop effect
 
