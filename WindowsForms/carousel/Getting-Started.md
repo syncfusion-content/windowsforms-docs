@@ -143,7 +143,6 @@ carousel1.Items.Add(buttonAdv5);
 carousel1.Items.Add(buttonAdv6);
 
 {% endhighlight %}
-{% endtabs %}
 
 {% highlight VB %}
 

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Events in Windows Forms XPTaskBar | Syncfusion®
 description: XPTaskBar events provide notifications for animations, item clicks, state changes, sizing updates, and custom drawing.

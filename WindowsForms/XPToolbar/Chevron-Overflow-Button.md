@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Chevron and Overflow Button in Windows Forms XPToolBar | Syncfusion®
 description: Chevron or Overflow Button support enables accessing toolbar items that are hidden when available space is limited.

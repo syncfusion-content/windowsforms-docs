@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Appearance in Windows Forms XPToolBar | Syncfusion®
 description: Appearance customization supports background colors, images, fonts, sizing, foreground colors, and item visibility settings.
@@ -34,7 +34,6 @@ Me.xpToolBar1.BackColor = System.Drawing.Color.SkyBlue
 ## Background Image
 
 The [`BackgroundImage`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backgroundimage?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_BackgroundImage) property is used to set the background image of XPToolBar control. Also we can adjust the image by using [`BackgroundImageLayout`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backgroundimagelayout?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_BackgroundImageLayout) property. The layout can be None, Tile, Center, Stretch and Zoom.
-
 
 
 The below code snippet is to set the background image of XPToolBar.

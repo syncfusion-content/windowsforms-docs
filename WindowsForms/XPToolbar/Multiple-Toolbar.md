@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Multiple Toolbar in Windows Forms XPToolBar | Syncfusion®
 description: Multiple Toolbar support enables arranging and managing multiple toolbars with menus, commands, and toolbar items.
