@@ -9,21 +9,21 @@ documentation: ug
 
 # About Syncfusion® Windows Forms CommandBar Control
 
-[CommandBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBar.html) implements a framework for creating and hosting ToolBars, ReBars, and StatusBars similar to those that are found in the Visual Studio .NET and Office XP user interfaces.
+[CommandBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBar.html) implements a framework for creating and hosting ToolBars, ReBars, and StatusBars similar to those found in the Visual Studio .NET and Office XP user interfaces.
 
 ![Command bar sample image](Overview_images/commandbar_Sample.png)
 
 ## Key features
 
-* **Dock states** - Supports Dock states in Top, Bottom, Left, Right directions and also empowered to be displayed in Floating state.
+* **Dock states** - Supports docking in Top, Bottom, Left, and Right directions and can also be displayed in Floating state.
 
 * **Button options** - Provides close and drop-down buttons.
 
-* **Chevron** - Supports chevron which displays toolbar icons that do not fit in the space available in the toolbar.
+* **Chevron** - Supports a chevron that displays toolbar icons that do not fit in the space available in the toolbar.
 
 * **Gripper** - Provides options to show and hide Gripper.
 
-* **Visual style** - Provides rich set of Visual Style to customize the look and feel of CommandBar
+* **Visual style** - Provides a rich set of visual styles to customize the look and feel of the CommandBar.
 
 * **Serialization** - Provides options to save and load the state of the CommandBar.
 
