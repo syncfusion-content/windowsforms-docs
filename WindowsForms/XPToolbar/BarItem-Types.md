@@ -20,9 +20,6 @@ The various types of BarItems supported by XPToolBar are as follows:
 * ToolbarListBarItem
 * TextBoxBarItem
 
->**NOTE**:
-The code examples in the following sections assume the XPToolbar control is added to the form as shown in the [Getting Started](https://help.syncfusion.com/windowsforms/xptoolbar/getting-started) section. Each code example is self-contained and builds on the earlier ones. Also, `this.components` (or `Me.components`) refers to the `System.ComponentModel.IContainer` instance declared in the designer-generated code.
-
 ## BarItem
 
 BarItem represents an individual item in a menu structure.
@@ -992,88 +989,35 @@ this.Controls.Add(this.panel1);
 'Declaration
 Private xpToolBar1 As Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar
 Private barItem1 As Syncfusion.Windows.Forms.Tools.XPMenus.BarItem
-Private barItem2 As Syncfusion.Windows.Forms.Tools.XPMenus.BarItem
-Private barItem3 As Syncfusion.Windows.Forms.Tools.XPMenus.BarItem
 Private parentBarItem1 As Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem
-Private panel1 As System.Windows.Forms.Panel
-Private button1 As System.Windows.Forms.Button
 Private dropDownBarItem1 As Syncfusion.Windows.Forms.Tools.XPMenus.DropDownBarItem
-Private popupControlContainer1 As Syncfusion.Windows.Forms.PopupControlContainer
 Private comboBoxBarItem1 As Syncfusion.Windows.Forms.Tools.XPMenus.ComboBoxBarItem
 Private listBarItem1 As Syncfusion.Windows.Forms.Tools.XPMenus.ListBarItem
 Private staticBarItem1 As Syncfusion.Windows.Forms.Tools.XPMenus.StaticBarItem
+Private mdiListBarItem1 As Syncfusion.Windows.Forms.Tools.XPMenus.MdiListBarItem
 Private toolbarListBarItem1 As Syncfusion.Windows.Forms.Tools.XPMenus.ToolbarListBarItem
 
 'Initializing
 Me.xpToolBar1 = New Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar()
 Me.barItem1 = New Syncfusion.Windows.Forms.Tools.XPMenus.BarItem()
-Me.barItem2 = New Syncfusion.Windows.Forms.Tools.XPMenus.BarItem()
-Me.barItem3 = New Syncfusion.Windows.Forms.Tools.XPMenus.BarItem()
 Me.parentBarItem1 = New Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem()
-Me.panel1 = New System.Windows.Forms.Panel()
-Me.button1 = New System.Windows.Forms.Button()
 Me.dropDownBarItem1 = New Syncfusion.Windows.Forms.Tools.XPMenus.DropDownBarItem()
-Me.popupControlContainer1 = New Syncfusion.Windows.Forms.PopupControlContainer(Me.components)
 Me.comboBoxBarItem1 = New Syncfusion.Windows.Forms.Tools.XPMenus.ComboBoxBarItem()
 Me.listBarItem1 = New Syncfusion.Windows.Forms.Tools.XPMenus.ListBarItem()
 Me.staticBarItem1 = New Syncfusion.Windows.Forms.Tools.XPMenus.StaticBarItem()
+Me.mdiListBarItem1 = New Syncfusion.Windows.Forms.Tools.XPMenus.MdiListBarItem()
 Me.toolbarListBarItem1 = New Syncfusion.Windows.Forms.Tools.XPMenus.ToolbarListBarItem()
 
-' barItem1
+'Add a bar items to the control
 Me.barItem1.Text = "File"
-
-' barItem2
-Me.barItem2.Image = System.Drawing.Image.FromFile("..\..\..\Cut.png")
-Me.barItem2.Text = "Cut"
-
-' barItem3
-Me.barItem3.Image = System.Drawing.Image.FromFile("..\..\..\Copy.png")
-Me.barItem3.Text = "Copy"
-
-' parentBarItem1
 Me.parentBarItem1.Text = "Edit"
-Me.parentBarItem1.Items.AddRange(New Syncfusion.Windows.Forms.Tools.XPMenus.BarItem() { Me.barItem2, Me.barItem3})
-
-' dropDownBarItem1
-Me.dropDownBarItem1.PopupControlContainer = Me.popupControlContainer1
 Me.dropDownBarItem1.Text = "View"
-
-' popupControlContainer1
-Me.popupControlContainer1.Controls.Add(Me.button1)
-
-' button1
-Me.button1.Text = "Toolbars"
-Me.button1.Width = 90
-
-' comboBoxBarItem1
-Me.comboBoxBarItem1.ChoiceList.AddRange(New String() { "Debug", "Release"})
 Me.comboBoxBarItem1.TextBoxValue = "Debug"
-Me.comboBoxBarItem1.MinWidth = 70
-
-' listBarItem1
-Me.listBarItem1.ChildCaptions.AddRange(New String() {"Bold", "Italic"})
-Me.listBarItem1.SizeToFit = True
-Me.listBarItem1.Text = "Font"
-
-' staticBarItem1
-Me.staticBarItem1.SizeToFit = True
-Me.staticBarItem1.Text = "Segoe UI"
-
-' toolbarListBarItem1
-Me.toolbarListBarItem1.SizeToFit = True
-Me.toolbarListBarItem1.Text = "Help"
-
-' xpToolBar1
-Me.xpToolBar1.Text = "xpToolBar1"
-Me.xpToolBar1.Bar.Items.AddRange(New Syncfusion.Windows.Forms.Tools.XPMenus.BarItem() { Me.barItem1, Me.parentBarItem1, Me.dropDownBarItem1, Me.comboBoxBarItem1, Me.listBarItem1, Me.staticBarItem1, Me.toolbarListBarItem1})
-
-' panel1
-Me.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-Me.panel1.Controls.Add(Me.xpToolBar1)
-
-'Form
-Me.Text = "Form1"
-Me.Controls.Add(Me.panel1)
+Me.listBarItem1.Text = "List"
+Me.staticBarItem1.Text = "Static"
+Me.toolbarListBarItem1.Text = "ToolbarList"
+Me.xpToolBar1.Bar.Items.AddRange(New Syncfusion.Windows.Forms.Tools.XPMenus.BarItem() { Me.barItem1, Me.parentBarItem1, Me.dropDownBarItem1, Me.comboBoxBarItem1, Me.listBarItem1, Me.staticBarItem1, Me.mdiListBarItem1, Me.toolbarListBarItem1})
+Me.Controls.Add(Me.xpToolBar1)
 
 {% endhighlight %}
 {% endtabs %}
@@ -1301,7 +1245,7 @@ Me.Controls.Add(Me.panel1)
 
 ## Separator
 
-Separator is used for separation of bar items visually in a **XPToolBar**. Unlike other bar item types, a separator is not added to the `Items` collection. Instead, separators are inserted at the specified positions of the toolbar's bar items using the [SeparatorIndices](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar.html) property. The indices are zero-based positions in the `Items` collection.
+Separator is used for separation of bar items visually in a **XPToolBar**.
 
 ### Adding Separator through designer
 

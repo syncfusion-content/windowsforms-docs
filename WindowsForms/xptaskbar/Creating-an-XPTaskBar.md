@@ -18,7 +18,6 @@ Please find more details regarding how to install the NuGet packages in Windows 
  
 [How to install NuGet packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
 
-To generate the license validated application, refer to the [licensing](https://help.syncfusion.com/windowsforms/licensing/overview) documentation.
 
 
 ## Creating simple application with XPTaskBar
@@ -161,7 +160,7 @@ Me.xpTaskBar1.Controls.Add(Me.xpTaskBarBox3)
 
 **Adding XPTaskBarItems**
 
-XPTaskBarItems can be added to XPTaskBarBox using `Items` collection in XPTaskBarBox class. The [XPTaskBarItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarItem.html) constructor used below takes the item name, highlight color, image index and display text as arguments, in that order.
+XPTaskBarItems can be added to XPTaskBarBox using `Items` collection in XPTaskBarBox class.
 
 {% tabs %}
 

@@ -195,16 +195,12 @@ To host multiple controls inside the XPTaskBarBoxes, it is recommended to use th
 
 {% highlight C# %}
 
-System.Windows.Forms.Panel panel1 = new System.Windows.Forms.Panel();
-this.xpTaskBarBox1.Controls.Add(panel1);
 this.xpTaskBarBox1.PreferredChildPanelHeight = 35;
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-Dim panel1 As New System.Windows.Forms.Panel()
-Me.xpTaskBarBox1.Controls.Add(panel1)
 Me.xpTaskBarBox1.PreferredChildPanelHeight = 35
 
 {% endhighlight %}

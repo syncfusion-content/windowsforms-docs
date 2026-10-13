@@ -8,8 +8,6 @@ documentation: ug
 --- 
 # Padding in Windows Forms XPTaskBar
 
-The XPTaskBar control is assumed to be created as shown in the [Getting Started](https://help.syncfusion.com/windowsforms/xptaskbar/creating-an-xptaskbar) documentation before trying the below code.
-
 ## Padding settings for XPTaskBar
 
 The interior spacing of the XPTaskBar control can be specified by setting the DockPadding property to integer values.

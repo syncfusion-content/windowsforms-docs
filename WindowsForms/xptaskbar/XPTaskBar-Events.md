@@ -10,9 +10,6 @@ documentation: ug
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
->**NOTE**:
-In the event handler examples below, `listView1` (or `Me.listView1`) refers to a `ListView` control used in the demo application to log event output. The examples assume the XPTaskBar control is created as shown in the [Getting Started](https://help.syncfusion.com/windowsforms/xptaskbar/creating-an-xptaskbar) documentation.
-
 * [AfterAnimation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarBox.html)
 * [BeforeAnimation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarBox.html)
 * [CollapsedStateChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarBox.html)
@@ -152,19 +149,6 @@ End Sub
 The XPTaskBar Box uses this event to make an XPTaskBar Item do some task when the user clicks on it. For this [ItemClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarBox.html) event, the user should set unique names for the XPTaskBar Items through the [Tag](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarItem.html#Syncfusion_Windows_Forms_Tools_XPTaskBarItem_Tag) property in the Items Collection Editor.
 
 The event handler receives an argument of the type XPTaskBarItemClickArgs. The event properties associated with the XPTaskBarItemClickArgs are as follows.
-
-**Members table**
-
-<table>
-<tr>
-<th>
-Members</th><th>
-Description</th></tr>
-<tr>
-<td>
-XPTaskBarItem</td><td>
-Gets the XPTaskBarItem that was clicked.</td></tr>
-</table>
 
 {% tabs %}
 {% highlight C# %}  
@@ -405,7 +389,7 @@ System.Drawing.Drawing2D.Blend blend = new System.Drawing.Drawing2D.Blend();
 
 blend.Factors = new float[] { 0.0f, 0.25F, 0.5f, 1.0F };
 
-blend.Positions = new float[] { 0.0F, 0.25F, 0.5F, 1.0F };
+blend.Positions = new float[] { 0.0F, 0.25F, 0.5F, 1.0F, 1.5F };
 
 // Estimate the XPTaskBarBox bounds
 
@@ -433,7 +417,7 @@ Dim blend As New System.Drawing.Drawing2D.Blend()
 
 blend.Factors = New Single() {0.0F, 0.25F, 0.5F, 1.0F}
 
-blend.Positions = New Single() {0.0F, 0.25F, 0.5F, 1.0F}
+blend.Positions = New Single() {0.0F, 0.25F, 0.5F, 1.0F, 1.5F}
 
 ' Estimate the XPTaskBarBox bounds 
 

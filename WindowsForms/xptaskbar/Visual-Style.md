@@ -108,7 +108,7 @@ Me.xpTaskBar1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.B
 
 **Custom colors**
 
-We can also apply custom colors to the XPTaskBar control by setting Office2007ColorScheme to "_Managed_", and specifying the custom color through the ApplyManagedColors method of the `Syncfusion.Windows.Forms.Office2007Colors` class as follows.
+We can also apply custom colors to the XPTaskBar control by setting Office2007ColorScheme to "_Managed_", and specifying the custom color through the ApplyManagedColors method as follows.
 
 {% tabs %}
 
