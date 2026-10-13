@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Appearance in Windows Forms Scroll Frame | Syncfusion®
 description: Appearance customization supports scrollbar styling, thumb sizing, arrow button settings, disabled states, and built-in themes.
@@ -13,7 +13,7 @@ This section explains how to customize the default appearance of the scrollbars 
 
 ## Scrollbar appearance
 
-The inner elements of the scrollbar can be customized by using the [ScrollBarStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.ScrollBarStyleInfo.html) property, that allows changing the appearance of the horizontal and vertical scrollbars separately.
+The inner elements of the scrollbar can be customized by using the [ScrollBarStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.ScrollBarStyleInfo.html) property, which allows changing the appearance of the horizontal and vertical scrollbars separately.
 
 The horizontal scrollbar appearance can be customized by using the `HorizontalScrollBar.Style` property. The `ScrollBarStyleInfo` contains all the settings that controls the appearance of the scrollbar.
 
@@ -41,7 +41,7 @@ this.sfScrollFrame1.HorizontalScrollBar.Style.ScrollBarBackColor = Color.LightGr
 {% endhighlight %}
 {% endtabs %}
 
-The vertical scroll bar appearance can be customized by using the `VerticalScrollBar.Style` property.
+The vertical scrollbar appearance can be customized by using the `VerticalScrollBar.Style` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -82,7 +82,7 @@ this.sfScrollFrame1.HorizontalScrollBar.Style.ThumbWidth = 8;
 this.sfScrollFrame1.VerticalScrollBar.Style.ThumbWidth = 8;
 {% endhighlight %}
 {% endtabs %}
-![Scrollbar thumb  size changed in winforms scrollframe](SfScrollFrame_images/SfScrollFrame_img4.jpg)
+![Scrollbar thumb size changed in winforms scrollframe](SfScrollFrame_images/SfScrollFrame_img4.jpg)
 
 N> This width can be set maximum to the width and height of the vertical and horizontal scrollbars respectively. 
 
@@ -119,7 +119,7 @@ this.sfScrollFrame1.HorizontalScrollBar.Style.ArrowButtonDisabledForeColor = Col
 {% endtabs %}
 ![Disabled the arrow button color in winforms scrollframe](SfScrollFrame_images/SfScrollFrame_img5.jpg)
 
-## Disabling the Scrollbar Thumb
+## Disabling the Scrollbar thumb
 
 The scrollbar thumb can be disabled by setting the [EnableThumb](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ScrollBarBase.html#Syncfusion_WinForms_Controls_ScrollBarBase_EnableThumb) property to `false`. The default value is `true`.
 
@@ -254,7 +254,7 @@ Imports Syncfusion.WinForms.Controls
 
 ### Apply theme
 
-Appearance of the SfScrollFrame can be changed by using the `ThemeName`.
+Appearance of the SfScrollFrame can be changed by using the `ThemeName` property.
 
 #### Office2016Colorful
 
@@ -360,7 +360,7 @@ Me.SfScrollFrame.ThemeName = "Office2016Black"
 
 ![Office2016black theme applied in winforms scrollframe](SfScrollFrame_images/SfScrollFrame_black16.jpg)
 
-### Office2019Colorful
+#### Office2019Colorful
 
 This option helps to set the Office2019Colorful Theme.
 
@@ -386,7 +386,7 @@ This option helps to set the Office2019Colorful Theme.
 
 ![Office2019colorful theme applied in winforms scrollframe](SfScrollFrame_images/SfScrollFrame_colorful19.png)
 
-### HighContrastBlack
+#### HighContrastBlack
 
 This option helps to set the HighContrastBlack Theme.
 
