@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Style in Windows Forms GroupView | Syncfusion®
 description: Style settings provide built-in themes including Metro and Office 2016 color schemes for GroupView controls.
