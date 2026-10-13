@@ -6,7 +6,7 @@ platform: windowsforms
 control: XPTaskBar
 documentation: ug
 ---
-# About Syncfusion® Windows Forms XPTaskBar Control
+# About the Syncfusion® Windows Forms XPTaskBar Control
 
 The various sections of XPTaskBar and their descriptions are given below.
 
