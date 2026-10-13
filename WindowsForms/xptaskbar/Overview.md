@@ -1,12 +1,12 @@
 ---
 layout: post
-title: About Syncfusion® Windows Forms XPTaskBar Control | Syncfusion®
+title: About the Syncfusion® Windows Forms XPTaskBar Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms XPTaskBar control and its features.
 platform: windowsforms
 control: XPTaskBar
 documentation: ug
 ---
-# About the Syncfusion® Windows Forms XPTaskBar Control
+# About Syncfusion® Windows Forms XPTaskBar Control
 
 [XPTaskBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBar.html) represents a Windows XP like task menu panel. It helps display a set of command items ([XPTaskBarItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarItem.html)) or frequently used features (like "Search", "Advanced Search", etc) in panels, that can be classified, contained and displayed within one or more command boxes ([XPTaskBarBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarBox.html)). 
 
