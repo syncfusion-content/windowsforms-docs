@@ -270,11 +270,3 @@ End Sub
 ![WinForms TabbedForm showing the customized Close, Close all but this, and Close tabs to the right context menu items](ContextMenu_Images/ContextMenu_Images_img1.png)
 
 You can download the sample from the following link: [TabbedForm Sample](https://github.com/syncfusion/winforms-demos/tree/ba27b6748fa0723dcd42906ee58cb0e944291e51/dialogs/SfForm/TabbedForm/CS)
-
-## See also
-
-* [About the SfTabbedForm control](Overview.md)
-* [Getting Started with Windows Forms TabbedForm](Getting-Started.md)
-* [Tab Selection in Windows Forms TabbedForm](TabSelection.md)
-* [Drag and drop tabs in Windows Forms TabbedForm](Draganddroptabs.md)
-* [Tab Navigation in Windows Forms TabbedForm](TabNavigation.md)

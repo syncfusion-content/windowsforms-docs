@@ -19,17 +19,7 @@ The `Office2007Form` is an advanced standard `Form` that offers a Microsoft Offi
 * **Color schemes** – Supports Office color schemes like Blue, Black, Silver, and Managed.
 * **Customization** – Supports customizing the appearance of the caption bar (font, fore color, height, and rounded corners).
 * **Right-to-left** – Supports right-to-left layout for the form and its child controls.
-* **Aero theme** – Supports enabling the Windows Aero glass effect (Vista and later).
-* **Background color** – Supports using the active Office color scheme as the form's background.
-* **Drop shadow** – Supports enabling a drop shadow around the form border.
 
 ## Choose between different form controls
 
 You can refer to the different form controls [here](https://help.syncfusion.com/windowsforms/sfform/overview#choose-between-different-form-controls).
-
-## See also
-
-* [Getting Started with Windows Forms Office2007 Form](Getting-Started.md)
-* [Configure Color Schemes in Windows Forms Office2007Form](Color-Schemes.md)
-* [Office2007Form Customization in Windows Forms](Customization.md)
-* [Office2007Form API reference](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Form.html) 

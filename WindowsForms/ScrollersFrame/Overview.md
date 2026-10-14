@@ -13,10 +13,6 @@ The ScrollersFrame is a component to customize the appearance of scrollbars for 
 
 ## Key features
 
-* `Styling` – Supports customizing the appearance of the scrollbar and its visual style. See [Visual Styles](Getting-Started#visual-styles).
+* `Styling` – Supports customizing the appearance of the scrollbar and its visual style.
 * `Localization` – Supports localizing the menu items of the scrollbar context menu.
-* `Context Menu` – Supports scrolling the UI through the scrollbar context menu. See [Attach ScrollersFrame to control](Getting-Started#attach-scrollersframe-to-control).
-
-## See also
-
-* [Getting Started with Windows Forms ScrollersFrame](Getting-Started.md)
+* `Context Menu` – Supports scrolling the UI through the scrollbar context menu.

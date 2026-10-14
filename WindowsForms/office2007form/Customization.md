@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Office2007Form Customization in Windows Forms | Syncfusion®
-description: Customization options include caption alignment, fonts, colors, help button functionality, RTL layouts, and rounded corners.
+description: Customization options include caption alignment, fonts, colors, help button support, RTL layouts, and rounded corners.
 platform: WindowsForms
 control: Office2007 Form
 documentation: ug
@@ -9,23 +9,7 @@ documentation: ug
 
 # Office2007Form Customization in Windows Forms
 
-The Office2007Form caption and other UI elements can be customized through the properties documented in this section. Ensure the `Syncfusion.Windows.Forms` namespace is imported (see [Getting Started](Getting-Started.md)).
-
-## Table of contents
-
-* [Caption alignment](#caption-alignment)
-* [Caption font](#caption-font)
-* [Caption fore color](#caption-fore-color)
-* [Caption bar height](#caption-bar-height)
-* [Help button support](#help-button-support)
-* [Right to left](#right-to-left)
-* [Rounded corner](#rounded-corner)
-* [Disabling Office2007Style](#disabling-office2007style)
-* [See also](#see-also)
-
-## Caption alignment
-
-The form caption can be aligned to the left, right, or center by using the [CaptionAlign](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Form.html#Syncfusion_Windows_Forms_Office2007Form_CaptionAlign) property.
+The Form caption can be aligned to the left, right or center by using the [CaptionAlign](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Form.html#Syncfusion_Windows_Forms_Office2007Form_CaptionAlign) property.
 
 {% tabs %}
 
@@ -66,6 +50,7 @@ Me.CaptionFont = New System.Drawing.Font("Comic Sans MS", 15F, System.Drawing.Fo
 {% endtabs %}
 
 ![WinForms Office2007Form with a custom Comic Sans MS caption font applied](Caption-Settings_images/CaptionFont.png)
+
 
 ## Caption fore color
 
@@ -114,6 +99,7 @@ Me.CaptionBarHeight = 50
 {% endtabs %}
 
 ![WinForms Office2007Form with caption bar height set to 50](Caption-Settings_images/CaptionBarHeight.png)
+
 
 ### Retain the caption bar height on maximized mode
 
@@ -170,6 +156,7 @@ Right-to-left support can be enabled using the following properties in Office200
 {% highlight c# %}
 
 this.RightToLeftLayout = true;
+
 this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 
 {% endhighlight %}
@@ -177,6 +164,7 @@ this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 {% highlight vb %}
 
 Me.RightToLeftLayout = True
+
 Me.RightToLeft = System.Windows.Forms.RightToLeft.Yes
 
 {% endhighlight %}
@@ -207,6 +195,7 @@ Me.AllowRoundedCorners = True
 
 {% endtabs %}
 
+
 ![WinForms Office2007Form with rounded corners on Windows 11](Office2007-Form_images/RoundedCorners.png)
 
 ## Disabling Office2007Style
@@ -229,12 +218,5 @@ Me.DisableOffice2007Style = True
 
 {% endtabs %}
 
+
 ![WinForms Office2007Form with the Office 2007 style disabled, showing the default Windows caption](Caption-Settings_images/image1.png)
-
-## See also
-
-* [About the Office2007Form control](Overview.md)
-* [Getting Started with Windows Forms Office2007 Form](Getting-Started.md)
-* [Configure Color Schemes in Windows Forms Office2007Form](Color-Schemes.md)
-* [How to Enable Shadow in Windows Forms Office2007Form](FAQ/How-to-enable-shadow-of-the-Office2007Form.md)
-* [Office2007Form API reference](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Form.html)

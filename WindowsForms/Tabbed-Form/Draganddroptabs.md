@@ -11,20 +11,6 @@ documentation: ug
 
 The Tabbed Form allows moving tabs from one position to another by dragging the corresponding tab. This can be done by setting the [TabbedFormControl.AllowDraggingTabs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SfTabbedFormControl.html#Syncfusion_Windows_Forms_Tools_SfTabbedFormControl_AllowDraggingTabs) property to `true`.
 
-Ensure the following namespaces are imported:
-
-* C#: `using Syncfusion.Windows.Forms.Tools;`
-* VB: `Imports Syncfusion.Windows.Forms.Tools`
-
-## Table of contents
-
-* [Enable drag and drop](#enable-drag-and-drop)
-* [Cancel tab dragging](#cancel-tab-dragging)
-* [Cancel tab reordering](#cancel-tab-reordering)
-* [See also](#see-also)
-
-## Enable drag and drop
-
 {% tabs %}
 {% highlight c# %}
 tabbedFormControl.AllowDraggingTabs = true;
@@ -85,11 +71,3 @@ Private Sub OnTabDragging(ByVal sender As Object, ByVal e As TabDraggingEventArg
 End Sub
 {% endhighlight %}
 {% endtabs %}
-
-## See also
-
-* [About the SfTabbedForm control](Overview.md)
-* [Getting Started with Windows Forms TabbedForm](Getting-Started.md)
-* [Tab Selection in Windows Forms TabbedForm](TabSelection.md)
-* [Context Menu in Windows Forms TabbedForm](ContextMenu.md)
-* [Tab Navigation in Windows Forms TabbedForm](TabNavigation.md)

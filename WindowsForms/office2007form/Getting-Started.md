@@ -11,25 +11,9 @@ documentation: ug
 
 This section describes how to configure the `Office2007Form` control in a Windows Forms application.
 
-## Prerequisites
-
-Before using the Office2007Form control, ensure the following are available:
-
-* Visual Studio 2015 or later with the Windows Forms development workload.
-* A Windows Forms application targeting .NET Framework 4.5+ or .NET 6.0+ (Windows).
-* A valid [Syncfusion license](https://www.syncfusion.com/sales/communitylicense) registered in your project.
-
-## Table of contents
-
-* [Assembly deployment](#assembly-deployment)
-* [Creating simple application with Office2007Form](#creating-simple-application-with-office2007form)
-  * [Creating the project](#creating-the-project)
-  * [Configure Office2007Form](#configure-office2007form)
-* [Troubleshooting](#troubleshooting)
-
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#office2007form) section for the list of assemblies and NuGet packages that must be added as references to use the control. The required assembly is `Syncfusion.Shared.Base.dll` (`Syncfusion.Shared.Base` NuGet package):
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#office2007form) section for the list of assemblies and NuGet packages that must be added as references to use the control.
 
 ```
 PM> Install-Package Syncfusion.Shared.Base
@@ -106,18 +90,3 @@ End Class
 
 ![WinForms Office2007Form displayed with the Office 2007-styled caption and client area](Office2007-Form_images/Office2007Form.png)
 
-## Troubleshooting
-
-| Issue | Possible cause | Resolution |
-|---|---|---|
-| `Office2007Form` does not compile – "type or namespace not found". | The `Syncfusion.Shared.Base` assembly is not referenced. | Add the `Syncfusion.Shared.Base` NuGet package or reference the assembly as described in [Assembly deployment](#assembly-deployment). |
-| Form opens but shows the standard Windows caption instead of Office 2007 styling. | The form's base class is still `System.Windows.Forms.Form`, or the licensing was not registered. | Inherit from `Office2007Form` in Step 3 and ensure a valid Syncfusion license is registered. |
-| Caption appears in the wrong language or with default text. | Localization was not configured. | Configure the `LocalizationProvider` and set the desired culture at application startup. |
-
-## See also
-
-* [About the Office2007Form control](Overview.md)
-* [Configure Color Schemes in Windows Forms Office2007Form](Color-Schemes.md)
-* [Office2007Form Customization in Windows Forms](Customization.md)
-* [How to Enable Shadow in Windows Forms Office2007Form](FAQ/How-to-enable-shadow-of-the-Office2007Form.md)
-* [Office2007Form API reference](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Form.html)
