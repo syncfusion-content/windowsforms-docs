@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Header Settings in Windows Forms XPTaskPane | Syncfusion®
 description: Header settings support customizing navigation buttons, menu visibility, toolbar items, and header images in XPTaskPane.
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Setting visibility of the ToolBar items
 
-The header section by default has four toolbar items. Left and right navigating buttons at the top left corner of the TaskPane Header and DropDownMenu and Close Button at the top right corner of the TaskPane Header.
+The header section by default has four toolbar items: left and right navigating buttons at the top left corner of the TaskPane Header, and the DropDownMenu and Close Button at the top right corner of the TaskPane Header.
 
 
 
@@ -89,17 +89,18 @@ Me.xpTaskPane1.HeaderRightToolbar.Items[1].Visible = True
 
 ### Images for Toolbar items
 
-We can change the existing image for the toolbar items using the below code snippets.
+The existing images for the toolbar items can be changed using the below code snippets. In this example, `imageList1` refers to a `System.Windows.Forms.ImageList` instance added to the form and populated with images via the Image Collection Editor.
 
 {% tabs %}
 
 {% highlight C# %}
 
-
+//Initialize the image list.
+System.Windows.Forms.ImageList imageList1 = new System.Windows.Forms.ImageList();
 
 //Setting Image for the right navigating button
 
-this.xpTaskPane1.HeaderLeftToolbar.Items[1].ImageList = this.imageList1;
+this.xpTaskPane1.HeaderLeftToolbar.Items[1].ImageList = imageList1;
 
 this.xpTaskPane1.HeaderLeftToolbar.Items[1].ImageIndex = 0;
 
@@ -107,7 +108,7 @@ this.xpTaskPane1.HeaderLeftToolbar.Items[1].ImageIndex = 0;
 
 //Setting Image for the left navigating button
 
-this.xpTaskPane1.HeaderLeftToolbar.Items[0].ImageList = this.imageList1;
+this.xpTaskPane1.HeaderLeftToolbar.Items[0].ImageList = imageList1;
 
 this.xpTaskPane1.HeaderLeftToolbar.Items[0].ImageIndex = 1;
 
@@ -120,17 +121,17 @@ this.xpTaskPane1.HeaderLeftToolbar.Items[0].ImageIndex = 1;
 
 'Setting Image for the right navigating button
 
-Me.xpTaskPane1.HeaderLeftToolbar.Items[1].ImageList = Me.imageList1
+Me.xpTaskPane1.HeaderLeftToolbar.Items(1).ImageList = imageList1
 
-Me.xpTaskPane1.HeaderLeftToolbar.Items[1].ImageIndex = 0
+Me.xpTaskPane1.HeaderLeftToolbar.Items(1).ImageIndex = 0
 
 
 
 'Setting Image for the left navigating button
 
-Me.xpTaskPane1.HeaderLeftToolbar.Items[0].ImageList = Me.imageList1
+Me.xpTaskPane1.HeaderLeftToolbar.Items(0).ImageList = imageList1
 
-Me.xpTaskPane1.HeaderLeftToolbar.Items[0].ImageIndex = 1
+Me.xpTaskPane1.HeaderLeftToolbar.Items(0).ImageIndex = 1
 
 
 {% endhighlight %}
@@ -172,7 +173,6 @@ Sets the image to be displayed in DropDownMenu item.</td></tr>
 
 this.xpTaskPane1.HeaderMenuItem.ImageIndex = 1;
 
-
 {% endhighlight %}
 
 {% highlight VB %}
@@ -189,6 +189,5 @@ Me.xpTaskPane1.HeaderMenuItem.ImageIndex = 1
 {% endtabs %}
 
 ![Header-Settings_img4](Header-Settings_images/Header-Settings_img4.jpeg)
-
 
 
