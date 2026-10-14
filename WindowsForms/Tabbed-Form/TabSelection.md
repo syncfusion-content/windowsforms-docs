@@ -32,7 +32,7 @@ Me.tabbedFormControl.SelectedTab = tabPageAdv2
 {% endhighlight %}
 {% endtabs %}
 
-![WinForms TabbedForm showing the second tab selected programmatically](Tab-Selection-images/Tab-Selection-images_img1.png)
+![WinForms TabbedForm showing the selected tab](Tab-Selection-images/Tab-Selection-images_img1.png)
 
 ## Events
 

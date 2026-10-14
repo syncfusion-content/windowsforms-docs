@@ -15,10 +15,6 @@ This section describes how to configure the `Office2007Form` control in a Window
 
 Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#office2007form) section for the list of assemblies and NuGet packages that must be added as references to use the control.
 
-```
-PM> Install-Package Syncfusion.Shared.Base
-```
-
 For more details on installing NuGet packages in a Windows Forms application, see [How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages).
 
 ## Creating simple application with Office2007Form
@@ -88,5 +84,5 @@ End Class
 
 {% endtabs %}
 
-![WinForms Office2007Form displayed with the Office 2007-styled caption and client area](Office2007-Form_images/Office2007Form.png)
+![WinForms Office2007Form displayed with the Office2007 style](Office2007-Form_images/Office2007Form.png)
 

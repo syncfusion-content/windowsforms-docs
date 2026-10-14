@@ -17,7 +17,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 The default form can be changed into `SfTabbedForm` by following the given steps:
 
-1. Create a new Windows Forms application in Visual Studio and refer to the [Syncfusion.Tools.Windows](https://help.syncfusion.com/windowsforms/control-dependencies#sftabbedform) assembly.
+1. Create a new Windows Forms application in Visual Studio and refer to the `Syncfusion.Tools.Windows` assembly.
 
 2. Include the following namespaces in the directives list.
 

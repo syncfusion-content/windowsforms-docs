@@ -87,12 +87,10 @@ Gets or sets a value to be added to or subtracted from the <code>Value</code> pr
 
 {% tabs %}
 {% highlight c# %}
-// Set the small-change step for the scrollbar
 this.scrollersFrame2.VerticalSmallChange = 25;
 this.scrollersFrame2.HorizontalSmallChange = 25;
 {% endhighlight %}
 {% highlight vb %}
-' Set the small-change step for the scrollbar
 Me.scrollersFrame2.VerticalSmallChange = 25
 Me.scrollersFrame2.HorizontalSmallChange = 25
 {% endhighlight %}
@@ -110,24 +108,22 @@ Description</th></tr>
 <tr>
 <td>
 VisualStyle</td><td>
-Sets the visual style for the scrollbars. Supported values are <code>Classic</code>, <code>WindowsXP</code>, <code>Office2007</code>, <code>Office2007Generic</code>, and <code>Office2016</code>.</td></tr>
+Sets the visual style for the scrollbars. Supported values are Classic, WindowsXP, Office2007, Office2007Generic, and Office2016.</td></tr>
 <tr>
 <td>
 OfficeColorScheme</td><td>
-Sets the Office color scheme for the scrollbars when <code>VisualStyle</code> is set to <code>Office2007</code> or <code>Office2007Generic</code>. The available color schemes are <code>Blue</code>, <code>Silver</code>, <code>Black</code>, and <code>Managed</code>.</td></tr>
+Sets the Office color scheme for the scrollbars when VisualStyle is set to Office2007 or Office2007Generic. The available color schemes are, blue, silver, and black and Managed.</td></tr>
 <tr>
 <td>
 Office2016ColorScheme</td><td>
-Sets the Office 2016 color scheme for the scrollbars when <code>VisualStyle</code> is set to <code>Office2016</code>. The available color schemes are <code>Black</code>, <code>White</code>, <code>Colorful</code>, and <code>DarkGray</code>.</td></tr>
+Sets the Office 2016 color scheme for the scrollbars when VisualStyle is set to Office2016. The available color schemes are Black, White, Colorful, and DarkGray.
 </table>
 
 {% tabs %}
 {% highlight c# %}
-// Apply the Office2007 visual style
 this.scrollersFrame1.VisualStyle = Syncfusion.Windows.Forms.ScrollBarCustomDrawStyles.Office2007;
 {% endhighlight %}
 {% highlight vb %}
-' Apply the Office2007 visual style
 Me.scrollersFrame1.VisualStyle = Syncfusion.Windows.Forms.ScrollBarCustomDrawStyles.Office2007
 {% endhighlight %}
 {% endtabs %}
@@ -136,11 +132,9 @@ Me.scrollersFrame1.VisualStyle = Syncfusion.Windows.Forms.ScrollBarCustomDrawSty
 
 {% tabs %}
 {% highlight c# %}
-// Apply the Silver color scheme for the Office2007 visual style
 this.scrollersFrame1.OfficeColorScheme = Syncfusion.Windows.Forms.Office2007ColorScheme.Silver;
 {% endhighlight %}
 {% highlight vb %}
-' Apply the Silver color scheme for the Office2007 visual style
 Me.scrollersFrame1.OfficeColorScheme = Syncfusion.Windows.Forms.Office2007ColorScheme.Silver
 {% endhighlight %}
 {% endtabs %}
@@ -151,7 +145,7 @@ Me.scrollersFrame1.OfficeColorScheme = Syncfusion.Windows.Forms.Office2007ColorS
 
 ### Custom colors
 
-You can also apply custom colors to the ScrollersFrame by setting the `OfficeColorScheme` to `Managed` and specifying the custom color through the [Office2007Colors.ApplyManagedColors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Colors.html#Syncfusion_Windows_Forms_Office2007Colors_ApplyManagedColors_System_Windows_Forms_Form_System_Drawing_Color_) method.
+You can also apply custom colors to the ScrollersFrame by setting the `OfficeColorScheme` to `Managed` and specifying the custom color through the [ApplyManagedColors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Colors.html#Syncfusion_Windows_Forms_Office2007Colors_ApplyManagedColors_System_Windows_Forms_Form_System_Drawing_Color_) method.
 {% tabs %}
 {% highlight c# %}
 this.scrollersFrame1.OfficeColorScheme = Syncfusion.Windows.Forms.Office2007ColorScheme.Managed;

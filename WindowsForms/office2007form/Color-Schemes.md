@@ -96,7 +96,7 @@ Me.UseOffice2007SchemeBackColor = True
 
 Office2007Form can apply or skip the Aero theme on forms with a glassy effect. This is controlled by the [`ApplyAeroTheme`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Form.html#Syncfusion_Windows_Forms_Office2007Form_ApplyAeroTheme) property.
 
-Aero theme support is available for Office2007Form when used on a Vista machine (or later). Earlier, color schemes could not be applied to Office2007Form when Aero theme was enabled. Now color schemes can be applied by disabling Aero theme on Office2007Form.
+Aero theme support is available for Office2007Form when used on a Vista machine. Earlier, color schemes could not be applied to Office2007Form when Aero theme was enabled. Now color schemes can be applied by disabling Aero theme on Office2007Form.
 
 {% tabs %}
 

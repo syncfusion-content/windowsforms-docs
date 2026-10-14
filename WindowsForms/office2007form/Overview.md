@@ -15,9 +15,9 @@ The `Office2007Form` is an advanced standard `Form` that offers a Microsoft Offi
 
 ## Key features
 
-* **Caption Alignment** – Supports configuring the caption text alignment (left, center, or right).
+* **Caption Alignment** – Supports configuring the caption text alignment.
 * **Color schemes** – Supports Office color schemes like Blue, Black, Silver, and Managed.
-* **Customization** – Supports customizing the appearance of the caption bar (font, fore color, height, and rounded corners).
+* **Customization** – Supports customizing the appearance of the caption bar.
 * **Right-to-left** – Supports right-to-left layout for the form and its child controls.
 
 ## Choose between different form controls

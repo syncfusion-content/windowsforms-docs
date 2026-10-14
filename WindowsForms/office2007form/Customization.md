@@ -49,7 +49,7 @@ Me.CaptionFont = New System.Drawing.Font("Comic Sans MS", 15F, System.Drawing.Fo
 
 {% endtabs %}
 
-![WinForms Office2007Form with a custom Comic Sans MS caption font applied](Caption-Settings_images/CaptionFont.png)
+![WinForms Office2007Form with a custom font applied](Caption-Settings_images/CaptionFont.png)
 
 
 ## Caption fore color
@@ -98,7 +98,7 @@ Me.CaptionBarHeight = 50
 
 {% endtabs %}
 
-![WinForms Office2007Form with caption bar height set to 50](Caption-Settings_images/CaptionBarHeight.png)
+![WinForms Office2007Form with caption bar height applied](Caption-Settings_images/CaptionBarHeight.png)
 
 
 ### Retain the caption bar height on maximized mode
@@ -145,7 +145,7 @@ Me.HelpButton = True
 
 {% endtabs %}
 
-![WinForms Office2007Form with the help button visible in the caption box](Caption-Settings_images/HelpButton.png)
+![WinForms Office2007Form with the help button](Caption-Settings_images/HelpButton.png)
 
 ## Right to left
 
@@ -219,4 +219,4 @@ Me.DisableOffice2007Style = True
 {% endtabs %}
 
 
-![WinForms Office2007Form with the Office 2007 style disabled, showing the default Windows caption](Caption-Settings_images/image1.png)
+![WinForms Office2007Form with the Office 2007 style disabled](Caption-Settings_images/image1.png)

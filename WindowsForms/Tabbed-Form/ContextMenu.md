@@ -267,6 +267,6 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![WinForms TabbedForm showing the customized Close, Close all but this, and Close tabs to the right context menu items](ContextMenu_Images/ContextMenu_Images_img1.png)
+![WinForms TabbedForm showing the context menu items](ContextMenu_Images/ContextMenu_Images_img1.png)
 
 You can download the sample from the following link: [TabbedForm Sample](https://github.com/syncfusion/winforms-demos/tree/ba27b6748fa0723dcd42906ee58cb0e944291e51/dialogs/SfForm/TabbedForm/CS)
