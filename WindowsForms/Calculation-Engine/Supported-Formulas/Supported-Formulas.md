@@ -1754,7 +1754,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[Z.TEST](https://support.microsoft.com/en-us/office/z-test-function-d633d5a3-2031-4614-a016-92180ad82bee)'| markdownify }}</td></tr>
+<td>{{'[Z.TEST](https://support.office.com/en-us/article/z-test-function-d633d5a3-2031-4614-a016-92180ad82bee)'| markdownify }}</td></tr>
 </table>
 
 ## Engineering Function
