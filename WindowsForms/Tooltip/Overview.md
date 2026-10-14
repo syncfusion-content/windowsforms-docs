@@ -19,10 +19,6 @@ The key features of the `SfToolTip` are:
 * **Adding controls** — Supports loading a control inside a tooltip item.
 * **ToolTip content customization** — Supports customizing the appearance of a tooltip item.
 
-## Version Compatibility
-
-The `SfToolTip` is available in Syncfusion<sup>®</sup> Essential Studio Windows Forms starting with version 12.1.0.36 and is supported on .NET Framework 4.5+, .NET Core 3.1, .NET 5, and later.
-
 ## Choose between different tooltip controls
 
 Syncfusion<sup>®</sup> WinForms suite comes up with the following different tooltips:

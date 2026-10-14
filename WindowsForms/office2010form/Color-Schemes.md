@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Configure Color Schemes in Windows Forms Office2010Form | Syncfusion®
-description: Color schemes in Office2010Form support Office-inspired themes, managed colors, Aero theme integration, and background color customization.
+description: Color schemes support Office-inspired themes, managed colors, Aero theme integration, and background color customization.
 platform: WindowsForms
 control: Office2010 Form
 documentation: ug
@@ -11,12 +11,10 @@ documentation: ug
 
 The `Office2010Form` supports the following Office color schemes, which can be set through the [ColorScheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2010Form.html#Syncfusion_Windows_Forms_Office2010Form_ColorScheme) property.
 
-| Color scheme | Description |
-|---|---|
-| `Blue` (default) | The default Office 2010 blue accent. |
-| `Silver` | A light-gray Office 2010 accent. |
-| `Black` | A dark Office 2010 accent. |
-| `Managed` | Uses a custom accent color supplied through `Office2010Colors.ApplyManagedColors`. |
+* Blue
+* Silver
+* Black
+* Managed
 
 {% tabs %}
 
@@ -38,7 +36,7 @@ Me.ColorScheme = Office2010Theme.Blue
 
   ![Winforms showing colorscheme blue applied in office2010form](Color-Schemes_images/ColorScheme1.png)
 
-To apply the Managed color scheme, use the `ApplyManagedColors` method of the `Office2010Colors` class (in the `Syncfusion.Windows.Forms` namespace). The first argument is the form to apply the colors to, and the second argument is the accent color.
+To apply the Managed color scheme `ApplyManagedColors` function from Office2010Colors is used as in the below code snippet
 
 {% tabs %}
 
@@ -89,16 +87,13 @@ Me.UseOffice2010SchemeBackColor = True
 {% endtabs %}
 
 ![Winforms showing background color applied in office2010form](Color-Schemes_images/ColorScheme2.png)
+  
+  
+## Applying color schemes
 
-## Aero theme integration
+Office2010Form now have the option to apply the Aero theme on forms, which provides a glassy effect. This can be done through the [ApplyAeroTheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2010Form.html#Syncfusion_Windows_Forms_Office2010Form_ApplyAeroTheme) property.
 
-The Office2010Form can opt in to the Windows Aero glass effect through the [ApplyAeroTheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2010Form.html#Syncfusion_Windows_Forms_Office2010Form_ApplyAeroTheme) property. The glass effect is only rendered on supported Windows versions; on other operating systems, the property has no effect. Note that when `ApplyAeroTheme` is `true`, the active `ColorScheme` is not applied to the caption bar.
-
-| Windows version | Aero effect | Color scheme behavior |
-|---|---|---|
-| Windows Vista / Windows 7 | Glass effect visible when `ApplyAeroTheme = true`. | Color scheme is not applied to the caption while Aero is enabled. |
-| Windows 8 / Windows 8.1 | No Aero glass; `ApplyAeroTheme` is a no-op. | Color scheme is always applied. |
-| Windows 10 / Windows 11 | No Aero glass; `ApplyAeroTheme` is a no-op. | Color scheme is always applied. |
+Aero theme support is available for Office2010Form when used on Windows Vista machines. Previously, ColorSchemes could not be applied to the Office2010Form when the Aero theme was enabled. Now, ColorSchemes can be applied by disabling the Aero theme on Office2010Form.
 
 {% tabs %}
 
@@ -117,11 +112,3 @@ Me.ApplyAeroTheme = false
 {% endhighlight %}
 
 {% endtabs %}
-
-## Troubleshooting
-
-| Issue | Likely cause | Fix |
-|---|---|---|
-| The active color scheme is not visible on the caption bar. | `ApplyAeroTheme` is `true` and the host OS renders the Aero glass effect. | Set `this.ApplyAeroTheme = false;` to disable Aero. |
-| The form background does not change when switching color schemes. | `UseOffice2010SchemeBackColor` is `false`, or the property is being set before `ColorScheme`. | Set `this.UseOffice2010SchemeBackColor = true;` after assigning the `ColorScheme`. |
-| The Managed color scheme uses the default blue accent. | `Office2010Colors.ApplyManagedColors` was never called. | Call `Office2010Colors.ApplyManagedColors(this, Color.DarkMagenta);` after setting `ColorScheme = Office2010Theme.Managed;`. |

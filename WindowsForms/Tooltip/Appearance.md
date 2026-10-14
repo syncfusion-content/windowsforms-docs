@@ -11,7 +11,7 @@ documentation: ug
 
 ## ToolTip Control
 
-The border color and thickness of a tooltip can be customized on the `ToolTipInfo` (and therefore on every `SfToolTip` item that uses that `ToolTipInfo`) using the [BorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipInfo.html#Syncfusion_WinForms_Controls_ToolTipInfo_BorderColor) and [BorderThickness](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipInfo.html#Syncfusion_WinForms_Controls_ToolTipInfo_BorderThickness) properties. `BorderThickness` is an integer value in pixels and defaults to 1.
+The border color and thickness of a tooltip can be customized on the `ToolTipInfo` (and therefore on every `SfToolTip` item that uses that `ToolTipInfo`) using the [BorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipInfo.html#Syncfusion_WinForms_Controls_ToolTipInfo_BorderColor) and [BorderThickness](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipInfo.html#Syncfusion_WinForms_Controls_ToolTipInfo_BorderThickness) properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -72,7 +72,7 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 
 N> The [GradientBrush](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.ToolTipVisualStyle.html#Syncfusion_WinForms_Controls_Styles_ToolTipVisualStyle_GradientBrush) property will be considered only when the [EnableGradientBackground](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipItem.html#Syncfusion_WinForms_Controls_ToolTipItem_EnableGradientBackground) property is set to true.
 
-### Customizing the ToolTipItem Separator
+### ToolTipItem Separator
 
 The separator of the [ToolTipItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipItem.html) can be customized using the [SeparatorColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.ToolTipVisualStyle.html#Syncfusion_WinForms_Controls_Styles_ToolTipVisualStyle_SeparatorColor) and [SeparatorStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.ToolTipVisualStyle.html#Syncfusion_WinForms_Controls_Styles_ToolTipVisualStyle_SeparatorStyle) properties on the `Style` sub-property.
 
@@ -132,7 +132,7 @@ sfToolTip1.ShadowVisible = true;
 ![Shown the shadow of the tooltip items in winforms tooltip](SfToolTip_images/SfToolTip_img20.jpeg)
 
 
-## Enabling the ToolTipItem Separator
+## ToolTipItem Separator
 
 The separator of the `ToolTipItem` can be enabled by setting the [EnableSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipItem.html#Syncfusion_WinForms_Controls_ToolTipItem_EnableSeparator) property to `true`.
 
@@ -191,7 +191,7 @@ Themes can be applied to the SfToolTip by using the following steps:
 
 ### Load theme assembly
 
-The `Syncfusion.Office2016Theme.WinForms` assembly (or the `Syncfusion.Office2016Theme.WinForms` NuGet package) should be added as a reference to set a theme for the SfToolTip in any application.
+The `Syncfusion.Office2016Theme.WinForms` assembly should be added as reference to set theme for the SfToolTip in any application.
 
 Before applying the theme to the SfToolTip, the required theme assembly should be loaded.
 
@@ -240,7 +240,7 @@ End Module
 
 ### Apply theme
 
-The appearance of the SfToolTip can be changed by setting the `ThemeName` property. The following Office 2016 themes are available.
+The appearance of the SfToolTip can be changed by setting the `ThemeName` property.
 
 #### Office2016Colorful
 

@@ -17,37 +17,21 @@ In Office 2007, Microsoft introduced a SuperToolTip control to display enhanced 
 * **Body** - The description part of the tooltip.
 * **Footer** - Use the footer for additional information.
 
-## Version Compatibility
-
-The SuperToolTip (Classic) control is available in Syncfusion Essential Studio Windows Forms and is supported on .NET Framework 4.0+ and .NET Core 3.1 / .NET 5+. The associated NuGet package is `Syncfusion.Tools.Windows`.
-
-## Assembly Deployment
-
-The following assemblies (or the equivalent `Syncfusion.Core.WinForms` NuGet package) should be added as a reference to use the SuperToolTip component in any application:
-
-* `Syncfusion.Core.WinForms`
-* `Syncfusion.Shared.Base`
-
-Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#supertooltip) section for the full list of dependencies.
-
 ### Creating SuperToolTip through designer
 
-1. Drag and drop the SuperToolTip from the toolbox onto your form. The component is added to the component tray.
-2. Select the target control on the form (for example, a `ToolStripButton`, `ToolStripTabItem`, or any `Control`). The Properties window now shows an extended `SuperTooltip on superToolTip1` property.
-3. Click the **…** ellipse button next to the `SuperTooltip on superToolTip1` property to open the ToolTip Editor Dialog Box. This editor lets you customize the ToolTip items (header, body, footer, image, and styles).
+1. Drag and drop the SuperToolTip on your form.
+2. When the SuperToolTip component is added to a form, an extended property will be added to the properties of every item in the tool strip or tab item in the RibbonControlAdv.
 
    ![Creating SuperToolTip through designer](SuperToolTip_images/SuperToolTip_img2.jpeg)
 
-   N> You can also get or set a tooltip programmatically. See [Through code](#through-code).
+   N> You can also get or set a tooltip programmatically.It is discussed here.
 
-4. After configuring the tooltip, click **OK** to apply the changes.
+3. Clicking the … ellipse button will show the ToolTip Editor Dialog Box. This editor lets you customize the ToolTip items.
 
    ![Customize the ToolTip items](SuperToolTip_images/SuperToolTip_img4.jpeg)
 
 
 ### Through code
-
-The following code shows how to create a `SuperToolTip` and associate it with a `ToolStripTabItem`. The sample assumes a `ToolStripTabItem` named `toolStripTabItem1` already exists on the form.
 
 {% tabs %}
 {% highlight c# %}
@@ -139,7 +123,9 @@ toolTipInfo1.Separator = True
 
 ### Visual Style
 
-The SuperToolTip control supports the following visual styles: `Default`, `Metro`, `Office2016Colorful`, `Office2016White`, `Office2016Black`, and `Office2016DarkGray`. The following code shows how to set the `Office2016Colorful` style.
+SuperToolTip control supports Visual styles such as Default,Metro,Office2016Colorful,Office2016White,Office2016Black and Office2016DarkGray.
+
+//Sample code for setting "Office2016 Colorful" style for SuperToolTip
 
 {% tabs %}
 {% highlight c# %}
@@ -175,15 +161,15 @@ Indicates the time (in milliseconds) before the tooltip is displayed. The defaul
 <tr>
 <td>
 MaxWidth</td><td>
-Sets the maximum width (in pixels) for the tooltip to be displayed. When the text of the tooltip exceeds the max width, the text wraps to the next line. The default is `0` (no maximum).</td></tr>
+Sets the maximum width (in pixels) for the tooltip to be displayed. When the text of the tooltip exceeds the max width, the text wraps to the next line.</td></tr>
 <tr>
 <td>
 ToolTipDuration</td><td>
-Indicates the duration of the ToolTip (in seconds) when the mouse hovers over a control. The default is `5` seconds.</td></tr>
+Indicates the duration of the ToolTip (in seconds) when the mouse hovers over a control.</td></tr>
 <tr>
 <td>
 UseFading</td><td>
-Specifies the fading effect for the SuperToolTip. The options are `System` and `Blend`. The default is `System`.</td></tr>
+Specifies the fading effect for the SuperToolTip. The options are `System` and `Blend`.</td></tr>
 <tr>
 <td>
 RightToLeft</td><td>
@@ -191,7 +177,7 @@ When set to `true`, displays the tooltip in right-to-left fashion. Default value
 <tr>
 <td>
 ShowToolTip</td><td>
-Gets or sets the value indicating whether to show or hide the SuperToolTip. Default value is `true`.</td></tr>
+Gets or sets the value indicating whether to show or hide the SuperToolTip.</td></tr>
 </table>
 
 {% tabs %}
@@ -272,10 +258,10 @@ Sets the size of the image in pixels.</td></tr>
 <tr>
 <td>
 ImageTransparentColor</td><td>
-Sets the transparent color for the image. Use this when the source image has a background color that should not be visible in the tooltip.</td></tr>
+Sets the transparent color for the image.</td></tr>
 </table>
 
-Images can be associated with the header, body, and footer of the SuperToolTip using these properties. The example below uses a `ComponentResourceManager` named `resources` and assumes a `toolTipInfo1` is already created and associated with a control.
+Images can be associated with the header, body, and footer of the SuperToolTip using these properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -297,7 +283,7 @@ toolTipInfo1.Footer.ImageScalingSize = New System.Drawing.Size(16, 16)
 
 ![Settings Images for SuperToolTip](SuperToolTip_images/SuperToolTip_img9.jpeg)
 
-### Text appearance (Font and color)
+### Foreground settings
 
 <table>
 <tr>
@@ -469,11 +455,11 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-N> You can also use the `Show` method to display a SuperToolTip at a specified location. See [Show and Hide](#show-and-hide).
+N> You can also use the `Show` method to display a SuperToolTip at a specified location.
 
 ### UpdateToolTip
 
-The `UpdateToolTip` event of the SuperToolTip control can be handled to update the tooltip text. The `ToolTipInfo` must be associated with a control using `SetToolTip` before this event will fire.
+The `UpdateToolTip` event of the SuperToolTip control can be handled to update the tooltip text.
 
 {% tabs %}
 {% highlight c# %}
@@ -510,12 +496,6 @@ N> Support has been given in source level.
 
 ![Supporting SuperTooltip for MFC containers](SuperToolTip_images/SuperToolTip_img16.jpeg)
 
-## Troubleshooting
+## Choose between different tooltip controls
 
-| Issue | Likely cause | Fix |
-|---|---|---|
-| Tooltip does not appear on hover. | The target control was not associated with a `ToolTipInfo` via `SetToolTip`, or `ShowToolTip` is set to `false`. | Call `superToolTip1.SetToolTip(control, toolTipInfo)` and ensure `ShowToolTip` is `true`. |
-| Balloon style has no effect. | The `Style` property is set on a `ToolTipInfo` rather than the `SuperToolTip` component. | Set `Style` on the `SuperToolTip` itself: `this.superToolTip1.Style = SuperToolTipStyle.Balloon;`. |
-| `UpdateToolTip` never fires. | `SetToolTip` was never called for the target control. | Call `superToolTip1.SetToolTip(control, toolTipInfo)` for every control you want to update. |
-| HTML text renders as plain text. | `RenderHtml` is `false`. | Set `toolTipInfo.Footer.RenderHtml = true;` (or on the relevant `Header`/`Body`). |
-
+You can refer to the different tooltip controls [here](https://help.syncfusion.com/windowsforms/tooltip/overview#choose-between-different-tooltip-controls).

@@ -65,7 +65,7 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 
 ## Adding Image into a ToolTip
 
-The tooltip image of the `ToolTipItem` can be initialized using the [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipItem.html#Syncfusion_WinForms_Controls_ToolTipItem_Image) or [ImageList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipItem.html#Syncfusion_WinForms_Controls_ToolTipItem_ImageList) property. When both `Image` and `Text` are set, the image and text are rendered side by side and the `ImageAlignment` / `TextAlignment` style properties control their relative placement.
+The tooltip image of the `ToolTipItem` can be initialized using the [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipItem.html#Syncfusion_WinForms_Controls_ToolTipItem_Image) or [ImageList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipItem.html#Syncfusion_WinForms_Controls_ToolTipItem_ImageList) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -93,7 +93,7 @@ sfToolTip1.SetToolTipInfo(this.button1, toolTipInfo1);
 ![Shown added images into a tooltip in winforms tooltip](SfToolTip_images/SfToolTip_img12.jpeg)
 
 
-N> The [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipItem.html#Syncfusion_WinForms_Controls_ToolTipItem_Image) property is considered as higher priority when both `Image` and `ImageList` are initialized. See the [ImageIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipItem.html#Syncfusion_WinForms_Controls_ToolTipItem_ImageIndex) property for the index used to pick the image from the `ImageList`.
+N> The [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipItem.html#Syncfusion_WinForms_Controls_ToolTipItem_Image) property is considered as high priority, when both `Image` and `ImageList` are initialized. 
 
 ### Changing Image Alignment of the ToolTipItem
 
@@ -103,8 +103,8 @@ The image alignment of the `ToolTipItem` can be changed by using the [ImageAlign
 {% highlight c# %}
 
 ToolTipItem toolTipItem1 = new ToolTipItem();
-toolTipItem1.Text = "David Carter\r\nPhone : +1 919.494.1974\r\nEmail : david@syncfusion.com";
-toolTipItem1.Image = global::GettingStarted.Properties.Resources.Image1;
+toolTipItem1.Text = "David Carter\r\nPhone : +1 919.494.1974\r\nEmail : [david@syncfusion.com](mailto:david@syncfusion.com# "")";
+toolTipItem1.Image= global::GettingStarted.Properties.Resources.Image1;
 toolTipItem1.Style.ImageAlignment = ToolTipImageAlignment.Left;
 
 {% endhighlight %}
@@ -118,8 +118,8 @@ The image size of the `ToolTipItem` can be changed by using the [ImageSize](http
 {% highlight c# %}
 
 ToolTipItem toolTipItem1 = new ToolTipItem();
-toolTipItem1.Text = "David Carter\r\nPhone : +1 919.494.1974\r\nEmail : david@syncfusion.com";
-toolTipItem1.Image = global::GettingStarted.Properties.Resources.Image1;
+toolTipItem1.Text = "David Carter\r\nPhone : +1 919.494.1974\r\nEmail : [david@syncfusion.com](mailto:david@syncfusion.com# "")";
+toolTipItem1.Image= global::GettingStarted.Properties.Resources.Image1;
 toolTipItem1.Style.ImageSize = new Size(100, 100);
 
 {% endhighlight %}

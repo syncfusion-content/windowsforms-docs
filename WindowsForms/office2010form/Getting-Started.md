@@ -13,13 +13,11 @@ This section describes how to configure the `Office2010Form` control in a Window
 
 ## Assembly deployment
 
-The following assemblies (or the equivalent `Syncfusion.Shared.Base.WinForms` NuGet package) should be added as a reference to use the `Office2010Form` in any application:
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#office2010form) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
 
-* `Syncfusion.Shared.Base`
-
-Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#office2010form) section for the full list of dependencies.
-
-For more information about how to install NuGet packages in a Windows Forms application, see [How to install NuGet packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages).
+Please find more details regarding how to install the nuget packages in windows form application in the below link:
+ 
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
 
 ## Creating a simple application with Office2010Form
 
@@ -36,9 +34,11 @@ Create a new Windows Forms project in Visual Studio to host the Office2010Form.
 
 `Office2010Form` is an advanced standard Form. You can configure it by following the steps below.
 
-**Step 1:** Add the required assembly references listed in [Assembly deployment](#assembly-deployment).
+**Step 1:** Add the following required assembly references to the project:
 
-**Step 2:** Add the `Syncfusion.Windows.Forms` namespace.
+* Syncfusion.Shared.Base.dll	
+
+**Step 2:** Include the namespaces **Syncfusion.Windows.Forms**.
 
 {% tabs %}
 {% highlight C# %}

@@ -20,14 +20,3 @@ The `Office2010Form` is an advanced standard Form that offers a Microsoft Office
 * **Caption bar customization** - Customizes the appearance of the caption bar (font, color, and height).
 * **Right-to-left layout** - Aligns the control elements in a right-to-left layout.
 
-## Version compatibility
-
-The `Office2010Form` is available in Syncfusion Essential Studio Windows Forms and is supported on .NET Framework 4.0+ and .NET Core 3.1 / .NET 5+. The associated NuGet package is `Syncfusion.Shared.Base.WinForms`.
-
-## See also
-
-* [Getting started with Office2010Form](Getting-Started.md)
-* [Color schemes for Office2010Form](Color-Schemes.md)
-* [Office2010Form customization](Customization.md)
-
- 

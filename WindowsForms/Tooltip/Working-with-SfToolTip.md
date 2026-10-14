@@ -79,7 +79,7 @@ private void SfToolTip1_ToolTipShowing(object sender, ToolTipShowingEventArgs e)
 
 ## Changing Location of the ToolTip
 
-The location of the tooltip to be shown can be customized in the `ToolTipShowing` event using the `e.Location` property. For tooltip items that use `ToolTipStyle.Balloon`, the location applies to the tip of the beak rather than the balloon body.
+The location of the tooltip to be shown can be customized in the `ToolTipShowing` event using the `e.Location` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -143,13 +143,4 @@ private void SfToolTip1_DrawToolTipItem(object sender, DrawToolTipItemEventArgs 
 {% endtabs %}
 
 ![Custom drawing tooltip shown in winforms tooltip](SfToolTip_images/SfToolTip_img24.jpeg)
-
-## Troubleshooting
-
-| Issue | Likely cause | Fix |
-|---|---|---|
-| Tooltip does not appear on hover. | The `SfToolTip` component was disposed or the target control does not have a window handle. | Make sure the `SfToolTip` is added to the form and not disposed, and that the target control is shown on the form before hovering. |
-| Tooltip is hidden behind another control. | The owning form is not the active foreground window. | Bring the form to the foreground or call `SfToolTip.Show` with an explicit `Point` to position the tooltip correctly. |
-| `Show` throws an exception. | A null `ToolTipInfo` was passed. | Ensure the `ToolTipInfo` is initialized and has at least one `ToolTipItem` before calling `Show`. |
-
 

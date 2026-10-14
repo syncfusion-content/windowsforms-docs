@@ -1,19 +1,15 @@
 ---
 layout: post
 title: Office2010Form Customization in Windows Forms | Syncfusion®
-description: Customize Office2010Form with caption alignment, fonts, colors, help button support, RTL layouts, and rounded corners.
+description: Customization options include caption alignment, fonts, colors, help button support, RTL layouts, and rounded corners.
 platform: WindowsForms
 control: Office2010 Form
 documentation: ug
 ---
 
-# Office2010Form customization in Windows Forms
+# Caption alignment in WinForms Office2010Form
 
-The Office2010Form exposes a number of properties to customize the caption bar and the form's layout. The following topics describe the supported properties.
-
-## Caption alignment
-
-The form caption can be aligned to the left, right, or center by using the [CaptionAlign](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2010Form.html#Syncfusion_Windows_Forms_Office2010Form_CaptionAlign) property. The accepted values come from the `System.Windows.Forms.HorizontalAlignment` enumeration (`Left`, `Right`, `Center`); the default is `Left`.
+The Form caption can be aligned to the left, right or center by using the [CaptionAlign](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2010Form.html#Syncfusion_Windows_Forms_Office2010Form_CaptionAlign) property.
 
 {% tabs %}
 
@@ -35,7 +31,7 @@ Me.CaptionAlign = System.Windows.Forms.HorizontalAlignment.Center
 
 ## Caption font
 
-The Office2010Form's caption font can be customized through the [CaptionFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2010Form.html#Syncfusion_Windows_Forms_Office2010Form_CaptionFont) property. Set this property in the form constructor or the `Load` event handler; changing it after the form is shown may not take effect until the form is redrawn.
+The Office2010Form's caption font can be customized through the [CaptionFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2010Form.html#Syncfusion_Windows_Forms_Office2010Form_CaptionFont) property.
 
 {% tabs %}
 
@@ -82,7 +78,7 @@ Me.CaptionForeColor = Color.Pink
 
 ## Caption bar height
 
-The [CaptionBarHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2010Form.html#Syncfusion_Windows_Forms_Office2010Form_CaptionBarHeight) property customizes the height of the caption bar in pixels. The default is the system caption bar height.
+This property helps to customize the CaptionBar height.
 
 {% tabs %}
 
@@ -106,7 +102,7 @@ Me.CaptionBarHeight = 50
 
 ## Help button support
 
-The [HelpButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2010Form.html#Syncfusion_Windows_Forms_Office2010Form_HelpButton) property displays a help button (`?`) in the caption box of the form. The help button is only visible when both `MaximizeBox` and `MinimizeBox` are set to `false`, and `ControlBox` is `true`.
+The [HelpButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Localization.Localizer.EditResourceIdentifiers.LanguageColoringConfigurationDialog.html#Syncfusion_Windows_Forms_Localization_Localizer_EditResourceIdentifiers_LanguageColoringConfigurationDialog_HelpButton) property is used to show the `HelpButton` in the caption box of the form.
 
 {% tabs %}
 
@@ -132,7 +128,7 @@ The [HelpButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.
 
 ## Right-to-left layout
 
-Right-to-left support is enabled by setting the two properties below. Set both before the form is shown so child controls inherit the layout. `RightToLeftLayout` is the Syncfusion property that mirrors the layout of the caption bar, while `RightToLeft` is the base `Control` property that controls text direction.
+Right to left support can be enabled using below properties in Office2010Form.
 
 {% tabs %}
 
@@ -156,7 +152,7 @@ Me.RightToLeft = System.Windows.Forms.RightToLeft.Yes
 
 ## Rounded corners
 
-Rounded corners for the `Office2010Form` can be enabled by setting the [AllowRoundedCorners](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2010Form.html#Syncfusion_Windows_Forms_Office2010Form_AllowRoundedCorners) property to `true`. Rounded corners are only supported on Windows 11 (build 22000 and later); setting the property to `true` on earlier Windows versions is a silent no-op.
+Rounded corners for `Office2010Form` can be enabled by using the [AllowRoundedCorners](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2010Form.html#Syncfusion_Windows_Forms_Office2010Form_AllowRoundedCorners) property. Rounded corners are not supported in OS versions lower than Windows 11. Enabling `AllowRoundedCorners` property will have no effect on those operating systems.
 
 N> When rounded corners are enabled, the border and shadow of the form are drawn by the operating system.
 
@@ -180,7 +176,7 @@ Me.AllowRoundedCorners = true
 
 ## Disabling the Office2010 style
 
-The Office2010 look and feel can be disabled using the [DisableOffice2010Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2010Form.html#Syncfusion_Windows_Forms_Office2010Form_DisableOffice2010Style) property. When set to `true`, the form reverts to the standard Windows Forms appearance; the color scheme, caption font, and other Office2010-specific customizations are not applied.
+Office2010 look and feel can be disabled using `DisableOffice2010Style` property.
 
 {% tabs %}
 
@@ -201,12 +197,3 @@ Me.DisableOffice2010Style = true
 
 
 ![Winforms showing disabledoffice2010style in office2010form](Caption-Settings_images/image1.png)
-
-## Troubleshooting
-
-| Issue | Likely cause | Fix |
-|---|---|---|
-| Form renders with the standard Windows look after changing the inherited class. | The class does not inherit from `Office2010Form`, or `DisableOffice2010Style` is `true`. | Ensure `Form1 : Office2010Form` (or `Inherits Office2010Form` in VB) and that `DisableOffice2010Style` is `false`. |
-| Caption bar changes have no effect. | `ApplyAeroTheme` is `true` on a supported OS, or the form has not been redrawn. | Set `this.ApplyAeroTheme = false;` and call `this.Refresh();`. |
-| Rounded corners are not visible. | The host OS is older than Windows 11. | Upgrade to Windows 11 build 22000 or later; the property is a no-op on older OS versions. |
-| The help button does not appear in the caption. | `MaximizeBox` or `MinimizeBox` is `true`, or `ControlBox` is `false`. | Set `this.MaximizeBox = false; this.MinimizeBox = false; this.ControlBox = true;`. |
