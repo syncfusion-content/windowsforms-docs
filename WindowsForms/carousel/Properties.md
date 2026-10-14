@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Properties in Windows Forms Carousel control | Syncfusion®
 description: Properties in Carousel provide options to customize item layout, rotation behavior, appearance, navigation, and display settings.
@@ -9,6 +9,7 @@ documentation: ug
 
 # Properties in Windows Forms Carousel
 
+The following table lists the properties available in the Carousel control to customize item layout, rotation behavior, appearance, navigation, and display settings.
 
 <table>
 <tr>
