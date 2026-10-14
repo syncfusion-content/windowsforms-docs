@@ -64,7 +64,6 @@ The [ToolTipShowing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Wind
 {% tabs %}
 {% highlight c# %}
 
-// Assumes a Button named cancelButton and an SfToolTip named sfToolTip1 already exist on the form.
 this.sfToolTip1.ToolTipShowing += SfToolTip1_ToolTipShowing;
 private void SfToolTip1_ToolTipShowing(object sender, ToolTipShowingEventArgs e)
 {
@@ -84,7 +83,6 @@ The location of the tooltip to be shown can be customized in the `ToolTipShowing
 {% tabs %}
 {% highlight c# %}
 
-// Assumes an SfToolTip named sfToolTip1 already exists on the form.
 this.sfToolTip1.ToolTipShowing += SfToolTip1_ToolTipShowing;
 private void SfToolTip1_ToolTipShowing(object sender, ToolTipShowingEventArgs e)
 {
@@ -104,7 +102,6 @@ The minimum and maximum width of the tooltip can be changed using the [MinWidth]
 {% tabs %}
 {% highlight c# %}
 
-// Assumes a Button named button1 and an SfToolTip named sfToolTip1 already exist on the form.
 ToolTipInfo toolTipInfo1 = new ToolTipInfo();
 toolTipInfo1.MinWidth = 100;
 toolTipInfo1.MaxWidth = 500;

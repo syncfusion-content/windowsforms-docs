@@ -100,7 +100,6 @@ Shows or hides a separator between the Body and the Footer tooltip items.</td></
 {% tabs %}
 {% highlight c# %}
 
-// Assumes toolTipInfo1 and toolTipInfo2 are already created and associated with controls.
 toolTipInfo1.BackColor = System.Drawing.SystemColors.LightBlue;
 toolTipInfo1.BorderColor = System.Drawing.Color.CadetBlue;
 toolTipInfo1.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -110,7 +109,6 @@ toolTipInfo1.Separator = true;
 
 {% highlight vb %}
 
-' Assumes toolTipInfo1 is already created and associated with a control.
 toolTipInfo1.BackColor = System.Drawing.SystemColors.LightBlue
 toolTipInfo1.BorderColor = System.Drawing.Color.CadetBlue
 toolTipInfo1.ForeColor = System.Drawing.SystemColors.ControlText
@@ -161,7 +159,7 @@ Indicates the time (in milliseconds) before the tooltip is displayed. The defaul
 <tr>
 <td>
 MaxWidth</td><td>
-Sets the maximum width (in pixels) for the tooltip to be displayed. When the text of the tooltip exceeds the max width, the text wraps to the next line.</td></tr>
+Sets the maximum width for the tooltip to be displayed. When the text of the tooltip exceeds the max width, the text wraps to the next line.</td></tr>
 <tr>
 <td>
 ToolTipDuration</td><td>
@@ -183,7 +181,6 @@ Gets or sets the value indicating whether to show or hide the SuperToolTip.</td>
 {% tabs %}
 {% highlight c# %}
 
-// Assumes a SuperToolTip named superToolTip1 and a TreeViewAdv named treeViewAdv1 already exist on the form.
 this.superToolTip1.InitialDelay = 750;
 this.superToolTip1.MaxWidth = 500;
 this.superToolTip1.ToolTipDuration = 3;
@@ -195,7 +192,6 @@ this.treeViewAdv1.ShowToolTip = true;
 
 {% highlight vb %}
 
-// Assumes a SuperToolTip named superToolTip1 already exists on the form.
 Me.superToolTip1.InitialDelay = 750
 Me.superToolTip1.MaxWidth = 500
 Me.superToolTip1.ToolTipDuration = 3
@@ -234,7 +230,7 @@ Me.superToolTip1.Style = Syncfusion.Windows.Forms.Tools.SuperToolTip.SuperToolTi
 
 This section discusses the customization properties for the ToolTipItems.
 
-N> All these properties are applicable to all three ToolTipItems (Header, Body, and Footer).
+N> All these properties are applicable to all three ToolTipItems.
 
 ### Image settings
 
@@ -342,7 +338,7 @@ Sets the location of the text in relation to the image. The options are `ImageBe
 <tr>
 <td>
 TextMargin</td><td>
-Sets the text margin (in pixels) for the tooltip item.</td></tr>
+Sets the text margin for the tooltip item.</td></tr>
 </table>
 
 {% tabs %}

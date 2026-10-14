@@ -126,7 +126,6 @@ The `SfToolTip` can be set to the control with tooltip text by using the [SetToo
 
 {% tabs %}
 {% highlight c# %}
-// Assumes a Button named button1 already exists on the form.
 SfToolTip sfToolTip1 = new SfToolTip();
 sfToolTip1.SetToolTip(this.button1, "The ToolTip information of the Button control.");
 
@@ -142,7 +141,6 @@ The `SfToolTip` can be set to the control with set of tooltip information by usi
 
 {% tabs %}
 {% highlight c# %}
-// Assumes a Button named button1 already exists on the form.
 SfToolTip sfToolTip1 = new SfToolTip();
 ToolTipInfo toolTipInfo1 = new ToolTipInfo();
 ToolTipItem toolTipItem1 = new ToolTipItem();
@@ -226,7 +224,7 @@ The following properties can be used to set the ToolTip delay time:
 
 ### InitialDelay
 
-The [InitialDelay](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.SfToolTip.html#Syncfusion_Windows_Forms_SfToolTip_InitialDelay) property enables you to shorten or lengthen the time (in milliseconds) that the `SfToolTip` waits before displaying a ToolTip. Default value is 0.
+The [InitialDelay](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.SfToolTip.html#Syncfusion_Windows_Forms_SfToolTip_InitialDelay) property enables you to shorten or lengthen the time that the `SfToolTip` waits before displaying a ToolTip. Default value is 0.
 
 {% tabs %}
 {% highlight c# %}
@@ -239,7 +237,7 @@ sfToolTip1.InitialDelay = 1000;
 
 ### AutoPopDelay
 
-The [AutoPopDelay](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.SfToolTip.html#Syncfusion_Windows_Forms_SfToolTip_AutoPopDelay) property enables you to shorten or lengthen the duration (in milliseconds) the tooltip is displayed when the mouse pointer is on a control. Default value is 5000.
+The [AutoPopDelay](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.SfToolTip.html#Syncfusion_Windows_Forms_SfToolTip_AutoPopDelay) property enables you to shorten or lengthen the duration the tooltip is displayed when the mouse pointer is on a control. Default value is 5000.
 
 {% tabs %}
 {% highlight c# %}

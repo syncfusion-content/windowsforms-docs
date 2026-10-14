@@ -17,6 +17,6 @@ The `Office2010Form` is an advanced standard Form that offers a Microsoft Office
 
 * **Caption alignment** - Specifies the alignment of the caption text.
 * **Color schemes** - Supports built-in Office color schemes such as Blue, Black, Silver, and Managed.
-* **Caption bar customization** - Customizes the appearance of the caption bar (font, color, and height).
-* **Right-to-left layout** - Aligns the control elements in a right-to-left layout.
+* **Caption bar customization** - Customizes the appearance of the caption bar.
+* **Right-to-left** - Aligns the control elements in a right-to-left layout.
 

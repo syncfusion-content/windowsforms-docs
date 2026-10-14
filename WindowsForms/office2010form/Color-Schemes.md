@@ -44,7 +44,6 @@ To apply the Managed color scheme `ApplyManagedColors` function from Office2010C
 
 using Syncfusion.Windows.Forms;
 
-// Set the Managed color scheme and apply a custom accent color.
 this.ColorScheme = Office2010Theme.Managed;
 Office2010Colors.ApplyManagedColors(this, Color.DarkMagenta);
 
@@ -54,7 +53,6 @@ Office2010Colors.ApplyManagedColors(this, Color.DarkMagenta);
 
 Imports Syncfusion.Windows.Forms
 
-' Set the Managed color scheme and apply a custom accent color.
 Me.ColorScheme = Office2010Theme.Managed
 Office2010Colors.ApplyManagedColors(Me, Color.DarkMagenta)
 
@@ -66,7 +64,7 @@ Office2010Colors.ApplyManagedColors(Me, Color.DarkMagenta)
 
 ## Background color for the Office2010Form
 
-The background of the Office2010Form (client area) can be set to match the active color scheme. Set the [UseOffice2010SchemeBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2010Form.html#Syncfusion_Windows_Forms_Office2010Form_UseOffice2010SchemeBackColor) property to `true` to make this effective. The `ColorScheme` property must be set before this property takes effect.
+The background of the Office2010Form (client area) can be set to match the active color scheme. Set the [UseOffice2010SchemeBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2010Form.html#Syncfusion_Windows_Forms_Office2010Form_UseOffice2010SchemeBackColor) property to `true` to make this effective.
 
 {% tabs %}
 

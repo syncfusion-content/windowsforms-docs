@@ -11,7 +11,7 @@ documentation: ug
 
 ## ToolTip Control
 
-The border color and thickness of a tooltip can be customized on the `ToolTipInfo` (and therefore on every `SfToolTip` item that uses that `ToolTipInfo`) using the [BorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipInfo.html#Syncfusion_WinForms_Controls_ToolTipInfo_BorderColor) and [BorderThickness](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipInfo.html#Syncfusion_WinForms_Controls_ToolTipInfo_BorderThickness) properties.
+The border color and thickness of a tooltip can be customized on the `ToolTipInfo` using the [BorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipInfo.html#Syncfusion_WinForms_Controls_ToolTipInfo_BorderColor) and [BorderThickness](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipInfo.html#Syncfusion_WinForms_Controls_ToolTipInfo_BorderThickness) properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -100,7 +100,6 @@ The appearance of the `ToolTipItem` can be customized before showing the tooltip
 
 {% tabs %}
 {% highlight c# %}
-// Assumes an SfToolTip named sfToolTip1 already exists on the form.
 this.sfToolTip1.ToolTipShowing += SfToolTip1_ToolTipShowing;
 private void SfToolTip1_ToolTipShowing(object sender, ToolTipShowingEventArgs e)
 {
@@ -268,7 +267,7 @@ Me.sfToolTip1.ThemeName = "Office2016Colorful"
 
 #### Office2016White
 
-The Office2016White theme uses a clean white background and is suited for light UIs.
+The Office2016White theme uses a clean white background.
 
 {% tabs %}
 
@@ -292,7 +291,7 @@ Me.sfToolTip1.ThemeName = "Office2016White"
 
 #### Office2016DarkGray
 
-The Office2016DarkGray theme uses a dark gray background and is suited for dark UIs.
+The Office2016DarkGray theme uses a dark gray background.
 
 {% tabs %}
 
@@ -316,7 +315,7 @@ Me.sfToolTip1.ThemeName = "Office2016DarkGray"
 
 #### Office2016Black
 
-The Office2016Black theme uses a near-black background for high-contrast applications.
+The Office2016Black theme uses a near-black background.
 
 {% tabs %}
 
