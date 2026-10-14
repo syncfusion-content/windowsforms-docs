@@ -1,7 +1,7 @@
-﻿---
+---
 layout: post
 title: Configure Color Schemes in Windows Forms Office2010Form | Syncfusion®
-description: Color schemes support Office-inspired themes, managed colors, Aero theme integration, and background color customization.
+description: Color schemes in the Office2010 Form includes Office-inspired themes, managed colors, Aero theme integration, and background color customization.
 platform: WindowsForms
 control: Office2010 Form
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Configure Color Schemes in Windows Forms Office2010Form
 
-Office2010Form supports following office color schemes which can be edited through `ColorScheme` property.
+The `Office2010Form` supports the following Office color schemes, which can be set through the [ColorScheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2010Form.html#Syncfusion_Windows_Forms_Office2010Form_ColorScheme) property.
 
 * Blue
 * Silver
@@ -20,16 +20,14 @@ Office2010Form supports following office color schemes which can be edited throu
 
 {% highlight C# %}
 
-//To set Blue color scheme.
-
+// Set the Blue color scheme.
 this.ColorScheme = Office2010Theme.Blue;
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-'To set Blue color scheme.
-
+' Set the Blue color scheme.
 Me.ColorScheme = Office2010Theme.Blue
 
 {% endhighlight %}
@@ -37,49 +35,49 @@ Me.ColorScheme = Office2010Theme.Blue
 {% endtabs %}
 
   ![Winforms showing colorscheme blue applied in office2010form](Color-Schemes_images/ColorScheme1.png)
-  
-To apply the Managed color scheme `ApplyManagedColors` function from Office2010Colors is used as in the below code snippet.
+
+To apply the Managed color scheme `ApplyManagedColors` function from Office2010Colors is used as in the below code snippet
 
 {% tabs %}
 
 {% highlight C# %}
 
-//To set Managed color scheme.
+using Syncfusion.Windows.Forms;
 
 this.ColorScheme = Office2010Theme.Managed;
-
 Office2010Colors.ApplyManagedColors(this, Color.DarkMagenta);
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-'To set Managed color scheme.
+Imports Syncfusion.Windows.Forms
 
 Me.ColorScheme = Office2010Theme.Managed
-
-Office2010Colors.ApplyManagedColors(this, Color.DarkMagenta);
+Office2010Colors.ApplyManagedColors(Me, Color.DarkMagenta)
 
 {% endhighlight %}
 
 {% endtabs %}
 
-  ![Winforms showing colorscheme managed applied in office2007form](Color-Schemes_images/ManagedScheme.png)
+  ![Winforms showing colorscheme managed applied in office2010form](Color-Schemes_images/ManagedScheme.png)
 
-## Background color for Office2010 Form
+## Background color for the Office2010Form
 
-The background of the Office2010 Form can be same, as the color scheme applied to the form. `UseOffice2007SchemeBackColor` property has to `true`, to make this effective.
+The background of the Office2010Form (client area) can be set to match the active color scheme. Set the [UseOffice2010SchemeBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2010Form.html#Syncfusion_Windows_Forms_Office2010Form_UseOffice2010SchemeBackColor) property to `true` to make this effective.
 
 {% tabs %}
 
 {% highlight C# %}
 
+// Apply the active color scheme to the form's background.
 this.UseOffice2010SchemeBackColor = true;
 
 {% endhighlight %}
 
 {% highlight VB %}
 
+' Apply the active color scheme to the form's background.
 Me.UseOffice2010SchemeBackColor = True
 
 {% endhighlight %}
@@ -99,17 +97,15 @@ Aero theme support is available for Office2010Form when used on Windows Vista ma
 
 {% highlight C# %}
 
-// Disables Aero Theme on Office2010 Form.
-
+// Disable the Aero Theme on the Office2010Form (default).
 this.ApplyAeroTheme = false;
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-‘Disables Aero Theme on Office2010 Form.
-
-Me.ApplyAeroTheme = false;
+' Disable the Aero Theme on the Office2010Form (default).
+Me.ApplyAeroTheme = false
 
 {% endhighlight %}
 

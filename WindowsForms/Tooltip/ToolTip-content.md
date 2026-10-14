@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: ToolTip Content in Windows Forms Tooltip | Syncfusion®
 description: ToolTip content supports multiple items, images, custom controls, spacing, alignment, and content layout customization.
@@ -77,7 +77,7 @@ toolTipItem1.Style.ImageSize = new Size(100, 100);
 
 ImageList imageList = new ImageList();
 imageList.Images.Add(global::GettingStarted.Properties.Resources.Image1);
-imageList.Images.Add(global::GettingStarted.Properties.Resources.image2);
+imageList.Images.Add(global::GettingStarted.Properties.Resources.Image2);
 
 ToolTipItem toolTipItem2 = new ToolTipItem();
 toolTipItem2.Text = "This image is initialized with ImageList property.";
