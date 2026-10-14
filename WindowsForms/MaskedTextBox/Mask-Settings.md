@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Mask Settings in Windows Forms MaskedTextBox | Syncfusion®
 description: Mask settings in MaskedEditBox define input formats using mask characters, literals, and validation patterns.
@@ -32,9 +32,9 @@ Literal characters give visual cues about the type of data being used. Mask char
 
 (###) - ### #### Extent ####
 
-In the above Mask, all the non # characters are Literal characters and the #’s are Mask characters.
+In the above Mask, all the non # characters are Literal characters and the #'s are Mask characters.
 
-The MaskedEditBox control supports the following masks.
+The MaskedEditBox control supports the following mask characters:
 
 
 
