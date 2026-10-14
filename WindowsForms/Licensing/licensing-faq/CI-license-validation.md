@@ -29,18 +29,10 @@ The following sections show how to validate the Syncfusion license key in CI ser
 * Open the `LicenseKeyValidation.ps1` PowerShell script in a text or code editor, as shown in the example below.
 
 {% tabs %}
-{% highlight powershell tabtitle="v34.1.29 and later" %}
+{% highlight powershell tabtitle="PowerShell" %}
 # Replace the parameters with the desired platform, version, and actual license key.
 
-$result = & $PSScriptRoot"\LicenseKeyValidatorConsole.exe" /platform:"UIComponent" /version:"34.1.29" /licensekey:"Your License Key"
-
-Write-Host $result
-{% endhighlight %}
-
-{% highlight powershell tabtitle="Before v34.1.29" %}
-# Replace the parameters with the desired platform, version, and actual license key.
-
-$result = & $PSScriptRoot"\LicenseKeyValidatorConsole.exe" /platform:"WindowsForms" /version:"26.2.4" /licensekey:"Your License Key"
+$result = & $PSScriptRoot"\LicenseKeyValidatorConsole.exe" /platform:"WindowsForms" /version:"34.1.29" /licensekey:"Your License Key"
 
 Write-Host $result
 {% endhighlight %}
@@ -48,11 +40,11 @@ Write-Host $result
 
 * Update the parameters in the script:
   
-  **Platform:** Set `/platform:"UIComponent"` for v34.1.29 and later, or `/platform:"WindowsForms"` for earlier versions (use the relevant Syncfusion platform as needed).
+  **Platform:** Modify the value for `/platform:` to the actual platform `"WindowsForms"`. 
 
   **Version:** Change the value for `/version:` to the required version (e.g., `"34.1.29"`).
 
-  **License Key:** Replace the value for `/licensekey:` with your actual license key (e.g., `"YOUR LICENSE KEY"`).
+  **License Key:** Replace the value for `/licensekey:` with your actual license key (e.g., `"Your License Key"`).
 
   N> This feature is supported from version 16.2.0.41 of Essential Studio and later.
 
@@ -136,7 +128,7 @@ pipeline {
 
 * Register the license key properly by calling `RegisterLicense("License Key")` with the license key.
 
-* Once the license key is registered, it can be validated by using the `ValidateLicense(Platform.WindowsForms)` method  (or `ValidateLicense(new[] { Platform.UIComponent })` for v34.1.29+). . This ensures that the license key is valid for the platform and version you are using. Refer to the following example.
+* Once the license key is registered, it can be validated by using the `ValidateLicense(Platform.WindowsForms)` method for version prior to v34.1.29, or the `ValidateLicense(new[] { Platform.WindowsForms })` method for v34.1.29 and later. This ensures that the license key is valid for the platform and version you are using. Refer to the following example.
 
 {% tabs %}
 {% highlight c# tabtitle="v34.1.29 and later" %}
@@ -147,7 +139,7 @@ SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
 
 //Validate the registered license key.
 // The array overload allows validating against multiple platforms in a single call.
-bool isValid = SyncfusionLicenseProvider.ValidateLicense(new[] { Platform.UIComponent });
+bool isValid = SyncfusionLicenseProvider.ValidateLicense(new[] { Platform.WindowsForms });
 {% endhighlight %}
 
 {% highlight c# tabtitle="Before v34.1.29" %}
@@ -160,8 +152,6 @@ SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
 bool isValid = SyncfusionLicenseProvider.ValidateLicense(Platform.WindowsForms);
 {% endhighlight %}
 {% endtabs %}
-
-N> Use `Platform.UIComponent` for UI component license validation in v34.1.29 and later. `Platform.WindowsForms` is not supported from v34.1.29 onwards.
 
 * If the `ValidateLicense()` method returns `true`, the registered license key is valid and the build can proceed with deployment.
 * If the `ValidateLicense()` method returns `false`, the deployment will report invalid license errors. This typically means the license key is invalid or the referenced assembly/package version does not match the license key's version. Please ensure that all the referenced Syncfusion assemblies or NuGet packages are on the same version as the license key's version before deployment.
