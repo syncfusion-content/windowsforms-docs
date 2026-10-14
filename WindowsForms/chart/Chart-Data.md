@@ -375,7 +375,7 @@ chartControl.PrimaryXAxis.LabelsImpl = dataLabelsModel
 
 ![Chart Data](Chart-Data_images/chart-data-arraylist.png)
 
-## Data binding in chart through chart wizard
+## Bind a data source to a WinForms chart using the chart wizard
 
 The Chart Wizard allows you to bind a data source to the Windows Forms Chart control and configure the chart at design time.
 
@@ -393,11 +393,11 @@ Follow these steps to add the Chart control and prepare the design-time data sch
 
 ![Chart Binding Source at Design](Chart-Data_images/chart-binding-source-design.png){height:"350", width="350"}
 
-**Step-5:** Open the **Project** menu and select **Add New Item**. In the **Add New Item** dialog, select **DataSet**, name it `DataSet1`, and click **Add**. The DataSet provides the design-time schema required by the Chart Wizard to identify the X and Y fields.
+**Step-5:** Open the **Project** menu and select **Add New Item**. In the **Add New Item** dialog, select **DataSet**, name it `DataSet1.xsd`, and click **Add**. The DataSet provides the design-time schema required by the Chart Wizard to identify the X and Y fields.
 
 ![Chart dataset at Design](Chart-Data_images/chart-dataset-design.png){height:"350", width="350"}
 
-**Step-6:** Open `DataSet1` in the DataSet Designer. Right-click the designer surface, choose **Add**, and select **DataTable**.
+**Step-6:** Open `DataSet1.xsd` in the DataSet Designer. Right-click the designer surface, choose **Add**, and select **DataTable**.
 
 **Step-7:** Right-click the DataTable, choose **Add**, and select **Column**. Create `Month` as a `string` column and `Sales` as an `int` column.
 

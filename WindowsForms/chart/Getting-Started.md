@@ -213,7 +213,7 @@ dataSource.Add(New SalesData("2008", 75))
 
 {% endtabs %}
 
-### Create the data-binding model
+### Create the data binding model
 
 Create a [CategoryAxisDataBindModel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.CategoryAxisDataBindModel.html) using the data source. Use the [CategoryName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.CategoryAxisDataBindModel.html#Syncfusion_Windows_Forms_Chart_CategoryAxisDataBindModel_CategoryName) and [YNames](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.CategoryAxisDataBindModel.html#Syncfusion_Windows_Forms_Chart_CategoryAxisDataBindModel_YNames) properties to map the category and Y-value fields.
 
@@ -286,7 +286,7 @@ chartControl.PrimaryYAxis.Title = "Sales(Millions)"
 
 {% endtabs %}
 
-## Apply a Skin to the chart control
+## Apply a skin to the chart control
 
 To improve the appearance of the chart, apply the **Metro** skin to the [ChartControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html) as follows.
 
