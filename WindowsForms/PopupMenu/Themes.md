@@ -26,7 +26,7 @@ Theming is the process of applying rich look and feel to visual elements of a co
 * VS2010
 
 
-The below code snippet will sets the visual style as "Office2016Black".
+The below code snippet will set the visual style as "Office2016Black".
 
 {% tabs %}
 {% highlight c# %}

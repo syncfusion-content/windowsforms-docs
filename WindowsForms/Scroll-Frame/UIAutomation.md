@@ -65,7 +65,7 @@ Follow the steps to create a `CodedUITest project` and test the `SfScrollFrame` 
 
     ![Winforms showing the uitestbuilder in scrollframe](CodedUI-Automation-Images/UITestBuilder.jpg)
 
-5. You can also open the `CodedUITestBuilder` from the existing Coded UI project by right clicking the `CodedUITestMethod1` in CUIT file and clicking the Generate Code for Coded UI Test. The same CodedUITestBuilder appears in the bottom right corner of the window.
+5. You can also open the `CodedUITestBuilder` from the existing Coded UI project by right-clicking the `CodedUITestMethod1` in the CUIT file and clicking the Generate Code for Coded UI Test. The same CodedUITestBuilder appears in the bottom right corner of the window.
 
     ![Winforms showing the codedui generatemethod in scrollframe](CodedUI-Automation-Images/CodedUI_GenerateMethod.jpg)
 

@@ -11,7 +11,7 @@ documentation: ug
 
 ## Background Color
 
-The [`BackColor`](https://help.syncfusion.com/cr/windowsforms) property is used to set the background color of XPToolBar control. Background color is used to improve the visual appearance of the control.
+The [`BackColor`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar.html) property is used to set the background color of XPToolBar control. Background color is used to improve the visual appearance of the control.
 
 The below code snippet will explain how to set background color of XPToolBar control.
 
@@ -58,17 +58,17 @@ Me.xpToolBar1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
 
 ## Enable/Disable
 
-XPToolBar is enabled by default when they are created. But its visibility can be changed based on user requirement through the [`Enabled`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.enabled?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_Enabled) property. Similarly, we can disable individual bar items by using the [`Enabled`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_Enabled) property of each item.
+XPToolBar is enabled by default when it is created. But its visibility can be changed based on user requirement through the [`Enabled`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.enabled?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_Enabled) property. Similarly, we can disable individual bar items by using the [`Enabled`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_Enabled) property of each item.
 
 
-The below code snippet will explain how to disable XPToolBar.
+The below code snippet will explain how to disable XPToolBar. 
 
 {% tabs %}
 {% highlight c# %}
 
 this.xpToolBar1.Enabled = false;
 this.parentBarItem1.Enabled = false;
-this.barItem4.Enabled = false;
+this.barItem1.Enabled = false;
 
 {% endhighlight %}
 
@@ -76,7 +76,7 @@ this.barItem4.Enabled = false;
 
 Me.xpToolBar1.Enabled = False
 Me.parentBarItem1.Enabled = False
-Me.barItem4.Enabled = False
+Me.barItem1.Enabled = False
 
 {% endhighlight %}
 {% endtabs %}
@@ -87,7 +87,7 @@ Me.barItem4.Enabled = False
 
 ## Font
 
-The [`Font`](https://help.syncfusion.com/cr/windowsforms) property is used to set the "FontFamily", "FontStyle", and "FontSize" of XPToolBar control.
+The [`Font`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar.html) property is used to set the "FontFamily", "FontStyle", and "FontSize" of XPToolBar control.
 
 
 The below code snippet will explain the procedure to set font for toolbar.

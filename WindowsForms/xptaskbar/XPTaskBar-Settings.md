@@ -58,7 +58,7 @@ Me.xpTaskBar1.VerticalLayout = True
 
 Vertical scrollbar will be automatically added to the XPTaskBar when the TaskBar Boxes are placed outside the TaskBar's client area, provided the XPTaskBar is in the Vertical Layout mode.
 
-In the Horizontal Layout mode, the horizontal scrollbar appears on setting the [ColWidthOnHorizontalLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBar.html#Syncfusion_Windows_Forms_Tools_XPTaskBar_ColWidthOnHorizontalAlignment) property to large values.
+In the Horizontal Layout mode, the horizontal scrollbar appears on setting the [ColWidthOnHorizontalAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBar.html#Syncfusion_Windows_Forms_Tools_XPTaskBar_ColWidthOnHorizontalAlignment) property to large values.
 
 * [AutoScroll](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.scrollablecontrol.autoscroll?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ScrollableControl_AutoScroll)
 * [AutoScrollMargin](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.scrollablecontrol.autoscrollmargin?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ScrollableControl_AutoScrollMargin)

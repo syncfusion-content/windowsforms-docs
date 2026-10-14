@@ -13,7 +13,8 @@ The bar items can be selected through keyboard operation by specifying the short
 
 >**NOTE**      
 1. By using this keyboard shortcuts, we can access the bar items functionality through [`Click`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html) event.               
-2. In this illustration, we have used **BarItem**. Similarly, we have set the shortcuts for ParentBarItem, DropDownBarItem, ComboBoxBarItem, ListBarItem, StaticBarItem, ToolbarListBarItem and TextBoxBarItem.
+2. In this illustration, we have used **BarItem**. Similarly, we have set the shortcuts for ParentBarItem, DropDownBarItem, ComboBoxBarItem, ListBarItem, StaticBarItem, ToolbarListBarItem and TextBoxBarItem.               
+3. The keyboard shortcuts are processed when the focus is on the form or its bar items.
 
 
 The below code snippet shows how shortcut is assigned to the bar item.

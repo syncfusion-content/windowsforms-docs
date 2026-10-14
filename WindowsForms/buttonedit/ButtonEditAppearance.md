@@ -3,7 +3,7 @@ layout: post
 title: Appearance in Windows Forms ButtonEdit | Syncfusion®
 description: ButtonEdit Appearance supports customizing styles, colors, borders, sizing, themes, and text presentation for ButtonEdit controls.
 platform: windowsforms
-control: Tools
+control: ButtonEdit
 documentation: ug
 ---
 
@@ -11,15 +11,9 @@ documentation: ug
 
 A [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control is a combination of controls with textbox and buttons. The ButtonEdit control supports properties which controls the appearance and behavior of the control.
 
-{% seealso %}
-
-[TextBox Settings for ButtonEdit](/windowsforms/buttonedit/textboxsettingsforbuttonedit), [Child Button Customization](http://help.syncfusion.com/windowsforms/buttonedit/textboxsettingsforbuttonedit)
-
-{% endseealso %}
-
 ## Style Settings
 
-The ButtonEdit control can be customized by following ways,
+The ButtonEdit control can be customized in the following ways,
 
 1. Button Styles.
 2. Custom Colors for ButtonEdit.
@@ -84,7 +78,7 @@ Me.buttonEdit.ButtonStyle = Syncfusion.Windows.Forms.ButtonAppearance.Office2016
 
 ![ButtonStyle for ButtonEdit](Overview_images/Office2016.jpeg)
 
-N> [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control also supports all the three windows color themes, i.e., Blue, Silver and Oliver themes. We need to change the Windows theme color in desktop properties for this.
+N> [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control also supports all three Windows color themes, i.e., Blue, Silver and Olive themes. We need to change the Windows theme color in desktop properties for this.
 
 ### Custom Colors for ButtonEdit
 
@@ -161,15 +155,15 @@ this.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 {% highlight vb %}
 
 Me.buttonEdit.UseVisualStyle = False
-Me.buttonEdit.FlatBorderColor = System.Drawing.Color.Red;
-Me.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+Me.buttonEdit.FlatBorderColor = System.Drawing.Color.Red
+Me.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
 
 {% endhighlight %}
 {% endtabs %}
 
 ![BorderStyle for ButtonEdit](Overview_images/Overview_img89.jpeg) 
 
-N> The Border styles of the child buttons can be controlled using [ButtonEditChildButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEditChildButton.html) [BorderStyleAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ButtonAdv.html#Syncfusion_Windows_Forms_ButtonAdv_BorderStyleAdv) property. SeeSee Button Types and Border Styles topic for details.
+N> The Border styles of the child buttons can be controlled using the [ButtonEditChildButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEditChildButton.html) [BorderStyleAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ButtonAdv.html#Syncfusion_Windows_Forms_ButtonAdv_BorderStyleAdv) property. See the Button Types and Border Styles topic for details.
 
 ## Size Settings
 
@@ -216,13 +210,13 @@ N> Foreground settings for the [ButtonEditChildButton](https://help.syncfusion.c
 
 ## Case Settings
 
-Using [CharacterCasing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html#Syncfusion_Windows_Forms_Tools_ButtonEdit_CharacterCasing) property of [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html), we can specify whether the case of the character can be modified as they are typed. The options are Upper, Lower and Normal.
+Using [CharacterCasing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html#Syncfusion_Windows_Forms_Tools_ButtonEdit_CharacterCasing) property of [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html), we can specify whether the case of the characters can be modified as they are typed. The options are Upper, Lower and Normal.
 
 {% tabs %}
 {% highlight c# %}
 
-buttonEdit.Text = "ButtonEdit1";
-buttonEdit.CharacterCasing = CharacterCasing.Lower;
+this.buttonEdit.Text = "ButtonEdit1";
+this.buttonEdit.CharacterCasing = CharacterCasing.Lower;
 
 {% endhighlight %}
 
@@ -240,6 +234,6 @@ N> This case setting can be overridden by TextBox.CharacterCasing property.
 
 {% seealso %}
 
-[TextBox Settings for ButtonEdit](/windowsforms/buttonedit/textboxsettingsforbuttonedit), [Child Button Customization](http://help.syncfusion.com/windowsforms/buttonedit/textboxsettingsforbuttonedit)
+[TextBox Settings for ButtonEdit](http://help.syncfusion.com/windowsforms/buttonedit/textboxsettingsforbuttonedit), [Child Button Customization](https://help.syncfusion.com/windowsforms/buttonedit/childbuttoncustomization)
 
 {% endseealso %}
