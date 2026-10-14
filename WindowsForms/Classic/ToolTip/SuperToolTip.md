@@ -17,7 +17,7 @@ In Office 2007, Microsoft introduced a SuperToolTip control to display enhanced 
 * **Body** - The description part of the tooltip.
 * **Footer** - Use the footer for additional information.
 
-### Creating SuperToolTip through designer
+## Creating SuperToolTip through designer
 
 1. Drag and drop the SuperToolTip on your form.
 2. When the SuperToolTip component is added to a form, an extended property will be added to the properties of every item in the tool strip or tab item in the RibbonControlAdv.
