@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Interactive Features in Windows Forms GroupView | Syncfusion®
 description: Interactive features support button-view selection, selection highlighting, tooltips, and enhanced user interaction behaviors.
@@ -41,7 +41,7 @@ Me.groupView1.ClipSelectionBounds = True
  
 ## ToolTips
 
-The [ToolTipText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupViewItem.html#Syncfusion_Windows_Forms_Tools_GroupViewItem_ToolTipText) property of the GroupView control can be used to set the text of the tooltip. The [ShowToolTips](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_ShowToolTips) property must be set to `true` in order to make the tooltip visible.
+The [ToolTipText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupViewItem.html#Syncfusion_Windows_Forms_Tools_GroupViewItem_ToolTipText) property of the GroupView Item can be used to set the text of the tooltip. The [ShowToolTips](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_ShowToolTips) property must be set to `true` in order to make the tooltip visible.
 
 {% tabs %}
 

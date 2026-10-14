@@ -15,7 +15,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
  
 You can find more details about installing the NuGet package in a Windows Forms application in the following link: 
  
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
+[How to install NuGet packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
 
 ## Create a simple application with GroupBar
 
@@ -78,14 +78,14 @@ GroupBarItem groupBarItem0 = new GroupBarItem();
 GroupBarItem groupBarItem1 = new GroupBarItem();
 GroupBarItem groupBarItem2 = new GroupBarItem();
 
-this.groupBarItem0.Text = "Windows Forms";
-this.groupBarItem1.Text = "Component";
-this.groupBarItem2.Text = "General";
+groupBarItem0.Text = "Windows Forms";
+groupBarItem1.Text = "Component";
+groupBarItem2.Text = "General";
 
 this.groupBar1.GroupBarItems.AddRange(new GroupBarItem[] {
-this.groupBarItem0,
-this.groupBarItem1,
-this.groupBarItem2});
+groupBarItem0,
+groupBarItem1,
+groupBarItem2});
 
 {% endhighlight %}
 {% highlight VB %}
@@ -93,14 +93,14 @@ Dim groupBarItem0 As GroupBarItem = New GroupBarItem()
 Dim groupBarItem1 As GroupBarItem = New GroupBarItem()
 Dim groupBarItem2 As GroupBarItem = New GroupBarItem()
 
-Me.groupBarItem0.Text = "Windows Forms"
-Me.groupBarItem1.Text = "Component"
-Me.groupBarItem2.Text = "General"
+groupBarItem0.Text = "Windows Forms"
+groupBarItem1.Text = "Component"
+groupBarItem2.Text = "General"
 
-Me.groupBar1.GroupBarItems.AddRange(New GroupBarItem[] {
-            Me.groupBarItem0,
-            Me.groupBarItem1,
-            Me.groupBarItem2})
+Me.groupBar1.GroupBarItems.AddRange(New GroupBarItem() {
+            groupBarItem0,
+            groupBarItem1,
+            groupBarItem2})
 {% endhighlight %}
 {% endtabs %}
 
@@ -122,8 +122,8 @@ this.groupBarItem1.Text = "Component";
 this.groupBarItem2.Text = "General";
 
 GroupView groupView0 = new GroupView();
-this.groupView0.Name = "Windows Forms";
-this.groupView0.GroupViewItems.AddRange(new GroupViewItem[] 
+groupView0.Name = "Windows Forms";
+groupView0.GroupViewItems.AddRange(new GroupViewItem[] 
 {
     new GroupViewItem("Grid", 11, true, null, "Grid"),
     new GroupViewItem("Data Visualization", 11, true, null, "FileSystemWatcher"),
@@ -134,8 +134,8 @@ this.groupView0.GroupViewItems.AddRange(new GroupViewItem[]
 });
 
 GroupView groupView1 = new GroupView();
-this.groupView1.Name = "Component";
-this.groupView1.GroupViewItems.AddRange(new GroupViewItem[] 
+groupView1.Name = "Component";
+groupView1.GroupViewItems.AddRange(new GroupViewItem[] 
 {
     new GroupViewItem("Pointer", 11, true, null, "Pointer"),
     new GroupViewItem("FileSystemWatcher", 22, true, null, "FileSystemWatcher"),
@@ -146,8 +146,8 @@ this.groupView1.GroupViewItems.AddRange(new GroupViewItem[]
 });
 
 GroupView groupView2 = new GroupView();
-this.groupView2.Name = "General";
-this.groupView2.GroupViewItems.AddRange(new GroupViewItem[] 
+groupView2.Name = "General";
+groupView2.GroupViewItems.AddRange(new GroupViewItem[] 
 {
     new GroupViewItem("Pointer", 11, true, null, "Pointer"),
     new GroupViewItem("Label", 12, true, null, "Label"),
@@ -159,18 +159,18 @@ this.groupView2.GroupViewItems.AddRange(new GroupViewItem[]
     new GroupViewItem("RadioButton", 18, true, null, "RadioButton")
 });
 
-this.groupBarItem0.Client = this.groupView0;
-this.groupBarItem1.Client = this.groupView1;
-this.groupBarItem2.Client = this.groupView2;
+groupBarItem0.Client = groupView0;
+groupBarItem1.Client = groupView1;
+groupBarItem2.Client = groupView2;
 
-this.groupBar1.Controls.Add(this.groupView0);
-this.groupBar1.Controls.Add(this.groupView1);
-this.groupBar1.Controls.Add(this.groupView2);
+this.groupBar1.Controls.Add(groupView0);
+this.groupBar1.Controls.Add(groupView1);
+this.groupBar1.Controls.Add(groupView2);
 
 this.groupBar1.GroupBarItems.AddRange(new GroupBarItem[] {
-this.groupBarItem0,
-this.groupBarItem1,
-this.groupBarItem2});
+groupBarItem0,
+groupBarItem1,
+groupBarItem2});
 
 {% endhighlight %}
 {% highlight VB %}
@@ -183,8 +183,8 @@ Me.groupBarItem1.Text = "Component"
 Me.groupBarItem2.Text = "General"
 
 Dim groupView0 As GroupView = New GroupView()
-Me.groupView0.Name = "Windows Forms"
-Me.groupView0.GroupViewItems.AddRange(New GroupViewItem[] 
+groupView0.Name = "Windows Forms"
+groupView0.GroupViewItems.AddRange(New GroupViewItem() 
 {
     New GroupViewItem("Grid", 11, true, null, "Grid"),
     New GroupViewItem("Data Visualization", 11, true, null, "FileSystemWatcher"),
@@ -195,8 +195,8 @@ Me.groupView0.GroupViewItems.AddRange(New GroupViewItem[]
 })
 
 Dim groupView1 As GroupView = New GroupView()
-Me.groupView1.Name = "Component"
-Me.groupView1.GroupViewItems.AddRange(New GroupViewItem[] 
+groupView1.Name = "Component"
+groupView1.GroupViewItems.AddRange(New GroupViewItem() 
 {
     New GroupViewItem("Pointer", 11, true, null, "Pointer"),
     New GroupViewItem("FileSystemWatcher", 22, true, null, "FileSystemWatcher"),
@@ -207,8 +207,8 @@ Me.groupView1.GroupViewItems.AddRange(New GroupViewItem[]
 })
 
 Dim groupView2 As GroupView = New GroupView()
-Me.groupView2.Name = "General"
-Me.groupView2.GroupViewItems.AddRange(New GroupViewItem[] 
+groupView2.Name = "General"
+groupView2.GroupViewItems.AddRange(New GroupViewItem() 
 {
     New GroupViewItem("Pointer", 11, true, null, "Pointer"),
     New GroupViewItem("Label", 12, true, null, "Label"),
@@ -220,18 +220,18 @@ Me.groupView2.GroupViewItems.AddRange(New GroupViewItem[]
     New GroupViewItem("RadioButton", 18, true, null, "RadioButton")
 })
 
-Me.groupBarItem0.Client = Me.groupView0
-Me.groupBarItem1.Client = Me.groupView1
-Me.groupBarItem2.Client = Me.groupView2
+groupBarItem0.Client = groupView0
+groupBarItem1.Client = groupView1
+groupBarItem2.Client = groupView2
 
-Me.groupBar1.Controls.Add(Me.groupView0)
-Me.groupBar1.Controls.Add(Me.groupView1)
-Me.groupBar1.Controls.Add(Me.groupView2)
+Me.groupBar1.Controls.Add(groupView0)
+Me.groupBar1.Controls.Add(groupView1)
+Me.groupBar1.Controls.Add(groupView2)
 
 Me.groupBar1.GroupBarItems.AddRange(new GroupBarItem[] {
-            Me.groupBarItem0,
-            Me.groupBarItem1,
-            Me.groupBarItem2})
+            groupBarItem0,
+            groupBarItem1,
+            groupBarItem2})
 
 {% endhighlight %}
 {% endtabs %}
