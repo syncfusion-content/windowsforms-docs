@@ -48,7 +48,7 @@ Me.groupView1.Style = Syncfusion.Windows.Forms.Appearance.Default
 
 {% endtabs %}
 
-![List of items in GroupView](Overview_images/Overview_img1.png)
+![List of items in GroupView](Style_images/windowsforms_groupview_style_default.png)
 
 ## Metro
 
@@ -70,7 +70,7 @@ Me.groupView1.Style = Syncfusion.Windows.Forms.Appearance.Metro
 
 {% endtabs %}
 
-![Metro style GroupView](Overview_images/Overview_img2.png)
+![Metro style GroupView](Style_images/windowsforms_groupview_style_metro.png)
 
 ## Office2016Colorful
 
@@ -98,7 +98,7 @@ Me.groupView1.Office2016ColorScheme = GroupViewOffice2016ColorScheme.Colorful
 
 {% endtabs %}
 
-![Office2016 Colorful theme GroupView](Overview_images/Overview_img4.png)
+![Office2016 Colorful theme GroupView](Style_images/windowsforms_groupview_style_office2016Colorful.png)
 
 ## Office2016White
 
@@ -126,7 +126,7 @@ Me.groupView1.Office2016ColorScheme = GroupViewOffice2016ColorScheme.White
 
 {% endtabs %}
 
-![Office2016 White theme GroupView](Overview_images/Overview_img3.png)
+![Office2016 White theme GroupView](Style_images/windowsforms_groupview_style_office2016White.png)
 
 ## Office2016DarkGray
 
@@ -154,7 +154,7 @@ Me.groupView1.Office2016ColorScheme = GroupViewOffice2016ColorScheme.DarkGray
 
 {% endtabs %}
 
-![Office2016 DarkGray theme GroupView](Overview_images/Overview_img5.png)
+![Office2016 DarkGray theme GroupView](Style_images/windowsforms_groupview_style_office2016DarkGray.png)
 
 ## Office2016Black
 
@@ -182,4 +182,4 @@ Me.groupView1.Office2016ColorScheme = GroupViewOffice2016ColorScheme.Black
 
 {% endtabs %}
 
-![Office2016 Black theme GroupView](Overview_images/Overview_img6.png)
+![Office2016 Black theme GroupView](Style_images/windowsforms_groupview_style_office2016Black.png)
