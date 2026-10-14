@@ -16,7 +16,7 @@ Office2007Form supports the following Office color schemes, which can be edited 
 * Black
 * Managed
 
-![WinForms Office2007Form overview showing the color scheme options](Color-Schemes_images/Color-Schemes_img1.png)
+![WinForms Office2007Form with color scheme applied](Color-Schemes_images/Color-Schemes_img1.png)
 
 {% tabs %}
 
@@ -90,7 +90,7 @@ Me.UseOffice2007SchemeBackColor = True
 
 {% endtabs %}
 
-![WinForms Office2007Form with the Office 2007 scheme color applied to the form background](Color-Schemes_images/Color-Schemes_img3.png)
+![WinForms Office2007Form with the Office2007 color scheme applied](Color-Schemes_images/Color-Schemes_img3.png)
 
 ## Applying color schemes
 
