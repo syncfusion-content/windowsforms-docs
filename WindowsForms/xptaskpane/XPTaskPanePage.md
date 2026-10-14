@@ -29,7 +29,7 @@ Sets the title text for the Task page.</td></tr>
 <tr>
 <td>
 SelectedPage</td><td>
-Specifies the selected Task page. This is a property of the XPTaskPane control.</td></tr>
+Specifies the selected Task page.</td></tr>
 <tr>
 <td>
 LayoutName</td><td>
