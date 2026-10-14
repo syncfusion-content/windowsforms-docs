@@ -74,11 +74,11 @@ Character placeholder. Valid values for this placeholder are ANSI characters in 
 <tr>
 <td>
 ></td><td>
-Convert all the characters that follow to uppercase until the next case-conversion symbol or end of mask.</td></tr>
+Convert all the characters that follow to uppercase.</td></tr>
 <tr>
 <td>
 <</td><td>
-Convert all the characters that follow to lowercase until the next case-conversion symbol or end of mask.</td></tr>
+Convert all the characters that follow to lowercase.</td></tr>
 <tr>
 <td>
 A</td><td>

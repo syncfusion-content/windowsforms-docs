@@ -8,7 +8,7 @@ documentation: ug
 --- 
 # Applying Themes in Windows Forms MaskedTextBox (MaskedEditBox)
 
-Themes can be applied to the MaskedEditBox control using the property given below. The default value of `ThemesEnabled` is `false`.
+Themes can be applied to the MaskedEditBox control using the property given below.
 
 <table>
 <tr>

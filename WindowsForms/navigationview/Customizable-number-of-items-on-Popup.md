@@ -11,12 +11,6 @@ documentation: ug
 
 NavigationView allows setting the maximum number of items to be displayed on its pop-up and provides an option to cancel the pop-up. The [BarPopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationView.html) event can be used to achieve this.
 
-The `BarPopupEventArgs` provides the following members:
-
-* **CurrentBar** - Gets the Bar for which the pop-up is being displayed.
-* **Cancel** - Gets or sets a value indicating whether the pop-up should be cancel.
-* **MaximumItemsToDisplay** - Gets or sets the maximum number of items to display in the pop-up.
-
 {% tabs %}
 
 {% highlight C# %}

@@ -18,16 +18,9 @@ You can find more details about installing the NuGet packages in a Windows Forms
  
 [How to install NuGet packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
 
-To generate the license validated application, refer to the [licensing](https://help.syncfusion.com/windowsforms/licensing/overview) documentation.
-
 ## Create a simple application with NavigationDrawer
 
-This walkthrough creates a Windows Forms application that contains the [NavigationDrawer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html) control. The following sections walk through the steps:
-
-1. [Create a project](#create-a-project)
-2. [Adding control via designer](#adding-control-via-designer)
-3. [Adding control manually in C#](#adding-control-manually-in-c)
-4. [Sidebar placement](#sidebar-placement)
+This walkthrough creates a Windows Forms application that contains the [NavigationDrawer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html) control.
 
 ## Create a project
 
@@ -48,7 +41,7 @@ The `NavigationDrawer` control can be added to an application by dragging it fro
 
 **Add items to NavigationDrawer**
 
-The header and menu items can be added to the drawer using the [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_Items) collection in the smart tags of the NavigationDrawer. Click the **Items** ellipsis in the smart tag to open the collection editor, where you can add `DrawerHeader` and `DrawerMenuItem` instances and set their properties.
+The header and menu items can be added to the drawer using the [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_Items) collection in the smart tags of the NavigationDrawer.
 
 ![wf navigation drawer items added by designer](Getting-Started_images/wf-navigation-drawer-control-items-added-by-designer.png)
 
@@ -65,7 +58,7 @@ To add the control manually in C#, follow the given steps:
     * Syncfusion.Tools.Base.dll
     * Syncfusion.Tools.Windows.dll
 
-2. Include the **Syncfusion.Windows.Forms.Tools** namespace. The `System.Drawing` namespace is also required for the image, text alignment, and text-image-relation samples below.
+2. Include the **Syncfusion.Windows.Forms.Tools** namespace.
 
 {% capture codesnippet1 %}​
 {% tabs %}
@@ -115,7 +108,7 @@ Me.navigationDrawer1.DrawerHeight = Me.Height
 
 5. Add header to the NavigationDrawer.
 
- Create a [DrawerHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawerHeader.html) instance, and add it to the [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_Items) collection in NavigationDrawer. The `DrawerWidth` and `DrawerHeight` properties are measured in pixels.
+ Create a [DrawerHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawerHeader.html) instance, and add it to the [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_Items) collection in NavigationDrawer.
 
 {% capture codesnippet4 %}​
 {% tabs %}
@@ -217,9 +210,6 @@ Me.navigationDrawer1.Position = SlidePosition.Left
 
 The `NavigationDrawer` allows setting an image to each menu item using the [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawerMenuItem.html#Syncfusion_Windows_Forms_Tools_DrawerMenuItem_Image) property.
 
->**NOTE**:
-The image file used in the example must be available at the specified relative path. Alternatively, add the image to project resources and load it via `Properties.Resources.Audit_WF` for a more reliable approach.
-
 {% tabs %}
 {% highlight C# %}
 //Setting image to the menu item 
@@ -235,7 +225,7 @@ Me.drawerMenuItem1.Image = Image.FromFile(@"../../Audit-WF.png")
 
 ## Positioning Text and Image
 
-The text and image positions can be adjusted for the menu items using the [TextAlign](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawerMenuItem.html#Syncfusion_Windows_Forms_Tools_DrawerMenuItem_TextAlign) and [TextImageRelation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawerMenuItem.html#Syncfusion_Windows_Forms_Tools_DrawerMenuItem_TextImageRelation) property. `TextAlignment` and `TextImageRelation` are types in the `System.Windows.Forms` namespace.
+The text and image positions can be adjusted for the menu items using the [TextAlign](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawerMenuItem.html#Syncfusion_Windows_Forms_Tools_DrawerMenuItem_TextAlign) and [TextImageRelation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawerMenuItem.html#Syncfusion_Windows_Forms_Tools_DrawerMenuItem_TextImageRelation) property.
 
 {% tabs %}
 {% highlight C# %}

@@ -11,9 +11,6 @@ documentation: ug
 
 The four events implemented in the transition of the NavigationDrawer are listed below.
 
->**NOTE**:
-The event examples below assume the `navigationDrawer1` instance is created as shown in the [Getting Started](https://help.syncfusion.com/windowsforms/navigation-drawer/getting-started) documentation. The `OpeningEventHandler`/`OpeningEventArgs`/`ClosingEventHandler` types are in the `Syncfusion.Windows.Forms.Tools` namespace, and `CancelEventArgs` is in `System.ComponentModel`.
-
 * [Opening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_Opening)
 * [Closing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_Closing)
 * [Opened](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_Opened)
@@ -53,7 +50,7 @@ Public event OpeningEventHandler Opening
 
 'Hooking the Opening event.
 
-AddHandler navigationDrawer1.Opening, AddressOf navigationDrawer1_Opening
+navigationDrawer1.Opening += New OpeningEventHandler(navigationDrawer1_Opening)
 
 Public Sub navigationDrawer1_Opening(ByVal sender As Object, ByVal e As OpeningEventArgs)
 
@@ -67,7 +64,7 @@ End Sub
 
 ## Closing
 
-The [Closing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_Closing) event occurs when the collapse transition begins. The handler can cancel the transition by setting `e.Cancel = true`.
+The [Closing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_Closing) event occurs when the collapse transition begins.
 
 {% tabs %}
 
@@ -99,7 +96,7 @@ Public event ClosingEventHandler Closing
 
 'Hooking the Closing event.
 
-AddHandler navigationDrawer1.Closing, AddressOf navigationDrawer1_Closing
+navigationDrawer1.Closing += New ClosingEventHandler(navigationDrawer1_Closing)
 
 Private Sub navigationDrawer1_Closing(ByVal sender As Object, ByVal e As CancelEventArgs)
 
@@ -146,7 +143,7 @@ Public event OpenedEventHandler Opened
 
 'Hooking the Opened event.
 
-AddHandler navigationDrawer1.Opened, AddressOf navigationDrawer1_Opened
+navigationDrawer1.Opened += New OpenedEventHandler(navigationDrawer1_Opened)
 
 Private Sub navigationDrawer1_Opened(ByVal sender As Object, ByVal e As EventArgs)
 
@@ -192,7 +189,7 @@ Public event ClosedEventHandler Closed
 
 'Hooking the Closed event.
 
-AddHandler navigationDrawer1.Closed, AddressOf navigationDrawer1_Closed
+navigationDrawer1.Closed += New ClosedEventHandler(navigationDrawer1_Closed)
 
 Private Sub navigationDrawer1_Closed(ByVal sender As Object, ByVal e As EventArgs)
 

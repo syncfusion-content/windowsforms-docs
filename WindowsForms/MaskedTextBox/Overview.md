@@ -20,23 +20,8 @@ The MaskedEditBox control exhibits similar properties to [CurrencyTextBox](https
 
 ## Key Features
 
-* **Mode** - Provides support for a different set of modes. The modes are ClipMode, InputMode, and UsageMode. For more details, refer to the [Mode Settings](https://help.syncfusion.com/windowsforms/maskedtextbox/mode-settings) documentation.
+* **Mode** - Provides support for a different set of modes. The modes are ClipMode, InputMode, and UsageMode.
 
-* **Separator** - Provides a set of separators for the control. The separators are DateSeparator, DecimalSeparator, ThousandSeparator, and TimeSeparator. For more details, refer to the [Display Settings](https://help.syncfusion.com/windowsforms/maskedtextbox/display-settings) documentation.
+* **Separator** - Provides a set of separators for the control. The separators are DateSeparator, DecimalSeparator, ThousandSeparator, and TimeSeparator.
 
 * **DataGroups** - Provides options to set the alignment and split the text.
-
-## See also
-
-* [Getting Started](https://help.syncfusion.com/windowsforms/maskedtextbox/getting-started)
-* [Mask Settings](https://help.syncfusion.com/windowsforms/maskedtextbox/mask-settings)
-* [Behavior Settings](https://help.syncfusion.com/windowsforms/maskedtextbox/behavior-settings)
-* [Value Settings](https://help.syncfusion.com/windowsforms/maskedtextbox/value-settings)
-* [Display Settings](https://help.syncfusion.com/windowsforms/maskedtextbox/display-settings)
-* [Culture Settings](https://help.syncfusion.com/windowsforms/maskedtextbox/culture-settings)
-* [Border Settings](https://help.syncfusion.com/windowsforms/maskedtextbox/border-settings)
-* [Layout Settings](https://help.syncfusion.com/windowsforms/maskedtextbox/layout-settings)
-* [Text Settings](https://help.syncfusion.com/windowsforms/maskedtextbox/text-settings)
-* [Appearance Settings](https://help.syncfusion.com/windowsforms/maskedtextbox/appearance-settings)
-* [Applying Themes](https://help.syncfusion.com/windowsforms/maskedtextbox/applying-themes)
-* [Events](https://help.syncfusion.com/windowsforms/maskedtextbox/maskededitbox-events)

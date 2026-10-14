@@ -21,9 +21,6 @@ Each folder that is navigated through, is shown in the Address Bar, separated by
 
 NavigationView control provides support for adding images to both Parent Bars and Child Bars. It displays the image of the Selected Bar to the left of the control.
 
->**NOTE**:
-The example below uses `navigationView4`, `root`, `ChildBar1`, and `ChildBar2` instances that are created and added to the `NavigationView` as shown in the [Create NavigationView](https://help.syncfusion.com/windowsforms/navigationview/creating-navigationview) documentation. The `imageList1` refers to a `System.Windows.Forms.ImageList` instance added to the form and populated with the desired images.
-
 {% tabs %}
 
 {% highlight C# %}
@@ -81,9 +78,6 @@ You can add one or more custom buttons to the NavigationView through designer an
 
 
 * Adding Custom Button Through Code
-
->**NOTE**:
-The `Search.gif` image used below must be available at the specified relative path. Alternatively, add the image to project resources and load it using `Properties.Resources.Search` for a more reliable approach.
 
 {% tabs %}
 
