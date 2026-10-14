@@ -1,7 +1,7 @@
-﻿---
+---
 layout: post
 title: Office2007Form Customization in Windows Forms | Syncfusion®
-description: Customization options include caption alignment, fonts, colors, help button support, RTL layouts, and rounded corners.
+description: Customization options in the Office2007 Form include caption alignment, fonts, colors, help button support, RTL layouts, and rounded corners.
 platform: WindowsForms
 control: Office2007 Form
 documentation: ug
@@ -13,43 +13,43 @@ The Form caption can be aligned to the left, right or center by using the [Capti
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.CaptionAlign = System.Windows.Forms.HorizontalAlignment.Center;
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vb %}
 
-Me.CaptionAlign = System.Windows.Forms.HorizontalAlignment.Center 
+Me.CaptionAlign = System.Windows.Forms.HorizontalAlignment.Center
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Winforms showing caption alignment applied in office2007form](Caption-Settings_images/CaptionAlignment.png)
+![WinForms Office2007Form with center caption alignment applied](Caption-Settings_images/CaptionAlignment.png)
 
 ## Caption font
 
-Office2010Form's caption Font can be customized through [CaptionFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Form.html#Syncfusion_Windows_Forms_Office2007Form_CaptionFont) property.
+The Office2007Form's caption font can be customized through the [CaptionFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Form.html#Syncfusion_Windows_Forms_Office2007Form_CaptionFont) property.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.CaptionFont = new System.Drawing.Font("Comic Sans MS", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vb %}
 
-Me.CaptionFont = New System.Drawing.Font("Comic Sans MS", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CByte((0))) 
+Me.CaptionFont = New System.Drawing.Font("Comic Sans MS", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CByte(0))
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Winforms showing caption font applied in office2007form](Caption-Settings_images/CaptionFont.png)
+![WinForms Office2007Form with a custom font applied](Caption-Settings_images/CaptionFont.png)
 
 
 ## Caption fore color
@@ -58,7 +58,7 @@ The color of the caption text can be customized using the [CaptionForeColor](htt
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 // Applies the color to caption text.
 
@@ -66,9 +66,9 @@ this.CaptionForeColor = Color.Pink;
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vb %}
 
-‘Applies the color to caption text.
+' Applies the color to caption text.
 
 Me.CaptionForeColor = Color.Pink
 
@@ -76,47 +76,47 @@ Me.CaptionForeColor = Color.Pink
 
 {% endtabs %}
 
-![Winforms showing caption font color applied in office2007form](Caption-Settings_images/CaptionForeColor.png)
+![WinForms Office2007Form with pink caption text color applied](Caption-Settings_images/CaptionForeColor.png)
 
 ## Caption bar height
 
-This property helps to customize the CaptionBar height.
+The [CaptionBarHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Form.html#Syncfusion_Windows_Forms_Office2007Form_CaptionBarHeight) property customizes the caption bar height.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.CaptionBarHeight = 50;
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vb %}
 
-Me. CaptionBarHeight = 50
+Me.CaptionBarHeight = 50
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Winforms showing caption bar height applied in office2007form](Caption-Settings_images/CaptionBarHeight.png)
+![WinForms Office2007Form with caption bar height applied](Caption-Settings_images/CaptionBarHeight.png)
 
 
 ### Retain the caption bar height on maximized mode
 
-By Default, the height of the caption bar will be reduced when the form is in maximized state. It can be retained same in both normal and maximized state by setting the property [Office2007Form.CaptionBarHeightMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Form.html#Syncfusion_Windows_Forms_Office2007Form_CaptionBarHeightMode) as `SameAlwaysOnMaximize`
+By default, the height of the caption bar is reduced when the form is in maximized state. It can be retained in both normal and maximized states by setting the [CaptionBarHeightMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Form.html#Syncfusion_Windows_Forms_Office2007Form_CaptionBarHeightMode) property to `SameAlwaysOnMaximize`.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.CaptionBarHeightMode = Syncfusion.Windows.Forms.Enums.CaptionBarHeightMode.SameAlwaysOnMaximize;
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vb %}
 
 Me.CaptionBarHeightMode = Syncfusion.Windows.Forms.Enums.CaptionBarHeightMode.SameAlwaysOnMaximize
- 
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -127,96 +127,96 @@ Me.CaptionBarHeightMode = Syncfusion.Windows.Forms.Enums.CaptionBarHeightMode.Sa
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 // Displays the HelpButton in the caption box of the Form.
 
- this.HelpButton = true;
+this.HelpButton = true;
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vb %}
 
-‘Displays the HelpButton in the caption box of the Form.
+' Displays the HelpButton in the caption box of the Form.
 
- Me.HelpButton = true
+Me.HelpButton = True
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Winforms showing helpbutton applied in office2007form](Caption-Settings_images/HelpButton.png)
+![WinForms Office2007Form with the help button](Caption-Settings_images/HelpButton.png)
 
 ## Right to left
 
-Right to left support can be enabled using below properties in Office2007Form.
+Right-to-left support can be enabled using the following properties in Office2007Form.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.RightToLeftLayout = true;
- 
+
 this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vb %}
 
-Me.RightToLeftLayout = true
- 
-Me.RightToLeft = System.Windows.Forms.RightToLeft.Yes 
+Me.RightToLeftLayout = True
+
+Me.RightToLeft = System.Windows.Forms.RightToLeft.Yes
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Winforms showing RTL applied in office2007form](Caption-Settings_images/rtlsupport.png)
+![WinForms Office2007Form with right-to-left layout applied](Caption-Settings_images/rtlsupport.png)
 
 ## Rounded corner
 
-Rounded corners for `Office2007Form` can be enabled by using the [AllowRoundedCorners](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Form.html#Syncfusion_Windows_Forms_Office2007Form_AllowRoundedCorners) property. Rounded corners are not supported in OS versions lower than Windows 11. Enabling `AllowRoundedCorners` property will have no effect on those operating systems. 
+Rounded corners for `Office2007Form` can be enabled by using the [AllowRoundedCorners](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Form.html#Syncfusion_Windows_Forms_Office2007Form_AllowRoundedCorners) property. Rounded corners are not supported on OS versions lower than Windows 11. Enabling `AllowRoundedCorners` has no effect on those operating systems.
 
-N> When the rounded corners are enabled, the border and shadow of the Form are drawn by the operating system.
+N> When the rounded corners are enabled, the border and shadow of the form are drawn by the operating system.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.AllowRoundedCorners = true;
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vb %}
 
-Me.AllowRoundedCorners = true
- 
+Me.AllowRoundedCorners = True
+
 {% endhighlight %}
 
 {% endtabs %}
 
 
-![Office2007Form with rounded corners](Office2007-Form_images/RoundedCorners.png)
+![WinForms Office2007Form with rounded corners on Windows 11](Office2007-Form_images/RoundedCorners.png)
 
 ## Disabling Office2007Style
 
-Office2007 look and feel can be disabled using `DisableOffice2007Style` property.
+The Office 2007 look and feel can be disabled using the [DisableOffice2007Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Form.html#Syncfusion_Windows_Forms_Office2007Form_DisableOffice2007Style) property.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.DisableOffice2007Style = true;
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vb %}
 
-Me.DisableOffice2007Style = true
- 
+Me.DisableOffice2007Style = True
+
 {% endhighlight %}
 
 {% endtabs %}
 
 
-![Winforms showing disabledoffice2007style in office2007form](Caption-Settings_images/image1.png)
+![WinForms Office2007Form with the Office 2007 style disabled](Caption-Settings_images/image1.png)
