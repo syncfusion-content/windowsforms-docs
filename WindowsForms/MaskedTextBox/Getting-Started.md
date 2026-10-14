@@ -96,8 +96,7 @@ Me.Controls.Add(Me.maskedEditBox1)
 
 You can set some common symbols for the [Mask](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html#Syncfusion_Windows_Forms_Tools_MaskedEditBox_Mask) property. For example, the symbols are set as "##:##".
 
->**NOTE**:
-The **#** symbol allows numeric entry only in that position.
+N> The **#** symbol allows numeric entry only in that position.
 
 Examples of some common masks are,
 
