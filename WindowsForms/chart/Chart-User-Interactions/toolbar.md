@@ -89,8 +89,9 @@ This toolbar command is used to see a print preview of the Chart.</td></tr>
 This command is used to toggle the 3D mode of the chart.</td></tr>
 <tr>
 <td>
-{{'[Toggle Legend Appearance](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartCommands.html#Syncfusion_Windows_Forms_Chart_ChartCommands_ShowLegend)</td><td>
-'[ChartToolBarShowLegendItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartToolBarShowLegendItem.html)'| markdownify }}
+{{'[Toggle Legend Appearance](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartCommands.html#Syncfusion_Windows_Forms_Chart_ChartCommands_ShowLegend)'| markdownify }}
+</td><td>
+{{'[ChartToolBarShowLegendItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartToolBarShowLegendItem.html)'| markdownify }}
 </td><td>
 This command is used to toggle the legend appearance.</td></tr>
 <tr>
