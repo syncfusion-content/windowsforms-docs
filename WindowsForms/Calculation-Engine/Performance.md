@@ -13,7 +13,7 @@ This section explains about the performance and limitations of Essential Calcula
 
 ## To improve the performance
 
-By default, [CalcEngine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html) calculates the formulas quickly. But to improve the performance in Essential Calculate, user need to set the following
+By default, [CalcEngine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html) calculates the formulas quickly. But to improve the performance in Essential Calculate, users need to set the following
 properties of `CalcEngine`.
 
 **AllowShortCircuitIFs**
@@ -89,7 +89,7 @@ result = engine.ComputeFormula(parsedFormula);
 
 ## To avoid stack overflow exception
 
-To avoid the stack overflow exception while computing the formulas iteratively exceeding the maximum capacity, user need to set the following properties of `CalcEngine`,
+To avoid the stack overflow exception while computing the formulas iteratively exceeding the maximum capacity, users need to set the following properties of `CalcEngine`,
 
 [**ThrowCircularException**](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html#Syncfusion_Calculate_CalcEngine_ThrowCircularException) 
 
@@ -104,12 +104,12 @@ to `true` when you set a non-zero value to `IterationMaxCount`.
 
 [**MaximumRecursiveCalls**](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html#Syncfusion_Calculate_CalcEngine_MaximumRecursiveCalls)
 
-`CalcEngine` have `MaximumRecursiveCalls` property for which value is 100 by default. So, if the recursive call during calculations exceeds more than 100, 
+`CalcEngine` has a `MaximumRecursiveCalls` property whose default value is 100. So, if the recursive call during calculations exceeds more than 100, 
 stack overflow exception occurs which can be avoided by setting this property to required limit at the sample level.
 
 [**MaxStackDepth**](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html#Syncfusion_Calculate_CalcEngine_MaxStackDepth)
 
-`CalcEngine` have `MaxStackDepth` property for which value is 50 by default. So, if the stack size is exceeding more than 50, stack overflow exception 
+`CalcEngine` has a `MaxStackDepth` property whose default value is 50. So, if the stack size is exceeding more than 50, stack overflow exception 
 occurs which can be avoided by setting this property to required limit at the sample level. 
 
 {% tabs %}
@@ -166,9 +166,9 @@ private void GetCalculatedValue()
 
 ## Limitations
 
-* Essential Calculate is not a UI component, but it can be can be added to the user’s own business objects.
+* Essential Calculate is not a UI component, but it can be added to the user’s own business objects.
 
-* Essential Calculate does not support to localize the registered formulas in the Calculate API to any specific language other 
+* Essential Calculate does not support localizing the registered formulas in the Calculate API to any specific language other 
   than English(en-US), which is by default. But we have support to compute the formulas in different region settings.
 
 * The parameters passed in any of the function library of Essential Calculate is of type string.

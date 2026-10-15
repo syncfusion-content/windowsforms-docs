@@ -10,7 +10,7 @@ documentation: ug
 # Working with CalcQuickBase in WinForms Calculation Engine
 
 The simplest way to use Essential Calculate is through an instance of its [CalcQuickBase](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcQuickBase.html) class. This class provides options to directly parse and compute a formula, or register variable names that can later be used in more complex formulas involving these variables. 
-After registering the variables,it provides options to perform manual or automatic calculations. `CalcQuickBase` is predefined derived class from `ICalcData` interface.
+After registering the variables, it provides options to perform manual or automatic calculations. `CalcQuickBase` is a predefined derived class from the `ICalcData` interface.
 
 ## Compute using values
 
@@ -41,8 +41,7 @@ string result = calcQuick.ParseAndCompute(formula);
 ### Register variable names
 
 To register the variables in `CalcQuickBase`, it must be enclosed within square brackets "[ ]". Eg. [A]. These registered variable names are indexer keys.
-A variable name must begin with an alphabetical character and can contain only letters and digits. It is not case-sensitive. To register a string as a variable name and 
-simply index the `CalcQuickBase` object with the name. To set its value, assign the value or formula to the registered variable name.  
+A variable name must begin with an alphabetical character and can contain only letters and digits. Variable names are case-insensitive. To register a string as a variable name, simply index the `CalcQuickBase` object with the name. To set its value, assign the value or formula to the registered variable name.
 
 {% tabs %}
 {% highlight c# %}
@@ -59,8 +58,7 @@ calcQuick["C"] = "11";
 
 #### Compute directly with variables
 
-If the user wants the variable to hold a string which is a formula or be treated as a formula, then begin that string with [FormulaCharacter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcQuickBase.html#Syncfusion_Calculate_CalcQuickBase_FormulaCharacter) of `CalcQuickBase`. The default value of this `FormulaCharacter` is “=”. 
-so, that it is parsed and computed through the indexing code.
+If the user wants the variable to hold a string which is a formula or be treated as a formula, then begin that string with [FormulaCharacter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcQuickBase.html#Syncfusion_Calculate_CalcQuickBase_FormulaCharacter) of `CalcQuickBase`. The default value of this `FormulaCharacter` is "=", so that it is parsed and computed through the indexing code.
 
 Below example shows the computation of formula or expressions directly with registered variable keys.
 
@@ -111,7 +109,7 @@ calcQuick["result"]  = calcQuick.ParseAndCompute("SUM([A],[B])");
 {% endhighlight %}
 {% endtabs %}
 
-For more information regarding `ParseAndCompute` method, refer [here](https://help.syncfusion.com/windowsforms/calculation-engine/parse-and-compute#parse-and-compute).
+For more information regarding the `ParseAndCompute` method, see [ParseAndCompute documentation](https://help.syncfusion.com/windowsforms/calculation-engine/parse-and-compute#parse-and-compute).
 
 ## Automatic calculations
 

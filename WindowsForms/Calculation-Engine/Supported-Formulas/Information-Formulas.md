@@ -61,7 +61,7 @@ _= ERROR.TYPE(value)_
 
 
 
-Here is the: 
+**Return Value** 
 
 
 
@@ -255,7 +255,7 @@ _ISLOGICAL( value )_
 
 
 
-The `IsNA` function returns a Boolean value after determining that the provided value is `#NA` error value.
+The `IsNA` function returns a Boolean value after determining that the provided value is the `#N/A` error value.
 
 
 
@@ -371,11 +371,11 @@ _ISFORMULA (reference)_
 
 
 
-**Remark:**
+**Remarks:**
 
 
 
-`#VALUE!`-occurs when reference is not a valid data type.
+`#VALUE!` - occurs when reference is not a valid data type.
 
 
 
@@ -383,7 +383,7 @@ _ISFORMULA (reference)_
 
 
 
-`IsOdd` function returns `true` when the given number is an odd number and returns `false` when the given number is even.
+The `IsOdd` function returns `true` when the given number is an odd number and returns `false` when the given number is even.
 
 
 
@@ -494,7 +494,7 @@ _MATCH(lookup_value, lookup_array, [match_type])_
 
 	<td>
 
-	0 or omitted</td><td>
+	1 or omitted</td><td>
 
 	MATCH finds the largest value that is less than or equal to lookup_value. The lookup_array argument must be placed in ascending order.</td></tr>
 
@@ -538,7 +538,7 @@ _N (value)_
 
 
 
-* Numeric values are converted as numeric values. A date value is converted as a serial number. The Logic operator `TRUE` returns a value of `1`. The other values are returned as `0`.
+* Numeric values are returned as numbers. A date value is converted to a serial number. The logical value `TRUE` returns a value of `1`. The other values are returned as `0`.
 
 
 
@@ -558,15 +558,11 @@ _NA()_
 
 
 
-* The NA function syntax has no arguments.
-
-
-
 **Remarks:**
 
 
 
-* The function does not have any arguments.
+* The NA function syntax has no arguments.
 
 
 
@@ -610,7 +606,7 @@ _SHEET(value)_
 
 
 
-`SHEETS` function returns the number of sheets in a reference.
+The `SHEETS` function returns the number of sheets in a reference.
 
 
 
@@ -666,7 +662,7 @@ _TYPE( value )_
 
 
 
-The `ROW` function returns the first row number within a supplied reference, or if no reference is supplied, the function returns the number of the current row in the currently active spreadsheet..
+The `ROW` function returns the first row number within a supplied reference, or if no reference is supplied, the function returns the number of the current row in the currently active spreadsheet.
 
 
 

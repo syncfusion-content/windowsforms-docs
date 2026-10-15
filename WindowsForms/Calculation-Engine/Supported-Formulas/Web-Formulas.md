@@ -15,7 +15,7 @@ documentation: ug
 
 
 
-The `EncodeURL` function retrieves an URL-encoded string.
+The `EncodeURL` function returns a URL-encoded string.
 
 
 
@@ -39,7 +39,7 @@ _ENCODEURL(name)_
 
 
 
-The `Webservice` function returns data from a web service on the Internet or Intranet.
+The `WebService` function returns data from a web service on the Internet or Intranet.
 
 
 
@@ -63,7 +63,7 @@ _WEBSERVICE(url)_
 
 
 
-The `Filterxml` function returns specific data from XML content by using the specified xpath.
+The `FilterXML` function returns specific data from XML content by using the specified XPath.
 
 
 **Syntax:**
@@ -86,4 +86,4 @@ _FILTERXML(xml, xpath)_
 
 
 
-N> The above formulas will not be supported for Xamarin.Forms,Xamarin.Android,Xamarin.iOS and .NETCore.
+N> The above formulas will not be supported for Xamarin.Forms, Xamarin.Android, Xamarin.iOS and .NETCore.
