@@ -22,8 +22,7 @@ Specifies whether or not to use XP themes when the BorderStyle property is set t
 </table>
 
 
->**NOTE**:
-Refer to the [Border Settings](https://help.syncfusion.com/windowsforms/maskedtextbox/border-settings) documentation for more information about the BorderStyle property.
+N> Refer to the [Border Settings](https://help.syncfusion.com/windowsforms/maskedtextbox/border-settings) documentation for more information about the BorderStyle property.
 
 {% tabs %}
 

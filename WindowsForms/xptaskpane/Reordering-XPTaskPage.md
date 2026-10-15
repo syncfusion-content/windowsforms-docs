@@ -53,8 +53,7 @@ It sets the previous page for the XPTaskPane.</td></tr>
 </table>
 
 
->**NOTE**:
-The TaskPane follows this order at run time.
+N> The TaskPane follows this order at run time.
 
 {% tabs %}
 
