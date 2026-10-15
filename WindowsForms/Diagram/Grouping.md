@@ -5,7 +5,6 @@ description: Group, ungroup, and manage multiple nodes in the Syncfusion® Windo
 platform: windowsforms
 control: Diagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 

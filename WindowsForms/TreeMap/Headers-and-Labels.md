@@ -5,7 +5,6 @@ description: Headers and labels in the Windows Forms TreeMap enable customizatio
 platform: windowsforms
 control: TreeMap 
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Headers and Labels in WinForms TreeMap

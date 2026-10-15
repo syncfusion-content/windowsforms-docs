@@ -47,7 +47,7 @@ I need a Syncfusion WinForms [control name] with the following specifications:
 - Implementation language: C#
 - Dependencies: Identify and use the correct from https://help.syncfusion.com/windowsforms/control-dependencies
 
-Reference: https://help.syncfusion.com/windowsforms/[control]/getting-started
+Reference: https://help.syncfusion.com/windowsforms/]/getting-started
 ```
 
 **What to expect:**
@@ -71,7 +71,7 @@ I need a Syncfusion WinForms DataGrid component with the following specification
 - Implementation language: C# with Designer or code-behind
 - Dependencies: Identify and use the correct from https://help.syncfusion.com/windowsforms/control-dependencies
 
-Reference: https://help.syncfusion.com/windowsforms/datagrid/getting-started
+Reference: https://help.syncfusion.com/windowsforms/datagrid/gettingstarted
 ```
 
 ### IDE-Based AI
@@ -107,7 +107,7 @@ The MCP Server establishes a direct connection between your IDE-integrated AI an
 
 **Option 2: Install Component Skills**
 
-The [Syncfusion Skills installation](https://help.syncfusion.com/windowsforms/skills/component-skills) provides reference documents stored directly in your project. These files allow the AI to read specific WinForms implementation patterns during code generation, ensuring consistent implementation and best practices across your development team.
+The [Syncfusion Skills installation](https://help.syncfusion.com/windowsforms/skills) provides reference documents stored directly in your project. These files allow the AI to read specific WinForms implementation patterns during code generation, ensuring consistent implementation and best practices across your development team.
 
 **What they include:**
 - Best practices for each component family

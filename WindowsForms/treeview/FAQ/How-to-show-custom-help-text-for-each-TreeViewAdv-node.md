@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-show-custom-help-text-for-each-TreeViewAdv-node | WindowsForms | Syncfusion
-description: how to show custom help text for each treeviewadv node
-platform: WindowsForms
+title: How to Show Custom Help Text for TreeViewAdv Nodes | Syncfusion
+description: Learn how to display custom help text for each TreeViewAdv node in Syncfusion® Windows Forms TreeViewAdv control and provide node-specific information.
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---
 
-# How to show custom help text for each TreeViewAdv node
+# How to Show Custom Help Text for TreeViewAdv Nodes in WinForms
 
 Custom help text can be shown using TreeNodeAdv.HelpText property.
 

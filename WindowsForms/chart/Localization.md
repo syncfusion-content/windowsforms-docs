@@ -5,7 +5,6 @@ description: Localization in the Windows Forms Chart enables chart content and u
 platform: windowsforms
 control: Chart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Localization in Windows Forms Chart
@@ -55,7 +54,7 @@ The following image illustrates the chart UI localized using the specified cultu
 
 ![Localized Windows Forms Chart](Localization_images/Localization_img5.png)
 
-### Sample Link
+## Sample Link
 
 To view a sample,
 

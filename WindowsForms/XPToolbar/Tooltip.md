@@ -2,7 +2,7 @@
 layout: post
 title: Tooltip in Windows Forms XPToolBar | Syncfusion®
 description: Tooltip support displays contextual information for bar items and allows customizing tooltip text for toolbar commands.
-platform: WindowsForms
+platform: windowsforms
 control: XPToolBar
 documentation: ug
 ---

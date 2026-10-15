@@ -27,11 +27,15 @@ _CELL( infoType, reference)_
 
 
 
-**Parameters:**
+**where:**
 
-* `infoType`: A text string that specifies the type of information to be returned.
 
-* `reference`: The cell for which the information is to be returned. 
+
+* infoType argument is a text string that specifies the type of information to be returned.
+
+
+
+* reference is the cell for which the information is to be returned. 
 
 
 
@@ -51,9 +55,9 @@ _CELL( infoType, reference)_
 
 _= ERROR.TYPE(value)_
 
-**Parameters:**
 
-* `value`: The given value is required.
+
+* Value-The given value is required.
 
 
 
@@ -167,9 +171,11 @@ _ISBLANK(value)_
 
 
 
-**Parameters:**
+**where:**
 
-* `value`: The value that you want to test. When the value is blank, this function returns `true`. When the value is not blank, the function returns `false`.
+
+
+* value is the value that you want to test. When the value is blank, this function returns `true`. When the value is not blank, the function returns `false`.
 
 
 
@@ -189,9 +195,11 @@ _ISERR( value )_
 
 
 
-**Parameters:**
+**where:**
 
-* `value`: The value that you want to test. When the value is an error value `except #N/A`, this function returns `true/false` to indicate whether a value is an error or not.
+
+
+* value is the value that you want to test. When the value is an error value `except #N/A`, this function returns `true/false` to indicate whether a value is an error or not.
 
 
 
@@ -211,9 +219,11 @@ _ISERROR(value)_
 
 
 
-**Parameters:**
+**where:**
 
-* `value`: The value that is to be tested.
+
+
+* value is the value that is to be tested.
 
 
 
@@ -231,9 +241,13 @@ The `IsLogical` function checks whether a value is a logical value and returns `
 
 _ISLOGICAL( value )_
 
-**Parameters:**
 
-* `value`: The value that you want to test. When the value is a `true` or `false` value, this function returns `true`. Otherwise, it returns `false`.
+
+ **where:**
+
+
+
+* This value is the value that you want to test. When the value is a `true` or `false` value, this function returns `true`. Otherwise, it returns `false`.
 
 
 
@@ -251,9 +265,13 @@ The `IsNA` function returns a Boolean value after determining that the provided 
 
 _ISNA(value)_ 
 
-**Parameters:**
 
-* `value`: The function that is tested.
+
+**where:**
+
+
+
+* value is the function that is tested.
 
 
 
@@ -271,9 +289,13 @@ The `IsNonText` function returns the Boolean value after determining that the pr
 
 IsNonText(text)
 
-**Parameters:**
 
-* `text`: The value you want to test whether it is a string or not.
+
+**where:**
+
+
+
+* text is the value you want to test whether it is a string or not.
 
 
 
@@ -291,9 +313,13 @@ Returns `true` when the value parses as a numeric value.
 
 _ISNUMBER(value)_
 
-**Parameters:**
 
-* `value`: The value that is to be tested.
+
+**where:**
+
+
+
+* value is the value that is to be tested.
 
 
 
@@ -311,9 +337,13 @@ The `Info` function returns a text string containing information about the curre
 
 _INFO(infoType)_ 
 
-**Parameters:**
 
-* `infoType`: A text string that specifies the type of information to be returned. 
+
+**where:**
+
+
+
+* infoType argument is a text string that specifies the type of information to be returned. 
 
 
 
@@ -331,9 +361,13 @@ The `IsFormula` function returns `true` or `false` when there is a reference to 
 
 _ISFORMULA (reference)_
 
-**Parameters:**
 
-* `reference`: A reference to the cell you want to test.
+
+**where:**
+
+
+
+* Reference is a reference to the cell you want to test.
 
 
 
@@ -359,9 +393,9 @@ _ISFORMULA (reference)_
 
 _= ISODD (value)_
 
-**Parameters:**
 
-* `value`: A numeric value. When it is a non-integer value, the value is rounded down.
+
+* The given value must be a numeric value. When it is a non-integer value, the value is rounded down.
 
 
 
@@ -379,9 +413,13 @@ The `ISEVEN` function returns `TRUE` if given number is an even number and retur
 
 _ISEVEN (value)_
 
-**Parameters:**
 
-* `value`: A numeric value. If it is non-integer value, the value is rounded down.
+
+**where:** 
+
+
+
+* value must be a numeric value. If it is non-integer value, the value is rounded down.
 
 
 
@@ -407,9 +445,9 @@ The `ISREF` function returns the logical value `TRUE` if the given value is a re
 
 _ISREF(given_value)_
 
-**Parameters:**
 
-* `given_value` (required): The value that is to be tested. The value argument can be a blank (empty cell), error, logical value, text, number, or reference value, or a name referring to any of these.
+
+* given_value: Required. The value that is to be tested. The value argument can be a blank (empty cell), error, logical value, text, number, or reference value, or a name referring to any of these.
 
 
 
@@ -426,13 +464,21 @@ The `MATCH` function searches for a specified item in a range of cells, and then
 
 _MATCH(lookup_value, lookup_array, [match_type])_
 
-**Parameters:**
 
-* `lookup_value`: The value that you want to match in lookup_array.
 
-* `lookup_array`: The range of cells being searched.
+**Where:**
 
-* `match_type`: Specifies how Excel matches lookup_value with values in lookup_array. The default value for this argument is 1.
+
+
+* lookup_value is the value that you want to match in lookup_array.
+
+
+
+* lookup_array is the range of cells being searched.
+
+
+
+* match_type specifies how Excel matches lookup_value with values in lookup_array. The default value for this argument is 1.
  
   <table>
 
@@ -486,9 +532,13 @@ The `N` function converts the given value into a numeric value.
 
 _N (value)_
 
-**Parameters:**
 
-* `value`: A value is required. Numeric values are converted as numeric values. A date value is converted as a serial number. The Logic operator `TRUE` returns a value of `1`. The other values are returned as `0`.
+
+* A value is required.
+
+
+
+* Numeric values are converted as numeric values. A date value is converted as a serial number. The Logic operator `TRUE` returns a value of `1`. The other values are returned as `0`.
 
 
 
@@ -534,9 +584,13 @@ The `Sheet` function returns the sheet number of the reference sheet.
 
 _SHEET(value)_ 
 
-**Parameters:**
 
-* `value`: An optional argument with the name of a sheet for which you want the sheet number.
+
+**where:**
+
+
+
+* value is an optional argument with the name of a sheet for which you want the sheet number.
 
 
 
@@ -566,9 +620,13 @@ _SHEET(value)_
 
 _SHEETS(reference)_
 
-**Parameters:**
 
-* `reference`: An optional argument with the name of a sheet for which you want to know the number of sheets.
+
+**where:**
+
+
+
+* reference is an optional argument with the name of a sheet for which you want to know the number of sheets.
 
 
 
@@ -594,9 +652,13 @@ The `TYPE` function receives a value and returns an integer that represents the 
 
 _TYPE( value )_
 
-**Parameters:**
 
-* `value`: Can be input either directly, as a value returned from a formula, or as a reference to a cell that contains a value.
+
+**where:**
+
+
+
+* value can be input either directly, as a value returned from a formula, or as a reference to a cell that contains a value.
 
 
 
@@ -610,9 +672,13 @@ The `ROW` function returns the first row number within a supplied reference, or 
 
 _ROW( [reference] )_
 
-**Parameters:**
 
-* `reference`: An optional argument that you want to return the row number of. If [reference] is omitted, the function returns the row number of the current cell (i.e. the cell that the function is entered into).
+
+**where:**
+
+
+
+* reference is an optional argument that you want to return the row number of. If [reference] is omitted, the function returns the row number of the current cell (i.e. the cell that the function is entered into).
 
 
 
@@ -630,6 +696,10 @@ The `ROWS` function takes a range and returns the number of rows that are contai
 
 _ROWS( array )_
 
-**Parameters:**
 
-* `array`: The range in which you want to count the number of rows.
+
+**where:**
+
+
+
+* array argument is the range in which you want to count the number of rows.

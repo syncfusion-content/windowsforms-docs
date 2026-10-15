@@ -5,7 +5,6 @@ description: Legend in the Windows Forms TreeMap explains color mappings and dat
 platform: windowsforms
 control: TreeMap 
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Legend in WinForms TreeMap

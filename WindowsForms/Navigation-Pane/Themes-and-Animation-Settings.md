@@ -2,7 +2,7 @@
 layout: post
 title: Themes and Animation in Windows Form Navigation Pane | Syncfusion®
 description: Themes and animation settings enable styled appearances and animated transitions when switching between navigation items.
-platform: WindowsForms
+platform: windowsforms
 control: GroupBar
 documentation: ug
 ---

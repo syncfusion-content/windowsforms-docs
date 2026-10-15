@@ -2,7 +2,7 @@
 layout: post
 title: How to Programmatically Display an AutoComplete Popup | Syncfusion
 description: Display the AutoComplete popup programmatically in Syncfusion® Windows Forms AutoComplete control using built-in popup APIs and more.
-platform: WindowsForms
+platform: windowsforms
 control: Tools
 documentation: ug
 ---

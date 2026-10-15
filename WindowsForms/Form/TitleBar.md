@@ -2,7 +2,7 @@
 layout: post
 title: Title Bar in Windows Forms Form control | Syncfusion®
 description: Title Bar customization in Form (SfForm) supports styling, button customization, rich text, embedded controls, and caption image configuration.
-platform: WindowsForms
+platform: windowsforms
 control: SfForm
 documentation: ug
 ---

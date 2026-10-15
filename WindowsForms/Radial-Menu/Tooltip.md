@@ -2,7 +2,7 @@
 layout: post
 title: Tooltip in Windows Forms RadialMenu | Syncfusion®
 description: Tooltip support displays contextual information for radial menu items when users hover over menu elements.
-platform: WindowsForms
+platform: windowsforms
 control: RadialMenu
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Working with Windows Forms AutoComplete | Syncfusion®
 description: Working with AutoComplete covers matching modes, suggestion behavior, history management, data integration, and popup customization.
-platform: WindowsForms
+platform: windowsforms
 control: AutoComplete
 documentation: ug
 ---
@@ -391,5 +391,3 @@ The AutoComplete popup can be shown programmatically by setting the parent contr
 {% endtabs %}
 
 ![Windows Forms AutoComplete programmatical popup open](WorkingwithAutoComplete_images/AutoComplete_Openpopup.png)
-
-

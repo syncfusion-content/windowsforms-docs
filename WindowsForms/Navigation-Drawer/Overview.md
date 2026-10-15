@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion® Windows Forms NavigationDrawer Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms NavigationDrawer control and more details.
-platform: WindowsForms
+platform: windowsforms
 control: NavigationDrawer 
 documentation: ug
 ---

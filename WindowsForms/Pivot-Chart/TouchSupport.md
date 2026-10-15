@@ -5,7 +5,6 @@ description: Touch support in the Windows Forms Pivot Chart enables touch-based 
 platform: windowsforms
 control: PivotChart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 --- 
 
 # Touch Support in Windows Forms Pivot Chart

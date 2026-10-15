@@ -2,7 +2,7 @@
 layout: post
 title: Restrict dates that are selected in WindowsForms | Syncfusion
 description: Learn how to restrict the dates selected in Syncfusion Windows Forms MonthCalendarAdv (Classic) using the DateCellQueryInfo event handler and more.
-platform: WindowsForms
+platform: windowsforms
 control: CalendarDateTime
 documentation: ug
 ---

@@ -15,8 +15,8 @@ is integrated with Essential XlsIO, to calculate formulas entered at runtime wit
 
 ## Open a Workbook using XlsIO
 
-To open a workbook using XIsIO, instantiate the [ExcelEngine](https://help.syncfusion.com/cr/file-formats/Syncfusion.XlsIO.ExcelEngine.html) to initialize the application object for creating or manipulating Excel documents. To open an existing workbook,
-use the [Open](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.IWorkbooks.html#Syncfusion_XlsIO_IWorkbooks_Open_System_IO_Stream_) methods of [IWorkbook](http://help.syncfusion.com/cr/file-formats/Syncfusion.XlsIO.IWorkbook.html) interface.
+To open a workbook using XIsIO, instantiate the [ExcelEngine](https://help.syncfusion.com/cr/document-processing/Syncfusion.XlsIO.ExcelEngine.html) to initialize the application object for creating or manipulating Excel documents. To open an existing workbook,
+use the [Open](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.IWorkbooks.html#Syncfusion_XlsIO_IWorkbooks_Open_System_IO_Stream_) methods of [IWorkbook](https://help.syncfusion.com/cr/document-processing/Syncfusion.XlsIO.IWorkbook.html) interface.
 
 {% tabs %}
 {% highlight c# %}

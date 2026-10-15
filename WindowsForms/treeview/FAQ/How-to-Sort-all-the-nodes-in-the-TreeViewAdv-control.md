@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to Sort all the Nodes in the TreeViewAdv | Syncfusion
-description: how to sort all the nodes in Syncfusion Windows Forms treeviewadv control, its elements and more details.
-platform: WindowsForms
+title: How to Sort All Nodes in Windows Forms TreeViewAdv | Syncfusion
+description: Learn how to sort all nodes in Syncfusion® Windows Forms TreeViewAdv control, including child nodes, by setting the SortWithChildNodes property.
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---
 
-# How to Sort all the Nodes in the TreeViewAdv Control
+# How to Sort All Nodes in Windows Forms TreeViewAdv
 
 This can be done by setting the SortWithChildNodes property to true.
 

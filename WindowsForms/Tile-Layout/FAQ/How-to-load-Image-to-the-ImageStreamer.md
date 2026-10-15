@@ -1,8 +1,8 @@
 ---
 layout: post
 title: How to load Image to the ImageStreamer | WindowsForms | Syncfusion
-description: How to load Image to the ImageStreamer
-platform: WindowsForms
+description: Learn how to load images into an ImageStreamer and use them effectively within TileLayout controls in Windows Forms.
+platform: windowsforms
 control: TileLayout 
 documentation: ug
 ---

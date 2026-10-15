@@ -5,7 +5,6 @@ description: Layer types in the Windows Forms Maps support imagery and shape lay
 platform: windowsforms
 control: Maps
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Layer Types in Windows Forms Maps

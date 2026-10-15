@@ -17,9 +17,9 @@ Returns the average of the absolute mean deviations of data points. `Avedev` is 
 
 _AVEDEV(number1, number2, ...)_
 
-**Parameters:**
+**where:**
 
-* `number1, number2, ...`: Arguments for which you want the average of the absolute deviations. You can also use a single array or a reference to an array instead of arguments separated by commas.
+* number1, number2, ... are arguments for which you want the average of the absolute deviations. You can also use a single array or a reference to an array instead of arguments separated by commas.
 
 **Remarks:**
 
@@ -35,9 +35,9 @@ Returns the average (arithmetic mean) of the arguments.
 
 _AVERAGE(number1, number2, ...)_ 
 
-**Parameters:** 
+**where:** 
 
-* `number1, number2, ...`: Numeric arguments for which you want the average.
+* number1, number2, ... are numeric arguments for which you want the average.
 
 **Remarks:**
 
@@ -53,9 +53,9 @@ Calculates the average (arithmetic mean) of the values in the list of arguments.
 
 _AVERAGEA(value1, value2,...)_
 
-**Parameters:**
+**where:**
 
-* `value1, value2, ...`: Cells, ranges of cells, or values for which you want the average.
+* value1, value2, ... are cells, ranges of cells, or values for which you want the average.
 
 **Remarks:**
 
@@ -73,13 +73,13 @@ The `AVERAGEIF` function returns the average of the cells in a specified range w
 
 _AVERAGEIF(range, criteria, [average_range])_
 
-**Parameters:**
+**where:**
 
-* `range`: The cells range to calculate the average value.
+* range is the cells range to calculate the average value.
 
-* `criteria`: The condition to calculate the average.
+* criteria are the condition to calculate the average.
 
-* `average_range` (optional): The range optional cells range to computed average. If the average is not included, then the range is used for the average.
+* average_range is the range optional cells range to computed average. If the average is not included, then the range is used for the average.
 
 ## AVERAGEIFS
 
@@ -89,17 +89,17 @@ The `AVERAGEIFS` returns the average of the cells in a specified range which sat
 
 _AVERAGEIFS(average_range, criteria_range1, criteria1, [criteria_range2, criteria2], ...)_
 
-**Parameters:**
+**where:**
 
-* `average_range`: The range of cells to calculate the average.
+* average_range is the range of cells to calculate the average.
 
-* `criteria_range1`: The first range to calculate the average.
+* criteria_range1 is the first range to calculate the average.
 
-* `criteria1`: The first condition for the first criteria range.
+* criteria1 is the first condition for the first criteria range.
 
-* `criteria_range2` (optional): The optional cells range to evaluate the average.
+* criteria_range2 is the optional cells range to evaluate the average.
 
-* `criteria2` (optional): The optional condition for the criteria range 2.
+* criteria2 is the optional condition for the criteria range 2.
 
 ## BINOM.DIST
 
@@ -109,15 +109,15 @@ The `Binom.Dist` function returns the Binomial Distribution probability for a gi
 
 _BINOM.DIST (trial number,sp,value, cumulative)_
 
-**Parameters:**
+**where:**
 
-* `trial number`: The number of Bernoulli trials.
+* trial number is the number of Bernoulli trials.
 
-* `sp`: The probability of a success on each trial.
+* sp is the probability of a success on each trial.
 
-* `value`: The criterion value. 
+* value is the criterion value. 
 
-* `cumulative`: A logical value that determines the form of the function.
+* cumulative is a logical value that determines the form of the function.
 
 **Remarks:**
 
@@ -133,17 +133,17 @@ Returns the cumulative beta probability density function
 
 _BETADIST(x,alpha,beta,[A],[B])_
 
-**Parameters:**
+**Where:**
 
-* `x`: The value between A and B at which to evaluate the function.
+* x denotes the value between A and B at which to evaluate the function.
 
-* `alpha`: A parameter of the distribution.
+* alpha denotes a parameter of the distribution.
 
-* `beta`: A parameter of the distribution.
+* beta denotes a parameter of the distribution.
 
-* `A`: A lower bound to the interval of x.
+* A denotes a lower bound to the interval of x.
 
-* `B`: An upper bound to the interval of x.
+* B denotes an upper bound to the interval of x.
 
 **Remarks:**
 
@@ -195,15 +195,15 @@ Returns the individual term binomial distribution probability
 
 _BINOMDIST(number_s,trials,probability_s,cumulative)_
 
-**Parameters:**
+**Where:**
 
-* `number_s`: The number of successes in trials.
+* Number_s denotes the number of successes in trials.
 
-* `trials`: The number of independent trials.
+* Trials denotes the number of independent trials.
 
-* `probability_s`: The probability of success on each trial.
+* Probability_s denotes the probability of success on each trial.
 
-* `cumulative`: A logical value that determines the form of the function. If cumulative is TRUE, then BINOMDIST returns the cumulative distribution function, which is the probability that there are at most number_s successes; if FALSE, it returns the probability mass function, which is the probability that there are number_s successes.
+* Cumulative denotes a logical value that determines the form of the function. If cumulative is TRUE, then BINOMDIST returns the cumulative distribution function, which is the probability that there are at most number_s successes; if FALSE, it returns the probability mass function, which is the probability that there are number_s successes.
 
 ## BETA.INV
 
@@ -245,13 +245,13 @@ The `Binom.Inv` function returns the smallest value for which the cumulative bin
 
 _BINOM.INV(trial number,sp,value)_
 
-**Parameters:**
+**Where:**
 
-* `trial number`: The number of Bernoulli trials.
+* trial number is the number of Bernoulli trials.
 
-* `sp`: The probability of a success on each trial.
+* sp is the probability of a success on each trial.
 
-* `value`: The criterion value.
+* value is the criterion value.
 
 **Remarks:**
 
@@ -267,11 +267,11 @@ The `CHIDIST` function returns the right-tailed probability of the chi-squared d
 
 _CHIDIST(x,degFreedom)_
 
-**Parameters:**
+**Where:**
 
-* `x`: The value at which the chi-square distribution is to be evaluated (must be ≥ 0).
+* x is the value at which the chi-square distribution is to be evaluated (must be ≥ 0).
 
-* `degFreedom`: The number of degrees of freedom.
+* degFreedom is the number of degrees of freedom.
 
 **Remarks:**
 
@@ -285,11 +285,11 @@ Returns the chi-squared statistical test for independence
 
 _CHISQ.TEST(actual_range,expected_range)_
 
-**Parameters:**
+**Where:**
 
-* `actual_range`: The range of data that contains observations to test against expected values.
+* actual_range  denotes the range of data that contains observations to test against expected values.
 
-* `expected_range`: The range of data that contains the ratio of the product of row totals and column totals to the grand total.
+* expected_range denotes the range of data that contains the ratio of the product of row totals and column totals to the grand total.
 
 ## CHIINV
 
@@ -298,11 +298,11 @@ Returns the inverse of the right-tailed probability of the chi-squared distribut
 **Syntax:**
 _CHIINV(probability,deg_freedom)_
 
-**Parameters:**
+**Where:**
 
-* `probability`: A probability associated with the chi-squared distribution.
+* probability denotes a probability associated with the chi-squared distribution.
 
-* `deg_freedom`: The number of degrees of freedom.
+* deg_freedom denotes the number of degrees of freedom.
 
 **Remarks:**
 
@@ -316,19 +316,19 @@ _CHIINV(probability,deg_freedom)_
 
 ## CONFIDENCE.NORM
 
-The `Confidence.Norm` function uses [Normal Distribution](http://en.wikipedia.org/wiki/Normal_distribution) to calculate a confidence value that can be used to construct the confidence interval for a population mean, for a supplied probability, and sample size.
+The `Confidence.Norm` function uses [Normal Distribution](https://en.wikipedia.org/wiki/Normal_distribution) to calculate a confidence value that can be used to construct the confidence interval for a population mean, for a supplied probability, and sample size.
 
 **Syntax:**
 
 _CONFIDENCE.NORM(alpha,stdev,size)_
 
-**Parameters:**
+**where:**
 
-* `alpha`: The significance level.
+* alpha is the significance level.
 
-* `stdev`: The population standard deviation for the data range.
+* stdev is the population standard deviation for the data range.
 
-* `size`: The sample size. 
+* size is the sample size. 
 
 **Remarks:**
 
@@ -346,13 +346,13 @@ Returns the confidence interval for a population mean
 
 _CONFIDENCE.T(alpha,standard_dev,size)_
 
-**Parameters:**
+**Where:**
 
-* `alpha`: The significance level used to compute the confidence level. The confidence level equals 100*(1 - alpha)%, or in other words, an alpha of 0.05 indicates a 95 percent confidence level.
+* alpha denotes the significance level used to compute the confidence level. The confidence level equals 100*(1 - alpha)%, or in other words, an alpha of 0.05 indicates a 95 percent confidence level.
 
-* `standard_dev`: The population standard deviation for the data range and is assumed to be known.
+* standard_dev denotes the population standard deviation for the data range and is assumed to be known.
 
-* `size`: The sample size.
+* size denotes the sample size.
 
 **Remarks:**
 
@@ -375,11 +375,11 @@ The `Chisq.Inv` function returns the inverse of the left-tailed probability of t
 
 _CHISQ.INV(probability,degFreedom)_
 
-**Parameters:**
+**where:**
 
-* `probability`: A probability of chi-squared distribution.
+* probability is a probability of chi-squared distribution.
 
-* `degFreedom`: The number of degrees of freedom.
+* degFreedom is the number of degrees of freedom.
 
 **Remarks:**
 
@@ -391,17 +391,17 @@ _CHISQ.INV(probability,degFreedom)_
 
 ## CHISQ.INV.RT
 
-The `Chisq.Inv.Rt` function calculates the inverse of the right-tailed probability of the [chi-square distribution](http://en.wikipedia.org/wiki/Chi-square_distribution).
+The `Chisq.Inv.Rt` function calculates the inverse of the right-tailed probability of the [chi-square distribution](https://en.wikipedia.org/wiki/Chi-square_distribution).
 
 **Syntax:**
 
 _CHISQ.INV.RT(probability, degFreedom)_
 
-**Parameters:**
+**where:**
 
-* `probability`: A probability of chi-squared distribution.
+* probability is a probability of chi-squared distribution.
 
-* `degFreedom`: The number of degrees of freedom.
+* degFreedom is the number of degrees of freedom.
 
 **Remarks:**
 
@@ -411,17 +411,17 @@ _CHISQ.INV.RT(probability, degFreedom)_
 
 ## CHISQ.DIST.RT
 
-The `Chisq.Dist.Rt` function calculates the right-tailed probability of the [chi-square distribution](http://en.wikipedia.org/wiki/Chi-square_distribution).
+The `Chisq.Dist.Rt` function calculates the right-tailed probability of the [chi-square distribution](https://en.wikipedia.org/wiki/Chi-square_distribution).
 
 **Syntax:**
 
 _CHISQ.DIST.RT(x,degFreedom)_ 
 
-**Parameters:**
+**where:**
 
-* `x`: The value that evaluates the function.
+* x is the value that evaluates the function.
 
-* `degFreedom`: The number of degrees of freedom.
+* degFreedom is the number of degrees of freedom.
 
 **Remarks:**
 
@@ -439,13 +439,13 @@ The `Chisq.Dist` function calculates the Probability Density Function or the Cum
 
 _CHISQ.DIST(x,degFreedom,cumulative)_ 
 
-**Parameters:**
+**where:**
 
-* `x`: The value that evaluates the function.
+* x is the value that evaluates the function.
 
-* `degFreedom`: The number of degrees of freedom.
+* degFreedom is the number of degrees of freedom.
 
-* `cumulative`: A logical value that determines the form of the function.
+* cumulative is a logical value that determines the form of the function.
 
 **Remarks:**
 
@@ -461,13 +461,13 @@ Returns the confidence interval for a population mean, using a normal distributi
 
 _CONFIDENCE(alpha,standard_dev,size)_
 
-**Parameters:**
+**Where:**
 
-* `alpha`: The significance level used to compute the confidence level. The confidence level equals 100*(1 - alpha)%, or in other words, an alpha of 0.05 indicates a 95 percent confidence level.
+* alpha denotes the significance level used to compute the confidence level. The confidence level equals 100*(1 - alpha)%, or in other words, an alpha of 0.05 indicates a 95 percent confidence level.
 
-* `standard_dev`: The population standard deviation for the data range and is assumed to be known.
+* standard_dev denotes the population standard deviation for the data range and is assumed to be known.
 
-* `size`: The sample size.
+* size denotes the sample size.
 
 
 ## CORREL
@@ -478,11 +478,11 @@ The `Correl` function returns the correlation coefficient of the array1 and arra
 
 _CORREL(array1, array2)_
 
-**Parameters:**
+**where:**
 
-* `array1`: A cell range of values.
+* array1 is a cell range of values.
 
-* `array2`: The second cell range of values.
+* array2 is the second cell range of values.
 
 **Remarks:**
 
@@ -496,9 +496,9 @@ The `Count` counts the number of items in a list that contains numbers.
 
 _COUNT(value1, value2,...)_
 
-**Parameters:**
+**where:**
 
-* `value1, value2, ...`: Arguments that can contain or refer to a variety of different types of data, but only numbers are counted.
+value1, value2, ... are arguments that can contain or refer to a variety of different types of data, but only numbers are counted.
 
 **Remarks:**
 
@@ -514,9 +514,9 @@ The `CountA` counts the number of cells that are not empty.
 
 _COUNTA(value1, value2,...)_
 
-**Parameters:**
+**where:**
 
-* `value1, value2, ...`: Arguments representing the values you want to count. In this case, a value is any type of information, excluding empty cells.
+* value1, value2, ... are arguments representing the values you want to count. In this case, a value is any type of information, excluding empty cells.
 
 ## COUNTBlank
 
@@ -526,9 +526,9 @@ The `CountBlank` counts empty cells in a specified range of cells.
 
 _COUNTBLANK(range)_
 
-**Parameters:**
+**where:**
 
-* `range`: The range from which you want to count the blank cells.
+range is the range from which you want to count the blank cells.
 
 **Remarks:**
 
@@ -542,11 +542,11 @@ Returns the number of cells (of a supplied range), that satisfy a given criteria
 
 _COUNTIF (range, criteria)_
 
-**Parameters:**
+**where:**
 
-* `range`: The range of cells to count.
+* range is the range of cells to count.
 
-* `criteria`: The criteria that controls which cells should be counted.
+* criteria is the criteria that controls which cells should be counted.
 
 ## COUNTIFS
 
@@ -556,13 +556,13 @@ Returns the number of cells (of a supplied range), that satisfy a set of given c
 
 _COUNTIFS(criteria_range1, criteria1, [criteria_range2, criteria2]…)_
 
-**Parameters:**
+**Where:**
 
-* `criteria_range1`: The first range in which to evaluate the associated criteria.
+* criteria_range1 denotes the first range in which to evaluate the associated criteria.
 
-* `criteria1`: The criteria in the form of a number, expression, cell reference, or text that define which cells will be counted. For example, criteria can be expressed as 32, ">32", B4, "apples", or "32".
+* criteria1 denotes the criteria in the form of a number, expression, cell reference, or text that define which cells will be counted. For example, criteria can be expressed as 32, ">32", B4, "apples", or "32".
 
-* `criteria_range2, criteria2, ...`: Additional ranges and their associated criteria. Up to 127 range/criteria pairs are allowed.
+* criteria_range2, criteria2, ... is additional ranges and their associated criteria. Up to 127 range/criteria pairs are allowed.
 
 **Remarks:**
 
@@ -579,11 +579,11 @@ Returns population covariance (i.e. the average of the products of deviations fo
 **Syntax:**
 _COVAR(array1,array2)_
 
-**Parameters:**
+**Where:**
 
-* `array1`: The first cell range of integers.
+* array1 is the first cell range of integers.
 
-* `array2`: The second cell range of integers.
+* array2 is the second cell range of integers.
 
 ## COVARIANCE.P
 
@@ -593,11 +593,11 @@ Returns population covariance, the average of the products deviation for each da
 
 _COVARIANCE.P(array1,array2)_
 
-**Parameters:**
+**Where:**
 
-* `array1`: The first cell range of integers.
+* array1 denotes the first cell range of integers.
 
-* `array2`: The second cell range of integers.
+* array2 denotes the second cell range of integers.
 
 ## COVARIANCE.S
 
@@ -607,11 +607,11 @@ Returns the sample covariance, the average of the products deviation for each da
 
 _COVARIANCE.S(array1,array2)_
 
-**Parameters:**
+**Where:**
 
-* `array1`: The first cell range of integers.
+* Array1 denotes the first cell range of integers.
 
-* `array2`: The second cell range of integers.
+* Array2 denotes the second cell range of integers.
 
 ## CRITBINOM
 
@@ -621,13 +621,13 @@ Returns the smallest value for which the cumulative binomial distribution is gre
 
 _CRITBINOM(trials,probability_s,alpha)_
 
-**Parameters:**
+**Where:**
 
-* `trials`: The number of Bernoulli trials.
+* Trials denotes the number of Bernoulli trials.
 
-* `probability_s`: The probability of a success on each trial.
+* Probability_s denotes the probability of a success on each trial.
 
-* `alpha`: The criterion value.
+* Alpha denotes the criterion value.
 
 **Remarks:**
 
@@ -650,9 +650,9 @@ The `DevSQ` returns the sum of squares of deviations of data points from their s
 
 _DEVSQ(number1, number2,...)_
 
-**Parameters:**
+**where:**
 
-* `number1, number2, ...`: Arguments for which, you want to calculate the sum of squared deviations. You can also use a single array or a reference to an array instead of arguments separated by commas.
+number1, number2, ... are arguments for which, you want to calculate the sum of squared deviations. You can also use a single array or a reference to an array instead of arguments separated by commas.
 
 **Remarks:**
 
@@ -666,13 +666,13 @@ The `Expon.Dist` function calculates the value of the probability density functi
 
 _EXPON.DIST(x,y,cumulative)_
 
-**Parameters:**
+**where:**
 
-* `x`: The value that evaluates the function.
+* x is the value that evaluates the function.
 
-* `y`: The parameter value.
+* y is the parameter value.
 
-* `cumulative`: A logical value for given function.
+* cumulative is a logical value for given function.
 
 **Remarks:**
 
@@ -688,13 +688,13 @@ Returns the exponential distribution
 
 _EXPONDIST(x,lambda,cumulative)_
 
-**Parameters:**
+**Where:**
 
-* `x`: The value of the function.
+* x denotes the value of the function.
 
-* `lambda`: The parameter value.
+* lambda denotes the parameter value.
 
-* `cumulative`: A logical value that indicates which form of the exponential function to provide. If cumulative is TRUE, EXPONDIST returns the cumulative distribution function; if FALSE, it returns the probability density function.
+* cumulative denotes a logical value that indicates which form of the exponential function to provide. If cumulative is TRUE, EXPONDIST returns the cumulative distribution function; if FALSE, it returns the probability density function.
 
 ## F.DIST 
 
@@ -704,15 +704,15 @@ The `F.Dist` function calculates the Probability Density Function or the Cumulat
 
 _F.DIST(x,degFreedom1,degFreedom2,cumulative)_ 
 
-**Parameters:**
+**where:**
 
-* `x`: The value that evaluates the function.
+* x is the value that evaluates the function.
 
-* `degFreedom1`: The numerator degree of freedom.
+* degFreedom1 is the numerator degree of freedom.
 
-* `degFreedom2`: The denominator degree of freedom. 
+* degFreedom1 is the denominator degree of freedom. 
 
-* `cumulative`: A logical value that determines the form of the function.
+* cumulative is a logical value that determines the form of the function.
 
 **Remarks:**
 
@@ -729,13 +729,13 @@ The `F.Dist.Rt` function calculates the F Probability Distribution that measures
 _F.DIST.RT(x, degFreedom1, degFreedom2)_ 
 
 
-**Parameters:**
+**where:**
 
-* `x`: The value that evaluates the function.
+* x is the value that evaluates the function.
 
-* `degFreedom1`: The numerator degree of freedom.
+* degFreedom1 is the numerator degree of freedom.
 
-* `degFreedom2`: The denominator degree of freedom. 
+* degFreedom2 is the denominator degree of freedom. 
 
 **Remarks:**
 
@@ -751,13 +751,13 @@ The `F.INV.RT` function calculates the inverse of the Cumulative F Distribution 
 
 _F.INV.RT(probability,degFreedom1,degFreedom2)_
 
-**Parameters:**
+**where:**
 
-* `probability`: A probability that corresponds to the normal distribution.
+* probability is a probability that corresponds to the normal distribution.
 
-* `degFreedom1`: The numerator degrees of freedom.
+* degFreedom1 is the numerator degrees of freedom.
 
-* `degFreedom2`: The denominator degrees of freedom.
+* degFreedom2 is the denominator degrees of freedom.
 
 **Remarks:**
 
@@ -773,13 +773,13 @@ Returns the F probability distribution (probability density or cumulative distri
 
 _FDIST(x,deg_freedom1,deg_freedom2)_
 
-**Parameters:**
+**Where:**
 
-* `x`: The value at which to evaluate the function.
+* x denotes the value at which to evaluate the function.
 
-* `deg_freedom1`: The numerator degrees of freedom.
+* deg_freedom1 denotes the numerator degrees of freedom.
 
-* `deg_freedom2`: The denominator degrees of freedom.
+* deg_freedom2 denotes the denominator degrees of freedom.
 
 **Remarks:**
 
@@ -803,13 +803,13 @@ Returns the inverse of the right-tailed F probability distribution for two data 
 
 _FINV(probability,deg_freedom1,deg_freedom2)_
 
-**Parameters:**
+**Where:**
 
-* `probability`: A probability associated with the F cumulative distribution.
+* Probability denotes a probability associated with the F cumulative distribution.
 
-* `deg_freedom1`: The numerator degrees of freedom.
+* Deg_freedom1 denotes the numerator degrees of freedom.
 
-* `deg_freedom2`: The denominator degrees of freedom.
+* Deg_freedom2  denotes the denominator degrees of freedom.
 
 
 ## FISHER
@@ -820,9 +820,9 @@ The `Fisher` returns the Fisher transformation at x. This transformation produce
 
 _FISHER(x)_ 
 
-**Parameters:**
+**where:**
 
-* `x`: A numeric value for which you want the transformation.
+x is a numeric value for which you want the transformation.
 
 **Remarks:**
 
@@ -836,9 +836,9 @@ The `FisherInv` returns the inverse of the Fisher transformation. If y = FISHER(
 
 _FISHERINV(y)_
 
-**Parameters:**
+**where:**
 
-* `y`: The value for which you want to perform the inverse of the transformation.
+y is the value for which you want to perform the inverse of the transformation.
 
 ## FORECAST
 
@@ -848,13 +848,13 @@ The `Forecast` calculates a future value by using existing values in a linear re
 
 _FORECAST(x, known_ys, known_xs)_
 
-**Parameters:**
+**where:**
 
-* `x`: The data point for which you want to predict a value.
+* x is the data point for which you want to predict a value.
 
-* `known_ys`: The dependent array or range of data.
+* known_ys is the dependent array or range of data.
 
-* `known_xs`: The independent array or range of data.
+* known_xs is the independent array or range of data.
 
 ## F.DIST.RT
 
@@ -864,13 +864,13 @@ The `F.DIST.RT` function calculates the F Probability Distribution, which measur
 
 _F.DIST.RT(x, degFreedom1, degFreedom2)_
 
-**Parameters:**
+**where:**
 
-* `x`: The value that evaluates the function.
+* x is the value that evaluates the function.
 
-* `degFreedom1`: The numerator degrees of freedom.
+* degFreedom1 is the numerator degrees of freedom.
 
-* `degFreedom2`: The denominator degrees of freedom.
+* DegFreedom2 is the denominator degrees of freedom.
 
 **Remarks:**
 
@@ -886,9 +886,9 @@ The `Geomean` returns the geometric mean of an array or range of positive data.
 
 _GEOMEAN(number1, number2,...)_
 
-**Parameters:**
+**where:**
 
-* `number1, number2, ...`: Arguments for which you want to calculate the mean.
+number1, number2, ... are arguments for which you want to calculate the mean.
 
 **Remarks:**
 
@@ -904,9 +904,9 @@ The `Harmean` returns the harmonic mean of a data set. The harmonic mean is the 
 
 _HARMEAN(number1, number2,...)_
 
-**Parameters:**
+**where:**
 
-* `number1, number2, ...`: Arguments for which you want to calculate the mean.
+number1, number2, ... are arguments for which you want to calculate the mean.
 
 **Remarks:**
 
@@ -922,11 +922,11 @@ The `Intercept` calculates the point at which, the least squares fit line will i
 
 _INTERCEPT(known_y's, known_x's)_
 
-**Parameters:**
+**where:**
 
-* `known_y's`: The dependent set of observations or data.
+* known_y's is the dependent set of observations or data.
 
-* `known_x's`: The independent set of observations or data.
+* known_x's is the independent set of observations or data.
 
 ## LARGE
 
@@ -936,11 +936,11 @@ The `Large` returns the k-th largest value in a data set.
 
 _LARGE(array, k)_
 
-**Parameters:**
+**where:**
 
-* `array`: The array or range of data for which, you want to determine the k-th largest value.
+* array is the array or range of data for which, you want to determine the k-th largest value.
 
-* `k`: The position (from the largest) in the array or cell range of data to return.
+* k is the position (from the largest) in the array or cell range of data to return.
 
 **Remarks:**
 
@@ -954,9 +954,9 @@ The `Max` returns the largest value in a set of values.
 
 _MAX(number1, number2, ...)_
 
-**Parameters:**
+**where:**
 
-* `number1, number2, ...`: Numbers for which you want to find the maximum value.
+number1, number2, ... are numbers for which you want to find the maximum value.
 
 ## MAXA
 
@@ -966,9 +966,9 @@ The `Maxa` returns the largest value in a list of arguments. Text and logical va
 
 _MAXA(value1, value2, ...)_
 
-**Parameters:**
+**where:**
 
-* `value1, value2, ...`: Values for which you want to find the largest value.
+* value1, value2, ... are values for which you want to find the largest value.
 
 **Remarks:**
 
@@ -988,9 +988,9 @@ The `Median` returns the median of the given numbers. The median is the number i
 
 _MEDIAN(number1, number2, ...)_
 
-**Parameters:**
+**where:**
 
-* `number1, number2, ...`: Numbers for which you want the median.
+number1, number2, ... are numbers for which you want the median.
 
 **Remarks:**
 
@@ -1004,9 +1004,9 @@ The `Min` returns the smallest number in a set of values.
 
 _MIN(number1, number2, ...)_
 
-**Parameters:**
+**where:** 
 
-* `number1, number2, ...`: Numbers for which you want to find the minimum value.
+number1, number2, ... are numbers for which you want to find the minimum value.
 
 **Remarks:**
 
@@ -1021,9 +1021,9 @@ The `Mina` returns the smallest value in the list of arguments. Text and logical
 
 _MINA(value1, value2, ...)_
 
-**Parameters:**
+**where:**
 
-* `value1, value2, ...`: Values for which, you want to find the smallest value.
+value1, value2, ... are values for which, you want to find the smallest value.
 
 **Remarks:**
 
@@ -1037,15 +1037,15 @@ The `NORM.DIST` function calculates the normal distribution for a supplied value
 
 _NORM.DIST(x,mean,stdev,cumulative)_
 
-**Parameters:**
+**where:**
 
-* `x`: The value for which you want the distribution.
+* x is the value for which you want the distribution.
 
-* `mean`: The arithmetic mean of the distribution.
+* mean is the arithmetic mean of the distribution.
 
-* `stdev`: The standard deviation of the distribution.
+* stdev is the standard deviation of the distribution.
 
-* `cumulative`: A logical value for given function.
+* cumulative is a logical value for given function.
 
 **Remarks:**
 
@@ -1087,9 +1087,9 @@ Returns the standard normal cumulative distribution.
 
 _NORMSDIST(z)_
 
-**Parameters:**
+**where:**
 
-* `z`: The value for which you want the distribution.
+* z is the value for which you want the distribution.
 
 **Remarks:**
 
@@ -1103,15 +1103,15 @@ The `Gamma.Inv` function returns the inverse of the Gamma Distribution.
 
 _GAMMA.INV(x,y,z,cumulative)_
 
-**Parameters:**
+**where:**
 
-* `x`: The value that evaluates the function.
+* x is the value that evaluates the function.
 
-* `y`: A distribution parameter.
+* y is a distribution parameter.
 
-* `z`: A distribution parameter.
+* z is a distribution parameter.
 
-* `cumulative`: A logical value that indicates which form of the exponential function to provide.
+* cumulative is a logical value that indicates which form of the exponential function to provide.
 
 **Remarks:**
 
@@ -1127,15 +1127,15 @@ Returns the gamma distribution
 
 _GAMMA.DIST(x,alpha,beta,cumulative)_
 
-**Parameters:**
+**Where:**
 
-* `x`: The value at which you want to evaluate the distribution.
+* x denotes the value at which you want to evaluate the distribution.
 
-* `alpha`: A parameter to the distribution.
+* alpha denotes a parameter to the distribution.
 
-* `beta`: A parameter to the distribution. If beta = 1, GAMMA.DIST returns the standard gamma distribution.
+* beta denotes a parameter to the distribution. If beta = 1, GAMMA.DIST returns the standard gamma distribution.
 
-* `cumulative`: A logical value that determines the form of the function. If cumulative is TRUE, GAMMA.DIST returns the cumulative distribution function; if FALSE, it returns the probability density function.
+* cumulative denotes a logical value that determines the form of the function. If cumulative is TRUE, GAMMA.DIST returns the cumulative distribution function; if FALSE, it returns the probability density function.
 
 ## GAMMADIST
 
@@ -1145,15 +1145,15 @@ Returns the gamma distribution
 
 _GAMMADIST(x,alpha,beta,cumulative)_
 
-**Parameters:**
+**Where:**
 
-* `x`: The value at which you want to evaluate the distribution.
+* x denotes the value at which you want to evaluate the distribution.
 
-* `alpha`: A parameter to the distribution.
+* alpha denotes a parameter to the distribution.
 
-* `beta`: A parameter to the distribution. If beta = 1, GAMMADIST returns the standard gamma distribution.
+* beta denotes a parameter to the distribution. If beta = 1, GAMMADIST returns the standard gamma distribution.
 
-* `cumulative`: A logical value that determines the form of the function. If cumulative is TRUE, GAMMADIST returns the cumulative distribution function; if FALSE, it returns the probability density function.
+* cumulative denotes a logical value that determines the form of the function. If cumulative is TRUE, GAMMADIST returns the cumulative distribution function; if FALSE, it returns the probability density function.
 
 ## GAMMAINV
 
@@ -1163,13 +1163,13 @@ Returns the inverse gamma cumulative distribution
 
 _GAMMAINV(probability,alpha,beta)_
 
-**Parameters:**
+**Where:**
 
-* `probability`: The probability associated with the gamma distribution.
+* probability denotes the probability associated with the gamma distribution.
 
-* `alpha`: A parameter to the distribution.
+* alpha denotes a parameter to the distribution.
 
-* `beta`: A parameter to the distribution. If beta = 1, GAMMAINV returns the standard gamma distribution.
+* beta denotes a parameter to the distribution. If beta = 1, GAMMAINV returns the standard gamma distribution.
 
 **Remarks:**
 
@@ -1187,9 +1187,9 @@ Calculates the natural logarithm of the gamma function for a supplied value
 
 _GAMMALN(x)_
 
-**Parameters:**
+**Where:**
 
-* `x`: The value for which you want to calculate `GAMMALN`.
+x denotes the value for which you want to calculate `GAMMALN`.
 
 ## GAMMALN.PRECISE
 
@@ -1199,9 +1199,9 @@ The `Gammaln.Precise` function returns the natural logarithm of the Gamma Distri
 
 _GAMMALN.PRECISE(x)_ 
 
-**Parameters:**
+**where:**
 
-* `x`: The positive numeric value that evaluates the function. 
+* x is the positive numeric value that evaluates the function. 
 
 **Remarks:**
 
@@ -1217,9 +1217,9 @@ Returns numbers in a exponential growth trend, based on a set of supplied x- and
 
 _GROWTH(known&#95;y's, [known&#95;x's], [new&#95;x's], [const])_
 
-**Parameters:**
+**Where:**
 
-* `known_y's`: The set of y-values you already know in the relationship `y = b*mx`.
+* Known_y's denotes the set of y-values you already know in the relationship `y = b*mx`.
 
 	* If the array known_y's is in a single column, then each column of known_x's is interpreted as a separate variable.
 
@@ -1227,13 +1227,13 @@ _GROWTH(known&#95;y's, [known&#95;x's], [new&#95;x's], [const])_
 
 	* If any of the numbers in known_y's is 0 or negative, GROWTH returns the #NUM! error value.
 
-* `known_x's` (optional): An optional set of x-values that you may already know in the relationship `y = b*mx`.
+* Known_x's denotes an optional set of x-values that you may already know in the relationship `y = b*mx`.
 
 	* The array known_x's can include one or more sets of variables. If only one variable is used, known_y's and known_x's can be ranges of any shape, as long as they have equal dimensions. If more than one variable is used, known_y's must be a vector (that is, a range with a height of one row or a width of one column).
 
 	* If known_x's is omitted, it is assumed to be the array {1,2,3,...} that is the same size as known_y's.
 
-* `new_x's`: New x-values for which you want GROWTH to return corresponding y-values.
+* New_x's denotes are new x-values for which you want GROWTH to return corresponding y-values.
 
 	* New_x's must include a column (or row) for each independent variable, just as known_x's does. So, if known_y's is in a single column, known_x's and new_x's must have the same number of columns. If known_y's is in a single row, known_x's and new_x's must have the same number of rows.
 
@@ -1241,7 +1241,7 @@ _GROWTH(known&#95;y's, [known&#95;x's], [new&#95;x's], [const])_
 
 	* If both known_x's and new_x's are omitted, they are assumed to be the array {1,2,3,...} that is the same size as known_y's.
 
-* `const`: A logical value specifying whether to force the constant b to equal 1.
+* Const denotes a logical value specifying whether to force the constant b to equal 1.
 
 	* If const is TRUE or omitted, b is calculated normally.
 
@@ -1261,15 +1261,15 @@ Returns the hypergeometric distribution 
 
 _HYPGEOMDIST(sample&#95;s,number&#95;sample,population&#95;s,number&#95;pop)_
 
-**Parameters:**
+**Where:**
 
-* `sample_s`: The number of successes in the sample.
+* Sample_s denotes the number of successes in the sample.
 
-* `number_sample`: The size of the sample.
+* Number_sample denotes the size of the sample.
 
-* `population_s`: The number of successes in the population.
+* Population_s denotes tThe number of successes in the population.
 
-* `number_pop`: The population size.
+* Number_pop denotes the population size.
 
 ## HYPGEOM.DIST
 
@@ -1279,17 +1279,17 @@ Returns the hypergeometric distribution
 
 _HYPGEOM.DIST(sample&#95;s,number&#95;sample,population&#95;s,number&#95;pop,cumulative)_
 
-**Parameters:**
+**Where:**
 
-* `sample_s`: The number of successes in the sample.
+* sample_s denotes the number of successes in the sample.
 
-* `number_sample`: The size of the sample.
+* number_sample denotes the size of the sample.
 
-* `population_s`: The number of successes in the population.
+* population_s denotes the number of successes in the population.
 
-* `number_pop`: The population size.
+* number_pop denotes the population size.
 
-* `cumulative`: A logical value that determines the form of the function. If cumulative is TRUE, then HYPGEOM.DIST returns the cumulative distribution function; if FALSE, it returns the probability mass function.
+* cumulative denotes a logical value that determines the form of the function. If cumulative is TRUE, then HYPGEOM.DIST returns the cumulative distribution function; if FALSE, it returns the probability mass function.
 
 ## KURT
 
@@ -1299,9 +1299,9 @@ Returns the kurtosis of a data set
 
 _KURT(number1, [number2], ...)_
 
-**Parameters:**
+**where:**
 
-* `number1` (required), `number2`, `...` (optional): 1 to 255 arguments for which you want to calculate kurtosis. You can also use a single array or a reference to an array instead of arguments separated by commas.
+* number1, number2, ...    Number1 is required, subsequent numbers are optional. 1 to 255 arguments for which you want to calculate kurtosis. You can also use a single array or a reference to an array instead of arguments separated by commas.
 
 ## LOGEST
 
@@ -1311,27 +1311,27 @@ Returns the parameters of an exponential trend for a supplied set of x- and y- v
 
 _LOGEST(known_y's, [known_x's], [const], [stats])_
 
-**Parameters:**
+**Where:**
 
-* `known_y's`: The set of y-values you already know in the relationship `y = b*mx`.
+* Known_y's denotes the set of y-values you already know in the relationship `y = b*mx`.
 
 	* If the array known_y's is in a single column, then each column of known_x's is interpreted as a separate variable.
 
 	* If the array known_y's is in a single row, then each row of known_x's is interpreted as a separate variable.
 
-* `known_x's` (optional): An optional set of x-values that you may already know in the relationship y = b*mx.
+* Known_x's denotes an optional set of x-values that you may already know in the relationship y = b*mx.
 
 	* The array known_x's can include one or more sets of variables. If only one variable is used, known_y's and known_x's can be ranges of any shape, as long as they have equal dimensions. If more than one variable is used, known_y's must be a range of cells with a height of one row or a width of one column (which is also known as a vector).
 
 	* If known_x's is omitted, it is assumed to be the array {1,2,3,...} that is the same size as known_y's.
 
-* `const`: A logical value specifying whether to force the constant b to equal 1.
+* Const denotes a logical value specifying whether to force the constant b to equal 1.
 
 	* If const is TRUE or omitted, b is calculated normally.
 
 	* If const is FALSE, b is set equal to 1, and the m-values are fitted to `y = mx`.
 
-* `stats`: A logical value specifying whether to return additional regression statistics.
+* Stats denotes a logical value specifying whether to return additional regression statistics.
 
 	* If stats is TRUE, LOGEST returns the additional regression statistics, so the returned array.
 
@@ -1345,13 +1345,13 @@ Returns the inverse of the lognormal distribution
 
 _LOGINV(probability, mean, standard_dev)_
 
-**Parameters:**
+**Where:**
 
-* `probability`: A probability associated with the lognormal distribution.
+* probability denotes a probability associated with the lognormal distribution.
 
-* `mean`: The mean of ln(x).
+* mean denotes the mean of ln(x).
 
-* `standard_dev`: The standard deviation of ln(x).
+* standard_dev denotes the standard deviation of ln(x).
 
 ## LOGNORMDIST
 
@@ -1361,13 +1361,13 @@ Returns the cumulative log-normal distribution
 
 _LOGNORMDIST(x,mean,standard_dev)_
 
-**Parameters:**
+**Where:**
 
-* `x`: The value at which to evaluate the function.
+* x  denotes the value at which to evaluate the function.
 
-* `mean`: The mean of ln(x).
+* mean denotes the mean of ln(x).
 
-* `standard_dev`: The standard deviation of ln(x).
+* standard_dev denotes the standard deviation of ln(x).
 
 
 ## LOGNORM.DIST
@@ -1378,15 +1378,15 @@ The `Lognorm.Dist` function calculates the Log-Normal Probability Density Functi
 
 _LOGNORM.DIST(x,mean,stdev,cumulative)_
 
-**Parameters:**
+**where:**
 
-* `x`: The value that evaluates the function.
+* x is the value that evaluates the function.
 
-* `mean`: The mean value of ln(x).
+* mean is the mean value of ln(x).
 
-* `stdev`: The standard deviation of ln(x).
+* stdev is the standard deviation of ln(x).
 
-* `cumulative`: A logical value that determines the form of the function. 
+* cumulative is a logical value that determines the form of the function. 
 
 **Remarks:**
 
@@ -1402,13 +1402,13 @@ The `Lognorm.Inv` function calculates the inverse of the Cumulative Log-Normal D
 
 _LOGNORM.INV(probability, mean, stdev)_
 
-**Parameters:**
+**where:**
 
-* `probability`: A probability that corresponds to the lognormal distribution.
+* probability is a probability that corresponds to the lognormal distribution.
 
-* `mean`: The arithmetic mean of In(x).
+* mean is the arithmetic mean of In(x).
 
-* `stdev`: The standard deviation of ln(x).
+* stdev is the standard deviation of ln(x).
 
 **Remarks:**
 
@@ -1424,15 +1424,15 @@ Returns the largest value from a subset of values in a list that are specified a
 
 _MAXIFS(max_range, criteria_range1, criteria1, [criteria_range2, criteria2], ...)_
 
-**Parameters:**
+**Where:**
 
-* `max_range`: The actual range of cells in which the maximum will be determined.
+* max_range denotes the actual range of cells in which the maximum will be determined.
 
-* `criteria_range1`: The set of cells to evaluate with the criteria.
+* criteria_range1 is the set of cells to evaluate with the criteria.
 
-* `criteria1`: The criteria in the form of a number, expression, or text that defines which cells will be evaluated as maximum. The same set of criteria works for the MINIFS, SUMIFS, and AVERAGEIFS functions.
+* criteria1 is the criteria in the form of a number, expression, or text that defines which cells will be evaluated as maximum. The same set of criteria works for the MINIFS, SUMIFS, and AVERAGEIFS functions.
 
-* `criteria_range2, criteria2, ...`: Additional ranges and their associated criteria. You can enter up to 126 range/criteria pairs.
+* criteria_range2,criteria2, ... is additional ranges and their associated criteria. You can enter up to 126 range/criteria pairs.
 
 **Remarks:**
 
@@ -1446,15 +1446,15 @@ Returns the smallest value from a subset of values in a list that are specified 
 
 _MINIFS(min_range, criteria_range1, criteria1, [criteria_range2, criteria2], ...)_
 
-**Parameters:**
+**Where:**
 
-* `min_range`: The actual range of cells in which the minimum value will be determined.
+* min_range denotes the actual range of cells in which the minimum value will be determined.
 
-* `criteria_range1`: The set of cells to evaluate with the criteria.
+* criteria_range1 is the set of cells to evaluate with the criteria.
 
-* `criteria1`: The criteria in the form of a number, expression, or text that defines which cells will be evaluated as minimum. The same set of criteria works for the MAXIFS, SUMIFS and AVERAGEIFS functions.
+* criteria1 is the criteria in the form of a number, expression, or text that defines which cells will be evaluated as minimum. The same set of criteria works for the MAXIFS, SUMIFS and AVERAGEIFS functions.
 
-* `criteria_range2, criteria2, ...`: Additional ranges and their associated criteria. You can enter up to 126 range/criteria pairs.
+* criteria_range2,criteria2, ... is additional ranges and their associated criteria.You can enter up to 126 range/criteria pairs.
 
 **Remark:**
 
@@ -1468,11 +1468,11 @@ Returns the Mode (the most frequently occurring value) of a list of supplied num
 
 _MODE(number1,[number2],...)_
 
-**Parameters:**
+**Where:**
 
-* `number1`: The first number argument for which you want to calculate the mode.
+* number1 denotes the first number argument for which you want to calculate the mode.
 
-* `number2, ...`: Number arguments 2 to 255 for which you want to calculate the mode. You can also use a single array or a reference to an array instead of arguments separated by comma.
+* number2,... is number arguments 2 to 255 for which you want to calculate the mode. You can also use a single array or a reference to an array instead of arguments separated by comma
 
 ## MODE.MULT
 
@@ -1482,11 +1482,11 @@ Returns a vertical array of the most frequently occurring values in an array or 
 
 _MODE.MULT((number1,[number2],...)_
 
-**Parameters:**
+**Where:**
 
-* `number1`: The first number argument for which you want to calculate the mode.
+* number1 denotes the first number argument for which you want to calculate the mode.
 
-* `number2, ...`: Number arguments 2 to 254 for which you want to calculate the mode. You can also use a single array or a reference to an array instead of arguments separated by commas.
+* number2, ... denotes number arguments 2 to 254 for which you want to calculate the mode. You can also use a single array or a reference to an array instead of arguments separated by commas.
 
 **Remarks:**
 
@@ -1506,11 +1506,11 @@ Returns the Mode (the most frequently occurring value) of a list of supplied num
 
 _MODE.SNGL(number1,[number2],...)_
 
-**Parameters:**
+**Where:**
 
-* `number1`: The first argument for which you want to calculate the mode.
+* number1 denotes the first argument for which you want to calculate the mode.
 
-* `number2, ...`: Arguments 2 to 254 for which you want to calculate the mode. You can also use a single array or a reference to an array instead of arguments separated by commas.
+* number2, ... denotes arguments 2 to 254 for which you want to calculate the mode. You can also use a single array or a reference to an array instead of arguments separated by commas.
 
 ## NEGBINOMDIST
 
@@ -1520,11 +1520,11 @@ Returns the negative binomial distribution
 
 _NEGBINOMDIST(number_f,number_s,probability_s)_
 
-**Parameters:**
+**Where:**
 
-* `number_f`: The number of failures.
-* `number_s`: The threshold number of successes.
-* `probability_s`: The probability of a success.
+* number_f is the number of failures.
+* number_s  is the threshold number of successes.
+* probability_s is the probability of a success.
 
 ## NORMINV
 
@@ -1533,13 +1533,13 @@ Returns the inverse of the normal cumulative distribution
 **Syntax:**
 _NORMINV(probability,mean,standard_dev)_
 
-**Parameters:**
+**Where:**
 
-* `probability`: A probability corresponding to the normal distribution.
+* probability denotes a probability corresponding to the normal distribution.
 
-* `mean`: The arithmetic mean of the distribution.
+* mean denotes the arithmetic mean of the distribution.
 
-* `standard_dev`: The standard deviation of the distribution.
+* standard_dev  denotes the standard deviation of the distribution.
 
 **Remarks:**
 
@@ -1559,9 +1559,9 @@ Returns the inverse of the standard normal cumulative distribution
 
 _NORMSINV(probability)_
 
-**Parameters:**
+**Where:**
 
-* `probability`: A probability corresponding to the normal distribution.
+probability denotes a probability corresponding to the normal distribution.
 
 **Remarks:**
 
@@ -1577,13 +1577,13 @@ Returns the inverse of the normal cumulative distribution
 
 _NORM.INV(probability,mean,standard_dev)_
 
-**Parameters:**
+**Where:**
 
-* `probability`: A probability corresponding to the normal distribution.
+* probability denotes a probability corresponding to the normal distribution.
 
-* `mean`: The arithmetic mean of the distribution.
+* mean denotes the arithmetic mean of the distribution.
 
-* `standard_dev`: The standard deviation of the distribution.
+* standard_dev denotes the standard deviation of the distribution.
 
 **Remarks:**
 
@@ -1604,11 +1604,11 @@ The `Norm.S.Dist` function returns the standard normal distribution.
 
 _NORM.S.DIST(val, cumulative)_
 
-**Parameters:**
+**where:**
 
-* `val`: The value for which you want the distribution.
+* val is the value for which you want the distribution.
 
-* `cumulative`: A logical value that determines the form of the function.
+* cumulative is a logical value that determines the form of the function.
 
 ## NORM.S.INV
 
@@ -1618,9 +1618,9 @@ The `Norm.S.Inv` function returns the inverse of the standard normal cumulative 
 
 _NORM.S.INV(probability)_
 
-**Parameters:**
+**where:**
 
-* `probability`: A probability that corresponds to the normal distribution.
+probability is a probability that corresponds to the normal distribution.
 
 ## NEGBINOM.DIST
 
@@ -1630,15 +1630,15 @@ The `Negbinom.Dist` function calculates the probability mass function or the cum
 
 _NEGBINOM.DIST(F_number,S_number,S_probability,cumulative)_
 
-**Parameters:**
+**where:**
 
-* `F_number`: The number of failures.
+* F_number is the number of failures.
 
-* `S_number`: The threshold number of successes.
+* S_number is the threshold number of successes.
 
-* `S_probability`: The probability of a success.
+* S_probability is the probability of a success.
 
-* `cumulative`: A logical value that determines the form of the function.
+* cumulative is a logical value that determines the form of the function.
 
 ## PEARSON
 
@@ -1648,11 +1648,11 @@ Returns the Pearson product moment correlation coefficient
 
 _PEARSON(array1, array2)_
 
-**Parameters:**
+**Where:**
 
-* `array1`: A set of independent values.
+* array1 denotes a set of independent values.
 
-* `array2`: A set of dependent values.
+* array2 denotes a set of dependent values.
 
 ## PERCENTILE
 
@@ -1662,11 +1662,11 @@ Returns the K'th percentile of values in a supplied range, where K is in the ran
 
 _PERCENTILE(array,k)_
 
-**Parameters:**
+**Where:**
 
-* `array`: Array or range of data that defines relative standing.
+* array denotes the array or range of data that defines relative standing.
 
-* `k`: Percentile value in the range 0..1, inclusive.
+* k denotes the percentile value in the range 0..1, inclusive.
 
 **Remarks:**
 
@@ -1684,11 +1684,11 @@ The `Percentile.Exc` function returns the k-th percentile of values in a range, 
 
 _PERCENTILE.EXC(array, k)_
 
-**Parameters:**
+**where:**
 
-* `array`: Range of data that defines relative standing.
+* array is the range of data that defines relative standing.
 
-* `k`: Percentile value in the range of 0 to 1.
+* k is the percentile value in the range of 0 to 1.
 
 **Remarks:**
 
@@ -1704,11 +1704,11 @@ The `Percentile.Inc` function returns the k-th percentile of values in a range, 
 
 _PERCENTILE.INC (array,k)_
 
-**Parameters:**
+**where:**
 
-* `array`: Range of data that defines relative standing.
+* array is the range of data that defines relative standing.
 
-* `k`: Percentile value in the range 0 to 1.
+* k is the percentile value in the range 0 to 1.
 
 **Remarks:**
 
@@ -1724,13 +1724,13 @@ Returns the rank of a value in a data set, as a percentage (0 - 1 inclusive)
 
 _PERCENTRANK(array,x,[significance])_
 
-**Parameters:**
+**Where:**
 
-* `array`: Array or range of data with numeric values that defines relative standing.
+* array  denotes the array or range of data with numeric values that defines relative standing.
 
-* `x`: Value for which you want to know the rank.
+* x denotes the value for which you want to know the rank.
 
-* `significance`: Value that identifies the number of significant digits for the returned percentage value. If omitted, PERCENTRANK uses three digits (0.xxx).
+* significance denotes a value that identifies the number of significant digits for the returned percentage value. If omitted, PERCENTRANK uses three digits (0.xxx).
 
 **Remarks:**
 
@@ -1748,13 +1748,13 @@ Returns the rank of value in dataset as a percentage of the data set as percenta
 
 _PERCENTRANK.EXC(array,x,[significance])_
 
-**Parameters:**
+**Where:**
 
-* `array`: Array or range of data with numeric values that defines relative standing.
+* array denotes the array or range of data with numeric values that defines relative standing
 
-* `x`: Value for which you want to know the rank.
+* x denotes the value for which you want to know the rank.
 
-* `significance`: Value that identifies the number of significant digits for the returned percentage value. If omitted, PERCENTRANK.EXC uses three digits (0.xxx).
+* significance denotes a value that identifies the number of significant digits for the returned percentage value. If omitted, PERCENTRANK.EXC uses three digits (0.xxx).
 
 **Remarks:**
 
@@ -1771,13 +1771,15 @@ Returns the rank of value in dataset as a percentage of the data set as percenta
 **Syntax:**
 _PERCENTRANK.INC(array,x,[significance])_
 
-**Parameters:**
+**Where:**
 
-* `array`: Array or range of data with numeric values that defines relative standing.
+* array denotes the array or range of data with numeric values that defines relative standing.
 
-* `x`: Value for which you want to know the rank.
+* x denotes the value for which you want to know the rank.
 
-* `significance`: Value that identifies the number of significant digits for the returned percentage value. If omitted, PERCENTRANK.INC uses three digits (0.xxx).
+* significance denotes a value that identifies the number of significant digits for the returned percentage value. If omitted, PERCENTRANK.INC uses three digits (0.xxx).
+
+* bytes specify the number of characters
 
 ## PERMUT
 
@@ -1787,11 +1789,11 @@ The `Permut` returns the number of permutations for a given number of objects th
 
 _PERMUT(number, number_chosen)_
 
-**Parameters:**
+**where:**
 
-* `number`: Integer that describes the number of objects.
+* number is an integer that describes the number of objects.
 
-* `number_chosen`: Integer that describes the number of objects in each permutation.
+* number_chosen is an integer that describes the number of objects in each permutation.
 
 **Remarks:**
 
@@ -1807,11 +1809,11 @@ The `PermutationA` function returns the number of permutations for a given numbe
 
 _PERMUTATIONA(number, number-chosen)_
 
-**Parameters:**
+**where:**
 
-* `number`: Integer that describes the total number of objects.
+* number is an integer that describes the total number of objects.
 
-* `number-chosen`: Integer that describes the number of objects in each permutation.
+* number-chosen is an integer that describes the number of objects in each permutation.
 
 **Remarks:**
 
@@ -1827,13 +1829,13 @@ Returns the Poisson distribution
 
 _POISSON(x,mean,cumulative))_
 
-**Parameters:**
+**Where:**
 
-* `x`: Number of events.
+* x denotes the number of events.
 
-* `mean`: Expected numeric value.
+* mean denotes the expected numeric value.
 
-* `cumulative`: Logical value that determines the form of the probability distribution returned. If cumulative is TRUE, POISSON returns the cumulative Poisson probability that the number of random events occurring will be between zero and x inclusive; if FALSE, it returns the Poisson probability mass function that the number of events occurring will be exactly x.
+* cumulative  denotes a logical value that determines the form of the probability distribution returned. If cumulative is TRUE, POISSON returns the cumulative Poisson probability that the number of random events occurring will be between zero and x inclusive; if FALSE, it returns the Poisson probability mass function that the number of events occurring will be exactly x.
 
 
 ## POISSON.DIST
@@ -1844,13 +1846,13 @@ The `Poisson.Dist` function calculates the Poisson Probability Mass Function or 
 
 _POISSON.DIST(x,mean,cumulative)_
 
-**Parameters:**
+**where:**
 
-* `x`: Number of events.
+* x is the number of events.
 
-* `mean`: Expected numeric value.
+* mean is the expected numeric value.
 
-* `cumulative`: Logical value that determines the form of the probability distribution returned.
+* cumulative is a logical value that determines the form of the probability distribution returned.
 
 **Remarks:**
 
@@ -1866,15 +1868,15 @@ Returns the probability that values in a supplied range are within given limits.
 
 _PROB(x_range, prob_range, [lower_limit], [upper_limit])_
 
-**Parameters:**
+**Where:**
 
-* `x_range`: Range of numeric values of x with which there are associated probabilities.
+* x_range is the range of numeric values of x with which there are associated probabilities.
 
-* `prob_range`: Set of probabilities associated with values in x_range.
+* prob_range denotes a set of probabilities associated with values in x_range.
 
-* `lower_limit`: Lower bound on the value for which you want a probability.
+* lower_limit is the lower bound on the value for which you want a probability.
 
-* `upper_limit` (optional): Upper bound on the value for which you want a probability.
+* upper_limit is the optional upper bound on the value for which you want a probability.
 
 **Remarks:**
 
@@ -1893,11 +1895,13 @@ Returns the specified quartile of a set of supplied numbers, based on percentile
 **Syntax:**
 _QUARTILE(array,quart)_
 
-**Parameters:**
+**Where:**
 
-* `array`: Array or cell range of numeric values for which you want the quartile value.
+* array denotes the array or cell range of numeric values for which you want the quartile value.
 
-* `quart`: Indicates which value to return.
+* quart indicates which value to return.
+
+* bytes specify the number of characters
 
 <table>
 <tr>
@@ -1935,11 +1939,11 @@ Returns the specified quartile of a set of supplied numbers, based on percentile
 
 _QUARTILE.EXC(array, quart)_
 
-**Parameters:**
+**Where:**
 
-* `array`: Array or cell range of numeric values for which you want the quartile value.
+* array denotes the array or cell range of numeric values for which you want the quartile value.
 
-* `quart`: Indicates which value to return.
+* quart indicates which value to return.
 
 **Remarks:**
 
@@ -1959,11 +1963,11 @@ Returns the specified quartile of a set of supplied numbers, based on percentile
 
 _QUARTILE.INC(array,quart)_
 
-**Parameters:**
+**Where:**
 
-* `array`: Array or cell range of numeric values for which you want the quartile value.
+* array  denotes the array or cell range of numeric values for which you want the quartile value.
 
-* `quart`: Indicates which value to return.
+* quart indicates which value to return.
 
 <table>
 <tr><th>If quart equals</th>
@@ -2011,13 +2015,13 @@ Returns the statistical rank of a given value, within a supplied array of values
 **Syntax:**
 _RANK.AVG(number,ref,[order])_
 
-**Parameters:**
+**Where:**
 
-* `number`: Number whose rank you want to find.
+* Number denotes the number whose rank you want to find.
 
-* `ref`: Array of, or a reference to, a list of numbers. Non-numeric values in ref are ignored.
+* Ref denotes an array of, or a reference to, a list of numbers. Non-numeric values in Ref are ignored.
 
-* `order`: Number specifying how to rank number.
+* Order is a number specifying how to rank number.
 
 **Remarks:**
 
@@ -2033,11 +2037,11 @@ The `Rank.Eq` function returns the statistical rank of a given value within a su
 
 _RANK.EQ(number, ref)_
 
-**Parameters:**
+**where:**
 
-* `number`: Value for which you want to find the rank.
+* number is the value for which you want to find the rank.
 
-* `ref`: Array of values containing the supplied number.
+* ref is an array of values containing the supplied number.
 
 ## RSQ
 
@@ -2047,11 +2051,11 @@ The `RSQ` returns the square of the Pearson product moment correlation coefficie
 
 _RSQ(known_y's, known_x's)_
 
-**Parameters:**
+**where:**
 
-* `known_y's`: Array or range of data points.
+* known_y's is an array or range of data points.
 
-* `known_x's`: Array or range of data points.
+* known_x's is an array or range of data points.
 
 ## SKEW
 
@@ -2061,9 +2065,9 @@ Returns the skewness of a distribution
 
 _SKEW(number1, [number2], ...)_
 
-**Parameters:**
+**Where:**
 
-* `number1, number2, ...`: Number1 is required, subsequent numbers are optional. 1 to 255 arguments for which you want to calculate skewness. You can also use a single array or a reference to an array instead of arguments separated by commas.
+number1, number2, ...    Number1 is required, subsequent numbers are optional. 1 to 255 arguments for which you want to calculate skewness. You can also use a single array or a reference to an array instead of arguments separated by commas.
 
 ## SKEW.P
 
@@ -2073,9 +2077,9 @@ Returns the skewness of a distribution
 
 _SKEW.P(number 1, [number 2],…)_
 
-**Parameters:**
+**Where:**
 
-* `number 1, number 2, …`: Number 1 is required, subsequent numbers are optional. Number 1, number 2, … are 1 to 254 numbers or names, arrays, or reference that contain numbers for which you want the population skewness.
+number 1, number 2,…    Number 1 is required, subsequent numbers are optional. Number 1, number 2,… are 1 to 254 numbers or names, arrays, or reference that contain numbers for which you want the population skewness.
 
 **Remarks:**
 
@@ -2101,11 +2105,11 @@ Returns the slope of the linear regression line through a supplied series of x- 
 
 _SLOPE(known_y's, known_x's)_
 
-**Parameters:**
+**Where:**
 
-* `known_y's`: An array or cell range of numeric dependent data points.
+* known_y's denotes an array or cell range of numeric dependent data points.
 
-* `known_x's`: Set of independent data points.
+* known_x's denotes the set of independent data points.
 
 ## SMALL
 
@@ -2115,11 +2119,11 @@ The `Small` returns the k-th smallest value in a data set.
 
 _SMALL(array, k)_
 
-**Parameters:**
+**where:**
 
-* `array`: Array or range of numerical data for which you want to determine the k-th smallest value.
+* array is an array or range of numerical data for which you want to determine the k-th smallest value.
 
-* `k`: Position (from the smallest) in the array or range of data to return.
+* k is the position (from the smallest) in the array or range of data to return.
 
 ## STANDARDIZE
 
@@ -2129,13 +2133,13 @@ The `Standardize` returns a normalized value from a distribution characterized b
 
 _Standardize(x, mean, standard_dev))
 
-**Parameters:**
+**where:**
 
-* `x`: Value that you want to normalize.
+* x is the value that you want to normalize.
 
-* `mean`: Arithmetic mean of the distribution.
+* mean is the arithmetic mean of the distribution.
 
-* `standard_dev`: Standard deviation of the distribution.
+* standard_dev is the standard deviation of the distribution.
 
 **Remarks:**
 
@@ -2149,11 +2153,11 @@ Returns the standard deviation of a supplied set of values (which represent a sa
 
 _STDEV(number1,[number2],...)_
 
-**Parameters:**
+**where:**
 
-* `number1`: First number argument corresponding to a sample of a population.
+* number1 is the first number argument corresponding to a sample of a population.
 
-* `number2, ...`: Number arguments 2 to 255 corresponding to a sample of a population. You can also use a single array or a reference to an array instead of arguments separated by commas.
+* number2… is the number arguments 2 to 255 corresponding to a sample of a population. You can also use a single array or a reference to an array instead of arguments separated by commas.
 
 ## STDEVA
 
@@ -2163,9 +2167,9 @@ Estimates standard deviation based on a sample. The standard deviation is a meas
 
 _STDEVA(value1, value2 , ...)_
 
-**Parameters:**
+**where:**
 
-* `value1, value2, ...`: Values corresponding to a sample of a population. You can also use a single array or a reference to an array instead of arguments separated by commas.
+* value1, value2, ... are values corresponding to a sample of a population. You can also use a single array or a reference to an array instead of arguments separated by commas.
 
 **Remarks:**
 
@@ -2179,9 +2183,9 @@ Calculates the standard deviation based on the entire population given as argume
 
 _STDEVPA(value1, value2, ...)_
 
-**Parameters:**
+**where:**
 
-* `value1, value2, ...`: Values corresponding to a population. You can also use a single array or a reference to an array instead of arguments separated by commas.
+* value1, value2, ... are values corresponding to a population. You can also use a single array or a reference to an array instead of arguments separated by commas.
 
 **Remarks:**
 
@@ -2195,11 +2199,11 @@ The `STDEV.P` function calculates the standard deviation of a supplied set of va
 
 _STDEV.P(number1,[number2],...])_
 
-**Parameters:**
+**where:**
 
-* `number1`: First number argument corresponding to a population.
+* number1 is the first number argument corresponding to a population.
 
-* `number2, ...`: Arguments 2 to 254 corresponding to a population.
+* number2 ... are the arguments 2 to 254 corresponding to a population.
 
 **Remarks:**
 
@@ -2217,11 +2221,11 @@ The `STDEV.S` function calculates the sample standard deviation of a supplied se
 
 _STDEV.S(number1,[number2],...])_
 
-**Parameters:**
+**where:**
 
-* `number1`: First number argument corresponding to a population.
+* number1 is the first number argument corresponding to a population.
 
-* `number2, ...`: Arguments 2 to 254 corresponding to a population.
+* Number2, ... are the arguments 2 to 254 corresponding to a population.
 
 **Remarks:**
 
@@ -2238,11 +2242,11 @@ Returns the standard error of the predicted y-value for each x in the regression
 **Syntax:**
 _STEYX(known_y's, known_x's)_
 
-**Parameters:**
+**Where:**
 
-* `known_y's`: Array or range of dependent data points.
+* Known_y's denotes an array or range of dependent data points.
 
-* `known_x's`: Array or range of independent data points.
+* Known_x's denotes an array or range of independent data points
 
 ## T.DIST
 
@@ -2252,13 +2256,13 @@ The `T.Dist` returns the Percentage Points (probability) for the Student t-distr
 
 _TDIST(x,deg_freedom,tails)_
 
-**Parameters:**
+**where:**
 
-* `x`: Numeric value at which to evaluate the distribution.
+* X is the numeric value at which to evaluate the distribution.
 
-* `deg_freedom`: Integer indicating the number of degrees of freedom.
+* Deg_freedom  is an integer indicating the number of degrees of freedom.
 
-* `tails`: Number of distribution tails to return. If tails = 1, TDIST returns the one-tailed distribution. If tails = 2, TDIST returns the two-tailed distribution.
+* Tails is the number of distribution tails to return. If Tails = 1, TDIST returns the one-tailed distribution. If Tails = 2, TDIST returns the two-tailed distribution.
 
 **Remarks:**
 
@@ -2284,11 +2288,11 @@ The `T.INV` returns the left-tailed inverse of the Student's t-distribution.
 
 _T.INV(probability,deg_freedom)_
 
-**Parameters:**
+**where:**
 
-* `probability`: Probability associated with the Student's t-distribution.
+* Probability is the probability associated with the Student's t-distribution.
 
-* `deg_freedom`: Number of degrees of freedom with which to characterize the distribution.
+* Deg_freedom is the number of degrees of freedom with which to characterize the distribution.
 
 **Remarks:**
 
@@ -2308,11 +2312,11 @@ Returns the mean of the interior of a data set. `TRIMMEAN` calculates the mean t
 
 _TRIMMEAN(array, percent)_
 
-**Parameters:**
+**where:**
 
-* `array`: Array or range of values to trim and average.
+* array is the array or range of values to trim and average.
 
-* `percent`: Fractional number of data points to exclude from the calculation. For example, if percent = 0.2, 4 points are trimmed from a data set of 20 points (20 x 0.2): 2 from the top and 2 from the bottom of the set.
+* percent is the fractional number of data points to exclude from the calculation. For example, if percent = 0.2, 4 points are trimmed from a data set of 20 points (20 x 0.2): 2 from the top and 2 from the bottom of the set.
 
 **Remarks:**
 
@@ -2328,11 +2332,11 @@ Returns the variance of a supplied set of values (which represent a sample of a 
 
 _VAR(number1,[number2],...)_
 
-**Parameters:**
+**Where:**
 
-* `number1`: First number argument corresponding to a sample of a population.
+* Number1 denotes the first number argument corresponding to a sample of a population.
 
-* `number2, ...`: Number arguments 2 to 255 corresponding to a sample of a population.
+* Number2, ... denotes number arguments 2 to 255 corresponding to a sample of a population.
 
 ## VAR.P
 
@@ -2342,11 +2346,11 @@ Calculates variance based on the entire population (ignores logical values and t
 
 _VAR.P(number1,[number2],...)_
 
-**Parameters:**
+**where:**
 
-* `number1`: First number argument corresponding to a population.
+* number1 is the first number argument corresponding to a population.
 
-* `number2, ...` (optional): Number arguments 2 to 254 corresponding to a population.
+* number2, ... is Optional. Number arguments 2 to 254 corresponding to a population.
 
 **Remarks:**
 
@@ -2370,9 +2374,9 @@ Calculates variance based on the entire population. In addition to numbers and t
 
 _VARPA(value1, value2, ...)_
 
-**Parameters:**
+**where:**
 
-* `value1, value2, ...`: Arguments corresponding to a population.
+* value1, value2, ... are arguments corresponding to a population.
 
 **Remarks:**
 
@@ -2388,9 +2392,9 @@ The `VarA` function returns the variance of a population based on a sample of nu
 
 _VARA( value1, value2, ... value_n )_
 
-**Parameters:**
+**where:**
 
-* `value1, value2, ... value_n`: Sample values. They can be numbers, text, and logical values. Values that are TRUE are evaluated as 1. Values that are FALSE or text values are evaluated as 0. 30 values can be entered.
+* value1, value2, ... value_n are the sample values. They can be numbers, text, and logical values. Values that are TRUE are evaluated as 1. Values that are FALSE or text values are evaluated as 0. 30 values can be entered.
 
 ## WEIBULL
 
@@ -2400,15 +2404,13 @@ Returns the Weibull distribution
 
 _WEIBULL(x,alpha,beta,cumulative)_
 
-**Parameters:**
+**Where:**
 
-* `x`: Value at which to evaluate the function.
+* x denotes the value at which to evaluate the function.
 
-* `alpha`: Parameter to the distribution.
+* alpha denotes a parameter to the distribution.Beta denotes a parameter to the distribution.
 
-* `beta`: Parameter to the distribution.
-
-* `cumulative`: Determines the form of the function.
+* cumulative determines the form of the function.
 
 ## WEIBULL.DIST
 
@@ -2418,15 +2420,15 @@ The `Weibull.Dist` function returns the Weibull Distribution.
 
 _WEIBULL.DIST(x,alpha,beta,cumulative)_
 
-**Parameters:**
+**where:**
 
-* `x`: Value that evaluates the function.
+* x is the value that evaluates the function.
 
-* `alpha`: Parameter of the distribution.
+* alpha is a parameter of the distribution.
 
-* `beta`: Parameter of the distribution.
+* beta is a parameter of the distribution.
 
-* `cumulative`: Determines the form of the function.
+* cumulative determines the form of the function.
 
 **Remarks:**
 
@@ -2442,13 +2444,13 @@ _WEIBULL.DIST(x,alpha,beta,cumulative)_
 
 _ZTEST(array,T_value,sigma)_ 
 
-**Parameters:**
+**where:**
 
-* `array`: Array or range of data.
+* array is an array or range of data.
 
-* `T_value`: Value to test.
+* T_value is the value to test..
 
-* `sigma`: Population (known) standard deviation.
+* sigma is the population (known) standard deviation.
 
 ## CHITEST 
 
@@ -2458,11 +2460,11 @@ _ZTEST(array,T_value,sigma)_
 
 _CHITEST(actual_range,expected_range)_ 
 
-**Parameters:**
+**where:**
 
-* `actual_range`: Range of data to test against expected values.
+* Actual_range : The range of data to test against expected values.
 
-* `expected_range`: Range of data that contains the ratio of the product of row and column totals to the grand total. 
+* Expected_range :The range of data that contains the ratio of the product of row and column totals to the grand total. 
 
 ## FDIST  
 
@@ -2472,13 +2474,13 @@ _CHITEST(actual_range,expected_range)_
 
 _FDIST(x,deg_freedom1,deg_freedom2)_ 
 
-**Parameters:**
+**where:**
 
-* `x`: Numeric value at which to evaluate the function.
+* X  : The numeric value at which to evaluate the function.
 
-* `deg_freedom1`: Integer specifying the numerator degrees of freedom.
+* Deg_freedom1 : The integer specifying the numerator degrees of freedom.
 
-* `deg_freedom2`: Integer specifying the denominator degrees of freedom.
+* Deg_freedom2 :The integer specifying the denominator degrees of freedom.
 
 **Remarks:**
 
@@ -2498,13 +2500,13 @@ _FDIST(x,deg_freedom1,deg_freedom2)_
 
 _FINV(probability,deg_freedom1,deg_freedom2)_ 
 
-**Parameters:**
+**where:**
 
-* `probability`: Probability to evaluate the inverse F cumulative distribution.
+* Probability   : A probability  to evaluate the inverse F cumulative distribution.
 
-* `deg_freedom1`: Integer specifying the numerator degrees of freedom.
+* Deg_freedom1 : The integer specifying the numerator degrees of freedom.
 
-* `deg_freedom2`: Integer specifying the denominator degrees of freedom.
+* Deg_freedom2 :The integer specifying the denominator degrees of freedom.
 
 **Remarks:**
 
@@ -2525,9 +2527,9 @@ _FINV(probability,deg_freedom1,deg_freedom2)_
 
 _FISHER(x)_ 
 
-**Parameters:**
+**where:**
 
-* `x`: Numeric value for which you want to calculate the Fisher Transformation.
+* X   : A numeric value for which you want calculate the Fisher Transformation.
 
 **Remarks:**
 
@@ -2543,9 +2545,9 @@ _FISHER(x)_
 
 _FISHERINV(y)_ 
 
-**Parameters:**
+**where:**
 
-* `y`: Numeric value for which you want to calculate the inverse of the Fisher transformation.
+* Y   : The numeric value for which you want to calculate the inverse of the Fisher transformation.
 
 **Remarks:**
 
@@ -2559,13 +2561,13 @@ _FISHERINV(y)_
 
 _RANK(number,ref,[order])_ 
 
-**Parameters:**
+**where:**
 
-* `number`: Number value whose rank you want to find.
+* Number   : The is the number value whose rank you want to find.
 
-* `ref`: Array of, or a reference to, a list of numbers. Non-numeric values in ref are ignored.
+* Ref     : It can be a array of, or a reference to, a list of numbers. Non-numeric values in ref are ignored.
 
-* `order`: Number that specifies how the ranking will be done.
+* Order    :This is a number that specifies how the ranking will be done.
 
 ## Z.TEST      
 
@@ -2575,13 +2577,13 @@ _RANK(number,ref,[order])_
 
 _Z.TEST(array,x,[sigma])_ 
 
-**Parameters:**
+**where:**
 
-* `array`: Array or range of data against which the hypothesized sample mean is to be tested.
+* Array  : The array or range of data against which the hypothesized sample mean is to be tested.
 
-* `x`: Hypothesized sample mean.
+* x  : The hypothesized sample mean.
 
-* `sigma`: Population (known) standard deviation. If omitted, the function uses the sample standard deviation. 
+* Sigma :This represents the population (known) standard deviation. If omitted, the function used the sample standard deviation. 
 
 ## BETA.DIST      
 
@@ -2591,19 +2593,19 @@ _Z.TEST(array,x,[sigma])_
 
 _BETA.DIST(x,alpha,beta,cumulative,[A],[B])_ 
 
-**Parameters:**
+**where:**
 
-* `x`: Value between A and B at which to evaluate the function.
+* X       : The value between A and B at which to evaluate the function
 
-* `alpha`: Parameter of the distribution.
+* Alpha   : A parameter of the distribution.
 
-* `beta`: Parameter of the distribution.
+* Beta    : A parameter of the distribution.
 
-* `cumulative`: Logical value that determines the form of the function. If cumulative is `TRUE`, it returns the cumulative distribution function. If `FALSE`, it returns the probability density function.
+* Cumulative :A logical value that determines the form of the function. If cumulative is `TRUE`, it returns the cumulative distribution function. if `FALSE`, it returns the probability density function.
 
-* `A` (optional): Lower bound to the interval of x.
+*  A (Optional):It is a lower bound to the interval of x.
 
-* `B` (optional): Upper bound to the interval of x.
+*  B (Optional): It is a upper bound to the interval of x.
 
 **Remarks:**
 
@@ -2623,19 +2625,19 @@ _BETA.DIST(x,alpha,beta,cumulative,[A],[B])_
 
 _LINEST(known_y's, [known_x's], [const], [stats]))_ 
 
-**Parameters:**
+**where:**
 
-* `known_y's` (required): Set of y-values from the line equation. 
+* known_y's : This is the set of y-values from the line equation. 
 
-* `known_x's` (optional): Set of x-values from the line equation.
+* known_x's (Optional). This is a a set of x-values from the line equation.
 
-* `const` (optional): Logical value specifying whether to force the constant b to equal 0. 
+* const (Optional). This is a logical value specifying whether to force the constant b to equal 0.
 
-	*If const is `TRUE` or omitted, b is calculated normally. 
+* If const is `TRUE` or omitted, b is calculated normally.
 
-	* If const is `FALSE`, b is set equal to 0.
+*  If const is `FALSE`, b is set equal to 0 
 
-* `stats` (optional): Logical value specifying whether to return additional regression statistics.
+* stats (Optional). This is a logical value specifying whether to return additional regression statistics.
 
 ## GAUSS     
 
@@ -2645,9 +2647,9 @@ The `GAUSS` function calculates the probability that a value from a standard nor
 
 _GAUSS(z)_ 
 
-**Parameters:**
+**where:**
 
-* `z`: Number of standard deviations away from the mean. A positive value indicates a point is above the mean, while a negative value indicates a point below the mean.
+* z : The number of standard deviations away from the mean. A positive value indicates a point is above the mean, while a negative value indicates a point below the mean.
 
 **Remarks:**
 
@@ -2665,9 +2667,9 @@ The `GAMMA` function returns the value of the gamma function for a specified num
 
 _GAMMA(number)_
 
-**Parameters:**
+**where:**
 
-* `number`: The value for which the gamma function is to be calculated.
+* Number: The value for which the gamma function is to be calculated.
 
 **Remarks:**
 
@@ -2685,11 +2687,11 @@ The `VAR.S` function estimates the variance for a sample of a population, ignori
 
 _VAR.S(number1, [number2], ... )_
 
-**Parameters:**
+**where:**
 
-* `number1` (required): The first number or sample from the population.
+* Number1: Required. The first number or sample from the population.
 
-* `number2, ...` (optional): Additional numbers, up to 254, representing the sample data.
+* Number2, ...: Optional. Additional numbers, up to 254, representing the sample data.
 
 **Remarks:**
 
@@ -2710,11 +2712,11 @@ The `FREQUENCY` function calculates how often values occur  within specified ran
 
 _FREQUENCY(data_array, bins_array)_
 
-**Parameters:**
+**where:**
 
-* `data_array`: An array or reference to the set of values for which you want to count frequencies.
+* data_array: An array or reference to the set of values for which you want to count frequencies.
 
-* `bins_array`: An array or reference to intervals that define the frequency ranges.
+* bins_array: An array or reference to intervals that define the frequency ranges.
 
 **Remarks:**
 
@@ -2734,11 +2736,11 @@ The `F.TEST` function returns the two-tailed probability that the variances in t
 
 *F.TEST(array1, array2)*
 
-**Parameters:**
+**Where:**
 
-* `array1`: The first array or range of numerical data.
+* array1: The first array or range of numerical data.
 
-* `array2`: The second array or range of numerical data.
+* array2: The second array or range of numerical data.
 
 **Remarks**
 
@@ -2758,11 +2760,11 @@ The `FTEST` function returns the two-tailed probability that the variances in tw
 
 *FTEST(array1, array2)*
 
-**Parameters:**
+**Where:**
 
-* `array1`: The first array or range of numerical data.
+* array1: The first array or range of numerical data.
 
-* `array2`: The second array or range of numerical data.
+* array2: The second array or range of numerical data.
 
 **Remarks**
 
@@ -2782,13 +2784,13 @@ The `F.INV` function returns the value at which a given probability corresponds 
 
 *F.INV(probability, deg_freedom1, deg_freedom2)*
 
-**Parameters:**
+**Where:**
 
-* `probability`: A probability associated with the F cumulative distribution.
+* probability: A probability associated with the F cumulative distribution.
 
-* `deg_freedom1`: The numerator degrees of freedom, representing the variability in the first data set or group.
+* deg_freedom1: The numerator degrees of freedom, representing the variability in the first data set or group.
 
-* `deg_freedom2`: The denominator degrees of freedom, representing the variability in the second data set or group.
+* deg_freedom2: The denominator degrees of freedom, representing the variability in the second data set or group.
 
 **Remarks**
 
@@ -2808,15 +2810,15 @@ The `BINOM.DIST.RANGE` function returns the probability of a trial result using 
 
 *BINOM.DIST.RANGE(trials, probability_s, number_s, [number_s2])*
 
-**Parameters:**
+**Where:**
 
-* `trials`: The number of independent trials. This value must be greater than or equal to 0.
+* trials: The number of independent trials. This value must be greater than or equal to 0.
 
-* `probability_s`: The probability of success in each trial. 
+* probability_s: The probability of success in each trial. 
 
-* `number_s`: The number of successes in trials. 
+* number_s: The number of successes in trials. 
 
-* `number_s2` (optional): The probability that the number of successes will be between number_s and number_s2, where number_s is the minimum and number_s2 is the maximum, within the total number of trials.
+* number_s2 (optional): The probability that the number of successes will be between number_s and number_s2, where number_s is the minimum and number_s2 is the maximum, within the total number of trials.
 
 **Remarks**
 
@@ -2838,17 +2840,17 @@ The `BETADIST` function returns the cumulative beta probability density function
 
 *BETADIST(x, alpha, beta, [A], [B])*
 
-**Parameters:**
+**Where:**
 
-* `x`: The value between A and B at which to evaluate the function.
+* x: The value between A and B at which to evaluate the function.
 
-* `alpha`: A parameter of the distribution.
+* alpha: A parameter of the distribution.
 
-* `beta`: A parameter of the distribution.
+* beta: A parameter of the distribution.
 
-* `A` (optional): A lower bound to the interval of x. The default value of A is 0.
+* A (optional): A lower bound to the interval of x. The default value of A is 0.
 
-* `B` (optional): An upper bound to the interval of x. The default value of B is 1.
+* B (optional): An upper bound to the interval of x. The default value of B is 1.
 
 **Remarks**
 
@@ -2866,17 +2868,17 @@ The `TDIST` function returns the percentage points (probability) for the Student
 
 *TDIST(x, deg_freedom, tails)*
 
-**Parameters:**
+**Where:**
 
-* `x`: The numeric value at which to evaluate the distribution.
+* x: The numeric value at which to evaluate the distribution.
 
-* `deg_freedom`: An integer indicating the number of degrees of freedom.
+* deg_freedom: An integer indicating the number of degrees of freedom.
 
-* `tails`: Specifies the number of distribution tails to return. 
+* tails: Specifies the number of distribution tails to return. 
 
-	* `1`: one-tailed distribution.
+	* 1 - one-tailed distribution.
 
-	* `2`: two-tailed distribution.
+	* 2 - two-tailed distribution.
 
 **Remarks**
 
@@ -2898,11 +2900,11 @@ The `TINV` function returns the two-tailed inverse of the Student's t-distributi
 
 *TINV(probability, deg_freedom)*
 
-**Parameters:**  
+**Where:**  
 
-* `probability`: The probability associated with the two-tailed Student's t-distribution.  
+* probability: The probability associated with the two-tailed Student's t-distribution.  
 
-* `deg_freedom`: The number of degrees of freedom to characterize the distribution.  
+* deg_freedom: The number of degrees of freedom to characterize the distribution.  
 
 **Remarks** 
 
@@ -2960,25 +2962,25 @@ The `T.TEST` function returns the probability associated with a Student's t-Test
 
 *T.TEST(array1, array2, tails, type)*
 
-**Parameters:**  
+**Where:**  
 
-* `array1`: The first data set.  
+* array1: The first data set.  
 
-* `array2`: The second data set.  
+* array2: The second data set.  
 
-* `tails`: Specifies the number of distribution tails.
+* tails: Specifies the number of distribution tails.
 
-	* `1`: One tailed distribution.
+	* 1 - One tailed distribution.
 
-	* `2`: Two tailed distribution.
+	* 2 - Two tailed distribution.
 
-* `type`: The kind of t-Test to perform.
+* type: The kind of t-Test to perform.
 
-	* `1`: Paired.
+	* 1 - Paired.
 
-	* `2`: Two-sample equal variance.
+	* 2 - Two-sample equal variance.
 
-	* `3`: Two-sample unequal variance.
+	* 3 - Two-sample unequal variance.
 
 **Remarks**  
 
@@ -2998,11 +3000,11 @@ The `T.INV.2T` function returns the two-tailed inverse of the Student's t-distri
 
 *T.INV.2T(probability, deg_freedom)*
 
-**Parameters:**  
+**Where:**  
 
-* `probability`: The probability associated with the Student's t-distribution.  
+* probability: The probability associated with the Student's t-distribution.  
 
-* `deg_freedom`: The number of degrees of freedom with which to characterize the distribution.  
+* deg_freedom: The number of degrees of freedom with which to characterize the distribution.  
 
 **Remarks**  
 
@@ -3022,11 +3024,11 @@ The `T.DIST.RT` function returns the right-tailed Student's t-distribution.
 
 *T.DIST.RT(x, deg_freedom)*  
 
-**Parameters:**  
+**Where:**  
 
-* `x`: The numeric value at which to evaluate the distribution.  
+* x: The numeric value at which to evaluate the distribution.  
 
-* `deg_freedom`: An integer indicating the number of degrees of freedom.  
+* deg_freedom: An integer indicating the number of degrees of freedom.  
 
 **Remarks** 
 
@@ -3042,11 +3044,11 @@ The `T.DIST.2T` function returns the two-tailed Student's t-distribution.
 
 *T.DIST.2T(x, deg_freedom)*  
 
-**Parameters:**  
+**Where:**  
 
-* `x`: The numeric value at which to evaluate the distribution.
+* x: The numeric value at which to evaluate the distribution.
 
-* `deg_freedom`: An integer indicating the number of degrees of freedom.  
+* deg_freedom: An integer indicating the number of degrees of freedom.  
 
 **Remarks**  
 
@@ -3064,13 +3066,13 @@ The `FORECAST.LINEAR` function predicts a future value based on existing data by
 
 *FORECAST.LINEAR(x, known_y's, known_x's)*
 
-**Parameters:**
+**Where:**
 
-* `x`: The data point for which you want to predict a value.
+* x: The data point for which you want to predict a value.
 
-* `known_y's`: The dependent array or range of data.
+* known_y's: The dependent array or range of data.
 
-* `known_x's`: The independent array or range of data.
+* known_x's: The independent array or range of data.
 
 **Remarks**
 
@@ -3088,19 +3090,19 @@ The `TREND` function returns values along a linear trend by fitting a straight l
 
 *TREND(known_y's, [known_x's], [new_x's], [const])*
 
-**Parameters:**
+**Where:**
 
-* `known_y's`: The set of y-values in the equation `y = mx + b`.
+* known_y's: The set of y-values in the equation `y = mx + b`.
 
-* `known_x's` (optional): The independent array or range of data (x-values) corresponding to the known_y's. If  omitted, it is assumed to be the array {1,2,3,...} that is the same size as known_y's.
+* known_x's (Optional): The independent array or range of data (x-values) corresponding to the known_y's. If  omitted, it is assumed to be the array {1,2,3,...} that is the same size as known_y's.
 
-* `new_x's` (optional): The array of new x-values for which you want to predict corresponding y-values. If  omitted, it is assumed to be the array {1,2,3,...} that is the same size as known_y's.
+* new_x's (Optional): The array of new x-values for which you want to predict corresponding y-values. If  omitted, it is assumed to be the array {1,2,3,...} that is the same size as known_y's.
 
-* `const` (optional): A logical value that determines whether the intercept of the regression line is forced to zero.
+* const (Optional) : A logical value that determines whether the intercept of the regression line is forced to zero.
 
-	* `TRUE or Omitted`: Calculates normally using - `y = mx + b`.
+	* TRUE or Omitted: Calculates normally using - `y = mx + b`.
 
-	* `FALSE`: In `y = mx + b`, b is set equal to 0, and the m-values are adjusted so that y = mx.
+	* FALSE: In `y = mx + b`, b is set equal to 0, and the m-values are adjusted so that y = mx.
 
 **Remarks:**
 

@@ -65,7 +65,7 @@ The foreground settings of the MaskedEditBox control are discussed below.
 
 ### Foreground color
 
-You can set the foreground color for MaskedEditBox Control by using the [ForeColor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.forecolor?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_ForeColor) property.
+You can set the foreground color for MaskedEditBox Control by using the [ForeColor](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.forecolor?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_ForeColor) property.
 
 <table>
 <tr>

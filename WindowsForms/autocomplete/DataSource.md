@@ -2,7 +2,7 @@
 layout: post
 title: DataSource in Windows Forms AutoComplete | Syncfusion®
 description: DataSource support in AutoComplete enables binding data from multiple sources, managing history items, and configuring dynamic suggestions.
-platform: WindowsForms
+platform: windowsforms
 control: AutoComplete
 documentation: ug
 ---

@@ -5,7 +5,6 @@ description: Area in the Windows Forms Chart defines the plotting region and sup
 platform: windowsforms
 control: Chart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Chart Area in Windows Forms Chart
