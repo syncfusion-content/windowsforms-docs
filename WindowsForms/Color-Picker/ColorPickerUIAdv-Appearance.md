@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Appearance in Windows Forms ColorPickerUIAdv | Syncfusion®
-description: Learn about ColorPickerUIAdv Appearance support in Syncfusion Windows Forms Color Picker (ColorPickerUIAdv) control and more details.
+description: Learn about appearance customization in the Syncfusion Windows Forms ColorPickerUIAdv control, including themes, colors, and visual styling options.
 platform: windowsforms
-control: ColorPickerUIAdv 
+control: ColorPickerUIAdv
 documentation: ug
 ---
 # Appearance in WinForms Color Picker
@@ -13,7 +13,7 @@ documentation: ug
 
 ### Visual Style
 
-The appearance and behavior settings, available for the WinForms Color Picker are discussed in this section. This control supports the below VisualStyles
+The appearance and behavior settings available for the WinForms Color Picker are discussed in this section. This control supports the following visual styles:
 
 * Default
 * Office2007
@@ -24,29 +24,29 @@ The appearance and behavior settings, available for the WinForms Color Picker ar
 * Office2016Black
 * Office2016DarkGray
 
-The style can be applied using the Style property. The following code example allows you to set the style for the WinForms Color Picker.
+The style can be applied using the `Style` property. The following code example sets the style for the WinForms Color Picker.
 
 {% tabs %}
 {% highlight c# %}
 
-//Sets the Office2016 colorful style for ColorPickerUIAdv
-this.colorPickerUIAdv1.Style = Syncfusion.Windows.Forms.Tools.ColorPickerUIAdv.visualstyle.Office2016Colorful;
+// Sets the Office2016 colorful style for the ColorPickerUIAdv.
+this.colorPickerUIAdv1.Style = Syncfusion.Windows.Forms.Tools.ColorPickerUIAdvStyle.Office2016Colorful;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-'Sets the Office2016 colorful style for ColorPickerUIAdv
-Me.colorPickerUIAdv1.Style = Syncfusion.Windows.Forms.Tools.ColorPickerUIAdv.visualstyle.Office2016Colorful
+' Sets the Office2016 colorful style for the ColorPickerUIAdv.
+Me.colorPickerUIAdv1.Style = Syncfusion.Windows.Forms.Tools.ColorPickerUIAdvStyle.Office2016Colorful
 
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms ColorPickerUIAdv visualstyle](ColorPickerUIAdv_Images/ColorPickerStyle.jpeg)
+![WinForms Color Picker with the Office2016Colorful visual style applied](ColorPickerUIAdv_Images/ColorPickerStyle.jpeg)
 
 ### Office2007 Color Schemes
 
-By default WinForms Color Picker control has Office2007 look and feel. 
+By default, the WinForms Color Picker control has the Office2007 look and feel.
 
 <table>
 <tr>
@@ -56,11 +56,11 @@ Description</th></tr>
 <tr>
 <td>
 UseOffice2007Style</td><td>
-Office 2007 style can be enabled or disabled using this property. By default it is true.</td></tr>
+The Office2007 style can be enabled or disabled using this property. By default, it is true.</td></tr>
 <tr>
 <td>
 Office2007Theme</td><td>
-Sets the color scheme for the Office2007 Style.</td></tr>
+Sets the color scheme for the Office2007 style. Supported values include `Blue`, `Silver`, and `Black`.</td></tr>
 </table>
 
 {% tabs %}
@@ -68,7 +68,7 @@ Sets the color scheme for the Office2007 Style.</td></tr>
 
 colorPickerUIAdv1.UseOffice2007Style = true;
 
-//Sets Office2007 Black color Theme
+// Sets Office2007 Black color theme.
 colorPickerUIAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Black;
 
 {% endhighlight %}
@@ -77,21 +77,21 @@ colorPickerUIAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Bla
 
 colorPickerUIAdv1.UseOffice2007Style = True
 
-'Sets Office2007 Black color Theme
-Private colorPickerUIAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Black
+' Sets Office2007 Black color theme.
+colorPickerUIAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Black
 
 {% endhighlight  %}
 {% endtabs %}
 
-![Windows forms ColorPickerUIAdv applying Office2007Theme](ColorPickerUIAdv_Images/ColorPickerUIAdv_office2007theme.jpeg) 
+![WinForms Color Picker with the Office2007 Black theme applied](ColorPickerUIAdv_Images/ColorPickerUIAdv_office2007theme.jpeg)
 
-The Office2007 Visual Styles can be turned off by setting the UseOffice2007Style property to false.
+The Office2007 visual styles can be turned off by setting the `UseOffice2007Style` property to `false`.
 
-![Windows forms ColorPickerUIAdv sets Office2007Style property is false](ColorPickerUIAdv_Images/ColorPickerUIAdv_office2007visualstyle.jpeg)
+![WinForms Color Picker with the Office2007Style property set to false](ColorPickerUIAdv_Images/ColorPickerUIAdv_office2007visualstyle.jpeg)
 
 ### Custom Colors
 
-We can also apply custom colors to the WinForms Color Picker control by setting Office2007Theme to "Managed" and specifying the custom color through the ApplyManagedColors method as follows.
+You can also apply custom colors to the WinForms Color Picker control by setting `Office2007Theme` to `Managed` and specifying the custom color through the `ApplyManagedColors` method as follows. The `Office2007Colors` class resides in the `Syncfusion.Windows.Forms` namespace.
 
 {% tabs %}
 {% highlight c# %}
@@ -103,13 +103,13 @@ Office2007Colors.ApplyManagedColors(this, Color.Orange);
 
 {% highlight vb %}
 
-Me.colorPickerUIAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
+Me.colorPickerUIAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Managed
 Office2007Colors.ApplyManagedColors(Me, Color.Orange)
 
 {% endhighlight  %}
 {% endtabs %}
 
-![Windows forms ColorPickerUIAdv applying custom colors](ColorPickerUIAdv_Images/ColorPickerUIAdv_customcolors.jpeg) 
+![WinForms Color Picker with custom Office2007 colors applied](ColorPickerUIAdv_Images/ColorPickerUIAdv_customcolors.jpeg)
 
 
 ## Border Settings

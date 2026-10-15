@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Windows Forms TrackBarEx | Syncfusion®
-description: Learn here about getting started with Syncfusion Windows Forms TrackBarEx control, its elements and more details.
+description: Learn how to get started with the Syncfusion Windows Forms TrackBarEx control, including elements, designer and code-based setup, and value configuration.
 platform: windowsforms
 control: TrackBarEx
 documentation: ug
@@ -15,7 +15,7 @@ This section describes how to add [Windows Forms TrackBar](https://www.syncfusio
 
 Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#trackbarex) section to get the list of assemblies or details of NuGet package that needs to be added as a reference to use the control in any application.
 
-Click [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install nuget packages in Windows Forms application.
+Click [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install NuGet packages in a Windows Forms application.
 
 ## Adding WinForms TrackBar control via designer
 
@@ -51,17 +51,17 @@ To add the control manually in C#, follow the given steps:
 
 {% capture codesnippet1 %}​
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
-using Syncfusion.Windows.Forms.Tools;
+using Syncfusion.Windows.Forms.Tools;
 
-{% endhighlight  %}
+{% endhighlight %}
 {% highlight VB %}
 
-Imports Syncfusion.Windows.Forms.Tools
+Imports Syncfusion.Windows.Forms.Tools
 
-{% endhighlight  %}
-{% endtabs %} 
+{% endhighlight %}
+{% endtabs %}
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
@@ -69,7 +69,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% capture codesnippet2 %}​
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Instance of TrackBarEx
 TrackBarEx trackBarEx1 = new TrackBarEx();
@@ -82,7 +82,7 @@ this.Controls.Add(trackBarEx1);
 'Instance of TrackBarEx
 Dim trackBarEx1 As TrackBarEx = New TrackBarEx
 trackBarEx1.Value = 5
-Me.Controls.Add(tabSplitterContainer1)
+Me.Controls.Add(trackBarEx1)
 
 {% endhighlight %}
 {% endtabs %}
@@ -96,7 +96,7 @@ Me.Controls.Add(tabSplitterContainer1)
 You can define the minimum and maximum values by setting the [Minimum](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TrackBarEx.html#Syncfusion_Windows_Forms_Tools_TrackBarEx_Minimum) and [Maximum](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TrackBarEx.html#Syncfusion_Windows_Forms_Tools_TrackBarEx_Maximum) properties of [WinForms TrackBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TrackBarEx.html).
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 this.trackBarEx1.Minimum = 10;
 this.trackBarEx1.Maximum = 30;
@@ -117,7 +117,7 @@ Me.trackBarEx1.Maximum = 30
 The [WinForms TrackBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TrackBarEx.html) control can be oriented horizontally or vertically using the [Orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TrackBarEx.html#Syncfusion_Windows_Forms_Tools_TrackBarEx_Orientation) property.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 // To set the control to be vertically oriented.
 this.trackBarEx1.Orientation = Orientation.Vertical;

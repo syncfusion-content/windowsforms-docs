@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Themes and Visual Styles in Windows Forms CheckBoxAdv | Syncfusion®
-description: Learn about Themes and Visual Styles support in Syncfusion Windows Forms CheckBoxAdv control and more details.
+description: Learn about themes and visual styles in the Syncfusion Windows Forms CheckBoxAdv control, including built-in themes and color customization.
 platform: windowsforms
-control: EditorsPackage
+control: CheckBoxAdv
 documentation: ug
 ---
 
@@ -40,7 +40,7 @@ Me.checkBoxAdv1.ThemesEnabled = True
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms CheckBoxAdv Themes appearance](Overview_images/CheckBoxAdv_themes.jpeg)
+![WinForms CheckBoxAdv with themes appearance applied](Overview_images/CheckBoxAdv_themes.jpeg)
 
 ## Visual Styles
 
@@ -54,17 +54,17 @@ Description</th></tr>
 <tr>
 <td>
 Style</td><td>
-Gets or sets an advanced appearance for the WinForms CheckBox.The options included are as follows, Default, Office2007, Metro, Office2016Colorful, Office2016White, Office2016Black, Office2016DarkGray
+Gets or sets an advanced appearance for the WinForms CheckBox. The options are `Default`, `Office2007`, `Metro`, `Office2016Colorful`, `Office2016White`, `Office2016Black`, and `Office2016DarkGray`.
 
 </td></tr>
 <tr>
 <td>
 Office2007ColorScheme</td><td>
-Gets or sets Office 2007 color scheme.The options included are as follows, Managed, Blue, Silver and Black. The Style property should be set to "Office2007".</td></tr>
+Gets or sets the Office 2007 color scheme. The options are `Managed`, `Blue`, `Silver`, and `Black`. The `Style` property should be set to `Office2007`.</td></tr>
 <tr>
 <td>
 Office2010ColorScheme</td><td>
-Gets or sets Office 2010 color scheme.The options included are as follows, Managed, Blue, Silver and Black. The Style property should be set to "Office2010".</td></tr>
+Gets or sets the Office 2010 color scheme. The options are `Managed`, `Blue`, `Silver`, and `Black`. The `Style` property should be set to `Office2010`.</td></tr>
 </table>
 
 {% tabs %}
@@ -81,9 +81,9 @@ Me.checkBoxAdv1.Style = Syncfusion.Windows.Forms.Tools.CheckBoxAdvStyle.Office20
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms CheckBoxAdv visualstyles](Overview_images/CheckBoxAdv_visualstyle.jpeg) 
+![WinForms CheckBoxAdv with the Office2016Colorful visual style applied](Overview_images/CheckBoxAdv_visualstyle.jpeg)
 
-When the Office2007ColorScheme property is set to 'Managed', the WinForms CheckBox can be displayed using custom colors supported by the control.
+When the `Office2007ColorScheme` property is set to `Managed`, the WinForms CheckBox can be displayed using custom colors supported by the control.
 
 {% tabs %}
 {% highlight c# %}
@@ -102,4 +102,4 @@ Office2007Colors.ApplyManagedColors(Me, Color.Red)
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms CheckBoxAdv Office2007ColorScheme is set to managed](Themes-And-VisualStyle-images/Theme-And-VisualStyle-img1.png)
+![WinForms CheckBoxAdv with Office2007ColorScheme set to Managed](Themes-and-VisualStyle-images/Theme-And-VisualStyle-img1.png)

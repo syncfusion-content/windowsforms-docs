@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Color Groups in Windows Forms ColorPickerUIAdv | Syncfusion®
-description: Learn about Color Groups support in Syncfusion Windows Forms Color Picker (ColorPickerUIAdv) control and more details.
+description: Learn about color groups in the Syncfusion Windows Forms ColorPickerUIAdv control, including built-in groups, custom groups, and color organization options.
 platform: windowsforms
 control: ColorPickerUIAdv
 documentation: ug
 ---
 # Color Groups in WinForms Color Picker
 
-The default color groups available for WinForms Color Picker control are listed in the below table.
+The default color groups available for the WinForms Color Picker control are listed in the following table.
 
 <table>
 <tr>
@@ -18,26 +18,26 @@ Description</th></tr>
 <tr>
 <td>
 RecentGroup</td><td>
-Represents the group of recent colors.</td></tr>
+Represents a group of recent colors.</td></tr>
 <tr>
 <td>
 StandardGroup</td><td>
-Represents the group of standard colors.</td></tr>
+Represents a group of standard colors.</td></tr>
 <tr>
 <td>
 ThemeGroup</td><td>
-Represents the group of theme colors.</td></tr>
+Represents a group of theme colors.</td></tr>
 </table>
 
-![Windows forms ColorPickerUIAdv Color groups](ColorPickerUIAdv_Images/ColorPickerUIAdv_colorgroups.jpeg) 
+![WinForms Color Picker default color groups](ColorPickerUIAdv_Images/ColorPickerUIAdv_colorgroups.jpeg)
 
-N>  You can also add custom ColorGroups apart from the above default groups. Refer Custom ColorGroups topic to know more.
+>**NOTE**: You can also add custom color groups apart from the default groups listed above. Refer to the [Custom Color Groups](#custom-color-groups) section to know more.
 
-## Sections of Color Groups 
+## Sections of Color Groups
 
-The sections of a color group is illustrated in the below image.
+The sections of a color group are illustrated in the following image.
 
-![Windows forms ColorPickerUIAdv showing sections of a color group](ColorPickerUIAdv_Images/ColorPickerUIAdv_colorgroupsection.jpeg)
+![WinForms Color Picker showing the sections of a color group](ColorPickerUIAdv_Images/ColorPickerUIAdv_colorgroupsection.jpeg)
 
 {% seealso %}
 
@@ -47,12 +47,15 @@ The sections of a color group is illustrated in the below image.
 
 ## Custom Color Groups
 
-Custom Color Groups can be added to WinForms Color Picker control using CustomGroups property. This property invokes ColorUIAdvGroup Collection Editor and lets you to add custom user groups.
+Custom color groups can be added to the WinForms Color Picker control using the `CustomGroups` property. This property invokes the `ColorUIAdvGroup` Collection Editor and lets you add custom user groups.
 
-![Windows forms ColorPickerUIAdv custom color groups added](ColorPickerUIAdv_Images/ColorPickerUIAdv_customgroups.jpeg) 
+![WinForms Color Picker with custom color groups added](ColorPickerUIAdv_Images/ColorPickerUIAdv_customgroups.jpeg)
 
 {% tabs %}
 {% highlight c# %}
+
+// Create a custom group instance.
+Syncfusion.Windows.Forms.Tools.ColorUIAdvGroup colorUIAdvGroup1 = new Syncfusion.Windows.Forms.Tools.ColorUIAdvGroup();
 
 Syncfusion.Windows.Forms.Tools.GroupColorItem groupColorItem1 = new Syncfusion.Windows.Forms.Tools.GroupColorItem(colorUIAdvGroup1, System.Drawing.Color.Crimson);
 groupColorItem1.Color = System.Drawing.Color.Crimson;
@@ -68,23 +71,25 @@ this.colorPickerUIAdv1.CustomGroups.Add(colorUIAdvGroup1);
 
 {% highlight vb %}
 
+' Create a custom group instance.
+Dim colorUIAdvGroup1 As New Syncfusion.Windows.Forms.Tools.ColorUIAdvGroup()
+
 Dim groupColorItem1 As New Syncfusion.Windows.Forms.Tools.GroupColorItem(colorUIAdvGroup1, System.Drawing.Color.Crimson)
 groupColorItem1.Color = System.Drawing.Color.Crimson
 groupColorItem1.Index = 0
-groupColorItem1.SubItems.Add(New Syncfusion.Windows.Forms.Tools.ColorItem(groupColorItem1, System.Drawing.Color.LightPink)) 
+groupColorItem1.SubItems.Add(New Syncfusion.Windows.Forms.Tools.ColorItem(groupColorItem1, System.Drawing.Color.LightPink))
 
-colorUIAdvGroup1.Items.Add(groupColorItem1) 
-colorUIAdvGroup1.Name = "Custom User Colors" 
-colorUIAdvGroup1.SubItemsDepth = 1 
-Me.colorPickerUIAdv1.CustomGroups.Add(colorUIAdvGroup1) 
+colorUIAdvGroup1.Items.Add(groupColorItem1)
+colorUIAdvGroup1.Name = "Custom User Colors"
+colorUIAdvGroup1.SubItemsDepth = 1
+Me.colorPickerUIAdv1.CustomGroups.Add(colorUIAdvGroup1)
 
 {% endhighlight  %}
 {% endtabs %}
 
-![Windows forms ColorPickerUIAdv colors from custom user color](ColorPickerUIAdv_Images/ColorPickerUIAdv_customusercolor.jpeg) 
+![WinForms Color Picker showing colors from the custom user color group](ColorPickerUIAdv_Images/ColorPickerUIAdv_customusercolor.jpeg)
 
-N> The properties to customize the color groups are similar to default color groups. 
-See how to Customize the Color Groups in [Customizing the Color Groups](#customizincolor-items) topic.
+>**NOTE**: The properties used to customize the color groups are similar to those used for the default color groups. Refer to the [Customizing the Color Groups](#customizing-the-color-groups) section to know more.
 
 ## Customizing the Color Groups
 
@@ -113,18 +118,21 @@ Specifies the depth of the sub items, i.e the number of sub items that can be ad
 
 * Opening ColorItem Collection Editor using Items property.
 
-![Windows forms ColorPickerUIAdv opening coloritem for RecentGroup](ColorPickerUIAdv_Images/ColorPickerUIAdv_opencoloritem.jpeg) 
+![WinForms Color Picker opening the ColorItem Collection Editor for RecentGroup](ColorPickerUIAdv_Images/ColorPickerUIAdv_opencoloritem.jpeg)
 
-* Adding GroupColor items.
+* Adding `GroupColor` items.
 
-![Windows forms ColorPickerUIAdv adding color items to RecentGroup](ColorPickerUIAdv_Images/ColorPickerUIAdv_addgroupcolor.jpeg) 
+![WinForms Color Picker adding color items to RecentGroup](ColorPickerUIAdv_Images/ColorPickerUIAdv_addgroupcolor.jpeg)
 
-* Adding color / sub items to the GroupColor items.
+* Adding color / sub items to the `GroupColor` items.
 
-![Windows forms ColorPickerUIAdv adding colors from sub items to RecentGroup](ColorPickerUIAdv_Images/ColorPickerUIAdv_subcoloritem.jpeg) 
+![WinForms Color Picker adding colors from sub items to RecentGroup](ColorPickerUIAdv_Images/ColorPickerUIAdv_subcoloritem.jpeg)
 
 {% tabs %}
 {% highlight c# %}
+
+// Create a color item to add to the RecentGroup.
+Syncfusion.Windows.Forms.Tools.GroupColorItem groupColorItem0 = new Syncfusion.Windows.Forms.Tools.GroupColorItem(this.colorPickerUIAdv1.RecentGroup, System.Drawing.Color.LightSalmon);
 
 this.colorPickerUIAdv1.RecentGroup.Items.Add(groupColorItem0);
 this.colorPickerUIAdv1.RecentGroup.IsSubItemsVisible = true;
@@ -134,6 +142,9 @@ this.colorPickerUIAdv1.RecentGroup.SubItemsDepth = 1;
 
 {% highlight vb %}
 
+' Create a color item to add to the RecentGroup.
+Dim groupColorItem0 As New Syncfusion.Windows.Forms.Tools.GroupColorItem(Me.colorPickerUIAdv1.RecentGroup, System.Drawing.Color.LightSalmon)
+
 Me.colorPickerUIAdv1.RecentGroup.Items.Add(groupColorItem0)
 Me.colorPickerUIAdv1.RecentGroup.IsSubItemsVisible = True
 Me.colorPickerUIAdv1.RecentGroup.SubItemsDepth = 1
@@ -141,19 +152,19 @@ Me.colorPickerUIAdv1.RecentGroup.SubItemsDepth = 1
 {% endhighlight  %}
 {% endtabs %}
 
-![Windows forms ColorPickerUIAdv colors from Recent Colors](ColorPickerUIAdv_Images/ColorPickerUIAdv_recentcolors.jpeg) 
+![WinForms Color Picker showing the colors from the Recent Colors group](ColorPickerUIAdv_Images/ColorPickerUIAdv_recentcolors.jpeg)
 
-N> To know how to customize a color item, refer_ Color Items _topic.
+>**NOTE**: To know how to customize a color item, refer to the [Color Items](#color-items) section.
 
 ## Color Items
 
 ### Customizing Color Items
 
-Size of the color items can be set through ColorItemSize property. Default width is 13 and height is 13.
+The size of the color items can be set through the `ColorItemSize` property. The default width is 13 and the default height is 13.
 
-N> The colors within the groups are click able at design time and you can change the color using property grid as in the below image.
+>**NOTE**: The colors within the groups are clickable at design time, and you can change the color using the property grid as in the following image.
 
-![Windows forms ColorPickerUIAdv change the size of color items](ColorPickerUIAdv_Images/ColorPickerUIAdv_customizingcolor.jpeg)
+![WinForms Color Picker property grid used to change the size of color items](ColorPickerUIAdv_Images/ColorPickerUIAdv_customizingcolor.jpeg)
 
 {% tabs %}
 {% highlight c# %}
@@ -169,11 +180,11 @@ Me.colorPickerUIAdv1.ColorItemSize = New System.Drawing.Size(20, 20)
 {% endhighlight  %}
 {% endtabs %}
 
-![Windows forms ColorPickerUIAdv showing color items](ColorPickerUIAdv_Images/ColorPickerUIAdv_colors.jpeg) 
+![WinForms Color Picker showing color items with the new size applied](ColorPickerUIAdv_Images/ColorPickerUIAdv_colors.jpeg)
 
 ### Spacing Between Color Items
 
-HorizontalItemsSpacing and VerticalItemsSpacing properties of WinForms Color Picker control can be used to set the horizontal and vertical spacing between the color items respectively. Default value of these properties are 4 and 0 respectively.
+The `HorizontalItemsSpacing` and `VerticalItemsSpacing` properties of the WinForms Color Picker control can be used to set the horizontal and vertical spacing between the color items, respectively. The default values of these properties are 4 and 0, respectively.
 
 {% tabs %}
 {% highlight c# %}
@@ -191,13 +202,7 @@ Me.colorPickerUIAdv1.VerticalItemsSpacing = 15
 {% endhighlight  %}
 {% endtabs %}
 
-![Windows forms ColorPickerUIAdv sets horizontal and vertical spacing between color items](ColorPickerUIAdv_Images/ColorPickerUIAdv_spacingwithcolors.jpeg) 
-
-{% seealso %}
-
-[Header Settings](#header-settings)
-
-{% endseealso %}
+![WinForms Color Picker with custom horizontal and vertical spacing between color items](ColorPickerUIAdv_Images/ColorPickerUIAdv_spacingwithcolors.jpeg)
 
 ## Header Settings
 

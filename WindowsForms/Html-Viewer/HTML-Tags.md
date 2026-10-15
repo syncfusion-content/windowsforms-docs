@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HTML Tags in Windows Forms HTMLUI control | Syncfusion®
-description: Learn about HTML Tags support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
+description: Learn about the HTML tags supported by the WinForms HTML Viewer control, including formatting, table, scripting, and form tags.
 platform: windowsforms
 control: HTMLUI
 documentation: ug
@@ -26,7 +26,7 @@ The following example illustrates how the Anchor tag is rendered in WinForms HTM
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -76,7 +76,7 @@ File Location and Name:  C:\MyProjects\Anchor\abbr.html
 
 
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -120,7 +120,7 @@ File Location and Name:  C:\MyProjects\Acronym\acronym.html
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -166,7 +166,7 @@ File Location and Name:  C:\MyProjects\Comment\comment.html
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -229,7 +229,7 @@ File Location and Name:  C:\MyProjects\FontStyle\fontStyle.html
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -274,7 +274,7 @@ File Location and Name:  C:\MyProjects\body\bodyTag.html
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -318,7 +318,7 @@ File Location and Name:  C:\MyProjects\break\br.html
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -374,7 +374,7 @@ File Location and Name:  C:\MyProjects\divide\div.html
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -428,7 +428,7 @@ File Location and Name:  C:\MyProjects\UserInput\form.html
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -488,7 +488,7 @@ File Location and Name:  C:\MyProjects\heading\head.html
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -542,7 +542,7 @@ File Location and Name:  C:\MyProjects\header\h.html
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -592,7 +592,7 @@ File Location and Name:  C:\MyProjects\HorizRule\rule.html
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -642,7 +642,7 @@ File Location and Name:  C:\MyProjects\HTML\htmlElement.html
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -691,7 +691,7 @@ File Location and Name:  C:\MyProjects\img\imageElement.html
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -798,7 +798,7 @@ File Location and Name:  C:\MyProjects\input\input.html
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -851,7 +851,7 @@ File Location and Name:  C:\MyProjects\listItem\li.html
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -923,7 +923,7 @@ background-color: #dae5f5;
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -975,7 +975,7 @@ File Location and Name:  C:\MyProjects\listItem\ol.html
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -1031,7 +1031,7 @@ File Location and Name:  C:\MyProjects\select\option.html
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -1084,7 +1084,7 @@ File Location and Name:  C:\MyProjects\paragraph\p.html
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -1136,7 +1136,7 @@ The Evaluation Center has online sample code and complete sample downloads to he
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -1309,7 +1309,7 @@ Essential Studio includes ten component libraries in one great package. Each of 
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -1353,7 +1353,7 @@ File Location and Name: C:\MyProjects\span\span.html
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -1380,7 +1380,6 @@ The Style tag is used to apply styles to the HTML elements in the HTML document.
 
 1. By specifying the Tag Names: Specifies styles by writing CSS styles with the tag name inside the Style tag.
 
-   {% capture codesnippet1 %}
    {% tabs %}
 
    {% highlight VB %}
@@ -1392,12 +1391,10 @@ The Style tag is used to apply styles to the HTML elements in the HTML document.
    {% endhighlight %}
 
    {% endtabs %}
-   {% endcapture %}
-   {{ codesnippet1 | OrderList_Indent_Level_1 }}
+   
 
 2. By specifying the Class Names to the Styles: Specifies styles with the help of the class names inside the Style tag.
 
-   {% capture codesnippet2 %}
    {% tabs %}
 
    {% highlight HTML %}
@@ -1409,12 +1406,10 @@ The Style tag is used to apply styles to the HTML elements in the HTML document.
    {% endhighlight %}
 
    {% endtabs %}
-   {% endcapture %}
-   {{ codesnippet2 | OrderList_Indent_Level_1 }}
+   
 
 3. By specifying ID Class Selectors: Specifies styles by writing styles with the unique id inside the Style tag, and assigning them to the HTML elements by using the id attribute.
 
-   {% capture codesnippet3 %}
    {% tabs %}
 
    {% highlight HTML %}
@@ -1426,12 +1421,10 @@ The Style tag is used to apply styles to the HTML elements in the HTML document.
    {% endhighlight %}
 
    {% endtabs %}
-   {% endcapture %}
-   {{ codesnippet3 | OrderList_Indent_Level_1 }}
+   
 
 4. Style tag in WinForms HTML Viewer also supports the type attribute. The type attribute is optional and it specifies the type of the content in the HTML document.
 
-   {% capture codesnippet4 %}
    {% tabs %}
 
    {% highlight HTML %}
@@ -1471,14 +1464,11 @@ The Style tag is used to apply styles to the HTML elements in the HTML document.
    {% endhighlight %}
 
    {% endtabs %}
-   {% endcapture %}
-   {{ codesnippet4 | OrderList_Indent_Level_1 }}
-
-   {% capture codesnippet5 %}
+   
 
    {% tabs %}
 
-   {% highlight C# %}
+   {% highlight c# %}
 
 
 		this.htmluiControl.LoadHTML(@"C:\MyProjects\style\style.html");
@@ -1492,8 +1482,7 @@ The Style tag is used to apply styles to the HTML elements in the HTML document.
    {% endhighlight %}
 
    {% endtabs %}
-   {% endcapture %}
-   {{ codesnippet5 | OrderList_Indent_Level_2 }}
+   
 
 
 ## SUB - Subscript tag
@@ -1530,7 +1519,7 @@ Carbon - CO<sub>2</sub>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -1588,7 +1577,7 @@ hypotenuse<sup>2</sup> = opposite<sup>2</sup> + adjacent<sup>2</sup>
 {% endhighlight %}
 
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -1647,7 +1636,7 @@ File Location and Name:  C:\MyProjects\table\table.html
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -1756,7 +1745,7 @@ File Location and Name:  C:\MyProjects\table\td.html
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -1807,7 +1796,7 @@ Essential Studio features "Just-In-Time" source level debugging. Switch between 
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -1900,7 +1889,7 @@ File Location and Name:  C:\MyProjects\table\th.html
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -1954,7 +1943,7 @@ Syncfusion<sup>®</sup> Essential HTMLUI<sup>®</sup>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -2008,7 +1997,7 @@ File Location and Name:  C:\MyProjects\table\tr.html
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -2060,7 +2049,7 @@ File Location and Name:  C:\MyProjects\listItem\ul.html
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 

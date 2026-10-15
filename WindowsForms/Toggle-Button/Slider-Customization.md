@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Slider Customization in Windows Forms ToggleButton | Syncfusion®
-description: Learn about Slider Customization support in Syncfusion Windows Forms ToggleButton control and more details.
+description: Learn about slider customization in Syncfusion Windows Forms ToggleButton control, including border color, hover color, and slider width.
 platform: windowsforms
-control: ToggleButton 
+control: ToggleButton
 documentation: ug
 ---
 
 # Slider Customization in WinForms Toggle Button
 
-In the WinForms Toggle Button, the Slider is used to switch between two different states. It can be customized with different colors by using the Color property. The height of the Slider is calculated based on the Control’s Height. The Slider Width is customized by using the Slider.Width property that should not exceed the control’s width.
+In the WinForms Toggle Button, the slider is used to switch between two different states. It can be customized with different colors by using the `Color` property. The height of the slider is calculated based on the control’s Height. The slider width is customized by using the `Slider.Width` property, which should not exceed the control’s width.
 
 {% tabs %}
 {% highlight c# %}
@@ -33,4 +33,4 @@ Me.ToggleButton1.Slider.Width = 30
 {% endhighlight %}
 {% endtabs %}
 
-![Customization of slider width](Slider-Customization_images/Slider-Customization_img1.png)
+![Customized slider width of the WinForms Toggle Button](Slider-Customization_images/Slider-Customization_img1.png)

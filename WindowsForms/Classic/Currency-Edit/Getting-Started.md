@@ -49,14 +49,14 @@ To add the control manually in C#, follow the given steps:
 
 {% capture codesnippet1 %}
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
-using Syncfusion.Windows.Forms.Tools;
+using Syncfusion.Windows.Forms.Tools;
 
 {% endhighlight %}
 {% highlight VB %}
 
-Imports Syncfusion.Windows.Forms.Tools
+Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight %}
 {% endtabs %}
@@ -67,7 +67,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% capture codesnippet2 %}
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 CurrencyEdit currencyEdit1 = new CurrencyEdit();
 this.Controls.Add(currencyEdit1);
@@ -89,13 +89,13 @@ Me.Controls.Add(currencyEdit1)
 
 {% capture codesnippet3 %}
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 // Set currency value.
 currencyEdit1.TextBox.Text = "$2.00";
 
 // To change the culture.
-currencyEdit1.TextBox.Culture = new System.Globalization.CultureInfo("ksh-DE");
+currencyEdit1.TextBox.Culture = new System.Globalization.CultureInfo("de-DE");
 
 {% endhighlight %}
 {% highlight VB %}
@@ -104,7 +104,7 @@ currencyEdit1.TextBox.Culture = new System.Globalization.CultureInfo("ksh-DE");
 currencyEdit1.TextBox.Text = "$2.00"
 
 ' To change the culture.
-currencyEdit1.TextBox.Culture = New System.Globalization.CultureInfo("ksh-DE")
+currencyEdit1.TextBox.Culture = New System.Globalization.CultureInfo("de-DE")
 
 {% endhighlight %}
 {% endtabs %}
@@ -118,7 +118,7 @@ currencyEdit1.TextBox.Culture = New System.Globalization.CultureInfo("ksh-DE")
 You can show or hide the calculator button in the WinForms CurrencyEdit control by setting the [ShowCalculator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyEdit.html#Syncfusion_Windows_Forms_Tools_CurrencyEdit_ShowCalculator) property.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 // Hide the calculator button.
 currencyEdit1.ShowCalculator = false;

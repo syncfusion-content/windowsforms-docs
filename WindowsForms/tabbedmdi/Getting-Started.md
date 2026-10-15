@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Getting Started with Windows Forms TabbedMDI | Syncfusion®
-description: Learn here about getting started with Syncfusion Windows Forms TabbedMDI control, its elements and more details.
+description: Learn how to get started with the Syncfusion Windows Forms TabbedMDI control by adding it to a form via the designer or code, and by creating tab groups.
 platform: windowsforms
-control: TabbedMDIManager 
+control: TabbedMDIManager
 documentation: ug
 ---
 
@@ -13,7 +13,7 @@ This section explains how to design a **WinForms TabbedMDI** control in a Window
 
 ## Assembly deployment
 
-Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#tabbedmdimanger) section to get the list of assemblies or details of NuGet package that needs to be added as reference to use the control in any application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#tabbedmdimanager) section to get the list of assemblies or details of the NuGet package that needs to be added as a reference to use the control in any application.
 
 Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install nuget packages in a Windows Forms application.
 
@@ -38,7 +38,7 @@ As soon as the control is dropped, the Form1's `IsMDIContainer` property will be
  
 ## Adding control manually in code
 
-To add the control manually in C#, follow the given steps:
+To add the control manually, follow the given steps:
 
 1. Create a C# or VB application via Visual Studio.
 
@@ -56,38 +56,38 @@ To add the control manually in C#, follow the given steps:
 {% capture codesnippet1 %}
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Tools;
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight VB %}
 
 Imports Syncfusion.Windows.Forms.Tools
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% endtabs %}
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4. Create an instance of the [WinForms TabbedMDI](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html) control. 
+4. Create an instance of the [WinForms TabbedMDI](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html) control.
 
 {% capture codesnippet2 %}
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 TabbedMDIManager tabbedMDIManager = new TabbedMDIManager();
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight VB %}
 
 Dim tabbedMDIManager As TabbedMDIManager = New TabbedMDIManager()
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% endtabs %}
 {% endcapture %}
@@ -95,11 +95,11 @@ Dim tabbedMDIManager As TabbedMDIManager = New TabbedMDIManager()
 
 ## Add Form as WinForms TabbedMDI child
 
-We can attach the `Form1` to WinForms TabbedMDI container by using its [AttachToMdiContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_AttachToMdiContainer_System_Windows_Forms_Form_) function. Make sure whether the `IsMdIContainer` property of Form1 is set to `true`. Now the TabbedMDI mode will be turned on and any new MDIChildren created will be grouped as Tabs. Then, create a new Form and displays it in Form1.
+The `Form1` can be attached to the WinForms TabbedMDI container by using its [AttachToMdiContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_AttachToMdiContainer_System_Windows_Forms_Form_) function. Make sure the `IsMdiContainer` property of Form1 is set to `true`. Now the TabbedMDI mode will be turned on and any new MDIChildren created will be grouped as Tabs. Then, create a new Form and display it in Form1.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.IsMdiContainer = true;
 
@@ -118,7 +118,7 @@ form1.Text = "Tab2";
 form1.MdiParent = this;
 form1.Show();
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight VB %}
 
@@ -139,11 +139,11 @@ form1.Text = "Tab2"
 form1.MdiParent = Me
 form1.Show()
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% endtabs %}
 
-The following screenshot illustrates new form will be tabbed inside form1.
+The following screenshot illustrates the new form being tabbed inside Form1.
 
 ![Windows Forms TabbedMDI with forms added as its child](GettingStarted_images/TabbedMDIManager.png)
 
@@ -155,7 +155,7 @@ The `WinForms TabbedMDI` provides support to create a tab group horizontally or 
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 Form form = new Form();
 form.MdiParent = this;
@@ -198,7 +198,7 @@ Me.tabbedMDIManager.CreateNewHorizontalGroup()
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 Form form = new Form();
 form.MdiParent = this;

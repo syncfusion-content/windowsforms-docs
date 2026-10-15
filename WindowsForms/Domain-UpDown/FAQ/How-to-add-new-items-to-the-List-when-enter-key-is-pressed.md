@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Add New Items to List in DomainUpdownExt | Syncfusion®
-description: Learn how to add new items to the list when the Enter key is pressed in Syncfusion Windows Forms DomainUpdownExt control, its elements and more details.
+description: Learn how to add new items to the list when the Enter key is pressed in the Syncfusion Windows Forms DomainUpdownExt control using the KeyDown event.
 platform: windowsforms
 control: DomainUpdownExt
 documentation: ug
@@ -9,30 +9,35 @@ documentation: ug
 
 # How to Add New Items to List in WinForms DomainUpDownExt
 
-To add the new items which are entered by the user at runtime after the user had pressed the enter key, we need to catch the [KeyDown](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.keydown?redirectedfrom=MSDN&view=netframework-4.7.2) event.
+To add new items that the user enters at runtime after the user has pressed the Enter key, you need to handle the [KeyDown](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.keydown?redirectedfrom=MSDN&view=netframework-4.7.2) event.
 
 {% tabs %}
 {% highlight c# %}
 
-private voiddomainUpDownExt1_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
+private void domainUpDownExt1_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
 {
-// Add new items when user press the Enter key.
-    if(e.KeyCode==Keys.Enter)
-    if(!domainUpDownExt1.Items.Contains ( domainUpDownExt1.Text )) domainUpDownExt1.Items.Add(domainUpDownExt1.Text);
+    // Add new items when user presses the Enter key.
+    if (e.KeyCode == Keys.Enter)
+    {
+        if (!domainUpDownExt1.Items.Contains(domainUpDownExt1.Text))
+        {
+            domainUpDownExt1.Items.Add(domainUpDownExt1.Text);
+        }
+    }
 }
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight vb %}
 
-Private SubdomainUpDownExt1_KeyDown(ByValsenderAs Object,ByValeAsSystem.Windows.Forms.KeyEventArgs)
+Private Sub domainUpDownExt1_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs)
 
-' Add new items when user press the Enter key.
-Ife.KeyCode = Keys.EnterThen
-If NotdomainUpDownExt1.Items.Contains(domainUpDownExt1.Text)Then
-domainUpDownExt1.Items.Add(domainUpDownExt1.Text)
-End If
-End If
+    ' Add new items when user presses the Enter key.
+    If e.KeyCode = Keys.Enter Then
+        If Not domainUpDownExt1.Items.Contains(domainUpDownExt1.Text) Then
+            domainUpDownExt1.Items.Add(domainUpDownExt1.Text)
+        End If
+    End If
 End Sub
-{% endhighlight  %}
+{% endhighlight %}
 {% endtabs %}

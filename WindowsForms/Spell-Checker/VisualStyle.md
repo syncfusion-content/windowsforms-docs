@@ -13,17 +13,17 @@ The WinForms Spell Checker control has rich set of themes for professional repre
 
 It has the below themes.
 
-    •	Default
+- Default
 
-    •	Metro
+- Metro
 
-    •	Office2016Colorful
+- Office2016Colorful
 
-    •	Office2016White
+- Office2016White
 
-    •	Office2016DarkGray
+- Office2016DarkGray
 
-    •	Office2016Black
+- Office2016Black
 
 The following code example allows you to set the [VisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SpellCheckerAdv.html#Syncfusion_Windows_Forms_Tools_SpellCheckerAdv_VisualStyle) for the WinForms Spell Checker.
 
@@ -33,7 +33,7 @@ This option helps to set the Default theme.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.spellCheckerAdv1.VisualStyle = Syncfusion.Windows.Forms.Tools.SpellCheckerAdvStyle.Default;
 
@@ -56,7 +56,7 @@ This option helps to set the Metro theme.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.spellCheckerAdv1.VisualStyle = Syncfusion.Windows.Forms.Tools.SpellCheckerAdvStyle.Metro;
 
@@ -79,7 +79,7 @@ This option helps to set the Office2016Colorful theme.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.spellCheckerAdv1.VisualStyle = Syncfusion.Windows.Forms.Tools.SpellCheckerAdvStyle.Office2016Colorful;
 
@@ -102,7 +102,7 @@ This option helps to set the Office2016White theme.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.spellCheckerAdv1.VisualStyle = Syncfusion.Windows.Forms.Tools.SpellCheckerAdvStyle.Office2016White;
 
@@ -125,7 +125,7 @@ This option helps to set the Office2016DarkGray theme.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.spellCheckerAdv1.VisualStyle = Syncfusion.Windows.Forms.Tools.SpellCheckerAdvStyle.Office2016DarkGray;
 
@@ -148,7 +148,7 @@ This option helps to set the Office2016Black theme.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.spellCheckerAdv1.VisualStyle = Syncfusion.Windows.Forms.Tools.SpellCheckerAdvStyle.Office2016Black;
 
@@ -166,4 +166,4 @@ Me.spellCheckerAdv1.VisualStyle = Syncfusion.Windows.Forms.Tools.SpellCheckerAdv
 ![Office2016 Black Theme appearance in SpellCheckerAdv](VisualStyle_images/VisualStyle_img6.png)
 
 
-N> Refer to the following sample [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SpellCheckerAdv_Demo-2092294700.zip) that demonstrates the Visual Style support in WinForms Spell Checker.
+>**NOTE**: Refer to the following sample [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SpellCheckerAdv_Demo-2092294700.zip) that demonstrates the Visual Style support in WinForms Spell Checker.

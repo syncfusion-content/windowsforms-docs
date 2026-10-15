@@ -3,93 +3,79 @@ layout: post
 title: Key Settings in Windows Forms PercentTextBox | Syncfusion®
 description: Learn about Key Settings support in Syncfusion Windows Forms PercentTextBox control and more details.
 platform: windowsforms
-control: Editors Package
+control: PercentTextBox
 documentation: ug
 ---
 
 # Key Settings in WinForms Percent TextBox
 
-Sometimes there may occur some situations for entering large values, like in Mega, Kilo etc. In such situations if we add some sort of keyboard support, it will be very much useful for the users.
+Sometimes there is a need to enter large values, such as multiples of Mega, Kilo, and so on. In such situations, adding keyboard support is very useful for the user.
 
-For example if the user wants to enter 32000, he just needs to enter 32 and then press the 'K'. The value will change to 32000 automatically. This is illustrated in the code snippet given below.
+For example, if the user wants to enter `32000`, they just need to enter `32` and then press the `K` key. The value will change to `32000` automatically. The snippet below also requires that the handler be wired up to the control's `KeyDown` event (for example, `this.percentTextBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.percentTextBox1_KeyDown);`).
 
 {% tabs %}
-{% highlight C# %}
-private void percentTextBox1_KeyDown(object sender, KeyEventArgs e)
+{% highlight c# %}
+private void percentTextBox1_KeyDown(object sender, KeyEventArgs e)
 {
-    double v = percentTextBox1.PercentValue;
-    switch(e.KeyCode)
+    double v = percentTextBox1.PercentValue;
+    switch (e.KeyCode)
     {
         // Enter the value as multiples of thousand.
-        case Keys.G : v = v * 1000000000;
-        break;
-        
-        case Keys.M : v = v * 1000000;
-        break;
-        
-        case Keys.K : v = v * 1000;
-        break;
-    }   
-    percentTextBox.PercentValue = v;
+        case Keys.G: v = v * 1000000000; break;
+        case Keys.M: v = v * 1000000; break;
+        case Keys.K: v = v * 1000; break;
+    }
+    percentTextBox1.PercentValue = v;
 }
 {% endhighlight %}
-{% highlight VB %}
-Private Sub percentTextBox1_KeyDown(ByVal sender As Object, ByVal e As KeyEventArgs)
-Dim v As Double = percentTextBox1.PercentValue
-Select e.KeyCode
-
-' Enter the value as multiples of thousand.
-Case Keys.G
-v = v * 1000000000
-
-Case Keys.M
-v = v * 1000000
-
-Case Keys.K
-v = v * 1000
-End Select
-percentTextBox.PercentValue = v
+{% highlight vb %}
+Private Sub percentTextBox1_KeyDown(ByVal sender As Object, ByVal e As KeyEventArgs)
+    Dim v As Double = percentTextBox1.PercentValue
+    Select Case e.KeyCode
+        ' Enter the value as multiples of thousand.
+        Case Keys.G
+            v = v * 1000000000
+        Case Keys.M
+            v = v * 1000000
+        Case Keys.K
+            v = v * 1000
+    End Select
+    percentTextBox1.PercentValue = v
 End Sub
 {% endhighlight %}
 {% endtabs %}
 
 ## Shortcut keys
 
-Sometimes there may occur some situations for incrementing or decrementing the value in the WinForms Percent TextBox. In such situations it is better to use shortcut keys.
+Sometimes there is a need to increment or decrement the value in the WinForms Percent TextBox. In such situations, it is better to use shortcut keys.
 
-The following implementation will illustrate how this can be achieved. Here we are using Up and Down keys for incrementing and decrementing respectively. We cannot use the '-' key because it is already reserved to enter the minus sign.
+The following implementation will illustrate how this can be achieved. Here we are using the **Up** and **Down** keys for incrementing and decrementing respectively. We cannot use the `-` key because it is already reserved to enter the minus sign.
 
 {% tabs %}
-{% highlight C# %}
-private void percentTextBox1_KeyDown(object sender, KeyEventArgs e)
+{% highlight c# %}
+private void percentTextBox1_KeyDown(object sender, KeyEventArgs e)
 {
-    // Increments the PercentTextBoxValue.
-    double v = percentTextBox1.PercentValue;
-    switch(e.KeyCode)
+    // Increment the PercentTextBox value.
+    double v = percentTextBox1.PercentValue;
+    switch (e.KeyCode)
     {
-        case Keys.Up : v++;
-        break;//you can change by a step like v+=10;
-    
-        case Keys.Down : v--;
-        break;
+        case Keys.Up: v++; break; // you can change by a step like v += 10;
+        case Keys.Down: v--; break;
     }
     percentTextBox1.PercentValue = v;
 }
 {% endhighlight %}
-{% highlight VB %}
-Private Sub percentTextBox1_KeyDown(ByVal sender As Object, ByVal e As KeyEventArgs)
-
-' Increments the PercentTextBoxValue.
-Dim v As Double = percentTextBox1.PercentValue
-Select e.KeyCode
-
-Case Keys.Up
-v = v+1
-
-Case Keys.Down
-v = v-1
-End Select
-percentTextBox1.PercentValue = v
+{% highlight vb %}
+Private Sub percentTextBox1_KeyDown(ByVal sender As Object, ByVal e As KeyEventArgs)
+    ' Increment the PercentTextBox value.
+    Dim v As Double = percentTextBox1.PercentValue
+    Select Case e.KeyCode
+        Case Keys.Up
+            v = v + 1
+        Case Keys.Down
+            v = v - 1
+    End Select
+    percentTextBox1.PercentValue = v
 End Sub
 {% endhighlight %}
 {% endtabs %}

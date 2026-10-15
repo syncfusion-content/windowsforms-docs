@@ -1,30 +1,30 @@
 ---
 layout: post
 title: Customization in Windows Forms ColorPickerButton | Syncfusion®
-description: Learn about Customization Settings support in Syncfusion Windows Forms Color Picker DropDown (ColorPickerButton) control and more details.
+description: Learn about customization settings in the Syncfusion Windows Forms ColorPickerButton control, including sizing, appearance, and visual styles.
 platform: windowsforms
-control: ColorPickerButton 
+control: ColorPickerButton
 documentation: ug
 ---
 # Customization in WinForms Color Picker DropDown
 
-WinForms Color Picker DropDown displays the ColorUIControl as its dropdown. It has properties to customize the ColorUIControl. Refer the [User Guide](/windowsforms/colorui/overview) for ColorUIControl. The size for the dropdown, i.e, ColorUIControl can be set using ColorUISize property.
+The WinForms Color Picker DropDown displays the ColorUIControl as its dropdown. It has properties to customize the ColorUIControl. Refer to the [ColorUI User Guide](/windowsforms/colorui/overview) for the ColorUIControl. The size of the dropdown, that is, the ColorUIControl, can be set using the `ColorUISize` property.
 
 {% tabs %}
 {% highlight c# %}
 
 this.colorPickerButton1.ColorUISize = new System.Drawing.Size(250, 280);
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight vb %}
 
 Me.colorPickerButton1.ColorUISize = New System.Drawing.Size(250, 280)
 
-{% endhighlight  %}
+{% endhighlight %}
 {% endtabs %}
 
-![Windows Forms ColorPickerButton showing the dropdown](ColorPickerButton_images/Overview_img249.jpeg) 
+![WinForms ColorPickerButton showing the ColorUI dropdown with a custom size](ColorPickerButton_images/Overview_img249.jpeg)
 
 ## ColorPicker Appearance
 
@@ -48,17 +48,17 @@ Specifies whether the SelectedColor is set as the button text value.</td></tr>
 {% tabs %}
 {% highlight c# %}
 
-this.colorPickerButton1.SelectedAsBackcolor = true;
+this.colorPickerButton1.SelectedAsBackColor = true;
 this.colorPickerButton1.SelectedAsText = true;
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight vb %}
 
-Me.colorPickerButton1.SelectedAsBackcolor = True
+Me.colorPickerButton1.SelectedAsBackColor = True
 Me.colorPickerButton1.SelectedAsText = True
 
-{% endhighlight  %}
+{% endhighlight %}
 {% endtabs %}
 
 ![Windows Forms ColorPickerButton showing selected color as in control text](ColorPickerButton_images/Overview_img250.jpeg) 
@@ -72,13 +72,13 @@ The WinForms Color Picker DropDown control supports visual style such as Office2
 
 this.colorPickerButton1.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Colorful;
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight vb %}
 
 Me.colorPickerButton1.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Colorful;
 
-{% endhighlight  %}
+{% endhighlight %}
 {% endtabs %}
 
 ![Windows Forms ColorPickerButton showing style of Office2016Colorful](ColorPickerButton_images/colorpickerbutton_office2016colorful.png) 

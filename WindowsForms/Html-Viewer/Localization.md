@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization in Windows Forms HTMLUI | Syncfusion®
-description: Learn about Localization support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
+description: Learn about localizing the WinForms HTML Viewer control to render HTML content in any desired language.
 platform: windowsforms
 control: HTMLUI
 documentation: ug
@@ -20,7 +20,7 @@ Here, WinForms HTML Viewer Control is localized in German Language.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Call the Localizer
 

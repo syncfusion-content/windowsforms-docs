@@ -3,7 +3,7 @@ layout: post
 title: Applying Themes in Windows Forms PercentTextBox | Syncfusion®
 description: Learn about Applying Themes support in Syncfusion Windows Forms PercentTextBox control and more details.
 platform: windowsforms
-control: Editors Package
+control: PercentTextBox
 documentation: ug
 ---
 
@@ -11,19 +11,19 @@ documentation: ug
 
 Themes can be applied to the WinForms Percent TextBox control using the [ThemesEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_ThemesEnabled) property.
 
-N> Refer [Border Settings](/windowsforms/percenttextbox/bordersettings) topic to know about the [BorderStyle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.borderstyle?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBoxBase_BorderStyle) property.
+>**NOTE**: Refer to the [Border Settings](border-settings) topic to know about the [BorderStyle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.borderstyle?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBoxBase_BorderStyle) property.
 
 {% tabs %}
-{% highlight C# %}
-this.percentTextBox1.ThemesEnabled = true;
+{% highlight c# %}
+this.percentTextBox1.ThemesEnabled = true;
 {% endhighlight %}
 {% highlight vb %}
-Me.percentTextBox1.ThemesEnabled = true
+Me.percentTextBox1.ThemesEnabled = True
 {% endhighlight %}
 {% endtabs %}
 
-![Themes](PercentTextBox-Images/Overview_img487.png) 
+![WinForms PercentTextBox with themes enabled](PercentTextBox-Images/Overview_img487.png)
 
-A Sample which demonstrates the [ThemesEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_ThemesEnabled) property of the WinForms Percent TextBox control is available in the below sample installation path.
+A sample that demonstrates the [ThemesEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_ThemesEnabled) property of the WinForms Percent TextBox control is available at the following sample installation path:
 
-…\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo
+`%LOCALAPPDATA%\Syncfusion\EssentialStudio\<Version Number>\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo`

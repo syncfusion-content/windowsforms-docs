@@ -1,39 +1,39 @@
 ---
 layout: post
 title: Appearance and Behavior in Windows Forms DoubleTextBox | Syncfusion®
-description: Learn about Appearance and Behavior Settings support in Syncfusion Windows Forms DoubleTextBox control and more details.
+description: Learn about appearance and behavior settings in the Syncfusion Windows Forms DoubleTextBox control, including styling and keyboard support.
 platform: windowsforms
 control: DoubleTextBox
 documentation: ug
 ---
 # Appearance and Behavior in WinForms Double TextBox
 
-This section discusses the complete Appearance and behavior settings of WinForms Double TextBox.
+This section discusses the complete appearance and behavior settings of the WinForms Double TextBox.
 
 ## Border Style
 
-3D border styles and colors can be applied for the border of WinForms Double TextBox. Refer [Border styles](/windowsforms/currencytextbox/appearance#border-styles) of Currency textbox for details.
+3D border styles and colors can be applied to the border of the WinForms Double TextBox. Refer to [Border styles](/windowsforms/currencytextbox/appearance#border-styles) of Currency TextBox for details.
 
 ## Color
 
-Colors can be applied for WinForms Double TextBox when its value is positive, negative or zero. Refer [Color Settings](/windowsforms/currencytextbox/appearance#color-settings) of Currency textbox for details.
+Colors can be applied to the WinForms Double TextBox when its value is positive, negative, or zero. Refer to [Color Settings](/windowsforms/currencytextbox/appearance#color-settings) of Currency TextBox for details.
 
 ## Visual Style
 
-Please refer the [TextBoxExt Visual style](/windowsforms/TextBoxExt/Appearance-Settings) to set themes for WinForms Double TextBox.
+Please refer to the [TextBoxExt Visual Style](/windowsforms/TextBoxExt/Appearance-Settings) to set themes for the WinForms Double TextBox.
 
 ## Keyboard Support
 
-WinForms Double TextBox supports keyboard support. Refer [Clipboard Support](/windowsforms/currencytextbox/advanced-features#clipboard-support ) of Currency textbox in detail.
+The WinForms Double TextBox supports keyboard interaction. Refer to [Clipboard Support](/windowsforms/currencytextbox/advanced-features#clipboard-support) of Currency TextBox for details.
 
 ## Overflow Indicator
 
-Overflow indicator will be shown when the value of WinForms Double TextBox goes beyond the control's size. Refer [Overflow Indicator](/windowsforms/currencytextbox/advanced-features#overflow-indicator) of Currency textbox in detail.
+An overflow indicator will be shown when the value of the WinForms Double TextBox goes beyond the control's size. Refer to [Overflow Indicator](/windowsforms/currencytextbox/advanced-features#overflow-indicator) of Currency TextBox for details.
 
 ## Globalization
 
-The WinForms Double TextBox class is globalization aware and uses System.Globalization.CultureInfo for locale-specific information. Refer[Globalization](/windowsforms/currencytextbox/advanced-features#globalization) of Currency textbox in detail.
+The WinForms Double TextBox class is globalization aware and uses `System.Globalization.CultureInfo` for locale-specific information. Refer to [Globalization](/windowsforms/currencytextbox/advanced-features#globalization) of Currency TextBox for details.
 
 ## Active When Disabled
 
-We can make the control active even when it is in Disable mode. Refer [Active When Disabled](/windowsforms/currencytextbox/faq/how-to-make-the-text-active-when-the-control-is-disabled) of Currency textbox in detail.
+The control can be made active even when it is in disabled mode. Refer to [Active When Disabled](/windowsforms/currencytextbox/faq/how-to-make-the-text-active-when-the-control-is-disabled) of Currency TextBox for details.

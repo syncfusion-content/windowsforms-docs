@@ -1,9 +1,9 @@
 ---
 layout: post
 title: MDI List in Windows Forms TabbedMDI | Syncfusion®
-description: Learn about MDI List support in Syncfusion Windows Forms TabbedMDI control, its elements and more details.
+description: Learn how to retrieve the list of MDIChild forms in the Syncfusion Windows Forms TabbedMDI control and display the list in menus or tool strips.
 platform: windowsforms
-control: TabbedMDIPackage 
+control: TabbedMDIManager
 documentation: ug
 ---
 
@@ -33,7 +33,7 @@ You can retrieve the MDIChild forms using the below code.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -107,7 +107,7 @@ Specifies the tool strip menu item to which the MDIChildren list should be added
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 private MenuItem miWindow;
 

@@ -17,7 +17,7 @@ The height between the Tab and the Control can be set using the [BottomBorderHei
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 

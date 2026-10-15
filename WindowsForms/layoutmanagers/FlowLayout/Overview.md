@@ -9,11 +9,11 @@ documentation: ug
 
 # About Syncfusion® WinForms Flow Layout Control
 
-The `WinForms Flow Layout` is a layout manager. It allows users arrange the child components horizontally or vertically in a specific order based on the settings. It is one of the most commonly used layout managers. By deriving from the LayoutManager class, the WinForms Flow Layout component is created to support simple horizontal and vertical flows and complex constraint-based WinForms Flow Layouts.
+The `WinForms Flow Layout` is a layout manager. It allows users to arrange the child components horizontally or vertically in a specific order based on the settings. It is one of the most commonly used layout managers. By deriving from the `LayoutManager` class, the WinForms Flow Layout component is created to support simple horizontal and vertical flows and complex constraint-based WinForms Flow Layouts.
 
-In its simplest form, this Layout Manager can be used to automatically arrange the child components in one or more rows.
+In its simplest form, this layout manager can be used to automatically arrange the child components in one or more rows.
 
-![Arrange child controls in one or more row](Overview_images/Overview_img1.jpeg)
+![WinForms FlowLayout automatically arranging child controls in one or more rows](Overview_images/Overview_img1.jpeg)
 
 ## Key features
 

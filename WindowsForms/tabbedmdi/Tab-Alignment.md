@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Tab Alignment in Windows Forms TabbedMDI | Syncfusion®
-description: Learn about Tab Alignment support in Syncfusion Windows Forms TabbedMDI control, its elements and more details.
+description: Learn how to align the tabs of the Syncfusion Windows Forms TabbedMDI control to the top, left, right, or bottom of the form.
 platform: windowsforms
-control: TabbedMDIManager 
+control: TabbedMDIManager
 documentation: ug
 ---
 
@@ -13,10 +13,9 @@ The tabs in the WinForms TabbedMDI layout can be aligned to the Top, Left, Right
 
 1. Call the TabControlAdded event in the form's constructor.
 
-{% capture codesnippet1 %}
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 this.tabbedMDIManager.TabControlAdded += new TabbedMDITabControlEventHandler(tabbedMDIManager_TabControlAdded);
 
@@ -30,15 +29,13 @@ AddHandler tabbedMDIManager.TabControlAdded, AddressOf tabbedMDIManager_TabContr
 {% endhighlight %}
 
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
+
 
 2. Set the Alignment property of Tab Control using the TabbedMDITabControlEventArgs.
 
-{% capture codesnippet2 %}
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 private void tabbedMDIManager_TabControlAdded(object sender, TabbedMDITabControlEventArgs args)
 
@@ -62,8 +59,7 @@ Private Sub tabbedMDIManager_TabControlAdded(ByVal sender As Object, ByVal args 
 {% endhighlight %}
 
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
+
 
 
 ![Tabs alignment](Tab-Alignment_images/Tab-Alignment_img1.jpeg)
