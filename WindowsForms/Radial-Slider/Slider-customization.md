@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Slider Customization in Windows Forms Radial Slider | Syncfusion®
 description: Slider customization supports background, circle, needle, and text styling, along with themes and visual customization options.
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Slider background color
 
-The background color for the radial slider can be customized using the [BackgroundColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html#Syncfusion_Windows_Forms_Tools_RadialSlider_BackgroundColor).
+The background color for the radial slider can be customized using the [BackgroundColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html#Syncfusion_Windows_Forms_Tools_RadialSlider_BackgroundColor) property.
 
 {% tabs %}
 

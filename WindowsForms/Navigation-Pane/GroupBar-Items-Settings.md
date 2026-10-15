@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: GroupBar Items Settings in Windows Forms | Syncfusion®
 description: GroupBar item settings support text alignment, images, highlighting, popups, renaming, and hosting child controls.
@@ -67,7 +67,7 @@ Me.groupBar1.InplaceRenameItem(index)
 
 {% endtabs %}
 
-The method associated with [CancelInplaceRenameItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_CancelInplaceRenameItem) property. 
+The in-place renaming operation can be canceled using the [CancelInplaceRenameItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_CancelInplaceRenameItem) method.
 
 ## Image settings
 
@@ -161,14 +161,14 @@ The control provides highlighting effect for the GroupBar Item when the mouse is
 ![GroupBar item highlight](Overview_images/Overview_img20.jpeg)
 
 
-The border of the GroupBar Items can be changed by drawing the border without 3-dimensional edge which can be attained by setting the [FlatLook](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_FlatLook) property to `true`.
+The border of the GroupBar Items can be changed by drawing the border without a 3-dimensional edge, which can be attained by setting the [FlatLook](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_FlatLook) property to `true`.
 
 ![GroupBar flat look appearance](Overview_images/Overview_img21.jpeg)
 
 
 ## Integrating child controls to the GroupBar items
 
-GroupBar Item can host any control in it's client area. To host more than one control, place the controls in the panel and then drop the panel inside the GroupBar Item container.
+GroupBar Item can host any control in its client area. To host more than one control, place the controls in the panel and then drop the panel inside the GroupBar Item container.
 
 ### TreeView as child control
 
@@ -206,7 +206,11 @@ this.groupBarItem2.Client = this.treeView1;
 
 // Nodes are added to the TreeView Control.
 
-this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[]{treeNode2});
+this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] 
+{
+    new System.Windows.Forms.TreeNode("Node1"),
+    new System.Windows.Forms.TreeNode("Node2")
+});
 
 {% endhighlight %}
 

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Grouping Bar Items in Windows Forms PopupMenu | Syncfusion®
 description: Grouping bar items organizes related commands using separators and grouping methods to improve menu structure.
@@ -36,9 +36,9 @@ Grouping can also be done by using the below mentioned methods.
 
 * [`BeginGroupAt`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_ParentBarItem_BeginGroupAt_Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_) : Begins the categorization (grouping) of items immediately before the BarItem instance specified.
 
-* [`RemoveGroupAt`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_ParentBarItem_RemoveGroupAt_Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_) : Ends the categorization (grouping) of items immediately before the BarItem instance specified. 
+* [`RemoveGroupAt`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_ParentBarItem_RemoveGroupAt_Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_) : Removes the grouping that begins immediately before the BarItem instance specified. 
 
-* [`IsGroupBeginning`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_ParentBarItem_IsGroupBeginning_Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_) : Returns a boolean value whether the specified bar item instance is at the beginning of the grouping or not. 
+* [`IsGroupBeginning`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_ParentBarItem_IsGroupBeginning_Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_) : Returns a boolean value indicating whether the specified bar item instance is at the beginning of a grouping or not. 
 
 The below code snippets will explain how to set grouping by using the methods.
 

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Button Mode in Windows Forms Split Button | Syncfusion
 description: Button Mode supports normal and toggle behaviors, including configurable checked and unchecked button states.
@@ -7,16 +7,16 @@ control: SplitButton
 documentation: ug
 ---
 
-# Button Mode in Windows Forms Split Button
+# Button Mode in Windows Forms SplitButton
 
 This feature enables you to set the button in normal or toggle mode.
 
-* Norma Mode -  Execute normal button command
-* Toggle Mode  - Execute toggle mode click event
+* **Normal mode** - Executes the normal button command.
+* **Toggle mode** - Executes the toggle-mode click event.
 
 ## Setting button mode
 
-You can set the button mode using the _ButtonMode_ property. 
+You can set the button mode using the _ButtonMode_ property.
 
 The following code illustrates how to set the button in normal mode:
 
@@ -58,13 +58,13 @@ The following code illustrates how to set the button in checked state:
 {% tabs %}
 {% highlight c# %}
 
-splitButton1.isButtonChecked = true;
+splitButton1.IsButtonChecked = true;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-splitButton1.isButtonChecked = True
+splitButton1.IsButtonChecked = True
 
 {% endhighlight %}
 {% endtabs %}
@@ -74,13 +74,13 @@ The following code illustrates how to set the button in unchecked state:
 {% tabs %}
 {% highlight c# %}
 
-splitButton1.isButtonChecked = false;
+splitButton1.IsButtonChecked = false;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-splitButton1.isButtonChecked = False
+splitButton1.IsButtonChecked = False
 				
 {% endhighlight %}
 {% endtabs %}

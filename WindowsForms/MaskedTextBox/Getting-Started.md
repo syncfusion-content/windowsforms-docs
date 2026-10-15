@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Getting Started with Windows Forms MaskedTextBox (MaskedEditBox)
 
-This section briefly describes how to create a new Windows Forms project in Visual Studio and how to add the [WinForms MaskedTextBox](https://www.syncfusion.com/winforms-ui-controls/maskedtextbox) control with its basic functionalities.
+This section briefly describes how to create a new Windows Forms project in Visual Studio and how to add the [WinForms MaskedTextBox](https://www.syncfusion.com/winforms-ui-controls/maskedtextbox) control and use its basic functionalities.
 
 ## Assembly deployment
 
@@ -141,7 +141,7 @@ this.maskedEditBox1.Location = new System.Drawing.Point(70, 29);
 
 ' The mask string.
 Me.maskedEditBox1.Mask = ">?<???? ??????"
-Me.maskedEditBox1.Location = New System.Drawing.Point(70, 29);
+Me.maskedEditBox1.Location = New System.Drawing.Point(70, 29)
 
 {% endhighlight %}
 

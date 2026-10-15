@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Appearance in Windows Forms Tooltip | Syncfusion®
 description: Appearance customization supports borders, gradients, separators, themes, shadows, RTL layouts, and tooltip styling.
@@ -11,7 +11,7 @@ documentation: ug
 
 ## ToolTip Control
 
-The border color and its thickness of the `SfToolTip` can be customized by using the [BorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipInfo.html#Syncfusion_WinForms_Controls_ToolTipInfo_BorderColor) and [BorderThickness](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipInfo.html#Syncfusion_WinForms_Controls_ToolTipInfo_BorderThickness) properties.
+The border color and thickness of a tooltip can be customized on the `ToolTipInfo` using the [BorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipInfo.html#Syncfusion_WinForms_Controls_ToolTipInfo_BorderColor) and [BorderThickness](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipInfo.html#Syncfusion_WinForms_Controls_ToolTipInfo_BorderThickness) properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -74,7 +74,7 @@ N> The [GradientBrush](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Wi
 
 ### ToolTipItem Separator
 
-The separator of the [ToolTipItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipItem.html) can be customized using the [SeparatorColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.ToolTipVisualStyle.html#Syncfusion_WinForms_Controls_Styles_ToolTipVisualStyle_SeparatorColor) and [SeparatorStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.ToolTipVisualStyle.html#Syncfusion_WinForms_Controls_Styles_ToolTipVisualStyle_SeparatorStyle) properties.
+The separator of the [ToolTipItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipItem.html) can be customized using the [SeparatorColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.ToolTipVisualStyle.html#Syncfusion_WinForms_Controls_Styles_ToolTipVisualStyle_SeparatorColor) and [SeparatorStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.ToolTipVisualStyle.html#Syncfusion_WinForms_Controls_Styles_ToolTipVisualStyle_SeparatorStyle) properties on the `Style` sub-property.
 
 {% tabs %}
 {% highlight c# %}
@@ -101,7 +101,7 @@ The appearance of the `ToolTipItem` can be customized before showing the tooltip
 {% tabs %}
 {% highlight c# %}
 this.sfToolTip1.ToolTipShowing += SfToolTip1_ToolTipShowing;
-private void SfToolTip1_ToolTipShowing(object sender, ToolTipShowingEventsArgs e)
+private void SfToolTip1_ToolTipShowing(object sender, ToolTipShowingEventArgs e)
 {
     if (e.Control is Button)
     {
@@ -133,7 +133,7 @@ sfToolTip1.ShadowVisible = true;
 
 ## ToolTipItem Separator
 
-The enabled separator of the `ToolTipItem` can be customized by setting the [EnableSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipItem.html#Syncfusion_WinForms_Controls_ToolTipItem_EnableSeparator) property to `true`.
+The separator of the `ToolTipItem` can be enabled by setting the [EnableSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipItem.html#Syncfusion_WinForms_Controls_ToolTipItem_EnableSeparator) property to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -153,9 +153,9 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 
 N> The separator line cannot be drawn for the last `ToolTipItem` in the collection, even the separator is enabled.
 
-## Right to Left
+## Right-to-Left Support
 
-The elements of the tooltip can be aligned from right to left and vice versa using the [RightToLeft](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipInfo.html#Syncfusion_WinForms_Controls_ToolTipInfo_RightToLeft) property. 
+The elements of the tooltip can be aligned from right to left and vice versa using the [RightToLeft](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipInfo.html#Syncfusion_WinForms_Controls_ToolTipInfo_RightToLeft) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -192,7 +192,7 @@ Themes can be applied to the SfToolTip by using the following steps:
 
 The `Syncfusion.Office2016Theme.WinForms` assembly should be added as reference to set theme for the SfToolTip in any application.
 
-Before applying theme to the SfToolTip, required theme assembly should be loaded. 
+Before applying the theme to the SfToolTip, the required theme assembly should be loaded.
 
 {% tabs %}
 
@@ -221,17 +221,17 @@ using Syncfusion.WinForms.Controls;
 
 Imports Syncfusion.WinForms.Controls
 
- Friend Module Program
-        ''' <summary>
-        ''' The main entry point for the application.
-        ''' </summary>
-        Sub Main()
-            SfSkinManager.LoadAssembly(GetType(Office2016Theme).Assembly)
-            Application.EnableVisualStyles()
-            Application.SetCompatibleTextRenderingDefault(False)
-            Application.Run(New Form1())
-        End Sub
-    End Module
+Friend Module Program
+    ''' <summary>
+    ''' The main entry point for the application.
+    ''' </summary>
+    Sub Main()
+        SfSkinManager.LoadAssembly(GetType(Office2016Theme).Assembly)
+        Application.EnableVisualStyles()
+        Application.SetCompatibleTextRenderingDefault(False)
+        Application.Run(New Form1())
+    End Sub
+End Module
 
 {% endhighlight  %}
 
@@ -239,27 +239,25 @@ Imports Syncfusion.WinForms.Controls
 
 ### Apply theme
 
-Appearance of the SfToolTip can be changed by using the `ThemeName`.
+The appearance of the SfToolTip can be changed by setting the `ThemeName` property.
 
 #### Office2016Colorful
 
-This option helps to set the Office2016Colorful Theme.
+The Office2016Colorful theme uses vibrant blue accents and is the default Office look.
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Office2016Colorful
-
- this.SfToolTip.ThemeName = "Office2016Colorful";
+// Office2016Colorful theme.
+this.sfToolTip1.ThemeName = "Office2016Colorful";
 
 {% endhighlight  %}
 
 {% highlight VB %}
 
-' Office2016Colorful 
-
-Me.SfToolTip.ThemeName = "Office2016Colorful"
+' Office2016Colorful theme.
+Me.sfToolTip1.ThemeName = "Office2016Colorful"
 
 {% endhighlight  %}
 
@@ -269,23 +267,21 @@ Me.SfToolTip.ThemeName = "Office2016Colorful"
 
 #### Office2016White
 
-This option helps to set the Office2016White Theme.
+The Office2016White theme uses a clean white background.
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Office2016White
-
- this.SfToolTip.ThemeName = "Office2016White";
+// Office2016White theme.
+this.sfToolTip1.ThemeName = "Office2016White";
 
 {% endhighlight  %}
 
 {% highlight VB %}
 
-' Office2016White 
-
-Me.SfToolTip.ThemeName = "Office2016White"
+' Office2016White theme.
+Me.sfToolTip1.ThemeName = "Office2016White"
 
 {% endhighlight  %}
 
@@ -295,23 +291,21 @@ Me.SfToolTip.ThemeName = "Office2016White"
 
 #### Office2016DarkGray
 
-This option helps to set the Office2016DarkGray Theme.
+The Office2016DarkGray theme uses a dark gray background.
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Office2016DarkGray
-
- this.SfToolTip.ThemeName = "Office2016DarkGray";
+// Office2016DarkGray theme.
+this.sfToolTip1.ThemeName = "Office2016DarkGray";
 
 {% endhighlight  %}
 
 {% highlight VB %}
 
-' Office2016DarkGray 
-
-Me.SfToolTip.ThemeName = "Office2016DarkGray"
+' Office2016DarkGray theme.
+Me.sfToolTip1.ThemeName = "Office2016DarkGray"
 
 {% endhighlight  %}
 
@@ -321,23 +315,21 @@ Me.SfToolTip.ThemeName = "Office2016DarkGray"
 
 #### Office2016Black
 
-This option helps to set the Office2016Black Theme.
+The Office2016Black theme uses a near-black background.
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Office2016Black
-
- this.SfToolTip.ThemeName = "Office2016Black";
+// Office2016Black theme.
+this.sfToolTip1.ThemeName = "Office2016Black";
 
 {% endhighlight  %}
 
 {% highlight VB %}
 
-' Office2016Black 
-
-Me.SfToolTip.ThemeName = "Office2016Black"
+' Office2016Black theme.
+Me.sfToolTip1.ThemeName = "Office2016Black"
 
 {% endhighlight  %}
 

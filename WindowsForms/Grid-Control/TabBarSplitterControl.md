@@ -8,35 +8,35 @@ documentation: ug
 ---
 
 # TabBarSplitterControl in Windows Forms Grid Control
-User can create TabBar Pages with dynamic splitters by using [TabBarSplitterControl](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarSplitterControl.html). When used with a GridControl, it gives a workbook like appearance. User can add more than one [TabBarPage](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarPage.html) and GridControl can be added in each page. This control is helpful when GridControl with formula cells and [Cross-Reference](http://help.syncfusion.com/windowsforms/grid/formula-support#named-ranges) sheets are used. The TabBarSplitterControl comes under the library [Syncfusion.Shared.Base](http://help.syncfusion.com/cr/windowsforms) assembly.
+Users can create TabBar pages with dynamic splitters by using [TabBarSplitterControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarSplitterControl.html). When used with a GridControl, it gives a workbook-like appearance. Users can add more than one [TabBarPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarPage.html), and a GridControl can be added to each page. This control is helpful when a GridControl with formula cells and [Cross-Reference](https://help.syncfusion.com/windowsforms/grid/formula-support#named-ranges) sheets is used. The TabBarSplitterControl is available in the `Syncfusion.Shared.Base` assembly.
 
 ## Adding via Designer
 
-The following steps will explain on how to integrate a GridControl with the TabBarSplitterControl.
+The following steps explain how to integrate a GridControl with the TabBarSplitterControl.
 
-1.Drag and Drop the TabBarSplitterControl from the toolbox.
+1. Drag and Drop the TabBarSplitterControl from the toolbox.
 
 ![TabBarSplitterControl_img1](TabBarSplitterControl_images/TabBarSplitterControl_img1.png)
 
-2.Drag the GridControl from toolbox and drop it on the TabBarSplitterControl.
+2. Drag the GridControl from the toolbox and drop it on the TabBarSplitterControl.
 
 ![TabBarSplitterControl_img2](TabBarSplitterControl_images/TabBarSplitterControl_img2.png)
 
-3.It is also possible to add or remove `TabBarPage` through designer by using the `Edit` option in designer mode.
+3. `TabBarPage` items can also be added or removed through the designer by using the `Edit` option in designer mode.
 
 ![TabBarSplitterControl_img3](TabBarSplitterControl_images/TabBarSplitterControl_img3.png)
 
-It can also be added or removed through the **TabBarPageCollectionEditor** which can be accessed through the `TabBarPage` property in the property window.
+They can also be added or removed through the **TabBarPageCollectionEditor**, which can be accessed by using the `TabBarPage` property in the property window.
 
 ![TabBarSplitterControl_img4](TabBarSplitterControl_images/TabBarSplitterControl_img4.png)
 
-4.After adding `TabBarPage`, GridControl can be added in these pages by just drag and drop the control over them.
+4. After adding a `TabBarPage`, a GridControl can be added to these pages by dragging and dropping the control over them.
 
 ![TabBarSplitterControl_img5](TabBarSplitterControl_images/TabBarSplitterControl_img5.png)
 
 ## Adding via Code
 
-Create a new TabBarSplitterControl and add the required number of [TabBarPage](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarPage.html) in this control. Add the existing GridControl in the created `TabBarPage`. Refer the below code on how to initialize a TabBarSplitterControl and how to add `TabBarPage` with GridControl in it.
+Create a new TabBarSplitterControl and add the required number of [TabBarPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarPage.html) to this control. Add the existing GridControl to the created `TabBarPage`. Refer to the following code to learn how to initialize a TabBarSplitterControl and how to add a `TabBarPage` with a GridControl in it.
 
 {% tabs %}
 {% highlight c# %}
@@ -47,35 +47,35 @@ TabBarSplitterControl tabBarSplitterControl1 = new TabBarSplitterControl();
 TabBarPage Income = new TabBarPage();
 TabBarPage Spent = new TabBarPage();
 
-//Add a new GridControl in the TabBarPage named Income.
+// Add a new GridControl in the TabBarPage named Income.
 Income.Text = "Income";
 Income.Controls.Add(new GridControl());
 
-//Add a new GridControl in the TabBarPage named Spent.
+// Add a new GridControl in the TabBarPage named Spent.
 Spent.Text = "Spent";
 Spent.Controls.Add(new GridControl());
 
-//Add the TabBarPages to TabBarSplitterControl.
+// Add the TabBarPages to TabBarSplitterControl.
 tabBarSplitterControl1.Controls.Add(Income);
 tabBarSplitterControl1.Controls.Add(Spent);
 {% endhighlight %}
 
 {% highlight vb %}
-'Create a TabBarPage Control.
+' Create a TabBarPage Control.
 Private Income As New Syncfusion.Windows.Forms.TabBarPage()
 Private Spent As New Syncfusion.Windows.Forms.TabBarPage()
 
-'Add the gridcontrol1 for Income page.
+' Add a new GridControl to the TabBarPage named Income
 Income.Text = "Income"
-Income.Controls.Add(Me.gridControl1)
+Income.Controls.Add(New GridControl())
 
-'Add the gridcontrol2 for Spent page.
+' Add a new GridControl to the TabBarPage named Spent.
 Spent.Text = "Spent"
-Spent.Controls.Add(Me.gridControl2)
+Spent.Controls.Add(New GridControl())
 
-'Add the TabBarPages to TabBarSplitterControl.
-tabBarSplitterControl1.Controls.Add(Me.Income)
-tabBarSplitterControl1.Controls.Add(Me.Spent)
+' Add the TabBarPages to TabBarSplitterControl.
+tabBarSplitterControl1.Controls.Add(Income)
+tabBarSplitterControl1.Controls.Add(Spent)
 {% endhighlight %}
 {% endtabs %}
 
@@ -85,7 +85,7 @@ N> To know about TabBarSplitterControl properties and methods, please check the 
 
 ## Visual Styles
 
-TabBarSplitterControl gives support for adding visual styles similar to that of in GridControl. Visual style can be changed by using the [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarSplitterControl.html#Syncfusion_Windows_Forms_TabBarSplitterControl_Style) property. 
+TabBarSplitterControl provides support for visual styles similar to that of the GridControl. The visual style can be changed by using the [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarSplitterControl.html#Syncfusion_Windows_Forms_TabBarSplitterControl_Style) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -103,7 +103,7 @@ gridControl1.GridVisualStyles = GridVisualStyles.SystemTheme
 
 ![TabBarSplitterControl_img7](TabBarSplitterControl_images/TabBarSplitterControl_img7.png)
 
-For setting the Office 2007 styles theme, make use of the [Office2007ColorScheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarSplitterControl.html#Syncfusion_Windows_Forms_TabBarSplitterControl_Office2007ColorScheme) property and change the theme to blue, black or silver accordingly.
+For setting the Office 2007 styles theme, make use of the [Office2007ColorScheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarSplitterControl.html#Syncfusion_Windows_Forms_TabBarSplitterControl_Office2007ColorScheme) property and change the theme to blue, black, or silver accordingly.
 
 {% tabs %}
 {% highlight c# %}
@@ -116,7 +116,7 @@ tabBarSplitterControl1.Office2007ColorScheme = Office2007Theme.Blue;
 {% highlight vb %}
 'Office2007 Blue theme.
 tabBarSplitterControl1.Style = Syncfusion.Windows.Forms.TabBarSplitterStyle.Office2007
-Office2007Theme.gridControl1.GridVisualStyles = GridVisualStyles.Office2007Blue
+gridControl1.GridVisualStyles = GridVisualStyles.Office2007Blue
 tabBarSplitterControl1.Office2007ColorScheme = Office2007Theme.Blue
 {% endhighlight %}
 {% endtabs %}
@@ -127,13 +127,13 @@ For setting the Metro theme, set the `Style` property as `Metro` style appearanc
 
 {% tabs %}
 {% highlight c# %}
-//Default Theme.
+// Metro Theme.
 gridControl1.GridVisualStyles = GridVisualStyles.Metro;
 tabBarSplitterControl1.Style = Syncfusion.Windows.Forms.TabBarSplitterStyle.Metro;
 {% endhighlight %}
 
 {% highlight vb %}
-'Default Theme.
+' Metro Theme.
 gridControl1.GridVisualStyles = GridVisualStyles.Metro
 tabBarSplitterControl1.Style = Syncfusion.Windows.Forms.TabBarSplitterStyle.Metro
 {% endhighlight %}
@@ -161,15 +161,13 @@ tabBarSplitterControl1.Style = TabBarSplitterStyle.Metro
 
 ![TabBarSplitterControl_img10](TabBarSplitterControl_images/TabBarSplitterControl_img10.png)
 
-**Office2016Colorful**
+### Office2016Colorful
 
 This option helps to set the Office2016Colorful style.
 
-### Code Sample
-
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 // Office2016Colorful
 
@@ -177,27 +175,25 @@ this.tabBarSplitterControl1.Style = Syncfusion.Windows.Forms.TabBarSplitterStyle
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vb %}
 
 'Office2016Colorful
 
 Me.tabBarSplitterControl1.Style = Syncfusion.Windows.Forms.TabBarSplitterStyle.Office2016Colorful
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
 ![TabBarSplitterControl_img12](TabBarSplitterControl_images/TabBarSplitterControl_img12.png)
 
-**Office2016White**
+### Office2016White
 
 This option helps to set the Office2016White style.
 
-### Code Sample
-
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 // Office2016White
 
@@ -205,27 +201,25 @@ this.tabBarSplitterControl1.Style = Syncfusion.Windows.Forms.TabBarSplitterStyle
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vb %}
 
 'Office2016White
 
 Me.tabBarSplitterControl1.Style = Syncfusion.Windows.Forms.TabBarSplitterStyle.Office2016White
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
 ![TabBarSplitterControl_img13](TabBarSplitterControl_images/TabBarSplitterControl_img13.png)
 
-**Office2016DarkGray**
+### Office2016DarkGray
 
 This option helps to set the Office2016DarkGray style.
 
-### Code Sample
-
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 // Office2016DarkGray
 
@@ -233,27 +227,25 @@ this.tabBarSplitterControl1.Style = Syncfusion.Windows.Forms.TabBarSplitterStyle
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vb %}
 
 'Office2016DarkGray
 
 Me.tabBarSplitterControl1.Style = Syncfusion.Windows.Forms.TabBarSplitterStyle.Office2016DarkGray
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
 ![TabBarSplitterControl_img14](TabBarSplitterControl_images/TabBarSplitterControl_img14.png)
 
-**Office2016Black**
+### Office2016Black
 
 This option helps to set the Office2016Black style.
 
-### Code Sample
-
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 // Office2016Black
 
@@ -261,13 +253,13 @@ this.tabBarSplitterControl1.Style = Syncfusion.Windows.Forms.TabBarSplitterStyle
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vb %}
 
 'Office2016Black
 
 Me.tabBarSplitterControl1.Style = Syncfusion.Windows.Forms.TabBarSplitterStyle.Office2016Black
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -275,7 +267,7 @@ Me.tabBarSplitterControl1.Style = Syncfusion.Windows.Forms.TabBarSplitterStyle.O
 
 ## Custom Styles
 
-It is possible to apply custom color to the TabBarSplitterControl by setting `Office2007ColorScheme` property as `Managed`. The desired color can be chosen by using the [ApplyManagedColors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Colors.html#Syncfusion_Windows_Forms_Office2007Colors_ApplyManagedColors_System_Windows_Forms_Form_System_Drawing_Color_) method.
+It is possible to apply a custom color to the TabBarSplitterControl by setting the `Office2007ColorScheme` property as `Managed`. The desired color can be chosen by using the [ApplyManagedColors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Colors.html#Syncfusion_Windows_Forms_Office2007Colors_ApplyManagedColors_System_Windows_Forms_Form_System_Drawing_Color_) method.
 
 {% tabs %}
 {% highlight c# %}

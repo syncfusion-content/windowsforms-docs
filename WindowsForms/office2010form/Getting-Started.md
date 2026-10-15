@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Windows Forms Office2010 Form
 
-This section describes how to configure `Office2010Form` control in a Windows Forms application.
+This section describes how to configure the `Office2010Form` control in a Windows Forms application.
 
 ## Assembly deployment
 
@@ -19,20 +19,20 @@ Please find more details regarding how to install the nuget packages in windows 
  
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
 
-## Creating simple application with Office2010Form
+## Creating a simple application with Office2010Form
 
-You can create the Windows Forms application with Office2010Form control as follows:
+You can create a Windows Forms application with the Office2010Form control as follows:
 
-1. [Creating project](#creating-the-project)
+1. [Create the project](#create-the-project)
 2. [Configure Office2010Form](#configure-office2010form)
 
-### Creating the project
+### Create the project
 
-Create a new Windows Forms project in the Visual Studio to change the standard form into Office2010Form.
+Create a new Windows Forms project in Visual Studio to host the Office2010Form.
 
 ### Configure Office2010Form
 
-`Office2010Form` is an advanced standard Form, we can configure it by following the given steps:
+`Office2010Form` is an advanced standard Form. You can configure it by following the steps below.
 
 **Step 1:** Add the following required assembly references to the project:
 
@@ -41,10 +41,9 @@ Create a new Windows Forms project in the Visual Studio to change the standard f
 **Step 2:** Include the namespaces **Syncfusion.Windows.Forms**.
 
 {% tabs %}
-
 {% highlight C# %}
 
-using Syncfusion.Windows.Forms;
+using Syncfusion.Windows.Forms;
 
 {% endhighlight  %}
 

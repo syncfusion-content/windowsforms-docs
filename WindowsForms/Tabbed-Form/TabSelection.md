@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Tab Selection in Windows Forms Tabbed Form | Syncfusion®
 description: Tab selection supports programmatic tab activation and events for controlling and monitoring tab selection changes.
@@ -32,13 +32,13 @@ Me.tabbedFormControl.SelectedTab = tabPageAdv2
 {% endhighlight %}
 {% endtabs %}
 
-![Winforms showing applied the selection in  Tabbed form](Tab-Selection-images/Tab-Selection-images_img1.png)
+![WinForms TabbedForm showing the selected tab](Tab-Selection-images/Tab-Selection-images_img1.png)
 
 ## Events
 
-### SelectedIndexChanging event 
+### SelectedIndexChanging event
 
-The [SelectedIndexChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SfTabbedFormControl.html) event occurs when changing the [SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SfTabbedFormControl.html#Syncfusion_Windows_Forms_Tools_SfTabbedFormControl_SelectedIndex) or [SelectedTab](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SfTabbedFormControl.html#Syncfusion_Windows_Forms_Tools_SfTabbedFormControl_SelectedTab) of the [TabbedFormControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SfTabbedForm.html#Syncfusion_Windows_Forms_Tools_SfTabbedForm_TabbedFormControl). The [SelectedIndexChangingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SelectedIndexChangingEventArgs.html) properties provide information specific to this event. Tab selection can be restricted by setting `args.Cancel` to `true`.
+The [SelectedIndexChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SfTabbedFormControl.html#Syncfusion_Windows_Forms_Tools_SfTabbedFormControl_SelectedIndexChanging) event occurs when the [SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SfTabbedFormControl.html#Syncfusion_Windows_Forms_Tools_SfTabbedFormControl_SelectedIndex) or [SelectedTab](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SfTabbedFormControl.html#Syncfusion_Windows_Forms_Tools_SfTabbedFormControl_SelectedTab) of the [TabbedFormControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SfTabbedFormControl.html) is changing. The [SelectedIndexChangingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SelectedIndexChangingEventArgs.html) properties provide information specific to this event. Tab selection can be restricted by setting `args.Cancel` to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -59,7 +59,7 @@ private void TabbedFormControl_SelectedIndexChanging(object sender, SelectedInde
 Private Me.tabbedFormControl.SelectedIndexChanging += AddressOf TabbedFormControl_SelectedIndexChanging
 
 Private Sub TabbedFormControl_SelectedIndexChanging(ByVal sender As Object, ByVal args As SelectedIndexChangingEventArgs)
-	If Me.tabbedFormControl.SelectedIndex = 2 Then
+    If Me.tabbedFormControl.SelectedIndex = 2 Then
 		args.Cancel = True
 	End If
 End Sub
@@ -67,9 +67,9 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-### SelectedIndexChanged event 
+### SelectedIndexChanged event
 
-The [SelectedIndexChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SfTabbedFormControl.html) event occurs when the [SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SfTabbedFormControl.html#Syncfusion_Windows_Forms_Tools_SfTabbedFormControl_SelectedIndex) or [SelectedTab](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SfTabbedFormControl.html#Syncfusion_Windows_Forms_Tools_SfTabbedFormControl_SelectedTab) of the [TabbedFormControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SfTabbedForm.html#Syncfusion_Windows_Forms_Tools_SfTabbedForm_TabbedFormControl) is changed. 
+The [SelectedIndexChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SfTabbedFormControl.html#Syncfusion_Windows_Forms_Tools_SfTabbedFormControl_SelectedIndexChanged) event occurs after the [SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SfTabbedFormControl.html#Syncfusion_Windows_Forms_Tools_SfTabbedFormControl_SelectedIndex) or [SelectedTab](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SfTabbedFormControl.html#Syncfusion_Windows_Forms_Tools_SfTabbedFormControl_SelectedTab) of the [TabbedFormControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SfTabbedFormControl.html) has been changed.
 
 {% tabs %}
 {% highlight c# %}
@@ -82,7 +82,7 @@ private void TabbedFormControl_SelectedIndexChanged(object sender, EventArgs e)
     foreach (var tab in tabs)
     {
         if (this.tabbedFormControl.SelectedTab == tab)
-            Console.WriteLine("Selected Tab:" + tab.Text);
+            Console.WriteLine("Selected Tab: " + tab.Text);
     }
 }
 
@@ -95,7 +95,7 @@ Private Sub TabbedFormControl_SelectedIndexChanged(ByVal sender As Object, ByVal
 	Dim tabs = tabbedFormControl.Tabs.OfType(Of TabPageAdv)()
 	For Each tab In tabs
 		If Me.tabbedFormControl.SelectedTab Is tab Then
-			Console.WriteLine("Selected Tab:" & tab.Text)
+			Console.WriteLine("Selected Tab: " & tab.Text)
 		End If
 	Next tab
 End Sub

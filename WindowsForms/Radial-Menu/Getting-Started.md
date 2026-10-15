@@ -12,15 +12,15 @@ documentation: ug
 >**Important**
 Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion license key in your Windows Forms application to use our components.
 
-This section describes how to add a `RadialMenu` control in a Windows Forms application and overview of its basic functionalities.
+This section describes how to add a `RadialMenu` control in a Windows Forms application and provides an overview of its basic functionalities.
 
 ## Assembly deployment
 
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#radialmenu) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#radialmenu) section to get the list of assemblies or NuGet packages that need to be added as reference to use the control in any application.
  
-Please find more details regarding how to install the nuget packages in windows form application in the below link:
+Please find more details regarding how to install the NuGet packages in a Windows Forms application in the below link:
  
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
+[How to install NuGet packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
 
 ## Creating simple application with RadialMenu
 
@@ -69,7 +69,7 @@ To add control manually in C#, follow the given steps:
  * Syncfusion.Grid.Base.dll
  * Syncfusion.Grid.Windows.dll
 
-**Step 2:** Include the namespaces **Syncfusion.Windows.Forms.Tools**.
+**Step 2:** Include the namespace **Syncfusion.Windows.Forms.Tools**.
 
 {% tabs %}
 
@@ -87,7 +87,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-**Step 3:** Create `RadialMenu` control instance and add it to the form. RadialMenu `Visible` property should be set `true` to make it visible initially.
+**Step 3:** Create `RadialMenu` control instance and add it to the form. RadialMenu `Visible` property should be set to `true` to make it visible initially.
 
 {% tabs %}
 
@@ -121,7 +121,7 @@ Me.Controls.Add(radialMenu1)
 
 **Adding menu items**
 
-To add menu items, create an instance for the required menu item and add it to `Items` collection property in RadialMenu.
+To add menu items, create an instance for the required menu item and add it to the `Items` collection property in RadialMenu.
 
 {% tabs %}
 
@@ -147,13 +147,13 @@ Dim radialMenuItem1 As RadialMenuItem = New RadialMenuItem
 Dim radialMenuItem2 As RadialMenuItem = New RadialMenuItem
 Dim radialMenuItem3 As RadialMenuItem = New RadialMenuItem
 
-Me.radialMenu1.Text = "radialMenuItem1"
-Me.radialMenu2.Text = "radialMenuItem2"
-Me.radialMenu3.Text = "radialMenuItem3"
+Me.radialMenuItem1.Text = "radialMenuItem1"
+Me.radialMenuItem2.Text = "radialMenuItem2"
+Me.radialMenuItem3.Text = "radialMenuItem3"
 
-Me.radialMenu1.Items.Add(this.radialMenuItem1)
-Me.radialMenu2.Items.Add(this.radialMenuItem2)
-Me.radialMenu3.Items.Add(this.radialMenuItem3)
+Me.radialMenu1.Items.Add(Me.radialMenuItem1)
+Me.radialMenu1.Items.Add(Me.radialMenuItem2)
+Me.radialMenu1.Items.Add(Me.radialMenuItem3)
 
 {% endhighlight %}
 

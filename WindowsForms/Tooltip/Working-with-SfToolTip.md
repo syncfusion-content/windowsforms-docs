@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Working with SfToolTip in Windows Forms Tooltip | Syncfusion®
 description: Learn how to manage tooltip text, customize display behavior, control positioning, and draw custom tooltip content.
@@ -59,7 +59,7 @@ this.sfToolTip1.SetToolTipInfo(this.button1, toolTipInfo);
 
 ## Disabling Tooltip from Showing
 
-The [ToolTipShowing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.SfToolTip.html#Syncfusion_Windows_Forms_SfToolTip_ToolTipShowing) event can be used to disable the tooltip window by setting the `e.Cancel` to `true`.
+The [ToolTipShowing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.SfToolTip.html#Syncfusion_Windows_Forms_SfToolTip_ToolTipShowing) event can be used to disable the tooltip window by setting the `e.Cancel` property to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -68,7 +68,9 @@ this.sfToolTip1.ToolTipShowing += SfToolTip1_ToolTipShowing;
 private void SfToolTip1_ToolTipShowing(object sender, ToolTipShowingEventArgs e)
 {
     if (e.Control.Name == "cancelButton")
-    e.Cancel = true;
+    {
+        e.Cancel = true;
+    }
 }
 
 {% endhighlight %}
@@ -82,7 +84,7 @@ The location of the tooltip to be shown can be customized in the `ToolTipShowing
 {% highlight c# %}
 
 this.sfToolTip1.ToolTipShowing += SfToolTip1_ToolTipShowing;
-private void SfToolTip1_ToolTipShowing(object sender, ToolTipShowingEventsArgs e)
+private void SfToolTip1_ToolTipShowing(object sender, ToolTipShowingEventArgs e)
 {
     e.Location = new Point(e.Location.X + 20, e.Location.Y - 25);
 }
@@ -95,7 +97,7 @@ private void SfToolTip1_ToolTipShowing(object sender, ToolTipShowingEventsArgs e
 
 ## Setting Minimum and Maximum Widths
 
-The minimum width and the maximum width of the tooltip can be changed using the [MinWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipInfo.html#Syncfusion_WinForms_Controls_ToolTipInfo_MinWidth) and [MaxWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipInfo.html#Syncfusion_WinForms_Controls_ToolTipInfo_MaxWidth) properties. 
+The minimum and maximum width of the tooltip can be changed using the [MinWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipInfo.html#Syncfusion_WinForms_Controls_ToolTipInfo_MinWidth) and [MaxWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipInfo.html#Syncfusion_WinForms_Controls_ToolTipInfo_MaxWidth) properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -111,15 +113,14 @@ N> The width of the tooltip will be initialized to `MinWidth`, if the width is l
 
 ## Custom Drawing of ToolTip
 
-The [DrawToolTipItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.SfToolTip.html#Syncfusion_Windows_Forms_SfToolTip_DrawToolTipItem) event can be used to draw the `ToolTipItem` appearance. To cancel the default drawing of the `ToolTipItem`, `e.Cancel` property can be used.
+The [DrawToolTipItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.SfToolTip.html#Syncfusion_Windows_Forms_SfToolTip_DrawToolTipItem) event can be used to draw the `ToolTipItem` appearance. To cancel the default drawing of the `ToolTipItem`, the `e.Cancel` property can be used.
 
 {% tabs %}
 {% highlight c# %}
 this.sfToolTip1.DrawToolTipItem += SfToolTip1_DrawToolTipItem;
 private void SfToolTip1_DrawToolTipItem(object sender, DrawToolTipItemEventArgs e)
 {
-
-// To cancel the drawing of ToolTipItem.
+    // To cancel the default drawing of ToolTipItem.
     e.Cancel = true;
     LinearGradientBrush gradientBrush = new LinearGradientBrush(e.ToolTipItemRectangle, Color.LightSkyBlue, Color.LightGreen, LinearGradientMode.Horizontal);
     e.Graphics.FillRectangle(gradientBrush, e.ToolTipItemRectangle);
@@ -139,5 +140,4 @@ private void SfToolTip1_DrawToolTipItem(object sender, DrawToolTipItemEventArgs 
 {% endtabs %}
 
 ![Custom drawing tooltip shown in winforms tooltip](SfToolTip_images/SfToolTip_img24.jpeg)
-
 

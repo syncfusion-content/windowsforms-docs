@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Tab Navigation in Windows Forms Tabbed Form | Syncfusion®
 description: Tab navigation provides built-in navigation buttons, overflow handling, and events for managing tab navigation actions.
@@ -18,13 +18,13 @@ tabbedFormControl.TabPrimitiveMode = TabPrimitiveMode.DropDown | TabPrimitiveMod
 {% highlight vb %}
 tabbedFormControl.TabPrimitiveMode = TabPrimitiveMode.DropDown Or TabPrimitiveMode.FirstTab Or TabPrimitiveMode.LastTab Or TabPrimitiveMode.NextTab Or TabPrimitiveMode.PreviousTab
 {% endhighlight %}
-{% endtabs %}  
+{% endtabs %}
 
-![Winforms showing the tab navigation in tabbed form](TabPrimitives_images/TabPrimitives_images_img1.gif)
+![Winforms TabbedForm showing the tab navigation in tabbed form](TabPrimitives_images/TabPrimitives_images_img1.gif)
 
 ## TabPrimitiveClick event
 
-The [TabPrimitiveClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabPrimitiveClick.html) event occurs when clicking the navigation button. The [TabPrimitiveClickEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabPrimitiveClickEventArgs.html) properties provide information specific to this event.
+The [TabPrimitiveClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SfTabbedFormControl.html#Syncfusion_Windows_Forms_Tools_SfTabbedFormControl_TabPrimitiveClick) event occurs when the user clicks a navigation button. The [TabPrimitiveClickEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabPrimitiveClickEventArgs.html) properties provide information specific to this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -33,7 +33,7 @@ this.tabbedFormControl.TabPrimitiveClick += TabbedFormControl_TabPrimitiveClick;
 
 private void TabbedFormControl_TabPrimitiveClick(object sender, TabPrimitiveClickEventArgs e)
 {
-    Console.WriteLine("TabPrimitive Type:" + e.TabPrimitive.TabPrimitiveType);
+    Console.WriteLine("TabPrimitive Type: " + e.TabPrimitive.TabPrimitiveType);
 }
 
 {% endhighlight %}
@@ -42,10 +42,9 @@ private void TabbedFormControl_TabPrimitiveClick(object sender, TabPrimitiveClic
 Private Me.tabbedFormControl.TabPrimitiveClick += AddressOf TabbedFormControl_TabPrimitiveClick
 
 Private Sub TabbedFormControl_TabPrimitiveClick(ByVal sender As Object, ByVal e As TabPrimitiveClickEventArgs)
-	Console.WriteLine("TabPrimitive Type:" & e.TabPrimitive.TabPrimitiveType)
+	Console.WriteLine("TabPrimitive Type: " & e.TabPrimitive.TabPrimitiveType)
 End Sub
 
 {% endhighlight %}
 {% endtabs %}
-
 
