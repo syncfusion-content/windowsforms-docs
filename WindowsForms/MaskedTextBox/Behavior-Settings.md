@@ -72,8 +72,7 @@ Me.maskedEditBox1.PassivePromptCharacterInt = 47
 
 {% endtabs %}
 
->**NOTE**:
-We can trim the additional spaces present in the mask by setting the `PaddingCharacterInt` property to `0` (zero character).
+N> We can trim the additional spaces present in the mask by setting the `PaddingCharacterInt` property to `0` (zero character).
 
 ### MaxLength
 
