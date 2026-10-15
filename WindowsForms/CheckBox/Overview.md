@@ -1,9 +1,9 @@
 ---
 layout: post
 title: About Syncfusion® Windows Forms CheckBoxAdv Control | Syncfusion®
-description: Learn here all about introduction of Syncfusion Windows Forms CheckBoxAdv control, its features and more details.
+description: Learn about the Syncfusion Windows Forms CheckBoxAdv control, its key features, customization options, and data binding capabilities.
 platform: windowsforms
-control: EditorsPackage
+control: CheckBoxAdv
 documentation: ug
 ---
 
@@ -11,15 +11,15 @@ documentation: ug
 
 The [WinForms CheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) is an advanced CheckBox control that supports themes, gradient colors, border settings, and shadow text with various alignment options for both the text and check box. It provides options to display images and gradient backgrounds.
 
-![Overview of WindowsForms CheckBox](overview_images/windowsforms-checkbox-overview.jpeg)
+![Overview of the WinForms CheckBox control](overview_images/windowsforms-checkbox-overview.jpeg)
 
-The [WinForms CheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control can replace the CheckBox control provided in Windows Forms. This type of control can be defined as consisting of a graphic and associated text that the user clicks to select or deselect an option. A check mark in the check box graphic indicates the option selected. In this control, the graphic can be changed to an image that indicates a selected or deselected state.
+The [WinForms CheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control can replace the standard CheckBox control provided in Windows Forms. This type of control can be defined as consisting of a graphic and associated text that the user clicks to select or deselect an option. A check mark in the check box graphic indicates the option selected. In this control, the graphic can be changed to an image that indicates a selected or deselected state.
 
 ## Key Features
 
 The [WinForms CheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) is an advanced CheckBox control, and it contains the following features.
 
-* **WinForms CheckBox Settings** - The WinForms CheckBox can be displayed in the checked, unchecked, and indeterminate states using the [CheckState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_CheckState) property. The integer and string values can be associated with each state of the control.
+* **WinForms CheckBox Settings** - The WinForms CheckBox can be displayed in the checked, unchecked, and indeterminate states using the [CheckState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_CheckState) property. Integer and string values can be associated with each state of the control.
 
 * **Text Settings** - The text of the WinForms CheckBox control can be shadowed, and the shadow color and offset can also be specified. The text can be wrapped by setting the [WrapText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_WrapText) property to `True`.
 
@@ -31,7 +31,7 @@ The [WinForms CheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.W
 
 * **Border Settings** - 2-D and 3-D border styles can be applied to the WinForms CheckBox. The [HotBorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_HotBorderColor) property can be used to specify the color of the FixedSingle border during mouse hover.
 
-* **Image Settings** - You can set image for the WinForms CheckBox when it is in checked, unchecked, disabled, or indeterminate.
+* **Image Settings** - You can set an image for the WinForms CheckBox when it is in checked, unchecked, disabled, or indeterminate state.
 
 * **Themes and Visual Styles** - Themes can be enabled for the WinForms CheckBox. It provides the Office2007 and Office2010 Visual Style that comes in the blue, silver, and black colors. The Office2007 and Office2010 style also supports custom colors that can be applied to the control.
 

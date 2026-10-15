@@ -3,13 +3,13 @@ layout: post
 title: Border Settings in Windows Forms PercentTextBox | Syncfusion®
 description: Learn about Border Settings support in Syncfusion Windows Forms PercentTextBox control and more details.
 platform: windowsforms
-control: Editors Package
+control: PercentTextBox
 documentation: ug
 ---
 
 # Border Settings in WinForms Percent TextBox
 
-Color and Styles can be applied to the Border of the WinForms Percent TextBox control as discussed below.
+Color and styles can be applied to the border of the WinForms Percent TextBox control as described below.
 
 * [Border3DStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_Border3DStyle)
 * [BorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_BorderColor)
@@ -17,7 +17,7 @@ Color and Styles can be applied to the Border of the WinForms Percent TextBox co
 * [BorderStyle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.borderstyle?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBoxBase_BorderStyle)
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 this.percentTextBox1.Border3DStyle = System.Windows.Forms.Border3DStyle.Etched;
 this.percentTextBox1.BorderColor = System.Drawing.Color.Orange;
 this.percentTextBox1.BorderSides = System.Windows.Forms.Border3DSide.All;
@@ -31,8 +31,8 @@ Me.percentTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 {% endhighlight %}
 {% endtabs %}
 
-![Border style](PercentTextBox-Images/Overview_img484.png) 
+![WinForms PercentTextBox with the border style and color applied](PercentTextBox-Images/Overview_img484.png)
 
-A Sample which demonstrates the Border Settings of WinForms Percent TextBox control is available in the below sample installation path.
+A sample that demonstrates the Border Settings of WinForms Percent TextBox control is available at the following sample installation path:
 
-…\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo
+`%LOCALAPPDATA%\Syncfusion\EssentialStudio\<Version Number>\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo`

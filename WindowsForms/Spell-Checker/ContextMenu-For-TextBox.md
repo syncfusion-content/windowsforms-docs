@@ -15,14 +15,14 @@ WinForms Spell Checker offers Microsoft Office application like context menu sug
 The following steps helps to add context menu support in the TextBox control through code.
 
 
-1) Create a Windows Forms project in Visual Studio.
+1. Create a Windows Forms project in Visual Studio.
 
 
-2) Inherit ISpellCheckerAdvEditorTools interface of WinForms Spell Checker and Initialize all the methods and properties in interface.
+2. Inherit the `ISpellCheckerAdvEditorTools` interface of WinForms Spell Checker and initialize all the methods and properties in the interface.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 class TextBoxSpellEditor : ISpellCheckerAdvEditorTools
     {
@@ -157,11 +157,11 @@ End Class
 
 {% endtabs %}
 
-4) Initiate PerformSpellCheckUsingContextMenu method by passing ISpellCheckerAdvEditorTools interface argument. 
+3. Initiate the `PerformSpellCheckUsingContextMenu` method by passing the `ISpellCheckerAdvEditorTools` interface as an argument.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 TextBoxSpellEditor TextEditor = new TextBoxSpellEditor(this.richTextBox1);
 
@@ -183,7 +183,7 @@ Me.spellCheckerAdv1.PerformSpellCheckUsingContextMenu(SpellEditor)
 
 {% endtabs %}
 
- ![Context menu suggestions for spelling corrections](ContextMenu_images/ContextMenu.png)
+![Context menu suggestions for spelling corrections](ContextMenu_images/ContextMenu.png)
 
 
 

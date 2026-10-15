@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Databind CheckBoxAdv to Int in SQL | Syncfusion®
-description: Learn how to databind CheckBoxAdv to an Integer Field in SQL Database in Syncfusion Windows Forms CheckBox control, its elements and more details.
+description: Learn how to databind the Syncfusion Windows Forms CheckBoxAdv to an Integer field in a SQL database using the IntValue property and a SqlDataAdapter.
 platform: windowsforms
 control: EditorsPackage
 documentation: ug
@@ -66,8 +66,8 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-N > The field binded to IntValue property of WinForms CheckBox should contain -1 or 0 or 1 as value. 
+>**NOTE**: The field bound to the `IntValue` property of the WinForms CheckBox should contain `-1`, `0`, or `1` as its value.
 
-![DataBinding CheckBoxAdv with Database](FAQ_images/FAQ_img2.png)
+![DataBinding CheckBoxAdv with a SQL database using the IntValue property](FAQ_images/FAQ_img2.png)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/How-to-bind-a-winforms-checkboxadv-to-an-sql-database)

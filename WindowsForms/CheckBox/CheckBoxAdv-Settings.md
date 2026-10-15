@@ -1,9 +1,9 @@
 ---
 layout: post
 title: CheckBoxAdv Settings in Windows Forms CheckBoxAdv | Syncfusion®
-description: Learn about CheckBoxAdv Settings support in Syncfusion Windows Forms CheckBoxAdv control and more details.
+description: Learn about CheckBoxAdv settings in WinForms, including check states, value handling, data binding support, and state configuration options.
 platform: windowsforms
-control: EditorsPackage
+control: CheckBoxAdv
 documentation: ug
 ---
 
@@ -23,7 +23,7 @@ Description</th></tr>
 <tr>
 <td>
 CheckState</td><td>
-Gets or sets the check state of the WinForms CheckBox. It includes Unchecked,Checked and Indeterminate options. </td></tr>
+Gets or sets the check state of the WinForms CheckBox. The options are `Unchecked`, `Checked`, and `Indeterminate`.</td></tr>
 <tr>
 <td>
 Checked</td><td>
@@ -46,7 +46,7 @@ Me.checkBoxAdv1.Checked = True
 {% endhighlight %}
 {% endtabs %}
 
-![WindowsForms CheckBox various states](overview_images/windowsforms-checkbox-states.jpeg)
+![WinForms CheckBox showing the various states](overview_images/windowsforms-checkbox-states.jpeg)
 
 {% seealso %}
 

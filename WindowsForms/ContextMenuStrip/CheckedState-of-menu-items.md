@@ -9,7 +9,7 @@ documentation: ug
 
 # Checked State in WinForms Context Menu Strip
 
-This support will help users to easily acknowledge the selected menu item by using the check mark. The [`Checked`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripmenuitem.checked?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripMenuItem_Checked) property indicates whether a check mark should appear before the text of the menu item or not. The [`CheckState`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripmenuitem.checkstate?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripMenuItem_CheckState) property specifies the exact state - checked or unchecked which needs to be set either statically. On runtime, user need to toggle the state manually through the [`Click`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripitem.click?view=netframework-4.7.2) event of the menu item.
+This support will help users to easily acknowledge the selected menu item by using the check mark. The [`Checked`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripmenuitem.checked?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripMenuItem_Checked) property indicates whether a check mark should appear before the text of the menu item or not. The [`CheckState`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripmenuitem.checkstate?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripMenuItem_CheckState) property specifies the exact state — `Checked`, `Unchecked`, or `Indeterminate` — which is set statically. At runtime, the user must toggle the state manually through the [`Click`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripitem.click?view=netframework-4.7.2) event of the menu item.
 
 >**NOTE:**       
 >1. This feature is not applicable for combobox and textbox.       
@@ -34,6 +34,7 @@ this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
 this.contextMenuStripEx1.ShowCheckMargin = true;
 this.toolStripMenuItem1.Checked = true;
 this.toolStripMenuItem1.CheckState = System.Windows.Forms.CheckState.Checked;
+this.contextMenuStripEx1.Items.Add(this.toolStripMenuItem1);
 
 {% endhighlight %}
 
@@ -51,6 +52,7 @@ Me.toolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
 
 Me.contextMenuStripEx1.ShowCheckMargin = True
 Me.toolStripMenuItem1.Checked = True
+Me.contextMenuStripEx1.Items.Add(Me.toolStripMenuItem1)
 Me.toolStripMenuItem1.CheckState = System.Windows.Forms.CheckState.Checked
 
 {% endhighlight %}

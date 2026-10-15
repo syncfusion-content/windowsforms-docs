@@ -1,52 +1,50 @@
 ---
 layout: post
 title: How to Customize UserColors Group Cells in ColorUI | Syncfusion®
-description: Learn how to customize the color cells of the UserColors group in Syncfusion Windows Forms ColorUI control, its elements and more details.
+description: Learn how to customize color cells in the UserColors group of the Syncfusion Windows Forms ColorUI control.
 platform: windowsforms
 control: ColorUI
 documentation: ug
 ---
 # How to Customize UserColors Group Cells in ColorUI
 
-Color cells of the UserGroup panel in a ColorUIControl, can be customized using the below code. We can use UserColors and UserCustomColor for this purpose.
+The color cells of the UserGroup panel in a ColorUIControl can be customized using the following code. You can use the `UserColors` and `UserCustomColors` collections for this purpose.
 
 {% tabs %}
 {% highlight c# %}
 
-// For example assume you have a ColorUIControl colorUIControl1.
-for( int i = 0 ; i < this.colorUIControl1.UserColors.Count; i ++ )
+// For example, assume you have a ColorUIControl named colorUIControl1.
+for (int i = 0; i < this.colorUIControl1.UserColors.Count; i++)
 {
-    this.colorUIControl1.UserColors[ i ] = Color.FromArgb( 0, 0, i * 5 );
+    this.colorUIControl1.UserColors[i] = Color.FromArgb(0, 0, i * 5);
 }
-for( int i = 0 ; i < this.colorUIControl1.UserCustomColors.Count; i ++ )
+for (int i = 0; i < this.colorUIControl1.UserCustomColors.Count; i++)
 {
-    this.colorUIControl1.UserCustomColors[ i ] = Color.FromArgb( i * 15, 0, 0 );
+    this.colorUIControl1.UserCustomColors[i] = Color.FromArgb(i * 15, 0, 0);
 }
 this.colorUIControl1.SelectedColorGroup = Syncfusion.Windows.Forms.ColorUISelectedGroup.UserColors;
 
-// Resize of ColorCells can be done using property UserColorsStretchOnResize.
+// Resize of ColorCells can be done using the UserColorsStretchOnResize property.
 this.colorUIControl1.UserColorsStretchOnResize = true;
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight vb %}
 
-Dim i As Integer
-For  i = 0  To  Me.colorUIControl1.UserColors.Count- 1  Step  i  + 1
-Me.colorUIControl1.UserColors( i ) = Color.FromArgb(0, 0, i * 5)
+For i As Integer = 0 To Me.colorUIControl1.UserColors.Count - 1
+    Me.colorUIControl1.UserColors(i) = Color.FromArgb(0, 0, i * 5)
 Next
-Dim i As Integer
-For  i = 0  To  Me.colorUIControl1.UserCustomColors.Count- 1  Step  i  + 1
-Me.colorUIControl1.UserCustomColors( i ) = Color.FromArgb(i * 15, 0, 0)
+For i As Integer = 0 To Me.colorUIControl1.UserCustomColors.Count - 1
+    Me.colorUIControl1.UserCustomColors(i) = Color.FromArgb(i * 15, 0, 0)
 Next
 Me.colorUIControl1.SelectedColorGroup = Syncfusion.Windows.Forms.ColorUISelectedGroup.UserColors
 
 ' Resize of ColorCells can be done using property UserColorsStretchOnResize.
 Me.colorUIControl1.UserColorsStretchOnResize = True
 
-{% endhighlight  %}
+{% endhighlight %}
 {% endtabs %}
 
-N> UserGroups should be selected in ColorGroups property to effect the above settings.
+>**NOTE**: `UserGroups` should be selected in the `ColorGroups` property for the above settings to take effect.
 
-![Overview_img245](FAQ_images/Overview_img245.jpeg) 
+![WinForms ColorUI UserColors group with customized color cells](FAQ_images/Overview_img245.jpeg) 

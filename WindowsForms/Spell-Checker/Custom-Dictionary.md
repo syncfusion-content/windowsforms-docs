@@ -42,10 +42,10 @@ You can check spelling mistakes using `Hunspell` dictionary format. This format 
 
 4.Setting the required culture to the `SpellCheckerAdv.Culture` property.
 
-N> The following code snippets shows how to add Hunspell dictionary to the `WinForms Spell Checker`. Please refer [Adding WinForms Spell Checker to RichTextBox control](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#configuring-spellcheckeradv-into-richtextbox-control) to know how to configure WinForms Spell Checker.
+>**NOTE**: The following code snippets shows how to add Hunspell dictionary to the `WinForms Spell Checker`. Please refer [Adding WinForms Spell Checker to RichTextBox control](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#configuring-spellcheckeradv-into-richtextbox-control) to know how to configure WinForms Spell Checker.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Creating a culture instance
 CultureInfo culture = new CultureInfo("fr-FR");
@@ -71,7 +71,7 @@ SpellChecker.Culture = culture;
 {% endhighlight %}
 {% endtabs %}
 
-N> You can add multiple `HunspellDictionary` with various culture files into the `SpellCheckerAdv.Dictionaries` collection. Based on the `SpellCheckerAdv.Culture` respective `HunspellDictionary` is used for spell check.
+>**NOTE**: You can add multiple `HunspellDictionary` with various culture files into the `SpellCheckerAdv.Dictionaries` collection. Based on the `SpellCheckerAdv.Culture` respective `HunspellDictionary` is used for spell check.
 
 ![SpellCheck using Hunspell dictionary](Custom-Dictionary_images/HunSpell.png)
 
@@ -96,10 +96,10 @@ You can check spelling mistakes using `Ispell` dictionary format. This format co
 
 4.Setting the required culture to the `SpellCheckerAdv.Culture` property.
 
-N> The following code snippets only explain the insertion of the Ispell dictionary to the `WinForms Spell Checker`. You can get code snippets to add a `WinForms Spell Checker`, from [Adding WinForms Spell Checker to RichTextBox control](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#configuring-spellcheckeradv-into-richtextbox-control) topic.
+>**NOTE**: The following code snippets only explain the insertion of the Ispell dictionary to the `WinForms Spell Checker`. You can get code snippets to add a `WinForms Spell Checker`, from [Adding WinForms Spell Checker to RichTextBox control](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#configuring-spellcheckeradv-into-richtextbox-control) topic.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Creating a culture instance
 CultureInfo culture = new CultureInfo("es-ES");
@@ -125,7 +125,7 @@ SpellChecker.Culture = culture;
 {% endhighlight %}
 {% endtabs %}
 
-N> You can add multiple `IspellDictionary` with various culture files into the `SpellCheckerAdv.Dictionaries` collection. Based on the `SpellCheckerAdv.Culture` respective `IspellDictionary` is used for spell check.
+>**NOTE**: You can add multiple `IspellDictionary` with various culture files into the `SpellCheckerAdv.Dictionaries` collection. Based on the `SpellCheckerAdv.Culture` respective `IspellDictionary` is used for spell check.
 
 ![SpellCheck using Ispell dictionary](Custom-Dictionary_images/Ispell.png)
 
@@ -150,7 +150,7 @@ You can check spelling mistakes using `OpenOffice` dictionary format. This forma
 
 4.Setting the required culture to the `SpellCheckerAdv.Culture` property.
 
-N> The following code snippets only explain the insertion of the OpenOffice dictionary to the `WinForms Spell Checker`. You can get code snippets to add a `WinForms Spell Checker`, from [Adding WinForms Spell Checker to RichTextBox control](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#configuring-spellcheckeradv-into-richtextbox-control) topic.
+>**NOTE**: The following code snippets only explain the insertion of the OpenOffice dictionary to the `WinForms Spell Checker`. You can get code snippets to add a `WinForms Spell Checker`, from [Adding WinForms Spell Checker to RichTextBox control](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#configuring-spellcheckeradv-into-richtextbox-control) topic.
 
 {% tabs %}
 {% highlight c# %}
@@ -179,7 +179,7 @@ SpellChecker.Culture = culture;
 {% endhighlight %}
 {% endtabs %}
 
-N> You can add multiple `OpenOfficeDictionary` with various culture files into the `SpellCheckerAdv.Dictionaries` collection. Based on the `SpellCheckerAdv.Culture` respective `OpenOfficeDictionary` is used for spell check.
+>**NOTE**: You can add multiple `OpenOfficeDictionary` with various culture files into the `SpellCheckerAdv.Dictionaries` collection. Based on the `SpellCheckerAdv.Culture` respective `OpenOfficeDictionary` is used for spell check.
 
 ![SpellCheck using OpenOffice dictionary](Custom-Dictionary_images/OpenOffice.png)
 
@@ -199,10 +199,10 @@ If you want to add words that is not available in dictionary, you can add it usi
 
 4.Setting the required culture to the `SpellCheckerAdv.Culture` property.
 
-N> The following code snippets only explain the insertion of the custom dictionary to the `WinForms Spell Checker`. You can get code snippets to add a `WinForms Spell Checker`, from [Adding WinForms Spell Checker to RichTextBox control](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#configuring-spellcheckeradv-into-richtextbox-control) topic.
+>**NOTE**: The following code snippets only explain the insertion of the custom dictionary to the `WinForms Spell Checker`. You can get code snippets to add a `WinForms Spell Checker`, from [Adding WinForms Spell Checker to RichTextBox control](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#configuring-spellcheckeradv-into-richtextbox-control) topic.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Creating a culture instance
 CultureInfo culture = new CultureInfo("en-US");
@@ -234,9 +234,9 @@ SpellChecker.Culture = culture;
 {% endhighlight %}
 {% endtabs %}
 
-N> If you only use the custom dictionary, all words that are not included in the dictionary will be shown as error words.
+>**NOTE**: If you only use the custom dictionary, all words that are not included in the dictionary will be shown as error words.
 
-N> You can add multiple `CustomDictionary` with various culture word files into the `SpellCheckerAdv.Dictionaries` collection. Based on the `SpellCheckerAdv.Culture` respective `CustomDictionary` is used for spell check.
+>**NOTE**: You can add multiple `CustomDictionary` with various culture word files into the `SpellCheckerAdv.Dictionaries` collection. Based on the `SpellCheckerAdv.Culture` respective `CustomDictionary` is used for spell check.
 
 ![SpellCheck using Custom dictionary](Custom-Dictionary_images/CustomDictionary.png)
 
@@ -245,7 +245,7 @@ N> You can add multiple `CustomDictionary` with various culture word files into 
 You can add `Hunspell`, `Ispell`, or `OpenOffice` dictionaries one or more times with various culture into the `SpellCheckerAdv.Dictionaries` collection. You can change the spell check culture at runtime by changing the `SpellCheckerAdv.Culture` property. Based on the current `SpellCheckerAdv.Culture` respective dictionary is used to spell check.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Creating a culture instance
 CultureInfo culture = new CultureInfo("fr-FR");
@@ -281,7 +281,7 @@ SpellChecker.Dictionaries.Add(
     {
         Culture = new CultureInfo("en-US"),
         GrammarPath =  @"USDictionary\en-US.aff",
-        DictionaryPath =  @"USDictionary\/en-US.dic"
+        DictionaryPath =  @"USDictionary\en-US.dic"
     }
 );
 
@@ -293,7 +293,7 @@ SpellChecker.Culture = culture;
 
 ![SpellCheck using Hunspell dictionary](Custom-Dictionary_images/HunSpell.png)
 
-Here, `SpellChecker.Culture` is `fr-FR` culture. So, `fr-FR` cultured `Hunspell` dictionary is used as speck check dictionary.
+Here, `SpellChecker.Culture` is `fr-FR` culture. So, the `fr-FR`-cultured `Hunspell` dictionary is used as the spell check dictionary.
 
 
 

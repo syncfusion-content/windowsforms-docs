@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HTML Forms in Windows Forms HTMLUI | Syncfusion®
-description: Learn about HTML Forms support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
+description: Learn about rendering and interacting with HTML form elements such as text input, radio buttons, and check boxes in the WinForms HTML Viewer control.
 platform: windowsforms
 control: HTMLUI
 documentation: ug

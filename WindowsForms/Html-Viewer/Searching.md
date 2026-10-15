@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Searching in Windows Forms HTMLUI control | Syncfusion®
-description: Learn about Searching support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
+description: Learn about built-in find-and-replace search and text highlighting in the WinForms HTML Viewer control.
 platform: windowsforms
 control: HTMLUI
 documentation: ug
@@ -15,7 +15,7 @@ The <kbd>Ctrl+F</kbd> shortcut can also be used for enabling this feature.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 

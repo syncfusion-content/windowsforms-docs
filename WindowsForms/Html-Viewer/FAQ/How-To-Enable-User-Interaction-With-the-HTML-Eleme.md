@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Enable HTML Element Interaction | Syncfusion®
-description: Learn how to enable user interaction with the HTML elements in Syncfusion Windows Forms Html Viewer control, its elements and more details.
+description: Learn how to enabling user interaction with HTML elements such as click and key events in the WinForms HTML Viewer control.
 platform: windowsforms
 control: HTML UI
 documentation: ug
@@ -45,7 +45,7 @@ The following snippet shows how the elements interact with each other on the exe
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 

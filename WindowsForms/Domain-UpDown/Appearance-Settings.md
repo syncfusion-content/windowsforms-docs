@@ -1,16 +1,17 @@
 ---
 layout: post
 title: Appearance Settings in Windows Forms DomainUpdownExt | Syncfusion®
-description: Learn about Appearance Settings support in Syncfusion Windows Forms DomainUpdownExt control and more details.
+description: Learn about appearance settings in the Syncfusion Windows Forms DomainUpDownExt control, including border customization, themed styling, and color options.
 platform: windowsforms
-control: DomainUpdownExt 
+control: DomainUpdownExt
 documentation: ug
 ---
+
 # Appearance Settings in WinForms DomainUpDownExt
 
-This section discusses the border styles and back color that can be applied for WinForms DomainUpDownExt control.
+This section discusses the border styles and back color that can be applied to the WinForms DomainUpDownExt control.
 
-The below table lists the appearance properties of WinForms DomainUpDownExt control.
+The following table lists the appearance properties of the WinForms DomainUpDownExt control.
 
 * [BorderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DomainUpDownExt.html#Syncfusion_Windows_Forms_Tools_DomainUpDownExt_BorderStyle)
 * [Border3DStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DomainUpDownExt.html#Syncfusion_Windows_Forms_Tools_DomainUpDownExt_Border3DStyle)
@@ -24,8 +25,8 @@ The below table lists the appearance properties of WinForms DomainUpDownExt cont
 
 this.domainUpDownExt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 this.domainUpDownExt1.Border3DStyle = System.Windows.Forms.Border3DStyle.Bump;
-this.domainUpDownExt1.BorderSides = System.Windows.Forms.DomainUpdownExt_images.Right;
-this.domainUpDownExt1.BorderColor = System.Drawing.Color.DodgerBlue; 
+this.domainUpDownExt1.BorderSides = System.Windows.Forms.Border3DSide.Right;
+this.domainUpDownExt1.BorderColor = System.Drawing.Color.DodgerBlue;
 this.domainUpDownExt1.BackColor = System.Drawing.Color.AntiqueWhite;
 
 {% endhighlight %}
@@ -34,13 +35,13 @@ this.domainUpDownExt1.BackColor = System.Drawing.Color.AntiqueWhite;
 
 Me.domainUpDownExt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 Me.domainUpDownExt1.Border3DStyle = System.Windows.Forms.Border3DStyle.Bump
-Me.domainUpDownExt1.BorderSides = System.Windows.Forms.DomainUpdownExt_images.Right
+Me.domainUpDownExt1.BorderSides = System.Windows.Forms.Border3DSide.Right
 Me.domainUpDownExt1.BorderColor = System.Drawing.Color.DodgerBlue
 Me.domainUpDownExt1.BackColor = System.Drawing.Color.AntiqueWhite
 
 {% endhighlight %}
 {% endtabs %}
 
-![DomainUpDownExt appearance](DomainUpdownExt_images/Overview_img431.png) 
+![WinForms DomainUpDownExt with border styles applied](DomainUpdownExt_images/Overview_img431.png)
 
-![DomainUpDownExt appearance](DomainUpdownExt_images/Overview_img432.png) 
+![WinForms DomainUpDownExt with custom back color and border color](DomainUpdownExt_images/Overview_img432.png) 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exporting in Windows Forms HTMLUI control | Syncfusion®
-description: Learn about Exporting support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
+description: Learn about exporting the contents of the WinForms HTML Viewer control to formats such as text, RTF, and image.
 platform: windowsforms
 control: HTMLUI
 documentation: ug
@@ -13,7 +13,7 @@ Essential<sup>®</sup> WinForms HTML Viewer supports the export of HTML document
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 

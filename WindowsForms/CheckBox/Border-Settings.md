@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Border Settings in Windows Forms CheckBoxAdv | Syncfusion®
-description: Learn about Border Settings support in Syncfusion Windows Forms CheckBoxAdv control and more details.
+description: Learn about border customization in the Syncfusion Windows Forms CheckBoxAdv control, including styles, colors, and interactive border settings.
 platform: windowsforms
-control: EditorsPackage
+control: CheckBoxAdv
 documentation: ug
 ---
 
@@ -19,7 +19,7 @@ Description</th></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Indicates the style of the 3D border. The options included are as follows.{{ 'RaisedOuter,' | markdownify }}{{ 'SunkenOuter,' | markdownify }}{{ 'RaisedInner,' | markdownify }}{{ 'SunkenInner,' | markdownify }}{{ 'Raised,' | markdownify }}{{ 'Etched,' | markdownify }}{{ 'Bump,' | markdownify }}{{ 'Sunken,' | markdownify }}{{ 'Adjust and' | markdownify }}{{ 'Flat' | markdownify }}.The default value is set to 'Sunken'.</td></tr>
+Indicates the style of the 3D border. The options are `RaisedOuter`, `SunkenOuter`, `RaisedInner`, `SunkenInner`, `Raised`, `Etched`, `Bump`, `Sunken`, `Adjust`, and `Flat`. The default value is set to `Sunken`.</td></tr>
 <tr>
 <td>
 BorderColor</td><td>
@@ -27,15 +27,15 @@ Specifies the color of the 2D border.</td></tr>
 <tr>
 <td>
 BorderSingle</td><td>
-Indicates the 2D border style. The options included are as follows.{{ 'Dotted,' | markdownify }}{{ 'Dashed,' | markdownify }}{{ 'Solid,' | markdownify }}{{ 'Inset,' | markdownify }}{{ 'Outset and' | markdownify }}{{ 'None.' | markdownify }}The BorderStyle property should be set to 'FixedSingle'.</td></tr>
+Indicates the 2D border style. The options are `Dotted`, `Dashed`, `Solid`, `Inset`, `Outset`, and `None`. The `BorderStyle` property should be set to `FixedSingle`.</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Indicates whether the panel should have a border. The options included are given below.{{ 'FixedSingle,' | markdownify }}{{ 'Fixed3D and' | markdownify }}{{ 'None.' | markdownify }}</td></tr>
+Indicates whether the panel should have a border. The options are `FixedSingle`, `Fixed3D`, and `None`.</td></tr>
 <tr>
 <td>
 HotBorderColor</td><td>
-Specifies the color of the FixedSingle border when MouseOver.</td></tr>
+Specifies the color of the `FixedSingle` border when the mouse is over the control.</td></tr>
 </table>
 
 {% tabs %}
@@ -64,6 +64,6 @@ Me.checkBoxAdv1.HotBorderColor = System.Drawing.Color.Blue
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms CheckBoxAdv Changing the Border color](Overview_images/CheckBoxAdv_bordercolor.jpeg)
+![WinForms CheckBoxAdv with a changed border color](Overview_images/CheckBoxAdv_bordercolor.jpeg)
 
-![Windows forms CheckBoxAdv Changing the border color during mouse hover on control](Overview_images/CheckBoxAdv_changebordercolor.jpeg)
+![WinForms CheckBoxAdv with a changed border color during mouse hover on the control](Overview_images/CheckBoxAdv_changebordercolor.jpeg)

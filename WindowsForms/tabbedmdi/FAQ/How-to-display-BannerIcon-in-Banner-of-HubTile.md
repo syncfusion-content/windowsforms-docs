@@ -1,9 +1,9 @@
 ---
 layout: post
 title: How to Display BannerIcon in HubTile Banner in WinForms | Syncfusion®
-description: Learn how to display BannerIcon in the banner of HubTile in Syncfusion Windows Forms TabbedMDI control, its elements and more details.
+description: Learn how to display a banner icon in a HubTile banner using the Syncfusion Windows Forms TabbedMDI control.
 platform: windowsforms
-control: TabbedMDIPackage
+control: TabbedMDIManager
 documentation: ug
 ---
 
@@ -30,7 +30,7 @@ This property sets BannerIcon in DefaultTile Banner of HubTile.</td></tr>
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 

@@ -1,22 +1,22 @@
 ---
 layout: post
 title: Events available in Windows Forms ToggleButton | Syncfusion®
-description: Learn about the events available in Syncfusion Windows Forms ToggleButton control such as ToggleStateChanging and ToggleStateChanged.
+description: Learn about the events available in the Syncfusion Windows Forms ToggleButton control and how to handle state changes.
 platform: windowsforms
-control: Toggle Button
+control: ToggleButton
 documentation: ug
 ---
 
 # Events available in WinForms Toggle Button
 
-The following listed events are available in WinForms Toggle Button.
+The following events are available in the WinForms Toggle Button.
 
 * ToggleStateChanging
 * ToggleStateChanged
 
-## ToggleStateChanging 
+## ToggleStateChanging
 
-This event is triggered in WinForms Toggle Button when its state is changing.
+This event is triggered in the WinForms Toggle Button when its state is changing.
 
 ### Event data
 
@@ -52,9 +52,9 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## ToggleStateChanged 
+## ToggleStateChanged
 
-This event is triggered in WinForms Toggle Button after its value is changed. 
+This event is triggered in the WinForms Toggle Button after its value is changed.
 
 ### Event data
 

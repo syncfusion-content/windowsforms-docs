@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Button Settings in Windows Forms TabbedMDI | Syncfusion®
-description: Learn about Button Settings support in Syncfusion Windows Forms TabbedMDI control, its elements and more details.
+description: Learn about the drop-down, close, and middle-mouse buttons in the Syncfusion Windows Forms TabbedMDI control, and how to show or hide them.
 platform: windowsforms
-control: TabbedMDIManager 
+control: TabbedMDIManager
 documentation: ug
 ---
 
 # Button Settings in WinForms TabbedMDI
 
-This section discusses about the various buttons available in WinForms TabbedMDI control and their customization.
+This section discusses the various buttons available in the WinForms TabbedMDI control and their customization.
 
 ## Drop-down button 
 
@@ -17,7 +17,7 @@ The MDIChild windows in a WinForms TabbedMDI window can be displayed in the form
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -39,7 +39,7 @@ The visual drop-down styles can be set by handling the [BeforeDropDownPopup](htt
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -63,7 +63,7 @@ e.ParentBarItem.Style = Syncfusion.Windows.Forms.VisualStyle.Office2003;
 
 
 
-//Initializing
+'Initializing
 
 AddHandler tabbedMDIManager.BeforeDropDownPopup, AddressOf tabbedMDI_BeforeDropDownPopup
 
@@ -95,21 +95,21 @@ The close button for individual tabs can also be displayed by implementing the b
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
-//Individual Close Buttons enabled.
+//Show close button for all tabs.
 
 this.tabbedMDIManager.ShowCloseButton = true;
 
 
 
-//Close Buttons for Active Tabs only.
+//Show close button for the active tab only.
 
 this.tabbedMDIManager.ShowCloseButtonForActiveTabOnly = true;
 
 
 
-//Close Button can be made visible.
+//Show the close button at the end of the tab strip.
 
 this.tabbedMDIManager.CloseButtonVisible = true;
 
@@ -119,21 +119,21 @@ this.tabbedMDIManager.CloseButtonVisible = true;
 
 
 
-' Individual Close Buttons enabled.
+' Show close button for all tabs.
 
-Me.tabbedMDIManager.CloseButtonVisible = True
+Me.tabbedMDIManager.ShowCloseButton = True
 
 
 
-' Close Buttons for active Tabs only.
+' Show close button for the active tab only.
 
 Me.tabbedMDIManager.ShowCloseButtonForActiveTabOnly = True
 
 
 
-' Close Button can be made visible.
+' Show the close button at the end of the tab strip.
 
-Me.tabbedMDIManager.ShowCloseButton = True
+Me.tabbedMDIManager.CloseButtonVisible = True
 
 {% endhighlight %}
 
@@ -147,7 +147,7 @@ The color of the close button at the extreme right of the MDI TabStrip can be ch
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -178,7 +178,7 @@ This functionality can also be added using the code snippet given below.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 
@@ -240,7 +240,7 @@ You can show or hide close button for specific tasks using the [ShowCloseButtonF
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
     this.tabbedMDIManager.ShowCloseButtonForForm(form,true );
 

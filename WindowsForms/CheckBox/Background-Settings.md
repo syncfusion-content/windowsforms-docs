@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Background Settings in Windows Forms CheckBoxAdv | Syncfusion®
-description: Learn about Background Settings support in Syncfusion Windows Forms CheckBoxAdv control and more details.
+description: Learn about background customization in the Syncfusion Windows Forms CheckBoxAdv control, including styles, colors, and gradient background settings.
 platform: windowsforms
-control: EditorsPackage
+control: CheckBoxAdv
 documentation: ug
 ---
 
@@ -19,7 +19,7 @@ Description</th></tr>
 <tr>
 <td>
 BackgroundStyle</td><td>
-Sets the background style of the WinForms CheckBox.The options included are as follows.{{ 'HorizontalGradient,' | markdownify }}{{ 'VerticalGradient and' | markdownify }}{{ 'Default.' | markdownify }}</td></tr>
+Sets the background style of the WinForms CheckBox. The options are `HorizontalGradient`, `VerticalGradient`, and `Default`.</td></tr>
 <tr>
 <td>
 GradientStart</td><td>
@@ -30,7 +30,7 @@ GradientEnd</td><td>
 Sets the end color of the gradient of the background of the WinForms CheckBox.</td></tr>
 </table>
 
-{%tabs %}
+{% tabs %}
 {% highlight c# %}
 
 this.checkBoxAdv1.BackgroundStyle = Syncfusion.Windows.Forms.Tools.CheckBoxAdvBackStyle.HorizontalGradient;
@@ -48,8 +48,8 @@ Me.checkBoxAdv1.GradientEnd = System.Drawing.Color.Magenta
 {% endhighlight %}
 {% endtabs %}
 
- ![Windows forms CheckBoxAdv gradient style applied in background](Overview_images/CheckBoxAdv_backgroundcolor.jpeg)
+![WinForms CheckBoxAdv with a gradient style applied in the background](Overview_images/CheckBoxAdv_backgroundcolor.jpeg)
 
 
-N> Gradient background cannot be applied to the WinForms CheckBox when its [BackgroundStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_BackgroundStyle) property is set to 'Default'. Also, the background image cannot be displayed with gradient settings.
+>**NOTE**: A gradient background cannot be applied to the WinForms CheckBox when its [BackgroundStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_BackgroundStyle) property is set to `Default`. Also, the background image cannot be displayed with gradient settings.
 

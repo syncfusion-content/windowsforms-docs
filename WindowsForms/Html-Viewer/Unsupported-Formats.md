@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Unsupported Formats in Windows Forms HTMLUI | Syncfusion®
-description: Learn about Unsupported Formats support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
+description: Learn about unsupported HTML and CSS features in the Syncfusion Windows Forms HTML Viewer control and related limitations.
 platform: windowsforms
 control: HTMLUI
 documentation: ug
@@ -21,4 +21,4 @@ Unlike web browsers, the following cannot be loaded into web pages using `WinFor
  
 ![HTMLUI control not supports the ](Unsupported-Formats_images/HTML_DirectLink.png)
  
-N> So, the html or htm files with complex objects will not be loaded in `WinForms HTML Viewer` control.
+>**NOTE**: So, the html or htm files with complex objects will not be loaded in `WinForms HTML Viewer` control.
