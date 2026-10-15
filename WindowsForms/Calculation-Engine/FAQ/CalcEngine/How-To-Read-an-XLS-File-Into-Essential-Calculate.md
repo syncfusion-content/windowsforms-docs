@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to Read an XLS File in Essential Calculate | WinForms | Syncfusion
-description: Learn how to read XLS files into Essential Calculate and work with Excel data and formulas efficiently.
+title: Read an XLS File into Essential Calculate | WinForms | Syncfusion
+description: Learn how to read and import data from an XLS file into Essential Calculate in Windows Forms applications.
 platform: windowsforms
 control: Calculate
 documentation: ug
