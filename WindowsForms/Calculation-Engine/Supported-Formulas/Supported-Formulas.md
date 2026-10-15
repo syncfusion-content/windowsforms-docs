@@ -896,7 +896,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[COCOVARIANCE.P](https://support.microsoft.com/en-us/excel/functions/covariance-p-function)'| markdownify }}
+<td>{{'[COVARIANCE.P](https://support.microsoft.com/en-us/excel/functions/covariance-p-function)'| markdownify }}
 </td></tr>
 <tr>
 <td>{{'[COVARIANCE.S](/windowsforms/calculation-engine/supported-formulas/statistical#covariances)'| markdownify }}</td>
@@ -905,7 +905,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[COCOVARIANCE.S](https://support.microsoft.com/en-us/excel/functions/covariance-s-function)'| markdownify }}
+<td>{{'[COVARIANCE.S](https://support.microsoft.com/en-us/excel/functions/covariance-s-function)'| markdownify }}
 </td></tr>
 <tr>
 <td>{{'[CHISQ.INV](/windowsforms/calculation-engine/supported-formulas/statistical#chisqinv)'| markdownify }}</td>
@@ -1989,13 +1989,13 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[IMABS](https://support.microsoft.com/en-us/excel/functions/imabs-function)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[IMARQUMENT](/windowsforms/calculation-engine/supported-formulas/engineering#imargument)'| markdownify }}</td>
+<td>{{'[IMARGUMENT](/windowsforms/calculation-engine/supported-formulas/engineering#imargument)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[IMARQUMENT](https://support.microsoft.com/en-us/excel/functions/imargument-function)'| markdownify }}
+<td>{{'[IMARGUMENT](https://support.microsoft.com/en-us/excel/functions/imargument-function)'| markdownify }}
 </td></tr>
 <tr>
 <td>{{'[IMAGINARY](/windowsforms/calculation-engine/supported-formulas/engineering#imaginary)'| markdownify }}</td>

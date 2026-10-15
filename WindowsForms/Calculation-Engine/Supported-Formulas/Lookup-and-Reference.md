@@ -123,7 +123,7 @@ _HLOOKUP(lookup_value, table_array, row_index_num, range_lookup)_
 
 * `row_index_num` is the row number in `table_array` from which the matching value returns. A `row_index_num` of 1 returns the first row value in `table_array` , a **row_index_num** of 2 returns the second row value in **table_array**, and so on.
 
-* `range_lookup` is a logical value that specifies whether you want `HLookup` to find an exact match or an approximate match. When `True` or omitted, an approximate match is returned. In other words, when an exact match is not found, the next largest value that is lesser than the `lookup_value` is returned. (This requires your lookup values to be sorted.) when `False`, `HLookup` finds an exact match
+* `range_lookup` is a logical value that specifies whether you want `HLookup` to find an exact match or an approximate match. When `True` or omitted, an approximate match is returned. In other words, when an exact match is not found, the next largest value that is less than the `lookup_value` is returned. (This requires your lookup values to be sorted.) when `False`, `HLookup` finds an exact match
 
 ## HYPERLINK
 
@@ -157,7 +157,7 @@ _INDEX(range,row,col)_
 
 ## INDIRECT
 
-The `Indirect` function returns the reference as a string instead of providing the content or range within it.
+The `Indirect` function returns the reference specified by a text string.
 
 **Syntax:**
 
@@ -233,17 +233,17 @@ array argument is a range of spreadsheet cells.
 
 ## VLOOKUP
 
-Looks up a supplied value in the first column of a table, and returns the corresponding value from another column.
+The `VLOOKUP` function looks up a value in the first column of a table and returns a value from another column.
 
 **Syntax:**
 
-_VLOOKUP (value, table, col_index, [range_lookup])_
+_VLOOKUP (value, table_array, col_index, [range_lookup])_
 
 **where:**
 
 * value - The value to look for in the first column of a table.
 
-* table - The table from which to retrieve a value.
+* table_array - The table from which to retrieve a value.
 
 * col_index - The column in the table from which to retrieve a value.
 
@@ -263,7 +263,7 @@ _MATCH(lookup_value, lookup_array, [match_type])_
 
 * lookup_array denotes the range of cells being searched.
 
-* match_type denotes the number -1, 0, or 1. The match_type argument specifies how Excel matches lookup_value with values in lookup_array. The default value for this argument is 1.
+* match_type denotes the number -1, 0, or 1. The match_type argument specifies how the Calculate engine matches `lookup_value` with values in `lookup_array`. The default value for this argument is 1.
 
 ## ROW
 
@@ -320,9 +320,9 @@ Returns the number of sheets in reference
 
 _SHEETS(reference)_
 
-**where:**
+**Parameters:**
 
-* reference is a reference for which you want to know the number of sheets it contains. If Reference is omitted, SHEETS returns the number of sheets in the workbook that contains the function.
+* `reference`: A reference for which you want to know the number of sheets it contains. If Reference is omitted, SHEETS returns the number of sheets in the workbook that contains the function.
 
 **Remarks:**
 
