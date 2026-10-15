@@ -171,8 +171,8 @@ chartControl.PrimaryYAxis.ZoomFactor = 0.5
 chartControl.PrimaryXAxis.ZoomPosition = 0.4
 chartControl.PrimaryYAxis.ZoomPosition = 0.4
 
-{% endtabs %}
 {% endhighlight %}
+{% endtabs %}
 
 ![Zoom Axis in Windows Forms Chart](../Chart-User-Interactions_Images/zoom-position.png)
 
