@@ -87,8 +87,7 @@ The following properties are used to set the image offset for the GroupView Item
 * [SelectedHighlightImageOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_SelectedHighlightImageOffset)
 * [HighlightImageOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_HighlightImageOffset)
 
-N> [HighlightImage]
-(https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_HighlightImage) property must be set to `true` in all the cases.
+N> [HighlightImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_HighlightImage) property must be set to `true` in all the cases.
 
 {% tabs %}
 
