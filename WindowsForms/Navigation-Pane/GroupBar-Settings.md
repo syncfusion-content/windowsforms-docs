@@ -85,8 +85,7 @@ Stacked GroupBar Item automatically shows the Chevron, which can be made invisib
 ![Navigation buttons](Overview_images/Overview_img13.jpeg)
 
 
-N> You should set [LargeImageMode]
-(https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBarItem.html#Syncfusion_Windows_Forms_Tools_GroupBarItem_LargeImageMode) of GroupBarItem to `true` to display the item images in the GroupBar's navigation pane.
+N> You should set [LargeImageMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBarItem.html#Syncfusion_Windows_Forms_Tools_GroupBarItem_LargeImageMode) of GroupBarItem to `true` to display the item images in the GroupBar's navigation pane.
 
 ### Navigation pane
 
@@ -128,8 +127,7 @@ The Navigation Pane is displayed when the GroupBar is in the Stacked Mode. It's 
 
 This section discusses settings of the GroupBar in its collapsed state.
 
-N> [AllowCollapse]
-(https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_AllowCollapse) property should be set to `true` to effect the below settings.
+N> [AllowCollapse](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_AllowCollapse) property should be set to `true` to effect the below settings.
  
 * [Collapsed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_Collapsed)
 * [CollapsedText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_CollapsedText)

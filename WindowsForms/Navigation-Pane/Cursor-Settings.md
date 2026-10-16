@@ -58,5 +58,4 @@ Me.groupBar1.GroupBarItemCursor = System.Windows.Forms.Cursors.Hand
  ![GroupBarItem cusrsor](Overview_images/Overview_img35.jpeg)
 
 
-N> The [ResetGroupBarItemCursor]
-(https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_ResetGroupBarItemCursor) method can be used to reset the cursor when it is displayed over a GroupBar Item.
+N> The [ResetGroupBarItemCursor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_ResetGroupBarItemCursor) method can be used to reset the cursor when it is displayed over a GroupBar Item.
