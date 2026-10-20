@@ -9,57 +9,54 @@ documentation: ug
 
 # Getting Started with Windows Forms ComboBoxAdv(Classic)
 
-This section describes how to add the ComboBoxAdv control to a Windows Forms application and configure its commonly used settings.
+This section explains how to add the `ComboBoxAdv` control to a Windows Forms application and configure its commonly used settings.
 
-* [Adding ComboBoxAdv via designer](#adding-comboboxadv-via-designer)
-* [Configuring the ComboBoxAdv Control](#configuring-the-comboboxadv-control)
-* [Adding ComboBoxAdv via code](#adding-comboboxadv-via-code)
+## Assembly Deployment
 
-## Assembly deployment
-
-Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#comboboxadv) section for the list of assemblies or the NuGet package details that must be referenced to use the control in any application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#comboboxadv) section for the list of assemblies and NuGet packages required to use the `ComboBoxAdv` control.
 
 Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install NuGet packages in a Windows Forms application.
 
-To install via the NuGet Package Manager Console, run:
+To install the required NuGet package using the NuGet Package Manager Console, run the following command:
 
-```
+```powershell
 Install-Package Syncfusion.Tools.Windows
 ```
 
-## Adding ComboBoxAdv via designer
+## Adding ComboBoxAdv via Designer
 
-1. Create a new **Windows Forms Application** project in Visual Studio using the New Project dialog.
-2. Add the required assembly references to the project:
+1. Create a new Windows Forms application project in Visual Studio.
+2. Add the following required assembly references to the project:
 
     * `Syncfusion.Tools.Windows.dll`
     * `Syncfusion.Shared.Base.dll`
-3. Open the Toolbox and locate the **ComboBoxAdv** control under the **Syncfusion Windows Forms** tab.
-4. Drag the ComboBoxAdv control from the Toolbox onto the Form.
+
+3. Open the **Toolbox** and locate the **ComboBoxAdv** control under the **Syncfusion Windows Forms** tab.
+4. Drag the **ComboBoxAdv** control from the **Toolbox** and drop it onto the Windows Form.
 
 ![Overview of Windows Forms ComboBoxAdv control](overview_images/windowsforms-combobox-overview.png)
 
-## Configuring the ComboBoxAdv control
+## Configuring the ComboBoxAdv Control
 
-The most commonly used settings of the ComboBoxAdv control can be configured through the Smart tag, the Properties window, or in code.
+The most commonly used settings of the ComboBox control can be configured using the Smart Tag, the Properties window, or code.
 
 ![Configuring ComboBoxAdv control in Windows Forms](overview_images/windowsforms-combobox-configuring.png)
 
 Typical settings include:
 
-| Setting | Property | Where to configure |
+| Setting | Property | Where to Configure |
 | --- | --- | --- |
-| Visual style | `Style` | Properties window / code |
-| Drop-down behavior | `DropDownStyle` | Properties window / code |
-| Data source | `DataSource`, `DisplayMember`, `ValueMember` | Properties window / code |
-| Item height | `ItemHeight` | Properties window / code |
-| Watermark text | `Watermark` | Properties window / code |
+| Visual style | `Style` | Properties window or code |
+| Drop-down behavior | `DropDownStyle` | Properties window or code |
+| Data source | `DataSource`, `DisplayMember`, `ValueMember` | Properties window or code |
+| Item height | `ItemHeight` | Properties window or code |
+| Watermark text | `Watermark` | Properties window or code |
 
-For the full list of options, see [ComboBoxAdv Options](ComboBoxAdv-Options.md) and [ComboBoxAdv Appearance](ComboBoxAdv-appearance.md).
+For a complete list of available options, refer to [ComboBoxAdv Options](ComboBoxAdv-Options.md) and [ComboBoxAdv Appearance](ComboBoxAdv-appearance.md).
 
-## Adding ComboBoxAdv via code
+## Adding ComboBoxAdv via Code
 
-To add the ComboBoxAdv control programmatically, follow these steps.
+To add the `ComboBoxAdv` control programmatically, follow these steps:
 
 1. Add the following assembly references to the project:
 
@@ -68,7 +65,7 @@ To add the ComboBoxAdv control programmatically, follow these steps.
 
 2. To initialize the control in code, perform the following in order:
 
-    1. Add the required namespaces at the top of the file:
+   2.1. Add the required namespaces at the top of the file.
 
         {% capture codesnippet_ns %}
         {% tabs %}
@@ -87,7 +84,7 @@ To add the ComboBoxAdv control programmatically, follow these steps.
         {% endcapture %}
         {{ codesnippet_ns | OrderList_Indent_Level_2 }}
 
-    2. Inside the Form's constructor (after `InitializeComponent()` in designer-based projects), declare the `comboBoxAdv1` field and create its instance:
+    2.2. Declare the `comboBoxAdv1` field in the form class and create an instance of it in the constructor after `InitializeComponent()`.
 
         {% capture codesnippet_ctor %}
         {% tabs %}
@@ -114,7 +111,7 @@ To add the ComboBoxAdv control programmatically, follow these steps.
         {% endcapture %}
         {{ codesnippet_ctor | OrderList_Indent_Level_2 }}
 
-    3. Add items to the control using the `Items.Add` method:
+    2.3. Add items to the control using the `Items.Add` method.
 
         {% capture codesnippet_items %}
         {% tabs %}
@@ -136,7 +133,7 @@ To add the ComboBoxAdv control programmatically, follow these steps.
         {% endcapture %}
         {{ codesnippet_items | OrderList_Indent_Level_2 }}
 
-    4. Add the control to the form by appending it to the `Controls` collection:
+    2.4. Add the control to the form by adding it to the `Controls` collection.
 
         {% capture codesnippet_add %}
         {% tabs %}
@@ -156,7 +153,7 @@ To add the ComboBoxAdv control programmatically, follow these steps.
 
 ### Complete code example
 
-The following combined C# and VB.NET sample shows all of the steps above in a single, runnable example.
+The following sample combines all the preceding steps into a single runnable example.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -220,4 +217,4 @@ End Class
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_2 }}
 
-![Adding the ComboBoxAdv control to a Windows Forms form](overview_images/windowsforms-combobox-add-form.png)
+![Adding the WinForms ComboBoxAdv control to a Form](overview_images/windowsforms-combobox-add-form.png)
