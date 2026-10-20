@@ -9,82 +9,123 @@ documentation: ug
 
 # Getting Started with Windows Forms Gradient Panel
 
-This section will guide you to create a Gradient Panel via designer and also programming approach.
+This section explains how to get started with the Windows Forms `GradientPanel` control using the Visual Studio designer and code, and how to customize its background and border styles.
 
 ## Assembly deployment
 
-Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#gradientpanel) section to get the list of assemblies or details of NuGet package that needs to be added as a reference to use the control in any application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#gradientpanel) section for the list of assemblies and NuGet packages required to use the Gradient Panel control.
 
-Click [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install nuget packages in a Windows Forms application.
+Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install NuGet packages in a Windows Forms application.
 
-## Adding Gradient Panel control  via designer
+To install the required NuGet package using the NuGet Package Manager Console, run the following command:
 
-1. Create a new Windows Forms application in Visual Studio. 
+```powershell
+Install-Package Syncfusion.Shared.Base
+```
 
-2. The [GradientPanel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GradientPanel.html) control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assembly will be added automatically:
+## Adding GradientPanel Control via Designer
+
+1. Create a new Windows Forms project in Visual Studio.
+
+2. Install the required Syncfusion WinForms NuGet package. After the control is registered in the Toolbox, drag the [GradientPanel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GradientPanel.html) control from the Toolbox and drop it onto the Windows Form designer. The following dependent assembly is added automatically:
 
     * Syncfusion.Shared.Base
 
-![Windows Forms Gradient Panel drag and drop from toolbox](GradientPanel-Images/GradientPanel_toolbox.png)
+![Windows Forms GradientPanel drag and drop from toolbox](GradientPanel-Images/GradientPanel_toolbox.png)
 
-3. Set background color to Gradient Panel through property grid.
+3. Configure the Gradient Panel control using the Properties window. For example, set the `BackgroundColor` property to a `Syncfusion.Drawing.BrushInfo` value and customize the `BorderColor` and `BorderStyle` properties as needed.
 
-![Windows Forms Gradient Panel shows changing background style](GradientPanel-Images/GradientPanel_style.png) 
+![Windows Forms GradientPanel shows changing background style](GradientPanel-Images/GradientPanel_style.png)
 
-## Adding Gradient Panel control via code
+## Adding GradientPanel Control via Code
 
-The following steps guide you how to create a gradient panel programmatically.
+The following steps describe how to create a Gradient Panel control programmatically:
 
-1. Create a C# or VB application via Visual Studio.
+1. Create a C# or VB.NET Windows Forms application in Visual Studio.
 
 2. Add the following assembly reference to the project:
 
     * Syncfusion.Shared.Base
 
-3. Include the required namespace.
+3. Include the required namespaces at the top of the file.
 
 {% capture codesnippet1 %}
 {% tabs %}
 {% highlight C# %}
-  
+
 using Syncfusion.Windows.Forms.Tools;
+using System.Drawing;
+using System.Windows.Forms;
 
 {% endhighlight %}
 {% highlight VB %}
 
-ImportsÂ Syncfusion.Windows.Forms.Tools
+Imports Syncfusion.Windows.Forms.Tools
+Imports System.Drawing
+Imports System.Windows.Forms
 
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }} 
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4. Create an instance of [GradientPanel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GradientPanel.html) control, and add it to the form.
+4. Create an instance of the [GradientPanel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GradientPanel.html) control, configure its layout properties, and add it to the form.
 
 {% capture codesnippet2 %}
 {% tabs %}
-{% highlight c# %}
+{% highlight C# %}
 
-private Syncfusion.Windows.Forms.Tools.GradientPanel gradientPanel1;
-this.gradientPanel1 = new Syncfusion.Windows.Forms.Tools.GradientPanel();
-this.Controls.Add(this.gradientPanel1);
+public partial class Form1 : Form
+{
+    private Syncfusion.Windows.Forms.Tools.GradientPanel gradientPanel1;
+
+    public Form1()
+    {
+        this.gradientPanel1 = new Syncfusion.Windows.Forms.Tools.GradientPanel()
+        {
+            Name = "gradientPanel1",
+            Size = new System.Drawing.Size(400, 200),
+            Location = new System.Drawing.Point(20, 20),
+            Dock = System.Windows.Forms.DockStyle.Fill,
+            BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        };
+        this.Controls.Add(this.gradientPanel1);
+    }
+}
 
 {% endhighlight %}
+{% highlight VB %}
 
-{% highlight vb %}
+Public Partial Class Form1
+    Inherits Form
 
-Friend WithEvents GradientPanel1 As Syncfusion.Windows.Forms.Tools.GradientPanel
-Me.gradientPanel1 = New Syncfusion.Windows.Forms.Tools.GradientPanel()
-Me.Controls.Add(Me.gradientPanel1)
+    Private WithEvents GradientPanel1 As Syncfusion.Windows.Forms.Tools.GradientPanel
+    Public Sub New()
+        Me.gradientPanel1 = New Syncfusion.Windows.Forms.Tools.GradientPanel() With {
+            .Name = "gradientPanel1",
+            .Size = New System.Drawing.Size(400, 200),
+            .Location = New System.Drawing.Point(20, 20),
+            .Dock = System.Windows.Forms.DockStyle.Fill,
+            .BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        }
+        Me.Controls.Add(Me.gradientPanel1)
+    End Sub
+End Class
 
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }} 
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Styles
 
-The Gradient Panel control provides different set of background styles. The styles are Solid, Pattern, and Gradient.
+The Gradient Panel control provides the following background styles:
+
+* `Solid` - Displays a single background color.
+* `Pattern` - Displays a tiled brush pattern.
+* `Gradient` - Displays a smooth blend of colors.
+
+Choose the appropriate style based on the desired visual appearance.
 
 ### Solid
 
@@ -105,7 +146,7 @@ Me.gradientPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 {% endhighlight %}
 {% endtabs %}
 
-![Windows Forms Gradient Panel shows solid style of background](GradientPanel-Images/GradientPanel_solid.png)
+![Windows Forms GradientPanel shows solid style of background](GradientPanel-Images/GradientPanel_solid.png)
 
 ### Pattern
 
@@ -126,7 +167,7 @@ Me.gradientPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 {% endhighlight %}
 {% endtabs %}
 
-![Windows Forms Gradient Panel shows pattern style of background](GradientPanel-Images/GradientPanel_pattern.png)
+![Windows Forms GradientPanel shows pattern style of background](GradientPanel-Images/GradientPanel_pattern.png)
 
 ### Gradient
 
@@ -147,4 +188,4 @@ Me.gradientPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 {% endhighlight %}
 {% endtabs %}
 
-![Windows Forms Gradient Panel shows gradient style of background](GradientPanel-Images/GradientPanel_gradient.png)
+![Windows Forms GradientPanel shows gradient style of background](GradientPanel-Images/GradientPanel_gradient.png)

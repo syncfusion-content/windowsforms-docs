@@ -8,116 +8,133 @@ documentation: ug
 ---
 
 # Getting Started with Windows Forms ListView
-This section provides a quick overview for getting started with ListView for WinForms. Walk through the entire process of creating a real-world ListView.
 
-## Assembly Deployment
-Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sflistview) section for the list of assemblies or NuGet package that must be referenced to use the control in any application.
+This section explains how to get started with the WinForms `SfListView` control and perform grouping, sorting, filtering, and selection operations.
 
-To install via NuGet Package Manager Console, run:
+## Assembly deployment
+
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sflistview) section for the complete list of assemblies and NuGet packages required for the ListView control.
+
+Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install NuGet packages in a Windows Forms application.
+
+To install via the NuGet Package Manager Console, run:
+
+```powershell
+Install-Package Syncfusion.SfListView.WinForms
 ```
-Install-Package Syncfusion.ListView.WinForms
-```
 
-## Creating Application with ListView control
-In this walkthrough, you will create a WinForms application that contains the ListView control.
+## Adding SfListView via designer
 
-### Creating the Project
-Create a new Windows Forms project in Visual Studio to display the ListView with data objects.
+1. Create a new Windows Forms project in Visual Studio.
 
-### Adding Control via Designer
-The `SfListView` control can be added to the application by dragging it from the toolbox and dropping it in the designer. The required assembly references will be added automatically.
+2. You can add the [SfListView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html) to the application by dragging it from the _Toolbox_ and dropping it onto the Windows Form designer. The required assembly references will be added automatically. The following dependent assemblies are added when the control is dropped on the form:
 
-![Drag and drop the ListView control into WF application](GettingStarted_images/GettingStarted_img1.png)
+    * Syncfusion.SfListView.WinForms
+    * Syncfusion.Core.WinForms
+    * Syncfusion.DataSource.WinForms
+    * Syncfusion.GridCommon.WinForms
 
-### Adding Control in Code
-To add control manually, follow the steps:
+![Drag and drop the SfListView control into a WinForms application designer](GettingStarted_images/GettingStarted_img1.png)
+
+## Adding SfListView via code
+
+To add the control manually, follow these steps:
 
 1. Add the following required assembly references to the project:
 
-    * 	Syncfusion.Core.WinForms
+    * Syncfusion.Core.WinForms
+    * Syncfusion.DataSource.WinForms
+    * Syncfusion.GridCommon.WinForms
+    * Syncfusion.SfListView.WinForms
 
-    *	Syncfusion.DataSource.WinForms
+2. Create the `SfListView` control instance and add it to the form.
 
-    * 	Syncfusion.GridCommon.WinForms
-
-    *   Syncfusion.SfListView.WinForms
-
-
-2.  Create the `SfListView` control instance and add it to the form.   
-
-{% capture codesnippet1 %}
+{% capture codesnippet_control %}
 {% tabs %}
 {% highlight c# %}
+using System.Drawing;
+using System.Windows.Forms;
 using Syncfusion.WinForms.ListView;
 
-namespace WindowsFormsApplication1
+namespace SfListViewDemo
 {
     public partial class Form1 : Form
     {
+        private SfListView listView;
+
         public Form1()
         {
             InitializeComponent();
-            SfListView sfListView1 = new SfListView ();
-            sfListView1.Location = new Point(100, 100);
-            sfListView1.Size = new Size(300,320);
-            this.Controls.Add(sfListView1);
+
+            listView = new SfListView();
+            listView.Location = new Point(100, 100);
+            listView.Size = new Size(300, 320);
+
+            this.Controls.Add(listView);
         }
     }
 }
 {% endhighlight %}
 {% highlight vb %}
+Imports System.Drawing
+Imports System.Windows.Forms
 Imports Syncfusion.WinForms.ListView
 
-Namespace WindowsFormsApplication1
-	Partial Public Class Form1
-		Inherits Form
-		Public Sub New()
-			InitializeComponent()
-			Dim listView As New SfListView()
-            listView.Location = New Point(100,100)
-            listView.Size = New Size(300,320)
-            Me.Controls.Add(listView)   
-		End Sub
-	End Class
-End Namespace
+Partial Public Class Form1
+    Inherits Form
+
+    Private listView As SfListView
+
+    Public Sub New()
+        InitializeComponent()
+
+        listView = New SfListView()
+        listView.Location = New Point(100, 100)
+        listView.Size = New Size(300, 320)
+        Me.Controls.Add(listView)
+    End Sub
+End Class
+
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
+{{ codesnippet_control | OrderList_Indent_Level_1 }}
 
-### Creating data for the sample application
+## Create the data model
 
-To create the data for the sample application, follow these steps:
+Create a simple data model that represents each item in the list.
 
-1. Create a data object class named `CountryInfo` and declare its properties.
+1. Add a class named `CountryInfo` with the `CountryName` and `Continent` properties.
 
-{% capture codesnippet2 %}
+{% capture codesnippet_model %}
 {% tabs %}
 {% highlight c# %}
-
 public class CountryInfo
 {
-   public string CountryName { get; set; }
-   public string Continent { get; set; }
- }
+    public string CountryName { get; set; }
+    public string Continent { get; set; }
+}
 {% endhighlight %}
 {% highlight vb %}
 
 Public Class CountryInfo
-   Public Property CountryName() As String
-   Public Property Continent() As String
- End Class
- {% endhighlight %}
- {% endtabs %}
- {% endcapture %}
- {{ codesnippet2 | OrderList_Indent_Level_1 }}
- 
-2. Create a `List<CountryInfo>` collection initialized in a `GetDataSource` method to add several data objects.
+    Public Property CountryName() As String
+    Public Property Continent() As String
+End Class
 
- {% capture codesnippet3 %}    
+{% endhighlight %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet_model | OrderList_Indent_Level_1 }}
+
+2. Add the GetDataSource method to return a populated collection of _CountryInfo_ objects.
+
+{% capture codesnippet_data %}
 {% tabs %}
 {% highlight c# %}
+using System.Collections.Generic;
 
+// Place this method on Form1 (next to the constructor) so the call in the constructor compiles.
 public List<CountryInfo> GetDataSource()
 {
     List<CountryInfo> countryInfoCollection = new List<CountryInfo>();
@@ -149,154 +166,200 @@ public List<CountryInfo> GetDataSource()
     countryInfoCollection.Add(new CountryInfo() { CountryName = "Colombia", Continent = "South America" });
     countryInfoCollection.Add(new CountryInfo() { CountryName = "Uruguay", Continent = "South America" });
     return countryInfoCollection;
-  }
-{% endhighlight %}
-{% highlight vb %}
-
-Public Function GetDataSource() As List(Of CountryInfo)
-	Dim countryInfoCollection As New List(Of CountryInfo)()
-	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "China", .Continent = "Asia"})
-	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "India", .Continent = "Asia"})
-	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Japan", .Continent = "Asia"})
-	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Malaysia", .Continent = "Asia"})
-	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Singapore", .Continent = "Asia"})
-	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Kenya", .Continent = "Africa"})
-	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Nigeria", .Continent = "Africa"})
-	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "South Africa", .Continent = "Africa"})
-	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Uganda", .Continent = "Africa"})
-	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Zimbabwe", .Continent = "Africa"})
-	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "France", .Continent = "Europe"})
-	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Germany", .Continent = "Europe"})
-	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Italy", .Continent = "Europe"})
-	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Spain", .Continent = "Europe"})
-	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "United Kingdom", .Continent = "Europe"})
-	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Canada", .Continent = "North America"})
-	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Cuba", .Continent = "North America"})
-	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Jamaica", .Continent = "North America"})
-	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Mexico", .Continent = "North America"})
-	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "United States of America", .Continent = "North America"})
-	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Australia", .Continent = "Oceania"})
-	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "New Zealand", .Continent = "Oceania"})
-	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Argentina", .Continent = "South America"})
-	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Brazil", .Continent = "South America"})
-	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Chile", .Continent = "South America"})
-	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Colombia", .Continent = "South America"})
-	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Uruguay", .Continent = "South America"})
-	Return countryInfoCollection
-End Function
-{% endhighlight %}
-{% endtabs %}
-{% endcapture %}
-{{ codesnippet3 | OrderList_Indent_Level_1 }}
- 
-### Binding to data
-
-To bind the ListView to data, set the [DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_DataSource) property to an `IEnumerable` implementation.
-You can bind a property of the underlying data source to display the ListView by using the [DisplayMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_DisplayMember) property.
-
-{% tabs %}
-{% highlight c# %}
-sfListView1.DataSource = GetDataSource();
-sfListView1.DisplayMember = "CountryName";  
-
-{% endhighlight %}
-{% highlight vb %}
-sfListView1.DataSource = GetDataSource()
-sfListView1.DisplayMember = "CountryName"  
-
-{% endhighlight %}
-{% endtabs %}
-
-![Data binding in WF ListView Control](GettingStarted_images/GettingStarted_img2.png)
-
-## Grouping
-The Windows Forms ListView can display its items in groups by using the [SfListView.View.GroupDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_GroupDescriptors) property. Create a [GroupDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.GroupDescriptor.html) for the property to be grouped and add it to the `View.GroupDescriptors` collection.
-
-GroupDescriptor object holds the following properties:
-
-    •	`PropertyName`: Describes name of the property to be grouped.
-
-    •	`KeySelector`: Describes selector to return the group key.
-
-    •	`Comparer`: Describes comparer to be applied when sorting takes place.
-
-{% capture codesnippet4 %} 
-{% tabs %}
-{% highlight c# %}
-listView.View.GroupDescriptors.Add(new GroupDescriptor()
-{
-   PropertyName = "Continent",                     
-});
-
-{% endhighlight %}
-{% highlight vb %}
-listView.View.GroupDescriptors.Add(New GroupDescriptor() With {.PropertyName = “  Continent ”})
-{% endhighlight %}
-{% endtabs %}
-{% endcapture %}
-{{ codesnippet4 | OrderList_Indent_Level_1 }}
-
-![Grouping in WF ListView Control](GettingStarted_images/GettingStarted_img3.png)
-
-## Sorting
-The ListView allows sorting its data by using the [SfListView.View.SortDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_SortDescriptors) property. Create a [SortDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.SortDescriptor.html) for the property to be sorted and add it to the `View.SortDescriptors` collection.
-
-SortDescriptor object holds the following three properties:
-
-    •	`PropertyName`: Describes name of the sorted property.
-
-    •	`Direction`: Describes an object of type `ListSortDirection` defines the sorting direction.
-
-    •	`Comparer`: Describes a comparer to be applied when sorting takes place.
-
-
-{% tabs %}
-{% highlight c# %}
-listView.View.SortDescriptors.Add(new SortDescriptor()
-{
-   PropertyName = "Continent",
-   Direction = ListSortDirection.Descending,
-});
-{% endhighlight %}
-{% highlight vb %}
-listView.View.SortDescriptors.Add(New SortDescriptor() With {.PropertyName = “Continent”, .Direction = ListSortDirection.Descending})
-{% endhighlight %}
-{% endtabs %}
-
-
-![Sorting in WF ListView Control](GettingStarted_images/GettingStarted_img4.png)
-
-## Filtering
-The ListView supports filtering the records in view by setting a predicate to the [SfListView.View.Filter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_Filter) property. Call the [View.RefreshFilter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_RefreshFilter) method after assigning the Filter property to refresh the view.
-To filter the items based on the Continent property of the underlying data, follow the code example.
-
-{% tabs %}
-{% highlight c# %}
-listView.View.Filter = CustomFilter;
-listView.View.RefreshFilter();
-
-public bool CustomFilter(object obj)
-{
-    if ((obj as Country).Continent == "Asia" || (obj as Country).Continent == "North America" || (obj as Country).Continent == "Oceania")
-        return true;
-    return false;
 }
 {% endhighlight %}
 {% highlight vb %}
-listView.View.Filter = AddressOf CustomFilter
-listView.View.RefreshFilter()
-public Boolean CustomFilter(Object obj)
-  If (TryCast(obj, Country)).Continent = "Asia" OrElse (TryCast(obj, Country)).Continent = "North America" OrElse (TryCast(obj, Country)).Continent = "Oceania" Then
-	Return True
-  End If
-  Return False
+
+' Place this method on Form1 (next to the constructor) so the call in the constructor compiles.
+Private Function GetDataSource() As List(Of CountryInfo)
+    Dim countryInfoCollection As New List(Of CountryInfo)()
+    countryInfoCollection.Add(New CountryInfo() With {.CountryName = "China", .Continent = "Asia"})
+    countryInfoCollection.Add(New CountryInfo() With {.CountryName = "India", .Continent = "Asia"})
+    countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Japan", .Continent = "Asia"})
+    countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Malaysia", .Continent = "Asia"})
+    countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Singapore", .Continent = "Asia"})
+    countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Kenya", .Continent = "Africa"})
+    countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Nigeria", .Continent = "Africa"})
+    countryInfoCollection.Add(New CountryInfo() With {.CountryName = "South Africa", .Continent = "Africa"})
+    countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Uganda", .Continent = "Africa"})
+    countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Zimbabwe", .Continent = "Africa"})
+    countryInfoCollection.Add(New CountryInfo() With {.CountryName = "France", .Continent = "Europe"})
+    countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Germany", .Continent = "Europe"})
+    countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Italy", .Continent = "Europe"})
+    countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Spain", .Continent = "Europe"})
+    countryInfoCollection.Add(New CountryInfo() With {.CountryName = "United Kingdom", .Continent = "Europe"})
+    countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Canada", .Continent = "North America"})
+    countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Cuba", .Continent = "North America"})
+    countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Jamaica", .Continent = "North America"})
+    countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Mexico", .Continent = "North America"})
+    countryInfoCollection.Add(New CountryInfo() With {.CountryName = "United States of America", .Continent = "North America"})
+    countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Australia", .Continent = "Oceania"})
+    countryInfoCollection.Add(New CountryInfo() With {.CountryName = "New Zealand", .Continent = "Oceania"})
+    countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Argentina", .Continent = "South America"})
+    countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Brazil", .Continent = "South America"})
+    countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Chile", .Continent = "South America"})
+    countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Colombia", .Continent = "South America"})
+    countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Uruguay", .Continent = "South America"})
+    Return countryInfoCollection
+End Function
+
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet_data | OrderList_Indent_Level_1 }}
 
-![Filtering in WF ListView Control](GettingStarted_images/GettingStarted_img5.png)
+## Bind to data
+
+Set the [DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_DataSource) property to an IEnumerable collection and use the [DisplayMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_DisplayMember) property to specify the data field to display.
+
+{% capture codesnippet_bind %}
+{% tabs %}
+{% highlight c# %}
+
+// Inside the Form1 constructor, after creating listView:
+listView.DataSource = GetDataSource();
+listView.DisplayMember = "CountryName";
+
+{% endhighlight %}
+{% highlight vb %}
+
+' Inside the Form1 constructor, after creating listView:
+listView.DataSource = GetDataSource()
+listView.DisplayMember = "CountryName"
+
+{% endhighlight %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet_bind | OrderList_Indent_Level_1 }}
+
+![Data binding in WinForms SfListView Control](GettingStarted_images/GettingStarted_img2.png)
+
+## Grouping
+
+ListView supports grouping items based on a data property through its `View` (`Syncfusion.DataSource.DataSource`) object by using the [View.GroupDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_GroupDescriptors) collection. Create a [GroupDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.GroupDescriptor.html) for the `Continent` property and add it to the collection.
+
+`GroupDescriptor` exposes the following properties:
+
+* `PropertyName` – Specifies the property name used for grouping.
+* `KeySelector` – Specifies a selector that returns the group key.
+* `Comparer` – Specifies the comparer used to sort groups.
+
+{% capture codesnippet_group %}
+{% tabs %}
+{% highlight c# %}
+
+using Syncfusion.DataSource;
+
+listView.View.GroupDescriptors.Add(new GroupDescriptor()
+{
+    PropertyName = "Continent",
+});
+
+{% endhighlight %}
+{% highlight vb %}
+
+Imports Syncfusion.DataSource
+
+listView.View.GroupDescriptors.Add(New GroupDescriptor() With {.PropertyName = "Continent"})
+
+{% endhighlight %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet_group | OrderList_Indent_Level_1 }}
+
+![Grouping in WinForms SfListView Control](GettingStarted_images/GettingStarted_img3.png)
+
+## Sorting
+
+ListView supports sorting data using the [View.SortDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_SortDescriptors) collection. Create a [SortDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.SortDescriptor.html) and add it to the collection.
+
+`SortDescriptor` exposes the following properties:
+
+* `PropertyName` – Specifies the property used for sorting.
+* `Direction` – Specifies the sort direction as a `System.ComponentModel.ListSortDirection` value (`Ascending` or `Descending`).
+* `Comparer` – Specifies the comparer used for sorting.
+
+{% capture codesnippet_sort %}
+{% tabs %}
+{% highlight c# %}
+
+using System.ComponentModel; // ListSortDirection
+using Syncfusion.DataSource; // SortDescriptor
+
+listView.View.SortDescriptors.Add(new SortDescriptor()
+{
+    PropertyName = "Continent",
+    Direction = ListSortDirection.Descending,
+});
+
+{% endhighlight %}
+{% highlight vb %}
+
+Imports System.ComponentModel ' ListSortDirection
+Imports Syncfusion.DataSource ' SortDescriptor
+
+listView.View.SortDescriptors.Add(New SortDescriptor() With {
+    .PropertyName = "Continent",
+    .Direction = ListSortDirection.Descending
+})
+
+{% endhighlight %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet_sort | OrderList_Indent_Level_1 }}
+
+![Sorting in WinForms SfListView Control](GettingStarted_images/GettingStarted_img4.png)
+
+## Filtering
+
+ListView supports filtering items by assigning a predicate method to the [View.Filter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_Filter) property. Call [View.RefreshFilter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_RefreshFilter) after each `Filter` assignment to apply the filtering changes.
+
+The following example displays only the countries that belong to `Asia`, `North America`, or `Oceania`.
+
+{% capture codesnippet_filter %}
+{% tabs %}
+{% highlight c# %}
+
+// Inside Form1:
+listView.View.Filter = CustomFilter;
+listView.View.RefreshFilter();
+
+// Private method on Form1:
+private bool CustomFilter(object obj)
+{
+    var item = obj as CountryInfo;
+    return item != null &&
+           (item.Continent == "Asia" ||
+            item.Continent == "North America" ||
+            item.Continent == "Oceania");
+}
+
+{% endhighlight %}
+{% highlight vb %}
+
+' Inside Form1:
+listView.View.Filter = AddressOf CustomFilter
+listView.View.RefreshFilter()
+
+' Private method on Form1:
+Private Function CustomFilter(obj As Object) As Boolean
+    Dim item = TryCast(obj, CountryInfo)
+    Return item IsNot Nothing AndAlso
+           (item.Continent = "Asia" OrElse
+            item.Continent = "North America" OrElse
+            item.Continent = "Oceania")
+End Function
+
+{% endhighlight %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet_filter | OrderList_Indent_Level_1 }}
+
+![Filtering in WinForms SfListView Control](GettingStarted_images/GettingStarted_img5.png)
 
 ## Selection
-ListView selects an item by setting the [SelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectionMode) property to one of `One`, `MultiSimple`, `MultiExtended`, or `None` based on the requirements. Selected item information can be tracked by using the [SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedItem), [SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedIndex), and [SelectedItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedItems) properties.
+
+Configure item selection behavior by setting the [SelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectionMode) property to one of the following values.
 
 | SelectionMode | Description |
 | --- | --- |
@@ -305,16 +368,39 @@ ListView selects an item by setting the [SelectionMode](https://help.syncfusion.
 | `MultiExtended` | Multiple items can be selected using Ctrl/Shift. |
 | `None` | Selection is disabled. |
 
-The selection operations can be handled with the [SelectionChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectionChanging) and [SelectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectionChanged) events of the ListView.
+The currently selected items can be accessed through the [SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedItem), [SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedIndex), and [SelectedItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedItems). Selection changes can be tracked using the [SelectionChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectionChanging) and [SelectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectionChanged) events.
 
+{% capture codesnippet_select %}
 {% tabs %}
 {% highlight c# %}
-    listView.SelectionMode = SelectionMode.One;
+
+using Syncfusion.WinForms.ListView;
+using Syncfusion.WinForms.ListView.Events;
+
+listView.SelectionMode = SelectionMode.One;
+listView.SelectionChanged += ListView_SelectionChanged;
+
+private void ListView_SelectionChanged(object sender, ItemSelectionChangedEventArgs e)
+{
+    var selected = listView.SelectedItem as CountryInfo;
+}
+
 {% endhighlight %}
 {% highlight vb %}
-    listView.SelectionMode = SelectionMode.One
+
+Imports Syncfusion.WinForms.ListView
+Imports Syncfusion.WinForms.ListView.Events
+
+listView.SelectionMode = SelectionMode.One
+AddHandler listView.SelectionChanged, AddressOf ListView_SelectionChanged
+
+Private Sub ListView_SelectionChanged(sender As Object, e As ItemSelectionChangedEventArgs)
+    Dim selected = TryCast(listView.SelectedItem, CountryInfo)
+End Sub
+
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet_select | OrderList_Indent_Level_1 }}
 
-![Item selection in WF ListView Control](GettingStarted_images/GettingStarted_img6.png)
-
+![Item selection in WinForms SfListView Control](GettingStarted_images/GettingStarted_img6.png)
