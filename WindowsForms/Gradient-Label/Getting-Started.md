@@ -9,27 +9,27 @@ documentation: ug
 
 # Getting Started with Windows Forms Gradient Label
 
-This section briefly describes how to create a new Windows Forms project in Visual Studio and add the **GradientLabel** control with its basic features.
+This section explains how to get started with the Windows Forms Gradient Label control and its basic features.
 
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#gradientlabel) section to get the list of assemblies or the details of the NuGet package that needs to be added as a reference to use the control in any application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#gradientlabel) section for the list of assemblies and NuGet packages required to use the Gradient Label control.
 
-Refer to this [documentation](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to find more details about installing NuGet packages in a Windows Forms application.
+Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install NuGet packages in a Windows Forms application.
 
-You can also add the required assemblies as references from the Package Manager Console using the following PowerShell command:
+To install the required NuGet package using the NuGet Package Manager Console, run the following command:
 
 ```powershell
 Install-Package Syncfusion.Tools.Windows
 ```
 
-## Adding the GradientLabel control via designer
+## Adding the Gradient Label Control via Designer
 
-The following steps describe how to create a **GradientLabel** control via the designer:
+The following steps describe how to add a `GradientLabel` control using the designer:
 
 1. Create a new Windows Forms application in Visual Studio.
 
-2. Add the [GradientLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GradientLabel.html) control to an application by dragging it from the toolbox to the design view. The following dependent assemblies are added automatically:
+2. Drag the [GradientLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GradientLabel.html) control from the **Toolbox** and drop it onto the Windows Form designer. The following dependent assemblies are added automatically:
 
     * Syncfusion.Grid.Base
     * Syncfusion.Grid.Windows
@@ -40,11 +40,11 @@ The following steps describe how to create a **GradientLabel** control via the d
 
 ![Drag and drop GradientLabel from toolbox](GradientLabel-Images/Overview_img600.jpeg)
 
-## Adding the GradientLabel control via code
+## Adding the Gradient Label Control via Code
 
-The following steps describe how to create the **GradientLabel** control programmatically:
+The following steps describe how to add the Gradient Label control programmatically:
 
-1. Create a C# or VB application via Visual Studio.
+1. Create a C# or VB.NET Windows Forms application in Visual Studio.
 
 2. Add the following assembly references to the project:
 
@@ -55,7 +55,7 @@ The following steps describe how to create the **GradientLabel** control program
     * Syncfusion.Tools.Base
     * Syncfusion.Tools.Windows
 
-3. Include the **Syncfusion.Windows.Forms.Tools** namespace and create an instance of the [GradientLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GradientLabel.html) control inside the form's constructor, then add it to the form. By default, the control is positioned at the top-left corner of the form with the default size; you can set its `Location` and `Size` to position it explicitly.
+3. Include the `Syncfusion.Windows.Forms.Tools` namespace, create an instance of the [GradientLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GradientLabel.html) control in the form constructor, and add it to the form. By default, the control is displayed at the top-left corner of the form with its default size. Set the `Location` and `Size` properties to position and resize the control as needed.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -106,9 +106,9 @@ End Class
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-## Gradient settings
+## Gradient Settings
 
-The background of the [GradientLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GradientLabel.html) control can be customized using the various options provided by the following properties: GradientStyle, BackgroundColor, and ForeColor.
+The appearance of the Gradient Label control can be customized using the `GradientStyle`, `BackgroundColor`, and `ForeColor` properties.
 
 {% tabs %}
 
