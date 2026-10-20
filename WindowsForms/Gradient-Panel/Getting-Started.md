@@ -9,41 +9,41 @@ documentation: ug
 
 # Getting Started with Windows Forms Gradient Panel
 
-This section explains how to create a GradientPanel via the Visual Studio designer and programmatically.
+This section explains how to get started with the Windows Forms `GradientPanel` control using the Visual Studio designer and code, and how to customize its background and border styles.
 
 ## Assembly deployment
 
-Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#gradientpanel) section to get the list of assemblies or the NuGet package details that must be referenced to use the control in any application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#gradientpanel) section for the list of assemblies and NuGet packages required to use the Gradient Panel control.
 
 Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install NuGet packages in a Windows Forms application.
 
-To install via the NuGet Package Manager Console, run:
+To install the required NuGet package using the NuGet Package Manager Console, run the following command:
 
 ```powershell
 Install-Package Syncfusion.Shared.Base
 ```
 
-## Adding GradientPanel control via designer
+## Adding GradientPanel Control via Designer
 
 1. Create a new Windows Forms project in Visual Studio.
 
-2. Install the Syncfusion WinForms NuGet package so the control is registered in the toolbox, then drag the [GradientPanel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GradientPanel.html) from the toolbox to the designer surface. The following dependent assemblies are added automatically:
+2. Install the required Syncfusion WinForms NuGet package. After the control is registered in the Toolbox, drag the [GradientPanel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GradientPanel.html) control from the Toolbox and drop it onto the Windows Form designer. The following dependent assembly is added automatically:
 
     * Syncfusion.Shared.Base
 
 ![Windows Forms GradientPanel drag and drop from toolbox](GradientPanel-Images/GradientPanel_toolbox.png)
 
-3. Configure the GradientPanel through the property grid. For example, set the `BackgroundColor` to a `Syncfusion.Drawing.BrushInfo` value and adjust the `BorderColor` and `BorderStyle` as needed.
+3. Configure the Gradient Panel control using the Properties window. For example, set the `BackgroundColor` property to a `Syncfusion.Drawing.BrushInfo` value and customize the `BorderColor` and `BorderStyle` properties as needed.
 
 ![Windows Forms GradientPanel shows changing background style](GradientPanel-Images/GradientPanel_style.png)
 
-## Adding GradientPanel control via code
+## Adding GradientPanel Control via Code
 
-The following steps show how to create a GradientPanel programmatically.
+The following steps describe how to create a Gradient Panel control programmatically:
 
-1. Create a C# or VB.NET application in Visual Studio.
+1. Create a C# or VB.NET Windows Forms application in Visual Studio.
 
-2. Add the following assembly references to the project:
+2. Add the following assembly reference to the project:
 
     * Syncfusion.Shared.Base
 
@@ -69,7 +69,7 @@ Imports System.Windows.Forms
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4. Create an instance of the [GradientPanel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GradientPanel.html) control, set its layout properties, and add it to the form.
+4. Create an instance of the [GradientPanel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GradientPanel.html) control, configure its layout properties, and add it to the form.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -119,7 +119,13 @@ End Class
 
 ## Styles
 
-The GradientPanel provides a variety of background styles. The available styles are Solid, Pattern, and Gradient. Choose a style based on the visual effect you need: Solid for a flat color, Pattern for a tiled brush, and Gradient for a color blend.
+The Gradient Panel control provides the following background styles:
+
+* `Solid` - Displays a single background color.
+* `Pattern` - Displays a tiled brush pattern.
+* `Gradient` - Displays a smooth blend of colors.
+
+Choose the appropriate style based on the desired visual appearance.
 
 ### Solid
 
