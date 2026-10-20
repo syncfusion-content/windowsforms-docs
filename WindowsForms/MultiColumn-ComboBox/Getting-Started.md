@@ -7,43 +7,43 @@ control: Multicolumn ComboBox
 documentation: ug
 ---
 
-# Getting Started with Windows Forms MultiColumnComboBox
+# Getting Started with Windows Forms Multicolumn ComboBox
 
-This section explains how to use the MultiColumnComboBox control to build a combo box that displays multiple columns in its drop-down list.
+This section explains how to use the `MultiColumnComboBox` control to create a combo box that displays multiple columns in its drop-down list.
 
 ## Assembly deployment
 
-Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#multicolumncombobox) section for the list of assemblies or the NuGet package details that must be referenced to use the control in any application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#multicolumncombobox) section for the list of required assemblies and NuGet package information needed to use the Multicolumn ComboBox control in your application.
 
 Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install NuGet packages in a Windows Forms application.
 
-To install via the NuGet Package Manager Console, run:
+To install the required NuGet package using the NuGet Package Manager Console, run the following command:
 
 ```
 Install-Package Syncfusion.Tools.Windows
 ```
 
-## Adding MultiColumnComboBox via designer
+## Adding Multicolumn ComboBox via Designer
 
 1. Create a new Windows Forms project in Visual Studio.
 
-2. Add the [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) to the application by dragging it from the toolbox to the designer surface. The following dependent assemblies are added automatically:
-
+2. Drag the [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) control from the _Toolbox_ and drop it onto the Windows Form designer. The following dependent assembly is added automatically:
+      
 	* Syncfusion.Tools.Windows
 
 ![Windows Forms MultiColumn ComboBox drag and drop from toolbox](Overview_images/Overview_img324.jpeg)
 
-## Adding MultiColumnComboBox via code
+## Adding Multicolumn ComboBox via Code
 
-To add the control manually, follow these steps:
+To add the `MultiColumnComboBox` control programmatically, follow these steps:
 
-1. Create a C# or VB.NET application in Visual Studio.
+1. Create a C# or VB.NET Windows Forms application in Visual Studio.
 
-2. Add the following assembly references to the project:
+2. Add the following assembly reference to the project:
 
-	* Syncfusion.Tools.Windows
+    * Syncfusion.Tools.Windows
 
-3. Include the required namespaces.
+3. Include the required namespace.
 
 {% tabs %}
 {% highlight c# %}
@@ -59,7 +59,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 {% endtabs %}
 
-4. Create an instance of the `MultiColumnComboBox` and add it to the form.
+4. Create an instance of the `MultiColumnComboBox` control and add it to the form.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -103,4 +103,4 @@ End Class
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-For more data-binding options, refer to [Data binding](https://help.syncfusion.com/windowsforms/multicolumn-combobox/data-binding).
+For more data-binding options, refer to [Data binding](https://help.syncfusion.com/windowsforms/multicolumn-combobox/data-binding) page.
