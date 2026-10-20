@@ -9,55 +9,55 @@ documentation: ug
 
 # Getting Started with Windows Forms MultiSelectionComboBox
 
-This section explains how to use the MultiSelectionComboBox control to build a combo box that allows users to select one or more items from a checkable drop-down list.
+This section explains how to get started with the Windows Forms MultiSelectionComboBox control and create a combo box that allows users to select one or more items from a checkable drop-down list.
 
 ## Assembly deployment
 
-Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#multiselectioncombobox) section for the list of assemblies or the NuGet package details that must be referenced to use the control in any application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#multiselectioncombobox) section for the list of assemblies and NuGet packages required to use the MultiSelectionComboBox control.
 
 Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install NuGet packages in a Windows Forms application.
 
-To install via the NuGet Package Manager Console, run:
+To install the required NuGet package using the NuGet Package Manager Console, run the following command:
 
-```
+```powershell
 Install-Package Syncfusion.Tools.Windows
 ```
 
-## Adding MultiSelectionComboBox via designer
+## Adding MultiSelectionComboBox via Designer
 
 1. Create a new Windows Forms project in Visual Studio.
 
-2. Add the [MultiSelectionComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiSelectionComboBox.html) to the application by dragging it from the toolbox to the designer surface. The following dependent assemblies are added automatically:
+2. Drag the [MultiSelectionComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiSelectionComboBox.html) control from the _Toolbox_ and drop it onto the Windows Form designer. The following dependent assemblies are added automatically:
 
 	* Syncfusion.Tools.Windows
 
-   ![Windows Forms MultiSelectionComboBox drag and drop from toolbox](Overview_images/Overview_img335.png)
+ ![Windows Forms MultiSelectionComboBox drag and drop from toolbox](Overview_images/Overview_img335.png)
 
-## Configuring the MultiSelectionComboBox control
+## Configuring the MultiSelectionComboBox Control
 
-The commonly used settings of the MultiSelectionComboBox control can be configured through the Designer's Smart tag, the Properties window, or through code.
+The commonly used settings of the MultiSelectionComboBox control can be configured using the Smart Tag, the Properties window, or code.
 
 ![MultiSelectionComboBox Smart Tag](Overview_images/Overview_img336.png)
 
-The Smart tag exposes the following design-time settings.
+The Smart Tag provides the following design-time settings.
 
 | Setting | Description |
 | --- | --- |
-| `AllowGrouping` | When checked, enables the grouping of items in the drop-down list. |
-| `ShowCheckBox` | When checked, displays a check box next to each item so multiple items can be selected. |
-| `SelectionMode` | Specifies the item-selection mode. `VisualMode` is the default. |
-| `AutoSizeMode` | Controls how the control resizes itself when the selected text changes. The default is `IncreaseHeight`. |
-| `AutoCompleteMode` | Specifies how auto-completion behaves as the user types. The default is `AutoAppend`. |
+| `AllowGrouping` | Enables grouping of items in the drop-down list. |
+| `ShowCheckBox` | Displays a check box next to each item, allowing multiple items to be selected. |
+| `SelectionMode` | Specifies the item selection mode. The default value is `VisualMode`. |
+| `AutoSizeMode` | Specifies how the control resizes when the selected text changes. The default value is `IncreaseHeight`. |
+| `AutoCompleteMode` | Specifies the auto-completion behavior as the user types. The default value is `AutoAppend`. |
 
-## Adding MultiSelectionComboBox via code
+## Adding MultiSelectionComboBox via Code
 
-To add the control manually, follow these steps:
+To add the MultiSelectionComboBox control programmatically, follow these steps:
 
-1. Create a C# or VB.NET application in Visual Studio.
+1. Create a C# or VB.NET Windows Forms application in Visual Studio.
 
-2. Add the following assembly references to the project:
+2. Add the following assembly reference to the project:
 
-	* Syncfusion.Tools.Windows
+    * Syncfusion.Tools.Windows
 
 3. Include the required namespace.
 
@@ -78,7 +78,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 {% endtabs %}
 
-4. Create an instance of the `MultiSelectionComboBox`, configure its properties, and add it to the form.
+4. Create an instance of the `MultiSelectionComboBox` control, configure its properties, and add it to the form.
 
 {% capture codesnippet1 %}
 {% tabs %}
