@@ -9,147 +9,268 @@ documentation: ug
 
 # Getting Started with Windows Forms ComboBoxBase
 
+`ComboBoxBase` is a base control that hosts a separate `ListControl` (typically a `ListBox`) as its drop-down portion. This section explains how to get started with the WinForms `ComboBoxBase` control and its basic features.
 
-ComboBoxBase can be created easily through designer, by just dragging and dropping the ComboBoxBase control from the Toolbox.
+## Assembly Deployment
 
-![Drag and Drop ComboBoxBase control from the Toolbox ](Overview_images/Overview_img315.png) 
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#comboboxbase) section for the list of assemblies and NuGet packages required to use the `ComboBoxBase` control.
 
+Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install NuGet packages in a Windows Forms application.
 
+To install the required NuGet package using the NuGet Package Manager Console, run the following command:
 
-![ComboBoxBase in Form](Overview_images/Overview_img316.png) 
+```
+Install-Package Syncfusion.Shared.Base
+```
 
+## Adding ComboBoxBase via Designer
 
+1. Add the `Syncfusion.Shared.Base` assembly reference to the project.
 
-To add data for the popup, add a listbox control to the form and select it in ListControl property.
+2. Drag the `ComboBoxBase` control from the _Toolbox_ onto the Windows Form designer.
 
-![Add Data for the Popup](Overview_images/Overview_img317.png) 
+    ![Drag and Drop ComboBoxBase control from the Toolbox](Overview_images/Overview_img315.png)
 
+    ![ComboBoxBase in form](Overview_images/Overview_img316.png)
 
+3. To provide data for the drop-down list, drag a `ListBox` control (or another `ListControl`-derived control) onto the form.
 
-![Add a Listbox control](Overview_images/Overview_img318.png) 
+    ![Add a ListBox control](Overview_images/Overview_img318.png)
 
+4. Select the `ComboBoxBase` control, and in the _Properties_ window, set the `ListControl` property to the `ListBox` control that you added.
 
-It can be created through code by following the below steps.
+    ![Assign the ListBox as the ListControl for ComboBoxBase in the Properties window](Overview_images/Overview_img317.png)
 
-1. Added Shared.Base to the reference folder through solution explorer and include the below namespace in the code.
+## Adding ComboBoxBase via Code
 
-{% capture codesnippet1 %}
+To add the `ComboBoxBase` control programmatically, follow these steps:
+
+1. Add the `Syncfusion.Shared.Base` assembly reference to the project and include the required namespace in the code.
+
+    {% capture codesnippet1 %}
+    {% tabs %}
+    {% highlight c# %}
+
+    using Syncfusion.Windows.Forms.Tools;
+
+    {% endhighlight %}
+    {% highlight vb %}
+
+    Imports Syncfusion.Windows.Forms.Tools
+
+    {% endhighlight %}
+    {% endtabs %}
+    {% endcapture %}
+    {{ codesnippet1 | OrderList_Indent_Level_1 }}
+
+2. Create instances of the `ComboBoxBase` and `ListBox` controls.
+
+    {% capture codesnippet2 %}
+    {% tabs %}
+    {% highlight c# %}
+
+    private Syncfusion.Windows.Forms.Tools.ComboBoxBase comboBoxBase1;
+    private System.Windows.Forms.ListBox listBox1;
+
+    this.comboBoxBase1 = new Syncfusion.Windows.Forms.Tools.ComboBoxBase();
+    this.listBox1 = new ListBox();
+
+    {% endhighlight %}
+    {% highlight vb %}
+
+    Private comboBoxBase1 As Syncfusion.Windows.Forms.Tools.ComboBoxBase
+    Private listBox1 As System.Windows.Forms.ListBox
+
+    Me.comboBoxBase1 = New Syncfusion.Windows.Forms.Tools.ComboBoxBase()
+    Me.listBox1 = New ListBox()
+
+    {% endhighlight %}
+    {% endtabs %}
+    {% endcapture %}
+    {{ codesnippet2 | OrderList_Indent_Level_1 }}
+
+3. Assign the `ListBox` control to the `ListControl` property of the `ComboBoxBase` control and set the required size.
+
+    {% capture codesnippet3 %}
+    {% tabs %}
+    {% highlight c# %}
+
+    this.comboBoxBase1.ListControl = this.listBox1;
+    this.comboBoxBase1.Size = new Size(120, 20);
+
+    {% endhighlight %}
+    {% highlight vb %}
+
+    Me.comboBoxBase1.ListControl = Me.listBox1
+    Me.comboBoxBase1.Size = New Size(120, 20)
+
+    {% endhighlight %}
+    {% endtabs %}
+    {% endcapture %}
+    {{ codesnippet3 | OrderList_Indent_Level_1 }}
+
+4. Specify the data source for the ListBox control.
+
+    {% capture codesnippet4 %}
+    {% tabs %}
+    {% highlight c# %}
+
+    // Sets the data source.
+    ArrayList USStates = new ArrayList();
+    USStates.Add(new USState("Washington", "WA"));
+    USStates.Add(new USState("West Virginia", "WV"));
+    USStates.Add(new USState("Wisconsin", "WI"));
+    USStates.Add(new USState("Wyoming", "WY"));
+    this.listBox1.DataSource = USStates;
+
+    {% endhighlight %}
+    {% highlight vb %}
+
+    ' Sets the data source.
+    Dim USStates As ArrayList = New ArrayList()
+    USStates.Add(New USState("Washington", "WA"))
+    USStates.Add(New USState("West Virginia", "WV"))
+    USStates.Add(New USState("Wisconsin", "WI"))
+    USStates.Add(New USState("Wyoming", "WY"))
+    Me.listBox1.DataSource = USStates
+
+    {% endhighlight %}
+    {% endtabs %}
+    {% endcapture %}
+    {{ codesnippet4 | OrderList_Indent_Level_1 }}
+
+5. Add the `ComboBoxBase` and `ListBox` controls to the form.
+
+    {% capture codesnippet5 %}
+    {% tabs %}
+    {% highlight c# %}
+
+    this.Controls.Add(this.listBox1);
+    this.Controls.Add(this.comboBoxBase1);
+
+    {% endhighlight %}
+    {% highlight vb %}
+
+    Me.Controls.Add(Me.listBox1)
+    Me.Controls.Add(Me.comboBoxBase1)
+
+    {% endhighlight %}
+    {% endtabs %}
+    {% endcapture %}
+    {{ codesnippet5 | OrderList_Indent_Level_1 }}
+
+    ![ComboBoxBase and ListBox displayed on the form](Overview_images/Overview_img319.png)
+
+### Complete Code Example
+
+The following example combines all the preceding steps into a single runnable application.
+
+{% capture codesnippet6 %}
 {% tabs %}
 {% highlight c# %}
 
 using Syncfusion.Windows.Forms.Tools;
+using System.Collections;
+using System.Drawing;
+
+public partial class Form1 : Form
+{
+    private Syncfusion.Windows.Forms.Tools.ComboBoxBase comboBoxBase1;
+    private System.Windows.Forms.ListBox listBox1;
+
+    public Form1()
+    {
+        InitializeComponent();
+
+        this.comboBoxBase1 = new Syncfusion.Windows.Forms.Tools.ComboBoxBase();
+        this.listBox1 = new ListBox();
+
+        this.comboBoxBase1.Location = new Point(20, 20);
+        this.comboBoxBase1.Size = new Size(120, 20);
+        this.listBox1.DisplayMember = "LongName";
+        this.listBox1.ValueMember = "Abbreviation";
+
+        // Sets the data source.
+        ArrayList USStates = new ArrayList();
+        USStates.Add(new USState("Washington", "WA"));
+        USStates.Add(new USState("West Virginia", "WV"));
+        USStates.Add(new USState("Wisconsin", "WI"));
+        USStates.Add(new USState("Wyoming", "WY"));
+        this.listBox1.DataSource = USStates;
+
+        this.comboBoxBase1.ListControl = this.listBox1;
+
+        this.Controls.Add(this.listBox1);
+        this.Controls.Add(this.comboBoxBase1);
+    }
+}
+
+// USState class
+public class USState
+{
+    public string LongName { get; set; }
+    public string Abbreviation { get; set; }
+
+    public USState(string longName, string abbreviation)
+    {
+        this.LongName = longName;
+        this.Abbreviation = abbreviation;
+    }
+}
 
 {% endhighlight %}
-
 {% highlight vb %}
 
 Imports Syncfusion.Windows.Forms.Tools
+Imports System.Collections
+Imports System.Drawing
+
+Public Partial Class Form1
+    Inherits System.Windows.Forms.Form
+
+    Private comboBoxBase1 As Syncfusion.Windows.Forms.Tools.ComboBoxBase
+    Private listBox1 As System.Windows.Forms.ListBox
+
+    Public Sub New()
+        InitializeComponent()
+
+        Me.comboBoxBase1 = New Syncfusion.Windows.Forms.Tools.ComboBoxBase()
+        Me.listBox1 = New ListBox()
+
+        Me.comboBoxBase1.Location = New Point(20, 20)
+        Me.comboBoxBase1.Size = New Size(120, 20)
+        Me.listBox1.DisplayMember = "LongName"
+        Me.listBox1.ValueMember = "Abbreviation"
+
+        ' Sets the data source.
+        Dim USStates As ArrayList = New ArrayList()
+        USStates.Add(New USState("Washington", "WA"))
+        USStates.Add(New USState("West Virginia", "WV"))
+        USStates.Add(New USState("Wisconsin", "WI"))
+        USStates.Add(New USState("Wyoming", "WY"))
+        Me.listBox1.DataSource = USStates
+
+        Me.comboBoxBase1.ListControl = Me.listBox1
+
+        Me.Controls.Add(Me.listBox1)
+        Me.Controls.Add(Me.comboBoxBase1)
+    End Sub
+End Class
+
+' USState class
+Public Class USState
+    Public Property LongName As String
+    Public Property Abbreviation As String
+
+    Public Sub New(ByVal longName As String, ByVal abbreviation As String)
+        Me.LongName = longName
+        Me.Abbreviation = abbreviation
+    End Sub
+End Class
 
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
 
-2. Create an instance of the ComboBoxBase control and ListBox.
-
-{% capture codesnippet2 %}
-{% tabs %}
-{% highlight c# %}
-
-private Syncfusion.Windows.Forms.Tools.ComboBoxBase comboBoxBase1;
-private System.Windows.Forms.ListBox listBox1;
-this.comboBoxBase1=new Syncfusion.Windows.Forms.Tools.ComboBoxBase();
-this.listBox1=new ListBox();
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-Private comboBoxBase1 As Syncfusion.Windows.Forms.Tools.ComboBoxBase
-Private listBox1 As System.Windows.Forms.ListBox
-Me.comboBoxBase1 = New Syncfusion.Windows.Forms.Tools.ComboBoxBase()
-Me.listBox1 = New ListBox()
-
-{% endhighlight %}
-{% endtabs %}
-{% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
- 
-3. Set the ListControl that will be used in the dropdown portion of ComboBoxBase and specify the size of ComboBoxBase. 
-
-{% capture codesnippet3 %}
-{% tabs %}
-{% highlight c# %}
-
-this.comboBoxBase1.ListControl=this.listBox1;
-this.comboBoxBase1.Size=new Size(120,20);
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-Me.comboBoxBase1.ListControl=Me.listBox1
-Me.comboBoxBase1.Size = New Size(120,20)
-
-{% endhighlight %}
-{% endtabs %}
-{% endcapture %}
-{{ codesnippet3 | OrderList_Indent_Level_1 }}
-
-4. Specify the datasource. 
-
-{% capture codesnippet4 %}
-{% tabs %}
-{% highlight c# %}
-
-// Sets the datasource.
-ArrayList USStates = new ArrayList(); 
-USStates.Add(new USState("Washington", "WA")); 
-USStates.Add(new USState("West Virginia", "WV")); 
-USStates.Add(new USState("Wisconsin", "WI")); 
-USStates.Add(new USState("Wyoming", "WY")); 
-ListBox1.DataSource = USStates; 
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-' Sets the datasource.
-Dim USStates As ArrayList = New ArrayList()
-USStates.Add(New USState("Washington", "WA"))
-USStates.Add(New USState("West Virginia", "WV"))
-USStates.Add(New USState("Wisconsin", "WI"))
-USStates.Add(New USState("Wyoming", "WY"))
-ListBox1.DataSource = USStates
-
-{% endhighlight %}
-{% endtabs %}
-{% endcapture %}
-{{ codesnippet4 | OrderList_Indent_Level_1 }}
-
-5. Finally add ComboBoxBase and Listbox to the Form.
-
-{% capture codesnippet5 %}
-{% tabs %}
-{% highlight c# %}
-
-this.Controls.Add(this.listBox1);
-this.Controls.Add(this.comboBoxBase1);
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-Me.Controls.Add(Me.listBox1)
-Me.Controls.Add(Me.comboBoxBase1)
-
-{% endhighlight %}
-{% endtabs %}
-{% endcapture %}
-{{ codesnippet5 | OrderList_Indent_Level_1 }}
-
-![Add ComboBoxBase and Listbox to Form](Overview_images/Overview_img319.png) 
-
-
-
-Refer [Creating ListControl-Derived Controls](https://help.syncfusion.com/windowsforms/comboboxbase/creating-listcontrol-derived-controls) about ListControl-Derived controls in detail.
+For more information, refer to the [Creating ListControl-Derived Controls](https://help.syncfusion.com/windowsforms/comboboxbase/creating-listcontrol-derived-controls) topic.
