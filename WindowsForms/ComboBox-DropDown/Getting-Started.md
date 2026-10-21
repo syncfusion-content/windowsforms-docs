@@ -9,50 +9,44 @@ documentation: ug
 
 # Getting Started with Windows Forms ComboDropDown
 
-ComboDropDown can host any Windows Forms control in its popup. This section shows how to host a `TreeView` control, which is the most common scenario.
-
-* [Assembly deployment](#assembly-deployment)
-* [Adding ComboDropDown through the designer](#adding-combodropdown-through-the-designer)
-* [Adding ComboDropDown through code](#adding-combodropdown-through-code)
+ComboDropDown can host any Windows Forms control in its drop-down area. This section explains how to get started with the WinForms `ComboDropDown` control by hosting a `TreeView` control in its drop-down, which is one of the most common use cases.
 
 ## Assembly deployment
 
-Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#combodropdown) section for the list of assemblies or the NuGet package details that must be referenced to use the control in any application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#combodropdown) section for the list of assemblies and NuGet packages required to use the ComboDropDown control.
 
 Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install NuGet packages in a Windows Forms application.
 
-To install via the NuGet Package Manager Console, run:
+To install the required NuGet package using the NuGet Package Manager Console, run the following command:
 
 ```
 Install-Package Syncfusion.Shared.Base
 ```
+## Adding ComboDropDown via Designer
 
-## Adding ComboDropDown through the designer
+1. Add the `Syncfusion.Shared.Base` assembly reference to the project.
 
-1. Add the **Syncfusion.Shared.Base** assembly references to the project.
-2. Create a new **Windows Forms Application** project in Visual Studio and drag a **ComboDropDown** control and a **TreeView** control from the Toolbox onto the form.
+2. Create a new Windows Forms application in Visual Studio. Then, drag a `ComboDropDown` control and a `TreeView` control from the Toolbox onto the form.
 
-    ![Create new application](Overview_images/Overview_img278.jpeg)
+![Create new application](Overview_images/Overview_img278.jpeg)
 
-    ![Drag and drop ComboDropDown and TreeView controls](Overview_images/Overview_img279.jpeg)
+![Drag and drop ComboDropDown and TreeView controls](Overview_images/Overview_img279.jpeg)
 
-3. Add a few `TreeNode` entries to the `TreeView` (for example, in the Properties window or in code), and set the `TreeView.HideSelection` property to `false` so the selected node remains highlighted when the TreeView loses focus.
+3. Add a few `TreeNode` entries to the `TreeView` control, either through the Properties window or in code. Set the `TreeView.HideSelection` property to `false` so that the selected node remains highlighted when the `TreeView` loses focus.
 
-    ![Set HideSelection property to false](Overview_images/Overview_img280.jpeg)
+![Set HideSelection property to false](Overview_images/Overview_img280.jpeg)
 
-4. Select the ComboDropDown on the form, and in the **Properties** window set the `PopupControl` property to the `TreeView` instance you added.
+4. Select the `ComboDropDown` control, and in the **Properties** window, set the `PopupControl` property to the `TreeView` control.
 
-    ![Set the PopupControl property to the TreeView](Overview_images/Overview_img281.jpeg)
+![Set the PopupControl property to the TreeView](Overview_images/Overview_img281.jpeg)
 
-> **NOTE:** To set up two-way interaction between the ComboDropDown and the TreeView (selecting a node updates the text and editing the text selects a node), see [Setting Interaction between ComboDropDown and TreeView](https://help.syncfusion.com/windowsforms/combobox-dropdown/event-handling#setting-interaction-between-combodrop-down-and-treeview) in the Event Handling topic.
+> **NOTE:** To enable two-way interaction between the `ComboDropDown` and the `TreeView` controls, where selecting a node updates the text and editing the text selects a node, refer to [Setting Interaction between ComboDropDown and TreeView](https://help.syncfusion.com/windowsforms/combobox-dropdown/event-handling#setting-interaction-between-combodrop-down-and-treeview).
 
 ## Adding ComboDropDown through code
 
 Add the ComboDropDown control programmatically by following the steps below.
 
-1. **Add reference and namespace**
-
-    Add the **Syncfusion.Shared.Base** assembly to the **References** folder through the Solution Explorer, and include the `Syncfusion.Windows.Forms.Tools` namespace in the code.
+1. Add the `Syncfusion.Shared.Base` assembly reference to the project and include the `Syncfusion.Windows.Forms.Tools` namespace in the code.
 
     {% capture codesnippet_ns %}
     {% tabs %}
@@ -70,7 +64,7 @@ Add the ComboDropDown control programmatically by following the steps below.
     {% endcapture %}
     {{ codesnippet_ns | OrderList_Indent_Level_1 }}
 
-2. **Create ComboDropDown instance**
+2. Create an instance of the `ComboDropDown` control.
 
     {% capture codesnippet_instance %}
     {% tabs %}
@@ -90,9 +84,7 @@ Add the ComboDropDown control programmatically by following the steps below.
     {% endcapture %}
     {{ codesnippet_instance | OrderList_Indent_Level_1 }}
 
-3. **Initialize TreeView and wire to ComboDropDown**
-
-    Initialize the `TreeView` with sample nodes, then assign it as the drop-down portion through the `PopupControl` property.
+3.  Initialize the `TreeView` control with sample nodes, and then assign it to the `PopupControl` property of the `ComboDropDown` control.
 
     {% capture codesnippet_wire %}
     {% tabs %}
@@ -124,9 +116,7 @@ Add the ComboDropDown control programmatically by following the steps below.
     {% endcapture %}
     {{ codesnippet_wire | OrderList_Indent_Level_1 }}
 
-4. **Add the controls to the form**
-
-    Add the `ComboDropDown` and the `TreeView` to the form's `Controls` collection.
+4.  Add the `ComboDropDown` and `TreeView` controls to the form's `Controls` collection.
 
     {% capture codesnippet_final %}
     {% tabs %}
@@ -146,9 +136,9 @@ Add the ComboDropDown control programmatically by following the steps below.
     {% endcapture %}
     {{ codesnippet_final | OrderList_Indent_Level_1 }}
 
-### Full code
+### Complete Code Example
 
-The following complete example combines all the steps above for quick reference.
+The following example combines all the preceding steps into a single runnable application.
 
 {% capture codesnippet_complete %}
 {% tabs %}
