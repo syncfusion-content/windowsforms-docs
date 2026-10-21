@@ -11,27 +11,23 @@ documentation: ug
 
 This section describes how to add the [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html) control to a Windows Forms application and provides an overview of its basic functionalities.
 
-* [Assembly deployment](#assembly-deployment)
-* [Adding TileLayout through the designer](#adding-tilelayout-through-the-designer)
-* [Adding TileLayout through code](#adding-tilelayout-through-code)
-
 ## Assembly deployment
 
-Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#tilelayout) section for the list of assemblies or the NuGet package details that must be referenced to use the control in any application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#tilelayout) section for the list of assemblies and NuGet packages required to use the Tile Layout control.
 
 Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install NuGet packages in a Windows Forms application.
 
-You can also add the required assemblies as references from the Package Manager Console using the following PowerShell command:
+To install the required NuGet package using the NuGet Package Manager Console, run the following command:
 
 ```powershell
 Install-Package Syncfusion.Tools.Windows
 ```
 
-## Adding TileLayout through the designer
+## Adding Tile Layout through the Designer
 
-1. Create a new **Windows Forms Application** project in Visual Studio.
+1. Create a new Windows Forms application project in Visual Studio.
 
-2. Drag the **TileLayout** control from the Toolbox onto the form. The following required assembly references will be added automatically:
+2. Drag the `TileLayout` control from the **Toolbox** onto the Windows Form designer. The following required assembly references are added automatically:
 
     * Syncfusion.Grid.Base.dll
     * Syncfusion.Grid.Windows.dll
@@ -42,21 +38,21 @@ Install-Package Syncfusion.Tools.Windows
 
     ![Search WindowsForms Tile Layout control in toolbox](getting-started_images/windowsforms-tile-layout-toolbox.png)
 
-3. Add a [LayoutGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.LayoutGroup.html) through the **Groups Collection** in the Smart Tags of the [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html).
+3. Add a [LayoutGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.LayoutGroup.html) through the **Groups Collection** option in the Smart Tag of the [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html) control.
 
     ![WindowsForms Tile Layout control added by designer](getting-started_images/windowsforms-tile-layout-added-by-designer.png)
 
-4. Add an [ImageStreamer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ImageStreamer.html) into the LayoutGroup through the [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.LayoutGroup.html#Syncfusion_Windows_Forms_Tools_LayoutGroup_Items) collection in the Properties window.
+4. Add an [ImageStreamer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ImageStreamer.html) item to the `LayoutGroup` through the [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.LayoutGroup.html#Syncfusion_Windows_Forms_Tools_LayoutGroup_Items) collection in the **Properties** window.
 
     ![Adding images streamer in WindowsForms Tile Layout](getting-started_images/windowsforms-tile-layout-adding-image-streamer.png)
 
-## Adding TileLayout through code
 
-Add the TileLayout control programmatically by following the steps below.
 
-1. **Add required assembly references**
+## Adding TileLayout via Code
 
-    Add the following assemblies to the **References** folder through the Solution Explorer:
+To add the `TileLayout` control programmatically, follow these steps:
+
+1. Add the required assembly references to the project.
 
     * Syncfusion.Grid.Base.dll
     * Syncfusion.Grid.Windows.dll
@@ -89,9 +85,7 @@ Add the TileLayout control programmatically by following the steps below.
     {% endcapture %}
     {{ codesnippet_ns | OrderList_Indent_Level_1 }}
 
-2. **Create the TileLayout instance inside Form1**
-
-    Create the [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html) control instance inside the `Form1` constructor and add it to the form.
+2. Create an instance of the `TileLayout` control in the `Form1` constructor and add it to the form.
 
     {% capture codesnippet_instance %}
     {% tabs %}
@@ -128,9 +122,7 @@ Add the TileLayout control programmatically by following the steps below.
     {% endcapture %}
     {{ codesnippet_instance | OrderList_Indent_Level_1 }}
 
-3. **Create and add LayoutGroups**
-
-    Create instances of [LayoutGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.LayoutGroup.html) and add them to the TileLayout.
+3. Create instances of `LayoutGroup` and add them to the `TileLayout` control.
 
     {% capture codesnippet_groups %}
     {% tabs %}
@@ -168,9 +160,7 @@ Add the TileLayout control programmatically by following the steps below.
 
     ![Adding group by code in WindowsForms Tile Layout](Getting-Started_images/windowsforms-tile-layout-group-by-code.png)
 
-4. **Add ImageStreamers to the LayoutGroups**
-
-    Create instances of [ImageStreamer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ImageStreamer.html) and add them to the [LayoutGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.LayoutGroup.html) through the `Items` collection.
+4. Create instances of [ImageStreamer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ImageStreamer.html) and add them to the [LayoutGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.LayoutGroup.html) through its `Items` collection.
 
     {% capture codesnippet_streamers %}
     {% tabs %}
