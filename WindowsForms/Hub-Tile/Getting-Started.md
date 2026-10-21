@@ -13,32 +13,19 @@ This section describes how to add the `HubTile` control to a Windows Forms appli
 
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#hubtile) section to get the list of assemblies or NuGet packages that need to be added as references in order to use the control in any application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#hubtile) section for the list of assemblies and NuGet packages required to use the Hub Tile control.
 
-You can find more details about installing the NuGet packages in a Windows Forms application in the following link:
+Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install NuGet packages in a Windows Forms application.
 
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
+To install the required NuGet package using the NuGet Package Manager Console, run the following command:
 
 ```powershell
 Install-Package Syncfusion.Tools.Windows
 ```
 
-## Create a simple application with HubTile
+## Adding the Control via Designer
 
-You can create the Windows Forms application with the HubTile control as follows:
-
-1. [Creating the project](#creating-the-project)
-2. [Adding the control via designer](#adding-control-via-designer)
-3. [Adding the control manually using code](#adding-control-manually-using-code)
-4. [Setting a background image](#tile-image)
-
-### Creating the project
-
-Create a new Windows Forms project in Visual Studio to host the HubTile with transition effects. Add the **HubTile** assembly references (see [Assembly deployment](#assembly-deployment)) before continuing.
-
-## Add the control via designer
-
-The HubTile control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The control is located under **Syncfusion** in the **Toolbox**. The following required assembly references will be added automatically:
+The Hub Tile control can be added to the application by dragging it from the Toolbox and dropping it onto the Windows Form designer. The control is available under the _Syncfusion_ category in the _Toolbox_. The following required assembly references are added automatically:
 
 * Syncfusion.Grid.Base.dll
 * Syncfusion.Grid.Windows.dll
@@ -47,15 +34,15 @@ The HubTile control can be added to the application by dragging it from the tool
 * Syncfusion.Tools.Base.dll
 * Syncfusion.Tools.Windows.dll
 
-![Search hubtile in tool box](Overview_images/GettingStarted-img1.png)
+![Search Hub Tile in Toolbox](Overview_images/GettingStarted-img1.png)
 
-![Drag and drop the hub tile control into form](Overview_images/GettingStarted-img4.png)
+![Drag and drop the Hub Tile control into form](Overview_images/GettingStarted-img4.png)
 
-## Add control manually using code
+## Adding the Control via Code
 
-To add the control manually in C#, follow the given steps:
+To add the `HubTile` control programmatically, follow these steps:
 
-**Step 1** - Add the following required assembly references to the project:
+1. Add the following required assembly references to the project.
 
         * Syncfusion.Grid.Base.dll
         * Syncfusion.Grid.Windows.dll
@@ -64,7 +51,7 @@ To add the control manually in C#, follow the given steps:
         * Syncfusion.Tools.Base.dll
         * Syncfusion.Tools.Windows.dll
 
-**Step 2** - Add the following namespaces:
+2. Include the required namespaces.
 
 {% tabs %}
 {% highlight C# %}
@@ -79,7 +66,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 {% endtabs %}
 
-**Step 3** - Create a `HubTile` instance and add it to the form.
+3. Create an instance of the `HubTile` control and add it to the form.
 
 {% tabs %}
 {% highlight C# %}
@@ -223,17 +210,17 @@ hubTile1.BackColor = Color.FromArgb(17, 158, 218)
 
 ## Set the tile image
 
-A background image can be assigned to `HubTile` either through the designer or programmatically.
+A background image can be assigned to Hub Tile either through the designer or programmatically.
 
 **Add background image through the designer**
 
 In the designer, use the `ImageSource` property exposed in the `HubTile` smart tag.
 
-![HubTile image added by designer](Overview_images/GettingStarted-img2.png)
+![Hub Tile image added by designer](Overview_images/GettingStarted-img2.png)
 
 **Add background image via code**
 
-Background image can be added to HubTile using `ImageSource` property in HubTile class.
+Background image can be added to Hub Tile using `ImageSource` property.
 
 {% tabs %}
 {% highlight C# %}
@@ -252,7 +239,7 @@ Me.hubTile1.ImageSource = ((System.Drawing.Image)(resources.GetObject("hubTile1.
 
 ## Transition effects
 
-The `HubTile` image transition can be performed at specified intervals and in one of the following directions:
+The Hub Tile image transition can be performed at specified intervals and in one of the following directions:
 
 - Bottom to Top
 - Top to Bottom
