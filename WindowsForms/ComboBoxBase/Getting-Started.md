@@ -9,48 +9,43 @@ documentation: ug
 
 # Getting Started with Windows Forms ComboBoxBase
 
-You can add ComboBoxBase to a form by dragging it from the Toolbox. ComboBoxBase is a base control that hosts a separate `ListControl` (typically a `ListBox`) for its popup portion.
+`ComboBoxBase` is a base control that hosts a separate `ListControl` (typically a `ListBox`) as its drop-down portion. This section explains how to get started with the WinForms `ComboBoxBase` control and its basic features.
 
-* [Assembly deployment](#assembly-deployment)
-* [Adding ComboBoxBase through the designer](#adding-comboboxbase-through-the-designer)
-* [Adding ComboBoxBase through code](#adding-comboboxbase-through-code)
+## Assembly Deployment
 
-## Assembly deployment
-
-Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#comboboxbase) section for the list of assemblies or the NuGet package details that must be referenced to use the control in any application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#comboboxbase) section for the list of assemblies and NuGet packages required to use the `ComboBoxBase` control.
 
 Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install NuGet packages in a Windows Forms application.
 
-To install via the NuGet Package Manager Console, run:
+To install the required NuGet package using the NuGet Package Manager Console, run the following command:
 
 ```
 Install-Package Syncfusion.Shared.Base
 ```
 
-## Adding ComboBoxBase through the designer
+## Adding ComboBoxBase via Designer
 
-1. Add the **Syncfusion.Shared.Base** assembly references to the project.
-2. Drag the **ComboBoxBase** control from the Toolbox onto the form.
+1. Add the `Syncfusion.Shared.Base` assembly reference to the project.
+
+2. Drag the `ComboBoxBase` control from the _Toolbox_ onto the Windows Form designer.
 
     ![Drag and Drop ComboBoxBase control from the Toolbox](Overview_images/Overview_img315.png)
 
     ![ComboBoxBase in form](Overview_images/Overview_img316.png)
 
-3. To add data for the popup, drag a `ListBox` (or another `ListControl`-derived control) onto the form.
+3. To provide data for the drop-down list, drag a `ListBox` control (or another `ListControl`-derived control) onto the form.
 
     ![Add a ListBox control](Overview_images/Overview_img318.png)
 
-4. Select the ComboBoxBase on the form, and in the **Properties** window set the `ListControl` property to the `ListBox` you added.
+4. Select the `ComboBoxBase` control, and in the _Properties_ window, set the `ListControl` property to the `ListBox` control that you added.
 
     ![Assign the ListBox as the ListControl for ComboBoxBase in the Properties window](Overview_images/Overview_img317.png)
 
-## Adding ComboBoxBase through code
+## Adding ComboBoxBase via Code
 
-Add the ComboBoxBase control programmatically by following the steps below.
+To add the `ComboBoxBase` control programmatically, follow these steps:
 
-1. **Add the required assembly and namespace.**
-
-    Add the **Syncfusion.Shared.Base** assembly to the **References** folder through the Solution Explorer, and include the following namespace in the code.
+1. Add the `Syncfusion.Shared.Base` assembly reference to the project and include the required namespace in the code.
 
     {% capture codesnippet1 %}
     {% tabs %}
@@ -68,7 +63,7 @@ Add the ComboBoxBase control programmatically by following the steps below.
     {% endcapture %}
     {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2. **Create instances of the ComboBoxBase control and ListBox.**
+2. Create instances of the `ComboBoxBase` and `ListBox` controls.
 
     {% capture codesnippet2 %}
     {% tabs %}
@@ -94,7 +89,7 @@ Add the ComboBoxBase control programmatically by following the steps below.
     {% endcapture %}
     {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-3. **Set the ListControl used in the dropdown portion of ComboBoxBase and specify the size.**
+3. Assign the `ListBox` control to the `ListControl` property of the `ComboBoxBase` control and set the required size.
 
     {% capture codesnippet3 %}
     {% tabs %}
@@ -114,7 +109,7 @@ Add the ComboBoxBase control programmatically by following the steps below.
     {% endcapture %}
     {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-4. **Specify the data source.**
+4. Specify the data source for the ListBox control.
 
     {% capture codesnippet4 %}
     {% tabs %}
@@ -144,7 +139,7 @@ Add the ComboBoxBase control programmatically by following the steps below.
     {% endcapture %}
     {{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-5. **Add the ComboBoxBase and ListBox to the form.**
+5. Add the `ComboBoxBase` and `ListBox` controls to the form.
 
     {% capture codesnippet5 %}
     {% tabs %}
@@ -166,9 +161,9 @@ Add the ComboBoxBase control programmatically by following the steps below.
 
     ![ComboBoxBase and ListBox displayed on the form](Overview_images/Overview_img319.png)
 
-### Full code
+### Complete Code Example
 
-The following complete example combines all the steps above for quick reference.
+The following example combines all the preceding steps into a single runnable application.
 
 {% capture codesnippet6 %}
 {% tabs %}
@@ -278,4 +273,4 @@ End Class
 {% endcapture %}
 {{ codesnippet6 | OrderList_Indent_Level_1 }}
 
-Refer to the [Creating ListControl-Derived Controls](https://help.syncfusion.com/windowsforms/comboboxbase/creating-listcontrol-derived-controls) topic for more information.
+For more information, refer to the [Creating ListControl-Derived Controls](https://help.syncfusion.com/windowsforms/comboboxbase/creating-listcontrol-derived-controls) topic.
