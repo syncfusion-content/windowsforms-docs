@@ -9,84 +9,113 @@ documentation: ug
 
 # Getting Started with Windows Forms MessageBox
 
-This section explains how to configure [MessageBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html) control in a Windows Forms application.
+This section explains how to get started with the [MessageBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html) control in a Windows Forms application. `MessageBoxAdv` is a static helper class that displays a styled message box from code and does not appear as a draggable item in the Visual Studio Toolbox.
 
-## Assembly deployment
+## Assembly Deployment
 
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#messageboxadv) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#MessageBox) section for the list of assemblies and NuGet packages required to use the MessageBox control.
 
-Please find more details regarding how to install the nuget packages in windows form application in the below link:
- 
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
+Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install NuGet packages in a Windows Forms application.
 
-## Creating simple application with MessageBox
+To install the required NuGet package using the NuGet Package Manager Console, run the following command:
 
-You can create the Windows Forms application with MessageBox as follows:
+```
+Install-Package Syncfusion.Shared.Base
+```
 
-1. [Creating the project](#creating-the-project)
-2. [Configure MessageBox](#configure-messageboxadv)
+## Adding MessageBox via Designer
 
-## Creating the project
+`MessageBoxAdv` is a static helper class and is not available in the Visual Studio **Toolbox**. The designer is used only to add a trigger control (for example, a **Button**) and generate its `Click` event handler. The `MessageBoxAdv.Show` method must be called in code.
 
-Create a new Windows Forms project in the Visual Studio to display the `MessageBoxAdv`.
+The following dependent assembly is required to use `MessageBoxAdv`:
 
-## Configure MessageBox
+* Syncfusion.Shared.Base
 
-To add control manually in C#, follow the given steps:
+1. Create a new Windows Forms project in Visual Studio.
 
-**Step1:** Add the following required assembly references to the project:
+2. Open the **Toolbox** and drag a **Button** control (for example, named `btnShow`) onto the form.
 
-   * Syncfusion.Shared.Base.dll
-
-**Step2:** Include the namespaces **Syncfusion.Windows.Forms**.
+3. Double-click the button to generate its `Click` event handler, and then add the following code to display a MessageBox.
 
 {% tabs %}
-
 {% highlight C# %}
 
-using Syncfusion.Windows.Forms;
+private void btnShow_Click(object sender, EventArgs e)
+{
+    // Display the MessageBox using MessageBoxAdv.Show.
+    MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Metro;
+    MessageBoxAdv.Show(this, "Save changes?", "File Modified", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+}
 
-{% endhighlight  %}
-
+{% endhighlight %}
 {% highlight VB %}
 
-Imports Syncfusion.Windows.Forms
+Private Sub btnShow_Click(sender As Object, e As EventArgs)
+    ' Display the MessageBox using MessageBoxAdv.Show.
+    MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Metro
+    MessageBoxAdv.Show(Me, "Save changes?", "File Modified", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+End Sub
 
-{% endhighlight  %}
-
+{% endhighlight %}
 {% endtabs %}
 
-**Step3:** Displays the `MessageBoxAdv` by using [Show](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html#Syncfusion_Windows_Forms_MessageBoxAdv_Show_System_String_) function.
+## Adding MessageBox via Code
+
+To use MessageBox in code, follow these steps:
+
+1. Add the required assembly reference to the project:
+
+    * Syncfusion.Shared.Base
+
+2. Include the required namespace (`Syncfusion.Windows.Forms`), and then call the **Show** method from the form constructor, as shown below.
 
 {% tabs %}
-
 {% highlight C# %}
 
-// Display the MessageBox using [Show](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html#Syncfusion_Windows_Forms_MessageBoxAdv_Show_System_String_) function.
+using System.Windows.Forms;
+using Syncfusion.Windows.Forms;
 
-MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Metro;
-
-MessageBoxAdv.Show(this,"Save changes?", "File Modified", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+namespace MessageBoxAdvDemo
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+            // Display the MessageBox using MessageBoxAdv.Show.
+            MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Metro;
+            MessageBoxAdv.Show(this, "Save changes?", "File Modified", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+        }
+    }
+}
 
 {% endhighlight %}
-
 {% highlight VB %}
 
-' Display the MessageBox using [Show](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html#Syncfusion_Windows_Forms_MessageBoxAdv_Show_System_String_) function.
+Imports System.Windows.Forms
+Imports Syncfusion.Windows.Forms
 
-MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Metro
+Public Class Form1
+    Inherits Form
 
-MessageBoxAdv.Show(this,"Save changes?", "File Modified", MessageBoxButtons.YesNo,MessageBoxIcon.Question)
+    Public Sub New()
+        InitializeComponent()
+        ' Display the MessageBox using MessageBoxAdv.Show.
+        MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Metro
+        MessageBoxAdv.Show(Me, "Save changes?", "File Modified", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+    End Sub
+End Class
 
 {% endhighlight %}
-
 {% endtabs %}
 
 ![Windows Forms MessageBox](MessageBoxAdv_images/MessageBoxAdv_img32.png)
 
 ## Appearance of MessageBox
 
-The appearance of the MessageBox can be customized by using the following properties of the MetroStyleColorTable.
+The appearance of MessageBox can be customized using the following properties of the `MetroStyleColorTable`. To apply the custom color settings, set the `MessageBoxAdv.MessageBoxStyle` property to a Metro-compatible style, such as `Style.Metro`.
+
+### Button colors
 
 * AbortButtonBackColor
 * CancelButtonBackColor
@@ -95,6 +124,9 @@ The appearance of the MessageBox can be customized by using the following proper
 * OKButtonBackColor
 * RetryButtonBackColor
 * YesButtonBackColor
+
+### Caption and background
+
 * CaptionBarColor
 * CaptionForeColor
 * ForeColor
@@ -102,41 +134,45 @@ The appearance of the MessageBox can be customized by using the following proper
 * BorderColor
 
 {% tabs %}
-
 {% highlight C# %}
 
-//MetroColor table for MessageBox
+using System.Drawing;
+using Syncfusion.Windows.Forms;
+
+// MetroStyleColorTable for MessageBoxAdv
 MetroStyleColorTable metroColorTable = new MetroStyleColorTable();
-//Sets the NoButton backColor
+// Sets the NoButton BackColor
 metroColorTable.NoButtonBackColor = Color.Red;
-//Sets the YesButton backColor
+// Sets the YesButton BackColor
 metroColorTable.YesButtonBackColor = Color.SkyBlue;
-//Sets the OK button backcolor
+// Sets the OK Button BackColor
 metroColorTable.OKButtonBackColor = Color.Green;
-//Applies the MetroStyleColorTable to MessageBoxAdv
+// Applies the MetroStyleColorTable to MessageBoxAdv
 MessageBoxAdv.MetroColorTable = metroColorTable;
-//Sets the MessageBoxStyle as Metro
+// Sets the MessageBoxStyle as Metro
 MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Metro;
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-'MetroColor table for MessageBox
+Imports System.Drawing
+Imports Syncfusion.Windows.Forms
+
+' MetroStyleColorTable for MessageBoxAdv
 Dim metroColorTable As New MetroStyleColorTable()
-'Sets the NoButton backColor
+' Sets the NoButton BackColor
 metroColorTable.NoButtonBackColor = Color.Red
-'Sets the YesButton backColor
+' Sets the YesButton BackColor
 metroColorTable.YesButtonBackColor = Color.SkyBlue
-'Sets the OK button backcolor
+' Sets the OK Button BackColor
 metroColorTable.OKButtonBackColor = Color.Green
-'Applies the MetroStyleColorTable to MessageBoxAdv
+' Applies the MetroStyleColorTable to MessageBoxAdv
 MessageBoxAdv.MetroColorTable = metroColorTable
-'Sets the MessageBoxStyle as Metro
+' Sets the MessageBoxStyle as Metro
 MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Metro
 
 {% endhighlight %}
-
 {% endtabs %}
 
-![WindowsForms MessageBox Appearance](MessageBoxAdv_images/MessageBoxAdv_appearance.png) 
+![Windows Forms MessageBox Appearance](MessageBoxAdv_images/MessageBoxAdv_appearance.png) 
