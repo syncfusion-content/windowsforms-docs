@@ -9,45 +9,43 @@ documentation: ug
 
 # Getting Started with Windows Forms Tree Navigator
 
-This section explains how to use the TreeNavigator control to build a navigable, expandable tree interface in a Windows Forms application.
+This section explains how to get started with the WinForms Tree Navigator control and create a navigable, expandable tree interface.
 
-## Assembly deployment
+## Assembly Deployment
 
-Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#treenavigator) section for the list of assemblies or the NuGet package details that must be referenced to use the control in any application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#treenavigator) section for the list of assemblies and NuGet packages required to use the `TreeNavigator` control.
 
 Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install NuGet packages in a Windows Forms application.
 
-To install via the NuGet Package Manager Console, run:
+To install the required NuGet package using the NuGet Package Manager Console, run the following command:
 
 ```powershell
 Install-Package Syncfusion.Tools.Windows
 ```
 
-## Adding TreeNavigator via Designer
+## Adding Tree Navigator via Designer
 
-1. The following dependent assemblies are added to the project automatically when you drag the control:
-
-    * Syncfusion.Tools.Windows
-    * Syncfusion.Shared.Base
-
-2. Open the **Toolbox** in Visual Studio, locate the **Syncfusion** category, and drag **TreeNavigator** onto the form.
-
+1. Open the **Toolbox** in Visual Studio, locate the **Syncfusion** category, and drag the `TreeNavigator` control onto the Windows Form designer.
+   
     ![Drag and drop the TreeNavigator control into a WinForms application](Getting-Started_images/DragDrop.png)
 
-3. The control is added to the form with the required assemblies referenced.
+2. The following dependent assemblies are added automatically when the control is dragged onto the form:
+
+   * Syncfusion.Tools.Windows
+   * Syncfusion.Shared.Base
 
     ![TreeNavigator added to the form](Getting-Started_images/AfterDragDrop.png)
 
-## Adding TreeNavigator via code
+## Adding Tree Navigator via Code
 
-To add the control manually, follow these steps:
+To add the Tree Navigator control programmatically, follow these steps:
 
-1. Add the following required assembly references to the project ([Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#treenavigator)):
+1. Add the following required assembly references to the project:
 
     * Syncfusion.Tools.Windows
     * Syncfusion.Shared.Base
 
-2. Add the required namespace (`Syncfusion.Windows.Forms.Tools`), create the `TreeNavigator` control instance, initialize it, and add it to the form.
+2. Include the required namespace (`Syncfusion.Windows.Forms.Tools`), create an instance of the `TreeNavigator` control, initialize it, and add it to the form.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -102,30 +100,30 @@ End Class
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-## Adding TreeMenuItem to the control
+## Adding TreeMenuItem to the Control
 
-The TreeNavigator is populated with a collection of `TreeMenuItem` objects using the `Items` property. Items can be added in two ways:
+The Tree Navigator control is populated with a collection of `TreeMenuItem` objects through the `Items` property. Items can be added in the following ways:
 
 * Adding items through the designer
 * Adding items through code
 
-### Adding items through the designer
+### Adding Items through the Designer
 
-1. After dragging the TreeNavigator onto the form, click the **Smart Tag** button at the top-right corner of the control.
+1. After dragging the `TreeNavigator` control onto the form, click the **Smart Tag** button in the upper-right corner of the control.
 
-    ![Click the Smart Tag button on the TreeNavigator](Getting-Started_images/ThroughDesigner.png)
+   ![Click the Smart Tag button on the Tree Navigator](Getting-Started_images/ThroughDesigner.png)
 
-2. Select the **Items** property from the listed properties to open the collection editor, then add the items.
+2. Select the **Items** property to open the collection editor, and then add the required items.
 
-    ![Adding items through the Items collection editor](Getting-Started_images/ThroughDesigner2.png)
+   ![Adding items through the Items collection editor](Getting-Started_images/ThroughDesigner2.png)
 
-3. The TreeMenuItems are added to the TreeNavigator.
+3. The `TreeMenuItem` objects are added to the `TreeNavigator` control.
 
-    ![TreeNavigator output with TreeMenuItems](Getting-Started_images/Adding_TreeMenuitems.png)
+   ![TreeNavigator output with TreeMenuItems](Getting-Started_images/Adding_TreeMenuitems.png)
 
-### Adding items through code
+### Adding Items through Code
 
-The following code example shows how to add TreeMenuItems to the TreeNavigator.
+The following code example demonstrates how to add `TreeMenuItem` objects to the Tree Navigator control.
 
 {% capture codesnippet2 %}
 {% tabs %}
