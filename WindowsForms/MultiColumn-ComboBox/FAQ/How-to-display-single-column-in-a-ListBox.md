@@ -1,9 +1,9 @@
 ---
 layout: post
 title: How-to-display-single-column-in-a-ListBox | WindowsForms | Syncfusion
-description: how to display single column in a listbox
-platform: WindowsForms
-control: Editors Package
+description: Learn how to display a single column in a ListBox control and customize the data presentation in Windows Forms.
+platform: windowsforms
+control: Multicolumn ComboBox
 documentation: ug
 ---
 

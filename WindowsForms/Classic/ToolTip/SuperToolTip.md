@@ -2,7 +2,7 @@
 layout: post
 title: SuperToolTip in Windows Forms xptoolbar control | Syncfusion
 description: Learn about SuperToolTip support in Syncfusion Windows Forms SuperToolTip(Classic) control and more details.
-platform: WindowsForms
+platform: windowsforms
 control: RibbonControlAdv
 documentation: ug
 ---

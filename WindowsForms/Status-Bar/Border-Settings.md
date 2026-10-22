@@ -2,7 +2,7 @@
 layout: post
 title: Border Settings in Windows Forms Status Bar | Syncfusion®
 description: Border settings in Windows Forms Status Bar customize border appearance, improving visual structure and content separation.
-platform: WindowsForms
+platform: windowsforms
 control: Status Bar
 documentation: ug
 ---

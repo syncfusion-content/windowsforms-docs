@@ -2,7 +2,7 @@
 layout: post
 title: How to download Windows Forms web installer | Syncfusion®
 description: Learn to download Syncfusion® Windows Forms web installer from Syncfusion® website for trial or licensed.
-platform: WindowsForms
+platform: windowsforms
 control: Installation and Deployment
 documentation: ug
 
@@ -35,7 +35,7 @@ Our 30-day trial can be downloaded in two ways.
    
 3. With a trial license, only the latest version's trial installer can be downloaded.
 4. After downloading, the Syncfusion Windows Forms web installer can be unlocked using either the trial unlock key or your Syncfusion registered login credential. For more information on generating an unlock key, see [this](https://support.syncfusion.com/kb/article/7053/how-to-generate-unlock-key-for-essentials-studio-products) article.
-5. Before the trial expires, you can download the trial installer at any time from your registered account's [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page (as shown in the screenshot below).
+5. Before the trial expires, you can download the trial installer at any time from your registered account's [Trials & Downloads](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fmanage-trials%2fdownloads) page (as shown in the screenshot below).
 6. Click the **Download** (element 1 in the screenshot below) button to get the Syncfusion Essential Studio Windows Forms web installer.
  
    ![Trial and downloads of Syncfusion Essential Studio](images/trial-download.png)
@@ -44,9 +44,9 @@ Our 30-day trial can be downloaded in two ways.
 
 You should initiate an evaluation if you have already obtained our components through [NuGet.org](https://www.nuget.org/packages?q=syncfusion).
 
-1. Start your 30-day free trial for Windows Forms from the [Start Trial](https://www.syncfusion.com/account/manage-trials/start-trials) page in your account.
+1. Start your 30-day free trial for Windows Forms from the [Start Trial](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fmanage-trials%2fstart-trials) page in your account.
 
-   N> You can generate the license key for your active trial products from the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page. This license key is mandatory to use our trial products in your application. To learn more about license keys, refer to this [help topic](https://help.syncfusion.com/windowsforms/licensing/overview). 
+   N> You can generate the license key for your active trial products from the [Trials & Downloads](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fmanage-trials%2fdownloads) page. This license key is mandatory to use our trial products in your application. To learn more about license keys, refer to this [help topic](https://help.syncfusion.com/windowsforms/licensing/overview). 
 	
    ![Trial and downloads of Syncfusion Essential Studio](images/start-trial-download.png)
    
@@ -55,25 +55,25 @@ You should initiate an evaluation if you have already obtained our components th
 
    N> If you've already used the trial products and they haven't expired, you won't be able to start the trial for the same product again.
 
-4. After you've started the trial, go to the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page to get the latest version trial installer. You can generate the [unlock key](https://support.syncfusion.com/kb/article/7053/how-to-generate-unlock-key-for-essentials-studio-products) and [license key](https://help.syncfusion.com/windowsforms/licensing/how-to-generate) here at any time before the trial period expires (as shown in the screenshot below).
+4. After you've started the trial, go to the [Trials & Downloads](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fmanage-trials%2fdownloads) page to get the latest version trial installer. You can generate the [unlock key](https://support.syncfusion.com/kb/article/7053/how-to-generate-unlock-key-for-essentials-studio-products) and [license key](https://help.syncfusion.com/windowsforms/licensing/how-to-generate) here at any time before the trial period expires (as shown in the screenshot below).
 
    ![License and downloads of Syncfusion Essential Studio](images/start-trial-download-installer.png)
 
-5. You can find your current active trial products on the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page.
+5. You can find your current active trial products on the [Trials & Downloads](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fmanage-trials%2fdownloads) page.
    
 
 ## Download the license version
 
-1. Syncfusion licensed products are available on the [License & Downloads](https://www.syncfusion.com/account/downloads) page under your registered Syncfusion account.
+1. Syncfusion licensed products are available on the [License & Downloads](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fdownloads) page under your registered Syncfusion account.
 2. You can view all licenses (both active and expired) associated with your account.
 3. Click the **Download** (element 1 in the screenshot below) button to download the Windows Forms web installer.
 4. The most recent version of the installer will be downloaded from this page.
-5. To download older version installers, go to [Downloads Older Versions](https://www.syncfusion.com/account/downloads/studio) (element 2 in the screenshot below).
+5. To download older version installers, go to [Downloads Older Versions](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fdownloads%2fstudio) (element 2 in the screenshot below).
 6. You can download other platform or add-on installers by going to **More Downloads Options** (element 3 in the screenshot below).
 
    ![License and downloads of Syncfusion Essential Studio](images/license-download.png)
  
-7. Before the license expires, you can download the installer at any time from your registered account's [License & Downloads](https://www.syncfusion.com/account/downloads) page (see the screenshot below).
+7. Before the license expires, you can download the installer at any time from your registered account's [License & Downloads](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fdownloads) page (see the screenshot below).
    
    ![License and downloads of Syncfusion Essential Studio](images/start-trial-download-web-installer.png)
    

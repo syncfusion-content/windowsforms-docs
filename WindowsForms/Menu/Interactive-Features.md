@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
 title: Interactive features in Windows Forms Menu | Syncfusion
 description: Interactive features support super tooltips, tooltip customization, and context menus for menu items and toolbars.
-platform: WindowsForms
+platform: windowsforms
 control: MainFrameBarManager 
 documentation: ug
 ---

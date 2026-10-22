@@ -5,7 +5,6 @@ description: Table field list in the Windows Forms Pivot Chart enables interacti
 platform: windowsforms
 control: PivotChart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Table Field List in Windows Forms Pivot Chart

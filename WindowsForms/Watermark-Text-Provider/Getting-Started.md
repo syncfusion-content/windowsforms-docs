@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Windows Forms BannerTextProvider | Syncfusion®
 description: Learn how to get started with Windows Forms BannerTextProvider, including setup, banner text features, examples, and customization options.
-platform: WindowsForms
+platform: windowsforms
 control: BannerTextProvider
 documentation: ug
 ---

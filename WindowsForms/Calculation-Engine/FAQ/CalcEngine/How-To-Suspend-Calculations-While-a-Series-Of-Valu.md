@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-To-Suspend-Calculations-While-a-Series-Of-Valu | Windows Forms | Syncfusion
-description: how to suspend calculations while a series of values are updated?
+title: Suspend Calculations During Value Updates | Windows Forms | Syncfusion
+description: Learn how to suspend calculations while a series of values are updated in Syncfusion's Windows Forms CalcEngine using the CalculatingSuspended property.
 platform: windowsforms
 control: Calculate
 documentation: ug
 ---
 
-# How To Suspend Calculations While a Series Of Values Are Updated?
+# How to Suspend Calculations While a Series of Values Are Updated?
 
 You can use the property CalcEngine.CalculatingSuspended to control the calculations that will be performed as values change in your ICalcData object.
 
