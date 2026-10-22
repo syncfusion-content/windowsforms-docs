@@ -3,50 +3,33 @@ layout: post
 title: Getting Started with Windows Forms RadioButtonAdv | Syncfusion®
 description: Learn how to get started with the Syncfusion® Windows Forms RadioButtonAdv control. Explore setup, features, examples, and customization options.
 platform: WindowsForms
-control: RadioButtonAdv
+control: Radio Button
 documentation: ug
 ---
 
-# Getting Started with Windows Forms RadioButtonAdv
+# Getting Started with Windows Forms Radio Button
 
-This section describes how to create a new Windows Forms project in Visual Studio and add the **RadioButtonAdv** control with its functionalities.
+This section explains how to get started with the Windows Forms `RadioButtonAdv` control and its basic features.
 
-## Assembly deployment
+## Assembly Deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#radiobuttonadv) section to get the list of assemblies or NuGet package details that need to be added as a reference to use the control in any application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#radiobuttonadv) section for the list of assemblies and NuGet packages required to use the `RadioButtonAdv` control.
 
-To install it from the Package Manager Console, run:
+Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install NuGet packages in a Windows Forms application.
+
+To install the required NuGet package using the NuGet Package Manager Console, run the following command:
 
 ```powershell
 Install-Package Syncfusion.Tools.Windows
 ```
 
-## Adding a RadioButtonAdv control through designer
+## Adding Radio Button via Designer
 
-The **RadioButtonAdv** control can be added through the designer by following these steps:
+To add the `RadioButtonAdv` control using the designer, follow these steps:
 
-**Step 1**: Create a new Windows Forms application in Visual Studio.
+1. Create a new Windows Forms application in Visual Studio.
 
-**Step 2**: The **RadioButtonAdv** control can be added to an application by dragging it from the toolbox to the design view. The following dependent assemblies will be added automatically:
-
-* Syncfusion.Grid.Base
-* Syncfusion.Grid.Windows
-* Syncfusion.Shared.Base
-* Syncfusion.Shared.Windows
-* Syncfusion.Tools.Base
-* Syncfusion.Tools.Windows
-
-![Windows forms RadioButtonAdv drag and drop from toolbox](Overview_images/RadioButtonAdv_toolbox.jpeg)
-
-**Step 3**: Set the desired properties for the **RadioButtonAdv** control through the **Properties** dialog. Common properties include `Text`, `Checked`, `RadioButtonAlignment`, `Style`, `ForeColor`, `BackColor`, and `Font`.
-
-## Adding a RadioButtonAdv control through code
-
-The RadioButtonAdv control can be created programmatically as detailed below:
-
-**Step 1**: Create a C# or VB application through Visual Studio.
-
-**Step 2**: Add the following assembly references to the project:
+2. Drag the `RadioButtonAdv` control from the _Toolbox_ and drop it onto the Windows Form designer. The following dependent assemblies are added automatically:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -55,7 +38,26 @@ The RadioButtonAdv control can be created programmatically as detailed below:
 * Syncfusion.Tools.Base
 * Syncfusion.Tools.Windows
 
-**Step 3**: Include the required namespace.
+![Windows Forms RadioButton drag and drop from toolbox](Overview_images/RadioButtonAdv_toolbox.jpeg)
+
+3. Configure the desired properties of the Radio Button control in the _Properties_ window. Commonly used properties include `Text`, `Checked`, `RadioButtonAlignment`, `Style`, `ForeColor`, `BackColor`, and `Font`.
+
+## Adding Radio Button via Code
+
+To create a Radio Button control programmatically, follow these steps:
+
+1. Create a C# or VB.NET Windows Forms application in Visual Studio.
+
+2. Add the following assembly references to the project:
+
+* Syncfusion.Grid.Base
+* Syncfusion.Grid.Windows
+* Syncfusion.Shared.Base
+* Syncfusion.Shared.Windows
+* Syncfusion.Tools.Base
+* Syncfusion.Tools.Windows
+
+3. Include the required namespace.
 
 {% tabs %}
 {% highlight c# %}
@@ -71,7 +73,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 {% endtabs %}
 
-**Step 4**: Declare and instantiate the **RadioButtonAdv** control as a form-level field.
+4. Declare and create an instance of the `RadioButtonAdv` control as a form-level field.
 
 {% tabs %}
 {% highlight c# %}
@@ -95,7 +97,7 @@ Me.radioButtonAdv1.Size = New System.Drawing.Size(150, 20)
 {% endhighlight %}
 {% endtabs %}
 
-**Step 5**: Set the desired properties for the **RadioButtonAdv** control through code.
+5. Configure the required properties of the `RadioButtonAdv` control in code.
 
 {% tabs %}
 {% highlight c# %}
@@ -119,7 +121,7 @@ Me.radioButtonAdv1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25F,
 {% endhighlight %}
 {% endtabs %}
 
-**Step 6**: Add the **RadioButtonAdv** control to the form.
+6. Add the `RadioButtonAdv` control to the form.
 
 {% tabs %}
 {% highlight c# %}
@@ -137,7 +139,7 @@ Me.Controls.Add(Me.radioButtonAdv1)
 {% endhighlight %}
 {% endtabs %}
 
-The following complete code sample demonstrates adding two **RadioButtonAdv** controls to the form, grouped so that selecting one unselects the other.
+The following example demonstrates how to add two Radio Button controls to a form and group them so that selecting one automatically clears the selection of the other.
 
 {% tabs %}
 {% highlight c# %}
