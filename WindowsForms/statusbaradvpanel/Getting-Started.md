@@ -9,29 +9,23 @@ documentation: ug
 
 # Getting Started with Windows Forms StatusBarAdvPanel
 
-* [Assembly deployment](#assembly-deployment)
-* [Through designer](#through-designer)
-* [Through code](#through-code)
+This section explains how to get started with the Windows Forms `StatusBarAdvPanel` control using the designer and code.
 
-This section describes a step-by-step procedure to design the StatusBarAdvPanel control through the designer and programmatically.
+## Assembly Deployment
 
-## Assembly deployment
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#statusbar) section for the list of assemblies and NuGet packages required to use the `StatusBarAdvPanel` control.
 
-Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#statusbar) section to get the list of assemblies or NuGet packages that need to be added as references to use the control in any application.
+Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install NuGet packages in a Windows Forms application.
 
-You can find more details about installing the NuGet packages in a Windows Forms application at the following link:
-
-[How to install NuGet packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
-
-To install via the NuGet Package Manager Console, run:
+To install the required NuGet package using the NuGet Package Manager Console, run the following command:
 
 ```powershell
 Install-Package Syncfusion.Tools.Windows
 ```
 
-## Through designer
+## Adding StatusBarAdvPanel via Designer
 
-The StatusBarAdvPanel control provides full support for the Windows Forms designer. Dragging the control from the toolbox onto the form automatically adds the following required assembly references to the project:
+The `StatusBarAdvPanel` control provides support for the Windows Forms designer. When the control is added through the designer, the following required assembly references are added automatically:
 
 * Syncfusion.Grid.Base.dll
 * Syncfusion.Grid.Windows.dll
@@ -40,24 +34,28 @@ The StatusBarAdvPanel control provides full support for the Windows Forms design
 * Syncfusion.Tools.Base.dll
 * Syncfusion.Tools.Windows.dll
 
-To create the StatusBarAdvPanel control through the designer,
+To create a `StatusBarAdvPanel` using the designer:
 
-* Drag-and-drop a StatusBarAdvPanel control from the toolbox onto the form.
+1. Drag and drop a `StatusBarAdvPanel` control onto the form.
 
-  ![Create StatusBarAdvPanel through designer in WindowsForms application](overview_images/windowsforms-statusbaradvpanel-designer.jpeg)
+   ![Create StatusBarAdvPanel through designer in Windows Forms application](overview_images/windowsforms-statusbaradvpanel-designer.jpeg)
 
-* Set the desired background using the `BackgroundColor` property in the properties window.
-* Set the `PanelType` property for the control.
-* Set a custom border color by configuring the `BorderColor` property.
-* Build and run the application.
+2. Configure the desired background using the `BackgroundColor` property in the **Properties** window.
+
+3. Set the `PanelType` property to the required value.
+
+4. Customize the border appearance by setting the `BorderColor` property.
+
+5. Build and run the application.
 
   ![Run the application in WindowsForms StatusBarAdvPanel](overview_images/windowsforms-statusbaradvpanel-run-application.jpeg) 
   
-## Through code
+## Adding StatusBarAdvPanel via Code
 
-To create the StatusBarAdvPanel control programmatically,
+To create a `StatusBarAdvPanel` control programmatically:
 
-1. Create a new Visual C# or Visual Basic .NET application in Visual Studio.
+1. Create a new C# or VB.NET Windows Forms application in Visual Studio.
+
 2. Add the following required assembly references to the project:
 
    * Syncfusion.Grid.Base.dll
@@ -67,8 +65,9 @@ To create the StatusBarAdvPanel control programmatically,
    * Syncfusion.Tools.Base.dll
    * Syncfusion.Tools.Windows.dll
 
-   Refer to the [Assembly deployment](#assembly-deployment) section for details.
-3. Add the namespace shown below to your form.
+   Refer to the [Assembly deployment](#assembly-deployment) section for more information.
+   
+3. Include the required namespace in the form.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -87,7 +86,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4. Declare the StatusBarAdvPanel control.
+4. Declare an instance of the `StatusBarAdvPanel` control.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -106,7 +105,7 @@ Private statusBarAdvPanel1 As Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-5. Initialize the control and add it to your form.
+5. Initialize the control and add it to the form.
 
 {% capture codesnippet3 %}
 {% tabs %}
@@ -129,7 +128,7 @@ Me.Controls.Add(Me.statusBarAdvPanel1)
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-6. Customize the control's appearance by setting its properties.
+6. Configure the required properties of the control.
 
 {% capture codesnippet4 %}
 {% tabs %}
@@ -157,6 +156,6 @@ Me.statusBarAdvPanel1.Size = New System.Drawing.Size(216, 48)
 {% endcapture %}
 {{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-7. Run the application. The StatusBarAdvPanel displays the date text.
+7. Run the application. The `StatusBarAdvPanel` displays the specified date text.
 
   ![Create StatusBarAdvPanel through code in WindowsForms application](overview_images/windowsforms-statusbaradvpanel-create-code.jpeg) 
