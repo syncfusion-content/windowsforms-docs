@@ -9,27 +9,27 @@ documentation: ug
 
 # Getting Started with Windows Forms FontListBox
 
-This section briefly describes how to create a new Windows Forms project in Visual Studio and how to add the **FontListBox** with its basic functionalities.
+This section explains how to get started with the Windows Forms `FontListBox` control and its basic features.
 
-## Assembly deployment
+## Assembly Deployment
 
-Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#fontlistbox) section to get the list of assemblies or the details of NuGet package that needs to be added as reference to use the control in any application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#fontlistbox) section for the list of assemblies and NuGet packages required to use the FontListBox control.
 
-Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install nuget packages in a Windows Forms application.
+Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install NuGet packages in a Windows Forms application.
 
-To install the required Syncfusion.Tools.Windows NuGet package via the Package Manager Console, run the following command:
+To install the required NuGet package using the NuGet Package Manager Console, run the following command:
 
 ```powershell
 Install-Package Syncfusion.Tools.Windows
 ```
 
-## Adding the FontListBox control via designer
+## Adding FontListBox via Designer
 
-The FontListBox control can be added via designer using the following steps:
+The FontListBox control can be added using the following steps:
 
 1. Create a new Windows Forms application in Visual Studio.
 
-2. Add the [FontListBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.FontListBox.html) control to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
+2. Drag the [FontListBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.FontListBox.html) control from the _Toolbox_ and drop it onto the Windows Form designer. The following dependent assemblies are added automatically:
 
     * Syncfusion.Grid.Base
     * Syncfusion.Grid.Windows
@@ -40,13 +40,13 @@ The FontListBox control can be added via designer using the following steps:
 
 ![Drag and drop FontListBox from toolbox in WindowsForms](overview_images/windowsforms-font-list-box-drag-and-drop-from-toolbox.jpeg) 
 
-## Adding the FontListBox control via code
+## Adding FontListBox via Code
 
 The following steps describe how to create a FontListBox control programmatically:
 
 1. Create a C# or VB.NET Windows Forms application in Visual Studio.
 
-2. Add the following assembly references to the project:
+2. Add the required assembly references to the project.
 
     * Syncfusion.Grid.Base
     * Syncfusion.Grid.Windows
@@ -73,7 +73,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }} 
 
-4. Create an instance of the [FontListBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.FontListBox.html) control, specify its size, and add it to the form `Form1`.
+4. Create an instance of the [FontListBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.FontListBox.html) control, set its size, and add it to the `Form1` form.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -115,9 +115,9 @@ End Class
 
 ![Adding FontListBox control via code in WindowsForms](overview_images/windowsforms-font-list-box-adding-code.jpeg)
 
-## Selected items
+## Selecting Items
 
-At run time, the items in the **FontListBox** can be selected. The text style will be changed based on the selected font item from the FontListBox. The following sample uses a Label to preview the chosen font.
+At run time, users can select items from the `FontListBox` control. The text style is updated based on the selected font item. The following example uses a `Label` control to preview the selected font.
 
 {% tabs %}
 {% highlight c# %}
@@ -200,9 +200,9 @@ End Sub
 
 ![WindowsForms FontListBox showing change the text style](overview_images/windowsforms-font-list-box-selected-items.png)
 
-## Selection mode
+## Selection Mode
 
-At run time, the items in the [FontListBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.FontListBox.html) can be selected based on the selection mode specified in the [SelectionMode](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.listbox.selectionmode?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Forms_ListBox_SelectionMode) property. Selection can be made using the mouse and keyboard.
+The items in the FontListBox control can be selected based on the value of the [SelectionMode](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.listbox.selectionmode?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Forms_ListBox_SelectionMode) property. Depending on the selected mode, users can select one or more items by using the mouse or keyboard.
 
 The following options are available in the FontListBox control.
 
