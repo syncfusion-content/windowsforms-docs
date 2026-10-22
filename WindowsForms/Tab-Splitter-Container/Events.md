@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Events in Windows Forms Tab Splitter Container | Syncfusion®
 description: Events provide notifications when primary or secondary page selections change within the TabSplitterContainer.

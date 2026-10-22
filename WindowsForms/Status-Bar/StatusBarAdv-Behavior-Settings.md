@@ -2,7 +2,7 @@
 layout: post
 title: Behavior Settings in Windows Forms Status Bar | Syncfusion®
 description: Behavior settings in Windows Forms Status Bar define runtime functionality and interactions to match application requirements.
-platform: WindowsForms
+platform: windowsforms
 control: Status Bar
 documentation: ug
 ---

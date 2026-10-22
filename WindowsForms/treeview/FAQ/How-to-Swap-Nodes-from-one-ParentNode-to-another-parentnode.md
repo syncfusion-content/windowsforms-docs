@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Swap Nodes from One ParentNode to Another ParentNode | Syncfusion
-description: how to swap nodes from one parentnode to another parentnode in Syncfusion Windows Forms TreeView control, its elements and more details.
-platform: WindowsForms
+title: How to Swap Nodes Between Parent Nodes in TreeViewAdv | Syncfusion
+description: Learn how to swap nodes between parent nodes in Syncfusion® Windows Forms TreeViewAdv control by moving selected nodes to another parent.
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---
 
-# How to Swap Nodes from One ParentNode to Another ParentNode
+# How to Swap Nodes Between Parent Nodes in Windows Forms TreeViewAdv
 
 This can be done by using the following code.
 

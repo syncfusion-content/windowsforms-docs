@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: How to Create a Transparent Popup in Windows Forms Popup | Syncfusion®
 description: Create a transparent popup in Syncfusion® Windows Forms PopupControlContainer control by configuring popup host opacity settings and more.

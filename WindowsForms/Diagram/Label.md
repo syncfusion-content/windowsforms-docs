@@ -5,7 +5,6 @@ description: Create, format, position, and customize labels in the Syncfusion® 
 platform: windowsforms
 control: Diagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 

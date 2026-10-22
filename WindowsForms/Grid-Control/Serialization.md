@@ -9,7 +9,7 @@ documentation: ug
 
 # Serialization in Windows Forms Grid Control
 
-GridControl provide the support for [serialization](https://learn.microsoft.com/en-us/previous-versions/ms233843(v=vs.140)) and load the serialized grid’s schema information. Serialization is the process of saving the state of an object as a stream of bytes. The reverse of this process is called [de-serialization](https://learn.microsoft.com/en-us/dotnet/standard/serialization/how-to-deserialize-an-object).
+GridControl provide the support for [serialization](https://learn.microsoft.com/en-us/previous-versions/ms233843(v=vs.140))) and load the serialized grid’s schema information. Serialization is the process of saving the state of an object as a stream of bytes. The reverse of this process is called [de-serialization](https://learn.microsoft.com/en-us/dotnet/standard/serialization/how-to-deserialize-an-object).
 
 GridControl has the different types of serialization techniques as follows,
 
@@ -17,7 +17,7 @@ GridControl has the different types of serialization techniques as follows,
 
 [Binary](https://learn.microsoft.com/en-us/previous-versions/dotnet/fundamentals/serialization/binary/binary-serialization) - Helps convert the grid schema information to binary format.
 
-[XML](https://learn.microsoft.com/en-us/previous-versions/ms172873(v=vs.140)) - Helps convert the grid schema information to XML format.
+[XML](https://learn.microsoft.com/en-us/previous-versions/ms172873(v=vs.140))) - Helps convert the grid schema information to XML format.
 
 ## Binary 
 

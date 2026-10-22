@@ -27,11 +27,11 @@ _AND(logical1, logical2, ...)_
 
 
 
-**Parameters:**
+**where:**
 
 
 
-* `logical1, logical2 ...`: Multiple conditions to be tested for `true` or `false`.
+* logical1, logical2 ... are multiple conditions to be tested for `true` or `false`.
 
 
 
@@ -55,7 +55,7 @@ _AND(logical1, logical2, ...)_
 
 
 
-The `False` function returns the logical value for the `false`.
+The `FALSE` function returns the logical value `FALSE`.
 
 
 
@@ -67,11 +67,11 @@ _FALSE(stringvalue)_
 
 
 
-**Parameters:**
+**where:**
 
 
 
-* `stringvalue`: To provide an empty string.
+* stringvalue is to provide an empty string.
 
 
 
@@ -95,19 +95,19 @@ _IF(logical_test, value_if_true, value_if_false)_
 
 
 
-**Parameters:**
+**where:**
 
 
 
-* `logical_test`: Any value or expression that can be evaluated to `True` or `False`.
+* logical_test is any value or expression that can be evaluated to `True` or `False`.
 
 
 
-* `value_if_true`: The value that is returned if a logical_test is `True`.
+* value_if_true is the value that is returned if a logical_test is `True`.
 
 
 
-* `value_if_false`: The value that is returned if a logical_test is `False`.
+* value_if_false is the value that is returned if a logical_test is `False`.
 
 
 
@@ -135,19 +135,19 @@ _IFERROR (value, value_error)_
 
 
 
-**Parameters:**
+**where:**
 
 
 
-* `value` (required): To check the error.
+* `value` is the required to check the error.
 
 
 
-* `value_error` (required): Returns when the value has an error.
+* `value_error` is the required and returns when the value has an error.
 
 
 
-* `value_error` (required): When empty cell, then the function takes the error value as empty string.  
+* When the value_error is an empty cell, then the function takes the error value as empty string.  
 
 
 
@@ -167,15 +167,15 @@ _IFNA (Formula_value, value_if_na)_
 
 
 
-**Parameters:** 
+**where:** 
 
 
 
-* `Formula_value` (required): The argument that is checked for the #N/A error value.
+* `Formula_value`: This value is required and the argument that is checked for the #N/A error value.
 
 
 
-* `value_if_na` (required): The value returned when the formula evaluates to the #N/A error value. 
+* `value_if_na`: This value is required and the value returned when the formula evaluates to the #N/A error value. 
 
 
 
@@ -251,11 +251,11 @@ _NOT(logical)_
 
 
 
-**Parameters:**
+**where:**
 
 
 
-* `logical`: A value or expression that can be evaluated to `True` or `False`.
+* logical is a value or expression that can be evaluated to `True` or `False`.
 
 
 
@@ -263,7 +263,7 @@ _NOT(logical)_
 
 
 
-The `True` function returns the logical value for `True`.
+The `TRUE` function returns the logical value `TRUE`.
 
 
 
@@ -275,11 +275,11 @@ _TRUE(stringvalue)_
 
 
 
-**Parameters:**
+**where:**
 
 
 
-* `stringvalue`: To provide an empty string.
+* stringvalue is to provide an empty string.
 
 
 
@@ -287,7 +287,7 @@ _TRUE(stringvalue)_
 
 
 
-Returns `True` when any argument is `True` returns `False` when all arguments are `False`.
+Returns `TRUE` when any argument is `TRUE`, and returns `FALSE` when all arguments are `FALSE`.
 
 
 
@@ -299,11 +299,11 @@ _OR(logical1, logical2, ...)_
 
 
 
-**Parameters:**
+**where:**
 
 
 
-* `logical1, logical2 ...`: Conditions to test that can be either `True` or `False`.
+* logical1, logical2 ... are conditions to test that can be either `True` or `False`.
 
 
 
@@ -331,15 +331,15 @@ _XOR (logical_value1, logical_value2…)_
 
 
 
-**Parameters:**
+**where:**
 
 
 
-* `Logical_value1` (required): Can be either `true` or `false`, and can be logical values, arrays, or references.
+* Logical_value1: This is a required value and can be either `TRUE` or `FALSE`, and can be logical values, arrays, or references.
 
 
 
-* `Logical_value1, logical_value2…` (required): When the given arguments do not have the logical values, `XOR` returns the `#VALUE!` error value.
+* When the given arguments do not have logical values, `XOR` returns the `#VALUE!` error value.
 
 
 
@@ -347,7 +347,7 @@ _XOR (logical_value1, logical_value2…)_
 
 
 
-The `IFS` function runs multiple test, and returns a value that corresponds to the first TRUE condition. `IFS` can take the place of multiple nested IF statements, and is allows shorter, easier to read formulas.It used to test multiple conditions and return first true result.
+The `IFS` function runs multiple tests and returns a value that corresponds to the first `TRUE` condition. `IFS` can take the place of multiple nested `IF` statements, and allows shorter, easier-to-read formulas. It is used to test multiple conditions and return the first true result.
 
 
 
@@ -359,30 +359,30 @@ _IFS(logical_test1, value_if_true1, [logical_test2, value_if_true2], [logical_te
 
 
 
-**Parameters:**
+**where:**
 
 
 
-* `logical_test1` (required): The first logical test that evaluates to `TRUE` or `FALSE`.
+* logical_test1 (required): This is the first logical test that evaluates to `TRUE` or `FALSE`.
 
 
 
-* `value_if_true1` (required): Result to be returned if the first logical test (logical_test1) evaluates to `TRUE`. This can be empty string.
+* value_if_true1 (required): Result to be returned if the first logical test (logical_test1) evaluates to `TRUE`.This Can be empty string.
 
 
 
-* `logical_test2…logical_test127` (optional): The second logical test that evaluates to `TRUE` or `FALSE`.
+* logical_test2…logical_test127 (optional):This is the second logical test that evaluates to `TRUE` or `FALSE`.
 
 
 
-* `value_if_true2…value_if_true127` (optional): Result to be returned if logical_testN evaluates to `TRUE`. Each value_if_trueN corresponds with a condition logical_testN. This can be empty string.
+* value_if_true2…value_if_true127 (optional): Result to be returned if logical_testN evaluates to `TRUE`. Each value_if_trueN corresponds with a condition logical_testN.This Can be empty string.
 
 
 **Remarks:**
 
 
 
-* To specify a default result, enter `TRUE` for your final logical_test argument. If none of the other conditions are met `TRUE`, the corresponding value will be returned. 
+* To specify a default result, enter `TRUE` for your final `logical_test` argument. If none of the other conditions evaluates to `TRUE`, the corresponding value will be returned. 
 
 
 
@@ -394,7 +394,7 @@ _IFS(logical_test1, value_if_true1, [logical_test2, value_if_true2], [logical_te
 
 
 
-*  If no `TRUE` value found, this function returns `#N/A` error message.
+* If no `TRUE` condition is found, this function returns the `#N/A` error value.
 
 
 
@@ -402,7 +402,7 @@ _IFS(logical_test1, value_if_true1, [logical_test2, value_if_true2], [logical_te
 
 
 
-The `SWITCH` function compares one value against a list of values, and returns the result corresponding to the first match.It return default value when there is no match found.
+The `SWITCH` function compares one value against a list of values, and returns the result corresponding to the first match. It returns a default value when no match is found.
 
 
 
@@ -414,22 +414,22 @@ _SWITCH(expression, value1, result1, [default or value2, result2],…[default or
 
 
 
-**Parameters:**
+**where:**
 
 
 
-* `expression` (required): The value or expression (number, date or some text) that will be compared against list of values.
+* expression(required): The value or expression (number, date or some text) that will be compared against list of values.
 
 
 
-* `value1…value126`: A list of values that will be compared against expression.
+* value1…value126: This is a list of values that will be compared against expression.
 
 
 
-* `result1…result126`: The value to be returned when the corresponding list of values matches expression. ResultN must be supplied for each corresponding valueN argument.
+* result1…result126: ResultN is the value to be returned when the corresponding list of values matches expression. ResultN and must be supplied for each corresponding valueN argument.
 
 
 
-* `default` (optional): The value to return in case no matches are found when compare the list of values against expression. The default argument is identified by having no corresponding resultN expression. Default must be the final argument in the function.
+* default (optional):Default is the value to return in case no matches are found when compare the list of values against expression. The Default argument is identified by having no corresponding resultN expression. Default must be the final argument in the function.
 
 

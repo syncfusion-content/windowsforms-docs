@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
 title: Style Architecture in Windows Forms MultiColumn TreeView | Syncfusion®
 description: Style Architecture enables hierarchical style inheritance and customization for nodes, columns, subitems, and tree levels.
-platform: WindowsForms
+platform: windowsforms
 control: MultiColumnTreeView
 documentation: ug
 ---
@@ -13,7 +13,7 @@ The tree control employs an extensive Styles Architecture, that let users specif
 
 As illustrated below, implicit style inheritance is enforced by the Framework, while explicit style inheritance can be set up by the programmer. For all styles, explicit inheritance precedes implicit inheritance.
 
-### Implicit Style Inheritance
+## Implicit Style Inheritance
 
 When a style is not set in a style info object, it inherits the style from the previous level and so on until it reaches the default global style on top of the hierarchy. This is called implicit style inheritance and is illustrated below.
 
@@ -29,7 +29,7 @@ When a style is not set in a style info object, it inherits the style from the p
 
 *	SubItem Style: This lets you specify the styles for the Sub Items of the nodes.
 
-### Explicit Style Inheritance
+## Explicit Style Inheritance
 
 Any StyleInfo instance can also inherit explicitly from a specific named StyleInfo object. This can be done using the BaseStyle property of the TreeNodeAdvStyleInfo type. As noted previously, such named styles should be available in the tree control's BaseStyles Collection Editor. You can also add custom styles using this editor.
 

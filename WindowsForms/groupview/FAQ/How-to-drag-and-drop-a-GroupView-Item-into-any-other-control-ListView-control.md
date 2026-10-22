@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Drag and drop a GroupViewItem | WindowsForms | Syncfusion
-description: Frequently Asked Questions
-platform: WindowsForms
+description: Learn how to drag and drop a GroupView item into a ListView control and handle item transfer between controls in Windows Forms.
+platform: windowsforms
 control: GroupView
 documentation: ug
 ---
-# How to drag-and-drop a GroupView Item into any other control (ListView control)?
+# How to Drag and Drop a GroupView Item into ListView?
 
 You can handle the GroupView's DragOver Event to get the selected GroupView Item and then handle the ListView control's [DragEnter](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.dragenter?redirectedfrom=MSDN&view=netframework-4.7.2) and [DragDrop](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.dragdrop?redirectedfrom=MSDN&view=netframework-4.7.2) events to drop the selected GroupView Item as a ListView item in the ListView control.
 

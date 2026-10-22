@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: RTL in Windows Forms XPToolBar | Syncfusion®
 description: RTL support enables displaying toolbar content and bar items from right to left for regional language requirements.

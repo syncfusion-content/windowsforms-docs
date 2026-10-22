@@ -2,7 +2,7 @@
 layout: post
 title: How to Clear Sorting in Windows Forms Grouping | Syncfusion®
 description: Clear sorting in Syncfusion® Windows Forms Grouping control by removing all sorted columns or specific sorting settings from the data view.
-platform: WindowsForms
+platform: windowsforms
 control: Grouping
 documentation: ug
 ---
