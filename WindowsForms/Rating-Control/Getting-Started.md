@@ -9,21 +9,25 @@ documentation: ug
 
 # Getting Started with Windows Forms Rating Control
 
-## Assembly deployment
+This section explains how to get started with the Windows Forms Rating control and display ratings using different shapes.
 
-Refer to the [Control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#ratingcontrol) section to get the list of assemblies or details of the NuGet package that needs to be added as a reference to use the control in any application.
+## Assembly Deployment
 
-Click [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install NuGet packages in a Windows Forms application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#ratingcontrol) section for the list of assemblies and NuGet packages required to use the `RatingControl`.
+
+Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install NuGet packages in a Windows Forms application.
+
+To install the required NuGet package using the NuGet Package Manager Console, run the following command:
 
 ```powershell
 Install-Package Syncfusion.Tools.Windows
 ```
 
-## Adding Rating control via designer
+## Adding Rating control via Designer
 
-1. Create a new Windows Forms project in Visual Studio to display the Rating Control with different shapes.
+1. Create a new Windows Forms project in Visual Studio to display the Rating control.
 
-2. The [Rating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html) control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
+2. Drag the [Rating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html) control from the _Toolbox_ and drop it onto the Windows Form designer. The following dependent assemblies are added automatically:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -34,11 +38,11 @@ Install-Package Syncfusion.Tools.Windows
 
 ![Search Rating Control in toolbox](Getting-Started_images/Rating_toolbox.png)
 
-## Adding Rating control via code
+## Adding Rating control via Code
 
-To add the control manually in C#, follow the given steps:
+To add the Rating control programmatically, follow these steps:
 
-1. Create a new C# or VB Windows Forms application in Visual Studio.
+1. Create a C# or VB.NET Windows Forms application in Visual Studio.
 
 2. Add the following assembly references to the project:
 
@@ -67,7 +71,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4. Create an instance of the [Rating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html) control, and add it to the form.
+4. Create an instance of the [Rating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html) control and add it to the form.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -109,18 +113,18 @@ ratingControl1.Value = 3
 
 ![Windows Forms Rating control shows rating value](Getting-Started_images/Rating_value.png)
 
-## Built-in shapes for rating
+## Built-in Shapes for Rating
 
-The following six predefined shapes are available in the Rating Control for customization:
+The Rating control provides the following predefined shapes:
 
-* Star
-* Circle
-* Triangle
-* Heart
-* Diamond
-* Kite
+* `Star`
+* `Circle`
+* `Triangle`
+* `Heart`
+* `Diamond`
+* `Kite`
 
-You can customize the shapes of the RatingControl using the [Shape](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html#Syncfusion_Windows_Forms_Tools_RatingControl_Shape) property. 
+Use the  [Shape](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html#Syncfusion_Windows_Forms_Tools_RatingControl_Shape) property to customize the appearance of the rating items.
 
 {% tabs %}
 {% highlight C# %}
@@ -139,9 +143,9 @@ Me.ratingControl1.Shape = Syncfusion.Windows.Forms.Tools.Shapes.Heart
 
 ![RatingControls shapes](Getting-Started_images/rating-controls-shapes.png)
 
-## Complete code sample
+## Complete code example
 
-The following examples show the full code required to add a `RatingControl` to a Windows Forms application, set its value, and apply a built-in shape.
+The following example demonstrates how to add a `Rating` control to a Windows Forms application, set its rating value, and apply a built-in shape.
 
 {% tabs %}
 {% highlight C# %}
