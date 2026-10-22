@@ -9,13 +9,15 @@ documentation: ug
 
 # Getting Started with Windows Forms GradientPanelExt
 
-This section briefly describes how to create a new Windows Forms project in Visual Studio and add the **GradientPanelExt** control with its basic functionalities.
+This section explains how to get started with the Windows Forms `GradientPanelExt` control and its basic features.
 
-## Assembly deployment
+## Assembly Deployment
 
-Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#gradientpanelext) section to get the list of assemblies or the NuGet package details that must be referenced to use the control in any application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#gradientpanelext) section for the list of assemblies and NuGet packages required to use the `GradientPanelExt` control.
 
 Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install NuGet packages in a Windows Forms application.
+
+To install the required NuGet package using the NuGet Package Manager Console, run the following command:
 
 To install via the NuGet Package Manager Console, run:
 
@@ -23,33 +25,33 @@ To install via the NuGet Package Manager Console, run:
 Install-Package Syncfusion.Shared.Base
 ```
 
-## Adding GradientPanelExt control via designer
+## Adding GradientPanelExt Control via Designer
 
 1. Create a new Windows Forms project in Visual Studio.
 
-2. Install the Syncfusion WinForms NuGet package so the control is registered in the toolbox, then drag the [GradientPanelExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GradientPanelExt.html) from the toolbox to the designer surface. The following dependent assembly is added automatically:
+2. Install the required Syncfusion WinForms NuGet package. After the control is registered in the _Toolbox_, drag the [GradientPanelExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GradientPanelExt.html) control onto the Windows Form designer. The following dependent assembly is added automatically:
 
     * Syncfusion.Shared.Base
 
 ![Drag and drop GradientPanelExt from toolbox](GradientPanelExt_images/Overview_img373.png)
 
-3. Configure the panel through the property grid. For example:
+3. Configure the control using the **Properties** window. For example:
 
-    * Set `BackgroundColor` to a `Syncfusion.Drawing.BrushInfo` value with the desired gradient style.
-    * Set `BorderColor` and `BorderStyle` to customize the border.
-    * Set `CornerRadius` to round the corners.
+    * Set the `BackgroundColor` property to a `Syncfusion.Drawing.BrushInfo` value with the desired gradient style.
+    * Set the `BorderColor` and `BorderStyle` properties to customize the border.
+    * Set the `CornerRadius` property to create rounded corners.
 
-4. Add primitives using the **GradientPanelExt Primitive Collection Editor** accessed through the [Primitives](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GradientPanelExt.html#Syncfusion_Windows_Forms_Tools_GradientPanelExt_Primitives) property. Choose the primitive type from the editor (Collapse, Image, Text, or Host) and set its alignment, position, and size in the property grid.
+4. Add primitives using the **GradientPanelExt Primitive Collection Editor**, which can be accessed through the `Primitives` property. Select a primitive type (`Collapse`, `Image`, `Text`, or `Host`) and configure its alignment, position, and size in the **Properties** window.
 
 ![Windows Forms GradientPanelExt showing primitive collection editor](GradientPanelExt_images/Overview_img374.png)
 
 5. Build and run the application.
 
-## Adding GradientPanelExt control via code
+## Adding GradientPanelExt Control via Code
 
-The following steps describe how to create the **GradientPanelExt** control programmatically.
+The following steps describe how to create the GradientPanelExt control programmatically:
 
-1. Create a C# or VB.NET application in Visual Studio.
+1. Create a C# or VB.NET Windows Forms application in Visual Studio.
 
 2. Add the following assembly reference to the project:
 
@@ -79,7 +81,7 @@ Imports System.Windows.Forms
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4. Create an instance of the [GradientPanelExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GradientPanelExt.html), and add it to the form.
+4. Create an instance of the [GradientPanelExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GradientPanelExt.html) control and add it to the form.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -99,7 +101,7 @@ Me.Controls.Add(gradientPanelExt)
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-5. Add properties, add primitives, and add the control. Place the following code inside the `Form1` class.
+5. Configure the control properties and add the required primitives. Place the following code inside the `Form1` class.
 
 {% capture codesnippet3 %}
 {% tabs %}
