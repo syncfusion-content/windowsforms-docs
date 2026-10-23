@@ -1,4 +1,3 @@
-<img width="2330" height="2268" alt="image" src="https://github.com/user-attachments/assets/c99995ea-e4a6-4167-966a-d1084441582f" />---
 layout: post
 title: Getting Started with Windows Forms Splash Screen | Syncfusion®
 description: Learn how to get started with the Syncfusion® Windows Forms Splash Screen. Explore setup, features, examples, and customization options.
