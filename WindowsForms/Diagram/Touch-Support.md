@@ -71,5 +71,4 @@ To turn off touch support after it has been enabled, set `TouchMode = false`. Wh
 ![Touch interaction on a node](Touch-Support_images/Touch-Support_img1.png)
 
 
-
 ![Zoom and pan gestures on the diagram view](Touch-Support_images/Touch-Support_img2.png)

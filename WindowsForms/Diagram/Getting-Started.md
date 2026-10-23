@@ -722,7 +722,7 @@ To create an Overview control using code:
 using Syncfusion.Windows.Forms.Diagram.Controls;
 
 //Creates an OverviewControl instance
-overviewControl = new OverviewControl();
+OverviewControl overviewControl = new OverviewControl();
 overviewControl.Dock = DockStyle.Left;
 
 //Set the diagram reference to overviewControl
@@ -1193,9 +1193,9 @@ if (diagram1 != null)
 {% endhighlight %}
 {% endtabs %}
 
-Diagram Builder Tools
+### Diagram Builder Tools
 
-Editing Options
+**Editing Options**
 
 <table>
 <tr>
@@ -1240,11 +1240,8 @@ diagram1.Controller.SelectAll();</td></tr>
 
 The following screenshot illustrates the pan and zoom tools.
 
-
-
 ![Pan and zoom tool in WindowsForms Diagram](getting-started_images/windowsforms-diagram-pan-and-zoom-tool.jpeg)
 
-Pan & Zoom Tool
 
 <table>
 <tr>
@@ -1293,13 +1290,8 @@ diagram1.ShowRulers = true;</td></tr>
 The following screen shot illustrates the Alignment tools.
 
 
-
 ![Alignment tool in WindowsForms Diagram](getting-started_images/windowsforms-diagram-alignment-tool.jpeg)
 
-
-
-
-Alignment Tool
 
 <table>
 <tr>
@@ -1344,11 +1336,8 @@ diagram1.AlignBottom();</td></tr>
 
 The following screen shot illustrates the Rotate tools.
 
-
-
 ![Rotate tools in WindowsForms Diagram](getting-started_images/windowsforms-diagram-rotate-tools.jpeg)
 
-Rotate Tools
 
 <table>
 <tr>
@@ -1383,12 +1372,8 @@ diagram1.FlipHorizontal();</td></tr>
 
 The following screen shot illustrates the Resize tools.
 
-
-
 ![Resize tool in WindowsForms Diagram](getting-started_images/windowsforms-diagram-resize-tool.jpeg)
 
-
-Resize Tools
 
 <table>
 <tr>
@@ -1428,11 +1413,8 @@ diagram1.SameWidth();</td></tr>
 
 The following screen shot illustrates the Nudge tools.
 
-
-
 ![Nudge tool in WindowsForms Diagram](getting-started_images/windowsforms-diagram-nudge-tool.jpeg)
 
-Nudge Tools
 
 <table>
 <tr>
@@ -1463,15 +1445,12 @@ diagram1.NudgeRight();</td></tr>
 </table>
 
 
-Text Formatting Tool
+### Text Formatting Tool
 
 The following screen shot illustrates the Text Formatting tools.
 
-
-
 ![Text formatting in WindowsForms Diagram](getting-started_images/windowsforms-diagram-text-formatting.jpeg)
 
- Text Formatting Tools
 
 <table>
 <tr>
@@ -1561,9 +1540,6 @@ The following screen shot illustrates the Group and Order tools.
 ![Group and order tool in WindowsForms Diagram](getting-started_images/windowsforms-diagram-group-and-order-tool.jpeg)
 
 
-
-Group & Order Tools
-
 <table>
 <tr>
 <th>
@@ -1606,8 +1582,6 @@ diagram1.Controller.SendBackward();</td></tr>
 ### Drawing Tools
 
 The following screen shot illustrates the drawing tools.
-
-
 
 ![Drawing tools in WindowsForms Diagram](getting-started_images/windowsforms-diagram-drawing-tools.png)
 
@@ -1704,7 +1678,6 @@ diagram1.Controller.ActivateTool("ConnectionPointTool");</td></tr>
 ### Diagram Connector Tools
 
 The following screen shot illustrates the Diagram Connector tools.
-
 
 
 ![Diagram connector tools in WindowsForms Diagram](getting-started_images/windowsforms-diagram-connector-tools.jpeg)
@@ -1863,7 +1836,6 @@ if (t is Syncfusion.Windows.Forms.Diagram.DirectedLineConnectorTool)
 This is an interactive tool for drawing Polyline Connector. The name of the tool is "PolyLineLinkTool". The below table lists the properties of the [PolyLine tool](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.PolyLineTool.html#).
 
 
-
 <table>
 <tr>
 <th>
@@ -1908,7 +1880,7 @@ if (t is Syncfusion.Windows.Forms.Diagram.PolyLineConnectorTool)
 {% endhighlight %}
 {% endtabs %}
 
-Creating a Diagram using Diagram Builder
+**Creating a Diagram using Diagram Builder**
 
 To create your own diagram in the diagram builder, follow the below given procedure.
 
@@ -1917,10 +1889,6 @@ To create your own diagram in the diagram builder, follow the below given proced
 
 
    ![Poly line connector tool in WindowsForms Diagram](getting-started_images/windowsforms-diagram-poly-line-connector-tool.jpeg)
-
-
-
-
 
   
 2. To add symbols into the symbol palette, select Add SymbolPalette in the File menu. 
@@ -1931,14 +1899,10 @@ To create your own diagram in the diagram builder, follow the below given proced
    ![Symbol palette in WindowsForms Diagram](getting-started_images/windowsforms-diagram-symbol-palette.jpeg)
 
 
-
-
-
 4. On placing the symbol into the diagram area, the Diagram Builder displays a dialog for adding the symbol palette into the Associated Palettes. To add, click OK. Click Cancel if not required.
 5. Place the symbols and change their properties according to the requirements. Finally save the file with .edd extension. 
 
 A diagram is created using the Diagram Builder. You can use this diagram (.edd) file for developing your application.
-
 
 
 ![Adding symbol palette into associated palettes in WindowsForms Diagram](getting-started_images/windowsforms-diagram-adding-symbol-palette-into-associated-palettes.jpeg)
@@ -1949,7 +1913,7 @@ A diagram is created using the Diagram Builder. You can use this diagram (.edd) 
 
 Symbol Designer application allows you to create new palettes with symbols, and also modify the existing palettes. These palettes have the *.edp extension. You can use these palettes in your applications, and also in the Diagram Builder. 
 
-Software Path
+**Software Path**
 
 "[Installed Drive:]\Program Files\Syncfusion\Essential Studio\{{ site.releaseversion }}\Utilities\Diagram\Windows Forms\ Symbol Designer"
 
@@ -1970,17 +1934,10 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 ![Add new palette in WindowsForms Diagram](getting-started_images/windowsforms-diagram-add-new-palette.jpeg)
 
 
-
-
-
 * A new symbol palette is created with the given name. Now, you can add your own symbols into this palette. 
 
 
-
 ![Palette in WindowsForms Diagram](getting-started_images/windwsforms-diagram-palette.jpeg)
-
-
-
 
 
 * For creating a new symbol, click Add Symbol option in the Symbol menu. The symbol designer window changes to a new format as shown in the below screen shot.
@@ -1991,22 +1948,14 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
 
 
-
-
 * Draw the desired shapes in the grid area. Change the properties of the shapes using Property window (Example: Color, Size etc).
-
 
 
 ![Shapes using property window in WindowsForms Diagram](getting-started_images/windowsforms-diagram-property-window-shapes.jpeg)
 
 
 
-
-
 ![Property window in WindowsForms Diagram](getting-started_images/windowsforms-diagram-property-window.jpeg)
-
-
-
 
 
 * After modifying the default settings, we have to save this symbol into the symbol palette. Go to the File menu and click Save. A Save SymbolPalette dialog will appear as in the following screen shot.
@@ -2014,9 +1963,6 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
 
 ![Symbol palette dialog in WindowsForms Diagram](getting-started_images/windowsforms-diagram-symbol-palette-dialog.jpeg)
-
-
-
 
 
 * Give a relevant file name for the palette and click Save. As the palette is saved, new symbol is automatically loaded into the symbol palette.
@@ -2028,23 +1974,16 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
 
 
-
-
 * Repeat the above steps for creating more symbols.
 * If you create symbols using more than one shapes, you need to group all the shapes into single symbol using the Group option in symbol designer.
 
  ![Group in symbol designer in WindowsForms Diagram](getting-started_images/windowsforms-diagram-group-in-symbol-designer.png)
 
- 
 
 * The above symbols are added to the symbol palette. You will get a symbol palette as shown in the following screen shot.
 
 
-
 ![Symbols in symbol palette in WindowsForms Diagram](getting-started_images/windowsforms-diagram-symbols-in-symbol-palette.jpeg)
-
-
-
 
 
 * Finally Save the Flow Diagram Symbol Palette. Now the above symbols will be available in .edp file format. You can re-use this in your applications and in the Diagram Builder.
@@ -2063,8 +2002,6 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
 
 
-
-
    * Creating a diagram control by using code.
 
    To create a Diagram control using code, create a new Windows Forms application and add the following basic dependent Syncfusion® assemblies to the project:
@@ -2076,8 +2013,7 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
 
 
-   Create a Diagram control using the following code.
-
+Create a Diagram control using the following code.
 
 
 {% tabs %}
@@ -2088,10 +2024,13 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 using Syncfusion.Windows.Forms.Diagram.Controls;
 using Syncfusion.Windows.Forms.Diagram;
 
-//Create an instance
+//Create an instance for Model
+Model model = new Model();
+
+//Create an instance for Diagram
 Diagram diagram = new Diagram();
 
-//Enable scroll bars            
+//Enable scroll bars
 diagram.HScroll = true;
 diagram.VScroll = true;
 
@@ -2100,6 +2039,11 @@ diagram.Size = new Size(400, 400);
 
 //Positioning the diagram
 diagram.Location = new Point(20, 5);
+
+diagram.Model = model;
+
+this.Controls.Add(diagram);
+
 
 {% endhighlight %}
 {% endtabs %}

@@ -405,6 +405,22 @@ Gets or sets the orientation of the label.</td><td>
 Enum</td></tr>
 </table>
 
+The `Orientation` property accepts the following `LabelOrientation` enum values:
+
+<table>
+<tr>
+<th>
+Enum Value </th><th>
+Description </th></tr>
+<tr>
+<td>
+Horizontal</td><td>
+Displays the label horizontally, regardless of the node's or connector's rotation angle. The label always remains upright and readable.</td></tr>
+<tr>
+<td>
+Auto</td><td>
+Rotates the label based on the rotation angle of the node or connector to which it is attached, so the text follows the object's orientation.</td></tr>
+</table>
 
 The following code shows how to set the orientation of the label to horizontal:
 
@@ -442,6 +458,39 @@ node.Labels.Add(label)
 
 Diagram allows the label to be interacted with by selecting, dragging, rotating, and resizing. By default, label interaction is disabled, and you can enable it by using the `Constraints` property of the label. You can also curtail the interaction services by enabling selecting, dragging, rotating, or resizing individually with the respective `Constraints` property of the label. The following code illustrates how to enable annotation interaction.
 
+The `Constraints` property accepts the following `LabelConstraints` enum values, which can be combined using bitwise `OR` (`|` in C#, `Or` in VB.NET):
+
+<table>
+<tr>
+<th>
+Enum Value </th><th>
+Description </th></tr>
+<tr>
+<td>
+None</td><td>
+Disables all label interactions.</td></tr>
+<tr>
+<td>
+Select</td><td>
+Enables the label to be selected.</td></tr>
+<tr>
+<td>
+Drag</td><td>
+Enables the label to be dragged.</td></tr>
+<tr>
+<td>
+Resize</td><td>
+Enables the label to be resized.</td></tr>
+<tr>
+<td>
+Rotate</td><td>
+Enables the label to be rotated.</td></tr>
+<tr>
+<td>
+Interaction</td><td>
+Enables all label interactions: selecting, dragging, resizing, and rotating.</td></tr>
+</table>
+
 {% tabs %}
 {% highlight c# %}
 Syncfusion.Windows.Forms.Diagram.Rectangle rectangle = new Syncfusion.Windows.Forms.Diagram.Rectangle(new RectangleF(100, 100, 100, 100));
@@ -476,7 +525,7 @@ Dim rectangle As New Syncfusion.Windows.Forms.Diagram.Rectangle(New RectangleF(1
 Dim label As New Syncfusion.Windows.Forms.Diagram.Label()
 'To set the label constraint as Interaction...
 label.Constraints = LabelConstraints.Interaction
-label.Text = "Welcome to Syncfusion®"
+label.Text = "First"
 rectangle.Labels.Add(label)
 
 label = New Syncfusion.Windows.Forms.Diagram.Label()
@@ -498,3 +547,5 @@ rectangle.Labels.Add(label)
 diagram1.Model.AppendChild(rectangle)
 {% endhighlight %}
 {% endtabs %}
+
+![Label interaction](Label_images/Internaction_connector_img1.png)
