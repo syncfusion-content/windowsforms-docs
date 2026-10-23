@@ -9,27 +9,23 @@ documentation: ug
 
 # Getting Started with Windows Forms SplashPanel
 
-* [Assembly deployment](#assembly-deployment)
-* [Adding SplashPanel through the designer](#adding-splashpanel-through-the-designer)
-* [Adding SplashPanel through code](#adding-splashpanel-through-code)
+This section explains how to get started with the Windows Forms `SplashPanel` control and its basic features.
 
-## Assembly deployment
+## Assembly Deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#splashpanel) section to get the list of assemblies or NuGet packages that need to be added as references to use the control in any application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#splashpanel) section for the list of assemblies and NuGet packages required to use the `SplashPanel` control.
 
-You can find more details about installing the NuGet packages in a Windows Forms application at the following link:
+Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install NuGet packages in a Windows Forms application.
 
-[How to install NuGet packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
-
-To install via the NuGet Package Manager Console, run:
+To install the required NuGet package using the NuGet Package Manager Console, run the following command:
 
 ```powershell
 Install-Package Syncfusion.Tools.Windows
 ```
 
-## Adding SplashPanel through the designer
+## Adding SplashPanel via Designer
 
-The `SplashPanel` control provides full support for the Windows Forms designer. Dragging the control from the toolbox onto the form automatically adds the following required assembly references to the project:
+The `SplashPanel` control provides full support for the Windows Forms designer. When the control is dragged from the _Toolbox_ onto the form, the following required assembly references are added automatically:
 
 * Syncfusion.Grid.Base.dll
 * Syncfusion.Grid.Windows.dll
@@ -38,22 +34,26 @@ The `SplashPanel` control provides full support for the Windows Forms designer. 
 * Syncfusion.Tools.Base.dll
 * Syncfusion.Tools.Windows.dll
 
-1. Drag and drop the `SplashPanel` control from the toolbox onto the form.
+1. Drag the `SplashPanel` control from the **Toolbox** onto the Windows Form designer.
 
-    ![Drag and drop the SplashPanel from toolbox in WindowsForms application](overview_images/windowsforms-splash-panel-drag-and-drop.jpeg)
+   ![Drag and drop the SplashPanel from Toolbox in a Windows Forms application](overview_images/windowsforms-splash-panel-drag-and-drop.jpeg)
 
-2. Set the properties for the `SplashPanel` control and, optionally, drag and drop any child controls you want to add to the panel. Set the `TimerInterval` property (in milliseconds) to specify the period of time the `SplashPanel` needs to be visible.
-3. Specify the startup location of the `SplashPanel` using the `DesktopAlignment` property.
-4. Launch the `SplashPanel` by calling the `ShowSplash()` method from a handler such as the form's `Load` event or the click event of a button on the form.
-5. Cancel the `SplashPanel` by calling `splashPanel1.HideSplash()`, for example from a button click or the form's `Closing` event.
+2. Configure the required properties of the `SplashPanel` control. Optionally, add child controls to the panel. Set the `TimerInterval` property (in milliseconds) to specify how long the `SplashPanel` remains visible.
 
-    ![WindowsForms SplashPanel showing in designer page](overview_images/windowsforms-splash-panel-showing-in-designer-page.jpeg)
+3. Specify the startup location of the `SplashPanel` by using the `DesktopAlignment` property.
 
-## Adding SplashPanel through code
+4. Display the `SplashPanel` by calling the `ShowSplash()` method from an event handler, such as the form's `Load` event or a button's `Click` event.
 
-To create a `SplashPanel` programmatically with controls in it, follow the steps below.
+5. Hide the `SplashPanel` by calling the `HideSplash()` method, for example from a button's `Click` event or the form's `Closing` event.
 
-1. Create a new Visual C# or VB.NET application in Visual Studio.
+   ![SplashPanel displayed in a Windows Forms application](overview_images/windowsforms-splash-panel-showing-in-designer-page.jpeg)
+
+## Adding SplashPanel via Code
+
+To create a `SplashPanel` programmatically and add controls to it, follow these steps:
+
+1. Create a new C# or VB.NET Windows Forms application in Visual Studio.
+
 2. Add the following required assembly references to the project:
 
     * Syncfusion.Grid.Base.dll
@@ -63,7 +63,7 @@ To create a `SplashPanel` programmatically with controls in it, follow the steps
     * Syncfusion.Tools.Base.dll
     * Syncfusion.Tools.Windows.dll
 
-3. Add the namespaces shown below to your form.
+3. Include the required namespaces in the form.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -131,7 +131,7 @@ Me.SuspendLayout()
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-6. Set the properties for the `SplashPanel` and `Button` controls.
+6. Configure the required properties of the `SplashPanel` and `Button` controls.
 
 {% capture codesnippet4 %}
 {% tabs %}
@@ -198,7 +198,7 @@ Me.Controls.Add(Me.splashPanel1)
 {% endcapture %}
 {{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-7. Call and define the `ShowSplash()` method.
+7. Call and implement the `ShowSplash()` method.
 
 {% capture codesnippet5_call %}
 {% tabs %}
@@ -254,7 +254,7 @@ End Sub
 {% endcapture %}
 {{ codesnippet5_def | OrderList_Indent_Level_1 }}
 
-8. Finally, resume the layout that was suspended in Step 5:
+8. Resume the layout suspended during initialization.
 
 {% capture codesnippet6 %}
 {% tabs %}
@@ -278,4 +278,4 @@ Me.ResumeLayout(False)
 
 9. Run the application.
 
-    ![WindowsForms SplashPanel showing at run time](overview_images/windowsforms-splash-panel-showing-at-run-time.jpeg)
+![WindowsForms SplashPanel showing at run time](overview_images/windowsforms-splash-panel-showing-at-run-time.jpeg)
