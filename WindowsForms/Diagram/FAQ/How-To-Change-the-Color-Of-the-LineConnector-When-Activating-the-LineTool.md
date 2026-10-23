@@ -22,25 +22,18 @@ Refer to the following code snippet in CustomLineConnector class.
 {% highlight c# %}
 
 public override Tool ProcessMouseUp( MouseEventArgs evtArgs ) 
-
 { 
-
     CompleteAction( ptStart, ptEnd ); 
-
 } 
 
 private void CompleteAction( PointF ptStart, PointF ptEnd ) 
-
 { 
-
     Node node = CreateNode( ptStart, ptEnd ); 
 
     node.LineStyle.LineColor = Color.Red; 
-
 } 
 
 // To activate the LineTool in MainForm.cs.
-
 MyLineTool linetool = new MyLineTool(this.diagram1.Controller); 
 
 this.diagram1.Controller.RegisterTool(linetool); 

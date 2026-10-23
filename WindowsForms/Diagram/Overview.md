@@ -42,15 +42,15 @@ Some of the key features of WinForms Diagram are listed below.
 	* It has a user interface similar to the Microsoft Outlook bar.
 	* It is implemented based on the Syncfusion® GroupBar and GroupView controls.
 
-#### User Guide Organization
+### User Guide Organization
 
 The product comes with numerous samples as well as extensive documentation to guide you. This User Guide provides detailed information on the features and functionalities of the controls. It is organized into the following sections:
 
-* Overview - This section gives a brief introduction to our product and its key features.
-* Installation and Deployment - This section elaborates on the install location of the samples, license etc.
-* What's New - This section lists the new features implemented for every release.
-* Getting Started - This section guides you on getting started with Windows applications and controls.
-* Concepts and Features - The features of WinForms Diagram are illustrated with use case scenarios, code examples and screen shots under this section.
+* **Overview** - This section gives a brief introduction to our product and its key features.
+* **Installation and Deployment** - This section elaborates on the install location of the samples, license etc.
+* **What's New** - This section lists the new features implemented for every release.
+* **Getting Started** - This section guides you on getting started with Windows applications and controls.
+* **Concepts and Features** - The features of WinForms Diagram are illustrated with use case scenarios, code examples and screen shots under this section.
 
 #### Document Conventions
 
@@ -110,7 +110,7 @@ Development Environments</td><td>
 <td>
 <ul> 
 <li>Visual Studio 2015 or higher</li><li> Borland Delphi for .NET</li><li>SharpDevelop</li></ul></td><td>
-<ul><li> .NET 4.6.2</li><li> .NET 4.0</li></ul></td></tr>
+<ul><li> .NET 4.6.2</li></ul></td></tr>
 </table>
 
 #### Compatibility

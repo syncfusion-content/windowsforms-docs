@@ -40,7 +40,7 @@ true</td></tr>
 
 ### Enabling Default Context Menu
 
-You can enable the default context menu using the [_DefaultContextMenuEnabled_](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DiagramProperties.html#Syncfusion_Windows_Forms_Diagram_DiagramProperties_DefaultContextMenuEnabled) property.
+You can enable the default context menu using the **DefaultContextMenuEnabled** property.
 
 The following code illustrates how to enable the default context menu:
 

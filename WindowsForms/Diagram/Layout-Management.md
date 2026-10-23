@@ -20,8 +20,6 @@ Some common layout manager settings are discussed in the following topic.
 
 * Layout Manager Settings
 
-
-
 ### Table Layout Manager
 
 The TableLayoutManager class can be used to arrange objects in columns and rows in a table format. It positions nodes in a rectangular grid of cells, with each node spanning a single table cell. This layout is useful when tabular relationships need to be depicted.
@@ -72,7 +70,7 @@ Programmatically, the table layout manager instance should be created with the r
 {% tabs %}
 {% highlight c# %}
 
-TableLayoutManager tlLayout = new TableLayoutManager(this.diagram1.Model, 7, 7);
+TableLayoutManager tlLayout = new TableLayoutManager(this.diagram1.Model, 5, 5);
 tlLayout.VerticalSpacing = 20;
 tlLayout.HorizontalSpacing = 20;
 tlLayout.CellSizeMode = CellSizeMode.EqualToMaxNode;
@@ -80,7 +78,7 @@ tlLayout.Orientation = Orientation.Horizontal;
 tlLayout.MaxSize = new SizeF(500, 600);
 
 this.diagram1.LayoutManager = tlLayout;
-this.diagram1.LayoutManager.UpdateLayout(null);.AttachModel(model1);
+this.diagram1.LayoutManager.UpdateLayout(null);
 
 documentExplorer1.Dock = DockStyle.Right;
 documentExplorer1.BackColor = System.Drawing.SystemColors.Window;
@@ -92,7 +90,7 @@ documentExplorer1.ShowNodeToolTips = true;
 {% endhighlight %}
 {% highlight vb %}
 
-Dim tlLayout As New TableLayoutManager(Me.diagram1.Model, 7, 7)
+Dim tlLayout As New TableLayoutManager(Me.diagram1.Model, 5, 5)
 tlLayout.VerticalSpacing = 20
 tlLayout.HorizontalSpacing = 20
 tlLayout.CellSizeMode = CellSizeMode.EqualToMaxNode
@@ -100,7 +98,7 @@ tlLayout.Orientation = Orientation.Horizontal
 tlLayout.MaxSize = New SizeF(500, 600)
 
 Me.diagram1.LayoutManager = tlLayout
-Me.diagram1.LayoutManager.UpdateLayout(Nothing).AttachModel(model1)
+Me.diagram1.LayoutManager.UpdateLayout(Nothing)
 
 documentExplorer1.Dock = DockStyle.Right
 documentExplorer1.BackColor = System.Drawing.SystemColors.Window
@@ -112,15 +110,7 @@ documentExplorer1.ShowNodeToolTips = True
 {% endhighlight %}
 {% endtabs %}
 
-![Table layout](Layout-Management_images/Layout-Management_img1.jpeg)
-
-
-
-
-
-![Table layout](Layout-Management_images/Layout-Management_img2.jpeg)
-
-
+![Table layout](Layout-Management_images/TableLayout_Management.png)
 
 
 
@@ -266,9 +256,6 @@ Sample Diagram is as follows.
 ![Radial Tree layout_1](Layout-Management_images/Layout-Management_img7.jpeg)
 
 
-
-
-
 ![Radial Tree layout_2](Layout-Management_images/Layout-Management_img8.jpeg)
 
 
@@ -341,9 +328,6 @@ Sample Diagrams are as follows.
 ![Symmetric Layout Manager_1](Layout-Management_images/Layout-Management_img9.jpeg)
 
 
-
-
-
 ![Symmetric Layout Manager_2](Layout-Management_images/Layout-Management_img10.jpeg)
 
 
@@ -404,9 +388,6 @@ Sample diagrams are as follows:
 
 
 ![Hierarchical Layout Manager Top-Bottom](Layout-Management_images/Layout-Management_img11.jpeg)
-
-
-
 
 
 ![Hierarchical Layout Manager Bottom-Top](Layout-Management_images/Layout-Management_img12.jpeg)
@@ -598,14 +579,7 @@ Sample diagram is as follows.
 ![OrgChart Layout Manager Top-Bottom](Layout-Management_images/Layout-Management_img15.png)
 
 
-
-
-
 ![OrgChart Layout Manager Bottom-Top](Layout-Management_images/Layout-Management_img16.png)
-
-
-
-
 
 ### OrgChart Alignment
 

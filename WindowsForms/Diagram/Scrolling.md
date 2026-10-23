@@ -263,6 +263,9 @@ Me.diagram1.ScrollTipFormat = "Offset{0}"
 {% endhighlight %}
 {% endtabs %}
 
+![Scrolling Tooltip](Scrolling_images/Scrolling_tooltip.png)
+
+
 ## Using Splitter Control
 
 When the **Windows Forms Splitter** control is used and one or more diagram controls are added to its panels, setting the **FillSplitterPane** property docks the diagram control inside the splitter and makes it fill the entire available space.

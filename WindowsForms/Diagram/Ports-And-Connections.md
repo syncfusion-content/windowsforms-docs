@@ -109,16 +109,72 @@ The following code snippet illustrates custom ports.
 
 Syncfusion.Windows.Forms.Diagram.Rectangle rect = new Syncfusion.Windows.Forms.Diagram.Rectangle(100, 100, 100, 50);
 rect.DrawPorts = true;
-Syncfusion.Windows.Forms.Diagram.ConnectionPoint cp = new Syncfusion.Windows.Forms.Diagram.ConnectionPoint();
-rect.Ports.Add(cp);
+
+//Create a custom port at the top-left corner
+Syncfusion.Windows.Forms.Diagram.ConnectionPoint cp_TopLeft = new Syncfusion.Windows.Forms.Diagram.ConnectionPoint();
+cp_TopLeft.Position = Position.TopLeft;
+cp_TopLeft.LineStyle.LineColor = Color.Blue;
+cp_TopLeft.LineStyle.LineWidth = 2;
+rect.Ports.Add(cp_TopLeft);
+
+//Create a custom port at the top-right corner
+Syncfusion.Windows.Forms.Diagram.ConnectionPoint cp_TopRight = new Syncfusion.Windows.Forms.Diagram.ConnectionPoint();
+cp_TopRight.Position = Position.TopRight;
+cp_TopRight.LineStyle.LineColor = Color.Red;
+cp_TopRight.LineStyle.LineWidth = 2;
+rect.Ports.Add(cp_TopRight);
+
+//Create a custom port at the bottom-left corner
+Syncfusion.Windows.Forms.Diagram.ConnectionPoint cp_BottomLeft = new Syncfusion.Windows.Forms.Diagram.ConnectionPoint();
+cp_BottomLeft.Position = Position.BottomLeft;
+cp_BottomLeft.LineStyle.LineColor = Color.DeepPink;
+cp_BottomLeft.LineStyle.LineWidth = 2;
+rect.Ports.Add(cp_BottomLeft);
+
+//Create a custom port at the bottom-right corner
+Syncfusion.Windows.Forms.Diagram.ConnectionPoint cp_BottomRight = new Syncfusion.Windows.Forms.Diagram.ConnectionPoint();
+cp_BottomRight.Position = Position.BottomRight;
+cp_BottomRight.LineStyle.LineColor = Color.Green;
+cp_BottomRight.LineStyle.LineWidth = 2;
+rect.Ports.Add(cp_BottomRight);
+
+diagram1.Model.AppendChild(rect);
 
 {% endhighlight %}
 {% highlight vb %}
 
 Dim rect As New Syncfusion.Windows.Forms.Diagram.Rectangle(100, 100, 100, 50)
 rect.DrawPorts = True
-Dim cp As New Syncfusion.Windows.Forms.Diagram.ConnectionPoint()
-rect.Ports.Add(cp)
+
+'Create a custom port at the top-left corner
+Dim cp_TopLeft As New Syncfusion.Windows.Forms.Diagram.ConnectionPoint()
+cp_TopLeft.Position = Position.TopLeft
+cp_TopLeft.FillStyle.Color = Color.Blue
+cp_TopLeft.LineStyle.LineColor = Color.Blue
+rect.Ports.Add(cp_TopLeft)
+
+'Create a custom port at the top-right corner
+Dim cp_TopRight As New Syncfusion.Windows.Forms.Diagram.ConnectionPoint()
+cp_TopRight.Position = Position.TopRight
+cp_TopRight.FillStyle.Color = Color.Blue
+cp_TopRight.LineStyle.LineColor = Color.Blue
+rect.Ports.Add(cp_TopRight)
+
+'Create a custom port at the bottom-left corner
+Dim cp_BottomLeft As New Syncfusion.Windows.Forms.Diagram.ConnectionPoint()
+cp_BottomLeft.Position = Position.BottomLeft
+cp_BottomLeft.FillStyle.Color = Color.Blue
+cp_BottomLeft.LineStyle.LineColor = Color.Blue
+rect.Ports.Add(cp_BottomLeft)
+
+'Create a custom port at the bottom-right corner
+Dim cp_BottomRight As New Syncfusion.Windows.Forms.Diagram.ConnectionPoint()
+cp_BottomRight.Position = Position.BottomRight
+cp_BottomRight.FillStyle.Color = Color.Blue
+cp_BottomRight.LineStyle.LineColor = Color.Blue
+rect.Ports.Add(cp_BottomRight)
+
+diagram1.Model.AppendChild(rect)
 
 {% endhighlight %}
 {% endtabs %}
@@ -128,9 +184,6 @@ Sample diagram is as follows.
 
 
 ![Custom Ports in Diagram](Ports-And-Connections_images/Ports-And-Connections_img2.jpeg)
-
-
-
 
 
 ### Port Shapes
@@ -228,10 +281,7 @@ cp.AllowConnectOnDrag = True
 ![Connection Point Properties in Diagram](Ports-And-Connections_images/Ports-And-Connections_img4.jpeg)
 
 
-
-
 Sample diagram is as follows:
-
 
 
 ![Connection Point Properties Sample in Diagram](Ports-And-Connections_images/Ports-And-Connections_img5.jpeg)
@@ -327,24 +377,11 @@ The image below illustrates the above settings.
 
 This property sets the size of the ports for the current ConnectionPoint. It accepts the ConnectionPointSize enumeration, which has the following predefined sizes:
 
-<table>
-<tr>
-<th>
-Size</th><th>
-Value</th></tr>
-<tr>
-<td>
-Large</td><td>
-12 * 12</td></tr>
-<tr>
-<td>
-Medium</td><td>
-9 * 9</td></tr>
-<tr>
-<td>
-Small</td><td>
-6 * 6</td></tr>
-</table>
+| Shape Category | Shape Name | Output Shape |
+| --- | --- | --- |
+| Large | 12 * 12 | ![LargePort](Ports-And-Connections_images/large_port.png) |
+| Medium | 9 * 9 | ![MediumPort](Ports-And-Connections_images/medium_port.png) |
+| Small | 6 * 6 | ![SmallPort](Ports-And-Connections_images/small_port.png) |
 
 The following code snippet illustrates how to set the connection point size.
 
@@ -390,7 +427,6 @@ Specifies the position where the links should be connected to the node. Default 
 
 The following code snippet defines the setting of the position values for a node's port.
 
-
 {% tabs %}
 {% highlight c# %}
 
@@ -413,19 +449,30 @@ cp.OffsetY = 10
 Sample diagram is as follows,
 
 
-
 ![BottomLeft in ConnectionPointSize](Ports-And-Connections_images/Ports-And-Connections_img9.jpeg)
 
 
+The following code snippet defines the setting of the offset values for a node's port.
 
 
-![TopCenter in ConnectionPointSize](Ports-And-Connections_images/Ports-And-Connections_img10.jpeg)
+{% tabs %}
+{% highlight c# %}
 
+Syncfusion.Windows.Forms.Diagram.ConnectionPoint cp = new Syncfusion.Windows.Forms.Diagram.ConnectionPoint();
+cp.OffsetX = 50;
+cp.OffsetY = 70;
 
+{% endhighlight %}
+{% highlight vb %}
 
+Dim cp As New Syncfusion.Windows.Forms.Diagram.ConnectionPoint()
+cp.OffsetX = 50
+cp.OffsetY = 70
 
-![MiddleRight in ConnectionPointSize](Ports-And-Connections_images/Ports-And-Connections_img11.jpeg)
+{% endhighlight %}
+{% endtabs %}
 
+Sample diagram is as follows,
 
 
 ![Custom in ConnectionPointSize](Ports-And-Connections_images/Ports-And-Connections_img12.jpeg)
