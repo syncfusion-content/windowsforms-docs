@@ -99,7 +99,6 @@ The following table lists the properties used to customize a connector's decorat
 <tr>
 <td>FillStyle</td><td>Properties for creating a brush to fill the decorator with.</td><td>FillStyle</td></tr>
 <tr>
-<tr>
 <td>Size</td><td>Gets or sets the width and height of the decorator.</td><td>SizeF</td></tr>
 <tr>
 <td>IsPathClosed</td><td>Gets a value indicating whether the decorator graphics path is closed (protected).</td><td>bool</td></tr>
@@ -227,9 +226,6 @@ Line bridging provides the visual effect such that the links jump over other lin
 
 
 ![Line-Bridging image](Connectors-or-Links_images/Line-Bridging_img1.jpeg)
-
-
-
 
 
 The below table lists the properties which controls the appearance of the bridge.

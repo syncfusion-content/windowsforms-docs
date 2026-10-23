@@ -51,7 +51,7 @@ float</td></tr>
 </table>
 
 
-Methods
+### Methods
 
 The following methods on the `View` perform the actual zoom operations.
 

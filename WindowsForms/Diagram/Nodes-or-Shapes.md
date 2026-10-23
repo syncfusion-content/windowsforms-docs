@@ -78,9 +78,6 @@ End Sub
 ![Nodes-or-Shapes_img1](Nodes-or-Shapes_images/Nodes-or-Shapes_img1.jpeg)
 
 
-
-
-
 ### Node Property Settings
 
 The following code example demonstrates how to apply node property settings.
@@ -338,7 +335,7 @@ In the above code snippets, the properties are set to the Rectangular node (rect
 
 WinForms Diagram provides dragging, resizing, and rotation styles such as ghost copy, filled rectangle, solid outline, and dashed outline for nodes. These styles improve the visual feedback of your diagram while dragging, rotating, or resizing nodes.
 
-Properties Table
+### Properties Table
 
 <table>
 <tr>
