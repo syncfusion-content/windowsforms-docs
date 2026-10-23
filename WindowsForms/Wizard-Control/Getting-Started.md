@@ -9,38 +9,23 @@ documentation: ug
 
 # Getting Started with Windows Forms Wizard Control
 
-This section describes how to add the [WizardControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html) to a Windows Forms application and provides an overview of its basic functionalities.
+This section explains how to get started with the Windows Forms [WizardControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html) and its basic features.
 
-## Assembly deployment
+## Assembly Deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#wizardcontrol) section for the list of assemblies and the NuGet package that must be added to use the control. The `Syncfusion.Tools.Windows` NuGet package brings in `Syncfusion.Grid.Base`, `Syncfusion.Grid.Windows`, `Syncfusion.Shared.Base`, `Syncfusion.Shared.Windows`, and `Syncfusion.Tools.Base` as transitive dependencies.
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#wizardcontrol) section for the list of assemblies and NuGet packages required to use the `WizardControl`.
 
-For more details on installing NuGet packages in a Windows Forms application, see:
-[How to install NuGet packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages).
+Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install NuGet packages in a Windows Forms application.
 
-To install via the NuGet Package Manager Console, run:
+To install the required NuGet package using the NuGet Package Manager Console, run the following command:
 
 ```powershell
 Install-Package Syncfusion.Tools.Windows
 ```
 
-## Creating a simple application with the WizardControl
+## Adding WizardControl via Designer
 
-You can create a Windows Forms application with the WizardControl as follows:
-
-1. [Create the project](#creating-the-project)
-2. [Add the control via the designer](#adding-control-via-the-designer)
-3. [Add the control manually in code](#add-the-control-manually-in-code)
-4. [Add wizard pages](#add-wizard-pages)
-5. [Configure the BannerPanel](#configure-the-bannerpanel)
-
-### Creating the project
-
-Create a new Windows Forms project in Visual Studio to host the [WizardControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html). For prerequisites, see [Assembly deployment](#assembly-deployment) above.
-
-## Adding control via designer
-
-The [WizardControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html) can be added to the form by dragging it from the **Toolbox → Syncfusion** tab and dropping it onto the designer view. The following required assembly references are added automatically:
+The [WizardControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html) can be added to a form by dragging it from the _Toolbox_ under the _Syncfusion_ category and dropping it onto the Windows Form designer. The following required assembly references are added automatically:
 
 * Syncfusion.Grid.Base.dll
 * Syncfusion.Grid.Windows.dll
@@ -49,19 +34,19 @@ The [WizardControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windo
 * Syncfusion.Tools.Base.dll
 * Syncfusion.Tools.Windows.dll
 
-After the control is dropped, set `WizardControl.Dock = DockStyle.Fill` so it fills the form.
+After adding the control to the form, set the `Dock` property to `Fill` (`DockStyle.Fill`) so that the control occupies the entire form.
 
-![Search WizardControl in the toolbox](Getting-Started_images/GettingStarted-img1.png)
+![Search WizardControl in the Toolbox](Getting-Started_images/GettingStarted-img1.png)
 
 ![Drag and drop the WizardControl onto the form](Getting-Started_images/GettingStarted-img2.png)
 
-N> In .NET Core / .NET 5+, the **Collection Editor** for the `WizardPages` property may display the title **ControlProxy`1 Collection Editor** instead of **WizardControlPage Collection Editor**. This is a known issue in the .NET Windows Forms Designer (external to Syncfusion) and does not affect functionality. For details, see GitHub issue [dotnet/winforms#14049](https://github.com/dotnet/winforms/issues/14049).
+> **Note:** In .NET Core and .NET 5+, the **Collection Editor** for the `WizardPages` property may display the title **ControlProxy`1 Collection Editor** instead of **WizardControlPage Collection Editor**. This is a known issue in the .NET Windows Forms Designer and does not affect functionality. For more information, see GitHub issue [dotnet/winforms#14049](https://github.com/dotnet/winforms/issues/14049).
 
-## Add the control manually in code
+## Adding WizardControl via Code
 
-To add the control manually in C# or VB, follow these steps.
+To add the `WizardControl` programmatically, follow these steps:
 
-**Step 1**: Add the following required assembly references to the project (only required when adding references manually, not when using the `Syncfusion.Tools.Windows` NuGet package):
+1. Add the following required assembly references to the project (this step is required only when adding references manually and is not required when using the `Syncfusion.Tools.Windows` NuGet package):
 
 * Syncfusion.Grid.Base.dll
 * Syncfusion.Grid.Windows.dll
@@ -70,7 +55,7 @@ To add the control manually in C# or VB, follow these steps.
 * Syncfusion.Tools.Base.dll
 * Syncfusion.Tools.Windows.dll
 
-**Step 2**: Include the `Syncfusion.Windows.Forms.Tools` namespace. Also include `Syncfusion.Windows.Forms`, which contains the [Theme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Theme.html) enum used to set the control's style (for example, `Theme.Metro`, `Theme.Office2016Colorful`).
+2. Include the `Syncfusion.Windows.Forms.Tools` namespace. Also include the `Syncfusion.Windows.Forms` namespace, which contains the `Theme` enumeration used to set the control style (for example, `Theme.Metro` and `Theme.Office2016Colorful`).
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -90,9 +75,9 @@ Imports Syncfusion.Windows.Forms
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-**Step 3**: Create a [WizardControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html) instance and add it to the form. Place the following code inside `Form1` (for example, in the `Form1` constructor or the `Form1_Load` handler).
+3. Create a [WizardControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html) instance and add it to the form. Place the following code in the `Form1` constructor or the `Form1_Load` event handler.
 
-Declare the `wizardControl1` field at the class scope of `Form1`:
+Declare the `wizardControl1` field at the class level of `Form1`:
 
 {% highlight C# %}
 public partial class Form1 : Form
@@ -115,7 +100,7 @@ Public Partial Class Form1
 End Class
 {% endhighlight %}
 
-Then, instantiate and add the control to `Form1`:
+Then, create an instance of the control and add it to the form:
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -139,11 +124,11 @@ Me.Controls.Add(Me.wizardControl1)
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-### Add wizard pages
+### Adding Wizard Pages
 
-[WizardControlPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html) can be added to the [WizardPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_WizardPages) array property of the WizardControl. The optional [WizardPageContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_WizardPageContainer) / [WizardContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardContainer.html) model is the underlying mechanism but is not required for the typical scenario.
+[WizardControlPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html) instances can be added to the [WizardPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_WizardPages) collection of the `WizardControl`. Although the [WizardPageContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_WizardPageContainer) / [WizardContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardContainer.html) model is used internally by the control, it is not required for typical usage scenarios.
 
-To avoid a `System.NullReferenceException` thrown by the wizard's `ReInitialize` step during initialization, configure all properties and assign the `WizardPages` array inside the `Form1` constructor after `InitializeComponent()`.
+To avoid a `System.NullReferenceException` during the wizard's reinitialization process, configure the wizard properties and assign the `WizardPages` collection in the `Form1` constructor after the `InitializeComponent()` call.
 
 {% tabs %}
 {% highlight C# %}
@@ -216,7 +201,11 @@ Me.wizardControl1.Banner = Me.pictureBox1
 
 ### Configure the BannerPanel
 
-Use the [BannerPanel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_BannerPanel) property to set the header content of the WizardControl by assigning a [GradientPanel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GradientPanel.html) that contains the desired title and description labels. Assigning `BannerPanel` re-parents the panel; you do not need to also add it to `WizardControl.Controls`. The `Title` and `Description` properties accept `Label` references; if the labels are not children of the `BannerPanel`, they are re-parented automatically.
+Use the [BannerPanel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_BannerPanel) property to configure the header area of the `WizardControl` by assigning a [GradientPanel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GradientPanel.html) that contains the required title and description labels.
+
+When a panel is assigned to the `BannerPanel` property, it is automatically re-parented to the `WizardControl`. Therefore, you do not need to add it separately to the `WizardControl.Controls` collection.
+
+The `Title` and `Description` properties accept `Label` references. If the specified labels are not children of the `BannerPanel`, they are automatically re-parented to the assigned panel.
 
 {% tabs %}
 {% highlight C# %}
@@ -271,11 +260,11 @@ Me.wizardControl1.BannerPanel = Me.gradientPanel1
 
 ![Banner panel on the wizard](Getting-Started_images/GettingStarted-img4.png)
 
-For more details on banner customization, see [Banner Settings](Banner-Settings.md). For per-page title and description overrides, see [Wizard Page Settings](Wizard-Page-Settings.md). For modern theming using `WizardControl.ThemeName` and `ThemeStyle`, see [Appearance](Wizard-Control-Appearance.md). For event handling, see [Event Handling](Event-Handling.md).
+For more information about banner customization, see [Banner Settings](Banner-Settings.md). For page-specific title and description settings, see [Wizard Page Settings](Wizard-Page-Settings.md). For modern theming using the `ThemeName` and `ThemeStyle` properties, see [Appearance](Wizard-Control-Appearance.md). For event-related customization, see [Event Handling](Event-Handling.md).
 
-## Change navigation button visibility
+## Change Navigation Button Visibility
 
-You can change the visibility of the Back, Cancel, Next, Help, and Finish navigation buttons on each [WizardControlPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html) using the [BackVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html#Syncfusion_Windows_Forms_Tools_WizardControlPage_BackVisible), [CancelVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html#Syncfusion_Windows_Forms_Tools_WizardControlPage_CancelVisible), [NextVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html#Syncfusion_Windows_Forms_Tools_WizardControlPage_NextVisible), [HelpVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html#Syncfusion_Windows_Forms_Tools_WizardControlPage_HelpVisible), and [FinishVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html#Syncfusion_Windows_Forms_Tools_WizardControlPage_FinishVisible) properties.
+You can control the visibility of the Back, Cancel, Next, Help, and Finish navigation buttons for each [WizardControlPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html) by using the [BackVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html#Syncfusion_Windows_Forms_Tools_WizardControlPage_BackVisible), [CancelVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html#Syncfusion_Windows_Forms_Tools_WizardControlPage_CancelVisible), [NextVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html#Syncfusion_Windows_Forms_Tools_WizardControlPage_NextVisible), [HelpVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html#Syncfusion_Windows_Forms_Tools_WizardControlPage_HelpVisible), and [FinishVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html#Syncfusion_Windows_Forms_Tools_WizardControlPage_FinishVisible) properties.
 
 {% tabs %}
 {% highlight C# %}
@@ -298,4 +287,4 @@ Me.wizardControlPage1.FinishVisible = False
 {% endhighlight %}
 {% endtabs %}
 
-![navigation button visibility](Getting-Started_images/GettingStarted-img8.png)
+![Wizard control navigation button visibility](Getting-Started_images/GettingStarted-img8.png)
