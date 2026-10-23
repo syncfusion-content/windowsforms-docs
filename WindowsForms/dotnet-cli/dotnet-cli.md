@@ -13,8 +13,6 @@ The Syncfusion<sup>®</sup> .NET CLI (`sf`) is a command line tool that creates 
 
 N> The Syncfusion<sup>®</sup> .NET CLI is currently in preview and is installed with the `--prerelease` flag.
 
-N> Package removal (`sf remove`) is temporarily disabled across all platforms while improvements are in progress.
-
 You can use the CLI to perform the following actions:
 
 * Create a blank Windows Forms app, or an app containing generated Syncfusion<sup>®</sup> control samples, in C# or VB.
