@@ -23,9 +23,10 @@ diagram1.MouseClick += diagram1_MouseClick;
 
 //defining mouse click event.
 
-private void diagram1_MouseClick(object sender, MouseEventArgs e){
+private void diagram1_MouseClick(object sender, MouseEventArgs e)
+{
 
-PointF pts= diagram1.Controller.ConvertFromModelToClientCoordinates(new PointF(e.X,e.Y));
+   PointF pts= diagram1.Controller.ConvertFromModelToClientCoordinates(new PointF(e.X,e.Y));
 
 }
 

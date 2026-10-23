@@ -18,7 +18,7 @@ The controls associated with the [WinForms Diagram](https://www.syncfusion.com/d
 
 The Overview Control provides a perspective view of a diagram model, and allows users to dynamically pan and zoom the diagram. The control features a viewport window that can be moved and/or resized using the mouse to modify the diagram's origin and magnification at run time.
 
-The most important property of the Overview Control is **Diagram**, which binds the overview to the target diagram.
+The most important property of the Overview Control is [Diagram](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.Diagram.html), which binds the overview to the target diagram.
 
 ### Properties
 
@@ -63,7 +63,7 @@ Occurs after the viewport bounds have changed.</td></tr>
 <tr>
 <td>
 ViewPortBoundsChanging</td><td>
-Occurs when the viewport bounds are about to change. Cancellable.</td></tr>
+Occurs when the viewport bounds are about to change. Cancelable.</td></tr>
 </table>
 
 The standard `Click`, `DoubleClick`, `MouseDown`, `MouseUp`, and `MouseMove` events are also inherited from `System.Windows.Forms.Control`.
@@ -97,12 +97,11 @@ overviewControl1.TabIndex = 1
 ![Pan and Zoom](Supported-Controls_images/Supported-Controls_img2.jpeg)
 
 
-
 ## PaletteGroupBar and GroupView
 
-The **PaletteGroupBar** control provides a way for users to drag and drop the symbols onto a diagram. It is based on the WinForms Tools GroupBar control. Each symbol palette loaded in the PaletteGroupBar occupies a panel that can be selected by a bar button. The bar button is labeled with the name of the symbol palette. The symbols in the palette are shown as icons that can be dragged and dropped onto the diagram. This control allows users to add symbols to a palette, and save or load the palette whenever necessary. It provides a way to classify and maintain the symbols.
+The [PaletteGroupBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.html) control provides a way for users to drag and drop the symbols onto a diagram. It is based on the WinForms Tools GroupBar control. Each symbol palette loaded in the PaletteGroupBar occupies a panel that can be selected by a bar button. The bar button is labeled with the name of the symbol palette. The symbols in the palette are shown as icons that can be dragged and dropped onto the diagram. This control allows users to add symbols to a palette, and save or load the palette whenever necessary. It provides a way to classify and maintain the symbols.
 
-The **PaletteGroupView** control provides an easy way to serialize a symbol palette to and from the resource file of a form. At design time, you can attach a symbol palette to a PaletteGroupView control on a form. Selecting the PaletteGroupView and clicking the **Palette** property in the Visual Studio .NET properties window opens a standard Open File dialog that allows the user to select a symbol palette file created using the Symbol Designer.
+The [PaletteGroupView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.html) control provides an easy way to serialize a symbol palette to and from the resource file of a form. At design time, you can attach a symbol palette to a PaletteGroupView control on a form. Selecting the PaletteGroupView and clicking the [Palette](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.html#Syncfusion_Windows_Forms_Diagram_Controls_PaletteGroupView_Palette) property in the Visual Studio .NET properties window opens a standard Open File dialog that allows the user to select a symbol palette file created using the Symbol Designer.
 
 ### Properties
 
@@ -375,7 +374,7 @@ paletteGroupView2.LoadPalette("..\..\..\..\..\..\..\..\..\Common\Data\Diagram\El
 
 ### Dynamically adding a Symbol Palette into PaletteGroupBar
 
-You can add Symbol Palettes into a `PaletteGroupBar` at run time by deserializing the palette (*.edp) file. The `PaletteGroupBar.AddPalette()` method lets you append a deserialized `SymbolPalette` instance to the bar.
+You can add Symbol Palettes into a [PaletteGroupBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.html) at run time by deserializing the palette (*.edp) file. The [AddPalette()](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.html#Syncfusion_Windows_Forms_Diagram_Controls_PaletteGroupBar_AddPalette) method lets you append a deserialized `SymbolPalette` instance to the bar.
 
 Before running the code below:
 
@@ -427,7 +426,7 @@ private void buttonLoadPalette_Click(object sender, EventArgs e)
 
 ### Saving the Active Palette
 
-You can save the currently active palette of the `PaletteGroupBar` window by serializing it as a `.edp` file. The `PaletteGroupBar.CurrentSymbolPalette` property returns the selected palette.
+You can save the currently active palette of the `PaletteGroupBar` window by serializing it as a `.edp` file. The [CurrentSymbolPalette](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.html#Syncfusion_Windows_Forms_Diagram_Controls_PaletteGroupBar_CurrentSymbolPalette) property returns the selected palette.
 
 Before running the code below:
 
@@ -512,8 +511,6 @@ paletteGroupBar1.Diagram = diagram1;
 
 N> Click the Diagram page to add the selected node. Click and drag to get the required size. 
 
-Sample Link
-
 To view a sample:
 
 1. Open the Syncfusion® Dashboard.
@@ -528,7 +525,7 @@ WinForms Diagram control provides preview support for Symbol Palette. When you d
 
 This feature displays a preview of the item you drag from Symbol Palette, thus enables you to identify the item you are dragging from the symbol palette to Diagram view.
 
-Property Table
+**Property Table**
 
 <table>
 <tr>
@@ -557,7 +554,7 @@ NA</td></tr>
 
 ### Enabling Preview Support
 
-To enable preview for the dragged item from Symbol Palette, set the _DragNodeCueEnabled_ property of _PaletteGroupBar/PaletteGroupView_ to true. To disable preview set this to false. By default this is set to true.  
+To enable preview for the dragged item from Symbol Palette, set the [DragNodeCueEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.html#Syncfusion_Windows_Forms_Diagram_Controls_PaletteGroupBar_DragNodeCueEnabled) property of **PaletteGroupBar/PaletteGroupView** to true. To disable preview set this to false. By default this is set to true.  
 
 Following code example illustrates how to enable preview support:  
 
@@ -608,8 +605,6 @@ paletteGroupView1.ShowDragNodeCue = False;
 
 {% endhighlight %}
 {% endtabs %}
-
-Sample Link
 
 To view a sample:
 
@@ -732,7 +727,7 @@ Sets visibility of the control.</td></tr>
 </table>
 
 
-_Document Explorer_
+**Document Explorer**
 
 <table>
 <tr>
@@ -820,10 +815,7 @@ Occurs when a node is double-clicked with the mouse.</td></tr>
 Programmatically, the properties can be set as follows.
 
 
-
 {% highlight c# %}
-
-
 
 documentExplorer1.AttachModel(model1);
 
@@ -842,8 +834,6 @@ documentExplorer1.ShowNodeToolTips = true;
 {% endhighlight %}
 
 {% highlight vbnet %}
-
-
 
 documentExplorer1.AttachModel(model1)
 
@@ -864,19 +854,11 @@ documentExplorer1.ShowNodeToolTips = True
 ![Document Explorer](Supported-Controls_images/Supported-Controls_img4.jpeg)
 
 
-
-
-
-Sample code snippet for documentExplorer1.AfterSelect Event
-
-
+**Sample code snippet for documentExplorer1.AfterSelect Event**
 
 {% highlight c# %}
 
-
-
-documentExplorer1.AfterSelect+=new TreeViewEventHandler( documentExplorer1_AfterSelect );
-
+documentExplorer1.AfterSelect += new TreeViewEventHandler( documentExplorer1_AfterSelect );
 
 
 private void documentExplorer1_AfterSelect(object sender,TreeViewEventArgs e) 
@@ -952,8 +934,3 @@ this.propertyEditor1.Diagram = diagram1;
 {% endhighlight %}
 
 ![Property Editor](Supported-Controls_images/Supported-Controls_img6.jpeg)
-
-
-
-
-

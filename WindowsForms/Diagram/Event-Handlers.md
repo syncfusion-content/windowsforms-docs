@@ -23,8 +23,7 @@ This topic discusses the events that are fired while adding or removing a node t
 
 <table>
 <tr>
-<th>
-{{'[DiagramViewerEventSink](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DiagramViewerEventSink.html#"")'| markdownify }}</th><th>
+<th>DiagramViewerEventSink</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -127,11 +126,7 @@ End Sub
 The sample diagrams are as follows,
 
 
-
 ![Event-Handlers_img1](Event-Handlers_images/Event-Handlers_img1.jpeg)
-
-
-
 
 
 ![Event-Handlers_img2](Event-Handlers_images/Event-Handlers_img2.jpeg)
@@ -273,9 +268,7 @@ Triggered when a UI tool is deactivated.</td></tr>
 
 Data can be retrieved or set using the following members.
 
-
-
-Members
+**Members**
 
 <table>
 <tr>
@@ -338,11 +331,7 @@ Sample diagrams are as follows,
 ![Event-Handlers_img3](Event-Handlers_images/Event-Handlers_img3.jpeg)
 
 
-
-
-
 ![Event-Handlers_img4](Event-Handlers_images/Event-Handlers_img4.jpeg)
-
 
 
 ### Origin Events
@@ -541,11 +530,7 @@ End Sub
 Sample diagrams are as follows,
 
 
-
 ![Event-Handlers_img7](Event-Handlers_images/Event-Handlers_img7.jpeg)
-
-
-
 
 
 ![Event-Handlers_img8](Event-Handlers_images/Event-Handlers_img8.jpeg)
@@ -759,11 +744,7 @@ End Sub
 Sample diagrams are as follows,
 
 
-
 ![Event-Handlers_img9](Event-Handlers_images/Event-Handlers_img9.jpeg)
-
-
-
 
 
 ![Event-Handlers_img10](Event-Handlers_images/Event-Handlers_img10.jpeg)
@@ -905,9 +886,6 @@ Sample diagrams are as follows,
 
 
 ![Event-Handlers_img11](Event-Handlers_images/Event-Handlers_img11.jpeg)
-
-
-
 
 
 ![Event-Handlers_img12](Event-Handlers_images/Event-Handlers_img12.jpeg)
@@ -1086,24 +1064,12 @@ End Sub
 Sample diagrams are as follows:
 
 
-
 ![Event-Handlers_img13](Event-Handlers_images/Event-Handlers_img13.jpeg)
-
-
-
-
 
 ![Event-Handlers_img14](Event-Handlers_images/Event-Handlers_img14.jpeg)
 
 
-
-
-
 ![Event-Handlers_img15](Event-Handlers_images/Event-Handlers_img15.jpeg)
-
-
-
-
 
 ![Event-Handlers_img16](Event-Handlers_images/Event-Handlers_img16.jpeg)
 
@@ -1204,10 +1170,6 @@ Sample diagram are as follows:
 
 
 ![Event-Handlers_img17](Event-Handlers_images/Event-Handlers_img17.jpeg)
-
-
-
-
 
 ![Event-Handlers_img18](Event-Handlers_images/Event-Handlers_img18.jpeg)
 
@@ -1314,10 +1276,6 @@ Sample diagram is as follows.
 
 
 ![Event-Handlers_img19](Event-Handlers_images/Event-Handlers_img19.jpeg)
-
-
-
-
 
 ##### Ports Events
 
@@ -1474,11 +1432,7 @@ End Sub
 Sample diagrams are as follows.
 
 
-
 ![Event-Handlers_img21](Event-Handlers_images/Event-Handlers_img21.jpeg)
-
-
-
 
 
 ![Event-Handlers_img22](Event-Handlers_images/Event-Handlers_img22.jpeg)
