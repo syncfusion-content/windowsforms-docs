@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion .NET CLI Overview for Windows Forms | Syncfusion®
-description: The Syncfusion .NET CLI (sf) creates Windows Forms projects and manages Syncfusion® Windows Forms NuGet packages from the command line. Learn its installation, commands, project creation workflow, and troubleshooting.
+description: The Syncfusion .NET CLI (sf) creates Windows Forms projects and manages Syncfusion® WinForms NuGet packages from the command line.
 platform: windowsforms
 control: Syncfusion<sup>®</sup> .NET CLI
 documentation: ug
