@@ -1,4 +1,4 @@
----
+<img width="2330" height="2268" alt="image" src="https://github.com/user-attachments/assets/c99995ea-e4a6-4167-966a-d1084441582f" />---
 layout: post
 title: Getting Started with Windows Forms Splash Screen | Syncfusion®
 description: Learn how to get started with the Syncfusion® Windows Forms Splash Screen. Explore setup, features, examples, and customization options.
@@ -7,31 +7,25 @@ control: Splash Screen
 documentation: ug
 ---
 
-# Getting Started with Windows Forms Splash Screen (Splash)
+# Getting Started with Windows Forms Splash Screen
 
-* [Assembly deployment](#assembly-deployment)
-* [Adding SplashControl through the designer](#adding-splashcontrol-through-the-designer)
-* [Adding SplashControl through code](#adding-splashcontrol-through-code)
+This section explains how to get started with the Windows Forms Splash Screen control and its basic features.
 
-This section explains how to add the `SplashControl` to a Windows Forms application and provides an overview of its basic functionalities.
+## Assembly Deployment
 
-## Assembly deployment
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#splashcontrol) section for the list of assemblies and NuGet packages required to use the `SplashControl`.
 
-Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#splashcontrol) section to get the list of assemblies or NuGet packages that need to be added as references to use the control in any application.
+Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install NuGet packages in a Windows Forms application.
 
-You can find more details about installing the NuGet packages in a Windows Forms application at the following link:
-
-[How to install NuGet packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
-
-To install via the NuGet Package Manager Console, run:
+To install the required NuGet package using the NuGet Package Manager Console, run the following command:
 
 ```powershell
 Install-Package Syncfusion.Tools.Windows
 ```
 
-## Adding SplashControl through the designer
+## Adding Splash Screen via Designer
 
-The `SplashControl` control provides full support for the Windows Forms designer. Dragging the control from the toolbox onto the form automatically adds the following required assembly references to the project:
+The `SplashControl` provides full support for the Windows Forms designer. When the control is dragged from the _Toolbox_ onto the form, the following required assembly references are added automatically:
 
 * Syncfusion.Grid.Base.dll
 * Syncfusion.Grid.Windows.dll
@@ -40,28 +34,34 @@ The `SplashControl` control provides full support for the Windows Forms designer
 * Syncfusion.Tools.Base.dll
 * Syncfusion.Tools.Windows.dll
 
-1. Drag and drop the `SplashControl` from the toolbox onto the form. The `SplashControl` will be created in the components area of the form.
+1. Drag the `SplashControl` from the _Toolbox_ onto the form. The `SplashControl` is created in the component tray of the form.
 
-    ![Drag and drop the Splash Screen from toolbox in WindowsForms application](overview_images/windowsforms-splash-screen-drag-and-drop.jpeg)
+   ![Drag and drop the Splash Screen from toolbox in Windows Forms application](overview_images/windowsforms-splash-screen-drag-and-drop.jpeg)
 
-2. Set the `SplashImage` and `TimerInterval` properties through the property grid.
-3. Set the `AutoMode` property. This property controls how the `SplashControl` is invoked. When `AutoMode` is set to `true`, the `SplashControl` automatically launches itself during the parent form's `Load` event. When `AutoMode` is set to `false`, the splash screen must be invoked explicitly by calling the `ShowSplash()` method.
-4. Preview the splash at design time using the **Preview Splash** option on the smart tag.
+2. Set the `SplashImage` and `TimerInterval` properties in the **Properties** window.
 
-    ![WindowsForms Splash Screen showing in designer page](overview_images/windowsforms-splash-screen-showing-in-designer-page.jpeg)
+3. Set the `AutoMode` property. This property determines how the Splash Screen is displayed.
+   - When `AutoMode` is set to `true`, the Splash Screen is displayed automatically during the parent form's `Load` event.
+   - When `AutoMode` is set to `false`, the splash screen must be displayed explicitly by calling the `ShowSplash()` method.
+
+4. Preview the splash screen at design time by using the **Preview Splash** option in the Smart Tag.
+
+   ![Windows Forms Splash Screen showing in designer page](overview_images/windowsforms-splash-screen-showing-in-designer-page.jpeg)
 
 5. Run the application to display the splash screen.
 
-    ![Showing Splash Screen at run time in WindowsForms](overview_images/windowsforms-splash-screen-at-run-time.jpeg)
+   ![Showing Splash Screen at run time in Windows Forms](overview_images/windowsforms-splash-screen-at-run-time.jpeg)
 
-6. Handle the `SplashClosed` event to run code after the splash screen closes.
-7. Dismiss the splash while it is displaying by calling the `HideSplash()` method.
+6. Handle the `SplashClosed` event to execute code after the splash screen is closed.
 
-## Adding SplashControl through code
+7. Hide the splash screen while it is displayed by calling the `HideSplash()` method.
 
-To create a `SplashControl` programmatically, follow the steps below.
+## Adding Splash Screen via Code
 
-1. Create a new Visual C# or VB.NET application in Visual Studio.
+To create a `SplashControl` programmatically, follow these steps:
+
+1. Create a new C# or VB.NET Windows Forms application in Visual Studio.
+
 2. Add the following required assembly references to the project:
 
     * Syncfusion.Grid.Base.dll
@@ -71,7 +71,7 @@ To create a `SplashControl` programmatically, follow the steps below.
     * Syncfusion.Tools.Base.dll
     * Syncfusion.Tools.Windows.dll
 
-3. Add the namespace shown below to your form.
+3. Include the required namespace.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -89,7 +89,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4. Declare the `SplashControl`.
+4. Declare an instance of the `SplashControl`.
 
 {% capture codesnippet2 %}​
 {% tabs %}
@@ -129,7 +129,7 @@ Me.SuspendLayout()
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-6. Set the properties for the `SplashControl`.
+6. Configure the required properties of the `SplashControl`.
 
 {% capture codesnippet4 %}
 {% tabs %}
@@ -156,4 +156,4 @@ Me.SplashControl1.TimerInterval = 3000
 
 7. Run the application to display the splash screen.
 
-    ![WindowsForms Splash Screen displayed at run time](overview_images/windowsforms-splash-screen-displayed-at-run-time.jpeg) 
+    ![Windows Forms Splash Screen displayed at run time](overview_images/windowsforms-splash-screen-displayed-at-run-time.jpeg) 
