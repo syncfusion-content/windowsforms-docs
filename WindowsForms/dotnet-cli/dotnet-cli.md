@@ -142,7 +142,7 @@ Run `sf new`, or select **Create a new project** from the main menu. The Windows
 
 7. **Controls:** When you include controls, choose one or more controls from the list. Controls start unchecked, and at least one selection is required.
 
-    ![Configured Windows Forms options in the Syncfusion .NET CLI](images/confired-winforms-options.png)
+    ![Configured Windows Forms options in the Syncfusion .NET CLI](images/cli-configured-winforms-options.png)
 
 8. **Post-create:** Select **Generate only** or **Build project**.
 
@@ -207,7 +207,7 @@ sf list winforms packages
 sf list winforms installed --path /full/path/MyApp.vbproj
 ```
 
-![List of available packages in the Syncfusion .NET CLI](images/list-of-avilable-package.png)
+![List of available packages in the Syncfusion .NET CLI](images/cli-list-of-available-packages.png)
 
 To search the package catalog:
 
@@ -271,7 +271,7 @@ N> `--post-action build` conflicts with `--no-build`. Neither `--force` nor conf
 
 Run `sf help` for a short command map, or `sf help winforms` for the Windows Forms command examples.
 
-![Show help in the Syncfusion .NET CLI](images/show-help.png)
+![Show help in the Syncfusion .NET CLI](images/cli-show-help.png)
 
 ## Examples
 
@@ -319,7 +319,7 @@ dotnet build "<generated-project.csproj>"
 
 To skip the build and generate the files only, use `--post-action generate` or `--no-build`.
 
-![Sample created in the Syncfusion .NET CLI](images/sample-created.png)
+![Sample created in the Syncfusion .NET CLI](images/cli-sample-created.png)
 
 ### Existing project is not found
 
