@@ -9,37 +9,37 @@ documentation: ug
 
 # Getting Started with Windows Forms AutoLabel
 
-This section briefly describes how to create a new Windows Forms project in Visual Studio and add the [AutoLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoLabel.html) control with its basic functionalities.
+This section explains how to get started with the Windows Forms [AutoLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoLabel.html) control and its basic features.
 
-## Assembly deployment
+## Assembly Deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#autolabel) section to get the list of assemblies or NuGet package details that need to be added as reference to use the control in any application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#autolabel) section for the list of assemblies and NuGet packages required to use the `AutoLabel` control.
 
-Refer to this [documentation](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to find more details about installing NuGet packages in a Windows Forms application.
+Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install NuGet packages in a Windows Forms application.
 
-You can also add the required assemblies as references from the Package Manager Console using the following PowerShell command:
+To install the required NuGet package using the NuGet Package Manager Console, run the following command:
 
 ```powershell
 Install-Package Syncfusion.Shared.Base
 ```
 
-## Adding the AutoLabel control via designer
+## Adding AutoLabel via Designer
 
 1. Create a new Windows Forms application in Visual Studio.
 
-2. Add the [AutoLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoLabel.html) control to the application by dragging it from the toolbox to the design view. The following dependent assembly will be added automatically:
+2. Drag the `AutoLabel` control from the _Toolbox_ and drop it onto the Windows Form designer. The following dependent assembly is added automatically:
 
     * Syncfusion.Shared.Base
 
-  ![Drag and drop AutoLabel from toolbox.](AutoLabel-Images/Overview_img5.jpg)
+   ![Drag and drop AutoLabel from Toolbox](AutoLabel-Images/Overview_img5.jpg)
 
-3. Set the desired properties for the [AutoLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoLabel.html) control using the **Properties** dialog.
+3. Configure the desired properties of the `AutoLabel` control using the _Properties_ window.
 
-## Adding the AutoLabel control via code
+## Adding AutoLabel via Code
 
-The following steps describe how to create an AutoLabel control programmatically.
+The following steps describe how to create an `AutoLabel` control programmatically:
 
-1. Create a C# or VB application via Visual Studio.
+1. Create a C# or VB.NET Windows Forms application in Visual Studio.
 
 2. Add the following assembly reference to the project:
 
@@ -68,7 +68,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4. Create an instance of the [AutoLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoLabel.html) control, set its properties, and add it to **Form1**.
+4. Create an instance of the [AutoLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoLabel.html) control, configure its properties, and add it to the form.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -121,11 +121,11 @@ End Class
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-## Labeling a control
+## Labeling a Control
 
-1. Add one control to the form. For example, [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html).
+1. Add a control to the form, such as [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html).
 
-2. Right-click on the [AutoLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoLabel.html) control, choose **Properties**, and select the `LabeledControl` property. You can then select the newly added **TextBoxExt** control from the drop-down.
+2. Select the AutoLabel control, and in the _Properties_ window, set the `LabeledControl` property to the `TextBoxExt` control. The AutoLabel control is then automatically positioned relative to the labeled control.
 
 {% capture codesnippet3 %}
 {% tabs %}
@@ -148,7 +148,7 @@ Me.autoLabel1.LabeledControl = Me.textBoxExt1
 
 ## Spacing
 
-The space between the [AutoLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoLabel.html) control and the labeled control can be customized using the following properties. When using relative positioning, you can also specify the gap between the label and the control.
+The space between the [AutoLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoLabel.html) control and its associated control can be customized using the available spacing properties. When relative positioning is used, you can specify the gap between the label and the associated control.
 
 <table>
 <tr>
@@ -191,20 +191,13 @@ Me.autoLabel1.Gap = 10
 
 ## Position
 
-The [AutoLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoLabel.html) control can be positioned relative to the top, left, bottom, or right of the labeled control.
+The [AutoLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoLabel.html) control can be positioned relative to the top, left, bottom, or right side of the labeled control.
 
-<table>
-<tr>
-<th>
-AutoLabel Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-Position</td><td>
-Specifies the relative position of the AutoLabel and the labeled control. The available options are: Left, Top, Right, Bottom, and Custom.</td></tr>
-</table>
+| AutoLabel Property | Description |
+| --- | --- |
+| `Position` | Specifies the relative position of the `AutoLabel` control with respect to the labeled control. The available values are `Left`, `Top`, `Right`, `Bottom`, and `Custom`. |
 
-When the [Position](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoLabel.html#Syncfusion_Windows_Forms_Tools_AutoLabel_Position) property is set to **Custom**, you can drag the label to the required position using the mouse.
+When the [Position](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoLabel.html#Syncfusion_Windows_Forms_Tools_AutoLabel_Position) property is set to `Custom`, you can drag the label to the required position by using the mouse.
 
 {% tabs %}
 {% highlight C# %}
@@ -224,22 +217,9 @@ Me.autoLabel1.Position = Syncfusion.Windows.Forms.Tools.AutoLabelPosition.Left
 
 ## Size
 
-This section explains the size settings of the [AutoLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoLabel.html) control.
+The `AutoLabel` control can be resized using the `AutoSize` property. It automatically resizes the control based on the size of its content and font.
 
-The **AutoLabel** control can be resized using the following property.
-
-<table>
-<tr>
-<th>
-AutoLabel Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-AutoSize</td><td>
-Enables automatic resizing based on the font size.</td></tr>
-</table>
-
-N> This applies only to label controls that do not wrap text.
+> **Note:** This property applies only to label controls that do not wrap text.
 
 {% tabs %}
 {% highlight C# %}
@@ -255,9 +235,9 @@ Me.autoLabel1.AutoSize = True
 {% endhighlight %}
 {% endtabs %}
 
-## Adding themes to control with SkinManager
+## Applying Themes Using SkinManager
 
-You can apply the required skin to the AutoLabel control by calling [SkinManager.SetVisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.SkinManager.html#Syncfusion_Windows_Forms_SkinManager_SetVisualStyle_System_Windows_Forms_Control_Syncfusion_Windows_Forms_VisualTheme_) with a [VisualTheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.VisualTheme.html) value.
+You can apply a theme to the `AutoLabel` control by calling the [SkinManager.SetVisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.SkinManager.html#Syncfusion_Windows_Forms_SkinManager_SetVisualStyle_System_Windows_Forms_Control_Syncfusion_Windows_Forms_VisualTheme_) method and specifying a [VisualTheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.VisualTheme.html) value.
 
 {% tabs %}
 {% highlight C# %}
