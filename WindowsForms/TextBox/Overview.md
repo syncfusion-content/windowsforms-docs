@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion® Windows Forms TextBox Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms TextBox (TextBoxExt) control and more details.
-platform: WindowsForms
+platform: windowsforms
 control: TextBoxExt
 documentation: ug
 ---

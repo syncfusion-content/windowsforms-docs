@@ -2,7 +2,7 @@
 layout: post
 title: Boundary Value Settings in Windows Forms Progress Bar | Syncfusion®
 description: Boundary value settings in Windows Forms Progress Bar define minimum and maximum values, ensuring accurate progress tracking.
-platform: WindowsForms
+platform: windowsforms
 control: Progress Bar
 documentation: ug
 ---

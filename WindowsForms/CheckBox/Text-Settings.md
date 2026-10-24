@@ -62,7 +62,7 @@ Me.checkBoxAdv1.WrapText = True
 
 {% seealso %}
 
-[Alignment Settings](https://help.syncfusion.com/windowsforms/checkbox/alignment-settings)
+[Windows Forms CheckBox Alignment Settings](https://help.syncfusion.com/windowsforms/checkbox/alignment-settings)
 
 {% endseealso %}
 

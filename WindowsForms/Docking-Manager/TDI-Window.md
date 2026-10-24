@@ -212,7 +212,7 @@ The DocumentTab group has been created at the left.
 
 N> Similarly document tabs can be created in all four directions (Left, Top, Right, Bottom)
 
-The docking direction (DockHints) can be restricted by setting `DockAbility` to each docking child. More details about `DockAbility` has been explained in [Dealing with docking child](https://help.syncfusion.com/windowsforms/dockingmanager/dealing-with-docking-child#restrict-to-dock-on-specific-sides) section.
+The docking direction (DockHints) can be restricted by setting `DockAbility` to each docking child. More details about `DockAbility` has been explained in [Dealing with docking child](https://help.syncfusion.com/windowsforms/docking-manager/dealing-with-docking-child) section.
 
 ## Disable tab group creation
 

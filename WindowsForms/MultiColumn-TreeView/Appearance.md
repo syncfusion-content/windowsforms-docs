@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
 title: Appearance in Windows Forms MultiColumn TreeView | Syncfusion®
 description: Appearance customization supports borders, colors, styles, images, header formatting, and node visual customization.
-platform: WindowsForms
+platform: windowsforms
 control: MultiColumnTreeView
 documentation: ug
 ---

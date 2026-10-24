@@ -5,7 +5,6 @@ description: Tooltip support in the Windows Forms TreeMap displays additional in
 platform: windowsforms
 control: TreeMap 
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Tooltip Support in WinForms TreeMap

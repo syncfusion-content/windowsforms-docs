@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Windows Forms Grouping | Syncfusion®
 description: Learn how to get started with the Syncfusion® Windows Forms Grouping control. Explore setup, features, examples, and customization options.
-platform: WindowsForms
+platform: windowsforms
 control: Grouping
 documentation: ug
 ---
@@ -132,7 +132,7 @@ Data Files-If you have .xml, .MDB, or other data files, ensure that they have su
 
 Refer to the document in the following path, for step by step process of Syncfusion<sup>®</sup> assemblies’ deployment in ASP.NET.
 
-[http://www.syncfusion.com/support/user/uploads/webdeployment_c883f681.pdf](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/support/user/uploads/webdeployment_c883f681.pdf)
+[https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/support/user/uploads/webdeployment_c883f681.pdf](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/support/user/uploads/webdeployment_c883f681.pdf)
 
 N> Application with Essential<sup>®</sup> Grouping needs the following dependent assemblies for deployment.
 

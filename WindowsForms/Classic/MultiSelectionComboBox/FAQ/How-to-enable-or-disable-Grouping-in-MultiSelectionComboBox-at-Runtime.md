@@ -2,7 +2,7 @@
 layout: post
 title: MultiSelectionComboBox at Runtime | WindowsForms | Syncfusion
 description: Learn about How to Enable or Disable Grouping in Syncfusion Windows Forms MultiSelectionComboBox control and more.
-platform: WindowsForms
+platform: windowsforms
 control: Editors Package
 documentation: ug
 ---

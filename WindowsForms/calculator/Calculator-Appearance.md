@@ -45,8 +45,8 @@ Background settings for the WinForms Calculator control are discussed in this se
 
 The background of the WinForms Calculator can be painted using the following properties:
 
-* [BackColor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backcolor?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_BackColor) - Sets a single solid color.
-* [BackgroundColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_BackgroundColor) - Accepts a `Syncfusion.Drawing.BrushInfo` that supports gradients and patterns.
+* [BackColor](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backcolor?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_BackColor)
+* [BackgroundColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_BackgroundColor)
 
 {% tabs %}
 {% highlight C# %}
@@ -63,7 +63,7 @@ Me.calculatorControl1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfus
 
 ### Background Image
 
-The background of the WinForms Calculator control can be filled with an image using [BackgroundImage](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backgroundimage?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_BackgroundImage) property.
+The background of the WinForms Calculator control can be filled with an image using [BackgroundImage](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backgroundimage?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_BackgroundImage) property.
 
 {% tabs %}
 {% highlight C# %}

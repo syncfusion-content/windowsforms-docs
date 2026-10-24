@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
 title: Scrollbar Customization in Windows Forms TreeView | Syncfusion®
 description: Scrollbar customization supports scrollbar visibility, pixel scrolling, Metro styling, Office styling, and scroll events.
-platform: WindowsForms
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---

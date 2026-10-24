@@ -2,7 +2,7 @@
 layout: post
 title: Display Settings in Windows Forms NumericUpdown | Syncfusion®
 description: Display settings in Windows Forms NumericUpdown enable configuring decimal places and thousand separators for accurate and readable numeric value display.
-platform: WindowsForms
+platform: windowsforms
 control: NumericUpdown
 documentation: ug
 ---
