@@ -2503,14 +2503,6 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[LEFT](https://support.microsoft.com/en-us/excel/functions/left-function)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[LEFTB](/windowsforms/calculation-engine/supported-formulas/text-formulas#leftb)'| markdownify }}</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>{{'[LEFTB](https://support.microsoft.com/en-us/excel/functions/left-function)'| markdownify }}</td></tr>
-<tr>
 <td>{{'[LEN](/windowsforms/calculation-engine/supported-formulas/text-formulas#len)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
