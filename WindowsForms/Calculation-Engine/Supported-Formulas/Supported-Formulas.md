@@ -634,7 +634,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[ROUNDDOWN](https://support.microsoft.com/en-us/excel/functions/roundup-function)'| markdownify }}</td></tr>
+<td>{{'[ROUNDDOWN](https://support.microsoft.com/en-us/excel/functions/rounddown-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[SQRT](/windowsforms/calculation-engine/supported-formulas/math-trigonometry#sqrt)'| markdownify }}</td>
 <td>yes</td>
@@ -813,7 +813,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[BINOMDIST](https://support.microsoft.com/en-us/excel/functions/binom-dist-function)'| markdownify }}</td>
+<td>{{'[BINOMDIST](https://support.microsoft.com/en-us/excel/functions/binomdist-function)'| markdownify }}</td>
 </tr>
 <tr>
 <td>{{'[BINOM.INV](/windowsforms/calculation-engine/supported-formulas/statistical#binominv)'| markdownify }}</td>
@@ -2348,7 +2348,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[SECOND](https://support.microsoft.com/en-us/excel/second-function)'| markdownify }}</td></tr>
+<td>{{'[SECOND](https://support.microsoft.com/en-us/excel/functions/second-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[TIME](/windowsforms/calculation-engine/supported-formulas/date-time#time)'| markdownify }}</td>
 <td>yes</td>
@@ -3322,7 +3322,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[RECEIVED](https://support.microsoft.com/en-us/excel/functions/rate-function)'| markdownify }}</td></tr>
+<td>{{'[RECEIVED](https://support.microsoft.com/en-us/excel/functions/received-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[RRI](/windowsforms/calculation-engine/supported-formulas/financial-formulas#rri)'| markdownify }}</td>
 <td>yes</td>
