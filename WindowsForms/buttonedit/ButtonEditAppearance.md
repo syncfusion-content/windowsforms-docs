@@ -240,6 +240,6 @@ N> This case setting can be overridden by TextBox.CharacterCasing property.
 
 {% seealso %}
 
-[TextBox Settings for ButtonEdit](http://help.syncfusion.com/windowsforms/buttonedit/textboxsettingsforbuttonedit), [Child Button Customization](https://help.syncfusion.com/windowsforms/buttonedit/childbuttoncustomization)
+[TextBox Settings for ButtonEdit](https://help.syncfusion.com/windowsforms/buttonedit/textboxsettingsforbuttonedit), [Child Button Customization](https://help.syncfusion.com/windowsforms/buttonedit/childbuttoncustomization)
 
 {% endseealso %}
