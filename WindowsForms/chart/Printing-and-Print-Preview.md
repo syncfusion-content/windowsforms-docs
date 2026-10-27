@@ -10,39 +10,35 @@ appliesto: UI Component Suite, Chart SDK
 
 # Printing in Windows Forms Chart
 
+The Windows Forms Chart control supports printing that enables you to print the chart.
+
 ## Print Preview
 
-The chart provides a [PrintDocument](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_PrintDocument) that can be sent to the .NET PrintPreviewDialog to get a preview of the chart that gets printed. Here is some code that shows how this is done.
+The chart exposes a [PrintDocument](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_PrintDocument) property that can be assigned to a `.NET PrintPreviewDialog` to preview the chart before printing.
 
-{% tabs %}  
+The following code example demonstrates how to display a print preview dialog for the chart.
 
+{% tabs %}
 {% highlight c# %}
 
-PrintPreviewDialog printPreviewDialog1 = new PrintPreviewDialog();
-
+PrintPreviewDialog printPreviewDialog = new PrintPreviewDialog(); 
 //Customizing the icon of print preview dialog
-
-(printPreviewDialog1 as Form).Icon = new Icon(@"..\..\App.ico");
-
-printPreviewDialog1.Document = this.chartControl1.PrintDocument;
-
-printPreviewDialog1.ShowDialog();
+(printPreviewDialog as Form).Icon = new Icon(@"....\App.ico");
+printPreviewDialog.Document = this.chartControl.PrintDocument;
+printPreviewDialog.ShowDialog();
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Me.printPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog
-
-'Customizing the icon of print preview dialog
-
-CType(printPreviewDialog1,Form).Icon = New Icon("..\..\App.ico")
-
-printPreviewDialog1.Document = Me.chartControl1.PrintDocument
-
-printPreviewDialog1.ShowDialog()
+Dim printPreviewDialog As New PrintPreviewDialog()
+' Customizing the icon of the print preview dialog.
+CType(printPreviewDialog, Form).Icon = New Icon("..\..\App.ico")
+printPreviewDialog.Document = Me.chartControl.PrintDocument
+printPreviewDialog.ShowDialog()
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ![Chart Print](Printing-and-Print-Preview_images/Printing-and-Print-Preview_img1.jpeg)
@@ -51,52 +47,43 @@ printPreviewDialog1.ShowDialog()
 
 Print a chart control using the [PrintDocument](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_PrintDocument) exposed by the chart control as follows:
 
+N> For a complete example that demonstrates printing a chart across multiple pages, refer to [How to print a chart in multiple pages](https://help.syncfusion.com/windowsforms/chart/faq/how-to-print-a-chart-in-multiple-pages).
+
 {% tabs %}  
 
 {% highlight c# %}
 
-this.chartControl1.PrintDocument.Print();
+this.chartControl.PrintDocument.Print();
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Me.chartControl1.PrintDocument.Print()
+Me.chartControl.PrintDocument.Print()
 
 {% endhighlight %}
 {% endtabs %}
 
-You can also specify if you want to print the chart in Color or GrayScale using [PrintColorMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_PrintColorMode) property.
+You can also specify whether the chart should be printed in color or grayscale by using the [PrintColorMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_PrintColorMode) property. By default, the chart uses the [CheckPrinter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPrintColorMode.html#Syncfusion_Windows_Forms_Chart_ChartPrintColorMode_CheckPrinter) mode to determine whether it should be printed in color or grayscale.
 
-<table>
-<tr>
-<th>
-Chart control Property
-</th>
-<th>
-Description
-</th>
-</tr>
-<tr>
-<td>
+The [PrintColorMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_PrintColorMode) property provides the following values:
+- [Color](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPrintColorMode.html#Syncfusion_Windows_Forms_Chart_ChartPrintColorMode_CheckPrinter) - Prints the chart in color.
+- [GrayScale](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPrintColorMode.html#Syncfusion_Windows_Forms_Chart_ChartPrintColorMode_GrayScale) - Prints the chart in grayscale.
+- [CheckPrinter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPrintColorMode.html#Syncfusion_Windows_Forms_Chart_ChartPrintColorMode_CheckPrinter) - If printer allows color print in color, otherwise use gray scale (default setting)
 
-{{'[PrintColorMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_PrintColorMode)'| markdownify }}
-</td>
-<td>
-Indicates the color mode during printing. Possible Values: <ul><li>Color - Always Print in Color.</li><li>GrayScale - Always Print using GrayScale.</li><li>CheckPrinter - If printer allows color print in color, otherwise use gray scale (default setting).</li></ul></td></tr>
-</table>
+The following code example demonstrates how to print the chart in grayscale.
 
 {% tabs %}  
 
 {% highlight c# %}
 
-this.chartControl1.PrintColorMode = ChartPrintColorMode.GrayScale;
+this.chartControl.PrintColorMode = ChartPrintColorMode.GrayScale;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Me.chartControl1.PrintColorMode = ChartPrintColorMode.GrayScale
+Me.chartControl.PrintColorMode = ChartPrintColorMode.GrayScale
 
 {% endhighlight %}
 {% endtabs %}
@@ -109,7 +96,7 @@ Setting GrayScale print mode for the chart lets you print the chart in a gray sc
 
 A sample illustrating the printing features is available in the below location.
 
-&lt;Install Location&gt;\Syncfusion\EssentialStudio\<Install version>\Windows\Chart.Windows\Samples\Print\Chart Print
+&lt;Install Location&gt;\Syncfusion\EssentialStudio\<Install version>\Windows\chart\Print\Chart Print
 
 ## Displaying ToolBar while printing
 
@@ -119,17 +106,22 @@ A sample illustrating the printing features is available in the below location.
 
 {% highlight c# %}
 
-chartControl1.ShowToolbar = true;
-
-chartControl1.PrintDocument.PrintToolBar = true;
+chartControl.ShowToolbar = true;
+chartControl.PrintDocument.PrintToolBar = true;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-chartControl1.ShowToolbar = True
-
-chartControl1.PrintDocument.PrintToolBar = True
+chartControl.ShowToolbar = True
+chartControl.PrintDocument.PrintToolBar = True
 
 {% endhighlight %}
 {% endtabs %}
+
+## See also
+
+- [How do I print a Chart in WinForms](https://support.syncfusion.com/kb/article/4023/how-do-i-print-a-chart-in-winforms)
+- [How do I set the color to print a WinForms Chart](https://support.syncfusion.com/kb/article/4128/how-do-i-set-the-color-to-print-a-winforms-chart)
+- [How to print multiple charts in Windows Forms Chart](https://help.syncfusion.com/windowsforms/chart/faq/how-to-print-a-chart-in-multiple-pages)
+- [How to copy the chart to clipboard](https://support.syncfusion.com/kb/article/8319/how-to-copy-the-chart-to-clipboard)

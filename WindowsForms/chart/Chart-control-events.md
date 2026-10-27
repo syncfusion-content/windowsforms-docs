@@ -10,392 +10,257 @@ appliesto: UI Component Suite, Chart SDK
 
 # Events in Windows Forms Chart
 
-The following events are discussed in this section:
+## Chart region events
 
-## Chart Region Events
+Chart region events are raised when the user interacts with regions such as data points, axis labels, or custom chart regions.
 
-The Chart handles the following mouse related events when the user interacts with the Chart using mouse, on certain specific regions in the Chart - Axis Labels, Chart Points or a custom region.
+The following chart region events are supported:
 
-* ChartRegionClick Event
-* ChartRegionMouseEnter Event
-* ChartRegionMouseHover Event
-* ChartRegionMouseMove Event
-* ChartRegionMouseLeave Event
-* ChartRegionMouseUp Event
-* ChartRegionMouseDown Event
-* ChartRegionDoubleClick Event
+- [ChartRegionClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ChartRegionClick)
+- [ChartRegionDoubleClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ChartRegionDoubleClick)
+- [ChartRegionMouseDown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ChartRegionMouseDown)
+- [ChartRegionMouseUp](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ChartRegionMouseUp)
+- [ChartRegionMouseEnter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ChartRegionMouseEnter)
+- [ChartRegionMouseHover](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ChartRegionMouseHover)
+- [ChartRegionMouseMove](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ChartRegionMouseMove)
+- [ChartRegionMouseLeave](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ChartRegionMouseLeave)
 
-The above events are raised with a [ChartRegionMouseEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs.html) that contain the following properties.
+These events provide a [ChartRegionMouseEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs.html) instance with the following properties:
 
-**Properties**
+- [Point](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs.html#Syncfusion_Windows_Forms_Chart_ChartRegionMouseEventArgs_Point) gets the client coordinate at which the event occurred.
+- [Region](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs.html#Syncfusion_Windows_Forms_Chart_ChartRegionMouseEventArgs_Region) gets information about the chart region associated with the event.
+- [Button](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs.html#Syncfusion_Windows_Forms_Chart_ChartRegionMouseEventArgs_Button) gets the mouse button actions.
 
-<table>
-<tr>
-<th>
-ChartRegionMouseEventArgs Property</th><th>
-Description</th></tr>
-<tr>
-<td>
+The [Region](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs.html#Syncfusion_Windows_Forms_Chart_ChartRegionMouseEventArgs_Region)  provides useful information about the chart region with which the user is currently interacting.
 
-{{'[Point](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs.html#Syncfusion_Windows_Forms_Chart_ChartRegionMouseEventArgs_Point)'| markdownify }}
-</td><td>
-Represents the client point where the event occurred.</td></tr>
-<tr>
-<td>
-{{'[Region (Expanded below)](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs.html#Syncfusion_Windows_Forms_Chart_ChartRegionMouseEventArgs_Region)'| markdownify }}
-</td><td>
-Returns the region associated with this event.</td></tr>
-<tr>
-<td>
-{{'[Button](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs.html#Syncfusion_Windows_Forms_Chart_ChartRegionMouseEventArgs_Button)'| markdownify }}
-</td><td>
-Returns the right mouse button actions.</td></tr>
-</table>
+The [ChartRegion](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegion.html) object provides the following properties:
 
-The [Region](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs.html#Syncfusion_Windows_Forms_Chart_ChartRegionMouseEventArgs_Region) property above includes several useful information about the kind of region the user is currently interacting with.
+- [Description](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegion.html#Syncfusion_Windows_Forms_Chart_ChartRegion_Description) - Gets the description of the chart region.
+- [Type](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegion.html#Syncfusion_Windows_Forms_Chart_ChartRegion_Type) - Gets the type of chart region. It support the following values:
+  - [Axis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegionType.html#Syncfusion_Windows_Forms_Chart_ChartRegionType_Axis) 
+  - [CalloutLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegionType.html#Syncfusion_Windows_Forms_Chart_ChartRegionType_CalloutLabel)
+  - [ChartCustom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegionType.html#Syncfusion_Windows_Forms_Chart_ChartRegionType_ChartCustom)
+  - [HorAxisLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegionType.html#Syncfusion_Windows_Forms_Chart_ChartRegionType_HorAxisLabel)
+  - [SeriesPoint](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegionType.html#Syncfusion_Windows_Forms_Chart_ChartRegionType_SeriesPoint)
+  - [Unknown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegionType.html#Syncfusion_Windows_Forms_Chart_ChartRegionType_Unknown)
+  - [VerAxisLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegionType.html#Syncfusion_Windows_Forms_Chart_ChartRegionType_VerAxisLabel)
 
-<table>
-<tr>
-<th>
-ChartRegion Property</th><th>
-Description</th></tr>
-<tr>
-<td>
+- [IsChartPoint](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegion.html#Syncfusion_Windows_Forms_Chart_ChartRegion_IsChartPoint) - Indicates whether the region represents a data point in a chart series.
+- [SeriesIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegion.html#Syncfusion_Windows_Forms_Chart_ChartRegion_SeriesIndex) - Gets the index of the series that contains the interacted data point.
+- [PointIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegion.html#Syncfusion_Windows_Forms_Chart_ChartRegion_PointIndex) - Gets the index of the interacted data point within the series.
+- [Region](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegion.html#Syncfusion_Windows_Forms_Chart_ChartRegion_Region) - Gets the client area occupied by the chart region.
+- [ToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegion.html#Syncfusion_Windows_Forms_Chart_ChartRegion_ToolTip) - Specifies the tooltip text associated with the chart region.
 
-{{'[Description](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegion.html#Syncfusion_Windows_Forms_Chart_ChartRegion_Description)'| markdownify }}
-</td><td>
-A text description of this region.</td></tr>
-<tr>
-<td>
-{{'[Type](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegion.html#Syncfusion_Windows_Forms_Chart_ChartRegion_Type)'| markdownify }}
-</td><td>
-Specifies the type of region. Possible values:</br><ul><li>SeriesPoint - interacted on a data point.</li><li>HorAxisLabel - interacted on a horizontal axis</li><li>VerAxisLabel - interacted on a vertical axis</li><li>ChartCustom - interacted with a region that is none of the above.</li></ul></td></tr>
-<tr>
-<td>
-<br>
-{{'[IsChartPoint](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegion.html#Syncfusion_Windows_Forms_Chart_ChartRegion_IsChartPoint)'| markdownify }}
-</td><td>
-Indicates whether the region is a Chart Point in the ChartSeries. This simply checks if the above mentioned Type is SeriesPoint.</td></tr>
-<tr>
-<td>
-{{'[SeriesIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegion.html#Syncfusion_Windows_Forms_Chart_ChartRegion_SeriesIndex)'| markdownify }}
-</td><td>
-The index into the Series array of the Chart in which this point occurs if the Type is SeriesPoint.</td></tr>
-<tr>
-<td>
-{{'[PointIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegion.html#Syncfusion_Windows_Forms_Chart_ChartRegion_PointIndex)'| markdownify }}
-</td><td>
-The index into the Points array of the ChartSeries in which this point occurs if the Type is SeriesPoint.</td></tr>
-<tr>
-<td>
-{{'[Region](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegion.html#Syncfusion_Windows_Forms_Chart_ChartRegion_Region)'| markdownify }}
-</td><td>
-The client region that represents this logical region.</td></tr>
-<tr>
-<td>
-{{'[ToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegion.html#Syncfusion_Windows_Forms_Chart_ChartRegion_ToolTip)'| markdownify }}
-</td><td>
-Specifies the tooltip for this region.</td></tr>
-</table>
+N> The [SeriesIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegion.html#Syncfusion_Windows_Forms_Chart_ChartRegion_SeriesIndex) and [PointIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegion.html#Syncfusion_Windows_Forms_Chart_ChartRegion_PointIndex) properties are applicable when the region [Type](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartRegion.html#Syncfusion_Windows_Forms_Chart_ChartRegion_Type) is `SeriesPoint`.
 
-**ChartRegionDoubleClick and ChartRegionMouseDown Events:**
+The following code example demonstrates how to handle the [ChartRegionDoubleClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ChartRegionDoubleClick) and [ChartRegionMouseDown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ChartRegionMouseDown) events.
 
-{% tabs %} 
-
+{% tabs %}
 {% highlight c# %}
 
-//ChartRegionDoubleClick Event
+private Label regionInfoLabel;
+this.chartControl.ChartRegionDoubleClick += chartControl_ChartRegionDoubleClick;
 
-this.chartControl1.ChartRegionDoubleClick += new Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventHandler(this.chartControl1_ChartRegionDoubleClick);
-
-private void chartControl1_ChartRegionDoubleClick(object sender, ChartRegionMouseEventArgs e)
-
+private void chartControl_ChartRegionDoubleClick(object sender, ChartRegionMouseEventArgs e)
 {
-
-    if (this.chartRegionDoubleClick.Checked)
-
+    if (e.Region.IsChartPoint)
     {
+        int seriesIndex = e.Region.SeriesIndex;
+        int pointIndex = e.Region.PointIndex;
 
-        if (e.Region.SeriesIndex == 0)
+        ChartSeries series = chartControl.Series[seriesIndex];
+        ChartPoint point = series.Points[pointIndex];
 
-        {
-
-            OutputText(String.Format("Double Click over Series 1 Column {0} Point : {1}", e.Region.PointIndex,e.Point));
-
-            ShowChartRegion("ChartSeries");
-
-        }
-
-        else
-
-        {
-
-            OutputText(String.Format("Double Click over {0}", e.Region.Description.ToString()));
-
-            ShowChartRegion(e.Region.Description.ToString());
-
-        }
-
+        regionInfoLabel.Text = string.Format("Double-clicked series: {0}, point index: {1}, " + "X value: {2}, Y value: {3}", series.Name, pointIndex, point.X, point.YValues[0]);
     }
-
+    else
+    {
+        regionInfoLabel.Text = string.Format("Double-clicked region: {0}, location: {1}", e.Region.Description.ToString(), e.Point);
+    }
 }
 
-//Usage of Button property in ChartRegionMouseDown Event
+this.chartControl.ChartRegionMouseDown += chartControl_ChartRegionMouseDown;
 
-void chartControl1_ChartRegionMouseDown(object sender, ChartRegionMouseEventArgs e)
-
+private void chartControl_ChartRegionMouseDown(object sender, ChartRegionMouseEventArgs e)
 {
-
-  if(e.Button==MouseButtons.Right)
-
-     Console.WriteLine("Chart Region Mouse Down:="+e.Point.ToString());
-
+    if (e.Button == MouseButtons.Right)
+    {
+        Console.WriteLine("Chart region mouse down: " + e.Point);
+    }
 }
 
 {% endhighlight %}
-
 {% highlight vb %}
+Private regionInfoLabel As Label
 
 'ChartRegionDoubleClick Event
+AddHandler chartControl.ChartRegionDoubleClick, AddressOf chartControl_ChartRegionDoubleClick
 
-AddHandler Me.chartControl1.ChartRegionDoubleClick, AddressOf Me.chartControl1_ChartRegionDoubleClick
+Private Sub chartControl_ChartRegionDoubleClick(ByVal sender As Object, ByVal e As ChartRegionMouseEventArgs)
+    If e.Region.IsChartPoint Then
+        Dim seriesIndex As Integer = e.Region.SeriesIndex
+        Dim pointIndex As Integer = e.Region.PointIndex
 
-Private Sub chartControl1_ChartRegionDoubleClick(ByVal sender As Object, ByVal e As ChartRegionMouseEventArgs)
+        Dim series As ChartSeries = chartControl.Series(seriesIndex)
+        Dim point As ChartPoint = series.Points(pointIndex)
 
-    If Me.chartRegionDoubleClick.Checked Then
-
-        If e.Region.SeriesIndex = 0 Then
-
-            OutputText([String].Format("Double Click over Series 1 Column {0} Point : {1}", e.Region.PointIndex, e.Point))
-
-            ShowChartRegion("ChartSeries")
-
-        Else
-
-            OutputText([String].Format("Double Click over {0}", e.Region.Description.ToString()))
-
-            ShowChartRegion(e.Region.Description.ToString())
-
-        End If
-
+        regionInfoLabel.Text = String.Format("Double-clicked series: {0}, point index: {1}, X value: {2}, Y value: {3}", series.Name, pointIndex, point.X, point.YValues(0))
+    Else
+        regionInfoLabel.Text = String.Format("Double-clicked region: {0}, location: {1}", e.Region.Description.ToString(), e.Point)
     End If
-
 End Sub
 
 'Usage of Button property in ChartRegionMouseDown Event
+AddHandler chartControl.ChartRegionMouseDown, AddressOf chartControl_ChartRegionMouseDown
 
-Private Sub chartControl1_ChartRegionMouseDown(ByVal sender As Object, ByVal e As ChartRegionMouseEventArgs)
-
-      If e.Button = MouseButtons.Right Then
-
-        Console.WriteLine("Chart Region Mouse Down:="+e.Point.ToString())
-
-    End If
-
+Private Sub chartControl_ChartRegionMouseDown(ByVal sender As Object, ByVal e As ChartRegionMouseEventArgs)
+    If e.Button = MouseButtons.Right Then
+        Console.WriteLine("Chart region mouse down: " & e.Point.ToString())
+    End If
 End Sub
 
 {% endhighlight %}
 {% endtabs %}
 
-## VisibleRangeChanged Event 
+## VisibleRangeChanged
 
-[ChartControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html) provides various zooming options for the user while interacting with the Chart. The [VisibleRangeChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_VisibleRangeChanged) event will be raised when the visible range changes during the zooming operation.
+The [VisibleRangeChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_VisibleRangeChanged) event is raised when the visible range of the chart changes during zooming.
 
-{% tabs %}  
+The following code example demonstrates how to handle the [VisibleRangeChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_VisibleRangeChanged) event.
 
+{% tabs %}
 {% highlight c# %}
+this.chartControl.VisibleRangeChanged += chartControl_VisibleRangeChanged;
 
-private static void chartControl1_VisibleRangeChanged(object sender, EventArgs e)
-
+private void chartControl_VisibleRangeChanged(object sender, EventArgs e)
 {
-
-Console.WriteLine("Visible Range Changed event is raised");
-
+    Console.WriteLine("Visible range changed event is raised.");
 }
-
 {% endhighlight %}
-
 {% highlight vb %}
+AddHandler Me.chartControl.VisibleRangeChanged, AddressOf chartControl_VisibleRangeChanged
 
-Private Sub chartControl1_VisibleRangeChanged(ByVal sender As Object, ByVal e As EventArgs)
-
-Console.WriteLine("Visible Range Changed event is raised")
-
+Private Sub chartControl_VisibleRangeChanged(ByVal sender As Object, ByVal e As EventArgs)
+    Console.WriteLine("Visible range changed event is raised.")
 End Sub
-
 {% endhighlight %}
 {% endtabs %}
 
-## ChartFormatAxisLabel Event
+## PrepareStyle
 
-[CustomFormatAxisLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ChartFormatAxisLabel) event is discussed in detail in this topic: [Customizing Label Text](https://help.syncfusion.com/windowsforms/chart/chart-axes#customizing-label-text).
+The [PrepareStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_PrepareStyle) event is raised before a series point is rendered. Use the event arguments to customize the style of an individual data point.
 
-## PrepareStyle Event
+The following code example changes the appearance of points that meet the specified sales quota.
 
-When a series point is about to be rendered by the chart, it will raise [PrepareStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_PrepareStyle) event and allow event subscribers to change the style used. 
-
-{% tabs %}  
-
+{% tabs %}
 {% highlight c# %}
-
-//Listen to the prepare style event for the series.
-
 series.PrepareStyle += new ChartPrepareStyleInfoHandler(series_PrepareStyle);
 
 private void series_PrepareStyle(object sender, ChartPrepareStyleInfoEventArgs args)
-
 {
-
     ChartSeries series = sender as ChartSeries ;
-
-    if(series != null)    
-
-{
-
-    //Condition to select members (data points) who made 100 % quota in sales
-
-    if(((series.Points[args.Index].YValues[0] / 150) * 100) >= 100)
-
-        {
-
-          args.Style.Interior = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Horizontal, System.Drawing.                       Color.DarkGreen, System.Drawing.Color.LightYellow);                                    
-
-         }
-
+        if(series != null)    
+    {
+        //Condition to select members (data points) who made 100 % quota in sales
+        if(((series.Points[args.Index].YValues[0] / 150) * 100) >= 100)
+            {
+                args.Style.Interior = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Horizontal, System.Drawing.Color.DarkGreen, System.Drawing.Color.LightYellow);
+            }
+    }
 }
-
-}
-
 {% endhighlight %}
-
 {% highlight vb %}
-
-'Listen to the prepare style event for the series.
-
-AddHandler series.PrepareStyle, AddressOf Me.ChartControlSeries_PrepareStyle
+AddHandler series.PrepareStyle, AddressOf series_PrepareStyle
 
 Private Sub series_PrepareStyle(ByVal sender As Object, ByVal args As ChartPrepareStyleInfoEventArgs)
-
-Dim series As ChartSeries = TryCast(sender, ChartSeries)
-
-  If series IsNot Nothing Then
-
-     'Condition to select members (data points) who made 100 % quota in sales
-
-     If ((series.Points(args.Index).YValues(0) / 150) * 100) >= 100 Then
-
-        args.Style.Interior = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Horizontal,                                       System.Drawing.Color.DarkGreen, System.Drawing.Color.LightYellow)
-
-     End If
-
-  End If
-
+    Dim series As ChartSeries = TryCast(sender, ChartSeries)
+    If series IsNot Nothing Then
+        'Condition to select members (data points) who made 100 % quota in sales
+        If ((series.Points(args.Index).YValues(0) / 150) * 100) >= 100 Then
+            args.Style.Interior = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Horizontal, System.Drawing.Color.DarkGreen, System.Drawing.Color.LightYellow)
+        End If
+    End If
 End Sub
-
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Events](Chart-control-events_images/Chart-control-events_img1.jpeg)
+![Chart events](Chart-control-events_images/Chart-control-events_img1.jpeg)
 
-## SeriesInCompatible Event
+## SeriesIncompatible
 
-When the Chart has completed updating the series and finds out that series are incompatible, [SeriesInCompatible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_SeriesIncompatible) event will be raised.
+The [SeriesIncompatible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_SeriesIncompatible) event is raised when the Chart control detects that one or more series cannot be rendered together because their chart types or configurations are incompatible.
 
-{% tabs %}  
+The following code example demonstrates how to handle the [SeriesIncompatible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_SeriesIncompatible) event.
 
+{% tabs %}
 {% highlight c# %}
+this.chartControl.SeriesIncompatible += chartControl_SeriesIncompatible;
 
-private static void chartControl1_SeriesInCompatible(object sender, EventArgs e)
-
+private void chartControl_SeriesIncompatible(object sender, EventArgs e)
 {
-
-Console.WriteLine("SeriesInCompatible event is raised");
-
+    Console.WriteLine("An incompatible series combination was detected.");
 }
-
 {% endhighlight %}
-
 {% highlight vb %}
+AddHandler Me.chartControl.SeriesIncompatible, AddressOf chartControl_SeriesIncompatible
 
-Private Sub chartControl1_SeriesInCompatible(ByVal sender As Object, ByVal e As EventArgs)
-
-Console.WriteLine("SeriesInCompatible event is raised")
-
+Private Sub chartControl_SeriesIncompatible(ByVal sender As Object, ByVal e As EventArgs)
+    Console.WriteLine("An incompatible series combination was detected.")
 End Sub
-
 {% endhighlight %}
 {% endtabs %}
 
-## LayoutCompleted Event
+## LayoutCompleted
 
-[LayoutCompleted](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_LayoutCompleted) event is handled every time, a resizing of chart is caused and when the chart re-renders itself. Listening to this event helps in cases where you render custom images over the chart or position custom controls over the chart.
+The [LayoutCompleted](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_LayoutCompleted) event is raised when the chart is resized or re-rendered. This event is useful for rendering custom images or positioning custom controls over the chart after the layout is completed.
 
-{% tabs %}  
+The following code example demonstrates how to handle the [LayoutCompleted](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_LayoutCompleted) event.
 
+{% tabs %}
 {% highlight c# %}
+this.chartControl.LayoutCompleted += chartControl_LayoutCompleted;
 
-private static void chartControl1_LayoutCompleted(object sender, EventArgs e)
-
+private void chartControl_LayoutCompleted(object sender, EventArgs e)
 {
-
-Console.WriteLine("Layout Completed event is raised");
-
+    Console.WriteLine("Layout Completed event is raised.");
 }
-
 {% endhighlight %}
-
 {% highlight vb %}
+AddHandler Me.chartControl.LayoutCompleted, AddressOf chartControl_LayoutCompleted
 
-Private Sub chartControl1_LayoutCompleted(ByVal sender As Object, ByVal e As EventArgs)
-
-Console.WriteLine("Layout Completed event is raised")
-
+Private Sub chartControl_LayoutCompleted(ByVal sender As Object, ByVal e As EventArgs)
+    Console.WriteLine("Layout Completed event is raised.")
 End Sub
-
 {% endhighlight %}
 {% endtabs %}
 
-## ChartAreaPaint Event
+## PreChartAreaPaint event
 
-[ChartAreaPaint](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ChartAreaPaint) event is discussed in [Custom Drawing](/windowsforms/chart/chart-appearance#custom-drawing).
+The [PreChartAreaPaint](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_PreChartAreaPaint) event is raised before the chart area is painted.
 
-{% seealso %}
+The following code example changes the background color before the chart area is painted.
 
-[Chart Area Bounds](/windowsforms/chart/hit-testing#chart-area-bounds)
-
-{% endseealso %}
-
-## ChartLegendFilterItems Event
-
-[FilterItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_FilterItems) event is discussed in detail in this topic: [ChartLegend](https://help.syncfusion.com/windowsforms/chart/chart-legend-and-legend-items).
-
-## PreChartAreaPaint Event
-
-[PreChartAreaPaint](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_PreChartAreaPaint) event is raised before the chart area is painted.
-
-{% tabs %}  
-
+{% tabs %}
 {% highlight c# %}
+this.chartControl.PreChartAreaPaint += new System.Windows.Forms.PaintEventHandler(this.chartControl_PreChartAreaPaint);;
 
-this.chartControl1.PreChartAreaPaint += new System.Windows.Forms.PaintEventHandler(this.chartControl1_PreChartAreaPaint);
-
-private void chartControl1_PreChartAreaPaint(object sender, PaintEventArgs e)
+private void chartControl_PreChartAreaPaint(object sender, PaintEventArgs e)
 {
-       this.chartControl1.BackColor = Color.Yellow;       
+    this.chartControl.BackColor = Color.Yellow;
 }
-
 {% endhighlight %}
-
 {% highlight vb %}
+AddHandler Me.chartControl.PreChartAreaPaint, AddressOf chartControl_PreChartAreaPaint
 
-AddHandler Me.chartControl1.PreChartAreaPaint, AddressOf Me.chartControl1_PreChartAreaPaint
-    
-Private Sub chartControl1_PreChartAreaPaint(ByVal sender As Object, ByVal e As PaintEventArgs)
-
-    Me.chartControl1.BackColor = Color.Yellow
-
+Private Sub chartControl_PreChartAreaPaint(ByVal sender As Object, ByVal e As PaintEventArgs)
+    Me.chartControl.BackColor = Color.Yellow
 End Sub
-
 {% endhighlight %}
-
 {% endtabs %}
+
+## See also
+
+- [How to drag chart series points at runtime in Windows Forms Chart](https://help.syncfusion.com/windowsforms/chart/faq/how-to-drag-the-chart-series-points-at-run-time)
+- [How to drag and drop chart series points at runtime in WinForms Chart](https://support.syncfusion.com/kb/article/1193/how-to-drag-and-drop-chart-series-points-at-runtime-in-winforms-chart)
+- [How to trigger the ChartRegionEvents in the WinForms Chart](https://support.syncfusion.com/kb/article/1194/how-to-trigger-the-chartregionevents-in-the-winforms-chart)
+- [How to implement drill down effect in WinForms Chart](https://support.syncfusion.com/kb/article/1017/how-to-implement-drill-down-effect-in-winforms-chart)

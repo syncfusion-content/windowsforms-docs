@@ -10,37 +10,42 @@ appliesto: UI Component Suite, Chart SDK
 
 # Importing in Windows Forms Chart
 
-The Chart provides a simple API to let you populate it with any kind of data, provided, you bring that data from the data store at the runtime. You can then either populate the chart with that data, or bind the chart to the DataTable or DataSet, in which the data is contained. See ChartData for more information on Data Binding.
+The [WinForms Chart control](https://www.syncfusion.com/winforms-ui-controls/chart) can display data from various sources, including Excel, CSV, XML, arrays, and databases. Retrieve the data at runtime, store it in a compatible data source, and then populate or bind it to the chart.
 
-In this section, we will illustrate how the data from certain data stores can be brought to the runtime and bound to the chart. In a way, this deals more with extracting data from the mentioned data stores than any support in Chart for binding to such data stores.
-
-## Importing a CSV file 
-
-There is no built-in support in Chart for importing data from CSV (Comma Separated Values) files. But this can be easily accomplished by using the **Microsoft.Jet.OLEDB.4.0** to first convert it into a DataSet and then bind it to the chart. This is illustrated in this sample that is distributed with the installation.
-
-![Chart Import](Importing_images/Importing_img1.jpeg)
-
-### Sample Location:
-
-&lt;Install Location&gt;\Syncfusion\EssentialStudio\<Install version>\Windows\Chart.Windows\Samples\Import\Data from CSV
-
-## Import Data from XML to a Chart
-
-There is no built-in support in Chart for importing data from an XML file. But given a corresponding XSLT file, the XML data can be converted into a DataSet, which can then be bound to the chart easily. This is illustrated in this sample that is distributed with the installation.
-
-![Chart Import](Importing_images/Importing_img2.jpeg)
-
-### Sample Location
-
-&lt;Install Location&gt;\Syncfusion\EssentialStudio\<Install version>\Windows\Chart.Windows\Samples\Import\Data from XML
+N> The Chart control does not directly import data from external sources. The retrieved data must be stored in a `DataSet`, `DataTable`, array, or collection before it is bound to the chart.
 
 ## Import Data from Excel to Chart
 
-There is no built-in support in Chart for importing data from XLS (MS Excel) files. But this can be easily accomplished by using the **Microsoft.Jet.OLEDB.4.0** to first convert it into a DataSet and then bind it to the chart. This is illustrated in this sample that is distributed with the installation.
+Use **Microsoft.Jet.OLEDB.4.0** or **Microsoft.ACE.OLEDB.12.0** to retrieve Excel data into a `DataSet`, and then bind the `DataSet` to the chart. For more details, please check the sample included with the installation.
 
-![Chart Import](Importing_images/Importing_img3.jpeg)
+The following image illustrates Excel data displayed in the Windows Forms Chart control.
 
-### Sample Location
+![Import Excel data into Windows Forms Chart](Importing_images/Importing_img3.jpeg)
 
-&lt;Install Location&gt;\Syncfusion\EssentialStudio\<Install version>\Windows\Chart.Windows\Samples\Import\Data from Excel
+## Import Data from CSV to Chart
+ 
+Use **Microsoft.Jet.OLEDB.4.0** to retrieve CSV data into a `DataSet`, and then bind the `DataSet` to the chart. For more details, please check the sample included with the installation.
 
+The following image illustrates CSV data displayed in the Windows Forms Chart control.
+
+![Import CSV data into Windows Forms Chart](Importing_images/Importing_img1.jpeg)
+
+## Import Data from XML to Chart
+
+Use a corresponding XSLT file to transform XML data into a `DataSet`, and easily bound to the chart.
+
+The following image illustrates XML data displayed in the Windows Forms Chart control.
+
+![Import XML data into Windows Forms Chart](Importing_images/Importing_img2.jpeg)
+
+## Import Data from Arrays to Chart
+ 
+Data stored in arrays or collections, such as a `List<T>`, can be bound directly to the chart using methods like `DataBindXY()` or by setting `DataSource`, `XValueMember`, and `YValueMembers`.
+ 
+## Import Data from Databases to Chart
+ 
+Use ADO.NET or Entity Framework to retrieve data from a database and store it in a `DataTable` or collection. Bind the resulting data source to the Chart control using standard binding methods.
+
+## See Also
+
+- [How to import data from various formats to WinForms Chart](https://support.syncfusion.com/kb/article/4125/how-to-import-data-from-various-formats-to-winforms-chart)
