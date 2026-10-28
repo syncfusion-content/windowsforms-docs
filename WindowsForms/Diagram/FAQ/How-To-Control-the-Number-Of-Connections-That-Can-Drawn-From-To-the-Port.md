@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Control Connections Count of a Port in Windows Forms Diagram
 
-This can be done using the port's ConnectionsLimit property. ConnectionsLimit specifies the number of connections to be allowed. Default value is _10_. 
+This can be done using the port's ConnectionsLimit property. ConnectionsLimit specifies the number of connections to be allowed. Default value is **10**. 
 
 {% tabs %}
 

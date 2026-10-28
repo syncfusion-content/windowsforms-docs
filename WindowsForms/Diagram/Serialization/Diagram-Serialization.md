@@ -31,6 +31,18 @@ if (saveFileDialog.ShowDialog(this) == DialogResult.OK)
 }
 
 {% endhighlight %}
+{% highlight vb %}
+
+Dim saveFileDialog As New SaveFileDialog()
+saveFileDialog.Filter = "XML Diagram (*.xml)|*.xml|All files (*.*)|*.*"
+If saveFileDialog.ShowDialog(Me) = DialogResult.OK Then
+    'Save the diagram to a file path
+    diagram1.SaveXml(Me.saveFileDialog.FileName)
+
+    Me.diagram1.Refresh()
+End If
+
+{% endhighlight %}
 {% endtabs %}
 
 ### Saving a Diagram via Stream
@@ -50,6 +62,20 @@ if (saveFileDialog.ShowDialog(this) == DialogResult.OK)
 
     this.diagram1.Refresh();
 }
+
+{% endhighlight %}
+{% highlight vb %}
+
+Dim saveFileDialog As New SaveFileDialog()
+saveFileDialog.Filter = "XML Diagram (*.xml)|*.xml|All files (*.*)|*.*"
+If saveFileDialog.ShowDialog(Me) = DialogResult.OK Then
+    'Save the diagram to a file stream
+    Using stream As Stream = File.Open(saveFileDialog.FileName, FileMode.CreateNew)
+        diagram1.SaveXml(stream)
+    End Using
+
+    Me.diagram1.Refresh()
+End If
 
 {% endhighlight %}
 {% endtabs %}
@@ -78,6 +104,22 @@ if (openFileDialog.ShowDialog(this) == DialogResult.OK)
 }
 
 {% endhighlight %}
+{% highlight vb %}
+
+Dim openFileDialog As New OpenFileDialog()
+openFileDialog.Filter = "XML Diagram (*.xml)|*.xml|All files (*.*)|*.*"
+openFileDialog.DefaultExt = "*.xml"
+openFileDialog.Title = "Open Diagram"
+If openFileDialog.ShowDialog(Me) = DialogResult.OK Then
+    Dim filePath As String = openFileDialog.FileName
+
+    'Load the diagram from the file path
+    diagram1.LoadXml(filePath)
+
+    Me.diagram1.Refresh()
+End If
+
+{% endhighlight %}
 {% endtabs %}
 
 ### Loading a Diagram from a Stream
@@ -103,6 +145,24 @@ if (openFileDialog.ShowDialog(this) == DialogResult.OK)
 }
 
 {% endhighlight %}
+{% highlight vb %}
+
+Dim openFileDialog As New OpenFileDialog()
+openFileDialog.Filter = "XML Diagram (*.xml)|*.xml|All files (*.*)|*.*"
+openFileDialog.DefaultExt = "*.xml"
+openFileDialog.Title = "Open Diagram"
+If openFileDialog.ShowDialog(Me) = DialogResult.OK Then
+    Dim filePath As String = openFileDialog.FileName
+
+    'Load the diagram from a file stream
+    Using myStream As Stream = openFileDialog.OpenFile()
+        diagram1.LoadXml(myStream)
+    End Using
+
+    Me.diagram1.Refresh()
+End If
+
+{% endhighlight %}
 {% endtabs %}
 
 ### Loading a Diagram from a File with Exception Handling
@@ -125,29 +185,21 @@ if (openFileDialog.ShowDialog(this) == DialogResult.OK)
 }
 
 {% endhighlight %}
-{% endtabs %}
+{% highlight vb %}
 
-### Loading a Diagram from a Stream with Exception Handling
+Dim openFileDialog As New OpenFileDialog()
+openFileDialog.Filter = "XML Diagram (*.xml)|*.xml|All files (*.*)|*.*"
+openFileDialog.DefaultExt = "*.xml"
+openFileDialog.Title = "Open Diagram"
+If openFileDialog.ShowDialog(Me) = DialogResult.OK Then
+    Dim filePath As String = openFileDialog.FileName
+    Dim [exception] As Exception
 
-{% tabs %}
-{% highlight c# %}
+    'Load the diagram from the file path with exception handling
+    diagram1.LoadXml(filePath, [exception])
 
-OpenFileDialog openFileDialog = new OpenFileDialog();
-openFileDialog.Filter = "XML Diagram (*.xml)|*.xml|All files (*.*)|*.*";
-openFileDialog.DefaultExt = "*.xml";
-openFileDialog.Title = "Open Diagram";
-if (openFileDialog.ShowDialog(this) == DialogResult.OK)
-{
-    string filePath = openFileDialog.FileName;
-
-    // Load the diagram from the stream with exception handling
-    using (Stream myStream = openFileDialog.OpenFile())
-    {
-        diagram1.LoadXml(myStream, out Exception ex);
-    }
-
-    this.diagram1.Refresh();
-}
+    Me.diagram1.Refresh()
+End If
 
 {% endhighlight %}
 {% endtabs %}
@@ -169,5 +221,16 @@ if (diagram1 != null && diagram1.Model.Modified)
         SaveDiagram();
     }
 }
+{% endhighlight %}
+{% highlight vb %}
+If diagram1 IsNot Nothing AndAlso diagram1.Model.Modified Then
+    Dim messageBoxResult As MessageBoxResult = System.Windows.MessageBox.Show(
+        "Do you want to save the Diagram?",
+        "SfDiagram",
+        MessageBoxButton.YesNo)
+    If messageBoxResult = MessageBoxResult.Yes Then
+        SaveDiagram()
+    End If
+End If
 {% endhighlight %}
 {% endtabs %}
