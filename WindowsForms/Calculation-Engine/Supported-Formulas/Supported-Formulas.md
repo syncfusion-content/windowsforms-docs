@@ -2061,7 +2061,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[IMDIV](https://support.microsoft.com/en-us/excel/imdiv-function)'| markdownify }}</td></tr>
+<td>{{'[IMDIV](https://support.microsoft.com/en-us/excel/functions/imdiv-function)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[IMEXP](/windowsforms/calculation-engine/supported-formulas/engineering#imexp)'| markdownify }}</td>
 <td>yes</td>
