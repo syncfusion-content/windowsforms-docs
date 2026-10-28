@@ -104,3 +104,72 @@ End Class
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 For more data-binding options, refer to [Data binding](https://help.syncfusion.com/windowsforms/multicolumn-combobox/data-binding) page.
+
+## Bind data in a simple form
+
+The simple example below binds a `DataTable` to the `MultiColumnComboBox` through a `DataView`, with `FirstName` column in the combo box's text area and `LastName` as the value.
+
+{% capture codesnippet2 %}
+{% tabs %}
+{% highlight c# %}
+
+using System.Data;
+
+private void Form1_Load(object sender, System.EventArgs e)
+{
+    //Step 1: Create a DataTable and add columns
+    DataTable dt = new DataTable("Table1");
+    dt.Columns.Add("FirstName");
+    dt.Columns.Add("LastName");
+
+    //Step 2: Add rows to the DataTable
+    dt.Rows.Add(new object[] { "John", "Tina" });
+    dt.Rows.Add(new object[] { "Mary", "Anu" });
+
+    //Step 3: Bind the DataView to MultiColumnComboBox
+    this.multiColumnComboBox1.DataSource     = new DataView(dt);
+    this.multiColumnComboBox1.DisplayMember = "FirstName";
+    this.multiColumnComboBox1.ValueMember   = "LastName";
+
+    //Step 4: Configure the dropdown columns
+    this.multiColumnComboBox1.Columns.Add(new Syncfusion.Windows.Forms.Grid.GridColumnDescriptor("FirstName", "FirstName", 120));
+    this.multiColumnComboBox1.Columns.Add(new Syncfusion.Windows.Forms.Grid.GridColumnDescriptor("LastName",  "LastName",  120));
+}
+
+{% endhighlight %}
+{% highlight vb %}
+
+Imports System.Data
+
+Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    'Step 1: Create a DataTable and add columns
+    Dim dt As New DataTable("Table1")
+    dt.Columns.Add("FirstName")
+    dt.Columns.Add("LastName")
+
+    'Step 2: Add rows to the DataTable
+    dt.Rows.Add(New Object() {"John", "Tina"})
+    dt.Rows.Add(New Object() {"Mary", "Anu"})
+
+    'Step 3: Bind the DataView to MultiColumnComboBox
+    Me.multiColumnComboBox1.DataSource = New DataView(dt)
+    Me.multiColumnComboBox1.DisplayMember = "FirstName"
+    Me.multiColumnComboBox1.ValueMember = "LastName"
+
+    'Step 4: Configure the dropdown columns
+    Me.multiColumnComboBox1.Columns.Add(New Syncfusion.Windows.Forms.Grid.GridColumnDescriptor("FirstName", "FirstName", 120))
+    Me.multiColumnComboBox1.Columns.Add(New Syncfusion.Windows.Forms.Grid.GridColumnDescriptor("LastName", "LastName", 120))
+End Sub
+
+{% endhighlight %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
+
+## Output
+
+The output for the above code is shown below.
+
+![Windows Forms MultiColumn ComboBox Getting Started output](Overview_images/Getting-Started.png)
+
+You can also explore our [WinForms MultiColumn ComboBox example](https://github.com/SyncfusionExamples/How-to-display-multiple-members-in-WinForms-MultiColumnComboBox) that shows you how to render and configure the MultiColumn ComboBox.
