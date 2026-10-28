@@ -467,3 +467,5 @@ private Image GetFileIcon(string filePath)
 {% endhighlight %}
 
 {% endtabs %}
+
+N> You can also explore our [sample](https://github.com/SyncfusionExamples/how-to-implement-input-toolbar-feature-in-winforms-assistview) on GitHub, which showcases the Input Toolbar capability of Syncfusion's SfAIAssistView control. It provides a clean working reference for enabling the toolbar, populating quick-action buttons, responding to user interactions, managing file attachments, and surfacing feedback through toast notifications inside the chat input area.
