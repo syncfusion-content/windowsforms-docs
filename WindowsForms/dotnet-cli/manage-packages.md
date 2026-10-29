@@ -11,45 +11,76 @@ documentation: UG
 
 Package operations change NuGet references only. They do not generate control files. In a CLI-generated project, control aliases such as `chart` and `datagrid` also integrate their sample files, assets, and welcome navigation through `sf add`.
 
-`<package>` accepts a canonical package alias, a canonical package ID, or an exact unambiguous package display name:
+`<package>` accepts a canonical package alias, a canonical package ID, or an exact unambiguous package display name.
 
-```bash
+## Install a package by package alias
+
+To install a package using its canonical package alias:
+
+{% tabs %}
+{% highlight bash %}
 sf add winforms datagrid -p ./MyApp
+{% endhighlight %}
+{% endtabs %}
+
+## Install a package by package identifier
+
+To install a package using its exact canonical package ID:
+
+{% tabs %}
+{% highlight bash %}
 sf add winforms Syncfusion.SfDataGrid.WinForms -p ./MyApp
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Update packages
 
-To update a package in an existing project:
+To update a package in an existing project to a specific version:
 
-```bash
+{% tabs %}
+{% highlight bash %}
 sf update winforms datagrid --path /full/path/MyApp.csproj --version 35.1.40 --build
-```
+{% endhighlight %}
+{% endtabs %}
 
-## List packages
+## List available packages
 
-To list the available and installed packages:
+To list all packages available for Windows Forms:
 
-```bash
+{% tabs %}
+{% highlight bash %}
 sf list winforms packages
-sf list winforms installed --path /full/path/MyApp.vbproj
-```
+{% endhighlight %}
+{% endtabs %}
 
 ![List of available packages in the Syncfusion .NET CLI](images/cli-list-of-available-packages.png)
+
+## List installed packages
+
+To list the Syncfusion<sup>®</sup> packages already installed in an existing project:
+
+{% tabs %}
+{% highlight bash %}
+sf list winforms installed --path /full/path/MyApp.vbproj
+{% endhighlight %}
+{% endtabs %}
 
 ## Search packages
 
 To search the package catalog:
 
-```bash
+{% tabs %}
+{% highlight bash %}
 sf search winforms grid
-```
+{% endhighlight %}
+{% endtabs %}
 
 Existing-project commands accept `-p/--path` with a project file (`.csproj` or `.vbproj`), a project directory, or a supported subdirectory. Discovery stops at the nearest project or repository boundary. `--json` emits one JSON document for script use.
 
 N> Update preserves sample source and aligns managed Syncfusion<sup>®</sup> release versions to avoid dependency downgrades. Shared dependencies remain installed for other controls. Edited or unowned sample source blocks destructive changes, and failed operations roll back files, metadata, project references, and central versions.
 
 ## Package operation options
+
 
 | Option | Description |
 | --- | --- |
