@@ -38,18 +38,42 @@ N> The Skills CLI clones the `syncfusion/winforms-ui-components-skills` reposito
 
 ## Install skills using direct commands
 
-```bash
-sf skills install winforms
-sf skills install winforms --list
-sf skills install winforms --agent github-copilot --skill <exact-skill-name> --yes
-sf skills install winforms --agent cursor claude-code --all --yes
-```
+To open the interactive Skills CLI flow for the current workspace:
 
-* Use `--list` to list the exact skill names available in the repository without installing anything.
+{% tabs %}
+{% highlight bash %}
+sf skills install winforms
+{% endhighlight %}
+{% endtabs %}
+
+To list the exact skill names available in the repository without installing anything:
+
+{% tabs %}
+{% highlight bash %}
+sf skills install winforms --list
+{% endhighlight %}
+{% endtabs %}
+
+To install a specific skill non-interactively for GitHub Copilot:
+
+{% tabs %}
+{% highlight bash %}
+sf skills install winforms --agent github-copilot --skill <exact-skill-name> --yes
+{% endhighlight %}
+{% endtabs %}
+
+To install all skills for multiple agents non-interactively:
+
+{% tabs %}
+{% highlight bash %}
+sf skills install winforms --agent cursor claude-code --all --yes
+{% endhighlight %}
+{% endtabs %}
+
 * Use `--agent` with one or more agent IDs, such as `github-copilot`, `cursor`, or `claude-code`. The Skills CLI supports many agents, including Amp, Cline, Codex, Cursor, Gemini CLI, GitHub Copilot, and Claude Code.
 * Use `--skill` with one or more exact skill names, or `--all` to install all skills for the selected agents. `--all` does not mean all agents.
-* Noninteractive installation requires `--agent`, `--skill` (or `--all`), and `--yes`. The scope defaults to project-local; add `--global` explicitly to install skills in the user's global agent directories.
-* Skills are copied into the agent's skills location, such as `.\.agents\skills\` and `.\.claude\skills\` for project scope, so no symlink privileges are required.
+* No-interactive installation requires `--agent`, `--skill` (or `--all`), and `--yes`. The scope defaults to project-local; add `--global` explicitly to install skills in the user's global agent directories.
+* Skills are copied into the agent's skills location, so no symlink privileges are required.
 
 N> `completed` means the Skills CLI exited successfully, not that an AI agent has loaded or executed the skills. Reload the workspace in your AI agent so the newly installed skills are picked up. Review the skills before use; they run with full agent permissions.
 
@@ -62,7 +86,7 @@ N> `completed` means the Skills CLI exited successfully, not that an AI agent ha
 | `--skill` | One or more exact skill names. Discover names with `--list` |
 | `--all` | Install all skills for the selected agents, not all agents |
 | `--global` | Install skills in the user's global agent directories |
-| `--yes` | Confirm noninteractive installation |
+| `--yes` | Confirm no-interactive installation |
 | `--list` | List repository skill names without installing |
 | `-p`, `--path` | The workspace directory. Defaults to the current directory |
 | `--dry-run` | Show the planned Skills CLI command without executing it |
@@ -70,7 +94,9 @@ N> `completed` means the Skills CLI exited successfully, not that an AI agent ha
 
 ## FAQs
 
-**Do I need a license to install AI component skills?** No. Skills installation requires no Syncfusion<sup>®</sup> account, API key, or license. It requires Node.js 22.20 or later with npm and Git.
+**Do I need a license to install AI component skills?**
+
+No. Skills installation requires no Syncfusion<sup>®</sup> account, API key, or license. It requires Node.js 22.20 or later with npm and Git.
 
 ## See also
 

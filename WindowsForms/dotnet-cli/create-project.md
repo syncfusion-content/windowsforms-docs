@@ -13,13 +13,21 @@ You can create a Windows Forms project through the interactive wizard or a direc
 
 ## Create a project using the interactive wizard
 
-Run `sf new`, or select **Create a new project** from the main menu. The Windows Forms creation flow is:
+Run `sf new`, or select **Create a new project**
 
-1. **Platform:** Select **Windows Forms**.
+from the main menu. The Windows Forms creation flow is:
 
-2. **Language:** Select **C#** or **Visual Basic**. C# is the first option.
+1. **Platform:**
 
-3. **Framework:** Select the target framework.
+Select **Windows Forms**.
+
+2. **Language:**
+
+Select **C#** or **Visual Basic**. C# is the first option.
+
+3. **Framework:**
+
+Select the target framework.
 
     * .NET 10 (`net10.0`), the default
     * .NET 9 (`net9.0`)
@@ -28,52 +36,66 @@ Run `sf new`, or select **Create a new project** from the main menu. The Windows
     * .NET Framework 4.7 (`net47`)
     * .NET Framework 4.6.2 (`net462`)
 
-4. **Theme:** Select the project theme. The supported Windows Forms theme is **Office2019 Colorful**.
+4. **Theme:**
 
-5. **Location and name:** Enter the parent directory and the project name. The default locations are `%USERPROFILE%\source\repos` on Windows and `~/Projects` on Linux and macOS. The suggested name is `SyncfusionWinFormsApp`, and the first available numeric suffix is used when the destination name collides.
+Select the project theme. The supported Windows Forms theme is **Office2019 Colorful**.
 
-6. **Setup:** Select **Blank app** or **Include Syncfusion controls**. Blank app is the first option.
+5. **Location and name:**
 
-7. **Controls:** When you include controls, choose one or more controls from the list. Controls start unchecked, and at least one selection is required.
+Enter the parent directory and the project name. The default locations are `%USERPROFILE%\source\repos` on Windows and `~/Projects` on Linux and macOS. The suggested name is `SyncfusionWinFormsApp`, and the first available numeric suffix is used when the destination name collides.
 
-8. **Post-create:** Select **Generate only** or **Build project**.
+6. **Setup:**
 
-9. **Confirmation:** Review the selected values and confirm to create the project.
+Select **Blank app** or **Include Syncfusion controls**. Blank app is the first option.
+
+7. **Controls:**
+
+When you include controls, choose one or more controls from the list. Controls start unchecked, and at least one selection is required. The following controls are available in a new Windows Forms project:
+
+    | Control | Control ID |
+    | --- | --- |
+    | Chart | `chart` |
+    | DataGrid | `datagrid` |
+    | Diagram | `diagram` |
+    | DockingManager | `docking-manager` |
+    | NavigationDrawer | `navigation-drawer` |
+
+8. **Post-create:**
+
+Select **Generate only** or **Build project**.
+
+9. **Confirmation:**
+
+Review the selected values and confirm to create the project.
 
 N> A complete direct command does not open the wizard. When a name is missing in an interactive terminal, the wizard supplies a default and collects the remaining unspecified inputs. Missing required values in scripts produce an error.
-
-## Available controls
-
-The following controls are available in a new Windows Forms project:
-
-| Control | Control ID |
-| --- | --- |
-| Chart | `chart` |
-| DataGrid | `datagrid` |
-| Diagram | `diagram` |
-| DockingManager | `docking-manager` |
-| NavigationDrawer | `navigation-drawer` |
 
 ## Create a project using direct commands
 
 To create a blank project without the wizard:
 
-```bash
+{% tabs %}
+{% highlight bash %}
 sf new winforms -n MyApp
-```
+{% endhighlight %}
+{% endtabs %}
 
 To create a C# project containing Syncfusion<sup>®</sup> control samples:
 
-```bash
+{% tabs %}
+{% highlight bash %}
 sf new winforms -n MyApp --control datagrid
 sf new winforms -n MyApp --control chart --control datagrid
-```
+{% endhighlight %}
+{% endtabs %}
 
 To create a VB project that targets .NET Framework 4.8 with the Office2019 Colorful theme and a DataGrid sample:
 
-```bash
+{% tabs %}
+{% highlight bash %}
 sf new winforms --name MyAppVB --language VB --target-framework net48 --theme Office2019Colorful --control datagrid --post-action build
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Creation options
 
@@ -97,11 +119,17 @@ N> `--post-action build` conflicts with `--no-build`. Neither `--force` nor conf
 
 ## FAQs
 
-**Which languages are supported?** C# and VB.
+**Which languages are supported?**
 
-**Which target frameworks are supported?** .NET Framework 4.6.2 (`net462`), 4.7 (`net47`), 4.8 (`net48`), and .NET 8 (`net8.0`), .NET 9 (`net9.0`), .NET 10 (`net10.0`). Unsupported selections fail validation rather than changing the request.
+C# and VB.
 
-**Which theme is supported?** Office2019 Colorful.
+**Which target frameworks are supported?**
+
+.NET Framework 4.6.2 (`net462`), 4.7 (`net47`), 4.8 (`net48`), and .NET 8 (`net8.0`), .NET 9 (`net9.0`), .NET 10 (`net10.0`). Unsupported selections fail validation rather than changing the request.
+
+**Which theme is supported?**
+
+Office2019 Colorful.
 
 ## See also
 

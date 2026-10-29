@@ -27,9 +27,7 @@ This documentation covers the Windows Forms platform.
 
 The following software is required before you install and use the CLI:
 
-* [.NET SDK](https://dotnet.microsoft.com/download). The SDK selected through `PATH` takes precedence, with the running .NET installation as a fallback.
-* For modern .NET projects (`.NET 8` and later), the Windows Forms project templates installed with the .NET SDK. The CLI creates modern Windows Forms projects through the installed `winforms` template, and generated projects use Windows TFMs with `EnableWindowsTargeting`.
-* For .NET Framework projects (`.NET Framework 4.6.2` and later), Visual Studio MSBuild with the .NET desktop workload. .NET Framework projects use classic MSBuild XML and explicit source/reference items, not modern SDK templates. Microsoft's `Microsoft.NETFramework.ReferenceAssemblies` 1.0.3 supplies the exact reference assemblies, including frameworks absent from the local developer packs.
+* [.NET SDK](https://dotnet.microsoft.com/download). The SDK selected through `PATH` takes precedence, with the running .NET installation as a fallback. The Windows Forms project templates are installed with the .NET SDK for modern .NET projects. For .NET Framework projects (`.NET Framework 4.6.2` and later), Visual Studio MSBuild with the .NET desktop workload is required.
 * An internet connection so package operations can reach [nuget.org](https://www.nuget.org).
 * A Syncfusion<sup>®</sup> account to activate licenses. Sign in is performed through the browser during license activation.
 
@@ -43,27 +41,41 @@ The CLI is published as a .NET global tool with the package ID `Syncfusion.DotNe
 
 1. Open a terminal and run the following command. Add `--prerelease` while only preview versions are available.
 
-    ```bash
+    {% tabs %}
+    {% highlight bash %}
     dotnet tool install -g Syncfusion.DotNet.CLI --prerelease
-    ```
+    {% endhighlight %}
+    {% endtabs %}
 
 2. Verify the installation and print the CLI version.
 
-    ```bash
+    {% tabs %}
+    {% highlight bash %}
     sf --version
+    {% endhighlight %}
+    {% endtabs %}
+
+3. Add the .NET global tools directory to the `PATH` environment variable so the `sf` command is available in any terminal. The default tools directory is:
+
+    ```
+    %USERPROFILE%\.dotnet\tools
     ```
 
-To update the tool to the latest release, run:
+4. To update the tool to the latest release, run:
 
-```bash
-dotnet tool update -g Syncfusion.DotNet.CLI --prerelease
-```
+    {% tabs %}
+    {% highlight bash %}
+    dotnet tool update -g Syncfusion.DotNet.CLI --prerelease
+    {% endhighlight %}
+    {% endtabs %}
 
 To remove the tool, run:
 
-```bash
+{% tabs %}
+{% highlight bash %}
 dotnet tool uninstall -g Syncfusion.DotNet.CLI
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Initialize the CLI
 
@@ -71,29 +83,9 @@ Run `sf` in an interactive terminal to open the main menu. The menu shows the cu
 
 ![Syncfusion .NET CLI main menu](images/cli-main-menu.png)
 
-| Group | Operation | Command reference |
-| --- | --- | --- |
-| Project creation | Create a new project | `sf new` |
-| Package management | Add a package to an existing project | `sf add` |
-| Package management | Update a package in an existing project | `sf update` |
-| Discovery | List available packages | `sf list <platform> packages` |
-| Discovery | List installed packages in an existing project | `sf list <platform> installed` |
-| Discovery | Search for packages | `sf search` |
-| AI & Skills | Setup Model Context Protocol (MCP) | `sf mcp init` |
-| AI & Skills | Add component skills to AI Agent | `sf skills install` |
-| License management | Activate license | `sf license activate` |
-| License management | View installed licenses | `sf license view` |
-| License management | Sign in to Syncfusion | `sf login` |
-| License management | Sign out | `sf logout` |
-| Help and information | View CLI information | `sf info` |
-| Help and information | Show help | `sf help` |
-| Exit | Exit | `Ctrl+C` |
+Use the following CLI key actions to navigate the interactive screens:
 
-N> The `<platform>` text is a usage placeholder. Use `winforms` for Windows Forms.
-
-Use the following keys to navigate the interactive screens:
-
-| Key | Action |
+| Key action | Action |
 | --- | --- |
 | Up / Down | Move through the options |
 | Enter | Choose the focused option, or continue |
@@ -104,6 +96,8 @@ Use the following keys to navigate the interactive screens:
 Complete direct commands remain usable without opening the menu. `--no-interactive` disables prompts in any command.
 
 ## Available commands
+
+N> The `<platform>` text is a usage placeholder. Use `winforms` for Windows Forms.
 
 | Command | Purpose | For details, refer to |
 | --- | --- | --- |
@@ -128,3 +122,5 @@ Complete direct commands remain usable without opening the menu. `--no-interacti
 * [Syncfusion Windows Forms controls](https://www.syncfusion.com/winforms-controls)
 * [Syncfusion Windows Forms help documentation](https://help.syncfusion.com/windowsforms/overview)
 * [System requirements for Windows Forms](https://help.syncfusion.com/windowsforms/system-requirements)
+* [Installing Syncfusion Windows Forms NuGet packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
+* [Syncfusion<sup>®</sup> licensing overview](https://help.syncfusion.com/common/essential-studio/licensing/overview)
