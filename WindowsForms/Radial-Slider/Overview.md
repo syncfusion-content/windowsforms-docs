@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion® Windows Forms RadialSlider Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio Windows Forms RadialSlider control and more details.
-platform: WindowsForms
+platform: windowsforms
 control: RadialSlider 
 documentation: ug
 ---

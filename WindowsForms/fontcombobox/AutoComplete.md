@@ -2,7 +2,7 @@
 layout: post
 title: Autocomplete in Windows Forms FontComboBox | Syncfusion®
 description: Enable Autocomplete functionality in the Windows Forms FontComboBox control to help users quickly find and select font names.
-platform: WindowsForms
+platform: windowsforms
 control: FontComboBox
 documentation: ug
 ---

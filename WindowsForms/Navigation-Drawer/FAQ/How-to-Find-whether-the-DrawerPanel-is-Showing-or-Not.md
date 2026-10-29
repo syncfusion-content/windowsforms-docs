@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
 title: How to Check Drawer Visibility in NavigationDrawer | Syncfusion
 description: Check whether the DrawerPanel is visible in Syncfusion® Windows Forms Navigation Drawer control using the IsDrawerShowing method and more.
-platform: WindowsForms
+platform: windowsforms
 control: Frequently Asked Questions
 documentation: ug
 ---

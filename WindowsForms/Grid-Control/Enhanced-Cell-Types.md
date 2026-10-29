@@ -466,7 +466,7 @@ rend.ActiveLinkColor = Color.Green
 {% endhighlight %}
 {% endtabs %}
 
-N> For more details and sample, check the KB link over [here](https://www.syncfusion.com/kb/4505/how-to-change-the-color-of-the-linklabel-mousehover).
+N> For more details and sample, check the KB link over [here](https://support.syncfusion.com/kb/article/4340/how-to-change-the-color-of-the-linklabel-mousehover-in-winforms-gridcontrol).
 
 ## PictureBox cell type
 Picture Box cell type can be embedded into a cell by calculating the size of the picture and extending the width and height of the cell accordingly. [PictureBoxStyleProperties](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.PictureBoxStyleProperties.html) class provides the style where it holds the information of the picture that has to be added. The following code examples illustrate how to set the cell type to PictureBox.

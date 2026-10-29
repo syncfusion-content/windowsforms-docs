@@ -53,7 +53,7 @@ The [BeforePopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows
 
 ### Example Scenario: Resizing the pop-up
 
-Drag and drop the parent control, say RichTextBox and PopupControlContainer onto the form. In the [MouseUp](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.mouseup?redirectedfrom=MSDN&view=netframework-4.7.2) event of RichTextBox, show the popup using the [ShowPopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html#Syncfusion_Windows_Forms_PopupControlContainer_ShowPopup_System_Drawing_Point_) method.
+Drag and drop the ParentControl say RichTextBox and PopupControlContainer onto the form. In the [MouseUp](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.mouseup?redirectedfrom=MSDN&view=netframework-4.7.2) event of RichTextBox, show the Popup using [ShowPopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html#Syncfusion_Windows_Forms_PopupControlContainer_ShowPopup_System_Drawing_Point_) method.
 
 To make the popup resizable, handle the [BeforePopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html#Syncfusion_Windows_Forms_PopupControlContainer_BeforePopup) event of PopupControlContainer and use the following code snippet.
 

@@ -2,7 +2,7 @@
 layout: post
 title: Datasource in Windows Forms xptoolbar control | Syncfusion
 description: Learn about Datasource support in Syncfusion Windows Forms ComboBoxAutoComplete(Classic) control and more details.
-platform: WindowsForms
+platform: windowsforms
 control: ComboBoxAutoComplete
 documentation: ug
 ---

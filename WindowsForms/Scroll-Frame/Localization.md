@@ -2,7 +2,7 @@
 layout: post
 title: Localization in Windows Forms Scroll Frame | Syncfusion®
 description: Localization support enables translating scrollbar context menu content using resource files and culture-specific settings.
-platform: WindowsForms
+platform: windowsforms
 control: SfScrollFrame
 documentation: ug
 ---
@@ -17,7 +17,7 @@ To add the resx file for the application, follow these steps:
 
 1. Create new folder and named as Resources in your application.
 
-2. Add the default resource file of `SfScrollFrame` into the Resources folder. You can download the Syncfusion.Core.WinForms.resx [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Core.WinForms-1127975576).
+2. Add the default resource file of `SfScrollFrame` into Resources folder. You can download the Syncfusion.Core.WinForms.resx [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/Syncfusion.Core.WinForms-1127975576.zip).
 ![WinForms showing add the default resource file in scrollframe](SfScrollFrame_images/SfScrollFrame_img10.jpg)
 
 3. Right-click on the Resources folder, select Add and then New Item. 
@@ -36,7 +36,7 @@ To add the resx file for the application, follow these steps:
 
 ### Editing the default culture resource
 
-You can edit the default resource file by adding it to the Resources folder of your application, where the SfScrollFrame reads the static texts from. You can download the default resource file from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Core.WinForms-1127975576).
+You can edit the default resource file by adding it to Resources folder of your application where SfScrollFrame reads the static texts from here. You can download the default resource file from [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/Syncfusion.Core.WinForms-1127975576.zip).
 
 ![WinForms showing the edit the default resource file in scrollframe](SfScrollFrame_images/SfScrollFrame_img15.jpg)
 

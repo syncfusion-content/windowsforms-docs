@@ -25,5 +25,5 @@ this.Grid.Table.TableDirty = _‘True’_
 {% endhighlight %}
 {% endtabs %} 
 
-Sample: [http://www.syncfusion.com/downloads/support/directtrac/118685/GridDeleteTest-1197463268.zip](http://www.syncfusion.com/downloads/support/directtrac/118685/GridDeleteTest-1197463268.zip)
+Sample: [https://files2.syncfusion.com/login?ReturnUrl=%2Fdtsupport%2Fdirecttrac%2F118685%2FGridDeleteTest-1197463268.zip](https://files2.syncfusion.com/login?ReturnUrl=%2Fdtsupport%2Fdirecttrac%2F118685%2FGridDeleteTest-1197463268.zip)
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Populate-the-ParentNode-and-ChildNode-for-t | WindowsForms | Syncfusion
-description: how to populate the parentnode and childnode for the selected node programmatically
-platform: WindowsForms
+title: How to Populate Nodes in Windows Forms TreeViewAdv | Syncfusion
+description: Populate the ParentNode and ChildNode for the selected node programmatically in Syncfusion® Windows Forms TreeViewAdv control.
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---
 
-# How to Populate the ParentNode and ChildNode for the Selected Node Programmatically
+# How to Populate Nodes in Windows Forms TreeViewAdv
 
 This can be done through code as shown below, by setting the selected node to be the present node and then if the present node is equal to null, the new ChildNode is created and added.
 
