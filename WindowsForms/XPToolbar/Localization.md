@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Localization in Windows Forms XPToolbar | Syncfusion®
 description: Localization support enables displaying toolbar content and bar items in different languages and regional cultures.

@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
 title: Border Settings in Windows Forms MaskedTextBox | Syncfusion®
 description: Border settings in MaskedEditBox enable customizing border styles, colors, sides, and 3D border appearance.
-platform: WindowsForms
+platform: windowsforms
 control: MaskedEditBox
 documentation: ug
 --- 

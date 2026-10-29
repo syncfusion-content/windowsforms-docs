@@ -5,7 +5,6 @@ description: Align diagram nodes with visual guides in the Syncfusion® Windows 
 platform: windowsforms
 control: Diagram
 documentation: ug
-appliesto: UI Component Suite, Diagram SDK
 ---
 
 

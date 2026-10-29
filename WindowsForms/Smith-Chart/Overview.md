@@ -5,7 +5,6 @@ description: Learn about the introduction of Syncfusion Essential Studio® Windo
 platform: windowsforms
 control: SfSmithChart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 # About Syncfusion® Windows Forms Smith Chart Control
 

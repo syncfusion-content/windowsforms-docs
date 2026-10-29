@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
 title: Save and Load XML in Windows Forms TreeView | Syncfusion®
 description: Save and Load XML demonstrates persisting TreeViewAdv nodes to XML and rebuilding trees from XML files.
-platform: WindowsForms
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---
@@ -206,4 +206,4 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/TREEVI~1932187720).
+You can download the sample [here](https://s3.amazonaws.com/files2.syncfusion.com/dtsupport/directtrac/general/ze/TREEVI~1932187720.zip).

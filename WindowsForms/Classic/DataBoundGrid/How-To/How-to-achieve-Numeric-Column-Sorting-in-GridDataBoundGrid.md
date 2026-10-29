@@ -80,7 +80,7 @@ End Class
 
 ## Sample Link
 
-To view a sample on this, see [Numeric Column Sorting](http://www.syncfusion.com/downloads/Support/DirectTrac/72524/GridDataBoundGridCustomSorting1509447642-1313190486.zip).
+To view a sample on this, see [Numeric Column Sorting](https://files2.syncfusion.com/login?ReturnUrl=%2Fdtsupport%2Fdirecttrac%2F72524%2FGridDataBoundGridCustomSorting1509447642-1313190486.zip).
 
 
 

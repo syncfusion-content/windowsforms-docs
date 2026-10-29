@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion® Windows Forms MessageBox Control | Syncfusion®
 description: Learn about the introduction and overview of Syncfusion® Windows Forms MessageBox control, including themes, localization, and key features.
-platform: WindowsForms
+platform: windowsforms
 control: MessageBox
 documentation: ug
 ---

@@ -5,7 +5,6 @@ description: Learn how to get started with the Syncfusion® Windows Forms Smith 
 platform: windowsforms
 control: SfSmithChart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 ## Assembly deployment
 

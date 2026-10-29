@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
 title: Theming in Windows Forms CommandBars | Syncfusion®
 description: Theming support provides Office, Visual Studio, Metro, and customizable visual styles for CommandBar appearance.
-platform: WindowsForms
+platform: windowsforms
 control: CommandBars
 documentation: ug
 ---
