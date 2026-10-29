@@ -50,23 +50,27 @@ Select **Blank app** or **Include Syncfusion controls**. Blank app is the first 
 
 7. **Controls:**
 
-When you include controls, choose one or more controls from the list. Controls start unchecked, and at least one selection is required. The following controls are available in a new Windows Forms project:
-
-    | Control | Control ID |
-    | --- | --- |
-    | Chart | `chart` |
-    | DataGrid | `datagrid` |
-    | Diagram | `diagram` |
-    | DockingManager | `docking-manager` |
-    | NavigationDrawer | `navigation-drawer` |
+    When you include controls, choose one or more controls from the list. Controls start unchecked, and at least one selection is required. The available controls are listed in the table below the wizard flow.
 
 8. **Post-create:**
 
-Select **Generate only** or **Build project**.
+    Select **Generate only** or **Build project**.
 
 9. **Confirmation:**
 
-Review the selected values and confirm to create the project.
+    Review the selected values and confirm to create the project.
+
+### Available controls
+
+The following controls are available in a new Windows Forms project:
+
+| Control | Control ID |
+| --- | --- |
+| Chart | `chart` |
+| DataGrid | `datagrid` |
+| Diagram | `diagram` |
+| DockingManager | `docking-manager` |
+| NavigationDrawer | `navigation-drawer` |
 
 N> A complete direct command does not open the wizard. When a name is missing in an interactive terminal, the wizard supplies a default and collects the remaining unspecified inputs. Missing required values in scripts produce an error.
 
