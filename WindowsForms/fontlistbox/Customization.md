@@ -2,7 +2,7 @@
 layout: post
 title: Customization in Windows Forms FontListBox | Syncfusion®
 description: Customization in Windows Forms FontListBox enables configuring selection modes, scrollbars, item sizing, sorting, and auto-complete behavior.
-platform: WindowsForms
+platform: windowsforms
 control: FontListBox
 documentation: ug
 ---

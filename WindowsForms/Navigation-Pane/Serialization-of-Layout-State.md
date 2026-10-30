@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
 title: Serialize Layout State in Windows Forms Navigation Pane | Syncfusion®
 description: Serialization support enables saving and restoring GroupBar layout state information using AppStateSerializer.
-platform: WindowsForms
+platform: windowsforms
 control: GroupBar
 documentation: ug
 ---

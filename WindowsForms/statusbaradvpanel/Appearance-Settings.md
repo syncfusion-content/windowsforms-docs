@@ -2,7 +2,7 @@
 layout: post
 title: Appearance Settings in Windows Forms StatusBarAdvPanel | Syncfusion®
 description: Appearance settings in Windows Forms StatusBarAdvPanel customize colors, styles, and visual elements for a consistent user interface.
-platform: WindowsForms
+platform: windowsforms
 control: StatusBarAdvPanel
 documentation: ug
 ---

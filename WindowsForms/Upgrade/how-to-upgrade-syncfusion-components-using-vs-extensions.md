@@ -2,7 +2,7 @@
 layout: post
 title: How to upgrade Syncfusion® WinForms components | Syncfusion®
 description: Learn how to upgrade Syncfusion® WinForms components to the latest version using Visual Studio extensions.
-platform: WindowsForms
+platform: windowsforms
 control: Essential Studio
 documentation: ug
 ---

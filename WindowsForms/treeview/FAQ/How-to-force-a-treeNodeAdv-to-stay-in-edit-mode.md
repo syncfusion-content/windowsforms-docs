@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-force-a-treeNodeAdv-to-stay-in-edit-mode-until-user-enters-an-unique-name | WindowsForms | Syncfusion
-description: how to force a treenodeadv to stay in edit mode until user enters an unique name
-platform: WindowsForms
+title: How to Stay in Edit Mode in Windows Forms TreeNodeAdv | Syncfusion
+description: Force a TreeNodeAdv to stay in edit mode until user enters a unique name in Syncfusion® Windows Forms TreeViewAdv control.
+platform: windowsforms
 control: TreeView 
 documentation: ug
 ---
 
-# How to Force a TreeNodeAdv to Stay in Edit Mode until User Enters an Unique Name 
+# How to Stay in Edit Mode in Windows Forms TreeNodeAdv
 
 This can be done using the below code snippet.
 

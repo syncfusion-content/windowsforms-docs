@@ -5,7 +5,6 @@ description: Title in the Windows Forms Chart displays descriptive text for char
 platform: windowsforms
 control: Chart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Title in Windows Forms Chart

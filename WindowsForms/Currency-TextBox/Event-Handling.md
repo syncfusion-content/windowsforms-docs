@@ -38,7 +38,7 @@ The event properties associated with the `ValidationErrorArgs` are as follows.
 </tr>
 </table>
 
-It can be handled to raise an alarm to the user when invalid text is entered. Refer to the [Error Validation](#error-validation) section below.
+It can be handled to raise an alarm to user when invalid text is entered by them. Refer Error Validation[.](https://help.syncfusion.com/windowsforms)
 
 ## KeyDown Event
 

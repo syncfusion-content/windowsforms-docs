@@ -2,7 +2,7 @@
 layout: post
 title: Limitation in Windows Forms Scroll Frame | Syncfusion®
 description: Limitations describe supported control types, custom scrollbar restrictions, and scrollbar LargeChange behavior constraints.
-platform: WindowsForms
+platform: windowsforms
 control: SfScrollFrame
 documentation: ug
 ---

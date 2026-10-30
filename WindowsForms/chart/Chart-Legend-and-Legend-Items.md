@@ -74,7 +74,7 @@ chartControl.ShowLegend = false;
 chartControl.ShowLegend = False
 
 {% endhighlight %}
-{% endtabs %}
+{% endtabs %}S
 
 ![Show Legend in Windows Forms Chart](Chart-Legend-and-Legend-Items_images/show-legend.png)
 

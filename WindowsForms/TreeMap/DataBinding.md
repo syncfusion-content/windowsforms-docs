@@ -5,7 +5,6 @@ description: Data binding in the Windows Forms TreeMap enables visualization of 
 platform: windowsforms
 control: TreeMap
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Data Binding in WinForms TreeMap

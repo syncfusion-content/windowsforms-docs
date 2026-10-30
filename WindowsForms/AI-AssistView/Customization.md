@@ -518,7 +518,7 @@ private void SetupChatCollectionAvatars()
 ### Avatar Shape and Corner Radius
 
 [AvatarShape](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.AvatarShape.html) exposes two preset shapes — `Circle` and `Square` — plus the `Custom` shape. Use `Custom` together with `CornerRadius` to control the rounding in pixels. The shape and border follow the same code path in every chat row, so setting them once on the [AvatarStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.AvatarStyle.html) propagates to every message from the author.
-wo preset shapes — `Circle` and `
+
 {% tabs %}
 
 {% highlight c# %}

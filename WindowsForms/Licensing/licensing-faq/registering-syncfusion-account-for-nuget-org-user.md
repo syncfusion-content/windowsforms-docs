@@ -2,7 +2,7 @@
 layout: post
 title: Register Account for NuGet.org Users in Windows Forms | Syncfusion®
 description: Register Syncfusion® account for direct NuGet.org users to obtain trial license key for Windows Forms.
-platform: WindowsForms
+platform: windowsforms
 control: Essential Studio
 documentation: ug
 ---
@@ -12,5 +12,5 @@ documentation: ug
 If you have directly obtained Syncfusion assemblies from [NuGet.org](https://www.nuget.org/) and do not have a Syncfusion account, follow these steps to obtain a free 30-day trial license key:
 
 * Register for a free Syncfusion account [here](https://www.syncfusion.com/account/register)
-* Go to the start trials [page](https://syncfusion.com/account/manage-trials/start-trials) and start a trial
-* Finally proceed to the [Trial & Downloads section](https://www.syncfusion.com/account/manage-trials/downloads) to obtain the [license key](https://help.syncfusion.com/windowsforms/licensing/how-to-generate)
+* Go to the start trials [page](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fmanage-trials%2fstart-trials) and start a trial
+* Finally proceed to the [Trial & Downloads section](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fmanage-trials%2fdownloads) to obtain the [license key](https://help.syncfusion.com/windowsforms/licensing/how-to-generate)

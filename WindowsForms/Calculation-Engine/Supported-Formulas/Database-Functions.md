@@ -15,7 +15,7 @@ documentation: ug
 
 
 
-Returns the number of cells containing numbers in a field of a list or database that satisfy specified conditions
+Returns the number of cells containing numbers in a field of a list or database that satisfy specified conditions.
 
 
 
@@ -27,20 +27,26 @@ _DCOUNT(database, field, criteria)_
 
 
 
-**Parameters:**
+**where:**
 
-`database`: The range of cells that makes up the list or database. A database is a list of related data in which rows of related information are records, and columns of data are fields. The first row of the list contains labels for each column.
 
-`field`: Indicates which column is used in the function. Enter the column label enclosed between double quotation marks, such as "Age" or "Yield," or a number (without quotation marks) that represents the position of the column within the list: 1 for the first column, 2 for the second column, and so on.
 
-`criteria`: The range of cells that contains the conditions that you specify. You can use any range for the criteria argument, as long as the argument includes at least one column label and at least one cell below the column label in which you specify a condition for the column.
+* database denotes the range of cells that makes up the list or database. A database is a list of related data in which rows of related information are records, and columns of data are fields. The first row of the list contains labels for each column.
+
+
+
+* field  indicates which column is used in the function. Enter the column label enclosed between double quotation marks, such as "Age" or "Yield," or a number (without quotation marks) that represents the position of the column within the list: 1 for the first column, 2 for the second column, and so on.
+
+
+
+* criteria denotes the range of cells that contains the conditions that you specify. You can use any range for the criteria argument, as long as the argument includes at least one column label and at least one cell below the column label in which you specify a condition for the column.
 
 
 
 ## DCOUNTA
 
 
-Returns the number of non-blank cells in a field of a list or database, that satisfy specified conditions.
+Returns the number of non-blank cells in a field of a list or database that satisfy specified conditions.
 
 
 
@@ -52,13 +58,19 @@ _DCOUNTA(database, field, criteria)_
 
 
 
-**Parameters:**
+**where:**
 
-`database`: The range of cells that makes up the list or database. A database is a list of related data in which rows of related information are records, and columns of data are fields. The first row of the list contains labels for each column.
 
-`field`: Indicates which column is used in the function. Enter the column label enclosed between double quotation marks, such as "Age" or "Yield," or a number (without quotation marks) that represents the position of the column within the list: 1 for the first column, 2 for the second column, and so on.
 
-`criteria`: The range of cells that contains the conditions that you specify. You can use any range for the criteria argument, as long as the argument includes at least one column label and at least one cell below the column label in which you specify a condition for the column.
+* database denotes the range of cells that makes up the list or database. A database is a list of related data in which rows of related information are records, and columns of data are fields. The first row of the list contains labels for each column.
+
+
+
+* field  indicates which column is used in the function. Enter the column label enclosed between double quotation marks, such as "Age" or "Yield," or a number (without quotation marks) that represents the position of the column within the list: 1 for the first column, 2 for the second column, and so on.
+
+
+
+* criteria denotes the range of cells that contains the conditions that you specify. You can use any range for the criteria argument, as long as the argument includes at least one column label and at least one cell below the column label in which you specify a condition for the column.
 
 
 
@@ -66,7 +78,7 @@ _DCOUNTA(database, field, criteria)_
 
 
 
-Calculates the average of values in a field of a list or database, that satisfy specified conditions.
+Calculates the average of values in a field of a list or database that satisfy specified conditions.
 
 
 
@@ -78,13 +90,19 @@ _DAVERAGE(database, field, criteria)_
 
 
 
-**Parameters:**
+**where:**
 
-`database`: The range of cells that makes up the list or database. A database is a list of related data in which rows of related information are records, and columns of data are fields. The first row of the list contains labels for each column.
 
-`field`: Indicates which column is used in the function. Enter the column label enclosed between double quotation marks, such as "Age" or "Yield," or a number (without quotation marks) that represents the position of the column within the list: 1 for the first column, 2 for the second column, and so on.
 
-`criteria`: The range of cells that contains the conditions that you specify. You can use any range for the criteria argument, as long as the argument includes at least one column label and at least one cell below the column label in which you specify a condition for the column.
+* database denotes the range of cells that makes up the list or database. A database is a list of related data in which rows of related information are records, and columns of data are fields. The first row of the list contains labels for each column.
+
+
+
+* field  indicates which column is used in the function. Enter the column label enclosed between double quotation marks, such as "Age" or "Yield," or a number (without quotation marks) that represents the position of the column within the list: 1 for the first column, 2 for the second column, and so on.
+
+
+
+* criteria denotes the range of cells that contains the conditions that you specify. You can use any range for the criteria argument, as long as the argument includes at least one column label and at least one cell below the column label in which you specify a condition for the column.
 
 
 
@@ -92,7 +110,7 @@ _DAVERAGE(database, field, criteria)_
 
 
 
-Returns a single value from a field of a list or database, that satisfy specified conditions.
+Returns a single value from a field of a list or database that satisfy specified conditions.
 
 
 
@@ -104,29 +122,35 @@ _DGET(database, field, criteria)_
 
 
 
-**Parameters:**
+**where:**
 
-`database`: The range of cells that makes up the list or database. A database is a list of related data in which rows of related information are records, and columns of data are fields. The first row of the list contains labels for each column.
 
-`field`: Indicates which column is used in the function. Enter the column label enclosed between double quotation marks, such as "Age" or "Yield," or a number (without quotation marks) that represents the position of the column within the list: 1 for the first column, 2 for the second column, and so on.
 
-`criteria`: The range of cells that contains the conditions that you specify. You can use any range for the criteria argument, as long as the argument includes at least one column label and at least one cell below the column label in which you specify a condition for the column.
+* database denotes the range of cells that makes up the list or database. A database is a list of related data in which rows of related information are records, and columns of data are fields. The first row of the list contains labels for each column.
+
+
+
+* field  indicates which column is used in the function. Enter the column label enclosed between double quotation marks, such as "Age" or "Yield," or a number (without quotation marks) that represents the position of the column within the list: 1 for the first column, 2 for the second column, and so on.
+
+
+
+* criteria denotes the range of cells that contains the conditions that you specify. You can use any range for the criteria argument, as long as the argument includes at least one column label and at least one cell below the column label in which you specify a condition for the column.
 
 ## DMAX
 
-Returns the maximum value from a field of a list or database, that satisfy specified conditions
+Returns the maximum value from a field of a list or database that satisfy specified conditions.
 
 **Syntax:**
 
 _DMAX(database, field, criteria)_
 
-**Parameters:**
+**Where:**
 
-`database`: The range of cells that makes up the list or database. A database is a list of related data in which rows of related information are records, and columns of data are fields. The first row of the list contains labels for each column.
+* database denotes the range of cells that makes up the list or database. A database is a list of related data in which rows of related information are records, and columns of data are fields. The first row of the list contains labels for each column.
 
-`field`: Indicates which column is used in the function. Enter the column label enclosed between double quotation marks, such as "Age" or "Yield," or a number (without quotation marks) that represents the position of the column within the list: 1 for the first column, 2 for the second column, and so on.
+* field indicates which column is used in the function. Enter the column label enclosed between double quotation marks, such as "Age" or "Yield," or a number (without quotation marks) that represents the position of the column within the list: 1 for the first column, 2 for the second column, and so on.
 
-`criteria`: The range of cells that contains the conditions that you specify. You can use any range for the criteria argument, as long as it includes at least one column label and at least one cell below the column label in which you specify a condition for the column.
+* criteria is the range of cells that contains the conditions that you specify. You can use any range for the criteria argument, as long as it includes at least one column label and at least one cell below the column label in which you specify a condition for the column.
 
 **Remarks:**
 
@@ -141,19 +165,19 @@ _DMAX(database, field, criteria)_
 
 ## DMIN
 
-Returns the minimum value from a field of a list or database, that satisfy specified conditions
+Returns the minimum value from a field of a list or database that satisfy specified conditions.
 
 **Syntax:**
 
 _DMIN(database, field, criteria)_
 
-**Parameters:**
+**Where:**
 
-`database`: The range of cells that makes up the list or database. A database is a list of related data in which rows of related information are records, and columns of data are fields. The first row of the list contains labels for each column.
+* database denotes the range of cells that makes up the list or database. A database is a list of related data in which rows of related information are records, and columns of data are fields. The first row of the list contains labels for each column.
 
-`field`: Indicates which column is used in the function. Enter the column label enclosed between double quotation marks, such as "Age" or "Yield," or a number (without quotation marks) that represents the position of the column within the list: 1 for the first column, 2 for the second column, and so on.
+* field indicates which column is used in the function. Enter the column label enclosed between double quotation marks, such as "Age" or "Yield," or a number (without quotation marks) that represents the position of the column within the list: 1 for the first column, 2 for the second column, and so on.
 
-`criteria`: The range of cells that contains the conditions that you specify. You can use any range for the criteria argument, as long as it includes at least one column label and at least one cell below the column label in which you specify a condition for the column.
+* criteria is the range of cells that contains the conditions that you specify. You can use any range for the criteria argument, as long as it includes at least one column label and at least one cell below the column label in which you specify a condition for the column.
 
 **Remarks:**
 
@@ -167,19 +191,19 @@ _DMIN(database, field, criteria)_
 
 ## DPRODUCT
 
-Multiplies the values in the field(column) of records in a list or database that match the conditions you specify
+Multiplies the values in the field(column) of records in a list or database that match the conditions you specify.
 
 **Syntax:**
 
 _DPRODUCT(database, field, criteria)_
 
-**Parameters:**
+**Where:**
 
-`database`: The range of cells that makes up the list or database. A database is a list of related data in which rows of related information are records, and columns of data are fields. The first row of the list contains labels for each column.
+* database denotes the range of cells that makes up the list or database. A database is a list of related data in which rows of related information are records, and columns of data are fields. The first row of the list contains labels for each column.
 
-`field`: Indicates which column is used in the function. Enter the column label enclosed between double quotation marks, such as "Age" or "Yield," or a number (without quotation marks) that represents the position of the column within the list: 1 for the first column, 2 for the second column, and so on.
+* field indicates which column is used in the function. Enter the column label enclosed between double quotation marks, such as "Age" or "Yield," or a number (without quotation marks) that represents the position of the column within the list: 1 for the first column, 2 for the second column, and so on.
 
-`criteria`: The range of cells that contains the conditions that you specify. You can use any range for the criteria argument, as long as it includes at least one column label and at least one cell below the column label in which you specify a condition for the column.
+* criteria is the range of cells that contains the conditions that you specify. You can use any range for the criteria argument, as long as it includes at least one column label and at least one cell below the column label in which you specify a condition for the column.
 
 **Remarks:**
 
@@ -193,19 +217,19 @@ _DPRODUCT(database, field, criteria)_
 
 ## DSTDEVP
 
-Calculates the standard deviation (based on an entire population) of values in a field of a list or database, that satisfy specified conditions
+Calculates the standard deviation (based on an entire population) of values in a field of a list or database that satisfy specified conditions.
 
 **Syntax:**
 
 _DSTDEVP(database, field, criteria)_
 
-**Parameters:**
+**Where:**
 
-`database`: The range of cells that makes up the list or database. A database is a list of related data in which rows of related information are records, and columns of data are fields. The first row of the list contains labels for each column.
+* database denotes the range of cells that makes up the list or database. A database is a list of related data in which rows of related information are records, and columns of data are fields. The first row of the list contains labels for each column.
 
-`field`: Indicates which column is used in the function. Enter the column label enclosed between double quotation marks, such as "Age" or "Yield," or a number (without quotation marks) that represents the position of the column within the list: 1 for the first column, 2 for the second column, and so on.
+* field indicates which column is used in the function. Enter the column label enclosed between double quotation marks, such as "Age" or "Yield," or a number (without quotation marks) that represents the position of the column within the list: 1 for the first column, 2 for the second column, and so on.
 
-`criteria`: The range of cells that contains the conditions that you specify. You can use any range for the criteria argument, as long as it includes at least one column label and at least one cell below the column label in which you specify a condition for the column.
+* criteria is the range of cells that contains the conditions that you specify. You can use any range for the criteria argument, as long as it includes at least one column label and at least one cell below the column label in which you specify a condition for the column.
 
 **Remarks:**
 
@@ -217,21 +241,21 @@ _DSTDEVP(database, field, criteria)_
 
 * To perform an operation on an entire column in a database, enter a blank line below the column labels in the criteria range.
 
-## DSTEV
+## DSTDEV
 
-Calculates the standard deviation (based on a sample of a population) of values in a field of a list or database, that satisfy specified conditions
+Calculates the standard deviation (based on a sample of a population) of values in a field of a list or database that satisfy specified conditions.
 
 **Syntax:**
 
 _DSTDEV(database, field, criteria)_
 
-**Parameters:**
+**Where:**
 
-`database`: The range of cells that makes up the list or database. A database is a list of related data in which rows of related information are records, and columns of data are fields. The first row of the list contains labels for each column.
+* database denotes the range of cells that makes up the list or database. A database is a list of related data in which rows of related information are records, and columns of data are fields. The first row of the list contains labels for each column.
 
-`field`: Indicates which column is used in the function. Enter the column label enclosed between double quotation marks, such as "Age" or "Yield," or a number (without quotation marks) that represents the position of the column within the list: 1 for the first column, 2 for the second column, and so on.
+* field indicates which column is used in the function. Enter the column label enclosed between double quotation marks, such as "Age" or "Yield," or a number (without quotation marks) that represents the position of the column within the list: 1 for the first column, 2 for the second column, and so on.
 
-`criteria`: The range of cells that contains the conditions that you specify. You can use any range for the criteria argument, as long as it includes at least one column label and at least one cell below the column label in which you specify a condition for the column.
+* criteria is the range of cells that contains the conditions that you specify. You can use any range for the criteria argument, as long as it includes at least one column label and at least one cell below the column label in which you specify a condition for the column.
 
 **Remarks:**
 
@@ -245,19 +269,19 @@ _DSTDEV(database, field, criteria)_
 
 ## DSUM
 
-Adds the numbers in the field (column) of records in a list or database that match the conditions you specify
+Adds the numbers in the field (column) of records in a list or database that match the conditions you specify.
 
 **Syntax:**
 
 _DSUM(database, field, criteria)_
 
-**Parameters:**
+**Where:**
 
-`database`: The range of cells that makes up the list or database. A database is a list of related data in which rows of related information are records, and columns of data are fields. The first row of the list contains labels for each column.
+* database denotes the range of cells that makes up the list or database. A database is a list of related data in which rows of related information are records, and columns of data are fields. The first row of the list contains labels for each column.
 
-`field`: Indicates which column is used in the function. Enter the column label enclosed between double quotation marks, such as "Age" or "Yield," or a number (without quotation marks) that represents the position of the column within the list: 1 for the first column, 2 for the second column, and so on.
+* field indicates which column is used in the function. Enter the column label enclosed between double quotation marks, such as "Age" or "Yield," or a number (without quotation marks) that represents the position of the column within the list: 1 for the first column, 2 for the second column, and so on.
 
-`criteria`: The range of cells that contains the conditions that you specify. You can use any range for the criteria argument, as long as it includes at least one column label and at least one cell below the column label in which you specify a condition for the column.
+* criteria is the range of cells that contains the conditions that you specify. You can use any range for the criteria argument, as long as it includes at least one column label and at least one cell below the column label in which you specify a condition for the column.
 
 **Remarks:**
 
@@ -271,19 +295,19 @@ _DSUM(database, field, criteria)_
 
 ## DVAR
 
-Calculates the variance (based on a sample of a population) of values in a field of a list or database, that satisfy specified conditions.
+Calculates the variance (based on a sample of a population) of values in a field of a list or database that satisfy specified conditions.
 
 **Syntax:**
 
 _DVAR(database, field, criteria)_
 
-**Parameters:**
+**Where:**
 
-`database`: The range of cells that makes up the list or database. A database is a list of related data in which rows of related information are records, and columns of data are fields. The first row of the list contains labels for each column.
+* database denotes the range of cells that makes up the list or database. A database is a list of related data in which rows of related information are records, and columns of data are fields. The first row of the list contains labels for each column.
 
-`field`: Indicates which column is used in the function. Enter the column label enclosed between double quotation marks, such as "Age" or "Yield," or a number (without quotation marks) that represents the position of the column within the list: 1 for the first column, 2 for the second column, and so on.
+* field indicates which column is used in the function. Enter the column label enclosed between double quotation marks, such as "Age" or "Yield," or a number (without quotation marks) that represents the position of the column within the list: 1 for the first column, 2 for the second column, and so on.
 
-`criteria`: The range of cells that contains the conditions that you specify. You can use any range for the criteria argument, as long as it includes at least one column label and at least one cell below the column label in which you specify a condition for the column.
+* criteria is the range of cells that contains the conditions that you specify. You can use any range for the criteria argument, as long as it includes at least one column label and at least one cell below the column label in which you specify a condition for the column.
 
 **Remarks:**
 
@@ -299,19 +323,19 @@ _DVAR(database, field, criteria)_
 
 ## DVARP
 
-Calculates the variance (based on an entire population) of values in a field of a list or database, that satisfy specified conditions.
+Calculates the variance (based on an entire population) of values in a field of a list or database that satisfy specified conditions.
 
 **Syntax:**
 
 _DVARP(database, field, criteria)_
 
-**Parameters:**
+**Where:**
 
-`database`: The range of cells that makes up the list or database. A database is a list of related data in which rows of related information are records, and columns of data are fields. The first row of the list contains labels for each column.
+* database denotes the range of cells that makes up the list or database. A database is a list of related data in which rows of related information are records, and columns of data are fields. The first row of the list contains labels for each column.
 
-`field`: Indicates which column is used in the function. Enter the column label enclosed between double quotation marks, such as "Age" or "Yield," or a number (without quotation marks) that represents the position of the column within the list: 1 for the first column, 2 for the second column, and so on.
+* field indicates which column is used in the function. Enter the column label enclosed between double quotation marks, such as "Age" or "Yield," or a number (without quotation marks) that represents the position of the column within the list: 1 for the first column, 2 for the second column, and so on.
 
-`criteria`: The range of cells that contains the conditions that you specify. You can use any range for the criteria argument, as long as it includes at least one column label and at least one cell below the column label in which you specify a condition for the column.
+* criteria is the range of cells that contains the conditions that you specify. You can use any range for the criteria argument, as long as it includes at least one column label and at least one cell below the column label in which you specify a condition for the column.
 
 **Remarks:**
 

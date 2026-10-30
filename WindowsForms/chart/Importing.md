@@ -5,7 +5,6 @@ description: Importing in the Windows Forms Chart enables chart data to be loade
 platform: windowsforms
 control: Chart
 documentation: ug
-appliesto: UI Component Suite, Chart SDK
 ---
 
 # Importing in Windows Forms Chart

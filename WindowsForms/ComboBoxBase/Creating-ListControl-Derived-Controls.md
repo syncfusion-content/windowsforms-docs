@@ -2,7 +2,7 @@
 layout: post
 title: Derived ListControl in Windows Forms ComboBoxBase | Syncfusion®
 description: Create derived list controls in Windows Forms ComboBoxBase to enable custom item display, selection handling, and advanced list management capabilities.
-platform: WindowsForms
+platform: windowsforms
 control: ComboBoxBase
 documentation: ug
 ---

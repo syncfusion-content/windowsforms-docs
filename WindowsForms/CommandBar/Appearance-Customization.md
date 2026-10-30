@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Appearance Customization in Windows Forms Command Bar | Syncfusion®
 description: Appearance customization supports chevrons, grippers, buttons, backgrounds, fonts, cursors, and command bar styling.

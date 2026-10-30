@@ -104,7 +104,7 @@ Me.gridGroupingControl1.TableModel.ReadOnly = False
 {% endtabs %}
 
 ### Enabling Read Only for a particular cell
-For preventing the editing in cell by cell basis, make use of the [GridStyleInfo](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html) object’s [ReadOnly](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_ReadOnly) property. The `ReadOnly` property for specific cell can be set by using the[QueryCellStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html) event.
+For preventing the editing in cell by cell basis, make use of the [GridStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html) object’s [ReadOnly](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_ReadOnly) property. The `ReadOnly` property for specific cell can be set by using the[QueryCellStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -321,7 +321,7 @@ Private Sub gridGroupingControl1_TableControlCurrentCellChanging(ByVal sender As
 End Sub
 {% endhighlight %}
 {% endtabs %}
-The detailed explanation of the `CurrentCell Events` has been discussed in [CurrentCell Events](http://help.syncfusion.com/windowsforms/gridgrouping/events#current-cell-events) section.
+The detailed explanation of the `CurrentCell Events` has been discussed in [CurrentCell Events](https://help.syncfusion.com/windowsforms/gridgrouping/events#current-cell-events) section.
 
 ## Customizations through Editing
 The section explains on how to customize the key events while editing and also on how to customize the appearance while editing.

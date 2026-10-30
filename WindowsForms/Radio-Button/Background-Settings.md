@@ -2,7 +2,7 @@
 layout: post
 title: Background Settings in Windows Forms Radio Button | Syncfusion®
 description: Background settings in Windows Forms Radio Button enable applying gradient backgrounds and configuring start and end colors for customized control appearance.
-platform: WindowsForms
+platform: windowsforms
 control: Radio Button
 documentation: ug
 ---
