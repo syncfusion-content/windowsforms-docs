@@ -51,13 +51,4 @@ The Syncfusion® [Windows Forms Chart control](https://www.syncfusion.com/winfor
 
 ## See also
 
-- [Getting started with Windows Forms Chart](https://help.syncfusion.com/windowsforms/chart/getting-started)
-- [Chart types](https://help.syncfusion.com/windowsforms/chart/chart-types)
-- [Chart series](https://help.syncfusion.com/windowsforms/chart/chart-series)
-- [Chart axes](https://help.syncfusion.com/windowsforms/chart/chart-axes)
-- [Chart legend and legend items](https://help.syncfusion.com/windowsforms/chart/chart-legend-and-legend-items)
-- [Chart appearance](https://help.syncfusion.com/windowsforms/chart/chart-appearance)
-- [Windows Forms Chart API reference](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.html)
-- [Windows Forms Chart examples](https://github.com/syncfusion/winforms-demos/tree/master/chart)
-
 N> You can refer to our [WinForms Chart](https://www.syncfusion.com/winforms-ui-controls/chart) control feature tour page for its groundbreaking feature representations. You can also explore our [WinForms Chart example](https://github.com/syncfusion/winforms-demos/tree/master/chart) that shows how to render various chart types as well as how to easily configure with built-in support for creating stunning visual effects.
