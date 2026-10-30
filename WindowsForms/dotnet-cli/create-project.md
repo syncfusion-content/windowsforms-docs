@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Create Windows Forms Projects using Syncfusion .NET CLI | Syncfusion®
-description: Learn here about how to create a Syncfusion® Windows Forms project using the Syncfusion® .NET CLI (sf) through the interactive wizard or direct commands.
+description: Learn here about how to create a Syncfusion® Windows Forms project using the Syncfusion® .NET CLI (sfdotnet) through the interactive wizard or direct commands.
 platform: windowsforms
 control: Syncfusion<sup>®</sup> .NET CLI
 documentation: UG
@@ -13,7 +13,7 @@ You can create a Windows Forms project through the interactive wizard or a direc
 
 ## Create a project using the interactive wizard
 
-Run `sf new`, or select **Create a new project**
+Run `sfdotnet new`, or select **Create a new project**
 
 from the main menu. The Windows Forms creation flow is:
 
@@ -80,7 +80,7 @@ To create a blank project without the wizard:
 
 {% tabs %}
 {% highlight bash %}
-sf new winforms -n MyApp
+sfdotnet new winforms -n MyApp
 {% endhighlight %}
 {% endtabs %}
 
@@ -88,8 +88,8 @@ To create a C# project containing Syncfusion<sup>®</sup> control samples:
 
 {% tabs %}
 {% highlight bash %}
-sf new winforms -n MyApp --control datagrid
-sf new winforms -n MyApp --control chart --control datagrid
+sfdotnet new winforms -n MyApp --control datagrid
+sfdotnet new winforms -n MyApp --control chart --control datagrid
 {% endhighlight %}
 {% endtabs %}
 
@@ -97,7 +97,7 @@ To create a VB project that targets .NET Framework 4.8 with the Office2019 Color
 
 {% tabs %}
 {% highlight bash %}
-sf new winforms --name MyAppVB --language VB --target-framework net48 --theme Office2019Colorful --control datagrid --post-action build
+sfdotnet new winforms --name MyAppVB --language VB --target-framework net48 --theme Office2019Colorful --control datagrid --post-action build
 {% endhighlight %}
 {% endtabs %}
 
@@ -111,13 +111,16 @@ sf new winforms --name MyAppVB --language VB --target-framework net48 --theme Of
 | `-t`, `--target-framework` | Target framework: `net462`, `net47`, `net48`, `net8.0`, `net9.0`, or `net10.0` |
 | `--theme` | Project theme, such as `Office2019Colorful` |
 | `--control` | One or more control IDs, or `empty`. Omit to create an empty project |
+| `--template` | One or more template IDs; merges with `--control` |
 | `--post-action` | Post-create action: `generate` or `build`. Defaults to `build` for direct commands |
 | `--dry-run` | Preview the action without making changes |
 | `--force` | Allow supported overwrites. Edited control samples and existing project destinations remain protected |
 | `--no-restore` | Skip `dotnet restore` after the action |
 | `--no-build` | Skip `dotnet build` after the action |
 | `--no-interactive` | Disable interactive prompts |
+| `--interactive` | Allow interactive prompts (default when stdin is a terminal) |
 | `--json` | Emit a JSON document instead of table output |
+| `--verbose` | Print detailed diagnostic output |
 
 N> `--post-action build` conflicts with `--no-build`. Neither `--force` nor confirmation authorizes overwriting an existing project destination.
 
