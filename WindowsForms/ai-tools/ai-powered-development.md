@@ -47,7 +47,7 @@ I need a Syncfusion WinForms [control name] with the following specifications:
 - Implementation language: C#
 - Dependencies: Identify and use the correct from https://help.syncfusion.com/windowsforms/control-dependencies
 
-Reference: https://help.syncfusion.com/windowsforms/]/getting-started
+Reference: https://help.syncfusion.com/windowsforms/overview
 ```
 
 **What to expect:**
