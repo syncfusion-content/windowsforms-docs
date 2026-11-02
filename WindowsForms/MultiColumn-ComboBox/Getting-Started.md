@@ -117,48 +117,49 @@ using System.Data;
 
 private void Form1_Load(object sender, System.EventArgs e)
 {
-    //Step 1: Create a DataTable and add columns
-    DataTable dt = new DataTable("Table1");
+    // Create DataTable
+    DataTable dt = new DataTable("Employees");
+
     dt.Columns.Add("FirstName");
     dt.Columns.Add("LastName");
+    dt.Columns.Add("City");
 
-    //Step 2: Add rows to the DataTable
-    dt.Rows.Add(new object[] { "John", "Tina" });
-    dt.Rows.Add(new object[] { "Mary", "Anu" });
+    // Add Rows
+    dt.Rows.Add("John", "Tina", "Chennai");
+    dt.Rows.Add("Mary", "Anu", "Coimbatore");
+    dt.Rows.Add("David", "Kumar", "Bangalore");
+    dt.Rows.Add("Peter", "Sam", "Hyderabad");
 
-    //Step 3: Bind the DataView to MultiColumnComboBox
-    this.multiColumnComboBox1.DataSource     = new DataView(dt);
-    this.multiColumnComboBox1.DisplayMember = "FirstName";
-    this.multiColumnComboBox1.ValueMember   = "LastName";
-
-    //Step 4: Configure the dropdown columns
-    this.multiColumnComboBox1.Columns.Add(new Syncfusion.Windows.Forms.Grid.GridColumnDescriptor("FirstName", "FirstName", 120));
-    this.multiColumnComboBox1.Columns.Add(new Syncfusion.Windows.Forms.Grid.GridColumnDescriptor("LastName",  "LastName",  120));
+    // Bind DataSource
+    multiColumnComboBox1.DataSource = new DataView(dt);
+    multiColumnComboBox1.DisplayMember = "FirstName";
+    multiColumnComboBox1.ValueMember = "LastName";
 }
 
 {% endhighlight %}
 {% highlight vb %}
 
-Imports System.Data
+Imports Syncfusion.Windows.Forms.Tools
 
 Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles MyBase.Load
-    'Step 1: Create a DataTable and add columns
-    Dim dt As New DataTable("Table1")
+
+    ' Step 1: Create a DataTable and add columns
+    Dim dt As New DataTable("Employees")
+
     dt.Columns.Add("FirstName")
     dt.Columns.Add("LastName")
+    dt.Columns.Add("City")
 
-    'Step 2: Add rows to the DataTable
-    dt.Rows.Add(New Object() {"John", "Tina"})
-    dt.Rows.Add(New Object() {"Mary", "Anu"})
+    ' Step 2: Add rows to the DataTable
+    dt.Rows.Add(New Object() {"John", "Tina", "Chennai"})
+    dt.Rows.Add(New Object() {"Mary", "Anu", "Coimbatore"})
+    dt.Rows.Add(New Object() {"David", "Kumar", "Bangalore"})
+    dt.Rows.Add(New Object() {"Peter", "Sam", "Hyderabad"})
 
-    'Step 3: Bind the DataView to MultiColumnComboBox
+    ' Step 3: Bind the DataView to MultiColumnComboBox
     Me.multiColumnComboBox1.DataSource = New DataView(dt)
     Me.multiColumnComboBox1.DisplayMember = "FirstName"
     Me.multiColumnComboBox1.ValueMember = "LastName"
-
-    'Step 4: Configure the dropdown columns
-    Me.multiColumnComboBox1.Columns.Add(New Syncfusion.Windows.Forms.Grid.GridColumnDescriptor("FirstName", "FirstName", 120))
-    Me.multiColumnComboBox1.Columns.Add(New Syncfusion.Windows.Forms.Grid.GridColumnDescriptor("LastName", "LastName", 120))
 End Sub
 
 {% endhighlight %}
