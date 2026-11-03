@@ -141,5 +141,4 @@ Office2019 Colorful.
 ## See also
 
 * [Manage packages in an existing project](/windowsforms/dotnet-cli/manage-packages)
-* [License activation](/windowsforms/dotnet-cli/licensing)
 * [Installing Syncfusion Windows Forms NuGet packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
