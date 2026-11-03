@@ -18,7 +18,7 @@ The MCP setup workflow does not install component libraries and does not modify 
 * A Syncfusion<sup>®</sup> MCP API key, generated at [https://www.syncfusion.com/account/api-key](https://www.syncfusion.com/account/api-key).
 * An active Syncfusion<sup>®</sup> license for MCP usage.
 
-N> The MCP API key is separate from your product license key and from the `sfdotnet login` session. It is used only by the MCP server.
+N> The MCP API key is separate from your product license key. It is used only by the MCP server.
 
 ## Configure MCP through the interactive menu
 
@@ -172,4 +172,3 @@ No. Setup writes the client configuration and installs the required tool, but do
 ## See also
 
 * [AI skills installation](/windowsforms/dotnet-cli/install-skills)
-* [License activation](/windowsforms/dotnet-cli/licensing)
