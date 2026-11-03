@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Trendlines in Windows Forms Chart control | Syncfusion
+title: Trendlines in Windows Forms Chart control | Syncfusion®
 description: Trendlines in the Windows Forms Chart analyze data patterns and support multiple types, forecasting, legends, and appearance customization.
 platform: windowsforms
 control: Chart
@@ -150,7 +150,7 @@ trendline.Type = TrendlineType.Polynomial
 
 ### Moving average trendline
 
-A [moving average trendline]((https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.TrendlineType.html#Syncfusion_Windows_Forms_Chart_TrendlineType_MovingAverage)) smooths out fluctuations in data to highlight the overall trend. The [Period](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.Trendline.html#Syncfusion_Windows_Forms_Chart_Trendline_Period) property specifies the number of data points used to calculate the moving average. The default value is 2.
+A [moving average trendline](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.TrendlineType.html#Syncfusion_Windows_Forms_Chart_TrendlineType_MovingAverage) smooths out fluctuations in data to highlight the overall trend. The [Period](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.Trendline.html#Syncfusion_Windows_Forms_Chart_Trendline_Period) property specifies the number of data points used to calculate the moving average. The default value is 2.
 
 The following code example displays a moving average trendline.
 
@@ -230,11 +230,11 @@ The trendline appearance and visibility can be customized using the following pr
 * [Width](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.Trendline.html#Syncfusion_Windows_Forms_Chart_Trendline_Width): Specifies the trendline width. The default value is `1f`.
 * [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.Trendline.html#Syncfusion_Windows_Forms_Chart_Trendline_Style): Specifies the DashStyle used to render the trendline. The default value is DashStyle.Solid.
 The available values are:
-    * `Solid`
-    * `Dash`
-    * `Dot`
-    * `DashDot`
-    * `DashDotDot`
+    * Solid
+    * Dash
+    * Dot
+    * DashDot
+    * DashDotDot
 
 The following code example customizes the trendline appearance
 
