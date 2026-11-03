@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion .NET CLI Overview for Windows Forms | Syncfusion®
-description: Learn to install and use the Syncfusion® .NET CLI (sfdotnet) to create Windows Forms apps, manage Syncfusion WinForms NuGet packages, and register licenses.
+description: Learn to install and use the Syncfusion® .NET CLI (sfdotnet) to create Windows Forms apps and manage Syncfusion WinForms NuGet packages.
 platform: windowsforms
 control: Syncfusion<sup>®</sup> .NET CLI
 documentation: UG
@@ -9,13 +9,12 @@ documentation: UG
 
 # Overview of the Syncfusion<sup>®</sup> .NET CLI
 
-The Syncfusion<sup>®</sup> .NET CLI (`sfdotnet`) is a command line tool that creates Windows Forms projects, manages Syncfusion<sup>®</sup> Windows Forms NuGet packages, and registers licenses from a terminal. After you install the CLI, you can run `sfdotnet` with no arguments to open an interactive menu, or run a direct command such as `sfdotnet new winforms` for scripted, prompt-free creation.
+The Syncfusion<sup>®</sup> .NET CLI (`sfdotnet`) is a command line tool that creates Windows Forms projects and manages Syncfusion<sup>®</sup> Windows Forms NuGet packages from a terminal. After you install the CLI, you can run `sfdotnet` with no arguments to open an interactive menu, or run a direct command such as `sfdotnet new winforms` for scripted, prompt-free creation.
 
 You can use the CLI to perform the following actions:
 
 * Create a blank Windows Forms app, or an app containing generated Syncfusion<sup>®</sup> control samples, in C# or VB. For details, refer to [Create a Windows Forms project](/windowsforms/dotnet-cli/create-project).
 * Add or update Syncfusion<sup>®</sup> Windows Forms NuGet package references in an existing project. For details, refer to [Manage packages](/windowsforms/dotnet-cli/manage-packages).
-* Activate Syncfusion<sup>®</sup> licenses for the controls used in a sample, and view installed licenses. For details, refer to [License activation](/windowsforms/dotnet-cli/licensing).
 * Configure an official Syncfusion<sup>®</sup> Model Context Protocol (MCP) server for AI coding clients. For details, refer to [MCP configuration](/windowsforms/dotnet-cli/configure-mcp).
 * Install official Syncfusion<sup>®</sup> component skills for AI agents. For details, refer to [AI skills installation](/windowsforms/dotnet-cli/install-skills).
 
@@ -27,7 +26,6 @@ The following software is required before you install and use the CLI:
 
 * [.NET SDK](https://dotnet.microsoft.com/download). The SDK selected through `PATH` takes precedence, with the running .NET installation as a fallback. The Windows Forms project templates are installed with the .NET SDK for modern .NET projects. For .NET Framework projects (`.NET Framework 4.6.2` and later), Visual Studio MSBuild with the .NET desktop workload is required.
 * An internet connection so package operations can reach [nuget.org](https://www.nuget.org).
-* A Syncfusion<sup>®</sup> account to activate licenses. Sign in is performed through the browser during license activation.
 
 N> Building and running Windows Forms applications requires Windows. On macOS or Linux, use `sfdotnet new winforms --post-action generate` to generate the project source without restoring or building.
 
@@ -107,10 +105,6 @@ N> The `<platform>` text is a usage placeholder. Use `winforms` for Windows Form
 | `sfdotnet search winforms <text>` | Search packages | [Manage packages](/windowsforms/dotnet-cli/manage-packages) |
 | `sfdotnet mcp init winforms` | Configure a project-local Syncfusion<sup>®</sup> MCP client | [MCP configuration](/windowsforms/dotnet-cli/configure-mcp) |
 | `sfdotnet skills install winforms` | Install Syncfusion<sup>®</sup> component skills for AI agents | [AI skills installation](/windowsforms/dotnet-cli/install-skills) |
-| `sfdotnet login` | Sign in to Syncfusion through the browser | [License activation](/windowsforms/dotnet-cli/licensing) |
-| `sfdotnet logout` | Sign out and clear the local session | [License activation](/windowsforms/dotnet-cli/licensing) |
-| `sfdotnet license activate` | Download the license for the project's packages and register it in the project's startup code | [License activation](/windowsforms/dotnet-cli/licensing) |
-| `sfdotnet license view` | Show the licenses cached for the project (no network call) | [License activation](/windowsforms/dotnet-cli/licensing) |
 | `sfdotnet info` | Show CLI information | |
 | `sfdotnet help winforms` | Show the Windows Forms command map | |
 | `sfdotnet --version` | Show the CLI version | |
@@ -121,4 +115,3 @@ N> The `<platform>` text is a usage placeholder. Use `winforms` for Windows Form
 * [Syncfusion Windows Forms help documentation](https://help.syncfusion.com/windowsforms/overview)
 * [System requirements for Windows Forms](https://help.syncfusion.com/windowsforms/system-requirements)
 * [Installing Syncfusion Windows Forms NuGet packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
-* [Syncfusion<sup>®</sup> licensing overview](https://help.syncfusion.com/common/essential-studio/licensing/overview)
