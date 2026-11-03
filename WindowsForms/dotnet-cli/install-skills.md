@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Install AI Component Skills using Syncfusion .NET CLI | Syncfusion®
-description: Learn here about how to install Syncfusion® Windows Forms component skills for AI agents using the Syncfusion® .NET CLI (sf).
+description: Learn here about how to install Syncfusion® Windows Forms component skills for AI agents using the Syncfusion® .NET CLI (sfdotnet).
 platform: windowsforms
 control: Syncfusion<sup>®</sup> .NET CLI
 documentation: UG
@@ -9,7 +9,7 @@ documentation: UG
 
 # Install AI component skills
 
-The `sf skills install` command installs the official Syncfusion<sup>®</sup> Windows Forms component skills for AI agents from the [syncfusion/winforms-ui-components-skills](https://github.com/syncfusion/winforms-ui-components-skills) GitHub repository. Skills give AI agents product-specific guidance for generating and editing Syncfusion<sup>®</sup> control code. Skills are installed for the agents you choose, either project-local or global.
+The `sfdotnet skills install` command installs the official Syncfusion<sup>®</sup> Windows Forms component skills for AI agents from the [syncfusion/winforms-ui-components-skills](https://github.com/syncfusion/winforms-ui-components-skills) GitHub repository. Skills give AI agents product-specific guidance for generating and editing Syncfusion<sup>®</sup> control code. Skills are installed for the agents you choose, either project-local or global.
 
 No Syncfusion<sup>®</sup> account, API key, or license is required to install or read skills.
 
@@ -20,7 +20,7 @@ No Syncfusion<sup>®</sup> account, API key, or license is required to install o
 
 ## Install skills through the interactive menu
 
-1. Run `sf` to open the main menu, and under **AI & Skills**, select **Add component skills to AI Agent**.
+1. Run `sfdotnet` to open the main menu, and under **AI & Skills**, select **Add component skills to AI Agent**.
 
     ![Add component skills to AI Agent option in the Syncfusion .NET CLI main menu](images/cli-setup-skills-command-menu.png)
 
@@ -42,7 +42,7 @@ To open the interactive Skills CLI flow for the current workspace:
 
 {% tabs %}
 {% highlight bash %}
-sf skills install winforms
+sfdotnet skills install winforms
 {% endhighlight %}
 {% endtabs %}
 
@@ -50,7 +50,7 @@ To list the exact skill names available in the repository without installing any
 
 {% tabs %}
 {% highlight bash %}
-sf skills install winforms --list
+sfdotnet skills install winforms --list
 {% endhighlight %}
 {% endtabs %}
 
@@ -58,7 +58,7 @@ To install a specific skill non-interactively for GitHub Copilot:
 
 {% tabs %}
 {% highlight bash %}
-sf skills install winforms --agent github-copilot --skill <exact-skill-name> --yes
+sfdotnet skills install winforms --agent github-copilot --skill <exact-skill-name> --yes
 {% endhighlight %}
 {% endtabs %}
 
@@ -66,7 +66,7 @@ To install all skills for multiple agents non-interactively:
 
 {% tabs %}
 {% highlight bash %}
-sf skills install winforms --agent cursor claude-code --all --yes
+sfdotnet skills install winforms --agent cursor claude-code --all --yes
 {% endhighlight %}
 {% endtabs %}
 
