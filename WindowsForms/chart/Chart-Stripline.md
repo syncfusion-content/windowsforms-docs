@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Strip Lines in Windows Forms Chart control | Syncfusion
+title: Strip Lines in Windows Forms Chart control | Syncfusion®
 description: Strip lines in the Windows Forms Chart highlight specific ranges or regions on an axis, helping emphasize important values and thresholds.
 platform: windowsforms
 control: Chart
@@ -15,7 +15,7 @@ Windows Forms Chart allows you to add strip lines that shade specific regions or
 
 Create a [ChartStripLine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStripLine.html), configure its range and appearance, and add it to the required axis.
 
-The following code example adds a horizontal strip line to the primary Y-axis and highlights the high-temperature range.
+The following code example adds a horizontal strip line to the primary Y-axis and highlights the high temperature range.
 
 {% tabs %}
 {% highlight c# %}
@@ -62,7 +62,7 @@ chartControl.PrimaryYAxis.StripLines.Add(stripLine)
 
 ## Visibility
 
-The [Enabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStripLine.html#Syncfusion_Windows_Forms_Chart_ChartStripLine_Enabled) property controls whether the strip line is displayed. The default value is `true`.
+The [Enabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStripLine.html#Syncfusion_Windows_Forms_Chart_ChartStripLine_Enabled) property controls whether the strip line is displayed or not. The default value is `false`.
 
 The following code example hides the strip line.
 
@@ -83,7 +83,7 @@ stripLine.Enabled = False
 
 ## Strip line orientation
 
-The [Vertical](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStripLine.html#Syncfusion_Windows_Forms_Chart_ChartStripLine_Vertical) property specifies the orientation of the strip line. The default value is `false`.
+The [Vertical](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStripLine.html#Syncfusion_Windows_Forms_Chart_ChartStripLine_Vertical) property specifies the orientation of the strip line. By default, strip lines are rendered horizontally.
 
 The following code example displays a vertical strip line.
 
@@ -102,28 +102,12 @@ stripLine.Vertical = True
 
 ![Chart Stripline orientation in Windows Forms Chart](Stripline_images/stripline-orientation.png)
 
-## Strip line position
-
-Strip lines can be positioned using numeric or DateTime values.
-
-The following properties are available:
-
-- `Start`: Specifies the starting value of the strip line.
-- `End`: Specifies the ending value of the strip line.
-- `Width`: Specifies the width of the strip line.
-- `FixedWidth`: Specifies a fixed width using actual axis values.
-- `StartAtAxisPosition`: Specifies whether the strip line starts from the beginning of the axis range.
-- `Offset`: Specifies the offset from the beginning of a numeric axis.
-- `DateOffset`: Specifies the offset from the beginning of a DateTime axis.
-
-N> Strip lines can be rendered on both numeric and DateTime axes. Use `Start`, `End`, `Offset`, and `Period` for numeric axes, and `StartDate`, `EndDate`, `DateOffset`, and `PeriodDate` for DateTime axes.
-
-### Numeric strip lines
+## Numeric strip lines
 
 The following properties are used to define the strip-line range on a numeric axis:
 - [Start](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStripLine.html#Syncfusion_Windows_Forms_Chart_ChartStripLine_Start): Specifies the value at which the strip line begins.
 - [End](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStripLine.html#Syncfusion_Windows_Forms_Chart_ChartStripLine_End): Specifies the value at which the strip line ends.
-- [Width](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStripLine.html#Syncfusion_Windows_Forms_Chart_ChartStripLine_Width): Specifies the width of the strip line.
+- [Width](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStripLine.html#Syncfusion_Windows_Forms_Chart_ChartStripLine_Width): Specifies the width of the strip line. A width of `1f` is used unless a different value is specified.
 
 The following code example highlights the range between `28` and `30`.
 
@@ -146,284 +130,187 @@ stripLine.Width = 2
 
 ![Chart Numeric strip line in Windows Forms Chart](Stripline_images/stripline.png)
 
-### DateTime strip lines
+## Period
 
-Use the `StartDate` and `EndDate` properties to position a strip line on a DateTime axis.
+The [Period](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStripLine.html#Syncfusion_Windows_Forms_Chart_ChartStripLine_Period) property specifies the interval at which a strip line is repeated on a numeric axis. The default value is 2.
 
-{% tabs %}
-{% highlight c# %}
-
-ChartStripLine dateStripLine =
-    new ChartStripLine();
-
-dateStripLine.Enabled = true;
-dateStripLine.Vertical = true;
-
-dateStripLine.StartDate =
-    new DateTime(2025, 1, 1);
-
-dateStripLine.EndDate =
-    new DateTime(2025, 1, 2);
-
-chartControl.PrimaryXAxis.StripLines.Add(
-    dateStripLine);
-
-{% endhighlight %}
-{% highlight vb %}
-
-Dim dateStripLine As New ChartStripLine()
-
-dateStripLine.Enabled = True
-dateStripLine.Vertical = True
-
-dateStripLine.StartDate =
-    New DateTime(2025, 1, 1)
-
-dateStripLine.EndDate =
-    New DateTime(2025, 1, 2)
-
-chartControl.PrimaryXAxis.StripLines.Add(
-    dateStripLine)
-
-{% endhighlight %}
-{% endtabs %}
-
-## Repeated strip lines
-
-Strip lines can be repeated at regular intervals on numeric and DateTime axes.
-
-### Numeric interval
-
-The `Period` property specifies the interval at which a strip line is repeated on a numeric axis.
+The following code example demonstrates how to repeat a strip line at an interval of four units.
 
 {% tabs %}
 {% highlight c# %}
 
-stripLine.Start = 0;
-stripLine.Width = 1;
-stripLine.Period = 5;
+stripLine.Start = 1;
+stripLine.End = 10;
+stripLine.Width = 2;
+stripLine.Period = 4;
 
 {% endhighlight %}
 {% highlight vb %}
 
-stripLine.Start = 0
-stripLine.Width = 1
-stripLine.Period = 5
+stripLine.Start = 1
+stripLine.End = 10
+stripLine.Width = 2
+stripLine.Period = 4
 
 {% endhighlight %}
 {% endtabs %}
 
-### DateTime interval
-
-The `PeriodDate` property specifies the interval at which a strip line is repeated on a DateTime axis.
-
-{% tabs %}
-{% highlight c# %}
-
-dateStripLine.PeriodDate =
-    TimeSpan.FromDays(7);
-
-{% endhighlight %}
-{% highlight vb %}
-
-dateStripLine.PeriodDate =
-    TimeSpan.FromDays(7)
-
-{% endhighlight %}
-{% endtabs %}
-
-### DateTime offset
-
-The `DateOffset` property specifies the offset of a strip line from the beginning of a DateTime axis when `StartAtAxisPosition` is enabled.
-
-{% tabs %}
-{% highlight c# %}
-
-dateStripLine.StartAtAxisPosition = true;
-dateStripLine.DateOffset =
-    TimeSpan.FromDays(2);
-
-{% endhighlight %}
-{% highlight vb %}
-
-dateStripLine.StartAtAxisPosition = True
-dateStripLine.DateOffset =
-    TimeSpan.FromDays(2)
-
-{% endhighlight %}
-{% endtabs %}
+![Stripline Interval in Windows Forms Chart](Stripline_images/stripline-period.png)
 
 ## Customizing appearance
 
 The appearance of a strip line can be customized using fill, text, and background image settings.
 
-### Fill
+### Interior
 
-The `Interior` property specifies the fill of a strip line. Solid colors, gradients, patterns, and textures are supported.
+The [Interior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStripLine.html#Syncfusion_Windows_Forms_Chart_ChartStripLine_Interior) property specifies the fill of a strip line. By default stripline shows in white color.
+
+The following code example demonstrates how to apply a color to the strip line.
 
 {% tabs %}
 {% highlight c# %}
 
-stripLine.Interior = new BrushInfo(
-    GradientStyle.Vertical,
-    Color.LightYellow,
-    Color.Yellow);
+stripLine.Interior = new BrushInfo(GradientStyle.Vertical, Color.LightYellow, Color.Yellow);
 
 {% endhighlight %}
 {% highlight vb %}
 
-stripLine.Interior = New BrushInfo(
-    GradientStyle.Vertical,
-    Color.LightYellow,
-    Color.Yellow)
+stripLine.Interior = New BrushInfo(GradientStyle.Vertical, Color.LightYellow, Color.Yellow)
 
 {% endhighlight %}
 {% endtabs %}
+
+![Stripline Interior in Windows Forms Chart](Stripline_images/stripline-interior.png)
 
 ### Background image
 
-The `BackImage` property specifies the image displayed in the strip-line background.
+The [BackImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStripLine.html#Syncfusion_Windows_Forms_Chart_ChartStripLine_BackImage) property specifies the image displayed in the strip line background. By default, no image is associated with the strip line.
 
 {% tabs %}
 {% highlight c# %}
 
-stripLine.BackImage =
-    Image.FromFile("background.png");
+stripLine.BackImage = Image.FromFile("background.png");
 
 {% endhighlight %}
 {% highlight vb %}
 
-stripLine.BackImage =
-    Image.FromFile("background.png")
+stripLine.BackImage = Image.FromFile("background.png")
 
 {% endhighlight %}
 {% endtabs %}
+
+![Stripline Interior in Windows Forms Chart](Stripline_images/stripline-background-image.png)
 
 ### Text
 
 The following properties customize the text displayed in a strip line:
 
-- `Text`
-- `TextColor`
-- `TextAlignment`
-- `Font`
+- [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStripLine.html#Syncfusion_Windows_Forms_Chart_ChartStripLine_Text) - Specifies the text displayed in the strip line. The default strip line text is `"StripLine"`.
+- [TextColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStripLine.html#Syncfusion_Windows_Forms_Chart_ChartStripLine_TextColor) - Specifies the color used to render the strip line text.  By default, the text uses `SystemColors.ControlText`.
+- [TextAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStripLine.html#Syncfusion_Windows_Forms_Chart_ChartStripLine_TextAlignment) - Specifies the alignment of the text within the strip line. The default value is `MiddleCenter`. This property supports the following values:
+    - TopLeft
+    - TopCenter
+    - TopRight
+    - MiddleLeft
+    - MiddleCenter
+    - MiddleRight
+    - BottomLeft
+    - BottomCenter
+    - BottomRight
+- [Font](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStripLine.html#Syncfusion_Windows_Forms_Chart_ChartStripLine_BackImage) - Specifies the font used to render the strip line text. The strip line text is rendered using a `Verdana` font with a size of `10` by default.
+
+The following code example demonstrates how to customize the strip line text appearance.
 
 {% tabs %}
 {% highlight c# %}
 
 stripLine.Text = "Target Zone";
-
-stripLine.TextColor = Color.Blue;
-
-stripLine.TextAlignment =
-    ContentAlignment.MiddleCenter;
-
-stripLine.Font =
-    new Font(
-        "Segoe UI",
-        10,
-        FontStyle.Bold);
+stripLine.TextColor = Color.Red;
+stripLine.TextAlignment = ContentAlignment.MiddleCenter;
+stripLine.Font = new Font("Segoe UI", 10, FontStyle.Bold);
 
 {% endhighlight %}
 {% highlight vb %}
 
 stripLine.Text = "Target Zone"
-
-stripLine.TextColor = Color.Blue
-
-stripLine.TextAlignment =
-    ContentAlignment.MiddleCenter
-
-stripLine.Font =
-    New Font(
-        "Segoe UI",
-        10,
-        FontStyle.Bold)
+stripLine.TextColor = Color.Red
+stripLine.TextAlignment = ContentAlignment.MiddleCenter
+stripLine.Font = New Font("Segoe UI", 10, FontStyle.Bold)
 
 {% endhighlight %}
 {% endtabs %}
+
+![Stripline Text customization in Windows Forms Chart](Stripline_images/stripline-text-customization.png)
 
 ## Multiple strip lines
 
 Multiple strip lines can be added to the same axis to highlight different ranges.
 
+The following code explain how to add the multiple striplines.
+
 {% tabs %}
 {% highlight c# %}
 
-ChartStripLine lowRange =
-    new ChartStripLine();
+ChartStripLine stripLine1 = new ChartStripLine();
+stripLine1.Enabled = true;
+stripLine1.Start = 22;
+stripLine1.End = 24;
+stripLine1.Text = "Low";
+stripLine1.Interior = new BrushInfo(Color.LightBlue);
 
-lowRange.Start = 0;
-lowRange.End = 40;
-lowRange.Text = "Below Target";
-lowRange.Interior =
-    new BrushInfo(Color.MistyRose);
+ChartStripLine stripLine2 = new ChartStripLine();
+stripLine2.Enabled = true;
+stripLine2.Start = 24;
+stripLine2.End = 26;
+stripLine2.Text = "Moderate";
+stripLine2.Interior = new BrushInfo(Color.LightGreen);
 
-ChartStripLine targetRange =
-    new ChartStripLine();
+ChartStripLine stripLine3 = new ChartStripLine();
+stripLine3.Enabled = true;
+stripLine3.Start = 26;
+stripLine3.End = 28;
+stripLine3.Text = "Warm";
+stripLine3.Interior = new BrushInfo(Color.LightSalmon);
 
-targetRange.Start = 40;
-targetRange.End = 60;
-targetRange.Text = "Target Zone";
-targetRange.Interior =
-    new BrushInfo(Color.Honeydew);
-
-ChartStripLine highRange =
-    new ChartStripLine();
-
-highRange.Start = 60;
-highRange.End = 100;
-highRange.Text = "Above Target";
-highRange.Interior =
-    new BrushInfo(Color.LightCyan);
-
-chartControl.PrimaryYAxis.StripLines.Add(
-    lowRange);
-
-chartControl.PrimaryYAxis.StripLines.Add(
-    targetRange);
-
-chartControl.PrimaryYAxis.StripLines.Add(
-    highRange);
+chartControl.PrimaryYAxis.StripLines.Add(stripLine1);
+chartControl.PrimaryYAxis.StripLines.Add(stripLine2);
+chartControl.PrimaryYAxis.StripLines.Add(stripLine3);
 
 {% endhighlight %}
 {% highlight vb %}
 
-Dim lowRange As New ChartStripLine()
+Dim stripLine1 As New ChartStripLine()
 
-lowRange.Start = 0
-lowRange.End = 40
-lowRange.Text = "Below Target"
-lowRange.Interior =
-    New BrushInfo(Color.MistyRose)
+stripLine1.Enabled = True
+stripLine1.Start = 22
+stripLine1.End = 24
+stripLine1.Text = "Low"
+stripLine1.Interior = New BrushInfo(Color.LightBlue)
 
-Dim targetRange As New ChartStripLine()
+Dim stripLine2 As New ChartStripLine()
 
-targetRange.Start = 40
-targetRange.End = 60
-targetRange.Text = "Target Zone"
-targetRange.Interior =
-    New BrushInfo(Color.Honeydew)
+stripLine2.Enabled = True
+stripLine2.Start = 24
+stripLine2.End = 26
+stripLine2.Text = "Moderate"
+stripLine2.Interior = New BrushInfo(Color.LightGreen)
 
-Dim highRange As New ChartStripLine()
+Dim stripLine3 As New ChartStripLine()
 
-highRange.Start = 60
-highRange.End = 100
-highRange.Text = "Above Target"
-highRange.Interior =
-    New BrushInfo(Color.LightCyan)
+stripLine3.Enabled = True
+stripLine3.Start = 26
+stripLine3.End = 28
+stripLine3.Text = "Warm"
+stripLine3.Interior = New BrushInfo(Color.LightSalmon)
 
-chartControl.PrimaryYAxis.StripLines.Add(
-    lowRange)
-
-chartControl.PrimaryYAxis.StripLines.Add(
-    targetRange)
-
-chartControl.PrimaryYAxis.StripLines.Add(
-    highRange)
+chartControl.PrimaryYAxis.StripLines.Add(stripLine1)
+chartControl.PrimaryYAxis.StripLines.Add(stripLine2)
+chartControl.PrimaryYAxis.StripLines.Add(stripLine3)
 
 {% endhighlight %}
 {% endtabs %}
+
+![Mutiple Stripline in Windows Forms Chart](Stripline_images/mutiple-striplines.png)
 
 ## See also
 
