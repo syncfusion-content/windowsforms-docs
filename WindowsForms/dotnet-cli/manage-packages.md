@@ -104,5 +104,4 @@ N> Update preserves sample source and aligns managed Syncfusion<sup>®</sup> rel
 ## See also
 
 * [Create a Windows Forms project](/windowsforms/dotnet-cli/create-project)
-* [License activation](/windowsforms/dotnet-cli/licensing)
 * [Installing Syncfusion Windows Forms NuGet packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
