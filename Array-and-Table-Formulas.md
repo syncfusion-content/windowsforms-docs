@@ -9,7 +9,7 @@ documentation: ug
 
 # Array and Table Formulas
 
-This section explains about the Array and Table formulas support in Essential Calculate
+This section explains about the Array and Table formulas support in Essential Calculate 
 
 ## Array Formulas
 
